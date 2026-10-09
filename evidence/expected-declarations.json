@@ -1,0 +1,305 @@
+[
+  {
+    "name": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserA",
+    "printed_type": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserA : Complex",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserB",
+    "printed_type": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserB : Complex",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserT",
+    "printed_type": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserT : Complex",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserU",
+    "printed_type": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserU : Complex",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserPoint",
+    "printed_type": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserPoint : Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))) \u2192 Complex",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserPoint_0",
+    "printed_type": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserPoint_0 : @Eq.{1} Complex\n  (GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserPoint\n    (@OfNat.ofNat.{0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))) (nat_lit 0)\n      (@Fin.instOfNat (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))) \u22ef (nat_lit 0))))\n  (@OfNat.ofNat.{0} Complex (nat_lit 0) (@Zero.toOfNat0.{0} Complex Complex.instZero))",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserPoint_1",
+    "printed_type": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserPoint_1 : @Eq.{1} Complex\n  (GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserPoint\n    (@OfNat.ofNat.{0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))) (nat_lit 1)\n      (@Fin.instOfNat (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))) \u22ef (nat_lit 1))))\n  GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserA",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserPoint_2",
+    "printed_type": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserPoint_2 : @Eq.{1} Complex\n  (GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserPoint\n    (@OfNat.ofNat.{0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))) (nat_lit 2)\n      (@Fin.instOfNat (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))) \u22ef (nat_lit 2))))\n  GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserB",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserPoint_3",
+    "printed_type": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserPoint_3 : @Eq.{1} Complex\n  (GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserPoint\n    (@OfNat.ofNat.{0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))) (nat_lit 3)\n      (@Fin.instOfNat (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))) \u22ef (nat_lit 3))))\n  GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserT",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserPoint_4",
+    "printed_type": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserPoint_4 : @Eq.{1} Complex\n  (GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserPoint\n    (@OfNat.ofNat.{0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))) (nat_lit 4)\n      (@Fin.instOfNat (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))) \u22ef (nat_lit 4))))\n  (@HMul.hMul.{0, 0, 0} Complex Complex Complex (@instHMul.{0} Complex Complex.instMul)\n    GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserU GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserA)",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserPoint_5",
+    "printed_type": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserPoint_5 : @Eq.{1} Complex\n  (GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserPoint\n    (@OfNat.ofNat.{0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))) (nat_lit 5)\n      (@Fin.instOfNat (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))) \u22ef (nat_lit 5))))\n  (@HMul.hMul.{0, 0, 0} Complex Complex Complex (@instHMul.{0} Complex Complex.instMul)\n    GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserU GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserB)",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserPoint_6",
+    "printed_type": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserPoint_6 : @Eq.{1} Complex\n  (GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserPoint\n    (@OfNat.ofNat.{0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))) (nat_lit 6)\n      (@Fin.instOfNat (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))) \u22ef (nat_lit 6))))\n  (@HMul.hMul.{0, 0, 0} Complex Complex Complex (@instHMul.{0} Complex Complex.instMul)\n    GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserU GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserT)",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserEdges",
+    "printed_type": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserEdges : Finset.{0}\n  (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n    (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))))",
+    "axioms": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.complex_norm_one_of_sq",
+    "printed_type": "@GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.complex_norm_one_of_sq : \u2200 {z : Complex},\n  @Eq.{1} Real\n      (@HAdd.hAdd.{0, 0, 0} Real Real Real (@instHAdd.{0} Real Real.instAdd)\n        (@HPow.hPow.{0, 0, 0} Real Nat Real\n          (@instHPow.{0, 0} Real Nat (@NPow.toPow.{0} Real (@Monoid.toNPow.{0} Real Real.instMonoid))) z.re\n          (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))\n        (@HPow.hPow.{0, 0, 0} Real Nat Real\n          (@instHPow.{0, 0} Real Nat (@NPow.toPow.{0} Real (@Monoid.toNPow.{0} Real Real.instMonoid))) z.im\n          (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))\n      (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne)) \u2192\n    @Eq.{1} Real (@norm.{0} Complex Complex.instNorm z)\n      (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne))",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moser_edge_unit",
+    "printed_type": "@GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moser_edge_unit : \u2200\n  {i j : Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))},\n  @Membership.mem.{0, 0}\n      (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n        (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))))\n      (Finset.{0}\n        (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n          (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))))\n      (@SetLike.instMembership.{0, 0}\n        (Finset.{0}\n          (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n            (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))))\n        (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n          (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))))\n        (@Finset.instSetLike.{0}\n          (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n            (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))))))\n      GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserEdges\n      (@Prod.mk.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n        (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))) i j) \u2192\n    @Eq.{1} Real\n      (@norm.{0} Complex Complex.instNorm\n        (@HSub.hSub.{0, 0, 0} Complex Complex Complex (@instHSub.{0} Complex Complex.instSub)\n          (GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserPoint i) (GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserPoint j)))\n      (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne))",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.three_color_diamond",
+    "printed_type": "@GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.three_color_diamond : \u2200\n  {a b p q : Fin (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))},\n  @Ne.{1} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))) a b \u2192\n    @Ne.{1} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))) p a \u2192\n      @Ne.{1} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))) p b \u2192\n        @Ne.{1} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))) q a \u2192\n          @Ne.{1} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))) q b \u2192\n            @Eq.{1} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))) p q",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moser_not_three_colorable",
+    "printed_type": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moser_not_three_colorable : \u2200\n  (f :\n    Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))) \u2192\n      Fin (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))),\n  (\u2200 (i j : Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))),\n      @Membership.mem.{0, 0}\n          (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n            (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))))\n          (Finset.{0}\n            (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n              (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))))\n          (@SetLike.instMembership.{0, 0}\n            (Finset.{0}\n              (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n                (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))))\n            (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n              (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))))\n            (@Finset.instSetLike.{0}\n              (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n                (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))))))\n          GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserEdges\n          (@Prod.mk.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n            (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))) i j) \u2192\n        @Ne.{1} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))) (f i) (f j)) \u2192\n    False",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserFourColor",
+    "printed_type": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserFourColor : Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))) \u2192\n  Fin (@OfNat.ofNat.{0} Nat (nat_lit 4) (instOfNatNat (nat_lit 4)))",
+    "axioms": [
+      "propext"
+    ]
+  },
+  {
+    "name": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserFourColor_proper",
+    "printed_type": "@GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserFourColor_proper : \u2200\n  {i j : Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))},\n  @Membership.mem.{0, 0}\n      (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n        (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))))\n      (Finset.{0}\n        (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n          (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))))\n      (@SetLike.instMembership.{0, 0}\n        (Finset.{0}\n          (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n            (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))))\n        (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n          (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))))\n        (@Finset.instSetLike.{0}\n          (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n            (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))))))\n      GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserEdges\n      (@Prod.mk.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n        (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))) i j) \u2192\n    @Ne.{1} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 4) (instOfNatNat (nat_lit 4))))\n      (GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserFourColor i) (GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserFourColor j)",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moser_listed_graph_exact_four",
+    "printed_type": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moser_listed_graph_exact_four : And\n  (\u2203 f,\n    \u2200 (i j : Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))),\n      @Membership.mem.{0, 0}\n          (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n            (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))))\n          (Finset.{0}\n            (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n              (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))))\n          (@SetLike.instMembership.{0, 0}\n            (Finset.{0}\n              (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n                (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))))\n            (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n              (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))))\n            (@Finset.instSetLike.{0}\n              (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n                (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))))))\n          GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserEdges\n          (@Prod.mk.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n            (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))) i j) \u2192\n        @Ne.{1} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 4) (instOfNatNat (nat_lit 4)))) (f i) (f j))\n  (Not\n    (\u2203 f,\n      \u2200 (i j : Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))),\n        @Membership.mem.{0, 0}\n            (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n              (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))))\n            (Finset.{0}\n              (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n                (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))))\n            (@SetLike.instMembership.{0, 0}\n              (Finset.{0}\n                (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n                  (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))))\n              (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n                (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))))\n              (@Finset.instSetLike.{0}\n                (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n                  (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))))))\n            GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserEdges\n            (@Prod.mk.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n              (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))) i j) \u2192\n          @Ne.{1} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))) (f i) (f j)))",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.radicalProduct_bounds",
+    "printed_type": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.radicalProduct_bounds : And\n  (@LT.lt.{0} Real Real.instLT\n    (@OfNat.ofNat.{0} Real (nat_lit 5) (@instOfNatAtLeastTwo.{0} Real (nat_lit 5) Real.instNatCast \u22ef))\n    (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)\n      (Real.sqrt (@OfNat.ofNat.{0} Real (nat_lit 3) (@instOfNatAtLeastTwo.{0} Real (nat_lit 3) Real.instNatCast \u22ef)))\n      (Real.sqrt (@OfNat.ofNat.{0} Real (nat_lit 11) (@instOfNatAtLeastTwo.{0} Real (nat_lit 11) Real.instNatCast \u22ef)))))\n  (@LT.lt.{0} Real Real.instLT\n    (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)\n      (Real.sqrt (@OfNat.ofNat.{0} Real (nat_lit 3) (@instOfNatAtLeastTwo.{0} Real (nat_lit 3) Real.instNatCast \u22ef)))\n      (Real.sqrt (@OfNat.ofNat.{0} Real (nat_lit 11) (@instOfNatAtLeastTwo.{0} Real (nat_lit 11) Real.instNatCast \u22ef))))\n    (@OfNat.ofNat.{0} Real (nat_lit 6) (@instOfNatAtLeastTwo.{0} Real (nat_lit 6) Real.instNatCast \u22ef)))",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moser_normSq_unit_iff",
+    "printed_type": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moser_normSq_unit_iff : \u2200\n  (i j : Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))),\n  Iff\n    (@Eq.{1} Real\n      (@DFunLike.coe.{1, 1, 1}\n        (@MonoidWithZeroHom.{0, 0} Complex Real (@instMulZeroOneClassOfSemiring.{0} Complex Complex.instSemiring)\n          (@instMulZeroOneClassOfSemiring.{0} Real Real.semiring))\n        Complex (fun x => Real)\n        (@MonoidWithZeroHom.funLike.{0, 0} Complex Real\n          (@instMulZeroOneClassOfSemiring.{0} Complex Complex.instSemiring)\n          (@instMulZeroOneClassOfSemiring.{0} Real Real.semiring))\n        Complex.normSq\n        (@HSub.hSub.{0, 0, 0} Complex Complex Complex (@instHSub.{0} Complex Complex.instSub)\n          (GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserPoint i) (GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserPoint j)))\n      (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne)))\n    (Or\n      (@Membership.mem.{0, 0}\n        (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n          (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))))\n        (Finset.{0}\n          (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n            (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))))\n        (@SetLike.instMembership.{0, 0}\n          (Finset.{0}\n            (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n              (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))))\n          (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n            (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))))\n          (@Finset.instSetLike.{0}\n            (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n              (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))))))\n        GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserEdges\n        (@Prod.mk.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n          (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))) i j))\n      (@Membership.mem.{0, 0}\n        (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n          (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))))\n        (Finset.{0}\n          (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n            (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))))\n        (@SetLike.instMembership.{0, 0}\n          (Finset.{0}\n            (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n              (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))))\n          (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n            (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))))\n          (@Finset.instSetLike.{0}\n            (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n              (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))))))\n        GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserEdges\n        (@Prod.mk.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n          (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))) j i)))",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserPoint_injective",
+    "printed_type": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserPoint_injective : @Function.Injective.{1, 1}\n  (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))) Complex GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserPoint",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moser_unit_iff_edge",
+    "printed_type": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moser_unit_iff_edge : \u2200\n  (i j : Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))),\n  Iff\n    (@Eq.{1} Real\n      (@norm.{0} Complex Complex.instNorm\n        (@HSub.hSub.{0, 0, 0} Complex Complex Complex (@instHSub.{0} Complex Complex.instSub)\n          (GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserPoint i) (GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserPoint j)))\n      (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne)))\n    (Or\n      (@Membership.mem.{0, 0}\n        (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n          (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))))\n        (Finset.{0}\n          (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n            (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))))\n        (@SetLike.instMembership.{0, 0}\n          (Finset.{0}\n            (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n              (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))))\n          (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n            (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))))\n          (@Finset.instSetLike.{0}\n            (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n              (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))))))\n        GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserEdges\n        (@Prod.mk.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n          (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))) i j))\n      (@Membership.mem.{0, 0}\n        (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n          (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))))\n        (Finset.{0}\n          (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n            (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))))\n        (@SetLike.instMembership.{0, 0}\n          (Finset.{0}\n            (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n              (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))))\n          (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n            (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))))\n          (@Finset.instSetLike.{0}\n            (Prod.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n              (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))))))\n        GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserEdges\n        (@Prod.mk.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))\n          (Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))) j i)))",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.FinitePointColorable",
+    "printed_type": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.FinitePointColorable : Nat \u2192 Prop",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.finitePointColorable_mono",
+    "printed_type": "@GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.finitePointColorable_mono : \u2200 {m n : Nat},\n  @LE.le.{0} Nat instLENat m n \u2192\n    GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.FinitePointColorable m \u2192 GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.FinitePointColorable n",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserFourColor_unit_proper",
+    "printed_type": "@GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserFourColor_unit_proper : \u2200\n  {i j : Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))},\n  @Eq.{1} Real\n      (@norm.{0} Complex Complex.instNorm\n        (@HSub.hSub.{0, 0, 0} Complex Complex Complex (@instHSub.{0} Complex Complex.instSub)\n          (GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserPoint i) (GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserPoint j)))\n      (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne)) \u2192\n    @Ne.{1} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 4) (instOfNatNat (nat_lit 4))))\n      (GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserFourColor i) (GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserFourColor j)",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moser_unit_graph_exact_four",
+    "printed_type": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moser_unit_graph_exact_four : And\n  (GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.FinitePointColorable (@OfNat.ofNat.{0} Nat (nat_lit 4) (instOfNatNat (nat_lit 4))))\n  (\u2200 (n : Nat),\n    @LT.lt.{0} Nat instLTNat n (@OfNat.ofNat.{0} Nat (nat_lit 4) (instOfNatNat (nat_lit 4))) \u2192\n      Not (GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.FinitePointColorable n))",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.PlaneColorable",
+    "printed_type": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.PlaneColorable : Nat \u2192 Prop",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.ExactPlaneChromaticNumber",
+    "printed_type": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.ExactPlaneChromaticNumber : Nat \u2192 Prop",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.plane_not_three_colorable",
+    "printed_type": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.plane_not_three_colorable : Not\n  (GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.PlaneColorable (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3))))",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.sqrt_three_mul_sqrt_eleven",
+    "printed_type": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.sqrt_three_mul_sqrt_eleven : @Eq.{1} Real\n  (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)\n    (Real.sqrt (@OfNat.ofNat.{0} Real (nat_lit 3) (@instOfNatAtLeastTwo.{0} Real (nat_lit 3) Real.instNatCast \u22ef)))\n    (Real.sqrt (@OfNat.ofNat.{0} Real (nat_lit 11) (@instOfNatAtLeastTwo.{0} Real (nat_lit 11) Real.instNatCast \u22ef))))\n  (Real.sqrt (@OfNat.ofNat.{0} Real (nat_lit 33) (@instOfNatAtLeastTwo.{0} Real (nat_lit 33) Real.instNatCast \u22ef)))",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.packetCoordinates",
+    "printed_type": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.packetCoordinates : Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))) \u2192\n  Prod.{0, 0} Real Real",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserPoint_coordinates",
+    "printed_type": "GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserPoint_coordinates : \u2200\n  (i : Fin (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))),\n  @Eq.{1} (Prod.{0, 0} Real Real)\n    (@Prod.mk.{0, 0} Real Real (GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserPoint i).re\n      (GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.moserPoint i).im)\n    (GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.packetCoordinates i)",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+]
