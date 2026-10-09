@@ -30,7 +30,7 @@ def run(label,rel,expected=0,oracle=None):
  except subprocess.TimeoutExpired:
   results.append(dict(name=label,outcome="timed-out",seconds=time.monotonic()-t));raise
 try:
- if manifest["profile"]=="least-natural-prime":
+ if manifest["profile"].startswith("least-natural-prime"):
   run("compile-first-prime","GRWTSK/NumberTheory/FirstPrime.lean")
   run("compile-root","GRWTSK.lean")
   audit=run("prime-type-axioms-consumers","checks/PrimeAudit.lean",oracle=lambda s:"sorryAx" not in s and s.count("' depends on axioms:")==3)
