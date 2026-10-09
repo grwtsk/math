@@ -1,1 +1,3 @@
 import GRWTSK.NumberTheory.FirstPrime
+import GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.Moser
+import GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.MoserCoordinates
