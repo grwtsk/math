@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "profile": "least-natural-prime",
+  "profile": "least-natural-prime + canonical34-Moser",
   "origin": "PUBLIC_MATHLIB_DIRECT_IMPORT",
   "upstream": {
     "repository": "https://github.com/leanprover-community/mathlib4",
@@ -16,16 +16,31 @@
     "checks/PrimeAudit.lean": "eb90a4decd0e5142e6117a51d963224991bfa1ee4ae895cf94a750c94e3fb894",
     "checks/PrimeOneFalse.lean": "1384e86af454d2aaa7ad277445e39e1de57e0cdbcea51dd71de37385d764da47",
     "checks/LowerBoundFalse.lean": "34fc91e2097ff9a73b355041b23469fdaaa350b28106bebc5c0e20eee1672c6b",
-    "scripts/check.py": "0144e46914eb5f333c868dc1682ed9fe1c9bccf03b8c52a456b566eef0f6246e",
+    "scripts/check.py": "bd74e7257b1244660bf664c23e6419a5ede00e779a35c3827b9d8a057518a088",
     "LICENSES/MIT.txt": "a98fc92dab12d02b26bc51f1ac0d608871886b7e36de2170747fb0fcee946968",
     "LICENSES/Mathlib-Apache-2.0.txt": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
-    "GRWTSK.lean": "df18c919820490af52bbedcb5ffeea4460b33b47a2152913643119218878f17f",
+    "GRWTSK.lean": "e651e859e146accd897a45bcc6519837d889cd23a58c02994a712eecf6cbbad2",
     "lakefile.toml": "a23f6d313f8458192328f09635ffef9078cb684374c2aac2743af541bf59b4e3",
     "lake-manifest.json": "eb28670758108f1ef831eda56d2088fd27824641f2d3787e3ab82110d4d76016",
     "lean-toolchain": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
-    "README.md": "c57c8de7ba75ac152f28419ce4a96db57ddb6e99d743bde95fff4dee24a43c4a",
+    "README.md": "021d54515e73bcac5332a6c7606e792b7ffb6c97e0abf78f203b4af061268067",
     "scripts/check_inputs.py": "bdef7c2374662329e4364f0415546ce0dabf641617ae581beede03ba89bf0fdf",
-    "evidence/citation-prime.json": "78a8b091eba5685e8cb95083334a467364da34cbd1588b473b4ec6464c8555bc"
+    "evidence/citation-prime.json": "78a8b091eba5685e8cb95083334a467364da34cbd1588b473b4ec6464c8555bc",
+    ".gitattributes": "30ad961b8d8b3947a8f036d5390087ab5f8c1853f7d0bfb01319f449e05e1368",
+    ".gitignore": "21327e9cedbf4b84ef262886e71421d4201201b052cb7b06a6ba6a522270e732",
+    "GRWTSK/Combinatorics/GraphTheory/HadwigerNelson/Moser.lean": "1791f62713a936d9d91f262273871cf5d28257e390f15d05454a5f2115ce8796",
+    "GRWTSK/Combinatorics/GraphTheory/HadwigerNelson/MoserCoordinates.lean": "0e29b36d41b117eb4c747ddaf02bf22a2b87e8a59b0665a424d1a1277a38c8ec",
+    "GRWTSK/Combinatorics/GraphTheory/HadwigerNelson/MoserSource.lean": "f41ba35bc8fa8d35b8249b1a86c3aa55b8f7ef22662270de862699e72efe93d2",
+    "LICENSES/OpenAI-Apache-2.0.txt": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "checks/Consumers.lean": "ddffe7fc2b513a02a79b3afa0a79a797d97424c15c6c08a82db2dd0f9ffe42e4",
+    "checks/DeclarationAudit.lean": "377f6c7372b2693761402d3c28ab0fcb8dca0d5e7d18651fe03289f3863c070a",
+    "checks/SorryControl.lean": "83b8ad5217f2a687ce1f2fca93916e1e4fb6e12703abf6dbdca80b3a964855d6",
+    "checks/WrongColor.lean": "aa66247b22958e5c2732f9e8c0314f41253d1cc61972ad29476482c864a5961e",
+    "evidence/canonical-integration.json": "27bc47db2922f396a4ae893689e7e32e8e63bb4ac6afe0dd14b48616af0c105c",
+    "evidence/citation-moser.json": "f72651fa6dd524c9c31edf4e444baf2d773f31d3b514c3ccb6f3e72c612e808d",
+    "evidence/expected-declarations.json": "475330e25f4a87808e54081d4a899e64f01dd6add40695ded91ac3a2dcb592d4",
+    "scripts/check_finite.py": "9ac03f6fff3b70fe1006d16778223cec7cd10cf2012d04ae2d068363231a2e34",
+    "scripts/check_moser.py": "2f7472e084b7b1ef4d011c435a07c068142a4e1c7c72e37fc75df8d2f5ca7c6a"
   },
   "axiom_policy": "Lean standard classical axioms propext, Classical.choice, Quot.sound permitted; sorryAx and other axioms rejected; prime exact observed list reported, Moser exact frozen lists matched."
 }
