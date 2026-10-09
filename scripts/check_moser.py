@@ -30,7 +30,7 @@ def run(label,rel,expected=0,oracle=None):
  except subprocess.TimeoutExpired:
   results.append(dict(name=label,outcome="timed-out",seconds=time.monotonic()-t));raise
 try:
- if manifest["profile"].startswith("least-natural-prime"):
+ if False:
   run("compile-first-prime","GRWTSK/NumberTheory/FirstPrime.lean")
   run("compile-root","GRWTSK.lean")
   audit=run("prime-type-axioms-consumers","checks/PrimeAudit.lean",oracle=lambda s:"sorryAx" not in s and s.count("' depends on axioms:")==3)
@@ -43,20 +43,21 @@ try:
   prefix="GRWTSK/Combinatorics/GraphTheory/HadwigerNelson/"
   run("compile-moser-source",prefix+"MoserSource.lean")
   run("compile-moser",prefix+"Moser.lean")
+  run("compile-coordinates",prefix+"MoserCoordinates.lean")
   run("compile-root","GRWTSK.lean")
-  output=run("31-declaration-audit","checks/DeclarationAudit.lean")
+  output=run("34-declaration-audit","checks/DeclarationAudit.lean")
   expected=json.loads((root/"evidence/expected-declarations.json").read_text())
   for e in expected:
    segment=output.split("BEGIN::"+e["name"]+"\n",1)[1].split("\nEND::"+e["name"],1)[0]
    parts=segment.split("'"+e["name"]+"'")
    assert " ".join(parts[0].split())==" ".join(e["printed_type"].split()),("type mismatch",e["name"])
-   axioms=re.search(r"depends on axioms: \[(.*?)\]",parts[1])
-   observed=[] if "does not depend on any axioms" in parts[1] else [s.strip() for s in axioms[1].split(",")]
+   axioms=re.search(r"depends on axioms: \[(.*?)\]",parts[1],re.S)
+   observed=[] if "does not depend on any axioms" in parts[1] else [re.sub(r"\.\{[^}]+\}","",s.strip()) for s in axioms[1].split(",")]
    assert sorted(observed)==sorted(e["axioms"]),("axiom mismatch",e["name"])
   run("moser-independent-consumers","checks/Consumers.lean")
   run("reject-wrong-four-color","checks/WrongColor.lean",1,lambda s:"is false" in s)
   sorry=run("sorry-compiles-but-audit-rejects","checks/SorryControl.lean",oracle=lambda s:"sorryAx" in s)
   results[-1]["audit_outcome"]="refuted-or-limited"
 finally:
- (root/"evidence/check-results.json").write_text(json.dumps(dict(schema_version=1,input_manifest_sha256=input_manifest_sha256,lean_binary_sha256=hashlib.sha256(pathlib.Path(lean).read_bytes()).hexdigest(),toolchain_commit="d8b18978322de05a8f3dba51ef03cf5461676c17",dependency_revisions={p["name"]:p["rev"] for p in json.loads((root/"lake-manifest.json").read_text())["packages"]},dependency_mode="pinned dependency objects kernel-checked; selected source modules freshly elaborated",results=results),indent=2)+"\n")
+ (root/"evidence/moser-check-results.json").write_text(json.dumps(dict(schema_version=1,input_manifest_sha256=input_manifest_sha256,lean_binary_sha256=hashlib.sha256(pathlib.Path(lean).read_bytes()).hexdigest(),toolchain_commit="d8b18978322de05a8f3dba51ef03cf5461676c17",dependency_revisions={p["name"]:p["rev"] for p in json.loads((root/"lake-manifest.json").read_text())["packages"]},dependency_mode="pinned dependency objects kernel-checked; selected source modules freshly elaborated",results=results),indent=2)+"\n")
 print(json.dumps({r["name"]:r["outcome"] for r in results}))
