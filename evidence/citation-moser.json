@@ -1,0 +1,31 @@
+{
+  "receipt_schema_version": 1,
+  "receipt_id": "CR-HN-1",
+  "rigor_level": "CR5_ANTI_ERASURE_COMPLETE; CR6 not claimed",
+  "claim_id": "moser_unit_graph_exact_four",
+  "exact_claim": "Seven-point unit graph needs exactly four colors; plane not three-colorable; reader coordinates agree.",
+  "scope_qualifiers": "Finite witness; no stronger bound/novelty.",
+  "source_type_title": "Lean: Moser spindle",
+  "full_contributors_roles": "Leo Moser; William Moser: classical result. R.A. Jacob Martone: local certificates/reader. OpenAI Codex: implementation assistance. OpenAI: upstream supplied collective identity; individual contributors unavailable.",
+  "community_authority": "Mathlib dependencies; upstream collective self-attribution; no identity inference.",
+  "persistent_identifier": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PlaneColoring/Moser.lean",
+  "immutable_revision": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+  "publication_access_dates": "Access2026-10-09; upstream publication date unknown.",
+  "source_location": "UTF-8 bytes[5561,7919); selected17 declarations: first17 in expected-declarations.json.",
+  "source_region_digest": "d33913e0f510a9c43b4c29ce5cb8071208aafd23b3380c5a0b9ec6003b2a8b6f",
+  "transformation_boundary": {
+    "MoserSource": "f41ba35bc8fa8d35b8249b1a86c3aa55b8f7ef22662270de862699e72efe93d2",
+    "Moser": "1791f62713a936d9d91f262273871cf5d28257e390f15d05454a5f2115ce8796",
+    "MoserCoordinates": "0e29b36d41b117eb4c747ddaf02bf22a2b87e8a59b0665a424d1a1277a38c8ec"
+  },
+  "relation_direction": "adapts_code_from upstream; local finite certificates; namespace/import/header adaptation.",
+  "formal_environment": "Lean4.33.0; committed exact9 pins.",
+  "comparison_method": "Exact source bodies; frozen34types/axioms; affected coordinate replay.",
+  "checker_reviewer": "Lean kernel; Codex correlated source review.",
+  "license_notice_protocol": "Apache-2.0 upstream; MIT local; notices retained; additional community protocols not supplied.",
+  "attribution_completeness": "ATTRIBUTION_INCOMPLETE: upstream individual contributors unavailable.",
+  "antecedent_chain": "Mosers, Solution to Problem10(1961),pp187-189,doi10.1017/S0008439500025765; upstream formal source; local certificates.",
+  "uncertainty_dissent": "Classical bibliography inspected through upstream; original article not read; no dissent identified.",
+  "public_display": "Classical Mosers\u2019 spindle; named local contribution; incomplete upstream attribution visible.",
+  "correction_invalidation": "Append correction; propagate receipt/manifest/README/audit; changed sources invalidate affected claims."
+}

@@ -19,3 +19,5 @@ Mathlib: Apache-2.0, upstream copyright and authorship preserved in `LICENSES`. 
 
 
 Source attribution: [claim-bound citation](evidence/citation-prime.json), including Leonardo de Moura, Jeremy Avigad and Mario Carneiro. No priority or originality claim.
+
+The Hadwiger–Nelson modules preserve 34 declarations, including exact reader coordinates. Citation: [Moser source](evidence/citation-moser.json). Check with `lake build`, `python3 scripts/check_moser.py` and `python3 scripts/check_finite.py`.
