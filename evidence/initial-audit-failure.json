@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "toolchain_commit": "d8b18978322de05a8f3dba51ef03cf5461676c17",
+  "dependency_mode": "pinned dependency objects kernel-checked; selected source modules freshly elaborated",
+  "results": [
+    {
+      "name": "compile-first-prime",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 5.677199958,
+      "source_sha256": "436e96d07490a3251683045a1f4929a1df5eca692fb411c87fe527d71b2a0d9c",
+      "output": ""
+    },
+    {
+      "name": "compile-root",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 0.594545042,
+      "source_sha256": "df18c919820490af52bbedcb5ffeea4460b33b47a2152913643119218878f17f",
+      "output": ""
+    },
+    {
+      "name": "prime-type-axioms-consumers",
+      "outcome": "failed",
+      "exit_code": 0,
+      "seconds": 0.6147531660000007,
+      "source_sha256": "eb90a4decd0e5142e6117a51d963224991bfa1ee4ae895cf94a750c94e3fb894",
+      "output": "GRWTSK.NumberTheory.two_is_first_prime : Nat.Prime 2 \u2227 \u2200 (p : \u2115), Nat.Prime p \u2192 2 \u2264 p\n'Nat.prime_two' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Nat.Prime.two_le' depends on axioms: [propext]\n'GRWTSK.NumberTheory.two_is_first_prime' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    }
+  ]
+}

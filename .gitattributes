@@ -1,0 +1,3 @@
+# A final empty text line has no mathematical or executable meaning.
+README.md whitespace=-blank-at-eof
+scripts/*.py whitespace=-blank-at-eof

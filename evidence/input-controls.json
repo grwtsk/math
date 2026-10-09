@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "results": [
+    {
+      "name": "changed-source",
+      "outcome": "passed",
+      "effect": "rejected before compiler invocation"
+    },
+    {
+      "name": "toolchain-pin-drift",
+      "outcome": "passed",
+      "effect": "rejected before compiler invocation"
+    },
+    {
+      "name": "dependency-lock-drift",
+      "outcome": "passed",
+      "effect": "rejected before compiler invocation"
+    },
+    {
+      "name": "symlink-source",
+      "outcome": "passed",
+      "effect": "rejected before compiler invocation"
+    }
+  ]
+}

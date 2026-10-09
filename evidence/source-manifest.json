@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "profile": "least-natural-prime",
+  "origin": "PUBLIC_MATHLIB_DIRECT_IMPORT",
+  "upstream": {
+    "repository": "https://github.com/leanprover-community/mathlib4",
+    "revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "facts": [
+      "Nat.prime_two",
+      "Nat.Prime.two_le"
+    ]
+  },
+  "attribution": "Mathlib facts (Apache-2.0); GRWTSK conjunction and checking: R.A. Jacob Martone, with OpenAI Codex assistance. No originality claim.",
+  "files": {
+    "GRWTSK/NumberTheory/FirstPrime.lean": "436e96d07490a3251683045a1f4929a1df5eca692fb411c87fe527d71b2a0d9c",
+    "checks/PrimeAudit.lean": "eb90a4decd0e5142e6117a51d963224991bfa1ee4ae895cf94a750c94e3fb894",
+    "checks/PrimeOneFalse.lean": "1384e86af454d2aaa7ad277445e39e1de57e0cdbcea51dd71de37385d764da47",
+    "checks/LowerBoundFalse.lean": "34fc91e2097ff9a73b355041b23469fdaaa350b28106bebc5c0e20eee1672c6b",
+    "scripts/check.py": "0144e46914eb5f333c868dc1682ed9fe1c9bccf03b8c52a456b566eef0f6246e",
+    "LICENSES/MIT.txt": "a98fc92dab12d02b26bc51f1ac0d608871886b7e36de2170747fb0fcee946968",
+    "LICENSES/Mathlib-Apache-2.0.txt": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+    "GRWTSK.lean": "df18c919820490af52bbedcb5ffeea4460b33b47a2152913643119218878f17f",
+    "lakefile.toml": "a23f6d313f8458192328f09635ffef9078cb684374c2aac2743af541bf59b4e3",
+    "lake-manifest.json": "eb28670758108f1ef831eda56d2088fd27824641f2d3787e3ab82110d4d76016",
+    "lean-toolchain": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
+    "README.md": "e7ad76f70a3e6fc06f85dd59aa2a725a8f74feaf38df07426a0e0caf4366272c",
+    "scripts/check_inputs.py": "bdef7c2374662329e4364f0415546ce0dabf641617ae581beede03ba89bf0fdf"
+  },
+  "axiom_policy": "Lean standard classical axioms propext, Classical.choice, Quot.sound permitted; sorryAx and other axioms rejected; prime exact observed list reported, Moser exact frozen lists matched."
+}
