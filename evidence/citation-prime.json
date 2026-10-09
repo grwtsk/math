@@ -1,0 +1,40 @@
+{
+  "receipt_schema_version": 1,
+  "receipt_id": "CR-PRIME-1",
+  "rigor_level": "CR5_ANTI_ERASURE_COMPLETE; CR6 not claimed",
+  "claim_id": "two_is_first_prime",
+  "exact_claim": "Two is prime and every natural prime is at least two.",
+  "scope_and_qualifiers": "Natural numbers; conjunction of existing facts; no originality claim.",
+  "source_type": "Lean formal source",
+  "source_title": "Mathlib: Prime numbers",
+  "full_contributors": [
+    "Leonardo de Moura",
+    "Jeremy Avigad",
+    "Mario Carneiro"
+  ],
+  "community_authority": "Mathlib community; names copied from source header",
+  "contributor_roles": "Named source authors; local conjunction R.A. Jacob Martone; OpenAI Codex implementation/check assistance.",
+  "persistent_identifier": "https://github.com/leanprover-community/mathlib4/blob/db584cd6d46c92f209a44c0f1c829460d327499d/Mathlib/Data/Nat/Prime/Defs.lean",
+  "immutable_revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "publication_and_access_dates": "Publication date unknown; copyright2015; accessed2026-10-09.",
+  "source_locations": [
+    "Nat.Prime.two_le:lines72-75",
+    "Nat.prime_two:line171"
+  ],
+  "source_region_digests": {
+    "file": "617c1a2a927a2a282092f11c8d254036454e7ffa2eab12f8dd16880cf83d0d61",
+    "two_le": "096a12d00427f20f5e0b2ba81841555cdc3300eca3672d7b01844fdadac55543",
+    "prime_two": "9ac6824b806b7c35dd270fb49c498365f6617d504c9857db374c9d7af2e6cd65"
+  },
+  "transformation_boundary": "Imports unchanged facts via Prime.Basic; local wrapper SHA256436e96d07490a3251683045a1f4929a1df5eca692fb411c87fe527d71b2a0d9c.",
+  "relation_type_and_direction": "imports upstream facts; combines locally",
+  "formal_environment": "Lean4.33.0; exact committed9 dependency pins; Mathlib revision above",
+  "comparison_method": "Read UTF-8 Git blob directly; preserved theorem/hash; prior actual kernel audit.",
+  "checker_and_reviewer": "Lean kernel; retained replay be96525ec5105e44469dde0c2337c843f4764b5d5f83aaffa64289250c3a30f2; Codex source review, correlated.",
+  "license_notice_protocol": "Mathlib Apache-2.0/Microsoft notice; local wrapper MIT; no community-specific protocol supplied.",
+  "attribution_completeness": "Named file contributors retained; earlier elementary antecedents not researched, no priority claim.",
+  "intermediary_and_antecedent_chain": "Mathlib facts -> GRWTSK conjunction; elementary mathematics, broader historical lineage unknown.",
+  "uncertainty_dissent_unavailable": "No dissent identified; original historical proof sources unavailable here.",
+  "public_display_wording": "Uses the named Mathlib authors\u2019 prime facts; local conjunction only.",
+  "correction_invalidation": "Append correction/supersession; propagate citation, manifest and README; changed source/pin/credit invalidates affected claims."
+}

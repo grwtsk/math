@@ -17,3 +17,5 @@ A first checker incorrectly demanded an empty axiom list. Compilation passed, bu
 
 Mathlib: Apache-2.0, upstream copyright and authorship preserved in `LICENSES`. Local conjunction and checking: R.A. Jacob Martone, with OpenAI Codex assistance, MIT. No mathematical originality claim. Owner: [math#70](https://github.com/grwtsk/math/issues/70).
 
+
+Source attribution: [claim-bound citation](evidence/citation-prime.json), including Leonardo de Moura, Jeremy Avigad and Mario Carneiro. No priority or originality claim.

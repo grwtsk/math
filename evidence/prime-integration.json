@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "manifest_sha256": "7e68664ce681f8fc5b498b42acf45790fa5da3d830e443bf1b82fa14cecf248e",
+  "outcome": "passed: unchanged theorem/source pins, CR5 attribution and hostile omissions, disclosure scan",
+  "Lean_recheck": "not-run: unchanged proof",
+  "retained_replay_sha256": "be96525ec5105e44469dde0c2337c843f4764b5d5f83aaffa64289250c3a30f2",
+  "rights": "Apache-2.0 dependency; MIT wrapper; notices unchanged"
+}

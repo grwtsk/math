@@ -23,8 +23,9 @@
     "lakefile.toml": "a23f6d313f8458192328f09635ffef9078cb684374c2aac2743af541bf59b4e3",
     "lake-manifest.json": "eb28670758108f1ef831eda56d2088fd27824641f2d3787e3ab82110d4d76016",
     "lean-toolchain": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
-    "README.md": "e7ad76f70a3e6fc06f85dd59aa2a725a8f74feaf38df07426a0e0caf4366272c",
-    "scripts/check_inputs.py": "bdef7c2374662329e4364f0415546ce0dabf641617ae581beede03ba89bf0fdf"
+    "README.md": "c57c8de7ba75ac152f28419ce4a96db57ddb6e99d743bde95fff4dee24a43c4a",
+    "scripts/check_inputs.py": "bdef7c2374662329e4364f0415546ce0dabf641617ae581beede03ba89bf0fdf",
+    "evidence/citation-prime.json": "78a8b091eba5685e8cb95083334a467364da34cbd1588b473b4ec6464c8555bc"
   },
   "axiom_policy": "Lean standard classical axioms propext, Classical.choice, Quot.sound permitted; sorryAx and other axioms rejected; prime exact observed list reported, Moser exact frozen lists matched."
 }
