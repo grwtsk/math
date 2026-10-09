@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "input_manifest_sha256": "15e832cccef4392c95348882ec28b305bd3d3e7f90c4285a67d3a1735f76fae4",
+  "lean_binary_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "toolchain_commit": "d8b18978322de05a8f3dba51ef03cf5461676c17",
+  "dependency_revisions": {
+    "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "plausible": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+    "LeanSearchClient": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+    "importGraph": "16f02aa7642864af59f1ff0e384a015994db9118",
+    "proofwidgets": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957",
+    "aesop": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+    "Qq": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+    "batteries": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+    "Cli": "6130a47896ce867c6a4a55373441e59e565bad0f"
+  },
+  "dependency_mode": "pinned dependency objects kernel-checked; selected source modules freshly elaborated",
+  "results": [
+    {
+      "name": "compile-first-prime",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 4.63442425,
+      "source_sha256": "436e96d07490a3251683045a1f4929a1df5eca692fb411c87fe527d71b2a0d9c",
+      "output": ""
+    },
+    {
+      "name": "compile-root",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 0.6399283339999995,
+      "source_sha256": "df18c919820490af52bbedcb5ffeea4460b33b47a2152913643119218878f17f",
+      "output": ""
+    },
+    {
+      "name": "prime-type-axioms-consumers",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 0.6176217079999997,
+      "source_sha256": "eb90a4decd0e5142e6117a51d963224991bfa1ee4ae895cf94a750c94e3fb894",
+      "output": "GRWTSK.NumberTheory.two_is_first_prime : Nat.Prime 2 \u2227 \u2200 (p : \u2115), Nat.Prime p \u2192 2 \u2264 p\n'Nat.prime_two' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Nat.Prime.two_le' depends on axioms: [propext]\n'GRWTSK.NumberTheory.two_is_first_prime' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "name": "reject-prime-one",
+      "outcome": "passed",
+      "exit_code": 1,
+      "seconds": 0.6244619590000005,
+      "source_sha256": "1384e86af454d2aaa7ad277445e39e1de57e0cdbcea51dd71de37385d764da47",
+      "output": "checks/PrimeOneFalse.lean:2:28: error: Tactic `decide` proved that the proposition\n  Nat.Prime 1\nis false\n"
+    },
+    {
+      "name": "reject-lower-bound-three",
+      "outcome": "passed",
+      "exit_code": 1,
+      "seconds": 0.6699945829999994,
+      "source_sha256": "34fc91e2097ff9a73b355041b23469fdaaa350b28106bebc5c0e20eee1672c6b",
+      "output": "checks/LowerBoundFalse.lean:4:2: error: Type mismatch\n  GRWTSK.NumberTheory.two_is_first_prime.right p hp\nhas type\n  2 \u2264 p\nbut is expected to have type\n  3 \u2264 p\n"
+    }
+  ]
+}
