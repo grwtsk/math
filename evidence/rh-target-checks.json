@@ -1,0 +1,544 @@
+{
+  "schema_version": 1,
+  "cell": "RH-01-exact-target-and-zero-symmetry",
+  "outcome": "passed",
+  "target": "_root_.RiemannHypothesis",
+  "rh_proved": false,
+  "scope": "Exact target comparator, defect equivalence, nontrivial-zero domain and zero symmetries; no unconditional RH proof.",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "lean_binary_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "dependency_revisions": {
+    "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "plausible": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+    "LeanSearchClient": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+    "importGraph": "16f02aa7642864af59f1ff0e384a015994db9118",
+    "proofwidgets": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957",
+    "aesop": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+    "Qq": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+    "batteries": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+    "Cli": "6130a47896ce867c6a4a55373441e59e565bad0f"
+  },
+  "trust_profile": {
+    "trust_level": 0,
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "source": "Selected project modules freshly elaborated; pinned dependency objects kernel-checked."
+  },
+  "files": {
+    "GRWTSK/RiemannHypothesis/TargetStatement.lean": "26de9b9d99b5e04103c8095c3b466ce301fab1d52dd40155703a160aac44f1f6",
+    "GRWTSK/RiemannHypothesis/Definitions.lean": "107f357b8c04afc16e25b8fded6922782d2756959b42f080af839f4db58e9aa0",
+    "GRWTSK/RiemannHypothesis/Defect.lean": "94bfc9f62d99bfec9dcf4b41975cb08feeb7302387f9f7fcdb9dcedb7aa32ba7",
+    "GRWTSK/RiemannHypothesis/ZeroSymmetry.lean": "d11ab9b34e31569a7d1441fb53bdb0abfce041c80e79cca4ebee46509be910bc",
+    "GRWTSK/RiemannHypothesis/TargetComparator.lean": "73d6f49323b54bd75baabd0dfcac668ef397c9f6a59c54dfb3b1179cc21614d2",
+    "GRWTSK/RiemannHypothesis.lean": "b57400dc6817cf946c1617a28fcef53e4db0f56ceb24f455f89fb24d95d53573",
+    "checks/RHTargetAudit.lean": "eaa662a93e1315aa934847c72845600babbd7c0afc88fc1a63e5c990aee86620",
+    "checks/RHExcludedTrivialZero.lean": "180ca06a09721f0c3d0bcdc5075d8f2d2b820cecc0e7e423525a59e6525179a5",
+    "checks/RHPositivityIsNotVanishing.lean": "89220f235084058b9dc3ebf52c80273dc66541107c112fce0bd78ac3c8218086",
+    "scripts/check_rh_target.py": "21a7c5a6ede9cbf669c443d11c019510c2111b17ac9156fb57b0ca1c0d0cd641",
+    "lean-toolchain": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
+    "lakefile.toml": "a23f6d313f8458192328f09635ffef9078cb684374c2aac2743af541bf59b4e3",
+    "lake-manifest.json": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec"
+  },
+  "declarations": [
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "module": "GRWTSK.RiemannHypothesis.Definitions",
+      "name": "GRWTSK.RiemannHypothesis.NontrivialZetaZero",
+      "type": "\u2102 \u2192 Prop"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.Definitions",
+      "name": "GRWTSK.RiemannHypothesis.NontrivialZetaZero._proof_1",
+      "type": "(1 + 1).AtLeastTwo"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.ZeroSymmetry",
+      "name": "GRWTSK.RiemannHypothesis.NontrivialZetaZero.conjugate",
+      "type": "\u2200 {s : \u2102},\n  GRWTSK.RiemannHypothesis.NontrivialZetaZero s \u2192\n    GRWTSK.RiemannHypothesis.NontrivialZetaZero (GRWTSK.RiemannHypothesis.zeroConjugate s)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.ZeroSymmetry",
+      "name": "GRWTSK.RiemannHypothesis.NontrivialZetaZero.critical_reflection",
+      "type": "\u2200 {s : \u2102},\n  GRWTSK.RiemannHypothesis.NontrivialZetaZero s \u2192\n    GRWTSK.RiemannHypothesis.NontrivialZetaZero (GRWTSK.RiemannHypothesis.criticalReflection s)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.ZeroSymmetry",
+      "name": "GRWTSK.RiemannHypothesis.NontrivialZetaZero.gamma_real_ne_zero",
+      "type": "\u2200 {s : \u2102}, GRWTSK.RiemannHypothesis.NontrivialZetaZero s \u2192 s.Gamma\u211d \u2260 0"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.ZeroSymmetry",
+      "name": "GRWTSK.RiemannHypothesis.NontrivialZetaZero.mem_critical_strip",
+      "type": "\u2200 {s : \u2102}, GRWTSK.RiemannHypothesis.NontrivialZetaZero s \u2192 0 < s.re \u2227 s.re < 1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.ZeroSymmetry",
+      "name": "GRWTSK.RiemannHypothesis.NontrivialZetaZero.ne_zero",
+      "type": "\u2200 {s : \u2102}, GRWTSK.RiemannHypothesis.NontrivialZetaZero s \u2192 s \u2260 0"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.ZeroSymmetry",
+      "name": "GRWTSK.RiemannHypothesis.NontrivialZetaZero.reflect",
+      "type": "\u2200 {s : \u2102},\n  GRWTSK.RiemannHypothesis.NontrivialZetaZero s \u2192\n    GRWTSK.RiemannHypothesis.NontrivialZetaZero (GRWTSK.RiemannHypothesis.zeroReflect s)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "module": "GRWTSK.RiemannHypothesis.TargetStatement",
+      "name": "GRWTSK.RiemannHypothesis.Target.Statement",
+      "type": "Prop"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.TargetStatement",
+      "name": "GRWTSK.RiemannHypothesis.Target.Statement._proof_1",
+      "type": "(1 + 1).AtLeastTwo"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.TargetStatement",
+      "name": "GRWTSK.RiemannHypothesis.Target.statement_eq_mathlib",
+      "type": "GRWTSK.RiemannHypothesis.Target.Statement = RiemannHypothesis"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.TargetComparator",
+      "name": "GRWTSK.RiemannHypothesis.Target.statement_iff_defect_zero",
+      "type": "GRWTSK.RiemannHypothesis.Target.Statement \u2194\n  \u2200 (s : \u2102), GRWTSK.RiemannHypothesis.NontrivialZetaZero s \u2192 GRWTSK.RiemannHypothesis.rhDefect s = 0"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "module": "GRWTSK.RiemannHypothesis.Definitions",
+      "name": "GRWTSK.RiemannHypothesis.criticalReflection",
+      "type": "\u2102 \u2192 \u2102"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.Defect",
+      "name": "GRWTSK.RiemannHypothesis.criticalReflection.eq_1",
+      "type": "\u2200 (s : \u2102), GRWTSK.RiemannHypothesis.criticalReflection s = 1 - star s"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.Defect",
+      "name": "GRWTSK.RiemannHypothesis.criticalReflection.eq_1",
+      "type": "\u2200 (s : \u2102), GRWTSK.RiemannHypothesis.criticalReflection s = 1 - star s"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.ZeroSymmetry",
+      "name": "GRWTSK.RiemannHypothesis.critical_reflection_eq_composite",
+      "type": "\u2200 (s : \u2102),\n  GRWTSK.RiemannHypothesis.criticalReflection s =\n    GRWTSK.RiemannHypothesis.zeroReflect (GRWTSK.RiemannHypothesis.zeroConjugate s)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.ZeroSymmetry",
+      "name": "GRWTSK.RiemannHypothesis.critical_reflection_involutive",
+      "type": "\u2200 (s : \u2102), GRWTSK.RiemannHypothesis.criticalReflection (GRWTSK.RiemannHypothesis.criticalReflection s) = s"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.Defect",
+      "name": "GRWTSK.RiemannHypothesis.defect_nonnegative_does_not_force_universal_vanishing",
+      "type": "(\u2200 (s : \u2102), 0 \u2264 GRWTSK.RiemannHypothesis.rhDefect s) \u2227 \u00ac\u2200 (s : \u2102), GRWTSK.RiemannHypothesis.rhDefect s = 0"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.ZeroSymmetry",
+      "name": "GRWTSK.RiemannHypothesis.nontrivial_zero_conjugate_iff",
+      "type": "\u2200 (s : \u2102),\n  GRWTSK.RiemannHypothesis.NontrivialZetaZero (GRWTSK.RiemannHypothesis.zeroConjugate s) \u2194\n    GRWTSK.RiemannHypothesis.NontrivialZetaZero s"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.ZeroSymmetry",
+      "name": "GRWTSK.RiemannHypothesis.nontrivial_zero_conjugate_iff._simp_1",
+      "type": "\u2200 (s : \u2102),\n  GRWTSK.RiemannHypothesis.NontrivialZetaZero (GRWTSK.RiemannHypothesis.zeroConjugate s) =\n    GRWTSK.RiemannHypothesis.NontrivialZetaZero s"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.ZeroSymmetry",
+      "name": "GRWTSK.RiemannHypothesis.nontrivial_zero_critical_reflection_iff",
+      "type": "\u2200 (s : \u2102),\n  GRWTSK.RiemannHypothesis.NontrivialZetaZero (GRWTSK.RiemannHypothesis.criticalReflection s) \u2194\n    GRWTSK.RiemannHypothesis.NontrivialZetaZero s"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.ZeroSymmetry",
+      "name": "GRWTSK.RiemannHypothesis.nontrivial_zero_critical_reflection_iff._simp_1",
+      "type": "\u2200 (s : \u2102),\n  GRWTSK.RiemannHypothesis.NontrivialZetaZero (GRWTSK.RiemannHypothesis.criticalReflection s) =\n    GRWTSK.RiemannHypothesis.NontrivialZetaZero s"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.ZeroSymmetry",
+      "name": "GRWTSK.RiemannHypothesis.nontrivial_zero_reflect_iff",
+      "type": "\u2200 (s : \u2102),\n  GRWTSK.RiemannHypothesis.NontrivialZetaZero (GRWTSK.RiemannHypothesis.zeroReflect s) \u2194\n    GRWTSK.RiemannHypothesis.NontrivialZetaZero s"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.ZeroSymmetry",
+      "name": "GRWTSK.RiemannHypothesis.nontrivial_zero_reflect_iff._simp_1",
+      "type": "\u2200 (s : \u2102),\n  GRWTSK.RiemannHypothesis.NontrivialZetaZero (GRWTSK.RiemannHypothesis.zeroReflect s) =\n    GRWTSK.RiemannHypothesis.NontrivialZetaZero s"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "module": "GRWTSK.RiemannHypothesis.Definitions",
+      "name": "GRWTSK.RiemannHypothesis.rhDefect",
+      "type": "\u2102 \u2192 \u211d"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.Defect",
+      "name": "GRWTSK.RiemannHypothesis.rhDefect.eq_1",
+      "type": "\u2200 (s : \u2102), GRWTSK.RiemannHypothesis.rhDefect s = Complex.normSq (s - GRWTSK.RiemannHypothesis.criticalReflection s)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.Defect",
+      "name": "GRWTSK.RiemannHypothesis.rh_defect_eq_norm_sq",
+      "type": "\u2200 (s : \u2102), GRWTSK.RiemannHypothesis.rhDefect s = \u2016s - GRWTSK.RiemannHypothesis.criticalReflection s\u2016 ^ 2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.Defect",
+      "name": "GRWTSK.RiemannHypothesis.rh_defect_eq_square",
+      "type": "\u2200 (s : \u2102), GRWTSK.RiemannHypothesis.rhDefect s = (2 * s.re - 1) ^ 2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.Defect",
+      "name": "GRWTSK.RiemannHypothesis.rh_defect_eq_zero_iff",
+      "type": "\u2200 (s : \u2102), GRWTSK.RiemannHypothesis.rhDefect s = 0 \u2194 s.re = 1 / 2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.Defect",
+      "name": "GRWTSK.RiemannHypothesis.rh_defect_nonneg",
+      "type": "\u2200 (s : \u2102), 0 \u2264 GRWTSK.RiemannHypothesis.rhDefect s"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.Defect",
+      "name": "GRWTSK.RiemannHypothesis.riemann_hypothesis_iff_defect_zero",
+      "type": "RiemannHypothesis \u2194 \u2200 (s : \u2102), GRWTSK.RiemannHypothesis.NontrivialZetaZero s \u2192 GRWTSK.RiemannHypothesis.rhDefect s = 0"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "module": "GRWTSK.RiemannHypothesis.Definitions",
+      "name": "GRWTSK.RiemannHypothesis.zeroConjugate",
+      "type": "\u2102 \u2192 \u2102"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.ZeroSymmetry",
+      "name": "GRWTSK.RiemannHypothesis.zeroConjugate.eq_1",
+      "type": "\u2200 (s : \u2102), GRWTSK.RiemannHypothesis.zeroConjugate s = star s"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "module": "GRWTSK.RiemannHypothesis.Definitions",
+      "name": "GRWTSK.RiemannHypothesis.zeroReflect",
+      "type": "\u2102 \u2192 \u2102"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.ZeroSymmetry",
+      "name": "GRWTSK.RiemannHypothesis.zeroReflect.eq_1",
+      "type": "\u2200 (s : \u2102), GRWTSK.RiemannHypothesis.zeroReflect s = 1 - s"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.ZeroSymmetry",
+      "name": "GRWTSK.RiemannHypothesis.zero_conjugate_involutive",
+      "type": "\u2200 (s : \u2102), GRWTSK.RiemannHypothesis.zeroConjugate (GRWTSK.RiemannHypothesis.zeroConjugate s) = s"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.ZeroSymmetry",
+      "name": "GRWTSK.RiemannHypothesis.zero_conjugate_reflect_commute",
+      "type": "\u2200 (s : \u2102),\n  GRWTSK.RiemannHypothesis.zeroConjugate (GRWTSK.RiemannHypothesis.zeroReflect s) =\n    GRWTSK.RiemannHypothesis.zeroReflect (GRWTSK.RiemannHypothesis.zeroConjugate s)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.ZeroSymmetry",
+      "name": "GRWTSK.RiemannHypothesis.zero_reflect_involutive",
+      "type": "\u2200 (s : \u2102), GRWTSK.RiemannHypothesis.zeroReflect (GRWTSK.RiemannHypothesis.zeroReflect s) = s"
+    }
+  ],
+  "checks": [
+    {
+      "source": "GRWTSK/RiemannHypothesis/TargetStatement.lean",
+      "source_sha256": "26de9b9d99b5e04103c8095c3b466ce301fab1d52dd40155703a160aac44f1f6",
+      "exit_code": 0,
+      "expected_rejection": false,
+      "outcome": "passed",
+      "seconds": 102.838072792,
+      "output": ""
+    },
+    {
+      "source": "GRWTSK/RiemannHypothesis/Definitions.lean",
+      "source_sha256": "107f357b8c04afc16e25b8fded6922782d2756959b42f080af839f4db58e9aa0",
+      "exit_code": 0,
+      "expected_rejection": false,
+      "outcome": "passed",
+      "seconds": 49.88586145800001,
+      "output": ""
+    },
+    {
+      "source": "GRWTSK/RiemannHypothesis/Defect.lean",
+      "source_sha256": "94bfc9f62d99bfec9dcf4b41975cb08feeb7302387f9f7fcdb9dcedb7aa32ba7",
+      "exit_code": 0,
+      "expected_rejection": false,
+      "outcome": "passed",
+      "seconds": 112.095111167,
+      "output": ""
+    },
+    {
+      "source": "GRWTSK/RiemannHypothesis/ZeroSymmetry.lean",
+      "source_sha256": "d11ab9b34e31569a7d1441fb53bdb0abfce041c80e79cca4ebee46509be910bc",
+      "exit_code": 0,
+      "expected_rejection": false,
+      "outcome": "passed",
+      "seconds": 142.052386833,
+      "output": ""
+    },
+    {
+      "source": "GRWTSK/RiemannHypothesis/TargetComparator.lean",
+      "source_sha256": "73d6f49323b54bd75baabd0dfcac668ef397c9f6a59c54dfb3b1179cc21614d2",
+      "exit_code": 0,
+      "expected_rejection": false,
+      "outcome": "passed",
+      "seconds": 217.42287545800002,
+      "output": ""
+    },
+    {
+      "source": "GRWTSK/RiemannHypothesis.lean",
+      "source_sha256": "b57400dc6817cf946c1617a28fcef53e4db0f56ceb24f455f89fb24d95d53573",
+      "exit_code": 0,
+      "expected_rejection": false,
+      "outcome": "passed",
+      "seconds": 291.522346791,
+      "output": ""
+    },
+    {
+      "source": "checks/RHTargetAudit.lean",
+      "source_sha256": "eaa662a93e1315aa934847c72845600babbd7c0afc88fc1a63e5c990aee86620",
+      "exit_code": 0,
+      "expected_rejection": false,
+      "outcome": "passed",
+      "seconds": 343.0262167080001,
+      "output": "RH_DECL::{\"axioms\":[\"propext\"],\"kind\":\"theorem\",\"module\":\"GRWTSK.RiemannHypothesis.TargetStatement\",\"name\":\"GRWTSK.RiemannHypothesis.Target.Statement._proof_1\",\"type\":\"(1 + 1).AtLeastTwo\"}\nRH_DECL::{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"kind\":\"theorem\",\"module\":\"GRWTSK.RiemannHypothesis.TargetStatement\",\"name\":\"GRWTSK.RiemannHypothesis.Target.statement_eq_mathlib\",\"type\":\"GRWTSK.RiemannHypothesis.Target.Statement = RiemannHypothesis\"}\nRH_DECL::{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"kind\":\"definition\",\"module\":\"GRWTSK.RiemannHypothesis.TargetStatement\",\"name\":\"GRWTSK.RiemannHypothesis.Target.Statement\",\"type\":\"Prop\"}\nRH_DECL::{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"kind\":\"definition\",\"module\":\"GRWTSK.RiemannHypothesis.Definitions\",\"name\":\"GRWTSK.RiemannHypothesis.NontrivialZetaZero\",\"type\":\"\u2102 \u2192 Prop\"}\nRH_DECL::{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"kind\":\"definition\",\"module\":\"GRWTSK.RiemannHypothesis.Definitions\",\"name\":\"GRWTSK.RiemannHypothesis.zeroConjugate\",\"type\":\"\u2102 \u2192 \u2102\"}\nRH_DECL::{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"kind\":\"definition\",\"module\":\"GRWTSK.RiemannHypothesis.Definitions\",\"name\":\"GRWTSK.RiemannHypothesis.zeroReflect\",\"type\":\"\u2102 \u2192 \u2102\"}\nRH_DECL::{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"kind\":\"definition\",\"module\":\"GRWTSK.RiemannHypothesis.Definitions\",\"name\":\"GRWTSK.RiemannHypothesis.rhDefect\",\"type\":\"\u2102 \u2192 \u211d\"}\nRH_DECL::{\"axioms\":[\"propext\"],\"kind\":\"theorem\",\"module\":\"GRWTSK.RiemannHypothesis.Definitions\",\"name\":\"GRWTSK.RiemannHypothesis.NontrivialZetaZero._proof_1\",\"type\":\"(1 + 1).AtLeastTwo\"}\nRH_DECL::{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"kind\":\"definition\",\"module\":\"GRWTSK.RiemannHypothesis.Definitions\",\"name\":\"GRWTSK.RiemannHypothesis.criticalReflection\",\"type\":\"\u2102 \u2192 \u2102\"}\nRH_DECL::{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"kind\":\"theorem\",\"module\":\"GRWTSK.RiemannHypothesis.Defect\",\"name\":\"GRWTSK.RiemannHypothesis.criticalReflection.eq_1\",\"type\":\"\u2200 (s : \u2102), GRWTSK.RiemannHypothesis.criticalReflection s = 1 - star s\"}\nRH_DECL::{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"kind\":\"theorem\",\"module\":\"GRWTSK.RiemannHypothesis.Defect\",\"name\":\"GRWTSK.RiemannHypothesis.defect_nonnegative_does_not_force_universal_vanishing\",\"type\":\"(\u2200 (s : \u2102), 0 \u2264 GRWTSK.RiemannHypothesis.rhDefect s) \u2227 \u00ac\u2200 (s : \u2102), GRWTSK.RiemannHypothesis.rhDefect s = 0\"}\nRH_DECL::{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"kind\":\"theorem\",\"module\":\"GRWTSK.RiemannHypothesis.Defect\",\"name\":\"GRWTSK.RiemannHypothesis.rh_defect_eq_zero_iff\",\"type\":\"\u2200 (s : \u2102), GRWTSK.RiemannHypothesis.rhDefect s = 0 \u2194 s.re = 1 / 2\"}\nRH_DECL::{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"kind\":\"theorem\",\"module\":\"GRWTSK.RiemannHypothesis.Defect\",\"name\":\"GRWTSK.RiemannHypothesis.rh_defect_nonneg\",\"type\":\"\u2200 (s : \u2102), 0 \u2264 GRWTSK.RiemannHypothesis.rhDefect s\"}\nRH_DECL::{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"kind\":\"theorem\",\"module\":\"GRWTSK.RiemannHypothesis.Defect\",\"name\":\"GRWTSK.RiemannHypothesis.rhDefect.eq_1\",\"type\":\"\u2200 (s : \u2102), GRWTSK.RiemannHypothesis.rhDefect s = Complex.normSq (s - GRWTSK.RiemannHypothesis.criticalReflection s)\"}\nRH_DECL::{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"kind\":\"theorem\",\"module\":\"GRWTSK.RiemannHypothesis.Defect\",\"name\":\"GRWTSK.RiemannHypothesis.rh_defect_eq_norm_sq\",\"type\":\"\u2200 (s : \u2102), GRWTSK.RiemannHypothesis.rhDefect s = \u2016s - GRWTSK.RiemannHypothesis.criticalReflection s\u2016 ^ 2\"}\nRH_DECL::{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"kind\":\"theorem\",\"module\":\"GRWTSK.RiemannHypothesis.Defect\",\"name\":\"GRWTSK.RiemannHypothesis.rh_defect_eq_square\",\"type\":\"\u2200 (s : \u2102), GRWTSK.RiemannHypothesis.rhDefect s = (2 * s.re - 1) ^ 2\"}\nRH_DECL::{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"kind\":\"theorem\",\"module\":\"GRWTSK.RiemannHypothesis.Defect\",\"name\":\"GRWTSK.RiemannHypothesis.riemann_hypothesis_iff_defect_zero\",\"type\":\"RiemannHypothesis \u2194 \u2200 (s : \u2102), GRWTSK.RiemannHypothesis.NontrivialZetaZero s \u2192 GRWTSK.RiemannHypothesis.rhDefect s = 0\"}\nRH_DECL::{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"kind\":\"theorem\",\"module\":\"GRWTSK.RiemannHypothesis.ZeroSymmetry\",\"name\":\"GRWTSK.RiemannHypothesis.zero_conjugate_reflect_commute\",\"type\":\"\u2200 (s : \u2102),\\n  GRWTSK.RiemannHypothesis.zeroConjugate (GRWTSK.RiemannHypothesis.zeroReflect s) =\\n    GRWTSK.RiemannHypothesis.zeroReflect (GRWTSK.RiemannHypothesis.zeroConjugate s)\"}\nRH_DECL::{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"kind\":\"theorem\",\"module\":\"GRWTSK.RiemannHypothesis.ZeroSymmetry\",\"name\":\"GRWTSK.RiemannHypothesis.zero_reflect_involutive\",\"type\":\"\u2200 (s : \u2102), GRWTSK.RiemannHypothesis.zeroReflect (GRWTSK.RiemannHypothesis.zeroReflect s) = s\"}\nRH_DECL::{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"kind\":\"theorem\",\"module\":\"GRWTSK.RiemannHypothesis.ZeroSymmetry\",\"name\":\"GRWTSK.RiemannHypothesis.nontrivial_zero_critical_reflection_iff\",\"type\":\"\u2200 (s : \u2102),\\n  GRWTSK.RiemannHypothesis.NontrivialZetaZero (GRWTSK.RiemannHypothesis.criticalReflection s) \u2194\\n    GRWTSK.RiemannHypothesis.NontrivialZetaZero s\"}\nRH_DECL::{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"kind\":\"theorem\",\"module\":\"GRWTSK.RiemannHypothesis.ZeroSymmetry\",\"name\":\"GRWTSK.RiemannHypothesis.NontrivialZetaZero.gamma_real_ne_zero\",\"type\":\"\u2200 {s : \u2102}, GRWTSK.RiemannHypothesis.NontrivialZetaZero s \u2192 s.Gamma\u211d \u2260 0\"}\nRH_DECL::{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"kind\":\"theorem\",\"module\":\"GRWTSK.RiemannHypothesis.ZeroSymmetry\",\"name\":\"GRWTSK.RiemannHypothesis.zero_conjugate_involutive\",\"type\":\"\u2200 (s : \u2102), GRWTSK.RiemannHypothesis.zeroConjugate (GRWTSK.RiemannHypothesis.zeroConjugate s) = s\"}\nRH_DECL::{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"kind\":\"theorem\",\"module\":\"GRWTSK.RiemannHypothesis.ZeroSymmetry\",\"name\":\"GRWTSK.RiemannHypothesis.critical_reflection_involutive\",\"type\":\"\u2200 (s : \u2102), GRWTSK.RiemannHypothesis.criticalReflection (GRWTSK.RiemannHypothesis.criticalReflection s) = s\"}\nRH_DECL::{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"kind\":\"theorem\",\"module\":\"GRWTSK.RiemannHypothesis.ZeroSymmetry\",\"name\":\"GRWTSK.RiemannHypothesis.NontrivialZetaZero.critical_reflection\",\"type\":\"\u2200 {s : \u2102},\\n  GRWTSK.RiemannHypothesis.NontrivialZetaZero s \u2192\\n    GRWTSK.RiemannHypothesis.NontrivialZetaZero (GRWTSK.RiemannHypothesis.criticalReflection s)\"}\nRH_DECL::{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"kind\":\"theorem\",\"module\":\"GRWTSK.RiemannHypothesis.Defect\",\"name\":\"GRWTSK.RiemannHypothesis.criticalReflection.eq_1\",\"type\":\"\u2200 (s : \u2102), GRWTSK.RiemannHypothesis.criticalReflection s = 1 - star s\"}\nRH_DECL::{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"kind\":\"theorem\",\"module\":\"GRWTSK.RiemannHypothesis.ZeroSymmetry\",\"name\":\"GRWTSK.RiemannHypothesis.nontrivial_zero_critical_reflection_iff._simp_1\",\"type\":\"\u2200 (s : \u2102),\\n  GRWTSK.RiemannHypothesis.NontrivialZetaZero (GRWTSK.RiemannHypothesis.criticalReflection s) =\\n    GRWTSK.RiemannHypothesis.NontrivialZetaZero s\"}\nRH_DECL::{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"kind\":\"theorem\",\"module\":\"GRWTSK.RiemannHypothesis.ZeroSymmetry\",\"name\":\"GRWTSK.RiemannHypothesis.nontrivial_zero_reflect_iff._simp_1\",\"type\":\"\u2200 (s : \u2102),\\n  GRWTSK.RiemannHypothesis.NontrivialZetaZero (GRWTSK.RiemannHypothesis.zeroReflect s) =\\n    GRWTSK.RiemannHypothesis.NontrivialZetaZero s\"}\nRH_DECL::{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"kind\":\"theorem\",\"module\":\"GRWTSK.RiemannHypothesis.ZeroSymmetry\",\"name\":\"GRWTSK.RiemannHypothesis.NontrivialZetaZero.conjugate\",\"type\":\"\u2200 {s : \u2102},\\n  GRWTSK.RiemannHypothesis.NontrivialZetaZero s \u2192\\n    GRWTSK.RiemannHypothesis.NontrivialZetaZero (GRWTSK.RiemannHypothesis.zeroConjugate s)\"}\nRH_DECL::{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"kind\":\"theorem\",\"module\":\"GRWTSK.RiemannHypothesis.ZeroSymmetry\",\"name\":\"GRWTSK.RiemannHypothesis.NontrivialZetaZero.mem_critical_strip\",\"type\":\"\u2200 {s : \u2102}, GRWTSK.RiemannHypothesis.NontrivialZetaZero s \u2192 0 < s.re \u2227 s.re < 1\"}\nRH_DECL::{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"kind\":\"theorem\",\"module\":\"GRWTSK.RiemannHypothesis.ZeroSymmetry\",\"name\":\"GRWTSK.RiemannHypothesis.NontrivialZetaZero.reflect\",\"type\":\"\u2200 {s : \u2102},\\n  GRWTSK.RiemannHypothesis.NontrivialZetaZero s \u2192\\n    GRWTSK.RiemannHypothesis.NontrivialZetaZero (GRWTSK.RiemannHypothesis.zeroReflect s)\"}\nRH_DECL::{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"kind\":\"theorem\",\"module\":\"GRWTSK.RiemannHypothesis.ZeroSymmetry\",\"name\":\"GRWTSK.RiemannHypothesis.nontrivial_zero_conjugate_iff._simp_1\",\"type\":\"\u2200 (s : \u2102),\\n  GRWTSK.RiemannHypothesis.NontrivialZetaZero (GRWTSK.RiemannHypothesis.zeroConjugate s) =\\n    GRWTSK.RiemannHypothesis.NontrivialZetaZero s\"}\nRH_DECL::{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"kind\":\"theorem\",\"module\":\"GRWTSK.RiemannHypothesis.ZeroSymmetry\",\"name\":\"GRWTSK.RiemannHypothesis.zeroReflect.eq_1\",\"type\":\"\u2200 (s : \u2102), GRWTSK.RiemannHypothesis.zeroReflect s = 1 - s\"}\nRH_DECL::{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"kind\":\"theorem\",\"module\":\"GRWTSK.RiemannHypothesis.ZeroSymmetry\",\"name\":\"GRWTSK.RiemannHypothesis.critical_reflection_eq_composite\",\"type\":\"\u2200 (s : \u2102),\\n  GRWTSK.RiemannHypothesis.criticalReflection s =\\n    GRWTSK.RiemannHypothesis.zeroReflect (GRWTSK.RiemannHypothesis.zeroConjugate s)\"}\nRH_DECL::{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"kind\":\"theorem\",\"module\":\"GRWTSK.RiemannHypothesis.ZeroSymmetry\",\"name\":\"GRWTSK.RiemannHypothesis.nontrivial_zero_conjugate_iff\",\"type\":\"\u2200 (s : \u2102),\\n  GRWTSK.RiemannHypothesis.NontrivialZetaZero (GRWTSK.RiemannHypothesis.zeroConjugate s) \u2194\\n    GRWTSK.RiemannHypothesis.NontrivialZetaZero s\"}\nRH_DECL::{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"kind\":\"theorem\",\"module\":\"GRWTSK.RiemannHypothesis.ZeroSymmetry\",\"name\":\"GRWTSK.RiemannHypothesis.zeroConjugate.eq_1\",\"type\":\"\u2200 (s : \u2102), GRWTSK.RiemannHypothesis.zeroConjugate s = star s\"}\nRH_DECL::{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"kind\":\"theorem\",\"module\":\"GRWTSK.RiemannHypothesis.ZeroSymmetry\",\"name\":\"GRWTSK.RiemannHypothesis.nontrivial_zero_reflect_iff\",\"type\":\"\u2200 (s : \u2102),\\n  GRWTSK.RiemannHypothesis.NontrivialZetaZero (GRWTSK.RiemannHypothesis.zeroReflect s) \u2194\\n    GRWTSK.RiemannHypothesis.NontrivialZetaZero s\"}\nRH_DECL::{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"kind\":\"theorem\",\"module\":\"GRWTSK.RiemannHypothesis.ZeroSymmetry\",\"name\":\"GRWTSK.RiemannHypothesis.NontrivialZetaZero.ne_zero\",\"type\":\"\u2200 {s : \u2102}, GRWTSK.RiemannHypothesis.NontrivialZetaZero s \u2192 s \u2260 0\"}\nRH_DECL::{\"axioms\":[\"propext\",\"Classical.choice\",\"Quot.sound\"],\"kind\":\"theorem\",\"module\":\"GRWTSK.RiemannHypothesis.TargetComparator\",\"name\":\"GRWTSK.RiemannHypothesis.Target.statement_iff_defect_zero\",\"type\":\"GRWTSK.RiemannHypothesis.Target.Statement \u2194\\n  \u2200 (s : \u2102), GRWTSK.RiemannHypothesis.NontrivialZetaZero s \u2192 GRWTSK.RiemannHypothesis.rhDefect s = 0\"}\nRH_COUNT::38\n"
+    },
+    {
+      "source": "checks/RHExcludedTrivialZero.lean",
+      "source_sha256": "180ca06a09721f0c3d0bcdc5075d8f2d2b820cecc0e7e423525a59e6525179a5",
+      "exit_code": 1,
+      "expected_rejection": true,
+      "outcome": "passed",
+      "seconds": 538.331666625,
+      "output": "checks/RHExcludedTrivialZero.lean:6:2: error: unsolved goals\ncase refine_2\n\u22a2 False\n"
+    },
+    {
+      "source": "checks/RHPositivityIsNotVanishing.lean",
+      "source_sha256": "89220f235084058b9dc3ebf52c80273dc66541107c112fce0bd78ac3c8218086",
+      "exit_code": 1,
+      "expected_rejection": true,
+      "outcome": "passed",
+      "seconds": 433.72004200000015,
+      "output": "checks/RHPositivityIsNotVanishing.lean:3:53: error: unsolved goals\n\u22a2 False\n"
+    }
+  ]
+}
