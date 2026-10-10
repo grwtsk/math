@@ -14,6 +14,5 @@ for label,rel,mode in [("changed-source",next(p for p in manifest["files"] if p.
  p=subprocess.run(["python3","scripts/check.py"],cwd=fixture,capture_output=True,text=True,timeout=30)
  assert p.returncode!=0 and "invalidated" in p.stderr,(label,p.stdout,p.stderr)
  results.append(dict(name=label,outcome="passed",effect="rejected before compiler invocation"))
-(root/"evidence/input-controls.json").write_text(json.dumps(dict(schema_version=1,results=results),indent=2)+"\n")
+(root/"evidence/input-controls.json").write_text(json.dumps(dict(schema_version=1,input_manifest_sha256=hashlib.sha256((root/"evidence/source-manifest.json").read_bytes()).hexdigest(),checker_sha256=hashlib.sha256((root/"scripts/check.py").read_bytes()).hexdigest(),results=results),indent=2)+"\n")
 print(json.dumps({r["name"]:r["outcome"] for r in results}))
-
