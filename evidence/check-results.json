@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "input_manifest_sha256": "15e832cccef4392c95348882ec28b305bd3d3e7f90c4285a67d3a1735f76fae4",
+  "input_manifest_sha256": "c5ebac227893ecdb203b208a56cdba598748c44e3fbf1c84bc9e455fa9f163b5",
   "lean_binary_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
   "toolchain_commit": "d8b18978322de05a8f3dba51ef03cf5461676c17",
   "dependency_revisions": {
@@ -17,26 +17,98 @@
   "dependency_mode": "pinned dependency objects kernel-checked; selected source modules freshly elaborated",
   "results": [
     {
-      "name": "compile-first-prime",
+      "name": "compile-GRWTSK.NumberTheory.FirstPrime",
       "outcome": "passed",
       "exit_code": 0,
-      "seconds": 4.63442425,
+      "seconds": 7.350710417,
       "source_sha256": "436e96d07490a3251683045a1f4929a1df5eca692fb411c87fe527d71b2a0d9c",
       "output": ""
     },
     {
-      "name": "compile-root",
+      "name": "compile-GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.MoserSource",
       "outcome": "passed",
       "exit_code": 0,
-      "seconds": 0.6399283339999995,
-      "source_sha256": "df18c919820490af52bbedcb5ffeea4460b33b47a2152913643119218878f17f",
+      "seconds": 25.035137916,
+      "source_sha256": "f41ba35bc8fa8d35b8249b1a86c3aa55b8f7ef22662270de862699e72efe93d2",
+      "output": ""
+    },
+    {
+      "name": "compile-GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.Moser",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 77.34249083399999,
+      "source_sha256": "1791f62713a936d9d91f262273871cf5d28257e390f15d05454a5f2115ce8796",
+      "output": ""
+    },
+    {
+      "name": "compile-GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.MoserCoordinates",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 12.736609708999993,
+      "source_sha256": "0e29b36d41b117eb4c747ddaf02bf22a2b87e8a59b0665a424d1a1277a38c8ec",
+      "output": ""
+    },
+    {
+      "name": "compile-GRWTSK.RiemannHypothesis.TargetStatement",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 31.235536957999983,
+      "source_sha256": "26de9b9d99b5e04103c8095c3b466ce301fab1d52dd40155703a160aac44f1f6",
+      "output": ""
+    },
+    {
+      "name": "compile-GRWTSK.RiemannHypothesis.Definitions",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 28.078456042,
+      "source_sha256": "107f357b8c04afc16e25b8fded6922782d2756959b42f080af839f4db58e9aa0",
+      "output": ""
+    },
+    {
+      "name": "compile-GRWTSK.RiemannHypothesis.Defect",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 33.59603529100002,
+      "source_sha256": "94bfc9f62d99bfec9dcf4b41975cb08feeb7302387f9f7fcdb9dcedb7aa32ba7",
+      "output": ""
+    },
+    {
+      "name": "compile-GRWTSK.RiemannHypothesis.ZeroSymmetry",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 38.76877783300003,
+      "source_sha256": "d11ab9b34e31569a7d1441fb53bdb0abfce041c80e79cca4ebee46509be910bc",
+      "output": ""
+    },
+    {
+      "name": "compile-GRWTSK.RiemannHypothesis.TargetComparator",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 27.520377542000006,
+      "source_sha256": "73d6f49323b54bd75baabd0dfcac668ef397c9f6a59c54dfb3b1179cc21614d2",
+      "output": ""
+    },
+    {
+      "name": "compile-GRWTSK.RiemannHypothesis",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 23.485265208000044,
+      "source_sha256": "b57400dc6817cf946c1617a28fcef53e4db0f56ceb24f455f89fb24d95d53573",
+      "output": ""
+    },
+    {
+      "name": "compile-GRWTSK",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 45.49554920899999,
+      "source_sha256": "b026b53589243024d494f5a46f4d28a57b49f3d4ec4e5a1198441444dfca6c08",
       "output": ""
     },
     {
       "name": "prime-type-axioms-consumers",
       "outcome": "passed",
       "exit_code": 0,
-      "seconds": 0.6176217079999997,
+      "seconds": 3.600559209000039,
       "source_sha256": "eb90a4decd0e5142e6117a51d963224991bfa1ee4ae895cf94a750c94e3fb894",
       "output": "GRWTSK.NumberTheory.two_is_first_prime : Nat.Prime 2 \u2227 \u2200 (p : \u2115), Nat.Prime p \u2192 2 \u2264 p\n'Nat.prime_two' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Nat.Prime.two_le' depends on axioms: [propext]\n'GRWTSK.NumberTheory.two_is_first_prime' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
     },
@@ -44,7 +116,7 @@
       "name": "reject-prime-one",
       "outcome": "passed",
       "exit_code": 1,
-      "seconds": 0.6244619590000005,
+      "seconds": 1.7686223329999962,
       "source_sha256": "1384e86af454d2aaa7ad277445e39e1de57e0cdbcea51dd71de37385d764da47",
       "output": "checks/PrimeOneFalse.lean:2:28: error: Tactic `decide` proved that the proposition\n  Nat.Prime 1\nis false\n"
     },
@@ -52,7 +124,7 @@
       "name": "reject-lower-bound-three",
       "outcome": "passed",
       "exit_code": 1,
-      "seconds": 0.6699945829999994,
+      "seconds": 1.499147291999975,
       "source_sha256": "34fc91e2097ff9a73b355041b23469fdaaa350b28106bebc5c0e20eee1672c6b",
       "output": "checks/LowerBoundFalse.lean:4:2: error: Type mismatch\n  GRWTSK.NumberTheory.two_is_first_prime.right p hp\nhas type\n  2 \u2264 p\nbut is expected to have type\n  3 \u2264 p\n"
     }

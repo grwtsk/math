@@ -1,5 +1,6 @@
 """Pinned Lean source replay and audits. Run after: lake update; lake exe cache get <selected imports>."""
 import hashlib,json,os,pathlib,re,subprocess,time
+from project_replay import compile_project_closure
 root=pathlib.Path(__file__).resolve().parent.parent
 manifest=json.loads((root/"evidence/source-manifest.json").read_text())
 input_manifest_sha256=hashlib.sha256((root/"evidence/source-manifest.json").read_bytes()).hexdigest()
@@ -16,20 +17,24 @@ build=root/".local/build";build.mkdir(parents=True,exist_ok=True)
 env=dict(os.environ,LEAN_PATH=str(build)+":"+cache)
 results=[]
 def run(label,rel,expected=0,oracle=None):
- source=root/rel;argv=[lean,"--trust=0","--memory=2048","--threads=1"]
+ source=root/rel;source_hash=hashlib.sha256(source.read_bytes()).hexdigest();argv=[lean,"--trust=0","--memory=4096","--threads=1"]
+ assert source.is_file() and not source.is_symlink() and source_hash==manifest["files"][rel],("invalidated",rel)
  if label.startswith("compile-"):
-  target=build/pathlib.Path(rel).with_suffix(".olean");target.parent.mkdir(parents=True,exist_ok=True);argv+=["-o",str(target)]
+  target=build/pathlib.Path(rel).with_suffix(".olean");target.parent.mkdir(parents=True,exist_ok=True);argv+=["-DwarningAsError=true","-o",str(target)]
  argv.append(str(source));t=time.monotonic()
  try:
   p=subprocess.run(argv,cwd=root,env=env,capture_output=True,text=True,timeout=600)
   output=(p.stdout+p.stderr).replace(str(root)+"/","")
   ok=(p.returncode==0 if expected==0 else p.returncode!=0) and (oracle is None or oracle(output))
-  results.append(dict(name=label,outcome="passed" if ok else "failed",exit_code=p.returncode,seconds=time.monotonic()-t,source_sha256=hashlib.sha256(source.read_bytes()).hexdigest(),output=output))
+  ok=ok and source.is_file() and not source.is_symlink() and hashlib.sha256(source.read_bytes()).hexdigest()==source_hash
+  results.append(dict(name=label,outcome="passed" if ok else "failed",exit_code=p.returncode,seconds=time.monotonic()-t,source_sha256=source_hash,output=output))
+  print(label,p.returncode,flush=True)
   assert ok,results[-1]
   return output
  except subprocess.TimeoutExpired:
   results.append(dict(name=label,outcome="timed-out",seconds=time.monotonic()-t));raise
 try:
+ compile_project_closure(root,manifest["files"],run)
  if False:
   run("compile-first-prime","GRWTSK/NumberTheory/FirstPrime.lean")
   run("compile-root","GRWTSK.lean")
@@ -41,10 +46,6 @@ try:
   run("reject-lower-bound-three","checks/LowerBoundFalse.lean",1,lambda s:"Type mismatch" in s)
  else:
   prefix="GRWTSK/Combinatorics/GraphTheory/HadwigerNelson/"
-  run("compile-moser-source",prefix+"MoserSource.lean")
-  run("compile-moser",prefix+"Moser.lean")
-  run("compile-coordinates",prefix+"MoserCoordinates.lean")
-  run("compile-root","GRWTSK.lean")
   output=run("34-declaration-audit","checks/DeclarationAudit.lean")
   expected=json.loads((root/"evidence/expected-declarations.json").read_text())
   for e in expected:
