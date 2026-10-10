@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "claim_family": "Exact RH target, defect reformulation and nontrivial-zero symmetry",
+  "claim_scope": "Equivalent reformulation and unconditional zero symmetries; neither target nor vanishing on all nontrivial zeros is asserted.",
+  "upstream_revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "sources": [
+    {
+      "path": "Mathlib/NumberTheory/LSeries/RiemannZeta.lean",
+      "sha256": "db9f37f08bcce379c502549f604c0e98bf4a39b3a3440606861bbac847f2a1a9",
+      "authors_as_in_header": "David Loeffler",
+      "url": "https://github.com/leanprover-community/mathlib4/blob/db584cd6d46c92f209a44c0f1c829460d327499d/Mathlib/NumberTheory/LSeries/RiemannZeta.lean",
+      "license": "Apache-2.0",
+      "relationship": "Imported upstream source; no upstream theorem code copied into GRWTSK."
+    },
+    {
+      "path": "Mathlib/NumberTheory/Harmonic/ZetaAsymp.lean",
+      "sha256": "3eb3f0864a28c7085e7f37917e50e024e5dfa2073821e3324b3873f050dfed89",
+      "authors_as_in_header": "David Loeffler, Terence Tao",
+      "url": "https://github.com/leanprover-community/mathlib4/blob/db584cd6d46c92f209a44c0f1c829460d327499d/Mathlib/NumberTheory/Harmonic/ZetaAsymp.lean",
+      "license": "Apache-2.0",
+      "relationship": "Imported upstream source; no upstream theorem code copied into GRWTSK."
+    },
+    {
+      "path": "Mathlib/NumberTheory/LSeries/Nonvanishing.lean",
+      "sha256": "945a2fd23ca9ebd2d48f101d771ef9117dd9847d48fd77ea2623d8c345f4f5a9",
+      "authors_as_in_header": "Michael Stoll, David Loeffler",
+      "url": "https://github.com/leanprover-community/mathlib4/blob/db584cd6d46c92f209a44c0f1c829460d327499d/Mathlib/NumberTheory/LSeries/Nonvanishing.lean",
+      "license": "Apache-2.0",
+      "relationship": "Imported upstream source; no upstream theorem code copied into GRWTSK."
+    },
+    {
+      "path": "Mathlib/Analysis/Complex/Norm.lean",
+      "sha256": "815efa05d2282b0b234139eac16d614f1128d69e39cf02249df887934ccc9741",
+      "authors_as_in_header": "S\u00e9bastien Gou\u00ebzel",
+      "url": "https://github.com/leanprover-community/mathlib4/blob/db584cd6d46c92f209a44c0f1c829460d327499d/Mathlib/Analysis/Complex/Norm.lean",
+      "license": "Apache-2.0",
+      "relationship": "Imported upstream source; no upstream theorem code copied into GRWTSK."
+    }
+  ],
+  "local_direction_and_selection": "R.A. Jacob Martone",
+  "earlier_source_history": "https://github.com/grwtsk/formal-research/tree/3d6148fecf58e356c3a5f347e1964bf4c0f4ae27/FormalResearch/RiemannHypothesis",
+  "formalization_and_verification_assistance": "OpenAI Codex",
+  "local_license": "MIT",
+  "mathematical_originality_claim": false,
+  "status": "Source inspected; proof replay recorded separately in rh-target-checks.json."
+}

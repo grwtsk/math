@@ -21,3 +21,24 @@ Mathlib: Apache-2.0, upstream copyright and authorship preserved in `LICENSES`. 
 Source attribution: [claim-bound citation](evidence/citation-prime.json), including Leonardo de Moura, Jeremy Avigad and Mario Carneiro. No priority or originality claim.
 
 The Hadwiger–Nelson modules preserve 34 declarations, including exact reader coordinates. Citation: [Moser source](evidence/citation-moser.json). Check with `lake build`, `python3 scripts/check_moser.py` and `python3 scripts/check_finite.py`.
+
+
+The RH target modules retain Mathlib's literal `RiemannHypothesis`, including
+its trivial-zero and pole exclusions. They prove the equivalent vanishing
+condition for the quadratic critical-line defect and unconditional zero
+symmetries. The exact RH proposition remains open.
+
+```sh
+lake build --wfail
+python3 scripts/check_rh_target.py
+```
+
+The RH checker freshly elaborates the six selected module files at trust zero,
+exports every declaration owned by those modules, audits its transitive axioms,
+and rejects a trivial-zero admission and a false positivity-to-vanishing step.
+The exact declaration types and current source hashes are recorded in
+`evidence/rh-target-checks.json`. Source attribution is in
+`evidence/citation-rh-target.json`; local mathematical direction is by
+R.A. Jacob Martone, with OpenAI Codex formalization and verification assistance.
+Earlier source is preserved in the [formal-research history](https://github.com/grwtsk/formal-research/tree/3d6148fecf58e356c3a5f347e1964bf4c0f4ae27/FormalResearch/RiemannHypothesis).
+No unconditional RH proof or originality claim follows from this cell.

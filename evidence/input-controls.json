@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "input_manifest_sha256": "c5ebac227893ecdb203b208a56cdba598748c44e3fbf1c84bc9e455fa9f163b5",
+  "checker_sha256": "721612a9ae6c66a0f326d3976f8f7a9d03702da8ab8db6813c6717bf5c533518",
   "results": [
     {
       "name": "changed-source",
