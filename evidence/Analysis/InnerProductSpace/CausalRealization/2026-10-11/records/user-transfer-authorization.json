@@ -1,0 +1,13 @@
+{
+  "at": "2026-10-11T20:38:07.873074+00:00",
+  "user_request": "LOCAL WORK IS NOT DURABE AND MUST BE TRANSFERED TO  grwtsk/math now. Prune branches/wortktrees after merge.",
+  "target_repository": "grwtsk/math",
+  "publication_authorized": true,
+  "merge_authorized": true,
+  "post_merge_branch_worktree_pruning_authorized": true,
+  "preserve_concurrent_and_unique_work": true,
+  "mathematical_acceptance_unchanged": true,
+  "transfer_scope": "All bytes from this task-owned .local/ccc-control-soundness directory, with exact original path/hash index and mathematical subject source views. No deletion of primary/shared/dirty/unique-work checkouts.",
+  "durable_destination": "evidence/Analysis/InnerProductSpace/CausalRealization/2026-10-11",
+  "qualification": "Explicit user instruction supersedes the earlier no-remote/public-transfer constraint. Evidence publication does not certify new Lean drafts, authenticate current dependencies, or grant theorem admission."
+}

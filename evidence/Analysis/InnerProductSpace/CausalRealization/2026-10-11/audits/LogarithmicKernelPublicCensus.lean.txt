@@ -1,0 +1,619 @@
+import GRWTSK
+import Lean
+import Lean.Compiler.Old
+
+open Lean Elab Command
+
+/- Source-qualified compiler-shaped runtime implementations, not authenticated
+compiler provenance: the pinned compiler name parser and recursive tags can be
+forged. No declaration is enrolled merely because its name has a suffix.
+This exact curated table is bound to frozen owner-source bytes by the driver.
+Fixture entries below are separately frozen hostile/positive test profiles. -/
+private def mathTrustProjectRuntimeProfiles : Array (Name × Name × Name × String) := #[
+  (`GRWTSK.Algebra.OrderedProduct,
+    `GRWTSK.Algebra.orderedProduct._unsafe_rec,
+    `GRWTSK.Algebra.orderedProduct,
+    "97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d"),
+  (`GRWTSK.Combinatorics.Sequences.QuotaDiscrepancy,
+    `GRWTSK.Analysis.Waveform.Scheduling.count._unsafe_rec,
+    `GRWTSK.Analysis.Waveform.Scheduling.count,
+    "851cb36b5b9db3a4e2695e4c4164dbca4af83dcc913caebd41160fd4db8f882f"),
+  (`GRWTSK.Combinatorics.Sequences.QuotaDiscrepancy,
+    `GRWTSK.Analysis.Waveform.Scheduling.clock._unsafe_rec,
+    `GRWTSK.Analysis.Waveform.Scheduling.clock,
+    "851cb36b5b9db3a4e2695e4c4164dbca4af83dcc913caebd41160fd4db8f882f"),
+  (`GRWTSK.Combinatorics.Sequences.QuotaDiscrepancy,
+    `GRWTSK.Analysis.Waveform.Scheduling.debt._unsafe_rec,
+    `GRWTSK.Analysis.Waveform.Scheduling.debt,
+    "851cb36b5b9db3a4e2695e4c4164dbca4af83dcc913caebd41160fd4db8f882f"),
+  (`GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators,
+    `GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator._unsafe_rec,
+    `GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator,
+    "3f18269367c2ef839a97591d1d5d36198c6c4c6faff132120f45659c19e94a03"),
+  (`GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators,
+    `GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator._unsafe_rec,
+    `GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator,
+    "3f18269367c2ef839a97591d1d5d36198c6c4c6faff132120f45659c19e94a03"),
+  (`GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators,
+    `GRWTSK.RiemannHypothesis.BranchSequenceRealization.numerator._unsafe_rec,
+    `GRWTSK.RiemannHypothesis.BranchSequenceRealization.numerator,
+    "3f18269367c2ef839a97591d1d5d36198c6c4c6faff132120f45659c19e94a03"),
+  (`GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators,
+    `GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock._unsafe_rec,
+    `GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock,
+    "3f18269367c2ef839a97591d1d5d36198c6c4c6faff132120f45659c19e94a03"),
+  (`GRWTSK.Order.Closure.FiniteDependencyClosure,
+    `GRWTSK.ProofHorizon.CorkscrewChamberCap.affectedClosure._unsafe_rec,
+    `GRWTSK.ProofHorizon.CorkscrewChamberCap.affectedClosure,
+    "e78778c5b623abadfc23a668517cb4b1652ef6365962263b8440f8a156af5dec"),
+  (`GRWTSK.Logic.Inference.FiniteRuleSystems,
+    `GRWTSK.ProofHorizon.CorkscrewChamberCap.routeClosureFrom._unsafe_rec,
+    `GRWTSK.ProofHorizon.CorkscrewChamberCap.routeClosureFrom,
+    "6bbe978cc4ba18d4bfefbadab3a7b256cdec7dffb6b7de9da18a688d9c4fa986"),
+  (`GRWTSK.DynamicalSystems.TransitionSystems.BudgetResetCounterexamples,
+    `GRWTSK.ProofHorizon.CorkscrewChamberCap.RestartBudgetBoundary.totalRoundCost._unsafe_rec,
+    `GRWTSK.ProofHorizon.CorkscrewChamberCap.RestartBudgetBoundary.totalRoundCost,
+    "155e4fd202fb590cbdbdf4cb26100c17e72452418be0497ba37b301f662b3e42"),
+  (`GRWTSK.DynamicalSystems.TransitionSystems.BudgetResetCounterexamples,
+    `GRWTSK.ProofHorizon.CorkscrewChamberCap.RestartBudgetBoundary.sessionRun._unsafe_rec,
+    `GRWTSK.ProofHorizon.CorkscrewChamberCap.RestartBudgetBoundary.sessionRun,
+    "155e4fd202fb590cbdbdf4cb26100c17e72452418be0497ba37b301f662b3e42"),
+  (`GRWTSK.LinearAlgebra.CocycleProduct,
+    `GRWTSK.LinearAlgebra.CocycleProduct.cocycleProduct._unsafe_rec,
+    `GRWTSK.LinearAlgebra.CocycleProduct.cocycleProduct,
+    "64ebbd43849bfffee9f92d74f271c55a1ffcba28c1b7debcf491a901ddfff67b"),
+  (`GRWTSK.Logic.FiniteSequences.PrefixCoverage,
+    `GRWTSK.Analysis.Waveform.workClock._unsafe_rec,
+    `GRWTSK.Analysis.Waveform.workClock,
+    "77ed7277b4519ff8fb955e215664ac6d0c22a78e95e38e9ee16d18e6b226a5b3"),
+  (`GRWTSK.NumberTheory.ContinuedFractions.FrequencyRealization,
+    `GRWTSK.RiemannHypothesis.BranchFrequencyExistence.finiteTail._unsafe_rec,
+    `GRWTSK.RiemannHypothesis.BranchFrequencyExistence.finiteTail,
+    "fe53414320a78931bf2add8a168544df853ce7bd10b82b2cf257082ceb77e4be")
+]
+
+private def mathTrustFixtureRuntimeProfiles : Array (Name × Name × Name × String) := #[
+  (`GRWTSK.Fixture.RuntimeStructural,
+    `GRWTSK.Fixture.RuntimeStructural.depth._unsafe_rec,
+    `GRWTSK.Fixture.RuntimeStructural.depth,
+    "0be8353e896218d8c79446f0bdd1a1978c365c2e54d8ca22a60450df28c14afe"),
+  (`GRWTSK.Fixture.RuntimeWellFounded,
+    `GRWTSK.Fixture.RuntimeWellFounded.depth._unsafe_rec,
+    `GRWTSK.Fixture.RuntimeWellFounded.depth,
+    "61427aa9348975d7932d9d8114288b41f122bfa863f06954731874c35d710f78"),
+  (`GRWTSK.Fixture.OpaqueParent,
+    `GRWTSK.Fixture.OpaqueParent.base._unsafe_rec,
+    `GRWTSK.Fixture.OpaqueParent.base,
+    "b80924c9bebed2ec3ab30eee89657d5bf53c944735088cc2594e653d4afc8bcf"),
+  (`GRWTSK.Fixture.MissingParent,
+    `GRWTSK.Fixture.MissingParent.base._unsafe_rec,
+    `GRWTSK.Fixture.MissingParent.base,
+    "20e94fc3e08f9aceb6d565710ed1a605d82f9e518abd88f9c085b7cc2d0e86f2"),
+  (`GRWTSK.Fixture.UnsafeParent,
+    `GRWTSK.Fixture.UnsafeParent.base._unsafe_rec,
+    `GRWTSK.Fixture.UnsafeParent.base,
+    "df2f07c889b050fdc0697e17a2e85f5081154676453d4dc8082f6160ad5f6e66"),
+  (`GRWTSK.Fixture.PartialParent,
+    `GRWTSK.Fixture.PartialParent.base._unsafe_rec,
+    `GRWTSK.Fixture.PartialParent.base,
+    "d6d0e6d2df7224aa465a482bee0dd9fbed125680baaff36c4c4601d083a5f0fd"),
+  (`GRWTSK.Fixture.TypeMismatch,
+    `GRWTSK.Fixture.TypeMismatch.base._unsafe_rec,
+    `GRWTSK.Fixture.TypeMismatch.base,
+    "e873192efa8d3fd6d11777e790286aa1da14124353bb708c0ef83ce254c547d1"),
+  (`GRWTSK.Fixture.LevelMismatch,
+    `GRWTSK.Fixture.LevelMismatch.base._unsafe_rec,
+    `GRWTSK.Fixture.LevelMismatch.base,
+    "ba4f09b6016aab99d0ff331a09b283b46807decf5e0e28939ff62245e6219163"),
+  (`GRWTSK.Fixture.TypeReference,
+    `GRWTSK.Fixture.TypeReference.base._unsafe_rec,
+    `GRWTSK.Fixture.TypeReference.base,
+    "63278cd4a8843550a156f3632e6fef29f4c56ed3ecfe89944425e45e1915ba13"),
+  (`GRWTSK.Fixture.ValueReference,
+    `GRWTSK.Fixture.ValueReference.base._unsafe_rec,
+    `GRWTSK.Fixture.ValueReference.base,
+    "a9eebc3dd1eb6b741bb7339302e973ad207cdcc3ce798464079e79d723cbd9d6"),
+  (`GRWTSK.Fixture.ForeignHelper,
+    `GRWTSK.Fixture.ForeignParent.base._unsafe_rec,
+    `GRWTSK.Fixture.ForeignParent.base,
+    "09c4a4be9134610061ac5118c29eeb82856a0de2abc3ac3dfb440683208545d6")
+]
+
+elab "#audit_math_trust" ownerSources:str : command => do
+  let env ← getEnv
+  let owners := env.header.moduleNames
+  unless env.header.moduleData.size == owners.size do
+    throwError "incomplete module ownership table"
+  let sourceText := ownerSources.getString
+  let sourceJson ← match Json.parse (if sourceText.isEmpty then "{}" else sourceText) with
+    | .ok value => pure value
+    | .error error => throwError "invalid source profile JSON: {error}"
+  let scope := (sourceJson.getObjValAs? String "scope").toOption.getD "project"
+  let runtimeProfiles ← match scope with
+    | "project" => pure mathTrustProjectRuntimeProfiles
+    | "native-fixtures" => pure mathTrustFixtureRuntimeProfiles
+    | _ => throwError "unrecognized runtime profile scope"
+  let observedSources := (sourceJson.getObjVal? "sources").toOption.getD (Json.mkObj [])
+  let sourceHash := fun owner =>
+    (observedSources.getObjValAs? String owner.toString).toOption.getD ""
+  let ownerOf := fun name => (env.getModuleIdxFor? name).bind fun idx => owners[idx]?
+  let mut violations : Array String := #[]
+  let mut qualified : Array Name := #[]
+  for (owner, name, parentName, acceptedHash) in runtimeProfiles do
+    if owners.contains owner then
+      let profileMatches : Bool := match env.find? name, env.find? parentName with
+        | some (.defnInfo helper), some (.defnInfo parent) =>
+          Compiler.isUnsafeRecName? name == some parentName &&
+          helper.safety == .partial && parent.safety == .safe &&
+          ownerOf name == some owner && ownerOf parentName == some owner &&
+          helper.type == parent.type && helper.levelParams == parent.levelParams &&
+          sourceHash owner == acceptedHash
+        | _, _ => false
+      if profileMatches then
+        qualified := qualified.push name
+      else
+        violations := violations.push s!"runtime profile mismatch: {name}"
+  let mut count : Nat := 0
+  let mut moduleCount : Nat := 0
+  for (data, owner) in env.header.moduleData.toList.zip owners.toList do
+    if (`GRWTSK).isPrefixOf owner then
+      moduleCount := moduleCount + 1
+      let declarations := data.constants.toList.filter fun info => ownerOf info.name == some owner
+      logInfo m!"MATH_TRUST_MODULE::{(Json.mkObj [
+        ("module", toJson owner.toString),
+        ("declarations", toJson declarations.length)]).compress}"
+      for info in declarations do
+        let name := info.name
+        let knownRuntime := qualified.contains name
+        if info.isUnsafe then violations := violations.push s!"unsafe declaration: {name}"
+        if info.isPartial && !knownRuntime then
+          violations := violations.push s!"partial declaration: {name}"
+        match info with
+        | .axiomInfo _ => violations := violations.push s!"new axiom: {name}"
+        | _ => pure ()
+        let axioms ← collectAxioms name
+        for ax in axioms do
+          unless #[`propext, `Classical.choice, `Quot.sound].contains ax do
+            violations := violations.push s!"unapproved axiom {ax} in {name}"
+        let typeReferences := qualified.filter fun helper =>
+          info.type.getUsedConstants.contains helper
+        let valueReferences := match info.value? true with
+          | some value => qualified.filter fun helper => value.getUsedConstants.contains helper
+          | none => #[]
+        if !knownRuntime && !typeReferences.isEmpty then
+          violations := violations.push s!"non-helper type references runtime helper: {name}"
+        if !knownRuntime && !valueReferences.isEmpty then
+          violations := violations.push s!"non-helper value references runtime helper: {name}"
+        let compilerParent := Compiler.isUnsafeRecName? name
+        let profile := runtimeProfiles.find? fun (o, n, _, _) => o == owner && n == name
+        let profileHash := profile.map (fun (_, _, _, h) => h) |>.getD ""
+        let typeEqual := match compilerParent.bind env.find? with
+          | some parent => info.type == parent.type
+          | none => false
+        let levelsEqual := match compilerParent.bind env.find? with
+          | some parent => info.levelParams == parent.levelParams
+          | none => false
+        let sameOwner := match compilerParent with
+          | some parent => ownerOf parent == some owner
+          | none => false
+        let type ← liftTermElabM do Meta.ppExpr info.type
+        let kind := match info with
+          | .thmInfo _ => "theorem"
+          | .defnInfo _ => "definition"
+          | .opaqueInfo _ => "opaque"
+          | .axiomInfo _ => "axiom"
+          | .ctorInfo _ => "constructor"
+          | .recInfo _ => "recursor"
+          | .inductInfo _ => "inductive"
+          | _ => "generated"
+        let entry := Json.mkObj [
+          ("module", toJson owner.toString), ("name", toJson name.toString),
+          ("kind", toJson kind), ("type", toJson type.pretty),
+          ("level_params", toJson (info.levelParams.map Name.toString)),
+          ("unsafe", toJson info.isUnsafe), ("partial", toJson info.isPartial),
+          ("known_generated_runtime_helper", toJson knownRuntime),
+          ("mathematical_admission", toJson (!knownRuntime && !info.isPartial &&
+            !info.isUnsafe && kind != "axiom" &&
+            axioms.toList.all (fun ax => #[`propext, `Classical.choice, `Quot.sound].contains ax) &&
+            typeReferences.isEmpty && valueReferences.isEmpty)),
+          ("runtime_helper_parent", toJson (compilerParent.map Name.toString)),
+          ("runtime_helper_same_owner", toJson sameOwner),
+          ("runtime_helper_type_equal", toJson typeEqual),
+          ("runtime_helper_level_params_equal", toJson levelsEqual),
+          ("runtime_helper_profile_source_sha256", toJson profileHash),
+          ("runtime_helper_owner_source_sha256", toJson (sourceHash owner)),
+          ("direct_type_references_to_runtime_helpers",
+            toJson (typeReferences.toList.map Name.toString)),
+          ("direct_value_references_to_runtime_helpers",
+            toJson (valueReferences.toList.map Name.toString)),
+          ("direct_value_reference_to_runtime_helper", toJson (!valueReferences.isEmpty)),
+          ("axioms", toJson (axioms.toList.map Name.toString))]
+        logInfo m!"MATH_TRUST_DECL::{entry.compress}"
+        count := count + 1
+    else
+      logInfo m!"MATH_TRUST_DEPENDENCY_MODULE::{owner}"
+  logInfo m!"MATH_TRUST_COUNT::{count}"
+  logInfo m!"MATH_TRUST_MODULE_COUNT::{moduleCount}"
+  if moduleCount == 0 || count == 0 then throwError "empty project census"
+  for violation in violations do
+    logInfo m!"MATH_TRUST_VIOLATION::{(toJson violation).compress}"
+  unless violations.isEmpty do
+    throwError "project trust audit failed: {violations.toList}"
+
+#audit_math_trust r###"{
+  "scope": "project",
+  "sources": {
+    "GRWTSK":
+      "d8bcd5510f87413282c8ce06cff076738dc92983492c7eef68f2939e03a9702f",
+    "GRWTSK.Algebra.BigOperators.OrderedSquare":
+      "90887152044ad24b0a96371b5aee78430e2d67f2abcc899529c43f6946d8e1d4",
+    "GRWTSK.Algebra.BigOperators.QuadraticCounterexample":
+      "beba4fef99150fd9d1d9a905b33bba2a4cc20982be1eb08d62705cae37489d25",
+    "GRWTSK.Algebra.OrderedProduct":
+      "97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d",
+    "GRWTSK.Algebra.OrderedProductGauge":
+      "d6ca049d4674503df5b175e7028c41c742af43ec7c42389a3fb3528c8f6ec5ae",
+    "GRWTSK.Analysis.Asymptotics.PolynomialClosure":
+      "4cfa71d72517861314331df767a387bff171043475cf51177e8d7bb61b6b5bae",
+    "GRWTSK.Analysis.Asymptotics.PolynomialErrorBound":
+      "038e3cf31cc90eec7019c91be55ff2cdc4c00aaf82a3791be5d05e4dfae12996",
+    "GRWTSK.Analysis.Asymptotics.PolynomialSubexponential":
+      "88096887fa741b898bdb12e1f563e166376a3301847098db6c9f4d10065edec2",
+    "GRWTSK.Analysis.Calculus.CompactPolynomialDerivatives":
+      "4abb0074bb8a66137768bbd25d59ab896b347654f4944383f6df1e9e9d9fa8e4",
+    "GRWTSK.Analysis.Calculus.CompactProfileBoundaryCounterexamples":
+      "15f107e78eddae829dbeb2d205520193155df4500a67fc4b3dbd91cee902ad07",
+    "GRWTSK.Analysis.Calculus.CompactProfileDerivativeEnergy":
+      "dc105862ecda0a65b5df3feef43539ce48e8ad5e2e288869be74df8345c5faa4",
+    "GRWTSK.Analysis.Calculus.CompactProfileNormalization":
+      "469dd45166d579a93c55fda6ae66a2f3f0bdad54d9761e59ab66fc9cfdd95564",
+    "GRWTSK.Analysis.Calculus.PolynomialBumpDerivativeEnergy":
+      "9a4adaa8061a277138bdd1c3e9897b4348ab6517a0361a18a6f5654de438309d",
+    "GRWTSK.Analysis.Calculus.PolynomialBumpNormalization":
+      "c9327e4d91a040e78f9e1292f48e54f8d6f33ad0676d0b6ab1977199b1b65dc3",
+    "GRWTSK.Analysis.Complex.VerticalReflection":
+      "7d0a686fd76d22a20a30649a1debcd042623eea6abda044ca5a08481c860da5d",
+    "GRWTSK.Analysis.Convolution.AutocorrelationDerivativeEnergy":
+      "8a8d4a85d38b81db1bd37a0ae0698780791082f979d125d20ab3d928c7e7bb8e",
+    "GRWTSK.Analysis.Convolution.AutocorrelationSecondDerivative":
+      "decf56fc025da8133170d768dcc2c467508ee715050fc6e7633a42a1ed7060d3",
+    "GRWTSK.Analysis.Convolution.CompactProfileCorrelation":
+      "3c094738e9d200f5155bf2dfe6ffa914cae6f282e932a39400dc21412141fb9a",
+    "GRWTSK.Analysis.Convolution.CompactProfileDifferentialMoments":
+      "dc5e26a70f591f9ab3551b6a94b518d7c3b7cdb881512d081ed460e70e13993b",
+    "GRWTSK.Analysis.Convolution.CompactProfileFirstPoleMoment":
+      "1e02ac2c25c2e1b2c713f2ffd80052f37db8e420e249cf2ef0d582adee54d722",
+    "GRWTSK.Analysis.Convolution.CompactProfileHigherDerivatives":
+      "616d623bd79563b690b557b8b4db797b946a0c43e48e5a5ac0cf87f69e4ae009",
+    "GRWTSK.Analysis.Convolution.ExponentialMoments":
+      "a1f229a1860ed76fcc9a5ea19e75a30492e1b7aa4bea333c376b297599e991f0",
+    "GRWTSK.Analysis.Convolution.FirstMomentConvolution":
+      "c6e2243a0ae9cba9a118351cd0a50cbe0bbe27a6e549df27c8675f56a7c5340c",
+    "GRWTSK.Analysis.Convolution.PolynomialBumpHigherDerivatives":
+      "a7dee347df5fb179c42be0b721712f1d5b23752dba21861f53a370b3300418cf",
+    "GRWTSK.Analysis.Convolution.PolynomialBumpRegularity":
+      "3696fbcf598d011426fedcbd8f0b3e9ee568412165191e1d5c76b202a83e159f",
+    "GRWTSK.Analysis.DigammaSeries":
+      "8ed1593b5f8bed7443f94766d070eb3afdda19408cc14de210f250fc8a236acd",
+    "GRWTSK.Analysis.Distribution.CompactProfileDilation":
+      "bdda47c4b79cd1c9d78b0a770997dd1dabd2f3fa0608fa5137981609b54156e5",
+    "GRWTSK.Analysis.Distribution.WeakSecondDerivativeUniqueness":
+      "b482804625e6fcd4079aaf85d62c445269a076429c6b41ee37b2abda6e78aabc",
+    "GRWTSK.Analysis.ErrorBounds.PartialMapComposition":
+      "b3e02f39f0198c87179b1a62bc4eb43de521ee841de57e2e2ff0be429b386838",
+    "GRWTSK.Analysis.Fourier.DigammaMultiplier":
+      "36fe566a76070ce0f61315e71b9744374d87c0ff6cceb943294a73f3dc14b65a",
+    "GRWTSK.Analysis.Fourier.IntegerSeries":
+      "46462643902012c58fa6514c99721701b65655f16fd88a0e82fc1181c94bbe88",
+    "GRWTSK.Analysis.Fourier.LogarithmicDomain":
+      "87c881d275b4d18fb6f8ca23ccc64dd859764e3fb1b6f17ebcde6e0de273e65c",
+    "GRWTSK.Analysis.Fourier.Parseval":
+      "f212399e5b28f079a24197c08c3bded9611f04bb08d6dcbd2685046e16db6681",
+    "GRWTSK.Analysis.Fourier.PolynomialBumpEstimates":
+      "90cf3b3c0c04c9624fa273349607c9511815630c75cc5431451caa4533f6233d",
+    "GRWTSK.Analysis.Fourier.WindowCertificates":
+      "c616f557739add2b41d0691111f835ce0f181daf4ba383ba84ded3f3e25a216b",
+    "GRWTSK.Analysis.Inequalities.CompactProfileDifferentialBounds":
+      "d8981eeb5d3152a5930535a9c530c3b626ce8e5dc0b469d4a2396f37cbc43d85",
+    "GRWTSK.Analysis.Inequalities.DiscreteEnergyBalance":
+      "c2155e20dfcf4bbba921bde5673394af0f3e71de0366c8bcbd183578798c551d",
+    "GRWTSK.Analysis.Inequalities.ExponentialDiagonal":
+      "748100ebb0ba4440335668ecb96a079d869de82bb7ac2fb7ecb09ca089469a3c",
+    "GRWTSK.Analysis.Inequalities.FiniteLogarithmicProfileBounds":
+      "c804f768fe8707acaefbf500f8d25f1b47d9c4e27a94da1aa8c706b35b98a91e",
+    "GRWTSK.Analysis.Inequalities.FiniteShiftedDerivativeBounds":
+      "deaf9c4af549226f4cf68d08487cf8d2d96e069de6c0c10cffa986c4a5353382",
+    "GRWTSK.Analysis.Inequalities.LogarithmicProfileIntegralPrices":
+      "266f2fdb8139ced38bf32a7a5168470b56b89960eba991b54efc40f05f810cef",
+    "GRWTSK.Analysis.Inequalities.PolynomialEnergyRatio":
+      "891c2f23592e3e788608498e78ac7f41f7363e755fcbc7bf5a8b25a99c3817d4",
+    "GRWTSK.Analysis.InnerProductSpace.CausalResponseGram":
+      "e563cca4c98955fea76d39fbbd64a5f7ad18688769b89636c52418d315a642db",
+    "GRWTSK.Analysis.InnerProductSpace.CompactResidualNormalization":
+      "b2e41da84e528d6e5b6f85289a4c6123995d1bad00d7cf54a8d112fbf5b38b4d",
+    "GRWTSK.Analysis.InnerProductSpace.DilationGram":
+      "701395de80454619a0cc384543d42935b500a46ba1676e87e52cbb907dd479ab",
+    "GRWTSK.Analysis.InnerProductSpace.DilationResponseSeparation":
+      "191a35b79935a6c65eed972463d5d24a9a90a2caac8c75108435fad274b81452",
+    "GRWTSK.Analysis.IntegralTransforms.CompactProfileLogarithmicMoment":
+      "000b29ebda316c72bfad12f6f82b5af294b43f9041487b0f5d72e540c8e2e5bb",
+    "GRWTSK.Analysis.IntegralTransforms.CompactProfileLogarithmicRegularity":
+      "bc7d455945e98f2374ad91a8c8d23e4d9f15d8f9f1df2bd073972ca2c692ee64",
+    "GRWTSK.Analysis.IntegralTransforms.LogarithmicMomentSubstitution":
+      "8f09bfa02c86da0e30c8ee80f4887dd17d48d3e0e803b5b8a0631d1052cab4a7",
+    "GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileCutoff":
+      "09121b3ec38b61abae9563f1b6ecff0f0ba597f43637154394bcf1f0418dd1ac",
+    "GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileDerivative":
+      "bfc0908dc1f804b9c77f844b3c481abae104f6084ad9ad19118678b786ba65b3",
+    "GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileRegularity":
+      "093bef8246dab7871afda0418fb1d02cfd2dfa48c1fc389e1ff64ead67193ea4",
+    "GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileWeights":
+      "2da34cedc49ab014d2e1f3a9dc8b8c42d925f879cecd0503daa9bbb2bac2122c",
+    "GRWTSK.Analysis.Integration.CompactPolynomialMoments":
+      "3c6b04e8438292b9ac75badd78a21244d26bc10e0d3e5a9fd986114582955e77",
+    "GRWTSK.Analysis.Integration.CompactWeightedDerivativeMoments":
+      "09a62702c191806488014bdae2d00b3d2e694430e469753181963f01dd014804",
+    "GRWTSK.Analysis.Integration.FiniteUnitSumVariation":
+      "20ce18d7f9d2197b15bcb85f2bf6d534354202bdbc09f26a6436fcae5ca91b63",
+    "GRWTSK.Analysis.Integration.PositiveHalfLineCutoffBalance":
+      "34446d67fbae7e7adcac18b3eabda9e9246803aee12aff4a80b426c747996850",
+    "GRWTSK.Analysis.IntervalIntegral.Reflection":
+      "55325de763afe3f5c95efab07f1a452a77597cf9621fe124555b03a9ffbfffa3",
+    "GRWTSK.Analysis.IntervalReflection":
+      "8daccbb547c6ea9e481182366f25bae913a4effbf59059becd9a40532541591d",
+    "GRWTSK.Analysis.LaplaceTransform.Analytic":
+      "9b36cbd99be50262b982974d665a0b226495665a5e509f7355ce66a2e08e2f10",
+    "GRWTSK.Analysis.LaplaceTransform.CausalExponentialResponse":
+      "2a761ffcb29c2814ce6e65d7a1441ac63117ddbe6f9a79f8abef62054760958a",
+    "GRWTSK.Analysis.LaplaceTransform.ExponentialThreshold":
+      "734530d5f777f1da2c2ad43186afb50db8752c6a0b9a4a4dc756eb0a30d90768",
+    "GRWTSK.Analysis.LaplaceTransform.PolynomialEnergy":
+      "cc49938c45c940d7049afdf2aed8f5dde3393da4e9ff301d4bc7ccfaaabc0fe5",
+    "GRWTSK.Analysis.NormedSpace.QuadraticError":
+      "663c865cdbe9802281cbb4be82f3c15612330e44c86acd44db9b14dd46d1c7d6",
+    "GRWTSK.Analysis.Polarization":
+      "eca8d7c7426a9c4a329522472fffbc3c3de6f05c047cb328ddd1b2c2da59c2d5",
+    "GRWTSK.Analysis.ReciprocalKernel":
+      "0a926ada5b98fa02e97f6a962160486e758f2716f6d870c375e61e84635282d2",
+    "GRWTSK.Analysis.SpecialFunctions.DigammaFourierBound":
+      "ee1a6a655ef921b9e20f6eff0518f0d115c35eb8369c61811aaca52350ad547e",
+    "GRWTSK.Analysis.SpecialFunctions.SquaredInverseBump":
+      "d8edd04841c7bab3c52e385bb74f5c23b6596e6e8f9453b59a24bb8e7421d48f",
+    "GRWTSK.Analysis.TestFunctions.EvenSeparation":
+      "f585726322b9a27cf7757567345ee903f9c792c0b470494cb056a3ad926005f9",
+    "GRWTSK.Analysis.TestFunctions.ExponentialMomentVariation":
+      "aab9afbee65b9b9111037f960771da2d571a585d735c4d86db4176a2034d8279",
+    "GRWTSK.Analysis.TestFunctions.PolynomialBumpNormalization":
+      "8938ea1f677a595343229a06c00978d6380875e4faaf5118859eede54cf239f7",
+    "GRWTSK.Analysis.TestFunctions.PolynomialBumpSecondEnergy":
+      "d4e956319671eb45319648ec4df2d778a1c596e2e5655638ae73550924b10412",
+    "GRWTSK.Analysis.TestFunctions.Separation":
+      "8479d379d257b8bbbe606ad9627a0883a039a61acce7a0c114f5dea7a975a38f",
+    "GRWTSK.Analysis.WeakDerivatives.PolynomialBump":
+      "1a9ff14af84efd81826a2b3c632cc2f617d2efc0fe4f10374800a5b54df30144",
+    "GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.Moser":
+      "82dcabcd95c42921d1a49246db779259c5ef8a43c822db8109634cdffcfd7c6f",
+    "GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.MoserCoordinates":
+      "2b72eba295d456ef22b0a828e5257f219bf7f297cf570c377bd11448da51a8a2",
+    "GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.MoserSource":
+      "f41ba35bc8fa8d35b8249b1a86c3aa55b8f7ef22662270de862699e72efe93d2",
+    "GRWTSK.Combinatorics.Sequences.QuotaDiscrepancy":
+      "851cb36b5b9db3a4e2695e4c4164dbca4af83dcc913caebd41160fd4db8f882f",
+    "GRWTSK.Data.Sampling.Descriptions":
+      "5130490d5c5394b39e1873e1c49825a64df7efe767e7bcc5e43299dbb28a4b39",
+    "GRWTSK.DynamicalSystems.Sequences.ApproximationReturn":
+      "e25fc82df14cab31a7b719dd2bb02fbd34f37f9e2c4e5978f02d0f562c2a3105",
+    "GRWTSK.DynamicalSystems.TransitionSystems.AnchoredReinitialization":
+      "d6c9a7a5ef4e89899ea42add81647b114526d718760ec3efbab728ad8eea9f64",
+    "GRWTSK.DynamicalSystems.TransitionSystems.AnchoredVerificationExamples":
+      "9414abad6d4ff9b4aae541d0bdcbcfd2bccc3122c7997f99eae862d195f6d156",
+    "GRWTSK.DynamicalSystems.TransitionSystems.AnchoredVerificationReachability":
+      "d1b552a2877b9398903379c08e267d6db0a83bc7f7efd13427af0bfa17dcd6b8",
+    "GRWTSK.DynamicalSystems.TransitionSystems.BudgetResetCounterexamples":
+      "155e4fd202fb590cbdbdf4cb26100c17e72452418be0497ba37b301f662b3e42",
+    "GRWTSK.DynamicalSystems.TransitionSystems.CertifiedPartialMaps":
+      "cfc79a19043787a8caf42ed7bad1aef6bb89b0ec3ebf7f41f2e4676579c3b50e",
+    "GRWTSK.DynamicalSystems.TransitionSystems.GuardedFiniteBudget":
+      "edfbfadbe42b0b8bbc7391331718aeeb6ce68984b0e422125d313b94098dd96e",
+    "GRWTSK.DynamicalSystems.TransitionSystems.RevisionReachability":
+      "664dfec60c069a4d20bbf34de1cd86053344b3539a8b8fdf3ef2d41ecee29a94",
+    "GRWTSK.DynamicalSystems.TransitionSystems.StateReinitialization":
+      "520c95a41332fa4739212b0fe0a850af0d4d117c5e573d88242060977fe5794e",
+    "GRWTSK.DynamicalSystems.TransitionSystems.StateReinitializationExamples":
+      "3281a3b8d0a82226fa6117e9fa6999282b731a9ef7405024021032792e5597c2",
+    "GRWTSK.DynamicalSystems.TransitionSystems.VerificationReachability":
+      "65eada9155a5dc6bb27bdaeb9dd9cd623b24d5403442c8ec5e69de621ffc680b",
+    "GRWTSK.DynamicalSystems.TransitionSystems.VerificationReachabilityExamples":
+      "2bd1bd79ef54663ab746ea24f20d2a22ef3c727f3645d3d779531fc665eb2436",
+    "GRWTSK.LinearAlgebra.AlmostMathieu":
+      "8e33555ed354415b1604c4a7fc192d065fcd87ec4c765f6200faafd633c74d5c",
+    "GRWTSK.LinearAlgebra.CocycleProduct":
+      "64ebbd43849bfffee9f92d74f271c55a1ffcba28c1b7debcf491a901ddfff67b",
+    "GRWTSK.LinearAlgebra.CommonJ":
+      "c4fb5fef172e3855ba2d9ed1811246022e07813fbce00ee5341d393fcdb62767",
+    "GRWTSK.LinearAlgebra.CommonJCounterexamples":
+      "4bed27e7c490006f93c462cee2e088c9d6655678da35d1e926a7d3cd75d3a892",
+    "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm":
+      "c794442a18ee20b17d7a9de85d12e1450f5856c152dd9fec159e2c41c9dec34e",
+    "GRWTSK.LinearAlgebra.GaugeState":
+      "7b364472a886fd113be3fa2165e505fb1fb014fe7980653b19cadc906280258b",
+    "GRWTSK.LinearAlgebra.JacobiTransfer":
+      "bdabbdf489b3a6a65baeec09f71e3f03aed82a868b10491b8f7c21eb36938eab",
+    "GRWTSK.LinearAlgebra.OrderedProductDeterminant":
+      "fb77385e6aeff5897daac09c19acd353d4ec98e638ff7b51799dd2c06e4906a5",
+    "GRWTSK.LinearAlgebra.OrderedTransfer":
+      "0a899d052fdd7f5320e7a9f4b7ee271ee54ebe820b804a41216a597fa59351b9",
+    "GRWTSK.LinearAlgebra.Schrodinger.SampledPotential":
+      "dd30ef9e49516fbd3c87d80a743b8ca52cf49fbd4dc6914f954b59ec6753482b",
+    "GRWTSK.LinearAlgebra.Schrodinger.Sampling":
+      "c1a7b19b713a44f91ead260637396de3b673835eb5d4b8033702cc7068ebe757",
+    "GRWTSK.LinearAlgebra.SchrodingerTransfer":
+      "25f93a03bb8e1b5df2f73c782160ed9f356f592c6cca4e56c92cde7fd974969d",
+    "GRWTSK.LinearAlgebra.Sturmian":
+      "15528db5caae13d550eeabc64624f182af46a7e01c7e4dbf5a81f9604d8e6359",
+    "GRWTSK.Logic.Certificates.AnchoredBatchVerification":
+      "a6b47a542b76495e07516ff54dd3842c02e5a870aef99ef6c9bfb3242efd96e0",
+    "GRWTSK.Logic.Certificates.AnchoredDependencyRevision":
+      "6ee008922a064a90db39f16c8ab632afaf7838e185b6efbef29eaeac3b6bd9ad",
+    "GRWTSK.Logic.Certificates.BatchVerification":
+      "e1d5b69909fe3f8d1162b4bde6a9107ce21a098d1c41ef3f5c23becff4d96dbb",
+    "GRWTSK.Logic.Certificates.BatchVerificationExamples":
+      "e33b6840bfbe4d6abcb6e8ea6eb2a00786d39ff20b439d67afafe626682d5e07",
+    "GRWTSK.Logic.Certificates.DependencyRevision":
+      "5670d4cd3b52bb4451d9c061b415a3f74b245c143a521cc32980a5d77603a599",
+    "GRWTSK.Logic.Certificates.DependencyRevisionExamples":
+      "40a1210cc7f106cfc35d8dc732db28da7c340658da463bf61ec7dd4edde31776",
+    "GRWTSK.Logic.Certificates.ModelExamples":
+      "cd171cabf3f1943620db388004cc05ac0ca16480a2099f0af4b730a4faf32058",
+    "GRWTSK.Logic.Certificates.ProofCoverage":
+      "9920ca52119c98e59e6fe42442e42f593975a1e29c8a5d5d5e6aaf05bfda0c97",
+    "GRWTSK.Logic.Counterexamples.ComplexSymmetryAndPositivity":
+      "8978e35b19445d99221652bfa2164b10d4099bb23e825035a4044b98ed0cbbab",
+    "GRWTSK.Logic.FiniteCoverage":
+      "e1694a750b75d4b4db6bdba517f494a1aa7955736569e04643a2ddc7b45cf4ef",
+    "GRWTSK.Logic.FiniteSequences.PrefixCoverage":
+      "77ed7277b4519ff8fb955e215664ac6d0c22a78e95e38e9ee16d18e6b226a5b3",
+    "GRWTSK.Logic.Inference.FiniteRuleExamples":
+      "f7826ced25588065a249d256dc887e49eede2748f14349d458a12dd33ba082e3",
+    "GRWTSK.Logic.Inference.FiniteRuleSystems":
+      "6bbe978cc4ba18d4bfefbadab3a7b256cdec7dffb6b7de9da18a688d9c4fa986",
+    "GRWTSK.Logic.Locality.AnchoredCertificates":
+      "09b173196b18317c3ecb658206324c41254a6f7023ef0e501d5a4cf511f96c5d",
+    "GRWTSK.Logic.Locality.FiniteRuleTransport":
+      "6cf979f83e4d1047fc0b2d49b0288beeda6a956ae0242a311f9992b1bc3e7719",
+    "GRWTSK.Logic.Locality.RevisionCertificates":
+      "c126cca40f7ad1a35ac06b5d1502647ce3c826edda79a2a6db2310035da0f2e4",
+    "GRWTSK.NumberTheory.ArithmeticFunctions.LogarithmicShiftKernelBounds":
+      "45130c2a967f4284279520a217a8574a5f0c28cb79e44b8c7ed922154d5be558",
+    "GRWTSK.NumberTheory.Chebyshev.CompactProfileExplicitFormula":
+      "554c43f9096bba277f2c73172c3f6e4dcb54a9b4da0abd79c8a6bc775854125b",
+    "GRWTSK.NumberTheory.Chebyshev.CompactProfilePairingIntegrability":
+      "797ade6a77762c2d421a3c28a9a2a6c5f3c645a343a854ed02ccbb7f3f0dc9eb",
+    "GRWTSK.NumberTheory.Chebyshev.CorrelationPairing":
+      "fe9453df597dc7a0230f3fedde3f2c3a8b616cac003f70feb65986b64e80bac3",
+    "GRWTSK.NumberTheory.Chebyshev.FiniteIntegrationByParts":
+      "d901cf9da7a01829f620c3b59b8dc89cea5b46d1113b919b14d618b9bb9fe3ef",
+    "GRWTSK.NumberTheory.ContinuedFractions.FrequencyRealization":
+      "fe53414320a78931bf2add8a168544df853ce7bd10b82b2cf257082ceb77e4be",
+    "GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators":
+      "3f18269367c2ef839a97591d1d5d36198c6c4c6faff132120f45659c19e94a03",
+    "GRWTSK.NumberTheory.ExplicitFormula.CorrelationPairing":
+      "1b58187402ac027a0c6f48f3a70b48af3eede19f6e39870368b25bc46d09887b",
+    "GRWTSK.NumberTheory.FirstPrime":
+      "436e96d07490a3251683045a1f4929a1df5eca692fb411c87fe527d71b2a0d9c",
+    "GRWTSK.NumberTheory.Moebius.ComparisonEnergy":
+      "0850bfd508693468bbeb7aef7df1d57aae58e42053ea436169eb18d4020a203d",
+    "GRWTSK.NumberTheory.Moebius.DiagonalEnergyBounds":
+      "371fe05a4e0f382c2944649434d6ee3ae03946c24381f7ce53634e13d4e17a58",
+    "GRWTSK.NumberTheory.Moebius.DirichletLaplaceIdentity":
+      "062ba923dbe090e8f1271ce4ffaf90332eaf5e20dc925f9d4b824dea48407cce",
+    "GRWTSK.NumberTheory.Moebius.DyadicEnergy":
+      "09b78e1f6656d83868433ee9fcc3b15970817fa3cc3cb78381cb02ec6a240eb6",
+    "GRWTSK.NumberTheory.Moebius.EnergyAbscissa":
+      "23330ce4bd519083f9fe8e09ecb9aaf6724a614d6b4a576afef395351e27c549",
+    "GRWTSK.NumberTheory.Moebius.EnergyGrowthEquivalences":
+      "70bf8c10cd78518511d3019b77d542fdc6ae450c10a72631031e60f3cc7081b1",
+    "GRWTSK.NumberTheory.Moebius.FiniteLaplaceSums":
+      "8c1fb421033b43353ec61b5c3909ffad3a3394cc9fc002c6f6c13e6e856eb128",
+    "GRWTSK.NumberTheory.Moebius.FiniteLaplaceTransform":
+      "590ede9829dd77b11263d72babd0e42b0504e291397b4d98cf81ad5f0199c678",
+    "GRWTSK.NumberTheory.Moebius.FiniteResponseSum":
+      "9358b6a2bbd51c10140c6fb595383355c54b072154965a06eb4651c3bc2c8bb8",
+    "GRWTSK.NumberTheory.Moebius.GramDiagonalBound":
+      "72172eb41fbc701bb53d3fe3d31f6a9d2cf5117c18769f85d5ed2e2986cb2b73",
+    "GRWTSK.NumberTheory.Moebius.IntegerSampleGrowth":
+      "42864197db6df82ea13df156e9590ed77e5c2099619e4532a6918d5cef9a23de",
+    "GRWTSK.NumberTheory.Moebius.LaplaceDirichletSeries":
+      "8d81ba7f79fd0eabd4ee4c900553039b93e7171e9d7ee60ac4222175d4204242",
+    "GRWTSK.NumberTheory.Moebius.LaplaceHolomorphy":
+      "c65e5184b9e4354aaa2ddd27a7d61afe5fa69ad8b833436e9269b00eac2bf807",
+    "GRWTSK.NumberTheory.Moebius.LaplaceTransform":
+      "308954ccc5537fc6dc46377c72a3f18c118c87bafb72b01746ab5368b156dd05",
+    "GRWTSK.NumberTheory.Moebius.MeanSquareGrowth":
+      "16dee167404d9ecf75bce45caaebc1b98058ba6b8d02e51502eef59d4771c243",
+    "GRWTSK.NumberTheory.Moebius.MeanSquareLaplaceHolomorphy":
+      "4eb213efab76b7b2b17ce26b4d428c773f635d7bc3cab529c057cd9a7acc442c",
+    "GRWTSK.NumberTheory.Moebius.MertensPrimitive":
+      "a0735d6120754b4921c55346a5fb0203cb3586bd6f312289f83b0a76218cffbb",
+    "GRWTSK.NumberTheory.Moebius.NegativePrimeCorrelation":
+      "020042e6753763a9894a6ef63256f9583f72dbc5d114a9fa45c495f7650e716d",
+    "GRWTSK.NumberTheory.Moebius.PolynomialLaplaceHolomorphy":
+      "f3387bbcc69c0f89cd2c071a6b2d8dd95d69240f393bf18774dba90a1d1773b1",
+    "GRWTSK.NumberTheory.Moebius.PrimeBlockEnergy":
+      "e327d18d9572d5225c997f485efacb69b59e190ebe0a0cce94087c8b4641b952",
+    "GRWTSK.NumberTheory.Moebius.PrimeFactorFilters":
+      "ec4760134d86f29c697f6f8556209c1c0a735716177c36b1aee6e1d06085ca6e",
+    "GRWTSK.NumberTheory.Moebius.PrimeFilterEnergy":
+      "21bac8528e4afa692c6d623473229f3c55b28654e4da4b708b52151e9afc139c",
+    "GRWTSK.NumberTheory.Moebius.PrimeFilterGrowth":
+      "6eba6686d407d00d3d9786d6fe83116037bfb564c78747a8230de9f98b618803",
+    "GRWTSK.NumberTheory.Moebius.PrimeFilterLaplace":
+      "be96c983badedf9c3bde3787a273165be81163efc130b52d451ae2b51addea1b",
+    "GRWTSK.NumberTheory.Moebius.PrimePrefixGrowth":
+      "c5ebc36cce14a45fdba746140d687bda39cd6bf5f892091e7c2faaa3d951177e",
+    "GRWTSK.NumberTheory.Moebius.PrimitiveIdentification":
+      "2a1f78198afd3a0a23e1865be081f09e2582689e58462d736bfe626128e6f308",
+    "GRWTSK.NumberTheory.Moebius.PrimitiveRegularity":
+      "6cb747756c582d9f4f5872e164b091672f044bbbb0bb1478d6c47c31b565c720",
+    "GRWTSK.NumberTheory.Moebius.SectorEssentialSuprema":
+      "e2bdb59fc36e993c616328b9e7a32658e2bc1985d42bcfac9c64c901f165e6e2",
+    "GRWTSK.NumberTheory.Moebius.SignedIntegralSectorBounds":
+      "6f46187c269e51719dd2104c5df7480c42ebad7bdc38bf3f2590504063de447e",
+    "GRWTSK.NumberTheory.Moebius.UnsignedEnergyBound":
+      "4900917f41e019d2348d3d0b26321e36cf077e86adb409e9c546840a39d43481",
+    "GRWTSK.NumberTheory.Moebius.WeightedIntegralContinuity":
+      "ab44a7e992005e24b2dab3b5ef30bd22f37cfc97d714c8c50e31f08afd505883",
+    "GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy":
+      "8124ef6fbeca2c8244d7401536d70c43a6ecd31279366c20ea96bf6fbaa84380",
+    "GRWTSK.NumberTheory.Moebius.WeightedIntegralGrowth":
+      "ee5dc6dc631638538445d66293cbdf7897a3c21beddc197a7cb8365a05025377",
+    "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral":
+      "041fa625e5e2bc239e3df3b471f545f7ba080093723c2f3710c08ee4bc92c8c2",
+    "GRWTSK.NumberTheory.Prime.LeastPrime":
+      "89d862e92978b74d032ea9b8ce764c0593a19cb93001c2c1cf5695c600c187fd",
+    "GRWTSK.NumberTheory.Prime.ReciprocalMass":
+      "b943050f8ff274dd63740ada669ac79027218c5e248809e491c2bb2590ea62bc",
+    "GRWTSK.NumberTheory.Zeta.HolomorphicFilteredReciprocal":
+      "1499cd8a5faee607f99dad81aad589ef7f3d8ec6df4419f60e0b3f95be24fdb0",
+    "GRWTSK.NumberTheory.Zeta.PoleRegularization":
+      "7c813c2d75d8f9d96216a620ba337ca793728a1e0270620c1d19e1521a623cc1",
+    "GRWTSK.NumberTheory.Zeta.Riemann":
+      "0a0a3808d45bfb087b397f85b08a4135cce705cc1f7ad5e51251e4e6abbbd73f",
+    "GRWTSK.NumberTheory.Zeta.Riemann.CriticalLineDefect":
+      "d915e1e7d7555eb6efa7ee72786a7ad044dc9e7c4b4e178153d356088472efc8",
+    "GRWTSK.NumberTheory.Zeta.Riemann.DefectCriterion":
+      "c387ba899e159bde5274009c792630553f1de8f52e83031a3f7123daf4b3766f",
+    "GRWTSK.NumberTheory.Zeta.Riemann.Hypothesis":
+      "26de9b9d99b5e04103c8095c3b466ce301fab1d52dd40155703a160aac44f1f6",
+    "GRWTSK.NumberTheory.Zeta.Riemann.LaplaceCriterion":
+      "be129acd7f3abe84fe8d87227d256e8c3e9318c739b4fa7c04096f2c70a9f8b0",
+    "GRWTSK.NumberTheory.Zeta.Riemann.PolynomialEnergyCriterion":
+      "b4b7949d198e478ac369d8455284cd5b0505f5b97a0323d47eb5cf59da1f11b1",
+    "GRWTSK.NumberTheory.Zeta.Riemann.Regularized":
+      "084fe442c91faee379c83ad8a7a6af1f4500bd5eb66bbc5f999b160106627af7",
+    "GRWTSK.NumberTheory.Zeta.Riemann.ZeroDefinitions":
+      "107f357b8c04afc16e25b8fded6922782d2756959b42f080af839f4db58e9aa0",
+    "GRWTSK.NumberTheory.Zeta.Riemann.ZeroSymmetry":
+      "6f3b74c08ed6538482ce19e90de96784b65a0d54209f65987a4e7ad45f5150ec",
+    "GRWTSK.NumberTheory.Zeta.ZeroFreeHalfPlaneCriteria":
+      "d1066595d1aacddec0f15263570ea4f52a24d66d5444c8f02832271877fbe0db",
+    "GRWTSK.Order.Closure.FiniteDependencyClosure":
+      "e78778c5b623abadfc23a668517cb4b1652ef6365962263b8440f8a156af5dec",
+    "GRWTSK.Order.Closure.FiniteDependencyExamples":
+      "3b0fe0e9203fdd65f3ae8252aec3e66159e114863a23c840ea4fdfb19a63a467",
+    "GRWTSK.Spectral.DirichletCut":
+      "98bc77aecb30901438b6af7cacb1edfdee181cc73d64bcb142daf6abed1ac8af",
+    "GRWTSK.Spectral.FreeDirichletSpectrum":
+      "363dc89065857454bf985848a16475040fe5c67e4a0ee3d1a7b027902c0d01cf",
+    "GRWTSK.Spectral.FreeIDS":
+      "2ceb8583eee1ece71002eb12fdb6682498125b79c53c9d5a3fa8283d0a9e8f60",
+    "GRWTSK.Spectral.GapTransport":
+      "058f1fc96e8badc39cf8178e1c30680199bbf3870ea67d69d5eb16c5e6b8e4ec",
+    "GRWTSK.Spectral.MatrixCountComparison":
+      "eed27fedd6056292ce90a075907568852df7fb47d6d621775a44d6888f10b1b7",
+    "GRWTSK.Spectral.SturmianBlockCounts":
+      "5e357a6fd03b24ceb1a92ac187f235b494c093276fa76aee72f5372927f52ed5",
+    "GRWTSK.Spectral.SturmianFiniteVolume":
+      "3b072a5c92f83d8fe20dea794ebc3b185d2166c5c55a8355ca1210049776a45d"
+  }
+}"###

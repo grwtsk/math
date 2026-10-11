@@ -42,7 +42,7 @@
       "priority": 3,
       "priority_basis": "Immediate architectural usefulness; editorial judgment, not measured influence",
       "source": "GRWTSK/Analysis/Asymptotics/PolynomialErrorBound.lean",
-      "sha256": "038e3cf31cc90eec7019c91be55ff2cdc4c00aaf82a3791be5d05e4dfae12996",
+      "sha256": "7f04746894b0774969d506fde6c8287056361051f29196c8dc23c2f38932b6e6",
       "premises": "exact X=R+e; uniform readout and absolute error bounds; nonnegative coefficients",
       "verification": "historical",
       "evidence": "evidence/waveform-checks.json",

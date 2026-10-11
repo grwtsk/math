@@ -46,8 +46,8 @@
       "GRWTSK/LinearAlgebra/Sturmian.lean"
     ],
     "NumberTheory/Moebius/Laplace": [
-      "GRWTSK/NumberTheory/Moebius/FiniteLaplaceSums.lean",
       "GRWTSK/NumberTheory/Moebius/FiniteLaplaceTransform.lean",
+      "GRWTSK/NumberTheory/Moebius/FinitePrimeProductDebt.lean",
       "GRWTSK/NumberTheory/Moebius/PrimeFilterLaplace.lean"
     ],
     "NumberTheory/Moebius/Pickup": [
