@@ -313,6 +313,19 @@ This is a conditional consumer theorem. The density-correction moment bounds
 and the elementary bounded reciprocal Möbius prefix do not supply either
 power estimate or a decay rate.
 
+The two prefix hypotheses are not algebraically independent. At every integer
+$n\ge1$, the checked closed-cutoff Abel identity is
+
+$$
+A_n=\frac{M_n}{\sqrt n}
++\frac12\int_0^{\log n}e^{-u/2}M(e^u)\,du,
+$$
+
+where $M(e^u)$ is the actual real-floor Mertens prefix used by the pickup.
+This exact bridge introduces no cancellation estimate. It isolates the next
+analytic task: propagate a genuine bound on $M$ through the integral strongly
+enough to pay the weighted-prefix square series.
+
 The actual omitted function is
 
 $$r_{\sigma,T}(u)=1_{[0,\infty)}(u)e^{-\sigma u}W(u)
