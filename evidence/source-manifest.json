@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "profile": "least-natural-prime + canonical34-Moser + exact-RH-target + ordered-product-candidate + common-J-rotation-candidate + common-J-native-sign-reversal-candidate + rational-shear-counterexample-candidate + ordered-product-gauge-candidate + real-polarization-access-ramp-candidate + interval-reflection-conditional-integral-candidate + finite-coverage-explicit-domain-and-tail-candidate + rh-inference-guards-with-existing-canonical-dependency-reuse-candidate + schrodinger-transfer-core-candidate + ccc-prime-cascade-exact-and-conditional",
+  "profile": "least-natural-prime + canonical34-Moser + exact-RH-target + ordered-product-candidate + common-J-rotation-candidate + common-J-native-sign-reversal-candidate + rational-shear-counterexample-candidate + ordered-product-gauge-candidate + real-polarization-access-ramp-candidate + interval-reflection-conditional-integral-candidate + finite-coverage-explicit-domain-and-tail-candidate + rh-inference-guards-with-existing-canonical-dependency-reuse-candidate + schrodinger-transfer-core-candidate + ccc-prime-cascade-exact-and-conditional + checked-sequence-realization-and-real-frequency-existence",
   "origin": "PUBLIC_MATHLIB_DIRECT_IMPORT",
   "upstream": {
     "repository": "https://github.com/leanprover-community/mathlib4",
@@ -14,7 +14,7 @@
   "files": {
     ".gitattributes": "30ad961b8d8b3947a8f036d5390087ab5f8c1853f7d0bfb01319f449e05e1368",
     ".gitignore": "21327e9cedbf4b84ef262886e71421d4201201b052cb7b06a6ba6a522270e732",
-    "GRWTSK.lean": "aa0bda3a21ce1e5e19a840f28e129c59d54c68997644530dbba6c5c4b245abd6",
+    "GRWTSK.lean": "e7d85a7c3b687e6fd8dfc80acaf2cadced90e123177639cbcbc12554ac609650",
     "GRWTSK/Algebra/OrderedProduct.lean": "97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d",
     "GRWTSK/Combinatorics/GraphTheory/HadwigerNelson/Moser.lean": "1791f62713a936d9d91f262273871cf5d28257e390f15d05454a5f2115ce8796",
     "GRWTSK/Combinatorics/GraphTheory/HadwigerNelson/MoserCoordinates.lean": "0e29b36d41b117eb4c747ddaf02bf22a2b87e8a59b0665a424d1a1277a38c8ec",
@@ -31,8 +31,8 @@
     "LICENSES/MIT.txt": "a98fc92dab12d02b26bc51f1ac0d608871886b7e36de2170747fb0fcee946968",
     "LICENSES/Mathlib-Apache-2.0.txt": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
     "LICENSES/OpenAI-Apache-2.0.txt": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
-    "NOTICE": "99b110f190af18d15b502b7dc8a33de18e4aaeb8e33ce1e9efc37a90b0860c29",
-    "README.md": "f01f071874d5663909fc4ee47c30840654f42ddfcc69801fe8195c6f9ce00b57",
+    "NOTICE": "b43c8aaf3b41b340a5c69dd57629fd0df7cd7edb9b18d97d171f44b60bbbc2c9",
+    "README.md": "be2df651829793dd90db0e4890413c3905d1958d9f517d5f363feb4bc74f55d3",
     "checks/CommonJAudit.lean": "6773a938739ae7708d354a130a9e067844cd33633cb6b4ce3883f998a7f638fd",
     "checks/Consumers.lean": "ddffe7fc2b513a02a79b3afa0a79a797d97424c15c6c08a82db2dd0f9ffe42e4",
     "checks/DeclarationAudit.lean": "377f6c7372b2693761402d3c28ab0fcb8dca0d5e7d18651fe03289f3863c070a",
@@ -153,7 +153,16 @@
     "checks/prime-cascade-controls/MissingBlockBound.lean": "edb4893c9a62c7fef7032147bf3fc5c420120c0e6bf0c83e8038acee3ed0a2dc",
     "checks/prime-cascade-controls/MissingPrimeBound.lean": "7a6de82066f0a037f5fd812cad777c1bcebfa3d38f1e20c5dcae140dee6f0bcb",
     "checks/prime-cascade-controls/CompositePrimitive.lean": "16dbcf6515d8072147aa1fd17cf55b60712476d2b2e3f69d5e3c9943f0f34b87",
-    "evidence/citation-prime-cascade.json": "11c8b764a0b9828983c47dd71ebb23c75382af0523c8576de4a2904a31d7bce1"
+    "evidence/citation-prime-cascade.json": "11c8b764a0b9828983c47dd71ebb23c75382af0523c8576de4a2904a31d7bce1",
+    "GRWTSK/RiemannHypothesis/Conversation/BranchSequenceRealization.lean": "3f18269367c2ef839a97591d1d5d36198c6c4c6faff132120f45659c19e94a03",
+    "GRWTSK/RiemannHypothesis/Conversation/BranchFrequencyExistence.lean": "d99990a77db939231e31207f38f1d34204aa597f057ec1ac3c0b26ba47b13358",
+    "GRWTSK/RiemannHypothesis/Conversation/BranchSequenceReturn.lean": "de1982e400c9a3e25f6bf280e017ba571b74d7666f677c52637cb88cbd7145ea",
+    "GRWTSK/RiemannHypothesis/Conversation/Sequences.lean": "f89413a03a41224afa2843d7afd43e69c2875effe689a56c4e7850ae8bc98541",
+    "checks/SequenceRealizationAudit.lean": "12bf555720697f03b2a78982668cf4f9b4e09edc5827ced1046535c586a1bdf8",
+    "scripts/check_sequence_realization.py": "fb77b71772153e1909fc3a91ef63236f465c73c0231fb7fef6feb27a5ff02d32",
+    "docs/sequence-realization.md": "544e9fa45b93dbd7c044e3080ff12cde55c6f0ee4a8cbc32680d899271e9648a",
+    "evidence/citation-sequence-realization.json": "973eae6001c2e6059e6c5a5ac0fe26036deb91f28b685850d0d75affa703f72e",
+    "evidence/sequence-realization-checks.json": "d927150da0460704b44f9aceaa335062ee1f81d27a77111c47e2e47c7f6d6f4b"
   },
   "axiom_policy": "Lean standard classical axioms propext, Classical.choice, Quot.sound permitted; sorryAx and other axioms rejected; prime exact observed list reported, Moser exact frozen lists matched.",
   "additional_claim_scope": "Exact Mathlib RH proposition, its defect equivalence and nontrivial-zero symmetries; no RH proof.",
@@ -183,5 +192,17 @@
       "Kakeya_adapter"
     ],
     "verification": "evidence/prime-cascade-checks.json"
+  },
+  "sequence_realization_scope": {
+    "proved_theorems": 81,
+    "public_declarations": 108,
+    "stored_family_declarations": 189,
+    "exact_original_type_body_universe_axiom_comparison": "PASS",
+    "source_consumer_retirement": "NOT PERFORMED",
+    "CCC_identification": "OPEN",
+    "P04": "OPEN",
+    "verification": "evidence/sequence-realization-checks.json",
+    "whole_branch_transfer_complete": false,
+    "RH_proved": false
   }
 }
