@@ -2,14 +2,13 @@
 
 ## Finite recordings, extended tail energy and the limit obligation
 
-This section is a written argument and source review. It is not a new Lean
-replay or independent acceptance. The proposed damped finite-window construction proposes the actual hard-window representative,
-its integral kernel, its identification almost everywhere with the normalized
-$L^2$ Fourier transform, and the angular factor. Its proof scripts remain
-unelaborated. The distribution bridge uses the Fourier pairing identity
-against smooth compactly supported tests, followed by the pinned Mathlib
-separation theorem for locally integrable functions. These are candidate
-adapters, not premises that the waveform certificate supplies automatically.
+The finite hard-window, angular normalization and completed vertical-line interfaces are formalized in the public source. Their recorded verification remains historical here; this documentation integration runs no Lean replay. The following extended-tail argument remains written mathematics.
+
+The resulting completed finite transform retains $U_N$ and both signed endpoint sums. `DampedRecordingParseval` now constructs the actual hard-window representative, proves its $L^1/L^2$ properties, identifies its angular kernel with the finite Laplace transform, pays the angular normalization, and proves the vertical-line Plancherel identity for this complete numerator and its true denominator. Its uniform-in-time square-integral estimate is still unpaid.
+
+`VerticalLineCriterion` now proves that the uniform completed vertical-line bound at every positive damping is equivalent to `PickupWeightedEnergyAll` and to `pickupEnergyAbscissa = 0`, and hence conditionally implies the literal Riemann hypothesis. This closes the finite-window-to-terminal logical adapter without pretending to supply the uniform signed bound itself.
+
+The same module proves the completed bound unconditionally for every $\sigma>1/2$, using the already paid energy domain $\tau>1$. The remaining arithmetic extension is $0<\sigma\le1/2$.
 
 For fixed real $\sigma$ define the nonnegative density and its extended
 half-line energy by
@@ -26,7 +25,7 @@ $$\mathcal E_\sigma=\sup_{n\in\mathbb N}H_\sigma(n)
                     =\sup_{T\ge0}H_\sigma(T).$$
 
 Consequently a finite constant bounding every recording is equivalent to
-$\mathcal E_\sigma<\infty$. Assuming the proposed finite angular Parseval
+$\mathcal E_\sigma<\infty$. Using the finite angular Parseval
 adapter, it is also equivalent to a uniform bound on the complete
 vertical-line expression above. Separate finite constants depending on $T$
 do not prove this condition. Requiring it at every $\sigma>0$ is precisely
@@ -68,8 +67,7 @@ factor explicitly. Thus the infinite Laplace kernel exists absolutely at
 $\sigma+i\omega$, and the same bound controls
 $|L_\infty(\sigma+i\omega)-L_T(\sigma+i\omega)|$ uniformly over real
 $\omega$. It retains a paid *smaller-damping* energy premise; finite energy
-only at the same damping does not pay this particular estimate. The proposed
-finite identity then transports convergence to the full completed quotient
+only at the same damping does not pay this particular estimate. The finite identity then transports convergence to the full completed quotient
 $[\Pi_N(s)-R_T(z,s)]/(zs)$, retaining every debt and endpoint term. This
 supplies no separate convergence or cancellation estimate for those terms.
 
@@ -79,6 +77,8 @@ $\sigma>1/2$. Source replay remains required. Extending that
 domain to every positive $\sigma$ still needs an independent signed
 arithmetic upper estimate. The tail argument explains the precise missing
 limit premise and cannot replace it.
+
+[Finite recording source](../../../../../GRWTSK/NumberTheory/Moebius/DampedRecordingParseval.lean) · [Completed criterion](../../../../../GRWTSK/NumberTheory/Moebius/VerticalLineCriterion.lean).
 
 ## Source and verification scope
 

@@ -150,6 +150,71 @@ theorem criticalIntervalBlock_closedForm (n : ℕ) :
     apply Continuous.intervalIntegrable
     fun_prop
 
+theorem exponentialLogDrop_eq_rpow {a : ℝ} {n : ℕ} (hn : 1 ≤ n) :
+    exponentialLogDrop a n =
+      (n : ℝ) ^ (-a) - ((n + 1 : ℕ) : ℝ) ^ (-a) := by
+  have hnpos : (0 : ℝ) < n := by
+    exact_mod_cast (lt_of_lt_of_le Nat.zero_lt_one hn)
+  have hspos : (0 : ℝ) < ((n + 1 : ℕ) : ℝ) := by positivity
+  unfold exponentialLogDrop
+  rw [Real.rpow_def_of_pos hnpos, Real.rpow_def_of_pos hspos]
+  congr 1 <;> ring
+
+theorem exponentialLogDrop_nonneg {a : ℝ} (ha : 0 ≤ a) (n : ℕ) :
+    0 ≤ exponentialLogDrop a n := by
+  cases n with
+  | zero => simp [exponentialLogDrop]
+  | succ n =>
+      have hnpos : (0 : ℝ) < ((n + 1 : ℕ) : ℝ) := by positivity
+      have hlog : Real.log ((n + 1 : ℕ) : ℝ) ≤
+          Real.log ((n + 1 + 1 : ℕ) : ℝ) :=
+        Real.log_le_log hnpos
+          (by exact_mod_cast Nat.le_add_right (n + 1) 1)
+      unfold exponentialLogDrop
+      exact sub_nonneg.mpr (Real.exp_le_exp.mpr
+        (mul_le_mul_of_nonpos_left hlog (neg_nonpos.mpr ha)))
+
+/-- A positive termwise majorant that keeps the exact three endpoint scales
+but pays absolute value only for the mixed prefix product. -/
+def criticalIntervalMajorant (n : ℕ) : ℝ :=
+  4 * pickupWeightedPrefix n ^ 2 * exponentialLogDrop 1 n +
+  (16 / 3) * |pickupWeightedPrefix n * pickupMertensPrefix n| *
+    exponentialLogDrop (3 / 2) n +
+  2 * pickupMertensPrefix n ^ 2 * exponentialLogDrop 2 n
+
+theorem criticalIntervalMajorant_nonneg (n : ℕ) :
+    0 ≤ criticalIntervalMajorant n := by
+  have h1 := exponentialLogDrop_nonneg (a := (1 : ℝ)) (by norm_num) n
+  have h32 := exponentialLogDrop_nonneg (a := (3 / 2 : ℝ)) (by norm_num) n
+  have h2 := exponentialLogDrop_nonneg (a := (2 : ℝ)) (by norm_num) n
+  unfold criticalIntervalMajorant
+  positivity
+
+theorem criticalIntervalBlock_le_majorant (n : ℕ) :
+    criticalIntervalBlock n ≤ criticalIntervalMajorant n := by
+  rw [criticalIntervalBlock_closedForm]
+  unfold criticalIntervalMajorant
+  have hd : 0 ≤ exponentialLogDrop (3 / 2) n :=
+    exponentialLogDrop_nonneg (by norm_num) n
+  have hm : -(pickupWeightedPrefix n * pickupMertensPrefix n) *
+      exponentialLogDrop (3 / 2) n ≤
+      |pickupWeightedPrefix n * pickupMertensPrefix n| *
+        exponentialLogDrop (3 / 2) n :=
+    mul_le_mul_of_nonneg_right (neg_le_abs _) hd
+  have hmiddle : (16 / 3) *
+        (-(pickupWeightedPrefix n * pickupMertensPrefix n) *
+          exponentialLogDrop (3 / 2) n) ≤
+      (16 / 3) *
+        (|pickupWeightedPrefix n * pickupMertensPrefix n| *
+          exponentialLogDrop (3 / 2) n) :=
+    mul_le_mul_of_nonneg_left hm (by norm_num)
+  linear_combination hmiddle
+
+/-- An explicit sufficient arithmetic target for the critical boundary: the
+positive majorant series of the two signed prefixes converges. -/
+def CriticalIntervalMajorantSummable : Prop :=
+  Summable criticalIntervalMajorant
+
 /-- Partial sum of the exact critical arithmetic blocks. -/
 def criticalIntervalBlockSum (N : ℕ) : ℝ :=
   ∑ n ∈ Finset.Icc 1 N, criticalIntervalBlock n
@@ -215,6 +280,21 @@ def CriticalBoundaryVerticalLineUniform : Prop :=
 def CriticalIntervalBlockUniform : Prop :=
   ∃ C : ℝ, 0 ≤ C ∧ ∀ N : ℕ, criticalIntervalBlockSum N ≤ C
 
+theorem criticalIntervalBlockUniform_of_majorantSummable
+    (hs : CriticalIntervalMajorantSummable) : CriticalIntervalBlockUniform := by
+  refine ⟨∑' n : ℕ, criticalIntervalMajorant n,
+    tsum_nonneg criticalIntervalMajorant_nonneg, ?_⟩
+  intro N
+  unfold criticalIntervalBlockSum
+  calc
+    (∑ n ∈ Finset.Icc 1 N, criticalIntervalBlock n) ≤
+        ∑ n ∈ Finset.Icc 1 N, criticalIntervalMajorant n := by
+      apply Finset.sum_le_sum
+      intro n _hn
+      exact criticalIntervalBlock_le_majorant n
+    _ ≤ ∑' n : ℕ, criticalIntervalMajorant n :=
+      hs.sum_le_tsum _ (fun n _ => criticalIntervalMajorant_nonneg n)
+
 theorem criticalIntervalBlockUniform_of_boundary
     (hB : CriticalBoundaryVerticalLineUniform) : CriticalIntervalBlockUniform := by
   obtain ⟨C, hC, hbound⟩ := hB
@@ -249,6 +329,12 @@ theorem criticalBoundary_iff_intervalBlockUniform :
   ⟨criticalIntervalBlockUniform_of_boundary,
     criticalBoundary_of_intervalBlockUniform⟩
 
+theorem criticalBoundary_of_majorantSummable
+    (hs : CriticalIntervalMajorantSummable) :
+    CriticalBoundaryVerticalLineUniform :=
+  criticalBoundary_of_intervalBlockUniform
+    (criticalIntervalBlockUniform_of_majorantSummable hs)
+
 /-- Any solution of the countable RH-equivalent reciprocal-line problem must,
 in particular, settle the explicit critical arithmetic block problem. -/
 theorem criticalBoundary_of_criticalReciprocal
@@ -264,5 +350,6 @@ end GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.wholePickup_eq_prefix_flux_on_log_cell
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalIntervalBlock_eq_pickup
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalIntervalBlock_closedForm
+#print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalIntervalBlockUniform_of_majorantSummable
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalIntervalBlockSum_eq_verticalLineMass
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalBoundary_iff_intervalBlockUniform
