@@ -1,0 +1,10 @@
+# Prefix service intervals and obligation coverage
+
+Human mathematical direction: R.A. Jacob Martone. Formalization assistance: OpenAI Codex. Classical constructions and direct Mathlib imports retain their origins; no originality claim. Local source is MIT; Mathlib is Apache-2.0.
+
+A pinned obligation enumeration is serviced through the exact intervals `[S_n,S_(n+1))`. With every batch at least one, `coverage` proves that every index enters a service interval. An unbounded clock alone permits starvation; the counterexample always selects channel zero. For eligibility that changes, a later adapter must prove coverage of every persistently eligible obligation and retain parked obligations. Fairness is conditional on continuing admissible service, rather than successful completion or perpetual authorization.
+
+
+## Source and verification scope
+
+[Source](../../../../GRWTSK/Logic/FiniteSequences/PrefixCoverage.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.

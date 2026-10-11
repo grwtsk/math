@@ -1,0 +1,169 @@
+# Finite signed prime-product debt
+
+Human mathematical direction: R.A. Jacob Martone. Research and candidate
+formalization assistance: OpenAI Codex. The finite product expansion and prime
+factorization arguments are established mathematics; Mathlib contributions
+retain their upstream authorship and Apache-2.0 license.
+
+Status: written derivation, with complete candidate Lean scripts retained in
+ignored local storage. The candidate has not been elaborated, admitted to the
+library or natively audited. No independent arithmetic upper estimate or RH proof is
+claimed.
+
+## Exact finite formula
+
+For a natural cutoff $N$, define
+
+$$
+P_N=\{p\le N:p\text{ prime}\},\qquad
+q(A)=\prod_{p\in A}p,\qquad
+Q_N=q(P_N),\qquad a_s(n)=\exp(-s\log n).
+$$
+
+Here $A$ is a subset of $P_N$ and $s$ is any complex number. Every $q(A)$ is
+positive and squarefree. The map $A\mapsto q(A)$ is injective, with inverse
+the set of prime factors. Since the real logarithm is additive on positive
+products, $a_s(q(A))=\prod_{p\in A}a_s(p)$, with no complex logarithm or
+branch choice.
+
+Define the raw finite product and its signed unborn-product debt by
+
+$$
+\Pi_N(s)=\prod_{p\in P_N}(1-a_s(p)),\qquad
+U_N(s)=\sum_{\substack{A\subseteq P_N\\q(A)>N}}
+                 \mu(q(A))a_s(q(A)).
+$$
+
+Expanding the product gives one term for each subset, with coefficient
+$(-1)^{|A|}=\mu(q(A))$. Every squarefree $1\le n\le N$ occurs exactly once:
+its prime factors are at most $n$, so they lie in $P_N$. Nonsquarefree
+integers contribute zero to the actual Möbius prefix. Partitioning the subset
+sum at $q(A)\le N$ therefore gives the exact identity
+
+$$
+\boxed{\Pi_N(s)=D_N(s)+U_N(s)},\qquad
+D_N(s)=\sum_{1\le n\le N}\mu(n)a_s(n).
+$$
+
+Equivalently, because $Q_N$ is squarefree,
+$U_N(s)=\sum_{d\mid Q_N,\ d>N}\mu(d)a_s(d)$. The formula holds for every
+natural $N$ and complex $s$. Its physical use below has $N\ge1$. At $N=0$
+the empty subset has product one, so $D_0=0$ and $U_0=\Pi_0=1$; this is a
+finite algebra convention, not a negative recording time.
+
+Each subset term is nonzero, since its Möbius coefficient is $\pm1$ and the
+complex exponential never vanishes. The sum of those terms need not be
+nonzero. In particular $U_1=U_2=0$. At cutoff three the only unborn product
+is six, recovering the existing source formula
+$U_3(s)=a_s(6)\ne0$.
+
+## Causality and signed cutoff events
+
+For an actual recording time $T\ge0$, take $N=\lfloor e^T\rfloor$.
+If $q(A)>N$, then $\log q(A)>T$. The actual causal response of this product
+vanishes at every $u\le T$, and hence on the whole recording $[0,T]$.
+This proves zero for its finite-window response contribution. Its raw
+algebraic term $\mu(q(A))a_s(q(A))$ is still nonzero. Finite-window
+causality cannot erase that term from the raw Euler product; the debt is the
+precise correction between these two objects.
+
+The debt changes by signed arithmetic events. For $n\ge2$, put $b=a_s(n)$.
+If $n$ is composite, the prime inventory is unchanged and
+
+$$U_n(s)=U_{n-1}(s)-\mu(n)b.$$
+
+If $n=p$ is prime, then $\Pi_p=(1-b)\Pi_{p-1}$ and
+$D_p=D_{p-1}-b$, so
+
+$$U_p(s)=U_{p-1}(s)-b(\Pi_{p-1}(s)-1).$$
+
+The new prime itself belongs to the born prefix. Multiplying it by each
+nonempty earlier prime subset creates the new unborn terms, because those
+products exceed $p$. A composite squarefree product leaves the debt when
+its own cutoff arrives; a nonsquarefree cutoff has zero coefficient. Both
+recurrences follow directly from the finite identity, without an estimate.
+
+At $s=0$ and $N\ge2$, a prime-two factor makes $\Pi_N(0)=0$.
+Consequently
+
+$$U_N(0)=-\sum_{n\le N}\mu(n)=-M(N).$$
+
+This algebraic edge value is a signed Mertens prefix. It does not satisfy
+the nonzero-$s$ hypotheses of the transform quotient below. It demonstrates
+why a debt estimate can contain the original arithmetic difficulty.
+
+For example, at $N=5$ the unborn terms are
+$a_s(6)+a_s(10)+a_s(15)-a_s(30)$. At $s=0$ their signed sum is two, while
+the sum of their absolute values is four. Dropping the sign at thirty changes
+the exact debt. At $N=6$ the term at six leaves, leaving signed sum one.
+Finite checks of such cases do not yield cancellation at unbounded cutoffs.
+
+## Actual transform with all three corrections
+
+Use the actual signed pickup $W(u)$, together with
+
+$$
+A_N=\sum_{1\le n\le N}\frac{\mu(n)}{\sqrt n},\qquad
+M_N=\sum_{1\le n\le N}\mu(n),\qquad
+L_T(z)=\int_0^T e^{-zu}W(u)\,du.
+$$
+
+The retained source theorem
+[`wholePickup_cutoff_laplace`](../../../../../GRWTSK/NumberTheory/Moebius/FiniteLaplaceTransform.lean)
+has $T\ge0$, $s=z+1/2$, $z\ne0$, $s\ne0$, and gives
+
+$$L_T(z)=\frac{D_N(s)}{zs}
+ -\frac{2e^{-zT}}z A_N+\frac{2e^{-sT}}s M_N.$$
+
+Substitute the finite debt identity and retain the entire signed correction
+
+$$R_T(z,s)=U_N(s)+2s e^{-zT}A_N-2z e^{-sT}M_N.$$
+
+The resulting exact proposed source adapter is
+
+$$\boxed{L_T(z)=\frac{\Pi_N(s)-R_T(z,s)}{zs}}.$$
+
+This completion retains unborn products and both endpoint sums. It neither
+estimates $R_T$ nor identifies it with a paid comparison-energy residual.
+The previous native receipt for the source transform applies to its frozen
+recorded inputs; changed consumers require fresh verification. The
+new debt adapter remains unelaborated.
+
+## Next independent estimate
+
+The complete signed numerator, rather than the raw product alone, is the
+actual finite-window transform. A useful exact target is its vertical-line
+$L^2$ budget. For $\sigma>0$, set $z=\sigma+it$ and
+$s=\sigma+1/2+it$. For the actual hard window
+$f_T(u)=1_{[0,T]}(u)e^{-\sigma u}W(u)$, continuity of $W$ on compact
+physical windows gives $f_T\in L^1\cap L^2$. Its angular Fourier kernel
+is exactly $L_T(\sigma+it)$. Classical Plancherel with kernel $e^{-itu}$
+then gives the written identity
+
+$$
+\int_{\mathbb R}
+ \frac{|\Pi_N(\sigma+1/2+it)-R_T(\sigma+it,\sigma+1/2+it)|^2}
+      {(\sigma^2+t^2)((\sigma+1/2)^2+t^2)}\,dt
+ =2\pi\int_0^T e^{-2\sigma u}W(u)^2\,du.
+$$
+
+Pinned Mathlib's `MeasureTheory.Lp.norm_fourier_eq` supplies the normalized
+$L^2$ isometry. A native proof here must additionally construct the actual
+hard-window representative, connect its integral kernel to that isometry,
+and pay the angular change of variable. The concurrent
+`AngularWindowCertificate` stores these obligations as fields; it does not
+construct them. None of these new adapter steps has been proved in Lean.
+
+An independently established bound on the displayed left side, uniform in
+$T\ge0$ at each $\sigma>0$, would give the actual half-line weighted square
+integrability by monotone convergence, and feed the existing all-rate RH
+consumer. This is a reformulation of the remaining estimate, not a
+supplier. No such bound has been established. Neither the individual
+nonvanishing terms nor the finite product expansion determines the signed
+cancellation in this completed numerator.
+
+
+
+## Source and verification scope
+
+[Source](../../../../../GRWTSK/NumberTheory/Moebius/FiniteLaplaceSums.lean). Status: **written-argument**. [Credit and evidence limits](../../../../reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
