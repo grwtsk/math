@@ -1,0 +1,21 @@
+{
+  "mathematical_content": "Established raw and weighted Jacobi transfer, exact coordinate intertwining, integer recurrences and finite rational obstruction witnesses",
+  "local_addition": "Canonical interface and preservation-checked original consumer reuse",
+  "definitions": 9,
+  "source_theorems": 17,
+  "stored_equation_helpers": 8,
+  "separate_native_query_equations": 1,
+  "actual_original_consumer_roles": 1,
+  "actual_intrafamily_roles": 19,
+  "synthetic_wrappers": 3,
+  "direction": "R.A. Jacob Martone",
+  "assistance": "OpenAI Codex",
+  "historical_authoring_split": "UNKNOWN",
+  "license": "MIT",
+  "upstream": "Pinned Lean and Mathlib identities, authors and licenses retained",
+  "originality_claim": false,
+  "rh_proved": false,
+  "status": "CHECKED_PUBLIC_PROJECTION_OF_SCOPED_SOURCE_FORMAL_ADMISSION",
+  "independent_human_review": "NOT_RUN",
+  "whole_corpus_admission": "NOT_CLAIMED"
+}
