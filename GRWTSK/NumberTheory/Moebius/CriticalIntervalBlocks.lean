@@ -706,6 +706,23 @@ theorem criticalBoundary_of_prefixPowerBounds {CA CM α β : ℝ}
     linarith
   exact criticalBoundary_of_prefixSquareComponents hAs hMs
 
+/-- A single genuine Mertens power saving, at any exponent strictly between
+the square-root scale and `1`, pays both prefix-energy obligations and hence
+the completed critical vertical line.  This theorem is conditional: it does
+not assert the Mertens power bound. -/
+theorem criticalBoundary_of_mertensPowerSaving {C β : ℝ}
+    (hC : 0 ≤ C) (hβlower : 1 / 2 < β) (hβupper : β < 1)
+    (hM : ∀ n : ℕ, 1 ≤ n →
+      |pickupMertensPrefix n| ≤ C * (n : ℝ) ^ β) :
+    CriticalBoundaryVerticalLineUniform := by
+  apply criticalBoundary_of_prefixPowerBounds
+      (CA := C + C / (2 * (β - 1 / 2))) (CM := C)
+      (α := β - 1 / 2) (β := β)
+  · linarith
+  · exact hβupper
+  · exact pickupWeightedPrefix_le_of_mertensPowerBound hC hβlower hM
+  · exact hM
+
 /-- Any solution of the countable RH-equivalent reciprocal-line problem must,
 in particular, settle the explicit critical arithmetic block problem. -/
 theorem criticalBoundary_of_criticalReciprocal
@@ -729,5 +746,6 @@ end GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalIntervalMajorantSummable_of_prefixPowerSummable
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalBoundary_of_prefixSquareComponents
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalBoundary_of_prefixPowerBounds
+#print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalBoundary_of_mertensPowerSaving
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalIntervalBlockSum_eq_verticalLineMass
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalBoundary_iff_intervalBlockUniform
