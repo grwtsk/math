@@ -1,0 +1,215 @@
+# Read-only gate and newer mathematical route observation
+
+Reviewer: `/root/route_inspection`, 2026-10-11, resumed observation around20:10Z.
+Read updated canonical AGENTS.md and continuation plus recent journal records.
+Preserved all concurrent documentation, source, configuration, receipts,
+processes and schedules. No foreign scripts, compiler/native/shared checks,
+replay locks, source/config copies, process signals, or other-chat messages.
+Only this new ignored note was written. No root continuation edits.
+
+## Gate: no explicit CCC canonical/public/native release
+
+Directly read gate owner chat `01a1291b-6506-7d60-b9e2-7d437f1782af`, titled
+`Assess lean transfer completeness`, through read_thread, then inspected one
+compact wait_threads snapshot. The returned history includes the still-running
+turn `01a12924-a07e-78f2-8bd2-fbb1dd8f88de`; the page reported hasMore=false.
+Filtered the owner's actual outbound messages and relevant commentary. No
+explicit release of this CCC task's canonical/public/native restrictions was
+found after the prior16:10Z observation. A normal-tools release of a short OS
+quiet window is earlier and narrower, and grants no canonical/native release.
+
+The compact snapshot is revision311, cursor
+`48677030-400e-42ab-b944-7bf52c31c8b3:311`, active/inProgress.
+Its latest commentary is message
+`msg_09a24ce0fac9b962016acbed32b09c87d2b25266ed9054a5fc`:
+the documentation writer's three Python files changed again at13:10:07 local,
+and the hold stays in force until the owner explicitly declares the final
+generation and independent checks clear those exact hashes. No such release
+was observed in the inspected history or snapshot.
+
+The owner also completed a new preservation/quiescence request to monitor
+`01a12934-bdae-7ef0-9449-111b3644063b`, tool-call ID
+`exec-855d3c2b-b613-4d22-8198-4063f351fea2` (an earlier same request failed).
+It declares candidate `cache-revision-20261011T161616Z-a212446c`, seal
+`9a708dfa6f8bb63a3f0cc1232509a87fd47c06c44dd30e47164b181db4b33b39`,
+HELD/SUPERSEDED-BY-LIVE-DRIFT and never eligible for preparation/execution.
+Six changed enrolled script origins were explicitly identified. Later
+commentary also retains the hold for the larger documentation migration.
+The request's prospective new window authorizes designated owner preparation
+and metadata-only preflight, not native execution; native execution requires
+separate audit/contention gates. None releases this CCC task.
+
+The canonical continuation remains at the16:10:31Z checkpoint, phase
+NEW17_FROZEN_NATIVE_ACCEPTED_CONTACT_INDIVIDUAL_LAST_LABEL_STATIC_REVIEWED_UNCOMPILED_COORDINATION_HOLD,
+with prior revision302 and explicit_canonical_native_release=false.
+Updated AGENTS adds subject-organized mathematical documentation rules.
+No documentation checker or migration operation was run here.
+Hold remains in force; no release is inferred from elapsed time, no PID/lock,
+an intact seal, pure controls, another route's native run, or another chat's
+narrower normal-tools permission.
+
+## Newly inspected correction checkpoints67/68
+
+These are newer than the previously inventoried61--66 route. Checkpoint67
+finished16:06Z and is newly inspected rather than claimed to have occurred
+after16:10Z. Checkpoint68 finished16:23Z. Both explicitly say
+independent_acceptance=false; no theorem is adopted by this note.
+They report21 theorem roots, two definitions and28 owned body/transitive-axiom
+records, including five generated helpers, across two separate scopes.
+This sum is not a unified fresh dependency replay or adoption census.
+
+All paths in this section are relative to
+`/Users/think/Desktop/math/.local/research/ccc-rh-precision-20261009/chambers/`.
+
+| Artifact | SHA-256 |
+| --- | --- |
+| `checkpoint-67/receipt.json` | `cdc85fd0bc483a6f8122d44fb00adc54b05436fb2914b6a12d1c13cacf8f10a9` |
+| `density-half-prime-factor-67/source-receipt.json` | `3bc122b05933e16059aea166f3f9ec08f300f2d46a7daa8f934da3446762e93a` |
+| `density-half-prime-factor-67/final-source.lean` | `b5ba449b6803f679722a88705d1388d89628a720854eb44bcf0a50d439339ecd` |
+| `density-half-prime-factor-67/build-02-result.json` | `4814146674cb11ab4ed28605e61b9b566554d0561c864824b0b2028f44c44072` |
+| `density-half-prime-factor-67/fresh-audit-result.json` | `f20701fed182fd599ea88f439fb9b0d822b44a3759448864cd794fc509c3f21e` |
+| `checkpoint-68/receipt.json` | `00b5321dca320130eac33973b59018fe432b9ac27c39c98714dddd986f33022a` |
+| `density-half-moment-68/source-receipt.json` | `1ca1f6d7a7429c9f7ddac6f541056c9ee56426ca0c74c3e934c445f69ae27cf9` |
+| `density-half-moment-68/final-source.lean` | `946306c3ca455cdb35f1a7bc1dc8d229e535b5a7954231f756f0f41e06072f81` |
+| `density-half-moment-68/fresh-audit-result.json` | `f2c314d86d5d97d6daa130b8e5645d7eacbf292a8a521e2108feb5024ecdf343` |
+
+67 reports six local actual-gamma half-prime/factor theorems, six literal
+contracts and eight owned records. The real factor domain is x>=2; the actual
+prime/geometric tail domain includes p=2 and K=0 but excludes the p=1 pole.
+All prime powers and squareful correction outputs are retained. The literal
+root denominator is sqrt(p)^(k+1); other weight conventions require adapters.
+Reported build02/fresh audit use pinned Lean4.33/Mathlib, trust0 and fatal
+warnings, standard foundations only. Independent/public/full acceptance is
+explicitly absent.
+
+68 reports fifteen theorem roots, two definitions, seventeen literal
+contracts and twenty owned records from a fresh full-source audit. The exact
+actual gamma half-moment is summable and bounded by exp(4 Z_(3/2)), where
+Z_(3/2) is the complete positive summable three-half p-series. The positive
+finite-inventory argument pays summability before a global Euler limit;
+all powers and complete tails remain. The sharper written exp7 constant is
+NOT newly checked. Three preliminary canonical builds failed and there is no
+successful canonical importable olean; the corrected full source is reported
+checked in the audit only. No completed import consumer is claimed.
+
+Thus68 is a reported fresh source theorem check with an explicitly missing
+importable artifact, not a full successful canonical build. Neither67 nor68
+has independent mathematical acceptance. Complete excluded-prime h_d product,
+actual closed row return, harmonic aggregate/AR66 consumers, sharper constants,
+actual envelope rate and signed original budgets remain unpaid.
+
+## Newly inspected original prime-exit route cells87--92
+
+All cells explicitly report independent_acceptance=false and release_gate
+NOT_READY. Exact statement-source review/oracles and producer audit output
+are present, but are not independent theorem acceptance adopted by this task.
+Cells87--91 were already completed before this latest observation;92 completed
+around20:10Z. The six receipts report102 mathematical theorem statements,
+22 definitions,167 selected main transitive-axiom roots and32 consumer roots
+in separate private stages. These totals do not certify a fresh full source
+closure or original joint supplier.
+
+Paths in this section are relative to
+`/Users/think/Desktop/math/.local/research/riemann-hypothesis/`.
+
+| Cell | Receipt SHA-256 | Selected source SHA-256 | Reported scope |
+| --- | --- | --- | --- |
+| 0087 | `84555153d31143361207bd6f73f3b5589aeb396a7263b2fb70ecf436ea6784b3` | `72b682c2c60613a55f5bce20b6adcb1e91f87fce266239b6784d724d53cb80f2` | 18 theorems/6defs; genuine actual exit integral, two modes, residual and signed endpoint envelope for large exits k>=32. |
+| 0088 | `bfbf18a6419378dcd36fac6ba8129e863b2978a8f0dc16334a8d40699843436d` | `6828d9815712d84f97dd25d16b1d341a69a5d857300b51f269b3e27410fe3e9f` | 18 theorems/10defs; exhaustive original large/small exit row partition, complete signed row formulas retaining exact smallExitWork. |
+| 0089 | `feeec64b0264c814203dc3be8c6b3de15b8411fa1cf213ba96b45e1deaadb689` | `1e210544bf1b8a29c803adaa31e86dfdcafa0d8176cdbc23b83e0941fffe130d` | 18 theorems/3defs; original endpointWork=interiorWork+totalExitWork, whole source identity retaining origin and entire remaining inventory. |
+| 0090 | `353b6c939ec681c6ab12bf761ed1bde2d083138db523a3f8ce2d3c106d8b6ac0` | `7985c5d7cab942097ad7b4029f80593b2e0e6aae0e2f322d37e44269618ef562` | 13 theorems/2defs; generic enlarged log2 nonnegative original operator strip refuted at A=1,delta=1/2. |
+| 0091 | `6f1b669f31242901ece398e1c0df9292c35b49b2dfcdeb12ca610d8a9b005e68` | `414cd8d0f0a1374917be9846385fa9b0e92546584089be9b25bfcfffc681cf86` | 10 theorems/0defs; original candidate exclusion and necessary A^2>=2 for nonempty original prime row. |
+| 0092 | `080dd8e4d93ea3bfdfff1b4760b1dd1075a4e095fc2d069882d51ae9b7f96b1e` | `db054af662192e28944ecf9f664f0b94c2623d7e5cee5511f893bc06ec65159a` | 25 theorems/1def; actual floor-selected prime11 exit pointwise sign extension refuted. |
+
+The exact source paths, whose bytes matched these selected hashes, are:
+
+- `cell-0087/NumberTheory/PrimeSums/PrimeExitWorkV2.lean`.
+- `cell-0088/NumberTheory/PrimeSums/PrimeExitRowV3.lean`.
+- `cell-0089/NumberTheory/PrimeSums/PrimeIntervalDecompositionV2.lean`.
+- `cell-0090/Analysis/Convolution/NormalizedCorrelationSignV5.lean`.
+- `cell-0091/NumberTheory/PrimeSums/SmallExitCandidateMembershipV2.lean`.
+- `cell-0092/NumberTheory/PrimeSums/PrimeExitSignV4.lean`.
+
+92 reports the exact witness A=309/200, p=11, t=12/5-log11, with original
+U=2,N=21,V=10,exitIndex=1 and 0<t<log2. The original per-prime operator
+is strictly negative. Reported main33/consumer7 audit roots use only standard
+foundations under trust0/fatal warnings. Failed primitive/proof variants remain
+preserved and are not included as accepted inputs.
+
+| 92 binding | SHA-256 |
+| --- | --- |
+| `accepted-statement-source-review.json` | `1c00757bf50c8c2597eea64a64e6e0c619b4c4651cb58233f371b55e3228c3cf` |
+| `main-axiom-source-audit-v4.json` | `62cb7404c3161c4b52b24ae2b02be3b387d30323e3e0a759de74377deb94dee9` |
+| `consumer-axiom-source-audit-v4.json` | `b03f03da93fc294084d104000009d8ef2765d9d566c01498934f2745660dba51` |
+| `next-first-cofactor-signed-exit-certificate.json` | `c98062448d6c02f5cb0b054c45bca639ee4c732e03602d895f9f3fb45f378fec` |
+
+The statement-source review itself still says independent_acceptance=false.
+This reported counterexample concerns ONLY the optional all-exit pointwise
+nonnegative operator extension. It does not decide signed weighted exit work,
+refute the k>=32 envelope, prove a negative original supplier sector, refute the
+full joint supplier, or refute RH. It must not be silently widened to these.
+
+## New completed Abel handoff: independent STATIC review, uncompiled
+
+Paths below are under
+`/Users/think/Documents/ChatGPT/math 2/.local/mobius-response/`.
+
+| Artifact | SHA-256 |
+| --- | --- |
+| `abel-research-handoff-20261011T154836Z-77396faa603d/manifest.json` | `83afc4c37a3ee77128fd61f7a0be555d81ca1e24b4733e6225f95542e6d5fda9` |
+| `abel-research-handoff-20261011T154836Z-77396faa603d/receipt.json` | `0375502d268bd02bb5f332fe277ccd58176c97a057f3ee7a0d180d4bf8e6ad35` |
+| `abel-research-handoff-20261011T154836Z-77396faa603d/final-receipt.json` | `e00f5cfa10c48b0f5917961406e84ed014c4d02fdf9e251c8a2fc8110651a6e7` |
+| `abel-research-handoff-20261011T154836Z-77396faa603d/LiouvilleAbelWindowReturn.lean` | `c4bbbd700b5b98a4bfdfae308bc10a1acd8faf687ac9bd012a444625b9ff1d85` |
+| `abel-research-handoff-20261011T154836Z-77396faa603d/proof-gap-ledger.json` | `07dc8afe3ac7260c12b9f5c20c7aab915cdc7de3ffb83f77f976d926b5d8ff55` |
+| `abel-master-independent-review-20261011-pVJyv7/receipt.json` | `69d9bed56287650134f947fca2d9a431e394132cbe5b574044c095e31662ab5f` |
+| `abel-master-independent-review-20261011-pVJyv7/review.json` | `5a102dbcbdb3230e9a99003b127d8828a7b411b916d6f2232810cc232ca37f88` |
+| `abel-master-independent-review-20261011-pVJyv7/source-graph.json` | `8c0ef816828e81187813c3d9880e86935f4f03e8cae1240224700fed6baa0ab0` |
+| `sharp-variation-research-handoff-20261011T191333Z-5127ea211a12/canonical134-observation.json` | `9732110e2e52eeae9c971d16c4886cb4f528cd51212ddc905367a4477d024f1d` |
+
+The handoff has103 theorem attempts/22definitions in eight selected scripts,
+35 minimal-union sources. The master review is STATIC binding/graph/status
+review: no source graph/status defect identified, but no native execution,
+kernel checking, owned axiom audit or library admission. All scripts remain
+unelaborated. Its scripted original energy allowance is
+localEnergy(w,T)<=w*(5+4T)*Q(floor(expT)), T,w>=0,
+where Q(N)=sum(n=1..N)Lambda(n)^2/n^2 uses actual Liouville prefixes.
+Only Q(N)<=N is supplied, exponential in the logarithmic clock. The actual
+local signed prefix maximum and complete cross-band settlement remain open.
+The sharper variation constant2 remains a mathematical-only derivation, not
+a selected Lean dependency. Full original ordered source pairs are retained.
+
+The19:13Z sharp-variation observation is bounded metadata only: it says no
+actual terminal or independent terminal audit inspected and human_hold retained.
+It observes the now-superseded161616 pointer, not a released/native-accepted
+successor. The newest liouville-prefix-moment-frontier directory was empty at
+inspection; no new result or certification is inferred from its existence.
+
+## Useful next signed cell; adoption boundary
+
+No newly inspected result combines independent mathematical acceptance with
+exact native certification in a form adopted by this CCC task. Reported PASS
+and source/receipt hash matches remain observations only. Existing historical
+CCC/native receipts retain their exact earlier scope and are not rebound here.
+
+The92 next certificate is explicitly UNCHECKED. It proposes the original
+first-cofactor weighted-work identity
+actualExitWork(A,1,p)=(1-endpointCoefficient(A))*valueAtom(A,log p)/sqrt(p)
+for original row1 primes absent row2, followed by genuine shallow-overlap
+correlation positivity with exact original normalization. That is a meaningful
+signed component target while the optional pointwise sign extension remains
+refuted. Every arithmetic membership, floor/support condition, endpoint and
+derivative/FTC transport requires exact proof and independent review; none is
+adopted here. All exits k=2..31, pre-exit interior, origin, entire remaining
+inventory/covariance and original independent main/four jets remain separate.
+
+For the correction route, independent acceptance of67/68 would still leave
+complete h_d/closed-row/aggregate transport and the complete signed
+kappa*A*C_U-H_sf+D_sf budget unpaid. AR66's exp(5T/16) correction remains
+an upper cost, not actual growth or a no-go. No envelope rate is supplied.
+
+OriginalSupplierEstimate, WholePickupPoly, CrossPoly/EnergyPoly, pointwise
+amplitude return, strict negative/joint sectors, general transformed/renormalized
+native-versus-prescribed Gram comparison and stronger realization remain open.
+Full supplier/interior/covariance and unconditional RH/converse do not follow.
+Power-four zero extension is not C-infinity. Mathematics grants no
+authentication, permission or source rights, and this note grants no release.
