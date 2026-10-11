@@ -1,23 +1,17 @@
 /- Copyright (c) 2026 R.A. Jacob Martone. MIT.
 Human direction: R.A. Jacob Martone; OpenAI Codex formalization assistance.
 Classical implications; imported Mathlib contributions retain their authorship. -/
-import Mathlib.Analysis.Calculus.ContDiff.Deriv
-import Mathlib.Analysis.Calculus.MeanValue
-import Mathlib.Analysis.Calculus.SmoothSeries
-import Mathlib.Analysis.SpecialFunctions.Trigonometric.Deriv
-import Mathlib.Analysis.SpecificLimits.Normed
-import Mathlib.LinearAlgebra.Matrix.Trace
-import Mathlib.LinearAlgebra.Matrix.Notation
-import Mathlib.Tactic.NormNum
-import Mathlib.Tactic.Linarith
-import Mathlib.Tactic.FunProp
-import Mathlib.Analysis.Fourier.LpSpace
+import GRWTSK.Data.Sampling.Descriptions
+import GRWTSK.Analysis.Fourier.IntegerSeries
+import GRWTSK.Logic.FiniteSequences.PrefixCoverage
 import GRWTSK.LinearAlgebra.Schrodinger.SampledPotential
-
+import GRWTSK.Algebra.BigOperators.OrderedSquare
+import GRWTSK.Analysis.Fourier.Parseval
+import GRWTSK.Analysis.Asymptotics.PolynomialErrorBound
+import GRWTSK.Algebra.BigOperators.QuadraticCounterexample
 set_option autoImplicit false
 noncomputable section
 namespace GRWTSK.Analysis.Waveform
-open scoped BigOperators FourierTransform
 open MeasureTheory
 
 /-- Labels classify formula families; observational equality requires its own proof. -/
