@@ -1,0 +1,1008 @@
+{
+  "schema_version": 1,
+  "status": "SCOPED_SOURCE_CHECKS_PASSED",
+  "rh_proved": false,
+  "P04_witness": null,
+  "recording_scale_witness": null,
+  "negative_prefix_correlation": "KERNEL_CHECKED",
+  "uniform_supplier_obstruction": "PROSE_PNT_ARGUMENT_NOT_LEAN_REPLAYED",
+  "terminal_theorems": {
+    "pickupEnergyPoly_of_recordingScaleBound": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.RecordingScale",
+      "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergyPoly_of_recordingScaleBound",
+      "type": "\u2200 {C : \u211d} {r : \u2115}, 0 \u2264 C \u2192 RecordingScaleBound C r \u2192 PickupEnergyPoly"
+    },
+    "riemannHypothesis_of_recordingScaleBound": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.RecordingScale",
+      "name": "GRWTSK.RiemannHypothesis.CCC.riemannHypothesis_of_recordingScaleBound",
+      "type": "\u2200 {C : \u211d} {r : \u2115}, 0 \u2264 C \u2192 RecordingScaleBound C r \u2192 RiemannHypothesis"
+    },
+    "riemannHypothesis_of_prefix_reverberation": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PrimePrefix",
+      "name": "GRWTSK.RiemannHypothesis.CCC.riemannHypothesis_of_prefix_reverberation",
+      "type": "\u2200 {A B q : \u211d}, 0 \u2264 A \u2192 0 \u2264 B \u2192 0 \u2264 q \u2192 PrimePrefixReverberation A B q \u2192 RiemannHypothesis"
+    }
+  },
+  "arithmetic_frontier": {
+    "P04": "OPEN",
+    "recording_scale": "OPEN",
+    "uniform_prime_and_block_suppliers": "ANALYTICALLY_OBSTRUCTED_NOT_LEAN_FORMALIZED"
+  },
+  "source_sha256": {
+    "GRWTSK/RiemannHypothesis/CCC/PickupBudgets.lean": "a0735d6120754b4921c55346a5fb0203cb3586bd6f312289f83b0a76218cffbb",
+    "GRWTSK/RiemannHypothesis/CCC/PickupRegularity.lean": "663fd9e9d6fd6af327eeac76166ea40c9dc07c029b5822468533d80db8b4f9be",
+    "GRWTSK/RiemannHypothesis/CCC/PickupFiniteIdentity.lean": "4b4be0a5e4e2614ff81d192620170b5b47941e10e74f1965b5bbd0914ec24a51",
+    "GRWTSK/RiemannHypothesis/CCC/PrimeCascade.lean": "23995d93841e2ad1babd73a476dced219992c9a675396780ab6f675b56d458ce",
+    "GRWTSK/RiemannHypothesis/CCC/DiagonalAllowance.lean": "748100ebb0ba4440335668ecb96a079d869de82bb7ac2fb7ecb09ca089469a3c",
+    "GRWTSK/RiemannHypothesis/CCC/PickupDiagonalBound.lean": "e4b835ea2904d9494dd2b5252f1297ac76a924b153b94b99865471bd619155e8",
+    "GRWTSK/RiemannHypothesis/CCC/PickupLaplaceDefinition.lean": "900d196c65816d9217c05246e6fd5a847d5fe975baa1adb869907e394a9e6514",
+    "GRWTSK/RiemannHypothesis/CCC/PickupInitialTransform.lean": "52717097ba1ac20ef02efa7d744c413458026d9c3de8d35bb6bd9de833c14f38",
+    "GRWTSK/RiemannHypothesis/CCC/EnergyIntegrability.lean": "18a3aac5fcfb6844da96d34db5febc659f8c2694bd178ab187d324fbc9d6780b",
+    "GRWTSK/RiemannHypothesis/CCC/LaplaceAnalytic.lean": "9b36cbd99be50262b982974d665a0b226495665a5e509f7355ce66a2e08e2f10",
+    "GRWTSK/RiemannHypothesis/CCC/SignedPickupAnalytic.lean": "04f4c00bae21d3fde810919c80030f2be5a2bdac9836dec0c5ea0ed5ab9b81c6",
+    "GRWTSK/RiemannHypothesis/Definitions.lean": "107f357b8c04afc16e25b8fded6922782d2756959b42f080af839f4db58e9aa0",
+    "GRWTSK/RiemannHypothesis/ZeroSymmetry.lean": "d11ab9b34e31569a7d1441fb53bdb0abfce041c80e79cca4ebee46509be910bc",
+    "GRWTSK/RiemannHypothesis/CCC/RegularizedZeta.lean": "084fe442c91faee379c83ad8a7a6af1f4500bd5eb66bbc5f999b160106627af7",
+    "GRWTSK/RiemannHypothesis/CCC/EnergyRHReturn.lean": "62ffb37232e2b35e062f180bda8fe9f54369b98b431a2f97d0b30d539932efd0",
+    "GRWTSK/RiemannHypothesis/CCC/EnergyReturn.lean": "2116d2d7191ae28844ead58af1eb76e32a0272e6e4c92566d6d48bd36c163dac",
+    "GRWTSK/RiemannHypothesis/CCC/PrimeEnergy.lean": "b90708dab380d32ea80113abe91b199614950ec705624adee64c2f4614518c28",
+    "GRWTSK/RiemannHypothesis/CCC/PrimeBlocks.lean": "f827bb9786eb67236ea86ed9d9b46772063705f88719c9c9ffda33353489e857",
+    "GRWTSK/RiemannHypothesis/CCC/PrimeMass.lean": "f9c95be6dd39911e5acba786ca84baf89c51a9611632477673c44e20ead58cf8",
+    "GRWTSK/RiemannHypothesis/CCC/PrimeReverberation.lean": "0f693d7ec606cfa4b107c9bc61913d3787921e8690da6918815911bc3b03beb6",
+    "GRWTSK/RiemannHypothesis/CCC/RecordingScale.lean": "aa7444c5b2894baa4bc23bb65a83e6e6dee79ee72e738f3388e0aedc7953797a",
+    "GRWTSK/RiemannHypothesis/CCC/PrimePrefix.lean": "3ecdb9c81538c1d3db038677604e73ca9e57955441e017e1daec826a125cb0e7",
+    "GRWTSK/RiemannHypothesis/CCC/PrimeCorrelationObstruction.lean": "9e178242fca24e2c679b38451d6ee4f8f2788832b89b476fea63245eed670c04",
+    "checks/CCCRecordingScaleAudit.lean": "a7fdcad5430007291fe0d1618cabb18de98bbac406d5c15e5041c817cf8ec058",
+    "scripts/check_recording_scale.py": "52cfce04fb33e646bd2e5a677cfae1d99874a734959a758b923a117497e13462",
+    "lean-toolchain": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
+    "lakefile.toml": "a23f6d313f8458192328f09635ffef9078cb684374c2aac2743af541bf59b4e3",
+    "lake-manifest.json": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
+    "docs/ccc-recording-scale.md": "06b3affd5f506f2f89a77c23d54936ac8d566b98e73d95171400e5958965ad91",
+    "checks/recording-scale-controls/MissingScaleBound.lean": "0ab4975c22b084ad6d8fc8a5a913e205888979c3e590d378a75468f04bc54677",
+    "checks/recording-scale-controls/MissingPairCondition.lean": "723af976da1ba6a55e0bfba3cb65c3c95c578aee838bc374dce62bcb61239dd6",
+    "checks/recording-scale-controls/NonnegativePrefixCorrelation.lean": "d9015a50255a6f9cb03a3ffe5f391e10afd97a84a603f47ebd60113ab564621d"
+  },
+  "excluded_scratch": "Exploratory floating-point calculations are not proof inputs",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "dependency_revisions": {
+    "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "plausible": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+    "LeanSearchClient": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+    "importGraph": "16f02aa7642864af59f1ff0e384a015994db9118",
+    "proofwidgets": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957",
+    "aesop": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+    "Qq": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+    "batteries": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+    "Cli": "6130a47896ce867c6a4a55373441e59e565bad0f"
+  },
+  "dependency_scope": "Pinned public dependency objects; complete selected project closure freshly elaborated and exported at trust zero",
+  "declaration_count": 58,
+  "declarations": [
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeBlocks",
+      "name": "GRWTSK.RiemannHypothesis.CCC.cascade_insert_before_delay",
+      "type": "\u2200 {P : Finset \u2115},\n  (\u2200 p \u2208 P, Nat.Prime p) \u2192\n    \u2200 {p : \u2115}, Nat.Prime p \u2192 p \u2209 P \u2192 \u2200 {u : \u211d}, u \u2264 Real.log \u2191p \u2192 primeNoteCascade (insert p P) u = primeNoteCascade P u"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeBlocks",
+      "name": "GRWTSK.RiemannHypothesis.CCC.cascade_union_before_delays",
+      "type": "\u2200 {P B : Finset \u2115},\n  (\u2200 p \u2208 P, Nat.Prime p) \u2192\n    (\u2200 p \u2208 B, Nat.Prime p) \u2192\n      Disjoint P B \u2192 \u2200 {u : \u211d}, (\u2200 p \u2208 B, u \u2264 Real.log \u2191p) \u2192 primeNoteCascade (P \u222a B) u = primeNoteCascade P u"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeBlocks",
+      "name": "GRWTSK.RiemannHypothesis.CCC.primeBlockEcho.eq_1",
+      "type": "\u2200 (P B : Finset \u2115) (u : \u211d), primeBlockEcho P B u = \u2211 p \u2208 B, (\u221a\u2191p)\u207b\u00b9 * causalShift (Real.log \u2191p) (primeNoteCascade P) u"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeBlocks",
+      "name": "GRWTSK.RiemannHypothesis.CCC.primeBlockEcho",
+      "type": "Finset \u2115 \u2192 Finset \u2115 \u2192 \u211d \u2192 \u211d"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeBlocks",
+      "name": "GRWTSK.RiemannHypothesis.CCC.energy_after_causal_block",
+      "type": "\u2200 {P B : Finset \u2115},\n  (\u2200 p \u2208 P, Nat.Prime p) \u2192\n    (\u2200 p \u2208 B, Nat.Prime p) \u2192\n      Disjoint P B \u2192\n        \u2200 {T : \u211d},\n          0 \u2264 T \u2192\n            (\u2200 p \u2208 B, \u2200 q \u2208 B, p \u2260 q \u2192 T \u2264 Real.log \u2191p + Real.log \u2191q) \u2192\n              noteEnergy (primeNoteCascade (P \u222a B)) T =\n                noteEnergy (primeNoteCascade P) T + noteEnergy (primeBlockEcho P B) T -\n                  2 * \u222b (u : \u211d) in 0..T, primeNoteCascade P u * primeBlockEcho P B u"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeBlocks",
+      "name": "GRWTSK.RiemannHypothesis.CCC.cascade_eq_zero_of_nonpos",
+      "type": "\u2200 {P : Finset \u2115}, (\u2200 p \u2208 P, Nat.Prime p) \u2192 \u2200 {u : \u211d}, u \u2264 0 \u2192 primeNoteCascade P u = 0"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeBlocks",
+      "name": "GRWTSK.RiemannHypothesis.CCC.causal_block_condition_of_half_horizon",
+      "type": "\u2200 {B : Finset \u2115} {T : \u211d}, (\u2200 p \u2208 B, T / 2 \u2264 Real.log \u2191p) \u2192 \u2200 p \u2208 B, \u2200 q \u2208 B, p \u2260 q \u2192 T \u2264 Real.log \u2191p + Real.log \u2191q"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeBlocks",
+      "name": "GRWTSK.RiemannHypothesis.CCC.cascade_union_eq_sub_echo",
+      "type": "\u2200 {P B : Finset \u2115},\n  (\u2200 p \u2208 P, Nat.Prime p) \u2192\n    (\u2200 p \u2208 B, Nat.Prime p) \u2192\n      Disjoint P B \u2192\n        \u2200 {T u : \u211d},\n          u \u2264 T \u2192\n            (\u2200 p \u2208 B, \u2200 q \u2208 B, p \u2260 q \u2192 T \u2264 Real.log \u2191p + Real.log \u2191q) \u2192\n              primeNoteCascade (P \u222a B) u = primeNoteCascade P u - primeBlockEcho P B u"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeBlocks",
+      "name": "GRWTSK.RiemannHypothesis.CCC.primeBlockEcho_continuous",
+      "type": "\u2200 {P B : Finset \u2115}, (\u2200 p \u2208 P, Nat.Prime p) \u2192 Continuous (primeBlockEcho P B)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "module": "GRWTSK.RiemannHypothesis.CCC.RecordingScale",
+      "name": "GRWTSK.RiemannHypothesis.CCC.recordingEcho",
+      "type": "\u211d \u2192 \u211d \u2192 \u211d"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.RecordingScale",
+      "name": "GRWTSK.RiemannHypothesis.CCC.recordingPrimeBlock_union",
+      "type": "\u2200 {T : \u211d}, 0 \u2264 T \u2192 pickupPrimes T \u222a recordingPrimeBlock T = pickupPrimes (2 * T)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.RecordingScale",
+      "name": "GRWTSK.RiemannHypothesis.CCC.riemannHypothesis_of_recordingScaleBound",
+      "type": "\u2200 {C : \u211d} {r : \u2115}, 0 \u2264 C \u2192 RecordingScaleBound C r \u2192 RiemannHypothesis"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.RecordingScale",
+      "name": "GRWTSK.RiemannHypothesis.CCC.recordingPrimeBlock_delay",
+      "type": "\u2200 {T : \u211d} {p : \u2115}, p \u2208 recordingPrimeBlock T \u2192 T < Real.log \u2191p"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.RecordingScale",
+      "name": "GRWTSK.RiemannHypothesis.CCC.recordingScale_compensated",
+      "type": "\u2200 {C : \u211d} {r : \u2115},\n  RecordingScaleBound C r \u2192\n    \u2200 {T : \u211d}, 1 \u2264 T \u2192 pickupEnergy (2 * T) + C * (2 * T) ^ r \u2264 2 ^ (r + 1) * (pickupEnergy T + C * T ^ r)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.RecordingScale",
+      "name": "_private.GRWTSK.RiemannHypothesis.CCC.RecordingScale.0.GRWTSK.RiemannHypothesis.CCC.recordingScale_dyadic",
+      "type": "\u2200 {C : \u211d} {r : \u2115},\n  RecordingScaleBound C r \u2192 \u2200 (n : \u2115), pickupEnergy (2 ^ n) + C * (2 ^ n) ^ r \u2264 (pickupEnergy 1 + C) * (2 ^ n) ^ (r + 1)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.RecordingScale",
+      "name": "GRWTSK.RiemannHypothesis.CCC.exists_recordingScaleBound_iff_p04",
+      "type": "(\u2203 C r, 0 \u2264 C \u2227 RecordingScaleBound C r) \u2194 PickupCrossPoly"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.RecordingScale",
+      "name": "GRWTSK.RiemannHypothesis.CCC.recordingPrimeBlock_primes",
+      "type": "\u2200 (T : \u211d), \u2200 p \u2208 recordingPrimeBlock T, Nat.Prime p"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.RecordingScale",
+      "name": "GRWTSK.RiemannHypothesis.CCC.recordingEcho_eq_actual",
+      "type": "\u2200 {T u : \u211d},\n  u \u2264 2 * T \u2192 recordingEcho T u = \u2211 p \u2208 recordingPrimeBlock T, (\u221a\u2191p)\u207b\u00b9 * causalShift (Real.log \u2191p) wholePickup u"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "module": "GRWTSK.RiemannHypothesis.CCC.RecordingScale",
+      "name": "GRWTSK.RiemannHypothesis.CCC.recordingPrimeBlock",
+      "type": "\u211d \u2192 Finset \u2115"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.RecordingScale",
+      "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergy_double_eq",
+      "type": "\u2200 {T : \u211d}, 0 \u2264 T \u2192 pickupEnergy (2 * T) = pickupEnergy T + recordingInnovation T"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.RecordingScale",
+      "name": "GRWTSK.RiemannHypothesis.CCC.exists_recordingScaleBound_iff_energyPoly",
+      "type": "(\u2203 C r, 0 \u2264 C \u2227 RecordingScaleBound C r) \u2194 PickupEnergyPoly"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.RecordingScale",
+      "name": "GRWTSK.RiemannHypothesis.CCC.pickup_eq_recording_core_sub_echo",
+      "type": "\u2200 {T u : \u211d}, 0 \u2264 u \u2192 u \u2264 2 * T \u2192 0 \u2264 T \u2192 wholePickup u = primeNoteCascade (pickupPrimes T) u - recordingEcho T u"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.RecordingScale",
+      "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergyPoly_of_recordingScaleBound",
+      "type": "\u2200 {C : \u211d} {r : \u2115}, 0 \u2264 C \u2192 RecordingScaleBound C r \u2192 PickupEnergyPoly"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.RecordingScale",
+      "name": "GRWTSK.RiemannHypothesis.CCC.recordingPrimeBlock._proof_1",
+      "type": "(1 + 1).AtLeastTwo"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.RecordingScale",
+      "name": "GRWTSK.RiemannHypothesis.CCC.recordingInnovation_nonneg",
+      "type": "\u2200 {T : \u211d}, 0 \u2264 T \u2192 0 \u2264 recordingInnovation T"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "module": "GRWTSK.RiemannHypothesis.CCC.RecordingScale",
+      "name": "GRWTSK.RiemannHypothesis.CCC.RecordingScaleBound",
+      "type": "\u211d \u2192 \u2115 \u2192 Prop"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.RecordingScale",
+      "name": "GRWTSK.RiemannHypothesis.CCC.pickupPrimes_mono",
+      "type": "Monotone pickupPrimes"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "module": "GRWTSK.RiemannHypothesis.CCC.RecordingScale",
+      "name": "GRWTSK.RiemannHypothesis.CCC.recordingInnovation",
+      "type": "\u211d \u2192 \u211d"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PrimePrefix",
+      "name": "GRWTSK.RiemannHypothesis.CCC.PrimeReverberation.prefix",
+      "type": "\u2200 {A B q : \u211d}, PrimeReverberation A B q \u2192 PrimePrefixReverberation A B q"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PrimePrefix",
+      "name": "GRWTSK.RiemannHypothesis.CCC.p04_of_prefix_reverberation",
+      "type": "\u2200 {A B q : \u211d}, 0 \u2264 A \u2192 0 \u2264 B \u2192 0 \u2264 q \u2192 PrimePrefixReverberation A B q \u2192 PickupCrossPoly"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PrimePrefix",
+      "name": "GRWTSK.RiemannHypothesis.CCC.primePrefix_succ",
+      "type": "\u2200 (n : \u2115), primePrefix (n + 1) = if Nat.Prime n then insert n (primePrefix n) else primePrefix n"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PrimePrefix",
+      "name": "GRWTSK.RiemannHypothesis.CCC.pickupPrimes_eq_primePrefix._simp_1_2",
+      "type": "\u2200 {\u03b1 : Type u_1} {p : \u03b1 \u2192 Prop} [inst : DecidablePred p] {s : Finset \u03b1} {a : \u03b1}, (a \u2208 Finset.filter p s) = (a \u2208 s \u2227 p a)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PrimePrefix",
+      "name": "GRWTSK.RiemannHypothesis.CCC.pickupPrimes_eq_primePrefix._simp_1_4",
+      "type": "\u2200 {n m : \u2115}, (m \u2208 Finset.range n) = (m < n)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PrimePrefix",
+      "name": "GRWTSK.RiemannHypothesis.CCC.pickupPrimes_eq_primePrefix",
+      "type": "\u2200 (T : \u211d), pickupPrimes T = primePrefix (\u230aReal.exp T\u230b\u208a + 1)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PrimePrefix",
+      "name": "GRWTSK.RiemannHypothesis.CCC.riemannHypothesis_of_prefix_reverberation",
+      "type": "\u2200 {A B q : \u211d}, 0 \u2264 A \u2192 0 \u2264 B \u2192 0 \u2264 q \u2192 PrimePrefixReverberation A B q \u2192 RiemannHypothesis"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PrimePrefix",
+      "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergyPoly_of_prefix_reverberation",
+      "type": "\u2200 {A B q : \u211d}, 0 \u2264 A \u2192 0 \u2264 B \u2192 0 \u2264 q \u2192 PrimePrefixReverberation A B q \u2192 PickupEnergyPoly"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PrimePrefix",
+      "name": "GRWTSK.RiemannHypothesis.CCC.PrimePrefixReverberation",
+      "type": "\u211d \u2192 \u211d \u2192 \u211d \u2192 Prop"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PrimePrefix",
+      "name": "GRWTSK.RiemannHypothesis.CCC.primePrefix",
+      "type": "\u2115 \u2192 Finset \u2115"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PrimePrefix",
+      "name": "_private.GRWTSK.RiemannHypothesis.CCC.PrimePrefix.0.GRWTSK.RiemannHypothesis.CCC.prefix_compensated_bound",
+      "type": "\u2200 {C q T : \u211d},\n  0 \u2264 T \u2192\n    (\u2200 (p : \u2115),\n        Nat.Prime p \u2192\n          noteEnergy (primeNoteCascade (primePrefix (p + 1))) T + (1 + T) ^ q \u2264\n            Real.exp (C / \u2191p) * (noteEnergy (primeNoteCascade (primePrefix p)) T + (1 + T) ^ q)) \u2192\n      \u2200 (n : \u2115),\n        noteEnergy (primeNoteCascade (primePrefix n)) T + (1 + T) ^ q \u2264\n          Real.exp (C * harmonicPrimeMass (primePrefix n)) * (4 * T + (1 + T) ^ q)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PrimePrefix",
+      "name": "GRWTSK.RiemannHypothesis.CCC.primePrefix_primes",
+      "type": "\u2200 (n p : \u2115), p \u2208 primePrefix n \u2192 Nat.Prime p"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PrimePrefix",
+      "name": "GRWTSK.RiemannHypothesis.CCC.pickupPrimes_eq_primePrefix._simp_1_3",
+      "type": "\u2200 {\u03b1 : Type u_1} [inst : Preorder \u03b1] [inst_1 : LocallyFiniteOrder \u03b1] {a b x : \u03b1}, (x \u2208 Finset.Icc a b) = (a \u2264 x \u2227 x \u2264 b)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PrimePrefix",
+      "name": "GRWTSK.RiemannHypothesis.CCC.pickupPrimes_eq_primePrefix._proof_1_5",
+      "type": "\u2200 (T : \u211d), \u2200 p \u2264 \u230aReal.exp T\u230b\u208a, \u00acp < \u230aReal.exp T\u230b\u208a + 1 \u2192 False"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PrimePrefix",
+      "name": "GRWTSK.RiemannHypothesis.CCC.not_mem_primePrefix",
+      "type": "\u2200 (n : \u2115), n \u2209 primePrefix n"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PrimePrefix",
+      "name": "GRWTSK.RiemannHypothesis.CCC.pickupPrimes_eq_primePrefix._proof_1_6",
+      "type": "\u2200 (T : \u211d), \u2200 p < \u230aReal.exp T\u230b\u208a + 1, \u00acp \u2264 \u230aReal.exp T\u230b\u208a \u2192 False"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PrimePrefix",
+      "name": "GRWTSK.RiemannHypothesis.CCC.pickup_eq_prime_prefix",
+      "type": "\u2200 {u T : \u211d}, 0 \u2264 u \u2192 u \u2264 T \u2192 wholePickup u = primeNoteCascade (primePrefix (\u230aReal.exp T\u230b\u208a + 1)) u"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PrimePrefix",
+      "name": "_private.GRWTSK.RiemannHypothesis.CCC.PrimePrefix.0.GRWTSK.RiemannHypothesis.CCC.pickup_poly_of_prefix_step",
+      "type": "\u2200 {C q : \u211d},\n  0 \u2264 C \u2192\n    0 \u2264 q \u2192\n      (\u2200 (p : \u2115),\n          Nat.Prime p \u2192\n            \u2200 (T : \u211d),\n              0 \u2264 T \u2192\n                noteEnergy (primeNoteCascade (primePrefix (p + 1))) T + (1 + T) ^ q \u2264\n                  Real.exp (C / \u2191p) * (noteEnergy (primeNoteCascade (primePrefix p)) T + (1 + T) ^ q)) \u2192\n        PickupEnergyPoly"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PrimePrefix",
+      "name": "GRWTSK.RiemannHypothesis.CCC.primePrefix.eq_1",
+      "type": "\u2200 (n : \u2115), primePrefix n = Finset.filter Nat.Prime (Finset.range n)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeCorrelationObstruction",
+      "name": "_private.GRWTSK.RiemannHypothesis.CCC.PrimeCorrelationObstruction.0.GRWTSK.RiemannHypothesis.CCC.source11_radical_bound",
+      "type": "1 - (\u221a2)\u207b\u00b9 - (\u221a3)\u207b\u00b9 - (\u221a5)\u207b\u00b9 + (\u221a6)\u207b\u00b9 - (\u221a7)\u207b\u00b9 + (\u221a10)\u207b\u00b9 < -(1 / 3)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeCorrelationObstruction",
+      "name": "GRWTSK.RiemannHypothesis.CCC.primePrefix_eleven",
+      "type": "primePrefix 11 = {2, 3, 5, 7}"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeCorrelationObstruction",
+      "name": "_private.GRWTSK.RiemannHypothesis.CCC.PrimeCorrelationObstruction.0.GRWTSK.RiemannHypothesis.CCC.source11_cell",
+      "type": "\u2200 {u : \u211d},\n  Real.log 11 \u2264 u \u2192\n    u \u2264 Real.log 12 \u2192\n      primeNoteCascade {2, 3, 5, 7} u =\n        2 * (1 - (\u221a2)\u207b\u00b9 - (\u221a3)\u207b\u00b9 - (\u221a5)\u207b\u00b9 + (\u221a6)\u207b\u00b9 - (\u221a7)\u207b\u00b9 + (\u221a10)\u207b\u00b9 + Real.exp (-u / 2))"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeCorrelationObstruction",
+      "name": "_private.GRWTSK.RiemannHypothesis.CCC.PrimeCorrelationObstruction.0.GRWTSK.RiemannHypothesis.CCC.source11_shift_positive",
+      "type": "\u2200 {u : \u211d}, Real.log 11 < u \u2192 u \u2264 Real.log 12 \u2192 0 < causalShift (Real.log 11) (primeNoteCascade {2, 3, 5, 7}) u"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeCorrelationObstruction",
+      "name": "_private.GRWTSK.RiemannHypothesis.CCC.PrimeCorrelationObstruction.0.GRWTSK.RiemannHypothesis.CCC.source11_primes",
+      "type": "\u2200 p \u2208 {2, 3, 5, 7}, Nat.Prime p"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeCorrelationObstruction",
+      "name": "_private.GRWTSK.RiemannHypothesis.CCC.PrimeCorrelationObstruction.0.GRWTSK.RiemannHypothesis.CCC.source11_primes._simp_1_2",
+      "type": "\u2200 {\u03b1 : Type u_1} {a b : \u03b1}, (b \u2208 {a}) = (b = a)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeCorrelationObstruction",
+      "name": "GRWTSK.RiemannHypothesis.CCC.primePrefix_eleven_negative_correlation",
+      "type": "noteCorrelation (primeNoteCascade (primePrefix 11)) (Real.log 11) (Real.log 12) < 0"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeCorrelationObstruction",
+      "name": "_private.GRWTSK.RiemannHypothesis.CCC.PrimeCorrelationObstruction.0.GRWTSK.RiemannHypothesis.CCC.source11_cell._proof_1_1",
+      "type": "\u2200 (n : \u2115), 13 \u2264 n \u2192 \u00ac12 < n \u2192 False"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeCorrelationObstruction",
+      "name": "GRWTSK.RiemannHypothesis.CCC.source11_negative_on_cell",
+      "type": "\u2200 {u : \u211d}, Real.log 11 \u2264 u \u2192 u \u2264 Real.log 12 \u2192 primeNoteCascade {2, 3, 5, 7} u < 0"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeCorrelationObstruction",
+      "name": "_private.GRWTSK.RiemannHypothesis.CCC.PrimeCorrelationObstruction.0.GRWTSK.RiemannHypothesis.CCC.source11_primes._simp_1_1",
+      "type": "\u2200 {\u03b1 : Type u_1} [inst : DecidableEq \u03b1] {s : Finset \u03b1} {a b : \u03b1}, (a \u2208 insert b s) = (a = b \u2228 a \u2208 s)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeCorrelationObstruction",
+      "name": "GRWTSK.RiemannHypothesis.CCC.not_all_prefix_correlations_nonnegative",
+      "type": "\u00ac\u2200 (p : \u2115), Nat.Prime p \u2192 \u2200 (T : \u211d), 0 \u2264 T \u2192 0 \u2264 noteCorrelation (primeNoteCascade (primePrefix p)) (Real.log \u2191p) T"
+    }
+  ],
+  "checks": [
+    {
+      "path": "GRWTSK/RiemannHypothesis/CCC/PickupBudgets.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 11.642868292,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "GRWTSK/RiemannHypothesis/CCC/PickupRegularity.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 9.624561624999998,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "GRWTSK/RiemannHypothesis/CCC/PickupFiniteIdentity.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 9.689063083999997,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "GRWTSK/RiemannHypothesis/CCC/PrimeCascade.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 13.989554833999996,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "GRWTSK/RiemannHypothesis/CCC/DiagonalAllowance.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 14.590689292,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "GRWTSK/RiemannHypothesis/CCC/PickupDiagonalBound.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 30.972133084000006,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "GRWTSK/RiemannHypothesis/CCC/PickupLaplaceDefinition.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 17.044502416,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "GRWTSK/RiemannHypothesis/CCC/PickupInitialTransform.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 30.699881500000018,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "GRWTSK/RiemannHypothesis/CCC/EnergyIntegrability.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 19.881413874999993,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "GRWTSK/RiemannHypothesis/CCC/LaplaceAnalytic.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 32.40175583300001,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "GRWTSK/RiemannHypothesis/CCC/SignedPickupAnalytic.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 21.04501474999998,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "GRWTSK/RiemannHypothesis/Definitions.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 13.972612666999993,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "GRWTSK/RiemannHypothesis/ZeroSymmetry.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 21.978559375000003,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "GRWTSK/RiemannHypothesis/CCC/RegularizedZeta.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 14.01753612500002,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "GRWTSK/RiemannHypothesis/CCC/EnergyRHReturn.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 11.30419387500001,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "GRWTSK/RiemannHypothesis/CCC/EnergyReturn.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 10.419613083999991,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "GRWTSK/RiemannHypothesis/CCC/PrimeEnergy.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 17.578955000000008,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "GRWTSK/RiemannHypothesis/CCC/PrimeBlocks.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 13.111078082999995,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "GRWTSK/RiemannHypothesis/CCC/PrimeMass.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 13.448478749999992,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "GRWTSK/RiemannHypothesis/CCC/PrimeReverberation.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 36.38696712500001,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "GRWTSK/RiemannHypothesis/CCC/RecordingScale.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 24.54138291700002,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "GRWTSK/RiemannHypothesis/CCC/PrimePrefix.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 17.322733167000024,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "GRWTSK/RiemannHypothesis/CCC/PrimeCorrelationObstruction.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 12.772030332999975,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "checks/CCCRecordingScaleAudit.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 6.882636666999986,
+      "output_sha256": "8aa807e50f1282cb136c3e7f5fc38fe1ca186485b4dc9d82b05f12e4d6fa5e87",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "checks/recording-scale-controls/MissingScaleBound.lean",
+      "expected_success": false,
+      "actual_success": false,
+      "exit_code": 1,
+      "seconds": 5.643320458000005,
+      "output_sha256": "09abf2f8c84e8a7c0a22f02f114715c5bdc358d7aa7de894452432c9146d1ca0",
+      "expected_error_fragment": "Type mismatch",
+      "expected_error_matched": true
+    },
+    {
+      "path": "checks/recording-scale-controls/MissingPairCondition.lean",
+      "expected_success": false,
+      "actual_success": false,
+      "exit_code": 1,
+      "seconds": 5.4723209169999905,
+      "output_sha256": "7707b4e954c113d7a13eea85e45fb9dacde2a4d6c61e7fd9aa705287b98a3f29",
+      "expected_error_fragment": "Type mismatch",
+      "expected_error_matched": true
+    },
+    {
+      "path": "checks/recording-scale-controls/NonnegativePrefixCorrelation.lean",
+      "expected_success": false,
+      "actual_success": false,
+      "exit_code": 1,
+      "seconds": 5.287384292000013,
+      "output_sha256": "5a1b3c243dc9332c4db156544f407ae1352e11b3d7de25a63a41e80c2273ffa2",
+      "expected_error_fragment": "linarith failed",
+      "expected_error_matched": true
+    }
+  ],
+  "acceptance": "Checked exact and conditional mathematical source; no independent human review or open arithmetic supplier"
+}

@@ -20,3 +20,6 @@ import GRWTSK.RiemannHypothesis.InferenceGuards
 import GRWTSK.LinearAlgebra.SchrodingerTransfer
 
 import GRWTSK.RiemannHypothesis.CCC.PrimeReverberation
+
+import GRWTSK.RiemannHypothesis.CCC.RecordingScale
+import GRWTSK.RiemannHypothesis.CCC.PrimeCorrelationObstruction

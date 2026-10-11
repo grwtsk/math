@@ -40,8 +40,8 @@
   },
   "correction": "Explicit causal recording window; source negative-time support explains why its oriented integral also vanishes before note birth",
   "frontier": {
-    "prime_reverberation": "OPEN",
-    "block_reverberation": "OPEN",
+    "prime_reverberation": "ANALYTICALLY_OBSTRUCTED_NOT_LEAN_FORMALIZED",
+    "block_reverberation": "ANALYTICALLY_OBSTRUCTED_NOT_LEAN_FORMALIZED",
     "P04": "OPEN",
     "Kakeya_adapter": "OPEN",
     "almost_Mathieu_identification": "OPEN"
@@ -53,5 +53,10 @@
     "GRWTSK/RiemannHypothesis/CCC/PrimeEnergy.lean": "b90708dab380d32ea80113abe91b199614950ec705624adee64c2f4614518c28",
     "GRWTSK/RiemannHypothesis/CCC/PrimeMass.lean": "f9c95be6dd39911e5acba786ca84baf89c51a9611632477673c44e20ead58cf8",
     "GRWTSK/RiemannHypothesis/CCC/PrimeReverberation.lean": "0f693d7ec606cfa4b107c9bc61913d3787921e8690da6918815911bc3b03beb6"
+  },
+  "research_update": {
+    "document": "docs/ccc-recording-scale.md",
+    "uniform_suppliers": "ANALYTICALLY_OBSTRUCTED_NOT_LEAN_FORMALIZED",
+    "recording_scale": "OPEN"
   }
 }
