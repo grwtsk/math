@@ -325,6 +325,10 @@ where $M(e^u)$ is the actual real-floor Mertens prefix used by the pickup.
 This exact bridge introduces no cancellation estimate. It isolates the next
 analytic task: propagate a genuine bound on $M$ through the integral strongly
 enough to pay the weighted-prefix square series.
+The first adapter is now checked: a natural-prefix hypothesis
+$|M_n|\le Cn^\beta$ with $C,\beta\ge0$ implies the exact real-floor envelope
+$|M(e^u)|\le Ce^{\beta u}$ for every $u\ge0$. The hypothesis itself remains
+unproved.
 
 The actual omitted function is
 
