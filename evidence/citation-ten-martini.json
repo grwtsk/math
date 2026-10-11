@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "status": "LOCAL_FREE_IDS_AND_REPEATED_BLOCK_COUNT_CANDIDATE",
+  "attribution": {
+    "human_direction": "grwtsk contributors",
+    "research_and_formalization_assistance": "OpenAI Codex",
+    "mathematical_originality_claim": false,
+    "upstream_licenses": "Lean and Mathlib authors and licenses retained"
+  },
+  "sources": [
+    {
+      "id": "arXiv:2402.16703v2",
+      "authors": [
+        "Ram Band",
+        "Siegfried Beckus",
+        "Raphael Loewy"
+      ],
+      "title": "The Dry Ten Martini Problem for Sturmian Hamiltonians",
+      "url": "https://arxiv.org/abs/2402.16703v2",
+      "version_date": "2026-07-09",
+      "attachment_sha256": "22104f2936ec7bbf261fcea06affb49635d15e18a09f02a468865383ddbe97e7",
+      "passages": [
+        "equation (1.1)",
+        "equation (1.2)",
+        "Theorem 1.1",
+        "Propositions 1.2 and 1.3",
+        "Definition 1.4",
+        "Theorems 1.8 and 1.10",
+        "Lemma 4.4",
+        "Appendix I"
+      ],
+      "formal_use": "literal scalar potential and finite Dirichlet restriction with inclusive counts and multiplicities; elementary finite count comparison, complete free sine diagonalization and actual free count limit proved locally; target nonzero-coupling count-limit and endpoint-label transport retain explicit premises; finite defect count bound and literal adjacent-volume Dirichlet decomposition proved locally, independently of the paper tree argument"
+    },
+    {
+      "id": "arXiv:2112.03216v2",
+      "authors": [
+        "Christopher Cedzich",
+        "Jake Fillman",
+        "Darren C. Ong"
+      ],
+      "title": "Almost Everything About the Unitary Almost Mathieu Operator",
+      "url": "https://arxiv.org/abs/2112.03216v2",
+      "version_date": "2023-07-21",
+      "attachment_sha256": "73ed05f83c23b21f319faf5b1b1c63dd7ddc4920a150fc399972f8ea4847559b",
+      "passages": [
+        "Section 1",
+        "equations (2.5) and (2.6)",
+        "Theorem 2.2(d,g,h)"
+      ],
+      "formal_use": "research comparison only; no unitary/self-adjoint model identification"
+    },
+    {
+      "id": "arXiv:0810.2965v1",
+      "authors": [
+        "Artur Avila"
+      ],
+      "title": "The absolutely continuous spectrum of the almost Mathieu operator",
+      "url": "https://arxiv.org/abs/0810.2965v1",
+      "attachment_sha256": "1683a83ba96820296a56b2b770f13fd224b9f1a05d6f6fe1d10f9bf1622cd66e",
+      "passages": [
+        "equation (1.1)",
+        "Main Theorem"
+      ],
+      "formal_use": "research comparison only; spectral type distinguished from Cantor topology"
+    },
+    {
+      "id": "Avila-Jitomirskaya-TMP",
+      "url": "https://webusers.imj-prg.fr/~artur.avila/aj.pdf",
+      "passages": [
+        "Main Theorem"
+      ],
+      "formal_use": "research reference only"
+    },
+    {
+      "id": "arXiv:math/0107061v2",
+      "url": "https://arxiv.org/abs/math/0107061v2",
+      "formal_use": "noncritical AMO spectral measure reference only"
+    },
+    {
+      "id": "Avila-Krikorian-2006",
+      "url": "https://annals.math.princeton.edu/wp-content/uploads/annals-v164-n3-p04.pdf",
+      "passages": [
+        "Theorem 1.5"
+      ],
+      "normalization": "paper potential lambda*cos; synopsis potential 2*lambda*cos",
+      "formal_use": "critical AMO spectral measure reference only"
+    },
+    {
+      "id": "arXiv:2309.04351v1",
+      "url": "https://arxiv.org/abs/2309.04351",
+      "formal_use": "Sturmian proof-strategy announcement reference only"
+    },
+    {
+      "id": "arXiv:2306.16254v2",
+      "url": "https://arxiv.org/abs/2306.16254v2",
+      "formal_use": "noncritical AMO gap-opening reference only"
+    },
+    {
+      "id": "arXiv:2112.06869v2",
+      "authors": [
+        "Dan S. Borgnia",
+        "Matthew Faust"
+      ],
+      "url": "https://arxiv.org/html/2112.06869v2",
+      "version_date": "2026-09-08",
+      "status": "REVISED_PREPRINT_SOURCE_CLAIM_NOT_INDEPENDENTLY_AUDITED",
+      "formal_use": "research reference only; no criticality theorem imported",
+      "source_ai_acknowledgment": "ChatGPT assistance for organization, statement refinement, appendix counterexample and figures"
+    }
+  ],
+  "local_source_sha256": {
+    "GRWTSK/Spectral/GapTransport.lean": "058f1fc96e8badc39cf8178e1c30680199bbf3870ea67d69d5eb16c5e6b8e4ec",
+    "GRWTSK/LinearAlgebra/SchrodingerTransfer.lean": "25f93a03bb8e1b5df2f73c782160ed9f356f592c6cca4e56c92cde7fd974969d",
+    "GRWTSK/LinearAlgebra/Sturmian.lean": "15528db5caae13d550eeabc64624f182af46a7e01c7e4dbf5a81f9604d8e6359",
+    "GRWTSK/Spectral/MatrixCountComparison.lean": "eed27fedd6056292ce90a075907568852df7fb47d6d621775a44d6888f10b1b7",
+    "GRWTSK/Spectral/SturmianFiniteVolume.lean": "3b072a5c92f83d8fe20dea794ebc3b185d2166c5c55a8355ca1210049776a45d",
+    "GRWTSK/Spectral/FreeDirichletSpectrum.lean": "363dc89065857454bf985848a16475040fe5c67e4a0ee3d1a7b027902c0d01cf",
+    "GRWTSK/Spectral/FreeIDS.lean": "2ceb8583eee1ece71002eb12fdb6682498125b79c53c9d5a3fa8283d0a9e8f60",
+    "GRWTSK/Spectral/DirichletCut.lean": "98bc77aecb30901438b6af7cacb1edfdee181cc73d64bcb142daf6abed1ac8af",
+    "docs/ten-martini-zero.md": "f0b10dd668457b97ed00206399b146135de097bd0be9f81eebacc157675cc02f",
+    "GRWTSK/Spectral/SturmianBlockCounts.lean": "5e357a6fd03b24ceb1a92ac187f235b494c093276fa76aee72f5372927f52ed5"
+  },
+  "remaining_ports": [
+    "infinite Sturmian operator and actual tree",
+    "coding surjectivity and injectivity",
+    "actual nonzero-coupling Sturmian count-limit existence and faithful IDS2",
+    "reference large-coupling gaps",
+    "CCC observable identification and full signed residual bounds"
+  ],
+  "gap_width_scope": "actual finite Dirichlet inclusive count comparison for every energy, phase, origin and both coupling signs; complete free eigenvalue multiset, actual free normalized-count limit with uniform one-over-volume error, and internal-label inverse cuts proved; supplied target Sturmian pointwise count limit and actual internal labelled gap imply 0 < width <= abs(V)",
+  "actual_sturmian_dry_theorem_formalized": false,
+  "rh_proved": false,
+  "independent_acceptance": "PENDING",
+  "finite_sturmian_hamiltonian_constructed": true,
+  "finite_volume_eigenvalue_comparison_proved": true,
+  "ids_limit_existence_proved": false,
+  "free_ids_formula_proved": true,
+  "free_ids_count_limit_proved": true,
+  "free_ids_inverse_cuts_proved": true,
+  "sturmian_ids_limit_existence_proved": false,
+  "zero_coupling_counts_and_no_internal_free_gap_proved": true,
+  "verification": {
+    "receipt": "evidence/ten-martini-checks.json",
+    "receipt_sha256": "163d748d1ea90570ac9ee75263a263be46a3a3ba55dbfefae3c33b8a8b8ee457",
+    "fresh_project_modules": 9,
+    "native_declaration_records": 248,
+    "native_record_kinds": {
+      "theorem": 202,
+      "definition": 43,
+      "generated": 3
+    },
+    "negative_controls": 17,
+    "independent_acceptance": "PENDING"
+  },
+  "finite_defect_count_bound_proved": true,
+  "actual_joining_edge_rank_two_bound_proved": true,
+  "actual_adjacent_volume_count_error_proved": true,
+  "boundary_count_scope": "Actual symmetric joining edge factors through both endpoint coordinates; inclusive count error <= 2 for consecutive volumes N>0, M>=0, every real energy, phase, origin and coupling; second block origin is origin+N; normalized error <= 2/(N+M); no nonzero-coupling IDS existence or gap opening supplied",
+  "actual_repeated_block_count_error_proved": true,
+  "actual_remainder_volume_count_bound_proved": true,
+  "exact_origin_to_phase_adapter_proved": true,
+  "actual_block_phase_sampling_adapter_proved": true,
+  "half_open_word_frequencies_proved": false,
+  "block_count_scope": {
+    "parameters": "all real frequency/coupling/phase, all integer origins and energies; L>0, N>0 for the 2/L+L/N formula; q,r natural including zero",
+    "retained_remainder_error": "2*q",
+    "complete_block_error": "2*(q-1) with natural truncated subtraction",
+    "omitted_remainder_cost": "r",
+    "whole_volume_weighted_block_error": "2/L+L/N",
+    "sampling_step": "L*alpha",
+    "finite_word_observable_identification_proved": false,
+    "sturmian_ids_limit_existence_proved": false,
+    "arithmetic_observable_identification_proved": false
+  }
+}

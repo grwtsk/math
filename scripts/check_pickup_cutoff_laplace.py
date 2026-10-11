@@ -49,12 +49,12 @@ def visit(module):
     ORDER.append(path)
 
 
-visit("GRWTSK.RiemannHypothesis.CCC.PickupCutoffLaplace")
+visit("GRWTSK.NumberTheory.Moebius.FiniteLaplaceTransform")
 CONTROL_ERRORS = {'MissingWeightedEndpoint': 'Type mismatch', 'MissingMertensEndpoint': 'Type mismatch', 'MissingZNonzero': 'Type mismatch', 'MissingSNonzero': 'Type mismatch', 'RawProduct': 'Type mismatch'}
 CONTROLS = list(CONTROL_ERRORS)
-INPUTS = ORDER + ["checks/CCCPickupCutoffLaplaceAudit.lean", "scripts/check_pickup_cutoff_laplace.py",
+INPUTS = ORDER + ["checks/NumberTheory/Moebius/FiniteLaplaceTransform.lean", "scripts/check_pickup_cutoff_laplace.py",
                   "lean-toolchain", "lakefile.toml", "lake-manifest.json", "docs/ccc-cutoff-laplace.md"]
-INPUTS += ["checks/cutoff-laplace-controls/" + name + ".lean" for name in CONTROLS]
+INPUTS += ["checks/NumberTheory/Moebius/FiniteLaplaceTransform/Controls/" + name + ".lean" for name in CONTROLS]
 HASHES = {p: hashlib.sha256((ROOT / p).read_bytes()).hexdigest() for p in INPUTS}
 (RUN / "source-freeze.json").write_text(json.dumps(HASHES, indent=2) + "\n")
 RESULTS = []
@@ -102,7 +102,7 @@ def run(rel, expected_success=True, export=False, expected_error=None):
 try:
     for path in ORDER:
         run(path, export=True)
-    output = run("checks/CCCPickupCutoffLaplaceAudit.lean")
+    output = run("checks/NumberTheory/Moebius/FiniteLaplaceTransform.lean")
     declarations = [json.loads(s) for s in re.findall(r"PICKUP_CUTOFF_DECL::(\{[^\n]+\})", output)]
     counts = re.findall(r"PICKUP_CUTOFF_COUNT::(\d+)", output)
     if len(counts) != 1 or len(declarations) != int(counts[0]) or not declarations:
@@ -127,7 +127,7 @@ try:
         if fragment not in contracts["wholePickup_cutoff_laplace"]["type"]:
             raise RuntimeError("cutoff identity lost its signed closed inventory: " + fragment)
     for name in CONTROLS:
-        run("checks/cutoff-laplace-controls/" + name + ".lean", expected_success=False,
+        run("checks/NumberTheory/Moebius/FiniteLaplaceTransform/Controls/" + name + ".lean", expected_success=False,
             expected_error=CONTROL_ERRORS[name])
     stable_inputs()
     receipt = {"schema_version": 1, "status": "SCOPED_SOURCE_CHECKS_PASSED",

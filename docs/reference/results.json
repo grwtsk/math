@@ -1,0 +1,55 @@
+{
+  "schema": "docs-record/1",
+  "status": "candidate; authoritative catalogue acceptance pending",
+  "coverage": "exactly these three selected families; no declaration-wide or complete topic coverage",
+  "records": [
+    {
+      "id": "least-prime",
+      "title": "Least natural prime",
+      "subject": "NumberTheory/Prime",
+      "priority": 1,
+      "priority_basis": "Immediate architectural usefulness; editorial judgment, not measured influence",
+      "source": "GRWTSK/NumberTheory/Prime/LeastPrime.lean",
+      "sha256": "89d862e92978b74d032ea9b8ce764c0593a19cb93001c2c1cf5695c600c187fd",
+      "premises": "Nat.Prime q; every natural prime p satisfies q<=p",
+      "verification": "fresh-selected",
+      "evidence": "evidence/prime-architecture-checks.json",
+      "page": "docs/mathematics/NumberTheory/Prime/least-prime.md",
+      "contribution": "Checked reuse/conditional interface; no originality claim",
+      "integration": "local working source; broader layout replay separate",
+      "publication": "no publication action in this packet"
+    },
+    {
+      "id": "quota-coverage",
+      "title": "Coverage and discrete quotas",
+      "subject": "Combinatorics/Sequences",
+      "priority": 2,
+      "priority_basis": "Immediate architectural usefulness; editorial judgment, not measured influence",
+      "source": "GRWTSK/Combinatorics/Sequences/QuotaDiscrepancy.lean",
+      "sha256": "851cb36b5b9db3a4e2695e4c4164dbca4af83dcc913caebd41160fd4db8f882f",
+      "premises": "every batch>=1; fixed finite channels; Q>0; nonnegative quotas sum to Q; required fixed quotas positive",
+      "verification": "historical",
+      "evidence": "evidence/waveform-checks.json",
+      "page": "docs/mathematics/Combinatorics/Sequences/coverage-and-quotas.md",
+      "contribution": "Checked reuse/conditional interface; no originality claim",
+      "integration": "local working source; broader layout replay separate",
+      "publication": "no publication action in this packet"
+    },
+    {
+      "id": "polynomial-error",
+      "title": "Polynomial return with paid error",
+      "subject": "Analysis/Asymptotics",
+      "priority": 3,
+      "priority_basis": "Immediate architectural usefulness; editorial judgment, not measured influence",
+      "source": "GRWTSK/Analysis/Asymptotics/PolynomialErrorBound.lean",
+      "sha256": "038e3cf31cc90eec7019c91be55ff2cdc4c00aaf82a3791be5d05e4dfae12996",
+      "premises": "exact X=R+e; uniform readout and absolute error bounds; nonnegative coefficients",
+      "verification": "historical",
+      "evidence": "evidence/waveform-checks.json",
+      "page": "docs/mathematics/Analysis/Asymptotics/polynomial-error.md",
+      "contribution": "Checked reuse/conditional interface; no originality claim",
+      "integration": "local working source; broader layout replay separate",
+      "publication": "no publication action in this packet"
+    }
+  ]
+}
