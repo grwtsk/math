@@ -77,6 +77,8 @@ The resulting completed finite transform retains $U_N$ and both signed endpoint 
 
 `VerticalLineCriterion` now proves that the uniform completed vertical-line bound at every positive damping is equivalent to `PickupWeightedEnergyAll` and to `pickupEnergyAbscissa = 0`, and hence conditionally implies the literal Riemann hypothesis. This closes the finite-window-to-terminal logical adapter without pretending to supply the uniform signed bound itself.
 
+The same module proves the completed bound unconditionally for every $\sigma>1/2$, using the already paid energy domain $\tau>1$. The remaining arithmetic extension is $0<\sigma\le1/2$.
+
 The canonical debt module and damped-recording Parseval module have focused trust-zero replay and owned-declaration axiom audits. Exact integer coefficient checks through cutoff 42 remain finite sanity checks, not an arithmetic estimate. The separate spectral word adapter still requires its own current source replay before admission.
 
 ## Proved finite recording and exact tail obligation
