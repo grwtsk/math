@@ -64,3 +64,11 @@ The [RH inference guards](docs/rh-inference-guards.md) retain exact domain exclu
 The [Schrödinger transfer core](docs/schrodinger-transfer.md) preserves the exact current/previous state, commutative-ring recurrence, determinant-one packaging and rational inequality witness.
 
 The [exact CCC prime-note cascade](docs/ccc-prime-cascade.md) proves the causal pickup identification, clipped insertion-energy recurrence, unconditional logarithmic prime-mass allowance and conditional prime/block return to P04. The signed supplier remains open. Run `python3 scripts/check_prime_cascade.py` for its fresh source and premise audit.
+
+The [sequence realization cohort](docs/sequence-realization.md) preserves 81 proved
+theorems: fair scheduling, native continued-fraction arithmetic, existence and
+uniqueness of irrational real frequencies, and polynomial return with complete
+correction losses. Run `python3 scripts/check_sequence_realization.py` for fresh
+trust-zero compilation and the full 189-declaration stored-family audit. Exact
+original types and proof bodies were separately checked under namespace renaming.
+Actual CCC identification and P04 remain open.

@@ -1,0 +1,55 @@
+{
+  "schema": "sequence-realization-source-binding-v1",
+  "source_repository": "grwtsk/formal-research",
+  "destination_repository": "grwtsk/math",
+  "local_source_license": "MIT",
+  "human_direction": "R.A. Jacob Martone",
+  "formalization_and_verification": "OpenAI Codex",
+  "source_mapping": [
+    {
+      "original_module": "FormalResearch.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "destination_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "original_source_sha256": "4dd92b6236f05cf09cecad6e344be964efa65c243e16fb3e58297ef93e1853f3",
+      "destination_source_sha256": "3f18269367c2ef839a97591d1d5d36198c6c4c6faff132120f45659c19e94a03",
+      "namespace_mapping": {
+        "FormalResearch": "GRWTSK"
+      },
+      "mathematical_source_changes": false,
+      "scope": "Exact root/import renaming; no theorem or hypothesis edits."
+    },
+    {
+      "original_module": "FormalResearch.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "destination_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "original_source_sha256": "85339767fbee9a56c6ea0ec20253d6697d30befca18da8bbdf80e2a754469fdd",
+      "destination_source_sha256": "d99990a77db939231e31207f38f1d34204aa597f057ec1ac3c0b26ba47b13358",
+      "namespace_mapping": {
+        "FormalResearch": "GRWTSK"
+      },
+      "mathematical_source_changes": false,
+      "scope": "Exact root/import renaming; no theorem or hypothesis edits."
+    },
+    {
+      "original_module": "FormalResearch.RiemannHypothesis.Conversation.BranchSequenceReturn",
+      "destination_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceReturn",
+      "original_source_sha256": "feb893f485fff7385b3412cd6ec20e87ac9d2d122355fb74ca4c66222786980b",
+      "destination_source_sha256": "de1982e400c9a3e25f6bf280e017ba571b74d7666f677c52637cb88cbd7145ea",
+      "namespace_mapping": {
+        "FormalResearch": "GRWTSK"
+      },
+      "mathematical_source_changes": false,
+      "scope": "Exact root/import renaming; no theorem or hypothesis edits."
+    }
+  ],
+  "mathematical_theorems": 81,
+  "public_declarations": 108,
+  "complete_stored_declarations": 189,
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "exact_CCC_identification": "OPEN",
+  "P04_status": "OPEN ARITHMETIC WITNESS",
+  "whole_branch_formalization_complete": false,
+  "RH_proved": false
+}
