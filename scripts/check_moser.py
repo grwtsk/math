@@ -45,7 +45,7 @@ try:
   run("reject-prime-one","checks/PrimeOneFalse.lean",1,lambda s:"is false" in s)
   run("reject-lower-bound-three","checks/LowerBoundFalse.lean",1,lambda s:"Type mismatch" in s)
  else:
-  prefix="GRWTSK/Combinatorics/GraphTheory/HadwigerNelson/"
+  prefix="GRWTSK/Combinatorics/GraphTheory/UnitDistanceGraph/"
   output=run("34-declaration-audit","checks/DeclarationAudit.lean")
   expected=json.loads((root/"evidence/expected-declarations.json").read_text())
   for e in expected:
