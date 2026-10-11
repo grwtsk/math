@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "profile": "least-natural-prime + canonical34-Moser + exact-RH-target + ordered-product-candidate + common-J-rotation-candidate + common-J-native-sign-reversal-candidate + rational-shear-counterexample-candidate + ordered-product-gauge-candidate + real-polarization-access-ramp-candidate + interval-reflection-conditional-integral-candidate + finite-coverage-explicit-domain-and-tail-candidate + rh-inference-guards-with-existing-canonical-dependency-reuse-candidate",
+  "profile": "least-natural-prime + canonical34-Moser + exact-RH-target + ordered-product-candidate + common-J-rotation-candidate + common-J-native-sign-reversal-candidate + rational-shear-counterexample-candidate + ordered-product-gauge-candidate + real-polarization-access-ramp-candidate + interval-reflection-conditional-integral-candidate + finite-coverage-explicit-domain-and-tail-candidate + rh-inference-guards-with-existing-canonical-dependency-reuse-candidate + schrodinger-transfer-core-candidate",
   "origin": "PUBLIC_MATHLIB_DIRECT_IMPORT",
   "upstream": {
     "repository": "https://github.com/leanprover-community/mathlib4",
@@ -14,7 +14,7 @@
   "files": {
     ".gitattributes": "30ad961b8d8b3947a8f036d5390087ab5f8c1853f7d0bfb01319f449e05e1368",
     ".gitignore": "21327e9cedbf4b84ef262886e71421d4201201b052cb7b06a6ba6a522270e732",
-    "GRWTSK.lean": "83a1e4fcb60e932a9f2a403512a379b9e4994b9a7e50c995773945c6ee8040b7",
+    "GRWTSK.lean": "abfbe8b29bc67930fb45e3a502a71da111605a4022fee545a844cf98004ab1ca",
     "GRWTSK/Algebra/OrderedProduct.lean": "97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d",
     "GRWTSK/Combinatorics/GraphTheory/HadwigerNelson/Moser.lean": "1791f62713a936d9d91f262273871cf5d28257e390f15d05454a5f2115ce8796",
     "GRWTSK/Combinatorics/GraphTheory/HadwigerNelson/MoserCoordinates.lean": "0e29b36d41b117eb4c747ddaf02bf22a2b87e8a59b0665a424d1a1277a38c8ec",
@@ -31,8 +31,8 @@
     "LICENSES/MIT.txt": "a98fc92dab12d02b26bc51f1ac0d608871886b7e36de2170747fb0fcee946968",
     "LICENSES/Mathlib-Apache-2.0.txt": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
     "LICENSES/OpenAI-Apache-2.0.txt": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
-    "NOTICE": "206f804d2e6a71f1b187fb9d98895f75999f1aa25829229fcda36418c76920f5",
-    "README.md": "4a2739ec5883954065248c09cf9c372781257b83e6c307b15906356844275658",
+    "NOTICE": "5ff0b9bd8b6b9b19a9eab9babcd1e9b7ad32b683ffb44e91ca66613f4443764b",
+    "README.md": "735861397291553d30b49798dc6ea051442c5eacc59f3956cc9a112c8c74deef",
     "checks/CommonJAudit.lean": "6773a938739ae7708d354a130a9e067844cd33633cb6b4ce3883f998a7f638fd",
     "checks/Consumers.lean": "ddffe7fc2b513a02a79b3afa0a79a797d97424c15c6c08a82db2dd0f9ffe42e4",
     "checks/DeclarationAudit.lean": "377f6c7372b2693761402d3c28ab0fcb8dca0d5e7d18651fe03289f3863c070a",
@@ -119,7 +119,17 @@
     "evidence/citation-rh-inference-guards.json": "412a4a2793d28da266dfd8ebb118180242db358b40ab61703ecb3506412a5f71",
     "checks/RHInferenceGuardsAudit.lean": "0e97565ed970eccd0fb0da9526139f7afceb9fc2661dfe9c050d3fd6f1284abb",
     "docs/rh-inference-guards.md": "2bfaa3b6cc9130bbd9678d7a22712c9f483b154c5604fd4a7d6e162dedab0de0",
-    "scripts/check_rh_inference_guards.py": "091704661fef3ce1f702e697b957992e9cd74622e835c99e99e5b95e6417fcc8"
+    "scripts/check_rh_inference_guards.py": "091704661fef3ce1f702e697b957992e9cd74622e835c99e99e5b95e6417fcc8",
+    "GRWTSK/LinearAlgebra/SchrodingerTransfer.lean": "25f93a03bb8e1b5df2f73c782160ed9f356f592c6cca4e56c92cde7fd974969d",
+    "evidence/citation-schrodinger-transfer.json": "5e5543e902bb6dd25259b8af282454e25f60cb0813592d8fa7a70864d2c25604",
+    "checks/SchrodingerTransferAudit.lean": "4e8588f4f14aa9e1bfd00ca5d72defbb378ac2aed035b0d71c718578db21cffc",
+    "checks/schrodinger-controls/WrongDeterminantSign.lean": "23bb5c1fcba29f469eb03e1eefbaf0dbedb70c9c45d31355acd5a94e5928309a",
+    "checks/schrodinger-controls/ExactCoordinatesAndDeterminant.lean": "30b877518e43d16112176b24468c530f44834f7cb9fca30729306582a97058a8",
+    "checks/schrodinger-controls/DropCommutativeRingPremise.lean": "a4cbb7c66467d082ef71804ad20c82dcb44cf397537ba74b2a9f90c2fb8dbc4b",
+    "checks/schrodinger-controls/IdentifyDistinctSLElements.lean": "dbbf4e260ebcf35a6bdaa603c527e14a40dfff1affe5d7c64d0b6c5ff87624e2",
+    "checks/schrodinger-controls/ReverseNextStateCoordinates.lean": "dddb1769e2cbf5203990393eaa3ac77e73a4a6947268b61e9f45862e0e4a2f8d",
+    "docs/schrodinger-transfer.md": "b92e3a260a32f95ce172a135b66d3cced7c7c520669b71444f0a63dd2102f972",
+    "scripts/check_schrodinger_transfer.py": "42c1a8847a9b36e01ede5ba822d756a6fd41caa6186904825ee9c5533e5ea0e2"
   },
   "axiom_policy": "Lean standard classical axioms propext, Classical.choice, Quot.sound permitted; sorryAx and other axioms rejected; prime exact observed list reported, Moser exact frozen lists matched.",
   "additional_claim_scope": "Exact Mathlib RH proposition, its defect equivalence and nontrivial-zero symmetries; no RH proof.",
@@ -130,5 +140,6 @@
   "polarization_claim_scope": "Established real polarization access ramp and two negative consequences; original real L2 proof and original consequence proof separately checked; no mathematical originality or RH proof.",
   "interval_reflection_claim_scope": "Established interval reflection and conditional integral identities, exact Lebesgue endpoints and integrability premises; one original definition and four original source pairing theorem consumers checked; no originality or RH claim.",
   "finite_coverage_claim_scope": "Four established explicit coverage and negative scope theorem contracts preserved; four original guard contracts replayed as import-only compatibility, zero original canonical proof reuse roles, four synthetic verification wrappers checked; no originality or RH claim.",
-  "rh_inference_guards_scope": "Four established guard statements, existing zero definitions and symmetries reused, three original intrafamily roles and four synthetic wrappers checked. No verified external original consumer, originality or RH claim."
+  "rh_inference_guards_scope": "Four established guard statements, existing zero definitions and symmetries reused, three original intrafamily roles and four synthetic wrappers checked. No verified external original consumer, originality or RH claim.",
+  "schrodinger_scope": "Three definitions and three source theorems, three stored helpers; exact commutative-ring state/recurrence/determinant and rational inequality, original consumers checked, no spectral or RH proof claim."
 }
