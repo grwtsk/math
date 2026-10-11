@@ -18,6 +18,14 @@ example (N : ℕ) :
       verticalLineMass (1 / 2) (Real.log ((N + 1 : ℕ) : ℝ)) :=
   criticalIntervalBlockSum_eq_verticalLineMass N
 
+example (n : ℕ) :
+    criticalIntervalBlock n =
+      4 * pickupWeightedPrefix n ^ 2 * exponentialLogDrop 1 n -
+      (16 / 3) * pickupWeightedPrefix n * pickupMertensPrefix n *
+        exponentialLogDrop (3 / 2) n +
+      2 * pickupMertensPrefix n ^ 2 * exponentialLogDrop 2 n :=
+  criticalIntervalBlock_closedForm n
+
 example :
     CriticalBoundaryVerticalLineUniform ↔ CriticalIntervalBlockUniform :=
   criticalBoundary_iff_intervalBlockUniform

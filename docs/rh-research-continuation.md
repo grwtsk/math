@@ -89,6 +89,12 @@ of that boundary line. This is a necessary subproblem of the reciprocal-line
 criterion, not a sufficient condition for RH by itself; every smaller positive
 rate remains open.
 
+Each boundary block is now additionally evaluated as an explicit quadratic
+form in those two prefixes, with endpoint differences at rates $1$, $3/2$ and
+$2$. The mixed coefficient is $-16/3$, so the exact signed interaction is
+visible to subsequent arithmetic estimates instead of being hidden inside an
+integral.
+
 The canonical debt module and damped-recording Parseval module have focused trust-zero replay and owned-declaration axiom audits. Exact integer coefficient checks through cutoff 42 remain finite sanity checks, not an arithmetic estimate. The separate spectral word adapter still requires its own current source replay before admission.
 
 ## Proved finite recording and exact tail obligation
