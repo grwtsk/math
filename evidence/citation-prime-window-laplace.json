@@ -33,5 +33,5 @@
   "source_sha256": {
     "GRWTSK/RiemannHypothesis/CCC/PrimeWindowLaplace.lean": "1758e02811afe2c78374c03a3e09d8f598bed1a176af3b0fb4d710f9c13c2fba"
   },
-  "next_cutoff_formula": "Written mathematics in the continuation record; not yet Lean formalized."
+  "next_cutoff_formula": "Now kernel checked with both signed endpoints and nonzero denominator premises in PickupCutoffLaplace; see evidence/cutoff-laplace-checks.json. This does not expand the older finite-window receipt scope."
 }
