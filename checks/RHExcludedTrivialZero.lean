@@ -1,4 +1,4 @@
-import GRWTSK.RiemannHypothesis
+import GRWTSK.NumberTheory.Zeta.Riemann
 -- This deliberately invalid inference must be rejected by the compiler.
 example : GRWTSK.RiemannHypothesis.NontrivialZetaZero (-2) := by
   refine ⟨?_, ?_, ?_⟩

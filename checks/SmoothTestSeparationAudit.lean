@@ -1,4 +1,4 @@
-import GRWTSK.RiemannHypothesis.Conversation.BranchPoleAdmissibleTest
+import GRWTSK.Analysis.TestFunctions.ExponentialMomentVariation
 import Lean
 
 open Lean Elab Command
