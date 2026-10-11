@@ -6,3 +6,5 @@ If reconstruction error is at most `delta`, the energy error is at most `delta*(
 ## Source and verification scope
 
 [Source](../../../../GRWTSK/Analysis/NormedSpace/QuadraticError.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+
+The source binding was updated after history integration. Earlier proof receipts retain their original bytes; this page does not assert fresh acceptance of the updated source.

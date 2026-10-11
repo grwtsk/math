@@ -53,8 +53,11 @@ Browse by mathematical subject and object, matching the Lean source organization
 
 ## NumberTheory
 
+- [Complete density Möbius correction](mathematics/NumberTheory/ArithmeticFunctions/density-correction.md)
+- [Signed Möbius cutoff decomposition](mathematics/NumberTheory/ArithmeticFunctions/signed-cutoffs.md)
 - [Irrational frequency realization and native readback](mathematics/NumberTheory/ContinuedFractions/frequency-realization.md)
 - [Scheduled digits and continued-fraction denominators](mathematics/NumberTheory/ContinuedFractions/scheduled-denominators.md)
+- [Closed Möbius Dirichlet polynomials](mathematics/NumberTheory/LSeries/closed-moebius.md)
 - [Matched averaging for the closed Möbius pickup](mathematics/NumberTheory/Moebius/matched-pickup.md)
 - [Damped finite windows and extended tail energy](mathematics/NumberTheory/Moebius/Energy/damped-tails.md)
 - [Horizon-matched blocks and dyadic energy](mathematics/NumberTheory/Moebius/Energy/recording-blocks.md)
@@ -64,6 +67,7 @@ Browse by mathematical subject and object, matching the Lean source organization
 - [Exact signed cutoff Laplace transform](mathematics/NumberTheory/Moebius/Laplace/cutoff.md)
 - [Finite Laplace recordings and signed tails](mathematics/NumberTheory/Moebius/Laplace/finite-window.md)
 - [Finite signed prime-product debt](mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md)
+- [Common-reading row costs](mathematics/NumberTheory/Moebius/LocalCancellation/common-reading.md)
 - [Equivalent signed pickup integrals](mathematics/NumberTheory/Moebius/Pickup/identification.md)
 - [A strict negative prime-prefix correlation](mathematics/NumberTheory/Moebius/PrimeFilters/negative-correlation.md)
 - [Conditional prime-filter growth and harmonic mass](mathematics/NumberTheory/Moebius/PrimeFilters/conditional-growth.md)
