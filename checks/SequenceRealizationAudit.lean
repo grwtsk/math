@@ -5,9 +5,9 @@ open Lean Elab Command
 
 elab "audit_sequences" : command => do
   let selectedModules := #[
-    ("GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization").toName,
-    ("GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence").toName,
-    ("GRWTSK.RiemannHypothesis.Conversation.BranchSequenceReturn").toName
+    ("GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators").toName,
+    ("GRWTSK.NumberTheory.ContinuedFractions.FrequencyRealization").toName,
+    ("GRWTSK.DynamicalSystems.Sequences.ApproximationReturn").toName
   ]
   let env ← getEnv
   let moduleNames := env.header.moduleNames

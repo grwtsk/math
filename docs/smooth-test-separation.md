@@ -1,9 +1,9 @@
 # Smooth tests separate continuous residuals
 
-The [separation module](../GRWTSK/RiemannHypothesis/Conversation/BranchSmoothTestSeparation.lean)
-and [even-test module](../GRWTSK/RiemannHypothesis/Conversation/BranchEvenSmoothTest.lean)
+The [separation module](../GRWTSK/Analysis/TestFunctions/Separation.lean)
+and [even-test module](../GRWTSK/Analysis/TestFunctions/EvenSeparation.lean)
 are complemented by the
-[pole-variation module](../GRWTSK/RiemannHypothesis/Conversation/BranchPoleAdmissibleTest.lean).
+[pole-variation module](../GRWTSK/Analysis/TestFunctions/ExponentialMomentVariation.lean).
 Together they prove eleven theorems and define the point spike and differential
 variation. Their complete stored family has seventeen declarations, including
 generated equations and proof helpers. The independent checker compiles these
