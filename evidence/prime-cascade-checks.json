@@ -41,8 +41,9 @@
   },
   "arithmetic_frontier": {
     "P04": "OPEN",
-    "prime_reverberation": "OPEN",
-    "block_reverberation": "OPEN",
+    "prime_reverberation": "ANALYTICALLY_OBSTRUCTED_NOT_LEAN_FORMALIZED",
+    "block_reverberation": "ANALYTICALLY_OBSTRUCTED_NOT_LEAN_FORMALIZED",
+    "recording_scale": "OPEN",
     "Kakeya_adapter": "OPEN"
   },
   "source_sha256": {
@@ -66,11 +67,11 @@
     "GRWTSK/RiemannHypothesis/CCC/PrimeMass.lean": "f9c95be6dd39911e5acba786ca84baf89c51a9611632477673c44e20ead58cf8",
     "GRWTSK/RiemannHypothesis/CCC/PrimeReverberation.lean": "0f693d7ec606cfa4b107c9bc61913d3787921e8690da6918815911bc3b03beb6",
     "checks/CCCPrimeCascadeAudit.lean": "790664be61b2cb28de445c7718100ca7b49c75b773c4b4387778f813a3affa39",
-    "scripts/check_prime_cascade.py": "5d844b814f5a20e4b337b5b6ec0ba781f0193ad83c762906da31b4b4f19f4e40",
+    "scripts/check_prime_cascade.py": "dad15f21784d8d00ac72a5dbd584e857402d60c5787d4e219b63c7ba218aa2cc",
     "lean-toolchain": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
     "lakefile.toml": "a23f6d313f8458192328f09635ffef9078cb684374c2aac2743af541bf59b4e3",
     "lake-manifest.json": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
-    "docs/ccc-prime-cascade.md": "96ce8f909546694f5bb3b546b8e195b255fea35f180e43a1127528e2ab6bf983",
+    "docs/ccc-prime-cascade.md": "b7afdfe6f69fc0afb76e9e1177b64ff73889f33335d4534136f9f0b62bc8d1fc",
     "checks/prime-cascade-controls/MissingBlockBound.lean": "edb4893c9a62c7fef7032147bf3fc5c420120c0e6bf0c83e8038acee3ed0a2dc",
     "checks/prime-cascade-controls/MissingPrimeBound.lean": "7a6de82066f0a037f5fd812cad777c1bcebfa3d38f1e20c5dcae140dee6f0bcb",
     "checks/prime-cascade-controls/CompositePrimitive.lean": "16dbcf6515d8072147aa1fd17cf55b60712476d2b2e3f69d5e3c9943f0f34b87"
@@ -851,7 +852,7 @@
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 4.564202083,
+      "seconds": 9.799123291999999,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
@@ -861,7 +862,7 @@
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 4.957184959000001,
+      "seconds": 25.154326458,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
@@ -871,7 +872,7 @@
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 7.901912959000001,
+      "seconds": 31.597788334,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
@@ -881,7 +882,7 @@
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 7.116969292,
+      "seconds": 30.074755832999998,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
@@ -891,7 +892,7 @@
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 16.842001833999998,
+      "seconds": 25.282122333000004,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
@@ -901,7 +902,7 @@
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 14.683708667000005,
+      "seconds": 35.44670533399999,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
@@ -911,7 +912,7 @@
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 7.966568875000007,
+      "seconds": 46.996064625,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
@@ -921,7 +922,7 @@
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 16.937068999999994,
+      "seconds": 43.744696542000014,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
@@ -931,7 +932,7 @@
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 14.946106083999993,
+      "seconds": 10.945436750000027,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
@@ -941,7 +942,7 @@
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 12.800991499999995,
+      "seconds": 14.12306079199999,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
@@ -951,7 +952,7 @@
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 8.024391582999996,
+      "seconds": 10.907194042000015,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
@@ -961,7 +962,7 @@
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 5.134092792000004,
+      "seconds": 8.07801333399999,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
@@ -971,7 +972,7 @@
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 7.076391500000014,
+      "seconds": 11.357220415999961,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
@@ -981,7 +982,7 @@
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 6.705547499999994,
+      "seconds": 14.863428917000022,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
@@ -991,7 +992,7 @@
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 6.258234375000001,
+      "seconds": 16.231266833999996,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
@@ -1001,7 +1002,7 @@
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 9.644116791000016,
+      "seconds": 22.96012491600004,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
@@ -1011,7 +1012,7 @@
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 10.034324292000008,
+      "seconds": 12.627810416999978,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
@@ -1021,7 +1022,7 @@
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 15.031670582999993,
+      "seconds": 14.031481041000006,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
@@ -1031,7 +1032,7 @@
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 18.302098875000013,
+      "seconds": 28.49688170899998,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
@@ -1041,7 +1042,7 @@
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 10.703939250000019,
+      "seconds": 19.18480645799997,
       "output_sha256": "8d901a64fab2bfd7b4d30583b26fb3b507660fd8c8282272c4a377cead662460",
       "expected_error_fragment": null,
       "expected_error_matched": true
@@ -1051,7 +1052,7 @@
       "expected_success": false,
       "actual_success": false,
       "exit_code": 1,
-      "seconds": 7.835510375000013,
+      "seconds": 28.848696541000038,
       "output_sha256": "dd4dcee87a7ec40c58abb7af990d2b2a2cd1ea0092c37ff82982d7f26352a977",
       "expected_error_fragment": "Type mismatch",
       "expected_error_matched": true
@@ -1061,7 +1062,7 @@
       "expected_success": false,
       "actual_success": false,
       "exit_code": 1,
-      "seconds": 11.080846500000007,
+      "seconds": 20.888376499999993,
       "output_sha256": "df4f380a5ff05fd87eccfd4b415c97d2ff600825393de8e6265c47fbcae89995",
       "expected_error_fragment": "Type mismatch",
       "expected_error_matched": true
@@ -1071,7 +1072,7 @@
       "expected_success": false,
       "actual_success": false,
       "exit_code": 1,
-      "seconds": 13.936815416999991,
+      "seconds": 23.90540545799996,
       "output_sha256": "58329ae041164c9ea51113b020f2c59daa239af1a61503bfb7c199aac2450b06",
       "expected_error_fragment": "unsolved goals",
       "expected_error_matched": true

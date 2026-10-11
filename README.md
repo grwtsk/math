@@ -63,4 +63,6 @@ The [RH inference guards](docs/rh-inference-guards.md) retain exact domain exclu
 
 The [Schrödinger transfer core](docs/schrodinger-transfer.md) preserves the exact current/previous state, commutative-ring recurrence, determinant-one packaging and rational inequality witness.
 
-The [exact CCC prime-note cascade](docs/ccc-prime-cascade.md) proves the causal pickup identification, clipped insertion-energy recurrence, unconditional logarithmic prime-mass allowance and conditional prime/block return to P04. The signed supplier remains open. Run `python3 scripts/check_prime_cascade.py` for its fresh source and premise audit.
+The [exact CCC prime-note cascade](docs/ccc-prime-cascade.md) proves the causal pickup identification, clipped insertion-energy recurrence, unconditional logarithmic prime-mass allowance and conditional prime/block return to P04. Its former uniform suppliers are analytically obstructed; see the recording-scale continuation below. Run `python3 scripts/check_prime_cascade.py` for its fresh source and premise audit.
+
+The [CCC recording-scale pursuit](docs/ccc-recording-scale.md) proves exact horizon-matched prime blocks and a negative natural-prefix correlation, and gives a conditional net-scale return to RH. A prose PNT argument rejects the earlier uniform intermediate-prefix suppliers; that analytic obstruction is not Lean replayed. The complete signed scale estimate remains open. Run `python3 scripts/check_recording_scale.py` for fresh source and false-shortcut checks.
