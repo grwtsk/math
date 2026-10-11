@@ -1,0 +1,17 @@
+import GRWTSK.Analysis.InnerProductSpace.CausalContactHilbertSeparation
+
+set_option linter.hashCommand false
+
+namespace GRWTSK.Analysis.InnerProductSpace.CausalContactHilbertSeparation
+
+#print axioms prescribed_source_vector_not_ae_zero
+#print axioms touching_window_L2_eq_zero
+#print axioms prescribed_source_L2_ne_zero
+#print axioms linear_hilbert_contact_map_ne_source
+
+#check prescribed_source_vector_not_ae_zero
+#check touching_window_L2_eq_zero
+#check prescribed_source_L2_ne_zero
+#check linear_hilbert_contact_map_ne_source
+
+end GRWTSK.Analysis.InnerProductSpace.CausalContactHilbertSeparation
