@@ -8,6 +8,6 @@ The generic [source theorem](../../../../GRWTSK/Analysis/Asymptotics/PolynomialE
 
 This is a reusable conditional adapter. An exact source/readout identity and both uniform bounds are required. Finite simulation, determinant one, generic Gram positivity or a missing reconstruction correction cannot supply them. Angular Fourier normalization, reconstruction and the actual Möbius-specific P04 bound remain separate obligations.
 
-[The fuller waveform interface](../../../waveform-interfaces.md) retains these distinctions. [Its prior receipt](../../../../evidence/waveform-checks.json) is historical at former paths; this documentation does not claim relocated-source replay or an actual P04/RH proof.
+[The arithmetic growth interface](../../NumberTheory/Moebius/Energy/growth.md) retains these distinctions. [Its prior receipt](../../../../evidence/waveform-checks.json) is historical at former paths; this documentation does not claim relocated-source replay or an actual P04/RH proof.
 
 Human mathematical direction: grwtsk contributors; OpenAI Codex assistance; classical estimates and direct Mathlib origins retained. Local MIT, Mathlib Apache-2.0; no originality claim.
