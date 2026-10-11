@@ -1,0 +1,3095 @@
+{
+  "schema": "sequence-realization-checked-transfer-v1",
+  "status": "PASS",
+  "trust_level": 0,
+  "lean_version": "4.33.0",
+  "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "mathematical_theorems": 81,
+  "public_declarations": 108,
+  "complete_stored_declarations": 189,
+  "fresh_destination_audit_receipt_sha256": "0b909ed69c5d8c4040fc4cd697eba3a7d9eacdcc3b394c228060ad947570aee0",
+  "exact_comparison": {
+    "fresh_original_source_compilation": true,
+    "stored_family_complete": true,
+    "statement_and_body_drift": 0,
+    "universe_drift": 0,
+    "axiom_drift": 0,
+    "root_mapping": {
+      "FormalResearch": "GRWTSK"
+    },
+    "comparison_program_sha256": "c899be8311773647caeddccb3ab506a250d41b4244ced42246c874e69a7e49c8",
+    "comparison_log_sha256": "5185ad68f6cc39445c97cc897230404f6b3fe9d76c43a8f3ba2fcd0693e2d0c7",
+    "comparison_receipt_sha256": "1d877d295a81c34e8b6db670e923adb7f80d1532ce79ae4ff63d1c8dd28a782a",
+    "source_retired": false
+  },
+  "source_mapping": [
+    {
+      "original_module": "FormalResearch.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "destination_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "original_source_sha256": "4dd92b6236f05cf09cecad6e344be964efa65c243e16fb3e58297ef93e1853f3",
+      "destination_source_sha256": "3f18269367c2ef839a97591d1d5d36198c6c4c6faff132120f45659c19e94a03",
+      "namespace_mapping": {
+        "FormalResearch": "GRWTSK"
+      },
+      "mathematical_source_changes": false,
+      "scope": "Exact root/import renaming; no theorem or hypothesis edits."
+    },
+    {
+      "original_module": "FormalResearch.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "destination_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "original_source_sha256": "85339767fbee9a56c6ea0ec20253d6697d30befca18da8bbdf80e2a754469fdd",
+      "destination_source_sha256": "d99990a77db939231e31207f38f1d34204aa597f057ec1ac3c0b26ba47b13358",
+      "namespace_mapping": {
+        "FormalResearch": "GRWTSK"
+      },
+      "mathematical_source_changes": false,
+      "scope": "Exact root/import renaming; no theorem or hypothesis edits."
+    },
+    {
+      "original_module": "FormalResearch.RiemannHypothesis.Conversation.BranchSequenceReturn",
+      "destination_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceReturn",
+      "original_source_sha256": "feb893f485fff7385b3412cd6ec20e87ac9d2d122355fb74ca4c66222786980b",
+      "destination_source_sha256": "de1982e400c9a3e25f6bf280e017ba571b74d7666f677c52637cb88cbd7145ea",
+      "namespace_mapping": {
+        "FormalResearch": "GRWTSK"
+      },
+      "mathematical_source_changes": false,
+      "scope": "Exact root/import renaming; no theorem or hypothesis edits."
+    }
+  ],
+  "declarations": [
+    {
+      "axioms": [
+        "propext"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator_remainder",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "804926391",
+      "stored_type_hash": "1710497125",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115) (n : \u2115),\n  GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a (n + 2) %\n      GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a (n + 1) =\n    GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a n %\n      GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a (n + 1)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator.eq_def",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "986924380",
+      "stored_type_hash": "15322046",
+      "type": "\u2200 (gamma : \u2115 \u2192 \u211d) (x : \u2115),\n  GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator gamma x =\n    match x with\n    | 0 => 1\n    | 1 => GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeCoefficient (gamma 0) 1\n    | n.succ.succ =>\n      GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeStep (gamma (n + 1))\n        (GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator gamma n)\n        (GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator gamma (n + 1))"
+    },
+    {
+      "axioms": [],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator._sunfold",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "586255767",
+      "stored_type_hash": "1272646107",
+      "type": "(\u2115 \u2192 \u2115) \u2192 \u2115 \u2192 \u2115"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.arithmeticExponent.eq_1",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "1283218840",
+      "stored_type_hash": "3381700689",
+      "type": "\u2200 (q : \u2115 \u2192 \u2115),\n  GRWTSK.RiemannHypothesis.BranchSequenceRealization.arithmeticExponent q =\n    Filter.limsup (fun n => ENNReal.ofReal (Real.log \u2191(q (n + 1)) / \u2191(q n))) Filter.atTop"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchIncrement_le._proof_1_1",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "3631892817",
+      "stored_type_hash": "1893859218",
+      "type": "\u2200 (b : \u2115 \u2192 \u2124) (B : \u2115 \u2192 \u2115) {n : \u2115}, 1 \u2264 B n \u2192 \u00ac1 + min (B n - 1) (b n).natAbs \u2264 B n \u2192 False"
+    },
+    {
+      "axioms": [],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.DenominatorRecurrence",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "2171223042",
+      "stored_type_hash": "2647906922",
+      "type": "(\u2115 \u2192 \u2115) \u2192 Prop"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeCoefficient",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "3105916177",
+      "stored_type_hash": "3572560208",
+      "type": "\u211d \u2192 \u2115 \u2192 \u2115"
+    },
+    {
+      "axioms": [],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator._unsafe_rec",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "1393967485",
+      "stored_type_hash": "1272646107",
+      "type": "(\u2115 \u2192 \u2115) \u2192 \u2115 \u2192 \u2115"
+    },
+    {
+      "axioms": [],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock._f",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "3692452114",
+      "stored_type_hash": "412496468",
+      "type": "(\u2115 \u2192 \u2115) \u2192 (x : \u2115) \u2192 Nat.below x \u2192 \u2115"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.partialQuotient_pos._proof_1_1",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "3955330215",
+      "stored_type_hash": "1764548385",
+      "type": "\u2200 (b : \u2115 \u2192 \u2124) (n : \u2115), \u00ac0 < 1 + (b n).natAbs \u2192 False"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.epoch_no_starvation._proof_1_1",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "3193750399",
+      "stored_type_hash": "4040160705",
+      "type": "\u2200 {size r : \u2115}, r < size \u2192 \u00ac1 \u2264 size \u2192 False"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator_le_succ._proof_1_5",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "747535243",
+      "stored_type_hash": "1485264622",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115) (n : \u2115),\n  Nat.succ 0 * GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a (n + 1) \u2264\n      a (n + 1) * GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a (n + 1) \u2192\n    \u00acGRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a (n + 1) \u2264\n          a (n + 1) * GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a (n + 1) +\n            GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a n \u2192\n      False"
+    },
+    {
+      "axioms": [],
+      "kind": "definition",
+      "level_parameters": [
+        "u_1"
+      ],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock.match_1",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "1344119661",
+      "stored_type_hash": "413685589",
+      "type": "(motive : \u2115 \u2192 Sort u_1) \u2192 (x : \u2115) \u2192 (Unit \u2192 motive 0) \u2192 ((n : \u2115) \u2192 motive n.succ) \u2192 motive x"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.index_le_batchClock._proof_1_4",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "2098090323",
+      "stored_type_hash": "3224034425",
+      "type": "\u2200 (d : \u2115 \u2192 \u2115),\n  \u2200 n \u2264 GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock d n,\n    0 < d n \u2192 \u00acn + 1 \u2264 GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock d n + d n \u2192 False"
+    },
+    {
+      "axioms": [],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.growthCoefficient",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "263773933",
+      "stored_type_hash": "3512939730",
+      "type": "\u2115 \u2192 \u2115 \u2192 \u2115 \u2192 \u2115"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.growthCoefficient_meets_target._proof_1_2",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "346484532",
+      "stored_type_hash": "2988758090",
+      "type": "\u2200 (target previous current : \u2115),\n  target - previous + previous = target \u2192\n    target - previous <\n        GRWTSK.RiemannHypothesis.BranchSequenceRealization.growthCoefficient target previous current * current \u2192\n      \u00actarget \u2264\n            GRWTSK.RiemannHypothesis.BranchSequenceRealization.growthCoefficient target previous current * current +\n              previous \u2192\n        False"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator_le_succ",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "2058697981",
+      "stored_type_hash": "3042409147",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115),\n  (\u2200 (n : \u2115), 0 < a n) \u2192\n    \u2200 (n : \u2115),\n      GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a n \u2264\n        GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a (n + 1)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator.eq_3",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "2517952841",
+      "stored_type_hash": "1930235902",
+      "type": "\u2200 (gamma : \u2115 \u2192 \u211d) (n : \u2115),\n  GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator gamma n.succ.succ =\n    GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeStep (gamma (n + 1))\n      (GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator gamma n)\n      (GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator gamma (n + 1))"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock_tendsto",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "706632704",
+      "stored_type_hash": "185756758",
+      "type": "\u2200 (d : \u2115 \u2192 \u2115),\n  (\u2200 (n : \u2115), 0 < d n) \u2192\n    Filter.Tendsto (GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock d) Filter.atTop Filter.atTop"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.arithmeticExponent_of_diverging_spikes",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "431969511",
+      "stored_type_hash": "1490259222",
+      "type": "\u2200 (q : \u2115 \u2192 \u2115) (gamma : \u2115 \u2192 \u211d),\n  (\u2200 (n : \u2115), 0 < q n) \u2192\n    (\u2200 (n : \u2115), 0 \u2264 gamma n) \u2192\n      (\u2200 (n : \u2115),\n          \u2203 previous \u2264 q n,\n            q (n + 1) = GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeStep (gamma n) previous (q n)) \u2192\n        Filter.Tendsto gamma Filter.atTop Filter.atTop \u2192\n          GRWTSK.RiemannHypothesis.BranchSequenceRealization.arithmeticExponent q = \u22a4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.frequency_convergent",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "554109298",
+      "stored_type_hash": "3455216880",
+      "type": "\u2200 {a : \u2115 \u2192 \u2115} {alpha : \u211d},\n  GRWTSK.RiemannHypothesis.BranchSequenceRealization.FrequencyRealization a alpha \u2192\n    \u2200 (n : \u2115),\n      (GenContFract.of alpha).convs n =\n        \u2191(GRWTSK.RiemannHypothesis.BranchSequenceRealization.numerator a n) /\n          \u2191(GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a n)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator_ones",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "2761062134",
+      "stored_type_hash": "2875466940",
+      "type": "\u2200 (n : \u2115), GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator (fun x => 1) n = Nat.fib (n + 1)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeCoefficient_zero",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "1990722076",
+      "stored_type_hash": "3020059651",
+      "type": "\u2200 (current : \u2115), GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeCoefficient 0 current = 1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.effectiveStrength_nonneg",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "4111626403",
+      "stored_type_hash": "2620150674",
+      "type": "\u2200 (selected : \u2115 \u2192 Bool) (gamma : \u2115 \u2192 \u211d),\n  (\u2200 (n : \u2115), 0 \u2264 gamma n) \u2192\n    \u2200 (n : \u2115), 0 \u2264 GRWTSK.RiemannHypothesis.BranchSequenceRealization.effectiveStrength selected gamma n"
+    },
+    {
+      "axioms": [],
+      "kind": "theorem",
+      "level_parameters": [
+        "u_1"
+      ],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "_private.GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization.0.GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock.match_1.eq_1",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "1453829776",
+      "stored_type_hash": "3555244653",
+      "type": "\u2200 (motive : \u2115 \u2192 Sort u_1) (h_1 : Unit \u2192 motive 0) (h_2 : (n : \u2115) \u2192 motive n.succ),\n  (match 0 with\n    | 0 => h_1 ()\n    | n.succ => h_2 n) =\n    h_1 ()"
+    },
+    {
+      "axioms": [],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator.eq_3",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "383623091",
+      "stored_type_hash": "2149743173",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115) (n : \u2115),\n  GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a n.succ.succ =\n    a (n + 1) * GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a (n + 1) +\n      GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a n"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound",
+        "Classical.choice"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.arithmeticExponent_zero_of_bounded_ratio",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "870014459",
+      "stored_type_hash": "2457834623",
+      "type": "\u2200 (q : \u2115 \u2192 \u2115),\n  (\u2200 (n : \u2115), 0 < q n) \u2192\n    Filter.Tendsto q Filter.atTop Filter.atTop \u2192\n      \u2200 {C : \u211d},\n        0 < C \u2192\n          (\u2200 (n : \u2115), \u2191(q (n + 1)) \u2264 C * \u2191(q n)) \u2192\n            GRWTSK.RiemannHypothesis.BranchSequenceRealization.arithmeticExponent q = 0"
+    },
+    {
+      "axioms": [],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchIncrement",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "1910888266",
+      "stored_type_hash": "918732658",
+      "type": "(\u2115 \u2192 \u2124) \u2192 (\u2115 \u2192 \u2115) \u2192 \u2115 \u2192 \u2115"
+    },
+    {
+      "axioms": [],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "991940547",
+      "stored_type_hash": "1272646107",
+      "type": "(\u2115 \u2192 \u2115) \u2192 \u2115 \u2192 \u2115"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.unique_batch._proof_1_9",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "1855258410",
+      "stored_type_hash": "1216182348",
+      "type": "\u2200 (d : \u2115 \u2192 \u2115) (j : \u2115),\n  (\u2203 n, j < GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock d n) \u2192\n    \u2200 (n : \u2115),\n      j < GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock d (n + 1) \u2192\n        \u2200 (m : \u2115),\n          GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock d m \u2264 j \u2227\n              j < GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock d (m + 1) \u2192\n            GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock d (n + 1) \u2264\n                GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock d m \u2192\n              False"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchIncrement_pos._proof_1_1",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "231657793",
+      "stored_type_hash": "1228801994",
+      "type": "\u2200 (b : \u2115 \u2192 \u2124) (B : \u2115 \u2192 \u2115) (n : \u2115), \u00ac0 < 1 + min (B n - 1) (b n).natAbs \u2192 False"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.fibonacci_arithmeticExponent_zero._proof_1_5",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "3709872508",
+      "stored_type_hash": "1194630410",
+      "type": "\u2200 (n : \u2115),\n  GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator (fun x => 1) n \u2264\n      GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator (fun x => 1) (n + 1) \u2192\n    \u00ac1 * GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator (fun x => 1) (n + 1) +\n            GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator (fun x => 1) n \u2264\n          2 * GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator (fun x => 1) (n + 1) \u2192\n      False"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchIncrement_pos",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "2451724255",
+      "stored_type_hash": "1550784094",
+      "type": "\u2200 (b : \u2115 \u2192 \u2124) (B : \u2115 \u2192 \u2115) (n : \u2115), 0 < GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchIncrement b B n"
+    },
+    {
+      "axioms": [],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "3306147365",
+      "stored_type_hash": "1272646107",
+      "type": "(\u2115 \u2192 \u2115) \u2192 \u2115 \u2192 \u2115"
+    },
+    {
+      "axioms": [],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.numerator._f",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "3964251149",
+      "stored_type_hash": "412496468",
+      "type": "(\u2115 \u2192 \u2115) \u2192 (x : \u2115) \u2192 Nat.below x \u2192 \u2115"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator._unsafe_rec",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "330607652",
+      "stored_type_hash": "434296138",
+      "type": "(\u2115 \u2192 \u211d) \u2192 \u2115 \u2192 \u2115"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator_pos._proof_1_5",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "1042046643",
+      "stored_type_hash": "3791377031",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115) (n : \u2115),\n  0 < GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a n \u2192\n    \u00ac0 <\n          a (n + 1) * GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a (n + 1) +\n            GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a n \u2192\n      False"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator_coprime",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "1385129822",
+      "stored_type_hash": "2322484539",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115) (n : \u2115),\n  (GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a n).Coprime\n    (GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a (n + 1))"
+    },
+    {
+      "axioms": [],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator.eq_def",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "1609469570",
+      "stored_type_hash": "3252474097",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115) (x : \u2115),\n  GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a x =\n    match x with\n    | 0 => 1\n    | 1 => a 0\n    | n.succ.succ =>\n      a (n + 1) * GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a (n + 1) +\n        GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a n"
+    },
+    {
+      "axioms": [],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.generated_denominator_recurrence",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "41268762",
+      "stored_type_hash": "3822146313",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115),\n  (\u2200 (n : \u2115), 0 < a n) \u2192\n    GRWTSK.RiemannHypothesis.BranchSequenceRealization.DenominatorRecurrence\n      (GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator._sunfold",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "897725791",
+      "stored_type_hash": "434296138",
+      "type": "(\u2115 \u2192 \u211d) \u2192 \u2115 \u2192 \u2115"
+    },
+    {
+      "axioms": [],
+      "kind": "theorem",
+      "level_parameters": [
+        "u_1",
+        "u_2"
+      ],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "_private.GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization.0.GenContFract.contsAux.match_1.eq_2",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "1168208929",
+      "stored_type_hash": "2225907730",
+      "type": "\u2200 {K : Type u_1} (motive : Option (GenContFract.Pair K) \u2192 Sort u_2) (gp : GenContFract.Pair K)\n  (h_1 : Unit \u2192 motive none) (h_2 : (gp : GenContFract.Pair K) \u2192 motive (some gp)),\n  (match some gp with\n    | none => h_1 ()\n    | some gp => h_2 gp) =\n    h_2 gp"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.continuedFraction.eq_1",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "739768970",
+      "stored_type_hash": "2958709952",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115),\n  GRWTSK.RiemannHypothesis.BranchSequenceRealization.continuedFraction a =\n    { h := 0, s := \u2191fun n => { a := 1, b := \u2191(a n) } }"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.frequency_irrational",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "2516837121",
+      "stored_type_hash": "7796684",
+      "type": "\u2200 {a : \u2115 \u2192 \u2115} {alpha : \u211d},\n  GRWTSK.RiemannHypothesis.BranchSequenceRealization.FrequencyRealization a alpha \u2192 Irrational alpha"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchIncrement_le",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "2401254823",
+      "stored_type_hash": "1639961831",
+      "type": "\u2200 (b : \u2115 \u2192 \u2124) (B : \u2115 \u2192 \u2115) {n : \u2115},\n  1 \u2264 B n \u2192 GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchIncrement b B n \u2264 B n"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound",
+        "Classical.choice"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator_tendsto",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "361000623",
+      "stored_type_hash": "587653176",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115),\n  (\u2200 (n : \u2115), 0 < a n) \u2192\n    Filter.Tendsto (GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a) Filter.atTop Filter.atTop"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator_tendsto",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "3726015047",
+      "stored_type_hash": "2534603510",
+      "type": "\u2200 (gamma : \u2115 \u2192 \u211d),\n  Filter.Tendsto (GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator gamma) Filter.atTop Filter.atTop"
+    },
+    {
+      "axioms": [],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock.eq_1",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "1924612919",
+      "stored_type_hash": "3791538452",
+      "type": "\u2200 (d : \u2115 \u2192 \u2115), GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock d 0 = 0"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.continuedFraction",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "1738664993",
+      "stored_type_hash": "4201246428",
+      "type": "(\u2115 \u2192 \u2115) \u2192 GenContFract \u211d"
+    },
+    {
+      "axioms": [],
+      "kind": "definition",
+      "level_parameters": [
+        "u_1",
+        "u_2"
+      ],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "_private.GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization.0.GenContFract.contsAux.match_1.splitter",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "2125282714",
+      "stored_type_hash": "1882161721",
+      "type": "{K : Type u_1} \u2192\n  (motive : Option (GenContFract.Pair K) \u2192 Sort u_2) \u2192\n    (x : Option (GenContFract.Pair K)) \u2192\n      (Unit \u2192 motive none) \u2192 ((gp : GenContFract.Pair K) \u2192 motive (some gp)) \u2192 motive x"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound",
+        "Classical.choice"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.unique_batch",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "481271240",
+      "stored_type_hash": "1634755894",
+      "type": "\u2200 (d : \u2115 \u2192 \u2115),\n  (\u2200 (n : \u2115), 0 < d n) \u2192\n    \u2200 (j : \u2115),\n      \u2203! n,\n        GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock d n \u2264 j \u2227\n          j < GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock d (n + 1)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator_exponent",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "90838114",
+      "stored_type_hash": "87868403",
+      "type": "\u2200 (gamma : \u2115 \u2192 \u211d),\n  (\u2200 (n : \u2115), 0 \u2264 gamma n) \u2192\n    GRWTSK.RiemannHypothesis.BranchSequenceRealization.arithmeticExponent\n        (GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator gamma) =\n      Filter.limsup (fun n => ENNReal.ofReal (gamma n)) Filter.atTop"
+    },
+    {
+      "axioms": [],
+      "kind": "theorem",
+      "level_parameters": [
+        "u_1",
+        "u_2"
+      ],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "_private.GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization.0.GenContFract.contsAux.match_1.eq_1",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "556401329",
+      "stored_type_hash": "3800592846",
+      "type": "\u2200 {K : Type u_1} (motive : Option (GenContFract.Pair K) \u2192 Sort u_2) (h_1 : Unit \u2192 motive none)\n  (h_2 : (gp : GenContFract.Pair K) \u2192 motive (some gp)),\n  (match none with\n    | none => h_1 ()\n    | some gp => h_2 gp) =\n    h_1 ()"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.native_continuants",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "1526098819",
+      "stored_type_hash": "2672475883",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115) (n : \u2115),\n  (GRWTSK.RiemannHypothesis.BranchSequenceRealization.continuedFraction a).conts n =\n    { a := \u2191(GRWTSK.RiemannHypothesis.BranchSequenceRealization.numerator a n),\n      b := \u2191(GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a n) }"
+    },
+    {
+      "axioms": [],
+      "kind": "definition",
+      "level_parameters": [
+        "u_1"
+      ],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator.match_1",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "3273594470",
+      "stored_type_hash": "4029262380",
+      "type": "(motive : \u2115 \u2192 Sort u_1) \u2192 (x : \u2115) \u2192 (Unit \u2192 motive 0) \u2192 (Unit \u2192 motive 1) \u2192 ((n : \u2115) \u2192 motive n.succ.succ) \u2192 motive x"
+    },
+    {
+      "axioms": [],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock.eq_2",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "51520350",
+      "stored_type_hash": "580420480",
+      "type": "\u2200 (d : \u2115 \u2192 \u2115) (n : \u2115),\n  GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock d n.succ =\n    GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock d n + d n"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.unique_batch._proof_1_5",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "1447813717",
+      "stored_type_hash": "2510750589",
+      "type": "\u2200 (d : \u2115 \u2192 \u2115) (j : \u2115),\n  (\u2203 n, j < GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock d n) \u2192\n    \u2200 (n : \u2115),\n      \u00acj < GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock d n \u2192\n        \u00acGRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock d n \u2264 j \u2192 False"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.index_le_denominator._proof_1_1",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "1591505786",
+      "stored_type_hash": "964417431",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115), \u00ac0 \u2264 GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a 0 \u2192 False"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeCoefficient_pos",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "1275444316",
+      "stored_type_hash": "318504937",
+      "type": "\u2200 (gamma : \u211d) (current : \u2115), 0 < GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeCoefficient gamma current"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeCoefficient.eq_1",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "4098203140",
+      "stored_type_hash": "643919347",
+      "type": "\u2200 (gamma : \u211d) (current : \u2115),\n  GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeCoefficient gamma current = \u2308Real.exp (gamma * \u2191current)\u2309\u208a"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.arithmeticExponent",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "1441607574",
+      "stored_type_hash": "4135584023",
+      "type": "(\u2115 \u2192 \u2115) \u2192 ENNReal"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.effectiveStrength",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "2497279902",
+      "stored_type_hash": "2518674587",
+      "type": "(\u2115 \u2192 Bool) \u2192 (\u2115 \u2192 \u211d) \u2192 \u2115 \u2192 \u211d"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator.eq_2",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "828616026",
+      "stored_type_hash": "1521148514",
+      "type": "\u2200 (gamma : \u2115 \u2192 \u211d),\n  GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator gamma 1 =\n    GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeCoefficient (gamma 0) 1"
+    },
+    {
+      "axioms": [
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator_recurrence_identifies",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "2111399138",
+      "stored_type_hash": "2009442722",
+      "type": "\u2200 {q : \u2115 \u2192 \u2115},\n  GRWTSK.RiemannHypothesis.BranchSequenceRealization.DenominatorRecurrence q \u2192\n    \u2203 a, (\u2200 (n : \u2115), 0 < a n) \u2227 q = GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.selected_spike_exponent",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "3013530469",
+      "stored_type_hash": "3516130276",
+      "type": "\u2200 (selected : \u2115 \u2192 Bool) (gamma : \u2115 \u2192 \u211d),\n  (\u2200 (n : \u2115), 0 \u2264 gamma n) \u2192\n    GRWTSK.RiemannHypothesis.BranchSequenceRealization.arithmeticExponent\n        (GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator\n          (GRWTSK.RiemannHypothesis.BranchSequenceRealization.effectiveStrength selected gamma)) =\n      Filter.limsup\n        (fun n =>\n          ENNReal.ofReal (GRWTSK.RiemannHypothesis.BranchSequenceRealization.effectiveStrength selected gamma n))\n        Filter.atTop"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator.eq_1",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "3104786851",
+      "stored_type_hash": "3566728397",
+      "type": "\u2200 (gamma : \u2115 \u2192 \u211d), GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator gamma 0 = 1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.unique_batch._proof_1_6",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "649946493",
+      "stored_type_hash": "3663912170",
+      "type": "\u2200 (d : \u2115 \u2192 \u2115) (j : \u2115),\n  (\u2203 n, j < GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock d n) \u2192 \u2200 (n m : \u2115), m < n \u2192 \u00acm + 1 \u2264 n \u2192 False"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeStep.eq_1",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "2677961022",
+      "stored_type_hash": "2660389351",
+      "type": "\u2200 (gamma : \u211d) (previous current : \u2115),\n  GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeStep gamma previous current =\n    GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeCoefficient gamma current * current + previous"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.FrequencyRealization",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "95371176",
+      "stored_type_hash": "1954964873",
+      "type": "(\u2115 \u2192 \u2115) \u2192 \u211d \u2192 Prop"
+    },
+    {
+      "axioms": [],
+      "kind": "definition",
+      "level_parameters": [
+        "u_1"
+      ],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "_private.GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization.0.GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock.match_1.splitter",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "2048501782",
+      "stored_type_hash": "413685589",
+      "type": "(motive : \u2115 \u2192 Sort u_1) \u2192 (x : \u2115) \u2192 (Unit \u2192 motive 0) \u2192 ((n : \u2115) \u2192 motive n.succ) \u2192 motive x"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.unique_batch._proof_1_8",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "334469134",
+      "stored_type_hash": "2566492906",
+      "type": "\u2200 (d : \u2115 \u2192 \u2115) (j : \u2115),\n  (\u2203 n, j < GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock d n) \u2192 \u2200 (n m : \u2115), n < m \u2192 \u00acn + 1 \u2264 m \u2192 False"
+    },
+    {
+      "axioms": [],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.partialQuotient",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "3382582633",
+      "stored_type_hash": "3265069721",
+      "type": "(\u2115 \u2192 \u2124) \u2192 \u2115 \u2192 \u2115"
+    },
+    {
+      "axioms": [],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.numerator._unsafe_rec",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "3236011438",
+      "stored_type_hash": "1272646107",
+      "type": "(\u2115 \u2192 \u2115) \u2192 \u2115 \u2192 \u2115"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator._f",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "2530964697",
+      "stored_type_hash": "2880159065",
+      "type": "(\u2115 \u2192 \u211d) \u2192 (x : \u2115) \u2192 Nat.below x \u2192 \u2115"
+    },
+    {
+      "axioms": [],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock._sunfold",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "3790143523",
+      "stored_type_hash": "1272646107",
+      "type": "(\u2115 \u2192 \u2115) \u2192 \u2115 \u2192 \u2115"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.fib_le_denominator._proof_1_5",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "1858436977",
+      "stored_type_hash": "983280288",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115) (n : \u2115),\n  Nat.fib (n + 1) \u2264 GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a n \u2192\n    Nat.fib (n + 1 + 1) \u2264 GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a (n + 1) \u2192\n      Nat.succ 0 * GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a (n + 1) \u2264\n          a (n + 1) * GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a (n + 1) \u2192\n        \u00acNat.fib (n + 1) + Nat.fib (n + 1 + 1) \u2264\n              a (n + 1) * GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a (n + 1) +\n                GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a n \u2192\n          False"
+    },
+    {
+      "axioms": [],
+      "kind": "theorem",
+      "level_parameters": [
+        "u_1"
+      ],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "_private.GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization.0.GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock.match_1.eq_2",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "3975911044",
+      "stored_type_hash": "4179349909",
+      "type": "\u2200 (motive : \u2115 \u2192 Sort u_1) (n : \u2115) (h_1 : Unit \u2192 motive 0) (h_2 : (n : \u2115) \u2192 motive n.succ),\n  (match n.succ with\n    | 0 => h_1 ()\n    | n.succ => h_2 n) =\n    h_2 n"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikePartialQuotient",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "667920389",
+      "stored_type_hash": "434296138",
+      "type": "(\u2115 \u2192 \u211d) \u2192 \u2115 \u2192 \u2115"
+    },
+    {
+      "axioms": [],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.numerator.eq_def",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "3407178777",
+      "stored_type_hash": "3018288267",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115) (x : \u2115),\n  GRWTSK.RiemannHypothesis.BranchSequenceRealization.numerator a x =\n    match x with\n    | 0 => 0\n    | 1 => 1\n    | n.succ.succ =>\n      a (n + 1) * GRWTSK.RiemannHypothesis.BranchSequenceRealization.numerator a (n + 1) +\n        GRWTSK.RiemannHypothesis.BranchSequenceRealization.numerator a n"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound",
+        "Classical.choice"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.epoch_no_starvation",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "719315330",
+      "stored_type_hash": "3621717528",
+      "type": "\u2200 (d : \u2115 \u2192 \u2115),\n  (\u2200 (n : \u2115), 0 < d n) \u2192\n    \u2200 {size r : \u2115},\n      r < size \u2192\n        \u2200 (lower : \u2115),\n          \u2203 j,\n            lower \u2264 j \u2227\n              j % size = r \u2227\n                \u2203! n,\n                  GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock d n \u2264 j \u2227\n                    j < GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock d (n + 1)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeStep",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "3646012338",
+      "stored_type_hash": "158194074",
+      "type": "\u211d \u2192 \u2115 \u2192 \u2115 \u2192 \u2115"
+    },
+    {
+      "axioms": [],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.numerator._sunfold",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "3780516913",
+      "stored_type_hash": "1272646107",
+      "type": "(\u2115 \u2192 \u2115) \u2192 \u2115 \u2192 \u2115"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "2289925939",
+      "stored_type_hash": "434296138",
+      "type": "(\u2115 \u2192 \u211d) \u2192 \u2115 \u2192 \u2115"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.partialQuotient_pos",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "448621386",
+      "stored_type_hash": "2423172729",
+      "type": "\u2200 (b : \u2115 \u2192 \u2124) (n : \u2115), 0 < GRWTSK.RiemannHypothesis.BranchSequenceRealization.partialQuotient b n"
+    },
+    {
+      "axioms": [],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock.eq_def",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "1578506796",
+      "stored_type_hash": "3335923883",
+      "type": "\u2200 (d : \u2115 \u2192 \u2115) (x : \u2115),\n  GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock d x =\n    match x with\n    | 0 => 0\n    | n.succ => GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock d n + d n"
+    },
+    {
+      "axioms": [],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.numerator",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "1164324146",
+      "stored_type_hash": "1272646107",
+      "type": "(\u2115 \u2192 \u2115) \u2192 \u2115 \u2192 \u2115"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.growthCoefficient_meets_target",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "145671903",
+      "stored_type_hash": "1420956815",
+      "type": "\u2200 (target previous current : \u2115),\n  0 < current \u2192\n    target \u2264\n      GRWTSK.RiemannHypothesis.BranchSequenceRealization.growthCoefficient target previous current * current + previous"
+    },
+    {
+      "axioms": [],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator._f",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "125456402",
+      "stored_type_hash": "412496468",
+      "type": "(\u2115 \u2192 \u2115) \u2192 (x : \u2115) \u2192 Nat.below x \u2192 \u2115"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound",
+        "Classical.choice"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.log_ratio_tendsto_zero",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "1682416878",
+      "stored_type_hash": "4056990671",
+      "type": "\u2200 (q : \u2115 \u2192 \u2115),\n  (\u2200 (n : \u2115), 0 < q n) \u2192\n    Filter.Tendsto q Filter.atTop Filter.atTop \u2192\n      \u2200 {C : \u211d},\n        0 < C \u2192\n          (\u2200 (n : \u2115), \u2191(q (n + 1)) \u2264 C * \u2191(q n)) \u2192\n            Filter.Tendsto (fun n => Real.log \u2191(q (n + 1)) / \u2191(q n)) Filter.atTop (nhds 0)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator_pos",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "880102869",
+      "stored_type_hash": "4075017998",
+      "type": "\u2200 (gamma : \u2115 \u2192 \u211d) (n : \u2115), 0 < GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator gamma n"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.continuedFraction_not_terminates",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "1927529966",
+      "stored_type_hash": "739296085",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115), \u00ac(GRWTSK.RiemannHypothesis.BranchSequenceRealization.continuedFraction a).Terminates"
+    },
+    {
+      "axioms": [],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock._unsafe_rec",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "244112849",
+      "stored_type_hash": "1272646107",
+      "type": "(\u2115 \u2192 \u2115) \u2192 \u2115 \u2192 \u2115"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.continuedFraction_term",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "2316289145",
+      "stored_type_hash": "1721450316",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115) (n : \u2115),\n  (GRWTSK.RiemannHypothesis.BranchSequenceRealization.continuedFraction a).s.get? n = some { a := 1, b := \u2191(a n) }"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.unique_batch._proof_1_7",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "3373194478",
+      "stored_type_hash": "3427357984",
+      "type": "\u2200 (d : \u2115 \u2192 \u2115) (j : \u2115),\n  (\u2203 n, j < GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock d n) \u2192\n    \u2200 (n : \u2115),\n      GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock d n \u2264 j \u2192\n        \u2200 (m : \u2115),\n          GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock d m \u2264 j \u2227\n              j < GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock d (m + 1) \u2192\n            GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock d (m + 1) \u2264\n                GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock d n \u2192\n              False"
+    },
+    {
+      "axioms": [],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator.eq_1",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "3064132214",
+      "stored_type_hash": "2902675796",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115), GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a 0 = 1"
+    },
+    {
+      "axioms": [],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.growthCoefficient_pos",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "1239109346",
+      "stored_type_hash": "2261201417",
+      "type": "\u2200 (target previous current : \u2115),\n  0 < GRWTSK.RiemannHypothesis.BranchSequenceRealization.growthCoefficient target previous current"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.powers_two_not_denominators",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "3943313251",
+      "stored_type_hash": "3656914533",
+      "type": "\u00acGRWTSK.RiemannHypothesis.BranchSequenceRealization.DenominatorRecurrence fun n => 2 ^ n"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.epoch_no_starvation._proof_1_2",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "4221406851",
+      "stored_type_hash": "3259720933",
+      "type": "\u2200 {size r : \u2115} (lower : \u2115), lower * 1 \u2264 lower * size \u2192 \u00aclower \u2264 r + lower * size \u2192 False"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.powers_two_not_denominators._proof_1_1",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "1750529618",
+      "stored_type_hash": "72795912",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115), 4 = a 1 * 2 + 1 \u2192 False"
+    },
+    {
+      "axioms": [],
+      "kind": "theorem",
+      "level_parameters": [
+        "u_1"
+      ],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "_private.GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization.0.GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator.match_1.eq_3",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "2711765806",
+      "stored_type_hash": "1078173871",
+      "type": "\u2200 (motive : \u2115 \u2192 Sort u_1) (n : \u2115) (h_1 : Unit \u2192 motive 0) (h_2 : Unit \u2192 motive 1) (h_3 : (n : \u2115) \u2192 motive n.succ.succ),\n  (match n.succ.succ with\n    | 0 => h_1 ()\n    | 1 => h_2 ()\n    | n.succ.succ => h_3 n) =\n    h_3 n"
+    },
+    {
+      "axioms": [],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.numerator.eq_3",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "829608178",
+      "stored_type_hash": "889617080",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115) (n : \u2115),\n  GRWTSK.RiemannHypothesis.BranchSequenceRealization.numerator a n.succ.succ =\n    a (n + 1) * GRWTSK.RiemannHypothesis.BranchSequenceRealization.numerator a (n + 1) +\n      GRWTSK.RiemannHypothesis.BranchSequenceRealization.numerator a n"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.index_le_denominator._proof_1_6",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "2606893669",
+      "stored_type_hash": "3726629106",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115) (n : \u2115),\n  n + 1 \u2264 GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a (n + 1) \u2192\n    0 < GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a n \u2192\n      Nat.succ 0 * GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a (n + 1) \u2264\n          a (n + 1) * GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a (n + 1) \u2192\n        \u00acn + 2 \u2264\n              a (n + 1) * GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a (n + 1) +\n                GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a n \u2192\n          False"
+    },
+    {
+      "axioms": [],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator.eq_2",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "846118911",
+      "stored_type_hash": "2234874584",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115), GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a 1 = a 0"
+    },
+    {
+      "axioms": [],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.growthCoefficient.eq_1",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "27298075",
+      "stored_type_hash": "1018234760",
+      "type": "\u2200 (target previous current : \u2115),\n  GRWTSK.RiemannHypothesis.BranchSequenceRealization.growthCoefficient target previous current =\n    1 + (target - previous) / current"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.fibonacci_arithmeticExponent_zero",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "3866409217",
+      "stored_type_hash": "1250178126",
+      "type": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.arithmeticExponent\n    (GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator fun x => 1) =\n  0"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.index_le_batchClock",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "427888327",
+      "stored_type_hash": "1712207910",
+      "type": "\u2200 (d : \u2115 \u2192 \u2115), (\u2200 (n : \u2115), 0 < d n) \u2192 \u2200 (n : \u2115), n \u2264 GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock d n"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator_pos",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "1392674295",
+      "stored_type_hash": "1977985955",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115), (\u2200 (n : \u2115), 0 < a n) \u2192 \u2200 (n : \u2115), 0 < GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a n"
+    },
+    {
+      "axioms": [],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock_strictMono",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "2687344016",
+      "stored_type_hash": "1903800798",
+      "type": "\u2200 (d : \u2115 \u2192 \u2115), (\u2200 (n : \u2115), 0 < d n) \u2192 StrictMono (GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock d)"
+    },
+    {
+      "axioms": [],
+      "kind": "theorem",
+      "level_parameters": [
+        "u_1"
+      ],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "_private.GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization.0.GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator.match_1.eq_2",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "55174741",
+      "stored_type_hash": "3934788881",
+      "type": "\u2200 (motive : \u2115 \u2192 Sort u_1) (h_1 : Unit \u2192 motive 0) (h_2 : Unit \u2192 motive 1) (h_3 : (n : \u2115) \u2192 motive n.succ.succ),\n  (match 1 with\n    | 0 => h_1 ()\n    | 1 => h_2 ()\n    | n.succ.succ => h_3 n) =\n    h_2 ()"
+    },
+    {
+      "axioms": [],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.numerator.eq_2",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "2136252212",
+      "stored_type_hash": "3908934221",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115), GRWTSK.RiemannHypothesis.BranchSequenceRealization.numerator a 1 = 1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator_identifies",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "3098455632",
+      "stored_type_hash": "2638038238",
+      "type": "\u2200 (gamma : \u2115 \u2192 \u211d),\n  GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator gamma =\n    GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator\n      (GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikePartialQuotient gamma)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.arithmeticExponent_of_converging_spikes",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "1627428952",
+      "stored_type_hash": "3445145347",
+      "type": "\u2200 (q : \u2115 \u2192 \u2115) (gamma : \u2115 \u2192 \u211d),\n  (\u2200 (n : \u2115), 0 < q n) \u2192\n    Filter.Tendsto q Filter.atTop Filter.atTop \u2192\n      (\u2200 (n : \u2115), 0 \u2264 gamma n) \u2192\n        (\u2200 (n : \u2115),\n            \u2203 previous \u2264 q n,\n              q (n + 1) = GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeStep (gamma n) previous (q n)) \u2192\n          \u2200 {beta : \u211d},\n            Filter.Tendsto gamma Filter.atTop (nhds beta) \u2192\n              GRWTSK.RiemannHypothesis.BranchSequenceRealization.arithmeticExponent q = ENNReal.ofReal beta"
+    },
+    {
+      "axioms": [],
+      "kind": "definition",
+      "level_parameters": [
+        "u_1"
+      ],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "_private.GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization.0.GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator.match_1.splitter",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "436825646",
+      "stored_type_hash": "4029262380",
+      "type": "(motive : \u2115 \u2192 Sort u_1) \u2192 (x : \u2115) \u2192 (Unit \u2192 motive 0) \u2192 (Unit \u2192 motive 1) \u2192 ((n : \u2115) \u2192 motive n.succ.succ) \u2192 motive x"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.spike_rate_bounds",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "3573912542",
+      "stored_type_hash": "3052288944",
+      "type": "\u2200 {gamma : \u211d} {previous current : \u2115},\n  0 \u2264 gamma \u2192\n    0 < current \u2192\n      previous \u2264 current \u2192\n        gamma \u2264\n            Real.log \u2191(GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeStep gamma previous current) / \u2191current \u2227\n          Real.log \u2191(GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeStep gamma previous current) / \u2191current \u2264\n            gamma + (Real.log 3 + Real.log \u2191current) / \u2191current"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.unique_batch._proof_1_4",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "847542070",
+      "stored_type_hash": "1983837972",
+      "type": "\u2200 (d : \u2115 \u2192 \u2115) (j : \u2115) (hex : \u2203 n, j < GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock d n) (n : \u2115),\n  Nat.find hex = n.succ \u2192 \u00acn < Nat.find hex \u2192 False"
+    },
+    {
+      "axioms": [],
+      "kind": "theorem",
+      "level_parameters": [
+        "u_1"
+      ],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "_private.GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization.0.GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator.match_1.eq_1",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "3759286259",
+      "stored_type_hash": "3722794650",
+      "type": "\u2200 (motive : \u2115 \u2192 Sort u_1) (h_1 : Unit \u2192 motive 0) (h_2 : Unit \u2192 motive 1) (h_3 : (n : \u2115) \u2192 motive n.succ.succ),\n  (match 0 with\n    | 0 => h_1 ()\n    | 1 => h_2 ()\n    | n.succ.succ => h_3 n) =\n    h_1 ()"
+    },
+    {
+      "axioms": [],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.numerator.eq_1",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "2844468423",
+      "stored_type_hash": "1415720826",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115), GRWTSK.RiemannHypothesis.BranchSequenceRealization.numerator a 0 = 0"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.arithmeticExponent_of_spikes",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "540482036",
+      "stored_type_hash": "4011262017",
+      "type": "\u2200 (q : \u2115 \u2192 \u2115) (gamma : \u2115 \u2192 \u211d),\n  (\u2200 (n : \u2115), 0 < q n) \u2192\n    Filter.Tendsto q Filter.atTop Filter.atTop \u2192\n      (\u2200 (n : \u2115), 0 \u2264 gamma n) \u2192\n        (\u2200 (n : \u2115),\n            \u2203 previous \u2264 q n,\n              q (n + 1) = GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeStep (gamma n) previous (q n)) \u2192\n          GRWTSK.RiemannHypothesis.BranchSequenceRealization.arithmeticExponent q =\n            Filter.limsup (fun n => ENNReal.ofReal (gamma n)) Filter.atTop"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.fib_le_denominator",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "3504592903",
+      "stored_type_hash": "2370365515",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115),\n  (\u2200 (n : \u2115), 0 < a n) \u2192 \u2200 (n : \u2115), Nat.fib (n + 1) \u2264 GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a n"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound",
+        "Classical.choice"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.index_le_denominator",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "934210671",
+      "stored_type_hash": "626728396",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115), (\u2200 (n : \u2115), 0 < a n) \u2192 \u2200 (n : \u2115), n \u2264 GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a n"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator_step",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "stored_body_hash": "2920276372",
+      "stored_type_hash": "3619682093",
+      "type": "\u2200 (gamma : \u2115 \u2192 \u211d) (n : \u2115),\n  \u2203 previous \u2264 GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator gamma n,\n    GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator gamma (n + 1) =\n      GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeStep (gamma n) previous\n        (GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator gamma n)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.finiteTail.eq_def",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "255717007",
+      "stored_type_hash": "4209747516",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115) (x x_1 : \u2115),\n  GRWTSK.RiemannHypothesis.BranchFrequencyExistence.finiteTail a x x_1 =\n    match x, x_1 with\n    | 0, n => \u2191(a n) + 1 / 2\n    | depth.succ, n => \u2191(a n) + (GRWTSK.RiemannHypothesis.BranchFrequencyExistence.finiteTail a depth (n + 1))\u207b\u00b9"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.realizedFrequency_bounds",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "622523083",
+      "stored_type_hash": "2010107418",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115) (ha : \u2200 (n : \u2115), 0 < a n),\n  0 < GRWTSK.RiemannHypothesis.BranchFrequencyExistence.realizedFrequency a ha \u2227\n    GRWTSK.RiemannHypothesis.BranchFrequencyExistence.realizedFrequency a ha < 1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.finiteTail.eq_1",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "2156096242",
+      "stored_type_hash": "3586356632",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115) (x : \u2115), GRWTSK.RiemannHypothesis.BranchFrequencyExistence.finiteTail a 0 x = \u2191(a x) + 1 / 2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.native_denominator_readback",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "2446884038",
+      "stored_type_hash": "2664778504",
+      "type": "\u2200 {a : \u2115 \u2192 \u2115} {alpha : \u211d},\n  GRWTSK.RiemannHypothesis.BranchSequenceRealization.FrequencyRealization a alpha \u2192\n    \u2200 (n : \u2115), \u230a(GenContFract.of alpha).dens n\u230b\u208a = GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a n"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.complete_quotient_floor",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "3282251237",
+      "stored_type_hash": "692267012",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115),\n  (\u2200 (n : \u2115), 0 < a n) \u2192\n    \u2200 {x : \u2115 \u2192 \u211d},\n      x \u2208 GRWTSK.RiemannHypothesis.BranchFrequencyExistence.tailBox a \u2192\n        (\u2200 (n : \u2115), (x n - \u2191(a n)) * x (n + 1) = 1) \u2192 \u2200 (n : \u2115), \u230ax n\u230b = \u2191(a n)"
+    },
+    {
+      "axioms": [],
+      "kind": "definition",
+      "level_parameters": [
+        "u_1"
+      ],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.finiteTail.match_1",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "1372243868",
+      "stored_type_hash": "3515700703",
+      "type": "(motive : \u2115 \u2192 \u2115 \u2192 Sort u_1) \u2192\n  (x x_1 : \u2115) \u2192 ((n : \u2115) \u2192 motive 0 n) \u2192 ((depth n : \u2115) \u2192 motive depth.succ n) \u2192 motive x x_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.finiteWitness_recurrence",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "1846505934",
+      "stored_type_hash": "3916088582",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115) {length n : \u2115},\n  n < length \u2192\n    GRWTSK.RiemannHypothesis.BranchFrequencyExistence.finiteWitness a length n =\n      \u2191(a n) + (GRWTSK.RiemannHypothesis.BranchFrequencyExistence.finiteWitness a length (n + 1))\u207b\u00b9"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.complete_quotient_bounds",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "2551463129",
+      "stored_type_hash": "2618338008",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115),\n  (\u2200 (n : \u2115), 0 < a n) \u2192\n    \u2200 {x : \u2115 \u2192 \u211d},\n      x \u2208 GRWTSK.RiemannHypothesis.BranchFrequencyExistence.tailBox a \u2192\n        (\u2200 (n : \u2115), (x n - \u2191(a n)) * x (n + 1) = 1) \u2192 \u2200 (n : \u2115), \u2191(a n) < x n \u2227 x n < \u2191(a n) + 1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.frequency_realization_unique",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "2178994241",
+      "stored_type_hash": "3698744931",
+      "type": "\u2200 {a : \u2115 \u2192 \u2115} {alpha beta : \u211d},\n  GRWTSK.RiemannHypothesis.BranchSequenceRealization.FrequencyRealization a alpha \u2192\n    GRWTSK.RiemannHypothesis.BranchSequenceRealization.FrequencyRealization a beta \u2192 alpha = beta"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.reciprocal_frequency_realization",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "446080364",
+      "stored_type_hash": "2100995039",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115),\n  (\u2200 (n : \u2115), 0 < a n) \u2192\n    \u2200 {x : \u2115 \u2192 \u211d},\n      x \u2208 GRWTSK.RiemannHypothesis.BranchFrequencyExistence.tailBox a \u2192\n        (\u2200 (n : \u2115), (x n - \u2191(a n)) * x (n + 1) = 1) \u2192\n          GRWTSK.RiemannHypothesis.BranchSequenceRealization.FrequencyRealization a (x 0)\u207b\u00b9"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.complete_quotient_pair",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "3961443583",
+      "stored_type_hash": "3742623993",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115),\n  (\u2200 (n : \u2115), 0 < a n) \u2192\n    \u2200 {x : \u2115 \u2192 \u211d},\n      x \u2208 GRWTSK.RiemannHypothesis.BranchFrequencyExistence.tailBox a \u2192\n        (\u2200 (n : \u2115), (x n - \u2191(a n)) * x (n + 1) = 1) \u2192\n          \u2200 (n : \u2115), GenContFract.IntFractPair.of (x n) = { b := \u2191(a n), fr := (x (n + 1))\u207b\u00b9 }"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.finiteTail._sunfold",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "1829955064",
+      "stored_type_hash": "357000213",
+      "type": "(\u2115 \u2192 \u2115) \u2192 \u2115 \u2192 \u2115 \u2192 \u211d"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.complete_quotient_recurrence",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "1847456430",
+      "stored_type_hash": "3862709820",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115),\n  (\u2200 (n : \u2115), 0 < a n) \u2192\n    \u2200 {x : \u2115 \u2192 \u211d},\n      x \u2208 GRWTSK.RiemannHypothesis.BranchFrequencyExistence.tailBox a \u2192\n        (\u2200 (n : \u2115), (x n - \u2191(a n)) * x (n + 1) = 1) \u2192 \u2200 (n : \u2115), x n = \u2191(a n) + (x (n + 1))\u207b\u00b9"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.finiteTail",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "871011143",
+      "stored_type_hash": "357000213",
+      "type": "(\u2115 \u2192 \u2115) \u2192 \u2115 \u2192 \u2115 \u2192 \u211d"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.finiteTail._proof_1",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "2289379630",
+      "stored_type_hash": "2547959801",
+      "type": "(1 + 1).AtLeastTwo"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.prefixSet_succ_subset._proof_1_1",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "1060408534",
+      "stored_type_hash": "1754764682",
+      "type": "\u2200 (length n : \u2115), n < length \u2192 \u00acn < length + 1 \u2192 False"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.finiteTail._f",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "4115856254",
+      "stored_type_hash": "311203488",
+      "type": "(\u2115 \u2192 \u2115) \u2192 (x : \u2115) \u2192 Nat.below (motive := fun x => \u2115 \u2192 \u211d) x \u2192 \u2115 \u2192 \u211d"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.complete_quotient_stream",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "3040644097",
+      "stored_type_hash": "550883789",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115),\n  (\u2200 (n : \u2115), 0 < a n) \u2192\n    \u2200 {x : \u2115 \u2192 \u211d},\n      x \u2208 GRWTSK.RiemannHypothesis.BranchFrequencyExistence.tailBox a \u2192\n        (\u2200 (n : \u2115), (x n - \u2191(a n)) * x (n + 1) = 1) \u2192\n          \u2200 (n : \u2115), GenContFract.IntFractPair.stream (x 0) n = some { b := \u2191(a n), fr := (x (n + 1))\u207b\u00b9 }"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.exists_frequency_realization",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "4097405624",
+      "stored_type_hash": "2580782373",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115),\n  (\u2200 (n : \u2115), 0 < a n) \u2192\n    \u2203 alpha,\n      0 < alpha \u2227\n        alpha < 1 \u2227 GRWTSK.RiemannHypothesis.BranchSequenceRealization.FrequencyRealization a alpha \u2227 Irrational alpha"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.source_frequency_exists",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "4275157808",
+      "stored_type_hash": "4118391461",
+      "type": "\u2200 (b : \u2115 \u2192 \u2124),\n  \u2203 alpha,\n    0 < alpha \u2227\n      alpha < 1 \u2227\n        GRWTSK.RiemannHypothesis.BranchSequenceRealization.FrequencyRealization\n            (GRWTSK.RiemannHypothesis.BranchSequenceRealization.partialQuotient b) alpha \u2227\n          Irrational alpha"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.finiteTail.eq_2",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "1689720818",
+      "stored_type_hash": "1837624240",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115) (x depth : \u2115),\n  GRWTSK.RiemannHypothesis.BranchFrequencyExistence.finiteTail a depth.succ x =\n    \u2191(a x) + (GRWTSK.RiemannHypothesis.BranchFrequencyExistence.finiteTail a depth (x + 1))\u207b\u00b9"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.prescribed_finite_exponent_exists",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "877328473",
+      "stored_type_hash": "2204285533",
+      "type": "\u2200 (beta : \u211d),\n  0 \u2264 beta \u2192\n    \u2203 alpha,\n      0 < alpha \u2227\n        alpha < 1 \u2227\n          Irrational alpha \u2227\n            GRWTSK.RiemannHypothesis.BranchFrequencyExistence.frequencyExponent alpha = ENNReal.ofReal beta"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.frequencyExponent",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "2696135133",
+      "stored_type_hash": "3457941426",
+      "type": "\u211d \u2192 ENNReal"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.spike_frequency_exists",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "2054520987",
+      "stored_type_hash": "2434625284",
+      "type": "\u2200 (gamma : \u2115 \u2192 \u211d),\n  (\u2200 (n : \u2115), 0 \u2264 gamma n) \u2192\n    \u2203 alpha,\n      0 < alpha \u2227\n        alpha < 1 \u2227\n          Irrational alpha \u2227\n            GRWTSK.RiemannHypothesis.BranchSequenceRealization.FrequencyRealization\n                (GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikePartialQuotient gamma) alpha \u2227\n              GRWTSK.RiemannHypothesis.BranchFrequencyExistence.frequencyExponent alpha =\n                Filter.limsup (fun n => ENNReal.ofReal (gamma n)) Filter.atTop"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.exists_complete_quotients",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "3573001304",
+      "stored_type_hash": "4254652902",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115),\n  (\u2200 (n : \u2115), 0 < a n) \u2192\n    \u2203 x \u2208 GRWTSK.RiemannHypothesis.BranchFrequencyExistence.tailBox a, \u2200 (n : \u2115), (x n - \u2191(a n)) * x (n + 1) = 1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound",
+        "Classical.choice"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.tailBox_compact",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "1427277079",
+      "stored_type_hash": "2441557304",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115), IsCompact (GRWTSK.RiemannHypothesis.BranchFrequencyExistence.tailBox a)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.prefixSet_zero",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "952799851",
+      "stored_type_hash": "2067735768",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115),\n  GRWTSK.RiemannHypothesis.BranchFrequencyExistence.prefixSet a 0 =\n    GRWTSK.RiemannHypothesis.BranchFrequencyExistence.tailBox a"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.prefixSet_succ_subset",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "1279948759",
+      "stored_type_hash": "3147191206",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115) (length : \u2115),\n  GRWTSK.RiemannHypothesis.BranchFrequencyExistence.prefixSet a (length + 1) \u2286\n    GRWTSK.RiemannHypothesis.BranchFrequencyExistence.prefixSet a length"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.complete_quotient_fract",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "971911219",
+      "stored_type_hash": "3311548561",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115),\n  (\u2200 (n : \u2115), 0 < a n) \u2192\n    \u2200 {x : \u2115 \u2192 \u211d},\n      x \u2208 GRWTSK.RiemannHypothesis.BranchFrequencyExistence.tailBox a \u2192\n        (\u2200 (n : \u2115), (x n - \u2191(a n)) * x (n + 1) = 1) \u2192 \u2200 (n : \u2115), Int.fract (x n) = (x (n + 1))\u207b\u00b9"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.realizedFrequency_eq",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "429488130",
+      "stored_type_hash": "2474831496",
+      "type": "\u2200 {a : \u2115 \u2192 \u2115} (ha : \u2200 (n : \u2115), 0 < a n) {alpha : \u211d},\n  GRWTSK.RiemannHypothesis.BranchSequenceRealization.FrequencyRealization a alpha \u2192\n    GRWTSK.RiemannHypothesis.BranchFrequencyExistence.realizedFrequency a ha = alpha"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.finiteTail_bounds",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "1033692927",
+      "stored_type_hash": "1761605941",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115),\n  (\u2200 (n : \u2115), 0 < a n) \u2192\n    \u2200 (depth n : \u2115),\n      \u2191(a n) < GRWTSK.RiemannHypothesis.BranchFrequencyExistence.finiteTail a depth n \u2227\n        GRWTSK.RiemannHypothesis.BranchFrequencyExistence.finiteTail a depth n < \u2191(a n) + 1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound",
+        "Classical.choice"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.realizedFrequency_convergence",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "83964533",
+      "stored_type_hash": "963866961",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115) (ha : \u2200 (n : \u2115), 0 < a n),\n  Filter.Tendsto\n    (fun n =>\n      \u2191(GRWTSK.RiemannHypothesis.BranchSequenceRealization.numerator a n) /\n        \u2191(GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a n))\n    Filter.atTop (nhds (GRWTSK.RiemannHypothesis.BranchFrequencyExistence.realizedFrequency a ha))"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.realizedFrequency",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "608144799",
+      "stored_type_hash": "1479383418",
+      "type": "(a : \u2115 \u2192 \u2115) \u2192 (\u2200 (n : \u2115), 0 < a n) \u2192 \u211d"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.finiteTail._unsafe_rec",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "1744157867",
+      "stored_type_hash": "357000213",
+      "type": "(\u2115 \u2192 \u2115) \u2192 \u2115 \u2192 \u2115 \u2192 \u211d"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.prefixSet_closed",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "3255438976",
+      "stored_type_hash": "2600007305",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115) (length : \u2115), IsClosed (GRWTSK.RiemannHypothesis.BranchFrequencyExistence.prefixSet a length)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.reciprocal_frequency_bounds",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "2397778826",
+      "stored_type_hash": "1220961180",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115),\n  (\u2200 (n : \u2115), 0 < a n) \u2192\n    \u2200 {x : \u2115 \u2192 \u211d},\n      x \u2208 GRWTSK.RiemannHypothesis.BranchFrequencyExistence.tailBox a \u2192\n        (\u2200 (n : \u2115), (x n - \u2191(a n)) * x (n + 1) = 1) \u2192 0 < (x 0)\u207b\u00b9 \u2227 (x 0)\u207b\u00b9 < 1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.allOnes_frequency_exists",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "3950571267",
+      "stored_type_hash": "2093073483",
+      "type": "\u2203 alpha,\n  Irrational alpha \u2227\n    GRWTSK.RiemannHypothesis.BranchSequenceRealization.FrequencyRealization (fun x => 1) alpha \u2227\n      GRWTSK.RiemannHypothesis.BranchFrequencyExistence.frequencyExponent alpha = 0"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.selected_spike_frequency_exists",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "474799617",
+      "stored_type_hash": "1464021905",
+      "type": "\u2200 (selected : \u2115 \u2192 Bool) (gamma : \u2115 \u2192 \u211d),\n  (\u2200 (n : \u2115), 0 \u2264 gamma n) \u2192\n    \u2203 alpha,\n      0 < alpha \u2227\n        alpha < 1 \u2227\n          Irrational alpha \u2227\n            GRWTSK.RiemannHypothesis.BranchSequenceRealization.FrequencyRealization\n                (GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikePartialQuotient\n                  (GRWTSK.RiemannHypothesis.BranchSequenceRealization.effectiveStrength selected gamma))\n                alpha \u2227\n              GRWTSK.RiemannHypothesis.BranchFrequencyExistence.frequencyExponent alpha =\n                Filter.limsup\n                  (fun n =>\n                    ENNReal.ofReal\n                      (GRWTSK.RiemannHypothesis.BranchSequenceRealization.effectiveStrength selected gamma n))\n                  Filter.atTop"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.finiteWitness",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "2658754609",
+      "stored_type_hash": "357000213",
+      "type": "(\u2115 \u2192 \u2115) \u2192 \u2115 \u2192 \u2115 \u2192 \u211d"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.tailBox",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "3457302484",
+      "stored_type_hash": "1354148932",
+      "type": "(\u2115 \u2192 \u2115) \u2192 Set (\u2115 \u2192 \u211d)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.realizedFrequency_irrational",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "1821701120",
+      "stored_type_hash": "2219795061",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115) (ha : \u2200 (n : \u2115), 0 < a n),\n  Irrational (GRWTSK.RiemannHypothesis.BranchFrequencyExistence.realizedFrequency a ha)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.prefixSet.eq_1",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "1595057211",
+      "stored_type_hash": "1400282089",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115) (length : \u2115),\n  GRWTSK.RiemannHypothesis.BranchFrequencyExistence.prefixSet a length =\n    GRWTSK.RiemannHypothesis.BranchFrequencyExistence.tailBox a \u2229 {x | \u2200 n < length, (x n - \u2191(a n)) * x (n + 1) = 1}"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.realizedFrequency_realization",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "544016520",
+      "stored_type_hash": "1167983808",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115) (ha : \u2200 (n : \u2115), 0 < a n),\n  GRWTSK.RiemannHypothesis.BranchSequenceRealization.FrequencyRealization a\n    (GRWTSK.RiemannHypothesis.BranchFrequencyExistence.realizedFrequency a ha)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.finiteWitness_recurrence._proof_1_1",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "1683217335",
+      "stored_type_hash": "1590932370",
+      "type": "\u2200 {length n : \u2115}, n < length \u2192 \u00aclength - n = length - (n + 1) + 1 \u2192 False"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.tailBox_closed",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "1916093564",
+      "stored_type_hash": "3502520924",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115), IsClosed (GRWTSK.RiemannHypothesis.BranchFrequencyExistence.tailBox a)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.finiteWitness_mem_box",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "3973469188",
+      "stored_type_hash": "911623491",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115),\n  (\u2200 (n : \u2115), 0 < a n) \u2192\n    \u2200 (length : \u2115),\n      GRWTSK.RiemannHypothesis.BranchFrequencyExistence.finiteWitness a length \u2208\n        GRWTSK.RiemannHypothesis.BranchFrequencyExistence.tailBox a"
+    },
+    {
+      "axioms": [],
+      "kind": "theorem",
+      "level_parameters": [
+        "u_1"
+      ],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "_private.GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence.0.GRWTSK.RiemannHypothesis.BranchFrequencyExistence.finiteTail.match_1.eq_1",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "568761840",
+      "stored_type_hash": "4137460535",
+      "type": "\u2200 (motive : \u2115 \u2192 \u2115 \u2192 Sort u_1) (n : \u2115) (h_1 : (n : \u2115) \u2192 motive 0 n) (h_2 : (depth n : \u2115) \u2192 motive depth.succ n),\n  (match 0, n with\n    | 0, n => h_1 n\n    | depth.succ, n => h_2 depth n) =\n    h_1 n"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.infinite_exponent_exists",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "3356538861",
+      "stored_type_hash": "962854520",
+      "type": "\u2203 alpha,\n  0 < alpha \u2227\n    alpha < 1 \u2227 Irrational alpha \u2227 GRWTSK.RiemannHypothesis.BranchFrequencyExistence.frequencyExponent alpha = \u22a4"
+    },
+    {
+      "axioms": [],
+      "kind": "definition",
+      "level_parameters": [
+        "u_1"
+      ],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "_private.GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence.0.GRWTSK.RiemannHypothesis.BranchFrequencyExistence.finiteTail.match_1.splitter",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "987683547",
+      "stored_type_hash": "3515700703",
+      "type": "(motive : \u2115 \u2192 \u2115 \u2192 Sort u_1) \u2192\n  (x x_1 : \u2115) \u2192 ((n : \u2115) \u2192 motive 0 n) \u2192 ((depth n : \u2115) \u2192 motive depth.succ n) \u2192 motive x x_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.prefixSet",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "3940251908",
+      "stored_type_hash": "2950875999",
+      "type": "(\u2115 \u2192 \u2115) \u2192 \u2115 \u2192 Set (\u2115 \u2192 \u211d)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.frequencyExponent_eq",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "3795451796",
+      "stored_type_hash": "245068208",
+      "type": "\u2200 {a : \u2115 \u2192 \u2115} {alpha : \u211d},\n  GRWTSK.RiemannHypothesis.BranchSequenceRealization.FrequencyRealization a alpha \u2192\n    GRWTSK.RiemannHypothesis.BranchFrequencyExistence.frequencyExponent alpha =\n      GRWTSK.RiemannHypothesis.BranchSequenceRealization.arithmeticExponent\n        (GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator a)"
+    },
+    {
+      "axioms": [],
+      "kind": "theorem",
+      "level_parameters": [
+        "u_1"
+      ],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "_private.GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence.0.GRWTSK.RiemannHypothesis.BranchFrequencyExistence.finiteTail.match_1.eq_2",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "3857525551",
+      "stored_type_hash": "2363339242",
+      "type": "\u2200 (motive : \u2115 \u2192 \u2115 \u2192 Sort u_1) (depth n : \u2115) (h_1 : (n : \u2115) \u2192 motive 0 n) (h_2 : (depth n : \u2115) \u2192 motive depth.succ n),\n  (match depth.succ, n with\n    | 0, n => h_1 n\n    | depth.succ, n => h_2 depth n) =\n    h_2 depth n"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "name": "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.prefixSet_nonempty",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "stored_body_hash": "2764327672",
+      "stored_type_hash": "2578343357",
+      "type": "\u2200 (a : \u2115 \u2192 \u2115),\n  (\u2200 (n : \u2115), 0 < a n) \u2192 \u2200 (length : \u2115), (GRWTSK.RiemannHypothesis.BranchFrequencyExistence.prefixSet a length).Nonempty"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceReturn",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceReturn.PolynomialBound",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceReturn",
+      "stored_body_hash": "455537539",
+      "stored_type_hash": "4254974927",
+      "type": "(\u211d \u2192 \u211d) \u2192 Prop"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceReturn",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceReturn.approximation_return",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceReturn",
+      "stored_body_hash": "4097661769",
+      "stored_type_hash": "2437337379",
+      "type": "\u2200 (source target finiteSource finiteTarget : \u211d \u2192 \u211d \u2192 \u211d) {lip alpha alpha' L kappa left right : \u211d},\n  GRWTSK.RiemannHypothesis.BranchSequenceReturn.ApproximationCertificate lip alpha alpha' L kappa \u2192\n    source (left + kappa) (right - kappa) \u2264 finiteSource (left + kappa) (right - kappa) + 2 / L \u2192\n      (\u2200 (displacement : \u211d),\n          GRWTSK.RiemannHypothesis.BranchSequenceReturn.intervalLoss lip alpha alpha' L \u2264 displacement \u2192\n            finiteSource (left + displacement) (right - displacement) \u2264 finiteTarget left right) \u2192\n        finiteTarget left right \u2264 target left right + 2 / L \u2192\n          source (left + kappa) (right - kappa) - GRWTSK.RiemannHypothesis.BranchSequenceReturn.finiteSizeLoss L \u2264\n            target left right"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceReturn",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceReturn.intervalLoss",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceReturn",
+      "stored_body_hash": "1382746927",
+      "stored_type_hash": "2478058063",
+      "type": "\u211d \u2192 \u211d \u2192 \u211d \u2192 \u211d \u2192 \u211d"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceReturn",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceReturn.ArithmeticRoute",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceReturn",
+      "stored_body_hash": "4034233103",
+      "stored_type_hash": "4074603134",
+      "type": "(\u2115 \u2192 \u2115) \u2192 \u211d \u2192 (\u211d \u2192 Prop) \u2192 (\u211d \u2192 \u211d) \u2192 (\u211d \u2192 \u211d) \u2192 (\u211d \u2192 \u211d) \u2192 Prop"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceReturn",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceReturn.intervalLoss._proof_1",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceReturn",
+      "stored_body_hash": "2289379630",
+      "stored_type_hash": "2547959801",
+      "type": "(1 + 1).AtLeastTwo"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceReturn",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceReturn.arithmetic_route_return",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceReturn",
+      "stored_body_hash": "1640374253",
+      "stored_type_hash": "3925882916",
+      "type": "\u2200 {a : \u2115 \u2192 \u2115} {alpha : \u211d} {growth : \u211d \u2192 Prop} {target observable correction : \u211d \u2192 \u211d},\n  GRWTSK.RiemannHypothesis.BranchSequenceReturn.ArithmeticRoute a alpha growth target observable correction \u2192\n    GRWTSK.RiemannHypothesis.BranchSequenceReturn.PolynomialBound target"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceReturn",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceReturn.intervalLoss.eq_1",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceReturn",
+      "stored_body_hash": "1895633714",
+      "stored_type_hash": "1044536158",
+      "type": "\u2200 (lip alpha alpha' L : \u211d),\n  GRWTSK.RiemannHypothesis.BranchSequenceReturn.intervalLoss lip alpha alpha' L =\n    2 * Real.pi * lip * |alpha' - alpha| * L"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceReturn",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceReturn.equal_frequency_intervalLoss",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceReturn",
+      "stored_body_hash": "761427267",
+      "stored_type_hash": "558010430",
+      "type": "\u2200 (lip alpha L : \u211d), GRWTSK.RiemannHypothesis.BranchSequenceReturn.intervalLoss lip alpha alpha L = 0"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceReturn",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceReturn.IdentifiesWithLoss",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceReturn",
+      "stored_body_hash": "3868862114",
+      "stored_type_hash": "2948329438",
+      "type": "(\u211d \u2192 \u211d) \u2192 (\u211d \u2192 \u211d) \u2192 (\u211d \u2192 \u211d) \u2192 Prop"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceReturn",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceReturn.intervalLoss_nonneg",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceReturn",
+      "stored_body_hash": "2198147645",
+      "stored_type_hash": "1644816167",
+      "type": "\u2200 {lip alpha alpha' L : \u211d},\n  0 \u2264 lip \u2192 0 \u2264 L \u2192 0 \u2264 GRWTSK.RiemannHypothesis.BranchSequenceReturn.intervalLoss lip alpha alpha' L"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceReturn",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceReturn.finiteSizeLoss_pos",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceReturn",
+      "stored_body_hash": "3814500054",
+      "stored_type_hash": "3460741736",
+      "type": "\u2200 {L : \u211d}, 0 < L \u2192 0 < GRWTSK.RiemannHypothesis.BranchSequenceReturn.finiteSizeLoss L"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceReturn",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceReturn.polynomial_return",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceReturn",
+      "stored_body_hash": "3909840905",
+      "stored_type_hash": "3918803224",
+      "type": "\u2200 {target observable correction : \u211d \u2192 \u211d},\n  GRWTSK.RiemannHypothesis.BranchSequenceReturn.IdentifiesWithLoss target observable correction \u2192\n    GRWTSK.RiemannHypothesis.BranchSequenceReturn.PolynomialBound observable \u2192\n      GRWTSK.RiemannHypothesis.BranchSequenceReturn.PolynomialBound correction \u2192\n        GRWTSK.RiemannHypothesis.BranchSequenceReturn.PolynomialBound target"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceReturn",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceReturn.ApproximationCertificate",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceReturn",
+      "stored_body_hash": "3564936465",
+      "stored_type_hash": "2982186687",
+      "type": "\u211d \u2192 \u211d \u2192 \u211d \u2192 \u211d \u2192 \u211d \u2192 Prop"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceReturn",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceReturn.finiteSizeLoss._proof_1",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceReturn",
+      "stored_body_hash": "4284280986",
+      "stored_type_hash": "2205062316",
+      "type": "(3 + 1).AtLeastTwo"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceReturn",
+      "name": "GRWTSK.RiemannHypothesis.BranchSequenceReturn.finiteSizeLoss",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSequenceReturn",
+      "stored_body_hash": "3032642387",
+      "stored_type_hash": "3468892319",
+      "type": "\u211d \u2192 \u211d"
+    }
+  ],
+  "whole_branch_public_transfer_complete": false,
+  "whole_branch_formalization_complete": false,
+  "P04_status": "OPEN ARITHMETIC WITNESS",
+  "RH_proved": false,
+  "authenticated_review_claimed": false
+}

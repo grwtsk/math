@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "input_manifest_sha256": "c5ebac227893ecdb203b208a56cdba598748c44e3fbf1c84bc9e455fa9f163b5",
+  "input_manifest_sha256": "3bf54caca5f84f15f752f53ddab9f6dadcaa18421b2f7bcbb43bc36d28bdbf37",
   "lean_binary_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
   "toolchain_commit": "d8b18978322de05a8f3dba51ef03cf5461676c17",
   "dependency_revisions": {
@@ -20,7 +20,7 @@
       "name": "compile-GRWTSK.NumberTheory.FirstPrime",
       "outcome": "passed",
       "exit_code": 0,
-      "seconds": 7.350710417,
+      "seconds": 3.139745041999049,
       "source_sha256": "436e96d07490a3251683045a1f4929a1df5eca692fb411c87fe527d71b2a0d9c",
       "output": ""
     },
@@ -28,7 +28,7 @@
       "name": "compile-GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.MoserSource",
       "outcome": "passed",
       "exit_code": 0,
-      "seconds": 25.035137916,
+      "seconds": 7.869937375000518,
       "source_sha256": "f41ba35bc8fa8d35b8249b1a86c3aa55b8f7ef22662270de862699e72efe93d2",
       "output": ""
     },
@@ -36,7 +36,7 @@
       "name": "compile-GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.Moser",
       "outcome": "passed",
       "exit_code": 0,
-      "seconds": 77.34249083399999,
+      "seconds": 65.32084766600019,
       "source_sha256": "1791f62713a936d9d91f262273871cf5d28257e390f15d05454a5f2115ce8796",
       "output": ""
     },
@@ -44,7 +44,7 @@
       "name": "compile-GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.MoserCoordinates",
       "outcome": "passed",
       "exit_code": 0,
-      "seconds": 12.736609708999993,
+      "seconds": 7.954261625000072,
       "source_sha256": "0e29b36d41b117eb4c747ddaf02bf22a2b87e8a59b0665a424d1a1277a38c8ec",
       "output": ""
     },
@@ -52,7 +52,7 @@
       "name": "compile-GRWTSK.RiemannHypothesis.TargetStatement",
       "outcome": "passed",
       "exit_code": 0,
-      "seconds": 31.235536957999983,
+      "seconds": 9.002347916000872,
       "source_sha256": "26de9b9d99b5e04103c8095c3b466ce301fab1d52dd40155703a160aac44f1f6",
       "output": ""
     },
@@ -60,7 +60,7 @@
       "name": "compile-GRWTSK.RiemannHypothesis.Definitions",
       "outcome": "passed",
       "exit_code": 0,
-      "seconds": 28.078456042,
+      "seconds": 5.375916832999792,
       "source_sha256": "107f357b8c04afc16e25b8fded6922782d2756959b42f080af839f4db58e9aa0",
       "output": ""
     },
@@ -68,7 +68,7 @@
       "name": "compile-GRWTSK.RiemannHypothesis.Defect",
       "outcome": "passed",
       "exit_code": 0,
-      "seconds": 33.59603529100002,
+      "seconds": 6.517885416998979,
       "source_sha256": "94bfc9f62d99bfec9dcf4b41975cb08feeb7302387f9f7fcdb9dcedb7aa32ba7",
       "output": ""
     },
@@ -76,7 +76,7 @@
       "name": "compile-GRWTSK.RiemannHypothesis.ZeroSymmetry",
       "outcome": "passed",
       "exit_code": 0,
-      "seconds": 38.76877783300003,
+      "seconds": 8.360841875000915,
       "source_sha256": "d11ab9b34e31569a7d1441fb53bdb0abfce041c80e79cca4ebee46509be910bc",
       "output": ""
     },
@@ -84,7 +84,7 @@
       "name": "compile-GRWTSK.RiemannHypothesis.TargetComparator",
       "outcome": "passed",
       "exit_code": 0,
-      "seconds": 27.520377542000006,
+      "seconds": 8.32741795900074,
       "source_sha256": "73d6f49323b54bd75baabd0dfcac668ef397c9f6a59c54dfb3b1179cc21614d2",
       "output": ""
     },
@@ -92,23 +92,263 @@
       "name": "compile-GRWTSK.RiemannHypothesis",
       "outcome": "passed",
       "exit_code": 0,
-      "seconds": 23.485265208000044,
+      "seconds": 6.774776457999906,
       "source_sha256": "b57400dc6817cf946c1617a28fcef53e4db0f56ceb24f455f89fb24d95d53573",
+      "output": ""
+    },
+    {
+      "name": "compile-GRWTSK.Algebra.OrderedProduct",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 2.4276361249994807,
+      "source_sha256": "97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d",
+      "output": ""
+    },
+    {
+      "name": "compile-GRWTSK.LinearAlgebra.CommonJ",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 8.619995917000779,
+      "source_sha256": "c4fb5fef172e3855ba2d9ed1811246022e07813fbce00ee5341d393fcdb62767",
+      "output": ""
+    },
+    {
+      "name": "compile-GRWTSK.LinearAlgebra.CommonJCounterexamples",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 7.810901083999852,
+      "source_sha256": "4bed27e7c490006f93c462cee2e088c9d6655678da35d1e926a7d3cd75d3a892",
+      "output": ""
+    },
+    {
+      "name": "compile-GRWTSK.Algebra.OrderedProductGauge",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 2.373895665999953,
+      "source_sha256": "d6ca049d4674503df5b175e7028c41c742af43ec7c42389a3fb3528c8f6ec5ae",
+      "output": ""
+    },
+    {
+      "name": "compile-GRWTSK.Analysis.Polarization",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 7.190373666000596,
+      "source_sha256": "eca8d7c7426a9c4a329522472fffbc3c3de6f05c047cb328ddd1b2c2da59c2d5",
+      "output": ""
+    },
+    {
+      "name": "compile-GRWTSK.Analysis.IntervalReflection",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 22.063783207999222,
+      "source_sha256": "8daccbb547c6ea9e481182366f25bae913a4effbf59059becd9a40532541591d",
+      "output": ""
+    },
+    {
+      "name": "compile-GRWTSK.Logic.FiniteCoverage",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 3.591051833000165,
+      "source_sha256": "e1694a750b75d4b4db6bdba517f494a1aa7955736569e04643a2ddc7b45cf4ef",
+      "output": ""
+    },
+    {
+      "name": "compile-GRWTSK.RiemannHypothesis.InferenceGuards",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 6.093095333000747,
+      "source_sha256": "e2c30ae63d9f5ae257c3866bfd9b9a4aa686cb69ed70067c5f9069bffa94ef77",
+      "output": ""
+    },
+    {
+      "name": "compile-GRWTSK.LinearAlgebra.SchrodingerTransfer",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 4.621167125000284,
+      "source_sha256": "25f93a03bb8e1b5df2f73c782160ed9f356f592c6cca4e56c92cde7fd974969d",
+      "output": ""
+    },
+    {
+      "name": "compile-GRWTSK.RiemannHypothesis.CCC.PickupBudgets",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 6.590073291999943,
+      "source_sha256": "a0735d6120754b4921c55346a5fb0203cb3586bd6f312289f83b0a76218cffbb",
+      "output": ""
+    },
+    {
+      "name": "compile-GRWTSK.RiemannHypothesis.CCC.PickupRegularity",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 6.324454167001022,
+      "source_sha256": "663fd9e9d6fd6af327eeac76166ea40c9dc07c029b5822468533d80db8b4f9be",
+      "output": ""
+    },
+    {
+      "name": "compile-GRWTSK.RiemannHypothesis.CCC.PickupFiniteIdentity",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 7.293024166001487,
+      "source_sha256": "4b4be0a5e4e2614ff81d192620170b5b47941e10e74f1965b5bbd0914ec24a51",
+      "output": ""
+    },
+    {
+      "name": "compile-GRWTSK.RiemannHypothesis.CCC.PrimeCascade",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 8.193155750001097,
+      "source_sha256": "23995d93841e2ad1babd73a476dced219992c9a675396780ab6f675b56d458ce",
+      "output": ""
+    },
+    {
+      "name": "compile-GRWTSK.RiemannHypothesis.CCC.DiagonalAllowance",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 7.13131545899887,
+      "source_sha256": "748100ebb0ba4440335668ecb96a079d869de82bb7ac2fb7ecb09ca089469a3c",
+      "output": ""
+    },
+    {
+      "name": "compile-GRWTSK.RiemannHypothesis.CCC.PickupDiagonalBound",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 15.791134707998935,
+      "source_sha256": "e4b835ea2904d9494dd2b5252f1297ac76a924b153b94b99865471bd619155e8",
+      "output": ""
+    },
+    {
+      "name": "compile-GRWTSK.RiemannHypothesis.CCC.PickupLaplaceDefinition",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 7.307002666999324,
+      "source_sha256": "900d196c65816d9217c05246e6fd5a847d5fe975baa1adb869907e394a9e6514",
+      "output": ""
+    },
+    {
+      "name": "compile-GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 10.465798999999606,
+      "source_sha256": "52717097ba1ac20ef02efa7d744c413458026d9c3de8d35bb6bd9de833c14f38",
+      "output": ""
+    },
+    {
+      "name": "compile-GRWTSK.RiemannHypothesis.CCC.EnergyIntegrability",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 7.714579916999355,
+      "source_sha256": "18a3aac5fcfb6844da96d34db5febc659f8c2694bd178ab187d324fbc9d6780b",
+      "output": ""
+    },
+    {
+      "name": "compile-GRWTSK.RiemannHypothesis.CCC.LaplaceAnalytic",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 8.571738708000339,
+      "source_sha256": "9b36cbd99be50262b982974d665a0b226495665a5e509f7355ce66a2e08e2f10",
+      "output": ""
+    },
+    {
+      "name": "compile-GRWTSK.RiemannHypothesis.CCC.SignedPickupAnalytic",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 7.520735999998578,
+      "source_sha256": "04f4c00bae21d3fde810919c80030f2be5a2bdac9836dec0c5ea0ed5ab9b81c6",
+      "output": ""
+    },
+    {
+      "name": "compile-GRWTSK.RiemannHypothesis.CCC.RegularizedZeta",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 8.40353929199955,
+      "source_sha256": "084fe442c91faee379c83ad8a7a6af1f4500bd5eb66bbc5f999b160106627af7",
+      "output": ""
+    },
+    {
+      "name": "compile-GRWTSK.RiemannHypothesis.CCC.EnergyRHReturn",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 9.555081959000745,
+      "source_sha256": "62ffb37232e2b35e062f180bda8fe9f54369b98b431a2f97d0b30d539932efd0",
+      "output": ""
+    },
+    {
+      "name": "compile-GRWTSK.RiemannHypothesis.CCC.EnergyReturn",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 6.442899166000643,
+      "source_sha256": "2116d2d7191ae28844ead58af1eb76e32a0272e6e4c92566d6d48bd36c163dac",
+      "output": ""
+    },
+    {
+      "name": "compile-GRWTSK.RiemannHypothesis.CCC.PrimeEnergy",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 8.102254040999469,
+      "source_sha256": "b90708dab380d32ea80113abe91b199614950ec705624adee64c2f4614518c28",
+      "output": ""
+    },
+    {
+      "name": "compile-GRWTSK.RiemannHypothesis.CCC.PrimeMass",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 8.42589529200086,
+      "source_sha256": "f9c95be6dd39911e5acba786ca84baf89c51a9611632477673c44e20ead58cf8",
+      "output": ""
+    },
+    {
+      "name": "compile-GRWTSK.RiemannHypothesis.CCC.PrimeReverberation",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 16.656100125001103,
+      "source_sha256": "0f693d7ec606cfa4b107c9bc61913d3787921e8690da6918815911bc3b03beb6",
+      "output": ""
+    },
+    {
+      "name": "compile-GRWTSK.RiemannHypothesis.Conversation.BranchSequenceRealization",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 10.59871941700112,
+      "source_sha256": "3f18269367c2ef839a97591d1d5d36198c6c4c6faff132120f45659c19e94a03",
+      "output": ""
+    },
+    {
+      "name": "compile-GRWTSK.RiemannHypothesis.Conversation.BranchFrequencyExistence",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 6.463839624999309,
+      "source_sha256": "d99990a77db939231e31207f38f1d34204aa597f057ec1ac3c0b26ba47b13358",
+      "output": ""
+    },
+    {
+      "name": "compile-GRWTSK.RiemannHypothesis.Conversation.BranchSequenceReturn",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 4.470283000000563,
+      "source_sha256": "de1982e400c9a3e25f6bf280e017ba571b74d7666f677c52637cb88cbd7145ea",
+      "output": ""
+    },
+    {
+      "name": "compile-GRWTSK.RiemannHypothesis.Conversation.Sequences",
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 2.8249783749997732,
+      "source_sha256": "f89413a03a41224afa2843d7afd43e69c2875effe689a56c4e7850ae8bc98541",
       "output": ""
     },
     {
       "name": "compile-GRWTSK",
       "outcome": "passed",
       "exit_code": 0,
-      "seconds": 45.49554920899999,
-      "source_sha256": "b026b53589243024d494f5a46f4d28a57b49f3d4ec4e5a1198441444dfca6c08",
+      "seconds": 8.780216082999686,
+      "source_sha256": "e7d85a7c3b687e6fd8dfc80acaf2cadced90e123177639cbcbc12554ac609650",
       "output": ""
     },
     {
       "name": "prime-type-axioms-consumers",
       "outcome": "passed",
       "exit_code": 0,
-      "seconds": 3.600559209000039,
+      "seconds": 1.952565916999447,
       "source_sha256": "eb90a4decd0e5142e6117a51d963224991bfa1ee4ae895cf94a750c94e3fb894",
       "output": "GRWTSK.NumberTheory.two_is_first_prime : Nat.Prime 2 \u2227 \u2200 (p : \u2115), Nat.Prime p \u2192 2 \u2264 p\n'Nat.prime_two' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Nat.Prime.two_le' depends on axioms: [propext]\n'GRWTSK.NumberTheory.two_is_first_prime' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
     },
@@ -116,7 +356,7 @@
       "name": "reject-prime-one",
       "outcome": "passed",
       "exit_code": 1,
-      "seconds": 1.7686223329999962,
+      "seconds": 2.093704916000206,
       "source_sha256": "1384e86af454d2aaa7ad277445e39e1de57e0cdbcea51dd71de37385d764da47",
       "output": "checks/PrimeOneFalse.lean:2:28: error: Tactic `decide` proved that the proposition\n  Nat.Prime 1\nis false\n"
     },
@@ -124,7 +364,7 @@
       "name": "reject-lower-bound-three",
       "outcome": "passed",
       "exit_code": 1,
-      "seconds": 1.499147291999975,
+      "seconds": 2.285616958999526,
       "source_sha256": "34fc91e2097ff9a73b355041b23469fdaaa350b28106bebc5c0e20eee1672c6b",
       "output": "checks/LowerBoundFalse.lean:4:2: error: Type mismatch\n  GRWTSK.NumberTheory.two_is_first_prime.right p hp\nhas type\n  2 \u2264 p\nbut is expected to have type\n  3 \u2264 p\n"
     }
