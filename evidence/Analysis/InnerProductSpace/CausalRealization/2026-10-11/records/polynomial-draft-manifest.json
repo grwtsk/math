@@ -1,0 +1,540 @@
+{
+  "schema": "exponential-polynomial-static-input-freeze-v1",
+  "at": "2026-10-11T20:15:43.534900+00:00",
+  "status": "FROZEN_UNCOMPILED_STATIC_REVIEW_PENDING",
+  "canonical_root": "/Users/think/Desktop/math",
+  "new_frozen_inputs": "/Users/think/Desktop/math/.local/ccc-control-soundness/exponential-polynomial-static-cell-20261011T2010Z/inputs",
+  "base_manifest": "/Users/think/Desktop/math/.local/ccc-control-soundness/last-label-static-repair-20261011T1606Z/draft-manifest.json",
+  "base_manifest_sha256": "7034420df544e43914e00ab1e76b92f5b509dd7b2f13904800eabc2f07c48b2e",
+  "base_sources_referenced_without_recopied_bytes": true,
+  "sources": {
+    "GRWTSK.Analysis.InnerProductSpace.CausalContactHilbertSeparation": {
+      "original": "/Users/think/Desktop/math/.local/ccc-control-soundness/scratch/Analysis/InnerProductSpace/CausalContactHilbertSeparation.lean",
+      "snapshot": "/Users/think/Desktop/math/.local/ccc-control-soundness/native-contact-operator-cost-repair-draft-20261011T135952Z/inputs/GRWTSK/Analysis/InnerProductSpace/CausalContactHilbertSeparation.lean",
+      "sha256": "2e4778a674ceb17beeb3ea7105291baa0b587d73b7978e774c61e40aaf56367f",
+      "is_new_draft": true
+    },
+    "checks/CausalContactHilbertSeparationAudit.lean": {
+      "original": "/Users/think/Desktop/math/.local/ccc-control-soundness/scratch/checks/CausalContactHilbertSeparationAudit.lean",
+      "snapshot": "/Users/think/Desktop/math/.local/ccc-control-soundness/native-contact-operator-cost-repair-draft-20261011T135952Z/inputs/checks/CausalContactHilbertSeparationAudit.lean",
+      "sha256": "d272c2a69422485f4a338d67076ddb3c638f6dba9d7cc89863446a03c6c2b0c0",
+      "is_new_draft": true
+    },
+    "GRWTSK.LinearAlgebra.BilinearForm.ZeroCoordinateObstruction": {
+      "original": "/Users/think/Desktop/math/.local/ccc-control-soundness/scratch/LinearAlgebra/BilinearForm/ZeroCoordinateObstruction.lean",
+      "snapshot": "/Users/think/Desktop/math/.local/ccc-control-soundness/native-contact-operator-cost-repair-draft-20261011T135952Z/inputs/GRWTSK/LinearAlgebra/BilinearForm/ZeroCoordinateObstruction.lean",
+      "sha256": "828f207320f277269b343f59eb2014dd0cc66b61ea3b4daec90004f3b9ec839a",
+      "is_new_draft": true
+    },
+    "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral": {
+      "original": "/Users/think/Desktop/math/GRWTSK/NumberTheory/Moebius/WeightedSummatoryIntegral.lean",
+      "snapshot": "/Users/think/Desktop/math/.local/ccc-control-soundness/native-contact-operator-cost-repair-draft-20261011T135952Z/inputs/GRWTSK/NumberTheory/Moebius/WeightedSummatoryIntegral.lean",
+      "sha256": "041fa625e5e2bc239e3df3b471f545f7ba080093723c2f3710c08ee4bc92c8c2",
+      "is_new_draft": false
+    },
+    "GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy": {
+      "original": "/Users/think/Desktop/math/GRWTSK/NumberTheory/Moebius/WeightedIntegralEnergy.lean",
+      "snapshot": "/Users/think/Desktop/math/.local/ccc-control-soundness/native-contact-operator-cost-repair-draft-20261011T135952Z/inputs/GRWTSK/NumberTheory/Moebius/WeightedIntegralEnergy.lean",
+      "sha256": "8124ef6fbeca2c8244d7401536d70c43a6ecd31279366c20ea96bf6fbaa84380",
+      "is_new_draft": false
+    },
+    "GRWTSK.Analysis.InnerProductSpace.CausalResponseGram": {
+      "original": "/Users/think/Desktop/math/GRWTSK/Analysis/InnerProductSpace/CausalResponseGram.lean",
+      "snapshot": "/Users/think/Desktop/math/.local/ccc-control-soundness/native-contact-operator-cost-repair-draft-20261011T135952Z/inputs/GRWTSK/Analysis/InnerProductSpace/CausalResponseGram.lean",
+      "sha256": "e563cca4c98955fea76d39fbbd64a5f7ad18688769b89636c52418d315a642db",
+      "is_new_draft": false
+    },
+    "GRWTSK.NumberTheory.Moebius.WeightedIntegralGrowth": {
+      "original": "/Users/think/Desktop/math/GRWTSK/NumberTheory/Moebius/WeightedIntegralGrowth.lean",
+      "snapshot": "/Users/think/Desktop/math/.local/ccc-control-soundness/native-contact-operator-cost-repair-draft-20261011T135952Z/inputs/GRWTSK/NumberTheory/Moebius/WeightedIntegralGrowth.lean",
+      "sha256": "ee5dc6dc631638538445d66293cbdf7897a3c21beddc197a7cb8365a05025377",
+      "is_new_draft": false
+    },
+    "GRWTSK.NumberTheory.Moebius.SignedIntegralSectorBounds": {
+      "original": "/Users/think/Desktop/math/GRWTSK/NumberTheory/Moebius/SignedIntegralSectorBounds.lean",
+      "snapshot": "/Users/think/Desktop/math/.local/ccc-control-soundness/native-contact-operator-cost-repair-draft-20261011T135952Z/inputs/GRWTSK/NumberTheory/Moebius/SignedIntegralSectorBounds.lean",
+      "sha256": "6f46187c269e51719dd2104c5df7480c42ebad7bdc38bf3f2590504063de447e",
+      "is_new_draft": false
+    },
+    "GRWTSK.Analysis.Calculus.CompactPolynomialDerivatives": {
+      "original": "/Users/think/Desktop/math/GRWTSK/Analysis/Calculus/CompactPolynomialDerivatives.lean",
+      "snapshot": "/Users/think/Desktop/math/.local/ccc-control-soundness/native-contact-operator-cost-repair-draft-20261011T135952Z/inputs/GRWTSK/Analysis/Calculus/CompactPolynomialDerivatives.lean",
+      "sha256": "4abb0074bb8a66137768bbd25d59ab896b347654f4944383f6df1e9e9d9fa8e4",
+      "is_new_draft": false
+    },
+    "GRWTSK.Analysis.InnerProductSpace.CompactResidualNormalization": {
+      "original": "/Users/think/Desktop/math/GRWTSK/Analysis/InnerProductSpace/CompactResidualNormalization.lean",
+      "snapshot": "/Users/think/Desktop/math/.local/ccc-control-soundness/native-contact-operator-cost-repair-draft-20261011T135952Z/inputs/GRWTSK/Analysis/InnerProductSpace/CompactResidualNormalization.lean",
+      "sha256": "b2e41da84e528d6e5b6f85289a4c6123995d1bad00d7cf54a8d112fbf5b38b4d",
+      "is_new_draft": false
+    },
+    "GRWTSK.Analysis.InnerProductSpace.DilationGram": {
+      "original": "/Users/think/Desktop/math/GRWTSK/Analysis/InnerProductSpace/DilationGram.lean",
+      "snapshot": "/Users/think/Desktop/math/.local/ccc-control-soundness/native-contact-operator-cost-repair-draft-20261011T135952Z/inputs/GRWTSK/Analysis/InnerProductSpace/DilationGram.lean",
+      "sha256": "701395de80454619a0cc384543d42935b500a46ba1676e87e52cbb907dd479ab",
+      "is_new_draft": false
+    },
+    "GRWTSK.Analysis.InnerProductSpace.DilationResponseSeparation": {
+      "original": "/Users/think/Desktop/math/GRWTSK/Analysis/InnerProductSpace/DilationResponseSeparation.lean",
+      "snapshot": "/Users/think/Desktop/math/.local/ccc-control-soundness/native-contact-operator-cost-repair-draft-20261011T135952Z/inputs/GRWTSK/Analysis/InnerProductSpace/DilationResponseSeparation.lean",
+      "sha256": "191a35b79935a6c65eed972463d5d24a9a90a2caac8c75108435fad274b81452",
+      "is_new_draft": false
+    },
+    "GRWTSK.Analysis.InnerProductSpace.CausalContactSeparation": {
+      "original": "/Users/think/Desktop/math/.local/ccc-control-soundness/scratch/Analysis/InnerProductSpace/CausalContactSeparation.lean",
+      "snapshot": "/Users/think/Desktop/math/.local/ccc-control-soundness/native-contact-operator-cost-repair-draft-20261011T135952Z/inputs/GRWTSK/Analysis/InnerProductSpace/CausalContactSeparation.lean",
+      "sha256": "1df51da7d8d2dc8df1a0e0179ac823392d61f72f067427311221995b1132f713",
+      "is_new_draft": true
+    },
+    "checks/ZeroCoordinateObstructionAudit.lean": {
+      "original": "/Users/think/Desktop/math/.local/ccc-control-soundness/scratch/checks/ZeroCoordinateObstructionAudit.lean",
+      "snapshot": "/Users/think/Desktop/math/.local/ccc-control-soundness/native-contact-operator-cost-repair-draft-20261011T135952Z/inputs/checks/ZeroCoordinateObstructionAudit.lean",
+      "sha256": "1571aef623f24add84226f10724b2434b6a4dfdd4e17ac0dd738a75ccc3e4304",
+      "is_new_draft": true
+    },
+    "checks/CausalContactSeparationAudit.lean": {
+      "original": "/Users/think/Desktop/math/.local/ccc-control-soundness/scratch/checks/CausalContactSeparationAudit.lean",
+      "snapshot": "/Users/think/Desktop/math/.local/ccc-control-soundness/native-contact-operator-cost-repair-draft-20261011T135952Z/inputs/checks/CausalContactSeparationAudit.lean",
+      "sha256": "1a4ef50430a5a0bf803ebe8c74639129aca7bf505f3e4008505b71d995e7b865",
+      "is_new_draft": true
+    },
+    "GRWTSK.Analysis.Convolution.FiniteTranslateIndependence": {
+      "original": "/Users/think/Desktop/math/.local/ccc-control-soundness/scratch/Analysis/Convolution/FiniteTranslateIndependence.lean",
+      "snapshot": "/Users/think/Desktop/math/.local/ccc-control-soundness/native-contact-operator-cost-repair-draft-20261011T135952Z/inputs/GRWTSK/Analysis/Convolution/FiniteTranslateIndependence.lean",
+      "sha256": "fcb8d71a00d08d60b4bcda19bbdd62d6fcd37c9addd14351c687e69add241dce",
+      "is_new_draft": true
+    },
+    "GRWTSK.LinearAlgebra.Matrix.SingularCongruenceObstruction": {
+      "original": "/Users/think/Desktop/math/.local/ccc-control-soundness/scratch/LinearAlgebra/Matrix/SingularCongruenceObstruction.lean",
+      "snapshot": "/Users/think/Desktop/math/.local/ccc-control-soundness/native-contact-operator-cost-repair-draft-20261011T135952Z/inputs/GRWTSK/LinearAlgebra/Matrix/SingularCongruenceObstruction.lean",
+      "sha256": "5b1316a52e65c9e527105dfba28678a7ae7afbfc008250456fa7caaaa328319d",
+      "is_new_draft": true
+    },
+    "GRWTSK.Analysis.InnerProductSpace.CompactSourceGramPositiveDefinite": {
+      "original": "/Users/think/Desktop/math/.local/ccc-control-soundness/scratch/Analysis/InnerProductSpace/CompactSourceGramPositiveDefinite.lean",
+      "snapshot": "/Users/think/Desktop/math/.local/ccc-control-soundness/native-contact-operator-cost-repair-draft-20261011T135952Z/inputs/GRWTSK/Analysis/InnerProductSpace/CompactSourceGramPositiveDefinite.lean",
+      "sha256": "b84fb6c4c70a85b797e9dad7f11b96c242019ad76bbe1661943a8aea4019ec35",
+      "is_new_draft": true
+    },
+    "GRWTSK.Analysis.InnerProductSpace.CausalGramCongruenceObstruction": {
+      "original": "/Users/think/Desktop/math/.local/ccc-control-soundness/scratch/Analysis/InnerProductSpace/CausalGramCongruenceObstruction.lean",
+      "snapshot": "/Users/think/Desktop/math/.local/ccc-control-soundness/native-contact-operator-cost-repair-draft-20261011T135952Z/inputs/GRWTSK/Analysis/InnerProductSpace/CausalGramCongruenceObstruction.lean",
+      "sha256": "a8656df2974aa9a07920b574a0190df0e32b1092ed04feba71ec4022e8b1400f",
+      "is_new_draft": true
+    },
+    "checks/FiniteTranslateIndependenceAudit.lean": {
+      "original": "/Users/think/Desktop/math/.local/ccc-control-soundness/scratch/checks/FiniteTranslateIndependenceAudit.lean",
+      "snapshot": "/Users/think/Desktop/math/.local/ccc-control-soundness/native-contact-operator-cost-repair-draft-20261011T135952Z/inputs/checks/FiniteTranslateIndependenceAudit.lean",
+      "sha256": "33534f8a9ffe3f91cfd02cfde2c497fe96fa835110871cb0594ea65320281ef7",
+      "is_new_draft": true
+    },
+    "checks/SingularCongruenceObstructionAudit.lean": {
+      "original": "/Users/think/Desktop/math/.local/ccc-control-soundness/scratch/checks/SingularCongruenceObstructionAudit.lean",
+      "snapshot": "/Users/think/Desktop/math/.local/ccc-control-soundness/native-contact-operator-cost-repair-draft-20261011T135952Z/inputs/checks/SingularCongruenceObstructionAudit.lean",
+      "sha256": "6fd9d60696fe068f41a0551a991d3c70fac09f6c045c26087b876641fef4ee20",
+      "is_new_draft": true
+    },
+    "checks/CompactSourceGramPositiveDefiniteAudit.lean": {
+      "original": "/Users/think/Desktop/math/.local/ccc-control-soundness/scratch/checks/CompactSourceGramPositiveDefiniteAudit.lean",
+      "snapshot": "/Users/think/Desktop/math/.local/ccc-control-soundness/native-contact-operator-cost-repair-draft-20261011T135952Z/inputs/checks/CompactSourceGramPositiveDefiniteAudit.lean",
+      "sha256": "99790bbec938bc3ce444252c07ae2e2862fd7c3803fdc6713b6ce05c3d181282",
+      "is_new_draft": true
+    },
+    "checks/CausalGramCongruenceObstructionAudit.lean": {
+      "original": "/Users/think/Desktop/math/.local/ccc-control-soundness/scratch/checks/CausalGramCongruenceObstructionAudit.lean",
+      "snapshot": "/Users/think/Desktop/math/.local/ccc-control-soundness/native-contact-operator-cost-repair-draft-20261011T135952Z/inputs/checks/CausalGramCongruenceObstructionAudit.lean",
+      "sha256": "634a988c183cbb139f49c89968f78a76acffa728a5e2d53462ebe9197d2e2e3d",
+      "is_new_draft": true
+    },
+    "GRWTSK.LinearAlgebra.LinearMap.FiniteMixingObstruction": {
+      "original": "/Users/think/Desktop/math/.local/ccc-control-soundness/scratch/LinearAlgebra/LinearMap/FiniteMixingObstruction.lean",
+      "snapshot": "/Users/think/Desktop/math/.local/ccc-control-soundness/native-contact-operator-cost-repair-draft-20261011T135952Z/inputs/GRWTSK/LinearAlgebra/LinearMap/FiniteMixingObstruction.lean",
+      "sha256": "1dc7220359a7a43707ab1425c264a65083c633eca92b4122361d1e29447adf4c",
+      "is_new_draft": true
+    },
+    "GRWTSK.Analysis.InnerProductSpace.CausalFiniteOperatorSeparation": {
+      "original": "/Users/think/Desktop/math/.local/ccc-control-soundness/scratch/Analysis/InnerProductSpace/CausalFiniteOperatorSeparation.lean",
+      "snapshot": "/Users/think/Desktop/math/.local/ccc-control-soundness/native-contact-operator-cost-repair-draft-20261011T135952Z/inputs/GRWTSK/Analysis/InnerProductSpace/CausalFiniteOperatorSeparation.lean",
+      "sha256": "7a65121948c3d459b9f2a595ff96a682c78d60c34bc566c7fa49cde8b020c642",
+      "is_new_draft": true
+    },
+    "checks/FiniteMixingObstructionAudit.lean": {
+      "original": "/Users/think/Desktop/math/.local/ccc-control-soundness/scratch/checks/FiniteMixingObstructionAudit.lean",
+      "snapshot": "/Users/think/Desktop/math/.local/ccc-control-soundness/native-contact-operator-cost-repair-draft-20261011T135952Z/inputs/checks/FiniteMixingObstructionAudit.lean",
+      "sha256": "c72a76a3fe80035ad4a2e4c18e2ba5f67e1a81ec3b2330a22b20142d5f9f6c39",
+      "is_new_draft": true
+    },
+    "checks/CausalFiniteOperatorSeparationAudit.lean": {
+      "original": "/Users/think/Desktop/math/.local/ccc-control-soundness/scratch/checks/CausalFiniteOperatorSeparationAudit.lean",
+      "snapshot": "/Users/think/Desktop/math/.local/ccc-control-soundness/native-contact-operator-cost-repair-draft-20261011T135952Z/inputs/checks/CausalFiniteOperatorSeparationAudit.lean",
+      "sha256": "ce68b6fa50e1be10c66f984b87ec331afbae97343f822fb2f9c7b5d3bc0dc978",
+      "is_new_draft": true
+    },
+    "GRWTSK.Analysis.InnerProductSpace.CausalContactOperatorCost": {
+      "original": "/Users/think/Desktop/math/.local/ccc-control-soundness/scratch/Analysis/InnerProductSpace/CausalContactOperatorCost.lean",
+      "snapshot": "/Users/think/Desktop/math/.local/ccc-control-soundness/native-contact-operator-cost-repair-draft-20261011T135952Z/inputs/GRWTSK/Analysis/InnerProductSpace/CausalContactOperatorCost.lean",
+      "sha256": "31bfcbe75be3510c3637ba620a802e932a1b21a2b2bff5fb1cab6538567701db",
+      "is_new_draft": true
+    },
+    "checks/CausalContactOperatorCostAudit.lean": {
+      "original": "/Users/think/Desktop/math/.local/ccc-control-soundness/scratch/checks/CausalContactOperatorCostAudit.lean",
+      "snapshot": "/Users/think/Desktop/math/.local/ccc-control-soundness/native-contact-operator-cost-repair-draft-20261011T135952Z/inputs/checks/CausalContactOperatorCostAudit.lean",
+      "sha256": "764bca1e75cb731d92d4eeb56481be8e459a0327fad2a3c4453c0853a20f4368",
+      "is_new_draft": true
+    },
+    "GRWTSK.Analysis.SpecialFunctions.ExponentialFloorGap": {
+      "original": "/Users/think/Desktop/math/.local/ccc-control-soundness/last-label-static-repair-20261011T1606Z/inputs/GRWTSK/Analysis/SpecialFunctions/ExponentialFloorGap.lean",
+      "snapshot": "/Users/think/Desktop/math/.local/ccc-control-soundness/last-label-static-repair-20261011T1606Z/inputs/GRWTSK/Analysis/SpecialFunctions/ExponentialFloorGap.lean",
+      "sha256": "39914f9639b456afd4a9cd91242b5f47bb43df5d8a5bbb4922954534585fa591",
+      "is_new_draft": true,
+      "namespace": "GRWTSK.Analysis.SpecialFunctions.ExponentialFloorGap",
+      "imports": [
+        "Mathlib.Algebra.Order.Archimedean.Real.Basic",
+        "Mathlib.Algebra.Order.Floor.Semiring",
+        "Mathlib.Analysis.SpecialFunctions.Log.Basic",
+        "Mathlib.Tactic"
+      ],
+      "textual_theorem_names": [
+        "one_le_natFloor_exp",
+        "natFloor_exp_pos",
+        "natFloor_exp_cast_pos",
+        "natFloor_exp_le",
+        "exp_lt_natFloor_add_one",
+        "gap_nonneg",
+        "gap_lt_inv_natFloor",
+        "exp_lt_two_mul_natFloor",
+        "exp_two_mul_div_four_lt_natFloor_sq",
+        "cubicAllowance_le_inv_natFloor_pow_four",
+        "natFloor_sq_le_of_cost"
+      ],
+      "frozen_in_place": true
+    },
+    "GRWTSK.Analysis.InnerProductSpace.CausalLastLabelOperatorCost": {
+      "original": "/Users/think/Desktop/math/.local/ccc-control-soundness/last-label-static-repair-20261011T1606Z/inputs/GRWTSK/Analysis/InnerProductSpace/CausalLastLabelOperatorCost.lean",
+      "snapshot": "/Users/think/Desktop/math/.local/ccc-control-soundness/last-label-static-repair-20261011T1606Z/inputs/GRWTSK/Analysis/InnerProductSpace/CausalLastLabelOperatorCost.lean",
+      "sha256": "4e49f9417e386d2ce773344223e7334ec72137c7025a2f4ab281fff71d874a4c",
+      "is_new_draft": true,
+      "namespace": "GRWTSK.Analysis.InnerProductSpace.CausalLastLabelOperatorCost",
+      "imports": [
+        "GRWTSK.Analysis.SpecialFunctions.ExponentialFloorGap",
+        "GRWTSK.Analysis.InnerProductSpace.CausalContactOperatorCost"
+      ],
+      "textual_theorem_names": [
+        "last_label_diagonal_quartic_upper",
+        "last_label_continuous_realization_norm",
+        "last_label_continuous_realization_exponential_norm",
+        "prescribed_horizon_last_label_exponential_norm",
+        "whole_inventory_continuous_realization_exponential_norm"
+      ],
+      "frozen_in_place": true
+    },
+    "checks.ExponentialFloorGapAudit": {
+      "original": "/Users/think/Desktop/math/.local/ccc-control-soundness/last-label-static-repair-20261011T1606Z/inputs/checks/ExponentialFloorGapAudit.lean",
+      "snapshot": "/Users/think/Desktop/math/.local/ccc-control-soundness/last-label-static-repair-20261011T1606Z/inputs/checks/ExponentialFloorGapAudit.lean",
+      "sha256": "599d78209de247fc8c056a87eb8f12a82879dbec05ae29ce45880055056316aa",
+      "is_new_draft": true,
+      "namespace": "GRWTSK.Analysis.SpecialFunctions.ExponentialFloorGap",
+      "imports": [
+        "GRWTSK.Analysis.SpecialFunctions.ExponentialFloorGap"
+      ],
+      "textual_theorem_names": [],
+      "frozen_in_place": true
+    },
+    "checks.CausalLastLabelOperatorCostAudit": {
+      "original": "/Users/think/Desktop/math/.local/ccc-control-soundness/last-label-static-repair-20261011T1606Z/inputs/checks/CausalLastLabelOperatorCostAudit.lean",
+      "snapshot": "/Users/think/Desktop/math/.local/ccc-control-soundness/last-label-static-repair-20261011T1606Z/inputs/checks/CausalLastLabelOperatorCostAudit.lean",
+      "sha256": "bf4b5e02cfa2d1bfa4e7ce00a5a48c4a12af5bd61fe92fd637d84dc322b01264",
+      "is_new_draft": true,
+      "namespace": "GRWTSK.Analysis.InnerProductSpace.CausalLastLabelOperatorCost",
+      "imports": [
+        "GRWTSK.Analysis.InnerProductSpace.CausalLastLabelOperatorCost"
+      ],
+      "textual_theorem_names": [],
+      "frozen_in_place": true
+    },
+    "GRWTSK.Analysis.SpecialFunctions.ExponentialPolynomialDomination": {
+      "original": "/Users/think/Desktop/math/.local/ccc-control-soundness/exponential-polynomial-static-cell-20261011T2010Z/inputs/GRWTSK/Analysis/SpecialFunctions/ExponentialPolynomialDomination.lean",
+      "snapshot": "/Users/think/Desktop/math/.local/ccc-control-soundness/exponential-polynomial-static-cell-20261011T2010Z/inputs/GRWTSK/Analysis/SpecialFunctions/ExponentialPolynomialDomination.lean",
+      "sha256": "78550c4800c736d62811dca7b2eca1ab14e6be8dc3a764716b84282b3d12e39a",
+      "is_new_draft": true,
+      "namespace": "GRWTSK.Analysis.SpecialFunctions.ExponentialPolynomialDomination",
+      "imports": [
+        "Mathlib.Analysis.Complex.Exponential",
+        "Mathlib.Data.Nat.Factorial.Basic",
+        "Mathlib.Tactic"
+      ],
+      "textual_theorem_names": [
+        "polynomial_lt_exp_two_mul_div_four",
+        "polynomial_lt_exp_two_mul_div_four_of_ge_threshold"
+      ],
+      "frozen_in_place": true
+    },
+    "GRWTSK.Analysis.InnerProductSpace.CausalRealizationPolynomialObstruction": {
+      "original": "/Users/think/Desktop/math/.local/ccc-control-soundness/exponential-polynomial-static-cell-20261011T2010Z/inputs/GRWTSK/Analysis/InnerProductSpace/CausalRealizationPolynomialObstruction.lean",
+      "snapshot": "/Users/think/Desktop/math/.local/ccc-control-soundness/exponential-polynomial-static-cell-20261011T2010Z/inputs/GRWTSK/Analysis/InnerProductSpace/CausalRealizationPolynomialObstruction.lean",
+      "sha256": "776f56bb34a7194244ea9c0da8374d68e14754357098d552e5ce903ec8895238",
+      "is_new_draft": true,
+      "namespace": "GRWTSK.Analysis.InnerProductSpace.CausalRealizationPolynomialObstruction",
+      "imports": [
+        "GRWTSK.Analysis.SpecialFunctions.ExponentialPolynomialDomination",
+        "GRWTSK.Analysis.InnerProductSpace.CausalLastLabelOperatorCost",
+        "Mathlib.Order.Bounds.Basic"
+      ],
+      "textual_theorem_names": [
+        "last_label_realization_exceeds_polynomial",
+        "whole_inventory_realization_exceeds_polynomial",
+        "prescribed_horizon_realization_exceeds_polynomial",
+        "no_polynomial_individual_realization_on_unbounded_scales",
+        "no_polynomial_inventory_realization_on_unbounded_scales"
+      ],
+      "frozen_in_place": true
+    },
+    "checks.ExponentialPolynomialDominationAudit": {
+      "original": "/Users/think/Desktop/math/.local/ccc-control-soundness/exponential-polynomial-static-cell-20261011T2010Z/inputs/checks/ExponentialPolynomialDominationAudit.lean",
+      "snapshot": "/Users/think/Desktop/math/.local/ccc-control-soundness/exponential-polynomial-static-cell-20261011T2010Z/inputs/checks/ExponentialPolynomialDominationAudit.lean",
+      "sha256": "f45858c33d11b34ec2ec6331386a30008017ebe88fac161e2858837056eddbbb",
+      "is_new_draft": true,
+      "namespace": "GRWTSK.Analysis.SpecialFunctions.ExponentialPolynomialDomination",
+      "imports": [
+        "GRWTSK.Analysis.SpecialFunctions.ExponentialPolynomialDomination"
+      ],
+      "textual_theorem_names": [],
+      "frozen_in_place": true
+    },
+    "checks.CausalRealizationPolynomialObstructionAudit": {
+      "original": "/Users/think/Desktop/math/.local/ccc-control-soundness/exponential-polynomial-static-cell-20261011T2010Z/inputs/checks/CausalRealizationPolynomialObstructionAudit.lean",
+      "snapshot": "/Users/think/Desktop/math/.local/ccc-control-soundness/exponential-polynomial-static-cell-20261011T2010Z/inputs/checks/CausalRealizationPolynomialObstructionAudit.lean",
+      "sha256": "a9d8e4de8d7f8b3e9049e157c231a1b54da0a69528316ef917f7a9630b80304f",
+      "is_new_draft": true,
+      "namespace": "GRWTSK.Analysis.InnerProductSpace.CausalRealizationPolynomialObstruction",
+      "imports": [
+        "GRWTSK.Analysis.InnerProductSpace.CausalRealizationPolynomialObstruction"
+      ],
+      "textual_theorem_names": [],
+      "frozen_in_place": true
+    }
+  },
+  "new_source_rows": [
+    "GRWTSK.Analysis.SpecialFunctions.ExponentialPolynomialDomination",
+    "GRWTSK.Analysis.InnerProductSpace.CausalRealizationPolynomialObstruction",
+    "checks.ExponentialPolynomialDominationAudit",
+    "checks.CausalRealizationPolynomialObstructionAudit"
+  ],
+  "dependency_graph": {
+    "GRWTSK.Analysis.InnerProductSpace.CausalContactHilbertSeparation": [
+      "GRWTSK.Analysis.InnerProductSpace.CausalContactSeparation"
+    ],
+    "GRWTSK.LinearAlgebra.BilinearForm.ZeroCoordinateObstruction": [],
+    "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral": [],
+    "GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy": [
+      "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral"
+    ],
+    "GRWTSK.Analysis.InnerProductSpace.CausalResponseGram": [
+      "GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy"
+    ],
+    "GRWTSK.NumberTheory.Moebius.WeightedIntegralGrowth": [
+      "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral"
+    ],
+    "GRWTSK.NumberTheory.Moebius.SignedIntegralSectorBounds": [
+      "GRWTSK.NumberTheory.Moebius.WeightedIntegralGrowth",
+      "GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy"
+    ],
+    "GRWTSK.Analysis.Calculus.CompactPolynomialDerivatives": [
+      "GRWTSK.NumberTheory.Moebius.SignedIntegralSectorBounds"
+    ],
+    "GRWTSK.Analysis.InnerProductSpace.CompactResidualNormalization": [
+      "GRWTSK.Analysis.Calculus.CompactPolynomialDerivatives"
+    ],
+    "GRWTSK.Analysis.InnerProductSpace.DilationGram": [
+      "GRWTSK.Analysis.InnerProductSpace.CompactResidualNormalization"
+    ],
+    "GRWTSK.Analysis.InnerProductSpace.DilationResponseSeparation": [
+      "GRWTSK.Analysis.InnerProductSpace.DilationGram"
+    ],
+    "GRWTSK.Analysis.InnerProductSpace.CausalContactSeparation": [
+      "GRWTSK.LinearAlgebra.BilinearForm.ZeroCoordinateObstruction",
+      "GRWTSK.Analysis.InnerProductSpace.CausalResponseGram",
+      "GRWTSK.Analysis.InnerProductSpace.DilationResponseSeparation"
+    ],
+    "GRWTSK.Analysis.Convolution.FiniteTranslateIndependence": [],
+    "GRWTSK.LinearAlgebra.Matrix.SingularCongruenceObstruction": [],
+    "GRWTSK.Analysis.InnerProductSpace.CompactSourceGramPositiveDefinite": [
+      "GRWTSK.Analysis.Convolution.FiniteTranslateIndependence",
+      "GRWTSK.Analysis.InnerProductSpace.DilationGram"
+    ],
+    "GRWTSK.Analysis.InnerProductSpace.CausalGramCongruenceObstruction": [
+      "GRWTSK.Analysis.InnerProductSpace.CausalContactSeparation",
+      "GRWTSK.Analysis.InnerProductSpace.CompactSourceGramPositiveDefinite",
+      "GRWTSK.LinearAlgebra.Matrix.SingularCongruenceObstruction"
+    ],
+    "GRWTSK.LinearAlgebra.LinearMap.FiniteMixingObstruction": [],
+    "GRWTSK.Analysis.InnerProductSpace.CausalFiniteOperatorSeparation": [
+      "GRWTSK.LinearAlgebra.LinearMap.FiniteMixingObstruction",
+      "GRWTSK.Analysis.InnerProductSpace.CausalContactHilbertSeparation",
+      "GRWTSK.Analysis.InnerProductSpace.CompactSourceGramPositiveDefinite"
+    ],
+    "GRWTSK.Analysis.InnerProductSpace.CausalContactOperatorCost": [
+      "GRWTSK.Analysis.InnerProductSpace.CausalFiniteOperatorSeparation"
+    ],
+    "GRWTSK.Analysis.SpecialFunctions.ExponentialFloorGap": [],
+    "GRWTSK.Analysis.InnerProductSpace.CausalLastLabelOperatorCost": [
+      "GRWTSK.Analysis.SpecialFunctions.ExponentialFloorGap",
+      "GRWTSK.Analysis.InnerProductSpace.CausalContactOperatorCost"
+    ],
+    "GRWTSK.Analysis.SpecialFunctions.ExponentialPolynomialDomination": [],
+    "GRWTSK.Analysis.InnerProductSpace.CausalRealizationPolynomialObstruction": [
+      "GRWTSK.Analysis.SpecialFunctions.ExponentialPolynomialDomination",
+      "GRWTSK.Analysis.InnerProductSpace.CausalLastLabelOperatorCost"
+    ]
+  },
+  "dependency_order": [
+    "GRWTSK.LinearAlgebra.BilinearForm.ZeroCoordinateObstruction",
+    "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
+    "GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy",
+    "GRWTSK.Analysis.InnerProductSpace.CausalResponseGram",
+    "GRWTSK.NumberTheory.Moebius.WeightedIntegralGrowth",
+    "GRWTSK.NumberTheory.Moebius.SignedIntegralSectorBounds",
+    "GRWTSK.Analysis.Calculus.CompactPolynomialDerivatives",
+    "GRWTSK.Analysis.InnerProductSpace.CompactResidualNormalization",
+    "GRWTSK.Analysis.InnerProductSpace.DilationGram",
+    "GRWTSK.Analysis.InnerProductSpace.DilationResponseSeparation",
+    "GRWTSK.Analysis.InnerProductSpace.CausalContactSeparation",
+    "GRWTSK.Analysis.InnerProductSpace.CausalContactHilbertSeparation",
+    "GRWTSK.Analysis.Convolution.FiniteTranslateIndependence",
+    "GRWTSK.LinearAlgebra.Matrix.SingularCongruenceObstruction",
+    "GRWTSK.Analysis.InnerProductSpace.CompactSourceGramPositiveDefinite",
+    "GRWTSK.Analysis.InnerProductSpace.CausalGramCongruenceObstruction",
+    "GRWTSK.LinearAlgebra.LinearMap.FiniteMixingObstruction",
+    "GRWTSK.Analysis.InnerProductSpace.CausalFiniteOperatorSeparation",
+    "GRWTSK.Analysis.InnerProductSpace.CausalContactOperatorCost",
+    "GRWTSK.Analysis.SpecialFunctions.ExponentialFloorGap",
+    "GRWTSK.Analysis.InnerProductSpace.CausalLastLabelOperatorCost",
+    "GRWTSK.Analysis.SpecialFunctions.ExponentialPolynomialDomination",
+    "GRWTSK.Analysis.InnerProductSpace.CausalRealizationPolynomialObstruction"
+  ],
+  "library_source_count": 23,
+  "audit_inputs": 14,
+  "new_library_inputs": 14,
+  "existing_library_dependencies": 9,
+  "new_library_sources": 2,
+  "new_audit_sources": 2,
+  "new_selected_theorem_count": 7,
+  "ordered_selected_axiom_names": [
+    "GRWTSK.LinearAlgebra.ZeroCoordinateObstruction.coordinate_quadratic_eq",
+    "GRWTSK.LinearAlgebra.ZeroCoordinateObstruction.no_uniform_domination",
+    "GRWTSK.LinearAlgebra.ZeroCoordinateObstruction.diagonal_scale_ne_positive",
+    "GRWTSK.LinearAlgebra.ZeroCoordinateObstruction.zero_preserving_map_ne_target",
+    "GRWTSK.Analysis.InnerProductSpace.CausalContactSeparation.response_zero_before_or_at_contact",
+    "GRWTSK.Analysis.InnerProductSpace.CausalContactSeparation.window_response_eq_zero_of_before_contact",
+    "GRWTSK.Analysis.InnerProductSpace.CausalContactSeparation.touching_window_response_eq_zero",
+    "GRWTSK.Analysis.InnerProductSpace.CausalContactSeparation.native_before_contact_row_zero",
+    "GRWTSK.Analysis.InnerProductSpace.CausalContactSeparation.prescribed_source_vector_ne_zero",
+    "GRWTSK.Analysis.InnerProductSpace.CausalContactSeparation.zero_preserving_contact_map_ne_source",
+    "GRWTSK.Analysis.InnerProductSpace.CausalContactSeparation.linear_contact_map_ne_source",
+    "GRWTSK.Analysis.InnerProductSpace.CausalContactSeparation.diagonal_scaled_native_ne_source",
+    "GRWTSK.Analysis.InnerProductSpace.CausalContactSeparation.native_contact_no_source_quadratic_domination",
+    "GRWTSK.Analysis.InnerProductSpace.CausalContactSeparation.prescribed_horizon_restricted_obstructions",
+    "GRWTSK.Analysis.InnerProductSpace.CausalContactHilbertSeparation.prescribed_source_vector_not_ae_zero",
+    "GRWTSK.Analysis.InnerProductSpace.CausalContactHilbertSeparation.touching_window_L2_eq_zero",
+    "GRWTSK.Analysis.InnerProductSpace.CausalContactHilbertSeparation.prescribed_source_L2_ne_zero",
+    "GRWTSK.Analysis.InnerProductSpace.CausalContactHilbertSeparation.linear_hilbert_contact_map_ne_source",
+    "GRWTSK.Analysis.Convolution.FiniteTranslateIndependence.isolate_rightmost_translate",
+    "GRWTSK.Analysis.Convolution.FiniteTranslateIndependence.finite_translate_combination_ne_zero",
+    "GRWTSK.Analysis.Convolution.FiniteTranslateIndependence.finite_translate_combination_eq_zero_iff",
+    "GRWTSK.Analysis.Convolution.FiniteTranslateIndependence.finite_translates_linearIndependent",
+    "GRWTSK.LinearAlgebra.Matrix.SingularCongruenceObstruction.singular_square_congruence_ne_positive_definite",
+    "GRWTSK.LinearAlgebra.Matrix.SingularCongruenceObstruction.zero_row_square_congruence_ne_positive_definite",
+    "GRWTSK.Analysis.InnerProductSpace.CompactSourceGramPositiveDefinite.normalized_source_support_bddAbove",
+    "GRWTSK.Analysis.InnerProductSpace.CompactSourceGramPositiveDefinite.normalized_source_support_nonempty",
+    "GRWTSK.Analysis.InnerProductSpace.CompactSourceGramPositiveDefinite.finite_source_combination_ne_zero",
+    "GRWTSK.Analysis.InnerProductSpace.CompactSourceGramPositiveDefinite.distinct_source_vectors_linearIndependent",
+    "GRWTSK.Analysis.InnerProductSpace.CompactSourceGramPositiveDefinite.finite_source_gram_positive",
+    "GRWTSK.Analysis.InnerProductSpace.CompactSourceGramPositiveDefinite.distinct_source_gram_matrix_positive_definite",
+    "GRWTSK.Analysis.InnerProductSpace.CausalGramCongruenceObstruction.finite_contact_square_congruence_ne_source",
+    "GRWTSK.Analysis.InnerProductSpace.CausalGramCongruenceObstruction.original_inventory_square_congruence_ne_source",
+    "GRWTSK.Analysis.InnerProductSpace.CausalGramCongruenceObstruction.prescribed_horizon_square_congruence_obstruction",
+    "GRWTSK.LinearAlgebra.LinearMap.FiniteMixingObstruction.synthesis_eq_of_basis_realization",
+    "GRWTSK.LinearAlgebra.LinearMap.FiniteMixingObstruction.independent_linear_mix_requires_independent_input",
+    "GRWTSK.LinearAlgebra.LinearMap.FiniteMixingObstruction.zero_coordinate_no_independent_linear_mix",
+    "GRWTSK.Analysis.InnerProductSpace.CausalFiniteOperatorSeparation.window_response_memLp",
+    "GRWTSK.Analysis.InnerProductSpace.CausalFiniteOperatorSeparation.original_window_L2_contact_zero",
+    "GRWTSK.Analysis.InnerProductSpace.CausalFiniteOperatorSeparation.finite_source_L2_combination_ae",
+    "GRWTSK.Analysis.InnerProductSpace.CausalFiniteOperatorSeparation.distinct_source_L2_linearIndependent",
+    "GRWTSK.Analysis.InnerProductSpace.CausalFiniteOperatorSeparation.finite_contact_functions_no_linear_mix",
+    "GRWTSK.Analysis.InnerProductSpace.CausalFiniteOperatorSeparation.finite_contact_L2_no_linear_mix",
+    "GRWTSK.Analysis.InnerProductSpace.CausalFiniteOperatorSeparation.original_inventory_L2_no_linear_mix",
+    "GRWTSK.Analysis.InnerProductSpace.CausalFiniteOperatorSeparation.prescribed_horizon_L2_linear_mix_obstruction",
+    "GRWTSK.Analysis.InnerProductSpace.CausalContactOperatorCost.inverse_half_square",
+    "GRWTSK.Analysis.InnerProductSpace.CausalContactOperatorCost.response_after_contact_bounds",
+    "GRWTSK.Analysis.InnerProductSpace.CausalContactOperatorCost.gram_diagonal_eq_post_contact",
+    "GRWTSK.Analysis.InnerProductSpace.CausalContactOperatorCost.gram_diagonal_cubic_upper",
+    "GRWTSK.Analysis.InnerProductSpace.CausalContactOperatorCost.original_window_L2_norm_square",
+    "GRWTSK.Analysis.InnerProductSpace.CausalContactOperatorCost.prescribed_source_L2_norm_square",
+    "GRWTSK.Analysis.InnerProductSpace.CausalContactOperatorCost.continuous_linear_realization_cubic_cost",
+    "GRWTSK.Analysis.InnerProductSpace.CausalContactOperatorCost.no_uniform_bounded_realization_for_scale_family",
+    "GRWTSK.Analysis.InnerProductSpace.CausalContactOperatorCost.log_eight_near_contact_scale_bounds",
+    "GRWTSK.Analysis.InnerProductSpace.CausalContactOperatorCost.prescribed_horizon_no_uniform_bounded_realization",
+    "GRWTSK.Analysis.SpecialFunctions.ExponentialFloorGap.one_le_natFloor_exp",
+    "GRWTSK.Analysis.SpecialFunctions.ExponentialFloorGap.natFloor_exp_pos",
+    "GRWTSK.Analysis.SpecialFunctions.ExponentialFloorGap.natFloor_exp_cast_pos",
+    "GRWTSK.Analysis.SpecialFunctions.ExponentialFloorGap.natFloor_exp_le",
+    "GRWTSK.Analysis.SpecialFunctions.ExponentialFloorGap.exp_lt_natFloor_add_one",
+    "GRWTSK.Analysis.SpecialFunctions.ExponentialFloorGap.gap_nonneg",
+    "GRWTSK.Analysis.SpecialFunctions.ExponentialFloorGap.gap_lt_inv_natFloor",
+    "GRWTSK.Analysis.SpecialFunctions.ExponentialFloorGap.exp_lt_two_mul_natFloor",
+    "GRWTSK.Analysis.SpecialFunctions.ExponentialFloorGap.exp_two_mul_div_four_lt_natFloor_sq",
+    "GRWTSK.Analysis.SpecialFunctions.ExponentialFloorGap.cubicAllowance_le_inv_natFloor_pow_four",
+    "GRWTSK.Analysis.SpecialFunctions.ExponentialFloorGap.natFloor_sq_le_of_cost",
+    "GRWTSK.Analysis.InnerProductSpace.CausalLastLabelOperatorCost.last_label_diagonal_quartic_upper",
+    "GRWTSK.Analysis.InnerProductSpace.CausalLastLabelOperatorCost.last_label_continuous_realization_norm",
+    "GRWTSK.Analysis.InnerProductSpace.CausalLastLabelOperatorCost.last_label_continuous_realization_exponential_norm",
+    "GRWTSK.Analysis.InnerProductSpace.CausalLastLabelOperatorCost.prescribed_horizon_last_label_exponential_norm",
+    "GRWTSK.Analysis.InnerProductSpace.CausalLastLabelOperatorCost.whole_inventory_continuous_realization_exponential_norm",
+    "GRWTSK.Analysis.SpecialFunctions.ExponentialPolynomialDomination.polynomial_lt_exp_two_mul_div_four",
+    "GRWTSK.Analysis.SpecialFunctions.ExponentialPolynomialDomination.polynomial_lt_exp_two_mul_div_four_of_ge_threshold",
+    "GRWTSK.Analysis.InnerProductSpace.CausalRealizationPolynomialObstruction.last_label_realization_exceeds_polynomial",
+    "GRWTSK.Analysis.InnerProductSpace.CausalRealizationPolynomialObstruction.whole_inventory_realization_exceeds_polynomial",
+    "GRWTSK.Analysis.InnerProductSpace.CausalRealizationPolynomialObstruction.prescribed_horizon_realization_exceeds_polynomial",
+    "GRWTSK.Analysis.InnerProductSpace.CausalRealizationPolynomialObstruction.no_polynomial_individual_realization_on_unbounded_scales",
+    "GRWTSK.Analysis.InnerProductSpace.CausalRealizationPolynomialObstruction.no_polynomial_inventory_realization_on_unbounded_scales"
+  ],
+  "ordered_selected_report_count": 77,
+  "new_definition_count": 0,
+  "all_new_definition_count": 7,
+  "new_direct_mathlib_source_observations": {
+    "/Users/think/Desktop/math/.lake/packages/mathlib/Mathlib/Analysis/Complex/Exponential.lean": {
+      "sha256": "78ca88512755a04b7346806b8e74fb3930bf14c0ec289107694a33c1947b7821",
+      "inspected_source_only": true
+    },
+    "/Users/think/Desktop/math/.lake/packages/mathlib/Mathlib/Data/Nat/Factorial/Basic.lean": {
+      "sha256": "25fc9752f155b265be6c262e44ac5e92bdff54f1777ca2ea344b76fc4c1fa57f",
+      "inspected_source_only": true
+    },
+    "/Users/think/Desktop/math/.lake/packages/mathlib/Mathlib/Tactic.lean": {
+      "sha256": "6ec9a1714e9fa472f7e5614792f1aa5a65f360ec56688b0dc765d1bee2e1bdd5",
+      "inspected_source_only": true
+    },
+    "/Users/think/Desktop/math/.lake/packages/mathlib/Mathlib/Order/Bounds/Basic.lean": {
+      "sha256": "f3d64955f1959ff8be10faaa9eab1147aec9f5172e06217b28c65a8da9987d64",
+      "inspected_source_only": true
+    }
+  },
+  "compiler_launched": false,
+  "compiler_certified": false,
+  "axiom_audit_executed": false,
+  "elaborated_owner_census_executed": false,
+  "independent_statement_review": false,
+  "production_admission": false,
+  "no_native_plan_created": true,
+  "no_runner_prepared": true,
+  "native_job_gate": "No explicit CCC canonical/public/native release found. Independent read-only gate audit observed311active/inProgresswithhold during concurrent documentation mutation. Static source freeze only, no native plan or runner.",
+  "scope": "FixedC>=0,d:Nat,T>=1,T>2*C*(d+1)! impliesC*(1+T)^d<exp(2T)/4 from one finite-series term. Explicit larger threshold. Conditional genuine last-label/directwholeinventory operator costs exceed this allowance. LiteralT=2A,A>=1,A>C*(d+1)! pricesC*(1+A)^d. Any explicitlyunboundedscaleSet cannot support maps at everyadmittedscale withinfixedallowance; maps maydependonscale.",
+  "limits": "All new and fourteen inherited/new draft libraries remainuncompiled. No proof of unboundedness or realizationexistence on a particular mature domain, no free/coefficientmixing/signedMoebiusvectorbudget, OriginalSupplierEstimate,pickup/cross/energy/amplitude, strictnegative/jointsectors, general transformed/renormalizedbridge, RH/converse,A=0equality orC-infinity. Contactimplicationsvacuous.",
+  "qualification": "Four freshlyauthoredinputs plus existing ignored33rows referencedwithoutnewsource/configcopies. Exact37rowstaticfreezeonly;23libraries14audits77proposedrootsand7newbase definitions outside selection. No completedaxiomreports, elaboratedcensus, nativeacceptance, dependency-sourceauthentication or admission. Historical86/783and17module scopes retained separately.",
+  "entry_AGENTS_sha256": "6e19b4f08f1f97490480192f77d425c2c26387eaf36387b7a2cc4e200257e212",
+  "entry_continuation_sha256": "5f13d53dbaf5f705055e940c2acd940e9ce3bd8df9d2c5bfb9cf39b74b6ee266",
+  "entry_route_gate_review": {
+    "path": "/Users/think/Desktop/math/.local/ccc-control-soundness/reviews/resume-other-routes-and-gate-readonly-20261011T2010Z.md",
+    "sha256": "bb4597119a541bbe306d81c3c7479eea37ad2727482b2d5a2975c05dbc2a5a3e"
+  }
+}
