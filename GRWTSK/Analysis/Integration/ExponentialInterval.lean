@@ -36,6 +36,18 @@ theorem integral_exp_neg_mul {a : ℝ} (ha : a ≠ 0) (b c : ℝ) :
   field_simp [ha]
   ring
 
+/-- The oriented finite-interval integral of a real exponential with nonzero
+rate.  This sign-neutral form is convenient when the rate is positive. -/
+theorem integral_exp_mul {a : ℝ} (ha : a ≠ 0) (b c : ℝ) :
+    (∫ u in b..c, Real.exp (a * u)) =
+      (Real.exp (a * c) - Real.exp (a * b)) / a := by
+  have h := integral_exp_neg_mul (a := -a) (neg_ne_zero.mpr ha) b c
+  simp only [neg_neg] at h
+  rw [h]
+  field_simp [ha]
+  ring
+
 end GRWTSK.Analysis.Integration.ExponentialInterval
 
 #print axioms GRWTSK.Analysis.Integration.ExponentialInterval.integral_exp_neg_mul
+#print axioms GRWTSK.Analysis.Integration.ExponentialInterval.integral_exp_mul
