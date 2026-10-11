@@ -8,6 +8,13 @@ open GRWTSK.NumberTheory.Moebius.VerticalLineMonotonicity
 open GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks
 
 example {n : ℕ} (hn : 1 ≤ n) :
+    pickupWeightedPrefix n =
+      (Real.sqrt n)⁻¹ * pickupMertensPrefix n +
+        (∫ u in (0 : ℝ)..Real.log (n : ℝ),
+          Real.exp (-u / 2) * mertensPrefix (Real.exp u)) / 2 :=
+  pickupWeightedPrefix_eq_mertens_add_integral hn
+
+example {n : ℕ} (hn : 1 ≤ n) :
     criticalIntervalBlock n =
       ∫ u in Real.log (n : ℝ)..Real.log ((n + 1 : ℕ) : ℝ),
         Real.exp (-u) * wholePickup u ^ 2 :=
