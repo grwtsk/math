@@ -1,4 +1,4 @@
-import GRWTSK.RiemannHypothesis.CCC.PrimeWindowLaplace
+import GRWTSK.NumberTheory.Moebius.PrimeFilterLaplace
 open GRWTSK.RiemannHypothesis.CCC
 example (h : noteWindowLaplace (primeNoteCascade {2}) 1 (Real.log 2) =
     (1-primeLaplaceWeight 2 1)*noteWindowLaplace baseNote 1 (Real.log 2)) : False := by
