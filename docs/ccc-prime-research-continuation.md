@@ -118,6 +118,19 @@ $$
 
 The negative mixed term is therefore structural, with its exact coefficient;
 it is not an error term that may be discarded before an upper estimate.
+For a one-sided sufficient criterion the formal source defines
+
+$$
+\mathcal M_n=4A_n^2\Delta_1(n)
++\frac{16}{3}|A_nM_n|\Delta_{3/2}(n)
++2M_n^2\Delta_2(n).
+$$
+
+Every endpoint drop is nonnegative, $0\le B_n\le\mathcal M_n$, and convergence
+of $\sum_n\mathcal M_n$ formally implies the uniform $\sigma=1/2$ bound. This
+is now a concrete sufficient prefix-series target. It does not prove that the
+series converges, and it pays absolute value only after the exact negative
+mixed term has been identified.
 
 ## Continuation and integration
 
