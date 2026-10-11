@@ -278,6 +278,86 @@ two Möbius prefixes. -/
 def CriticalPrefixPowerSummable : Prop :=
   Summable criticalPrefixPowerMajorant
 
+/-- The two square energies that dominate the mixed power-scale term by
+`2xy ≤ x² + y²`. -/
+def criticalPrefixSquareMajorant (n : ℕ) : ℝ :=
+  8 * (pickupWeightedPrefix n ^ 2 * (n : ℝ) ^ (-(2 : ℝ)) +
+    pickupMertensPrefix n ^ 2 * (n : ℝ) ^ (-(3 : ℝ)))
+
+theorem criticalPrefixSquareMajorant_nonneg (n : ℕ) :
+    0 ≤ criticalPrefixSquareMajorant n := by
+  unfold criticalPrefixSquareMajorant
+  positivity
+
+theorem criticalPrefixPowerMajorant_le_squareMajorant {n : ℕ}
+    (hn : 1 ≤ n) :
+    criticalPrefixPowerMajorant n ≤ criticalPrefixSquareMajorant n := by
+  have hnpos : (0 : ℝ) < n := by positivity
+  have hmixpow : (n : ℝ) ^ (-(5 / 2 : ℝ)) =
+      (n : ℝ) ^ (-(1 : ℝ)) * (n : ℝ) ^ (-(3 / 2 : ℝ)) := by
+    rw [← Real.rpow_add hnpos]
+    congr 1
+    norm_num
+  have hApow : (n : ℝ) ^ (-(2 : ℝ)) =
+      ((n : ℝ) ^ (-(1 : ℝ))) ^ 2 := by
+    rw [← Real.rpow_natCast, ← Real.rpow_mul hnpos.le]
+    norm_num
+  have hMpow : (n : ℝ) ^ (-(3 : ℝ)) =
+      ((n : ℝ) ^ (-(3 / 2 : ℝ))) ^ 2 := by
+    rw [← Real.rpow_natCast, ← Real.rpow_mul hnpos.le]
+    norm_num
+  have hyoung :
+      2 * (|pickupWeightedPrefix n| * (n : ℝ) ^ (-(1 : ℝ))) *
+          (|pickupMertensPrefix n| * (n : ℝ) ^ (-(3 / 2 : ℝ))) ≤
+        (|pickupWeightedPrefix n| * (n : ℝ) ^ (-(1 : ℝ))) ^ 2 +
+          (|pickupMertensPrefix n| * (n : ℝ) ^ (-(3 / 2 : ℝ))) ^ 2 := by
+    nlinarith [sq_nonneg
+      (|pickupWeightedPrefix n| * (n : ℝ) ^ (-(1 : ℝ)) -
+        |pickupMertensPrefix n| * (n : ℝ) ^ (-(3 / 2 : ℝ)))]
+  have hmixed :
+      2 * |pickupWeightedPrefix n * pickupMertensPrefix n| *
+          (n : ℝ) ^ (-(5 / 2 : ℝ)) ≤
+        pickupWeightedPrefix n ^ 2 * (n : ℝ) ^ (-(2 : ℝ)) +
+          pickupMertensPrefix n ^ 2 * (n : ℝ) ^ (-(3 : ℝ)) := by
+    rw [abs_mul, hmixpow, hApow, hMpow]
+    nlinarith [hyoung, sq_abs (pickupWeightedPrefix n),
+      sq_abs (pickupMertensPrefix n)]
+  unfold criticalPrefixPowerMajorant criticalPrefixSquareMajorant
+  nlinarith
+
+/-- Summability of the two-square majorant for the normalized prefixes. -/
+def CriticalPrefixSquareSummable : Prop :=
+  Summable criticalPrefixSquareMajorant
+
+/-- Square summability of the weighted Möbius prefix at scale `n⁻¹`. -/
+def CriticalWeightedPrefixSquareSummable : Prop :=
+  Summable (fun n : ℕ =>
+    pickupWeightedPrefix n ^ 2 * (n : ℝ) ^ (-(2 : ℝ)))
+
+/-- Square summability of the Mertens prefix at scale `n⁻³ᐟ²`. -/
+def CriticalMertensPrefixSquareSummable : Prop :=
+  Summable (fun n : ℕ =>
+    pickupMertensPrefix n ^ 2 * (n : ℝ) ^ (-(3 : ℝ)))
+
+theorem criticalPrefixSquareSummable_of_components
+    (hA : CriticalWeightedPrefixSquareSummable)
+    (hM : CriticalMertensPrefixSquareSummable) :
+    CriticalPrefixSquareSummable := by
+  unfold CriticalWeightedPrefixSquareSummable at hA
+  unfold CriticalMertensPrefixSquareSummable at hM
+  unfold CriticalPrefixSquareSummable criticalPrefixSquareMajorant
+  exact (hA.add hM).mul_left 8
+
+theorem criticalPrefixPowerSummable_of_squareSummable
+    (hs : CriticalPrefixSquareSummable) : CriticalPrefixPowerSummable := by
+  apply hs.of_nonneg_of_le criticalPrefixPowerMajorant_nonneg
+  intro n
+  by_cases hn : 1 ≤ n
+  · exact criticalPrefixPowerMajorant_le_squareMajorant hn
+  · have hnzero : n = 0 := by omega
+    subst n
+    simp [criticalPrefixPowerMajorant, criticalPrefixSquareMajorant]
+
 theorem criticalIntervalMajorantSummable_of_prefixPowerSummable
     (hs : CriticalPrefixPowerSummable) : CriticalIntervalMajorantSummable := by
   apply hs.of_nonneg_of_le criticalIntervalMajorant_nonneg
@@ -415,6 +495,14 @@ theorem criticalBoundary_of_prefixPowerSummable
   criticalBoundary_of_majorantSummable
     (criticalIntervalMajorantSummable_of_prefixPowerSummable hs)
 
+theorem criticalBoundary_of_prefixSquareComponents
+    (hA : CriticalWeightedPrefixSquareSummable)
+    (hM : CriticalMertensPrefixSquareSummable) :
+    CriticalBoundaryVerticalLineUniform :=
+  criticalBoundary_of_prefixPowerSummable
+    (criticalPrefixPowerSummable_of_squareSummable
+      (criticalPrefixSquareSummable_of_components hA hM))
+
 /-- Any solution of the countable RH-equivalent reciprocal-line problem must,
 in particular, settle the explicit critical arithmetic block problem. -/
 theorem criticalBoundary_of_criticalReciprocal
@@ -432,5 +520,6 @@ end GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalIntervalBlock_closedForm
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalIntervalBlockUniform_of_majorantSummable
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalIntervalMajorantSummable_of_prefixPowerSummable
+#print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalBoundary_of_prefixSquareComponents
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalIntervalBlockSum_eq_verticalLineMass
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalBoundary_iff_intervalBlockUniform
