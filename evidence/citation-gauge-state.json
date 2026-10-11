@@ -1,0 +1,33 @@
+{
+  "mathematical_content": "Established group-action state-gauge equivalence with exact own-step inverse and n+1 dynamics",
+  "local_addition": "Canonical interface, exact formal contract preservation and actual original step theorem reuse",
+  "source_definitions": 1,
+  "source_theorems": 1,
+  "stored_generated_equations": 1,
+  "actual_original_intrafamily_consumer_roles": 1,
+  "actual_original_external_consumers_replayed": 0,
+  "external_consumer_coverage": "NOT_CLAIMED",
+  "synthetic_wrappers": 1,
+  "direction": "R.A. Jacob Martone",
+  "assistance": "OpenAI Codex",
+  "historical_authoring_split": "UNKNOWN",
+  "license": "MIT",
+  "upstream": {
+    "repository": "https://github.com/leanprover-community/mathlib4",
+    "revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "source": "Mathlib/Algebra/Group/Action/Defs.lean",
+    "constants": [
+      "MulAction",
+      "inv_smul_smul",
+      "smul_inv_smul"
+    ],
+    "source_authors": [
+      "Chris Hughes",
+      "Yury Kudryashov"
+    ],
+    "license": "Apache-2.0"
+  },
+  "originality_claim": false,
+  "rh_proved": false,
+  "status": "LOCAL_CANDIDATE_ADMISSION_PENDING"
+}

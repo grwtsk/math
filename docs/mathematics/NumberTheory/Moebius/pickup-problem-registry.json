@@ -1,0 +1,500 @@
+{
+  "schema": "grwtsk-mathematical-problem-registry-v1",
+  "task_id": "CCC-RH-PRECISION-20261009",
+  "human_mathematical_direction": "R.A. Jacob Martone",
+  "written_recovery_and_implementation": "OpenAI Codex",
+  "evidence_policy": "Public mathematics only. Source inspection, written derivation, finite diagnostics, native replay and independent acceptance are separate. Check-in supplies no new acceptance. Private identities and receipts excluded.",
+  "definitions": {
+    "M": "sum_(1<=n<=x)mu(n), realx>=1",
+    "W": "int_0^T exp(-u/2)M(exp u)du, realT>=0",
+    "h_n": "2(n^-1/2-exp(-u/2))1_[logn,infinity)(u),positive integern",
+    "H_T": "int_0^T h_m(u)h_n(u)du",
+    "E": "int_0^T absW(u)^2du",
+    "U_T": "int_max(0,T-1)^T absW(u)^2du",
+    "D": "sum_(n=1..floor(exp T))mu(n)^2 H_T(n,n)",
+    "X": "sum_(m,n=1..floor(exp T),m!=n)mu(m)mu(n)H_T(m,n),ordered complete",
+    "WholePickupPoly": "exists realCW,pW>=0 forallrealT>=0 absW(T)<=CW(1+T)^pW",
+    "Storage": "nonnegative controller storage; never the signed reset pickup P_A"
+  },
+  "public_source_bindings": [
+    {
+      "path": "GRWTSK/NumberTheory/Moebius/MertensPrimitive.lean",
+      "sha256": "a0735d6120754b4921c55346a5fb0203cb3586bd6f312289f83b0a76218cffbb",
+      "revision_binding": "public commit containing these bytes; no acceptance follows from check-in"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Moebius/FiniteResponseSum.lean",
+      "sha256": "9358b6a2bbd51c10140c6fb595383355c54b072154965a06eb4651c3bc2c8bb8",
+      "revision_binding": "public commit containing these bytes; no acceptance follows from check-in"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Moebius/GramDiagonalBound.lean",
+      "sha256": "72172eb41fbc701bb53d3fe3d31f6a9d2cf5117c18769f85d5ed2e2986cb2b73",
+      "revision_binding": "public commit containing these bytes; no acceptance follows from check-in"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Zeta/Riemann/PolynomialEnergyCriterion.lean",
+      "sha256": "b4b7949d198e478ac369d8455284cd5b0505f5b97a0323d47eb5cf59da1f11b1",
+      "revision_binding": "public commit containing these bytes; no acceptance follows from check-in"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/Moebius/matched-pickup.md",
+      "sha256": "eda4e17c399e9cabb0bf98caa0928b5d3531770f58942c82f4181f5e4e6f18f1",
+      "revision_binding": "public commit containing these bytes; no acceptance follows from check-in"
+    }
+  ],
+  "entries": [
+    {
+      "id": "P00",
+      "literal_proposition": "forallreal T>=0: W(T)=2 sum_(1<=n<=exp T)mu(n)(n^-1/2-exp(-T/2)); forallreal0<=u<=T: W(u)=sum_(n=1..N_T)mu(n)h_n(u); E(T)=D(T)+X(T). Both constituent prefixes keep closed cutoff; flux=-2exp(-T/2)M(exp T).",
+      "quantified_domains": "x>=1,T>=0,0<=u<=T; every ordered m!=n with1<=m,n<=N_T",
+      "input_identities": [
+        "actual mu(n); closed N_T=floor(exp T)",
+        "original W, H_T, E, U, D and ordered-complete X as defined below"
+      ],
+      "dependencies": {
+        "AND": [
+          "actual finite completed source expansion",
+          "finite integral/sum exchange"
+        ]
+      },
+      "proof_check_receipt": {
+        "public_source_inspection": [
+          {
+            "path": "GRWTSK/NumberTheory/Moebius/MertensPrimitive.lean",
+            "sha256": "a0735d6120754b4921c55346a5fb0203cb3586bd6f312289f83b0a76218cffbb",
+            "revision_binding": "public commit containing these bytes; no acceptance follows from check-in"
+          },
+          {
+            "path": "GRWTSK/NumberTheory/Moebius/FiniteResponseSum.lean",
+            "sha256": "9358b6a2bbd51c10140c6fb595383355c54b072154965a06eb4651c3bc2c8bb8",
+            "revision_binding": "public commit containing these bytes; no acceptance follows from check-in"
+          },
+          {
+            "path": "GRWTSK/NumberTheory/Moebius/GramDiagonalBound.lean",
+            "sha256": "72172eb41fbc701bb53d3fe3d31f6a9d2cf5117c18769f85d5ed2e2986cb2b73",
+            "revision_binding": "public commit containing these bytes; no acceptance follows from check-in"
+          },
+          {
+            "path": "GRWTSK/NumberTheory/Zeta/Riemann/PolynomialEnergyCriterion.lean",
+            "sha256": "b4b7949d198e478ac369d8455284cd5b0505f5b97a0323d47eb5cf59da1f11b1",
+            "revision_binding": "public commit containing these bytes; no acceptance follows from check-in"
+          }
+        ],
+        "current_full_source_and_consumer_replay": "PENDING; historical or partial module checks do not certify the changed inventory",
+        "no_new_Lean_acceptance_from_this_registry": true
+      },
+      "current_evidence_grade": "Public formal source inspected; current complete replay pending",
+      "affected_consumers": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P07",
+        "P08",
+        "P09"
+      ],
+      "smallest_remaining_residual": "Current public source/consumer replay and exact remaining source-specific reset adapters"
+    },
+    {
+      "id": "P01",
+      "literal_proposition": "forallrealT>=0: 0<=D(T)<=2T^2-8T+16(1-exp(-T/2))<=2T^2.",
+      "quantified_domains": "All realT>=0; noninteger cutoffs and touching atoms included",
+      "input_identities": [
+        "actual mu(n); closed N_T=floor(exp T)",
+        "original W, H_T, E, U, D and ordered-complete X as defined below"
+      ],
+      "dependencies": {
+        "AND": [
+          "P00",
+          "mu(n)^2<=1",
+          "decreasing extension constant below1",
+          "finite Fubini"
+        ]
+      },
+      "proof_check_receipt": {
+        "public_source_inspection": [
+          {
+            "path": "GRWTSK/NumberTheory/Moebius/MertensPrimitive.lean",
+            "sha256": "a0735d6120754b4921c55346a5fb0203cb3586bd6f312289f83b0a76218cffbb",
+            "revision_binding": "public commit containing these bytes; no acceptance follows from check-in"
+          },
+          {
+            "path": "GRWTSK/NumberTheory/Moebius/FiniteResponseSum.lean",
+            "sha256": "9358b6a2bbd51c10140c6fb595383355c54b072154965a06eb4651c3bc2c8bb8",
+            "revision_binding": "public commit containing these bytes; no acceptance follows from check-in"
+          },
+          {
+            "path": "GRWTSK/NumberTheory/Moebius/GramDiagonalBound.lean",
+            "sha256": "72172eb41fbc701bb53d3fe3d31f6a9d2cf5117c18769f85d5ed2e2986cb2b73",
+            "revision_binding": "public commit containing these bytes; no acceptance follows from check-in"
+          },
+          {
+            "path": "GRWTSK/NumberTheory/Zeta/Riemann/PolynomialEnergyCriterion.lean",
+            "sha256": "b4b7949d198e478ac369d8455284cd5b0505f5b97a0323d47eb5cf59da1f11b1",
+            "revision_binding": "public commit containing these bytes; no acceptance follows from check-in"
+          }
+        ],
+        "current_full_source_and_consumer_replay": "PENDING; historical or partial module checks do not certify the changed inventory",
+        "no_new_Lean_acceptance_from_this_registry": true
+      },
+      "current_evidence_grade": "Public formal declaration pickupDiagonal_sharp_bound inspected; current complete replay pending",
+      "affected_consumers": [
+        "P04",
+        "P07",
+        "P08"
+      ],
+      "smallest_remaining_residual": "Fresh source and consumer acceptance for relocated modules"
+    },
+    {
+      "id": "P02",
+      "literal_proposition": "For T>=1 and0<delta<=1, k_aff(s)=(4-6s/delta)/delta has integral1,first moment0,L2^2=4/delta; absW(T)<=2delta^-1/2 sqrtU_T+(59/108)exp(T/2)delta^2+(32/27)exp(-T/2)delta. ForallT>=0: absW(T)^2<=8exp(T/5)(1+U_T). Actual right-continuous V=exp(-t/2)M(exp t) obeys Vprime=-V/2 between atoms and jump mu(n)/sqrt n atlogn; Wprime=V only almost everywhere at atoms.",
+      "quantified_domains": "T>=1,delta in(0,1]; final allT>=0 by exact startup; retain touching upper atom",
+      "input_identities": [
+        "actual mu(n); closed N_T=floor(exp T)",
+        "original W, H_T, E, U, D and ordered-complete X as defined below"
+      ],
+      "dependencies": {
+        "AND": [
+          "P00",
+          "actual event law",
+          "exact affine moments and lattice count",
+          "startup check"
+        ]
+      },
+      "proof_check_receipt": {
+        "formal_acceptance": "PENDING",
+        "target_source": "human mathematical specification; no arithmetic witness asserted"
+      },
+      "current_evidence_grade": "Exact written target recovered; public complete derivation and native adapter pending",
+      "affected_consumers": [
+        "P06 diagnostic"
+      ],
+      "smallest_remaining_residual": "Recover/check the full constants and atom-count proof; exponential factor is not a P06 witness"
+    },
+    {
+      "id": "P03",
+      "literal_proposition": "For0<delta<=1,eta=delta/2,A0=int_0^1 exp(eta v),A1=int_0^1 vexp(eta v),D=A1-A0/2=(eta/2)int_0^1v(1-v)exp(eta v)>0;b=(1-A0)/D,a=1-b/2,k_delta(s)=(a+bs/delta)/delta: integral k=1,integral kexp(s/2)=1,absb<=6,L2^2=delta^-1(1+b^2/12)<=4/delta,L1<=2. F_delta(d)=int_d^delta k_delta(s)(exp(s/2)-exp(d/2))ds satisfies F(0)=F(delta)=0. For T>=1: R_delta(T)=int_0^delta k_delta(s)W(T-s)ds-W(T)=2exp(-T/2)sum_(exp(T-delta)<n<=exp T)mu(n)F_delta(T-logn).",
+      "quantified_domains": "delta in(0,1],d in[0,delta],T>=1; original closed source prefixes unchanged",
+      "input_identities": [
+        "actual mu(n); closed N_T=floor(exp T)",
+        "original W, H_T, E, U, D and ordered-complete X as defined below"
+      ],
+      "dependencies": {
+        "AND": [
+          "P00",
+          "positive denominator integral",
+          "two exact homogeneous reproduction moments",
+          "complete finite atom expansion"
+        ]
+      },
+      "proof_check_receipt": {
+        "written_derivation": {
+          "path": "docs/mathematics/NumberTheory/Moebius/matched-pickup.md",
+          "sha256": "eda4e17c399e9cabb0bf98caa0928b5d3531770f58942c82f4181f5e4e6f18f1",
+          "revision_binding": "public commit containing these bytes; no acceptance follows from check-in"
+        },
+        "formal_acceptance": "NOT_RUN for matched kernel and its new source-specific adapters"
+      },
+      "current_evidence_grade": "Self-contained written derivation; no new Lean acceptance",
+      "affected_consumers": [
+        "P05",
+        "P06",
+        "P08"
+      ],
+      "smallest_remaining_residual": "Native source-specific kernel, moments and local defect return"
+    },
+    {
+      "id": "P04",
+      "literal_proposition": "exists real C_X,r>=0 forallrealT>=0: X(T)<=C_X(1+T)^r.",
+      "quantified_domains": "Actual Mobius coefficients, every ordered off-diagonal pair, all realT>=0",
+      "input_identities": [
+        "actual mu(n); closed N_T=floor(exp T)",
+        "original W, H_T, E, U, D and ordered-complete X as defined below"
+      ],
+      "dependencies": {
+        "AND": [
+          "P00 definitions"
+        ]
+      },
+      "proof_check_receipt": {
+        "arithmetic_witness": "NONE"
+      },
+      "current_evidence_grade": "OPEN arithmetic witness",
+      "affected_consumers": [
+        "P07",
+        "P08",
+        "P09"
+      ],
+      "smallest_remaining_residual": "Complete signed Mobius-specific polynomial cross-energy witness; no RH or cancellation premise permitted"
+    },
+    {
+      "id": "P05",
+      "literal_proposition": "exists real a,b,C_def>=0 forallrealT>=1: delta_T=(1+T)^(-a) and absR_delta_T(T)<=C_def(1+T)^b; equivalently with identical witnesses abs[2exp(-T/2)sum_(exp(T-delta_T)<n<=exp T)mu(n)F_delta_T(T-logn)]<=C_def(1+T)^b.",
+      "quantified_domains": "All realT>=1, prescribed polynomial reading width; strict lower and closed upper only after exact P03 identity",
+      "input_identities": [
+        "actual mu(n); closed N_T=floor(exp T)",
+        "original W, H_T, E, U, D and ordered-complete X as defined below"
+      ],
+      "dependencies": {
+        "AND": [
+          "P03 definitions and exact return"
+        ]
+      },
+      "proof_check_receipt": {
+        "arithmetic_witness": "NONE"
+      },
+      "current_evidence_grade": "OPEN arithmetic witness",
+      "affected_consumers": [
+        "P06",
+        "P08"
+      ],
+      "smallest_remaining_residual": "Weighted signed local cancellation at polynomial width; generic count remains exponential"
+    },
+    {
+      "id": "P06",
+      "literal_proposition": "exists realC_R,s>=0 forallrealT>=0: absW(T)^2<=C_R(1+T)^s(1+U_T). GivenP05 witnesses, C_R=8+2C_def^2,s=max(a,2b).",
+      "quantified_domains": "All realT>=0; compact range0<=T<=1 checked separately",
+      "input_identities": [
+        "actual mu(n); closed N_T=floor(exp T)",
+        "original W, H_T, E, U, D and ordered-complete X as defined below"
+      ],
+      "dependencies": {
+        "OR": [
+          {
+            "AND": [
+              "P00",
+              "P03",
+              "P05",
+              "Cauchy-Schwarz and startup"
+            ]
+          },
+          "alternate rigorous polynomial local return"
+        ]
+      },
+      "proof_check_receipt": {
+        "written_derivation": {
+          "path": "docs/mathematics/NumberTheory/Moebius/matched-pickup.md",
+          "sha256": "eda4e17c399e9cabb0bf98caa0928b5d3531770f58942c82f4181f5e4e6f18f1",
+          "revision_binding": "public commit containing these bytes; no acceptance follows from check-in"
+        },
+        "formal_acceptance": "NOT_RUN for matched kernel and its new source-specific adapters"
+      },
+      "current_evidence_grade": "OPEN target with written conditional matched-port consumer",
+      "affected_consumers": [
+        "P08"
+      ],
+      "smallest_remaining_residual": "A P05 witness or independently proved alternate return, plus native adapter"
+    },
+    {
+      "id": "P07",
+      "literal_proposition": "PickupCrossPoly iff PickupEnergyPoly; PickupEnergyPoly implies literal _root_.RiemannHypothesis. P04(CX,r) gives CE=CX+2,q=max(r,2). Regularized identity: z(z+1/2)[(z-1/2)zeta(z+1/2)]LW(z)=z-1/2 onRe z>0.",
+      "quantified_domains": "Existential nonnegative real polynomial witnesses; actual W Laplace transform, allRe z>0; literal RH quantifiers/exclusions unchanged",
+      "input_identities": [
+        "actual mu(n); closed N_T=floor(exp T)",
+        "original W, H_T, E, U, D and ordered-complete X as defined below"
+      ],
+      "dependencies": {
+        "AND": [
+          "P00",
+          "P01",
+          "OPEN P04 or PickupEnergyPoly",
+          "actual Laplace holomorphy and initial transform",
+          "regularized zeta identity",
+          "functional equation"
+        ]
+      },
+      "proof_check_receipt": {
+        "public_source_inspection": [
+          {
+            "path": "GRWTSK/NumberTheory/Moebius/MertensPrimitive.lean",
+            "sha256": "a0735d6120754b4921c55346a5fb0203cb3586bd6f312289f83b0a76218cffbb",
+            "revision_binding": "public commit containing these bytes; no acceptance follows from check-in"
+          },
+          {
+            "path": "GRWTSK/NumberTheory/Moebius/FiniteResponseSum.lean",
+            "sha256": "9358b6a2bbd51c10140c6fb595383355c54b072154965a06eb4651c3bc2c8bb8",
+            "revision_binding": "public commit containing these bytes; no acceptance follows from check-in"
+          },
+          {
+            "path": "GRWTSK/NumberTheory/Moebius/GramDiagonalBound.lean",
+            "sha256": "72172eb41fbc701bb53d3fe3d31f6a9d2cf5117c18769f85d5ed2e2986cb2b73",
+            "revision_binding": "public commit containing these bytes; no acceptance follows from check-in"
+          },
+          {
+            "path": "GRWTSK/NumberTheory/Zeta/Riemann/PolynomialEnergyCriterion.lean",
+            "sha256": "b4b7949d198e478ac369d8455284cd5b0505f5b97a0323d47eb5cf59da1f11b1",
+            "revision_binding": "public commit containing these bytes; no acceptance follows from check-in"
+          }
+        ],
+        "current_full_source_and_consumer_replay": "PENDING; historical or partial module checks do not certify the changed inventory",
+        "no_new_Lean_acceptance_from_this_registry": true
+      },
+      "current_evidence_grade": "Public conditional formal sources inspected; current full replay pending",
+      "affected_consumers": [
+        "literal RH"
+      ],
+      "smallest_remaining_residual": "Unconditional arithmetic growth witness and current formal acceptance; no ClassicalMertensDecay premise on this route"
+    },
+    {
+      "id": "P08",
+      "literal_proposition": "P04 AND P06 imply WholePickupPoly with CW=sqrt(CR(1+CE)),pW=(s+q)/2. P04 AND P05 give CW=2sqrtCE+C_def,pW=max((a+q)/2,b). Conversely WholePickupPoly(CW,pW) gives P04(CW^2/(2pW+1),2pW+1) and P05(a=0,b=pW,C_def=3CW). Thus P04 AND P05 iff WholePickupPoly as existential growth classes; no RH converse.",
+      "quantified_domains": "All realT>=0; constants/exponents nonnegative; matched defect targetT>=1; compact startup checked",
+      "input_identities": [
+        "actual mu(n); closed N_T=floor(exp T)",
+        "original W, H_T, E, U, D and ordered-complete X as defined below"
+      ],
+      "dependencies": {
+        "AND": [
+          "P00",
+          "P01",
+          "P03",
+          "P04",
+          "P05 or P06 as specified"
+        ]
+      },
+      "proof_check_receipt": {
+        "written_derivation": {
+          "path": "docs/mathematics/NumberTheory/Moebius/matched-pickup.md",
+          "sha256": "eda4e17c399e9cabb0bf98caa0928b5d3531770f58942c82f4181f5e4e6f18f1",
+          "revision_binding": "public commit containing these bytes; no acceptance follows from check-in"
+        },
+        "formal_acceptance": "NOT_RUN for matched kernel and its new source-specific adapters"
+      },
+      "current_evidence_grade": "Written conditional witness derivation; new matched adapters not Lean accepted",
+      "affected_consumers": [
+        "P09"
+      ],
+      "smallest_remaining_residual": "Open arithmetic witnesses; native matched-port consumers"
+    },
+    {
+      "id": "P09",
+      "literal_proposition": "P_A(t)=W(t)-W(2logA); WholePickupPoly(CW,pW) implies absP_A(t)<=2CW3^pW A^pW forA>=1,2logA<=t<=2A, giving prescribed supplier K0=0,D=2CW3^pW,R=1 for both strict polarities. Genuine source Gram G_A(m,n)=C_A(log(m/n)) requires a separate original native energy reverse adapter with its own constants.",
+      "quantified_domains": "All realA>=1 and t in[2logA,2A]; original player/reset and strict polarities retained",
+      "input_identities": [
+        "actual mu(n); closed N_T=floor(exp T)",
+        "original W, H_T, E, U, D and ordered-complete X as defined below"
+      ],
+      "dependencies": {
+        "AND": [
+          "P08 or WholePickupPoly",
+          "exact original source identities",
+          "separate genuine Gram adapter"
+        ]
+      },
+      "proof_check_receipt": {
+        "formal_acceptance": "PENDING source-specific consumer reproduction"
+      },
+      "current_evidence_grade": "Written pointwise inequality; original full source-consumer binding not independently reproduced here",
+      "affected_consumers": [
+        "original supplier",
+        "original source energy"
+      ],
+      "smallest_remaining_residual": "Recover actual player, C_A and reverse energy contracts before exporting their native constants; never identify H_T with G_A"
+    },
+    {
+      "id": "P10",
+      "literal_proposition": "For metric spacesX,Y,Z, ports f:X->Y,g:Y->Z and reconstructions fhat,ghat: if dY(fhat(x),f(x))<=epsilon1, g isg2-Lipschitz on transported domain, and dZ(ghat(y),g(y))<=epsilon2 there, then dZ(ghat(fhat(x)),g(f(x)))<=g2 epsilon1+epsilon2.",
+      "quantified_domains": "Allx indeclared domain,epsilon1,epsilon2,g2>=0; both transported values insecond-port domain",
+      "input_identities": [
+        "actual mu(n); closed N_T=floor(exp T)",
+        "original W, H_T, E, U, D and ordered-complete X as defined below"
+      ],
+      "dependencies": {
+        "AND": [
+          "triangle inequality",
+          "declared Lipschitz contract",
+          "own reconstruction error"
+        ]
+      },
+      "proof_check_receipt": {
+        "proof": "Triangle inequality through g(fhat(x)), then Lipschitz and own error."
+      },
+      "current_evidence_grade": "Elementary conditional written theorem; application contracts separate",
+      "affected_consumers": [
+        "protected observable composition"
+      ],
+      "smallest_remaining_residual": "Actual phase/orientation/mixed-Gram contracts and domain transport; theorem alone supplies none"
+    },
+    {
+      "id": "P11",
+      "literal_proposition": "Safe(s0) AND [forall s,sprime,Safe(s) AND Step(s,sprime) implies Safe(sprime)] implies forall s,Reachable(Step,s0,s) implies Safe(s).",
+      "quantified_domains": "Arbitrary state type and finite reflexive-transitive reachability; Safe carries explicit source/evidence/unresolved-premise/authorized-effect predicates",
+      "input_identities": [
+        "actual mu(n); closed N_T=floor(exp T)",
+        "original W, H_T, E, U, D and ordered-complete X as defined below"
+      ],
+      "dependencies": {
+        "AND": [
+          "trusted model relation",
+          "initial Safe",
+          "one-step invariant preservation"
+        ]
+      },
+      "proof_check_receipt": {
+        "proof": "Induction on the finite reachability derivation."
+      },
+      "current_evidence_grade": "Generic conditional induction; source/effect model relation not inferred",
+      "affected_consumers": [
+        "guarded reachability"
+      ],
+      "smallest_remaining_residual": "Meaningful implemented Safe invariant and trusted model relation; no termination/discovery/RH guarantee"
+    },
+    {
+      "id": "P12",
+      "literal_proposition": "Optional route must supply an exact quantitative return to P04 orP05, or independently the literal terminal target. Full contour residues of exp(zT)/[z(z+1/2)zeta(z+1/2)] retain every crossed pole and multiplicity, full clusters and the contour remainder. Mixture extraction, retained signed readout, omitted clusters and discarded tail require separate paid bounds.",
+      "quantified_domains": "Every proposed finite height/playback scale with justified scale-to-height relation; no simplicity/RH/spacing/cancellation premise hidden",
+      "input_identities": [
+        "actual mu(n); closed N_T=floor(exp T)",
+        "original W, H_T, E, U, D and ordered-complete X as defined below"
+      ],
+      "dependencies": {
+        "AND": [
+          "exact source recognition",
+          "multiplicity-preserving extraction",
+          "complete retained and discarded residual accounting",
+          "quantitative P04/P05 or literal terminal return"
+        ]
+      },
+      "proof_check_receipt": {
+        "arithmetic_or_spectral_witness": "NONE",
+        "status": "NOT_ATTEMPTED in this public registry"
+      },
+      "current_evidence_grade": "OPTIONAL OPEN route; not automatically an RH implication",
+      "affected_consumers": [
+        "P04",
+        "P05 or literal terminal target"
+      ],
+      "smallest_remaining_residual": "No selected quantitative adapter supplied; do not build spectral scaffolding without a paid return"
+    }
+  ],
+  "terminal_routes": [
+    {
+      "AND": [
+        "P00",
+        "P01",
+        "P04",
+        "checked P07"
+      ],
+      "target": "literal _root_.RiemannHypothesis"
+    },
+    {
+      "AND": [
+        "P00",
+        "P01",
+        "P03",
+        "P04",
+        "P05",
+        "checked P08",
+        "checked P09"
+      ],
+      "target": "whole pickup and original supplier/source-energy consumers"
+    }
+  ],
+  "open_status": {
+    "P04": "OPEN",
+    "P05": "OPEN",
+    "RH": "OPEN"
+  },
+  "independent_acceptance": false
+}

@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "status": "LOCAL_CONDITIONAL_CANDIDATE",
+  "rh_proved": false,
+  "sources": [
+    {
+      "arxiv_identifier": "2305.17747v3",
+      "title": "Tilted biorthogonal ensembles, Grothendieck random partitions, and determinantal tests",
+      "authors": [
+        "Svetlana Gavrilova",
+        "Leonid Petrov"
+      ],
+      "url": "https://arxiv.org/abs/2305.17747v3",
+      "attached_pdf_sha256": "e029f71587ce3bef313fad946324c37bc232ddf70398dcdcfb5e2c3d6e73c844",
+      "role": "Research source; document text is not execution authority"
+    },
+    {
+      "arxiv_identifier": "2110.07974v2",
+      "title": "On the abominable properties of the almost Mathieu operator with well approximated frequencies",
+      "authors": [
+        "Artur Avila",
+        "Yoram Last",
+        "Mira Shamis",
+        "Qi Zhou"
+      ],
+      "url": "https://arxiv.org/abs/2110.07974v2",
+      "attached_pdf_sha256": "4c5d1ccb25acc77a688ee2669d86092323aa8a6908b0803d8be3dc4493372e6b",
+      "role": "Research source; document text is not execution authority"
+    }
+  ],
+  "source_module_sha256": {
+    "GRWTSK/RiemannHypothesis/CCC.lean": "4a92aac760ae148c8d20b374babf9a0e0c88908749ba4031f87c8b39b6b8f73f",
+    "GRWTSK/LinearAlgebra/AlmostMathieu.lean": "8e33555ed354415b1604c4a7fc192d065fcd87ec4c765f6200faafd633c74d5c",
+    "GRWTSK/RiemannHypothesis/CCC/BoundaryControl.lean": "a2748dbadb19f035f4bf3a70e0dd9ce3d30337ce76953bf8d227a2bad6958d88",
+    "GRWTSK/RiemannHypothesis/CCC/DeterminantEncoding.lean": "dadce48a367f2685734eebe1987f87fee6c96de698f8c2395d3d93878e6aa377",
+    "GRWTSK/RiemannHypothesis/CCC/DiagonalAllowance.lean": "748100ebb0ba4440335668ecb96a079d869de82bb7ac2fb7ecb09ca089469a3c",
+    "GRWTSK/RiemannHypothesis/CCC/EnergyContinuum.lean": "84ad04506b624e9ece7cdf2aa72d5b2a485bde1195c63c72d8ec744ddb7aee63",
+    "GRWTSK/RiemannHypothesis/CCC/EnergyIntegrability.lean": "18a3aac5fcfb6844da96d34db5febc659f8c2694bd178ab187d324fbc9d6780b",
+    "GRWTSK/RiemannHypothesis/CCC/EnergyRHReturn.lean": "62ffb37232e2b35e062f180bda8fe9f54369b98b431a2f97d0b30d539932efd0",
+    "GRWTSK/RiemannHypothesis/CCC/EnergyReturn.lean": "2116d2d7191ae28844ead58af1eb76e32a0272e6e4c92566d6d48bd36c163dac",
+    "GRWTSK/RiemannHypothesis/CCC/GrowthBounds.lean": "edf4927bab00fdb5f3e2c1140c7764cbceacecda2d1327d89c04bb95bc401bb6",
+    "GRWTSK/RiemannHypothesis/CCC/LaplaceAnalytic.lean": "9b36cbd99be50262b982974d665a0b226495665a5e509f7355ce66a2e08e2f10",
+    "GRWTSK/RiemannHypothesis/CCC/PickupBudgets.lean": "a0735d6120754b4921c55346a5fb0203cb3586bd6f312289f83b0a76218cffbb",
+    "GRWTSK/RiemannHypothesis/CCC/PickupDiagonalBound.lean": "e4b835ea2904d9494dd2b5252f1297ac76a924b153b94b99865471bd619155e8",
+    "GRWTSK/RiemannHypothesis/CCC/PickupFiniteIdentity.lean": "4b4be0a5e4e2614ff81d192620170b5b47941e10e74f1965b5bbd0914ec24a51",
+    "GRWTSK/RiemannHypothesis/CCC/PickupInitialTransform.lean": "52717097ba1ac20ef02efa7d744c413458026d9c3de8d35bb6bd9de833c14f38",
+    "GRWTSK/RiemannHypothesis/CCC/PickupLaplaceDefinition.lean": "900d196c65816d9217c05246e6fd5a847d5fe975baa1adb869907e394a9e6514",
+    "GRWTSK/RiemannHypothesis/CCC/PickupRegularity.lean": "663fd9e9d6fd6af327eeac76166ea40c9dc07c029b5822468533d80db8b4f9be",
+    "GRWTSK/RiemannHypothesis/CCC/RegularizedZeta.lean": "084fe442c91faee379c83ad8a7a6af1f4500bd5eb66bbc5f999b160106627af7",
+    "GRWTSK/RiemannHypothesis/CCC/ResidualBudgets.lean": "f04a98b3263f8feb83ff0af003f8d9e9d077ae0e03a8e976a9a0621a59d8101f",
+    "GRWTSK/RiemannHypothesis/CCC/SampledBudgets.lean": "bd04cb30f62cba9981e9a5ba98039a0165bd2482becf27f3f8b4b5b533205de7",
+    "GRWTSK/RiemannHypothesis/CCC/SignedPickupAnalytic.lean": "04f4c00bae21d3fde810919c80030f2be5a2bdac9836dec0c5ea0ed5ab9b81c6",
+    "GRWTSK/RiemannHypothesis/CCC/UnsignedAllowance.lean": "4bf9d68b5e3ef3e405711aa248e6cdc7e45720fc5120211b85d7ad1d36e7b21d"
+  },
+  "mathematical_contributions": [
+    {
+      "classification": "RECONSTRUCTION_AND_APPLICATION",
+      "scope": "Existing CCC closed pickup, sharp diagonal, signed energy/Laplace conditional return"
+    },
+    {
+      "classification": "ESTABLISHED_ALGEBRA_APPLICATION",
+      "scope": "Rank-one determinant encoding returns exactly to original pickup energy"
+    },
+    {
+      "classification": "MODEL_ADAPTER",
+      "scope": "Literal almost Mathieu potential and transfer; no spectral or arithmetic identification"
+    },
+    {
+      "classification": "SOURCE_BOUND_ALLOWANCE",
+      "scope": "Finite Cauchy Schwarz yields exponential count cost; P04 remains open"
+    },
+    {
+      "classification": "ESTABLISHED_ANALYTIC_AND_GROWTH_CLASS_APPLICATION",
+      "scope": "Every-rate subexponential energy/cross equivalence, actual square-energy convergence boundary, complete sampled/all-real budgets and paid comparison residuals; no arithmetic witness"
+    }
+  ],
+  "local_direction": "R.A. Jacob Martone",
+  "formalization_and_checking_assistance": "OpenAI Codex",
+  "local_license": "MIT",
+  "upstream": {
+    "Lean": "4.33.0",
+    "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "license": "Apache-2.0; upstream authorship retained"
+  },
+  "frontier": {
+    "P04": "OPEN",
+    "P04_witness": null,
+    "P05": "OPEN_IN_SEPARATE_UPSTREAM_AMPLITUDE_ROUTE",
+    "terminal": "_root_.RiemannHypothesis",
+    "originality_claim": false,
+    "public_or_upstream_acceptance": false,
+    "every_rate_subexponential_bound": "OPEN",
+    "pickup_energy_abscissa_zero": "OPEN",
+    "complete_comparison_and_residual_supplier": "OPEN",
+    "density_source_abscissa": "DISTINCT_UPSTREAM_OBJECT_NOT_IDENTIFIED_HERE"
+  },
+  "verification": "evidence/ccc-energy-checks.json",
+  "recovery_provenance": "Detailed cross-repository source identities and relocation records are retained privately in ignored local records",
+  "research_inspection_scope": "Only publicly available mathematical source and approved public references are eligible for this export. Independent acceptance of the current relocated sources remains pending.",
+  "public_projection": "Host-specific locations and unpublished provenance are excluded. Mathematical observations and historical source bindings are retained; this projection supplies no new verification."
+}
