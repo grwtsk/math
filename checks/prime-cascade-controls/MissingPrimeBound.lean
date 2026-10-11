@@ -1,4 +1,4 @@
-import GRWTSK.RiemannHypothesis.CCC.PrimeReverberation
+import GRWTSK.NumberTheory.Moebius.PrimeFilterGrowth
 open GRWTSK.RiemannHypothesis.CCC
 example : PickupCrossPoly :=
   p04_of_prime_reverberation (by norm_num : (0:ℝ) ≤ 1)
