@@ -51,6 +51,16 @@ example (hA : CriticalWeightedPrefixSquareSummable)
     CriticalBoundaryVerticalLineUniform :=
   criticalBoundary_of_prefixSquareComponents hA hM
 
+example {CA CM α β : ℝ}
+    (hα : α < 1 / 2)
+    (hβ : β < 1)
+    (hA : ∀ n : ℕ, 1 ≤ n →
+      |pickupWeightedPrefix n| ≤ CA * (n : ℝ) ^ α)
+    (hM : ∀ n : ℕ, 1 ≤ n →
+      |pickupMertensPrefix n| ≤ CM * (n : ℝ) ^ β) :
+    CriticalBoundaryVerticalLineUniform :=
+  criticalBoundary_of_prefixPowerBounds hα hβ hA hM
+
 example :
     CriticalBoundaryVerticalLineUniform ↔ CriticalIntervalBlockUniform :=
   criticalBoundary_iff_intervalBlockUniform
