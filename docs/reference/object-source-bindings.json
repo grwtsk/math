@@ -122,6 +122,16 @@
     ],
     "DynamicalSystems/TransitionSystems": [
       "GRWTSK/DynamicalSystems/TransitionSystems/GuardedFiniteBudget.lean"
+    ],
+    "NumberTheory/ArithmeticFunctions": [
+      "GRWTSK/NumberTheory/ArithmeticFunctions/DensityMomentTails.lean",
+      "GRWTSK/NumberTheory/ArithmeticFunctions/SquarefreeMoebiusSum.lean"
+    ],
+    "NumberTheory/Moebius/LocalCancellation": [
+      "GRWTSK/NumberTheory/ArithmeticFunctions/MoebiusTruncation.lean"
+    ],
+    "NumberTheory/LSeries": [
+      "GRWTSK/NumberTheory/LSeries/ClosedMoebiusPolynomial.lean"
     ]
   }
 }

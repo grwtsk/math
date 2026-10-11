@@ -10,3 +10,5 @@ Retain every ordered cross term and its source/sign/phase. The first Hilbert-inn
 ## Source and verification scope
 
 [Source](../../../../../GRWTSK/Analysis/Fourier/WindowCertificates.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../../reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+
+The source binding was updated after history integration. Earlier proof receipts retain their original bytes; this page does not assert fresh acceptance of the updated source.
