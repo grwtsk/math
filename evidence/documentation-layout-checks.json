@@ -1,14 +1,14 @@
 {
   "schema": "mathematical-documentation-checks-v1",
   "status": "structurally-checked; no theorem admission",
-  "public_base": "8a76b62c0a3642bd553aa38cfc84f717f929924b",
+  "public_base": "d477876757a6ba4e3d9b20d99b76220bd05e1133",
   "pages": 71,
   "legacy_blocks": 608,
   "tests": {
-    "normal-current": "passed",
-    "optimized-current": "passed",
-    "controls-current": "passed",
-    "controls-optimized-current": "passed"
+    "normal-r4": "passed",
+    "optimized-r4": "passed",
+    "controls-r4": "passed",
+    "controls-optimized-r4": "passed"
   },
   "fixtures_per_mode": 59,
   "checked_input_sha256": {
@@ -41,7 +41,7 @@
     "docs/mathematics/NumberTheory/Moebius/PrimeFilters/negative-correlation.md": "ad6a8c5407b85ec46c1f29e63cec1b547bb24362cd8b2d1fc665527327ffa794",
     "docs/mathematics/NumberTheory/Moebius/PrimeFilters/uniform-supplier-obstruction.md": "a613cec600f80a8e2dc51c08211805f8b55ba0071cb9af69920f51572a4c295c",
     "docs/mathematics/NumberTheory/Moebius/Energy/recording-blocks.md": "50a113605469824985935b88c3971a7f8e2cfc1ea702ace55c699adbe2ec922a",
-    "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md": "c01d2c15506a8b76a225b309f3d5da11090221a2ffae08f00094dceaa12ce4cd",
+    "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md": "9023ab6c87edb68169a8280e817d5c10214185031c1b396a4a548213d3b882c2",
     "docs/mathematics/NumberTheory/Moebius/Energy/damped-tails.md": "49a9e1f20c793179d83930eeb3f7c5d7df94755243272ac359810c7071a67682",
     "docs/mathematics/LinearAlgebra/Schrodinger/sturmian.md": "1cc30045bcf36b17018524ec805097fc58897e05061563101416612301a6a3a7",
     "docs/mathematics/Spectral/FreeDirichletSpectrum/eigenvalues.md": "5bd38ec59bcdf6cb054f5a1befb650f1434ca01e65cfb42c54f50672de2853f5",
@@ -97,7 +97,8 @@
     "platform resource setup failure",
     "stale catalogue source hash",
     "unresolved index duplicate path rejection",
-    "whole-parent whitespace check rejected pre-existing public source/archive whitespace; incoming bytes preserved"
+    "whole-parent whitespace check rejected pre-existing public source/archive whitespace; incoming bytes preserved",
+    "Expected remote base changed; push rejected before invocation; affected structural checks repeated."
   ],
   "not_run": [
     "Lean replay",
@@ -108,7 +109,7 @@
   "source_manifest_refresh": "documentary bookkeeping only; native source acceptance separate",
   "rollback": "Revert this selected integration under current authority; preserve foreign work.",
   "concurrent_documentation_reconciliation": {
-    "incoming_base": "8a76b62c0a3642bd553aa38cfc84f717f929924b",
+    "incoming_base": "d477876757a6ba4e3d9b20d99b76220bd05e1133",
     "former_paths": [
       "docs/ccc-prime-research-continuation.md",
       "docs/moebius-prime-product-debt.md",
