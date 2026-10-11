@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "authority_components": [
+    {
+      "mathematics": "Established rational two-by-two shear units, noncommutativity and failure of the product inverse law despite individual sign-inverse laws",
+      "formal_artifacts": "Pinned Lean and mathlib Matrix/Units algebraic infrastructure",
+      "upstream_revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "named_upstream_credit": [
+        {
+          "module": "Mathlib.LinearAlgebra.Matrix.Notation",
+          "source_header": "/-\nCopyright (c) 2020 Anne Baanen. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: Anne Baanen, Eric Wieser\n-/",
+          "source_sha256": "0a5b11bff151565fa33a4b7faf0e20d4bf2d27075f98f88a0a9e9e25b40e2940"
+        },
+        {
+          "module": "Mathlib.Data.Matrix.Diagonal",
+          "source_header": "/-\nCopyright (c) 2018 Ellen Arlt. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: Ellen Arlt, Blair Shi, Sean Leather, Mario Carneiro, Johan Commelin, Lu-Ming Zhang\n-/",
+          "source_sha256": "dce51ac9508413b1250bfe7eacabf288a1a52b317b2f036d3663764cc3ed4e43"
+        },
+        {
+          "module": "Mathlib.Data.Matrix.Mul",
+          "source_header": "/-\nCopyright (c) 2018 Ellen Arlt. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: Ellen Arlt, Blair Shi, Sean Leather, Mario Carneiro, Johan Commelin, Lu-Ming Zhang\n-/",
+          "source_sha256": "9ce6ecd0751e977f58fc47d6f271dff381e59868474a6955730ff07a99aa0e6b"
+        }
+      ]
+    }
+  ],
+  "local_contribution_components": [
+    {
+      "classification": "MECHANICAL_RELOCATION_OR_RENAME",
+      "contribution": "Canonical GRWTSK.LinearAlgebra.CommonJCounterexamples interface with unchanged contracts"
+    },
+    {
+      "classification": "CONSUMER_APPLICATION",
+      "contribution": "Four original intra-family declaration dependencies and two explicitly synthetic public proof wrappers"
+    }
+  ],
+  "checked_composition_relations": [
+    "imports",
+    "reproduces",
+    "instantiates",
+    "applies"
+  ],
+  "verified_impact_records": {
+    "mathematical_impact": "No new theorem claimed",
+    "formal_impact": {
+      "grain": "one rational counterexample declaration slice",
+      "definitions": 3,
+      "source_theorems": 4,
+      "logical_records_including_generated": 15
+    },
+    "reuse_impact": {
+      "original_intra_family_declaration_consumer_roles": 4,
+      "distinct_external_original_consumers": 0,
+      "synthetic_public_wrappers": 2
+    },
+    "engineering_impact": "Independently reconstructible canonical local fixture interface"
+  },
+  "frontier_and_nonclaims": [
+    "Local candidate; transactional admission and review pending",
+    "Historical human/machine split unknown; no sole authorship, originality or priority claim",
+    "No executable equivalence, arithmetic transport, analytic estimate or RH proof"
+  ],
+  "evidence_and_version_bindings": {
+    "canonical_source_sha256": "4bed27e7c490006f93c462cee2e088c9d6655678da35d1e926a7d3cd75d3a892",
+    "Lean": "4.33.0",
+    "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "public_check": "checks/CommonJCounterexampleAudit.lean"
+  },
+  "local_direction": "grwtsk contributors",
+  "formalization_and_checking_assistance": "OpenAI Codex",
+  "local_license": "MIT",
+  "status": "LOCAL_CANDIDATE_ADMISSION_PENDING"
+}
