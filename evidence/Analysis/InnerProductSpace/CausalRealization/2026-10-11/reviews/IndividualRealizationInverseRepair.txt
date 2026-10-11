@@ -1,0 +1,28 @@
+# Individual realization: corrected inverse-power static addendum
+
+Verdict: ACCEPTED as an exact static mathematical/API repair. The inverse-power direction defect is corrected, and no new mathematical or API defect was found in the replacement. All twelve new libraries and twelve audits remain UNCOMPILED. Elaboration and linters are untested. No native/object/axiom acceptance, public or current-layout admission follows. The parent-reported revision-243 current134 hold remains explicitly unreleased. No compiler, tests, process actions, public/protected/foreign writes or other-chat messages were performed.
+
+Manifest: `/Users/local/Desktop/math/.local/ccc-control-soundness/native-individual-realization-inverse-repair-draft-20261011T142512Z/draft-manifest.json`, SHA256 `c58a0213c11e284c2ded3f6b53c04967f2760003f587bf02928b419b0132e7b3`.
+
+Corrected generic `NonzeroVectorRealization.lean` origin/snapshot SHA256: `e6ad4c8ebcb9c765722fce08d3cd758925b130fb8bf612cc600c3b08ac0b5fcf`. Its audit stays `9e07c221f6156209f5b85377c8c1d66dcc67743b936560031da1c02bb958e743`. Actual `CausalIndividualRealization.lean` remains `a76712b720cb2e1375f061857b569aeee3ac0399789068c6e4cdf69a8e0e0e0c`, with unchanged audit `9969784178471c39919dd7068bc4286ec5b23683932e83d75a860d3047130876`.
+
+I rehashed all 33 current origin/snapshot pairs and all 33 preceding rejected frozen snapshots. Exactly one row differs: the generic norm proof. All other 32 rows and all 29 cost-base rows remain unchanged. The 64 ordered selected theorem names, 21-library graph and topological order, twelve audit count, direct Mathlib observations and eight new definitions are exactly preserved. These are source/input identities; no audit has actually run.
+
+Complete byte comparison confirms the only change from rejected manifest `d3a2942766dff8087978b860f2c7c8826c5104d99c7907a9ca17c4a6fe6a3e11` and source `44c6657dc735587517fee0893be1b7959e36e2ca5331f3a03ab4ad33aa30f0f0` is:
+
+```lean
+-- rejected uncompiled variant
+rw [inv_pow, div_eq_mul_inv]
+-- corrected uncompiled variant
+rw [← inv_pow, div_eq_mul_inv]
+```
+
+Pinned `inv_pow` states `a⁻¹ ^ n = (a ^ n)⁻¹`. The reverse rule now correctly transforms `(‖x‖²)⁻¹` into `(‖x‖⁻¹)²`. With division expressed as multiplication by inverse, the ring identity
+
+`(‖x‖⁻¹)²*(‖y‖*‖x‖) = ‖y‖*‖x‖⁻¹*(‖x‖⁻¹*‖x‖)`
+
+is valid. `x≠0` supplies `‖x‖≠0`, so the final inverse cancellation gives the exact norm ratio. The repair changes no statement, hypothesis, construction, mathematical coefficient, import or definition, and adds no focused-sequence or linter waiver. Actual checking remains necessary; this is not a predicted compiler PASS.
+
+The immutable original detailed static review `b1438173750ecdda4e72f1fbda96a174b7228c60ed468ec6880d89d470fa2046` and rejected-variant defect note `231ae946766e71bc8cacc21cde048b8bd96ce536dce99f92f809f7f0a0fde330` remain intact. They distinguish the original untested focused-sequence risk from the concrete API-direction defect in the first repair. No actual Lean/linter failure was claimed for either variant.
+
+The accepted static mathematics remains individual strict-maturity native positivity, genuine original-window L2 nonzero, explicit continuous rank-one realization of one nonzero feature into the actual integral-normalized unit source at `A>0`, least norm ratio and least norm squared `1/gram(T,n,n)`, and the literal positive-gap label-eight consumer. It gives no uniqueness of a minimizing map, simultaneous whole-family map, uniform cost across all gaps, unpaid coefficient mixing, exact Gram bridge, signed arithmetic energy/cancellation/amplitude supplier, negative/joint sector, unrestricted operator bridge, RH or converse. No A=0 unit-source or C-infinity claim is made. Future native/public work requires gate release, a separately reviewed bounded checker and plan, actual successful checks and independent final acceptance.
