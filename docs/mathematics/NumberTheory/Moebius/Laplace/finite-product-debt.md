@@ -270,6 +270,19 @@ power differences for $n\ge1$. Termwise $B_n\le\mathcal M_n$, so summability
 of this explicit prefix majorant implies the complete boundary-line bound.
 That summability is a new named sufficient obligation, not an admitted fact.
 
+A reusable mean-value lemma under `Analysis/SpecialFunctions` proves
+$n^{-a}-(n+1)^{-a}\le a n^{-a-1}$ for $a\ge0$ and $n\ge1$. Applied at
+$a=1,3/2,2$, it yields the checked scale estimate
+
+$$
+\mathcal M_n\le
+4A_n^2n^{-2}+8|A_nM_n|n^{-5/2}+4M_n^2n^{-3}.
+$$
+
+Thus convergence of the displayed power-scale prefix series formally implies
+the critical boundary estimate. No convergence or cancellation premise is
+silently added by this reduction.
+
 The actual omitted function is
 
 $$r_{\sigma,T}(u)=1_{[0,\infty)}(u)e^{-\sigma u}W(u)
