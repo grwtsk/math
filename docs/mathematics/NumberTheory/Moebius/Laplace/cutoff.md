@@ -46,8 +46,35 @@ matching unborn causal responses vanish on the recording, while the transform
 retains that debt and both endpoint sums. The next concrete obligation is a
 uniform signed vertical-line estimate for this complete numerator. An unsigned
 triangle bound or a target-equivalent assumed supplier is not an RH advance.
+The exact cutoff formula is now Lean formalized in `PickupCutoffLaplace`. For $T\ge0$, $N=\lfloor e^T\rfloor$, $s=z+1/2$, and $z\ne0$, $s\ne0$, set
+
+$$
+D_N(s)=\sum_{n=1}^N\mu(n)e^{-s\log n},\quad
+A_N=\sum_{n=1}^N\frac{\mu(n)}{\sqrt n},\quad
+M_N=\sum_{n=1}^N\mu(n).
+$$
+
+Integrating each active response gives
+
+$$
+L_T(W;z)=\frac{D_N(s)}{zs}
+-\frac{2e^{-zT}}{z}A_N
++\frac{2e^{-sT}}{s}M_N.
+$$
+
+The single-response integral, finite signed integral linearity and full cutoff identity are proved. A note born exactly at the endpoint has zero transform; $T=0$ is included. Two actual zero-window counterexamples show that either signed endpoint omission is false. No new axiom or arithmetic-growth premise is used.
+
+The independent arithmetic lemma `cutoff_three_product_debt` proves
+
+$$
+(1-e^{-s\log2})(1-e^{-s\log3})=D_3(s)+e^{-s\log6}
+$$
+
+for every complex $s$. The positive-sign product six is above the inventory and its exponential never vanishes. Thus `cutoff_three_not_raw_product` rejects the raw-product substitution for every complex $s$. This is distinct from the already checked prime-two finite-window counterexample. It is an exact arithmetic identity, not a new growth estimate.
 
 
 ## Source and verification scope
+
+[Source](../../../../../GRWTSK/NumberTheory/Moebius/FiniteLaplaceTransform.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../../reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
 
 This page retains the complete signed cutoff and tail hypotheses. Existing source-specific receipts certify their own revisions; the mathematical integration does not itself supply the remaining uniform arithmetic budget. Human mathematical direction: grwtsk contributors. Derivation and formalization assistance: OpenAI Codex.

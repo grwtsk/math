@@ -2742,10 +2742,9 @@
       "title": "Finite signed prime-product debt",
       "subject": "NumberTheory",
       "object": "Moebius/Laplace",
-      "primary_source": "GRWTSK/NumberTheory/Moebius/FiniteLaplaceSums.lean",
-      "source_sha256": "8c1fb421033b43353ec61b5c3909ffad3a3394cc9fc002c6f6c13e6e856eb128",
-      "status": "written-argument",
-      "source_relation": "context; not certification of every written or cited claim"
+      "primary_source": "GRWTSK/NumberTheory/Moebius/FinitePrimeProductDebt.lean",
+      "source_sha256": "da66b07379c884fbc28f3e78dfd8b716727609e003ba5a89715c9932879db938",
+      "status": "historical-source-description"
     },
     "docs/mathematics/NumberTheory/Moebius/Energy/damped-tails.md": {
       "title": "Damped finite windows and extended tail energy",
@@ -3036,7 +3035,7 @@
       "category": "reference"
     },
     "README.md": {
-      "title": "Lean mathematical library",
+      "title": "GRWTSK mathematics",
       "category": "landing"
     },
     "docs/mathematics/DynamicalSystems/TransitionSystems/guarded-reachability.md": {
@@ -3092,5 +3091,5 @@
     }
   },
   "object_binding_registry": "docs/reference/object-source-bindings.json",
-  "object_binding_registry_sha256": "ccebbb2af40bcfbe52b5b738781633dde406a3bd803593c09106771e170480f0"
+  "object_binding_registry_sha256": "297681888ff591c51df6b53dd38cc04fb4418058ddf3fb5d37ac10f5e3807f10"
 }
