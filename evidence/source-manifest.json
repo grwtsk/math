@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "profile": "least-natural-prime + canonical34-Moser + exact-RH-target + ordered-product-candidate + common-J-rotation-candidate + common-J-native-sign-reversal-candidate + rational-shear-counterexample-candidate + ordered-product-gauge-candidate + real-polarization-access-ramp-candidate + interval-reflection-conditional-integral-candidate + finite-coverage-explicit-domain-and-tail-candidate + rh-inference-guards-with-existing-canonical-dependency-reuse-candidate + schrodinger-transfer-core-candidate + ccc-prime-cascade-exact-and-conditional + ccc-recording-scale-and-correlation-obstruction",
+  "profile": "least-natural-prime + canonical34-Moser + exact-RH-target + ordered-product-candidate + common-J-rotation-candidate + common-J-native-sign-reversal-candidate + rational-shear-counterexample-candidate + ordered-product-gauge-candidate + real-polarization-access-ramp-candidate + interval-reflection-conditional-integral-candidate + finite-coverage-explicit-domain-and-tail-candidate + rh-inference-guards-with-existing-canonical-dependency-reuse-candidate + schrodinger-transfer-core-candidate + ccc-prime-cascade-exact-and-conditional + ccc-recording-scale-and-correlation-obstruction + ccc-finite-window-signed-laplace-correction",
   "origin": "PUBLIC_MATHLIB_DIRECT_IMPORT",
   "upstream": {
     "repository": "https://github.com/leanprover-community/mathlib4",
@@ -14,7 +14,7 @@
   "files": {
     ".gitattributes": "30ad961b8d8b3947a8f036d5390087ab5f8c1853f7d0bfb01319f449e05e1368",
     ".gitignore": "21327e9cedbf4b84ef262886e71421d4201201b052cb7b06a6ba6a522270e732",
-    "GRWTSK.lean": "3fd351c088a43e458d9d5bb56bbf8b2efdfe393002076e21f331b50e95ab48f7",
+    "GRWTSK.lean": "3e25c138f64557b44b7685bde698651235b8110f2a02a5b641835a929aa2a933",
     "GRWTSK/Algebra/OrderedProduct.lean": "97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d",
     "GRWTSK/Combinatorics/GraphTheory/HadwigerNelson/Moser.lean": "1791f62713a936d9d91f262273871cf5d28257e390f15d05454a5f2115ce8796",
     "GRWTSK/Combinatorics/GraphTheory/HadwigerNelson/MoserCoordinates.lean": "0e29b36d41b117eb4c747ddaf02bf22a2b87e8a59b0665a424d1a1277a38c8ec",
@@ -31,8 +31,8 @@
     "LICENSES/MIT.txt": "a98fc92dab12d02b26bc51f1ac0d608871886b7e36de2170747fb0fcee946968",
     "LICENSES/Mathlib-Apache-2.0.txt": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
     "LICENSES/OpenAI-Apache-2.0.txt": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
-    "NOTICE": "12733cde5e839994f7e2ee224d41265a274779b4f566b861b1421caf5236ac4a",
-    "README.md": "1ff5c27bd75e36a74100cc3356492b5df454469e9ebf90236555428a39a349c5",
+    "NOTICE": "37597ba943cbf5b602f30eb6679de581456693cde47fa7c5f6c03b8bbbda0b6b",
+    "README.md": "ba6d7ed4a7a22186578bc9816ad83687eb5a04994562c99f4287f0659cb61fd4",
     "checks/CommonJAudit.lean": "6773a938739ae7708d354a130a9e067844cd33633cb6b4ce3883f998a7f638fd",
     "checks/Consumers.lean": "ddffe7fc2b513a02a79b3afa0a79a797d97424c15c6c08a82db2dd0f9ffe42e4",
     "checks/DeclarationAudit.lean": "377f6c7372b2693761402d3c28ab0fcb8dca0d5e7d18651fe03289f3863c070a",
@@ -166,7 +166,17 @@
     "evidence/prime-cascade-checks.json": "4cfaf9a14f9048f0d7a0ff209b823bcdc9d30891cf9ac9eb66f45e769b0cb766",
     "checks/recording-scale-controls/MissingScaleBound.lean": "0ab4975c22b084ad6d8fc8a5a913e205888979c3e590d378a75468f04bc54677",
     "checks/recording-scale-controls/MissingPairCondition.lean": "723af976da1ba6a55e0bfba3cb65c3c95c578aee838bc374dce62bcb61239dd6",
-    "checks/recording-scale-controls/NonnegativePrefixCorrelation.lean": "d9015a50255a6f9cb03a3ffe5f391e10afd97a84a603f47ebd60113ab564621d"
+    "checks/recording-scale-controls/NonnegativePrefixCorrelation.lean": "d9015a50255a6f9cb03a3ffe5f391e10afd97a84a603f47ebd60113ab564621d",
+    "GRWTSK/RiemannHypothesis/CCC/PrimeWindowLaplace.lean": "1758e02811afe2c78374c03a3e09d8f598bed1a176af3b0fb4d710f9c13c2fba",
+    "checks/CCCPrimeWindowLaplaceAudit.lean": "44f5fd78cf3cadce6944b7d33aae243b3a967abe31b1747cb8325d0e0dcb4432",
+    "scripts/check_prime_window_laplace.py": "08323c736721a660ac40a42f5727a85821b30d5bdd2f93d8da00066ab02eb598",
+    "docs/ccc-prime-window-laplace.md": "86921db0e4eb58891a1f103e186d2c06ffb6c78f62c3ff2b942ba738e24b466d",
+    "docs/ccc-prime-research-continuation.md": "74a4af504082b3e6502ff82a06d07f06e72b98df87b5a9c57c1f37fe18bd0e83",
+    "evidence/prime-window-laplace-checks.json": "4a69126aae6fe964547f70882da30459046885b825dbe4f262dac37614cd1fb5",
+    "evidence/citation-prime-window-laplace.json": "79f7ceff3f06d521db9d4681be679fb6bd14d57b98cf9495c892773046610371",
+    "checks/prime-window-controls/MissingTail.lean": "4e8f04bdf641bd1bf3e675915e79b4f4d3e1d5d6478a0cf46ac89334ad6c3897",
+    "checks/prime-window-controls/WrongWindow.lean": "eb0e8209bfe008c278bb03eb366a93c271aa70c21be915441dbd0ffb8c9f847d",
+    "checks/prime-window-controls/FalseMultiplier.lean": "b3570be4c189a5f785d7fa5c0203082308db056d4b9264b26100964ce6c3196f"
   },
   "axiom_policy": "Lean standard classical axioms propext, Classical.choice, Quot.sound permitted; sorryAx and other axioms rejected; prime exact observed list reported, Moser exact frozen lists matched.",
   "additional_claim_scope": "Exact Mathlib RH proposition, its defect equivalence and nontrivial-zero symmetries; no RH proof.",
@@ -213,5 +223,25 @@
     ],
     "analytic_rejection": "Uniform intermediate-prefix suppliers; prose PNT argument, not Lean replayed",
     "verification": "evidence/recording-scale-checks.json"
+  },
+  "prime_window_scope": {
+    "exact": [
+      "noteWindowLaplace_causalShift",
+      "noteWindowLaplace_primeFilter",
+      "noteWindowLaplace_cascade_insert",
+      "noteWindowLaplace_actual_cascade",
+      "noteWindowLaplace_primeFilter_before_delay",
+      "first_prime_window_not_multiplier",
+      "primeLaplaceWeight_eq_exp"
+    ],
+    "open": [
+      "Independent signed tail estimate",
+      "RecordingScaleBound",
+      "P04",
+      "RH"
+    ],
+    "counterexample": "Actual prime-two source at birth, positive real Laplace parameter one",
+    "verification": "evidence/prime-window-laplace-checks.json",
+    "continuation": "docs/ccc-prime-research-continuation.md"
   }
 }
