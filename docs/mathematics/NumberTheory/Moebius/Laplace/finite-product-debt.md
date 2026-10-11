@@ -171,8 +171,8 @@ cancellation in this completed numerator.
 
 The finite-window part of this section now has native Lean replay through
 `DampedRecordingParseval`. It reuses the independently proved raw-integral
-Plancherel bridge in `AngularFrequencyParseval`, rather than the older private
-`DampedRecordingWindow.lean` candidate. The half-line monotone-limit and tail
+Plancherel bridge in `AngularFrequencyParseval`, rather than the earlier
+`DampedRecordingWindow.lean` construction. The half-line monotone-limit and tail
 statements below remain written arguments pending their own native admission;
 they are not premises supplied by a waveform certificate.
 
@@ -212,14 +212,14 @@ known weighted-energy domain $\tau>1$. The unresolved extension is exactly
 $0<\sigma\le1/2$, and ultimately every positive line.
 
 The dependence on the continuum of rates can be reduced honestly.
-`VerticalLineMonotonicity` proves that the finite completed mass is antitone in
+[[`VerticalLineMonotonicity`](../../../../../GRWTSK/NumberTheory/Moebius/VerticalLineMonotonicity.lean)](../../../../../GRWTSK/NumberTheory/Moebius/VerticalLineMonotonicity.lean) proves that the finite completed mass is antitone in
 $\sigma$. Therefore bounds on the reciprocal sequence
 $\sigma_n=1/(n+1)$, $n\ge1$, imply bounds at every positive real rate. The
 converse is immediate, so this countable critical criterion is equivalent to
 `CompletedVerticalLineUniform`. The constant remains allowed to depend on
 $n$; the theorem does not manufacture a rate-uniform bound.
 
-At the first reciprocal line, `CriticalIntervalBlocks` removes the remaining
+At the first reciprocal line, [[`CriticalIntervalBlocks`](../../../../../GRWTSK/NumberTheory/Moebius/CriticalIntervalBlocks.lean)](../../../../../GRWTSK/NumberTheory/Moebius/CriticalIntervalBlocks.lean) removes the remaining
 continuous-time bookkeeping without removing arithmetic cancellation. On the
 cell $\log n<u<\log(n+1)$ it proves
 
@@ -257,6 +257,19 @@ This closed quadratic form exposes the exact negative mixed term that an
 arithmetic proof must retain. The generic finite exponential integral used in
 the derivation lives separately under `Analysis/Integration`.
 
+There is also a checked positive majorant
+
+$$
+\mathcal M_n=4A_n^2\Delta_1(n)
++\frac{16}{3}|A_nM_n|\Delta_{3/2}(n)
++2M_n^2\Delta_2(n).
+$$
+
+The endpoint drops are proved nonnegative and equal to the corresponding real
+power differences for $n\ge1$. Termwise $B_n\le\mathcal M_n$, so summability
+of this explicit prefix majorant implies the complete boundary-line bound.
+That summability is a new named sufficient obligation, not an admitted fact.
+
 The actual omitted function is
 
 $$r_{\sigma,T}(u)=1_{[0,\infty)}(u)e^{-\sigma u}W(u)
@@ -292,8 +305,7 @@ factor explicitly. Thus the infinite Laplace kernel exists absolutely at
 $\sigma+i\omega$, and the same bound controls
 $|L_\infty(\sigma+i\omega)-L_T(\sigma+i\omega)|$ uniformly over real
 $\omega$. It retains a paid *smaller-damping* energy premise; finite energy
-only at the same damping does not pay this particular estimate. The proposed
-finite identity then transports convergence to the full completed quotient
+only at the same damping does not pay this particular estimate. The finite identity then transports convergence to the full completed quotient
 $[\Pi_N(s)-R_T(z,s)]/(zs)$, retaining every debt and endpoint term. This
 supplies no separate convergence or cancellation estimate for those terms.
 
@@ -304,7 +316,10 @@ domain to every positive $\sigma$ still needs an independent signed
 arithmetic upper estimate. The tail argument explains the precise missing
 limit premise and cannot replace it.
 
-
 ## Source and verification scope
+
+[Source](../../../../../GRWTSK/NumberTheory/Moebius/FiniteLaplaceSums.lean). Status: **written-argument**. [Credit and evidence limits](../../../../reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+
+
 
 This page retains the complete signed cutoff and tail hypotheses. Existing source-specific receipts certify their own revisions; the mathematical integration does not itself supply the remaining uniform arithmetic budget. Human mathematical direction: grwtsk contributors. Derivation and formalization assistance: OpenAI Codex.
