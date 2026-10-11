@@ -42,7 +42,20 @@ $$
 
 for every complex $s$. The positive-sign product six is above the inventory and its exponential never vanishes. Thus `cutoff_three_not_raw_product` rejects the raw-product substitution for every complex $s$. This is distinct from the already checked prime-two finite-window counterexample. It is an exact arithmetic identity, not a new growth estimate.
 
-The next untried obligation is to prove the general cutoff-debt identity. Expand the raw prime product over every subset of the primes at most $N$, identify its born product terms with $D_N(s)$, and retain the complete signed sum for products above $N$. Next test a genuinely weaker estimate on that horizon-matched signed debt or derive an independent arithmetic cancellation lemma. Keep the two pickup endpoint terms; bounding separate unsigned pieces can destroy the cancellation. No adequate signed upper estimate is known here.
+The general cutoff-debt identity is now formalized in `FinitePrimeProductDebt`.
+It expands the raw prime product over every subset of the primes at most $N$,
+identifies the born products with $D_N(s)$, and retains the complete signed sum
+for products above $N$. It also proves that those unborn causal atoms vanish on
+the matching recording, that the debt at $s=0$ is exactly the negative Mertens
+prefix, and that the actual cutoff transform equals the raw product minus the
+debt and both endpoint corrections.
+
+The next untried obligation is an independently proved estimate for that
+complete signed numerator on a vertical line, uniform in the recording horizon,
+or a genuinely weaker cancellation lemma that still feeds the every-positive-
+damping energy criterion. Keep the debt and both pickup endpoint terms together;
+bounding separate unsigned pieces can destroy the cancellation. No adequate
+signed upper estimate is known here.
 
 ## Continuation and integration
 

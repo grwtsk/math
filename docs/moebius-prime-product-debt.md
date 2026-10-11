@@ -5,11 +5,12 @@ formalization assistance: OpenAI Codex. The finite product expansion and prime
 factorization arguments are established mathematics; Mathlib contributions
 retain their upstream authorship and Apache-2.0 license.
 
-Status: written derivation, with complete candidate Lean scripts retained in
-ignored local storage. The candidate has not been elaborated, admitted to the
-library or natively audited. The coordinated migration replay owns native
-verification for now. No independent arithmetic upper estimate or RH proof is
-claimed.
+Status: the finite product/debt identity, its native cutoff-prefix adapter, the
+causal vanishing of unborn responses, the `s = 0` Mertens edge, and the complete
+finite-window transform correction are formalized in
+[`FinitePrimeProductDebt.lean`](../GRWTSK/NumberTheory/Moebius/FinitePrimeProductDebt.lean).
+They have focused trust-zero replay and an owned-declaration axiom audit. No
+independent arithmetic upper estimate, P04 witness, or RH proof is claimed.
 
 ## Exact finite formula
 
@@ -124,11 +125,10 @@ The resulting exact proposed source adapter is
 
 $$\boxed{L_T(z)=\frac{\Pi_N(s)-R_T(z,s)}{zs}}.$$
 
-This completion retains unborn products and both endpoint sums. It neither
-estimates $R_T$ nor identifies it with a paid comparison-energy residual.
-The previous native receipt for the source transform applies to its frozen
-pre-migration inputs; relocated consumers require fresh verification. The
-new debt adapter remains unelaborated.
+This completion retains unborn products and both endpoint sums. The theorem
+`wholePickup_cutoff_laplace_prime_product` proves this adapter for the actual
+finite-window transform. It neither estimates $R_T$ nor identifies it with a
+paid comparison-energy residual.
 
 ## Next independent estimate
 

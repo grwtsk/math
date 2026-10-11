@@ -71,11 +71,11 @@ First pay native replay of the relocated dependencies and consumers, then elabor
 
 ## Written arithmetic completion
 
-The [finite prime-product debt](moebius-prime-product-debt.md) writes $\Pi_N(s)=D_N(s)+U_N(s)$ for every natural cutoff and complex parameter. Each squarefree integer below the cutoff occurs once through its prime-factor subset; products above the cutoff remain in the signed debt. Their actual causal responses vanish on the recording, while their raw product terms remain nonzero. The aggregate debt can vanish: cutoffs one and two have no unborn terms. At $s=0$ and $N\ge2$, the debt is exactly $-M(N)$.
+The [finite prime-product debt](moebius-prime-product-debt.md) is now Lean formalized and writes $\Pi_N(s)=D_N(s)+U_N(s)$ for every natural cutoff and complex parameter. Each squarefree integer below the cutoff occurs once through its prime-factor subset; products above the cutoff remain in the signed debt. Their actual causal responses vanish on the recording. At $s=0$ and $N\ge2$, the debt is exactly $-M(N)$.
 
 The resulting completed finite transform retains $U_N$ and both signed endpoint sums. The written vertical-line Plancherel target uses this complete numerator and its true denominator. Its uniform-in-time square-integral estimate is still unpaid. The angular kernel, hard-window representative and normalization also need native adapters; a waveform certificate containing those premises does not construct them.
 
-Fifteen complete candidate theorem scripts are stored privately and remain unelaborated. Exact integer coefficient checks through cutoff 42 retain the negative term at thirty and detect debt/sign omissions; they are finite sanity checks, not Lean replay or an arithmetic estimate. Once the monitor's complete migration replay finishes, elaborate and audit the canonical debt and word adapters with fresh receipts before admitting either to the library. No new library module or competing native job was started for this written advance.
+The canonical debt module has focused trust-zero replay and an owned-declaration axiom audit. Exact integer coefficient checks through cutoff 42 remain finite sanity checks, not an arithmetic estimate. The separate word and hard-window Fourier adapters still require their own current source replay before admission.
 
 ## Transferred damped-recording candidate and exact tail obligation
 

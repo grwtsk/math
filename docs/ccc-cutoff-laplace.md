@@ -39,4 +39,10 @@ Run `python3 scripts/check_pickup_cutoff_laplace.py`. It freshly elaborates the 
 
 The exact transform supplies no independent bound on its signed terms. P04, `RecordingScaleBound`, an adequate horizon-matched signed estimate and Mathlib's unchanged `_root_.RiemannHypothesis` remain open. No new assumption supplies any of them. The earlier PNT obstruction remains written mathematics with an explicitly imported classical PNT premise; this contribution does not formalize PNT.
 
-The next concrete obligation is the general arithmetic cutoff-debt identity: expand the raw finite prime product over subsets, identify the born subset products with $D_N(s)$, and retain the full signed sum of products above $N$. Then test a cancellation estimate on that actual debt at a matched horizon. An unsigned triangle bound or a target-equivalent assumed supplier is not an RH advance.
+The general arithmetic cutoff-debt identity is now proved in
+`FinitePrimeProductDebt`: the raw finite prime product is partitioned into the
+born prefix $D_N(s)$ and the complete signed sum of products above $N$. The
+matching unborn causal responses vanish on the recording, while the transform
+retains that debt and both endpoint sums. The next concrete obligation is a
+uniform signed vertical-line estimate for this complete numerator. An unsigned
+triangle bound or a target-equivalent assumed supplier is not an RH advance.
