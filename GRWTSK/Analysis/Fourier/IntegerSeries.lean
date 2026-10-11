@@ -14,6 +14,9 @@ import Mathlib.Tactic.Linarith
 import Mathlib.Tactic.FunProp
 import Mathlib.Analysis.Fourier.LpSpace
 
+/-! Exact waveform roles. Mathematical proof is never an operational credential.
+This module proves local algebra/analysis and conditional returns, not P04.
+Angular-frequency Parseval needs a separately checked convention adapter. -/
 set_option autoImplicit false
 noncomputable section
 namespace GRWTSK.Analysis.Waveform
@@ -172,5 +175,6 @@ theorem frequency_derivative_bound (s : ℕ → ℤ) (k : ℕ) :
   calc
     _ = (1 / 2 : ℝ) ^ (k + 1) * (|(s k : ℝ)| / (1 + |(s k : ℝ)|)) := by ring
     _ ≤ _ := by simpa using mul_le_mul_of_nonneg_left hc (by positivity : 0 ≤ (1/2:ℝ)^(k+1))
+
 
 end GRWTSK.Analysis.Waveform

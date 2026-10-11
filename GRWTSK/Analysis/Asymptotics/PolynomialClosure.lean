@@ -1,23 +1,10 @@
 /- Copyright (c) 2026 R.A. Jacob Martone. MIT.
 Human direction: R.A. Jacob Martone; OpenAI Codex formalization assistance.
 Classical implications; imported Mathlib contributions retain their authorship. -/
-import Mathlib.Analysis.Calculus.ContDiff.Deriv
-import Mathlib.Analysis.Calculus.MeanValue
-import Mathlib.Analysis.Calculus.SmoothSeries
-import Mathlib.Analysis.SpecialFunctions.Trigonometric.Deriv
-import Mathlib.Analysis.SpecificLimits.Normed
-import Mathlib.LinearAlgebra.Matrix.Trace
-import Mathlib.LinearAlgebra.Matrix.Notation
-import Mathlib.Tactic.NormNum
-import Mathlib.Tactic.Linarith
-import Mathlib.Tactic.FunProp
-import Mathlib.Analysis.Fourier.LpSpace
-import GRWTSK.Analysis.Asymptotics.PolynomialErrorBound
-
+import GRWTSK.Data.Sampling.Descriptions GRWTSK.Analysis.Fourier.IntegerSeries GRWTSK.Logic.FiniteSequences.PrefixCoverage GRWTSK.LinearAlgebra.Schrodinger.SampledPotential GRWTSK.Algebra.BigOperators.OrderedSquare GRWTSK.Analysis.Fourier.Parseval GRWTSK.Analysis.Asymptotics.PolynomialErrorBound GRWTSK.Algebra.BigOperators.QuadraticCounterexample
 set_option autoImplicit false
 noncomputable section
 namespace GRWTSK.Analysis.Waveform
-open scoped BigOperators FourierTransform
 open MeasureTheory
 
 theorem p04_conditional {X R e : ℝ → ℝ} {CR Ce r s : ℝ}
@@ -28,5 +15,4 @@ theorem p04_conditional {X R e : ℝ → ℝ} {CR Ce r s : ℝ}
     ∃ C p : ℝ, 0 ≤ C ∧ 0 ≤ p ∧ ∀ T, 0 ≤ T → X T ≤ C*(1+T)^p := by
   exact ⟨CR+Ce,max r s,add_nonneg hCR hCe,(le_max_left r s).trans' hr,
     polynomial_return hCR hCe hid hR he⟩
-
 end GRWTSK.Analysis.Waveform

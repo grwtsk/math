@@ -2617,7 +2617,7 @@
       "status": "historical-source-description"
     },
     "docs/mathematics/LinearAlgebra/Schrodinger/transfer.md": {
-      "title": "Schrödinger transfer matrices",
+      "title": "Schr\u00f6dinger transfer matrices",
       "subject": "LinearAlgebra",
       "object": "Schrodinger",
       "primary_source": "GRWTSK/LinearAlgebra/SchrodingerTransfer.lean",
@@ -2742,10 +2742,9 @@
       "title": "Finite signed prime-product debt",
       "subject": "NumberTheory",
       "object": "Moebius/Laplace",
-      "primary_source": "GRWTSK/NumberTheory/Moebius/FiniteLaplaceSums.lean",
-      "source_sha256": "8c1fb421033b43353ec61b5c3909ffad3a3394cc9fc002c6f6c13e6e856eb128",
-      "status": "written-argument",
-      "source_relation": "context; not certification of every written or cited claim"
+      "primary_source": "GRWTSK/NumberTheory/Moebius/FinitePrimeProductDebt.lean",
+      "source_sha256": "da66b07379c884fbc28f3e78dfd8b716727609e003ba5a89715c9932879db938",
+      "status": "historical-source-description"
     },
     "docs/mathematics/NumberTheory/Moebius/Energy/damped-tails.md": {
       "title": "Damped finite windows and extended tail energy",
@@ -2819,7 +2818,7 @@
       "subject": "Analysis",
       "object": "Fourier/WindowCertificates",
       "primary_source": "GRWTSK/Analysis/Fourier/WindowCertificates.lean",
-      "source_sha256": "c616f557739add2b41d0691111f835ce0f181daf4ba383ba84ded3f3e25a216b",
+      "source_sha256": "ccb66f1f070df085c361665612019f59bcb92f79a3e9fa701c88364e3da15c05",
       "status": "historical-source-description"
     },
     "docs/mathematics/Logic/FiniteSequences/prefix-coverage.md": {
@@ -2827,7 +2826,7 @@
       "subject": "Logic",
       "object": "FiniteSequences",
       "primary_source": "GRWTSK/Logic/FiniteSequences/PrefixCoverage.lean",
-      "source_sha256": "77ed7277b4519ff8fb955e215664ac6d0c22a78e95e38e9ee16d18e6b226a5b3",
+      "source_sha256": "a6ee772e91591f1e51ad01a4a0ff68df9f2455d4c0c168a660159fb0fd55485f",
       "status": "historical-source-description"
     },
     "docs/mathematics/Combinatorics/Sequences/quotas.md": {
@@ -2843,7 +2842,7 @@
       "subject": "Analysis",
       "object": "Fourier/IntegerSeries",
       "primary_source": "GRWTSK/Analysis/Fourier/IntegerSeries.lean",
-      "source_sha256": "46462643902012c58fa6514c99721701b65655f16fd88a0e82fc1181c94bbe88",
+      "source_sha256": "bd741ea9dd1e4efbc8eab2f77574a73c0cd82d85f2a76d604b14f05cd2f09789",
       "status": "historical-source-description"
     },
     "docs/mathematics/LinearAlgebra/Schrodinger/sampled-potential.md": {
@@ -2851,7 +2850,7 @@
       "subject": "LinearAlgebra",
       "object": "Schrodinger",
       "primary_source": "GRWTSK/LinearAlgebra/Schrodinger/SampledPotential.lean",
-      "source_sha256": "dd30ef9e49516fbd3c87d80a743b8ca52cf49fbd4dc6914f954b59ec6753482b",
+      "source_sha256": "412246f06dbbe474c57fa268af5751faf5a8315a41d6569d476101b6914aa3f1",
       "status": "historical-source-description"
     },
     "docs/mathematics/Analysis/NormedSpace/reconstruction.md": {
@@ -2859,7 +2858,7 @@
       "subject": "Analysis",
       "object": "NormedSpace",
       "primary_source": "GRWTSK/Analysis/NormedSpace/QuadraticError.lean",
-      "source_sha256": "663c865cdbe9802281cbb4be82f3c15612330e44c86acd44db9b14dd46d1c7d6",
+      "source_sha256": "f37a84e26536edcaa569bb8e722fa66f301da0b711da63dcb70cd912caeec4d6",
       "status": "historical-source-description"
     },
     "docs/mathematics/NumberTheory/ContinuedFractions/scheduled-denominators.md": {
@@ -2947,11 +2946,11 @@
       "subject": "Analysis",
       "object": "Asymptotics",
       "primary_source": "GRWTSK/Analysis/Asymptotics/PolynomialErrorBound.lean",
-      "source_sha256": "038e3cf31cc90eec7019c91be55ff2cdc4c00aaf82a3791be5d05e4dfae12996",
+      "source_sha256": "7f04746894b0774969d506fde6c8287056361051f29196c8dc23c2f38932b6e6",
       "status": "historical"
     },
     "docs/mathematics/NumberTheory/Moebius/matched-pickup.md": {
-      "title": "Matched averaging for the closed Möbius pickup",
+      "title": "Matched averaging for the closed M\u00f6bius pickup",
       "subject": "NumberTheory",
       "object": "Moebius",
       "primary_source": "GRWTSK/NumberTheory/Moebius/PrimitiveIdentification.lean",
@@ -3029,5 +3028,5 @@
     }
   },
   "object_binding_registry": "docs/reference/object-source-bindings.json",
-  "object_binding_registry_sha256": "cae7c767344223ddac94420c56800e8d13e7afb3389d20d9d232ffab4c778ec0"
+  "object_binding_registry_sha256": "f723b0a8dd9934b0ceea870caa89556190af9327d335682123b9e88a16701a26"
 }

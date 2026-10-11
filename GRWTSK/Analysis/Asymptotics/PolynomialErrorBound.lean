@@ -14,6 +14,9 @@ import Mathlib.Tactic.Linarith
 import Mathlib.Tactic.FunProp
 import Mathlib.Analysis.Fourier.LpSpace
 
+/-! Exact waveform roles. Mathematical proof is never an operational credential.
+This module proves local algebra/analysis and conditional returns, not P04.
+Angular-frequency Parseval needs a separately checked convention adapter. -/
 set_option autoImplicit false
 noncomputable section
 namespace GRWTSK.Analysis.Waveform
@@ -37,5 +40,6 @@ theorem polynomial_return {X R e : ℝ → ℝ} {CR Ce r s : ℝ}
     _ ≤ CR*(1+T)^(max r s) + Ce*(1+T)^(max r s) :=
       add_le_add (mul_le_mul_of_nonneg_left hpR hCR) (mul_le_mul_of_nonneg_left hpE hCe)
     _ = _ := by ring
+
 
 end GRWTSK.Analysis.Waveform
