@@ -1,0 +1,2694 @@
+{
+  "schema": "public-density-arithmetic-replay-v1",
+  "outcome": "passed",
+  "source_hashes": {
+    "GRWTSK/NumberTheory/ArithmeticFunctions/DensityMoebius.lean": "d008c51b50cd7e88635e91ac03429a29656d23a9d9773dce8b5a8a81acd587d9",
+    "GRWTSK/NumberTheory/ArithmeticFunctions/DensityMoebiusCorrection.lean": "efdc7e4dbcd949d27cf560879021943ad85cfe44dafc0a24bb2dd8785e5122c3",
+    "GRWTSK/NumberTheory/ArithmeticFunctions/PositiveDensityCorrection.lean": "da2764d9a3d2011fd434c08cab59cf34226a7f2cae129c61071f0d0254e15dbc",
+    "GRWTSK/NumberTheory/ArithmeticFunctions/DensityCorrectionPrimeSeries.lean": "d6c5795d8ae7739dd62c2f35b5d07f2ba6a3e5369f9ed3bab7e7fb3c9447be54",
+    "GRWTSK/NumberTheory/ArithmeticFunctions/DensityCorrectionReciprocalMass.lean": "4810a08caa35c73e9e950f76d91811b95f507b35cc63ceaa6de4fd56343e5b5f",
+    "GRWTSK/NumberTheory/ArithmeticFunctions/DensityHalfPrimeFactor.lean": "7d5f369bc77ff8c2bce6eff1e4b64035776d83e0fe509c9d7e9c39f136a2b572",
+    "GRWTSK/NumberTheory/ArithmeticFunctions/DensityHalfMoment.lean": "d1377c470c6b14320736ab1a91ba2cbba7a35ebff6bd2a148f1ab1c992130b4d",
+    "GRWTSK/NumberTheory/ArithmeticFunctions/DensityMomentTails.lean": "d495504f0e5f051ed0471530e1bb0f1dfdbb348391e22dc800044ccaf1f5a795",
+    "GRWTSK/NumberTheory/ArithmeticFunctions/ExcludedDensityCorrection.lean": "eee5bf6a99b7f965145ad44847ea0d46f7da58dac0c4515c27f560ffbc50cfc8",
+    "GRWTSK/NumberTheory/ArithmeticFunctions/MoebiusTruncation.lean": "923aa8009853029cca709c1f6016119740eaa00e25d59142c2cb487194c85550",
+    "GRWTSK/NumberTheory/ArithmeticFunctions/TruncatedMoebiusCoefficients.lean": "b894639f43dcd275dbbb760e11a559ee62dac0851c957d0bc38cb8a7c48c9151",
+    "GRWTSK/NumberTheory/ArithmeticFunctions/SquarefulMoebiusReturn.lean": "b9c8985b74a60c0526cec8d9c3c9cb2f9751ebe754d720f13d12af4929e639e8",
+    "GRWTSK/NumberTheory/ArithmeticFunctions/SquarefreeMoebiusSum.lean": "eb23e7ba6387bba4daa62f117286b582901426d232c98476e6992e21ef5b89ba",
+    "GRWTSK/NumberTheory/ArithmeticFunctions/ComplexMoebiusCast.lean": "11f9fe32519e1a1bb0f3b2f72020a4aa9b3b9ee9e87e8ef59836f0714636e9be",
+    "GRWTSK/NumberTheory/ArithmeticFunctions/DivisibleDensityRow.lean": "a7f511ea72ada038aef660df13ed61a1829ae8d110a8d607bd3c66085a80b399",
+    "GRWTSK/NumberTheory/ArithmeticFunctions/DensityFiniteSums.lean": "5c1ef06d52093675f0ff2998d7536b34801e23943cf864cf851a55c07ee42d64",
+    "GRWTSK/NumberTheory/ArithmeticFunctions/MoebiusReciprocalPrefix.lean": "7c71eccfb7a18954cc98fcb1e3f0b948a2506f84a835d33c97c63ac85f3bc9d2",
+    "GRWTSK/NumberTheory/ArithmeticFunctions/CoprimeReciprocalForm.lean": "d02ae676e6a9ee857aa9774b0b8d9c98e666bec9424e0368bc56f438f13756d6",
+    "GRWTSK/NumberTheory/ArithmeticFunctions/DensityReciprocalPrefix.lean": "e5d5b1834d1004ea4aa270f607f855d31c365925060e87a8cb3ddce2291b210f"
+  },
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "trust": 0,
+  "fatal_warnings": true,
+  "selected_checks": {
+    "fresh-source": "passed",
+    "literal-contracts": "passed",
+    "owned-bodies": "passed",
+    "transitive-axioms": "passed",
+    "hostile-controls": "passed"
+  },
+  "modules": [
+    {
+      "module": "GRWTSK.NumberTheory.ArithmeticFunctions.DensityMoebius",
+      "build_exit": 0,
+      "fresh_audit_exit": 0,
+      "semantic_roots": 12,
+      "owned_records": 15
+    },
+    {
+      "module": "GRWTSK.NumberTheory.ArithmeticFunctions.DensityMoebiusCorrection",
+      "build_exit": 0,
+      "fresh_audit_exit": 0,
+      "semantic_roots": 6,
+      "owned_records": 6
+    },
+    {
+      "module": "GRWTSK.NumberTheory.ArithmeticFunctions.PositiveDensityCorrection",
+      "build_exit": 0,
+      "fresh_audit_exit": 0,
+      "semantic_roots": 8,
+      "owned_records": 11
+    },
+    {
+      "module": "GRWTSK.NumberTheory.ArithmeticFunctions.DensityCorrectionPrimeSeries",
+      "build_exit": 0,
+      "fresh_audit_exit": 0,
+      "semantic_roots": 8,
+      "owned_records": 12
+    },
+    {
+      "module": "GRWTSK.NumberTheory.ArithmeticFunctions.DensityCorrectionReciprocalMass",
+      "build_exit": 0,
+      "fresh_audit_exit": 0,
+      "semantic_roots": 15,
+      "owned_records": 17
+    },
+    {
+      "module": "GRWTSK.NumberTheory.ArithmeticFunctions.DensityHalfPrimeFactor",
+      "build_exit": 0,
+      "fresh_audit_exit": 0,
+      "semantic_roots": 6,
+      "owned_records": 8
+    },
+    {
+      "module": "GRWTSK.NumberTheory.ArithmeticFunctions.DensityHalfMoment",
+      "build_exit": 0,
+      "fresh_audit_exit": 0,
+      "semantic_roots": 17,
+      "owned_records": 20
+    },
+    {
+      "module": "GRWTSK.NumberTheory.ArithmeticFunctions.DensityMomentTails",
+      "build_exit": 0,
+      "fresh_audit_exit": 0,
+      "semantic_roots": 9,
+      "owned_records": 9
+    },
+    {
+      "module": "GRWTSK.NumberTheory.ArithmeticFunctions.ExcludedDensityCorrection",
+      "build_exit": 0,
+      "fresh_audit_exit": 0,
+      "semantic_roots": 13,
+      "owned_records": 19
+    },
+    {
+      "module": "GRWTSK.NumberTheory.ArithmeticFunctions.MoebiusTruncation",
+      "build_exit": 0,
+      "fresh_audit_exit": 0,
+      "semantic_roots": 4,
+      "owned_records": 5
+    },
+    {
+      "module": "GRWTSK.NumberTheory.ArithmeticFunctions.TruncatedMoebiusCoefficients",
+      "build_exit": 0,
+      "fresh_audit_exit": 0,
+      "semantic_roots": 8,
+      "owned_records": 12
+    },
+    {
+      "module": "GRWTSK.NumberTheory.ArithmeticFunctions.SquarefulMoebiusReturn",
+      "build_exit": 0,
+      "fresh_audit_exit": 0,
+      "semantic_roots": 2,
+      "owned_records": 4
+    },
+    {
+      "module": "GRWTSK.NumberTheory.ArithmeticFunctions.SquarefreeMoebiusSum",
+      "build_exit": 0,
+      "fresh_audit_exit": 0,
+      "semantic_roots": 1,
+      "owned_records": 2
+    },
+    {
+      "module": "GRWTSK.NumberTheory.ArithmeticFunctions.ComplexMoebiusCast",
+      "build_exit": 0,
+      "fresh_audit_exit": 0,
+      "semantic_roots": 4,
+      "owned_records": 5
+    },
+    {
+      "module": "GRWTSK.NumberTheory.ArithmeticFunctions.DivisibleDensityRow",
+      "build_exit": 0,
+      "fresh_audit_exit": 0,
+      "semantic_roots": 3,
+      "owned_records": 3
+    },
+    {
+      "module": "GRWTSK.NumberTheory.ArithmeticFunctions.DensityFiniteSums",
+      "build_exit": 0,
+      "fresh_audit_exit": 0,
+      "semantic_roots": 6,
+      "owned_records": 8
+    },
+    {
+      "module": "GRWTSK.NumberTheory.ArithmeticFunctions.MoebiusReciprocalPrefix",
+      "build_exit": 0,
+      "fresh_audit_exit": 0,
+      "semantic_roots": 5,
+      "owned_records": 6
+    },
+    {
+      "module": "GRWTSK.NumberTheory.ArithmeticFunctions.CoprimeReciprocalForm",
+      "build_exit": 0,
+      "fresh_audit_exit": 0,
+      "semantic_roots": 1,
+      "owned_records": 1
+    },
+    {
+      "module": "GRWTSK.NumberTheory.ArithmeticFunctions.DensityReciprocalPrefix",
+      "build_exit": 0,
+      "fresh_audit_exit": 0,
+      "semantic_roots": 7,
+      "owned_records": 9
+    }
+  ],
+  "semantic_theorems": 116,
+  "semantic_definitions": 19,
+  "literal_contracts": [
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_mobius_coefficient_one",
+      "literal_signature": ": densityMobiusCoefficient 1 = 1"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_mobius_coefficient_zero",
+      "literal_signature": ": densityMobiusCoefficient 0 = 0"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_mobius_coefficient_prime",
+      "literal_signature": "{p : \u2115} (hp : p.Prime) :\n    densityMobiusCoefficient p = -(p:\u211d)/((p:\u211d)+1)"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_mobius_coefficient_zero_of_not_squarefree",
+      "literal_signature": "{n : \u2115}\n    (hn : \u00acSquarefree n) : densityMobiusCoefficient n = 0"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_prime_weight_mul_of_coprime",
+      "literal_signature": "{m n : \u2115} (h : m.Coprime n) :\n    densityPrimeWeight (m*n) = densityPrimeWeight m * densityPrimeWeight n"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_coefficient_mul_of_coprime",
+      "literal_signature": "{m n : \u2115} (h : m.Coprime n) :\n    densityMobiusCoefficient (m*n) = densityMobiusCoefficient m * densityMobiusCoefficient n"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_coefficient_mul_zero_of_not_coprime",
+      "literal_signature": "{m n : \u2115} (h : \u00acm.Coprime n) :\n    densityMobiusCoefficient (m*n) = 0"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_coefficient_mul_restricted",
+      "literal_signature": "(m n : \u2115) :\n    densityMobiusCoefficient (m*n) = if m.Coprime n then densityMobiusCoefficient m * densityMobiusCoefficient n else 0"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_moebius_correction_return",
+      "literal_signature": ":\n    (\u03bc : ArithmeticFunction \u211d) * densityMoebiusCorrection = densityMoebiusFunction"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_moebius_correction_divisors",
+      "literal_signature": "(n : \u2115) :\n    densityMoebiusCorrection n = \u2211 d \u2208 n.divisors, densityMobiusCoefficient d"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_moebius_correction_one",
+      "literal_signature": ": densityMoebiusCorrection 1 = 1"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_moebius_correction_prime",
+      "literal_signature": "{p : \u2115} (hp : p.Prime) :\n    densityMoebiusCorrection p = 1 / ((p : \u211d) + 1)"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_moebius_function_multiplicative",
+      "literal_signature": ": densityMoebiusFunction.IsMultiplicative"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_moebius_correction_multiplicative",
+      "literal_signature": ": densityMoebiusCorrection.IsMultiplicative"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_coefficient_prime_power",
+      "literal_signature": "{p k : \u2115} (hp : p.Prime) (hk : k \u2260 0) :\n    densityMobiusCoefficient (p ^ k) = if k = 1 then densityMobiusCoefficient p else 0"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_moebius_correction_prime_power",
+      "literal_signature": "{p k : \u2115} (hp : p.Prime) (hk : k \u2260 0) :\n    densityMoebiusCorrection (p ^ k) = 1 / ((p : \u211d) + 1)"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_moebius_correction_bounds",
+      "literal_signature": "(n : \u2115) :\n    0 \u2264 densityMoebiusCorrection n \u2227 densityMoebiusCorrection n \u2264 1"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_moebius_correction_nonneg",
+      "literal_signature": "(n : \u2115) : 0 \u2264 densityMoebiusCorrection n"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_moebius_correction_le_one",
+      "literal_signature": "(n : \u2115) : densityMoebiusCorrection n \u2264 1"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_moebius_correction_pos",
+      "literal_signature": "{n : \u2115} (hn : n \u2260 0) :\n    0 < densityMoebiusCorrection n"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_correction_prime_weighted_term",
+      "literal_signature": "{p : \u2115} (hp : p.Prime)\n    (q : \u211d) (K k : \u2115) :\n    densityMoebiusCorrection (p ^ (k + K + 1)) * q ^ (k + K + 1) =\n      (q ^ (K + 1) / ((p : \u211d) + 1)) * q ^ k"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_correction_prime_hasSum_tail",
+      "literal_signature": "{p : \u2115} (hp : p.Prime)\n    {q : \u211d} (hq0 : 0 \u2264 q) (hq1 : q < 1) (K : \u2115) :\n    HasSum (fun k : \u2115 => densityMoebiusCorrection (p ^ (k + K + 1)) * q ^ (k + K + 1))\n      (q ^ (K + 1) / (((p : \u211d) + 1) * (1 - q)))"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_correction_prime_tsum_tail",
+      "literal_signature": "{p : \u2115} (hp : p.Prime)\n    {q : \u211d} (hq0 : 0 \u2264 q) (hq1 : q < 1) (K : \u2115) :\n    (\u2211' k : \u2115, densityMoebiusCorrection (p ^ (k + K + 1)) * q ^ (k + K + 1)) =\n      q ^ (K + 1) / (((p : \u211d) + 1) * (1 - q))"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_correction_prime_summable",
+      "literal_signature": "{p : \u2115} (hp : p.Prime)\n    {q : \u211d} (hq0 : 0 \u2264 q) (hq1 : q < 1) :\n    Summable (fun k : \u2115 => densityMoebiusCorrection (p ^ (k + 1)) * q ^ (k + 1))"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_prime_reciprocal_mass_algebra",
+      "literal_signature": "{p : \u2115} (hp : p.Prime) :\n    (1 / (p : \u211d)) / (((p : \u211d) + 1) * (1 - 1 / (p : \u211d))) =\n      1 / ((p : \u211d)^2 - 1)"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_correction_prime_reciprocal_hasSum",
+      "literal_signature": "{p : \u2115} (hp : p.Prime) :\n    HasSum (fun k : \u2115 => densityMoebiusCorrection (p ^ (k + 1)) / (p : \u211d) ^ (k + 1))\n      (1 / ((p : \u211d)^2 - 1))"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_correction_prime_reciprocal_tail",
+      "literal_signature": "{p : \u2115} (hp : p.Prime) (K : \u2115) :\n    (\u2211' k : \u2115, densityMoebiusCorrection (p ^ (k + K + 1)) / (p : \u211d) ^ (k + K + 1)) =\n      (1 / (p : \u211d)) ^ K / ((p : \u211d)^2 - 1)"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_correction_prime_reciprocal_factor",
+      "literal_signature": "{p : \u2115} (hp : p.Prime) :\n    1 + (\u2211' k : \u2115, densityMoebiusCorrection (p ^ (k + 1)) / (p : \u211d) ^ (k + 1)) =\n      (p : \u211d)^2 / ((p : \u211d)^2 - 1)"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_reciprocal_nonneg",
+      "literal_signature": "(n : \u2115) : 0 \u2264 densityCorrectionReciprocal n"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_reciprocal_one",
+      "literal_signature": ": densityCorrectionReciprocal 1 = 1"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_reciprocal_mul",
+      "literal_signature": "{m n : \u2115} (h : m.Coprime n) :\n    densityCorrectionReciprocal (m*n) = densityCorrectionReciprocal m * densityCorrectionReciprocal n"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.reciprocal_square_mul",
+      "literal_signature": "(m n : \u2115) :\n    reciprocalSquare (m*n) = reciprocalSquare m * reciprocalSquare n"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.reciprocal_square_summable",
+      "literal_signature": ": Summable reciprocalSquare"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_reciprocal_prime_hasSum",
+      "literal_signature": "{p : \u2115} (hp : p.Prime) :\n    HasSum (fun k : \u2115 => densityCorrectionReciprocal (p^k))\n      (1 + 1 / ((p : \u211d)^2-1))"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.reciprocal_square_prime_hasSum",
+      "literal_signature": "{p : \u2115} (hp : p.Prime) :\n    HasSum (fun k : \u2115 => reciprocalSquare (p^k))\n      (1 + 1 / ((p : \u211d)^2-1))"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_reciprocal_factored_hasSum",
+      "literal_signature": "(s : Finset \u2115) :\n    HasSum (fun n : Nat.factoredNumbers s => densityCorrectionReciprocal n)\n      (\u2211' n : Nat.factoredNumbers s, reciprocalSquare n)"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_reciprocal_range_bound",
+      "literal_signature": "(N : \u2115) :\n    (\u2211 n \u2208 Finset.range N, densityCorrectionReciprocal n) \u2264 \u2211' n : \u2115, reciprocalSquare n"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_reciprocal_summable",
+      "literal_signature": ": Summable densityCorrectionReciprocal"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_reciprocal_tsum",
+      "literal_signature": ":\n    (\u2211' n : \u2115, densityCorrectionReciprocal n) = \u2211' n : \u2115, reciprocalSquare n"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_positive_reciprocal_summable",
+      "literal_signature": ":\n    Summable (fun n : \u2115 => densityMoebiusCorrection (n+1) / ((n+1 : \u2115) : \u211d))"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_positive_reciprocal_tsum",
+      "literal_signature": ":\n    (\u2211' n : \u2115, densityMoebiusCorrection (n+1) / ((n+1 : \u2115) : \u211d)) =\n      \u2211' n : \u2115, 1 / (((n+1 : \u2115) : \u211d)^2)"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_half_prime_denominator_lower",
+      "literal_signature": "{x : \u211d} (hx : 2 \u2264 x) :\n    3 * x / 4 \u2264 x + 1 - Real.sqrt x"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_half_prime_factor_bounds",
+      "literal_signature": "{x : \u211d} (hx : 2 \u2264 x) :\n    1 \u2264 x / (x + 1 - Real.sqrt x) \u2227\n      x / (x + 1 - Real.sqrt x) \u2264 4 / 3"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_half_prime_square_excess",
+      "literal_signature": "{x : \u211d} (hx : 2 \u2264 x) :\n    0 \u2264 (x / (x + 1 - Real.sqrt x)) ^ 2 - 1 \u2227\n      (x / (x + 1 - Real.sqrt x)) ^ 2 - 1 \u2264 7 / (3 * Real.sqrt x)"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_prime_half_mass_algebra",
+      "literal_signature": "{p : \u2115} (hp : p.Prime) :\n    (1 / Real.sqrt (p : \u211d)) /\n        (((p : \u211d) + 1) * (1 - 1 / Real.sqrt (p : \u211d))) =\n      1 / (((p : \u211d) + 1) * (Real.sqrt (p : \u211d) - 1))"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_correction_prime_half_hasSum",
+      "literal_signature": "{p : \u2115} (hp : p.Prime) :\n    HasSum (fun k : \u2115 => densityMoebiusCorrection (p ^ (k + 1)) /\n      Real.sqrt (p : \u211d) ^ (k + 1))\n      (1 / (((p : \u211d) + 1) * (Real.sqrt (p : \u211d) - 1)))"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_correction_prime_half_tail",
+      "literal_signature": "{p : \u2115} (hp : p.Prime) (K : \u2115) :\n    (\u2211' k : \u2115, densityMoebiusCorrection (p ^ (k + K + 1)) /\n      Real.sqrt (p : \u211d) ^ (k + K + 1)) =\n      (1 / Real.sqrt (p : \u211d)) ^ K /\n        (((p : \u211d) + 1) * (Real.sqrt (p : \u211d) - 1))"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_half_nonneg",
+      "literal_signature": "(n : \u2115) : 0 \u2264 densityCorrectionHalf n"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_half_one",
+      "literal_signature": ": densityCorrectionHalf 1 = 1"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_half_mul",
+      "literal_signature": "{m n : \u2115} (h : m.Coprime n) :\n    densityCorrectionHalf (m*n) = densityCorrectionHalf m * densityCorrectionHalf n"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_half_sqrt_pow",
+      "literal_signature": "(x : \u211d) (hx : 0 \u2264 x) (k : \u2115) :\n    Real.sqrt (x^k) = Real.sqrt x ^ k"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_half_prime_hasSum",
+      "literal_signature": "{p : \u2115} (hp : p.Prime) :\n    HasSum (fun k : \u2115 => densityCorrectionHalf (p^k))\n      (1 + 1 / (((p : \u211d)+1)*(Real.sqrt (p : \u211d)-1)))"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.reciprocal_three_half_summable",
+      "literal_signature": ": Summable reciprocalThreeHalf"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.reciprocal_three_half_sqrt",
+      "literal_signature": "(n : \u2115) :\n    reciprocalThreeHalf n = 1 / ((n : \u211d)*Real.sqrt (n : \u211d))"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_half_prime_mass_le",
+      "literal_signature": "{p : \u2115} (hp : p.Prime) :\n    1 / (((p : \u211d)+1)*(Real.sqrt (p : \u211d)-1)) \u2264 4 * reciprocalThreeHalf p"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_half_factored_hasSum",
+      "literal_signature": "(s : Finset \u2115) :\n    HasSum (fun n : Nat.factoredNumbers s => densityCorrectionHalf n)\n      (\u220f p \u2208 s with p.Prime, (1 + 1 / (((p : \u211d)+1)*(Real.sqrt (p : \u211d)-1))))"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_half_factored_bound",
+      "literal_signature": "(s : Finset \u2115) :\n    (\u2211' n : Nat.factoredNumbers s, densityCorrectionHalf n) \u2264\n      Real.exp (4 * \u2211' n : \u2115, reciprocalThreeHalf n)"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_half_range_bound",
+      "literal_signature": "(N : \u2115) :\n    (\u2211 n \u2208 Finset.range N, densityCorrectionHalf n) \u2264\n      Real.exp (4 * \u2211' n : \u2115, reciprocalThreeHalf n)"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_half_summable",
+      "literal_signature": ": Summable densityCorrectionHalf"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_half_tsum_bound",
+      "literal_signature": ": (\u2211' n : \u2115, densityCorrectionHalf n) \u2264\n    Real.exp (4 * \u2211' n : \u2115, reciprocalThreeHalf n)"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_half_euler_hasProd",
+      "literal_signature": ":\n    HasProd (fun p : Nat.Primes => 1 + 1 / (((p : \u211d)+1)*(Real.sqrt (p : \u211d)-1)))\n      (\u2211' n : \u2115, densityCorrectionHalf n)"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_positive_half_summable",
+      "literal_signature": ":\n    Summable (fun n : \u2115 => densityMoebiusCorrection (n+1) / Real.sqrt ((n+1 : \u2115) : \u211d))"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_reciprocal_tail_summable",
+      "literal_signature": "(R : \u211d) :\n    Summable (fun n : \u2115 => if R < (n : \u211d) then densityCorrectionReciprocal n else 0)"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_reciprocal_head_summable",
+      "literal_signature": "(R : \u211d) :\n    Summable (fun n : \u2115 => if (n : \u211d) \u2264 R then densityCorrectionReciprocal n else 0)"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_reciprocal_closed_head_tail",
+      "literal_signature": "(R : \u211d) :\n    (\u2211' n : \u2115, densityCorrectionReciprocal n) =\n      densityClosedReciprocalHead R + densityReciprocalTail R"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_reciprocal_tail_atom",
+      "literal_signature": "(n : \u2115) :\n    (if (n : \u211d) < (n : \u211d) then densityCorrectionReciprocal n else 0) = 0"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_reciprocal_tail_term",
+      "literal_signature": "{R : \u211d} (hR : 1 \u2264 R) (n : \u2115) :\n    (if R < (n : \u211d) then densityCorrectionReciprocal n else 0) \u2264\n      densityCorrectionHalf n / Real.sqrt R"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_reciprocal_tail_le_half",
+      "literal_signature": "{R : \u211d} (hR : 1 \u2264 R) :\n    densityReciprocalTail R \u2264 (\u2211' n : \u2115, densityCorrectionHalf n) / Real.sqrt R"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_reciprocal_tail_bound",
+      "literal_signature": "{R : \u211d} (hR : 1 \u2264 R) :\n    densityReciprocalTail R \u2264\n      Real.exp (4 * \u2211' n : \u2115, reciprocalThreeHalf n) / Real.sqrt R"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.excluded_density_source_apply",
+      "literal_signature": "(d n : \u2115) :\n    excludedDensityMoebius d n = if n.Coprime d then densityMobiusCoefficient n else 0"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.excluded_density_source_one",
+      "literal_signature": "(d : \u2115) : excludedDensityMoebius d 1 = 1"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.excluded_density_source_multiplicative",
+      "literal_signature": "(d : \u2115) :\n    (excludedDensityMoebius d).IsMultiplicative"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.excluded_density_correction_multiplicative",
+      "literal_signature": "(d : \u2115) :\n    (excludedDensityCorrection d).IsMultiplicative"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.excluded_density_correction_return",
+      "literal_signature": "(d : \u2115) :\n    (\u03bc : ArithmeticFunction \u211d) * excludedDensityCorrection d = excludedDensityMoebius d"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.excluded_density_correction_divisors",
+      "literal_signature": "(d n : \u2115) :\n    excludedDensityCorrection d n =\n      \u2211 a \u2208 n.divisors, if a.Coprime d then densityMobiusCoefficient a else 0"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.excluded_density_correction_one",
+      "literal_signature": "(d : \u2115) : excludedDensityCorrection d 1 = 1"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.excluded_density_source_prime_power",
+      "literal_signature": "(d : \u2115) {p k : \u2115}\n    (hp : p.Prime) (hk : k \u2260 0) :\n    excludedDensityMoebius d (p^k) =\n      if p.Coprime d then (if k=1 then densityMobiusCoefficient p else 0) else 0"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.excluded_density_correction_prime_power",
+      "literal_signature": "(d : \u2115) {p k : \u2115}\n    (hp : p.Prime) (hk : k \u2260 0) :\n    excludedDensityCorrection d (p^k) = if p.Coprime d then 1/((p:\u211d)+1) else 1"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.excluded_density_correction_bounds",
+      "literal_signature": "(d n : \u2115) :\n    0 \u2264 excludedDensityCorrection d n \u2227 excludedDensityCorrection d n \u2264 1"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.excluded_density_correction_pos",
+      "literal_signature": "(d : \u2115) {n : \u2115} (hn : n \u2260 0) :\n    0 < excludedDensityCorrection d n"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.arithmetic_inverse_split",
+      "literal_signature": "{R : Type*} [CommRing R]\n    (f g z : ArithmeticFunction R) (h : f * z = 1) :\n    f = 2 * g - g * g * z + (f - g) * (f - g) * z"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.moebius_closed_cutoff_split",
+      "literal_signature": "(U : \u2115) :\n    (\u03bc : ArithmeticFunction \u2124) =\n      2 * closedArithmeticCutoff \u03bc U -\n        closedArithmeticCutoff \u03bc U * closedArithmeticCutoff \u03bc U * \u03b6 +\n        (\u03bc - closedArithmeticCutoff \u03bc U) * (\u03bc - closedArithmeticCutoff \u03bc U) * \u03b6"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.moebius_above_cutoff_zero",
+      "literal_signature": "(U n : \u2115) (hn : n \u2264 U) :\n    ((\u03bc : ArithmeticFunction \u2124) - closedArithmeticCutoff \u03bc U) n = 0"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.moebius_low_high_coefficient_return",
+      "literal_signature": "(U n : \u2115) (hU : U < n) :\n    (\u03bc n : \u2124) = -lowMoebiusCoefficient U n + highMoebiusCoefficient U n"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.high_coefficient_three_thirty",
+      "literal_signature": ": highMoebiusCoefficient 3 30 = -2"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.high_coefficient_four_fortynine",
+      "literal_signature": ": highMoebiusCoefficient 4 49 = 1"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.low_coefficient_three_thirty",
+      "literal_signature": ": lowMoebiusCoefficient 3 30 = -1"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.low_coefficient_four_fortynine",
+      "literal_signature": ": lowMoebiusCoefficient 4 49 = 1"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.high_moebius_coefficients_have_both_signs",
+      "literal_signature": ":\n    (\u2203 U n : \u2115, highMoebiusCoefficient U n < 0) \u2227\n      (\u2203 U n : \u2115, 0 < highMoebiusCoefficient U n)"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.low_high_eq_iff_not_squarefree",
+      "literal_signature": "(U n : \u2115) (hU : U < n) :\n    lowMoebiusCoefficient U n = highMoebiusCoefficient U n \u2194 \u00acSquarefree n"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.weighted_squareful_low_high_cancel",
+      "literal_signature": "(U : \u2115) (S : Finset \u2115) (c : \u2115 \u2192 \u211d)\n    (hS : \u2200 n \u2208 S, U < n \u2227 \u00acSquarefree n) :\n    \u2211 n \u2208 S, c n * (Int.cast (highMoebiusCoefficient U n - lowMoebiusCoefficient U n) : \u211d) =\n      0"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.weighted_moebius_squarefree_return",
+      "literal_signature": "(U : \u2115) (S : Finset \u2115) (c : \u2115 \u2192 \u211d)\n    (hS : \u2200 n \u2208 S, U < n) :\n    \u2211 n \u2208 S, c n * (Int.cast (\u03bc n) : \u211d) =\n      \u2211 n \u2208 S.filter (fun n => Squarefree n),\n        c n * (Int.cast (highMoebiusCoefficient U n - lowMoebiusCoefficient U n) : \u211d)"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.integer_cutoff_complex",
+      "literal_signature": "(f : ArithmeticFunction \u2124) (U : \u2115) :\n    (ArithmeticFunction.ofInt (closedArithmeticCutoff f U) : ArithmeticFunction \u2102) =\n      closedArithmeticCutoff (ArithmeticFunction.ofInt f : ArithmeticFunction \u2102) U"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.integer_sub_complex",
+      "literal_signature": "(f g : ArithmeticFunction \u2124) :\n    (ArithmeticFunction.ofInt (f - g) : ArithmeticFunction \u2102) =\n      (ArithmeticFunction.ofInt f : ArithmeticFunction \u2102) - ArithmeticFunction.ofInt g"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.high_moebius_complex_function",
+      "literal_signature": "(U : \u2115) :\n    (fun n => (highMoebiusCoefficient U n : \u2102)) =\n      (fun n => (((\u03bc : ArithmeticFunction \u2102) - closedArithmeticCutoff (\u03bc : ArithmeticFunction \u2102) U) *\n        ((\u03bc : ArithmeticFunction \u2102) - closedArithmeticCutoff (\u03bc : ArithmeticFunction \u2102) U) *\n        (\u03b6 : ArithmeticFunction \u2102)) n)"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.moebius_convolution_not_pointwise_at_two",
+      "literal_signature": ":\n    highMoebiusCoefficient 0 2 = -1 \u2227\n      (\u03bc 2 : \u2124) * (\u03bc 2 : \u2124) * (\u03b6 : ArithmeticFunction \u2124) 2 = 1"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.divisible_density_row_at_cutoff",
+      "literal_signature": "(d : \u2115) (hd : 0 < d) :\n    (\u2211 n \u2208 Finset.Icc 1 d, if d \u2223 n then densityMobiusCoefficient n / (n : \u211d) else 0) =\n      densityMobiusCoefficient d / (d : \u211d)"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.prime_divisible_density_row_at_cutoff",
+      "literal_signature": "{p : \u2115} (hp : p.Prime) :\n    (\u2211 n \u2208 Finset.Icc 1 p, if p \u2223 n then densityMobiusCoefficient n / (n : \u211d) else 0) =\n      -(1 / ((p : \u211d) + 1))"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.prime_divisible_row_exceeds_inverse_square",
+      "literal_signature": "(C : \u211d) (hC : 0 \u2264 C) (B : \u2115) :\n    \u2203 p : \u2115, B \u2264 p \u2227 p.Prime \u2227\n      C / (p : \u211d)^2 <\n        |\u2211 n \u2208 Finset.Icc 1 p, if p \u2223 n then densityMobiusCoefficient n / (n : \u211d) else 0|"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.moebiusReal_abs_le_one",
+      "literal_signature": "(n : \u2115) : |moebiusReal n| \u2264 1"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_closed_inventory_one_of_nonneg",
+      "literal_signature": "{t : \u211d} (ht : 0 \u2264 t) :\n    1 \u2208 densityClosedInventory t"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_moebius_divisor_sum",
+      "literal_signature": "(n : \u2115) :\n    (\u2211 d \u2208 n.divisors, moebiusReal d) = if n = 1 then 1 else 0"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_coprime_indicator_moebius_sum",
+      "literal_signature": "{m n : \u2115} {T : \u211d}\n    (hm : m \u2208 densityClosedInventory T) (_hn : n \u2208 densityClosedInventory T) :\n    (\u2211 d \u2208 densityClosedInventory T, if d \u2223 m \u2227 d \u2223 n then moebiusReal d else 0) =\n      if m.Coprime n then 1 else 0"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_closed_inventory_mul_iff",
+      "literal_signature": "{d n : \u2115} {t : \u211d} (hd : 0 < d) :\n    d * n \u2208 densityClosedInventory t \u2194\n      n \u2208 densityClosedInventory (t - Real.log d)"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_closed_convolution_regroup",
+      "literal_signature": "(F : \u2115 \u2192 \u2115 \u2192 \u211d) (u : \u211d) :\n    (\u2211 q \u2208 densityClosedInventory u, \u2211 k \u2208 q.divisors, F k (q / k)) =\n      \u2211 k \u2208 densityClosedInventory u, \u2211 n \u2208 densityClosedInventory (u - Real.log k),\n        F k n"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_mobius_reciprocal_prefix_source_inventory",
+      "literal_signature": "{x : \u211d} (hx : 0 < x) :\n    densityMobiusReciprocalPrefix x =\n      \u2211 n \u2208 densityClosedInventory (Real.log x), moebiusReal n / (n : \u211d)"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_mobius_reciprocal_prefix_zero_of_lt_one",
+      "literal_signature": "{x : \u211d} (hx : x < 1) :\n    densityMobiusReciprocalPrefix x = 0"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_mobius_closed_floor_convolution",
+      "literal_signature": "{x : \u211d} (hx : 1 \u2264 x) :\n    (\u2211 n \u2208 densityClosedInventory (Real.log x),\n      moebiusReal n * (\u230ax / (n : \u211d)\u230b\u208a : \u211d)) = 1"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_mobius_reciprocal_prefix_abs_le_one",
+      "literal_signature": "{x : \u211d} (hx : 1 \u2264 x) :\n    |densityMobiusReciprocalPrefix x| \u2264 1"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.weighted_coprime_divisor_quadratic",
+      "literal_signature": "(T : \u211d) (c : \u2115 \u2192 \u211d) :\n    (\u2211 m \u2208 densityClosedInventory T, \u2211 n \u2208 densityClosedInventory T,\n      if m.Coprime n then c m * c n else 0) =\n    \u2211 d \u2208 densityClosedInventory T, moebiusReal d *\n      (\u2211 n \u2208 densityClosedInventory T, if d \u2223 n then c n else 0) ^ 2"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_coefficient_correction_divisors",
+      "literal_signature": "(n : \u2115) :\n    densityMobiusCoefficient n =\n      \u2211 d \u2208 n.divisors, densityMoebiusCorrection d * moebiusReal (n/d)"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_reciprocal_correction_divisors",
+      "literal_signature": "(n : \u2115) :\n    densityMobiusCoefficient n / (n : \u211d) =\n      \u2211 d \u2208 n.divisors, densityCorrectionReciprocal d * (moebiusReal (n/d) / ((n/d : \u2115) : \u211d))"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.mobius_reciprocal_prefix_all_real",
+      "literal_signature": "(x : \u211d) :\n    |densityMobiusReciprocalPrefix x| \u2264 1"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_reciprocal_prefix_zero",
+      "literal_signature": "{x : \u211d} (hx : x < 1) :\n    densityReciprocalPrefix x = 0"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_reciprocal_prefix_return",
+      "literal_signature": "(x : \u211d) :\n    densityReciprocalPrefix x =\n      \u2211 d \u2208 Finset.Icc 1 \u230ax\u230b\u208a, densityCorrectionReciprocal d * densityMobiusReciprocalPrefix (x/(d : \u211d))"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_reciprocal_prefix_abs_le_mass",
+      "literal_signature": "(x : \u211d) :\n    |densityReciprocalPrefix x| \u2264 \u2211' n : \u2115, reciprocalSquare n"
+    }
+  ],
+  "records": [
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_coefficient_mul_of_coprime",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.moebiusReal",
+      "kind": "definition",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.moebiusReal.eq_1",
+      "kind": "theorem",
+      "semantic_root": false,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_mobius_coefficient_prime",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_prime_weight_mul_of_coprime",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.densityClosedInventory",
+      "kind": "definition",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_coefficient_mul_zero_of_not_coprime",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.densityMobiusCoefficient.eq_1",
+      "kind": "theorem",
+      "semantic_root": false,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_mobius_coefficient_one",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.densityMobiusCoefficient",
+      "kind": "definition",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.densityPrimeWeight",
+      "kind": "definition",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_mobius_coefficient_zero_of_not_squarefree",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_coefficient_mul_restricted",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_mobius_coefficient_zero",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.densityPrimeWeight.eq_1",
+      "kind": "theorem",
+      "semantic_root": false,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.densityMoebiusFunction",
+      "kind": "definition",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_moebius_correction_one",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_moebius_correction_prime",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.densityMoebiusCorrection",
+      "kind": "definition",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_moebius_correction_divisors",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_moebius_correction_return",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_moebius_correction_pos",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_moebius_function_multiplicative",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_moebius_correction_multiplicative",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_moebius_correction_nonneg",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_coefficient_prime_power",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_moebius_correction_le_one",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_moebius_correction_pos._proof_1_1",
+      "kind": "theorem",
+      "semantic_root": false,
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_moebius_correction_prime_power",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_moebius_correction_prime_power._proof_1_1",
+      "kind": "theorem",
+      "semantic_root": false,
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_moebius_correction_pos._proof_1_2",
+      "kind": "theorem",
+      "semantic_root": false,
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_moebius_correction_bounds",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_correction_prime_reciprocal_hasSum",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_correction_prime_reciprocal_hasSum._simp_1_1",
+      "kind": "theorem",
+      "semantic_root": false,
+      "axioms": [],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_correction_prime_weighted_term._proof_1_1",
+      "kind": "theorem",
+      "semantic_root": false,
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_correction_prime_weighted_term",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_correction_prime_reciprocal_tail",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_correction_prime_hasSum_tail",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_correction_prime_reciprocal_tail._simp_1_1",
+      "kind": "theorem",
+      "semantic_root": false,
+      "axioms": [],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_correction_prime_reciprocal_factor",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_correction_prime_weighted_term._proof_1_2",
+      "kind": "theorem",
+      "semantic_root": false,
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_prime_reciprocal_mass_algebra",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_correction_prime_tsum_tail",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_correction_prime_summable",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.reciprocal_square_prime_hasSum",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.reciprocal_square_mul",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_reciprocal_factored_hasSum",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_reciprocal_one",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_positive_reciprocal_tsum",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_reciprocal_range_bound",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.densityCorrectionReciprocal.eq_1",
+      "kind": "theorem",
+      "semantic_root": false,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.reciprocalSquare",
+      "kind": "definition",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.reciprocalSquare.eq_1",
+      "kind": "theorem",
+      "semantic_root": false,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.reciprocal_square_summable",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_reciprocal_nonneg",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_positive_reciprocal_summable",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.densityCorrectionReciprocal",
+      "kind": "definition",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_reciprocal_mul",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_reciprocal_prime_hasSum",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_reciprocal_summable",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_reciprocal_tsum",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_correction_prime_half_hasSum._simp_1_1",
+      "kind": "theorem",
+      "semantic_root": false,
+      "axioms": [],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_prime_half_mass_algebra",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_correction_prime_half_hasSum",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_correction_prime_half_tail",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_half_prime_denominator_lower",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_correction_prime_half_tail._simp_1_1",
+      "kind": "theorem",
+      "semantic_root": false,
+      "axioms": [],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_half_prime_square_excess",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_half_prime_factor_bounds",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_half_tsum_bound",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.reciprocalThreeHalf._proof_2",
+      "kind": "theorem",
+      "semantic_root": false,
+      "axioms": [
+        "propext"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.reciprocal_three_half_summable",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.reciprocal_three_half_sqrt",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_half_summable",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.reciprocalThreeHalf._proof_1",
+      "kind": "theorem",
+      "semantic_root": false,
+      "axioms": [
+        "propext"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_half_factored_bound",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_half_range_bound",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.densityCorrectionHalf",
+      "kind": "definition",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.densityCorrectionHalf.eq_1",
+      "kind": "theorem",
+      "semantic_root": false,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_positive_half_summable",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.reciprocalThreeHalf",
+      "kind": "definition",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_half_sqrt_pow",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_half_one",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_half_prime_hasSum",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_half_mul",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_half_nonneg",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_half_euler_hasProd",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_half_factored_hasSum",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_half_prime_mass_le",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_reciprocal_tail_summable",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.densityReciprocalTail",
+      "kind": "definition",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_reciprocal_closed_head_tail",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_reciprocal_tail_term",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.densityClosedReciprocalHead",
+      "kind": "definition",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_reciprocal_tail_le_half",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_reciprocal_tail_atom",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_reciprocal_head_summable",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_reciprocal_tail_bound",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.excluded_density_correction_pos",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.excluded_density_source_prime_power",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.excludedDensityMoebius",
+      "kind": "definition",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.excluded_density_source_multiplicative._simp_1_1",
+      "kind": "theorem",
+      "semantic_root": false,
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.excluded_density_source_apply",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.excluded_density_correction_multiplicative",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.excluded_density_correction_return",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.excluded_density_correction_bounds",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.excluded_density_source_one",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.excluded_density_correction_pos._proof_1_1",
+      "kind": "theorem",
+      "semantic_root": false,
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.excluded_density_correction_pos._proof_1_2",
+      "kind": "theorem",
+      "semantic_root": false,
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.excluded_density_correction_prime_power",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.excludedDensityCorrection",
+      "kind": "definition",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.excluded_density_correction_one",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.excludedDensityMoebius.eq_1",
+      "kind": "theorem",
+      "semantic_root": false,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.excluded_density_source_multiplicative",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.excludedDensityMoebius._proof_1",
+      "kind": "theorem",
+      "semantic_root": false,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.excluded_density_correction_divisors",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.excluded_density_correction_prime_power._proof_1_1",
+      "kind": "theorem",
+      "semantic_root": false,
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.closedArithmeticCutoff",
+      "kind": "definition",
+      "semantic_root": true,
+      "axioms": [
+        "propext"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.closedArithmeticCutoff._proof_1",
+      "kind": "theorem",
+      "semantic_root": false,
+      "axioms": [
+        "propext"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.moebius_closed_cutoff_split",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.arithmetic_inverse_split",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.moebius_above_cutoff_zero",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.moebius_low_high_coefficient_return",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.high_coefficient_three_thirty",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.high_coefficient_three_thirty._proof_1_1",
+      "kind": "theorem",
+      "semantic_root": false,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.high_moebius_coefficients_have_both_signs",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.high_coefficient_four_fortynine",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.low_coefficient_four_fortynine._proof_1_1",
+      "kind": "theorem",
+      "semantic_root": false,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.lowMoebiusCoefficient",
+      "kind": "definition",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.high_coefficient_four_fortynine._proof_1_1",
+      "kind": "theorem",
+      "semantic_root": false,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.low_coefficient_three_thirty._proof_1_1",
+      "kind": "theorem",
+      "semantic_root": false,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.highMoebiusCoefficient",
+      "kind": "definition",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.low_coefficient_four_fortynine",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.low_coefficient_three_thirty",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.weighted_squareful_low_high_cancel",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.low_high_eq_iff_not_squarefree._proof_1_2",
+      "kind": "theorem",
+      "semantic_root": false,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.low_high_eq_iff_not_squarefree",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.low_high_eq_iff_not_squarefree._simp_1_1",
+      "kind": "theorem",
+      "semantic_root": false,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.weighted_moebius_squarefree_return",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.weighted_moebius_squarefree_return._proof_1_1",
+      "kind": "theorem",
+      "semantic_root": false,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.moebius_convolution_not_pointwise_at_two",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.integer_sub_complex",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.moebius_convolution_not_pointwise_at_two._proof_1_1",
+      "kind": "theorem",
+      "semantic_root": false,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.integer_cutoff_complex",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.high_moebius_complex_function",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.prime_divisible_row_exceeds_inverse_square",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.divisible_density_row_at_cutoff",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.prime_divisible_density_row_at_cutoff",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_moebius_divisor_sum",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.moebiusReal_abs_le_one",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_closed_convolution_regroup",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_closed_inventory_mul_iff._simp_1_2",
+      "kind": "theorem",
+      "semantic_root": false,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_closed_inventory_mul_iff._proof_1_3",
+      "kind": "theorem",
+      "semantic_root": false,
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_coprime_indicator_moebius_sum",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_closed_inventory_one_of_nonneg",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_closed_inventory_mul_iff",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_mobius_reciprocal_prefix_source_inventory",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_mobius_reciprocal_prefix_zero_of_lt_one",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_mobius_closed_floor_convolution",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.densityMobiusReciprocalPrefix",
+      "kind": "definition",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_mobius_reciprocal_prefix_abs_le_one",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.densityMobiusReciprocalPrefix.eq_1",
+      "kind": "theorem",
+      "semantic_root": false,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.weighted_coprime_divisor_quadratic",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_reciprocal_prefix_return",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_reciprocal_prefix_zero",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_coefficient_correction_divisors",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_reciprocal_prefix_return._simp_1_1",
+      "kind": "theorem",
+      "semantic_root": false,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_reciprocal_correction_divisors",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.densityReciprocalPrefix.eq_1",
+      "kind": "theorem",
+      "semantic_root": false,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.density_reciprocal_prefix_abs_le_mass",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.mobius_reciprocal_prefix_all_real",
+      "kind": "theorem",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    },
+    {
+      "name": "GRWTSK.NumberTheory.ArithmeticFunctions.densityReciprocalPrefix",
+      "kind": "definition",
+      "semantic_root": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "has_sorry": false,
+      "body_present": true
+    }
+  ],
+  "hostile_controls": [
+    {
+      "name": "excluded-prime-is-not-unexcluded",
+      "actual_exit": 1,
+      "outcome": "rejected"
+    },
+    {
+      "name": "tail-bound-needs-positive-cutoff",
+      "actual_exit": 1,
+      "outcome": "rejected"
+    },
+    {
+      "name": "prime-power-needs-primality",
+      "actual_exit": 1,
+      "outcome": "rejected"
+    }
+  ],
+  "independent_human_acceptance": false,
+  "full_repository_build": false,
+  "P04": "OPEN",
+  "P05": "OPEN",
+  "absolute_MB6": "OPEN",
+  "RH": "OPEN"
+}
