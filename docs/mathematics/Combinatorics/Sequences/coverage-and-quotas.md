@@ -4,7 +4,7 @@
 
 **Quota service.** For a fixed finite channel set, integer denominator `Q>0` and nonnegative quotas summing to `Q`, add quota to credit, choose a maximal-credit channel, and subtract `Q`. Under the exact hypotheses, the source proves bounded discrepancy and arbitrarily many service slots for channels with positive quotas.
 
-[The exact source](../../../../GRWTSK/Combinatorics/Sequences/QuotaDiscrepancy.lean) retains all conditions, including fixed positive quotas for the no-starvation consequence. [The fuller interface](../../../waveform-interfaces.md) explains tie breaking and quantization.
+[The exact source](../../../../GRWTSK/Combinatorics/Sequences/QuotaDiscrepancy.lean) retains all conditions, including fixed positive quotas for the no-starvation consequence. [The quota interface](quotas.md) explains tie breaking and quantization.
 
 **Limits.** Dynamic eligibility, fair quantization of arbitrary fractional inputs, machine-integer overflow and successful task completion require separate arguments. Continuing admissible service is assumed. No authorization or acceptance is produced by fairness.
 
