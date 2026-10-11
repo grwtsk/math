@@ -1,0 +1,44 @@
+{
+  "schema": "CITATION-WAVEFORM-1",
+  "human_direction": "R.A. Jacob Martone",
+  "local_formalization_assistance": "OpenAI Codex",
+  "origin": "Human-supplied equations, classical analysis and scheduling constructions; no priority/originality claim",
+  "license": "MIT local; Apache-2.0 imported Mathlib",
+  "upstream_revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "upstream_sources": {
+    "Analysis/Fourier/LpSpace.lean": "901386dd897fc7e1c2d4b3b0cca3adb96829bf9d011e57be5e8f7e85a81598f3",
+    "Analysis/Calculus/SmoothSeries.lean": "5000d919737125bacacbc3df2f4e56284cd514dacc7f794c78f04d543ae47a78",
+    "Analysis/Calculus/MeanValue.lean": "5aff545ba7e780be43b7c856f683bfe41f037f372fdd6e879c5ed76880c9f02b",
+    "Analysis/Calculus/ContDiff/Deriv.lean": "3033d2b35bcfdad1ab06168dee62c8587215de8fa049caa85e5445c54d4fb98c",
+    "Analysis/SpecificLimits/Normed.lean": "113aaf52a8970f3d5731b3bef38b5eb29be69585d68fdd5fc22f4868fa9f35e6"
+  },
+  "relations": [
+    {
+      "relation": "imports",
+      "local": "l2_parseval/l2_cross_parseval",
+      "source": "MeasureTheory.Lp.norm_fourier_eq/inner_fourier_eq"
+    },
+    {
+      "relation": "specializes",
+      "local": "coefficientWaveform_hasDerivAt/contDiff/lipschitz",
+      "source": "hasDerivAt_tsum/contDiff_one_iff_deriv/lipschitzWith_of_nnnorm_deriv_le"
+    },
+    {
+      "relation": "specializes",
+      "local": "carrier_derivative_summable",
+      "source": "summable_pow_mul_geometric_of_norm_lt_one"
+    },
+    {
+      "relation": "contextualizes",
+      "local": "sampledPotential/PotentialFamily",
+      "source": "Avila, Last, Shamis, Zhou; arXiv:2110.07974v2, equations1.1/2.5 and Proposition2.9; no theorem transfer or copied proof"
+    },
+    {
+      "relation": "formalizes",
+      "local": "Scheduling.coverage/debt_invariant/no_starvation, conditional reconstruction/P04",
+      "source": "human-supplied mathematical specification and agreed refinements"
+    }
+  ],
+  "historical_priority": "not investigated; no invented lineage",
+  "contribution_scope": "exact local formal adapters and constructive limitations; upstream mathematical/formal authorship unchanged"
+}
