@@ -107,6 +107,18 @@ new cancellation bound. It identifies the precise coupled signed prefixes
 that a boundary argument must control; separating $A_n$ and $M_n$ by absolute
 values loses the retained cancellation.
 
+The cell integral is also evaluated exactly. With
+$\Delta_a(n)=n^{-a}-(n+1)^{-a}$,
+
+$$
+B_n=4A_n^2\Delta_1(n)
+-\frac{16}{3}A_nM_n\Delta_{3/2}(n)
++2M_n^2\Delta_2(n).
+$$
+
+The negative mixed term is therefore structural, with its exact coefficient;
+it is not an error term that may be discarded before an upper estimate.
+
 ## Continuation and integration
 
 Use the existing main checkout, the pinned Lean 4.33.0 and Mathlib environment, fresh selected project source replay at trust zero, literal statement checks and transitive axiom audits allowing only `propext`, `Classical.choice` and `Quot.sound`. Refresh manifests for changed bytes. Preserve unrelated work and inspect any concurrent commits before a publication includes them. Do not import raw conversations, private proof logs or manuscript archives into public math sources.

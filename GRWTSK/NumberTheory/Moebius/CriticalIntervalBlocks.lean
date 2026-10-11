@@ -3,6 +3,7 @@ Human mathematical direction: R.A. Jacob Martone; OpenAI Codex formalization ass
 Mathlib imports retain upstream authorship and Apache-2.0 licensing. -/
 import GRWTSK.NumberTheory.Moebius.VerticalLineMonotonicity
 import GRWTSK.NumberTheory.Moebius.FiniteLaplaceTransform
+import GRWTSK.Analysis.Integration.ExponentialInterval
 
 /-!
 # Exact arithmetic blocks on the critical completed vertical line
@@ -28,6 +29,7 @@ namespace GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks
 open GRWTSK.RiemannHypothesis.CCC
 open GRWTSK.NumberTheory.Moebius.VerticalLineCriterion
 open GRWTSK.NumberTheory.Moebius.VerticalLineMonotonicity
+open GRWTSK.Analysis.Integration.ExponentialInterval
 
 /-- On the open logarithmic cell from `n` to `n+1`, the pickup is the exact
 coupled weighted-prefix/Mertens-prefix expression with cutoff `n`. -/
@@ -93,6 +95,60 @@ theorem criticalIntervalBlock_nonneg {n : ℕ} (hn : 1 ≤ n) :
     (Real.log_le_log hnpos (by exact_mod_cast Nat.le_add_right n 1))
   intro u
   exact mul_nonneg (Real.exp_pos _).le (sq_nonneg _)
+
+/-- The endpoint drop of the exponential with rate `a` across the `n`th
+logarithmic cell. -/
+def exponentialLogDrop (a : ℝ) (n : ℕ) : ℝ :=
+  Real.exp (-a * Real.log (n : ℝ)) -
+    Real.exp (-a * Real.log ((n + 1 : ℕ) : ℝ))
+
+/-- Closed quadratic form of a critical arithmetic block.  The mixed term is
+retained with its negative sign; estimating the two prefixes separately would
+erase precisely this cancellation. -/
+theorem criticalIntervalBlock_closedForm (n : ℕ) :
+    criticalIntervalBlock n =
+      4 * pickupWeightedPrefix n ^ 2 * exponentialLogDrop 1 n -
+      (16 / 3) * pickupWeightedPrefix n * pickupMertensPrefix n *
+        exponentialLogDrop (3 / 2) n +
+      2 * pickupMertensPrefix n ^ 2 * exponentialLogDrop 2 n := by
+  unfold criticalIntervalBlock
+  have hfun : (fun u : ℝ => Real.exp (-u) *
+      (2 * (pickupWeightedPrefix n -
+        Real.exp (-u / 2) * pickupMertensPrefix n)) ^ 2) =
+      (fun u : ℝ =>
+        4 * pickupWeightedPrefix n ^ 2 * Real.exp (-(1 : ℝ) * u) -
+        8 * pickupWeightedPrefix n * pickupMertensPrefix n *
+          Real.exp (-(3 / 2 : ℝ) * u) +
+        4 * pickupMertensPrefix n ^ 2 * Real.exp (-(2 : ℝ) * u)) := by
+    funext u
+    have h1 : Real.exp (-u) * Real.exp (-u / 2) =
+        Real.exp (-(3 / 2 : ℝ) * u) := by
+      rw [← Real.exp_add]
+      congr 1
+      ring
+    have h2 : Real.exp (-u) * Real.exp (-u / 2) ^ 2 =
+        Real.exp (-(2 : ℝ) * u) := by
+      rw [pow_two, ← mul_assoc, ← Real.exp_add, ← Real.exp_add]
+      congr 1
+      ring
+    calc
+      _ = 4 * pickupWeightedPrefix n ^ 2 * Real.exp (-u) -
+          8 * pickupWeightedPrefix n * pickupMertensPrefix n *
+            (Real.exp (-u) * Real.exp (-u / 2)) +
+          4 * pickupMertensPrefix n ^ 2 *
+            (Real.exp (-u) * Real.exp (-u / 2) ^ 2) := by ring
+      _ = _ := by rw [h1, h2]; ring_nf
+  rw [hfun, intervalIntegral.integral_add, intervalIntegral.integral_sub,
+    intervalIntegral.integral_const_mul, intervalIntegral.integral_const_mul,
+    intervalIntegral.integral_const_mul]
+  · rw [integral_exp_neg_mul (by norm_num : (1 : ℝ) ≠ 0),
+      integral_exp_neg_mul (by norm_num : (3 / 2 : ℝ) ≠ 0),
+      integral_exp_neg_mul (by norm_num : (2 : ℝ) ≠ 0)]
+    unfold exponentialLogDrop
+    ring
+  all_goals
+    apply Continuous.intervalIntegrable
+    fun_prop
 
 /-- Partial sum of the exact critical arithmetic blocks. -/
 def criticalIntervalBlockSum (N : ℕ) : ℝ :=
@@ -207,5 +263,6 @@ end GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks
 
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.wholePickup_eq_prefix_flux_on_log_cell
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalIntervalBlock_eq_pickup
+#print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalIntervalBlock_closedForm
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalIntervalBlockSum_eq_verticalLineMass
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalBoundary_iff_intervalBlockUniform
