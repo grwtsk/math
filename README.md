@@ -68,3 +68,11 @@ The [exact CCC prime-note cascade](docs/ccc-prime-cascade.md) proves the causal 
 The [CCC recording-scale pursuit](docs/ccc-recording-scale.md) proves exact horizon-matched prime blocks and a negative natural-prefix correlation, and gives a conditional net-scale return to RH. A prose PNT argument rejects the earlier uniform intermediate-prefix suppliers; that analytic obstruction is not Lean replayed. The complete signed scale estimate remains open. Run `python3 scripts/check_recording_scale.py` for fresh source and false-shortcut checks.
 
 The [CCC finite Laplace recording](docs/ccc-prime-window-laplace.md) retains the exact signed boundary correction and checks a prime-two counterexample to dropping it at positive Laplace parameter one. An arithmetic upper estimate remains open. Continued research is recorded in [the prime-route handoff](docs/ccc-prime-research-continuation.md).
+
+The [sequence realization cohort](docs/sequence-realization.md) preserves 81 proved
+theorems: fair scheduling, native continued-fraction arithmetic, existence and
+uniqueness of irrational real frequencies, and polynomial return with complete
+correction losses. Run `python3 scripts/check_sequence_realization.py` for fresh
+trust-zero compilation and the full 189-declaration stored-family audit. Exact
+original types and proof bodies were separately checked under namespace renaming.
+Actual CCC identification and P04 remain open.
