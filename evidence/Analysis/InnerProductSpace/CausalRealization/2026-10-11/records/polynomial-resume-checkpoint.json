@@ -1,0 +1,116 @@
+{
+  "schema": "ccc-polynomial-static-resume-checkpoint-v1",
+  "at": "2026-10-11T20:22:13.805414+00:00",
+  "canonical_root": "/Users/think/Desktop/math",
+  "attached_checkout": "/Users/think/Documents/ChatGPT/math 2",
+  "branch": "main",
+  "status": "FROZEN_STATIC_INDEPENDENT_PASS_UNCOMPILED",
+  "manifest": {
+    "path": "/Users/think/Desktop/math/.local/ccc-control-soundness/exponential-polynomial-static-cell-20261011T2010Z/draft-manifest.json",
+    "sha256": "479e00f792b13126cafd8fcd739f50734afe0ba1300702edadec7a5ac7302c48"
+  },
+  "static_independent_review": {
+    "path": "/Users/think/Desktop/math/.local/ccc-control-soundness/reviews/exponential-polynomial-static-inputs-independent-review-20261011T2010Z.md",
+    "sha256": "87e27abd76acd17c04c5b8a7109675a92b0eced636ce686bca25b3f30f777f34"
+  },
+  "future_verification_notes": {
+    "path": "/Users/think/Desktop/math/.local/ccc-control-soundness/exponential-polynomial-static-cell-20261011T2010Z/future-verification-notes.md",
+    "sha256": "2c0c7a806df0047059d2f3df2f63b20cade62fea77665f5959597d53e1d3d9ea"
+  },
+  "base_manifest": {
+    "path": "/Users/think/Desktop/math/.local/ccc-control-soundness/last-label-static-repair-20261011T1606Z/draft-manifest.json",
+    "sha256": "7034420df544e43914e00ab1e76b92f5b509dd7b2f13904800eabc2f07c48b2e"
+  },
+  "historical_and_prior_freezes_unchanged": [
+    {
+      "path": "/Users/think/Desktop/math/.local/ccc-control-soundness/source-checkpoint-20261011T045521Z/capture.json",
+      "sha256": "434e0d7840fc58c718158439e7f56c5e0a5f977379840a8b425c4410ccdc2e3d"
+    },
+    {
+      "path": "/Users/think/Desktop/math/.local/ccc-control-soundness/transfer-candidate-20261011T045715Z/transfer-plan.json",
+      "sha256": "e2bce3308272b409b45415043748a3adfc6949a276363d6c1c408b54d64cce2d"
+    },
+    {
+      "path": "/Users/think/Desktop/math/.local/ccc-control-soundness/native-transfer-20261011T050434Z/receipt.json",
+      "sha256": "17bb21274274a3b2fd383253e26e92de5c457dc8c82b55e15203d35e19428fda"
+    },
+    {
+      "path": "/Users/think/Desktop/math/.local/ccc-control-soundness/literal-kernel-public-cell-20261011T122624Z/receipt.json",
+      "sha256": "b0784ab82a24d2b3d7a876b880b8c4a85a1e0552a391ed277719d7bd8e28aea2"
+    },
+    {
+      "path": "/Users/think/Desktop/math/.local/ccc-control-soundness/native-contact-operator-cost-repair-draft-20261011T135952Z/draft-manifest.json",
+      "sha256": "8e5c88ebca4ba721ca29ce842af7629ab408a8e7b1dd8849027b5c0205a73c6e"
+    },
+    {
+      "path": "/Users/think/Desktop/math/.local/ccc-control-soundness/native-individual-realization-inverse-repair-draft-20261011T142512Z/draft-manifest.json",
+      "sha256": "c58a0213c11e284c2ded3f6b53c04967f2760003f587bf02928b419b0132e7b3"
+    },
+    {
+      "path": "/Users/think/Desktop/math/.local/ccc-control-soundness/last-label-static-repair-20261011T1606Z/draft-manifest.json",
+      "sha256": "7034420df544e43914e00ab1e76b92f5b509dd7b2f13904800eabc2f07c48b2e"
+    }
+  ],
+  "source_rows_verified": 37,
+  "unchanged_referenced_base_rows": 33,
+  "fresh_authored_source_rows": 4,
+  "referenced_libraries": 23,
+  "referenced_audits": 14,
+  "new_theorem_attempts": 7,
+  "new_definitions": 0,
+  "prior_new_definitions_outside_selected_count": 7,
+  "proposed_ordered_roots": 77,
+  "compiler_launched": false,
+  "compiler_certified": false,
+  "axiom_reports_executed": 0,
+  "elaborated_owner_census_executed": false,
+  "production_admission": false,
+  "new_native_plan_prepared": false,
+  "new_runner_prepared": false,
+  "source_config_copy_operations": 0,
+  "public_writes": 0,
+  "protected_writes": 0,
+  "process_signals": 0,
+  "remote_writes": 0,
+  "automation_changes": 0,
+  "foreign_messages": 0,
+  "canonical_AGENTS_current_observation": {
+    "path": "/Users/think/Desktop/math/AGENTS.md",
+    "sha256": "6e19b4f08f1f97490480192f77d425c2c26387eaf36387b7a2cc4e200257e212"
+  },
+  "entry_git_status": {
+    "path": "/Users/think/Desktop/math/.local/ccc-control-soundness/exponential-polynomial-static-cell-20261011T2010Z/entry-git-status.txt",
+    "sha256": "df34acdcf50c27b28731ac41c63d509f4188ee82ce442a5c1627a0cde09e0b66"
+  },
+  "exit_git_status": {
+    "path": "/Users/think/Desktop/math/.local/ccc-control-soundness/exponential-polynomial-static-cell-20261011T2010Z/exit-git-status.txt",
+    "sha256": "d208b375737a726ce29dea065fad4364626f866bf49c3682cf8bb728f306459c"
+  },
+  "concurrent_status_qualification": "Read-only entry/exit observations differ through other workers. All unrelated bytes and states retained; no source/checker/Git changes by this CCC resume.",
+  "gate": {
+    "owner_chat": "01a1291b-6506-7d60-b9e2-7d437f1782af",
+    "owner_title": "Assess lean transfer completeness",
+    "revision": 325,
+    "cursor": "48677030-400e-42ab-b944-7bf52c31c8b3:325",
+    "owner_status": "active",
+    "turn_status": "inProgress",
+    "explicit_CCC_canonical_public_native_release": false,
+    "raw_snapshot": {
+      "path": "/Users/think/Desktop/math/.local/ccc-control-soundness/exponential-polynomial-static-cell-20261011T2010Z/gate-final-observation.json",
+      "sha256": "7512fa191ba63034d11345219bff5f326d84f91e14afaccaaac7f86be3c8415d"
+    },
+    "independent_final_addendum": {
+      "path": "/Users/think/Desktop/math/.local/ccc-control-soundness/reviews/resume-gate-readonly-final-addendum-20261011T2018Z.md",
+      "sha256": "4a2b0009c59894fa8cf607b443e1441c707104162dcab037285cb91d7c30a93c"
+    },
+    "qualification": "Documentation controlled handoff/quiescence and hold. Narrow OS quiet-window release is not CCC source/native authority. Raw snapshot pending-delta field is historical; this addendum supplies the final negative release verdict."
+  },
+  "other_routes_readonly": {
+    "path": "/Users/think/Desktop/math/.local/ccc-control-soundness/reviews/resume-other-routes-and-gate-readonly-20261011T2010Z.md",
+    "sha256": "bb4597119a541bbe306d81c3c7479eea37ad2727482b2d5a2975c05dbc2a5a3e"
+  },
+  "foreign_mathematical_adoption": false,
+  "scope": "Fixed C>=0,d:Nat,T>=1,T>2*C*(d+1)! scalar domination; exact individual last-label or direct same-label inventory cost; literal T=2A with A>=1,A>C*(d+1)!; explicit unbounded scale set for exclusion, maps may vary with scale.",
+  "limits": "All new code remains uncompiled. No maturity-domain unboundedness/existence, free mixing, signed arithmetic energy, supplier, amplitude, negative/joint sector, general transformed/renormalized bridge, RH/converse,A=0 equality or C-infinity. Historical receipts retain exact original acceptance/provenance scope.",
+  "expected_continuation_preimage_sha256": "5f13d53dbaf5f705055e940c2acd940e9ce3bd8df9d2c5bfb9cf39b74b6ee266"
+}

@@ -1,0 +1,81 @@
+# Explicit polynomial realization obstruction: exact independent static review
+
+Verdict: ACCEPTED at exact static mathematical-statement, hypothesis and pinned-API grade. No concrete mathematical, missing-API or rewrite-direction defect was found in the two generic finite-series proofs or five actual native/L2/operator consumers. All code remains UNCOMPILED; elaboration and fatal standard linters are untested. This review is not a compiler or linter verdict, selected axiom report, elaborated owner census, native receipt, dependency replay/source-object authentication, canonical/public admission or whole-project acceptance. The parent-reported independent gate evidence remains owner 01a1291b-6506-7d60-b9e2-7d437f1782af, revision 311 active/inProgress with an explicit unreleased hold. No release or future proof-execution authority follows.
+
+The reviewer read the updated canonical AGENTS instructions, including mathematical documentation separation, and preserved the concurrent documentation migration. Work comprised read-only source/API inspection and Python/hash observations, followed only by creating this distinct ignored review note. No compiler, native/shared replay, structural admission test, source/config copy or edit, process signal, Git/schedule action, remote write or other-chat action occurred. Parent owns continuation updates.
+
+## Exact new freeze and preserved base
+
+Reviewed manifest:
+/Users/think/Desktop/math/.local/ccc-control-soundness/exponential-polynomial-static-cell-20261011T2010Z/draft-manifest.json
+SHA256 479e00f792b13126cafd8fcd739f50734afe0ba1300702edadec7a5ac7302c48.
+
+Four freshly authored frozen-in-place inputs have these exact observed hashes:
+
+- GRWTSK/Analysis/SpecialFunctions/ExponentialPolynomialDomination.lean: 78550c4800c736d62811dca7b2eca1ab14e6be8dc3a764716b84282b3d12e39a.
+- GRWTSK/Analysis/InnerProductSpace/CausalRealizationPolynomialObstruction.lean: 776f56bb34a7194244ea9c0da8374d68e14754357098d552e5ce903ec8895238.
+- checks/ExponentialPolynomialDominationAudit.lean: f45858c33d11b34ec2ec6331386a30008017ebe88fac161e2858837056eddbbb.
+- checks/CausalRealizationPolynomialObstructionAudit.lean: a9d8e4de8d7f8b3e9049e157c231a1b54da0a69528316ef917f7a9630b80304f.
+
+The base manifest is /Users/think/Desktop/math/.local/ccc-control-soundness/last-label-static-repair-20261011T1606Z/draft-manifest.json, SHA256 7034420df544e43914e00ab1e76b92f5b509dd7b2f13904800eabc2f07c48b2e. All 33 base records remain exactly identical and point to their already-existing ignored inputs; they were not recopied. All 37 snapshots and current origins rehash exactly against the new manifest. The inherited base remains statically reviewed and uncompiled, with prior exact addendum f3c70fc1f0bf3980cbba92ae2850bcae4ec0927d802523eab9101ddd70011653. Historical 86/783 and frozen 17-module acceptance retain their separately recorded exact scopes and do not certify this cell.
+
+## Sources, audit selection and graph
+
+The closed direct project import graph exactly matches the manifest and follows its acyclic topological order. The generic module has no project imports and uses Mathlib.Analysis.Complex.Exponential, Mathlib.Data.Nat.Factorial.Basic and Mathlib.Tactic. The actual module imports precisely the generic scalar module, the exact CausalLastLabelOperatorCost foundation, and Mathlib.Order.Bounds.Basic. New namespaces correspond to their mathematical objects under Analysis/SpecialFunctions and Analysis/InnerProductSpace.
+
+There are 23 library inputs (fourteen draft libraries and nine existing dependencies) and fourteen audit inputs. The newly authored libraries contain exactly seven theorems: two generic and five actual consumers. They add no definitions. Seven inherited new definitions remain outside selected-theorem counts and require eventual full owner-census coverage. A static declaration-syntax count across the 23 libraries gives 266 declarations: 210 theorems and 56 definitions, including private declarations. This textual count is not an elaborated census and does not count generated declarations.
+
+The dependency-ordered audit group counts are [4,10,4,4,2,6,3,3,8,10,11,5,2,5]. After namespace qualification, all 77 distinct #print axioms names match the manifest in order; #check selects the same exact vector. All seven new theorem roots are included. These are proposed audit inputs, not completed reports. Source maxima for both new libraries are 92 characters; audit maxima are 74 and 82. No new library linter waiver is introduced; the audits retain only the usual linter.hashCommand false setting.
+
+The four recorded direct Mathlib source observations rehash exactly: Complex/Exponential 78ca88512755a04b7346806b8e74fb3930bf14c0ec289107694a33c1947b7821; Nat/Factorial/Basic 25fc9752f155b265be6c262e44ac5e92bdff54f1777ca2ea344b76fc4c1fa57f; Tactic 6ec9a1714e9fa472f7e5614792f1aa5a65f360ec56688b0dc765d1bee2e1bdd5; Order/Bounds/Basic f3d64955f1959ff8be10faaa9eab1147aec9f5172e06217b28c65a8da9987d64. Current source observations are not installed-object authentication or clean transitive source replay.
+
+## Generic finite-series bound
+
+The exact main interface is:
+
+```lean
+polynomial_lt_exp_two_mul_div_four (C : Real) (d : Nat) {T : Real}
+  (hC : 0 <= C) (hT : 1 <= T)
+  (beyond : 2 * C * ((d + 1).factorial : Real) < T) :
+  C * (1 + T) ^ d < Real.exp (2 * T) / 4
+```
+
+All arithmetic powers have natural degree; the factorial denominator is the positive real cast of (d+1)!. The coefficient and degree are fixed theorem parameters, and neither varies with T.
+
+Let f=((d+1)!:Real)>0 and x=2*T>0. Pinned Nat.factorial_pos(d+1), followed by Nat.cast_pos, supplies actual factorial positivity. T>=1 supplies both 1+T>=0 and 1+T<=2*T. Pinned pow_le_pow_left0 with those signs gives (1+T)^d<=x^d. Multiplication by C>=0 preserves order. x^d>0 follows from pow_pos for every natural degree, including zero.
+
+The strict threshold 2*C*f<T yields 4*C*f<2*T=x. Multiplying by the genuine positive x^d gives (4*C*f)*x^d<x*x^d=x^(d+1). The proof's first lt_div_iff0 application divides by the positive outer four, and its second application divides by positive f. The resulting goal is exactly (C*x^d*4)*f<x^(d+1), matching the ring regrouping and strict multiplication. Pinned pow_succ states x^(d+1)=x^d*x; the final explicit mul_comm matches x*x^d with that expression. Thus C*x^d<(x^(d+1)/f)/4 with the correct parentheses and constants.
+
+Pinned Real.pow_div_factorial_le_exp at Mathlib/Analysis/Complex/Exponential.lean line 258 has signature (hx:0<=x)(n:Nat) and proves x^n/(n!:Real)<=exp(x). Its proof uses a genuine single term of the finite exponential sum and nonnegativity, so it supports this route without an asymptotic premise. The exact invocation with hx.le and d+1 has the required parameter order, and the local f is definitionally the factorial cast. Dividing its inequality by nonnegative four gives (x^(d+1)/f)/4<=exp(x)/4. Combining the weak polynomial comparison, strict finite-term comparison and weak exponential bound proves the stated strict result. C=0 and d=0 are correctly permitted; the proof still has a positive finite term and a strict threshold. No zero-denominator convention is used.
+
+The second generic theorem assumes T>=max(1,2*C*f)+1. le_max_left and le_max_right supply the two lower estimates for that maximum. Adding the literal positive one gives both T>=1 and T>2*C*f, so the main theorem applies. This is an explicit sufficient threshold for every greater/equal horizon, not a claimed sharp threshold or asymptotic limit. Parameter order and the implicit horizon agree with all actual callers.
+
+Other pinned signatures inspected include Nat.factorial_pos at Factorial/Basic line 68; lt_div_iff0 at Algebra/Order/GroupWithZero/Basic line 1142, stating a<b/c iff a*c<b for positive c; pow_le_pow_left0; pow_pos; div_le_div_of_nonneg_right; and pow_succ. Their arguments and directions agree with the supplied signs.
+
+## Five actual conditional consumers
+
+The actual module's source and audit hashes are unchanged from the preliminary read-only inspection. Each realization is an actual continuous real-linear map on the same Lebesgue Lp Real 2 volume space with the exact original-window native class and the actual prescribed source class. A>0 is retained for genuine unit-source admission. The final natural label N=Nat.floor(exp(T)) and the full closed original inventory are retained.
+
+1. last_label_realization_exceeds_polynomial uses the generic bound at fixed C>=0,d:Nat,T>=1,T>2*C*(d+1)!, and the inherited necessary cost exp(2*T)/4<norm(map). Transitivity gives C*(1+T)^d<norm(map). This supplies no realization existence.
+
+2. whole_inventory_realization_exceeds_polynomial assumes one direct same-label map on every natural label between 1 and N, inclusively. T>=1 supplies T>=0, so the genuine positive natural floor theorem gives N>=1. The universal realization premise applies at N with le_rfl; no label or endpoint is removed. The individual conditional polynomial bound then applies to that common map.
+
+3. prescribed_horizon_realization_exceeds_polynomial assumes A>=1 and A>C*(d+1)!. The literal horizon T=2*A satisfies T>=1 and T>2*C*(d+1)!. Its locally derived A>0 proof matches the prescribed-source type by proof irrelevance; no new source function or target normalization is substituted. Applying the general consumer gives C*(1+2*A)^d<norm(map). Since A>=1 gives 0<=1+A<=1+2*A and C>=0, the genuine natural-power comparison gives C*(1+A)^d<=C*(1+2*A)^d. Thus even the stated allowance in A is strictly insufficient. The factors two/four, horizon and source radius remain distinct and correctly placed.
+
+4. no_polynomial_individual_realization_on_unbounded_scales fixes C and d before quantifying over A. Its domain is an explicitly supplied Set Real with proof not BddAbove. Pinned not_bddAbove_iff at Order/Bounds/Basic lines 67--69 states exactly that every real threshold has a member strictly above it. The witness at max(1,C*(d+1)!) is therefore A in scales with A>max(...), giving 1<=A and C*(d+1)!<A. The hypothesized bounded family supplies a map at this admitted witness; its norm upper bound contradicts the strict literal-horizon cost. The contradiction uses not_lt_of_ge budget in the correct direction. Maps may vary with scale, but the fixed coefficient and degree cannot vary with the witness.
+
+5. no_polynomial_inventory_realization_on_unbounded_scales assumes one common direct same-label full-inventory map at each admitted scale. At each scale it realizes the final label N by N>=1 and le_rfl, supplying the individual-family premise. The prior no-polynomial theorem then gives the contradiction. This permits a different common map at different scales; it does not require one map for all scales or prove existence of a map at any scale.
+
+The forall hA:1<=A binders explicitly form the admitted source class. The large witness supplies such a proof, so there is no vacuity from admitting only small scales. Proof irrelevance makes proof-choice differences harmless. The results apply to any explicitly unbounded chosen scale set, including one separately proved to contain only strict-maturity horizons. They do not establish unboundedness of any particular maturity domain. Exact-contact realization hypotheses remain impossible and their implications remain vacuous; the unbounded-set proof does not assume maturity or existence for its witness beyond the stated family hypothesis.
+
+## Concrete defects versus untested implementation concerns
+
+No concrete mathematical/API defect or repair request is made. The new code has no focused <;> sequence or fresh linter waiver. Actual elaboration, reducible factorial/let casts, linarith/ring normalization of threshold products, Lp instances, source proof irrelevance and all fatal standard linters remain untested. Those are residual proof-checking uncertainties, not observed failures. No actual compiler or linter diagnostic was obtained, and static API agreement does not predict a PASS.
+
+Future acceptance remains barred by the explicit hold. It requires owner release, a separately frozen bounded checker/plan with independent prelaunch review, actual pinned Lean checks with trust=0 and fatal warnings, a full owned-declaration census covering all 23 owners and generated declarations, 77 ordered selected transitive reports, mathematical layout checks and independent final acceptance. Selected counts do not replace coverage of the seven inherited new definitions or existing owners. No checker/plan/runner is prepared by this review.
+
+## Exact scope limits
+
+This new cell formally states, but has not compiled, an explicit scalar exponential domination and a fixed polynomial obstruction for exact individual last-label or direct same-label whole-inventory realization on an explicitly unbounded scale set. It is stronger than the prior written polynomial observation precisely at this new static-input scope; older exact receipts and reviews are not rebound to imply its acceptance.
+
+No free/coefficient mixing, changed input features/dimensions/windows, nonlinear or approximate realization, map existence, minimizing-map uniqueness, distinguished signed Mobius-vector cost, OriginalSupplierEstimate, WholePickupPoly, CrossPoly/EnergyPoly, pointwise amplitude return, strict negative/joint sector, full supplier/interior/covariance, general transformed/renormalized Gram bridge, RH or converse follows. The final label may have Mobius coefficient zero. The natural degree and fixed nonnegative coefficient hypotheses are retained; no arbitrary varying-degree or varying-coefficient exclusion is claimed. No A=0 equality or C-infinity premise is asserted. Existing normalization/source/dilation results retain their separately accepted exact scope. Mathematics remains separate from authentication, permission and source rights.

@@ -1,0 +1,61 @@
+# Final read-only gate addendum
+
+Reviewer: `/root/route_inspection`, 2026-10-11, around20:18Z.
+This is a new ignored note; the earlier report and every original source,
+configuration, protected path, receipt, process, Git state and schedule remain
+unchanged. No messages were sent to chats. No checkers, scripts, compilers,
+native/shared replays, locks, source/config copies or process actions were run.
+
+Prior report:
+`/Users/think/Desktop/math/.local/ccc-control-soundness/reviews/resume-other-routes-and-gate-readonly-20261011T2010Z.md`,
+SHA-256 `bb4597119a541bbe306d81c3c7479eea37ad2727482b2d5a2975c05dbc2a5a3e`.
+
+## Observed delta and final snapshot
+
+Read only the newer owner-chat messages beyond the prior report, using
+read_thread and filtering the returned history before reporting its contents.
+Owner chat: `01a1291b-6506-7d60-b9e2-7d437f1782af`, exact title
+`Assess lean transfer completeness`.
+The same turn remains running:
+`01a12924-a07e-78f2-8bd2-fbb1dd8f88de`.
+
+One compact wait_threads snapshot after cursor311 returned revision325,
+cursor `48677030-400e-42ab-b944-7bf52c31c8b3:325`, active/inProgress.
+Its latest assistant message is
+`msg_09a24ce0fac9b962016acbef22669487d2bf0b29e28b6505f0`.
+The message states that documentation scope is widening faster than its owner
+can stabilize it, so the gate owner is switching to a controlled handoff:
+the documentation owner should stop after the current command, preserve all
+bytes and failed probes, and the gate owner will apply bounded hardening in
+one reviewed generation.
+
+Completed outbound message
+`exec-bc89eccc-3d3f-42d2-997a-72a70a340ede` to documentation owner
+`01a11dd0-9a1e-7161-bf33-73aee86337d9` makes the scope explicit:
+finish only the in-flight command, then stop edits/tests/processes in the
+canonical checkout; preserve current bytes and failed probes; return exact
+hashes, terminal state, intended remaining edits and explicit quiescence.
+It reserves final hardening, tests, freeze and independent audit to the gate
+owner and prohibits the recipient's Lean/native work. This is a handoff and
+continued hold, not a release of CCC canonical/public/native operations.
+
+The intervening delta reports rejected transient documentation generations
+and further bounded integrity/provenance defects. Two completed messages to
+monitor `01a12934-bdae-7ef0-9449-111b3644063b` explicitly retain the hold and
+close the clean timer:
+`exec-3de647c9-91de-47cc-916e-87126639c136` and
+`exec-4e6eae71-b03f-40ca-a7c7-411d1527eb4f`.
+These are owner-chat observations, not independent adoption or reproduction
+of the foreign diagnostics.
+
+## Release verdict
+
+Explicit CCC canonical/public/native release observed: **NO**.
+
+No delta message releases this CCC task's public source/configuration copying,
+Lean/native compiler checks, shared replay.lock, or protected monitor writes.
+No native execution, completed audit or admission is inferred from the handoff.
+The earlier normal-tools release of a short OS quiet window remains narrower
+and does not satisfy this task's explicit release requirement.
+Final observed revision325 remains active/inProgress; retain the coordination
+hold and all mathematical/adoption boundaries of the prior report.
