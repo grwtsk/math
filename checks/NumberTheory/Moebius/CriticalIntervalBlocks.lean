@@ -42,6 +42,15 @@ example (h : CriticalPrefixPowerSummable) :
     CriticalBoundaryVerticalLineUniform :=
   criticalBoundary_of_prefixPowerSummable h
 
+example {n : ℕ} (hn : 1 ≤ n) :
+    criticalPrefixPowerMajorant n ≤ criticalPrefixSquareMajorant n :=
+  criticalPrefixPowerMajorant_le_squareMajorant hn
+
+example (hA : CriticalWeightedPrefixSquareSummable)
+    (hM : CriticalMertensPrefixSquareSummable) :
+    CriticalBoundaryVerticalLineUniform :=
+  criticalBoundary_of_prefixSquareComponents hA hM
+
 example :
     CriticalBoundaryVerticalLineUniform ↔ CriticalIntervalBlockUniform :=
   criticalBoundary_iff_intervalBlockUniform
