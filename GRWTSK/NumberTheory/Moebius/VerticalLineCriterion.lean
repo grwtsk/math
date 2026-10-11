@@ -84,12 +84,11 @@ theorem pickupEnergy_le_exp_mul_weightedWindow {σ T : ℝ}
     ← integral_Icc_eq_integral_Ioc, verticalLineMass_eq_weightedWindow hT]
   simpa only [integral_const_mul] using hp
 
-theorem completedVerticalLineUniform_of_weightedEnergyAll
-    (hw : PickupWeightedEnergyAll) : CompletedVerticalLineUniform := by
-  intro σ hσ
-  have hi : IntegrableOn
-      (fun u => Real.exp (-2 * σ * u) * wholePickup u ^ 2) (Ici 0) := by
-    simpa only [neg_mul, mul_assoc] using hw (2 * σ) (by positivity)
+theorem verticalLineMass_uniform_of_integrable {σ : ℝ}
+    (hi : IntegrableOn
+      (fun u => Real.exp (-2 * σ * u) * wholePickup u ^ 2) (Ici 0)) :
+    ∃ C : ℝ, 0 ≤ C ∧
+      ∀ T : ℝ, 0 ≤ T → verticalLineMass σ T ≤ C := by
   refine ⟨∫ u in Ici (0 : ℝ), Real.exp (-2 * σ * u) * wholePickup u ^ 2,
     integral_nonneg (fun _ => mul_nonneg (Real.exp_pos _).le (sq_nonneg _)), ?_⟩
   intro T hT
@@ -97,6 +96,26 @@ theorem completedVerticalLineUniform_of_weightedEnergyAll
   apply setIntegral_mono_set hi
     (ae_of_all _ (fun u => mul_nonneg (Real.exp_pos _).le (sq_nonneg _)))
   exact ae_of_all _ (fun _ hu => hu.1)
+
+theorem completedVerticalLineUniform_of_weightedEnergyAll
+    (hw : PickupWeightedEnergyAll) : CompletedVerticalLineUniform := by
+  intro σ hσ
+  have hi : IntegrableOn
+      (fun u => Real.exp (-2 * σ * u) * wholePickup u ^ 2) (Ici 0) := by
+    simpa only [neg_mul, mul_assoc] using hw (2 * σ) (by positivity)
+  exact verticalLineMass_uniform_of_integrable hi
+
+/-- The unconditional elementary energy estimate already bounds the complete
+vertical-line quotient strictly to the right of `σ = 1/2`.  The unresolved
+extension is the interval of positive lines at or left of that threshold. -/
+theorem verticalLineMass_uniform_above_half {σ : ℝ} (hσ : 1 / 2 < σ) :
+    ∃ C : ℝ, 0 ≤ C ∧
+      ∀ T : ℝ, 0 ≤ T → verticalLineMass σ T ≤ C := by
+  have hi : IntegrableOn
+      (fun u => Real.exp (-2 * σ * u) * wholePickup u ^ 2) (Ici 0) := by
+    simpa only [neg_mul, mul_assoc] using
+      pickup_weighted_energy_integrable_initial (show 1 < 2 * σ by linarith)
+  exact verticalLineMass_uniform_of_integrable hi
 
 theorem pickupEnergySubexp_of_completedVerticalLineUniform
     (hV : CompletedVerticalLineUniform) : PickupEnergySubexp := by
@@ -136,6 +155,7 @@ theorem riemannHypothesis_of_completedVerticalLineUniform
 end GRWTSK.NumberTheory.Moebius.VerticalLineCriterion
 
 #print axioms GRWTSK.NumberTheory.Moebius.VerticalLineCriterion.verticalLineMass_eq_completed
+#print axioms GRWTSK.NumberTheory.Moebius.VerticalLineCriterion.verticalLineMass_uniform_above_half
 #print axioms GRWTSK.NumberTheory.Moebius.VerticalLineCriterion.pickupEnergySubexp_of_completedVerticalLineUniform
 #print axioms GRWTSK.NumberTheory.Moebius.VerticalLineCriterion.completedVerticalLineUniform_iff_weightedEnergyAll
 #print axioms GRWTSK.NumberTheory.Moebius.VerticalLineCriterion.riemannHypothesis_of_completedVerticalLineUniform

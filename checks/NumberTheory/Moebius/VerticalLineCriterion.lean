@@ -11,6 +11,11 @@ example : CompletedVerticalLineUniform ↔ PickupWeightedEnergyAll :=
 example : CompletedVerticalLineUniform ↔ pickupEnergyAbscissa = 0 :=
   completedVerticalLineUniform_iff_energyAbscissa_zero
 
+example {σ : ℝ} (hσ : 1 / 2 < σ) :
+    ∃ C : ℝ, 0 ≤ C ∧
+      ∀ T : ℝ, 0 ≤ T → verticalLineMass σ T ≤ C :=
+  verticalLineMass_uniform_above_half hσ
+
 example (h : CompletedVerticalLineUniform) : _root_.RiemannHypothesis :=
   riemannHypothesis_of_completedVerticalLineUniform h
 

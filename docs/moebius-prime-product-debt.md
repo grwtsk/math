@@ -205,6 +205,12 @@ reverse implication restricts the paid half-line integral to each window.
 It also proves equivalence with `pickupEnergyAbscissa = 0` and a conditional
 return to the literal Riemann hypothesis.
 
+The existing elementary energy estimate does give an unconditional baseline:
+`verticalLineMass_uniform_above_half` proves the complete uniform
+prime-product/debt bound for every $\sigma>1/2$. This is the transform of the
+known weighted-energy domain $\tau>1$. The unresolved extension is exactly
+$0<\sigma\le1/2$, and ultimately every positive line.
+
 The actual omitted function is
 
 $$r_{\sigma,T}(u)=1_{[0,\infty)}(u)e^{-\sigma u}W(u)

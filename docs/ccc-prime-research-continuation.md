@@ -66,6 +66,12 @@ density. Consequently this completed vertical-line condition feeds the
 existing literal-RH consumer, but is exactly the unpaid all-rate arithmetic
 criterion rather than a new estimate.
 
+The theorem `verticalLineMass_uniform_above_half` supplies the complete
+uniform bound unconditionally for $\sigma>1/2$, by transporting the existing
+elementary weighted-energy domain $\tau>1$ through $\tau=2\sigma$. The precise
+new territory is therefore $0<\sigma\le1/2$; re-proving the right half-plane
+does not advance RH.
+
 The next untried obligation is an independently proved bound for that complete
 signed vertical-line expression, uniform in the recording horizon, or a
 genuinely weaker cancellation lemma that still feeds the every-positive-
