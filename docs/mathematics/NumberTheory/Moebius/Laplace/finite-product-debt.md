@@ -298,6 +298,21 @@ $\sum_n M_n^2n^{-3}<\infty$ together imply the complete critical
 boundary-line estimate. These two convergence statements remain unpaid; the
 reduction does not turn them into unconditional Möbius estimates.
 
+A generic checked power-comparison lemma makes the thresholds explicit. If
+there are constants $C_A,C_M$ and exponents
+
+$$
+|A_n|\le C_A n^\alpha,\quad \alpha<\frac12,
+\qquad
+|M_n|\le C_M n^\beta,\quad \beta<1
+$$
+
+for every $n\ge1$, then the two square-energy series converge by comparison
+with real-power $p$-series, and hence the critical boundary estimate follows.
+This is a conditional consumer theorem. The density-correction moment bounds
+and the elementary bounded reciprocal Möbius prefix do not supply either
+power estimate or a decay rate.
+
 The actual omitted function is
 
 $$r_{\sigma,T}(u)=1_{[0,\infty)}(u)e^{-\sigma u}W(u)
