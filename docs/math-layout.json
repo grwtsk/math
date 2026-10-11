@@ -1,0 +1,1996 @@
+{
+  "schema": "mathematical-subject-layout-v1",
+  "rule": "Distribute each mathematical result by its subject and object. No conjecture, campaign, conversation, project acronym or workflow metaphor directories; generic lemmas must be reusable independently.",
+  "forbidden_segments": [
+    "CCC",
+    "Conversation",
+    "CorkscrewChamberCap",
+    "HadwigerNelson",
+    "ProofHorizon",
+    "RiemannHypothesis",
+    "SpectralUnificationOfComputabilityAndAlgebraicSymmetry",
+    "Waveform"
+  ],
+  "subjects": {
+    "Algebra": 4,
+    "Analysis": 53,
+    "Combinatorics": 4,
+    "Data": 1,
+    "DynamicalSystems": 12,
+    "LinearAlgebra": 13,
+    "Logic": 16,
+    "NumberTheory": 56,
+    "Order": 2,
+    "Spectral": 7
+  },
+  "source_count": 169,
+  "source_hashes": {
+    "GRWTSK.lean": "c043f49834de6b404f4173cf1bfac746486f76418414ea339c46d9243cf6d8ef",
+    "GRWTSK/Algebra/BigOperators/OrderedSquare.lean": "90887152044ad24b0a96371b5aee78430e2d67f2abcc899529c43f6946d8e1d4",
+    "GRWTSK/Algebra/BigOperators/QuadraticCounterexample.lean": "beba4fef99150fd9d1d9a905b33bba2a4cc20982be1eb08d62705cae37489d25",
+    "GRWTSK/Algebra/OrderedProduct.lean": "97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d",
+    "GRWTSK/Algebra/OrderedProductGauge.lean": "d6ca049d4674503df5b175e7028c41c742af43ec7c42389a3fb3528c8f6ec5ae",
+    "GRWTSK/Analysis/Asymptotics/PolynomialClosure.lean": "4cfa71d72517861314331df767a387bff171043475cf51177e8d7bb61b6b5bae",
+    "GRWTSK/Analysis/Asymptotics/PolynomialErrorBound.lean": "038e3cf31cc90eec7019c91be55ff2cdc4c00aaf82a3791be5d05e4dfae12996",
+    "GRWTSK/Analysis/Asymptotics/PolynomialSubexponential.lean": "88096887fa741b898bdb12e1f563e166376a3301847098db6c9f4d10065edec2",
+    "GRWTSK/Analysis/Calculus/CompactPolynomialDerivatives.lean": "4abb0074bb8a66137768bbd25d59ab896b347654f4944383f6df1e9e9d9fa8e4",
+    "GRWTSK/Analysis/Calculus/CompactProfileBoundaryCounterexamples.lean": "15f107e78eddae829dbeb2d205520193155df4500a67fc4b3dbd91cee902ad07",
+    "GRWTSK/Analysis/Calculus/CompactProfileDerivativeEnergy.lean": "dc105862ecda0a65b5df3feef43539ce48e8ad5e2e288869be74df8345c5faa4",
+    "GRWTSK/Analysis/Calculus/CompactProfileNormalization.lean": "469dd45166d579a93c55fda6ae66a2f3f0bdad54d9761e59ab66fc9cfdd95564",
+    "GRWTSK/Analysis/Calculus/PolynomialBumpDerivativeEnergy.lean": "9a4adaa8061a277138bdd1c3e9897b4348ab6517a0361a18a6f5654de438309d",
+    "GRWTSK/Analysis/Calculus/PolynomialBumpNormalization.lean": "c9327e4d91a040e78f9e1292f48e54f8d6f33ad0676d0b6ab1977199b1b65dc3",
+    "GRWTSK/Analysis/Complex/VerticalReflection.lean": "7d0a686fd76d22a20a30649a1debcd042623eea6abda044ca5a08481c860da5d",
+    "GRWTSK/Analysis/Convolution/AutocorrelationDerivativeEnergy.lean": "8a8d4a85d38b81db1bd37a0ae0698780791082f979d125d20ab3d928c7e7bb8e",
+    "GRWTSK/Analysis/Convolution/AutocorrelationSecondDerivative.lean": "decf56fc025da8133170d768dcc2c467508ee715050fc6e7633a42a1ed7060d3",
+    "GRWTSK/Analysis/Convolution/CompactProfileCorrelation.lean": "3c094738e9d200f5155bf2dfe6ffa914cae6f282e932a39400dc21412141fb9a",
+    "GRWTSK/Analysis/Convolution/CompactProfileHigherDerivatives.lean": "616d623bd79563b690b557b8b4db797b946a0c43e48e5a5ac0cf87f69e4ae009",
+    "GRWTSK/Analysis/Convolution/ExponentialMoments.lean": "a1f229a1860ed76fcc9a5ea19e75a30492e1b7aa4bea333c376b297599e991f0",
+    "GRWTSK/Analysis/Convolution/PolynomialBumpHigherDerivatives.lean": "a7dee347df5fb179c42be0b721712f1d5b23752dba21861f53a370b3300418cf",
+    "GRWTSK/Analysis/Convolution/PolynomialBumpRegularity.lean": "3696fbcf598d011426fedcbd8f0b3e9ee568412165191e1d5c76b202a83e159f",
+    "GRWTSK/Analysis/DigammaSeries.lean": "8ed1593b5f8bed7443f94766d070eb3afdda19408cc14de210f250fc8a236acd",
+    "GRWTSK/Analysis/Distribution/CompactProfileDilation.lean": "bdda47c4b79cd1c9d78b0a770997dd1dabd2f3fa0608fa5137981609b54156e5",
+    "GRWTSK/Analysis/Distribution/WeakSecondDerivativeUniqueness.lean": "b482804625e6fcd4079aaf85d62c445269a076429c6b41ee37b2abda6e78aabc",
+    "GRWTSK/Analysis/ErrorBounds/PartialMapComposition.lean": "b3e02f39f0198c87179b1a62bc4eb43de521ee841de57e2e2ff0be429b386838",
+    "GRWTSK/Analysis/Fourier/DigammaMultiplier.lean": "36fe566a76070ce0f61315e71b9744374d87c0ff6cceb943294a73f3dc14b65a",
+    "GRWTSK/Analysis/Fourier/IntegerSeries.lean": "46462643902012c58fa6514c99721701b65655f16fd88a0e82fc1181c94bbe88",
+    "GRWTSK/Analysis/Fourier/LogarithmicDomain.lean": "87c881d275b4d18fb6f8ca23ccc64dd859764e3fb1b6f17ebcde6e0de273e65c",
+    "GRWTSK/Analysis/Fourier/Parseval.lean": "f212399e5b28f079a24197c08c3bded9611f04bb08d6dcbd2685046e16db6681",
+    "GRWTSK/Analysis/Fourier/PolynomialBumpEstimates.lean": "90cf3b3c0c04c9624fa273349607c9511815630c75cc5431451caa4533f6233d",
+    "GRWTSK/Analysis/Fourier/WindowCertificates.lean": "c616f557739add2b41d0691111f835ce0f181daf4ba383ba84ded3f3e25a216b",
+    "GRWTSK/Analysis/Inequalities/DiscreteEnergyBalance.lean": "c2155e20dfcf4bbba921bde5673394af0f3e71de0366c8bcbd183578798c551d",
+    "GRWTSK/Analysis/Inequalities/ExponentialDiagonal.lean": "748100ebb0ba4440335668ecb96a079d869de82bb7ac2fb7ecb09ca089469a3c",
+    "GRWTSK/Analysis/Inequalities/FiniteShiftedDerivativeBounds.lean": "deaf9c4af549226f4cf68d08487cf8d2d96e069de6c0c10cffa986c4a5353382",
+    "GRWTSK/Analysis/Inequalities/PolynomialEnergyRatio.lean": "891c2f23592e3e788608498e78ac7f41f7363e755fcbc7bf5a8b25a99c3817d4",
+    "GRWTSK/Analysis/InnerProductSpace/CausalResponseGram.lean": "e563cca4c98955fea76d39fbbd64a5f7ad18688769b89636c52418d315a642db",
+    "GRWTSK/Analysis/InnerProductSpace/CompactResidualNormalization.lean": "b2e41da84e528d6e5b6f85289a4c6123995d1bad00d7cf54a8d112fbf5b38b4d",
+    "GRWTSK/Analysis/InnerProductSpace/DilationGram.lean": "701395de80454619a0cc384543d42935b500a46ba1676e87e52cbb907dd479ab",
+    "GRWTSK/Analysis/InnerProductSpace/DilationResponseSeparation.lean": "191a35b79935a6c65eed972463d5d24a9a90a2caac8c75108435fad274b81452",
+    "GRWTSK/Analysis/Integration/CompactPolynomialMoments.lean": "3c6b04e8438292b9ac75badd78a21244d26bc10e0d3e5a9fd986114582955e77",
+    "GRWTSK/Analysis/IntervalIntegral/Reflection.lean": "55325de763afe3f5c95efab07f1a452a77597cf9621fe124555b03a9ffbfffa3",
+    "GRWTSK/Analysis/IntervalReflection.lean": "8daccbb547c6ea9e481182366f25bae913a4effbf59059becd9a40532541591d",
+    "GRWTSK/Analysis/LaplaceTransform/Analytic.lean": "9b36cbd99be50262b982974d665a0b226495665a5e509f7355ce66a2e08e2f10",
+    "GRWTSK/Analysis/LaplaceTransform/CausalExponentialResponse.lean": "2a761ffcb29c2814ce6e65d7a1441ac63117ddbe6f9a79f8abef62054760958a",
+    "GRWTSK/Analysis/LaplaceTransform/ExponentialThreshold.lean": "734530d5f777f1da2c2ad43186afb50db8752c6a0b9a4a4dc756eb0a30d90768",
+    "GRWTSK/Analysis/LaplaceTransform/PolynomialEnergy.lean": "cc49938c45c940d7049afdf2aed8f5dde3393da4e9ff301d4bc7ccfaaabc0fe5",
+    "GRWTSK/Analysis/NormedSpace/QuadraticError.lean": "663c865cdbe9802281cbb4be82f3c15612330e44c86acd44db9b14dd46d1c7d6",
+    "GRWTSK/Analysis/Polarization.lean": "eca8d7c7426a9c4a329522472fffbc3c3de6f05c047cb328ddd1b2c2da59c2d5",
+    "GRWTSK/Analysis/ReciprocalKernel.lean": "0a926ada5b98fa02e97f6a962160486e758f2716f6d870c375e61e84635282d2",
+    "GRWTSK/Analysis/SpecialFunctions/DigammaFourierBound.lean": "ee1a6a655ef921b9e20f6eff0518f0d115c35eb8369c61811aaca52350ad547e",
+    "GRWTSK/Analysis/SpecialFunctions/SquaredInverseBump.lean": "d8edd04841c7bab3c52e385bb74f5c23b6596e6e8f9453b59a24bb8e7421d48f",
+    "GRWTSK/Analysis/TestFunctions/EvenSeparation.lean": "f585726322b9a27cf7757567345ee903f9c792c0b470494cb056a3ad926005f9",
+    "GRWTSK/Analysis/TestFunctions/ExponentialMomentVariation.lean": "aab9afbee65b9b9111037f960771da2d571a585d735c4d86db4176a2034d8279",
+    "GRWTSK/Analysis/TestFunctions/PolynomialBumpNormalization.lean": "8938ea1f677a595343229a06c00978d6380875e4faaf5118859eede54cf239f7",
+    "GRWTSK/Analysis/TestFunctions/PolynomialBumpSecondEnergy.lean": "d4e956319671eb45319648ec4df2d778a1c596e2e5655638ae73550924b10412",
+    "GRWTSK/Analysis/TestFunctions/Separation.lean": "8479d379d257b8bbbe606ad9627a0883a039a61acce7a0c114f5dea7a975a38f",
+    "GRWTSK/Analysis/WeakDerivatives/PolynomialBump.lean": "1a9ff14af84efd81826a2b3c632cc2f617d2efc0fe4f10374800a5b54df30144",
+    "GRWTSK/Combinatorics/GraphTheory/UnitDistanceGraph/Moser.lean": "82dcabcd95c42921d1a49246db779259c5ef8a43c822db8109634cdffcfd7c6f",
+    "GRWTSK/Combinatorics/GraphTheory/UnitDistanceGraph/MoserCoordinates.lean": "2b72eba295d456ef22b0a828e5257f219bf7f297cf570c377bd11448da51a8a2",
+    "GRWTSK/Combinatorics/GraphTheory/UnitDistanceGraph/MoserSource.lean": "f41ba35bc8fa8d35b8249b1a86c3aa55b8f7ef22662270de862699e72efe93d2",
+    "GRWTSK/Combinatorics/Sequences/QuotaDiscrepancy.lean": "851cb36b5b9db3a4e2695e4c4164dbca4af83dcc913caebd41160fd4db8f882f",
+    "GRWTSK/Data/Sampling/Descriptions.lean": "5130490d5c5394b39e1873e1c49825a64df7efe767e7bcc5e43299dbb28a4b39",
+    "GRWTSK/DynamicalSystems/Sequences/ApproximationReturn.lean": "e25fc82df14cab31a7b719dd2bb02fbd34f37f9e2c4e5978f02d0f562c2a3105",
+    "GRWTSK/DynamicalSystems/TransitionSystems/AnchoredReinitialization.lean": "d6c9a7a5ef4e89899ea42add81647b114526d718760ec3efbab728ad8eea9f64",
+    "GRWTSK/DynamicalSystems/TransitionSystems/AnchoredVerificationExamples.lean": "9414abad6d4ff9b4aae541d0bdcbcfd2bccc3122c7997f99eae862d195f6d156",
+    "GRWTSK/DynamicalSystems/TransitionSystems/AnchoredVerificationReachability.lean": "d1b552a2877b9398903379c08e267d6db0a83bc7f7efd13427af0bfa17dcd6b8",
+    "GRWTSK/DynamicalSystems/TransitionSystems/BudgetResetCounterexamples.lean": "155e4fd202fb590cbdbdf4cb26100c17e72452418be0497ba37b301f662b3e42",
+    "GRWTSK/DynamicalSystems/TransitionSystems/CertifiedPartialMaps.lean": "cfc79a19043787a8caf42ed7bad1aef6bb89b0ec3ebf7f41f2e4676579c3b50e",
+    "GRWTSK/DynamicalSystems/TransitionSystems/GuardedFiniteBudget.lean": "edfbfadbe42b0b8bbc7391331718aeeb6ce68984b0e422125d313b94098dd96e",
+    "GRWTSK/DynamicalSystems/TransitionSystems/RevisionReachability.lean": "664dfec60c069a4d20bbf34de1cd86053344b3539a8b8fdf3ef2d41ecee29a94",
+    "GRWTSK/DynamicalSystems/TransitionSystems/StateReinitialization.lean": "520c95a41332fa4739212b0fe0a850af0d4d117c5e573d88242060977fe5794e",
+    "GRWTSK/DynamicalSystems/TransitionSystems/StateReinitializationExamples.lean": "3281a3b8d0a82226fa6117e9fa6999282b731a9ef7405024021032792e5597c2",
+    "GRWTSK/DynamicalSystems/TransitionSystems/VerificationReachability.lean": "65eada9155a5dc6bb27bdaeb9dd9cd623b24d5403442c8ec5e69de621ffc680b",
+    "GRWTSK/DynamicalSystems/TransitionSystems/VerificationReachabilityExamples.lean": "2bd1bd79ef54663ab746ea24f20d2a22ef3c727f3645d3d779531fc665eb2436",
+    "GRWTSK/LinearAlgebra/AlmostMathieu.lean": "8e33555ed354415b1604c4a7fc192d065fcd87ec4c765f6200faafd633c74d5c",
+    "GRWTSK/LinearAlgebra/CocycleProduct.lean": "64ebbd43849bfffee9f92d74f271c55a1ffcba28c1b7debcf491a901ddfff67b",
+    "GRWTSK/LinearAlgebra/CommonJ.lean": "c4fb5fef172e3855ba2d9ed1811246022e07813fbce00ee5341d393fcdb62767",
+    "GRWTSK/LinearAlgebra/CommonJCounterexamples.lean": "4bed27e7c490006f93c462cee2e088c9d6655678da35d1e926a7d3cd75d3a892",
+    "GRWTSK/LinearAlgebra/Determinant/RankOneQuadraticForm.lean": "c794442a18ee20b17d7a9de85d12e1450f5856c152dd9fec159e2c41c9dec34e",
+    "GRWTSK/LinearAlgebra/GaugeState.lean": "7b364472a886fd113be3fa2165e505fb1fb014fe7980653b19cadc906280258b",
+    "GRWTSK/LinearAlgebra/JacobiTransfer.lean": "bdabbdf489b3a6a65baeec09f71e3f03aed82a868b10491b8f7c21eb36938eab",
+    "GRWTSK/LinearAlgebra/OrderedProductDeterminant.lean": "fb77385e6aeff5897daac09c19acd353d4ec98e638ff7b51799dd2c06e4906a5",
+    "GRWTSK/LinearAlgebra/OrderedTransfer.lean": "0a899d052fdd7f5320e7a9f4b7ee271ee54ebe820b804a41216a597fa59351b9",
+    "GRWTSK/LinearAlgebra/Schrodinger/SampledPotential.lean": "dd30ef9e49516fbd3c87d80a743b8ca52cf49fbd4dc6914f954b59ec6753482b",
+    "GRWTSK/LinearAlgebra/Schrodinger/Sampling.lean": "c1a7b19b713a44f91ead260637396de3b673835eb5d4b8033702cc7068ebe757",
+    "GRWTSK/LinearAlgebra/SchrodingerTransfer.lean": "25f93a03bb8e1b5df2f73c782160ed9f356f592c6cca4e56c92cde7fd974969d",
+    "GRWTSK/LinearAlgebra/Sturmian.lean": "15528db5caae13d550eeabc64624f182af46a7e01c7e4dbf5a81f9604d8e6359",
+    "GRWTSK/Logic/Certificates/AnchoredBatchVerification.lean": "a6b47a542b76495e07516ff54dd3842c02e5a870aef99ef6c9bfb3242efd96e0",
+    "GRWTSK/Logic/Certificates/AnchoredDependencyRevision.lean": "6ee008922a064a90db39f16c8ab632afaf7838e185b6efbef29eaeac3b6bd9ad",
+    "GRWTSK/Logic/Certificates/BatchVerification.lean": "e1d5b69909fe3f8d1162b4bde6a9107ce21a098d1c41ef3f5c23becff4d96dbb",
+    "GRWTSK/Logic/Certificates/BatchVerificationExamples.lean": "e33b6840bfbe4d6abcb6e8ea6eb2a00786d39ff20b439d67afafe626682d5e07",
+    "GRWTSK/Logic/Certificates/DependencyRevision.lean": "5670d4cd3b52bb4451d9c061b415a3f74b245c143a521cc32980a5d77603a599",
+    "GRWTSK/Logic/Certificates/DependencyRevisionExamples.lean": "40a1210cc7f106cfc35d8dc732db28da7c340658da463bf61ec7dd4edde31776",
+    "GRWTSK/Logic/Certificates/ModelExamples.lean": "cd171cabf3f1943620db388004cc05ac0ca16480a2099f0af4b730a4faf32058",
+    "GRWTSK/Logic/Certificates/ProofCoverage.lean": "9920ca52119c98e59e6fe42442e42f593975a1e29c8a5d5d5e6aaf05bfda0c97",
+    "GRWTSK/Logic/Counterexamples/ComplexSymmetryAndPositivity.lean": "8978e35b19445d99221652bfa2164b10d4099bb23e825035a4044b98ed0cbbab",
+    "GRWTSK/Logic/FiniteCoverage.lean": "e1694a750b75d4b4db6bdba517f494a1aa7955736569e04643a2ddc7b45cf4ef",
+    "GRWTSK/Logic/FiniteSequences/PrefixCoverage.lean": "77ed7277b4519ff8fb955e215664ac6d0c22a78e95e38e9ee16d18e6b226a5b3",
+    "GRWTSK/Logic/Inference/FiniteRuleExamples.lean": "f7826ced25588065a249d256dc887e49eede2748f14349d458a12dd33ba082e3",
+    "GRWTSK/Logic/Inference/FiniteRuleSystems.lean": "6bbe978cc4ba18d4bfefbadab3a7b256cdec7dffb6b7de9da18a688d9c4fa986",
+    "GRWTSK/Logic/Locality/AnchoredCertificates.lean": "09b173196b18317c3ecb658206324c41254a6f7023ef0e501d5a4cf511f96c5d",
+    "GRWTSK/Logic/Locality/FiniteRuleTransport.lean": "6cf979f83e4d1047fc0b2d49b0288beeda6a956ae0242a311f9992b1bc3e7719",
+    "GRWTSK/Logic/Locality/RevisionCertificates.lean": "c126cca40f7ad1a35ac06b5d1502647ce3c826edda79a2a6db2310035da0f2e4",
+    "GRWTSK/NumberTheory/Chebyshev/CompactProfileExplicitFormula.lean": "554c43f9096bba277f2c73172c3f6e4dcb54a9b4da0abd79c8a6bc775854125b",
+    "GRWTSK/NumberTheory/Chebyshev/CompactProfilePairingIntegrability.lean": "797ade6a77762c2d421a3c28a9a2a6c5f3c645a343a854ed02ccbb7f3f0dc9eb",
+    "GRWTSK/NumberTheory/Chebyshev/CorrelationPairing.lean": "fe9453df597dc7a0230f3fedde3f2c3a8b616cac003f70feb65986b64e80bac3",
+    "GRWTSK/NumberTheory/Chebyshev/FiniteIntegrationByParts.lean": "d901cf9da7a01829f620c3b59b8dc89cea5b46d1113b919b14d618b9bb9fe3ef",
+    "GRWTSK/NumberTheory/ContinuedFractions/FrequencyRealization.lean": "fe53414320a78931bf2add8a168544df853ce7bd10b82b2cf257082ceb77e4be",
+    "GRWTSK/NumberTheory/ContinuedFractions/ScheduledDenominators.lean": "3f18269367c2ef839a97591d1d5d36198c6c4c6faff132120f45659c19e94a03",
+    "GRWTSK/NumberTheory/ExplicitFormula/CorrelationPairing.lean": "1b58187402ac027a0c6f48f3a70b48af3eede19f6e39870368b25bc46d09887b",
+    "GRWTSK/NumberTheory/FirstPrime.lean": "436e96d07490a3251683045a1f4929a1df5eca692fb411c87fe527d71b2a0d9c",
+    "GRWTSK/NumberTheory/Moebius/ComparisonEnergy.lean": "0850bfd508693468bbeb7aef7df1d57aae58e42053ea436169eb18d4020a203d",
+    "GRWTSK/NumberTheory/Moebius/DiagonalEnergyBounds.lean": "371fe05a4e0f382c2944649434d6ee3ae03946c24381f7ce53634e13d4e17a58",
+    "GRWTSK/NumberTheory/Moebius/DirichletLaplaceIdentity.lean": "062ba923dbe090e8f1271ce4ffaf90332eaf5e20dc925f9d4b824dea48407cce",
+    "GRWTSK/NumberTheory/Moebius/DyadicEnergy.lean": "09b78e1f6656d83868433ee9fcc3b15970817fa3cc3cb78381cb02ec6a240eb6",
+    "GRWTSK/NumberTheory/Moebius/EnergyAbscissa.lean": "23330ce4bd519083f9fe8e09ecb9aaf6724a614d6b4a576afef395351e27c549",
+    "GRWTSK/NumberTheory/Moebius/EnergyGrowthEquivalences.lean": "70bf8c10cd78518511d3019b77d542fdc6ae450c10a72631031e60f3cc7081b1",
+    "GRWTSK/NumberTheory/Moebius/FiniteLaplaceSums.lean": "8c1fb421033b43353ec61b5c3909ffad3a3394cc9fc002c6f6c13e6e856eb128",
+    "GRWTSK/NumberTheory/Moebius/FiniteLaplaceTransform.lean": "590ede9829dd77b11263d72babd0e42b0504e291397b4d98cf81ad5f0199c678",
+    "GRWTSK/NumberTheory/Moebius/FiniteResponseSum.lean": "9358b6a2bbd51c10140c6fb595383355c54b072154965a06eb4651c3bc2c8bb8",
+    "GRWTSK/NumberTheory/Moebius/GramDiagonalBound.lean": "72172eb41fbc701bb53d3fe3d31f6a9d2cf5117c18769f85d5ed2e2986cb2b73",
+    "GRWTSK/NumberTheory/Moebius/IntegerSampleGrowth.lean": "42864197db6df82ea13df156e9590ed77e5c2099619e4532a6918d5cef9a23de",
+    "GRWTSK/NumberTheory/Moebius/LaplaceDirichletSeries.lean": "8d81ba7f79fd0eabd4ee4c900553039b93e7171e9d7ee60ac4222175d4204242",
+    "GRWTSK/NumberTheory/Moebius/LaplaceHolomorphy.lean": "c65e5184b9e4354aaa2ddd27a7d61afe5fa69ad8b833436e9269b00eac2bf807",
+    "GRWTSK/NumberTheory/Moebius/LaplaceTransform.lean": "308954ccc5537fc6dc46377c72a3f18c118c87bafb72b01746ab5368b156dd05",
+    "GRWTSK/NumberTheory/Moebius/MeanSquareGrowth.lean": "16dee167404d9ecf75bce45caaebc1b98058ba6b8d02e51502eef59d4771c243",
+    "GRWTSK/NumberTheory/Moebius/MeanSquareLaplaceHolomorphy.lean": "4eb213efab76b7b2b17ce26b4d428c773f635d7bc3cab529c057cd9a7acc442c",
+    "GRWTSK/NumberTheory/Moebius/MertensPrimitive.lean": "a0735d6120754b4921c55346a5fb0203cb3586bd6f312289f83b0a76218cffbb",
+    "GRWTSK/NumberTheory/Moebius/NegativePrimeCorrelation.lean": "020042e6753763a9894a6ef63256f9583f72dbc5d114a9fa45c495f7650e716d",
+    "GRWTSK/NumberTheory/Moebius/PolynomialLaplaceHolomorphy.lean": "f3387bbcc69c0f89cd2c071a6b2d8dd95d69240f393bf18774dba90a1d1773b1",
+    "GRWTSK/NumberTheory/Moebius/PrimeBlockEnergy.lean": "e327d18d9572d5225c997f485efacb69b59e190ebe0a0cce94087c8b4641b952",
+    "GRWTSK/NumberTheory/Moebius/PrimeFactorFilters.lean": "ec4760134d86f29c697f6f8556209c1c0a735716177c36b1aee6e1d06085ca6e",
+    "GRWTSK/NumberTheory/Moebius/PrimeFilterEnergy.lean": "21bac8528e4afa692c6d623473229f3c55b28654e4da4b708b52151e9afc139c",
+    "GRWTSK/NumberTheory/Moebius/PrimeFilterGrowth.lean": "6eba6686d407d00d3d9786d6fe83116037bfb564c78747a8230de9f98b618803",
+    "GRWTSK/NumberTheory/Moebius/PrimeFilterLaplace.lean": "be96c983badedf9c3bde3787a273165be81163efc130b52d451ae2b51addea1b",
+    "GRWTSK/NumberTheory/Moebius/PrimePrefixGrowth.lean": "c5ebc36cce14a45fdba746140d687bda39cd6bf5f892091e7c2faaa3d951177e",
+    "GRWTSK/NumberTheory/Moebius/PrimitiveIdentification.lean": "2a1f78198afd3a0a23e1865be081f09e2582689e58462d736bfe626128e6f308",
+    "GRWTSK/NumberTheory/Moebius/PrimitiveRegularity.lean": "6cb747756c582d9f4f5872e164b091672f044bbbb0bb1478d6c47c31b565c720",
+    "GRWTSK/NumberTheory/Moebius/SectorEssentialSuprema.lean": "e2bdb59fc36e993c616328b9e7a32658e2bc1985d42bcfac9c64c901f165e6e2",
+    "GRWTSK/NumberTheory/Moebius/SignedIntegralSectorBounds.lean": "6f46187c269e51719dd2104c5df7480c42ebad7bdc38bf3f2590504063de447e",
+    "GRWTSK/NumberTheory/Moebius/UnsignedEnergyBound.lean": "4900917f41e019d2348d3d0b26321e36cf077e86adb409e9c546840a39d43481",
+    "GRWTSK/NumberTheory/Moebius/WeightedIntegralContinuity.lean": "ab44a7e992005e24b2dab3b5ef30bd22f37cfc97d714c8c50e31f08afd505883",
+    "GRWTSK/NumberTheory/Moebius/WeightedIntegralEnergy.lean": "8124ef6fbeca2c8244d7401536d70c43a6ecd31279366c20ea96bf6fbaa84380",
+    "GRWTSK/NumberTheory/Moebius/WeightedIntegralGrowth.lean": "ee5dc6dc631638538445d66293cbdf7897a3c21beddc197a7cb8365a05025377",
+    "GRWTSK/NumberTheory/Moebius/WeightedSummatoryIntegral.lean": "041fa625e5e2bc239e3df3b471f545f7ba080093723c2f3710c08ee4bc92c8c2",
+    "GRWTSK/NumberTheory/Prime/LeastPrime.lean": "89d862e92978b74d032ea9b8ce764c0593a19cb93001c2c1cf5695c600c187fd",
+    "GRWTSK/NumberTheory/Prime/ReciprocalMass.lean": "b943050f8ff274dd63740ada669ac79027218c5e248809e491c2bb2590ea62bc",
+    "GRWTSK/NumberTheory/Zeta/HolomorphicFilteredReciprocal.lean": "1499cd8a5faee607f99dad81aad589ef7f3d8ec6df4419f60e0b3f95be24fdb0",
+    "GRWTSK/NumberTheory/Zeta/PoleRegularization.lean": "7c813c2d75d8f9d96216a620ba337ca793728a1e0270620c1d19e1521a623cc1",
+    "GRWTSK/NumberTheory/Zeta/Riemann.lean": "0a0a3808d45bfb087b397f85b08a4135cce705cc1f7ad5e51251e4e6abbbd73f",
+    "GRWTSK/NumberTheory/Zeta/Riemann/CriticalLineDefect.lean": "d915e1e7d7555eb6efa7ee72786a7ad044dc9e7c4b4e178153d356088472efc8",
+    "GRWTSK/NumberTheory/Zeta/Riemann/DefectCriterion.lean": "c387ba899e159bde5274009c792630553f1de8f52e83031a3f7123daf4b3766f",
+    "GRWTSK/NumberTheory/Zeta/Riemann/Hypothesis.lean": "26de9b9d99b5e04103c8095c3b466ce301fab1d52dd40155703a160aac44f1f6",
+    "GRWTSK/NumberTheory/Zeta/Riemann/LaplaceCriterion.lean": "be129acd7f3abe84fe8d87227d256e8c3e9318c739b4fa7c04096f2c70a9f8b0",
+    "GRWTSK/NumberTheory/Zeta/Riemann/PolynomialEnergyCriterion.lean": "b4b7949d198e478ac369d8455284cd5b0505f5b97a0323d47eb5cf59da1f11b1",
+    "GRWTSK/NumberTheory/Zeta/Riemann/Regularized.lean": "084fe442c91faee379c83ad8a7a6af1f4500bd5eb66bbc5f999b160106627af7",
+    "GRWTSK/NumberTheory/Zeta/Riemann/ZeroDefinitions.lean": "107f357b8c04afc16e25b8fded6922782d2756959b42f080af839f4db58e9aa0",
+    "GRWTSK/NumberTheory/Zeta/Riemann/ZeroSymmetry.lean": "6f3b74c08ed6538482ce19e90de96784b65a0d54209f65987a4e7ad45f5150ec",
+    "GRWTSK/NumberTheory/Zeta/ZeroFreeHalfPlaneCriteria.lean": "d1066595d1aacddec0f15263570ea4f52a24d66d5444c8f02832271877fbe0db",
+    "GRWTSK/Order/Closure/FiniteDependencyClosure.lean": "e78778c5b623abadfc23a668517cb4b1652ef6365962263b8440f8a156af5dec",
+    "GRWTSK/Order/Closure/FiniteDependencyExamples.lean": "3b0fe0e9203fdd65f3ae8252aec3e66159e114863a23c840ea4fdfb19a63a467",
+    "GRWTSK/Spectral/DirichletCut.lean": "98bc77aecb30901438b6af7cacb1edfdee181cc73d64bcb142daf6abed1ac8af",
+    "GRWTSK/Spectral/FreeDirichletSpectrum.lean": "363dc89065857454bf985848a16475040fe5c67e4a0ee3d1a7b027902c0d01cf",
+    "GRWTSK/Spectral/FreeIDS.lean": "2ceb8583eee1ece71002eb12fdb6682498125b79c53c9d5a3fa8283d0a9e8f60",
+    "GRWTSK/Spectral/GapTransport.lean": "058f1fc96e8badc39cf8178e1c30680199bbf3870ea67d69d5eb16c5e6b8e4ec",
+    "GRWTSK/Spectral/MatrixCountComparison.lean": "eed27fedd6056292ce90a075907568852df7fb47d6d621775a44d6888f10b1b7",
+    "GRWTSK/Spectral/SturmianBlockCounts.lean": "5e357a6fd03b24ceb1a92ac187f235b494c093276fa76aee72f5372927f52ed5",
+    "GRWTSK/Spectral/SturmianFiniteVolume.lean": "3b072a5c92f83d8fe20dea794ebc3b185d2166c5c55a8355ca1210049776a45d"
+  },
+  "migration": [
+    {
+      "previous_path": "GRWTSK/ProofHorizon.lean",
+      "previous_sha256": "19b67f78198e2c11057bc438bd4e91db5a2f4e30656a593d467ff9091d689eab",
+      "operation": "retire",
+      "mathematical_paths": [],
+      "rationale": "Declaration-free mixed-subject import umbrella. Retain its rewritten subject imports through the public library root, then retire this historical umbrella; do not overwrite the root or copy mixed subjects into a newly named subject folder."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap.lean",
+      "previous_sha256": "16f131808f2cbe3f71bd0fe5e0f1031c6fa78f9144d4c79fb3258d0878ebe4a1",
+      "operation": "retire",
+      "mathematical_paths": [],
+      "rationale": "Declaration-free mixed-subject import umbrella. Retain its rewritten subject imports through the public library root, then retire this historical umbrella; do not overwrite the root or copy mixed subjects into a newly named subject folder."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/AlternativeFixtures.lean",
+      "previous_sha256": "044dd5df2dcecf8b09324d2951f55964f1e47842b8516b23a0a6b0b135eb0520",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Logic/Inference/FiniteRuleExamples.lean",
+          "sha256": "f7826ced25588065a249d256dc887e49eede2748f14349d458a12dd33ba082e3"
+        }
+      ],
+      "rationale": "Finite grounded rule countermodels, including unsupported cycles and conjunction prerequisites."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/AlternativeLocality.lean",
+      "previous_sha256": "b242722d3e2e7d1f64d6a663f3c39688ecd42b4a3b2763f4482cd1b05aaaa77e",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Logic/Locality/FiniteRuleTransport.lean",
+          "sha256": "6cf979f83e4d1047fc0b2d49b0288beeda6a956ae0242a311f9992b1bc3e7719"
+        }
+      ],
+      "rationale": "Finite provider read unions, eligible rule transport under snapshot agreement, and a countermodel to global locality."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/AlternativeSupport.lean",
+      "previous_sha256": "b6d066cdffe567aa33258c0450d80ad35b72fb401c06030ebfcfd320b78a6799",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Logic/Inference/FiniteRuleSystems.lean",
+          "sha256": "6bbe978cc4ba18d4bfefbadab3a7b256cdec7dffb6b7de9da18a688d9c4fa986"
+        }
+      ],
+      "rationale": "Grounded finite inference routes, least support closure, and certificate-bearing rules."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/ArithmeticPickupBudget.lean",
+      "previous_sha256": "649b826e4397313f496f87b3a6d5cd684cce1f59295669275a6d5444fca8483d",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Moebius/EnergyGrowthEquivalences.lean",
+          "sha256": "70bf8c10cd78518511d3019b77d542fdc6ae450c10a72631031e60f3cc7081b1"
+        }
+      ],
+      "rationale": "Equivalence between weighted Mobius integral growth and exact energy/cross/return budget propositions; no growth witness."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/ArithmeticPickupContinuity.lean",
+      "previous_sha256": "b3db35e658479676b9e698fdc5ee2ad7213b580f374b33241f861908076df8ef",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Moebius/WeightedIntegralContinuity.lean",
+          "sha256": "ab44a7e992005e24b2dab3b5ef30bd22f37cfc97d714c8c50e31f08afd505883"
+        }
+      ],
+      "rationale": "Continuity of the actual weighted Mobius integral across logarithmic atom arrivals and attained finite envelopes."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/ArithmeticPickupDiagonal.lean",
+      "previous_sha256": "c14d3ed48c96e2b01efbdb5b04415591ae248b3df746098afec5cd0b6cf6e66b",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Moebius/DiagonalEnergyBounds.lean",
+          "sha256": "371fe05a4e0f382c2944649434d6ee3ae03946c24381f7ce53634e13d4e17a58"
+        }
+      ],
+      "rationale": "Mobius coefficient absolute bounds and harmonic estimates give a polynomial diagonal response energy bound."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/ArithmeticPickupEnergy.lean",
+      "previous_sha256": "f7fd16d41fd9fbe5d2526b3499a8a237eebf846be46cfb18e383223e070f7675",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Moebius/WeightedIntegralEnergy.lean",
+          "sha256": "8124ef6fbeca2c8244d7401536d70c43a6ecd31279366c20ea96bf6fbaa84380"
+        }
+      ],
+      "rationale": "Exact weighted Mobius response energy, finite Gram expansion, diagonal and signed cross contributions."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/ArithmeticPickupEnergyGrowth.lean",
+      "previous_sha256": "3451de0ff8ea774394f76f8c26169dfcee60babb5dbc94fe283b9742a0be62f3",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Moebius/MeanSquareGrowth.lean",
+          "sha256": "16dee167404d9ecf75bce45caaebc1b98058ba6b8d02e51502eef59d4771c243"
+        }
+      ],
+      "rationale": "Polynomial mean-square energy is equivalent to an upper signed cross bound; both remain open hypotheses."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/ArithmeticPickupFilterConsumer.lean",
+      "previous_sha256": "095836747a2234e9e83d91483ad80ff5af412ece5a96d48ba3fcb9c1aed0ce83",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Zeta/HolomorphicFilteredReciprocal.lean",
+          "sha256": "1499cd8a5faee607f99dad81aad589ef7f3d8ec6df4419f60e0b3f95be24fdb0"
+        }
+      ],
+      "rationale": "Conditional holomorphic filter reconstruction of the actual reciprocal zeta transform, requiring full half-plane nonvanishing."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/ArithmeticPickupGram.lean",
+      "previous_sha256": "5c769039df04091885d7a50d8a0d0e57a0fa52f8750a99d49d80eba25d4ba421",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Analysis/InnerProductSpace/CausalResponseGram.lean",
+          "sha256": "e563cca4c98955fea76d39fbbd64a5f7ad18688769b89636c52418d315a642db"
+        }
+      ],
+      "rationale": "Integrable causal response products and positive semidefinite Gram forms for arbitrary finite coefficients; arithmetic corollaries remain explicit."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/ArithmeticPickupGrowth.lean",
+      "previous_sha256": "3ab8b33f253e5dbc9de44fcab7beb89ecbb98a971a5c98d04e3cd7fb95437440",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Moebius/WeightedIntegralGrowth.lean",
+          "sha256": "ee5dc6dc631638538445d66293cbdf7897a3c21beddc197a7cb8365a05025377"
+        }
+      ],
+      "rationale": "Source-faithful equivalence of integral and finite material-coordinate Mobius growth, with exact reset bounds."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/ArithmeticPickupLaplaceAtom.lean",
+      "previous_sha256": "ff306371892f3b77df44631b2222c28b4d537b13e4929f1496b43fdb1bb67b4c",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Analysis/LaplaceTransform/CausalExponentialResponse.lean",
+          "sha256": "2a761ffcb29c2814ce6e65d7a1441ac63117ddbe6f9a79f8abef62054760958a"
+        }
+      ],
+      "rationale": "Laplace integrability and exact integral of one gated exponential response at logarithmic arrival."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/ArithmeticPickupLaplaceEnergy.lean",
+      "previous_sha256": "b07c159492c15f4c6e54a0fce007d40bb91ce75577b4182120447889352044d0",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Moebius/MeanSquareLaplaceHolomorphy.lean",
+          "sha256": "4eb213efab76b7b2b17ce26b4d428c773f635d7bc3cab529c057cd9a7acc442c"
+        }
+      ],
+      "rationale": "Conditional holomorphy of the actual Mobius Laplace transform from cumulative polynomial energy alone."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/ArithmeticPickupLaplaceGrowth.lean",
+      "previous_sha256": "60f7de5bfff1f39855065a53032b49067438ab929336f3cdad71c1f2d391a847",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Moebius/PolynomialLaplaceHolomorphy.lean",
+          "sha256": "f3387bbcc69c0f89cd2c071a6b2d8dd95d69240f393bf18774dba90a1d1773b1"
+        }
+      ],
+      "rationale": "Polynomial-exponential domination and conditional holomorphy of the literal weighted Mobius integral transform."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/ArithmeticPickupLaplaceInfinite.lean",
+      "previous_sha256": "52955a5bf5775637e369c249ffc3bf668ce4d1ca5df823491a4fe94a35f49aa5",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Moebius/LaplaceDirichletSeries.lean",
+          "sha256": "8d81ba7f79fd0eabd4ee4c900553039b93e7171e9d7ee60ac4222175d4204242"
+        }
+      ],
+      "rationale": "Absolutely justified infinite exchange on Re z greater than one half, L-series identity, and initial reciprocal zeta identity."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/ArithmeticPickupLaplaceSum.lean",
+      "previous_sha256": "c92505887e6108ec4c82b59f3438716f13a49468f49f23261bba81b26e6ef152",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Moebius/FiniteLaplaceSums.lean",
+          "sha256": "8c1fb421033b43353ec61b5c3909ffad3a3394cc9fc002c6f6c13e6e856eb128"
+        }
+      ],
+      "rationale": "Finite signed Mobius response Laplace integrals and exact identification only on the proved finite reading window."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/ArithmeticPickupRHConsumer.lean",
+      "previous_sha256": "f29f5fecba33bfb019063a0f7f70deca20664d8f64c428d55e2093e723c32e00",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Zeta/ZeroFreeHalfPlaneCriteria.lean",
+          "sha256": "d1066595d1aacddec0f15263570ea4f52a24d66d5444c8f02832271877fbe0db"
+        }
+      ],
+      "rationale": "Conditional zero-free half-plane criteria from transform holomorphy, functional-equation reflection, and unproved growth/energy predicates."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/ArithmeticPickupSource.lean",
+      "previous_sha256": "041fa625e5e2bc239e3df3b471f545f7ba080093723c2f3710c08ee4bc92c8c2",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Moebius/WeightedSummatoryIntegral.lean",
+          "sha256": "041fa625e5e2bc239e3df3b471f545f7ba080093723c2f3710c08ee4bc92c8c2"
+        }
+      ],
+      "rationale": "Actual Mobius coefficients and Mertens summatory function; exact finite formula for its weighted integral and closed-prefix resets."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/ArithmeticSupplier.lean",
+      "previous_sha256": "321981a47d3e912363e1fdbd6083b4cbac71c24466ab5a52fd0758382db45b8e",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Moebius/SignedIntegralSectorBounds.lean",
+          "sha256": "6f46187c269e51719dd2104c5df7480c42ebad7bdc38bf3f2590504063de447e"
+        }
+      ],
+      "rationale": "Literal signed sector estimate for the weighted Mobius integral with compact profile correlation; consumes an open absolute growth premise."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/ArithmeticSupplierMeter.lean",
+      "previous_sha256": "c6b413895fdb2bd6d8607419ef047837992547485b255cea466b70924451e488",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Moebius/SectorEssentialSuprema.lean",
+          "sha256": "e2bdb59fc36e993c616328b9e7a32658e2bc1985d42bcfac9c64c901f165e6e2"
+        }
+      ],
+      "rationale": "Extended-real essential suprema of strict signed sectors, finite real embedding, and equivalence to the open signed integral estimate."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/Controller.lean",
+      "previous_sha256": "edfbfadbe42b0b8bbc7391331718aeeb6ce68984b0e422125d313b94098dd96e",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/DynamicalSystems/TransitionSystems/GuardedFiniteBudget.lean",
+          "sha256": "edfbfadbe42b0b8bbc7391331718aeeb6ce68984b0e422125d313b94098dd96e"
+        }
+      ],
+      "rationale": "Typed guarded state updates, invariant preservation, and absence of infinite positive-cost trajectories under one finite budget."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/CorrectionReachability.lean",
+      "previous_sha256": "97c3bedd734b37b6535da5e9dbdd453f91198cc16a62ebad66d81be9044f4bca",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/DynamicalSystems/TransitionSystems/RevisionReachability.lean",
+          "sha256": "664dfec60c069a4d20bbf34de1cd86053344b3539a8b8fdf3ef2d41ecee29a94"
+        }
+      ],
+      "rationale": "Finite exact revision requests, reachable updates, status monotonicity and append-only event accounting."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/CriticalProjection.lean",
+      "previous_sha256": "7d0a686fd76d22a20a30649a1debcd042623eea6abda044ca5a08481c860da5d",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Analysis/Complex/VerticalReflection.lean",
+          "sha256": "7d0a686fd76d22a20a30649a1debcd042623eea6abda044ca5a08481c860da5d"
+        }
+      ],
+      "rationale": "The reflection z maps to one minus conjugate z, retained horizontal coordinate, and information-losing projection counterexample."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/Dependencies.lean",
+      "previous_sha256": "e78778c5b623abadfc23a668517cb4b1652ef6365962263b8440f8a156af5dec",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Order/Closure/FiniteDependencyClosure.lean",
+          "sha256": "e78778c5b623abadfc23a668517cb4b1652ef6365962263b8440f8a156af5dec"
+        }
+      ],
+      "rationale": "Monotone finite saturation with least fixed-point and dependency-path semantics, including cycles."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/DependencyFixtures.lean",
+      "previous_sha256": "278b397a8a334b212a8b6fddcb6c04de6db4b95d5ae7adfa5d9d792b3581a8ba",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Order/Closure/FiniteDependencyExamples.lean",
+          "sha256": "3b0fe0e9203fdd65f3ae8252aec3e66159e114863a23c840ea4fdfb19a63a467"
+        }
+      ],
+      "rationale": "Finite chain/cycle examples for exact dependency closure and selective invalidation."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/Evidence.lean",
+      "previous_sha256": "9920ca52119c98e59e6fe42442e42f593975a1e29c8a5d5d5e6aaf05bfda0c97",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Logic/Certificates/ProofCoverage.lean",
+          "sha256": "9920ca52119c98e59e6fe42442e42f593975a1e29c8a5d5d5e6aaf05bfda0c97"
+        }
+      ],
+      "rationale": "Finite, conditional, universal and terminal proof objects; coverage and premise obligations are distinct from effect permissions."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/EvidenceAdmission.lean",
+      "previous_sha256": "dbc871624c3fbf38567f2805cb7764ffc11558d04c68119e86844e016ce9d256",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Logic/Certificates/BatchVerification.lean",
+          "sha256": "e1d5b69909fe3f8d1162b4bde6a9107ce21a098d1c41ef3f5c23becff4d96dbb"
+        }
+      ],
+      "rationale": "Batch verification consumes actual fresh revision certificates and resolved prerequisites, preserving current target proofs and archives."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/EvidenceAdmissionFixtures.lean",
+      "previous_sha256": "19940fb387edd32fdc430be1908d9218f705b01d37eb957ab9804ba7e11ff9bd",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Logic/Certificates/BatchVerificationExamples.lean",
+          "sha256": "e33b6840bfbe4d6abcb6e8ea6eb2a00786d39ff20b439d67afafe626682d5e07"
+        }
+      ],
+      "rationale": "Concrete certificate re-verification and counterexamples for false targets or unresolved prerequisites."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/Fixtures.lean",
+      "previous_sha256": "a83af91c37fbf41fc820ec5089fdde3330d73c8702b9fde3ca82574d4da779fb",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Logic/Certificates/ModelExamples.lean",
+          "sha256": "cd171cabf3f1943620db388004cc05ac0ca16480a2099f0af4b730a4faf32058"
+        }
+      ],
+      "rationale": "Finite proof coverage, open false premises, guarded transition models and independent geometric counterexamples; this mixed example file needs a later declaration-level split."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/Freshness.lean",
+      "previous_sha256": "f391165a32f8c8dfd099931b29ac7af684bf00c0a93052b0b90b4f53460c71b3",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Logic/Locality/RevisionCertificates.lean",
+          "sha256": "c126cca40f7ad1a35ac06b5d1502647ce3c826edda79a2a6db2310035da0f2e4"
+        }
+      ],
+      "rationale": "Finite snapshot agreement, globally local revision certificates, freshness acceptance, and stale-read rejection."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/GroundedReplayFixture.lean",
+      "previous_sha256": "655e31b71a2a4ae10f4ec813c1a2da017a181cbe8fa083d423b99c74ac1683f3",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/DynamicalSystems/TransitionSystems/AnchoredVerificationExamples.lean",
+          "sha256": "9414abad6d4ff9b4aae541d0bdcbcfd2bccc3122c7997f99eae862d195f6d156"
+        }
+      ],
+      "rationale": "Concrete grounded Bool claims pass anchored admission/reinitialization, unread changes preserve status, and read changes reopen claims without changing truth."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/Integration.lean",
+      "previous_sha256": "4b693c29a85a52a0fc1e9dce42014dded26469959e929db3c3201004a5d48b73",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/DynamicalSystems/TransitionSystems/CertifiedPartialMaps.lean",
+          "sha256": "cfc79a19043787a8caf42ed7bad1aef6bb89b0ec3ebf7f41f2e4676579c3b50e"
+        }
+      ],
+      "rationale": "Exact proof certificates link guarded controller transitions to partial-map domains and residual budgets; an interface module rather than a new subject."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/Invalidation.lean",
+      "previous_sha256": "8ef17bc04efa52daeba419965988762c4aea2ce657e1e953fc0016798a2dcba9",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Logic/Certificates/DependencyRevision.lean",
+          "sha256": "5670d4cd3b52bb4451d9c061b415a3f74b245c143a521cc32980a5d77603a599"
+        }
+      ],
+      "rationale": "Selective revision of certified claims through finite read sets and dependency closure, preserving unrelated current proofs and archives."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/KernelDerivativePrice.lean",
+      "previous_sha256": "8cb0d9dbfe9b39ddebc173f6c3471914d90eb20c92bc1819a4b84d8ea728a289",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Analysis/Inequalities/FiniteShiftedDerivativeBounds.lean",
+          "sha256": "deaf9c4af549226f4cf68d08487cf8d2d96e069de6c0c10cffa986c4a5353382"
+        }
+      ],
+      "rationale": "Explicit finite logarithmic-weight bounds for a compact correlation kernel and its first two derivatives; no signed arithmetic cancellation bound."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/Ports.lean",
+      "previous_sha256": "b3e02f39f0198c87179b1a62bc4eb43de521ee841de57e2e2ff0be429b386838",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Analysis/ErrorBounds/PartialMapComposition.lean",
+          "sha256": "b3e02f39f0198c87179b1a62bc4eb43de521ee841de57e2e2ff0be429b386838"
+        }
+      ],
+      "rationale": "Partial maps with observer discrepancies and additive error bounds; invertible transport and retained-packet reconstruction distinguish information loss."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/ReplayAdmission.lean",
+      "previous_sha256": "31b35ef7815fade39dd7e3cb2d4f3b41cb3c2e9f20e17e401ec9c04138602c05",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Logic/Certificates/AnchoredBatchVerification.lean",
+          "sha256": "a6b47a542b76495e07516ff54dd3842c02e5a870aef99ef6c9bfb3242efd96e0"
+        }
+      ],
+      "rationale": "Separate anchored certificate archive with actual fresh replay proof requirements and preserved base histories."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/ReplayCorrection.lean",
+      "previous_sha256": "e71b58a92d23f584ca9fe31b29612ff915687bce0d020b9edafbfd33def8064a",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Logic/Certificates/AnchoredDependencyRevision.lean",
+          "sha256": "6ee008922a064a90db39f16c8ab632afaf7838e185b6efbef29eaeac3b6bd9ad"
+        }
+      ],
+      "rationale": "Exact dependency revision transports surviving anchored proofs and preserves both archives and event histories."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/ReplayEvidence.lean",
+      "previous_sha256": "fcde9660f0bea48df7ae13c42a4234b70062014ac4aee2b7118cf0cb73ce6546",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Logic/Locality/AnchoredCertificates.lean",
+          "sha256": "09b173196b18317c3ecb658206324c41254a6f7023ef0e501d5a4cf511f96c5d"
+        }
+      ],
+      "rationale": "Recorded proof transport only from an anchor across finite read agreement; distinct from global locality certificates."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/ReplayRestart.lean",
+      "previous_sha256": "3b710375712b934eca254143112dfcc8de17ea9e7e863aefd42d0c26ea369607",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/DynamicalSystems/TransitionSystems/AnchoredReinitialization.lean",
+          "sha256": "d6c9a7a5ef4e89899ea42add81647b114526d718760ec3efbab728ad8eea9f64"
+        }
+      ],
+      "rationale": "Fixed-source state reinitialization from anchored current proofs, with retained histories and explicitly supplied finite allowance."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/ReplayWorkflow.lean",
+      "previous_sha256": "7c95a29b7d84a742443825e5c64a11a1bd6a782f428f4685c6de70c8d11fd84e",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/DynamicalSystems/TransitionSystems/AnchoredVerificationReachability.lean",
+          "sha256": "d1b552a2877b9398903379c08e267d6db0a83bc7f7efd13427af0bfa17dcd6b8"
+        }
+      ],
+      "rationale": "Finite actual revision/anchored admission relation derives safety and current targets, retaining history prefixes."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/Restart.lean",
+      "previous_sha256": "25911a55091b0c48024b768640eaf4e2d9ee65b2099c6a65e679cf0df8a9944a",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/DynamicalSystems/TransitionSystems/StateReinitialization.lean",
+          "sha256": "520c95a41332fa4739212b0fe0a850af0d4d117c5e573d88242060977fe5794e"
+        }
+      ],
+      "rationale": "State factory, retained revision history, supplied budget/lift origin, and safe fixed-source session updates."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/RestartBudgetBoundary.lean",
+      "previous_sha256": "68ec5b45429d43278217582497e8b1920282de0a1cfd1dab8199227191c1f601",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/DynamicalSystems/TransitionSystems/BudgetResetCounterexamples.lean",
+          "sha256": "155e4fd202fb590cbdbdf4cb26100c17e72452418be0497ba37b301f662b3e42"
+        }
+      ],
+      "rationale": "Unbounded total cost across separately supplied unit-budget reinitializations, distinguished from one immutable finite-budget trajectory."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/RestartFixtures.lean",
+      "previous_sha256": "115967ffa15a025bc27d482f04293f9c9908fd29a7b72811173618b3a3f9301b",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/DynamicalSystems/TransitionSystems/StateReinitializationExamples.lean",
+          "sha256": "3281a3b8d0a82226fa6117e9fa6999282b731a9ef7405024021032792e5597c2"
+        }
+      ],
+      "rationale": "Concrete safe state reset, lift and budget values, and rejection of stale current-source effect receipts."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/RevisionFixtures.lean",
+      "previous_sha256": "1a20a64d64da407cae7c0f811a18f7ffabf174f6780f9a1aabb7f720f6d329c8",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Logic/Certificates/DependencyRevisionExamples.lean",
+          "sha256": "40a1210cc7f106cfc35d8dc732db28da7c340658da463bf61ec7dd4edde31776"
+        }
+      ],
+      "rationale": "Concrete coordinate snapshots and finite dependency graphs show exact selective reopening and retained certificate histories."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/RevisionWorkflow.lean",
+      "previous_sha256": "45ef572ce53dc5384981aa27be8efbacab4cb3710de1487cb506bdd44dfbde8a",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/DynamicalSystems/TransitionSystems/VerificationReachability.lean",
+          "sha256": "65eada9155a5dc6bb27bdaeb9dd9cd623b24d5403442c8ec5e69de621ffc680b"
+        }
+      ],
+      "rationale": "Finite relation generated only by actual revision and checked certificate batches, with current-target and history invariants."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/RevisionWorkflowFixtures.lean",
+      "previous_sha256": "629c76cfe54df50eeea9bf439af57f9b83e0902e797ae3270d9c909bd86a5e84",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/DynamicalSystems/TransitionSystems/VerificationReachabilityExamples.lean",
+          "sha256": "2bd1bd79ef54663ab746ea24f20d2a22ef3c727f3645d3d779531fc665eb2436"
+        }
+      ],
+      "rationale": "Actual revision/admission trajectories and a forged false-verified state which is not reachable."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/SignedWork.lean",
+      "previous_sha256": "c2155e20dfcf4bbba921bde5673394af0f3e71de0366c8bcbd183578798c551d",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Analysis/Inequalities/DiscreteEnergyBalance.lean",
+          "sha256": "c2155e20dfcf4bbba921bde5673394af0f3e71de0366c8bcbd183578798c551d"
+        }
+      ],
+      "rationale": "Finite telescoping dissipative energy balance with separate supplied storage/work/jump/error data and independent bilinear readout reconstruction."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/SourceAdmission.lean",
+      "previous_sha256": "8c0ea6dd8209ce7613dd0d79816f92fcaa952c6eabb803fe8d5c131744e38574",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Chebyshev/CompactProfileExplicitFormula.lean",
+          "sha256": "554c43f9096bba277f2c73172c3f6e4dcb54a9b4da0abd79c8a6bc775854125b"
+        }
+      ],
+      "rationale": "Exact compact profile second-derivative identification transports genuine digamma-weighted integrability and the prime-power explicit-formula pairing identity."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/SourceClosedNormalization.lean",
+      "previous_sha256": "bc5dc3268262ea8e8a9fa648362dd22628acb52aa239aa4f2c7a2ba8ed1c5e72",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Analysis/Integration/CompactPolynomialMoments.lean",
+          "sha256": "3c6b04e8438292b9ac75badd78a21244d26bc10e0d3e5a9fd986114582955e77"
+        }
+      ],
+      "rationale": "Exact polynomial squared-residual integral and rational normalization, plus function equalities transporting the alternate compact-profile presentation."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/SourceDilation.lean",
+      "previous_sha256": "d6afa5dba349cf9279831182299b893ddddfe924c13e894743bf599bdd57d928",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Analysis/Distribution/CompactProfileDilation.lean",
+          "sha256": "bdda47c4b79cd1c9d78b0a770997dd1dabd2f3fa0608fa5137981609b54156e5"
+        }
+      ],
+      "rationale": "Actual weak second derivative via compact-support integration by parts, exponential moment cancellation, and conditional dilation realization."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/SourceGram.lean",
+      "previous_sha256": "521fb7895f5eea8e28eedbdadcb5b41f9d9b471be8a157d1049a15f347f7d7c0",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Analysis/InnerProductSpace/DilationGram.lean",
+          "sha256": "701395de80454619a0cc384543d42935b500a46ba1676e87e52cbb907dd479ab"
+        }
+      ],
+      "rationale": "L2-normalized dilated compact functions, integrable products, full quadratic energy expansion and positive semidefinite Gram matrix."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/SourceHigherRegularity.lean",
+      "previous_sha256": "5bd228337d2faf46604310b0932ca83949f42057722bf10286da415a24147096",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Analysis/Convolution/CompactProfileHigherDerivatives.lean",
+          "sha256": "616d623bd79563b690b557b8b4db797b946a0c43e48e5a5ac0cf87f69e4ae009"
+        }
+      ],
+      "rationale": "Compact autocorrelation has four derivatives although the base profile is only C1 globally; finite shifted kernel has two derivatives."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/SourceNativeSeparation.lean",
+      "previous_sha256": "b9a8812a02a10b7dc8810e55417584b0a8b9f4ddc9b96c2d20110042378948d5",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Analysis/InnerProductSpace/DilationResponseSeparation.lean",
+          "sha256": "191a35b79935a6c65eed972463d5d24a9a90a2caac8c75108435fad274b81452"
+        }
+      ],
+      "rationale": "A touching causal response has zero Gram diagonal while normalized positive-scale dilation has diagonal one; direct identification is impossible."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/SourceNormalization.lean",
+      "previous_sha256": "5b48888bec1a293233100ab0d23c058121fb6dfabb64faa5ad6c5d879b7019e5",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Analysis/InnerProductSpace/CompactResidualNormalization.lean",
+          "sha256": "b2e41da84e528d6e5b6f85289a4c6123995d1bad00d7cf54a8d112fbf5b38b4d"
+        }
+      ],
+      "rationale": "Strict positivity of the compact second-derivative residual norm at positive scale, unit L2 normalization and correlation at zero."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/SourceRegularity.lean",
+      "previous_sha256": "6a5c20565091e48cb9196c87a9242f84f8fd4255931bd21e422b67b8258acaae",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Analysis/Convolution/CompactProfileCorrelation.lean",
+          "sha256": "3c094738e9d200f5155bf2dfe6ffa914cae6f282e932a39400dc21412141fb9a"
+        }
+      ],
+      "rationale": "C1 compact residual, integrable autocorrelation derivatives, finite shifted correlation kernel, and compact-support bounds."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/SourceResidual.lean",
+      "previous_sha256": "c5588d5b57e8e9c5465ae1a4144187060b52702a156f1f07699fe1d05c0d151d",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Analysis/Calculus/CompactPolynomialDerivatives.lean",
+          "sha256": "4abb0074bb8a66137768bbd25d59ab896b347654f4944383f6df1e9e9d9fa8e4"
+        }
+      ],
+      "rationale": "Clipped power-four polynomial bump, its actual first/second/third derivatives, dilation residual and compact integrability."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/SourceSeamObstruction.lean",
+      "previous_sha256": "be832e4d3454d70d4635573e983b5a54ec40a531bdaccae749e8216fb3436a63",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Analysis/Calculus/CompactProfileBoundaryCounterexamples.lean",
+          "sha256": "15f107e78eddae829dbeb2d205520193155df4500a67fc4b3dbd91cee902ad07"
+        }
+      ],
+      "rationale": "Endpoint derivative mismatch obstructs global C2 for the normalized residual; no false smoothness promotion."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/SourceSignedIntegrability.lean",
+      "previous_sha256": "ebc39020fd102ba50d1a645d8da6d60be10fa18559e65df3aece283d9cfe3892",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Chebyshev/CompactProfilePairingIntegrability.lean",
+          "sha256": "797ade6a77762c2d421a3c28a9a2a6c5f3c645a343a854ed02ccbb7f3f0dc9eb"
+        }
+      ],
+      "rationale": "Actual finite Chebyshev prime-power counts, measurable error, continuous compact weight, and signed pairing integrability."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/SourceUniqueness.lean",
+      "previous_sha256": "484320775ec403d0fd300620b9cd0d6baf410e26e2cb60b8b09ee874c0bda6d1",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Analysis/Distribution/WeakSecondDerivativeUniqueness.lean",
+          "sha256": "b482804625e6fcd4079aaf85d62c445269a076429c6b41ee37b2abda6e78aabc"
+        }
+      ],
+      "rationale": "Smooth compact test functions determine locally integrable weak second derivatives almost everywhere."
+    },
+    {
+      "previous_path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/ZetaPoleRegularization.lean",
+      "previous_sha256": "7c813c2d75d8f9d96216a620ba337ca793728a1e0270620c1d19e1521a623cc1",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Zeta/PoleRegularization.lean",
+          "sha256": "7c813c2d75d8f9d96216a620ba337ca793728a1e0270620c1d19e1521a623cc1"
+        }
+      ],
+      "rationale": "Entire regularization of the zeta pole with value one at s equals one, analytic continuation identity, and right-half-plane nonvanishing criterion."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis.lean",
+      "previous_sha256": "b57400dc6817cf946c1617a28fcef53e4db0f56ceb24f455f89fb24d95d53573",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Zeta/Riemann.lean",
+          "sha256": "0a0a3808d45bfb087b397f85b08a4135cce705cc1f7ad5e51251e4e6abbbd73f"
+        }
+      ],
+      "rationale": "Subject umbrella for exact zeta-zero target, critical-line defect and zero symmetries."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/CCC.lean",
+      "previous_sha256": "4a92aac760ae148c8d20b374babf9a0e0c88908749ba4031f87c8b39b6b8f73f",
+      "operation": "retire",
+      "mathematical_paths": [],
+      "rationale": "Retire and replace its imports by migrated leaves; energy/RH criteria and AlmostMathieu are separate subjects."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/CCC/BoundaryControl.lean",
+      "previous_sha256": "a2748dbadb19f035f4bf3a70e0dd9ce3d30337ce76953bf8d227a2bad6958d88",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Analysis/LaplaceTransform/ExponentialThreshold.lean",
+          "sha256": "734530d5f777f1da2c2ad43186afb50db8752c6a0b9a4a4dc756eb0a30d90768"
+        }
+      ],
+      "rationale": "The generic continuous exponential wave demonstrates the strict damping/integrability threshold."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/CCC/DeterminantEncoding.lean",
+      "previous_sha256": "dadce48a367f2685734eebe1987f87fee6c96de698f8c2395d3d93878e6aa377",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/LinearAlgebra/Determinant/RankOneQuadraticForm.lean",
+          "sha256": "c794442a18ee20b17d7a9de85d12e1450f5856c152dd9fec159e2c41c9dec34e"
+        }
+      ],
+      "rationale": "Generic rank-one determinant encoding of a signed quadratic form, with the explicit Mobius Gram specialization retained."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/CCC/DiagonalAllowance.lean",
+      "previous_sha256": "748100ebb0ba4440335668ecb96a079d869de82bb7ac2fb7ecb09ca089469a3c",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Analysis/Inequalities/ExponentialDiagonal.lean",
+          "sha256": "748100ebb0ba4440335668ecb96a079d869de82bb7ac2fb7ecb09ca089469a3c"
+        }
+      ],
+      "rationale": "Sharp explicit diagonal expression versus its quadratic allowance; no zeta or arithmetic premise."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/CCC/EnergyContinuum.lean",
+      "previous_sha256": "84ad04506b624e9ece7cdf2aa72d5b2a485bde1195c63c72d8ec744ddb7aee63",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Moebius/EnergyAbscissa.lean",
+          "sha256": "23330ce4bd519083f9fe8e09ecb9aaf6724a614d6b4a576afef395351e27c549"
+        }
+      ],
+      "rationale": "Actual weighted square-integrability convergence set and infimum for the Mobius primitive; conditional all-rate/RH consumers retain their premises."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/CCC/EnergyIntegrability.lean",
+      "previous_sha256": "18a3aac5fcfb6844da96d34db5febc659f8c2694bd178ab187d324fbc9d6780b",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Analysis/LaplaceTransform/PolynomialEnergy.lean",
+          "sha256": "cc49938c45c940d7049afdf2aed8f5dde3393da4e9ff301d4bc7ccfaaabc0fe5"
+        }
+      ],
+      "rationale": "Generic continuous-function polynomial-energy to exponential-tilt integrability, followed by an explicit Mobius specialization."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/CCC/EnergyRHReturn.lean",
+      "previous_sha256": "62ffb37232e2b35e062f180bda8fe9f54369b98b431a2f97d0b30d539932efd0",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Zeta/Riemann/LaplaceCriterion.lean",
+          "sha256": "be129acd7f3abe84fe8d87227d256e8c3e9318c739b4fa7c04096f2c70a9f8b0"
+        }
+      ],
+      "rationale": "Holomorphic Laplace identity and regularized zeta yield conditional zero-free/RH criteria."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/CCC/EnergyReturn.lean",
+      "previous_sha256": "2116d2d7191ae28844ead58af1eb76e32a0272e6e4c92566d6d48bd36c163dac",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Zeta/Riemann/PolynomialEnergyCriterion.lean",
+          "sha256": "b4b7949d198e478ac369d8455284cd5b0505f5b97a0323d47eb5cf59da1f11b1"
+        }
+      ],
+      "rationale": "Exact Mobius transform/energy identities compose a conditional polynomial cross/energy criterion for literal RH."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/CCC/GrowthBounds.lean",
+      "previous_sha256": "edf4927bab00fdb5f3e2c1140c7764cbceacecda2d1327d89c04bb95bc401bb6",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Analysis/Asymptotics/PolynomialSubexponential.lean",
+          "sha256": "88096887fa741b898bdb12e1f563e166376a3301847098db6c9f4d10065edec2"
+        }
+      ],
+      "rationale": "SubexponentialUpper and generic polynomial-to-every-positive-exponential bounds, closure under order/addition/scaling."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/CCC/LaplaceAnalytic.lean",
+      "previous_sha256": "9b36cbd99be50262b982974d665a0b226495665a5e509f7355ce66a2e08e2f10",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Analysis/LaplaceTransform/Analytic.lean",
+          "sha256": "9b36cbd99be50262b982974d665a0b226495665a5e509f7355ce66a2e08e2f10"
+        }
+      ],
+      "rationale": "Generic measure-space Laplace transform analyticity through Mathlib MGFAnalytic."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/CCC/OriginalPickupIdentification.lean",
+      "previous_sha256": "012606b87a18604fcaea5baf5dba4f88f9c5313742f1b4f32beb03d8c23e3176",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Moebius/PrimitiveIdentification.lean",
+          "sha256": "2a1f78198afd3a0a23e1865be081f09e2582689e58462d736bfe626128e6f308"
+        }
+      ],
+      "rationale": "Identifies two actual Mobius/Mertens primitive definitions, full signed Gram/energy and complete comparison residual without supplying growth bounds."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/CCC/PickupBudgets.lean",
+      "previous_sha256": "a0735d6120754b4921c55346a5fb0203cb3586bd6f312289f83b0a76218cffbb",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Moebius/MertensPrimitive.lean",
+          "sha256": "a0735d6120754b4921c55346a5fb0203cb3586bd6f312289f83b0a76218cffbb"
+        }
+      ],
+      "rationale": "Defines Mobius coefficients, closed Mertens prefix, logarithmic-time primitive, response Gram and exact growth predicates."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/CCC/PickupCutoffLaplace.lean",
+      "previous_sha256": "057a59e0d7c186eb83ffd5609085d70dcc597c820fbd9fc7ac3f5b7021d8aa9b",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Moebius/FiniteLaplaceTransform.lean",
+          "sha256": "590ede9829dd77b11263d72babd0e42b0504e291397b4d98cf81ad5f0199c678"
+        }
+      ],
+      "rationale": "Closed-inventory Laplace transform retains weighted and Mertens endpoint sums and nonzero denominator hypotheses."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/CCC/PickupDiagonalBound.lean",
+      "previous_sha256": "e4b835ea2904d9494dd2b5252f1297ac76a924b153b94b99865471bd619155e8",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Moebius/GramDiagonalBound.lean",
+          "sha256": "72172eb41fbc701bb53d3fe3d31f6a9d2cf5117c18769f85d5ed2e2986cb2b73"
+        }
+      ],
+      "rationale": "Integral/sum comparison proves the actual response-Gram diagonal allowance with nonsingular lower cutoff."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/CCC/PickupFiniteIdentity.lean",
+      "previous_sha256": "4b4be0a5e4e2614ff81d192620170b5b47941e10e74f1965b5bbd0914ec24a51",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Moebius/FiniteResponseSum.lean",
+          "sha256": "9358b6a2bbd51c10140c6fb595383355c54b072154965a06eb4651c3bc2c8bb8"
+        }
+      ],
+      "rationale": "Closed-prefix integral equals finite Mobius-weighted response sum and full Gram/diagonal/cross energy identity."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/CCC/PickupInitialTransform.lean",
+      "previous_sha256": "52717097ba1ac20ef02efa7d744c413458026d9c3de8d35bb6bd9de833c14f38",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Moebius/DirichletLaplaceIdentity.lean",
+          "sha256": "062ba923dbe090e8f1271ce4ffaf90332eaf5e20dc925f9d4b824dea48407cce"
+        }
+      ],
+      "rationale": "Dirichlet inversion and triangular Fubini establish the actual initial Mobius Laplace source identity."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/CCC/PickupLaplaceDefinition.lean",
+      "previous_sha256": "900d196c65816d9217c05246e6fd5a847d5fe975baa1adb869907e394a9e6514",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Moebius/LaplaceTransform.lean",
+          "sha256": "308954ccc5537fc6dc46377c72a3f18c118c87bafb72b01746ab5368b156dd05"
+        }
+      ],
+      "rationale": "Definition of the specific Mobius primitive transform and its positive-real-part domain; no analytic conclusion asserted."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/CCC/PickupRegularity.lean",
+      "previous_sha256": "663fd9e9d6fd6af327eeac76166ea40c9dc07c029b5822468533d80db8b4f9be",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Moebius/PrimitiveRegularity.lean",
+          "sha256": "6cb747756c582d9f4f5872e164b091672f044bbbb0bb1478d6c47c31b565c720"
+        }
+      ],
+      "rationale": "Mertens measurability/bounds, primitive absolute continuity and a.e. derivative, and nonnegative/monotone energy."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/CCC/PrimeBlocks.lean",
+      "previous_sha256": "f827bb9786eb67236ea86ed9d9b46772063705f88719c9c9ffda33353489e857",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Moebius/PrimeBlockEnergy.lean",
+          "sha256": "e327d18d9572d5225c997f485efacb69b59e190ebe0a0cce94087c8b4641b952"
+        }
+      ],
+      "rationale": "Actual delayed prime-block echo and energy after a causal block; signed terms and horizon retained."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/CCC/PrimeCascade.lean",
+      "previous_sha256": "23995d93841e2ad1babd73a476dced219992c9a675396780ab6f675b56d458ce",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Moebius/PrimeFactorFilters.lean",
+          "sha256": "ec4760134d86f29c697f6f8556209c1c0a735716177c36b1aee6e1d06085ca6e"
+        }
+      ],
+      "rationale": "Causal prime filters and squarefree products give exact Mobius-response inclusion/exclusion expansion."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/CCC/PrimeCorrelationObstruction.lean",
+      "previous_sha256": "9e178242fca24e2c679b38451d6ee4f8f2788832b89b476fea63245eed670c04",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Moebius/NegativePrimeCorrelation.lean",
+          "sha256": "020042e6753763a9894a6ef63256f9583f72dbc5d114a9fa45c495f7650e716d"
+        }
+      ],
+      "rationale": "Concrete prime-prefix eleven creates a negative correlation; does not assert a generic logical or RH counterexample."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/CCC/PrimeEnergy.lean",
+      "previous_sha256": "b90708dab380d32ea80113abe91b199614950ec705624adee64c2f4614518c28",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Moebius/PrimeFilterEnergy.lean",
+          "sha256": "21bac8528e4afa692c6d623473229f3c55b28654e4da4b708b52151e9afc139c"
+        }
+      ],
+      "rationale": "Causal shift energy and signed clipped correlation recurrence for the actual prime-filter expansion."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/CCC/PrimeMass.lean",
+      "previous_sha256": "f9c95be6dd39911e5acba786ca84baf89c51a9611632477673c44e20ead58cf8",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Prime/ReciprocalMass.lean",
+          "sha256": "b943050f8ff274dd63740ada669ac79027218c5e248809e491c2bb2590ea62bc"
+        }
+      ],
+      "rationale": "Abel summation and Chebyshev give an unconditional logarithmic reciprocal-prime mass bound."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/CCC/PrimePrefix.lean",
+      "previous_sha256": "3ecdb9c81538c1d3db038677604e73ca9e57955441e017e1daec826a125cb0e7",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Moebius/PrimePrefixGrowth.lean",
+          "sha256": "c5ebc36cce14a45fdba746140d687bda39cd6bf5f892091e7c2faaa3d951177e"
+        }
+      ],
+      "rationale": "Increasing prime-prefix suppliers and their conditional primitive-energy/RH consumers; no supplier witness."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/CCC/PrimeReverberation.lean",
+      "previous_sha256": "0f693d7ec606cfa4b107c9bc61913d3787921e8690da6918815911bc3b03beb6",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Moebius/PrimeFilterGrowth.lean",
+          "sha256": "6eba6686d407d00d3d9786d6fe83116037bfb564c78747a8230de9f98b618803"
+        }
+      ],
+      "rationale": "Compensated prime/block energy induction reduces explicit open filter bounds to polynomial/RH criteria."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/CCC/PrimeWindowLaplace.lean",
+      "previous_sha256": "1758e02811afe2c78374c03a3e09d8f598bed1a176af3b0fb4d710f9c13c2fba",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Moebius/PrimeFilterLaplace.lean",
+          "sha256": "be96c983badedf9c3bde3787a273165be81163efc130b52d451ae2b51addea1b"
+        }
+      ],
+      "rationale": "Finite-window causal filtering keeps signed boundary tails and exact prime Laplace weights."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/CCC/RecordingScale.lean",
+      "previous_sha256": "aa7444c5b2894baa4bc23bb65a83e6e6dee79ee72e738f3388e0aedc7953797a",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Moebius/DyadicEnergy.lean",
+          "sha256": "09b78e1f6656d83868433ee9fcc3b15970817fa3cc3cb78381cb02ec6a240eb6"
+        }
+      ],
+      "rationale": "Horizon-matched prime blocks, signed dyadic innovation and conditional polynomial-energy scale induction."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/CCC/RegularizedZeta.lean",
+      "previous_sha256": "084fe442c91faee379c83ad8a7a6af1f4500bd5eb66bbc5f999b160106627af7",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Zeta/Riemann/Regularized.lean",
+          "sha256": "084fe442c91faee379c83ad8a7a6af1f4500bd5eb66bbc5f999b160106627af7"
+        }
+      ],
+      "rationale": "Entire regularization of the zeta product and its exact nonsingular equality."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/CCC/ResidualBudgets.lean",
+      "previous_sha256": "f04a98b3263f8feb83ff0af003f8d9e9d077ae0e03a8e976a9a0621a59d8101f",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Moebius/ComparisonEnergy.lean",
+          "sha256": "0850bfd508693468bbeb7aef7df1d57aae58e42053ea436169eb18d4020a203d"
+        }
+      ],
+      "rationale": "Complete comparison residual and both all-positive-rate energy budgets imply the Mobius energy criterion; no unpaid residual discarded."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/CCC/SampledBudgets.lean",
+      "previous_sha256": "bd04cb30f62cba9981e9a5ba98039a0165bd2482becf27f3f8b4b5b533205de7",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Moebius/IntegerSampleGrowth.lean",
+          "sha256": "42864197db6df82ea13df156e9590ed77e5c2099619e4532a6918d5cef9a23de"
+        }
+      ],
+      "rationale": "All-natural integer sample budgets transport to real time using monotone energy and signed diagonal correction."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/CCC/SignedPickupAnalytic.lean",
+      "previous_sha256": "04f4c00bae21d3fde810919c80030f2be5a2bdac9836dec0c5ea0ed5ab9b81c6",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Moebius/LaplaceHolomorphy.lean",
+          "sha256": "c65e5184b9e4354aaa2ddd27a7d61afe5fa69ad8b833436e9269b00eac2bf807"
+        }
+      ],
+      "rationale": "Exact positive/negative measure decomposition of the signed primitive, analytic under explicit integrability/energy premises."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/CCC/UnsignedAllowance.lean",
+      "previous_sha256": "4bf9d68b5e3ef3e405711aa248e6cdc7e45720fc5120211b85d7ad1d36e7b21d",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Moebius/UnsignedEnergyBound.lean",
+          "sha256": "4900917f41e019d2348d3d0b26321e36cf077e86adb409e9c546840a39d43481"
+        }
+      ],
+      "rationale": "Finite Cauchy-Schwarz supplies an exponential allowance for the actual signed primitive; no polynomial cancellation."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/Conversation/BranchCorrelationHigher.lean",
+      "previous_sha256": "64491336625ea2f0b6f3ea0c2a94045707c61a952b063bd8a029c8e85db0e62f",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Analysis/Convolution/PolynomialBumpHigherDerivatives.lean",
+          "sha256": "a7dee347df5fb179c42be0b721712f1d5b23752dba21861f53a370b3300418cf"
+        }
+      ],
+      "rationale": "Higher derivatives and Cauchy-Schwarz energy bounds of literal compact polynomial-bump correlation, with seams handled a.e."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/Conversation/BranchEvenSmoothTest.lean",
+      "previous_sha256": "d2c69d85ab66918ea4e19747b966b0762221932bcef3362af0481be2360b5895",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Analysis/TestFunctions/EvenSeparation.lean",
+          "sha256": "f585726322b9a27cf7757567345ee903f9c792c0b470494cb056a3ad926005f9"
+        }
+      ],
+      "rationale": "Reflection symmetrization preserves interior compact support and proves separation for an even continuous residual."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/Conversation/BranchFrequencyExistence.lean",
+      "previous_sha256": "d99990a77db939231e31207f38f1d34204aa597f057ec1ac3c0b26ba47b13358",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/ContinuedFractions/FrequencyRealization.lean",
+          "sha256": "fe53414320a78931bf2add8a168544df853ce7bd10b82b2cf257082ceb77e4be"
+        }
+      ],
+      "rationale": "Compact complete-quotient construction realizes positive partial quotients by a unique irrational frequency and reads back denominator exponents."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/Conversation/BranchPoleAdmissibleTest.lean",
+      "previous_sha256": "e3fca3473a294d6f6f55ed24da5a0930b2f8a826e681a0c03f308faddaa63d83",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Analysis/TestFunctions/ExponentialMomentVariation.lean",
+          "sha256": "aab9afbee65b9b9111037f960771da2d571a585d735c4d86db4176a2034d8279"
+        }
+      ],
+      "rationale": "Second-derivative-minus-quarter variation has both zero exponential moments; an even homogeneous residual distinguishes it from arbitrary tests."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/Conversation/BranchSecondDerivativeEnergy.lean",
+      "previous_sha256": "82b6197cb1e9dfc509c2cbb1a8678d8180149b5c5a37f12ebc840f0458cb3168",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Analysis/TestFunctions/PolynomialBumpSecondEnergy.lean",
+          "sha256": "d4e956319671eb45319648ec4df2d778a1c596e2e5655638ae73550924b10412"
+        }
+      ],
+      "rationale": "Explicit compact polynomial-bump second derivative representative, square integrability and exact energy constants."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/Conversation/BranchSequenceRealization.lean",
+      "previous_sha256": "3f18269367c2ef839a97591d1d5d36198c6c4c6faff132120f45659c19e94a03",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/ContinuedFractions/ScheduledDenominators.lean",
+          "sha256": "3f18269367c2ef839a97591d1d5d36198c6c4c6faff132120f45659c19e94a03"
+        }
+      ],
+      "rationale": "Most declarations construct native continuants, coprime denominators, spiked partial quotients and arithmetic exponents; generic fair batch clock is retained pending a separate subject extraction."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/Conversation/BranchSequenceReturn.lean",
+      "previous_sha256": "de1982e400c9a3e25f6bf280e017ba571b74d7666f677c52637cb88cbd7145ea",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/DynamicalSystems/Sequences/ApproximationReturn.lean",
+          "sha256": "e25fc82df14cab31a7b719dd2bb02fbd34f37f9e2c4e5978f02d0f562c2a3105"
+        }
+      ],
+      "rationale": "Abstract arithmetic-route and frequency-approximation certificates transport polynomial growth with explicit correction/finite-volume losses."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/Conversation/BranchSmoothTestSeparation.lean",
+      "previous_sha256": "8479d379d257b8bbbe606ad9627a0883a039a61acce7a0c114f5dea7a975a38f",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Analysis/TestFunctions/Separation.lean",
+          "sha256": "8479d379d257b8bbbe606ad9627a0883a039a61acce7a0c114f5dea7a975a38f"
+        }
+      ],
+      "rationale": "Smooth compact interior tests separate a continuous nonzero residual; point-spike example exposes need for continuity."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/Conversation/Sequences.lean",
+      "previous_sha256": "f89413a03a41224afa2843d7afd43e69c2875effe689a56c4e7850ae8bc98541",
+      "operation": "retire",
+      "mathematical_paths": [],
+      "rationale": "Retire and root-import the continued-fraction and generic sequence leaves; avoid campaign bundle under a new directory."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/Defect.lean",
+      "previous_sha256": "94bfc9f62d99bfec9dcf4b41975cb08feeb7302387f9f7fcdb9dcedb7aa32ba7",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Zeta/Riemann/CriticalLineDefect.lean",
+          "sha256": "d915e1e7d7555eb6efa7ee72786a7ad044dc9e7c4b4e178153d356088472efc8"
+        }
+      ],
+      "rationale": "Squared critical-line defect, nonnegativity and equivalence of vanishing-on-nontrivial-zero predicate with RH."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/Definitions.lean",
+      "previous_sha256": "107f357b8c04afc16e25b8fded6922782d2756959b42f080af839f4db58e9aa0",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroDefinitions.lean",
+          "sha256": "107f357b8c04afc16e25b8fded6922782d2756959b42f080af839f4db58e9aa0"
+        }
+      ],
+      "rationale": "Exact nontrivial zero predicate, conjugation/reflection maps and critical-line norm-square defect."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/InferenceGuards.lean",
+      "previous_sha256": "e2c30ae63d9f5ae257c3866bfd9b9a4aa686cb69ed70067c5f9069bffa94ef77",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Logic/Counterexamples/ComplexSymmetryAndPositivity.lean",
+          "sha256": "8978e35b19445d99221652bfa2164b10d4099bb23e825035a4044b98ed0cbbab"
+        }
+      ],
+      "rationale": "Specific invalid inference schemas: symmetry is not order-four rotation, and Hermitian need not be positive semidefinite; literal excluded zeta points retained."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/TargetComparator.lean",
+      "previous_sha256": "73d6f49323b54bd75baabd0dfcac668ef397c9f6a59c54dfb3b1179cc21614d2",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Zeta/Riemann/DefectCriterion.lean",
+          "sha256": "c387ba899e159bde5274009c792630553f1de8f52e83031a3f7123daf4b3766f"
+        }
+      ],
+      "rationale": "Composes independent exact RH statement with the checked defect-zero equivalence, without proving either side."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/TargetStatement.lean",
+      "previous_sha256": "26de9b9d99b5e04103c8095c3b466ce301fab1d52dd40155703a160aac44f1f6",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Zeta/Riemann/Hypothesis.lean",
+          "sha256": "26de9b9d99b5e04103c8095c3b466ce301fab1d52dd40155703a160aac44f1f6"
+        }
+      ],
+      "rationale": "Pins the literal Mathlib RH proposition and proves definitional equality only."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/ZeroSymmetry.lean",
+      "previous_sha256": "d11ab9b34e31569a7d1441fb53bdb0abfce041c80e79cca4ebee46509be910bc",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroSymmetry.lean",
+          "sha256": "6f3b74c08ed6538482ce19e90de96784b65a0d54209f65987a4e7ad45f5150ec"
+        }
+      ],
+      "rationale": "Conjugation/reflection involutions, functional-equation zero transport and critical-strip membership retain exact zero exclusions."
+    },
+    {
+      "previous_path": "GRWTSK/SpectralUnificationOfComputabilityAndAlgebraicSymmetry/AdmissionSource.lean",
+      "previous_sha256": "f83b926ab863dfda32be5e058f1ffd2599135217c90e6335810d3ba75bec6fba",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Analysis/SpecialFunctions/DigammaFourierBound.lean",
+          "sha256": "ee1a6a655ef921b9e20f6eff0518f0d115c35eb8369c61811aaca52350ad547e"
+        }
+      ],
+      "rationale": "Actual digamma reciprocal difference series and sum-integral bounds discharge the analytic multiplier/logarithmic admission predicates."
+    },
+    {
+      "previous_path": "GRWTSK/SpectralUnificationOfComputabilityAndAlgebraicSymmetry/BridgeAdmissibility.lean",
+      "previous_sha256": "b47718bc8d77151d8563b534b6829fe48460c084bad19fe7405cabb4676d8802",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Analysis/Fourier/LogarithmicDomain.lean",
+          "sha256": "87c881d275b4d18fb6f8ca23ccc64dd859764e3fb1b6f17ebcde6e0de273e65c"
+        }
+      ],
+      "rationale": "Genuine MemLp and logarithmically weighted Fourier integrability, pole contribution and exact arithmetic-form specialization; no zero-side bridge assumed."
+    },
+    {
+      "previous_path": "GRWTSK/SpectralUnificationOfComputabilityAndAlgebraicSymmetry/BridgeFourier.lean",
+      "previous_sha256": "151a5f79f1ea1291ab12700a9c5fab9f48f8923bc6ed6ae8f568f07f2804cea6",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Analysis/Fourier/PolynomialBumpEstimates.lean",
+          "sha256": "90cf3b3c0c04c9624fa273349607c9511815630c75cc5431451caa4533f6233d"
+        }
+      ],
+      "rationale": "Derivative Fourier identity, frequency decay, continuity and unweighted/logarithmic energy integrability for compact polynomial-bump tests."
+    },
+    {
+      "previous_path": "GRWTSK/SpectralUnificationOfComputabilityAndAlgebraicSymmetry/BridgeMultiplier.lean",
+      "previous_sha256": "7c63e3d1525417d7dda86a6ce4c5b32f7c04b926bbcd3f0b2f373f82df71c085",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Analysis/Fourier/DigammaMultiplier.lean",
+          "sha256": "36fe566a76070ce0f61315e71b9744374d87c0ff6cceb943294a73f3dc14b65a"
+        }
+      ],
+      "rationale": "Measurable actual digamma multiplier and conditional weighted-integrability reduction from its explicit two-sided estimate."
+    },
+    {
+      "previous_path": "GRWTSK/SpectralUnificationOfComputabilityAndAlgebraicSymmetry/BridgeNormalization.lean",
+      "previous_sha256": "13fe1cc52af4c582a33909809a3aaebf657d28292ab5a246247d7dcc02150430",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Analysis/TestFunctions/PolynomialBumpNormalization.lean",
+          "sha256": "8938ea1f677a595343229a06c00978d6380875e4faaf5118859eede54cf239f7"
+        }
+      ],
+      "rationale": "Exact square and pairing integrals and dilation normalization for the concrete compact second-derivative polynomial test."
+    },
+    {
+      "previous_path": "GRWTSK/SpectralUnificationOfComputabilityAndAlgebraicSymmetry/CorrelationAssembly.lean",
+      "previous_sha256": "14f7497d7046d404b468272b8fde8f51cdbd0142ed4686b1f54b0ad281cd04f7",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/ExplicitFormula/CorrelationPairing.lean",
+          "sha256": "1b58187402ac027a0c6f48f3a70b48af3eede19f6e39870368b25bc46d09887b"
+        }
+      ],
+      "rationale": "Assembles actual finite prime-power correlation pairing and defines the still-open uniform lower-bound and RH bridge implications."
+    },
+    {
+      "previous_path": "GRWTSK/SpectralUnificationOfComputabilityAndAlgebraicSymmetry/CorrelationMoment.lean",
+      "previous_sha256": "45c673e3992e233e466849f7fe3bd561658acb024ad9149e1e0a0593b4821efe",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Analysis/Convolution/ExponentialMoments.lean",
+          "sha256": "a1f229a1860ed76fcc9a5ea19e75a30492e1b7aa4bea333c376b297599e991f0"
+        }
+      ],
+      "rationale": "Actual weighted correlation/convolution integrals and zero exponential pole moments, with integrability proved."
+    },
+    {
+      "previous_path": "GRWTSK/SpectralUnificationOfComputabilityAndAlgebraicSymmetry/CorrelationRegularity.lean",
+      "previous_sha256": "a3a4c8d874241019d2ba07b2c871e0e22af496b413b679a1bcea8a73b3f63ecd",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Analysis/Convolution/PolynomialBumpRegularity.lean",
+          "sha256": "3696fbcf598d011426fedcbd8f0b3e9ee568412165191e1d5c76b202a83e159f"
+        }
+      ],
+      "rationale": "Concrete endpoint-matched C1 test and correlation have compact support, integrability, evenness and seam regularity."
+    },
+    {
+      "previous_path": "GRWTSK/SpectralUnificationOfComputabilityAndAlgebraicSymmetry/PrimePowerDescent.lean",
+      "previous_sha256": "f6dd9c34f754e88bf3918200e94868a10e158885b65e470477b1f9fbe097164f",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Chebyshev/FiniteIntegrationByParts.lean",
+          "sha256": "d901cf9da7a01829f620c3b59b8dc89cea5b46d1113b919b14d618b9bb9fe3ef"
+        }
+      ],
+      "rationale": "Exact closed Chebyshev prime-power step sum and finite integration by parts retain both boundaries and prime-two correction."
+    },
+    {
+      "previous_path": "GRWTSK/SpectralUnificationOfComputabilityAndAlgebraicSymmetry/Realization.lean",
+      "previous_sha256": "bf0ade9ec3312a092d926c179a119f06debce46ebbb1bbb5d1c09917856ccf77",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Analysis/WeakDerivatives/PolynomialBump.lean",
+          "sha256": "1a9ff14af84efd81826a2b3c632cc2f617d2efc0fe4f10374800a5b54df30144"
+        }
+      ],
+      "rationale": "Concrete zero-extended dilation polynomial bump has its explicit weak second derivative by compact-interval integration by parts."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/GevreyDerivativeEnergy.lean",
+      "previous_sha256": "e2df25d9b69420c6cd779b4312364668c557e2eb47371bc5a97c12cf29781b47",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Analysis/Calculus/CompactProfileDerivativeEnergy.lean",
+          "sha256": "dc105862ecda0a65b5df3feef43539ce48e8ad5e2e288869be74df8345c5faa4"
+        }
+      ],
+      "rationale": "Exact derivative L\u00b2 energy for a normalized C\u00b3 compact profile, retaining inverse-scale factors and the positive integration-by-parts mixed contribution."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/GevreyNormalization.lean",
+      "previous_sha256": "b024f12dbecc29bda7bec0df6de95e492002a7a9b3012a42fb5d5199714197e0",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Analysis/Calculus/CompactProfileNormalization.lean",
+          "sha256": "469dd45166d579a93c55fda6ae66a2f3f0bdad54d9761e59ab66fc9cfdd95564"
+        }
+      ],
+      "rationale": "General C\u00b2 compact-profile dilation, integration by parts and normalized differential-operator square integrals; the concrete smooth profile is a specialization."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/GevreyPolynomial.lean",
+      "previous_sha256": "f3535dde9cbe336a9bb7e435fd9e7acd8d67c5d51e9aa28f60cba85ea9fa992f",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Analysis/Calculus/PolynomialBumpNormalization.lean",
+          "sha256": "c9327e4d91a040e78f9e1292f48e54f8d6f33ad0676d0b6ab1977199b1b65dc3"
+        }
+      ],
+      "rationale": "Ordinary derivative and normalization identities for the zero-extended power-four polynomial bump, including exact rational square energies."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/GevreyProfile.lean",
+      "previous_sha256": "d8edd04841c7bab3c52e385bb74f5c23b6596e6e8f9453b59a24bb8e7421d48f",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Analysis/SpecialFunctions/SquaredInverseBump.lean",
+          "sha256": "d8edd04841c7bab3c52e385bb74f5c23b6596e6e8f9453b59a24bb8e7421d48f"
+        }
+      ],
+      "rationale": "Smoothness, exact support and nontriviality of the zero extension of exp(-(1-y\u00b2)^(-2)); no quantitative Gevrey estimate is proved."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/SourceCorrelationCurvature.lean",
+      "previous_sha256": "3741ebbd2d147f417ed7507a94b057e69fa2fd937974d807119a93e0b02311dc",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Analysis/Convolution/AutocorrelationSecondDerivative.lean",
+          "sha256": "decf56fc025da8133170d768dcc2c467508ee715050fc6e7633a42a1ed7060d3"
+        }
+      ],
+      "rationale": "Autocorrelation curvature equals negative first-derivative autocorrelation, with C\u00b2 correlation regularity, energy bounds and a Taylor remainder."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/SourceCorrelationEnergy.lean",
+      "previous_sha256": "6749aa358d2c02b2413b66c1315f12187923330fd0cf9c9e094cbdc53e16043c",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Analysis/Convolution/AutocorrelationDerivativeEnergy.lean",
+          "sha256": "8a8d4a85d38b81db1bd37a0ae0698780791082f979d125d20ab3d928c7e7bb8e"
+        }
+      ],
+      "rationale": "Differentiate a compact C\u00b9 autocorrelation under the integral and bound its first derivative by the derivative energy using unit normalization and Cauchy\u2013Schwarz."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/SourceDerivativeCoefficientBound.lean",
+      "previous_sha256": "891c2f23592e3e788608498e78ac7f41f7363e755fcbc7bf5a8b25a99c3817d4",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Analysis/Inequalities/PolynomialEnergyRatio.lean",
+          "sha256": "891c2f23592e3e788608498e78ac7f41f7363e755fcbc7bf5a8b25a99c3817d4"
+        }
+      ],
+      "rationale": "Finite real polynomial positivity, coefficient-gap and ratio inequalities; no derivative-norm/source analytic identification is established in this file."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/SourceDerivativeEnergy.lean",
+      "previous_sha256": "2a9a1cbcc753b31ab40c82d33d1895c84c426cc354af0ae4bc7668c27578c10e",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Analysis/Calculus/PolynomialBumpDerivativeEnergy.lean",
+          "sha256": "9a4adaa8061a277138bdd1c3e9897b4348ab6517a0361a18a6f5654de438309d"
+        }
+      ],
+      "rationale": "C\u00b3 regularity and third-derivative energy of the unchanged polynomial bump, transported to its actual normalized differential operator and bounded by exact coefficients."
+    },
+    {
+      "previous_path": "GRWTSK/RiemannHypothesis/SourcePairing.lean",
+      "previous_sha256": "4b63c1c17b4eae33af8a8289f4f88a3dfc4f57113152a296076be942976a2722",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/NumberTheory/Chebyshev/CorrelationPairing.lean",
+          "sha256": "fe9453df597dc7a0230f3fedde3f2c3a8b616cac003f70feb65986b64e80bac3"
+        }
+      ],
+      "rationale": "Defines the von-Mangoldt prime-power Chebyshev error and its exact signed pairing with a normalized-profile correlation derivative; carries the associated Fourier/digamma scalar and realization interface. This mixed interface should later split generic weak-derivative/profile/Fourier definitions from arithmetic-specific Chebyshev terms."
+    },
+    {
+      "previous_path": "GRWTSK/MathematicalTooling/Reflection/Interval.lean",
+      "previous_sha256": "55325de763afe3f5c95efab07f1a452a77597cf9621fe124555b03a9ffbfffa3",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Analysis/IntervalIntegral/Reflection.lean",
+          "sha256": "55325de763afe3f5c95efab07f1a452a77597cf9621fe124555b03a9ffbfffa3"
+        }
+      ],
+      "rationale": "Mathematical object placement; all existing declarations and proofs retained."
+    },
+    {
+      "previous_path": "GRWTSK/Combinatorics/GraphTheory/HadwigerNelson/Moser.lean",
+      "previous_sha256": "1791f62713a936d9d91f262273871cf5d28257e390f15d05454a5f2115ce8796",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Combinatorics/GraphTheory/UnitDistanceGraph/Moser.lean",
+          "sha256": "82dcabcd95c42921d1a49246db779259c5ef8a43c822db8109634cdffcfd7c6f"
+        }
+      ],
+      "rationale": "Mathematical object placement; all existing declarations and proofs retained."
+    },
+    {
+      "previous_path": "GRWTSK/Combinatorics/GraphTheory/HadwigerNelson/MoserCoordinates.lean",
+      "previous_sha256": "0e29b36d41b117eb4c747ddaf02bf22a2b87e8a59b0665a424d1a1277a38c8ec",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Combinatorics/GraphTheory/UnitDistanceGraph/MoserCoordinates.lean",
+          "sha256": "2b72eba295d456ef22b0a828e5257f219bf7f297cf570c377bd11448da51a8a2"
+        }
+      ],
+      "rationale": "Mathematical object placement; all existing declarations and proofs retained."
+    },
+    {
+      "previous_path": "GRWTSK/Combinatorics/GraphTheory/HadwigerNelson/MoserSource.lean",
+      "previous_sha256": "f41ba35bc8fa8d35b8249b1a86c3aa55b8f7ef22662270de862699e72efe93d2",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Combinatorics/GraphTheory/UnitDistanceGraph/MoserSource.lean",
+          "sha256": "f41ba35bc8fa8d35b8249b1a86c3aa55b8f7ef22662270de862699e72efe93d2"
+        }
+      ],
+      "rationale": "Mathematical object placement; all existing declarations and proofs retained."
+    },
+    {
+      "previous_path": "GRWTSK/Analysis/Waveform/Basic.lean",
+      "previous_sha256": "2a6904bc75bfb526888ef565ff20d5f7c1c22727964fd3f88d120ee066a6c209",
+      "operation": "split",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Data/Sampling/Descriptions.lean",
+          "sha256": "5130490d5c5394b39e1873e1c49825a64df7efe767e7bcc5e43299dbb28a4b39"
+        },
+        {
+          "path": "GRWTSK/Analysis/Fourier/IntegerSeries.lean",
+          "sha256": "46462643902012c58fa6514c99721701b65655f16fd88a0e82fc1181c94bbe88"
+        },
+        {
+          "path": "GRWTSK/Logic/FiniteSequences/PrefixCoverage.lean",
+          "sha256": "77ed7277b4519ff8fb955e215664ac6d0c22a78e95e38e9ee16d18e6b226a5b3"
+        },
+        {
+          "path": "GRWTSK/LinearAlgebra/Schrodinger/SampledPotential.lean",
+          "sha256": "dd30ef9e49516fbd3c87d80a743b8ca52cf49fbd4dc6914f954b59ec6753482b"
+        },
+        {
+          "path": "GRWTSK/Algebra/BigOperators/OrderedSquare.lean",
+          "sha256": "90887152044ad24b0a96371b5aee78430e2d67f2abcc899529c43f6946d8e1d4"
+        },
+        {
+          "path": "GRWTSK/Analysis/Fourier/Parseval.lean",
+          "sha256": "f212399e5b28f079a24197c08c3bded9611f04bb08d6dcbd2685046e16db6681"
+        },
+        {
+          "path": "GRWTSK/Analysis/Asymptotics/PolynomialErrorBound.lean",
+          "sha256": "038e3cf31cc90eec7019c91be55ff2cdc4c00aaf82a3791be5d05e4dfae12996"
+        },
+        {
+          "path": "GRWTSK/Algebra/BigOperators/QuadraticCounterexample.lean",
+          "sha256": "beba4fef99150fd9d1d9a905b33bba2a4cc20982be1eb08d62705cae37489d25"
+        }
+      ],
+      "rationale": "Exact contiguous declaration blocks distributed by mathematical object; original namespace retained for consumers."
+    },
+    {
+      "previous_path": "GRWTSK/Analysis/Waveform/Interfaces.lean",
+      "previous_sha256": "94498fd9fbb57cb003a4ef7a9dd6cc3853f14bcc0fc2812a2a8db2a0359af0d7",
+      "operation": "split",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/LinearAlgebra/Schrodinger/Sampling.lean",
+          "sha256": "c1a7b19b713a44f91ead260637396de3b673835eb5d4b8033702cc7068ebe757"
+        },
+        {
+          "path": "GRWTSK/Analysis/NormedSpace/QuadraticError.lean",
+          "sha256": "663c865cdbe9802281cbb4be82f3c15612330e44c86acd44db9b14dd46d1c7d6"
+        },
+        {
+          "path": "GRWTSK/Analysis/Fourier/WindowCertificates.lean",
+          "sha256": "c616f557739add2b41d0691111f835ce0f181daf4ba383ba84ded3f3e25a216b"
+        },
+        {
+          "path": "GRWTSK/Analysis/Asymptotics/PolynomialClosure.lean",
+          "sha256": "4cfa71d72517861314331df767a387bff171043475cf51177e8d7bb61b6b5bae"
+        }
+      ],
+      "rationale": "Exact contiguous declaration blocks distributed by mathematical object; original namespace retained for consumers."
+    },
+    {
+      "previous_path": "GRWTSK/Analysis/Waveform/Scheduling.lean",
+      "previous_sha256": "851cb36b5b9db3a4e2695e4c4164dbca4af83dcc913caebd41160fd4db8f882f",
+      "operation": "move",
+      "mathematical_paths": [
+        {
+          "path": "GRWTSK/Combinatorics/Sequences/QuotaDiscrepancy.lean",
+          "sha256": "851cb36b5b9db3a4e2695e4c4164dbca4af83dcc913caebd41160fd4db8f882f"
+        }
+      ],
+      "rationale": "Integer quota discrepancy and prefix coverage of sequences."
+    }
+  ],
+  "declaration_compatibility": "Existing declaration namespaces and statements retained in canonical subject modules; legacy module imports are intentionally removed, without forbidden-directory shims.",
+  "acceptance": "SOURCE_LAYOUT_BOOKKEEPING; fresh complete native replay pending. Historical acceptance receipts apply only to their original bytes.",
+  "enforcement": "python3 -B scripts/check_math_layout.py",
+  "verification": "python3 -B scripts/check_math_trust.py",
+  "open_claims": "Unconditional RH and supplier/P04/P05 premises remain open.",
+  "verification_controls": {
+    "python_trust_fixtures": 25,
+    "python_layout_fixtures": 40,
+    "python_registry_fixtures": 18,
+    "native_audit_controls": 9,
+    "native_audit_status": "LEAN_AUDIT_SELF_TEST_PASSED",
+    "full_source_replay_status": "RUNNING",
+    "public_proof_acceptance_replaced": false
+  },
+  "control_directory_subject_map": {
+    "checks/schrodinger-controls/": "checks/LinearAlgebra/SchrodingerTransfer/Controls/",
+    "checks/ordered-product-determinant-controls/": "checks/LinearAlgebra/Determinant/OrderedProduct/Controls/",
+    "checks/ordered-transfer-controls/": "checks/LinearAlgebra/OrderedTransfer/Controls/",
+    "checks/original-pickup-controls/": "checks/NumberTheory/Moebius/PrimitiveIdentification/Controls/",
+    "checks/PolarizationControls/": "checks/Analysis/InnerProductSpace/Polarization/Controls/",
+    "checks/IntervalReflectionControls/": "checks/Analysis/IntervalIntegral/Reflection/Controls/",
+    "checks/jacobi-controls/": "checks/LinearAlgebra/JacobiTransfer/Controls/",
+    "checks/cocycle-product-controls/": "checks/LinearAlgebra/CocycleProduct/Controls/",
+    "checks/GaugeControls/": "checks/Algebra/OrderedProduct/Conjugation/Controls/",
+    "checks/FiniteCoverageControls/": "checks/Logic/FiniteCoverage/Controls/",
+    "checks/gauge-state-controls/": "checks/GroupTheory/Actions/GaugeState/Controls/",
+    "checks/cutoff-laplace-controls/": "checks/NumberTheory/Moebius/FiniteLaplaceTransform/Controls/",
+    "checks/prime-window-controls/": "checks/NumberTheory/Moebius/PrimeFilterLaplace/Controls/",
+    "checks/recording-scale-controls/": "checks/NumberTheory/Moebius/DyadicEnergy/Controls/",
+    "checks/prime-cascade-controls/": "checks/NumberTheory/Moebius/PrimeFilterGrowth/Controls/",
+    "checks/CounterexampleControls/": "checks/Logic/Counterexamples/Controls/"
+  },
+  "control_sources": {
+    "checks/LibraryDeclarations.lean": "5268ba9b369da4379e222ab02f913bf3557f29a6249d90f0d7254f5907424dc8",
+    "checks/Analysis/Energy/Declarations.lean": "8376ac0c9f809d888165da1f159eab65b3ce402664c71585aee1a614d9613738",
+    "checks/NumberTheory/Moebius/PrimitiveIdentification.lean": "e410ea20e184837e771cb8c68d12b45ae682b456e91909642b91e38a33ec95c3",
+    "checks/NumberTheory/Moebius/FiniteLaplaceTransform.lean": "a38b33dd94edac23ecfdef24686586b428b2dd01c4f1ceab673d657a3c54757f",
+    "checks/NumberTheory/Moebius/PrimeFilterGrowth.lean": "b2a2d10cc23ca09de63b6d828840fa1e26910f3258962b4ee0081dd5a5b52453",
+    "checks/NumberTheory/Moebius/PrimeFilterLaplace.lean": "b868bc78c1edf189fedcf9d428e7653cbd7d70526cf78d75b44892d7b3ca0273",
+    "checks/NumberTheory/Moebius/DyadicEnergy.lean": "ea589af19b98d6faca428e60b9cd58cf300218526ed95e857113e80a3a6d94ff",
+    "checks/NumberTheory/Zeta/Riemann/ExcludedTrivialZero.lean": "6e54ec9ddb515e9a2a428c0fb61ba050d64b53a895c74cd34c4fb1260f97b2ae",
+    "checks/Logic/Counterexamples/ComplexSymmetryAndPositivity.lean": "6303fc21d6a6642370541d10aa876b9c99db7090e73dc6a28d1ebd2ea4542109",
+    "checks/Logic/Counterexamples/PositivityIsNotVanishing.lean": "747a51d3c83e2ba94808f76c2b35b2130b4f23cb84f8f4722351c24003e0a219",
+    "checks/NumberTheory/Zeta/Riemann/Declarations.lean": "566d841feede8c779cae5f2cd5d37f7d068468feef2c9f54df588aa9ead31f29",
+    "checks/Spectral/FiniteVolume/Declarations.lean": "a9c2d1b822b28bf47e2c004ccb66ad966d89b589a7bbf9c78a4d79f7e66e16e8",
+    "checks/Analysis/Energy/Controls/DeterminantPaysBudget.lean": "a5f04442fd6bd458516ef6352ee81cdcb8309233cf950064b91c5ea3bd628ae1",
+    "checks/Analysis/Energy/Controls/DroppedResidual.lean": "ca51b91a3f24b42ab16994c0ba60fe1f3c89def07c430de1a42bc52ff85bd431",
+    "checks/Analysis/Energy/Controls/FiniteSamples.lean": "6229167a3bcf9fab9e089e00060bb82f7e5fe70e82f64726baaa2c5fc3834a48",
+    "checks/Analysis/Energy/Controls/MissingBudget.lean": "27074be334ec757d2879ef516a24546b1b343e568fb0bc4deeae00b613934054",
+    "checks/Analysis/Energy/Controls/SingleRate.lean": "35bac676d435826dc20ee8876ef915920bf85c11af0e0dc46d5010cc934088ab",
+    "checks/Analysis/Energy/Controls/WrongPhase.lean": "bf13ad1ddc0561fca9b54c9b4a34a129dac97ba1f6d0f7c403fdcf51a736c6f7",
+    "checks/Spectral/FiniteVolume/Controls/DirichletCorner.lean": "4b34563e1c5a547b2b6f1d62ef9f73ee7662b45837692bcb1e6275e300c08ee0",
+    "checks/Spectral/FiniteVolume/Controls/DroppedBlockBoundaryCost.lean": "12c09611fd54bd37de93b7bb45f83c527591faf735b652514cea558d7c998499",
+    "checks/Spectral/FiniteVolume/Controls/DroppedIDSLimit.lean": "a08a30459b5115ac3249e7aa389f8b5f25e7c724dda28a2d933ba90b70304717",
+    "checks/Spectral/FiniteVolume/Controls/DroppedRemainderCost.lean": "cb32190ecc88ee578a11db7f0fd3d52be49483957334b748b92a48f9adc14b40",
+    "checks/Spectral/FiniteVolume/Controls/ExactCutAdditivity.lean": "72aa5bba6b8831919c7b3c3e77c0b4ec0db7babcd0cad74adb676efabb1679be",
+    "checks/Spectral/FiniteVolume/Controls/ExteriorLabelInverse.lean": "e4ec7b0839759059f42d153e12f9c5eabf0a22c061407991baca9b04dd5b2914",
+    "checks/Spectral/FiniteVolume/Controls/MissingBlockLength.lean": "7e99ba36b4fbe75c10a1b946c822c98e6904d30377c5987c16568c84bab4c935",
+    "checks/Spectral/FiniteVolume/Controls/MissingDefectEquality.lean": "35fdd185bacac671c991d6df6b145f5e1c8f3617e4bf46a0ecbc8088d51d00ab",
+    "checks/Spectral/FiniteVolume/Controls/MissingIDS2.lean": "09d760b12d4f4e0893ccf68317d815430f2bc1dcc94b17c46969f77eb0ed523c",
+    "checks/Spectral/FiniteVolume/Controls/MissingInjectivity.lean": "12d4eb4ef652c00200be8e935a8ddb9648d7f421da5e259bb02899f2c0962a4f",
+    "checks/Spectral/FiniteVolume/Controls/OneEndpointDefect.lean": "8b678d08034ff821ff30a4e6c6c75edbd6012eed0dff03a61ac594aaa9a20782",
+    "checks/Spectral/FiniteVolume/Controls/WrongEigenvalueDenominator.lean": "a1947cf3f4f013c84b4a398b15535a163e1cc5f08454afb2a181e40277707716",
+    "checks/Spectral/FiniteVolume/Controls/WrongOffset.lean": "cf1c07716248cd258c7ed09e816c4dff8532c1f51c4f7961b3eb81ff66c66712",
+    "checks/Spectral/FiniteVolume/Controls/WrongSamplingStep.lean": "71c93cf70563883ace3e31385e43d33fddcb2a76e52a7fc2274d8679f6fcc935",
+    "checks/Spectral/FiniteVolume/Controls/WrongSecondOrigin.lean": "e7f9850d6b02d80c15618b791c8634e4a90df1f7804526514dffadd847c5523a",
+    "checks/Spectral/FiniteVolume/Controls/ZeroTraceAllEnergies.lean": "3967d2d9f515622db0d3b59e6f67286c5f4a7c29c254e75a01397f4fc611579d",
+    "checks/Spectral/FiniteVolume/Controls/ZeroVolumeError.lean": "c08b348f67aa124c3b44e3ae9a193b6b8d3977c915ef9020448b372d47d3821a",
+    "checks/Analysis/Fourier/Controls/Audit.lean": "59bbc85f31ff3e12ccd04fe9caa7f03fa379c9abf086da3d61b31471937c93fa",
+    "checks/Analysis/Fourier/Controls/FalseAlias.lean": "dd34dac4098d104fdf6565e57eb489069b7bb69fd666b428dbf7b66a5388de26",
+    "checks/Analysis/Fourier/Controls/FalseCoverage.lean": "11c5753116e0a6e39538bec33ebd0cbaa853854372950618f9ec2d8c80387ebb",
+    "checks/Analysis/Fourier/Controls/FalseRounding.lean": "a7dfa57ad91a7139744a5d3d3351d1de6a526ea0e1a7fa5fc1ebe43d4974f844",
+    "checks/Analysis/Fourier/Controls/FalseTraceBound.lean": "7d5156f0e177369d703859240185062e4e05a83e1fe3932dde84040f82a52fba",
+    "checks/Analysis/Fourier/Controls/MissingReturn.lean": "7118c88504969b8a77b61c66329c4e53b91e6b1aecb4e8b22cdb3f5d173aa718",
+    "checks/Analysis/Fourier/Controls/WrongAngular.lean": "efa4886ea1f8a43df1678ac5299afd0b75979d3b60e987c0ccca71796e6ef503",
+    "checks/Analysis/Fourier/Controls/check.py": "bab6dc0a49432491e12667e51dc6bbf9c680d4567dd2b60d36c79b7e922463fd",
+    "checks/Analysis/Fourier/Controls/expected.json": "4b2460393a214f139c2286851741dc13f8604eb2d6c31c9742016f5e112b1235",
+    "checks/Logic/Counterexamples/Controls/ExactCounterexampleContracts.lean": "223cb286c22fa1a942e67e047e9e0d3766bd7ed1955041365f337024bb5c6df8",
+    "checks/Logic/Counterexamples/Controls/WrongCommutativity.lean": "5950f4f9fb688f31e1a4b5760ecd53efa575c46ad2c5c4bdfd719e28792c9765",
+    "checks/Logic/Counterexamples/Controls/WrongProductInverse.lean": "05bcf3305c7b5df3b02dacd03efd4c26a378640f1b9c98227755a628ae6107ef",
+    "checks/Logic/FiniteCoverage/Controls/ExactDomainAndTail.lean": "ca887f60818df881452b175ca95addab318a60b3e7c05ebc4ee546c1e9ec388c",
+    "checks/Logic/FiniteCoverage/Controls/MissingCoverage.lean": "b638109f4d0d80f24889ab2bbe538da940fd3fb20a57626818bd2b1e5ab804b9",
+    "checks/Logic/FiniteCoverage/Controls/MissingTail.lean": "cbe295d04188c2c8a6336d4e5fd54710d5cc2b899b8964560f147972501848f2",
+    "checks/Logic/FiniteCoverage/Controls/PromoteDomainToUniverse.lean": "5b2fe1bf38678b86059d8508016b2e0ba1be1159981878ec78494fe0bf699c01",
+    "checks/Logic/FiniteCoverage/Controls/ReverseEndpointCounterexample.lean": "0ce8fd175d385868a3e0cb8c2663a8d8c9be089f7450a7ee2c72546d59cc328f",
+    "checks/Logic/FiniteCoverage/Controls/ReverseRayCounterexample.lean": "3797836a144458a54ccf2a7d9fd16112aaa29d50041da83b8f3e7e8c4f2d4426",
+    "checks/Algebra/OrderedProduct/Conjugation/Controls/ExactGaugeContracts.lean": "2191cd15bd71147429932f35d9a10ac3ac2b681060f89a8f424002ab3dbe40db",
+    "checks/Algebra/OrderedProduct/Conjugation/Controls/MissingClosedPath.lean": "46c96cf9ea82fd97e3389e773c19276ce6413d184a46a92418fd413b238e774e",
+    "checks/Algebra/OrderedProduct/Conjugation/Controls/ShiftedEndpoint.lean": "18d07c1876985146c50f08411d9b446739ee66b0e7d4266e7b3dc27180729446",
+    "checks/Algebra/OrderedProduct/Conjugation/Controls/StrongerGroup.lean": "ea88cdfe52c5a11bf5f1e4a49e34988e2e735dd5b2718352d1187fe3677c8657",
+    "checks/Analysis/IntervalIntegral/Reflection/Controls/ChangedMeasure.lean": "a24e35c0beefdaac435ba34c6e17b82420dc03e62791e5be8f28712e63e46a9a",
+    "checks/Analysis/IntervalIntegral/Reflection/Controls/ExactEndpointsAndSignedSquares.lean": "53697294073b2a9832b23079943e08e1cf8c5d55c3788c191c8c4a972ea0b140",
+    "checks/Analysis/IntervalIntegral/Reflection/Controls/MissingParitySectorIntegrability.lean": "1c124cf39869f2a00741a5d11e6b12343379d546f7f862beb2dcf931113e05af",
+    "checks/Analysis/IntervalIntegral/Reflection/Controls/MissingSquareSectorIntegrability.lean": "7e70ec75680aebdebe62c61d7da5a8ad266208e9b3a3ce6bf60039750852beac",
+    "checks/Analysis/IntervalIntegral/Reflection/Controls/WrongEndpoint.lean": "27f32fc29af16254507a249a5a6e6abec5ba921d592d9cdf849878dd1fbb87a5",
+    "checks/Analysis/IntervalIntegral/Reflection/Controls/WrongSignedSector.lean": "dde5c3e0b1915cbaa0b5a5451e1c4b7710ea07c37cbf6aeeec5f3cd39c85aefb",
+    "checks/Analysis/InnerProductSpace/Polarization/Controls/ExactPolarizationContracts.lean": "fdec3da11390853f79b3d064fc99d4d492af8bd9613e111397238e57a16481e8",
+    "checks/Analysis/InnerProductSpace/Polarization/Controls/FalseSectorInference.lean": "0e1aaae50878834f28a8ba7a065b66f878f94d6c3a9db526a333f884a0c9da2a",
+    "checks/Analysis/InnerProductSpace/Polarization/Controls/MissingInnerProductInstance.lean": "9dfea39685cd8069833b92b8236659b26610012ec09681c50e1e250e7b39cf29",
+    "checks/Analysis/InnerProductSpace/Polarization/Controls/WrongPolarizationSign.lean": "4c4d9c71f4d39e82628847dc10541999e8e9757b5dfa33e2dde2363610ee8e74",
+    "checks/LinearAlgebra/CocycleProduct/Controls/GenericMonoidAndGroup.lean": "3bc8767f7d578ddb2d9be01cfeeea419b6a7b9a6a5f17c45ec7212f444cabb04",
+    "checks/LinearAlgebra/CocycleProduct/Controls/IncorrectGaugeEndpoint.lean": "68dba50ddb5c9edeb16f48151ffcf2d310ab789eef61de820298953383aca62d",
+    "checks/LinearAlgebra/CocycleProduct/Controls/MissingOrbitShift.lean": "bbad997fd02b291841d86bb81a8158b7bde04f9643f1fc44b66ca2246d013d86",
+    "checks/LinearAlgebra/CocycleProduct/Controls/ReverseMultiplication.lean": "25fded69d7fd67be09c16200ed75d8a4d74aac12adf08c02fba3a1f7131a52c3",
+    "checks/NumberTheory/Moebius/FiniteLaplaceTransform/Controls/MissingMertensEndpoint.lean": "f5c3e4689a81a739889076777ee6be187537ad29c921ce6b564173ea82f7218d",
+    "checks/NumberTheory/Moebius/FiniteLaplaceTransform/Controls/MissingSNonzero.lean": "cea69c144ed4c4c3ebdeec5cd7f8d62105c1a13e670e2e986751d96a9f27f9e4",
+    "checks/NumberTheory/Moebius/FiniteLaplaceTransform/Controls/MissingWeightedEndpoint.lean": "81591e8960b4b2d1563e0a97f3e5c7a33e3063b4fe2e54199e02f5fca6245fd3",
+    "checks/NumberTheory/Moebius/FiniteLaplaceTransform/Controls/MissingZNonzero.lean": "9ce9c03c1cb5ef4e079cbfd5e707a4441964e22273dae71ed407cfdbe1542304",
+    "checks/NumberTheory/Moebius/FiniteLaplaceTransform/Controls/RawProduct.lean": "c9562ad4c53e5d88d319ce6ae42e1dbfd323c15a91dbbd338aa75f80ccb69cff",
+    "checks/GroupTheory/Actions/GaugeState/Controls/GenericGroupAction.lean": "b0bb9a5354b0edb02af17e86303ecd0975fd94f620a54c043d258d8af98ed89c",
+    "checks/GroupTheory/Actions/GaugeState/Controls/IncorrectCurrentState.lean": "a50e57eaa5bdf13f3efcc4cc7ecefdf658332b47d3c258454173d64951158b71",
+    "checks/GroupTheory/Actions/GaugeState/Controls/IncorrectInverse.lean": "677aa9a145d4b06d685757edbf7c86fba5565fefbaa561de1bf3300ea38024c5",
+    "checks/GroupTheory/Actions/GaugeState/Controls/IncorrectOwnStep.lean": "24aaf40a45bfaadaabec23ca064217b8e8b1e81cf4d3126e4c1be4eae9767ff1",
+    "checks/LinearAlgebra/JacobiTransfer/Controls/ExactRawAndWeighted.lean": "8cfc343bdf6c51da0ac9b62f9538940216e43c0e498503957d513fa3916b90ed",
+    "checks/LinearAlgebra/JacobiTransfer/Controls/ReversedDeterminantRatio.lean": "74389f8c972664cd2afb3881a63516b0402a574edae2bef6d2dca01dc8ad0bc2",
+    "checks/LinearAlgebra/JacobiTransfer/Controls/WrongPreviousCoefficient.lean": "e0a990d9b192ed0975a841fb7ed30885a073d19d77c9f951b840483ab77ee02f",
+    "checks/LinearAlgebra/JacobiTransfer/Controls/ZeroCoefficientDeterminant.lean": "09e4f47e1895aa768a7b483d02a399e20e4d1f13a3cea657af1baa1d9935ad54",
+    "checks/LinearAlgebra/Determinant/OrderedProduct/Controls/ExactRingAndWeighted.lean": "c28589d246b9b7bbf4538eb8b0fa6c0ff921445d5d70f4a8fe940e1d515f1be7",
+    "checks/LinearAlgebra/Determinant/OrderedProduct/Controls/MissingFactorDeterminant.lean": "037227c29572b504d32eecfcf6177f136825e3acddf911d61763fcf066e348b7",
+    "checks/LinearAlgebra/Determinant/OrderedProduct/Controls/MissingNonzeroCoefficient.lean": "aeb6b35823c26582e0929ff097feeb1fa09f92b9ce9b30ea5a0701e25fb2da67",
+    "checks/LinearAlgebra/OrderedTransfer/Controls/ExactMonoidAndSemiring.lean": "a322d90d49868f066001a248c64be7439196742d315c5fde48b1b8663b949d47",
+    "checks/LinearAlgebra/OrderedTransfer/Controls/MissingEndpointOrder.lean": "0d1129c9ae7b519b343c50ca07f5fb0948b4f2aa97412dbf89f37f6533d4e731",
+    "checks/LinearAlgebra/OrderedTransfer/Controls/MissingStepPremise.lean": "67a593dde23d47f1c96858aebdfedaee3596865ed8cc64cb29efe26f0745f83a",
+    "checks/NumberTheory/Moebius/PrimitiveIdentification/Controls/DroppedOneAtom.lean": "eabf0faf450c49fdd27739f053ba73e457d36c755065ff3c05d21f1939ecf93f",
+    "checks/NumberTheory/Moebius/PrimitiveIdentification/Controls/MissingMainEnergyBudget.lean": "091a6058635fcfdc9c6f3507b2420b7cf16af6c4b6d871f5a2a9b286061be174",
+    "checks/NumberTheory/Moebius/PrimitiveIdentification/Controls/MissingTimeOrder.lean": "0abcb000c1e49371985143dee3ac4c0470e010f80bd053cc6767c35dd4300aa1",
+    "checks/NumberTheory/Moebius/PrimitiveIdentification/Controls/OnlyOneCrossOrder.lean": "20a793b0a93c879973c659df4ad5d791207fecc718ef5b03e7e15f2754b8d2f9",
+    "checks/NumberTheory/Moebius/PrimitiveIdentification/Controls/ResidualAsMainBudget.lean": "a74a226c19b0849a00a8551c8fc696f0765f221a3430e6e9026a67336c738228",
+    "checks/NumberTheory/Moebius/PrimitiveIdentification/Controls/WrongPrimeSign.lean": "9b08606db1cc389c5cc9cf57414b3a86930d0dceb2449478f9b3c504c4d94816",
+    "checks/NumberTheory/Moebius/PrimeFilterGrowth/Controls/CompositePrimitive.lean": "35bab555e5ea516dad4838d919456e91cd1a88ef377712cafe1a69fca3097b31",
+    "checks/NumberTheory/Moebius/PrimeFilterGrowth/Controls/MissingBlockBound.lean": "72486330eb74b51017f73afd576d3c10128bf780c38d60107fff3253131d498f",
+    "checks/NumberTheory/Moebius/PrimeFilterGrowth/Controls/MissingPrimeBound.lean": "a1017aa4c707ce3b3506091b11ee09d5fc4334836e85177273d1f7a9e396a57d",
+    "checks/NumberTheory/Moebius/PrimeFilterLaplace/Controls/FalseMultiplier.lean": "eee6b3dd6d462f2206bfdd8d614c8724f46e80c85f5f45d5c326ef0de7138263",
+    "checks/NumberTheory/Moebius/PrimeFilterLaplace/Controls/MissingTail.lean": "b891ea1e2a20b4f1b8865c4e803a87445e5bb0abda7c1ba90fe587aad6d63da5",
+    "checks/NumberTheory/Moebius/PrimeFilterLaplace/Controls/WrongWindow.lean": "b77ac269f8946a92ba99978920345a9c0f813ea2f838cc27892938f7add8d9a7",
+    "checks/NumberTheory/Moebius/DyadicEnergy/Controls/MissingPairCondition.lean": "8b98522a4486cdb5a05c4e1231b9d3139dddfc0f80cd7fc3643357fdb32e874a",
+    "checks/NumberTheory/Moebius/DyadicEnergy/Controls/MissingScaleBound.lean": "86b36769a3b90022d589e4a16d8ccfad6a1f73390e85c8bc57f70b3044b5aa8e",
+    "checks/NumberTheory/Moebius/DyadicEnergy/Controls/NonnegativePrefixCorrelation.lean": "ae2bbc554ab2b7e5a89bc3290784276860be118e0681088b6aaa8c312c1b7e17",
+    "checks/LinearAlgebra/SchrodingerTransfer/Controls/DropCommutativeRingPremise.lean": "a4cbb7c66467d082ef71804ad20c82dcb44cf397537ba74b2a9f90c2fb8dbc4b",
+    "checks/LinearAlgebra/SchrodingerTransfer/Controls/ExactCoordinatesAndDeterminant.lean": "30b877518e43d16112176b24468c530f44834f7cb9fca30729306582a97058a8",
+    "checks/LinearAlgebra/SchrodingerTransfer/Controls/IdentifyDistinctSLElements.lean": "dbbf4e260ebcf35a6bdaa603c527e14a40dfff1affe5d7c64d0b6c5ff87624e2",
+    "checks/LinearAlgebra/SchrodingerTransfer/Controls/ReverseNextStateCoordinates.lean": "dddb1769e2cbf5203990393eaa3ac77e73a4a6947268b61e9f45862e0e4a2f8d",
+    "checks/LinearAlgebra/SchrodingerTransfer/Controls/WrongDeterminantSign.lean": "23bb5c1fcba29f469eb03e1eefbaf0dbedb70c9c45d31355acd5a94e5928309a"
+  }
+}

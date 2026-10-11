@@ -1,5 +1,5 @@
-import GRWTSK.RiemannHypothesis.CCC.RecordingScale
-import GRWTSK.RiemannHypothesis.CCC.PrimeCorrelationObstruction
+import GRWTSK.NumberTheory.Moebius.DyadicEnergy
+import GRWTSK.NumberTheory.Moebius.NegativePrimeCorrelation
 import Lean
 open Lean Elab Command
 open GRWTSK.RiemannHypothesis.CCC

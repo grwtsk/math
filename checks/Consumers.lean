@@ -1,4 +1,4 @@
-import GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.Moser
+import GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.Moser
 open GRWTSK.Combinatorics.GraphTheory.HadwigerNelson
 -- Apply the shared canonical theorem directly to separate obligations.
 example : FinitePointColorable 4 := moser_unit_graph_exact_four.1

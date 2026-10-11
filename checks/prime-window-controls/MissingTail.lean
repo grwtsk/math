@@ -1,4 +1,4 @@
-import GRWTSK.RiemannHypothesis.CCC.PrimeWindowLaplace
+import GRWTSK.NumberTheory.Moebius.PrimeFilterLaplace
 open GRWTSK.RiemannHypothesis.CCC
 example {f : ℝ → ℝ} (hf : Continuous f) (hf0 : f 0 = 0) (z : ℂ)
     {p : ℕ} (hp : p.Prime) {T : ℝ} (hpT : Real.log p ≤ T) :

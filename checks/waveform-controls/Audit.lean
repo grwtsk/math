@@ -1,5 +1,5 @@
-import GRWTSK.Analysis.Waveform.Interfaces
-import GRWTSK.Analysis.Waveform.Scheduling
+import GRWTSK.LinearAlgebra.Schrodinger.Sampling GRWTSK.Analysis.NormedSpace.QuadraticError GRWTSK.Analysis.Fourier.WindowCertificates GRWTSK.Analysis.Asymptotics.PolynomialClosure
+import GRWTSK.Combinatorics.Sequences.QuotaDiscrepancy
 open GRWTSK.Analysis.Waveform
 example (s : ℕ → ℤ) : ContDiff ℝ 1 (coefficientWaveform (carrier s)) := encoded_sequence_contDiff s
 example (b : ℕ → ℕ) (hb : ∀ n, 1 ≤ b n) (j : ℕ) :

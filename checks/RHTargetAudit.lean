@@ -1,4 +1,4 @@
-import GRWTSK.RiemannHypothesis
+import GRWTSK.NumberTheory.Zeta.Riemann
 import Lean
 
 open Lean Elab Command
