@@ -1,0 +1,116 @@
+{
+  "schema": "mathematical-evidence-independent-byte-verification-v1",
+  "reviewed_at": "2026-10-11T20:43:19.433935+00:00",
+  "reviewer": "Independent delegated static_draft_review agent",
+  "review_grade": "Artifact byte durability and static archive-tool review; no mathematical proof acceptance",
+  "verdict": "PASS_EXACT_ARTIFACT_BYTE_DURABILITY",
+  "archive_index_path": "archive-index.json",
+  "archive_index_sha256": "2f62b6129a106e7151509030aa62c15ec4ee8e20fb233979e377f273dd1e137a",
+  "restore_tool_path": "restore.py",
+  "restore_tool_sha256": "f950c01e68e72d35c9ecb56b2f357c5c715ffb9c8500f488888aa3d92ade884f",
+  "verification_method": "Independent standard-library reads and SHA256 hashes of every current original; independent gzip decompression and raw/gzip hashes of every unique object; every view compared against its original index entry; static source inspection of restore.py. The packaged verifier was not used to establish these byte results.",
+  "counts": {
+    "source_file_count": 6491,
+    "unique_object_count": 2770,
+    "total_file_bytes": 757667126,
+    "unique_object_bytes": 213665481,
+    "compressed_object_bytes": 64742860
+  },
+  "source_modes": {
+    "0644": 5160,
+    "0444": 1323,
+    "0755": 8
+  },
+  "view_binding_rows": 103,
+  "unique_readable_view_count": 74,
+  "view_binding_scope_rows": {
+    "polynomial37": 37,
+    "individual33": 33,
+    "native17": 19,
+    "review": 6,
+    "metadata": 8
+  },
+  "coverage": {
+    "original_file_inventory_exact": true,
+    "original_path_hash_size_mode_matches": 6491,
+    "stable_original_reads": 6491,
+    "unique_objects_independently_decompressed_and_hashed": 2770,
+    "object_directory_inventory_exact": true,
+    "object_set_equals_referenced_raw_content_set": true,
+    "view_directory_inventory_exact": true,
+    "view_path_collisions": false,
+    "all_polynomial37_source_rows_have_exact_readable_views": true,
+    "all_individual33_source_rows_have_exact_readable_views": true,
+    "raw_and_bundle_symlinks_observed": 0,
+    "original_bytes_paths_statuses_and_hashes_retained": true
+  },
+  "scope_separation": {
+    "polynomial": {
+      "source_rows": 37,
+      "libraries": 23,
+      "audits": 14,
+      "distinct_proposed_selected_roots": 77,
+      "new_theorems": 7,
+      "new_definitions": 0,
+      "prior_new_definitions_outside_selection": 7,
+      "status": "independently statically reviewed, uncompiled; no elaborated owner census or library admission"
+    },
+    "corrected_individual": {
+      "source_rows": 33,
+      "libraries": 21,
+      "audits": 12,
+      "distinct_proposed_selected_roots": 64,
+      "new_selected_theorems": 10,
+      "new_definitions_in_individual_extension": 1,
+      "all_new_definitions_in_closure": 8,
+      "status": "separate corrected independently statically reviewed uncompiled candidate"
+    },
+    "historical_native86": {
+      "receipt_sha256": "17bb21274274a3b2fd383253e26e92de5c457dc8c82b55e15203d35e19428fda",
+      "fresh_library_inputs": 86,
+      "additional_audit_commands": 1,
+      "selected_axiom_reports": 783,
+      "status": "historical exact native scope only; no replay from this bundle"
+    },
+    "historical_native17": {
+      "receipt_sha256": "b0784ab82a24d2b3d7a876b880b8c4a85a1e0552a391ed277719d7bd8e28aea2",
+      "fresh_libraries": 17,
+      "fresh_roots": 1,
+      "fresh_audits": 2,
+      "fresh_commands": 20,
+      "selected_axiom_reports": 48,
+      "historical_owned_modules": 186,
+      "historical_owned_declarations": 4418,
+      "public_admission": false,
+      "status": "historical frozen native candidate scope; no fresh full-source186 replay"
+    }
+  },
+  "restore_static_review": {
+    "verdict": "No concrete blocking defect found in the exact inspected tool",
+    "observed_controls": [
+      "explicit verify or destination operation",
+      "fresh absent absolute destination",
+      "descriptor-based no-follow directories and regular-object reads",
+      "relative historical paths with traversal, empty-component and control-character rejection",
+      "duplicate JSON keys, duplicate paths and file/directory collisions rejected",
+      "exact object directory inventory and reference-set verification",
+      "compressed and raw SHA256 and length verification with bounded streaming",
+      "exclusive restored-file creation and original ordinary permission modes",
+      "archive contents are never imported or executed",
+      "partial destination retained on extraction failure"
+    ],
+    "review_did_not_execute_restore": true,
+    "dynamic_verifier_and_extractor_tests_owned_by_separate_agent": true,
+    "authentication_limit": "The tool verifies consistency with its supplied index; this record pins the exact independently reviewed index hash. It is not a cryptographic signature or proof of remote publication."
+  },
+  "findings": [],
+  "limitations": [
+    "This verification establishes archive bytes and binding consistency only. It does not compile Lean, run native proof replay, execute axiom audits, establish an elaborated declaration census or admit drafts to the library.",
+    "Historical receipts, failed/stale variants and original paths retain only their original source/dependency/object provenance qualifications.",
+    "External mathlib/dependency source observations are retained hash observations, not a bundled full dependency-source replay or object-authentication guarantee.",
+    "The frozen manifests retain their original pending-review fields; exact independent reviews and current archive scope records explain subsequent static review without rewriting historical bytes.",
+    "Historical local paths and operational identifiers are deliberately retained; prior credential-pattern screening was heuristic, not a complete secret-exclusion proof.",
+    "No claim follows for signed energy/supplier bounds, pointwise amplitude, strict negative/joint sectors, arbitrary transformed or renormalized realization, RH or its converse, A=0 equality, or C-infinity smoothness.",
+    "This record does not certify a remote commit, push, merge, branch/worktree cleanup, future archive changes or unobserved dynamic extractor controls."
+  ]
+}
