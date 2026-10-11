@@ -9,6 +9,11 @@ example {a : ℝ} (ha : a ≠ 0) (b c : ℝ) :
       (Real.exp (-a * b) - Real.exp (-a * c)) / a :=
   integral_exp_neg_mul ha b c
 
+example {a : ℝ} (ha : a ≠ 0) (b c : ℝ) :
+    (∫ u in b..c, Real.exp (a * u)) =
+      (Real.exp (a * c) - Real.exp (a * b)) / a :=
+  integral_exp_mul ha b c
+
 elab "#audit_exponential_interval" : command => do
   let env ← getEnv
   let moduleNames := env.header.moduleNames
