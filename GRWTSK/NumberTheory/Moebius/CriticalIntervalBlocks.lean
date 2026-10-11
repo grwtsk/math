@@ -4,6 +4,7 @@ Mathlib imports retain upstream authorship and Apache-2.0 licensing. -/
 import GRWTSK.NumberTheory.Moebius.VerticalLineMonotonicity
 import GRWTSK.NumberTheory.Moebius.FiniteLaplaceTransform
 import GRWTSK.Analysis.Integration.ExponentialInterval
+import GRWTSK.Analysis.SpecialFunctions.PowerIntervalDrop
 
 /-!
 # Exact arithmetic blocks on the critical completed vertical line
@@ -30,6 +31,7 @@ open GRWTSK.RiemannHypothesis.CCC
 open GRWTSK.NumberTheory.Moebius.VerticalLineCriterion
 open GRWTSK.NumberTheory.Moebius.VerticalLineMonotonicity
 open GRWTSK.Analysis.Integration.ExponentialInterval
+open GRWTSK.Analysis.SpecialFunctions.PowerIntervalDrop
 
 /-- On the open logarithmic cell from `n` to `n+1`, the pickup is the exact
 coupled weighted-prefix/Mertens-prefix expression with cutoff `n`. -/
@@ -215,6 +217,78 @@ positive majorant series of the two signed prefixes converges. -/
 def CriticalIntervalMajorantSummable : Prop :=
   Summable criticalIntervalMajorant
 
+/-- The power-scale majorant obtained by replacing each unit-interval drop by
+the derivative magnitude of its negative power at the left endpoint. -/
+def criticalPrefixPowerMajorant (n : ℕ) : ℝ :=
+  4 * pickupWeightedPrefix n ^ 2 * (n : ℝ) ^ (-(2 : ℝ)) +
+  8 * |pickupWeightedPrefix n * pickupMertensPrefix n| *
+    (n : ℝ) ^ (-(5 / 2 : ℝ)) +
+  4 * pickupMertensPrefix n ^ 2 * (n : ℝ) ^ (-(3 : ℝ))
+
+theorem criticalPrefixPowerMajorant_nonneg (n : ℕ) :
+    0 ≤ criticalPrefixPowerMajorant n := by
+  unfold criticalPrefixPowerMajorant
+  positivity
+
+theorem exponentialLogDrop_le_rpow {a : ℝ} (ha : 0 ≤ a) {n : ℕ}
+    (hn : 1 ≤ n) :
+    exponentialLogDrop a n ≤ a * (n : ℝ) ^ (-a - 1) := by
+  rw [exponentialLogDrop_eq_rpow hn]
+  have hnpos : (0 : ℝ) < n := by positivity
+  simpa only [Nat.cast_add, Nat.cast_one] using
+    rpow_sub_rpow_add_one_le hnpos ha
+
+theorem criticalIntervalMajorant_le_prefixPowerMajorant {n : ℕ}
+    (hn : 1 ≤ n) :
+    criticalIntervalMajorant n ≤ criticalPrefixPowerMajorant n := by
+  have h1 : exponentialLogDrop 1 n ≤ (n : ℝ) ^ (-(2 : ℝ)) := by
+    have h := exponentialLogDrop_le_rpow (a := (1 : ℝ)) (by norm_num) hn
+    norm_num at h ⊢
+    exact h
+  have h32 : exponentialLogDrop (3 / 2) n ≤
+      (3 / 2 : ℝ) * (n : ℝ) ^ (-(5 / 2 : ℝ)) := by
+    have h := exponentialLogDrop_le_rpow (a := (3 / 2 : ℝ)) (by norm_num) hn
+    norm_num at h ⊢
+    exact h
+  have h2 : exponentialLogDrop 2 n ≤
+      2 * (n : ℝ) ^ (-(3 : ℝ)) := by
+    have h := exponentialLogDrop_le_rpow (a := (2 : ℝ)) (by norm_num) hn
+    norm_num at h ⊢
+    exact h
+  have hA : 4 * pickupWeightedPrefix n ^ 2 * exponentialLogDrop 1 n ≤
+      4 * pickupWeightedPrefix n ^ 2 * (n : ℝ) ^ (-(2 : ℝ)) :=
+    mul_le_mul_of_nonneg_left h1
+      (mul_nonneg (by norm_num) (sq_nonneg (pickupWeightedPrefix n)))
+  have hAM : (16 / 3) * |pickupWeightedPrefix n * pickupMertensPrefix n| *
+        exponentialLogDrop (3 / 2) n ≤
+      (16 / 3) * |pickupWeightedPrefix n * pickupMertensPrefix n| *
+        ((3 / 2 : ℝ) * (n : ℝ) ^ (-(5 / 2 : ℝ))) :=
+    mul_le_mul_of_nonneg_left h32
+      (mul_nonneg (by norm_num) (abs_nonneg _))
+  have hM : 2 * pickupMertensPrefix n ^ 2 * exponentialLogDrop 2 n ≤
+      2 * pickupMertensPrefix n ^ 2 *
+        (2 * (n : ℝ) ^ (-(3 : ℝ))) :=
+    mul_le_mul_of_nonneg_left h2
+      (mul_nonneg (by norm_num) (sq_nonneg (pickupMertensPrefix n)))
+  unfold criticalIntervalMajorant criticalPrefixPowerMajorant
+  linear_combination hA + hAM + hM
+
+/-- A source-readable sufficient condition at the natural power scales of the
+two Möbius prefixes. -/
+def CriticalPrefixPowerSummable : Prop :=
+  Summable criticalPrefixPowerMajorant
+
+theorem criticalIntervalMajorantSummable_of_prefixPowerSummable
+    (hs : CriticalPrefixPowerSummable) : CriticalIntervalMajorantSummable := by
+  apply hs.of_nonneg_of_le criticalIntervalMajorant_nonneg
+  intro n
+  by_cases hn : 1 ≤ n
+  · exact criticalIntervalMajorant_le_prefixPowerMajorant hn
+  · have hnzero : n = 0 := by omega
+    subst n
+    simp [criticalIntervalMajorant, criticalPrefixPowerMajorant,
+      exponentialLogDrop]
+
 /-- Partial sum of the exact critical arithmetic blocks. -/
 def criticalIntervalBlockSum (N : ℕ) : ℝ :=
   ∑ n ∈ Finset.Icc 1 N, criticalIntervalBlock n
@@ -335,6 +409,12 @@ theorem criticalBoundary_of_majorantSummable
   criticalBoundary_of_intervalBlockUniform
     (criticalIntervalBlockUniform_of_majorantSummable hs)
 
+theorem criticalBoundary_of_prefixPowerSummable
+    (hs : CriticalPrefixPowerSummable) :
+    CriticalBoundaryVerticalLineUniform :=
+  criticalBoundary_of_majorantSummable
+    (criticalIntervalMajorantSummable_of_prefixPowerSummable hs)
+
 /-- Any solution of the countable RH-equivalent reciprocal-line problem must,
 in particular, settle the explicit critical arithmetic block problem. -/
 theorem criticalBoundary_of_criticalReciprocal
@@ -351,5 +431,6 @@ end GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalIntervalBlock_eq_pickup
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalIntervalBlock_closedForm
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalIntervalBlockUniform_of_majorantSummable
+#print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalIntervalMajorantSummable_of_prefixPowerSummable
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalIntervalBlockSum_eq_verticalLineMass
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalBoundary_iff_intervalBlockUniform
