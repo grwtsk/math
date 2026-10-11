@@ -1,13 +1,13 @@
-import GRWTSK.RiemannHypothesis.Conversation.BranchPoleAdmissibleTest
+import GRWTSK.Analysis.TestFunctions.ExponentialMomentVariation
 import Lean
 
 open Lean Elab Command
 
 elab "audit_smooth_test_separation" : command => do
   let selectedModules := #[
-    ("GRWTSK.RiemannHypothesis.Conversation.BranchSmoothTestSeparation").toName,
-    ("GRWTSK.RiemannHypothesis.Conversation.BranchEvenSmoothTest").toName,
-    ("GRWTSK.RiemannHypothesis.Conversation.BranchPoleAdmissibleTest").toName
+    ("GRWTSK.Analysis.TestFunctions.Separation").toName,
+    ("GRWTSK.Analysis.TestFunctions.EvenSeparation").toName,
+    ("GRWTSK.Analysis.TestFunctions.ExponentialMomentVariation").toName
   ]
   let env ← getEnv
   let moduleNames := env.header.moduleNames

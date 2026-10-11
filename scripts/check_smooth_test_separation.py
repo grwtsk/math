@@ -2,9 +2,9 @@
 from pathlib import Path
 import datetime,hashlib,json,os,re,subprocess,time
 ROOT=Path(__file__).resolve().parent.parent
-FILES=['GRWTSK/RiemannHypothesis/Conversation/BranchSmoothTestSeparation.lean',
-       'GRWTSK/RiemannHypothesis/Conversation/BranchEvenSmoothTest.lean',
-       'GRWTSK/RiemannHypothesis/Conversation/BranchPoleAdmissibleTest.lean']
+FILES=['GRWTSK/Analysis/TestFunctions/Separation.lean',
+       'GRWTSK/Analysis/TestFunctions/EvenSeparation.lean',
+       'GRWTSK/Analysis/TestFunctions/ExponentialMomentVariation.lean']
 INPUTS=FILES+['checks/SmoothTestSeparationAudit.lean','scripts/check_smooth_test_separation.py','lean-toolchain','lakefile.toml','lake-manifest.json']
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 expected={rel:sha(ROOT/rel) for rel in INPUTS}

@@ -1,7 +1,8 @@
 """Pinned Lean source replay and audits. Run after: lake update; lake exe cache get <selected imports>."""
-import hashlib,json,os,pathlib,re,subprocess,time
-from project_replay import compile_project_closure
+import hashlib,json,os,pathlib,re,subprocess,sys,time
 root=pathlib.Path(__file__).resolve().parent.parent
+subprocess.run([sys.executable,"-B",str(root/"scripts/check_math_layout.py")],cwd=root,check=True)
+from project_replay import compile_project_closure
 manifest=json.loads((root/"evidence/source-manifest.json").read_text())
 input_manifest_sha256=hashlib.sha256((root/"evidence/source-manifest.json").read_bytes()).hexdigest()
 for rel,expected in manifest["files"].items():
@@ -43,7 +44,7 @@ try:
   run("reject-prime-one","checks/PrimeOneFalse.lean",1,lambda s:"is false" in s)
   run("reject-lower-bound-three","checks/LowerBoundFalse.lean",1,lambda s:"Type mismatch" in s)
  else:
-  prefix="GRWTSK/Combinatorics/GraphTheory/HadwigerNelson/"
+  prefix="GRWTSK/Combinatorics/GraphTheory/UnitDistanceGraph/"
   output=run("31-declaration-audit","checks/DeclarationAudit.lean")
   expected=json.loads((root/"evidence/expected-declarations.json").read_text())
   for e in expected:

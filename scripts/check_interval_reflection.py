@@ -12,6 +12,6 @@ r=subprocess.run(['lake','env',lean,'-j2','--trust=0','-DwarningAsError=true','c
 if r.returncode or output.count('INTERVAL_DECL::')!=14 or output.count('INTERVAL_ORIGINAL_REUSE::')!=10 or output.count('INTERVAL_SYNTHETIC_REUSE::')!=2:raise RuntimeError(output)
 print(json.dumps({'status':'INTERVAL_CONTRACT_AND_PROOF_DEPENDENCIES_CHECKED','source_roots':14,'logical_records':19,'original_intra_family_proof_roles':10,'synthetic_public_wrappers':2,'source_sha256':manifest['files']['GRWTSK/Analysis/IntervalReflection.lean'],'admission':'LOCAL_CANDIDATE'}));print(output)
 for name,expected in [('ExactEndpointsAndSignedSquares',0),('WrongEndpoint',1),('WrongSignedSector',1),('MissingSquareSectorIntegrability',1),('MissingParitySectorIntegrability',1),('ChangedMeasure',1)]:
- r=subprocess.run(['lake','env',lean,'-j2','--trust=0','-DwarningAsError=true','checks/IntervalReflectionControls/'+name+'.lean'],cwd=root,env=env,capture_output=True,text=True,timeout=600);text=r.stdout+r.stderr
+ r=subprocess.run(['lake','env',lean,'-j2','--trust=0','-DwarningAsError=true','checks/Analysis/IntervalIntegral/Reflection/Controls/'+name+'.lean'],cwd=root,env=env,capture_output=True,text=True,timeout=600);text=r.stdout+r.stderr
  if r.returncode!=expected or expected and not any(x in text for x in ['error:','error(lean.']):raise RuntimeError('interval_reflection hostile outcome mismatch: '+name+' '+text)
  print('INTERVAL_CONTROL::'+name+'::'+('PASSED'if expected==0 else 'REJECTED_CONTRACT_DRIFT'))

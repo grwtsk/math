@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "status": "WRITTEN_SCOPE_HASH_BINDING_ONLY",
+  "time_utc": "2026-10-11T07:04:19.896256+00:00",
+  "files": {
+    "docs/sturmian-phase-count-limits.md": "9c525ba89a19715daa71aa7a82f2ce593b3f08d1a2be60c6997192b9edff50f9",
+    "evidence/citation-sturmian-phase-counts.json": "8e818167ff84c14e05710afa366e42c383cc4a0906134aa7b42c08eb68ffeff4",
+    "docs/rh-research-continuation.md": "93d83a5175a176522de313337afa299b3e0d701b9d1be733dda61e90a1578d4a"
+  },
+  "candidate_admitted_library_module": false,
+  "native_acceptance_claimed": false,
+  "earlier_spectral_receipt": "evidence/ten-martini-checks.json",
+  "earlier_spectral_receipt_is_current_native_acceptance": false,
+  "migration_map_sha256_observed": "8651ba6bfa673e175d15a7af466362aec6679759c1e4aed249abf6e10afdcb7f",
+  "structural_check": "POST_RELOCATION_PASS_167_LIBRARY_MODULES_ZERO_FINDINGS",
+  "structural_check_is_native_acceptance": false,
+  "shared_migration_manifest_owner": "monitor; not edited by this research advance",
+  "independent_acceptance": "PENDING",
+  "rh_proved": false,
+  "monitor_complete_native_replay": "RUNNING",
+  "competing_native_verification_started": false,
+  "hash_rebound_utc": "2026-10-11T07:23:41.128556+00:00",
+  "hash_rebinding_reason": "Continuation record gains written finite arithmetic debt route; no candidate or spectral source changed",
+  "prior_manifest_archive": ".local/ccc-spectral-continuation/prime-product-debt-prior-written-scope-20261011T0709/evidence/sturmian-phase-counts-source-manifest.json"
+}
