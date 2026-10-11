@@ -1,0 +1,216 @@
+{
+  "schema_version": 1,
+  "profile": "BOUNDED-PUBLIC-LEAN-PROJECTION-CHECKS/v1",
+  "scope": [
+    "GRWTSK.LinearAlgebra.JacobiTransfer",
+    "GRWTSK.LinearAlgebra.OrderedTransfer"
+  ],
+  "source_files": [
+    {
+      "path": "GRWTSK/LinearAlgebra/JacobiTransfer.lean",
+      "sha256": "bdabbdf489b3a6a65baeec09f71e3f03aed82a868b10491b8f7c21eb36938eab",
+      "byte_count": 11942
+    },
+    {
+      "path": "checks/JacobiTransferAudit.lean",
+      "sha256": "9bb43ed3ad4c7d0fa71c11b7b4a395d98bb25b1fdbc8af3ed40fa343f7bd4cd4",
+      "byte_count": 6402
+    },
+    {
+      "path": "scripts/check_jacobi_transfer.py",
+      "sha256": "60f659dc81f075fba6c806de5e734ca70e17166e5ff3fadf819aa6dcdccde02e",
+      "byte_count": 714
+    },
+    {
+      "path": "docs/jacobi-transfer.md",
+      "sha256": "a74a70785641f7d93e0a8919210e0b3df13e4e218b608d2a4874277bd55dc63d",
+      "byte_count": 2223
+    },
+    {
+      "path": "evidence/citation-jacobi-transfer.json",
+      "sha256": "c211d9c1a684fb37b6108d6a72e3fd2541e14d0b3ba3f11a23f6d82af06f9bb9",
+      "byte_count": 906
+    },
+    {
+      "path": "checks/jacobi-controls/ZeroCoefficientDeterminant.lean",
+      "sha256": "09e4f47e1895aa768a7b483d02a399e20e4d1f13a3cea657af1baa1d9935ad54",
+      "byte_count": 201
+    },
+    {
+      "path": "checks/jacobi-controls/WrongPreviousCoefficient.lean",
+      "sha256": "e0a990d9b192ed0975a841fb7ed30885a073d19d77c9f951b840483ab77ee02f",
+      "byte_count": 398
+    },
+    {
+      "path": "checks/jacobi-controls/ReversedDeterminantRatio.lean",
+      "sha256": "74389f8c972664cd2afb3881a63516b0402a574edae2bef6d2dca01dc8ad0bc2",
+      "byte_count": 203
+    },
+    {
+      "path": "checks/jacobi-controls/ExactRawAndWeighted.lean",
+      "sha256": "8cfc343bdf6c51da0ac9b62f9538940216e43c0e498503957d513fa3916b90ed",
+      "byte_count": 608
+    },
+    {
+      "path": "GRWTSK/LinearAlgebra/OrderedTransfer.lean",
+      "sha256": "0a899d052fdd7f5320e7a9f4b7ee271ee54ebe820b804a41216a597fa59351b9",
+      "byte_count": 2648
+    },
+    {
+      "path": "checks/OrderedTransferAudit.lean",
+      "sha256": "afb7c9d86be73a227bc6d92110dbce79413ea0029770e91e1e411a3e8fc8f523",
+      "byte_count": 3310
+    },
+    {
+      "path": "scripts/check_ordered_transfer.py",
+      "sha256": "85c0cd3a3341b026f98c068bfc248b2ed8e077e9d6a2f0649eb1955bdaf7e121",
+      "byte_count": 816
+    },
+    {
+      "path": "docs/ordered-transfer.md",
+      "sha256": "69be3069da3dd8f8a7e7821d2918d329d50800550a6057bd6a95c9f6bb8144c5",
+      "byte_count": 2269
+    },
+    {
+      "path": "evidence/citation-ordered-transfer.json",
+      "sha256": "4e9a751fee7d8f4a76f1dfc010028169e01412b20534200b8bc6727db5732bff",
+      "byte_count": 1166
+    },
+    {
+      "path": "checks/ordered-transfer-controls/ExactMonoidAndSemiring.lean",
+      "sha256": "a322d90d49868f066001a248c64be7439196742d315c5fde48b1b8663b949d47",
+      "byte_count": 724
+    },
+    {
+      "path": "checks/ordered-transfer-controls/MissingStepPremise.lean",
+      "sha256": "67a593dde23d47f1c96858aebdfedaee3596865ed8cc64cb29efe26f0745f83a",
+      "byte_count": 298
+    },
+    {
+      "path": "checks/ordered-transfer-controls/MissingEndpointOrder.lean",
+      "sha256": "0d1129c9ae7b519b343c50ca07f5fb0948b4f2aa97412dbf89f37f6533d4e731",
+      "byte_count": 298
+    }
+  ],
+  "lean_version": "4.33.0",
+  "lean_commit": "d8b18978322de05a8f3dba51ef03cf5461676c17",
+  "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "dependency_lock_sha256": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
+  "dependency_mode": "Pinned public cache; fresh selected module outputs",
+  "compiler_flags": [
+    "-j1",
+    "-M12288",
+    "--trust=0",
+    "-DwarningAsError=true"
+  ],
+  "procedures": [
+    {
+      "file": "GRWTSK/LinearAlgebra/JacobiTransfer.lean",
+      "kind": "fresh_module_compile",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true
+    },
+    {
+      "file": "GRWTSK/LinearAlgebra/OrderedTransfer.lean",
+      "kind": "fresh_module_compile",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true
+    },
+    {
+      "file": "checks/JacobiTransferAudit.lean",
+      "kind": "body_axiom_and_consumer_audit",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true
+    },
+    {
+      "file": "checks/OrderedTransferAudit.lean",
+      "kind": "body_axiom_and_consumer_audit",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true
+    },
+    {
+      "file": "checks/jacobi-controls/ExactRawAndWeighted.lean",
+      "kind": "positive_fixture",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true
+    },
+    {
+      "file": "checks/jacobi-controls/ReversedDeterminantRatio.lean",
+      "kind": "hostile_expected_rejection",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "passed": true
+    },
+    {
+      "file": "checks/jacobi-controls/WrongPreviousCoefficient.lean",
+      "kind": "hostile_expected_rejection",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "passed": true
+    },
+    {
+      "file": "checks/jacobi-controls/ZeroCoefficientDeterminant.lean",
+      "kind": "hostile_expected_rejection",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "passed": true
+    },
+    {
+      "file": "checks/ordered-transfer-controls/ExactMonoidAndSemiring.lean",
+      "kind": "positive_fixture",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true
+    },
+    {
+      "file": "checks/ordered-transfer-controls/MissingEndpointOrder.lean",
+      "kind": "hostile_expected_rejection",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "passed": true
+    },
+    {
+      "file": "checks/ordered-transfer-controls/MissingStepPremise.lean",
+      "kind": "hostile_expected_rejection",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "passed": true
+    }
+  ],
+  "coverage": {
+    "definitions": 10,
+    "source_theorems": 19,
+    "generated_equation_contracts": 10,
+    "logical_contracts_checked": 39,
+    "synthetic_wrappers": 5,
+    "positive_controls": 2,
+    "hostile_expected_rejections": 5,
+    "unit": "Selected declarations and fixtures; not independent proof or result counts"
+  },
+  "resources": {
+    "procedure_wall_seconds": 59.64981675,
+    "CPU_seconds_lower_bound": 47.746643000000006,
+    "sampled_peak_process_group_RSS_bytes": 2353545216,
+    "compiler_jobs": 1,
+    "threads": 1,
+    "dependency_downloads": 0
+  },
+  "source_statements_or_proofs_changed": false,
+  "projection": "Approved source names, attribution and notices; private origin paths/maps/custody excluded",
+  "independent_human_review": "NOT_RUN",
+  "whole_main_replay": "NOT_CLAIMED",
+  "whole_corpus_transfer": "NOT_CLAIMED",
+  "new_mathematics": "NOT_CLAIMED",
+  "rh_proof": "NOT_CLAIMED",
+  "reconstruction": [
+    "lake build --wfail GRWTSK.LinearAlgebra.JacobiTransfer GRWTSK.LinearAlgebra.OrderedTransfer",
+    "python3 scripts/check_jacobi_transfer.py",
+    "python3 scripts/check_ordered_transfer.py"
+  ],
+  "hostile_replay": "Run each checks/jacobi-controls and checks/ordered-transfer-controls file with the listed trust-zero flags; positive files start Exact, the other files must fail for statement/premise reasons."
+}
