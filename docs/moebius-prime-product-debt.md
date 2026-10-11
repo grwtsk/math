@@ -196,7 +196,14 @@ is also equivalent to a uniform bound on the complete
 vertical-line expression above. Separate finite constants depending on $T$
 do not prove this condition. Requiring it at every $\sigma>0$ is precisely
 the selected `PickupWeightedEnergyAll` premise after the damping change
-$\tau=2\sigma$; that premise remains unpaid.
+$\tau=2\sigma$; that premise remains unpaid. This equivalence is now formalized
+without invoking a half-line monotone-convergence theorem:
+`VerticalLineCriterion` proves that a uniform finite-window bound removes the
+damping on each finite interval at cost $e^{2\sigma T}$, hence gives
+subexponential pickup energy and then the existing all-rate criterion. The
+reverse implication restricts the paid half-line integral to each window.
+It also proves equivalence with `pickupEnergyAbscissa = 0` and a conditional
+return to the literal Riemann hypothesis.
 
 The actual omitted function is
 
