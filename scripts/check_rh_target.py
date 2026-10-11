@@ -8,17 +8,17 @@ import time
 
 ROOT = Path(__file__).resolve().parent.parent
 MODULES = [
-    "GRWTSK/RiemannHypothesis/TargetStatement.lean",
-    "GRWTSK/RiemannHypothesis/Definitions.lean",
-    "GRWTSK/RiemannHypothesis/Defect.lean",
-    "GRWTSK/RiemannHypothesis/ZeroSymmetry.lean",
-    "GRWTSK/RiemannHypothesis/TargetComparator.lean",
-    "GRWTSK/RiemannHypothesis.lean",
+    "GRWTSK/NumberTheory/Zeta/Riemann/Hypothesis.lean",
+    "GRWTSK/NumberTheory/Zeta/Riemann/ZeroDefinitions.lean",
+    "GRWTSK/NumberTheory/Zeta/Riemann/CriticalLineDefect.lean",
+    "GRWTSK/NumberTheory/Zeta/Riemann/ZeroSymmetry.lean",
+    "GRWTSK/NumberTheory/Zeta/Riemann/DefectCriterion.lean",
+    "GRWTSK/NumberTheory/Zeta/Riemann.lean",
 ]
 CHECKS = [
-    "checks/RHTargetAudit.lean",
-    "checks/RHExcludedTrivialZero.lean",
-    "checks/RHPositivityIsNotVanishing.lean",
+    "checks/NumberTheory/Zeta/Riemann/Declarations.lean",
+    "checks/NumberTheory/Zeta/Riemann/ExcludedTrivialZero.lean",
+    "checks/Logic/Counterexamples/PositivityIsNotVanishing.lean",
 ]
 BUILD = ROOT / ".local/rh-target/build"
 BUILD.mkdir(parents=True, exist_ok=True)

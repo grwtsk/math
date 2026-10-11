@@ -49,16 +49,16 @@ def visit(module):
     ORDER.append(path)
 
 
-visit("GRWTSK.RiemannHypothesis.CCC.PrimeWindowLaplace")
+visit("GRWTSK.NumberTheory.Moebius.PrimeFilterLaplace")
 CONTROL_ERRORS = {
     "MissingTail": "Type mismatch",
     "WrongWindow": "Type mismatch",
     "FalseMultiplier": "Type mismatch",
 }
 CONTROLS = list(CONTROL_ERRORS)
-INPUTS = ORDER + ["checks/CCCPrimeWindowLaplaceAudit.lean", "scripts/check_prime_window_laplace.py",
+INPUTS = ORDER + ["checks/NumberTheory/Moebius/PrimeFilterLaplace.lean", "scripts/check_prime_window_laplace.py",
                   "lean-toolchain", "lakefile.toml", "lake-manifest.json", "docs/ccc-prime-window-laplace.md"]
-INPUTS += ["checks/prime-window-controls/" + name + ".lean" for name in CONTROLS]
+INPUTS += ["checks/NumberTheory/Moebius/PrimeFilterLaplace/Controls/" + name + ".lean" for name in CONTROLS]
 HASHES = {p: hashlib.sha256((ROOT / p).read_bytes()).hexdigest() for p in INPUTS}
 (RUN / "source-freeze.json").write_text(json.dumps(HASHES, indent=2) + "\n")
 RESULTS = []
@@ -106,7 +106,7 @@ def run(rel, expected_success=True, export=False, expected_error=None):
 try:
     for path in ORDER:
         run(path, export=True)
-    output = run("checks/CCCPrimeWindowLaplaceAudit.lean")
+    output = run("checks/NumberTheory/Moebius/PrimeFilterLaplace.lean")
     declarations = [json.loads(s) for s in re.findall(r"PRIME_WINDOW_DECL::(\{[^\n]+\})", output)]
     counts = re.findall(r"PRIME_WINDOW_COUNT::(\d+)", output)
     if len(counts) != 1 or len(declarations) != int(counts[0]) or not declarations:
@@ -128,7 +128,7 @@ try:
     if "T - a" not in contracts["noteWindowLaplace_causalShift"]["type"]:
         raise RuntimeError("causal shift lost its shorter recording")
     for name in CONTROLS:
-        run("checks/prime-window-controls/" + name + ".lean", expected_success=False,
+        run("checks/NumberTheory/Moebius/PrimeFilterLaplace/Controls/" + name + ".lean", expected_success=False,
             expected_error=CONTROL_ERRORS[name])
     stable_inputs()
     receipt = {"schema_version": 1, "status": "SCOPED_SOURCE_CHECKS_PASSED",
