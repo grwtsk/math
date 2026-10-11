@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "authority_components": [
+    {
+      "mathematics": "Established real inner-product polarization and elementary negative consequences for signed quadratic sectors",
+      "formal_artifacts": "Pinned mathlib real polarization lemma and inner-product infrastructure retain upstream identities",
+      "upstream_revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "named_upstream_credit": [
+        {
+          "module": "Mathlib.Analysis.InnerProductSpace.Basic",
+          "source_header": "/-\nCopyright (c) 2019 Zhouhang Zhou. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: Zhouhang Zhou, S\u00e9bastien Gou\u00ebzel, Fr\u00e9d\u00e9ric Dupuis\n-/",
+          "source_sha256": "344aa5e0b104223d327bb1f13db092b4d320017c8f82b7ba9846b5f517222468"
+        }
+      ]
+    }
+  ],
+  "local_contribution_components": [
+    {
+      "classification": "MECHANICAL_RELOCATION_OR_RENAME",
+      "contribution": "Canonical GRWTSK.Analysis.Polarization placement with preserved contracts"
+    },
+    {
+      "classification": "ACCESS_RAMP",
+      "contribution": "Existing local real specialization applies upstream polarization and retains two negative consequences"
+    },
+    {
+      "classification": "CONSUMER_APPLICATION",
+      "contribution": "One original real L2 energy-surplus consumer and one original intra-family proof checked; two synthetic public wrappers counted separately"
+    }
+  ],
+  "checked_composition_relations": [
+    "imports",
+    "reproduces",
+    "instantiates",
+    "applies"
+  ],
+  "verified_impact_records": {
+    "mathematical_impact": "No new theorem claimed",
+    "formal_impact": {
+      "grain": "one real polarization declaration slice",
+      "definitions": 0,
+      "source_theorems": 3,
+      "logical_records_including_generated": 3
+    },
+    "reuse_impact": {
+      "distinct_external_original_consumers": 1,
+      "original_intra_family_proof_roles": 1,
+      "synthetic_public_wrappers": 2
+    },
+    "engineering_impact": "Independently reconstructible canonical local access ramp"
+  },
+  "frontier_and_nonclaims": [
+    "Local candidate; transactional admission and independent review pending",
+    "Historical human/machine split unknown; no sole authorship, originality or priority claim",
+    "No executable equivalence, analytic estimate or RH proof"
+  ],
+  "evidence_and_version_bindings": {
+    "canonical_source_sha256": "eca8d7c7426a9c4a329522472fffbc3c3de6f05c047cb328ddd1b2c2da59c2d5",
+    "Lean": "4.33.0",
+    "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "public_check": "checks/PolarizationAudit.lean"
+  },
+  "local_direction": "grwtsk contributors",
+  "formalization_and_checking_assistance": "OpenAI Codex",
+  "local_license": "MIT",
+  "status": "LOCAL_CANDIDATE_ADMISSION_PENDING"
+}
