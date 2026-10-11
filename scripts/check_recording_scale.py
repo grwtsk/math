@@ -58,7 +58,7 @@ CONTROL_ERRORS = {
 }
 CONTROLS = list(CONTROL_ERRORS)
 INPUTS = ORDER + ["checks/NumberTheory/Moebius/DyadicEnergy.lean", "scripts/check_recording_scale.py",
-                  "lean-toolchain", "lakefile.toml", "lake-manifest.json", "docs/ccc-recording-scale.md"]
+                  "lean-toolchain", "lakefile.toml", "lake-manifest.json", "docs/mathematics/NumberTheory/Moebius/Energy/recording-blocks.md"]
 INPUTS += ["checks/NumberTheory/Moebius/DyadicEnergy/Controls/" + name + ".lean" for name in CONTROLS]
 HASHES = {p: hashlib.sha256((ROOT / p).read_bytes()).hexdigest() for p in INPUTS}
 (RUN / "source-freeze.json").write_text(json.dumps(HASHES, indent=2) + "\n")
