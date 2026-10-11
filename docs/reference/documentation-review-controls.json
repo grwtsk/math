@@ -1,0 +1,17 @@
+{
+  "schema": "documentation-review-controls-v1",
+  "reject": [
+    "reference-style link definitions",
+    "HTML link targets",
+    "unregistered same-subject source object",
+    "mutable historical commit",
+    "duplicate JSON fields",
+    "source symlink into Git metadata",
+    "source symlink to another in-root file"
+  ],
+  "historical_failures_retained": [
+    "initial broken legacy links",
+    "positive fixture missing reader targets",
+    "two accepted symlink variants before repair"
+  ]
+}
