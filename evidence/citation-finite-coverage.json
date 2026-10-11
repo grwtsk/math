@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "authority_components": [
+    {
+      "mathematics": "Established real interval and finite-set reasoning",
+      "upstream_module": "Mathlib.Data.Real.Basic",
+      "source_header": "/-\nCopyright (c) 2018 Mario Carneiro. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: Mario Carneiro, Floris van Doorn\n-/",
+      "source_sha256": "b1dde0e82be30e8a9ca87b23c46d04afc92be61818622ba6d4603daa4d4a9f70",
+      "revision": "db584cd6d46c92f209a44c0f1c829460d327499d"
+    },
+    {
+      "mathematics": "Established real interval and finite-set reasoning",
+      "upstream_module": "Mathlib.Data.Finset.Basic",
+      "source_header": "/-\nCopyright (c) 2015 Microsoft Corporation. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: Leonardo de Moura, Jeremy Avigad, Minchao Wu, Mario Carneiro\n-/",
+      "source_sha256": "ff97d5e92ad851a04f36140e3d537a5a48b7f5e067fd07e3603b2440aca1006e",
+      "revision": "db584cd6d46c92f209a44c0f1c829460d327499d"
+    }
+  ],
+  "local_contribution_components": [
+    {
+      "classification": "MECHANICAL_RELOCATION_OR_RENAME",
+      "contribution": "Canonical placement with complete formal contract preservation"
+    },
+    {
+      "classification": "ACCESS_RAMP",
+      "contribution": "Explicit coverage and tail interface using unchanged direct upstream constants"
+    },
+    {
+      "classification": "CONSUMER_APPLICATION",
+      "contribution": "Four separately identified synthetic verification wrappers; zero original canonical-use roles"
+    }
+  ],
+  "checked_composition_relations": [
+    "imports",
+    "reproduces",
+    "applies"
+  ],
+  "verified_impact_records": {
+    "mathematical_impact": "No new theorem claimed",
+    "formal_impact": {
+      "definitions": 0,
+      "source_theorems": 4,
+      "logical_records": 5
+    },
+    "reuse_impact": {
+      "original_canonical_reuse_roles": 0,
+      "original_importer_guard_contracts": 4,
+      "synthetic_public_wrappers": 4
+    }
+  },
+  "frontier_and_nonclaims": [
+    "Transactional admission and independent review pending",
+    "No promotion of finite evidence to all-scale evidence",
+    "No new mathematical originality or RH proof",
+    "Historical human/machine split unknown"
+  ],
+  "local_direction": "grwtsk contributors",
+  "formalization_and_checking_assistance": "OpenAI Codex",
+  "local_license": "MIT",
+  "status": "LOCAL_CANDIDATE_ADMISSION_PENDING"
+}
