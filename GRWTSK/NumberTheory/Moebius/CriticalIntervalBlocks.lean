@@ -5,6 +5,7 @@ import GRWTSK.NumberTheory.Moebius.VerticalLineMonotonicity
 import GRWTSK.NumberTheory.Moebius.FiniteLaplaceTransform
 import GRWTSK.Analysis.Integration.ExponentialInterval
 import GRWTSK.Analysis.SpecialFunctions.PowerIntervalDrop
+import GRWTSK.Analysis.Asymptotics.PowerWeightedSquareSummability
 
 /-!
 # Exact arithmetic blocks on the critical completed vertical line
@@ -32,6 +33,7 @@ open GRWTSK.NumberTheory.Moebius.VerticalLineCriterion
 open GRWTSK.NumberTheory.Moebius.VerticalLineMonotonicity
 open GRWTSK.Analysis.Integration.ExponentialInterval
 open GRWTSK.Analysis.SpecialFunctions.PowerIntervalDrop
+open GRWTSK.Analysis.Asymptotics.PowerWeightedSquareSummability
 
 /-- On the open logarithmic cell from `n` to `n+1`, the pickup is the exact
 coupled weighted-prefix/Mertens-prefix expression with cutoff `n`. -/
@@ -503,6 +505,29 @@ theorem criticalBoundary_of_prefixSquareComponents
     (criticalPrefixPowerSummable_of_squareSummable
       (criticalPrefixSquareSummable_of_components hA hM))
 
+/-- Separate power bounds below the two exact square-summability thresholds
+are sufficient for the critical completed line.  This is a conditional
+consumer: it does not assert either arithmetic bound. -/
+theorem criticalBoundary_of_prefixPowerBounds {CA CM α β : ℝ}
+    (hα : α < 1 / 2)
+    (hβ : β < 1)
+    (hA : ∀ n : ℕ, 1 ≤ n →
+      |pickupWeightedPrefix n| ≤ CA * (n : ℝ) ^ α)
+    (hM : ∀ n : ℕ, 1 ≤ n →
+      |pickupMertensPrefix n| ≤ CM * (n : ℝ) ^ β) :
+    CriticalBoundaryVerticalLineUniform := by
+  have hA0 : pickupWeightedPrefix 0 = 0 := by simp [pickupWeightedPrefix]
+  have hM0 : pickupMertensPrefix 0 = 0 := by simp [pickupMertensPrefix]
+  have hAs : CriticalWeightedPrefixSquareSummable := by
+    unfold CriticalWeightedPrefixSquareSummable
+    apply summable_sq_mul_rpow_of_abs_le_rpow pickupWeightedPrefix hA0 hA
+    linarith
+  have hMs : CriticalMertensPrefixSquareSummable := by
+    unfold CriticalMertensPrefixSquareSummable
+    apply summable_sq_mul_rpow_of_abs_le_rpow pickupMertensPrefix hM0 hM
+    linarith
+  exact criticalBoundary_of_prefixSquareComponents hAs hMs
+
 /-- Any solution of the countable RH-equivalent reciprocal-line problem must,
 in particular, settle the explicit critical arithmetic block problem. -/
 theorem criticalBoundary_of_criticalReciprocal
@@ -521,5 +546,6 @@ end GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalIntervalBlockUniform_of_majorantSummable
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalIntervalMajorantSummable_of_prefixPowerSummable
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalBoundary_of_prefixSquareComponents
+#print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalBoundary_of_prefixPowerBounds
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalIntervalBlockSum_eq_verticalLineMass
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalBoundary_iff_intervalBlockUniform
