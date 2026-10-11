@@ -12,7 +12,7 @@
     "kind": "theorem",
     "module": "GRWTSK.RiemannHypothesis.CCC.EnergyReturn",
     "name": "GRWTSK.RiemannHypothesis.CCC.riemannHypothesis_of_pickupCrossPoly",
-    "type": "PickupCrossPoly \u2192 RiemannHypothesis"
+    "type": "PickupCrossPoly → RiemannHypothesis"
   },
   "terminal_theorems": {
     "riemannHypothesis_of_pickupCrossPoly": {
@@ -24,7 +24,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.EnergyReturn",
       "name": "GRWTSK.RiemannHypothesis.CCC.riemannHypothesis_of_pickupCrossPoly",
-      "type": "PickupCrossPoly \u2192 RiemannHypothesis"
+      "type": "PickupCrossPoly → RiemannHypothesis"
     },
     "riemannHypothesis_of_pickupCrossSubexp": {
       "axioms": [
@@ -35,7 +35,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.EnergyContinuum",
       "name": "GRWTSK.RiemannHypothesis.CCC.riemannHypothesis_of_pickupCrossSubexp",
-      "type": "PickupCrossSubexp \u2192 RiemannHypothesis"
+      "type": "PickupCrossSubexp → RiemannHypothesis"
     },
     "riemannHypothesis_of_pickupCrossNatSubexp": {
       "axioms": [
@@ -46,7 +46,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.SampledBudgets",
       "name": "GRWTSK.RiemannHypothesis.CCC.riemannHypothesis_of_pickupCrossNatSubexp",
-      "type": "PickupCrossNatSubexp \u2192 RiemannHypothesis"
+      "type": "PickupCrossNatSubexp → RiemannHypothesis"
     },
     "riemannHypothesis_of_pickupCrossNatPoly": {
       "axioms": [
@@ -57,7 +57,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.SampledBudgets",
       "name": "GRWTSK.RiemannHypothesis.CCC.riemannHypothesis_of_pickupCrossNatPoly",
-      "type": "PickupCrossNatPoly \u2192 RiemannHypothesis"
+      "type": "PickupCrossNatPoly → RiemannHypothesis"
     },
     "riemannHypothesis_of_pickupWeightedEnergyAll": {
       "axioms": [
@@ -68,7 +68,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.EnergyContinuum",
       "name": "GRWTSK.RiemannHypothesis.CCC.riemannHypothesis_of_pickupWeightedEnergyAll",
-      "type": "PickupWeightedEnergyAll \u2192 RiemannHypothesis"
+      "type": "PickupWeightedEnergyAll → RiemannHypothesis"
     },
     "riemannHypothesis_of_pickupEnergyAbscissa_zero": {
       "axioms": [
@@ -79,7 +79,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.EnergyContinuum",
       "name": "GRWTSK.RiemannHypothesis.CCC.riemannHypothesis_of_pickupEnergyAbscissa_zero",
-      "type": "pickupEnergyAbscissa = 0 \u2192 RiemannHypothesis"
+      "type": "pickupEnergyAbscissa = 0 → RiemannHypothesis"
     }
   },
   "arithmetic_frontier": {
@@ -119,7 +119,6 @@
     "lean-toolchain": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
     "lakefile.toml": "a23f6d313f8458192328f09635ffef9078cb684374c2aac2743af541bf59b4e3",
     "lake-manifest.json": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
-    "docs/ccc-rh-research.md": "c5c44e2b1f638e9fc9b4bc95bfdee5e0887516eabb116b89197215840e1d4d58",
     "checks/ccc-controls/MissingBudget.lean": "e3fc2f465e1b551f873ed3abc884984a08a8514a88e74a92f3eab8ec3ad990ee",
     "checks/ccc-controls/DeterminantPaysBudget.lean": "0f2b99e61dd01aafdcd80bcc04e3fa53cc3a78782119c968261c18322424f817",
     "checks/ccc-controls/WrongPhase.lean": "bf13ad1ddc0561fca9b54c9b4a34a129dac97ba1f6d0f7c403fdcf51a736c6f7",
@@ -173,7 +172,7 @@
       "kind": "definition",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupBudgets",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupResponseGram",
-      "type": "\u211d \u2192 \u2115 \u2192 \u2115 \u2192 \u211d"
+      "type": "ℝ → ℕ → ℕ → ℝ"
     },
     {
       "axioms": [
@@ -184,7 +183,7 @@
       "kind": "definition",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupBudgets",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupLocalEnergy",
-      "type": "\u211d \u2192 \u211d"
+      "type": "ℝ → ℝ"
     },
     {
       "axioms": [
@@ -195,7 +194,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupBudgets",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickup_full_gram_split",
-      "type": "\u2200 (T : \u211d), pickupFullGram T = pickupDiagonal T + pickupCross T"
+      "type": "∀ (T : ℝ), pickupFullGram T = pickupDiagonal T + pickupCross T"
     },
     {
       "axioms": [
@@ -206,7 +205,7 @@
       "kind": "definition",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupBudgets",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupVelocity",
-      "type": "\u211d \u2192 \u211d"
+      "type": "ℝ → ℝ"
     },
     {
       "axioms": [
@@ -217,7 +216,7 @@
       "kind": "definition",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupBudgets",
       "name": "GRWTSK.RiemannHypothesis.CCC.wholePickup",
-      "type": "\u211d \u2192 \u211d"
+      "type": "ℝ → ℝ"
     },
     {
       "axioms": [
@@ -228,7 +227,7 @@
       "kind": "definition",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupBudgets",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupCross",
-      "type": "\u211d \u2192 \u211d"
+      "type": "ℝ → ℝ"
     },
     {
       "axioms": [
@@ -239,7 +238,7 @@
       "kind": "definition",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupBudgets",
       "name": "GRWTSK.RiemannHypothesis.CCC.moebiusReal",
-      "type": "\u2115 \u2192 \u211d"
+      "type": "ℕ → ℝ"
     },
     {
       "axioms": [
@@ -250,7 +249,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupBudgets",
       "name": "GRWTSK.RiemannHypothesis.CCC.complete_gram_split",
-      "type": "\u2200 {\u03b9 : Type u_1} [inst : DecidableEq \u03b9] (S : Finset \u03b9) (c : \u03b9 \u2192 \u211d) (H : \u03b9 \u2192 \u03b9 \u2192 \u211d),\n  \u2211 m \u2208 S, \u2211 n \u2208 S, c m * c n * H m n =\n    \u2211 m \u2208 S, c m ^ 2 * H m m + \u2211 m \u2208 S, \u2211 n \u2208 S, if m \u2260 n then c m * c n * H m n else 0"
+      "type": "∀ {ι : Type u_1} [inst : DecidableEq ι] (S : Finset ι) (c : ι → ℝ) (H : ι → ι → ℝ),\n  ∑ m ∈ S, ∑ n ∈ S, c m * c n * H m n =\n    ∑ m ∈ S, c m ^ 2 * H m m + ∑ m ∈ S, ∑ n ∈ S, if m ≠ n then c m * c n * H m n else 0"
     },
     {
       "axioms": [
@@ -261,7 +260,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupBudgets",
       "name": "GRWTSK.RiemannHypothesis.CCC.cross_poly_iff_energy_poly",
-      "type": "(\u2200 (T : \u211d), 0 \u2264 T \u2192 pickupEnergy T = pickupDiagonal T + pickupCross T) \u2192\n  (\u2200 (T : \u211d), 0 \u2264 T \u2192 0 \u2264 pickupDiagonal T \u2227 pickupDiagonal T \u2264 2 * T ^ 2) \u2192 (PickupCrossPoly \u2194 PickupEnergyPoly)"
+      "type": "(∀ (T : ℝ), 0 ≤ T → pickupEnergy T = pickupDiagonal T + pickupCross T) →\n  (∀ (T : ℝ), 0 ≤ T → 0 ≤ pickupDiagonal T ∧ pickupDiagonal T ≤ 2 * T ^ 2) → (PickupCrossPoly ↔ PickupEnergyPoly)"
     },
     {
       "axioms": [
@@ -294,7 +293,7 @@
       "kind": "definition",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupBudgets",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupDiagonal",
-      "type": "\u211d \u2192 \u211d"
+      "type": "ℝ → ℝ"
     },
     {
       "axioms": [
@@ -305,7 +304,7 @@
       "kind": "definition",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupBudgets",
       "name": "GRWTSK.RiemannHypothesis.CCC.mertensPrefix",
-      "type": "\u211d \u2192 \u211d"
+      "type": "ℝ → ℝ"
     },
     {
       "axioms": [
@@ -325,7 +324,7 @@
       "kind": "definition",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupBudgets",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupResponse",
-      "type": "\u2115 \u2192 \u211d \u2192 \u211d"
+      "type": "ℕ → ℝ → ℝ"
     },
     {
       "axioms": [
@@ -336,7 +335,7 @@
       "kind": "definition",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupBudgets",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergy",
-      "type": "\u211d \u2192 \u211d"
+      "type": "ℝ → ℝ"
     },
     {
       "axioms": [
@@ -347,7 +346,7 @@
       "kind": "definition",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupBudgets",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupFullGram",
-      "type": "\u211d \u2192 \u211d"
+      "type": "ℝ → ℝ"
     },
     {
       "axioms": [
@@ -358,7 +357,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupRegularity",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupVelocity.eq_1",
-      "type": "\u2200 (u : \u211d), pickupVelocity u = Real.exp (-u / 2) * mertensPrefix (Real.exp u)"
+      "type": "∀ (u : ℝ), pickupVelocity u = Real.exp (-u / 2) * mertensPrefix (Real.exp u)"
     },
     {
       "axioms": [
@@ -369,7 +368,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupRegularity",
       "name": "GRWTSK.RiemannHypothesis.CCC.wholePickup_intervalIntegrable",
-      "type": "\u2200 (a b : \u211d), IntervalIntegrable wholePickup MeasureTheory.volume a b"
+      "type": "∀ (a b : ℝ), IntervalIntegrable wholePickup MeasureTheory.volume a b"
     },
     {
       "axioms": [
@@ -380,7 +379,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupRegularity",
       "name": "GRWTSK.RiemannHypothesis.CCC.wholePickup.eq_1",
-      "type": "\u2200 (T : \u211d), wholePickup T = \u222b (u : \u211d) in 0..T, pickupVelocity u"
+      "type": "∀ (T : ℝ), wholePickup T = ∫ (u : ℝ) in 0..T, pickupVelocity u"
     },
     {
       "axioms": [
@@ -391,7 +390,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupRegularity",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupLocalEnergy_eq_sub",
-      "type": "\u2200 (T : \u211d), pickupLocalEnergy T = pickupEnergy T - pickupEnergy (max 0 (T - 1))"
+      "type": "∀ (T : ℝ), pickupLocalEnergy T = pickupEnergy T - pickupEnergy (max 0 (T - 1))"
     },
     {
       "axioms": [
@@ -402,7 +401,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupRegularity",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupLocalEnergy_le_energy",
-      "type": "\u2200 {T : \u211d}, 0 \u2264 T \u2192 pickupLocalEnergy T \u2264 pickupEnergy T"
+      "type": "∀ {T : ℝ}, 0 ≤ T → pickupLocalEnergy T ≤ pickupEnergy T"
     },
     {
       "axioms": [
@@ -413,7 +412,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupRegularity",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergy_nonneg",
-      "type": "\u2200 {T : \u211d}, 0 \u2264 T \u2192 0 \u2264 pickupEnergy T"
+      "type": "∀ {T : ℝ}, 0 ≤ T → 0 ≤ pickupEnergy T"
     },
     {
       "axioms": [
@@ -424,7 +423,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupRegularity",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupResponseGram_self_nonneg",
-      "type": "\u2200 {T : \u211d}, 0 \u2264 T \u2192 \u2200 (n : \u2115), 0 \u2264 pickupResponseGram T n n"
+      "type": "∀ {T : ℝ}, 0 ≤ T → ∀ (n : ℕ), 0 ≤ pickupResponseGram T n n"
     },
     {
       "axioms": [
@@ -435,7 +434,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupRegularity",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergy.eq_1",
-      "type": "\u2200 (T : \u211d), pickupEnergy T = \u222b (u : \u211d) in 0..T, wholePickup u ^ 2"
+      "type": "∀ (T : ℝ), pickupEnergy T = ∫ (u : ℝ) in 0..T, wholePickup u ^ 2"
     },
     {
       "axioms": [
@@ -479,7 +478,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupRegularity",
       "name": "GRWTSK.RiemannHypothesis.CCC.moebiusReal_abs_le_one",
-      "type": "\u2200 (n : \u2115), |moebiusReal n| \u2264 1"
+      "type": "∀ (n : ℕ), |moebiusReal n| ≤ 1"
     },
     {
       "axioms": [
@@ -490,7 +489,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupRegularity",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergy_mono",
-      "type": "\u2200 {S T : \u211d}, 0 \u2264 S \u2192 S \u2264 T \u2192 pickupEnergy S \u2264 pickupEnergy T"
+      "type": "∀ {S T : ℝ}, 0 ≤ S → S ≤ T → pickupEnergy S ≤ pickupEnergy T"
     },
     {
       "axioms": [
@@ -501,7 +500,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupRegularity",
       "name": "GRWTSK.RiemannHypothesis.CCC.wholePickup_sq_intervalIntegrable",
-      "type": "\u2200 (a b : \u211d), IntervalIntegrable (fun u => wholePickup u ^ 2) MeasureTheory.volume a b"
+      "type": "∀ (a b : ℝ), IntervalIntegrable (fun u => wholePickup u ^ 2) MeasureTheory.volume a b"
     },
     {
       "axioms": [
@@ -512,7 +511,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupRegularity",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupDiagonal_nonneg",
-      "type": "\u2200 {T : \u211d}, 0 \u2264 T \u2192 0 \u2264 pickupDiagonal T"
+      "type": "∀ {T : ℝ}, 0 ≤ T → 0 ≤ pickupDiagonal T"
     },
     {
       "axioms": [
@@ -523,7 +522,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupRegularity",
       "name": "GRWTSK.RiemannHypothesis.CCC.wholePickup_ae_hasDerivAt",
-      "type": "\u2200 (T : \u211d), \u2200\u1d50 (u : \u211d), u \u2208 Set.uIcc 0 T \u2192 HasDerivAt wholePickup (pickupVelocity u) u"
+      "type": "∀ (T : ℝ), ∀ᵐ (u : ℝ), u ∈ Set.uIcc 0 T → HasDerivAt wholePickup (pickupVelocity u) u"
     },
     {
       "axioms": [
@@ -534,7 +533,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupRegularity",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupLocalEnergy_nonneg",
-      "type": "\u2200 {T : \u211d}, 0 \u2264 T \u2192 0 \u2264 pickupLocalEnergy T"
+      "type": "∀ {T : ℝ}, 0 ≤ T → 0 ≤ pickupLocalEnergy T"
     },
     {
       "axioms": [
@@ -556,7 +555,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupRegularity",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupVelocity_abs_le",
-      "type": "\u2200 (u : \u211d), |pickupVelocity u| \u2264 Real.exp (u / 2)"
+      "type": "∀ (u : ℝ), |pickupVelocity u| ≤ Real.exp (u / 2)"
     },
     {
       "axioms": [
@@ -578,7 +577,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupRegularity",
       "name": "GRWTSK.RiemannHypothesis.CCC.mertensPrefix_abs_le",
-      "type": "\u2200 {x : \u211d}, 0 \u2264 x \u2192 |mertensPrefix x| \u2264 x"
+      "type": "∀ {x : ℝ}, 0 ≤ x → |mertensPrefix x| ≤ x"
     },
     {
       "axioms": [
@@ -600,7 +599,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupRegularity",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupVelocity_intervalIntegrable",
-      "type": "\u2200 (a b : \u211d), IntervalIntegrable pickupVelocity MeasureTheory.volume a b"
+      "type": "∀ (a b : ℝ), IntervalIntegrable pickupVelocity MeasureTheory.volume a b"
     },
     {
       "axioms": [
@@ -622,7 +621,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupRegularity",
       "name": "GRWTSK.RiemannHypothesis.CCC.wholePickup_absolutelyContinuousOnInterval",
-      "type": "\u2200 (T : \u211d), AbsolutelyContinuousOnInterval wholePickup 0 T"
+      "type": "∀ (T : ℝ), AbsolutelyContinuousOnInterval wholePickup 0 T"
     },
     {
       "axioms": [
@@ -633,7 +632,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupFiniteIdentity",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupAtomVelocity_intervalIntegrable",
-      "type": "\u2200 (n : \u2115) (a b : \u211d), IntervalIntegrable (pickupAtomVelocity n) MeasureTheory.volume a b"
+      "type": "∀ (n : ℕ) (a b : ℝ), IntervalIntegrable (pickupAtomVelocity n) MeasureTheory.volume a b"
     },
     {
       "axioms": [
@@ -644,7 +643,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupFiniteIdentity",
       "name": "GRWTSK.RiemannHypothesis.CCC.wholePickup_finite_atom_integrals",
-      "type": "\u2200 {T : \u211d},\n  0 \u2264 T \u2192 wholePickup T = \u2211 n \u2208 Finset.Icc 1 \u230aReal.exp T\u230b\u208a, moebiusReal n * \u222b (u : \u211d) in 0..T, pickupAtomVelocity n u"
+      "type": "∀ {T : ℝ},\n  0 ≤ T → wholePickup T = ∑ n ∈ Finset.Icc 1 ⌊Real.exp T⌋₊, moebiusReal n * ∫ (u : ℝ) in 0..T, pickupAtomVelocity n u"
     },
     {
       "axioms": [
@@ -655,7 +654,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupFiniteIdentity",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickup_exp_negative_log_half",
-      "type": "\u2200 {n : \u2115}, 1 \u2264 n \u2192 Real.exp (-Real.log \u2191n / 2) = (\u221a\u2191n)\u207b\u00b9"
+      "type": "∀ {n : ℕ}, 1 ≤ n → Real.exp (-Real.log ↑n / 2) = (√↑n)⁻¹"
     },
     {
       "axioms": [
@@ -666,7 +665,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupFiniteIdentity",
       "name": "GRWTSK.RiemannHypothesis.CCC.wholePickup_closed_prefix_rpow",
-      "type": "\u2200 {T : \u211d},\n  0 \u2264 T \u2192 wholePickup T = 2 * \u2211 n \u2208 Finset.Icc 1 \u230aReal.exp T\u230b\u208a, moebiusReal n * (\u2191n ^ (-(1 / 2)) - Real.exp (-T / 2))"
+      "type": "∀ {T : ℝ},\n  0 ≤ T → wholePickup T = 2 * ∑ n ∈ Finset.Icc 1 ⌊Real.exp T⌋₊, moebiusReal n * (↑n ^ (-(1 / 2)) - Real.exp (-T / 2))"
     },
     {
       "axioms": [
@@ -677,7 +676,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupFiniteIdentity",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergy_eq_diagonal_add_cross",
-      "type": "\u2200 {T : \u211d}, 0 \u2264 T \u2192 pickupEnergy T = pickupDiagonal T + pickupCross T"
+      "type": "∀ {T : ℝ}, 0 ≤ T → pickupEnergy T = pickupDiagonal T + pickupCross T"
     },
     {
       "axioms": [
@@ -688,7 +687,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupFiniteIdentity",
       "name": "GRWTSK.RiemannHypothesis.CCC.wholePickup_closed_prefix",
-      "type": "\u2200 {T : \u211d}, 0 \u2264 T \u2192 wholePickup T = 2 * \u2211 n \u2208 Finset.Icc 1 \u230aReal.exp T\u230b\u208a, moebiusReal n * ((\u221a\u2191n)\u207b\u00b9 - Real.exp (-T / 2))"
+      "type": "∀ {T : ℝ}, 0 ≤ T → wholePickup T = 2 * ∑ n ∈ Finset.Icc 1 ⌊Real.exp T⌋₊, moebiusReal n * ((√↑n)⁻¹ - Real.exp (-T / 2))"
     },
     {
       "axioms": [
@@ -699,7 +698,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupFiniteIdentity",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupResponse.eq_1",
-      "type": "\u2200 (n : \u2115) (u : \u211d), pickupResponse n u = if Real.log \u2191n \u2264 u then 2 * ((\u221a\u2191n)\u207b\u00b9 - Real.exp (-u / 2)) else 0"
+      "type": "∀ (n : ℕ) (u : ℝ), pickupResponse n u = if Real.log ↑n ≤ u then 2 * ((√↑n)⁻¹ - Real.exp (-u / 2)) else 0"
     },
     {
       "axioms": [
@@ -710,7 +709,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupFiniteIdentity",
       "name": "GRWTSK.RiemannHypothesis.CCC.mertensPrefix_fixed_inventory",
-      "type": "\u2200 {u T : \u211d},\n  u \u2264 T \u2192 mertensPrefix (Real.exp u) = \u2211 n \u2208 Finset.Icc 1 \u230aReal.exp T\u230b\u208a, if Real.log \u2191n \u2264 u then moebiusReal n else 0"
+      "type": "∀ {u T : ℝ},\n  u ≤ T → mertensPrefix (Real.exp u) = ∑ n ∈ Finset.Icc 1 ⌊Real.exp T⌋₊, if Real.log ↑n ≤ u then moebiusReal n else 0"
     },
     {
       "axioms": [
@@ -721,7 +720,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupFiniteIdentity",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickup_inverse_sqrt_eq_negative_half",
-      "type": "\u2200 (n : \u2115), (\u221a\u2191n)\u207b\u00b9 = \u2191n ^ (-(1 / 2))"
+      "type": "∀ (n : ℕ), (√↑n)⁻¹ = ↑n ^ (-(1 / 2))"
     },
     {
       "axioms": [
@@ -732,7 +731,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupFiniteIdentity",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergy_eq_full_gram",
-      "type": "\u2200 {T : \u211d}, 0 \u2264 T \u2192 pickupEnergy T = pickupFullGram T"
+      "type": "∀ {T : ℝ}, 0 ≤ T → pickupEnergy T = pickupFullGram T"
     },
     {
       "axioms": [
@@ -743,7 +742,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupFiniteIdentity",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupResponse_at_event",
-      "type": "\u2200 {n : \u2115}, 1 \u2264 n \u2192 pickupResponse n (Real.log \u2191n) = 0"
+      "type": "∀ {n : ℕ}, 1 ≤ n → pickupResponse n (Real.log ↑n) = 0"
     },
     {
       "axioms": [
@@ -754,7 +753,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupFiniteIdentity",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickup_log_le_iff_closed_cutoff",
-      "type": "\u2200 {n : \u2115}, 1 \u2264 n \u2192 \u2200 (u : \u211d), Real.log \u2191n \u2264 u \u2194 n \u2264 \u230aReal.exp u\u230b\u208a"
+      "type": "∀ {n : ℕ}, 1 ≤ n → ∀ (u : ℝ), Real.log ↑n ≤ u ↔ n ≤ ⌊Real.exp u⌋₊"
     },
     {
       "axioms": [
@@ -765,7 +764,7 @@
       "kind": "definition",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupFiniteIdentity",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupAtomVelocity",
-      "type": "\u2115 \u2192 \u211d \u2192 \u211d"
+      "type": "ℕ → ℝ → ℝ"
     },
     {
       "axioms": [
@@ -776,7 +775,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupFiniteIdentity",
       "name": "GRWTSK.RiemannHypothesis.CCC.wholePickup_fixed_inventory",
-      "type": "\u2200 {u T : \u211d}, 0 \u2264 u \u2192 u \u2264 T \u2192 wholePickup u = \u2211 n \u2208 Finset.Icc 1 \u230aReal.exp T\u230b\u208a, moebiusReal n * pickupResponse n u"
+      "type": "∀ {u T : ℝ}, 0 ≤ u → u ≤ T → wholePickup u = ∑ n ∈ Finset.Icc 1 ⌊Real.exp T⌋₊, moebiusReal n * pickupResponse n u"
     },
     {
       "axioms": [
@@ -787,7 +786,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupFiniteIdentity",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupResponse_continuous",
-      "type": "\u2200 {n : \u2115}, 1 \u2264 n \u2192 Continuous (pickupResponse n)"
+      "type": "∀ {n : ℕ}, 1 ≤ n → Continuous (pickupResponse n)"
     },
     {
       "axioms": [
@@ -798,7 +797,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupFiniteIdentity",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickup_negative_half_integral",
-      "type": "\u2200 (a b : \u211d), \u222b (u : \u211d) in a..b, Real.exp (-u / 2) = 2 * (Real.exp (-a / 2) - Real.exp (-b / 2))"
+      "type": "∀ (a b : ℝ), ∫ (u : ℝ) in a..b, Real.exp (-u / 2) = 2 * (Real.exp (-a / 2) - Real.exp (-b / 2))"
     },
     {
       "axioms": [
@@ -809,7 +808,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupFiniteIdentity",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupAtomVelocity_integral",
-      "type": "\u2200 {n : \u2115},\n  1 \u2264 n \u2192 \u2200 {T : \u211d}, Real.log \u2191n \u2264 T \u2192 \u222b (u : \u211d) in 0..T, pickupAtomVelocity n u = 2 * ((\u221a\u2191n)\u207b\u00b9 - Real.exp (-T / 2))"
+      "type": "∀ {n : ℕ},\n  1 ≤ n → ∀ {T : ℝ}, Real.log ↑n ≤ T → ∫ (u : ℝ) in 0..T, pickupAtomVelocity n u = 2 * ((√↑n)⁻¹ - Real.exp (-T / 2))"
     },
     {
       "axioms": [
@@ -820,7 +819,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupFiniteIdentity",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupResponse_product_intervalIntegrable",
-      "type": "\u2200 {m n : \u2115},\n  1 \u2264 m \u2192\n    1 \u2264 n \u2192 \u2200 (a b : \u211d), IntervalIntegrable (fun u => pickupResponse m u * pickupResponse n u) MeasureTheory.volume a b"
+      "type": "∀ {m n : ℕ},\n  1 ≤ m →\n    1 ≤ n → ∀ (a b : ℝ), IntervalIntegrable (fun u => pickupResponse m u * pickupResponse n u) MeasureTheory.volume a b"
     },
     {
       "axioms": [
@@ -831,7 +830,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupFiniteIdentity",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupAtomVelocity_measurable",
-      "type": "\u2200 (n : \u2115), Measurable (pickupAtomVelocity n)"
+      "type": "∀ (n : ℕ), Measurable (pickupAtomVelocity n)"
     },
     {
       "axioms": [
@@ -842,7 +841,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupFiniteIdentity",
       "name": "GRWTSK.RiemannHypothesis.CCC.wholePickup_closed_prefix_flux",
-      "type": "\u2200 {T : \u211d},\n  0 \u2264 T \u2192\n    wholePickup T =\n      2 * \u2211 n \u2208 Finset.Icc 1 \u230aReal.exp T\u230b\u208a, moebiusReal n * (\u221a\u2191n)\u207b\u00b9 - 2 * Real.exp (-T / 2) * mertensPrefix (Real.exp T)"
+      "type": "∀ {T : ℝ},\n  0 ≤ T →\n    wholePickup T =\n      2 * ∑ n ∈ Finset.Icc 1 ⌊Real.exp T⌋₊, moebiusReal n * (√↑n)⁻¹ - 2 * Real.exp (-T / 2) * mertensPrefix (Real.exp T)"
     },
     {
       "axioms": [
@@ -853,7 +852,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupFiniteIdentity",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupAtomVelocity.eq_1",
-      "type": "\u2200 (n : \u2115) (u : \u211d), pickupAtomVelocity n u = if Real.log \u2191n \u2264 u then Real.exp (-u / 2) else 0"
+      "type": "∀ (n : ℕ) (u : ℝ), pickupAtomVelocity n u = if Real.log ↑n ≤ u then Real.exp (-u / 2) else 0"
     },
     {
       "axioms": [
@@ -873,7 +872,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupFiniteIdentity",
       "name": "GRWTSK.RiemannHypothesis.CCC.wholePickup_response_sum",
-      "type": "\u2200 {T : \u211d}, 0 \u2264 T \u2192 wholePickup T = \u2211 n \u2208 Finset.Icc 1 \u230aReal.exp T\u230b\u208a, moebiusReal n * pickupResponse n T"
+      "type": "∀ {T : ℝ}, 0 ≤ T → wholePickup T = ∑ n ∈ Finset.Icc 1 ⌊Real.exp T⌋₊, moebiusReal n * pickupResponse n T"
     },
     {
       "axioms": [
@@ -884,7 +883,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupFiniteIdentity",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupVelocity_fixed_inventory",
-      "type": "\u2200 {u T : \u211d}, u \u2264 T \u2192 pickupVelocity u = \u2211 n \u2208 Finset.Icc 1 \u230aReal.exp T\u230b\u208a, moebiusReal n * pickupAtomVelocity n u"
+      "type": "∀ {u T : ℝ}, u ≤ T → pickupVelocity u = ∑ n ∈ Finset.Icc 1 ⌊Real.exp T⌋₊, moebiusReal n * pickupAtomVelocity n u"
     },
     {
       "axioms": [
@@ -895,7 +894,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupFiniteIdentity",
       "name": "GRWTSK.RiemannHypothesis.CCC.mertensPrefix.eq_1",
-      "type": "\u2200 (x : \u211d), mertensPrefix x = \u2211 n \u2208 Finset.Icc 1 \u230ax\u230b\u208a, moebiusReal n"
+      "type": "∀ (x : ℝ), mertensPrefix x = ∑ n ∈ Finset.Icc 1 ⌊x⌋₊, moebiusReal n"
     },
     {
       "axioms": [
@@ -905,7 +904,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupFiniteIdentity",
       "name": "GRWTSK.RiemannHypothesis.CCC.wholePickup_closed_prefix_flux._simp_1_1",
-      "type": "\u2200 {\u03b9 : Type u_1} {R : Type u_4} [inst : NonUnitalNonAssocSemiring R] (s : Finset \u03b9) (f : \u03b9 \u2192 R) (a : R),\n  \u2211 i \u2208 s, f i * a = (\u2211 i \u2208 s, f i) * a"
+      "type": "∀ {ι : Type u_1} {R : Type u_4} [inst : NonUnitalNonAssocSemiring R] (s : Finset ι) (f : ι → R) (a : R),\n  ∑ i ∈ s, f i * a = (∑ i ∈ s, f i) * a"
     },
     {
       "axioms": [
@@ -916,7 +915,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.DiagonalAllowance",
       "name": "GRWTSK.RiemannHypothesis.CCC.DiagonalAffineAlgebra.sharp_diagonal_le_quadratic",
-      "type": "\u2200 (T : \u211d), 2 * T ^ 2 - 8 * T + 16 * (1 - Real.exp (-T / 2)) \u2264 2 * T ^ 2"
+      "type": "∀ (T : ℝ), 2 * T ^ 2 - 8 * T + 16 * (1 - Real.exp (-T / 2)) ≤ 2 * T ^ 2"
     },
     {
       "axioms": [
@@ -927,7 +926,7 @@
       "kind": "definition",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupDiagonalBound",
       "name": "GRWTSK.RiemannHypothesis.CCC.diagonalComparison",
-      "type": "\u211d \u2192 \u211d \u2192 \u211d"
+      "type": "ℝ → ℝ → ℝ"
     },
     {
       "axioms": [
@@ -937,7 +936,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupDiagonalBound",
       "name": "GRWTSK.RiemannHypothesis.CCC.diagonal_sum_Icc_eq_range._proof_1_4",
-      "type": "\u2200 (N k : \u2115), \u00ac1 \u2264 k + 1 \u2192 False"
+      "type": "∀ (N k : ℕ), ¬1 ≤ k + 1 → False"
     },
     {
       "axioms": [
@@ -948,7 +947,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupDiagonalBound",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickup_diagonal_density_le",
-      "type": "\u2200 {u T : \u211d},\n  0 \u2264 u \u2192\n    u \u2264 T \u2192\n      \u2211 n \u2208 Finset.Icc 1 \u230aReal.exp T\u230b\u208a, moebiusReal n ^ 2 * pickupResponse n u ^ 2 \u2264 4 * u - 8 + 8 * Real.exp (-u / 2)"
+      "type": "∀ {u T : ℝ},\n  0 ≤ u →\n    u ≤ T →\n      ∑ n ∈ Finset.Icc 1 ⌊Real.exp T⌋₊, moebiusReal n ^ 2 * pickupResponse n u ^ 2 ≤ 4 * u - 8 + 8 * Real.exp (-u / 2)"
     },
     {
       "axioms": [
@@ -967,7 +966,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupDiagonalBound",
       "name": "GRWTSK.RiemannHypothesis.CCC.diagonal_sum_Icc_eq_range._proof_1_5",
-      "type": "\u2200 (N k : \u2115), k < N \u2192 \u00ack + 1 \u2264 N \u2192 False"
+      "type": "∀ (N k : ℕ), k < N → ¬k + 1 ≤ N → False"
     },
     {
       "axioms": [
@@ -978,7 +977,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupDiagonalBound",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupDiagonal_quadratic_bound",
-      "type": "\u2200 {T : \u211d}, 0 \u2264 T \u2192 0 \u2264 pickupDiagonal T \u2227 pickupDiagonal T \u2264 2 * T ^ 2"
+      "type": "∀ {T : ℝ}, 0 ≤ T → 0 ≤ pickupDiagonal T ∧ pickupDiagonal T ≤ 2 * T ^ 2"
     },
     {
       "axioms": [
@@ -989,7 +988,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupDiagonalBound",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickup_response_square_sum_cutoff",
-      "type": "\u2200 {u T : \u211d},\n  u \u2264 T \u2192\n    \u2211 n \u2208 Finset.Icc 1 \u230aReal.exp T\u230b\u208a, pickupResponse n u ^ 2 = \u2211 n \u2208 Finset.Icc 1 \u230aReal.exp u\u230b\u208a, pickupResponse n u ^ 2"
+      "type": "∀ {u T : ℝ},\n  u ≤ T →\n    ∑ n ∈ Finset.Icc 1 ⌊Real.exp T⌋₊, pickupResponse n u ^ 2 = ∑ n ∈ Finset.Icc 1 ⌊Real.exp u⌋₊, pickupResponse n u ^ 2"
     },
     {
       "axioms": [
@@ -1000,7 +999,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupDiagonalBound",
       "name": "GRWTSK.RiemannHypothesis.CCC.diagonalComparison_atom",
-      "type": "\u2200 {u : \u211d} {n : \u2115}, 1 \u2264 n \u2192 n \u2264 \u230aReal.exp u\u230b\u208a \u2192 pickupResponse n u ^ 2 = diagonalComparison u \u2191n"
+      "type": "∀ {u : ℝ} {n : ℕ}, 1 ≤ n → n ≤ ⌊Real.exp u⌋₊ → pickupResponse n u ^ 2 = diagonalComparison u ↑n"
     },
     {
       "axioms": [
@@ -1011,7 +1010,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupDiagonalBound",
       "name": "GRWTSK.RiemannHypothesis.CCC.diagonal_sum_Icc_eq_range._simp_1_1",
-      "type": "\u2200 {n m : \u2115}, (m \u2208 Finset.range n) = (m < n)"
+      "type": "∀ {n m : ℕ}, (m ∈ Finset.range n) = (m < n)"
     },
     {
       "axioms": [
@@ -1022,7 +1021,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupDiagonalBound",
       "name": "GRWTSK.RiemannHypothesis.CCC.diagonalComparison_eq_below_one",
-      "type": "\u2200 {u x : \u211d}, x \u2264 1 \u2192 diagonalComparison u x = 4 * (1 - Real.exp (-u / 2)) ^ 2"
+      "type": "∀ {u x : ℝ}, x ≤ 1 → diagonalComparison u x = 4 * (1 - Real.exp (-u / 2)) ^ 2"
     },
     {
       "axioms": [
@@ -1033,7 +1032,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupDiagonalBound",
       "name": "GRWTSK.RiemannHypothesis.CCC.diagonal_time_integral",
-      "type": "\u2200 (T : \u211d), \u222b (u : \u211d) in 0..T, 4 * u - 8 + 8 * Real.exp (-u / 2) = 2 * T ^ 2 - 8 * T + 16 * (1 - Real.exp (-T / 2))"
+      "type": "∀ (T : ℝ), ∫ (u : ℝ) in 0..T, 4 * u - 8 + 8 * Real.exp (-u / 2) = 2 * T ^ 2 - 8 * T + 16 * (1 - Real.exp (-T / 2))"
     },
     {
       "axioms": [
@@ -1044,7 +1043,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupDiagonalBound",
       "name": "GRWTSK.RiemannHypothesis.CCC.diagonal_sqrt_exp",
-      "type": "\u2200 (u : \u211d), \u221a(Real.exp u) = Real.exp (u / 2)"
+      "type": "∀ (u : ℝ), √(Real.exp u) = Real.exp (u / 2)"
     },
     {
       "axioms": [
@@ -1054,7 +1053,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupDiagonalBound",
       "name": "GRWTSK.RiemannHypothesis.CCC.diagonal_sum_Icc_eq_range._proof_1_6",
-      "type": "\u2200 (N k : \u2115), \u00ack + 1 - 1 = k \u2192 False"
+      "type": "∀ (N k : ℕ), ¬k + 1 - 1 = k → False"
     },
     {
       "axioms": [
@@ -1065,7 +1064,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupDiagonalBound",
       "name": "GRWTSK.RiemannHypothesis.CCC.diagonalComparison.eq_1",
-      "type": "\u2200 (u x : \u211d), diagonalComparison u x = 4 * ((\u221a(max 1 x))\u207b\u00b9 - Real.exp (-u / 2)) ^ 2"
+      "type": "∀ (u x : ℝ), diagonalComparison u x = 4 * ((√(max 1 x))⁻¹ - Real.exp (-u / 2)) ^ 2"
     },
     {
       "axioms": [
@@ -1076,7 +1075,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupDiagonalBound",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupDiagonal_eq_integral_density",
-      "type": "\u2200 (T : \u211d),\n  pickupDiagonal T = \u222b (u : \u211d) in 0..T, \u2211 n \u2208 Finset.Icc 1 \u230aReal.exp T\u230b\u208a, moebiusReal n ^ 2 * pickupResponse n u ^ 2"
+      "type": "∀ (T : ℝ),\n  pickupDiagonal T = ∫ (u : ℝ) in 0..T, ∑ n ∈ Finset.Icc 1 ⌊Real.exp T⌋₊, moebiusReal n ^ 2 * pickupResponse n u ^ 2"
     },
     {
       "axioms": [
@@ -1087,7 +1086,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupDiagonalBound",
       "name": "GRWTSK.RiemannHypothesis.CCC.diagonalComparison_nonneg",
-      "type": "\u2200 (u x : \u211d), 0 \u2264 diagonalComparison u x"
+      "type": "∀ (u x : ℝ), 0 ≤ diagonalComparison u x"
     },
     {
       "axioms": [
@@ -1098,7 +1097,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupDiagonalBound",
       "name": "GRWTSK.RiemannHypothesis.CCC.diagonalComparison_sum_le_integral",
-      "type": "\u2200 {u : \u211d},\n  0 \u2264 u \u2192 \u2211 n \u2208 Finset.Icc 1 \u230aReal.exp u\u230b\u208a, diagonalComparison u \u2191n \u2264 \u222b (x : \u211d) in 0..Real.exp u, diagonalComparison u x"
+      "type": "∀ {u : ℝ},\n  0 ≤ u → ∑ n ∈ Finset.Icc 1 ⌊Real.exp u⌋₊, diagonalComparison u ↑n ≤ ∫ (x : ℝ) in 0..Real.exp u, diagonalComparison u x"
     },
     {
       "axioms": [
@@ -1109,7 +1108,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupDiagonalBound",
       "name": "GRWTSK.RiemannHypothesis.CCC.moebiusReal_sq_le_one",
-      "type": "\u2200 (n : \u2115), moebiusReal n ^ 2 \u2264 1"
+      "type": "∀ (n : ℕ), moebiusReal n ^ 2 ≤ 1"
     },
     {
       "axioms": [
@@ -1120,7 +1119,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupDiagonalBound",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupDiagonal_sharp_bound",
-      "type": "\u2200 {T : \u211d},\n  0 \u2264 T \u2192\n    0 \u2264 pickupDiagonal T \u2227\n      pickupDiagonal T \u2264 2 * T ^ 2 - 8 * T + 16 * (1 - Real.exp (-T / 2)) \u2227\n        2 * T ^ 2 - 8 * T + 16 * (1 - Real.exp (-T / 2)) \u2264 2 * T ^ 2"
+      "type": "∀ {T : ℝ},\n  0 ≤ T →\n    0 ≤ pickupDiagonal T ∧\n      pickupDiagonal T ≤ 2 * T ^ 2 - 8 * T + 16 * (1 - Real.exp (-T / 2)) ∧\n        2 * T ^ 2 - 8 * T + 16 * (1 - Real.exp (-T / 2)) ≤ 2 * T ^ 2"
     },
     {
       "axioms": [
@@ -1131,7 +1130,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupDiagonalBound",
       "name": "GRWTSK.RiemannHypothesis.CCC.diagonal_negative_half_sqrt",
-      "type": "\u2200 (u : \u211d), Real.exp (-u / 2) = (\u221a(Real.exp u))\u207b\u00b9"
+      "type": "∀ (u : ℝ), Real.exp (-u / 2) = (√(Real.exp u))⁻¹"
     },
     {
       "axioms": [
@@ -1142,7 +1141,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupDiagonalBound",
       "name": "GRWTSK.RiemannHypothesis.CCC.diagonalComparison_antitone",
-      "type": "\u2200 {u : \u211d}, 0 \u2264 u \u2192 AntitoneOn (diagonalComparison u) (Set.Icc 0 (Real.exp u))"
+      "type": "∀ {u : ℝ}, 0 ≤ u → AntitoneOn (diagonalComparison u) (Set.Icc 0 (Real.exp u))"
     },
     {
       "axioms": [
@@ -1153,7 +1152,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupDiagonalBound",
       "name": "GRWTSK.RiemannHypothesis.CCC.diagonalComparison_eq_above_one",
-      "type": "\u2200 {u x : \u211d}, 1 \u2264 x \u2192 diagonalComparison u x = 4 * ((\u221ax)\u207b\u00b9 - Real.exp (-u / 2)) ^ 2"
+      "type": "∀ {u x : ℝ}, 1 ≤ x → diagonalComparison u x = 4 * ((√x)⁻¹ - Real.exp (-u / 2)) ^ 2"
     },
     {
       "axioms": [
@@ -1164,7 +1163,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupDiagonalBound",
       "name": "GRWTSK.RiemannHypothesis.CCC.diagonal_sum_Icc_eq_range",
-      "type": "\u2200 (N : \u2115) (f : \u2115 \u2192 \u211d), \u2211 n \u2208 Finset.Icc 1 N, f n = \u2211 k \u2208 Finset.range N, f (k + 1)"
+      "type": "∀ (N : ℕ) (f : ℕ → ℝ), ∑ n ∈ Finset.Icc 1 N, f n = ∑ k ∈ Finset.range N, f (k + 1)"
     },
     {
       "axioms": [
@@ -1173,7 +1172,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupDiagonalBound",
       "name": "GRWTSK.RiemannHypothesis.CCC.diagonal_time_integral._simp_1_1",
-      "type": "\u2200 {R : Type u_1} [inst : AddMonoidWithOne R] [CharZero R] (n : \u2115) [inst_2 : n.AtLeastTwo], (OfNat.ofNat n = 0) = False"
+      "type": "∀ {R : Type u_1} [inst : AddMonoidWithOne R] [CharZero R] (n : ℕ) [inst_2 : n.AtLeastTwo], (OfNat.ofNat n = 0) = False"
     },
     {
       "axioms": [
@@ -1192,7 +1191,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupDiagonalBound",
       "name": "GRWTSK.RiemannHypothesis.CCC.diagonal_sum_Icc_eq_range._proof_1_2",
-      "type": "\u2200 (N n : \u2115), 1 \u2264 n \u2227 n \u2264 N \u2192 \u00acn - 1 < N \u2192 False"
+      "type": "∀ (N n : ℕ), 1 ≤ n ∧ n ≤ N → ¬n - 1 < N → False"
     },
     {
       "axioms": [
@@ -1202,7 +1201,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupDiagonalBound",
       "name": "GRWTSK.RiemannHypothesis.CCC.diagonal_sum_Icc_eq_range._proof_1_3",
-      "type": "\u2200 (n m : \u2115), n - 1 = m - 1 \u2192 1 \u2264 n \u2192 1 \u2264 m \u2192 \u00acn = m \u2192 False"
+      "type": "∀ (n m : ℕ), n - 1 = m - 1 → 1 ≤ n → 1 ≤ m → ¬n = m → False"
     },
     {
       "axioms": [
@@ -1213,7 +1212,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupDiagonalBound",
       "name": "GRWTSK.RiemannHypothesis.CCC.diagonal_inverse_sqrt_integral",
-      "type": "\u2200 {u : \u211d}, 0 \u2264 u \u2192 \u222b (x : \u211d) in 1..Real.exp u, (\u221ax)\u207b\u00b9 = 2 * (Real.exp (u / 2) - 1)"
+      "type": "∀ {u : ℝ}, 0 ≤ u → ∫ (x : ℝ) in 1..Real.exp u, (√x)⁻¹ = 2 * (Real.exp (u / 2) - 1)"
     },
     {
       "axioms": [
@@ -1224,7 +1223,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupDiagonalBound",
       "name": "GRWTSK.RiemannHypothesis.CCC.diagonalComparison_continuous",
-      "type": "\u2200 (u : \u211d), Continuous (diagonalComparison u)"
+      "type": "∀ (u : ℝ), Continuous (diagonalComparison u)"
     },
     {
       "axioms": [
@@ -1235,7 +1234,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupDiagonalBound",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupDiagonal_le_sharp",
-      "type": "\u2200 {T : \u211d}, 0 \u2264 T \u2192 pickupDiagonal T \u2264 2 * T ^ 2 - 8 * T + 16 * (1 - Real.exp (-T / 2))"
+      "type": "∀ {T : ℝ}, 0 ≤ T → pickupDiagonal T ≤ 2 * T ^ 2 - 8 * T + 16 * (1 - Real.exp (-T / 2))"
     },
     {
       "axioms": [
@@ -1246,7 +1245,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupDiagonalBound",
       "name": "GRWTSK.RiemannHypothesis.CCC.diagonalComparison_integral",
-      "type": "\u2200 {u : \u211d}, 0 \u2264 u \u2192 \u222b (x : \u211d) in 0..Real.exp u, diagonalComparison u x = 4 * u - 8 + 8 * Real.exp (-u / 2)"
+      "type": "∀ {u : ℝ}, 0 ≤ u → ∫ (x : ℝ) in 0..Real.exp u, diagonalComparison u x = 4 * u - 8 + 8 * Real.exp (-u / 2)"
     },
     {
       "axioms": [
@@ -1257,7 +1256,7 @@
       "kind": "definition",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupLaplaceDefinition",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupLaplaceDomain",
-      "type": "Set \u2102"
+      "type": "Set ℂ"
     },
     {
       "axioms": [
@@ -1268,7 +1267,7 @@
       "kind": "definition",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupLaplaceDefinition",
       "name": "GRWTSK.RiemannHypothesis.CCC.signedPickupLaplace",
-      "type": "\u2102 \u2192 \u2102"
+      "type": "ℂ → ℂ"
     },
     {
       "axioms": [
@@ -1279,7 +1278,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform",
       "name": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform.pickupTriangle_time_integral",
-      "type": "\u2200 (z : \u2102) (t : \u211d),\n  0 < t \u2192\n    \u222b (u : \u211d) in Set.Ioi 0, PickupInitialTransform.pickupTriangle z (t, u) = Complex.exp (-z * \u2191t) * \u2191(wholePickup t)"
+      "type": "∀ (z : ℂ) (t : ℝ),\n  0 < t →\n    ∫ (u : ℝ) in Set.Ioi 0, PickupInitialTransform.pickupTriangle z (t, u) = Complex.exp (-z * ↑t) * ↑(wholePickup t)"
     },
     {
       "axioms": [
@@ -1290,7 +1289,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform",
       "name": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform.mertensPrefix_laplace",
-      "type": "\u2200 {s : \u2102},\n  1 < s.re \u2192 \u222b (u : \u211d) in Set.Ioi 0, Complex.exp (-s * \u2191u) * \u2191(mertensPrefix (Real.exp u)) = 1 / (s * riemannZeta s)"
+      "type": "∀ {s : ℂ},\n  1 < s.re → ∫ (u : ℝ) in Set.Ioi 0, Complex.exp (-s * ↑u) * ↑(mertensPrefix (Real.exp u)) = 1 / (s * riemannZeta s)"
     },
     {
       "axioms": [
@@ -1301,7 +1300,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform",
       "name": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform.wholePickup_laplace",
-      "type": "\u2200 {z : \u2102},\n  1 / 2 < z.re \u2192\n    \u222b (t : \u211d) in Set.Ioi 0, Complex.exp (-z * \u2191t) * \u2191(wholePickup t) = 1 / (z * (z + 1 / 2) * riemannZeta (z + 1 / 2))"
+      "type": "∀ {z : ℂ},\n  1 / 2 < z.re →\n    ∫ (t : ℝ) in Set.Ioi 0, Complex.exp (-z * ↑t) * ↑(wholePickup t) = 1 / (z * (z + 1 / 2) * riemannZeta (z + 1 / 2))"
     },
     {
       "axioms": [
@@ -1312,7 +1311,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform",
       "name": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform.complexMoebius.eq_1",
-      "type": "\u2200 (n : \u2115), PickupInitialTransform.complexMoebius n = \u2191(moebiusReal n)"
+      "type": "∀ (n : ℕ), PickupInitialTransform.complexMoebius n = ↑(moebiusReal n)"
     },
     {
       "axioms": [
@@ -1323,7 +1322,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform",
       "name": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform.complexMoebius_summable",
-      "type": "\u2200 {s : \u2102}, 1 < s.re \u2192 LSeriesSummable PickupInitialTransform.complexMoebius s"
+      "type": "∀ {s : ℂ}, 1 < s.re → LSeriesSummable PickupInitialTransform.complexMoebius s"
     },
     {
       "axioms": [
@@ -1334,7 +1333,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform",
       "name": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform.pickupTriangle_density_integral",
-      "type": "\u2200 {z : \u2102},\n  1 / 2 < z.re \u2192\n    \u2200 (u : \u211d),\n      0 < u \u2192\n        \u222b (t : \u211d) in Set.Ioi 0, PickupInitialTransform.pickupTriangle z (t, u) =\n          z\u207b\u00b9 * (Complex.exp (-z * \u2191u) * \u2191(pickupVelocity u))"
+      "type": "∀ {z : ℂ},\n  1 / 2 < z.re →\n    ∀ (u : ℝ),\n      0 < u →\n        ∫ (t : ℝ) in Set.Ioi 0, PickupInitialTransform.pickupTriangle z (t, u) =\n          z⁻¹ * (Complex.exp (-z * ↑u) * ↑(pickupVelocity u))"
     },
     {
       "axioms": [
@@ -1345,7 +1344,7 @@
       "kind": "definition",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform",
       "name": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform.pickupTriangle",
-      "type": "\u2102 \u2192 \u211d \u00d7 \u211d \u2192 \u2102"
+      "type": "ℂ → ℝ × ℝ → ℂ"
     },
     {
       "axioms": [
@@ -1356,7 +1355,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform",
       "name": "GRWTSK.RiemannHypothesis.CCC.moebiusReal.eq_1",
-      "type": "\u2200 (n : \u2115), moebiusReal n = \u2191(ArithmeticFunction.moebius n)"
+      "type": "∀ (n : ℕ), moebiusReal n = ↑(ArithmeticFunction.moebius n)"
     },
     {
       "axioms": [
@@ -1367,7 +1366,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform",
       "name": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform.mertensPrefix_mellin",
-      "type": "\u2200 {s : \u2102}, 1 < s.re \u2192 \u222b (x : \u211d) in Set.Ioi 1, \u2191(mertensPrefix x) * \u2191x ^ (-(s + 1)) = 1 / (s * riemannZeta s)"
+      "type": "∀ {s : ℂ}, 1 < s.re → ∫ (x : ℝ) in Set.Ioi 1, ↑(mertensPrefix x) * ↑x ^ (-(s + 1)) = 1 / (s * riemannZeta s)"
     },
     {
       "axioms": [
@@ -1378,7 +1377,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform",
       "name": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform.pickupTriangle_measurable",
-      "type": "\u2200 (z : \u2102), Measurable (PickupInitialTransform.pickupTriangle z)"
+      "type": "∀ (z : ℂ), Measurable (PickupInitialTransform.pickupTriangle z)"
     },
     {
       "axioms": [
@@ -1389,7 +1388,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform",
       "name": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform.pickupTriangle_integrable",
-      "type": "\u2200 {z : \u2102},\n  1 / 2 < z.re \u2192\n    MeasureTheory.Integrable (PickupInitialTransform.pickupTriangle z)\n      ((MeasureTheory.volume.restrict (Set.Ioi 0)).prod (MeasureTheory.volume.restrict (Set.Ioi 0)))"
+      "type": "∀ {z : ℂ},\n  1 / 2 < z.re →\n    MeasureTheory.Integrable (PickupInitialTransform.pickupTriangle z)\n      ((MeasureTheory.volume.restrict (Set.Ioi 0)).prod (MeasureTheory.volume.restrict (Set.Ioi 0)))"
     },
     {
       "axioms": [
@@ -1400,7 +1399,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform",
       "name": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform.complexMoebius_eq",
-      "type": "\u2200 (n : \u2115), PickupInitialTransform.complexMoebius n = \u2191(ArithmeticFunction.moebius n)"
+      "type": "∀ (n : ℕ), PickupInitialTransform.complexMoebius n = ↑(ArithmeticFunction.moebius n)"
     },
     {
       "axioms": [
@@ -1411,7 +1410,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform",
       "name": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform.complexMoebius_LSeries",
-      "type": "\u2200 {s : \u2102}, 1 < s.re \u2192 LSeries PickupInitialTransform.complexMoebius s = 1 / riemannZeta s"
+      "type": "∀ {s : ℂ}, 1 < s.re → LSeries PickupInitialTransform.complexMoebius s = 1 / riemannZeta s"
     },
     {
       "axioms": [
@@ -1422,7 +1421,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform",
       "name": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform.initial_transform",
-      "type": "\u2200 {z : \u2102}, 1 / 2 < z.re \u2192 signedPickupLaplace z = 1 / (z * (z + 1 / 2) * riemannZeta (z + 1 / 2))"
+      "type": "∀ {z : ℂ}, 1 / 2 < z.re → signedPickupLaplace z = 1 / (z * (z + 1 / 2) * riemannZeta (z + 1 / 2))"
     },
     {
       "axioms": [
@@ -1433,7 +1432,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform",
       "name": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform.pickupTriangle.eq_1",
-      "type": "\u2200 (z : \u2102) (p : \u211d \u00d7 \u211d),\n  PickupInitialTransform.pickupTriangle z p =\n    {p | p.2 \u2264 p.1}.indicator (fun p => Complex.exp (-z * \u2191p.1) * \u2191(pickupVelocity p.2)) p"
+      "type": "∀ (z : ℂ) (p : ℝ × ℝ),\n  PickupInitialTransform.pickupTriangle z p =\n    {p | p.2 ≤ p.1}.indicator (fun p => Complex.exp (-z * ↑p.1) * ↑(pickupVelocity p.2)) p"
     },
     {
       "axioms": [
@@ -1444,7 +1443,7 @@
       "kind": "definition",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform",
       "name": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform.complexMoebius",
-      "type": "\u2115 \u2192 \u2102"
+      "type": "ℕ → ℂ"
     },
     {
       "axioms": [
@@ -1455,7 +1454,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform",
       "name": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform.complexMoebius_prefix_bigO",
-      "type": "(fun n => \u2211 k \u2208 Finset.Icc 1 n, PickupInitialTransform.complexMoebius k) =O[Filter.atTop] fun n => \u2191n ^ 1"
+      "type": "(fun n => ∑ k ∈ Finset.Icc 1 n, PickupInitialTransform.complexMoebius k) =O[Filter.atTop] fun n => ↑n ^ 1"
     },
     {
       "axioms": [
@@ -1466,7 +1465,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform",
       "name": "GRWTSK.RiemannHypothesis.CCC.signedPickupLaplace.eq_1",
-      "type": "\u2200 (z : \u2102), signedPickupLaplace z = \u222b (t : \u211d) in Set.Ioi 0, Complex.exp (-z * \u2191t) * \u2191(wholePickup t)"
+      "type": "∀ (z : ℂ), signedPickupLaplace z = ∫ (t : ℝ) in Set.Ioi 0, Complex.exp (-z * ↑t) * ↑(wholePickup t)"
     },
     {
       "axioms": [
@@ -1477,7 +1476,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform",
       "name": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform.complexMoebius_prefix",
-      "type": "\u2200 (x : \u211d), \u2211 n \u2208 Finset.Icc 1 \u230ax\u230b\u208a, PickupInitialTransform.complexMoebius n = \u2191(mertensPrefix x)"
+      "type": "∀ (x : ℝ), ∑ n ∈ Finset.Icc 1 ⌊x⌋₊, PickupInitialTransform.complexMoebius n = ↑(mertensPrefix x)"
     },
     {
       "axioms": [
@@ -1488,7 +1487,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform",
       "name": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform.pickupVelocity_laplace",
-      "type": "\u2200 {z : \u2102},\n  1 / 2 < z.re \u2192\n    \u222b (u : \u211d) in Set.Ioi 0, Complex.exp (-z * \u2191u) * \u2191(pickupVelocity u) = 1 / ((z + 1 / 2) * riemannZeta (z + 1 / 2))"
+      "type": "∀ {z : ℂ},\n  1 / 2 < z.re →\n    ∫ (u : ℝ) in Set.Ioi 0, Complex.exp (-z * ↑u) * ↑(pickupVelocity u) = 1 / ((z + 1 / 2) * riemannZeta (z + 1 / 2))"
     },
     {
       "axioms": [
@@ -1499,7 +1498,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.EnergyIntegrability",
       "name": "GRWTSK.RiemannHypothesis.CCC.integrableOn_tilt_of_polynomial_energy",
-      "type": "\u2200 {f : \u211d \u2192 \u211d},\n  Continuous f \u2192\n    \u2200 {C q : \u211d},\n      0 \u2264 C \u2192\n        (\u2200 (T : \u211d), 0 \u2264 T \u2192 \u222b (u : \u211d) in 0..T, f u ^ 2 \u2264 C * (1 + T) ^ q) \u2192\n          \u2200 {\u03c3 : \u211d},\n            0 < \u03c3 \u2192 MeasureTheory.IntegrableOn (fun u => Real.exp (-\u03c3 * u) * f u) (Set.Ioi 0) MeasureTheory.volume"
+      "type": "∀ {f : ℝ → ℝ},\n  Continuous f →\n    ∀ {C q : ℝ},\n      0 ≤ C →\n        (∀ (T : ℝ), 0 ≤ T → ∫ (u : ℝ) in 0..T, f u ^ 2 ≤ C * (1 + T) ^ q) →\n          ∀ {σ : ℝ},\n            0 < σ → MeasureTheory.IntegrableOn (fun u => Real.exp (-σ * u) * f u) (Set.Ioi 0) MeasureTheory.volume"
     },
     {
       "axioms": [
@@ -1510,7 +1509,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.EnergyIntegrability",
       "name": "GRWTSK.RiemannHypothesis.CCC.summable_exp_neg_mul_nat_add_rpow",
-      "type": "\u2200 (\u03c3 q : \u211d), 0 < \u03c3 \u2192 Summable fun n => Real.exp (-\u03c3 * \u2191n) * (\u2191n + 2) ^ q"
+      "type": "∀ (σ q : ℝ), 0 < σ → Summable fun n => Real.exp (-σ * ↑n) * (↑n + 2) ^ q"
     },
     {
       "axioms": [
@@ -1521,7 +1520,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.EnergyIntegrability",
       "name": "GRWTSK.RiemannHypothesis.CCC.tilted_block_norm_bound",
-      "type": "\u2200 {f : \u211d \u2192 \u211d},\n  Continuous f \u2192\n    \u2200 {C q \u03c3 : \u211d},\n      0 < \u03c3 \u2192\n        (\u2200 (T : \u211d), 0 \u2264 T \u2192 \u222b (u : \u211d) in 0..T, f u ^ 2 \u2264 C * (1 + T) ^ q) \u2192\n          \u2200 (n : \u2115),\n            \u222b (u : \u211d) in Set.Icc (\u2191n) (\u2191n + 1), \u2016Real.exp (-\u03c3 * u) * f u\u2016 \u2264 Real.exp (-\u03c3 * \u2191n) * (1 + C * (\u2191n + 2) ^ q)"
+      "type": "∀ {f : ℝ → ℝ},\n  Continuous f →\n    ∀ {C q σ : ℝ},\n      0 < σ →\n        (∀ (T : ℝ), 0 ≤ T → ∫ (u : ℝ) in 0..T, f u ^ 2 ≤ C * (1 + T) ^ q) →\n          ∀ (n : ℕ),\n            ∫ (u : ℝ) in Set.Icc (↑n) (↑n + 1), ‖Real.exp (-σ * u) * f u‖ ≤ Real.exp (-σ * ↑n) * (1 + C * (↑n + 2) ^ q)"
     },
     {
       "axioms": [
@@ -1532,7 +1531,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.EnergyIntegrability",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickup_tilt_integrable_of_energy_poly",
-      "type": "Continuous wholePickup \u2192\n  PickupEnergyPoly \u2192\n    \u2200 {\u03c3 : \u211d},\n      0 < \u03c3 \u2192 MeasureTheory.IntegrableOn (fun u => Real.exp (-\u03c3 * u) * wholePickup u) (Set.Ioi 0) MeasureTheory.volume"
+      "type": "Continuous wholePickup →\n  PickupEnergyPoly →\n    ∀ {σ : ℝ},\n      0 < σ → MeasureTheory.IntegrableOn (fun u => Real.exp (-σ * u) * wholePickup u) (Set.Ioi 0) MeasureTheory.volume"
     },
     {
       "axioms": [
@@ -1543,7 +1542,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.LaplaceAnalytic",
       "name": "GRWTSK.RiemannHypothesis.CCC.Laplace.transform_analytic",
-      "type": "\u2200 {\u03a9 : Type u_1} [inst : MeasurableSpace \u03a9] {X : \u03a9 \u2192 \u211d} {\u03bc : MeasureTheory.Measure \u03a9} (a : \u211d),\n  (\u2200 (t : \u211d), a < t \u2192 MeasureTheory.Integrable (fun \u03c9 => Real.exp (-t * X \u03c9)) \u03bc) \u2192\n    \u2200 (s : \u2102), a < s.re \u2192 AnalyticAt \u2102 (Laplace.transform X \u03bc) s"
+      "type": "∀ {Ω : Type u_1} [inst : MeasurableSpace Ω] {X : Ω → ℝ} {μ : MeasureTheory.Measure Ω} (a : ℝ),\n  (∀ (t : ℝ), a < t → MeasureTheory.Integrable (fun ω => Real.exp (-t * X ω)) μ) →\n    ∀ (s : ℂ), a < s.re → AnalyticAt ℂ (Laplace.transform X μ) s"
     },
     {
       "axioms": [
@@ -1554,7 +1553,7 @@
       "kind": "definition",
       "module": "GRWTSK.RiemannHypothesis.CCC.LaplaceAnalytic",
       "name": "GRWTSK.RiemannHypothesis.CCC.Laplace.transform",
-      "type": "{\u03a9 : Type u_1} \u2192 [inst : MeasurableSpace \u03a9] \u2192 (\u03a9 \u2192 \u211d) \u2192 MeasureTheory.Measure \u03a9 \u2192 \u2102 \u2192 \u2102"
+      "type": "{Ω : Type u_1} → [inst : MeasurableSpace Ω] → (Ω → ℝ) → MeasureTheory.Measure Ω → ℂ → ℂ"
     },
     {
       "axioms": [
@@ -1565,7 +1564,7 @@
       "kind": "definition",
       "module": "GRWTSK.RiemannHypothesis.CCC.SignedPickupAnalytic",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupPartMeasure",
-      "type": "\u211d \u2192 MeasureTheory.Measure \u211d"
+      "type": "ℝ → MeasureTheory.Measure ℝ"
     },
     {
       "axioms": [
@@ -1576,7 +1575,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.SignedPickupAnalytic",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickup_part_complex_integrable",
-      "type": "Continuous wholePickup \u2192\n  (\u2200 (\u03c3 : \u211d),\n      0 < \u03c3 \u2192\n        MeasureTheory.IntegrableOn (fun u => Real.exp (-\u03c3 * u) * wholePickup u) (Set.Ioi 0) MeasureTheory.volume) \u2192\n    \u2200 {\u03b5 : \u211d},\n      |\u03b5| \u2264 1 \u2192\n        \u2200 {z : \u2102},\n          0 < z.re \u2192\n            MeasureTheory.Integrable (fun u => \u2191(pickupPartDensity \u03b5 u) \u2022 Complex.exp (-z * \u2191u))\n              (MeasureTheory.volume.restrict (Set.Ioi 0))"
+      "type": "Continuous wholePickup →\n  (∀ (σ : ℝ),\n      0 < σ →\n        MeasureTheory.IntegrableOn (fun u => Real.exp (-σ * u) * wholePickup u) (Set.Ioi 0) MeasureTheory.volume) →\n    ∀ {ε : ℝ},\n      |ε| ≤ 1 →\n        ∀ {z : ℂ},\n          0 < z.re →\n            MeasureTheory.Integrable (fun u => ↑(pickupPartDensity ε u) • Complex.exp (-z * ↑u))\n              (MeasureTheory.volume.restrict (Set.Ioi 0))"
     },
     {
       "axioms": [
@@ -1587,7 +1586,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.SignedPickupAnalytic",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupPartDensity.eq_1",
-      "type": "\u2200 (\u03b5 u : \u211d), pickupPartDensity \u03b5 u = (\u03b5 * wholePickup u).toNNReal"
+      "type": "∀ (ε u : ℝ), pickupPartDensity ε u = (ε * wholePickup u).toNNReal"
     },
     {
       "axioms": [
@@ -1598,7 +1597,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.SignedPickupAnalytic",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupPartMeasure.eq_1",
-      "type": "\u2200 (\u03b5 : \u211d),\n  pickupPartMeasure \u03b5 = (MeasureTheory.volume.restrict (Set.Ioi 0)).withDensity fun u => \u2191(pickupPartDensity \u03b5 u)"
+      "type": "∀ (ε : ℝ),\n  pickupPartMeasure ε = (MeasureTheory.volume.restrict (Set.Ioi 0)).withDensity fun u => ↑(pickupPartDensity ε u)"
     },
     {
       "axioms": [
@@ -1609,7 +1608,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.SignedPickupAnalytic",
       "name": "GRWTSK.RiemannHypothesis.CCC.differentiableOn_signedPickupLaplace_of_energy_poly",
-      "type": "Continuous wholePickup \u2192 PickupEnergyPoly \u2192 DifferentiableOn \u2102 signedPickupLaplace pickupLaplaceDomain"
+      "type": "Continuous wholePickup → PickupEnergyPoly → DifferentiableOn ℂ signedPickupLaplace pickupLaplaceDomain"
     },
     {
       "axioms": [
@@ -1620,7 +1619,7 @@
       "kind": "definition",
       "module": "GRWTSK.RiemannHypothesis.CCC.SignedPickupAnalytic",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupPartDensity",
-      "type": "\u211d \u2192 \u211d \u2192 NNReal"
+      "type": "ℝ → ℝ → NNReal"
     },
     {
       "axioms": [
@@ -1631,7 +1630,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.SignedPickupAnalytic",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupPartDensity_continuous",
-      "type": "Continuous wholePickup \u2192 \u2200 (\u03b5 : \u211d), Continuous (pickupPartDensity \u03b5)"
+      "type": "Continuous wholePickup → ∀ (ε : ℝ), Continuous (pickupPartDensity ε)"
     },
     {
       "axioms": [
@@ -1642,7 +1641,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.SignedPickupAnalytic",
       "name": "GRWTSK.RiemannHypothesis.CCC.analyticAt_signedPickupLaplace_of_tilts",
-      "type": "Continuous wholePickup \u2192\n  (\u2200 (\u03c3 : \u211d),\n      0 < \u03c3 \u2192\n        MeasureTheory.IntegrableOn (fun u => Real.exp (-\u03c3 * u) * wholePickup u) (Set.Ioi 0) MeasureTheory.volume) \u2192\n    \u2200 {z : \u2102}, 0 < z.re \u2192 AnalyticAt \u2102 signedPickupLaplace z"
+      "type": "Continuous wholePickup →\n  (∀ (σ : ℝ),\n      0 < σ →\n        MeasureTheory.IntegrableOn (fun u => Real.exp (-σ * u) * wholePickup u) (Set.Ioi 0) MeasureTheory.volume) →\n    ∀ {z : ℂ}, 0 < z.re → AnalyticAt ℂ signedPickupLaplace z"
     },
     {
       "axioms": [
@@ -1653,7 +1652,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.SignedPickupAnalytic",
       "name": "GRWTSK.RiemannHypothesis.CCC.signedPickupLaplace_eq_part_difference",
-      "type": "Continuous wholePickup \u2192\n  (\u2200 (\u03c3 : \u211d),\n      0 < \u03c3 \u2192\n        MeasureTheory.IntegrableOn (fun u => Real.exp (-\u03c3 * u) * wholePickup u) (Set.Ioi 0) MeasureTheory.volume) \u2192\n    \u2200 {z : \u2102},\n      0 < z.re \u2192\n        Laplace.transform id (pickupPartMeasure 1) z - Laplace.transform id (pickupPartMeasure (-1)) z =\n          signedPickupLaplace z"
+      "type": "Continuous wholePickup →\n  (∀ (σ : ℝ),\n      0 < σ →\n        MeasureTheory.IntegrableOn (fun u => Real.exp (-σ * u) * wholePickup u) (Set.Ioi 0) MeasureTheory.volume) →\n    ∀ {z : ℂ},\n      0 < z.re →\n        Laplace.transform id (pickupPartMeasure 1) z - Laplace.transform id (pickupPartMeasure (-1)) z =\n          signedPickupLaplace z"
     },
     {
       "axioms": [
@@ -1664,7 +1663,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.SignedPickupAnalytic",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickup_part_real_integrable",
-      "type": "Continuous wholePickup \u2192\n  (\u2200 (\u03c3 : \u211d),\n      0 < \u03c3 \u2192\n        MeasureTheory.IntegrableOn (fun u => Real.exp (-\u03c3 * u) * wholePickup u) (Set.Ioi 0) MeasureTheory.volume) \u2192\n    \u2200 {\u03b5 \u03c3 : \u211d}, |\u03b5| \u2264 1 \u2192 0 < \u03c3 \u2192 MeasureTheory.Integrable (fun u => Real.exp (-\u03c3 * u)) (pickupPartMeasure \u03b5)"
+      "type": "Continuous wholePickup →\n  (∀ (σ : ℝ),\n      0 < σ →\n        MeasureTheory.IntegrableOn (fun u => Real.exp (-σ * u) * wholePickup u) (Set.Ioi 0) MeasureTheory.volume) →\n    ∀ {ε σ : ℝ}, |ε| ≤ 1 → 0 < σ → MeasureTheory.Integrable (fun u => Real.exp (-σ * u)) (pickupPartMeasure ε)"
     },
     {
       "axioms": [
@@ -1673,7 +1672,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.RegularizedZeta",
       "name": "GRWTSK.RiemannHypothesis.CCC.regularizedZeta_eq._simp_1_3",
-      "type": "\u2200 {\u03b1 : Type u_2} [inst : Zero \u03b1] [inst_1 : OfNat \u03b1 4] [NeZero 4], (4 = 0) = False"
+      "type": "∀ {α : Type u_2} [inst : Zero α] [inst_1 : OfNat α 4] [NeZero 4], (4 = 0) = False"
     },
     {
       "axioms": [
@@ -1682,7 +1681,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.RegularizedZeta",
       "name": "GRWTSK.RiemannHypothesis.CCC.regularizedZeta_eq._simp_1_5",
-      "type": "\u2200 {M\u2080 : Type u_1} [inst : MonoidWithZero M\u2080] {a : M\u2080} [IsReduced M\u2080] (n : \u2115), a \u2260 0 \u2192 (a ^ n = 0) = False"
+      "type": "∀ {M₀ : Type u_1} [inst : MonoidWithZero M₀] {a : M₀} [IsReduced M₀] (n : ℕ), a ≠ 0 → (a ^ n = 0) = False"
     },
     {
       "axioms": [
@@ -1693,7 +1692,7 @@
       "kind": "definition",
       "module": "GRWTSK.RiemannHypothesis.CCC.RegularizedZeta",
       "name": "GRWTSK.RiemannHypothesis.CCC.regularizedZeta",
-      "type": "\u2102 \u2192 \u2102"
+      "type": "ℂ → ℂ"
     },
     {
       "axioms": [
@@ -1704,7 +1703,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.RegularizedZeta",
       "name": "GRWTSK.RiemannHypothesis.CCC.regularizedZeta_eq",
-      "type": "\u2200 {z : \u2102}, z \u2260 0 \u2192 z \u2260 1 \u2192 regularizedZeta z = z * (z - 1) * riemannZeta z"
+      "type": "∀ {z : ℂ}, z ≠ 0 → z ≠ 1 → regularizedZeta z = z * (z - 1) * riemannZeta z"
     },
     {
       "axioms": [
@@ -1713,7 +1712,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.RegularizedZeta",
       "name": "GRWTSK.RiemannHypothesis.CCC.regularizedZeta_eq._simp_1_2",
-      "type": "\u2200 {\u03b1 : Type u_2} [inst : Zero \u03b1] [inst_1 : OfNat \u03b1 3] [NeZero 3], (3 = 0) = False"
+      "type": "∀ {α : Type u_2} [inst : Zero α] [inst_1 : OfNat α 3] [NeZero 3], (3 = 0) = False"
     },
     {
       "axioms": [
@@ -1722,7 +1721,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.RegularizedZeta",
       "name": "GRWTSK.RiemannHypothesis.CCC.regularizedZeta_eq._simp_1_4",
-      "type": "\u2200 {M\u2080 : Type u_1} [inst : Mul M\u2080] [inst_1 : Zero M\u2080] [NoZeroDivisors M\u2080] {a b : M\u2080}, a \u2260 0 \u2192 b \u2260 0 \u2192 (a * b = 0) = False"
+      "type": "∀ {M₀ : Type u_1} [inst : Mul M₀] [inst_1 : Zero M₀] [NoZeroDivisors M₀] {a b : M₀}, a ≠ 0 → b ≠ 0 → (a * b = 0) = False"
     },
     {
       "axioms": [
@@ -1731,7 +1730,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.RegularizedZeta",
       "name": "GRWTSK.RiemannHypothesis.CCC.regularizedZeta_eq._simp_1_7",
-      "type": "\u2200 {R : Type u_1} [inst : AddMonoidWithOne R] [CharZero R] (n : \u2115), (\u2191n + 1 = 0) = False"
+      "type": "∀ {R : Type u_1} [inst : AddMonoidWithOne R] [CharZero R] (n : ℕ), (↑n + 1 = 0) = False"
     },
     {
       "axioms": [
@@ -1742,7 +1741,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.RegularizedZeta",
       "name": "GRWTSK.RiemannHypothesis.CCC.regularizedZeta_eq._simp_1_6",
-      "type": "\u2200 {G\u2080 : Type u_3} [inst : GroupWithZero G\u2080] {a : G\u2080} (n : \u2124), a \u2260 0 \u2192 (a ^ n = 0) = False"
+      "type": "∀ {G₀ : Type u_3} [inst : GroupWithZero G₀] {a : G₀} (n : ℤ), a ≠ 0 → (a ^ n = 0) = False"
     },
     {
       "axioms": [
@@ -1753,7 +1752,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.RegularizedZeta",
       "name": "GRWTSK.RiemannHypothesis.CCC.differentiable_regularizedZeta",
-      "type": "Differentiable \u2102 regularizedZeta"
+      "type": "Differentiable ℂ regularizedZeta"
     },
     {
       "axioms": [
@@ -1762,7 +1761,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.RegularizedZeta",
       "name": "GRWTSK.RiemannHypothesis.CCC.regularizedZeta_eq._simp_1_1",
-      "type": "\u2200 {\u03b1 : Type u_2} [inst : Zero \u03b1] [inst_1 : OfNat \u03b1 2] [NeZero 2], (2 = 0) = False"
+      "type": "∀ {α : Type u_2} [inst : Zero α] [inst_1 : OfNat α 2] [NeZero 2], (2 = 0) = False"
     },
     {
       "axioms": [
@@ -1773,7 +1772,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.EnergyRHReturn",
       "name": "GRWTSK.RiemannHypothesis.CCC.riemannHypothesis_of_holomorphic_signedPickupLaplace",
-      "type": "DifferentiableOn \u2102 signedPickupLaplace pickupLaplaceDomain \u2192\n  (\u2200 (z : \u2102), 1 / 2 < z.re \u2192 signedPickupLaplace z = 1 / (z * (z + 1 / 2) * riemannZeta (z + 1 / 2))) \u2192\n    RiemannHypothesis"
+      "type": "DifferentiableOn ℂ signedPickupLaplace pickupLaplaceDomain →\n  (∀ (z : ℂ), 1 / 2 < z.re → signedPickupLaplace z = 1 / (z * (z + 1 / 2) * riemannZeta (z + 1 / 2))) →\n    RiemannHypothesis"
     },
     {
       "axioms": [
@@ -1784,7 +1783,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.EnergyRHReturn",
       "name": "GRWTSK.RiemannHypothesis.CCC.regularized_initial_identity_of_inverse",
-      "type": "\u2200 (L : \u2102 \u2192 \u2102),\n  (\u2200 (z : \u2102), 1 / 2 < z.re \u2192 L z = 1 / (z * (z + 1 / 2) * riemannZeta (z + 1 / 2))) \u2192\n    \u2200 (z : \u2102), 1 / 2 < z.re \u2192 z * regularizedZeta (z + 1 / 2) * L z = z - 1 / 2"
+      "type": "∀ (L : ℂ → ℂ),\n  (∀ (z : ℂ), 1 / 2 < z.re → L z = 1 / (z * (z + 1 / 2) * riemannZeta (z + 1 / 2))) →\n    ∀ (z : ℂ), 1 / 2 < z.re → z * regularizedZeta (z + 1 / 2) * L z = z - 1 / 2"
     },
     {
       "axioms": [
@@ -1795,7 +1794,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.EnergyRHReturn",
       "name": "GRWTSK.RiemannHypothesis.CCC.riemannHypothesis_of_holomorphic_laplace",
-      "type": "\u2200 (L : \u2102 \u2192 \u2102),\n  DifferentiableOn \u2102 L pickupLaplaceDomain \u2192\n    (\u2200 (z : \u2102), 1 / 2 < z.re \u2192 z * regularizedZeta (z + 1 / 2) * L z = z - 1 / 2) \u2192 RiemannHypothesis"
+      "type": "∀ (L : ℂ → ℂ),\n  DifferentiableOn ℂ L pickupLaplaceDomain →\n    (∀ (z : ℂ), 1 / 2 < z.re → z * regularizedZeta (z + 1 / 2) * L z = z - 1 / 2) → RiemannHypothesis"
     },
     {
       "axioms": [
@@ -1806,7 +1805,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.EnergyRHReturn",
       "name": "GRWTSK.RiemannHypothesis.CCC.zeta_ne_zero_of_holomorphic_laplace",
-      "type": "\u2200 (L : \u2102 \u2192 \u2102),\n  DifferentiableOn \u2102 L pickupLaplaceDomain \u2192\n    (\u2200 (z : \u2102), 1 / 2 < z.re \u2192 z * regularizedZeta (z + 1 / 2) * L z = z - 1 / 2) \u2192\n      \u2200 (s : \u2102), 1 / 2 < s.re \u2192 s \u2260 1 \u2192 riemannZeta s \u2260 0"
+      "type": "∀ (L : ℂ → ℂ),\n  DifferentiableOn ℂ L pickupLaplaceDomain →\n    (∀ (z : ℂ), 1 / 2 < z.re → z * regularizedZeta (z + 1 / 2) * L z = z - 1 / 2) →\n      ∀ (s : ℂ), 1 / 2 < s.re → s ≠ 1 → riemannZeta s ≠ 0"
     },
     {
       "axioms": [
@@ -1828,7 +1827,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.EnergyRHReturn",
       "name": "GRWTSK.RiemannHypothesis.CCC.regularized_laplace_identity",
-      "type": "\u2200 (L : \u2102 \u2192 \u2102),\n  DifferentiableOn \u2102 L pickupLaplaceDomain \u2192\n    (\u2200 (z : \u2102), 1 / 2 < z.re \u2192 z * regularizedZeta (z + 1 / 2) * L z = z - 1 / 2) \u2192\n      \u2200 (z : \u2102), 0 < z.re \u2192 z * regularizedZeta (z + 1 / 2) * L z = z - 1 / 2"
+      "type": "∀ (L : ℂ → ℂ),\n  DifferentiableOn ℂ L pickupLaplaceDomain →\n    (∀ (z : ℂ), 1 / 2 < z.re → z * regularizedZeta (z + 1 / 2) * L z = z - 1 / 2) →\n      ∀ (z : ℂ), 0 < z.re → z * regularizedZeta (z + 1 / 2) * L z = z - 1 / 2"
     },
     {
       "axioms": [
@@ -1839,7 +1838,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.EnergyReturn",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupCrossPoly_iff_pickupEnergyPoly",
-      "type": "PickupCrossPoly \u2194 PickupEnergyPoly"
+      "type": "PickupCrossPoly ↔ PickupEnergyPoly"
     },
     {
       "axioms": [
@@ -1850,7 +1849,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.EnergyReturn",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupCross_lower",
-      "type": "\u2200 {T : \u211d}, 0 \u2264 T \u2192 -(2 * T ^ 2) \u2264 pickupCross T"
+      "type": "∀ {T : ℝ}, 0 ≤ T → -(2 * T ^ 2) ≤ pickupCross T"
     },
     {
       "axioms": [
@@ -1861,7 +1860,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.EnergyReturn",
       "name": "GRWTSK.RiemannHypothesis.CCC.riemannHypothesis_of_pickupCrossPoly",
-      "type": "PickupCrossPoly \u2192 RiemannHypothesis"
+      "type": "PickupCrossPoly → RiemannHypothesis"
     },
     {
       "axioms": [
@@ -1872,7 +1871,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.EnergyReturn",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickup_energy_poly_signed_laplace_holomorphic",
-      "type": "PickupEnergyPoly \u2192 DifferentiableOn \u2102 signedPickupLaplace pickupLaplaceDomain"
+      "type": "PickupEnergyPoly → DifferentiableOn ℂ signedPickupLaplace pickupLaplaceDomain"
     },
     {
       "axioms": [
@@ -1883,7 +1882,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.EnergyReturn",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickup_initial_transform_identity",
-      "type": "\u2200 (z : \u2102), 1 / 2 < z.re \u2192 signedPickupLaplace z = 1 / (z * (z + 1 / 2) * riemannZeta (z + 1 / 2))"
+      "type": "∀ (z : ℂ), 1 / 2 < z.re → signedPickupLaplace z = 1 / (z * (z + 1 / 2) * riemannZeta (z + 1 / 2))"
     },
     {
       "axioms": [
@@ -1894,7 +1893,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.EnergyReturn",
       "name": "GRWTSK.RiemannHypothesis.CCC.riemannHypothesis_of_pickupEnergyPoly",
-      "type": "PickupEnergyPoly \u2192 RiemannHypothesis"
+      "type": "PickupEnergyPoly → RiemannHypothesis"
     },
     {
       "axioms": [
@@ -1905,7 +1904,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.DeterminantEncoding",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupDeterminant.eq_1",
-      "type": "\u2200 (T : \u211d),\n  pickupDeterminant T = (1 + Matrix.vecMulVec ((responseMatrix T).mulVec (coefficientRow T)) (coefficientRow T)).det"
+      "type": "∀ (T : ℝ),\n  pickupDeterminant T = (1 + Matrix.vecMulVec ((responseMatrix T).mulVec (coefficientRow T)) (coefficientRow T)).det"
     },
     {
       "axioms": [
@@ -1916,7 +1915,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.DeterminantEncoding",
       "name": "GRWTSK.RiemannHypothesis.CCC.responseMatrix.eq_1",
-      "type": "\u2200 (T : \u211d) (m n : PickupIndex T), responseMatrix T m n = pickupResponseGram T \u2191m \u2191n"
+      "type": "∀ (T : ℝ) (m n : PickupIndex T), responseMatrix T m n = pickupResponseGram T ↑m ↑n"
     },
     {
       "axioms": [
@@ -1927,7 +1926,7 @@
       "kind": "definition",
       "module": "GRWTSK.RiemannHypothesis.CCC.DeterminantEncoding",
       "name": "GRWTSK.RiemannHypothesis.CCC.responseMatrix",
-      "type": "(T : \u211d) \u2192 Matrix (PickupIndex T) (PickupIndex T) \u211d"
+      "type": "(T : ℝ) → Matrix (PickupIndex T) (PickupIndex T) ℝ"
     },
     {
       "axioms": [
@@ -1938,7 +1937,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.DeterminantEncoding",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupDeterminant_eq_energy",
-      "type": "\u2200 {T : \u211d}, 0 \u2264 T \u2192 pickupDeterminant T = 1 + pickupEnergy T"
+      "type": "∀ {T : ℝ}, 0 ≤ T → pickupDeterminant T = 1 + pickupEnergy T"
     },
     {
       "axioms": [
@@ -1949,7 +1948,7 @@
       "kind": "definition",
       "module": "GRWTSK.RiemannHypothesis.CCC.DeterminantEncoding",
       "name": "GRWTSK.RiemannHypothesis.CCC.PickupIndex",
-      "type": "\u211d \u2192 Type"
+      "type": "ℝ → Type"
     },
     {
       "axioms": [
@@ -1960,7 +1959,7 @@
       "kind": "definition",
       "module": "GRWTSK.RiemannHypothesis.CCC.DeterminantEncoding",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupDeterminant",
-      "type": "\u211d \u2192 \u211d"
+      "type": "ℝ → ℝ"
     },
     {
       "axioms": [
@@ -1971,7 +1970,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.DeterminantEncoding",
       "name": "GRWTSK.RiemannHypothesis.CCC.determinant_encoding",
-      "type": "\u2200 {\u03b9 : Type u_1} [inst : Fintype \u03b9] [inst_1 : DecidableEq \u03b9] (H : Matrix \u03b9 \u03b9 \u211d) (c : \u03b9 \u2192 \u211d),\n  (1 + Matrix.vecMulVec (H.mulVec c) c).det = 1 + \u2211 m, \u2211 n, c m * c n * H m n"
+      "type": "∀ {ι : Type u_1} [inst : Fintype ι] [inst_1 : DecidableEq ι] (H : Matrix ι ι ℝ) (c : ι → ℝ),\n  (1 + Matrix.vecMulVec (H.mulVec c) c).det = 1 + ∑ m, ∑ n, c m * c n * H m n"
     },
     {
       "axioms": [
@@ -1982,7 +1981,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.DeterminantEncoding",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupFullGram.eq_1",
-      "type": "\u2200 (T : \u211d),\n  pickupFullGram T =\n    \u2211 m \u2208 Finset.Icc 1 \u230aReal.exp T\u230b\u208a,\n      \u2211 n \u2208 Finset.Icc 1 \u230aReal.exp T\u230b\u208a, moebiusReal m * moebiusReal n * pickupResponseGram T m n"
+      "type": "∀ (T : ℝ),\n  pickupFullGram T =\n    ∑ m ∈ Finset.Icc 1 ⌊Real.exp T⌋₊,\n      ∑ n ∈ Finset.Icc 1 ⌊Real.exp T⌋₊, moebiusReal m * moebiusReal n * pickupResponseGram T m n"
     },
     {
       "axioms": [
@@ -1993,7 +1992,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.DeterminantEncoding",
       "name": "GRWTSK.RiemannHypothesis.CCC.coefficientRow.eq_1",
-      "type": "\u2200 (T : \u211d) (n : PickupIndex T), coefficientRow T n = moebiusReal \u2191n"
+      "type": "∀ (T : ℝ) (n : PickupIndex T), coefficientRow T n = moebiusReal ↑n"
     },
     {
       "axioms": [
@@ -2004,7 +2003,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.DeterminantEncoding",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupDeterminant_bound_iff",
-      "type": "\u2200 {T B : \u211d}, 0 \u2264 T \u2192 (pickupDeterminant T \u2264 1 + B \u2194 pickupEnergy T \u2264 B)"
+      "type": "∀ {T B : ℝ}, 0 ≤ T → (pickupDeterminant T ≤ 1 + B ↔ pickupEnergy T ≤ B)"
     },
     {
       "axioms": [
@@ -2015,7 +2014,7 @@
       "kind": "definition",
       "module": "GRWTSK.RiemannHypothesis.CCC.DeterminantEncoding",
       "name": "GRWTSK.RiemannHypothesis.CCC.coefficientRow",
-      "type": "(T : \u211d) \u2192 PickupIndex T \u2192 \u211d"
+      "type": "(T : ℝ) → PickupIndex T → ℝ"
     },
     {
       "axioms": [
@@ -2026,7 +2025,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.DeterminantEncoding",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupDeterminant_poly_iff",
-      "type": "(\u2203 C q, 0 \u2264 C \u2227 0 \u2264 q \u2227 \u2200 (T : \u211d), 0 \u2264 T \u2192 pickupDeterminant T \u2264 1 + C * (1 + T) ^ q) \u2194 PickupEnergyPoly"
+      "type": "(∃ C q, 0 ≤ C ∧ 0 ≤ q ∧ ∀ (T : ℝ), 0 ≤ T → pickupDeterminant T ≤ 1 + C * (1 + T) ^ q) ↔ PickupEnergyPoly"
     },
     {
       "axioms": [
@@ -2037,7 +2036,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.UnsignedAllowance",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergy_exponential_allowance",
-      "type": "\u2200 {T : \u211d}, 0 \u2264 T \u2192 pickupEnergy T \u2264 2 * Real.exp T * T ^ 2"
+      "type": "∀ {T : ℝ}, 0 ≤ T → pickupEnergy T ≤ 2 * Real.exp T * T ^ 2"
     },
     {
       "axioms": [
@@ -2048,7 +2047,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.UnsignedAllowance",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergy_le_count_mul_diagonal",
-      "type": "\u2200 {T : \u211d}, 0 \u2264 T \u2192 pickupEnergy T \u2264 \u2191\u230aReal.exp T\u230b\u208a * pickupDiagonal T"
+      "type": "∀ {T : ℝ}, 0 ≤ T → pickupEnergy T ≤ ↑⌊Real.exp T⌋₊ * pickupDiagonal T"
     },
     {
       "axioms": [
@@ -2059,7 +2058,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.GrowthBounds",
       "name": "GRWTSK.RiemannHypothesis.CCC.SubexponentialUpper.add",
-      "type": "\u2200 {f g : \u211d \u2192 \u211d}, SubexponentialUpper f \u2192 SubexponentialUpper g \u2192 SubexponentialUpper fun T => f T + g T"
+      "type": "∀ {f g : ℝ → ℝ}, SubexponentialUpper f → SubexponentialUpper g → SubexponentialUpper fun T => f T + g T"
     },
     {
       "axioms": [
@@ -2070,7 +2069,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.GrowthBounds",
       "name": "GRWTSK.RiemannHypothesis.CCC.subexponentialUpper_of_polynomial",
-      "type": "\u2200 {f : \u211d \u2192 \u211d} {C q : \u211d}, 0 \u2264 C \u2192 (\u2200 (T : \u211d), 0 \u2264 T \u2192 f T \u2264 C * (1 + T) ^ q) \u2192 SubexponentialUpper f"
+      "type": "∀ {f : ℝ → ℝ} {C q : ℝ}, 0 ≤ C → (∀ (T : ℝ), 0 ≤ T → f T ≤ C * (1 + T) ^ q) → SubexponentialUpper f"
     },
     {
       "axioms": [
@@ -2079,7 +2078,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.GrowthBounds",
       "name": "GRWTSK.RiemannHypothesis.CCC.pow_le_factorial_mul_exp._simp_1_1",
-      "type": "\u2200 {\u03b1 : Type u_2} [inst : Zero \u03b1] [inst_1 : OfNat \u03b1 2] [NeZero 2], (2 = 0) = False"
+      "type": "∀ {α : Type u_2} [inst : Zero α] [inst_1 : OfNat α 2] [NeZero 2], (2 = 0) = False"
     },
     {
       "axioms": [
@@ -2090,7 +2089,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.GrowthBounds",
       "name": "GRWTSK.RiemannHypothesis.CCC.SubexponentialUpper.mono",
-      "type": "\u2200 {f g : \u211d \u2192 \u211d}, SubexponentialUpper g \u2192 (\u2200 (T : \u211d), 0 \u2264 T \u2192 f T \u2264 g T) \u2192 SubexponentialUpper f"
+      "type": "∀ {f g : ℝ → ℝ}, SubexponentialUpper g → (∀ (T : ℝ), 0 ≤ T → f T ≤ g T) → SubexponentialUpper f"
     },
     {
       "axioms": [
@@ -2101,7 +2100,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.GrowthBounds",
       "name": "GRWTSK.RiemannHypothesis.CCC.SubexponentialUpper.const_mul",
-      "type": "\u2200 {f : \u211d \u2192 \u211d}, SubexponentialUpper f \u2192 \u2200 {a : \u211d}, 0 \u2264 a \u2192 SubexponentialUpper fun T => a * f T"
+      "type": "∀ {f : ℝ → ℝ}, SubexponentialUpper f → ∀ {a : ℝ}, 0 ≤ a → SubexponentialUpper fun T => a * f T"
     },
     {
       "axioms": [
@@ -2110,7 +2109,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.GrowthBounds",
       "name": "GRWTSK.RiemannHypothesis.CCC.pow_le_factorial_mul_exp._simp_1_3",
-      "type": "\u2200 {\u03b1 : Type u_2} [inst : Zero \u03b1] [inst_1 : OfNat \u03b1 4] [NeZero 4], (4 = 0) = False"
+      "type": "∀ {α : Type u_2} [inst : Zero α] [inst_1 : OfNat α 4] [NeZero 4], (4 = 0) = False"
     },
     {
       "axioms": [
@@ -2121,7 +2120,7 @@
       "kind": "definition",
       "module": "GRWTSK.RiemannHypothesis.CCC.GrowthBounds",
       "name": "GRWTSK.RiemannHypothesis.CCC.SubexponentialUpper",
-      "type": "(\u211d \u2192 \u211d) \u2192 Prop"
+      "type": "(ℝ → ℝ) → Prop"
     },
     {
       "axioms": [
@@ -2132,7 +2131,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.GrowthBounds",
       "name": "GRWTSK.RiemannHypothesis.CCC.pow_le_factorial_mul_exp",
-      "type": "\u2200 {\u03b5 T : \u211d}, 0 < \u03b5 \u2192 0 \u2264 T \u2192 \u2200 (k : \u2115), T ^ k \u2264 \u2191k.factorial / \u03b5 ^ k * Real.exp (\u03b5 * T)"
+      "type": "∀ {ε T : ℝ}, 0 < ε → 0 ≤ T → ∀ (k : ℕ), T ^ k ≤ ↑k.factorial / ε ^ k * Real.exp (ε * T)"
     },
     {
       "axioms": [
@@ -2143,7 +2142,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.GrowthBounds",
       "name": "GRWTSK.RiemannHypothesis.CCC.shifted_rpow_le_exponential",
-      "type": "\u2200 (q : \u211d) {\u03b5 T : \u211d}, 0 < \u03b5 \u2192 0 \u2264 T \u2192 (1 + T) ^ q \u2264 \u2191\u2308q\u2309\u208a.factorial / \u03b5 ^ \u2308q\u2309\u208a * Real.exp \u03b5 * Real.exp (\u03b5 * T)"
+      "type": "∀ (q : ℝ) {ε T : ℝ}, 0 < ε → 0 ≤ T → (1 + T) ^ q ≤ ↑⌈q⌉₊.factorial / ε ^ ⌈q⌉₊ * Real.exp ε * Real.exp (ε * T)"
     },
     {
       "axioms": [
@@ -2152,7 +2151,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.GrowthBounds",
       "name": "GRWTSK.RiemannHypothesis.CCC.pow_le_factorial_mul_exp._simp_1_5",
-      "type": "\u2200 {M\u2080 : Type u_1} [inst : MonoidWithZero M\u2080] {a : M\u2080} [IsReduced M\u2080] (n : \u2115), a \u2260 0 \u2192 (a ^ n = 0) = False"
+      "type": "∀ {M₀ : Type u_1} [inst : MonoidWithZero M₀] {a : M₀} [IsReduced M₀] (n : ℕ), a ≠ 0 → (a ^ n = 0) = False"
     },
     {
       "axioms": [
@@ -2163,7 +2162,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.GrowthBounds",
       "name": "GRWTSK.RiemannHypothesis.CCC.pow_le_factorial_mul_exp._simp_1_6",
-      "type": "\u2200 {G\u2080 : Type u_3} [inst : GroupWithZero G\u2080] {a : G\u2080} (n : \u2124), a \u2260 0 \u2192 (a ^ n = 0) = False"
+      "type": "∀ {G₀ : Type u_3} [inst : GroupWithZero G₀] {a : G₀} (n : ℤ), a ≠ 0 → (a ^ n = 0) = False"
     },
     {
       "axioms": [
@@ -2172,7 +2171,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.GrowthBounds",
       "name": "GRWTSK.RiemannHypothesis.CCC.pow_le_factorial_mul_exp._simp_1_4",
-      "type": "\u2200 {M\u2080 : Type u_1} [inst : Mul M\u2080] [inst_1 : Zero M\u2080] [NoZeroDivisors M\u2080] {a b : M\u2080}, a \u2260 0 \u2192 b \u2260 0 \u2192 (a * b = 0) = False"
+      "type": "∀ {M₀ : Type u_1} [inst : Mul M₀] [inst_1 : Zero M₀] [NoZeroDivisors M₀] {a b : M₀}, a ≠ 0 → b ≠ 0 → (a * b = 0) = False"
     },
     {
       "axioms": [
@@ -2181,7 +2180,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.GrowthBounds",
       "name": "GRWTSK.RiemannHypothesis.CCC.pow_le_factorial_mul_exp._simp_1_7",
-      "type": "\u2200 {R : Type u_1} [inst : AddMonoidWithOne R] [CharZero R] (n : \u2115), (\u2191n + 1 = 0) = False"
+      "type": "∀ {R : Type u_1} [inst : AddMonoidWithOne R] [CharZero R] (n : ℕ), (↑n + 1 = 0) = False"
     },
     {
       "axioms": [
@@ -2190,7 +2189,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.GrowthBounds",
       "name": "GRWTSK.RiemannHypothesis.CCC.pow_le_factorial_mul_exp._simp_1_2",
-      "type": "\u2200 {\u03b1 : Type u_2} [inst : Zero \u03b1] [inst_1 : OfNat \u03b1 3] [NeZero 3], (3 = 0) = False"
+      "type": "∀ {α : Type u_2} [inst : Zero α] [inst_1 : OfNat α 3] [NeZero 3], (3 = 0) = False"
     },
     {
       "axioms": [
@@ -2212,7 +2211,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.EnergyContinuum",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupCrossPoly_subexp",
-      "type": "PickupCrossPoly \u2192 PickupCrossSubexp"
+      "type": "PickupCrossPoly → PickupCrossSubexp"
     },
     {
       "axioms": [
@@ -2223,7 +2222,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.EnergyContinuum",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupCrossSubexp_iff_pickupEnergySubexp",
-      "type": "PickupCrossSubexp \u2194 PickupEnergySubexp"
+      "type": "PickupCrossSubexp ↔ PickupEnergySubexp"
     },
     {
       "axioms": [
@@ -2234,7 +2233,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.EnergyContinuum",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickup_weighted_energy_integrable_mono",
-      "type": "\u2200 {\u03c3 \u03c4 : \u211d},\n  \u03c3 \u2264 \u03c4 \u2192\n    MeasureTheory.IntegrableOn (fun u => Real.exp (-\u03c3 * u) * wholePickup u ^ 2) (Set.Ici 0) MeasureTheory.volume \u2192\n      MeasureTheory.IntegrableOn (fun u => Real.exp (-\u03c4 * u) * wholePickup u ^ 2) (Set.Ici 0) MeasureTheory.volume"
+      "type": "∀ {σ τ : ℝ},\n  σ ≤ τ →\n    MeasureTheory.IntegrableOn (fun u => Real.exp (-σ * u) * wholePickup u ^ 2) (Set.Ici 0) MeasureTheory.volume →\n      MeasureTheory.IntegrableOn (fun u => Real.exp (-τ * u) * wholePickup u ^ 2) (Set.Ici 0) MeasureTheory.volume"
     },
     {
       "axioms": [
@@ -2256,7 +2255,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.EnergyContinuum",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergyAbscissa_nonneg",
-      "type": "0 \u2264 pickupEnergyAbscissa"
+      "type": "0 ≤ pickupEnergyAbscissa"
     },
     {
       "axioms": [
@@ -2267,7 +2266,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.EnergyContinuum",
       "name": "GRWTSK.RiemannHypothesis.CCC.integrableOn_sq_tilt_of_energy_exponential",
-      "type": "\u2200 {f : \u211d \u2192 \u211d},\n  Continuous f \u2192\n    \u2200 {C \u03b4 \u03c3 : \u211d},\n      0 < \u03c3 \u2192\n        \u03b4 < \u03c3 \u2192\n          (\u2200 (T : \u211d), 0 \u2264 T \u2192 \u222b (u : \u211d) in 0..T, f u ^ 2 \u2264 C * Real.exp (\u03b4 * T)) \u2192\n            MeasureTheory.IntegrableOn (fun u => Real.exp (-\u03c3 * u) * f u ^ 2) (Set.Ici 0) MeasureTheory.volume"
+      "type": "∀ {f : ℝ → ℝ},\n  Continuous f →\n    ∀ {C δ σ : ℝ},\n      0 < σ →\n        δ < σ →\n          (∀ (T : ℝ), 0 ≤ T → ∫ (u : ℝ) in 0..T, f u ^ 2 ≤ C * Real.exp (δ * T)) →\n            MeasureTheory.IntegrableOn (fun u => Real.exp (-σ * u) * f u ^ 2) (Set.Ici 0) MeasureTheory.volume"
     },
     {
       "axioms": [
@@ -2278,7 +2277,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.EnergyContinuum",
       "name": "GRWTSK.RiemannHypothesis.CCC.riemannHypothesis_of_pickupEnergyAbscissa_zero",
-      "type": "pickupEnergyAbscissa = 0 \u2192 RiemannHypothesis"
+      "type": "pickupEnergyAbscissa = 0 → RiemannHypothesis"
     },
     {
       "axioms": [
@@ -2289,7 +2288,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.EnergyContinuum",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergyAbscissa_le_one",
-      "type": "pickupEnergyAbscissa \u2264 1"
+      "type": "pickupEnergyAbscissa ≤ 1"
     },
     {
       "axioms": [
@@ -2300,7 +2299,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.EnergyContinuum",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergyAbscissa_zero_iff_weightedEnergyAll",
-      "type": "pickupEnergyAbscissa = 0 \u2194 PickupWeightedEnergyAll"
+      "type": "pickupEnergyAbscissa = 0 ↔ PickupWeightedEnergyAll"
     },
     {
       "axioms": [
@@ -2311,7 +2310,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.EnergyContinuum",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergyAbscissa_le_of_integrable",
-      "type": "\u2200 {\u03c3 : \u211d},\n  0 < \u03c3 \u2192\n    MeasureTheory.IntegrableOn (fun u => Real.exp (-\u03c3 * u) * wholePickup u ^ 2) (Set.Ici 0) MeasureTheory.volume \u2192\n      pickupEnergyAbscissa \u2264 \u03c3"
+      "type": "∀ {σ : ℝ},\n  0 < σ →\n    MeasureTheory.IntegrableOn (fun u => Real.exp (-σ * u) * wholePickup u ^ 2) (Set.Ici 0) MeasureTheory.volume →\n      pickupEnergyAbscissa ≤ σ"
     },
     {
       "axioms": [
@@ -2322,7 +2321,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.EnergyContinuum",
       "name": "GRWTSK.RiemannHypothesis.CCC.riemannHypothesis_of_pickupEnergySubexp",
-      "type": "PickupEnergySubexp \u2192 RiemannHypothesis"
+      "type": "PickupEnergySubexp → RiemannHypothesis"
     },
     {
       "axioms": [
@@ -2355,7 +2354,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.EnergyContinuum",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergyPoly_subexp",
-      "type": "PickupEnergyPoly \u2192 PickupEnergySubexp"
+      "type": "PickupEnergyPoly → PickupEnergySubexp"
     },
     {
       "axioms": [
@@ -2377,7 +2376,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.EnergyContinuum",
       "name": "GRWTSK.RiemannHypothesis.CCC.riemannHypothesis_of_pickupWeightedEnergyAll",
-      "type": "PickupWeightedEnergyAll \u2192 RiemannHypothesis"
+      "type": "PickupWeightedEnergyAll → RiemannHypothesis"
     },
     {
       "axioms": [
@@ -2388,7 +2387,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.EnergyContinuum",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickup_weighted_energy_integrable_above_abscissa",
-      "type": "\u2200 {\u03c3 : \u211d},\n  pickupEnergyAbscissa < \u03c3 \u2192\n    MeasureTheory.IntegrableOn (fun u => Real.exp (-\u03c3 * u) * wholePickup u ^ 2) (Set.Ici 0) MeasureTheory.volume"
+      "type": "∀ {σ : ℝ},\n  pickupEnergyAbscissa < σ →\n    MeasureTheory.IntegrableOn (fun u => Real.exp (-σ * u) * wholePickup u ^ 2) (Set.Ici 0) MeasureTheory.volume"
     },
     {
       "axioms": [
@@ -2399,7 +2398,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.EnergyContinuum",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergyAbscissa_zero_iff_crossSubexp",
-      "type": "pickupEnergyAbscissa = 0 \u2194 PickupCrossSubexp"
+      "type": "pickupEnergyAbscissa = 0 ↔ PickupCrossSubexp"
     },
     {
       "axioms": [
@@ -2410,7 +2409,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.EnergyContinuum",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupWeightedEnergyAll_of_subexp",
-      "type": "PickupEnergySubexp \u2192 PickupWeightedEnergyAll"
+      "type": "PickupEnergySubexp → PickupWeightedEnergyAll"
     },
     {
       "axioms": [
@@ -2421,7 +2420,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.EnergyContinuum",
       "name": "GRWTSK.RiemannHypothesis.CCC.riemannHypothesis_of_pickupCrossSubexp",
-      "type": "PickupCrossSubexp \u2192 RiemannHypothesis"
+      "type": "PickupCrossSubexp → RiemannHypothesis"
     },
     {
       "axioms": [
@@ -2432,7 +2431,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.EnergyContinuum",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergy_le_weighted_integral",
-      "type": "\u2200 {\u03c3 T : \u211d},\n  0 < \u03c3 \u2192\n    0 \u2264 T \u2192\n      MeasureTheory.IntegrableOn (fun u => Real.exp (-\u03c3 * u) * wholePickup u ^ 2) (Set.Ici 0) MeasureTheory.volume \u2192\n        pickupEnergy T \u2264 (\u222b (u : \u211d) in Set.Ici 0, Real.exp (-\u03c3 * u) * wholePickup u ^ 2) * Real.exp (\u03c3 * T)"
+      "type": "∀ {σ T : ℝ},\n  0 < σ →\n    0 ≤ T →\n      MeasureTheory.IntegrableOn (fun u => Real.exp (-σ * u) * wholePickup u ^ 2) (Set.Ici 0) MeasureTheory.volume →\n        pickupEnergy T ≤ (∫ (u : ℝ) in Set.Ici 0, Real.exp (-σ * u) * wholePickup u ^ 2) * Real.exp (σ * T)"
     },
     {
       "axioms": [
@@ -2443,7 +2442,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.EnergyContinuum",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickup_weighted_energy_integrable_initial",
-      "type": "\u2200 {\u03c3 : \u211d},\n  1 < \u03c3 \u2192 MeasureTheory.IntegrableOn (fun u => Real.exp (-\u03c3 * u) * wholePickup u ^ 2) (Set.Ici 0) MeasureTheory.volume"
+      "type": "∀ {σ : ℝ},\n  1 < σ → MeasureTheory.IntegrableOn (fun u => Real.exp (-σ * u) * wholePickup u ^ 2) (Set.Ici 0) MeasureTheory.volume"
     },
     {
       "axioms": [
@@ -2454,7 +2453,7 @@
       "kind": "definition",
       "module": "GRWTSK.RiemannHypothesis.CCC.EnergyContinuum",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergyAbscissa",
-      "type": "\u211d"
+      "type": "ℝ"
     },
     {
       "axioms": [
@@ -2465,7 +2464,7 @@
       "kind": "definition",
       "module": "GRWTSK.RiemannHypothesis.CCC.EnergyContinuum",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergyConvergenceSet",
-      "type": "Set \u211d"
+      "type": "Set ℝ"
     },
     {
       "axioms": [
@@ -2476,7 +2475,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.EnergyContinuum",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickup_tilt_integrable_of_weightedEnergyAll",
-      "type": "PickupWeightedEnergyAll \u2192\n  \u2200 {\u03c3 : \u211d},\n    0 < \u03c3 \u2192 MeasureTheory.IntegrableOn (fun u => Real.exp (-\u03c3 * u) * wholePickup u) (Set.Ioi 0) MeasureTheory.volume"
+      "type": "PickupWeightedEnergyAll →\n  ∀ {σ : ℝ},\n    0 < σ → MeasureTheory.IntegrableOn (fun u => Real.exp (-σ * u) * wholePickup u) (Set.Ioi 0) MeasureTheory.volume"
     },
     {
       "axioms": [
@@ -2487,7 +2486,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.EnergyContinuum",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickup_weighted_energy_integral_antitone",
-      "type": "\u2200 {\u03c3 \u03c4 : \u211d},\n  \u03c3 \u2264 \u03c4 \u2192\n    MeasureTheory.IntegrableOn (fun u => Real.exp (-\u03c3 * u) * wholePickup u ^ 2) (Set.Ici 0) MeasureTheory.volume \u2192\n      \u222b (u : \u211d) in Set.Ici 0, Real.exp (-\u03c4 * u) * wholePickup u ^ 2 \u2264\n        \u222b (u : \u211d) in Set.Ici 0, Real.exp (-\u03c3 * u) * wholePickup u ^ 2"
+      "type": "∀ {σ τ : ℝ},\n  σ ≤ τ →\n    MeasureTheory.IntegrableOn (fun u => Real.exp (-σ * u) * wholePickup u ^ 2) (Set.Ici 0) MeasureTheory.volume →\n      ∫ (u : ℝ) in Set.Ici 0, Real.exp (-τ * u) * wholePickup u ^ 2 ≤\n        ∫ (u : ℝ) in Set.Ici 0, Real.exp (-σ * u) * wholePickup u ^ 2"
     },
     {
       "axioms": [
@@ -2498,7 +2497,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.EnergyContinuum",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergySubexp_iff_weightedEnergyAll",
-      "type": "PickupEnergySubexp \u2194 PickupWeightedEnergyAll"
+      "type": "PickupEnergySubexp ↔ PickupWeightedEnergyAll"
     },
     {
       "axioms": [
@@ -2509,7 +2508,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.SampledBudgets",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergySubexp_iff_nat",
-      "type": "PickupEnergySubexp \u2194 NatSubexponentialUpper pickupEnergy"
+      "type": "PickupEnergySubexp ↔ NatSubexponentialUpper pickupEnergy"
     },
     {
       "axioms": [
@@ -2520,7 +2519,7 @@
       "kind": "definition",
       "module": "GRWTSK.RiemannHypothesis.CCC.SampledBudgets",
       "name": "GRWTSK.RiemannHypothesis.CCC.NatSubexponentialUpper",
-      "type": "(\u211d \u2192 \u211d) \u2192 Prop"
+      "type": "(ℝ → ℝ) → Prop"
     },
     {
       "axioms": [
@@ -2531,7 +2530,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.SampledBudgets",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupCross_poly_of_nat_bound",
-      "type": "\u2200 {C r : \u211d},\n  0 \u2264 C \u2192\n    0 \u2264 r \u2192\n      (\u2200 (n : \u2115), pickupCross \u2191n \u2264 C * (1 + \u2191n) ^ r) \u2192\n        \u2200 (T : \u211d), 0 \u2264 T \u2192 pickupCross T \u2264 (C * 2 ^ r + 2) * (1 + T) ^ max r 2"
+      "type": "∀ {C r : ℝ},\n  0 ≤ C →\n    0 ≤ r →\n      (∀ (n : ℕ), pickupCross ↑n ≤ C * (1 + ↑n) ^ r) →\n        ∀ (T : ℝ), 0 ≤ T → pickupCross T ≤ (C * 2 ^ r + 2) * (1 + T) ^ max r 2"
     },
     {
       "axioms": [
@@ -2542,7 +2541,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.SampledBudgets",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupCrossNatPoly_iff_crossPoly",
-      "type": "PickupCrossNatPoly \u2194 PickupCrossPoly"
+      "type": "PickupCrossNatPoly ↔ PickupCrossPoly"
     },
     {
       "axioms": [
@@ -2553,7 +2552,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.SampledBudgets",
       "name": "GRWTSK.RiemannHypothesis.CCC.riemannHypothesis_of_pickupCrossNatSubexp",
-      "type": "PickupCrossNatSubexp \u2192 RiemannHypothesis"
+      "type": "PickupCrossNatSubexp → RiemannHypothesis"
     },
     {
       "axioms": [
@@ -2564,7 +2563,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.SampledBudgets",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupDeterminant_subexp_iff",
-      "type": "(\u2200 (\u03b5 : \u211d), 0 < \u03b5 \u2192 \u2203 C, 0 \u2264 C \u2227 \u2200 (T : \u211d), 0 \u2264 T \u2192 pickupDeterminant T \u2264 1 + C * Real.exp (\u03b5 * T)) \u2194 PickupEnergySubexp"
+      "type": "(∀ (ε : ℝ), 0 < ε → ∃ C, 0 ≤ C ∧ ∀ (T : ℝ), 0 ≤ T → pickupDeterminant T ≤ 1 + C * Real.exp (ε * T)) ↔ PickupEnergySubexp"
     },
     {
       "axioms": [
@@ -2575,7 +2574,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.SampledBudgets",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergy_le_of_nat_exponential",
-      "type": "\u2200 {C \u03b5 T : \u211d},\n  0 \u2264 C \u2192\n    0 \u2264 \u03b5 \u2192\n      0 \u2264 T \u2192 (\u2200 (n : \u2115), pickupEnergy \u2191n \u2264 C * Real.exp (\u03b5 * \u2191n)) \u2192 pickupEnergy T \u2264 C * Real.exp \u03b5 * Real.exp (\u03b5 * T)"
+      "type": "∀ {C ε T : ℝ},\n  0 ≤ C →\n    0 ≤ ε →\n      0 ≤ T → (∀ (n : ℕ), pickupEnergy ↑n ≤ C * Real.exp (ε * ↑n)) → pickupEnergy T ≤ C * Real.exp ε * Real.exp (ε * T)"
     },
     {
       "axioms": [
@@ -2586,7 +2585,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.SampledBudgets",
       "name": "GRWTSK.RiemannHypothesis.CCC.riemannHypothesis_of_pickupCrossNatPoly",
-      "type": "PickupCrossNatPoly \u2192 RiemannHypothesis"
+      "type": "PickupCrossNatPoly → RiemannHypothesis"
     },
     {
       "axioms": [
@@ -2597,7 +2596,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.SampledBudgets",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupCross_le_next_sample",
-      "type": "\u2200 {T : \u211d}, 0 \u2264 T \u2192 pickupCross T \u2264 pickupCross \u2191\u2308T\u2309\u208a + 2 * (1 + T) ^ 2"
+      "type": "∀ {T : ℝ}, 0 ≤ T → pickupCross T ≤ pickupCross ↑⌈T⌉₊ + 2 * (1 + T) ^ 2"
     },
     {
       "axioms": [
@@ -2608,7 +2607,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.SampledBudgets",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupCrossNatSubexp_iff_crossSubexp",
-      "type": "PickupCrossNatSubexp \u2194 PickupCrossSubexp"
+      "type": "PickupCrossNatSubexp ↔ PickupCrossSubexp"
     },
     {
       "axioms": [
@@ -2641,7 +2640,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.BoundaryControl",
       "name": "GRWTSK.RiemannHypothesis.CCC.exponential_boundary_control",
-      "type": "(Continuous fun u => Real.exp (u / 2)) \u2227\n  MeasureTheory.IntegrableOn (fun u => Real.exp (-2 * u) * Real.exp (u / 2) ^ 2) (Set.Ici 0) MeasureTheory.volume \u2227\n    \u00acMeasureTheory.IntegrableOn (fun u => Real.exp (-u) * Real.exp (u / 2) ^ 2) (Set.Ici 0) MeasureTheory.volume"
+      "type": "(Continuous fun u => Real.exp (u / 2)) ∧\n  MeasureTheory.IntegrableOn (fun u => Real.exp (-2 * u) * Real.exp (u / 2) ^ 2) (Set.Ici 0) MeasureTheory.volume ∧\n    ¬MeasureTheory.IntegrableOn (fun u => Real.exp (-u) * Real.exp (u / 2) ^ 2) (Set.Ici 0) MeasureTheory.volume"
     },
     {
       "axioms": [
@@ -2652,7 +2651,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.BoundaryControl",
       "name": "GRWTSK.RiemannHypothesis.CCC.exponential_boundary_control._simp_1_2",
-      "type": "\u2200 {\u03b1 : Type u_1} {\u03b5' : Type u_4} {m\u03b1 : MeasurableSpace \u03b1} {s : Set \u03b1} {\u03bc : MeasureTheory.Measure \u03b1}\n  [inst : TopologicalSpace \u03b5'] [inst_1 : ESeminormedAddMonoid \u03b5'] {C : \u03b5'},\n  autoParam (\u2016C\u2016\u2091 \u2260 \u22a4) MeasureTheory.integrableOn_const_iff._auto_1 \u2192\n    MeasureTheory.IntegrableOn (fun x => C) s \u03bc = (\u2016C\u2016\u2091 = 0 \u2228 \u03bc s < \u22a4)"
+      "type": "∀ {α : Type u_1} {ε' : Type u_4} {mα : MeasurableSpace α} {s : Set α} {μ : MeasureTheory.Measure α}\n  [inst : TopologicalSpace ε'] [inst_1 : ESeminormedAddMonoid ε'] {C : ε'},\n  autoParam (‖C‖ₑ ≠ ⊤) MeasureTheory.integrableOn_const_iff._auto_1 →\n    MeasureTheory.IntegrableOn (fun x => C) s μ = (‖C‖ₑ = 0 ∨ μ s < ⊤)"
     },
     {
       "axioms": [
@@ -2663,7 +2662,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.ResidualBudgets",
       "name": "GRWTSK.RiemannHypothesis.CCC.riemannHypothesis_of_pickup_comparison",
-      "type": "\u2200 {g : \u211d \u2192 \u211d},\n  Continuous g \u2192\n    (SubexponentialUpper fun T => \u222b (u : \u211d) in 0..T, g u ^ 2) \u2192\n      (SubexponentialUpper fun T => \u222b (u : \u211d) in 0..T, (wholePickup u - g u) ^ 2) \u2192 RiemannHypothesis"
+      "type": "∀ {g : ℝ → ℝ},\n  Continuous g →\n    (SubexponentialUpper fun T => ∫ (u : ℝ) in 0..T, g u ^ 2) →\n      (SubexponentialUpper fun T => ∫ (u : ℝ) in 0..T, (wholePickup u - g u) ^ 2) → RiemannHypothesis"
     },
     {
       "axioms": [
@@ -2674,7 +2673,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.ResidualBudgets",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergySubexp_of_comparison",
-      "type": "\u2200 {g : \u211d \u2192 \u211d},\n  Continuous g \u2192\n    (SubexponentialUpper fun T => \u222b (u : \u211d) in 0..T, g u ^ 2) \u2192\n      (SubexponentialUpper fun T => \u222b (u : \u211d) in 0..T, (wholePickup u - g u) ^ 2) \u2192 PickupEnergySubexp"
+      "type": "∀ {g : ℝ → ℝ},\n  Continuous g →\n    (SubexponentialUpper fun T => ∫ (u : ℝ) in 0..T, g u ^ 2) →\n      (SubexponentialUpper fun T => ∫ (u : ℝ) in 0..T, (wholePickup u - g u) ^ 2) → PickupEnergySubexp"
     },
     {
       "axioms": [
@@ -2685,7 +2684,7 @@
       "kind": "theorem",
       "module": "GRWTSK.RiemannHypothesis.CCC.ResidualBudgets",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergy_comparison_le",
-      "type": "\u2200 {g : \u211d \u2192 \u211d},\n  Continuous g \u2192\n    \u2200 {T : \u211d},\n      0 \u2264 T \u2192 pickupEnergy T \u2264 (2 * \u222b (u : \u211d) in 0..T, g u ^ 2) + 2 * \u222b (u : \u211d) in 0..T, (wholePickup u - g u) ^ 2"
+      "type": "∀ {g : ℝ → ℝ},\n  Continuous g →\n    ∀ {T : ℝ},\n      0 ≤ T → pickupEnergy T ≤ (2 * ∫ (u : ℝ) in 0..T, g u ^ 2) + 2 * ∫ (u : ℝ) in 0..T, (wholePickup u - g u) ^ 2"
     },
     {
       "axioms": [
@@ -2696,7 +2695,7 @@
       "kind": "theorem",
       "module": "GRWTSK.LinearAlgebra.AlmostMathieu",
       "name": "GRWTSK.LinearAlgebra.AlmostMathieu.transfer.eq_1",
-      "type": "\u2200 (E \u03b1 coupling \u03b8 : \u211d) (n : \u2124),\n  GRWTSK.LinearAlgebra.AlmostMathieu.transfer E \u03b1 coupling \u03b8 n =\n    GRWTSK.LinearAlgebra.SchrodingerTransfer.schrodingerTransfer E\n      (GRWTSK.LinearAlgebra.AlmostMathieu.potential \u03b1 coupling \u03b8 n)"
+      "type": "∀ (E α coupling θ : ℝ) (n : ℤ),\n  GRWTSK.LinearAlgebra.AlmostMathieu.transfer E α coupling θ n =\n    GRWTSK.LinearAlgebra.SchrodingerTransfer.schrodingerTransfer E\n      (GRWTSK.LinearAlgebra.AlmostMathieu.potential α coupling θ n)"
     },
     {
       "axioms": [
@@ -2707,7 +2706,7 @@
       "kind": "theorem",
       "module": "GRWTSK.LinearAlgebra.AlmostMathieu",
       "name": "GRWTSK.LinearAlgebra.AlmostMathieu.det_transfer",
-      "type": "\u2200 (E \u03b1 coupling \u03b8 : \u211d) (n : \u2124), (GRWTSK.LinearAlgebra.AlmostMathieu.transfer E \u03b1 coupling \u03b8 n).det = 1"
+      "type": "∀ (E α coupling θ : ℝ) (n : ℤ), (GRWTSK.LinearAlgebra.AlmostMathieu.transfer E α coupling θ n).det = 1"
     },
     {
       "axioms": [
@@ -2718,7 +2717,7 @@
       "kind": "theorem",
       "module": "GRWTSK.LinearAlgebra.AlmostMathieu",
       "name": "GRWTSK.LinearAlgebra.AlmostMathieu.det_one_does_not_bound_trace",
-      "type": "(GRWTSK.LinearAlgebra.AlmostMathieu.transfer 3 0 0 0 0).det = 1 \u2227\n  2 < |(GRWTSK.LinearAlgebra.AlmostMathieu.transfer 3 0 0 0 0).trace|"
+      "type": "(GRWTSK.LinearAlgebra.AlmostMathieu.transfer 3 0 0 0 0).det = 1 ∧\n  2 < |(GRWTSK.LinearAlgebra.AlmostMathieu.transfer 3 0 0 0 0).trace|"
     },
     {
       "axioms": [
@@ -2729,7 +2728,7 @@
       "kind": "definition",
       "module": "GRWTSK.LinearAlgebra.AlmostMathieu",
       "name": "GRWTSK.LinearAlgebra.AlmostMathieu.transfer",
-      "type": "\u211d \u2192 \u211d \u2192 \u211d \u2192 \u211d \u2192 \u2124 \u2192 Matrix (Fin 2) (Fin 2) \u211d"
+      "type": "ℝ → ℝ → ℝ → ℝ → ℤ → Matrix (Fin 2) (Fin 2) ℝ"
     },
     {
       "axioms": [
@@ -2749,7 +2748,7 @@
       "kind": "theorem",
       "module": "GRWTSK.LinearAlgebra.AlmostMathieu",
       "name": "GRWTSK.LinearAlgebra.AlmostMathieu.recurrence_iff_transfer",
-      "type": "\u2200 (E \u03b1 coupling \u03b8 : \u211d) (n : \u2124) (previous current next : \u211d),\n  next + previous + GRWTSK.LinearAlgebra.AlmostMathieu.potential \u03b1 coupling \u03b8 n * current = E * current \u2194\n    GRWTSK.LinearAlgebra.SchrodingerTransfer.rawState next current =\n      (GRWTSK.LinearAlgebra.AlmostMathieu.transfer E \u03b1 coupling \u03b8 n).mulVec\n        (GRWTSK.LinearAlgebra.SchrodingerTransfer.rawState current previous)"
+      "type": "∀ (E α coupling θ : ℝ) (n : ℤ) (previous current next : ℝ),\n  next + previous + GRWTSK.LinearAlgebra.AlmostMathieu.potential α coupling θ n * current = E * current ↔\n    GRWTSK.LinearAlgebra.SchrodingerTransfer.rawState next current =\n      (GRWTSK.LinearAlgebra.AlmostMathieu.transfer E α coupling θ n).mulVec\n        (GRWTSK.LinearAlgebra.SchrodingerTransfer.rawState current previous)"
     },
     {
       "axioms": [
@@ -2760,7 +2759,7 @@
       "kind": "theorem",
       "module": "GRWTSK.LinearAlgebra.AlmostMathieu",
       "name": "GRWTSK.LinearAlgebra.AlmostMathieu.potential.eq_1",
-      "type": "\u2200 (\u03b1 coupling \u03b8 : \u211d) (n : \u2124),\n  GRWTSK.LinearAlgebra.AlmostMathieu.potential \u03b1 coupling \u03b8 n = 2 * coupling * Real.cos (2 * Real.pi * \u03b1 * \u2191n + \u03b8)"
+      "type": "∀ (α coupling θ : ℝ) (n : ℤ),\n  GRWTSK.LinearAlgebra.AlmostMathieu.potential α coupling θ n = 2 * coupling * Real.cos (2 * Real.pi * α * ↑n + θ)"
     },
     {
       "axioms": [
@@ -2771,7 +2770,7 @@
       "kind": "definition",
       "module": "GRWTSK.LinearAlgebra.AlmostMathieu",
       "name": "GRWTSK.LinearAlgebra.AlmostMathieu.potential",
-      "type": "\u211d \u2192 \u211d \u2192 \u211d \u2192 \u2124 \u2192 \u211d"
+      "type": "ℝ → ℝ → ℝ → ℤ → ℝ"
     }
   ],
   "checks": [
@@ -3096,5 +3095,7 @@
       "expected_error_matched": true
     }
   ],
-  "acceptance": "Local candidate; no upstream admission, independent review, or publication"
+  "acceptance": "Local candidate; no upstream admission, independent review, or publication",
+  "public_projection_scope": "Historical mathematical source and checking observations retained. Unpublished provenance in the former reader text is excluded along with its document hash. No mathematical audit input is rebound to current source; relocated source and current reader acceptance remain pending.",
+  "current_relocated_acceptance": "PENDING"
 }
