@@ -66,6 +66,31 @@ theorem pickupWeightedPrefix_eq_mertens_add_integral {n : ℕ}
   rw [pickupWeightedPrefix_eq_mertens_add_wholePickup hn]
   rfl
 
+/-- A natural-cutoff power bound lifts to the exact real-floor Mertens
+envelope occurring in the Abel integral. -/
+theorem mertensPrefix_exp_le_of_powerBound {C β u : ℝ}
+    (hC : 0 ≤ C) (hβ : 0 ≤ β)
+    (hM : ∀ n : ℕ, 1 ≤ n →
+      |pickupMertensPrefix n| ≤ C * (n : ℝ) ^ β)
+    (hu : 0 ≤ u) :
+    |mertensPrefix (Real.exp u)| ≤ C * Real.exp (β * u) := by
+  rw [← pickupMertensPrefix_at_cutoff]
+  have hk : 1 ≤ ⌊Real.exp u⌋₊ := by
+    rw [Nat.one_le_floor_iff]
+    simpa using Real.exp_le_exp.mpr hu
+  have hfloor : ((⌊Real.exp u⌋₊ : ℕ) : ℝ) ≤ Real.exp u :=
+    Nat.floor_le (Real.exp_pos u).le
+  calc
+    |pickupMertensPrefix ⌊Real.exp u⌋₊| ≤
+        C * ((⌊Real.exp u⌋₊ : ℕ) : ℝ) ^ β := hM _ hk
+    _ ≤ C * (Real.exp u) ^ β :=
+      mul_le_mul_of_nonneg_left
+        (Real.rpow_le_rpow (Nat.cast_nonneg _) hfloor hβ) hC
+    _ = C * Real.exp (β * u) := by
+      rw [Real.rpow_def_of_pos (Real.exp_pos u), Real.log_exp]
+      congr 2
+      ring
+
 /-- On the open logarithmic cell from `n` to `n+1`, the pickup is the exact
 coupled weighted-prefix/Mertens-prefix expression with cutoff `n`. -/
 theorem wholePickup_eq_prefix_flux_on_log_cell {n : ℕ} (hn : 1 ≤ n) {u : ℝ}
@@ -573,6 +598,7 @@ end GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks
 
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.wholePickup_eq_prefix_flux_on_log_cell
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.pickupWeightedPrefix_eq_mertens_add_integral
+#print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.mertensPrefix_exp_le_of_powerBound
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalIntervalBlock_eq_pickup
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalIntervalBlock_closedForm
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalIntervalBlockUniform_of_majorantSummable
