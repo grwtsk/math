@@ -30,7 +30,8 @@ SUBJECTS = {"Algebra", "Analysis", "Combinatorics", "DynamicalSystems", "Geometr
             "LinearAlgebra", "Logic", "MeasureTheory", "NumberTheory", "Order",
             "Probability", "Topology", "SetTheory", "CategoryTheory", "Computability"}
 FORBIDDEN_COMPONENTS = {"CCC", "RiemannHypothesis", "Conversation", "ProofHorizon",
-                        "CorkscrewChamberCap", "SpectralUnificationOfComputabilityAndAlgebraicSymmetry"}
+                        "CorkscrewChamberCap", "SpectralUnificationOfComputabilityAndAlgebraicSymmetry",
+                        "HadwigerNelson", "Waveform"}
 
 
 def digest(data: bytes) -> str:
