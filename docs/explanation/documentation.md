@@ -1,13 +1,20 @@
-# Documentation model and upkeep
+# Mathematical documentation standard
 
-The README routes readers. Tutorials teach one complete example; how-to pages support a task; explanations clarify concepts; reference pages retain exact interfaces and evidence. Canonical result pages follow mathematical subjects and objects. Topic dossiers connect subjects without becoming source umbrellas.
+Organize mathematics by subject and object, matching the Lean source tree: `docs/mathematics/<Subject>/<Object>/<page>.md`. A mixed dossier must distribute its results among their actual objects. Cross-subject connections are explicit links with their hypotheses; they do not create an umbrella campaign or imply a proved adapter.
 
-Each referenceable result family needs its exact statement and hypotheses, proof explanation, actual consumers, limits, source-bound evidence, upstream credit and local contribution. No paper format, headline novelty claim or measured-impact claim is required.
+Lead each result page with the mathematics: exact statement, hypotheses, definitions and proof idea. Preserve counterexamples, actual consumers, open premises, source citations and individual contributions. Identify written arguments, external literature, conditional theorems, historical checks and current source-bound receipts distinctly. Never update a hash as a substitute for verification.
 
-The candidate [structured records](../reference/results.json) own IDs, source bindings and status. Authored pages explain mathematics; the generated index projects those records. Priority reflects immediate architectural usefulness, not measured scientific influence. A proposed application is distinct from a checked consumer.
+The README and subject index route readers. Tutorials develop one example; how-to pages support a task; explanations develop concepts; reference describes sources, interfaces and evidence. Conversation chronology, grants, branch instructions and execution campaigns do not organize mathematical pages. Raw history remains evidence, outside canonical navigation. No paper format or unsupported novelty or impact claim is needed.
 
-When checked results change: identify affected records; retain the old evidence; replay affected proofs/consumers where required; update source and receipt bindings; then regenerate navigation and run documentation controls. Never silently refresh a hash to imply a check happened. Negative paths and unresolved premises remain first-class documentation.
+For a new or changed result, update its affected object page, exact source binding, status, credit and downstream links. Preserve earlier receipts and failures. Add the page to the [layout ledger](../reference/documentation-layout.json), regenerate subject navigation, and run both documentation checkers and the hostile fixtures. Keep the selected [result catalog](../reference/results.json) narrower than declaration-wide coverage until its separate acceptance requirements are met.
 
-`python3 -B scripts/check_documentation.py` validates selected source bindings, links, status and premise requirements. `--render` regenerates the selected index. It is a structural documentation checker, not a theorem prover or the full authoritative catalog. Coverage is explicitly three selected families plus the existing top-level page inventory; declaration-wide coverage remains open.
+```sh
+python3 -B scripts/check_documentation.py --render
+python3 -B scripts/check_documentation.py
+python3 -B -m unittest discover -s scripts -p test_documentation_layout.py
+python3 -O -B -m unittest discover -s scripts -p test_documentation_layout.py
+```
 
-Provide complete text and meaningful link labels. Diagrams supplement the text. Historical pages retain their original qualifications; their listed commands may require repaired source bindings during the layout migration.
+The checker discovers every Git-visible maintained Markdown page, enforces subject/object placement and exact source bindings, verifies the complete legacy section ledger, and rejects stale navigation, broken links, unsafe paths, private provenance and unsupported current-verification labels. Python optimization cannot disable these checks. Structural success does not establish mathematical truth, complete historical attribution or universal semantic preservation.
+
+Provide complete structured text and descriptive links. Diagrams supplement the statements. Reorganization must preserve hypotheses, orientation, normalization, signs, endpoint conventions and scope; an unresolved proof remains unresolved.
