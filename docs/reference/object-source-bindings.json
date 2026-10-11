@@ -1,0 +1,137 @@
+{
+  "schema": "documentation-object-bindings-v1",
+  "status": "candidate editorial specification; not proof admission",
+  "bindings": {
+    "LinearAlgebra/Cocycle": [
+      "GRWTSK/LinearAlgebra/CocycleProduct.lean"
+    ],
+    "LinearAlgebra/CommonGenerator": [
+      "GRWTSK/LinearAlgebra/CommonJ.lean",
+      "GRWTSK/LinearAlgebra/CommonJCounterexamples.lean"
+    ],
+    "Logic/FiniteCoverage": [
+      "GRWTSK/Logic/FiniteCoverage.lean"
+    ],
+    "LinearAlgebra/Gauge": [
+      "GRWTSK/LinearAlgebra/GaugeState.lean"
+    ],
+    "Analysis/Integration": [
+      "GRWTSK/Analysis/IntervalReflection.lean"
+    ],
+    "LinearAlgebra/Jacobi": [
+      "GRWTSK/LinearAlgebra/JacobiTransfer.lean"
+    ],
+    "LinearAlgebra/OrderedProduct": [
+      "GRWTSK/LinearAlgebra/OrderedProductDeterminant.lean"
+    ],
+    "Algebra/OrderedProduct": [
+      "GRWTSK/Algebra/OrderedProduct.lean",
+      "GRWTSK/Algebra/OrderedProductGauge.lean"
+    ],
+    "LinearAlgebra/Transfer": [
+      "GRWTSK/LinearAlgebra/OrderedTransfer.lean"
+    ],
+    "Analysis/InnerProductSpace": [
+      "GRWTSK/Analysis/InnerProductSpace/CausalResponseGram.lean",
+      "GRWTSK/Analysis/Polarization.lean"
+    ],
+    "NumberTheory/Zeta/Riemann": [
+      "GRWTSK/NumberTheory/Zeta/Riemann/PolynomialEnergyCriterion.lean",
+      "GRWTSK/NumberTheory/Zeta/Riemann/ZeroDefinitions.lean"
+    ],
+    "LinearAlgebra/Schrodinger": [
+      "GRWTSK/LinearAlgebra/AlmostMathieu.lean",
+      "GRWTSK/LinearAlgebra/Schrodinger/SampledPotential.lean",
+      "GRWTSK/LinearAlgebra/SchrodingerTransfer.lean",
+      "GRWTSK/LinearAlgebra/Sturmian.lean"
+    ],
+    "NumberTheory/Moebius/Laplace": [
+      "GRWTSK/NumberTheory/Moebius/FiniteLaplaceTransform.lean",
+      "GRWTSK/NumberTheory/Moebius/FinitePrimeProductDebt.lean",
+      "GRWTSK/NumberTheory/Moebius/PrimeFilterLaplace.lean"
+    ],
+    "NumberTheory/Moebius/Pickup": [
+      "GRWTSK/NumberTheory/Moebius/PrimitiveIdentification.lean"
+    ],
+    "Spectral/FiniteVolume": [
+      "GRWTSK/Spectral/DirichletCut.lean",
+      "GRWTSK/Spectral/MatrixCountComparison.lean",
+      "GRWTSK/Spectral/SturmianBlockCounts.lean"
+    ],
+    "NumberTheory/Moebius/Energy": [
+      "GRWTSK/NumberTheory/Moebius/EnergyGrowthEquivalences.lean",
+      "GRWTSK/NumberTheory/Moebius/GramDiagonalBound.lean",
+      "GRWTSK/NumberTheory/Moebius/PrimeBlockEnergy.lean",
+      "GRWTSK/NumberTheory/Moebius/UnsignedEnergyBound.lean",
+      "GRWTSK/NumberTheory/Moebius/WeightedIntegralEnergy.lean"
+    ],
+    "NumberTheory/Moebius/PrimeFilters": [
+      "GRWTSK/NumberTheory/Moebius/NegativePrimeCorrelation.lean",
+      "GRWTSK/NumberTheory/Moebius/PrimeFactorFilters.lean",
+      "GRWTSK/NumberTheory/Moebius/PrimeFilterGrowth.lean",
+      "GRWTSK/NumberTheory/Moebius/PrimePrefixGrowth.lean"
+    ],
+    "Spectral/FreeDirichletSpectrum": [
+      "GRWTSK/Spectral/FreeDirichletSpectrum.lean"
+    ],
+    "Spectral/IntegratedDensityOfStates": [
+      "GRWTSK/Spectral/FreeIDS.lean"
+    ],
+    "Spectral/GapTransport": [
+      "GRWTSK/Spectral/GapTransport.lean"
+    ],
+    "Analysis/Fourier/WindowCertificates": [
+      "GRWTSK/Analysis/Fourier/WindowCertificates.lean"
+    ],
+    "Logic/FiniteSequences": [
+      "GRWTSK/Logic/FiniteSequences/PrefixCoverage.lean"
+    ],
+    "Combinatorics/Sequences": [
+      "GRWTSK/Combinatorics/Sequences/QuotaDiscrepancy.lean"
+    ],
+    "Analysis/Fourier/IntegerSeries": [
+      "GRWTSK/Analysis/Fourier/IntegerSeries.lean"
+    ],
+    "Analysis/NormedSpace": [
+      "GRWTSK/Analysis/NormedSpace/QuadraticError.lean"
+    ],
+    "NumberTheory/ContinuedFractions": [
+      "GRWTSK/NumberTheory/ContinuedFractions/FrequencyRealization.lean",
+      "GRWTSK/NumberTheory/ContinuedFractions/ScheduledDenominators.lean"
+    ],
+    "DynamicalSystems/Sequences": [
+      "GRWTSK/DynamicalSystems/Sequences/ApproximationReturn.lean"
+    ],
+    "Analysis/TestFunctions": [
+      "GRWTSK/Analysis/TestFunctions/ExponentialMomentVariation.lean",
+      "GRWTSK/Analysis/TestFunctions/PolynomialBumpNormalization.lean",
+      "GRWTSK/Analysis/TestFunctions/Separation.lean"
+    ],
+    "Analysis/Convolution": [
+      "GRWTSK/Analysis/Convolution/AutocorrelationDerivativeEnergy.lean",
+      "GRWTSK/Analysis/Convolution/CompactProfileHigherDerivatives.lean"
+    ],
+    "Analysis/Asymptotics": [
+      "GRWTSK/Analysis/Asymptotics/PolynomialErrorBound.lean"
+    ],
+    "NumberTheory/Moebius": [
+      "GRWTSK/NumberTheory/Moebius/PrimitiveIdentification.lean"
+    ],
+    "NumberTheory/Prime": [
+      "GRWTSK/NumberTheory/Prime/LeastPrime.lean"
+    ],
+    "DynamicalSystems/TransitionSystems": [
+      "GRWTSK/DynamicalSystems/TransitionSystems/GuardedFiniteBudget.lean"
+    ],
+    "NumberTheory/ArithmeticFunctions": [
+      "GRWTSK/NumberTheory/ArithmeticFunctions/DensityMomentTails.lean",
+      "GRWTSK/NumberTheory/ArithmeticFunctions/SquarefreeMoebiusSum.lean"
+    ],
+    "NumberTheory/Moebius/LocalCancellation": [
+      "GRWTSK/NumberTheory/ArithmeticFunctions/MoebiusTruncation.lean"
+    ],
+    "NumberTheory/LSeries": [
+      "GRWTSK/NumberTheory/LSeries/ClosedMoebiusPolynomial.lean"
+    ]
+  }
+}
