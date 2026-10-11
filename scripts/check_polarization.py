@@ -12,6 +12,6 @@ r=subprocess.run(['lake','env',lean,'-j2','--trust=0','-DwarningAsError=true','c
 if r.returncode or output.count('POLARIZATION_DECL::')!=3 or output.count('POLARIZATION_ORIGINAL_REUSE::')!=1 or output.count('POLARIZATION_SYNTHETIC_REUSE::')!=2:raise RuntimeError(output)
 print(json.dumps({'status':'POLARIZATION_CONTRACT_AND_PROOF_DEPENDENCIES_CHECKED','source_roots':3,'logical_records':3,'original_intra_family_proof_roles':1,'synthetic_public_wrappers':2,'source_sha256':manifest['files']['GRWTSK/Analysis/Polarization.lean'],'admission':'LOCAL_CANDIDATE'}));print(output)
 for name,expected in [('ExactPolarizationContracts',0),('MissingInnerProductInstance',1),('WrongPolarizationSign',1),('FalseSectorInference',1)]:
- r=subprocess.run(['lake','env',lean,'-j2','--trust=0','-DwarningAsError=true','checks/PolarizationControls/'+name+'.lean'],cwd=root,env=env,capture_output=True,text=True,timeout=600);text=r.stdout+r.stderr
+ r=subprocess.run(['lake','env',lean,'-j2','--trust=0','-DwarningAsError=true','checks/Analysis/InnerProductSpace/Polarization/Controls/'+name+'.lean'],cwd=root,env=env,capture_output=True,text=True,timeout=600);text=r.stdout+r.stderr
  if r.returncode!=expected or expected and not any(x in text for x in ['error:','error(lean.']):raise RuntimeError('polarization hostile outcome mismatch: '+name+' '+text)
  print('POLARIZATION_CONTROL::'+name+'::'+('PASSED'if expected==0 else 'REJECTED_CONTRACT_DRIFT'))

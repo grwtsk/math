@@ -20,7 +20,7 @@ print(json.dumps({'status':'COUNTEREXAMPLE_INTERFACE_EQUATIONS_AND_DECLARATION_R
 print(output)
 
 for name,expected in [('ExactCounterexampleContracts',0),('WrongCommutativity',1),('WrongProductInverse',1)]:
-    r=subprocess.run(['lake','env',lean,'-j2','--trust=0','-DwarningAsError=true','checks/CounterexampleControls/'+name+'.lean'],cwd=root,env=env,capture_output=True,text=True,timeout=600)
+    r=subprocess.run(['lake','env',lean,'-j2','--trust=0','-DwarningAsError=true','checks/Logic/Counterexamples/Controls/'+name+'.lean'],cwd=root,env=env,capture_output=True,text=True,timeout=600)
     text=r.stdout+r.stderr
     if r.returncode!=expected or expected and 'unsolved goals' not in text:
         raise RuntimeError('counterexample hostile outcome mismatch: '+name+' '+text)

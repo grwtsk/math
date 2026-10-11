@@ -9,7 +9,7 @@ D_N(s)=\sum_{n=1}^N\mu(n)e^{-s\log n},\qquad
 A_N=\sum_{n=1}^N\mu(n)n^{-1/2},\qquad M_N=\sum_{n=1}^N\mu(n).
 $$
 
-The [Lean source](../GRWTSK/RiemannHypothesis/CCC/PickupCutoffLaplace.lean) proves
+The [Lean source](../GRWTSK/NumberTheory/Moebius/FiniteLaplaceTransform.lean) proves
 
 $$
 L_T(W;z)=\frac{D_N(s)}{zs}

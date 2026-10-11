@@ -10,7 +10,7 @@ in [the verification receipt](../evidence/sequence-realization-checks.json).
 
 The modules retain three separate roles:
 
-- [Scheduling and arithmetic](../GRWTSK/RiemannHypothesis/Conversation/BranchSequenceRealization.lean)
+- [Scheduling and arithmetic](../GRWTSK/NumberTheory/ContinuedFractions/ScheduledDenominators.lean)
   turns arbitrary signed integer drivers into positive, budgeted batch increments.
   The strictly increasing clock covers every obligation index exactly once.
   Repeated epochs require a nonempty finite universe. Positive partial quotients
@@ -19,7 +19,7 @@ The modules retain three separate roles:
   zero. Powers of two fail the exact denominator recurrence. Exponential spikes
   retain their ceiling error and predecessor contribution; their extended
   arithmetic exponent equals the limsup of effective spike strengths.
-- [Real-frequency existence](../GRWTSK/RiemannHypothesis/Conversation/BranchFrequencyExistence.lean)
+- [Real-frequency existence](../GRWTSK/NumberTheory/ContinuedFractions/FrequencyRealization.lean)
   constructs every infinite positive partial-quotient stream's unique irrational
   real frequency in `(0,1)`. Compactness supplies complete quotients; their exact
   floors and fractional parts identify every native continued-fraction digit.
@@ -27,7 +27,7 @@ The modules retain three separate roles:
   uniqueness. Exact native denominator readback transfers the arithmetic exponent
   to the actual real frequency. Every nonnegative finite exponent and the infinite
   exponent occur, with the same effective-strength accounting for sparse spikes.
-- [Polynomial return](../GRWTSK/RiemannHypothesis/Conversation/BranchSequenceReturn.lean)
+- [Polynomial return](../GRWTSK/DynamicalSystems/Sequences/ApproximationReturn.lean)
   requires an all-real target/readout identification, a polynomial readout budget,
   and a polynomial complete correction budget. Constants add and exponents take
   their maximum. Frequency displacement remains separate from the positive `4/L`

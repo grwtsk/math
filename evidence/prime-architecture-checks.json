@@ -1,0 +1,30 @@
+{
+  "schema": "prime-architecture-replay/1",
+  "source_hashes": {
+    "GRWTSK/NumberTheory/FirstPrime.lean": "436e96d07490a3251683045a1f4929a1df5eca692fb411c87fe527d71b2a0d9c",
+    "GRWTSK/NumberTheory/Prime/LeastPrime.lean": "89d862e92978b74d032ea9b8ce764c0593a19cb93001c2c1cf5695c600c187fd",
+    "checks/PrimeArchitectureAudit.lean": "44266c221b17af7e01219a5c18e6c79dd0b3d39777e61201a596e520c0fb2ac4"
+  },
+  "lean": "4.33.0/d8b18978322de05a8f3dba51ef03cf5461676c17",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "outcome": "passed",
+  "selected_checks": {
+    "prime-layout": "passed",
+    "prime-base-recovery": "passed",
+    "prime-consumer": "passed",
+    "prime-audit": "passed"
+  },
+  "not_run": [
+    "cold dependency reconstruction",
+    "whole-library build",
+    "independent human review"
+  ],
+  "retained_failure": "initial relative helper path was absent; corrected absolute invocation passed; this was a runner failure, not mathematical refutation",
+  "original_theorem": "unchanged",
+  "local_delta": "explicit leastness uniqueness consumer; no novelty claim"
+}

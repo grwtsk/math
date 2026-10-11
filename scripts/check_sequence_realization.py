@@ -3,7 +3,7 @@ from pathlib import Path
 import datetime,hashlib,json,os,re,subprocess,time
 ROOT=Path(__file__).resolve().parent.parent
 NAMES=['BranchSequenceRealization','BranchFrequencyExistence','BranchSequenceReturn','Sequences']
-FILES=['GRWTSK/RiemannHypothesis/Conversation/'+n+'.lean' for n in NAMES]
+FILES=['GRWTSK/NumberTheory/ContinuedFractions/ScheduledDenominators.lean', 'GRWTSK/NumberTheory/ContinuedFractions/FrequencyRealization.lean', 'GRWTSK/DynamicalSystems/Sequences/ApproximationReturn.lean']
 INPUTS=FILES+['checks/SequenceRealizationAudit.lean','scripts/check_sequence_realization.py','lean-toolchain','lakefile.toml','lake-manifest.json']
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 expected={rel:sha(ROOT/rel) for rel in INPUTS}

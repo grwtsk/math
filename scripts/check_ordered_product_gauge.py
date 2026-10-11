@@ -12,6 +12,6 @@ r=subprocess.run(['lake','env',lean,'-j2','--trust=0','-DwarningAsError=true','c
 if r.returncode or output.count('ORDERED_GAUGE_DECL::')!=13 or output.count('ORDERED_GAUGE_EQUATION::')!=3 or output.count('ORDERED_GAUGE_ORIGINAL_REUSE::')!=6 or output.count('ORDERED_GAUGE_SYNTHETIC_REUSE::')!=2:raise RuntimeError(output)
 print(json.dumps({'status':'GAUGE_INTERFACE_EQUATIONS_AND_PROOF_DEPENDENCIES_CHECKED','source_roots':10,'logical_records':13,'original_intra_family_proof_roles':4,'synthetic_public_wrappers':2,'source_sha256':manifest['files']['GRWTSK/Algebra/OrderedProductGauge.lean'],'admission':'LOCAL_CANDIDATE'}));print(output)
 for name,expected in [('ExactGaugeContracts',0),('StrongerGroup',1),('ShiftedEndpoint',1),('MissingClosedPath',1)]:
- r=subprocess.run(['lake','env',lean,'-j2','--trust=0','-DwarningAsError=true','checks/GaugeControls/'+name+'.lean'],cwd=root,env=env,capture_output=True,text=True,timeout=600);text=r.stdout+r.stderr
+ r=subprocess.run(['lake','env',lean,'-j2','--trust=0','-DwarningAsError=true','checks/Algebra/OrderedProduct/Conjugation/Controls/'+name+'.lean'],cwd=root,env=env,capture_output=True,text=True,timeout=600);text=r.stdout+r.stderr
  if r.returncode!=expected or expected and not any(x in text for x in ['error:','error(lean.']):raise RuntimeError('gauge hostile outcome mismatch: '+name+' '+text)
  print('ORDERED_GAUGE_CONTROL::'+name+'::'+('PASSED'if expected==0 else 'REJECTED_CONTRACT_DRIFT'))
