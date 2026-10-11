@@ -212,14 +212,14 @@ known weighted-energy domain $\tau>1$. The unresolved extension is exactly
 $0<\sigma\le1/2$, and ultimately every positive line.
 
 The dependence on the continuum of rates can be reduced honestly.
-[`VerticalLineMonotonicity`](../../../../../GRWTSK/NumberTheory/Moebius/VerticalLineMonotonicity.lean) proves that the finite completed mass is antitone in
+[[`VerticalLineMonotonicity`](../../../../../GRWTSK/NumberTheory/Moebius/VerticalLineMonotonicity.lean)](../../../../../GRWTSK/NumberTheory/Moebius/VerticalLineMonotonicity.lean) proves that the finite completed mass is antitone in
 $\sigma$. Therefore bounds on the reciprocal sequence
 $\sigma_n=1/(n+1)$, $n\ge1$, imply bounds at every positive real rate. The
 converse is immediate, so this countable critical criterion is equivalent to
 `CompletedVerticalLineUniform`. The constant remains allowed to depend on
 $n$; the theorem does not manufacture a rate-uniform bound.
 
-At the first reciprocal line, [`CriticalIntervalBlocks`](../../../../../GRWTSK/NumberTheory/Moebius/CriticalIntervalBlocks.lean) removes the remaining
+At the first reciprocal line, [[`CriticalIntervalBlocks`](../../../../../GRWTSK/NumberTheory/Moebius/CriticalIntervalBlocks.lean)](../../../../../GRWTSK/NumberTheory/Moebius/CriticalIntervalBlocks.lean) removes the remaining
 continuous-time bookkeeping without removing arithmetic cancellation. On the
 cell $\log n<u<\log(n+1)$ it proves
 
@@ -256,6 +256,19 @@ $$
 This closed quadratic form exposes the exact negative mixed term that an
 arithmetic proof must retain. The generic finite exponential integral used in
 the derivation lives separately under `Analysis/Integration`.
+
+There is also a checked positive majorant
+
+$$
+\mathcal M_n=4A_n^2\Delta_1(n)
++\frac{16}{3}|A_nM_n|\Delta_{3/2}(n)
++2M_n^2\Delta_2(n).
+$$
+
+The endpoint drops are proved nonnegative and equal to the corresponding real
+power differences for $n\ge1$. Termwise $B_n\le\mathcal M_n$, so summability
+of this explicit prefix majorant implies the complete boundary-line bound.
+That summability is a new named sufficient obligation, not an admitted fact.
 
 The actual omitted function is
 
