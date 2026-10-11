@@ -60,3 +60,5 @@ The finite interval reflection interface is described in [Interval reflection an
 The explicit finite-coverage interface is described in [Finite coverage and scope](docs/finite-coverage.md). Run `python3 scripts/check_finite_coverage.py` to check exact coverage/tail contracts, axioms and canonical-use wrappers. Local candidate admission remains pending.
 
 The [RH inference guards](docs/rh-inference-guards.md) retain exact domain exclusions and negative inference examples. Their interface is checked against the existing zero definitions and symmetries; no RH proof is claimed.
+
+The [Schrödinger transfer core](docs/schrodinger-transfer.md) preserves the exact current/previous state, commutative-ring recurrence, determinant-one packaging and rational inequality witness.
