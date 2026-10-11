@@ -257,6 +257,19 @@ This closed quadratic form exposes the exact negative mixed term that an
 arithmetic proof must retain. The generic finite exponential integral used in
 the derivation lives separately under `Analysis/Integration`.
 
+There is also a checked positive majorant
+
+$$
+\mathcal M_n=4A_n^2\Delta_1(n)
++\frac{16}{3}|A_nM_n|\Delta_{3/2}(n)
++2M_n^2\Delta_2(n).
+$$
+
+The endpoint drops are proved nonnegative and equal to the corresponding real
+power differences for $n\ge1$. Termwise $B_n\le\mathcal M_n$, so summability
+of this explicit prefix majorant implies the complete boundary-line bound.
+That summability is a new named sufficient obligation, not an admitted fact.
+
 The actual omitted function is
 
 $$r_{\sigma,T}(u)=1_{[0,\infty)}(u)e^{-\sigma u}W(u)

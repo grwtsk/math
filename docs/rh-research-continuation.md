@@ -95,6 +95,11 @@ $2$. The mixed coefficient is $-16/3$, so the exact signed interaction is
 visible to subsequent arithmetic estimates instead of being hidden inside an
 integral.
 
+Taking absolute value only in that mixed product gives a formal positive
+majorant series. Its convergence implies uniform control at $\sigma=1/2$.
+This isolates a source-exact sufficient arithmetic estimate for the boundary;
+it neither supplies the convergence nor controls the smaller reciprocal lines.
+
 The canonical debt module and damped-recording Parseval module have focused trust-zero replay and owned-declaration axiom audits. Exact integer coefficient checks through cutoff 42 remain finite sanity checks, not an arithmetic estimate. The separate spectral word adapter still requires its own current source replay before admission.
 
 ## Proved finite recording and exact tail obligation
