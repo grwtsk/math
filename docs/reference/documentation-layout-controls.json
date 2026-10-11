@@ -1,0 +1,22 @@
+{
+  "schema": "docs-layout-oracle/1",
+  "positive": [
+    "mathematical subject/object page with exact source",
+    "complete split including historical section",
+    "valid cross-subject reference",
+    "historical status retained"
+  ],
+  "reject": [
+    "missing section",
+    "duplicate primary disposition",
+    "campaign directory",
+    "source subject mismatch",
+    "missing link fragment",
+    "escaped link",
+    "source digest drift",
+    "historical receipt promoted",
+    "stale index",
+    "unregistered page",
+    "python optimized mode bypass"
+  ]
+}
