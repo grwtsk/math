@@ -2,6 +2,8 @@
 
 The actual closed Möbius pickup is exactly a finite causal prime-note cascade on every recording window. The one-prime energy recurrence and the conditional induction to `PickupCrossPoly` are Lean theorems. The source-specific signed reverberation estimates remain open; no unconditional RH result is supplied.
 
+Research update: the uniform prime/block suppliers below, previously recorded as open, are **analytically obstructed** by finite Euler-product growth from the prime number theorem. This rejection is a classical argument recorded in [the recording-scale continuation](ccc-recording-scale.md), not a replayed Lean theorem. The existing conditional implications remain checked. The continuation also gives a kernel-checked negative source correlation and an exact complete-block target that retains its signed cancellation; that new scale estimate and P04 remain open.
+
 Human mathematical direction and selection: grwtsk contributors. Formalization and checking assistance: OpenAI Codex. These are classical arithmetic and analysis arguments applied to the supplied CCC source. Mathlib authorship and Apache-2.0 licensing remain intact; the local contribution is MIT. No originality or independent human review is claimed. Implementation owner: [math #95](https://github.com/grwtsk/math/issues/95); broader applications remain in [math #15](https://github.com/grwtsk/math/issues/15).
 
 ## Exact source and prime factors
