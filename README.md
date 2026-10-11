@@ -76,3 +76,11 @@ correction losses. Run `python3 scripts/check_sequence_realization.py` for fresh
 trust-zero compilation and the full 189-declaration stored-family audit. Exact
 original types and proof bodies were separately checked under namespace renaming.
 Actual CCC identification and P04 remain open.
+
+The [smooth-test continuation](docs/smooth-test-separation.md) proves eleven
+theorems on continuous-residual separation, even test symmetrization and
+exponential moment preservation for the variation h'' - h/4. Checked
+point-spike and homogeneous exponential controls retain the continuity and
+differential-image boundaries. Run `python3 scripts/check_smooth_test_separation.py`
+for fresh trust-zero replay and the complete seventeen-declaration audit.
+Native admissible descent, exact CCC identification, P04, P05 and RH remain open.
