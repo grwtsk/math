@@ -57,6 +57,15 @@ both endpoint terms—with
 $\int_0^T e^{-2\sigma u}W(u)^2\,du$. Thus Fourier normalization and the
 finite-window representative are no longer open interfaces.
 
+`VerticalLineCriterion` packages the needed uniform statement as
+`CompletedVerticalLineUniform` and proves it equivalent to
+`PickupWeightedEnergyAll` and to vanishing of the actual pickup-energy
+abscissa. The forward proof removes damping on each finite interval and yields
+subexponential energy; the reverse proof restricts the integrable half-line
+density. Consequently this completed vertical-line condition feeds the
+existing literal-RH consumer, but is exactly the unpaid all-rate arithmetic
+criterion rather than a new estimate.
+
 The next untried obligation is an independently proved bound for that complete
 signed vertical-line expression, uniform in the recording horizon, or a
 genuinely weaker cancellation lemma that still feeds the every-positive-

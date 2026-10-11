@@ -187,6 +187,7 @@ import GRWTSK.Analysis.Calculus.LogarithmicResponseDerivatives
 import GRWTSK.Analysis.CausalTranslation.ExponentialResponse
 import GRWTSK.Analysis.Fourier.AngularFrequencyParseval
 import GRWTSK.NumberTheory.Moebius.DampedRecordingParseval
+import GRWTSK.NumberTheory.Moebius.VerticalLineCriterion
 import GRWTSK.Analysis.Fourier.FiniteTranslationMultipliers
 import GRWTSK.Analysis.Fourier.MoebiusQuadraticReturn
 import GRWTSK.Analysis.Fourier.PrimePhaseMultiplierBounds
