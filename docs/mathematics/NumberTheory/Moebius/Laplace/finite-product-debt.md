@@ -5,10 +5,12 @@ formalization assistance: OpenAI Codex. The finite product expansion and prime
 factorization arguments are established mathematics; Mathlib contributions
 retain their upstream authorship and Apache-2.0 license.
 
-Status: written derivation, with complete candidate Lean scripts retained in
-ignored local storage. The candidate has not been elaborated, admitted to the
-library or natively audited. No independent arithmetic upper estimate or RH proof is
-claimed.
+Status: the finite product/debt identity, its native cutoff-prefix adapter, the
+causal vanishing of unborn responses, the `s = 0` Mertens edge, and the complete
+finite-window transform correction are formalized in
+[`FinitePrimeProductDebt.lean`](../../../../../GRWTSK/NumberTheory/Moebius/FinitePrimeProductDebt.lean).
+They have focused trust-zero replay and an owned-declaration axiom audit. No
+independent arithmetic upper estimate, P04 witness, or RH proof is claimed.
 
 ## Exact finite formula
 
@@ -123,11 +125,10 @@ The resulting exact proposed source adapter is
 
 $$\boxed{L_T(z)=\frac{\Pi_N(s)-R_T(z,s)}{zs}}.$$
 
-This completion retains unborn products and both endpoint sums. It neither
-estimates $R_T$ nor identifies it with a paid comparison-energy residual.
-The previous native receipt for the source transform applies to its frozen
-recorded inputs; changed consumers require fresh verification. The
-new debt adapter remains unelaborated.
+This completion retains unborn products and both endpoint sums. The theorem
+`wholePickup_cutoff_laplace_prime_product` proves this adapter for the actual
+finite-window transform. It neither estimates $R_T$ nor identifies it with a
+paid comparison-energy residual.
 
 ## Next independent estimate
 
@@ -147,12 +148,15 @@ $$
  =2\pi\int_0^T e^{-2\sigma u}W(u)^2\,du.
 $$
 
-Pinned Mathlib's `MeasureTheory.Lp.norm_fourier_eq` supplies the normalized
-$L^2$ isometry. A native proof here must additionally construct the actual
-hard-window representative, connect its integral kernel to that isometry,
-and pay the angular change of variable. The concurrent
-`AngularWindowCertificate` stores these obligations as fields; it does not
-construct them. None of these new adapter steps has been proved in Lean.
+These adapter steps are now proved in
+[`DampedRecordingParseval.lean`](../../../../../GRWTSK/NumberTheory/Moebius/DampedRecordingParseval.lean).
+The module constructs the actual zero-extended hard window, proves its $L^1$
+and $L^2$ membership from compact-window continuity, identifies its angular
+Fourier kernel pointwise with $L_T(\sigma+it)$, pays the $2\pi$ normalization,
+and substitutes the complete prime-product/debt formula. The resulting theorem
+`completedNumerator_verticalLine_parseval` is exactly the displayed identity.
+The generic `AngularWindowCertificate` remains merely an interface; it is not
+used as an assumed supplier.
 
 An independently established bound on the displayed left side, uniform in
 $T\ge0$ at each $\sigma>0$, would give the actual half-line weighted square
@@ -163,7 +167,98 @@ nonvanishing terms nor the finite product expansion determines the signed
 cancellation in this completed numerator.
 
 
+## Finite recordings, extended tail energy and the limit obligation
+
+The finite-window part of this section now has native Lean replay through
+`DampedRecordingParseval`. It reuses the independently proved raw-integral
+Plancherel bridge in `AngularFrequencyParseval`, rather than the older private
+`DampedRecordingWindow.lean` candidate. The half-line monotone-limit and tail
+statements below remain written arguments pending their own native admission;
+they are not premises supplied by a waveform certificate.
+
+For fixed real $\sigma$ define the nonnegative density and its extended
+half-line energy by
+
+$$h_\sigma(u)=e^{-2\sigma u}W(u)^2,\qquad
+\mathcal E_\sigma=\int_{[0,\infty)}h_\sigma(u)\,du\in[0,\infty].$$
+
+Here the half-line integral is the nonnegative extended integral. Set
+$H_\sigma(T)=\int_0^T h_\sigma(u)\,du$ for $T\ge0$. Continuity gives finite
+$H_\sigma(T)$ for each finite $T$, at every fixed damping. The increasing
+windows $[0,n]$ exhaust the half-line, so monotone convergence gives
+
+$$\mathcal E_\sigma=\sup_{n\in\mathbb N}H_\sigma(n)
+                    =\sup_{T\ge0}H_\sigma(T).$$
+
+Consequently a finite constant bounding every recording is equivalent to
+$\mathcal E_\sigma<\infty$. By the proved finite angular Parseval adapter, it
+is also equivalent to a uniform bound on the complete
+vertical-line expression above. Separate finite constants depending on $T$
+do not prove this condition. Requiring it at every $\sigma>0$ is precisely
+the selected `PickupWeightedEnergyAll` premise after the damping change
+$\tau=2\sigma$; that premise remains unpaid. This equivalence is now formalized
+without invoking a half-line monotone-convergence theorem:
+`VerticalLineCriterion` proves that a uniform finite-window bound removes the
+damping on each finite interval at cost $e^{2\sigma T}$, hence gives
+subexponential pickup energy and then the existing all-rate criterion. The
+reverse implication restricts the paid half-line integral to each window.
+It also proves equivalence with `pickupEnergyAbscissa = 0` and a conditional
+return to the literal Riemann hypothesis.
+
+The existing elementary energy estimate does give an unconditional baseline:
+`verticalLineMass_uniform_above_half` proves the complete uniform
+prime-product/debt bound for every $\sigma>1/2$. This is the transform of the
+known weighted-energy domain $\tau>1$. The unresolved extension is exactly
+$0<\sigma\le1/2$, and ultimately every positive line.
+
+The actual omitted function is
+
+$$r_{\sigma,T}(u)=1_{[0,\infty)}(u)e^{-\sigma u}W(u)
+                -1_{[0,T]}(u)e^{-\sigma u}W(u)
+                =1_{(T,\infty)}(u)e^{-\sigma u}W(u).$$
+
+It therefore has extended squared energy
+
+$$\mathcal R_\sigma(T)=\int_{(T,\infty)}h_\sigma(u)\,du,\qquad
+  \mathcal E_\sigma=H_\sigma(T)+\mathcal R_\sigma(T).$$
+
+The disjoint decomposition is exact, including the endpoint. If
+$\mathcal E_\sigma=\infty$, then $\mathcal R_\sigma(T)=\infty$ for every
+finite $T$, since $H_\sigma(T)$ is finite. If $\mathcal E_\sigma<\infty$,
+then $\mathcal R_\sigma(T)\to0$ as $T\to\infty$, and the recordings converge
+to the actual damped half-line function in $L^2$. Conversely, an $L^2$
+representative of that actual half-line function already requires
+$\mathcal E_\sigma<\infty$. No unconditional finite tail norm can be read
+from an ordinary totalized Bochner integral without its integrability proof.
+
+There is also a precise conditional kernel estimate. Suppose
+$0<\rho<\sigma$ and $\mathcal E_\rho<\infty$. Cauchy--Schwarz gives
+
+$$\int_T^\infty e^{-\sigma u}|W(u)|\,du
+ \le \left(\int_T^\infty h_\rho(u)\,du\right)^{1/2}
+      \frac{e^{-(\sigma-\rho)T}}{\sqrt{2(\sigma-\rho)}}
+ \le \frac{\sqrt{\mathcal E_\rho}}{\sqrt{2(\sigma-\rho)}}
+      e^{-(\sigma-\rho)T}.$$
+
+Indeed, split the integrand as
+$e^{-\rho u}|W(u)|e^{-(\sigma-\rho)u}$ and integrate the squared second
+factor explicitly. Thus the infinite Laplace kernel exists absolutely at
+$\sigma+i\omega$, and the same bound controls
+$|L_\infty(\sigma+i\omega)-L_T(\sigma+i\omega)|$ uniformly over real
+$\omega$. It retains a paid *smaller-damping* energy premise; finite energy
+only at the same damping does not pay this particular estimate. The proposed
+finite identity then transports convergence to the full completed quotient
+$[\Pi_N(s)-R_T(z,s)]/(zs)$, retaining every debt and endpoint term. This
+supplies no separate convergence or cancellation estimate for those terms.
+
+The selected source `pickup_weighted_energy_integrable_initial` currently
+provides the elementary energy domain $\tau>1$, corresponding here to
+$\sigma>1/2$. Its relocated replay belongs to the monitor. Extending that
+domain to every positive $\sigma$ still needs an independent signed
+arithmetic upper estimate. The tail argument explains the precise missing
+limit premise and cannot replace it.
+
 
 ## Source and verification scope
 
-[Source](../../../../../GRWTSK/NumberTheory/Moebius/FiniteLaplaceSums.lean). Status: **written-argument**. [Credit and evidence limits](../../../../reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+This page retains the complete signed cutoff and tail hypotheses. Existing source-specific receipts certify their own revisions; the mathematical integration does not itself supply the remaining uniform arithmetic budget. Human mathematical direction: grwtsk contributors. Derivation and formalization assistance: OpenAI Codex.
