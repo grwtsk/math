@@ -20,7 +20,7 @@
   ],
   "admissible_time": "T >= 0 for integral/energy/Gram conversions; response equality for every natural atom and real time",
   "verification": "evidence/original-pickup-checks.json",
-  "verification_sha256": "e4e4ed14c0c35532ba1a52369ce0f73e746452f17c7c0f429ccf81af3e261bfc",
+  "verification_sha256": "c159bc1b0776333cf5d6f185cec899d05067793ef2fc5110c733251226bc87b6",
   "fresh_project_modules": 21,
   "native_records": 111,
   "native_record_kinds": {
@@ -33,5 +33,6 @@
   "original_supplier_witness_proved": false,
   "sturmian_observable_identification_proved": false,
   "rh_proved": false,
-  "independent_acceptance": "PENDING"
+  "independent_acceptance": "PENDING",
+  "receipt_projection_scope": "Public metadata projection of the historical scoped receipt, not a fresh replay. Current relocated source acceptance remains pending."
 }
