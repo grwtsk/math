@@ -335,9 +335,24 @@ $$
 \int_b^c e^{au}\,du=\frac{e^{ac}-e^{ab}}{a}.
 $$
 
-The next source-specific step is to combine this formula at
-$a=\beta-\tfrac12$ with the Abel identity, while retaining the strict
-positivity required to divide by that rate.
+This source-specific combination is now checked. If
+$C\ge0$ and $\beta>\tfrac12$, then
+
+$$
+\left|\int_0^{\log n}e^{-u/2}M(e^u)\,du\right|
+\le C\frac{n^{\beta-1/2}-1}{\beta-1/2},
+$$
+
+and consequently
+
+$$
+|A_n|\le
+\left(C+\frac{C}{2(\beta-1/2)}\right)n^{\beta-1/2}.
+$$
+
+Thus a single Mertens power hypothesis above the square-root scale supplies
+the weighted-prefix hypothesis at its natural shifted exponent. The Mertens
+power hypothesis itself remains unproved.
 
 The actual omitted function is
 
