@@ -141,7 +141,7 @@
   "zero_coupling_counts_and_no_internal_free_gap_proved": true,
   "verification": {
     "receipt": "evidence/ten-martini-checks.json",
-    "receipt_sha256": "163d748d1ea90570ac9ee75263a263be46a3a3ba55dbfefae3c33b8a8b8ee457",
+    "receipt_sha256": "9b1b2b92e730fe059d67c48793f68600d893a7fed2d2f7b39edb0bd1624ef3cc",
     "fresh_project_modules": 9,
     "native_declaration_records": 248,
     "native_record_kinds": {
@@ -150,7 +150,8 @@
       "generated": 3
     },
     "negative_controls": 17,
-    "independent_acceptance": "PENDING"
+    "independent_acceptance": "PENDING",
+    "public_projection_scope": "Historical scoped mathematical observations; host locations excluded; no fresh replay or changed-source acceptance inferred."
   },
   "finite_defect_count_bound_proved": true,
   "actual_joining_edge_rank_two_bound_proved": true,
