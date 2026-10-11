@@ -91,6 +91,128 @@ theorem mertensPrefix_exp_le_of_powerBound {C β u : ℝ}
       congr 2
       ring
 
+/-- For a Mertens power bound above the square-root scale, the Abel kernel has
+an explicit finite-interval allowance.  The estimate retains the exact
+positive rate `β - 1 / 2`; no arithmetic cancellation is introduced here. -/
+theorem abelIntegral_abs_le_of_mertensPowerBound {C β : ℝ} {n : ℕ}
+    (hC : 0 ≤ C) (hβ : 1 / 2 < β)
+    (hM : ∀ k : ℕ, 1 ≤ k →
+      |pickupMertensPrefix k| ≤ C * (k : ℝ) ^ β)
+    (hn : 1 ≤ n) :
+    |∫ u in (0 : ℝ)..Real.log (n : ℝ),
+        Real.exp (-u / 2) * mertensPrefix (Real.exp u)| ≤
+      C * ((n : ℝ) ^ (β - 1 / 2) - 1) / (β - 1 / 2) := by
+  have hnpos : (0 : ℝ) < n := by
+    exact_mod_cast (lt_of_lt_of_le Nat.zero_lt_one hn)
+  have hlog : 0 ≤ Real.log (n : ℝ) := Real.log_nonneg (by exact_mod_cast hn)
+  have hr : 0 < β - 1 / 2 := sub_pos.mpr hβ
+  have hf : IntervalIntegrable
+      (fun u : ℝ => |Real.exp (-u / 2) * mertensPrefix (Real.exp u)|)
+      volume 0 (Real.log (n : ℝ)) := by
+    simpa only [pickupVelocity, Real.norm_eq_abs] using
+      (pickupVelocity_intervalIntegrable 0 (Real.log (n : ℝ))).norm
+  have hg : IntervalIntegrable
+      (fun u : ℝ => C * Real.exp ((β - 1 / 2) * u))
+      volume 0 (Real.log (n : ℝ)) :=
+    (continuous_const.mul
+      (Real.continuous_exp.comp
+        (continuous_const.mul continuous_id))).intervalIntegrable _ _
+  calc
+    |∫ u in (0 : ℝ)..Real.log (n : ℝ),
+        Real.exp (-u / 2) * mertensPrefix (Real.exp u)| ≤
+        ∫ u in (0 : ℝ)..Real.log (n : ℝ),
+          |Real.exp (-u / 2) * mertensPrefix (Real.exp u)| :=
+      intervalIntegral.abs_integral_le_integral_abs hlog
+    _ ≤ ∫ u in (0 : ℝ)..Real.log (n : ℝ),
+          C * Real.exp ((β - 1 / 2) * u) := by
+      apply intervalIntegral.integral_mono_on hlog hf hg
+      intro u hu
+      rw [abs_mul, abs_of_pos (Real.exp_pos _)]
+      calc
+        Real.exp (-u / 2) * |mertensPrefix (Real.exp u)| ≤
+            Real.exp (-u / 2) * (C * Real.exp (β * u)) :=
+          mul_le_mul_of_nonneg_left
+            (mertensPrefix_exp_le_of_powerBound hC (by linarith) hM hu.1)
+            (Real.exp_pos _).le
+        _ = C * Real.exp ((β - 1 / 2) * u) := by
+          calc
+            Real.exp (-u / 2) * (C * Real.exp (β * u)) =
+                C * (Real.exp (-u / 2) * Real.exp (β * u)) := by ring
+            _ = C * Real.exp ((β - 1 / 2) * u) := by
+              rw [← Real.exp_add]
+              congr 1
+              ring_nf
+    _ = C * ((n : ℝ) ^ (β - 1 / 2) - 1) / (β - 1 / 2) := by
+      rw [intervalIntegral.integral_const_mul,
+        integral_exp_mul hr.ne' 0 (Real.log (n : ℝ))]
+      rw [Real.rpow_def_of_pos hnpos]
+      simp
+      ring_nf
+
+/-- Abel summation propagates a Mertens `n ^ β` bound, for `β > 1 / 2`,
+to the weighted prefix at its natural exponent `β - 1 / 2`. -/
+theorem pickupWeightedPrefix_le_of_mertensPowerBound {C β : ℝ}
+    (hC : 0 ≤ C) (hβ : 1 / 2 < β)
+    (hM : ∀ k : ℕ, 1 ≤ k →
+      |pickupMertensPrefix k| ≤ C * (k : ℝ) ^ β) :
+    ∀ n : ℕ, 1 ≤ n →
+      |pickupWeightedPrefix n| ≤
+        (C + C / (2 * (β - 1 / 2))) * (n : ℝ) ^ (β - 1 / 2) := by
+  intro n hn
+  have hnpos : (0 : ℝ) < n := by
+    exact_mod_cast (lt_of_lt_of_le Nat.zero_lt_one hn)
+  have hr : 0 < β - 1 / 2 := sub_pos.mpr hβ
+  have hend : |(Real.sqrt n)⁻¹ * pickupMertensPrefix n| ≤
+      C * (n : ℝ) ^ (β - 1 / 2) := by
+    rw [← pickup_exp_negative_log_half hn, abs_mul,
+      abs_of_pos (Real.exp_pos _)]
+    calc
+      Real.exp (-Real.log (n : ℝ) / 2) * |pickupMertensPrefix n| ≤
+          Real.exp (-Real.log (n : ℝ) / 2) *
+            (C * (n : ℝ) ^ β) :=
+        mul_le_mul_of_nonneg_left (hM n hn) (Real.exp_pos _).le
+      _ = C * (n : ℝ) ^ (β - 1 / 2) := by
+        rw [Real.rpow_def_of_pos hnpos, Real.rpow_def_of_pos hnpos]
+        calc
+          Real.exp (-Real.log (n : ℝ) / 2) *
+              (C * Real.exp (Real.log (n : ℝ) * β)) =
+              C * (Real.exp (-Real.log (n : ℝ) / 2) *
+                Real.exp (Real.log (n : ℝ) * β)) := by ring
+          _ = C * Real.exp
+              (Real.log (n : ℝ) * (β - 1 / 2)) := by
+            rw [← Real.exp_add]
+            congr 1
+            ring_nf
+  have hint := abelIntegral_abs_le_of_mertensPowerBound hC hβ hM hn
+  have hint' :
+      |∫ u in (0 : ℝ)..Real.log (n : ℝ),
+          Real.exp (-u / 2) * mertensPrefix (Real.exp u)| ≤
+        (C / (β - 1 / 2)) * (n : ℝ) ^ (β - 1 / 2) := by
+    calc
+      |∫ u in (0 : ℝ)..Real.log (n : ℝ),
+          Real.exp (-u / 2) * mertensPrefix (Real.exp u)| ≤
+          C * ((n : ℝ) ^ (β - 1 / 2) - 1) / (β - 1 / 2) := hint
+      _ ≤ C * (n : ℝ) ^ (β - 1 / 2) / (β - 1 / 2) := by
+        exact div_le_div_of_nonneg_right
+          (mul_le_mul_of_nonneg_left (sub_le_self _ (by norm_num)) hC) hr.le
+      _ = (C / (β - 1 / 2)) * (n : ℝ) ^ (β - 1 / 2) := by ring
+  rw [pickupWeightedPrefix_eq_mertens_add_integral hn]
+  calc
+    |(Real.sqrt n)⁻¹ * pickupMertensPrefix n +
+        (∫ u in (0 : ℝ)..Real.log (n : ℝ),
+          Real.exp (-u / 2) * mertensPrefix (Real.exp u)) / 2| ≤
+        |(Real.sqrt n)⁻¹ * pickupMertensPrefix n| +
+          |(∫ u in (0 : ℝ)..Real.log (n : ℝ),
+            Real.exp (-u / 2) * mertensPrefix (Real.exp u)) / 2| := abs_add_le _ _
+    _ ≤ C * (n : ℝ) ^ (β - 1 / 2) +
+        ((C / (β - 1 / 2)) * (n : ℝ) ^ (β - 1 / 2)) / 2 := by
+      apply add_le_add hend
+      rw [abs_div, abs_of_pos (by norm_num : (0 : ℝ) < 2)]
+      exact div_le_div_of_nonneg_right hint' (by norm_num)
+    _ = (C + C / (2 * (β - 1 / 2))) *
+        (n : ℝ) ^ (β - 1 / 2) := by
+      field_simp [hr.ne']
+
 /-- On the open logarithmic cell from `n` to `n+1`, the pickup is the exact
 coupled weighted-prefix/Mertens-prefix expression with cutoff `n`. -/
 theorem wholePickup_eq_prefix_flux_on_log_cell {n : ℕ} (hn : 1 ≤ n) {u : ℝ}
@@ -599,6 +721,8 @@ end GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.wholePickup_eq_prefix_flux_on_log_cell
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.pickupWeightedPrefix_eq_mertens_add_integral
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.mertensPrefix_exp_le_of_powerBound
+#print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.abelIntegral_abs_le_of_mertensPowerBound
+#print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.pickupWeightedPrefix_le_of_mertensPowerBound
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalIntervalBlock_eq_pickup
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalIntervalBlock_closedForm
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalIntervalBlockUniform_of_majorantSummable
