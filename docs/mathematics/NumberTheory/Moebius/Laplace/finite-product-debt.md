@@ -328,7 +328,16 @@ enough to pay the weighted-prefix square series.
 The first adapter is now checked: a natural-prefix hypothesis
 $|M_n|\le Cn^\beta$ with $C,\beta\ge0$ implies the exact real-floor envelope
 $|M(e^u)|\le Ce^{\beta u}$ for every $u\ge0$. The hypothesis itself remains
-unproved.
+unproved. A reusable analysis lemma now also evaluates the remaining scalar
+kernel exactly: for every nonzero real $a$,
+
+$$
+\int_b^c e^{au}\,du=\frac{e^{ac}-e^{ab}}{a}.
+$$
+
+The next source-specific step is to combine this formula at
+$a=\beta-\tfrac12$ with the Abel identity, while retaining the strict
+positivity required to divide by that rate.
 
 The actual omitted function is
 
