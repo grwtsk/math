@@ -1,0 +1,626 @@
+{
+  "schema_version": 1,
+  "status": "SCOPED_SOURCE_CHECKS_PASSED",
+  "rh_proved": false,
+  "P04_witness": null,
+  "boundary_estimate": null,
+  "cutoff_identity": "KERNEL_CHECKED_WITH_BOTH_SIGNED_ENDPOINTS_AND_NONZERO_DENOMINATORS",
+  "endpoint_omission_counterexamples": "KERNEL_CHECKED_AT_ZERO_WINDOW_AND_Z_ONE",
+  "raw_product_counterexample": "KERNEL_CHECKED_AT_CUTOFF_THREE_FOR_EVERY_COMPLEX_S",
+  "exact_contracts": {
+    "wholePickup_cutoff_laplace": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PickupCutoffLaplace",
+      "name": "GRWTSK.RiemannHypothesis.CCC.wholePickup_cutoff_laplace",
+      "type": "\u2200 {T : \u211d},\n  0 \u2264 T \u2192\n    \u2200 {z s : \u2102},\n      s = z + 1 / 2 \u2192\n        z \u2260 0 \u2192\n          s \u2260 0 \u2192\n            noteWindowLaplace wholePickup z T =\n              pickupDirichletPrefix \u230aReal.exp T\u230b\u208a s / (z * s) -\n                  2 * Complex.exp (-z * \u2191T) / z * \u2191(pickupWeightedPrefix \u230aReal.exp T\u230b\u208a) +\n                2 * Complex.exp (-s * \u2191T) / s * \u2191(pickupMertensPrefix \u230aReal.exp T\u230b\u208a)"
+    },
+    "pickupResponseWindowLaplace": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PickupCutoffLaplace",
+      "name": "GRWTSK.RiemannHypothesis.CCC.pickupResponseWindowLaplace",
+      "type": "\u2200 {n : \u2115},\n  1 \u2264 n \u2192\n    \u2200 {T : \u211d},\n      Real.log \u2191n \u2264 T \u2192\n        \u2200 {z s : \u2102},\n          s = z + 1 / 2 \u2192\n            z \u2260 0 \u2192\n              s \u2260 0 \u2192\n                noteWindowLaplace (pickupResponse n) z T =\n                  Complex.exp (-s * \u2191(Real.log \u2191n)) / (z * s) - 2 * Complex.exp (-z * \u2191T) / z * \u2191(\u221a\u2191n)\u207b\u00b9 +\n                    2 * Complex.exp (-s * \u2191T) / s"
+    },
+    "noteWindowLaplace_fixed_inventory": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PickupCutoffLaplace",
+      "name": "GRWTSK.RiemannHypothesis.CCC.noteWindowLaplace_fixed_inventory",
+      "type": "\u2200 (z : \u2102) {T : \u211d},\n  0 \u2264 T \u2192\n    noteWindowLaplace wholePickup z T =\n      \u2211 n \u2208 Finset.Icc 1 \u230aReal.exp T\u230b\u208a, \u2191(moebiusReal n) * noteWindowLaplace (pickupResponse n) z T"
+    },
+    "pickupResponseWindow_at_birth": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PickupCutoffLaplace",
+      "name": "GRWTSK.RiemannHypothesis.CCC.pickupResponseWindow_at_birth",
+      "type": "\u2200 {n : \u2115}, 1 \u2264 n \u2192 \u2200 (z : \u2102), noteWindowLaplace (pickupResponse n) z (Real.log \u2191n) = 0"
+    },
+    "cutoff_zero_not_without_weighted_endpoint": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PickupCutoffLaplace",
+      "name": "GRWTSK.RiemannHypothesis.CCC.cutoff_zero_not_without_weighted_endpoint",
+      "type": "noteWindowLaplace wholePickup 1 0 \u2260\n  pickupDirichletPrefix 1 (3 / 2) / (1 * (3 / 2)) + 2 * Complex.exp (-(3 / 2) * 0) / (3 / 2) * \u2191(pickupMertensPrefix 1)"
+    },
+    "cutoff_zero_not_without_mertens_endpoint": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PickupCutoffLaplace",
+      "name": "GRWTSK.RiemannHypothesis.CCC.cutoff_zero_not_without_mertens_endpoint",
+      "type": "noteWindowLaplace wholePickup 1 0 \u2260\n  pickupDirichletPrefix 1 (3 / 2) / (1 * (3 / 2)) - 2 * Complex.exp (-1 * 0) / 1 * \u2191(pickupWeightedPrefix 1)"
+    },
+    "cutoff_three_product_debt": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PickupCutoffLaplace",
+      "name": "GRWTSK.RiemannHypothesis.CCC.cutoff_three_product_debt",
+      "type": "\u2200 (s : \u2102),\n  (1 - Complex.exp (-s * \u2191(Real.log 2))) * (1 - Complex.exp (-s * \u2191(Real.log 3))) =\n    pickupDirichletPrefix 3 s + Complex.exp (-s * \u2191(Real.log 6))"
+    },
+    "cutoff_three_not_raw_product": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PickupCutoffLaplace",
+      "name": "GRWTSK.RiemannHypothesis.CCC.cutoff_three_not_raw_product",
+      "type": "\u2200 (s : \u2102), pickupDirichletPrefix 3 s \u2260 (1 - Complex.exp (-s * \u2191(Real.log 2))) * (1 - Complex.exp (-s * \u2191(Real.log 3)))"
+    }
+  },
+  "arithmetic_frontier": {
+    "P04": "OPEN",
+    "recording_scale": "OPEN",
+    "independent_signed_boundary_estimate": "OPEN"
+  },
+  "source_sha256": {
+    "GRWTSK/RiemannHypothesis/CCC/PickupBudgets.lean": "a0735d6120754b4921c55346a5fb0203cb3586bd6f312289f83b0a76218cffbb",
+    "GRWTSK/RiemannHypothesis/CCC/PickupRegularity.lean": "663fd9e9d6fd6af327eeac76166ea40c9dc07c029b5822468533d80db8b4f9be",
+    "GRWTSK/RiemannHypothesis/CCC/PickupFiniteIdentity.lean": "4b4be0a5e4e2614ff81d192620170b5b47941e10e74f1965b5bbd0914ec24a51",
+    "GRWTSK/RiemannHypothesis/CCC/PrimeCascade.lean": "23995d93841e2ad1babd73a476dced219992c9a675396780ab6f675b56d458ce",
+    "GRWTSK/RiemannHypothesis/CCC/DiagonalAllowance.lean": "748100ebb0ba4440335668ecb96a079d869de82bb7ac2fb7ecb09ca089469a3c",
+    "GRWTSK/RiemannHypothesis/CCC/PickupDiagonalBound.lean": "e4b835ea2904d9494dd2b5252f1297ac76a924b153b94b99865471bd619155e8",
+    "GRWTSK/RiemannHypothesis/CCC/PickupLaplaceDefinition.lean": "900d196c65816d9217c05246e6fd5a847d5fe975baa1adb869907e394a9e6514",
+    "GRWTSK/RiemannHypothesis/CCC/PickupInitialTransform.lean": "52717097ba1ac20ef02efa7d744c413458026d9c3de8d35bb6bd9de833c14f38",
+    "GRWTSK/RiemannHypothesis/CCC/EnergyIntegrability.lean": "18a3aac5fcfb6844da96d34db5febc659f8c2694bd178ab187d324fbc9d6780b",
+    "GRWTSK/RiemannHypothesis/CCC/LaplaceAnalytic.lean": "9b36cbd99be50262b982974d665a0b226495665a5e509f7355ce66a2e08e2f10",
+    "GRWTSK/RiemannHypothesis/CCC/SignedPickupAnalytic.lean": "04f4c00bae21d3fde810919c80030f2be5a2bdac9836dec0c5ea0ed5ab9b81c6",
+    "GRWTSK/RiemannHypothesis/Definitions.lean": "107f357b8c04afc16e25b8fded6922782d2756959b42f080af839f4db58e9aa0",
+    "GRWTSK/RiemannHypothesis/ZeroSymmetry.lean": "d11ab9b34e31569a7d1441fb53bdb0abfce041c80e79cca4ebee46509be910bc",
+    "GRWTSK/RiemannHypothesis/CCC/RegularizedZeta.lean": "084fe442c91faee379c83ad8a7a6af1f4500bd5eb66bbc5f999b160106627af7",
+    "GRWTSK/RiemannHypothesis/CCC/EnergyRHReturn.lean": "62ffb37232e2b35e062f180bda8fe9f54369b98b431a2f97d0b30d539932efd0",
+    "GRWTSK/RiemannHypothesis/CCC/EnergyReturn.lean": "2116d2d7191ae28844ead58af1eb76e32a0272e6e4c92566d6d48bd36c163dac",
+    "GRWTSK/RiemannHypothesis/CCC/PrimeEnergy.lean": "b90708dab380d32ea80113abe91b199614950ec705624adee64c2f4614518c28",
+    "GRWTSK/RiemannHypothesis/CCC/PrimeWindowLaplace.lean": "1758e02811afe2c78374c03a3e09d8f598bed1a176af3b0fb4d710f9c13c2fba",
+    "GRWTSK/RiemannHypothesis/CCC/PickupCutoffLaplace.lean": "057a59e0d7c186eb83ffd5609085d70dcc597c820fbd9fc7ac3f5b7021d8aa9b",
+    "checks/CCCPickupCutoffLaplaceAudit.lean": "5175328256f537a5e339e3cfebd64a3a373cf13c1de62e1040ff4ef90ccf332e",
+    "scripts/check_pickup_cutoff_laplace.py": "da8e805f2d9c7c31eaa793fcdcd4d76570f464b6489ea24841ac092643c77fad",
+    "lean-toolchain": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
+    "lakefile.toml": "a23f6d313f8458192328f09635ffef9078cb684374c2aac2743af541bf59b4e3",
+    "lake-manifest.json": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
+    "docs/ccc-cutoff-laplace.md": "223fa19ab12d430e6c0cbf2520fc6f62a696f9950d599806d5eff9bd1ad3ef81",
+    "checks/cutoff-laplace-controls/MissingWeightedEndpoint.lean": "2be6fa40c85db061e27614894dc6654a1d97e78329408ba830d49ccc3dc2bff1",
+    "checks/cutoff-laplace-controls/MissingMertensEndpoint.lean": "157dbf1c870c14ee1a0852098171b9c30a1f0839002b32be6c67f1097cfb60cd",
+    "checks/cutoff-laplace-controls/MissingZNonzero.lean": "86c73688ebc92551b4e4703d57acbe1f0432002bcdeacde5254f59ca81b69ecc",
+    "checks/cutoff-laplace-controls/MissingSNonzero.lean": "11af870a76f90634072321129ef415d28d400016903316a2f2aece29dea4f813",
+    "checks/cutoff-laplace-controls/RawProduct.lean": "f6e00bee0ff82030817616d41c6f68e763a049cabb35e4803b6ebf85909bd43a"
+  },
+  "excluded_scratch": "Exploratory floating-point calculations are not proof inputs",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "dependency_revisions": {
+    "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "plausible": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+    "LeanSearchClient": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+    "importGraph": "16f02aa7642864af59f1ff0e384a015994db9118",
+    "proofwidgets": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957",
+    "aesop": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+    "Qq": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+    "batteries": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+    "Cli": "6130a47896ce867c6a4a55373441e59e565bad0f"
+  },
+  "dependency_scope": "Pinned public dependency objects; complete selected project closure freshly elaborated and exported at trust zero",
+  "declaration_count": 20,
+  "declarations": [
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PickupCutoffLaplace",
+      "name": "GRWTSK.RiemannHypothesis.CCC.pickupWeightedPrefix",
+      "type": "\u2115 \u2192 \u211d"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PickupCutoffLaplace",
+      "name": "GRWTSK.RiemannHypothesis.CCC.pickupMertensPrefix",
+      "type": "\u2115 \u2192 \u211d"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PickupCutoffLaplace",
+      "name": "GRWTSK.RiemannHypothesis.CCC.pickupMertensPrefix_at_cutoff",
+      "type": "\u2200 (T : \u211d), pickupMertensPrefix \u230aReal.exp T\u230b\u208a = mertensPrefix (Real.exp T)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PickupCutoffLaplace",
+      "name": "GRWTSK.RiemannHypothesis.CCC.cutoff_three_product_debt",
+      "type": "\u2200 (s : \u2102),\n  (1 - Complex.exp (-s * \u2191(Real.log 2))) * (1 - Complex.exp (-s * \u2191(Real.log 3))) =\n    pickupDirichletPrefix 3 s + Complex.exp (-s * \u2191(Real.log 6))"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PickupCutoffLaplace",
+      "name": "GRWTSK.RiemannHypothesis.CCC.finiteLaplace_exponential",
+      "type": "\u2200 {z : \u2102},\n  z \u2260 0 \u2192 \u2200 (a b : \u211d), \u222b (u : \u211d) in a..b, Complex.exp (-z * \u2191u) = (Complex.exp (-z * \u2191a) - Complex.exp (-z * \u2191b)) / z"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PickupCutoffLaplace",
+      "name": "GRWTSK.RiemannHypothesis.CCC.pickupResponseWindowLaplace",
+      "type": "\u2200 {n : \u2115},\n  1 \u2264 n \u2192\n    \u2200 {T : \u211d},\n      Real.log \u2191n \u2264 T \u2192\n        \u2200 {z s : \u2102},\n          s = z + 1 / 2 \u2192\n            z \u2260 0 \u2192\n              s \u2260 0 \u2192\n                noteWindowLaplace (pickupResponse n) z T =\n                  Complex.exp (-s * \u2191(Real.log \u2191n)) / (z * s) - 2 * Complex.exp (-z * \u2191T) / z * \u2191(\u221a\u2191n)\u207b\u00b9 +\n                    2 * Complex.exp (-s * \u2191T) / s"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PickupCutoffLaplace",
+      "name": "GRWTSK.RiemannHypothesis.CCC.pickupDirichletPrefix",
+      "type": "\u2115 \u2192 \u2102 \u2192 \u2102"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PickupCutoffLaplace",
+      "name": "GRWTSK.RiemannHypothesis.CCC.cutoff_three_not_raw_product",
+      "type": "\u2200 (s : \u2102), pickupDirichletPrefix 3 s \u2260 (1 - Complex.exp (-s * \u2191(Real.log 2))) * (1 - Complex.exp (-s * \u2191(Real.log 3)))"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PickupCutoffLaplace",
+      "name": "GRWTSK.RiemannHypothesis.CCC.wholePickup_cutoff_laplace._simp_1_2",
+      "type": "\u2200 {\u03b9 : Type u_1} {R : Type u_4} [inst : NonUnitalNonAssocSemiring R] (s : Finset \u03b9) (f : \u03b9 \u2192 R) (a : R),\n  \u2211 i \u2208 s, a * f i = a * \u2211 i \u2208 s, f i"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PickupCutoffLaplace",
+      "name": "GRWTSK.RiemannHypothesis.CCC.noteWindowLaplace_fixed_inventory",
+      "type": "\u2200 (z : \u2102) {T : \u211d},\n  0 \u2264 T \u2192\n    noteWindowLaplace wholePickup z T =\n      \u2211 n \u2208 Finset.Icc 1 \u230aReal.exp T\u230b\u208a, \u2191(moebiusReal n) * noteWindowLaplace (pickupResponse n) z T"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PickupCutoffLaplace",
+      "name": "GRWTSK.RiemannHypothesis.CCC.pickupDirichletPrefix.eq_1",
+      "type": "\u2200 (N : \u2115) (s : \u2102),\n  pickupDirichletPrefix N s = \u2211 n \u2208 Finset.Icc 1 N, \u2191(moebiusReal n) * Complex.exp (-s * \u2191(Real.log \u2191n))"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PickupCutoffLaplace",
+      "name": "GRWTSK.RiemannHypothesis.CCC.cutoff_zero_not_without_weighted_endpoint",
+      "type": "noteWindowLaplace wholePickup 1 0 \u2260\n  pickupDirichletPrefix 1 (3 / 2) / (1 * (3 / 2)) + 2 * Complex.exp (-(3 / 2) * 0) / (3 / 2) * \u2191(pickupMertensPrefix 1)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PickupCutoffLaplace",
+      "name": "GRWTSK.RiemannHypothesis.CCC.wholePickup_cutoff_laplace",
+      "type": "\u2200 {T : \u211d},\n  0 \u2264 T \u2192\n    \u2200 {z s : \u2102},\n      s = z + 1 / 2 \u2192\n        z \u2260 0 \u2192\n          s \u2260 0 \u2192\n            noteWindowLaplace wholePickup z T =\n              pickupDirichletPrefix \u230aReal.exp T\u230b\u208a s / (z * s) -\n                  2 * Complex.exp (-z * \u2191T) / z * \u2191(pickupWeightedPrefix \u230aReal.exp T\u230b\u208a) +\n                2 * Complex.exp (-s * \u2191T) / s * \u2191(pickupMertensPrefix \u230aReal.exp T\u230b\u208a)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PickupCutoffLaplace",
+      "name": "GRWTSK.RiemannHypothesis.CCC.pickupResponseWindow_at_birth",
+      "type": "\u2200 {n : \u2115}, 1 \u2264 n \u2192 \u2200 (z : \u2102), noteWindowLaplace (pickupResponse n) z (Real.log \u2191n) = 0"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PickupCutoffLaplace",
+      "name": "GRWTSK.RiemannHypothesis.CCC.cutoff_zero_not_without_mertens_endpoint",
+      "type": "noteWindowLaplace wholePickup 1 0 \u2260\n  pickupDirichletPrefix 1 (3 / 2) / (1 * (3 / 2)) - 2 * Complex.exp (-1 * 0) / 1 * \u2191(pickupWeightedPrefix 1)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PickupCutoffLaplace",
+      "name": "GRWTSK.RiemannHypothesis.CCC.pickupMertensPrefix.eq_1",
+      "type": "\u2200 (N : \u2115), pickupMertensPrefix N = \u2211 n \u2208 Finset.Icc 1 N, moebiusReal n"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PickupCutoffLaplace",
+      "name": "GRWTSK.RiemannHypothesis.CCC.noteWindowLaplace.eq_1",
+      "type": "\u2200 (f : \u211d \u2192 \u211d) (z : \u2102) (T : \u211d), noteWindowLaplace f z T = \u222b (u : \u211d) in 0..max 0 T, Complex.exp (-z * \u2191u) * \u2191(f u)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PickupCutoffLaplace",
+      "name": "GRWTSK.RiemannHypothesis.CCC.pickupWeightedPrefix.eq_1",
+      "type": "\u2200 (N : \u2115), pickupWeightedPrefix N = \u2211 n \u2208 Finset.Icc 1 N, moebiusReal n * (\u221a\u2191n)\u207b\u00b9"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PickupCutoffLaplace",
+      "name": "GRWTSK.RiemannHypothesis.CCC.noteWindowLaplace_zero",
+      "type": "\u2200 (f : \u211d \u2192 \u211d) (z : \u2102), noteWindowLaplace f z 0 = 0"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.RiemannHypothesis.CCC.PickupCutoffLaplace",
+      "name": "GRWTSK.RiemannHypothesis.CCC.wholePickup_cutoff_laplace._simp_1_1",
+      "type": "\u2200 {\u03b9 : Type u_1} {K : Type u_2} [inst : DivisionSemiring K] (s : Finset \u03b9) (f : \u03b9 \u2192 K) (a : K),\n  \u2211 i \u2208 s, f i / a = (\u2211 i \u2208 s, f i) / a"
+    }
+  ],
+  "checks": [
+    {
+      "path": "GRWTSK/RiemannHypothesis/CCC/PickupBudgets.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 15.963756250000001,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "GRWTSK/RiemannHypothesis/CCC/PickupRegularity.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 8.306396584000002,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "GRWTSK/RiemannHypothesis/CCC/PickupFiniteIdentity.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 7.407869875000003,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "GRWTSK/RiemannHypothesis/CCC/PrimeCascade.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 5.980597750000001,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "GRWTSK/RiemannHypothesis/CCC/DiagonalAllowance.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 6.436564916999998,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "GRWTSK/RiemannHypothesis/CCC/PickupDiagonalBound.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 9.672286041999996,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "GRWTSK/RiemannHypothesis/CCC/PickupLaplaceDefinition.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 4.824837584000001,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "GRWTSK/RiemannHypothesis/CCC/PickupInitialTransform.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 7.5418827090000065,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "GRWTSK/RiemannHypothesis/CCC/EnergyIntegrability.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 5.7830241669999936,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "GRWTSK/RiemannHypothesis/CCC/LaplaceAnalytic.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 7.122391207999996,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "GRWTSK/RiemannHypothesis/CCC/SignedPickupAnalytic.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 18.93625408300001,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "GRWTSK/RiemannHypothesis/Definitions.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 35.25993799999999,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "GRWTSK/RiemannHypothesis/ZeroSymmetry.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 32.65555170799999,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "GRWTSK/RiemannHypothesis/CCC/RegularizedZeta.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 23.101663625000015,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "GRWTSK/RiemannHypothesis/CCC/EnergyRHReturn.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 23.719723250000015,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "GRWTSK/RiemannHypothesis/CCC/EnergyReturn.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 38.59310579199999,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "GRWTSK/RiemannHypothesis/CCC/PrimeEnergy.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 31.471368541000004,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "GRWTSK/RiemannHypothesis/CCC/PrimeWindowLaplace.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 32.46327445899999,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "GRWTSK/RiemannHypothesis/CCC/PickupCutoffLaplace.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 25.153628750000053,
+      "output_sha256": "e345f8a3612ed06a1c3c49ade2cfb8ecbe9f17dc58767324d4c98e499bf6d164",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "checks/CCCPickupCutoffLaplaceAudit.lean",
+      "expected_success": true,
+      "actual_success": true,
+      "exit_code": 0,
+      "seconds": 24.58675175000002,
+      "output_sha256": "4544c294227a8b7fd05b717cf08094d29cc4a768086d4ab266f7f8a693d45a38",
+      "expected_error_fragment": null,
+      "expected_error_matched": true
+    },
+    {
+      "path": "checks/cutoff-laplace-controls/MissingWeightedEndpoint.lean",
+      "expected_success": false,
+      "actual_success": false,
+      "exit_code": 1,
+      "seconds": 21.401154415999997,
+      "output_sha256": "5b12c0ce21772ab3d0fc04c9d424cf9adaa92b9df1a7f5b7f015bb0e937cceef",
+      "expected_error_fragment": "Type mismatch",
+      "expected_error_matched": true
+    },
+    {
+      "path": "checks/cutoff-laplace-controls/MissingMertensEndpoint.lean",
+      "expected_success": false,
+      "actual_success": false,
+      "exit_code": 1,
+      "seconds": 18.325746207999998,
+      "output_sha256": "4d490b53cd7007e89b7001800eaf02a49fcddb474a3327e94807109b1962b108",
+      "expected_error_fragment": "Type mismatch",
+      "expected_error_matched": true
+    },
+    {
+      "path": "checks/cutoff-laplace-controls/MissingZNonzero.lean",
+      "expected_success": false,
+      "actual_success": false,
+      "exit_code": 1,
+      "seconds": 35.622242416999995,
+      "output_sha256": "239b0603ec82422d326f67b018a96fb8c163203b782539b0ecfa0ef052eec141",
+      "expected_error_fragment": "Type mismatch",
+      "expected_error_matched": true
+    },
+    {
+      "path": "checks/cutoff-laplace-controls/MissingSNonzero.lean",
+      "expected_success": false,
+      "actual_success": false,
+      "exit_code": 1,
+      "seconds": 15.154538916999968,
+      "output_sha256": "08e245216141a00d4a79be29d652e99faa3e014247942670e170243a0deb3187",
+      "expected_error_fragment": "Type mismatch",
+      "expected_error_matched": true
+    },
+    {
+      "path": "checks/cutoff-laplace-controls/RawProduct.lean",
+      "expected_success": false,
+      "actual_success": false,
+      "exit_code": 1,
+      "seconds": 13.256682166999951,
+      "output_sha256": "28d95b52881995f7827879b2bf0ed271293b8b20f065cc1e3cb6a4db5105cc05",
+      "expected_error_fragment": "Type mismatch",
+      "expected_error_matched": true
+    }
+  ],
+  "acceptance": "Checked exact cutoff transform, signed endpoint counterexamples and arithmetic product debt; no independent human review or arithmetic upper estimate"
+}

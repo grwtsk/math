@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "profile": "least-natural-prime + canonical34-Moser + exact-RH-target + ordered-product-candidate + common-J-rotation-candidate + common-J-native-sign-reversal-candidate + rational-shear-counterexample-candidate + ordered-product-gauge-candidate + real-polarization-access-ramp-candidate + interval-reflection-conditional-integral-candidate + finite-coverage-explicit-domain-and-tail-candidate + rh-inference-guards-with-existing-canonical-dependency-reuse-candidate + schrodinger-transfer-core-candidate + ccc-prime-cascade-exact-and-conditional + ccc-recording-scale-and-correlation-obstruction + ccc-finite-window-signed-laplace-correction + checked-sequence-realization-and-real-frequency-existence + smooth-even-test-separation-and-pole-moments",
+  "profile": "least-natural-prime + canonical34-Moser + exact-RH-target + ordered-product-candidate + common-J-rotation-candidate + common-J-native-sign-reversal-candidate + rational-shear-counterexample-candidate + ordered-product-gauge-candidate + real-polarization-access-ramp-candidate + interval-reflection-conditional-integral-candidate + finite-coverage-explicit-domain-and-tail-candidate + rh-inference-guards-with-existing-canonical-dependency-reuse-candidate + schrodinger-transfer-core-candidate + ccc-prime-cascade-exact-and-conditional + ccc-recording-scale-and-correlation-obstruction + ccc-finite-window-signed-laplace-correction + checked-sequence-realization-and-real-frequency-existence + smooth-even-test-separation-and-pole-moments + ccc-exact-signed-cutoff-laplace",
   "origin": "PUBLIC_MATHLIB_DIRECT_IMPORT",
   "upstream": {
     "repository": "https://github.com/leanprover-community/mathlib4",
@@ -14,7 +14,7 @@
   "files": {
     ".gitattributes": "30ad961b8d8b3947a8f036d5390087ab5f8c1853f7d0bfb01319f449e05e1368",
     ".gitignore": "21327e9cedbf4b84ef262886e71421d4201201b052cb7b06a6ba6a522270e732",
-    "GRWTSK.lean": "fdd8fe73a33e58ac24ff10d22dacab395884492fc2dd143b4b1ae95d3119ddeb",
+    "GRWTSK.lean": "be3574abdfdca00b34f907e4bf5bd5ffcef0e024d6b39a38bcfa108ff2bbf415",
     "GRWTSK/Algebra/OrderedProduct.lean": "97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d",
     "GRWTSK/Combinatorics/GraphTheory/HadwigerNelson/Moser.lean": "1791f62713a936d9d91f262273871cf5d28257e390f15d05454a5f2115ce8796",
     "GRWTSK/Combinatorics/GraphTheory/HadwigerNelson/MoserCoordinates.lean": "0e29b36d41b117eb4c747ddaf02bf22a2b87e8a59b0665a424d1a1277a38c8ec",
@@ -31,8 +31,8 @@
     "LICENSES/MIT.txt": "a98fc92dab12d02b26bc51f1ac0d608871886b7e36de2170747fb0fcee946968",
     "LICENSES/Mathlib-Apache-2.0.txt": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
     "LICENSES/OpenAI-Apache-2.0.txt": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
-    "NOTICE": "967a1599c735a483922bba0b61bfeda4e38988b8b50f18b6251afabb233a963f",
-    "README.md": "099cacff9fdde73b05062f9feffbf96dad1c11569564127f4f39ea70b435aa89",
+    "NOTICE": "04491167960e7b29a1b18b831324d07fcd754145cbde1b58ecad8f667ec34bb8",
+    "README.md": "a4617748070f68cf217cd87da6a9f1a4fa0d5bfc3619145d9ad8340c335a120b",
     "checks/CommonJAudit.lean": "6773a938739ae7708d354a130a9e067844cd33633cb6b4ce3883f998a7f638fd",
     "checks/Consumers.lean": "ddffe7fc2b513a02a79b3afa0a79a797d97424c15c6c08a82db2dd0f9ffe42e4",
     "checks/DeclarationAudit.lean": "377f6c7372b2693761402d3c28ab0fcb8dca0d5e7d18651fe03289f3863c070a",
@@ -171,9 +171,9 @@
     "checks/CCCPrimeWindowLaplaceAudit.lean": "44f5fd78cf3cadce6944b7d33aae243b3a967abe31b1747cb8325d0e0dcb4432",
     "scripts/check_prime_window_laplace.py": "08323c736721a660ac40a42f5727a85821b30d5bdd2f93d8da00066ab02eb598",
     "docs/ccc-prime-window-laplace.md": "86921db0e4eb58891a1f103e186d2c06ffb6c78f62c3ff2b942ba738e24b466d",
-    "docs/ccc-prime-research-continuation.md": "74a4af504082b3e6502ff82a06d07f06e72b98df87b5a9c57c1f37fe18bd0e83",
+    "docs/ccc-prime-research-continuation.md": "90bb9f6b61e3819c588cb746dc83a333972fa7be38bd709990b3c494628e0dc1",
     "evidence/prime-window-laplace-checks.json": "4a69126aae6fe964547f70882da30459046885b825dbe4f262dac37614cd1fb5",
-    "evidence/citation-prime-window-laplace.json": "79f7ceff3f06d521db9d4681be679fb6bd14d57b98cf9495c892773046610371",
+    "evidence/citation-prime-window-laplace.json": "02c97123010d385e1b0b33bb304092fdab92acfb5a893024898896c77f1e73af",
     "checks/prime-window-controls/MissingTail.lean": "4e8f04bdf641bd1bf3e675915e79b4f4d3e1d5d6478a0cf46ac89334ad6c3897",
     "checks/prime-window-controls/WrongWindow.lean": "eb0e8209bfe008c278bb03eb366a93c271aa70c21be915441dbd0ffb8c9f847d",
     "checks/prime-window-controls/FalseMultiplier.lean": "b3570be4c189a5f785d7fa5c0203082308db056d4b9264b26100964ce6c3196f",
@@ -193,7 +193,18 @@
     "scripts/check_smooth_test_separation.py": "621aa70f790b7b4d56a6f01a83ad4b60de78d02ebc1ad2af88cba6ed7b7fabc7",
     "docs/smooth-test-separation.md": "92f02fe16b03b04ff3287da163d7dd74c2fafd630e15bdadeba1a46093b928bb",
     "evidence/citation-smooth-test-separation.json": "8acd36c38c9d2165ef57f5a3f664a8f8ef60a2abca45210a68a964d9b20234d5",
-    "evidence/smooth-test-separation-checks.json": "3122b8e6f313f70b5cf9313f4e3c9fa8300ed951ba24d02750980fa712191d24"
+    "evidence/smooth-test-separation-checks.json": "3122b8e6f313f70b5cf9313f4e3c9fa8300ed951ba24d02750980fa712191d24",
+    "GRWTSK/RiemannHypothesis/CCC/PickupCutoffLaplace.lean": "057a59e0d7c186eb83ffd5609085d70dcc597c820fbd9fc7ac3f5b7021d8aa9b",
+    "checks/CCCPickupCutoffLaplaceAudit.lean": "5175328256f537a5e339e3cfebd64a3a373cf13c1de62e1040ff4ef90ccf332e",
+    "scripts/check_pickup_cutoff_laplace.py": "da8e805f2d9c7c31eaa793fcdcd4d76570f464b6489ea24841ac092643c77fad",
+    "docs/ccc-cutoff-laplace.md": "223fa19ab12d430e6c0cbf2520fc6f62a696f9950d599806d5eff9bd1ad3ef81",
+    "evidence/cutoff-laplace-checks.json": "4b74f602cd173a900d5a1abff1e3d03c57e32c655e285a218fbdf999e57c6063",
+    "evidence/citation-cutoff-laplace.json": "382e484189143d761d449bd61fd3f52a05ef91aed959a364df9f64d2eb7ed4f2",
+    "checks/cutoff-laplace-controls/MissingWeightedEndpoint.lean": "2be6fa40c85db061e27614894dc6654a1d97e78329408ba830d49ccc3dc2bff1",
+    "checks/cutoff-laplace-controls/MissingMertensEndpoint.lean": "157dbf1c870c14ee1a0852098171b9c30a1f0839002b32be6c67f1097cfb60cd",
+    "checks/cutoff-laplace-controls/MissingZNonzero.lean": "86c73688ebc92551b4e4703d57acbe1f0432002bcdeacde5254f59ca81b69ecc",
+    "checks/cutoff-laplace-controls/MissingSNonzero.lean": "11af870a76f90634072321129ef415d28d400016903316a2f2aece29dea4f813",
+    "checks/cutoff-laplace-controls/RawProduct.lean": "f6e00bee0ff82030817616d41c6f68e763a049cabb35e4803b6ebf85909bd43a"
   },
   "axiom_policy": "Lean standard classical axioms propext, Classical.choice, Quot.sound permitted; sorryAx and other axioms rejected; prime exact observed list reported, Moser exact frozen lists matched.",
   "additional_claim_scope": "Exact Mathlib RH proposition, its defect equivalence and nontrivial-zero symmetries; no RH proof.",
@@ -285,5 +296,28 @@
     "P04": "OPEN",
     "P05": "OPEN",
     "RH_proved": false
+  },
+  "cutoff_laplace_scope": {
+    "exact": [
+      "wholePickup_cutoff_laplace",
+      "pickupResponseWindowLaplace",
+      "noteWindowLaplace_fixed_inventory",
+      "pickupResponseWindow_at_birth",
+      "cutoff_zero_not_without_weighted_endpoint",
+      "cutoff_zero_not_without_mertens_endpoint",
+      "cutoff_three_product_debt",
+      "cutoff_three_not_raw_product"
+    ],
+    "declaration_count": 20,
+    "checks": 25,
+    "open": [
+      "General cutoff-debt identity",
+      "Independent horizon-matched signed estimate",
+      "RecordingScaleBound",
+      "P04",
+      "RH"
+    ],
+    "verification": "evidence/cutoff-laplace-checks.json",
+    "continuation": "docs/ccc-prime-research-continuation.md"
   }
 }
