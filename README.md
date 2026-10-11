@@ -15,7 +15,7 @@ The checker compiles the selected source again with trust zero, checks its exact
 
 A first checker incorrectly demanded an empty axiom list. Compilation passed, but that assertion failed. The retained failure record distinguishes the checker error from the mathematical result. The corrected check records the actual standard Lean axioms and rejects `sorryAx`; it does not derive a new theorem from the checker output.
 
-Mathlib: Apache-2.0, upstream copyright and authorship preserved in `LICENSES`. Local conjunction and checking: R.A. Jacob Martone, with OpenAI Codex assistance, MIT. No mathematical originality claim. Owner: [math#70](https://github.com/grwtsk/math/issues/70).
+Mathlib: Apache-2.0, upstream copyright and authorship preserved in `LICENSES`. Local conjunction and checking: R.A. Jacob Martone, with OpenAI Codex assistance, MIT. No mathematical originality claim.
 
 
 Source attribution: [claim-bound citation](evidence/citation-prime.json), including Leonardo de Moura, Jeremy Avigad and Mario Carneiro. No priority or originality claim.
@@ -40,5 +40,23 @@ The exact declaration types and current source hashes are recorded in
 `evidence/rh-target-checks.json`. Source attribution is in
 `evidence/citation-rh-target.json`; local mathematical direction is by
 R.A. Jacob Martone, with OpenAI Codex formalization and verification assistance.
-Earlier source is preserved in the [formal-research history](https://github.com/grwtsk/formal-research/tree/3d6148fecf58e356c3a5f347e1964bf4c0f4ae27/FormalResearch/RiemannHypothesis).
+Earlier local source and detailed authoring lineage are retained privately.
 No unconditional RH proof or originality claim follows from this cell.
+
+
+The ordered-product interface is described in [Ordered interval products](docs/ordered-product.md). Check it with `lake build --wfail` and `lake env lean --trust=0 -DwarningAsError=true checks/OrderedProductAudit.lean`.
+
+
+The common-generator rotation interface is described in [Common-generator two-plane rotations](docs/common-j.md). Its complete supported formal family and two original consumers were checked against the canonical constants. Run `python3 scripts/check_common_j.py` for the independent public interface audit. Local candidate admission and review remain pending.
+
+The local rational-shear counterexample interface is described in [docs/common-j-counterexamples.md](docs/common-j-counterexamples.md). Run `python3 scripts/check_common_j_counterexamples.py` for the complete interface, original declaration dependencies and hostile controls. Admission and review remain pending.
+
+The local ordered-product gauge interface is described in [Ordered products under gauge and chart changes](docs/ordered-product-gauge.md). Run `python3 scripts/check_ordered_product_gauge.py` for its complete contracts, generated equations, proof dependencies and endpoint controls. Two original complex linear-isometry consumers were separately checked against this interface. Admission and review remain pending.
+
+The local signed real polarization interface is described in [Real polarization and signed quadratic sectors](docs/polarization.md). Run `python3 scripts/check_polarization.py` for complete theorem contracts, proof dependencies and hostile assumption/sign controls. An original real L² energy-surplus consumer was separately replayed against the canonical identity. Admission and review remain pending.
+
+The finite interval reflection interface is described in [Interval reflection and signed integral pairing](docs/interval-reflection.md). Run `python3 scripts/check_interval_reflection.py` for exact endpoint, measure, integrability, axiom and dependency checks. Five original source-pairing roots were independently checked against canonical constants. Admission and review remain pending.
+
+The explicit finite-coverage interface is described in [Finite coverage and scope](docs/finite-coverage.md). Run `python3 scripts/check_finite_coverage.py` to check exact coverage/tail contracts, axioms and canonical-use wrappers. Local candidate admission remains pending.
+
+The [RH inference guards](docs/rh-inference-guards.md) retain exact domain exclusions and negative inference examples. Their interface is checked against the existing zero definitions and symmetries; no RH proof is claimed.
