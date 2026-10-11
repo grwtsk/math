@@ -283,6 +283,21 @@ Thus convergence of the displayed power-scale prefix series formally implies
 the critical boundary estimate. No convergence or cancellation premise is
 silently added by this reduction.
 
+The mixed power-scale term can be removed without a separate arithmetic
+hypothesis. Applying $2xy\le x^2+y^2$ with
+$x=|A_n|n^{-1}$ and $y=|M_n|n^{-3/2}$ gives
+
+$$
+4A_n^2n^{-2}+8|A_nM_n|n^{-5/2}+4M_n^2n^{-3}
+\le 8\left(A_n^2n^{-2}+M_n^2n^{-3}\right).
+$$
+
+Lean therefore proves that the two square-summability obligations
+$\sum_n A_n^2n^{-2}<\infty$ and
+$\sum_n M_n^2n^{-3}<\infty$ together imply the complete critical
+boundary-line estimate. These two convergence statements remain unpaid; the
+reduction does not turn them into unconditional Möbius estimates.
+
 The actual omitted function is
 
 $$r_{\sigma,T}(u)=1_{[0,\infty)}(u)e^{-\sigma u}W(u)
