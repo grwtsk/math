@@ -84,3 +84,5 @@ point-spike and homogeneous exponential controls retain the continuity and
 differential-image boundaries. Run `python3 scripts/check_smooth_test_separation.py`
 for fresh trust-zero replay and the complete seventeen-declaration audit.
 Native admissible descent, exact CCC identification, P04, P05 and RH remain open.
+
+The [exact CCC cutoff transform](docs/ccc-cutoff-laplace.md) is Lean checked with both signed endpoint sums and both nonzero denominators. An independent cutoff-three arithmetic identity retains the unborn product six and disproves the raw finite Euler-product substitution for every complex parameter. RH and the required signed-growth estimate remain open.

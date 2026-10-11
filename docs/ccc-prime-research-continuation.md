@@ -2,7 +2,7 @@
 
 All mathematical work from the prime-cascade and complete-recording contribution is developed in grwtsk/math. Human mathematical direction: R.A. Jacob Martone. Derivation, Lean formalization and checking assistance: OpenAI Codex. Local contributions are MIT; original Lean and Mathlib authorship and Apache-2.0 licensing remain preserved. RH remains open.
 
-The accepted source checkpoints are the [exact cascade](ccc-prime-cascade.md) and [complete recording blocks](ccc-recording-scale.md). Their source-bound receipts are `evidence/prime-cascade-checks.json` and `evidence/recording-scale-checks.json`. The cascade implementation issue [#95](https://github.com/grwtsk/math/issues/95) is complete. Continuing arithmetic research belongs to [#15](https://github.com/grwtsk/math/issues/15), which stays open.
+The source checkpoints are the [exact cascade](ccc-prime-cascade.md), [complete recording blocks](ccc-recording-scale.md), [finite-window correction](ccc-prime-window-laplace.md) and [exact cutoff transform](ccc-cutoff-laplace.md). Their source-bound receipts are `evidence/prime-cascade-checks.json`, `evidence/recording-scale-checks.json`, `evidence/prime-window-laplace-checks.json` and `evidence/cutoff-laplace-checks.json`. The cascade implementation issue [#95](https://github.com/grwtsk/math/issues/95) is complete. Continuing arithmetic research belongs to [#15](https://github.com/grwtsk/math/issues/15), which stays open.
 
 ## Mathematical frontier
 
@@ -12,11 +12,11 @@ The uniform suppliers over independently varying finite prefixes and recording h
 
 ## Next proof work
 
-The [finite-window Laplace identity](ccc-prime-window-laplace.md) now retains its entire boundary correction. A shifted waveform's truncated transform looks back to a shorter window; treating it as a multiplier on the full recording discards a signed tail. The one-prime correction applies to an actual finite cascade and preserves before-birth and event-equality cases. A checked prime-two counterexample at positive Laplace parameter one prevents dropping the tail. Next derive a source-specific cutoff identity or another independent arithmetic lemma that can genuinely constrain the net innovation. Do not count renaming P04, finite quadrature, or repeated passing audits as a new arithmetic estimate.
+The [finite-window Laplace identity](ccc-prime-window-laplace.md) retains its entire boundary correction. A shifted waveform's truncated transform looks back to a shorter window; treating it as a multiplier on the full recording discards a signed tail. The one-prime correction applies to an actual finite cascade and preserves before-birth and event-equality cases. A checked prime-two counterexample at positive Laplace parameter one prevents dropping the tail. The new [source-specific cutoff identity](ccc-cutoff-laplace.md) integrates the complete actual response inventory and retains both signed endpoint sums. Do not count renaming P04, finite quadrature, or repeated passing audits as a new arithmetic estimate.
 
 Seek an independently proved bound on the complete signed recording, or a weaker estimate at every positive exponential rate. Spectral comparisons require the exact observable identification and a paid full residual. Determinant one, topology, a raw finite Euler product, and unsigned estimates alone do not supply this debt. Preserve failed routes and record the next concrete untried obligation after each run.
 
-The next exact cutoff formula is written mathematics awaiting Lean formalization. For $T\ge0$, $N=\lfloor e^T\rfloor$, $s=z+1/2$, and $z\ne0$, $s\ne0$, set
+The exact cutoff formula is now Lean formalized in `PickupCutoffLaplace`. For $T\ge0$, $N=\lfloor e^T\rfloor$, $s=z+1/2$, and $z\ne0$, $s\ne0$, set
 
 $$
 D_N(s)=\sum_{n=1}^N\mu(n)e^{-s\log n},\quad
@@ -32,7 +32,17 @@ L_T(W;z)=\frac{D_N(s)}{zs}
 +\frac{2e^{-sT}}{s}M_N.
 $$
 
-The two endpoint sums are retained, and the Dirichlet sum is cut off by the integer inventory. It is not the full subset expansion of a raw finite prime product: products above $N$ have not been born. Prove the single-response integral first, using the closed birth convention and both nonzero denominator hypotheses; then use the existing exact finite inventory identity and finite integral linearity. Check $T=0$ and a note born exactly at the endpoint. This formula supplies a concrete source-specific next obligation, not an arithmetic upper estimate.
+The single-response integral, finite signed integral linearity and full cutoff identity are proved. A note born exactly at the endpoint has zero transform; $T=0$ is included. Two actual zero-window counterexamples show that either signed endpoint omission is false. No new axiom or arithmetic-growth premise is used.
+
+The independent arithmetic lemma `cutoff_three_product_debt` proves
+
+$$
+(1-e^{-s\log2})(1-e^{-s\log3})=D_3(s)+e^{-s\log6}
+$$
+
+for every complex $s$. The positive-sign product six is above the inventory and its exponential never vanishes. Thus `cutoff_three_not_raw_product` rejects the raw-product substitution for every complex $s$. This is distinct from the already checked prime-two finite-window counterexample. It is an exact arithmetic identity, not a new growth estimate.
+
+The next untried obligation is to prove the general cutoff-debt identity. Expand the raw prime product over every subset of the primes at most $N$, identify its born product terms with $D_N(s)$, and retain the complete signed sum for products above $N$. Next test a genuinely weaker estimate on that horizon-matched signed debt or derive an independent arithmetic cancellation lemma. Keep the two pickup endpoint terms; bounding separate unsigned pieces can destroy the cancellation. No adequate signed upper estimate is known here.
 
 ## Continuation and integration
 
