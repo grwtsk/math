@@ -48,8 +48,9 @@
       "evidence": "evidence/waveform-checks.json",
       "page": "docs/mathematics/Analysis/Asymptotics/polynomial-error.md",
       "contribution": "Checked reuse/conditional interface; no originality claim",
-      "integration": "local working source; broader layout replay separate",
-      "publication": "no publication action in this packet"
+      "integration": "Source identity rebound after history merge; historical receipt applies only to its old bytes, not fresh acceptance",
+      "publication": "no publication action in this packet",
+      "prior_source_sha256": "038e3cf31cc90eec7019c91be55ff2cdc4c00aaf82a3791be5d05e4dfae12996"
     }
   ]
 }
