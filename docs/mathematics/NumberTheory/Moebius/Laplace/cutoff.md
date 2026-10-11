@@ -33,6 +33,10 @@ $$
 
 The omitted squarefree product six carries the positive Möbius sign. Its exponential is never zero, so `cutoff_three_not_raw_product` disproves equality with the raw prime product for every complex $s$. This is a new exact arithmetic counterexample, distinct from the earlier finite-window prime-two multiplier counterexample. It does not establish any asymptotic growth estimate.
 
+## Verification and remaining debt
+
+The selected cutoff checker elaborates the complete selected project import closure at trust zero under pinned Lean 4.33.0 and Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`, using pinned public dependency objects. The native audit enumerates all declarations owned by the new module, checks literal statements, rejects new or unsafe axioms, and permits only `propext`, `Classical.choice` and `Quot.sound` in transitive axiom closures. Five deliberately ill-typed controls test omission of either endpoint, loss of either nonzero denominator premise and substitution of the raw prime product. Acceptance is source scoped, without independent human review.
+
 The exact transform supplies no independent bound on its signed terms. P04, `RecordingScaleBound`, an adequate horizon-matched signed estimate and Mathlib's unchanged `_root_.RiemannHypothesis` remain open. No new assumption supplies any of them. The earlier PNT obstruction remains written mathematics with an explicitly imported classical PNT premise; this contribution does not formalize PNT.
 
 The general arithmetic cutoff-debt identity is now proved in
@@ -72,3 +76,5 @@ for every complex $s$. The positive-sign product six is above the inventory and 
 ## Source and verification scope
 
 [Source](../../../../../GRWTSK/NumberTheory/Moebius/FiniteLaplaceTransform.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../../reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+
+This page retains the complete signed cutoff and tail hypotheses. Existing source-specific receipts certify their own revisions; the mathematical integration does not itself supply the remaining uniform arithmetic budget. Human mathematical direction: grwtsk contributors. Derivation and formalization assistance: OpenAI Codex.
