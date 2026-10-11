@@ -14,6 +14,9 @@ import Mathlib.Tactic.Linarith
 import Mathlib.Tactic.FunProp
 import Mathlib.Analysis.Fourier.LpSpace
 
+/-! Exact waveform roles. Mathematical proof is never an operational credential.
+This module proves local algebra/analysis and conditional returns, not P04.
+Angular-frequency Parseval needs a separately checked convention adapter. -/
 set_option autoImplicit false
 noncomputable section
 namespace GRWTSK.Analysis.Waveform
@@ -32,5 +35,6 @@ theorem transfer_trace (E V : ℝ) : Matrix.trace (transfer E V) = E - V := by
 theorem transfer_unbounded_trace (K : ℝ) :
     ∃ E V, (transfer E V).det = 1 ∧ K < Matrix.trace (transfer E V) := by
   exact ⟨K+1,0,transfer_det _ _,by rw [transfer_trace]; linarith⟩
+
 
 end GRWTSK.Analysis.Waveform
