@@ -244,6 +244,19 @@ boundary-line estimate. Each $B_n$ is nonnegative, but its integrand keeps the
 signed interaction between $A_n$ and $M_n$. This exact discretization does not
 bound the blocks and does not settle the smaller reciprocal rates.
 
+The formal source also evaluates the integral. Writing
+$\Delta_a(n)=n^{-a}-(n+1)^{-a}$ gives
+
+$$
+B_n=4A_n^2\Delta_1(n)
+-\frac{16}{3}A_nM_n\Delta_{3/2}(n)
++2M_n^2\Delta_2(n).
+$$
+
+This closed quadratic form exposes the exact negative mixed term that an
+arithmetic proof must retain. The generic finite exponential integral used in
+the derivation lives separately under `Analysis/Integration`.
+
 The actual omitted function is
 
 $$r_{\sigma,T}(u)=1_{[0,\infty)}(u)e^{-\sigma u}W(u)
