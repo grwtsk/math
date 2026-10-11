@@ -34,6 +34,14 @@ example (h : CriticalIntervalMajorantSummable) :
     CriticalBoundaryVerticalLineUniform :=
   criticalBoundary_of_majorantSummable h
 
+example {n : ℕ} (hn : 1 ≤ n) :
+    criticalIntervalMajorant n ≤ criticalPrefixPowerMajorant n :=
+  criticalIntervalMajorant_le_prefixPowerMajorant hn
+
+example (h : CriticalPrefixPowerSummable) :
+    CriticalBoundaryVerticalLineUniform :=
+  criticalBoundary_of_prefixPowerSummable h
+
 example :
     CriticalBoundaryVerticalLineUniform ↔ CriticalIntervalBlockUniform :=
   criticalBoundary_iff_intervalBlockUniform
