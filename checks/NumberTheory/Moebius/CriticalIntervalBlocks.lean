@@ -26,6 +26,14 @@ example (n : ℕ) :
       2 * pickupMertensPrefix n ^ 2 * exponentialLogDrop 2 n :=
   criticalIntervalBlock_closedForm n
 
+example (n : ℕ) :
+    criticalIntervalBlock n ≤ criticalIntervalMajorant n :=
+  criticalIntervalBlock_le_majorant n
+
+example (h : CriticalIntervalMajorantSummable) :
+    CriticalBoundaryVerticalLineUniform :=
+  criticalBoundary_of_majorantSummable h
+
 example :
     CriticalBoundaryVerticalLineUniform ↔ CriticalIntervalBlockUniform :=
   criticalBoundary_iff_intervalBlockUniform
