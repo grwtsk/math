@@ -49,17 +49,17 @@ def visit(module):
     ORDER.append(path)
 
 
-visit("GRWTSK.RiemannHypothesis.CCC.RecordingScale")
-visit("GRWTSK.RiemannHypothesis.CCC.PrimeCorrelationObstruction")
+visit("GRWTSK.NumberTheory.Moebius.DyadicEnergy")
+visit("GRWTSK.NumberTheory.Moebius.NegativePrimeCorrelation")
 CONTROL_ERRORS = {
     "MissingScaleBound": "Type mismatch",
     "MissingPairCondition": "Type mismatch",
     "NonnegativePrefixCorrelation": "linarith failed",
 }
 CONTROLS = list(CONTROL_ERRORS)
-INPUTS = ORDER + ["checks/CCCRecordingScaleAudit.lean", "scripts/check_recording_scale.py",
+INPUTS = ORDER + ["checks/NumberTheory/Moebius/DyadicEnergy.lean", "scripts/check_recording_scale.py",
                   "lean-toolchain", "lakefile.toml", "lake-manifest.json", "docs/ccc-recording-scale.md"]
-INPUTS += ["checks/recording-scale-controls/" + name + ".lean" for name in CONTROLS]
+INPUTS += ["checks/NumberTheory/Moebius/DyadicEnergy/Controls/" + name + ".lean" for name in CONTROLS]
 HASHES = {p: hashlib.sha256((ROOT / p).read_bytes()).hexdigest() for p in INPUTS}
 (RUN / "source-freeze.json").write_text(json.dumps(HASHES, indent=2) + "\n")
 RESULTS = []
@@ -107,7 +107,7 @@ def run(rel, expected_success=True, export=False, expected_error=None):
 try:
     for path in ORDER:
         run(path, export=True)
-    output = run("checks/CCCRecordingScaleAudit.lean")
+    output = run("checks/NumberTheory/Moebius/DyadicEnergy.lean")
     declarations = [json.loads(s) for s in re.findall(r"RECORDING_DECL::(\{[^\n]+\})", output)]
     counts = re.findall(r"RECORDING_COUNT::(\d+)", output)
     if len(counts) != 1 or len(declarations) != int(counts[0]) or not declarations:
@@ -132,7 +132,7 @@ try:
         if not any(d["name"].endswith("." + name) for d in declarations):
             raise RuntimeError("missing exact theorem: " + name)
     for name in CONTROLS:
-        run("checks/recording-scale-controls/" + name + ".lean", expected_success=False,
+        run("checks/NumberTheory/Moebius/DyadicEnergy/Controls/" + name + ".lean", expected_success=False,
             expected_error=CONTROL_ERRORS[name])
     stable_inputs()
     receipt = {"schema_version": 1, "status": "SCOPED_SOURCE_CHECKS_PASSED",

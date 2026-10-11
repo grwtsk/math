@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "status": "WRITTEN_PHASE_PARTITION_AND_COUNT_LIMIT_REDUCTION_NOT_NATIVE_ACCEPTANCE",
+  "time_utc": "2026-10-11T07:04:19.896256+00:00",
+  "human_mathematical_direction": "R.A. Jacob Martone",
+  "assistance": "OpenAI Codex",
+  "source_model": {
+    "authors": [
+      "Ram Band",
+      "Siegfried Beckus",
+      "Raphael Loewy"
+    ],
+    "identifier": "arXiv:2402.16703v2",
+    "scope": "Literal operator coding and finite Dirichlet restriction; no new imported theorem or independent paper proof acceptance"
+  },
+  "written_source": "docs/sturmian-phase-count-limits.md",
+  "written_source_sha256": "9c525ba89a19715daa71aa7a82f2ce593b3f08d1a2be60c6997192b9edff50f9",
+  "parameters": "0<alpha<1 irrational, L and K positive natural block lengths, all real V and E, every real phase and integer origin",
+  "written_mathematics": [
+    "Actual count is a finite word observable with inclusive multiplicities",
+    "Half-open phase atoms from L+1 distinct endpoints fract(-j*alpha), retaining endpoint values; no pairwise-distinct-word assertion",
+    "Uniform-in-phase character average bound 2/(q*abs(1-exp(2*pi*i*k*L*alpha))) for k nonzero and q positive",
+    "Continuous approximation and everywhere indicator sandwiches retain every phase",
+    "Whole-volume block means obey written Cauchy estimate 2/L+2/K; proposed actual count convergence uniform in phase and origin at fixed energy"
+  ],
+  "candidate": {
+    "path": ".local/ccc-spectral-continuation/SturmianWordCounts.lean",
+    "sha256": "681e8ff1d7b0f1744020bd5b446b40d4b0efb2eb47f9ace8afed297e1f9a392d",
+    "named_theorem_scripts": 9,
+    "text_placeholder_audit": "NO_PROOF_PLACEHOLDER_OR_CUSTOM_AXIOM_TOKENS_OUTSIDE_COMMENTS",
+    "elaboration": "NOT_RUN",
+    "admitted_library_module": false,
+    "native_axiom_audit": "NOT_RUN"
+  },
+  "pinned_mathlib_source_inspection": {
+    "Mathlib/Algebra/Order/Floor/Ring.lean": {
+      "sha256": "d46979d7e9a446825f04b9b8ee080d303812c01083406ed9e76a296454a5387f",
+      "interfaces": [
+        "Int.fract_add_intCast",
+        "Int.fract_eq_fract"
+      ],
+      "new_native_reuse_claimed": false
+    },
+    "Mathlib/NumberTheory/Real/Irrational.lean": {
+      "sha256": "b5b8fef319876fc584704ec0902863ab8016fe0ba4dee5dd358f86f4688b13cc",
+      "interfaces": [
+        "Irrational.natCast_mul",
+        "Irrational.intCast_mul"
+      ],
+      "new_native_reuse_claimed": false
+    },
+    "Mathlib/Algebra/Field/GeomSum.lean": {
+      "sha256": "4b34e7f92543da53c331f629ae697e47be9c96439c6558dd62e8cb4d9bb21d9b",
+      "interfaces": [
+        "geom_sum_eq"
+      ],
+      "new_native_reuse_claimed": false
+    },
+    "Mathlib/Analysis/Fourier/AddCircle.lean": {
+      "sha256": "87fe0972a4370b6fdd14c327855f4e7ab98edf37e9e2ebb5182ab0f676bc16b2",
+      "interfaces": [
+        "AddCircle.fourier",
+        "AddCircle.fourier_coe_apply",
+        "AddCircle.span_fourier_closure_eq_top"
+      ],
+      "new_native_reuse_claimed": false
+    },
+    "Mathlib/Analysis/SpecialFunctions/Complex/Log.lean": {
+      "sha256": "fbfb7c430b03b825acff01bbb42ded3f1f7325349875af3bf2ad6a35147f14d5",
+      "interfaces": [
+        "Complex.exp_eq_one_iff"
+      ],
+      "new_native_reuse_claimed": false
+    }
+  },
+  "mathlib_pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "lean_version": "4.33.0",
+  "half_open_word_frequencies_proved_in_lean": false,
+  "sturmian_count_limit_existence_proved_in_lean": false,
+  "operator_ids_identification_proved": false,
+  "arithmetic_observable_identification_proved": false,
+  "independent_arithmetic_all_rate_bound_proved": false,
+  "rh_proved": false,
+  "independent_acceptance": "PENDING"
+}
