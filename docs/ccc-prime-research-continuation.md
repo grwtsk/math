@@ -72,6 +72,14 @@ elementary weighted-energy domain $\tau>1$ through $\tau=2\sigma$. The precise
 new territory is therefore $0<\sigma\le1/2$; re-proving the right half-plane
 does not advance RH.
 
+Positivity gives a further exact reduction. `VerticalLineMonotonicity` proves
+that the completed mass decreases with $\sigma$, and hence that it suffices to
+bound the countable family $\sigma=1/(n+1)$ for $n\ge1$. This family begins at
+the unresolved boundary $1/2$ and is cofinal at zero. Its uniform-in-horizon
+criterion is equivalent to the all-positive-line criterion, weighted energy,
+and zero energy abscissa, and conditionally returns literal RH. Constants may
+depend on $n$; no unjustified uniformity across damping rates is introduced.
+
 The next untried obligation is an independently proved bound for that complete
 signed vertical-line expression, uniform in the recording horizon, or a
 genuinely weaker cancellation lemma that still feeds the every-positive-
