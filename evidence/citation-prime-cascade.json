@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "status": "EXACT_AND_CONDITIONAL_FORMALIZATION",
+  "rh_proved": false,
+  "direction": "grwtsk contributors",
+  "formalization_assistance": "OpenAI Codex",
+  "mathematical_origin": "Classical causal filtering, squarefree prime factorization, Chebyshev bounds and Abel summation; applied to the supplied CCC definitions",
+  "originality_claim": false,
+  "local_license": "MIT",
+  "upstream": {
+    "Lean": "4.33.0",
+    "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "license": "Apache-2.0",
+    "authorship": "Original Lean and Mathlib authors retained"
+  },
+  "source": {
+    "user_argument_sha256": "2a6152bb048790d1c55d9d367baf92e1867aa66f946e1c7155e0ed1e3d999d41",
+    "projection": "Mathematical formulas and proof arguments only; no private files or raw conversation imported"
+  },
+  "reference": {
+    "authors": [
+      "Hong Wang",
+      "Joshua Zahl"
+    ],
+    "arxiv": "2502.17655v1",
+    "url": "https://arxiv.org/abs/2502.17655v1",
+    "role": "Geometric research architecture only; no arithmetic theorem imported"
+  },
+  "contracts": {
+    "exact": [
+      "pickup_eq_prime_note_cascade",
+      "energy_after_prime_insertion",
+      "harmonicPrimeMass_log_bound"
+    ],
+    "conditional": [
+      "p04_of_block_reverberation",
+      "p04_of_prime_reverberation",
+      "riemannHypothesis_of_block_reverberation"
+    ]
+  },
+  "correction": "Explicit causal recording window; source negative-time support explains why its oriented integral also vanishes before note birth",
+  "frontier": {
+    "prime_reverberation": "OPEN",
+    "block_reverberation": "OPEN",
+    "P04": "OPEN",
+    "Kakeya_adapter": "OPEN",
+    "almost_Mathieu_identification": "OPEN"
+  },
+  "implementation_issue": "https://github.com/grwtsk/math/issues/95",
+  "verification": "evidence/prime-cascade-checks.json",
+  "source_sha256": {
+    "GRWTSK/RiemannHypothesis/CCC/PrimeCascade.lean": "23995d93841e2ad1babd73a476dced219992c9a675396780ab6f675b56d458ce",
+    "GRWTSK/RiemannHypothesis/CCC/PrimeEnergy.lean": "b90708dab380d32ea80113abe91b199614950ec705624adee64c2f4614518c28",
+    "GRWTSK/RiemannHypothesis/CCC/PrimeMass.lean": "f9c95be6dd39911e5acba786ca84baf89c51a9611632477673c44e20ead58cf8",
+    "GRWTSK/RiemannHypothesis/CCC/PrimeReverberation.lean": "0f693d7ec606cfa4b107c9bc61913d3787921e8690da6918815911bc3b03beb6"
+  }
+}

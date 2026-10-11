@@ -62,3 +62,5 @@ The explicit finite-coverage interface is described in [Finite coverage and scop
 The [RH inference guards](docs/rh-inference-guards.md) retain exact domain exclusions and negative inference examples. Their interface is checked against the existing zero definitions and symmetries; no RH proof is claimed.
 
 The [Schrödinger transfer core](docs/schrodinger-transfer.md) preserves the exact current/previous state, commutative-ring recurrence, determinant-one packaging and rational inequality witness.
+
+The [exact CCC prime-note cascade](docs/ccc-prime-cascade.md) proves the causal pickup identification, clipped insertion-energy recurrence, unconditional logarithmic prime-mass allowance and conditional prime/block return to P04. The signed supplier remains open. Run `python3 scripts/check_prime_cascade.py` for its fresh source and premise audit.

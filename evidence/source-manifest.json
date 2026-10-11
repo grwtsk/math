@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "profile": "least-natural-prime + canonical34-Moser + exact-RH-target + ordered-product-candidate + common-J-rotation-candidate + common-J-native-sign-reversal-candidate + rational-shear-counterexample-candidate + ordered-product-gauge-candidate + real-polarization-access-ramp-candidate + interval-reflection-conditional-integral-candidate + finite-coverage-explicit-domain-and-tail-candidate + rh-inference-guards-with-existing-canonical-dependency-reuse-candidate + schrodinger-transfer-core-candidate",
+  "profile": "least-natural-prime + canonical34-Moser + exact-RH-target + ordered-product-candidate + common-J-rotation-candidate + common-J-native-sign-reversal-candidate + rational-shear-counterexample-candidate + ordered-product-gauge-candidate + real-polarization-access-ramp-candidate + interval-reflection-conditional-integral-candidate + finite-coverage-explicit-domain-and-tail-candidate + rh-inference-guards-with-existing-canonical-dependency-reuse-candidate + schrodinger-transfer-core-candidate + ccc-prime-cascade-exact-and-conditional",
   "origin": "PUBLIC_MATHLIB_DIRECT_IMPORT",
   "upstream": {
     "repository": "https://github.com/leanprover-community/mathlib4",
@@ -14,7 +14,7 @@
   "files": {
     ".gitattributes": "30ad961b8d8b3947a8f036d5390087ab5f8c1853f7d0bfb01319f449e05e1368",
     ".gitignore": "21327e9cedbf4b84ef262886e71421d4201201b052cb7b06a6ba6a522270e732",
-    "GRWTSK.lean": "abfbe8b29bc67930fb45e3a502a71da111605a4022fee545a844cf98004ab1ca",
+    "GRWTSK.lean": "aa0bda3a21ce1e5e19a840f28e129c59d54c68997644530dbba6c5c4b245abd6",
     "GRWTSK/Algebra/OrderedProduct.lean": "97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d",
     "GRWTSK/Combinatorics/GraphTheory/HadwigerNelson/Moser.lean": "1791f62713a936d9d91f262273871cf5d28257e390f15d05454a5f2115ce8796",
     "GRWTSK/Combinatorics/GraphTheory/HadwigerNelson/MoserCoordinates.lean": "0e29b36d41b117eb4c747ddaf02bf22a2b87e8a59b0665a424d1a1277a38c8ec",
@@ -31,8 +31,8 @@
     "LICENSES/MIT.txt": "a98fc92dab12d02b26bc51f1ac0d608871886b7e36de2170747fb0fcee946968",
     "LICENSES/Mathlib-Apache-2.0.txt": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
     "LICENSES/OpenAI-Apache-2.0.txt": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
-    "NOTICE": "5ff0b9bd8b6b9b19a9eab9babcd1e9b7ad32b683ffb44e91ca66613f4443764b",
-    "README.md": "735861397291553d30b49798dc6ea051442c5eacc59f3956cc9a112c8c74deef",
+    "NOTICE": "99b110f190af18d15b502b7dc8a33de18e4aaeb8e33ce1e9efc37a90b0860c29",
+    "README.md": "f01f071874d5663909fc4ee47c30840654f42ddfcc69801fe8195c6f9ce00b57",
     "checks/CommonJAudit.lean": "6773a938739ae7708d354a130a9e067844cd33633cb6b4ce3883f998a7f638fd",
     "checks/Consumers.lean": "ddffe7fc2b513a02a79b3afa0a79a797d97424c15c6c08a82db2dd0f9ffe42e4",
     "checks/DeclarationAudit.lean": "377f6c7372b2693761402d3c28ab0fcb8dca0d5e7d18651fe03289f3863c070a",
@@ -129,7 +129,31 @@
     "checks/schrodinger-controls/IdentifyDistinctSLElements.lean": "dbbf4e260ebcf35a6bdaa603c527e14a40dfff1affe5d7c64d0b6c5ff87624e2",
     "checks/schrodinger-controls/ReverseNextStateCoordinates.lean": "dddb1769e2cbf5203990393eaa3ac77e73a4a6947268b61e9f45862e0e4a2f8d",
     "docs/schrodinger-transfer.md": "b92e3a260a32f95ce172a135b66d3cced7c7c520669b71444f0a63dd2102f972",
-    "scripts/check_schrodinger_transfer.py": "42c1a8847a9b36e01ede5ba822d756a6fd41caa6186904825ee9c5533e5ea0e2"
+    "scripts/check_schrodinger_transfer.py": "42c1a8847a9b36e01ede5ba822d756a6fd41caa6186904825ee9c5533e5ea0e2",
+    "GRWTSK/RiemannHypothesis/CCC/PickupBudgets.lean": "a0735d6120754b4921c55346a5fb0203cb3586bd6f312289f83b0a76218cffbb",
+    "GRWTSK/RiemannHypothesis/CCC/PickupRegularity.lean": "663fd9e9d6fd6af327eeac76166ea40c9dc07c029b5822468533d80db8b4f9be",
+    "GRWTSK/RiemannHypothesis/CCC/PickupFiniteIdentity.lean": "4b4be0a5e4e2614ff81d192620170b5b47941e10e74f1965b5bbd0914ec24a51",
+    "GRWTSK/RiemannHypothesis/CCC/PrimeCascade.lean": "23995d93841e2ad1babd73a476dced219992c9a675396780ab6f675b56d458ce",
+    "GRWTSK/RiemannHypothesis/CCC/DiagonalAllowance.lean": "748100ebb0ba4440335668ecb96a079d869de82bb7ac2fb7ecb09ca089469a3c",
+    "GRWTSK/RiemannHypothesis/CCC/PickupDiagonalBound.lean": "e4b835ea2904d9494dd2b5252f1297ac76a924b153b94b99865471bd619155e8",
+    "GRWTSK/RiemannHypothesis/CCC/PickupLaplaceDefinition.lean": "900d196c65816d9217c05246e6fd5a847d5fe975baa1adb869907e394a9e6514",
+    "GRWTSK/RiemannHypothesis/CCC/PickupInitialTransform.lean": "52717097ba1ac20ef02efa7d744c413458026d9c3de8d35bb6bd9de833c14f38",
+    "GRWTSK/RiemannHypothesis/CCC/EnergyIntegrability.lean": "18a3aac5fcfb6844da96d34db5febc659f8c2694bd178ab187d324fbc9d6780b",
+    "GRWTSK/RiemannHypothesis/CCC/LaplaceAnalytic.lean": "9b36cbd99be50262b982974d665a0b226495665a5e509f7355ce66a2e08e2f10",
+    "GRWTSK/RiemannHypothesis/CCC/SignedPickupAnalytic.lean": "04f4c00bae21d3fde810919c80030f2be5a2bdac9836dec0c5ea0ed5ab9b81c6",
+    "GRWTSK/RiemannHypothesis/CCC/RegularizedZeta.lean": "084fe442c91faee379c83ad8a7a6af1f4500bd5eb66bbc5f999b160106627af7",
+    "GRWTSK/RiemannHypothesis/CCC/EnergyRHReturn.lean": "62ffb37232e2b35e062f180bda8fe9f54369b98b431a2f97d0b30d539932efd0",
+    "GRWTSK/RiemannHypothesis/CCC/EnergyReturn.lean": "2116d2d7191ae28844ead58af1eb76e32a0272e6e4c92566d6d48bd36c163dac",
+    "GRWTSK/RiemannHypothesis/CCC/PrimeEnergy.lean": "b90708dab380d32ea80113abe91b199614950ec705624adee64c2f4614518c28",
+    "GRWTSK/RiemannHypothesis/CCC/PrimeMass.lean": "f9c95be6dd39911e5acba786ca84baf89c51a9611632477673c44e20ead58cf8",
+    "GRWTSK/RiemannHypothesis/CCC/PrimeReverberation.lean": "0f693d7ec606cfa4b107c9bc61913d3787921e8690da6918815911bc3b03beb6",
+    "checks/CCCPrimeCascadeAudit.lean": "790664be61b2cb28de445c7718100ca7b49c75b773c4b4387778f813a3affa39",
+    "scripts/check_prime_cascade.py": "5d844b814f5a20e4b337b5b6ec0ba781f0193ad83c762906da31b4b4f19f4e40",
+    "docs/ccc-prime-cascade.md": "96ce8f909546694f5bb3b546b8e195b255fea35f180e43a1127528e2ab6bf983",
+    "checks/prime-cascade-controls/MissingBlockBound.lean": "edb4893c9a62c7fef7032147bf3fc5c420120c0e6bf0c83e8038acee3ed0a2dc",
+    "checks/prime-cascade-controls/MissingPrimeBound.lean": "7a6de82066f0a037f5fd812cad777c1bcebfa3d38f1e20c5dcae140dee6f0bcb",
+    "checks/prime-cascade-controls/CompositePrimitive.lean": "16dbcf6515d8072147aa1fd17cf55b60712476d2b2e3f69d5e3c9943f0f34b87",
+    "evidence/citation-prime-cascade.json": "11c8b764a0b9828983c47dd71ebb23c75382af0523c8576de4a2904a31d7bce1"
   },
   "axiom_policy": "Lean standard classical axioms propext, Classical.choice, Quot.sound permitted; sorryAx and other axioms rejected; prime exact observed list reported, Moser exact frozen lists matched.",
   "additional_claim_scope": "Exact Mathlib RH proposition, its defect equivalence and nontrivial-zero symmetries; no RH proof.",
@@ -141,5 +165,23 @@
   "interval_reflection_claim_scope": "Established interval reflection and conditional integral identities, exact Lebesgue endpoints and integrability premises; one original definition and four original source pairing theorem consumers checked; no originality or RH claim.",
   "finite_coverage_claim_scope": "Four established explicit coverage and negative scope theorem contracts preserved; four original guard contracts replayed as import-only compatibility, zero original canonical proof reuse roles, four synthetic verification wrappers checked; no originality or RH claim.",
   "rh_inference_guards_scope": "Four established guard statements, existing zero definitions and symmetries reused, three original intrafamily roles and four synthetic wrappers checked. No verified external original consumer, originality or RH claim.",
-  "schrodinger_scope": "Three definitions and three source theorems, three stored helpers; exact commutative-ring state/recurrence/determinant and rational inequality, original consumers checked, no spectral or RH proof claim."
+  "schrodinger_scope": "Three definitions and three source theorems, three stored helpers; exact commutative-ring state/recurrence/determinant and rational inequality, original consumers checked, no spectral or RH proof claim.",
+  "prime_cascade_scope": {
+    "exact": [
+      "pickup_eq_prime_note_cascade",
+      "energy_after_prime_insertion",
+      "harmonicPrimeMass_log_bound"
+    ],
+    "conditional": [
+      "p04_of_block_reverberation",
+      "p04_of_prime_reverberation"
+    ],
+    "open": [
+      "prime_reverberation",
+      "block_reverberation",
+      "P04",
+      "Kakeya_adapter"
+    ],
+    "verification": "evidence/prime-cascade-checks.json"
+  }
 }
