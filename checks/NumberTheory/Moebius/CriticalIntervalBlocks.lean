@@ -21,6 +21,25 @@ example {C β u : ℝ} (hC : 0 ≤ C) (hβ : 0 ≤ β)
     |mertensPrefix (Real.exp u)| ≤ C * Real.exp (β * u) :=
   mertensPrefix_exp_le_of_powerBound hC hβ hM hu
 
+example {C β : ℝ} {n : ℕ}
+    (hC : 0 ≤ C) (hβ : 1 / 2 < β)
+    (hM : ∀ k : ℕ, 1 ≤ k →
+      |pickupMertensPrefix k| ≤ C * (k : ℝ) ^ β)
+    (hn : 1 ≤ n) :
+    |∫ u in (0 : ℝ)..Real.log (n : ℝ),
+        Real.exp (-u / 2) * mertensPrefix (Real.exp u)| ≤
+      C * ((n : ℝ) ^ (β - 1 / 2) - 1) / (β - 1 / 2) :=
+  abelIntegral_abs_le_of_mertensPowerBound hC hβ hM hn
+
+example {C β : ℝ}
+    (hC : 0 ≤ C) (hβ : 1 / 2 < β)
+    (hM : ∀ k : ℕ, 1 ≤ k →
+      |pickupMertensPrefix k| ≤ C * (k : ℝ) ^ β) :
+    ∀ n : ℕ, 1 ≤ n →
+      |pickupWeightedPrefix n| ≤
+        (C + C / (2 * (β - 1 / 2))) * (n : ℝ) ^ (β - 1 / 2) :=
+  pickupWeightedPrefix_le_of_mertensPowerBound hC hβ hM
+
 example {n : ℕ} (hn : 1 ≤ n) :
     criticalIntervalBlock n =
       ∫ u in Real.log (n : ℝ)..Real.log ((n + 1 : ℕ) : ℝ),
