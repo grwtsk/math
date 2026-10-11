@@ -87,6 +87,26 @@ damping energy criterion. Keep the debt and both pickup endpoint terms together;
 bounding separate unsigned pieces can destroy the cancellation. No adequate
 signed upper estimate is known here.
 
+The boundary line now has a source-exact discrete form.
+`CriticalIntervalBlocks` proves that on
+$\log n<u<\log(n+1)$ the pickup is exactly
+
+$$
+W(u)=2\left(A_n-e^{-u/2}M_n\right),\qquad
+A_n=\sum_{k\le n}\frac{\mu(k)}{\sqrt{k}},\quad
+M_n=\sum_{k\le n}\mu(k).
+$$
+
+Its nonnegative block is the integral of
+$e^{-u}[2(A_n-e^{-u/2}M_n)]^2$ across that logarithmic cell. The sum of the
+first $N$ blocks is exactly the complete $\sigma=1/2$ vertical-line mass at
+$T=\log(N+1)$. Boundedness of these arithmetic partial sums is equivalent to
+uniform-in-horizon control of that boundary line. This is a necessary first
+member of the reciprocal-line criterion, not the all-rate estimate and not a
+new cancellation bound. It identifies the precise coupled signed prefixes
+that a boundary argument must control; separating $A_n$ and $M_n$ by absolute
+values loses the retained cancellation.
+
 ## Continuation and integration
 
 Use the existing main checkout, the pinned Lean 4.33.0 and Mathlib environment, fresh selected project source replay at trust zero, literal statement checks and transitive axiom audits allowing only `propext`, `Classical.choice` and `Quot.sound`. Refresh manifests for changed bytes. Preserve unrelated work and inspect any concurrent commits before a publication includes them. Do not import raw conversations, private proof logs or manuscript archives into public math sources.

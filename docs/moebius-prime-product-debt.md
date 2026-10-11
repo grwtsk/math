@@ -219,6 +219,31 @@ converse is immediate, so this countable critical criterion is equivalent to
 `CompletedVerticalLineUniform`. The constant remains allowed to depend on
 $n$; the theorem does not manufacture a rate-uniform bound.
 
+At the first reciprocal line, `CriticalIntervalBlocks` removes the remaining
+continuous-time bookkeeping without removing arithmetic cancellation. On the
+cell $\log n<u<\log(n+1)$ it proves
+
+$$W(u)=2(A_n-e^{-u/2}M_n),$$
+
+and defines the corresponding positive boundary block
+
+$$
+B_n=\int_{\log n}^{\log(n+1)}
+ e^{-u}\,[2(A_n-e^{-u/2}M_n)]^2\,du.
+$$
+
+The formal telescope gives
+
+$$
+\sum_{n=1}^{N}B_n
+=H_{1/2}(\log(N+1)).
+$$
+
+Thus $\sup_N\sum_{n\le N}B_n<\infty$ is equivalent to the uniform completed
+boundary-line estimate. Each $B_n$ is nonnegative, but its integrand keeps the
+signed interaction between $A_n$ and $M_n$. This exact discretization does not
+bound the blocks and does not settle the smaller reciprocal rates.
+
 The actual omitted function is
 
 $$r_{\sigma,T}(u)=1_{[0,\infty)}(u)e^{-\sigma u}W(u)

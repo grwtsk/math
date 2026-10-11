@@ -81,6 +81,14 @@ The same module proves the completed bound unconditionally for every $\sigma>1/2
 
 `VerticalLineMonotonicity` reduces that extension to the countable cofinal family $\sigma=1/(n+1)$ for $n\ge1$. Its criterion is formally equivalent to the all-positive-line criterion and conditionally implies literal RH; each reciprocal line retains its own horizon-uniform constant.
 
+`CriticalIntervalBlocks` now resolves the continuous bookkeeping on the first
+unpaid line $\sigma=1/2$. It proves an exact positive logarithmic-cell
+decomposition in terms of the coupled weighted Möbius and Mertens prefixes,
+and proves that bounded block partial sums are equivalent to uniform control
+of that boundary line. This is a necessary subproblem of the reciprocal-line
+criterion, not a sufficient condition for RH by itself; every smaller positive
+rate remains open.
+
 The canonical debt module and damped-recording Parseval module have focused trust-zero replay and owned-declaration axiom audits. Exact integer coefficient checks through cutoff 42 remain finite sanity checks, not an arithmetic estimate. The separate spectral word adapter still requires its own current source replay before admission.
 
 ## Proved finite recording and exact tail obligation
