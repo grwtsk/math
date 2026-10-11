@@ -50,9 +50,16 @@ the matching recording, that the debt at $s=0$ is exactly the negative Mertens
 prefix, and that the actual cutoff transform equals the raw product minus the
 debt and both endpoint corrections.
 
-The next untried obligation is an independently proved estimate for that
-complete signed numerator on a vertical line, uniform in the recording horizon,
-or a genuinely weaker cancellation lemma that still feeds the every-positive-
+The hard-window Fourier adapter is now also proved. For every $\sigma>0$ and
+$T\ge0$, `completedNumerator_verticalLine_parseval` identifies the angular
+$L^2$ mass of the complete quotient—raw prime product minus unborn debt and
+both endpoint terms—with
+$\int_0^T e^{-2\sigma u}W(u)^2\,du$. Thus Fourier normalization and the
+finite-window representative are no longer open interfaces.
+
+The next untried obligation is an independently proved bound for that complete
+signed vertical-line expression, uniform in the recording horizon, or a
+genuinely weaker cancellation lemma that still feeds the every-positive-
 damping energy criterion. Keep the debt and both pickup endpoint terms together;
 bounding separate unsigned pieces can destroy the cancellation. No adequate
 signed upper estimate is known here.

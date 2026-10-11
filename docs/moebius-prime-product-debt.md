@@ -148,12 +148,15 @@ $$
  =2\pi\int_0^T e^{-2\sigma u}W(u)^2\,du.
 $$
 
-Pinned Mathlib's `MeasureTheory.Lp.norm_fourier_eq` supplies the normalized
-$L^2$ isometry. A native proof here must additionally construct the actual
-hard-window representative, connect its integral kernel to that isometry,
-and pay the angular change of variable. The concurrent
-`AngularWindowCertificate` stores these obligations as fields; it does not
-construct them. None of these new adapter steps has been proved in Lean.
+These adapter steps are now proved in
+[`DampedRecordingParseval.lean`](../GRWTSK/NumberTheory/Moebius/DampedRecordingParseval.lean).
+The module constructs the actual zero-extended hard window, proves its $L^1$
+and $L^2$ membership from compact-window continuity, identifies its angular
+Fourier kernel pointwise with $L_T(\sigma+it)$, pays the $2\pi$ normalization,
+and substitutes the complete prime-product/debt formula. The resulting theorem
+`completedNumerator_verticalLine_parseval` is exactly the displayed identity.
+The generic `AngularWindowCertificate` remains merely an interface; it is not
+used as an assumed supplier.
 
 An independently established bound on the displayed left side, uniform in
 $T\ge0$ at each $\sigma>0$, would give the actual half-line weighted square
@@ -166,15 +169,12 @@ cancellation in this completed numerator.
 
 ## Finite recordings, extended tail energy and the limit obligation
 
-This section is a written argument and source review. It is not a new Lean
-replay or independent acceptance. The transferred private candidate
-`DampedRecordingWindow.lean` proposes the actual hard-window representative,
-its integral kernel, its identification almost everywhere with the normalized
-$L^2$ Fourier transform, and the angular factor. Its proof scripts remain
-unelaborated. The distribution bridge uses the Fourier pairing identity
-against smooth compactly supported tests, followed by the pinned Mathlib
-separation theorem for locally integrable functions. These are candidate
-adapters, not premises that the waveform certificate supplies automatically.
+The finite-window part of this section now has native Lean replay through
+`DampedRecordingParseval`. It reuses the independently proved raw-integral
+Plancherel bridge in `AngularFrequencyParseval`, rather than the older private
+`DampedRecordingWindow.lean` candidate. The half-line monotone-limit and tail
+statements below remain written arguments pending their own native admission;
+they are not premises supplied by a waveform certificate.
 
 For fixed real $\sigma$ define the nonnegative density and its extended
 half-line energy by
@@ -191,8 +191,8 @@ $$\mathcal E_\sigma=\sup_{n\in\mathbb N}H_\sigma(n)
                     =\sup_{T\ge0}H_\sigma(T).$$
 
 Consequently a finite constant bounding every recording is equivalent to
-$\mathcal E_\sigma<\infty$. Assuming the proposed finite angular Parseval
-adapter, it is also equivalent to a uniform bound on the complete
+$\mathcal E_\sigma<\infty$. By the proved finite angular Parseval adapter, it
+is also equivalent to a uniform bound on the complete
 vertical-line expression above. Separate finite constants depending on $T$
 do not prove this condition. Requiring it at every $\sigma>0$ is precisely
 the selected `PickupWeightedEnergyAll` premise after the damping change
