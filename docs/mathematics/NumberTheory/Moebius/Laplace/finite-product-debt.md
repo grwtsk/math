@@ -211,6 +211,14 @@ prime-product/debt bound for every $\sigma>1/2$. This is the transform of the
 known weighted-energy domain $\tau>1$. The unresolved extension is exactly
 $0<\sigma\le1/2$, and ultimately every positive line.
 
+The dependence on the continuum of rates can be reduced honestly.
+`VerticalLineMonotonicity` proves that the finite completed mass is antitone in
+$\sigma$. Therefore bounds on the reciprocal sequence
+$\sigma_n=1/(n+1)$, $n\ge1$, imply bounds at every positive real rate. The
+converse is immediate, so this countable critical criterion is equivalent to
+`CompletedVerticalLineUniform`. The constant remains allowed to depend on
+$n$; the theorem does not manufacture a rate-uniform bound.
+
 The actual omitted function is
 
 $$r_{\sigma,T}(u)=1_{[0,\infty)}(u)e^{-\sigma u}W(u)
