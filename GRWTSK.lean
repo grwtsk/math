@@ -16,3 +16,5 @@ import GRWTSK.Analysis.IntervalReflection
 import GRWTSK.Logic.FiniteCoverage
 
 import GRWTSK.RiemannHypothesis.InferenceGuards
+
+import GRWTSK.LinearAlgebra.SchrodingerTransfer
