@@ -35,6 +35,37 @@ open GRWTSK.Analysis.Integration.ExponentialInterval
 open GRWTSK.Analysis.SpecialFunctions.PowerIntervalDrop
 open GRWTSK.Analysis.Asymptotics.PowerWeightedSquareSummability
 
+/-- Exact endpoint form of Abel summation: the weighted prefix is the scaled
+Mertens endpoint plus half of the accumulated pickup. -/
+theorem pickupWeightedPrefix_eq_mertens_add_wholePickup {n : ℕ}
+    (hn : 1 ≤ n) :
+    pickupWeightedPrefix n =
+      (Real.sqrt n)⁻¹ * pickupMertensPrefix n +
+        wholePickup (Real.log (n : ℝ)) / 2 := by
+  have hnpos : (0 : ℝ) < n := by
+    exact_mod_cast (lt_of_lt_of_le Nat.zero_lt_one hn)
+  have hlog : 0 ≤ Real.log (n : ℝ) := Real.log_nonneg (by exact_mod_cast hn)
+  have hflux := wholePickup_closed_prefix_flux hlog
+  rw [Real.exp_log hnpos] at hflux
+  have hflux' : wholePickup (Real.log (n : ℝ)) =
+      2 * pickupWeightedPrefix n -
+        2 * Real.exp (-Real.log (n : ℝ) / 2) * pickupMertensPrefix n := by
+    simpa only [pickupWeightedPrefix, pickupMertensPrefix, mertensPrefix,
+      Nat.floor_natCast] using hflux
+  rw [← pickup_exp_negative_log_half hn]
+  linarith
+
+/-- The same endpoint identity with the actual defining Mertens integral
+exposed.  No cancellation estimate is used. -/
+theorem pickupWeightedPrefix_eq_mertens_add_integral {n : ℕ}
+    (hn : 1 ≤ n) :
+    pickupWeightedPrefix n =
+      (Real.sqrt n)⁻¹ * pickupMertensPrefix n +
+        (∫ u in (0 : ℝ)..Real.log (n : ℝ),
+          Real.exp (-u / 2) * mertensPrefix (Real.exp u)) / 2 := by
+  rw [pickupWeightedPrefix_eq_mertens_add_wholePickup hn]
+  rfl
+
 /-- On the open logarithmic cell from `n` to `n+1`, the pickup is the exact
 coupled weighted-prefix/Mertens-prefix expression with cutoff `n`. -/
 theorem wholePickup_eq_prefix_flux_on_log_cell {n : ℕ} (hn : 1 ≤ n) {u : ℝ}
@@ -541,6 +572,7 @@ theorem criticalBoundary_of_criticalReciprocal
 end GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks
 
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.wholePickup_eq_prefix_flux_on_log_cell
+#print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.pickupWeightedPrefix_eq_mertens_add_integral
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalIntervalBlock_eq_pickup
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalIntervalBlock_closedForm
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalIntervalBlockUniform_of_majorantSummable
