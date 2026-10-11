@@ -53,7 +53,7 @@ visit("GRWTSK.NumberTheory.Moebius.FiniteLaplaceTransform")
 CONTROL_ERRORS = {'MissingWeightedEndpoint': 'Type mismatch', 'MissingMertensEndpoint': 'Type mismatch', 'MissingZNonzero': 'Type mismatch', 'MissingSNonzero': 'Type mismatch', 'RawProduct': 'Type mismatch'}
 CONTROLS = list(CONTROL_ERRORS)
 INPUTS = ORDER + ["checks/NumberTheory/Moebius/FiniteLaplaceTransform.lean", "scripts/check_pickup_cutoff_laplace.py",
-                  "lean-toolchain", "lakefile.toml", "lake-manifest.json", "docs/ccc-cutoff-laplace.md"]
+                  "lean-toolchain", "lakefile.toml", "lake-manifest.json", "docs/mathematics/NumberTheory/Moebius/Laplace/cutoff.md"]
 INPUTS += ["checks/NumberTheory/Moebius/FiniteLaplaceTransform/Controls/" + name + ".lean" for name in CONTROLS]
 HASHES = {p: hashlib.sha256((ROOT / p).read_bytes()).hexdigest() for p in INPUTS}
 (RUN / "source-freeze.json").write_text(json.dumps(HASHES, indent=2) + "\n")
