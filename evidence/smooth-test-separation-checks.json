@@ -1,0 +1,320 @@
+{
+  "schema": "smooth-test-separation-verification-v1",
+  "status": "PASS",
+  "trust_level": 0,
+  "lean_version": "4.33.0",
+  "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "lean_binary_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "source_inputs": {
+    "GRWTSK/RiemannHypothesis/Conversation/BranchSmoothTestSeparation.lean": "8479d379d257b8bbbe606ad9627a0883a039a61acce7a0c114f5dea7a975a38f",
+    "GRWTSK/RiemannHypothesis/Conversation/BranchEvenSmoothTest.lean": "d2c69d85ab66918ea4e19747b966b0762221932bcef3362af0481be2360b5895",
+    "GRWTSK/RiemannHypothesis/Conversation/BranchPoleAdmissibleTest.lean": "e3fca3473a294d6f6f55ed24da5a0930b2f8a826e681a0c03f308faddaa63d83",
+    "checks/SmoothTestSeparationAudit.lean": "306a1d39c02c06fd559bfa8edbbbfd2536b52cc7767682b5bb3e06a71329979c",
+    "scripts/check_smooth_test_separation.py": "621aa70f790b7b4d56a6f01a83ad4b60de78d02ebc1ad2af88cba6ed7b7fabc7",
+    "lean-toolchain": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
+    "lakefile.toml": "a23f6d313f8458192328f09635ffef9078cb684374c2aac2743af541bf59b4e3",
+    "lake-manifest.json": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec"
+  },
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "mathematical_theorems": 11,
+  "public_definitions": 2,
+  "complete_stored_declarations": 17,
+  "independent_replay_receipt_sha256": "16d1a6ec0ace3d8b2142e1ab1e89ec33d51b1a03248a099db01ddca1dbda4a22",
+  "declarations": [
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSmoothTestSeparation",
+      "name": "GRWTSK.RiemannHypothesis.BranchSmoothTestSeparation.pointSpike.eq_1",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSmoothTestSeparation",
+      "stored_body_hash": "1050450464",
+      "stored_type_hash": "42980563",
+      "type": "\u2200 (t : \u211d), GRWTSK.RiemannHypothesis.BranchSmoothTestSeparation.pointSpike t = if t = 0 then 1 else 0"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSmoothTestSeparation",
+      "name": "GRWTSK.RiemannHypothesis.BranchSmoothTestSeparation.point_spike_pairings_zero",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSmoothTestSeparation",
+      "stored_body_hash": "3018145772",
+      "stored_type_hash": "3668555279",
+      "type": "(\u2200 (g : \u211d \u2192 \u211d), \u222b (t : \u211d), GRWTSK.RiemannHypothesis.BranchSmoothTestSeparation.pointSpike t * g t = 0) \u2227\n  GRWTSK.RiemannHypothesis.BranchSmoothTestSeparation.pointSpike 0 \u2260 0"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSmoothTestSeparation",
+      "name": "GRWTSK.RiemannHypothesis.BranchSmoothTestSeparation.pointSpike",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSmoothTestSeparation",
+      "stored_body_hash": "2274744268",
+      "stored_type_hash": "3468892319",
+      "type": "\u211d \u2192 \u211d"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSmoothTestSeparation",
+      "name": "GRWTSK.RiemannHypothesis.BranchSmoothTestSeparation.eq_zero_on_of_smooth_test_pairings_zero",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSmoothTestSeparation",
+      "stored_body_hash": "3009855301",
+      "stored_type_hash": "4214374507",
+      "type": "\u2200 {f : \u211d \u2192 \u211d} {s : Set \u211d},\n  Continuous f \u2192\n    IsOpen s \u2192\n      (\u2200 (g : \u211d \u2192 \u211d), HasCompactSupport g \u2192 tsupport g \u2286 s \u2192 ContDiff \u211d (\u2191\u22a4) g \u2192 \u222b (t : \u211d), f t * g t = 0) \u2192\n        \u2200 x \u2208 s, f x = 0"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSmoothTestSeparation",
+      "name": "GRWTSK.RiemannHypothesis.BranchSmoothTestSeparation.exists_smooth_test_of_not_contDiffOn_two",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSmoothTestSeparation",
+      "stored_body_hash": "502757785",
+      "stored_type_hash": "4266453656",
+      "type": "\u2200 {f : \u211d \u2192 \u211d} {s : Set \u211d},\n  Continuous f \u2192\n    IsOpen s \u2192\n      \u00acContDiffOn \u211d 2 f s \u2192\n        \u2203 g,\n          HasCompactSupport g \u2227\n            tsupport g \u2286 s \u2227\n              ContDiff \u211d (\u2191\u22a4) g \u2227\n                MeasureTheory.Integrable (fun t => f t * g t) MeasureTheory.volume \u2227 0 < \u222b (t : \u211d), f t * g t"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSmoothTestSeparation",
+      "name": "GRWTSK.RiemannHypothesis.BranchSmoothTestSeparation.exists_nonzero_of_not_contDiffOn_two",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSmoothTestSeparation",
+      "stored_body_hash": "1870704324",
+      "stored_type_hash": "3358478519",
+      "type": "\u2200 {f : \u211d \u2192 \u211d} {s : Set \u211d}, \u00acContDiffOn \u211d 2 f s \u2192 \u2203 x \u2208 s, f x \u2260 0"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchSmoothTestSeparation",
+      "name": "GRWTSK.RiemannHypothesis.BranchSmoothTestSeparation.exists_smooth_test_positive_pairing",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchSmoothTestSeparation",
+      "stored_body_hash": "2160723254",
+      "stored_type_hash": "2889753094",
+      "type": "\u2200 {f : \u211d \u2192 \u211d} {s : Set \u211d},\n  Continuous f \u2192\n    IsOpen s \u2192\n      \u2200 {x : \u211d},\n        x \u2208 s \u2192\n          f x \u2260 0 \u2192\n            \u2203 g,\n              HasCompactSupport g \u2227\n                tsupport g \u2286 s \u2227\n                  ContDiff \u211d (\u2191\u22a4) g \u2227\n                    MeasureTheory.Integrable (fun t => f t * g t) MeasureTheory.volume \u2227 0 < \u222b (t : \u211d), f t * g t"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchEvenSmoothTest",
+      "name": "GRWTSK.RiemannHypothesis.BranchEvenSmoothTest.exists_even_smooth_test_of_not_contDiffOn_two",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchEvenSmoothTest",
+      "stored_body_hash": "1755231408",
+      "stored_type_hash": "3938455652",
+      "type": "\u2200 {f : \u211d \u2192 \u211d} {s : Set \u211d},\n  Continuous f \u2192\n    Function.Even f \u2192\n      IsOpen s \u2192\n        (\u2200 t \u2208 s, -t \u2208 s) \u2192\n          \u00acContDiffOn \u211d 2 f s \u2192\n            \u2203 g,\n              Function.Even g \u2227\n                HasCompactSupport g \u2227\n                  tsupport g \u2286 s \u2227\n                    ContDiff \u211d (\u2191\u22a4) g \u2227\n                      MeasureTheory.Integrable (fun t => f t * g t) MeasureTheory.volume \u2227 0 < \u222b (t : \u211d), f t * g t"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchEvenSmoothTest",
+      "name": "GRWTSK.RiemannHypothesis.BranchEvenSmoothTest.eq_zero_on_of_even_smooth_test_pairings_zero",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchEvenSmoothTest",
+      "stored_body_hash": "1390552271",
+      "stored_type_hash": "4119538969",
+      "type": "\u2200 {f : \u211d \u2192 \u211d} {s : Set \u211d},\n  Continuous f \u2192\n    Function.Even f \u2192\n      IsOpen s \u2192\n        (\u2200 t \u2208 s, -t \u2208 s) \u2192\n          (\u2200 (g : \u211d \u2192 \u211d),\n              Function.Even g \u2192 HasCompactSupport g \u2192 tsupport g \u2286 s \u2192 ContDiff \u211d (\u2191\u22a4) g \u2192 \u222b (t : \u211d), f t * g t = 0) \u2192\n            \u2200 x \u2208 s, f x = 0"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchEvenSmoothTest",
+      "name": "GRWTSK.RiemannHypothesis.BranchEvenSmoothTest.exists_even_smooth_test_positive_pairing",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchEvenSmoothTest",
+      "stored_body_hash": "3913926802",
+      "stored_type_hash": "2067692991",
+      "type": "\u2200 {f : \u211d \u2192 \u211d} {s : Set \u211d},\n  Continuous f \u2192\n    Function.Even f \u2192\n      IsOpen s \u2192\n        (\u2200 t \u2208 s, -t \u2208 s) \u2192\n          \u2200 {x : \u211d},\n            x \u2208 s \u2192\n              f x \u2260 0 \u2192\n                \u2203 g,\n                  Function.Even g \u2227\n                    HasCompactSupport g \u2227\n                      tsupport g \u2286 s \u2227\n                        ContDiff \u211d (\u2191\u22a4) g \u2227\n                          MeasureTheory.Integrable (fun t => f t * g t) MeasureTheory.volume \u2227 0 < \u222b (t : \u211d), f t * g t"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchPoleAdmissibleTest",
+      "name": "GRWTSK.RiemannHypothesis.PoleAdmissibleTest.poleVariation.eq_1",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchPoleAdmissibleTest",
+      "stored_body_hash": "2070816792",
+      "stored_type_hash": "1279083341",
+      "type": "\u2200 (h : \u211d \u2192 \u211d) (t : \u211d), GRWTSK.RiemannHypothesis.PoleAdmissibleTest.poleVariation h t = deriv (deriv h) t - h t / 4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchPoleAdmissibleTest",
+      "name": "GRWTSK.RiemannHypothesis.PoleAdmissibleTest.poleVariation",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchPoleAdmissibleTest",
+      "stored_body_hash": "1462036897",
+      "stored_type_hash": "2287483187",
+      "type": "(\u211d \u2192 \u211d) \u2192 \u211d \u2192 \u211d"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchPoleAdmissibleTest",
+      "name": "GRWTSK.RiemannHypothesis.PoleAdmissibleTest.integral_second_derivative_exp",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchPoleAdmissibleTest",
+      "stored_body_hash": "4242065517",
+      "stored_type_hash": "2866321645",
+      "type": "\u2200 {h : \u211d \u2192 \u211d},\n  ContDiff \u211d (\u2191\u22a4) h \u2192\n    HasCompactSupport h \u2192\n      \u2200 (c : \u211d), \u222b (t : \u211d), Real.exp (c * t) * deriv (deriv h) t = c ^ 2 * \u222b (t : \u211d), Real.exp (c * t) * h t"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchPoleAdmissibleTest",
+      "name": "GRWTSK.RiemannHypothesis.PoleAdmissibleTest.even_homogeneous_residual_counterexample",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchPoleAdmissibleTest",
+      "stored_body_hash": "1386135269",
+      "stored_type_hash": "3108892864",
+      "type": "have f := fun t => Real.exp (t / 2) + Real.exp (-t / 2);\nContinuous f \u2227\n  Function.Even f \u2227\n    f 0 \u2260 0 \u2227\n      \u2200 (h : \u211d \u2192 \u211d),\n        ContDiff \u211d (\u2191\u22a4) h \u2192\n          HasCompactSupport h \u2192\n            MeasureTheory.Integrable (fun t => f t * GRWTSK.RiemannHypothesis.PoleAdmissibleTest.poleVariation h t)\n                MeasureTheory.volume \u2227\n              \u222b (t : \u211d), f t * GRWTSK.RiemannHypothesis.PoleAdmissibleTest.poleVariation h t = 0"
+    },
+    {
+      "axioms": [],
+      "kind": "theorem",
+      "level_parameters": [
+        "u_1"
+      ],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchPoleAdmissibleTest",
+      "name": "GRWTSK.RiemannHypothesis.PoleAdmissibleTest.pole_variation_exp_moment_zero._simp_1_2",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchPoleAdmissibleTest",
+      "stored_body_hash": "2812466683",
+      "stored_type_hash": "4171977914",
+      "type": "\u2200 {G : Type u_1} [inst : DivInvMonoid G] (a b c : G), a * (b / c) = a * b / c"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchPoleAdmissibleTest",
+      "name": "GRWTSK.RiemannHypothesis.PoleAdmissibleTest.pole_variation_exp_moment_zero",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchPoleAdmissibleTest",
+      "stored_body_hash": "962396021",
+      "stored_type_hash": "2355429550",
+      "type": "\u2200 {h : \u211d \u2192 \u211d},\n  ContDiff \u211d (\u2191\u22a4) h \u2192\n    HasCompactSupport h \u2192\n      \u2200 {c : \u211d},\n        c ^ 2 = 1 / 4 \u2192\n          MeasureTheory.Integrable\n              (fun t => Real.exp (c * t) * GRWTSK.RiemannHypothesis.PoleAdmissibleTest.poleVariation h t)\n              MeasureTheory.volume \u2227\n            \u222b (t : \u211d), Real.exp (c * t) * GRWTSK.RiemannHypothesis.PoleAdmissibleTest.poleVariation h t = 0"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "kind": "theorem",
+      "level_parameters": [],
+      "module": "GRWTSK.RiemannHypothesis.Conversation.BranchPoleAdmissibleTest",
+      "name": "GRWTSK.RiemannHypothesis.PoleAdmissibleTest.poleVariation._proof_1",
+      "resolved_body_equal": true,
+      "resolved_type_equal": true,
+      "storage_module": "GRWTSK.RiemannHypothesis.Conversation.BranchPoleAdmissibleTest",
+      "stored_body_hash": "4284280986",
+      "stored_type_hash": "2205062316",
+      "type": "(3 + 1).AtLeastTwo"
+    }
+  ],
+  "source_inputs_unchanged": true,
+  "native_admission": false,
+  "source_retired": false,
+  "P04": "OPEN",
+  "P05": "OPEN",
+  "RH_proved": false
+}
