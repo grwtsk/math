@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "authority_components": [
+    {
+      "mathematics": "Established ordered monoid products, conjugation and commuting group inversion",
+      "formal_artifacts": "Pinned Lean and mathlib algebraic structures and lemmas",
+      "upstream_revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "source_community": "Lean and mathlib community; named authors retained in upstream source headers"
+    }
+  ],
+  "local_contribution_components": [
+    {
+      "classification": "MECHANICAL_RELOCATION_OR_RENAME",
+      "contribution": "Canonical GRWTSK.Algebra interface with preserved formal contracts"
+    },
+    {
+      "classification": "ACCESS_RAMP",
+      "contribution": "Generic product and gauge helpers retained as a complete declaration family"
+    },
+    {
+      "classification": "CONSUMER_APPLICATION",
+      "contribution": "Specified rational matrix-unit and complex linear-isometry consumers checked with their original premise witnesses"
+    }
+  ],
+  "checked_composition_relations": [
+    "imports",
+    "reproduces",
+    "instantiates",
+    "applies"
+  ],
+  "verified_impact_records": {
+    "mathematical_impact": "No new theorem claimed",
+    "reuse_impact": {
+      "grain": "affected consumer declarations",
+      "count": 3
+    },
+    "formal_impact": {
+      "grain": "one declaration family",
+      "definitions": 2,
+      "theorems": 8
+    },
+    "engineering_impact": "Canonical independently reconstructible local interface"
+  },
+  "frontier_and_nonclaims": [
+    "Local candidate; transactional admission and review pending",
+    "No sole human authorship or mathematical originality claim",
+    "Historical human/machine authoring split incompletely reconstructed",
+    "No unconditional same-order inversion without commutativity",
+    "No analytic estimate, representation equivalence, native execution equivalence or RH proof"
+  ],
+  "evidence_and_version_bindings": {
+    "canonical_source_sha256": "97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d",
+    "Lean": "4.33.0",
+    "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "public_check": "checks/OrderedProductAudit.lean"
+  },
+  "local_direction": "grwtsk contributors",
+  "formalization_and_checking_assistance": "OpenAI Codex",
+  "local_license": "MIT",
+  "status": "LOCAL_VERIFIED_CANDIDATE_ADMISSION_PENDING"
+}
