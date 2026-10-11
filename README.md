@@ -1,3 +1,43 @@
+# Lean mathematical library
+
+All mathematical deliverables in this repository are Lean source. PDF and TeX
+assets are rejected by the repository input gate. Modules are placed by subject
+and mathematical object; existing declaration namespaces remain compatible.
+
+The Möbius response development retains the exact signed source, complete ordered
+cross sum, prime-product realization, Fourier broad estimate, horizon-shell
+split with mature composite echoes, and all-real energy telescope. It proves
+conditional closure and the equivalence of fixed-width settlement with the
+literal existing P04 proposition. HSS, P04 and unconditional RH remain open:
+no uniform signed terminal-window estimate or completed narrow recursion is
+supplied. Universal arbitrary-subset amortization and separate shell or
+unsigned compensation bounds are refuted in the retained development.
+
+Import mathematical object modules directly. The complete development and late
+namespace audit are available through
+`GRWTSK.Logic.Verification.MoebiusResponseLibrary`; this audit does not replace
+complete source-owner verification. The current source manifest is
+`evidence/moebius-response-sources.json`. Prepared source evidence and historical
+receipts are distinct from a fresh native acceptance receipt.
+
+Fresh verification uses the installed Lean binary, the pinned compiled package
+cache, trust zero, fatal warnings, complete public/private/generated owner and
+standard-axiom checks, and ten strict custom-axiom rejection controls. The
+verifier acquires native leases and rejects competing native jobs. Its receipts
+are retained under ignored `.local/checks`. Cached dependency objects are frozen;
+the verifier does not rebuild dependencies or prove object/source provenance.
+Pure Python controls and finite numerical diagnostics are not native proof
+verdicts. Finite diagnostics preserve the signed ledger and expose their error
+bounds; they do not establish the all-scale settlement estimate.
+
+The subject destinations in `docs/math-layout.json` are the shared migration
+reference. Its historical inventory is not the current source manifest. Original
+flat sources, original relocated variants, and failed or stale receipts are
+preserved in the ignored migration archive. The earlier cohort notes below
+retain attribution and historical evidence. Their original focused replay
+commands and receipt paths describe the pre-migration cohorts; use the current
+source manifest and scoped verifier for fresh admission.
+
 # GRWTSK mathematics
 
 A Lean library of exact statements, reusable proofs, counterexamples and explicit open mathematical obligations. Browse results by the subjects and objects used in the source tree.
