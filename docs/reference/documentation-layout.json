@@ -2818,8 +2818,16 @@
       "subject": "Analysis",
       "object": "Fourier/WindowCertificates",
       "primary_source": "GRWTSK/Analysis/Fourier/WindowCertificates.lean",
-      "source_sha256": "ccb66f1f070df085c361665612019f59bcb92f79a3e9fa701c88364e3da15c05",
-      "status": "historical-source-description"
+      "source_sha256": "acf0f90e233095c8e4949a4c22e1f67fa68f4d85e0be5cb99bf9fcfbbea671db",
+      "status": "historical-source-description",
+      "prior_source_sha256": "c616f557739add2b41d0691111f835ce0f181daf4ba383ba84ded3f3e25a216b",
+      "verification_limit": "Import syntax repaired; earlier receipts retained, no new proof acceptance from rebinding",
+      "source_binding_history": [
+        {
+          "sha256": "ccb66f1f070df085c361665612019f59bcb92f79a3e9fa701c88364e3da15c05",
+          "scope": "post-merge import line; superseded by syntax-only import separation"
+        }
+      ]
     },
     "docs/mathematics/Logic/FiniteSequences/prefix-coverage.md": {
       "title": "Prefix service intervals and obligation coverage",
@@ -2827,7 +2835,9 @@
       "object": "FiniteSequences",
       "primary_source": "GRWTSK/Logic/FiniteSequences/PrefixCoverage.lean",
       "source_sha256": "a6ee772e91591f1e51ad01a4a0ff68df9f2455d4c0c168a660159fb0fd55485f",
-      "status": "historical-source-description"
+      "status": "historical-source-description",
+      "prior_source_sha256": "77ed7277b4519ff8fb955e215664ac6d0c22a78e95e38e9ee16d18e6b226a5b3",
+      "verification_limit": "Source rebound after history merge; no new proof acceptance"
     },
     "docs/mathematics/Combinatorics/Sequences/quotas.md": {
       "title": "Integer quota allocation and discrepancy",
@@ -2843,7 +2853,9 @@
       "object": "Fourier/IntegerSeries",
       "primary_source": "GRWTSK/Analysis/Fourier/IntegerSeries.lean",
       "source_sha256": "bd741ea9dd1e4efbc8eab2f77574a73c0cd82d85f2a76d604b14f05cd2f09789",
-      "status": "historical-source-description"
+      "status": "historical-source-description",
+      "prior_source_sha256": "46462643902012c58fa6514c99721701b65655f16fd88a0e82fc1181c94bbe88",
+      "verification_limit": "Source rebound after history merge; no new proof acceptance"
     },
     "docs/mathematics/LinearAlgebra/Schrodinger/sampled-potential.md": {
       "title": "Sampled-potential equality and aliases",
@@ -2851,15 +2863,25 @@
       "object": "Schrodinger",
       "primary_source": "GRWTSK/LinearAlgebra/Schrodinger/SampledPotential.lean",
       "source_sha256": "412246f06dbbe474c57fa268af5751faf5a8315a41d6569d476101b6914aa3f1",
-      "status": "historical-source-description"
+      "status": "historical-source-description",
+      "prior_source_sha256": "dd30ef9e49516fbd3c87d80a743b8ca52cf49fbd4dc6914f954b59ec6753482b",
+      "verification_limit": "Source rebound after history merge; no new proof acceptance"
     },
     "docs/mathematics/Analysis/NormedSpace/reconstruction.md": {
       "title": "Quadratic reconstruction and energy error",
       "subject": "Analysis",
       "object": "NormedSpace",
       "primary_source": "GRWTSK/Analysis/NormedSpace/QuadraticError.lean",
-      "source_sha256": "f37a84e26536edcaa569bb8e722fa66f301da0b711da63dcb70cd912caeec4d6",
-      "status": "historical-source-description"
+      "source_sha256": "79581bb3cf4ce27f646aa513375e0c51912c0ce57f379f1380114e225f0f5980",
+      "status": "historical-source-description",
+      "prior_source_sha256": "663c865cdbe9802281cbb4be82f3c15612330e44c86acd44db9b14dd46d1c7d6",
+      "verification_limit": "Import syntax repaired; earlier receipts retained, no new proof acceptance from rebinding",
+      "source_binding_history": [
+        {
+          "sha256": "f37a84e26536edcaa569bb8e722fa66f301da0b711da63dcb70cd912caeec4d6",
+          "scope": "post-merge import line; superseded by syntax-only import separation"
+        }
+      ]
     },
     "docs/mathematics/NumberTheory/ContinuedFractions/scheduled-denominators.md": {
       "title": "Scheduled digits and continued-fraction denominators",
@@ -2947,7 +2969,9 @@
       "object": "Asymptotics",
       "primary_source": "GRWTSK/Analysis/Asymptotics/PolynomialErrorBound.lean",
       "source_sha256": "7f04746894b0774969d506fde6c8287056361051f29196c8dc23c2f38932b6e6",
-      "status": "historical"
+      "status": "historical-source-description",
+      "prior_source_sha256": "038e3cf31cc90eec7019c91be55ff2cdc4c00aaf82a3791be5d05e4dfae12996",
+      "verification_limit": "Source rebound after history merge; no new proof acceptance"
     },
     "docs/mathematics/NumberTheory/Moebius/matched-pickup.md": {
       "title": "Matched averaging for the closed M\u00f6bius pickup",
@@ -3025,8 +3049,47 @@
     "docs/reference/mathematical-terminology.md": {
       "title": "Mathematical terminology and interface distinctions",
       "category": "reference"
+    },
+    "docs/mathematics/NumberTheory/ArithmeticFunctions/density-correction.md": {
+      "title": "Complete density M\u00f6bius correction",
+      "subject": "NumberTheory",
+      "object": "ArithmeticFunctions",
+      "primary_source": "GRWTSK/NumberTheory/ArithmeticFunctions/DensityMomentTails.lean",
+      "source_sha256": "d495504f0e5f051ed0471530e1bb0f1dfdbb348391e22dc800044ccaf1f5a795",
+      "status": "fresh-selected",
+      "evidence": "evidence/NumberTheory/ArithmeticFunctions/density-arithmetic-checks.json"
+    },
+    "docs/mathematics/NumberTheory/ArithmeticFunctions/signed-cutoffs.md": {
+      "title": "Signed M\u00f6bius cutoff decomposition",
+      "subject": "NumberTheory",
+      "object": "ArithmeticFunctions",
+      "primary_source": "GRWTSK/NumberTheory/ArithmeticFunctions/SquarefreeMoebiusSum.lean",
+      "source_sha256": "eb23e7ba6387bba4daa62f117286b582901426d232c98476e6992e21ef5b89ba",
+      "status": "fresh-selected",
+      "evidence": "evidence/NumberTheory/ArithmeticFunctions/density-arithmetic-checks.json"
+    },
+    "docs/mathematics/NumberTheory/Moebius/LocalCancellation/common-reading.md": {
+      "title": "Common-reading row costs",
+      "subject": "NumberTheory",
+      "object": "Moebius/LocalCancellation",
+      "primary_source": "GRWTSK/NumberTheory/ArithmeticFunctions/MoebiusTruncation.lean",
+      "source_sha256": "923aa8009853029cca709c1f6016119740eaa00e25d59142c2cb487194c85550",
+      "status": "written-argument"
+    },
+    "docs/how-to/density-arithmetic-replay.md": {
+      "title": "Reproduce density arithmetic checks",
+      "category": "how-to"
+    },
+    "docs/mathematics/NumberTheory/LSeries/closed-moebius.md": {
+      "title": "Closed M\u00f6bius Dirichlet polynomials",
+      "subject": "NumberTheory",
+      "object": "LSeries",
+      "primary_source": "GRWTSK/NumberTheory/LSeries/ClosedMoebiusPolynomial.lean",
+      "source_sha256": "17adb06dd4f26f4f323a3c7aeff14cd965b04348432a51f8007775a2c7ad69e9",
+      "status": "fresh-selected",
+      "evidence": "evidence/NumberTheory/LSeries/density-series-checks.json"
     }
   },
   "object_binding_registry": "docs/reference/object-source-bindings.json",
-  "object_binding_registry_sha256": "f723b0a8dd9934b0ceea870caa89556190af9327d335682123b9e88a16701a26"
+  "object_binding_registry_sha256": "297681888ff591c51df6b53dd38cc04fb4418058ddf3fb5d37ac10f5e3807f10"
 }

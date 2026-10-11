@@ -347,3 +347,7 @@ limit premise and cannot replace it.
 ## Source and verification scope
 
 [Source](../../../../../GRWTSK/NumberTheory/Moebius/FiniteLaplaceSums.lean). Status: **written-argument**. [Credit and evidence limits](../../../../reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+
+
+
+This page retains the complete signed cutoff and tail hypotheses. Existing source-specific receipts certify their own revisions; the mathematical integration does not itself supply the remaining uniform arithmetic budget. Human mathematical direction: R.A. Jacob Martone. Derivation and formalization assistance: OpenAI Codex.
