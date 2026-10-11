@@ -60,7 +60,7 @@ CONTROL_ERRORS = {
 }
 CONTROLS = list(CONTROL_ERRORS)
 INPUTS = ORDER + ["checks/Analysis/Energy/Declarations.lean", "scripts/check_ccc_energy.py",
-                  "lean-toolchain", "lakefile.toml", "lake-manifest.json", "docs/ccc-rh-research.md"]
+                  "lean-toolchain", "lakefile.toml", "lake-manifest.json", "docs/mathematics/NumberTheory/Moebius/Energy/growth.md"]
 INPUTS += ["checks/Analysis/Energy/Controls/" + name + ".lean" for name in CONTROLS]
 HASHES = {p: hashlib.sha256((ROOT / p).read_bytes()).hexdigest() for p in INPUTS}
 (RUN / "source-freeze.json").write_text(json.dumps(HASHES, indent=2) + "\n")

@@ -60,7 +60,7 @@ CONTROLS = {
 }
 INPUTS = ORDER + ["checks/NumberTheory/Moebius/PrimitiveIdentification.lean", "scripts/check_original_pickup.py",
                   "lean-toolchain", "lakefile.toml", "lake-manifest.json",
-                  "docs/ccc-original-pickup-identification.md"]
+                  "docs/mathematics/NumberTheory/Moebius/Pickup/identification.md"]
 INPUTS += ["checks/NumberTheory/Moebius/PrimitiveIdentification/Controls/" + name + ".lean" for name in CONTROLS]
 HASHES = {p: hashlib.sha256((ROOT / p).read_bytes()).hexdigest() for p in INPUTS}
 (RUN / "source-freeze.json").write_text(json.dumps(HASHES, indent=2) + "\n")
