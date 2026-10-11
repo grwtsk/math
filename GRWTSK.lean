@@ -189,6 +189,7 @@ import GRWTSK.Analysis.Fourier.AngularFrequencyParseval
 import GRWTSK.NumberTheory.Moebius.DampedRecordingParseval
 import GRWTSK.NumberTheory.Moebius.VerticalLineCriterion
 import GRWTSK.NumberTheory.Moebius.VerticalLineMonotonicity
+import GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks
 import GRWTSK.Analysis.Fourier.FiniteTranslationMultipliers
 import GRWTSK.Analysis.Fourier.MoebiusQuadraticReturn
 import GRWTSK.Analysis.Fourier.PrimePhaseMultiplierBounds
