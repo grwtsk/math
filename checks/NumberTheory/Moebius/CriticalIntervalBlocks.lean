@@ -14,6 +14,13 @@ example {n : ℕ} (hn : 1 ≤ n) :
           Real.exp (-u / 2) * mertensPrefix (Real.exp u)) / 2 :=
   pickupWeightedPrefix_eq_mertens_add_integral hn
 
+example {C β u : ℝ} (hC : 0 ≤ C) (hβ : 0 ≤ β)
+    (hM : ∀ n : ℕ, 1 ≤ n →
+      |pickupMertensPrefix n| ≤ C * (n : ℝ) ^ β)
+    (hu : 0 ≤ u) :
+    |mertensPrefix (Real.exp u)| ≤ C * Real.exp (β * u) :=
+  mertensPrefix_exp_le_of_powerBound hC hβ hM hu
+
 example {n : ℕ} (hn : 1 ≤ n) :
     criticalIntervalBlock n =
       ∫ u in Real.log (n : ℝ)..Real.log ((n + 1 : ℕ) : ℝ),
