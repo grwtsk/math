@@ -195,6 +195,7 @@ import GRWTSK.NumberTheory.Moebius.ReciprocalPrefix
 import GRWTSK.NumberTheory.Moebius.ReciprocalPrefixDensityAdapter
 import GRWTSK.NumberTheory.Moebius.ReciprocalPrefixKernel
 import GRWTSK.NumberTheory.Moebius.CriticalIntervalBlockGrowth
+import GRWTSK.NumberTheory.Moebius.CriticalEndpointDefect
 import GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationEnergy
 import GRWTSK.NumberTheory.Moebius.ReciprocalFluxKernelBounds
 import GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationSummability
