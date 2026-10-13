@@ -200,6 +200,7 @@ import GRWTSK.NumberTheory.Moebius.ReciprocalFluxKernelBounds
 import GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationSummability
 import GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationPowerSaving
 import GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationRecurrence
+import GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationMertensEnergy
 import GRWTSK.Analysis.Fourier.FiniteTranslationMultipliers
 import GRWTSK.Analysis.Fourier.MoebiusQuadraticReturn
 import GRWTSK.Analysis.Fourier.PrimePhaseMultiplierBounds
