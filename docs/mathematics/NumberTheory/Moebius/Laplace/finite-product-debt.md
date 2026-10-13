@@ -375,6 +375,25 @@ $\tfrac12<\gamma<1$ and $n^\beta\le n^\gamma$ for every $n\ge1$, so the
 preceding theorem applies. Thus no artificial lower restriction on a supplied
 nonnegative Mertens exponent remains.
 
+There is now also an exact discrete adapter to the ordinary reciprocal prefix
+
+$$
+R_N=\sum_{n\le N}\frac{\mu(n)}n.
+$$
+
+Finite partial summation gives, with no analytic limit,
+
+$$
+M_N=NR_N-\sum_{k<N}R_k,
+\qquad
+|M_N|\le N|R_N|+\sum_{k<N}|R_k|.
+$$
+
+This identifies the missing strength in the elementary bound
+$|R_N|\le1$: boundedness alone leaves a linear accumulated-history cost. A
+usable density or reciprocal-prefix argument must supply quantitative decay
+or cancellation in that history term, not merely another uniform bound.
+
 The actual omitted function is
 
 $$r_{\sigma,T}(u)=1_{[0,\infty)}(u)e^{-\sigma u}W(u)
