@@ -393,6 +393,16 @@ This identifies the missing strength in the elementary bound
 $|R_N|\le1$: boundedness alone leaves a linear accumulated-history cost. A
 usable density or reciprocal-prefix argument must supply quantitative decay
 or cancellation in that history term, not merely another uniform bound.
+The analytic summation cost is now separately checked: for
+$0<\beta\le1$,
+
+$$
+\sum_{k=1}^{N}k^{\beta-1}\le\frac{N^\beta}{\beta}.
+$$
+
+Consequently a bound $R_k=O(k^{\beta-1})$ has exactly the right accumulated
+scale to produce $M_N=O(N^\beta)$; connecting the actual reciprocal prefix to
+such decay remains the arithmetic obligation.
 
 The actual omitted function is
 
