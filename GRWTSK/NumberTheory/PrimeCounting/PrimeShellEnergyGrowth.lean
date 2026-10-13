@@ -128,7 +128,7 @@ theorem primeBin_upper {S : ℝ} {k p : ℕ} (hp : p ∈ primeBin S k) :
   have hl := (Finset.mem_filter.mp hp).2.2
   have hpp : 0 < (p : ℝ) := by exact_mod_cast hpr.pos
   apply (Real.log_le_iff_le_exp hpp).mp
-  dsimp only [binHorizon] 
+  dsimp only [binHorizon]
   linarith
 
 theorem primeBin_subset_shell (S : ℝ) (k : ℕ) :
