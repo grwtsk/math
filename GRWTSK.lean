@@ -198,6 +198,7 @@ import GRWTSK.NumberTheory.Moebius.CriticalIntervalBlockGrowth
 import GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationEnergy
 import GRWTSK.NumberTheory.Moebius.ReciprocalFluxKernelBounds
 import GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationSummability
+import GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationPowerSaving
 import GRWTSK.Analysis.Fourier.FiniteTranslationMultipliers
 import GRWTSK.Analysis.Fourier.MoebiusQuadraticReturn
 import GRWTSK.Analysis.Fourier.PrimePhaseMultiplierBounds
