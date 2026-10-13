@@ -703,6 +703,33 @@ this premise has the scale $\sum M_j^2/j^{2+\varepsilon}$, weaker than the
 previous positive energy at scale $\sum M_j^2/j^2$ and not a pointwise power
 bound. The premise itself remains an open mean-square cancellation estimate.
 
+The gap can be removed from the hypothesis altogether.
+[`CriticalWeightedMertensSquare`](../../../../../GRWTSK/NumberTheory/Moebius/CriticalWeightedMertensSquare.lean)
+proves the refined bound
+
+$$
+0\le g_n\le\frac1{\sqrt n(n+1)},\qquad
+g_n^2\le\frac1{n(n+1)^2}.
+$$
+
+It follows termwise that
+
+$$
+M_n^2g_n^2(n+1)^{1-\varepsilon}
+\le M_n^2n^{-1}(n+1)^{-1-\varepsilon}.
+$$
+
+Therefore, for any $0<\varepsilon<1$, the explicit premise
+
+$$
+\sum_{n\ge1}M_n^2n^{-1}(n+1)^{-1-\varepsilon}<\infty
+$$
+
+implies the completed critical boundary. This is the current positive
+mean-square target: its weight is asymptotic to $n^{-2-\varepsilon}$, whereas
+the earlier variation energy used the stronger $n^{-2}$ weight. No claim is
+made here that this new weighted Mertens-square series converges.
+
 The elementary coefficient bounds now give a sharp baseline for these exact
 blocks. [`CriticalIntervalBlockGrowth`](../../../../../GRWTSK/NumberTheory/Moebius/CriticalIntervalBlockGrowth.lean)
 proves unconditionally
