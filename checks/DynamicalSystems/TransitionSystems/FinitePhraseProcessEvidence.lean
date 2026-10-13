@@ -39,6 +39,7 @@ private def selected : Array Name := #[
   ``GRWTSK.FinitePhraseProcess.interpreter_preserves_structure,
   ``GRWTSK.FinitePhraseProcess.anchor_unit,
   ``GRWTSK.FinitePhraseProcess.pilot_text_scalar_length,
+  ``GRWTSK.FinitePhraseProcess.pilot_local_compatible,
   ``GRWTSK.FinitePhraseProcess.pilot_phrase_unique_gluing,
   ``GRWTSK.FinitePhraseProcess.pilot_symbol_floor,
   ``GRWTSK.FinitePhraseProcess.pilot_potential_decreases,
