@@ -679,6 +679,30 @@ This formulation moves the remaining problem from pointwise growth of
 $M_n$ to cancellation in a smoothed signed history of $M_n$. It supplies no
 estimate for that transform by itself.
 
+A weighted finite Hardy--Cauchy estimate gives a genuinely weaker positive
+mean-square input. [`CriticalMertensTransformMeanSquare`](../../../../../GRWTSK/NumberTheory/Moebius/CriticalMertensTransformMeanSquare.lean)
+shows that, for $0<\varepsilon\le1$,
+
+$$
+|Q_n|^2\le
+\left(\sum_{j<n}M_j^2g_j^2(j+1)^{1-\varepsilon}\right)
+\frac{n^\varepsilon}{\varepsilon},
+\qquad
+g_j=j^{-1/2}-(j+1)^{-1/2}.
+$$
+
+Consequently, for any $0<\varepsilon<1$, the mean-square premise
+
+$$
+\sum_{j\ge0}M_j^2g_j^2(j+1)^{1-\varepsilon}<\infty
+$$
+
+implies the critical boundary estimate. Indeed, the remaining outer series
+has exponent $\varepsilon-2<-1$. Since $g_j$ is of order $j^{-3/2}$,
+this premise has the scale $\sum M_j^2/j^{2+\varepsilon}$, weaker than the
+previous positive energy at scale $\sum M_j^2/j^2$ and not a pointwise power
+bound. The premise itself remains an open mean-square cancellation estimate.
+
 The elementary coefficient bounds now give a sharp baseline for these exact
 blocks. [`CriticalIntervalBlockGrowth`](../../../../../GRWTSK/NumberTheory/Moebius/CriticalIntervalBlockGrowth.lean)
 proves unconditionally
