@@ -566,6 +566,26 @@ implies the critical boundary estimate. This identity removes any ambiguity
 about where cancellation is needed: it is precisely the arithmetic control
 of the Mertens squares, not cancellation between terms of the final energy.
 
+The exponent transfer is explicit in
+[`MertensSquareEnergyPowerBound`](../../../../../GRWTSK/NumberTheory/Moebius/MertensSquareEnergyPowerBound.lean).
+If $1/2<\beta<1$ and
+
+$$
+|M_n|\le Cn^\beta,
+$$
+
+then the exact positive energy satisfies
+
+$$
+V_n\le
+\left(C^2+\frac{C^2}{2\beta-1}\right)n^{2\beta-1}.
+$$
+
+Thus its variation power-saving parameter is
+$\delta=2-2\beta>0$. This gives a checked alternate passage from the
+classical pointwise Mertens premise to the critical boundary through the new
+positive-energy interface. It remains conditional on the Mertens bound.
+
 The elementary coefficient bounds now give a sharp baseline for these exact
 blocks. [`CriticalIntervalBlockGrowth`](../../../../../GRWTSK/NumberTheory/Moebius/CriticalIntervalBlockGrowth.lean)
 proves unconditionally
