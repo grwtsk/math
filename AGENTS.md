@@ -52,3 +52,12 @@ This rule applies to all existing and incoming code and all workers.
   requests it. This organization instruction grants no remote publication,
   merge, spending, protection-change, or automation-change authority in other
   chats.
+
+## Mathematical documentation
+
+- Place canonical pages at `docs/mathematics/<Subject>/<Object>/<page>.md`, following actual source subjects. Split mixed dossiers by mathematical object; use explicit cross-subject links.
+- Lead with exact statements and hypotheses. Preserve proof explanations, counterexamples, conditional premises, source citations, individual credit and verification limits. No campaign, conversation, grant, branch or continuation chronology may organize mathematical paths or navigation.
+- Keep tutorials, how-to, explanations and source/verification reference separate. Retain raw historical evidence outside canonical reader navigation; never rewrite a historical receipt into current acceptance.
+- When a result changes, update its page, source binding, status, contribution record and downstream links. Do not refresh a source hash to imply replay. Written, cited, conditional, historical and freshly checked results must remain distinguishable.
+- Register every maintained Markdown page in `docs/reference/documentation-layout.json`; regenerate navigation with `python3 -B scripts/check_documentation.py --render`. Before accepting documentation, run that checker normally and with `-O`, and run `scripts/test_documentation_layout.py` normally and with `-O`. Missing sections/pages, source drift and failed hostile controls block the affected documentation claim.
+- Documentation checks establish structural consistency only; theorem admission, complete catalogs and source acceptance require their own evidence. Preserve concurrent source and verifier work.
