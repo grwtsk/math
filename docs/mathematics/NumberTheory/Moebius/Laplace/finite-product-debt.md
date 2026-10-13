@@ -586,6 +586,27 @@ $\delta=2-2\beta>0$. This gives a checked alternate passage from the
 classical pointwise Mertens premise to the critical boundary through the new
 positive-energy interface. It remains conditional on the Mertens bound.
 
+The converse exponent transfer is also exact at the level of existence.
+[`MertensSquareEnergyEquivalence`](../../../../../GRWTSK/NumberTheory/Moebius/MertensSquareEnergyEquivalence.lean)
+formalizes the proposition that a pointwise Mertens estimate holds for some
+$1/2<\beta<1$ and proves
+
+$$
+V_n=O(n^{1-\delta})\text{ for some }\delta>0
+\quad\Longleftrightarrow\quad
+|M_n|=O(n^\beta)\text{ for some }1/2<\beta<1.
+$$
+
+For the reverse direction, $M_n^2\le nV_n$ first gives exponent
+$1-\delta/2$ after taking square roots. Capping the improvement by
+$\varepsilon=\min(\delta/2,1/4)$ produces
+$\beta=1-\varepsilon\in[3/4,1)$ without imposing an artificial upper bound
+on $\delta$. Consequently, the positive-energy route is a useful exact
+reorganization of the arithmetic debt, but is not a weaker sufficient
+condition than a classical pointwise Mertens power saving. Any genuinely
+weaker route must retain signed cancellation that the positive square energy
+has discarded.
+
 The elementary coefficient bounds now give a sharp baseline for these exact
 blocks. [`CriticalIntervalBlockGrowth`](../../../../../GRWTSK/NumberTheory/Moebius/CriticalIntervalBlockGrowth.lean)
 proves unconditionally
