@@ -517,6 +517,32 @@ critical boundary estimate. The proof uses
 $\log n\le n^{\delta/2}/(\delta/2)$; the arithmetic power-saving premise,
 not the logarithm, is the remaining debt.
 
+The variation is not left as an opaque square sum.
+[`ReciprocalPrefixVariationRecurrence`](../../../../../GRWTSK/NumberTheory/Moebius/ReciprocalPrefixVariationRecurrence.lean)
+proves the exact recurrence
+
+$$
+V_{n+1}=V_n+
+2\frac{\mu(n+1)}{n+1}M_n+
+\frac{\mu(n+1)^2}{n+1}.
+$$
+
+Here the history term collapses to $M_n$ by the discrete Abel identity.
+Telescoping gives
+
+$$
+V_n=
+2\sum_{j<n}\frac{\mu(j+1)}{j+1}M_j+
+\sum_{j<n}\frac{\mu(j+1)^2}{j+1}.
+$$
+
+The nonnegative diagonal is at most the full harmonic mass
+$H_n\le1+\log n$. Thus the exact remaining obligation can be stated as
+signed Möbius--Mertens correlation cancellation: the first sum must cancel
+the diagonal up to $O(n^{1-\delta})$ for some $\delta>0$. The formal consumer
+proves that this cancellation estimate implies the variation power saving and
+hence the critical boundary estimate; it does not assert the cancellation.
+
 The elementary coefficient bounds now give a sharp baseline for these exact
 blocks. [`CriticalIntervalBlockGrowth`](../../../../../GRWTSK/NumberTheory/Moebius/CriticalIntervalBlockGrowth.lean)
 proves unconditionally
