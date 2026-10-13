@@ -491,6 +491,32 @@ $4$ is retained in the formal majorant). This supplies a concrete
 mean-square-variation route distinct from pointwise decay. Its summability for
 the actual Möbius reciprocal prefix remains unproved.
 
+[`ReciprocalPrefixVariationPowerSaving`](../../../../../GRWTSK/NumberTheory/Moebius/ReciprocalPrefixVariationPowerSaving.lean)
+makes the threshold quantitative. The elementary reciprocal-prefix bound gives
+
+$$
+V_n=\sum_{k<n}(R_k-R_n)^2\le 4n.
+$$
+
+This linear baseline is still insufficient. If instead there are
+$C\ge0$ and $\delta>0$ such that
+
+$$
+V_n\le Cn^{1-\delta},
+$$
+
+then
+
+$$
+4(4+2\log n)n^{-2}V_n
+\le 4C(4+4/\delta)n^{-1-\delta/2}.
+$$
+
+The right side is summable, so this one mean-square power saving implies the
+critical boundary estimate. The proof uses
+$\log n\le n^{\delta/2}/(\delta/2)$; the arithmetic power-saving premise,
+not the logarithm, is the remaining debt.
+
 The elementary coefficient bounds now give a sharp baseline for these exact
 blocks. [`CriticalIntervalBlockGrowth`](../../../../../GRWTSK/NumberTheory/Moebius/CriticalIntervalBlockGrowth.lean)
 proves unconditionally
