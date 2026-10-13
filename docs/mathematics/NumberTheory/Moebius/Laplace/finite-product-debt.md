@@ -399,6 +399,37 @@ $R_N$ is definitionally the same closed sum as
 independently proved all-real density theorem really does give $|R_N|\le1$
 for the pickup source. It must not be confused with `densityReciprocalPrefix`,
 whose summands contain the additional density prime weight.
+
+There is also a cancellation-preserving alternative to taking absolute values
+in the history term. Define
+
+$$
+w_{u,k}=e^{-u/2}-\bigl(\sqrt{k+1}-\sqrt{k}\bigr).
+$$
+
+Discrete Abel summation and the exact Mertens identity give, for every $n$ and
+$u$,
+
+$$
+A_n-e^{-u/2}M_n
+=\sum_{k<n}w_{u,k}(R_k-R_n).
+$$
+
+The endpoint coefficient and the history weights have total mass zero; this
+is why the constant part of $R$ disappears from the centered formula. On the
+open cell $\log n<u<\log(n+1)$ the actual pickup is twice this finite sum.
+Consequently the critical boundary estimate is equivalent to uniform
+boundedness of the partial sums of the positive blocks
+
+$$
+\int_{\log n}^{\log(n+1)}e^{-u}
+\left(2\sum_{k<n}w_{u,k}(R_k-R_n)\right)^2\,du.
+$$
+
+This exact route uses variation of the bounded prefix rather than demanding
+pointwise decay of the prefix itself. The required total variation-kernel
+energy bound remains open; the identity alone does not estimate it.
+
 The analytic summation cost is now separately checked: for
 $0<\beta\le1$,
 
