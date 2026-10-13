@@ -1,7 +1,14 @@
 /- Copyright (c) 2026 R.A. Jacob Martone. MIT.
 Human direction: R.A. Jacob Martone; OpenAI Codex formalization assistance.
 Classical implications; imported Mathlib contributions retain their authorship. -/
-import GRWTSK.Data.Sampling.Descriptions GRWTSK.Analysis.Fourier.IntegerSeries GRWTSK.Logic.FiniteSequences.PrefixCoverage GRWTSK.LinearAlgebra.Schrodinger.SampledPotential GRWTSK.Algebra.BigOperators.OrderedSquare GRWTSK.Analysis.Fourier.Parseval GRWTSK.Analysis.Asymptotics.PolynomialErrorBound GRWTSK.Algebra.BigOperators.QuadraticCounterexample
+import GRWTSK.Data.Sampling.Descriptions
+import GRWTSK.Analysis.Fourier.IntegerSeries
+import GRWTSK.Logic.FiniteSequences.PrefixCoverage
+import GRWTSK.LinearAlgebra.Schrodinger.SampledPotential
+import GRWTSK.Algebra.BigOperators.OrderedSquare
+import GRWTSK.Analysis.Fourier.Parseval
+import GRWTSK.Analysis.Asymptotics.PolynomialErrorBound
+import GRWTSK.Algebra.BigOperators.QuadraticCounterexample
 set_option autoImplicit false
 noncomputable section
 namespace GRWTSK.Analysis.Waveform
