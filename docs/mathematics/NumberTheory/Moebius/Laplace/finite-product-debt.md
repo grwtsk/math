@@ -440,12 +440,19 @@ $$
 $$
 
 The second estimate is obtained from the first by the checked Abel bridge; the
-third inserts both estimates into the checked square majorant. Thus elementary
-size control reaches exactly a harmonic block allowance. It does not imply a
-uniform bound for the partial block sums: the harmonic majorant is not
-summable. Any completion of the critical route must therefore recover genuine
-decay or cancellation beyond these coefficientwise estimates, for example in
-the centered reciprocal-variation kernel above.
+third inserts both estimates into the checked square majorant. Summing and
+using the standard harmonic-number estimate now also proves
+
+$$
+\sum_{n=1}^{N}B_n\le 40H_N\le40(1+\log N).
+$$
+
+Thus elementary size control reaches exactly a harmonic block allowance and a
+logarithmic finite-horizon energy budget. It does not imply a uniform bound for
+the partial block sums: the harmonic majorant is not summable. Any completion
+of the critical route must therefore recover genuine decay or cancellation
+beyond these coefficientwise estimates, for example in the centered
+reciprocal-variation kernel above.
 
 The analytic summation cost is now separately checked: for
 $0<\beta\le1$,
