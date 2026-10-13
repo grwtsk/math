@@ -194,6 +194,7 @@ import GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks
 import GRWTSK.NumberTheory.Moebius.ReciprocalPrefix
 import GRWTSK.NumberTheory.Moebius.ReciprocalPrefixDensityAdapter
 import GRWTSK.NumberTheory.Moebius.ReciprocalPrefixKernel
+import GRWTSK.NumberTheory.Moebius.CriticalIntervalBlockGrowth
 import GRWTSK.Analysis.Fourier.FiniteTranslationMultipliers
 import GRWTSK.Analysis.Fourier.MoebiusQuadraticReturn
 import GRWTSK.Analysis.Fourier.PrimePhaseMultiplierBounds
