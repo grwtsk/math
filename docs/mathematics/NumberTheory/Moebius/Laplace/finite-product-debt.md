@@ -393,6 +393,12 @@ This identifies the missing strength in the elementary bound
 $|R_N|\le1$: boundedness alone leaves a linear accumulated-history cost. A
 usable density or reciprocal-prefix argument must supply quantitative decay
 or cancellation in that history term, not merely another uniform bound.
+The natural-cutoff source adapter is now exact: the pickup definition of
+$R_N$ is definitionally the same closed sum as
+`densityMobiusReciprocalPrefix` evaluated at the real cutoff $N$. Hence the
+independently proved all-real density theorem really does give $|R_N|\le1$
+for the pickup source. It must not be confused with `densityReciprocalPrefix`,
+whose summands contain the additional density prime weight.
 The analytic summation cost is now separately checked: for
 $0<\beta\le1$,
 
