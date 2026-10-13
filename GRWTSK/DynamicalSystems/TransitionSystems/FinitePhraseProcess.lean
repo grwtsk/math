@@ -443,6 +443,7 @@ theorem interpreter_preserves_structure (operation : ProcessOp) (phrase : Phrase
 inductive PilotPhrase where
   | pivot
   | contemplative
+  | sourceExplanation
   | formalExplanation
   | transitionFirst
   | transitionSecond
@@ -451,6 +452,7 @@ deriving DecidableEq, Repr
 def pilotText : PilotPhrase → String
   | .pivot => "I love you:"
   | .contemplative => "I cannot illuminate the whole table."
+  | .sourceExplanation => "The bound is an average."
   | .formalExplanation =>
       "The upper envelope follows from the potential, not from an average."
   | .transitionFirst => "I cannot illuminate the whole table."
@@ -460,6 +462,7 @@ def pilotText : PilotPhrase → String
 def pilotSymbols : PilotPhrase → ℕ
   | .pivot => 11
   | .contemplative => 36
+  | .sourceExplanation => 24
   | .formalExplanation => 67
   | .transitionFirst => 36
   | .transitionSecond => 20
@@ -491,6 +494,8 @@ inductive PilotState where
   | pivotBoundary
   | contemplativeEntry
   | contemplativeBoundary
+  | sourceEntry
+  | sourceBoundary
   | formalEntry
   | formalBoundary
   | transitionEntry
@@ -501,6 +506,7 @@ deriving DecidableEq, Repr
 inductive PilotEdge where
   | pivot
   | contemplative
+  | sourceExplanation
   | formalExplanation
   | transitionFirst
   | transitionSecond
@@ -509,6 +515,7 @@ deriving DecidableEq, Repr
 def pilotEdge : PilotEdge → WeightedEdge PilotState
   | .pivot => ⟨.pivotEntry, .pivotBoundary, 11⟩
   | .contemplative => ⟨.contemplativeEntry, .contemplativeBoundary, 36⟩
+  | .sourceExplanation => ⟨.sourceEntry, .sourceBoundary, 24⟩
   | .formalExplanation => ⟨.formalEntry, .formalBoundary, 67⟩
   | .transitionFirst => ⟨.transitionEntry, .transitionMiddle, 37⟩
   | .transitionSecond => ⟨.transitionMiddle, .transitionBoundary, 20⟩
@@ -518,6 +525,8 @@ def potential : PilotState → ℕ
   | .pivotBoundary => 0
   | .contemplativeEntry => 36
   | .contemplativeBoundary => 0
+  | .sourceEntry => 24
+  | .sourceBoundary => 0
   | .formalEntry => 67
   | .formalBoundary => 0
   | .transitionEntry => 57
@@ -532,6 +541,7 @@ theorem pilot_potential_decreases (edge : PilotEdge) :
 inductive ConcreteTransition where
   | pivotAssertion
   | contemplativeImage
+  | sourceExplanation
   | formalExplanation
   | bridgeImage
   | bridgeConsequence
@@ -540,6 +550,7 @@ deriving DecidableEq, Repr
 def abstractTransition : ConcreteTransition → PilotEdge
   | .pivotAssertion => .pivot
   | .contemplativeImage => .contemplative
+  | .sourceExplanation => .sourceExplanation
   | .formalExplanation => .formalExplanation
   | .bridgeImage => .transitionFirst
   | .bridgeConsequence => .transitionSecond
@@ -547,6 +558,7 @@ def abstractTransition : ConcreteTransition → PilotEdge
 def transitionPhrase : ConcreteTransition → PilotPhrase
   | .pivotAssertion => .pivot
   | .contemplativeImage => .contemplative
+  | .sourceExplanation => .sourceExplanation
   | .formalExplanation => .formalExplanation
   | .bridgeImage => .transitionFirst
   | .bridgeConsequence => .transitionSecond
@@ -575,6 +587,12 @@ theorem contemplativePath :
     (Path.cons (edge := pilotEdge) PilotEdge.contemplative
       (Path.nil (edge := pilotEdge) PilotState.contemplativeBoundary))
 
+theorem sourceExplanationPath :
+    Path pilotEdge .sourceEntry .sourceBoundary 24 := by
+  simpa [pilotEdge] using
+    (Path.cons (edge := pilotEdge) PilotEdge.sourceExplanation
+      (Path.nil (edge := pilotEdge) PilotState.sourceBoundary))
+
 theorem formalPath : Path pilotEdge .formalEntry .formalBoundary 67 := by
   simpa [pilotEdge] using
     (Path.cons (edge := pilotEdge) PilotEdge.formalExplanation
@@ -592,6 +610,9 @@ theorem pivot_stopping_envelope : 11 ≤ potential .pivotEntry := by
 theorem contemplative_stopping_envelope : 36 ≤ potential .contemplativeEntry := by
   exact contemplativePath.cost_le_entry_potential potential pilot_potential_decreases rfl
 
+theorem source_explanation_stopping_envelope : 24 ≤ potential .sourceEntry := by
+  exact sourceExplanationPath.cost_le_entry_potential potential pilot_potential_decreases rfl
+
 theorem formal_stopping_envelope : 67 ≤ potential .formalEntry := by
   exact formalPath.cost_le_entry_potential potential pilot_potential_decreases rfl
 
@@ -603,6 +624,7 @@ theorem pilot_contract (phrase : PilotPhrase) :
       pilotSymbols phrase ≤ match phrase with
         | .pivot => potential .pivotEntry
         | .contemplative => potential .contemplativeEntry
+        | .sourceExplanation => potential .sourceEntry
         | .formalExplanation => potential .formalEntry
         | .transitionFirst => potential .transitionEntry
         | .transitionSecond => potential .transitionMiddle := by
