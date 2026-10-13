@@ -5,6 +5,7 @@ import GRWTSK.Algebra.OrderedProduct
 import GRWTSK.Algebra.OrderedProductGauge
 import GRWTSK.Analysis.Asymptotics.PolynomialErrorBound
 import GRWTSK.Analysis.Asymptotics.PolynomialClosure
+import GRWTSK.Analysis.Asymptotics.FinitePowerSum
 import GRWTSK.NumberTheory.Moebius.MertensPrimitive
 import GRWTSK.Analysis.LaplaceTransform.PolynomialEnergy
 import GRWTSK.Analysis.Asymptotics.PolynomialSubexponential
