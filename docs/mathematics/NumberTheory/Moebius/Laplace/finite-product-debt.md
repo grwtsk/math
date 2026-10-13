@@ -400,9 +400,24 @@ $$
 \sum_{k=1}^{N}k^{\beta-1}\le\frac{N^\beta}{\beta}.
 $$
 
-Consequently a bound $R_k=O(k^{\beta-1})$ has exactly the right accumulated
-scale to produce $M_N=O(N^\beta)$; connecting the actual reciprocal prefix to
-such decay remains the arithmetic obligation.
+This transfer is now formalized with constants. If $C\ge0$, $0<\beta<1$, and
+
+$$
+|R_n|\le Cn^{\beta-1}\qquad(n\ge1),
+$$
+
+then the exact partial-summation identity and the finite power-sum bound give
+
+$$
+|M_N|\le\left(C+\frac C\beta\right)N^\beta.
+$$
+
+The existing full-range Mertens consumer therefore yields the completed
+critical boundary directly from reciprocal-prefix decay. This completes the
+analytic composition; proving that the actual signed reciprocal Möbius prefix
+has any such decay remains the arithmetic obligation. In particular, the
+elementary bound $|R_N|\le1$ does not satisfy this premise for any
+$0<\beta<1$.
 
 The actual omitted function is
 
