@@ -430,6 +430,28 @@ This exact route uses variation of the bounded prefix rather than demanding
 pointwise decay of the prefix itself. The required total variation-kernel
 energy bound remains open; the identity alone does not estimate it.
 
+Finite Cauchy--Schwarz now separates this open estimate into deterministic
+kernel mass and arithmetic square variation. Define
+
+$$
+Q_n(u)=\sum_{k<n}w_{u,k}^2,
+\qquad
+V_n=\sum_{k<n}(R_k-R_n)^2.
+$$
+
+[`ReciprocalPrefixVariationEnergy`](../../../../../GRWTSK/NumberTheory/Moebius/ReciprocalPrefixVariationEnergy.lean)
+proves the positive majorization
+
+$$
+B_n\le
+\int_{\log n}^{\log(n+1)}e^{-u}\,4Q_n(u)V_n\,du.
+$$
+
+Uniform boundedness of the partial sums of these Cauchy blocks is therefore a
+checked sufficient condition for the completed critical boundary. This is a
+new mean-square variation target, not an established estimate; in particular,
+the pointwise bound $|R_n|\le1$ alone does not pay it.
+
 The elementary coefficient bounds now give a sharp baseline for these exact
 blocks. [`CriticalIntervalBlockGrowth`](../../../../../GRWTSK/NumberTheory/Moebius/CriticalIntervalBlockGrowth.lean)
 proves unconditionally
