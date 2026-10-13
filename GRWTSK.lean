@@ -202,6 +202,7 @@ import GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationPowerSaving
 import GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationRecurrence
 import GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationMertensEnergy
 import GRWTSK.NumberTheory.Moebius.MertensSquareEnergyPowerBound
+import GRWTSK.NumberTheory.Moebius.MertensSquareEnergyEquivalence
 import GRWTSK.Analysis.Fourier.FiniteTranslationMultipliers
 import GRWTSK.Analysis.Fourier.MoebiusQuadraticReturn
 import GRWTSK.Analysis.Fourier.PrimePhaseMultiplierBounds
