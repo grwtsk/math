@@ -12,8 +12,9 @@ import Mathlib.Tactic.NormNum
 This module formalizes the finite mathematics used by the phrase-process pilot:
 a weighted transition system with a decreasing natural-valued potential, the
 unique gluing law for function-valued local sections, an exact finite codec, a
-certificate-relative reconstruction, and a non-identity wording transformation
-that preserves the declared structural observations.
+certificate-relative reconstruction, and a non-identity correction that
+preserves the declared frame-and-role observations while changing its recorded
+proposition.
 
 Concrete Unicode segmentation remains an owner-side computation. The natural
 symbol costs below are inputs to this formal model, not a claim that Lean has
@@ -298,7 +299,7 @@ theorem encode_decode (encoded : EncodedCore) : encode (decode encoded) = encode
   cases encoded
   rfl
 
-structure StructuralObservations where
+structure FrameRoleObservations where
   speaker : Participant
   addressee : Participant
   relation : String
@@ -306,17 +307,17 @@ structure StructuralObservations where
   scope : ClaimScope
 deriving DecidableEq, Repr
 
-def observe (phrase : PhraseCore) : StructuralObservations where
+def observeFrameRole (phrase : PhraseCore) : FrameRoleObservations where
   speaker := phrase.speaker
   addressee := phrase.addressee
   relation := phrase.relation
   continuationOpen := phrase.continuationOpen
   scope := phrase.scope
 
-def StructuralEquivalent (left right : PhraseCore) : Prop :=
-  observe left = observe right
+def FrameRoleEquivalent (left right : PhraseCore) : Prop :=
+  observeFrameRole left = observeFrameRole right
 
-def reconstruct (observations : StructuralObservations) : PhraseCore where
+def reconstruct (observations : FrameRoleObservations) : PhraseCore where
   wording := match observations.scope with
     | .contemplative => "I keep the relation open."
     | .structural => "The potential bounds the admitted path."
@@ -326,52 +327,101 @@ def reconstruct (observations : StructuralObservations) : PhraseCore where
   continuationOpen := observations.continuationOpen
   scope := observations.scope
 
-theorem observe_reconstruct (observations : StructuralObservations) :
-    observe (reconstruct observations) = observations := by
+theorem observe_reconstruct (observations : FrameRoleObservations) :
+    observeFrameRole (reconstruct observations) = observations := by
   cases observations
   rfl
 
 theorem reconstruct_observe_equivalent (phrase : PhraseCore) :
-    StructuralEquivalent (reconstruct (observe phrase)) phrase :=
-  observe_reconstruct (observe phrase)
+    FrameRoleEquivalent (reconstruct (observeFrameRole phrase)) phrase :=
+  observe_reconstruct (observeFrameRole phrase)
 
-theorem observation_minimality (left right : PhraseCore) :
-    observe left = observe right ↔ StructuralEquivalent left right :=
+theorem observation_separation (left right : PhraseCore) :
+    observeFrameRole left = observeFrameRole right ↔ FrameRoleEquivalent left right :=
   Iff.rfl
+
+structure SufficientRepresentation (Q : Type*) where
+  compress : PhraseCore → Q
+  reconstruct : Q → PhraseCore
+  certificate : ∀ source,
+    FrameRoleEquivalent (reconstruct (compress source)) source
+
+def factorToFrameRole {Q : Type*} (representation : SufficientRepresentation Q) :
+    Q → FrameRoleObservations :=
+  fun compressed => observeFrameRole (representation.reconstruct compressed)
+
+theorem frame_role_universal_factorization {Q : Type*}
+    (representation : SufficientRepresentation Q) (source : PhraseCore) :
+    factorToFrameRole representation (representation.compress source) =
+      observeFrameRole source :=
+  representation.certificate source
+
+theorem frame_role_factor_unique_on_carrier {Q : Type*}
+    (representation : SufficientRepresentation Q)
+    (candidate : Q → FrameRoleObservations)
+    (candidateFactors : ∀ source,
+      candidate (representation.compress source) = observeFrameRole source)
+    (source : PhraseCore) :
+    candidate (representation.compress source) =
+      factorToFrameRole representation (representation.compress source) := by
+  rw [candidateFactors, frame_role_universal_factorization]
 
 structure StructuralQuine where
   quotedCore : String
-  compress : PhraseCore → StructuralObservations
-  reconstruct : StructuralObservations → PhraseCore
+  compress : PhraseCore → FrameRoleObservations
+  reconstruct : FrameRoleObservations → PhraseCore
   exactCarrier : ∀ compressed, compress (reconstruct compressed) = compressed
   certificateReconstruction : ∀ source,
-    StructuralEquivalent (reconstruct (compress source)) source
-  minimality : ∀ left right,
-    compress left = compress right ↔ StructuralEquivalent left right
+    FrameRoleEquivalent (reconstruct (compress source)) source
+  separation : ∀ left right,
+    compress left = compress right ↔ FrameRoleEquivalent left right
 
 def pilotStructuralQuine : StructuralQuine where
   quotedCore :=
     "observe speaker addressee relation continuation scope; reconstruct canonical wording"
-  compress := observe
+  compress := observeFrameRole
   reconstruct := reconstruct
   exactCarrier := observe_reconstruct
   certificateReconstruction := reconstruct_observe_equivalent
-  minimality := observation_minimality
+  separation := observation_separation
 
-theorem pilot_quine_exact_carrier (compressed : StructuralObservations) :
+theorem pilot_quine_exact_carrier (compressed : FrameRoleObservations) :
     pilotStructuralQuine.compress
       (pilotStructuralQuine.reconstruct compressed) = compressed :=
   pilotStructuralQuine.exactCarrier compressed
 
 theorem pilot_quine_certificate_reconstruction (source : PhraseCore) :
-    StructuralEquivalent
+    FrameRoleEquivalent
       (pilotStructuralQuine.reconstruct (pilotStructuralQuine.compress source)) source :=
   pilotStructuralQuine.certificateReconstruction source
 
-theorem pilot_quine_minimality (left right : PhraseCore) :
+theorem pilot_quine_separation (left right : PhraseCore) :
     pilotStructuralQuine.compress left = pilotStructuralQuine.compress right ↔
-      StructuralEquivalent left right :=
-  pilotStructuralQuine.minimality left right
+      FrameRoleEquivalent left right :=
+  pilotStructuralQuine.separation left right
+
+def pilotRepresentation : SufficientRepresentation FrameRoleObservations where
+  compress := observeFrameRole
+  reconstruct := reconstruct
+  certificate := reconstruct_observe_equivalent
+
+theorem pilot_quine_universal_factorization (source : PhraseCore) :
+    factorToFrameRole pilotRepresentation (pilotRepresentation.compress source) =
+      observeFrameRole source :=
+  frame_role_universal_factorization pilotRepresentation source
+
+inductive BoundProposition where
+  | averageDeterminesBound
+  | potentialDeterminesEnvelope
+deriving DecidableEq, Repr
+
+structure PropositionCorrection where
+  source : PhraseCore
+  target : PhraseCore
+  prior : BoundProposition
+  revised : BoundProposition
+  frameRolePreserved : FrameRoleEquivalent source target
+  propositionChanged : prior ≠ revised
 
 def sourceExplanation : PhraseCore where
   wording := "The bound is an average."
@@ -401,42 +451,84 @@ theorem clarify_source_is_revision : clarifyBound sourceExplanation = revisedExp
 theorem source_and_revision_are_not_exact : sourceExplanation ≠ revisedExplanation := by
   decide
 
-theorem source_and_revision_are_structurally_equivalent :
-    StructuralEquivalent sourceExplanation revisedExplanation := by
+theorem source_and_revision_preserve_frame_role :
+    FrameRoleEquivalent sourceExplanation revisedExplanation := by
   rfl
 
+def boundCorrection : PropositionCorrection where
+  source := sourceExplanation
+  target := revisedExplanation
+  prior := .averageDeterminesBound
+  revised := .potentialDeterminesEnvelope
+  frameRolePreserved := source_and_revision_preserve_frame_role
+  propositionChanged := by decide
+
+theorem bound_correction_changes_proposition :
+    boundCorrection.prior ≠ boundCorrection.revised :=
+  boundCorrection.propositionChanged
+
 theorem clarify_transition_congruence {left right : PhraseCore}
-    (equivalent : StructuralEquivalent left right) :
-    StructuralEquivalent (clarifyBound left) (clarifyBound right) := by
+    (equivalent : FrameRoleEquivalent left right) :
+    FrameRoleEquivalent (clarifyBound left) (clarifyBound right) := by
   exact equivalent
 
-def inducedClarify (compressed : StructuralObservations) : StructuralObservations :=
-  observe (clarifyBound (reconstruct compressed))
+def inducedClarify (compressed : FrameRoleObservations) : FrameRoleObservations :=
+  observeFrameRole (clarifyBound (reconstruct compressed))
 
 theorem induced_clarify_commutes (phrase : PhraseCore) :
-    inducedClarify (observe phrase) = observe (clarifyBound phrase) := by
+    inducedClarify (observeFrameRole phrase) = observeFrameRole (clarifyBound phrase) := by
   rfl
 
 inductive ProcessOp where
+  | quoteSelfCore
   | inspect
   | reconstruct
   | clarify
+  | compose
   | project
 deriving DecidableEq, Repr
 
 def interpret : ProcessOp → PhraseCore → PhraseCore
+  | .quoteSelfCore, phrase => phrase
   | .inspect, phrase => phrase
-  | .reconstruct, phrase => reconstruct (observe phrase)
+  | .reconstruct, phrase => reconstruct (observeFrameRole phrase)
   | .clarify, phrase => clarifyBound phrase
-  | .project, phrase => reconstruct (observe phrase)
+  | .compose, phrase => phrase
+  | .project, phrase => reconstruct (observeFrameRole phrase)
 
 theorem interpreter_preserves_structure (operation : ProcessOp) (phrase : PhraseCore) :
-    StructuralEquivalent (interpret operation phrase) phrase := by
+    FrameRoleEquivalent (interpret operation phrase) phrase := by
   cases operation with
+  | quoteSelfCore => rfl
   | inspect => rfl
   | reconstruct => exact reconstruct_observe_equivalent phrase
   | clarify => rfl
+  | compose => rfl
   | project => exact reconstruct_observe_equivalent phrase
+
+inductive TransportProcessOp where
+  | quoteSelfCore
+  | reconstruct
+  | applyClarification
+  | compose
+  | project
+deriving DecidableEq, Repr
+
+def lowerTransportOperation : TransportProcessOp → ProcessOp
+  | .quoteSelfCore => .quoteSelfCore
+  | .reconstruct => .reconstruct
+  | .applyClarification => .clarify
+  | .compose => .compose
+  | .project => .project
+
+def interpretTransport (operation : TransportProcessOp) (phrase : PhraseCore) : PhraseCore :=
+  interpret (lowerTransportOperation operation) phrase
+
+theorem transport_interpreter_correspondence
+    (operation : TransportProcessOp) (phrase : PhraseCore) :
+    interpretTransport operation phrase =
+      interpret (lowerTransportOperation operation) phrase := by
+  rfl
 
 /-! ## Executable finite pilot -/
 
@@ -494,6 +586,117 @@ theorem pilot_phrase_unique_gluing (phrase : PilotPhrase) :
           pilotLocalSectionFor phrase i point member :=
   function_sections_unique_gluing pivotCover (pilotLocalSectionFor phrase)
     (pilot_local_compatible phrase)
+
+structure LampComposition where
+  first : PilotPhrase
+  second : PilotPhrase
+  separator : String
+  speaker : Participant
+  addressee : Participant
+  continuationOpen : Bool
+  orderedActions : List String
+deriving DecidableEq, Repr
+
+def lampComposition : LampComposition where
+  first := .transitionFirst
+  second := .transitionSecond
+  separator := " "
+  speaker := .narrator
+  addressee := .beloved
+  continuationOpen := true
+  orderedActions := ["illuminate", "move-lamp"]
+
+def LampComposition.Valid (composition : LampComposition) : Prop :=
+  composition.first = .transitionFirst ∧
+  composition.second = .transitionSecond ∧
+  composition.separator = " " ∧
+  composition.speaker = .narrator ∧
+  composition.addressee = .beloved ∧
+  composition.continuationOpen = true ∧
+  composition.orderedActions = ["illuminate", "move-lamp"] ∧
+  pilotRelation composition.first = composition.orderedActions.head? ∧
+  pilotRelation composition.second = composition.orderedActions.getLast? ∧
+  pilotRelation composition.first ≠ pilotRelation composition.second
+
+theorem lamp_composition_application : lampComposition.Valid := by
+  simp [LampComposition.Valid, lampComposition, pilotRelation]
+
+theorem lamp_composition_preserves_shared_bindings :
+    pilotSectionFor lampComposition.first .speaker (by simp) =
+        .participant lampComposition.speaker ∧
+      pilotSectionFor lampComposition.second .speaker (by simp) =
+        .participant lampComposition.speaker ∧
+      pilotSectionFor lampComposition.first .addressee (by simp) =
+        .participant lampComposition.addressee ∧
+      pilotSectionFor lampComposition.second .addressee (by simp) =
+        .participant lampComposition.addressee ∧
+      pilotSectionFor lampComposition.first .continuation (by simp) =
+        .continuation lampComposition.continuationOpen ∧
+      pilotSectionFor lampComposition.second .continuation (by simp) =
+        .continuation lampComposition.continuationOpen := by
+  decide
+
+theorem lamp_composition_retains_ordered_distinct_actions :
+    lampComposition.orderedActions = ["illuminate", "move-lamp"] ∧
+      pilotRelation lampComposition.first = "illuminate" ∧
+      pilotRelation lampComposition.second = "move-lamp" ∧
+      pilotRelation lampComposition.first ≠ pilotRelation lampComposition.second := by
+  decide
+
+theorem lamp_pair_unique_local_gluing :
+    (∃! firstGlued : Section BindingValue (Set.univ : Set ContextPoint),
+      ∀ i point (member : point ∈ pivotPiece i),
+        firstGlued point (pivotCover.included i member) =
+          pilotLocalSectionFor lampComposition.first i point member) ∧
+    (∃! secondGlued : Section BindingValue (Set.univ : Set ContextPoint),
+      ∀ i point (member : point ∈ pivotPiece i),
+        secondGlued point (pivotCover.included i member) =
+          pilotLocalSectionFor lampComposition.second i point member) := by
+  exact ⟨pilot_phrase_unique_gluing lampComposition.first,
+    pilot_phrase_unique_gluing lampComposition.second⟩
+
+inductive LampRealization where
+  | authored
+  | compact
+  | speakerShift
+deriving DecidableEq, Repr
+
+def lampRealizationText : LampRealization → String
+  | .authored => "I cannot illuminate the whole table. I can move the lamp."
+  | .compact => "I cannot light the whole table. I can move the lamp."
+  | .speakerShift => "You cannot light the whole table. I can move the lamp."
+
+def lampRealizationSpeaker : LampRealization → Participant
+  | .authored | .compact => .narrator
+  | .speakerShift => .beloved
+
+def lampRealizationSymbols : LampRealization → ℕ
+  | .authored => 57
+  | .compact => 52
+  | .speakerShift => 54
+
+def lampRealizationAdmitted (realization : LampRealization) : Prop :=
+  lampRealizationSpeaker realization = .narrator ∧
+    lampRealizationSymbols realization ≤ 57
+
+theorem lamp_realization_scalar_lengths (realization : LampRealization) :
+    (lampRealizationText realization).length = lampRealizationSymbols realization := by
+  cases realization <;> decide
+
+theorem two_legal_lamp_realizations :
+    LampRealization.authored ≠ .compact ∧
+      lampRealizationAdmitted .authored ∧
+      lampRealizationAdmitted .compact := by
+  simp [lampRealizationAdmitted, lampRealizationSpeaker, lampRealizationSymbols]
+
+theorem lamp_realization_class_envelope {realization : LampRealization}
+    (admitted : lampRealizationAdmitted realization) :
+    lampRealizationSymbols realization ≤ 57 :=
+  admitted.2
+
+theorem speaker_shift_rejected :
+    ¬ lampRealizationAdmitted .speakerShift := by
+  simp [lampRealizationAdmitted, lampRealizationSpeaker]
 
 /-- These ASCII pilot costs are independently recomputed by the owner metric. -/
 def pilotSymbols : PilotPhrase → ℕ
