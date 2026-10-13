@@ -26,6 +26,7 @@ open GRWTSK.FinitePhraseProcess
 #check @concrete_transition_cost_coverage
 #check @pivot_stopping_envelope
 #check @contemplative_stopping_envelope
+#check @source_explanation_stopping_envelope
 #check @formal_stopping_envelope
 #check @transitional_pair_stopping_envelope
 #check @pilot_contract

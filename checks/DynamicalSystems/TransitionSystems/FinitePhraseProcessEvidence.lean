@@ -45,6 +45,7 @@ private def selected : Array Name := #[
   ``GRWTSK.FinitePhraseProcess.concrete_transition_cost_coverage,
   ``GRWTSK.FinitePhraseProcess.pivot_stopping_envelope,
   ``GRWTSK.FinitePhraseProcess.contemplative_stopping_envelope,
+  ``GRWTSK.FinitePhraseProcess.source_explanation_stopping_envelope,
   ``GRWTSK.FinitePhraseProcess.formal_stopping_envelope,
   ``GRWTSK.FinitePhraseProcess.transitional_pair_stopping_envelope,
   ``GRWTSK.FinitePhraseProcess.pilot_contract
