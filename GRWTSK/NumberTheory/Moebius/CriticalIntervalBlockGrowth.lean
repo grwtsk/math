@@ -2,6 +2,7 @@
 Human mathematical direction: R.A. Jacob Martone; OpenAI Codex formalization assistance.
 Mathlib imports retain upstream authorship and Apache-2.0 licensing. -/
 import GRWTSK.NumberTheory.Moebius.ReciprocalPrefixKernel
+import Mathlib.NumberTheory.Harmonic.Bounds
 
 /-!
 # Elementary growth of critical Möbius interval blocks
@@ -102,8 +103,36 @@ theorem criticalIntervalBlock_le_harmonic {n : ℕ} (hn : 1 ≤ n) :
           gcongr
         _ = 40 / (n : ℝ) := by ring
 
+/-- The elementary block estimate sums to at most forty times the harmonic
+number.  This is finite-horizon control, not a horizon-uniform bound. -/
+theorem criticalIntervalBlockSum_le_harmonic (N : ℕ) :
+    criticalIntervalBlockSum N ≤ 40 * (harmonic N : ℝ) := by
+  unfold criticalIntervalBlockSum
+  calc
+    (∑ n ∈ Finset.Icc 1 N, criticalIntervalBlock n) ≤
+        ∑ n ∈ Finset.Icc 1 N, 40 / (n : ℝ) := by
+      apply Finset.sum_le_sum
+      intro n hn
+      exact criticalIntervalBlock_le_harmonic (Finset.mem_Icc.mp hn).1
+    _ = 40 * (harmonic N : ℝ) := by
+      rw [harmonic_eq_sum_Icc, Rat.cast_sum]
+      simp_rw [Rat.cast_inv, Rat.cast_natCast, Finset.mul_sum, div_eq_mul_inv]
+
+/-- In particular, the elementary critical block budget grows at most
+logarithmically with the arithmetic horizon. -/
+theorem criticalIntervalBlockSum_le_log (N : ℕ) :
+    criticalIntervalBlockSum N ≤ 40 * (1 + Real.log N) := by
+  calc
+    criticalIntervalBlockSum N ≤ 40 * (harmonic N : ℝ) :=
+      criticalIntervalBlockSum_le_harmonic N
+    _ ≤ 40 * (1 + Real.log N) := by
+      gcongr
+      exact harmonic_le_one_add_log N
+
 end GRWTSK.NumberTheory.Moebius.CriticalIntervalBlockGrowth
 
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlockGrowth.pickupMertensPrefix_abs_le_natCast
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlockGrowth.pickupWeightedPrefix_abs_le_two_sqrt
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlockGrowth.criticalIntervalBlock_le_harmonic
+#print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlockGrowth.criticalIntervalBlockSum_le_harmonic
+#print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlockGrowth.criticalIntervalBlockSum_le_log
