@@ -22,6 +22,7 @@ open GRWTSK.FinitePhraseProcess
 #check @interpreter_preserves_structure
 #check @anchor_unit
 #check @pilot_text_scalar_length
+#check @pilot_phrase_unique_gluing
 #check @pilot_potential_decreases
 #check @concrete_transition_cost_coverage
 #check @pivot_stopping_envelope
