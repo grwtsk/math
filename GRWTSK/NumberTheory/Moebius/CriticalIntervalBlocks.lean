@@ -723,6 +723,26 @@ theorem criticalBoundary_of_mertensPowerSaving {C β : ℝ}
   · exact pickupWeightedPrefix_le_of_mertensPowerBound hC hβlower hM
   · exact hM
 
+/-- Any nonnegative strict power saving for the Mertens prefix suffices.  A
+small exponent is first enlarged to `(β + 2) / 3`, which lies strictly between
+`1 / 2` and `1`; this loses no information needed by the critical consumer. -/
+theorem criticalBoundary_of_nonnegative_mertensPowerSaving {C β : ℝ}
+    (hC : 0 ≤ C) (hβnonneg : 0 ≤ β) (hβupper : β < 1)
+    (hM : ∀ n : ℕ, 1 ≤ n →
+      |pickupMertensPrefix n| ≤ C * (n : ℝ) ^ β) :
+    CriticalBoundaryVerticalLineUniform := by
+  have hγlower : 1 / 2 < (β + 2) / 3 := by linarith
+  have hγupper : (β + 2) / 3 < 1 := by linarith
+  apply criticalBoundary_of_mertensPowerSaving hC hγlower hγupper
+  intro n hn
+  calc
+    |pickupMertensPrefix n| ≤ C * (n : ℝ) ^ β := hM n hn
+    _ ≤ C * (n : ℝ) ^ ((β + 2) / 3) := by
+      apply mul_le_mul_of_nonneg_left _ hC
+      apply Real.rpow_le_rpow_of_exponent_le
+      · exact_mod_cast hn
+      · linarith
+
 /-- Any solution of the countable RH-equivalent reciprocal-line problem must,
 in particular, settle the explicit critical arithmetic block problem. -/
 theorem criticalBoundary_of_criticalReciprocal
@@ -747,5 +767,6 @@ end GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalBoundary_of_prefixSquareComponents
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalBoundary_of_prefixPowerBounds
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalBoundary_of_mertensPowerSaving
+#print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalBoundary_of_nonnegative_mertensPowerSaving
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalIntervalBlockSum_eq_verticalLineMass
 #print axioms GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalBoundary_iff_intervalBlockUniform

@@ -101,6 +101,13 @@ example {C β : ℝ}
     CriticalBoundaryVerticalLineUniform :=
   criticalBoundary_of_mertensPowerSaving hC hβlower hβupper hM
 
+example {C β : ℝ}
+    (hC : 0 ≤ C) (hβnonneg : 0 ≤ β) (hβupper : β < 1)
+    (hM : ∀ n : ℕ, 1 ≤ n →
+      |pickupMertensPrefix n| ≤ C * (n : ℝ) ^ β) :
+    CriticalBoundaryVerticalLineUniform :=
+  criticalBoundary_of_nonnegative_mertensPowerSaving hC hβnonneg hβupper hM
+
 example :
     CriticalBoundaryVerticalLineUniform ↔ CriticalIntervalBlockUniform :=
   criticalBoundary_iff_intervalBlockUniform
