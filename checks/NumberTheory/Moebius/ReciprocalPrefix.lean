@@ -17,6 +17,21 @@ example (N : ℕ) :
         ∑ k ∈ Finset.range N, |pickupReciprocalPrefix k| :=
   pickupMertensPrefix_abs_le_reciprocalPartialSummation N
 
+example {C β : ℝ}
+    (hC : 0 ≤ C) (hβ0 : 0 < β) (hβ1 : β < 1)
+    (hR : ∀ n : ℕ, 1 ≤ n →
+      |pickupReciprocalPrefix n| ≤ C * (n : ℝ) ^ (β - 1)) :
+    ∀ n : ℕ, 1 ≤ n →
+      |pickupMertensPrefix n| ≤ (C + C / β) * (n : ℝ) ^ β :=
+  pickupMertensPrefix_le_of_reciprocalPrefixDecay hC hβ0 hβ1 hR
+
+example {C β : ℝ}
+    (hC : 0 ≤ C) (hβ0 : 0 < β) (hβ1 : β < 1)
+    (hR : ∀ n : ℕ, 1 ≤ n →
+      |pickupReciprocalPrefix n| ≤ C * (n : ℝ) ^ (β - 1)) :
+    GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.CriticalBoundaryVerticalLineUniform :=
+  criticalBoundary_of_reciprocalPrefixDecay hC hβ0 hβ1 hR
+
 elab "#audit_reciprocal_prefix" : command => do
   let env ← getEnv
   let moduleNames := env.header.moduleNames
