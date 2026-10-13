@@ -458,6 +458,43 @@ def pilotText : PilotPhrase → String
   | .transitionFirst => "I cannot illuminate the whole table."
   | .transitionSecond => "I can move the lamp."
 
+def pilotRelation : PilotPhrase → String
+  | .pivot => "love"
+  | .contemplative => "illuminate"
+  | .sourceExplanation => "explain-bound"
+  | .formalExplanation => "explain-bound"
+  | .transitionFirst => "illuminate"
+  | .transitionSecond => "move-lamp"
+
+def pilotContinuationOpen : PilotPhrase → Bool
+  | .pivot | .contemplative | .transitionFirst | .transitionSecond => true
+  | .sourceExplanation | .formalExplanation => false
+
+def pilotSectionFor (phrase : PilotPhrase) :
+    Section BindingValue (Set.univ : Set ContextPoint) :=
+  fun point _ => match point with
+    | .speaker => .participant .narrator
+    | .addressee => .participant .beloved
+    | .relation => .relation (pilotRelation phrase)
+    | .continuation => .continuation (pilotContinuationOpen phrase)
+
+def pilotLocalSectionFor (phrase : PilotPhrase) (openSet : PivotOpen) :
+    Section BindingValue (pivotPiece openSet) :=
+  (pilotSectionFor phrase).restrict (pivotCover.included openSet)
+
+theorem pilot_local_compatible (phrase : PilotPhrase) :
+    Compatible (pilotLocalSectionFor phrase) := by
+  intro i j point inI inJ
+  rfl
+
+theorem pilot_phrase_unique_gluing (phrase : PilotPhrase) :
+    ∃! glued : Section BindingValue (Set.univ : Set ContextPoint),
+      ∀ i point (member : point ∈ pivotPiece i),
+        glued point (pivotCover.included i member) =
+          pilotLocalSectionFor phrase i point member :=
+  function_sections_unique_gluing pivotCover (pilotLocalSectionFor phrase)
+    (pilot_local_compatible phrase)
+
 /-- These ASCII pilot costs are independently recomputed by the owner metric. -/
 def pilotSymbols : PilotPhrase → ℕ
   | .pivot => 11
