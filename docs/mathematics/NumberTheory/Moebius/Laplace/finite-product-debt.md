@@ -452,6 +452,24 @@ checked sufficient condition for the completed critical boundary. This is a
 new mean-square variation target, not an established estimate; in particular,
 the pointwise bound $|R_n|\le1$ alone does not pay it.
 
+The deterministic half of that target is now bounded explicitly. The
+conjugate identity for consecutive square roots gives
+
+$$
+\left(\sqrt{k+1}-\sqrt{k}\right)^2\le\frac1{k+1}.
+$$
+
+Consequently [`ReciprocalFluxKernelBounds`](../../../../../GRWTSK/NumberTheory/Moebius/ReciprocalFluxKernelBounds.lean)
+proves throughout the $n$th logarithmic cell that
+
+$$
+Q_n(u)\le 4+2\log n.
+$$
+
+Thus the deterministic kernel costs only a logarithm. The remaining estimate
+is entirely in the arithmetic endpoint-centered variation $V_n$ and its
+weighted summation across cells.
+
 The elementary coefficient bounds now give a sharp baseline for these exact
 blocks. [`CriticalIntervalBlockGrowth`](../../../../../GRWTSK/NumberTheory/Moebius/CriticalIntervalBlockGrowth.lean)
 proves unconditionally
