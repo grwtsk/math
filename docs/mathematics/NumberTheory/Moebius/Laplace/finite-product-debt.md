@@ -544,6 +544,28 @@ an exponent loss. The formal consumer proves that this correlation estimate
 implies the variation power saving and hence the critical boundary estimate;
 it does not assert the estimate.
 
+There is an even cleaner positive form. Since
+$M_{j+1}=M_j+\mu(j+1)$, the correlation-plus-diagonal increment equals
+
+$$
+\frac{M_{j+1}^2-M_j^2}{j+1}.
+$$
+
+[`ReciprocalPrefixVariationMertensEnergy`](../../../../../GRWTSK/NumberTheory/Moebius/ReciprocalPrefixVariationMertensEnergy.lean)
+performs the resulting second partial summation and proves
+
+$$
+V_n=\frac{M_n^2}{n}+
+\sum_{k<n}\frac{M_k^2}{k(k+1)},
+$$
+
+where the $k=0$ summand is zero. In particular $M_n^2\le nV_n$ for
+$n\ge1$. A positive power saving for this weighted Mertens-square energy is
+formally equivalent to the reciprocal-variation power saving, and therefore
+implies the critical boundary estimate. This identity removes any ambiguity
+about where cancellation is needed: it is precisely the arithmetic control
+of the Mertens squares, not cancellation between terms of the final energy.
+
 The elementary coefficient bounds now give a sharp baseline for these exact
 blocks. [`CriticalIntervalBlockGrowth`](../../../../../GRWTSK/NumberTheory/Moebius/CriticalIntervalBlockGrowth.lean)
 proves unconditionally
