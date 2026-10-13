@@ -430,6 +430,23 @@ This exact route uses variation of the bounded prefix rather than demanding
 pointwise decay of the prefix itself. The required total variation-kernel
 energy bound remains open; the identity alone does not estimate it.
 
+The elementary coefficient bounds now give a sharp baseline for these exact
+blocks. [`CriticalIntervalBlockGrowth`](../../../../../GRWTSK/NumberTheory/Moebius/CriticalIntervalBlockGrowth.lean)
+proves unconditionally
+
+$$
+|M_n|\le n,\qquad |A_n|\le 2\sqrt n,\qquad B_n\le\frac{40}{n}
+\quad(n\ge1).
+$$
+
+The second estimate is obtained from the first by the checked Abel bridge; the
+third inserts both estimates into the checked square majorant. Thus elementary
+size control reaches exactly a harmonic block allowance. It does not imply a
+uniform bound for the partial block sums: the harmonic majorant is not
+summable. Any completion of the critical route must therefore recover genuine
+decay or cancellation beyond these coefficientwise estimates, for example in
+the centered reciprocal-variation kernel above.
+
 The analytic summation cost is now separately checked: for
 $0<\beta\le1$,
 
