@@ -470,6 +470,27 @@ Thus the deterministic kernel costs only a logarithm. The remaining estimate
 is entirely in the arithmetic endpoint-centered variation $V_n$ and its
 weighted summation across cells.
 
+The composition is now checked in
+[`ReciprocalPrefixVariationSummability`](../../../../../GRWTSK/NumberTheory/Moebius/ReciprocalPrefixVariationSummability.lean).
+For every $n\ge1$ the Cauchy block is bounded by
+
+$$
+4(4+2\log n)n^{-2}
+\sum_{k<n}(R_k-R_n)^2.
+$$
+
+Therefore convergence of
+
+$$
+\sum_{n\ge1}(4+2\log n)n^{-2}
+\sum_{k<n}(R_k-R_n)^2
+$$
+
+implies the completed critical boundary estimate (the harmless outer factor
+$4$ is retained in the formal majorant). This supplies a concrete
+mean-square-variation route distinct from pointwise decay. Its summability for
+the actual Möbius reciprocal prefix remains unproved.
+
 The elementary coefficient bounds now give a sharp baseline for these exact
 blocks. [`CriticalIntervalBlockGrowth`](../../../../../GRWTSK/NumberTheory/Moebius/CriticalIntervalBlockGrowth.lean)
 proves unconditionally
