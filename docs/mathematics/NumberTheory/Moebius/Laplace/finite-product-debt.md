@@ -368,6 +368,13 @@ pays the Mertens-prefix series. This closes the analytic implication from a
 strict Mertens power saving to the critical boundary; it does not prove the
 strict Mertens power saving.
 
+The consumer has also been closed over the full natural exponent range. If
+$0\le\beta<1$, replace $\beta$ by
+$\gamma=(\beta+2)/3$. Then
+$\tfrac12<\gamma<1$ and $n^\beta\le n^\gamma$ for every $n\ge1$, so the
+preceding theorem applies. Thus no artificial lower restriction on a supplied
+nonnegative Mertens exponent remains.
+
 The actual omitted function is
 
 $$r_{\sigma,T}(u)=1_{[0,\infty)}(u)e^{-\sigma u}W(u)
