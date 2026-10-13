@@ -200,6 +200,7 @@ import GRWTSK.NumberTheory.Moebius.CriticalEndpointDefectRecurrence
 import GRWTSK.NumberTheory.Moebius.CriticalMertensTransformMeanSquare
 import GRWTSK.NumberTheory.Moebius.CriticalWeightedMertensSquare
 import GRWTSK.NumberTheory.Moebius.WeightedMertensSquareCorrelation
+import GRWTSK.NumberTheory.Moebius.WeightedMertensSquareCorrelationBound
 import GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationEnergy
 import GRWTSK.NumberTheory.Moebius.ReciprocalFluxKernelBounds
 import GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationSummability
