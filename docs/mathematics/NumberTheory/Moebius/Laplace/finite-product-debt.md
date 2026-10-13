@@ -650,6 +650,35 @@ still an equivalent open condition, not a proof of the required summability.
 The remaining task is now the weighted square summability of the sampled
 signed pickup $W(\log n)$.
 
+The endpoint defect itself has a cancellation-free recurrence at the new
+coefficient. [`CriticalEndpointDefectRecurrence`](../../../../../GRWTSK/NumberTheory/Moebius/CriticalEndpointDefectRecurrence.lean)
+proves
+
+$$
+Q_{n+1}=Q_n+M_n\left(\frac1{\sqrt n}-\frac1{\sqrt{n+1}}\right).
+$$
+
+The two appearances of $\mu(n+1)$ cancel exactly. Since $Q_0=0$, telescoping
+gives the signed Hardy-type transform
+
+$$
+Q_n=\sum_{j<n}M_j
+  \left(\frac1{\sqrt j}-\frac1{\sqrt{j+1}}\right),
+$$
+
+with the $j=0$ term equal to zero. Thus the critical boundary is equivalently
+the exact weighted square-summability problem
+
+$$
+\sum_{n\ge1}\frac1{n(n+1)}
+ \left|\sum_{j<n}M_j
+  \left(j^{-1/2}-(j+1)^{-1/2}\right)\right|^2<\infty.
+$$
+
+This formulation moves the remaining problem from pointwise growth of
+$M_n$ to cancellation in a smoothed signed history of $M_n$. It supplies no
+estimate for that transform by itself.
+
 The elementary coefficient bounds now give a sharp baseline for these exact
 blocks. [`CriticalIntervalBlockGrowth`](../../../../../GRWTSK/NumberTheory/Moebius/CriticalIntervalBlockGrowth.lean)
 proves unconditionally
