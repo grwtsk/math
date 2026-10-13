@@ -80,6 +80,19 @@ def Section.restrict {X A : Type*} {larger smaller : Set X}
     (localSection : Section A larger) (included : smaller ⊆ larger) : Section A smaller :=
   fun x member => localSection x (included member)
 
+theorem Section.restrict_identity {X A : Type*} {openSet : Set X}
+    (localSection : Section A openSet) :
+    localSection.restrict (Set.Subset.rfl) = localSection := by
+  rfl
+
+theorem Section.restrict_composition {X A : Type*}
+    {largest middle smallest : Set X}
+    (localSection : Section A largest) (middleIncluded : middle ⊆ largest)
+    (smallestIncluded : smallest ⊆ middle) :
+    (localSection.restrict middleIncluded).restrict smallestIncluded =
+      localSection.restrict (fun _ member => middleIncluded (smallestIncluded member)) := by
+  rfl
+
 structure Cover {X I : Type*} (whole : Set X) (pieces : I → Set X) : Prop where
   included : ∀ i, pieces i ⊆ whole
   complete : ∀ x ∈ whole, ∃ i, x ∈ pieces i
@@ -200,6 +213,32 @@ structure FrameTransport (input output : Frame) : Prop where
   addressee_preserved : output.addressee = input.addressee
   continuation_preserved : output.continuationOpen = input.continuationOpen
 
+theorem FrameTransport.identity (frame : Frame) : FrameTransport frame frame :=
+  ⟨rfl, rfl, rfl⟩
+
+theorem FrameTransport.compose {first second third : Frame}
+    (left : FrameTransport first second) (right : FrameTransport second third) :
+    FrameTransport first third :=
+  ⟨right.speaker_preserved.trans left.speaker_preserved,
+    right.addressee_preserved.trans left.addressee_preserved,
+    right.continuation_preserved.trans left.continuation_preserved⟩
+
+theorem frame_transport_identity (frame : Frame) : FrameTransport frame frame :=
+  FrameTransport.identity frame
+
+theorem frame_transport_composition {first second third : Frame}
+    (left : FrameTransport first second) (right : FrameTransport second third) :
+    FrameTransport first third :=
+  left.compose right
+
+theorem frame_transport_cocycle {first second third fourth : Frame}
+    (firstStep : FrameTransport first second)
+    (secondStep : FrameTransport second third)
+    (thirdStep : FrameTransport third fourth) :
+    (firstStep.compose secondStep).compose thirdStep =
+      firstStep.compose (secondStep.compose thirdStep) := by
+  rfl
+
 def bridgeFrame : Frame where
   speaker := .narrator
   addressee := .beloved
@@ -319,6 +358,21 @@ def pilotStructuralQuine : StructuralQuine where
   certificateReconstruction := reconstruct_observe_equivalent
   minimality := observation_minimality
 
+theorem pilot_quine_exact_carrier (compressed : StructuralObservations) :
+    pilotStructuralQuine.compress
+      (pilotStructuralQuine.reconstruct compressed) = compressed :=
+  pilotStructuralQuine.exactCarrier compressed
+
+theorem pilot_quine_certificate_reconstruction (source : PhraseCore) :
+    StructuralEquivalent
+      (pilotStructuralQuine.reconstruct (pilotStructuralQuine.compress source)) source :=
+  pilotStructuralQuine.certificateReconstruction source
+
+theorem pilot_quine_minimality (left right : PhraseCore) :
+    pilotStructuralQuine.compress left = pilotStructuralQuine.compress right ↔
+      StructuralEquivalent left right :=
+  pilotStructuralQuine.minimality left right
+
 def sourceExplanation : PhraseCore where
   wording := "The bound is an average."
   speaker := .narrator
@@ -342,10 +396,10 @@ def clarifyBound (phrase : PhraseCore) : PhraseCore :=
       else phrase.wording }
 
 theorem clarify_source_is_revision : clarifyBound sourceExplanation = revisedExplanation := by
-  native_decide
+  decide
 
 theorem source_and_revision_are_not_exact : sourceExplanation ≠ revisedExplanation := by
-  native_decide
+  decide
 
 theorem source_and_revision_are_structurally_equivalent :
     StructuralEquivalent sourceExplanation revisedExplanation := by
@@ -410,6 +464,10 @@ def pilotSymbols : PilotPhrase → ℕ
   | .transitionFirst => 36
   | .transitionSecond => 20
 
+theorem pilot_text_scalar_length (phrase : PilotPhrase) :
+    (pilotText phrase).length = pilotSymbols phrase := by
+  cases phrase <;> decide
+
 theorem pilot_symbol_floor (phrase : PilotPhrase) : 11 ≤ pilotSymbols phrase := by
   cases phrase <;> decide
 
@@ -452,7 +510,7 @@ def pilotEdge : PilotEdge → WeightedEdge PilotState
   | .pivot => ⟨.pivotEntry, .pivotBoundary, 11⟩
   | .contemplative => ⟨.contemplativeEntry, .contemplativeBoundary, 36⟩
   | .formalExplanation => ⟨.formalEntry, .formalBoundary, 67⟩
-  | .transitionFirst => ⟨.transitionEntry, .transitionMiddle, 36⟩
+  | .transitionFirst => ⟨.transitionEntry, .transitionMiddle, 37⟩
   | .transitionSecond => ⟨.transitionMiddle, .transitionBoundary, 20⟩
 
 def potential : PilotState → ℕ
@@ -462,7 +520,7 @@ def potential : PilotState → ℕ
   | .contemplativeBoundary => 0
   | .formalEntry => 67
   | .formalBoundary => 0
-  | .transitionEntry => 56
+  | .transitionEntry => 57
   | .transitionMiddle => 20
   | .transitionBoundary => 0
 
@@ -493,13 +551,17 @@ def transitionPhrase : ConcreteTransition → PilotPhrase
   | .bridgeImage => .transitionFirst
   | .bridgeConsequence => .transitionSecond
 
+def assemblySeparatorSymbols : ConcreteTransition → ℕ
+  | .bridgeImage => 1
+  | _ => 0
+
 theorem concrete_transition_coverage (transition : ConcreteTransition) :
     ∃ edge, abstractTransition transition = edge :=
   ⟨abstractTransition transition, rfl⟩
 
 theorem concrete_transition_cost_coverage (transition : ConcreteTransition) :
     (pilotEdge (abstractTransition transition)).cost =
-      pilotSymbols (transitionPhrase transition) := by
+      pilotSymbols (transitionPhrase transition) + assemblySeparatorSymbols transition := by
   cases transition <;> rfl
 
 theorem pivotPath : Path pilotEdge .pivotEntry .pivotBoundary 11 := by
@@ -518,7 +580,7 @@ theorem formalPath : Path pilotEdge .formalEntry .formalBoundary 67 := by
     (Path.cons (edge := pilotEdge) PilotEdge.formalExplanation
       (Path.nil (edge := pilotEdge) PilotState.formalBoundary))
 
-theorem transitionPath : Path pilotEdge .transitionEntry .transitionBoundary 56 := by
+theorem transitionPath : Path pilotEdge .transitionEntry .transitionBoundary 57 := by
   simpa [pilotEdge] using
     (Path.cons (edge := pilotEdge) PilotEdge.transitionFirst
       (Path.cons (edge := pilotEdge) PilotEdge.transitionSecond
@@ -533,7 +595,7 @@ theorem contemplative_stopping_envelope : 36 ≤ potential .contemplativeEntry :
 theorem formal_stopping_envelope : 67 ≤ potential .formalEntry := by
   exact formalPath.cost_le_entry_potential potential pilot_potential_decreases rfl
 
-theorem transitional_pair_stopping_envelope : 56 ≤ potential .transitionEntry := by
+theorem transitional_pair_stopping_envelope : 57 ≤ potential .transitionEntry := by
   exact transitionPath.cost_le_entry_potential potential pilot_potential_decreases rfl
 
 theorem pilot_contract (phrase : PilotPhrase) :
