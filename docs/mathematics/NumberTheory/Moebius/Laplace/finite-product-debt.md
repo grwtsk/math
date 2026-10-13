@@ -607,6 +607,49 @@ condition than a classical pointwise Mertens power saving. Any genuinely
 weaker route must retain signed cancellation that the positive square energy
 has discarded.
 
+[`CriticalEndpointDefect`](../../../../../GRWTSK/NumberTheory/Moebius/CriticalEndpointDefect.lean)
+does retain that cancellation. Write $P_n$ for the square-root-weighted
+Möbius prefix and set
+
+$$
+Q_n=P_n-\frac{M_n}{\sqrt n}.
+$$
+
+The endpoint Abel identity gives $Q_n=W(\log n)/2$. On the whole logarithmic
+cell the exact flux splits as
+
+$$
+P_n-e^{-u/2}M_n
+=Q_n+\left(n^{-1/2}-e^{-u/2}\right)M_n.
+$$
+
+The second term is harmless without any Mertens cancellation. Its integrated
+square drift is bounded using
+
+$$
+0\le n^{-1/2}-e^{-u/2}
+\le n^{-1/2}-(n+1)^{-1/2}\le\frac1{n\sqrt n},
+$$
+
+the exact cell mass
+$e^{-\log n}-e^{-\log(n+1)}=1/[n(n+1)]$, and the elementary estimate
+$|M_n|\le n$. The resulting majorant is at most $8/n^3$, hence summable.
+Applying $(a+b)^2\le2a^2+2b^2$ in both directions then proves the exact
+criterion
+
+$$
+\text{critical boundary uniformity}
+\quad\Longleftrightarrow\quad
+\sum_{n\ge1}\frac{\left(P_n-M_n/\sqrt n\right)^2}{n(n+1)}<\infty.
+$$
+
+This is a genuine reduction of the arithmetic interface: unlike the positive
+Mertens-square condition, it does not require a pointwise power saving for
+$M_n$ and preserves the cancellation between the two natural prefixes. It is
+still an equivalent open condition, not a proof of the required summability.
+The remaining task is now the weighted square summability of the sampled
+signed pickup $W(\log n)$.
+
 The elementary coefficient bounds now give a sharp baseline for these exact
 blocks. [`CriticalIntervalBlockGrowth`](../../../../../GRWTSK/NumberTheory/Moebius/CriticalIntervalBlockGrowth.lean)
 proves unconditionally
