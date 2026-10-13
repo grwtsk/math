@@ -124,23 +124,48 @@ theorem reciprocalVariationDiagonal_le_log (n : ℕ) :
     (by exact_mod_cast harmonic_le_one_add_log n)
 
 /-- The remaining signed arithmetic estimate: the Möbius--Mertens
-correlation cancels the diagonal up to a positive power saving. -/
+correlation itself has a sublinear power bound. -/
 def ReciprocalMertensCorrelationPowerSaving : Prop :=
-  ∃ C δ : ℝ, 0 ≤ C ∧ 0 < δ ∧
+  ∃ C δ : ℝ, 0 ≤ C ∧ 0 < δ ∧ δ < 1 ∧
     ∀ n : ℕ, 1 ≤ n →
       reciprocalVariationCorrelation n ≤
-        C * (n : ℝ) ^ (1 - δ) - reciprocalVariationDiagonal n
+        C * (n : ℝ) ^ (1 - δ)
 
-/-- Signed correlation cancellation supplies the reciprocal-prefix variation
-power saving. -/
+/-- A sublinear signed-correlation bound supplies the reciprocal-prefix
+variation power saving; the logarithmic diagonal is absorbed without losing
+the exponent. -/
 theorem reciprocalVariationPowerSaving_of_mertensCorrelationPowerSaving
     (h : ReciprocalMertensCorrelationPowerSaving) :
     ReciprocalVariationPowerSaving := by
-  obtain ⟨C, δ, hC, hδ, hbound⟩ := h
-  refine ⟨C, δ, hC, hδ, ?_⟩
+  obtain ⟨C, δ, hC, hδ, hδ1, hbound⟩ := h
+  have heps : 0 < 1 - δ := by linarith
+  let D : ℝ := 1 + 1 / (1 - δ)
+  have hD : 0 ≤ D := by
+    dsimp [D]
+    positivity
+  refine ⟨C + D, δ, add_nonneg hC hD, hδ, ?_⟩
   intro n hn
+  have hn1 : (1 : ℝ) ≤ n := by exact_mod_cast hn
+  have hp : 1 ≤ (n : ℝ) ^ (1 - δ) :=
+    Real.one_le_rpow hn1 heps.le
+  have hlog := Real.log_natCast_le_rpow_div n heps
+  have hdiag :
+      reciprocalVariationDiagonal n ≤ D * (n : ℝ) ^ (1 - δ) := by
+    calc
+      reciprocalVariationDiagonal n ≤ 1 + Real.log n :=
+        reciprocalVariationDiagonal_le_log n
+      _ ≤ 1 + (n : ℝ) ^ (1 - δ) / (1 - δ) := by gcongr
+      _ ≤ (n : ℝ) ^ (1 - δ) +
+          (n : ℝ) ^ (1 - δ) / (1 - δ) := by gcongr
+      _ = D * (n : ℝ) ^ (1 - δ) := by
+        dsimp [D]
+        ring
   rw [reciprocalPrefixVariationSquare_eq_correlation_add_diagonal]
-  linarith [hbound n hn]
+  calc
+    reciprocalVariationCorrelation n + reciprocalVariationDiagonal n ≤
+        C * (n : ℝ) ^ (1 - δ) + D * (n : ℝ) ^ (1 - δ) :=
+      add_le_add (hbound n hn) hdiag
+    _ = (C + D) * (n : ℝ) ^ (1 - δ) := by ring
 
 /-- The signed Möbius--Mertens correlation power saving implies the completed
 critical vertical-line estimate. -/

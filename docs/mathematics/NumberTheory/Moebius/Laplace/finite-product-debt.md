@@ -537,11 +537,12 @@ V_n=
 $$
 
 The nonnegative diagonal is at most the full harmonic mass
-$H_n\le1+\log n$. Thus the exact remaining obligation can be stated as
-signed Möbius--Mertens correlation cancellation: the first sum must cancel
-the diagonal up to $O(n^{1-\delta})$ for some $\delta>0$. The formal consumer
-proves that this cancellation estimate implies the variation power saving and
-hence the critical boundary estimate; it does not assert the cancellation.
+$H_n\le1+\log n$. Thus it is enough for the signed Möbius--Mertens
+correlation (the first sum) to be $O(n^{1-\delta})$ for some
+$0<\delta<1$. The logarithmic diagonal is absorbed into the same power without
+an exponent loss. The formal consumer proves that this correlation estimate
+implies the variation power saving and hence the critical boundary estimate;
+it does not assert the estimate.
 
 The elementary coefficient bounds now give a sharp baseline for these exact
 blocks. [`CriticalIntervalBlockGrowth`](../../../../../GRWTSK/NumberTheory/Moebius/CriticalIntervalBlockGrowth.lean)
