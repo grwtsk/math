@@ -17,6 +17,14 @@ example {n : ℕ} (hn : 1 ≤ n) :
     criticalIntervalBlock n ≤ 40 / (n : ℝ) :=
   criticalIntervalBlock_le_harmonic hn
 
+example (N : ℕ) :
+    criticalIntervalBlockSum N ≤ 40 * (harmonic N : ℝ) :=
+  criticalIntervalBlockSum_le_harmonic N
+
+example (N : ℕ) :
+    criticalIntervalBlockSum N ≤ 40 * (1 + Real.log N) :=
+  criticalIntervalBlockSum_le_log N
+
 elab "#audit_critical_interval_block_growth" : command => do
   let env ← getEnv
   let moduleNames := env.header.moduleNames
