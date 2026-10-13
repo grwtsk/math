@@ -750,8 +750,34 @@ $$
 
 Thus the improved positive mean-square target consists of one signed
 Möbius--Mertens correlation plus a squarefree diagonal, both against the same
-positive tail kernel. This is an identity, not yet an estimate; bounding the
-diagonal and isolating the exact signed correlation budget are the next step.
+positive tail kernel.
+
+[`WeightedMertensSquareCorrelationBound`](../../../../../GRWTSK/NumberTheory/Moebius/WeightedMertensSquareCorrelationBound.lean)
+now pays the diagonal completely. Writing it as $D_N$, its exact recurrence is
+
+$$
+D_{N+1}=D_N+w_{N+1}\sum_{j=0}^{N}\mu(j+1)^2.
+$$
+
+Since $\mu(j+1)^2\le1$,
+
+$$
+0\le D_N\le\sum_{j=0}^{N-1}(j+2)^{-1-\varepsilon}.
+$$
+
+The right side is uniformly bounded for every $\varepsilon>0$. Consequently,
+for such $\varepsilon$, convergence of the positive weighted square series is
+equivalent to a uniform upper bound for the signed finite correlations
+
+$$
+\sum_{j<N}2\mu(j+1)M_jT_{j,N}.
+$$
+
+In particular, for any $0<\varepsilon<1$, this signed upper bound implies the
+completed critical boundary. The reduction is exact: the squarefree diagonal
+is no longer an open cost, while the signed correlation estimate remains an
+explicit unproved arithmetic premise. No Riemann-hypothesis conclusion is
+claimed without that premise.
 
 The elementary coefficient bounds now give a sharp baseline for these exact
 blocks. [`CriticalIntervalBlockGrowth`](../../../../../GRWTSK/NumberTheory/Moebius/CriticalIntervalBlockGrowth.lean)
