@@ -354,6 +354,20 @@ Thus a single Mertens power hypothesis above the square-root scale supplies
 the weighted-prefix hypothesis at its natural shifted exponent. The Mertens
 power hypothesis itself remains unproved.
 
+Combining this transfer with the checked square-series thresholds now gives a
+single conditional consumer: whenever
+
+$$
+\frac12<\beta<1,
+\qquad |M_n|\le Cn^\beta\quad(n\ge1),
+$$
+
+the complete critical vertical-line mass is uniformly bounded. Indeed,
+$\beta-\tfrac12<\tfrac12$ pays the weighted-prefix series and $\beta<1$
+pays the Mertens-prefix series. This closes the analytic implication from a
+strict Mertens power saving to the critical boundary; it does not prove the
+strict Mertens power saving.
+
 The actual omitted function is
 
 $$r_{\sigma,T}(u)=1_{[0,\infty)}(u)e^{-\sigma u}W(u)
