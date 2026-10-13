@@ -730,6 +730,29 @@ mean-square target: its weight is asymptotic to $n^{-2-\varepsilon}$, whereas
 the earlier variation energy used the stronger $n^{-2}$ weight. No claim is
 made here that this new weighted Mertens-square series converges.
 
+The new square series also has an exact signed decomposition. Set
+$w_n=n^{-1}(n+1)^{-1-\varepsilon}$ and
+$T_{j,N}=\sum_{n=j+1}^Nw_n$.
+[`WeightedMertensSquareCorrelation`](../../../../../GRWTSK/NumberTheory/Moebius/WeightedMertensSquareCorrelation.lean)
+uses
+
+$$
+M_{j+1}^2-M_j^2=2\mu(j+1)M_j+\mu(j+1)^2
+$$
+
+and finite summation by parts to prove
+
+$$
+\sum_{n=1}^NM_n^2w_n
+=\sum_{j<N}2\mu(j+1)M_jT_{j,N}
+ +\sum_{j<N}\mu(j+1)^2T_{j,N}.
+$$
+
+Thus the improved positive mean-square target consists of one signed
+Möbius--Mertens correlation plus a squarefree diagonal, both against the same
+positive tail kernel. This is an identity, not yet an estimate; bounding the
+diagonal and isolating the exact signed correlation budget are the next step.
+
 The elementary coefficient bounds now give a sharp baseline for these exact
 blocks. [`CriticalIntervalBlockGrowth`](../../../../../GRWTSK/NumberTheory/Moebius/CriticalIntervalBlockGrowth.lean)
 proves unconditionally
