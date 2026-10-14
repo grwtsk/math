@@ -467,3 +467,289 @@ receipt, workflow, or permission is changed. Pinned Lean replay and full-repo
 structural checks were not available in this execution environment.
 The previously retained block modes are not declared small: (DL8) is the
 remaining source-specific arithmetic inequality. RH is not claimed.
+
+## Arithmetic sectors of the localized Gram
+
+**Status: written proofs and finite exact diagnostics, not a Lean admission.
+The remaining signed core has no uniform upper-bound witness.** Human
+mathematical direction: grwtsk contributors. Derivation and implementation:
+OpenAI ChatGPT. The Möbius multiplicativity and squarefree identities used
+below are classical; no new theorem about cancellation of general shifted
+Möbius sums is claimed.
+
+### Exact finite source and primitive-ratio identity
+
+Retain the localized atoms from (DL2), now writing the physical recording
+cutoff as R>=1 and
+
+\[
+G_R(m,n)=\int_1^R x^{-5/3}\ell_m(x)\ell_n(x)\,dx,
+\qquad c=G_4(1,1).
+\]
+
+The atoms are nonnegative. The preceding evaluated single-atom formula gives
+0<c<9/25, and scaling and Cauchy--Schwarz give
+
+\[
+0\le G_R(m,n)\le c(mn)^{-5/6},\qquad
+G_R(m,n)=0\quad(n\ge4m,\ m\le n).                    \tag{PS1}
+\]
+
+The right side of the inequality may use complete single-atom integrals;
+the left side always retains its actual finite R. There is no replacement
+of the source's finite Gram by a completed Gram.
+
+For g,a,b positive with gcd(a,b)=1, classical multiplicativity gives
+
+\[
+\mu(ga)\mu(gb)=\mu(a)\mu(b)\mu(g)^2
+                    1_{\gcd(g,ab)=1}.                \tag{PS2}
+\]
+
+If gcd(g,ab)>1, a prime divides both g and one of a,b, so one product ga or
+gb has a squared prime factor and its Möbius coefficient vanishes. Otherwise
+multiplicativity applies to both factors. Squareful a,b or g also give zero.
+Thus (PS2) retains the coprimality restriction even though its input pair is
+already primitive. Dropping that restriction fails, for example, at a=2,
+b=3,g=2.
+
+Atom dilation gives ell_(ga)(x)=g^(-1/2)ell_a(x/g). Hence
+
+\[
+G_R(ga,gb)=g^{-5/3}G_{R/g}(a,b).                       \tag{PS3}
+\]
+
+The transformed cutoff R/g is essential. At fixed finite R every sum below
+is finite. With N=floor(R), the complete ordered cross term is therefore
+
+\[
+X_\Delta(\log R)=
+2\!\sum_{\substack{1\le a<b\le N\\b<4a,\ (a,b)=1}}
+\mu(a)\mu(b)
+\!\sum_{\substack{1\le g\le\lfloor R/b\rfloor\\(g,ab)=1}}
+\mu(g)^2g^{-5/3}G_{R/g}(a,b).                         \tag{PS4}
+\]
+
+This is finite gcd regrouping, not an infinite Euler product or an
+interchange of conditionally convergent series. The factor 2 restores the
+other ordering. Closed upper cutoffs, touching responses, and the original
+completed numerator with both endpoint terms and unborn-product debt remain
+unchanged.
+
+### Four disjoint pair sectors
+
+Classify each strict pair m<n<4m, g=gcd(m,n), in this order:
+
+| Sector | Exact integer condition |
+|---|---|
+| P, divisible rays | m divides n, necessarily n=2m or 3m |
+| Q, other large-gcd pairs | m does not divide n and g^2>=m |
+| A, short gaps | g^2<m and (n-m)^2<=m |
+| Z, remaining core | g^2<m and (n-m)^2>m |
+
+For each sector use the complete signed sum 2 sum mu(m)mu(n)G_R(m,n),
+with 1<=m<n<=floor(R). Denote these sums P(R), Q(R), A(R), Z(R).
+Let D(R) be the original localized diagonal. Then exactly
+
+\[
+\Gamma_{1/3}(\log R)=D(R)+P(R)+Q(R)+A(R)+Z(R).         \tag{PS5}
+\]
+
+No sector is discarded from this identity. P, Q, A are bounded below as
+well as above, so their later removal from the *remaining obligation* is a
+controlled estimate rather than a source deletion.
+
+### The arithmetic sign on divisible rays is exact
+
+For p=2 or 3,
+
+\[
+\mu(m)\mu(pm)=-\mu(m)^2 1_{p\nmid m}.                \tag{PS6}
+\]
+
+If p divides m then pm is squareful; if not, multiplicativity and mu(p)=-1
+apply. Since G_R>=0, P(R)<=0 for the actual Möbius coefficients. Also
+
+\[
+\begin{aligned}
+|P(R)|
+&\le 2c(2^{-5/6}+3^{-5/6})\sum_{m\ge1}m^{-5/3}\\
+&\le5c(2^{-5/6}+3^{-5/6})<10c.
+\end{aligned}                                                       \tag{PS7}
+\]
+
+The series comparison uses sum m^(-5/3)<=1+integral_1^infinity
+u^(-5/3)du=5/2. This is a genuine source-specific sign, not a consequence
+of bounded coefficients. For comparison, the ratio 3/2 satisfies
+mu(2g)mu(3g)=mu(g)^2 1_(g,6)=1>=0. Thus all multiplicative rays cannot be
+assigned the same sign.
+
+### Two infinite classes have finite absolute budgets
+
+For short gaps, at most floor(sqrt(m)) positive differences occur for each m.
+From (PS1), G_R(m,m+h)<=c m^(-5/3), and consequently
+
+\[
+\sum_{(m,n)\in A}2|\mu(m)\mu(n)|G_R(m,n)
+\le2c\sum_{m\ge1}m^{-7/6}\le14c.                    \tag{PS8}
+\]
+
+This pays all fixed additive shifts eventually: a fixed h lies in the
+short-gap region whenever m>=h^2, except for pairs already in another paid
+sector. No shifted-correlation theorem is needed for that conclusion.
+
+For the nondivisible large-gcd sector, put m=ga,n=gb. Then a>=2,
+a<b<4a and g>=a. Removing coprimality only in this positive *upper bound*,
+and using fewer than 3a choices of b, gives
+
+\[
+\begin{aligned}
+\sum_{(m,n)\in Q}2|\mu(m)\mu(n)|G_R(m,n)
+&\le 2c\sum_{a\ge2}3a\,a^{-5/3}
+                  \sum_{g\ge a}g^{-5/3}\\
+&\le 15c\sum_{a\ge2}a^{-4/3}\le45c.                \tag{PS9}
+\end{aligned}
+\]
+
+Here sum_(g>=a)g^(-5/3)<=a^(-5/3)+(3/2)a^(-2/3)
+<=(5/2)a^(-2/3), and sum_(a>=2)a^(-4/3)<=integral_1^infinity
+u^(-4/3)du=3. The powers -7/6 and -4/3 are the precise sources of
+summability. They arise from pair counting and the actual homogeneous atom
+bound, not from an assumed new Mertens exponent.
+
+All bounds hold at every finite R and also bound the full absolute masses
+of the designated sectors. Keeping the cutoff in Z remains essential.
+
+### The smaller surviving arithmetic inequality and exact return
+
+Combining D(R)<=5c/2, -10c<=P(R)<=0, |Q(R)|<=45c and |A(R)|<=14c,
+
+\[
+\boxed{\Gamma_{1/3}(\log R)\le Z(R)+\frac{123}{2}c,
+\qquad Z(R)\le\Gamma_{1/3}(\log R)+69c.}             \tag{PS10}
+\]
+
+It follows, using the finite causal bounds (DL5), that
+
+\[
+\boxed{\exists C\ge0\ \forall J\in\mathbb N:\ Z(2^J)\le C}
+                                                               \tag{PS11}
+\]
+
+is equivalent to uniform boundedness of H_(1/3)(T). A witness C gives
+
+\[
+H_{1/3}(T)\le123(C+123c/2)
+             <123(C+1107/50)\qquad(T\ge0).          \tag{PS12}
+\]
+
+For a real T choose J with exp(T)<=2^J and apply monotonicity of the
+nonnegative localized energy, not monotonicity of Z. Conversely a uniform
+H_(1/3)<=B gives Z(2^J)<=8B+69c. These are existential bound transfers,
+not a supplier for (PS11). In primitive coordinates its remaining pairs obey
+
+\[
+a\ge2,\quad a<b<4a,\quad(a,b)=1,\quad
+1\le g<a,\quad g(b-a)^2>a,\quad gb\le2^J,\quad(g,ab)=1,
+\]
+
+with signed summand 2 mu(a)mu(b)mu(g)^2 g^(-5/3)G_(2^J/g)(a,b).
+Both primitive signs must survive. No P04 premise is introduced.
+
+### Actual Möbius obstruction to bounding either sign separately
+
+Let Z_+(R) and Z_-(R) be the positive and negative masses of Z(R), so
+Z=Z_+-Z_-. These are nonnegative finite sums, not sums for arbitrary test
+coefficients. Both are unbounded for the actual Möbius function.
+
+Here are finite lower certificates with explicit constants. For an integer
+X>=4 let P_X be the primes in (X,5X/4], K=|P_X|, and
+H=ceil(sqrt(5X/4)). If m<n are in P_X and n-m>H, the pair lies in Z,
+mu(m)mu(n)=1, and
+
+\[
+G_{2X}(m,n)\ge \frac1{1296}X^{-5/3}.                \tag{PS13}
+\]
+
+To check the constant, integrate only over [3X/2,7X/4]. Both atoms are in
+their increasing branches and each is greater than X^(-1/2)/9, using
+sqrt(4/5)>8/9 and sqrt(2/3)<5/6. The physical weight is greater than
+X^(-5/3)/4 and the interval length is X/4. There are at least
+max(0,K(K-1-2H)/2) unordered separated pairs. Thus
+
+\[
+Z_+(2X)\ge
+\frac{K\max(0,K-1-2H)}{1296}X^{-5/3}.              \tag{PS14}
+\]
+
+For distinct p,q in P_X, use m=p,n=2q. These also lie in Z: their gcd is
+one and their gap is greater than sqrt(m). Their Möbius product is -1.
+On [3X,7X/2], the first atom is greater than X^(-1/2)/15 and the second
+greater than X^(-1/2)/12. The rational comparisons
+sqrt(7/2)<15/8, sqrt(2/5)>5/8 and 1/sqrt(3)<7/12 prove these bounds.
+The weight is greater than X^(-5/3)/16 and the length is X/2. Therefore
+
+\[
+G_{4X}(p,2q)\ge\frac1{5760}X^{-5/3},\qquad
+Z_-(4X)\ge\frac{K(K-1)}{2880}X^{-5/3}.             \tag{PS15}
+\]
+
+Every finite X and its exact prime count can be checked without an
+asymptotic input. For the *infinite-range refutation only*, the unconditional
+prime number theorem, for example [DLMF 27.12.5](https://dlmf.nist.gov/27.12.E5),
+gives K~X/(4 log X). Consequently both lower bounds diverge. More explicitly,
+whenever K>=X/(8 log X) and K>=4H+2, (PS14) is at least
+X^(1/3)/(165888 log^2 X); (PS15) is at least
+X^(1/3)/(368640 log^2 X). PNT proves those gates eventually; no numerical
+onset X_0 is supplied or claimed. The executable finite certificates instead
+report the exact count, gap and number of eligible pairs at the selected X.
+
+Thus the positive part alone and the absolute core both have infinite
+half-line mass. So does the negative part. This does NOT prove that Z or
+H is unbounded: cancellation between these two divergent masses is exactly
+what remains. It rules out a uniform unsigned or positive-part supplier even
+for the actual arithmetic source, rather than merely for a comparison vector.
+It also prohibits an unproved infinite regrouping of the signed core.
+
+### Research applicability and verification boundary
+
+The pinned Mathlib Möbius file already contains
+`isMultiplicative_moebius`, `moebius_apply_prime`,
+`moebius_eq_zero_of_not_squarefree` and `abs_moebius_le_one`.
+These are the classical inputs for a future native port of (PS2) and (PS6),
+not new Lean admissions here. The finite Gram adapters also require their
+own native source identification.
+
+Tao's [logarithmically averaged two-point theorem, Theorem 1.2 and its
+Elliott extension](https://arxiv.org/html/1509.05422v4), uses fixed affine
+forms with nonzero determinant and a logarithmic average. The primitive
+forms ag,bg have zero determinant: (PS2) shows directly why their products
+need not cancel as g varies. Fixed additive shifts are already covered by
+the absolute budget above, apart from finitely many terms. A theorem applied
+to the surviving core must therefore supply uniform aggregate control for
+growing differences and growing primitive parameters, with the actual
+finite-horizon kernel. No such bound is obtained from that theorem here.
+
+[`localized_mobius_pair_sectors.py`](../../../../scripts/localized_mobius_pair_sectors.py)
+uses the unchanged finite localized Gram. It independently compares direct
+pairs, gcd regrouping with the shifted recording cutoff, and the integrated
+localized source. It reports every sector, including zeros and both signs;
+only exact zero summands can skip numerical integration. Arbitrary test
+sequences are labeled and do not inherit the Möbius ray-sign theorem.
+The prime certificates use independent trial division and exact integer
+counts. Rational enclosures are finite executable evidence, not Lean proofs.
+
+[`test_localized_mobius_pair_sectors.py`](../../../../scripts/test_localized_mobius_pair_sectors.py)
+checks primitive gates, boundary equality, both orders, scaled cutoffs,
+actual and comparison signs, finite sector budgets, independent sieve
+values, and explicit prime-kernel lower constants. The
+[source-bound receipt](../../../../evidence/number-theory/moebius/localized-mobius-pair-sectors-20261014.json)
+records the normal and optimized runs and their exact source hashes.
+
+No source library, compiler pin, workflow, permission, or historical receipt
+is changed. No Lean/Lake executable or full checkout is available in this
+execution; pinned Lean replay, owned-declaration auditing and repository-wide
+structural checks are NOT_RUN. The mathematics proved in this appendix is
+written, including the two sign-mass divergence arguments. The new uniform
+signed core estimate (PS11), an unconditional native Mertens-log supplier,
+and the terminal RH theorem remain unproved here.
