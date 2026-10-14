@@ -20,7 +20,7 @@ ROOT = Path(__file__).resolve().parents[1]
 LAYOUT_PATH = ROOT / "docs/math-layout.json"
 CATALOG_PATH = ROOT / "docs/reference/math-source-catalog.json"
 MIGRATION_VERIFICATION = ROOT / "evidence/lean-consolidation-2026-10-14.json"
-CURRENT_VERIFICATION = ROOT / "evidence/lean-consolidation-rigor-2026-10-14.json"
+CURRENT_VERIFICATION = ROOT / "evidence/lean-consolidation-rigor-post-merge-2026-10-14.json"
 GENERATED_VIEWS = {
     CATALOG_PATH,
     ROOT / "docs/reference/results.md",
