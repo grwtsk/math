@@ -4,10 +4,10 @@
 
 | Inventory | Count |
 |---|---:|
-| Object guides | 2 |
-| Documented object groups | 2 |
-| Distinct primary sources linked | 2 |
-| Lean source modules | 23 |
+| Object guides | 3 |
+| Documented object groups | 3 |
+| Distinct primary sources linked | 3 |
+| Lean source modules | 42 |
 | Archive intake records | 0 |
 | Selected catalog families | 0 |
 
@@ -20,6 +20,10 @@ These counts measure documentation and source coverage. They do not count accept
 ## FiniteSequences
 
 - [Prefix service intervals and obligation coverage](FiniteSequences/prefix-coverage.md) — `historical-source-description`.
+
+## ProofChecking
+
+- [Proof-checking source roles](ProofChecking/source-roles.md) — `written-argument`.
 
 ## Sources and verification
 

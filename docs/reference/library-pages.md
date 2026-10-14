@@ -4,6 +4,10 @@ The [mathematical area directory](../index.md) links to an index inside each are
 
 The [structured inventory](library-summary.json) is generated from existing tracked and nonignored untracked source paths in the local checkout, the maintained layout ledger, the selected catalog and the archive-intake records. It is an inventory snapshot, not a compiler-derived declaration census or mathematical acceptance receipt. Input digests allow the snapshot to be checked for drift.
 
+The [selected result catalog](results.md) covers three families only. The page inventory is broader; neither is a complete declaration catalog or proof graph. [Historical evidence limits](documentation-history.md) explain the disposition of the former flat documentation.
+
+Migration and acceptance boundaries are recorded separately in the [Lean consolidation report](lean-consolidation-report.md), [repository reconstruction contract](reconstruction.md), and [rigor and reconstruction status](rigor-and-reconstruction-report.md).
+
 ## Count definitions
 
 | Datum | Exact population | Limit |

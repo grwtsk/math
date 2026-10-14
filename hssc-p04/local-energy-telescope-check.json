@@ -1,0 +1,16 @@
+{
+  "status": "kernel-checked",
+  "source": "/Users/local/Documents/ChatGPT/math 2/hssc-p04/LocalEnergyTelescope.lean",
+  "source_sha256": "1cd1e86b847bc841726299eb0dbc1a8595194b8a2dc18f9804b81ec05300a7a7",
+  "kernel_trust_level": 0,
+  "warnings_as_errors": true,
+  "exit_code": 0,
+  "source_unchanged": true,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "scope": "Exact actual completed pickup terminal-window definition, recurrence T\u2265b\u22650, finite backward/forward telescopes, floor compact remainder, all-real ceil closure from an explicit window bound. No HSS bound asserted.",
+  "stdout": "'HSSCP04.LocalEnergyTelescope.energy_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n'HSSCP04.LocalEnergyTelescope.floor_telescope' depends on axioms: [propext, Classical.choice, Quot.sound]\n'HSSCP04.LocalEnergyTelescope.grid_telescope' depends on axioms: [propext, Classical.choice, Quot.sound]\n'HSSCP04.LocalEnergyTelescope.window_bound_implies_energy_polynomial' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n\nEXIT 0"
+}

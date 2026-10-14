@@ -74,10 +74,10 @@ CONTROLS = {
     "MissingBlockLength": "Type mismatch",
     "WrongSamplingStep": "Type mismatch",
 }
-INPUTS = ORDER + ["checks/Spectral/FiniteVolume/Declarations.lean", "scripts/check_ten_martini.py",
+INPUTS = ORDER + ["GRWTSK/Spectral/FiniteVolume/Checks/Declarations.lean", "scripts/check_ten_martini.py",
                   "lean-toolchain", "lakefile.toml", "lake-manifest.json",
                   "docs/ten-martini-zero.md"]
-INPUTS += ["checks/Spectral/FiniteVolume/Controls/" + name + ".lean" for name in CONTROLS]
+INPUTS += ["GRWTSK/Spectral/FiniteVolume/Checks/Negative/" + name + ".lean" for name in CONTROLS]
 HASHES = {p: hashlib.sha256((ROOT / p).read_bytes()).hexdigest() for p in INPUTS}
 (RUN / "source-freeze.json").write_text(json.dumps(HASHES, indent=2) + "\n")
 RESULTS = []
@@ -121,7 +121,7 @@ def run(rel, expected_success=True, export=False, expected_error=None):
 
 for path in ORDER:
     run(path, export=True)
-output = run("checks/Spectral/FiniteVolume/Declarations.lean")
+output = run("GRWTSK/Spectral/FiniteVolume/Checks/Declarations.lean")
 DECLS = [json.loads(s) for s in re.findall(r"TEN_MARTINI_DECL::(\{[^\n]+\})", output)]
 COUNTS = re.findall(r"TEN_MARTINI_COUNT::(\d+)", output)
 if len(COUNTS) != 1 or len(DECLS) != int(COUNTS[0]) or not DECLS:
@@ -129,7 +129,7 @@ if len(COUNTS) != 1 or len(DECLS) != int(COUNTS[0]) or not DECLS:
 if len({d["name"] for d in DECLS}) != len(DECLS):
     raise RuntimeError("duplicate declaration records")
 for name, error in CONTROLS.items():
-    run("checks/Spectral/FiniteVolume/Controls/" + name + ".lean", False, expected_error=error)
+    run("GRWTSK/Spectral/FiniteVolume/Checks/Negative/" + name + ".lean", False, expected_error=error)
 stable_inputs()
 RECEIPT = {"schema_version": 1, "status": "FRESH_SOURCE_AND_NATIVE_CONTRACT_CHECKS_PASSED",
            "lean": VERSION, "package_revisions": PINS, "source_sha256": HASHES,
@@ -155,5 +155,6 @@ RECEIPT = {"schema_version": 1, "status": "FRESH_SOURCE_AND_NATIVE_CONTRACT_CHEC
            "actual_sturmian_tree_constructed": False, "actual_sturmian_dry_theorem_formalized": False,
            "operator_spectrum_constructed": False, "rh_proved": False,
            "independent_acceptance": "PENDING"}
-(ROOT / "evidence/ten-martini-checks.json").write_text(json.dumps(RECEIPT, indent=2) + "\n")
+with (RUN / "receipt.json").open("x", encoding="utf-8") as output:
+    output.write(json.dumps(RECEIPT, indent=2) + "\n")
 print("TEN_MARTINI_CHECKS_PASSED", flush=True)

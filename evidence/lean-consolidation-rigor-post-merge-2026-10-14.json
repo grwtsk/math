@@ -1,0 +1,69 @@
+{
+  "schema": "grwtsk-lean-consolidation-rigor-receipt-v1",
+  "schema_version": 1,
+  "claim_limit": "All 334 admitted library sources at 854e04dc182c36b00479b642e6301f47acc81e5f passed fresh trust-zero elaboration with fatal warnings. The owned-declaration audit failed on 18 generated partial declarations. The 63 CANDIDATE_SOURCE_ONLY artifacts were byte-bound by inventory but were not admitted to the library, elaborated by this replay, or mathematically accepted. This record is not cumulative formal-check or independent-validation acceptance.",
+  "observed_head": "854e04dc182c36b00479b642e6301f47acc81e5f",
+  "environment": {
+    "lean_version": "4.33.0",
+    "lean_commit": "d8b18978322de05a8f3dba51ef03cf5461676c17",
+    "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "dependency_artifact_scope": "Existing pinned dependency objects were reused; dependency sources were not rebuilt."
+  },
+  "source_bindings": {
+    "canonicalization": "SHA-256 of UTF-8 canonical JSON object mapping path to source SHA-256; keys sorted, ensure_ascii=true, separators comma/colon",
+    "all_active": {
+      "count": 542,
+      "sha256": "b9be2fd7841e0b949fbf68115b0ef345bdda1df7174f3fbc51bacf0fbf4d0ab6"
+    },
+    "library": {
+      "count": 334,
+      "sha256": "51b36f8a821a4d2d5807b4db75daff6855dc3938acb7ed22fc0263398dcd87b0"
+    },
+    "candidate_evidence": {
+      "count": 63,
+      "sha256": "bbd63c68bfab5d1e9362bf19ee3b4bc5ddac4a533236ed2764e6072e6379ad59",
+      "status": "CANDIDATE_SOURCE_ONLY",
+      "admission": false,
+      "replayed_by_library_check": false
+    }
+  },
+  "library_replay": {
+    "command": "python3 -B scripts/check_math_trust.py --memory-mib 8192",
+    "outcome": "FAILED_AFTER_SOURCE_REPLAY",
+    "library_sources_passed": 334,
+    "source_result_count": 334,
+    "audit_result_count": 1,
+    "source_replay_status": "334_LIBRARY_SOURCES_PASSED_TRUST_ZERO_FATAL_WARNINGS_20261014T051042Z",
+    "owned_declaration_audit": "FAILED_ON_18_PARTIAL_DECLARATION_FINDINGS",
+    "receipt": ".local/math-trust/20261014T051042Z-549da78cbe/failure.json",
+    "receipt_sha256": "369e82cf300826167c51bfa03def6f9596e2c87e83fb3e455e44fe07390c227a",
+    "audit_log": ".local/math-trust/20261014T051042Z-549da78cbe/AllProjectAudit.log",
+    "audit_log_sha256": "9bba47b137964e5357d28344a003ba89a93e3a144b8dcfce380699af50d89206",
+    "owned_declaration_count_before_failure": 8978,
+    "audit_findings": [
+      "GRWTSK.Algebra.orderedProduct._unsafe_rec",
+      "GRWTSK.Analysis.Waveform.workClock._unsafe_rec",
+      "GRWTSK.Analysis.Waveform.Scheduling.count._unsafe_rec",
+      "GRWTSK.Analysis.Waveform.Scheduling.clock._unsafe_rec",
+      "GRWTSK.Analysis.Waveform.Scheduling.debt._unsafe_rec",
+      "GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator._unsafe_rec",
+      "GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator._unsafe_rec",
+      "GRWTSK.RiemannHypothesis.BranchSequenceRealization.numerator._unsafe_rec",
+      "GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock._unsafe_rec",
+      "GRWTSK.ProofHorizon.CorkscrewChamberCap.affectedClosure._unsafe_rec",
+      "GRWTSK.ProofHorizon.CorkscrewChamberCap.routeClosureFrom._unsafe_rec",
+      "GRWTSK.ProofHorizon.CorkscrewChamberCap.RestartBudgetBoundary.totalRoundCost._unsafe_rec",
+      "GRWTSK.ProofHorizon.CorkscrewChamberCap.RestartBudgetBoundary.sessionRun._unsafe_rec",
+      "GRWTSK.LinearAlgebra.CocycleProduct.cocycleProduct._unsafe_rec",
+      "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.finiteTail._unsafe_rec",
+      "PPNCP04.Cost.prefixSum._unsafe_rec",
+      "ASBNP04.mass._unsafe_rec",
+      "HSSCP04.SignedCharts.SignedBudgetDerivation.depth._unsafe_rec"
+    ]
+  },
+  "separate_guarantees": {
+    "reconstruction": "Catalog and source-byte bindings are evidence of input identity and reconstructibility only; they do not prove the mathematics.",
+    "formal_correctness": "Fresh kernel elaboration is recorded for every admitted source, but cumulative formal-check acceptance is false because the owned-declaration audit failed.",
+    "independent_validation": "Not run; no external proof checker or full dependency-source rebuild was performed."
+  }
+}
