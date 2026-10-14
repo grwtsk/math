@@ -1,79 +1,3131 @@
 {
-  "schema_version": 1,
-  "policy": "Maintained reader documentation is explicitly registered; mathematical pages use subject/object paths and historical snapshots remain outside current navigation.",
-  "entry_points": [
-    "README.md",
-    "docs/index.md"
-  ],
-  "registered_pages": [
-    "docs/ccc-cutoff-laplace.md",
-    "docs/ccc-original-pickup-identification.md",
-    "docs/ccc-prime-cascade.md",
-    "docs/ccc-prime-research-continuation.md",
-    "docs/ccc-prime-window-laplace.md",
-    "docs/ccc-recording-scale.md",
-    "docs/ccc-rh-research.md",
-    "docs/cocycle-product.md",
-    "docs/common-j-counterexamples.md",
-    "docs/common-j.md",
-    "docs/corkscrew-chamber-cap.md",
-    "docs/explanation/documentation.md",
-    "docs/explanation/evidence.md",
-    "docs/finite-coverage.md",
-    "docs/gauge-state.md",
-    "docs/how-to/verify.md",
-    "docs/index.md",
-    "docs/interval-reflection.md",
-    "docs/jacobi-transfer.md",
-    "docs/lean-transfer-continuation.md",
-    "docs/math-layout.md",
-    "docs/math-monitor.md",
-    "docs/mathematics/Analysis/Asymptotics/polynomial-error.md",
-    "docs/mathematics/Combinatorics/Sequences/coverage-and-quotas.md",
-    "docs/mathematics/Logic/ProofChecking/source-roles.md",
-    "docs/mathematics/NumberTheory/Moebius/matched-pickup.md",
-    "docs/mathematics/NumberTheory/Prime/least-prime.md",
-    "docs/mathematics/NumberTheory/Zeta/riemann-hypothesis-criteria.md",
-    "docs/moebius-prime-product-debt.md",
-    "docs/ordered-product-determinant.md",
-    "docs/ordered-product-gauge.md",
-    "docs/ordered-product.md",
-    "docs/ordered-transfer.md",
-    "docs/polarization.md",
-    "docs/reference/lean-consolidation-report.md",
-    "docs/reference/library-pages.md",
-    "docs/reference/reconstruction.md",
-    "docs/reference/results.md",
-    "docs/reference/rigor-and-reconstruction-report.md",
-    "docs/reference/rules/rule-soundness.md",
-    "docs/reference/source-layout.md",
-    "docs/reference/trust-boundary.md",
-    "docs/rh-inference-guards.md",
-    "docs/rh-research-continuation.md",
-    "docs/schrodinger-transfer.md",
-    "docs/sequence-realization.md",
-    "docs/smooth-test-separation.md",
-    "docs/start/least-prime.md",
-    "docs/sturmian-phase-count-limits.md",
-    "docs/ten-martini-zero.md",
-    "docs/waveform-interfaces.md"
-  ],
-  "generated_pages": {
-    "docs/reference/results.md": "scripts/check_documentation.py --render"
-  },
-  "structured_references": [
-    "docs/math-layout.json",
-    "docs/reference/math-source-catalog.json",
-    "docs/reference/reconstruction-recipes.json",
-    "docs/reference/repository-artifact-catalog.json",
-    "docs/reference/results.json",
-    "docs/reference/rules/registry-schema.json",
-    "docs/reference/rules/registry.json"
-  ],
-  "historical_exclusions": [
-    {
-      "path": "docs/changes/README-before-reader-navigation.md",
-      "reason": "immutable pre-navigation snapshot; excluded from current reader navigation"
+  "schema": "mathematical-documentation-layout-v1",
+  "profile": "DOCS-MATH-2 structural candidate; no theorem or catalog admission",
+  "legacy_inventory": "docs/reference/legacy-inventory.json",
+  "legacy_inventory_sha256": "2f2e3bc83871d9fbfab2cc437005aae5f5be4a18a540684777f37db417db5625",
+  "dispositions": {
+    "cocycle-product:1": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/Cocycle/product.md"
+    },
+    "cocycle-product:2": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/Cocycle/product.md"
+    },
+    "cocycle-product:3": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/Cocycle/product.md"
+    },
+    "cocycle-product:4": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/Cocycle/product.md"
+    },
+    "cocycle-product:5": {
+      "kind": "reference",
+      "target": "docs/reference/verification-interfaces.md"
+    },
+    "cocycle-product:6": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/Cocycle/product.md"
+    },
+    "cocycle-product:0": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "common-j-counterexamples:1": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/CommonGenerator/counterexamples.md"
+    },
+    "common-j-counterexamples:2": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/CommonGenerator/counterexamples.md"
+    },
+    "common-j-counterexamples:3": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/CommonGenerator/counterexamples.md"
+    },
+    "common-j-counterexamples:4": {
+      "kind": "reference",
+      "target": "docs/reference/verification-interfaces.md"
+    },
+    "common-j-counterexamples:0": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "common-j:1": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/CommonGenerator/rotations.md"
+    },
+    "common-j:2": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/CommonGenerator/rotations.md"
+    },
+    "common-j:3": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/CommonGenerator/rotations.md"
+    },
+    "common-j:4": {
+      "kind": "reference",
+      "target": "docs/reference/verification-interfaces.md"
+    },
+    "common-j:5": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/CommonGenerator/rotations.md"
+    },
+    "common-j:0": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "finite-coverage:1": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Logic/FiniteCoverage/scope.md"
+    },
+    "finite-coverage:2": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Logic/FiniteCoverage/scope.md"
+    },
+    "finite-coverage:3": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Logic/FiniteCoverage/scope.md"
+    },
+    "finite-coverage:4": {
+      "kind": "reference",
+      "target": "docs/reference/verification-interfaces.md"
+    },
+    "finite-coverage:5": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Logic/FiniteCoverage/scope.md"
+    },
+    "finite-coverage:0": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "gauge-state:1": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/Gauge/state.md"
+    },
+    "gauge-state:2": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/Gauge/state.md"
+    },
+    "gauge-state:3": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/Gauge/state.md"
+    },
+    "gauge-state:4": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/Gauge/state.md"
+    },
+    "gauge-state:0": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "interval-reflection:1": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Analysis/Integration/interval-reflection.md"
+    },
+    "interval-reflection:2": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Analysis/Integration/interval-reflection.md"
+    },
+    "interval-reflection:3": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Analysis/Integration/interval-reflection.md"
+    },
+    "interval-reflection:4": {
+      "kind": "reference",
+      "target": "docs/reference/verification-interfaces.md"
+    },
+    "interval-reflection:5": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Analysis/Integration/interval-reflection.md"
+    },
+    "interval-reflection:0": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "jacobi-transfer:1": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/Jacobi/transfer.md"
+    },
+    "jacobi-transfer:2": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/Jacobi/transfer.md"
+    },
+    "jacobi-transfer:3": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/Jacobi/transfer.md"
+    },
+    "jacobi-transfer:4": {
+      "kind": "reference",
+      "target": "docs/reference/verification-interfaces.md"
+    },
+    "jacobi-transfer:5": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/Jacobi/transfer.md"
+    },
+    "jacobi-transfer:0": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "ordered-product-determinant:1": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/OrderedProduct/determinant.md"
+    },
+    "ordered-product-determinant:2": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/OrderedProduct/determinant.md"
+    },
+    "ordered-product-determinant:3": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/OrderedProduct/determinant.md"
+    },
+    "ordered-product-determinant:4": {
+      "kind": "reference",
+      "target": "docs/reference/verification-interfaces.md"
+    },
+    "ordered-product-determinant:5": {
+      "kind": "reference",
+      "target": "docs/reference/verification-interfaces.md"
+    },
+    "ordered-product-determinant:6": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/OrderedProduct/determinant.md"
+    },
+    "ordered-product-determinant:7": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/OrderedProduct/determinant.md"
+    },
+    "ordered-product-determinant:0": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "ordered-product-gauge:1": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Algebra/OrderedProduct/gauge.md"
+    },
+    "ordered-product-gauge:2": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Algebra/OrderedProduct/gauge.md"
+    },
+    "ordered-product-gauge:3": {
+      "kind": "reference",
+      "target": "docs/reference/verification-interfaces.md"
+    },
+    "ordered-product-gauge:4": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Algebra/OrderedProduct/gauge.md"
+    },
+    "ordered-product-gauge:0": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "ordered-product:1": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Algebra/OrderedProduct/intervals.md"
+    },
+    "ordered-product:2": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Algebra/OrderedProduct/intervals.md"
+    },
+    "ordered-product:3": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Algebra/OrderedProduct/intervals.md"
+    },
+    "ordered-product:4": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Algebra/OrderedProduct/intervals.md"
+    },
+    "ordered-product:5": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Algebra/OrderedProduct/intervals.md"
+    },
+    "ordered-product:0": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "ordered-transfer:1": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/Transfer/ordered.md"
+    },
+    "ordered-transfer:2": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/Transfer/ordered.md"
+    },
+    "ordered-transfer:3": {
+      "kind": "reference",
+      "target": "docs/reference/verification-interfaces.md"
+    },
+    "ordered-transfer:4": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/Transfer/ordered.md"
+    },
+    "ordered-transfer:0": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "polarization:1": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Analysis/InnerProductSpace/polarization.md"
+    },
+    "polarization:2": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Analysis/InnerProductSpace/polarization.md"
+    },
+    "polarization:3": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Analysis/InnerProductSpace/polarization.md"
+    },
+    "polarization:4": {
+      "kind": "reference",
+      "target": "docs/reference/verification-interfaces.md"
+    },
+    "polarization:5": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Analysis/InnerProductSpace/polarization.md"
+    },
+    "polarization:0": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "rh-inference-guards:1": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Zeta/Riemann/inference-guards.md"
+    },
+    "rh-inference-guards:2": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Zeta/Riemann/inference-guards.md"
+    },
+    "rh-inference-guards:3": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Zeta/Riemann/inference-guards.md"
+    },
+    "rh-inference-guards:5": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Zeta/Riemann/inference-guards.md"
+    },
+    "rh-inference-guards:0": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "rh-inference-guards:4": {
+      "kind": "reference",
+      "target": "docs/reference/verification-interfaces.md"
+    },
+    "schrodinger-transfer:1": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/Schrodinger/transfer.md"
+    },
+    "schrodinger-transfer:2": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/Schrodinger/transfer.md"
+    },
+    "schrodinger-transfer:3": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/Schrodinger/transfer.md"
+    },
+    "schrodinger-transfer:4": {
+      "kind": "reference",
+      "target": "docs/reference/verification-interfaces.md"
+    },
+    "schrodinger-transfer:5": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/Schrodinger/transfer.md"
+    },
+    "schrodinger-transfer:0": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "ccc-cutoff-laplace:1": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/cutoff.md"
+    },
+    "ccc-cutoff-laplace:2": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/cutoff.md"
+    },
+    "ccc-cutoff-laplace:3": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/cutoff.md"
+    },
+    "ccc-cutoff-laplace:4": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/cutoff.md"
+    },
+    "ccc-cutoff-laplace:5": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/cutoff.md"
+    },
+    "ccc-cutoff-laplace:6": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/cutoff.md"
+    },
+    "ccc-cutoff-laplace:7": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/cutoff.md"
+    },
+    "ccc-cutoff-laplace:8": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/cutoff.md"
+    },
+    "ccc-cutoff-laplace:9": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/cutoff.md"
+    },
+    "ccc-cutoff-laplace:10": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/cutoff.md"
+    },
+    "ccc-cutoff-laplace:11": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/cutoff.md"
+    },
+    "ccc-cutoff-laplace:14": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/cutoff.md"
+    },
+    "ccc-cutoff-laplace:15": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/cutoff.md"
+    },
+    "ccc-cutoff-laplace:0": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "ccc-cutoff-laplace:12": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "ccc-cutoff-laplace:13": {
+      "kind": "reference",
+      "target": "docs/reference/verification-interfaces.md"
+    },
+    "ccc-original-pickup-identification:1": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Pickup/identification.md"
+    },
+    "ccc-original-pickup-identification:2": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Pickup/identification.md"
+    },
+    "ccc-original-pickup-identification:3": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Pickup/identification.md"
+    },
+    "ccc-original-pickup-identification:4": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Pickup/identification.md"
+    },
+    "ccc-original-pickup-identification:5": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Pickup/identification.md"
+    },
+    "ccc-original-pickup-identification:7": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Pickup/identification.md"
+    },
+    "ccc-original-pickup-identification:0": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "ccc-original-pickup-identification:6": {
+      "kind": "reference",
+      "target": "docs/reference/verification-interfaces.md"
+    },
+    "ccc-prime-window-laplace:1": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-window.md"
+    },
+    "ccc-prime-window-laplace:2": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-window.md"
+    },
+    "ccc-prime-window-laplace:3": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-window.md"
+    },
+    "ccc-prime-window-laplace:4": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-window.md"
+    },
+    "ccc-prime-window-laplace:5": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-window.md"
+    },
+    "ccc-prime-window-laplace:6": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-window.md"
+    },
+    "ccc-prime-window-laplace:7": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-window.md"
+    },
+    "ccc-prime-window-laplace:8": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-window.md"
+    },
+    "ccc-prime-window-laplace:9": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-window.md"
+    },
+    "ccc-prime-window-laplace:10": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-window.md"
+    },
+    "ccc-prime-window-laplace:11": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-window.md"
+    },
+    "ccc-prime-window-laplace:12": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-window.md"
+    },
+    "ccc-prime-window-laplace:13": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-window.md"
+    },
+    "ccc-prime-window-laplace:0": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "ccc-prime-window-laplace:14": {
+      "kind": "reference",
+      "target": "docs/reference/verification-interfaces.md"
+    },
+    "sturmian-phase-count-limits:1": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:2": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:3": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:4": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:5": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:6": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:7": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:8": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:9": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:10": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:11": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:12": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:13": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:14": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:15": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:16": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:17": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:18": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:19": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:20": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:21": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:22": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:23": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:24": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:25": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:26": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:27": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:28": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:29": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:30": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:31": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:32": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:33": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:34": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:35": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:36": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:37": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:38": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:39": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:40": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:41": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:42": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:43": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:44": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:45": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "sturmian-phase-count-limits:0": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "ccc-rh-research:1": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/growth.md"
+    },
+    "ccc-rh-research:2": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/growth.md"
+    },
+    "ccc-rh-research:3": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/growth.md"
+    },
+    "ccc-rh-research:4": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/growth.md"
+    },
+    "ccc-rh-research:5": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/growth.md"
+    },
+    "ccc-rh-research:6": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/growth.md"
+    },
+    "ccc-rh-research:7": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/growth.md"
+    },
+    "ccc-rh-research:8": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/growth.md"
+    },
+    "ccc-rh-research:9": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/growth.md"
+    },
+    "ccc-rh-research:10": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/gram.md"
+    },
+    "ccc-rh-research:11": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/gram.md"
+    },
+    "ccc-rh-research:12": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/gram.md"
+    },
+    "ccc-rh-research:13": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/gram.md"
+    },
+    "ccc-rh-research:14": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/gram.md"
+    },
+    "ccc-rh-research:15": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/gram.md"
+    },
+    "ccc-rh-research:16": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Zeta/Riemann/criteria.md"
+    },
+    "ccc-rh-research:17": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Zeta/Riemann/criteria.md"
+    },
+    "ccc-rh-research:18": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Zeta/Riemann/criteria.md"
+    },
+    "ccc-rh-research:19": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Zeta/Riemann/criteria.md"
+    },
+    "ccc-rh-research:20": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Zeta/Riemann/criteria.md"
+    },
+    "ccc-rh-research:21": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Zeta/Riemann/criteria.md"
+    },
+    "ccc-rh-research:22": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Zeta/Riemann/criteria.md"
+    },
+    "ccc-rh-research:23": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Zeta/Riemann/criteria.md"
+    },
+    "ccc-rh-research:24": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/growth.md"
+    },
+    "ccc-rh-research:25": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/growth.md"
+    },
+    "ccc-rh-research:26": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/growth.md"
+    },
+    "ccc-rh-research:27": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/growth.md"
+    },
+    "ccc-rh-research:28": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/growth.md"
+    },
+    "ccc-rh-research:29": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/growth.md"
+    },
+    "ccc-rh-research:30": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/growth.md"
+    },
+    "ccc-rh-research:31": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/growth.md"
+    },
+    "ccc-rh-research:32": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/growth.md"
+    },
+    "ccc-rh-research:33": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/growth.md"
+    },
+    "ccc-rh-research:34": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/growth.md"
+    },
+    "ccc-rh-research:35": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/growth.md"
+    },
+    "ccc-rh-research:36": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/growth.md"
+    },
+    "ccc-rh-research:37": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/growth.md"
+    },
+    "ccc-rh-research:38": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/growth.md"
+    },
+    "ccc-rh-research:39": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/growth.md"
+    },
+    "ccc-rh-research:40": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/growth.md"
+    },
+    "ccc-rh-research:41": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/growth.md"
+    },
+    "ccc-rh-research:42": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/growth.md"
+    },
+    "ccc-rh-research:43": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/growth.md"
+    },
+    "ccc-rh-research:44": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/determinant.md"
+    },
+    "ccc-rh-research:45": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/determinant.md"
+    },
+    "ccc-rh-research:46": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/determinant.md"
+    },
+    "ccc-rh-research:47": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/determinant.md"
+    },
+    "ccc-rh-research:48": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/determinant.md"
+    },
+    "ccc-rh-research:49": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/determinant.md"
+    },
+    "ccc-rh-research:50": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/determinant.md"
+    },
+    "ccc-rh-research:51": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/determinant.md"
+    },
+    "ccc-rh-research:52": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/determinant.md"
+    },
+    "ccc-rh-research:53": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/determinant.md"
+    },
+    "ccc-rh-research:54": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/Schrodinger/almost-mathieu.md"
+    },
+    "ccc-rh-research:55": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/Schrodinger/almost-mathieu.md"
+    },
+    "ccc-rh-research:56": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/Schrodinger/almost-mathieu.md"
+    },
+    "ccc-rh-research:57": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/Schrodinger/almost-mathieu.md"
+    },
+    "ccc-rh-research:58": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/Schrodinger/almost-mathieu.md"
+    },
+    "ccc-rh-research:59": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/Schrodinger/almost-mathieu.md"
+    },
+    "ccc-rh-research:60": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/Schrodinger/almost-mathieu.md"
+    },
+    "ccc-rh-research:62": {
+      "kind": "reference",
+      "target": "docs/reference/verification-interfaces.md"
+    },
+    "ccc-rh-research:0": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "ccc-rh-research:61": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "ccc-rh-research:63": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/growth.md",
+      "split": "open arithmetic premise retained; operational projection remains historical"
+    },
+    "ccc-prime-cascade:3": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/cascade.md"
+    },
+    "ccc-prime-cascade:4": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/cascade.md"
+    },
+    "ccc-prime-cascade:5": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/cascade.md"
+    },
+    "ccc-prime-cascade:6": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/cascade.md"
+    },
+    "ccc-prime-cascade:7": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/cascade.md"
+    },
+    "ccc-prime-cascade:8": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/cascade.md"
+    },
+    "ccc-prime-cascade:9": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/cascade.md"
+    },
+    "ccc-prime-cascade:10": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/cascade.md"
+    },
+    "ccc-prime-cascade:11": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/cascade.md"
+    },
+    "ccc-prime-cascade:12": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/cascade.md"
+    },
+    "ccc-prime-cascade:13": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/cascade.md"
+    },
+    "ccc-prime-cascade:14": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/cascade.md"
+    },
+    "ccc-prime-cascade:15": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/cascade.md"
+    },
+    "ccc-prime-cascade:16": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/cascade.md"
+    },
+    "ccc-prime-cascade:17": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/cascade.md"
+    },
+    "ccc-prime-cascade:18": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/conditional-growth.md"
+    },
+    "ccc-prime-cascade:19": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/conditional-growth.md"
+    },
+    "ccc-prime-cascade:20": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/conditional-growth.md"
+    },
+    "ccc-prime-cascade:21": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/conditional-growth.md"
+    },
+    "ccc-prime-cascade:22": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/conditional-growth.md"
+    },
+    "ccc-prime-cascade:23": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/conditional-growth.md"
+    },
+    "ccc-prime-cascade:24": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/conditional-growth.md"
+    },
+    "ccc-prime-cascade:25": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/conditional-growth.md"
+    },
+    "ccc-prime-cascade:26": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/conditional-growth.md"
+    },
+    "ccc-prime-cascade:27": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/conditional-growth.md"
+    },
+    "ccc-prime-cascade:28": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/conditional-growth.md"
+    },
+    "ccc-prime-cascade:29": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/conditional-growth.md"
+    },
+    "ccc-prime-cascade:30": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/conditional-growth.md"
+    },
+    "ccc-prime-cascade:31": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/conditional-growth.md"
+    },
+    "ccc-prime-cascade:32": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/conditional-growth.md"
+    },
+    "ccc-prime-cascade:33": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/conditional-growth.md"
+    },
+    "ccc-prime-cascade:34": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/conditional-growth.md"
+    },
+    "ccc-prime-cascade:35": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/conditional-growth.md"
+    },
+    "ccc-prime-cascade:1": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/conditional-growth.md"
+    },
+    "ccc-prime-cascade:2": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/conditional-growth.md"
+    },
+    "ccc-prime-cascade:38": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/conditional-growth.md"
+    },
+    "ccc-prime-cascade:37": {
+      "kind": "reference",
+      "target": "docs/reference/verification-interfaces.md"
+    },
+    "ccc-prime-cascade:0": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "ccc-prime-cascade:36": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "ccc-recording-scale:2": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/negative-correlation.md"
+    },
+    "ccc-recording-scale:3": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/negative-correlation.md"
+    },
+    "ccc-recording-scale:4": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/negative-correlation.md"
+    },
+    "ccc-recording-scale:5": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/negative-correlation.md"
+    },
+    "ccc-recording-scale:6": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/negative-correlation.md"
+    },
+    "ccc-recording-scale:7": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/negative-correlation.md"
+    },
+    "ccc-recording-scale:8": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/negative-correlation.md"
+    },
+    "ccc-recording-scale:9": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/uniform-supplier-obstruction.md"
+    },
+    "ccc-recording-scale:10": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/uniform-supplier-obstruction.md"
+    },
+    "ccc-recording-scale:11": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/uniform-supplier-obstruction.md"
+    },
+    "ccc-recording-scale:12": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/uniform-supplier-obstruction.md"
+    },
+    "ccc-recording-scale:13": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/uniform-supplier-obstruction.md"
+    },
+    "ccc-recording-scale:14": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/uniform-supplier-obstruction.md"
+    },
+    "ccc-recording-scale:15": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/uniform-supplier-obstruction.md"
+    },
+    "ccc-recording-scale:16": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/uniform-supplier-obstruction.md"
+    },
+    "ccc-recording-scale:17": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/uniform-supplier-obstruction.md"
+    },
+    "ccc-recording-scale:18": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/uniform-supplier-obstruction.md"
+    },
+    "ccc-recording-scale:19": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/uniform-supplier-obstruction.md"
+    },
+    "ccc-recording-scale:20": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/uniform-supplier-obstruction.md"
+    },
+    "ccc-recording-scale:21": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/uniform-supplier-obstruction.md"
+    },
+    "ccc-recording-scale:22": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/uniform-supplier-obstruction.md"
+    },
+    "ccc-recording-scale:23": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/uniform-supplier-obstruction.md"
+    },
+    "ccc-recording-scale:24": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/uniform-supplier-obstruction.md"
+    },
+    "ccc-recording-scale:25": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/uniform-supplier-obstruction.md"
+    },
+    "ccc-recording-scale:26": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/uniform-supplier-obstruction.md"
+    },
+    "ccc-recording-scale:27": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/uniform-supplier-obstruction.md"
+    },
+    "ccc-recording-scale:1": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/recording-blocks.md"
+    },
+    "ccc-recording-scale:28": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/recording-blocks.md"
+    },
+    "ccc-recording-scale:29": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/recording-blocks.md"
+    },
+    "ccc-recording-scale:30": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/recording-blocks.md"
+    },
+    "ccc-recording-scale:31": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/recording-blocks.md"
+    },
+    "ccc-recording-scale:32": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/recording-blocks.md"
+    },
+    "ccc-recording-scale:33": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/recording-blocks.md"
+    },
+    "ccc-recording-scale:34": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/recording-blocks.md"
+    },
+    "ccc-recording-scale:35": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/recording-blocks.md"
+    },
+    "ccc-recording-scale:36": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/recording-blocks.md"
+    },
+    "ccc-recording-scale:37": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/recording-blocks.md"
+    },
+    "ccc-recording-scale:38": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/recording-blocks.md"
+    },
+    "ccc-recording-scale:39": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/recording-blocks.md"
+    },
+    "ccc-recording-scale:40": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/recording-blocks.md"
+    },
+    "ccc-recording-scale:41": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/recording-blocks.md"
+    },
+    "ccc-recording-scale:42": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/recording-blocks.md"
+    },
+    "ccc-recording-scale:43": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/recording-blocks.md"
+    },
+    "ccc-recording-scale:44": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/recording-blocks.md"
+    },
+    "ccc-recording-scale:45": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/recording-blocks.md"
+    },
+    "ccc-recording-scale:46": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/recording-blocks.md"
+    },
+    "ccc-recording-scale:47": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/recording-blocks.md"
+    },
+    "ccc-recording-scale:49": {
+      "kind": "reference",
+      "target": "docs/reference/verification-interfaces.md"
+    },
+    "ccc-recording-scale:0": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "ccc-recording-scale:48": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "moebius-prime-product-debt:1": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md"
+    },
+    "moebius-prime-product-debt:2": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md"
+    },
+    "moebius-prime-product-debt:3": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md"
+    },
+    "moebius-prime-product-debt:4": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md"
+    },
+    "moebius-prime-product-debt:5": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md"
+    },
+    "moebius-prime-product-debt:6": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md"
+    },
+    "moebius-prime-product-debt:7": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md"
+    },
+    "moebius-prime-product-debt:8": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md"
+    },
+    "moebius-prime-product-debt:9": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md"
+    },
+    "moebius-prime-product-debt:10": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md"
+    },
+    "moebius-prime-product-debt:11": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md"
+    },
+    "moebius-prime-product-debt:12": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md"
+    },
+    "moebius-prime-product-debt:13": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md"
+    },
+    "moebius-prime-product-debt:14": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md"
+    },
+    "moebius-prime-product-debt:15": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md"
+    },
+    "moebius-prime-product-debt:16": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md"
+    },
+    "moebius-prime-product-debt:17": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md"
+    },
+    "moebius-prime-product-debt:18": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md"
+    },
+    "moebius-prime-product-debt:19": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md"
+    },
+    "moebius-prime-product-debt:20": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md"
+    },
+    "moebius-prime-product-debt:21": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md"
+    },
+    "moebius-prime-product-debt:22": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md"
+    },
+    "moebius-prime-product-debt:23": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md"
+    },
+    "moebius-prime-product-debt:24": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md"
+    },
+    "moebius-prime-product-debt:25": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md"
+    },
+    "moebius-prime-product-debt:26": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md"
+    },
+    "moebius-prime-product-debt:27": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md"
+    },
+    "moebius-prime-product-debt:28": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md"
+    },
+    "moebius-prime-product-debt:29": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md"
+    },
+    "moebius-prime-product-debt:30": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md"
+    },
+    "moebius-prime-product-debt:31": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md"
+    },
+    "moebius-prime-product-debt:32": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md"
+    },
+    "moebius-prime-product-debt:33": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md"
+    },
+    "moebius-prime-product-debt:34": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md"
+    },
+    "moebius-prime-product-debt:35": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md"
+    },
+    "moebius-prime-product-debt:36": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md"
+    },
+    "moebius-prime-product-debt:37": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md"
+    },
+    "moebius-prime-product-debt:38": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md"
+    },
+    "moebius-prime-product-debt:39": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/damped-tails.md"
+    },
+    "moebius-prime-product-debt:40": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/damped-tails.md"
+    },
+    "moebius-prime-product-debt:41": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/damped-tails.md"
+    },
+    "moebius-prime-product-debt:42": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/damped-tails.md"
+    },
+    "moebius-prime-product-debt:43": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/damped-tails.md"
+    },
+    "moebius-prime-product-debt:44": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/damped-tails.md"
+    },
+    "moebius-prime-product-debt:45": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/damped-tails.md"
+    },
+    "moebius-prime-product-debt:46": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/damped-tails.md"
+    },
+    "moebius-prime-product-debt:47": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/damped-tails.md"
+    },
+    "moebius-prime-product-debt:48": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/damped-tails.md"
+    },
+    "moebius-prime-product-debt:49": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/damped-tails.md"
+    },
+    "moebius-prime-product-debt:50": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/damped-tails.md"
+    },
+    "moebius-prime-product-debt:51": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/damped-tails.md"
+    },
+    "moebius-prime-product-debt:52": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/damped-tails.md"
+    },
+    "moebius-prime-product-debt:53": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/damped-tails.md"
+    },
+    "moebius-prime-product-debt:54": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/damped-tails.md"
+    },
+    "moebius-prime-product-debt:0": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "ccc-prime-research-continuation:1": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/conditional-growth.md"
+    },
+    "ccc-prime-research-continuation:3": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/conditional-growth.md"
+    },
+    "ccc-prime-research-continuation:4": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/conditional-growth.md"
+    },
+    "ccc-prime-research-continuation:5": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/conditional-growth.md"
+    },
+    "ccc-prime-research-continuation:7": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/conditional-growth.md"
+    },
+    "ccc-prime-research-continuation:8": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/conditional-growth.md"
+    },
+    "ccc-prime-research-continuation:17": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/conditional-growth.md"
+    },
+    "ccc-prime-research-continuation:9": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/cutoff.md"
+    },
+    "ccc-prime-research-continuation:10": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/cutoff.md"
+    },
+    "ccc-prime-research-continuation:11": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/cutoff.md"
+    },
+    "ccc-prime-research-continuation:12": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/cutoff.md"
+    },
+    "ccc-prime-research-continuation:13": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/cutoff.md"
+    },
+    "ccc-prime-research-continuation:14": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/cutoff.md"
+    },
+    "ccc-prime-research-continuation:15": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/cutoff.md"
+    },
+    "ccc-prime-research-continuation:16": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/cutoff.md"
+    },
+    "ccc-prime-research-continuation:19": {
+      "kind": "reference",
+      "target": "docs/reference/verification-interfaces.md"
+    },
+    "ccc-prime-research-continuation:0": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "ccc-prime-research-continuation:2": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "ccc-prime-research-continuation:6": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "ccc-prime-research-continuation:18": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "ccc-prime-research-continuation:20": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "ccc-prime-research-continuation:21": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "ten-martini-zero:1": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/Schrodinger/sturmian.md"
+    },
+    "ten-martini-zero:2": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/Schrodinger/sturmian.md"
+    },
+    "ten-martini-zero:3": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/Schrodinger/sturmian.md"
+    },
+    "ten-martini-zero:4": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/Schrodinger/sturmian.md"
+    },
+    "ten-martini-zero:5": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/Schrodinger/sturmian.md"
+    },
+    "ten-martini-zero:6": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/Schrodinger/sturmian.md"
+    },
+    "ten-martini-zero:46": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/Schrodinger/sturmian.md"
+    },
+    "ten-martini-zero:7": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/IntegratedDensityOfStates/free.md"
+    },
+    "ten-martini-zero:8": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/IntegratedDensityOfStates/free.md"
+    },
+    "ten-martini-zero:9": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/IntegratedDensityOfStates/free.md"
+    },
+    "ten-martini-zero:10": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/Schrodinger/almost-mathieu.md"
+    },
+    "ten-martini-zero:11": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/Schrodinger/almost-mathieu.md"
+    },
+    "ten-martini-zero:12": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/Schrodinger/almost-mathieu.md"
+    },
+    "ten-martini-zero:14": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/Schrodinger/almost-mathieu.md"
+    },
+    "ten-martini-zero:42": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/Schrodinger/almost-mathieu.md"
+    },
+    "ten-martini-zero:44": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/Schrodinger/almost-mathieu.md"
+    },
+    "ten-martini-zero:15": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/GapTransport/labels-and-coding.md"
+    },
+    "ten-martini-zero:16": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/GapTransport/labels-and-coding.md"
+    },
+    "ten-martini-zero:17": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/GapTransport/labels-and-coding.md"
+    },
+    "ten-martini-zero:18": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/GapTransport/labels-and-coding.md"
+    },
+    "ten-martini-zero:19": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/GapTransport/labels-and-coding.md"
+    },
+    "ten-martini-zero:20": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/GapTransport/labels-and-coding.md"
+    },
+    "ten-martini-zero:21": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/GapTransport/labels-and-coding.md"
+    },
+    "ten-martini-zero:22": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/GapTransport/labels-and-coding.md"
+    },
+    "ten-martini-zero:23": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/GapTransport/labels-and-coding.md"
+    },
+    "ten-martini-zero:24": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/GapTransport/labels-and-coding.md"
+    },
+    "ten-martini-zero:25": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/GapTransport/labels-and-coding.md"
+    },
+    "ten-martini-zero:26": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/GapTransport/labels-and-coding.md"
+    },
+    "ten-martini-zero:27": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/GapTransport/labels-and-coding.md"
+    },
+    "ten-martini-zero:28": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/GapTransport/labels-and-coding.md"
+    },
+    "ten-martini-zero:29": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/GapTransport/labels-and-coding.md"
+    },
+    "ten-martini-zero:30": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/GapTransport/labels-and-coding.md"
+    },
+    "ten-martini-zero:31": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/GapTransport/labels-and-coding.md"
+    },
+    "ten-martini-zero:47": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/GapTransport/labels-and-coding.md"
+    },
+    "ten-martini-zero:32": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/count-comparison.md"
+    },
+    "ten-martini-zero:33": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/count-comparison.md"
+    },
+    "ten-martini-zero:34": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/count-comparison.md"
+    },
+    "ten-martini-zero:35": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/count-comparison.md"
+    },
+    "ten-martini-zero:36": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/count-comparison.md"
+    },
+    "ten-martini-zero:37": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/count-comparison.md"
+    },
+    "ten-martini-zero:38": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/count-comparison.md"
+    },
+    "ten-martini-zero:39": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/count-comparison.md"
+    },
+    "ten-martini-zero:40": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/count-comparison.md"
+    },
+    "ten-martini-zero:48": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/count-comparison.md"
+    },
+    "ten-martini-zero:49": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/count-comparison.md"
+    },
+    "ten-martini-zero:58": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/count-comparison.md"
+    },
+    "ten-martini-zero:43": {
+      "kind": "reference",
+      "target": "docs/reference/literature/unitary-almost-mathieu.md"
+    },
+    "ten-martini-zero:50": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FreeDirichletSpectrum/eigenvalues.md"
+    },
+    "ten-martini-zero:51": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FreeDirichletSpectrum/eigenvalues.md"
+    },
+    "ten-martini-zero:52": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FreeDirichletSpectrum/eigenvalues.md"
+    },
+    "ten-martini-zero:53": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/IntegratedDensityOfStates/free.md"
+    },
+    "ten-martini-zero:54": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/IntegratedDensityOfStates/free.md"
+    },
+    "ten-martini-zero:55": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/IntegratedDensityOfStates/free.md"
+    },
+    "ten-martini-zero:56": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/IntegratedDensityOfStates/free.md"
+    },
+    "ten-martini-zero:57": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/IntegratedDensityOfStates/free.md"
+    },
+    "ten-martini-zero:59": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/dirichlet-cut.md"
+    },
+    "ten-martini-zero:60": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/dirichlet-cut.md"
+    },
+    "ten-martini-zero:61": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/dirichlet-cut.md"
+    },
+    "ten-martini-zero:62": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/dirichlet-cut.md"
+    },
+    "ten-martini-zero:63": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/repeated-blocks.md"
+    },
+    "ten-martini-zero:64": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/repeated-blocks.md"
+    },
+    "ten-martini-zero:65": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/repeated-blocks.md"
+    },
+    "ten-martini-zero:66": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/repeated-blocks.md"
+    },
+    "ten-martini-zero:67": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/repeated-blocks.md"
+    },
+    "ten-martini-zero:68": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/repeated-blocks.md"
+    },
+    "ten-martini-zero:69": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/repeated-blocks.md"
+    },
+    "ten-martini-zero:70": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/repeated-blocks.md"
+    },
+    "ten-martini-zero:71": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/repeated-blocks.md"
+    },
+    "ten-martini-zero:72": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/repeated-blocks.md"
+    },
+    "ten-martini-zero:73": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/repeated-blocks.md"
+    },
+    "ten-martini-zero:74": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/repeated-blocks.md"
+    },
+    "ten-martini-zero:75": {
+      "kind": "reference",
+      "target": "docs/reference/verification-interfaces.md"
+    },
+    "ten-martini-zero:76": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/growth.md"
+    },
+    "ten-martini-zero:0": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "ten-martini-zero:13": {
+      "kind": "reference",
+      "target": "docs/reference/mathematical-terminology.md"
+    },
+    "ten-martini-zero:41": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "ten-martini-zero:45": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "rh-research-continuation:2": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/growth.md"
+    },
+    "rh-research-continuation:4": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/growth.md",
+      "consolidated_with": [
+        "ccc-rh-research:19",
+        "ccc-rh-research:32",
+        "ccc-rh-research:37"
+      ]
+    },
+    "rh-research-continuation:5": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/growth.md",
+      "consolidated_with": [
+        "ccc-rh-research:19",
+        "ccc-rh-research:32",
+        "ccc-rh-research:37"
+      ]
+    },
+    "rh-research-continuation:6": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/growth.md",
+      "consolidated_with": [
+        "ccc-rh-research:19",
+        "ccc-rh-research:32",
+        "ccc-rh-research:37"
+      ]
+    },
+    "rh-research-continuation:7": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/growth.md",
+      "consolidated_with": [
+        "ccc-rh-research:19",
+        "ccc-rh-research:32",
+        "ccc-rh-research:37"
+      ]
+    },
+    "rh-research-continuation:9": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/recording-blocks.md",
+      "consolidated_with": [
+        "ccc-recording-scale:26"
+      ]
+    },
+    "rh-research-continuation:10": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-window.md",
+      "consolidated_with": [
+        "ccc-prime-window-laplace:10"
+      ]
+    },
+    "rh-research-continuation:11": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/cutoff.md",
+      "consolidated_with": [
+        "ccc-cutoff-laplace:5"
+      ]
+    },
+    "rh-research-continuation:45": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/growth.md"
+    },
+    "rh-research-continuation:8": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/GapTransport/labels-and-coding.md"
+    },
+    "rh-research-continuation:43": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/GapTransport/labels-and-coding.md"
+    },
+    "rh-research-continuation:44": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/GapTransport/labels-and-coding.md"
+    },
+    "rh-research-continuation:13": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/count-comparison.md"
+    },
+    "rh-research-continuation:14": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/count-comparison.md"
+    },
+    "rh-research-continuation:15": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/count-comparison.md"
+    },
+    "rh-research-continuation:16": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/count-comparison.md"
+    },
+    "rh-research-continuation:17": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FreeDirichletSpectrum/eigenvalues.md"
+    },
+    "rh-research-continuation:18": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/IntegratedDensityOfStates/free.md"
+    },
+    "rh-research-continuation:19": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/IntegratedDensityOfStates/free.md"
+    },
+    "rh-research-continuation:20": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/IntegratedDensityOfStates/free.md"
+    },
+    "rh-research-continuation:21": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/dirichlet-cut.md"
+    },
+    "rh-research-continuation:22": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/dirichlet-cut.md"
+    },
+    "rh-research-continuation:23": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/dirichlet-cut.md"
+    },
+    "rh-research-continuation:24": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/dirichlet-cut.md"
+    },
+    "rh-research-continuation:25": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/repeated-blocks.md",
+      "consolidated_with": [
+        "ten-martini-zero:66",
+        "ten-martini-zero:70",
+        "ten-martini-zero:72"
+      ]
+    },
+    "rh-research-continuation:26": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/repeated-blocks.md",
+      "consolidated_with": [
+        "ten-martini-zero:66",
+        "ten-martini-zero:70",
+        "ten-martini-zero:72"
+      ]
+    },
+    "rh-research-continuation:27": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/repeated-blocks.md",
+      "consolidated_with": [
+        "ten-martini-zero:66",
+        "ten-martini-zero:70",
+        "ten-martini-zero:72"
+      ]
+    },
+    "rh-research-continuation:31": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "rh-research-continuation:32": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md"
+    },
+    "rh-research-continuation:35": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md",
+      "consolidated_with": [
+        "moebius-prime-product-debt:10",
+        "moebius-prime-product-debt:28",
+        "moebius-prime-product-debt:36"
+      ]
+    },
+    "rh-research-continuation:36": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md",
+      "consolidated_with": [
+        "moebius-prime-product-debt:10",
+        "moebius-prime-product-debt:28",
+        "moebius-prime-product-debt:36"
+      ]
+    },
+    "rh-research-continuation:28": {
+      "kind": "reference",
+      "target": "docs/reference/verification-interfaces.md"
+    },
+    "rh-research-continuation:29": {
+      "kind": "reference",
+      "target": "docs/reference/verification-interfaces.md"
+    },
+    "rh-research-continuation:33": {
+      "kind": "reference",
+      "target": "docs/reference/verification-interfaces.md"
+    },
+    "rh-research-continuation:42": {
+      "kind": "reference",
+      "target": "docs/reference/verification-interfaces.md"
+    },
+    "rh-research-continuation:50": {
+      "kind": "reference",
+      "target": "docs/reference/verification-interfaces.md"
+    },
+    "rh-research-continuation:51": {
+      "kind": "reference",
+      "target": "docs/reference/verification-interfaces.md"
+    },
+    "rh-research-continuation:39": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Analysis/Fourier/WindowCertificates/angular.md"
+    },
+    "rh-research-continuation:0": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "rh-research-continuation:1": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "rh-research-continuation:3": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "rh-research-continuation:12": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "rh-research-continuation:30": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "rh-research-continuation:34": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "rh-research-continuation:37": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "rh-research-continuation:38": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "rh-research-continuation:40": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "rh-research-continuation:41": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "rh-research-continuation:46": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "rh-research-continuation:47": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "rh-research-continuation:48": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "rh-research-continuation:49": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "rh-research-continuation:52": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "waveform-interfaces:1": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Logic/FiniteSequences/prefix-coverage.md"
+    },
+    "waveform-interfaces:4": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Logic/FiniteSequences/prefix-coverage.md"
+    },
+    "waveform-interfaces:5": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Combinatorics/Sequences/quotas.md"
+    },
+    "waveform-interfaces:6": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Combinatorics/Sequences/quotas.md"
+    },
+    "waveform-interfaces:8": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Analysis/Fourier/IntegerSeries/encoding.md"
+    },
+    "waveform-interfaces:9": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/LinearAlgebra/Schrodinger/sampled-potential.md"
+    },
+    "waveform-interfaces:11": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Analysis/Fourier/WindowCertificates/angular.md"
+    },
+    "waveform-interfaces:12": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Analysis/Fourier/WindowCertificates/angular.md"
+    },
+    "waveform-interfaces:13": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Analysis/NormedSpace/reconstruction.md"
+    },
+    "waveform-interfaces:14": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/growth.md"
+    },
+    "waveform-interfaces:16": {
+      "kind": "reference",
+      "target": "docs/reference/verification-interfaces.md"
+    },
+    "waveform-interfaces:0": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "waveform-interfaces:2": {
+      "kind": "reference",
+      "target": "docs/reference/mathematical-terminology.md",
+      "split": "mathematical roles retained; obsolete aggregate filenames remain historical"
+    },
+    "waveform-interfaces:3": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "waveform-interfaces:7": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "waveform-interfaces:10": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "waveform-interfaces:15": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "waveform-interfaces:17": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "sequence-realization:3": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/ContinuedFractions/scheduled-denominators.md",
+      "secondary_targets": [
+        "docs/mathematics/NumberTheory/ContinuedFractions/frequency-realization.md",
+        "docs/mathematics/DynamicalSystems/Sequences/approximation-return.md"
+      ],
+      "split": "three explicit bullet roles"
+    },
+    "sequence-realization:4": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/DynamicalSystems/Sequences/approximation-return.md"
+    },
+    "sequence-realization:9": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/DynamicalSystems/Sequences/approximation-return.md"
+    },
+    "sequence-realization:6": {
+      "kind": "reference",
+      "target": "docs/reference/verification-interfaces.md"
+    },
+    "sequence-realization:7": {
+      "kind": "reference",
+      "target": "docs/reference/verification-interfaces.md"
+    },
+    "sequence-realization:8": {
+      "kind": "reference",
+      "target": "docs/reference/verification-interfaces.md"
+    },
+    "sequence-realization:0": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "sequence-realization:1": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "sequence-realization:2": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "sequence-realization:5": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "smooth-test-separation:1": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Analysis/TestFunctions/separation.md"
+    },
+    "smooth-test-separation:2": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Analysis/TestFunctions/separation.md"
+    },
+    "smooth-test-separation:3": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Analysis/TestFunctions/separation.md"
+    },
+    "smooth-test-separation:4": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Analysis/TestFunctions/separation.md"
+    },
+    "smooth-test-separation:5": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Analysis/TestFunctions/exponential-moments.md"
+    },
+    "smooth-test-separation:6": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Analysis/TestFunctions/exponential-moments.md"
+    },
+    "smooth-test-separation:7": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Analysis/TestFunctions/exponential-moments.md"
+    },
+    "smooth-test-separation:8": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Analysis/TestFunctions/exponential-moments.md"
+    },
+    "smooth-test-separation:9": {
+      "kind": "reference",
+      "target": "docs/reference/verification-interfaces.md"
+    },
+    "smooth-test-separation:10": {
+      "kind": "reference",
+      "target": "docs/reference/verification-interfaces.md"
+    },
+    "smooth-test-separation:11": {
+      "kind": "reference",
+      "target": "docs/reference/verification-interfaces.md"
+    },
+    "smooth-test-separation:12": {
+      "kind": "reference",
+      "target": "docs/reference/verification-interfaces.md"
+    },
+    "smooth-test-separation:0": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "corkscrew-chamber-cap:1": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Analysis/TestFunctions/polynomial-profile.md"
+    },
+    "corkscrew-chamber-cap:4": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Analysis/Convolution/compact-correlation.md"
+    },
+    "corkscrew-chamber-cap:5": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/gram.md"
+    },
+    "corkscrew-chamber-cap:7": {
+      "kind": "reference",
+      "target": "docs/reference/verification-interfaces.md"
+    },
+    "corkscrew-chamber-cap:8": {
+      "kind": "reference",
+      "target": "docs/reference/verification-interfaces.md"
+    },
+    "corkscrew-chamber-cap:9": {
+      "kind": "reference",
+      "target": "docs/reference/verification-interfaces.md"
+    },
+    "corkscrew-chamber-cap:3": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/Analysis/TestFunctions/polynomial-profile.md",
+      "secondary_targets": [
+        "docs/mathematics/Analysis/InnerProductSpace/causal-response-gram.md"
+      ],
+      "split": "explicit mathematical sentence boundary"
+    },
+    "corkscrew-chamber-cap:6": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/NumberTheory/Moebius/Energy/growth.md",
+      "secondary_targets": [
+        "docs/mathematics/Analysis/Convolution/derivative-energy.md"
+      ],
+      "split": "explicit mathematical sentence boundary"
+    },
+    "corkscrew-chamber-cap:0": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "corkscrew-chamber-cap:2": {
+      "kind": "mathematics",
+      "target": "docs/mathematics/DynamicalSystems/TransitionSystems/guarded-reachability.md",
+      "split": "mathematical conditional model retained; obsolete aggregate namespace/count remains historical"
+    },
+    "lean-transfer-continuation:0": {
+      "kind": "history",
+      "reason": "historical operational transfer; private provenance excluded"
+    },
+    "lean-transfer-continuation:1": {
+      "kind": "history",
+      "reason": "historical operational transfer; private provenance excluded"
+    },
+    "lean-transfer-continuation:2": {
+      "kind": "history",
+      "reason": "historical operational transfer; private provenance excluded"
+    },
+    "lean-transfer-continuation:3": {
+      "kind": "history",
+      "reason": "historical operational transfer; private provenance excluded"
+    },
+    "lean-transfer-continuation:4": {
+      "kind": "history",
+      "reason": "historical operational transfer; private provenance excluded"
+    },
+    "lean-transfer-continuation:5": {
+      "kind": "history",
+      "reason": "historical operational transfer; private provenance excluded"
+    },
+    "lean-transfer-continuation:6": {
+      "kind": "history",
+      "reason": "historical operational transfer; private provenance excluded"
+    },
+    "lean-transfer-continuation:7": {
+      "kind": "history",
+      "reason": "historical operational transfer; private provenance excluded"
+    },
+    "math-monitor:1": {
+      "kind": "reference",
+      "target": "docs/reference/source-verification.md"
+    },
+    "math-monitor:2": {
+      "kind": "reference",
+      "target": "docs/reference/source-verification.md"
+    },
+    "math-monitor:3": {
+      "kind": "reference",
+      "target": "docs/reference/source-verification.md"
+    },
+    "math-monitor:4": {
+      "kind": "reference",
+      "target": "docs/reference/source-verification.md"
+    },
+    "math-monitor:5": {
+      "kind": "reference",
+      "target": "docs/reference/source-verification.md"
+    },
+    "math-monitor:6": {
+      "kind": "reference",
+      "target": "docs/reference/source-verification.md"
+    },
+    "math-monitor:7": {
+      "kind": "reference",
+      "target": "docs/reference/source-verification.md"
+    },
+    "math-monitor:8": {
+      "kind": "reference",
+      "target": "docs/reference/source-verification.md"
+    },
+    "math-monitor:9": {
+      "kind": "reference",
+      "target": "docs/reference/source-verification.md"
+    },
+    "math-monitor:10": {
+      "kind": "reference",
+      "target": "docs/reference/source-verification.md"
+    },
+    "math-monitor:11": {
+      "kind": "reference",
+      "target": "docs/reference/source-verification.md"
+    },
+    "math-monitor:12": {
+      "kind": "reference",
+      "target": "docs/reference/source-verification.md"
+    },
+    "math-monitor:13": {
+      "kind": "reference",
+      "target": "docs/reference/source-verification.md"
+    },
+    "math-monitor:0": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "math-monitor:14": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
+    },
+    "math-layout:1": {
+      "kind": "reference",
+      "target": "docs/reference/source-layout.md"
+    },
+    "math-layout:2": {
+      "kind": "reference",
+      "target": "docs/reference/source-layout.md"
+    },
+    "math-layout:3": {
+      "kind": "reference",
+      "target": "docs/reference/source-layout.md"
+    },
+    "math-layout:4": {
+      "kind": "reference",
+      "target": "docs/reference/source-layout.md"
+    },
+    "math-layout:5": {
+      "kind": "reference",
+      "target": "docs/reference/source-layout.md"
+    },
+    "math-layout:0": {
+      "kind": "history",
+      "reason": "superseded organization or execution history"
     }
-  ]
+  },
+  "pages": {
+    "docs/reference/verification-interfaces.md": {
+      "title": "Verification interfaces and historical scope",
+      "category": "reference"
+    },
+    "docs/mathematics/LinearAlgebra/Cocycle/product.md": {
+      "title": "Cocycle products and endpoint gauges",
+      "subject": "LinearAlgebra",
+      "object": "Cocycle",
+      "primary_source": "GRWTSK/LinearAlgebra/CocycleProduct.lean",
+      "source_sha256": "64ebbd43849bfffee9f92d74f271c55a1ffcba28c1b7debcf491a901ddfff67b",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/LinearAlgebra/CommonGenerator/counterexamples.md": {
+      "title": "Rational shear counterexamples",
+      "subject": "LinearAlgebra",
+      "object": "CommonGenerator",
+      "primary_source": "GRWTSK/LinearAlgebra/CommonJCounterexamples.lean",
+      "source_sha256": "4bed27e7c490006f93c462cee2e088c9d6655678da35d1e926a7d3cd75d3a892",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/LinearAlgebra/CommonGenerator/rotations.md": {
+      "title": "Common-generator rotations and sign reversal",
+      "subject": "LinearAlgebra",
+      "object": "CommonGenerator",
+      "primary_source": "GRWTSK/LinearAlgebra/CommonJ.lean",
+      "source_sha256": "c4fb5fef172e3855ba2d9ed1811246022e07813fbce00ee5341d393fcdb62767",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/Logic/FiniteCoverage/scope.md": {
+      "title": "Finite coverage and scope",
+      "subject": "Logic",
+      "object": "FiniteCoverage",
+      "primary_source": "GRWTSK/Logic/FiniteCoverage.lean",
+      "source_sha256": "e1694a750b75d4b4db6bdba517f494a1aa7955736569e04643a2ddc7b45cf4ef",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/LinearAlgebra/Gauge/state.md": {
+      "title": "State dynamics under a gauge",
+      "subject": "LinearAlgebra",
+      "object": "Gauge",
+      "primary_source": "GRWTSK/LinearAlgebra/GaugeState.lean",
+      "source_sha256": "7b364472a886fd113be3fa2165e505fb1fb014fe7980653b19cadc906280258b",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/Analysis/Integration/interval-reflection.md": {
+      "title": "Interval reflection and signed integral pairing",
+      "subject": "Analysis",
+      "object": "Integration",
+      "primary_source": "GRWTSK/Analysis/IntervalReflection.lean",
+      "source_sha256": "8daccbb547c6ea9e481182366f25bae913a4effbf59059becd9a40532541591d",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/LinearAlgebra/Jacobi/transfer.md": {
+      "title": "Jacobi transfer matrices",
+      "subject": "LinearAlgebra",
+      "object": "Jacobi",
+      "primary_source": "GRWTSK/LinearAlgebra/JacobiTransfer.lean",
+      "source_sha256": "bdabbdf489b3a6a65baeec09f71e3f03aed82a868b10491b8f7c21eb36938eab",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/LinearAlgebra/OrderedProduct/determinant.md": {
+      "title": "Determinant-one ordered products",
+      "subject": "LinearAlgebra",
+      "object": "OrderedProduct",
+      "primary_source": "GRWTSK/LinearAlgebra/OrderedProductDeterminant.lean",
+      "source_sha256": "fb77385e6aeff5897daac09c19acd353d4ec98e638ff7b51799dd2c06e4906a5",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/Algebra/OrderedProduct/gauge.md": {
+      "title": "Ordered products under gauge and chart changes",
+      "subject": "Algebra",
+      "object": "OrderedProduct",
+      "primary_source": "GRWTSK/Algebra/OrderedProductGauge.lean",
+      "source_sha256": "d6ca049d4674503df5b175e7028c41c742af43ec7c42389a3fb3528c8f6ec5ae",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/Algebra/OrderedProduct/intervals.md": {
+      "title": "Ordered interval products",
+      "subject": "Algebra",
+      "object": "OrderedProduct",
+      "primary_source": "GRWTSK/Algebra/OrderedProduct.lean",
+      "source_sha256": "97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/LinearAlgebra/Transfer/ordered.md": {
+      "title": "Ordered transfer and state propagation",
+      "subject": "LinearAlgebra",
+      "object": "Transfer",
+      "primary_source": "GRWTSK/LinearAlgebra/OrderedTransfer.lean",
+      "source_sha256": "0a899d052fdd7f5320e7a9f4b7ee271ee54ebe820b804a41216a597fa59351b9",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/Analysis/InnerProductSpace/polarization.md": {
+      "title": "Real polarization and signed quadratic sectors",
+      "subject": "Analysis",
+      "object": "InnerProductSpace",
+      "primary_source": "GRWTSK/Analysis/Polarization.lean",
+      "source_sha256": "eca8d7c7426a9c4a329522472fffbc3c3de6f05c047cb328ddd1b2c2da59c2d5",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/NumberTheory/Zeta/Riemann/inference-guards.md": {
+      "title": "Nontrivial zeros and inference guards",
+      "subject": "NumberTheory",
+      "object": "Zeta/Riemann",
+      "primary_source": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroDefinitions.lean",
+      "source_sha256": "107f357b8c04afc16e25b8fded6922782d2756959b42f080af839f4db58e9aa0",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/LinearAlgebra/Schrodinger/transfer.md": {
+      "title": "Schr\u00f6dinger transfer matrices",
+      "subject": "LinearAlgebra",
+      "object": "Schrodinger",
+      "primary_source": "GRWTSK/LinearAlgebra/SchrodingerTransfer.lean",
+      "source_sha256": "25f93a03bb8e1b5df2f73c782160ed9f356f592c6cca4e56c92cde7fd974969d",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/NumberTheory/Moebius/Laplace/cutoff.md": {
+      "title": "Exact signed cutoff Laplace transform",
+      "subject": "NumberTheory",
+      "object": "Moebius/Laplace",
+      "primary_source": "GRWTSK/NumberTheory/Moebius/FiniteLaplaceTransform.lean",
+      "source_sha256": "590ede9829dd77b11263d72babd0e42b0504e291397b4d98cf81ad5f0199c678",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/NumberTheory/Moebius/Pickup/identification.md": {
+      "title": "Equivalent signed pickup integrals",
+      "subject": "NumberTheory",
+      "object": "Moebius/Pickup",
+      "primary_source": "GRWTSK/NumberTheory/Moebius/PrimitiveIdentification.lean",
+      "source_sha256": "2a1f78198afd3a0a23e1865be081f09e2582689e58462d736bfe626128e6f308",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/NumberTheory/Moebius/Laplace/finite-window.md": {
+      "title": "Finite Laplace recordings and signed tails",
+      "subject": "NumberTheory",
+      "object": "Moebius/Laplace",
+      "primary_source": "GRWTSK/NumberTheory/Moebius/PrimeFilterLaplace.lean",
+      "source_sha256": "be96c983badedf9c3bde3787a273165be81163efc130b52d451ae2b51addea1b",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md": {
+      "title": "Sturmian phase partitions and count limits",
+      "subject": "Spectral",
+      "object": "FiniteVolume",
+      "primary_source": "GRWTSK/Spectral/SturmianBlockCounts.lean",
+      "source_sha256": "5e357a6fd03b24ceb1a92ac187f235b494c093276fa76aee72f5372927f52ed5",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/NumberTheory/Moebius/Energy/growth.md": {
+      "title": "Signed pickup energy and open growth bounds",
+      "subject": "NumberTheory",
+      "object": "Moebius/Energy",
+      "primary_source": "GRWTSK/NumberTheory/Moebius/EnergyGrowthEquivalences.lean",
+      "source_sha256": "70bf8c10cd78518511d3019b77d542fdc6ae450c10a72631031e60f3cc7081b1",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/NumberTheory/Moebius/Energy/gram.md": {
+      "title": "Ordered response Gram and diagonal energy",
+      "subject": "NumberTheory",
+      "object": "Moebius/Energy",
+      "primary_source": "GRWTSK/NumberTheory/Moebius/GramDiagonalBound.lean",
+      "source_sha256": "72172eb41fbc701bb53d3fe3d31f6a9d2cf5117c18769f85d5ed2e2986cb2b73",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/NumberTheory/Zeta/Riemann/criteria.md": {
+      "title": "Conditional energy criteria for the Riemann hypothesis",
+      "subject": "NumberTheory",
+      "object": "Zeta/Riemann",
+      "primary_source": "GRWTSK/NumberTheory/Zeta/Riemann/PolynomialEnergyCriterion.lean",
+      "source_sha256": "b4b7949d198e478ac369d8455284cd5b0505f5b97a0323d47eb5cf59da1f11b1",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/NumberTheory/Moebius/Energy/determinant.md": {
+      "title": "Rank-one determinant representation of pickup energy",
+      "subject": "NumberTheory",
+      "object": "Moebius/Energy",
+      "primary_source": "GRWTSK/NumberTheory/Moebius/UnsignedEnergyBound.lean",
+      "source_sha256": "4900917f41e019d2348d3d0b26321e36cf077e86adb409e9c546840a39d43481",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/LinearAlgebra/Schrodinger/almost-mathieu.md": {
+      "title": "Almost Mathieu potential and spectral hypotheses",
+      "subject": "LinearAlgebra",
+      "object": "Schrodinger",
+      "primary_source": "GRWTSK/LinearAlgebra/AlmostMathieu.lean",
+      "source_sha256": "8e33555ed354415b1604c4a7fc192d065fcd87ec4c765f6200faafd633c74d5c",
+      "status": "literature-and-historical-source-description",
+      "source_relation": "context; not certification of every written or cited claim"
+    },
+    "docs/mathematics/NumberTheory/Moebius/PrimeFilters/cascade.md": {
+      "title": "Finite causal prime filters and insertion energy",
+      "subject": "NumberTheory",
+      "object": "Moebius/PrimeFilters",
+      "primary_source": "GRWTSK/NumberTheory/Moebius/PrimeFactorFilters.lean",
+      "source_sha256": "ec4760134d86f29c697f6f8556209c1c0a735716177c36b1aee6e1d06085ca6e",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/NumberTheory/Moebius/PrimeFilters/conditional-growth.md": {
+      "title": "Conditional prime-filter growth and harmonic mass",
+      "subject": "NumberTheory",
+      "object": "Moebius/PrimeFilters",
+      "primary_source": "GRWTSK/NumberTheory/Moebius/PrimeFilterGrowth.lean",
+      "source_sha256": "6eba6686d407d00d3d9786d6fe83116037bfb564c78747a8230de9f98b618803",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/NumberTheory/Moebius/PrimeFilters/negative-correlation.md": {
+      "title": "A strict negative prime-prefix correlation",
+      "subject": "NumberTheory",
+      "object": "Moebius/PrimeFilters",
+      "primary_source": "GRWTSK/NumberTheory/Moebius/NegativePrimeCorrelation.lean",
+      "source_sha256": "020042e6753763a9894a6ef63256f9583f72dbc5d114a9fa45c495f7650e716d",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/NumberTheory/Moebius/PrimeFilters/uniform-supplier-obstruction.md": {
+      "title": "Uniform finite-product suppliers: a written obstruction",
+      "subject": "NumberTheory",
+      "object": "Moebius/PrimeFilters",
+      "primary_source": "GRWTSK/NumberTheory/Moebius/PrimePrefixGrowth.lean",
+      "source_sha256": "c5ebc36cce14a45fdba746140d687bda39cd6bf5f892091e7c2faaa3d951177e",
+      "status": "written-argument",
+      "source_relation": "context; not certification of every written or cited claim"
+    },
+    "docs/mathematics/NumberTheory/Moebius/Energy/recording-blocks.md": {
+      "title": "Horizon-matched blocks and dyadic energy",
+      "subject": "NumberTheory",
+      "object": "Moebius/Energy",
+      "primary_source": "GRWTSK/NumberTheory/Moebius/PrimeBlockEnergy.lean",
+      "source_sha256": "e327d18d9572d5225c997f485efacb69b59e190ebe0a0cce94087c8b4641b952",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md": {
+      "title": "Finite signed prime-product debt",
+      "subject": "NumberTheory",
+      "object": "Moebius/Laplace",
+      "primary_source": "GRWTSK/NumberTheory/Moebius/FinitePrimeProductDebt.lean",
+      "source_sha256": "da66b07379c884fbc28f3e78dfd8b716727609e003ba5a89715c9932879db938",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/NumberTheory/Moebius/Energy/damped-tails.md": {
+      "title": "Damped finite windows and extended tail energy",
+      "subject": "NumberTheory",
+      "object": "Moebius/Energy",
+      "primary_source": "GRWTSK/NumberTheory/Moebius/WeightedIntegralEnergy.lean",
+      "source_sha256": "8124ef6fbeca2c8244d7401536d70c43a6ecd31279366c20ea96bf6fbaa84380",
+      "status": "written-argument",
+      "source_relation": "context; not certification of every written or cited claim"
+    },
+    "docs/mathematics/LinearAlgebra/Schrodinger/sturmian.md": {
+      "title": "Sturmian potential, half-open coding and recurrence",
+      "subject": "LinearAlgebra",
+      "object": "Schrodinger",
+      "primary_source": "GRWTSK/LinearAlgebra/Sturmian.lean",
+      "source_sha256": "15528db5caae13d550eeabc64624f182af46a7e01c7e4dbf5a81f9604d8e6359",
+      "status": "literature-and-historical-source-description",
+      "source_relation": "context; not certification of every written or cited claim"
+    },
+    "docs/mathematics/Spectral/FreeDirichletSpectrum/eigenvalues.md": {
+      "title": "Free Dirichlet eigenvalues and sine basis",
+      "subject": "Spectral",
+      "object": "FreeDirichletSpectrum",
+      "primary_source": "GRWTSK/Spectral/FreeDirichletSpectrum.lean",
+      "source_sha256": "363dc89065857454bf985848a16475040fe5c67e4a0ee3d1a7b027902c0d01cf",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/Spectral/IntegratedDensityOfStates/free.md": {
+      "title": "Free eigenvalue counts and integrated density of states",
+      "subject": "Spectral",
+      "object": "IntegratedDensityOfStates",
+      "primary_source": "GRWTSK/Spectral/FreeIDS.lean",
+      "source_sha256": "2ceb8583eee1ece71002eb12fdb6682498125b79c53c9d5a3fa8283d0a9e8f60",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/Spectral/GapTransport/labels-and-coding.md": {
+      "title": "Gap labels, tree coding and faithful transport",
+      "subject": "Spectral",
+      "object": "GapTransport",
+      "primary_source": "GRWTSK/Spectral/GapTransport.lean",
+      "source_sha256": "058f1fc96e8badc39cf8178e1c30680199bbf3870ea67d69d5eb16c5e6b8e4ec",
+      "status": "literature-and-historical-source-description",
+      "source_relation": "context; not certification of every written or cited claim"
+    },
+    "docs/mathematics/Spectral/FiniteVolume/count-comparison.md": {
+      "title": "Finite-volume eigenvalue-count comparison",
+      "subject": "Spectral",
+      "object": "FiniteVolume",
+      "primary_source": "GRWTSK/Spectral/MatrixCountComparison.lean",
+      "source_sha256": "eed27fedd6056292ce90a075907568852df7fb47d6d621775a44d6888f10b1b7",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/Spectral/FiniteVolume/dirichlet-cut.md": {
+      "title": "Dirichlet joining edge and boundary count error",
+      "subject": "Spectral",
+      "object": "FiniteVolume",
+      "primary_source": "GRWTSK/Spectral/DirichletCut.lean",
+      "source_sha256": "98bc77aecb30901438b6af7cacb1edfdee181cc73d64bcb142daf6abed1ac8af",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/Spectral/FiniteVolume/repeated-blocks.md": {
+      "title": "Repeated blocks, true remainders and phase shifts",
+      "subject": "Spectral",
+      "object": "FiniteVolume",
+      "primary_source": "GRWTSK/Spectral/SturmianBlockCounts.lean",
+      "source_sha256": "5e357a6fd03b24ceb1a92ac187f235b494c093276fa76aee72f5372927f52ed5",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/Analysis/Fourier/WindowCertificates/angular.md": {
+      "title": "Angular Fourier normalization and window certificates",
+      "subject": "Analysis",
+      "object": "Fourier/WindowCertificates",
+      "primary_source": "GRWTSK/Analysis/Fourier/WindowCertificates.lean",
+      "source_sha256": "acf0f90e233095c8e4949a4c22e1f67fa68f4d85e0be5cb99bf9fcfbbea671db",
+      "status": "historical-source-description",
+      "prior_source_sha256": "c616f557739add2b41d0691111f835ce0f181daf4ba383ba84ded3f3e25a216b",
+      "verification_limit": "Import syntax repaired; earlier receipts retained, no new proof acceptance from rebinding",
+      "source_binding_history": [
+        {
+          "sha256": "ccb66f1f070df085c361665612019f59bcb92f79a3e9fa701c88364e3da15c05",
+          "scope": "post-merge import line; superseded by syntax-only import separation"
+        }
+      ]
+    },
+    "docs/mathematics/Logic/FiniteSequences/prefix-coverage.md": {
+      "title": "Prefix service intervals and obligation coverage",
+      "subject": "Logic",
+      "object": "FiniteSequences",
+      "primary_source": "GRWTSK/Logic/FiniteSequences/PrefixCoverage.lean",
+      "source_sha256": "a6ee772e91591f1e51ad01a4a0ff68df9f2455d4c0c168a660159fb0fd55485f",
+      "status": "historical-source-description",
+      "prior_source_sha256": "77ed7277b4519ff8fb955e215664ac6d0c22a78e95e38e9ee16d18e6b226a5b3",
+      "verification_limit": "Source rebound after history merge; no new proof acceptance"
+    },
+    "docs/mathematics/Combinatorics/Sequences/quotas.md": {
+      "title": "Integer quota allocation and discrepancy",
+      "subject": "Combinatorics",
+      "object": "Sequences",
+      "primary_source": "GRWTSK/Combinatorics/Sequences/QuotaDiscrepancy.lean",
+      "source_sha256": "851cb36b5b9db3a4e2695e4c4164dbca4af83dcc913caebd41160fd4db8f882f",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/Analysis/Fourier/IntegerSeries/encoding.md": {
+      "title": "Bounded integer encoding and regular Fourier series",
+      "subject": "Analysis",
+      "object": "Fourier/IntegerSeries",
+      "primary_source": "GRWTSK/Analysis/Fourier/IntegerSeries.lean",
+      "source_sha256": "bd741ea9dd1e4efbc8eab2f77574a73c0cd82d85f2a76d604b14f05cd2f09789",
+      "status": "historical-source-description",
+      "prior_source_sha256": "46462643902012c58fa6514c99721701b65655f16fd88a0e82fc1181c94bbe88",
+      "verification_limit": "Source rebound after history merge; no new proof acceptance"
+    },
+    "docs/mathematics/LinearAlgebra/Schrodinger/sampled-potential.md": {
+      "title": "Sampled-potential equality and aliases",
+      "subject": "LinearAlgebra",
+      "object": "Schrodinger",
+      "primary_source": "GRWTSK/LinearAlgebra/Schrodinger/SampledPotential.lean",
+      "source_sha256": "412246f06dbbe474c57fa268af5751faf5a8315a41d6569d476101b6914aa3f1",
+      "status": "historical-source-description",
+      "prior_source_sha256": "dd30ef9e49516fbd3c87d80a743b8ca52cf49fbd4dc6914f954b59ec6753482b",
+      "verification_limit": "Source rebound after history merge; no new proof acceptance"
+    },
+    "docs/mathematics/Analysis/NormedSpace/reconstruction.md": {
+      "title": "Quadratic reconstruction and energy error",
+      "subject": "Analysis",
+      "object": "NormedSpace",
+      "primary_source": "GRWTSK/Analysis/NormedSpace/QuadraticError.lean",
+      "source_sha256": "79581bb3cf4ce27f646aa513375e0c51912c0ce57f379f1380114e225f0f5980",
+      "status": "historical-source-description",
+      "prior_source_sha256": "663c865cdbe9802281cbb4be82f3c15612330e44c86acd44db9b14dd46d1c7d6",
+      "verification_limit": "Import syntax repaired; earlier receipts retained, no new proof acceptance from rebinding",
+      "source_binding_history": [
+        {
+          "sha256": "f37a84e26536edcaa569bb8e722fa66f301da0b711da63dcb70cd912caeec4d6",
+          "scope": "post-merge import line; superseded by syntax-only import separation"
+        }
+      ]
+    },
+    "docs/mathematics/NumberTheory/ContinuedFractions/scheduled-denominators.md": {
+      "title": "Scheduled digits and continued-fraction denominators",
+      "subject": "NumberTheory",
+      "object": "ContinuedFractions",
+      "primary_source": "GRWTSK/NumberTheory/ContinuedFractions/ScheduledDenominators.lean",
+      "source_sha256": "3f18269367c2ef839a97591d1d5d36198c6c4c6faff132120f45659c19e94a03",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/NumberTheory/ContinuedFractions/frequency-realization.md": {
+      "title": "Irrational frequency realization and native readback",
+      "subject": "NumberTheory",
+      "object": "ContinuedFractions",
+      "primary_source": "GRWTSK/NumberTheory/ContinuedFractions/FrequencyRealization.lean",
+      "source_sha256": "fe53414320a78931bf2add8a168544df853ce7bd10b82b2cf257082ceb77e4be",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/DynamicalSystems/Sequences/approximation-return.md": {
+      "title": "Approximation readouts and conditional error return",
+      "subject": "DynamicalSystems",
+      "object": "Sequences",
+      "primary_source": "GRWTSK/DynamicalSystems/Sequences/ApproximationReturn.lean",
+      "source_sha256": "e25fc82df14cab31a7b719dd2bb02fbd34f37f9e2c4e5978f02d0f562c2a3105",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/Analysis/TestFunctions/separation.md": {
+      "title": "Smooth compact tests separate continuous residuals",
+      "subject": "Analysis",
+      "object": "TestFunctions",
+      "primary_source": "GRWTSK/Analysis/TestFunctions/Separation.lean",
+      "source_sha256": "8479d379d257b8bbbe606ad9627a0883a039a61acce7a0c114f5dea7a975a38f",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/Analysis/TestFunctions/exponential-moments.md": {
+      "title": "Exponential moments and second-derivative variation",
+      "subject": "Analysis",
+      "object": "TestFunctions",
+      "primary_source": "GRWTSK/Analysis/TestFunctions/ExponentialMomentVariation.lean",
+      "source_sha256": "aab9afbee65b9b9111037f960771da2d571a585d735c4d86db4176a2034d8279",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/Analysis/TestFunctions/polynomial-profile.md": {
+      "title": "Compact polynomial profiles and endpoint regularity",
+      "subject": "Analysis",
+      "object": "TestFunctions",
+      "primary_source": "GRWTSK/Analysis/TestFunctions/PolynomialBumpNormalization.lean",
+      "source_sha256": "8938ea1f677a595343229a06c00978d6380875e4faaf5118859eede54cf239f7",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/Analysis/Convolution/compact-correlation.md": {
+      "title": "Compact autocorrelation regularity",
+      "subject": "Analysis",
+      "object": "Convolution",
+      "primary_source": "GRWTSK/Analysis/Convolution/CompactProfileHigherDerivatives.lean",
+      "source_sha256": "616d623bd79563b690b557b8b4db797b946a0c43e48e5a5ac0cf87f69e4ae009",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/Analysis/Convolution/derivative-energy.md": {
+      "title": "Autocorrelation derivatives and unsigned mass bounds",
+      "subject": "Analysis",
+      "object": "Convolution",
+      "primary_source": "GRWTSK/Analysis/Convolution/AutocorrelationDerivativeEnergy.lean",
+      "source_sha256": "8a8d4a85d38b81db1bd37a0ae0698780791082f979d125d20ab3d928c7e7bb8e",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/Analysis/InnerProductSpace/causal-response-gram.md": {
+      "title": "Finite causal response Gram positivity",
+      "subject": "Analysis",
+      "object": "InnerProductSpace",
+      "primary_source": "GRWTSK/Analysis/InnerProductSpace/CausalResponseGram.lean",
+      "source_sha256": "e563cca4c98955fea76d39fbbd64a5f7ad18688769b89636c52418d315a642db",
+      "status": "historical-source-description"
+    },
+    "docs/reference/source-verification.md": {
+      "title": "Source verification",
+      "category": "reference"
+    },
+    "docs/reference/source-layout.md": {
+      "title": "Mathematical source layout",
+      "category": "reference"
+    },
+    "docs/mathematics/Analysis/Asymptotics/polynomial-error.md": {
+      "title": "Polynomial return with a paid error",
+      "subject": "Analysis",
+      "object": "Asymptotics",
+      "primary_source": "GRWTSK/Analysis/Asymptotics/PolynomialErrorBound.lean",
+      "source_sha256": "7f04746894b0774969d506fde6c8287056361051f29196c8dc23c2f38932b6e6",
+      "status": "historical-source-description",
+      "prior_source_sha256": "038e3cf31cc90eec7019c91be55ff2cdc4c00aaf82a3791be5d05e4dfae12996",
+      "verification_limit": "Source rebound after history merge; no new proof acceptance"
+    },
+    "docs/mathematics/NumberTheory/Moebius/matched-pickup.md": {
+      "title": "Matched averaging for the closed M\u00f6bius pickup",
+      "subject": "NumberTheory",
+      "object": "Moebius",
+      "primary_source": "GRWTSK/NumberTheory/Moebius/PrimitiveIdentification.lean",
+      "source_sha256": "2a1f78198afd3a0a23e1865be081f09e2582689e58462d736bfe626128e6f308",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/NumberTheory/Prime/least-prime.md": {
+      "title": "Least natural prime",
+      "subject": "NumberTheory",
+      "object": "Prime",
+      "primary_source": "GRWTSK/NumberTheory/Prime/LeastPrime.lean",
+      "source_sha256": "89d862e92978b74d032ea9b8ce764c0593a19cb93001c2c1cf5695c600c187fd",
+      "status": "fresh-selected",
+      "evidence": "evidence/prime-architecture-checks.json"
+    },
+    "docs/mathematics/Combinatorics/Sequences/coverage-and-quotas.md": {
+      "title": "Coverage and discrete quotas",
+      "subject": "Combinatorics",
+      "object": "Sequences",
+      "primary_source": "GRWTSK/Combinatorics/Sequences/QuotaDiscrepancy.lean",
+      "source_sha256": "851cb36b5b9db3a4e2695e4c4164dbca4af83dcc913caebd41160fd4db8f882f",
+      "status": "historical"
+    },
+    "docs/reference/literature/unitary-almost-mathieu.md": {
+      "title": "Unitary almost Mathieu models: distinct spectral claims",
+      "category": "reference"
+    },
+    "docs/index.md": {
+      "title": "Mathematical documentation",
+      "category": "navigation"
+    },
+    "docs/explanation/evidence.md": {
+      "title": "Proofs, observations, receipts and certificates",
+      "category": "explanation"
+    },
+    "docs/explanation/documentation.md": {
+      "title": "Mathematical documentation standard",
+      "category": "explanation"
+    },
+    "docs/start/least-prime.md": {
+      "title": "From an observation to a checked result",
+      "category": "start"
+    },
+    "docs/how-to/verify.md": {
+      "title": "Verify a selected result",
+      "category": "how-to"
+    },
+    "docs/reference/documentation-history.md": {
+      "title": "Documentation provenance and evidence limits",
+      "category": "reference"
+    },
+    "docs/reference/library-pages.md": {
+      "title": "Mathematical page inventory",
+      "category": "reference"
+    },
+    "docs/reference/results.md": {
+      "title": "Selected result catalog",
+      "category": "reference"
+    },
+    "README.md": {
+      "title": "GRWTSK mathematics",
+      "category": "landing"
+    },
+    "docs/mathematics/DynamicalSystems/TransitionSystems/guarded-reachability.md": {
+      "title": "Guarded transition systems and reachability",
+      "subject": "DynamicalSystems",
+      "object": "TransitionSystems",
+      "primary_source": "GRWTSK/DynamicalSystems/TransitionSystems/GuardedFiniteBudget.lean",
+      "source_sha256": "edfbfadbe42b0b8bbc7391331718aeeb6ce68984b0e422125d313b94098dd96e",
+      "status": "historical-source-description"
+    },
+    "docs/reference/mathematical-terminology.md": {
+      "title": "Mathematical terminology and interface distinctions",
+      "category": "reference"
+    },
+    "docs/mathematics/NumberTheory/ArithmeticFunctions/density-correction.md": {
+      "title": "Complete density M\u00f6bius correction",
+      "subject": "NumberTheory",
+      "object": "ArithmeticFunctions",
+      "primary_source": "GRWTSK/NumberTheory/ArithmeticFunctions/DensityMomentTails.lean",
+      "source_sha256": "d495504f0e5f051ed0471530e1bb0f1dfdbb348391e22dc800044ccaf1f5a795",
+      "status": "fresh-selected",
+      "evidence": "evidence/NumberTheory/ArithmeticFunctions/density-arithmetic-checks.json"
+    },
+    "docs/mathematics/NumberTheory/ArithmeticFunctions/signed-cutoffs.md": {
+      "title": "Signed M\u00f6bius cutoff decomposition",
+      "subject": "NumberTheory",
+      "object": "ArithmeticFunctions",
+      "primary_source": "GRWTSK/NumberTheory/ArithmeticFunctions/SquarefreeMoebiusSum.lean",
+      "source_sha256": "eb23e7ba6387bba4daa62f117286b582901426d232c98476e6992e21ef5b89ba",
+      "status": "fresh-selected",
+      "evidence": "evidence/NumberTheory/ArithmeticFunctions/density-arithmetic-checks.json"
+    },
+    "docs/mathematics/NumberTheory/Moebius/LocalCancellation/common-reading.md": {
+      "title": "Common-reading row costs",
+      "subject": "NumberTheory",
+      "object": "Moebius/LocalCancellation",
+      "primary_source": "GRWTSK/NumberTheory/ArithmeticFunctions/MoebiusTruncation.lean",
+      "source_sha256": "923aa8009853029cca709c1f6016119740eaa00e25d59142c2cb487194c85550",
+      "status": "written-argument"
+    },
+    "docs/how-to/density-arithmetic-replay.md": {
+      "title": "Reproduce density arithmetic checks",
+      "category": "how-to"
+    },
+    "docs/mathematics/NumberTheory/LSeries/closed-moebius.md": {
+      "title": "Closed M\u00f6bius Dirichlet polynomials",
+      "subject": "NumberTheory",
+      "object": "LSeries",
+      "primary_source": "GRWTSK/NumberTheory/LSeries/ClosedMoebiusPolynomial.lean",
+      "source_sha256": "17adb06dd4f26f4f323a3c7aeff14cd965b04348432a51f8007775a2c7ad69e9",
+      "status": "fresh-selected",
+      "evidence": "evidence/NumberTheory/LSeries/density-series-checks.json"
+    },
+    "docs/mathematics/Logic/ProofChecking/source-roles.md": {
+      "title": "Proof-checking source roles",
+      "subject": "Logic",
+      "object": "ProofChecking",
+      "primary_source": "GRWTSK/Logic/ProofChecking/RepositoryConformance.lean",
+      "source_sha256": "24226b48180906ee34cabe132afdebd042e91a4b06f4955fc90ab195f2e98be1",
+      "status": "written-argument"
+    },
+    "docs/mathematics/NumberTheory/Zeta/riemann-hypothesis-criteria.md": {
+      "title": "Riemann hypothesis criteria and their arithmetic premises",
+      "subject": "NumberTheory",
+      "object": "Zeta",
+      "primary_source": "GRWTSK/NumberTheory/Zeta/Riemann/DefectCriterion.lean",
+      "source_sha256": "c387ba899e159bde5274009c792630553f1de8f52e83031a3f7123daf4b3766f",
+      "status": "historical-source-description"
+    },
+    "docs/reference/lean-consolidation-report.md": {
+      "title": "Lean consolidation report",
+      "category": "reference"
+    },
+    "docs/reference/reconstruction.md": {
+      "title": "Repository reconstruction contract",
+      "category": "reference"
+    },
+    "docs/reference/rigor-and-reconstruction-report.md": {
+      "title": "Rigor and reconstruction status",
+      "category": "reference"
+    },
+    "docs/reference/rules/rule-soundness.md": {
+      "title": "Grounded rules and checker soundness",
+      "category": "reference"
+    },
+    "docs/reference/trust-boundary.md": {
+      "title": "Trust boundary and conformance foundation",
+      "category": "reference"
+    }
+  },
+  "object_binding_registry": "docs/reference/object-source-bindings.json",
+  "object_binding_registry_sha256": "2200dbf6bfb934676d6826868f1586434a8505eccd953bd9c93fe11f343cde35"
 }

@@ -878,5 +878,504 @@
     "historical_receipts_preserved_privately": true,
     "new_Lean_acceptance": 0,
     "affected_closure": "Public wrapper/receipt hashes and changed reader text only. Historical theorem audit inputs remain historical; changed-source/native acceptance is not rebound. Unrelated manifest drift remains explicitly pending."
+  },
+  "documentation_membership_reconciliation": {
+    "status": "bookkeeping-only; no proof acceptance",
+    "preimage_sha256": "e0a8d2b15c5d25dd714ae3dadf83b567fa77c7b6844e705a8a4d389a48f07e24",
+    "preimage": "evidence/documentation-input-manifest-before-integration.json",
+    "retired": {
+      "docs/ccc-cutoff-laplace.md": "7e91f23322c521e0f2d66de9708b46b4628e813bc39b693476f726e76cdee0ee",
+      "docs/ccc-original-pickup-identification.md": "836c9b98e264266611c14de1579793b961ca508b31b266949d6d151e4fb3d945",
+      "docs/ccc-prime-cascade.md": "b7afdfe6f69fc0afb76e9e1177b64ff73889f33335d4534136f9f0b62bc8d1fc",
+      "docs/ccc-prime-research-continuation.md": "90bb9f6b61e3819c588cb746dc83a333972fa7be38bd709990b3c494628e0dc1",
+      "docs/ccc-prime-window-laplace.md": "86921db0e4eb58891a1f103e186d2c06ffb6c78f62c3ff2b942ba738e24b466d",
+      "docs/ccc-recording-scale.md": "06b3affd5f506f2f89a77c23d54936ac8d566b98e73d95171400e5958965ad91",
+      "docs/ccc-rh-research.md": "b3f59d99e6050812fcb4e68b609df5d979f68bb73885956a43f044cae929b07d",
+      "docs/cocycle-product.md": "9ee47b191eb31c6e3e67d9cc277c82985d921661a1c83476cfe70d32bdfa695c",
+      "docs/common-j-counterexamples.md": "15b2b4a97ccab8135222b7a26eae0564f2149922e2053eaa4ef2ad8e3446f9de",
+      "docs/common-j.md": "a52c98ddcd84324d8cd87bd73df31e741ee809ab398fa98c2b4990336d3cc9c7",
+      "docs/finite-coverage.md": "b3f34eb971c73cf5141af5416052035eaa191b012ecaa8d9e649ade1fc3a2ebd",
+      "docs/gauge-state.md": "e6cc57a9caff1094379800bf7112b28326c276d3e21ac5a4ca8c4eff2e29fb54",
+      "docs/interval-reflection.md": "e8166f14dffe9bd91d72db0265e938a76fb49b7cf009bce6a782c3f45433ac4c",
+      "docs/jacobi-transfer.md": "a74a70785641f7d93e0a8919210e0b3df13e4e218b608d2a4874277bd55dc63d",
+      "docs/math-layout.md": "92a941a44dadb67332c8dc42cc5abd901a7d7a6550c724ecf3fc2c64ecdd0297",
+      "docs/ordered-product-determinant.md": "4aea1ee4dc402486976a55d896cd3e3caa62cdfde79ff3cad727b105f25126c0",
+      "docs/ordered-product-gauge.md": "ca9d5e8184585315c7075dca14a9622789621d0840f947e8d84eda2831b1f0e5",
+      "docs/ordered-product.md": "426b9ee2f92f3a07ba1b894ca175cdf0c7d5bde9a2a23d38ee840703cf95e644",
+      "docs/ordered-transfer.md": "69be3069da3dd8f8a7e7821d2918d329d50800550a6057bd6a95c9f6bb8144c5",
+      "docs/polarization.md": "d90c1c3d7c4a44bdce90439739d625b71e49567e3d2a555a28b8ac82edaba300",
+      "docs/rh-inference-guards.md": "2bfaa3b6cc9130bbd9678d7a22712c9f483b154c5604fd4a7d6e162dedab0de0",
+      "docs/rh-research-continuation.md": "c8bd9ba190d9e4735d3485d4faf74d0cb5f1b0546849818e88d5f023e53e58c1",
+      "docs/schrodinger-transfer.md": "b92e3a260a32f95ce172a135b66d3cced7c7c520669b71444f0a63dd2102f972",
+      "docs/sequence-realization.md": "fe69a31984162339363300e1d893f232cc911cc3a49f477f60963031e6227a08",
+      "docs/smooth-test-separation.md": "7d17bae700868a2674dab9ce76d6bc575aa12f866c8cc9480967f23c783d5224",
+      "docs/ten-martini-zero.md": "f0b10dd668457b97ed00206399b146135de097bd0be9f81eebacc157675cc02f",
+      "docs/waveform-interfaces.md": "3060bf7b8bb8121ab37965aa932fba9f094842317b69646affa3f00f044e5f64"
+    },
+    "current_documentation_commit": "9489822c4b24e077033d335c4a780fd6097bdfd6"
+  },
+  "merge_reconciliation_2026_10_13": {
+    "status": "HISTORICAL_SELECTIVE_EVIDENCE_ONLY_NOT_CURRENT_ACCEPTANCE",
+    "local_parent_commit": "33c7202a15a8c3e52afac4cc26fa4cedcf55493f",
+    "incoming_parent_commit": "60e758af45dd8d79bf0c9ef7fdf002051124e6b5",
+    "local_manifest_blob_sha1": "9cfbc42e0293590c447b8af3462285c328f49b7e",
+    "incoming_manifest_blob_sha1": "8921723fa1842a83aa6136a5cf89581be4a70209",
+    "top_level_files_policy": "The top-level files map is the unmodified local-parent snapshot. No historical hash was refreshed during merge resolution.",
+    "incoming_snapshot_policy": "The entries below retain hashes from the incoming-parent manifest. They are bound only to that parent and may describe paths later moved, retired, or changed; they are not current-working-tree verification.",
+    "current_working_tree_status": "NOT_EVALUATED_BY_THIS_HISTORICAL_MANIFEST; use the versioned current inventory and source-bound receipts instead.",
+    "common_identical_file_count": 198,
+    "incoming_remote_only_files": {
+      "checks/Algebra/OrderedProduct/Conjugation/Controls/ExactGaugeContracts.lean": "2191cd15bd71147429932f35d9a10ac3ac2b681060f89a8f424002ab3dbe40db",
+      "checks/Algebra/OrderedProduct/Conjugation/Controls/MissingClosedPath.lean": "46c96cf9ea82fd97e3389e773c19276ce6413d184a46a92418fd413b238e774e",
+      "checks/Algebra/OrderedProduct/Conjugation/Controls/ShiftedEndpoint.lean": "18d07c1876985146c50f08411d9b446739ee66b0e7d4266e7b3dc27180729446",
+      "checks/Algebra/OrderedProduct/Conjugation/Controls/StrongerGroup.lean": "ea88cdfe52c5a11bf5f1e4a49e34988e2e735dd5b2718352d1187fe3677c8657",
+      "checks/Analysis/Energy/Controls/DeterminantPaysBudget.lean": "a5f04442fd6bd458516ef6352ee81cdcb8309233cf950064b91c5ea3bd628ae1",
+      "checks/Analysis/Energy/Controls/DroppedResidual.lean": "ca51b91a3f24b42ab16994c0ba60fe1f3c89def07c430de1a42bc52ff85bd431",
+      "checks/Analysis/Energy/Controls/FiniteSamples.lean": "6229167a3bcf9fab9e089e00060bb82f7e5fe70e82f64726baaa2c5fc3834a48",
+      "checks/Analysis/Energy/Controls/MissingBudget.lean": "27074be334ec757d2879ef516a24546b1b343e568fb0bc4deeae00b613934054",
+      "checks/Analysis/Energy/Controls/SingleRate.lean": "35bac676d435826dc20ee8876ef915920bf85c11af0e0dc46d5010cc934088ab",
+      "checks/Analysis/Energy/Controls/WrongPhase.lean": "bf13ad1ddc0561fca9b54c9b4a34a129dac97ba1f6d0f7c403fdcf51a736c6f7",
+      "checks/Analysis/Energy/Declarations.lean": "8376ac0c9f809d888165da1f159eab65b3ce402664c71585aee1a614d9613738",
+      "checks/Analysis/Fourier/Controls/Audit.lean": "59bbc85f31ff3e12ccd04fe9caa7f03fa379c9abf086da3d61b31471937c93fa",
+      "checks/Analysis/Fourier/Controls/FalseAlias.lean": "dd34dac4098d104fdf6565e57eb489069b7bb69fd666b428dbf7b66a5388de26",
+      "checks/Analysis/Fourier/Controls/FalseCoverage.lean": "11c5753116e0a6e39538bec33ebd0cbaa853854372950618f9ec2d8c80387ebb",
+      "checks/Analysis/Fourier/Controls/FalseRounding.lean": "a7dfa57ad91a7139744a5d3d3351d1de6a526ea0e1a7fa5fc1ebe43d4974f844",
+      "checks/Analysis/Fourier/Controls/FalseTraceBound.lean": "7d5156f0e177369d703859240185062e4e05a83e1fe3932dde84040f82a52fba",
+      "checks/Analysis/Fourier/Controls/MissingReturn.lean": "7118c88504969b8a77b61c66329c4e53b91e6b1aecb4e8b22cdb3f5d173aa718",
+      "checks/Analysis/Fourier/Controls/WrongAngular.lean": "efa4886ea1f8a43df1678ac5299afd0b75979d3b60e987c0ccca71796e6ef503",
+      "checks/Analysis/Fourier/Controls/check.py": "bab6dc0a49432491e12667e51dc6bbf9c680d4567dd2b60d36c79b7e922463fd",
+      "checks/Analysis/Fourier/Controls/expected.json": "4b2460393a214f139c2286851741dc13f8604eb2d6c31c9742016f5e112b1235",
+      "checks/Analysis/InnerProductSpace/Polarization/Controls/ExactPolarizationContracts.lean": "fdec3da11390853f79b3d064fc99d4d492af8bd9613e111397238e57a16481e8",
+      "checks/Analysis/InnerProductSpace/Polarization/Controls/FalseSectorInference.lean": "0e1aaae50878834f28a8ba7a065b66f878f94d6c3a9db526a333f884a0c9da2a",
+      "checks/Analysis/InnerProductSpace/Polarization/Controls/MissingInnerProductInstance.lean": "9dfea39685cd8069833b92b8236659b26610012ec09681c50e1e250e7b39cf29",
+      "checks/Analysis/InnerProductSpace/Polarization/Controls/WrongPolarizationSign.lean": "4c4d9c71f4d39e82628847dc10541999e8e9757b5dfa33e2dde2363610ee8e74",
+      "checks/Analysis/IntervalIntegral/Reflection/Controls/ChangedMeasure.lean": "a24e35c0beefdaac435ba34c6e17b82420dc03e62791e5be8f28712e63e46a9a",
+      "checks/Analysis/IntervalIntegral/Reflection/Controls/ExactEndpointsAndSignedSquares.lean": "53697294073b2a9832b23079943e08e1cf8c5d55c3788c191c8c4a972ea0b140",
+      "checks/Analysis/IntervalIntegral/Reflection/Controls/MissingParitySectorIntegrability.lean": "1c124cf39869f2a00741a5d11e6b12343379d546f7f862beb2dcf931113e05af",
+      "checks/Analysis/IntervalIntegral/Reflection/Controls/MissingSquareSectorIntegrability.lean": "7e70ec75680aebdebe62c61d7da5a8ad266208e9b3a3ce6bf60039750852beac",
+      "checks/Analysis/IntervalIntegral/Reflection/Controls/WrongEndpoint.lean": "27f32fc29af16254507a249a5a6e6abec5ba921d592d9cdf849878dd1fbb87a5",
+      "checks/Analysis/IntervalIntegral/Reflection/Controls/WrongSignedSector.lean": "dde5c3e0b1915cbaa0b5a5451e1c4b7710ea07c37cbf6aeeec5f3cd39c85aefb",
+      "checks/CocycleProductAudit.lean": "d9846a893a3a05c7e553599eb3584a7038d98543cb43ccf7bd477b896f5c80d1",
+      "checks/CommonJAudit.lean": "6773a938739ae7708d354a130a9e067844cd33633cb6b4ce3883f998a7f638fd",
+      "checks/CommonJCounterexampleAudit.lean": "b457991c2c95fbcb844b307fde244978d18fc733f8f103299e9f1040cd07a09b",
+      "checks/CommonJSignAudit.lean": "ddb2f18308d077dea4ed9a978247c3e661d374a952ae979943f529d8b5a1de50",
+      "checks/Consumers.lean": "d13b567ef3ef6d495f3176ad7de7584d350ee9e8b3a9c9baba84f16bccfea9cb",
+      "checks/DeclarationAudit.lean": "377f6c7372b2693761402d3c28ab0fcb8dca0d5e7d18651fe03289f3863c070a",
+      "checks/FiniteCoverageAudit.lean": "176cc349d3f516c97ab2f1a718bed2539e9e173dcce6213ab8b3ce02ee7d7c04",
+      "checks/GaugeStateAudit.lean": "5a4f7ae8e8d180603bc268a011e213bd89a6c7f93e6be7e033db56c13ef1db49",
+      "checks/GroupTheory/Actions/GaugeState/Controls/GenericGroupAction.lean": "b0bb9a5354b0edb02af17e86303ecd0975fd94f620a54c043d258d8af98ed89c",
+      "checks/GroupTheory/Actions/GaugeState/Controls/IncorrectCurrentState.lean": "a50e57eaa5bdf13f3efcc4cc7ecefdf658332b47d3c258454173d64951158b71",
+      "checks/GroupTheory/Actions/GaugeState/Controls/IncorrectInverse.lean": "677aa9a145d4b06d685757edbf7c86fba5565fefbaa561de1bf3300ea38024c5",
+      "checks/GroupTheory/Actions/GaugeState/Controls/IncorrectOwnStep.lean": "24aaf40a45bfaadaabec23ca064217b8e8b1e81cf4d3126e4c1be4eae9767ff1",
+      "checks/IntervalReflectionAudit.lean": "ce39011242fd7b98359baa1d6fed4ff2c122ac3eadb87c286dc21fe1bbe1f7fe",
+      "checks/JacobiTransferAudit.lean": "9bb43ed3ad4c7d0fa71c11b7b4a395d98bb25b1fdbc8af3ed40fa343f7bd4cd4",
+      "checks/LibraryDeclarations.lean": "5268ba9b369da4379e222ab02f913bf3557f29a6249d90f0d7254f5907424dc8",
+      "checks/LinearAlgebra/CocycleProduct/Controls/GenericMonoidAndGroup.lean": "3bc8767f7d578ddb2d9be01cfeeea419b6a7b9a6a5f17c45ec7212f444cabb04",
+      "checks/LinearAlgebra/CocycleProduct/Controls/IncorrectGaugeEndpoint.lean": "68dba50ddb5c9edeb16f48151ffcf2d310ab789eef61de820298953383aca62d",
+      "checks/LinearAlgebra/CocycleProduct/Controls/MissingOrbitShift.lean": "bbad997fd02b291841d86bb81a8158b7bde04f9643f1fc44b66ca2246d013d86",
+      "checks/LinearAlgebra/CocycleProduct/Controls/ReverseMultiplication.lean": "25fded69d7fd67be09c16200ed75d8a4d74aac12adf08c02fba3a1f7131a52c3",
+      "checks/LinearAlgebra/Determinant/OrderedProduct/Controls/ExactRingAndWeighted.lean": "c28589d246b9b7bbf4538eb8b0fa6c0ff921445d5d70f4a8fe940e1d515f1be7",
+      "checks/LinearAlgebra/Determinant/OrderedProduct/Controls/MissingFactorDeterminant.lean": "037227c29572b504d32eecfcf6177f136825e3acddf911d61763fcf066e348b7",
+      "checks/LinearAlgebra/Determinant/OrderedProduct/Controls/MissingNonzeroCoefficient.lean": "aeb6b35823c26582e0929ff097feeb1fa09f92b9ce9b30ea5a0701e25fb2da67",
+      "checks/LinearAlgebra/JacobiTransfer/Controls/ExactRawAndWeighted.lean": "8cfc343bdf6c51da0ac9b62f9538940216e43c0e498503957d513fa3916b90ed",
+      "checks/LinearAlgebra/JacobiTransfer/Controls/ReversedDeterminantRatio.lean": "74389f8c972664cd2afb3881a63516b0402a574edae2bef6d2dca01dc8ad0bc2",
+      "checks/LinearAlgebra/JacobiTransfer/Controls/WrongPreviousCoefficient.lean": "e0a990d9b192ed0975a841fb7ed30885a073d19d77c9f951b840483ab77ee02f",
+      "checks/LinearAlgebra/JacobiTransfer/Controls/ZeroCoefficientDeterminant.lean": "09e4f47e1895aa768a7b483d02a399e20e4d1f13a3cea657af1baa1d9935ad54",
+      "checks/LinearAlgebra/OrderedTransfer/Controls/ExactMonoidAndSemiring.lean": "a322d90d49868f066001a248c64be7439196742d315c5fde48b1b8663b949d47",
+      "checks/LinearAlgebra/OrderedTransfer/Controls/MissingEndpointOrder.lean": "0d1129c9ae7b519b343c50ca07f5fb0948b4f2aa97412dbf89f37f6533d4e731",
+      "checks/LinearAlgebra/OrderedTransfer/Controls/MissingStepPremise.lean": "67a593dde23d47f1c96858aebdfedaee3596865ed8cc64cb29efe26f0745f83a",
+      "checks/LinearAlgebra/SchrodingerTransfer/Controls/DropCommutativeRingPremise.lean": "a4cbb7c66467d082ef71804ad20c82dcb44cf397537ba74b2a9f90c2fb8dbc4b",
+      "checks/LinearAlgebra/SchrodingerTransfer/Controls/ExactCoordinatesAndDeterminant.lean": "30b877518e43d16112176b24468c530f44834f7cb9fca30729306582a97058a8",
+      "checks/LinearAlgebra/SchrodingerTransfer/Controls/IdentifyDistinctSLElements.lean": "dbbf4e260ebcf35a6bdaa603c527e14a40dfff1affe5d7c64d0b6c5ff87624e2",
+      "checks/LinearAlgebra/SchrodingerTransfer/Controls/ReverseNextStateCoordinates.lean": "dddb1769e2cbf5203990393eaa3ac77e73a4a6947268b61e9f45862e0e4a2f8d",
+      "checks/LinearAlgebra/SchrodingerTransfer/Controls/WrongDeterminantSign.lean": "23bb5c1fcba29f469eb03e1eefbaf0dbedb70c9c45d31355acd5a94e5928309a",
+      "checks/Logic/Counterexamples/ComplexSymmetryAndPositivity.lean": "6303fc21d6a6642370541d10aa876b9c99db7090e73dc6a28d1ebd2ea4542109",
+      "checks/Logic/Counterexamples/Controls/ExactCounterexampleContracts.lean": "223cb286c22fa1a942e67e047e9e0d3766bd7ed1955041365f337024bb5c6df8",
+      "checks/Logic/Counterexamples/Controls/WrongCommutativity.lean": "5950f4f9fb688f31e1a4b5760ecd53efa575c46ad2c5c4bdfd719e28792c9765",
+      "checks/Logic/Counterexamples/Controls/WrongProductInverse.lean": "05bcf3305c7b5df3b02dacd03efd4c26a378640f1b9c98227755a628ae6107ef",
+      "checks/Logic/Counterexamples/PositivityIsNotVanishing.lean": "747a51d3c83e2ba94808f76c2b35b2130b4f23cb84f8f4722351c24003e0a219",
+      "checks/Logic/FiniteCoverage/Controls/ExactDomainAndTail.lean": "ca887f60818df881452b175ca95addab318a60b3e7c05ebc4ee546c1e9ec388c",
+      "checks/Logic/FiniteCoverage/Controls/MissingCoverage.lean": "b638109f4d0d80f24889ab2bbe538da940fd3fb20a57626818bd2b1e5ab804b9",
+      "checks/Logic/FiniteCoverage/Controls/MissingTail.lean": "cbe295d04188c2c8a6336d4e5fd54710d5cc2b899b8964560f147972501848f2",
+      "checks/Logic/FiniteCoverage/Controls/PromoteDomainToUniverse.lean": "5b2fe1bf38678b86059d8508016b2e0ba1be1159981878ec78494fe0bf699c01",
+      "checks/Logic/FiniteCoverage/Controls/ReverseEndpointCounterexample.lean": "0ce8fd175d385868a3e0cb8c2663a8d8c9be089f7450a7ee2c72546d59cc328f",
+      "checks/Logic/FiniteCoverage/Controls/ReverseRayCounterexample.lean": "3797836a144458a54ccf2a7d9fd16112aaa29d50041da83b8f3e7e8c4f2d4426",
+      "checks/LowerBoundFalse.lean": "34fc91e2097ff9a73b355041b23469fdaaa350b28106bebc5c0e20eee1672c6b",
+      "checks/MathTrustAudit.lean": "2ef82eba00df6982ba9f693896d77eff68d9cf39e9def13a29cc9c2eb4e26c74",
+      "checks/NumberTheory/Moebius/DyadicEnergy.lean": "ea589af19b98d6faca428e60b9cd58cf300218526ed95e857113e80a3a6d94ff",
+      "checks/NumberTheory/Moebius/DyadicEnergy/Controls/MissingPairCondition.lean": "8b98522a4486cdb5a05c4e1231b9d3139dddfc0f80cd7fc3643357fdb32e874a",
+      "checks/NumberTheory/Moebius/DyadicEnergy/Controls/MissingScaleBound.lean": "86b36769a3b90022d589e4a16d8ccfad6a1f73390e85c8bc57f70b3044b5aa8e",
+      "checks/NumberTheory/Moebius/DyadicEnergy/Controls/NonnegativePrefixCorrelation.lean": "ae2bbc554ab2b7e5a89bc3290784276860be118e0681088b6aaa8c312c1b7e17",
+      "checks/NumberTheory/Moebius/FiniteLaplaceTransform.lean": "a38b33dd94edac23ecfdef24686586b428b2dd01c4f1ceab673d657a3c54757f",
+      "checks/NumberTheory/Moebius/FiniteLaplaceTransform/Controls/MissingMertensEndpoint.lean": "f5c3e4689a81a739889076777ee6be187537ad29c921ce6b564173ea82f7218d",
+      "checks/NumberTheory/Moebius/FiniteLaplaceTransform/Controls/MissingSNonzero.lean": "cea69c144ed4c4c3ebdeec5cd7f8d62105c1a13e670e2e986751d96a9f27f9e4",
+      "checks/NumberTheory/Moebius/FiniteLaplaceTransform/Controls/MissingWeightedEndpoint.lean": "81591e8960b4b2d1563e0a97f3e5c7a33e3063b4fe2e54199e02f5fca6245fd3",
+      "checks/NumberTheory/Moebius/FiniteLaplaceTransform/Controls/MissingZNonzero.lean": "9ce9c03c1cb5ef4e079cbfd5e707a4441964e22273dae71ed407cfdbe1542304",
+      "checks/NumberTheory/Moebius/FiniteLaplaceTransform/Controls/RawProduct.lean": "c9562ad4c53e5d88d319ce6ae42e1dbfd323c15a91dbbd338aa75f80ccb69cff",
+      "checks/NumberTheory/Moebius/PrimeFilterGrowth.lean": "b2a2d10cc23ca09de63b6d828840fa1e26910f3258962b4ee0081dd5a5b52453",
+      "checks/NumberTheory/Moebius/PrimeFilterGrowth/Controls/CompositePrimitive.lean": "35bab555e5ea516dad4838d919456e91cd1a88ef377712cafe1a69fca3097b31",
+      "checks/NumberTheory/Moebius/PrimeFilterGrowth/Controls/MissingBlockBound.lean": "72486330eb74b51017f73afd576d3c10128bf780c38d60107fff3253131d498f",
+      "checks/NumberTheory/Moebius/PrimeFilterGrowth/Controls/MissingPrimeBound.lean": "a1017aa4c707ce3b3506091b11ee09d5fc4334836e85177273d1f7a9e396a57d",
+      "checks/NumberTheory/Moebius/PrimeFilterLaplace.lean": "b868bc78c1edf189fedcf9d428e7653cbd7d70526cf78d75b44892d7b3ca0273",
+      "checks/NumberTheory/Moebius/PrimeFilterLaplace/Controls/FalseMultiplier.lean": "eee6b3dd6d462f2206bfdd8d614c8724f46e80c85f5f45d5c326ef0de7138263",
+      "checks/NumberTheory/Moebius/PrimeFilterLaplace/Controls/MissingTail.lean": "b891ea1e2a20b4f1b8865c4e803a87445e5bb0abda7c1ba90fe587aad6d63da5",
+      "checks/NumberTheory/Moebius/PrimeFilterLaplace/Controls/WrongWindow.lean": "b77ac269f8946a92ba99978920345a9c0f813ea2f838cc27892938f7add8d9a7",
+      "checks/NumberTheory/Moebius/PrimitiveIdentification.lean": "e410ea20e184837e771cb8c68d12b45ae682b456e91909642b91e38a33ec95c3",
+      "checks/NumberTheory/Moebius/PrimitiveIdentification/Controls/DroppedOneAtom.lean": "eabf0faf450c49fdd27739f053ba73e457d36c755065ff3c05d21f1939ecf93f",
+      "checks/NumberTheory/Moebius/PrimitiveIdentification/Controls/MissingMainEnergyBudget.lean": "091a6058635fcfdc9c6f3507b2420b7cf16af6c4b6d871f5a2a9b286061be174",
+      "checks/NumberTheory/Moebius/PrimitiveIdentification/Controls/MissingTimeOrder.lean": "0abcb000c1e49371985143dee3ac4c0470e010f80bd053cc6767c35dd4300aa1",
+      "checks/NumberTheory/Moebius/PrimitiveIdentification/Controls/OnlyOneCrossOrder.lean": "20a793b0a93c879973c659df4ad5d791207fecc718ef5b03e7e15f2754b8d2f9",
+      "checks/NumberTheory/Moebius/PrimitiveIdentification/Controls/ResidualAsMainBudget.lean": "a74a226c19b0849a00a8551c8fc696f0765f221a3430e6e9026a67336c738228",
+      "checks/NumberTheory/Moebius/PrimitiveIdentification/Controls/WrongPrimeSign.lean": "9b08606db1cc389c5cc9cf57414b3a86930d0dceb2449478f9b3c504c4d94816",
+      "checks/NumberTheory/Zeta/Riemann/Declarations.lean": "566d841feede8c779cae5f2cd5d37f7d068468feef2c9f54df588aa9ead31f29",
+      "checks/NumberTheory/Zeta/Riemann/ExcludedTrivialZero.lean": "6e54ec9ddb515e9a2a428c0fb61ba050d64b53a895c74cd34c4fb1260f97b2ae",
+      "checks/OrderedProductAudit.lean": "6381b95e6963c275c6c1b7a872f4359b14c8ef6c67a004d3eadb586c629dbc52",
+      "checks/OrderedProductDeterminantAudit.lean": "74c04ee7f36b4c4f0994063b5d5db8745852116b67029f3ac859f0e9042e8c41",
+      "checks/OrderedProductGaugeAudit.lean": "241de29d561dcc1be8e0f12e65813453452bedb731592a619415bdfb2ac4dbe3",
+      "checks/OrderedTransferAudit.lean": "afb7c9d86be73a227bc6d92110dbce79413ea0029770e91e1e411a3e8fc8f523",
+      "checks/PolarizationAudit.lean": "89246ca5262300596b6ac65154c46bb210d6c89abf6d93287ddfbcb12572a712",
+      "checks/PrimeAudit.lean": "eb90a4decd0e5142e6117a51d963224991bfa1ee4ae895cf94a750c94e3fb894",
+      "checks/PrimeOneFalse.lean": "1384e86af454d2aaa7ad277445e39e1de57e0cdbcea51dd71de37385d764da47",
+      "checks/SchrodingerTransferAudit.lean": "4e8588f4f14aa9e1bfd00ca5d72defbb378ac2aed035b0d71c718578db21cffc",
+      "checks/SequenceRealizationAudit.lean": "2f52b4d8c05054a7aab174963f9771c1ca831e4d65f1349a07bfddb69aa70f50",
+      "checks/SmoothTestSeparationAudit.lean": "983419ccaaca5e15c307665205391d0c7c67962def161f8e7e8d1d04b91022b3",
+      "checks/SorryControl.lean": "2ddf5b556f2246643ac9f18223fd386fdc25e5294f9cde4f5866fb53844382ad",
+      "checks/Spectral/FiniteVolume/Controls/DirichletCorner.lean": "4b34563e1c5a547b2b6f1d62ef9f73ee7662b45837692bcb1e6275e300c08ee0",
+      "checks/Spectral/FiniteVolume/Controls/DroppedBlockBoundaryCost.lean": "12c09611fd54bd37de93b7bb45f83c527591faf735b652514cea558d7c998499",
+      "checks/Spectral/FiniteVolume/Controls/DroppedIDSLimit.lean": "a08a30459b5115ac3249e7aa389f8b5f25e7c724dda28a2d933ba90b70304717",
+      "checks/Spectral/FiniteVolume/Controls/DroppedRemainderCost.lean": "cb32190ecc88ee578a11db7f0fd3d52be49483957334b748b92a48f9adc14b40",
+      "checks/Spectral/FiniteVolume/Controls/ExactCutAdditivity.lean": "72aa5bba6b8831919c7b3c3e77c0b4ec0db7babcd0cad74adb676efabb1679be",
+      "checks/Spectral/FiniteVolume/Controls/ExteriorLabelInverse.lean": "e4ec7b0839759059f42d153e12f9c5eabf0a22c061407991baca9b04dd5b2914",
+      "checks/Spectral/FiniteVolume/Controls/MissingBlockLength.lean": "7e99ba36b4fbe75c10a1b946c822c98e6904d30377c5987c16568c84bab4c935",
+      "checks/Spectral/FiniteVolume/Controls/MissingDefectEquality.lean": "35fdd185bacac671c991d6df6b145f5e1c8f3617e4bf46a0ecbc8088d51d00ab",
+      "checks/Spectral/FiniteVolume/Controls/MissingIDS2.lean": "09d760b12d4f4e0893ccf68317d815430f2bc1dcc94b17c46969f77eb0ed523c",
+      "checks/Spectral/FiniteVolume/Controls/MissingInjectivity.lean": "12d4eb4ef652c00200be8e935a8ddb9648d7f421da5e259bb02899f2c0962a4f",
+      "checks/Spectral/FiniteVolume/Controls/OneEndpointDefect.lean": "8b678d08034ff821ff30a4e6c6c75edbd6012eed0dff03a61ac594aaa9a20782",
+      "checks/Spectral/FiniteVolume/Controls/WrongEigenvalueDenominator.lean": "a1947cf3f4f013c84b4a398b15535a163e1cc5f08454afb2a181e40277707716",
+      "checks/Spectral/FiniteVolume/Controls/WrongOffset.lean": "cf1c07716248cd258c7ed09e816c4dff8532c1f51c4f7961b3eb81ff66c66712",
+      "checks/Spectral/FiniteVolume/Controls/WrongSamplingStep.lean": "71c93cf70563883ace3e31385e43d33fddcb2a76e52a7fc2274d8679f6fcc935",
+      "checks/Spectral/FiniteVolume/Controls/WrongSecondOrigin.lean": "e7f9850d6b02d80c15618b791c8634e4a90df1f7804526514dffadd847c5523a",
+      "checks/Spectral/FiniteVolume/Controls/ZeroTraceAllEnergies.lean": "3967d2d9f515622db0d3b59e6f67286c5f4a7c29c254e75a01397f4fc611579d",
+      "checks/Spectral/FiniteVolume/Controls/ZeroVolumeError.lean": "c08b348f67aa124c3b44e3ae9a193b6b8d3977c915ef9020448b372d47d3821a",
+      "checks/Spectral/FiniteVolume/Declarations.lean": "a9c2d1b822b28bf47e2c004ccb66ad966d89b589a7bbf9c78a4d79f7e66e16e8",
+      "checks/WrongColor.lean": "c3998d64ef4f18ae3dff2fe3268c5c717772719d9592a752a700d189d9a562ee",
+      "docs/reference/verification-interfaces.md": "85708d75995ba2d2916a17409aa5d5d0124f7f3c5fdc1c52a6902a2711cfb657",
+      "docs/mathematics/LinearAlgebra/Cocycle/product.md": "03aba58cb0e155e52202effd5cff06d2a5cee3ca1e71336f6aa6bcf3f3c7e936",
+      "docs/mathematics/LinearAlgebra/CommonGenerator/counterexamples.md": "e701be73312bb53e797c834471056599db2bc3f3cf65a256699ab7d90ab965e0",
+      "docs/mathematics/LinearAlgebra/CommonGenerator/rotations.md": "8af84dcb6031012ac251c35a4a440251a27915c6a9fe228c8cad541683c265cb",
+      "docs/mathematics/Logic/FiniteCoverage/scope.md": "6d30970897c155ccfb546e3afd6485be0117c27d5774c500764040140f4a44d1",
+      "docs/mathematics/LinearAlgebra/Gauge/state.md": "e070f02d24844d218d6cf9130c555c54bccccc7ef3a28563e7e4b6740bfb8ecc",
+      "docs/mathematics/Analysis/Integration/interval-reflection.md": "8cef22e84ee33ea8fb439debd71d9ac17310c74118afc9f7467f02b104488d8b",
+      "docs/mathematics/LinearAlgebra/Jacobi/transfer.md": "c8372d4c99c4b33550d4b439d1a193d2fc3a4d6013aa435191af9c556b2b10d6",
+      "docs/mathematics/LinearAlgebra/OrderedProduct/determinant.md": "a702c13645868c308ecf2cef06d4ca551059f45eea5f7739445d5257caa37a1e",
+      "docs/mathematics/Algebra/OrderedProduct/gauge.md": "0a71a980e1bec93fe5c6f34ff9ba705dce61256daec7a8dd5e35659b0e61a5f0",
+      "docs/mathematics/Algebra/OrderedProduct/intervals.md": "64d47478bf5fce8deaf107f420822ab964d9d9bbf996594affa374769de00cc5",
+      "docs/mathematics/LinearAlgebra/Transfer/ordered.md": "f9a0d98856d1dfe1bba85e8f17a01d6e8a13eeb2b5d67391c8a2588eda61e351",
+      "docs/mathematics/Analysis/InnerProductSpace/polarization.md": "bcee28652ecaa7ad788fa6663582c523a0637357bad8f71ec7adfc328d0175cb",
+      "docs/mathematics/NumberTheory/Zeta/Riemann/inference-guards.md": "bd03975622c47dc7feb2c2eb3c421b9e9eb50c4f9da4104fb563663473b5687e",
+      "docs/mathematics/LinearAlgebra/Schrodinger/transfer.md": "57caf958d6c7f812c62479c84576fc027c78c476dd52fe3c96d5e3c7511a7b46",
+      "docs/mathematics/NumberTheory/Moebius/Laplace/cutoff.md": "9b2d235c4ef3b33bde8a8797e05c4cd0fc56340f859c2185dc2f62502474b25e",
+      "docs/mathematics/NumberTheory/Moebius/Pickup/identification.md": "eef7daf47c41d667344a146bb08ed0261e85d3595984370f82493ab541201d60",
+      "docs/mathematics/NumberTheory/Moebius/Laplace/finite-window.md": "de80268f168da260e92897f6fef044fc9314b53275b62138e29eddbb11149cc7",
+      "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md": "404d73e9ddcda5f57249c92b9cfde77c4ca2f7240df366fbfc21863b747c65f0",
+      "docs/mathematics/NumberTheory/Moebius/Energy/growth.md": "da77f9deb28d89c5adf931f8316c7fdd55b5702a189b644c137683a4da8b5534",
+      "docs/mathematics/NumberTheory/Moebius/Energy/gram.md": "9041b3d6b82bbe1b58146027f8aab87c80aa6663e5981f140fd3c5e4d07fdc96",
+      "docs/mathematics/NumberTheory/Zeta/Riemann/criteria.md": "5fabd46759175f5914a45b9557fc77fc10abea89e48ea9a89bd30777d3407337",
+      "docs/mathematics/NumberTheory/Moebius/Energy/determinant.md": "7be64a36c8041d25920e16fd13de490baa476511b8786cf54cf2c06eabbe3ea5",
+      "docs/mathematics/LinearAlgebra/Schrodinger/almost-mathieu.md": "4d8ec17996409cb51d406e670474186847396b9bb971ef552d94b7e33f658cdb",
+      "docs/mathematics/NumberTheory/Moebius/PrimeFilters/cascade.md": "c847125968d7fa7169d2a601b7e2e2f6a3174d829911df0744abb55f08f8d67c",
+      "docs/mathematics/NumberTheory/Moebius/PrimeFilters/conditional-growth.md": "08879e67064367db9f18ed7131117f904f4bd52297a5342e7613f45b8d45c228",
+      "docs/mathematics/NumberTheory/Moebius/PrimeFilters/negative-correlation.md": "ad6a8c5407b85ec46c1f29e63cec1b547bb24362cd8b2d1fc665527327ffa794",
+      "docs/mathematics/NumberTheory/Moebius/PrimeFilters/uniform-supplier-obstruction.md": "a613cec600f80a8e2dc51c08211805f8b55ba0071cb9af69920f51572a4c295c",
+      "docs/mathematics/NumberTheory/Moebius/Energy/recording-blocks.md": "50a113605469824985935b88c3971a7f8e2cfc1ea702ace55c699adbe2ec922a",
+      "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md": "d8d4c1f2b56a7c8627d9547db50efb30cc922710d2dffc34f67c4c8663c722b2",
+      "docs/mathematics/NumberTheory/Moebius/Energy/damped-tails.md": "49a9e1f20c793179d83930eeb3f7c5d7df94755243272ac359810c7071a67682",
+      "docs/mathematics/LinearAlgebra/Schrodinger/sturmian.md": "1cc30045bcf36b17018524ec805097fc58897e05061563101416612301a6a3a7",
+      "docs/mathematics/Spectral/FreeDirichletSpectrum/eigenvalues.md": "5bd38ec59bcdf6cb054f5a1befb650f1434ca01e65cfb42c54f50672de2853f5",
+      "docs/mathematics/Spectral/IntegratedDensityOfStates/free.md": "6d6d4d7cc653c9f6e0b9be70bda9a1bf4a859b3b6d0879e7c6b56c96470bf748",
+      "docs/mathematics/Spectral/GapTransport/labels-and-coding.md": "23ed4943cc2bbc93b01e068d244728d7ea6020a5887decf38a77c5c220e101dc",
+      "docs/mathematics/Spectral/FiniteVolume/count-comparison.md": "3ae5350151f60f9e8f56e0b4f87526500448b5970a4be1bcb8da6e62daddb380",
+      "docs/mathematics/Spectral/FiniteVolume/dirichlet-cut.md": "885871a75a7398d6d5eec71133a2306ff83c5a461156c65c0d497a3120cafd7e",
+      "docs/mathematics/Spectral/FiniteVolume/repeated-blocks.md": "b4e2b6895529ed602b0eb05390c11b6b16132c3c6cadbf6d8dcb2a1f18278c71",
+      "docs/mathematics/Analysis/Fourier/WindowCertificates/angular.md": "d6193ab50cebb0d7b9122aa198d509320442a9a4877addbde845c204c8195481",
+      "docs/mathematics/Logic/FiniteSequences/prefix-coverage.md": "66794404c073ec53806c65b18ee521f2f1cd0f02166a2611e5dae6c8cf5d4b12",
+      "docs/mathematics/Combinatorics/Sequences/quotas.md": "8204072011f3e27fc746b098b2a9ca6765008407bb0cc37f1b813ea4d2bf06f0",
+      "docs/mathematics/Analysis/Fourier/IntegerSeries/encoding.md": "15db1cd897da2f78b8846df059256c5da5dfdc0c43c16454c0af14122763abdc",
+      "docs/mathematics/LinearAlgebra/Schrodinger/sampled-potential.md": "20fec0a9be58d735fb6d8331e01ad49a725b3131ab2f5f1bf1bd308d0f003bc2",
+      "docs/mathematics/Analysis/NormedSpace/reconstruction.md": "14fc5d0047f0b0b9f6c15893f94f796073f71dbb172cb8384a4ef97cdc1c19f3",
+      "docs/mathematics/NumberTheory/ContinuedFractions/scheduled-denominators.md": "6a8e2af368101f557a6d90fe99815d2697c2986d8c6e17f990bdfdc5823e7e22",
+      "docs/mathematics/NumberTheory/ContinuedFractions/frequency-realization.md": "31b6b865772af5a1fdde2c1019aab2059af8d0a66f3be41352354dad19bc5992",
+      "docs/mathematics/DynamicalSystems/Sequences/approximation-return.md": "da10c491901d662b46ffde7c5ff3566a5b3825a4e77a85a7a8dd22a4b62a20ca",
+      "docs/mathematics/Analysis/TestFunctions/separation.md": "ff43a52ca94ce1f719fb53485bbb316ce31ad0cfb21d757dcdd0b24d9f935f55",
+      "docs/mathematics/Analysis/TestFunctions/exponential-moments.md": "9ba1c073fa9015a0087c4e7d7395357601183bc206f32ed2c64496d12b2d2c5f",
+      "docs/mathematics/Analysis/TestFunctions/polynomial-profile.md": "e450245b4b2b3cdba14018e83dd1003a1d7debe2a4a5ebfbd4d8ff49941dfff5",
+      "docs/mathematics/Analysis/Convolution/compact-correlation.md": "04e158c49b3c237df104886487abd80ce4d210eb0b4598a56e1aac5eed11e0e7",
+      "docs/mathematics/Analysis/Convolution/derivative-energy.md": "63ef98f16cfad94bedf110101b6310fab2fcc6fcf747240e97b102fb5ea1601a",
+      "docs/mathematics/Analysis/InnerProductSpace/causal-response-gram.md": "ef57b097bac5d9d4a10c16a10b7e65327a66f443a9daae58310f010676f6b344",
+      "docs/reference/source-verification.md": "637b93b39a0758249b9e4bb2bddfe87c6b5a7b943fb77e7807d0f4bd012caa69",
+      "docs/reference/source-layout.md": "407734e350609538657d586a114bb8852bcc46c6b12538bd6e1df4673b1d85aa",
+      "docs/mathematics/Analysis/Asymptotics/polynomial-error.md": "ca972863a1438a75df401e3f1d1993a03e8d5696a4cab009d275c2249ff091a2",
+      "docs/mathematics/NumberTheory/Prime/least-prime.md": "92ef6c52678865431253511255d8b8995a6b5cf734243a5b92f24f459b268457",
+      "docs/mathematics/Combinatorics/Sequences/coverage-and-quotas.md": "91eaf3b95be6d1e4e6efeb4d7ebf9778afb6651e6a7c60adeb015572dfd35abe",
+      "docs/reference/literature/unitary-almost-mathieu.md": "2ee4ecb6da1d5ce95129581804eb64136d89a234b7ff5bfe3e6ff928cfd761bd",
+      "docs/index.md": "74944d3acba9e105a44911ef08b217ad4c1e2b6409f97b08b93a8341a59f6410",
+      "docs/explanation/evidence.md": "f55abcc08195b258b500978556577eff64db963160ca7e78cf8bc9634d059b80",
+      "docs/explanation/documentation.md": "33bb66f6eede83113e2bb9ce6a86ccca39a440a6b51ecfa7cd22580f293b6077",
+      "docs/start/least-prime.md": "4613917ecd8f8e299b4aa0a3bef4c7e7061578dff31386073d8c531589b73d60",
+      "docs/how-to/verify.md": "859057609aa5f007f90e94765fda4e5811025c0f1efe56f0f0798f4792a35235",
+      "docs/reference/documentation-history.md": "605583c3694317da86bdf5a453fef02fd6859b061f28fe9b8cda47c1989b8a36",
+      "docs/reference/library-pages.md": "f2420f14a2134d7a2b4a9d6189e4829c09831db5b692818b0c2bb85e1c7c0923",
+      "docs/reference/results.md": "672bfa3dc39e4181b40a8d4aaef09479a37b33cb6ae95b7b827955877790307a",
+      "docs/mathematics/DynamicalSystems/TransitionSystems/guarded-reachability.md": "befea5c935b7e9bf985b6b00da0956f9cb2c4c3afd3c843d0a104c1a40ec46e2",
+      "docs/reference/mathematical-terminology.md": "971701db0248a4be42f3dcc2968766ff6bd272071f79f9decc22ee4a0a12b5da",
+      "docs/reference/documentation-layout.json": "af9a16527bf3068b0830eb781754f53b78fb32cb423f937aaaad3a92fdd3d27b",
+      "docs/reference/object-source-bindings.json": "f723b0a8dd9934b0ceea870caa89556190af9327d335682123b9e88a16701a26",
+      "scripts/check_documentation.py": "b18bf374e7f50f1ccb57c8ab7f9eef8742bc346403ac0258a11bcd5c6d19bd9e",
+      "scripts/check_documentation_layout.py": "aee5d8651d20c7bb461ea3aae2b8bcbedb42c38c7572ccf09043f0c95c206d81",
+      "scripts/test_documentation_layout.py": "fdd69ab18c528eff15401b09dfff97113fe6cc1dcd3cf70182c31f0c80883901",
+      "docs/reference/results.json": "fe2ad2cb22d66c33a4b4b78477b95a0fd1d8ca8c537773db19307743af482527"
+    },
+    "incoming_distinct_common_files": {
+      "AGENTS.md": {
+        "local_parent_sha256": "9bb3308760ca2793c369894bd3f0a42d8e2a674d859a53122bcdfd63b23f2eb9",
+        "incoming_parent_sha256": "6e19b4f08f1f97490480192f77d425c2c26387eaf36387b7a2cc4e200257e212"
+      },
+      "GRWTSK.lean": {
+        "local_parent_sha256": "dd2fc2cac81ec3dce93d267a32cf3ccc533b2a381c534ffe0b76ab68aba4c429",
+        "incoming_parent_sha256": "94787d8ee7ae28e3259b51d350c6a5931b62c83914c641299785296ac4a03563"
+      },
+      "GRWTSK/Algebra/BigOperators/OrderedSquare.lean": {
+        "local_parent_sha256": "8484616dda2d4290a16aa53d1515a87ace9a4891f70006a4885069e81308e883",
+        "incoming_parent_sha256": "90887152044ad24b0a96371b5aee78430e2d67f2abcc899529c43f6946d8e1d4"
+      },
+      "GRWTSK/Algebra/BigOperators/QuadraticCounterexample.lean": {
+        "local_parent_sha256": "6e51c5d0f986b389b5acdf8cca035840e227756ddc11d874b9faa41270d9a519",
+        "incoming_parent_sha256": "beba4fef99150fd9d1d9a905b33bba2a4cc20982be1eb08d62705cae37489d25"
+      },
+      "GRWTSK/Analysis/Asymptotics/PolynomialClosure.lean": {
+        "local_parent_sha256": "815688411098d0d3f43e3f49c4fdd3614521f4399dc2729fbec2d447cdc8eed5",
+        "incoming_parent_sha256": "4cfa71d72517861314331df767a387bff171043475cf51177e8d7bb61b6b5bae"
+      },
+      "GRWTSK/Analysis/Asymptotics/PolynomialErrorBound.lean": {
+        "local_parent_sha256": "7f04746894b0774969d506fde6c8287056361051f29196c8dc23c2f38932b6e6",
+        "incoming_parent_sha256": "038e3cf31cc90eec7019c91be55ff2cdc4c00aaf82a3791be5d05e4dfae12996"
+      },
+      "GRWTSK/Analysis/Fourier/IntegerSeries.lean": {
+        "local_parent_sha256": "bd741ea9dd1e4efbc8eab2f77574a73c0cd82d85f2a76d604b14f05cd2f09789",
+        "incoming_parent_sha256": "46462643902012c58fa6514c99721701b65655f16fd88a0e82fc1181c94bbe88"
+      },
+      "GRWTSK/Analysis/Fourier/Parseval.lean": {
+        "local_parent_sha256": "c44554efb9aa02eeb51428f51d11a9205011e4ca0ab7831421433d23096073dc",
+        "incoming_parent_sha256": "f212399e5b28f079a24197c08c3bded9611f04bb08d6dcbd2685046e16db6681"
+      },
+      "GRWTSK/Analysis/Fourier/WindowCertificates.lean": {
+        "local_parent_sha256": "acf0f90e233095c8e4949a4c22e1f67fa68f4d85e0be5cb99bf9fcfbbea671db",
+        "incoming_parent_sha256": "c616f557739add2b41d0691111f835ce0f181daf4ba383ba84ded3f3e25a216b"
+      },
+      "GRWTSK/Analysis/NormedSpace/QuadraticError.lean": {
+        "local_parent_sha256": "79581bb3cf4ce27f646aa513375e0c51912c0ce57f379f1380114e225f0f5980",
+        "incoming_parent_sha256": "663c865cdbe9802281cbb4be82f3c15612330e44c86acd44db9b14dd46d1c7d6"
+      },
+      "GRWTSK/Data/Sampling/Descriptions.lean": {
+        "local_parent_sha256": "165d95062a6395676289e4948747fbbb572379fc7031534f87cef9b553301b0f",
+        "incoming_parent_sha256": "5130490d5c5394b39e1873e1c49825a64df7efe767e7bcc5e43299dbb28a4b39"
+      },
+      "GRWTSK/LinearAlgebra/Schrodinger/SampledPotential.lean": {
+        "local_parent_sha256": "412246f06dbbe474c57fa268af5751faf5a8315a41d6569d476101b6914aa3f1",
+        "incoming_parent_sha256": "dd30ef9e49516fbd3c87d80a743b8ca52cf49fbd4dc6914f954b59ec6753482b"
+      },
+      "GRWTSK/LinearAlgebra/Schrodinger/Sampling.lean": {
+        "local_parent_sha256": "4c7935b16a5d47ab1bd6e3184cd06cbb53e504df60531220f475faeaa29c274c",
+        "incoming_parent_sha256": "c1a7b19b713a44f91ead260637396de3b673835eb5d4b8033702cc7068ebe757"
+      },
+      "GRWTSK/Logic/FiniteSequences/PrefixCoverage.lean": {
+        "local_parent_sha256": "a6ee772e91591f1e51ad01a4a0ff68df9f2455d4c0c168a660159fb0fd55485f",
+        "incoming_parent_sha256": "77ed7277b4519ff8fb955e215664ac6d0c22a78e95e38e9ee16d18e6b226a5b3"
+      },
+      "README.md": {
+        "local_parent_sha256": "b7cf2859adebd703edda6952e17b4eb49b0497002ce6ec6c4f7e392cca0e97cb",
+        "incoming_parent_sha256": "6c0a5d275aff572fdb198adeb679a98246e751793efd99a220e79826a1d040e3"
+      },
+      "docs/math-layout.json": {
+        "local_parent_sha256": "a1015aca3fe1aa6e3f822cc5ebc3217cdbd7c78e3e4407c22c7a1173d6f57729",
+        "incoming_parent_sha256": "8e9be40b9670b581ece90d0c527fe83f32c78f0b99bab6ec8c9857a3733a6a03"
+      },
+      "evidence/ccc-control-soundness-source-manifest.json": {
+        "local_parent_sha256": "549a69f0589483ad3e00c9b63ed747655a9ab67bf82493a76bd22736929444b4",
+        "incoming_parent_sha256": "38193ba33bae1a89cdecdf58fcd019271aa129848c5c39e88f684da19b735843"
+      },
+      "evidence/ccc-energy-checks.json": {
+        "local_parent_sha256": "a8d2f3b3bd82fe03e04945bdd3766aaffe04d89c1a4401a6a0448edf0d0e9c9b",
+        "incoming_parent_sha256": "065d2277ef159fd344acfdcd03a5695a67b46290ded6a6848eba3f1503a8649d"
+      },
+      "evidence/citation-common-j-counterexamples.json": {
+        "local_parent_sha256": "db5ac407bda294584ef32d5d73562c9e1de8c0d4936282b69fedca71cacc111f",
+        "incoming_parent_sha256": "3f03afb52d281450fa821671c0fb926f84c1bb5b28cd85bb4258dfd4fb63c486"
+      },
+      "evidence/citation-common-j.json": {
+        "local_parent_sha256": "c5839545151de9f64167635bdfdd8d8d0bb4ae321403cf1f77c05a00cf0de0c1",
+        "incoming_parent_sha256": "eaea164c8939c7ea2784fc6dd8b79a38a82ba40199ddb4da7775ad472c210274"
+      },
+      "evidence/citation-ordered-product-gauge.json": {
+        "local_parent_sha256": "a48e295c79f6a186ffd908525a5425c2649a9ad2de12fc0d950ff5741ff4dceb",
+        "incoming_parent_sha256": "0c1c22343cc14bd9aae29ac90d19fb235b9dc1d990ca4cef562399f2db3bb30a"
+      },
+      "evidence/citation-ordered-product.json": {
+        "local_parent_sha256": "cdc25ddb7849309f7a0292e1c7584784c36c729025c178c3ece86b0541e78d2d",
+        "incoming_parent_sha256": "cb17ff0c5cddfd3d0d64859d052ff5eee52df289db5649f669cecd9c99ae2311"
+      },
+      "evidence/citation-polarization.json": {
+        "local_parent_sha256": "488a55baf5dccea830aa7040fc4dd6f4c7180514f64c75000f686ff78b2fc40e",
+        "incoming_parent_sha256": "cd85b343201a3dce896f156fc19ea4512dee78c5b5cee410004b8a6a9ac0fc84"
+      },
+      "evidence/cutoff-laplace-checks.json": {
+        "local_parent_sha256": "743c74d364f955d8fec8c52071e67533bfd9d54752ae37ff335f2594385c8a2c",
+        "incoming_parent_sha256": "4b74f602cd173a900d5a1abff1e3d03c57e32c655e285a218fbdf999e57c6063"
+      },
+      "evidence/original-pickup-checks.json": {
+        "local_parent_sha256": "c1cbb3903a4c5a9552ea1814a561ad0f3e269ed9039de5b368ec7c0dc8d7084e",
+        "incoming_parent_sha256": "c159bc1b0776333cf5d6f185cec899d05067793ef2fc5110c733251226bc87b6"
+      },
+      "evidence/prime-cascade-checks.json": {
+        "local_parent_sha256": "ca19339b4f5b735d509d821969b40cdcea8c287e789ed952f8104df4153d8132",
+        "incoming_parent_sha256": "4cfaf9a14f9048f0d7a0ff209b823bcdc9d30891cf9ac9eb66f45e769b0cb766"
+      },
+      "evidence/prime-window-laplace-checks.json": {
+        "local_parent_sha256": "a0c9cc4aa2632ed13d43982c5702494d2cbd4a1b122c2b2f66013b708b3daef0",
+        "incoming_parent_sha256": "4a69126aae6fe964547f70882da30459046885b825dbe4f262dac37614cd1fb5"
+      },
+      "evidence/recording-scale-checks.json": {
+        "local_parent_sha256": "78651c5fdc89e848902363b9aeafa08676c650fe7ceaf7199c639bac34f30ee2",
+        "incoming_parent_sha256": "392c94e22e2379b0a3f3594dd8db9a2a9edaadb3c1598a242c49b7768dc89196"
+      },
+      "evidence/ten-martini-checks.json": {
+        "local_parent_sha256": "fabf0f9e5d811b3b3164acfe46771ed8c5e33ba4bab54ce9fff2c9f2ff40c62b",
+        "incoming_parent_sha256": "9b1b2b92e730fe059d67c48793f68600d893a7fed2d2f7b39edb0bd1624ef3cc"
+      },
+      "scripts/check.py": {
+        "local_parent_sha256": "8d0c135e9a0f1c779574e8436fa2d6f16920fb4f6e9883ddd86303fcad158186",
+        "incoming_parent_sha256": "29c66578ca880d7efb8fb06be60a5985f3aa72f6b974e1100c77aa7323456b1a"
+      },
+      "scripts/check_ccc_energy.py": {
+        "local_parent_sha256": "3a28f03632d6434806b3f0836ba3344a01c74fbc0339b0ca3e0a6f32cf219ab8",
+        "incoming_parent_sha256": "10c6582b9592fd8ffa947a9a950ca1fc00e377b77d53f6aeee7dd1f54687f1de"
+      },
+      "scripts/check_cocycle_product.py": {
+        "local_parent_sha256": "5bc80468f6194af63c374f86671fd3e4d887bdd3e4fd402226fc6cb233ea4d08",
+        "incoming_parent_sha256": "bfbd03e378239b2ab1c68f885305afab9906e4ef5300f8ab49883d0ddc022b36"
+      },
+      "scripts/check_common_j.py": {
+        "local_parent_sha256": "8a66fa9491d594426fe56adb7e29b87d61c47346eb7337fe798c2ddaa2bfa954",
+        "incoming_parent_sha256": "ad77ac171dbb83cadfc28a6028f7d7520569b4f68f4aa19e1a6c6e496987db2f"
+      },
+      "scripts/check_common_j_counterexamples.py": {
+        "local_parent_sha256": "22d1747a8ddfd073bfcf9bc0e5b60b11dd825436531b56a6193d3eb6beaee16a",
+        "incoming_parent_sha256": "f9ea2104e47b2e93359eaf70939c18d767608a7bd1be75df697fcc09a87b6681"
+      },
+      "scripts/check_common_j_signs.py": {
+        "local_parent_sha256": "2c5cdd0d1ed268f0e8a5dc52803491d7102b47949690efdfe1f3fcb138bb37b0",
+        "incoming_parent_sha256": "96d8d9a51c0a2d1b1eb509a60acf26e74d5844608c2eb672f5e4d5f1c0f8999f"
+      },
+      "scripts/check_finite_coverage.py": {
+        "local_parent_sha256": "56fbd39f176ca3639d51ff11059a21a062c7bb16f61e122af36bba0cef59baa0",
+        "incoming_parent_sha256": "cd7000a9e7f37d7aa435891627a7be32e532cb03ff9c4fe7f687be5fd92ad3ba"
+      },
+      "scripts/check_gauge_state.py": {
+        "local_parent_sha256": "42745b4263fad20f6041339bbff2d35335b1dcb04049f58133c6d16cd5a95263",
+        "incoming_parent_sha256": "abaa74b58db7e75d1dbb9b3c400980311595ece0db3beb4dd631b557785dbdf8"
+      },
+      "scripts/check_inputs.py": {
+        "local_parent_sha256": "aaeead07ff86b6899cce4edcbbd2c282f8494886269ee9a6d24a605a66f4b455",
+        "incoming_parent_sha256": "8e8564a33039a2876f8de11db7b8db46ecccc8d315ad37a5fd983793ff175662"
+      },
+      "scripts/check_interval_reflection.py": {
+        "local_parent_sha256": "2b1fcee38a5e1baa548cc96764479b70bf4d206f5f35ce15155bbdd5300b2e8b",
+        "incoming_parent_sha256": "c104f67157adcae93570075d963c5f28a82aeab21b2a8019fa564e1fbbf1be6a"
+      },
+      "scripts/check_jacobi_transfer.py": {
+        "local_parent_sha256": "dd2f40ada7c4d6a186b92cbdb8c5f6ce1d77b99f73823d5b4f17d0bad0c73786",
+        "incoming_parent_sha256": "60f659dc81f075fba6c806de5e734ca70e17166e5ff3fadf819aa6dcdccde02e"
+      },
+      "scripts/check_math_layout.py": {
+        "local_parent_sha256": "c47ba4e547ea032236d1fc195418ed856970d6bd8458fe4fe5be203240c9a432",
+        "incoming_parent_sha256": "40982b7b3b9c67ac7256e8fe3d4301882ad01c09dfa7cdb04ae94adfc2f52e69"
+      },
+      "scripts/check_math_trust.py": {
+        "local_parent_sha256": "042839d31b7eb0c5bd1b5b316596ecd4012f8a0005cca956eb8946672eedf008",
+        "incoming_parent_sha256": "fa91959ff3d27586222b7bf600597a6c7acafaec6e21a36751dfcb2dfb83b747"
+      },
+      "scripts/check_moser.py": {
+        "local_parent_sha256": "6063de30ee8a3b46bb682c486aee5b7b05b0ed480cb49f1f4982da5c0b8cf1d1",
+        "incoming_parent_sha256": "fd518f0f0cd8ca9d194537e08a88fc9b7bc994372c7afb6bf83d00feccecfbd8"
+      },
+      "scripts/check_ordered_product.py": {
+        "local_parent_sha256": "d34f39fbd04f771a98d4f8e1a929b66a74d8456d231f81ab659fa9ebcb5f48ef",
+        "incoming_parent_sha256": "83a5da30a877a89f778196f5d3be3a2b696fc9c5c61d1fd2c507e19c896033e2"
+      },
+      "scripts/check_ordered_product_determinant.py": {
+        "local_parent_sha256": "01d102c7432e5d1cf90da6e187aba9632ee679b841e2a3c8a3698e0c45de140a",
+        "incoming_parent_sha256": "3481af615b235205a8b12dae644061b9f6b7689f289a2bc9083aba2398f40d4a"
+      },
+      "scripts/check_ordered_product_gauge.py": {
+        "local_parent_sha256": "7aa17587543d3f55b18e25c3810cc01f5015bf7d2aed6adb8185561c8f41ac4e",
+        "incoming_parent_sha256": "f52e7eedd87b8b90170d4c7cfa874fb96ea59d591f1126f068e40dc29bedcf2b"
+      },
+      "scripts/check_ordered_transfer.py": {
+        "local_parent_sha256": "d355cf704bb00ff2bf9f743a1c1daaf87bf71530650a599bdd47bcc502fc0f15",
+        "incoming_parent_sha256": "85c0cd3a3341b026f98c068bfc248b2ed8e077e9d6a2f0649eb1955bdaf7e121"
+      },
+      "scripts/check_original_pickup.py": {
+        "local_parent_sha256": "d39b5a83e61f32132bcd6ae8c95593415d5f082120e176438354860df6873c1c",
+        "incoming_parent_sha256": "eb878cbe0ac2fff957f045beeb538577700bb598b40fb062dfdc66e0a6216533"
+      },
+      "scripts/check_pickup_cutoff_laplace.py": {
+        "local_parent_sha256": "d0edaf5326d4695a126d0015980a776476b137f5b753d0e868f0e0fdc8df48f5",
+        "incoming_parent_sha256": "e48ed564a91455b9b66dec6cde39ea14a9a93be27936e7c72582e9ed05cc6502"
+      },
+      "scripts/check_polarization.py": {
+        "local_parent_sha256": "1f303d68eb4f46c549ac6b2332276d04d2ab11aa4d8ef12e21d36618fcd54573",
+        "incoming_parent_sha256": "3c1a291c656b9ee36bd1d72b8d9b9c486dcb596e2d9c87df120dc7f83a2dff05"
+      },
+      "scripts/check_prime_cascade.py": {
+        "local_parent_sha256": "4d3ea91264236135440e83d9b733dc23146076a90b400ae80f820f8c1eea71b8",
+        "incoming_parent_sha256": "1b898857ed9fe546dc3a0e2c4b788fcd8057f8121f6094fcd3ad55b2278db3ea"
+      },
+      "scripts/check_prime_window_laplace.py": {
+        "local_parent_sha256": "2c746877806eab54e398cc91127b80f82c542e2469c34ef93ab87eecb4e48296",
+        "incoming_parent_sha256": "d8298c840b1a92b72b51d27c9fc28392c6dc40a02495b49f7f214dabae9b393a"
+      },
+      "scripts/check_recording_scale.py": {
+        "local_parent_sha256": "139811aaa7511d95bdbf68e4eb81447ef0195e7b221a6dd9da825660850cbed1",
+        "incoming_parent_sha256": "aa9e188873fddc425d82961e657c6c6598532b2b80eb1ac5b66d3aeaba9a4688"
+      },
+      "scripts/check_rh_inference_guards.py": {
+        "local_parent_sha256": "c670d00f663c9f7ddff4b951842d5485cd345c4ea62c88a6b1f6cc328ed61897",
+        "incoming_parent_sha256": "8c6bf641b6ec406584da5e6da7a7c309a5e968721a68e0311ddafc06cb97a006"
+      },
+      "scripts/check_rh_target.py": {
+        "local_parent_sha256": "f23e786482d4318ae1ccb349f1491c486706674c5a7f2cb1887366d456dcee4c",
+        "incoming_parent_sha256": "3d0030fbb6b0b8681b985fdef205336583d195462b326cfdf4f28b30617e83e0"
+      },
+      "scripts/check_schrodinger_transfer.py": {
+        "local_parent_sha256": "9f8106e3bfb23372378136e81f5d18068bf1bd36f1d4ae90a07c7f6f5d0d2aa5",
+        "incoming_parent_sha256": "42c1a8847a9b36e01ede5ba822d756a6fd41caa6186904825ee9c5533e5ea0e2"
+      },
+      "scripts/check_sequence_realization.py": {
+        "local_parent_sha256": "61b7ac13aa828b9bebd448a6c7e0953ad7f52d51b14dea620e4926b42acb8c0a",
+        "incoming_parent_sha256": "187c43eb142a9098ba0c182f7f0e118cf87adcfee51ef93819d3ea23f1d7cd1b"
+      },
+      "scripts/check_smooth_test_separation.py": {
+        "local_parent_sha256": "58887db9bda1190cbf354a1e89c236ca09ad564091ee691166256e67dd38f8f6",
+        "incoming_parent_sha256": "7abd846e5d223880f5c62ab0739c55c6566052bd74b535d18750179ec2388c0d"
+      },
+      "scripts/check_ten_martini.py": {
+        "local_parent_sha256": "61449e4ff5699d1c3219c8b9634e4c35cb84364d7c93b3cd5f83b1eb6be8ce45",
+        "incoming_parent_sha256": "c3cf2e0269ea0f144349950379f1eb94ebacd0fdd4cd5d3dfe6ab38b0ee4084c"
+      },
+      "scripts/monitor_math.py": {
+        "local_parent_sha256": "1a873634c902da4e5d179983d4505a2f1ece7198ce7955d431380fb5b6c3fc18",
+        "incoming_parent_sha256": "b2ff4f3adb33791a90e2dcca83ad8431d4f37667c5e22155701262ce651cc6fd"
+      }
+    }
   }
 }

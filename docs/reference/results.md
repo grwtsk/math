@@ -6,6 +6,6 @@ exactly these three selected families; no declaration-wide or complete topic cov
 |---|---|---|
 | 1 | [Least natural prime](../../docs/mathematics/NumberTheory/Prime/least-prime.md) | fresh-selected |
 | 2 | [Coverage and discrete quotas](../../docs/mathematics/Combinatorics/Sequences/coverage-and-quotas.md) | historical |
-| 3 | [Polynomial return with paid error](../../docs/mathematics/Analysis/Asymptotics/polynomial-error.md) | historical; current source changed, replay pending |
+| 3 | [Polynomial return with paid error](../../docs/mathematics/Analysis/Asymptotics/polynomial-error.md) | historical |
 
-[Structured records](results.json) · [Existing family pages](library-pages.md)
+[Structured records](results.json) · [Mathematical page inventory](library-pages.md)

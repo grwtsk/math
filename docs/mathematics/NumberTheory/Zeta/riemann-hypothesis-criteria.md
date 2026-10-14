@@ -113,7 +113,7 @@ classification and an access route through existing interfaces. It reports no
 new theorem, unconditional RH proof, new checked consumer or current full-library
 acceptance. Source text and an import graph are not proof-term dependency audits.
 
-See the [detailed pickup-energy discussion](../../../ccc-rh-research.md),
-[recording-scale discussion](../../../ccc-recording-scale.md),
+See the [detailed pickup-energy discussion](../Moebius/Energy/growth.md),
+[recording-scale discussion](../Moebius/Energy/recording-blocks.md),
 [evidence roles](../../../explanation/evidence.md) and
 [verification instructions](../../../how-to/verify.md).
