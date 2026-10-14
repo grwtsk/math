@@ -1,7 +1,7 @@
 {
   "schema": "mathematical-source-intake-v1",
   "status": "CANDIDATE_SOURCE_INTAKE_NOT_THEOREM_ACCEPTANCE",
-  "scope": "63 source candidates organized by mathematical subjects and objects",
+  "scope": "68 source candidates organized by mathematical subjects and objects",
   "source_artifact_sha256": [
     "0c4ed7f52e3b01707300e027a522983471751c7287c156b868f57044032a4134",
     "57b6e3666ad14ddfdb44450058462f21eaea34ed4f4c2c03783bfc2d9e013802",
@@ -16,9 +16,10 @@
     "da97aa617b32aa490fa607bfa60b85c53eac5fcc50b5d6ddafa8bb2ff88d4671",
     "f18216d5d7dc8070538fe21108ca203393dcee19d3ad071c320b745d0975405b",
     "fd22d2a31cb41be8b61eb7a7d6116289b0f866894da85cdf8c01225f8debed1d",
-    "ff0da37b2b4d5d8d0d8d0c324f1476c356e519967d04e644222d2047611d8a95"
+    "ff0da37b2b4d5d8d0d8d0c324f1476c356e519967d04e644222d2047611d8a95",
+    "7367ed8e379a4e6da5e0674ed6195b21fd6e7b8da1508a0d7176d9ee656916a5"
   ],
-  "source_count": 63,
+  "source_count": 68,
   "duplicates": "Identical inherited source copies coalesced; original variants retained privately.",
   "toolchain": {
     "lean": "leanprover/lean4:v4.33.0",
@@ -1370,6 +1371,101 @@
       "mathematical_admission": false,
       "public_release_eligible": false,
       "candidate_source_push_authorized": true
+    },
+    {
+      "path": "GRWTSK/Logic/Classification/Catalogue.lean",
+      "input_path": "GRWTSK/Logic/Classification/Catalogue.lean",
+      "input_sha256": "2a123db67b277c2d075e4951ddff43d81999a404566b6d89fa0a258fade41d67",
+      "sha256": "f9ff182c00c1f337f984fe925fe52b1fd226bbb925eb52e2fa2c546f481db7a9",
+      "bytes": 2740,
+      "source_artifacts": [
+        "7367ed8e379a4e6da5e0674ed6195b21fd6e7b8da1508a0d7176d9ee656916a5"
+      ],
+      "license": "MIT",
+      "attribution": "Research direction: R.A. Jacob Martone. Implementation assistance: OpenAI ChatGPT. Upstream Lean and Mathlib attribution retained.",
+      "status": "CANDIDATE_SOURCE_ONLY",
+      "native_compilation": "not-run",
+      "axiom_audit": "not-run",
+      "source_projection": "license/status comment and evidence-reference updates only",
+      "mathematical_admission": false,
+      "public_release_eligible": false,
+      "candidate_source_push_authorized": true
+    },
+    {
+      "path": "GRWTSK/Logic/Classification/Provenance.lean",
+      "input_path": "GRWTSK/Logic/Classification/Provenance.lean",
+      "input_sha256": "08e4c9377b2f0f61a50836aa96a563fb3587062873f5218d46e0895232bf690a",
+      "sha256": "b2720293dfce970de023adf3508ab915210dae37a02359d2b62c82c5a2813028",
+      "bytes": 2828,
+      "source_artifacts": [
+        "7367ed8e379a4e6da5e0674ed6195b21fd6e7b8da1508a0d7176d9ee656916a5"
+      ],
+      "license": "MIT",
+      "attribution": "Research direction: R.A. Jacob Martone. Implementation assistance: OpenAI ChatGPT. Upstream Lean and Mathlib attribution retained.",
+      "status": "CANDIDATE_SOURCE_ONLY",
+      "native_compilation": "not-run",
+      "axiom_audit": "not-run",
+      "source_projection": "license/status comment and evidence-reference updates only",
+      "mathematical_admission": false,
+      "public_release_eligible": false,
+      "candidate_source_push_authorized": true
+    },
+    {
+      "path": "GRWTSK/Logic/Classification/Types.lean",
+      "input_path": "GRWTSK/Logic/Classification/Types.lean",
+      "input_sha256": "f0936f383047a0de0dfd382e32c207111b9b4da86f34bc10ffba29dbffd52162",
+      "sha256": "3024e899ffee5956c713f8931780ef87e4c2c010d87bf8c291588e01e447f203",
+      "bytes": 4876,
+      "source_artifacts": [
+        "7367ed8e379a4e6da5e0674ed6195b21fd6e7b8da1508a0d7176d9ee656916a5"
+      ],
+      "license": "MIT",
+      "attribution": "Research direction: R.A. Jacob Martone. Implementation assistance: OpenAI ChatGPT. Upstream Lean and Mathlib attribution retained.",
+      "status": "CANDIDATE_SOURCE_ONLY",
+      "native_compilation": "not-run",
+      "axiom_audit": "not-run",
+      "source_projection": "license/status comment and evidence-reference updates only",
+      "mathematical_admission": false,
+      "public_release_eligible": false,
+      "candidate_source_push_authorized": true
+    },
+    {
+      "path": "GRWTSK/Order/Taxonomy/Address.lean",
+      "input_path": "GRWTSK/Order/Taxonomy/Address.lean",
+      "input_sha256": "ddd33432f4858c89c4c14fe9e8830ecb85a5c65f2c42594ac0ad737fd0b9ea43",
+      "sha256": "aae54480d327193e1d68676baa351623373861257fed59accf0ad328a8c2ad2b",
+      "bytes": 5724,
+      "source_artifacts": [
+        "7367ed8e379a4e6da5e0674ed6195b21fd6e7b8da1508a0d7176d9ee656916a5"
+      ],
+      "license": "MIT",
+      "attribution": "Research direction: R.A. Jacob Martone. Implementation assistance: OpenAI ChatGPT. Upstream Lean and Mathlib attribution retained.",
+      "status": "CANDIDATE_SOURCE_ONLY",
+      "native_compilation": "not-run",
+      "axiom_audit": "not-run",
+      "source_projection": "license/status comment and evidence-reference updates only",
+      "mathematical_admission": false,
+      "public_release_eligible": false,
+      "candidate_source_push_authorized": true
+    },
+    {
+      "path": "GRWTSK/Order/Taxonomy/Core.lean",
+      "input_path": "GRWTSK/Order/Taxonomy/Core.lean",
+      "input_sha256": "2bc8b2d19145872f50a60f9d694bcee4aafd5c99144c0774253f1c6449266771",
+      "sha256": "2de1811f8f126307216df30e5e3578b117acd305ca3039725f18f8bcce696497",
+      "bytes": 5322,
+      "source_artifacts": [
+        "7367ed8e379a4e6da5e0674ed6195b21fd6e7b8da1508a0d7176d9ee656916a5"
+      ],
+      "license": "MIT",
+      "attribution": "Research direction: R.A. Jacob Martone. Implementation assistance: OpenAI ChatGPT. Upstream Lean and Mathlib attribution retained.",
+      "status": "CANDIDATE_SOURCE_ONLY",
+      "native_compilation": "not-run",
+      "axiom_audit": "not-run",
+      "source_projection": "license/status comment and evidence-reference updates only",
+      "mathematical_admission": false,
+      "public_release_eligible": false,
+      "candidate_source_push_authorized": true
     }
   ],
   "native_and_full_library_acceptance": false,
@@ -1432,5 +1528,15 @@
     "mathematical_admission": false,
     "formal_release_authorized": false,
     "raw_archive_or_operational_provenance_projection": false
+  },
+  "taxonomy_extension": {
+    "schema": "taxonomy-source-intake-extension/v1",
+    "base_commit": "f78dbb136fb62e44b41480bc781851856a76a0f9",
+    "retained_previous_entries": 63,
+    "added_entries": 5,
+    "decision": "Explicit human request to make the agreed changes directly in the repositories.",
+    "evidence": "evidence/taxonomy-integration-v1.json",
+    "scope": "Candidate Lean sources and tested classification tooling only. No native theorem admission, actual PMD import or whole-corpus classification.",
+    "historical_authorization_and_receipts_unchanged": true
   }
 }
