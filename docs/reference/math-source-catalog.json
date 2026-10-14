@@ -30,7 +30,7 @@
   "sources": [
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": "c820f3483a974a345549d517c182faf20b260c4d",
+      "git_blob": "e3b1dfcb676522e935c51be5e0294f29ca037d65",
       "imports": [
         "GRWTSK.Algebra.BigOperators.OrderedSquare",
         "GRWTSK.Algebra.BigOperators.QuadraticCounterexample",
@@ -521,7 +521,7 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "c7f4f6b83f14da9c2931a78108fb9e0fab06cfe8120a4e4583d707e080abac83"
       },
-      "working_tree_state": "tracked-modified"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -17756,7 +17756,7 @@
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "cb2a7899a70f45439549473dcec0e5a8edd483e6",
       "imports": [
         "Lean.Elab.Tactic.Omega",
         "Mathlib.Data.Finset.Basic",
@@ -18595,11 +18595,11 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "285626c4b7623384b5dfce80430fe8f733cf0c7e66cb61b24200e11262a44fab"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "844779c93d7e3f01070e69bc7b85f9153540e775",
       "imports": [
         "GRWTSK.DynamicalSystems.TransitionSystems.FinitePhraseProcess"
       ],
@@ -18627,11 +18627,11 @@
         "lean": "not-run-for-current-source-and-local-import-closure",
         "source_sha256": "1f11f5655d7776389479525ffbf5af61f6ae75c50fdf1bc5253997c3dabf497f"
       },
-      "working_tree_state": "untracked-relocated"
+      "working_tree_state": "tracked-renamed"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "20a9bdca820ab10f28d685656899cc8c1da040b7",
       "imports": [
         "GRWTSK.DynamicalSystems.TransitionSystems.FinitePhraseProcess",
         "Lean"
@@ -18660,11 +18660,11 @@
         "lean": "not-run-for-current-source-and-local-import-closure",
         "source_sha256": "1da8ba95972019891664782435bc30a76a1a21a73b88d41a50a25c2a1a823b58"
       },
-      "working_tree_state": "untracked-relocated"
+      "working_tree_state": "tracked-renamed"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "77345441dbcc65da130da6882c1bfb95383e4e8f",
       "imports": [
         "GRWTSK.DynamicalSystems.TransitionSystems.FinitePhraseProcess"
       ],
@@ -18692,7 +18692,7 @@
         "lean": "not-run-for-current-source-and-local-import-closure",
         "source_sha256": "b575f45465cb0050530d56fb9803edbe02df14895c483b086d01307fe9ab6b3c"
       },
-      "working_tree_state": "untracked-relocated"
+      "working_tree_state": "tracked-renamed"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -27400,7 +27400,7 @@
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "86d33e1ceb9e11bf7f84d3d44497b3d343b16023",
       "imports": [
         "GRWTSK.NumberTheory.ArithmeticFunctions.TruncatedMoebiusCoefficients",
         "Mathlib.Data.Complex.Basic"
@@ -27458,11 +27458,11 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "11f9fe32519e1a1bb0f3b2f72020a4aa9b3b9ee9e87e8ef59836f0714636e9be"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "3443c00a7819394ce05c1339cc14a381519fa434",
       "imports": [
         "GRWTSK.NumberTheory.ArithmeticFunctions.DensityFiniteSums"
       ],
@@ -27503,11 +27503,11 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "d02ae676e6a9ee857aa9774b0b8d9c98e666bec9424e0368bc56f438f13756d6"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "00da3545352410778018710f6b929e239c07c093",
       "imports": [
         "GRWTSK.NumberTheory.ArithmeticFunctions.PositiveDensityCorrection",
         "Mathlib.Analysis.SpecificLimits.Basic"
@@ -27585,11 +27585,11 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "d6c5795d8ae7739dd62c2f35b5d07f2ba6a3e5369f9ed3bab7e7fb3c9447be54"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "75da6cd7014310607605ab951c2f02dc43d3d5a7",
       "imports": [
         "GRWTSK.NumberTheory.ArithmeticFunctions.DensityCorrectionPrimeSeries",
         "Mathlib.Analysis.PSeries",
@@ -27704,11 +27704,11 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "4810a08caa35c73e9e950f76d91811b95f507b35cc63ceaa6de4fd56343e5b5f"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "9ba8a373302607cb86f2e76561489d6958ef119e",
       "imports": [
         "GRWTSK.NumberTheory.ArithmeticFunctions.DensityMoebius"
       ],
@@ -27775,11 +27775,11 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "5c1ef06d52093675f0ff2998d7536b34801e23943cf864cf851a55c07ee42d64"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "e8f19a3fe6195958ee7f10bdbb2b65426e6fd2c5",
       "imports": [
         "GRWTSK.NumberTheory.ArithmeticFunctions.DensityHalfPrimeFactor",
         "Mathlib.Analysis.PSeries",
@@ -27904,11 +27904,11 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "d1377c470c6b14320736ab1a91ba2cbba7a35ebff6bd2a148f1ab1c992130b4d"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "35df0e7a0da40027ebebf05b8a10b4f012452275",
       "imports": [
         "GRWTSK.NumberTheory.ArithmeticFunctions.DensityCorrectionPrimeSeries",
         "Mathlib.Analysis.Real.Sqrt"
@@ -27975,11 +27975,11 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "7d5f369bc77ff8c2bce6eff1e4b64035776d83e0fe509c9d7e9c39f136a2b572"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "6f409909982cb31ca343499d338ed032666c2ec6",
       "imports": [
         "Mathlib.Analysis.SpecialFunctions.Exp",
         "Mathlib.Data.Nat.PrimeFin",
@@ -28083,11 +28083,11 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "d008c51b50cd7e88635e91ac03429a29656d23a9d9773dce8b5a8a81acd587d9"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "115cf8ba5115dd28f3251c5302ffac97ba2a9f78",
       "imports": [
         "GRWTSK.NumberTheory.ArithmeticFunctions.DensityMoebius",
         "Mathlib.NumberTheory.ArithmeticFunction.Moebius"
@@ -28154,11 +28154,11 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "efdc7e4dbcd949d27cf560879021943ad85cfe44dafc0a24bb2dd8785e5122c3"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "5751716dfeb43104014e3557eb0999f3197c204f",
       "imports": [
         "GRWTSK.NumberTheory.ArithmeticFunctions.DensityCorrectionReciprocalMass",
         "GRWTSK.NumberTheory.ArithmeticFunctions.DensityHalfMoment"
@@ -28242,11 +28242,11 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "d495504f0e5f051ed0471530e1bb0f1dfdbb348391e22dc800044ccaf1f5a795"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "05f4cdd85de1afd1c2814468b1bf831804cc5784",
       "imports": [
         "GRWTSK.NumberTheory.ArithmeticFunctions.DensityCorrectionReciprocalMass",
         "GRWTSK.NumberTheory.ArithmeticFunctions.MoebiusReciprocalPrefix"
@@ -28319,11 +28319,11 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "e5d5b1834d1004ea4aa270f607f855d31c365925060e87a8cb3ddce2291b210f"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "5fba33b3f7c863ef2bc3429599c693b0d14175d1",
       "imports": [
         "GRWTSK.NumberTheory.ArithmeticFunctions.DensityMoebius",
         "Mathlib.Data.Nat.Prime.Infinite"
@@ -28374,11 +28374,11 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "a7f511ea72ada038aef660df13ed61a1829ae8d110a8d607bd3c66085a80b399"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "9685f7ea46c3812cd783339e264a90f0634695ac",
       "imports": [
         "GRWTSK.NumberTheory.ArithmeticFunctions.PositiveDensityCorrection"
       ],
@@ -28479,11 +28479,11 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "eee5bf6a99b7f965145ad44847ea0d46f7da58dac0c4515c27f560ffbc50cfc8"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "f40a5c5d9e00464c3bcc72bb822aa187096fc415",
       "imports": [
         "GRWTSK.NumberTheory.ArithmeticFunctions.DensityFiniteSums",
         "Mathlib.Algebra.Order.Floor.Semifield"
@@ -28546,11 +28546,11 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "7c71eccfb7a18954cc98fcb1e3f0b948a2506f84a835d33c97c63ac85f3bc9d2"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "c28d787598a9b33d90e4afc9e4a56ab0029bae98",
       "imports": [
         "Mathlib.NumberTheory.ArithmeticFunction.Moebius",
         "Mathlib.Tactic.Ring"
@@ -28611,11 +28611,11 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "923aa8009853029cca709c1f6016119740eaa00e25d59142c2cb487194c85550"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "800fff2e40cc3d1f2419f852ff337327cc486798",
       "imports": [
         "GRWTSK.NumberTheory.ArithmeticFunctions.DensityMoebius",
         "GRWTSK.NumberTheory.ArithmeticFunctions.DensityMoebiusCorrection"
@@ -28693,11 +28693,11 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "da2764d9a3d2011fd434c08cab59cf34226a7f2cae129c61071f0d0254e15dbc"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "3c325b585a6aec7dc0852cd52623bd642075c6ba",
       "imports": [
         "GRWTSK.NumberTheory.ArithmeticFunctions.SquarefulMoebiusReturn"
       ],
@@ -28740,11 +28740,11 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "eb23e7ba6387bba4daa62f117286b582901426d232c98476e6992e21ef5b89ba"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "3b843e06f5555079af17fbe37bd1c06968e46d25",
       "imports": [
         "GRWTSK.NumberTheory.ArithmeticFunctions.TruncatedMoebiusCoefficients",
         "Mathlib.Data.Real.Basic"
@@ -28792,11 +28792,11 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "b9c8985b74a60c0526cec8d9c3c9cb2f9751ebe754d720f13d12af4929e639e8"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "ec3433f923c1ac89d52510c1b45d3c72f9035d7a",
       "imports": [
         "GRWTSK.NumberTheory.ArithmeticFunctions.MoebiusTruncation"
       ],
@@ -28874,7 +28874,7 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "b894639f43dcd275dbbb760e11a559ee62dac0851c957d0bc38cb8a7c48c9151"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -30175,7 +30175,7 @@
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "154afd5d8d5a907ca956e6ad3d435ae8734b3415",
       "imports": [
         "GRWTSK.NumberTheory.LSeries.TruncatedMoebiusSeries",
         "Mathlib.Analysis.SpecialFunctions.ExpDeriv"
@@ -30239,11 +30239,11 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "17adb06dd4f26f4f323a3c7aeff14cd965b04348432a51f8007775a2c7ad69e9"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "d75b5c157b5f51705e36a4887e90b20b1b570065",
       "imports": [
         "GRWTSK.NumberTheory.ArithmeticFunctions.ComplexMoebiusCast",
         "Mathlib.NumberTheory.LSeries.Dirichlet",
@@ -30307,7 +30307,7 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "1c4c4b02ddbd61034b5c8cd68a4784f5bc8b975484653976fd0a83f8f15458df"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -30351,7 +30351,7 @@
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "0f7b868ae9fdc850d0182693a629fb73989f575e",
       "imports": [
         "GRWTSK.NumberTheory.Moebius.CriticalEndpointDefect",
         "Lean"
@@ -30380,11 +30380,11 @@
         "lean": "not-run-for-current-source-and-local-import-closure",
         "source_sha256": "21ffb31c1310518a101345e4d0df993821324ab996193021a1be1432b1d639b4"
       },
-      "working_tree_state": "untracked-relocated"
+      "working_tree_state": "tracked-renamed"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "40c7ce9827a8e1ef5aa014edb9b40584e0d0272c",
       "imports": [
         "GRWTSK.NumberTheory.Moebius.CriticalEndpointDefectRecurrence",
         "Lean"
@@ -30413,11 +30413,11 @@
         "lean": "not-run-for-current-source-and-local-import-closure",
         "source_sha256": "b243b1047ba4bf9776f866f9a8c5c5fbd0a12543405a02e6bd675507df24fe27"
       },
-      "working_tree_state": "untracked-relocated"
+      "working_tree_state": "tracked-renamed"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "8bab2c2935ef673e9796343b993e2c9144367a07",
       "imports": [
         "GRWTSK.NumberTheory.Moebius.CriticalIntervalBlockGrowth",
         "Lean"
@@ -30446,7 +30446,7 @@
         "lean": "not-run-for-current-source-and-local-import-closure",
         "source_sha256": "c9b4b2efa3edf38b2d048d7a37b5b2811fff310e207d23ee8c8079f3c5600871"
       },
-      "working_tree_state": "untracked-relocated"
+      "working_tree_state": "tracked-renamed"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -30485,7 +30485,7 @@
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "86f5a951ad5894d958507dc867dfcc39e877fdab",
       "imports": [
         "GRWTSK.NumberTheory.Moebius.CriticalMertensTransformMeanSquare",
         "Lean"
@@ -30514,11 +30514,11 @@
         "lean": "not-run-for-current-source-and-local-import-closure",
         "source_sha256": "107f7353be2a5f2ad52eea3467aa7411a5df3fa768ebe43db7c900efd3b487cb"
       },
-      "working_tree_state": "untracked-relocated"
+      "working_tree_state": "tracked-renamed"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "6b92f21943ac3df09015c72cc89136c6dd58218f",
       "imports": [
         "GRWTSK.NumberTheory.Moebius.CriticalWeightedMertensSquare",
         "Lean"
@@ -30547,7 +30547,7 @@
         "lean": "not-run-for-current-source-and-local-import-closure",
         "source_sha256": "7cb291998e6881f2bdde2336c8d2b2aac9a8fb215360175f5d75841f09cbaca8"
       },
-      "working_tree_state": "untracked-relocated"
+      "working_tree_state": "tracked-renamed"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -30694,7 +30694,7 @@
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "c3d5056ec2d27300783dc210b44abed73f6abd73",
       "imports": [
         "GRWTSK.NumberTheory.Moebius.MertensSquareEnergyEquivalence",
         "Lean"
@@ -30723,11 +30723,11 @@
         "lean": "not-run-for-current-source-and-local-import-closure",
         "source_sha256": "aa0063633e1036a2dd1e4bb33172249aecea2231a9d93a58ec687482ce8b7ca2"
       },
-      "working_tree_state": "untracked-relocated"
+      "working_tree_state": "tracked-renamed"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "87b1000fc437d4702fb49ff2e411bbbbf534e43e",
       "imports": [
         "GRWTSK.NumberTheory.Moebius.MertensSquareEnergyPowerBound",
         "Lean"
@@ -30756,7 +30756,7 @@
         "lean": "not-run-for-current-source-and-local-import-closure",
         "source_sha256": "850aba90f0a6c0a01fb2da973f67e182120851f5c7cbb6d9eba707343d138043"
       },
-      "working_tree_state": "untracked-relocated"
+      "working_tree_state": "tracked-renamed"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -30868,7 +30868,7 @@
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "9bf11bec316f366c34c88bcedc1d4faad0730c0c",
       "imports": [
         "GRWTSK.NumberTheory.Moebius.ReciprocalFluxKernelBounds",
         "Lean"
@@ -30897,7 +30897,7 @@
         "lean": "not-run-for-current-source-and-local-import-closure",
         "source_sha256": "0bb266cfcc329d7e5a1b667950cd49dc41fcb512a736b965d911257e55ae591e"
       },
-      "working_tree_state": "untracked-relocated"
+      "working_tree_state": "tracked-renamed"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -30936,7 +30936,7 @@
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "7c4f56e23b48bad2b746a1dece6ba380ff1e23a8",
       "imports": [
         "GRWTSK.NumberTheory.Moebius.ReciprocalPrefixDensityAdapter",
         "Lean"
@@ -30965,11 +30965,11 @@
         "lean": "not-run-for-current-source-and-local-import-closure",
         "source_sha256": "27cb0b261bb9bc330c9303c1fff7dbc2cc62941b46e2812c3db5ca8f9efa2f07"
       },
-      "working_tree_state": "untracked-relocated"
+      "working_tree_state": "tracked-renamed"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "78e9038e490ac179370cdc8d0778ac3e234975e8",
       "imports": [
         "GRWTSK.NumberTheory.Moebius.ReciprocalPrefixKernel",
         "Lean"
@@ -30998,11 +30998,11 @@
         "lean": "not-run-for-current-source-and-local-import-closure",
         "source_sha256": "f4d6203ec70bf301b65d9836248cfaf531d7478509b43dd9780bae4a552f92b2"
       },
-      "working_tree_state": "untracked-relocated"
+      "working_tree_state": "tracked-renamed"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "6ed4aa4ef742e2d59ee93c731986448c517a2029",
       "imports": [
         "GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationEnergy",
         "Lean"
@@ -31031,11 +31031,11 @@
         "lean": "not-run-for-current-source-and-local-import-closure",
         "source_sha256": "728db27a7f7e0f2057c46d918b734abb7c12312abdc1a3731200b44c4bd58526"
       },
-      "working_tree_state": "untracked-relocated"
+      "working_tree_state": "tracked-renamed"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "18f5b6c3106e0f7d44d00809376dd9817f2c6d48",
       "imports": [
         "GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationMertensEnergy",
         "Lean"
@@ -31064,11 +31064,11 @@
         "lean": "not-run-for-current-source-and-local-import-closure",
         "source_sha256": "18c331ee4035c0e569e0eb46c835a02f4b2ce371202601fb654087293105629d"
       },
-      "working_tree_state": "untracked-relocated"
+      "working_tree_state": "tracked-renamed"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "15307766c590865caf5a76c00ae6006684d4751b",
       "imports": [
         "GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationPowerSaving",
         "Lean"
@@ -31097,11 +31097,11 @@
         "lean": "not-run-for-current-source-and-local-import-closure",
         "source_sha256": "a8f3890863b963e26f0917f00a76613b3e4eed4df84aad04828ac0ce217c7712"
       },
-      "working_tree_state": "untracked-relocated"
+      "working_tree_state": "tracked-renamed"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "9eb272a4b9f62bf583a98c54d6aeb092fd6dc75c",
       "imports": [
         "GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationRecurrence",
         "Lean"
@@ -31130,11 +31130,11 @@
         "lean": "not-run-for-current-source-and-local-import-closure",
         "source_sha256": "5e2803ac33ab2f6308bf16f54d7bc67b3a992eab6fd3b8e06dc3fed9197647b7"
       },
-      "working_tree_state": "untracked-relocated"
+      "working_tree_state": "tracked-renamed"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "27acff74c2fab44a9b4a77921b9ec4475fc8814b",
       "imports": [
         "GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationSummability",
         "Lean"
@@ -31163,7 +31163,7 @@
         "lean": "not-run-for-current-source-and-local-import-closure",
         "source_sha256": "479a1cde2c258f8d6866a629a91a96bc238a0e07ea0b5ef4589004f46b28e5b8"
       },
-      "working_tree_state": "untracked-relocated"
+      "working_tree_state": "tracked-renamed"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -31237,7 +31237,7 @@
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "51d13af0f4a82071180580272104cab5fbb4e571",
       "imports": [
         "GRWTSK.NumberTheory.Moebius.WeightedMertensSquareCorrelation",
         "Lean"
@@ -31266,11 +31266,11 @@
         "lean": "not-run-for-current-source-and-local-import-closure",
         "source_sha256": "df111ec127e434178b6df98649377ddf07bf1a994e4c20cb046bd2162a53da90"
       },
-      "working_tree_state": "untracked-relocated"
+      "working_tree_state": "tracked-renamed"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "4ea28b4b1f719eeeead00a2cdef4efab57df6ca9",
       "imports": [
         "GRWTSK.NumberTheory.Moebius.WeightedMertensSquareCorrelationBound",
         "Lean"
@@ -31299,7 +31299,7 @@
         "lean": "not-run-for-current-source-and-local-import-closure",
         "source_sha256": "9281026174e5b81691d4f7a0b0b1bc4c5b5cdf11c80dbaf4ba4c62d0ae86dfed"
       },
-      "working_tree_state": "untracked-relocated"
+      "working_tree_state": "tracked-renamed"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -31482,7 +31482,7 @@
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "5563864fc93f3c1732b50fb22a6db9f8d37e6356",
       "imports": [
         "GRWTSK.NumberTheory.Moebius.CriticalIntervalBlockGrowth"
       ],
@@ -31669,11 +31669,11 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "dc1d4a87503f7a79aa05c0cca45561ca1a4ec57ef6870fae4359eb0fe793ef31"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "b9035e3e51cca47aa3c4d36f1cc4c375ed6169ef",
       "imports": [
         "GRWTSK.NumberTheory.Moebius.CriticalEndpointDefect"
       ],
@@ -31750,11 +31750,11 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "d1e0485832cd849f0b8edbe8a1fc6515ca95a7d03afbef78d0e3c334d4356f1e"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "25985e7c41890649e8d991e7941d33d6974d3a96",
       "imports": [
         "GRWTSK.NumberTheory.Moebius.ReciprocalPrefixKernel",
         "Mathlib.NumberTheory.Harmonic.Bounds"
@@ -31817,7 +31817,7 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "b803802de278e254c1543ee8b9edaf59d45fa43c6cd4966a0664b3fe576ad68a"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -32107,7 +32107,7 @@
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "3f6351a4be4f1edb54228e7d6fe7792dbaa9b2e3",
       "imports": [
         "GRWTSK.Analysis.Asymptotics.FinitePowerSum",
         "GRWTSK.NumberTheory.Moebius.CriticalEndpointDefectRecurrence"
@@ -32185,11 +32185,11 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "77321a181130d2e918d432281623390cab3c893bb637645c2bc5df9a7350052c"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "07f131eb969d773d205b636ef157be87daa6e021",
       "imports": [
         "GRWTSK.NumberTheory.Moebius.CriticalMertensTransformMeanSquare"
       ],
@@ -32256,7 +32256,7 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "f9e8db5335e76d99ca1bf23766de72631b68f992da1a4276d621fbc41797c54f"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -35428,7 +35428,7 @@
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "a2778e79be403833e61581867e48523f12567340",
       "imports": [
         "GRWTSK.NumberTheory.Moebius.MertensSquareEnergyPowerBound"
       ],
@@ -35489,11 +35489,11 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "efd1c726f08f671e85dd23298a7ea37930a1eb18cca005ef2c2033ca7cb4e0a9"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "57621870bbfcfa5d32887703fab51bab5faf050e",
       "imports": [
         "GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationMertensEnergy"
       ],
@@ -35545,7 +35545,7 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "5f3b07e0ac01e78834527039ed54925b27f3ba96fc195bb7c9c0cfba21cc94c0"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -37684,7 +37684,7 @@
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "e2942c1f3b802851a42e4a8a125b0afed017dc9e",
       "imports": [
         "GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationEnergy",
         "Mathlib.NumberTheory.Harmonic.Bounds"
@@ -37732,7 +37732,7 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "e3e9e40801135dbb67ab28de02032fd559981a8698f23c46b80e651f83474e2a"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -37813,7 +37813,7 @@
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "6b7f29c9fa76b8536206aa3eb0b599f066ef3c56",
       "imports": [
         "GRWTSK.NumberTheory.ArithmeticFunctions.DensityReciprocalPrefix",
         "GRWTSK.NumberTheory.Moebius.ReciprocalPrefix"
@@ -37860,11 +37860,11 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "f684fbec230b3456908efe23f95e325b0b6db6060481b9114c9f87e3142c17cb"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "62f3bd8872e412fdc5840912e211e045f2abf87f",
       "imports": [
         "GRWTSK.NumberTheory.Moebius.ReciprocalPrefixDensityAdapter"
       ],
@@ -37960,11 +37960,11 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "be7ff371ca857b1d85be5ce93edda50700950d28d7667e4e8a0e242eff76443f"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "a0f5360aa5de0bccf5ba723007b09e9650681b4f",
       "imports": [
         "GRWTSK.NumberTheory.Moebius.ReciprocalPrefixKernel"
       ],
@@ -38036,11 +38036,11 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "1d6ef1b964ca45d8d158b358862f076cf0797ad1ca97bba9181d0b1bee9dd1cc"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "662fb65a514b356785b119b71a19dc24a98666cc",
       "imports": [
         "GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationRecurrence"
       ],
@@ -38117,11 +38117,11 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "be56e03d84727fe87cffe3ced64a35f2ab58a1f9058008858f7fd04e56f2c9e7"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "2dac7a4ab8c56cb118fc19888b11c0f731df7793",
       "imports": [
         "GRWTSK.NumberTheory.Moebius.ReciprocalPrefixDensityAdapter",
         "GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationSummability"
@@ -38184,11 +38184,11 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "f5f0261830c4af87eb176465a60c65e16ba2ff68c96a5de18f79ce9eb014b957"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "753d13082e7f1cd1d4c88e34fde29d95ba96135a",
       "imports": [
         "GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationPowerSaving"
       ],
@@ -38270,11 +38270,11 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "aefcbd232d34fb60f05fdc4813f907ba4fc26303e156e5984826bdce670b60ff"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "e6b0cd78b3957ec26bcc42d02ecc46c3c0ecff63",
       "imports": [
         "GRWTSK.NumberTheory.Moebius.ReciprocalFluxKernelBounds"
       ],
@@ -38336,7 +38336,7 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "04c6152727ea3aa9503a806e17e07d07b23864b62b6a28b40dd310ee2d79ddf9"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -39407,7 +39407,7 @@
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "8fc11358a4f69e0c1c760d15290f35d71eb0dd4e",
       "imports": [
         "GRWTSK.NumberTheory.Moebius.CriticalWeightedMertensSquare"
       ],
@@ -39514,11 +39514,11 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "803a7f69284a577de3381d86ce726cc9feebe4164621379b663b8f805febd252"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "be023563739a6d02e28cc5ed2ce21d7909b9b0d1",
       "imports": [
         "GRWTSK.NumberTheory.Moebius.WeightedMertensSquareCorrelation"
       ],
@@ -39659,7 +39659,7 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "6bb22ffd0d3f3e02a9994191614d8a07f374d89f42adc599b2811c6485d1e82c"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -40316,7 +40316,7 @@
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": "78ffb5c48baafae10d0146d00b22fc0eca61f226",
+      "git_blob": "54eb6c8e72cf7de387ab346af6815393151e057f",
       "imports": [
         "GRWTSK.NumberTheory.Moebius.PrimeShellDecomposition",
         "GRWTSK.NumberTheory.PrimeCounting.PrimeIntervalResponseEnergyGrowth"
@@ -40497,7 +40497,7 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "4f7c6efd00757bdccec0dc8e79c4551ae46aba16dd05609d4434f3491048cc46"
       },
-      "working_tree_state": "tracked-modified"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
