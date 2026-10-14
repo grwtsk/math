@@ -2560,6 +2560,15 @@
       "source_sha256": "8daccbb547c6ea9e481182366f25bae913a4effbf59059becd9a40532541591d",
       "status": "historical-source-description"
     },
+    "docs/mathematics/Analysis/Integration/exponential-volterra-l2.md": {
+      "title": "Finite exponential Volterra L2 estimates",
+      "subject": "Analysis",
+      "object": "Integration",
+      "primary_source": "GRWTSK/Analysis/Integration/ExponentialVolterraL2.lean",
+      "source_sha256": "963957d15eab9c20a0194656e8b0fcbee721bebabb9fedd8eef55968b54d12b0",
+      "status": "fresh-selected",
+      "evidence": "evidence/Analysis/Integration/exponential-volterra-l2-checks.json"
+    },
     "docs/mathematics/LinearAlgebra/Jacobi/transfer.md": {
       "title": "Jacobi transfer matrices",
       "subject": "LinearAlgebra",
@@ -2990,6 +2999,15 @@
       "source_sha256": "2a1f78198afd3a0a23e1865be081f09e2582689e58462d736bfe626128e6f308",
       "status": "historical-source-description"
     },
+    "docs/mathematics/NumberTheory/Moebius/logarithmic-mertens-boundary.md": {
+      "title": "Conditional logarithmic Mertens boundary estimate",
+      "subject": "NumberTheory",
+      "object": "Moebius",
+      "primary_source": "GRWTSK/NumberTheory/Moebius/LogarithmicMertensBoundary.lean",
+      "source_sha256": "fb511a6a916ba559cf01d9e09d70d33dcf5de4d2f60e5bf921e60c0e1f94ca16",
+      "status": "fresh-selected",
+      "evidence": "evidence/NumberTheory/Moebius/logarithmic-mertens-boundary-checks.json"
+    },
     "docs/mathematics/NumberTheory/Prime/least-prime.md": {
       "title": "Least natural prime",
       "subject": "NumberTheory",
@@ -3136,5 +3154,5 @@
     }
   },
   "object_binding_registry": "docs/reference/object-source-bindings.json",
-  "object_binding_registry_sha256": "2200dbf6bfb934676d6826868f1586434a8505eccd953bd9c93fe11f343cde35"
+  "object_binding_registry_sha256": "7322a62e57101f58e7eedddf3733574c46db4676d3e8842bb4ce1fd878c8da07"
 }

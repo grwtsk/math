@@ -8,7 +8,15 @@ The resulting completed finite transform retains $U_N$ and both signed endpoint 
 
 `VerticalLineCriterion` now proves that the uniform completed vertical-line bound at every positive damping is equivalent to `PickupWeightedEnergyAll` and to `pickupEnergyAbscissa = 0`, and hence conditionally implies the literal Riemann hypothesis. This closes the finite-window-to-terminal logical adapter without pretending to supply the uniform signed bound itself.
 
-The same module proves the completed bound unconditionally for every $\sigma>1/2$, using the already paid energy domain $\tau>1$. The remaining arithmetic extension is $0<\sigma\le1/2$.
+The same module proves the completed bound unconditionally for every
+$\sigma>1/2$, using the already paid energy domain $\tau>1$. The finite
+[logarithmic Mertens boundary adapter](../logarithmic-mertens-boundary.md)
+now proves the endpoint estimate at $\sigma=1/2$ from the explicit
+`MertensLogSquareBound` premise. The cited published estimate supplies that
+premise mathematically, but no theorem supplying it has yet been admitted in
+the pinned Lean environment. Thus the checked adapter is conditional, and the
+remaining arithmetic extension after admission of its supplier is
+$0<\sigma<1/2$.
 
 For fixed real $\sigma$ define the nonnegative density and its extended
 half-line energy by
@@ -71,12 +79,14 @@ only at the same damping does not pay this particular estimate. The finite ident
 $[\Pi_N(s)-R_T(z,s)]/(zs)$, retaining every debt and endpoint term. This
 supplies no separate convergence or cancellation estimate for those terms.
 
-The selected source `pickup_weighted_energy_integrable_initial` currently
-provides the elementary energy domain $\tau>1$, corresponding here to
-$\sigma>1/2$. Source replay remains required. Extending that
-domain to every positive $\sigma$ still needs an independent signed
-arithmetic upper estimate. The tail argument explains the precise missing
-limit premise and cannot replace it.
+The selected source `pickup_weighted_energy_integrable_initial` provides the
+elementary energy domain $\tau>1$, corresponding here to $\sigma>1/2$. The
+separately replayed finite Volterra adapter reaches the boundary conditionally
+and exposes a general power transfer. At the next reciprocal damping
+$\sigma=1/3`, that transfer requires an actual Mertens exponent
+$\beta<5/6$. Extending the domain to every positive $\sigma$ still needs an
+independent signed arithmetic upper estimate. The tail argument explains the
+precise missing limit premise and cannot replace it.
 
 [Finite recording source](../../../../../GRWTSK/NumberTheory/Moebius/DampedRecordingParseval.lean) · [Completed criterion](../../../../../GRWTSK/NumberTheory/Moebius/VerticalLineCriterion.lean).
 

@@ -34,6 +34,7 @@ import GRWTSK.Analysis.InnerProductSpace.CompactResidualNormalization
 import GRWTSK.Analysis.InnerProductSpace.DilationGram
 import GRWTSK.Analysis.Convolution.CompactProfileCorrelation
 import GRWTSK.Analysis.Integration.CompactPolynomialMoments
+import GRWTSK.Analysis.Integration.ExponentialVolterraL2
 import GRWTSK.NumberTheory.Chebyshev.CompactProfilePairingIntegrability
 import GRWTSK.Analysis.Distribution.CompactProfileDilation
 import GRWTSK.Analysis.DigammaSeries
@@ -196,6 +197,7 @@ import GRWTSK.NumberTheory.Moebius.DampedRecordingParseval
 import GRWTSK.NumberTheory.Moebius.VerticalLineCriterion
 import GRWTSK.NumberTheory.Moebius.VerticalLineMonotonicity
 import GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks
+import GRWTSK.NumberTheory.Moebius.LogarithmicMertensBoundary
 import GRWTSK.NumberTheory.Moebius.ReciprocalPrefix
 import GRWTSK.DynamicalSystems.TransitionSystems.FinitePhraseProcess
 import GRWTSK.NumberTheory.ArithmeticFunctions.DensityMoebius
