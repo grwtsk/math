@@ -60,6 +60,7 @@ Browse by mathematical subject and object, matching the Lean source organization
 - [Scheduled digits and continued-fraction denominators](mathematics/NumberTheory/ContinuedFractions/scheduled-denominators.md)
 - [Closed Möbius Dirichlet polynomials](mathematics/NumberTheory/LSeries/closed-moebius.md)
 - [Matched averaging for the closed Möbius pickup](mathematics/NumberTheory/Moebius/matched-pickup.md)
+- [An exact separated-sample return for the actual Type-II source](mathematics/NumberTheory/Moebius/Energy/separated-mellin-samples.md)
 - [Damped finite windows and extended tail energy](mathematics/NumberTheory/Moebius/Energy/damped-tails.md)
 - [Horizon-matched blocks and dyadic energy](mathematics/NumberTheory/Moebius/Energy/recording-blocks.md)
 - [Ordered response Gram and diagonal energy](mathematics/NumberTheory/Moebius/Energy/gram.md)
