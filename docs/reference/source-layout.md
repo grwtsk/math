@@ -27,6 +27,10 @@ The [generated source catalog](math-source-catalog.json) projects its authoritat
 per-source records for review. Neither a path move nor a new digest changes a
 theorem's logical status.
 
+Newly received [mathematical source candidates](source-intake.md) have a separate
+source-identity and contribution inventory. Their intake status does not add them
+to the project umbrella or establish native proof acceptance.
+
 Source role is independent of mathematical subject and proof status:
 
 - `library` modules contain reusable mathematical declarations and participate

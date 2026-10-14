@@ -2626,7 +2626,7 @@
       "status": "historical-source-description"
     },
     "docs/mathematics/LinearAlgebra/Schrodinger/transfer.md": {
-      "title": "Schr\u00f6dinger transfer matrices",
+      "title": "Schrödinger transfer matrices",
       "subject": "LinearAlgebra",
       "object": "Schrodinger",
       "primary_source": "GRWTSK/LinearAlgebra/SchrodingerTransfer.lean",
@@ -2992,7 +2992,7 @@
       "verification_limit": "Source rebound after history merge; no new proof acceptance"
     },
     "docs/mathematics/NumberTheory/Moebius/matched-pickup.md": {
-      "title": "Matched averaging for the closed M\u00f6bius pickup",
+      "title": "Matched averaging for the closed Möbius pickup",
       "subject": "NumberTheory",
       "object": "Moebius",
       "primary_source": "GRWTSK/NumberTheory/Moebius/PrimitiveIdentification.lean",
@@ -3078,7 +3078,7 @@
       "category": "reference"
     },
     "docs/mathematics/NumberTheory/ArithmeticFunctions/density-correction.md": {
-      "title": "Complete density M\u00f6bius correction",
+      "title": "Complete density Möbius correction",
       "subject": "NumberTheory",
       "object": "ArithmeticFunctions",
       "primary_source": "GRWTSK/NumberTheory/ArithmeticFunctions/DensityMomentTails.lean",
@@ -3087,7 +3087,7 @@
       "evidence": "evidence/NumberTheory/ArithmeticFunctions/density-arithmetic-checks.json"
     },
     "docs/mathematics/NumberTheory/ArithmeticFunctions/signed-cutoffs.md": {
-      "title": "Signed M\u00f6bius cutoff decomposition",
+      "title": "Signed Möbius cutoff decomposition",
       "subject": "NumberTheory",
       "object": "ArithmeticFunctions",
       "primary_source": "GRWTSK/NumberTheory/ArithmeticFunctions/SquarefreeMoebiusSum.lean",
@@ -3108,7 +3108,7 @@
       "category": "how-to"
     },
     "docs/mathematics/NumberTheory/LSeries/closed-moebius.md": {
-      "title": "Closed M\u00f6bius Dirichlet polynomials",
+      "title": "Closed Möbius Dirichlet polynomials",
       "subject": "NumberTheory",
       "object": "LSeries",
       "primary_source": "GRWTSK/NumberTheory/LSeries/ClosedMoebiusPolynomial.lean",
@@ -3151,8 +3151,94 @@
     "docs/reference/trust-boundary.md": {
       "title": "Trust boundary and conformance foundation",
       "category": "reference"
+    },
+    "docs/mathematics/NumberTheory/Moebius/finite-euler-product.md": {
+      "title": "Finite Euler products with a closed cutoff",
+      "subject": "NumberTheory",
+      "object": "Moebius",
+      "primary_source": "GRWTSK/NumberTheory/Moebius/FiniteEulerProduct.lean",
+      "source_sha256": "f43d20140bcc365829454e0b9a715243121d78fda366c0f8b22a3fd80da49341",
+      "status": "fresh-selected",
+      "evidence": "evidence/NumberTheory/Moebius/finite-euler-product-checks-current-2026-10-14.json",
+      "verification_scope": "One immutable Mathlib-only project source, four public theorems and six complete owned declarations; trust zero, fatal warnings, standard transitive axioms, and two measured statement-reuse rejections. Pinned dependency objects reused; no whole-library acceptance or independent human review.",
+      "scoped_native_receipt_sha256": "e3df0b4fc5e2a57f54e0389322eaf73d72ac104687ac3188d2ce58cb655a42a3",
+      "contribution": {
+        "human_mathematical_direction": "grwtsk contributors",
+        "formalization_and_documentation_assistance": "OpenAI Codex",
+        "source_license": "MIT",
+        "upstream_mathlib_credit_and_license": "Upstream authors; Apache-2.0",
+        "scope": "Classical finite product expansion and prime-factor reindexing generalized to commutative-ring multiplicative weights; no originality claim or arithmetic-growth supplier."
+      }
+    },
+    "docs/reference/source-intake.md": {
+      "title": "Mathematical source candidates",
+      "category": "reference"
+    },
+    "docs/mathematics/Algebra/index.md": {
+      "title": "Algebra",
+      "category": "navigation",
+      "area": "Algebra"
+    },
+    "docs/mathematics/Analysis/index.md": {
+      "title": "Analysis",
+      "category": "navigation",
+      "area": "Analysis"
+    },
+    "docs/mathematics/Combinatorics/index.md": {
+      "title": "Combinatorics",
+      "category": "navigation",
+      "area": "Combinatorics"
+    },
+    "docs/mathematics/Data/index.md": {
+      "title": "Data structures",
+      "category": "navigation",
+      "area": "Data"
+    },
+    "docs/mathematics/DynamicalSystems/index.md": {
+      "title": "Dynamical systems",
+      "category": "navigation",
+      "area": "DynamicalSystems"
+    },
+    "docs/mathematics/GroupTheory/index.md": {
+      "title": "GroupTheory",
+      "category": "navigation",
+      "area": "GroupTheory"
+    },
+    "docs/mathematics/LinearAlgebra/index.md": {
+      "title": "Linear algebra",
+      "category": "navigation",
+      "area": "LinearAlgebra"
+    },
+    "docs/mathematics/Logic/index.md": {
+      "title": "Logic",
+      "category": "navigation",
+      "area": "Logic"
+    },
+    "docs/mathematics/MeasureTheory/index.md": {
+      "title": "Measure theory",
+      "category": "navigation",
+      "area": "MeasureTheory"
+    },
+    "docs/mathematics/NumberTheory/index.md": {
+      "title": "Number theory",
+      "category": "navigation",
+      "area": "NumberTheory"
+    },
+    "docs/mathematics/Order/index.md": {
+      "title": "Order",
+      "category": "navigation",
+      "area": "Order"
+    },
+    "docs/mathematics/Spectral/index.md": {
+      "title": "Spectral theory",
+      "category": "navigation",
+      "area": "Spectral"
     }
   },
   "object_binding_registry": "docs/reference/object-source-bindings.json",
-  "object_binding_registry_sha256": "7322a62e57101f58e7eedddf3733574c46db4676d3e8842bb4ce1fd878c8da07"
+  "object_binding_registry_sha256": "b0a6761e855a8323abfe92c8fd9fa76cb3a38c0170b7ab264e54c27c08c33928",
+  "navigation": {
+    "schema": "subject-index-navigation-v1",
+    "summary": "docs/reference/library-summary.json"
+  }
 }

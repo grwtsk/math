@@ -1,4 +1,4 @@
-"""Fresh trust-zero replay and native census of every Git-visible GRWTSK module.
+"""Fresh trust-zero replay and native census of every active GRWTSK library module.
 
 Run: python3 -B scripts/check_math_trust.py
 Fixtures only, without invoking Lean: python3 -B scripts/check_math_trust.py --self-test
@@ -28,8 +28,9 @@ ROOT = Path(__file__).resolve().parents[1]
 AUDIT = "GRWTSK/Logic/ProofChecking/Checks/OwnedDeclarationAudit.lean"
 CHECKER = "scripts/check_math_trust.py"
 LAYOUT_CHECKER = "scripts/check_math_layout.py"
+SOURCE_INTAKE = "evidence/source-intake.json"
 EXTRAS = [AUDIT, CHECKER, "lean-toolchain", "lakefile.toml", "lake-manifest.json"]
-FULL_EXTRAS = EXTRAS + [LAYOUT_CHECKER]
+FULL_EXTRAS = EXTRAS + [LAYOUT_CHECKER, SOURCE_INTAKE]
 LEAN_VERSION = "4.33.0"
 LEAN_COMMIT = "d8b18978322de05a8f3dba51ef03cf5461676c17"
 MATHLIB_REV = "db584cd6d46c92f209a44c0f1c829460d327499d"
@@ -38,6 +39,7 @@ RUNTIME_NAME = "GRWTSK.Algebra.orderedProduct._unsafe_rec"
 RUNTIME_OWNER = "GRWTSK.Algebra.OrderedProduct"
 RUNTIME_SOURCE = "GRWTSK/Algebra/OrderedProduct.lean"
 RUNTIME_SOURCE_SHA256 = "97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d"
+CANDIDATE_STATUS = "CANDIDATE_SOURCE_ONLY"
 
 
 def output(argv, root=ROOT):
@@ -177,12 +179,59 @@ def source_path_present(root, relative):
         os.close(directory)
 
 
+def candidate_source_intake(root):
+    """Load the exact non-admitted candidate set or fail before replay."""
+    try:
+        intake = json.loads(read_source(root, SOURCE_INTAKE))
+    except (UnicodeError, json.JSONDecodeError) as error:
+        raise RuntimeError("invalid candidate source intake: " + str(error)) from error
+    if intake.get("schema") != "mathematical-source-intake-v1":
+        raise RuntimeError("unsupported candidate source-intake schema")
+    if intake.get("status") != "CANDIDATE_SOURCE_INTAKE_NOT_THEOREM_ACCEPTANCE":
+        raise RuntimeError("candidate source-intake status broadens mathematical admission")
+    records = intake.get("sources")
+    if not isinstance(records, list) or intake.get("source_count") != len(records):
+        raise RuntimeError("candidate source-intake count/list mismatch")
+    indexed = {}
+    for position, entry in enumerate(records):
+        if not isinstance(entry, dict) or not isinstance(entry.get("path"), str):
+            raise RuntimeError("candidate intake entry %d lacks a string path" % position)
+        relative = entry["path"]
+        parts = Path(relative).parts
+        if (Path(relative).is_absolute() or ".." in parts or len(parts) < 3
+                or parts[0] != "GRWTSK" or "Checks" in parts
+                or not relative.endswith(".lean")):
+            raise RuntimeError("invalid candidate-only source path: " + relative)
+        if relative in indexed:
+            raise RuntimeError("duplicate candidate-only source path: " + relative)
+        expected_hash, expected_size = entry.get("sha256"), entry.get("bytes")
+        if (not isinstance(expected_hash, str)
+                or re.fullmatch(r"[0-9a-f]{64}", expected_hash) is None):
+            raise RuntimeError("invalid candidate source SHA-256: " + relative)
+        if (not isinstance(expected_size, int) or isinstance(expected_size, bool)
+                or expected_size < 0):
+            raise RuntimeError("invalid candidate source byte count: " + relative)
+        if entry.get("status") != CANDIDATE_STATUS:
+            raise RuntimeError("candidate source lost CANDIDATE_SOURCE_ONLY status: " + relative)
+        if (entry.get("mathematical_admission") is not False
+                or entry.get("public_release_eligible") is not False):
+            raise RuntimeError("candidate source carries an admission/publication claim: " + relative)
+        content = read_source(root, relative)
+        if (len(content) != expected_size
+                or hashlib.sha256(content).hexdigest() != expected_hash):
+            raise RuntimeError("candidate source differs from exact intake bytes: " + relative)
+        indexed[relative] = entry
+    return indexed
+
+
 def git_source_inventory(root):
     """Public library inputs and explicit deleted tracked library paths.
 
-    Subject-local Checks sources are maintained first-party Lean, but they are
-    separate validation roles and must not enter the public replay census.
+    Subject-local Checks sources and exact candidate-only intake sources are
+    maintained first-party Lean, but neither enters the public replay census.
     """
+    candidate_records = candidate_source_intake(root)
+    candidate_paths = set(candidate_records)
     names = subprocess.check_output(
         ["git", "ls-files", "-z", "--cached", "--others", "--exclude-standard",
          "--", "GRWTSK.lean", "GRWTSK"], cwd=root).decode("utf-8", "surrogateescape").split("\0")
@@ -198,16 +247,21 @@ def git_source_inventory(root):
         if not separator or len(fields) != 3:
             raise RuntimeError("malformed Git source index record")
         tracked_modes.setdefault(name, set()).add(fields[0])
+    visible_library_shape = {name for name in names if name.endswith(".lean") and
+                             (name == "GRWTSK.lean" or
+                              (name.startswith("GRWTSK/") and "/Checks/" not in name))}
+    missing_candidates = sorted(candidate_paths - visible_library_shape)
+    if missing_candidates:
+        raise RuntimeError("candidate source is not Git-visible: " + ", ".join(missing_candidates))
     sources, deleted = [], []
-    for name in sorted({name for name in names if name.endswith(".lean") and
-                        (name == "GRWTSK.lean" or
-                         (name.startswith("GRWTSK/") and "/Checks/" not in name))}):
+    for name in sorted(visible_library_shape - candidate_paths):
         regular_tracked = bool(tracked_modes.get(name)) and tracked_modes[name] <= {"100644", "100755"}
         if regular_tracked and not source_path_present(root, name):
             deleted.append(name)
         else:
             sources.append(name)
-    return {"sources": sources, "deleted_library_paths": deleted}
+    return {"sources": sources, "deleted_library_paths": deleted,
+            "candidate_source_only_paths": sorted(candidate_paths)}
 
 
 def git_sources(root):
@@ -779,9 +833,11 @@ def replay(lean_self_test=False, memory_mib=4096):
         inventory = git_source_inventory(ROOT)
         sources = inventory["sources"]
         state["deleted_library_paths"] = inventory["deleted_library_paths"]
+        state["candidate_source_only_paths"] = inventory.get("candidate_source_only_paths", [])
         state["source_inventory_scope"] = (
             "Existing Git-visible working-tree library Lean inputs; missing tracked regular library files "
-            "are recorded separately. Existing broken symlinks/nonregular paths remain fatal replay inputs.")
+            "are recorded separately. Exact source-intake candidates are recorded and excluded without "
+            "theorem admission. Existing broken symlinks/nonregular paths remain fatal replay inputs.")
         require_math_layout(ROOT, run, state)
         if git_source_inventory(ROOT) != inventory:
             raise RuntimeError("project source membership or tracked deletions changed during layout gate")
@@ -906,7 +962,7 @@ def replay(lean_self_test=False, memory_mib=4096):
                       "modules": audited_modules, "results": results,
                       "runtime_helper_consumers": [d["name"] for d in declarations
                           if d["direct_value_reference_to_runtime_helper"]],
-                      "scope": "Every existing Git-visible working-tree project source freshly elaborated from immutable run copies at trust zero after the mathematical layout gate; deleted tracked regular library paths explicitly recorded and membership/deletion drift rejected; dependency checkout HEADs checked and cached dependency objects kernel-checked; all owned declarations and transitive axioms audited",
+                      "scope": "Every active Git-visible working-tree library source freshly elaborated from immutable run copies at trust zero after the mathematical layout gate; exact candidate-only intake sources and validation roles excluded and separately recorded; deleted tracked regular library paths explicitly recorded and membership/deletion/candidate drift rejected; dependency checkout HEADs checked and cached dependency objects kernel-checked; all owned declarations and transitive axioms audited",
                       "rh_proved": False})
         write_json(run / "receipt.json", state)
         write_json(run / "progress.json", state)
@@ -935,10 +991,32 @@ class ReplayFixtures(unittest.TestCase):
         (self.root / "GRWTSK.lean").write_text("import GRWTSK.A\n")
         (self.root / "GRWTSK/A.lean").write_text("def a : Nat := 0\n")
         (self.root / "GRWTSK/Unimported.lean").write_text("import GRWTSK.A\n")
+        (self.root / "evidence").mkdir()
+        self.write_candidate_intake([])
         self.sources = ["GRWTSK.lean", "GRWTSK/A.lean", "GRWTSK/Unimported.lean"]
 
     def tearDown(self):
         self.directory.cleanup()
+
+    def write_candidate_intake(self, entries):
+        payload = {
+            "schema": "mathematical-source-intake-v1",
+            "status": "CANDIDATE_SOURCE_INTAKE_NOT_THEOREM_ACCEPTANCE",
+            "source_count": len(entries),
+            "sources": entries,
+        }
+        (self.root / SOURCE_INTAKE).write_text(json.dumps(payload))
+
+    def candidate_entry(self, path):
+        content = read_source(self.root, path)
+        return {
+            "path": path,
+            "sha256": hashlib.sha256(content).hexdigest(),
+            "bytes": len(content),
+            "status": CANDIDATE_STATUS,
+            "mathematical_admission": False,
+            "public_release_eligible": False,
+        }
 
     def inventory_mock(self, names, tracked_regular, tracked_links=()):
         def observe(argv, **kwargs):
@@ -968,6 +1046,39 @@ class ReplayFixtures(unittest.TestCase):
         self.assertEqual(snapshot["deleted_library_paths"], [deleted])
         self.assertNotIn(deleted, snapshot["sha256"])
         self.assertIn(new, snapshot["sha256"])
+
+    def test_exact_candidates_are_excluded_and_reported_without_admission(self):
+        candidate = "GRWTSK/Analysis/Candidate.lean"
+        (self.root / "GRWTSK/Analysis").mkdir()
+        (self.root / candidate).write_text("def retainedCandidate : Nat := 1\n")
+        self.write_candidate_intake([self.candidate_entry(candidate)])
+        names = self.sources + [candidate]
+        with mock.patch(__name__ + ".subprocess.check_output",
+                        side_effect=self.inventory_mock(names, self.sources + [candidate])):
+            inventory = git_source_inventory(self.root)
+        self.assertEqual(inventory["sources"], sorted(self.sources))
+        self.assertEqual(inventory["candidate_source_only_paths"], [candidate])
+        with mock.patch(__name__ + ".subprocess.check_output",
+                        side_effect=self.inventory_mock(self.sources, self.sources)):
+            with self.assertRaisesRegex(RuntimeError, "candidate source is not Git-visible"):
+                git_source_inventory(self.root)
+
+    def test_candidate_drift_missing_bytes_and_admission_changes_fail_closed(self):
+        candidate = "GRWTSK/Analysis/Candidate.lean"
+        (self.root / "GRWTSK/Analysis").mkdir()
+        (self.root / candidate).write_text("def retainedCandidate : Nat := 1\n")
+        entry = self.candidate_entry(candidate)
+        self.write_candidate_intake([entry])
+        (self.root / candidate).write_text("def retainedCandidate : Nat := 2\n")
+        with self.assertRaisesRegex(RuntimeError, "differs from exact intake bytes"):
+            candidate_source_intake(self.root)
+        (self.root / candidate).write_text("def retainedCandidate : Nat := 1\n")
+        self.write_candidate_intake([dict(entry, mathematical_admission=True)])
+        with self.assertRaisesRegex(RuntimeError, "admission/publication claim"):
+            candidate_source_intake(self.root)
+        (self.root / SOURCE_INTAKE).unlink()
+        with self.assertRaisesRegex(RuntimeError, "missing, symlink, or inaccessible"):
+            candidate_source_intake(self.root)
 
     def test_inventory_keeps_broken_links_directories_and_broken_parent_paths_fatal(self):
         broken = "GRWTSK/Broken.lean"
