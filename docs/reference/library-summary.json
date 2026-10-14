@@ -2,8 +2,8 @@
   "schema": "mathematical-documentation-inventory-v1",
   "scope": "Current local source paths and maintained documentation metadata; not theorem acceptance",
   "input_sha256": {
-    "docs/reference/documentation-layout.json": "ab07d61ecaa4ec3032de70bb610c021fdb9c0c22c83271181367364de3246e85",
-    "docs/reference/results.json": "8ce68ff3a40612a47ec0d7c57531628fe12a8a7c1408b68e6213cbbc873f1c17",
+    "docs/reference/documentation-layout.json": "573bcb6ed1efd8c6d932b87edf6f04ca4021fce1d032523bfc17d95f6eceb6b3",
+    "docs/reference/results.json": "544f454120ac34dfb0da29d767bdf9b3e6d4d3085c02f09ac475913975775288",
     "evidence/source-intake.json": "975160460f769a46027efb78359df82b1f366e12b4c2346f070abfce8a667755",
     "lake-manifest.json": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
     "lean-toolchain": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b"
@@ -45,6 +45,9 @@
     "GRWTSK/Analysis/Calculus/PolynomialBumpNormalization.lean",
     "GRWTSK/Analysis/CausalTranslation/ExponentialResponse.lean",
     "GRWTSK/Analysis/Complex/AnalyticLinearODE.lean",
+    "GRWTSK/Analysis/Complex/CriticalReflection.lean",
+    "GRWTSK/Analysis/Complex/PositiveHalfPlane.lean",
+    "GRWTSK/Analysis/Complex/ReflectionCounterexamples.lean",
     "GRWTSK/Analysis/Complex/VerticalReflection.lean",
     "GRWTSK/Analysis/Convolution/AutocorrelationDerivativeEnergy.lean",
     "GRWTSK/Analysis/Convolution/AutocorrelationSecondDerivative.lean",
@@ -115,6 +118,7 @@
     "GRWTSK/Analysis/IntervalReflection.lean",
     "GRWTSK/Analysis/LaplaceTransform/Analytic.lean",
     "GRWTSK/Analysis/LaplaceTransform/CausalExponentialResponse.lean",
+    "GRWTSK/Analysis/LaplaceTransform/ExponentialEnergy.lean",
     "GRWTSK/Analysis/LaplaceTransform/ExponentialThreshold.lean",
     "GRWTSK/Analysis/LaplaceTransform/MoebiusResponseFormula.lean",
     "GRWTSK/Analysis/LaplaceTransform/PolynomialEnergy.lean",
@@ -168,6 +172,7 @@
     "GRWTSK/LinearAlgebra/Determinant/RankOneQuadraticForm.lean",
     "GRWTSK/LinearAlgebra/GaugeState.lean",
     "GRWTSK/LinearAlgebra/JacobiTransfer.lean",
+    "GRWTSK/LinearAlgebra/Matrix/HermitianCounterexamples.lean",
     "GRWTSK/LinearAlgebra/Matrix/ToeplitzHankel.lean",
     "GRWTSK/LinearAlgebra/OrderedProductDeterminant.lean",
     "GRWTSK/LinearAlgebra/OrderedTransfer.lean",
@@ -185,7 +190,6 @@
     "GRWTSK/Logic/Certificates/DependencyRevisionExamples.lean",
     "GRWTSK/Logic/Certificates/ModelExamples.lean",
     "GRWTSK/Logic/Certificates/ProofCoverage.lean",
-    "GRWTSK/Logic/Counterexamples/ComplexSymmetryAndPositivity.lean",
     "GRWTSK/Logic/FiniteCoverage.lean",
     "GRWTSK/Logic/FiniteSequences/PrefixCoverage.lean",
     "GRWTSK/Logic/Inference/FiniteRuleExamples.lean",
@@ -272,6 +276,7 @@
     "GRWTSK/NumberTheory/Moebius/MertensSquareEnergyPowerBound.lean",
     "GRWTSK/NumberTheory/Moebius/MoebiusEulerProduct.lean",
     "GRWTSK/NumberTheory/Moebius/NegativePrimeCorrelation.lean",
+    "GRWTSK/NumberTheory/Moebius/PolynomialEnergyHolomorphy.lean",
     "GRWTSK/NumberTheory/Moebius/PolynomialLaplaceHolomorphy.lean",
     "GRWTSK/NumberTheory/Moebius/PrimeBlockEnergy.lean",
     "GRWTSK/NumberTheory/Moebius/PrimeFactorFilters.lean",
@@ -344,6 +349,7 @@
     "GRWTSK/NumberTheory/Zeta/Riemann/PolynomialEnergyCriterion.lean",
     "GRWTSK/NumberTheory/Zeta/Riemann/Regularized.lean",
     "GRWTSK/NumberTheory/Zeta/Riemann/ZeroDefinitions.lean",
+    "GRWTSK/NumberTheory/Zeta/Riemann/ZeroExclusions.lean",
     "GRWTSK/NumberTheory/Zeta/Riemann/ZeroSymmetry.lean",
     "GRWTSK/NumberTheory/Zeta/ZeroFreeHalfPlaneCriteria.lean",
     "GRWTSK/Order/Closure/FiniteDependencyClosure.lean",
@@ -363,18 +369,18 @@
   },
   "counts": {
     "areas": 11,
-    "object_guides": 62,
-    "documented_objects": 36,
-    "primary_sources": 59,
-    "lean_modules": 347,
+    "object_guides": 65,
+    "documented_objects": 39,
+    "primary_sources": 62,
+    "lean_modules": 353,
     "intake_records": 63,
     "selected_families": 3,
-    "maintained_pages": 89
+    "maintained_pages": 92
   },
   "page_statuses": {
     "fresh-selected": 5,
     "historical": 1,
-    "historical-source-description": 50,
+    "historical-source-description": 53,
     "literature-and-historical-source-description": 3,
     "written-argument": 3
   },
@@ -397,14 +403,14 @@
     },
     "Analysis": {
       "title": "Analysis",
-      "object_guides": 12,
-      "documented_objects": 8,
-      "primary_sources": 12,
-      "lean_modules": 128,
+      "object_guides": 14,
+      "documented_objects": 10,
+      "primary_sources": 14,
+      "lean_modules": 132,
       "intake_records": 39,
       "selected_families": 1,
       "page_statuses": {
-        "historical-source-description": 12
+        "historical-source-description": 14
       }
     },
     "Combinatorics": {
@@ -444,14 +450,14 @@
     },
     "LinearAlgebra": {
       "title": "Linear algebra",
-      "object_guides": 11,
-      "documented_objects": 7,
-      "primary_sources": 11,
-      "lean_modules": 16,
+      "object_guides": 12,
+      "documented_objects": 8,
+      "primary_sources": 12,
+      "lean_modules": 17,
       "intake_records": 3,
       "selected_families": 0,
       "page_statuses": {
-        "historical-source-description": 9,
+        "historical-source-description": 10,
         "literature-and-historical-source-description": 2
       }
     },
@@ -460,7 +466,7 @@
       "object_guides": 2,
       "documented_objects": 2,
       "primary_sources": 2,
-      "lean_modules": 24,
+      "lean_modules": 23,
       "intake_records": 0,
       "selected_families": 0,
       "page_statuses": {
@@ -482,7 +488,7 @@
       "object_guides": 24,
       "documented_objects": 11,
       "primary_sources": 23,
-      "lean_modules": 139,
+      "lean_modules": 141,
       "intake_records": 19,
       "selected_families": 1,
       "page_statuses": {

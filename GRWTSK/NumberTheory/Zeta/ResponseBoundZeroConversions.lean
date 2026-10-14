@@ -1,4 +1,4 @@
-import GRWTSK.Analysis.LaplaceTransform.PolynomialEnergyHolomorphy
+import GRWTSK.NumberTheory.Moebius.PolynomialEnergyHolomorphy
 import GRWTSK.Analysis.LaplaceTransform.MoebiusResponseFormula
 import GRWTSK.Algebra.MvPolynomial.SquarefreeEulerProduct
 import GRWTSK.Analysis.Asymptotics.SignedEnergyDecomposition

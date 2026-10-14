@@ -103,7 +103,7 @@ class CheckerControls(unittest.TestCase):
                                       lambda: checker.verify_input(record), {}, 10)
         control = self
         class FakeProcess:
-            returncode = 0
+            returncode, pid = 0, 999999
             def __init__(self, argv, **options):
                 self.argv, self.options = argv, options
                 initial = json.loads((control.root / "run/receipt.json").read_text())
@@ -113,6 +113,8 @@ class CheckerControls(unittest.TestCase):
                 observed.append((self.options["cwd"] / self.argv[-1]).read_bytes())
                 source.write_bytes(record.original.data)
                 return "", ""
+            def wait(self, timeout=None):
+                return self.returncode
         with patch.object(checker.subprocess, "Popen", FakeProcess):
             result = runner.run("edit-restore", ["mock-lean", record.logical_path],
                                 {record.logical_path: checker.digest(record.original.data)})
@@ -185,6 +187,10 @@ class CheckerControls(unittest.TestCase):
                 if self.calls == 1:
                     raise checker.subprocess.TimeoutExpired("mock", timeout)
                 return "partial stdout\n", "partial stderr\n"
+            def poll(self):
+                return None if self.calls == 1 else self.returncode
+            def wait(self, timeout=None):
+                return self.returncode
         with patch.object(checker.subprocess, "Popen", FakeProcess), patch.object(checker.os, "killpg") as kill:
             result = runner.run("bounded-timeout", ["mock"], {})
             kill.assert_called_once()
@@ -248,6 +254,8 @@ class CheckerControls(unittest.TestCase):
             pid, returncode = 999999, 0
             def __init__(self, argv, **options):
                 self.argv, self.options = argv, options
+            def wait(self, timeout=None):
+                return self.returncode
             def communicate(self, timeout=None):
                 argv, stdout = self.argv, ""
                 if argv[0] == "git":
@@ -357,8 +365,160 @@ class CheckerControls(unittest.TestCase):
         self.assertFalse(list(missing.rglob("*.olean")))
 
 
+class LifecycleControls(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.base = TEMP_ROOT / ("moebius-lifecycle-controls-" + checker.uuid.uuid4().hex)
+        checker.make_directory(cls.base, exclusive=True)
+        cls.records = []
+
+    def setUp(self):
+        self.root = self.base / self._testMethodName
+        checker.make_directory(self.root, exclusive=True)
+        self.no_children = patch.object(checker.subprocess, "Popen",
+            side_effect=AssertionError("Unmocked child process is forbidden in a pure control"))
+        self.no_children.start()
+        self.addCleanup(self.no_children.stop)
+
+    def run_recipe(self, recipe):
+        state = self.root / recipe
+        checker.make_directory(state / "source", exclusive=True)
+        checker.make_directory(state / "logs", exclusive=True)
+        receipt, events, control = {}, [], self
+        class FakeChild:
+            pid, returncode, calls = 987654, None, 0
+            def __init__(self, argv, **options):
+                events.append("spawn")
+                if recipe == "spawn-failure":
+                    raise OSError("original spawn failure")
+            def communicate(self, timeout=None):
+                self.calls += 1
+                events.append("communicate")
+                durable = json.loads((state / "receipt.json").read_text())
+                control.assertEqual(durable["commands"][-1]["child_pid"], self.pid)
+                if self.calls == 1:
+                    if recipe == "normal":
+                        self.returncode = 0
+                        return "normal stdout\n", ""
+                    if recipe in {"timeout", "timeout-parent-exited-group-alive"}:
+                        if recipe == "timeout-parent-exited-group-alive":
+                            self.returncode = 0
+                        raise checker.subprocess.TimeoutExpired("mock", timeout)
+                    if recipe == "interrupt":
+                        raise KeyboardInterrupt
+                    if recipe == "already-exited":
+                        self.returncode = 0
+                    raise OSError("original pipe failure")
+                if recipe == "pipe-failure":
+                    raise OSError("persistent pipe failure during cleanup")
+                return "partial stdout\n", "partial stderr\n"
+            def poll(self):
+                events.append("poll")
+                if recipe == "already-exited":
+                    self.returncode = 0
+                elif recipe == "exit-race":
+                    self.returncode = 0
+                    return None  # Exit occurs immediately after the observed running state.
+                return self.returncode
+            def wait(self, timeout=None):
+                events.append("wait")
+                control.assertLessEqual(timeout, 30)
+                control.assertIsNotNone(self.returncode)
+                return self.returncode
+        child = []
+        def spawn(argv, **options):
+            process = FakeChild(argv, **options)
+            child.append(process)
+            return process
+        def kill_group(pid, signal):
+            events.append("killpg")
+            control.assertEqual(pid, child[0].pid)
+            if recipe in {"vanished-group", "exit-race", "already-exited"}:
+                child[0].returncode = 0
+                raise ProcessLookupError("mock process group already gone")
+            if recipe != "timeout-parent-exited-group-alive":
+                child[0].returncode = -9
+        runner = checker.CommandRunner(state, state / "source", receipt, lambda: None, {}, 1)
+        with patch.object(checker.subprocess, "Popen", spawn), patch.object(checker.os, "killpg", kill_group):
+            if recipe == "interrupt":
+                with self.assertRaises(KeyboardInterrupt):
+                    runner.run(recipe, ["mock-lean"], {})
+                result = receipt["commands"][-1]
+                result["text"] = (state / result["log"]).read_text()
+            else:
+                result = runner.run(recipe, ["mock-lean"], {})
+        durable = json.loads((state / "receipt.json").read_text())
+        self.assertFalse(durable["kernel_checked"])
+        if recipe == "spawn-failure":
+            self.assertNotIn("child_pid", result)
+            self.assertEqual(events, ["spawn"])
+        else:
+            self.assertTrue(result["child_reaped"])
+            self.assertEqual(result["child_exit_code"], child[0].returncode)
+            self.assertEqual(durable["commands"][-1]["child_pid"], child[0].pid)
+            self.assertIn("wait", events)
+            self.assertNotIn("cleanup_error", result)
+        self.records.append({"control": recipe, "events": events, "receipt": str(state / "receipt.json"),
+                             "native_invocations": 0, "git_invocations": 0})
+        return result, events
+
+    def test_pid_is_durable_before_communication(self):
+        result, events = self.run_recipe("normal")
+        self.assertEqual(result["status"], "completed")
+        self.assertNotIn("killpg", events)
+
+    def test_spawn_failure_does_not_signal_or_reap_uncreated_child(self):
+        result, events = self.run_recipe("spawn-failure")
+        self.assertEqual(result["status"], "failed")
+        self.assertIn("original spawn failure", result["text"])
+
+    def test_generic_pipe_failure_terminates_reaps_and_retains_original_error(self):
+        result, events = self.run_recipe("pipe-failure")
+        self.assertEqual(result["status"], "failed")
+        self.assertIn("original pipe failure", result["text"])
+        self.assertIn("persistent pipe failure", result["cleanup_output_error"])
+        self.assertLess(events.index("killpg"), events.index("wait"))
+
+    def test_timeout_terminates_reaps_and_preserves_partial_diagnostics(self):
+        result, events = self.run_recipe("timeout")
+        self.assertEqual(result["status"], "timed-out")
+        self.assertIn("partial stdout", result["text"])
+        self.assertIn("partial stderr", result["text"])
+        self.assertIn("timed out", result["text"])
+        self.assertEqual(events.count("killpg"), 1)
+
+    def test_vanished_process_group_is_tolerated_and_child_is_reaped(self):
+        result, events = self.run_recipe("vanished-group")
+        self.assertEqual(result["status"], "failed")
+        self.assertIn("original pipe failure", result["text"])
+        self.assertEqual(result["child_exit_code"], 0)
+
+    def test_exited_parent_does_not_skip_termination_of_live_group(self):
+        result, events = self.run_recipe("timeout-parent-exited-group-alive")
+        self.assertEqual(result["status"], "timed-out")
+        self.assertEqual(result["child_exit_code"], 0)
+        self.assertEqual(events.count("killpg"), 1)
+        self.assertLess(events.index("killpg"), events.index("wait"))
+
+    def test_interruption_is_reraised_after_child_cleanup_and_receipt(self):
+        result, events = self.run_recipe("interrupt")
+        self.assertEqual(result["status"], "interrupted")
+        self.assertIn("Checker interrupted", result["text"])
+        self.assertEqual(events.count("killpg"), 1)
+
+    def test_child_exit_before_or_during_cleanup_is_reaped(self):
+        for recipe in ("already-exited", "exit-race"):
+            with self.subTest(recipe=recipe):
+                result, events = self.run_recipe(recipe)
+                self.assertEqual(result["status"], "failed")
+                self.assertIn("original pipe failure", result["text"])
+                self.assertEqual(result["child_exit_code"], 0)
+                self.assertEqual(events.count("killpg"), 1)
+
+
 def main():
-    suite = unittest.defaultTestLoader.loadTestsFromTestCase(CheckerControls)
+    suite = unittest.TestSuite([unittest.defaultTestLoader.loadTestsFromTestCase(CheckerControls),
+                               unittest.defaultTestLoader.loadTestsFromTestCase(LifecycleControls)])
     result = unittest.TextTestRunner(verbosity=2).run(suite)
     report = {"status": "pure-python-controls-passed" if result.wasSuccessful() else "pure-python-controls-failed",
         "tests_run": result.testsRun, "failures": len(result.failures), "errors": len(result.errors),
@@ -366,7 +526,7 @@ def main():
         "harness_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
         "kernel_checked": False, "native_invocations": 0, "git_invocations": 0,
         "scope": "Source-binding/oracle/mock-orchestration controls; synthetic sources/cache and stub policy supply no Lean or canonical admission evidence.",
-        "preserved_receipts": CheckerControls.records,
+        "preserved_receipts": CheckerControls.records + LifecycleControls.records,
         "failure_details": [{"test": str(test), "traceback": text} for test, text in result.failures + result.errors]}
     receipt = CheckerControls.base / "regressions.json"
     checker.atomic_json(receipt, report)

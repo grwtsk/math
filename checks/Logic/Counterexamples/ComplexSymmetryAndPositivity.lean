@@ -1,4 +1,7 @@
-import GRWTSK.Logic.Counterexamples.ComplexSymmetryAndPositivity
+import GRWTSK.NumberTheory.Zeta.Riemann.ZeroSymmetry
+import GRWTSK.NumberTheory.Zeta.Riemann.ZeroExclusions
+import GRWTSK.Analysis.Complex.ReflectionCounterexamples
+import GRWTSK.LinearAlgebra.Matrix.HermitianCounterexamples
 import Lean
 open Lean Elab Command GRWTSK.RiemannHypothesis
 namespace GRWTSK.RiemannHypothesis.Checks

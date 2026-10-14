@@ -1,4 +1,11 @@
-import Mathlib
+import Mathlib.Analysis.Asymptotics.Defs
+import Mathlib.Analysis.SpecialFunctions.Log.Basic
+import Mathlib.Algebra.Order.BigOperators.Group.Finset
+import Mathlib.Data.Nat.Find
+import Mathlib.Tactic.Linarith
+import Mathlib.Tactic.Positivity
+import Mathlib.Algebra.Order.Star.Real
+import Mathlib.Algebra.Order.Ring.Star
 
 /-!
 Research direction: grwtsk contributors.
@@ -28,14 +35,14 @@ theorem upperSublinear_iff_isLittleO (f : ℕ → ℝ) (hf : ∀ n, 0 ≤ f n) :
     obtain ⟨n₀, hn₀⟩ := h ε hε
     filter_upwards [Filter.eventually_ge_atTop n₀] with n hn
     simpa only [Real.norm_eq_abs, abs_of_nonneg (hf n),
-      abs_of_nonneg (Nat.cast_nonneg n)] using hn₀ n hn
+      abs_of_nonneg (by positivity : (0 : ℝ) ≤ (n : ℝ))] using hn₀ n hn
   · intro h ε hε
     have he := h.def hε
     obtain ⟨n₀, hn₀⟩ := Filter.eventually_atTop.1 he
     refine ⟨n₀, ?_⟩
     intro n hn
     simpa only [Real.norm_eq_abs, abs_of_nonneg (hf n),
-      abs_of_nonneg (Nat.cast_nonneg n)] using hn₀ n hn
+      abs_of_nonneg (by positivity : (0 : ℝ) ≤ (n : ℝ))] using hn₀ n hn
 
 theorem UpperSublinear.mono {f g : ℕ → ℝ} (hg : UpperSublinear g)
     (hfg : ∀ n, f n ≤ g n) : UpperSublinear f := by
@@ -88,10 +95,10 @@ theorem dyadic_cover (n : ℕ) (hn : 1 ≤ n) :
   have hj : n ≤ 2^j := Nat.find_spec hex
   refine ⟨j, hj, ?_⟩
   cases he : j with
-  | zero => simp only [he, pow_zero]; omega
+  | zero => simp only [pow_zero]; omega
   | succ k =>
       have hk : ¬ n ≤ 2^k := Nat.find_min hex (by dsimp [j] at he ⊢; omega)
-      rw [he, pow_succ]
+      simp only [pow_succ]
       omega
 
 /-- Finite dyadic prefix cost. Nothing is inferred from finitely many tests. -/
@@ -171,7 +178,7 @@ theorem sublinear_log_of_doubling (A β : ℕ → ℝ)
   · intro n hn
     have hl := Real.log_le_log
       (lt_of_lt_of_le (by norm_num) (hA (2*n))) (step n hn)
-    rw [Real.log_mul (by positivity : (1+β n) ≠ 0)
+    rw [Real.log_mul (ne_of_gt (by linarith [hβ n]))
       (ne_of_gt (lt_of_lt_of_le (by norm_num) (hA n)))] at hl
     linarith
 

@@ -1,5 +1,15 @@
-import GRWTSK.LinearAlgebra.Schrodinger.Sampling GRWTSK.Analysis.NormedSpace.QuadraticError GRWTSK.Analysis.Fourier.WindowCertificates GRWTSK.Analysis.Asymptotics.PolynomialClosure
+import GRWTSK.Analysis.Fourier.IntegerSeries
+import GRWTSK.Logic.FiniteSequences.PrefixCoverage
+import GRWTSK.LinearAlgebra.Schrodinger.SampledPotential
+import GRWTSK.Algebra.BigOperators.OrderedSquare
+import GRWTSK.Analysis.Fourier.Parseval
+import GRWTSK.Analysis.Asymptotics.PolynomialErrorBound
+import GRWTSK.Algebra.BigOperators.QuadraticCounterexample
 import GRWTSK.Combinatorics.Sequences.QuotaDiscrepancy
+import GRWTSK.LinearAlgebra.Schrodinger.Sampling
+import GRWTSK.Analysis.NormedSpace.QuadraticError
+import GRWTSK.Analysis.Fourier.WindowCertificates
+import GRWTSK.Analysis.Asymptotics.PolynomialClosure
 open GRWTSK.Analysis.Waveform
 example (s : ℕ → ℤ) : ContDiff ℝ 1 (coefficientWaveform (carrier s)) := encoded_sequence_contDiff s
 example (b : ℕ → ℕ) (hb : ∀ n, 1 ≤ b n) (j : ℕ) :

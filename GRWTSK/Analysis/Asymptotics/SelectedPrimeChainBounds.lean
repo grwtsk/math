@@ -1,5 +1,5 @@
 import GRWTSK.Analysis.Asymptotics.DisjointPrimeChainBounds
-import GRWTSK.Analysis.LaplaceTransform.PolynomialEnergyHolomorphy
+import GRWTSK.NumberTheory.Moebius.PolynomialEnergyHolomorphy
 
 /-! Weaker sign-preserving replacement: pay only the transitions on a declared
 complete source chain. It imposes no amortized inequality on unrelated subsets.

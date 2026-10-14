@@ -5,7 +5,8 @@ ROOT=Path(__file__).resolve().parent.parent
 FILES=['GRWTSK/Analysis/TestFunctions/Separation.lean',
        'GRWTSK/Analysis/TestFunctions/EvenSeparation.lean',
        'GRWTSK/Analysis/TestFunctions/ExponentialMomentVariation.lean']
-INPUTS=FILES+['checks/SmoothTestSeparationAudit.lean','scripts/check_smooth_test_separation.py','lean-toolchain','lakefile.toml','lake-manifest.json']
+AUDIT='checks/Analysis/TestFunctions/ExponentialMomentVariation/Audit.lean'
+INPUTS=FILES+[AUDIT,'scripts/check_smooth_test_separation.py','lean-toolchain','lakefile.toml','lake-manifest.json']
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 expected={rel:sha(ROOT/rel) for rel in INPUTS}
 manifest=json.loads((ROOT/'lake-manifest.json').read_text())
@@ -23,7 +24,7 @@ receipt=OUT/'receipt.json';receipt.write_text(json.dumps(record,indent=2)+'\n')
 (Path(ROOT/'.local/post-branch-formalization/latest-smooth-test-check.txt')).write_text(str(OUT)+'\n')
 try:
  for rel in INPUTS:assert sha(ROOT/rel)==expected[rel],rel
- for rel in FILES+['checks/SmoothTestSeparationAudit.lean']:
+ for rel in FILES+[AUDIT]:
   cmd=[lean,*flags]
   if rel in FILES:
    output=BUILD/Path(rel).with_suffix('.olean');output.parent.mkdir(parents=True,exist_ok=True);cmd+=['-o',str(output)]
@@ -33,7 +34,7 @@ try:
   receipt.write_text(json.dumps(record,indent=2)+'\n');print(rel+': '+('PASS' if p.returncode==0 else 'FAIL'),flush=True)
   assert p.returncode==0,log
   for path,h in expected.items():assert sha(ROOT/path)==h,path
- log=(OUT/'SmoothTestSeparationAudit.log').read_text()
+ log=(OUT/(Path(AUDIT).stem+'.log')).read_text()
  rows=[json.loads(x) for x in re.findall(r'SMOOTH_TEST_DECL::(\{[^\n]+\})',log)]
  counts=re.findall(r'SMOOTH_TEST_COUNT::(\d+)',log)
  assert len(counts)==1 and int(counts[0])==len(rows) and len(rows)==17

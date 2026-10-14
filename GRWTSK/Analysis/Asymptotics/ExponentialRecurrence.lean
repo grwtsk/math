@@ -9,9 +9,11 @@ noncomputable section
 open scoped BigOperators
 namespace PPNCP04.Cost
 
-def prefixSum (a : ℕ → ℝ) : ℕ → ℝ
-  | 0 => 0
-  | n+1 => prefixSum a n+a n
+def prefixSum (a : ℕ → ℝ) : ℕ → ℝ :=
+  Nat.rec 0 (fun n r => r + a n)
+
+@[simp] theorem prefixSum_zero (a : ℕ → ℝ) : prefixSum a 0 = 0 := rfl
+@[simp] theorem prefixSum_succ (a : ℕ → ℝ) (n : ℕ) : prefixSum a (n+1) = prefixSum a n + a n := rfl
 
 theorem prefixSum_nonneg (a : ℕ → ℝ) (ha : ∀ j, 0 ≤ a j) :
     ∀ n, 0 ≤ prefixSum a n := by

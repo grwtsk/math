@@ -37,6 +37,13 @@ CAMPAIGN_WORDS = frozenset({
     "conversations", "research", "workstream", "workstreams", "pipeline",
     "prototype", "draft", "style", "styles",
 })
+AMBIGUOUS_MATHEMATICAL_WORDS = frozenset({"branch", "branches", "research"})
+ALIAS_SUFFIXES = CAMPAIGN_WORDS | frozenset({
+    "control", "controls", "check", "checks", "audit", "audits", "test", "tests",
+    "fixture", "fixtures",
+})
+ALIAS_SUFFIX = re.compile(r"(?:" + "|".join(sorted(ALIAS_SUFFIXES, key=len, reverse=True)) + r")+\Z")
+GIT_EXECUTABLE = "/usr/bin/git"
 IDENTIFIER = r"(?:[^\W\d][\w']*|«[^»\r\n]+»)"
 MODULE = re.compile(IDENTIFIER + r"(?:[ \t\r\n]*\.[ \t\r\n]*" + IDENTIFIER + r")*")
 IMPORT_COMMAND = re.compile(r"^[ \t]*(?:(?:public|private)[ \t]+)?import\b", re.M)
@@ -51,13 +58,22 @@ SCOPE = "Present Git tracked plus nonignored untracked Lean sources; deleted tra
 LIMIT = "Explicit path bans and subject-root checks are a structural lower bound; mathematical subject review is required."
 
 
+def git_environment():
+    """Reject ambient repository/index/config redirects for every Git read."""
+    environment = {key: value for key, value in os.environ.items()
+                   if not key.startswith("GIT_")}
+    environment.update(GIT_OPTIONAL_LOCKS="0", GIT_CONFIG_NOSYSTEM="1",
+                       GIT_CONFIG_GLOBAL="/dev/null", GIT_CONFIG_SYSTEM="/dev/null")
+    return environment
+
+
 def git_inventory(root):
     """Read the index and nonignored working files without optional Git locks."""
     paths, tracked_modes = set(), {}
-    environment = dict(os.environ, GIT_OPTIONAL_LOCKS="0")
+    environment = git_environment()
     for arguments in (("--cached", "--stage"), ("--others", "--exclude-standard")):
         process = subprocess.run(
-            ["git", "-C", str(root), "ls-files", "-z", *arguments],
+            [GIT_EXECUTABLE, "-C", str(root), "ls-files", "-z", *arguments],
             env=environment, capture_output=True, timeout=60,
         )
         if process.returncode:
@@ -85,10 +101,13 @@ class MissingSource(ValueError):
 
 
 def safe_parts(relative):
-    path = PurePosixPath(relative)
-    if not relative or not path.parts or path.is_absolute() or any(p in {"..", ".git"} for p in path.parts):
+    # Inspect spelling before PurePosixPath can normalize empty or dot parts.
+    if not isinstance(relative, str) or not relative:
         raise ValueError("unsafe inventory path")
-    return path.parts
+    parts = tuple(relative.split("/"))
+    if any(part in {"", ".", ".."} or part.casefold() == ".git" for part in parts):
+        raise ValueError("unsafe inventory path")
+    return parts
 
 
 def read_regular(root, relative):
@@ -263,38 +282,86 @@ def imports(text):
     return sorted({(entry["module"], entry["line"]) for entry in found})
 
 
+def name_words(segment):
+    """Recognize separated names and CamelCase, including acronym boundaries."""
+    return tuple(word.casefold() for word in re.findall(
+        r"[A-Z]+(?=[A-Z][a-z]|[0-9]|[^A-Za-z]|$)|[A-Z]?[a-z]+|[0-9]+", segment))
+
+
 def forbidden_name(segment):
     if segment.casefold() in {name.casefold() for name in LEGACY_SEGMENTS}:
         return "legacy conjecture/campaign segment"
-    words = re.findall(r"[A-Z]+(?=[A-Z][a-z]|[0-9]|$)|[A-Z]?[a-z]+|[0-9]+", segment)
-    if any(word.casefold() == "ccc" for word in words):
-        return "legacy CCC alias"
-    if any(word.casefold() in CAMPAIGN_WORDS for word in words):
+    words = name_words(segment)
+    legacy = {"".join(name_words(name)) for name in LEGACY_SEGMENTS}
+    # Complete word runs cover CamelCase and separated aliases. Bound each
+    # run by retired-name length even for arbitrarily long quoted identifiers.
+    maximum = max(map(len, legacy))
+    for start in range(len(words)):
+        joined = ""
+        for finish in range(start, len(words)):
+            if len(joined) + len(words[finish]) > maximum:
+                break
+            joined += words[finish]
+            if joined in legacy:
+                return "legacy conjecture/campaign alias"
+    compact = "".join(words)
+    # A joined lowercase name has no word boundary. Recognize only explicit
+    # workflow suffixes (ccccontrols, waveformauditchecks), not substrings.
+    if any(compact.startswith(name) and ALIAS_SUFFIX.fullmatch(compact[len(name):])
+           for name in legacy):
+        return "legacy conjecture/campaign alias"
+    if any(word in CAMPAIGN_WORDS - AMBIGUOUS_MATHEMATICAL_WORDS for word in words):
+        return "campaign/branch/style alias"
+    # Branches and research also name mathematical objects. Their presence
+    # alone is not campaign evidence: BranchCut and OperationsResearch stay.
+    if any(compact.startswith(name) and ALIAS_SUFFIX.fullmatch(compact[len(name):])
+           for name in AMBIGUOUS_MATHEMATICAL_WORDS):
         return "campaign/branch/style alias"
     return None
 
 
 def layout_issues(parts, allowed):
-    """The same structural policy applies to filesystem and imported modules."""
+    """Ban retired names in all project paths; subject roots govern the library.
+
+    RiemannHypothesis may name a statement file with a mathematical home, but
+    cannot be a directory umbrella. Declaration namespaces are never inspected.
+    Root audit files and control directories need no library subject-root test.
+    """
     issues = []
     if parts and parts[0] == "GRWTSK":
         if len(parts) == 1:
             return issues  # The library umbrella is not a mathematical subject module.
         if parts[1] not in allowed:
             issues.append(("unknown-subject-root", parts[1], "not an approved mathematical subject root"))
-        for segment in parts[1:]:
-            reason = forbidden_name(segment)
-            if reason:
-                issues.append(("forbidden-layout-name", segment, reason))
+    for index, segment in enumerate(parts):
+        if index == len(parts) - 1 and segment == "RiemannHypothesis":
+            continue  # A statement module, rather than a conjecture directory.
+        reason = forbidden_name(segment)
+        if reason:
+            issues.append(("forbidden-layout-name", segment, reason))
     return issues
 
 
 def check_paths(root, paths, tracked_regular=()):
     allowed = set(SUBJECT_ROOTS)
     findings, files, deleted = [], [], []
+    paths = sorted(set(paths))
     tracked_regular = set(tracked_regular)
+    # Imports into local control/support trees follow the same path policy.
+    # External libraries are outside this repository's naming jurisdiction.
+    project_roots = {"GRWTSK", "checks"}
+    for relative in paths:
+        if relative.endswith(".lean"):
+            try:
+                parts = safe_parts(relative)
+            except ValueError:
+                continue  # The source read below reports the unsafe path.
+            if len(parts) > 1:
+                project_roots.add(parts[0])
+            else:
+                project_roots.add(PurePosixPath(relative).stem)
     library_count, import_count = 0, 0
-    for relative in sorted(set(paths)):
+    for relative in paths:
         if not relative.endswith(".lean"):
             continue
         library = relative.startswith("GRWTSK/")
@@ -314,13 +381,13 @@ def check_paths(root, paths, tracked_regular=()):
             continue
         if library:
             library_count += 1
-            module_parts = list(PurePosixPath(relative).with_suffix("").parts)
-            for code, segment, reason in layout_issues(module_parts, allowed):
-                findings.append({"code": code, "path": relative, "segment": segment,
-                                 "message": reason})
+        module_parts = list(PurePosixPath(relative).with_suffix("").parts)
+        for code, segment, reason in layout_issues(module_parts, allowed):
+            findings.append({"code": code, "path": relative, "segment": segment,
+                             "message": reason})
         files.append({"path": relative, "sha256": hashlib.sha256(data).hexdigest()})
         for module, line in entries:
-            if module == "GRWTSK" or module.startswith("GRWTSK."):
+            if module.split(".")[0] in project_roots:
                 import_count += 1
                 for code, segment, reason in layout_issues(module.split("."), allowed):
                     findings.append({"code": "forbidden-import", "path": relative,
@@ -353,8 +420,8 @@ def ignored_fixture_directory(root):
         if not stat.S_ISDIR(mode) or stat.S_ISLNK(mode):
             raise ValueError("fixture parent must be a regular directory")
     directory = Path(tempfile.mkdtemp(prefix="fixtures-", dir=base))
-    process = subprocess.run(["git", "-C", str(root), "check-ignore", "-q", str(directory)],
-                             env=dict(os.environ, GIT_OPTIONAL_LOCKS="0"), capture_output=True)
+    process = subprocess.run([GIT_EXECUTABLE, "-C", str(root), "check-ignore", "-q", str(directory)],
+                             env=git_environment(), capture_output=True)
     if process.returncode:
         directory.rmdir()
         raise ValueError("self-test fixtures must be ignored by Git")
@@ -404,9 +471,88 @@ def self_test(root):
         case("import-" + segment, {
             "GRWTSK/Analysis/Basic.lean": "import GRWTSK.Analysis." + segment + ".Basic\n",
         }, ("forbidden-import",))
+        case("control-directory-" + segment, {
+            "checks/Analysis/" + segment + "/Controls/FalseClaim.lean": "import Mathlib\n",
+        }, ("forbidden-layout-name",))
+        case("control-alias-camel-" + segment, {
+            "checks/Analysis/" + segment + "Controls/FalseClaim.lean": "import Mathlib\n",
+        }, ("forbidden-layout-name",))
+        separated = re.sub(r"(?<=[a-z])(?=[A-Z])", "-", segment).casefold()
+        case("control-alias-hyphen-" + segment, {
+            "checks/Analysis/" + separated + "-controls/FalseClaim.lean": "import Mathlib\n",
+        }, ("forbidden-layout-name",))
+        case("control-alias-underscore-" + segment, {
+            "checks/Analysis/" + separated.replace("-", "_") + "_controls/FalseClaim.lean": "import Mathlib\n",
+        }, ("forbidden-layout-name",))
+        case("control-alias-joined-lowercase-" + segment, {
+            "checks/Analysis/" + segment.casefold() + "controls/FalseClaim.lean": "import Mathlib\n",
+        }, ("forbidden-layout-name",))
+        case("control-alias-joined-suffix-combination-" + segment, {
+            "checks/Analysis/" + segment.casefold() + "auditchecks/FalseClaim.lean": "import Mathlib\n",
+        }, ("forbidden-layout-name",))
+    case("mathematical-control-and-technical-root-audits", {
+        "checks/Analysis/Fourier/Controls/FalseTraceBound.lean": "import GRWTSK.Analysis.Fourier.Basic\n",
+        "checks/MathTrustAudit.lean": "import Lean\n",
+        "checks/DeclarationAudit.lean": "import GRWTSK\n",
+        "MathRuntimeAudit.lean": "namespace GRWTSK.CCC\nend GRWTSK.CCC\n",
+        "support/lean/RuntimeSupport/Observer.lean": "import Lean\n",
+        "checks/Analysis/Success/Control.lean": "import Mathlib\n",
+    })
+    case("conjecture-statement-filenames-have-mathematical-homes", {
+        "GRWTSK/NumberTheory/Zeta/RiemannHypothesis.lean": "namespace GRWTSK.RiemannHypothesis\nend GRWTSK.RiemannHypothesis\n",
+        "checks/NumberTheory/Zeta/Declarations.lean": "import GRWTSK.NumberTheory.Zeta.RiemannHypothesis\nimport Mathlib.NumberTheory.LSeries.RiemannHypothesis\n",
+    })
+    case("technical-source-root-retired-directory", {
+        "support/lean/CCC_Controls/Observer.lean": "import Lean\n",
+    }, ("forbidden-layout-name",))
+    case("local-control-imports-reject-retired-aliases", {
+        "checks/Analysis/Fourier/Declarations.lean": "import checks.waveform_controls.FalseTraceBound\nimport checks.Analysis.WaveformControls.FalseAlias\n",
+    }, ("forbidden-import",))
+    case("local-support-imports-reject-retired-aliases", {
+        "support/lean/RuntimeSupport/Observer.lean": "import support.lean.CCCControls.Observer\n",
+    }, ("forbidden-import",))
+    case("standalone-local-root-import-rejects-retired-alias", {
+        "Observer.lean": "import Observer.WaveformControls.Bad\n",
+    }, ("forbidden-import",))
+    case("standalone-local-root-import-permits-mathematical-object", {
+        "Observer.lean": "import Observer.Analysis.Fourier\nnamespace GRWTSK.CCC\nend GRWTSK.CCC\n",
+    })
+    case("joined-lowercase-local-imports-reject-retired-aliases", {
+        "checks/Analysis/Fourier/Declarations.lean": "import checks.waveformcontrols.Bad\nimport checks.ccccontrols.Bad\nimport checks.riemannhypothesiscontrols.Bad\n",
+    }, ("forbidden-import",))
+    case("mathematical-branch-and-research-objects", {
+        "GRWTSK/Analysis/" + name + "/Basic.lean": "import Mathlib\n"
+        for name in ("BranchCut", "BranchCuts", "BranchPoint", "AnalyticBranches",
+                     "RamificationBranch", "OperationsResearch", "BranchCorrelation")
+    })
+    case("workflow-branch-controls", {
+        "checks/Analysis/BranchControls/FalseClaim.lean": "import Mathlib\n",
+    }, ("forbidden-layout-name",))
+    case("workflow-joined-branch-controls", {
+        "checks/Analysis/branchcontrols/FalseClaim.lean": "import Mathlib\n",
+    }, ("forbidden-layout-name",))
+    case("workflow-joined-research-campaign", {
+        "checks/Analysis/researchcampaign/FalseClaim.lean": "import Mathlib\n",
+    }, ("forbidden-layout-name",))
+    case("ordinary-names-do-not-match-arbitrary-retired-substrings", {
+        "checks/Analysis/" + name + "/Control.lean": "import Mathlib\n"
+        for name in ("Success", "successcontrols", "cccx", "waveformity", "Notccccontrols")
+    })
+    case("long-quoted-import-alias-is-bounded-and-rejected", {
+        "checks/Analysis/Declarations.lean": "import checks.«" + "Ab" * 2000 + "WaveformControls».Bad\n",
+    }, ("forbidden-import",))
+    case("long-quoted-ordinary-import-is-bounded-and-permitted", {
+        "checks/Analysis/Declarations.lean": "import checks.«" + "Ab" * 2000 + "».Basic\n",
+    })
+    case("nested-acronym-directory-boundary", {
+        "checks/Analysis/CCC-controls/FalseClaim.lean": "import Mathlib\n",
+    }, ("forbidden-layout-name",))
+    case("nested-retired-alias-word-run", {
+        "checks/Analysis/ArchivedWaveformControls/FalseClaim.lean": "import Mathlib\n",
+    }, ("forbidden-layout-name",))
     case("legacy-root-aggregator", {"GRWTSK/ProofHorizon.lean": "import Mathlib\n"},
          ("unknown-subject-root", "forbidden-layout-name"))
-    case("branch-file-alias", {"GRWTSK/Analysis/BranchCorrelation.lean": "import Mathlib\n"},
+    case("branch-file-alias", {"GRWTSK/Analysis/BranchControls.lean": "import Mathlib\n"},
          ("forbidden-layout-name",))
     case("no-campaign-substitute", {"GRWTSK/Analysis/ResearchCampaign/Basic.lean": "import Mathlib\n"},
          ("forbidden-layout-name",))
@@ -437,6 +583,22 @@ def self_test(root):
     passed.append("deleted-tracked-path-reporting")
     case("unsafe-tracked-path-remains-error", {}, ("source-unavailable",),
          tracked_regular=("../Escape.lean",), extra_paths=("../Escape.lean",))
+    for number, path in enumerate((
+            "", ".", "..", "GRWTSK//Analysis/Basic.lean", "GRWTSK/./Analysis/Basic.lean",
+            "GRWTSK/../Analysis/Basic.lean", "/GRWTSK/Analysis/Basic.lean",
+            "GRWTSK/Analysis/Basic.lean/", "GRWTSK/.Git/Basic.lean", ".GIT/Control.lean",
+            "checks/.gIt/Control.lean", "checks//Control.lean")):
+        with unittest.mock.patch.object(os, "open", side_effect=AssertionError("unsafe path reached filesystem")):
+            try:
+                read_regular(fixture, path)
+            except ValueError as error:
+                if str(error) != "unsafe inventory path":
+                    raise AssertionError("unexpected raw-path rejection") from error
+            else:
+                raise AssertionError("noncanonical raw inventory path was accepted: " + path)
+        passed.append("raw-inventory-path-rejected-before-filesystem-%02d" % number)
+    case("case-variant-git-path-fails-even-if-tracked", {}, ("source-unavailable",),
+         tracked_regular=("checks/.GiT/Control.lean",), extra_paths=("checks/.GiT/Control.lean",))
     directory_source = fixture / "directory-source"
     (directory_source / "GRWTSK/Analysis/Basic.lean").mkdir(parents=True)
     report = check_paths(directory_source, ["GRWTSK/Analysis/Basic.lean"],
@@ -459,7 +621,13 @@ def self_test(root):
     tracked = b"100644 0000000000000000000000000000000000000000 0\tGRWTSK/Analysis/Tracked.lean\0"
     tracked += b"120000 0000000000000000000000000000000000000000 0\tGRWTSK/Analysis/Link.lean\0"
     untracked = b"GRWTSK/Analysis/CCC/New.lean\0"
-    with unittest.mock.patch.object(subprocess, "run", side_effect=[
+    redirects = {"GIT_DIR": "/unrelated/repo", "GIT_WORK_TREE": "/unrelated/tree",
+                 "GIT_INDEX_FILE": "/unrelated/index", "GIT_CONFIG_COUNT": "1",
+                 "GIT_CONFIG_KEY_0": "core.worktree", "GIT_CONFIG_VALUE_0": "/unrelated/tree",
+                 "GIT_CONFIG_GLOBAL": "/unrelated/config", "GIT_CONFIG_SYSTEM": "/unrelated/system",
+                 "GIT_CONFIG_NOSYSTEM": "0", "GIT_EXEC_PATH": "/unrelated/executables",
+                 "GIT_OPTIONAL_LOCKS": "1"}
+    with unittest.mock.patch.dict(os.environ, redirects), unittest.mock.patch.object(subprocess, "run", side_effect=[
             subprocess.CompletedProcess([], 0, tracked, b""),
             subprocess.CompletedProcess([], 0, untracked, b"")]) as mocked:
         observed = git_inventory(fixture)
@@ -469,7 +637,16 @@ def self_test(root):
             raise AssertionError("new untracked source missing from inventory")
         if "--exclude-standard" not in mocked.call_args_list[1][0][0]:
             raise AssertionError("ignored build/archive inventory exclusion missing")
+        for call in mocked.call_args_list:
+            if call[0][0][0] != "/usr/bin/git":
+                raise AssertionError("Git inventory executable must have an absolute pinned path")
+            observed_git_environment = {key: value for key, value in call[1]["env"].items()
+                                        if key.startswith("GIT_")}
+            if observed_git_environment != {"GIT_OPTIONAL_LOCKS": "0", "GIT_CONFIG_NOSYSTEM": "1",
+                                            "GIT_CONFIG_GLOBAL": "/dev/null", "GIT_CONFIG_SYSTEM": "/dev/null"}:
+                raise AssertionError("Git inventory inherited a redirect or enabled ambient configuration")
     passed.append("tracked-and-new-untracked-nonignored-inventory")
+    passed.append("git-inventory-pinned-executable-and-sanitized-redirects")
     case("new-untracked-legacy-source-rejected", {
         "GRWTSK/Analysis/CCC/New.lean": "import Mathlib\n",
     }, ("forbidden-layout-name",))
@@ -489,6 +666,19 @@ def self_test(root):
     if baseline_exit != 0 or baseline_report["status"] != "BASELINE_VIOLATIONS" or not baseline_report["report_only"]:
         raise AssertionError("baseline must remain explicitly report-only")
     passed.append("cli-default-failure-and-report-only-baseline")
+    control_fixture = fixture / "control-alias-hyphen-Waveform"
+    control_inventory = {"paths": ["checks/Analysis/waveform-controls/FalseClaim.lean"],
+                         "tracked_regular": []}
+    with unittest.mock.patch(__name__ + ".git_inventory", return_value=control_inventory):
+        captured = io.StringIO()
+        with contextlib.redirect_stdout(captured):
+            control_exit = main(["--root", str(control_fixture), "--json"])
+        control_report = json.loads(captured.getvalue())
+    if (control_exit != 1 or control_report["status"] != "FAIL" or
+            control_report["report_only"] or
+            [item["path"] for item in control_report["findings"]] != control_inventory["paths"]):
+        raise AssertionError("CLI must reject new retired control directories without library sources")
+    passed.append("cli-rejects-untracked-control-directory")
     good_fixture = fixture / "canonical-subjects"
     good_inventory = {"paths": sorted(str(p.relative_to(good_fixture)) for p in good_fixture.rglob("*.lean")),
                       "tracked_regular": []}

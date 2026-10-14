@@ -34,7 +34,7 @@ theorem prefixSum_const_mul (c : ℝ) (w : ℕ → ℝ) (n : ℕ) :
     Cost.prefixSum (fun j => c * w j) n = c * Cost.prefixSum w n := by
   induction n with
   | zero => simp [Cost.prefixSum]
-  | succ n ih => simp only [Cost.prefixSum, ih, mul_add]
+  | succ n ih => simp only [Cost.prefixSum_succ, ih, mul_add]
 
 theorem log_horizon_subadditive {T : ℝ} (hT : 0 ≤ T) :
     Real.log (2 + T) ≤ Real.log 2 + Real.log (1 + T) := by
