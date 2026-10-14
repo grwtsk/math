@@ -73,6 +73,6 @@ The almost Mathieu gate [math #93](https://github.com/grwtsk/math/issues/93) rem
 
 ## Reproducible verification
 
-Run `lake build --wfail` and `python3 scripts/check_prime_cascade.py`. The latter recompiles the complete selected project source closure into fresh objects with Lean trust zero, checks exact consumer contracts and transitive axioms, and rejects missing prime/block bounds and a composite primitive. Its source-bound result is `evidence/prime-cascade-checks.json`. Public dependency pins are Lean 4.33.0 and Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`.
+Run `lake build --wfail` and `python3 scripts/check_prime_cascade.py`. The latter recompiles the complete selected project source closure into fresh objects with Lean trust zero, checks exact consumer contracts and transitive axioms, and rejects missing prime/block bounds and a composite primitive. `evidence/prime-cascade-checks.json` is a retained prior observation; a fresh run writes a new ignored `.local/prime-cascade-*/receipt.json`. Public dependency pins are Lean 4.33.0 and Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`.
 
 A successful check certifies the displayed exact and conditional statements. The unsigned allowance, source-specific signed supplier, arithmetic-to-Kakeya adapter, broader issue closure and independent mathematical acceptance retain their separate status.

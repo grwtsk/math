@@ -9,6 +9,7 @@ import tempfile
 import time
 
 ROOT = Path(__file__).resolve().parents[1]
+(ROOT / ".local").mkdir(exist_ok=True)
 RUN = Path(tempfile.mkdtemp(prefix="ccc-energy-", dir=ROOT / ".local"))
 BUILD = RUN / "build"
 BUILD.mkdir()
@@ -59,9 +60,9 @@ CONTROL_ERRORS = {
     "DroppedResidual": "Type mismatch",
 }
 CONTROLS = list(CONTROL_ERRORS)
-INPUTS = ORDER + ["checks/Analysis/Energy/Declarations.lean", "scripts/check_ccc_energy.py",
+INPUTS = ORDER + ["GRWTSK/Analysis/Energy/Checks/Declarations.lean", "scripts/check_ccc_energy.py",
                   "lean-toolchain", "lakefile.toml", "lake-manifest.json", "docs/ccc-rh-research.md"]
-INPUTS += ["checks/Analysis/Energy/Controls/" + name + ".lean" for name in CONTROLS]
+INPUTS += ["GRWTSK/Analysis/Energy/Checks/Negative/" + name + ".lean" for name in CONTROLS]
 HASHES = {p: hashlib.sha256((ROOT / p).read_bytes()).hexdigest() for p in INPUTS}
 (RUN / "source-freeze.json").write_text(json.dumps(HASHES, indent=2) + "\n")
 RESULTS = []
@@ -109,7 +110,7 @@ def run(rel, expected_success=True, export=False, expected_error=None):
 try:
     for path in ORDER:
         run(path, export=True)
-    output = run("checks/Analysis/Energy/Declarations.lean")
+    output = run("GRWTSK/Analysis/Energy/Checks/Declarations.lean")
     declarations = [json.loads(s) for s in re.findall(r"CCC_DECL::(\{[^\n]+\})", output)]
     counts = re.findall(r"CCC_COUNT::(\d+)", output)
     if len(counts) != 1 or len(declarations) != int(counts[0]) or not declarations:
@@ -132,7 +133,7 @@ try:
         terminals[name] = declaration
     terminal = terminals["riemannHypothesis_of_pickupCrossPoly"]
     for name in CONTROLS:
-        run("checks/Analysis/Energy/Controls/" + name + ".lean", expected_success=False,
+        run("GRWTSK/Analysis/Energy/Checks/Negative/" + name + ".lean", expected_success=False,
             expected_error=CONTROL_ERRORS[name])
     stable_inputs()
     receipt = {"schema_version": 1, "status": "SCOPED_SOURCE_CHECKS_PASSED",
@@ -148,8 +149,8 @@ try:
                "declaration_count": len(declarations), "declarations": declarations,
                "checks": RESULTS,
                "acceptance": "Local candidate; no upstream admission, independent review, or publication"}
-    (ROOT / "evidence/ccc-energy-checks.json").write_text(json.dumps(receipt, indent=2) + "\n")
-    (RUN / "receipt.json").write_text(json.dumps(receipt, indent=2) + "\n")
+    with (RUN / "receipt.json").open("x", encoding="utf-8") as output:
+        output.write(json.dumps(receipt, indent=2) + "\n")
     print("CCC_ENERGY_SOURCE_AND_PREMISE_CONTROLS_PASSED", flush=True)
 except Exception as error:
     (RUN / "failure.json").write_text(json.dumps({"status": "FAILED", "error": str(error), "checks": RESULTS}, indent=2) + "\n")

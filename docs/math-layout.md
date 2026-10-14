@@ -16,6 +16,9 @@ mixed file at mathematical declaration boundaries instead of renaming an
 entire campaign. Cross-subject applications import the actual subject modules.
 
 The machine-readable path and source-hash index is [math-layout.json](math-layout.json).
+The [source-role reference](reference/source-layout.md) documents validation
+placement and the [generated source catalog](reference/math-source-catalog.json)
+projects the authoritative per-source records for review.
 The library umbrella imports every present library module in dependency order.
 The waveform cluster has been split into integer Fourier series, Parseval,
 window certificates, norm error inequalities, polynomial asymptotic bounds,
@@ -41,3 +44,7 @@ updated digest index does not certify a proof. Original historical evidence is
 retained; current moved and split source bytes require fresh Lean acceptance.
 Imported pinned dependency artifacts do not imply a Mathlib source rebuild.
 RH, arithmetic supplier estimates and other open premises remain open.
+
+The current consolidation outcome, including resource failures rather than
+mathematical failures, is recorded in the
+[Lean consolidation report](reference/lean-consolidation-report.md).

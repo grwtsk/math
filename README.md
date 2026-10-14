@@ -15,7 +15,7 @@ unsigned compensation bounds are refuted in the retained development.
 
 Import mathematical object modules directly. The complete development and late
 namespace audit are available through
-`GRWTSK.Logic.Verification.MoebiusResponseLibrary`; this audit does not replace
+`GRWTSK.Logic.ProofChecking.Checks.MoebiusResponseLibrary`; this audit does not replace
 complete source-owner verification. The current source manifest is
 `evidence/moebius-response-sources.json`. Prepared source evidence and historical
 receipts are distinct from a fresh native acceptance receipt.

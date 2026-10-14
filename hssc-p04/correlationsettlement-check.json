@@ -1,0 +1,16 @@
+{
+  "status": "kernel-checked",
+  "source": "/Users/local/Documents/ChatGPT/math 2/hssc-p04/CorrelationSettlement.lean",
+  "source_sha256": "aeb1d64b0b7a51a6cd216a6ede02fba51da8fde36e745534c458efcd4da0ad65",
+  "kernel_trust_level": 0,
+  "warnings_as_errors": true,
+  "exit_code": 0,
+  "source_unchanged": true,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "scope": "Focused saved-file check; final fresh qualified dependency replay pending.",
+  "stdout": "'HSSCP04.Settlement.signedCorrelationBudget_iff_HSS' depends on axioms: [propext, Classical.choice, Quot.sound]\n'HSSCP04.Settlement.unsigned_settlement_budget_refuted' depends on axioms: [propext, Classical.choice, Quot.sound]\n'HSSCP04.Settlement.HSS_requires_mature_matching' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+}

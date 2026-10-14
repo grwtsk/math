@@ -34,33 +34,40 @@ def save(path, data):
     temp.write_text(json.dumps(data, indent=2) + '\n')
     temp.replace(path)
 
+def require(condition, message):
+    if not condition:
+        raise RuntimeError(message)
+
 def registry_scope(plan):
     """Validate the explicit mathematical family, independent of its directories."""
     order, rows = plan['order'], plan['sources']
     count = plan['source_inputs']
-    assert type(count) is int and count > 0, 'Invalid source input count'
-    assert isinstance(order, list) and isinstance(rows, list)
-    assert count == len(order) == len(rows), 'Source count disagrees with registry'
+    require(type(count) is int and count > 0, 'Invalid source input count')
+    require(isinstance(order, list) and isinstance(rows, list), 'Registry order and sources must be lists')
+    require(count == len(order) == len(rows), 'Source count disagrees with registry')
     family = plan['mathematical_family_sources']
-    assert isinstance(family, list) and family, 'Missing explicit mathematical family'
+    require(isinstance(family, list) and family, 'Missing explicit mathematical family')
     for rel in order + family:
-        assert isinstance(rel, str), 'Non-string registered source path'
+        require(isinstance(rel, str), 'Non-string registered source path')
         parts = rel.split('/')
-        assert parts[0] == 'GRWTSK' and rel.endswith('.lean') and '\\' not in rel
-        assert all(part not in {'', '.', '..'} for part in parts), 'Noncanonical source path'
-    assert len(set(order)) == count, 'Repeated ordered source'
+        require(parts[0] == 'GRWTSK' and rel.endswith('.lean') and '\\' not in rel,
+                'Registered source is outside the canonical Lean tree: ' + rel)
+        require(all(part not in {'', '.', '..'} for part in parts), 'Noncanonical source path')
+    require(len(set(order)) == count, 'Repeated ordered source')
     destinations = [row['destination'] for row in rows]
-    assert len(set(destinations)) == count and set(destinations) == set(order)
+    require(len(set(destinations)) == count and set(destinations) == set(order),
+            'Registry destinations do not biject with source order')
     family_set = set(family)
-    assert len(family_set) == len(family) and family_set <= set(order), 'Invalid family membership'
+    require(len(family_set) == len(family) and family_set <= set(order), 'Invalid family membership')
     family_counts = [plan[key] for key in ('mathematical_family_modules', 'ccc_modules') if key in plan]
-    assert family_counts, 'Missing mathematical family count'
-    assert all(type(value) is int and value == len(family) for value in family_counts)
+    require(family_counts, 'Missing mathematical family count')
+    require(all(type(value) is int and value == len(family) for value in family_counts),
+            'Mathematical family count disagrees with registry')
     prerequisites = plan['prerequisites']
     aggregators = plan.get('aggregators', 0)
-    assert type(prerequisites) is int and prerequisites >= 0
-    assert type(aggregators) is int and aggregators == 0, 'Retired umbrellas must not be compiled'
-    assert prerequisites == count - len(family), 'Prerequisite count disagrees with registry'
+    require(type(prerequisites) is int and prerequisites >= 0, 'Invalid prerequisite count')
+    require(type(aggregators) is int and aggregators == 0, 'Retired umbrellas must not be compiled')
+    require(prerequisites == count - len(family), 'Prerequisite count disagrees with registry')
     return count, family
 
 for pointer in ['latest-native-run.json', 'latest-analytic-run.json', 'latest-public-check.json',
@@ -74,18 +81,21 @@ CANDIDATE = ROOT
 PLAN_FILE = ROOT / 'evidence/ccc-control-soundness-source-manifest.json'
 ENTRY_PLAN_SHA256 = sha(PLAN_FILE)
 PLAN = json.loads(PLAN_FILE.read_text())
-assert sha(PLAN_FILE) == ENTRY_PLAN_SHA256
+require(sha(PLAN_FILE) == ENTRY_PLAN_SHA256, 'Source registry changed while opening it')
 latest = {'plan_sha256': ENTRY_PLAN_SHA256}
 SOURCE_COUNT, MATHEMATICAL_FAMILY = registry_scope(PLAN)
-assert len(PLAN['selected_axiom_names']) == len(set(PLAN['selected_axiom_names'])) == 802
+require(len(PLAN['selected_axiom_names']) == len(set(PLAN['selected_axiom_names'])) == 802,
+        'Selected axiom-name registry is incomplete or contains duplicates')
 RUN = OPS / ('public-ccc-check-' + datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ'))
 RUN.mkdir(exist_ok=False)
 ENTRY_DRIVER = Path(__file__).resolve()
 ENTRY_DRIVER_SHA256 = sha(ENTRY_DRIVER)
 shutil.copy2(ENTRY_DRIVER, RUN / 'exact-driver.py')
 shutil.copy2(PLAN_FILE, RUN / 'exact-source-registry.json')
-assert sha(ENTRY_DRIVER) == sha(RUN / 'exact-driver.py') == ENTRY_DRIVER_SHA256
-assert sha(PLAN_FILE) == sha(RUN / 'exact-source-registry.json') == ENTRY_PLAN_SHA256
+require(sha(ENTRY_DRIVER) == sha(RUN / 'exact-driver.py') == ENTRY_DRIVER_SHA256,
+        'Frozen verification driver differs from its entry bytes')
+require(sha(PLAN_FILE) == sha(RUN / 'exact-source-registry.json') == ENTRY_PLAN_SHA256,
+        'Frozen source registry differs from its entry bytes')
 BUILD = RUN / 'build'
 BUILD.mkdir()
 RECEIPT = RUN / 'receipt.json'
@@ -106,8 +116,10 @@ start = time.monotonic()
 try:
     lean = subprocess.check_output(['elan', 'which', 'lean'], cwd=ROOT, text=True).strip()
     version = subprocess.check_output([lean, '--version'], text=True).strip()
-    assert 'version 4.33.0,' in version and 'd8b18978322de05a8f3dba51ef03cf5461676c17' in version, version
-    assert (ROOT / 'lean-toolchain').read_text().strip() == 'leanprover/lean4:v4.33.0'
+    require('version 4.33.0,' in version and 'd8b18978322de05a8f3dba51ef03cf5461676c17' in version,
+            version)
+    require((ROOT / 'lean-toolchain').read_text().strip() == 'leanprover/lean4:v4.33.0',
+            'Lean toolchain file differs from the pinned compiler')
     manifest = json.loads((ROOT / 'lake-manifest.json').read_text())
     dependency_heads = {}
     dependency_paths = []
@@ -115,15 +127,17 @@ try:
     for package in manifest['packages']:
         package_root = ROOT / manifest['packagesDir'] / package['name']
         actual = subprocess.check_output(['git', '-C', str(package_root), 'rev-parse', 'HEAD'], text=True).strip()
-        assert actual == package['rev'], package['name']
+        require(actual == package['rev'], package['name'])
         dependency_heads[package['name']] = actual
         obj = package_root / '.lake/build/lib/lean'
         if obj.is_dir():
             dependency_paths.append(str(obj))
         else:
             packages_without_installed_objects.append(package['name'])
-    assert dependency_heads['mathlib'] == 'db584cd6d46c92f209a44c0f1c829460d327499d'
-    assert (ROOT / manifest['packagesDir'] / 'mathlib/.lake/build/lib/lean/Mathlib/Data/Real/Basic.olean').is_file()
+    require(dependency_heads['mathlib'] == 'db584cd6d46c92f209a44c0f1c829460d327499d',
+            'Invalidated Mathlib revision')
+    require((ROOT / manifest['packagesDir'] / 'mathlib/.lake/build/lib/lean/Mathlib/Data/Real/Basic.olean').is_file(),
+            'Pinned Mathlib object cache is unavailable')
     environment = dict(os.environ, LEAN_PATH=':'.join([str(BUILD)] + dependency_paths))
     record.update(compiler={'path': lean, 'version': version, 'sha256': sha(Path(lean))},
                   dependency_heads=dependency_heads, dependency_object_roots=dependency_paths,
@@ -138,34 +152,39 @@ try:
     controls.update({str(Path(__file__).resolve()): sha(Path(__file__).resolve()),
                      str(Path(lean)): record['compiler']['sha256'],
                      str(PLAN_FILE): sha(PLAN_FILE)})
-    assert sha(ENTRY_DRIVER) == sha(RUN / 'exact-driver.py') == ENTRY_DRIVER_SHA256
-    assert sha(PLAN_FILE) == sha(RUN / 'exact-source-registry.json') == ENTRY_PLAN_SHA256
+    require(sha(ENTRY_DRIVER) == sha(RUN / 'exact-driver.py') == ENTRY_DRIVER_SHA256,
+            'Verification driver changed after freezing')
+    require(sha(PLAN_FILE) == sha(RUN / 'exact-source-registry.json') == ENTRY_PLAN_SHA256,
+            'Source registry changed after freezing')
     controls[str(RUN / 'exact-driver.py')] = sha(Path(__file__).resolve())
     controls[str(RUN / 'exact-source-registry.json')] = sha(PLAN_FILE)
     sources = {row['destination']: row['destination_sha256'] for row in PLAN['sources']}
-    assert len(sources) == SOURCE_COUNT and set(PLAN['order']) == set(sources)
-    assert PLAN['audit_destination'] not in sources
+    require(len(sources) == SOURCE_COUNT and set(PLAN['order']) == set(sources),
+            'Registered source map disagrees with its ordered source census')
+    require(PLAN['audit_destination'] not in sources,
+            'Audit source must remain separate from the project source census')
     sources[PLAN['audit_destination']] = PLAN['audit_destination_sha256']
     for rel, expected in sources.items():
-        assert sha(CANDIDATE / rel) == expected, rel
+        require(sha(CANDIDATE / rel) == expected, rel)
         dst = RUN / 'inputs' / rel
         dst.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(CANDIDATE / rel, dst)
-        assert sha(dst) == expected, rel
+        require(sha(dst) == expected, rel)
     save(RUN / 'frozen-inputs.json', {'sources': sources, 'controls': controls})
     record['frozen_inputs_sha256'] = sha(RUN / 'frozen-inputs.json')
     save(RECEIPT, record)
     consumed_objects = {}
 
     def stable():
-        assert sha(RUN / 'frozen-inputs.json') == record['frozen_inputs_sha256']
+        require(sha(RUN / 'frozen-inputs.json') == record['frozen_inputs_sha256'],
+                'Frozen input registry changed during verification')
         for path, expected in controls.items():
-            assert sha(Path(path)) == expected, path
+            require(sha(Path(path)) == expected, path)
         for rel, expected in sources.items():
-            assert sha(CANDIDATE / rel) == expected, rel
-            assert sha(RUN / 'inputs' / rel) == expected, rel
+            require(sha(CANDIDATE / rel) == expected, rel)
+            require(sha(RUN / 'inputs' / rel) == expected, rel)
         for path, expected in consumed_objects.items():
-            assert sha(Path(path)) == expected, 'Produced object changed before consumption: ' + path
+            require(sha(Path(path)) == expected, 'Produced object changed before consumption: ' + path)
 
     args = [lean, '--trust=0', '--memory=4096', '--threads=1',
             '-DautoImplicit=false', '-DrelaxedAutoImplicit=false',
@@ -224,9 +243,12 @@ try:
         for import_line in re.findall(r'^import (.+)$', (ROOT / rel).read_text(), re.M):
             for module in import_line.split('--', 1)[0].split():
                 if module.startswith('GRWTSK.'):
-                    assert module in position and position[module] < position[Path(rel).with_suffix('').as_posix().replace('/', '.')], module
-    assert set(MATHEMATICAL_FAMILY) <= set(sources)
-    assert all((RUN / 'inputs' / rel).is_file() for rel in MATHEMATICAL_FAMILY)
+                    require(module in position and position[module] < position[Path(rel).with_suffix('').as_posix().replace('/', '.')],
+                            module)
+    require(set(MATHEMATICAL_FAMILY) <= set(sources),
+            'Mathematical family is not covered by the frozen source map')
+    require(all((RUN / 'inputs' / rel).is_file() for rel in MATHEMATICAL_FAMILY),
+            'A frozen mathematical-family input is unavailable')
     stable()
     if PREFLIGHT_ONLY:
         record.update(status='PREFLIGHT_PASS', fresh_lean_inputs=0, selected_axiom_reports=0,
@@ -238,23 +260,27 @@ try:
         audit_log = compile_one(PLAN['audit_destination'], export=False)
         audit = audit_log.read_text()
         names = re.findall(r"'([^']+)' (?:depends on axioms:|does not depend on any axioms)", audit)
-        assert names == PLAN['selected_axiom_names'], 'Missing, repeated, reordered or changed axiom reports'
-        assert len(names) == len(set(names)) == 802
+        require(names == PLAN['selected_axiom_names'],
+                'Missing, repeated, reordered or changed axiom reports')
+        require(len(names) == len(set(names)) == 802,
+                'Axiom report census is incomplete or contains duplicates')
         allowed = {'propext', 'Classical.choice', 'Quot.sound'}
         observed_foundations = set()
         for report in re.findall(r'depends on axioms:\s*\[([^\]]*)\]', audit):
             actual = set(re.findall(r'[A-Za-z_][A-Za-z0-9_.]*', report))
-            assert actual <= allowed, str(actual - allowed)
+            require(actual <= allowed, str(actual - allowed))
             observed_foundations.update(actual)
         for package in manifest['packages']:
             actual = subprocess.check_output(['git', '-C', str(ROOT / manifest['packagesDir'] / package['name']),
                                               'rev-parse', 'HEAD'], text=True).strip()
-            assert actual == dependency_heads[package['name']], package['name']
+            require(actual == dependency_heads[package['name']], package['name'])
         stable()
         expected_objects = {str(BUILD / Path(rel).with_suffix('.olean')) for rel in PLAN['order']}
         observed_objects = {str(path) for path in BUILD.rglob('*.olean')}
-        assert set(consumed_objects) == expected_objects == observed_objects
-        assert len(expected_objects) == SOURCE_COUNT
+        require(set(consumed_objects) == expected_objects == observed_objects,
+                'Fresh object census does not match the registered project sources')
+        require(len(expected_objects) == SOURCE_COUNT,
+                'Fresh object count disagrees with the registered source count')
         record.update(status='PASS', scoped_source_acceptance=True, fresh_lean_inputs=SOURCE_COUNT,
                       selected_axiom_reports=802, ordered_report_bijection=True,
                       foundations=sorted(observed_foundations), allowed_foundations=sorted(allowed), audit_log_sha256=sha(audit_log),

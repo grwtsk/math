@@ -49,6 +49,9 @@ HEADER_STOP = frozenset({
 })
 SCOPE = "Present Git tracked plus nonignored untracked Lean sources; deleted tracked regular files are reported separately. No ignored archives, builds, or native execution."
 LIMIT = "Explicit path bans and subject-root checks are a structural lower bound; mathematical subject review is required."
+ROOT_MODULE = "GRWTSK.lean"
+CHECK_SEGMENT = "Checks"
+ROLE_SEGMENTS = {"Positive": "positive-check", "Negative": "negative-control"}
 
 
 def git_inventory(root):
@@ -289,15 +292,156 @@ def layout_issues(parts, allowed):
     return issues
 
 
-def check_paths(root, paths, tracked_regular=()):
+def source_role(relative):
+    """Classify one maintained Lean path by its physical source-set contract."""
+    if relative == ROOT_MODULE:
+        return "library"
+    parts = PurePosixPath(relative).parts
+    if len(parts) < 3 or parts[0] != "GRWTSK":
+        return None
+    if CHECK_SEGMENT not in parts:
+        return "library"
+    index = parts.index(CHECK_SEGMENT)
+    if index < 2 or parts.count(CHECK_SEGMENT) != 1 or index == len(parts) - 1:
+        return None
+    return ROLE_SEGMENTS.get(parts[index + 1], "audit-driver")
+
+
+def module_name(relative):
+    return str(PurePosixPath(relative).with_suffix("")).replace("/", ".")
+
+
+def source_set_findings(files):
+    """Check containment, module identity, imports, cycles, and public closure."""
+    findings = []
+    records = {entry["path"]: entry for entry in files}
+    modules = {}
+    folded = {}
+    for relative, entry in records.items():
+        role = entry["source_role"]
+        if role is None:
+            findings.append({"code": "unclassified-maintained-source", "path": relative,
+                             "message": "maintained Lean source is outside the canonical role layout"})
+            continue
+        module = module_name(relative)
+        if module in modules:
+            findings.append({"code": "duplicate-module", "path": relative, "module": module,
+                             "message": "duplicate exact Lean module identity"})
+        modules[module] = relative
+        folded.setdefault(module.casefold(), []).append(module)
+    for identities in folded.values():
+        if len(set(identities)) > 1:
+            for identity in sorted(set(identities)):
+                findings.append({"code": "case-folding-module-collision",
+                                 "path": modules[identity], "module": identity,
+                                 "message": "module identity collides on a case-insensitive filesystem"})
+
+    graph = {module: [] for module in modules}
+    for module, relative in modules.items():
+        role = records[relative]["source_role"]
+        for imported, line in records[relative]["imports"]:
+            if imported != "GRWTSK" and not imported.startswith("GRWTSK."):
+                continue
+            target = modules.get(imported)
+            if target is None:
+                findings.append({"code": "unresolved-local-import", "path": relative,
+                                 "line": line, "module": imported,
+                                 "message": "import has no present Git-visible maintained source"})
+                continue
+            graph[module].append(imported)
+            if role == "library" and records[target]["source_role"] != "library":
+                findings.append({"code": "library-imports-validation", "path": relative,
+                                 "line": line, "module": imported,
+                                 "message": "public library source imports a validation source"})
+
+    visiting, visited = [], set()
+    def visit(module):
+        if module in visiting:
+            cycle = visiting[visiting.index(module):] + [module]
+            findings.append({"code": "cyclic-local-import", "path": modules[module],
+                             "module": module, "message": " -> ".join(cycle)})
+            return
+        if module in visited:
+            return
+        visiting.append(module)
+        for dependency in graph[module]:
+            visit(dependency)
+        visiting.pop()
+        visited.add(module)
+    for module in sorted(graph):
+        visit(module)
+
+    reachable, pending = set(), ["GRWTSK"] if "GRWTSK" in modules else []
+    while pending:
+        module = pending.pop()
+        if module in reachable:
+            continue
+        reachable.add(module)
+        pending.extend(graph[module])
+    for module, relative in sorted(modules.items()):
+        if records[relative]["source_role"] == "library" and module not in reachable:
+            findings.append({"code": "library-module-outside-public-closure", "path": relative,
+                             "module": module,
+                             "message": "library module is not reachable from GRWTSK.lean"})
+    return findings
+
+
+def catalog_findings(root, files):
+    """Require the authoritative map to cover the exact current maintained set."""
+    path = Path(root) / "docs/math-layout.json"
+    if not path.is_file():
+        return []
+    try:
+        layout = json.loads(read_regular(root, "docs/math-layout.json"))
+        catalog = layout["active_sources"]
+    except (KeyError, TypeError, json.JSONDecodeError, UnicodeDecodeError, ValueError) as error:
+        return [{"code": "invalid-source-catalog", "path": "docs/math-layout.json",
+                 "message": str(error)}]
+    findings, indexed = [], {}
+    for entry in catalog:
+        if not isinstance(entry, dict) or not isinstance(entry.get("path"), str):
+            findings.append({"code": "invalid-source-catalog", "path": "docs/math-layout.json",
+                             "message": "active source record lacks a path"})
+            continue
+        if entry["path"] in indexed:
+            findings.append({"code": "duplicate-source-catalog-entry", "path": entry["path"],
+                             "message": "active source is cataloged more than once"})
+        indexed[entry["path"]] = entry
+    observed = {entry["path"]: entry for entry in files}
+    for relative in sorted(observed.keys() - indexed.keys()):
+        findings.append({"code": "uncataloged-maintained-source", "path": relative,
+                         "message": "present maintained Lean source is absent from active_sources"})
+    for relative in sorted(indexed.keys() - observed.keys()):
+        findings.append({"code": "stale-source-catalog-entry", "path": relative,
+                         "message": "cataloged active source is absent from the working tree"})
+    for relative in sorted(observed.keys() & indexed.keys()):
+        actual, declared = observed[relative], indexed[relative]
+        if declared.get("sha256") != actual["sha256"]:
+            findings.append({"code": "stale-source-catalog-hash", "path": relative,
+                             "message": "catalog hash does not bind the current bytes"})
+        if declared.get("source_role") != actual["source_role"]:
+            findings.append({"code": "source-role-mismatch", "path": relative,
+                             "message": "catalog role disagrees with physical role path"})
+        if declared.get("target_path") != relative:
+            findings.append({"code": "source-target-mismatch", "path": relative,
+                             "message": "catalog target is not the current canonical path"})
+        if actual["source_role"] != "library" and not declared.get("runner"):
+            findings.append({"code": "validation-without-runner", "path": relative,
+                             "message": "validation source lacks an explicit runner/outcome policy"})
+    return findings
+
+
+def check_paths(root, paths, tracked_regular=(), enforce_source_sets=False):
     allowed = set(SUBJECT_ROOTS)
     findings, files, deleted = [], [], []
     tracked_regular = set(tracked_regular)
     library_count, import_count = 0, 0
+    role_counts = {name: 0 for name in ("library", "positive-check", "negative-control", "audit-driver")}
     for relative in sorted(set(paths)):
         if not relative.endswith(".lean"):
             continue
-        library = relative.startswith("GRWTSK/")
+        role = source_role(relative)
+        library = role == "library"
         try:
             data = read_regular(root, relative)
             text = data.decode("utf-8")
@@ -312,13 +456,23 @@ def check_paths(root, paths, tracked_regular=()):
             if library:
                 library_count += 1
             continue
+        for line_number, line in enumerate(mask_lean(text).splitlines(), 1):
+            match = re.match(r"^[ \t]*(?:(?:public|private)[ \t]+)?import[ \t]+\S+[ \t]+\S+", line)
+            if match:
+                findings.append({"code": "invalid-import-command", "path": relative,
+                                 "line": line_number,
+                                 "message": "Lean import commands accept one module per command"})
         if library:
             library_count += 1
+        if relative.startswith("GRWTSK/"):
             module_parts = list(PurePosixPath(relative).with_suffix("").parts)
             for code, segment, reason in layout_issues(module_parts, allowed):
                 findings.append({"code": code, "path": relative, "segment": segment,
                                  "message": reason})
-        files.append({"path": relative, "sha256": hashlib.sha256(data).hexdigest()})
+        if role in role_counts:
+            role_counts[role] += 1
+        files.append({"path": relative, "sha256": hashlib.sha256(data).hexdigest(),
+                      "source_role": role, "imports": entries})
         for module, line in entries:
             if module == "GRWTSK" or module.startswith("GRWTSK."):
                 import_count += 1
@@ -326,14 +480,19 @@ def check_paths(root, paths, tracked_regular=()):
                     findings.append({"code": "forbidden-import", "path": relative,
                                      "line": line, "module": module, "segment": segment,
                                      "message": reason, "layout_code": code})
+    if enforce_source_sets:
+        findings.extend(source_set_findings(files))
+        findings.extend(catalog_findings(root, files))
     findings.sort(key=lambda entry: (entry["path"], entry.get("line", 0), entry["code"],
                                      entry.get("module", ""), entry.get("segment", "")))
     return {"schema_version": 1, "status": "FAIL" if findings else "PASS",
             "scope": SCOPE, "limit": LIMIT, "subject_review_required": True,
             "allowed_subject_roots": sorted(allowed), "library_module_count": library_count,
             "lean_source_count": len(files), "project_import_count": import_count,
+            "source_role_counts": role_counts,
             "deleted_tracked_regular_paths": deleted,
-            "files": files, "findings": findings}
+            "files": [{key: value for key, value in entry.items() if key != "imports"}
+                      for entry in files], "findings": findings}
 
 
 def ignored_fixture_directory(root):
@@ -388,7 +547,8 @@ def self_test(root):
         "GRWTSK/Algebra/OrderedProduct.lean": "import Mathlib\n",
         "GRWTSK/Analysis/Integrals/CauchySchwarz.lean": "import GRWTSK.Algebra.OrderedProduct\n",
         "GRWTSK/NumberTheory/Zeta/Target.lean": "namespace GRWTSK.RiemannHypothesis\nend GRWTSK.RiemannHypothesis\n",
-        "GRWTSK.lean": "public import GRWTSK.Analysis.Integrals.CauchySchwarz\n",
+        "GRWTSK.lean": ("public import GRWTSK.Analysis.Integrals.CauchySchwarz\n"
+                        "public import GRWTSK.NumberTheory.Zeta.Target\n"),
     })
     case("all-approved-subject-roots", {
         "GRWTSK/" + subject + "/Basic.lean": "import Mathlib\n"
@@ -421,8 +581,8 @@ def self_test(root):
             ("GRWTSK.ProofHorizon", 3), ("GRWTSK.ProofHorizon", 3)]:
         raise AssertionError("import module/line preservation")
     passed.append("import-module-line-preservation")
-    case("file-symlink", {"outside.lean": "import Mathlib\n"},
-         ("source-unavailable",), (("GRWTSK/Analysis/Link.lean", "../../outside.lean"),))
+    case("file-symlink", {"outside.txt": "import Mathlib\n"},
+         ("source-unavailable",), (("GRWTSK/Analysis/Link.lean", "../../outside.txt"),))
     case("broken-symlink-remains-error", {}, ("source-unavailable",),
          (("GRWTSK/Analysis/Link.lean", "../../missing.lean"),),
          ("GRWTSK/Analysis/Link.lean",))
@@ -473,6 +633,57 @@ def self_test(root):
     case("new-untracked-legacy-source-rejected", {
         "GRWTSK/Analysis/CCC/New.lean": "import Mathlib\n",
     }, ("forbidden-layout-name",))
+    complete = fixture / "source-set-completeness"
+    (complete / "GRWTSK/Analysis/Checks/Negative").mkdir(parents=True)
+    (complete / "GRWTSK/Analysis").mkdir(exist_ok=True)
+    (complete / "GRWTSK.lean").write_text("import GRWTSK.Analysis.Public\nimport GRWTSK.Analysis.Checks.Negative.Bad\n")
+    (complete / "GRWTSK/Analysis/Public.lean").write_text("import GRWTSK.Analysis.Missing\n")
+    (complete / "GRWTSK/Analysis/Omitted.lean").write_text("import Mathlib\n")
+    (complete / "GRWTSK/Analysis/Checks/Negative/Bad.lean").write_text("import GRWTSK.Analysis.Public\n")
+    (complete / "escaped.lean").write_text("import Mathlib\n")
+    paths = sorted(str(path.relative_to(complete)) for path in complete.rglob("*.lean"))
+    report = check_paths(complete, paths, enforce_source_sets=True)
+    required = {"unclassified-maintained-source", "unresolved-local-import",
+                "library-imports-validation", "library-module-outside-public-closure"}
+    if not required <= {entry["code"] for entry in report["findings"]}:
+        raise AssertionError("source-set containment and closure fixtures were not detected")
+    passed.append("source-set-containment-imports-and-public-closure")
+    cyclic = fixture / "source-set-cycle"
+    (cyclic / "GRWTSK/Analysis").mkdir(parents=True)
+    (cyclic / "GRWTSK.lean").write_text("import GRWTSK.Analysis.A\n")
+    (cyclic / "GRWTSK/Analysis/A.lean").write_text("import GRWTSK.Analysis.B\n")
+    (cyclic / "GRWTSK/Analysis/B.lean").write_text("import GRWTSK.Analysis.A\n")
+    paths = sorted(str(path.relative_to(cyclic)) for path in cyclic.rglob("*.lean"))
+    report = check_paths(cyclic, paths, enforce_source_sets=True)
+    if "cyclic-local-import" not in {entry["code"] for entry in report["findings"]}:
+        raise AssertionError("local import cycle fixture was not detected")
+    passed.append("source-set-cycle")
+    malformed = fixture / "multiple-modules-in-one-import"
+    (malformed / "GRWTSK/Analysis").mkdir(parents=True)
+    (malformed / "GRWTSK.lean").write_text(
+        "import GRWTSK.Analysis.A GRWTSK.Analysis.B\n")
+    (malformed / "GRWTSK/Analysis/A.lean").write_text("import Mathlib\n")
+    (malformed / "GRWTSK/Analysis/B.lean").write_text("import Mathlib\n")
+    paths = sorted(str(path.relative_to(malformed)) for path in malformed.rglob("*.lean"))
+    report = check_paths(malformed, paths)
+    if "invalid-import-command" not in {entry["code"] for entry in report["findings"]}:
+        raise AssertionError("multiple modules in one import command were not rejected")
+    passed.append("single-module-import-command")
+    catalog_root = fixture / "catalog-completeness"
+    (catalog_root / "GRWTSK/Analysis").mkdir(parents=True)
+    (catalog_root / "docs").mkdir()
+    (catalog_root / "GRWTSK.lean").write_text("import GRWTSK.Analysis.A\n")
+    (catalog_root / "GRWTSK/Analysis/A.lean").write_text("import Mathlib\n")
+    (catalog_root / "docs/math-layout.json").write_text(json.dumps({"active_sources": [{
+        "path": "GRWTSK.lean", "sha256": hashlib.sha256(
+            (catalog_root / "GRWTSK.lean").read_bytes()).hexdigest(),
+        "source_role": "library", "target_path": "GRWTSK.lean", "runner": "lake build GRWTSK",
+    }]}))
+    paths = sorted(str(path.relative_to(catalog_root)) for path in catalog_root.rglob("*.lean"))
+    report = check_paths(catalog_root, paths, enforce_source_sets=True)
+    if "uncataloged-maintained-source" not in {entry["code"] for entry in report["findings"]}:
+        raise AssertionError("catalog omission fixture was not detected")
+    passed.append("catalog-omission")
     bad_fixture = fixture / "new-untracked-legacy-source-rejected"
     bad_inventory = {"paths": ["GRWTSK/Analysis/CCC/New.lean"], "tracked_regular": []}
     with unittest.mock.patch(__name__ + ".git_inventory", return_value=bad_inventory):
@@ -528,7 +739,8 @@ def main(argv=None):
                 print("Receipt: " + str(receipt))
             return 0
         inventory = git_inventory(root)
-        report = check_paths(root, inventory["paths"], inventory["tracked_regular"])
+        report = check_paths(root, inventory["paths"], inventory["tracked_regular"],
+                             enforce_source_sets=True)
         if inventory != git_inventory(root):
             report["findings"].append({"code": "inventory-changed", "path": "",
                                       "message": "Git-visible inventory changed during inspection"})
