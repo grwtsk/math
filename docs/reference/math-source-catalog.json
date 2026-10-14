@@ -19,7 +19,7 @@
       "bytes": 2148,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "67b05b22afaad67cda25e718e64b16d6b7c05953",
       "imports": [
         "Mathlib"
       ],
@@ -75,7 +75,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "Algebra",
       "target_path": "GRWTSK/Algebra/Ring/FourTermDecomposition.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -83,7 +83,7 @@
       "bytes": 2520,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "3dd7e396d8597bcc402633b0b689818048bd08cf",
       "imports": [
         "GRWTSK.Analysis.Asymptotics.MassWeightedRecurrence",
         "Mathlib"
@@ -137,7 +137,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/Asymptotics/DyadicNormBudget.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -145,7 +145,7 @@
       "bytes": 4775,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "ff107a640f8de878af303080eb79cfee21c03b05",
       "imports": [
         "GRWTSK.Analysis.Asymptotics.SublinearDyadic",
         "GRWTSK.Analysis.Inequalities.ResidualGrowthComparison",
@@ -214,7 +214,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/Asymptotics/LogarithmicGrowth.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -222,7 +222,7 @@
       "bytes": 2216,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "500293309d0e6218fe36a185a03051e94ffc7c1e",
       "imports": [
         "Mathlib"
       ],
@@ -289,7 +289,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/Asymptotics/SquareRootResidualIteration.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -297,7 +297,7 @@
       "bytes": 7457,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "6487c8bf8706f1903e762ebc7eb78cd3a6736a12",
       "imports": [
         "Mathlib"
       ],
@@ -394,7 +394,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/Asymptotics/SublinearDyadic.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -402,7 +402,7 @@
       "bytes": 3585,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "fd5d2619aca829a171bf6e2e177201c13593187b",
       "imports": [
         "Mathlib.Analysis.Analytic.Order",
         "Mathlib.Tactic"
@@ -453,7 +453,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/Complex/AnalyticLinearODE.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -461,7 +461,7 @@
       "bytes": 3424,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "e154d822f07df79ed7cdf89652476797ae9e4ef1",
       "imports": [
         "Mathlib"
       ],
@@ -561,7 +561,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/FiniteSum/DyadicVariance.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -569,7 +569,7 @@
       "bytes": 6099,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "0f761bc780a896a85ca824a2794a6e7d6e006b02",
       "imports": [
         "GRWTSK.Analysis.FiniteSum.DyadicVariance"
       ],
@@ -690,7 +690,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/FiniteSum/TentReadout.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -698,7 +698,7 @@
       "bytes": 2199,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "3711600e8d6c0b1e429e302b4e9a7c35ac5d119f",
       "imports": [
         "Mathlib"
       ],
@@ -755,7 +755,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/FiniteSum/ThresholdEnergy.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -763,7 +763,7 @@
       "bytes": 2096,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "33e8ba844c468404fb49834bb9d569f8320bbfe0",
       "imports": [
         "Mathlib"
       ],
@@ -834,7 +834,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/FiniteSum/WeightedCellRefinement.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -842,7 +842,7 @@
       "bytes": 2948,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "4cd23145fef1002a2610d5ab64379df7ef74a0a3",
       "imports": [
         "GRWTSK.Analysis.Fourier.PrimePhaseMultiplierBounds",
         "Mathlib"
@@ -910,7 +910,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/Fourier/PrimePhaseLargeValueAdapter.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -918,7 +918,7 @@
       "bytes": 6063,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "6d730f4500359faf5fa959927ee55596fbdeae6e",
       "imports": [
         "GRWTSK.Analysis.GreenKernel.UnitInterval"
       ],
@@ -1051,7 +1051,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/GreenKernel/TailAugmentation.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -1059,7 +1059,7 @@
       "bytes": 6232,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "7b42632533c01b85991751eb671d03b0d6d7a66b",
       "imports": [
         "Mathlib"
       ],
@@ -1169,7 +1169,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/GreenKernel/UnitInterval.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -1177,7 +1177,7 @@
       "bytes": 4021,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "fa820e7838416c77fc86c1ffffb0e7dd448769fc",
       "imports": [
         "Mathlib"
       ],
@@ -1268,7 +1268,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/Inequalities/AdaptiveResidualBudget.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -1276,7 +1276,7 @@
       "bytes": 3032,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "c0fe0549484372a5720d5bbdbc40211d7665b444",
       "imports": [
         "Mathlib"
       ],
@@ -1341,7 +1341,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/Inequalities/CenteredCubicMoment.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -1349,7 +1349,7 @@
       "bytes": 3517,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "f6a9706c3d9ba0b36bac5be42b90d10ada9a10e0",
       "imports": [
         "Mathlib"
       ],
@@ -1425,7 +1425,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/Inequalities/ResidualEnclosure.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -1433,7 +1433,7 @@
       "bytes": 3442,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "e0343508b3c7fb4b1daffd3b494a4b1b6a96d2f0",
       "imports": [
         "GRWTSK.Analysis.Asymptotics.SublinearDyadic",
         "GRWTSK.Analysis.Inequalities.CenteredCubicMoment",
@@ -1494,7 +1494,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/Inequalities/ResidualGrowthComparison.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -1502,7 +1502,7 @@
       "bytes": 1807,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "7cab3a40c732e1e985deea9fcffcee771cfe2e51",
       "imports": [
         "Mathlib"
       ],
@@ -1563,7 +1563,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/Inequalities/SquaredNormBudget.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -1571,7 +1571,7 @@
       "bytes": 2272,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "d0964a28b882da898c4af7c3f562d7f85e7e66ae",
       "imports": [
         "Mathlib"
       ],
@@ -1618,7 +1618,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/Inequalities/SquaredNormErrorBounds.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "grwtsk contributors copyright and research direction; ChatGPT proof-source assistance. Codex local mathematical intake. Original headers retained byte-exact.",
@@ -1626,7 +1626,7 @@
       "bytes": 1751,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "e942da4f07ea84742f271a48d7b71fa44b845f5c",
       "imports": [
         "Mathlib"
       ],
@@ -1683,7 +1683,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/Inequalities/SquaredSumBounds.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -1691,7 +1691,7 @@
       "bytes": 3737,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "dbceabf2747cb44b039432f4c0654cdb34fccde4",
       "imports": [
         "Mathlib"
       ],
@@ -1759,7 +1759,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/Inequalities/TriangularBlock.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -1767,7 +1767,7 @@
       "bytes": 1632,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "0ef8c8e9bca8cc5f463130ac4f64f3a4efbbc7fc",
       "imports": [
         "GRWTSK.Analysis.Inequalities.ResidualEnclosure",
         "Mathlib"
@@ -1819,7 +1819,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/Inequalities/TwoHeightEnclosures.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -1827,7 +1827,7 @@
       "bytes": 1317,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "9a7bbb027504f5c8b0ccc5926edd15ac4d912e20",
       "imports": [
         "GRWTSK.Analysis.InnerProductSpace.WeightedSchurBounds",
         "GRWTSK.LinearAlgebra.Matrix.ToeplitzHankel"
@@ -1871,7 +1871,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/InnerProductSpace/HankelGramBounds.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -1879,7 +1879,7 @@
       "bytes": 5104,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "ca694f5f35ba82d679ca8ccb2cdaca9b9d6d514d",
       "imports": [
         "GRWTSK.Analysis.InnerProductSpace.SignedWindowPacketCertificates",
         "GRWTSK.Analysis.Integration.QuadraticRootTransport"
@@ -1938,7 +1938,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/InnerProductSpace/SignedWindowRootBounds.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -1946,7 +1946,7 @@
       "bytes": 4419,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "bdafa808c3ecbe931e89378d03da40c0c70d6e82",
       "imports": [
         "GRWTSK.Analysis.Inequalities.ResidualEnclosure",
         "Mathlib"
@@ -2040,7 +2040,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/InnerProductSpace/VariationalResidual.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -2048,7 +2048,7 @@
       "bytes": 6003,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "7ea6ee99e97bcaf8ee6dbf6d7398e46dd49c72ed",
       "imports": [
         "Mathlib"
       ],
@@ -2160,7 +2160,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/Integration/AffineWeightedTransport.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -2168,7 +2168,7 @@
       "bytes": 3061,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "d4041dc3bfed3895c4a36567ee547ffdaad03c88",
       "imports": [
         "GRWTSK.Analysis.Inequalities.ResidualEnclosure",
         "Mathlib"
@@ -2217,7 +2217,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/Integration/QuadraticReadoutBound.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -2225,7 +2225,7 @@
       "bytes": 4153,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "cc63a36f6c226d7294a76030d88901d9f8d0dfde",
       "imports": [
         "Mathlib"
       ],
@@ -2295,7 +2295,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/Integration/QuadraticRootTransport.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -2303,7 +2303,7 @@
       "bytes": 3335,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "339dd970b1ff548587f3ce2418bdba74aec26309",
       "imports": [
         "GRWTSK.Analysis.GreenKernel.UnitInterval",
         "Mathlib"
@@ -2402,7 +2402,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/Integration/UnitIntervalPrimitives.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -2410,7 +2410,7 @@
       "bytes": 3078,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "ac54c0eb7dadbae89584054dd67e3605c8602bf5",
       "imports": [
         "Mathlib"
       ],
@@ -2483,7 +2483,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/MellinTransform/DyadicBounds.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -2491,7 +2491,7 @@
       "bytes": 6046,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "49095d368160c3bec1af4c7dcc717258ced817ce",
       "imports": [
         "GRWTSK.Analysis.MellinTransform.PositiveCoordinates",
         "GRWTSK.Analysis.Series.DyadicPartition",
@@ -2604,7 +2604,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/MellinTransform/DyadicIntegralSeries.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -2612,7 +2612,7 @@
       "bytes": 4912,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "3e214dd3e0e1e0698d0bb8b01332f59d143b6ca1",
       "imports": [
         "Mathlib"
       ],
@@ -2725,7 +2725,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/MellinTransform/PositiveCoordinates.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -2733,7 +2733,7 @@
       "bytes": 4878,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "b94e499313169c96d9a0f86149bbbae4d63fc626",
       "imports": [
         "GRWTSK.Analysis.InnerProductSpace.VariationalResidual",
         "Mathlib"
@@ -2805,7 +2805,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/NormedSpace/IntertwiningResidual.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -2813,7 +2813,7 @@
       "bytes": 2838,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "24363774f7dfa2db4770663c655ce526ffcc1bdc",
       "imports": [
         "Mathlib"
       ],
@@ -2876,7 +2876,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/NormedSpace/NormTransport.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -2884,7 +2884,7 @@
       "bytes": 3315,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "0c2124ed38b8c7a0926c88cf4e72219745a15e7a",
       "imports": [
         "GRWTSK.Analysis.Asymptotics.SublinearDyadic",
         "Mathlib"
@@ -2944,7 +2944,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/NormedSpace/SimilarityReconstruction.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -2952,7 +2952,7 @@
       "bytes": 1326,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "f132f94d895494ba7ba31154beb1fd771b0cffda",
       "imports": [
         "Mathlib"
       ],
@@ -3013,7 +3013,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/Resolvent/ScreenAlgebra.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -3021,7 +3021,7 @@
       "bytes": 2271,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "0fa8980454c906f5c176d174787ad467829a66fb",
       "imports": [
         "Mathlib"
       ],
@@ -3082,7 +3082,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/Resolvent/ScreenBudget.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -3090,7 +3090,7 @@
       "bytes": 6094,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "55527b550a701f85062763c73d91c075c856f6f4",
       "imports": [
         "Mathlib"
       ],
@@ -3247,7 +3247,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/Series/DyadicPartition.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -3255,7 +3255,7 @@
       "bytes": 1618,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "07765a37f52b4dfb4f35f32e66467de772490666",
       "imports": [
         "GRWTSK.Analysis.Spectral.TwoHeightMoments",
         "Mathlib"
@@ -3312,7 +3312,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/Spectral/LowMassSpecifications.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -3320,7 +3320,7 @@
       "bytes": 3547,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "00cad7e86cc7238c9cf919d3084991ae7106edde",
       "imports": [
         "GRWTSK.Analysis.Inequalities.ResidualEnclosure",
         "Mathlib"
@@ -3404,7 +3404,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/Spectral/TwoHeightMoments.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -3412,7 +3412,7 @@
       "bytes": 4180,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "12bf9f7d4d52c2c3e1ae5edc5d1cd5fb85d134cf",
       "imports": [
         "Mathlib"
       ],
@@ -3524,7 +3524,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "LinearAlgebra",
       "target_path": "GRWTSK/LinearAlgebra/Matrix/ToeplitzHankel.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "grwtsk contributors copyright and research direction; ChatGPT proof-source assistance. Codex local mathematical intake. Original headers retained byte-exact.",
@@ -3532,7 +3532,7 @@
       "bytes": 2445,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "d9f7847ebade0dcac392795ddfdff8f64916dfa4",
       "imports": [
         "Mathlib"
       ],
@@ -3614,7 +3614,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "LinearAlgebra",
       "target_path": "GRWTSK/LinearAlgebra/QuadraticForm/BinaryFormIdentities.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -3622,7 +3622,7 @@
       "bytes": 3209,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "86d1cc71225dd9d8adffdd66af8983ec47062786",
       "imports": [
         "Mathlib"
       ],
@@ -3689,7 +3689,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "LinearAlgebra",
       "target_path": "GRWTSK/LinearAlgebra/QuadraticForm/OrderedTransport.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -3697,7 +3697,7 @@
       "bytes": 3411,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "50b14c18fe7cec266f903a1221d79d15e92fa41e",
       "imports": [
         "Mathlib"
       ],
@@ -3795,7 +3795,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "MeasureTheory",
       "target_path": "GRWTSK/MeasureTheory/Integral/Centering.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -3803,7 +3803,7 @@
       "bytes": 3428,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "ac3f9e017778684c435e77d156ee838623073d1d",
       "imports": [
         "Mathlib"
       ],
@@ -3885,7 +3885,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "NumberTheory",
       "target_path": "GRWTSK/NumberTheory/BinaryDigits/Carry.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -3893,7 +3893,7 @@
       "bytes": 1931,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "13d25f8516166bb83c03c5cd78dc2cb8e739ba59",
       "imports": [
         "Mathlib"
       ],
@@ -3954,7 +3954,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "NumberTheory",
       "target_path": "GRWTSK/NumberTheory/Powers/OctaveSeparation.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -3962,7 +3962,7 @@
       "bytes": 8407,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "8b541b8b104a8b39549ecd63618f2474746909ce",
       "imports": [
         "GRWTSK.Analysis.Integration.QuadraticReadoutBound",
         "GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy",
@@ -4088,7 +4088,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "NumberTheory",
       "target_path": "GRWTSK/NumberTheory/VonMangoldt/CenteredReadout.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -4096,7 +4096,7 @@
       "bytes": 7882,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "92b96c53b769711d52ba60dd571594b83e941c8b",
       "imports": [
         "GRWTSK.NumberTheory.VonMangoldt.CenteredReadout",
         "Mathlib"
@@ -4209,7 +4209,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "NumberTheory",
       "target_path": "GRWTSK/NumberTheory/VonMangoldt/ComplexReadout.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -4217,7 +4217,7 @@
       "bytes": 9140,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "faaef84a44f9c5e052bb76050453c2c2ce89317d",
       "imports": [
         "GRWTSK.Analysis.GreenKernel.UnitInterval",
         "GRWTSK.Analysis.Integration.UnitIntervalPrimitives",
@@ -4419,7 +4419,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "NumberTheory",
       "target_path": "GRWTSK/NumberTheory/VonMangoldt/DyadicDiscrepancy.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -4427,7 +4427,7 @@
       "bytes": 6324,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "73d8f8d7bd5f04e090e38ac9d8b67a7bbc781122",
       "imports": [
         "GRWTSK.Analysis.MellinTransform.DyadicIntegralSeries",
         "GRWTSK.Analysis.Series.DyadicPartition",
@@ -4541,7 +4541,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "NumberTheory",
       "target_path": "GRWTSK/NumberTheory/VonMangoldt/DyadicEulerIdentification.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -4549,7 +4549,7 @@
       "bytes": 8354,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "98b3da6a45fecdc2fd773c1a47cf22b8ac89a18c",
       "imports": [
         "GRWTSK.NumberTheory.VonMangoldt.MellinBlockHolomorphy",
         "GRWTSK.NumberTheory.Zeta.DyadicGreenSpecifications",
@@ -4638,7 +4638,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "NumberTheory",
       "target_path": "GRWTSK/NumberTheory/VonMangoldt/DyadicMellinConvergence.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -4646,7 +4646,7 @@
       "bytes": 7916,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "8b49a663a3623901843df109e51e9fc8eb648039",
       "imports": [
         "GRWTSK.NumberTheory.VonMangoldt.CenteredReadout",
         "Mathlib"
@@ -4776,7 +4776,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "NumberTheory",
       "target_path": "GRWTSK/NumberTheory/VonMangoldt/GreenEnergyFormula.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -4784,7 +4784,7 @@
       "bytes": 6901,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "139257d5644ebfd9a63eb3fe961d826a696b12b8",
       "imports": [
         "GRWTSK.Analysis.FiniteSum.DyadicVariance",
         "GRWTSK.NumberTheory.VonMangoldt.GreenEnergyFormula"
@@ -4894,7 +4894,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "NumberTheory",
       "target_path": "GRWTSK/NumberTheory/VonMangoldt/LatticeCellSource.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -4902,7 +4902,7 @@
       "bytes": 4576,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "b5ead419a078d65e76a137d6c419ac1896753ea5",
       "imports": [
         "GRWTSK.NumberTheory.VonMangoldt.LatticeCellSource"
       ],
@@ -4984,7 +4984,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "NumberTheory",
       "target_path": "GRWTSK/NumberTheory/VonMangoldt/LatticeGreenReconstruction.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -4992,7 +4992,7 @@
       "bytes": 5126,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "faecdaca0f3ae8096afb7d151eb54765e1bbfd44",
       "imports": [
         "GRWTSK.NumberTheory.VonMangoldt.MellinReadout",
         "Mathlib"
@@ -5050,7 +5050,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "NumberTheory",
       "target_path": "GRWTSK/NumberTheory/VonMangoldt/MellinBlockHolomorphy.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -5058,7 +5058,7 @@
       "bytes": 9437,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "d76d73fb27d9992765fd63a7fed5e5715f3f53cb",
       "imports": [
         "GRWTSK.Analysis.MellinTransform.PositiveCoordinates",
         "GRWTSK.NumberTheory.VonMangoldt.ComplexReadout",
@@ -5187,7 +5187,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "NumberTheory",
       "target_path": "GRWTSK/NumberTheory/VonMangoldt/MellinReadout.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -5195,7 +5195,7 @@
       "bytes": 9933,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "c8c50e5fc52f7878b7da5e30926ff3a3e4af5dd0",
       "imports": [
         "GRWTSK.Analysis.GreenKernel.TailAugmentation",
         "GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy"
@@ -5387,7 +5387,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "NumberTheory",
       "target_path": "GRWTSK/NumberTheory/VonMangoldt/PrimeTailReturn.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -5395,7 +5395,7 @@
       "bytes": 5164,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "c27194344df8122e39e1a917d80d52d6744d8619",
       "imports": [
         "GRWTSK.Analysis.Asymptotics.SublinearDyadic",
         "GRWTSK.Analysis.NormedSpace.SimilarityReconstruction",
@@ -5535,7 +5535,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "NumberTheory",
       "target_path": "GRWTSK/NumberTheory/Zeta/CompletedQuotientSource.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -5543,7 +5543,7 @@
       "bytes": 2004,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "4c852153a097d181cdadc90cc98bd305aa13e07e",
       "imports": [
         "GRWTSK.NumberTheory.Zeta.GreenMellinContinuation",
         "GRWTSK.NumberTheory.Zeta.LogDerivativeZeroExclusion"
@@ -5592,7 +5592,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "NumberTheory",
       "target_path": "GRWTSK/NumberTheory/Zeta/DyadicGreenReturn.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -5600,7 +5600,7 @@
       "bytes": 2772,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "57dd5238f5e633e5c7863e1d2f6dbfba66be99aa",
       "imports": [
         "GRWTSK.Analysis.MellinTransform.DyadicBounds",
         "GRWTSK.NumberTheory.VonMangoldt.GreenEnergyFormula",
@@ -5681,7 +5681,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "NumberTheory",
       "target_path": "GRWTSK/NumberTheory/Zeta/DyadicGreenSpecifications.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -5689,7 +5689,7 @@
       "bytes": 2610,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "ab8d66c62df845988b554d486b5bbbc8bf9676ad",
       "imports": [
         "GRWTSK.NumberTheory.VonMangoldt.DyadicEulerIdentification",
         "GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence"
@@ -5741,7 +5741,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "NumberTheory",
       "target_path": "GRWTSK/NumberTheory/Zeta/GreenMellinContinuation.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -5749,7 +5749,7 @@
       "bytes": 5168,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "3d4b5b238893d73cc13959efb9c1743e07ee294f",
       "imports": [
         "GRWTSK.Analysis.Complex.AnalyticLinearODE",
         "GRWTSK.NumberTheory.Zeta.PoleRemovedSource"
@@ -5815,7 +5815,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "NumberTheory",
       "target_path": "GRWTSK/NumberTheory/Zeta/LogDerivativeZeroExclusion.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "attribution": "Original source credit retained verbatim; mathematical origin not assigned by custody.",
@@ -5823,7 +5823,7 @@
       "bytes": 7444,
       "candidate_source_push_authorized": true,
       "declaration_inventory_method": "source syntax only; candidate has no theorem-admission or replay status",
-      "git_blob": null,
+      "git_blob": "37ad75cd4d011b99ab62db76db06909665258439",
       "imports": [
         "Mathlib.Analysis.Analytic.Order",
         "Mathlib.Analysis.SpecialFunctions.Gamma.Beta",
@@ -5992,7 +5992,7 @@
       "status": "CANDIDATE_SOURCE_ONLY",
       "subject": "NumberTheory",
       "target_path": "GRWTSK/NumberTheory/Zeta/PoleRemovedSource.lean",
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     }
   ],
   "counts_by_operation": {
@@ -6026,7 +6026,7 @@
   "sources": [
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": "db50cb7562e77810befd65e502c8fc17a832cbf1",
+      "git_blob": "27e45b3448f78dc6499f2fb0698eb51cac5d1904",
       "imports": [
         "GRWTSK.Algebra.BigOperators.OrderedSquare",
         "GRWTSK.Algebra.BigOperators.QuadraticCounterexample",
@@ -6540,7 +6540,7 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "68e16b00f3026df81c5ee4d7ee9cce256db09082ff0e9913f3f7342078e0dde8"
       },
-      "working_tree_state": "tracked-modified"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -37125,7 +37125,7 @@
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "f04afae3b6af891d0dfbae9fb4b659c5135e1804",
       "imports": [
         "GRWTSK.NumberTheory.Moebius.FiniteEulerProduct",
         "Lean"
@@ -37158,7 +37158,7 @@
         "lean": "not-run-for-current-source-and-local-import-closure",
         "source_sha256": "e75fa9f8555a89d23a8b0e1f7752d332ab698780f62954de1b0b8218ac638221"
       },
-      "working_tree_state": "untracked-relocated"
+      "working_tree_state": "tracked-renamed"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -39844,7 +39844,7 @@
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "0c1e9b4ce317a92351094cebfa3325490179952e",
       "imports": [
         "Mathlib.Algebra.BigOperators.Ring.Finset",
         "Mathlib.NumberTheory.ArithmeticFunction.Moebius",
@@ -39908,11 +39908,11 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "f43d20140bcc365829454e0b9a715243121d78fda366c0f8b22a3fd80da49341"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "e09766ed11962506392cb714510b2e8fc0ac17ba",
       "imports": [
         "GRWTSK.NumberTheory.Moebius.FiniteEulerProduct"
       ],
@@ -39944,11 +39944,11 @@
         "lean": "not-run-for-current-source-and-local-import-closure",
         "source_sha256": "f557f6427e8e21b0d922d3fec460f4101ffd4dc2f82d98d1fe42b9d5ee3129b0"
       },
-      "working_tree_state": "untracked-relocated"
+      "working_tree_state": "tracked-renamed"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "485755d3165a3e292120f4bec34d2bc0a53bdeea",
       "imports": [
         "GRWTSK.NumberTheory.Moebius.FiniteEulerProduct"
       ],
@@ -39980,7 +39980,7 @@
         "lean": "not-run-for-current-source-and-local-import-closure",
         "source_sha256": "7bf45809e88e44aacf618e99f968db8a34e7863f6f8bd05b08d42eea697a16d8"
       },
-      "working_tree_state": "untracked-relocated"
+      "working_tree_state": "tracked-renamed"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
