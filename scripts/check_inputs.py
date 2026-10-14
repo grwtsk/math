@@ -40,9 +40,13 @@ for section in retired_sections:
    raise RuntimeError("retired documentation target is unavailable or unsafe: "+target)
 present_manifest_files=sorted(set(manifest["files"])-set(missing_manifest_files))
 active_paths={entry["path"] for entry in layout["active_sources"]}
-fixture_manifest_files=sorted(set(present_manifest_files)|active_paths)
+candidate_paths={entry["path"] for entry in layout.get("candidate_sources",[])}
+candidate_intake_path="evidence/source-intake.json"
+fixture_manifest_files=sorted(set(present_manifest_files)|active_paths|candidate_paths|{candidate_intake_path})
 if not active_paths<=set(fixture_manifest_files):
  raise RuntimeError("hostile fixture manifest omits active Lean sources")
+if not candidate_paths<=set(fixture_manifest_files):
+ raise RuntimeError("hostile fixture manifest omits candidate-only Lean sources")
 for name in fixture_manifest_files:
  source=root/name
  if source.is_symlink() or not source.is_file():
@@ -96,7 +100,9 @@ receipt=dict(schema_version=2,
  retained_manifest_missing_path_policy="missing paths must equal the exact documentation_membership_reconciliation.retired ledger",
  retained_manifest_present_file_count=len(present_manifest_files),
  added_active_source_count=len(active_paths-set(present_manifest_files)),
+ added_candidate_source_count=len(candidate_paths-set(present_manifest_files)),
  active_source_count=len(active_paths),
+ candidate_source_count=len(candidate_paths),
  fixture_manifest_file_count=len(fixture_manifest_files),
  fixture_manifest_sha256=fixture_manifest_sha256,
  fixture_manifest_files=fixture_manifest_hashes,
