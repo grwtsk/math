@@ -2,7 +2,7 @@
   "schema": "mathematical-documentation-inventory-v1",
   "scope": "Current local source paths and maintained documentation metadata; not theorem acceptance",
   "input_sha256": {
-    "docs/reference/documentation-layout.json": "1a1aaed9c42c5c5b0e8d7031883a0682fb629788eda6953145b7ea40846029cd",
+    "docs/reference/documentation-layout.json": "722d352886a6b93fe2e3bbf83cd54bae7e8620409bdacb39160cf5b8f9446e61",
     "docs/reference/results.json": "8ce68ff3a40612a47ec0d7c57531628fe12a8a7c1408b68e6213cbbc873f1c17",
     "evidence/source-intake.json": "975160460f769a46027efb78359df82b1f366e12b4c2346f070abfce8a667755",
     "lake-manifest.json": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
