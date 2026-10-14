@@ -95,10 +95,10 @@ def replay(args):
     for rel in RELS:
         body = (ROOT / rel).read_bytes()
         hashes[rel] = digest(body)
-        destination = source / rel
-        destination.parent.mkdir(parents=True, exist_ok=True)
-        destination.write_bytes(body)
-        destination.chmod(0o444)
+        frozen_destination = source / rel
+        frozen_destination.parent.mkdir(parents=True, exist_ok=True)
+        frozen_destination.write_bytes(body)
+        frozen_destination.chmod(0o444)
     require(not re.search(r"^import GRWTSK\.", (source / RELS[0]).read_text(), re.M), "unexpected project dependency")
     cache = subprocess.check_output(["lake", "env", "printenv", "LEAN_PATH"], cwd=ROOT, text=True).strip()
     cache = os.pathsep.join(p for p in cache.split(os.pathsep)

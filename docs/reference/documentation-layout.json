@@ -3161,7 +3161,7 @@
       "status": "fresh-selected",
       "evidence": "evidence/NumberTheory/Moebius/finite-euler-product-checks-current-2026-10-14.json",
       "verification_scope": "One immutable Mathlib-only project source, four public theorems and six complete owned declarations; trust zero, fatal warnings, standard transitive axioms, and two measured statement-reuse rejections. Pinned dependency objects reused; no whole-library acceptance or independent human review.",
-      "scoped_native_receipt_sha256": "e3df0b4fc5e2a57f54e0389322eaf73d72ac104687ac3188d2ce58cb655a42a3",
+      "scoped_native_receipt_sha256": "0c6067fd56aa7b23a0b5fa789bbc1a45f3575426b8596d14e40aa6e6d90f03ce",
       "contribution": {
         "human_mathematical_direction": "R.A. Jacob Martone",
         "formalization_and_documentation_assistance": "OpenAI Codex",
