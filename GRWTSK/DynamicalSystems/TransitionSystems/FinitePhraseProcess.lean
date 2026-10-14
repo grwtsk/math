@@ -530,6 +530,64 @@ theorem transport_interpreter_correspondence
       interpret (lowerTransportOperation operation) phrase := by
   rfl
 
+/-! The transport interpreter above records the legacy single-core projection.
+The executable process below carries the finite quoted syntax, ordered
+components, and projected observations explicitly, so quotation and composition
+are observable operations rather than identity cases. -/
+
+structure ExecutableProcessState where
+  current : PhraseCore
+  quotedCore : Option String
+  components : List PhraseCore
+  projected : Option FrameRoleObservations
+deriving DecidableEq, Repr
+
+def initialProcessState (phrase : PhraseCore) : ExecutableProcessState where
+  current := phrase
+  quotedCore := none
+  components := [phrase]
+  projected := none
+
+inductive ExecutableProcessOp where
+  | quoteSelfCore
+  | reconstruct
+  | applyClarification
+  | compose (right : PhraseCore) (separator : String)
+  | project
+deriving DecidableEq, Repr
+
+def executeProcess : ExecutableProcessOp → ExecutableProcessState → ExecutableProcessState
+  | .quoteSelfCore, state =>
+      { state with quotedCore := some pilotStructuralQuine.quotedCore }
+  | .reconstruct, state =>
+      { state with current := reconstruct (observeFrameRole state.current) }
+  | .applyClarification, state =>
+      { state with current := clarifyBound state.current }
+  | .compose right separator, state =>
+      { state with
+        current := { state.current with
+          wording := state.current.wording ++ separator ++ right.wording }
+        components := state.components ++ [right] }
+  | .project, state =>
+      { state with projected := some (observeFrameRole state.current) }
+
+theorem execute_quote_self_core_materializes_description (state : ExecutableProcessState) :
+    (executeProcess .quoteSelfCore state).quotedCore =
+      some pilotStructuralQuine.quotedCore := by
+  rfl
+
+theorem execute_compose_materializes_order
+    (state : ExecutableProcessState) (right : PhraseCore) (separator : String) :
+    (executeProcess (.compose right separator) state).current.wording =
+        state.current.wording ++ separator ++ right.wording ∧
+      (executeProcess (.compose right separator) state).components =
+        state.components ++ [right] := by
+  exact ⟨rfl, rfl⟩
+
+theorem execute_project_materializes_observations (state : ExecutableProcessState) :
+    (executeProcess .project state).projected = some (observeFrameRole state.current) := by
+  rfl
+
 /-! ## Executable finite pilot -/
 
 inductive PilotPhrase where
@@ -655,6 +713,93 @@ theorem lamp_pair_unique_local_gluing :
   exact ⟨pilot_phrase_unique_gluing lampComposition.first,
     pilot_phrase_unique_gluing lampComposition.second⟩
 
+/-! A single section for the lamp pair.  The two phrase opens overlap on the
+speaker, addressee, and open continuation.  Their action points are disjoint,
+so the glued section retains both actions in authored order instead of
+collapsing them into one relation field. -/
+
+inductive LampPoint where
+  | speaker
+  | addressee
+  | firstAction
+  | secondAction
+  | continuation
+deriving DecidableEq, Repr
+
+inductive LampOpen where
+  | firstPhrase
+  | secondPhrase
+deriving DecidableEq, Repr
+
+def lampPiece : LampOpen → Set LampPoint
+  | .firstPhrase => { point | point ≠ .secondAction }
+  | .secondPhrase => { point | point ≠ .firstAction }
+
+theorem lampCover : Cover Set.univ lampPiece := by
+  constructor
+  · intro i point member
+    simp
+  · intro point member
+    cases point with
+    | secondAction => exact ⟨.secondPhrase, by simp [lampPiece]⟩
+    | _ => exact ⟨.firstPhrase, by simp [lampPiece]⟩
+
+def lampPairSection : Section BindingValue (Set.univ : Set LampPoint) :=
+  fun point _ => match point with
+    | .speaker => .participant .narrator
+    | .addressee => .participant .beloved
+    | .firstAction => .relation "illuminate"
+    | .secondAction => .relation "move-lamp"
+    | .continuation => .continuation true
+
+def lampPairLocalSection (openSet : LampOpen) : Section BindingValue (lampPiece openSet) :=
+  lampPairSection.restrict (lampCover.included openSet)
+
+theorem lamp_pair_local_compatible : Compatible lampPairLocalSection := by
+  intro i j point inI inJ
+  rfl
+
+theorem lamp_pair_joint_unique_gluing :
+    ∃! glued : Section BindingValue (Set.univ : Set LampPoint),
+      ∀ i point (member : point ∈ lampPiece i),
+        glued point (lampCover.included i member) =
+          lampPairLocalSection i point member :=
+  function_sections_unique_gluing lampCover lampPairLocalSection
+    lamp_pair_local_compatible
+
+theorem lamp_pair_joint_gluing_retains_actions :
+    lampPairSection .firstAction (by simp) = .relation "illuminate" ∧
+      lampPairSection .secondAction (by simp) = .relation "move-lamp" := by
+  decide
+
+def phraseCoreFor : PilotPhrase → PhraseCore
+  | phrase =>
+      { wording := pilotText phrase
+        speaker := .narrator
+        addressee := .beloved
+        relation := pilotRelation phrase
+        continuationOpen := pilotContinuationOpen phrase
+        scope := if phrase = .sourceExplanation ∨ phrase = .formalExplanation then
+          .structural else .contemplative }
+
+def executedLampComposition : ExecutableProcessState :=
+  executeProcess
+    (.compose (phraseCoreFor .transitionSecond) lampComposition.separator)
+    (initialProcessState (phraseCoreFor .transitionFirst))
+
+theorem lamp_process_execution_is_substantive :
+    executedLampComposition.current.wording =
+        "I cannot illuminate the whole table. I can move the lamp." ∧
+      executedLampComposition.components =
+        [phraseCoreFor .transitionFirst, phraseCoreFor .transitionSecond] := by
+  decide
+
+theorem quoted_process_execution_is_substantive :
+    (executeProcess .quoteSelfCore
+      (initialProcessState (phraseCoreFor .pivot))).quotedCore =
+        some pilotStructuralQuine.quotedCore := by
+  rfl
+
 inductive LampRealization where
   | authored
   | compact
@@ -675,9 +820,49 @@ def lampRealizationSymbols : LampRealization → ℕ
   | .compact => 52
   | .speakerShift => 54
 
+inductive LampChoiceState where
+  | entry
+  | boundary
+deriving DecidableEq, Repr
+
+inductive LampChoiceEdge where
+  | authored
+  | compact
+deriving DecidableEq, Repr
+
+def lampChoiceEdge : LampChoiceEdge → WeightedEdge LampChoiceState
+  | .authored => ⟨.entry, .boundary, 57⟩
+  | .compact => ⟨.entry, .boundary, 52⟩
+
+def lampEdgeRealization : LampChoiceEdge → LampRealization
+  | .authored => .authored
+  | .compact => .compact
+
 def lampRealizationAdmitted (realization : LampRealization) : Prop :=
-  lampRealizationSpeaker realization = .narrator ∧
-    lampRealizationSymbols realization ≤ 57
+  ∃ edge, lampEdgeRealization edge = realization
+
+def lampChoicePotential : LampChoiceState → ℕ
+  | .entry => 57
+  | .boundary => 0
+
+theorem lamp_choice_potential_decreases (edge : LampChoiceEdge) :
+    (lampChoiceEdge edge).cost + lampChoicePotential (lampChoiceEdge edge).target ≤
+      lampChoicePotential (lampChoiceEdge edge).source := by
+  cases edge <;> decide
+
+theorem lamp_choice_path (edge : LampChoiceEdge) :
+    Path lampChoiceEdge .entry .boundary (lampChoiceEdge edge).cost := by
+  cases edge with
+  | authored =>
+      exact Path.cons (edge := lampChoiceEdge) .authored
+        (Path.nil (edge := lampChoiceEdge) LampChoiceState.boundary)
+  | compact =>
+      exact Path.cons (edge := lampChoiceEdge) .compact
+        (Path.nil (edge := lampChoiceEdge) LampChoiceState.boundary)
+
+theorem lamp_choice_cost_realizes_symbols (edge : LampChoiceEdge) :
+    (lampChoiceEdge edge).cost = lampRealizationSymbols (lampEdgeRealization edge) := by
+  cases edge <;> rfl
 
 theorem lamp_realization_scalar_lengths (realization : LampRealization) :
     (lampRealizationText realization).length = lampRealizationSymbols realization := by
@@ -687,16 +872,21 @@ theorem two_legal_lamp_realizations :
     LampRealization.authored ≠ .compact ∧
       lampRealizationAdmitted .authored ∧
       lampRealizationAdmitted .compact := by
-  simp [lampRealizationAdmitted, lampRealizationSpeaker, lampRealizationSymbols]
+  exact ⟨by decide, ⟨.authored, rfl⟩, ⟨.compact, rfl⟩⟩
 
 theorem lamp_realization_class_envelope {realization : LampRealization}
     (admitted : lampRealizationAdmitted realization) :
-    lampRealizationSymbols realization ≤ 57 :=
-  admitted.2
+    lampRealizationSymbols realization ≤ lampChoicePotential .entry := by
+  obtain ⟨edge, rfl⟩ := admitted
+  rw [← lamp_choice_cost_realizes_symbols]
+  exact (lamp_choice_path edge).cost_le_entry_potential lampChoicePotential
+    lamp_choice_potential_decreases rfl
 
 theorem speaker_shift_rejected :
     ¬ lampRealizationAdmitted .speakerShift := by
-  simp [lampRealizationAdmitted, lampRealizationSpeaker]
+  intro admitted
+  obtain ⟨edge, equality⟩ := admitted
+  cases edge <;> cases equality
 
 /-- These ASCII pilot costs are independently recomputed by the owner metric. -/
 def pilotSymbols : PilotPhrase → ℕ
