@@ -300,3 +300,220 @@ for this one damping would still not be an all-positive-damping or RH proof.
 ## Source and verification scope
 
 [Source](../../../../../GRWTSK/NumberTheory/Moebius/WeightedIntegralEnergy.lean). Status: **written-argument**. [Credit and evidence limits](../../../../reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+
+---
+
+## Square-root divisor compression with a paid short-prefix energy
+
+**Status: written finite identities and analytic bounds; no new Lean
+admission.** Human mathematical direction: grwtsk contributors. Source
+adaptation, derivation and diagnostics: OpenAI ChatGPT. The underlying
+finite divisor identity is classical, not a new arithmetic cancellation
+result. See Huxley--Watt, *Mertens Sums requiring Fewer Values of the Mobius
+Function*, [arXiv:1807.05890v1, equations (1.5)--(1.8)](https://arxiv.org/html/1807.05890v1).
+The proof below uses finite Dirichlet convolution, not a zeta contour or an
+unproved nonvanishing theorem. It does not extend the preceding zero-free
+transfer beyond its stated damping domain.
+
+### Literal coefficient identity, before any estimate
+
+For a real physical cutoff $x\ge1$ set
+
+$$N=\lfloor x\rfloor,\qquad U=\lfloor\sqrt x\rfloor
+=\lfloor\sqrt N\rfloor.$$
+
+Then $U^2\le N\le x<(U+1)^2$. For positive integers let
+$a_U(n)=\mu(n)1_{n\le U}$, $b_U=\mu-a_U$, and let $\mathbf1(n)=1$.
+Finite divisor convolution and $\mu*\mathbf1=\varepsilon$ give the exact
+coefficient identity
+
+$$\mu=2a_U-a_U*a_U*\mathbf1+b_U*b_U*\mathbf1.$$
+
+Indeed expand $(\mu-b_U)*(\mu-b_U)*\mathbf1$; associativity gives
+$\mu*\mu*\mathbf1=\mu$ and $\mu*b_U*\mathbf1=b_U$.
+For every $1\le n\le N$, the last coefficient is zero: each of its terms
+would require two factors at least $U+1$, and hence $n\ge(U+1)^2$.
+Consequently
+
+$$\boxed{\mu(n)=2\mu(n)1_{n\le U}
+-\sum_{\substack{a,b\le U\\ab\mid n}}\mu(a)\mu(b)
+\quad(1\le n\le N).} \tag{SR1}$$
+
+Every ordered pair is included; the neutral multiplier $k=n/(ab)$ need
+not be squarefree. The statement is false for arbitrary bounded coefficient
+sequences in place of the actual Mobius inverse.
+
+Multiply (SR1) by the actual response $h_n(t)$ and sum at $t=\log x$.
+Define
+
+$$P(t)=2\sum_{a\le\lfloor e^{t/2}\rfloor}\mu(a)h_a(t),$$
+
+$$\mathfrak B(x)=\sum_{a,b\le U}\mu(a)\mu(b)K_x(a,b),\qquad
+K_x(a,b)=\sum_{k\le x/(ab)}h_{abk}(\log x).$$
+
+The exact all-real-cutoff return is
+
+$$\boxed{W(t)=P(t)-\mathfrak B(e^t)\quad(t\ge0).} \tag{SR2}$$
+
+Only Mobius values with index at most $U=\lfloor\sqrt x\rfloor$ enter
+the right side. This is a reduction in arithmetic input range, not a proof
+that the remaining quadratic form is small and not a computational speed
+claim. All integers through $N$ are still represented by the full multiplier
+sum. The completed Euler-product numerator is not replaced by a raw product;
+its endpoint terms and unborn-product debt remain unchanged.
+
+At a square cutoff the small source changes. $P$ and $\mathfrak B(e^t)$
+may jump, and their jumps cancel in (SR2). They are not separately asserted
+continuous. On each finite time interval they are bounded, measurable and
+piecewise smooth, so all finite integrals below exist. At a touching
+integer, $h_n(\log n)=0$ does not erase its coefficient from (SR1).
+In particular, freezing $U=1$ at $N=4$ gives the wrong coefficient at four,
+although the pickup discrepancy is invisible exactly at $x=4$ and becomes
+visible immediately afterward. The strict support gate must be checked
+before applying the weighted identity.
+
+### The short-prefix term is paid without Mobius cancellation
+
+For $a\le U$ the summands $a^{-1/2}-x^{-1/2}$ are nonnegative. The
+integral comparison $\sum_{a\le U}a^{-1/2}\le2\sqrt U-1$ gives
+
+$$|P(\log x)|\le4\left(2\sqrt U-1-U/\sqrt x\right)
+\le8(x^{1/4}-1). \tag{SR3}$$
+
+For the last inequality the function $v\mapsto2\sqrt v-v/\sqrt x$ is
+increasing on $1\le v\le\sqrt x$; its value at $\sqrt x$ is
+$2x^{1/4}-1$. This pays the floor loss without inserting a new constant
+or a pointwise Mertens bound. At $x=1$ both sides are zero.
+
+Set $\mathcal P(T)=\int_0^T e^{-2t/3}P(t)^2dt$. Integrating the
+explicit majorant in (SR3) gives the unconditional written bound
+
+$$\boxed{\mathcal P(T)\le
+64\left(6-\frac{24}{5}+\frac32\right)=\frac{864}{5}
+\quad(T\ge0).} \tag{SR4}$$
+
+More generally this particular short-prefix majorant is integrable for
+$\sigma>1/4$, with constant
+$64[(2\sigma-1/2)^{-1}-2(2\sigma-1/4)^{-1}+(2\sigma)^{-1}]$.
+This threshold belongs only to the short-prefix term, not to the complete
+pickup or to a newly proved zero-free region.
+
+Define the remaining finite quadratic energy
+
+$$\mathcal K(T)=\int_0^T e^{-2t/3}\mathfrak B(e^t)^2dt
+=\int_1^{e^T}x^{-5/3}\mathfrak B(x)^2dx.$$
+
+The change of variables is on finite intervals. From (SR2), finite weighted
+Cauchy--Schwarz gives
+
+$$|\sqrt{H_{1/3}(T)}-\sqrt{\mathcal K(T)}|
+\le\sqrt{\mathcal P(T)}\le\sqrt{864/5}.$$
+
+In particular,
+
+$$\boxed{H_{1/3}(T)\le2\mathcal K(T)+1728/5,\qquad
+\mathcal K(T)\le2H_{1/3}(T)+1728/5.} \tag{SR5}$$
+
+Thus the literal uniform one-third bound is equivalent to
+
+$$\boxed{\exists C\ge0\ \forall T\ge0:\quad
+\int_0^T e^{-2t/3}\left|
+\sum_{a,b\le\lfloor e^{t/2}\rfloor}\mu(a)\mu(b)
+\sum_{k\le e^t/(ab)}h_{abk}(t)\right|^2dt\le C.} \tag{SR6}$$
+
+A witness $C$ gives the sharper constant
+$(\sqrt C+\sqrt{864/5})^2$ for the actual one-third mass. No witness for
+(SR6) is provided. It is equivalent to the earlier corrected-cross-energy
+condition (3), not a new assumption silently added to it. Half-line integrals
+remain extended nonnegative quantities until finiteness is established.
+
+### Where the arithmetic cancellation remains
+
+Let $q_+(y)=\sum_{k\le y}k^{-1/2}-\lfloor y\rfloor/\sqrt y$ for
+$y\ge1$. Partial summation with the closed floor gives
+
+$$q_+(y)=\frac12\int_1^y\lfloor v\rfloor v^{-3/2}dv
+=\sqrt y-E(y),\qquad
+E(y)=1+\frac12\int_1^y\{v\}v^{-3/2}dv.$$
+
+Hence $1\le E(y)\le2-y^{-1/2}$ and
+
+$$K_x(a,b)=\frac{2\sqrt x}{ab}
+-\frac{2E(x/(ab))}{\sqrt{ab}},$$
+
+$$\mathfrak B(x)=2\sqrt x
+\left(\sum_{a\le U}\frac{\mu(a)}a\right)^2
+-2\sum_{a,b\le U}\frac{\mu(a)\mu(b)}{\sqrt{ab}}E(x/(ab)). \tag{SR7}$$
+
+All terms in (SR7) are retained together. The
+boundedness of $E$ alone only gives an $O(\sqrt x)$ absolute allowance for
+its quadratic form. That power is not integrable against the required
+$x^{-5/3}$ weight after squaring. No exponent gain follows from this
+rank-one decomposition.
+
+The kernel is not positive semidefinite. At $x=4$, its $2$ by $2$ matrix is
+
+$$\begin{pmatrix}
+\sqrt2+2/\sqrt3-1&\sqrt2-1\\
+\sqrt2-1&0
+\end{pmatrix},\qquad
+\det=-(\sqrt2-1)^2<0.$$
+
+The zero diagonal entry at the touching square does not imply a zero row.
+Deleting that row, declaring the form a Gram norm, or applying Bessel's
+inequality as though positivity had been proved is invalid. The bounded
+rational vector $(1/4,-1)$ gives a strictly negative quadratic value.
+
+A stronger universal-operator supplier also fails. For the comparison vector
+$e_1$, $\mathfrak B_*(x)=K_x(1,1)$ is the pickup of the constant-one
+coefficient sequence. Since $\lfloor e^u\rfloor\ge e^u/2$,
+$\mathfrak B_*(e^t)\ge e^{t/2}-1$. Its one-third weighted energy diverges.
+This disproves a bound based only on bounded entries, dimension, or a unit
+coefficient-vector norm. It does not disprove (SR6) for the actual Mobius
+vector. That vector's divisor-inverse arithmetic must be used in any genuine
+estimate.
+
+One concrete weaker sufficient input than a fixed subcritical pointwise
+power is the critical-scale, logarithmically improved bound
+
+$$\exists C\ge0,\ \epsilon>0\ \forall x\ge1:\quad
+|\mathfrak B(x)|\le
+\frac{C x^{1/3}}{(1+\log x)^{1/2+\epsilon}}. \tag{SR8}$$
+
+It would give $\mathcal K(T)\le C^2/(2\epsilon)$ and therefore
+$H_{1/3}(T)\le(C/\sqrt{2\epsilon}+\sqrt{864/5})^2$.
+Neither (SR8) nor a subcritical power bound is asserted. The exact weaker
+remaining target is (SR6); a proof need not establish the stronger pointwise
+condition (SR8). No P04 premise, Mertens exponent, or RH premise is used.
+
+### Finite implementation and admission boundary
+
+[`square_root_pickup.py`](../../../../../scripts/square_root_pickup.py)
+implements (SR1) and moving-cutoff finite energies. Its Mobius sieve is called
+only through the square-root cutoff. It retains all ordered pairs and neutral
+multipliers, uses the existing rational interval arithmetic, and reports
+which identities are interval-consistency checks rather than exact symbolic
+proofs. The actual prefix recovered from (SR1) is compared with an independent
+trial-division Mobius implementation in the tests, not defined by that check.
+
+[`test_square_root_pickup.py`](../../../../../scripts/test_square_root_pickup.py)
+checks the strict support gate, every small closed cutoff, all coefficients
+through $4096$ from values through $64$, noninteger horizons, square crossings,
+independent direct-kernel expansion, missing mixed terms, and the indefinite
+kernel control. The 19 test methods passed in both normal and optimized
+Python. The tested bytes, finite output and exact scope are bound in the
+[new receipt](../../../../../evidence/number-theory/moebius/square-root-pickup-20261014.json).
+
+```sh
+python3 -B scripts/test_square_root_pickup.py
+python3 -O -B scripts/test_square_root_pickup.py
+python3 -B scripts/square_root_pickup.py --cutoff 17/2 --cutoff 1024
+```
+
+No Lean source, compiler pin, old receipt, permission, or workflow is changed.
+No pinned Lean replay, owned-declaration audit, or full-repository structural
+check was available in this execution environment. The earlier article bytes
+and their historical receipt remain preserved; the new receipt does not
+promote them. The mathematical gain here is an exact short-source reduction
+and the unconditional written cost (SR4), not a bound on the remaining
+quadratic energy and not an improvement of the zeta zero-free exponent.
