@@ -1,0 +1,306 @@
+{
+  "schema": "localized-mobius-pair-sectors-source-bound-receipt-v1",
+  "date": "2026-10-14",
+  "repository": "grwtsk/math",
+  "branch": "main",
+  "inspected_base_commit": "dc1ca7863aef7cfd94c35287435e890e50e9b995",
+  "implementation_and_article_commit": "24d5a3c50f97b5fd95e2581886987f8fe77b8743",
+  "human_mathematical_direction": "grwtsk contributors",
+  "written_derivation_and_implementation": "OpenAI ChatGPT",
+  "source_bindings": [
+    {
+      "path": "scripts/localized_mobius_pair_sectors.py",
+      "bytes": 9882,
+      "sha256": "e7bcb91d8037cb284df78d38286d2690ec44e16092348c1add08a76020f64a0b",
+      "git_blob_sha1": "b418b4642a33e5f1c1809c4cf2ad48f7812d593d"
+    },
+    {
+      "path": "scripts/test_localized_mobius_pair_sectors.py",
+      "bytes": 9845,
+      "sha256": "3c69390acc5fa0ec16ab3d5745d7cae29d96f3dcf4d8f922b3d7ab159f3a7e3d",
+      "git_blob_sha1": "3cb0b832506ae32758889e53bff2babc01fe97cf"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/Moebius/matched-pickup.md",
+      "bytes": 30850,
+      "sha256": "6f5885b657543969b2cc42f215f6c55bda86a597ebc9377db0925074eea85f6f",
+      "git_blob_sha1": "2385e1ad19146f5fbd782e7238daf406c67c39b4"
+    }
+  ],
+  "unchanged_dependencies": [
+    {
+      "path": "scripts/one_third_energy.py",
+      "bytes": 11582,
+      "sha256": "9c73bb399ca9c45384f114a6cbd18fd3121991c38aa1bef62d4baf7cac37eee9",
+      "git_blob_sha1": "f13161b4d5844dbd3c873f999f1b82a25747ae93"
+    },
+    {
+      "path": "scripts/dyadic_pickup_localization.py",
+      "bytes": 11143,
+      "sha256": "46b2a19a54e1ac83f8d21e11e4b1b6eb37e1665c593ce0875d73b3cf54058da6",
+      "git_blob_sha1": "c4a10f77336d8d9a59a21d70e8f2f9afa414efd1"
+    }
+  ],
+  "preserved_article_prefix": {
+    "bytes": 19079,
+    "git_blob_sha1": "1ae6986092f96fad5877abd3dd1ee56ba1ad5fd7",
+    "preserved_byte_for_byte": true,
+    "historical_receipts_unchanged": true
+  },
+  "written_results": [
+    "Finite primitive identity: for (a,b)=1, mu(ga)mu(gb)=mu(a)mu(b)mu(g)^2 times 1_((g,ab)=1). Squareful and noncoprime cases remain explicit.",
+    "Finite localized Gram scales as G_R(ga,gb)=g^(-5/3)G_(R/g)(a,b); the physical cutoff is shifted, not replaced by a complete atom integral.",
+    "Entry bound 0<=G_R(m,n)<=c*(mn)^(-5/6), with c=G_4(1,1) and 0<c<9/25; exact zero for n>=4m.",
+    "Complete partition Gamma(log R)=D+P+Q+A+Z. Divisible rays P use n=2m or 3m and satisfy -10c<=P<=0 for the actual Mobius source.",
+    "Other pairs with gcd(m,n)^2>=m have full absolute mass at most 45c. Pairs with gcd^2<m and (n-m)^2<=m have full absolute mass at most 14c.",
+    "Remaining core Z retains exactly m<n<4m, gcd(m,n)^2<m and (n-m)^2>m, with both ordered signs and finite cutoff.",
+    "Gamma(log R)<=Z(R)+(123/2)c and Z(R)<=Gamma(log R)+69c. Thus sup_J Z(2^J)<=C implies H_(1/3)(T)<=123*(C+(123/2)c) for all real T>=0; converse follows from Gamma<=8H.",
+    "Finite prime-pair lower bound: with K primes in (X,5X/4] and H=ceil(sqrt(5X/4)), Z_+(2X)>=K*max(0,K-1-2H)*X^(-5/3)/1296.",
+    "Finite prime--twice-prime lower bound: for X>=4, Z_-(4X)>=K*(K-1)*X^(-5/3)/2880. Both sign masses diverge by the unconditional PNT. No explicit numerical PNT onset is claimed.",
+    "Divergence of both sign masses rejects unsigned and positive-part suppliers for the actual source, not the signed-core target or RH."
+  ],
+  "external_sources": [
+    {
+      "repository": "leanprover-community/mathlib4",
+      "commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "path": "Mathlib/NumberTheory/ArithmeticFunction/Moebius.lean",
+      "git_blob_sha1": "9e6355da4e175f7ff3e135958b96c592633d47bd",
+      "scope": "Multiplicativity, prime values, squarefree zero and absolute bound inspected; not replayed or newly imported."
+    },
+    {
+      "title": "NIST DLMF 27.12.5",
+      "url": "https://dlmf.nist.gov/27.12.E5",
+      "scope": "Unconditional PNT, only for the written infinite-range sign-mass refutation. Finite prime counts and lower constants do not assume this theorem."
+    },
+    {
+      "author": "Terence Tao",
+      "title": "The logarithmically averaged Chowla and Elliott conjectures for two-point correlations",
+      "url": "https://arxiv.org/html/1509.05422v4",
+      "scope": "Theorem 1.2 and stated extension: fixed affine forms, nonzero determinant and logarithmic average. These hypotheses do not pay the moving signed-core kernel. No theorem imported."
+    }
+  ],
+  "verification": {
+    "test_methods": 22,
+    "runs": [
+      {
+        "command": "python3 -B scripts/test_localized_mobius_pair_sectors.py",
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "......................\n----------------------------------------------------------------------\nRan 22 tests in 4.645s\n\nOK\n"
+      },
+      {
+        "command": "python3 -O -B scripts/test_localized_mobius_pair_sectors.py",
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "......................\n----------------------------------------------------------------------\nRan 22 tests in 4.236s\n\nOK\n"
+      }
+    ],
+    "finite_cases": {
+      "independent_mobius_indices": 2048,
+      "primitive_coefficient_cases": 1096,
+      "pair_partition_cases": 6176,
+      "signed_three_coefficient_assignments": 27,
+      "finite_full_sector_cutoffs": [
+        "1",
+        "7/2",
+        "17/2",
+        "16",
+        "64",
+        "128"
+      ],
+      "prime_witness_X": [
+        64,
+        256,
+        4096
+      ]
+    },
+    "arithmetic_method": "Exact integer predicates and prime counts; inherited Fraction intervals, integer sixth-root brackets and outward rounding. Direct pairs, primitive regrouping and original local energy are independently organized.",
+    "proof_scope": "Finite exact identities and interval consistency only. Enclosure overlap does not prove the general analytic identities. Infinite-sector budgets and PNT divergence have written proofs, not Lean admission.",
+    "remote_integrity": "Both new Python blobs and the full article blob matched the local tested/source bytes after write/readback.",
+    "pinned_lean_replay": "NOT_RUN: no Lean or Lake executable found in the active runtime.",
+    "owned_declaration_audit": "NOT_RUN: no Lean source added or modified.",
+    "full_repository_layout_checks": "NOT_RUN: no full checkout; git ls-remote failed because github.com could not be resolved.",
+    "full_repository_documentation_checks": "NOT_RUN: source-bound partial snapshot only. Existing registered mathematical guide extended; no new canonical page or Lean inventory.",
+    "publication": "GitHub contents API on existing main. No branch, reset, force-push, Codex task, workflow or permission change."
+  },
+  "negative_controls": [
+    "missing gcd(g,ab)=1 gate",
+    "wrong primitive sign for ratio 3/2",
+    "omitted finite-cutoff scaling R/g",
+    "missing factor two for ordered pairs",
+    "constant-one test coefficients inheriting a Mobius sign",
+    "changed mu(6)",
+    "equality at gcd^2=m and disjoint touching support",
+    "invalid physical cutoff, future coefficients, wrong precision types"
+  ],
+  "finite_batch_command": "python3 -B scripts/localized_mobius_pair_sectors.py --cutoff 1 --cutoff 7/2 --cutoff 17/2 --cutoff 16 --cutoff 64 --cutoff 128 --primitive-check --prime-X 64 --prime-X 256 --prime-X 4096",
+  "finite_batch_summary": [
+    {
+      "cutoff": "1",
+      "consistency": {
+        "sector_energy_identity": true,
+        "primitive_prime_rays": true,
+        "primitive_large_gcd": true,
+        "primitive_short_gap": true,
+        "primitive_core": true
+      },
+      "localized_energy": {
+        "lower": "0",
+        "upper": "0"
+      },
+      "signed_core": {
+        "lower": "0",
+        "upper": "0"
+      },
+      "positive_core": {
+        "lower": "0",
+        "upper": "0"
+      }
+    },
+    {
+      "cutoff": "7/2",
+      "consistency": {
+        "sector_energy_identity": true,
+        "primitive_prime_rays": true,
+        "primitive_large_gcd": true,
+        "primitive_short_gap": true,
+        "primitive_core": true
+      },
+      "localized_energy": {
+        "lower": "410300837886945031/4611686018427387904",
+        "upper": "820601675773890347/9223372036854775808"
+      },
+      "signed_core": {
+        "lower": "0",
+        "upper": "0"
+      },
+      "positive_core": {
+        "lower": "0",
+        "upper": "0"
+      }
+    },
+    {
+      "cutoff": "17/2",
+      "consistency": {
+        "sector_energy_identity": true,
+        "primitive_prime_rays": true,
+        "primitive_large_gcd": true,
+        "primitive_short_gap": true,
+        "primitive_core": true
+      },
+      "localized_energy": {
+        "lower": "2935743653864056061/18446744073709551616",
+        "upper": "2935743653864056707/18446744073709551616"
+      },
+      "signed_core": {
+        "lower": "98099626365813233/9223372036854775808",
+        "upper": "24524906591453321/2305843009213693952"
+      },
+      "positive_core": {
+        "lower": "98099626365813233/9223372036854775808",
+        "upper": "24524906591453321/2305843009213693952"
+      }
+    },
+    {
+      "cutoff": "16",
+      "consistency": {
+        "sector_energy_identity": true,
+        "primitive_prime_rays": true,
+        "primitive_large_gcd": true,
+        "primitive_short_gap": true,
+        "primitive_core": true
+      },
+      "localized_energy": {
+        "lower": "1515990530236319407/9223372036854775808",
+        "upper": "1515990530236319775/9223372036854775808"
+      },
+      "signed_core": {
+        "lower": "72561373722424011/4611686018427387904",
+        "upper": "72561373722424069/4611686018427387904"
+      },
+      "positive_core": {
+        "lower": "180709774128739959/9223372036854775808",
+        "upper": "11294360883046253/576460752303423488"
+      }
+    },
+    {
+      "cutoff": "64",
+      "consistency": {
+        "sector_energy_identity": true,
+        "primitive_prime_rays": true,
+        "primitive_large_gcd": true,
+        "primitive_short_gap": true,
+        "primitive_core": true
+      },
+      "localized_energy": {
+        "lower": "3036829351892729103/18446744073709551616",
+        "upper": "759207337973182497/4611686018427387904"
+      },
+      "signed_core": {
+        "lower": "86033546287469603/4611686018427387904",
+        "upper": "172067092574939851/9223372036854775808"
+      },
+      "positive_core": {
+        "lower": "268187858753917275/4611686018427387904",
+        "upper": "134093929376958725/2305843009213693952"
+      }
+    },
+    {
+      "cutoff": "128",
+      "consistency": {
+        "sector_energy_identity": true,
+        "primitive_prime_rays": true,
+        "primitive_large_gcd": true,
+        "primitive_short_gap": true,
+        "primitive_core": true
+      },
+      "localized_energy": {
+        "lower": "3037427890188499657/18446744073709551616",
+        "upper": "3037427890188500619/18446744073709551616"
+      },
+      "signed_core": {
+        "lower": "71273773899792297/4611686018427387904",
+        "upper": "71273773899793383/4611686018427387904"
+      },
+      "positive_core": {
+        "lower": "209151020270289093/2305843009213693952",
+        "upper": "836604081081157473/9223372036854775808"
+      }
+    }
+  ],
+  "prime_witness_summary": [
+    {
+      "X": 64,
+      "prime_count": 4,
+      "unordered_separated_pairs": 1,
+      "prime_twice_prime_pairs": 12,
+      "positive_count_gate": false
+    },
+    {
+      "X": 256,
+      "prime_count": 12,
+      "unordered_separated_pairs": 38,
+      "prime_twice_prime_pairs": 132,
+      "positive_count_gate": false
+    },
+    {
+      "X": 4096,
+      "prime_count": 121,
+      "unordered_separated_pairs": 6311,
+      "prime_twice_prime_pairs": 14520,
+      "positive_count_gate": false
+    }
+  ],
+  "arithmetic_status": {
+    "uniform_signed_core_bound": "UNPAID",
+    "uniform_one_third_bound": "UNPAID",
+    "MertensLogSquareBound": "Explicit premise unchanged; no unconditional native supplier",
+    "new_mertens_exponent": "NONE",
+    "new_zero_free_exponent": "NONE",
+    "new_lean_admissions": 0,
+    "P04": "Not required; no witness claimed",
+    "RH": "NOT CLAIMED",
+    "smallest_surviving_inequality": "exists C>=0 forall J natural: 2*sum_(1<=m<n<=2^J,n<4m,gcd(m,n)^2<m,(n-m)^2>m)mu(m)mu(n)G_(2^J)(m,n)<=C"
+  },
+  "limits": "The exact split and finite sector budgets do not settle the signed core. Positive and negative divergence statements concern separate sign masses, not the original signed energy."
+}
