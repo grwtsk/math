@@ -58,6 +58,7 @@ Browse by mathematical subject and object, matching the Lean source organization
 - [Irrational frequency realization and native readback](mathematics/NumberTheory/ContinuedFractions/frequency-realization.md)
 - [Scheduled digits and continued-fraction denominators](mathematics/NumberTheory/ContinuedFractions/scheduled-denominators.md)
 - [Closed Möbius Dirichlet polynomials](mathematics/NumberTheory/LSeries/closed-moebius.md)
+- [Finite Euler products with a closed cutoff](mathematics/NumberTheory/Moebius/finite-euler-product.md)
 - [Matched averaging for the closed Möbius pickup](mathematics/NumberTheory/Moebius/matched-pickup.md)
 - [Damped finite windows and extended tail energy](mathematics/NumberTheory/Moebius/Energy/damped-tails.md)
 - [Horizon-matched blocks and dyadic energy](mathematics/NumberTheory/Moebius/Energy/recording-blocks.md)

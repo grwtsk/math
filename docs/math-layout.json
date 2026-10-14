@@ -19,11 +19,11 @@
     "DynamicalSystems": 12,
     "LinearAlgebra": 13,
     "Logic": 16,
-    "NumberTheory": 56,
+    "NumberTheory": 57,
     "Order": 2,
     "Spectral": 7
   },
-  "source_count": 169,
+  "source_count": 170,
   "source_hashes": {
     "GRWTSK.lean": "c043f49834de6b404f4173cf1bfac746486f76418414ea339c46d9243cf6d8ef",
     "GRWTSK/Algebra/BigOperators/OrderedSquare.lean": "90887152044ad24b0a96371b5aee78430e2d67f2abcc899529c43f6946d8e1d4",
@@ -193,7 +193,8 @@
     "GRWTSK/Spectral/GapTransport.lean": "058f1fc96e8badc39cf8178e1c30680199bbf3870ea67d69d5eb16c5e6b8e4ec",
     "GRWTSK/Spectral/MatrixCountComparison.lean": "eed27fedd6056292ce90a075907568852df7fb47d6d621775a44d6888f10b1b7",
     "GRWTSK/Spectral/SturmianBlockCounts.lean": "5e357a6fd03b24ceb1a92ac187f235b494c093276fa76aee72f5372927f52ed5",
-    "GRWTSK/Spectral/SturmianFiniteVolume.lean": "3b072a5c92f83d8fe20dea794ebc3b185d2166c5c55a8355ca1210049776a45d"
+    "GRWTSK/Spectral/SturmianFiniteVolume.lean": "3b072a5c92f83d8fe20dea794ebc3b185d2166c5c55a8355ca1210049776a45d",
+    "GRWTSK/NumberTheory/Moebius/FiniteEulerProduct.lean": "f43d20140bcc365829454e0b9a715243121d78fda366c0f8b22a3fd80da49341"
   },
   "migration": [
     {
@@ -1991,6 +1992,29 @@
     "checks/LinearAlgebra/SchrodingerTransfer/Controls/ExactCoordinatesAndDeterminant.lean": "30b877518e43d16112176b24468c530f44834f7cb9fca30729306582a97058a8",
     "checks/LinearAlgebra/SchrodingerTransfer/Controls/IdentifyDistinctSLElements.lean": "dbbf4e260ebcf35a6bdaa603c527e14a40dfff1affe5d7c64d0b6c5ff87624e2",
     "checks/LinearAlgebra/SchrodingerTransfer/Controls/ReverseNextStateCoordinates.lean": "dddb1769e2cbf5203990393eaa3ac77e73a4a6947268b61e9f45862e0e4a2f8d",
-    "checks/LinearAlgebra/SchrodingerTransfer/Controls/WrongDeterminantSign.lean": "23bb5c1fcba29f469eb03e1eefbaf0dbedb70c9c45d31355acd5a94e5928309a"
+    "checks/LinearAlgebra/SchrodingerTransfer/Controls/WrongDeterminantSign.lean": "23bb5c1fcba29f469eb03e1eefbaf0dbedb70c9c45d31355acd5a94e5928309a",
+    "checks/NumberTheory/Moebius/FiniteEulerProduct.lean": "e75fa9f8555a89d23a8b0e1f7752d332ab698780f62954de1b0b8218ac638221",
+    "checks/NumberTheory/Moebius/FiniteEulerProduct/Controls/MissingDebt.lean": "f557f6427e8e21b0d922d3fec460f4101ffd4dc2f82d98d1fe42b9d5ee3129b0",
+    "checks/NumberTheory/Moebius/FiniteEulerProduct/Controls/OpenCutoff.lean": "7bf45809e88e44aacf618e99f968db8a34e7863f6f8bd05b08d42eea697a16d8"
+  },
+  "finite_euler_product_generalization": {
+    "source": "GRWTSK/NumberTheory/Moebius/FiniteEulerProduct.lean",
+    "source_sha256": "f43d20140bcc365829454e0b9a715243121d78fda366c0f8b22a3fd80da49341",
+    "receipt": "evidence/NumberTheory/Moebius/finite-euler-product-checks.json",
+    "receipt_sha256": "e3df0b4fc5e2a57f54e0389322eaf73d72ac104687ac3188d2ce58cb655a42a3",
+    "public_theorems": 4,
+    "complete_owned_declarations": 6,
+    "project_source_dependencies": 0,
+    "acceptance": "Exact selected source only; library import is navigation, not a broader replay.",
+    "historical_acceptance_preserved": true,
+    "prior_source_count": 169,
+    "prior_NumberTheory_count": 56,
+    "inventory_delta": {
+      "source_count": 1,
+      "NumberTheory": 1
+    },
+    "inventory_count_is_not_proof_acceptance": true,
+    "whole_current_source_acceptance": false,
+    "rh_proved": false
   }
 }
