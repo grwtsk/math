@@ -1,6 +1,19 @@
 {
   "schema": "mathematical-subject-layout-v1",
   "rule": "Distribute each mathematical result by its subject and object. No conjecture, campaign, conversation, project acronym or workflow metaphor directories; generic lemmas must be reusable independently.",
+  "explicit_open_premises": {
+    "GRWTSK/NumberTheory/Moebius/LogarithmicMertensBoundary.lean": [
+      "pointwise exponential damped-source envelope (explicit hypothesis of the generic finite-horizon transfer theorem)",
+      "real-cutoff Mertens power bound (explicit hypothesis; the transfer theorem does not supply an exponent)",
+      "natural-cutoff Mertens power bound (explicit hypothesis; the transfer theorem does not supply an exponent)",
+      "MertensLogSquareBound (explicit hypothesis for the tail and boundary theorems; no supplying theorem is admitted in the pinned environment)"
+    ],
+    "GRWTSK/NumberTheory/Moebius/Checks/Positive/LogarithmicMertensBoundary.lean": [
+      "real-cutoff Mertens power bound (supplied only as an explicit hypothesis in a positive interface example)",
+      "natural-cutoff Mertens power bound (supplied only as an explicit hypothesis in a positive interface example)",
+      "MertensLogSquareBound (supplied only as an explicit hypothesis in the positive interface examples)"
+    ]
+  },
   "forbidden_segments": [
     "CCC",
     "Conversation",
@@ -13,20 +26,20 @@
   ],
   "subjects": {
     "Algebra": 5,
-    "Analysis": 132,
+    "Analysis": 133,
     "Combinatorics": 4,
     "Data": 1,
     "DynamicalSystems": 13,
     "LinearAlgebra": 17,
     "Logic": 24,
     "MeasureTheory": 5,
-    "NumberTheory": 119,
+    "NumberTheory": 120,
     "Order": 3,
     "Spectral": 7
   },
-  "source_count": 331,
+  "source_count": 333,
   "source_hashes": {
-    "GRWTSK.lean": "c7f4f6b83f14da9c2931a78108fb9e0fab06cfe8120a4e4583d707e080abac83",
+    "GRWTSK.lean": "3e8fe36000518fe166af8ef419854593f4887060a0fe2b314424b2c4323b7d4e",
     "GRWTSK/Algebra/BigOperators/OrderedSquare.lean": "8484616dda2d4290a16aa53d1515a87ace9a4891f70006a4885069e81308e883",
     "GRWTSK/Algebra/BigOperators/QuadraticCounterexample.lean": "6e51c5d0f986b389b5acdf8cca035840e227756ddc11d874b9faa41270d9a519",
     "GRWTSK/Algebra/MvPolynomial/SquarefreeEulerProduct.lean": "263d7cb13e397ca98287d9faae175b884afb07eeefd8ff3504980c18b93163ef",
@@ -137,6 +150,7 @@
     "GRWTSK/Analysis/Integration/CompactPolynomialMoments.lean": "3c6b04e8438292b9ac75badd78a21244d26bc10e0d3e5a9fd986114582955e77",
     "GRWTSK/Analysis/Integration/CompactWeightedDerivativeMoments.lean": "09a62702c191806488014bdae2d00b3d2e694430e469753181963f01dd014804",
     "GRWTSK/Analysis/Integration/ExponentialInterval.lean": "bb9dbcde90c2bea8f3bb77953626affb70752466ccc6fd3a43df2989e4e0ca39",
+    "GRWTSK/Analysis/Integration/ExponentialVolterraL2.lean": "963957d15eab9c20a0194656e8b0fcbee721bebabb9fedd8eef55968b54d12b0",
     "GRWTSK/Analysis/Integration/FiniteUnitSumVariation.lean": "20ce18d7f9d2197b15bcb85f2bf6d534354202bdbc09f26a6436fcae5ca91b63",
     "GRWTSK/Analysis/Integration/PositiveHalfLineCutoffBalance.lean": "34446d67fbae7e7adcac18b3eabda9e9246803aee12aff4a80b426c747996850",
     "GRWTSK/Analysis/Integration/TranslationSeamLowerBound.lean": "8cb9f90f05e03aa1f8590004f3ff8fb93541f48211481123cc48a86cafcf5aca",
@@ -283,6 +297,7 @@
     "GRWTSK/NumberTheory/Moebius/LaplaceDirichletSeries.lean": "8d81ba7f79fd0eabd4ee4c900553039b93e7171e9d7ee60ac4222175d4204242",
     "GRWTSK/NumberTheory/Moebius/LaplaceHolomorphy.lean": "c65e5184b9e4354aaa2ddd27a7d61afe5fa69ad8b833436e9269b00eac2bf807",
     "GRWTSK/NumberTheory/Moebius/LaplaceTransform.lean": "308954ccc5537fc6dc46377c72a3f18c118c87bafb72b01746ab5368b156dd05",
+    "GRWTSK/NumberTheory/Moebius/LogarithmicMertensBoundary.lean": "fb511a6a916ba559cf01d9e09d70d33dcf5de4d2f60e5bf921e60c0e1f94ca16",
     "GRWTSK/NumberTheory/Moebius/LogarithmicResponse.lean": "9799845781d7ee3099471eb974c08c59caddba83dc2f484cedfec7acbc592c44",
     "GRWTSK/NumberTheory/Moebius/MeanSquareGrowth.lean": "16dee167404d9ecf75bce45caaebc1b98058ba6b8d02e51502eef59d4771c243",
     "GRWTSK/NumberTheory/Moebius/MeanSquareLaplaceHolomorphy.lean": "4eb213efab76b7b2b17ce26b4d428c773f635d7bc3cab529c057cd9a7acc442c",
@@ -4867,13 +4882,7 @@
     "native_audit_status": "LEAN_AUDIT_SELF_TEST_PASSED",
     "full_source_replay_status": "289_LIBRARY_SOURCES_PASSED_TRUST_ZERO; OWNED_DECLARATION_AUDIT_FAILED_ON_18_PARTIAL_GENERATED_DECLARATIONS",
     "migration_verification_record": "evidence/lean-consolidation-2026-10-14.json",
-    "public_proof_acceptance_replaced": false,
-    "full_source_replay_binding": {
-      "receipt": "evidence/lean-consolidation-rigor-2026-10-14.json",
-      "source_count": 292,
-      "source_hashes_sha256": "4b939a03b0f380c0ff3e077e1d5c3f4f72cf125f6e54e543625bccc6656d5692",
-      "scope": "Current per-source hashes are the active library entries in this layout; the receipt binds their canonical path/hash digest and the replay outcome."
-    }
+    "public_proof_acceptance_replaced": false
   },
   "control_directory_subject_map": {
     "checks/schrodinger-controls/": "checks/LinearAlgebra/SchrodingerTransfer/Controls/",
@@ -4948,6 +4957,7 @@
     "GRWTSK/Analysis/InnerProductSpace/Polarization/Checks/Positive/ExactPolarizationContracts.lean": "fdec3da11390853f79b3d064fc99d4d492af8bd9613e111397238e57a16481e8",
     "GRWTSK/Analysis/IntegralTransforms/Checks/Positive/CompactProfileLogarithmicDerivative.lean": "67b6596909ee9ce1ee7ee235ffeead6b61e267e37c0f2011308646527e6bd2e6",
     "GRWTSK/Analysis/Integration/Checks/Positive/ExponentialInterval.lean": "939b813b34a89b460dfd862d4397736a8a7976d2fd1ff7e1f6af9d7238d79819",
+    "GRWTSK/Analysis/Integration/Checks/Positive/ExponentialVolterraL2.lean": "83168a5c6f10946e5c2dac506f35931c18a0118d763cddbff0aaa22ac668fece",
     "GRWTSK/Analysis/Integration/Checks/Positive/TranslationSeamLowerBound.lean": "1c6990791f874fcd3a1dea29776db03851e5c829b93d854140e2d728579306af",
     "GRWTSK/Analysis/IntervalIntegral/Reflection/Checks/Audit.lean": "ce39011242fd7b98359baa1d6fed4ff2c122ac3eadb87c286dc21fe1bbe1f7fe",
     "GRWTSK/Analysis/IntervalIntegral/Reflection/Checks/Negative/ChangedMeasure.lean": "a24e35c0beefdaac435ba34c6e17b82420dc03e62791e5be8f28712e63e46a9a",
@@ -5034,6 +5044,7 @@
     "GRWTSK/NumberTheory/Moebius/Checks/Positive/DyadicEnergy.lean": "ea589af19b98d6faca428e60b9cd58cf300218526ed95e857113e80a3a6d94ff",
     "GRWTSK/NumberTheory/Moebius/Checks/Positive/FiniteLaplaceTransform.lean": "a38b33dd94edac23ecfdef24686586b428b2dd01c4f1ceab673d657a3c54757f",
     "GRWTSK/NumberTheory/Moebius/Checks/Positive/FinitePrimeProductDebt.lean": "33398316be0ddd1fa472376d4c3fcfe025234904cebbb33a48476520f27dc4ca",
+    "GRWTSK/NumberTheory/Moebius/Checks/Positive/LogarithmicMertensBoundary.lean": "7a6b1822d9eb12c4a82e9cc60786fc77f053487020ee397f74c1b45d7b6389eb",
     "GRWTSK/NumberTheory/Moebius/Checks/Positive/MertensSquareEnergyEquivalence.lean": "aa0063633e1036a2dd1e4bb33172249aecea2231a9d93a58ec687482ce8b7ca2",
     "GRWTSK/NumberTheory/Moebius/Checks/Positive/MertensSquareEnergyPowerBound.lean": "850aba90f0a6c0a01fb2da973f67e182120851f5c7cbb6d9eba707343d138043",
     "GRWTSK/NumberTheory/Moebius/Checks/Positive/PrimeFilterGrowth.lean": "b2a2d10cc23ca09de63b6d828840fa1e26910f3258962b4ee0081dd5a5b52453",
@@ -5128,9 +5139,9 @@
     {
       "path": "GRWTSK.lean",
       "original_path": "GRWTSK.lean",
-      "sha256": "c7f4f6b83f14da9c2931a78108fb9e0fab06cfe8120a4e4583d707e080abac83",
+      "sha256": "3e8fe36000518fe166af8ef419854593f4887060a0fe2b314424b2c4323b7d4e",
       "git_blob": "e3b1dfcb676522e935c51be5e0294f29ca037d65",
-      "working_tree_state": "tracked-clean",
+      "working_tree_state": "tracked-modified",
       "source_root": ".",
       "module": "GRWTSK",
       "namespaces": [],
@@ -5245,6 +5256,7 @@
         "GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileWeights",
         "GRWTSK.Analysis.Integration.CompactPolynomialMoments",
         "GRWTSK.Analysis.Integration.CompactWeightedDerivativeMoments",
+        "GRWTSK.Analysis.Integration.ExponentialVolterraL2",
         "GRWTSK.Analysis.Integration.FiniteUnitSumVariation",
         "GRWTSK.Analysis.Integration.PositiveHalfLineCutoffBalance",
         "GRWTSK.Analysis.Integration.TranslationSeamLowerBound",
@@ -5390,6 +5402,7 @@
         "GRWTSK.NumberTheory.Moebius.LaplaceDirichletSeries",
         "GRWTSK.NumberTheory.Moebius.LaplaceHolomorphy",
         "GRWTSK.NumberTheory.Moebius.LaplaceTransform",
+        "GRWTSK.NumberTheory.Moebius.LogarithmicMertensBoundary",
         "GRWTSK.NumberTheory.Moebius.LogarithmicResponse",
         "GRWTSK.NumberTheory.Moebius.MeanSquareGrowth",
         "GRWTSK.NumberTheory.Moebius.MeanSquareLaplaceHolomorphy",
@@ -5482,7 +5495,7 @@
         "inventory": "observed-current-bytes",
         "layout": "not-run-after-inventory-refresh",
         "lean": "not-covered-by-retained-replay",
-        "source_sha256": "c7f4f6b83f14da9c2931a78108fb9e0fab06cfe8120a4e4583d707e080abac83"
+        "source_sha256": "3e8fe36000518fe166af8ef419854593f4887060a0fe2b314424b2c4323b7d4e"
       },
       "runner": "python3 -B scripts/check_ccc_energy.py",
       "other_consumers": [
@@ -5497,6 +5510,7 @@
         "docs/mathematics/Analysis/Fourier/WindowCertificates/angular.md",
         "docs/mathematics/Analysis/InnerProductSpace/causal-response-gram.md",
         "docs/mathematics/Analysis/InnerProductSpace/polarization.md",
+        "docs/mathematics/Analysis/Integration/exponential-volterra-l2.md",
         "docs/mathematics/Analysis/Integration/interval-reflection.md",
         "docs/mathematics/Analysis/NormedSpace/reconstruction.md",
         "docs/mathematics/Analysis/TestFunctions/exponential-moments.md",
@@ -5539,6 +5553,7 @@
         "docs/mathematics/NumberTheory/Moebius/PrimeFilters/conditional-growth.md",
         "docs/mathematics/NumberTheory/Moebius/PrimeFilters/negative-correlation.md",
         "docs/mathematics/NumberTheory/Moebius/PrimeFilters/uniform-supplier-obstruction.md",
+        "docs/mathematics/NumberTheory/Moebius/logarithmic-mertens-boundary.md",
         "docs/mathematics/NumberTheory/Moebius/matched-pickup.md",
         "docs/mathematics/NumberTheory/Moebius/pickup-problem-registry.json",
         "docs/mathematics/NumberTheory/Prime/least-prime.md",
@@ -18136,6 +18151,39 @@
       ]
     },
     {
+      "path": "GRWTSK/Analysis/Integration/Checks/Positive/ExponentialVolterraL2.lean",
+      "original_path": "GRWTSK/Analysis/Integration/Checks/Positive/ExponentialVolterraL2.lean",
+      "sha256": "83168a5c6f10946e5c2dac506f35931c18a0118d763cddbff0aaa22ac668fece",
+      "git_blob": null,
+      "working_tree_state": "untracked",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Analysis.Integration.Checks.Positive.ExponentialVolterraL2",
+      "namespaces": [],
+      "public_declarations": [],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Analysis.Integration.ExponentialVolterraL2",
+        "Lean"
+      ],
+      "reverse_consumers": [],
+      "subject": "Analysis",
+      "object": "Integration",
+      "source_role": "positive-check",
+      "target_path": "GRWTSK/Analysis/Integration/Checks/Positive/ExponentialVolterraL2.lean",
+      "placement_rationale": "positive-check colocated with the mathematical Analysis/Integration object.",
+      "operation": "keep",
+      "logical_status": "statements and proof bodies preserved; relocation makes no new acceptance claim",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "not-run-after-inventory-refresh",
+        "lean": "not-run-for-current-source-and-local-import-closure",
+        "source_sha256": "83168a5c6f10946e5c2dac506f35931c18a0118d763cddbff0aaa22ac668fece"
+      },
+      "runner": "python3 -B scripts/run_lean_validation.py GRWTSK/Analysis/Integration/Checks/Positive/ExponentialVolterraL2.lean",
+      "other_consumers": []
+    },
+    {
       "path": "GRWTSK/Analysis/Integration/Checks/Positive/TranslationSeamLowerBound.lean",
       "original_path": "checks/Analysis/Integration/TranslationSeamLowerBound.lean",
       "sha256": "1c6990791f874fcd3a1dea29776db03851e5c829b93d854140e2d728579306af",
@@ -18402,6 +18450,71 @@
       "runner": "lake build GRWTSK; python3 -B scripts/check_math_trust.py",
       "other_consumers": [
         "evidence/source-manifest.json"
+      ]
+    },
+    {
+      "path": "GRWTSK/Analysis/Integration/ExponentialVolterraL2.lean",
+      "original_path": "GRWTSK/Analysis/Integration/ExponentialVolterraL2.lean",
+      "sha256": "963957d15eab9c20a0194656e8b0fcbee721bebabb9fedd8eef55968b54d12b0",
+      "git_blob": null,
+      "working_tree_state": "untracked",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Analysis.Integration.ExponentialVolterraL2",
+      "namespaces": [
+        "GRWTSK.Analysis.Integration.ExponentialVolterraL2"
+      ],
+      "public_declarations": [
+        {
+          "kind": "def",
+          "name": "exponentialVolterra",
+          "line": 23
+        },
+        {
+          "kind": "theorem",
+          "name": "exponentialVolterra_eq_damped_primitive",
+          "line": 27
+        },
+        {
+          "kind": "theorem",
+          "name": "sq_integral_le_of_damped_deriv",
+          "line": 42
+        },
+        {
+          "kind": "theorem",
+          "name": "exponentialVolterra_sq_integral_le",
+          "line": 108
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "Mathlib.Analysis.SpecialFunctions.ExpDeriv",
+        "Mathlib.MeasureTheory.Integral.IntervalIntegral.AbsolutelyContinuousFun",
+        "Mathlib.Tactic"
+      ],
+      "reverse_consumers": [
+        "GRWTSK.lean",
+        "GRWTSK/Analysis/Integration/Checks/Positive/ExponentialVolterraL2.lean",
+        "GRWTSK/NumberTheory/Moebius/LogarithmicMertensBoundary.lean"
+      ],
+      "subject": "Analysis",
+      "object": "Integration",
+      "source_role": "library",
+      "target_path": "GRWTSK/Analysis/Integration/ExponentialVolterraL2.lean",
+      "placement_rationale": "library colocated with the mathematical Analysis/Integration object.",
+      "operation": "keep",
+      "logical_status": "statements and proof bodies preserved; relocation makes no new acceptance claim",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "not-run-after-inventory-refresh",
+        "lean": "not-covered-by-retained-replay",
+        "source_sha256": "963957d15eab9c20a0194656e8b0fcbee721bebabb9fedd8eef55968b54d12b0"
+      },
+      "runner": "lake build GRWTSK; python3 -B scripts/check_math_trust.py",
+      "other_consumers": [
+        "docs/mathematics/Analysis/Integration/exponential-volterra-l2.md",
+        "docs/reference/documentation-layout.json",
+        "docs/reference/object-source-bindings.json"
       ]
     },
     {
@@ -35790,6 +35903,43 @@
       ]
     },
     {
+      "path": "GRWTSK/NumberTheory/Moebius/Checks/Positive/LogarithmicMertensBoundary.lean",
+      "original_path": "GRWTSK/NumberTheory/Moebius/Checks/Positive/LogarithmicMertensBoundary.lean",
+      "sha256": "7a6b1822d9eb12c4a82e9cc60786fc77f053487020ee397f74c1b45d7b6389eb",
+      "git_blob": null,
+      "working_tree_state": "untracked",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.NumberTheory.Moebius.Checks.Positive.LogarithmicMertensBoundary",
+      "namespaces": [],
+      "public_declarations": [],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.NumberTheory.Moebius.LogarithmicMertensBoundary",
+        "Lean"
+      ],
+      "reverse_consumers": [],
+      "subject": "NumberTheory",
+      "object": "Moebius",
+      "source_role": "positive-check",
+      "target_path": "GRWTSK/NumberTheory/Moebius/Checks/Positive/LogarithmicMertensBoundary.lean",
+      "placement_rationale": "positive-check colocated with the mathematical NumberTheory/Moebius object.",
+      "operation": "keep",
+      "logical_status": "source retains explicit unresolved premise(s)",
+      "open_premises": [
+        "real-cutoff Mertens power bound (supplied only as an explicit hypothesis in a positive interface example)",
+        "natural-cutoff Mertens power bound (supplied only as an explicit hypothesis in a positive interface example)",
+        "MertensLogSquareBound (supplied only as an explicit hypothesis in the positive interface examples)"
+      ],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "not-run-after-inventory-refresh",
+        "lean": "not-run-for-current-source-and-local-import-closure",
+        "source_sha256": "7a6b1822d9eb12c4a82e9cc60786fc77f053487020ee397f74c1b45d7b6389eb"
+      },
+      "runner": "python3 -B scripts/run_lean_validation.py GRWTSK/NumberTheory/Moebius/Checks/Positive/LogarithmicMertensBoundary.lean",
+      "other_consumers": []
+    },
+    {
       "path": "GRWTSK/NumberTheory/Moebius/Checks/Positive/MertensSquareEnergyEquivalence.lean",
       "original_path": "checks/NumberTheory/Moebius/MertensSquareEnergyEquivalence.lean",
       "sha256": "aa0063633e1036a2dd1e4bb33172249aecea2231a9d93a58ec687482ce8b7ca2",
@@ -37180,6 +37330,7 @@
       "reverse_consumers": [
         "GRWTSK.lean",
         "GRWTSK/NumberTheory/Moebius/Checks/Positive/CriticalIntervalBlocks.lean",
+        "GRWTSK/NumberTheory/Moebius/LogarithmicMertensBoundary.lean",
         "GRWTSK/NumberTheory/Moebius/ReciprocalPrefix.lean"
       ],
       "subject": "NumberTheory",
@@ -39906,6 +40057,155 @@
       "other_consumers": [
         "evidence/moebius-response-sources.json",
         "evidence/source-manifest.json"
+      ]
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Moebius/LogarithmicMertensBoundary.lean",
+      "original_path": "GRWTSK/NumberTheory/Moebius/LogarithmicMertensBoundary.lean",
+      "sha256": "fb511a6a916ba559cf01d9e09d70d33dcf5de4d2f60e5bf921e60c0e1f94ca16",
+      "git_blob": null,
+      "working_tree_state": "untracked",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.NumberTheory.Moebius.LogarithmicMertensBoundary",
+      "namespaces": [
+        "GRWTSK.NumberTheory.Moebius.LogarithmicMertensBoundary"
+      ],
+      "public_declarations": [
+        {
+          "kind": "def",
+          "name": "dampedMertensSource",
+          "line": 34
+        },
+        {
+          "kind": "theorem",
+          "name": "dampedMertensSource_eq_mertensPrefix",
+          "line": 38
+        },
+        {
+          "kind": "theorem",
+          "name": "dampedMertensSource_intervalIntegrable",
+          "line": 48
+        },
+        {
+          "kind": "theorem",
+          "name": "damped_wholePickup_eq_exponentialVolterra",
+          "line": 61
+        },
+        {
+          "kind": "theorem",
+          "name": "dampedMertensSource_half",
+          "line": 79
+        },
+        {
+          "kind": "theorem",
+          "name": "dampedMertensSource_half_abs_le_one",
+          "line": 86
+        },
+        {
+          "kind": "theorem",
+          "name": "dampedMertensSource_half_sq_intervalIntegrable",
+          "line": 99
+        },
+        {
+          "kind": "theorem",
+          "name": "verticalLineMass_le_dampedSource",
+          "line": 136
+        },
+        {
+          "kind": "theorem",
+          "name": "verticalLineMass_le_of_source_exp_bound",
+          "line": 170
+        },
+        {
+          "kind": "theorem",
+          "name": "verticalLineMass_le_of_real_mertens_power_bound",
+          "line": 255
+        },
+        {
+          "kind": "theorem",
+          "name": "verticalLineMass_le_of_nat_mertens_power_bound",
+          "line": 289
+        },
+        {
+          "kind": "theorem",
+          "name": "dampedMertensSource_half_sq_integral_zero_one_le",
+          "line": 320
+        },
+        {
+          "kind": "def",
+          "name": "MertensLogSquareBound",
+          "line": 334
+        },
+        {
+          "kind": "theorem",
+          "name": "dampedMertensSource_half_sq_le_tail",
+          "line": 340
+        },
+        {
+          "kind": "theorem",
+          "name": "dampedMertensSource_half_sq_tail_le_three",
+          "line": 374
+        },
+        {
+          "kind": "theorem",
+          "name": "dampedMertensSource_half_sq_integral_le_four",
+          "line": 409
+        },
+        {
+          "kind": "theorem",
+          "name": "verticalLineMass_half_le_of_mertens_log_sq_bound",
+          "line": 433
+        },
+        {
+          "kind": "theorem",
+          "name": "criticalBoundaryVerticalLineUniform_of_mertens_log_sq_bound",
+          "line": 444
+        },
+        {
+          "kind": "theorem",
+          "name": "verticalLineMass_le_sixteen_of_half_le",
+          "line": 449
+        },
+        {
+          "kind": "theorem",
+          "name": "verticalLineMass_le_sixteen_of_mertens_log_sq_bound",
+          "line": 456
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Analysis.Integration.ExponentialVolterraL2",
+        "GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks",
+        "Mathlib.Analysis.SpecialFunctions.ImproperIntegrals"
+      ],
+      "reverse_consumers": [
+        "GRWTSK.lean",
+        "GRWTSK/NumberTheory/Moebius/Checks/Positive/LogarithmicMertensBoundary.lean"
+      ],
+      "subject": "NumberTheory",
+      "object": "Moebius",
+      "source_role": "library",
+      "target_path": "GRWTSK/NumberTheory/Moebius/LogarithmicMertensBoundary.lean",
+      "placement_rationale": "library colocated with the mathematical NumberTheory/Moebius object.",
+      "operation": "keep",
+      "logical_status": "source retains explicit unresolved premise(s)",
+      "open_premises": [
+        "pointwise exponential damped-source envelope (explicit hypothesis of the generic finite-horizon transfer theorem)",
+        "real-cutoff Mertens power bound (explicit hypothesis; the transfer theorem does not supply an exponent)",
+        "natural-cutoff Mertens power bound (explicit hypothesis; the transfer theorem does not supply an exponent)",
+        "MertensLogSquareBound (explicit hypothesis for the tail and boundary theorems; no supplying theorem is admitted in the pinned environment)"
+      ],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "not-run-after-inventory-refresh",
+        "lean": "not-covered-by-retained-replay",
+        "source_sha256": "fb511a6a916ba559cf01d9e09d70d33dcf5de4d2f60e5bf921e60c0e1f94ca16"
+      },
+      "runner": "lake build GRWTSK; python3 -B scripts/check_math_trust.py",
+      "other_consumers": [
+        "docs/mathematics/NumberTheory/Moebius/logarithmic-mertens-boundary.md",
+        "docs/reference/documentation-layout.json",
+        "docs/reference/object-source-bindings.json"
       ]
     },
     {
@@ -49124,17 +49424,17 @@
     }
   ],
   "current_inventory": {
-    "head": "f0bffabda2d465de556427436818faf2ab15ee2e",
-    "lean_source_count": 534,
+    "head": "ddc6c1f58c3f7a6635922584d2ff6f5a6f8028d8",
+    "lean_source_count": 538,
     "counts_by_role": {
       "audit-driver": 35,
-      "library": 331,
+      "library": 333,
       "negative-control": 93,
-      "positive-check": 75
+      "positive-check": 77
     },
     "counts_by_subject": {
       "Algebra": 11,
-      "Analysis": 193,
+      "Analysis": 195,
       "Combinatorics": 8,
       "Data": 1,
       "DynamicalSystems": 16,
@@ -49143,7 +49443,7 @@
       "LinearAlgebra": 49,
       "Logic": 42,
       "MeasureTheory": 5,
-      "NumberTheory": 176,
+      "NumberTheory": 178,
       "Order": 3,
       "Spectral": 25
     },

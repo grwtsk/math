@@ -363,6 +363,9 @@ def preserve_import_normalization_followup(layout):
 def main():
     layout = json.loads(LAYOUT_PATH.read_text())
     preserve_import_normalization_followup(layout)
+    explicit_open_premises = layout.get("explicit_open_premises", {})
+    if not isinstance(explicit_open_premises, dict):
+        raise SystemExit("explicit_open_premises must be a path-to-string-list object")
     migration_verification = (json.loads(MIGRATION_VERIFICATION.read_text())
                               if MIGRATION_VERIFICATION.is_file() else None)
     current_verification = (json.loads(CURRENT_VERIFICATION.read_text())
@@ -371,6 +374,10 @@ def main():
     helpers = runpy.run_path(str(ROOT / "scripts/check_math_layout.py"))
     parse_imports, mask_lean, classify = helpers["imports"], helpers["mask_lean"], helpers["source_role"]
     paths = present_sources()
+    stale_premise_paths = sorted(set(explicit_open_premises) - set(paths))
+    if stale_premise_paths:
+        raise SystemExit("explicit premise annotation names absent source(s): " +
+                         ", ".join(stale_premise_paths))
     escaped = [path for path in paths if not (path == "GRWTSK.lean" or path.startswith("GRWTSK/"))]
     if escaped:
         raise SystemExit("maintained Lean outside canonical root: " + ", ".join(escaped))
@@ -420,6 +427,13 @@ def main():
         open_premises = [entry["name"] for entry in declarations if entry["kind"] == "axiom"]
         if re.search(r"\bsorry\b", masked):
             open_premises.append("contains-sorry-syntax")
+        annotated_premises = explicit_open_premises.get(path, [])
+        if (not isinstance(annotated_premises, list)
+                or any(not isinstance(item, str) or not item.strip()
+                       for item in annotated_premises)):
+            raise SystemExit("invalid explicit premise annotation: " + path)
+        open_premises.extend(item for item in annotated_premises
+                             if item not in open_premises)
         if role == "negative-control":
             logical_status = "intentionally invalid control; rejection required"
         elif open_premises:
@@ -559,6 +573,8 @@ def main():
         }
     elif replay_binding is not None:
         layout["verification_controls"]["full_source_replay_binding"] = replay_binding
+    else:
+        layout["verification_controls"].pop("full_source_replay_binding", None)
     exceptional = repository_state_facts()
     layout["current_inventory"] = {
         "head": command("git", "rev-parse", "HEAD"), "lean_source_count": len(active),
