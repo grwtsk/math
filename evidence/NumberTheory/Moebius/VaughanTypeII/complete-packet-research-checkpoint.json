@@ -2,6 +2,13 @@
   "schema": "vaughan-typeii-complete-packet-research-checkpoint-v1",
   "outcome": "PARTIAL_SOURCE_SPECIFIC_IMPROVEMENT_TARGET_OPEN",
   "source_parent_commit": "399b7659afc803b3bfdafc8ddd8586ad9632ca54",
+  "main_integration": {
+    "starting_head": "9367026ca66eb720af9cc76a25a0ac19aba46a7b",
+    "source_commit": "3f2ecf0acd27eef5b09c1133b683f7ae8fea28f3",
+    "research_commit": "052c979f3ab957cbfd43b7e58e2a3f7c149e0836",
+    "branch": "main",
+    "status_after_integration": "CLEAN"
+  },
   "source_archive": {
     "filename": "grwtsk_typeII_sampled_return.zip",
     "bytes": 5256433,
@@ -29,6 +36,11 @@
       "status": "PASSED"
     }
   ],
+  "fresh_main_checkout_outputs": {
+    "default_replay_report_sha256": "8d27fb561457ecd4213d9cfbd9b18756cfafe1a7bb3f9d8b3cc9d2e9c0a54cb6",
+    "production_replay_report_sha256": "d38f0cc48a554497cb9fbbbb217db6cc51e50df962ff799c8399b8cda0672323",
+    "complete_packet_report_sha256": "2aeaf979b5ac4e3bcbfdc2c883ac520a97cd48cf9502317769f23d5c087b2ed2"
+  },
   "added_source_hashes": {
     "docs/mathematics/NumberTheory/Moebius/Energy/separated-mellin-samples.md": "05157c983d199a82ff7edb077731974beda857e7358f3dbfac1ed7761c86beb7",
     "scripts/number_theory/moebius/vaughan_type_ii/analyze_complete_packet.py": "86a2da7dfb5f14611b9b18b98a35454da765c37a956c992803b589250293e0ae"
@@ -145,11 +157,11 @@
     "status": "NOT_ESTABLISHED"
   },
   "selected_checks": {
-    "math_layout": "PASSED",
-    "documentation_normal": "PASSED",
-    "documentation_optimized": "PASSED",
-    "documentation_controls_normal": "59_PASSED",
-    "documentation_controls_optimized": "59_PASSED",
+    "math_layout": "PASSED_331_LIBRARY_MODULES",
+    "documentation_normal": "PASSED_84_MAINTAINED_PAGES",
+    "documentation_optimized": "PASSED_84_MAINTAINED_PAGES",
+    "documentation_controls_normal": "61_PASSED",
+    "documentation_controls_optimized": "61_PASSED",
     "diff_check": "PASSED"
   },
   "all_scale_arithmetic_bound": "NOT_ESTABLISHED",
