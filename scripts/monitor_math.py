@@ -237,14 +237,34 @@ def lean_code(text):
     return "".join(out)
 
 
-def role(rel):
-    if not rel.startswith("checks/"):
-        return "library-source" if rel.endswith(".lean") else "support"
-    name = Path(rel).stem.lower()
-    if any("control" in part.lower() for part in PurePosixPath(rel).parts[1:-1]) or (
-            "control" in name or any(x in name for x in ("false", "wrong", "excluded", "isnot"))):
-        return "control-fixture"  # Includes positive contract fixtures; not all should fail.
-    return "audit-source"
+def role(rel, role_map=None):
+    """Return an operational role without promoting subject-local checks.
+
+    The authoritative current roles come from docs/math-layout.json.  The path
+    fallback exists for isolated hostile fixtures that deliberately have no
+    repository catalog; it follows the subject-local Checks convention rather
+    than the retired top-level checks/ convention.
+    """
+    if role_map and rel in role_map:
+        declared = role_map[rel]
+        if declared == "library":
+            return "library-source"
+        if declared in {"positive-check", "negative-control"}:
+            return "control-fixture"
+        if declared == "audit-driver":
+            return "audit-source"
+        return "historical-evidence" if declared == "historical-evidence" else "unclassified"
+    if not rel.endswith(".lean"):
+        return "support"
+    parts = PurePosixPath(rel).parts
+    if "Checks" in parts:
+        position = parts.index("Checks")
+        if position + 1 < len(parts) and parts[position + 1] in {"Positive", "Negative"}:
+            return "control-fixture"
+        return "audit-source"
+    if rel.startswith("checks/"):
+        return "control-fixture"
+    return "library-source"
 
 
 def dependency_order(dependencies):
@@ -298,7 +318,7 @@ def dependency_order(dependencies):
     return order, sorted(cycles), sorted(n for n, count in pending.items() if count)
 
 
-def lean_inventory(states, content):
+def lean_inventory(states, content, role_map=None):
     observed_paths = {p[:-5].replace("/", "."): p for p in states if p.endswith(".lean")}
     # Missing tracked files remain in the byte/evidence inventory. A local
     # module graph requires retained regular source bytes from a stable read.
@@ -341,7 +361,7 @@ def lean_inventory(states, content):
                 if not re.fullmatch(r"\s*(?:(?:private|protected)\s+)*", line_prefix):
                     continue  # The identifier `axiom` can also be a local variable.
             admissions.append({"path": rel, "line": code.count("\n", 0, match.start()) + 1,
-                               "token": match[1], "role": role(rel), "classification": "candidate"})
+                               "token": match[1], "role": role(rel, role_map), "classification": "candidate"})
     order, cycles, blocked = dependency_order(dependencies)
     reachable, stack = set(), ["GRWTSK"] if "GRWTSK" in paths else []
     while stack:
@@ -349,15 +369,18 @@ def lean_inventory(states, content):
         if n not in reachable:
             reachable.add(n)
             stack.extend(dependencies[n] - reachable)
-    library = {n for n in paths if any(n == lib or n.startswith(lib + ".") for lib in libs)}
+    library = {n for n in paths
+               if any(n == lib or n.startswith(lib + ".") for lib in libs)
+               and role(paths[n], role_map) == "library-source"}
     return {
         "validity": "not-run: inventory is not Lean elaboration or a proof audit",
         "module_paths": paths, "imports": imports,
         "local_dependencies": {n: sorted(ds) for n, ds in dependencies.items()},
         "dependency_first_order": [paths[n] for n in order],
         "library_compile_candidates": [paths[n] for n in order if n in library],
-        "audit_candidates": [paths[n] for n in order if role(paths[n]) == "audit-source"],
-        "control_fixtures": sorted(p for p in paths.values() if role(p) == "control-fixture"),
+        "audit_candidates": [paths[n] for n in order if role(paths[n], role_map) == "audit-source"],
+        "control_fixtures": sorted(p for p in paths.values()
+                                   if role(p, role_map) == "control-fixture"),
         "cycles": cycles, "cycle_blocked_modules": blocked, "missing_local_imports": missing,
         "unreadable_modules": sorted(row["path"] for row in unavailable.values()),
         "unavailable_module_paths": unavailable,
@@ -808,7 +831,16 @@ def snapshot_anchored(root, output_fd, runs_fd):
     before = git_state(root)
     paths = set(before["tracked"]) | set(before["untracked"])
     first, content = source_scan(root, paths, retain=True)
-    lean = lean_inventory(first, content)
+    role_map = {}
+    try:
+        layout = json.loads(content.get("docs/math-layout.json", "{}"))
+        role_map = {entry["path"]: entry["source_role"]
+                    for entry in layout.get("active_sources", [])
+                    if isinstance(entry, dict) and isinstance(entry.get("path"), str)
+                    and isinstance(entry.get("source_role"), str)}
+    except (TypeError, ValueError):
+        role_map = {}
+    lean = lean_inventory(first, content, role_map)
     evidence = evidence_inventory(first, content)
     after = git_state(root)
     final_paths = set(after["tracked"]) | set(after["untracked"])
@@ -876,9 +908,9 @@ def self_check_anchored(root, fixture, fixture_fd):
     check("nested-comments-and-strings-masked", masked.count("sorry") == 1 and "Ghost" not in masked and len(text) == len(masked))
     paths = {"GRWTSK.lean": {"kind": "file"}, "GRWTSK/A.lean": {"kind": "file"},
              "GRWTSK/B.lean": {"kind": "file"}, "GRWTSK/Unused.lean": {"kind": "file"},
-             "checks/SorryControl.lean": {"kind": "file"}}
+             "GRWTSK/Logic/ProofChecking/Checks/Negative/SorryControl.lean": {"kind": "file"}}
     content = {"GRWTSK.lean": "import GRWTSK.A", "GRWTSK/A.lean": "import GRWTSK.B GRWTSK.Absent",
-               "GRWTSK/B.lean": "import Mathlib", "GRWTSK/Unused.lean": "", "checks/SorryControl.lean": "example : True := by sorry"}
+               "GRWTSK/B.lean": "import Mathlib", "GRWTSK/Unused.lean": "", "GRWTSK/Logic/ProofChecking/Checks/Negative/SorryControl.lean": "example : True := by sorry"}
     lean = lean_inventory(paths, content)
     order = lean["dependency_first_order"]
     check("dependencies-before-users", order.index("GRWTSK/B.lean") < order.index("GRWTSK/A.lean") < order.index("GRWTSK.lean"))

@@ -25,7 +25,7 @@ from unittest import mock
 import uuid
 
 ROOT = Path(__file__).resolve().parents[1]
-AUDIT = "checks/MathTrustAudit.lean"
+AUDIT = "GRWTSK/Logic/ProofChecking/Checks/OwnedDeclarationAudit.lean"
 CHECKER = "scripts/check_math_trust.py"
 LAYOUT_CHECKER = "scripts/check_math_layout.py"
 EXTRAS = [AUDIT, CHECKER, "lean-toolchain", "lakefile.toml", "lake-manifest.json"]
@@ -178,7 +178,11 @@ def source_path_present(root, relative):
 
 
 def git_source_inventory(root):
-    """Working-tree inputs and explicit deleted regular tracked library paths."""
+    """Public library inputs and explicit deleted tracked library paths.
+
+    Subject-local Checks sources are maintained first-party Lean, but they are
+    separate validation roles and must not enter the public replay census.
+    """
     names = subprocess.check_output(
         ["git", "ls-files", "-z", "--cached", "--others", "--exclude-standard",
          "--", "GRWTSK.lean", "GRWTSK"], cwd=root).decode("utf-8", "surrogateescape").split("\0")
@@ -195,7 +199,9 @@ def git_source_inventory(root):
             raise RuntimeError("malformed Git source index record")
         tracked_modes.setdefault(name, set()).add(fields[0])
     sources, deleted = [], []
-    for name in sorted({name for name in names if name.endswith(".lean")}):
+    for name in sorted({name for name in names if name.endswith(".lean") and
+                        (name == "GRWTSK.lean" or
+                         (name.startswith("GRWTSK/") and "/Checks/" not in name))}):
         regular_tracked = bool(tracked_modes.get(name)) and tracked_modes[name] <= {"100644", "100755"}
         if regular_tracked and not source_path_present(root, name):
             deleted.append(name)
@@ -725,7 +731,7 @@ def run_lean_self_test(run, state, results):
     return 0
 
 
-def replay(lean_self_test=False):
+def replay(lean_self_test=False, memory_mib=4096):
     base = ROOT / ".local/math-trust"
     try:
         ignored = subprocess.run(["git", "check-ignore", "-q", "--", ".local/math-trust/"], cwd=ROOT)
@@ -765,6 +771,9 @@ def replay(lean_self_test=False):
         if jobs:
             state["competing_jobs"] = jobs
             raise RuntimeError("BUSY: existing project Lean or verification job")
+        if memory_mib < 1:
+            raise RuntimeError("memory limit must be a positive MiB count")
+        state["lean_memory_limit_mib"] = memory_mib
         if lean_self_test:
             return run_lean_self_test(run, state, results)
         inventory = git_source_inventory(ROOT)
@@ -851,7 +860,8 @@ def replay(lean_self_test=False):
 
         def compile_source(label, source, destination=None):
             stable()
-            argv = [lean, "--trust=0", "--memory=4096", "--threads=1", "-DwarningAsError=true"]
+            argv = [lean, "--trust=0", "--memory=" + str(memory_mib), "--threads=1",
+                    "-DwarningAsError=true"]
             if destination is not None:
                 make_directory(destination.parent)
                 if destination.exists() or destination.is_symlink():
@@ -1421,8 +1431,10 @@ if __name__ == "__main__":
     modes = parser.add_mutually_exclusive_group()
     modes.add_argument("--self-test", action="store_true", help="exercise Python/mock fixtures without invoking Lean")
     modes.add_argument("--lean-self-test", action="store_true", help="validate the native audit on frozen positive and hostile Lean fixtures after BUSY clears")
+    parser.add_argument("--memory-mib", type=int, default=4096,
+                        help="Lean memory ceiling for full source replay (default: 4096; recorded in the receipt)")
     args = parser.parse_args()
     if args.self_test:
         result = unittest.TextTestRunner(verbosity=2).run(unittest.defaultTestLoader.loadTestsFromTestCase(ReplayFixtures))
         raise SystemExit(0 if result.wasSuccessful() else 1)
-    raise SystemExit(replay(lean_self_test=args.lean_self_test))
+    raise SystemExit(replay(lean_self_test=args.lean_self_test, memory_mib=args.memory_mib))

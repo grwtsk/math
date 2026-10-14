@@ -1,0 +1,12 @@
+{
+  "status": "kernel-checked",
+  "source": "/Users/think/Documents/ChatGPT/math 2/euler-p04-rh/InterfaceAudit.lean",
+  "source_sha256": "a4626001c0262a3d8f2fe52d792a59cf65900560a48a3d581d8da752be092caa",
+  "kernel_trust_level": 0,
+  "warnings_as_errors": true,
+  "exit_code": 0,
+  "source_unchanged": true,
+  "stdout": "'EulerP04RH.InterfaceAudit.literal_P04_implies_transform_route' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'EulerP04RH.InterfaceAudit.transform_route_iff_literal_P04' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EulerP04RH.InterfaceAudit.empty_packet_signed_return' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EulerP04RH.InterfaceAudit.empty_packet_error_budget_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "scope": "Generic TransformRouteConstruction is equivalent to literal P04 by an explicit identity head. Empty packet model moves settlement into error. No source kernel, P04 or RH witness is asserted."
+}

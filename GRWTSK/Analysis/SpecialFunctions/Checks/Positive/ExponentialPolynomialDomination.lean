@@ -1,0 +1,13 @@
+import GRWTSK.Analysis.SpecialFunctions.ExponentialPolynomialDomination
+
+set_option linter.hashCommand false
+
+namespace GRWTSK.Analysis.SpecialFunctions.ExponentialPolynomialDomination
+
+#print axioms polynomial_lt_exp_two_mul_div_four
+#print axioms polynomial_lt_exp_two_mul_div_four_of_ge_threshold
+
+#check polynomial_lt_exp_two_mul_div_four
+#check polynomial_lt_exp_two_mul_div_four_of_ge_threshold
+
+end GRWTSK.Analysis.SpecialFunctions.ExponentialPolynomialDomination

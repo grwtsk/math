@@ -1,0 +1,12 @@
+{
+  "status": "kernel-checked",
+  "source": "/Users/think/Documents/ChatGPT/math 2/euler-p04-rh/PickupLaplace.lean",
+  "source_sha256": "7224b1a4143a6cd3f3cb3eafa3640292f1934dd6f618c87d5a1372b125071e9e",
+  "kernel_trust_level": 0,
+  "warnings_as_errors": true,
+  "exit_code": 0,
+  "source_unchanged": true,
+  "stdout": "'EulerP04RH.FEMI.completedPickup_eq_tsum' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EulerP04RH.FEMI.completedPickup_energy' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EulerP04RH.FEMI.atomKernel_laplace' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EulerP04RH.FEMI.laplaceTerm_norm_summable' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EulerP04RH.FEMI.pickupLaplace_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EulerP04RH.FEMI.pickupLaplace_eq_reciprocal' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "scope": "Unconditional actual completed M\u00f6bius pickup Laplace transform for Re z > 1/2, actual L1 convergence, absolute norm-series justification of exchange, and exact finite-horizon energy adapter. No P04 or RH assumption. Positive-half-plane extension is a separate polynomial-energy theorem."
+}

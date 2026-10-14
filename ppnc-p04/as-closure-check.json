@@ -1,0 +1,12 @@
+{
+  "status": "kernel-checked",
+  "source": "/Users/think/Documents/ChatGPT/math 2/ppnc-p04/ASClosure.lean",
+  "source_sha256": "ce0c0873e6068c37a825471fc6237eac2b60cd77e9f5ec8fe7b36e7494f74195",
+  "kernel_trust_level": 0,
+  "warnings_as_errors": true,
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "exit_code": 0,
+  "stdout": "'PPNCP04.ASClosure.initial_potential_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.ASClosure.completionFromAS' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.ASClosure.AS_implies_literal_P04' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "scope": "Full generic original AS closure to literal P04, constructing actual finite source/reserve certificates from explicit ASObligation, complete budgeted prime chains, and separately supplied all-horizon prime-harmonic estimate. No arithmetic reserve, AS bound, or P04 is asserted unconditionally."
+}

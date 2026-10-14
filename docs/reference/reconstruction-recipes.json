@@ -1,0 +1,125 @@
+{
+  "schema": "grwtsk-reconstruction-recipes-v2",
+  "schema_version": 2,
+  "policy_version": "rigor-and-reconstruction-addendum-1.0.0",
+  "snapshot_scope": "Git-tracked and nonignored untracked regular artifacts in the current working tree. Tracked deletions, conflicts, symlinks, nonregular entries, submodules, ignored caches, credentials, and Git administration are reported or excluded separately.",
+  "default_reproduction": {
+    "source_and_configuration": "retained-literal",
+    "documentation": "retained-literal",
+    "evidence": "immutable-observation",
+    "content_addressed_evidence_object": "immutable-observation",
+    "historical_check_record": "immutable-observation"
+  },
+  "generated_artifacts": {
+    "docs/reference/math-source-catalog.json": {
+      "recipe_id": "GENERATE.MATH_SOURCE_CATALOG.001",
+      "generator": "scripts/generate_math_source_catalog.py",
+      "content_inputs": ["docs/math-layout.json", "scripts/generate_math_source_catalog.py"],
+      "validation_reads": ["docs/reference/math-source-catalog.json in check mode"],
+      "read_set_status": "complete for rendered bytes; filesystem encoding defaults remain an adapter assumption",
+      "check_command": ["python3", "-B", "scripts/generate_math_source_catalog.py"],
+      "render_command": ["python3", "-B", "scripts/generate_math_source_catalog.py", "--render"],
+      "environment": {"network": "forbidden", "locale": "UTF-8 JSON with ensure_ascii", "randomness": "none", "clock": "not read"}
+    },
+    "docs/reference/results.md": {
+      "recipe_id": "GENERATE.DOCUMENTATION_RESULTS.001",
+      "generator": "scripts/check_documentation.py",
+      "content_inputs": ["docs/reference/results.json", "scripts/check_documentation.py"],
+      "validation_reads": ["record source/page/evidence paths named by docs/reference/results.json", "README.md and the fixed documentation navigation pages", "all top-level docs/*.md names", "all local Markdown link targets", "docs/reference/results.md after rendering"],
+      "read_set_status": "known dynamic validation reads are declared by class but are not execution-traced",
+      "check_command": ["python3", "-B", "scripts/check_documentation.py"],
+      "render_command": ["python3", "-B", "scripts/check_documentation.py", "--render"],
+      "environment": {"network": "forbidden", "locale": "UTF-8 text", "randomness": "none", "clock": "not read"}
+    },
+    "docs/reference/repository-artifact-catalog.json": {
+      "recipe_id": "GENERATE.REPOSITORY_ARTIFACT_CATALOG.001",
+      "generator": "scripts/check_repository_conformance.py",
+      "content_inputs": ["Git-visible path membership and exact regular-file bytes excluding this output's bytes", "Git HEAD commit, symbolic branch, object format, index stages and working-tree status", "Git blob identities and bytes for clean tracked files", "filesystem path bytes, file modes and exceptional path states", "docs/math-layout.json", "docs/reference/reconstruction-recipes.json", "docs/reference/rules/registry-schema.json", "docs/reference/rules/registry.json", "evidence/policy-inputs/GRWTSK_Lean_Migration_With_Rigor_Addendum.md", "evidence/policy-inputs/GRWTSK_Rigor_and_Reconstruction_Addendum.md", "scripts/check_repository_conformance.py", "scripts/monitor_math.py", "scripts/generate_math_source_catalog.py", "scripts/check_documentation.py", "docs/reference/results.json"],
+      "validation_reads": ["registered generated outputs", "documentation validation reads declared by GENERATE.DOCUMENTATION_RESULTS.001", "content-addressed basis objects"],
+      "read_set_status": "Git-visible content is closed by catalog identity; generated-output checks are in-process byte-freshness checks, while ignored/external reads and declared command execution are not traced",
+      "check_command": ["python3", "-B", "scripts/check_repository_conformance.py"],
+      "render_command": ["python3", "-B", "scripts/check_repository_conformance.py", "--render"],
+      "environment": {"network": "forbidden", "locale": "path bytes retained as hexadecimal", "randomness": "none", "clock": "not embedded"}
+    }
+  },
+  "authoritative_refreshers": {
+    "docs/math-layout.json": {
+      "writer": "scripts/update_math_source_inventory.py",
+      "classification": "mutable-authoritative-input",
+      "read_set_status": "static consumer corpus excludes every registered generated view; complete executed-read tracing remains pending",
+      "excluded_generated_views": ["docs/reference/math-source-catalog.json", "docs/reference/results.md", "docs/reference/repository-artifact-catalog.json"]
+    }
+  },
+  "content_addressed_materializers": {
+    "evidence/repository-reconstruction-basis/objects/<sha256-prefix>/<sha256>.gz": {
+      "writer": "scripts/check_repository_conformance.py --capture-basis",
+      "classification": "content-addressed-retained-input",
+      "input_scope": "dirty and untracked regular bytes in the Git-visible snapshot",
+      "determinism": "gzip level 9, empty filename and mtime zero; restored bytes are directly compared",
+      "read_set_status": "implemented for cataloged regular artifacts"
+    }
+  },
+  "observation_writers": [
+    {"writer": "scripts/check_repository_conformance.py", "output_pattern": "evidence/repository-conformance-<UTC>-<observation-sha256-prefix>.json", "output_policy": "fresh Git-visible exclusive receipt describing the immediately prior snapshot", "retained_public_history": null, "read_set_status": "static Git-visible inventory is bound; ignored and external process reads remain untraced blockers"},
+    {"writer": "scripts/check_inputs.py", "output_pattern": ".local/input-controls/<run>/receipt.json", "output_policy": "fresh ignored receipt for normal and optimized hostile controls", "retained_public_history": "evidence/input-controls.json", "read_set_status": "fixture sources and manifest gates are explicit; Python and Git process reads are not traced"},
+    {"writer": "scripts/check_ordered_product_determinant.py", "output_pattern": ".local/ordered-product-determinant/<run>/{receipt.json,logs,build}", "output_policy": "fresh ignored run tree plus shared ignored trust lock", "retained_public_history": null, "read_set_status": "runner-declared sources and toolchain bindings; dynamic process reads are not traced"},
+    {"writer": "scripts/check.py", "output_pattern": ".local/source-check-*/receipt.json", "output_policy": "fresh ignored exclusive receipt", "retained_public_history": "evidence/check-results.json", "read_set_status": "scoped manifest and compiler inputs declared; dynamic process reads not traced"},
+    {"writer": "scripts/check_moser.py", "output_pattern": ".local/moser-check-*/receipt.json", "output_policy": "fresh ignored exclusive receipt", "retained_public_history": "evidence/moser-check-results.json", "read_set_status": "source manifest bound; current manifest is stale"},
+    {"writer": "scripts/check_finite.py", "output_pattern": ".local/finite-check-*/receipt.json", "output_policy": "fresh ignored exclusive receipt", "retained_public_history": null, "read_set_status": "pure Python finite oracle; acceptance checks are explicit in normal and optimized modes"},
+    {"writer": "scripts/check_rh_target.py", "output_pattern": ".local/rh-target-*/receipt.json", "output_policy": "fresh ignored exclusive receipt", "retained_public_history": "evidence/rh-target-checks.json", "read_set_status": "runner-declared inputs; dynamic process reads not traced"},
+    {"writer": "scripts/check_ccc_energy.py", "output_pattern": ".local/ccc-energy-*/receipt.json", "output_policy": "fresh ignored exclusive receipt", "retained_public_history": "evidence/ccc-energy-checks.json", "read_set_status": "runner-declared inputs; dynamic process reads not traced"},
+    {"writer": "scripts/check_recording_scale.py", "output_pattern": ".local/recording-scale-*/receipt.json", "output_policy": "fresh ignored exclusive receipt", "retained_public_history": "evidence/recording-scale-checks.json", "read_set_status": "runner-declared inputs; dynamic process reads not traced"},
+    {"writer": "scripts/check_original_pickup.py", "output_pattern": ".local/original-pickup-*/receipt.json", "output_policy": "fresh ignored exclusive receipt", "retained_public_history": "evidence/original-pickup-checks.json", "read_set_status": "runner-declared inputs; dynamic process reads not traced"},
+    {"writer": "scripts/check_pickup_cutoff_laplace.py", "output_pattern": ".local/cutoff-laplace-*/receipt.json", "output_policy": "fresh ignored exclusive receipt", "retained_public_history": "evidence/cutoff-laplace-checks.json", "read_set_status": "runner-declared inputs; dynamic process reads not traced"},
+    {"writer": "scripts/check_prime_cascade.py", "output_pattern": ".local/prime-cascade-*/receipt.json", "output_policy": "fresh ignored exclusive receipt", "retained_public_history": "evidence/prime-cascade-checks.json", "read_set_status": "runner-declared inputs; dynamic process reads not traced"},
+    {"writer": "scripts/check_prime_window_laplace.py", "output_pattern": ".local/prime-window-*/receipt.json", "output_policy": "fresh ignored exclusive receipt", "retained_public_history": "evidence/prime-window-laplace-checks.json", "read_set_status": "runner-declared inputs; dynamic process reads not traced"},
+    {"writer": "scripts/check_ten_martini.py", "output_pattern": ".local/ten-martini-*/receipt.json", "output_policy": "fresh ignored exclusive receipt", "retained_public_history": "evidence/ten-martini-checks.json", "read_set_status": "runner-declared inputs; dynamic process reads not traced"}
+  ],
+  "remaining_fixed_observation_writers": [
+    {"writer": "asbn-p04/check_lean.py", "output": "euler-p04-rh/lean-check.json", "status": "known-defect-must-not-run", "reason": "execution is not technically blocked: fixed overwrite and empty-source execution can replace historical evidence with a vacuous observation"}
+  ],
+  "parameterized_writers": [
+    {"writer": "scripts/diagnose_moebius_shell.py", "output_argument": "--output / --dense-output", "restriction": "dense output must be below .local; primary output is caller-selected", "classification": "deterministic diagnostic for exact argv", "status": "not execution-traced"},
+    {"writer": "scripts/generate_moebius_response_manifest.py", "output_argument": "--output", "restriction": "caller-selected path", "classification": "portable manifest candidate", "status": "current retained output is stale and remains an observation"},
+    {"writer": "scripts/check_fourier_controls.py", "output_argument": "--output", "restriction": "must name a fresh descendant of repository .local", "classification": "ignored execution observation", "status": "destination constrained; process reads remain untraced"},
+    {"writer": "scripts/test_moebius_owner_census.py", "output_argument": "--output", "restriction": "optional caller-selected path", "classification": "test observation", "status": "not execution-traced"},
+    {"writer": "scripts/moebius_response_inputs.py", "output_argument": "caller state directory", "restriction": "writes dependency-objects beneath caller-supplied state", "classification": "dependency-object materializer", "status": "output membership and process reads are not traced"},
+    {"writer": "evidence/Analysis/InnerProductSpace/CausalRealization/2026-10-11/restore.py", "output_argument": "--destination", "restriction": "absent absolute destination", "classification": "historical restoration", "status": "scoped archive only"}
+  ],
+  "external_writers": [
+    {"writer": "scripts/export_math_bundle.py", "destination_contract": "fresh directory below /private/tmp", "classification": "external export", "status": "cannot write repository-visible output through the supported CLI"}
+  ],
+  "ignored_writer_families": [
+    ".local/math-layout and .local/math-monitor observations",
+    ".local/math-trust and family-runner replay receipts",
+    ".local/checks/moebius-response and .local/causal-realization-replay",
+    ".local/post-branch-formalization and .local/ccc-control-soundness",
+    ".local interface-check JSON observations",
+    "family-runner logs, progress/failure receipts, source freezes and build outputs beyond their primary receipt"
+  ],
+  "meta_artifact_boundary": {
+    "catalog": "docs/reference/repository-artifact-catalog.json",
+    "rule": "The catalog does not hash its own bytes. Its deterministic recipe and a separate observation bind the rendered bytes, avoiding a self-hash loop.",
+    "receipt_pattern": "evidence/repository-conformance-*.json",
+    "receipt_rule": "A receipt describes a prior snapshot and never requires its own digest as an input. A later observation may hash it as immutable evidence."
+  },
+  "historical_reconstruction": {
+    "causal_realization_archive": {
+      "scope": "evidence/Analysis/InnerProductSpace/CausalRealization/2026-10-11",
+      "restorer": "evidence/Analysis/InnerProductSpace/CausalRealization/2026-10-11/restore.py",
+      "index": "evidence/Analysis/InnerProductSpace/CausalRealization/2026-10-11/archive-index.json",
+      "object_pattern": "evidence/Analysis/InnerProductSpace/CausalRealization/2026-10-11/objects/<sha256-prefix>/<sha256>.gz",
+      "object_count": 2770,
+      "object_membership_sha256": "3094a0c1150b660cd1be62a0f5ee3ff9ab835765f22ad34c5a34b2c6e4d3740b",
+      "destination_contract": "caller-supplied absent absolute directory; the restorer recreates indexed paths and verifies bytes according to the archive index",
+      "verification_command": ["python3", "-B", "evidence/Analysis/InnerProductSpace/CausalRealization/2026-10-11/restore.py", "--verify"],
+      "claim_limit": "Historical archive only; not repository-wide current-source reconstruction."
+    }
+  },
+  "declared_exclusions": [
+    {"path": ".git/", "reason": "Git administrative state; repository input is represented by index, HEAD, status, and object identities."},
+    {"path": ".lake/", "reason": "Generated build products and dependency objects; identities used by a verification receipt must be declared separately."},
+    {"path": ".local/", "reason": "Ignored private run outputs, caches, and migration archive; no public reconstruction claim may silently depend on them."},
+    {"path": "ignored paths", "reason": "Out of the Git-visible snapshot. If any checker reads one, that read is an undeclared-input failure."}
+  ]
+}

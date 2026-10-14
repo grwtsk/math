@@ -64,7 +64,7 @@
     "canonical_source_sha256": "4bed27e7c490006f93c462cee2e088c9d6655678da35d1e926a7d3cd75d3a892",
     "Lean": "4.33.0",
     "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
-    "public_check": "checks/CommonJCounterexampleAudit.lean"
+    "public_check": "GRWTSK/LinearAlgebra/CommonJCounterexamples/Checks/Audit.lean"
   },
   "local_direction": "R.A. Jacob Martone",
   "formalization_and_checking_assistance": "OpenAI Codex",

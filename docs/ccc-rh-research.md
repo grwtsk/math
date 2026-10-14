@@ -1,5 +1,7 @@
 # CCC pickup energy and the remaining Riemann hypothesis bound
 
+The [subject-based criteria guide](mathematics/NumberTheory/Zeta/riemann-hypothesis-criteria.md) links the present source modules and distinguishes the conditional returns, equivalent arithmetic interfaces and separate missing bridges.
+
 The exact closed Möbius pickup has checked conditional returns to Mathlib's literal `RiemannHypothesis`. P04, its complete signed cross-energy polynomial bound, remains open. A broader sufficient condition now retains a separate bound for every positive exponential rate; that arithmetic condition also remains open. The two attached papers provide representation and spectral tools, but neither supplies either bound. This is a reconstruction and application of established mathematics, with local mathematical direction by R.A. Jacob Martone and formalization assistance by OpenAI Codex. No unconditional RH proof or mathematical originality claim is made.
 
 ## Exact arithmetic objects
@@ -66,14 +68,14 @@ Thus `riemannHypothesis_of_pickupCrossPoly` has exactly the open P04 premise. Th
 
 ## Growth rates, convergence boundaries and every real time
 
-The continuation in `EnergyContinuum.lean` proves a sufficient condition beyond the polynomial class:
+The continuation in [EnergyAbscissa.lean](../GRWTSK/NumberTheory/Moebius/EnergyAbscissa.lean) contains a sufficient condition beyond the polynomial class:
 
 $$
 \forall\varepsilon>0\ \exists C_\varepsilon\ge0
 \forall T\ge0:\quad \mathcal X(T)\le C_\varepsilon e^{\varepsilon T}.
 $$
 
-The constant may depend on the rate, but must bound every time. One rate, finitely many rates, or a constant chosen separately at each time does not satisfy this proposition. Polynomial P04 implies this all-rate condition, with the explicit factorial cost in `GrowthBounds.lean`; no converse to polynomial P04 is asserted.
+The constant may depend on the rate, but must bound every time. One rate, finitely many rates, or a constant chosen separately at each time does not satisfy this proposition. Polynomial P04 implies this all-rate condition, with the explicit factorial cost in [PolynomialSubexponential.lean](../GRWTSK/Analysis/Asymptotics/PolynomialSubexponential.lean); no converse to polynomial P04 is asserted.
 
 Define the actual pickup convergence boundary by
 
@@ -97,7 +99,7 @@ $$
 
 Each condition implies RH through the actual signed Laplace transform and its proved reciprocal-zeta identity. None has been proved unconditionally. The integral notation in this equivalence denotes genuine integrability, rather than the default value of a Bochner integral when integrability fails. No converse from RH is formalized.
 
-`SampledBudgets.lean` proves that polynomial P04 at every natural time is equivalent to all-real P04. It also proves the sampled/all-real equivalence for the all-rate condition. The explicit between-sample estimate is
+[IntegerSampleGrowth.lean](../GRWTSK/NumberTheory/Moebius/IntegerSampleGrowth.lean) contains the equivalence of polynomial P04 at every natural time with all-real P04. It also contains the sampled/all-real equivalence for the all-rate condition. The explicit between-sample estimate is
 
 $$
 \mathcal X(T)\le\mathcal X(\lceil T\rceil)+2(1+T)^2,\qquad T\ge0.
@@ -105,7 +107,7 @@ $$
 
 This uses monotonicity of energy, not of signed cross-energy. A sampled polynomial witness $(C,r)$ gives the all-real witness $(C2^r+2,\max(r,2))$. A sampled energy exponential bound gains precisely a factor $e^\varepsilon$. Every sample is quantified; finite numerical evidence does not meet these contracts.
 
-`ResidualBudgets.lean` permits an independently identified continuous comparison waveform $g$, with its entire signed difference retained:
+[ComparisonEnergy.lean](../GRWTSK/NumberTheory/Moebius/ComparisonEnergy.lean) permits an independently identified continuous comparison waveform $g$, with its entire signed difference retained:
 
 $$
 \mathcal E_W(T)\le2\mathcal E_g(T)+2\mathcal E_{W-g}(T).
@@ -178,6 +180,6 @@ Both the interval shrinkage and finite-size error survive any proposed limiting 
 
 ## Local verification
 
-Run `lake build --wfail` and `python3 scripts/check_ccc_energy.py`. The latter freshly elaborates and exports the complete selected project import closure at trust zero, checks literal consumer contracts, records all declarations owned by the new modules and their transitive axioms, and rejects removal of P04, replacement of a bound by a determinant identity, alteration of the almost Mathieu phase, substitution of one damping for all dampings, finite samples for every sample, and omission of the comparison residual. Pinned dependency objects are used. The current receipt is `evidence/ccc-energy-checks.json`.
+Run `lake build --wfail` and `python3 scripts/check_ccc_energy.py`. The latter freshly elaborates and exports the complete selected project import closure at trust zero, checks literal consumer contracts, records all declarations owned by the new modules and their transitive axioms, and rejects removal of P04, replacement of a bound by a determinant identity, alteration of the almost Mathieu phase, substitution of one damping for all dampings, finite samples for every sample, and omission of the comparison residual. Pinned dependency objects are used. `evidence/ccc-energy-checks.json` is a retained prior observation; a fresh run writes a new ignored `.local/ccc-energy-*/receipt.json` rather than overwriting that history.
 
 These sources are local candidates. Cross-repository source identities and recovery receipts remain in ignored local records; no upstream acceptance, publication, remote write, or manuscript build follows from this scoped check. The mathematical residual is an unconditional actual arithmetic supplier: polynomial P04 would suffice, as would the broader every-rate subexponential condition or, equivalently in this formalization, $\alpha_W=0$. All remain open.

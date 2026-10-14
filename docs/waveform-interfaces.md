@@ -30,6 +30,6 @@ If reconstruction error is at most `delta`, the energy error is at most `delta*(
 
 ## Replay and claim status
 
-Run `python3 checks/Analysis/Fourier/Controls/check.py --output <absent-directory>` in the pinned checkout with dependencies already installed. It compiles selected sources into fresh objects, checks consumers/axioms, and requires six unsupported inferences to fail. Its receipt records exact input hashes. It grants no effect authority and uses no independent human reviewer.
+Run `python3 scripts/check_fourier_controls.py --output <absolute-absent-directory>` in the pinned checkout with dependencies already installed. It compiles selected sources into fresh objects, checks consumers/axioms, and requires six unsupported inferences to fail. Its receipt records exact input hashes. It grants no effect authority and uses no independent human reviewer.
 
 Finite serialization tests can establish the tested byte outcomes. Universal implementation refinement additionally requires source-bound encoder/parser/validation/target/identity proofs and explicit compiler, library, memory and resource semantics. Mathematical interfaces or a passing finite corpus cannot supply those obligations. SHA-256 input correctness is distinct from collision freedom.

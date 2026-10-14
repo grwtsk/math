@@ -10,4 +10,9 @@ This is a reusable conditional adapter. An exact source/readout identity and bot
 
 [The fuller waveform interface](../../../waveform-interfaces.md) retains these distinctions. [Its prior receipt](../../../../evidence/waveform-checks.json) is historical at former paths; this documentation does not claim relocated-source replay or an actual P04/RH proof.
 
+The [catalog record](../../../reference/results.json) retains its earlier source
+hash separately from the observed current hash. The present source differs from
+that binding, and current verification is not run. The historical predecessor
+receipt does not certify the present split module.
+
 Human mathematical direction: R.A. Jacob Martone; OpenAI Codex assistance; classical estimates and direct Mathlib origins retained. Local MIT, Mathlib Apache-2.0; no originality claim.
