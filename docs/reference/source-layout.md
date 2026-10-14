@@ -18,6 +18,11 @@ mixed file at mathematical declaration boundaries instead of renaming an
 entire campaign. Cross-subject applications import the actual subject modules.
 
 The machine-readable path and source-hash index is [math-layout.json](../math-layout.json).
+
+Newly received [mathematical source candidates](source-intake.md) have a separate
+source-identity and contribution inventory. Their intake status does not add them
+to the project umbrella or establish native proof acceptance.
+
 The library umbrella imports every present library module in dependency order.
 The waveform cluster has been split into integer Fourier series, Parseval,
 window certificates, norm error inequalities, polynomial asymptotic bounds,

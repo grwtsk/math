@@ -43,47 +43,18 @@
       "path": "GRWTSK/NumberTheory/Moebius/FiniteEulerProduct.lean",
       "exit_code": 0,
       "seconds": 1.5844987499999998,
-      "argv": [
-        "/Users/local/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
-        "--trust=0",
-        "--memory=4096",
-        "--threads=1",
-        "-DwarningAsError=true",
-        "--root=/Users/local/Desktop/math/.local/finite-euler-product-checks/replay-qm1mh5wb/source",
-        "-o",
-        "/Users/local/Desktop/math/.local/finite-euler-product-checks/replay-qm1mh5wb/build/GRWTSK/NumberTheory/Moebius/FiniteEulerProduct.olean",
-        "/Users/local/Desktop/math/.local/finite-euler-product-checks/replay-qm1mh5wb/source/GRWTSK/NumberTheory/Moebius/FiniteEulerProduct.lean"
-      ],
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
       "path": "checks/NumberTheory/Moebius/FiniteEulerProduct.lean",
       "exit_code": 0,
       "seconds": 2.445562125,
-      "argv": [
-        "/Users/local/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
-        "--trust=0",
-        "--memory=4096",
-        "--threads=1",
-        "-DwarningAsError=true",
-        "--root=/Users/local/Desktop/math/.local/finite-euler-product-checks/replay-qm1mh5wb/source",
-        "/Users/local/Desktop/math/.local/finite-euler-product-checks/replay-qm1mh5wb/source/checks/NumberTheory/Moebius/FiniteEulerProduct.lean"
-      ],
       "output_sha256": "c21040bafed2307d9f8ec440ed06be8fb3b8b828a172ec7f07117f34d5b1eabf"
     },
     {
       "path": "checks/NumberTheory/Moebius/FiniteEulerProduct/Controls/MissingDebt.lean",
       "exit_code": 1,
       "seconds": 1.4643071250000004,
-      "argv": [
-        "/Users/local/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
-        "--trust=0",
-        "--memory=4096",
-        "--threads=1",
-        "-DwarningAsError=true",
-        "--root=/Users/local/Desktop/math/.local/finite-euler-product-checks/replay-qm1mh5wb/source",
-        "/Users/local/Desktop/math/.local/finite-euler-product-checks/replay-qm1mh5wb/source/checks/NumberTheory/Moebius/FiniteEulerProduct/Controls/MissingDebt.lean"
-      ],
       "output_sha256": "1f0f65c7e3c1f6b57575feb17857b50357ded88fbb1d3f703ee4d728876ee0c6",
       "expected_failure": true
     },
@@ -91,15 +62,6 @@
       "path": "checks/NumberTheory/Moebius/FiniteEulerProduct/Controls/OpenCutoff.lean",
       "exit_code": 1,
       "seconds": 2.022955458,
-      "argv": [
-        "/Users/local/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
-        "--trust=0",
-        "--memory=4096",
-        "--threads=1",
-        "-DwarningAsError=true",
-        "--root=/Users/local/Desktop/math/.local/finite-euler-product-checks/replay-qm1mh5wb/source",
-        "/Users/local/Desktop/math/.local/finite-euler-product-checks/replay-qm1mh5wb/source/checks/NumberTheory/Moebius/FiniteEulerProduct/Controls/OpenCutoff.lean"
-      ],
       "output_sha256": "b5974bcbcdca6e9c621d85e1e6863a57d01bd8e84743f0ec9f36ca3d8ab01903",
       "expected_failure": true
     }
@@ -175,5 +137,11 @@
       "type": "\u2200 {R : Type u_1} [inst : CommRing R] (f : ArithmeticFunction R) (N : \u2115),\n  \u2211 S \u2208 N.primesLE.powerset with \u220f p \u2208 S, p \u2264 N, \u2191(\u03bc (\u220f p \u2208 S, p)) * f (\u220f p \u2208 S, p) = \u2211 n \u2208 Finset.Icc 1 N, \u2191(\u03bc n) * f n",
       "unsafe": false
     }
-  ]
+  ],
+  "public_evidence_projection": {
+    "private_execution_record_sha256": "e3df0b4fc5e2a57f54e0389322eaf73d72ac104687ac3188d2ce58cb655a42a3",
+    "excluded": "Host paths and operational invocation vectors; full original retained in private custody",
+    "retained": "Exact source/checker/toolchain identities, results, timings, selected checks, owned declarations and axioms",
+    "new_proof_replay": false
+  }
 }

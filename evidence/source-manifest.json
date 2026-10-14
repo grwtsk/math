@@ -484,7 +484,7 @@
     "checks/NumberTheory/Moebius/FiniteEulerProduct/Controls/MissingDebt.lean": "f557f6427e8e21b0d922d3fec460f4101ffd4dc2f82d98d1fe42b9d5ee3129b0",
     "checks/NumberTheory/Moebius/FiniteEulerProduct/Controls/OpenCutoff.lean": "7bf45809e88e44aacf618e99f968db8a34e7863f6f8bd05b08d42eea697a16d8",
     "scripts/check_finite_euler_product.py": "1991fb7f8632f763828414cef4606bb4014bfb0726eec4ee0e77a41de873dcae",
-    "evidence/NumberTheory/Moebius/finite-euler-product-checks.json": "e3df0b4fc5e2a57f54e0389322eaf73d72ac104687ac3188d2ce58cb655a42a3",
+    "evidence/NumberTheory/Moebius/finite-euler-product-checks.json": "c2b306100b5bdc20048e8e57e31589f4d9b140231d3c7804873d9d76f1c11ec7",
     "docs/mathematics/NumberTheory/Moebius/finite-euler-product.md": "cc40b67c518f5dd6f5b775bb8289154285c147736c9812db800986f772a7ac7f"
   },
   "axiom_policy": "Lean standard classical axioms propext, Classical.choice, Quot.sound permitted; sorryAx and other axioms rejected; prime exact observed list reported, Moser exact frozen lists matched.",
@@ -816,6 +816,13 @@
     "mathlib_source_rebuilt": false,
     "whole_repository_replay": false,
     "independent_human_proof_review": false,
-    "rh_proved": false
+    "rh_proved": false,
+    "public_evidence_projection": {
+      "original_execution_record_sha256": "e3df0b4fc5e2a57f54e0389322eaf73d72ac104687ac3188d2ce58cb655a42a3",
+      "public_receipt_sha256": "c2b306100b5bdc20048e8e57e31589f4d9b140231d3c7804873d9d76f1c11ec7",
+      "host_paths_and_operational_invocations_excluded": true,
+      "source_results_and_axioms_unchanged": true,
+      "new_native_replay": false
+    }
   }
 }

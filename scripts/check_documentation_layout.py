@@ -4,6 +4,7 @@ Explicit checks remain effective with Python optimization enabled.
 """
 from pathlib import Path
 import hashlib,html,json,re,subprocess,sys,unicodedata,stat,os
+import documentation_indexes as indexes
 from urllib.parse import unquote,urlsplit
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -209,7 +210,9 @@ def git_environment():
 def git_arguments_allowed(arguments):
     fixed=(['rev-parse','--show-toplevel'],
            ['ls-files','-z','--cached','--others','--exclude-standard','--','docs','README.md'],
-           ['ls-files','-z','--deleted','--','docs','README.md'])
+           ['ls-files','-z','--deleted','--','docs','README.md'],
+           ['ls-files','-z','--cached','--others','--exclude-standard','--','GRWTSK'],
+           ['ls-files','-z','--deleted','--','GRWTSK'])
     if arguments in fixed:return True
     if len(arguments)==3 and arguments[:2]==['cat-file','-t']:
         return re.fullmatch('[0-9a-f]{40}',arguments[2]) is not None
@@ -259,6 +262,18 @@ def visible_markdown_inventory(root):
             continue
         names.add(name)
     return names
+def visible_source_inventory(root):
+    deleted=git_visible_names(git_bytes(root,['ls-files','-z','--deleted','--','GRWTSK']),'Git-deleted sources')
+    visible=git_visible_names(git_bytes(root,['ls-files','-z','--cached','--others','--exclude-standard','--','GRWTSK']),'Git-visible sources')
+    require(deleted<=visible,'Git-deleted source is outside visible inventory')
+    names=set()
+    for name in sorted(visible):
+        if not name.endswith('.lean'):continue
+        if name in deleted:
+            require(not os.path.lexists(root/name),'Git-deleted source path exists: '+name);continue
+        require(safe(root,name).is_file(),'nonregular inventory source: '+name)
+        names.add(name)
+    return names
 def observe_inputs(root,names,seed=None):
     raw_by_name={};observations={}
     for name,(raw,observation) in (seed or {}).items():
@@ -280,9 +295,13 @@ def live_input_names(layout):
     for page in layout.get('pages',{}).values():
         if isinstance(page,dict) and 'primary_source' in page:names.add(page['primary_source'])
         if isinstance(page,dict) and page.get('status')=='fresh-selected':names.add(page.get('evidence',''))
+    if 'navigation' in layout:names.update({indexes.SUMMARY_PATH,*indexes.INPUT_PATHS})
     require(all(canonical_name(name) for name in names),'noncanonical live input path')
     return names
-def render_navigation(layout):
+def render_navigation(layout,summary=None):
+    if 'navigation' in layout:
+        require(summary is not None,'missing navigation inventory')
+        return indexes.render_overview(summary)
     text='# Mathematical documentation\n\nBrowse by mathematical subject and object, matching the Lean source organization. Start with [the least-prime example](start/least-prime.md), [verification](how-to/verify.md), or the [selected result catalog](reference/results.md).\n'
     for subject in sorted({p['subject'] for p in layout['pages'].values() if 'subject' in p}):
         text+='\n## '+subject+'\n\n'
@@ -290,6 +309,19 @@ def render_navigation(layout):
             if p.get('subject')==subject:text+='- ['+p['title']+']('+str(Path(path).relative_to('docs'))+')\n'
     text+='\n## Reading and verification\n\n[Evidence roles](explanation/evidence.md) · [Documentation standard](explanation/documentation.md) · [Source layout](reference/source-layout.md) · [Verification interfaces](reference/verification-interfaces.md) · [Provenance and historical limits](reference/documentation-history.md).\n\nThis is a page index, not a complete theorem catalog or a proof of the documented claims.\n'
     return text
+def build_navigation_summary(root,layout,source_names,bound=None,layout_raw=None):
+    require(layout.get('navigation')=={'schema':'subject-index-navigation-v1','summary':indexes.SUMMARY_PATH},'navigation schema')
+    raw={name:local_bytes(root,name,bound) for name in indexes.INPUT_PATHS}
+    raw['docs/reference/documentation-layout.json']=(layout_raw if layout_raw is not None
+        else local_bytes(root,'docs/reference/documentation-layout.json',bound))
+    try:
+        catalog=load_json(raw[indexes.INPUT_PATHS[0]])
+        intake=load_json(raw[indexes.INPUT_PATHS[1]])
+        toolchain=raw['lean-toolchain'].decode().strip()
+        lake=load_json(raw['lake-manifest.json'])
+    except (UnicodeDecodeError,KeyError,TypeError) as error:raise LayoutError('invalid navigation inventory input') from error
+    return indexes.build_summary(layout,source_names,catalog,intake,toolchain,lake,
+        {name:digest(value) for name,value in raw.items()},require)
 def check_links(root,pages,bound=None):
     for name in pages:
         try:text=local_bytes(root,name,bound).decode()
@@ -323,7 +355,7 @@ def check_links(root,pages,bound=None):
                 try:target_text=local_bytes(root,target_name,bound).decode()
                 except UnicodeDecodeError as error:raise LayoutError('non-UTF8 page: '+target_name) from error
                 require(unquote(parsed.fragment) in slugs(target_text),'broken fragment: '+name+' -> '+link)
-def validate(root,layout,inventory,historical,visible,bound=None):
+def validate(root,layout,inventory,historical,visible,bound=None,source_names=None):
     require(layout.get('schema')=='mathematical-documentation-layout-v1','layout schema')
     require(inventory.get('schema')=='legacy-documentation-sections-v1','inventory schema')
     require(re.fullmatch('[0-9a-f]{40}',inventory.get('origin_commit','')) is not None,'mutable historical origin')
@@ -359,7 +391,14 @@ def validate(root,layout,inventory,historical,visible,bound=None):
         except UnicodeDecodeError as error:raise LayoutError('non-UTF8 page: '+name) from error
         require(page_text.splitlines()[0]=='# '+p['title'],'page title mismatch: '+name)
         require(not any(x.lower() in FORBIDDEN for x in Path(name).parts),'campaign/conversation path: '+name)
-        if name.startswith('docs/mathematics/'):
+        if 'area' in p:
+            area=p['area']
+            require('navigation' in layout,'area index without navigation schema')
+            require(set(p)=={'title','category','area'} and p['category']=='navigation','area index carries claim metadata')
+            require(isinstance(area,str) and re.fullmatch('[A-Z][A-Za-z]*',area) is not None,'invalid mathematical area')
+            require(name=='docs/mathematics/'+area+'/index.md','area index path mismatch')
+            require(p['title']==indexes.area_title(area),'area index title mismatch')
+        elif name.startswith('docs/mathematics/'):
             parts=Path(name).parts
             require(len(parts)>=5,'missing mathematical subject/object')
             require(p.get('subject')==parts[2] and p.get('object')=='/'.join(parts[3:-1]),'subject/object path mismatch')
@@ -392,20 +431,32 @@ def validate(root,layout,inventory,historical,visible,bound=None):
         for target in targets:
             require(target in pages,'missing destination')
             require((target.startswith('docs/mathematics/'))==(d['kind']=='mathematics'),'destination category mismatch')
+            require('area' not in pages[target],'legacy section targets navigation')
         require(all(z in frozen for z in d.get('consolidated_with',[])),'unknown consolidation reference')
     try:index_text=local_bytes(root,'docs/index.md',bound).decode()
     except UnicodeDecodeError as error:raise LayoutError('non-UTF8 page: docs/index.md') from error
-    require(index_text==render_navigation(layout),'stale mathematical navigation')
+    summary=None
+    if 'navigation' in layout:
+        require(source_names is not None,'missing source inventory observation')
+        summary=build_navigation_summary(root,layout,source_names,bound)
+        require(load_json(local_bytes(root,indexes.SUMMARY_PATH,bound))==summary,'stale documentation inventory')
+        actual={p['area']:name for name,p in pages.items() if 'area' in p}
+        require(set(actual)==set(summary['areas']),'missing/extra area index')
+        for area,name in actual.items():
+            require(local_bytes(root,name,bound).decode()==indexes.render_area(layout,summary,area),'stale area index: '+area)
+    require(index_text==render_navigation(layout,summary),'stale mathematical navigation')
     check_links(root,pages,bound)
 def check(root=ROOT):
     verify_git_root(root)
     layout_raw,layout_observation=read_safe(root,'docs/reference/documentation-layout.json',with_observation=True)
     try:layout=load_json(layout_raw.decode())
     except UnicodeDecodeError as error:raise LayoutError('non-UTF8 documentation layout') from error
+    require('navigation' in layout,'subject-index navigation required')
     inventory_raw,inventory_observation=read_safe(root,layout['legacy_inventory'],with_observation=True)
     require(digest(inventory_raw)==layout['legacy_inventory_sha256'],'frozen inventory invalidated')
     inventory=load_json(inventory_raw);historical={}
     visible=visible_markdown_inventory(root);names=live_input_names(layout)
+    source_names=visible_source_inventory(root) if 'navigation' in layout else None
     bound,observations=observe_inputs(root,names,{
         'docs/reference/documentation-layout.json':(layout_raw,layout_observation),
         layout['legacy_inventory']:(inventory_raw,inventory_observation)})
@@ -417,8 +468,9 @@ def check(root=ROOT):
         raw_source=git_bytes(root,['cat-file','blob',inventory['origin_commit']+':'+name])
         try:historical[name]=raw_source.decode()
         except UnicodeDecodeError as error:raise LayoutError('non-UTF8 historical source: '+name) from error
-    validate(root,layout,inventory,historical,visible,bound)
+    validate(root,layout,inventory,historical,visible,bound,source_names)
     require(visible_markdown_inventory(root)==visible,'Git-visible documentation changed during check')
+    if source_names is not None:require(visible_source_inventory(root)==source_names,'source inventory changed during check')
     unused,terminal_observations=observe_inputs(root,names)
     require(terminal_observations==observations,'live documentation input changed during check')
     return len(layout['pages']),len(inventory['sections'])
