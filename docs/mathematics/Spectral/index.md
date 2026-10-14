@@ -7,7 +7,7 @@
 | Object guides | 7 |
 | Documented object groups | 4 |
 | Distinct primary sources linked | 6 |
-| Lean source modules | 7 |
+| Lean source modules | 25 |
 | Archive intake records | 0 |
 | Selected catalog families | 0 |
 

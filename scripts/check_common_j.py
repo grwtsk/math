@@ -14,7 +14,7 @@ if "4.33.0" not in version or "d8b18978322de05a8f3dba51ef03cf5461676c17" not in 
 env = os.environ.copy()
 env.pop("LEAN_PATH", None)
 env.pop("LEAN_SRC_PATH", None)
-result = subprocess.run(["lake", "env", lean, "-j2", "--trust=0", "-DwarningAsError=true", "checks/LinearAlgebra/ComplexStructure/Audit.lean"], cwd=root, env=env, capture_output=True, text=True, timeout=600)
+result = subprocess.run(["lake", "env", lean, "-j2", "--trust=0", "-DwarningAsError=true", "GRWTSK/LinearAlgebra/CommonJ/Checks/Audit.lean"], cwd=root, env=env, capture_output=True, text=True, timeout=600)
 output = (result.stdout + result.stderr).replace(str(root), "<project>")
 if result.returncode or output.count("COMMON_J_DECL::") != 19 or output.count("COMMON_J_CONSUMER::") != 2 or "COMMON_J_ROOTS::13" not in output:
     raise RuntimeError(output)

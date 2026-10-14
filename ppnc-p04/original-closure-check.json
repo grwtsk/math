@@ -1,0 +1,11 @@
+{
+  "status": "kernel-checked",
+  "source": "/Users/local/Documents/ChatGPT/math 2/ppnc-p04/OriginalClosure.lean",
+  "source_sha256": "7e0399217fe6010d22ea60d7b7c53798de52a8b11c7b4647b2ee9d772e8c88c6",
+  "kernel_trust_level": 0,
+  "warnings_as_errors": true,
+  "exit_code": 0,
+  "stdout": "'PPNCP04.OriginalClosure.completion_prefix_mass' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.OriginalClosure.completion_total_mass' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.OriginalClosure.AS_with_complete_admissible_chains_implies_P04' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+  "stderr": "",
+  "scope": "Generic original AS closure to literal P04 with all-horizon logarithmic prime-harmonic estimate proved and chain harmonic mass bookkeeping derived. Reserve AS and complete admissible chain hypotheses remain explicit and unsupplied."
+}

@@ -17,4 +17,6 @@ python3 -O -B -m unittest discover -s scripts -p test_documentation_layout.py
 
 The checker discovers every Git-visible maintained Markdown page, enforces subject/object placement and exact source bindings, verifies the complete legacy section ledger, and rejects stale navigation, broken links, unsafe paths, private provenance and unsupported current-verification labels. Python optimization cannot disable these checks. Structural success does not establish mathematical truth, complete historical attribution or universal semantic preservation.
 
+Byte reconstruction and formal correctness are independent guarantees. The [reconstruction contract](../reference/reconstruction.md) and [current rigor report](../reference/rigor-and-reconstruction-report.md) state their separate evidence and blockers. Neither an intact artifact nor a passing documentation check is a proof of its mathematical claims.
+
 Provide complete structured text and descriptive links. Diagrams supplement the statements. Reorganization must preserve hypotheses, orientation, normalization, signs, endpoint conventions and scope; an unresolved proof remains unresolved.
