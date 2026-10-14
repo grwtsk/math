@@ -11,9 +11,11 @@ All recurrence assumptions remain explicit theorem arguments.
 
 namespace ASBNP04
 
-def mass (ω : ℕ → ℝ) : ℕ → ℝ
-  | 0 => 0
-  | n + 1 => mass ω n + ω n
+def mass (ω : ℕ → ℝ) : ℕ → ℝ :=
+  Nat.rec 0 (fun n r => r + ω n)
+
+@[simp] theorem mass_zero (ω : ℕ → ℝ) : mass ω 0 = 0 := rfl
+@[simp] theorem mass_succ (ω : ℕ → ℝ) (n : ℕ) : mass ω (n+1) = mass ω n + ω n := rfl
 
 theorem mass_nonneg (ω : ℕ → ℝ) (hω : ∀ n, 0 ≤ ω n) :
     ∀ n, 0 ≤ mass ω n := by

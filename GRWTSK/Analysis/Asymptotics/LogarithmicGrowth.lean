@@ -1,4 +1,4 @@
-import Mathlib
+import Mathlib.Algebra.Ring.IsFormallyReal
 import GRWTSK.Analysis.Asymptotics.SublinearDyadic
 import GRWTSK.Analysis.Inequalities.ResidualGrowthComparison
 
@@ -29,7 +29,7 @@ theorem scale_upperSublinear (f : ℕ → ℝ) (h : UpperSublinear f)
     have hh := mul_le_mul_of_nonneg_left (hn₀ n hn) ha
     calc
       a*f n ≤ a*(ε/a*(n:ℝ)) := hh
-      _ = ε*(n:ℝ) := by field_simp [hz]; ring
+      _ = ε*(n:ℝ) := by field_simp [hz]
 
 lemma log_one_add_le_two_sqrt (x : ℝ) (hx : 0 ≤ x) :
     Real.log (1+x) ≤ 2*Real.sqrt x := by
@@ -75,19 +75,19 @@ theorem residual_growth_iff (β J : ℕ → ℝ)
     have hs := log_one_add_nat_upperSublinear.add (scale_upperSublinear _ hb 6 (by norm_num))
     apply hs.mono
     intro n
-    have hh := Real.log_le_log (by positivity : 0 < 1+J n)
+    have hh := Real.log_le_log (by linarith [hJ n] : 0 < 1+J n)
       (residual_one_add_bound _ _ n (hβ n) (hupper n))
     rw [Real.log_mul (by positivity : (1+(n:ℝ)) ≠ 0)
-      (by positivity : (1+β n)^6 ≠ 0), Real.log_pow] at hh
+      (pow_ne_zero 6 (ne_of_gt (by linarith [hβ n] : 0 < 1+β n))), Real.log_pow] at hh
     norm_num at hh ⊢
     exact hh
   · intro hj
     have hs := (constant_upperSublinear (Real.log 2)).add hj
     apply hs.mono
     intro n
-    have hh := Real.log_le_log (by positivity : 0 < 1+β n)
+    have hh := Real.log_le_log (by linarith [hβ n] : 0 < 1+β n)
       (relative_le_of_sixth _ _ (hβ n) (hJ n) (hlower n))
-    rw [Real.log_mul (by norm_num : (2:ℝ) ≠ 0) (by positivity : 1+J n ≠ 0)] at hh
+    rw [Real.log_mul (by norm_num : (2:ℝ) ≠ 0) (ne_of_gt (by linarith [hJ n] : 0 < 1+J n))] at hh
     exact hh
 
 /-- Any fixed positive exponent floor fails the actual little-o condition. -/

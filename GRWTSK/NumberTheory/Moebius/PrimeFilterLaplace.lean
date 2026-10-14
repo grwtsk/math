@@ -2,6 +2,7 @@
 Human mathematical direction: grwtsk contributors; OpenAI Codex formalization assistance.
 Mathlib imports retain upstream authorship and Apache-2.0 licensing. -/
 import GRWTSK.NumberTheory.Moebius.PrimeFilterEnergy
+import Mathlib.Tactic.NormNum.Prime
 
 /-! Exact finite-window Laplace filtering. The signed boundary correction is
 retained; no improper transform or arithmetic upper estimate is assumed. -/

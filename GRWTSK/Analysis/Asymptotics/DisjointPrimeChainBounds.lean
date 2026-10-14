@@ -23,7 +23,7 @@ theorem completion_prefix_mass {T : ℝ} (chain : CompletionChain T) (n : ℕ) :
   induction n with
   | zero => simp [Cost.prefixSum, chain.initial, harmonicMass, PPNC.harmonicMass]
   | succ n ih =>
-      rw [Cost.prefixSum, ih, chain.next n, harmonicMass_union _ _ (chain.disjoint n)]
+      rw [Cost.prefixSum_succ, ih, chain.next n, harmonicMass_union _ _ (chain.disjoint n)]
 
 /-- A complete chain spends precisely the full prime-harmonic mass. -/
 theorem completion_total_mass {T : ℝ} (chain : CompletionChain T) :

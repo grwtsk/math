@@ -1,4 +1,3 @@
-import GRWTSK.LinearAlgebra.Matrix.ToeplitzHankel
 import GRWTSK.Analysis.InnerProductSpace.WeightedSchurBounds
 
 /-!

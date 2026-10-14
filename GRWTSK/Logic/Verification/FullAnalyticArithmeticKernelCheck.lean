@@ -43,7 +43,7 @@ import GRWTSK.Analysis.IntervalReflection
 import GRWTSK.Analysis.LaplaceTransform.Analytic
 import GRWTSK.Analysis.LaplaceTransform.MoebiusResponseFormula
 import GRWTSK.Analysis.LaplaceTransform.PolynomialEnergy
-import GRWTSK.Analysis.LaplaceTransform.PolynomialEnergyHolomorphy
+import GRWTSK.NumberTheory.Moebius.PolynomialEnergyHolomorphy
 import GRWTSK.Analysis.NormedSpace.QuadraticError
 import GRWTSK.Analysis.Polarization
 import GRWTSK.Analysis.SumIntegralComparison.ExponentialResponseSquareSum
@@ -63,7 +63,10 @@ import GRWTSK.LinearAlgebra.OrderedTransfer
 import GRWTSK.LinearAlgebra.Schrodinger.SampledPotential
 import GRWTSK.LinearAlgebra.Schrodinger.Sampling
 import GRWTSK.LinearAlgebra.SchrodingerTransfer
-import GRWTSK.Logic.Counterexamples.ComplexSymmetryAndPositivity
+import GRWTSK.Analysis.Complex.CriticalReflection
+import GRWTSK.Analysis.Complex.ReflectionCounterexamples
+import GRWTSK.LinearAlgebra.Matrix.HermitianCounterexamples
+import GRWTSK.NumberTheory.Zeta.Riemann.ZeroExclusions
 import GRWTSK.Logic.FiniteCoverage
 import GRWTSK.Logic.FiniteSequences.PrefixCoverage
 import GRWTSK.Logic.ProofEvidence.DirichletResponseStatus

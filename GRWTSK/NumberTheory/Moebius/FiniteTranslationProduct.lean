@@ -1,11 +1,8 @@
-import Mathlib.Analysis.SpecialFunctions.Log.Basic
+import Mathlib.MeasureTheory.Integral.Bochner.Basic
 import Mathlib.NumberTheory.ArithmeticFunction.Moebius
 import Mathlib.NumberTheory.PrimeCounting
-import Mathlib.Algebra.BigOperators.Group.Finset.Powerset
-import Mathlib.MeasureTheory.Integral.Bochner.Basic
 import Mathlib.MeasureTheory.Integral.IntegrableOn
 import Mathlib.MeasureTheory.Measure.Lebesgue.Basic
-import Mathlib.Tactic
 
 /-!
 Finite prime-note product expansion. The source is constructed by repeated

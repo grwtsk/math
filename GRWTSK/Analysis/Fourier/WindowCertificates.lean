@@ -1,14 +1,11 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human direction: grwtsk contributors; OpenAI Codex formalization assistance.
 Classical implications; imported Mathlib contributions retain their authorship. -/
-import GRWTSK.Data.Sampling.Descriptions
-import GRWTSK.Analysis.Fourier.IntegerSeries
-import GRWTSK.Logic.FiniteSequences.PrefixCoverage
-import GRWTSK.LinearAlgebra.Schrodinger.SampledPotential
-import GRWTSK.Algebra.BigOperators.OrderedSquare
-import GRWTSK.Analysis.Fourier.Parseval
-import GRWTSK.Analysis.Asymptotics.PolynomialErrorBound
-import GRWTSK.Algebra.BigOperators.QuadraticCounterexample
+import Mathlib.Analysis.CStarAlgebra.Classes
+import Mathlib.MeasureTheory.Function.LpSpace.Basic
+import Mathlib.MeasureTheory.Integral.Bochner.Basic
+import Mathlib.MeasureTheory.Measure.Haar.OfBasis
+import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
 set_option autoImplicit false
 noncomputable section
 namespace GRWTSK.Analysis.Waveform

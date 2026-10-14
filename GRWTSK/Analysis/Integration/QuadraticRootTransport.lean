@@ -56,17 +56,17 @@ lemma cross_square_bound {A B C : ℝ} (hA : 0 ≤ A)
     · have ht := h (-(B+1)/(2*C))
       have he : (0:ℝ)*(-(B+1)/(2*C))^2+2*C*(-(B+1)/(2*C))+B = -1 := by
         field_simp [hc]
-        <;> ring
+        ring
       rw [he] at ht
       linarith
   · have hp : 0 < A := lt_of_le_of_ne hA (Ne.symm hz)
     have ht := h (-C/A)
     have he : A^2*(A*(-C/A)^2+2*C*(-C/A)+B) = A*(A*B-C^2) := by
       field_simp [hz]
-      <;> ring
+      ring
     have hn := mul_nonneg (sq_nonneg A) ht
     rw [he] at hn
-    have hd := nonneg_of_mul_nonneg_left hn hp
+    have hd := nonneg_of_mul_nonneg_right hn hp
     linarith
 
 /-- L2 triangle inequality derived from the full integral quadratic polynomial. -/

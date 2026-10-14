@@ -5,7 +5,6 @@ Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.LinearAlgebra.SchrodingerTransfer
 import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
 import Mathlib.LinearAlgebra.Matrix.Trace
-import Mathlib.Tactic
 
 set_option autoImplicit false
 

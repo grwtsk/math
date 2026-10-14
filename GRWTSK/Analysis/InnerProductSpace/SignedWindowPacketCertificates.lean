@@ -340,9 +340,11 @@ theorem SignedBudgetDerivation.sound {b T budget : ℝ} {parent : Chart b T}
   | narrow cert child ledger ih => exact narrow_child_budget_returns_parent cert ih ledger
 
 def SignedBudgetDerivation.depth {b T budget : ℝ} {parent : Chart b T} :
-    SignedBudgetDerivation parent budget → ℕ
-  | .broad _ => 0
-  | .narrow _ child _ => child.depth+1
+    SignedBudgetDerivation parent budget → ℕ := by
+  intro derivation
+  induction derivation with
+  | broad cert => exact 0
+  | narrow cert child ledger ih => exact ih + 1
 
 /-- The declared rank bounds the actual normalized recursion depth. -/
 theorem SignedBudgetDerivation.depth_le_rank {b T budget : ℝ} {parent : Chart b T}

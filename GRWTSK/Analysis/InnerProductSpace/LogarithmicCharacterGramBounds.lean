@@ -1,7 +1,12 @@
-import Mathlib.Analysis.InnerProductSpace.PiL2
-import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
+import Mathlib.Analysis.InnerProductSpace.Continuous
 import Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds
-import Mathlib.Tactic
+import Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic
+import Mathlib.Tactic.FieldSimp
+import Mathlib.Tactic.FunProp
+import Mathlib.Tactic.Linarith
+import Mathlib.Tactic.NormNum
+import Mathlib.Tactic.Positivity
+import Mathlib.Tactic.Ring
 
 /-!
 Exact hostile fixtures for BGP and the orbit-versus-Haar gate. These are

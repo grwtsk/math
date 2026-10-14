@@ -1,4 +1,4 @@
-import GRWTSK.Logic.ProofEvidence.MoebiusResponseStatus
+import Mathlib.Data.List.Basic
 
 /-! ERC–RH: versioned external evidence and proof-bearing applicability.
 Publication/reproduction labels are provenance data, not theorem proofs.

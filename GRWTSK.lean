@@ -125,7 +125,10 @@ import GRWTSK.LinearAlgebra.Schrodinger.SampledPotential
 import GRWTSK.LinearAlgebra.Schrodinger.Sampling
 import GRWTSK.LinearAlgebra.Sturmian
 import GRWTSK.Logic.Certificates.ModelExamples
-import GRWTSK.Logic.Counterexamples.ComplexSymmetryAndPositivity
+import GRWTSK.Analysis.Complex.CriticalReflection
+import GRWTSK.Analysis.Complex.ReflectionCounterexamples
+import GRWTSK.LinearAlgebra.Matrix.HermitianCounterexamples
+import GRWTSK.NumberTheory.Zeta.Riemann.ZeroExclusions
 import GRWTSK.Logic.FiniteCoverage
 import GRWTSK.Logic.FiniteSequences.PrefixCoverage
 import GRWTSK.Logic.Inference.FiniteRuleExamples
@@ -243,6 +246,7 @@ import GRWTSK.NumberTheory.Moebius.FiniteProductResponseIdentification
 import GRWTSK.NumberTheory.Moebius.FiniteTranslationProduct
 import GRWTSK.NumberTheory.Moebius.LogarithmicResponse
 import GRWTSK.NumberTheory.Moebius.MoebiusEulerProduct
+import GRWTSK.NumberTheory.Moebius.PolynomialEnergyHolomorphy
 import GRWTSK.NumberTheory.Moebius.PrimeProductPrefixEnergy
 import GRWTSK.NumberTheory.Moebius.PrimeShellDecomposition
 import GRWTSK.NumberTheory.Moebius.QuadraticTransformBoundConversion

@@ -24,16 +24,19 @@ open scoped BigOperators FourierTransform
 open MeasureTheory
 
 /-- Correct starvation obligation: prefix work must cover a pinned enumeration. -/
-def workClock (batch : ℕ → ℕ) : ℕ → ℕ
-  | 0 => 0
-  | n+1 => workClock batch n + batch n
+def workClock (batch : ℕ → ℕ) : ℕ → ℕ :=
+  Nat.rec 0 (fun n r => r + batch n)
+
+@[simp] theorem workClock_zero (batch : ℕ → ℕ) : workClock batch 0 = 0 := rfl
+@[simp] theorem workClock_succ (batch : ℕ → ℕ) (n : ℕ) :
+    workClock batch (n+1) = workClock batch n + batch n := rfl
 
 theorem workClock_ge_index (batch : ℕ → ℕ) (hb : ∀ n, 1 ≤ batch n) :
     ∀ n, n ≤ workClock batch n := by
   intro n
   induction n with
-  | zero => simp [workClock]
-  | succ n ih => simp only [workClock]; have := hb n; omega
+  | zero => simp
+  | succ n ih => simp; have := hb n; omega
 
 theorem prefix_obligation_covered (batch : ℕ → ℕ) (hb : ∀ n, 1 ≤ batch n) (j : ℕ) :
     ∃ n, j < workClock batch n := ⟨j+1, by have := workClock_ge_index batch hb (j+1); omega⟩

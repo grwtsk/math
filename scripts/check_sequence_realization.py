@@ -4,7 +4,8 @@ import datetime,hashlib,json,os,re,subprocess,time
 ROOT=Path(__file__).resolve().parent.parent
 NAMES=['BranchSequenceRealization','BranchFrequencyExistence','BranchSequenceReturn','Sequences']
 FILES=['GRWTSK/NumberTheory/ContinuedFractions/ScheduledDenominators.lean', 'GRWTSK/NumberTheory/ContinuedFractions/FrequencyRealization.lean', 'GRWTSK/DynamicalSystems/Sequences/ApproximationReturn.lean']
-INPUTS=FILES+['checks/SequenceRealizationAudit.lean','scripts/check_sequence_realization.py','lean-toolchain','lakefile.toml','lake-manifest.json']
+AUDIT='checks/NumberTheory/ContinuedFractions/FrequencyRealization/Audit.lean'
+INPUTS=FILES+[AUDIT,'scripts/check_sequence_realization.py','lean-toolchain','lakefile.toml','lake-manifest.json']
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 expected={rel:sha(ROOT/rel) for rel in INPUTS}
 manifest=json.loads((ROOT/'lake-manifest.json').read_text())
@@ -22,7 +23,7 @@ receipt=OUT/'receipt.json';receipt.write_text(json.dumps(record,indent=2)+'\n')
 (Path(ROOT/'.local/post-branch-formalization/latest-sequence-check.txt')).write_text(str(OUT)+'\n')
 try:
  for rel in INPUTS:assert sha(ROOT/rel)==expected[rel],rel
- for rel in FILES+['checks/SequenceRealizationAudit.lean']:
+ for rel in FILES+[AUDIT]:
   cmd=[lean,*flags]
   if rel in FILES:
    output=BUILD/Path(rel).with_suffix('.olean');output.parent.mkdir(parents=True,exist_ok=True);cmd+=['-o',str(output)]
@@ -32,7 +33,7 @@ try:
   receipt.write_text(json.dumps(record,indent=2)+'\n');print(rel+': '+('PASS' if p.returncode==0 else 'FAIL'),flush=True)
   assert p.returncode==0,log
   for path,h in expected.items():assert sha(ROOT/path)==h,path
- log=(OUT/'SequenceRealizationAudit.log').read_text()
+ log=(OUT/(Path(AUDIT).stem+'.log')).read_text()
  rows=[json.loads(x) for x in re.findall(r'SEQUENCE_DECL::(\{[^\n]+\})',log)]
  counts=re.findall(r'SEQUENCE_COUNT::(\d+)',log)
  assert len(counts)==1 and int(counts[0])==len(rows) and len(rows)==189

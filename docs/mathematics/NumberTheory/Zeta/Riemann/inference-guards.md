@@ -1,13 +1,29 @@
 # Nontrivial zeros and inference guards
 
-`GRWTSK.RiemannHypothesis.InferenceGuards` carries four established guard statements. The nontrivial-zero domain excludes the negative even trivial zeros and the pole at one. Critical reflection remains `1 - star s`, an involution distinct from multiplication by the imaginary unit. A negative identity matrix supplies a Hermitian matrix that is not positive semidefinite.
+The nontrivial-zero domain retains all three hypotheses of Mathlib's Riemann hypothesis target: a zero of the zeta function, exclusion of the negative even trivial zeros, and exclusion of the pole at one. In `GRWTSK.RiemannHypothesis`, the exact predicate is:
 
-GRWTSK added canonical placement and a checked interface. Complete theorem types, universes, implicit assumptions, generated dependency families, supported definition bodies and transitive axioms are preserved under the declared canonical name map. The existing zero definitions and symmetries are reused, with no second implementation.
+```lean
+def NontrivialZetaZero (s : ℂ) : Prop :=
+  riemannZeta s = 0 ∧ (¬ ∃ n : ℕ, s = -2 * (n + 1)) ∧ s ≠ 1
+```
 
-Three original guard proofs actually use those existing canonical dependencies. Four synthetic audit wrappers use the new guard theorems directly; they are verification fixtures, not additional mathematical results or independent downstream applications. No external original proof consumer of these guard theorems has been verified. Broader root imports and diagnostic wrappers remain outside this checked source slice.
+The exclusion at `-2` retains the distinction between a genuine zeta zero and a member of this domain:
 
-Local direction: grwtsk contributors. Formalization and verification assistance: OpenAI Codex. MIT; historical human/machine authoring split unknown. Lean and Mathlib retain upstream identities, named authors and licenses. This is a local candidate pending transactional admission and independent review. No RH proof or mathematical originality is claimed.
+```lean
+theorem trivial_zero_is_excluded :
+    riemannZeta (-2) = 0 ∧ ¬ NontrivialZetaZero (-2)
+
+theorem pole_is_excluded : ¬ NontrivialZetaZero 1
+```
+
+The first proof uses Mathlib's negative even zero theorem and the witness `n = 0` in the exclusion clause. The second uses the explicit `s ≠ 1` clause. These statements preserve the domain of the target; they do not establish where its nontrivial zeros lie.
+
+The reusable [complex reflection result](../../../Analysis/Complex/CriticalReflection/reflection.md) and [Hermitian matrix counterexample](../../../LinearAlgebra/Matrix/HermitianCounterexamples/negative-identity.md) belong to their respective mathematical objects. Their existing declaration names remain compatibility names within `GRWTSK.RiemannHypothesis`.
 
 ## Source and verification scope
 
-[Source](../../../../../GRWTSK/NumberTheory/Zeta/Riemann/ZeroDefinitions.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../../reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+[Zero definitions](../../../../../GRWTSK/NumberTheory/Zeta/Riemann/ZeroDefinitions.lean) and [zero exclusions](../../../../../GRWTSK/NumberTheory/Zeta/Riemann/ZeroExclusions.lean). Status: **historical-source-description**. The frozen source qualification covers 10 source owners and 41 owned mathematical declarations under the standard axiom profile. It also checks 39 zeta declarations and 32 guard contracts. Broader consumer acceptance remains incomplete; the Riemann hypothesis and missing arithmetic premises remain open.
+
+Three original guard proofs use canonical dependencies, while four synthetic audit wrappers exercise the guard theorems. The wrappers are verification fixtures. No external original proof consumer of these four guards has been verified. The scoped check preserves all 30 compared declaration types and the source proof text; the Hermitian proof's elaborated value differs only in 32 local binder names associated with its source module.
+
+Local direction: grwtsk contributors. Formalization and verification assistance: OpenAI Codex. MIT; historical human/machine authoring split unknown. Lean and Mathlib retain upstream identities, named authors and licenses. No mathematical originality is claimed. [Credit and historical evidence limits](../../../../reference/documentation-history.md).
