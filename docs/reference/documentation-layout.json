@@ -2755,6 +2755,15 @@
       "status": "written-argument",
       "source_relation": "context; not certification of every written or cited claim"
     },
+    "docs/mathematics/NumberTheory/Moebius/Energy/separated-mellin-samples.md": {
+      "title": "An exact separated-sample return for the actual Type-II source",
+      "subject": "NumberTheory",
+      "object": "Moebius/Energy",
+      "primary_source": "GRWTSK/NumberTheory/Moebius/WeightedIntegralEnergy.lean",
+      "source_sha256": "8124ef6fbeca2c8244d7401536d70c43a6ecd31279366c20ea96bf6fbaa84380",
+      "status": "written-argument",
+      "source_relation": "context only; the separated-sample return has no Lean formalization"
+    },
     "docs/mathematics/LinearAlgebra/Schrodinger/sturmian.md": {
       "title": "Sturmian potential, half-open coding and recurrence",
       "subject": "LinearAlgebra",
