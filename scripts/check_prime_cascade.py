@@ -57,7 +57,8 @@ CONTROL_ERRORS = {
 }
 CONTROLS = list(CONTROL_ERRORS)
 INPUTS = ORDER + ["GRWTSK/NumberTheory/Moebius/Checks/Positive/PrimeFilterGrowth.lean", "scripts/check_prime_cascade.py",
-                  "lean-toolchain", "lakefile.toml", "lake-manifest.json", "docs/ccc-prime-cascade.md"]
+                  "lean-toolchain", "lakefile.toml", "lake-manifest.json",
+                  "docs/mathematics/NumberTheory/Moebius/PrimeFilters/cascade.md"]
 INPUTS += ["GRWTSK/NumberTheory/Moebius/PrimeFilterGrowth/Checks/Negative/" + name + ".lean" for name in CONTROLS]
 HASHES = {p: hashlib.sha256((ROOT / p).read_bytes()).hexdigest() for p in INPUTS}
 (RUN / "source-freeze.json").write_text(json.dumps(HASHES, indent=2) + "\n")
