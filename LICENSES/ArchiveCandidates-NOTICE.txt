@@ -1,0 +1,11 @@
+Imported candidate-source attribution and licensing
+
+R.A. Jacob Martone confirms ownership of the supplied proof sources and directs
+this work through ChatGPT and Codex. The Math repository MIT terms apply to the
+local formal-source contributions. Original source headers, specific assistance
+credits and upstream mathematical attribution are preserved. Mathematical origin,
+formal-artifact contribution, human direction and ownership remain distinct.
+Mathlib and other upstream contributions retain their authorship and licenses.
+
+This notice neither supplies native proof acceptance nor authorizes a public
+release. Exact source identities and statuses are in evidence/source-intake.json.

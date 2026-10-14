@@ -2617,7 +2617,7 @@
       "status": "historical-source-description"
     },
     "docs/mathematics/LinearAlgebra/Schrodinger/transfer.md": {
-      "title": "Schr\u00f6dinger transfer matrices",
+      "title": "Schrödinger transfer matrices",
       "subject": "LinearAlgebra",
       "object": "Schrodinger",
       "primary_source": "GRWTSK/LinearAlgebra/SchrodingerTransfer.lean",
@@ -2974,7 +2974,7 @@
       "verification_limit": "Source rebound after history merge; no new proof acceptance"
     },
     "docs/mathematics/NumberTheory/Moebius/matched-pickup.md": {
-      "title": "Matched averaging for the closed M\u00f6bius pickup",
+      "title": "Matched averaging for the closed Möbius pickup",
       "subject": "NumberTheory",
       "object": "Moebius",
       "primary_source": "GRWTSK/NumberTheory/Moebius/PrimitiveIdentification.lean",
@@ -3051,7 +3051,7 @@
       "category": "reference"
     },
     "docs/mathematics/NumberTheory/ArithmeticFunctions/density-correction.md": {
-      "title": "Complete density M\u00f6bius correction",
+      "title": "Complete density Möbius correction",
       "subject": "NumberTheory",
       "object": "ArithmeticFunctions",
       "primary_source": "GRWTSK/NumberTheory/ArithmeticFunctions/DensityMomentTails.lean",
@@ -3060,7 +3060,7 @@
       "evidence": "evidence/NumberTheory/ArithmeticFunctions/density-arithmetic-checks.json"
     },
     "docs/mathematics/NumberTheory/ArithmeticFunctions/signed-cutoffs.md": {
-      "title": "Signed M\u00f6bius cutoff decomposition",
+      "title": "Signed Möbius cutoff decomposition",
       "subject": "NumberTheory",
       "object": "ArithmeticFunctions",
       "primary_source": "GRWTSK/NumberTheory/ArithmeticFunctions/SquarefreeMoebiusSum.lean",
@@ -3081,7 +3081,7 @@
       "category": "how-to"
     },
     "docs/mathematics/NumberTheory/LSeries/closed-moebius.md": {
-      "title": "Closed M\u00f6bius Dirichlet polynomials",
+      "title": "Closed Möbius Dirichlet polynomials",
       "subject": "NumberTheory",
       "object": "LSeries",
       "primary_source": "GRWTSK/NumberTheory/LSeries/ClosedMoebiusPolynomial.lean",
@@ -3106,8 +3106,71 @@
         "upstream_mathlib_credit_and_license": "Upstream authors; Apache-2.0",
         "scope": "Classical finite product expansion and prime-factor reindexing generalized to commutative-ring multiplicative weights; no originality claim or arithmetic-growth supplier."
       }
+    },
+    "docs/reference/source-intake.md": {
+      "title": "Mathematical source candidates",
+      "category": "reference"
+    },
+    "docs/mathematics/Algebra/index.md": {
+      "title": "Algebra",
+      "category": "navigation",
+      "area": "Algebra"
+    },
+    "docs/mathematics/Analysis/index.md": {
+      "title": "Analysis",
+      "category": "navigation",
+      "area": "Analysis"
+    },
+    "docs/mathematics/Combinatorics/index.md": {
+      "title": "Combinatorics",
+      "category": "navigation",
+      "area": "Combinatorics"
+    },
+    "docs/mathematics/Data/index.md": {
+      "title": "Data structures",
+      "category": "navigation",
+      "area": "Data"
+    },
+    "docs/mathematics/DynamicalSystems/index.md": {
+      "title": "Dynamical systems",
+      "category": "navigation",
+      "area": "DynamicalSystems"
+    },
+    "docs/mathematics/LinearAlgebra/index.md": {
+      "title": "Linear algebra",
+      "category": "navigation",
+      "area": "LinearAlgebra"
+    },
+    "docs/mathematics/Logic/index.md": {
+      "title": "Logic",
+      "category": "navigation",
+      "area": "Logic"
+    },
+    "docs/mathematics/MeasureTheory/index.md": {
+      "title": "Measure theory",
+      "category": "navigation",
+      "area": "MeasureTheory"
+    },
+    "docs/mathematics/NumberTheory/index.md": {
+      "title": "Number theory",
+      "category": "navigation",
+      "area": "NumberTheory"
+    },
+    "docs/mathematics/Order/index.md": {
+      "title": "Order",
+      "category": "navigation",
+      "area": "Order"
+    },
+    "docs/mathematics/Spectral/index.md": {
+      "title": "Spectral theory",
+      "category": "navigation",
+      "area": "Spectral"
     }
   },
   "object_binding_registry": "docs/reference/object-source-bindings.json",
-  "object_binding_registry_sha256": "2c6f1fc10ca7ea46084f55b9165773b8e6d93ad15ba5843800ccac17bb1cf172"
+  "object_binding_registry_sha256": "2c6f1fc10ca7ea46084f55b9165773b8e6d93ad15ba5843800ccac17bb1cf172",
+  "navigation": {
+    "schema": "subject-index-navigation-v1",
+    "summary": "docs/reference/library-summary.json"
+  }
 }
