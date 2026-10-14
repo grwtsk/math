@@ -58,10 +58,10 @@ CONTROLS = {
     "DroppedOneAtom": "unsolved goals",
     "OnlyOneCrossOrder": "unsolved goals",
 }
-INPUTS = ORDER + ["checks/NumberTheory/Moebius/PrimitiveIdentification.lean", "scripts/check_original_pickup.py",
+INPUTS = ORDER + ["GRWTSK/NumberTheory/Moebius/Checks/Positive/PrimitiveIdentification.lean", "scripts/check_original_pickup.py",
                   "lean-toolchain", "lakefile.toml", "lake-manifest.json",
                   "docs/mathematics/NumberTheory/Moebius/Pickup/identification.md"]
-INPUTS += ["checks/NumberTheory/Moebius/PrimitiveIdentification/Controls/" + name + ".lean" for name in CONTROLS]
+INPUTS += ["GRWTSK/NumberTheory/Moebius/PrimitiveIdentification/Checks/Negative/" + name + ".lean" for name in CONTROLS]
 HASHES = {p: hashlib.sha256((ROOT / p).read_bytes()).hexdigest() for p in INPUTS}
 (RUN / "source-freeze.json").write_text(json.dumps(HASHES, indent=2) + "\n")
 RESULTS = []
@@ -105,7 +105,7 @@ def run(rel, expected_success=True, export=False, expected_error=None):
 
 for path in ORDER:
     run(path, export=True)
-output = run("checks/NumberTheory/Moebius/PrimitiveIdentification.lean")
+output = run("GRWTSK/NumberTheory/Moebius/Checks/Positive/PrimitiveIdentification.lean")
 DECLS = [json.loads(s) for s in re.findall(r"ORIGINAL_PICKUP_DECL::(\{[^\n]+\})", output)]
 COUNTS = re.findall(r"ORIGINAL_PICKUP_COUNT::(\d+)", output)
 if len(COUNTS) != 1 or len(DECLS) != int(COUNTS[0]) or not DECLS:
@@ -113,7 +113,7 @@ if len(COUNTS) != 1 or len(DECLS) != int(COUNTS[0]) or not DECLS:
 if len({d["name"] for d in DECLS}) != len(DECLS):
     raise RuntimeError("duplicate declaration records")
 for name, error in CONTROLS.items():
-    run("checks/NumberTheory/Moebius/PrimitiveIdentification/Controls/" + name + ".lean", False, expected_error=error)
+    run("GRWTSK/NumberTheory/Moebius/PrimitiveIdentification/Checks/Negative/" + name + ".lean", False, expected_error=error)
 stable_inputs()
 RECEIPT = {"schema_version": 1, "status": "FRESH_SOURCE_AND_NATIVE_CONTRACT_CHECKS_PASSED",
            "lean": VERSION, "package_revisions": PINS, "source_sha256": HASHES,
@@ -127,5 +127,6 @@ RECEIPT = {"schema_version": 1, "status": "FRESH_SOURCE_AND_NATIVE_CONTRACT_CHEC
            "original_supplier_witness_proved": False,
            "sturmian_observable_identification_proved": False,
            "rh_proved": False, "independent_acceptance": "PENDING"}
-(ROOT / "evidence/original-pickup-checks.json").write_text(json.dumps(RECEIPT, indent=2) + "\n")
+with (RUN / "receipt.json").open("x", encoding="utf-8") as output:
+    output.write(json.dumps(RECEIPT, indent=2) + "\n")
 print("ORIGINAL_PICKUP_CHECKS_PASSED", flush=True)

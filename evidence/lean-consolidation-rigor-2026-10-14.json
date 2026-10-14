@@ -1,0 +1,185 @@
+{
+  "schema": "grwtsk-lean-consolidation-rigor-receipt-v1",
+  "schema_version": 1,
+  "date": "2026-10-14",
+  "claim_limit": "Current working-tree migration evidence. Reconstruction and formal correctness are independent; no cumulative conformance profile is established.",
+  "checkout": {
+    "head": "e4f1e4d63ea8532f1e0e58abc34fbbdc45a5a9b5",
+    "branch": "main",
+    "origin_main": "17a7dd72d926abb0ea0925a355894bd25e219893",
+    "inspected_commit": "0029a80f5a86418cb62c658f3bbdaa3aad6c6285",
+    "remote_modified": false,
+    "branch_or_worktree_created": false
+  },
+  "policy_inputs": {
+    "evidence/policy-inputs/GRWTSK_Lean_Migration_With_Rigor_Addendum.md": "783251016b84155f64ed8dc0c0a17efad8c27cfd8566591348144293b47071a0",
+    "evidence/policy-inputs/GRWTSK_Rigor_and_Reconstruction_Addendum.md": "866e5a1c8e97cade8647a4147ff885d47c0ccc55328f2ac68cc0a73ff46367a4"
+  },
+  "inventory": {
+    "active_source_count": 475,
+    "counts_by_role": {
+      "audit-driver": 33,
+      "library": 292,
+      "negative-control": 93,
+      "positive-check": 57
+    },
+    "counts_by_subject": {
+      "Algebra": 11,
+      "Analysis": 193,
+      "Combinatorics": 8,
+      "Data": 1,
+      "DynamicalSystems": 12,
+      "GroupTheory": 4,
+      "Library": 1,
+      "LinearAlgebra": 49,
+      "Logic": 42,
+      "MeasureTheory": 5,
+      "NumberTheory": 121,
+      "Order": 3,
+      "Spectral": 25
+    },
+    "operations": {
+      "keep": 292,
+      "move": 183,
+      "split": 0,
+      "merge": 0,
+      "retire": 0
+    },
+    "conflicts": [],
+    "tracked_deletions": [],
+    "submodules": [],
+    "active_lean_outside_canonical_root": [
+      "GRWTSK.lean"
+    ]
+  },
+  "environment": {
+    "lean_version": "4.33.0",
+    "lean_commit": "d8b18978322de05a8f3dba51ef03cf5461676c17",
+    "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "dependency_artifact_scope": "Existing pinned dependency objects were reused and kernel checked; dependency sources were not rebuilt and object-to-source provenance was not established."
+  },
+  "source_bindings": {
+    "canonicalization": "SHA-256 of UTF-8 canonical JSON object mapping path to source SHA-256; keys sorted, ensure_ascii=true, separators comma/colon",
+    "all_active": {
+      "count": 475,
+      "sha256": "5982b6c93a43149747d5017b6f71adf0dbc1b450d08e51de4abf1e1ab328aef6"
+    },
+    "library": {
+      "count": 292,
+      "sha256": "4b939a03b0f380c0ff3e077e1d5c3f4f72cf125f6e54e543625bccc6656d5692"
+    }
+  },
+  "library_replay": {
+    "command": "python3 -B scripts/check_math_trust.py --memory-mib 8192",
+    "outcome": "FAILED_AFTER_SOURCE_REPLAY",
+    "library_sources_passed": 292,
+    "source_result_count": 292,
+    "audit_result_count": 1,
+    "source_replay_status": "292_LIBRARY_SOURCES_PASSED_TRUST_ZERO_FATAL_WARNINGS_20261014T015019Z",
+    "owned_declaration_audit": "FAILED_ON_18_LEAN_4_33_GENERATED_PARTIAL_RUNTIME_HELPERS",
+    "receipt": ".local/math-trust/20261014T015019Z-61a88691fc/failure.json",
+    "receipt_sha256": "1c2f3d5ac77b21d5709218d7c2426d26b4b7cee3c45394522cd52735659e8821",
+    "audit_log": ".local/math-trust/20261014T015019Z-61a88691fc/AllProjectAudit.log",
+    "audit_log_sha256": "0f32049fe2ed8bb506717cce7d6d3cad9fc197772a5eea81f770c8daa87a4d5b",
+    "owned_declaration_count_before_failure": 7409,
+    "audit_findings": [
+      "GRWTSK.Algebra.orderedProduct._unsafe_rec",
+      "GRWTSK.Analysis.Waveform.workClock._unsafe_rec",
+      "GRWTSK.Analysis.Waveform.Scheduling.count._unsafe_rec",
+      "GRWTSK.Analysis.Waveform.Scheduling.clock._unsafe_rec",
+      "GRWTSK.Analysis.Waveform.Scheduling.debt._unsafe_rec",
+      "GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator._unsafe_rec",
+      "GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator._unsafe_rec",
+      "GRWTSK.RiemannHypothesis.BranchSequenceRealization.numerator._unsafe_rec",
+      "GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock._unsafe_rec",
+      "GRWTSK.ProofHorizon.CorkscrewChamberCap.affectedClosure._unsafe_rec",
+      "GRWTSK.ProofHorizon.CorkscrewChamberCap.routeClosureFrom._unsafe_rec",
+      "GRWTSK.ProofHorizon.CorkscrewChamberCap.RestartBudgetBoundary.totalRoundCost._unsafe_rec",
+      "GRWTSK.ProofHorizon.CorkscrewChamberCap.RestartBudgetBoundary.sessionRun._unsafe_rec",
+      "GRWTSK.LinearAlgebra.CocycleProduct.cocycleProduct._unsafe_rec",
+      "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.finiteTail._unsafe_rec",
+      "PPNCP04.Cost.prefixSum._unsafe_rec",
+      "ASBNP04.mass._unsafe_rec",
+      "HSSCP04.SignedCharts.SignedBudgetDerivation.depth._unsafe_rec"
+    ]
+  },
+  "default_trust_run": {
+    "command": "python3 -B scripts/check_math_trust.py",
+    "outcome": "FAILED_OPERATIONALLY_BEFORE_COMPLETE_SOURCE_REPLAY",
+    "memory_limit_mib": 4096,
+    "completed_source_results": 175,
+    "failed_source": "GRWTSK.NumberTheory.Moebius.LogarithmicResponse",
+    "exit_code": -6,
+    "diagnostic": "lean::memory_exception: excessive memory consumption detected at interpreter",
+    "receipt": ".local/math-trust/20261014T022855Z-aa15101451/failure.json",
+    "receipt_sha256": "ee11469fb8d3dce60dc59598ba97f5f3a7bd59d33301ce1de775ca99ef589188",
+    "failed_log": ".local/math-trust/20261014T022855Z-aa15101451/GRWTSK-NumberTheory-Moebius-LogarithmicResponse.log",
+    "failed_log_sha256": "48bc2200174632932b9ea98fd0a0c30e6dc353ce535531045f1c7efc7b79940a",
+    "acceptance_effect": "None; an operational resource failure is not a mathematical rejection or a passing gate."
+  },
+  "verification_runs": {
+    "layout": "PASS: 292 library modules, 0 findings",
+    "layout_hostile_fixtures": "PASS: 44 fixtures in normal and optimized Python",
+    "library_build": "PASS: lake build GRWTSK, 8998 jobs",
+    "trust_python_self_test": "PASS: 25 fixtures",
+    "trust_native_self_test": {
+      "outcome": "PASS: 9 fixtures",
+      "receipt": ".local/math-trust/20261014T015003Z-2df4345cb5/receipt.json",
+      "receipt_sha256": "09b16c2462dafe8d069ff4f43ff82abded2538d15dd7d3ebeea0ab0ca88a44d0"
+    },
+    "ordered_product_gauge": "PASS: audit and positive control compiled; MissingClosedPath, ShiftedEndpoint and StrongerGroup failed for their exact intended contract diagnostics",
+    "input_controls": {
+      "outcome": "PASS: 8 controls in normal and optimized Python",
+      "receipt": ".local/input-controls/20261014T022148Z-efec511003e9/receipt.json",
+      "receipt_sha256": "f999eb6556e0f701582d268f14c1a8ab0fc410bb22d5ba4bdc46fab679d572f6"
+    },
+    "documentation": "PASS: render, normal, optimized, and both documentation-layout modes against 51 registered pages",
+    "repository_conformance": {
+      "outcome": "All cumulative profiles false; generated-view acceptance is limited to in-process byte freshness",
+      "receipt": "evidence/repository-conformance-20261014T022832Z-d5418b43c675.json",
+      "receipt_sha256": "5fb7f1de5cc714a8fafa086be92ce6aedb25e0d4d076720d0b3661068cc868a2"
+    }
+  },
+  "profiles": {
+    "organized": {
+      "established": false,
+      "blockers": [
+        "current source-bound role and coverage observations are not connected to the profile admission predicate"
+      ]
+    },
+    "reconstructible": {
+      "established": false,
+      "blockers": [
+        "generator and dynamic read-set census incomplete",
+        "independent discovery not established",
+        "complete fresh-destination path/mode restorer absent",
+        "repository-wide least-privilege execution evidence absent",
+        "concrete adapters not proved to refine the generic Lean reconstruction model"
+      ]
+    },
+    "formally_checked": {
+      "established": false,
+      "blockers": [
+        "reconstructible profile not established",
+        "owned-declaration audit rejects 18 generated partial runtime helpers",
+        "complete semantic occurrence map absent",
+        "independent trusted-statement comparison absent",
+        "executable checker adapters lack formal soundness proofs"
+      ]
+    },
+    "independently_validated": {
+      "established": false,
+      "blockers": [
+        "formally checked profile not established",
+        "independent proof checker not completed",
+        "independent reconstruction not repeated",
+        "pinned dependency sources not cold-reconstructed and rebuilt"
+      ]
+    }
+  },
+  "historical_evidence": {
+    "prior_migration_record": "evidence/lean-consolidation-2026-10-14.json",
+    "prior_migration_record_sha256": "ccbdb7362a8832d4bc8feb21558218eee03d590855a3acec64e93f529ab0a393",
+    "scope": "The prior 472-source/289-library record is preserved unchanged and remains historical."
+  }
+}

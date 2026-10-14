@@ -1,0 +1,56 @@
+{
+  "schema": "grwtsk-lean-consolidation-rigor-receipt-v1",
+  "schema_version": 1,
+  "claim_limit": "All 331 library sources passed fresh trust-zero elaboration with fatal warnings; the owned-declaration audit failed. This is not formal acceptance or a cumulative conformance profile.",
+  "environment": {
+    "lean_version": "4.33.0",
+    "lean_commit": "d8b18978322de05a8f3dba51ef03cf5461676c17",
+    "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "dependency_artifact_scope": "Existing pinned dependency objects were reused; dependency sources were not rebuilt."
+  },
+  "source_bindings": {
+    "canonicalization": "SHA-256 of UTF-8 canonical JSON object mapping path to source SHA-256; keys sorted, ensure_ascii=true, separators comma/colon",
+    "all_active": {
+      "count": 534,
+      "sha256": "9dde2f0817ce40c73b428f370b4a5f4699206891c5be091ab1967845acda58dc"
+    },
+    "library": {
+      "count": 331,
+      "sha256": "e57c9b03f8e60c270e505ea40d474e6b5d2aa6f21a45ed03695e936f6f109978"
+    }
+  },
+  "library_replay": {
+    "command": "python3 -B scripts/check_math_trust.py --memory-mib 8192",
+    "outcome": "FAILED_AFTER_SOURCE_REPLAY",
+    "library_sources_passed": 331,
+    "source_result_count": 331,
+    "audit_result_count": 1,
+    "source_replay_status": "331_LIBRARY_SOURCES_PASSED_TRUST_ZERO_FATAL_WARNINGS_20261014T033918Z",
+    "owned_declaration_audit": "FAILED_ON_18_PARTIAL_DECLARATION_FINDINGS",
+    "receipt": ".local/math-trust/20261014T033918Z-414520fb9d/failure.json",
+    "receipt_sha256": "a5ca52dae68d737a21c2aa7b4537934549dbb7b3d9545492bd5d7f65d455c913",
+    "audit_log": ".local/math-trust/20261014T033918Z-414520fb9d/AllProjectAudit.log",
+    "audit_log_sha256": "d359560bd99789cb947a8047d43a9ad192576a1b478d70316c2b423bfeb04cb6",
+    "owned_declaration_count_before_failure": 8939,
+    "audit_findings": [
+      "GRWTSK.Algebra.orderedProduct._unsafe_rec",
+      "GRWTSK.Analysis.Waveform.workClock._unsafe_rec",
+      "GRWTSK.Analysis.Waveform.Scheduling.count._unsafe_rec",
+      "GRWTSK.Analysis.Waveform.Scheduling.clock._unsafe_rec",
+      "GRWTSK.Analysis.Waveform.Scheduling.debt._unsafe_rec",
+      "GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator._unsafe_rec",
+      "GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator._unsafe_rec",
+      "GRWTSK.RiemannHypothesis.BranchSequenceRealization.numerator._unsafe_rec",
+      "GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock._unsafe_rec",
+      "GRWTSK.ProofHorizon.CorkscrewChamberCap.affectedClosure._unsafe_rec",
+      "GRWTSK.ProofHorizon.CorkscrewChamberCap.routeClosureFrom._unsafe_rec",
+      "GRWTSK.ProofHorizon.CorkscrewChamberCap.RestartBudgetBoundary.totalRoundCost._unsafe_rec",
+      "GRWTSK.ProofHorizon.CorkscrewChamberCap.RestartBudgetBoundary.sessionRun._unsafe_rec",
+      "GRWTSK.LinearAlgebra.CocycleProduct.cocycleProduct._unsafe_rec",
+      "GRWTSK.RiemannHypothesis.BranchFrequencyExistence.finiteTail._unsafe_rec",
+      "PPNCP04.Cost.prefixSum._unsafe_rec",
+      "ASBNP04.mass._unsafe_rec",
+      "HSSCP04.SignedCharts.SignedBudgetDerivation.depth._unsafe_rec"
+    ]
+  }
+}

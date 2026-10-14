@@ -23,29 +23,29 @@
     "GRWTSK/Spectral/FreeIDS.lean": "2ceb8583eee1ece71002eb12fdb6682498125b79c53c9d5a3fa8283d0a9e8f60",
     "GRWTSK/Spectral/DirichletCut.lean": "98bc77aecb30901438b6af7cacb1edfdee181cc73d64bcb142daf6abed1ac8af",
     "GRWTSK/Spectral/SturmianBlockCounts.lean": "5e357a6fd03b24ceb1a92ac187f235b494c093276fa76aee72f5372927f52ed5",
-    "checks/TenMartiniAudit.lean": "a9c2d1b822b28bf47e2c004ccb66ad966d89b589a7bbf9c78a4d79f7e66e16e8",
-    "scripts/check_ten_martini.py": "203dcb4f6456c32dc7100bfbcc9d14db049571c30b3072a2e44fbb09b79f0aab",
+    "GRWTSK/Spectral/FiniteVolume/Checks/Declarations.lean": "a9c2d1b822b28bf47e2c004ccb66ad966d89b589a7bbf9c78a4d79f7e66e16e8",
+    "scripts/check_ten_martini.py": "61449e4ff5699d1c3219c8b9634e4c35cb84364d7c93b3cd5f83b1eb6be8ce45",
     "lean-toolchain": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
     "lakefile.toml": "a23f6d313f8458192328f09635ffef9078cb684374c2aac2743af541bf59b4e3",
     "lake-manifest.json": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
     "docs/ten-martini-zero.md": "f0b10dd668457b97ed00206399b146135de097bd0be9f81eebacc157675cc02f",
-    "checks/ten-martini-controls/MissingInjectivity.lean": "12d4eb4ef652c00200be8e935a8ddb9648d7f421da5e259bb02899f2c0962a4f",
-    "checks/ten-martini-controls/MissingIDS2.lean": "09d760b12d4f4e0893ccf68317d815430f2bc1dcc94b17c46969f77eb0ed523c",
-    "checks/ten-martini-controls/ZeroTraceAllEnergies.lean": "3967d2d9f515622db0d3b59e6f67286c5f4a7c29c254e75a01397f4fc611579d",
-    "checks/ten-martini-controls/WrongOffset.lean": "cf1c07716248cd258c7ed09e816c4dff8532c1f51c4f7961b3eb81ff66c66712",
-    "checks/ten-martini-controls/DroppedIDSLimit.lean": "a08a30459b5115ac3249e7aa389f8b5f25e7c724dda28a2d933ba90b70304717",
-    "checks/ten-martini-controls/DirichletCorner.lean": "4b34563e1c5a547b2b6f1d62ef9f73ee7662b45837692bcb1e6275e300c08ee0",
-    "checks/ten-martini-controls/ExteriorLabelInverse.lean": "e4ec7b0839759059f42d153e12f9c5eabf0a22c061407991baca9b04dd5b2914",
-    "checks/ten-martini-controls/WrongEigenvalueDenominator.lean": "a1947cf3f4f013c84b4a398b15535a163e1cc5f08454afb2a181e40277707716",
-    "checks/ten-martini-controls/ZeroVolumeError.lean": "c08b348f67aa124c3b44e3ae9a193b6b8d3977c915ef9020448b372d47d3821a",
-    "checks/ten-martini-controls/MissingDefectEquality.lean": "35fdd185bacac671c991d6df6b145f5e1c8f3617e4bf46a0ecbc8088d51d00ab",
-    "checks/ten-martini-controls/ExactCutAdditivity.lean": "72aa5bba6b8831919c7b3c3e77c0b4ec0db7babcd0cad74adb676efabb1679be",
-    "checks/ten-martini-controls/OneEndpointDefect.lean": "8b678d08034ff821ff30a4e6c6c75edbd6012eed0dff03a61ac594aaa9a20782",
-    "checks/ten-martini-controls/WrongSecondOrigin.lean": "e7f9850d6b02d80c15618b791c8634e4a90df1f7804526514dffadd847c5523a",
-    "checks/ten-martini-controls/DroppedRemainderCost.lean": "cb32190ecc88ee578a11db7f0fd3d52be49483957334b748b92a48f9adc14b40",
-    "checks/ten-martini-controls/DroppedBlockBoundaryCost.lean": "12c09611fd54bd37de93b7bb45f83c527591faf735b652514cea558d7c998499",
-    "checks/ten-martini-controls/MissingBlockLength.lean": "7e99ba36b4fbe75c10a1b946c822c98e6904d30377c5987c16568c84bab4c935",
-    "checks/ten-martini-controls/WrongSamplingStep.lean": "71c93cf70563883ace3e31385e43d33fddcb2a76e52a7fc2274d8679f6fcc935"
+    "GRWTSK/Spectral/FiniteVolume/Checks/Negative/MissingInjectivity.lean": "12d4eb4ef652c00200be8e935a8ddb9648d7f421da5e259bb02899f2c0962a4f",
+    "GRWTSK/Spectral/FiniteVolume/Checks/Negative/MissingIDS2.lean": "09d760b12d4f4e0893ccf68317d815430f2bc1dcc94b17c46969f77eb0ed523c",
+    "GRWTSK/Spectral/FiniteVolume/Checks/Negative/ZeroTraceAllEnergies.lean": "3967d2d9f515622db0d3b59e6f67286c5f4a7c29c254e75a01397f4fc611579d",
+    "GRWTSK/Spectral/FiniteVolume/Checks/Negative/WrongOffset.lean": "cf1c07716248cd258c7ed09e816c4dff8532c1f51c4f7961b3eb81ff66c66712",
+    "GRWTSK/Spectral/FiniteVolume/Checks/Negative/DroppedIDSLimit.lean": "a08a30459b5115ac3249e7aa389f8b5f25e7c724dda28a2d933ba90b70304717",
+    "GRWTSK/Spectral/FiniteVolume/Checks/Negative/DirichletCorner.lean": "4b34563e1c5a547b2b6f1d62ef9f73ee7662b45837692bcb1e6275e300c08ee0",
+    "GRWTSK/Spectral/FiniteVolume/Checks/Negative/ExteriorLabelInverse.lean": "e4ec7b0839759059f42d153e12f9c5eabf0a22c061407991baca9b04dd5b2914",
+    "GRWTSK/Spectral/FiniteVolume/Checks/Negative/WrongEigenvalueDenominator.lean": "a1947cf3f4f013c84b4a398b15535a163e1cc5f08454afb2a181e40277707716",
+    "GRWTSK/Spectral/FiniteVolume/Checks/Negative/ZeroVolumeError.lean": "c08b348f67aa124c3b44e3ae9a193b6b8d3977c915ef9020448b372d47d3821a",
+    "GRWTSK/Spectral/FiniteVolume/Checks/Negative/MissingDefectEquality.lean": "35fdd185bacac671c991d6df6b145f5e1c8f3617e4bf46a0ecbc8088d51d00ab",
+    "GRWTSK/Spectral/FiniteVolume/Checks/Negative/ExactCutAdditivity.lean": "72aa5bba6b8831919c7b3c3e77c0b4ec0db7babcd0cad74adb676efabb1679be",
+    "GRWTSK/Spectral/FiniteVolume/Checks/Negative/OneEndpointDefect.lean": "8b678d08034ff821ff30a4e6c6c75edbd6012eed0dff03a61ac594aaa9a20782",
+    "GRWTSK/Spectral/FiniteVolume/Checks/Negative/WrongSecondOrigin.lean": "e7f9850d6b02d80c15618b791c8634e4a90df1f7804526514dffadd847c5523a",
+    "GRWTSK/Spectral/FiniteVolume/Checks/Negative/DroppedRemainderCost.lean": "cb32190ecc88ee578a11db7f0fd3d52be49483957334b748b92a48f9adc14b40",
+    "GRWTSK/Spectral/FiniteVolume/Checks/Negative/DroppedBlockBoundaryCost.lean": "12c09611fd54bd37de93b7bb45f83c527591faf735b652514cea558d7c998499",
+    "GRWTSK/Spectral/FiniteVolume/Checks/Negative/MissingBlockLength.lean": "7e99ba36b4fbe75c10a1b946c822c98e6904d30377c5987c16568c84bab4c935",
+    "GRWTSK/Spectral/FiniteVolume/Checks/Negative/WrongSamplingStep.lean": "71c93cf70563883ace3e31385e43d33fddcb2a76e52a7fc2274d8679f6fcc935"
   },
   "fresh_project_modules": [
     "GRWTSK/Spectral/GapTransport.lean",
@@ -68,7 +68,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.GapTransport",
       "name": "GRWTSK.Spectral.GapTransport.gap_width_le_of_ids_comparison",
-      "type": "∀ {spectrum : Set ℝ} {free ids : ℝ → ℝ} {label freeEnergy lower upper a b : ℝ},\n  (∀ (x : ℝ), free (x - upper) ≤ ids x ∧ ids x ≤ free (x - lower)) →\n    (∀ (x : ℝ), free x ≤ label → x ≤ freeEnergy) →\n      (∀ (x : ℝ), label ≤ free x → freeEnergy ≤ x) →\n        OpenLabelGap spectrum ids label a b → 0 < b - a ∧ b - a ≤ upper - lower"
+      "type": "\u2200 {spectrum : Set \u211d} {free ids : \u211d \u2192 \u211d} {label freeEnergy lower upper a b : \u211d},\n  (\u2200 (x : \u211d), free (x - upper) \u2264 ids x \u2227 ids x \u2264 free (x - lower)) \u2192\n    (\u2200 (x : \u211d), free x \u2264 label \u2192 x \u2264 freeEnergy) \u2192\n      (\u2200 (x : \u211d), label \u2264 free x \u2192 freeEnergy \u2264 x) \u2192\n        OpenLabelGap spectrum ids label a b \u2192 0 < b - a \u2227 b - a \u2264 upper - lower"
     },
     {
       "axioms": [
@@ -79,7 +79,7 @@
       "kind": "definition",
       "module": "GRWTSK.Spectral.GapTransport",
       "name": "GRWTSK.Spectral.GapTransport.LabelCoding.noConfusionType",
-      "type": "Sort u →\n  {Γ : Type u_1} →\n    {spectrum : Set ℝ} →\n      {ids : ℝ → ℝ} →\n        {labels : Γ → ℝ} →\n          LabelCoding Γ spectrum ids labels →\n            {Γ' : Type u_1} →\n              {spectrum' : Set ℝ} → {ids' : ℝ → ℝ} → {labels' : Γ' → ℝ} → LabelCoding Γ' spectrum' ids' labels' → Sort u"
+      "type": "Sort u \u2192\n  {\u0393 : Type u_1} \u2192\n    {spectrum : Set \u211d} \u2192\n      {ids : \u211d \u2192 \u211d} \u2192\n        {labels : \u0393 \u2192 \u211d} \u2192\n          LabelCoding \u0393 spectrum ids labels \u2192\n            {\u0393' : Type u_1} \u2192\n              {spectrum' : Set \u211d} \u2192 {ids' : \u211d \u2192 \u211d} \u2192 {labels' : \u0393' \u2192 \u211d} \u2192 LabelCoding \u0393' spectrum' ids' labels' \u2192 Sort u"
     },
     {
       "axioms": [
@@ -90,7 +90,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.GapTransport",
       "name": "GRWTSK.Spectral.GapTransport.transport_all_labels",
-      "type": "∀ {Γ : Type u_1} {S₀ S : Set ℝ} {N₀ N : ℝ → ℝ} {labels : Γ → ℝ} (reference : LabelCoding Γ S₀ N₀ labels),\n  (∀ E ∈ S₀, ∃ γ, reference.energy γ = E) →\n    ∀ (target : LabelCoding Γ S N labels),\n      Monotone N →\n        LocalPlateauCharacterization S N →\n          ∀ (allowed : Set ℝ),\n            (∀ label ∈ allowed, ∃ a b, OpenLabelGap S₀ N₀ label a b) →\n              ∀ label ∈ allowed, ∃ c d, OpenLabelGap S N label c d ∧ 0 < d - c"
+      "type": "\u2200 {\u0393 : Type u_1} {S\u2080 S : Set \u211d} {N\u2080 N : \u211d \u2192 \u211d} {labels : \u0393 \u2192 \u211d} (reference : LabelCoding \u0393 S\u2080 N\u2080 labels),\n  (\u2200 E \u2208 S\u2080, \u2203 \u03b3, reference.energy \u03b3 = E) \u2192\n    \u2200 (target : LabelCoding \u0393 S N labels),\n      Monotone N \u2192\n        LocalPlateauCharacterization S N \u2192\n          \u2200 (allowed : Set \u211d),\n            (\u2200 label \u2208 allowed, \u2203 a b, OpenLabelGap S\u2080 N\u2080 label a b) \u2192\n              \u2200 label \u2208 allowed, \u2203 c d, OpenLabelGap S N label c d \u2227 0 < d - c"
     },
     {
       "axioms": [
@@ -101,7 +101,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.GapTransport",
       "name": "GRWTSK.Spectral.GapTransport.plateau_on_Icc",
-      "type": "∀ {ids : ℝ → ℝ}, Monotone ids → ∀ {a b : ℝ}, ids a = ids b → ∀ x ∈ Set.Icc a b, ids x = ids a"
+      "type": "\u2200 {ids : \u211d \u2192 \u211d}, Monotone ids \u2192 \u2200 {a b : \u211d}, ids a = ids b \u2192 \u2200 x \u2208 Set.Icc a b, ids x = ids a"
     },
     {
       "axioms": [
@@ -112,7 +112,7 @@
       "kind": "definition",
       "module": "GRWTSK.Spectral.GapTransport",
       "name": "GRWTSK.Spectral.GapTransport.LabelCoding.energy",
-      "type": "{Γ : Type u_1} → {spectrum : Set ℝ} → {ids : ℝ → ℝ} → {labels : Γ → ℝ} → LabelCoding Γ spectrum ids labels → Γ → ℝ"
+      "type": "{\u0393 : Type u_1} \u2192 {spectrum : Set \u211d} \u2192 {ids : \u211d \u2192 \u211d} \u2192 {labels : \u0393 \u2192 \u211d} \u2192 LabelCoding \u0393 spectrum ids labels \u2192 \u0393 \u2192 \u211d"
     },
     {
       "axioms": [
@@ -123,7 +123,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.GapTransport",
       "name": "GRWTSK.Spectral.GapTransport.continuity_does_not_prevent_zero_collapse",
-      "type": "(Continuous fun V => -V) ∧ (Continuous fun V => V) ∧ (∀ (V : ℝ), 0 < V → -V < V) ∧ -0 = 0"
+      "type": "(Continuous fun V => -V) \u2227 (Continuous fun V => V) \u2227 (\u2200 (V : \u211d), 0 < V \u2192 -V < V) \u2227 -0 = 0"
     },
     {
       "axioms": [
@@ -134,7 +134,7 @@
       "kind": "definition",
       "module": "GRWTSK.Spectral.GapTransport",
       "name": "GRWTSK.Spectral.GapTransport.LabelCoding.mk.noConfusion",
-      "type": "{Γ : Type u_1} →\n  {spectrum : Set ℝ} →\n    {ids : ℝ → ℝ} →\n      {labels : Γ → ℝ} →\n        {P : Sort u} →\n          {energy : Γ → ℝ} →\n            {spectral : ∀ (γ : Γ), energy γ ∈ spectrum} →\n              {injective : Function.Injective energy} →\n                {labelled : ∀ (γ : Γ), ids (energy γ) = labels γ} →\n                  {energy' : Γ → ℝ} →\n                    {spectral' : ∀ (γ : Γ), energy' γ ∈ spectrum} →\n                      {injective' : Function.Injective energy'} →\n                        {labelled' : ∀ (γ : Γ), ids (energy' γ) = labels γ} →\n                          { energy := energy, spectral := spectral, injective := injective, labelled := labelled } =\n                              { energy := energy', spectral := spectral', injective := injective',\n                                labelled := labelled' } →\n                            (energy ≍ energy' → P) → P"
+      "type": "{\u0393 : Type u_1} \u2192\n  {spectrum : Set \u211d} \u2192\n    {ids : \u211d \u2192 \u211d} \u2192\n      {labels : \u0393 \u2192 \u211d} \u2192\n        {P : Sort u} \u2192\n          {energy : \u0393 \u2192 \u211d} \u2192\n            {spectral : \u2200 (\u03b3 : \u0393), energy \u03b3 \u2208 spectrum} \u2192\n              {injective : Function.Injective energy} \u2192\n                {labelled : \u2200 (\u03b3 : \u0393), ids (energy \u03b3) = labels \u03b3} \u2192\n                  {energy' : \u0393 \u2192 \u211d} \u2192\n                    {spectral' : \u2200 (\u03b3 : \u0393), energy' \u03b3 \u2208 spectrum} \u2192\n                      {injective' : Function.Injective energy'} \u2192\n                        {labelled' : \u2200 (\u03b3 : \u0393), ids (energy' \u03b3) = labels \u03b3} \u2192\n                          { energy := energy, spectral := spectral, injective := injective, labelled := labelled } =\n                              { energy := energy', spectral := spectral', injective := injective',\n                                labelled := labelled' } \u2192\n                            (energy \u224d energy' \u2192 P) \u2192 P"
     },
     {
       "axioms": [
@@ -145,7 +145,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.GapTransport",
       "name": "GRWTSK.Spectral.GapTransport.positive_width_has_no_uniform_floor",
-      "type": "(∀ (V : ℝ), 0 < V → 0 < 2 * V) ∧ ∀ (c : ℝ), 0 < c → ∃ V, 0 < V ∧ 2 * V < c"
+      "type": "(\u2200 (V : \u211d), 0 < V \u2192 0 < 2 * V) \u2227 \u2200 (c : \u211d), 0 < c \u2192 \u2203 V, 0 < V \u2227 2 * V < c"
     },
     {
       "axioms": [
@@ -156,7 +156,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.GapTransport",
       "name": "GRWTSK.Spectral.GapTransport.labelled_point_bounds_of_ids_comparison",
-      "type": "∀ {free ids : ℝ → ℝ} {label freeEnergy lower upper E : ℝ},\n  (∀ (x : ℝ), free (x - upper) ≤ ids x ∧ ids x ≤ free (x - lower)) →\n    (∀ (x : ℝ), free x ≤ label → x ≤ freeEnergy) →\n      (∀ (x : ℝ), label ≤ free x → freeEnergy ≤ x) → ids E = label → freeEnergy + lower ≤ E ∧ E ≤ freeEnergy + upper"
+      "type": "\u2200 {free ids : \u211d \u2192 \u211d} {label freeEnergy lower upper E : \u211d},\n  (\u2200 (x : \u211d), free (x - upper) \u2264 ids x \u2227 ids x \u2264 free (x - lower)) \u2192\n    (\u2200 (x : \u211d), free x \u2264 label \u2192 x \u2264 freeEnergy) \u2192\n      (\u2200 (x : \u211d), label \u2264 free x \u2192 freeEnergy \u2264 x) \u2192 ids E = label \u2192 freeEnergy + lower \u2264 E \u2227 E \u2264 freeEnergy + upper"
     },
     {
       "axioms": [
@@ -167,7 +167,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.GapTransport",
       "name": "GRWTSK.Spectral.GapTransport.transport_open_label",
-      "type": "∀ {Γ : Type u_1} {S₀ S : Set ℝ} {N₀ N : ℝ → ℝ} {labels : Γ → ℝ} (reference : LabelCoding Γ S₀ N₀ labels),\n  (∀ E ∈ S₀, ∃ γ, reference.energy γ = E) →\n    ∀ (target : LabelCoding Γ S N labels),\n      Monotone N →\n        LocalPlateauCharacterization S N →\n          ∀ {label a b : ℝ}, OpenLabelGap S₀ N₀ label a b → ∃ c d, OpenLabelGap S N label c d ∧ 0 < d - c"
+      "type": "\u2200 {\u0393 : Type u_1} {S\u2080 S : Set \u211d} {N\u2080 N : \u211d \u2192 \u211d} {labels : \u0393 \u2192 \u211d} (reference : LabelCoding \u0393 S\u2080 N\u2080 labels),\n  (\u2200 E \u2208 S\u2080, \u2203 \u03b3, reference.energy \u03b3 = E) \u2192\n    \u2200 (target : LabelCoding \u0393 S N labels),\n      Monotone N \u2192\n        LocalPlateauCharacterization S N \u2192\n          \u2200 {label a b : \u211d}, OpenLabelGap S\u2080 N\u2080 label a b \u2192 \u2203 c d, OpenLabelGap S N label c d \u2227 0 < d - c"
     },
     {
       "axioms": [
@@ -178,7 +178,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.GapTransport",
       "name": "GRWTSK.Spectral.GapTransport.gap_of_distinct_paths",
-      "type": "∀ {Γ : Type u_1} {spectrum : Set ℝ} {ids : ℝ → ℝ} {labels : Γ → ℝ} (coding : LabelCoding Γ spectrum ids labels),\n  Monotone ids →\n    LocalPlateauCharacterization spectrum ids →\n      ∀ {γ₁ γ₂ : Γ},\n        γ₁ ≠ γ₂ →\n          ∀ {label : ℝ}, labels γ₁ = label → labels γ₂ = label → ∃ a b, OpenLabelGap spectrum ids label a b ∧ 0 < b - a"
+      "type": "\u2200 {\u0393 : Type u_1} {spectrum : Set \u211d} {ids : \u211d \u2192 \u211d} {labels : \u0393 \u2192 \u211d} (coding : LabelCoding \u0393 spectrum ids labels),\n  Monotone ids \u2192\n    LocalPlateauCharacterization spectrum ids \u2192\n      \u2200 {\u03b3\u2081 \u03b3\u2082 : \u0393},\n        \u03b3\u2081 \u2260 \u03b3\u2082 \u2192\n          \u2200 {label : \u211d}, labels \u03b3\u2081 = label \u2192 labels \u03b3\u2082 = label \u2192 \u2203 a b, OpenLabelGap spectrum ids label a b \u2227 0 < b - a"
     },
     {
       "axioms": [
@@ -189,7 +189,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.GapTransport",
       "name": "GRWTSK.Spectral.GapTransport.LabelCoding.mk.sizeOf_spec",
-      "type": "∀ {Γ : Type u_1} {spectrum : Set ℝ} {ids : ℝ → ℝ} {labels : Γ → ℝ} [inst : SizeOf Γ]\n  [inst_1 : (a : ℝ) → SizeOf (spectrum a)] (energy : Γ → ℝ) (spectral : ∀ (γ : Γ), energy γ ∈ spectrum)\n  (injective : Function.Injective energy) (labelled : ∀ (γ : Γ), ids (energy γ) = labels γ),\n  sizeOf { energy := energy, spectral := spectral, injective := injective, labelled := labelled } = 1"
+      "type": "\u2200 {\u0393 : Type u_1} {spectrum : Set \u211d} {ids : \u211d \u2192 \u211d} {labels : \u0393 \u2192 \u211d} [inst : SizeOf \u0393]\n  [inst_1 : (a : \u211d) \u2192 SizeOf (spectrum a)] (energy : \u0393 \u2192 \u211d) (spectral : \u2200 (\u03b3 : \u0393), energy \u03b3 \u2208 spectrum)\n  (injective : Function.Injective energy) (labelled : \u2200 (\u03b3 : \u0393), ids (energy \u03b3) = labels \u03b3),\n  sizeOf { energy := energy, spectral := spectral, injective := injective, labelled := labelled } = 1"
     },
     {
       "axioms": [
@@ -200,7 +200,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.GapTransport",
       "name": "GRWTSK.Spectral.GapTransport.gap_of_equal_endpoint_labels",
-      "type": "∀ {spectrum : Set ℝ} {ids : ℝ → ℝ},\n  Monotone ids →\n    LocalPlateauCharacterization spectrum ids →\n      ∀ {label a b : ℝ},\n        a < b → a ∈ spectrum → b ∈ spectrum → ids a = label → ids b = label → OpenLabelGap spectrum ids label a b"
+      "type": "\u2200 {spectrum : Set \u211d} {ids : \u211d \u2192 \u211d},\n  Monotone ids \u2192\n    LocalPlateauCharacterization spectrum ids \u2192\n      \u2200 {label a b : \u211d},\n        a < b \u2192 a \u2208 spectrum \u2192 b \u2208 spectrum \u2192 ids a = label \u2192 ids b = label \u2192 OpenLabelGap spectrum ids label a b"
     },
     {
       "axioms": [
@@ -211,7 +211,7 @@
       "kind": "generated",
       "module": "GRWTSK.Spectral.GapTransport",
       "name": "GRWTSK.Spectral.GapTransport.LabelCoding.rec",
-      "type": "{Γ : Type u_1} →\n  {spectrum : Set ℝ} →\n    {ids : ℝ → ℝ} →\n      {labels : Γ → ℝ} →\n        {motive : LabelCoding Γ spectrum ids labels → Sort u} →\n          ((energy : Γ → ℝ) →\n              (spectral : ∀ (γ : Γ), energy γ ∈ spectrum) →\n                (injective : Function.Injective energy) →\n                  (labelled : ∀ (γ : Γ), ids (energy γ) = labels γ) →\n                    motive { energy := energy, spectral := spectral, injective := injective, labelled := labelled }) →\n            (t : LabelCoding Γ spectrum ids labels) → motive t"
+      "type": "{\u0393 : Type u_1} \u2192\n  {spectrum : Set \u211d} \u2192\n    {ids : \u211d \u2192 \u211d} \u2192\n      {labels : \u0393 \u2192 \u211d} \u2192\n        {motive : LabelCoding \u0393 spectrum ids labels \u2192 Sort u} \u2192\n          ((energy : \u0393 \u2192 \u211d) \u2192\n              (spectral : \u2200 (\u03b3 : \u0393), energy \u03b3 \u2208 spectrum) \u2192\n                (injective : Function.Injective energy) \u2192\n                  (labelled : \u2200 (\u03b3 : \u0393), ids (energy \u03b3) = labels \u03b3) \u2192\n                    motive { energy := energy, spectral := spectral, injective := injective, labelled := labelled }) \u2192\n            (t : LabelCoding \u0393 spectrum ids labels) \u2192 motive t"
     },
     {
       "axioms": [
@@ -222,7 +222,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.GapTransport",
       "name": "GRWTSK.Spectral.GapTransport.LabelCoding.mk.inj",
-      "type": "∀ {Γ : Type u_1} {spectrum : Set ℝ} {ids : ℝ → ℝ} {labels energy : Γ → ℝ} {spectral : ∀ (γ : Γ), energy γ ∈ spectrum}\n  {injective : Function.Injective energy} {labelled : ∀ (γ : Γ), ids (energy γ) = labels γ} {energy_1 : Γ → ℝ}\n  {spectral_1 : ∀ (γ : Γ), energy_1 γ ∈ spectrum} {injective_1 : Function.Injective energy_1}\n  {labelled_1 : ∀ (γ : Γ), ids (energy_1 γ) = labels γ},\n  { energy := energy, spectral := spectral, injective := injective, labelled := labelled } =\n      { energy := energy_1, spectral := spectral_1, injective := injective_1, labelled := labelled_1 } →\n    energy = energy_1"
+      "type": "\u2200 {\u0393 : Type u_1} {spectrum : Set \u211d} {ids : \u211d \u2192 \u211d} {labels energy : \u0393 \u2192 \u211d} {spectral : \u2200 (\u03b3 : \u0393), energy \u03b3 \u2208 spectrum}\n  {injective : Function.Injective energy} {labelled : \u2200 (\u03b3 : \u0393), ids (energy \u03b3) = labels \u03b3} {energy_1 : \u0393 \u2192 \u211d}\n  {spectral_1 : \u2200 (\u03b3 : \u0393), energy_1 \u03b3 \u2208 spectrum} {injective_1 : Function.Injective energy_1}\n  {labelled_1 : \u2200 (\u03b3 : \u0393), ids (energy_1 \u03b3) = labels \u03b3},\n  { energy := energy, spectral := spectral, injective := injective, labelled := labelled } =\n      { energy := energy_1, spectral := spectral_1, injective := injective_1, labelled := labelled_1 } \u2192\n    energy = energy_1"
     },
     {
       "axioms": [
@@ -233,7 +233,7 @@
       "kind": "definition",
       "module": "GRWTSK.Spectral.GapTransport",
       "name": "GRWTSK.Spectral.GapTransport.LabelCoding.recOn",
-      "type": "{Γ : Type u_1} →\n  {spectrum : Set ℝ} →\n    {ids : ℝ → ℝ} →\n      {labels : Γ → ℝ} →\n        {motive : LabelCoding Γ spectrum ids labels → Sort u} →\n          (t : LabelCoding Γ spectrum ids labels) →\n            ((energy : Γ → ℝ) →\n                (spectral : ∀ (γ : Γ), energy γ ∈ spectrum) →\n                  (injective : Function.Injective energy) →\n                    (labelled : ∀ (γ : Γ), ids (energy γ) = labels γ) →\n                      motive { energy := energy, spectral := spectral, injective := injective, labelled := labelled }) →\n              motive t"
+      "type": "{\u0393 : Type u_1} \u2192\n  {spectrum : Set \u211d} \u2192\n    {ids : \u211d \u2192 \u211d} \u2192\n      {labels : \u0393 \u2192 \u211d} \u2192\n        {motive : LabelCoding \u0393 spectrum ids labels \u2192 Sort u} \u2192\n          (t : LabelCoding \u0393 spectrum ids labels) \u2192\n            ((energy : \u0393 \u2192 \u211d) \u2192\n                (spectral : \u2200 (\u03b3 : \u0393), energy \u03b3 \u2208 spectrum) \u2192\n                  (injective : Function.Injective energy) \u2192\n                    (labelled : \u2200 (\u03b3 : \u0393), ids (energy \u03b3) = labels \u03b3) \u2192\n                      motive { energy := energy, spectral := spectral, injective := injective, labelled := labelled }) \u2192\n              motive t"
     },
     {
       "axioms": [
@@ -244,7 +244,7 @@
       "kind": "definition",
       "module": "GRWTSK.Spectral.GapTransport",
       "name": "GRWTSK.Spectral.GapTransport.LabelCoding.noConfusion",
-      "type": "{P : Sort u} →\n  {Γ : Type u_1} →\n    {spectrum : Set ℝ} →\n      {ids : ℝ → ℝ} →\n        {labels : Γ → ℝ} →\n          {t : LabelCoding Γ spectrum ids labels} →\n            {Γ' : Type u_1} →\n              {spectrum' : Set ℝ} →\n                {ids' : ℝ → ℝ} →\n                  {labels' : Γ' → ℝ} →\n                    {t' : LabelCoding Γ' spectrum' ids' labels'} →\n                      Γ = Γ' →\n                        spectrum = spectrum' →\n                          ids = ids' → labels ≍ labels' → t ≍ t' → LabelCoding.noConfusionType P t t'"
+      "type": "{P : Sort u} \u2192\n  {\u0393 : Type u_1} \u2192\n    {spectrum : Set \u211d} \u2192\n      {ids : \u211d \u2192 \u211d} \u2192\n        {labels : \u0393 \u2192 \u211d} \u2192\n          {t : LabelCoding \u0393 spectrum ids labels} \u2192\n            {\u0393' : Type u_1} \u2192\n              {spectrum' : Set \u211d} \u2192\n                {ids' : \u211d \u2192 \u211d} \u2192\n                  {labels' : \u0393' \u2192 \u211d} \u2192\n                    {t' : LabelCoding \u0393' spectrum' ids' labels'} \u2192\n                      \u0393 = \u0393' \u2192\n                        spectrum = spectrum' \u2192\n                          ids = ids' \u2192 labels \u224d labels' \u2192 t \u224d t' \u2192 LabelCoding.noConfusionType P t t'"
     },
     {
       "axioms": [
@@ -255,7 +255,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.GapTransport",
       "name": "GRWTSK.Spectral.GapTransport.LabelCoding.labelled",
-      "type": "∀ {Γ : Type u_1} {spectrum : Set ℝ} {ids : ℝ → ℝ} {labels : Γ → ℝ} (self : LabelCoding Γ spectrum ids labels) (γ : Γ),\n  ids (self.energy γ) = labels γ"
+      "type": "\u2200 {\u0393 : Type u_1} {spectrum : Set \u211d} {ids : \u211d \u2192 \u211d} {labels : \u0393 \u2192 \u211d} (self : LabelCoding \u0393 spectrum ids labels) (\u03b3 : \u0393),\n  ids (self.energy \u03b3) = labels \u03b3"
     },
     {
       "axioms": [
@@ -266,7 +266,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.GapTransport",
       "name": "GRWTSK.Spectral.GapTransport.LabelCoding.mk.injEq",
-      "type": "∀ {Γ : Type u_1} {spectrum : Set ℝ} {ids : ℝ → ℝ} {labels : Γ → ℝ} (energy : Γ → ℝ)\n  (spectral : ∀ (γ : Γ), energy γ ∈ spectrum) (injective : Function.Injective energy)\n  (labelled : ∀ (γ : Γ), ids (energy γ) = labels γ) (energy_1 : Γ → ℝ) (spectral_1 : ∀ (γ : Γ), energy_1 γ ∈ spectrum)\n  (injective_1 : Function.Injective energy_1) (labelled_1 : ∀ (γ : Γ), ids (energy_1 γ) = labels γ),\n  ({ energy := energy, spectral := spectral, injective := injective, labelled := labelled } =\n      { energy := energy_1, spectral := spectral_1, injective := injective_1, labelled := labelled_1 }) =\n    (energy = energy_1)"
+      "type": "\u2200 {\u0393 : Type u_1} {spectrum : Set \u211d} {ids : \u211d \u2192 \u211d} {labels : \u0393 \u2192 \u211d} (energy : \u0393 \u2192 \u211d)\n  (spectral : \u2200 (\u03b3 : \u0393), energy \u03b3 \u2208 spectrum) (injective : Function.Injective energy)\n  (labelled : \u2200 (\u03b3 : \u0393), ids (energy \u03b3) = labels \u03b3) (energy_1 : \u0393 \u2192 \u211d) (spectral_1 : \u2200 (\u03b3 : \u0393), energy_1 \u03b3 \u2208 spectrum)\n  (injective_1 : Function.Injective energy_1) (labelled_1 : \u2200 (\u03b3 : \u0393), ids (energy_1 \u03b3) = labels \u03b3),\n  ({ energy := energy, spectral := spectral, injective := injective, labelled := labelled } =\n      { energy := energy_1, spectral := spectral_1, injective := injective_1, labelled := labelled_1 }) =\n    (energy = energy_1)"
     },
     {
       "axioms": [
@@ -277,7 +277,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.GapTransport",
       "name": "GRWTSK.Spectral.GapTransport.LabelCoding.spectral",
-      "type": "∀ {Γ : Type u_1} {spectrum : Set ℝ} {ids : ℝ → ℝ} {labels : Γ → ℝ} (self : LabelCoding Γ spectrum ids labels) (γ : Γ),\n  self.energy γ ∈ spectrum"
+      "type": "\u2200 {\u0393 : Type u_1} {spectrum : Set \u211d} {ids : \u211d \u2192 \u211d} {labels : \u0393 \u2192 \u211d} (self : LabelCoding \u0393 spectrum ids labels) (\u03b3 : \u0393),\n  self.energy \u03b3 \u2208 spectrum"
     },
     {
       "axioms": [
@@ -288,7 +288,7 @@
       "kind": "definition",
       "module": "GRWTSK.Spectral.GapTransport",
       "name": "GRWTSK.Spectral.GapTransport.LabelCoding._sizeOf_1",
-      "type": "{Γ : Type u_1} →\n  {spectrum : Set ℝ} →\n    {ids : ℝ → ℝ} →\n      {labels : Γ → ℝ} → [SizeOf Γ] → [(a : ℝ) → SizeOf (spectrum a)] → LabelCoding Γ spectrum ids labels → ℕ"
+      "type": "{\u0393 : Type u_1} \u2192\n  {spectrum : Set \u211d} \u2192\n    {ids : \u211d \u2192 \u211d} \u2192\n      {labels : \u0393 \u2192 \u211d} \u2192 [SizeOf \u0393] \u2192 [(a : \u211d) \u2192 SizeOf (spectrum a)] \u2192 LabelCoding \u0393 spectrum ids labels \u2192 \u2115"
     },
     {
       "axioms": [
@@ -299,7 +299,7 @@
       "kind": "definition",
       "module": "GRWTSK.Spectral.GapTransport",
       "name": "GRWTSK.Spectral.GapTransport.LabelCoding.ctorIdx",
-      "type": "{Γ : Type u_1} → {spectrum : Set ℝ} → {ids : ℝ → ℝ} → {labels : Γ → ℝ} → LabelCoding Γ spectrum ids labels → ℕ"
+      "type": "{\u0393 : Type u_1} \u2192 {spectrum : Set \u211d} \u2192 {ids : \u211d \u2192 \u211d} \u2192 {labels : \u0393 \u2192 \u211d} \u2192 LabelCoding \u0393 spectrum ids labels \u2192 \u2115"
     },
     {
       "axioms": [
@@ -310,7 +310,7 @@
       "kind": "definition",
       "module": "GRWTSK.Spectral.GapTransport",
       "name": "GRWTSK.Spectral.GapTransport.LabelCoding._sizeOf_inst",
-      "type": "(Γ : Type u_1) →\n  (spectrum : Set ℝ) →\n    (ids : ℝ → ℝ) →\n      (labels : Γ → ℝ) → [SizeOf Γ] → [(a : ℝ) → SizeOf (spectrum a)] → SizeOf (LabelCoding Γ spectrum ids labels)"
+      "type": "(\u0393 : Type u_1) \u2192\n  (spectrum : Set \u211d) \u2192\n    (ids : \u211d \u2192 \u211d) \u2192\n      (labels : \u0393 \u2192 \u211d) \u2192 [SizeOf \u0393] \u2192 [(a : \u211d) \u2192 SizeOf (spectrum a)] \u2192 SizeOf (LabelCoding \u0393 spectrum ids labels)"
     },
     {
       "axioms": [
@@ -321,7 +321,7 @@
       "kind": "generated",
       "module": "GRWTSK.Spectral.GapTransport",
       "name": "GRWTSK.Spectral.GapTransport.LabelCoding",
-      "type": "(Γ : Type u_1) → Set ℝ → (ℝ → ℝ) → (Γ → ℝ) → Type u_1"
+      "type": "(\u0393 : Type u_1) \u2192 Set \u211d \u2192 (\u211d \u2192 \u211d) \u2192 (\u0393 \u2192 \u211d) \u2192 Type u_1"
     },
     {
       "axioms": [
@@ -332,7 +332,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.GapTransport",
       "name": "GRWTSK.Spectral.GapTransport.collapsed_coding_not_injective",
-      "type": "¬Function.Injective fun x => 0"
+      "type": "\u00acFunction.Injective fun x => 0"
     },
     {
       "axioms": [
@@ -343,7 +343,7 @@
       "kind": "definition",
       "module": "GRWTSK.Spectral.GapTransport",
       "name": "GRWTSK.Spectral.GapTransport.LabelCoding.mk._flat_ctor",
-      "type": "{Γ : Type u_1} →\n  {spectrum : Set ℝ} →\n    {ids : ℝ → ℝ} →\n      {labels : Γ → ℝ} →\n        (energy : Γ → ℝ) →\n          (∀ (γ : Γ), energy γ ∈ spectrum) →\n            Function.Injective energy → (∀ (γ : Γ), ids (energy γ) = labels γ) → LabelCoding Γ spectrum ids labels"
+      "type": "{\u0393 : Type u_1} \u2192\n  {spectrum : Set \u211d} \u2192\n    {ids : \u211d \u2192 \u211d} \u2192\n      {labels : \u0393 \u2192 \u211d} \u2192\n        (energy : \u0393 \u2192 \u211d) \u2192\n          (\u2200 (\u03b3 : \u0393), energy \u03b3 \u2208 spectrum) \u2192\n            Function.Injective energy \u2192 (\u2200 (\u03b3 : \u0393), ids (energy \u03b3) = labels \u03b3) \u2192 LabelCoding \u0393 spectrum ids labels"
     },
     {
       "axioms": [
@@ -354,7 +354,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.GapTransport",
       "name": "GRWTSK.Spectral.GapTransport.monotone_plateau_alone_is_not_a_gap",
-      "type": "(Monotone fun x => 0) ∧ ¬OpenLabelGap Set.univ (fun x => 0) 0 (-1) 1"
+      "type": "(Monotone fun x => 0) \u2227 \u00acOpenLabelGap Set.univ (fun x => 0) 0 (-1) 1"
     },
     {
       "axioms": [
@@ -365,7 +365,7 @@
       "kind": "definition",
       "module": "GRWTSK.Spectral.GapTransport",
       "name": "GRWTSK.Spectral.GapTransport.LocalPlateauCharacterization",
-      "type": "Set ℝ → (ℝ → ℝ) → Prop"
+      "type": "Set \u211d \u2192 (\u211d \u2192 \u211d) \u2192 Prop"
     },
     {
       "axioms": [
@@ -376,7 +376,7 @@
       "kind": "definition",
       "module": "GRWTSK.Spectral.GapTransport",
       "name": "GRWTSK.Spectral.GapTransport.LabelCoding.casesOn",
-      "type": "{Γ : Type u_1} →\n  {spectrum : Set ℝ} →\n    {ids : ℝ → ℝ} →\n      {labels : Γ → ℝ} →\n        {motive : LabelCoding Γ spectrum ids labels → Sort u} →\n          (t : LabelCoding Γ spectrum ids labels) →\n            ((energy : Γ → ℝ) →\n                (spectral : ∀ (γ : Γ), energy γ ∈ spectrum) →\n                  (injective : Function.Injective energy) →\n                    (labelled : ∀ (γ : Γ), ids (energy γ) = labels γ) →\n                      motive { energy := energy, spectral := spectral, injective := injective, labelled := labelled }) →\n              motive t"
+      "type": "{\u0393 : Type u_1} \u2192\n  {spectrum : Set \u211d} \u2192\n    {ids : \u211d \u2192 \u211d} \u2192\n      {labels : \u0393 \u2192 \u211d} \u2192\n        {motive : LabelCoding \u0393 spectrum ids labels \u2192 Sort u} \u2192\n          (t : LabelCoding \u0393 spectrum ids labels) \u2192\n            ((energy : \u0393 \u2192 \u211d) \u2192\n                (spectral : \u2200 (\u03b3 : \u0393), energy \u03b3 \u2208 spectrum) \u2192\n                  (injective : Function.Injective energy) \u2192\n                    (labelled : \u2200 (\u03b3 : \u0393), ids (energy \u03b3) = labels \u03b3) \u2192\n                      motive { energy := energy, spectral := spectral, injective := injective, labelled := labelled }) \u2192\n              motive t"
     },
     {
       "axioms": [
@@ -387,7 +387,7 @@
       "kind": "definition",
       "module": "GRWTSK.Spectral.GapTransport",
       "name": "GRWTSK.Spectral.GapTransport.OpenLabelGap",
-      "type": "Set ℝ → (ℝ → ℝ) → ℝ → ℝ → ℝ → Prop"
+      "type": "Set \u211d \u2192 (\u211d \u2192 \u211d) \u2192 \u211d \u2192 \u211d \u2192 \u211d \u2192 Prop"
     },
     {
       "axioms": [
@@ -398,7 +398,7 @@
       "kind": "generated",
       "module": "GRWTSK.Spectral.GapTransport",
       "name": "GRWTSK.Spectral.GapTransport.LabelCoding.mk",
-      "type": "{Γ : Type u_1} →\n  {spectrum : Set ℝ} →\n    {ids : ℝ → ℝ} →\n      {labels : Γ → ℝ} →\n        (energy : Γ → ℝ) →\n          (∀ (γ : Γ), energy γ ∈ spectrum) →\n            Function.Injective energy → (∀ (γ : Γ), ids (energy γ) = labels γ) → LabelCoding Γ spectrum ids labels"
+      "type": "{\u0393 : Type u_1} \u2192\n  {spectrum : Set \u211d} \u2192\n    {ids : \u211d \u2192 \u211d} \u2192\n      {labels : \u0393 \u2192 \u211d} \u2192\n        (energy : \u0393 \u2192 \u211d) \u2192\n          (\u2200 (\u03b3 : \u0393), energy \u03b3 \u2208 spectrum) \u2192\n            Function.Injective energy \u2192 (\u2200 (\u03b3 : \u0393), ids (energy \u03b3) = labels \u03b3) \u2192 LabelCoding \u0393 spectrum ids labels"
     },
     {
       "axioms": [
@@ -409,7 +409,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.GapTransport",
       "name": "GRWTSK.Spectral.GapTransport.LabelCoding.injective",
-      "type": "∀ {Γ : Type u_1} {spectrum : Set ℝ} {ids : ℝ → ℝ} {labels : Γ → ℝ} (self : LabelCoding Γ spectrum ids labels),\n  Function.Injective self.energy"
+      "type": "\u2200 {\u0393 : Type u_1} {spectrum : Set \u211d} {ids : \u211d \u2192 \u211d} {labels : \u0393 \u2192 \u211d} (self : LabelCoding \u0393 spectrum ids labels),\n  Function.Injective self.energy"
     },
     {
       "axioms": [
@@ -420,7 +420,7 @@
       "kind": "theorem",
       "module": "GRWTSK.LinearAlgebra.SchrodingerTransfer",
       "name": "GRWTSK.LinearAlgebra.SchrodingerTransfer.schrodingerSL.eq_1",
-      "type": "∀ {R : Type u} [inst : CommRing R] (E V : R),\n  GRWTSK.LinearAlgebra.SchrodingerTransfer.schrodingerSL E V =\n    ⟨GRWTSK.LinearAlgebra.SchrodingerTransfer.schrodingerTransfer E V, ⋯⟩"
+      "type": "\u2200 {R : Type u} [inst : CommRing R] (E V : R),\n  GRWTSK.LinearAlgebra.SchrodingerTransfer.schrodingerSL E V =\n    \u27e8GRWTSK.LinearAlgebra.SchrodingerTransfer.schrodingerTransfer E V, \u22ef\u27e9"
     },
     {
       "axioms": [
@@ -431,7 +431,7 @@
       "kind": "theorem",
       "module": "GRWTSK.LinearAlgebra.SchrodingerTransfer",
       "name": "GRWTSK.LinearAlgebra.SchrodingerTransfer.schrodinger_recurrence_iff_transfer",
-      "type": "∀ {R : Type u} [inst : CommRing R] (E V previous current next : R),\n  next + previous + V * current = E * current ↔\n    GRWTSK.LinearAlgebra.SchrodingerTransfer.rawState next current =\n      (GRWTSK.LinearAlgebra.SchrodingerTransfer.schrodingerTransfer E V).mulVec\n        (GRWTSK.LinearAlgebra.SchrodingerTransfer.rawState current previous)"
+      "type": "\u2200 {R : Type u} [inst : CommRing R] (E V previous current next : R),\n  next + previous + V * current = E * current \u2194\n    GRWTSK.LinearAlgebra.SchrodingerTransfer.rawState next current =\n      (GRWTSK.LinearAlgebra.SchrodingerTransfer.schrodingerTransfer E V).mulVec\n        (GRWTSK.LinearAlgebra.SchrodingerTransfer.rawState current previous)"
     },
     {
       "axioms": [
@@ -441,7 +441,7 @@
       "kind": "theorem",
       "module": "GRWTSK.LinearAlgebra.SchrodingerTransfer",
       "name": "GRWTSK.LinearAlgebra.SchrodingerTransfer.schrodingerTransfer.eq_1",
-      "type": "∀ {R : Type u} [inst : CommRing R] (E V : R),\n  GRWTSK.LinearAlgebra.SchrodingerTransfer.schrodingerTransfer E V = !![E - V, -1; 1, 0]"
+      "type": "\u2200 {R : Type u} [inst : CommRing R] (E V : R),\n  GRWTSK.LinearAlgebra.SchrodingerTransfer.schrodingerTransfer E V = !![E - V, -1; 1, 0]"
     },
     {
       "axioms": [
@@ -452,7 +452,7 @@
       "kind": "theorem",
       "module": "GRWTSK.LinearAlgebra.SchrodingerTransfer",
       "name": "GRWTSK.LinearAlgebra.SchrodingerTransfer.schrodinger_same_SL_syntax_not_equal",
-      "type": "↑(GRWTSK.LinearAlgebra.SchrodingerTransfer.schrodingerSL 0 0) ≠\n  ↑(GRWTSK.LinearAlgebra.SchrodingerTransfer.schrodingerSL 1 0)"
+      "type": "\u2191(GRWTSK.LinearAlgebra.SchrodingerTransfer.schrodingerSL 0 0) \u2260\n  \u2191(GRWTSK.LinearAlgebra.SchrodingerTransfer.schrodingerSL 1 0)"
     },
     {
       "axioms": [
@@ -461,7 +461,7 @@
       "kind": "definition",
       "module": "GRWTSK.LinearAlgebra.SchrodingerTransfer",
       "name": "GRWTSK.LinearAlgebra.SchrodingerTransfer.rawState",
-      "type": "{R : Type u} → R → R → Fin 2 → R"
+      "type": "{R : Type u} \u2192 R \u2192 R \u2192 Fin 2 \u2192 R"
     },
     {
       "axioms": [
@@ -472,7 +472,7 @@
       "kind": "definition",
       "module": "GRWTSK.LinearAlgebra.SchrodingerTransfer",
       "name": "GRWTSK.LinearAlgebra.SchrodingerTransfer.schrodingerSL",
-      "type": "{R : Type u} → [inst : CommRing R] → R → R → Matrix.SpecialLinearGroup (Fin 2) R"
+      "type": "{R : Type u} \u2192 [inst : CommRing R] \u2192 R \u2192 R \u2192 Matrix.SpecialLinearGroup (Fin 2) R"
     },
     {
       "axioms": [
@@ -482,7 +482,7 @@
       "kind": "definition",
       "module": "GRWTSK.LinearAlgebra.SchrodingerTransfer",
       "name": "GRWTSK.LinearAlgebra.SchrodingerTransfer.schrodingerTransfer",
-      "type": "{R : Type u} → [CommRing R] → R → R → Matrix (Fin 2) (Fin 2) R"
+      "type": "{R : Type u} \u2192 [CommRing R] \u2192 R \u2192 R \u2192 Matrix (Fin 2) (Fin 2) R"
     },
     {
       "axioms": [
@@ -493,7 +493,7 @@
       "kind": "theorem",
       "module": "GRWTSK.LinearAlgebra.SchrodingerTransfer",
       "name": "GRWTSK.LinearAlgebra.SchrodingerTransfer.det_schrodingerTransfer",
-      "type": "∀ {R : Type u} [inst : CommRing R] (E V : R), (GRWTSK.LinearAlgebra.SchrodingerTransfer.schrodingerTransfer E V).det = 1"
+      "type": "\u2200 {R : Type u} [inst : CommRing R] (E V : R), (GRWTSK.LinearAlgebra.SchrodingerTransfer.schrodingerTransfer E V).det = 1"
     },
     {
       "axioms": [
@@ -502,7 +502,7 @@
       "kind": "theorem",
       "module": "GRWTSK.LinearAlgebra.SchrodingerTransfer",
       "name": "GRWTSK.LinearAlgebra.SchrodingerTransfer.rawState.eq_1",
-      "type": "∀ {R : Type u} (current previous : R),\n  GRWTSK.LinearAlgebra.SchrodingerTransfer.rawState current previous = ![current, previous]"
+      "type": "\u2200 {R : Type u} (current previous : R),\n  GRWTSK.LinearAlgebra.SchrodingerTransfer.rawState current previous = ![current, previous]"
     },
     {
       "axioms": [
@@ -513,7 +513,7 @@
       "kind": "theorem",
       "module": "GRWTSK.LinearAlgebra.Sturmian",
       "name": "GRWTSK.LinearAlgebra.Sturmian.bit_zero_or_one",
-      "type": "∀ (α ξ : ℝ) (n : ℤ), GRWTSK.LinearAlgebra.Sturmian.bit α ξ n = 0 ∨ GRWTSK.LinearAlgebra.Sturmian.bit α ξ n = 1"
+      "type": "\u2200 (\u03b1 \u03be : \u211d) (n : \u2124), GRWTSK.LinearAlgebra.Sturmian.bit \u03b1 \u03be n = 0 \u2228 GRWTSK.LinearAlgebra.Sturmian.bit \u03b1 \u03be n = 1"
     },
     {
       "axioms": [
@@ -524,7 +524,7 @@
       "kind": "theorem",
       "module": "GRWTSK.LinearAlgebra.Sturmian",
       "name": "GRWTSK.LinearAlgebra.Sturmian.potential_zero",
-      "type": "∀ (α ξ : ℝ) (n : ℤ), GRWTSK.LinearAlgebra.Sturmian.potential α 0 ξ n = 0"
+      "type": "\u2200 (\u03b1 \u03be : \u211d) (n : \u2124), GRWTSK.LinearAlgebra.Sturmian.potential \u03b1 0 \u03be n = 0"
     },
     {
       "axioms": [
@@ -535,7 +535,7 @@
       "kind": "theorem",
       "module": "GRWTSK.LinearAlgebra.Sturmian",
       "name": "GRWTSK.LinearAlgebra.Sturmian.abs_potential_sub_le",
-      "type": "∀ (α V W ξ : ℝ) (n : ℤ),\n  |GRWTSK.LinearAlgebra.Sturmian.potential α V ξ n - GRWTSK.LinearAlgebra.Sturmian.potential α W ξ n| ≤ |V - W|"
+      "type": "\u2200 (\u03b1 V W \u03be : \u211d) (n : \u2124),\n  |GRWTSK.LinearAlgebra.Sturmian.potential \u03b1 V \u03be n - GRWTSK.LinearAlgebra.Sturmian.potential \u03b1 W \u03be n| \u2264 |V - W|"
     },
     {
       "axioms": [
@@ -546,7 +546,7 @@
       "kind": "theorem",
       "module": "GRWTSK.LinearAlgebra.Sturmian",
       "name": "GRWTSK.LinearAlgebra.Sturmian.transfer.eq_1",
-      "type": "∀ (E α coupling ξ : ℝ) (n : ℤ),\n  GRWTSK.LinearAlgebra.Sturmian.transfer E α coupling ξ n =\n    GRWTSK.LinearAlgebra.SchrodingerTransfer.schrodingerTransfer E\n      (GRWTSK.LinearAlgebra.Sturmian.potential α coupling ξ n)"
+      "type": "\u2200 (E \u03b1 coupling \u03be : \u211d) (n : \u2124),\n  GRWTSK.LinearAlgebra.Sturmian.transfer E \u03b1 coupling \u03be n =\n    GRWTSK.LinearAlgebra.SchrodingerTransfer.schrodingerTransfer E\n      (GRWTSK.LinearAlgebra.Sturmian.potential \u03b1 coupling \u03be n)"
     },
     {
       "axioms": [
@@ -557,7 +557,7 @@
       "kind": "theorem",
       "module": "GRWTSK.LinearAlgebra.Sturmian",
       "name": "GRWTSK.LinearAlgebra.Sturmian.potential_between_offsets",
-      "type": "∀ (α V ξ : ℝ) (n : ℤ),\n  min V 0 ≤ GRWTSK.LinearAlgebra.Sturmian.potential α V ξ n ∧ GRWTSK.LinearAlgebra.Sturmian.potential α V ξ n ≤ max V 0"
+      "type": "\u2200 (\u03b1 V \u03be : \u211d) (n : \u2124),\n  min V 0 \u2264 GRWTSK.LinearAlgebra.Sturmian.potential \u03b1 V \u03be n \u2227 GRWTSK.LinearAlgebra.Sturmian.potential \u03b1 V \u03be n \u2264 max V 0"
     },
     {
       "axioms": [
@@ -568,7 +568,7 @@
       "kind": "theorem",
       "module": "GRWTSK.LinearAlgebra.Sturmian",
       "name": "GRWTSK.LinearAlgebra.Sturmian.potential.eq_1",
-      "type": "∀ (α coupling ξ : ℝ) (n : ℤ),\n  GRWTSK.LinearAlgebra.Sturmian.potential α coupling ξ n = coupling * GRWTSK.LinearAlgebra.Sturmian.bit α ξ n"
+      "type": "\u2200 (\u03b1 coupling \u03be : \u211d) (n : \u2124),\n  GRWTSK.LinearAlgebra.Sturmian.potential \u03b1 coupling \u03be n = coupling * GRWTSK.LinearAlgebra.Sturmian.bit \u03b1 \u03be n"
     },
     {
       "axioms": [
@@ -579,7 +579,7 @@
       "kind": "theorem",
       "module": "GRWTSK.LinearAlgebra.Sturmian",
       "name": "GRWTSK.LinearAlgebra.Sturmian.det_transfer",
-      "type": "∀ (E α coupling ξ : ℝ) (n : ℤ), (GRWTSK.LinearAlgebra.Sturmian.transfer E α coupling ξ n).det = 1"
+      "type": "\u2200 (E \u03b1 coupling \u03be : \u211d) (n : \u2124), (GRWTSK.LinearAlgebra.Sturmian.transfer E \u03b1 coupling \u03be n).det = 1"
     },
     {
       "axioms": [
@@ -590,7 +590,7 @@
       "kind": "definition",
       "module": "GRWTSK.LinearAlgebra.Sturmian",
       "name": "GRWTSK.LinearAlgebra.Sturmian.bit",
-      "type": "ℝ → ℝ → ℤ → ℝ"
+      "type": "\u211d \u2192 \u211d \u2192 \u2124 \u2192 \u211d"
     },
     {
       "axioms": [
@@ -601,7 +601,7 @@
       "kind": "theorem",
       "module": "GRWTSK.LinearAlgebra.Sturmian",
       "name": "GRWTSK.LinearAlgebra.Sturmian.comparison_offset_width",
-      "type": "∀ (V : ℝ), max V 0 - min V 0 = |V|"
+      "type": "\u2200 (V : \u211d), max V 0 - min V 0 = |V|"
     },
     {
       "axioms": [
@@ -612,7 +612,7 @@
       "kind": "definition",
       "module": "GRWTSK.LinearAlgebra.Sturmian",
       "name": "GRWTSK.LinearAlgebra.Sturmian.potential",
-      "type": "ℝ → ℝ → ℝ → ℤ → ℝ"
+      "type": "\u211d \u2192 \u211d \u2192 \u211d \u2192 \u2124 \u2192 \u211d"
     },
     {
       "axioms": [
@@ -623,7 +623,7 @@
       "kind": "definition",
       "module": "GRWTSK.LinearAlgebra.Sturmian",
       "name": "GRWTSK.LinearAlgebra.Sturmian.transfer",
-      "type": "ℝ → ℝ → ℝ → ℝ → ℤ → Matrix (Fin 2) (Fin 2) ℝ"
+      "type": "\u211d \u2192 \u211d \u2192 \u211d \u2192 \u211d \u2192 \u2124 \u2192 Matrix (Fin 2) (Fin 2) \u211d"
     },
     {
       "axioms": [
@@ -634,7 +634,7 @@
       "kind": "theorem",
       "module": "GRWTSK.LinearAlgebra.Sturmian",
       "name": "GRWTSK.LinearAlgebra.Sturmian.zero_coupling_trace_iff",
-      "type": "∀ (E α ξ : ℝ) (n : ℤ), |(GRWTSK.LinearAlgebra.Sturmian.transfer E α 0 ξ n).trace| ≤ 2 ↔ E ∈ Set.Icc (-2) 2"
+      "type": "\u2200 (E \u03b1 \u03be : \u211d) (n : \u2124), |(GRWTSK.LinearAlgebra.Sturmian.transfer E \u03b1 0 \u03be n).trace| \u2264 2 \u2194 E \u2208 Set.Icc (-2) 2"
     },
     {
       "axioms": [
@@ -644,7 +644,7 @@
       "kind": "theorem",
       "module": "GRWTSK.LinearAlgebra.Sturmian",
       "name": "GRWTSK.LinearAlgebra.Sturmian.zero_coupling_trace_iff._simp_1_1",
-      "type": "∀ {G : Type u_1} [inst : AddCommGroup G] [inst_1 : LinearOrder G] [IsOrderedAddMonoid G] {a b : G},\n  (|a| ≤ b) = (-b ≤ a ∧ a ≤ b)"
+      "type": "\u2200 {G : Type u_1} [inst : AddCommGroup G] [inst_1 : LinearOrder G] [IsOrderedAddMonoid G] {a b : G},\n  (|a| \u2264 b) = (-b \u2264 a \u2227 a \u2264 b)"
     },
     {
       "axioms": [
@@ -655,7 +655,7 @@
       "kind": "theorem",
       "module": "GRWTSK.LinearAlgebra.Sturmian",
       "name": "GRWTSK.LinearAlgebra.Sturmian.zero_coupling_transfer",
-      "type": "∀ (E α ξ : ℝ) (n : ℤ),\n  GRWTSK.LinearAlgebra.Sturmian.transfer E α 0 ξ n = GRWTSK.LinearAlgebra.SchrodingerTransfer.schrodingerTransfer E 0"
+      "type": "\u2200 (E \u03b1 \u03be : \u211d) (n : \u2124),\n  GRWTSK.LinearAlgebra.Sturmian.transfer E \u03b1 0 \u03be n = GRWTSK.LinearAlgebra.SchrodingerTransfer.schrodingerTransfer E 0"
     },
     {
       "axioms": [
@@ -666,7 +666,7 @@
       "kind": "theorem",
       "module": "GRWTSK.LinearAlgebra.Sturmian",
       "name": "GRWTSK.LinearAlgebra.Sturmian.recurrence_iff_transfer",
-      "type": "∀ (E α coupling ξ : ℝ) (n : ℤ) (previous current next : ℝ),\n  next + previous + GRWTSK.LinearAlgebra.Sturmian.potential α coupling ξ n * current = E * current ↔\n    GRWTSK.LinearAlgebra.SchrodingerTransfer.rawState next current =\n      (GRWTSK.LinearAlgebra.Sturmian.transfer E α coupling ξ n).mulVec\n        (GRWTSK.LinearAlgebra.SchrodingerTransfer.rawState current previous)"
+      "type": "\u2200 (E \u03b1 coupling \u03be : \u211d) (n : \u2124) (previous current next : \u211d),\n  next + previous + GRWTSK.LinearAlgebra.Sturmian.potential \u03b1 coupling \u03be n * current = E * current \u2194\n    GRWTSK.LinearAlgebra.SchrodingerTransfer.rawState next current =\n      (GRWTSK.LinearAlgebra.Sturmian.transfer E \u03b1 coupling \u03be n).mulVec\n        (GRWTSK.LinearAlgebra.SchrodingerTransfer.rawState current previous)"
     },
     {
       "axioms": [
@@ -677,7 +677,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.MatrixCountComparison",
       "name": "GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount_add_of_charpoly_mul",
-      "type": "∀ {ι : Type u_1} [inst : Fintype ι] [inst_1 : DecidableEq ι] {κ : Type u_2} {τ : Type u_3} [inst_2 : Fintype κ]\n  [inst_3 : DecidableEq κ] [inst_4 : Fintype τ] [inst_5 : DecidableEq τ] {A : Matrix ι ι ℝ} {B : Matrix κ κ ℝ}\n  {C : Matrix τ τ ℝ} (hA : A.IsHermitian) (hB : B.IsHermitian) (hC : C.IsHermitian),\n  C.charpoly = A.charpoly * B.charpoly →\n    ∀ (E : ℝ),\n      GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount hC E =\n        GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount hA E +\n          GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount hB E"
+      "type": "\u2200 {\u03b9 : Type u_1} [inst : Fintype \u03b9] [inst_1 : DecidableEq \u03b9] {\u03ba : Type u_2} {\u03c4 : Type u_3} [inst_2 : Fintype \u03ba]\n  [inst_3 : DecidableEq \u03ba] [inst_4 : Fintype \u03c4] [inst_5 : DecidableEq \u03c4] {A : Matrix \u03b9 \u03b9 \u211d} {B : Matrix \u03ba \u03ba \u211d}\n  {C : Matrix \u03c4 \u03c4 \u211d} (hA : A.IsHermitian) (hB : B.IsHermitian) (hC : C.IsHermitian),\n  C.charpoly = A.charpoly * B.charpoly \u2192\n    \u2200 (E : \u211d),\n      GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount hC E =\n        GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount hA E +\n          GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount hB E"
     },
     {
       "axioms": [
@@ -688,7 +688,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.MatrixCountComparison",
       "name": "GRWTSK.Spectral.MatrixCountComparison.eigenvalueCut.eq_1",
-      "type": "∀ {ι : Type u_1} [inst : Fintype ι] [inst_1 : DecidableEq ι] {A : Matrix ι ι ℝ} (hA : A.IsHermitian) (E : ℝ),\n  GRWTSK.Spectral.MatrixCountComparison.eigenvalueCut hA E = {i | hA.eigenvalues i ≤ E}"
+      "type": "\u2200 {\u03b9 : Type u_1} [inst : Fintype \u03b9] [inst_1 : DecidableEq \u03b9] {A : Matrix \u03b9 \u03b9 \u211d} (hA : A.IsHermitian) (E : \u211d),\n  GRWTSK.Spectral.MatrixCountComparison.eigenvalueCut hA E = {i | hA.eigenvalues i \u2264 E}"
     },
     {
       "axioms": [
@@ -698,8 +698,8 @@
       ],
       "kind": "theorem",
       "module": "GRWTSK.Spectral.MatrixCountComparison",
-      "name": "Matrix.IsHermitian.eigenvalues₀.eq_1",
-      "type": "∀ {𝕜 : Type u_1} [inst : RCLike 𝕜] {n : Type u_2} [inst_1 : Fintype n] {A : Matrix n n 𝕜} [inst_2 : DecidableEq n]\n  (hA : A.IsHermitian), hA.eigenvalues₀ = ⋯.eigenvalues ⋯"
+      "name": "Matrix.IsHermitian.eigenvalues\u2080.eq_1",
+      "type": "\u2200 {\ud835\udd5c : Type u_1} [inst : RCLike \ud835\udd5c] {n : Type u_2} [inst_1 : Fintype n] {A : Matrix n n \ud835\udd5c} [inst_2 : DecidableEq n]\n  (hA : A.IsHermitian), hA.eigenvalues\u2080 = \u22ef.eigenvalues \u22ef"
     },
     {
       "axioms": [
@@ -710,7 +710,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.MatrixCountComparison",
       "name": "GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount_difference_bounds_of_kernel",
-      "type": "∀ {ι : Type u_1} [inst : Fintype ι] [inst_1 : DecidableEq ι] {F : Type u_2} [inst_2 : AddCommGroup F]\n  [inst_3 : _root_.Module ℝ F] [FiniteDimensional ℝ F] {A B : Matrix ι ι ℝ} (hA : A.IsHermitian) (hB : B.IsHermitian)\n  (K : EuclideanSpace ℝ ι →ₗ[ℝ] F),\n  (∀ (v : EuclideanSpace ℝ ι), K v = 0 → (Matrix.toEuclideanLin A) v = (Matrix.toEuclideanLin B) v) →\n    ∀ (E : ℝ),\n      |↑(GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount hB E) -\n            ↑(GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount hA E)| ≤\n        ↑(Module.finrank ℝ F)"
+      "type": "\u2200 {\u03b9 : Type u_1} [inst : Fintype \u03b9] [inst_1 : DecidableEq \u03b9] {F : Type u_2} [inst_2 : AddCommGroup F]\n  [inst_3 : _root_.Module \u211d F] [FiniteDimensional \u211d F] {A B : Matrix \u03b9 \u03b9 \u211d} (hA : A.IsHermitian) (hB : B.IsHermitian)\n  (K : EuclideanSpace \u211d \u03b9 \u2192\u2097[\u211d] F),\n  (\u2200 (v : EuclideanSpace \u211d \u03b9), K v = 0 \u2192 (Matrix.toEuclideanLin A) v = (Matrix.toEuclideanLin B) v) \u2192\n    \u2200 (E : \u211d),\n      |\u2191(GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount hB E) -\n            \u2191(GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount hA E)| \u2264\n        \u2191(Module.finrank \u211d F)"
     },
     {
       "axioms": [
@@ -730,7 +730,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.MatrixCountComparison",
       "name": "_private.GRWTSK.Spectral.MatrixCountComparison.0.GRWTSK.Spectral.MatrixCountComparison.cutSynthesis._proof_3",
-      "type": "∀ {ι : Type u_1} [inst : Fintype ι] [inst_1 : DecidableEq ι] (b : OrthonormalBasis ι ℝ (EuclideanSpace ℝ ι))\n  (s : Finset ι) (x y : ↥s → ℝ),\n  b.repr.symm (WithLp.toLp 2 fun i => if h : i ∈ s then (x + y) ⟨i, h⟩ else 0) =\n    b.repr.symm (WithLp.toLp 2 fun i => if h : i ∈ s then x ⟨i, h⟩ else 0) +\n      b.repr.symm (WithLp.toLp 2 fun i => if h : i ∈ s then y ⟨i, h⟩ else 0)"
+      "type": "\u2200 {\u03b9 : Type u_1} [inst : Fintype \u03b9] [inst_1 : DecidableEq \u03b9] (b : OrthonormalBasis \u03b9 \u211d (EuclideanSpace \u211d \u03b9))\n  (s : Finset \u03b9) (x y : \u21a5s \u2192 \u211d),\n  b.repr.symm (WithLp.toLp 2 fun i => if h : i \u2208 s then (x + y) \u27e8i, h\u27e9 else 0) =\n    b.repr.symm (WithLp.toLp 2 fun i => if h : i \u2208 s then x \u27e8i, h\u27e9 else 0) +\n      b.repr.symm (WithLp.toLp 2 fun i => if h : i \u2208 s then y \u27e8i, h\u27e9 else 0)"
     },
     {
       "axioms": [
@@ -741,7 +741,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.MatrixCountComparison",
       "name": "GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount_le_add_finrank_of_kernel",
-      "type": "∀ {ι : Type u_1} [inst : Fintype ι] [inst_1 : DecidableEq ι] {F : Type u_2} [inst_2 : AddCommGroup F]\n  [inst_3 : _root_.Module ℝ F] [FiniteDimensional ℝ F] {A B : Matrix ι ι ℝ} (hA : A.IsHermitian) (hB : B.IsHermitian)\n  (K : EuclideanSpace ℝ ι →ₗ[ℝ] F),\n  (∀ (v : EuclideanSpace ℝ ι), K v = 0 → (Matrix.toEuclideanLin A) v = (Matrix.toEuclideanLin B) v) →\n    ∀ (E : ℝ),\n      GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount hB E ≤\n        GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount hA E + Module.finrank ℝ F"
+      "type": "\u2200 {\u03b9 : Type u_1} [inst : Fintype \u03b9] [inst_1 : DecidableEq \u03b9] {F : Type u_2} [inst_2 : AddCommGroup F]\n  [inst_3 : _root_.Module \u211d F] [FiniteDimensional \u211d F] {A B : Matrix \u03b9 \u03b9 \u211d} (hA : A.IsHermitian) (hB : B.IsHermitian)\n  (K : EuclideanSpace \u211d \u03b9 \u2192\u2097[\u211d] F),\n  (\u2200 (v : EuclideanSpace \u211d \u03b9), K v = 0 \u2192 (Matrix.toEuclideanLin A) v = (Matrix.toEuclideanLin B) v) \u2192\n    \u2200 (E : \u211d),\n      GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount hB E \u2264\n        GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount hA E + Module.finrank \u211d F"
     },
     {
       "axioms": [
@@ -752,7 +752,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.MatrixCountComparison",
       "name": "_private.GRWTSK.Spectral.MatrixCountComparison.0.GRWTSK.Spectral.MatrixCountComparison.cutAnalysis._proof_2",
-      "type": "∀ {ι : Type u_1} [inst : Fintype ι] (b : OrthonormalBasis ι ℝ (EuclideanSpace ℝ ι)) (s : Finset ι) (c : ℝ)\n  (v : EuclideanSpace ℝ ι), (fun i => (b.repr (c • v)).ofLp ↑i) = (RingHom.id ℝ) c • fun i => (b.repr v).ofLp ↑i"
+      "type": "\u2200 {\u03b9 : Type u_1} [inst : Fintype \u03b9] (b : OrthonormalBasis \u03b9 \u211d (EuclideanSpace \u211d \u03b9)) (s : Finset \u03b9) (c : \u211d)\n  (v : EuclideanSpace \u211d \u03b9), (fun i => (b.repr (c \u2022 v)).ofLp \u2191i) = (RingHom.id \u211d) c \u2022 fun i => (b.repr v).ofLp \u2191i"
     },
     {
       "axioms": [
@@ -763,7 +763,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.MatrixCountComparison",
       "name": "GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount.congr_simp",
-      "type": "∀ {ι : Type u_1} [inst : Fintype ι] {inst_1 : DecidableEq ι} [inst_2 : DecidableEq ι] {A A_1 : Matrix ι ι ℝ}\n  (e_A : A = A_1) (hA : A.IsHermitian) (E E_1 : ℝ),\n  E = E_1 →\n    GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount hA E =\n      GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount ⋯ E_1"
+      "type": "\u2200 {\u03b9 : Type u_1} [inst : Fintype \u03b9] {inst_1 : DecidableEq \u03b9} [inst_2 : DecidableEq \u03b9] {A A_1 : Matrix \u03b9 \u03b9 \u211d}\n  (e_A : A = A_1) (hA : A.IsHermitian) (E E_1 : \u211d),\n  E = E_1 \u2192\n    GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount hA E =\n      GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount \u22ef E_1"
     },
     {
       "axioms": [
@@ -774,7 +774,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.MatrixCountComparison",
       "name": "GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount_le_of_posSemidef",
-      "type": "∀ {ι : Type u_1} [inst : Fintype ι] [inst_1 : DecidableEq ι] {A B : Matrix ι ι ℝ} (hA : A.IsHermitian)\n  (hB : B.IsHermitian),\n  (B - A).PosSemidef →\n    ∀ (E : ℝ),\n      GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount hB E ≤\n        GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount hA E"
+      "type": "\u2200 {\u03b9 : Type u_1} [inst : Fintype \u03b9] [inst_1 : DecidableEq \u03b9] {A B : Matrix \u03b9 \u03b9 \u211d} (hA : A.IsHermitian)\n  (hB : B.IsHermitian),\n  (B - A).PosSemidef \u2192\n    \u2200 (E : \u211d),\n      GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount hB E \u2264\n        GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount hA E"
     },
     {
       "axioms": [
@@ -785,7 +785,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.MatrixCountComparison",
       "name": "GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount.eq_1",
-      "type": "∀ {ι : Type u_1} [inst : Fintype ι] [inst_1 : DecidableEq ι] {A : Matrix ι ι ℝ} (hA : A.IsHermitian) (E : ℝ),\n  GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount hA E =\n    (GRWTSK.Spectral.MatrixCountComparison.eigenvalueCut hA E).card"
+      "type": "\u2200 {\u03b9 : Type u_1} [inst : Fintype \u03b9] [inst_1 : DecidableEq \u03b9] {A : Matrix \u03b9 \u03b9 \u211d} (hA : A.IsHermitian) (E : \u211d),\n  GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount hA E =\n    (GRWTSK.Spectral.MatrixCountComparison.eigenvalueCut hA E).card"
     },
     {
       "axioms": [
@@ -795,7 +795,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.MatrixCountComparison",
       "name": "GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount_eq_roots_card._simp_1_3",
-      "type": "∀ {α : Type u_1} (p : α → Prop) [inst : DecidablePred p] (s : Finset α),\n  Multiset.filter p s.val = (Finset.filter p s).val"
+      "type": "\u2200 {\u03b1 : Type u_1} (p : \u03b1 \u2192 Prop) [inst : DecidablePred p] (s : Finset \u03b1),\n  Multiset.filter p s.val = (Finset.filter p s).val"
     },
     {
       "axioms": [
@@ -806,7 +806,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.MatrixCountComparison",
       "name": "_private.GRWTSK.Spectral.MatrixCountComparison.0.GRWTSK.Spectral.MatrixCountComparison.cutSynthesis_injective",
-      "type": "∀ {ι : Type u_1} [inst : Fintype ι] [inst_1 : DecidableEq ι] (b : OrthonormalBasis ι ℝ (EuclideanSpace ℝ ι))\n  (s : Finset ι), Function.Injective ⇑(GRWTSK.Spectral.MatrixCountComparison.cutSynthesis✝ b s)"
+      "type": "\u2200 {\u03b9 : Type u_1} [inst : Fintype \u03b9] [inst_1 : DecidableEq \u03b9] (b : OrthonormalBasis \u03b9 \u211d (EuclideanSpace \u211d \u03b9))\n  (s : Finset \u03b9), Function.Injective \u21d1(GRWTSK.Spectral.MatrixCountComparison.cutSynthesis\u271d b s)"
     },
     {
       "axioms": [
@@ -817,7 +817,7 @@
       "kind": "definition",
       "module": "GRWTSK.Spectral.MatrixCountComparison",
       "name": "GRWTSK.Spectral.MatrixCountComparison.eigenvalueCut",
-      "type": "{ι : Type u_1} → [Fintype ι] → [DecidableEq ι] → {A : Matrix ι ι ℝ} → A.IsHermitian → ℝ → Finset ι"
+      "type": "{\u03b9 : Type u_1} \u2192 [Fintype \u03b9] \u2192 [DecidableEq \u03b9] \u2192 {A : Matrix \u03b9 \u03b9 \u211d} \u2192 A.IsHermitian \u2192 \u211d \u2192 Finset \u03b9"
     },
     {
       "axioms": [
@@ -828,7 +828,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.MatrixCountComparison",
       "name": "_private.GRWTSK.Spectral.MatrixCountComparison.0.GRWTSK.Spectral.MatrixCountComparison.cutSynthesis_repr",
-      "type": "∀ {ι : Type u_1} [inst : Fintype ι] [inst_1 : DecidableEq ι] (b : OrthonormalBasis ι ℝ (EuclideanSpace ℝ ι))\n  (s : Finset ι) (x : ↥s → ℝ) (i : ι),\n  (b.repr ((GRWTSK.Spectral.MatrixCountComparison.cutSynthesis✝ b s) x)).ofLp i = if h : i ∈ s then x ⟨i, h⟩ else 0"
+      "type": "\u2200 {\u03b9 : Type u_1} [inst : Fintype \u03b9] [inst_1 : DecidableEq \u03b9] (b : OrthonormalBasis \u03b9 \u211d (EuclideanSpace \u211d \u03b9))\n  (s : Finset \u03b9) (x : \u21a5s \u2192 \u211d) (i : \u03b9),\n  (b.repr ((GRWTSK.Spectral.MatrixCountComparison.cutSynthesis\u271d b s) x)).ofLp i = if h : i \u2208 s then x \u27e8i, h\u27e9 else 0"
     },
     {
       "axioms": [
@@ -839,7 +839,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.MatrixCountComparison",
       "name": "GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount_eq_roots_card",
-      "type": "∀ {ι : Type u_1} [inst : Fintype ι] [inst_1 : DecidableEq ι] {A : Matrix ι ι ℝ} (hA : A.IsHermitian) (E : ℝ),\n  GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount hA E = (Multiset.filter (fun x => x ≤ E) A.charpoly.roots).card"
+      "type": "\u2200 {\u03b9 : Type u_1} [inst : Fintype \u03b9] [inst_1 : DecidableEq \u03b9] {A : Matrix \u03b9 \u03b9 \u211d} (hA : A.IsHermitian) (E : \u211d),\n  GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount hA E = (Multiset.filter (fun x => x \u2264 E) A.charpoly.roots).card"
     },
     {
       "axioms": [
@@ -850,7 +850,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.MatrixCountComparison",
       "name": "_private.GRWTSK.Spectral.MatrixCountComparison.0.GRWTSK.Spectral.MatrixCountComparison.cutSynthesis._proof_1",
-      "type": "RingHomInvPair (RingHom.id ℝ) (RingHom.id ℝ)"
+      "type": "RingHomInvPair (RingHom.id \u211d) (RingHom.id \u211d)"
     },
     {
       "axioms": [
@@ -861,7 +861,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.MatrixCountComparison",
       "name": "_private.GRWTSK.Spectral.MatrixCountComparison.0.GRWTSK.Spectral.MatrixCountComparison.cutSynthesis._proof_4",
-      "type": "∀ {ι : Type u_1} [inst : Fintype ι] [inst_1 : DecidableEq ι] (b : OrthonormalBasis ι ℝ (EuclideanSpace ℝ ι))\n  (s : Finset ι) (c : ℝ) (x : ↥s → ℝ),\n  b.repr.symm (WithLp.toLp 2 fun i => if h : i ∈ s then (c • x) ⟨i, h⟩ else 0) =\n    (RingHom.id ℝ) c • b.repr.symm (WithLp.toLp 2 fun i => if h : i ∈ s then x ⟨i, h⟩ else 0)"
+      "type": "\u2200 {\u03b9 : Type u_1} [inst : Fintype \u03b9] [inst_1 : DecidableEq \u03b9] (b : OrthonormalBasis \u03b9 \u211d (EuclideanSpace \u211d \u03b9))\n  (s : Finset \u03b9) (c : \u211d) (x : \u21a5s \u2192 \u211d),\n  b.repr.symm (WithLp.toLp 2 fun i => if h : i \u2208 s then (c \u2022 x) \u27e8i, h\u27e9 else 0) =\n    (RingHom.id \u211d) c \u2022 b.repr.symm (WithLp.toLp 2 fun i => if h : i \u2208 s then x \u27e8i, h\u27e9 else 0)"
     },
     {
       "axioms": [
@@ -872,7 +872,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.MatrixCountComparison",
       "name": "_private.GRWTSK.Spectral.MatrixCountComparison.0.GRWTSK.Spectral.MatrixCountComparison.high_quadratic",
-      "type": "∀ {ι : Type u_1} [inst : Fintype ι] [inst_1 : DecidableEq ι] {A : Matrix ι ι ℝ} (hA : A.IsHermitian) (E : ℝ)\n  (v : EuclideanSpace ℝ ι),\n  v ≠ 0 →\n    (∀ i ∈ GRWTSK.Spectral.MatrixCountComparison.eigenvalueCut hA E, (hA.eigenvectorBasis.repr v).ofLp i = 0) →\n      E * ‖v‖ ^ 2 < inner ℝ v ((Matrix.toEuclideanLin A) v)"
+      "type": "\u2200 {\u03b9 : Type u_1} [inst : Fintype \u03b9] [inst_1 : DecidableEq \u03b9] {A : Matrix \u03b9 \u03b9 \u211d} (hA : A.IsHermitian) (E : \u211d)\n  (v : EuclideanSpace \u211d \u03b9),\n  v \u2260 0 \u2192\n    (\u2200 i \u2208 GRWTSK.Spectral.MatrixCountComparison.eigenvalueCut hA E, (hA.eigenvectorBasis.repr v).ofLp i = 0) \u2192\n      E * \u2016v\u2016 ^ 2 < inner \u211d v ((Matrix.toEuclideanLin A) v)"
     },
     {
       "axioms": [
@@ -883,7 +883,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.MatrixCountComparison",
       "name": "GRWTSK.Spectral.MatrixCountComparison.eigenvalueCut.congr_simp",
-      "type": "∀ {ι : Type u_1} [inst : Fintype ι] [inst_1 : DecidableEq ι] {A A_1 : Matrix ι ι ℝ} (e_A : A = A_1) (hA : A.IsHermitian)\n  (E E_1 : ℝ),\n  E = E_1 →\n    GRWTSK.Spectral.MatrixCountComparison.eigenvalueCut hA E = GRWTSK.Spectral.MatrixCountComparison.eigenvalueCut ⋯ E_1"
+      "type": "\u2200 {\u03b9 : Type u_1} [inst : Fintype \u03b9] [inst_1 : DecidableEq \u03b9] {A A_1 : Matrix \u03b9 \u03b9 \u211d} (e_A : A = A_1) (hA : A.IsHermitian)\n  (E E_1 : \u211d),\n  E = E_1 \u2192\n    GRWTSK.Spectral.MatrixCountComparison.eigenvalueCut hA E = GRWTSK.Spectral.MatrixCountComparison.eigenvalueCut \u22ef E_1"
     },
     {
       "axioms": [
@@ -894,7 +894,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.MatrixCountComparison",
       "name": "_private.GRWTSK.Spectral.MatrixCountComparison.0.GRWTSK.Spectral.MatrixCountComparison.eigenbasis_repr_action",
-      "type": "∀ {ι : Type u_1} [inst : Fintype ι] [inst_1 : DecidableEq ι] {A : Matrix ι ι ℝ} (hA : A.IsHermitian)\n  (v : EuclideanSpace ℝ ι) (i : ι),\n  (hA.eigenvectorBasis.repr ((Matrix.toEuclideanLin A) v)).ofLp i =\n    hA.eigenvalues i * (hA.eigenvectorBasis.repr v).ofLp i"
+      "type": "\u2200 {\u03b9 : Type u_1} [inst : Fintype \u03b9] [inst_1 : DecidableEq \u03b9] {A : Matrix \u03b9 \u03b9 \u211d} (hA : A.IsHermitian)\n  (v : EuclideanSpace \u211d \u03b9) (i : \u03b9),\n  (hA.eigenvectorBasis.repr ((Matrix.toEuclideanLin A) v)).ofLp i =\n    hA.eigenvalues i * (hA.eigenvectorBasis.repr v).ofLp i"
     },
     {
       "axioms": [
@@ -905,7 +905,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.MatrixCountComparison",
       "name": "_private.GRWTSK.Spectral.MatrixCountComparison.0.GRWTSK.Spectral.MatrixCountComparison.eigenbasis_norm",
-      "type": "∀ {ι : Type u_1} [inst : Fintype ι] [inst_1 : DecidableEq ι] {A : Matrix ι ι ℝ} (hA : A.IsHermitian)\n  (v : EuclideanSpace ℝ ι), ‖v‖ ^ 2 = ∑ i, (hA.eigenvectorBasis.repr v).ofLp i ^ 2"
+      "type": "\u2200 {\u03b9 : Type u_1} [inst : Fintype \u03b9] [inst_1 : DecidableEq \u03b9] {A : Matrix \u03b9 \u03b9 \u211d} (hA : A.IsHermitian)\n  (v : EuclideanSpace \u211d \u03b9), \u2016v\u2016 ^ 2 = \u2211 i, (hA.eigenvectorBasis.repr v).ofLp i ^ 2"
     },
     {
       "axioms": [
@@ -916,7 +916,7 @@
       "kind": "definition",
       "module": "GRWTSK.Spectral.MatrixCountComparison",
       "name": "_private.GRWTSK.Spectral.MatrixCountComparison.0.GRWTSK.Spectral.MatrixCountComparison.cutAnalysis",
-      "type": "{ι : Type u_1} →\n  [inst : Fintype ι] → OrthonormalBasis ι ℝ (EuclideanSpace ℝ ι) → (s : Finset ι) → EuclideanSpace ℝ ι →ₗ[ℝ] ↥s → ℝ"
+      "type": "{\u03b9 : Type u_1} \u2192\n  [inst : Fintype \u03b9] \u2192 OrthonormalBasis \u03b9 \u211d (EuclideanSpace \u211d \u03b9) \u2192 (s : Finset \u03b9) \u2192 EuclideanSpace \u211d \u03b9 \u2192\u2097[\u211d] \u21a5s \u2192 \u211d"
     },
     {
       "axioms": [
@@ -927,7 +927,7 @@
       "kind": "definition",
       "module": "GRWTSK.Spectral.MatrixCountComparison",
       "name": "GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount",
-      "type": "{ι : Type u_1} → [Fintype ι] → [DecidableEq ι] → {A : Matrix ι ι ℝ} → A.IsHermitian → ℝ → ℕ"
+      "type": "{\u03b9 : Type u_1} \u2192 [Fintype \u03b9] \u2192 [DecidableEq \u03b9] \u2192 {A : Matrix \u03b9 \u03b9 \u211d} \u2192 A.IsHermitian \u2192 \u211d \u2192 \u2115"
     },
     {
       "axioms": [
@@ -938,7 +938,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.MatrixCountComparison",
       "name": "_private.GRWTSK.Spectral.MatrixCountComparison.0.GRWTSK.Spectral.MatrixCountComparison.low_quadratic",
-      "type": "∀ {ι : Type u_1} [inst : Fintype ι] [inst_1 : DecidableEq ι] {A : Matrix ι ι ℝ} (hA : A.IsHermitian) (E : ℝ)\n  (v : EuclideanSpace ℝ ι),\n  (∀ i ∉ GRWTSK.Spectral.MatrixCountComparison.eigenvalueCut hA E, (hA.eigenvectorBasis.repr v).ofLp i = 0) →\n    inner ℝ v ((Matrix.toEuclideanLin A) v) ≤ E * ‖v‖ ^ 2"
+      "type": "\u2200 {\u03b9 : Type u_1} [inst : Fintype \u03b9] [inst_1 : DecidableEq \u03b9] {A : Matrix \u03b9 \u03b9 \u211d} (hA : A.IsHermitian) (E : \u211d)\n  (v : EuclideanSpace \u211d \u03b9),\n  (\u2200 i \u2209 GRWTSK.Spectral.MatrixCountComparison.eigenvalueCut hA E, (hA.eigenvectorBasis.repr v).ofLp i = 0) \u2192\n    inner \u211d v ((Matrix.toEuclideanLin A) v) \u2264 E * \u2016v\u2016 ^ 2"
     },
     {
       "axioms": [
@@ -949,7 +949,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.MatrixCountComparison",
       "name": "_private.GRWTSK.Spectral.MatrixCountComparison.0.GRWTSK.Spectral.MatrixCountComparison.cutSynthesis.eq_1",
-      "type": "∀ {ι : Type u_1} [inst : Fintype ι] [inst_1 : DecidableEq ι] (b : OrthonormalBasis ι ℝ (EuclideanSpace ℝ ι))\n  (s : Finset ι),\n  GRWTSK.Spectral.MatrixCountComparison.cutSynthesis✝ b s =\n    { toFun := fun x => b.repr.symm (WithLp.toLp 2 fun i => if h : i ∈ s then x ⟨i, h⟩ else 0), map_add' := ⋯,\n      map_smul' := ⋯ }"
+      "type": "\u2200 {\u03b9 : Type u_1} [inst : Fintype \u03b9] [inst_1 : DecidableEq \u03b9] (b : OrthonormalBasis \u03b9 \u211d (EuclideanSpace \u211d \u03b9))\n  (s : Finset \u03b9),\n  GRWTSK.Spectral.MatrixCountComparison.cutSynthesis\u271d b s =\n    { toFun := fun x => b.repr.symm (WithLp.toLp 2 fun i => if h : i \u2208 s then x \u27e8i, h\u27e9 else 0), map_add' := \u22ef,\n      map_smul' := \u22ef }"
     },
     {
       "axioms": [
@@ -960,7 +960,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.MatrixCountComparison",
       "name": "_private.GRWTSK.Spectral.MatrixCountComparison.0.GRWTSK.Spectral.MatrixCountComparison.cutAnalysis._proof_1",
-      "type": "∀ {ι : Type u_1} [inst : Fintype ι] (b : OrthonormalBasis ι ℝ (EuclideanSpace ℝ ι)) (s : Finset ι)\n  (v w : EuclideanSpace ℝ ι),\n  (fun i => (b.repr (v + w)).ofLp ↑i) = (fun i => (b.repr v).ofLp ↑i) + fun i => (b.repr w).ofLp ↑i"
+      "type": "\u2200 {\u03b9 : Type u_1} [inst : Fintype \u03b9] (b : OrthonormalBasis \u03b9 \u211d (EuclideanSpace \u211d \u03b9)) (s : Finset \u03b9)\n  (v w : EuclideanSpace \u211d \u03b9),\n  (fun i => (b.repr (v + w)).ofLp \u2191i) = (fun i => (b.repr v).ofLp \u2191i) + fun i => (b.repr w).ofLp \u2191i"
     },
     {
       "axioms": [
@@ -971,7 +971,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.MatrixCountComparison",
       "name": "GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount_le_of_quadratic",
-      "type": "∀ {ι : Type u_1} [inst : Fintype ι] [inst_1 : DecidableEq ι] {A B : Matrix ι ι ℝ} (hA : A.IsHermitian)\n  (hB : B.IsHermitian) (EA EB : ℝ),\n  (∀ (v : EuclideanSpace ℝ ι),\n      inner ℝ v ((Matrix.toEuclideanLin A) v) ≤ inner ℝ v ((Matrix.toEuclideanLin B) v) + (EA - EB) * ‖v‖ ^ 2) →\n    GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount hB EB ≤\n      GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount hA EA"
+      "type": "\u2200 {\u03b9 : Type u_1} [inst : Fintype \u03b9] [inst_1 : DecidableEq \u03b9] {A B : Matrix \u03b9 \u03b9 \u211d} (hA : A.IsHermitian)\n  (hB : B.IsHermitian) (EA EB : \u211d),\n  (\u2200 (v : EuclideanSpace \u211d \u03b9),\n      inner \u211d v ((Matrix.toEuclideanLin A) v) \u2264 inner \u211d v ((Matrix.toEuclideanLin B) v) + (EA - EB) * \u2016v\u2016 ^ 2) \u2192\n    GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount hB EB \u2264\n      GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount hA EA"
     },
     {
       "axioms": [
@@ -982,7 +982,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.MatrixCountComparison",
       "name": "GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount_le_add_difference_rank",
-      "type": "∀ {ι : Type u_1} [inst : Fintype ι] [inst_1 : DecidableEq ι] {A B : Matrix ι ι ℝ} (hA : A.IsHermitian)\n  (hB : B.IsHermitian) (E : ℝ),\n  GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount hB E ≤\n    GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount hA E +\n      Module.finrank ℝ ↥(Matrix.toEuclideanLin B - Matrix.toEuclideanLin A).range"
+      "type": "\u2200 {\u03b9 : Type u_1} [inst : Fintype \u03b9] [inst_1 : DecidableEq \u03b9] {A B : Matrix \u03b9 \u03b9 \u211d} (hA : A.IsHermitian)\n  (hB : B.IsHermitian) (E : \u211d),\n  GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount hB E \u2264\n    GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount hA E +\n      Module.finrank \u211d \u21a5(Matrix.toEuclideanLin B - Matrix.toEuclideanLin A).range"
     },
     {
       "axioms": [
@@ -993,7 +993,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.MatrixCountComparison",
       "name": "_private.GRWTSK.Spectral.MatrixCountComparison.0.GRWTSK.Spectral.MatrixCountComparison.eigenbasis_quadratic",
-      "type": "∀ {ι : Type u_1} [inst : Fintype ι] [inst_1 : DecidableEq ι] {A : Matrix ι ι ℝ} (hA : A.IsHermitian)\n  (v : EuclideanSpace ℝ ι),\n  inner ℝ v ((Matrix.toEuclideanLin A) v) = ∑ i, hA.eigenvalues i * (hA.eigenvectorBasis.repr v).ofLp i ^ 2"
+      "type": "\u2200 {\u03b9 : Type u_1} [inst : Fintype \u03b9] [inst_1 : DecidableEq \u03b9] {A : Matrix \u03b9 \u03b9 \u211d} (hA : A.IsHermitian)\n  (v : EuclideanSpace \u211d \u03b9),\n  inner \u211d v ((Matrix.toEuclideanLin A) v) = \u2211 i, hA.eigenvalues i * (hA.eigenvectorBasis.repr v).ofLp i ^ 2"
     },
     {
       "axioms": [
@@ -1004,7 +1004,7 @@
       "kind": "definition",
       "module": "GRWTSK.Spectral.MatrixCountComparison",
       "name": "_private.GRWTSK.Spectral.MatrixCountComparison.0.GRWTSK.Spectral.MatrixCountComparison.cutSynthesis",
-      "type": "{ι : Type u_1} →\n  [inst : Fintype ι] →\n    [DecidableEq ι] → OrthonormalBasis ι ℝ (EuclideanSpace ℝ ι) → (s : Finset ι) → (↥s → ℝ) →ₗ[ℝ] EuclideanSpace ℝ ι"
+      "type": "{\u03b9 : Type u_1} \u2192\n  [inst : Fintype \u03b9] \u2192\n    [DecidableEq \u03b9] \u2192 OrthonormalBasis \u03b9 \u211d (EuclideanSpace \u211d \u03b9) \u2192 (s : Finset \u03b9) \u2192 (\u21a5s \u2192 \u211d) \u2192\u2097[\u211d] EuclideanSpace \u211d \u03b9"
     },
     {
       "axioms": [
@@ -1015,7 +1015,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.SturmianFiniteVolume",
       "name": "GRWTSK.Spectral.SturmianFiniteVolume.gap_width_le_abs_coupling_of_count_limits",
-      "type": "∀ (α V ξ : ℝ) (origin : ℤ) {S : Set ℝ} {free ids : ℝ → ℝ} {label freeEnergy a b : ℝ},\n  (∀ (E : ℝ), Filter.Tendsto (fun N => freeNormalizedCount N E) Filter.atTop (nhds (free E))) →\n    (∀ (E : ℝ), Filter.Tendsto (fun N => sturmianNormalizedCount N α V ξ origin E) Filter.atTop (nhds (ids E))) →\n      (∀ (x : ℝ), free x ≤ label → x ≤ freeEnergy) →\n        (∀ (x : ℝ), label ≤ free x → freeEnergy ≤ x) → OpenLabelGap S ids label a b → 0 < b - a ∧ b - a ≤ |V|"
+      "type": "\u2200 (\u03b1 V \u03be : \u211d) (origin : \u2124) {S : Set \u211d} {free ids : \u211d \u2192 \u211d} {label freeEnergy a b : \u211d},\n  (\u2200 (E : \u211d), Filter.Tendsto (fun N => freeNormalizedCount N E) Filter.atTop (nhds (free E))) \u2192\n    (\u2200 (E : \u211d), Filter.Tendsto (fun N => sturmianNormalizedCount N \u03b1 V \u03be origin E) Filter.atTop (nhds (ids E))) \u2192\n      (\u2200 (x : \u211d), free x \u2264 label \u2192 x \u2264 freeEnergy) \u2192\n        (\u2200 (x : \u211d), label \u2264 free x \u2192 freeEnergy \u2264 x) \u2192 OpenLabelGap S ids label a b \u2192 0 < b - a \u2227 b - a \u2264 |V|"
     },
     {
       "axioms": [
@@ -1026,7 +1026,7 @@
       "kind": "definition",
       "module": "GRWTSK.Spectral.SturmianFiniteVolume",
       "name": "GRWTSK.Spectral.SturmianFiniteVolume.sturmianNormalizedCount",
-      "type": "ℕ → ℝ → ℝ → ℝ → ℤ → ℝ → ℝ"
+      "type": "\u2115 \u2192 \u211d \u2192 \u211d \u2192 \u211d \u2192 \u2124 \u2192 \u211d \u2192 \u211d"
     },
     {
       "axioms": [
@@ -1037,7 +1037,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.SturmianFiniteVolume",
       "name": "GRWTSK.Spectral.SturmianFiniteVolume.freeDirichlet_isHermitian",
-      "type": "∀ (N : ℕ), (freeDirichlet N).IsHermitian"
+      "type": "\u2200 (N : \u2115), (freeDirichlet N).IsHermitian"
     },
     {
       "axioms": [
@@ -1048,7 +1048,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.SturmianFiniteVolume",
       "name": "GRWTSK.Spectral.SturmianFiniteVolume.hamiltonian.eq_1",
-      "type": "∀ (N : ℕ) (α V ξ : ℝ) (origin : ℤ),\n  hamiltonian N α V ξ origin =\n    freeDirichlet N + Matrix.diagonal fun i => GRWTSK.LinearAlgebra.Sturmian.potential α V ξ (origin + ↑↑i)"
+      "type": "\u2200 (N : \u2115) (\u03b1 V \u03be : \u211d) (origin : \u2124),\n  hamiltonian N \u03b1 V \u03be origin =\n    freeDirichlet N + Matrix.diagonal fun i => GRWTSK.LinearAlgebra.Sturmian.potential \u03b1 V \u03be (origin + \u2191\u2191i)"
     },
     {
       "axioms": [
@@ -1059,7 +1059,7 @@
       "kind": "definition",
       "module": "GRWTSK.Spectral.SturmianFiniteVolume",
       "name": "GRWTSK.Spectral.SturmianFiniteVolume.sturmianCount",
-      "type": "ℕ → ℝ → ℝ → ℝ → ℤ → ℝ → ℕ"
+      "type": "\u2115 \u2192 \u211d \u2192 \u211d \u2192 \u211d \u2192 \u2124 \u2192 \u211d \u2192 \u2115"
     },
     {
       "axioms": [
@@ -1070,7 +1070,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.SturmianFiniteVolume",
       "name": "GRWTSK.Spectral.SturmianFiniteVolume.upper_difference_posSemidef",
-      "type": "∀ (N : ℕ) (α V ξ : ℝ) (origin : ℤ),\n  ((freeDirichlet N + Matrix.diagonal fun x => max V 0) - hamiltonian N α V ξ origin).PosSemidef"
+      "type": "\u2200 (N : \u2115) (\u03b1 V \u03be : \u211d) (origin : \u2124),\n  ((freeDirichlet N + Matrix.diagonal fun x => max V 0) - hamiltonian N \u03b1 V \u03be origin).PosSemidef"
     },
     {
       "axioms": [
@@ -1081,7 +1081,7 @@
       "kind": "definition",
       "module": "GRWTSK.Spectral.SturmianFiniteVolume",
       "name": "GRWTSK.Spectral.SturmianFiniteVolume.hamiltonian",
-      "type": "(N : ℕ) → ℝ → ℝ → ℝ → ℤ → Matrix (Fin N) (Fin N) ℝ"
+      "type": "(N : \u2115) \u2192 \u211d \u2192 \u211d \u2192 \u211d \u2192 \u2124 \u2192 Matrix (Fin N) (Fin N) \u211d"
     },
     {
       "axioms": [
@@ -1092,7 +1092,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.SturmianFiniteVolume",
       "name": "GRWTSK.Spectral.SturmianFiniteVolume.finite_normalized_comparison",
-      "type": "∀ (N : ℕ) (α V ξ : ℝ) (origin : ℤ) (E : ℝ),\n  freeNormalizedCount N (E - max V 0) ≤ sturmianNormalizedCount N α V ξ origin E ∧\n    sturmianNormalizedCount N α V ξ origin E ≤ freeNormalizedCount N (E - min V 0)"
+      "type": "\u2200 (N : \u2115) (\u03b1 V \u03be : \u211d) (origin : \u2124) (E : \u211d),\n  freeNormalizedCount N (E - max V 0) \u2264 sturmianNormalizedCount N \u03b1 V \u03be origin E \u2227\n    sturmianNormalizedCount N \u03b1 V \u03be origin E \u2264 freeNormalizedCount N (E - min V 0)"
     },
     {
       "axioms": [
@@ -1103,7 +1103,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.SturmianFiniteVolume",
       "name": "_private.GRWTSK.Spectral.SturmianFiniteVolume.0.GRWTSK.Spectral.SturmianFiniteVolume.diagonal_quadratic",
-      "type": "∀ {N : ℕ} (d : Fin N → ℝ) (v : EuclideanSpace ℝ (Fin N)),\n  inner ℝ v ((Matrix.toEuclideanLin (Matrix.diagonal d)) v) = ∑ i, d i * v.ofLp i ^ 2"
+      "type": "\u2200 {N : \u2115} (d : Fin N \u2192 \u211d) (v : EuclideanSpace \u211d (Fin N)),\n  inner \u211d v ((Matrix.toEuclideanLin (Matrix.diagonal d)) v) = \u2211 i, d i * v.ofLp i ^ 2"
     },
     {
       "axioms": [
@@ -1114,7 +1114,7 @@
       "kind": "definition",
       "module": "GRWTSK.Spectral.SturmianFiniteVolume",
       "name": "GRWTSK.Spectral.SturmianFiniteVolume.freeCount",
-      "type": "ℕ → ℝ → ℕ"
+      "type": "\u2115 \u2192 \u211d \u2192 \u2115"
     },
     {
       "axioms": [
@@ -1125,7 +1125,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.SturmianFiniteVolume",
       "name": "Matrix.toEuclideanLin.eq_1",
-      "type": "∀ {𝕜 : Type u_3} [inst : RCLike 𝕜] {m : Type u_7} {n : Type u_8} [inst_1 : Fintype n] [inst_2 : DecidableEq n],\n  Matrix.toEuclideanLin = Matrix.toLpLin 2 2"
+      "type": "\u2200 {\ud835\udd5c : Type u_3} [inst : RCLike \ud835\udd5c] {m : Type u_7} {n : Type u_8} [inst_1 : Fintype n] [inst_2 : DecidableEq n],\n  Matrix.toEuclideanLin = Matrix.toLpLin 2 2"
     },
     {
       "axioms": [
@@ -1136,7 +1136,7 @@
       "kind": "definition",
       "module": "GRWTSK.Spectral.SturmianFiniteVolume",
       "name": "GRWTSK.Spectral.SturmianFiniteVolume.freeNormalizedCount",
-      "type": "ℕ → ℝ → ℝ"
+      "type": "\u2115 \u2192 \u211d \u2192 \u211d"
     },
     {
       "axioms": [
@@ -1147,7 +1147,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.SturmianFiniteVolume",
       "name": "_private.GRWTSK.Spectral.SturmianFiniteVolume.0.GRWTSK.Spectral.SturmianFiniteVolume.coordinate_norm",
-      "type": "∀ {N : ℕ} (v : EuclideanSpace ℝ (Fin N)), ‖v‖ ^ 2 = ∑ i, v.ofLp i ^ 2"
+      "type": "\u2200 {N : \u2115} (v : EuclideanSpace \u211d (Fin N)), \u2016v\u2016 ^ 2 = \u2211 i, v.ofLp i ^ 2"
     },
     {
       "axioms": [
@@ -1158,7 +1158,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.SturmianFiniteVolume",
       "name": "GRWTSK.Spectral.SturmianFiniteVolume.finite_count_comparison",
-      "type": "∀ (N : ℕ) (α V ξ : ℝ) (origin : ℤ) (E : ℝ),\n  freeCount N (E - max V 0) ≤ sturmianCount N α V ξ origin E ∧\n    sturmianCount N α V ξ origin E ≤ freeCount N (E - min V 0)"
+      "type": "\u2200 (N : \u2115) (\u03b1 V \u03be : \u211d) (origin : \u2124) (E : \u211d),\n  freeCount N (E - max V 0) \u2264 sturmianCount N \u03b1 V \u03be origin E \u2227\n    sturmianCount N \u03b1 V \u03be origin E \u2264 freeCount N (E - min V 0)"
     },
     {
       "axioms": [
@@ -1169,7 +1169,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.SturmianFiniteVolume",
       "name": "GRWTSK.Spectral.SturmianFiniteVolume.freeDirichlet.eq_1",
-      "type": "∀ (N : ℕ) (i j : Fin N), freeDirichlet N i j = if ↑i + 1 = ↑j ∨ ↑j + 1 = ↑i then 1 else 0"
+      "type": "\u2200 (N : \u2115) (i j : Fin N), freeDirichlet N i j = if \u2191i + 1 = \u2191j \u2228 \u2191j + 1 = \u2191i then 1 else 0"
     },
     {
       "axioms": [
@@ -1180,7 +1180,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.SturmianFiniteVolume",
       "name": "GRWTSK.Spectral.SturmianFiniteVolume.hamiltonian_isHermitian",
-      "type": "∀ (N : ℕ) (α V ξ : ℝ) (origin : ℤ), (hamiltonian N α V ξ origin).IsHermitian"
+      "type": "\u2200 (N : \u2115) (\u03b1 V \u03be : \u211d) (origin : \u2124), (hamiltonian N \u03b1 V \u03be origin).IsHermitian"
     },
     {
       "axioms": [
@@ -1191,7 +1191,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.SturmianFiniteVolume",
       "name": "GRWTSK.Spectral.SturmianFiniteVolume.lower_difference_posSemidef",
-      "type": "∀ (N : ℕ) (α V ξ : ℝ) (origin : ℤ),\n  (hamiltonian N α V ξ origin - (freeDirichlet N + Matrix.diagonal fun x => min V 0)).PosSemidef"
+      "type": "\u2200 (N : \u2115) (\u03b1 V \u03be : \u211d) (origin : \u2124),\n  (hamiltonian N \u03b1 V \u03be origin - (freeDirichlet N + Matrix.diagonal fun x => min V 0)).PosSemidef"
     },
     {
       "axioms": [
@@ -1202,7 +1202,7 @@
       "kind": "definition",
       "module": "GRWTSK.Spectral.SturmianFiniteVolume",
       "name": "GRWTSK.Spectral.SturmianFiniteVolume.freeDirichlet",
-      "type": "(N : ℕ) → Matrix (Fin N) (Fin N) ℝ"
+      "type": "(N : \u2115) \u2192 Matrix (Fin N) (Fin N) \u211d"
     },
     {
       "axioms": [
@@ -1213,7 +1213,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.SturmianFiniteVolume",
       "name": "GRWTSK.Spectral.SturmianFiniteVolume.ids_comparison_of_count_limits",
-      "type": "∀ (α V ξ : ℝ) (origin : ℤ) (free ids : ℝ → ℝ),\n  (∀ (E : ℝ), Filter.Tendsto (fun N => freeNormalizedCount N E) Filter.atTop (nhds (free E))) →\n    (∀ (E : ℝ), Filter.Tendsto (fun N => sturmianNormalizedCount N α V ξ origin E) Filter.atTop (nhds (ids E))) →\n      ∀ (E : ℝ), free (E - max V 0) ≤ ids E ∧ ids E ≤ free (E - min V 0)"
+      "type": "\u2200 (\u03b1 V \u03be : \u211d) (origin : \u2124) (free ids : \u211d \u2192 \u211d),\n  (\u2200 (E : \u211d), Filter.Tendsto (fun N => freeNormalizedCount N E) Filter.atTop (nhds (free E))) \u2192\n    (\u2200 (E : \u211d), Filter.Tendsto (fun N => sturmianNormalizedCount N \u03b1 V \u03be origin E) Filter.atTop (nhds (ids E))) \u2192\n      \u2200 (E : \u211d), free (E - max V 0) \u2264 ids E \u2227 ids E \u2264 free (E - min V 0)"
     },
     {
       "axioms": [
@@ -1222,7 +1222,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.SturmianFiniteVolume",
       "name": "GRWTSK.Spectral.SturmianFiniteVolume.freeDirichlet_isHermitian._simp_1_2",
-      "type": "∀ {a b : Prop}, (a ∨ b) = (b ∨ a)"
+      "type": "\u2200 {a b : Prop}, (a \u2228 b) = (b \u2228 a)"
     },
     {
       "axioms": [
@@ -1233,7 +1233,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.SturmianFiniteVolume",
       "name": "GRWTSK.Spectral.SturmianFiniteVolume.hamiltonian_zero",
-      "type": "∀ (N : ℕ) (α ξ : ℝ) (origin : ℤ), hamiltonian N α 0 ξ origin = freeDirichlet N"
+      "type": "\u2200 (N : \u2115) (\u03b1 \u03be : \u211d) (origin : \u2124), hamiltonian N \u03b1 0 \u03be origin = freeDirichlet N"
     },
     {
       "axioms": [
@@ -1244,7 +1244,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.SturmianFiniteVolume",
       "name": "GRWTSK.Spectral.SturmianFiniteVolume.hamiltonian_quadratic_bounds",
-      "type": "∀ (N : ℕ) (α V ξ : ℝ) (origin : ℤ) (v : EuclideanSpace ℝ (Fin N)),\n  inner ℝ v ((Matrix.toEuclideanLin (freeDirichlet N)) v) + min V 0 * ‖v‖ ^ 2 ≤\n      inner ℝ v ((Matrix.toEuclideanLin (hamiltonian N α V ξ origin)) v) ∧\n    inner ℝ v ((Matrix.toEuclideanLin (hamiltonian N α V ξ origin)) v) ≤\n      inner ℝ v ((Matrix.toEuclideanLin (freeDirichlet N)) v) + max V 0 * ‖v‖ ^ 2"
+      "type": "\u2200 (N : \u2115) (\u03b1 V \u03be : \u211d) (origin : \u2124) (v : EuclideanSpace \u211d (Fin N)),\n  inner \u211d v ((Matrix.toEuclideanLin (freeDirichlet N)) v) + min V 0 * \u2016v\u2016 ^ 2 \u2264\n      inner \u211d v ((Matrix.toEuclideanLin (hamiltonian N \u03b1 V \u03be origin)) v) \u2227\n    inner \u211d v ((Matrix.toEuclideanLin (hamiltonian N \u03b1 V \u03be origin)) v) \u2264\n      inner \u211d v ((Matrix.toEuclideanLin (freeDirichlet N)) v) + max V 0 * \u2016v\u2016 ^ 2"
     },
     {
       "axioms": [
@@ -1255,7 +1255,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeDirichletSpectrum",
       "name": "GRWTSK.Spectral.FreeDirichletSpectrum.angle_lt_pi",
-      "type": "∀ (N : ℕ) (k : Fin N), GRWTSK.Spectral.FreeDirichletSpectrum.angle N k < Real.pi"
+      "type": "\u2200 (N : \u2115) (k : Fin N), GRWTSK.Spectral.FreeDirichletSpectrum.angle N k < Real.pi"
     },
     {
       "axioms": [
@@ -1266,7 +1266,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeDirichletSpectrum",
       "name": "GRWTSK.Spectral.FreeDirichletSpectrum.free_charpoly",
-      "type": "∀ (N : ℕ),\n  (freeDirichlet N).charpoly = ∏ k, (Polynomial.X - Polynomial.C (GRWTSK.Spectral.FreeDirichletSpectrum.eigenvalue N k))"
+      "type": "\u2200 (N : \u2115),\n  (freeDirichlet N).charpoly = \u220f k, (Polynomial.X - Polynomial.C (GRWTSK.Spectral.FreeDirichletSpectrum.eigenvalue N k))"
     },
     {
       "axioms": [
@@ -1277,7 +1277,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeDirichletSpectrum",
       "name": "GRWTSK.Spectral.FreeDirichletSpectrum.free_toMatrix_sineBasis",
-      "type": "∀ (N : ℕ),\n  (LinearMap.toMatrix (GRWTSK.Spectral.FreeDirichletSpectrum.sineBasis N)\n        (GRWTSK.Spectral.FreeDirichletSpectrum.sineBasis N))\n      (Matrix.toLin' (freeDirichlet N)) =\n    Matrix.diagonal (GRWTSK.Spectral.FreeDirichletSpectrum.eigenvalue N)"
+      "type": "\u2200 (N : \u2115),\n  (LinearMap.toMatrix (GRWTSK.Spectral.FreeDirichletSpectrum.sineBasis N)\n        (GRWTSK.Spectral.FreeDirichletSpectrum.sineBasis N))\n      (Matrix.toLin' (freeDirichlet N)) =\n    Matrix.diagonal (GRWTSK.Spectral.FreeDirichletSpectrum.eigenvalue N)"
     },
     {
       "axioms": [
@@ -1288,7 +1288,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeDirichletSpectrum",
       "name": "GRWTSK.Spectral.FreeDirichletSpectrum.sineVector_ne_zero",
-      "type": "∀ (N : ℕ) (k : Fin N), GRWTSK.Spectral.FreeDirichletSpectrum.sineVector N k ≠ 0"
+      "type": "\u2200 (N : \u2115) (k : Fin N), GRWTSK.Spectral.FreeDirichletSpectrum.sineVector N k \u2260 0"
     },
     {
       "axioms": [
@@ -1299,7 +1299,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeDirichletSpectrum",
       "name": "GRWTSK.Spectral.FreeDirichletSpectrum.eigenvalue_strictAnti",
-      "type": "∀ (N : ℕ), StrictAnti (GRWTSK.Spectral.FreeDirichletSpectrum.eigenvalue N)"
+      "type": "\u2200 (N : \u2115), StrictAnti (GRWTSK.Spectral.FreeDirichletSpectrum.eigenvalue N)"
     },
     {
       "axioms": [
@@ -1310,7 +1310,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeDirichletSpectrum",
       "name": "GRWTSK.Spectral.FreeDirichletSpectrum.sineBasis._proof_1",
-      "type": "∀ (N : ℕ), FiniteDimensional ℝ (Fin N → ℝ)"
+      "type": "\u2200 (N : \u2115), FiniteDimensional \u211d (Fin N \u2192 \u211d)"
     },
     {
       "axioms": [
@@ -1321,7 +1321,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeDirichletSpectrum",
       "name": "GRWTSK.Spectral.FreeDirichletSpectrum.sineBasis.eq_1",
-      "type": "∀ (N : ℕ),\n  GRWTSK.Spectral.FreeDirichletSpectrum.sineBasis N =\n    basisOfLinearIndependentOfCardEqFinrank' (GRWTSK.Spectral.FreeDirichletSpectrum.sineVector N) ⋯ ⋯"
+      "type": "\u2200 (N : \u2115),\n  GRWTSK.Spectral.FreeDirichletSpectrum.sineBasis N =\n    basisOfLinearIndependentOfCardEqFinrank' (GRWTSK.Spectral.FreeDirichletSpectrum.sineVector N) \u22ef \u22ef"
     },
     {
       "axioms": [
@@ -1332,7 +1332,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeDirichletSpectrum",
       "name": "GRWTSK.Spectral.FreeDirichletSpectrum.eigenvalue.eq_1",
-      "type": "∀ (N : ℕ) (k : Fin N),\n  GRWTSK.Spectral.FreeDirichletSpectrum.eigenvalue N k = 2 * Real.cos (GRWTSK.Spectral.FreeDirichletSpectrum.angle N k)"
+      "type": "\u2200 (N : \u2115) (k : Fin N),\n  GRWTSK.Spectral.FreeDirichletSpectrum.eigenvalue N k = 2 * Real.cos (GRWTSK.Spectral.FreeDirichletSpectrum.angle N k)"
     },
     {
       "axioms": [
@@ -1342,7 +1342,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeDirichletSpectrum",
       "name": "GRWTSK.Spectral.FreeDirichletSpectrum.freeDirichlet_mulVec_of_boundary._proof_1_4",
-      "type": "∀ (N : ℕ) (i : Fin N), 0 < ↑i → ¬↑i - 1 < N → False"
+      "type": "\u2200 (N : \u2115) (i : Fin N), 0 < \u2191i \u2192 \u00ac\u2191i - 1 < N \u2192 False"
     },
     {
       "axioms": [
@@ -1352,7 +1352,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeDirichletSpectrum",
       "name": "GRWTSK.Spectral.FreeDirichletSpectrum.freeDirichlet_mulVec_of_boundary._proof_1_1",
-      "type": "∀ (N : ℕ) (i j : Fin N), ↑i + 1 = ↑j → ↑j + 1 = ↑i → False"
+      "type": "\u2200 (N : \u2115) (i j : Fin N), \u2191i + 1 = \u2191j \u2192 \u2191j + 1 = \u2191i \u2192 False"
     },
     {
       "axioms": [
@@ -1363,7 +1363,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeDirichletSpectrum",
       "name": "GRWTSK.Spectral.SturmianFiniteVolume.freeCount.eq_1",
-      "type": "∀ (N : ℕ) (E : ℝ), freeCount N E = GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount ⋯ E"
+      "type": "\u2200 (N : \u2115) (E : \u211d), freeCount N E = GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount \u22ef E"
     },
     {
       "axioms": [
@@ -1374,7 +1374,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeDirichletSpectrum",
       "name": "GRWTSK.Spectral.FreeDirichletSpectrum.freeCount_eq_cosine_count",
-      "type": "∀ (N : ℕ) (E : ℝ), freeCount N E = {k | GRWTSK.Spectral.FreeDirichletSpectrum.eigenvalue N k ≤ E}.card"
+      "type": "\u2200 (N : \u2115) (E : \u211d), freeCount N E = {k | GRWTSK.Spectral.FreeDirichletSpectrum.eigenvalue N k \u2264 E}.card"
     },
     {
       "axioms": [
@@ -1384,7 +1384,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeDirichletSpectrum",
       "name": "GRWTSK.Spectral.FreeDirichletSpectrum.freeCount_eq_cosine_count._simp_1_2",
-      "type": "∀ {α : Type u_1} (p : α → Prop) [inst : DecidablePred p] (s : Finset α),\n  Multiset.filter p s.val = (Finset.filter p s).val"
+      "type": "\u2200 {\u03b1 : Type u_1} (p : \u03b1 \u2192 Prop) [inst : DecidablePred p] (s : Finset \u03b1),\n  Multiset.filter p s.val = (Finset.filter p s).val"
     },
     {
       "axioms": [
@@ -1395,7 +1395,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeDirichletSpectrum",
       "name": "GRWTSK.Spectral.FreeDirichletSpectrum.freeDirichlet_mulVec_of_boundary",
-      "type": "∀ (N : ℕ) (g : ℕ → ℝ),\n  g 0 = 0 → g (N + 1) = 0 → ∀ (i : Fin N), (freeDirichlet N).mulVec (fun j => g (↑j + 1)) i = g (↑i + 2) + g ↑i"
+      "type": "\u2200 (N : \u2115) (g : \u2115 \u2192 \u211d),\n  g 0 = 0 \u2192 g (N + 1) = 0 \u2192 \u2200 (i : Fin N), (freeDirichlet N).mulVec (fun j => g (\u2191j + 1)) i = g (\u2191i + 2) + g \u2191i"
     },
     {
       "axioms": [
@@ -1406,7 +1406,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeDirichletSpectrum",
       "name": "GRWTSK.Spectral.FreeDirichletSpectrum.sineBasis._proof_2",
-      "type": "∀ (N : ℕ), Fintype.card (Fin N) = Module.finrank ℝ (Fin N → ℝ)"
+      "type": "\u2200 (N : \u2115), Fintype.card (Fin N) = Module.finrank \u211d (Fin N \u2192 \u211d)"
     },
     {
       "axioms": [
@@ -1416,7 +1416,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeDirichletSpectrum",
       "name": "GRWTSK.Spectral.FreeDirichletSpectrum.freeDirichlet_mulVec_of_boundary._proof_1_5",
-      "type": "∀ (N : ℕ) (i : Fin N), 0 < ↑i → ¬↑i - 1 + 1 = ↑i → False"
+      "type": "\u2200 (N : \u2115) (i : Fin N), 0 < \u2191i \u2192 \u00ac\u2191i - 1 + 1 = \u2191i \u2192 False"
     },
     {
       "axioms": [
@@ -1427,7 +1427,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeDirichletSpectrum",
       "name": "GRWTSK.Spectral.FreeDirichletSpectrum.sineVector_eigen_equation",
-      "type": "∀ (N : ℕ) (k : Fin N),\n  (freeDirichlet N).mulVec (GRWTSK.Spectral.FreeDirichletSpectrum.sineVector N k) =\n    GRWTSK.Spectral.FreeDirichletSpectrum.eigenvalue N k • GRWTSK.Spectral.FreeDirichletSpectrum.sineVector N k"
+      "type": "\u2200 (N : \u2115) (k : Fin N),\n  (freeDirichlet N).mulVec (GRWTSK.Spectral.FreeDirichletSpectrum.sineVector N k) =\n    GRWTSK.Spectral.FreeDirichletSpectrum.eigenvalue N k \u2022 GRWTSK.Spectral.FreeDirichletSpectrum.sineVector N k"
     },
     {
       "axioms": [
@@ -1438,7 +1438,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeDirichletSpectrum",
       "name": "GRWTSK.Spectral.FreeDirichletSpectrum.free_roots_charpoly",
-      "type": "∀ (N : ℕ),\n  (freeDirichlet N).charpoly.roots = Multiset.map (GRWTSK.Spectral.FreeDirichletSpectrum.eigenvalue N) Finset.univ.val"
+      "type": "\u2200 (N : \u2115),\n  (freeDirichlet N).charpoly.roots = Multiset.map (GRWTSK.Spectral.FreeDirichletSpectrum.eigenvalue N) Finset.univ.val"
     },
     {
       "axioms": [
@@ -1448,7 +1448,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeDirichletSpectrum",
       "name": "GRWTSK.Spectral.FreeDirichletSpectrum.freeDirichlet_mulVec_of_boundary._proof_1_3",
-      "type": "∀ (N : ℕ) (i : Fin N), ¬↑i + 1 < N → ∀ (j : Fin N), ↑i + 1 = ↑j → False"
+      "type": "\u2200 (N : \u2115) (i : Fin N), \u00ac\u2191i + 1 < N \u2192 \u2200 (j : Fin N), \u2191i + 1 = \u2191j \u2192 False"
     },
     {
       "axioms": [
@@ -1458,7 +1458,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeDirichletSpectrum",
       "name": "GRWTSK.Spectral.FreeDirichletSpectrum.freeDirichlet_mulVec_of_boundary._proof_1_2",
-      "type": "∀ (N : ℕ) (i : Fin N), ¬↑i + 1 < N → ¬↑i + 2 = N + 1 → False"
+      "type": "\u2200 (N : \u2115) (i : Fin N), \u00ac\u2191i + 1 < N \u2192 \u00ac\u2191i + 2 = N + 1 \u2192 False"
     },
     {
       "axioms": [
@@ -1469,7 +1469,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeDirichletSpectrum",
       "name": "GRWTSK.Spectral.FreeDirichletSpectrum.sineVector_hasEigenvector",
-      "type": "∀ (N : ℕ) (k : Fin N),\n  Module.End.HasEigenvector (Matrix.toLin' (freeDirichlet N)) (GRWTSK.Spectral.FreeDirichletSpectrum.eigenvalue N k)\n    (GRWTSK.Spectral.FreeDirichletSpectrum.sineVector N k)"
+      "type": "\u2200 (N : \u2115) (k : Fin N),\n  Module.End.HasEigenvector (Matrix.toLin' (freeDirichlet N)) (GRWTSK.Spectral.FreeDirichletSpectrum.eigenvalue N k)\n    (GRWTSK.Spectral.FreeDirichletSpectrum.sineVector N k)"
     },
     {
       "axioms": [
@@ -1489,7 +1489,7 @@
       "kind": "definition",
       "module": "GRWTSK.Spectral.FreeDirichletSpectrum",
       "name": "GRWTSK.Spectral.FreeDirichletSpectrum.sineVector",
-      "type": "(N : ℕ) → Fin N → Fin N → ℝ"
+      "type": "(N : \u2115) \u2192 Fin N \u2192 Fin N \u2192 \u211d"
     },
     {
       "axioms": [
@@ -1500,7 +1500,7 @@
       "kind": "definition",
       "module": "GRWTSK.Spectral.FreeDirichletSpectrum",
       "name": "GRWTSK.Spectral.FreeDirichletSpectrum.angle",
-      "type": "(N : ℕ) → Fin N → ℝ"
+      "type": "(N : \u2115) \u2192 Fin N \u2192 \u211d"
     },
     {
       "axioms": [
@@ -1511,7 +1511,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeDirichletSpectrum",
       "name": "GRWTSK.Spectral.FreeDirichletSpectrum.free_roots_charpoly._simp_1_2",
-      "type": "∀ {R : Type u} [inst : Ring R] [Nontrivial R] (r : R), (Polynomial.X - Polynomial.C r = 0) = False"
+      "type": "\u2200 {R : Type u} [inst : Ring R] [Nontrivial R] (r : R), (Polynomial.X - Polynomial.C r = 0) = False"
     },
     {
       "axioms": [
@@ -1521,7 +1521,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeDirichletSpectrum",
       "name": "GRWTSK.Spectral.FreeDirichletSpectrum.freeDirichlet_mulVec_of_boundary._proof_1_6",
-      "type": "∀ (N : ℕ) (i : Fin N) (hi : 0 < ↑i), ↑⟨↑i - 1, ⋯⟩ + 1 = ↑i → ∀ (k : Fin N), ↑k + 1 = ↑i → ¬↑k = ↑i - 1 → False"
+      "type": "\u2200 (N : \u2115) (i : Fin N) (hi : 0 < \u2191i), \u2191\u27e8\u2191i - 1, \u22ef\u27e9 + 1 = \u2191i \u2192 \u2200 (k : Fin N), \u2191k + 1 = \u2191i \u2192 \u00ac\u2191k = \u2191i - 1 \u2192 False"
     },
     {
       "axioms": [
@@ -1532,7 +1532,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeDirichletSpectrum",
       "name": "GRWTSK.Spectral.FreeDirichletSpectrum.angle_pos",
-      "type": "∀ (N : ℕ) (k : Fin N), 0 < GRWTSK.Spectral.FreeDirichletSpectrum.angle N k"
+      "type": "\u2200 (N : \u2115) (k : Fin N), 0 < GRWTSK.Spectral.FreeDirichletSpectrum.angle N k"
     },
     {
       "axioms": [
@@ -1542,7 +1542,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeDirichletSpectrum",
       "name": "GRWTSK.Spectral.FreeDirichletSpectrum.freeDirichlet_mulVec_of_boundary._proof_1_7",
-      "type": "∀ (N : ℕ) (i : Fin N), ¬0 < ↑i → ¬↑i = 0 → False"
+      "type": "\u2200 (N : \u2115) (i : Fin N), \u00ac0 < \u2191i \u2192 \u00ac\u2191i = 0 \u2192 False"
     },
     {
       "axioms": [
@@ -1553,7 +1553,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeDirichletSpectrum",
       "name": "GRWTSK.Spectral.FreeDirichletSpectrum.sineVectors_linearIndependent",
-      "type": "∀ (N : ℕ), LinearIndependent ℝ (GRWTSK.Spectral.FreeDirichletSpectrum.sineVector N)"
+      "type": "\u2200 (N : \u2115), LinearIndependent \u211d (GRWTSK.Spectral.FreeDirichletSpectrum.sineVector N)"
     },
     {
       "axioms": [
@@ -1564,7 +1564,7 @@
       "kind": "definition",
       "module": "GRWTSK.Spectral.FreeDirichletSpectrum",
       "name": "GRWTSK.Spectral.FreeDirichletSpectrum.eigenvalue",
-      "type": "(N : ℕ) → Fin N → ℝ"
+      "type": "(N : \u2115) \u2192 Fin N \u2192 \u211d"
     },
     {
       "axioms": [
@@ -1575,7 +1575,7 @@
       "kind": "definition",
       "module": "GRWTSK.Spectral.FreeDirichletSpectrum",
       "name": "GRWTSK.Spectral.FreeDirichletSpectrum.sineBasis",
-      "type": "(N : ℕ) → Module.Basis (Fin N) ℝ (Fin N → ℝ)"
+      "type": "(N : \u2115) \u2192 Module.Basis (Fin N) \u211d (Fin N \u2192 \u211d)"
     },
     {
       "axioms": [
@@ -1586,7 +1586,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeDirichletSpectrum",
       "name": "basisOfLinearIndependentOfCardEqFinrank'.congr_simp",
-      "type": "∀ {K : Type u} {V : Type v} [inst : DivisionRing K] [inst_1 : AddCommGroup V] [inst_2 : _root_.Module K V]\n  {ι : Type u_1} [inst_3 : Fintype ι] [inst_4 : FiniteDimensional K V] (b b_1 : ι → V) (e_b : b = b_1)\n  (hb : LinearIndependent K b) (hι : Fintype.card ι = Module.finrank K V),\n  basisOfLinearIndependentOfCardEqFinrank' b hb hι = basisOfLinearIndependentOfCardEqFinrank' b_1 ⋯ hι"
+      "type": "\u2200 {K : Type u} {V : Type v} [inst : DivisionRing K] [inst_1 : AddCommGroup V] [inst_2 : _root_.Module K V]\n  {\u03b9 : Type u_1} [inst_3 : Fintype \u03b9] [inst_4 : FiniteDimensional K V] (b b_1 : \u03b9 \u2192 V) (e_b : b = b_1)\n  (hb : LinearIndependent K b) (h\u03b9 : Fintype.card \u03b9 = Module.finrank K V),\n  basisOfLinearIndependentOfCardEqFinrank' b hb h\u03b9 = basisOfLinearIndependentOfCardEqFinrank' b_1 \u22ef h\u03b9"
     },
     {
       "axioms": [
@@ -1597,7 +1597,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeDirichletSpectrum",
       "name": "GRWTSK.Spectral.FreeDirichletSpectrum.sineVector.eq_1",
-      "type": "∀ (N : ℕ) (k i : Fin N),\n  GRWTSK.Spectral.FreeDirichletSpectrum.sineVector N k i =\n    Real.sin (GRWTSK.Spectral.FreeDirichletSpectrum.angle N k * (↑↑i + 1))"
+      "type": "\u2200 (N : \u2115) (k i : Fin N),\n  GRWTSK.Spectral.FreeDirichletSpectrum.sineVector N k i =\n    Real.sin (GRWTSK.Spectral.FreeDirichletSpectrum.angle N k * (\u2191\u2191i + 1))"
     },
     {
       "axioms": [
@@ -1608,7 +1608,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeDirichletSpectrum",
       "name": "GRWTSK.Spectral.FreeDirichletSpectrum.sineBasis_apply",
-      "type": "∀ (N : ℕ) (k : Fin N),\n  (GRWTSK.Spectral.FreeDirichletSpectrum.sineBasis N) k = GRWTSK.Spectral.FreeDirichletSpectrum.sineVector N k"
+      "type": "\u2200 (N : \u2115) (k : Fin N),\n  (GRWTSK.Spectral.FreeDirichletSpectrum.sineBasis N) k = GRWTSK.Spectral.FreeDirichletSpectrum.sineVector N k"
     },
     {
       "axioms": [
@@ -1619,7 +1619,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeDirichletSpectrum",
       "name": "GRWTSK.Spectral.FreeDirichletSpectrum.free_roots_charpoly._simp_1_1",
-      "type": "∀ {ι : Type u_1} {M₀ : Type u_4} [inst : CommMonoidWithZero M₀] {f : ι → M₀} {s : Finset ι} [Nontrivial M₀]\n  [NoZeroDivisors M₀], (∏ x ∈ s, f x ≠ 0) = ∀ a ∈ s, f a ≠ 0"
+      "type": "\u2200 {\u03b9 : Type u_1} {M\u2080 : Type u_4} [inst : CommMonoidWithZero M\u2080] {f : \u03b9 \u2192 M\u2080} {s : Finset \u03b9} [Nontrivial M\u2080]\n  [NoZeroDivisors M\u2080], (\u220f x \u2208 s, f x \u2260 0) = \u2200 a \u2208 s, f a \u2260 0"
     },
     {
       "axioms": [
@@ -1630,7 +1630,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "GRWTSK.Spectral.FreeIDS.freeNormalizedCount_tendsto",
-      "type": "∀ (E : ℝ), Filter.Tendsto (fun N => freeNormalizedCount N E) Filter.atTop (nhds (GRWTSK.Spectral.FreeIDS.freeIDS E))"
+      "type": "\u2200 (E : \u211d), Filter.Tendsto (fun N => freeNormalizedCount N E) Filter.atTop (nhds (GRWTSK.Spectral.FreeIDS.freeIDS E))"
     },
     {
       "axioms": [
@@ -1641,7 +1641,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "GRWTSK.Spectral.FreeIDS.freeIDS_inverse_right",
-      "type": "∀ {label : ℝ},\n  0 < label →\n    label < 1 → ∀ (E : ℝ), label ≤ GRWTSK.Spectral.FreeIDS.freeIDS E → GRWTSK.Spectral.FreeIDS.freeEnergy label ≤ E"
+      "type": "\u2200 {label : \u211d},\n  0 < label \u2192\n    label < 1 \u2192 \u2200 (E : \u211d), label \u2264 GRWTSK.Spectral.FreeIDS.freeIDS E \u2192 GRWTSK.Spectral.FreeIDS.freeEnergy label \u2264 E"
     },
     {
       "axioms": [
@@ -1652,7 +1652,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "GRWTSK.Spectral.FreeIDS.gap_width_le_abs_coupling",
-      "type": "∀ (α V ξ : ℝ) (origin : ℤ) {S : Set ℝ} {ids : ℝ → ℝ} {label a b : ℝ},\n  0 < label →\n    label < 1 →\n      (∀ (E : ℝ), Filter.Tendsto (fun N => sturmianNormalizedCount N α V ξ origin E) Filter.atTop (nhds (ids E))) →\n        OpenLabelGap S ids label a b → 0 < b - a ∧ b - a ≤ |V|"
+      "type": "\u2200 (\u03b1 V \u03be : \u211d) (origin : \u2124) {S : Set \u211d} {ids : \u211d \u2192 \u211d} {label a b : \u211d},\n  0 < label \u2192\n    label < 1 \u2192\n      (\u2200 (E : \u211d), Filter.Tendsto (fun N => sturmianNormalizedCount N \u03b1 V \u03be origin E) Filter.atTop (nhds (ids E))) \u2192\n        OpenLabelGap S ids label a b \u2192 0 < b - a \u2227 b - a \u2264 |V|"
     },
     {
       "axioms": [
@@ -1663,7 +1663,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "GRWTSK.Spectral.FreeIDS.no_internal_free_gap",
-      "type": "∀ {S : Set ℝ} {label a b : ℝ}, 0 < label → label < 1 → ¬OpenLabelGap S GRWTSK.Spectral.FreeIDS.freeIDS label a b"
+      "type": "\u2200 {S : Set \u211d} {label a b : \u211d}, 0 < label \u2192 label < 1 \u2192 \u00acOpenLabelGap S GRWTSK.Spectral.FreeIDS.freeIDS label a b"
     },
     {
       "axioms": [
@@ -1674,7 +1674,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "GRWTSK.Spectral.FreeIDS.freeCount_eq_ceil._simp_1_1",
-      "type": "∀ {α : Type u_1} {p : α → Prop} [inst : DecidablePred p] {s : Finset α} {a : α}, (a ∈ Finset.filter p s) = (a ∈ s ∧ p a)"
+      "type": "\u2200 {\u03b1 : Type u_1} {p : \u03b1 \u2192 Prop} [inst : DecidablePred p] {s : Finset \u03b1} {a : \u03b1}, (a \u2208 Finset.filter p s) = (a \u2208 s \u2227 p a)"
     },
     {
       "axioms": [
@@ -1685,7 +1685,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "GRWTSK.Spectral.FreeIDS.angleFraction.eq_1",
-      "type": "∀ (E : ℝ), GRWTSK.Spectral.FreeIDS.angleFraction E = Real.arccos (E / 2) / Real.pi"
+      "type": "\u2200 (E : \u211d), GRWTSK.Spectral.FreeIDS.angleFraction E = Real.arccos (E / 2) / Real.pi"
     },
     {
       "axioms": [
@@ -1696,7 +1696,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "GRWTSK.Spectral.FreeIDS.freeIDS_inverse_left",
-      "type": "∀ {label : ℝ},\n  0 < label →\n    label < 1 → ∀ (E : ℝ), GRWTSK.Spectral.FreeIDS.freeIDS E ≤ label → E ≤ GRWTSK.Spectral.FreeIDS.freeEnergy label"
+      "type": "\u2200 {label : \u211d},\n  0 < label \u2192\n    label < 1 \u2192 \u2200 (E : \u211d), GRWTSK.Spectral.FreeIDS.freeIDS E \u2264 label \u2192 E \u2264 GRWTSK.Spectral.FreeIDS.freeEnergy label"
     },
     {
       "axioms": [
@@ -1707,7 +1707,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "GRWTSK.Spectral.FreeIDS.freeCount_eq_ceil._proof_1_5",
-      "type": "∀ (N : ℕ) (E : ℝ) (k : Fin N),\n  ¬(¬⌈GRWTSK.Spectral.FreeIDS.cutoff N E⌉₊ ≤ ↑k + 1 ↔ ↑k < ⌈GRWTSK.Spectral.FreeIDS.cutoff N E⌉₊ - 1) → False"
+      "type": "\u2200 (N : \u2115) (E : \u211d) (k : Fin N),\n  \u00ac(\u00ac\u2308GRWTSK.Spectral.FreeIDS.cutoff N E\u2309\u208a \u2264 \u2191k + 1 \u2194 \u2191k < \u2308GRWTSK.Spectral.FreeIDS.cutoff N E\u2309\u208a - 1) \u2192 False"
     },
     {
       "axioms": [
@@ -1716,7 +1716,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "GRWTSK.Spectral.FreeIDS.normalized_count_bounds._simp_1_5",
-      "type": "∀ {α : Type u_2} [inst : Zero α] [inst_1 : OfNat α 4] [NeZero 4], (4 = 0) = False"
+      "type": "\u2200 {\u03b1 : Type u_2} [inst : Zero \u03b1] [inst_1 : OfNat \u03b1 4] [NeZero 4], (4 = 0) = False"
     },
     {
       "axioms": [
@@ -1725,7 +1725,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "GRWTSK.Spectral.FreeIDS.normalized_count_bounds._simp_1_3",
-      "type": "∀ {α : Type u_2} [inst : Zero α] [inst_1 : OfNat α 2] [NeZero 2], (2 = 0) = False"
+      "type": "\u2200 {\u03b1 : Type u_2} [inst : Zero \u03b1] [inst_1 : OfNat \u03b1 2] [NeZero 2], (2 = 0) = False"
     },
     {
       "axioms": [
@@ -1747,7 +1747,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "GRWTSK.Spectral.FreeIDS.normalized_count_bounds._simp_1_8",
-      "type": "∀ {G₀ : Type u_3} [inst : GroupWithZero G₀] {a : G₀} (n : ℤ), a ≠ 0 → (a ^ n = 0) = False"
+      "type": "\u2200 {G\u2080 : Type u_3} [inst : GroupWithZero G\u2080] {a : G\u2080} (n : \u2124), a \u2260 0 \u2192 (a ^ n = 0) = False"
     },
     {
       "axioms": [
@@ -1756,7 +1756,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "GRWTSK.Spectral.FreeIDS.normalized_count_bounds._simp_1_9",
-      "type": "∀ {R : Type u_1} [inst : AddMonoidWithOne R] [CharZero R] (n : ℕ), (↑n + 1 = 0) = False"
+      "type": "\u2200 {R : Type u_1} [inst : AddMonoidWithOne R] [CharZero R] (n : \u2115), (\u2191n + 1 = 0) = False"
     },
     {
       "axioms": [
@@ -1767,7 +1767,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "GRWTSK.Spectral.FreeIDS.freeCount_eq_ceil._simp_1_3",
-      "type": "∀ (N : ℕ) (k : Fin N) (E : ℝ),\n  (GRWTSK.Spectral.FreeDirichletSpectrum.eigenvalue N k ≤ E) = (GRWTSK.Spectral.FreeIDS.cutoff N E ≤ ↑↑k + 1)"
+      "type": "\u2200 (N : \u2115) (k : Fin N) (E : \u211d),\n  (GRWTSK.Spectral.FreeDirichletSpectrum.eigenvalue N k \u2264 E) = (GRWTSK.Spectral.FreeIDS.cutoff N E \u2264 \u2191\u2191k + 1)"
     },
     {
       "axioms": [
@@ -1778,7 +1778,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "GRWTSK.Spectral.FreeIDS.eigenvalue_le_iff_cutoff",
-      "type": "∀ (N : ℕ) (k : Fin N) (E : ℝ),\n  GRWTSK.Spectral.FreeDirichletSpectrum.eigenvalue N k ≤ E ↔ GRWTSK.Spectral.FreeIDS.cutoff N E ≤ ↑↑k + 1"
+      "type": "\u2200 (N : \u2115) (k : Fin N) (E : \u211d),\n  GRWTSK.Spectral.FreeDirichletSpectrum.eigenvalue N k \u2264 E \u2194 GRWTSK.Spectral.FreeIDS.cutoff N E \u2264 \u2191\u2191k + 1"
     },
     {
       "axioms": [
@@ -1789,7 +1789,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "GRWTSK.Spectral.FreeIDS.freeCount_eq_ceil",
-      "type": "∀ (N : ℕ) (E : ℝ), freeCount N E = N - (⌈GRWTSK.Spectral.FreeIDS.cutoff N E⌉₊ - 1)"
+      "type": "\u2200 (N : \u2115) (E : \u211d), freeCount N E = N - (\u2308GRWTSK.Spectral.FreeIDS.cutoff N E\u2309\u208a - 1)"
     },
     {
       "axioms": [
@@ -1800,7 +1800,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "GRWTSK.Spectral.FreeIDS.cutoff.eq_1",
-      "type": "∀ (N : ℕ) (E : ℝ), GRWTSK.Spectral.FreeIDS.cutoff N E = (↑N + 1) * GRWTSK.Spectral.FreeIDS.angleFraction E"
+      "type": "\u2200 (N : \u2115) (E : \u211d), GRWTSK.Spectral.FreeIDS.cutoff N E = (\u2191N + 1) * GRWTSK.Spectral.FreeIDS.angleFraction E"
     },
     {
       "axioms": [
@@ -1811,7 +1811,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "GRWTSK.Spectral.FreeIDS.freeCount_eq_ceil._proof_1_4",
-      "type": "∀ (N : ℕ) (E : ℝ),\n  ⌈GRWTSK.Spectral.FreeIDS.cutoff N E⌉₊ ≤ N + 1 → ¬⌈GRWTSK.Spectral.FreeIDS.cutoff N E⌉₊ - 1 ≤ N → False"
+      "type": "\u2200 (N : \u2115) (E : \u211d),\n  \u2308GRWTSK.Spectral.FreeIDS.cutoff N E\u2309\u208a \u2264 N + 1 \u2192 \u00ac\u2308GRWTSK.Spectral.FreeIDS.cutoff N E\u2309\u208a - 1 \u2264 N \u2192 False"
     },
     {
       "axioms": [
@@ -1822,7 +1822,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "GRWTSK.Spectral.FreeIDS.freeIDS_freeEnergy",
-      "type": "∀ {label : ℝ},\n  0 ≤ label → label ≤ 1 → GRWTSK.Spectral.FreeIDS.freeIDS (GRWTSK.Spectral.FreeIDS.freeEnergy label) = label"
+      "type": "\u2200 {label : \u211d},\n  0 \u2264 label \u2192 label \u2264 1 \u2192 GRWTSK.Spectral.FreeIDS.freeIDS (GRWTSK.Spectral.FreeIDS.freeEnergy label) = label"
     },
     {
       "axioms": [
@@ -1842,7 +1842,7 @@
       "kind": "definition",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "GRWTSK.Spectral.FreeIDS.angleFraction",
-      "type": "ℝ → ℝ"
+      "type": "\u211d \u2192 \u211d"
     },
     {
       "axioms": [
@@ -1853,7 +1853,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "GRWTSK.Spectral.FreeIDS.normalized_count_bounds._proof_1_1",
-      "type": "∀ (N : ℕ),\n  0 < N →\n    ∀ (E : ℝ), ⌈GRWTSK.Spectral.FreeIDS.cutoff N E⌉₊ ≤ N + 1 → ¬⌈GRWTSK.Spectral.FreeIDS.cutoff N E⌉₊ - 1 ≤ N → False"
+      "type": "\u2200 (N : \u2115),\n  0 < N \u2192\n    \u2200 (E : \u211d), \u2308GRWTSK.Spectral.FreeIDS.cutoff N E\u2309\u208a \u2264 N + 1 \u2192 \u00ac\u2308GRWTSK.Spectral.FreeIDS.cutoff N E\u2309\u208a - 1 \u2264 N \u2192 False"
     },
     {
       "axioms": [
@@ -1864,7 +1864,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "GRWTSK.Spectral.FreeIDS.eigenvalue_le_iff_angle",
-      "type": "∀ (N : ℕ) (k : Fin N) (E : ℝ),\n  GRWTSK.Spectral.FreeDirichletSpectrum.eigenvalue N k ≤ E ↔\n    Real.arccos (E / 2) ≤ GRWTSK.Spectral.FreeDirichletSpectrum.angle N k"
+      "type": "\u2200 (N : \u2115) (k : Fin N) (E : \u211d),\n  GRWTSK.Spectral.FreeDirichletSpectrum.eigenvalue N k \u2264 E \u2194\n    Real.arccos (E / 2) \u2264 GRWTSK.Spectral.FreeDirichletSpectrum.angle N k"
     },
     {
       "axioms": [
@@ -1875,7 +1875,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "_private.GRWTSK.Spectral.FreeIDS.0.GRWTSK.Spectral.FreeIDS.cutoff_rounding_bounds",
-      "type": "∀ (N : ℕ) (E : ℝ),\n  GRWTSK.Spectral.FreeIDS.cutoff N E - 1 ≤ ↑(⌈GRWTSK.Spectral.FreeIDS.cutoff N E⌉₊ - 1) ∧\n    ↑(⌈GRWTSK.Spectral.FreeIDS.cutoff N E⌉₊ - 1) ≤ GRWTSK.Spectral.FreeIDS.cutoff N E"
+      "type": "\u2200 (N : \u2115) (E : \u211d),\n  GRWTSK.Spectral.FreeIDS.cutoff N E - 1 \u2264 \u2191(\u2308GRWTSK.Spectral.FreeIDS.cutoff N E\u2309\u208a - 1) \u2227\n    \u2191(\u2308GRWTSK.Spectral.FreeIDS.cutoff N E\u2309\u208a - 1) \u2264 GRWTSK.Spectral.FreeIDS.cutoff N E"
     },
     {
       "axioms": [
@@ -1886,7 +1886,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "GRWTSK.Spectral.SturmianFiniteVolume.sturmianNormalizedCount.eq_1",
-      "type": "∀ (N : ℕ) (α V ξ : ℝ) (origin : ℤ) (E : ℝ),\n  sturmianNormalizedCount N α V ξ origin E = ↑(sturmianCount N α V ξ origin E) / ↑N"
+      "type": "\u2200 (N : \u2115) (\u03b1 V \u03be : \u211d) (origin : \u2124) (E : \u211d),\n  sturmianNormalizedCount N \u03b1 V \u03be origin E = \u2191(sturmianCount N \u03b1 V \u03be origin E) / \u2191N"
     },
     {
       "axioms": [
@@ -1897,7 +1897,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "GRWTSK.Spectral.SturmianFiniteVolume.sturmianCount.eq_1",
-      "type": "∀ (N : ℕ) (α V ξ : ℝ) (origin : ℤ) (E : ℝ),\n  sturmianCount N α V ξ origin E = GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount ⋯ E"
+      "type": "\u2200 (N : \u2115) (\u03b1 V \u03be : \u211d) (origin : \u2124) (E : \u211d),\n  sturmianCount N \u03b1 V \u03be origin E = GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount \u22ef E"
     },
     {
       "axioms": [
@@ -1908,7 +1908,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "GRWTSK.Spectral.FreeIDS.freeIDS.eq_1",
-      "type": "∀ (E : ℝ), GRWTSK.Spectral.FreeIDS.freeIDS E = 1 - GRWTSK.Spectral.FreeIDS.angleFraction E"
+      "type": "\u2200 (E : \u211d), GRWTSK.Spectral.FreeIDS.freeIDS E = 1 - GRWTSK.Spectral.FreeIDS.angleFraction E"
     },
     {
       "axioms": [
@@ -1919,7 +1919,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "GRWTSK.Spectral.FreeIDS.cutoff_bounds",
-      "type": "∀ (N : ℕ) (E : ℝ), 0 ≤ GRWTSK.Spectral.FreeIDS.cutoff N E ∧ GRWTSK.Spectral.FreeIDS.cutoff N E ≤ ↑N + 1"
+      "type": "\u2200 (N : \u2115) (E : \u211d), 0 \u2264 GRWTSK.Spectral.FreeIDS.cutoff N E \u2227 GRWTSK.Spectral.FreeIDS.cutoff N E \u2264 \u2191N + 1"
     },
     {
       "axioms": [
@@ -1930,7 +1930,7 @@
       "kind": "definition",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "GRWTSK.Spectral.FreeIDS.cutoff",
-      "type": "ℕ → ℝ → ℝ"
+      "type": "\u2115 \u2192 \u211d \u2192 \u211d"
     },
     {
       "axioms": [
@@ -1941,7 +1941,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "GRWTSK.Spectral.FreeIDS.normalized_count_bounds",
-      "type": "∀ (N : ℕ),\n  0 < N →\n    ∀ (E : ℝ),\n      GRWTSK.Spectral.FreeIDS.freeIDS E - 1 / ↑N ≤ freeNormalizedCount N E ∧\n        freeNormalizedCount N E ≤ GRWTSK.Spectral.FreeIDS.freeIDS E + 1 / ↑N"
+      "type": "\u2200 (N : \u2115),\n  0 < N \u2192\n    \u2200 (E : \u211d),\n      GRWTSK.Spectral.FreeIDS.freeIDS E - 1 / \u2191N \u2264 freeNormalizedCount N E \u2227\n        freeNormalizedCount N E \u2264 GRWTSK.Spectral.FreeIDS.freeIDS E + 1 / \u2191N"
     },
     {
       "axioms": [
@@ -1952,7 +1952,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "GRWTSK.Spectral.FreeIDS.freeIDS_of_le_neg_two",
-      "type": "∀ {E : ℝ}, E ≤ -2 → GRWTSK.Spectral.FreeIDS.freeIDS E = 0"
+      "type": "\u2200 {E : \u211d}, E \u2264 -2 \u2192 GRWTSK.Spectral.FreeIDS.freeIDS E = 0"
     },
     {
       "axioms": [
@@ -1961,7 +1961,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "GRWTSK.Spectral.FreeIDS.normalized_count_bounds._simp_1_4",
-      "type": "∀ {α : Type u_2} [inst : Zero α] [inst_1 : OfNat α 3] [NeZero 3], (3 = 0) = False"
+      "type": "\u2200 {\u03b1 : Type u_2} [inst : Zero \u03b1] [inst_1 : OfNat \u03b1 3] [NeZero 3], (3 = 0) = False"
     },
     {
       "axioms": [
@@ -1970,7 +1970,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "GRWTSK.Spectral.FreeIDS.normalized_count_bounds._simp_1_7",
-      "type": "∀ {M₀ : Type u_1} [inst : MonoidWithZero M₀] {a : M₀} [IsReduced M₀] (n : ℕ), a ≠ 0 → (a ^ n = 0) = False"
+      "type": "\u2200 {M\u2080 : Type u_1} [inst : MonoidWithZero M\u2080] {a : M\u2080} [IsReduced M\u2080] (n : \u2115), a \u2260 0 \u2192 (a ^ n = 0) = False"
     },
     {
       "axioms": [
@@ -1979,7 +1979,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "GRWTSK.Spectral.FreeIDS.normalized_count_bounds._simp_1_6",
-      "type": "∀ {M₀ : Type u_1} [inst : Mul M₀] [inst_1 : Zero M₀] [NoZeroDivisors M₀] {a b : M₀}, a ≠ 0 → b ≠ 0 → (a * b = 0) = False"
+      "type": "\u2200 {M\u2080 : Type u_1} [inst : Mul M\u2080] [inst_1 : Zero M\u2080] [NoZeroDivisors M\u2080] {a b : M\u2080}, a \u2260 0 \u2192 b \u2260 0 \u2192 (a * b = 0) = False"
     },
     {
       "axioms": [
@@ -1990,7 +1990,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "GRWTSK.Spectral.FreeIDS.angleFraction_bounds",
-      "type": "∀ (E : ℝ), 0 ≤ GRWTSK.Spectral.FreeIDS.angleFraction E ∧ GRWTSK.Spectral.FreeIDS.angleFraction E ≤ 1"
+      "type": "\u2200 (E : \u211d), 0 \u2264 GRWTSK.Spectral.FreeIDS.angleFraction E \u2227 GRWTSK.Spectral.FreeIDS.angleFraction E \u2264 1"
     },
     {
       "axioms": [
@@ -2001,7 +2001,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "GRWTSK.Spectral.FreeIDS.cutoff_ceil_le",
-      "type": "∀ (N : ℕ) (E : ℝ), ⌈GRWTSK.Spectral.FreeIDS.cutoff N E⌉₊ ≤ N + 1"
+      "type": "\u2200 (N : \u2115) (E : \u211d), \u2308GRWTSK.Spectral.FreeIDS.cutoff N E\u2309\u208a \u2264 N + 1"
     },
     {
       "axioms": [
@@ -2012,7 +2012,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "GRWTSK.Spectral.FreeIDS.freeEnergy_mem_Ioo",
-      "type": "∀ {label : ℝ}, 0 < label → label < 1 → GRWTSK.Spectral.FreeIDS.freeEnergy label ∈ Set.Ioo (-2) 2"
+      "type": "\u2200 {label : \u211d}, 0 < label \u2192 label < 1 \u2192 GRWTSK.Spectral.FreeIDS.freeEnergy label \u2208 Set.Ioo (-2) 2"
     },
     {
       "axioms": [
@@ -2023,7 +2023,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "GRWTSK.Spectral.FreeIDS.freeCount_eq_ceil._simp_1_2",
-      "type": "∀ {α : Type u_1} [inst : Fintype α] (x : α), (x ∈ Finset.univ) = True"
+      "type": "\u2200 {\u03b1 : Type u_1} [inst : Fintype \u03b1] (x : \u03b1), (x \u2208 Finset.univ) = True"
     },
     {
       "axioms": [
@@ -2034,7 +2034,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "GRWTSK.Spectral.SturmianFiniteVolume.freeNormalizedCount.eq_1",
-      "type": "∀ (N : ℕ) (E : ℝ), freeNormalizedCount N E = ↑(freeCount N E) / ↑N"
+      "type": "\u2200 (N : \u2115) (E : \u211d), freeNormalizedCount N E = \u2191(freeCount N E) / \u2191N"
     },
     {
       "axioms": [
@@ -2045,7 +2045,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "GRWTSK.Spectral.FreeIDS.sturmianNormalizedCount_zero_tendsto",
-      "type": "∀ (α ξ : ℝ) (origin : ℤ) (E : ℝ),\n  Filter.Tendsto (fun N => sturmianNormalizedCount N α 0 ξ origin E) Filter.atTop\n    (nhds (GRWTSK.Spectral.FreeIDS.freeIDS E))"
+      "type": "\u2200 (\u03b1 \u03be : \u211d) (origin : \u2124) (E : \u211d),\n  Filter.Tendsto (fun N => sturmianNormalizedCount N \u03b1 0 \u03be origin E) Filter.atTop\n    (nhds (GRWTSK.Spectral.FreeIDS.freeIDS E))"
     },
     {
       "axioms": [
@@ -2056,7 +2056,7 @@
       "kind": "definition",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "GRWTSK.Spectral.FreeIDS.freeEnergy",
-      "type": "ℝ → ℝ"
+      "type": "\u211d \u2192 \u211d"
     },
     {
       "axioms": [
@@ -2067,7 +2067,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "GRWTSK.Spectral.FreeIDS.freeIDS_of_two_le",
-      "type": "∀ {E : ℝ}, 2 ≤ E → GRWTSK.Spectral.FreeIDS.freeIDS E = 1"
+      "type": "\u2200 {E : \u211d}, 2 \u2264 E \u2192 GRWTSK.Spectral.FreeIDS.freeIDS E = 1"
     },
     {
       "axioms": [
@@ -2078,7 +2078,7 @@
       "kind": "definition",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "GRWTSK.Spectral.FreeIDS.freeIDS",
-      "type": "ℝ → ℝ"
+      "type": "\u211d \u2192 \u211d"
     },
     {
       "axioms": [
@@ -2088,7 +2088,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "GRWTSK.Spectral.FreeIDS.freeNormalizedCount_tendsto._proof_1_1",
-      "type": "∀ (N : ℕ), 1 ≤ N → ¬0 < N → False"
+      "type": "\u2200 (N : \u2115), 1 \u2264 N \u2192 \u00ac0 < N \u2192 False"
     },
     {
       "axioms": [
@@ -2099,7 +2099,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "_private.GRWTSK.Spectral.FreeIDS.0.GRWTSK.Spectral.FreeIDS.card_small_indices",
-      "type": "∀ (N q : ℕ), q ≤ N → {k | ↑k < q}.card = q"
+      "type": "\u2200 (N q : \u2115), q \u2264 N \u2192 {k | \u2191k < q}.card = q"
     },
     {
       "axioms": [
@@ -2121,7 +2121,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "GRWTSK.Spectral.FreeIDS.sturmianNormalizedCount_zero",
-      "type": "∀ (N : ℕ) (α ξ : ℝ) (origin : ℤ) (E : ℝ), sturmianNormalizedCount N α 0 ξ origin E = freeNormalizedCount N E"
+      "type": "\u2200 (N : \u2115) (\u03b1 \u03be : \u211d) (origin : \u2124) (E : \u211d), sturmianNormalizedCount N \u03b1 0 \u03be origin E = freeNormalizedCount N E"
     },
     {
       "axioms": [
@@ -2132,7 +2132,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "GRWTSK.Spectral.FreeIDS.freeCount_eq_ceil._proof_1_6",
-      "type": "∀ (N : ℕ) (E : ℝ),\n  ⌈GRWTSK.Spectral.FreeIDS.cutoff N E⌉₊ - 1 ≤ N →\n    {k | ⌈GRWTSK.Spectral.FreeIDS.cutoff N E⌉₊ ≤ ↑k + 1}.card + (⌈GRWTSK.Spectral.FreeIDS.cutoff N E⌉₊ - 1) = N →\n      ¬{k | ⌈GRWTSK.Spectral.FreeIDS.cutoff N E⌉₊ ≤ ↑k + 1}.card = N - (⌈GRWTSK.Spectral.FreeIDS.cutoff N E⌉₊ - 1) →\n        False"
+      "type": "\u2200 (N : \u2115) (E : \u211d),\n  \u2308GRWTSK.Spectral.FreeIDS.cutoff N E\u2309\u208a - 1 \u2264 N \u2192\n    {k | \u2308GRWTSK.Spectral.FreeIDS.cutoff N E\u2309\u208a \u2264 \u2191k + 1}.card + (\u2308GRWTSK.Spectral.FreeIDS.cutoff N E\u2309\u208a - 1) = N \u2192\n      \u00ac{k | \u2308GRWTSK.Spectral.FreeIDS.cutoff N E\u2309\u208a \u2264 \u2191k + 1}.card = N - (\u2308GRWTSK.Spectral.FreeIDS.cutoff N E\u2309\u208a - 1) \u2192\n        False"
     },
     {
       "axioms": [
@@ -2143,7 +2143,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.FreeIDS",
       "name": "_private.GRWTSK.Spectral.FreeIDS.0.GRWTSK.Spectral.FreeIDS.cutoff_rounding_bounds._proof_1_1",
-      "type": "∀ (N : ℕ) (E : ℝ), ¬⌈GRWTSK.Spectral.FreeIDS.cutoff N E⌉₊ = 0 → ¬1 ≤ ⌈GRWTSK.Spectral.FreeIDS.cutoff N E⌉₊ → False"
+      "type": "\u2200 (N : \u2115) (E : \u211d), \u00ac\u2308GRWTSK.Spectral.FreeIDS.cutoff N E\u2309\u208a = 0 \u2192 \u00ac1 \u2264 \u2308GRWTSK.Spectral.FreeIDS.cutoff N E\u2309\u208a \u2192 False"
     },
     {
       "axioms": [
@@ -2154,7 +2154,7 @@
       "kind": "definition",
       "module": "GRWTSK.Spectral.DirichletCut",
       "name": "GRWTSK.Spectral.DirichletCut.joiningEdge",
-      "type": "(N : ℕ) → ℕ → Matrix (Fin N) (Fin N) ℝ"
+      "type": "(N : \u2115) \u2192 \u2115 \u2192 Matrix (Fin N) (Fin N) \u211d"
     },
     {
       "axioms": [
@@ -2163,7 +2163,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.DirichletCut",
       "name": "GRWTSK.Spectral.DirichletCut.joiningEdge_isHermitian._simp_1_2",
-      "type": "∀ {a b : Prop}, (a ∧ b) = (b ∧ a)"
+      "type": "\u2200 {a b : Prop}, (a \u2227 b) = (b \u2227 a)"
     },
     {
       "axioms": [
@@ -2174,7 +2174,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.DirichletCut",
       "name": "GRWTSK.Spectral.DirichletCut.boundaryFunctional.eq_1",
-      "type": "∀ (N c : ℕ),\n  GRWTSK.Spectral.DirichletCut.boundaryFunctional N c =\n    { toFun := fun v => ∑ i, if ↑i = c then v.ofLp i else 0, map_add' := ⋯, map_smul' := ⋯ }"
+      "type": "\u2200 (N c : \u2115),\n  GRWTSK.Spectral.DirichletCut.boundaryFunctional N c =\n    { toFun := fun v => \u2211 i, if \u2191i = c then v.ofLp i else 0, map_add' := \u22ef, map_smul' := \u22ef }"
     },
     {
       "axioms": [
@@ -2184,7 +2184,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.DirichletCut",
       "name": "GRWTSK.Spectral.DirichletCut.cutHamiltonian_reindex._proof_1_4",
-      "type": "∀ (N : ℕ) (i j : Fin N), ↑j < N → N - 1 + 1 = N → ↑j = N - 1 + 1 → False"
+      "type": "\u2200 (N : \u2115) (i j : Fin N), \u2191j < N \u2192 N - 1 + 1 = N \u2192 \u2191j = N - 1 + 1 \u2192 False"
     },
     {
       "axioms": [
@@ -2195,7 +2195,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.DirichletCut",
       "name": "GRWTSK.Spectral.DirichletCut.boundarySynthesis.eq_1",
-      "type": "∀ (N c : ℕ),\n  GRWTSK.Spectral.DirichletCut.boundarySynthesis N c =\n    { toFun := fun x => WithLp.toLp 2 fun i => (if ↑i = c then x.2 else 0) + if ↑i = c + 1 then x.1 else 0,\n      map_add' := ⋯, map_smul' := ⋯ }"
+      "type": "\u2200 (N c : \u2115),\n  GRWTSK.Spectral.DirichletCut.boundarySynthesis N c =\n    { toFun := fun x => WithLp.toLp 2 fun i => (if \u2191i = c then x.2 else 0) + if \u2191i = c + 1 then x.1 else 0,\n      map_add' := \u22ef, map_smul' := \u22ef }"
     },
     {
       "axioms": [
@@ -2206,7 +2206,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.DirichletCut",
       "name": "GRWTSK.Spectral.DirichletCut.cutHamiltonian_reindex._proof_1_10",
-      "type": "∀ (N M : ℕ),\n  0 < N →\n    ∀ (i : Fin M) (j : Fin N),\n      N + ↑i + 1 = ↑j ∨ ↑j + 1 = N + ↑i →\n        (N + ↑i = N - 1 → ¬↑j = N - 1 + 1) → (N + ↑i = N - 1 + 1 → ¬↑j = N - 1) → False"
+      "type": "\u2200 (N M : \u2115),\n  0 < N \u2192\n    \u2200 (i : Fin M) (j : Fin N),\n      N + \u2191i + 1 = \u2191j \u2228 \u2191j + 1 = N + \u2191i \u2192\n        (N + \u2191i = N - 1 \u2192 \u00ac\u2191j = N - 1 + 1) \u2192 (N + \u2191i = N - 1 + 1 \u2192 \u00ac\u2191j = N - 1) \u2192 False"
     },
     {
       "axioms": [
@@ -2216,7 +2216,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.DirichletCut",
       "name": "GRWTSK.Spectral.DirichletCut.cutHamiltonian_reindex._proof_1_12",
-      "type": "∀ (N M : ℕ), 0 < N → ∀ (i j : Fin M), N + ↑i = N - 1 → False"
+      "type": "\u2200 (N M : \u2115), 0 < N \u2192 \u2200 (i j : Fin M), N + \u2191i = N - 1 \u2192 False"
     },
     {
       "axioms": [
@@ -2227,7 +2227,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.DirichletCut",
       "name": "GRWTSK.Spectral.DirichletCut.joiningEdge_factor",
-      "type": "∀ (N c : ℕ),\n  Matrix.toEuclideanLin (GRWTSK.Spectral.DirichletCut.joiningEdge N c) =\n    GRWTSK.Spectral.DirichletCut.boundarySynthesis N c ∘ₗ GRWTSK.Spectral.DirichletCut.boundaryCoordinates N c"
+      "type": "\u2200 (N c : \u2115),\n  Matrix.toEuclideanLin (GRWTSK.Spectral.DirichletCut.joiningEdge N c) =\n    GRWTSK.Spectral.DirichletCut.boundarySynthesis N c \u2218\u2097 GRWTSK.Spectral.DirichletCut.boundaryCoordinates N c"
     },
     {
       "axioms": [
@@ -2237,7 +2237,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.DirichletCut",
       "name": "GRWTSK.Spectral.DirichletCut.cutHamiltonian_reindex._proof_1_9",
-      "type": "∀ (N M : ℕ) (i : Fin M) (j : Fin N), ↑j < N → N + ↑i = ↑j → False"
+      "type": "\u2200 (N M : \u2115) (i : Fin M) (j : Fin N), \u2191j < N \u2192 N + \u2191i = \u2191j \u2192 False"
     },
     {
       "axioms": [
@@ -2248,7 +2248,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.DirichletCut",
       "name": "GRWTSK.Spectral.DirichletCut.joiningEdge.eq_1",
-      "type": "∀ (N c : ℕ) (i j : Fin N),\n  GRWTSK.Spectral.DirichletCut.joiningEdge N c i j =\n    (if ↑i = c ∧ ↑j = c + 1 then 1 else 0) + if ↑i = c + 1 ∧ ↑j = c then 1 else 0"
+      "type": "\u2200 (N c : \u2115) (i j : Fin N),\n  GRWTSK.Spectral.DirichletCut.joiningEdge N c i j =\n    (if \u2191i = c \u2227 \u2191j = c + 1 then 1 else 0) + if \u2191i = c + 1 \u2227 \u2191j = c then 1 else 0"
     },
     {
       "axioms": [
@@ -2258,7 +2258,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.DirichletCut",
       "name": "GRWTSK.Spectral.DirichletCut.cutHamiltonian_reindex._proof_1_11",
-      "type": "∀ (N M : ℕ), 0 < N → ∀ (i j : Fin M), N + ↑j = N - 1 → False"
+      "type": "\u2200 (N M : \u2115), 0 < N \u2192 \u2200 (i j : Fin M), N + \u2191j = N - 1 \u2192 False"
     },
     {
       "axioms": [
@@ -2269,7 +2269,7 @@
       "kind": "definition",
       "module": "GRWTSK.Spectral.DirichletCut",
       "name": "GRWTSK.Spectral.DirichletCut.boundarySynthesis",
-      "type": "(N : ℕ) → ℕ → ℝ × ℝ →ₗ[ℝ] EuclideanSpace ℝ (Fin N)"
+      "type": "(N : \u2115) \u2192 \u2115 \u2192 \u211d \u00d7 \u211d \u2192\u2097[\u211d] EuclideanSpace \u211d (Fin N)"
     },
     {
       "axioms": [
@@ -2280,7 +2280,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.DirichletCut",
       "name": "GRWTSK.Spectral.DirichletCut.cutCount_eq_sum",
-      "type": "∀ (N M : ℕ),\n  0 < N →\n    ∀ (α V ξ : ℝ) (origin : ℤ) (E : ℝ),\n      GRWTSK.Spectral.DirichletCut.cutCount (N + M) α V ξ origin (N - 1) E =\n        sturmianCount N α V ξ origin E + sturmianCount M α V ξ (origin + ↑N) E"
+      "type": "\u2200 (N M : \u2115),\n  0 < N \u2192\n    \u2200 (\u03b1 V \u03be : \u211d) (origin : \u2124) (E : \u211d),\n      GRWTSK.Spectral.DirichletCut.cutCount (N + M) \u03b1 V \u03be origin (N - 1) E =\n        sturmianCount N \u03b1 V \u03be origin E + sturmianCount M \u03b1 V \u03be (origin + \u2191N) E"
     },
     {
       "axioms": [
@@ -2291,7 +2291,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.DirichletCut",
       "name": "GRWTSK.Spectral.DirichletCut.adjacent_normalized_count_error",
-      "type": "∀ (N M : ℕ),\n  0 < N →\n    ∀ (α V ξ : ℝ) (origin : ℤ) (E : ℝ),\n      |(↑(sturmianCount N α V ξ origin E) + ↑(sturmianCount M α V ξ (origin + ↑N) E)) / ↑(N + M) -\n            sturmianNormalizedCount (N + M) α V ξ origin E| ≤\n        2 / ↑(N + M)"
+      "type": "\u2200 (N M : \u2115),\n  0 < N \u2192\n    \u2200 (\u03b1 V \u03be : \u211d) (origin : \u2124) (E : \u211d),\n      |(\u2191(sturmianCount N \u03b1 V \u03be origin E) + \u2191(sturmianCount M \u03b1 V \u03be (origin + \u2191N) E)) / \u2191(N + M) -\n            sturmianNormalizedCount (N + M) \u03b1 V \u03be origin E| \u2264\n        2 / \u2191(N + M)"
     },
     {
       "axioms": [
@@ -2302,7 +2302,7 @@
       "kind": "definition",
       "module": "GRWTSK.Spectral.DirichletCut",
       "name": "GRWTSK.Spectral.DirichletCut.boundaryCoordinates",
-      "type": "(N : ℕ) → ℕ → EuclideanSpace ℝ (Fin N) →ₗ[ℝ] ℝ × ℝ"
+      "type": "(N : \u2115) \u2192 \u2115 \u2192 EuclideanSpace \u211d (Fin N) \u2192\u2097[\u211d] \u211d \u00d7 \u211d"
     },
     {
       "axioms": [
@@ -2313,7 +2313,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.DirichletCut",
       "name": "GRWTSK.Spectral.DirichletCut.boundaryFunctional._proof_2",
-      "type": "∀ (N c : ℕ) (a : ℝ) (v : EuclideanSpace ℝ (Fin N)),\n  (∑ i, if ↑i = c then (a • v).ofLp i else 0) = (RingHom.id ℝ) a • ∑ i, if ↑i = c then v.ofLp i else 0"
+      "type": "\u2200 (N c : \u2115) (a : \u211d) (v : EuclideanSpace \u211d (Fin N)),\n  (\u2211 i, if \u2191i = c then (a \u2022 v).ofLp i else 0) = (RingHom.id \u211d) a \u2022 \u2211 i, if \u2191i = c then v.ofLp i else 0"
     },
     {
       "axioms": [
@@ -2324,7 +2324,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.DirichletCut",
       "name": "GRWTSK.Spectral.DirichletCut.joiningEdge_mulVec",
-      "type": "∀ (N c : ℕ) (v : Fin N → ℝ) (i : Fin N),\n  (GRWTSK.Spectral.DirichletCut.joiningEdge N c).mulVec v i =\n    (if ↑i = c then ∑ j, if ↑j = c + 1 then v j else 0 else 0) +\n      if ↑i = c + 1 then ∑ j, if ↑j = c then v j else 0 else 0"
+      "type": "\u2200 (N c : \u2115) (v : Fin N \u2192 \u211d) (i : Fin N),\n  (GRWTSK.Spectral.DirichletCut.joiningEdge N c).mulVec v i =\n    (if \u2191i = c then \u2211 j, if \u2191j = c + 1 then v j else 0 else 0) +\n      if \u2191i = c + 1 then \u2211 j, if \u2191j = c then v j else 0 else 0"
     },
     {
       "axioms": [
@@ -2335,7 +2335,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.DirichletCut",
       "name": "GRWTSK.Spectral.DirichletCut.boundaryFunctional._proof_1",
-      "type": "∀ (N c : ℕ) (v w : EuclideanSpace ℝ (Fin N)),\n  (∑ i, if ↑i = c then (v + w).ofLp i else 0) =\n    (∑ i, if ↑i = c then v.ofLp i else 0) + ∑ i, if ↑i = c then w.ofLp i else 0"
+      "type": "\u2200 (N c : \u2115) (v w : EuclideanSpace \u211d (Fin N)),\n  (\u2211 i, if \u2191i = c then (v + w).ofLp i else 0) =\n    (\u2211 i, if \u2191i = c then v.ofLp i else 0) + \u2211 i, if \u2191i = c then w.ofLp i else 0"
     },
     {
       "axioms": [
@@ -2346,7 +2346,7 @@
       "kind": "definition",
       "module": "GRWTSK.Spectral.DirichletCut",
       "name": "GRWTSK.Spectral.DirichletCut.boundaryFunctional",
-      "type": "(N : ℕ) → ℕ → EuclideanSpace ℝ (Fin N) →ₗ[ℝ] ℝ"
+      "type": "(N : \u2115) \u2192 \u2115 \u2192 EuclideanSpace \u211d (Fin N) \u2192\u2097[\u211d] \u211d"
     },
     {
       "axioms": [
@@ -2357,7 +2357,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.DirichletCut",
       "name": "GRWTSK.Spectral.DirichletCut.cut_count_error",
-      "type": "∀ (N : ℕ) (α V ξ : ℝ) (origin : ℤ) (c : ℕ) (E : ℝ),\n  |↑(GRWTSK.Spectral.DirichletCut.cutCount N α V ξ origin c E) - ↑(sturmianCount N α V ξ origin E)| ≤ 2"
+      "type": "\u2200 (N : \u2115) (\u03b1 V \u03be : \u211d) (origin : \u2124) (c : \u2115) (E : \u211d),\n  |\u2191(GRWTSK.Spectral.DirichletCut.cutCount N \u03b1 V \u03be origin c E) - \u2191(sturmianCount N \u03b1 V \u03be origin E)| \u2264 2"
     },
     {
       "axioms": [
@@ -2368,7 +2368,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.DirichletCut",
       "name": "GRWTSK.Spectral.DirichletCut.boundaryCoordinates.eq_1",
-      "type": "∀ (N c : ℕ),\n  GRWTSK.Spectral.DirichletCut.boundaryCoordinates N c =\n    (GRWTSK.Spectral.DirichletCut.boundaryFunctional N c).prod\n      (GRWTSK.Spectral.DirichletCut.boundaryFunctional N (c + 1))"
+      "type": "\u2200 (N c : \u2115),\n  GRWTSK.Spectral.DirichletCut.boundaryCoordinates N c =\n    (GRWTSK.Spectral.DirichletCut.boundaryFunctional N c).prod\n      (GRWTSK.Spectral.DirichletCut.boundaryFunctional N (c + 1))"
     },
     {
       "axioms": [
@@ -2377,7 +2377,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.DirichletCut",
       "name": "GRWTSK.Spectral.DirichletCut.cutHamiltonian_reindex._simp_1_13",
-      "type": "∀ {n : ℕ} (m : ℕ) {i j : Fin n}, (Fin.natAdd m i = Fin.natAdd m j) = (i = j)"
+      "type": "\u2200 {n : \u2115} (m : \u2115) {i j : Fin n}, (Fin.natAdd m i = Fin.natAdd m j) = (i = j)"
     },
     {
       "axioms": [
@@ -2388,7 +2388,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.DirichletCut",
       "name": "GRWTSK.Spectral.DirichletCut.cutHamiltonian_reindex",
-      "type": "∀ (N M : ℕ),\n  0 < N →\n    ∀ (α V ξ : ℝ) (origin : ℤ),\n      (Matrix.reindex finSumFinEquiv.symm finSumFinEquiv.symm)\n          (GRWTSK.Spectral.DirichletCut.cutHamiltonian (N + M) α V ξ origin (N - 1)) =\n        Matrix.fromBlocks (hamiltonian N α V ξ origin) 0 0 (hamiltonian M α V ξ (origin + ↑N))"
+      "type": "\u2200 (N M : \u2115),\n  0 < N \u2192\n    \u2200 (\u03b1 V \u03be : \u211d) (origin : \u2124),\n      (Matrix.reindex finSumFinEquiv.symm finSumFinEquiv.symm)\n          (GRWTSK.Spectral.DirichletCut.cutHamiltonian (N + M) \u03b1 V \u03be origin (N - 1)) =\n        Matrix.fromBlocks (hamiltonian N \u03b1 V \u03be origin) 0 0 (hamiltonian M \u03b1 V \u03be (origin + \u2191N))"
     },
     {
       "axioms": [
@@ -2399,7 +2399,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.DirichletCut",
       "name": "GRWTSK.Spectral.DirichletCut.cutHamiltonian_isHermitian",
-      "type": "∀ (N : ℕ) (α V ξ : ℝ) (origin : ℤ) (c : ℕ), (GRWTSK.Spectral.DirichletCut.cutHamiltonian N α V ξ origin c).IsHermitian"
+      "type": "\u2200 (N : \u2115) (\u03b1 V \u03be : \u211d) (origin : \u2124) (c : \u2115), (GRWTSK.Spectral.DirichletCut.cutHamiltonian N \u03b1 V \u03be origin c).IsHermitian"
     },
     {
       "axioms": [
@@ -2410,7 +2410,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.DirichletCut",
       "name": "GRWTSK.Spectral.DirichletCut.cut_charpoly",
-      "type": "∀ (N M : ℕ),\n  0 < N →\n    ∀ (α V ξ : ℝ) (origin : ℤ),\n      (GRWTSK.Spectral.DirichletCut.cutHamiltonian (N + M) α V ξ origin (N - 1)).charpoly =\n        (hamiltonian N α V ξ origin).charpoly * (hamiltonian M α V ξ (origin + ↑N)).charpoly"
+      "type": "\u2200 (N M : \u2115),\n  0 < N \u2192\n    \u2200 (\u03b1 V \u03be : \u211d) (origin : \u2124),\n      (GRWTSK.Spectral.DirichletCut.cutHamiltonian (N + M) \u03b1 V \u03be origin (N - 1)).charpoly =\n        (hamiltonian N \u03b1 V \u03be origin).charpoly * (hamiltonian M \u03b1 V \u03be (origin + \u2191N)).charpoly"
     },
     {
       "axioms": [
@@ -2420,7 +2420,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.DirichletCut",
       "name": "GRWTSK.Spectral.DirichletCut.cutHamiltonian_reindex._proof_1_7",
-      "type": "∀ (N M : ℕ) (i : Fin N) (j : Fin M), ↑i < N → ↑i = N + ↑j → False"
+      "type": "\u2200 (N M : \u2115) (i : Fin N) (j : Fin M), \u2191i < N \u2192 \u2191i = N + \u2191j \u2192 False"
     },
     {
       "axioms": [
@@ -2431,7 +2431,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.DirichletCut",
       "name": "GRWTSK.Spectral.DirichletCut.joiningEdge_rank_le_two",
-      "type": "∀ (N c : ℕ), Module.finrank ℝ ↥(Matrix.toEuclideanLin (GRWTSK.Spectral.DirichletCut.joiningEdge N c)).range ≤ 2"
+      "type": "\u2200 (N c : \u2115), Module.finrank \u211d \u21a5(Matrix.toEuclideanLin (GRWTSK.Spectral.DirichletCut.joiningEdge N c)).range \u2264 2"
     },
     {
       "axioms": [
@@ -2442,7 +2442,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.DirichletCut",
       "name": "GRWTSK.Spectral.DirichletCut.joiningEdge_isHermitian",
-      "type": "∀ (N c : ℕ), (GRWTSK.Spectral.DirichletCut.joiningEdge N c).IsHermitian"
+      "type": "\u2200 (N c : \u2115), (GRWTSK.Spectral.DirichletCut.joiningEdge N c).IsHermitian"
     },
     {
       "axioms": [
@@ -2453,7 +2453,7 @@
       "kind": "definition",
       "module": "GRWTSK.Spectral.DirichletCut",
       "name": "GRWTSK.Spectral.DirichletCut.cutCount",
-      "type": "ℕ → ℝ → ℝ → ℝ → ℤ → ℕ → ℝ → ℕ"
+      "type": "\u2115 \u2192 \u211d \u2192 \u211d \u2192 \u211d \u2192 \u2124 \u2192 \u2115 \u2192 \u211d \u2192 \u2115"
     },
     {
       "axioms": [
@@ -2464,7 +2464,7 @@
       "kind": "definition",
       "module": "GRWTSK.Spectral.DirichletCut",
       "name": "GRWTSK.Spectral.DirichletCut.cutHamiltonian",
-      "type": "(N : ℕ) → ℝ → ℝ → ℝ → ℤ → ℕ → Matrix (Fin N) (Fin N) ℝ"
+      "type": "(N : \u2115) \u2192 \u211d \u2192 \u211d \u2192 \u211d \u2192 \u2124 \u2192 \u2115 \u2192 Matrix (Fin N) (Fin N) \u211d"
     },
     {
       "axioms": [
@@ -2475,7 +2475,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.DirichletCut",
       "name": "GRWTSK.Spectral.DirichletCut.cutHamiltonian_reindex._proof_1_8",
-      "type": "∀ (N M : ℕ),\n  0 < N →\n    ∀ (i : Fin N) (j : Fin M),\n      ↑i + 1 = N + ↑j ∨ N + ↑j + 1 = ↑i →\n        (↑i = N - 1 → ¬N + ↑j = N - 1 + 1) → (↑i = N - 1 + 1 → ¬N + ↑j = N - 1) → False"
+      "type": "\u2200 (N M : \u2115),\n  0 < N \u2192\n    \u2200 (i : Fin N) (j : Fin M),\n      \u2191i + 1 = N + \u2191j \u2228 N + \u2191j + 1 = \u2191i \u2192\n        (\u2191i = N - 1 \u2192 \u00acN + \u2191j = N - 1 + 1) \u2192 (\u2191i = N - 1 + 1 \u2192 \u00acN + \u2191j = N - 1) \u2192 False"
     },
     {
       "axioms": [
@@ -2486,7 +2486,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.DirichletCut",
       "name": "GRWTSK.Spectral.DirichletCut.adjacent_count_error",
-      "type": "∀ (N M : ℕ),\n  0 < N →\n    ∀ (α V ξ : ℝ) (origin : ℤ) (E : ℝ),\n      |↑(sturmianCount N α V ξ origin E) + ↑(sturmianCount M α V ξ (origin + ↑N) E) -\n            ↑(sturmianCount (N + M) α V ξ origin E)| ≤\n        2"
+      "type": "\u2200 (N M : \u2115),\n  0 < N \u2192\n    \u2200 (\u03b1 V \u03be : \u211d) (origin : \u2124) (E : \u211d),\n      |\u2191(sturmianCount N \u03b1 V \u03be origin E) + \u2191(sturmianCount M \u03b1 V \u03be (origin + \u2191N) E) -\n            \u2191(sturmianCount (N + M) \u03b1 V \u03be origin E)| \u2264\n        2"
     },
     {
       "axioms": [
@@ -2505,7 +2505,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.DirichletCut",
       "name": "GRWTSK.Spectral.DirichletCut.cutHamiltonian_reindex._proof_1_3",
-      "type": "∀ (N : ℕ), 0 < N → ∀ (i j : Fin N), ¬N - 1 + 1 = N → False"
+      "type": "\u2200 (N : \u2115), 0 < N \u2192 \u2200 (i j : Fin N), \u00acN - 1 + 1 = N \u2192 False"
     },
     {
       "axioms": [
@@ -2516,7 +2516,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.DirichletCut",
       "name": "GRWTSK.Spectral.DirichletCut.boundarySynthesis._proof_2",
-      "type": "∀ (N c : ℕ) (x y : ℝ × ℝ),\n  (WithLp.toLp 2 fun i => (if ↑i = c then (x + y).2 else 0) + if ↑i = c + 1 then (x + y).1 else 0) =\n    (WithLp.toLp 2 fun i => (if ↑i = c then x.2 else 0) + if ↑i = c + 1 then x.1 else 0) +\n      WithLp.toLp 2 fun i => (if ↑i = c then y.2 else 0) + if ↑i = c + 1 then y.1 else 0"
+      "type": "\u2200 (N c : \u2115) (x y : \u211d \u00d7 \u211d),\n  (WithLp.toLp 2 fun i => (if \u2191i = c then (x + y).2 else 0) + if \u2191i = c + 1 then (x + y).1 else 0) =\n    (WithLp.toLp 2 fun i => (if \u2191i = c then x.2 else 0) + if \u2191i = c + 1 then x.1 else 0) +\n      WithLp.toLp 2 fun i => (if \u2191i = c then y.2 else 0) + if \u2191i = c + 1 then y.1 else 0"
     },
     {
       "axioms": [
@@ -2527,7 +2527,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.DirichletCut",
       "name": "GRWTSK.Spectral.DirichletCut.boundarySynthesis._proof_3",
-      "type": "∀ (N c : ℕ) (a : ℝ) (x : ℝ × ℝ),\n  (WithLp.toLp 2 fun i => (if ↑i = c then (a • x).2 else 0) + if ↑i = c + 1 then (a • x).1 else 0) =\n    (RingHom.id ℝ) a • WithLp.toLp 2 fun i => (if ↑i = c then x.2 else 0) + if ↑i = c + 1 then x.1 else 0"
+      "type": "\u2200 (N c : \u2115) (a : \u211d) (x : \u211d \u00d7 \u211d),\n  (WithLp.toLp 2 fun i => (if \u2191i = c then (a \u2022 x).2 else 0) + if \u2191i = c + 1 then (a \u2022 x).1 else 0) =\n    (RingHom.id \u211d) a \u2022 WithLp.toLp 2 fun i => (if \u2191i = c then x.2 else 0) + if \u2191i = c + 1 then x.1 else 0"
     },
     {
       "axioms": [
@@ -2537,7 +2537,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.DirichletCut",
       "name": "GRWTSK.Spectral.DirichletCut.cutHamiltonian_reindex._proof_1_5",
-      "type": "∀ (N : ℕ) (i j : Fin N), ↑i < N → N - 1 + 1 = N → ↑i = N - 1 + 1 → False"
+      "type": "\u2200 (N : \u2115) (i j : Fin N), \u2191i < N \u2192 N - 1 + 1 = N \u2192 \u2191i = N - 1 + 1 \u2192 False"
     },
     {
       "axioms": [
@@ -2548,7 +2548,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.DirichletCut",
       "name": "GRWTSK.Spectral.DirichletCut.cutHamiltonian.eq_1",
-      "type": "∀ (N : ℕ) (α V ξ : ℝ) (origin : ℤ) (c : ℕ),\n  GRWTSK.Spectral.DirichletCut.cutHamiltonian N α V ξ origin c =\n    hamiltonian N α V ξ origin - GRWTSK.Spectral.DirichletCut.joiningEdge N c"
+      "type": "\u2200 (N : \u2115) (\u03b1 V \u03be : \u211d) (origin : \u2124) (c : \u2115),\n  GRWTSK.Spectral.DirichletCut.cutHamiltonian N \u03b1 V \u03be origin c =\n    hamiltonian N \u03b1 V \u03be origin - GRWTSK.Spectral.DirichletCut.joiningEdge N c"
     },
     {
       "axioms": [
@@ -2559,7 +2559,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.DirichletCut",
       "name": "GRWTSK.Spectral.DirichletCut.cutCount.eq_1",
-      "type": "∀ (N : ℕ) (α V ξ : ℝ) (origin : ℤ) (c : ℕ) (E : ℝ),\n  GRWTSK.Spectral.DirichletCut.cutCount N α V ξ origin c E = GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount ⋯ E"
+      "type": "\u2200 (N : \u2115) (\u03b1 V \u03be : \u211d) (origin : \u2124) (c : \u2115) (E : \u211d),\n  GRWTSK.Spectral.DirichletCut.cutCount N \u03b1 V \u03be origin c E = GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount \u22ef E"
     },
     {
       "axioms": [
@@ -2568,7 +2568,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.DirichletCut",
       "name": "GRWTSK.Spectral.DirichletCut.cutHamiltonian_reindex._simp_1_6",
-      "type": "∀ {n m : ℕ} {a b : Fin m}, (Fin.castAdd n a = Fin.castAdd n b) = (a = b)"
+      "type": "\u2200 {n m : \u2115} {a b : Fin m}, (Fin.castAdd n a = Fin.castAdd n b) = (a = b)"
     },
     {
       "axioms": [
@@ -2578,7 +2578,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.SturmianBlockCounts",
       "name": "GRWTSK.Spectral.SturmianBlockCounts.finite_block_approximation._proof_1_1",
-      "type": "∀ (N L : ℕ), N / L * L + N % L = N → ¬N / L * L ≤ N → False"
+      "type": "\u2200 (N L : \u2115), N / L * L + N % L = N \u2192 \u00acN / L * L \u2264 N \u2192 False"
     },
     {
       "axioms": [
@@ -2589,7 +2589,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.SturmianBlockCounts",
       "name": "GRWTSK.Spectral.SturmianBlockCounts.bit_origin_to_phase",
-      "type": "∀ (α ξ : ℝ) (origin n : ℤ),\n  GRWTSK.LinearAlgebra.Sturmian.bit α ξ (origin + n) = GRWTSK.LinearAlgebra.Sturmian.bit α (ξ + ↑origin * α) n"
+      "type": "\u2200 (\u03b1 \u03be : \u211d) (origin n : \u2124),\n  GRWTSK.LinearAlgebra.Sturmian.bit \u03b1 \u03be (origin + n) = GRWTSK.LinearAlgebra.Sturmian.bit \u03b1 (\u03be + \u2191origin * \u03b1) n"
     },
     {
       "axioms": [
@@ -2600,7 +2600,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.SturmianBlockCounts",
       "name": "GRWTSK.Spectral.SturmianBlockCounts.blockCountSum_succ",
-      "type": "∀ (q L : ℕ) (α V ξ : ℝ) (origin : ℤ) (E : ℝ),\n  blockCountSum (q + 1) L α V ξ origin E = ↑(sturmianCount L α V ξ origin E) + blockCountSum q L α V ξ (origin + ↑L) E"
+      "type": "\u2200 (q L : \u2115) (\u03b1 V \u03be : \u211d) (origin : \u2124) (E : \u211d),\n  blockCountSum (q + 1) L \u03b1 V \u03be origin E = \u2191(sturmianCount L \u03b1 V \u03be origin E) + blockCountSum q L \u03b1 V \u03be (origin + \u2191L) E"
     },
     {
       "axioms": [
@@ -2611,7 +2611,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.SturmianBlockCounts",
       "name": "GRWTSK.Spectral.SturmianBlockCounts.count_origin_to_phase",
-      "type": "∀ (N : ℕ) (α V ξ : ℝ) (origin : ℤ) (E : ℝ), sturmianCount N α V ξ origin E = sturmianCount N α V (ξ + ↑origin * α) 0 E"
+      "type": "\u2200 (N : \u2115) (\u03b1 V \u03be : \u211d) (origin : \u2124) (E : \u211d), sturmianCount N \u03b1 V \u03be origin E = sturmianCount N \u03b1 V (\u03be + \u2191origin * \u03b1) 0 E"
     },
     {
       "axioms": [
@@ -2622,7 +2622,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.SturmianBlockCounts",
       "name": "GRWTSK.Spectral.SturmianBlockCounts.blockCountSum.eq_1",
-      "type": "∀ (q L : ℕ) (α V ξ : ℝ) (origin : ℤ) (E : ℝ),\n  blockCountSum q L α V ξ origin E = ∑ j ∈ Finset.range q, ↑(sturmianCount L α V ξ (origin + ↑(j * L)) E)"
+      "type": "\u2200 (q L : \u2115) (\u03b1 V \u03be : \u211d) (origin : \u2124) (E : \u211d),\n  blockCountSum q L \u03b1 V \u03be origin E = \u2211 j \u2208 Finset.range q, \u2191(sturmianCount L \u03b1 V \u03be (origin + \u2191(j * L)) E)"
     },
     {
       "axioms": [
@@ -2633,7 +2633,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.SturmianBlockCounts",
       "name": "GRWTSK.Spectral.SturmianBlockCounts.hamiltonian_origin_to_phase",
-      "type": "∀ (N : ℕ) (α V ξ : ℝ) (origin : ℤ), hamiltonian N α V ξ origin = hamiltonian N α V (ξ + ↑origin * α) 0"
+      "type": "\u2200 (N : \u2115) (\u03b1 V \u03be : \u211d) (origin : \u2124), hamiltonian N \u03b1 V \u03be origin = hamiltonian N \u03b1 V (\u03be + \u2191origin * \u03b1) 0"
     },
     {
       "axioms": [
@@ -2644,7 +2644,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.SturmianBlockCounts",
       "name": "GRWTSK.Spectral.SturmianBlockCounts.finite_block_approximation",
-      "type": "∀ (N L : ℕ),\n  0 < N →\n    0 < L →\n      ∀ (α V ξ : ℝ) (origin : ℤ) (E : ℝ),\n        |sturmianNormalizedCount N α V ξ origin E - blockCountSum (N / L) L α V ξ origin E / ↑N| ≤ 2 / ↑L + ↑L / ↑N"
+      "type": "\u2200 (N L : \u2115),\n  0 < N \u2192\n    0 < L \u2192\n      \u2200 (\u03b1 V \u03be : \u211d) (origin : \u2124) (E : \u211d),\n        |sturmianNormalizedCount N \u03b1 V \u03be origin E - blockCountSum (N / L) L \u03b1 V \u03be origin E / \u2191N| \u2264 2 / \u2191L + \u2191L / \u2191N"
     },
     {
       "axioms": [
@@ -2655,7 +2655,7 @@
       "kind": "definition",
       "module": "GRWTSK.Spectral.SturmianBlockCounts",
       "name": "GRWTSK.Spectral.SturmianBlockCounts.blockCountSum",
-      "type": "ℕ → ℕ → ℝ → ℝ → ℝ → ℤ → ℝ → ℝ"
+      "type": "\u2115 \u2192 \u2115 \u2192 \u211d \u2192 \u211d \u2192 \u211d \u2192 \u2124 \u2192 \u211d \u2192 \u211d"
     },
     {
       "axioms": [
@@ -2666,7 +2666,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.SturmianBlockCounts",
       "name": "GRWTSK.Spectral.SturmianBlockCounts.block_count_error",
-      "type": "∀ (q L r : ℕ),\n  0 < L →\n    ∀ (α V ξ : ℝ) (origin : ℤ) (E : ℝ),\n      |blockCountSum q L α V ξ origin E - ↑(sturmianCount (q * L + r) α V ξ origin E)| ≤ 2 * ↑q + ↑r"
+      "type": "\u2200 (q L r : \u2115),\n  0 < L \u2192\n    \u2200 (\u03b1 V \u03be : \u211d) (origin : \u2124) (E : \u211d),\n      |blockCountSum q L \u03b1 V \u03be origin E - \u2191(sturmianCount (q * L + r) \u03b1 V \u03be origin E)| \u2264 2 * \u2191q + \u2191r"
     },
     {
       "axioms": [
@@ -2677,7 +2677,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.SturmianBlockCounts",
       "name": "GRWTSK.Spectral.SturmianBlockCounts.potential_origin_to_phase",
-      "type": "∀ (α V ξ : ℝ) (origin n : ℤ),\n  GRWTSK.LinearAlgebra.Sturmian.potential α V ξ (origin + n) =\n    GRWTSK.LinearAlgebra.Sturmian.potential α V (ξ + ↑origin * α) n"
+      "type": "\u2200 (\u03b1 V \u03be : \u211d) (origin n : \u2124),\n  GRWTSK.LinearAlgebra.Sturmian.potential \u03b1 V \u03be (origin + n) =\n    GRWTSK.LinearAlgebra.Sturmian.potential \u03b1 V (\u03be + \u2191origin * \u03b1) n"
     },
     {
       "axioms": [
@@ -2688,7 +2688,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.SturmianBlockCounts",
       "name": "GRWTSK.Spectral.SturmianBlockCounts.count_le_volume",
-      "type": "∀ (N : ℕ) (α V ξ : ℝ) (origin : ℤ) (E : ℝ), sturmianCount N α V ξ origin E ≤ N"
+      "type": "\u2200 (N : \u2115) (\u03b1 V \u03be : \u211d) (origin : \u2124) (E : \u211d), sturmianCount N \u03b1 V \u03be origin E \u2264 N"
     },
     {
       "axioms": [
@@ -2699,7 +2699,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.SturmianBlockCounts",
       "name": "GRWTSK.Spectral.SturmianBlockCounts.blockCountSum_phase",
-      "type": "∀ (q L : ℕ) (α V ξ : ℝ) (origin : ℤ) (E : ℝ),\n  blockCountSum q L α V ξ origin E = ∑ j ∈ Finset.range q, ↑(sturmianCount L α V (ξ + ↑origin * α + ↑j * (↑L * α)) 0 E)"
+      "type": "\u2200 (q L : \u2115) (\u03b1 V \u03be : \u211d) (origin : \u2124) (E : \u211d),\n  blockCountSum q L \u03b1 V \u03be origin E = \u2211 j \u2208 Finset.range q, \u2191(sturmianCount L \u03b1 V (\u03be + \u2191origin * \u03b1 + \u2191j * (\u2191L * \u03b1)) 0 E)"
     },
     {
       "axioms": [
@@ -2710,7 +2710,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.SturmianBlockCounts",
       "name": "GRWTSK.Spectral.SturmianBlockCounts.complete_block_count_error",
-      "type": "∀ (q L : ℕ),\n  0 < L →\n    ∀ (α V ξ : ℝ) (origin : ℤ) (E : ℝ),\n      |blockCountSum q L α V ξ origin E - ↑(sturmianCount (q * L) α V ξ origin E)| ≤ 2 * ↑(q - 1)"
+      "type": "\u2200 (q L : \u2115),\n  0 < L \u2192\n    \u2200 (\u03b1 V \u03be : \u211d) (origin : \u2124) (E : \u211d),\n      |blockCountSum q L \u03b1 V \u03be origin E - \u2191(sturmianCount (q * L) \u03b1 V \u03be origin E)| \u2264 2 * \u2191(q - 1)"
     },
     {
       "axioms": [
@@ -2721,7 +2721,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.SturmianBlockCounts",
       "name": "GRWTSK.Spectral.SturmianBlockCounts.normalized_block_count_error",
-      "type": "∀ (q L r : ℕ),\n  0 < L →\n    ∀ (α V ξ : ℝ) (origin : ℤ) (E : ℝ),\n      |sturmianNormalizedCount (q * L + r) α V ξ origin E - blockCountSum q L α V ξ origin E / ↑(q * L + r)| ≤\n        (2 * ↑q + ↑r) / ↑(q * L + r)"
+      "type": "\u2200 (q L r : \u2115),\n  0 < L \u2192\n    \u2200 (\u03b1 V \u03be : \u211d) (origin : \u2124) (E : \u211d),\n      |sturmianNormalizedCount (q * L + r) \u03b1 V \u03be origin E - blockCountSum q L \u03b1 V \u03be origin E / \u2191(q * L + r)| \u2264\n        (2 * \u2191q + \u2191r) / \u2191(q * L + r)"
     },
     {
       "axioms": [
@@ -2732,7 +2732,7 @@
       "kind": "theorem",
       "module": "GRWTSK.Spectral.SturmianBlockCounts",
       "name": "GRWTSK.Spectral.SturmianBlockCounts.block_count_error_with_remainder",
-      "type": "∀ (q L r : ℕ),\n  0 < L →\n    ∀ (α V ξ : ℝ) (origin : ℤ) (E : ℝ),\n      |blockCountSum q L α V ξ origin E + ↑(sturmianCount r α V ξ (origin + ↑(q * L)) E) -\n            ↑(sturmianCount (q * L + r) α V ξ origin E)| ≤\n        2 * ↑q"
+      "type": "\u2200 (q L r : \u2115),\n  0 < L \u2192\n    \u2200 (\u03b1 V \u03be : \u211d) (origin : \u2124) (E : \u211d),\n      |blockCountSum q L \u03b1 V \u03be origin E + \u2191(sturmianCount r \u03b1 V \u03be (origin + \u2191(q * L)) E) -\n            \u2191(sturmianCount (q * L + r) \u03b1 V \u03be origin E)| \u2264\n        2 * \u2191q"
     }
   ],
   "checks": [
@@ -2741,7 +2741,7 @@
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 6.8468605,
+      "seconds": 1.481812041,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
@@ -2751,7 +2751,7 @@
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 3.2265728750000005,
+      "seconds": 1.015419542,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
@@ -2761,7 +2761,7 @@
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 4.581501249999999,
+      "seconds": 1.3568539160000004,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
@@ -2771,7 +2771,7 @@
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 25.833101083,
+      "seconds": 2.751087042,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
@@ -2781,7 +2781,7 @@
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 13.686603333,
+      "seconds": 1.9487741250000008,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
@@ -2791,7 +2791,7 @@
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 8.059631625000009,
+      "seconds": 2.0065215829999996,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
@@ -2801,7 +2801,7 @@
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 7.4320028329999985,
+      "seconds": 2.297432292,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
@@ -2811,7 +2811,7 @@
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 14.487987667000013,
+      "seconds": 2.5140980000000006,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
@@ -2821,193 +2821,194 @@
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 22.138792667000004,
+      "seconds": 4.9220217920000024,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
     },
     {
-      "path": "checks/TenMartiniAudit.lean",
+      "path": "GRWTSK/Spectral/FiniteVolume/Checks/Declarations.lean",
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 6.6225182080000025,
+      "seconds": 2.0520733339999992,
       "output_sha256": "0bab082d2cbbb4042777a7e78480da98503efd6bc5b44ad6fdb9c434d98c8c22",
       "expected_error_fragment": null,
       "expected_error_matched": true
     },
     {
-      "path": "checks/ten-martini-controls/MissingInjectivity.lean",
+      "path": "GRWTSK/Spectral/FiniteVolume/Checks/Negative/MissingInjectivity.lean",
       "expected_success": false,
       "actual_success": false,
       "exit_code": 1,
-      "seconds": 4.92822429200001,
-      "output_sha256": "ef6a7ba3d0e6c450558a2a06a1586ddbae2a6625f4e0bc09901c2ec45936fe0f",
+      "seconds": 1.2679270000000002,
+      "output_sha256": "3ec13fc195e82d1b713f7dd11f6d3bb18c02f37ea122d0fc7c553f2c95f8de7c",
       "expected_error_fragment": "Type mismatch",
       "expected_error_matched": true
     },
     {
-      "path": "checks/ten-martini-controls/MissingIDS2.lean",
+      "path": "GRWTSK/Spectral/FiniteVolume/Checks/Negative/MissingIDS2.lean",
       "expected_success": false,
       "actual_success": false,
       "exit_code": 1,
-      "seconds": 4.808508208000006,
-      "output_sha256": "bceef322563c14a4c2bb38e5e921ddb13e07cb4b3e7645bbd9cc9a9e0a61f7fd",
+      "seconds": 1.2631628339999992,
+      "output_sha256": "b21e47c277be5496213d55c9624f9e253d7aaaf1aef74a59f94f0163a59f0259",
       "expected_error_fragment": "Type mismatch",
       "expected_error_matched": true
     },
     {
-      "path": "checks/ten-martini-controls/ZeroTraceAllEnergies.lean",
+      "path": "GRWTSK/Spectral/FiniteVolume/Checks/Negative/ZeroTraceAllEnergies.lean",
       "expected_success": false,
       "actual_success": false,
       "exit_code": 1,
-      "seconds": 6.0518179160000045,
-      "output_sha256": "de6f60faf29dbb5785bf8550a0a9e1e4b48c29b280175424a98b08e19fc1f723",
+      "seconds": 1.2702419999999996,
+      "output_sha256": "1836747f200b81100510209de279a2d4646de267d776c7da40f7c0ef87f87d24",
       "expected_error_fragment": "unsolved goals",
       "expected_error_matched": true
     },
     {
-      "path": "checks/ten-martini-controls/WrongOffset.lean",
+      "path": "GRWTSK/Spectral/FiniteVolume/Checks/Negative/WrongOffset.lean",
       "expected_success": false,
       "actual_success": false,
       "exit_code": 1,
-      "seconds": 8.952006417000007,
-      "output_sha256": "86d2241289ce35c08a41a8866b439563bcbc52ee4dbf42374cb4a59fc5ca2047",
+      "seconds": 1.3120212920000007,
+      "output_sha256": "d11e5493571397f6ec9f95939439f057f1fc5563cfeb43c54e5b6609d5b21f97",
       "expected_error_fragment": "Type mismatch",
       "expected_error_matched": true
     },
     {
-      "path": "checks/ten-martini-controls/DroppedIDSLimit.lean",
+      "path": "GRWTSK/Spectral/FiniteVolume/Checks/Negative/DroppedIDSLimit.lean",
       "expected_success": false,
       "actual_success": false,
       "exit_code": 1,
-      "seconds": 25.291802082999993,
-      "output_sha256": "ea82866b383e319e2881872b85fd7120e69bd6298a3508ec57501c08749bb299",
+      "seconds": 1.3143215830000017,
+      "output_sha256": "9461c2a3f6babc56655775c71305c0fb591b1a97aeb172d4394e1332265e9812",
       "expected_error_fragment": "Type mismatch",
       "expected_error_matched": true
     },
     {
-      "path": "checks/ten-martini-controls/DirichletCorner.lean",
+      "path": "GRWTSK/Spectral/FiniteVolume/Checks/Negative/DirichletCorner.lean",
       "expected_success": false,
       "actual_success": false,
       "exit_code": 1,
-      "seconds": 7.171027624999994,
-      "output_sha256": "5792e653ce18ee114b491c4b9e2ee4a6dc8472d9395a2306627b1c10c8b3e622",
+      "seconds": 1.3216120000000018,
+      "output_sha256": "4a186bc425a36910a297b28880def8b192ad99eafa415aaf7691beef0d85c05d",
       "expected_error_fragment": "unsolved goals",
       "expected_error_matched": true
     },
     {
-      "path": "checks/ten-martini-controls/ExteriorLabelInverse.lean",
+      "path": "GRWTSK/Spectral/FiniteVolume/Checks/Negative/ExteriorLabelInverse.lean",
       "expected_success": false,
       "actual_success": false,
       "exit_code": 1,
-      "seconds": 6.0386225000000024,
-      "output_sha256": "e73a94a91435da81aa1b75dafc0aad62e49f5fe52cabf8851dfdfe212069ebf4",
+      "seconds": 1.3490667499999986,
+      "output_sha256": "eb21865bb717f7cf89e4db3fcba5840021b185a5ab0d1f92b902f51e118debb9",
       "expected_error_fragment": "unsolved goals",
       "expected_error_matched": true
     },
     {
-      "path": "checks/ten-martini-controls/WrongEigenvalueDenominator.lean",
+      "path": "GRWTSK/Spectral/FiniteVolume/Checks/Negative/WrongEigenvalueDenominator.lean",
       "expected_success": false,
       "actual_success": false,
       "exit_code": 1,
-      "seconds": 4.462861666000009,
-      "output_sha256": "2af0b02b41a66d31476e5c25bdca08d13a0b11d46e3f1873b646a574592e5889",
+      "seconds": 1.3305649590000002,
+      "output_sha256": "5edbe951f9caefa1258fe5a523f7a2303a1021d1c0c055ea959f9336bbec1a74",
       "expected_error_fragment": "unsolved goals",
       "expected_error_matched": true
     },
     {
-      "path": "checks/ten-martini-controls/ZeroVolumeError.lean",
+      "path": "GRWTSK/Spectral/FiniteVolume/Checks/Negative/ZeroVolumeError.lean",
       "expected_success": false,
       "actual_success": false,
       "exit_code": 1,
-      "seconds": 4.9459104999999965,
-      "output_sha256": "3e36b2a50e5cdc1e4c422d15e928a89669e6ed79ed861749b9881b10ab6cd496",
+      "seconds": 1.3452590410000056,
+      "output_sha256": "b17dcf494e3164dfdbc4f5f81487303a98fe275a31f76bc4c86de8bce98f9592",
       "expected_error_fragment": "unsolved goals",
       "expected_error_matched": true
     },
     {
-      "path": "checks/ten-martini-controls/MissingDefectEquality.lean",
+      "path": "GRWTSK/Spectral/FiniteVolume/Checks/Negative/MissingDefectEquality.lean",
       "expected_success": false,
       "actual_success": false,
       "exit_code": 1,
-      "seconds": 5.658095790999994,
-      "output_sha256": "5d1d0787bb2e445e1236adf650dee91f6953ab97eccb800880b66b4411f9ef0d",
+      "seconds": 1.3671648750000003,
+      "output_sha256": "aa26e428f373580294de1c11a37484ad427d658be976de9f1254e90b9f1e8565",
       "expected_error_fragment": "Type mismatch",
       "expected_error_matched": true
     },
     {
-      "path": "checks/ten-martini-controls/ExactCutAdditivity.lean",
+      "path": "GRWTSK/Spectral/FiniteVolume/Checks/Negative/ExactCutAdditivity.lean",
       "expected_success": false,
       "actual_success": false,
       "exit_code": 1,
-      "seconds": 22.027735459000013,
-      "output_sha256": "91b14a905ddf9b25ae81cbcdc4c24b82e0a4bb3d7ed6c28b1bce62f2ce38aa61",
+      "seconds": 1.4324730420000051,
+      "output_sha256": "68b7fab2b3625ebd6f832aa5f79907a9e9308e44d4ac510cecf85a1be28e4187",
       "expected_error_fragment": "unsolved goals",
       "expected_error_matched": true
     },
     {
-      "path": "checks/ten-martini-controls/OneEndpointDefect.lean",
+      "path": "GRWTSK/Spectral/FiniteVolume/Checks/Negative/OneEndpointDefect.lean",
       "expected_success": false,
       "actual_success": false,
       "exit_code": 1,
-      "seconds": 21.056788916999977,
-      "output_sha256": "e8c1f8a7321ac979e46c4e7418d8dcdca9234487425fe421b54494653a4fcbb3",
+      "seconds": 1.3900117499999993,
+      "output_sha256": "f98d16b0f8366002e5f8ede1fda2e9595f839b1a315fd0c5f79408f527b24200",
       "expected_error_fragment": "unsolved goals",
       "expected_error_matched": true
     },
     {
-      "path": "checks/ten-martini-controls/WrongSecondOrigin.lean",
+      "path": "GRWTSK/Spectral/FiniteVolume/Checks/Negative/WrongSecondOrigin.lean",
       "expected_success": false,
       "actual_success": false,
       "exit_code": 1,
-      "seconds": 27.924143957999974,
-      "output_sha256": "8f33c4bf16d18a303d5fbe53286e2faa9a6ad36cc6ce68ab299eb84d6b64442b",
+      "seconds": 1.3634295000000023,
+      "output_sha256": "3c2477ce2165b2fac6ccf60519d68e9ed4c79216378d361ce51e8478edf3df69",
       "expected_error_fragment": "unsolved goals",
       "expected_error_matched": true
     },
     {
-      "path": "checks/ten-martini-controls/DroppedRemainderCost.lean",
+      "path": "GRWTSK/Spectral/FiniteVolume/Checks/Negative/DroppedRemainderCost.lean",
       "expected_success": false,
       "actual_success": false,
       "exit_code": 1,
-      "seconds": 32.737340458999995,
-      "output_sha256": "85a864098f03fe26d31174b9f984e701b77c094d4d7cd7d04e5b3abafdb24c72",
+      "seconds": 1.3963385830000021,
+      "output_sha256": "ca96ebb6b615e13aebc770c2c1cd08c982313a05b5025cbf7d55d671dfc5c130",
       "expected_error_fragment": "unsolved goals",
       "expected_error_matched": true
     },
     {
-      "path": "checks/ten-martini-controls/DroppedBlockBoundaryCost.lean",
+      "path": "GRWTSK/Spectral/FiniteVolume/Checks/Negative/DroppedBlockBoundaryCost.lean",
       "expected_success": false,
       "actual_success": false,
       "exit_code": 1,
-      "seconds": 16.39636299999995,
-      "output_sha256": "76640ad79fbbe0770855952902fed6e77c69f3afa28f79ab168a1ba9b554c469",
+      "seconds": 1.4239774999999995,
+      "output_sha256": "a0ef2f8797aff33425bad2e2f893ce775e88519057cc3d5bca04ba0da83d777c",
       "expected_error_fragment": "unsolved goals",
       "expected_error_matched": true
     },
     {
-      "path": "checks/ten-martini-controls/MissingBlockLength.lean",
+      "path": "GRWTSK/Spectral/FiniteVolume/Checks/Negative/MissingBlockLength.lean",
       "expected_success": false,
       "actual_success": false,
       "exit_code": 1,
-      "seconds": 5.460881583000003,
-      "output_sha256": "a97e33ec25999f875bb808f4a6e6ffae2bb20afc613af7129404970e2b51ea2f",
+      "seconds": 1.5184064169999942,
+      "output_sha256": "b8e029a1088cecae68f9a728957c05c58479c969aa4f6797f45305e812f00d8f",
       "expected_error_fragment": "Type mismatch",
       "expected_error_matched": true
     },
     {
-      "path": "checks/ten-martini-controls/WrongSamplingStep.lean",
+      "path": "GRWTSK/Spectral/FiniteVolume/Checks/Negative/WrongSamplingStep.lean",
       "expected_success": false,
       "actual_success": false,
       "exit_code": 1,
-      "seconds": 48.09305374999997,
-      "output_sha256": "202c5da4cfc71965e84e0c23e4b5572541d8aad30eb4f7944e6d980fca1917ce",
+      "seconds": 6.845979833000001,
+      "output_sha256": "ebfc53775ac306c43b76b61319a3d4325a35efc468ea782bab227ac50f6f3b0b",
       "expected_error_fragment": "Type mismatch",
       "expected_error_matched": true
     }
   ],
   "pinned_dependency_objects_used": true,
+  "run_directory": "/Users/think/Documents/ChatGPT/math 2/.local/ten-martini-luxxe0vp",
   "scope": "conditional gap transport, literal Sturmian transfer, actual finite Dirichlet matrices and count comparisons, complete free sine diagonalization and actual free IDS count limit with inverse cuts, finite defect/rank count bound and actual rank-two adjacent-volume cut count error, accumulated repeated-block and remainder bounds, exact integer-origin to phase and L*alpha block sampling adapters; target Sturmian IDS and actual gaps remain premises",
   "finite_sturmian_hamiltonian_constructed": true,
   "finite_volume_eigenvalue_comparison_proved": true,
@@ -3029,6 +3030,5 @@
   "actual_sturmian_dry_theorem_formalized": false,
   "operator_spectrum_constructed": false,
   "rh_proved": false,
-  "independent_acceptance": "PENDING",
-  "public_projection": "Host-specific locations and unpublished provenance are excluded. Mathematical observations and historical source bindings are retained; this projection supplies no new verification."
+  "independent_acceptance": "PENDING"
 }

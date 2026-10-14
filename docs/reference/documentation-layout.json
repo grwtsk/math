@@ -290,35 +290,19 @@
     },
     "rh-inference-guards:1": {
       "kind": "mathematics",
-      "target": "docs/mathematics/NumberTheory/Zeta/Riemann/inference-guards.md",
-      "secondary_targets": [
-        "docs/mathematics/Analysis/Complex/CriticalReflection/reflection.md",
-        "docs/mathematics/LinearAlgebra/Matrix/HermitianCounterexamples/negative-identity.md"
-      ]
+      "target": "docs/mathematics/NumberTheory/Zeta/Riemann/inference-guards.md"
     },
     "rh-inference-guards:2": {
       "kind": "mathematics",
-      "target": "docs/mathematics/NumberTheory/Zeta/Riemann/inference-guards.md",
-      "secondary_targets": [
-        "docs/mathematics/Analysis/Complex/CriticalReflection/reflection.md",
-        "docs/mathematics/LinearAlgebra/Matrix/HermitianCounterexamples/negative-identity.md"
-      ]
+      "target": "docs/mathematics/NumberTheory/Zeta/Riemann/inference-guards.md"
     },
     "rh-inference-guards:3": {
       "kind": "mathematics",
-      "target": "docs/mathematics/NumberTheory/Zeta/Riemann/inference-guards.md",
-      "secondary_targets": [
-        "docs/mathematics/Analysis/Complex/CriticalReflection/reflection.md",
-        "docs/mathematics/LinearAlgebra/Matrix/HermitianCounterexamples/negative-identity.md"
-      ]
+      "target": "docs/mathematics/NumberTheory/Zeta/Riemann/inference-guards.md"
     },
     "rh-inference-guards:5": {
       "kind": "mathematics",
-      "target": "docs/mathematics/NumberTheory/Zeta/Riemann/inference-guards.md",
-      "secondary_targets": [
-        "docs/mathematics/Analysis/Complex/CriticalReflection/reflection.md",
-        "docs/mathematics/LinearAlgebra/Matrix/HermitianCounterexamples/negative-identity.md"
-      ]
+      "target": "docs/mathematics/NumberTheory/Zeta/Riemann/inference-guards.md"
     },
     "rh-inference-guards:0": {
       "kind": "history",
@@ -2576,6 +2560,15 @@
       "source_sha256": "8daccbb547c6ea9e481182366f25bae913a4effbf59059becd9a40532541591d",
       "status": "historical-source-description"
     },
+    "docs/mathematics/Analysis/Integration/exponential-volterra-l2.md": {
+      "title": "Finite exponential Volterra L2 estimates",
+      "subject": "Analysis",
+      "object": "Integration",
+      "primary_source": "GRWTSK/Analysis/Integration/ExponentialVolterraL2.lean",
+      "source_sha256": "963957d15eab9c20a0194656e8b0fcbee721bebabb9fedd8eef55968b54d12b0",
+      "status": "fresh-selected",
+      "evidence": "evidence/Analysis/Integration/exponential-volterra-l2-checks.json"
+    },
     "docs/mathematics/LinearAlgebra/Jacobi/transfer.md": {
       "title": "Jacobi transfer matrices",
       "subject": "LinearAlgebra",
@@ -2629,40 +2622,8 @@
       "subject": "NumberTheory",
       "object": "Zeta/Riemann",
       "primary_source": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroDefinitions.lean",
-      "source_sha256": "79f45d7a61819fce066baa26094d480aaf40ce6c46cfd2526b8107f3bf62a8a4",
-      "status": "historical-source-description",
-      "source_binding_history": [
-        {
-          "sha256": "107f357b8c04afc16e25b8fded6922782d2756959b42f080af839f4db58e9aa0",
-          "scope": "Original zeta definition and historical guard-description source binding; original source and public acceptance evidence preserved."
-        }
-      ],
-      "verification_limit": "Historical prose and status retained. Exact current source bytes participate in a scoped frozen Lean qualification of 10 owners and 41 owned mathematical declarations, with 39 zeta declarations, 32 guard contracts and three intended coverage rejections. Qualification SHA 9f8402cc9855d4c6a79b8b44f34ae88ae58bc3f4bfd2e237f5e44cd1812272d9. All 30 types and 29 other proof values match exactly; the Hermitian proof has only 32 qualified local bound-name module relocations. Whole-source/full-consumer acceptance and unconditional RH remain open; rebinding alone is bookkeeping.",
-      "documentation_history": [
-        {
-          "previous_page_sha256": "bd03975622c47dc7feb2c2eb3c421b9e9eb50c4f9da4104fb563663473b5687e",
-          "scope": "Four guard statements previously consolidated under the zeta page; exact original page and historical section variants retained. Complex reflection and Hermitian positivity now have subject pages."
-        }
-      ],
-      "related_source_sha256": {
-        "GRWTSK/NumberTheory/Zeta/Riemann/ZeroDefinitions.lean": "79f45d7a61819fce066baa26094d480aaf40ce6c46cfd2526b8107f3bf62a8a4",
-        "GRWTSK/NumberTheory/Zeta/Riemann/ZeroExclusions.lean": "d461e95a7aca50e3c9040fcd10e0aef54eb6f05f2e484baef4090928b7789097"
-      },
-      "object_split_verification": {
-        "qualification_sha256": "9f8402cc9855d4c6a79b8b44f34ae88ae58bc3f4bfd2e237f5e44cd1812272d9",
-        "source_owners": 10,
-        "owned_mathematical_declarations": 41,
-        "zeta_declarations": 39,
-        "guard_contracts": 32,
-        "compared_types": 30,
-        "other_elaborated_values_exact": 29,
-        "hermitian_local_binder_names_changed": 32,
-        "all_elaborated_values_byte_equal": false,
-        "complete_current_consumer_acceptance": false,
-        "rh_proved": false,
-        "mathlib_source_rebuilt": false,
-        "bookkeeping_is_new_proof_acceptance": false
-      }
+      "source_sha256": "107f357b8c04afc16e25b8fded6922782d2756959b42f080af839f4db58e9aa0",
+      "status": "historical-source-description"
     },
     "docs/mathematics/LinearAlgebra/Schrodinger/transfer.md": {
       "title": "Schrödinger transfer matrices",
@@ -2693,17 +2654,8 @@
       "subject": "NumberTheory",
       "object": "Moebius/Laplace",
       "primary_source": "GRWTSK/NumberTheory/Moebius/PrimeFilterLaplace.lean",
-      "source_sha256": "f76be07a02a9cae45f5d22fca86fa534d2f31f295858238c0124222ca03e460b",
-      "status": "historical-source-description",
-      "source_version_reconciliation": {
-        "previous_source_sha256": "be96c983badedf9c3bde3787a273165be81163efc130b52d451ae2b51addea1b",
-        "current_source_sha256": "f76be07a02a9cae45f5d22fca86fa534d2f31f295858238c0124222ca03e460b",
-        "change": "Explicit primality tactic import; all non-import source bytes unchanged.",
-        "native_source_elaboration": "trust-zero and fatal warnings passed",
-        "complete_current_owned_audit": "pending",
-        "current_consumer_acceptance": "pending",
-        "historical_receipts_reclassified": false
-      }
+      "source_sha256": "be96c983badedf9c3bde3787a273165be81163efc130b52d451ae2b51addea1b",
+      "status": "historical-source-description"
     },
     "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md": {
       "title": "Sturmian phase partitions and count limits",
@@ -2750,12 +2702,9 @@
       "subject": "LinearAlgebra",
       "object": "Schrodinger",
       "primary_source": "GRWTSK/LinearAlgebra/AlmostMathieu.lean",
-      "source_sha256": "ed4a3641f340c856b6e0d98cbeb99c18f06cc86c64d3d84f306adc1b35849643",
+      "source_sha256": "8e33555ed354415b1604c4a7fc192d065fcd87ec4c765f6200faafd633c74d5c",
       "status": "literature-and-historical-source-description",
-      "source_relation": "context; not certification of every written or cited claim",
-      "prior_source_sha256": "8e33555ed354415b1604c4a7fc192d065fcd87ec4c765f6200faafd633c74d5c",
-      "verification_limit": "A scoped frozen Lean check binds the local source SHA ed4a3641f340c856b6e0d98cbeb99c18f06cc86c64d3d84f306adc1b35849643. Removing only the tactic umbrella preserves all eight owned declarations, including generated declarations, with exact raw types and proof values. The accepted standard profile checks 25 owned source modules and 278 mathematical declarations with no runtime exclusions; the actual Energy consumer supplies 243 exact declaration contracts, and all six intended rejection controls were freshly checked. Qualification SHA 568fd68c0aec6bbbf1f0af13074dfb77c42c52b67f49cd079bb68684e9666740. These checks qualify the local potential, transfer recurrence, determinant and trace counterexample. The cited spectral regularity, measure estimates and Cantor-spectrum claims retain their literature evidence and hypotheses; the local source does not prove them. Whole-project, standalone checker, complete consumer and unconditional RH acceptance remain open. Dependency source pins and imported-object provenance are recorded separately; no Mathlib source rebuild is claimed.",
-      "scoped_local_source_qualification_sha256": "568fd68c0aec6bbbf1f0af13074dfb77c42c52b67f49cd079bb68684e9666740"
+      "source_relation": "context; not certification of every written or cited claim"
     },
     "docs/mathematics/NumberTheory/Moebius/PrimeFilters/cascade.md": {
       "title": "Finite causal prime filters and insertion energy",
@@ -2778,17 +2727,8 @@
       "subject": "NumberTheory",
       "object": "Moebius/PrimeFilters",
       "primary_source": "GRWTSK/NumberTheory/Moebius/NegativePrimeCorrelation.lean",
-      "source_sha256": "f658aa8536cb22225e3995a0250a36933ec6a4bd820ba0908f8650b2463b134c",
-      "status": "historical-source-description",
-      "source_version_reconciliation": {
-        "previous_source_sha256": "020042e6753763a9894a6ef63256f9583f72dbc5d114a9fa45c495f7650e716d",
-        "current_source_sha256": "f658aa8536cb22225e3995a0250a36933ec6a4bd820ba0908f8650b2463b134c",
-        "change": "Explicit primality tactic import; all non-import source bytes unchanged.",
-        "native_source_elaboration": "trust-zero and fatal warnings passed",
-        "complete_current_owned_audit": "pending",
-        "current_consumer_acceptance": "pending",
-        "historical_receipts_reclassified": false
-      }
+      "source_sha256": "020042e6753763a9894a6ef63256f9583f72dbc5d114a9fa45c495f7650e716d",
+      "status": "historical-source-description"
     },
     "docs/mathematics/NumberTheory/Moebius/PrimeFilters/uniform-supplier-obstruction.md": {
       "title": "Uniform finite-product suppliers: a written obstruction",
@@ -2823,6 +2763,15 @@
       "source_sha256": "8124ef6fbeca2c8244d7401536d70c43a6ecd31279366c20ea96bf6fbaa84380",
       "status": "written-argument",
       "source_relation": "context; not certification of every written or cited claim"
+    },
+    "docs/mathematics/NumberTheory/Moebius/Energy/separated-mellin-samples.md": {
+      "title": "An exact separated-sample return for the actual Type-II source",
+      "subject": "NumberTheory",
+      "object": "Moebius/Energy",
+      "primary_source": "GRWTSK/NumberTheory/Moebius/WeightedIntegralEnergy.lean",
+      "source_sha256": "8124ef6fbeca2c8244d7401536d70c43a6ecd31279366c20ea96bf6fbaa84380",
+      "status": "written-argument",
+      "source_relation": "context only; the separated-sample return has no Lean formalization"
     },
     "docs/mathematics/LinearAlgebra/Schrodinger/sturmian.md": {
       "title": "Sturmian potential, half-open coding and recurrence",
@@ -2887,18 +2836,14 @@
       "subject": "Analysis",
       "object": "Fourier/WindowCertificates",
       "primary_source": "GRWTSK/Analysis/Fourier/WindowCertificates.lean",
-      "source_sha256": "568586ca097a0fc94ec0866a627d9cb8c17a7a781ee7849d01c7229f5d44bbc8",
+      "source_sha256": "acf0f90e233095c8e4949a4c22e1f67fa68f4d85e0be5cb99bf9fcfbbea671db",
       "status": "historical-source-description",
       "prior_source_sha256": "c616f557739add2b41d0691111f835ce0f181daf4ba383ba84ded3f3e25a216b",
-      "verification_limit": "Written mathematical description and historical status retained. Current source direct-import reduction has scoped pinned Lean qualification: 84 exact types preserved and 269 owned declarations inventoried (265 mathematical, 4 separately qualified runtime exclusions), Audit43 and six intended controls. Receipt SHA4f0b3c535e0ff4000e87816a712c974e529afb28eecb7dfc763db20bb8715e63. Whole-library/full-consumer acceptance and angular supplier premises remain open; source rebinding alone is not proof acceptance.",
+      "verification_limit": "Import syntax repaired; earlier receipts retained, no new proof acceptance from rebinding",
       "source_binding_history": [
         {
           "sha256": "ccb66f1f070df085c361665612019f59bcb92f79a3e9fa701c88364e3da15c05",
           "scope": "post-merge import line; superseded by syntax-only import separation"
-        },
-        {
-          "sha256": "acf0f90e233095c8e4949a4c22e1f67fa68f4d85e0be5cb99bf9fcfbbea671db",
-          "scope": "Previous exact source generation retained before direct-import reduction; original receipts and failed trial are preserved separately."
         }
       ]
     },
@@ -2945,18 +2890,14 @@
       "subject": "Analysis",
       "object": "NormedSpace",
       "primary_source": "GRWTSK/Analysis/NormedSpace/QuadraticError.lean",
-      "source_sha256": "f265b44001d2fb74859425c0e10002a8912f64906ce4437594206cd6de808816",
+      "source_sha256": "79581bb3cf4ce27f646aa513375e0c51912c0ce57f379f1380114e225f0f5980",
       "status": "historical-source-description",
       "prior_source_sha256": "663c865cdbe9802281cbb4be82f3c15612330e44c86acd44db9b14dd46d1c7d6",
-      "verification_limit": "Written mathematical description and historical status retained. Current source direct-import reduction has scoped pinned Lean qualification: 84 exact types preserved and 269 owned declarations inventoried (265 mathematical, 4 separately qualified runtime exclusions), Audit43 and six intended controls. Receipt SHA4f0b3c535e0ff4000e87816a712c974e529afb28eecb7dfc763db20bb8715e63. Whole-library/full-consumer acceptance and angular supplier premises remain open; source rebinding alone is not proof acceptance.",
+      "verification_limit": "Import syntax repaired; earlier receipts retained, no new proof acceptance from rebinding",
       "source_binding_history": [
         {
           "sha256": "f37a84e26536edcaa569bb8e722fa66f301da0b711da63dcb70cd912caeec4d6",
           "scope": "post-merge import line; superseded by syntax-only import separation"
-        },
-        {
-          "sha256": "79581bb3cf4ce27f646aa513375e0c51912c0ce57f379f1380114e225f0f5980",
-          "scope": "Previous exact source generation retained before direct-import reduction; original receipts and failed trial are preserved separately."
         }
       ]
     },
@@ -3057,6 +2998,15 @@
       "primary_source": "GRWTSK/NumberTheory/Moebius/PrimitiveIdentification.lean",
       "source_sha256": "2a1f78198afd3a0a23e1865be081f09e2582689e58462d736bfe626128e6f308",
       "status": "historical-source-description"
+    },
+    "docs/mathematics/NumberTheory/Moebius/logarithmic-mertens-boundary.md": {
+      "title": "Conditional logarithmic Mertens boundary estimate",
+      "subject": "NumberTheory",
+      "object": "Moebius",
+      "primary_source": "GRWTSK/NumberTheory/Moebius/LogarithmicMertensBoundary.lean",
+      "source_sha256": "fb511a6a916ba559cf01d9e09d70d33dcf5de4d2f60e5bf921e60c0e1f94ca16",
+      "status": "fresh-selected",
+      "evidence": "evidence/NumberTheory/Moebius/logarithmic-mertens-boundary-checks.json"
     },
     "docs/mathematics/NumberTheory/Prime/least-prime.md": {
       "title": "Least natural prime",
@@ -3166,81 +3116,59 @@
       "status": "fresh-selected",
       "evidence": "evidence/NumberTheory/LSeries/density-series-checks.json"
     },
-    "docs/mathematics/Analysis/Complex/CriticalReflection/reflection.md": {
-      "title": "Critical line reflection and Gaussian rotation",
-      "subject": "Analysis",
-      "object": "Complex/CriticalReflection",
-      "primary_source": "GRWTSK/Analysis/Complex/CriticalReflection.lean",
-      "source_sha256": "8c17e27406bc4508600cb9bb202a302a074720dcc01409167428487cdd72d065",
-      "status": "historical-source-description",
-      "related_source_sha256": {
-        "GRWTSK/Analysis/Complex/ReflectionCounterexamples.lean": "f6eb28aead9f961d1291cc3681d10dc14c4c48a4e783c40913a5eb968eed35d2"
-      },
-      "object_split_verification": {
-        "qualification_sha256": "9f8402cc9855d4c6a79b8b44f34ae88ae58bc3f4bfd2e237f5e44cd1812272d9",
-        "source_owners": 10,
-        "owned_mathematical_declarations": 41,
-        "zeta_declarations": 39,
-        "guard_contracts": 32,
-        "compared_types": 30,
-        "other_elaborated_values_exact": 29,
-        "hermitian_local_binder_names_changed": 32,
-        "all_elaborated_values_byte_equal": false,
-        "complete_current_consumer_acceptance": false,
-        "rh_proved": false,
-        "mathlib_source_rebuilt": false,
-        "bookkeeping_is_new_proof_acceptance": false
-      }
+    "docs/mathematics/Logic/ProofChecking/source-roles.md": {
+      "title": "Proof-checking source roles",
+      "subject": "Logic",
+      "object": "ProofChecking",
+      "primary_source": "GRWTSK/Logic/ProofChecking/RepositoryConformance.lean",
+      "source_sha256": "24226b48180906ee34cabe132afdebd042e91a4b06f4955fc90ab195f2e98be1",
+      "status": "written-argument"
     },
-    "docs/mathematics/LinearAlgebra/Matrix/HermitianCounterexamples/negative-identity.md": {
-      "title": "A Hermitian matrix with a negative quadratic direction",
-      "subject": "LinearAlgebra",
-      "object": "Matrix/HermitianCounterexamples",
-      "primary_source": "GRWTSK/LinearAlgebra/Matrix/HermitianCounterexamples.lean",
-      "source_sha256": "19bc221e98824279b30df1dfd6411be2ccca6c19ddba2d698f46d1fb0cc9f46e",
-      "status": "historical-source-description",
-      "related_source_sha256": {},
-      "object_split_verification": {
-        "qualification_sha256": "9f8402cc9855d4c6a79b8b44f34ae88ae58bc3f4bfd2e237f5e44cd1812272d9",
-        "source_owners": 10,
-        "owned_mathematical_declarations": 41,
-        "zeta_declarations": 39,
-        "guard_contracts": 32,
-        "compared_types": 30,
-        "other_elaborated_values_exact": 29,
-        "hermitian_local_binder_names_changed": 32,
-        "all_elaborated_values_byte_equal": false,
-        "complete_current_consumer_acceptance": false,
-        "rh_proved": false,
-        "mathlib_source_rebuilt": false,
-        "bookkeeping_is_new_proof_acceptance": false
-      }
+    "docs/mathematics/NumberTheory/Zeta/riemann-hypothesis-criteria.md": {
+      "title": "Riemann hypothesis criteria and their arithmetic premises",
+      "subject": "NumberTheory",
+      "object": "Zeta",
+      "primary_source": "GRWTSK/NumberTheory/Zeta/Riemann/DefectCriterion.lean",
+      "source_sha256": "c387ba899e159bde5274009c792630553f1de8f52e83031a3f7123daf4b3766f",
+      "status": "historical-source-description"
     },
-    "docs/mathematics/Analysis/LaplaceTransform/exponential-energy.md": {
-      "title": "Exponential energy bounds and square integrability",
-      "subject": "Analysis",
-      "object": "LaplaceTransform",
-      "primary_source": "GRWTSK/Analysis/LaplaceTransform/ExponentialEnergy.lean",
-      "source_sha256": "6a9b43308dcb2a373f5d131014ad8c3826829b96c2d6c700ee9fd35232f43083",
-      "status": "historical-source-description",
-      "compatibility_declaration": "GRWTSK.RiemannHypothesis.CCC.integrableOn_sq_tilt_of_energy_exponential",
-      "historical_origin": {
-        "primary_source": "GRWTSK/NumberTheory/Moebius/EnergyAbscissa.lean",
-        "source_sha256": "23330ce4bd519083f9fe8e09ecb9aaf6724a614d6b4a576afef395351e27c549",
-        "exact_declaration_block_sha256": "cb58f6be86693dcc154b21d7584db18cf17598e278befcf5c1c04f57e9c0ff52"
-      },
-      "verification_scope": "Separately qualified frozen26-owner/278-owned/243-Energy-consumer transfer; four fresh source exports,22 unchanged exports reused,five exact intended failures and unchanged phase-scaling ancestry. All28 raw types/27 other values exact; moved proof permits only2 measured typed lambda module-label fields. Strict raw failures retained. Whole-project/full140/RH acceptance are not claimed.",
+    "docs/reference/lean-consolidation-report.md": {
+      "title": "Lean consolidation report",
+      "category": "reference"
+    },
+    "docs/reference/reconstruction.md": {
+      "title": "Repository reconstruction contract",
+      "category": "reference"
+    },
+    "docs/reference/rigor-and-reconstruction-report.md": {
+      "title": "Rigor and reconstruction status",
+      "category": "reference"
+    },
+    "docs/reference/rules/rule-soundness.md": {
+      "title": "Grounded rules and checker soundness",
+      "category": "reference"
+    },
+    "docs/reference/trust-boundary.md": {
+      "title": "Trust boundary and conformance foundation",
+      "category": "reference"
+    },
+    "docs/mathematics/NumberTheory/Moebius/finite-euler-product.md": {
+      "title": "Finite Euler products with a closed cutoff",
+      "subject": "NumberTheory",
+      "object": "Moebius",
+      "primary_source": "GRWTSK/NumberTheory/Moebius/FiniteEulerProduct.lean",
+      "source_sha256": "f43d20140bcc365829454e0b9a715243121d78fda366c0f8b22a3fd80da49341",
+      "status": "fresh-selected",
+      "evidence": "evidence/NumberTheory/Moebius/finite-euler-product-checks-current-2026-10-14.json",
+      "verification_scope": "One immutable Mathlib-only project source, four public theorems and six complete owned declarations; trust zero, fatal warnings, standard transitive axioms, and two measured statement-reuse rejections. Pinned dependency objects reused; no whole-library acceptance or independent human review.",
+      "scoped_native_receipt_sha256": "0c6067fd56aa7b23a0b5fa789bbc1a45f3575426b8596d14e40aa6e6d90f03ce",
       "contribution": {
         "human_mathematical_direction": "R.A. Jacob Martone",
         "formalization_and_documentation_assistance": "OpenAI Codex",
         "source_license": "MIT",
         "upstream_mathlib_credit_and_license": "Upstream authors; Apache-2.0",
-        "scope": "Exact inherited generic conditional declaration, reorganized by mathematical subject; no new arithmetic supplier or RH claim."
-      },
-      "scoped_native_qualification_sha256": "93ceb4846bd2d5e97d091196961a4ae39e4829e9107aa883002c06abb72193d6",
-      "raw_all28_values_exact": false,
-      "raw_other27_values_exact": true,
-      "measured_moved_value_typed_lambda_name_fields": 2
+        "scope": "Classical finite product expansion and prime-factor reindexing generalized to commutative-ring multiplicative weights; no originality claim or arithmetic-growth supplier."
+      }
     },
     "docs/reference/source-intake.md": {
       "title": "Mathematical source candidates",
@@ -3271,6 +3199,11 @@
       "category": "navigation",
       "area": "DynamicalSystems"
     },
+    "docs/mathematics/GroupTheory/index.md": {
+      "title": "GroupTheory",
+      "category": "navigation",
+      "area": "GroupTheory"
+    },
     "docs/mathematics/LinearAlgebra/index.md": {
       "title": "Linear algebra",
       "category": "navigation",
@@ -3300,28 +3233,10 @@
       "title": "Spectral theory",
       "category": "navigation",
       "area": "Spectral"
-    },
-    "docs/mathematics/NumberTheory/Moebius/finite-euler-product.md": {
-      "title": "Finite Euler products with a closed cutoff",
-      "subject": "NumberTheory",
-      "object": "Moebius",
-      "primary_source": "GRWTSK/NumberTheory/Moebius/FiniteEulerProduct.lean",
-      "source_sha256": "f43d20140bcc365829454e0b9a715243121d78fda366c0f8b22a3fd80da49341",
-      "status": "fresh-selected",
-      "evidence": "evidence/NumberTheory/Moebius/finite-euler-product-checks.json",
-      "verification_scope": "One immutable Mathlib-only project source, four public theorems and six complete owned declarations; trust zero, fatal warnings, standard transitive axioms, and two measured statement-reuse rejections. Pinned dependency objects reused; no whole-library acceptance or independent human review.",
-      "scoped_native_receipt_sha256": "e3df0b4fc5e2a57f54e0389322eaf73d72ac104687ac3188d2ce58cb655a42a3",
-      "contribution": {
-        "human_mathematical_direction": "R.A. Jacob Martone",
-        "formalization_and_documentation_assistance": "OpenAI Codex",
-        "source_license": "MIT",
-        "upstream_mathlib_credit_and_license": "Upstream authors; Apache-2.0",
-        "scope": "Classical finite product expansion and prime-factor reindexing generalized to commutative-ring multiplicative weights; no originality claim or arithmetic-growth supplier."
-      }
     }
   },
   "object_binding_registry": "docs/reference/object-source-bindings.json",
-  "object_binding_registry_sha256": "ddab56a95a5caeb9cfd77920bb3adaabcc3443cac592896dc738260c5aed8bb9",
+  "object_binding_registry_sha256": "b0a6761e855a8323abfe92c8fd9fa76cb3a38c0170b7ab264e54c27c08c33928",
   "navigation": {
     "schema": "subject-index-navigation-v1",
     "summary": "docs/reference/library-summary.json"

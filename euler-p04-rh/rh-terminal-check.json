@@ -1,0 +1,11 @@
+{
+  "status": "kernel-checked",
+  "source": "/Users/think/Documents/ChatGPT/math 2/euler-p04-rh/RHTerminal.lean",
+  "source_sha256": "e727b109abc8eb32efdb4d076139bd976de653e198a4ec094fe2a4ca77f3739b",
+  "kernel_trust_level": 0,
+  "warnings_as_errors": true,
+  "exit_code": 0,
+  "stdout": "'EulerP04RH.RHTerminal.regularized_identity_of_initial_and_holomorphic' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'EulerP04RH.RHTerminal.literal_RH_of_regularized_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EulerP04RH.RHTerminal.literal_RH_of_pickup_Laplace_inputs' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EulerP04RH.RHTerminal.literal_RH_of_P04_and_explicit_analytic_inputs' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+  "stderr": "",
+  "scope": "Checked pole-removed zeta, analytic identity continuation from Re z>1/2, full zero reflection, and literal RH consumer. Actual-source P04 consumer still explicitly requires the polynomial-energy-to-Laplace-holomorphy return and the initial actual pickup Laplace formula. No P04 or RH proof is asserted unconditionally."
+}

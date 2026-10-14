@@ -1,0 +1,12 @@
+{
+  "status": "kernel-checked",
+  "source": "/Users/think/Documents/ChatGPT/math 2/asbn-p04/SourceBlockEnergy.lean",
+  "source_sha256": "28accf6fe4cfa04bc3c4617e3c45812c173f9ac5c5d2c0e1e62fce2ce9500fd7",
+  "kernel_trust_level": 0,
+  "warnings_as_errors": true,
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "exit_code": 0,
+  "stdout": "'ASBNP04.FiniteProduct.primeState_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ASBNP04.FiniteProduct.source_correlations_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ASBNP04.FiniteProduct.source_block_energy_exact' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ASBNP04.FiniteProduct.restricted_source_memLp_two' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ASBNP04.FiniteProduct.sourceEnergy_eq_l2_norm_sq' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "scope": "Actual source-state continuity, causal entry, unconditional all-source BE, compact correlation integrability, restricted-source membership in L2, and equality of source energy with its genuine squared L2 norm."
+}

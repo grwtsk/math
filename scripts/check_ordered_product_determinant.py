@@ -13,6 +13,7 @@ import fcntl
 import hashlib
 import json
 import os
+import re
 import resource
 import signal
 import stat
@@ -21,7 +22,7 @@ import time
 import uuid
 
 ROOT = Path(__file__).resolve().parents[1]
-CONTROL_ROOT = "checks/LinearAlgebra/Determinant/OrderedProduct/Controls/"
+CONTROL_ROOT = "GRWTSK/LinearAlgebra/Determinant/OrderedProduct/Checks/"
 # Independently retained fixture bytes, before runner implementation.
 CONTROLS = {
     "ExactRingAndWeighted": "c28589d246b9b7bbf4538eb8b0fa6c0ff921445d5d70f4a8fe940e1d515f1be7",
@@ -31,13 +32,14 @@ CONTROLS = {
 LAYOUT_INPUTS = ["AGENTS.md", "docs/math-layout.json", "scripts/check_math_layout.py"]
 INTERFACE_INPUTS = [
     "scripts/check_ordered_product_determinant.py", "lean-toolchain",
-    "lakefile.toml", "lake-manifest.json", "checks/LinearAlgebra/Determinant/OrderedProduct/Audit.lean",
+    "lakefile.toml", "lake-manifest.json", "GRWTSK/LinearAlgebra/Determinant/OrderedProduct/Checks/Audit.lean",
     "GRWTSK/Algebra/OrderedProduct.lean",
     "GRWTSK/LinearAlgebra/SchrodingerTransfer.lean",
     "GRWTSK/LinearAlgebra/JacobiTransfer.lean",
     "GRWTSK/LinearAlgebra/OrderedTransfer.lean",
     "GRWTSK/LinearAlgebra/OrderedProductDeterminant.lean",
-] + [CONTROL_ROOT + name + ".lean" for name in CONTROLS]
+] + [CONTROL_ROOT + ("Positive/" if name == "ExactRingAndWeighted" else "Negative/") +
+     name + ".lean" for name in CONTROLS]
 INPUTS = LAYOUT_INPUTS + INTERFACE_INPUTS
 SECONDS = 1800  # Per procedure, not a four-procedure aggregate reservation.
 RSS_BYTES = 12 * 1024**3
@@ -52,7 +54,8 @@ def digest(path):
 def freeze(full_layout=True):
     inputs = {name: digest(ROOT / name) for name in (INPUTS if full_layout else INTERFACE_INPUTS)}
     for name, expected in CONTROLS.items():
-        if inputs[CONTROL_ROOT + name + ".lean"] != expected:
+        relative = CONTROL_ROOT + ("Positive/" if name == "ExactRingAndWeighted" else "Negative/") + name + ".lean"
+        if inputs[relative] != expected:
             raise RuntimeError("STALE_FIXTURE: " + name)
     if (ROOT / "lean-toolchain").read_text().strip() != "leanprover/lean4:v4.33.0":
         raise RuntimeError("UNSUPPORTED_TOOLCHAIN")
@@ -69,9 +72,11 @@ def qualified(label, returncode, output):
         }.items())
     if label == "ExactRingAndWeighted":
         return returncode == 0 and "error:" not in output
-    diagnostic = CONTROL_ROOT + label + ".lean:4:0: error: unsolved goals"
-    matching_source = any(line == diagnostic or line == str(ROOT) + "/" + diagnostic
-                          for line in output.splitlines())
+    diagnostic = CONTROL_ROOT + "Negative/" + label + ".lean:4:"
+    matching_source = any(
+        (line.startswith(diagnostic) or line.startswith(str(ROOT) + "/" + diagnostic))
+        and re.search(r":\d+: error: unsolved goals$", line)
+        for line in output.splitlines())
     return (label in CONTROLS and returncode == 1 and matching_source
             and output.count("error:") == 1
             and "error: unsolved goals" in output and "⊢ False" in output
@@ -196,8 +201,9 @@ def main():
         report["restart_cursor"] = "audit"
         receipt.write_text(json.dumps(report, indent=2) + "\n")
         try:
-            for label, source in [("audit", "checks/LinearAlgebra/Determinant/OrderedProduct/Audit.lean")] + [
-                    (name, CONTROL_ROOT + name + ".lean") for name in CONTROLS]:
+            for label, source in [("audit", "GRWTSK/LinearAlgebra/Determinant/OrderedProduct/Checks/Audit.lean")] + [
+                    (name, CONTROL_ROOT + ("Positive/" if name == "ExactRingAndWeighted" else "Negative/") +
+                     name + ".lean") for name in CONTROLS]:
                 report["restart_cursor"] = label
                 receipt.write_text(json.dumps(report, indent=2) + "\n")
                 if freeze(full_layout) != inputs:

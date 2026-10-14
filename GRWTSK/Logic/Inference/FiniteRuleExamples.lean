@@ -4,7 +4,7 @@ Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.Logic.Inference.FiniteRuleSystems
 
 /-!
-# CCC alternative-support fixtures
+# Grounded and cyclic finite-rule examples
 
 Conditional cycles supply no ground proof. An independent current provider can
 survive the loss of another route, while a whole-claim withdrawal excludes all
