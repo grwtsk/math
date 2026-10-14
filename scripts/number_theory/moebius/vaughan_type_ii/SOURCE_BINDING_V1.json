@@ -1,0 +1,53 @@
+{
+  "schema": "grwtsk-vaughan-typeii-sampled-return-inputs-v1",
+  "historical_archive": {
+    "filename": "grwtsk_typeII_sampled_return.zip",
+    "bytes": 5256433,
+    "sha256": "0c4ed7f52e3b01707300e027a522983471751c7287c156b868f57044032a4134",
+    "runtime_dependency": false
+  },
+  "historical_center_archive": {
+    "filename": "grwtsk_typeII_center_sieve_return.zip",
+    "bytes": 4684470,
+    "sha256": "b2004b3b7d47654cb9155dd6720a05849e5212e8faafd7bceb2df54f135a7cb0",
+    "runtime_dependency": false
+  },
+  "files": {
+    "evidence/NumberTheory/Moebius/VaughanTypeII/previous-centers.json": {
+      "bytes": 88569,
+      "sha256": "e897c444bcb13215425524b912d762931e1f166e195f8a87e32e4517a7259571"
+    },
+    "scripts/number_theory/moebius/vaughan_type_ii/check_sampled_return.py": {
+      "bytes": 4917,
+      "sha256": "a64c13771ffa7c8565a51f47c45ed776f393abafe839294e368507608c3bd706"
+    },
+    "scripts/number_theory/moebius/vaughan_type_ii/inputs/green_discrepancy.py": {
+      "bytes": 9572,
+      "sha256": "607cab3f6f8b8da0ed5909681b8d8dd5db3b9932eab6708bbc8a3d45d4d2b095"
+    },
+    "scripts/number_theory/moebius/vaughan_type_ii/inputs/vaughan_source.py": {
+      "bytes": 11824,
+      "sha256": "c4a0cfdfce29b78d7eff247a4a8141c8857d54852c793973c34de97d4f7e83ec"
+    },
+    "scripts/number_theory/moebius/vaughan_type_ii/sampled_source.py": {
+      "bytes": 12137,
+      "sha256": "5903fc77dfd7229f433968bb07bfac14736174ef2179ce8d40f42364cda7fbe4"
+    },
+    "scripts/number_theory/moebius/vaughan_type_ii/tests/test_sampling.py": {
+      "bytes": 5677,
+      "sha256": "1766ef4a4b7456f18a91a1f1947169750c2b50b57e7dc3e995ba08ad0e73b88d"
+    }
+  },
+  "expected_numeric_sha256": {
+    "10": "6cb2a016c4580f90a48fb5c850eda6765544d44d121c93e6d1f64684fe94e673",
+    "12": "17ea18cd68000ddb556859e1729f78f5e2c34e4e847c1a46b7402cab2b67138b"
+  },
+  "upstream_source_bytes": {
+    "green_discrepancy.py": "607cab3f6f8b8da0ed5909681b8d8dd5db3b9932eab6708bbc8a3d45d4d2b095",
+    "sampled_source.py": "4fdf8a5deeea5696b1e87ebd4c4ae0257b30cbc5f40a02f2f905858d3a8232b3",
+    "test_sampling.py": "1766ef4a4b7456f18a91a1f1947169750c2b50b57e7dc3e995ba08ad0e73b88d",
+    "vaughan_source.py": "c4a0cfdfce29b78d7eff247a4a8141c8857d54852c793973c34de97d4f7e83ec"
+  },
+  "packaging_change": "sampled_source.py reads the deduplicated prior-center fixture from the repository evidence tree; arithmetic definitions and output schema are unchanged",
+  "scope": "maintained executable source and required fixture closure; not paper-proof, Lean, all-scale, or RH acceptance"
+}
