@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "policy": "Maintained reader documentation is explicitly registered; mathematical pages use subject/object paths and historical snapshots remain outside current navigation.",
+  "entry_points": [
+    "README.md",
+    "docs/index.md"
+  ],
+  "registered_pages": [
+    "docs/ccc-cutoff-laplace.md",
+    "docs/ccc-original-pickup-identification.md",
+    "docs/ccc-prime-cascade.md",
+    "docs/ccc-prime-research-continuation.md",
+    "docs/ccc-prime-window-laplace.md",
+    "docs/ccc-recording-scale.md",
+    "docs/ccc-rh-research.md",
+    "docs/cocycle-product.md",
+    "docs/common-j-counterexamples.md",
+    "docs/common-j.md",
+    "docs/corkscrew-chamber-cap.md",
+    "docs/explanation/documentation.md",
+    "docs/explanation/evidence.md",
+    "docs/finite-coverage.md",
+    "docs/gauge-state.md",
+    "docs/how-to/verify.md",
+    "docs/index.md",
+    "docs/interval-reflection.md",
+    "docs/jacobi-transfer.md",
+    "docs/lean-transfer-continuation.md",
+    "docs/math-layout.md",
+    "docs/math-monitor.md",
+    "docs/mathematics/Analysis/Asymptotics/polynomial-error.md",
+    "docs/mathematics/Combinatorics/Sequences/coverage-and-quotas.md",
+    "docs/mathematics/Logic/ProofChecking/source-roles.md",
+    "docs/mathematics/NumberTheory/Moebius/matched-pickup.md",
+    "docs/mathematics/NumberTheory/Prime/least-prime.md",
+    "docs/mathematics/NumberTheory/Zeta/riemann-hypothesis-criteria.md",
+    "docs/moebius-prime-product-debt.md",
+    "docs/ordered-product-determinant.md",
+    "docs/ordered-product-gauge.md",
+    "docs/ordered-product.md",
+    "docs/ordered-transfer.md",
+    "docs/polarization.md",
+    "docs/reference/lean-consolidation-report.md",
+    "docs/reference/library-pages.md",
+    "docs/reference/reconstruction.md",
+    "docs/reference/results.md",
+    "docs/reference/rigor-and-reconstruction-report.md",
+    "docs/reference/rules/rule-soundness.md",
+    "docs/reference/source-layout.md",
+    "docs/reference/trust-boundary.md",
+    "docs/rh-inference-guards.md",
+    "docs/rh-research-continuation.md",
+    "docs/schrodinger-transfer.md",
+    "docs/sequence-realization.md",
+    "docs/smooth-test-separation.md",
+    "docs/start/least-prime.md",
+    "docs/sturmian-phase-count-limits.md",
+    "docs/ten-martini-zero.md",
+    "docs/waveform-interfaces.md"
+  ],
+  "generated_pages": {
+    "docs/reference/results.md": "scripts/check_documentation.py --render"
+  },
+  "structured_references": [
+    "docs/math-layout.json",
+    "docs/reference/math-source-catalog.json",
+    "docs/reference/reconstruction-recipes.json",
+    "docs/reference/repository-artifact-catalog.json",
+    "docs/reference/results.json",
+    "docs/reference/rules/registry-schema.json",
+    "docs/reference/rules/registry.json"
+  ],
+  "historical_exclusions": [
+    {
+      "path": "docs/changes/README-before-reader-navigation.md",
+      "reason": "immutable pre-navigation snapshot; excluded from current reader navigation"
+    }
+  ]
+}

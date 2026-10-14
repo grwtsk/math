@@ -203,6 +203,287 @@ class OwnerCensusControls(unittest.TestCase):
             census.generate_audit_source(OWNERS, runtime_owner_source_hash=census.RUNTIME_SOURCE_SHA256)
 
 
+def generated_partial_records():
+    """Synthetic metadata controls only; not declarations compiled by Lean."""
+    rows = []
+    for index, entry in enumerate(census.GENERATED_PARTIAL_PROFILE):
+        typ = "Nat → Nat" + (" → Nat" if index % 2 else "")
+        base = dict(owner=entry["owner"], kind="definition", type=typ,
+                    runtime_helper_owner_source_sha256=entry["owner_source_sha256"])
+        rows.append(declaration(entry["original"], **base))
+        rows.append(declaration(entry["helper"], partial=True,
+                                known_generated_runtime_helper=True, **base))
+    return rows
+
+
+def generated_partial_transcript(rows):
+    return transcript(rows, [
+        {"module": owner, "declarations": sum(row["module"] == owner for row in rows)}
+        for owner in sorted(census.GENERATED_PARTIAL_OWNER_SHA256)
+    ])
+
+
+class GeneratedPartialProfileControls(unittest.TestCase):
+    """Hostile pure fixtures for the new opt-in profile, with no native claims."""
+    def accept(self, rows=None, hashes=None, **options):
+        rows = generated_partial_records() if rows is None else rows
+        options = {"allow_generated_partial_profile": True,
+                   "generated_partial_profile_sha256": census.GENERATED_PARTIAL_PROFILE_SHA256,
+                   **options}
+        return census.validate_owner_census(
+            generated_partial_transcript(rows), sorted(census.GENERATED_PARTIAL_OWNER_SHA256),
+            census.GENERATED_PARTIAL_OWNER_SHA256 if hashes is None else hashes, **options)
+
+    def reject(self, rows=None, **options):
+        with self.assertRaises(RuntimeError):
+            self.accept(rows, **options)
+
+    def test_exact_fifteen_safe_original_pairs_accept_when_explicitly_enabled(self):
+        result = self.accept()
+        self.assertEqual(sum(row["known_generated_runtime_helper"] for row in result["declarations"]), 15)
+        self.assertEqual(result["owned_module_count"], 9)
+        self.assertTrue(result["generated_partial_profile_enabled"])
+        self.assertTrue(result["runtime_exception_enabled"])
+        self.assertEqual(result["generated_partial_profile_sha256"], census.GENERATED_PARTIAL_PROFILE_SHA256)
+        self.assertIn("TYPE OR VALUE", result["unsafe_partial_reference_scope"])
+        self.assertIn("not an arbitrary transitive", result["unsafe_partial_reference_scope"])
+
+    def test_profile_descriptor_has_exact_entries_and_canonical_signature(self):
+        descriptor = census.generated_partial_profile_descriptor()
+        self.assertEqual(set(descriptor), {"kind", "profile_sha256", "entries"})
+        self.assertEqual(descriptor["kind"], "pinned-lean-generated-partial-recursor-profile")
+        self.assertEqual(len(descriptor["entries"]), 15)
+        encoded = json.dumps(descriptor["entries"], sort_keys=True, separators=(",", ":")).encode()
+        self.assertEqual(hashlib.sha256(encoded).hexdigest(), descriptor["profile_sha256"])
+        descriptor["entries"][0]["helper"] = "untrusted"
+        self.assertNotEqual(census.GENERATED_PARTIAL_PROFILE[0]["helper"], "untrusted")
+
+    def test_partial_profile_is_rejected_by_default(self):
+        rows = generated_partial_records()
+        with self.assertRaises(RuntimeError):
+            census.validate_owner_census(generated_partial_transcript(rows),
+                census.GENERATED_PARTIAL_OWNER_SHA256, census.GENERATED_PARTIAL_OWNER_SHA256)
+
+    def test_explicitly_disabled_profile_is_rejected(self):
+        self.reject(allow_generated_partial_profile=False, generated_partial_profile_sha256="")
+
+    def test_missing_or_changed_profile_signature_is_rejected(self):
+        for signature in ("", "a" * 64, None, True):
+            with self.subTest(signature=signature):
+                self.reject(generated_partial_profile_sha256=signature)
+
+    def test_profile_permission_while_disabled_is_rejected(self):
+        self.reject(allow_generated_partial_profile=False)
+
+    def test_integer_policy_flags_are_rejected(self):
+        for field in ("allow_generated_partial_profile", "allow_pinned_runtime"):
+            with self.subTest(field=field):
+                self.reject(**{field: 1})
+
+    def test_legacy_profile_cannot_be_combined_with_partial_profile(self):
+        self.reject(allow_pinned_runtime=True)
+
+    def test_each_owner_source_pin_is_independently_checked(self):
+        for owner in census.GENERATED_PARTIAL_OWNER_SHA256:
+            hashes = dict(census.GENERATED_PARTIAL_OWNER_SHA256)
+            hashes[owner] = "a" * 64
+            with self.subTest(owner=owner):
+                self.reject(hashes=hashes)
+
+    def test_each_native_permission_source_hash_is_checked(self):
+        rows = generated_partial_records()
+        for index in (0, 1, len(rows)-1):
+            changed = [dict(row) for row in rows]
+            changed[index]["runtime_helper_owner_source_sha256"] = "a" * 64
+            with self.subTest(index=index):
+                self.reject(changed)
+
+    def test_wrong_helper_name_and_fake_suffix_do_not_qualify(self):
+        rows = generated_partial_records()
+        rows[1]["name"] = "Unrelated.claimed._unsafe_rec"
+        self.reject(rows)
+        rows = generated_partial_records()
+        rows.append(declaration("Unrelated.fake._unsafe_rec",
+            owner=census.GENERATED_PARTIAL_PROFILE[0]["owner"], kind="definition",
+            partial=True, known_generated_runtime_helper=True,
+            runtime_helper_owner_source_sha256=census.GENERATED_PARTIAL_PROFILE[0]["owner_source_sha256"]))
+        self.reject(rows)
+
+    def test_unlisted_partial_with_safe_original_is_rejected(self):
+        rows = generated_partial_records()
+        entry = census.GENERATED_PARTIAL_PROFILE[0]
+        base = dict(owner=entry["owner"], kind="definition", type="Nat → Nat",
+                    runtime_helper_owner_source_sha256=entry["owner_source_sha256"])
+        rows.extend([declaration("Unrelated.custom", **base),
+                     declaration("Unrelated.custom._unsafe_rec", partial=True, **base)])
+        self.reject(rows)
+
+    def test_wrong_helper_kind_is_rejected(self):
+        for kind in ("opaque", "theorem", "axiom", "generated"):
+            rows = generated_partial_records()
+            rows[1]["kind"] = kind
+            with self.subTest(kind=kind):
+                self.reject(rows)
+
+    def test_wrong_helper_flags_are_rejected(self):
+        for unsafe, partial in ((True, True), (True, False), (False, False)):
+            rows = generated_partial_records()
+            rows[1].update(unsafe=unsafe, partial=partial)
+            with self.subTest(unsafe=unsafe, partial=partial):
+                self.reject(rows)
+
+    def test_expected_helper_cannot_hide_bad_flags_by_clearing_classification(self):
+        for changes in ({"partial": False}, {"kind": "opaque", "partial": False}):
+            rows = generated_partial_records()
+            rows[1].update(changes, known_generated_runtime_helper=False)
+            with self.subTest(changes=changes):
+                self.reject(rows)
+
+    def test_wrong_helper_owner_is_rejected(self):
+        rows = generated_partial_records()
+        other = census.GENERATED_PARTIAL_PROFILE[1]
+        rows[1].update(module=other["owner"],
+                       runtime_helper_owner_source_sha256=other["owner_source_sha256"])
+        self.reject(rows)
+
+    def test_mismatched_original_type_is_rejected(self):
+        rows = generated_partial_records()
+        rows[0]["type"] = "Nat → Bool"
+        self.reject(rows)
+
+    def test_missing_paired_original_is_rejected(self):
+        rows = generated_partial_records()
+        del rows[0]
+        self.reject(rows)
+
+    def test_missing_expected_helper_is_rejected(self):
+        rows = generated_partial_records()
+        del rows[1]
+        self.reject(rows)
+
+    def test_original_wrong_exact_name_is_rejected(self):
+        rows = generated_partial_records()
+        rows[0]["name"] += "Different"
+        self.reject(rows)
+
+    def test_original_wrong_owner_is_rejected(self):
+        rows = generated_partial_records()
+        other = census.GENERATED_PARTIAL_PROFILE[1]
+        rows[0].update(module=other["owner"],
+                       runtime_helper_owner_source_sha256=other["owner_source_sha256"])
+        self.reject(rows)
+
+    def test_original_must_be_safe_nonpartial_definition(self):
+        for changes in ({"kind": "theorem"}, {"kind": "opaque"}, {"unsafe": True},
+                        {"partial": True}, {"known_generated_runtime_helper": True}):
+            rows = generated_partial_records()
+            rows[0].update(changes)
+            with self.subTest(changes=changes):
+                self.reject(rows)
+
+    def test_original_runtime_reference_is_rejected(self):
+        rows = generated_partial_records()
+        rows[0]["direct_value_reference_to_runtime_helper"] = True
+        self.reject(rows)
+
+    def test_theorem_type_runtime_reference_flag_is_rejected(self):
+        rows = generated_partial_records()
+        entry = census.GENERATED_PARTIAL_PROFILE[0]
+        rows.append(declaration("Unrelated.proofTypeUsesHelper", owner=entry["owner"],
+            type=entry["helper"]+" 0 = 0", direct_value_reference_to_runtime_helper=True,
+            runtime_helper_owner_source_sha256=entry["owner_source_sha256"]))
+        self.reject(rows)
+
+    def test_theorem_value_runtime_reference_flag_is_rejected(self):
+        rows = generated_partial_records()
+        entry = census.GENERATED_PARTIAL_PROFILE[0]
+        rows.append(declaration("Unrelated.proofValueUsesHelper", owner=entry["owner"],
+            direct_value_reference_to_runtime_helper=True,
+            runtime_helper_owner_source_sha256=entry["owner_source_sha256"]))
+        self.reject(rows)
+
+    def test_helper_and_original_custom_axioms_are_rejected(self):
+        for index in (0, 1):
+            rows = generated_partial_records()
+            rows[index]["axioms"] = ["Unrelated.customAxiom"]
+            with self.subTest(index=index):
+                self.reject(rows)
+
+    def test_unrelated_unsafe_still_rejected(self):
+        rows = generated_partial_records()
+        entry = census.GENERATED_PARTIAL_PROFILE[0]
+        rows.append(declaration("Unrelated.unsafeRuntime", owner=entry["owner"],
+            kind="definition", unsafe=True,
+            runtime_helper_owner_source_sha256=entry["owner_source_sha256"]))
+        self.reject(rows)
+
+    def test_each_native_boolean_and_exact_schema_is_checked(self):
+        for field in ("unsafe", "partial", "known_generated_runtime_helper",
+                      "direct_value_reference_to_runtime_helper"):
+            rows = generated_partial_records()
+            rows[1][field] = int(rows[1][field])
+            with self.subTest(field=field):
+                self.reject(rows)
+        rows = generated_partial_records()
+        rows[1]["unverified_compiler_attribute"] = True
+        self.reject(rows)
+
+    def test_native_helper_requires_structural_expr_and_exact_levels(self):
+        source = census.helper_source().decode()
+        self.assertIn("Expr.equal info.type original.type", source)
+        self.assertIn("info.levelParams == original.levelParams", source)
+        self.assertNotIn("info.type == original.type", source)
+        self.assertIn("Compiler.mkUnsafeRecName entry.original == entry.helper", source)
+
+    def test_native_and_python_exact_profile_tables_are_identical(self):
+        import re
+        source = census.helper_source().decode()
+        pattern = (r"helper := `([^,\n]+),\s*original := `([^,\n]+),\s*"
+                   r"owner := `([^,\n]+),\s*ownerSourceHash := \"([0-9a-f]{64})\"")
+        actual = [dict(helper=h, original=o, owner=w, owner_source_sha256=s)
+                  for h, o, w, s in re.findall(pattern, source)]
+        self.assertEqual(actual, list(census.GENERATED_PARTIAL_PROFILE))
+        self.assertIn('let acceptedProfile := "'+census.GENERATED_PARTIAL_PROFILE_SHA256+'"', source)
+
+    def test_profile_wrapper_requires_all_owners_and_exact_permission(self):
+        owners = sorted(census.GENERATED_PARTIAL_OWNER_SHA256)
+        source = census.generate_audit_source(owners,
+            generated_partial_profile_sha256=census.GENERATED_PARTIAL_PROFILE_SHA256)
+        self.assertTrue(source.endswith('#audit_math_trust "" "'+
+            census.GENERATED_PARTIAL_PROFILE_SHA256+'"\n'))
+        for rejected in ("a" * 64, True, None):
+            with self.subTest(rejected=rejected), self.assertRaises(RuntimeError):
+                census.generate_audit_source(owners, generated_partial_profile_sha256=rejected)
+        with self.assertRaises(RuntimeError):
+            census.generate_audit_source(owners[:-1],
+                generated_partial_profile_sha256=census.GENERATED_PARTIAL_PROFILE_SHA256)
+        with self.assertRaises(RuntimeError):
+            census.generate_audit_source(owners,
+                generated_partial_profile_sha256=census.GENERATED_PARTIAL_PROFILE_SHA256,
+                runtime_owner_source_hash=census.RUNTIME_SOURCE_SHA256)
+
+    def test_missing_profile_owner_inventory_is_rejected(self):
+        rows = generated_partial_records()
+        missing = census.GENERATED_PARTIAL_PROFILE[-1]["owner"]
+        rows = [row for row in rows if row["module"] != missing]
+        owners = [owner for owner in census.GENERATED_PARTIAL_OWNER_SHA256 if owner != missing]
+        hashes = {owner: census.GENERATED_PARTIAL_OWNER_SHA256[owner] for owner in owners}
+        text = transcript(rows, [{"module": owner,
+            "declarations": sum(row["module"] == owner for row in rows)} for owner in owners])
+        with self.assertRaises(RuntimeError):
+            census.validate_owner_census(text, owners, hashes,
+                allow_generated_partial_profile=True,
+                generated_partial_profile_sha256=census.GENERATED_PARTIAL_PROFILE_SHA256)
+
+    def test_native_nonzero_exit_and_error_text_are_not_parser_acceptance(self):
+        self.reject(returncode=1)
+        text = generated_partial_transcript(generated_partial_records()) + "error: wrong elaboration\n"
+        with self.assertRaises(RuntimeError):
+            census.validate_owner_census(text, census.GENERATED_PARTIAL_OWNER_SHA256,
+                census.GENERATED_PARTIAL_OWNER_SHA256, allow_generated_partial_profile=True,
+                generated_partial_profile_sha256=census.GENERATED_PARTIAL_PROFILE_SHA256)
+
+
 def reference_evidence(receipt_path: Path) -> dict:
     """Revalidate saved native controls without executing or importing their checker."""
     receipt = json.loads(receipt_path.read_text())
@@ -210,7 +491,7 @@ def reference_evidence(receipt_path: Path) -> dict:
         raise RuntimeError("native reference controls did not pass")
     hashes = receipt["snapshot"]["sha256"]
     if hashes["scripts/check_math_trust.py"] != census.NATIVE_CHECKER_SHA256 or hashes[
-        "checks/MathTrustAudit.lean"] != census.NATIVE_OBSERVER_SHA256:
+        "GRWTSK/Logic/ProofChecking/Checks/OwnedDeclarationAudit.lean"] != census.NATIVE_OBSERVER_SHA256:
         raise RuntimeError("native receipt has a different observer or parser")
     observations = []
     for result in receipt["results"]:
@@ -242,7 +523,7 @@ def reference_evidence(receipt_path: Path) -> dict:
 
 def canonical_source_identity(native_root: Path) -> dict:
     native_parser = (native_root / "scripts/check_math_trust.py").read_bytes()
-    native_observer = (native_root / "checks/MathTrustAudit.lean").read_bytes()
+    native_observer = (native_root / "GRWTSK/Logic/ProofChecking/Checks/OwnedDeclarationAudit.lean").read_bytes()
     if hashlib.sha256(native_parser).hexdigest() != census.NATIVE_CHECKER_SHA256 or hashlib.sha256(
         native_observer).hexdigest() != census.NATIVE_OBSERVER_SHA256:
         raise RuntimeError("canonical audit source changed from native validated source")
@@ -255,12 +536,15 @@ def canonical_source_identity(native_root: Path) -> dict:
     if any(native_functions[key] != local_functions[key] for key in keys):
         raise RuntimeError("canonical core parser adaptation changed a function body")
     adapted = native_observer.removeprefix(b'import GRWTSK\n').removesuffix(b'\n#audit_math_trust ""\n')
-    if census.helper_source() != adapted:
-        raise RuntimeError("canonical observer adaptation changed more than import/invocation")
+    if hashlib.sha256(adapted).hexdigest() != census.LEGACY_HELPER_SHA256:
+        raise RuntimeError("historical observer adaptation no longer matches its preserved pin")
+    census.helper_source()
     return {"native_parser_sha256": census.NATIVE_CHECKER_SHA256,
             "native_observer_sha256": census.NATIVE_OBSERVER_SHA256,
             "helper_sha256": census.HELPER_SHA256, "core_functions_byte_identical": list(keys),
-            "observer_body_byte_identical": True}
+            "historical_observer_adaptation_sha256": census.LEGACY_HELPER_SHA256,
+            "observer_body_byte_identical": False,
+            "observer_extension": "optional exact 15-pair generated-partial profile; fresh native controls required"}
 
 
 if __name__ == "__main__":
@@ -269,14 +553,20 @@ if __name__ == "__main__":
     parser.add_argument("--native-root", type=Path, help="canonical checker/helper source, read only")
     parser.add_argument("--output", type=Path, help="optional Python-control evidence JSON")
     args = parser.parse_args()
-    suite = unittest.defaultTestLoader.loadTestsFromTestCase(OwnerCensusControls)
-    names = [test.id() for test in suite]
+    suite = unittest.TestSuite([
+        unittest.defaultTestLoader.loadTestsFromTestCase(OwnerCensusControls),
+        unittest.defaultTestLoader.loadTestsFromTestCase(GeneratedPartialProfileControls),
+    ])
+    names = [test.id() for group in suite for test in group]
     result = unittest.TextTestRunner(verbosity=2).run(suite)
     if not result.wasSuccessful():
         raise SystemExit(1)
     evidence = {"status": "PYTHON_OWNER_CENSUS_CONTROLS_PASSED", "tests_run": result.testsRun,
                 "tests": names, "new_lean_commands": 0, "fresh_bundle_kernel_check": False,
                 "helper_sha256": census.HELPER_SHA256,
+                "generated_partial_profile_sha256": census.GENERATED_PARTIAL_PROFILE_SHA256,
+                "legacy_tests_run": 32,
+                "native_profile_acceptance": "PENDING fresh native controls and full owner census",
                 "parser_sha256": hashlib.sha256(Path(census.__file__).read_bytes()).hexdigest(),
                 "controls_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest()}
     if args.native_root:

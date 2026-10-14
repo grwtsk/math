@@ -1,0 +1,19 @@
+{
+  "status": "kernel-checked",
+  "source": "/Users/local/Documents/ChatGPT/math 2/hssc-p04/CCCAdapter.lean",
+  "source_sha256": "e7b7e6fbc35041f02fc7edf8007c7f3d47244cf1391f13d59ac863452035da24",
+  "kernel_trust_level": 0,
+  "warnings_as_errors": true,
+  "exit_code": 0,
+  "source_unchanged": true,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "native_source": "/Users/local/Desktop/math/GRWTSK/RiemannHypothesis/CCC/PickupBudgets.lean",
+  "native_source_sha256": "a0735d6120754b4921c55346a5fb0203cb3586bd6f312289f83b0a76218cffbb",
+  "native_source_compiled_fresh": true,
+  "scope": "Existing grwtsk/math CCC.PickupCrossPoly equals literal PPNCP04.P04; response, coefficient, ordered Gram and complete signed cross sums identified with nonnegative endpoint conversion. HSS equivalence and conditional literal RH consumer, no arithmetic bound asserted.",
+  "stdout": "'HSSCP04.CCCAdapter.cross_eq' depends on axioms: [propext, Classical.choice, Quot.sound]\n'HSSCP04.CCCAdapter.native_P04_eq_literal_P04' depends on axioms: [propext, Classical.choice, Quot.sound]\n'HSSCP04.CCCAdapter.HSS_iff_native_P04' depends on axioms: [propext, Classical.choice, Quot.sound]\n\nEXIT 0"
+}

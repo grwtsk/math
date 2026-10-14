@@ -4,6 +4,7 @@ import json
 import os
 from pathlib import Path
 import subprocess
+import tempfile
 import time
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -16,12 +17,14 @@ MODULES = [
     "GRWTSK/NumberTheory/Zeta/Riemann.lean",
 ]
 CHECKS = [
-    "checks/NumberTheory/Zeta/Riemann/Declarations.lean",
-    "checks/NumberTheory/Zeta/Riemann/ExcludedTrivialZero.lean",
-    "checks/Logic/Counterexamples/PositivityIsNotVanishing.lean",
+    "GRWTSK/NumberTheory/Zeta/Riemann/Checks/Declarations.lean",
+    "GRWTSK/NumberTheory/Zeta/Riemann/Checks/Positive/ExcludedTrivialZero.lean",
+    "GRWTSK/Logic/Counterexamples/Checks/Positive/PositivityIsNotVanishing.lean",
 ]
-BUILD = ROOT / ".local/rh-target/build"
-BUILD.mkdir(parents=True, exist_ok=True)
+(ROOT / ".local").mkdir(exist_ok=True)
+RUN = Path(tempfile.mkdtemp(prefix="rh-target-", dir=ROOT / ".local"))
+BUILD = RUN / "build"
+BUILD.mkdir()
 lean = subprocess.check_output(["elan", "which", "lean"], cwd=ROOT, text=True).strip()
 lean_version = subprocess.check_output([lean, "--version"], text=True).strip()
 if "4.33.0" not in lean_version:
@@ -96,5 +99,6 @@ finally:
         "files": {p: hashlib.sha256((ROOT / p).read_bytes()).hexdigest() for p in inputs},
         "declarations": sorted(declarations, key=lambda d: d["name"]), "checks": results,
     }
-    (ROOT / "evidence/rh-target-checks.json").write_text(json.dumps(report, indent=2) + "\n")
+    with (RUN / "receipt.json").open("x", encoding="utf-8") as output:
+        output.write(json.dumps(report, indent=2) + "\n")
 print(json.dumps({"cell": report["cell"], "outcome": report["outcome"], "declarations": len(declarations), "checks": len(results)}))

@@ -14,62 +14,62 @@
     "Cli": "6130a47896ce867c6a4a55373441e59e565bad0f"
   },
   "source_sha256": {
-    "GRWTSK/ProofHorizon/CorkscrewChamberCap/ArithmeticPickupSource.lean": "041fa625e5e2bc239e3df3b471f545f7ba080093723c2f3710c08ee4bc92c8c2",
-    "GRWTSK/ProofHorizon/CorkscrewChamberCap/ArithmeticPickupEnergy.lean": "f7fd16d41fd9fbe5d2526b3499a8a237eebf846be46cfb18e383223e070f7675",
-    "GRWTSK/RiemannHypothesis/CCC/PickupBudgets.lean": "a0735d6120754b4921c55346a5fb0203cb3586bd6f312289f83b0a76218cffbb",
-    "GRWTSK/RiemannHypothesis/CCC/PickupRegularity.lean": "663fd9e9d6fd6af327eeac76166ea40c9dc07c029b5822468533d80db8b4f9be",
-    "GRWTSK/RiemannHypothesis/CCC/PickupFiniteIdentity.lean": "4b4be0a5e4e2614ff81d192620170b5b47941e10e74f1965b5bbd0914ec24a51",
-    "GRWTSK/RiemannHypothesis/CCC/EnergyIntegrability.lean": "18a3aac5fcfb6844da96d34db5febc659f8c2694bd178ab187d324fbc9d6780b",
-    "GRWTSK/RiemannHypothesis/CCC/GrowthBounds.lean": "edf4927bab00fdb5f3e2c1140c7764cbceacecda2d1327d89c04bb95bc401bb6",
-    "GRWTSK/RiemannHypothesis/CCC/DiagonalAllowance.lean": "748100ebb0ba4440335668ecb96a079d869de82bb7ac2fb7ecb09ca089469a3c",
-    "GRWTSK/RiemannHypothesis/CCC/PickupDiagonalBound.lean": "e4b835ea2904d9494dd2b5252f1297ac76a924b153b94b99865471bd619155e8",
-    "GRWTSK/RiemannHypothesis/CCC/PickupLaplaceDefinition.lean": "900d196c65816d9217c05246e6fd5a847d5fe975baa1adb869907e394a9e6514",
-    "GRWTSK/RiemannHypothesis/CCC/PickupInitialTransform.lean": "52717097ba1ac20ef02efa7d744c413458026d9c3de8d35bb6bd9de833c14f38",
-    "GRWTSK/RiemannHypothesis/CCC/LaplaceAnalytic.lean": "9b36cbd99be50262b982974d665a0b226495665a5e509f7355ce66a2e08e2f10",
-    "GRWTSK/RiemannHypothesis/CCC/SignedPickupAnalytic.lean": "04f4c00bae21d3fde810919c80030f2be5a2bdac9836dec0c5ea0ed5ab9b81c6",
-    "GRWTSK/RiemannHypothesis/Definitions.lean": "107f357b8c04afc16e25b8fded6922782d2756959b42f080af839f4db58e9aa0",
-    "GRWTSK/RiemannHypothesis/ZeroSymmetry.lean": "d11ab9b34e31569a7d1441fb53bdb0abfce041c80e79cca4ebee46509be910bc",
-    "GRWTSK/RiemannHypothesis/CCC/RegularizedZeta.lean": "084fe442c91faee379c83ad8a7a6af1f4500bd5eb66bbc5f999b160106627af7",
-    "GRWTSK/RiemannHypothesis/CCC/EnergyRHReturn.lean": "62ffb37232e2b35e062f180bda8fe9f54369b98b431a2f97d0b30d539932efd0",
-    "GRWTSK/RiemannHypothesis/CCC/EnergyReturn.lean": "2116d2d7191ae28844ead58af1eb76e32a0272e6e4c92566d6d48bd36c163dac",
-    "GRWTSK/RiemannHypothesis/CCC/UnsignedAllowance.lean": "4bf9d68b5e3ef3e405711aa248e6cdc7e45720fc5120211b85d7ad1d36e7b21d",
-    "GRWTSK/RiemannHypothesis/CCC/EnergyContinuum.lean": "84ad04506b624e9ece7cdf2aa72d5b2a485bde1195c63c72d8ec744ddb7aee63",
-    "GRWTSK/RiemannHypothesis/CCC/OriginalPickupIdentification.lean": "012606b87a18604fcaea5baf5dba4f88f9c5313742f1b4f32beb03d8c23e3176",
-    "checks/CCCOriginalPickupAudit.lean": "9e120eb8f5668a2b0956b8e3a077e6b625dafbf23d5a1721124b7433bea44ea6",
-    "scripts/check_original_pickup.py": "28c2fcfba4d5d57a35b9c50bbd5f99dd182fa292f30617f754173b34f5258541",
+    "GRWTSK/NumberTheory/Moebius/WeightedSummatoryIntegral.lean": "041fa625e5e2bc239e3df3b471f545f7ba080093723c2f3710c08ee4bc92c8c2",
+    "GRWTSK/NumberTheory/Moebius/WeightedIntegralEnergy.lean": "8124ef6fbeca2c8244d7401536d70c43a6ecd31279366c20ea96bf6fbaa84380",
+    "GRWTSK/NumberTheory/Moebius/MertensPrimitive.lean": "a0735d6120754b4921c55346a5fb0203cb3586bd6f312289f83b0a76218cffbb",
+    "GRWTSK/NumberTheory/Moebius/PrimitiveRegularity.lean": "6cb747756c582d9f4f5872e164b091672f044bbbb0bb1478d6c47c31b565c720",
+    "GRWTSK/NumberTheory/Moebius/FiniteResponseSum.lean": "9358b6a2bbd51c10140c6fb595383355c54b072154965a06eb4651c3bc2c8bb8",
+    "GRWTSK/Analysis/LaplaceTransform/PolynomialEnergy.lean": "cc49938c45c940d7049afdf2aed8f5dde3393da4e9ff301d4bc7ccfaaabc0fe5",
+    "GRWTSK/Analysis/Asymptotics/PolynomialSubexponential.lean": "88096887fa741b898bdb12e1f563e166376a3301847098db6c9f4d10065edec2",
+    "GRWTSK/Analysis/Inequalities/ExponentialDiagonal.lean": "748100ebb0ba4440335668ecb96a079d869de82bb7ac2fb7ecb09ca089469a3c",
+    "GRWTSK/NumberTheory/Moebius/GramDiagonalBound.lean": "72172eb41fbc701bb53d3fe3d31f6a9d2cf5117c18769f85d5ed2e2986cb2b73",
+    "GRWTSK/NumberTheory/Moebius/LaplaceTransform.lean": "308954ccc5537fc6dc46377c72a3f18c118c87bafb72b01746ab5368b156dd05",
+    "GRWTSK/NumberTheory/Moebius/DirichletLaplaceIdentity.lean": "062ba923dbe090e8f1271ce4ffaf90332eaf5e20dc925f9d4b824dea48407cce",
+    "GRWTSK/Analysis/LaplaceTransform/Analytic.lean": "9b36cbd99be50262b982974d665a0b226495665a5e509f7355ce66a2e08e2f10",
+    "GRWTSK/NumberTheory/Moebius/LaplaceHolomorphy.lean": "c65e5184b9e4354aaa2ddd27a7d61afe5fa69ad8b833436e9269b00eac2bf807",
+    "GRWTSK/NumberTheory/Zeta/Riemann/ZeroDefinitions.lean": "107f357b8c04afc16e25b8fded6922782d2756959b42f080af839f4db58e9aa0",
+    "GRWTSK/NumberTheory/Zeta/Riemann/ZeroSymmetry.lean": "6f3b74c08ed6538482ce19e90de96784b65a0d54209f65987a4e7ad45f5150ec",
+    "GRWTSK/NumberTheory/Zeta/Riemann/Regularized.lean": "084fe442c91faee379c83ad8a7a6af1f4500bd5eb66bbc5f999b160106627af7",
+    "GRWTSK/NumberTheory/Zeta/Riemann/LaplaceCriterion.lean": "be129acd7f3abe84fe8d87227d256e8c3e9318c739b4fa7c04096f2c70a9f8b0",
+    "GRWTSK/NumberTheory/Zeta/Riemann/PolynomialEnergyCriterion.lean": "b4b7949d198e478ac369d8455284cd5b0505f5b97a0323d47eb5cf59da1f11b1",
+    "GRWTSK/NumberTheory/Moebius/UnsignedEnergyBound.lean": "4900917f41e019d2348d3d0b26321e36cf077e86adb409e9c546840a39d43481",
+    "GRWTSK/NumberTheory/Moebius/EnergyAbscissa.lean": "23330ce4bd519083f9fe8e09ecb9aaf6724a614d6b4a576afef395351e27c549",
+    "GRWTSK/NumberTheory/Moebius/PrimitiveIdentification.lean": "2a1f78198afd3a0a23e1865be081f09e2582689e58462d736bfe626128e6f308",
+    "GRWTSK/NumberTheory/Moebius/Checks/Positive/PrimitiveIdentification.lean": "e410ea20e184837e771cb8c68d12b45ae682b456e91909642b91e38a33ec95c3",
+    "scripts/check_original_pickup.py": "d39b5a83e61f32132bcd6ae8c95593415d5f082120e176438354860df6873c1c",
     "lean-toolchain": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
     "lakefile.toml": "a23f6d313f8458192328f09635ffef9078cb684374c2aac2743af541bf59b4e3",
     "lake-manifest.json": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
     "docs/ccc-original-pickup-identification.md": "836c9b98e264266611c14de1579793b961ca508b31b266949d6d151e4fb3d945",
-    "checks/original-pickup-controls/MissingTimeOrder.lean": "6a3f1dae2c12a43bdc025450bd624ac0adc22b44477ccf989eda0054de99f82e",
-    "checks/original-pickup-controls/MissingMainEnergyBudget.lean": "78892e9d916b7fd1be4b47f6e05ffbdba739298517f7e36b0707ce078d3c2e1f",
-    "checks/original-pickup-controls/ResidualAsMainBudget.lean": "dcc965305d6689a2a1eb0b12b9ad0091511bc60925fbfe56d46a9ae2f9466752",
-    "checks/original-pickup-controls/WrongPrimeSign.lean": "f899566cb11871508b6f0bb6a1161a386f2fff46e071126a0afccb4a87536e09",
-    "checks/original-pickup-controls/DroppedOneAtom.lean": "c2c6a1ca89e523693af7730073af644197caddcd79abaa3ebfac298b3555ea67",
-    "checks/original-pickup-controls/OnlyOneCrossOrder.lean": "e943650c310fc2edf49ecae94ddccfc9e565908a6cb7997c078395e6baa0fe85"
+    "GRWTSK/NumberTheory/Moebius/PrimitiveIdentification/Checks/Negative/MissingTimeOrder.lean": "0abcb000c1e49371985143dee3ac4c0470e010f80bd053cc6767c35dd4300aa1",
+    "GRWTSK/NumberTheory/Moebius/PrimitiveIdentification/Checks/Negative/MissingMainEnergyBudget.lean": "091a6058635fcfdc9c6f3507b2420b7cf16af6c4b6d871f5a2a9b286061be174",
+    "GRWTSK/NumberTheory/Moebius/PrimitiveIdentification/Checks/Negative/ResidualAsMainBudget.lean": "a74a226c19b0849a00a8551c8fc696f0765f221a3430e6e9026a67336c738228",
+    "GRWTSK/NumberTheory/Moebius/PrimitiveIdentification/Checks/Negative/WrongPrimeSign.lean": "9b08606db1cc389c5cc9cf57414b3a86930d0dceb2449478f9b3c504c4d94816",
+    "GRWTSK/NumberTheory/Moebius/PrimitiveIdentification/Checks/Negative/DroppedOneAtom.lean": "eabf0faf450c49fdd27739f053ba73e457d36c755065ff3c05d21f1939ecf93f",
+    "GRWTSK/NumberTheory/Moebius/PrimitiveIdentification/Checks/Negative/OnlyOneCrossOrder.lean": "20a793b0a93c879973c659df4ad5d791207fecc718ef5b03e7e15f2754b8d2f9"
   },
   "fresh_project_modules": [
-    "GRWTSK/ProofHorizon/CorkscrewChamberCap/ArithmeticPickupSource.lean",
-    "GRWTSK/ProofHorizon/CorkscrewChamberCap/ArithmeticPickupEnergy.lean",
-    "GRWTSK/RiemannHypothesis/CCC/PickupBudgets.lean",
-    "GRWTSK/RiemannHypothesis/CCC/PickupRegularity.lean",
-    "GRWTSK/RiemannHypothesis/CCC/PickupFiniteIdentity.lean",
-    "GRWTSK/RiemannHypothesis/CCC/EnergyIntegrability.lean",
-    "GRWTSK/RiemannHypothesis/CCC/GrowthBounds.lean",
-    "GRWTSK/RiemannHypothesis/CCC/DiagonalAllowance.lean",
-    "GRWTSK/RiemannHypothesis/CCC/PickupDiagonalBound.lean",
-    "GRWTSK/RiemannHypothesis/CCC/PickupLaplaceDefinition.lean",
-    "GRWTSK/RiemannHypothesis/CCC/PickupInitialTransform.lean",
-    "GRWTSK/RiemannHypothesis/CCC/LaplaceAnalytic.lean",
-    "GRWTSK/RiemannHypothesis/CCC/SignedPickupAnalytic.lean",
-    "GRWTSK/RiemannHypothesis/Definitions.lean",
-    "GRWTSK/RiemannHypothesis/ZeroSymmetry.lean",
-    "GRWTSK/RiemannHypothesis/CCC/RegularizedZeta.lean",
-    "GRWTSK/RiemannHypothesis/CCC/EnergyRHReturn.lean",
-    "GRWTSK/RiemannHypothesis/CCC/EnergyReturn.lean",
-    "GRWTSK/RiemannHypothesis/CCC/UnsignedAllowance.lean",
-    "GRWTSK/RiemannHypothesis/CCC/EnergyContinuum.lean",
-    "GRWTSK/RiemannHypothesis/CCC/OriginalPickupIdentification.lean"
+    "GRWTSK/NumberTheory/Moebius/WeightedSummatoryIntegral.lean",
+    "GRWTSK/NumberTheory/Moebius/WeightedIntegralEnergy.lean",
+    "GRWTSK/NumberTheory/Moebius/MertensPrimitive.lean",
+    "GRWTSK/NumberTheory/Moebius/PrimitiveRegularity.lean",
+    "GRWTSK/NumberTheory/Moebius/FiniteResponseSum.lean",
+    "GRWTSK/Analysis/LaplaceTransform/PolynomialEnergy.lean",
+    "GRWTSK/Analysis/Asymptotics/PolynomialSubexponential.lean",
+    "GRWTSK/Analysis/Inequalities/ExponentialDiagonal.lean",
+    "GRWTSK/NumberTheory/Moebius/GramDiagonalBound.lean",
+    "GRWTSK/NumberTheory/Moebius/LaplaceTransform.lean",
+    "GRWTSK/NumberTheory/Moebius/DirichletLaplaceIdentity.lean",
+    "GRWTSK/Analysis/LaplaceTransform/Analytic.lean",
+    "GRWTSK/NumberTheory/Moebius/LaplaceHolomorphy.lean",
+    "GRWTSK/NumberTheory/Zeta/Riemann/ZeroDefinitions.lean",
+    "GRWTSK/NumberTheory/Zeta/Riemann/ZeroSymmetry.lean",
+    "GRWTSK/NumberTheory/Zeta/Riemann/Regularized.lean",
+    "GRWTSK/NumberTheory/Zeta/Riemann/LaplaceCriterion.lean",
+    "GRWTSK/NumberTheory/Zeta/Riemann/PolynomialEnergyCriterion.lean",
+    "GRWTSK/NumberTheory/Moebius/UnsignedEnergyBound.lean",
+    "GRWTSK/NumberTheory/Moebius/EnergyAbscissa.lean",
+    "GRWTSK/NumberTheory/Moebius/PrimitiveIdentification.lean"
   ],
   "declarations": [
     {
@@ -79,9 +79,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.closed_prefix_split._simp_1_1",
-      "type": "∀ {α : Type u_1} [inst : DecidableEq α] {s t : Finset α} {a : α}, (a ∈ s ∪ t) = (a ∈ s ∨ a ∈ t)"
+      "type": "\u2200 {\u03b1 : Type u_1} [inst : DecidableEq \u03b1] {s t : Finset \u03b1} {a : \u03b1}, (a \u2208 s \u222a t) = (a \u2208 s \u2228 a \u2208 t)"
     },
     {
       "axioms": [
@@ -90,9 +90,9 @@
         "Quot.sound"
       ],
       "kind": "definition",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.atomWeight",
-      "type": "ℝ → ℕ → ℝ"
+      "type": "\u211d \u2192 \u2115 \u2192 \u211d"
     },
     {
       "axioms": [
@@ -101,9 +101,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.moebiusCoefficient.eq_1",
-      "type": "∀ (n : ℕ), ArithmeticPickupSource.moebiusCoefficient n = ↑(ArithmeticFunction.moebius n)"
+      "type": "\u2200 (n : \u2115), ArithmeticPickupSource.moebiusCoefficient n = \u2191(ArithmeticFunction.moebius n)"
     },
     {
       "axioms": [
@@ -112,9 +112,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.pickup_original_reset",
-      "type": "∀ {A t : ℝ},\n  1 ≤ A →\n    2 * Real.log A ≤ t →\n      ArithmeticPickupSource.pickup t - ArithmeticPickupSource.pickup (2 * Real.log A) =\n        2 * (A⁻¹ - Real.exp (-t / 2)) * ArithmeticPickupSource.mertens (A ^ 2) +\n          2 *\n            ∑ n ∈ Finset.Ioc ⌊A ^ 2⌋₊ ⌊Real.exp t⌋₊,\n              ArithmeticPickupSource.moebiusCoefficient n * (↑n ^ (-(1 / 2)) - Real.exp (-t / 2))"
+      "type": "\u2200 {A t : \u211d},\n  1 \u2264 A \u2192\n    2 * Real.log A \u2264 t \u2192\n      ArithmeticPickupSource.pickup t - ArithmeticPickupSource.pickup (2 * Real.log A) =\n        2 * (A\u207b\u00b9 - Real.exp (-t / 2)) * ArithmeticPickupSource.mertens (A ^ 2) +\n          2 *\n            \u2211 n \u2208 Finset.Ioc \u230aA ^ 2\u230b\u208a \u230aReal.exp t\u230b\u208a,\n              ArithmeticPickupSource.moebiusCoefficient n * (\u2191n ^ (-(1 / 2)) - Real.exp (-t / 2))"
     },
     {
       "axioms": [
@@ -123,9 +123,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.finitePickupAt.eq_1",
-      "type": "∀ (x : ℝ),\n  ArithmeticPickupSource.finitePickupAt x =\n    2 * ∑ n ∈ Finset.Icc 1 ⌊x⌋₊, ArithmeticPickupSource.moebiusCoefficient n * (↑n ^ (-(1 / 2)) - x ^ (-(1 / 2)))"
+      "type": "\u2200 (x : \u211d),\n  ArithmeticPickupSource.finitePickupAt x =\n    2 * \u2211 n \u2208 Finset.Icc 1 \u230ax\u230b\u208a, ArithmeticPickupSource.moebiusCoefficient n * (\u2191n ^ (-(1 / 2)) - x ^ (-(1 / 2)))"
     },
     {
       "axioms": [
@@ -134,9 +134,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.closed_prefix_split._simp_1_3",
-      "type": "∀ {α : Type u_1} [inst : Preorder α] [inst_1 : LocallyFiniteOrder α] {a b x : α}, (x ∈ Finset.Ioc a b) = (a < x ∧ x ≤ b)"
+      "type": "\u2200 {\u03b1 : Type u_1} [inst : Preorder \u03b1] [inst_1 : LocallyFiniteOrder \u03b1] {a b x : \u03b1}, (x \u2208 Finset.Ioc a b) = (a < x \u2227 x \u2264 b)"
     },
     {
       "axioms": [
@@ -145,7 +145,7 @@
         "Quot.sound"
       ],
       "kind": "definition",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.FiniteIntegrationIdentity",
       "type": "Prop"
     },
@@ -156,9 +156,9 @@
         "Quot.sound"
       ],
       "kind": "definition",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.finitePickupAt",
-      "type": "ℝ → ℝ"
+      "type": "\u211d \u2192 \u211d"
     },
     {
       "axioms": [
@@ -167,9 +167,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.zero_prefix_eq_mertens._proof_1_3",
-      "type": "∀ (x : ℝ) (n : ℕ), ¬(0 ≤ n ∧ n ≤ ⌊x⌋₊ ↔ n = 0 ∨ 1 ≤ n ∧ n ≤ ⌊x⌋₊) → False"
+      "type": "\u2200 (x : \u211d) (n : \u2115), \u00ac(0 \u2264 n \u2227 n \u2264 \u230ax\u230b\u208a \u2194 n = 0 \u2228 1 \u2264 n \u2227 n \u2264 \u230ax\u230b\u208a) \u2192 False"
     },
     {
       "axioms": [
@@ -178,7 +178,7 @@
         "Quot.sound"
       ],
       "kind": "definition",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.WholePickupPoly",
       "type": "Prop"
     },
@@ -189,9 +189,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.mem_reset_remainder_iff",
-      "type": "∀ {lower upper : ℝ}, 0 ≤ lower → 0 ≤ upper → ∀ (n : ℕ), n ∈ Finset.Ioc ⌊lower⌋₊ ⌊upper⌋₊ ↔ lower < ↑n ∧ ↑n ≤ upper"
+      "type": "\u2200 {lower upper : \u211d}, 0 \u2264 lower \u2192 0 \u2264 upper \u2192 \u2200 (n : \u2115), n \u2208 Finset.Ioc \u230alower\u230b\u208a \u230aupper\u230b\u208a \u2194 lower < \u2191n \u2227 \u2191n \u2264 upper"
     },
     {
       "axioms": [
@@ -200,9 +200,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.material_integral_eq_finite",
-      "type": "∀ {x : ℝ},\n  1 ≤ x → ∫ (y : ℝ) in Ioc 1 x, ArithmeticPickupSource.mertens y / y ^ (3 / 2) = ArithmeticPickupSource.finitePickupAt x"
+      "type": "\u2200 {x : \u211d},\n  1 \u2264 x \u2192 \u222b (y : \u211d) in Ioc 1 x, ArithmeticPickupSource.mertens y / y ^ (3 / 2) = ArithmeticPickupSource.finitePickupAt x"
     },
     {
       "axioms": [
@@ -211,9 +211,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.zero_prefix_eq_mertens",
-      "type": "∀ (x : ℝ), ∑ n ∈ Finset.Icc 0 ⌊x⌋₊, ArithmeticPickupSource.moebiusCoefficient n = ArithmeticPickupSource.mertens x"
+      "type": "\u2200 (x : \u211d), \u2211 n \u2208 Finset.Icc 0 \u230ax\u230b\u208a, ArithmeticPickupSource.moebiusCoefficient n = ArithmeticPickupSource.mertens x"
     },
     {
       "axioms": [
@@ -222,9 +222,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.upper_touching_atom_zero",
-      "type": "∀ (n : ℕ), ArithmeticPickupSource.atomWeight (↑n) n = 0"
+      "type": "\u2200 (n : \u2115), ArithmeticPickupSource.atomWeight (\u2191n) n = 0"
     },
     {
       "axioms": [
@@ -233,7 +233,7 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.finite_integration_identity",
       "type": "ArithmeticPickupSource.FiniteIntegrationIdentity"
     },
@@ -244,9 +244,9 @@
         "Quot.sound"
       ],
       "kind": "definition",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.moebiusCoefficient",
-      "type": "ℕ → ℝ"
+      "type": "\u2115 \u2192 \u211d"
     },
     {
       "axioms": [
@@ -255,9 +255,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.pickup.eq_1",
-      "type": "∀ (T : ℝ),\n  ArithmeticPickupSource.pickup T = ∫ (x : ℝ) in Ioc 1 (Real.exp T), ArithmeticPickupSource.mertens x / x ^ (3 / 2)"
+      "type": "\u2200 (T : \u211d),\n  ArithmeticPickupSource.pickup T = \u222b (x : \u211d) in Ioc 1 (Real.exp T), ArithmeticPickupSource.mertens x / x ^ (3 / 2)"
     },
     {
       "axioms": [
@@ -266,9 +266,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.zero_prefix_eq_mertens._simp_1_2",
-      "type": "∀ {α : Type u_1} [inst : DecidableEq α] {s : Finset α} {a b : α}, (a ∈ insert b s) = (a = b ∨ a ∈ s)"
+      "type": "\u2200 {\u03b1 : Type u_1} [inst : DecidableEq \u03b1] {s : Finset \u03b1} {a b : \u03b1}, (a \u2208 insert b s) = (a = b \u2228 a \u2208 s)"
     },
     {
       "axioms": [
@@ -277,9 +277,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.pickup_eq_closed_finite_sum",
-      "type": "∀ {T : ℝ},\n  0 ≤ T →\n    ArithmeticPickupSource.pickup T =\n      2 *\n        ∑ n ∈ Finset.Icc 1 ⌊Real.exp T⌋₊,\n          ArithmeticPickupSource.moebiusCoefficient n * (↑n ^ (-(1 / 2)) - Real.exp (-T / 2))"
+      "type": "\u2200 {T : \u211d},\n  0 \u2264 T \u2192\n    ArithmeticPickupSource.pickup T =\n      2 *\n        \u2211 n \u2208 Finset.Icc 1 \u230aReal.exp T\u230b\u208a,\n          ArithmeticPickupSource.moebiusCoefficient n * (\u2191n ^ (-(1 / 2)) - Real.exp (-T / 2))"
     },
     {
       "axioms": [
@@ -288,7 +288,7 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.moebius_coefficient_one",
       "type": "ArithmeticPickupSource.moebiusCoefficient 1 = 1"
     },
@@ -297,7 +297,7 @@
         "propext"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.pickup._proof_1",
       "type": "(2 + 1).AtLeastTwo"
     },
@@ -308,9 +308,9 @@
         "Quot.sound"
       ],
       "kind": "definition",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.pickup",
-      "type": "ℝ → ℝ"
+      "type": "\u211d \u2192 \u211d"
     },
     {
       "axioms": [
@@ -318,9 +318,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.finite_pickup_prefix_flux._simp_1_3",
-      "type": "∀ {ι : Type u_1} {R : Type u_4} [inst : NonUnitalNonAssocSemiring R] (s : Finset ι) (f : ι → R) (a : R),\n  ∑ i ∈ s, f i * a = (∑ i ∈ s, f i) * a"
+      "type": "\u2200 {\u03b9 : Type u_1} {R : Type u_4} [inst : NonUnitalNonAssocSemiring R] (s : Finset \u03b9) (f : \u03b9 \u2192 R) (a : R),\n  \u2211 i \u2208 s, f i * a = (\u2211 i \u2208 s, f i) * a"
     },
     {
       "axioms": [
@@ -329,9 +329,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.lower_touching_atom_later_reading",
-      "type": "∀ (current : ℝ) (n : ℕ),\n  ArithmeticPickupSource.atomWeight current n - ArithmeticPickupSource.atomWeight (↑n) n =\n    2 * ArithmeticPickupSource.moebiusCoefficient n * (↑n ^ (-(1 / 2)) - current ^ (-(1 / 2)))"
+      "type": "\u2200 (current : \u211d) (n : \u2115),\n  ArithmeticPickupSource.atomWeight current n - ArithmeticPickupSource.atomWeight (\u2191n) n =\n    2 * ArithmeticPickupSource.moebiusCoefficient n * (\u2191n ^ (-(1 / 2)) - current ^ (-(1 / 2)))"
     },
     {
       "axioms": [
@@ -340,9 +340,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.exp_inverse_half",
-      "type": "∀ (T : ℝ), Real.exp T ^ (-(1 / 2)) = Real.exp (-T / 2)"
+      "type": "\u2200 (T : \u211d), Real.exp T ^ (-(1 / 2)) = Real.exp (-T / 2)"
     },
     {
       "axioms": [
@@ -351,7 +351,7 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.finite_pickup_zero",
       "type": "ArithmeticPickupSource.finitePickup 0 = 0"
     },
@@ -362,9 +362,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.atomWeight.eq_1",
-      "type": "∀ (x : ℝ) (n : ℕ),\n  ArithmeticPickupSource.atomWeight x n =\n    2 * ArithmeticPickupSource.moebiusCoefficient n * (↑n ^ (-(1 / 2)) - x ^ (-(1 / 2)))"
+      "type": "\u2200 (x : \u211d) (n : \u2115),\n  ArithmeticPickupSource.atomWeight x n =\n    2 * ArithmeticPickupSource.moebiusCoefficient n * (\u2191n ^ (-(1 / 2)) - x ^ (-(1 / 2)))"
     },
     {
       "axioms": [
@@ -373,9 +373,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.atom_reset_difference",
-      "type": "∀ (lower current : ℝ) (n : ℕ),\n  ArithmeticPickupSource.atomWeight current n - ArithmeticPickupSource.atomWeight lower n =\n    2 * ArithmeticPickupSource.moebiusCoefficient n * (lower ^ (-(1 / 2)) - current ^ (-(1 / 2)))"
+      "type": "\u2200 (lower current : \u211d) (n : \u2115),\n  ArithmeticPickupSource.atomWeight current n - ArithmeticPickupSource.atomWeight lower n =\n    2 * ArithmeticPickupSource.moebiusCoefficient n * (lower ^ (-(1 / 2)) - current ^ (-(1 / 2)))"
     },
     {
       "axioms": [
@@ -384,7 +384,7 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.pickup_zero",
       "type": "ArithmeticPickupSource.pickup 0 = 0"
     },
@@ -395,9 +395,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.finite_pickup_prefix_flux",
-      "type": "∀ (x : ℝ),\n  ArithmeticPickupSource.finitePickupAt x =\n    2 * ∑ n ∈ Finset.Icc 1 ⌊x⌋₊, ArithmeticPickupSource.moebiusCoefficient n * ↑n ^ (-(1 / 2)) -\n      2 * ArithmeticPickupSource.mertens x * x ^ (-(1 / 2))"
+      "type": "\u2200 (x : \u211d),\n  ArithmeticPickupSource.finitePickupAt x =\n    2 * \u2211 n \u2208 Finset.Icc 1 \u230ax\u230b\u208a, ArithmeticPickupSource.moebiusCoefficient n * \u2191n ^ (-(1 / 2)) -\n      2 * ArithmeticPickupSource.mertens x * x ^ (-(1 / 2))"
     },
     {
       "axioms": [
@@ -406,9 +406,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.mertens.eq_1",
-      "type": "∀ (x : ℝ), ArithmeticPickupSource.mertens x = ∑ n ∈ Finset.Icc 1 ⌊x⌋₊, ArithmeticPickupSource.moebiusCoefficient n"
+      "type": "\u2200 (x : \u211d), ArithmeticPickupSource.mertens x = \u2211 n \u2208 Finset.Icc 1 \u230ax\u230b\u208a, ArithmeticPickupSource.moebiusCoefficient n"
     },
     {
       "axioms": [
@@ -417,9 +417,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.finitePickup.eq_1",
-      "type": "∀ (T : ℝ), ArithmeticPickupSource.finitePickup T = ArithmeticPickupSource.finitePickupAt (Real.exp T)"
+      "type": "\u2200 (T : \u211d), ArithmeticPickupSource.finitePickup T = ArithmeticPickupSource.finitePickupAt (Real.exp T)"
     },
     {
       "axioms": [
@@ -428,9 +428,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.pickup_eq_interval_integral",
-      "type": "∀ {T : ℝ},\n  0 ≤ T → ArithmeticPickupSource.pickup T = ∫ (x : ℝ) in 1..Real.exp T, ArithmeticPickupSource.mertens x / x ^ (3 / 2)"
+      "type": "\u2200 {T : \u211d},\n  0 \u2264 T \u2192 ArithmeticPickupSource.pickup T = \u222b (x : \u211d) in 1..Real.exp T, ArithmeticPickupSource.mertens x / x ^ (3 / 2)"
     },
     {
       "axioms": [
@@ -439,9 +439,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.closed_prefix_split",
-      "type": "∀ (f : ℕ → ℝ) {lower upper : ℝ},\n  1 ≤ lower →\n    lower ≤ upper →\n      ∑ n ∈ Finset.Icc 1 ⌊upper⌋₊, f n = ∑ n ∈ Finset.Icc 1 ⌊lower⌋₊, f n + ∑ n ∈ Finset.Ioc ⌊lower⌋₊ ⌊upper⌋₊, f n"
+      "type": "\u2200 (f : \u2115 \u2192 \u211d) {lower upper : \u211d},\n  1 \u2264 lower \u2192\n    lower \u2264 upper \u2192\n      \u2211 n \u2208 Finset.Icc 1 \u230aupper\u230b\u208a, f n = \u2211 n \u2208 Finset.Icc 1 \u230alower\u230b\u208a, f n + \u2211 n \u2208 Finset.Ioc \u230alower\u230b\u208a \u230aupper\u230b\u208a, f n"
     },
     {
       "axioms": [
@@ -450,16 +450,16 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.inverse_half_derivative",
-      "type": "∀ (x : ℝ), deriv (fun y => y ^ (-(1 / 2))) x = -(1 / 2) * x ^ (-(3 / 2))"
+      "type": "\u2200 (x : \u211d), deriv (fun y => y ^ (-(1 / 2))) x = -(1 / 2) * x ^ (-(3 / 2))"
     },
     {
       "axioms": [
         "propext"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.pickup._proof_2",
       "type": "(1 + 1).AtLeastTwo"
     },
@@ -470,9 +470,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.closed_prefix_split._simp_1_2",
-      "type": "∀ {α : Type u_1} [inst : Preorder α] [inst_1 : LocallyFiniteOrder α] {a b x : α}, (x ∈ Finset.Icc a b) = (a ≤ x ∧ x ≤ b)"
+      "type": "\u2200 {\u03b1 : Type u_1} [inst : Preorder \u03b1] [inst_1 : LocallyFiniteOrder \u03b1] {a b x : \u03b1}, (x \u2208 Finset.Icc a b) = (a \u2264 x \u2227 x \u2264 b)"
     },
     {
       "axioms": [
@@ -481,9 +481,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.closed_prefix_split._proof_1_4",
-      "type": "∀ {lower upper : ℝ},\n  1 ≤ ⌊lower⌋₊ →\n    ⌊lower⌋₊ ≤ ⌊upper⌋₊ →\n      ∀ (n : ℕ), ¬(1 ≤ n ∧ n ≤ ⌊lower⌋₊ ∨ ⌊lower⌋₊ < n ∧ n ≤ ⌊upper⌋₊ ↔ 1 ≤ n ∧ n ≤ ⌊upper⌋₊) → False"
+      "type": "\u2200 {lower upper : \u211d},\n  1 \u2264 \u230alower\u230b\u208a \u2192\n    \u230alower\u230b\u208a \u2264 \u230aupper\u230b\u208a \u2192\n      \u2200 (n : \u2115), \u00ac(1 \u2264 n \u2227 n \u2264 \u230alower\u230b\u208a \u2228 \u230alower\u230b\u208a < n \u2227 n \u2264 \u230aupper\u230b\u208a \u2194 1 \u2264 n \u2227 n \u2264 \u230aupper\u230b\u208a) \u2192 False"
     },
     {
       "axioms": [
@@ -492,9 +492,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.zero_prefix_eq_mertens._simp_1_1",
-      "type": "∀ {α : Type u_1} [inst : Preorder α] [inst_1 : LocallyFiniteOrder α] {a b x : α}, (x ∈ Finset.Icc a b) = (a ≤ x ∧ x ≤ b)"
+      "type": "\u2200 {\u03b1 : Type u_1} [inst : Preorder \u03b1] [inst_1 : LocallyFiniteOrder \u03b1] {a b x : \u03b1}, (x \u2208 Finset.Icc a b) = (a \u2264 x \u2227 x \u2264 b)"
     },
     {
       "axioms": [
@@ -503,7 +503,7 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.finite_pickup_at_one",
       "type": "ArithmeticPickupSource.finitePickupAt 1 = 0"
     },
@@ -514,9 +514,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.material_integrand_integrable",
-      "type": "∀ (x : ℝ), IntegrableOn (fun y => ArithmeticPickupSource.mertens y / y ^ (3 / 2)) (Icc 1 x) volume"
+      "type": "\u2200 (x : \u211d), IntegrableOn (fun y => ArithmeticPickupSource.mertens y / y ^ (3 / 2)) (Icc 1 x) volume"
     },
     {
       "axioms": [
@@ -525,7 +525,7 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.moebius_coefficient_zero",
       "type": "ArithmeticPickupSource.moebiusCoefficient 0 = 0"
     },
@@ -536,9 +536,9 @@
         "Quot.sound"
       ],
       "kind": "definition",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.mertens",
-      "type": "ℝ → ℝ"
+      "type": "\u211d \u2192 \u211d"
     },
     {
       "axioms": [
@@ -547,9 +547,9 @@
         "Quot.sound"
       ],
       "kind": "definition",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.finitePickup",
-      "type": "ℝ → ℝ"
+      "type": "\u211d \u2192 \u211d"
     },
     {
       "axioms": [
@@ -558,9 +558,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.square_inverse_half",
-      "type": "∀ {A : ℝ}, 0 ≤ A → (A ^ 2) ^ (-(1 / 2)) = A⁻¹"
+      "type": "\u2200 {A : \u211d}, 0 \u2264 A \u2192 (A ^ 2) ^ (-(1 / 2)) = A\u207b\u00b9"
     },
     {
       "axioms": [
@@ -569,7 +569,7 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.mertens_zero",
       "type": "ArithmeticPickupSource.mertens 0 = 0"
     },
@@ -580,7 +580,7 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.mertens_one",
       "type": "ArithmeticPickupSource.mertens 1 = 1"
     },
@@ -591,9 +591,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.finite_pickup_reset",
-      "type": "∀ {lower upper : ℝ},\n  1 ≤ lower →\n    lower ≤ upper →\n      ArithmeticPickupSource.finitePickupAt upper - ArithmeticPickupSource.finitePickupAt lower =\n        2 * (lower ^ (-(1 / 2)) - upper ^ (-(1 / 2))) * ArithmeticPickupSource.mertens lower +\n          2 *\n            ∑ n ∈ Finset.Ioc ⌊lower⌋₊ ⌊upper⌋₊,\n              ArithmeticPickupSource.moebiusCoefficient n * (↑n ^ (-(1 / 2)) - upper ^ (-(1 / 2)))"
+      "type": "\u2200 {lower upper : \u211d},\n  1 \u2264 lower \u2192\n    lower \u2264 upper \u2192\n      ArithmeticPickupSource.finitePickupAt upper - ArithmeticPickupSource.finitePickupAt lower =\n        2 * (lower ^ (-(1 / 2)) - upper ^ (-(1 / 2))) * ArithmeticPickupSource.mertens lower +\n          2 *\n            \u2211 n \u2208 Finset.Ioc \u230alower\u230b\u208a \u230aupper\u230b\u208a,\n              ArithmeticPickupSource.moebiusCoefficient n * (\u2191n ^ (-(1 / 2)) - upper ^ (-(1 / 2)))"
     },
     {
       "axioms": [
@@ -602,9 +602,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupSource.mem_closed_prefix_iff",
-      "type": "∀ {x : ℝ}, 0 ≤ x → ∀ (n : ℕ), n ∈ Finset.Icc 1 ⌊x⌋₊ ↔ 1 ≤ n ∧ ↑n ≤ x"
+      "type": "\u2200 {x : \u211d}, 0 \u2264 x \u2192 \u2200 (n : \u2115), n \u2208 Finset.Icc 1 \u230ax\u230b\u208a \u2194 1 \u2264 n \u2227 \u2191n \u2264 x"
     },
     {
       "axioms": [
@@ -613,9 +613,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy.response_window_bound",
-      "type": "∀ (n : ℕ) {u : ℝ}, 0 ≤ u → |ArithmeticPickupEnergy.response n u| ≤ 2 * (|↑n ^ (-(1 / 2))| + 1)"
+      "type": "\u2200 (n : \u2115) {u : \u211d}, 0 \u2264 u \u2192 |ArithmeticPickupEnergy.response n u| \u2264 2 * (|\u2191n ^ (-(1 / 2))| + 1)"
     },
     {
       "axioms": [
@@ -624,9 +624,9 @@
         "Quot.sound"
       ],
       "kind": "definition",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy.cross",
-      "type": "ℝ → ℝ"
+      "type": "\u211d \u2192 \u211d"
     },
     {
       "axioms": [
@@ -635,9 +635,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy.response_touching_atom_zero",
-      "type": "∀ {n : ℕ}, 1 ≤ n → ArithmeticPickupEnergy.response n (Real.log ↑n) = 0"
+      "type": "\u2200 {n : \u2115}, 1 \u2264 n \u2192 ArithmeticPickupEnergy.response n (Real.log \u2191n) = 0"
     },
     {
       "axioms": [
@@ -646,9 +646,20 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy",
+      "name": "_private.GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy.0.GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy.signed_sum_square",
+      "type": "\u2200 (S : Finset \u2115) (u : \u211d),\n  (\u2211 n \u2208 S, ArithmeticPickupSource.moebiusCoefficient n * ArithmeticPickupEnergy.response n u) ^ 2 =\n    \u2211 m \u2208 S,\n      \u2211 n \u2208 S,\n        ArithmeticPickupSource.moebiusCoefficient m * ArithmeticPickupSource.moebiusCoefficient n *\n          (ArithmeticPickupEnergy.response m u * ArithmeticPickupEnergy.response n u)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy.response_kernel_continuous",
-      "type": "∀ (n : ℕ), Continuous (ArithmeticPickupEnergy.responseKernel n)"
+      "type": "\u2200 (n : \u2115), Continuous (ArithmeticPickupEnergy.responseKernel n)"
     },
     {
       "axioms": [
@@ -657,9 +668,9 @@
         "Quot.sound"
       ],
       "kind": "definition",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy.energy",
-      "type": "ℝ → ℝ"
+      "type": "\u211d \u2192 \u211d"
     },
     {
       "axioms": [
@@ -668,9 +679,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy.inventory.eq_1",
-      "type": "∀ (T : ℝ), ArithmeticPickupEnergy.inventory T = Finset.Icc 1 ⌊Real.exp T⌋₊"
+      "type": "\u2200 (T : \u211d), ArithmeticPickupEnergy.inventory T = Finset.Icc 1 \u230aReal.exp T\u230b\u208a"
     },
     {
       "axioms": [
@@ -679,9 +690,9 @@
         "Quot.sound"
       ],
       "kind": "definition",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy.finiteWindowBound",
-      "type": "ℝ → ℝ"
+      "type": "\u211d \u2192 \u211d"
     },
     {
       "axioms": [
@@ -690,20 +701,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy",
-      "name": "_private.GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy.0.GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy.signed_sum_square",
-      "type": "∀ (S : Finset ℕ) (u : ℝ),\n  (∑ n ∈ S, ArithmeticPickupSource.moebiusCoefficient n * ArithmeticPickupEnergy.response n u) ^ 2 =\n    ∑ m ∈ S,\n      ∑ n ∈ S,\n        ArithmeticPickupSource.moebiusCoefficient m * ArithmeticPickupSource.moebiusCoefficient n *\n          (ArithmeticPickupEnergy.response m u * ArithmeticPickupEnergy.response n u)"
-    },
-    {
-      "axioms": [
-        "propext",
-        "Classical.choice",
-        "Quot.sound"
-      ],
-      "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy.admitted_iff_arrived",
-      "type": "∀ {u : ℝ} {n : ℕ}, 1 ≤ n → (n ∈ ArithmeticPickupEnergy.inventory u ↔ Real.log ↑n ≤ u)"
+      "type": "\u2200 {u : \u211d} {n : \u2115}, 1 \u2264 n \u2192 (n \u2208 ArithmeticPickupEnergy.inventory u \u2194 Real.log \u2191n \u2264 u)"
     },
     {
       "axioms": [
@@ -712,9 +712,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy.pickup_square_integrable",
-      "type": "∀ (T : ℝ), IntegrableOn (fun u => |ArithmeticPickupSource.pickup u| ^ 2) (Ioc 0 T) volume"
+      "type": "\u2200 (T : \u211d), IntegrableOn (fun u => |ArithmeticPickupSource.pickup u| ^ 2) (Ioc 0 T) volume"
     },
     {
       "axioms": [
@@ -723,9 +723,20 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy.pickup_image_bdd_above",
-      "type": "∀ (T : ℝ), BddAbove (ArithmeticPickupSource.pickup '' Icc 0 T)"
+      "type": "\u2200 (T : \u211d), BddAbove (ArithmeticPickupSource.pickup '' Icc 0 T)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy",
+      "name": "_private.GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy.0.GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy.weighted_product_integrable",
+      "type": "\u2200 (T : \u211d) (m n : \u2115),\n  IntegrableOn\n    (fun u =>\n      ArithmeticPickupSource.moebiusCoefficient m * ArithmeticPickupSource.moebiusCoefficient n *\n        (ArithmeticPickupEnergy.response m u * ArithmeticPickupEnergy.response n u))\n    (Ioc 0 T) volume"
     },
     {
       "axioms": [
@@ -734,7 +745,7 @@
         "Quot.sound"
       ],
       "kind": "definition",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy.PickupEnergyBudgets",
       "type": "Prop"
     },
@@ -745,9 +756,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy.inventory_mono",
-      "type": "∀ {u T : ℝ}, u ≤ T → ArithmeticPickupEnergy.inventory u ⊆ ArithmeticPickupEnergy.inventory T"
+      "type": "\u2200 {u T : \u211d}, u \u2264 T \u2192 ArithmeticPickupEnergy.inventory u \u2286 ArithmeticPickupEnergy.inventory T"
     },
     {
       "axioms": [
@@ -756,9 +767,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy.response_of_arrived",
-      "type": "∀ {n : ℕ} {u : ℝ}, Real.log ↑n ≤ u → ArithmeticPickupEnergy.response n u = ArithmeticPickupEnergy.responseKernel n u"
+      "type": "\u2200 {n : \u2115} {u : \u211d}, Real.log \u2191n \u2264 u \u2192 ArithmeticPickupEnergy.response n u = ArithmeticPickupEnergy.responseKernel n u"
     },
     {
       "axioms": [
@@ -767,9 +778,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy.response_of_not_arrived",
-      "type": "∀ {n : ℕ} {u : ℝ}, ¬Real.log ↑n ≤ u → ArithmeticPickupEnergy.response n u = 0"
+      "type": "\u2200 {n : \u2115} {u : \u211d}, \u00acReal.log \u2191n \u2264 u \u2192 ArithmeticPickupEnergy.response n u = 0"
     },
     {
       "axioms": [
@@ -778,20 +789,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy",
-      "name": "_private.GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy.0.GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy.row_integrable",
-      "type": "∀ (T : ℝ) (m : ℕ),\n  IntegrableOn\n    (fun u =>\n      ∑ n ∈ ArithmeticPickupEnergy.inventory T,\n        ArithmeticPickupSource.moebiusCoefficient m * ArithmeticPickupSource.moebiusCoefficient n *\n          (ArithmeticPickupEnergy.response m u * ArithmeticPickupEnergy.response n u))\n    (Ioc 0 T) volume"
-    },
-    {
-      "axioms": [
-        "propext",
-        "Classical.choice",
-        "Quot.sound"
-      ],
-      "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy.pickup_image_bdd_below",
-      "type": "∀ (T : ℝ), BddBelow (ArithmeticPickupSource.pickup '' Icc 0 T)"
+      "type": "\u2200 (T : \u211d), BddBelow (ArithmeticPickupSource.pickup '' Icc 0 T)"
     },
     {
       "axioms": [
@@ -800,9 +800,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy.response_product_integrable",
-      "type": "∀ (T : ℝ) (m n : ℕ),\n  IntegrableOn (fun u => ArithmeticPickupEnergy.response m u * ArithmeticPickupEnergy.response n u) (Ioc 0 T) volume"
+      "type": "\u2200 (T : \u211d) (m n : \u2115),\n  IntegrableOn (fun u => ArithmeticPickupEnergy.response m u * ArithmeticPickupEnergy.response n u) (Ioc 0 T) volume"
     },
     {
       "axioms": [
@@ -811,20 +811,9 @@
         "Quot.sound"
       ],
       "kind": "definition",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy.fullGram",
-      "type": "ℝ → ℝ"
-    },
-    {
-      "axioms": [
-        "propext",
-        "Classical.choice",
-        "Quot.sound"
-      ],
-      "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy",
-      "name": "_private.GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy.0.GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy.weighted_product_integrable",
-      "type": "∀ (T : ℝ) (m n : ℕ),\n  IntegrableOn\n    (fun u =>\n      ArithmeticPickupSource.moebiusCoefficient m * ArithmeticPickupSource.moebiusCoefficient n *\n        (ArithmeticPickupEnergy.response m u * ArithmeticPickupEnergy.response n u))\n    (Ioc 0 T) volume"
+      "type": "\u211d \u2192 \u211d"
     },
     {
       "axioms": [
@@ -833,9 +822,9 @@
         "Quot.sound"
       ],
       "kind": "definition",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy.response",
-      "type": "ℕ → ℝ → ℝ"
+      "type": "\u2115 \u2192 \u211d \u2192 \u211d"
     },
     {
       "axioms": [
@@ -844,9 +833,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy.pickup_window_bound",
-      "type": "∀ {u T : ℝ}, 0 ≤ u → u ≤ T → |ArithmeticPickupSource.pickup u| ≤ ArithmeticPickupEnergy.finiteWindowBound T"
+      "type": "\u2200 {u T : \u211d}, 0 \u2264 u \u2192 u \u2264 T \u2192 |ArithmeticPickupSource.pickup u| \u2264 ArithmeticPickupEnergy.finiteWindowBound T"
     },
     {
       "axioms": [
@@ -855,9 +844,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy.energy_eq_diagonal_add_cross",
-      "type": "∀ (T : ℝ), ArithmeticPickupEnergy.energy T = ArithmeticPickupEnergy.diagonal T + ArithmeticPickupEnergy.cross T"
+      "type": "\u2200 (T : \u211d), ArithmeticPickupEnergy.energy T = ArithmeticPickupEnergy.diagonal T + ArithmeticPickupEnergy.cross T"
     },
     {
       "axioms": [
@@ -866,9 +855,20 @@
         "Quot.sound"
       ],
       "kind": "definition",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy.responseKernel",
-      "type": "ℕ → ℝ → ℝ"
+      "type": "\u2115 \u2192 \u211d \u2192 \u211d"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy",
+      "name": "_private.GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy.0.GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy.row_integrable",
+      "type": "\u2200 (T : \u211d) (m : \u2115),\n  IntegrableOn\n    (fun u =>\n      \u2211 n \u2208 ArithmeticPickupEnergy.inventory T,\n        ArithmeticPickupSource.moebiusCoefficient m * ArithmeticPickupSource.moebiusCoefficient n *\n          (ArithmeticPickupEnergy.response m u * ArithmeticPickupEnergy.response n u))\n    (Ioc 0 T) volume"
     },
     {
       "axioms": [
@@ -877,9 +877,9 @@
         "Quot.sound"
       ],
       "kind": "definition",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy.diagonal",
-      "type": "ℝ → ℝ"
+      "type": "\u211d \u2192 \u211d"
     },
     {
       "axioms": [
@@ -888,9 +888,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy.response.eq_1",
-      "type": "∀ (n : ℕ), ArithmeticPickupEnergy.response n = (Ici (Real.log ↑n)).indicator (ArithmeticPickupEnergy.responseKernel n)"
+      "type": "\u2200 (n : \u2115), ArithmeticPickupEnergy.response n = (Ici (Real.log \u2191n)).indicator (ArithmeticPickupEnergy.responseKernel n)"
     },
     {
       "axioms": [
@@ -899,9 +899,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy.energy_eq_full_gram",
-      "type": "∀ (T : ℝ), ArithmeticPickupEnergy.energy T = ArithmeticPickupEnergy.fullGram T"
+      "type": "\u2200 (T : \u211d), ArithmeticPickupEnergy.energy T = ArithmeticPickupEnergy.fullGram T"
     },
     {
       "axioms": [
@@ -910,9 +910,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy.full_gram_eq_diagonal_add_cross",
-      "type": "∀ (T : ℝ), ArithmeticPickupEnergy.fullGram T = ArithmeticPickupEnergy.diagonal T + ArithmeticPickupEnergy.cross T"
+      "type": "\u2200 (T : \u211d), ArithmeticPickupEnergy.fullGram T = ArithmeticPickupEnergy.diagonal T + ArithmeticPickupEnergy.cross T"
     },
     {
       "axioms": [
@@ -921,7 +921,7 @@
         "Quot.sound"
       ],
       "kind": "definition",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy.CrossPoly",
       "type": "Prop"
     },
@@ -932,16 +932,16 @@
         "Quot.sound"
       ],
       "kind": "definition",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy.gram",
-      "type": "ℝ → ℕ → ℕ → ℝ"
+      "type": "\u211d \u2192 \u2115 \u2192 \u2115 \u2192 \u211d"
     },
     {
       "axioms": [
         "propext"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy.responseKernel._proof_1",
       "type": "(1 + 1).AtLeastTwo"
     },
@@ -952,9 +952,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy.actual_waveform_on_inventory",
-      "type": "∀ {u T : ℝ},\n  0 ≤ u →\n    u ≤ T →\n      ArithmeticPickupSource.pickup u =\n        ∑ n ∈ ArithmeticPickupEnergy.inventory T,\n          ArithmeticPickupSource.moebiusCoefficient n * ArithmeticPickupEnergy.response n u"
+      "type": "\u2200 {u T : \u211d},\n  0 \u2264 u \u2192\n    u \u2264 T \u2192\n      ArithmeticPickupSource.pickup u =\n        \u2211 n \u2208 ArithmeticPickupEnergy.inventory T,\n          ArithmeticPickupSource.moebiusCoefficient n * ArithmeticPickupEnergy.response n u"
     },
     {
       "axioms": [
@@ -963,9 +963,9 @@
         "Quot.sound"
       ],
       "kind": "definition",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy.inventory",
-      "type": "ℝ → Finset ℕ"
+      "type": "\u211d \u2192 Finset \u2115"
     },
     {
       "axioms": [
@@ -974,7 +974,7 @@
         "Quot.sound"
       ],
       "kind": "definition",
-      "module": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy",
+      "module": "GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy.AmplitudeReturnPoly",
       "type": "Prop"
     },
@@ -985,18 +985,18 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.OriginalPickupIdentification",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimitiveIdentification",
       "name": "GRWTSK.RiemannHypothesis.CCC.original_cross_eq",
-      "type": "∀ {T : ℝ}, 0 ≤ T → ArithmeticPickupEnergy.cross T = pickupCross T"
+      "type": "\u2200 {T : \u211d}, 0 \u2264 T \u2192 ArithmeticPickupEnergy.cross T = pickupCross T"
     },
     {
       "axioms": [
         "propext"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.OriginalPickupIdentification",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimitiveIdentification",
       "name": "GRWTSK.RiemannHypothesis.CCC.original_response_eq._simp_1_1",
-      "type": "∀ {α : Type u_1} [inst : Preorder α] {b x : α}, (x ∈ Ici b) = (b ≤ x)"
+      "type": "\u2200 {\u03b1 : Type u_1} [inst : Preorder \u03b1] {b x : \u03b1}, (x \u2208 Ici b) = (b \u2264 x)"
     },
     {
       "axioms": [
@@ -1005,9 +1005,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.OriginalPickupIdentification",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimitiveIdentification",
       "name": "GRWTSK.RiemannHypothesis.CCC.original_cross_poly_iff",
-      "type": "ArithmeticPickupEnergy.CrossPoly ↔ PickupCrossPoly"
+      "type": "ArithmeticPickupEnergy.CrossPoly \u2194 PickupCrossPoly"
     },
     {
       "axioms": [
@@ -1016,9 +1016,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.OriginalPickupIdentification",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimitiveIdentification",
       "name": "GRWTSK.RiemannHypothesis.CCC.original_prefix_eq",
-      "type": "∀ (x : ℝ), ArithmeticPickupSource.mertens x = mertensPrefix x"
+      "type": "\u2200 (x : \u211d), ArithmeticPickupSource.mertens x = mertensPrefix x"
     },
     {
       "axioms": [
@@ -1027,9 +1027,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.OriginalPickupIdentification",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimitiveIdentification",
       "name": "GRWTSK.RiemannHypothesis.CCC.original_gram_eq",
-      "type": "∀ {T : ℝ}, 0 ≤ T → ∀ (m n : ℕ), ArithmeticPickupEnergy.gram T m n = pickupResponseGram T m n"
+      "type": "\u2200 {T : \u211d}, 0 \u2264 T \u2192 \u2200 (m n : \u2115), ArithmeticPickupEnergy.gram T m n = pickupResponseGram T m n"
     },
     {
       "axioms": [
@@ -1038,9 +1038,9 @@
         "Quot.sound"
       ],
       "kind": "definition",
-      "module": "GRWTSK.RiemannHypothesis.CCC.OriginalPickupIdentification",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimitiveIdentification",
       "name": "GRWTSK.RiemannHypothesis.CCC.originalPickupResidual",
-      "type": "ℝ → ℝ"
+      "type": "\u211d \u2192 \u211d"
     },
     {
       "axioms": [
@@ -1049,9 +1049,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.OriginalPickupIdentification",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimitiveIdentification",
       "name": "GRWTSK.RiemannHypothesis.CCC.original_pickup_poly_iff",
-      "type": "ArithmeticPickupSource.WholePickupPoly ↔ WholePickupPoly"
+      "type": "ArithmeticPickupSource.WholePickupPoly \u2194 WholePickupPoly"
     },
     {
       "axioms": [
@@ -1060,9 +1060,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.OriginalPickupIdentification",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimitiveIdentification",
       "name": "GRWTSK.RiemannHypothesis.CCC.original_energy_subexp_iff",
-      "type": "SubexponentialUpper ArithmeticPickupEnergy.energy ↔ PickupEnergySubexp"
+      "type": "SubexponentialUpper ArithmeticPickupEnergy.energy \u2194 PickupEnergySubexp"
     },
     {
       "axioms": [
@@ -1071,9 +1071,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.OriginalPickupIdentification",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimitiveIdentification",
       "name": "GRWTSK.RiemannHypothesis.CCC.original_localEnergy_eq",
-      "type": "∀ {T : ℝ}, 0 ≤ T → ∫ (u : ℝ) in Ioc (max 0 (T - 1)) T, |ArithmeticPickupSource.pickup u| ^ 2 = pickupLocalEnergy T"
+      "type": "\u2200 {T : \u211d}, 0 \u2264 T \u2192 \u222b (u : \u211d) in Ioc (max 0 (T - 1)) T, |ArithmeticPickupSource.pickup u| ^ 2 = pickupLocalEnergy T"
     },
     {
       "axioms": [
@@ -1082,9 +1082,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.OriginalPickupIdentification",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimitiveIdentification",
       "name": "GRWTSK.RiemannHypothesis.CCC.originalPickupResidual_zero",
-      "type": "∀ {u : ℝ}, 0 ≤ u → originalPickupResidual u = 0"
+      "type": "\u2200 {u : \u211d}, 0 \u2264 u \u2192 originalPickupResidual u = 0"
     },
     {
       "axioms": [
@@ -1093,9 +1093,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.OriginalPickupIdentification",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimitiveIdentification",
       "name": "GRWTSK.RiemannHypothesis.CCC.original_response_eq",
-      "type": "∀ (n : ℕ) (u : ℝ), ArithmeticPickupEnergy.response n u = pickupResponse n u"
+      "type": "\u2200 (n : \u2115) (u : \u211d), ArithmeticPickupEnergy.response n u = pickupResponse n u"
     },
     {
       "axioms": [
@@ -1104,9 +1104,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.OriginalPickupIdentification",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimitiveIdentification",
       "name": "GRWTSK.RiemannHypothesis.CCC.original_pickup_eq",
-      "type": "∀ {T : ℝ}, 0 ≤ T → ArithmeticPickupSource.pickup T = wholePickup T"
+      "type": "\u2200 {T : \u211d}, 0 \u2264 T \u2192 ArithmeticPickupSource.pickup T = wholePickup T"
     },
     {
       "axioms": [
@@ -1115,9 +1115,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.OriginalPickupIdentification",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimitiveIdentification",
       "name": "GRWTSK.RiemannHypothesis.CCC.originalPickupResidual_energy_subexp",
-      "type": "SubexponentialUpper fun T => ∫ (u : ℝ) in 0..T, originalPickupResidual u ^ 2"
+      "type": "SubexponentialUpper fun T => \u222b (u : \u211d) in 0..T, originalPickupResidual u ^ 2"
     },
     {
       "axioms": [
@@ -1126,9 +1126,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.OriginalPickupIdentification",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimitiveIdentification",
       "name": "GRWTSK.RiemannHypothesis.CCC.original_return_poly_iff",
-      "type": "ArithmeticPickupEnergy.AmplitudeReturnPoly ↔ PickupReturnPoly"
+      "type": "ArithmeticPickupEnergy.AmplitudeReturnPoly \u2194 PickupReturnPoly"
     },
     {
       "axioms": [
@@ -1137,9 +1137,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.OriginalPickupIdentification",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimitiveIdentification",
       "name": "GRWTSK.RiemannHypothesis.CCC.original_energy_eq",
-      "type": "∀ {T : ℝ}, 0 ≤ T → ArithmeticPickupEnergy.energy T = pickupEnergy T"
+      "type": "\u2200 {T : \u211d}, 0 \u2264 T \u2192 ArithmeticPickupEnergy.energy T = pickupEnergy T"
     },
     {
       "axioms": [
@@ -1148,9 +1148,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.OriginalPickupIdentification",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimitiveIdentification",
       "name": "GRWTSK.RiemannHypothesis.CCC.original_diagonal_eq",
-      "type": "∀ {T : ℝ}, 0 ≤ T → ArithmeticPickupEnergy.diagonal T = pickupDiagonal T"
+      "type": "\u2200 {T : \u211d}, 0 \u2264 T \u2192 ArithmeticPickupEnergy.diagonal T = pickupDiagonal T"
     },
     {
       "axioms": [
@@ -1159,9 +1159,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.OriginalPickupIdentification",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimitiveIdentification",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupFullGram.eq_1",
-      "type": "∀ (T : ℝ),\n  pickupFullGram T =\n    ∑ m ∈ Finset.Icc 1 ⌊Real.exp T⌋₊,\n      ∑ n ∈ Finset.Icc 1 ⌊Real.exp T⌋₊, moebiusReal m * moebiusReal n * pickupResponseGram T m n"
+      "type": "\u2200 (T : \u211d),\n  pickupFullGram T =\n    \u2211 m \u2208 Finset.Icc 1 \u230aReal.exp T\u230b\u208a,\n      \u2211 n \u2208 Finset.Icc 1 \u230aReal.exp T\u230b\u208a, moebiusReal m * moebiusReal n * pickupResponseGram T m n"
     },
     {
       "axioms": [
@@ -1170,9 +1170,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.OriginalPickupIdentification",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimitiveIdentification",
       "name": "GRWTSK.RiemannHypothesis.CCC.original_fullGram_eq",
-      "type": "∀ {T : ℝ}, 0 ≤ T → ArithmeticPickupEnergy.fullGram T = pickupFullGram T"
+      "type": "\u2200 {T : \u211d}, 0 \u2264 T \u2192 ArithmeticPickupEnergy.fullGram T = pickupFullGram T"
     },
     {
       "axioms": [
@@ -1181,9 +1181,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.OriginalPickupIdentification",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimitiveIdentification",
       "name": "GRWTSK.RiemannHypothesis.CCC.pickupDiagonal.eq_1",
-      "type": "∀ (T : ℝ), pickupDiagonal T = ∑ n ∈ Finset.Icc 1 ⌊Real.exp T⌋₊, moebiusReal n ^ 2 * pickupResponseGram T n n"
+      "type": "\u2200 (T : \u211d), pickupDiagonal T = \u2211 n \u2208 Finset.Icc 1 \u230aReal.exp T\u230b\u208a, moebiusReal n ^ 2 * pickupResponseGram T n n"
     },
     {
       "axioms": [
@@ -1192,9 +1192,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.OriginalPickupIdentification",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimitiveIdentification",
       "name": "GRWTSK.RiemannHypothesis.CCC.original_inventory_eq",
-      "type": "∀ (T : ℝ), ArithmeticPickupEnergy.inventory T = Finset.Icc 1 ⌊Real.exp T⌋₊"
+      "type": "\u2200 (T : \u211d), ArithmeticPickupEnergy.inventory T = Finset.Icc 1 \u230aReal.exp T\u230b\u208a"
     },
     {
       "axioms": [
@@ -1203,9 +1203,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.OriginalPickupIdentification",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimitiveIdentification",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy.diagonal.eq_1",
-      "type": "∀ (T : ℝ),\n  ArithmeticPickupEnergy.diagonal T =\n    ∑ n ∈ ArithmeticPickupEnergy.inventory T,\n      ArithmeticPickupSource.moebiusCoefficient n ^ 2 * ArithmeticPickupEnergy.gram T n n"
+      "type": "\u2200 (T : \u211d),\n  ArithmeticPickupEnergy.diagonal T =\n    \u2211 n \u2208 ArithmeticPickupEnergy.inventory T,\n      ArithmeticPickupSource.moebiusCoefficient n ^ 2 * ArithmeticPickupEnergy.gram T n n"
     },
     {
       "axioms": [
@@ -1214,9 +1214,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.OriginalPickupIdentification",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimitiveIdentification",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy.fullGram.eq_1",
-      "type": "∀ (T : ℝ),\n  ArithmeticPickupEnergy.fullGram T =\n    ∑ m ∈ ArithmeticPickupEnergy.inventory T,\n      ∑ n ∈ ArithmeticPickupEnergy.inventory T,\n        ArithmeticPickupSource.moebiusCoefficient m * ArithmeticPickupSource.moebiusCoefficient n *\n          ArithmeticPickupEnergy.gram T m n"
+      "type": "\u2200 (T : \u211d),\n  ArithmeticPickupEnergy.fullGram T =\n    \u2211 m \u2208 ArithmeticPickupEnergy.inventory T,\n      \u2211 n \u2208 ArithmeticPickupEnergy.inventory T,\n        ArithmeticPickupSource.moebiusCoefficient m * ArithmeticPickupSource.moebiusCoefficient n *\n          ArithmeticPickupEnergy.gram T m n"
     },
     {
       "axioms": [
@@ -1225,9 +1225,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.OriginalPickupIdentification",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimitiveIdentification",
       "name": "GRWTSK.RiemannHypothesis.CCC.original_weighted_energy_all_iff",
-      "type": "(∀ (σ : ℝ), 0 < σ → IntegrableOn (fun u => Real.exp (-σ * u) * |ArithmeticPickupSource.pickup u| ^ 2) (Ici 0) volume) ↔\n  PickupWeightedEnergyAll"
+      "type": "(\u2200 (\u03c3 : \u211d), 0 < \u03c3 \u2192 IntegrableOn (fun u => Real.exp (-\u03c3 * u) * |ArithmeticPickupSource.pickup u| ^ 2) (Ici 0) volume) \u2194\n  PickupWeightedEnergyAll"
     },
     {
       "axioms": [
@@ -1236,9 +1236,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.OriginalPickupIdentification",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimitiveIdentification",
       "name": "GRWTSK.RiemannHypothesis.CCC.originalPickupResidual.eq_1",
-      "type": "∀ (u : ℝ), originalPickupResidual u = wholePickup u - ArithmeticPickupSource.pickup u"
+      "type": "\u2200 (u : \u211d), originalPickupResidual u = wholePickup u - ArithmeticPickupSource.pickup u"
     },
     {
       "axioms": [
@@ -1247,9 +1247,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.OriginalPickupIdentification",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimitiveIdentification",
       "name": "GRWTSK.RiemannHypothesis.CCC.original_joint_budgets_iff",
-      "type": "ArithmeticPickupEnergy.PickupEnergyBudgets ↔ PickupCrossPoly ∧ PickupReturnPoly"
+      "type": "ArithmeticPickupEnergy.PickupEnergyBudgets \u2194 PickupCrossPoly \u2227 PickupReturnPoly"
     },
     {
       "axioms": [
@@ -1258,9 +1258,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.OriginalPickupIdentification",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimitiveIdentification",
       "name": "GRWTSK.RiemannHypothesis.CCC.originalPickupResidual_energy_zero",
-      "type": "∀ {T : ℝ}, 0 ≤ T → ∫ (u : ℝ) in 0..T, originalPickupResidual u ^ 2 = 0"
+      "type": "\u2200 {T : \u211d}, 0 \u2264 T \u2192 \u222b (u : \u211d) in 0..T, originalPickupResidual u ^ 2 = 0"
     },
     {
       "axioms": [
@@ -1269,9 +1269,9 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.OriginalPickupIdentification",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimitiveIdentification",
       "name": "GRWTSK.RiemannHypothesis.CCC.original_coefficient_eq",
-      "type": "∀ (n : ℕ), ArithmeticPickupSource.moebiusCoefficient n = moebiusReal n"
+      "type": "\u2200 (n : \u2115), ArithmeticPickupSource.moebiusCoefficient n = moebiusReal n"
     },
     {
       "axioms": [
@@ -1280,294 +1280,295 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.OriginalPickupIdentification",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimitiveIdentification",
       "name": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupEnergy.responseKernel.eq_1",
-      "type": "∀ (n : ℕ) (u : ℝ), ArithmeticPickupEnergy.responseKernel n u = 2 * (↑n ^ (-(1 / 2)) - Real.exp (-u / 2))"
+      "type": "\u2200 (n : \u2115) (u : \u211d), ArithmeticPickupEnergy.responseKernel n u = 2 * (\u2191n ^ (-(1 / 2)) - Real.exp (-u / 2))"
     }
   ],
   "checks": [
     {
-      "path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/ArithmeticPickupSource.lean",
+      "path": "GRWTSK/NumberTheory/Moebius/WeightedSummatoryIntegral.lean",
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 13.481794333,
+      "seconds": 2.081982125,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
     },
     {
-      "path": "GRWTSK/ProofHorizon/CorkscrewChamberCap/ArithmeticPickupEnergy.lean",
+      "path": "GRWTSK/NumberTheory/Moebius/WeightedIntegralEnergy.lean",
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 12.508328040999999,
+      "seconds": 1.7812828749999996,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
     },
     {
-      "path": "GRWTSK/RiemannHypothesis/CCC/PickupBudgets.lean",
+      "path": "GRWTSK/NumberTheory/Moebius/MertensPrimitive.lean",
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 19.186696542000004,
+      "seconds": 1.5152937079999997,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
     },
     {
-      "path": "GRWTSK/RiemannHypothesis/CCC/PickupRegularity.lean",
+      "path": "GRWTSK/NumberTheory/Moebius/PrimitiveRegularity.lean",
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 10.62079525,
+      "seconds": 1.5545990419999995,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
     },
     {
-      "path": "GRWTSK/RiemannHypothesis/CCC/PickupFiniteIdentity.lean",
+      "path": "GRWTSK/NumberTheory/Moebius/FiniteResponseSum.lean",
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 18.309413334,
+      "seconds": 1.804381833999999,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
     },
     {
-      "path": "GRWTSK/RiemannHypothesis/CCC/EnergyIntegrability.lean",
+      "path": "GRWTSK/Analysis/LaplaceTransform/PolynomialEnergy.lean",
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 9.69147333299999,
+      "seconds": 1.9028227080000004,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
     },
     {
-      "path": "GRWTSK/RiemannHypothesis/CCC/GrowthBounds.lean",
+      "path": "GRWTSK/Analysis/Asymptotics/PolynomialSubexponential.lean",
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 6.812187958999999,
+      "seconds": 1.600523665999999,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
     },
     {
-      "path": "GRWTSK/RiemannHypothesis/CCC/DiagonalAllowance.lean",
+      "path": "GRWTSK/Analysis/Inequalities/ExponentialDiagonal.lean",
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 17.896921750000004,
+      "seconds": 1.7829914999999996,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
     },
     {
-      "path": "GRWTSK/RiemannHypothesis/CCC/PickupDiagonalBound.lean",
+      "path": "GRWTSK/NumberTheory/Moebius/GramDiagonalBound.lean",
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 23.392500874999996,
+      "seconds": 2.523729916999999,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
     },
     {
-      "path": "GRWTSK/RiemannHypothesis/CCC/PickupLaplaceDefinition.lean",
+      "path": "GRWTSK/NumberTheory/Moebius/LaplaceTransform.lean",
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 6.388742000000008,
+      "seconds": 1.4688519159999984,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
     },
     {
-      "path": "GRWTSK/RiemannHypothesis/CCC/PickupInitialTransform.lean",
+      "path": "GRWTSK/NumberTheory/Moebius/DirichletLaplaceIdentity.lean",
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 17.579693542,
+      "seconds": 2.211624416000003,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
     },
     {
-      "path": "GRWTSK/RiemannHypothesis/CCC/LaplaceAnalytic.lean",
+      "path": "GRWTSK/Analysis/LaplaceTransform/Analytic.lean",
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 13.409499625000024,
+      "seconds": 1.9063136669999992,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
     },
     {
-      "path": "GRWTSK/RiemannHypothesis/CCC/SignedPickupAnalytic.lean",
+      "path": "GRWTSK/NumberTheory/Moebius/LaplaceHolomorphy.lean",
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 14.872770625000015,
+      "seconds": 2.0232775420000024,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
     },
     {
-      "path": "GRWTSK/RiemannHypothesis/Definitions.lean",
+      "path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroDefinitions.lean",
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 21.289361499999984,
+      "seconds": 1.618032166999999,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
     },
     {
-      "path": "GRWTSK/RiemannHypothesis/ZeroSymmetry.lean",
+      "path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroSymmetry.lean",
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 13.22132770899998,
+      "seconds": 1.8868684159999987,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
     },
     {
-      "path": "GRWTSK/RiemannHypothesis/CCC/RegularizedZeta.lean",
+      "path": "GRWTSK/NumberTheory/Zeta/Riemann/Regularized.lean",
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 7.74985995900002,
+      "seconds": 1.7846509580000003,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
     },
     {
-      "path": "GRWTSK/RiemannHypothesis/CCC/EnergyRHReturn.lean",
+      "path": "GRWTSK/NumberTheory/Zeta/Riemann/LaplaceCriterion.lean",
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 9.686608624999991,
+      "seconds": 2.1224674589999992,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
     },
     {
-      "path": "GRWTSK/RiemannHypothesis/CCC/EnergyReturn.lean",
+      "path": "GRWTSK/NumberTheory/Zeta/Riemann/PolynomialEnergyCriterion.lean",
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 16.28246012500003,
+      "seconds": 1.7098186660000039,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
     },
     {
-      "path": "GRWTSK/RiemannHypothesis/CCC/UnsignedAllowance.lean",
+      "path": "GRWTSK/NumberTheory/Moebius/UnsignedEnergyBound.lean",
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 10.454794667000044,
+      "seconds": 1.8350564579999968,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
     },
     {
-      "path": "GRWTSK/RiemannHypothesis/CCC/EnergyContinuum.lean",
+      "path": "GRWTSK/NumberTheory/Moebius/EnergyAbscissa.lean",
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 15.918739374999973,
+      "seconds": 2.6735853329999983,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
     },
     {
-      "path": "GRWTSK/RiemannHypothesis/CCC/OriginalPickupIdentification.lean",
+      "path": "GRWTSK/NumberTheory/Moebius/PrimitiveIdentification.lean",
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 55.190631541000016,
+      "seconds": 2.0921709590000006,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
     },
     {
-      "path": "checks/CCCOriginalPickupAudit.lean",
+      "path": "GRWTSK/NumberTheory/Moebius/Checks/Positive/PrimitiveIdentification.lean",
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 19.143621750000023,
-      "output_sha256": "571b1d59581d662a88f9fb12754614f2929cd2fb2b2551cd413f69e9e60eeec7",
+      "seconds": 2.3422390829999955,
+      "output_sha256": "9d433324177d857af4d39330301b55aa393922bda756ebf6a3a8a05c0369586d",
       "expected_error_fragment": null,
       "expected_error_matched": true
     },
     {
-      "path": "checks/original-pickup-controls/MissingTimeOrder.lean",
+      "path": "GRWTSK/NumberTheory/Moebius/PrimitiveIdentification/Checks/Negative/MissingTimeOrder.lean",
       "expected_success": false,
       "actual_success": false,
       "exit_code": 1,
-      "seconds": 13.593006333999995,
-      "output_sha256": "b73fd86d5f1478f8621afed8a148cf5cae2cb8a2588b230132716c92bd4192e9",
+      "seconds": 1.6898633329999981,
+      "output_sha256": "1592cf882ffcd9d96f9ed9c7170a994b032f4670f45431d36a2ce6eaaac192d8",
       "expected_error_fragment": "Type mismatch",
       "expected_error_matched": true
     },
     {
-      "path": "checks/original-pickup-controls/MissingMainEnergyBudget.lean",
+      "path": "GRWTSK/NumberTheory/Moebius/PrimitiveIdentification/Checks/Negative/MissingMainEnergyBudget.lean",
       "expected_success": false,
       "actual_success": false,
       "exit_code": 1,
-      "seconds": 17.67811866599999,
-      "output_sha256": "c8349ca3aa4cab9e7cde74006ed66e5a7ad264038fb75db3354590f8b7f08c26",
+      "seconds": 1.738821625,
+      "output_sha256": "35c918a5f9881a62a5dc97ad0c81202870797a5d2f5351198a3e038f766f37b3",
       "expected_error_fragment": "Type mismatch",
       "expected_error_matched": true
     },
     {
-      "path": "checks/original-pickup-controls/ResidualAsMainBudget.lean",
+      "path": "GRWTSK/NumberTheory/Moebius/PrimitiveIdentification/Checks/Negative/ResidualAsMainBudget.lean",
       "expected_success": false,
       "actual_success": false,
       "exit_code": 1,
-      "seconds": 7.725137208999968,
-      "output_sha256": "4b2478b4864073a2607c0dd8b63b8de9e296cc9bfa05a3bf4e8a52178ea90cea",
+      "seconds": 1.7515147499999983,
+      "output_sha256": "38a91041293985463ca279bf7684d031bacfc7f7c62761d0cfc3abe6e3c00b12",
       "expected_error_fragment": "Type mismatch",
       "expected_error_matched": true
     },
     {
-      "path": "checks/original-pickup-controls/WrongPrimeSign.lean",
+      "path": "GRWTSK/NumberTheory/Moebius/PrimitiveIdentification/Checks/Negative/WrongPrimeSign.lean",
       "expected_success": false,
       "actual_success": false,
       "exit_code": 1,
-      "seconds": 14.369062750000012,
-      "output_sha256": "cb2682c14e8f80d70cb1f648abbbac89fc4946b0fbf9fa5a51fd944b208782b7",
+      "seconds": 1.9335702499999954,
+      "output_sha256": "d10a12a522986b45d06abdf568e7136b6e9c7a8f875559bd9b34855f4ab40d73",
       "expected_error_fragment": "unsolved goals",
       "expected_error_matched": true
     },
     {
-      "path": "checks/original-pickup-controls/DroppedOneAtom.lean",
+      "path": "GRWTSK/NumberTheory/Moebius/PrimitiveIdentification/Checks/Negative/DroppedOneAtom.lean",
       "expected_success": false,
       "actual_success": false,
       "exit_code": 1,
-      "seconds": 36.418693167000015,
-      "output_sha256": "762234b9c60ce4ddb75f0627f2892045e76c286757452a0482f32c12ff90db6d",
+      "seconds": 1.8618995420000033,
+      "output_sha256": "86fa39755f17bcef88250f859fb14daabe8213422740d5c77d2ecc92a31755ce",
       "expected_error_fragment": "unsolved goals",
       "expected_error_matched": true
     },
     {
-      "path": "checks/original-pickup-controls/OnlyOneCrossOrder.lean",
+      "path": "GRWTSK/NumberTheory/Moebius/PrimitiveIdentification/Checks/Negative/OnlyOneCrossOrder.lean",
       "expected_success": false,
       "actual_success": false,
       "exit_code": 1,
-      "seconds": 29.32192974999998,
-      "output_sha256": "0be37ad5765523cf2ab0fac388a2ae99523c1c8f5eea2ac8b7c5a3c55e16cd1c",
+      "seconds": 1.6599012920000007,
+      "output_sha256": "77aa1d1101e629bf4fffcaf18b7fad140b204a7f3395e403eb520cd3012deea2",
       "expected_error_fragment": "unsolved goals",
       "expected_error_matched": true
     }
   ],
   "pinned_dependency_objects_used": true,
+  "run_directory": "/Users/local/Documents/ChatGPT/math 2/.local/original-pickup-p9ta6_4f",
   "scope": "Actual material integral equals actual signed time pickup on nonnegative real times; unsigned responses, closed inventory, complete signed Gram/diagonal/cross, energy/local energy, and budget proposition equivalences; complete comparison residual zero",
   "actual_observable_identification_proved": true,
   "complete_signed_residual_zero_proved": true,
@@ -1576,6 +1577,5 @@
   "original_supplier_witness_proved": false,
   "sturmian_observable_identification_proved": false,
   "rh_proved": false,
-  "independent_acceptance": "PENDING",
-  "public_projection": "Host-specific locations and unpublished provenance are excluded. Mathematical observations and historical source bindings are retained; this projection supplies no new verification."
+  "independent_acceptance": "PENDING"
 }

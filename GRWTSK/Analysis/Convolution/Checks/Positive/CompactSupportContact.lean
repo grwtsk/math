@@ -1,0 +1,14 @@
+import GRWTSK.Analysis.Convolution.CompactSupportContact
+set_option linter.hashCommand false
+namespace GRWTSK.Analysis.Convolution.CompactSupportContact
+#check @closedProfile
+#check @correlation_zero_of_shift_ge_width
+#check @short_overlap_product_nonneg
+#check @overlap_product_lower_bound
+#check @positive_traces_eventual_overlap_lower_bound
+#print axioms closedProfile
+#print axioms correlation_zero_of_shift_ge_width
+#print axioms short_overlap_product_nonneg
+#print axioms overlap_product_lower_bound
+#print axioms positive_traces_eventual_overlap_lower_bound
+end GRWTSK.Analysis.Convolution.CompactSupportContact

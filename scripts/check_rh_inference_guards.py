@@ -1,7 +1,7 @@
 from pathlib import Path
 import json,subprocess
 P=Path(__file__).resolve().parents[1]
-r=subprocess.run(['lake','env','lean','-j2','--trust=0','-DwarningAsError=true','checks/Logic/Counterexamples/ComplexSymmetryAndPositivity.lean'],cwd=P,capture_output=True,text=True,timeout=180)
+r=subprocess.run(['lake','env','lean','-j2','--trust=0','-DwarningAsError=true','GRWTSK/Logic/Counterexamples/Checks/Positive/ComplexSymmetryAndPositivity.lean'],cwd=P,capture_output=True,text=True,timeout=180)
 s=r.stdout+r.stderr
 if r.returncode or s.count('RH_GUARD_CONTRACT::')!=32 or s.count('RH_GUARD_ORIGINAL_USE::')!=3 or s.count('RH_GUARD_SYNTHETIC_USE::')!=4:raise RuntimeError(s)
 (P/'.local').mkdir(exist_ok=True)

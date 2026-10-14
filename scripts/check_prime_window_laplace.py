@@ -56,9 +56,9 @@ CONTROL_ERRORS = {
     "FalseMultiplier": "Type mismatch",
 }
 CONTROLS = list(CONTROL_ERRORS)
-INPUTS = ORDER + ["checks/NumberTheory/Moebius/PrimeFilterLaplace.lean", "scripts/check_prime_window_laplace.py",
+INPUTS = ORDER + ["GRWTSK/NumberTheory/Moebius/Checks/Positive/PrimeFilterLaplace.lean", "scripts/check_prime_window_laplace.py",
                   "lean-toolchain", "lakefile.toml", "lake-manifest.json", "docs/ccc-prime-window-laplace.md"]
-INPUTS += ["checks/NumberTheory/Moebius/PrimeFilterLaplace/Controls/" + name + ".lean" for name in CONTROLS]
+INPUTS += ["GRWTSK/NumberTheory/Moebius/PrimeFilterLaplace/Checks/Negative/" + name + ".lean" for name in CONTROLS]
 HASHES = {p: hashlib.sha256((ROOT / p).read_bytes()).hexdigest() for p in INPUTS}
 (RUN / "source-freeze.json").write_text(json.dumps(HASHES, indent=2) + "\n")
 RESULTS = []
@@ -106,7 +106,7 @@ def run(rel, expected_success=True, export=False, expected_error=None):
 try:
     for path in ORDER:
         run(path, export=True)
-    output = run("checks/NumberTheory/Moebius/PrimeFilterLaplace.lean")
+    output = run("GRWTSK/NumberTheory/Moebius/Checks/Positive/PrimeFilterLaplace.lean")
     declarations = [json.loads(s) for s in re.findall(r"PRIME_WINDOW_DECL::(\{[^\n]+\})", output)]
     counts = re.findall(r"PRIME_WINDOW_COUNT::(\d+)", output)
     if len(counts) != 1 or len(declarations) != int(counts[0]) or not declarations:
@@ -128,7 +128,7 @@ try:
     if "T - a" not in contracts["noteWindowLaplace_causalShift"]["type"]:
         raise RuntimeError("causal shift lost its shorter recording")
     for name in CONTROLS:
-        run("checks/NumberTheory/Moebius/PrimeFilterLaplace/Controls/" + name + ".lean", expected_success=False,
+        run("GRWTSK/NumberTheory/Moebius/PrimeFilterLaplace/Checks/Negative/" + name + ".lean", expected_success=False,
             expected_error=CONTROL_ERRORS[name])
     stable_inputs()
     receipt = {"schema_version": 1, "status": "SCOPED_SOURCE_CHECKS_PASSED",
@@ -145,8 +145,8 @@ try:
                "declaration_count": len(declarations), "declarations": declarations,
                "checks": RESULTS,
                "acceptance": "Checked exact compact-window identities and an actual source counterexample; no independent human review or arithmetic upper estimate"}
-    (ROOT / "evidence/prime-window-laplace-checks.json").write_text(json.dumps(receipt, indent=2) + "\n")
-    (RUN / "receipt.json").write_text(json.dumps(receipt, indent=2) + "\n")
+    with (RUN / "receipt.json").open("x", encoding="utf-8") as output:
+        output.write(json.dumps(receipt, indent=2) + "\n")
     print("CCC_PRIME_WINDOW_SOURCE_AND_SHORTCUT_CONTROLS_PASSED", flush=True)
 except Exception as error:
     (RUN / "failure.json").write_text(json.dumps({"status": "FAILED", "error": str(error), "checks": RESULTS}, indent=2) + "\n")

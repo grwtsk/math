@@ -1,0 +1,10 @@
+{
+  "module": "NativeWindow",
+  "source_sha256": "0c36eb6df46a0fcc0aa34285e3dd1c40962ab72a14f3735a45508054dd5eeb90",
+  "unchanged": true,
+  "exit_code": 0,
+  "kernel_trust_level": 0,
+  "warnings_as_errors": true,
+  "stdout": "'EulerP04RH.NativeWindow.pickup_cutoff_consistent' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EulerP04RH.NativeWindow.fixed_window_implies_literal_P04' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": ""
+}

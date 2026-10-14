@@ -1,0 +1,12 @@
+{
+  "status": "kernel-checked",
+  "source": "/Users/local/Documents/ChatGPT/math 2/asbn-p04/PickupEndpoint.lean",
+  "source_sha256": "b52830720e332f5d26a65074856c0b80a0776f89f59d3e5488c58d6e0feea99d",
+  "kernel_trust_level": 0,
+  "warnings_as_errors": true,
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "exit_code": 0,
+  "stdout": "'PPNCP04.atom_right_derivative_at_entry' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.atom_left_derivative_at_entry' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.atom_derivative_jump' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.signed_atom_derivative_jump' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.atom_not_differentiable_at_entry' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "scope": "Literal atom right and left within-derivatives at log n, exact signed M\u00f6bius derivative jump, and failure of a two-sided derivative. Continuity is proved in ProblemDefinitions."
+}

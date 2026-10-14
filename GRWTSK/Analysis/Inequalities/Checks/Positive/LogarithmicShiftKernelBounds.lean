@@ -1,0 +1,150 @@
+import GRWTSK.Analysis.Inequalities.LogarithmicShiftKernelBounds
+set_option linter.hashCommand false
+
+namespace GRWTSK.Analysis.Convolution.CompactProfileDifferentialMoments
+#check @actual_differential_moments_zero
+#print axioms actual_differential_moments_zero
+end GRWTSK.Analysis.Convolution.CompactProfileDifferentialMoments
+
+namespace GRWTSK.Analysis.Convolution.CompactProfileFirstPoleMoment
+#check @normalized_source_first_exponential_integrable
+#check @first_exponential_correlation_integrable
+#check @first_pole_correlation_integral_zero
+#print axioms normalized_source_first_exponential_integrable
+#print axioms first_exponential_correlation_integrable
+#print axioms first_pole_correlation_integral_zero
+end GRWTSK.Analysis.Convolution.CompactProfileFirstPoleMoment
+
+namespace GRWTSK.Analysis.Convolution.FirstMomentConvolution
+#check @first_moment_convolution_ae
+#check @first_moment_convolution_integrable
+#check @first_moment_convolution_integral
+#check @first_moment_convolution_integral_zero
+#print axioms first_moment_convolution_ae
+#print axioms first_moment_convolution_integrable
+#print axioms first_moment_convolution_integral
+#print axioms first_moment_convolution_integral_zero
+end GRWTSK.Analysis.Convolution.FirstMomentConvolution
+
+namespace GRWTSK.Analysis.Inequalities.CompactProfileDifferentialBounds
+#check @differential_hasDerivAt
+#check @differential_abs_le
+#check @differential_derivative_abs_le
+#check @differential_zero_upper
+#print axioms differential_hasDerivAt
+#print axioms differential_abs_le
+#print axioms differential_derivative_abs_le
+#print axioms differential_zero_upper
+end GRWTSK.Analysis.Inequalities.CompactProfileDifferentialBounds
+
+namespace GRWTSK.Analysis.Inequalities.FiniteLogarithmicProfileBounds
+#check @finite_logarithmic_profile_price
+#print axioms finite_logarithmic_profile_price
+end GRWTSK.Analysis.Inequalities.FiniteLogarithmicProfileBounds
+
+namespace GRWTSK.Analysis.Inequalities.LogarithmicProfileIntegralPrices
+#check @upper_variation_weight_integral
+#check @logarithmic_profile_variation_price
+#check @logarithmic_profile_lower_price
+#print axioms upper_variation_weight_integral
+#print axioms logarithmic_profile_variation_price
+#print axioms logarithmic_profile_lower_price
+end GRWTSK.Analysis.Inequalities.LogarithmicProfileIntegralPrices
+
+namespace GRWTSK.Analysis.IntegralTransforms.CompactProfileLogarithmicMoment
+#check @actual_logarithmic_integral_zero
+#print axioms actual_logarithmic_integral_zero
+end GRWTSK.Analysis.IntegralTransforms.CompactProfileLogarithmicMoment
+
+namespace GRWTSK.Analysis.IntegralTransforms.CompactProfileLogarithmicRegularity
+#check @correlation_derivatives_zero_left
+#check @actual_logarithmic_profile_zero_left
+#check @actual_logarithmic_profile_contDiff_two
+#print axioms correlation_derivatives_zero_left
+#print axioms actual_logarithmic_profile_zero_left
+#print axioms actual_logarithmic_profile_contDiff_two
+end GRWTSK.Analysis.IntegralTransforms.CompactProfileLogarithmicRegularity
+
+namespace GRWTSK.Analysis.IntegralTransforms.LogarithmicMomentSubstitution
+#check @sqrt_exp_half
+#check @exponential_jacobian_integral
+#check @exponential_jacobian_integrable_iff
+#check @logarithmic_weight_jacobian
+#check @logarithmic_moment_identity
+#check @logarithmic_integral_zero
+#print axioms sqrt_exp_half
+#print axioms exponential_jacobian_integral
+#print axioms exponential_jacobian_integrable_iff
+#print axioms logarithmic_weight_jacobian
+#print axioms logarithmic_moment_identity
+#print axioms logarithmic_integral_zero
+end GRWTSK.Analysis.IntegralTransforms.LogarithmicMomentSubstitution
+
+namespace GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileCutoff
+#check @exponential_floor_bounds
+#check @logarithmic_profile_zero_above_floor
+#check @full_logarithmic_integer_inventory
+#print axioms exponential_floor_bounds
+#print axioms logarithmic_profile_zero_above_floor
+#print axioms full_logarithmic_integer_inventory
+end GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileCutoff
+
+namespace GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileDerivative
+#check @logarithmic_profile_hasDerivAt
+#check @logarithmic_profile_derivative_abs_le
+#print axioms logarithmic_profile_hasDerivAt
+#print axioms logarithmic_profile_derivative_abs_le
+end GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileDerivative
+
+namespace GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileRegularity
+#check @logarithmic_profile_zero_left
+#check @logarithmic_profile_contDiff
+#print axioms logarithmic_profile_zero_left
+#print axioms logarithmic_profile_contDiff
+end GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileRegularity
+
+namespace GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileWeights
+#check @reciprocal_sqrt_upper_weight
+#check @logarithmic_sqrt_upper_weight
+#check @logarithmic_sqrt_lower_weight
+#print axioms reciprocal_sqrt_upper_weight
+#print axioms logarithmic_sqrt_upper_weight
+#print axioms logarithmic_sqrt_lower_weight
+end GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileWeights
+
+namespace GRWTSK.Analysis.Integration.CompactWeightedDerivativeMoments
+#check @compact_weight_integrable
+#check @weighted_deriv_integral
+#check @first_weighted_deriv_integral
+#check @weighted_second_deriv_integral
+#check @first_weighted_second_deriv_integral
+#check @differential_moments_zero
+#print axioms compact_weight_integrable
+#print axioms weighted_deriv_integral
+#print axioms first_weighted_deriv_integral
+#print axioms weighted_second_deriv_integral
+#print axioms first_weighted_second_deriv_integral
+#print axioms differential_moments_zero
+end GRWTSK.Analysis.Integration.CompactWeightedDerivativeMoments
+
+namespace GRWTSK.Analysis.Integration.FiniteUnitSumVariation
+#check @unit_interval_sample_error
+#check @finite_unit_sum_error
+#print axioms unit_interval_sample_error
+#print axioms finite_unit_sum_error
+end GRWTSK.Analysis.Integration.FiniteUnitSumVariation
+
+namespace GRWTSK.Analysis.Integration.PositiveHalfLineCutoffBalance
+#check @positive_halfline_cutoff_balance
+#check @positive_halfline_sample_price
+#print axioms positive_halfline_cutoff_balance
+#print axioms positive_halfline_sample_price
+end GRWTSK.Analysis.Integration.PositiveHalfLineCutoffBalance
+
+namespace GRWTSK.NumberTheory.ArithmeticFunctions.LogarithmicShiftKernelBounds
+#check @literal_kernel_polynomial_price
+#check @literal_kernel_original_window_price
+#print axioms literal_kernel_polynomial_price
+#print axioms literal_kernel_original_window_price
+end GRWTSK.NumberTheory.ArithmeticFunctions.LogarithmicShiftKernelBounds
+

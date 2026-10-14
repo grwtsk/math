@@ -58,7 +58,7 @@
     "canonical_source_sha256": "eca8d7c7426a9c4a329522472fffbc3c3de6f05c047cb328ddd1b2c2da59c2d5",
     "Lean": "4.33.0",
     "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
-    "public_check": "checks/PolarizationAudit.lean"
+    "public_check": "GRWTSK/Analysis/InnerProductSpace/Polarization/Checks/Audit.lean"
   },
   "local_direction": "grwtsk contributors",
   "formalization_and_checking_assistance": "OpenAI Codex",

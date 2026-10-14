@@ -1,0 +1,404 @@
+{
+  "status": "kernel-checked",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "lean_executable": "/Users/local/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+  "lean_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "kernel_trust_level": 0,
+  "warnings_as_errors": true,
+  "import_search_roots": [
+    "/Users/local/Desktop/NoeaaeueFormal/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+    "/Users/local/Desktop/NoeaaeueFormal/.lake/packages/Qq/.lake/build/lib/lean",
+    "/Users/local/Desktop/NoeaaeueFormal/.lake/packages/Zeta23/.lake/build/lib/lean",
+    "/Users/local/Desktop/NoeaaeueFormal/.lake/packages/aesop/.lake/build/lib/lean",
+    "/Users/local/Desktop/NoeaaeueFormal/.lake/packages/batteries/.lake/build/lib/lean",
+    "/Users/local/Desktop/NoeaaeueFormal/.lake/packages/importGraph/.lake/build/lib/lean",
+    "/Users/local/Desktop/NoeaaeueFormal/.lake/packages/mathlib/.lake/build/lib/lean",
+    "/Users/local/Desktop/NoeaaeueFormal/.lake/packages/plausible/.lake/build/lib/lean",
+    "/Users/local/Desktop/NoeaaeueFormal/.lake/packages/proofwidgets/.lake/build/lib/lean"
+  ],
+  "prohibited_pdf_tex_files": [],
+  "scope": "Compiled definitions and theorem bodies only. Explicit research obligations remain open; conditional theorem assumptions are unsupplied.",
+  "modules": [
+    {
+      "module": "ASClosure",
+      "source": "/Users/local/Documents/ChatGPT/math 2/ppnc-p04/ASClosure.lean",
+      "source_sha256": "ce0c0873e6068c37a825471fc6237eac2b60cd77e9f5ec8fe7b36e7494f74195",
+      "source_unchanged_during_check": true,
+      "dependencies": [
+        "CostClosure",
+        "ResearchObligations",
+        "SourceBridge",
+        "TerminalReturn"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "'PPNCP04.ASClosure.initial_potential_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.ASClosure.completionFromAS' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.ASClosure.AS_implies_literal_P04' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "module": "ActualDiagnostics",
+      "source": "/Users/local/Documents/ChatGPT/math 2/ppnc-p04/ActualDiagnostics.lean",
+      "source_sha256": "64beb843f6fc96142eba3c0b3da639c9396bb6727e7b16e6d8b1b8f1b8df98ee",
+      "source_unchanged_during_check": true,
+      "dependencies": [
+        "FiniteDiagnostics",
+        "NarrowObstruction",
+        "SourceBridge"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "'PPNCP04.ActualDiagnostics.orderEnergy_completed' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.ActualDiagnostics.EnergyEnclosure.contains_literal_integral' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'PPNCP04.ActualDiagnostics.orderEnergy_le_max' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.ActualDiagnostics.all_minus_baseline_energy_is_actual' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'PPNCP04.ActualDiagnostics.AdmissibleController.exactly_once' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.ActualDiagnostics.AdmissibleController.union_complete' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'PPNCP04.ActualDiagnostics.AdmissibleController.total_mass_is_inventory_mass' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'PPNCP04.ActualDiagnostics.no_small_eta_controller' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "module": "AmortizedClosure",
+      "source": "/Users/local/Documents/ChatGPT/math 2/asbn-p04/AmortizedClosure.lean",
+      "source_sha256": "a51c1fdc9d749d14ead707a7e309eea2fe4dcdc1f06ef1b1169ceb4c3c001c07",
+      "source_unchanged_during_check": true,
+      "dependencies": [],
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "'ASBNP04.amortized_iteration' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ASBNP04.terminal_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ASBNP04.shifted_homogeneous_iteration' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "module": "ChartCertificates",
+      "source": "/Users/local/Documents/ChatGPT/math 2/ppnc-p04/ChartCertificates.lean",
+      "source_sha256": "f34a9fd6328874888434468f564fb38d7bdf47af385eb9d0cfba9181c7530a06",
+      "source_unchanged_during_check": true,
+      "dependencies": [
+        "PrimePhaseBroad"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "'PPNCP04.Charts.spectral_split' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.Charts.broad_narrow_integral_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.Charts.childRelation_wellFounded' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.Charts.nondecreasing_child_rejected' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.Charts.paid_extraction_implies_NC' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.Charts.paid_spectral_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "module": "ControllerCost",
+      "source": "/Users/local/Documents/ChatGPT/math 2/ppnc-p04/ControllerCost.lean",
+      "source_sha256": "38d9418234a4a56ae7432013dad6a355c61bc5f08fdf4e1a317103a28349d348",
+      "source_unchanged_during_check": true,
+      "dependencies": [
+        "ActualDiagnostics",
+        "CostClosure",
+        "PrimeHarmonic",
+        "PrimeHarmonicLog"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "'PPNCP04.controller_square_root_cost_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.controller_cost_log_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.controller_costs_have_log_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "module": "CostClosure",
+      "source": "/Users/local/Documents/ChatGPT/math 2/ppnc-p04/CostClosure.lean",
+      "source_sha256": "eabe820130ad0d2208a3ba0bc29b4db99d2d674da9333730b10e2d74b092dd94",
+      "source_unchanged_during_check": true,
+      "dependencies": [],
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "'PPNCP04.Cost.generalized_iteration' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.Cost.sum_cost_with_remainder' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.Cost.exp_cost_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "module": "CutoffEnergy",
+      "source": "/Users/local/Documents/ChatGPT/math 2/ppnc-p04/CutoffEnergy.lean",
+      "source_sha256": "0698c464b96d2b1f695a057f10b524d856e51749ca1788e87ca7af5dda9c3f75",
+      "source_unchanged_during_check": true,
+      "dependencies": [
+        "FourierBlock",
+        "SourceBlockEnergy"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "'PPNCP04.Cutoff.cutoff_block_exact' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.Cutoff.windowed_block_square_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.Cutoff.actual_cutoff_complex_energy_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "module": "DiagonalBound",
+      "source": "/Users/local/Documents/ChatGPT/math 2/ppnc-p04/DiagonalBound.lean",
+      "source_sha256": "6b9fd746040d9bfa5cbc10e8fe2b79a7d7db022e6a2f05f55fe7d8a86800bb2f",
+      "source_unchanged_during_check": true,
+      "dependencies": [
+        "EnergyIdentity"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "'PPNCP04.diagonal_quadratic_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.P04_iff_energy_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "module": "EnergyIdentity",
+      "source": "/Users/local/Documents/ChatGPT/math 2/ppnc-p04/EnergyIdentity.lean",
+      "source_sha256": "d1acc8177aa9835ba4a55a9969898a3f8a8edf8a3bc7858713cf43f63e36e9eb",
+      "source_unchanged_during_check": true,
+      "dependencies": [
+        "ProblemDefinitions"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "'PPNCP04.energy_eq_diagonal_add_cross' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.energy_polynomial_implies_P04' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "module": "EvidenceLedger",
+      "source": "/Users/local/Documents/ChatGPT/math 2/ppnc-p04/EvidenceLedger.lean",
+      "source_sha256": "69dd87e7b75a1541d6d9a8fd5f8f5af63624f927580f97d4258c69180ee50289",
+      "source_unchanged_during_check": true,
+      "dependencies": [
+        "ASClosure",
+        "ActualDiagnostics",
+        "ControllerCost",
+        "CutoffEnergy",
+        "DiagonalBound",
+        "FiniteDiagnostics",
+        "FourierBlock",
+        "OriginalClosure",
+        "PickupEndpoint",
+        "PlancherelBridge",
+        "PrimeHarmonic",
+        "PrimeHarmonicLog",
+        "ResearchObligations",
+        "SourceBlockEnergy"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "'PPNCP04.Ledger.pickupIdentification' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.Ledger.orderedEnergyIdentity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.Ledger.broadMultiplier' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.Ledger.closure' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.Ledger.logarithmicPrimeMass' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.Ledger.originalASClosure' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.Ledger.rawIntegralReturnBridge' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.Ledger.terminalP04' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "module": "FiniteDiagnostics",
+      "source": "/Users/local/Documents/ChatGPT/math 2/ppnc-p04/FiniteDiagnostics.lean",
+      "source_sha256": "eed25e694b6d0388b891d5eeaf95ce20b2b95a3e6ce3cc9468952cc73f282221",
+      "source_unchanged_during_check": true,
+      "dependencies": [
+        "NarrowObstruction"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "'PPNCP04.Diagnostics.zero_phase_absolute_test_fails' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.Diagnostics.literal_moebius_composite_sign' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.Diagnostics.covered_prime_two_small_cutoff_rejected' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.Diagnostics.abstract_growth_then_cancellation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.Diagnostics.nondecreasing_natural_rank_rejected' depends on axioms: [propext, Quot.sound]\n'PPNCP04.Diagnostics.geometric_exponential_loss_not_polynomial' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "module": "FourierBlock",
+      "source": "/Users/local/Documents/ChatGPT/math 2/ppnc-p04/FourierBlock.lean",
+      "source_sha256": "763626d510910336977866bb1cfe29cabddc10da1a3ce13476d1e5e5d8a3d344",
+      "source_unchanged_during_check": true,
+      "dependencies": [
+        "PrimePhaseBroad",
+        "SourceBridge"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "'PPNCP04.FourierBlock.rawFourier_ordinaryBlock' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.FourierBlock.rawFourier_causal_primeBlock' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.FourierBlock.windowedState_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.FourierBlock.rawFourier_windowed_primeBlock' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "module": "KernelAudit",
+      "source": "/Users/local/Documents/ChatGPT/math 2/ppnc-p04/KernelAudit.lean",
+      "source_sha256": "294433762cb0408abb5acdeb236d319e0823f887bb1ddf446358529322d17237",
+      "source_unchanged_during_check": true,
+      "dependencies": [
+        "AmortizedClosure",
+        "EvidenceLedger",
+        "PickupNoteCascade"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "Kernel axiom audit passed for 961 declarations.\n",
+      "stderr": ""
+    },
+    {
+      "module": "NarrowObstruction",
+      "source": "/Users/local/Documents/ChatGPT/math 2/ppnc-p04/NarrowObstruction.lean",
+      "source_sha256": "07396ef4d33560d77759bb6f13e55490c7ef22b8e654c73800988626f47866cc",
+      "source_unchanged_during_check": true,
+      "dependencies": [],
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "'PPNCP04.Obstruction.finite_nc_contradiction' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.Obstruction.exponential_input_not_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.Obstruction.eventual_nc_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.Obstruction.crude_inventory_reserve_nc' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "module": "OriginalClosure",
+      "source": "/Users/local/Documents/ChatGPT/math 2/ppnc-p04/OriginalClosure.lean",
+      "source_sha256": "7e0399217fe6010d22ea60d7b7c53798de52a8b11c7b4647b2ee9d772e8c88c6",
+      "source_unchanged_during_check": true,
+      "dependencies": [
+        "ASClosure",
+        "PrimeHarmonicLog"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "'PPNCP04.OriginalClosure.completion_prefix_mass' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.OriginalClosure.completion_total_mass' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.OriginalClosure.AS_with_complete_admissible_chains_implies_P04' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "module": "PickupEndpoint",
+      "source": "/Users/local/Documents/ChatGPT/math 2/asbn-p04/PickupEndpoint.lean",
+      "source_sha256": "b52830720e332f5d26a65074856c0b80a0776f89f59d3e5488c58d6e0feea99d",
+      "source_unchanged_during_check": true,
+      "dependencies": [
+        "PickupFiniteProduct",
+        "ProblemDefinitions"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "'PPNCP04.atom_right_derivative_at_entry' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.atom_left_derivative_at_entry' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.atom_derivative_jump' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.signed_atom_derivative_jump' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.atom_not_differentiable_at_entry' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "module": "PickupFiniteProduct",
+      "source": "/Users/local/Documents/ChatGPT/math 2/asbn-p04/PickupFiniteProduct.lean",
+      "source_sha256": "6ca3df98da7021f2a7b0cc7abfaf13ac3e3b72d307b4b592190832991259f145",
+      "source_unchanged_during_check": true,
+      "dependencies": [],
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "'ASBNP04.FiniteProduct.cascade_eq_signedExpansion' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ASBNP04.FiniteProduct.cascade_order_independent' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ASBNP04.FiniteProduct.moebius_primeProduct' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ASBNP04.FiniteProduct.completed_pickup_identification' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ASBNP04.FiniteProduct.restrict_cascade' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ASBNP04.FiniteProduct.primeState_block_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ASBNP04.FiniteProduct.block_energy_exact' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "module": "PickupNoteCascade",
+      "source": "/Users/local/Documents/ChatGPT/math 2/asbn-p04/PickupNoteCascade.lean",
+      "source_sha256": "d2b4b9eb949ec1ae4451d614aac79fb7d8691e36b3e17ee2077eb19c28b180ee",
+      "source_unchanged_during_check": true,
+      "dependencies": [],
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "'ASBNP04.causalShift_comm' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ASBNP04.atom_eq_scaled_shift' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ASBNP04.signed_quadratic_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "module": "PlancherelBridge",
+      "source": "/Users/local/Documents/ChatGPT/math 2/ppnc-p04/PlancherelBridge.lean",
+      "source_sha256": "7f50797fd6c47bcd2eb0fe04f372105bbe6db2f183482278470e813863023c6a",
+      "source_unchanged_during_check": true,
+      "dependencies": [
+        "CutoffEnergy",
+        "PrimePhaseBroad",
+        "ResearchObligations"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "'PPNCP04.Plancherel.integralFourier_eq_l2_ae' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.Plancherel.rawFourier_parseval' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.Plancherel.actualFourierReductionObligation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.Plancherel.actual_broad_narrow_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.Plancherel.actual_narrow_return' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "module": "PrimeHarmonic",
+      "source": "/Users/local/Documents/ChatGPT/math 2/ppnc-p04/PrimeHarmonic.lean",
+      "source_sha256": "09fc8c0341921a8e31cb779ea1f861bdc4ac0102489d50d81e312a3cc90b3181",
+      "source_unchanged_during_check": true,
+      "dependencies": [
+        "NarrowObstruction",
+        "SourceBridge"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "'PPNCP04.PrimeHarmonic.prime_interval_harmonic_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.PrimeHarmonic.fixed_ratio_horizon_mass_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.PrimeHarmonic.inventory_harmonic_linear_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "module": "PrimeHarmonicLog",
+      "source": "/Users/local/Documents/ChatGPT/math 2/ppnc-p04/PrimeHarmonicLog.lean",
+      "source_sha256": "ab7b0ab2f71f425901837214cd678b4398914768013ced9adba9811de2e93832",
+      "source_unchanged_during_check": true,
+      "dependencies": [
+        "PrimeHarmonic"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "'PPNCP04.PrimeHarmonicLog.prime_count_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.PrimeHarmonicLog.prime_reciprocal_abel' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.PrimeHarmonicLog.prime_harmonic_bound_at_x' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.PrimeHarmonicLog.prime_harmonic_logarithmic_estimate' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "module": "PrimePhaseBroad",
+      "source": "/Users/local/Documents/ChatGPT/math 2/ppnc-p04/PrimePhaseBroad.lean",
+      "source_sha256": "6d7f8beec1453d84c21513dee4846911fd2e4afdcf3729c2be4ad212dc2380b4",
+      "source_unchanged_during_check": true,
+      "dependencies": [],
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "'PPNC.block_multiplier_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNC.rawFourier_translate' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNC.rawFourier_eq_integral' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNC.broad_multiplier_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNC.blockMultiplier_signed_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNC.zero_frequency_contractive' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNC.antiphase_singleton_amplifies' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "module": "ProblemDefinitions",
+      "source": "/Users/local/Documents/ChatGPT/math 2/ppnc-p04/ProblemDefinitions.lean",
+      "source_sha256": "9799845781d7ee3099471eb974c08c59caddba83dc2f484cedfec7acbc592c44",
+      "source_unchanged_during_check": true,
+      "dependencies": [],
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "'PPNCP04.atom_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.restrict_primeNote_restrict' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "module": "ResearchObligations",
+      "source": "/Users/local/Documents/ChatGPT/math 2/ppnc-p04/ResearchObligations.lean",
+      "source_sha256": "b091d17aa2326d10a56b8c91c153f9ef28cbc185206de047eaf801d7e4e5ff7f",
+      "source_unchanged_during_check": true,
+      "dependencies": [
+        "ChartCertificates",
+        "NarrowObstruction",
+        "SourceBridge",
+        "TerminalReturn"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "'PPNCP04.fourier_reduction_broad_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.narrow_contract_returns_amortized_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.chainConstruction_implies_P04' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "module": "SourceBlockEnergy",
+      "source": "/Users/local/Documents/ChatGPT/math 2/asbn-p04/SourceBlockEnergy.lean",
+      "source_sha256": "28accf6fe4cfa04bc3c4617e3c45812c173f9ac5c5d2c0e1e62fce2ce9500fd7",
+      "source_unchanged_during_check": true,
+      "dependencies": [
+        "PickupFiniteProduct",
+        "ProblemDefinitions"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "'ASBNP04.FiniteProduct.primeState_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ASBNP04.FiniteProduct.source_correlations_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ASBNP04.FiniteProduct.source_block_energy_exact' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ASBNP04.FiniteProduct.restricted_source_memLp_two' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ASBNP04.FiniteProduct.sourceEnergy_eq_l2_norm_sq' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "module": "SourceBridge",
+      "source": "/Users/local/Documents/ChatGPT/math 2/ppnc-p04/SourceBridge.lean",
+      "source_sha256": "35698868ac09d3d7e12a878ae4d6066b657b0cb90698045427edcc1f25c1fbb6",
+      "source_unchanged_during_check": true,
+      "dependencies": [
+        "PickupFiniteProduct",
+        "ProblemDefinitions"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "'PPNCP04.completed_pickup_identification' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.sourceEnergy_completed' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "module": "TerminalReturn",
+      "source": "/Users/local/Documents/ChatGPT/math 2/ppnc-p04/TerminalReturn.lean",
+      "source_sha256": "e686d41fd78656578133580796b0f0693a94b7e34710514fc2dce3ae47dde17e",
+      "source_unchanged_during_check": true,
+      "dependencies": [
+        "CostClosure",
+        "EnergyIdentity",
+        "SourceBridge"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "'PPNCP04.completion_energy_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PPNCP04.amortized_completion_implies_P04' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    }
+  ],
+  "custom_axiom_negative_control": {
+    "rejected": true,
+    "exit_code": 1,
+    "stdout": "/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0000gn/T/p04-lean-1iljvazg/RejectedAxiom.lean:5:0: error: Unapproved axiom PPNCP04.hostileCustomAxiom in PPNCP04.hostileCustomAxiom\n",
+    "stderr": ""
+  },
+  "compiled_module_count": 27
+}

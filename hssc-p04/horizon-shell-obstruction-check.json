@@ -1,0 +1,11 @@
+{
+  "status": "kernel-checked",
+  "source": "/Users/local/Documents/ChatGPT/math 2/hssc-p04/HorizonShellObstruction.lean",
+  "source_sha256": "33b56e6ef9fc245feb30d40ac3998d9724ceae21f72cb70fa741a50384e8ceaa",
+  "kernel_trust_level": 0,
+  "warnings_as_errors": true,
+  "exit_code": 0,
+  "stdout": "'HSSCP04.ShellObstruction.heavy_bin_exists' depends on axioms: [propext, Classical.choice, Quot.sound]\n'HSSCP04.ShellObstruction.actual_horizon_shell_energy_growth' depends on axioms: [propext, Classical.choice, Quot.sound]\n'HSSCP04.ShellObstruction.horizon_shell_energy_not_polynomial' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+  "stderr": "",
+  "scope": "Unconditional controlled-horizon exponential growth of the actual signed horizon-shell waveform at fixed width log(2)/2, and impossibility of any uniform polynomial bound on its separate energy. The joint HSS/P04/RH arithmetic problem remains open."
+}
