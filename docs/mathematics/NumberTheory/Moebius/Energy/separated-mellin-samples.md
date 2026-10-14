@@ -316,6 +316,10 @@ The maintained [finite implementation](../../../../../scripts/number_theory/moeb
 and [versioned input verifier](../../../../../scripts/number_theory/moebius/vaughan_type_ii/check_sampled_return.py)
 use Python's standard library and directed integer intervals. The required
 prior-center fixture is [source-bound separately](../../../../../evidence/NumberTheory/Moebius/VaughanTypeII/previous-centers.json).
+The additive [complete-packet diagnostic](../../../../../scripts/number_theory/moebius/vaughan_type_ii/analyze_complete_packet.py)
+first verifies that immutable input closure, then checks the center identities,
+the lattice remainders, the six-term signed reconstruction, the zero sample,
+and the unweighted frequency bands without changing the baseline report.
 
 The finite calculations through $X=4096$ were replayed in ordinary and
 optimized Python with identical complete numeric output. The analytic sampling
@@ -334,3 +338,494 @@ sample argument.
 Repository integration and fresh replay assistance: OpenAI Codex. The original
 research direction, derivation assistance, inherited attribution, and licenses
 remain as stated above.
+
+## 12. The two center channels are exact prime-discrepancy channels
+
+The two moments can be read directly from the unchanged measure.  Put
+$c_{X,q}=b_{X,q}-1$.  Since
+
+\[
+ \int_1^2\frac{\log y}{y}\,dy=\frac{h^2}{2},\qquad
+ \int_1^2\frac{dy}{y}=h,
+\]
+
+the mass is exactly
+
+\[
+ \boxed{
+ m_0=\sum_{X<n\leq2X}\frac{v_q(n)}n
+      +\frac{a_qh^2}{2}+c_{X,q}h.}
+ \tag{12.1}
+\]
+
+Likewise $m_0+m_1=\int y\,d\sigma_X(y)$, and
+
+\[
+ \int_1^2\log y\,dy=2h-1,\qquad \int_1^2dy=1.
+\]
+
+Therefore
+
+\[
+ \boxed{
+ m_0+m_1=\frac1X\sum_{X<n\leq2X}v_q(n)
+      +a_q(2h-1)+c_{X,q}.}
+ \tag{12.2}
+\]
+
+For the separately named original Mangoldt source the same calculation gives
+
+\[
+ \boxed{
+ m_0^\Lambda+m_1^\Lambda
+   =\frac{\psi(2X)-\psi(X)}X-1.}
+ \tag{12.3}
+\]
+
+These are identities, not bounds.  The small-divisor cancellation can also be
+made exact without Brun--Titchmarsh.  Let the Type-I atomic coefficient be
+
+\[
+ I_q(n)=\sum_{\substack{d\mid n\\d\leq q}}\mu(d)\log(n/d)
+ -\sum_{\substack{dm\mid n\\d\leq q,\ m\leq q}}
+     \mu(d)\Lambda(m).
+ \tag{12.4}
+\]
+
+The second sum includes prime powers through $\Lambda(m)$ and has no hidden
+coprimality condition.  For $Y>0$ define
+
+\[
+ \begin{aligned}
+ H(Y)&=\sum_{Y<r\leq2Y}\frac1r,&
+ L(Y)&=\sum_{Y<r\leq2Y}\frac{\log r}{r},\\
+ N(Y)&=\#\{r\in\mathbb Z:Y<r\leq2Y\},&
+ G(Y)&=\sum_{Y<r\leq2Y}\log r,
+ \end{aligned}
+\]
+
+and their exact sum--integral remainders
+
+\[
+ \begin{aligned}
+ e_0(Y)&=H(Y)-h,\\
+ e_1(Y)&=L(Y)-h\log Y-\frac{h^2}{2},\\
+ d_0(Y)&=N(Y)-Y,\\
+ d_1(Y)&=G(Y)-Y(\log Y+2h-1).
+ \end{aligned}
+\]
+
+Set
+
+\[
+ \rho_0(X,q)=
+ \sum_{d\leq q}\frac{\mu(d)}d e_1(X/d)
+ -\sum_{d,m\leq q}\frac{\mu(d)\Lambda(m)}{dm}e_0(X/(dm)),
+ \tag{12.5}
+\]
+
+\[
+ \rho_1(X,q)=\frac1X\left(
+ \sum_{d\leq q}\mu(d)d_1(X/d)
+ -\sum_{d,m\leq q}\mu(d)\Lambda(m)d_0(X/(dm))\right).
+ \tag{12.6}
+\]
+
+Changing variables $n=dr$ and $n=dmr$ in the two sums in (12.4) shows that
+their mass main term is
+
+\[
+ \frac{a_qh^2}{2}+b_{X,q}h,
+\]
+
+exactly the negative of the Type-I continuum mass.  Their $y$-moment main
+term is
+
+\[
+ a_q(2h-1)+b_{X,q},
+\]
+
+again exactly the negative of the Type-I continuum moment.  Consequently
+
+\[
+ m_0(\Sigma_X^I)=\rho_0(X,q),\qquad
+ (m_0+m_1)(\Sigma_X^I)=\rho_1(X,q),
+ \tag{12.7}
+\]
+
+and the unchanged Vaughan identity gives
+
+\[
+ \boxed{
+ \begin{aligned}
+ m_0(\sigma_X)&=\sum_{X<n\leq2X}\frac{\Lambda(n)}n-h-\rho_0(X,q),\\
+ (m_0+m_1)(\sigma_X)&=
+ \frac{\psi(2X)-\psi(X)}X-1-\rho_1(X,q).
+ \end{aligned}}
+ \tag{12.8}
+\]
+
+These remainders have an elementary all-scale price.  With
+$D(t)=\lfloor t\rfloor-t$, summation by parts on the lower-open,
+upper-closed interval gives
+
+\[
+ \sum_{Y<n\leq2Y}f(n)-\int_Y^{2Y}f(t)\,dt
+ =D(2Y)f(2Y)-D(Y)f(Y)-\int_Y^{2Y}D(t)f'(t)\,dt.
+\]
+
+For the ranges in (12.5)--(12.6), this yields
+
+\[
+ |e_0(Y)|\leq\frac2Y,\quad
+ |e_1(Y)|\leq\frac{2\log Y}{Y},\quad
+ |d_0(Y)|<1,\quad
+ |d_1(Y)|\leq2\log(2Y).
+\]
+
+Using only
+$\sum_{d\leq q}|\mu(d)|\leq q$,
+$\sum_{m\leq q}\Lambda(m)\leq q\log q$,
+$q\leq X^{1/4}$, and $J\geq4$, one obtains
+
+\[
+ \boxed{
+ |\rho_0(X,q)|\leq\frac{3\log X}{2\sqrt X},\qquad
+ |\rho_1(X,q)|\leq\frac{3\log X}{2\sqrt X}.}
+ \tag{12.9}
+\]
+
+For example, before simplifying powers of $X$, the two estimates are
+
+\[
+ |\rho_0|\leq\frac{2q\log X+2q^2\log q}{X},\qquad
+ |\rho_1|\leq\frac{2q\log(2X)+q^2\log q}{X}.
+\]
+
+Thus every small-divisor main term in both center channels cancels, and the
+surviving quantities are the two explicit lattice remainders and the original
+Mangoldt discrepancies in (12.8).  The logarithmic estimate (12.9) is
+independent of the stronger inherited energy screen.
+
+For comparison, write the exact source decomposition as
+$\Omega_X^\Lambda=\Sigma_X^I+\sigma_X$.  The inherited estimate
+$E(\Sigma_X^I)<17/X$ and the center-energy inequality
+
+\[
+ m_0(\Sigma_X^I)^2+m_1(\Sigma_X^I)^2\leq E(\Sigma_X^I)
+\]
+
+give
+
+\[
+ \left|(m_0+m_1)(\sigma_X)
+   -\left(\frac{\psi(2X)-\psi(X)}X-1\right)\right|
+ <\sqrt{\frac{34}{X}}.
+ \tag{12.10}
+\]
+
+In particular, if
+$\Delta_X=(\psi(2X)-\psi(X))/X-1$, then
+
+\[
+ \boxed{
+ M_X\geq\frac12
+   \left(|\Delta_X|-\sqrt{34/X}\right)_+^2.}
+ \tag{12.11}
+\]
+
+The center retains two original-source discrepancies.  If
+
+\[
+ M_X\leq C_\eta X^{-1+\eta},
+\]
+
+then (12.8)--(12.9) give the explicit consequences
+
+\[
+ \left|\sum_{X<n\leq2X}\frac{\Lambda(n)}n-h\right|
+ \leq \sqrt{C_\eta}X^{-1/2+\eta/2}
+      +\frac{3\log X}{2\sqrt X},
+ \tag{12.12}
+\]
+
+\[
+ \left|\frac{\psi(2X)-\psi(X)}X-1\right|
+ \leq \sqrt{2C_\eta}X^{-1/2+\eta/2}
+      +\frac{3\log X}{2\sqrt X}.
+ \tag{12.13}
+\]
+
+The first is a weighted Mangoldt discrepancy and the second is the dyadic
+endpoint discrepancy.  Partial summation relates them, but a bound for one
+dyadic endpoint alone does not silently prove the other.  Grounding records
+both channels; it does not normalize either away.
+
+## 13. Exact finite quadratic form for the complete residual
+
+Put
+
+\[
+ x_n=\log(n/X),\qquad
+ \alpha_n=\frac{v_q(n)}{\sqrt{nX}},\qquad
+ f(u)=e^{u/2}(a_qu+c_{X,q}),
+\]
+
+and set $\beta_0=m_0-m_1$, $\beta_1=m_1$.  On $[0,h]$ define the real
+signed measure
+
+\[
+ d\lambda_X(u)=
+ \sum_{X<n\leq2X}\alpha_n\delta_{x_n}(du)
+ +f(u)\,du-\beta_0\delta_0(du)-\sqrt2\beta_1\delta_h(du).
+ \tag{13.1}
+\]
+
+Changing variables $y=e^u$ in the continuum term proves, without an
+approximation,
+
+\[
+ R_{X,k}=\int_0^h e^{-i\tau_ku}\,d\lambda_X(u),\qquad
+ S_X=\iint_{[0,h]^2}W_K(u-v)\,d\lambda_X(u)d\lambda_X(v).
+ \tag{13.2}
+\]
+
+The parity in the endpoint term is exactly
+$e^{-i\tau_kh}=(-1)^k$.  Split (13.1) as $A+C+E$, for its atomic,
+continuum and endpoint parts.  Since $W_K$ is real and even, (13.2) is the
+following exact six-term identity:
+
+\[
+ S_X=S_{AA}+S_{CC}+S_{EE}+S_{AC}+S_{AE}+S_{CE},
+ \tag{13.3}
+\]
+
+\[
+ S_{AA}=\sum_{n,n'}\alpha_n\alpha_{n'}W_K(x_n-x_{n'}),
+\]
+
+\[
+ S_{CC}=\int_0^h\!\int_0^h f(u)f(v)W_K(u-v)\,du\,dv,
+\]
+
+\[
+ S_{EE}=(\beta_0^2+2\beta_1^2)W_K(0)
+       +2\sqrt2\beta_0\beta_1W_K(h),
+\]
+
+\[
+ S_{AC}=2\sum_n\alpha_n\int_0^h f(v)W_K(x_n-v)\,dv,
+\]
+
+\[
+ S_{AE}=-2\beta_0\sum_n\alpha_nW_K(x_n)
+        -2\sqrt2\beta_1\sum_n\alpha_nW_K(x_n-h),
+\]
+
+\[
+ S_{CE}=-2\beta_0\int_0^h f(u)W_K(u)\,du
+        -2\sqrt2\beta_1\int_0^h f(u)W_K(u-h)\,du.
+\]
+
+No term in (13.3) is separately declared positive or negligible.  In
+particular, estimating the atomic polynomial before combining it with the
+other five terms discards the cancellation that defines the centered
+residual.
+
+## 14. What the supplied shifted correlation actually costs
+
+For
+
+\[
+ I_m=\{r>q:X<mr\leq2X\},
+\]
+
+expanding $v_q$ in the atomic--atomic term gives
+
+\[
+ S_{AA}=\frac1X\sum_{m,m'>q}
+ \frac{\Lambda(m)\Lambda(m')}{\sqrt{mm'}}
+ \sum_{\substack{r\in I_m\\r'\in I_{m'}}}
+ \frac{\nu_q(r)\nu_q(r')}{\sqrt{rr'}}
+ W_K\!\left(\log\frac{mr}{m'r'}\right).
+ \tag{14.1}
+\]
+
+After writing $r'=r+\ell$, the actual weight on the interval
+$D_{m,m',\ell}=I_m\cap(I_{m'}-\ell)$ is
+
+\[
+ g_{m,m',\ell}(r)=\frac1{\sqrt{r(r+\ell)}}
+ W_K\!\left(\log\frac{mr}{m'(r+\ell)}\right).
+ \tag{14.2}
+\]
+
+Thus the shift in the available correlation and the ratio in the sampling
+kernel coexist; one is not a relabeling of the other.  If
+
+\[
+ A_s=\sum_{r=R+1}^{R+s}
+ \bigl(\nu_q(r)\nu_q(r+\ell)-\mathfrak C_q(\ell)\bigr),
+\]
+
+then the supplied correlation gives $|A_s|\leq q^2$.  Discrete summation by
+parts gives the complete endpoint-plus-variation price
+
+\[
+ \left|\sum_{r\in D_{m,m',\ell}}
+ \bigl(\nu_q(r)\nu_q(r+\ell)-\mathfrak C_q(\ell)\bigr)g(r)\right|
+ \leq q^2\left(|g_{\rm end}|+\sum|\Delta g|\right).
+ \tag{14.3}
+\]
+
+The full kernel satisfies
+
+\[
+ \|W_K\|_\infty<3,\qquad
+ \|W_K'\|_\infty
+ \leq\frac1\pi\sum_{k=1}^K\frac1k
+ \leq\frac{1+\log K}{\pi}.
+ \tag{14.4}
+\]
+
+Take dyadic factor boxes $m\asymp M$, $m'\asymp M'$.  Then
+$r\asymp R=X/M$ and $r'\asymp R'=X/M'$.  Equations (14.2)--(14.4) imply
+
+\[
+ |g_{\rm end}|+\operatorname{Var}(g)
+ \ll\frac{1+\log K}{\sqrt{RR'}}.
+\]
+
+After restoring $1/(X\sqrt{MM'})$, the two von Mangoldt factors, and the
+$O(X(M+M'))$ nonempty ordered $(m,m',\ell)$ triples, the use of (14.3)
+followed by triangle inequalities costs
+
+\[
+ \boxed{
+ \ll q^2\frac{M+M'}X\log^3(2X)}
+ \tag{14.5}
+\]
+
+per ordered box pair.  All constants here are absolute.  The displayed
+logarithmic power is deliberately a safe envelope for the harmonic derivative
+sum and the two von Mangoldt weights.
+
+For a balanced pair $M=M'=\sqrt X$, (14.5) is
+$O(q^2X^{-1/2}\log^3X)=O(\log^3X)$, with normalized exponent zero.  Summing
+the absolute prices over all dyadic factor boxes gives
+$O(q\log^4X)=O(X^{1/4}\log^4X)$.  Even the $m=m'$ sector only gives
+
+\[
+ O(q^2X^{-1}\log^4X)=O(X^{-1/2}\log^4X).
+ \tag{14.6}
+\]
+
+This is a rigorous obstruction to a specific method: pointwise use of the
+given $q^2$ correlation remainder followed by absolute summation.  It is not a
+counterexample to the arithmetic source.
+
+The apparent gain from a frequency band also disappears in (14.3).  For
+$L=2^j$ put
+
+\[
+ W_j(u)=\frac1h\sum_{L\leq k<2L,\ k\leq K}
+ \frac{\cos(\tau_ku)}{1/4+\tau_k^2}.
+\]
+
+Then
+
+\[
+ \|W_j\|_\infty\leq\frac{h}{\pi^2L},\qquad
+ \|W_j'\|_\infty\leq\frac1\pi.
+ \tag{14.7}
+\]
+
+The variation term in (14.3) therefore loses the $L^{-1}$ size of the
+kernel.  A useful next estimate must retain signed aggregation across factors
+and shifts, or prove a genuinely averaged dispersion estimate.
+
+The same parameter check rules out a direct invocation of the current
+Guth--Maynard large-value gain.  Their Theorem 1.1 applies to a length-$N$
+polynomial with $|b_n|\leq1$ on a 1-separated set in $[0,T]$ and bounds the
+number $R$ of values of size at least $V$ by
+
+\[
+ R\leq T^{o(1)}
+ \left(N^2V^{-2}+N^{18/5}V^{-4}+TN^{12/5}V^{-4}\right).
+ \tag{14.8}
+\]
+
+Here $N\in\mathbb N$, $T,V>0$, and the authors interpret $o(1)$ as
+$T\to\infty$: equivalently, for each $\epsilon>0$ the right side can be
+multiplied by $C_\epsilon T^\epsilon$ for all sufficiently large $T$, with
+$C_\epsilon$ depending only on $\epsilon$.
+
+Here $N\asymp X$ and $T\asymp\sqrt X=N^{1/2}$.  The improvement regime
+described with that theorem has $N$ smaller than $T^{10/11}$, whereas the
+present geometry has $N\asymp T^2$.  Moreover (14.8) counts the uncentered $D_X$;
+it contains none of the five compensating terms in (13.3).  The theorem is
+applicable as a true statement, but this substitution does not improve the
+required centered packet estimate.
+
+## 15. Smallest surviving signed estimate
+
+With the band kernel $W_j$, define the signed correlation remainder
+
+\[
+ \Delta^{(j)}_{m,m',\ell}=
+ \sum_{r\in D_{m,m',\ell}}
+ \bigl(\nu_q(r)\nu_q(r+\ell)-\mathfrak C_q(\ell)\bigr)
+ g^{(j)}_{m,m',\ell}(r),
+\]
+
+and form the signed aggregate before absolute values:
+
+\[
+ \mathcal D_{X,j}=\frac1X\sum_{m,m'>q}
+ \frac{\Lambda(m)\Lambda(m')}{\sqrt{mm'}}
+ \sum_\ell\Delta^{(j)}_{m,m',\ell}.
+ \tag{15.1}
+\]
+
+Let $\mathcal P_{X,j}$ be the correlation-main part of (14.1), combined
+with the continuum, endpoint, and both mixed terms from (13.3), before taking
+absolute values.  Thus the exact contribution of the positive-frequency band
+is $\mathcal D_{X,j}+\mathcal P_{X,j}$.  A source-faithful next sufficient
+inequality is
+
+\[
+ \boxed{
+ \begin{aligned}
+ &\forall\epsilon>0\ \exists C_\epsilon>0,J_\epsilon\in\mathbb N\\
+ &\quad\forall J\geq J_\epsilon\ \forall j\in\mathbb N_0
+       \text{ with }2^j\leq K:\quad\\
+ &\qquad
+ |\mathcal D_{2^J,j}+\mathcal P_{2^J,j}|
+ \leq C_\epsilon(2^J)^{-1+\epsilon}.
+ \end{aligned}}
+ \tag{15.2}
+\]
+
+Together with the analogous zero-sample and center bounds, (15.2) implies
+the weighted target after summing the actual weighted band contributions and
+choosing a smaller $\epsilon$ than the final $\eta$.  It is strictly weaker
+than bounding every $(m,m',\ell)$ remainder separately, or than bounding
+$\mathcal D_{X,j}$ and $\mathcal P_{X,j}$ separately.  It also states the
+remaining obligation honestly: the correlation remainder and main profile
+may cancel with each other and with the fixed continuum and endpoint terms;
+none is estimated as a separate positive contribution.
+
+At the completed finite scale $X=4096$, a recomposition of (13.3) gives,
+as a theorem-selection diagnostic only,
+
+\[
+ (S_{AA},S_{CC},S_{EE},S_{AC},S_{AE},S_{CE})\approx
+ (0.00410317,0.00576894,0.000145964,-0.00972123,
+  0.00152439,-0.00181637).
+\]
+
+Their signed sum is the certified
+$S_X\approx4.86442\mathbin{\cdot}10^{-6}$; the sum of their absolute values
+is about $4.7\mathbin{\cdot}10^3$ times larger.  This finite calculation does
+not prove (15.2), but it rejects termwise absolute bounds as a plausible
+all-scale mechanism for the retained packet.
