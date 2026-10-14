@@ -1,6 +1,7 @@
 /- Copyright (c) 2026 R.A. Jacob Martone. MIT.
 Human mathematical direction: R.A. Jacob Martone. Formalization assistance: OpenAI Codex.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
+import GRWTSK.Analysis.Complex.CriticalReflection
 import Mathlib.NumberTheory.LSeries.RiemannZeta
 import Mathlib.Analysis.Complex.Norm
 
@@ -22,9 +23,6 @@ def zeroConjugate (s : ℂ) : ℂ := star s
 
 /-- Functional-equation reflection, the other generator. -/
 def zeroReflect (s : ℂ) : ℂ := 1 - s
-
-/-- Reflection in the critical line; the composite of the two generators. -/
-def criticalReflection (s : ℂ) : ℂ := 1 - star s
 
 /-- Squared distance to the critical-line reflection, with values in the reals. -/
 def rhDefect (s : ℂ) : ℝ := Complex.normSq (s - criticalReflection s)

@@ -1,7 +1,7 @@
 from pathlib import Path
 import subprocess,json
 P=Path(__file__).resolve().parents[1]
-r=subprocess.run(['lake','env','lean','-j2','--trust=0','-DwarningAsError=true','checks/GaugeStateAudit.lean'],cwd=P,capture_output=True,text=True,timeout=1800)
+r=subprocess.run(['lake','env','lean','-j2','--trust=0','-DwarningAsError=true','checks/GroupTheory/Actions/GaugeState/Audit.lean'],cwd=P,capture_output=True,text=True,timeout=1800)
 s=r.stdout+r.stderr
 if r.returncode or s.count('GAUGE_STATE_CONTRACT::')!=3 or s.count('GAUGE_STATE_ORIGINAL::')!=1 or s.count('GAUGE_STATE_SYNTHETIC::')!=1:raise RuntimeError(s)
 (P/'.local').mkdir(exist_ok=True)

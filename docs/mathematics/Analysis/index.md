@@ -4,10 +4,10 @@
 
 | Inventory | Count |
 |---|---:|
-| Object guides | 12 |
-| Documented object groups | 8 |
-| Distinct primary sources linked | 12 |
-| Lean source modules | 128 |
+| Object guides | 14 |
+| Documented object groups | 10 |
+| Distinct primary sources linked | 14 |
+| Lean source modules | 132 |
 | Archive intake records | 39 |
 | Selected catalog families | 1 |
 
@@ -16,6 +16,10 @@ These counts measure documentation and source coverage. They do not count accept
 ## Asymptotics
 
 - [Polynomial return with a paid error](Asymptotics/polynomial-error.md) — `historical-source-description`.
+
+## Complex / CriticalReflection
+
+- [Critical line reflection and Gaussian rotation](Complex/CriticalReflection/reflection.md) — `historical-source-description`.
 
 ## Convolution
 
@@ -38,6 +42,10 @@ These counts measure documentation and source coverage. They do not count accept
 ## Integration
 
 - [Interval reflection and signed integral pairing](Integration/interval-reflection.md) — `historical-source-description`.
+
+## LaplaceTransform
+
+- [Exponential energy bounds and square integrability](LaplaceTransform/exponential-energy.md) — `historical-source-description`.
 
 ## NormedSpace
 

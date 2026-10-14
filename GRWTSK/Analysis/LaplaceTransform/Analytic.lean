@@ -1,8 +1,9 @@
 /- Copyright (c) 2026 R.A. Jacob Martone. MIT.
 Human mathematical direction: R.A. Jacob Martone. Formalization assistance: OpenAI Codex.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import Mathlib.Probability.Moments.MGFAnalytic
-import Mathlib.Tactic
+import Mathlib.Probability.Moments.ComplexMGF
+import Mathlib.Tactic.Linarith
+import Mathlib.Tactic.FunProp
 
 noncomputable section
 namespace GRWTSK.RiemannHypothesis.CCC.Laplace

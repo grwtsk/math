@@ -23,9 +23,8 @@ namespace GRWTSK.Algebra
 universe u v w
 
 /-- Ordered interval product. The most recent factor is always on the left. -/
-def orderedProduct {G : Type u} [Monoid G] (A : ℕ → G) (n : ℕ) : ℕ → G
-  | 0 => 1
-  | k + 1 => A (n + k) * orderedProduct A n k
+def orderedProduct {G : Type u} [Monoid G] (A : ℕ → G) (n : ℕ) : ℕ → G :=
+  Nat.rec 1 (fun k r => A (n + k) * r)
 
 
 
@@ -36,7 +35,7 @@ theorem orderedProduct_zero {G : Type u} [Monoid G] (A : ℕ → G) (n : ℕ) :
 
 
 /-- Successor factors act on the left, fixing the product convention. -/
-theorem orderedProduct_succ {G : Type u} [Monoid G] (A : ℕ → G) (n k : ℕ) :
+@[simp] theorem orderedProduct_succ {G : Type u} [Monoid G] (A : ℕ → G) (n k : ℕ) :
     orderedProduct A n (k + 1) = A (n + k) * orderedProduct A n k := rfl
 
 

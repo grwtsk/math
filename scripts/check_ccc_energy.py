@@ -1,4 +1,9 @@
-"""Fresh pinned source replay, exact contracts, and missing-premise controls."""
+"""Selected source replay and exact Energy consumer-result contracts.
+
+The result oracle is separately source-qualified; immutable full-entrypoint
+execution and complete standard owned-audit integration remain pending.
+Historical public evidence is preserved; this command writes only local receipts.
+"""
 from pathlib import Path
 import hashlib
 import json
@@ -7,6 +12,8 @@ import re
 import subprocess
 import tempfile
 import time
+from energy_result_oracle import (load_contract, validate_positive_result,
+                                  validate_positive_audit, validate_negative_result)
 
 ROOT = Path(__file__).resolve().parents[1]
 RUN = Path(tempfile.mkdtemp(prefix="ccc-energy-", dir=ROOT / ".local"))
@@ -50,19 +57,16 @@ def visit(module):
 
 for module in ['GRWTSK.LinearAlgebra.AlmostMathieu', 'GRWTSK.Analysis.LaplaceTransform.ExponentialThreshold', 'GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm', 'GRWTSK.NumberTheory.Zeta.Riemann.PolynomialEnergyCriterion', 'GRWTSK.NumberTheory.Moebius.ComparisonEnergy', 'GRWTSK.NumberTheory.Moebius.IntegerSampleGrowth', 'GRWTSK.NumberTheory.Moebius.UnsignedEnergyBound']:
     visit(module)
-CONTROL_ERRORS = {
-    "MissingBudget": "Type mismatch",
-    "DeterminantPaysBudget": "Type mismatch",
-    "WrongPhase": "Type mismatch",
-    "SingleRate": "Type mismatch",
-    "FiniteSamples": "Type mismatch",
-    "DroppedResidual": "Type mismatch",
-}
-CONTROLS = list(CONTROL_ERRORS)
+CONTRACT_PATH = ROOT / "checks/Analysis/Energy/result-contracts.json"
+CONTRACT = load_contract(CONTRACT_PATH.read_bytes())
+CONTROLS = ["MissingBudget", "DeterminantPaysBudget", "WrongPhase",
+            "SingleRate", "FiniteSamples", "DroppedResidual"]
 INPUTS = ORDER + ["checks/Analysis/Energy/Declarations.lean", "scripts/check_ccc_energy.py",
+                  "scripts/energy_result_oracle.py", "checks/Analysis/Energy/result-contracts.json",
                   "lean-toolchain", "lakefile.toml", "lake-manifest.json", "docs/mathematics/NumberTheory/Moebius/Energy/growth.md"]
 INPUTS += ["checks/Analysis/Energy/Controls/" + name + ".lean" for name in CONTROLS]
 HASHES = {p: hashlib.sha256((ROOT / p).read_bytes()).hexdigest() for p in INPUTS}
+CONTEXT_HASHES = {path: HASHES[path] for path in ORDER}
 (RUN / "source-freeze.json").write_text(json.dumps(HASHES, indent=2) + "\n")
 RESULTS = []
 
@@ -74,9 +78,12 @@ def stable_inputs():
             raise RuntimeError("input changed during verification: " + rel)
 
 
-def run(rel, expected_success=True, export=False, expected_error=None):
+def run(rel, expected_success=True, export=False):
     stable_inputs()
+    source_bytes = (ROOT / rel).read_bytes()
     argv = [LEAN, "--trust=0", "--memory=4096", "--threads=1", "-DwarningAsError=true"]
+    if not expected_success:
+        argv.append("--json")
     if export:
         target = BUILD / Path(rel).with_suffix(".olean")
         target.parent.mkdir(parents=True, exist_ok=True)
@@ -84,38 +91,49 @@ def run(rel, expected_success=True, export=False, expected_error=None):
     argv.append(str(ROOT / rel))
     started = time.monotonic()
     process = subprocess.run(argv, cwd=ROOT, env=ENV, capture_output=True, text=True, timeout=600)
-    output = process.stdout + process.stderr
-    (RUN / (rel.replace("/", "--") + ".log")).write_text(output)
-    success = process.returncode == 0
-    reason_matches = expected_error is None or expected_error.casefold() in output.casefold()
-    passed = (success == expected_success and reason_matches and
-              (expected_success or "error" in output))
-    stable_inputs()
-    entry = {"path": rel, "expected_success": expected_success, "actual_success": success,
-             "exit_code": process.returncode, "seconds": time.monotonic() - started,
-             "output_sha256": hashlib.sha256(output.encode()).hexdigest(),
-             "expected_error_fragment": expected_error,
-             "expected_error_matched": reason_matches}
+    out_path = RUN / (rel.replace("/", "--") + ".stdout")
+    err_path = RUN / (rel.replace("/", "--") + ".stderr")
+    out_path.write_text(process.stdout)
+    err_path.write_text(process.stderr)
+    entry = {"path": rel, "source_sha256": hashlib.sha256(source_bytes).hexdigest(),
+             "expected_success": expected_success, "actual_success": process.returncode == 0,
+             "exit_code": process.returncode, "timed_out": False, "argv": argv,
+             "seconds": time.monotonic() - started,
+             "stdout": str(out_path), "stderr": str(err_path),
+             "stdout_sha256": hashlib.sha256(process.stdout.encode()).hexdigest(),
+             "stderr_sha256": hashlib.sha256(process.stderr.encode()).hexdigest(),
+             "output_sha256": hashlib.sha256((process.stdout + process.stderr).encode()).hexdigest(),
+             "qualified_outcome": "UNQUALIFIED"}
     RESULTS.append(entry)
-    (RUN / "progress.json").write_text(json.dumps(RESULTS, indent=2) + "\n")
-    print(rel, "PASS" if passed else "FAIL", flush=True)
-    if success != expected_success or (not expected_success and "error" not in output):
-        raise RuntimeError(rel + " unexpected result\n" + output)
-    if not reason_matches:
-        raise RuntimeError(rel + " failed for an unintended reason\n" + output)
-    return output
+    try:
+        if expected_success:
+            validation = validate_positive_result(process.returncode, process.stdout,
+                                                  process.stderr, timed_out=False)
+        else:
+            validation = validate_negative_result(
+                rel, str(ROOT / rel), source_bytes, CONTEXT_HASHES, process.returncode,
+                process.stdout, process.stderr, contract=CONTRACT,
+                argv=argv, timed_out=False)
+        stable_inputs()
+        entry["validation"] = validation
+        entry["qualified_outcome"] = "PASSED" if expected_success else "SOLE_EXACT_INTENDED_ERROR"
+    finally:
+        (RUN / "progress.json").write_text(json.dumps(RESULTS, indent=2) + "\n")
+    print(rel, entry["qualified_outcome"], flush=True)
+    return process.stdout
 
 
 try:
     for path in ORDER:
         run(path, export=True)
     output = run("checks/Analysis/Energy/Declarations.lean")
-    declarations = [json.loads(s) for s in re.findall(r"CCC_DECL::(\{[^\n]+\})", output)]
-    counts = re.findall(r"CCC_COUNT::(\d+)", output)
-    if len(counts) != 1 or len(declarations) != int(counts[0]) or not declarations:
-        raise RuntimeError("incomplete native declaration audit")
-    if len({d["name"] for d in declarations}) != len(declarations):
-        raise RuntimeError("duplicate declaration records")
+    audit_result = validate_positive_audit(
+        "checks/Analysis/Energy/Declarations.lean",
+        str(ROOT / "checks/Analysis/Energy/Declarations.lean"),
+        (ROOT / "checks/Analysis/Energy/Declarations.lean").read_bytes(),
+        CONTEXT_HASHES, 0, output, "", contract=CONTRACT,
+        argv=RESULTS[-1]["argv"], timed_out=False)
+    declarations = audit_result["declarations"]
     contracts = {
         "riemannHypothesis_of_pickupCrossPoly": "PickupCrossPoly → RiemannHypothesis",
         "riemannHypothesis_of_pickupCrossSubexp": "PickupCrossSubexp → RiemannHypothesis",
@@ -132,10 +150,12 @@ try:
         terminals[name] = declaration
     terminal = terminals["riemannHypothesis_of_pickupCrossPoly"]
     for name in CONTROLS:
-        run("checks/Analysis/Energy/Controls/" + name + ".lean", expected_success=False,
-            expected_error=CONTROL_ERRORS[name])
+        run("checks/Analysis/Energy/Controls/" + name + ".lean", expected_success=False)
     stable_inputs()
-    receipt = {"schema_version": 1, "status": "SCOPED_SOURCE_CHECKS_PASSED",
+    receipt = {"schema_version": 1, "status": "SCOPED_CONSUMER_RESULTS_PASSED_STANDARD_AUDIT_INTEGRATION_PENDING",
+               "full_entrypoint_qualified": False,
+               "complete_current_consumer_acceptance": False,
+               "public_acceptance_replaced": False,
                "rh_proved": False, "P04_witness": None,
                "terminal_theorem": terminal, "terminal_theorems": terminals,
                "arithmetic_frontier": {
@@ -148,9 +168,8 @@ try:
                "declaration_count": len(declarations), "declarations": declarations,
                "checks": RESULTS,
                "acceptance": "Local candidate; no upstream admission, independent review, or publication"}
-    (ROOT / "evidence/ccc-energy-checks.json").write_text(json.dumps(receipt, indent=2) + "\n")
     (RUN / "receipt.json").write_text(json.dumps(receipt, indent=2) + "\n")
-    print("CCC_ENERGY_SOURCE_AND_PREMISE_CONTROLS_PASSED", flush=True)
+    print("ENERGY_SELECTED_SOURCE_AND_EXACT_CONSUMER_RESULTS_PASSED", str(RUN / "receipt.json"), flush=True)
 except Exception as error:
     (RUN / "failure.json").write_text(json.dumps({"status": "FAILED", "error": str(error), "checks": RESULTS}, indent=2) + "\n")
     raise

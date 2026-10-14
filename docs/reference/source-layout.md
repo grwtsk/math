@@ -23,7 +23,14 @@ Newly received [mathematical source candidates](source-intake.md) have a separat
 source-identity and contribution inventory. Their intake status does not add them
 to the project umbrella or establish native proof acceptance.
 
-The library umbrella imports every present library module in dependency order.
+The `GRWTSK` umbrella imports mathematical modules in dependency order. Three
+operational audit consumers remain outside it:
+`Logic/Verification/AnalyticArithmeticKernelCheck`,
+`Logic/Verification/FullAnalyticArithmeticKernelCheck`, and
+`Logic/Verification/MoebiusResponseLibrary`. The full audit imports `GRWTSK`,
+and the response-library aggregator imports that full audit; importing either
+back into `GRWTSK` would create an import cycle. This describes import coverage,
+without claiming native acceptance for those operational consumers.
 The waveform cluster has been split into integer Fourier series, Parseval,
 window certificates, norm error inequalities, polynomial asymptotic bounds,
 Schrödinger sampling, ordered finite squares, prefix coverage, and quota

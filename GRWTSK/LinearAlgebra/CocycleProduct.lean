@@ -48,9 +48,9 @@ open GRWTSK.LinearAlgebra.OrderedProductDeterminant
 
 /-- Cocycle product over base dynamics, again adding the newest step on the left. -/
 def cocycleProduct {S : Type u} {G : Type v} [Monoid G]
-    (T : S → S) (A : S → G) : ℕ → S → G
-  | 0, _ => 1
-  | n + 1, x => A (T^[n] x) * cocycleProduct T A n x
+    (T : S → S) (A : S → G) : ℕ → S → G :=
+  Nat.rec (fun _ => 1)
+    (fun n r x => A (T^[n] x) * r x)
 
 
 

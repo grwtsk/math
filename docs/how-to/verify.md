@@ -6,7 +6,7 @@ For the least-prime family, a narrow replay can build only its consumer and audi
 
 ```sh
 lake build --wfail GRWTSK.NumberTheory.Prime.LeastPrime
-lake env lean --trust=0 -DwarningAsError=true checks/PrimeArchitectureAudit.lean
+lake env lean --trust=0 -DwarningAsError=true checks/NumberTheory/Prime/LeastPrime/Architecture.lean
 ```
 
 Check the resulting axiom list against the recorded policy, not an assumed empty list. The accepted standard axioms here are `propext`, `Classical.choice`, `Quot.sound`; `sorryAx` is rejected. See [the actual selected receipt](../../evidence/prime-architecture-checks.json).

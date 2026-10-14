@@ -23,3 +23,5 @@ The radical sum before the exponential is strictly below $-1/3$; $e^{-u/2}\le1/\
 ## Source and verification scope
 
 [Source](../../../../../GRWTSK/NumberTheory/Moebius/NegativePrimeCorrelation.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../../reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+
+The current import-only repair passed source elaboration at trust zero with fatal warnings. The statements, hypotheses and proof text are unchanged. Complete current owned-declaration auditing and affected-consumer acceptance remain pending; the historical status above is retained.

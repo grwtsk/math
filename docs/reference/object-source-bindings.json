@@ -133,6 +133,15 @@
     ],
     "NumberTheory/LSeries": [
       "GRWTSK/NumberTheory/LSeries/ClosedMoebiusPolynomial.lean"
+    ],
+    "Analysis/Complex/CriticalReflection": [
+      "GRWTSK/Analysis/Complex/CriticalReflection.lean"
+    ],
+    "LinearAlgebra/Matrix/HermitianCounterexamples": [
+      "GRWTSK/LinearAlgebra/Matrix/HermitianCounterexamples.lean"
+    ],
+    "Analysis/LaplaceTransform": [
+      "GRWTSK/Analysis/LaplaceTransform/ExponentialEnergy.lean"
     ]
   }
 }

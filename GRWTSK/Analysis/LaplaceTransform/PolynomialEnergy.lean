@@ -2,10 +2,9 @@
 Human mathematical direction: R.A. Jacob Martone. Formalization assistance: OpenAI Codex.
 Mathlib results retain their upstream authorship and Apache-2.0 license.
 Source-specific CCC continuation; local conditional candidate, RH remains open. -/
-import GRWTSK.NumberTheory.Moebius.MertensPrimitive
+import Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic
 import Mathlib.MeasureTheory.Integral.Bochner.Set
 import Mathlib.Analysis.SpecificLimits.Normed
-import Mathlib.Order.SuccPred.IntervalSucc
 import Mathlib.Tactic.FieldSimp
 
 /-!
@@ -124,11 +123,5 @@ theorem integrableOn_tilt_of_polynomial_energy {f : ℝ → ℝ} (hf : Continuou
   refine mem_iUnion.mpr ⟨⌊u⌋₊, ?_⟩
   exact ⟨Nat.floor_le hu.le, (Nat.lt_floor_add_one u).le⟩
 
-/-- Actual pickup specialization; continuity is the separate unconditional source input. -/
-theorem pickup_tilt_integrable_of_energy_poly (hW : Continuous wholePickup)
-    (hE : PickupEnergyPoly) {σ : ℝ} (hσ : 0 < σ) :
-    IntegrableOn (fun u ↦ Real.exp (-σ * u) * wholePickup u) (Ioi 0) := by
-  rcases hE with ⟨C, q, hC, _, henergy⟩
-  exact integrableOn_tilt_of_polynomial_energy hW hC henergy hσ
 
 end GRWTSK.RiemannHypothesis.CCC

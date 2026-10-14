@@ -1,4 +1,6 @@
-import GRWTSK.NumberTheory.ContinuedFractions.FrequencyRealization GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators GRWTSK.DynamicalSystems.Sequences.ApproximationReturn
+import GRWTSK.NumberTheory.ContinuedFractions.FrequencyRealization
+import GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators
+import GRWTSK.DynamicalSystems.Sequences.ApproximationReturn
 import Lean
 
 open Lean Elab Command

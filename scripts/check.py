@@ -37,15 +37,15 @@ def run(label,rel,expected=0,oracle=None):
 try:
  compile_project_closure(root,manifest["files"],run)
  if manifest["profile"].startswith("least-natural-prime"):
-  audit=run("prime-type-axioms-consumers","checks/PrimeAudit.lean",oracle=lambda s:"sorryAx" not in s and s.count("' depends on axioms:")==3)
+  audit=run("prime-type-axioms-consumers","checks/NumberTheory/Prime/LeastPrime/Audit.lean",oracle=lambda s:"sorryAx" not in s and s.count("' depends on axioms:")==3)
   allowed={"propext","Classical.choice","Quot.sound"}
   for ax in re.findall(r"depends on axioms: \[(.*?)\]",audit):
    assert set(s.strip() for s in ax.split(","))<=allowed
-  run("reject-prime-one","checks/PrimeOneFalse.lean",1,lambda s:"is false" in s)
-  run("reject-lower-bound-three","checks/LowerBoundFalse.lean",1,lambda s:"Type mismatch" in s)
+  run("reject-prime-one","checks/NumberTheory/Prime/LeastPrime/Controls/OneIsPrime.lean",1,lambda s:"is false" in s)
+  run("reject-lower-bound-three","checks/NumberTheory/Prime/LeastPrime/Controls/LowerBoundThree.lean",1,lambda s:"Type mismatch" in s)
  else:
   prefix="GRWTSK/Combinatorics/GraphTheory/UnitDistanceGraph/"
-  output=run("31-declaration-audit","checks/DeclarationAudit.lean")
+  output=run("31-declaration-audit","checks/Combinatorics/GraphTheory/UnitDistanceGraph/Declarations.lean")
   expected=json.loads((root/"evidence/expected-declarations.json").read_text())
   for e in expected:
    segment=output.split("BEGIN::"+e["name"]+"\n",1)[1].split("\nEND::"+e["name"],1)[0]
@@ -54,9 +54,9 @@ try:
    axioms=re.search(r"depends on axioms: \[(.*?)\]",parts[1])
    observed=[] if "does not depend on any axioms" in parts[1] else [s.strip() for s in axioms[1].split(",")]
    assert sorted(observed)==sorted(e["axioms"]),("axiom mismatch",e["name"])
-  run("moser-independent-consumers","checks/Consumers.lean")
-  run("reject-wrong-four-color","checks/WrongColor.lean",1,lambda s:"is false" in s)
-  sorry=run("sorry-compiles-but-audit-rejects","checks/SorryControl.lean",oracle=lambda s:"sorryAx" in s)
+  run("moser-independent-consumers","checks/Combinatorics/GraphTheory/UnitDistanceGraph/Consumers.lean")
+  run("reject-wrong-four-color","checks/Combinatorics/GraphTheory/UnitDistanceGraph/Controls/WrongColor.lean",1,lambda s:"is false" in s)
+  sorry=run("sorry-compiles-but-audit-rejects","checks/Logic/Verification/Controls/Sorry.lean",oracle=lambda s:"sorryAx" in s)
   results[-1]["audit_outcome"]="refuted-or-limited"
 finally:
  (root/"evidence/check-results.json").write_text(json.dumps(dict(schema_version=1,input_manifest_sha256=input_manifest_sha256,lean_binary_sha256=hashlib.sha256(pathlib.Path(lean).read_bytes()).hexdigest(),toolchain_commit="d8b18978322de05a8f3dba51ef03cf5461676c17",dependency_revisions={p["name"]:p["rev"] for p in json.loads((root/"lake-manifest.json").read_text())["packages"]},dependency_mode="pinned dependency objects kernel-checked; selected source modules freshly elaborated",results=results),indent=2)+"\n")

@@ -3,6 +3,7 @@ Human mathematical direction: R.A. Jacob Martone; OpenAI Codex formalization ass
 Mathlib imports retain upstream authorship and Apache-2.0 licensing. -/
 import GRWTSK.NumberTheory.Moebius.PrimeBlockEnergy
 import GRWTSK.NumberTheory.Moebius.PrimePrefixGrowth
+import Mathlib.Tactic.NormNum.Prime
 
 /-! A concrete source-generated negative correlation. This rules out a
 nonnegative-correlation shortcut, not the compensated reverberation conjecture. -/

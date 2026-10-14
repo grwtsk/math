@@ -1,4 +1,6 @@
-import Mathlib
+import Mathlib.Data.Matrix.Block
+import Mathlib.Data.Real.Basic
+import Mathlib.Tactic.Ring
 
 /-!
 Research direction: R.A. Jacob Martone.
@@ -75,7 +77,7 @@ def cut (n : ℕ) : Matrix (Fin n ⊕ Fin n) (Fin n ⊕ Fin n) K :=
 theorem cut_commutator (A C : Matrix (Fin n) (Fin n) K) :
     cut n * doubled A C - doubled A C * cut n = Matrix.fromBlocks 0 0 (-C) 0 := by
   simp only [cut, doubled, Matrix.fromBlocks_multiply, Matrix.one_mul,
-    Matrix.mul_one, Matrix.zero_mul, Matrix.mul_zero, add_zero, zero_add]
+    Matrix.mul_one, Matrix.zero_mul, Matrix.mul_zero, add_zero]
   ext i j
   rcases i with i | i <;> rcases j with j | j <;>
     simp [Matrix.fromBlocks]

@@ -1,20 +1,21 @@
 #!/usr/bin/env python3
 """Source-linked module-owner census adapter; this module never invokes Lean.
 
-The native census observer and core parser are copied from the independently
-controlled canonical checker. Public, private, and generated declarations are
-selected by owning module, not by their declaration namespace. Transitive
-axioms and owned unsafe/partial flags are audited. The observer reports direct
-references to the exact pinned native runtime helper; it does NOT report a
-complete arbitrary unsafe/partial dependency-reference graph. That extension
-would require new Lean-side code and native controls, rather than a parser claim.
+The four historical canonical parser functions remain byte-identical. The
+native observer additionally offers an explicitly opted-in profile of exactly
+15 pinned Lean 4.33 generated partial runtime helpers, each paired with a safe
+same-owner kernel definition. Exact ownership, source pins, helper/original
+names, flags, and printed type agreement are independently reconstructed here;
+the observer also checks exact Expr/universe-parameter equality. No runtime
+implementation equivalence theorem or complete transitive reference graph is
+claimed. The new profile checks direct theorem TYPE OR VALUE references to any
+of its 15 helpers; the historical singleton parser retains its old semantics.
 
-An accepted parser result requires successful compilation, exact owner coverage,
-source hashes for every owner (including zero-declaration modules), and the
-native per-declaration verdict. The default policy admits no unsafe exceptions.
-The caller must independently freeze and compile this helper, its generated
-wrapper, and the entire expected project-owner closure with trust=0 and Werr.
-A Python-only self-test is never evidence of a fresh Lean census.
+Successful parsing requires an actual successful native process, exact owner
+coverage, and independently frozen source hashes for every owner. Defaults
+admit no runtime exceptions. A Python-only control is not a fresh Lean census.
+The caller must link this output to an immutable trust=0/Werr replay. The
+operational observer itself remains outside the mathematical owner scope.
 """
 from __future__ import annotations
 
@@ -157,7 +158,116 @@ _DECL_KEYS = {
     "direct_value_reference_to_runtime_helper", "axioms",
 }
 _MARKERS = {"DECL", "MODULE", "COUNT", "MODULE_COUNT", "DEPENDENCY_MODULE"}
-HELPER_SHA256 = "5ae82798ae286a8d2fea72cda53fbcb99028dae93a31511522610c03cc7e3c98"
+LEGACY_HELPER_SHA256 = "5ae82798ae286a8d2fea72cda53fbcb99028dae93a31511522610c03cc7e3c98"
+HELPER_SHA256 = "138a5599d054dc03da34220df05e404a656a6c6716239c243484131d9d356209"
+
+# Canonical table encoding: UTF-8 JSON, sort_keys=True, separators=(",", ":").
+# Order is pinned too; never accept a generic suffix-based helper exception.
+GENERATED_PARTIAL_PROFILE_NAME = "lean4.33-generated-partial-pairs-v1"
+GENERATED_PARTIAL_PROFILE = ({'helper': 'GRWTSK.Algebra.orderedProduct._unsafe_rec',
+  'original': 'GRWTSK.Algebra.orderedProduct',
+  'owner': 'GRWTSK.Algebra.OrderedProduct',
+  'owner_source_sha256': '97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d'},
+ {'helper': 'GRWTSK.Analysis.Waveform.Scheduling.count._unsafe_rec',
+  'original': 'GRWTSK.Analysis.Waveform.Scheduling.count',
+  'owner': 'GRWTSK.Combinatorics.Sequences.QuotaDiscrepancy',
+  'owner_source_sha256': '851cb36b5b9db3a4e2695e4c4164dbca4af83dcc913caebd41160fd4db8f882f'},
+ {'helper': 'GRWTSK.Analysis.Waveform.Scheduling.clock._unsafe_rec',
+  'original': 'GRWTSK.Analysis.Waveform.Scheduling.clock',
+  'owner': 'GRWTSK.Combinatorics.Sequences.QuotaDiscrepancy',
+  'owner_source_sha256': '851cb36b5b9db3a4e2695e4c4164dbca4af83dcc913caebd41160fd4db8f882f'},
+ {'helper': 'GRWTSK.Analysis.Waveform.Scheduling.debt._unsafe_rec',
+  'original': 'GRWTSK.Analysis.Waveform.Scheduling.debt',
+  'owner': 'GRWTSK.Combinatorics.Sequences.QuotaDiscrepancy',
+  'owner_source_sha256': '851cb36b5b9db3a4e2695e4c4164dbca4af83dcc913caebd41160fd4db8f882f'},
+ {'helper': 'GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator._unsafe_rec',
+  'original': 'GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator',
+  'owner': 'GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators',
+  'owner_source_sha256': '7ee299eed00ef1cf731e1e1b1ea7a507ae8e83d5ea0ed63f0861cf63f0e42f2c'},
+ {'helper': 'GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator._unsafe_rec',
+  'original': 'GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator',
+  'owner': 'GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators',
+  'owner_source_sha256': '7ee299eed00ef1cf731e1e1b1ea7a507ae8e83d5ea0ed63f0861cf63f0e42f2c'},
+ {'helper': 'GRWTSK.RiemannHypothesis.BranchSequenceRealization.numerator._unsafe_rec',
+  'original': 'GRWTSK.RiemannHypothesis.BranchSequenceRealization.numerator',
+  'owner': 'GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators',
+  'owner_source_sha256': '7ee299eed00ef1cf731e1e1b1ea7a507ae8e83d5ea0ed63f0861cf63f0e42f2c'},
+ {'helper': 'GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock._unsafe_rec',
+  'original': 'GRWTSK.RiemannHypothesis.BranchSequenceRealization.batchClock',
+  'owner': 'GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators',
+  'owner_source_sha256': '7ee299eed00ef1cf731e1e1b1ea7a507ae8e83d5ea0ed63f0861cf63f0e42f2c'},
+ {'helper': 'GRWTSK.ProofHorizon.CorkscrewChamberCap.affectedClosure._unsafe_rec',
+  'original': 'GRWTSK.ProofHorizon.CorkscrewChamberCap.affectedClosure',
+  'owner': 'GRWTSK.Order.Closure.FiniteDependencyClosure',
+  'owner_source_sha256': 'e78778c5b623abadfc23a668517cb4b1652ef6365962263b8440f8a156af5dec'},
+ {'helper': 'GRWTSK.ProofHorizon.CorkscrewChamberCap.routeClosureFrom._unsafe_rec',
+  'original': 'GRWTSK.ProofHorizon.CorkscrewChamberCap.routeClosureFrom',
+  'owner': 'GRWTSK.Logic.Inference.FiniteRuleSystems',
+  'owner_source_sha256': '6bbe978cc4ba18d4bfefbadab3a7b256cdec7dffb6b7de9da18a688d9c4fa986'},
+ {'helper': 'GRWTSK.ProofHorizon.CorkscrewChamberCap.RestartBudgetBoundary.totalRoundCost._unsafe_rec',
+  'original': 'GRWTSK.ProofHorizon.CorkscrewChamberCap.RestartBudgetBoundary.totalRoundCost',
+  'owner': 'GRWTSK.DynamicalSystems.TransitionSystems.BudgetResetCounterexamples',
+  'owner_source_sha256': '155e4fd202fb590cbdbdf4cb26100c17e72452418be0497ba37b301f662b3e42'},
+ {'helper': 'GRWTSK.ProofHorizon.CorkscrewChamberCap.RestartBudgetBoundary.sessionRun._unsafe_rec',
+  'original': 'GRWTSK.ProofHorizon.CorkscrewChamberCap.RestartBudgetBoundary.sessionRun',
+  'owner': 'GRWTSK.DynamicalSystems.TransitionSystems.BudgetResetCounterexamples',
+  'owner_source_sha256': '155e4fd202fb590cbdbdf4cb26100c17e72452418be0497ba37b301f662b3e42'},
+ {'helper': 'GRWTSK.LinearAlgebra.CocycleProduct.cocycleProduct._unsafe_rec',
+  'original': 'GRWTSK.LinearAlgebra.CocycleProduct.cocycleProduct',
+  'owner': 'GRWTSK.LinearAlgebra.CocycleProduct',
+  'owner_source_sha256': '64ebbd43849bfffee9f92d74f271c55a1ffcba28c1b7debcf491a901ddfff67b'},
+ {'helper': 'GRWTSK.Analysis.Waveform.workClock._unsafe_rec',
+  'original': 'GRWTSK.Analysis.Waveform.workClock',
+  'owner': 'GRWTSK.Logic.FiniteSequences.PrefixCoverage',
+  'owner_source_sha256': '77ed7277b4519ff8fb955e215664ac6d0c22a78e95e38e9ee16d18e6b226a5b3'},
+ {'helper': 'GRWTSK.RiemannHypothesis.BranchFrequencyExistence.finiteTail._unsafe_rec',
+  'original': 'GRWTSK.RiemannHypothesis.BranchFrequencyExistence.finiteTail',
+  'owner': 'GRWTSK.NumberTheory.ContinuedFractions.FrequencyRealization',
+  'owner_source_sha256': 'fe53414320a78931bf2add8a168544df853ce7bd10b82b2cf257082ceb77e4be'})
+GENERATED_PARTIAL_PROFILE = tuple(entry for entry in GENERATED_PARTIAL_PROFILE if entry['helper'] in {
+    'GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator._unsafe_rec',
+    'GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator._unsafe_rec',
+    'GRWTSK.RiemannHypothesis.BranchSequenceRealization.numerator._unsafe_rec',
+    'GRWTSK.ProofHorizon.CorkscrewChamberCap.affectedClosure._unsafe_rec',
+    'GRWTSK.ProofHorizon.CorkscrewChamberCap.routeClosureFrom._unsafe_rec'})
+GENERATED_PARTIAL_PROFILE_SHA256 = "f782a16a10fdea61ae3e8a2d3e4f3bc48865dc6129c442f8f0e575378fbc3b85"
+GENERATED_PARTIAL_OWNER_SHA256 = {
+    entry["owner"]: entry["owner_source_sha256"] for entry in GENERATED_PARTIAL_PROFILE
+}
+GENERATED_PARTIAL_PROFILE_BY_HELPER = {
+    entry["helper"]: entry for entry in GENERATED_PARTIAL_PROFILE
+}
+
+
+def generated_partial_profile_descriptor() -> dict[str, Any]:
+    """Return a reviewable opt-in descriptor, not permission or acceptance."""
+    return {
+        "kind": "pinned-lean-generated-partial-recursor-profile",
+        "profile_sha256": GENERATED_PARTIAL_PROFILE_SHA256,
+        "entries": [dict(entry) for entry in GENERATED_PARTIAL_PROFILE],
+    }
+
+
+def _validate_generated_partial_profile_constants() -> None:
+    table = GENERATED_PARTIAL_PROFILE
+    encoded = json.dumps(table, sort_keys=True, separators=(",", ":")).encode()
+    if hashlib.sha256(encoded).hexdigest() != GENERATED_PARTIAL_PROFILE_SHA256:
+        raise RuntimeError("generated-partial profile table differs from its signature")
+    if len(table) != 5 or len(GENERATED_PARTIAL_PROFILE_BY_HELPER) != 5 or len(
+        GENERATED_PARTIAL_OWNER_SHA256
+    ) != 3:
+        raise RuntimeError("generated-partial profile inventory changed")
+    for entry in table:
+        if type(entry) is not dict or set(entry) != {
+            "helper", "original", "owner", "owner_source_sha256"
+        } or any(type(value) is not str for value in entry.values()):
+            raise RuntimeError("invalid generated-partial profile entry schema")
+        if not _MODULE.fullmatch(entry["owner"]) or not _MODULE.fullmatch(
+            entry["original"]
+        ) or entry["helper"] != entry["original"] + "._unsafe_rec" or not _SHA256.fullmatch(
+            entry["owner_source_sha256"]
+        ) or GENERATED_PARTIAL_OWNER_SHA256.get(entry["owner"]) != entry["owner_source_sha256"]:
+            raise RuntimeError("invalid generated-partial profile entry")
 
 
 def expected_owner_modules(owned_modules: Iterable[str]) -> list[str]:
@@ -173,9 +283,9 @@ def expected_owner_modules(owned_modules: Iterable[str]) -> list[str]:
 
 def generate_audit_source(
     owned_modules: Iterable[str], *, helper_module: str = HELPER_MODULE,
-    runtime_owner_source_hash: str = "",
+    runtime_owner_source_hash: str = "", generated_partial_profile_sha256: str = "",
 ) -> str:
-    """Import every frozen owner explicitly and invoke the unchanged native observer.
+    """Import every frozen owner explicitly and invoke its selected audit profile.
 
     Compile the helper as a separate operational module first. It is outside the
     project root, so its metaprogramming implementation is a recorded dependency,
@@ -191,8 +301,20 @@ def generate_audit_source(
         runtime_owner_source_hash != RUNTIME_SOURCE_SHA256 or RUNTIME_OWNER not in owners
     ):
         raise RuntimeError("unapproved runtime owner source hash")
+    if type(runtime_owner_source_hash) is not str or type(generated_partial_profile_sha256) is not str:
+        raise RuntimeError("runtime profile permissions must be exact strings")
+    permission = ""
+    if generated_partial_profile_sha256:
+        _validate_generated_partial_profile_constants()
+        if generated_partial_profile_sha256 != GENERATED_PARTIAL_PROFILE_SHA256 or not set(
+            GENERATED_PARTIAL_OWNER_SHA256
+        ) <= set(owners):
+            raise RuntimeError("unapproved or incomplete generated-partial profile permission")
+        if runtime_owner_source_hash:
+            raise RuntimeError("legacy and generated-partial profiles are mutually exclusive")
+        permission = " " + json.dumps(generated_partial_profile_sha256)
     imports = "".join("import " + owner + "\n" for owner in owners)
-    return imports + "import " + helper_module + "\n\n#audit_math_trust " + json.dumps(runtime_owner_source_hash) + "\n"
+    return imports + "import " + helper_module + "\n\n#audit_math_trust " + json.dumps(runtime_owner_source_hash) + permission + "\n"
 
 
 def helper_source() -> bytes:
@@ -242,9 +364,64 @@ def _strict_records(text: str, owners: list[str]) -> tuple[list[dict], list[dict
     return declarations, modules
 
 
+def parse_generated_partial_census(
+    text: str, expected_modules: list[str], source_hashes: Mapping[str, str],
+    profile_sha256: str,
+) -> tuple[list[dict], list[dict]]:
+    """Independently rederive exact partial-helper eligibility from strict records.
+
+    Pretty-printed type agreement is a second record-level check. It is NOT
+    claimed to reconstruct Lean Expr equality; the pinned native observer
+    checks that and the exact universe-parameter list before setting known.
+    """
+    _validate_generated_partial_profile_constants()
+    if type(profile_sha256) is not str or profile_sha256 != GENERATED_PARTIAL_PROFILE_SHA256:
+        raise RuntimeError("unapproved generated-partial profile signature")
+    if not set(GENERATED_PARTIAL_OWNER_SHA256) <= set(expected_modules):
+        raise RuntimeError("generated-partial profile owner inventory incomplete")
+    for owner, digest in GENERATED_PARTIAL_OWNER_SHA256.items():
+        if source_hashes.get(owner) != digest:
+            raise RuntimeError("generated-partial profile owner source pin changed: " + owner)
+    declarations, modules = _strict_records(text, expected_modules)
+    by_name = {row["name"]: row for row in declarations}
+    for entry in GENERATED_PARTIAL_PROFILE:
+        if entry["helper"] not in by_name or entry["original"] not in by_name:
+            raise RuntimeError("generated-partial profile helper/original pair missing: " + entry["helper"])
+    for row in declarations:
+        expected_owner_hash = GENERATED_PARTIAL_OWNER_SHA256.get(row["module"], "")
+        if row["runtime_helper_owner_source_sha256"] != expected_owner_hash:
+            raise RuntimeError("generated-partial native owner source permission mismatch: " + row["name"])
+        entry = GENERATED_PARTIAL_PROFILE_BY_HELPER.get(row["name"])
+        original = by_name.get(entry["original"]) if entry is not None else None
+        known = (entry is not None and row["module"] == entry["owner"]
+                 and row["kind"] == "definition" and not row["unsafe"] and row["partial"]
+                 and row["runtime_helper_owner_source_sha256"] == entry["owner_source_sha256"]
+                 and source_hashes.get(entry["owner"]) == entry["owner_source_sha256"]
+                 and original is not None and original["name"] == entry["original"]
+                 and original["module"] == entry["owner"]
+                 and original["kind"] == "definition"
+                 and not original["unsafe"] and not original["partial"]
+                 and not original["known_generated_runtime_helper"]
+                 and original["type"] == row["type"]
+                 and not original["direct_value_reference_to_runtime_helper"])
+        if entry is not None and not known:
+            raise RuntimeError("invalid exact generated-partial helper/original pair: " + row["name"])
+        if row["known_generated_runtime_helper"] != known:
+            raise RuntimeError("invalid generated-partial runtime helper classification: " + row["name"])
+        if row["unsafe"] or (row["partial"] and not known) or row["kind"] == "axiom":
+            raise RuntimeError("unsafe, unpaired partial, or axiom declaration: " + row["name"])
+        if not set(row["axioms"]) <= ALLOWED_AXIOMS:
+            raise RuntimeError("unapproved transitive axiom: " + row["name"])
+        if row["kind"] == "theorem" and row["direct_value_reference_to_runtime_helper"]:
+            raise RuntimeError("theorem directly references selected runtime helper in type/value: " + row["name"])
+    return declarations, modules
+
+
 def validate_owner_census(
     text: str, owned_modules: Iterable[str], source_hashes: Mapping[str, str], *,
     returncode: int = 0, allow_pinned_runtime: bool = False,
+    allow_generated_partial_profile: bool = False,
+    generated_partial_profile_sha256: str = "",
 ) -> dict[str, Any]:
     """Accept a complete successful owner census tied to every owner's frozen source.
 
@@ -255,6 +432,9 @@ def validate_owner_census(
     must independently verify immutable source/object families before and after
     its trust=0 compilation. ``allow_pinned_runtime`` is opt-in only for the one
     separately justified, exact source-hashed OrderedProduct runtime helper.
+    ``allow_generated_partial_profile`` independently opts into only the exact
+    15-pair profile and additionally requires its signed-table SHA permission.
+    These two exception profiles are mutually exclusive.
     """
     owners = expected_owner_modules(owned_modules)
     if type(text) is not str:
@@ -266,16 +446,28 @@ def validate_owner_census(
     if any(type(digest) is not str or not _SHA256.fullmatch(digest)
            for digest in source_hashes.values()):
         raise RuntimeError("invalid owner source SHA256")
-    if type(allow_pinned_runtime) is not bool:
+    if type(allow_pinned_runtime) is not bool or type(allow_generated_partial_profile) is not bool:
         raise RuntimeError("runtime exception policy must be explicit Boolean")
+    if type(generated_partial_profile_sha256) is not str:
+        raise RuntimeError("generated-partial profile permission must be an exact string")
+    if allow_pinned_runtime and allow_generated_partial_profile:
+        raise RuntimeError("legacy and generated-partial profiles are mutually exclusive")
+    if not allow_generated_partial_profile and generated_partial_profile_sha256:
+        raise RuntimeError("generated-partial profile permission supplied while profile disabled")
     _strict_records(text, owners)
     native_hashes = {}
     if allow_pinned_runtime:
         if source_hashes.get(RUNTIME_OWNER) != RUNTIME_SOURCE_SHA256:
             raise RuntimeError("runtime exception lacks independently pinned owner source")
         native_hashes[RUNTIME_SOURCE] = RUNTIME_SOURCE_SHA256
-    declarations, modules = parse_census(text, owners, native_hashes)
-    if not allow_pinned_runtime and any(d["known_generated_runtime_helper"] for d in declarations):
+    if allow_generated_partial_profile:
+        declarations, modules = parse_generated_partial_census(
+            text, owners, source_hashes, generated_partial_profile_sha256)
+    else:
+        declarations, modules = parse_census(text, owners, native_hashes)
+    if not (allow_pinned_runtime or allow_generated_partial_profile) and any(
+        d["known_generated_runtime_helper"] for d in declarations
+    ):
         raise RuntimeError("runtime exceptions disabled for this audit scope")
     return {
         "status": "OWNER_CENSUS_PARSED",
@@ -286,10 +478,17 @@ def validate_owner_census(
         "source_sha256_by_owner": {owner: source_hashes[owner] for owner in owners},
         "zero_declaration_modules": sorted(m["module"] for m in modules if m["declarations"] == 0),
         "allowed_transitive_axioms": sorted(ALLOWED_AXIOMS),
-        "runtime_exception_enabled": allow_pinned_runtime,
+        "runtime_exception_enabled": allow_pinned_runtime or allow_generated_partial_profile,
+        "generated_partial_profile_enabled": allow_generated_partial_profile,
+        "generated_partial_profile_sha256": generated_partial_profile_sha256,
+        "generated_partial_profile": generated_partial_profile_descriptor() if allow_generated_partial_profile else None,
         "observer_source_sha256": HELPER_SHA256,
         "observer_native_reference_sha256": NATIVE_OBSERVER_SHA256,
         "parser_native_reference_sha256": NATIVE_CHECKER_SHA256,
-        "unsafe_partial_reference_scope": "owned declaration flags and direct exact pinned runtime references; not an arbitrary transitive reference graph",
+        "unsafe_partial_reference_scope": (
+            "owned declaration flags and direct theorem TYPE OR VALUE references to the exact 15 profile helpers; not an arbitrary transitive reference graph"
+            if allow_generated_partial_profile else
+            "owned declaration flags and direct exact pinned runtime references; not an arbitrary transitive reference graph"
+        ),
         "fresh_kernel_check": "caller must link this parse result to its actual immutable trust=0/Werr run",
     }

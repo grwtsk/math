@@ -37,10 +37,13 @@ def nextConfig (previous : Session) : ControllerStartConfig where
   budget := 1
   liftOrigin := previous.active.lift
 
-def sessionRun : ℕ → Session
-  | 0 => RevisionFixtures.correctedLedger.startSession ⟨1, 0⟩
-  | n + 1 =>
-      ((sessionRun n).history.startSession (nextConfig (sessionRun n))).advance roundProposal
+def sessionRun : ℕ → Session :=
+  Nat.rec (RevisionFixtures.correctedLedger.startSession ⟨1, 0⟩)
+    (fun _n s => (s.history.startSession (nextConfig s)).advance roundProposal)
+
+@[simp] theorem sessionRun_zero : sessionRun 0 = RevisionFixtures.correctedLedger.startSession ⟨1, 0⟩ := rfl
+@[simp] theorem sessionRun_succ (n : ℕ) :
+    sessionRun (n + 1) = ((sessionRun n).history.startSession (nextConfig (sessionRun n))).advance roundProposal := rfl
 
 def restartedSession (n : ℕ) : Session :=
   (sessionRun n).history.startSession (nextConfig (sessionRun n))
@@ -110,9 +113,12 @@ theorem session_run_lift_exact (n : ℕ) : (sessionRun n).active.lift = n := by
       rw [ih]
 
 /-- This is the cost of the literal admitted proposals, counted across supplied resets. -/
-def totalRoundCost : ℕ → ℕ
-  | 0 => 0
-  | n + 1 => totalRoundCost n + roundProposal.cost
+def totalRoundCost : ℕ → ℕ :=
+  Nat.rec 0 (fun _n r => r + roundProposal.cost)
+
+@[simp] theorem totalRoundCost_zero : totalRoundCost 0 = 0 := rfl
+@[simp] theorem totalRoundCost_succ (n : ℕ) :
+    totalRoundCost (n + 1) = totalRoundCost n + roundProposal.cost := rfl
 
 theorem total_round_cost_exact (n : ℕ) : totalRoundCost n = n := by
   induction n with

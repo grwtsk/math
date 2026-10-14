@@ -22,6 +22,13 @@ namespace GRWTSK.RiemannHypothesis.CCC
 open MeasureTheory Set Filter ProbabilityTheory
 open scoped Topology
 
+/-- Actual pickup specialization; continuity is the separate unconditional source input. -/
+theorem pickup_tilt_integrable_of_energy_poly (hW : Continuous wholePickup)
+    (hE : PickupEnergyPoly) {σ : ℝ} (hσ : 0 < σ) :
+    IntegrableOn (fun u ↦ Real.exp (-σ * u) * wholePickup u) (Ioi 0) := by
+  rcases hE with ⟨C, q, hC, _, henergy⟩
+  exact integrableOn_tilt_of_polynomial_energy hW hC henergy hσ
+
 /-- Positive-part density for one of the two prescribed signs. -/
 def pickupPartDensity (ε : ℝ) (u : ℝ) : NNReal := Real.toNNReal (ε * wholePickup u)
 
