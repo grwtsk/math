@@ -1,5 +1,12 @@
 # Verification interfaces and historical scope
 
+## Check organization
+
+Subject-specific audits and consumer examples live under `checks/<Subject>/<Object>/`, alongside their controls. Top-level check files are shared verification infrastructure or a cross-library declaration inventory. Run the existing `scripts/check_*.py` entry points; they resolve the subject paths.
+
+Negative controls remain separate Lean inputs so each rejected claim must fail for its own intended reason. `checks/LibraryDeclarations.lean` preserves its ordered type and axiom queries, with adjacent identical namespace blocks consolidated. Its imports and those of the sequence audit use one module per command, as required by the pinned Lean parser. Check relocation and formatting do not renew historical proof receipts or establish complete current consumer acceptance.
+
+
 These interfaces and inherited check descriptions are reference material. Commands below are reproducible entry points, not a claim that this documentation migration ran them. Historical module counts and receipts retain their recorded source scope.
 
 Run `lake build --wfail` and `python3 scripts/check_rh_inference_guards.py`. Independent reconstruction uses pinned public dependencies, declared public package caches and fresh project outputs. Native kernel checks reject unsafe or partial declarations, unexpected axioms and placeholders.
@@ -17,7 +24,7 @@ arithmetic asymptotic estimate. Mathlib dependency objects are pinned and used,
 not independently source-replayed. Independent acceptance remains **PENDING**.
 
 Run `lake build --wfail` and `python3 scripts/check_prime_window_laplace.py`. The scoped checker freshly replays the complete selected project source closure at trust zero, audits the owned declaration family and standard axioms, and rejects a missing tail, a full-window shift substitution, and the false multiplier rule. Its source-bound receipt is `evidence/prime-window-laplace-checks.json`; it does not grant independent mathematical acceptance.
-Run `lake build --wfail` and `python3 scripts/check_ccc_energy.py`. The latter freshly elaborates and exports the complete selected project import closure at trust zero, checks literal consumer contracts, records all declarations owned by the new modules and their transitive axioms, and rejects removal of P04, replacement of a bound by a determinant identity, alteration of the almost Mathieu phase, substitution of one damping for all dampings, finite samples for every sample, and omission of the comparison residual. Pinned dependency objects are used. The current receipt is `evidence/ccc-energy-checks.json`.
+Run `python3 -B scripts/check_ccc_energy.py` for the selected Energy source replay and exact consumer-result checks. The result oracle binds all 243 named consumer contracts and the six measured mathematical rejection profiles to their qualified source bytes. A rejection must have exit code one, no stderr or timeout, and one exact JSON diagnostic at its qualified source span; signals, unrelated errors, foreign declarations and count suffixes are rejected. The controls retain P04, the energy budget beyond a determinant identity, the almost Mathieu phase, every damping and sample, and the complete comparison residual. New receipts stay in ignored local storage; `evidence/ccc-energy-checks.json` retains its historical scope. These result checks do not supply immutable full-entrypoint execution or integration of the complete standard owned-declaration audit. The separately qualified frozen 25-owner/278-declaration source scope remains distinct from the selected 243 consumer records. Pinned dependency objects are used, with no Mathlib source rebuild or unconditional RH acceptance implied.
 
 Run `lake build --wfail` and `python3 scripts/check_prime_cascade.py`. The latter recompiles the complete selected project source closure into fresh objects with Lean trust zero, checks exact consumer contracts and transitive axioms, and rejects missing prime/block bounds and a composite primitive. Its source-bound result is `evidence/prime-cascade-checks.json`. Public dependency pins are Lean 4.33.0 and Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`.
 

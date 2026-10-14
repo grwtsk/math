@@ -27,15 +27,20 @@ open scoped Topology
 open BranchSequenceRealization
 
 /-- A finite backward complete quotient ends with a strict half-unit tail. -/
-def finiteTail (a : ℕ → ℕ) : ℕ → ℕ → ℝ
-  | 0, n => (a n : ℝ) + 1 / 2
-  | depth + 1, n => (a n : ℝ) + (finiteTail a depth (n + 1))⁻¹
+def finiteTail (a : ℕ → ℕ) : ℕ → ℕ → ℝ :=
+  Nat.rec (fun n => (a n : ℝ) + 1 / 2)
+    (fun _depth r n => (a n : ℝ) + (r (n + 1))⁻¹)
+
+@[simp] theorem finiteTail_zero (a : ℕ → ℕ) (n : ℕ) :
+    finiteTail a 0 n = (a n : ℝ) + 1 / 2 := rfl
+@[simp] theorem finiteTail_succ (a : ℕ → ℕ) (depth n : ℕ) :
+    finiteTail a (depth + 1) n = (a n : ℝ) + (finiteTail a depth (n + 1))⁻¹ := rfl
 
 /-- Every finite complete quotient lies strictly between its digit and digit plus one. -/
 theorem finiteTail_bounds (a : ℕ → ℕ) (ha : ∀ n, 0 < a n) (depth n : ℕ) :
     (a n : ℝ) < finiteTail a depth n ∧ finiteTail a depth n < (a n : ℝ) + 1 := by
   induction depth generalizing n with
-  | zero => simp only [finiteTail]; constructor <;> linarith
+  | zero => simp only [finiteTail_zero]; constructor <;> linarith
   | succ depth ih =>
     have h := ih (n + 1)
     have hdigit : (1 : ℝ) ≤ a (n + 1) := by exact_mod_cast Nat.succ_le_of_lt (ha (n + 1))
@@ -43,7 +48,7 @@ theorem finiteTail_bounds (a : ℕ → ℕ) (ha : ∀ n, 0 < a n) (depth n : ℕ
     have hp : 0 < finiteTail a depth (n + 1) := zero_lt_one.trans hgt
     have hi := inv_pos.mpr hp
     have hi1 := (inv_lt_one₀ hp).2 hgt
-    simp only [finiteTail]
+    simp
     constructor <;> linarith
 
 /-- Simultaneously bound every coordinate, without selecting finite convergence lengths. -/
@@ -97,7 +102,7 @@ theorem finiteWitness_recurrence (a : ℕ → ℕ) {length n : ℕ} (hn : n < le
     finiteWitness a length n = (a n : ℝ) + (finiteWitness a length (n + 1))⁻¹ := by
   unfold finiteWitness
   have h : length - n = length - (n + 1) + 1 := by omega
-  rw [h, finiteTail]
+  rw [h, finiteTail_succ]
 
 /-- Finite witnesses solve every required prefix constraint. -/
 theorem prefixSet_nonempty (a : ℕ → ℕ) (ha : ∀ n, 0 < a n) (length : ℕ) :

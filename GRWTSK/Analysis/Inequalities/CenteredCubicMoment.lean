@@ -1,4 +1,10 @@
-import Mathlib
+import Mathlib.Data.Real.Basic
+import Mathlib.Algebra.Order.BigOperators.Group.Finset
+import Mathlib.Algebra.BigOperators.Ring.Finset
+import Mathlib.Tactic.Linarith
+import Mathlib.Tactic.Ring
+import Mathlib.Tactic.SimpRw
+import Mathlib.Algebra.Order.Star.Real
 
 /-!
 Centered cubic moments of a nonnegative finite spectrum.
@@ -42,7 +48,8 @@ theorem coordinate_contribution_le {ι : Type*} (S : Finset ι) (x : ι → ℝ)
     (x i-μ)^2*(x i+2*μ) ≤ residual S x μ := by
   rw [residual_identity S x μ hmean]
   exact Finset.single_le_sum
-    (fun j hj => mul_nonneg (sq_nonneg _) (by linarith [hx j hj])) hi
+    (fun j hj => mul_nonneg (sq_nonneg (x j - μ))
+      (show 0 ≤ x j + 2 * μ from by linarith [hx j hj])) hi
 
 /-- A rational candidate upper bound can be checked without evaluating cube roots. -/
 theorem coordinate_lt_of_residual {ι : Type*} (S : Finset ι) (x : ι → ℝ)

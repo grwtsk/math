@@ -1,7 +1,7 @@
 from pathlib import Path
 import subprocess,json
 P=Path(__file__).resolve().parents[1]
-r=subprocess.run(['lake','env','lean','-j2','--trust=0','-DwarningAsError=true','checks/SchrodingerTransferAudit.lean'],cwd=P,capture_output=True,text=True,timeout=90)
+r=subprocess.run(['lake','env','lean','-j2','--trust=0','-DwarningAsError=true','checks/LinearAlgebra/SchrodingerTransfer/Audit.lean'],cwd=P,capture_output=True,text=True,timeout=90)
 s=r.stdout+r.stderr
 if r.returncode or s.count('SCHRODINGER_CONTRACT::')!=9 or s.count('SCHRODINGER_SYNTHETIC::')!=3:raise RuntimeError(s)
 (P/'.local').mkdir(exist_ok=True)

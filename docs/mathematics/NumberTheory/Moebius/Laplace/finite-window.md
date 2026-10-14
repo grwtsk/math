@@ -39,3 +39,5 @@ This contribution does not prove an arithmetic upper bound, negligible boundary 
 ## Source and verification scope
 
 [Source](../../../../../GRWTSK/NumberTheory/Moebius/PrimeFilterLaplace.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../../reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+
+The current import-only repair passed source elaboration at trust zero with fatal warnings. The statements, hypotheses and proof text are unchanged. Complete current owned-declaration auditing and affected-consumer acceptance remain pending; the historical status above is retained.

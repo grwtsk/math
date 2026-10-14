@@ -1,7 +1,66 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI Codex.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Logic.Inference.FiniteRuleExamples GRWTSK.Logic.Locality.FiniteRuleTransport GRWTSK.Logic.Inference.FiniteRuleSystems GRWTSK.NumberTheory.Moebius.EnergyGrowthEquivalences GRWTSK.NumberTheory.Moebius.WeightedIntegralContinuity GRWTSK.NumberTheory.Moebius.DiagonalEnergyBounds GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy GRWTSK.NumberTheory.Moebius.MeanSquareGrowth GRWTSK.NumberTheory.Zeta.HolomorphicFilteredReciprocal GRWTSK.Analysis.InnerProductSpace.CausalResponseGram GRWTSK.NumberTheory.Moebius.WeightedIntegralGrowth GRWTSK.Analysis.LaplaceTransform.CausalExponentialResponse GRWTSK.NumberTheory.Moebius.MeanSquareLaplaceHolomorphy GRWTSK.NumberTheory.Moebius.PolynomialLaplaceHolomorphy GRWTSK.NumberTheory.Moebius.LaplaceDirichletSeries GRWTSK.NumberTheory.Moebius.FiniteLaplaceSums GRWTSK.NumberTheory.Zeta.ZeroFreeHalfPlaneCriteria GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral GRWTSK.NumberTheory.Moebius.SignedIntegralSectorBounds GRWTSK.NumberTheory.Moebius.SectorEssentialSuprema GRWTSK.DynamicalSystems.TransitionSystems.GuardedFiniteBudget GRWTSK.DynamicalSystems.TransitionSystems.RevisionReachability GRWTSK.Analysis.Complex.VerticalReflection GRWTSK.Order.Closure.FiniteDependencyClosure GRWTSK.Order.Closure.FiniteDependencyExamples GRWTSK.Logic.Certificates.ProofCoverage GRWTSK.Logic.Certificates.BatchVerification GRWTSK.Logic.Certificates.BatchVerificationExamples GRWTSK.Logic.Certificates.ModelExamples GRWTSK.Logic.Locality.RevisionCertificates GRWTSK.DynamicalSystems.TransitionSystems.AnchoredVerificationExamples GRWTSK.DynamicalSystems.TransitionSystems.CertifiedPartialMaps GRWTSK.Logic.Certificates.DependencyRevision GRWTSK.Analysis.Inequalities.FiniteShiftedDerivativeBounds GRWTSK.Analysis.ErrorBounds.PartialMapComposition GRWTSK.Logic.Certificates.AnchoredBatchVerification GRWTSK.Logic.Certificates.AnchoredDependencyRevision GRWTSK.Logic.Locality.AnchoredCertificates GRWTSK.DynamicalSystems.TransitionSystems.AnchoredReinitialization GRWTSK.DynamicalSystems.TransitionSystems.AnchoredVerificationReachability GRWTSK.DynamicalSystems.TransitionSystems.StateReinitialization GRWTSK.DynamicalSystems.TransitionSystems.BudgetResetCounterexamples GRWTSK.DynamicalSystems.TransitionSystems.StateReinitializationExamples GRWTSK.Logic.Certificates.DependencyRevisionExamples GRWTSK.DynamicalSystems.TransitionSystems.VerificationReachability GRWTSK.DynamicalSystems.TransitionSystems.VerificationReachabilityExamples GRWTSK.Analysis.Inequalities.DiscreteEnergyBalance GRWTSK.NumberTheory.Chebyshev.CompactProfileExplicitFormula GRWTSK.Analysis.Integration.CompactPolynomialMoments GRWTSK.Analysis.Distribution.CompactProfileDilation GRWTSK.Analysis.InnerProductSpace.DilationGram GRWTSK.Analysis.Convolution.CompactProfileHigherDerivatives GRWTSK.Analysis.InnerProductSpace.DilationResponseSeparation GRWTSK.Analysis.InnerProductSpace.CompactResidualNormalization GRWTSK.Analysis.Convolution.CompactProfileCorrelation GRWTSK.Analysis.Calculus.CompactPolynomialDerivatives GRWTSK.Analysis.Calculus.CompactProfileBoundaryCounterexamples GRWTSK.NumberTheory.Chebyshev.CompactProfilePairingIntegrability GRWTSK.Analysis.Distribution.WeakSecondDerivativeUniqueness GRWTSK.NumberTheory.Zeta.PoleRegularization
+import GRWTSK.Logic.Inference.FiniteRuleExamples
+import GRWTSK.Logic.Locality.FiniteRuleTransport
+import GRWTSK.Logic.Inference.FiniteRuleSystems
+import GRWTSK.NumberTheory.Moebius.EnergyGrowthEquivalences
+import GRWTSK.NumberTheory.Moebius.WeightedIntegralContinuity
+import GRWTSK.NumberTheory.Moebius.DiagonalEnergyBounds
+import GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy
+import GRWTSK.NumberTheory.Moebius.MeanSquareGrowth
+import GRWTSK.NumberTheory.Zeta.HolomorphicFilteredReciprocal
+import GRWTSK.Analysis.InnerProductSpace.CausalResponseGram
+import GRWTSK.NumberTheory.Moebius.WeightedIntegralGrowth
+import GRWTSK.Analysis.LaplaceTransform.CausalExponentialResponse
+import GRWTSK.NumberTheory.Moebius.MeanSquareLaplaceHolomorphy
+import GRWTSK.NumberTheory.Moebius.PolynomialLaplaceHolomorphy
+import GRWTSK.NumberTheory.Moebius.LaplaceDirichletSeries
+import GRWTSK.NumberTheory.Moebius.FiniteLaplaceSums
+import GRWTSK.NumberTheory.Zeta.ZeroFreeHalfPlaneCriteria
+import GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral
+import GRWTSK.NumberTheory.Moebius.SignedIntegralSectorBounds
+import GRWTSK.NumberTheory.Moebius.SectorEssentialSuprema
+import GRWTSK.DynamicalSystems.TransitionSystems.GuardedFiniteBudget
+import GRWTSK.DynamicalSystems.TransitionSystems.RevisionReachability
+import GRWTSK.Analysis.Complex.VerticalReflection
+import GRWTSK.Order.Closure.FiniteDependencyClosure
+import GRWTSK.Order.Closure.FiniteDependencyExamples
+import GRWTSK.Logic.Certificates.ProofCoverage
+import GRWTSK.Logic.Certificates.BatchVerification
+import GRWTSK.Logic.Certificates.BatchVerificationExamples
+import GRWTSK.Logic.Certificates.ModelExamples
+import GRWTSK.Logic.Locality.RevisionCertificates
+import GRWTSK.DynamicalSystems.TransitionSystems.AnchoredVerificationExamples
+import GRWTSK.DynamicalSystems.TransitionSystems.CertifiedPartialMaps
+import GRWTSK.Logic.Certificates.DependencyRevision
+import GRWTSK.Analysis.Inequalities.FiniteShiftedDerivativeBounds
+import GRWTSK.Analysis.ErrorBounds.PartialMapComposition
+import GRWTSK.Logic.Certificates.AnchoredBatchVerification
+import GRWTSK.Logic.Certificates.AnchoredDependencyRevision
+import GRWTSK.Logic.Locality.AnchoredCertificates
+import GRWTSK.DynamicalSystems.TransitionSystems.AnchoredReinitialization
+import GRWTSK.DynamicalSystems.TransitionSystems.AnchoredVerificationReachability
+import GRWTSK.DynamicalSystems.TransitionSystems.StateReinitialization
+import GRWTSK.DynamicalSystems.TransitionSystems.BudgetResetCounterexamples
+import GRWTSK.DynamicalSystems.TransitionSystems.StateReinitializationExamples
+import GRWTSK.Logic.Certificates.DependencyRevisionExamples
+import GRWTSK.DynamicalSystems.TransitionSystems.VerificationReachability
+import GRWTSK.DynamicalSystems.TransitionSystems.VerificationReachabilityExamples
+import GRWTSK.Analysis.Inequalities.DiscreteEnergyBalance
+import GRWTSK.NumberTheory.Chebyshev.CompactProfileExplicitFormula
+import GRWTSK.Analysis.Integration.CompactPolynomialMoments
+import GRWTSK.Analysis.Distribution.CompactProfileDilation
+import GRWTSK.Analysis.InnerProductSpace.DilationGram
+import GRWTSK.Analysis.Convolution.CompactProfileHigherDerivatives
+import GRWTSK.Analysis.InnerProductSpace.DilationResponseSeparation
+import GRWTSK.Analysis.InnerProductSpace.CompactResidualNormalization
+import GRWTSK.Analysis.Convolution.CompactProfileCorrelation
+import GRWTSK.Analysis.Calculus.CompactPolynomialDerivatives
+import GRWTSK.Analysis.Calculus.CompactProfileBoundaryCounterexamples
+import GRWTSK.NumberTheory.Chebyshev.CompactProfilePairingIntegrability
+import GRWTSK.Analysis.Distribution.WeakSecondDerivativeUniqueness
+import GRWTSK.NumberTheory.Zeta.PoleRegularization
 set_option linter.hashCommand false
 open GRWTSK.ProofHorizon.CorkscrewChamberCap
 #check @guard_preserves_safe
@@ -255,11 +314,7 @@ namespace GRWTSK.ProofHorizon.CorkscrewChamberCap
 #print axioms uniform_to_terminal
 namespace FramedPort
 #print axioms composition_observation
-end FramedPort
-namespace FramedPort
 #print axioms comp_defect_bound
-end FramedPort
-namespace FramedPort
 #print axioms comp_residual_assoc
 end FramedPort
 namespace RankLosingReduction
@@ -267,8 +322,6 @@ namespace RankLosingReduction
 end RankLosingReduction
 namespace SignedWorkLedger
 #print axioms finite_balance
-end SignedWorkLedger
-namespace SignedWorkLedger
 #print axioms energy_le_of_cumulativeSupplyBound
 end SignedWorkLedger
 #print axioms signed_readout_reconstruction
@@ -281,35 +334,17 @@ end SignedWorkLedger
 #print axioms admitted_traversal_retains_obligation
 namespace Fixtures
 #print axioms finite_check_does_not_supply_coverage
-end Fixtures
-namespace Fixtures
 #print axioms conditional_cap_keeps_missing_premise
-end Fixtures
-namespace Fixtures
 #print axioms theorem_does_not_grant_rights
-end Fixtures
-namespace Fixtures
 #print axioms positive_transition_preserves_safe
-end Fixtures
-namespace Fixtures
 #print axioms false_obligation_rejected
-end Fixtures
-namespace Fixtures
 #print axioms forbidden_effect_rejected
-end Fixtures
-namespace Fixtures
 #print axioms coefficient_orthogonality_keeps_mixed_terms
-end Fixtures
-namespace Fixtures
 #print axioms determinant_one_does_not_force_identity
 end Fixtures
 namespace RevisionCertificate
 #print axioms current_target
-end RevisionCertificate
-namespace RevisionCertificate
 #print axioms stale_read_rejects
-end RevisionCertificate
-namespace RevisionCertificate
 #print axioms to_terminal
 end RevisionCertificate
 namespace FreshnessFixtures
@@ -326,38 +361,18 @@ end FreshnessFixtures
 #print axioms changed_snapshot_receipt_not_current
 namespace DependencyFixtures
 #print axioms cyclic_affected_exact
-end DependencyFixtures
-namespace DependencyFixtures
 #print axioms unseeded_cycle_stays_clear
-end DependencyFixtures
-namespace DependencyFixtures
 #print axioms transitive_consumer_invalidated
 end DependencyFixtures
 namespace RevisionFixtures
 #print axioms original_ledger_safe
-end RevisionFixtures
-namespace RevisionFixtures
 #print axioms corrected_ledger_safe
-end RevisionFixtures
-namespace RevisionFixtures
 #print axioms corrected_verified_exact
-end RevisionFixtures
-namespace RevisionFixtures
 #print axioms unrelated_current_target
-end RevisionFixtures
-namespace RevisionFixtures
 #print axioms cyclic_and_transitive_reopened
-end RevisionFixtures
-namespace RevisionFixtures
 #print axioms archive_and_old_proofs_retained
-end RevisionFixtures
-namespace RevisionFixtures
 #print axioms historical_receipt_not_current
-end RevisionFixtures
-namespace RevisionFixtures
 #print axioms correction_event_retained
-end RevisionFixtures
-namespace RevisionFixtures
 #print axioms recheck_preserves_status_and_history
 end RevisionFixtures
 #print axioms correctMany_safe
@@ -378,14 +393,8 @@ end RevisionFixtures
 #print axioms stale_receipt_rejects_current_guard
 namespace RestartFixtures
 #print axioms restarted_session_safe
-end RestartFixtures
-namespace RestartFixtures
 #print axioms current_proposal_guard
-end RestartFixtures
-namespace RestartFixtures
 #print axioms admitted_restart_step_safe
-end RestartFixtures
-namespace RestartFixtures
 #print axioms stale_historical_receipt_rejected
 end RestartFixtures
 #print axioms mem_supportedClaims_iff
@@ -395,14 +404,8 @@ end RestartFixtures
 #print axioms certified_supported_not_withdrawn
 namespace AlternativeFixtures
 #print axioms false_cycle_self_closed_but_not_grounded
-end AlternativeFixtures
-namespace AlternativeFixtures
 #print axioms source_dependent_alternate_returns_exact_target
-end AlternativeFixtures
-namespace AlternativeFixtures
 #print axioms grounded_cycle_empty_after_ground_loss
-end AlternativeFixtures
-namespace AlternativeFixtures
 #print axioms and_route_supported_with_both_premises
 end AlternativeFixtures
 #print axioms admission_preserves_safe
@@ -412,17 +415,9 @@ end AlternativeFixtures
 #print axioms admission_effect_history_preserved
 namespace EvidenceAdmissionFixtures
 #print axioms currentFourCertificate
-end EvidenceAdmissionFixtures
-namespace EvidenceAdmissionFixtures
 #print axioms readmitted_ledger_safe
-end EvidenceAdmissionFixtures
-namespace EvidenceAdmissionFixtures
 #print axioms readmission_retains_history
-end EvidenceAdmissionFixtures
-namespace EvidenceAdmissionFixtures
 #print axioms false_current_claim_not_admissible
-end EvidenceAdmissionFixtures
-namespace EvidenceAdmissionFixtures
 #print axioms incomplete_singleton_prerequisite_rejected
 end EvidenceAdmissionFixtures
 #print axioms workflow_safe
@@ -434,584 +429,240 @@ end EvidenceAdmissionFixtures
 #print axioms workflow_verified_target
 namespace RevisionWorkflowFixtures
 #print axioms concrete_workflow
-end RevisionWorkflowFixtures
-namespace RevisionWorkflowFixtures
 #print axioms final_ledger_safe
-end RevisionWorkflowFixtures
-namespace RevisionWorkflowFixtures
 #print axioms every_original_obligation_retained
-end RevisionWorkflowFixtures
-namespace RevisionWorkflowFixtures
 #print axioms workflow_returns_actual_target_four
-end RevisionWorkflowFixtures
-namespace RevisionWorkflowFixtures
 #print axioms forged_status_accounting_plausible
-end RevisionWorkflowFixtures
-namespace RevisionWorkflowFixtures
 #print axioms forged_final_not_reachable
 end RevisionWorkflowFixtures
 namespace ArithmeticPickupSource
 #print axioms material_integral_eq_finite
-end ArithmeticPickupSource
-namespace ArithmeticPickupSource
 #print axioms material_integrand_integrable
-end ArithmeticPickupSource
-namespace ArithmeticPickupSource
 #print axioms pickup_eq_interval_integral
-end ArithmeticPickupSource
-namespace ArithmeticPickupSource
 #print axioms finite_integration_identity
-end ArithmeticPickupSource
-namespace ArithmeticPickupSource
 #print axioms pickup_eq_closed_finite_sum
-end ArithmeticPickupSource
-namespace ArithmeticPickupSource
 #print axioms finite_pickup_prefix_flux
-end ArithmeticPickupSource
-namespace ArithmeticPickupSource
 #print axioms upper_touching_atom_zero
-end ArithmeticPickupSource
-namespace ArithmeticPickupSource
 #print axioms lower_touching_atom_later_reading
-end ArithmeticPickupSource
-namespace ArithmeticPickupSource
 #print axioms mem_closed_prefix_iff
-end ArithmeticPickupSource
-namespace ArithmeticPickupSource
 #print axioms mem_reset_remainder_iff
-end ArithmeticPickupSource
-namespace ArithmeticPickupSource
 #print axioms pickup_original_reset
-end ArithmeticPickupSource
-namespace ArithmeticPickupSource
 #print axioms pickup_bound_iff_material_bound
-end ArithmeticPickupSource
-namespace ArithmeticPickupSource
 #print axioms whole_pickup_poly_iff_material
-end ArithmeticPickupSource
-namespace ArithmeticPickupSource
 #print axioms pickup_reset_signed_bound
-end ArithmeticPickupSource
-namespace ArithmeticPickupSource
 #print axioms whole_pickup_poly_reset
 end ArithmeticPickupSource
 namespace ArithmeticPickupEnergy
 #print axioms actual_waveform_on_inventory
-end ArithmeticPickupEnergy
-namespace ArithmeticPickupEnergy
 #print axioms response_touching_atom_zero
-end ArithmeticPickupEnergy
-namespace ArithmeticPickupEnergy
 #print axioms response_product_integrable
-end ArithmeticPickupEnergy
-namespace ArithmeticPickupEnergy
 #print axioms pickup_square_integrable
-end ArithmeticPickupEnergy
-namespace ArithmeticPickupEnergy
 #print axioms energy_eq_full_gram
-end ArithmeticPickupEnergy
-namespace ArithmeticPickupEnergy
 #print axioms full_gram_eq_diagonal_add_cross
-end ArithmeticPickupEnergy
-namespace ArithmeticPickupEnergy
 #print axioms energy_eq_diagonal_add_cross
-end ArithmeticPickupEnergy
-namespace ArithmeticPickupEnergy
 #print axioms pickup_window_bound
-end ArithmeticPickupEnergy
-namespace ArithmeticPickupEnergy
 #print axioms pickup_image_bdd_above
 end ArithmeticPickupEnergy
 namespace ArithmeticPickupGram
 #print axioms weighted_response_product_integrable
-end ArithmeticPickupGram
-namespace ArithmeticPickupGram
 #print axioms signedSignal_square_integrable
-end ArithmeticPickupGram
-namespace ArithmeticPickupGram
 #print axioms signedSignal_integral_square_eq_quadraticForm
-end ArithmeticPickupGram
-namespace ArithmeticPickupGram
 #print axioms gram_symmetric
-end ArithmeticPickupGram
-namespace ArithmeticPickupGram
 #print axioms gram_diagonal_nonnegative
-end ArithmeticPickupGram
-namespace ArithmeticPickupGram
 #print axioms quadraticForm_nonnegative
-end ArithmeticPickupGram
-namespace ArithmeticPickupGram
 #print axioms actual_energy_nonnegative
-end ArithmeticPickupGram
-namespace ArithmeticPickupGram
 #print axioms actual_diagonal_nonnegative
-end ArithmeticPickupGram
-namespace ArithmeticPickupGram
 #print axioms actual_cross_lower_bound
 end ArithmeticPickupGram
 namespace ArithmeticSupplier
 #print axioms positive_envelope_history_bounded
-end ArithmeticSupplier
-namespace ArithmeticSupplier
 #print axioms positive_envelope_dominates_history
-end ArithmeticSupplier
-namespace ArithmeticSupplier
 #print axioms positive_envelope_eq_sup
-end ArithmeticSupplier
-namespace ArithmeticSupplier
 #print axioms whole_pickup_poly_supplies_original
 end ArithmeticSupplier
 namespace ArithmeticPickupDiagonal
 #print axioms moebius_coefficient_abs_le_one
-end ArithmeticPickupDiagonal
-namespace ArithmeticPickupDiagonal
 #print axioms moebius_coefficient_sq_le_one
-end ArithmeticPickupDiagonal
-namespace ArithmeticPickupDiagonal
 #print axioms inverse_half_square
-end ArithmeticPickupDiagonal
-namespace ArithmeticPickupDiagonal
 #print axioms response_square_le_reciprocal
-end ArithmeticPickupDiagonal
-namespace ArithmeticPickupDiagonal
 #print axioms diagonal_density_active
-end ArithmeticPickupDiagonal
-namespace ArithmeticPickupDiagonal
 #print axioms diagonal_density_le
-end ArithmeticPickupDiagonal
-namespace ArithmeticPickupDiagonal
 #print axioms diagonal_density_integrable
-end ArithmeticPickupDiagonal
-namespace ArithmeticPickupDiagonal
 #print axioms diagonal_density_integral_eq
-end ArithmeticPickupDiagonal
-namespace ArithmeticPickupDiagonal
 #print axioms diagonal_nonnegative
-end ArithmeticPickupDiagonal
-namespace ArithmeticPickupDiagonal
 #print axioms diagonal_polynomial_bound
-end ArithmeticPickupDiagonal
-namespace ArithmeticPickupDiagonal
 #print axioms diagonal_upper_bound
 end ArithmeticPickupDiagonal
 namespace ArithmeticPickupBudget
 #print axioms local_pickup_square_nonnegative
-end ArithmeticPickupBudget
-namespace ArithmeticPickupBudget
 #print axioms local_pickup_square_le_energy
-end ArithmeticPickupBudget
-namespace ArithmeticPickupBudget
 #print axioms growth_energy_bound
-end ArithmeticPickupBudget
-namespace ArithmeticPickupBudget
 #print axioms whole_pickup_poly_implies_budgets
-end ArithmeticPickupBudget
-namespace ArithmeticPickupBudget
 #print axioms budgets_imply_whole_pickup_poly
-end ArithmeticPickupBudget
-namespace ArithmeticPickupBudget
 #print axioms whole_pickup_poly_iff_budgets
 end ArithmeticPickupBudget
 namespace ArithmeticSupplierMeter
 #print axioms gated_reading_ae_le_iff
-end ArithmeticSupplierMeter
-namespace ArithmeticSupplierMeter
 #print axioms sector_esssup_le_iff
-end ArithmeticSupplierMeter
-namespace ArithmeticSupplierMeter
 #print axioms sector_esssup_eq_sInf
-end ArithmeticSupplierMeter
-namespace ArithmeticSupplierMeter
 #print axioms null_sector_esssup
-end ArithmeticSupplierMeter
-namespace ArithmeticSupplierMeter
 #print axioms empty_sector_esssup
-end ArithmeticSupplierMeter
-namespace ArithmeticSupplierMeter
 #print axioms zero_sector_silent
-end ArithmeticSupplierMeter
-namespace ArithmeticSupplierMeter
 #print axioms extended_meter_le_real_iff
-end ArithmeticSupplierMeter
-namespace ArithmeticSupplierMeter
 #print axioms reset_pickup_window_bound
-end ArithmeticSupplierMeter
-namespace ArithmeticSupplierMeter
 #print axioms extended_meter_ne_top
-end ArithmeticSupplierMeter
-namespace ArithmeticSupplierMeter
 #print axioms real_meter_embedding
-end ArithmeticSupplierMeter
-namespace ArithmeticSupplierMeter
 #print axioms real_meter_le_iff
-end ArithmeticSupplierMeter
-namespace ArithmeticSupplierMeter
 #print axioms original_supplier_estimate_iff_real_meter
-end ArithmeticSupplierMeter
-namespace ArithmeticSupplierMeter
 #print axioms whole_pickup_poly_supplies_meter
-end ArithmeticSupplierMeter
-namespace ArithmeticSupplierMeter
 #print axioms pickup_budgets_supply_meter
 end ArithmeticSupplierMeter
 namespace ArithmeticPickupContinuity
 #print axioms pickup_nonpositive
-end ArithmeticPickupContinuity
-namespace ArithmeticPickupContinuity
 #print axioms response_continuous
-end ArithmeticPickupContinuity
-namespace ArithmeticPickupContinuity
 #print axioms fixed_inventory_signal_continuous
-end ArithmeticPickupContinuity
-namespace ArithmeticPickupContinuity
 #print axioms actual_waveform_on_inventory_all
-end ArithmeticPickupContinuity
-namespace ArithmeticPickupContinuity
 #print axioms pickup_continuous
-end ArithmeticPickupContinuity
-namespace ArithmeticPickupContinuity
 #print axioms reset_pickup_continuous
-end ArithmeticPickupContinuity
-namespace ArithmeticPickupContinuity
 #print axioms positive_envelope_attained
 end ArithmeticPickupContinuity
 namespace AlternativeLocality
 #print axioms mem_providerReadUnion
-end AlternativeLocality
-namespace AlternativeLocality
 #print axioms provider_read_agreement
-end AlternativeLocality
-namespace AlternativeLocality
 #print axioms currently_eligible_preserved
-end AlternativeLocality
-namespace AlternativeLocality
 #print axioms eligible_rule_transport
-end AlternativeLocality
-namespace AlternativeLocality
 #print axioms grounded_replay_target
-end AlternativeLocality
-namespace AlternativeLocality
 #print axioms computed_support_preserved
-end AlternativeLocality
-namespace AlternativeLocality
 #print axioms computed_support_replay_target
 end AlternativeLocality
 namespace AlternativeLocality.HostileFixture
 #print axioms all_providers_eligible
-end AlternativeLocality.HostileFixture
-namespace AlternativeLocality.HostileFixture
 #print axioms footprint_exact
-end AlternativeLocality.HostileFixture
-namespace AlternativeLocality.HostileFixture
 #print axioms grounded_P
-end AlternativeLocality.HostileFixture
-namespace AlternativeLocality.HostileFixture
 #print axioms grounded_Q
-end AlternativeLocality.HostileFixture
-namespace AlternativeLocality.HostileFixture
 #print axioms computed_Q
-end AlternativeLocality.HostileFixture
-namespace AlternativeLocality.HostileFixture
 #print axioms hostile_pair_agrees
-end AlternativeLocality.HostileFixture
-namespace AlternativeLocality.HostileFixture
 #print axioms global_conclusion_locality_fails
-end AlternativeLocality.HostileFixture
-namespace AlternativeLocality.HostileFixture
 #print axioms no_union_revision_certificate
-end AlternativeLocality.HostileFixture
-namespace AlternativeLocality.HostileFixture
 #print axioms hostile_left_not_fresh
-end AlternativeLocality.HostileFixture
-namespace AlternativeLocality.HostileFixture
 #print axioms safe_unread_change_replay
 end AlternativeLocality.HostileFixture
 namespace ArithmeticPickupEnergyGrowth
 #print axioms energy_bound_of_cross_bound
-end ArithmeticPickupEnergyGrowth
-namespace ArithmeticPickupEnergyGrowth
 #print axioms cross_poly_implies_energy_poly
-end ArithmeticPickupEnergyGrowth
-namespace ArithmeticPickupEnergyGrowth
 #print axioms energy_poly_implies_cross_poly
-end ArithmeticPickupEnergyGrowth
-namespace ArithmeticPickupEnergyGrowth
 #print axioms cross_poly_iff_energy_poly
-end ArithmeticPickupEnergyGrowth
-namespace ArithmeticPickupEnergyGrowth
 #print axioms whole_pickup_poly_implies_energy_poly
 end ArithmeticPickupEnergyGrowth
 namespace ArithmeticPickupLaplaceAtom
 #print axioms weighted_kernel_identity
-end ArithmeticPickupLaplaceAtom
-namespace ArithmeticPickupLaplaceAtom
 #print axioms laplace_response_indicator
-end ArithmeticPickupLaplaceAtom
-namespace ArithmeticPickupLaplaceAtom
 #print axioms ungated_laplace_response_integrable
-end ArithmeticPickupLaplaceAtom
-namespace ArithmeticPickupLaplaceAtom
 #print axioms laplace_response_integrable
-end ArithmeticPickupLaplaceAtom
-namespace ArithmeticPickupLaplaceAtom
 #print axioms laplace_response_integral
-end ArithmeticPickupLaplaceAtom
-namespace ArithmeticPickupLaplaceAtom
 #print axioms atom_inverse_half_eq_exp
-end ArithmeticPickupLaplaceAtom
-namespace ArithmeticPickupLaplaceAtom
 #print axioms laplace_response_integral_cpow
 end ArithmeticPickupLaplaceAtom
 namespace ArithmeticPickupLaplaceSum
 #print axioms finite_laplace_signal_expansion
-end ArithmeticPickupLaplaceSum
-namespace ArithmeticPickupLaplaceSum
 #print axioms finite_laplace_signal_integrable
-end ArithmeticPickupLaplaceSum
-namespace ArithmeticPickupLaplaceSum
 #print axioms finite_laplace_signal_integral
-end ArithmeticPickupLaplaceSum
-namespace ArithmeticPickupLaplaceSum
 #print axioms finite_inventory_signal_eq_pickup
-end ArithmeticPickupLaplaceSum
-namespace ArithmeticPickupLaplaceSum
 #print axioms finite_inventory_laplace_signal_eq_pickup
-end ArithmeticPickupLaplaceSum
-namespace ArithmeticPickupLaplaceSum
 #print axioms inventory_laplace_signal_integral
 end ArithmeticPickupLaplaceSum
 namespace ArithmeticPickupLaplaceGrowth
 #print axioms polynomial_exponential_integrable
-end ArithmeticPickupLaplaceGrowth
-namespace ArithmeticPickupLaplaceGrowth
 #print axioms norm_pickup_laplace_integrand
-end ArithmeticPickupLaplaceGrowth
-namespace ArithmeticPickupLaplaceGrowth
 #print axioms pickup_laplace_integrable_of_bound
-end ArithmeticPickupLaplaceGrowth
-namespace ArithmeticPickupLaplaceGrowth
 #print axioms whole_pickup_poly_laplace_integrable
-end ArithmeticPickupLaplaceGrowth
-namespace ArithmeticPickupLaplaceGrowth
 #print axioms pickup_laplace_hasDerivAt_of_bound
-end ArithmeticPickupLaplaceGrowth
-namespace ArithmeticPickupLaplaceGrowth
 #print axioms whole_pickup_poly_laplace_holomorphic
 end ArithmeticPickupLaplaceGrowth
 namespace ReplayEvidence.ReplayCertificate
 #print axioms current_target
-end ReplayEvidence.ReplayCertificate
-namespace ReplayEvidence.ReplayCertificate
 #print axioms accepted_iff_fresh
-end ReplayEvidence.ReplayCertificate
-namespace ReplayEvidence.ReplayCertificate
 #print axioms recorded_accepted
-end ReplayEvidence.ReplayCertificate
-namespace ReplayEvidence.ReplayCertificate
 #print axioms stale_read_rejects
-end ReplayEvidence.ReplayCertificate
-namespace ReplayEvidence.ReplayCertificate
 #print axioms to_terminal
 end ReplayEvidence.ReplayCertificate
 namespace ReplayEvidence
 #print axioms ofGlobal_recorded
-end ReplayEvidence
-namespace ReplayEvidence
 #print axioms ofGlobal_reads
-end ReplayEvidence
-namespace ReplayEvidence
 #print axioms ofGrounded_recorded
-end ReplayEvidence
-namespace ReplayEvidence
 #print axioms ofGrounded_reads
 end ReplayEvidence
 namespace ReplayEvidence.HostileFixture
 #print axioms replayQ_reads
-end ReplayEvidence.HostileFixture
-namespace ReplayEvidence.HostileFixture
 #print axioms replayQ_accepted
-end ReplayEvidence.HostileFixture
-namespace ReplayEvidence.HostileFixture
 #print axioms replayQ_has_no_global_certificate
 end ReplayEvidence.HostileFixture
 namespace ReplayAdmissionModel
 #print axioms supplied_replay_accepted
-end ReplayAdmissionModel
-namespace ReplayAdmissionModel
 #print axioms admitted_replay_target
-end ReplayAdmissionModel
-namespace ReplayAdmissionModel
 #print axioms replay_safe_of_revision
-end ReplayAdmissionModel
-namespace ReplayAdmissionModel
 #print axioms replay_admission_preserves_safe
-end ReplayAdmissionModel
-namespace ReplayAdmissionModel
 #print axioms replay_verified_current_target
-end ReplayAdmissionModel
-namespace ReplayAdmissionModel
 #print axioms replay_verified_to_terminal
-end ReplayAdmissionModel
-namespace ReplayAdmissionModel
 #print axioms replay_admission_histories
-end ReplayAdmissionModel
-namespace ReplayAdmissionModel
 #print axioms replay_admission_archive_prefix
-end ReplayAdmissionModel
-namespace ReplayAdmissionModel
 #print axioms replay_admission_source_issued_preserved
-end ReplayAdmissionModel
-namespace ReplayAdmissionModel
 #print axioms replay_admission_pending_accounted
-end ReplayAdmissionModel
-namespace ReplayAdmissionModel
 #print axioms false_target_blocks_replay_admission
-end ReplayAdmissionModel
-namespace ReplayAdmissionModel
 #print axioms stale_supplied_record_blocks_admission
-end ReplayAdmissionModel
-namespace ReplayAdmissionModel
 #print axioms original_archive_same_footprint_blocker
 end ReplayAdmissionModel
 namespace RestartBudgetBoundary
 #print axioms Session
-end RestartBudgetBoundary
-namespace RestartBudgetBoundary
 #print axioms State
-end RestartBudgetBoundary
-namespace RestartBudgetBoundary
 #print axioms roundProposal
-end RestartBudgetBoundary
-namespace RestartBudgetBoundary
 #print axioms nextConfig
-end RestartBudgetBoundary
-namespace RestartBudgetBoundary
 #print axioms sessionRun
-end RestartBudgetBoundary
-namespace RestartBudgetBoundary
 #print axioms restartedSession
-end RestartBudgetBoundary
-namespace RestartBudgetBoundary
 #print axioms next_round_exact
-end RestartBudgetBoundary
-namespace RestartBudgetBoundary
 #print axioms session_history_exact
-end RestartBudgetBoundary
-namespace RestartBudgetBoundary
 #print axioms restarted_session_history_exact
-end RestartBudgetBoundary
-namespace RestartBudgetBoundary
 #print axioms restarted_session_budget_exact
-end RestartBudgetBoundary
-namespace RestartBudgetBoundary
 #print axioms restarted_session_safe
-end RestartBudgetBoundary
-namespace RestartBudgetBoundary
 #print axioms round_proposal_guard
-end RestartBudgetBoundary
-namespace RestartBudgetBoundary
 #print axioms session_run_safe
-end RestartBudgetBoundary
-namespace RestartBudgetBoundary
 #print axioms each_restarted_round_guarded
-end RestartBudgetBoundary
-namespace RestartBudgetBoundary
 #print axioms completed_round_budget_exact
-end RestartBudgetBoundary
-namespace RestartBudgetBoundary
 #print axioms session_run_lift_exact
-end RestartBudgetBoundary
-namespace RestartBudgetBoundary
 #print axioms totalRoundCost
-end RestartBudgetBoundary
-namespace RestartBudgetBoundary
 #print axioms total_round_cost_exact
-end RestartBudgetBoundary
-namespace RestartBudgetBoundary
 #print axioms arbitrarily_many_safe_positive_cost_rounds
-end RestartBudgetBoundary
-namespace RestartBudgetBoundary
 #print axioms completed_rounds_are_not_guarded_steps
-end RestartBudgetBoundary
-namespace RestartBudgetBoundary
 #print axioms immutable_session_termination_still_holds
 end RestartBudgetBoundary
 namespace ReplayCorrection
 #print axioms replay_correction_preserves_safe
-end ReplayCorrection
-namespace ReplayCorrection
 #print axioms replay_correction_verified_iff
-end ReplayCorrection
-namespace ReplayCorrection
 #print axioms replay_affected_verified_reopened
-end ReplayCorrection
-namespace ReplayCorrection
 #print axioms replay_corrected_current_target
-end ReplayCorrection
-namespace ReplayCorrection
 #print axioms replay_correction_histories
-end ReplayCorrection
-namespace ReplayCorrection
 #print axioms replay_correction_records_append
-end ReplayCorrection
-namespace ReplayCorrection
 #print axioms replay_correction_same_snapshot_status
-end ReplayCorrection
-namespace ReplayCorrection
 #print axioms replay_correctMany_nil
-end ReplayCorrection
-namespace ReplayCorrection
 #print axioms replay_correctMany_cons
-end ReplayCorrection
-namespace ReplayCorrection
 #print axioms replay_correctMany_base
-end ReplayCorrection
-namespace ReplayCorrection
 #print axioms replay_correctMany_safe
-end ReplayCorrection
-namespace ReplayCorrection
 #print axioms replay_correctMany_replay_archive_preserved
-end ReplayCorrection
-namespace ReplayCorrection
 #print axioms replay_correctMany_histories
-end ReplayCorrection
-namespace ReplayCorrection
 #print axioms replay_correctMany_correction_suffix
-end ReplayCorrection
-namespace ReplayCorrection
 #print axioms replay_correctMany_correction_prefix
-end ReplayCorrection
-namespace ReplayCorrection
 #print axioms replay_correctMany_correction_length
-end ReplayCorrection
-namespace ReplayCorrection
 #print axioms replay_correctMany_status
-end ReplayCorrection
-namespace ReplayCorrection
 #print axioms replay_correctMany_current_target
-end ReplayCorrection
-namespace ReplayCorrection
 #print axioms replay_correctMany_last_snapshot
 end ReplayCorrection
 namespace ReplayRestart
 #print axioms replay_fresh_controller_safe
-end ReplayRestart
-namespace ReplayRestart
 #print axioms ReplaySession
-end ReplayRestart
-namespace ReplayRestart
 #print axioms startReplaySession
-end ReplayRestart
-namespace ReplayRestart
 #print axioms ReplaySessionSafe
-end ReplayRestart
-namespace ReplayRestart
 #print axioms start_replay_session_safe
-end ReplayRestart
-namespace ReplayRestart
 #print axioms start_replay_session_history_preserved
-end ReplayRestart
-namespace ReplayRestart
 #print axioms start_replay_session_active_exact
 end ReplayRestart
 namespace ReplayRestart.ReplaySession
@@ -1019,807 +670,307 @@ namespace ReplayRestart.ReplaySession
 end ReplayRestart.ReplaySession
 namespace ReplayRestart
 #print axioms admitted_replay_session_advance_safe
-end ReplayRestart
-namespace ReplayRestart
 #print axioms replay_session_advance_history_preserved
-end ReplayRestart
-namespace ReplayRestart
 #print axioms replay_session_advance_histories
-end ReplayRestart
-namespace ReplayRestart
 #print axioms replay_session_advance_source_fixed
-end ReplayRestart
-namespace ReplayRestart
 #print axioms replay_session_advance_current_receipts
-end ReplayRestart
-namespace ReplayRestart
 #print axioms admitted_replay_session_receipts_current
-end ReplayRestart
-namespace ReplayRestart
 #print axioms replay_stale_receipt_rejects_guard
 end ReplayRestart
 namespace ReplayWorkflowModel
 #print axioms ReplayWorkflow
-end ReplayWorkflowModel
-namespace ReplayWorkflowModel
 #print axioms replay_workflow_safe
-end ReplayWorkflowModel
-namespace ReplayWorkflowModel
 #print axioms replay_workflow_issued_preserved
-end ReplayWorkflowModel
-namespace ReplayWorkflowModel
 #print axioms replay_workflow_global_archive_preserved
-end ReplayWorkflowModel
-namespace ReplayWorkflowModel
 #print axioms replay_workflow_archive_prefix
-end ReplayWorkflowModel
-namespace ReplayWorkflowModel
 #print axioms replay_workflow_receipts_preserved
-end ReplayWorkflowModel
-namespace ReplayWorkflowModel
 #print axioms replay_workflow_correction_prefix
-end ReplayWorkflowModel
-namespace ReplayWorkflowModel
 #print axioms replay_workflow_obligation_retained
-end ReplayWorkflowModel
-namespace ReplayWorkflowModel
 #print axioms replay_workflow_prior_status_accounted
-end ReplayWorkflowModel
-namespace ReplayWorkflowModel
 #print axioms replay_workflow_verified_target
-end ReplayWorkflowModel
-namespace ReplayWorkflowModel
 #print axioms replay_workflow_verified_to_terminal
 end ReplayWorkflowModel
 namespace ReplayEvidence
 #print axioms ofGlobal
-end ReplayEvidence
-namespace ReplayEvidence
 #print axioms ofGrounded
 end ReplayEvidence
 namespace ArithmeticPickupLaplaceInfinite
 #print axioms response_nonnegative
-end ArithmeticPickupLaplaceInfinite
-namespace ArithmeticPickupLaplaceInfinite
 #print axioms response_upper
-end ArithmeticPickupLaplaceInfinite
-namespace ArithmeticPickupLaplaceInfinite
 #print axioms moebius_laplace_term_zero
-end ArithmeticPickupLaplaceInfinite
-namespace ArithmeticPickupLaplaceInfinite
 #print axioms moebius_laplace_term_integrable
-end ArithmeticPickupLaplaceInfinite
-namespace ArithmeticPickupLaplaceInfinite
 #print axioms norm_moebius_laplace_term_le
-end ArithmeticPickupLaplaceInfinite
-namespace ArithmeticPickupLaplaceInfinite
 #print axioms atom_majorant_integrable
-end ArithmeticPickupLaplaceInfinite
-namespace ArithmeticPickupLaplaceInfinite
 #print axioms atom_majorant_integral
-end ArithmeticPickupLaplaceInfinite
-namespace ArithmeticPickupLaplaceInfinite
 #print axioms moebius_laplace_hasSum_pickup
-end ArithmeticPickupLaplaceInfinite
-namespace ArithmeticPickupLaplaceInfinite
 #print axioms integrated_norm_moebius_laplace_term_le
-end ArithmeticPickupLaplaceInfinite
-namespace ArithmeticPickupLaplaceInfinite
 #print axioms summable_integrated_norm_moebius_laplace_term
-end ArithmeticPickupLaplaceInfinite
-namespace ArithmeticPickupLaplaceInfinite
 #print axioms original_pickup_laplace_integrable
-end ArithmeticPickupLaplaceInfinite
-namespace ArithmeticPickupLaplaceInfinite
 #print axioms original_pickup_laplace_integral_eq_tsum
-end ArithmeticPickupLaplaceInfinite
-namespace ArithmeticPickupLaplaceInfinite
 #print axioms moebius_laplace_term_integral
-end ArithmeticPickupLaplaceInfinite
-namespace ArithmeticPickupLaplaceInfinite
 #print axioms original_pickup_laplace_integral_eq_LSeries
-end ArithmeticPickupLaplaceInfinite
-namespace ArithmeticPickupLaplaceInfinite
 #print axioms native_moebius_complex_coefficient
-end ArithmeticPickupLaplaceInfinite
-namespace ArithmeticPickupLaplaceInfinite
 #print axioms native_moebius_series_zeta_identity
-end ArithmeticPickupLaplaceInfinite
-namespace ArithmeticPickupLaplaceInfinite
 #print axioms original_pickup_laplace_zeta_identity
 end ArithmeticPickupLaplaceInfinite
 namespace ZetaPoleRegularization
 #print axioms raw_product_at_one
-end ZetaPoleRegularization
-namespace ZetaPoleRegularization
 #print axioms regularized_zeta_at_one
-end ZetaPoleRegularization
-namespace ZetaPoleRegularization
 #print axioms regularized_zeta_of_ne_one
-end ZetaPoleRegularization
-namespace ZetaPoleRegularization
 #print axioms raw_product_residue_one
-end ZetaPoleRegularization
-namespace ZetaPoleRegularization
 #print axioms raw_product_not_continuousAt_one
-end ZetaPoleRegularization
-namespace ZetaPoleRegularization
 #print axioms regularized_zeta_continuousAt_one
-end ZetaPoleRegularization
-namespace ZetaPoleRegularization
 #print axioms raw_product_differentiableAt_of_ne_one
-end ZetaPoleRegularization
-namespace ZetaPoleRegularization
 #print axioms regularized_zeta_differentiableAt_of_ne_one
-end ZetaPoleRegularization
-namespace ZetaPoleRegularization
 #print axioms regularized_zeta_analyticAt_one
-end ZetaPoleRegularization
-namespace ZetaPoleRegularization
 #print axioms regularized_zeta_differentiable
-end ZetaPoleRegularization
-namespace ZetaPoleRegularization
 #print axioms regularized_zeta_analyticOnNhd
-end ZetaPoleRegularization
-namespace ZetaPoleRegularization
 #print axioms regularized_zeta_analyticAt
-end ZetaPoleRegularization
-namespace ZetaPoleRegularization
 #print axioms right_half_plane_isOpen
-end ZetaPoleRegularization
-namespace ZetaPoleRegularization
 #print axioms right_half_plane_isPreconnected
-end ZetaPoleRegularization
-namespace ZetaPoleRegularization
 #print axioms regularized_product_analyticOnNhd
-end ZetaPoleRegularization
-namespace ZetaPoleRegularization
 #print axioms regularized_product_initial
-end ZetaPoleRegularization
-namespace ZetaPoleRegularization
 #print axioms regularized_product_identity
-end ZetaPoleRegularization
-namespace ZetaPoleRegularization
 #print axioms zeta_ne_zero_right_of_holomorphic_reciprocal
 end ZetaPoleRegularization
 namespace ArithmeticPickupLaplaceEnergy
 #print axioms interval_energy_eq_energy
-end ArithmeticPickupLaplaceEnergy
-namespace ArithmeticPickupLaplaceEnergy
 #print axioms pickup_square_continuous
-end ArithmeticPickupLaplaceEnergy
-namespace ArithmeticPickupLaplaceEnergy
 #print axioms interval_energy_hasDerivAt
-end ArithmeticPickupLaplaceEnergy
-namespace ArithmeticPickupLaplaceEnergy
 #print axioms interval_energy_continuous
-end ArithmeticPickupLaplaceEnergy
-namespace ArithmeticPickupLaplaceEnergy
 #print axioms interval_energy_nonnegative
-end ArithmeticPickupLaplaceEnergy
-namespace ArithmeticPickupLaplaceEnergy
 #print axioms damped_energy_continuous
-end ArithmeticPickupLaplaceEnergy
-namespace ArithmeticPickupLaplaceEnergy
 #print axioms damped_energy_nonnegative
-end ArithmeticPickupLaplaceEnergy
-namespace ArithmeticPickupLaplaceEnergy
 #print axioms damped_energy_bound
-end ArithmeticPickupLaplaceEnergy
-namespace ArithmeticPickupLaplaceEnergy
 #print axioms damped_energy_integrable_of_bound
-end ArithmeticPickupLaplaceEnergy
-namespace ArithmeticPickupLaplaceEnergy
 #print axioms polynomial_exponential_tendsto_zero
-end ArithmeticPickupLaplaceEnergy
-namespace ArithmeticPickupLaplaceEnergy
 #print axioms damped_energy_tendsto_zero_of_bound
-end ArithmeticPickupLaplaceEnergy
-namespace ArithmeticPickupLaplaceEnergy
 #print axioms weighted_squared_pickup_nonnegative
-end ArithmeticPickupLaplaceEnergy
-namespace ArithmeticPickupLaplaceEnergy
 #print axioms weighted_energy_primitive_hasDerivAt
-end ArithmeticPickupLaplaceEnergy
-namespace ArithmeticPickupLaplaceEnergy
 #print axioms weighted_energy_primitive_tendsto_of_bound
-end ArithmeticPickupLaplaceEnergy
-namespace ArithmeticPickupLaplaceEnergy
 #print axioms energy_poly_weighted_squared_pickup_integrable
-end ArithmeticPickupLaplaceEnergy
-namespace ArithmeticPickupLaplaceEnergy
 #print axioms weighted_absolute_pickup_continuous
-end ArithmeticPickupLaplaceEnergy
-namespace ArithmeticPickupLaplaceEnergy
 #print axioms weighted_absolute_pickup_nonnegative
-end ArithmeticPickupLaplaceEnergy
-namespace ArithmeticPickupLaplaceEnergy
 #print axioms weighted_absolute_pickup_bound
-end ArithmeticPickupLaplaceEnergy
-namespace ArithmeticPickupLaplaceEnergy
 #print axioms energy_poly_weighted_absolute_pickup_integrable
-end ArithmeticPickupLaplaceEnergy
-namespace ArithmeticPickupLaplaceEnergy
 #print axioms energy_poly_laplace_integrable
-end ArithmeticPickupLaplaceEnergy
-namespace ArithmeticPickupLaplaceEnergy
 #print axioms time_weighted_absolute_pickup_continuous
-end ArithmeticPickupLaplaceEnergy
-namespace ArithmeticPickupLaplaceEnergy
 #print axioms time_weighted_absolute_pickup_nonnegative
-end ArithmeticPickupLaplaceEnergy
-namespace ArithmeticPickupLaplaceEnergy
 #print axioms time_weighted_absolute_pickup_bound
-end ArithmeticPickupLaplaceEnergy
-namespace ArithmeticPickupLaplaceEnergy
 #print axioms energy_poly_time_weighted_absolute_pickup_integrable
-end ArithmeticPickupLaplaceEnergy
-namespace ArithmeticPickupLaplaceEnergy
 #print axioms pickup_laplace_derivative_energy_bound
-end ArithmeticPickupLaplaceEnergy
-namespace ArithmeticPickupLaplaceEnergy
 #print axioms energy_poly_laplace_hasDerivAt
-end ArithmeticPickupLaplaceEnergy
-namespace ArithmeticPickupLaplaceEnergy
 #print axioms energy_poly_laplace_holomorphic
 end ArithmeticPickupLaplaceEnergy
 namespace ArithmeticPickupRHConsumer
 #print axioms original_pickup_initial_identity
-end ArithmeticPickupRHConsumer
-namespace ArithmeticPickupRHConsumer
 #print axioms original_laplace_holomorphic_excludes_right_zeros
-end ArithmeticPickupRHConsumer
-namespace ArithmeticPickupRHConsumer
 #print axioms original_laplace_holomorphic_implies_rh
-end ArithmeticPickupRHConsumer
-namespace ArithmeticPickupRHConsumer
 #print axioms whole_pickup_poly_excludes_right_zeros
-end ArithmeticPickupRHConsumer
-namespace ArithmeticPickupRHConsumer
 #print axioms whole_pickup_poly_implies_rh
-end ArithmeticPickupRHConsumer
-namespace ArithmeticPickupRHConsumer
 #print axioms energy_poly_implies_rh
-end ArithmeticPickupRHConsumer
-namespace ArithmeticPickupRHConsumer
 #print axioms cross_poly_implies_rh
 end ArithmeticPickupRHConsumer
 namespace ArithmeticPickupFilterConsumer.AnalyticPickupFilter
 #print axioms reconstructed_holomorphic
-end ArithmeticPickupFilterConsumer.AnalyticPickupFilter
-namespace ArithmeticPickupFilterConsumer.AnalyticPickupFilter
 #print axioms reconstructed_original
-end ArithmeticPickupFilterConsumer.AnalyticPickupFilter
-namespace ArithmeticPickupFilterConsumer.AnalyticPickupFilter
 #print axioms initial_identity
-end ArithmeticPickupFilterConsumer.AnalyticPickupFilter
-namespace ArithmeticPickupFilterConsumer.AnalyticPickupFilter
 #print axioms excludes_right_zeros
-end ArithmeticPickupFilterConsumer.AnalyticPickupFilter
-namespace ArithmeticPickupFilterConsumer.AnalyticPickupFilter
 #print axioms implies_rh
 end ArithmeticPickupFilterConsumer.AnalyticPickupFilter
 namespace ArithmeticPickupFilterConsumer.FrequencyAxisFixture
 #print axioms imaginary_axis_norm_lower
-end ArithmeticPickupFilterConsumer.FrequencyAxisFixture
-namespace ArithmeticPickupFilterConsumer.FrequencyAxisFixture
 #print axioms imaginary_axis_nonzero
-end ArithmeticPickupFilterConsumer.FrequencyAxisFixture
-namespace ArithmeticPickupFilterConsumer.FrequencyAxisFixture
 #print axioms imaginary_axis_inverse_gain
-end ArithmeticPickupFilterConsumer.FrequencyAxisFixture
-namespace ArithmeticPickupFilterConsumer.FrequencyAxisFixture
 #print axioms positive_half_plane_zero
-end ArithmeticPickupFilterConsumer.FrequencyAxisFixture
-namespace ArithmeticPickupFilterConsumer.FrequencyAxisFixture
 #print axioms axis_inverse_does_not_supply_complex_nonvanishing
 end ArithmeticPickupFilterConsumer.FrequencyAxisFixture
 namespace GroundedReplayFixture
 #print axioms schema
-end GroundedReplayFixture
-namespace GroundedReplayFixture
 #print axioms policy
-end GroundedReplayFixture
-namespace GroundedReplayFixture
 #print axioms replayP
-end GroundedReplayFixture
-namespace GroundedReplayFixture
 #print axioms replayQ
-end GroundedReplayFixture
-namespace GroundedReplayFixture
 #print axioms replay_P_reads
-end GroundedReplayFixture
-namespace GroundedReplayFixture
 #print axioms replay_Q_reads
-end GroundedReplayFixture
-namespace GroundedReplayFixture
 #print axioms recordP
-end GroundedReplayFixture
-namespace GroundedReplayFixture
 #print axioms recordQ
-end GroundedReplayFixture
-namespace GroundedReplayFixture
 #print axioms batchRecords
-end GroundedReplayFixture
-namespace GroundedReplayFixture
 #print axioms baseLedger
-end GroundedReplayFixture
-namespace GroundedReplayFixture
 #print axioms base_revision_safe
-end GroundedReplayFixture
-namespace GroundedReplayFixture
 #print axioms initialLedger
-end GroundedReplayFixture
-namespace GroundedReplayFixture
 #print axioms initial_replay_safe
-end GroundedReplayFixture
-namespace GroundedReplayFixture
 #print axioms batchAdmission
-end GroundedReplayFixture
-namespace GroundedReplayFixture
 #print axioms admittedLedger
-end GroundedReplayFixture
-namespace GroundedReplayFixture
 #print axioms admitted_replay_safe
-end GroundedReplayFixture
-namespace GroundedReplayFixture
 #print axioms admitted_status
-end GroundedReplayFixture
-namespace GroundedReplayFixture
 #print axioms admitted_current_target
-end GroundedReplayFixture
-namespace GroundedReplayFixture
 #print axioms admitted_archive_exact
-end GroundedReplayFixture
-namespace GroundedReplayFixture
 #print axioms admitted_base_not_revision_safe
-end GroundedReplayFixture
-namespace GroundedReplayFixture
 #print axioms same_footprint_Q_global_blocked
-end GroundedReplayFixture
-namespace GroundedReplayFixture
 #print axioms config
-end GroundedReplayFixture
-namespace GroundedReplayFixture
 #print axioms session
-end GroundedReplayFixture
-namespace GroundedReplayFixture
 #print axioms restarted_safe
-end GroundedReplayFixture
-namespace GroundedReplayFixture
 #print axioms restarted_history_exact
-end GroundedReplayFixture
-namespace GroundedReplayFixture
 #print axioms restarted_has_no_effects
-end GroundedReplayFixture
-namespace GroundedReplayFixture
 #print axioms unreadChange
-end GroundedReplayFixture
-namespace GroundedReplayFixture
 #print axioms readChange
-end GroundedReplayFixture
-namespace GroundedReplayFixture
 #print axioms unread_change_tokens
-end GroundedReplayFixture
-namespace GroundedReplayFixture
 #print axioms unread_change_affected_empty
-end GroundedReplayFixture
-namespace GroundedReplayFixture
 #print axioms read_change_affected_all
-end GroundedReplayFixture
-namespace GroundedReplayFixture
 #print axioms unreadLedger
-end GroundedReplayFixture
-namespace GroundedReplayFixture
 #print axioms changedLedger
-end GroundedReplayFixture
-namespace GroundedReplayFixture
 #print axioms unread_corrected_safe
-end GroundedReplayFixture
-namespace GroundedReplayFixture
 #print axioms changed_corrected_safe
-end GroundedReplayFixture
-namespace GroundedReplayFixture
 #print axioms unread_verified_all
-end GroundedReplayFixture
-namespace GroundedReplayFixture
 #print axioms unread_current_targets
-end GroundedReplayFixture
-namespace GroundedReplayFixture
 #print axioms changed_status
-end GroundedReplayFixture
-namespace GroundedReplayFixture
 #print axioms Q_true_but_reopened
-end GroundedReplayFixture
-namespace GroundedReplayFixture
 #print axioms correction_archives_literal
 end GroundedReplayFixture
 #print axioms GRWTSK.RiemannHypothesis.NontrivialZetaZero.reflect
 namespace SourceResidual
 #print axioms clipped_zero_hasDerivAt
-end SourceResidual
-namespace SourceResidual
 #print axioms clipped_profile_hasDerivAt
-end SourceResidual
-namespace SourceResidual
 #print axioms bump_polynomial_hasDerivAt
-end SourceResidual
-namespace SourceResidual
 #print axioms bump_first_polynomial_hasDerivAt
-end SourceResidual
-namespace SourceResidual
 #print axioms bump_second_polynomial_hasDerivAt
-end SourceResidual
-namespace SourceResidual
 #print axioms bump_hasDerivAt
-end SourceResidual
-namespace SourceResidual
 #print axioms bump_first_hasDerivAt
-end SourceResidual
-namespace SourceResidual
 #print axioms bump_second_hasDerivAt
-end SourceResidual
-namespace SourceResidual
 #print axioms bump_deriv
-end SourceResidual
-namespace SourceResidual
 #print axioms bump_second_deriv
-end SourceResidual
-namespace SourceResidual
 #print axioms bump_continuous
-end SourceResidual
-namespace SourceResidual
 #print axioms bump_second_continuous
-end SourceResidual
-namespace SourceResidual
 #print axioms source_hasDerivAt
-end SourceResidual
-namespace SourceResidual
 #print axioms sourceFirst_hasDerivAt
-end SourceResidual
-namespace SourceResidual
 #print axioms source_deriv
-end SourceResidual
-namespace SourceResidual
 #print axioms source_second_deriv
-end SourceResidual
-namespace SourceResidual
 #print axioms sourceResidual_eq
-end SourceResidual
-namespace SourceResidual
 #print axioms sourceResidual_continuous
-end SourceResidual
-namespace SourceResidual
 #print axioms scaled_mem_iff
-end SourceResidual
-namespace SourceResidual
 #print axioms sourceResidual_eq_ite
-end SourceResidual
-namespace SourceResidual
 #print axioms source_first_zero_outside
-end SourceResidual
-namespace SourceResidual
 #print axioms source_second_zero_outside
-end SourceResidual
-namespace SourceResidual
 #print axioms source_first_endpoints_zero
-end SourceResidual
-namespace SourceResidual
 #print axioms source_second_endpoints_zero
-end SourceResidual
-namespace SourceResidual
 #print axioms sourceResidual_zero_eq
-end SourceResidual
-namespace SourceResidual
 #print axioms sourceResidual_endpoints_zero
-end SourceResidual
-namespace SourceResidual
 #print axioms sourceResidual_zero_outside
-end SourceResidual
-namespace SourceResidual
 #print axioms sourceResidual_hasCompactSupport
-end SourceResidual
-namespace SourceResidual
 #print axioms sourceResidual_square_integrable
 end SourceResidual
 namespace SourceNormalization
 #print axioms source_normalization_nonneg
-end SourceNormalization
-namespace SourceNormalization
 #print axioms source_normalization_pos_of_analytic
-end SourceNormalization
-namespace SourceNormalization
 #print axioms residual_center_negative_of_formula
-end SourceNormalization
-namespace SourceNormalization
 #print axioms source_normalization_pos
-end SourceNormalization
-namespace SourceNormalization
 #print axioms source_normalization_pos_of_one_le
-end SourceNormalization
-namespace SourceNormalization
 #print axioms normalized_source_continuous
-end SourceNormalization
-namespace SourceNormalization
 #print axioms normalized_source_square
-end SourceNormalization
-namespace SourceNormalization
 #print axioms normalized_source_square_integral
-end SourceNormalization
-namespace SourceNormalization
 #print axioms normalized_source_square_integrable
-end SourceNormalization
-namespace SourceNormalization
 #print axioms correlation_center_eq_one
-end SourceNormalization
-namespace SourceNormalization
 #print axioms normalized_source_square_integrable_of_pos
-end SourceNormalization
-namespace SourceNormalization
 #print axioms normalized_source_square_integral_of_pos
-end SourceNormalization
-namespace SourceNormalization
 #print axioms correlation_center_eq_one_of_pos
-end SourceNormalization
-namespace SourceNormalization
 #print axioms correlation_center_eq_one_of_one_le
-end SourceNormalization
-namespace SourceNormalization
 #print axioms normalized_source_eq_zero_of_normalization_zero
-end SourceNormalization
-namespace SourceNormalization
 #print axioms correlation_eq_zero_of_normalization_zero
-end SourceNormalization
-namespace SourceNormalization
 #print axioms source_residual_zero_scale
-end SourceNormalization
-namespace SourceNormalization
 #print axioms source_normalization_zero_scale
-end SourceNormalization
-namespace SourceNormalization
 #print axioms correlation_zero_scale
-end SourceNormalization
-namespace SourceNormalization
 #print axioms correlation_center_exact
 end SourceNormalization
 namespace SourceGram
 #print axioms normalized_source_measurable
-end SourceGram
-namespace SourceGram
 #print axioms source_gram_eq_integral
-end SourceGram
-namespace SourceGram
 #print axioms source_gram_symm
-end SourceGram
-namespace SourceGram
 #print axioms source_vector_memLp
-end SourceGram
-namespace SourceGram
 #print axioms source_vectors_product_integrable
-end SourceGram
-namespace SourceGram
 #print axioms source_gram_diagonal
-end SourceGram
-namespace SourceGram
 #print axioms source_gram_diagonal_eq_one
-end SourceGram
-namespace SourceGram
 #print axioms finite_weighted_source_square
-end SourceGram
-namespace SourceGram
 #print axioms finite_source_energy_eq_gram
-end SourceGram
-namespace SourceGram
 #print axioms finite_weighted_source_square_integrable
-end SourceGram
-namespace SourceGram
 #print axioms finite_source_gram_nonnegative
-end SourceGram
-namespace SourceGram
 #print axioms source_energy_eq_gram
-end SourceGram
-namespace SourceGram
 #print axioms source_energy_nonnegative
-end SourceGram
-namespace SourceGram
 #print axioms source_gram_matrix_positive_semidefinite
 end SourceGram
 namespace SourceClosedNormalization
 #print axioms monomial_primitive_hasDerivAt
-end SourceClosedNormalization
-namespace SourceClosedNormalization
 #print axioms square_primitive_hasDerivAt
-end SourceClosedNormalization
-namespace SourceClosedNormalization
 #print axioms unscaled_square_integral
-end SourceClosedNormalization
-namespace SourceClosedNormalization
 #print axioms source_amplitude_square
-end SourceClosedNormalization
-namespace SourceClosedNormalization
 #print axioms source_normalization_eq_interval
-end SourceClosedNormalization
-namespace SourceClosedNormalization
 #print axioms source_normalization_eq_rational
-end SourceClosedNormalization
-namespace SourceClosedNormalization
 #print axioms source_eq_scaled_bump
-end SourceClosedNormalization
-namespace SourceClosedNormalization
 #print axioms dilation_test_eq_residual
-end SourceClosedNormalization
-namespace SourceClosedNormalization
 #print axioms normalized_test_eq_source
-end SourceClosedNormalization
-namespace SourceClosedNormalization
 #print axioms source_pairing_correlation_eq
 end SourceClosedNormalization
 namespace SourceRegularity
 #print axioms bump_third_continuous
-end SourceRegularity
-namespace SourceRegularity
 #print axioms sourceSecond_hasDerivAt
-end SourceRegularity
-namespace SourceRegularity
 #print axioms residual_hasDerivAt
-end SourceRegularity
-namespace SourceRegularity
 #print axioms residual_first_continuous
-end SourceRegularity
-namespace SourceRegularity
 #print axioms residual_contDiff_one
-end SourceRegularity
-namespace SourceRegularity
 #print axioms normalized_source_contDiff_one
-end SourceRegularity
-namespace SourceRegularity
 #print axioms normalized_source_zero_outside
-end SourceRegularity
-namespace SourceRegularity
 #print axioms normalized_source_hasCompactSupport
-end SourceRegularity
-namespace SourceRegularity
 #print axioms normalized_source_integrable
-end SourceRegularity
-namespace SourceRegularity
 #print axioms reflected_source_contDiff_one
-end SourceRegularity
-namespace SourceRegularity
 #print axioms reflected_source_hasCompactSupport
-end SourceRegularity
-namespace SourceRegularity
 #print axioms correlation_eq_convolution
-end SourceRegularity
-namespace SourceRegularity
 #print axioms correlation_contDiff_one
-end SourceRegularity
-namespace SourceRegularity
 #print axioms correlation_deriv_eq_convolution
-end SourceRegularity
-namespace SourceRegularity
 #print axioms correlation_deriv_contDiff_one
-end SourceRegularity
-namespace SourceRegularity
 #print axioms correlation_contDiff_two
-end SourceRegularity
-namespace SourceRegularity
 #print axioms reflected_source_deriv
-end SourceRegularity
-namespace SourceRegularity
 #print axioms correlation_second_deriv_eq_integral
-end SourceRegularity
-namespace SourceRegularity
 #print axioms polarity_kernel_continuous
-end SourceRegularity
-namespace SourceRegularity
 #print axioms correlation_zero_of_two_mul_lt
-end SourceRegularity
-namespace SourceRegularity
 #print axioms correlation_eventually_zero
-end SourceRegularity
-namespace SourceRegularity
 #print axioms correlation_derivatives_zero_of_two_mul_lt
-end SourceRegularity
-namespace SourceRegularity
 #print axioms polarity_kernel_zero_of_upper_tail
-end SourceRegularity
-namespace SourceRegularity
 #print axioms correlation_hasCompactSupport
-end SourceRegularity
-namespace SourceRegularity
 #print axioms correlation_deriv_integrable
-end SourceRegularity
-namespace SourceRegularity
 #print axioms correlation_second_deriv_integrable
-end SourceRegularity
-namespace SourceRegularity
 #print axioms polarity_kernel_integrable
-end SourceRegularity
-namespace SourceRegularity
 #print axioms polarity_kernel_zero_of_empty_inventory
-end SourceRegularity
-namespace SourceRegularity
 #print axioms strict_sector_empty_of_small_scale
 end SourceRegularity
 namespace SourceNativeSeparation
 #print axioms native_touching_diagonal_zero
-end SourceNativeSeparation
-namespace SourceNativeSeparation
 #print axioms touching_atom_in_inventory
-end SourceNativeSeparation
-namespace SourceNativeSeparation
 #print axioms native_touching_ne_prescribed
-end SourceNativeSeparation
-namespace SourceNativeSeparation
 #print axioms positive_horizon_obstruction
-end SourceNativeSeparation
-namespace SourceNativeSeparation
 #print axioms prescribed_horizon_obstruction
 end SourceNativeSeparation
 namespace SourceSignedIntegrability
 #print axioms chebyshev_prime_power_nonneg
-end SourceSignedIntegrability
-namespace SourceSignedIntegrability
 #print axioms chebyshev_prime_power_monotone
-end SourceSignedIntegrability
-namespace SourceSignedIntegrability
 #print axioms error_profile_measurable
-end SourceSignedIntegrability
-namespace SourceSignedIntegrability
 #print axioms error_profile_bound
-end SourceSignedIntegrability
-namespace SourceSignedIntegrability
 #print axioms source_weight_continuous
-end SourceSignedIntegrability
-namespace SourceSignedIntegrability
 #print axioms signed_pairing_integrable
 end SourceSignedIntegrability
 namespace SourceDilation
 #print axioms source_continuous
-end SourceDilation
-namespace SourceDilation
 #print axioms source_first_continuous
-end SourceDilation
-namespace SourceDilation
 #print axioms source_second_continuous
-end SourceDilation
-namespace SourceDilation
 #print axioms source_hasCompactSupport
-end SourceDilation
-namespace SourceDilation
 #print axioms source_first_hasCompactSupport
-end SourceDilation
-namespace SourceDilation
 #print axioms source_second_hasCompactSupport
-end SourceDilation
-namespace SourceDilation
 #print axioms compact_product_integrable
-end SourceDilation
-namespace SourceDilation
 #print axioms actual_weak_second_derivative
-end SourceDilation
-namespace SourceDilation
 #print axioms exponential_hasDerivAt
-end SourceDilation
-namespace SourceDilation
 #print axioms second_derivative_exponential_integral
-end SourceDilation
-namespace SourceDilation
 #print axioms normalized_source_exponential_integrable
-end SourceDilation
-namespace SourceDilation
 #print axioms residual_exponential_integral_zero
-end SourceDilation
-namespace SourceDilation
 #print axioms normalized_source_exponential_integral_zero
-end SourceDilation
-namespace SourceDilation
 #print axioms positive_pole_integral_zero
-end SourceDilation
-namespace SourceDilation
 #print axioms negative_pole_integral_zero
-end SourceDilation
-namespace SourceDilation
 #print axioms actualDilationRealization
 end SourceDilation
 end GRWTSK.ProofHorizon.CorkscrewChamberCap
@@ -1844,9 +995,6 @@ namespace SourceAdmission
 end SourceAdmission
 end CorkscrewChamberCap
 end ProofHorizon
-end GRWTSK
-
-namespace GRWTSK
 namespace Analysis
 namespace DigammaSeries
 #check @gammaSeq_locally_uniform
@@ -1857,9 +1005,6 @@ namespace DigammaSeries
 #print axioms hasSum_difference
 end DigammaSeries
 end Analysis
-end GRWTSK
-
-namespace GRWTSK
 namespace Analysis
 namespace ReciprocalKernel
 #check @kernel_integral_quarter
@@ -1868,9 +1013,6 @@ namespace ReciprocalKernel
 #print axioms frequency_sum_bounds
 end ReciprocalKernel
 end Analysis
-end GRWTSK
-
-namespace GRWTSK
 namespace SpectralUnificationOfComputabilityAndAlgebraicSymmetry
 namespace BridgeFourier
 #check @actual_derivative_integrable
@@ -1883,27 +1025,18 @@ namespace BridgeFourier
 #print axioms actual_fourier_square_integrable
 end BridgeFourier
 end SpectralUnificationOfComputabilityAndAlgebraicSymmetry
-end GRWTSK
-
-namespace GRWTSK
 namespace SpectralUnificationOfComputabilityAndAlgebraicSymmetry
 namespace BridgeAdmissibility
 #check @actual_logarithmic_domain
 #print axioms actual_logarithmic_domain
 end BridgeAdmissibility
 end SpectralUnificationOfComputabilityAndAlgebraicSymmetry
-end GRWTSK
-
-namespace GRWTSK
 namespace SpectralUnificationOfComputabilityAndAlgebraicSymmetry
 namespace BridgeMultiplier
 #check @actual_archimedean_integrable_of_multiplier_estimate
 #print axioms actual_archimedean_integrable_of_multiplier_estimate
 end BridgeMultiplier
 end SpectralUnificationOfComputabilityAndAlgebraicSymmetry
-end GRWTSK
-
-namespace GRWTSK
 namespace SpectralUnificationOfComputabilityAndAlgebraicSymmetry
 namespace AdmissionSource
 #check @quarter_series
@@ -1916,45 +1049,30 @@ namespace AdmissionSource
 #print axioms normalization_admissibility
 end AdmissionSource
 end SpectralUnificationOfComputabilityAndAlgebraicSymmetry
-end GRWTSK
-
-namespace GRWTSK
 namespace SpectralUnificationOfComputabilityAndAlgebraicSymmetry
 namespace Realization
 #check @scaledBump_weak_second_derivative
 #print axioms scaledBump_weak_second_derivative
 end Realization
 end SpectralUnificationOfComputabilityAndAlgebraicSymmetry
-end GRWTSK
-
-namespace GRWTSK
 namespace SpectralUnificationOfComputabilityAndAlgebraicSymmetry
 namespace CorrelationRegularity
 #check @normalizedTest_contDiff
 #print axioms normalizedTest_contDiff
 end CorrelationRegularity
 end SpectralUnificationOfComputabilityAndAlgebraicSymmetry
-end GRWTSK
-
-namespace GRWTSK
 namespace SpectralUnificationOfComputabilityAndAlgebraicSymmetry
 namespace BridgeNormalization
 #check @normalized_square_integrable
 #print axioms normalized_square_integrable
 end BridgeNormalization
 end SpectralUnificationOfComputabilityAndAlgebraicSymmetry
-end GRWTSK
-
-namespace GRWTSK
 namespace SpectralUnificationOfComputabilityAndAlgebraicSymmetry
 namespace CorrelationAssembly
 #check @source_arithmetic_representation
 #print axioms source_arithmetic_representation
 end CorrelationAssembly
 end SpectralUnificationOfComputabilityAndAlgebraicSymmetry
-end GRWTSK
-
-namespace GRWTSK
 namespace ProofHorizon
 namespace CorkscrewChamberCap
 namespace SourceUniqueness
@@ -2007,9 +1125,6 @@ namespace GevreyProfile
 #print axioms profile_hasCompactSupport
 end GevreyProfile
 end RiemannHypothesis
-end GRWTSK
-
-namespace GRWTSK
 namespace RiemannHypothesis
 namespace GevreyNormalization
 #check @scaledProfile
@@ -2074,9 +1189,6 @@ namespace GevreyNormalization
 #print axioms tendsto_profile_normalization
 end GevreyNormalization
 end RiemannHypothesis
-end GRWTSK
-
-namespace GRWTSK
 namespace RiemannHypothesis
 namespace GevreyPolynomial
 #check @firstDerivative
@@ -2125,9 +1237,6 @@ namespace GevreyPolynomial
 #print axioms normalizedOperator_sourceBump_eq
 end GevreyPolynomial
 end RiemannHypothesis
-end GRWTSK
-
-namespace GRWTSK
 namespace RiemannHypothesis
 namespace GevreyDerivativeEnergy
 #check @integral_third_mul_first
@@ -2146,9 +1255,6 @@ namespace GevreyDerivativeEnergy
 #print axioms profile_normalizedOperator_deriv_square_integral
 end GevreyDerivativeEnergy
 end RiemannHypothesis
-end GRWTSK
-
-namespace GRWTSK
 namespace RiemannHypothesis
 namespace SourceDerivativeCoefficientBound
 #check @normPolynomial
@@ -2169,9 +1275,6 @@ namespace SourceDerivativeCoefficientBound
 #print axioms squaredCoefficient_lt_twenty_five
 end SourceDerivativeCoefficientBound
 end RiemannHypothesis
-end GRWTSK
-
-namespace GRWTSK
 namespace RiemannHypothesis
 namespace SourceDerivativeEnergy
 #check @thirdDerivative
@@ -2206,9 +1309,6 @@ namespace SourceDerivativeEnergy
 #print axioms actual_derivative_energy_lt_twenty_five
 end SourceDerivativeEnergy
 end RiemannHypothesis
-end GRWTSK
-
-namespace GRWTSK
 namespace RiemannHypothesis
 namespace BranchSecondDerivativeEnergy
 #check @unitFourth
@@ -2279,9 +1379,6 @@ namespace BranchSecondDerivativeEnergy
 #print axioms actual_first_second_energy_product_lt
 end BranchSecondDerivativeEnergy
 end RiemannHypothesis
-end GRWTSK
-
-namespace GRWTSK
 namespace RiemannHypothesis
 namespace SourceCorrelationEnergy
 #check @sourceCorrelation_hasDerivAt_integral
@@ -2298,9 +1395,6 @@ namespace SourceCorrelationEnergy
 #print axioms sourceCorrelation_deriv_abs_le_five_div
 end SourceCorrelationEnergy
 end RiemannHypothesis
-end GRWTSK
-
-namespace GRWTSK
 namespace RiemannHypothesis
 namespace SourceCorrelationCurvature
 #check @normalizedTest_deriv_integrable
@@ -2329,9 +1423,6 @@ namespace SourceCorrelationCurvature
 #print axioms sourceCorrelation_linear_taylor_bound
 end SourceCorrelationCurvature
 end RiemannHypothesis
-end GRWTSK
-
-namespace GRWTSK
 namespace RiemannHypothesis
 namespace BranchCorrelationHigher
 #check @actual_first_derivative_lipschitz
@@ -2378,9 +1469,6 @@ namespace BranchCorrelationHigher
 #print axioms secondRepresentative_integration_by_parts
 end BranchCorrelationHigher
 end RiemannHypothesis
-end GRWTSK
-
-namespace GRWTSK
 namespace ProofHorizon
 namespace CorkscrewChamberCap
 namespace SourceHigherRegularity

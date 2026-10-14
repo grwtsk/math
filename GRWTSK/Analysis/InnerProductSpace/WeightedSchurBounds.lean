@@ -1,4 +1,7 @@
-import Mathlib
+import Mathlib.Algebra.Order.Star.Real
+import Mathlib.Analysis.CStarAlgebra.Module.Constructions
+import Mathlib.Tactic.Linarith
+import Mathlib.Tactic.Ring
 
 /-!
 Finite weighted Gram closure for BGP–P04. The row hypothesis is an explicit

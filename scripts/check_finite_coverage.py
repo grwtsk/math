@@ -7,7 +7,7 @@ def check(rel,expected):
  if expected and not any(s in p.stdout+p.stderr for s in ['error:','error(lean.']):raise RuntimeError('hostile control failed without Lean diagnostic')
  out.append({'path':rel,'expected_success':expected==0,'actual_success':p.returncode==0})
  return p.stdout+p.stderr
-s=check('checks/FiniteCoverageAudit.lean',0)
+s=check('checks/Logic/FiniteCoverage/Audit.lean',0)
 if s.count('FINITE_COVERAGE_DECL::')!=5 or s.count('FINITE_COVERAGE_SYNTHETIC_REUSE::')!=4:raise RuntimeError('incomplete native audit')
 for name,expected in [('ExactDomainAndTail',0),('MissingCoverage',1),('MissingTail',1),('PromoteDomainToUniverse',1),('ReverseRayCounterexample',1),('ReverseEndpointCounterexample',1)]:check('checks/Logic/FiniteCoverage/Controls/'+name+'.lean',expected)
 (P/'.local').mkdir(exist_ok=True);(P/'.local/finitecoverage-verification.json').write_text(json.dumps({'status':'ALL_DECLARED_CHECKS_PASSED','source_theorems':4,'definitions':0,'logical_records':5,'original_canonical_reuse_roles':0,'synthetic_wrappers':4,'checks':out},indent=2)+'\n')

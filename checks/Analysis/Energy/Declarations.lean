@@ -1,4 +1,10 @@
-import GRWTSK.LinearAlgebra.AlmostMathieu GRWTSK.Analysis.LaplaceTransform.ExponentialThreshold GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm GRWTSK.NumberTheory.Zeta.Riemann.PolynomialEnergyCriterion GRWTSK.NumberTheory.Moebius.ComparisonEnergy GRWTSK.NumberTheory.Moebius.IntegerSampleGrowth GRWTSK.NumberTheory.Moebius.UnsignedEnergyBound
+import GRWTSK.LinearAlgebra.AlmostMathieu
+import GRWTSK.Analysis.LaplaceTransform.ExponentialThreshold
+import GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm
+import GRWTSK.NumberTheory.Zeta.Riemann.PolynomialEnergyCriterion
+import GRWTSK.NumberTheory.Moebius.ComparisonEnergy
+import GRWTSK.NumberTheory.Moebius.IntegerSampleGrowth
+import GRWTSK.NumberTheory.Moebius.UnsignedEnergyBound
 import Lean
 
 open Lean Elab Command
@@ -73,6 +79,7 @@ elab "#audit_ccc_energy" : command => do
       if #[`GRWTSK.Analysis.Asymptotics.PolynomialSubexponential,
           `GRWTSK.Analysis.Inequalities.ExponentialDiagonal,
           `GRWTSK.Analysis.LaplaceTransform.Analytic,
+          `GRWTSK.Analysis.LaplaceTransform.ExponentialEnergy,
           `GRWTSK.Analysis.LaplaceTransform.ExponentialThreshold,
           `GRWTSK.Analysis.LaplaceTransform.PolynomialEnergy,
           `GRWTSK.LinearAlgebra.AlmostMathieu,

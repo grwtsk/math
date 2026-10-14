@@ -140,7 +140,7 @@ theorem rational_two_edge_loop_nonidentity :
     orderedProduct (fun _ => rationalEdge) 0 2 ≠ 1 := by
   intro h
   have he := congrArg (fun g : (Matrix (Fin 2) (Fin 2) ℚ)ˣ => (g : Matrix (Fin 2) (Fin 2) ℚ) 0 1) h
-  norm_num [orderedProduct, rationalEdge, rotationUnit, rotationMatrix,
+  norm_num [orderedProduct_succ, orderedProduct_zero, rationalEdge, rotationUnit, rotationMatrix,
     Matrix.mul_apply, Fin.sum_univ_two] at he
 
 
@@ -191,7 +191,7 @@ theorem commonJ_loop_inverse {R : Type u} [CommRing R] (c s : ℕ → R)
 with the reverse on the left. -/
 theorem rational_reverse_loop_identity :
     orderedProduct (fun i => if i = 0 then rationalEdge else rationalEdge⁻¹) 0 2 = 1 := by
-  simp [orderedProduct]
+  simp [orderedProduct_succ, orderedProduct_zero]
 
 
 

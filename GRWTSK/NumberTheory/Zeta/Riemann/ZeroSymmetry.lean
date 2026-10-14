@@ -34,11 +34,6 @@ theorem zero_conjugate_reflect_commute (s : ℂ) :
 theorem critical_reflection_eq_composite (s : ℂ) :
     criticalReflection s = zeroReflect (zeroConjugate s) := rfl
 
-@[simp]
-theorem critical_reflection_involutive (s : ℂ) :
-    criticalReflection (criticalReflection s) = s := by
-  simp [criticalReflection]
-
 /-- The special value at zero cannot satisfy the nontrivial-zero predicate. -/
 theorem NontrivialZetaZero.ne_zero {s : ℂ} (hs : NontrivialZetaZero s) : s ≠ 0 := by
   intro h

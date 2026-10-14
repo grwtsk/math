@@ -36,9 +36,11 @@ def batchIncrement (b : ℕ → ℤ) (B : ℕ → ℕ) (n : ℕ) : ℕ :=
   1 + min (B n - 1) (b n).natAbs
 
 /-- The clock counts obligations, independently of their truth or disposition. -/
-def batchClock (d : ℕ → ℕ) : ℕ → ℕ
-  | 0 => 0
-  | n + 1 => batchClock d n + d n
+def batchClock (d : ℕ → ℕ) : ℕ → ℕ :=
+  Nat.rec 0 (fun n r => r + d n)
+
+@[simp] theorem batchClock_zero (d : ℕ → ℕ) : batchClock d 0 = 0 := rfl
+@[simp] theorem batchClock_succ (d : ℕ → ℕ) (n : ℕ) : batchClock d (n+1) = batchClock d n + d n := rfl
 
 /-- Every normalized stage is nonempty. -/
 theorem batchIncrement_pos (b : ℕ → ℤ) (B : ℕ → ℕ) (n : ℕ) :
@@ -58,7 +60,7 @@ theorem index_le_batchClock (d : ℕ → ℕ) (hd : ∀ n, 0 < d n) (n : ℕ) :
     n ≤ batchClock d n := by
   induction n with
   | zero => simp [batchClock]
-  | succ n ih => rw [batchClock]; have := hd n; omega
+  | succ n ih => simp; have := hd n; omega
 
 /-- Positive increments give strictly increasing checkpoint positions. -/
 theorem batchClock_strictMono (d : ℕ → ℕ) (hd : ∀ n, 0 < d n) :

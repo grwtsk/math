@@ -1,4 +1,10 @@
-import GRWTSK.LinearAlgebra.AlmostMathieu GRWTSK.Analysis.LaplaceTransform.ExponentialThreshold GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm GRWTSK.NumberTheory.Zeta.Riemann.PolynomialEnergyCriterion GRWTSK.NumberTheory.Moebius.ComparisonEnergy GRWTSK.NumberTheory.Moebius.IntegerSampleGrowth GRWTSK.NumberTheory.Moebius.UnsignedEnergyBound
+import GRWTSK.LinearAlgebra.AlmostMathieu
+import GRWTSK.Analysis.LaplaceTransform.ExponentialThreshold
+import GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm
+import GRWTSK.NumberTheory.Zeta.Riemann.PolynomialEnergyCriterion
+import GRWTSK.NumberTheory.Moebius.ComparisonEnergy
+import GRWTSK.NumberTheory.Moebius.IntegerSampleGrowth
+import GRWTSK.NumberTheory.Moebius.UnsignedEnergyBound
 open GRWTSK.RiemannHypothesis.CCC
 
 -- Must fail: a representation identity has no polynomial upper-bound witness.

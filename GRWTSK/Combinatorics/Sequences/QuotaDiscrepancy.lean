@@ -12,14 +12,16 @@ set_option autoImplicit false
 namespace GRWTSK.Analysis.Waveform.Scheduling
 open scoped BigOperators
 
-def clock (b : ℕ → ℕ) : ℕ → ℕ
-  | 0 => 0
-  | n+1 => clock b n + b n
+def clock (b : ℕ → ℕ) : ℕ → ℕ :=
+  Nat.rec 0 (fun n r => r + b n)
+
+@[simp] theorem clock_zero (b : ℕ → ℕ) : clock b 0 = 0 := rfl
+@[simp] theorem clock_succ (b : ℕ → ℕ) (n : ℕ) : clock b (n+1) = clock b n + b n := rfl
 
 theorem clock_ge (b : ℕ → ℕ) (hb : ∀ n, 1 ≤ b n) (n : ℕ) : n ≤ clock b n := by
   induction n with
-  | zero => simp [clock]
-  | succ n ih => simp only [clock]; have := hb n; omega
+  | zero => simp
+  | succ n ih => simp; have := hb n; omega
 
 /-- Service the pinned obligation indices in this exact half-open interval. -/
 def serves (b : ℕ → ℕ) (n j : ℕ) : Prop := clock b n ≤ j ∧ j < clock b (n+1)
@@ -80,11 +82,18 @@ theorem upper_from_lower {m : ℕ} (hm : 0 < m) (Q : ℤ) (d : Fin m → ℤ)
   nlinarith
 
 def debt {m : ℕ} (Q : ℤ) (p : ℕ → Fin m → ℤ) (w : ℕ → Fin m) : ℕ → Fin m → ℤ
-  | 0 => fun _ => 0
-  | n+1 => step Q (debt Q p w n) (p n) (w n)
+  := Nat.rec (fun _ => 0)
+    (fun n r => step Q r (p n) (w n))
 def count {m : ℕ} (w : ℕ → Fin m) (i : Fin m) : ℕ → ℕ
-  | 0 => 0
-  | n+1 => count w i n + if i = w n then 1 else 0
+  := Nat.rec 0 (fun n r => r + if i = w n then 1 else 0)
+
+@[simp] theorem debt_zero {m : ℕ} (Q : ℤ) (p : ℕ → Fin m → ℤ) (w : ℕ → Fin m) :
+    debt Q p w 0 = fun _ => 0 := rfl
+@[simp] theorem debt_succ {m : ℕ} (Q : ℤ) (p : ℕ → Fin m → ℤ) (w : ℕ → Fin m)
+    (n : ℕ) : debt Q p w (n+1) = step Q (debt Q p w n) (p n) (w n) := rfl
+@[simp] theorem count_zero {m : ℕ} (w : ℕ → Fin m) (i : Fin m) : count w i 0 = 0 := rfl
+@[simp] theorem count_succ {m : ℕ} (w : ℕ → Fin m) (i : Fin m) (n : ℕ) :
+    count w i (n+1) = count w i n + if i = w n then 1 else 0 := rfl
 
 theorem debt_invariant {m : ℕ} (Q : ℤ) (hQ : 0 < Q) (p : ℕ → Fin m → ℤ)
     (w : ℕ → Fin m) (hp : ∀ n, ∑ i, p n i = Q) (hn : ∀ n i, 0 ≤ p n i)
@@ -101,7 +110,7 @@ theorem debt_accounting {m : ℕ} (Q : ℤ) (p : ℕ → Fin m → ℤ) (w : ℕ
   induction n with
   | zero => simp [debt,count]
   | succ n ih =>
-    simp only [debt,step,count,Finset.sum_range_succ,Int.natCast_add]
+    simp only [debt_succ, step, count_succ, Finset.sum_range_succ, Int.natCast_add]
     rw [ih]
     by_cases h : i = w n <;> simp [h] <;> ring
 

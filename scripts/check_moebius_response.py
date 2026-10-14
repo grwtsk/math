@@ -414,31 +414,42 @@ class CommandRunner:
             process = subprocess.Popen(argv, cwd=command_root, env=command_environment,
                                        stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                        text=True, start_new_session=True)
+            entry["child_pid"] = process.pid
+            self.save()
             stdout, stderr = process.communicate(timeout=timeout or self.timeout)
             text = stdout + stderr
             entry.update(exit_code=process.returncode, status="completed")
         except subprocess.TimeoutExpired:
-            if process is not None:
-                os.killpg(process.pid, signal.SIGKILL)
-                stdout, stderr = process.communicate()
-                text = stdout + stderr
             text += "\nChecker command timed out.\n"
             entry.update(status="timed-out", error="bounded native command timeout")
         except KeyboardInterrupt:
             interrupted = True
-            if process is not None:
-                try:
-                    os.killpg(process.pid, signal.SIGKILL)
-                except ProcessLookupError:
-                    pass
-                stdout, stderr = process.communicate()
-                text = stdout + stderr
             text += "\nChecker interrupted; native child terminated.\n"
             entry.update(status="interrupted", error="KeyboardInterrupt")
         except (OSError, ValueError, subprocess.SubprocessError) as error:
             text += str(error) + "\n"
             entry.update(status="failed", error=str(error))
         finally:
+            if process is not None:
+                try:
+                    if entry["status"] != "completed":
+                        # The session's descendants can outlive the parent and
+                        # keep its pipes open after poll() reports an exit.
+                        try:
+                            os.killpg(process.pid, signal.SIGKILL)
+                        except ProcessLookupError:
+                            pass
+                        try:
+                            stdout, stderr = process.communicate(timeout=30)
+                            text = stdout + stderr + text
+                        except (OSError, ValueError, subprocess.SubprocessError) as error:
+                            entry["cleanup_output_error"] = str(error)
+                            text += "\nChild cleanup output failure: " + str(error) + "\n"
+                    child_exit = process.wait(timeout=30)
+                    entry.update(child_reaped=True, child_exit_code=child_exit)
+                except (OSError, ValueError, subprocess.SubprocessError) as error:
+                    entry.update(status="cleanup-failed", child_reaped=False, cleanup_error=str(error))
+                    text += "\nChild termination/reap failure: " + str(error) + "\n"
             try:
                 self.guard()
                 entry["postcheck_passed"] = True

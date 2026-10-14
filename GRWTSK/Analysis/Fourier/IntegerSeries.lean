@@ -7,8 +7,6 @@ import Mathlib.Analysis.Calculus.MeanValue
 import Mathlib.Analysis.Calculus.SmoothSeries
 import Mathlib.Analysis.SpecialFunctions.Trigonometric.Deriv
 import Mathlib.Analysis.SpecificLimits.Normed
-import Mathlib.LinearAlgebra.Matrix.Trace
-import Mathlib.LinearAlgebra.Matrix.Notation
 import Mathlib.Tactic.NormNum
 import Mathlib.Tactic.Linarith
 import Mathlib.Tactic.FunProp
@@ -20,8 +18,7 @@ Angular-frequency Parseval needs a separately checked convention adapter. -/
 set_option autoImplicit false
 noncomputable section
 namespace GRWTSK.Analysis.Waveform
-open scoped BigOperators FourierTransform
-open MeasureTheory
+open scoped BigOperators
 
 /-- Exact mathematical encoding; finite i64 representations have a separate bound. -/
 def eta (s : ℤ) : ℝ := (s : ℝ) / (1 + |(s : ℝ)|)

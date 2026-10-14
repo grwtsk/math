@@ -31,7 +31,7 @@ CONTROLS = {
 LAYOUT_INPUTS = ["AGENTS.md", "docs/math-layout.json", "scripts/check_math_layout.py"]
 INTERFACE_INPUTS = [
     "scripts/check_ordered_product_determinant.py", "lean-toolchain",
-    "lakefile.toml", "lake-manifest.json", "checks/OrderedProductDeterminantAudit.lean",
+    "lakefile.toml", "lake-manifest.json", "checks/LinearAlgebra/Determinant/OrderedProduct/Audit.lean",
     "GRWTSK/Algebra/OrderedProduct.lean",
     "GRWTSK/LinearAlgebra/SchrodingerTransfer.lean",
     "GRWTSK/LinearAlgebra/JacobiTransfer.lean",
@@ -196,7 +196,7 @@ def main():
         report["restart_cursor"] = "audit"
         receipt.write_text(json.dumps(report, indent=2) + "\n")
         try:
-            for label, source in [("audit", "checks/OrderedProductDeterminantAudit.lean")] + [
+            for label, source in [("audit", "checks/LinearAlgebra/Determinant/OrderedProduct/Audit.lean")] + [
                     (name, CONTROL_ROOT + name + ".lean") for name in CONTROLS]:
                 report["restart_cursor"] = label
                 receipt.write_text(json.dumps(report, indent=2) + "\n")

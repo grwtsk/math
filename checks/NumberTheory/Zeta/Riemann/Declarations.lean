@@ -22,63 +22,31 @@ elab "#audit_rh_target" : command => do
   let moduleNames := env.header.moduleNames
   unless env.header.moduleData.size == moduleNames.size do
     throwError "module ownership table is incomplete"
+  let selectedOwners : Array Name := #[
+    `GRWTSK.NumberTheory.Zeta.Riemann,
+    `GRWTSK.NumberTheory.Zeta.Riemann.Hypothesis,
+    `GRWTSK.NumberTheory.Zeta.Riemann.ZeroDefinitions,
+    `GRWTSK.NumberTheory.Zeta.Riemann.CriticalLineDefect,
+    `GRWTSK.NumberTheory.Zeta.Riemann.ZeroSymmetry,
+    `GRWTSK.NumberTheory.Zeta.Riemann.DefectCriterion,
+    `GRWTSK.Analysis.Complex.CriticalReflection,
+    `GRWTSK.NumberTheory.Zeta.Riemann.ZeroExclusions
+  ]
+  for owner in selectedOwners do
+    unless moduleNames.contains owner do
+      throwError "missing declared RH owner: {owner}"
+  let guardOwner := `GRWTSK.NumberTheory.Zeta.Riemann.ZeroExclusions
+  unless selectedOwners.contains guardOwner do
+    throwError "required zero-exclusion owner is not selected"
+  for name in #[`GRWTSK.RiemannHypothesis.trivial_zero_is_excluded,
+                `GRWTSK.RiemannHypothesis.pole_is_excluded] do
+    let some _ := env.find? name | throwError "missing exact zero-exclusion guard: {name}"
+    let some index := env.getModuleIdxFor? name | throwError "missing guard ownership: {name}"
+    unless moduleNames[index]! == guardOwner do
+      throwError "zero-exclusion guard owner mismatch: {name}"
   let declarations := (env.header.moduleData.toList.zip moduleNames.toList).flatMap
     fun (data, owner) =>
-      if #[`GRWTSK.Analysis.Asymptotics.PolynomialSubexponential,
-          `GRWTSK.Analysis.Calculus.CompactProfileDerivativeEnergy,
-          `GRWTSK.Analysis.Calculus.CompactProfileNormalization,
-          `GRWTSK.Analysis.Calculus.PolynomialBumpDerivativeEnergy,
-          `GRWTSK.Analysis.Calculus.PolynomialBumpNormalization,
-          `GRWTSK.Analysis.Convolution.AutocorrelationDerivativeEnergy,
-          `GRWTSK.Analysis.Convolution.AutocorrelationSecondDerivative,
-          `GRWTSK.Analysis.Convolution.PolynomialBumpHigherDerivatives,
-          `GRWTSK.Analysis.Inequalities.ExponentialDiagonal,
-          `GRWTSK.Analysis.Inequalities.PolynomialEnergyRatio,
-          `GRWTSK.Analysis.LaplaceTransform.Analytic,
-          `GRWTSK.Analysis.LaplaceTransform.ExponentialThreshold,
-          `GRWTSK.Analysis.LaplaceTransform.PolynomialEnergy,
-          `GRWTSK.Analysis.SpecialFunctions.SquaredInverseBump,
-          `GRWTSK.Analysis.TestFunctions.EvenSeparation,
-          `GRWTSK.Analysis.TestFunctions.ExponentialMomentVariation,
-          `GRWTSK.Analysis.TestFunctions.PolynomialBumpSecondEnergy,
-          `GRWTSK.Analysis.TestFunctions.Separation,
-          `GRWTSK.DynamicalSystems.Sequences.ApproximationReturn,
-          `GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm,
-          `GRWTSK.Logic.Counterexamples.ComplexSymmetryAndPositivity,
-          `GRWTSK.NumberTheory.Chebyshev.CorrelationPairing,
-          `GRWTSK.NumberTheory.ContinuedFractions.FrequencyRealization,
-          `GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators,
-          `GRWTSK.NumberTheory.Moebius.ComparisonEnergy,
-          `GRWTSK.NumberTheory.Moebius.DirichletLaplaceIdentity,
-          `GRWTSK.NumberTheory.Moebius.DyadicEnergy,
-          `GRWTSK.NumberTheory.Moebius.EnergyAbscissa,
-          `GRWTSK.NumberTheory.Moebius.FiniteLaplaceTransform,
-          `GRWTSK.NumberTheory.Moebius.FiniteResponseSum,
-          `GRWTSK.NumberTheory.Moebius.GramDiagonalBound,
-          `GRWTSK.NumberTheory.Moebius.IntegerSampleGrowth,
-          `GRWTSK.NumberTheory.Moebius.LaplaceHolomorphy,
-          `GRWTSK.NumberTheory.Moebius.LaplaceTransform,
-          `GRWTSK.NumberTheory.Moebius.MertensPrimitive,
-          `GRWTSK.NumberTheory.Moebius.NegativePrimeCorrelation,
-          `GRWTSK.NumberTheory.Moebius.PrimeBlockEnergy,
-          `GRWTSK.NumberTheory.Moebius.PrimeFactorFilters,
-          `GRWTSK.NumberTheory.Moebius.PrimeFilterEnergy,
-          `GRWTSK.NumberTheory.Moebius.PrimeFilterGrowth,
-          `GRWTSK.NumberTheory.Moebius.PrimeFilterLaplace,
-          `GRWTSK.NumberTheory.Moebius.PrimePrefixGrowth,
-          `GRWTSK.NumberTheory.Moebius.PrimitiveIdentification,
-          `GRWTSK.NumberTheory.Moebius.PrimitiveRegularity,
-          `GRWTSK.NumberTheory.Moebius.UnsignedEnergyBound,
-          `GRWTSK.NumberTheory.Prime.ReciprocalMass,
-          `GRWTSK.NumberTheory.Zeta.Riemann,
-          `GRWTSK.NumberTheory.Zeta.Riemann.CriticalLineDefect,
-          `GRWTSK.NumberTheory.Zeta.Riemann.DefectCriterion,
-          `GRWTSK.NumberTheory.Zeta.Riemann.Hypothesis,
-          `GRWTSK.NumberTheory.Zeta.Riemann.LaplaceCriterion,
-          `GRWTSK.NumberTheory.Zeta.Riemann.PolynomialEnergyCriterion,
-          `GRWTSK.NumberTheory.Zeta.Riemann.Regularized,
-          `GRWTSK.NumberTheory.Zeta.Riemann.ZeroDefinitions,
-          `GRWTSK.NumberTheory.Zeta.Riemann.ZeroSymmetry].contains owner then
+      if selectedOwners.contains owner then
         data.constants.toList.map fun info => (info.name, info)
       else []
   if declarations.isEmpty then throwError "empty RH declaration family"

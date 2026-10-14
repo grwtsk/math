@@ -4,7 +4,8 @@ Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import Mathlib.NumberTheory.LSeries.RiemannZeta
 import Mathlib.Analysis.Complex.Convex
 import Mathlib.Analysis.Analytic.Uniqueness
-import Mathlib.Tactic
+import Mathlib.Tactic.FieldSimp
+import Mathlib.Tactic.Ring
 
 noncomputable section
 namespace GRWTSK.RiemannHypothesis.CCC

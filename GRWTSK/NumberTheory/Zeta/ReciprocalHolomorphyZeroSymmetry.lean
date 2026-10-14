@@ -1,4 +1,5 @@
-import Mathlib
+import Mathlib.NumberTheory.LSeries.Nonvanishing
+import GRWTSK.Analysis.Complex.PositiveHalfPlane
 import GRWTSK.NumberTheory.Moebius.MoebiusEulerProduct
 import GRWTSK.NumberTheory.Moebius.DiagonalEnergyBound
 
@@ -7,7 +8,6 @@ open Complex Filter
 open scoped Topology
 namespace EulerP04RH.RHTerminal
 
-def PositiveHalfPlane : Set ℂ := {z | 0 < z.re}
 
 /-- Entire numerator, using only the completed zeta continuation and reciprocal Gamma. -/
 def entireZetaNumerator (s : ℂ) : ℂ :=

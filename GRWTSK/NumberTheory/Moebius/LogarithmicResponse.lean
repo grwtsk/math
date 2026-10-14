@@ -1,4 +1,8 @@
-import Mathlib
+import Mathlib.Algebra.Order.Star.Real
+import Mathlib.Analysis.SpecialFunctions.Pow.Real
+import Mathlib.MeasureTheory.Integral.Bochner.Set
+import Mathlib.MeasureTheory.Measure.Lebesgue.Basic
+import Mathlib.NumberTheory.ArithmeticFunction.Moebius
 
 /-!
 Literal source and terminal proposition for ASBN–P04 and PPNC–P04.
