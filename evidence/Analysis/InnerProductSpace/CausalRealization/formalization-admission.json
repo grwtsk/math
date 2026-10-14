@@ -1,0 +1,1001 @@
+{
+  "schema": "causal-realization-formalization-admission-v1",
+  "status": "NATIVE_VERIFICATION_PENDING",
+  "repository": "grwtsk/math",
+  "mathematical_subjects": [
+    "Analysis",
+    "LinearAlgebra",
+    "NumberTheory"
+  ],
+  "sources": [
+    {
+      "path": "GRWTSK/Analysis/Calculus/CompactPolynomialDerivatives.lean",
+      "sha256": "4abb0074bb8a66137768bbd25d59ab896b347654f4944383f6df1e9e9d9fa8e4"
+    },
+    {
+      "path": "GRWTSK/Analysis/Calculus/EvenLinearDefect.lean",
+      "sha256": "fd33f31e06dbab1fc8bb7fa5f65bbed4fad4e60bff11552d7ad01b3472dae462"
+    },
+    {
+      "path": "GRWTSK/Analysis/Calculus/SupportEdgeDifferentiability.lean",
+      "sha256": "fb5d4c73431721a1bcfc246367389163768c499594e5ff57a5161d35a4e52f04"
+    },
+    {
+      "path": "GRWTSK/Analysis/Convolution/AutocorrelationTranslationEnergy.lean",
+      "sha256": "f7c03448d46152139090048c97031080e24b0bf25add6ae583a9a33c0e874ec3"
+    },
+    {
+      "path": "GRWTSK/Analysis/Convolution/CompactProfileDifferentialMoments.lean",
+      "sha256": "dc5e26a70f591f9ab3551b6a94b518d7c3b7cdb881512d081ed460e70e13993b"
+    },
+    {
+      "path": "GRWTSK/Analysis/Convolution/CompactProfileFifthDerivativeObstruction.lean",
+      "sha256": "fe87538d3cc33db3cf97c4fe434bbd3b87f6c1e44eadeffdca11f9aa49abb341"
+    },
+    {
+      "path": "GRWTSK/Analysis/Convolution/CompactProfileFirstPoleMoment.lean",
+      "sha256": "1e02ac2c25c2e1b2c713f2ffd80052f37db8e420e249cf2ef0d582adee54d722"
+    },
+    {
+      "path": "GRWTSK/Analysis/Convolution/CompactProfileSupportEdge.lean",
+      "sha256": "1de9022d6a752dd11a53aae45461a3c14c0e0b87b427ed27f76c5b87f926e2e6"
+    },
+    {
+      "path": "GRWTSK/Analysis/Convolution/CompactProfileTailSigns.lean",
+      "sha256": "5873fcc9d3f4f5adb3f024cae522275933b692796ac37cac6f540809def1e873"
+    },
+    {
+      "path": "GRWTSK/Analysis/Convolution/CompactSupportContact.lean",
+      "sha256": "170042438dc7809e0f8aa6abb3fb9a3e015c48ae22f917c350c8d05344a2dfde"
+    },
+    {
+      "path": "GRWTSK/Analysis/Convolution/FiniteTranslateIndependence.lean",
+      "sha256": "b277e1865a0c5b0a1289725adb791779a52a012411c3dea11bb98a61a9f09d44"
+    },
+    {
+      "path": "GRWTSK/Analysis/Convolution/FirstMomentConvolution.lean",
+      "sha256": "c6e2243a0ae9cba9a118351cd0a50cbe0bbe27a6e549df27c8675f56a7c5340c"
+    },
+    {
+      "path": "GRWTSK/Analysis/Inequalities/CompactProfileDifferentialBounds.lean",
+      "sha256": "d8981eeb5d3152a5930535a9c530c3b626ce8e5dc0b469d4a2396f37cbc43d85"
+    },
+    {
+      "path": "GRWTSK/Analysis/Inequalities/FiniteLogarithmicProfileBounds.lean",
+      "sha256": "c804f768fe8707acaefbf500f8d25f1b47d9c4e27a94da1aa8c706b35b98a91e"
+    },
+    {
+      "path": "GRWTSK/Analysis/Inequalities/LogarithmicProfileIntegralPrices.lean",
+      "sha256": "266f2fdb8139ced38bf32a7a5168470b56b89960eba991b54efc40f05f810cef"
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/CausalContactHilbertSeparation.lean",
+      "sha256": "ba0b32da1267b977f04f3c4c7fb84de0c21e9b5872a16af680b82b81d4cb554d"
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/CausalContactOperatorCost.lean",
+      "sha256": "332e84c05f21019353593bed1b48af23692cce2e1ba5e8a9a2bf185087572f32"
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/CausalContactSeparation.lean",
+      "sha256": "7da341b1244be7bf1eb919a7a37ee8d783e24b557fa95c531ef878ee9e7feb1b"
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/CausalFiniteOperatorSeparation.lean",
+      "sha256": "ad82dda7161f4821b862e1c011ae1ac911ba1c1869f4caa61b26cc2f71ae79b8"
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/CausalGramCongruenceObstruction.lean",
+      "sha256": "19846946b1ae350fd8f762a152ef1019ce40eeed96b9cd0811da62f2d778b2eb"
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/CausalIndividualRealization.lean",
+      "sha256": "c3225454b6d0d14df6d3ea68d9367e764de96d0ea0273c123ab274906d6a3f87"
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/CausalLastLabelOperatorCost.lean",
+      "sha256": "4508307710ec2f1c7cf14d918ff9f34d37e0f98291d42ba96b9ef6e3a42f9e11"
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/CausalRealizationPolynomialObstruction.lean",
+      "sha256": "26a7db34e1f2066ccd7ebadd1a46c08b3617726d991a2ec602b10cc203effd9d"
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/CausalResponseGram.lean",
+      "sha256": "e563cca4c98955fea76d39fbbd64a5f7ad18688769b89636c52418d315a642db"
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/CompactResidualNormalization.lean",
+      "sha256": "b2e41da84e528d6e5b6f85289a4c6123995d1bad00d7cf54a8d112fbf5b38b4d"
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/CompactSourceGramPositiveDefinite.lean",
+      "sha256": "39a750fe29d1b7c55b23b56f2b3c2a6db17234ce3bac7f8aa55d27fe58393d30"
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/DilationGram.lean",
+      "sha256": "701395de80454619a0cc384543d42935b500a46ba1676e87e52cbb907dd479ab"
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/DilationResponseSeparation.lean",
+      "sha256": "191a35b79935a6c65eed972463d5d24a9a90a2caac8c75108435fad274b81452"
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/NonzeroVectorRealization.lean",
+      "sha256": "1b4a9f99d8138865117d24b2d038a327ebade0a7ab5a21b94fbd74c68cbee25f"
+    },
+    {
+      "path": "GRWTSK/Analysis/IntegralTransforms/CompactProfileLogarithmicDerivative.lean",
+      "sha256": "245fecbd8e99aa4dc35863aa8de1dc69f5132446018fc3ff0937b3ae0983734c"
+    },
+    {
+      "path": "GRWTSK/Analysis/IntegralTransforms/CompactProfileLogarithmicMoment.lean",
+      "sha256": "000b29ebda316c72bfad12f6f82b5af294b43f9041487b0f5d72e540c8e2e5bb"
+    },
+    {
+      "path": "GRWTSK/Analysis/IntegralTransforms/CompactProfileLogarithmicRegularity.lean",
+      "sha256": "bc7d455945e98f2374ad91a8c8d23e4d9f15d8f9f1df2bd073972ca2c692ee64"
+    },
+    {
+      "path": "GRWTSK/Analysis/IntegralTransforms/LogarithmicMomentSubstitution.lean",
+      "sha256": "8f09bfa02c86da0e30c8ee80f4887dd17d48d3e0e803b5b8a0631d1052cab4a7"
+    },
+    {
+      "path": "GRWTSK/Analysis/IntegralTransforms/LogarithmicProfileCutoff.lean",
+      "sha256": "09121b3ec38b61abae9563f1b6ecff0f0ba597f43637154394bcf1f0418dd1ac"
+    },
+    {
+      "path": "GRWTSK/Analysis/IntegralTransforms/LogarithmicProfileDerivative.lean",
+      "sha256": "bfc0908dc1f804b9c77f844b3c481abae104f6084ad9ad19118678b786ba65b3"
+    },
+    {
+      "path": "GRWTSK/Analysis/IntegralTransforms/LogarithmicProfileRegularity.lean",
+      "sha256": "093bef8246dab7871afda0418fb1d02cfd2dfa48c1fc389e1ff64ead67193ea4"
+    },
+    {
+      "path": "GRWTSK/Analysis/IntegralTransforms/LogarithmicProfileWeights.lean",
+      "sha256": "2da34cedc49ab014d2e1f3a9dc8b8c42d925f879cecd0503daa9bbb2bac2122c"
+    },
+    {
+      "path": "GRWTSK/Analysis/Integration/CompactWeightedDerivativeMoments.lean",
+      "sha256": "09a62702c191806488014bdae2d00b3d2e694430e469753181963f01dd014804"
+    },
+    {
+      "path": "GRWTSK/Analysis/Integration/FiniteUnitSumVariation.lean",
+      "sha256": "20ce18d7f9d2197b15bcb85f2bf6d534354202bdbc09f26a6436fcae5ca91b63"
+    },
+    {
+      "path": "GRWTSK/Analysis/Integration/PositiveHalfLineCutoffBalance.lean",
+      "sha256": "34446d67fbae7e7adcac18b3eabda9e9246803aee12aff4a80b426c747996850"
+    },
+    {
+      "path": "GRWTSK/Analysis/Integration/TranslationSeamLowerBound.lean",
+      "sha256": "8cb9f90f05e03aa1f8590004f3ff8fb93541f48211481123cc48a86cafcf5aca"
+    },
+    {
+      "path": "GRWTSK/Analysis/SpecialFunctions/ExponentialFloorGap.lean",
+      "sha256": "34543ac708884a829a551b2c2a469d7046de8039a168aad83ae4e60598aa2851"
+    },
+    {
+      "path": "GRWTSK/Analysis/SpecialFunctions/ExponentialPolynomialDomination.lean",
+      "sha256": "c36daaa9cd6addc1802da35a661facb707ba919f37e60f0433ddf390a92275fc"
+    },
+    {
+      "path": "GRWTSK/Analysis/TestFunctions/PowerFourResidualSigns.lean",
+      "sha256": "c0808e0025edb85a05ee255aac5aa94e5110aa1c8141ce6a57d23b7b39ae05b5"
+    },
+    {
+      "path": "GRWTSK/LinearAlgebra/BilinearForm/ZeroCoordinateObstruction.lean",
+      "sha256": "f543e5d1fa67c01475a916df01199d0966d36595cd9e20ca06a35fd1d3b2571e"
+    },
+    {
+      "path": "GRWTSK/LinearAlgebra/LinearMap/FiniteMixingObstruction.lean",
+      "sha256": "f41b47de66e4be14fcf2dfb3c8c81cd438ceafb06fecd2935d90c6962fbb4632"
+    },
+    {
+      "path": "GRWTSK/LinearAlgebra/Matrix/SingularCongruenceObstruction.lean",
+      "sha256": "7899d4d071aba9e9e84de316cbc902b24dbd0589041b6e11f53d40036ed20677"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ArithmeticFunctions/LogarithmicShiftKernelBounds.lean",
+      "sha256": "45130c2a967f4284279520a217a8574a5f0c28cb79e44b8c7ed922154d5be558"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ArithmeticFunctions/LogarithmicShiftKernelPositiveSector.lean",
+      "sha256": "aa23e99cfbac1d7fd6064c68a804eb92603a2f269ef8adab91a49df1e76605cb"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ArithmeticFunctions/LogarithmicShiftKernelRegularity.lean",
+      "sha256": "ffe598f53abfe75d7b1d7f6cf39272196ca9c7d4ec9b8d97b781d79cd56ba668"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Moebius/SignedIntegralSectorBounds.lean",
+      "sha256": "6f46187c269e51719dd2104c5df7480c42ebad7bdc38bf3f2590504063de447e"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Moebius/WeightedIntegralEnergy.lean",
+      "sha256": "8124ef6fbeca2c8244d7401536d70c43a6ecd31279366c20ea96bf6fbaa84380"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Moebius/WeightedIntegralGrowth.lean",
+      "sha256": "ee5dc6dc631638538445d66293cbdf7897a3c21beddc197a7cb8365a05025377"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Moebius/WeightedSummatoryIntegral.lean",
+      "sha256": "041fa625e5e2bc239e3df3b471f545f7ba080093723c2f3710c08ee4bc92c8c2"
+    }
+  ],
+  "audits": [
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/CausalContactHilbertSeparation.lean",
+      "sha256": "d272c2a69422485f4a338d67076ddb3c638f6dba9d7cc89863446a03c6c2b0c0",
+      "selected": [
+        "GRWTSK.Analysis.InnerProductSpace.CausalContactHilbertSeparation.prescribed_source_vector_not_ae_zero",
+        "GRWTSK.Analysis.InnerProductSpace.CausalContactHilbertSeparation.touching_window_L2_eq_zero",
+        "GRWTSK.Analysis.InnerProductSpace.CausalContactHilbertSeparation.prescribed_source_L2_ne_zero",
+        "GRWTSK.Analysis.InnerProductSpace.CausalContactHilbertSeparation.linear_hilbert_contact_map_ne_source"
+      ]
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/CausalContactOperatorCost.lean",
+      "sha256": "764bca1e75cb731d92d4eeb56481be8e459a0327fad2a3c4453c0853a20f4368",
+      "selected": [
+        "GRWTSK.Analysis.InnerProductSpace.CausalContactOperatorCost.inverse_half_square",
+        "GRWTSK.Analysis.InnerProductSpace.CausalContactOperatorCost.response_after_contact_bounds",
+        "GRWTSK.Analysis.InnerProductSpace.CausalContactOperatorCost.gram_diagonal_eq_post_contact",
+        "GRWTSK.Analysis.InnerProductSpace.CausalContactOperatorCost.gram_diagonal_cubic_upper",
+        "GRWTSK.Analysis.InnerProductSpace.CausalContactOperatorCost.original_window_L2_norm_square",
+        "GRWTSK.Analysis.InnerProductSpace.CausalContactOperatorCost.prescribed_source_L2_norm_square",
+        "GRWTSK.Analysis.InnerProductSpace.CausalContactOperatorCost.continuous_linear_realization_cubic_cost",
+        "GRWTSK.Analysis.InnerProductSpace.CausalContactOperatorCost.no_uniform_bounded_realization_for_scale_family",
+        "GRWTSK.Analysis.InnerProductSpace.CausalContactOperatorCost.log_eight_near_contact_scale_bounds",
+        "GRWTSK.Analysis.InnerProductSpace.CausalContactOperatorCost.prescribed_horizon_no_uniform_bounded_realization"
+      ]
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/CausalContactSeparation.lean",
+      "sha256": "1a4ef50430a5a0bf803ebe8c74639129aca7bf505f3e4008505b71d995e7b865",
+      "selected": [
+        "GRWTSK.Analysis.InnerProductSpace.CausalContactSeparation.response_zero_before_or_at_contact",
+        "GRWTSK.Analysis.InnerProductSpace.CausalContactSeparation.window_response_eq_zero_of_before_contact",
+        "GRWTSK.Analysis.InnerProductSpace.CausalContactSeparation.touching_window_response_eq_zero",
+        "GRWTSK.Analysis.InnerProductSpace.CausalContactSeparation.native_before_contact_row_zero",
+        "GRWTSK.Analysis.InnerProductSpace.CausalContactSeparation.prescribed_source_vector_ne_zero",
+        "GRWTSK.Analysis.InnerProductSpace.CausalContactSeparation.zero_preserving_contact_map_ne_source",
+        "GRWTSK.Analysis.InnerProductSpace.CausalContactSeparation.linear_contact_map_ne_source",
+        "GRWTSK.Analysis.InnerProductSpace.CausalContactSeparation.diagonal_scaled_native_ne_source",
+        "GRWTSK.Analysis.InnerProductSpace.CausalContactSeparation.native_contact_no_source_quadratic_domination",
+        "GRWTSK.Analysis.InnerProductSpace.CausalContactSeparation.prescribed_horizon_restricted_obstructions"
+      ]
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/CausalFiniteOperatorSeparation.lean",
+      "sha256": "ce68b6fa50e1be10c66f984b87ec331afbae97343f822fb2f9c7b5d3bc0dc978",
+      "selected": [
+        "GRWTSK.Analysis.InnerProductSpace.CausalFiniteOperatorSeparation.window_response_memLp",
+        "GRWTSK.Analysis.InnerProductSpace.CausalFiniteOperatorSeparation.original_window_L2_contact_zero",
+        "GRWTSK.Analysis.InnerProductSpace.CausalFiniteOperatorSeparation.finite_source_L2_combination_ae",
+        "GRWTSK.Analysis.InnerProductSpace.CausalFiniteOperatorSeparation.distinct_source_L2_linearIndependent",
+        "GRWTSK.Analysis.InnerProductSpace.CausalFiniteOperatorSeparation.finite_contact_functions_no_linear_mix",
+        "GRWTSK.Analysis.InnerProductSpace.CausalFiniteOperatorSeparation.finite_contact_L2_no_linear_mix",
+        "GRWTSK.Analysis.InnerProductSpace.CausalFiniteOperatorSeparation.original_inventory_L2_no_linear_mix",
+        "GRWTSK.Analysis.InnerProductSpace.CausalFiniteOperatorSeparation.prescribed_horizon_L2_linear_mix_obstruction"
+      ]
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/CausalGramCongruenceObstruction.lean",
+      "sha256": "634a988c183cbb139f49c89968f78a76acffa728a5e2d53462ebe9197d2e2e3d",
+      "selected": [
+        "GRWTSK.Analysis.InnerProductSpace.CausalGramCongruenceObstruction.finite_contact_square_congruence_ne_source",
+        "GRWTSK.Analysis.InnerProductSpace.CausalGramCongruenceObstruction.original_inventory_square_congruence_ne_source",
+        "GRWTSK.Analysis.InnerProductSpace.CausalGramCongruenceObstruction.prescribed_horizon_square_congruence_obstruction"
+      ]
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/CausalIndividualRealization.lean",
+      "sha256": "9969784178471c39919dd7068bc4286ec5b23683932e83d75a860d3047130876",
+      "selected": [
+        "GRWTSK.Analysis.InnerProductSpace.CausalIndividualRealization.response_pos_after_contact",
+        "GRWTSK.Analysis.InnerProductSpace.CausalIndividualRealization.gram_diagonal_pos",
+        "GRWTSK.Analysis.InnerProductSpace.CausalIndividualRealization.original_window_L2_ne_zero_of_strict_maturity",
+        "GRWTSK.Analysis.InnerProductSpace.CausalIndividualRealization.bounded_individual_realization_exists",
+        "GRWTSK.Analysis.InnerProductSpace.CausalIndividualRealization.prescribed_horizon_individual_realization"
+      ]
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/CausalLastLabelOperatorCost.lean",
+      "sha256": "bf4b5e02cfa2d1bfa4e7ce00a5a48c4a12af5bd61fe92fd637d84dc322b01264",
+      "selected": [
+        "GRWTSK.Analysis.InnerProductSpace.CausalLastLabelOperatorCost.last_label_diagonal_quartic_upper",
+        "GRWTSK.Analysis.InnerProductSpace.CausalLastLabelOperatorCost.last_label_continuous_realization_norm",
+        "GRWTSK.Analysis.InnerProductSpace.CausalLastLabelOperatorCost.last_label_continuous_realization_exponential_norm",
+        "GRWTSK.Analysis.InnerProductSpace.CausalLastLabelOperatorCost.prescribed_horizon_last_label_exponential_norm",
+        "GRWTSK.Analysis.InnerProductSpace.CausalLastLabelOperatorCost.whole_inventory_continuous_realization_exponential_norm"
+      ]
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/CausalRealizationPolynomialObstruction.lean",
+      "sha256": "a9d8e4de8d7f8b3e9049e157c231a1b54da0a69528316ef917f7a9630b80304f",
+      "selected": [
+        "GRWTSK.Analysis.InnerProductSpace.CausalRealizationPolynomialObstruction.last_label_realization_exceeds_polynomial",
+        "GRWTSK.Analysis.InnerProductSpace.CausalRealizationPolynomialObstruction.whole_inventory_realization_exceeds_polynomial",
+        "GRWTSK.Analysis.InnerProductSpace.CausalRealizationPolynomialObstruction.prescribed_horizon_realization_exceeds_polynomial",
+        "GRWTSK.Analysis.InnerProductSpace.CausalRealizationPolynomialObstruction.no_polynomial_individual_realization_on_unbounded_scales",
+        "GRWTSK.Analysis.InnerProductSpace.CausalRealizationPolynomialObstruction.no_polynomial_inventory_realization_on_unbounded_scales"
+      ]
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/CompactSourceGramPositiveDefinite.lean",
+      "sha256": "99790bbec938bc3ce444252c07ae2e2862fd7c3803fdc6713b6ce05c3d181282",
+      "selected": [
+        "GRWTSK.Analysis.InnerProductSpace.CompactSourceGramPositiveDefinite.normalized_source_support_bddAbove",
+        "GRWTSK.Analysis.InnerProductSpace.CompactSourceGramPositiveDefinite.normalized_source_support_nonempty",
+        "GRWTSK.Analysis.InnerProductSpace.CompactSourceGramPositiveDefinite.finite_source_combination_ne_zero",
+        "GRWTSK.Analysis.InnerProductSpace.CompactSourceGramPositiveDefinite.distinct_source_vectors_linearIndependent",
+        "GRWTSK.Analysis.InnerProductSpace.CompactSourceGramPositiveDefinite.finite_source_gram_positive",
+        "GRWTSK.Analysis.InnerProductSpace.CompactSourceGramPositiveDefinite.distinct_source_gram_matrix_positive_definite"
+      ]
+    },
+    {
+      "path": "GRWTSK/Analysis/SpecialFunctions/Checks/Positive/ExponentialFloorGap.lean",
+      "sha256": "599d78209de247fc8c056a87eb8f12a82879dbec05ae29ce45880055056316aa",
+      "selected": [
+        "GRWTSK.Analysis.SpecialFunctions.ExponentialFloorGap.one_le_natFloor_exp",
+        "GRWTSK.Analysis.SpecialFunctions.ExponentialFloorGap.natFloor_exp_pos",
+        "GRWTSK.Analysis.SpecialFunctions.ExponentialFloorGap.natFloor_exp_cast_pos",
+        "GRWTSK.Analysis.SpecialFunctions.ExponentialFloorGap.natFloor_exp_le",
+        "GRWTSK.Analysis.SpecialFunctions.ExponentialFloorGap.exp_lt_natFloor_add_one",
+        "GRWTSK.Analysis.SpecialFunctions.ExponentialFloorGap.gap_nonneg",
+        "GRWTSK.Analysis.SpecialFunctions.ExponentialFloorGap.gap_lt_inv_natFloor",
+        "GRWTSK.Analysis.SpecialFunctions.ExponentialFloorGap.exp_lt_two_mul_natFloor",
+        "GRWTSK.Analysis.SpecialFunctions.ExponentialFloorGap.exp_two_mul_div_four_lt_natFloor_sq",
+        "GRWTSK.Analysis.SpecialFunctions.ExponentialFloorGap.cubicAllowance_le_inv_natFloor_pow_four",
+        "GRWTSK.Analysis.SpecialFunctions.ExponentialFloorGap.natFloor_sq_le_of_cost"
+      ]
+    },
+    {
+      "path": "GRWTSK/Analysis/SpecialFunctions/Checks/Positive/ExponentialPolynomialDomination.lean",
+      "sha256": "f45858c33d11b34ec2ec6331386a30008017ebe88fac161e2858837056eddbbb",
+      "selected": [
+        "GRWTSK.Analysis.SpecialFunctions.ExponentialPolynomialDomination.polynomial_lt_exp_two_mul_div_four",
+        "GRWTSK.Analysis.SpecialFunctions.ExponentialPolynomialDomination.polynomial_lt_exp_two_mul_div_four_of_ge_threshold"
+      ]
+    },
+    {
+      "path": "GRWTSK/LinearAlgebra/LinearMap/Checks/Positive/FiniteMixingObstruction.lean",
+      "sha256": "c72a76a3fe80035ad4a2e4c18e2ba5f67e1a81ec3b2330a22b20142d5f9f6c39",
+      "selected": [
+        "GRWTSK.LinearAlgebra.LinearMap.FiniteMixingObstruction.synthesis_eq_of_basis_realization",
+        "GRWTSK.LinearAlgebra.LinearMap.FiniteMixingObstruction.independent_linear_mix_requires_independent_input",
+        "GRWTSK.LinearAlgebra.LinearMap.FiniteMixingObstruction.zero_coordinate_no_independent_linear_mix"
+      ]
+    },
+    {
+      "path": "GRWTSK/Analysis/Convolution/Checks/Positive/FiniteTranslateIndependence.lean",
+      "sha256": "33534f8a9ffe3f91cfd02cfde2c497fe96fa835110871cb0594ea65320281ef7",
+      "selected": [
+        "GRWTSK.Analysis.Convolution.FiniteTranslateIndependence.isolate_rightmost_translate",
+        "GRWTSK.Analysis.Convolution.FiniteTranslateIndependence.finite_translate_combination_ne_zero",
+        "GRWTSK.Analysis.Convolution.FiniteTranslateIndependence.finite_translate_combination_eq_zero_iff",
+        "GRWTSK.Analysis.Convolution.FiniteTranslateIndependence.finite_translates_linearIndependent"
+      ]
+    },
+    {
+      "path": "checks/NumberTheory/ArithmeticFunctions/LogarithmicShiftKernelBounds.lean",
+      "sha256": "d62ca14318e088c98b21c9d42b8a69220410347ecddbfaacbc542f02aada5916",
+      "selected": [
+        "GRWTSK.Analysis.Convolution.CompactProfileDifferentialMoments.actual_differential_moments_zero",
+        "GRWTSK.Analysis.Convolution.CompactProfileFirstPoleMoment.normalized_source_first_exponential_integrable",
+        "GRWTSK.Analysis.Convolution.CompactProfileFirstPoleMoment.first_exponential_correlation_integrable",
+        "GRWTSK.Analysis.Convolution.CompactProfileFirstPoleMoment.first_pole_correlation_integral_zero",
+        "GRWTSK.Analysis.Convolution.FirstMomentConvolution.first_moment_convolution_ae",
+        "GRWTSK.Analysis.Convolution.FirstMomentConvolution.first_moment_convolution_integrable",
+        "GRWTSK.Analysis.Convolution.FirstMomentConvolution.first_moment_convolution_integral",
+        "GRWTSK.Analysis.Convolution.FirstMomentConvolution.first_moment_convolution_integral_zero",
+        "GRWTSK.Analysis.Inequalities.CompactProfileDifferentialBounds.differential_hasDerivAt",
+        "GRWTSK.Analysis.Inequalities.CompactProfileDifferentialBounds.differential_abs_le",
+        "GRWTSK.Analysis.Inequalities.CompactProfileDifferentialBounds.differential_derivative_abs_le",
+        "GRWTSK.Analysis.Inequalities.CompactProfileDifferentialBounds.differential_zero_upper",
+        "GRWTSK.Analysis.Inequalities.FiniteLogarithmicProfileBounds.finite_logarithmic_profile_price",
+        "GRWTSK.Analysis.Inequalities.LogarithmicProfileIntegralPrices.upper_variation_weight_integral",
+        "GRWTSK.Analysis.Inequalities.LogarithmicProfileIntegralPrices.logarithmic_profile_variation_price",
+        "GRWTSK.Analysis.Inequalities.LogarithmicProfileIntegralPrices.logarithmic_profile_lower_price",
+        "GRWTSK.Analysis.IntegralTransforms.CompactProfileLogarithmicMoment.actual_logarithmic_integral_zero",
+        "GRWTSK.Analysis.IntegralTransforms.CompactProfileLogarithmicRegularity.correlation_derivatives_zero_left",
+        "GRWTSK.Analysis.IntegralTransforms.CompactProfileLogarithmicRegularity.actual_logarithmic_profile_zero_left",
+        "GRWTSK.Analysis.IntegralTransforms.CompactProfileLogarithmicRegularity.actual_logarithmic_profile_contDiff_two",
+        "GRWTSK.Analysis.IntegralTransforms.LogarithmicMomentSubstitution.sqrt_exp_half",
+        "GRWTSK.Analysis.IntegralTransforms.LogarithmicMomentSubstitution.exponential_jacobian_integral",
+        "GRWTSK.Analysis.IntegralTransforms.LogarithmicMomentSubstitution.exponential_jacobian_integrable_iff",
+        "GRWTSK.Analysis.IntegralTransforms.LogarithmicMomentSubstitution.logarithmic_weight_jacobian",
+        "GRWTSK.Analysis.IntegralTransforms.LogarithmicMomentSubstitution.logarithmic_moment_identity",
+        "GRWTSK.Analysis.IntegralTransforms.LogarithmicMomentSubstitution.logarithmic_integral_zero",
+        "GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileCutoff.exponential_floor_bounds",
+        "GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileCutoff.logarithmic_profile_zero_above_floor",
+        "GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileCutoff.full_logarithmic_integer_inventory",
+        "GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileDerivative.logarithmic_profile_hasDerivAt",
+        "GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileDerivative.logarithmic_profile_derivative_abs_le",
+        "GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileRegularity.logarithmic_profile_zero_left",
+        "GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileRegularity.logarithmic_profile_contDiff",
+        "GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileWeights.reciprocal_sqrt_upper_weight",
+        "GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileWeights.logarithmic_sqrt_upper_weight",
+        "GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileWeights.logarithmic_sqrt_lower_weight",
+        "GRWTSK.Analysis.Integration.CompactWeightedDerivativeMoments.compact_weight_integrable",
+        "GRWTSK.Analysis.Integration.CompactWeightedDerivativeMoments.weighted_deriv_integral",
+        "GRWTSK.Analysis.Integration.CompactWeightedDerivativeMoments.first_weighted_deriv_integral",
+        "GRWTSK.Analysis.Integration.CompactWeightedDerivativeMoments.weighted_second_deriv_integral",
+        "GRWTSK.Analysis.Integration.CompactWeightedDerivativeMoments.first_weighted_second_deriv_integral",
+        "GRWTSK.Analysis.Integration.CompactWeightedDerivativeMoments.differential_moments_zero",
+        "GRWTSK.Analysis.Integration.FiniteUnitSumVariation.unit_interval_sample_error",
+        "GRWTSK.Analysis.Integration.FiniteUnitSumVariation.finite_unit_sum_error",
+        "GRWTSK.Analysis.Integration.PositiveHalfLineCutoffBalance.positive_halfline_cutoff_balance",
+        "GRWTSK.Analysis.Integration.PositiveHalfLineCutoffBalance.positive_halfline_sample_price",
+        "GRWTSK.NumberTheory.ArithmeticFunctions.LogarithmicShiftKernelBounds.literal_kernel_polynomial_price",
+        "GRWTSK.NumberTheory.ArithmeticFunctions.LogarithmicShiftKernelBounds.literal_kernel_original_window_price"
+      ]
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/NonzeroVectorRealization.lean",
+      "sha256": "9e07c221f6156209f5b85377c8c1d66dcc67743b936560031da1c02bb958e743",
+      "selected": [
+        "GRWTSK.Analysis.InnerProductSpace.NonzeroVectorRealization.realization_map_apply",
+        "GRWTSK.Analysis.InnerProductSpace.NonzeroVectorRealization.realization_map_self",
+        "GRWTSK.Analysis.InnerProductSpace.NonzeroVectorRealization.realization_map_norm",
+        "GRWTSK.Analysis.InnerProductSpace.NonzeroVectorRealization.realization_map_norm_minimal",
+        "GRWTSK.Analysis.InnerProductSpace.NonzeroVectorRealization.exists_minimal_realization"
+      ]
+    },
+    {
+      "path": "GRWTSK/LinearAlgebra/Matrix/Checks/Positive/SingularCongruenceObstruction.lean",
+      "sha256": "6fd9d60696fe068f41a0551a991d3c70fac09f6c045c26087b876641fef4ee20",
+      "selected": [
+        "GRWTSK.LinearAlgebra.Matrix.SingularCongruenceObstruction.singular_square_congruence_ne_positive_definite",
+        "GRWTSK.LinearAlgebra.Matrix.SingularCongruenceObstruction.zero_row_square_congruence_ne_positive_definite"
+      ]
+    },
+    {
+      "path": "GRWTSK/LinearAlgebra/BilinearForm/Checks/Positive/ZeroCoordinateObstruction.lean",
+      "sha256": "1571aef623f24add84226f10724b2434b6a4dfdd4e17ac0dd738a75ccc3e4304",
+      "selected": [
+        "GRWTSK.LinearAlgebra.ZeroCoordinateObstruction.coordinate_quadratic_eq",
+        "GRWTSK.LinearAlgebra.ZeroCoordinateObstruction.no_uniform_domination",
+        "GRWTSK.LinearAlgebra.ZeroCoordinateObstruction.diagonal_scale_ne_positive",
+        "GRWTSK.LinearAlgebra.ZeroCoordinateObstruction.zero_preserving_map_ne_target"
+      ]
+    },
+    {
+      "path": "GRWTSK/Analysis/Calculus/Checks/Positive/EvenLinearDefect.lean",
+      "sha256": "0d980b58dd6da49b59dd77d4d7bffaa2bcc7f07258c9dbbafd52c3c114b3acc9",
+      "selected": [
+        "GRWTSK.Analysis.Calculus.EvenLinearDefect.even_deriv_at_zero",
+        "GRWTSK.Analysis.Calculus.EvenLinearDefect.not_differentiable_at_zero_of_linear_defect"
+      ]
+    },
+    {
+      "path": "GRWTSK/Analysis/Integration/Checks/Positive/TranslationSeamLowerBound.lean",
+      "sha256": "1c6990791f874fcd3a1dea29776db03851e5c829b93d854140e2d728579306af",
+      "selected": [
+        "GRWTSK.Analysis.Integration.TranslationSeamLowerBound.right_seam_lower_bound",
+        "GRWTSK.Analysis.Integration.TranslationSeamLowerBound.positive_trace_eventual_seam_lower_bound"
+      ]
+    },
+    {
+      "path": "GRWTSK/Analysis/Convolution/Checks/Positive/AutocorrelationTranslationEnergy.lean",
+      "sha256": "206ac5b8a647e6d333bcb1bcfaf5fae53917afbe684f75782844935c0b45ad62",
+      "selected": [
+        "GRWTSK.Analysis.Convolution.AutocorrelationTranslationEnergy.autocorrelation",
+        "GRWTSK.Analysis.Convolution.AutocorrelationTranslationEnergy.translated_memLp",
+        "GRWTSK.Analysis.Convolution.AutocorrelationTranslationEnergy.translated_product_integrable",
+        "GRWTSK.Analysis.Convolution.AutocorrelationTranslationEnergy.translated_difference_square_integrable",
+        "GRWTSK.Analysis.Convolution.AutocorrelationTranslationEnergy.zero_eq_square_integral",
+        "GRWTSK.Analysis.Convolution.AutocorrelationTranslationEnergy.even",
+        "GRWTSK.Analysis.Convolution.AutocorrelationTranslationEnergy.defect_eq_half_translation_energy",
+        "GRWTSK.Analysis.Convolution.AutocorrelationTranslationEnergy.defect_nonneg"
+      ]
+    },
+    {
+      "path": "GRWTSK/Analysis/Convolution/Checks/Positive/CompactProfileFifthDerivativeObstruction.lean",
+      "sha256": "e07c7aa206cc61141736905da6ab48fcfb792e6fb106b89868a7703c3ecd5247",
+      "selected": [
+        "GRWTSK.Analysis.Convolution.CompactProfileFifthDerivativeObstruction.second_representative_memLp",
+        "GRWTSK.Analysis.Convolution.CompactProfileFifthDerivativeObstruction.normalized_second_interior_continuous",
+        "GRWTSK.Analysis.Convolution.CompactProfileFifthDerivativeObstruction.actual_second_autocorrelation_not_differentiable_at_zero",
+        "GRWTSK.Analysis.Convolution.CompactProfileFifthDerivativeObstruction.fourth_correlation_eq_autocorrelation",
+        "GRWTSK.Analysis.Convolution.CompactProfileFifthDerivativeObstruction.fourth_correlation_not_differentiable_at_zero",
+        "GRWTSK.Analysis.Convolution.CompactProfileFifthDerivativeObstruction.correlation_not_contDiff_five"
+      ]
+    },
+    {
+      "path": "GRWTSK/Analysis/Calculus/Checks/Positive/SupportEdgeDifferentiability.lean",
+      "sha256": "691438ec319a0ceefcc6e4617df772f69b14c90fdbd68b7e6af6342ab272911b",
+      "selected": [
+        "GRWTSK.Analysis.Calculus.SupportEdgeDifferentiability.deriv_zero_of_zero_right",
+        "GRWTSK.Analysis.Calculus.SupportEdgeDifferentiability.not_differentiable_of_left_linear_contact"
+      ]
+    },
+    {
+      "path": "GRWTSK/Analysis/Convolution/Checks/Positive/CompactSupportContact.lean",
+      "sha256": "7898eb54dabf4a0c3ce819ff9f03f4576a0405711aeddfff868db87efe8db139",
+      "selected": [
+        "GRWTSK.Analysis.Convolution.CompactSupportContact.closedProfile",
+        "GRWTSK.Analysis.Convolution.CompactSupportContact.correlation_zero_of_shift_ge_width",
+        "GRWTSK.Analysis.Convolution.CompactSupportContact.short_overlap_product_nonneg",
+        "GRWTSK.Analysis.Convolution.CompactSupportContact.overlap_product_lower_bound",
+        "GRWTSK.Analysis.Convolution.CompactSupportContact.positive_traces_eventual_overlap_lower_bound"
+      ]
+    },
+    {
+      "path": "GRWTSK/Analysis/Convolution/Checks/Positive/CompactProfileSupportEdge.lean",
+      "sha256": "23f64229c0a62b3677d82e2a3747e145422cb78c9ff7ce3f6afdac8b7b24399d",
+      "selected": [
+        "GRWTSK.Analysis.Convolution.CompactProfileSupportEdge.normalized_second_interior_even",
+        "GRWTSK.Analysis.Convolution.CompactProfileSupportEdge.normalized_second_interior_left_pos",
+        "GRWTSK.Analysis.Convolution.CompactProfileSupportEdge.actual_second_autocorrelation_zero_ge_two_scale",
+        "GRWTSK.Analysis.Convolution.CompactProfileSupportEdge.actual_second_autocorrelation_left_contact",
+        "GRWTSK.Analysis.Convolution.CompactProfileSupportEdge.actual_second_autocorrelation_not_differentiable_at_two_scale",
+        "GRWTSK.Analysis.Convolution.CompactProfileSupportEdge.fourth_correlation_not_differentiable_at_two_scale"
+      ]
+    },
+    {
+      "path": "GRWTSK/Analysis/Inequalities/Checks/Positive/FiniteShiftedDerivativeBounds.lean",
+      "sha256": "4f58044c84113748f113cfcff9a56a3839104c0f7267cc0cfeea0d26a6ceb114",
+      "selected": [
+        "GRWTSK.ProofHorizon.CorkscrewChamberCap.KernelDerivativePrice.weightMass",
+        "GRWTSK.ProofHorizon.CorkscrewChamberCap.KernelDerivativePrice.literal_weight_nonneg",
+        "GRWTSK.ProofHorizon.CorkscrewChamberCap.KernelDerivativePrice.weighted_difference_abs_le",
+        "GRWTSK.ProofHorizon.CorkscrewChamberCap.KernelDerivativePrice.finite_shifted_price",
+        "GRWTSK.ProofHorizon.CorkscrewChamberCap.KernelDerivativePrice.correlation_first_abs_le",
+        "GRWTSK.ProofHorizon.CorkscrewChamberCap.KernelDerivativePrice.correlation_second_abs_le",
+        "GRWTSK.ProofHorizon.CorkscrewChamberCap.KernelDerivativePrice.polarity_kernel_hasDerivAt",
+        "GRWTSK.ProofHorizon.CorkscrewChamberCap.KernelDerivativePrice.polarity_kernel_deriv_eq",
+        "GRWTSK.ProofHorizon.CorkscrewChamberCap.KernelDerivativePrice.polarity_kernel_first_hasDerivAt",
+        "GRWTSK.ProofHorizon.CorkscrewChamberCap.KernelDerivativePrice.polarity_kernel_second_deriv_eq",
+        "GRWTSK.ProofHorizon.CorkscrewChamberCap.KernelDerivativePrice.polarity_kernel_abs_price",
+        "GRWTSK.ProofHorizon.CorkscrewChamberCap.KernelDerivativePrice.polarity_kernel_first_abs_price",
+        "GRWTSK.ProofHorizon.CorkscrewChamberCap.KernelDerivativePrice.polarity_kernel_second_abs_price"
+      ]
+    },
+    {
+      "path": "checks/NumberTheory/ArithmeticFunctions/LogarithmicShiftKernelRegularity.lean",
+      "sha256": "8cc0000390fc66b6c2d1c6d5ca96fbbe24e1711c865a97cfcfa73906929315af",
+      "selected": [
+        "GRWTSK.NumberTheory.ArithmeticFunctions.LogarithmicShiftKernelRegularity.edgeReading",
+        "GRWTSK.NumberTheory.ArithmeticFunctions.LogarithmicShiftKernelRegularity.edge_reading_strict_inside",
+        "GRWTSK.NumberTheory.ArithmeticFunctions.LogarithmicShiftKernelRegularity.two_mem_inventory",
+        "GRWTSK.NumberTheory.ArithmeticFunctions.LogarithmicShiftKernelRegularity.correlation_third_zero_of_two_mul_lt",
+        "GRWTSK.NumberTheory.ArithmeticFunctions.LogarithmicShiftKernelRegularity.correlation_fourth_zero_of_two_mul_le",
+        "GRWTSK.NumberTheory.ArithmeticFunctions.LogarithmicShiftKernelRegularity.kernel_second_deriv_eventually_eq_label_two",
+        "GRWTSK.NumberTheory.ArithmeticFunctions.LogarithmicShiftKernelRegularity.kernel_second_deriv_not_differentiable_at_edge",
+        "GRWTSK.NumberTheory.ArithmeticFunctions.LogarithmicShiftKernelRegularity.polarity_kernel_not_contDiff_three"
+      ]
+    },
+    {
+      "path": "GRWTSK/Analysis/IntegralTransforms/Checks/Positive/CompactProfileLogarithmicDerivative.lean",
+      "sha256": "67b6596909ee9ce1ee7ee235ffeead6b61e267e37c0f2011308646527e6bd2e6",
+      "selected": [
+        "GRWTSK.Analysis.IntegralTransforms.CompactProfileLogarithmicDerivative.actual_logarithmic_profile_hasDerivAt",
+        "GRWTSK.Analysis.IntegralTransforms.CompactProfileLogarithmicDerivative.actual_logarithmic_profile_derivative_abs_le"
+      ]
+    },
+    {
+      "path": "GRWTSK/Analysis/Convolution/Checks/CompactProfileTailSignsAudit.lean",
+      "sha256": "3d4d248c32344255befd45f4f24b8bdbba51a7f19f274ba52be1eaf0d94a64e1",
+      "selected": [
+        "GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.tail_product_signs",
+        "GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.tail_first_product_continuous",
+        "GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.tail_curvature_product_continuous",
+        "GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.tail_first_product_integrable",
+        "GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.tail_curvature_product_integrable",
+        "GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.tail_first_deriv_eq_integral",
+        "GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.tail_first_deriv_nonpos",
+        "GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.tail_second_deriv_pos",
+        "GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.tail_atom_pos"
+      ]
+    },
+    {
+      "path": "GRWTSK/Analysis/TestFunctions/Checks/PowerFourResidualSignsAudit.lean",
+      "sha256": "057a46f508ef36c98f539e340ebe05a02b5455fd5b67d966fc8463d8f1ef51ed",
+      "selected": [
+        "GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.normalized_source_closed_factor",
+        "GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.normalized_source_deriv_closed_factor",
+        "GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.right_strip_coordinate_bounds",
+        "GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.right_strip_bracket_signs",
+        "GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.normalized_source_right_strip_signs",
+        "GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.normalized_source_reflected_on_support",
+        "GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.normalized_source_left_strip_signs",
+        "GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.normalized_source_deriv_zero_outside",
+        "GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.normalized_source_endpoint_zero"
+      ]
+    },
+    {
+      "path": "checks/NumberTheory/ArithmeticFunctions/LogarithmicShiftKernelPositiveSectorAudit.lean",
+      "sha256": "bc5491187aa4406116f251e6a87d84cb7d3879c9dd8647ae6adf2b26b6311074",
+      "selected": [
+        "GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.tailReading",
+        "GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.tail_reading_strict_inside",
+        "GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.two_mem_inventory",
+        "GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.higher_shift_above_support",
+        "GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.polarity_kernel_tail_eq_atom",
+        "GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.strict_positive_sector_of_tail_atom",
+        "GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.polarity_kernel_tail_pos",
+        "GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.strict_positive_sector_nonempty",
+        "GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.strict_positive_sector_volume_pos"
+      ]
+    }
+  ],
+  "closure": [
+    {
+      "path": "GRWTSK/Analysis/Calculus/CompactPolynomialDerivatives.lean",
+      "sha256": "4abb0074bb8a66137768bbd25d59ab896b347654f4944383f6df1e9e9d9fa8e4"
+    },
+    {
+      "path": "GRWTSK/Analysis/Calculus/CompactProfileBoundaryCounterexamples.lean",
+      "sha256": "15f107e78eddae829dbeb2d205520193155df4500a67fc4b3dbd91cee902ad07"
+    },
+    {
+      "path": "GRWTSK/Analysis/Calculus/CompactProfileDerivativeEnergy.lean",
+      "sha256": "dc105862ecda0a65b5df3feef43539ce48e8ad5e2e288869be74df8345c5faa4"
+    },
+    {
+      "path": "GRWTSK/Analysis/Calculus/CompactProfileNormalization.lean",
+      "sha256": "469dd45166d579a93c55fda6ae66a2f3f0bdad54d9761e59ab66fc9cfdd95564"
+    },
+    {
+      "path": "GRWTSK/Analysis/Calculus/EvenLinearDefect.lean",
+      "sha256": "fd33f31e06dbab1fc8bb7fa5f65bbed4fad4e60bff11552d7ad01b3472dae462"
+    },
+    {
+      "path": "GRWTSK/Analysis/Calculus/PolynomialBumpDerivativeEnergy.lean",
+      "sha256": "9a4adaa8061a277138bdd1c3e9897b4348ab6517a0361a18a6f5654de438309d"
+    },
+    {
+      "path": "GRWTSK/Analysis/Calculus/PolynomialBumpNormalization.lean",
+      "sha256": "c9327e4d91a040e78f9e1292f48e54f8d6f33ad0676d0b6ab1977199b1b65dc3"
+    },
+    {
+      "path": "GRWTSK/Analysis/Calculus/SupportEdgeDifferentiability.lean",
+      "sha256": "fb5d4c73431721a1bcfc246367389163768c499594e5ff57a5161d35a4e52f04"
+    },
+    {
+      "path": "GRWTSK/Analysis/Convolution/AutocorrelationDerivativeEnergy.lean",
+      "sha256": "8a8d4a85d38b81db1bd37a0ae0698780791082f979d125d20ab3d928c7e7bb8e"
+    },
+    {
+      "path": "GRWTSK/Analysis/Convolution/AutocorrelationSecondDerivative.lean",
+      "sha256": "decf56fc025da8133170d768dcc2c467508ee715050fc6e7633a42a1ed7060d3"
+    },
+    {
+      "path": "GRWTSK/Analysis/Convolution/AutocorrelationTranslationEnergy.lean",
+      "sha256": "f7c03448d46152139090048c97031080e24b0bf25add6ae583a9a33c0e874ec3"
+    },
+    {
+      "path": "GRWTSK/Analysis/Convolution/CompactProfileCorrelation.lean",
+      "sha256": "3c094738e9d200f5155bf2dfe6ffa914cae6f282e932a39400dc21412141fb9a"
+    },
+    {
+      "path": "GRWTSK/Analysis/Convolution/CompactProfileDifferentialMoments.lean",
+      "sha256": "dc5e26a70f591f9ab3551b6a94b518d7c3b7cdb881512d081ed460e70e13993b"
+    },
+    {
+      "path": "GRWTSK/Analysis/Convolution/CompactProfileFifthDerivativeObstruction.lean",
+      "sha256": "fe87538d3cc33db3cf97c4fe434bbd3b87f6c1e44eadeffdca11f9aa49abb341"
+    },
+    {
+      "path": "GRWTSK/Analysis/Convolution/CompactProfileFirstPoleMoment.lean",
+      "sha256": "1e02ac2c25c2e1b2c713f2ffd80052f37db8e420e249cf2ef0d582adee54d722"
+    },
+    {
+      "path": "GRWTSK/Analysis/Convolution/CompactProfileHigherDerivatives.lean",
+      "sha256": "616d623bd79563b690b557b8b4db797b946a0c43e48e5a5ac0cf87f69e4ae009"
+    },
+    {
+      "path": "GRWTSK/Analysis/Convolution/CompactProfileSupportEdge.lean",
+      "sha256": "1de9022d6a752dd11a53aae45461a3c14c0e0b87b427ed27f76c5b87f926e2e6"
+    },
+    {
+      "path": "GRWTSK/Analysis/Convolution/CompactProfileTailSigns.lean",
+      "sha256": "5873fcc9d3f4f5adb3f024cae522275933b692796ac37cac6f540809def1e873"
+    },
+    {
+      "path": "GRWTSK/Analysis/Convolution/CompactSupportContact.lean",
+      "sha256": "170042438dc7809e0f8aa6abb3fb9a3e015c48ae22f917c350c8d05344a2dfde"
+    },
+    {
+      "path": "GRWTSK/Analysis/Convolution/ExponentialMoments.lean",
+      "sha256": "a1f229a1860ed76fcc9a5ea19e75a30492e1b7aa4bea333c376b297599e991f0"
+    },
+    {
+      "path": "GRWTSK/Analysis/Convolution/FiniteTranslateIndependence.lean",
+      "sha256": "b277e1865a0c5b0a1289725adb791779a52a012411c3dea11bb98a61a9f09d44"
+    },
+    {
+      "path": "GRWTSK/Analysis/Convolution/FirstMomentConvolution.lean",
+      "sha256": "c6e2243a0ae9cba9a118351cd0a50cbe0bbe27a6e549df27c8675f56a7c5340c"
+    },
+    {
+      "path": "GRWTSK/Analysis/Convolution/PolynomialBumpHigherDerivatives.lean",
+      "sha256": "a7dee347df5fb179c42be0b721712f1d5b23752dba21861f53a370b3300418cf"
+    },
+    {
+      "path": "GRWTSK/Analysis/Convolution/PolynomialBumpRegularity.lean",
+      "sha256": "3696fbcf598d011426fedcbd8f0b3e9ee568412165191e1d5c76b202a83e159f"
+    },
+    {
+      "path": "GRWTSK/Analysis/DigammaSeries.lean",
+      "sha256": "8ed1593b5f8bed7443f94766d070eb3afdda19408cc14de210f250fc8a236acd"
+    },
+    {
+      "path": "GRWTSK/Analysis/Distribution/CompactProfileDilation.lean",
+      "sha256": "bdda47c4b79cd1c9d78b0a770997dd1dabd2f3fa0608fa5137981609b54156e5"
+    },
+    {
+      "path": "GRWTSK/Analysis/Fourier/DigammaMultiplier.lean",
+      "sha256": "36fe566a76070ce0f61315e71b9744374d87c0ff6cceb943294a73f3dc14b65a"
+    },
+    {
+      "path": "GRWTSK/Analysis/Fourier/LogarithmicDomain.lean",
+      "sha256": "87c881d275b4d18fb6f8ca23ccc64dd859764e3fb1b6f17ebcde6e0de273e65c"
+    },
+    {
+      "path": "GRWTSK/Analysis/Fourier/PolynomialBumpEstimates.lean",
+      "sha256": "90cf3b3c0c04c9624fa273349607c9511815630c75cc5431451caa4533f6233d"
+    },
+    {
+      "path": "GRWTSK/Analysis/Inequalities/CompactProfileDifferentialBounds.lean",
+      "sha256": "d8981eeb5d3152a5930535a9c530c3b626ce8e5dc0b469d4a2396f37cbc43d85"
+    },
+    {
+      "path": "GRWTSK/Analysis/Inequalities/FiniteLogarithmicProfileBounds.lean",
+      "sha256": "c804f768fe8707acaefbf500f8d25f1b47d9c4e27a94da1aa8c706b35b98a91e"
+    },
+    {
+      "path": "GRWTSK/Analysis/Inequalities/FiniteShiftedDerivativeBounds.lean",
+      "sha256": "deaf9c4af549226f4cf68d08487cf8d2d96e069de6c0c10cffa986c4a5353382"
+    },
+    {
+      "path": "GRWTSK/Analysis/Inequalities/LogarithmicProfileIntegralPrices.lean",
+      "sha256": "266f2fdb8139ced38bf32a7a5168470b56b89960eba991b54efc40f05f810cef"
+    },
+    {
+      "path": "GRWTSK/Analysis/Inequalities/PolynomialEnergyRatio.lean",
+      "sha256": "891c2f23592e3e788608498e78ac7f41f7363e755fcbc7bf5a8b25a99c3817d4"
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/CausalContactHilbertSeparation.lean",
+      "sha256": "ba0b32da1267b977f04f3c4c7fb84de0c21e9b5872a16af680b82b81d4cb554d"
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/CausalContactOperatorCost.lean",
+      "sha256": "332e84c05f21019353593bed1b48af23692cce2e1ba5e8a9a2bf185087572f32"
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/CausalContactSeparation.lean",
+      "sha256": "7da341b1244be7bf1eb919a7a37ee8d783e24b557fa95c531ef878ee9e7feb1b"
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/CausalFiniteOperatorSeparation.lean",
+      "sha256": "ad82dda7161f4821b862e1c011ae1ac911ba1c1869f4caa61b26cc2f71ae79b8"
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/CausalGramCongruenceObstruction.lean",
+      "sha256": "19846946b1ae350fd8f762a152ef1019ce40eeed96b9cd0811da62f2d778b2eb"
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/CausalIndividualRealization.lean",
+      "sha256": "c3225454b6d0d14df6d3ea68d9367e764de96d0ea0273c123ab274906d6a3f87"
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/CausalLastLabelOperatorCost.lean",
+      "sha256": "4508307710ec2f1c7cf14d918ff9f34d37e0f98291d42ba96b9ef6e3a42f9e11"
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/CausalRealizationPolynomialObstruction.lean",
+      "sha256": "26a7db34e1f2066ccd7ebadd1a46c08b3617726d991a2ec602b10cc203effd9d"
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/CausalResponseGram.lean",
+      "sha256": "e563cca4c98955fea76d39fbbd64a5f7ad18688769b89636c52418d315a642db"
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/CompactResidualNormalization.lean",
+      "sha256": "b2e41da84e528d6e5b6f85289a4c6123995d1bad00d7cf54a8d112fbf5b38b4d"
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/CompactSourceGramPositiveDefinite.lean",
+      "sha256": "39a750fe29d1b7c55b23b56f2b3c2a6db17234ce3bac7f8aa55d27fe58393d30"
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/DilationGram.lean",
+      "sha256": "701395de80454619a0cc384543d42935b500a46ba1676e87e52cbb907dd479ab"
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/DilationResponseSeparation.lean",
+      "sha256": "191a35b79935a6c65eed972463d5d24a9a90a2caac8c75108435fad274b81452"
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/NonzeroVectorRealization.lean",
+      "sha256": "1b4a9f99d8138865117d24b2d038a327ebade0a7ab5a21b94fbd74c68cbee25f"
+    },
+    {
+      "path": "GRWTSK/Analysis/IntegralTransforms/CompactProfileLogarithmicDerivative.lean",
+      "sha256": "245fecbd8e99aa4dc35863aa8de1dc69f5132446018fc3ff0937b3ae0983734c"
+    },
+    {
+      "path": "GRWTSK/Analysis/IntegralTransforms/CompactProfileLogarithmicMoment.lean",
+      "sha256": "000b29ebda316c72bfad12f6f82b5af294b43f9041487b0f5d72e540c8e2e5bb"
+    },
+    {
+      "path": "GRWTSK/Analysis/IntegralTransforms/CompactProfileLogarithmicRegularity.lean",
+      "sha256": "bc7d455945e98f2374ad91a8c8d23e4d9f15d8f9f1df2bd073972ca2c692ee64"
+    },
+    {
+      "path": "GRWTSK/Analysis/IntegralTransforms/LogarithmicMomentSubstitution.lean",
+      "sha256": "8f09bfa02c86da0e30c8ee80f4887dd17d48d3e0e803b5b8a0631d1052cab4a7"
+    },
+    {
+      "path": "GRWTSK/Analysis/IntegralTransforms/LogarithmicProfileCutoff.lean",
+      "sha256": "09121b3ec38b61abae9563f1b6ecff0f0ba597f43637154394bcf1f0418dd1ac"
+    },
+    {
+      "path": "GRWTSK/Analysis/IntegralTransforms/LogarithmicProfileDerivative.lean",
+      "sha256": "bfc0908dc1f804b9c77f844b3c481abae104f6084ad9ad19118678b786ba65b3"
+    },
+    {
+      "path": "GRWTSK/Analysis/IntegralTransforms/LogarithmicProfileRegularity.lean",
+      "sha256": "093bef8246dab7871afda0418fb1d02cfd2dfa48c1fc389e1ff64ead67193ea4"
+    },
+    {
+      "path": "GRWTSK/Analysis/IntegralTransforms/LogarithmicProfileWeights.lean",
+      "sha256": "2da34cedc49ab014d2e1f3a9dc8b8c42d925f879cecd0503daa9bbb2bac2122c"
+    },
+    {
+      "path": "GRWTSK/Analysis/Integration/CompactPolynomialMoments.lean",
+      "sha256": "3c6b04e8438292b9ac75badd78a21244d26bc10e0d3e5a9fd986114582955e77"
+    },
+    {
+      "path": "GRWTSK/Analysis/Integration/CompactWeightedDerivativeMoments.lean",
+      "sha256": "09a62702c191806488014bdae2d00b3d2e694430e469753181963f01dd014804"
+    },
+    {
+      "path": "GRWTSK/Analysis/Integration/FiniteUnitSumVariation.lean",
+      "sha256": "20ce18d7f9d2197b15bcb85f2bf6d534354202bdbc09f26a6436fcae5ca91b63"
+    },
+    {
+      "path": "GRWTSK/Analysis/Integration/PositiveHalfLineCutoffBalance.lean",
+      "sha256": "34446d67fbae7e7adcac18b3eabda9e9246803aee12aff4a80b426c747996850"
+    },
+    {
+      "path": "GRWTSK/Analysis/Integration/TranslationSeamLowerBound.lean",
+      "sha256": "8cb9f90f05e03aa1f8590004f3ff8fb93541f48211481123cc48a86cafcf5aca"
+    },
+    {
+      "path": "GRWTSK/Analysis/IntervalIntegral/Reflection.lean",
+      "sha256": "55325de763afe3f5c95efab07f1a452a77597cf9621fe124555b03a9ffbfffa3"
+    },
+    {
+      "path": "GRWTSK/Analysis/ReciprocalKernel.lean",
+      "sha256": "0a926ada5b98fa02e97f6a962160486e758f2716f6d870c375e61e84635282d2"
+    },
+    {
+      "path": "GRWTSK/Analysis/SpecialFunctions/DigammaFourierBound.lean",
+      "sha256": "ee1a6a655ef921b9e20f6eff0518f0d115c35eb8369c61811aaca52350ad547e"
+    },
+    {
+      "path": "GRWTSK/Analysis/SpecialFunctions/ExponentialFloorGap.lean",
+      "sha256": "34543ac708884a829a551b2c2a469d7046de8039a168aad83ae4e60598aa2851"
+    },
+    {
+      "path": "GRWTSK/Analysis/SpecialFunctions/ExponentialPolynomialDomination.lean",
+      "sha256": "c36daaa9cd6addc1802da35a661facb707ba919f37e60f0433ddf390a92275fc"
+    },
+    {
+      "path": "GRWTSK/Analysis/SpecialFunctions/SquaredInverseBump.lean",
+      "sha256": "d8edd04841c7bab3c52e385bb74f5c23b6596e6e8f9453b59a24bb8e7421d48f"
+    },
+    {
+      "path": "GRWTSK/Analysis/TestFunctions/PolynomialBumpNormalization.lean",
+      "sha256": "8938ea1f677a595343229a06c00978d6380875e4faaf5118859eede54cf239f7"
+    },
+    {
+      "path": "GRWTSK/Analysis/TestFunctions/PolynomialBumpSecondEnergy.lean",
+      "sha256": "d4e956319671eb45319648ec4df2d778a1c596e2e5655638ae73550924b10412"
+    },
+    {
+      "path": "GRWTSK/Analysis/TestFunctions/PowerFourResidualSigns.lean",
+      "sha256": "c0808e0025edb85a05ee255aac5aa94e5110aa1c8141ce6a57d23b7b39ae05b5"
+    },
+    {
+      "path": "GRWTSK/Analysis/WeakDerivatives/PolynomialBump.lean",
+      "sha256": "1a9ff14af84efd81826a2b3c632cc2f617d2efc0fe4f10374800a5b54df30144"
+    },
+    {
+      "path": "GRWTSK/LinearAlgebra/BilinearForm/ZeroCoordinateObstruction.lean",
+      "sha256": "f543e5d1fa67c01475a916df01199d0966d36595cd9e20ca06a35fd1d3b2571e"
+    },
+    {
+      "path": "GRWTSK/LinearAlgebra/LinearMap/FiniteMixingObstruction.lean",
+      "sha256": "f41b47de66e4be14fcf2dfb3c8c81cd438ceafb06fecd2935d90c6962fbb4632"
+    },
+    {
+      "path": "GRWTSK/LinearAlgebra/Matrix/SingularCongruenceObstruction.lean",
+      "sha256": "7899d4d071aba9e9e84de316cbc902b24dbd0589041b6e11f53d40036ed20677"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ArithmeticFunctions/LogarithmicShiftKernelBounds.lean",
+      "sha256": "45130c2a967f4284279520a217a8574a5f0c28cb79e44b8c7ed922154d5be558"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ArithmeticFunctions/LogarithmicShiftKernelPositiveSector.lean",
+      "sha256": "aa23e99cfbac1d7fd6064c68a804eb92603a2f269ef8adab91a49df1e76605cb"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ArithmeticFunctions/LogarithmicShiftKernelRegularity.lean",
+      "sha256": "ffe598f53abfe75d7b1d7f6cf39272196ca9c7d4ec9b8d97b781d79cd56ba668"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Chebyshev/CompactProfileExplicitFormula.lean",
+      "sha256": "554c43f9096bba277f2c73172c3f6e4dcb54a9b4da0abd79c8a6bc775854125b"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Chebyshev/CompactProfilePairingIntegrability.lean",
+      "sha256": "797ade6a77762c2d421a3c28a9a2a6c5f3c645a343a854ed02ccbb7f3f0dc9eb"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Chebyshev/CorrelationPairing.lean",
+      "sha256": "fe9453df597dc7a0230f3fedde3f2c3a8b616cac003f70feb65986b64e80bac3"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Chebyshev/FiniteIntegrationByParts.lean",
+      "sha256": "d901cf9da7a01829f620c3b59b8dc89cea5b46d1113b919b14d618b9bb9fe3ef"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ExplicitFormula/CorrelationPairing.lean",
+      "sha256": "1b58187402ac027a0c6f48f3a70b48af3eede19f6e39870368b25bc46d09887b"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Moebius/SignedIntegralSectorBounds.lean",
+      "sha256": "6f46187c269e51719dd2104c5df7480c42ebad7bdc38bf3f2590504063de447e"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Moebius/WeightedIntegralEnergy.lean",
+      "sha256": "8124ef6fbeca2c8244d7401536d70c43a6ecd31279366c20ea96bf6fbaa84380"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Moebius/WeightedIntegralGrowth.lean",
+      "sha256": "ee5dc6dc631638538445d66293cbdf7897a3c21beddc197a7cb8365a05025377"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Moebius/WeightedSummatoryIntegral.lean",
+      "sha256": "041fa625e5e2bc239e3df3b471f545f7ba080093723c2f3710c08ee4bc92c8c2"
+    }
+  ],
+  "pinned_config": [
+    {
+      "path": "lean-toolchain",
+      "sha256": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b"
+    },
+    {
+      "path": "lakefile.toml",
+      "sha256": "a23f6d313f8458192328f09635ffef9078cb684374c2aac2743af541bf59b4e3"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec"
+    },
+    {
+      "path": "GRWTSK/Logic/ProofChecking/Checks/OwnedDeclarationAudit.lean",
+      "sha256": "2ef82eba00df6982ba9f693896d77eff68d9cf39e9def13a29cc9c2eb4e26c74"
+    }
+  ],
+  "current_acceptance": {
+    "compiler_certified": false,
+    "owned_census_executed": false,
+    "root_consumer_compiled": false,
+    "direct_libraries": 54,
+    "new_libraries": 45,
+    "existing_exact_libraries": 9,
+    "selected_roots": 216,
+    "closure_modules": 86,
+    "note": "Pending native verification; publication does not follow until exact final receipt and review."
+  }
+}

@@ -54,7 +54,7 @@
     "canonical_source_sha256": "d6ca049d4674503df5b175e7028c41c742af43ec7c42389a3fb3528c8f6ec5ae",
     "Lean": "4.33.0",
     "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
-    "public_check": "checks/OrderedProductGaugeAudit.lean"
+    "public_check": "GRWTSK/Algebra/OrderedProduct/Conjugation/Checks/Audit.lean"
   },
   "local_direction": "grwtsk contributors",
   "formalization_and_checking_assistance": "OpenAI Codex",
