@@ -1,0 +1,127 @@
+{
+  "schema": "signed-core-bound-attempt-v1",
+  "date": "2026-10-14",
+  "repository": "grwtsk/math",
+  "branch": "main",
+  "inspected_base_commit": "f78dbb136fb62e44b41480bc781851856a76a0f9",
+  "status": "PARTIAL_NONUNIFORM_BOUND_ONLY",
+  "requested_uniform_bound": "NOT_PROVED",
+  "human_mathematical_direction": "grwtsk contributors",
+  "written_derivation_and_checks": "OpenAI ChatGPT",
+  "source_bindings": [
+    {
+      "path": "docs/mathematics/NumberTheory/Moebius/matched-pickup.md",
+      "git_blob_sha1": "2385e1ad19146f5fbd782e7238daf406c67c39b4",
+      "scope": "Literal finite core, localized atoms, and written paid-sector bounds; unchanged."
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/Moebius/logarithmic-mertens-boundary.md",
+      "git_blob_sha1": "6bcf3dbbdeff49134df7c647da33f9d8e8d94546",
+      "scope": "Previously written conditional zero-free transfer; no new formal acceptance."
+    }
+  ],
+  "new_written_results": [
+    {
+      "id": "SC1",
+      "premises": "Existing finite core and sector identities.",
+      "statement": "-123*c/2 <= Z(R) <= Gamma(R)+69*c, for every real R>=1. Gamma(R) denotes Gamma_(1/3)(log R).",
+      "proof": "Write B=D+P+Q+A. The paid-sector bounds give -69*c<=B<=123*c/2 and Gamma=Z+B>=0."
+    },
+    {
+      "id": "SC2",
+      "premises": "Actual closed Mobius prefix.",
+      "statement": "L(x)=int_(x/2)^x M(v)*v^(-3/2)dv - 2^(-1/2)*int_(x/4)^(x/2) M(v)*v^(-3/2)dv, x>=4.",
+      "proof": "Substitute V(x)=int_1^x M(v)*v^(-3/2)dv in the literal dyadic filter. Endpoints are unchanged; equivalently use continuous compact atom partial summation."
+    },
+    {
+      "id": "SC3",
+      "premises": "MertensLogSquareBound: abs(M(v))<=3*v/log(v)^2 for v>1. Published mathematics, not a native Lean supplier.",
+      "statement": "For R>=16: Z(R)<=69*c+216/25+81*(1-2^(-1/2))^2*int_(log16)^(log R) exp(t/3)/(t-log4)^4 dt. This bound is NOT uniform.",
+      "proof": "SC2 gives abs(L(x))<=9*(1-2^(-1/2))*sqrt(x)/log(x/4)^2. For startup, ell_n<=3/(5sqrt(n)) and sum_(n<=x)n^(-1/2)<=2sqrt(x) give Gamma(16)<216/25. Square the complete signed reading and integrate; do not split core signs."
+    },
+    {
+      "id": "SC4",
+      "premises": "Same as SC3.",
+      "statement": "For R>=4*exp(24): Z(R)<=C0+486*(1-2^(-1/2))^2*R^(1/3)/log(R/4)^4, C0=69*c+216/25+27*(1-2^(-1/2))^2*4^(1/3)*exp(8)/log(4)^3.",
+      "proof": "Set u=t-log4. On u>=24 the derivative of exp(u/3)/u^4 is at least one sixth of that function. The remaining compact integral is <=exp(8)/(3log(4)^3). The growing term tends to infinity, so this does not prove (*)."
+    },
+    {
+      "id": "SC5",
+      "premises": "Reported external ZF_7/8 plus the existing written, source-exact contour transfer.",
+      "statement": "For 3/8<sigma<=1/2 and R>=1: Z(R)<=69*c+8*B_sigma*R^(2*(sigma-1/3)), with B_sigma exactly as in the bound source guide. At sigma=2/5 the extra term is (42592/(9*pi))*exp(2400+1440^90)*R^(2/15).",
+      "proof": "Finite weight comparison gives H_(1/3)(log R)<=R^(2*(sigma-1/3))*H_sigma(log R). Apply Gamma_(1/3)<=8H_(1/3) and SC1. No new contour or coefficient bridge. The exponent cannot be removed."
+    },
+    {
+      "id": "SC6",
+      "premises": "Only the written finite atom/sector estimates, no Mertens decay or zero-free input.",
+      "statement": "For S>=R>=4, abs(B(S)-B(R))<=eta(R)=c*((25/2)*(4/R)^(2/3)+89*(4/R)^(1/6)). Thus B has a finite limit, and Z either has a finite real limit or tends to positive infinity.",
+      "proof": "Only smaller indices m>R/4 have future Gram mass. Diagonal and divisible-ray tails cost (5/2+10)c*(4/R)^(2/3). Short gaps cost 14c*(4/R)^(1/6). Split large-gcd coordinates a at sqrt(R/4): their tails cost (15+60)c*(4/R)^(1/6). Since Gamma is nondecreasing and Z=Gamma-B, the dichotomy follows."
+    },
+    {
+      "id": "SC7",
+      "premises": "The UNPROVED uniform core bound.",
+      "statement": "Its validity would exclude actual zeta zeros with Re(s)>=5/6, including the boundary. This is a necessary condition, not a new zero-free theorem.",
+      "proof": "The actual damped local reading would belong to L2. Its Laplace transform is bounded by norm(f)/sqrt(2epsilon) at z=1/3+epsilon+i*gamma. Its initial transform equals (1-2^(-z))*(1-2^(-z-1/2))/(z*(z+1/2)*zeta(z+1/2)); the numerator has no zeros for Re(z)>0. Analytic uniqueness excludes interior poles. A boundary zeta zero of multiplicity r>=1 would force epsilon^(-r), contradicting the L2 epsilon^(-1/2) bound."
+    }
+  ],
+  "external_sources": [
+    {
+      "authors": "Johnston, Leong, Tudzi",
+      "url": "https://www.arxiv.org/pdf/2408.04143v2",
+      "locator": "Theorem A.1, equation A.5, typeset page 24",
+      "inspection": "Parsed text and screenshot read. Constant 2.91890 supplies the relaxed 3. No Lean import."
+    },
+    {
+      "author": "Baiying Liu",
+      "url": "https://arxiv.org/html/2610.12234v1",
+      "locator": "Main theorem and Proposition 25.1",
+      "inspection": "Manuscript inspected, no independent native replay. Its boundary (1507-2sqrt(921))/1653 remains above 5/6; no supplier for (*) obtained."
+    }
+  ],
+  "verification": {
+    "finite_exact_checks": 15,
+    "runs": [
+      {
+        "mode": "normal",
+        "exit_code": 0,
+        "stdout": "PASS: 15 finite exact algebra/source identities; no uniform-core proof\n",
+        "stderr": ""
+      },
+      {
+        "mode": "optimized",
+        "exit_code": 0,
+        "stdout": "PASS: 15 finite exact algebra/source identities; no uniform-core proof\n",
+        "stderr": ""
+      }
+    ],
+    "general_analytic_proof": "WRITTEN_ONLY",
+    "pinned_lean_replay": "NOT_RUN: no Lean/Lake executable",
+    "owned_declaration_audit": "NOT_RUN: no Lean changes",
+    "full_repository_checks": "NOT_RUN: no full checkout, direct Git access fails DNS",
+    "old_source_and_receipts": "UNCHANGED",
+    "core_sign_parts": "Never separately bounded to prove a signed upper estimate."
+  },
+  "conversation_artifacts": [
+    {
+      "filename": "signed_core_bounds_attempt.md",
+      "bytes": 11539,
+      "sha256": "3911315e3ed24e04e1f9348a4c374591c543a1ade916538ebe3169da67878539",
+      "in_repository": false
+    },
+    {
+      "filename": "signed_core_attempt/check_scalar_and_source_identities.py",
+      "bytes": 2610,
+      "sha256": "833302d627d888ee1698caa938864f30602235010025000ea7ac58d513ab24d4",
+      "in_repository": false
+    }
+  ],
+  "nonclaims": {
+    "uniform_signed_core_bound": false,
+    "new_mertens_power_exponent": false,
+    "new_zero_free_region": false,
+    "P04_required": false,
+    "unconditional_native_boundary_admission": false,
+    "RH_proof": false
+  },
+  "remaining_gap": "A horizon-independent bound for the complete signed core, or an actual supplier crossing the 5/6 zeta line with the required weighted-energy return. Finite samples, a convergent paid correction and the cutoff-dependent estimates above do not supply it."
+}
