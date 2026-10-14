@@ -1,0 +1,44 @@
+{
+  "schema": "taxonomy-expansion-formal-custody/v1",
+  "status": "ARCHIVED_CANDIDATES_NOT_INSTALLED_OR_ADMITTED",
+  "base_repository": "grwtsk/math",
+  "base_commit": "d4802c5db02ffa5ffbafff118ec87dd9a091457c",
+  "lean_toolchain": "leanprover/lean4:v4.33.0",
+  "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "archive_sha256": "9a3ec88990cddc988bf70710311e98b69a77f650c7137cfa807ee013f61e26f0",
+  "archive_bytes": 5471,
+  "source_files": [
+    {
+      "path": "GRWTSK/Order/Taxonomy/ConservativeExtension.lean",
+      "bytes": 2912,
+      "sha256": "96a011aad5d1846dc6afedab0bbd7a7e5cd3b54bbe4a2f51d1f4b1caad84647e"
+    },
+    {
+      "path": "GRWTSK/Order/Taxonomy/Polyhierarchy.lean",
+      "bytes": 1801,
+      "sha256": "a39a7eb895c28f0714c64d5e77ea944cc36f3155e0df9a52459a88b3389a15c7"
+    },
+    {
+      "path": "GRWTSK/Order/Taxonomy/Projection.lean",
+      "bytes": 1149,
+      "sha256": "6a3aaecfa40a1e135fc1761c544e6fcd68466bbbb524416fda9db79ebcc4967e"
+    },
+    {
+      "path": "GRWTSK/Logic/Classification/SemanticEvidence.lean",
+      "bytes": 2921,
+      "sha256": "6f5d1bdf1d948a1e5e54b364b1206396666a3bc97f15e79eb4a4c3fe4ea4104b"
+    },
+    {
+      "path": "GRWTSK/Logic/Classification/Coverage.lean",
+      "bytes": 3134,
+      "sha256": "2050cb6f23b7cd374a0310b69bb266f39e2d31b49f65287e1ee879776f286ff3"
+    }
+  ],
+  "native_lean_replay": "NOT_RUN",
+  "owned_declaration_axiom_audit": "NOT_RUN",
+  "library_admission": false,
+  "existing_filesystem_intake": "UNCHANGED",
+  "PMD_checkpoint": "NOT_RECOVERED_NOT_MUTATED",
+  "reason": "The native baseline and full repository layout checks are not available in this execution. The archive preserves candidate sources without changing active source discovery, source-intake digests, public imports, or navigation counts.",
+  "contribution": "Human direction: R.A. Jacob Martone. Implementation assistance: OpenAI ChatGPT. Existing proof-route and locality sources retain their original credit."
+}
