@@ -744,3 +744,305 @@ run. Earlier article bytes and receipts are preserved, not promoted into new
 acceptance. The deterministic tail cost (FF6) is the new written result.
 The retained arithmetic estimate (FF8) remains unpaid. No P04 requirement,
 new Mertens exponent, unconditional boundary admission, or RH claim is added.
+
+## Two-mode weighted projection of the literal pickup
+
+**Status: written finite analytic argument and executable rational diagnostics;
+no Lean admission and no uniform arithmetic bound for the retained modes.**
+Human mathematical direction: R.A. Jacob Martone. Derivation and implementation
+assistance: OpenAI ChatGPT. This is a separate direct reduction of the same
+pickup, not an identification of the reciprocal-phase kernel with a positive
+Gram matrix. All earlier reductions and their evidence remain unchanged.
+The [matched-averaging calculation](../matched-pickup.md) already identifies
+the homogeneous time modes $1,e^{-t/2}$. The present construction retains
+those same modes in physical coordinates; it does not import the earlier
+P04/P05 growth requirements or assume their estimates.
+
+### Physical coordinate and the two carried source modes
+
+Put $V(x)=W(\log x)$ for $x\ge1$, and keep the closed Mertens prefix
+$M(x)=\sum_{1\le n\le\lfloor x\rfloor}\mu(n)$. The finite substitution
+$y=e^u$ in the defining pickup integral gives
+
+$$V(x)=\int_1^x M(y)y^{-3/2}\,dy,\qquad
+H_{1/3}(\log R)=\int_1^R x^{-5/3}V(x)^2\,dx. \tag{WP1}$$
+
+The integrands are bounded and measurable on compact intervals. Thus $V$ is
+locally absolutely continuous and $V'(x)=M(x)x^{-3/2}$ almost everywhere.
+No pointwise derivative is asserted at the integer jumps of $M$.
+
+For an integer $l\ge1$ define the carried response on $x\ge l$ by
+
+$$T_l(x)=V(l)+2M(l)(l^{-1/2}-x^{-1/2}).$$
+
+This belongs to $\operatorname{span}\{1,x^{-1/2}\}$. It retains all the
+arithmetic accumulated before the block, rather than resetting that history
+at $l$. The exact remainder is
+
+$$V(x)-T_l(x)=\int_l^x [M(y)-M(l)]y^{-3/2}\,dy. \tag{WP2}$$
+
+Since $l$ is an integer and $|\mu(n)|\le1$,
+
+$$|M(y)-M(l)|\le\lfloor y\rfloor-l\le y-l,$$
+
+and hence
+
+$$|V(x)-T_l(x)|\le\frac{(x-l)^2}{2l^{3/2}}. \tag{WP3}$$
+
+This is an unconditional local error estimate. It does not bound either
+carried coefficient $V(l)$ or $M(l)$ at a new arithmetic scale. It also holds
+for every real coefficient sequence with $|a_n|\le1$, with its own actual
+prefix and pickup. That generality concerns only the approximation error.
+
+### Exact weighted projection, with both modes retained
+
+For $B=[l,r]$, $1\le l<r$, use the Hilbert inner product
+$\langle f,g\rangle_B=\int_l^r x^{-5/3}f(x)g(x)\,dx$.
+Let $\Pi_BV$ be the orthogonal projection onto
+$\operatorname{span}\{1,x^{-1/2}\}$, and write
+
+$$k_B=\|\Pi_BV\|_B^2,\qquad e_B=\|V-\Pi_BV\|_B^2.$$
+
+The exact Pythagorean identity is
+
+$$\int_l^r x^{-5/3}V(x)^2dx=k_B+e_B,\qquad k_B,e_B\ge0. \tag{WP4}$$
+
+In particular, projecting is not deleting the mean or the second mode. Both
+of their energies occur in $k_B$; the orthogonal residual occurs in $e_B$.
+This is an actual Gram projection in the specified weighted function space,
+not an appeal to positivity of the earlier indefinite divisor kernel.
+
+For $\Delta_a=l^{-a}-r^{-a}$ define
+
+$$\omega_B=\frac32\Delta_{2/3},\qquad
+\nu_B=\frac67\Delta_{7/6},\qquad
+\tau_B=\frac35\Delta_{5/3},\qquad
+s_B=\tau_B-\frac{\nu_B^2}{\omega_B}.$$
+
+Both $\omega_B$ and $s_B$ are strictly positive. Indeed $\omega_B$ is a
+positive weighted mass, and $s_B$ is the weighted squared norm of the
+nonconstant function $x^{-1/2}-\nu_B/\omega_B$. Define the actual moments
+
+$$p_B=\int_B x^{-5/3}V(x)dx,\qquad
+q_B=\int_B x^{-13/6}V(x)dx.$$
+
+The complete local positive form and its reconstruction are
+
+$$\boxed{k_B=\frac{p_B^2}{\omega_B}
++\frac{(q_B-\nu_Bp_B/\omega_B)^2}{s_B},} \tag{WP5}$$
+
+$$\Pi_BV(x)=\alpha_B+\beta_B(x^{-1/2}-\nu_B/\omega_B),\quad
+\alpha_B=p_B/\omega_B,\quad
+\beta_B=(q_B-\nu_Bp_B/\omega_B)/s_B.$$
+
+The first term in (WP5) is the retained constant channel, and the second is
+the retained transverse mode. A small Schur denominator is not permission
+to erase the second channel. The numerical implementation rejects a failure
+to separate either denominator from zero and asks for greater precision.
+
+### One-eighth block count and a globally bounded complement
+
+On the dyadic octave $[X,2X]$ with $X=2^j$, set
+
+$$m_j=2^{\lceil j/8\rceil},\qquad \ell_j=X/m_j,$$
+
+and partition into the $m_j$ blocks
+$B_{j,r}=[X+r\ell_j,X+(r+1)\ell_j]$, $0\le r<m_j$.
+All endpoints are integers. Shared endpoints have measure zero, so either
+consistent half-open convention gives the same integrals.
+
+Orthogonal projection minimizes the squared error. Apply (WP3) to the trial
+function $T_l$ in its range. On any such block, $l\ge X$ and therefore
+
+$$e_B\le\int_l^{l+\ell_j}
+\frac{(x-l)^4}{4X^{14/3}}dx
+=\frac{\ell_j^5}{20X^{14/3}}.$$
+
+The sum of these errors in one octave is at most
+
+$$E_j\le\frac{X^{1/3}}{20m_j^4}
+\le\frac{2^{-j/6}}{20}. \tag{WP6}$$
+
+For complete octaves define
+
+$$K_J=\sum_{j=0}^{J-1}\sum_{r=0}^{m_j-1}k_{B_{j,r}},\qquad
+E_J=\sum_{j=0}^{J-1}\sum_{r=0}^{m_j-1}e_{B_{j,r}}.$$
+
+Equations (WP1), (WP4) and (WP6) give
+
+$$\boxed{H_{1/3}(J\log2)=K_J+E_J,\qquad
+0\le E_J\le C_{\rm err}:=
+\frac1{20(1-2^{-1/6})}<\frac12.} \tag{WP7}$$
+
+The strict last comparison is certified by the rational inequality
+$(10/9)^6<2$. This proves $2^{-1/6}<9/10$, and the displayed denominator
+is consequently greater than $2$. The bound concerns $E_J$, not $K_J$ and
+not the total pickup energy. Its approximate value is $0.45829$.
+
+The same blockwise proof works for a partially recorded final block; the
+complete-octave formulation avoids requiring the truncated projection energy
+to be monotone in an arbitrary endpoint. For any real $T\ge0$, choose
+$J\in\mathbb N$ with $e^T\le2^J$ and use monotonicity of the original
+nonnegative integral. It follows that
+
+$$\boxed{\exists B\ge0\ \forall T\ge0:\ H_{1/3}(T)\le B
+\quad\Longleftrightarrow\quad
+\exists C\ge0\ \forall J\in\mathbb N:\ K_J\le C.} \tag{WP8}$$
+
+A witness $C$ on the right gives the exact constant $C+C_{\rm err}$,
+and hence the simpler $C+1/2$, on the left. A witness $B$ on the left
+bounds $K_J$ by the same $B$. Only finite integrals and a geometric series
+are used. No half-line integrability is assumed in this argument.
+
+This replaces an infinite-dimensional recording on each octave by two
+retained moments on $m_j=O(X^{1/8})$ blocks, with a globally paid complement.
+It is a dimension statement, not a fast algorithm claim: constructing the
+moments still requires the actual arithmetic source. No bound for $K_J$
+is supplied. The preceding Fourier and square-root identities remain valid
+separate representations; they need not be imposed as additional premises.
+
+### Closed-cutoff arithmetic recognition of both moments
+
+On an integer cell $n\le x<n+1$, the original closed prefixes give
+
+$$V(x)=2(A_n-M_nx^{-1/2}),\quad
+A_n=\sum_{a=1}^n\mu(a)a^{-1/2},\quad M_n=\sum_{a=1}^n\mu(a).$$
+
+Thus for each subcell $[c,d]\subseteq[n,n+1]$, with
+$\delta_a=c^{-a}-d^{-a}$,
+
+$$p_{[c,d]}=3A_n\delta_{2/3}-\frac{12}{7}M_n\delta_{7/6},$$
+
+$$q_{[c,d]}=\frac{12}{7}A_n\delta_{7/6}
+-\frac65M_n\delta_{5/3}. \tag{WP9}$$
+
+Summing these exact finite expressions gives $p_B,q_B$, including partial
+last cells. Equivalently, for $c=\max(l,n)<r$ the response atom has moments
+
+$$\lambda_{B,0}(n)=3n^{-1/2}(c^{-2/3}-r^{-2/3})
+-\frac{12}{7}(c^{-7/6}-r^{-7/6}),$$
+
+$$\lambda_{B,1}(n)=\frac{12}{7}n^{-1/2}(c^{-7/6}-r^{-7/6})
+-\frac65(c^{-5/3}-r^{-5/3}). \tag{WP10}$$
+
+Both are zero when $n\ge r$. The moment identities are
+$p_B=\sum_{n\le\lfloor r\rfloor}\mu(n)\lambda_{B,0}(n)$ and
+$q_B=\sum_{n\le\lfloor r\rfloor}\mu(n)\lambda_{B,1}(n)$.
+Every pre-block atom $n\le l$ remains present. At an integer endpoint the
+touching atom has zero response but retains its coefficient in the closed
+prefix. The normal equations and finite identities do not introduce a
+Perron half weight, Euler-product limit, or zeta contour. Returning through
+the existing finite Parseval identity leaves both transform endpoint sums
+and the unborn-product debt unchanged.
+
+### Grounded path and its exact Jacobi precision
+
+The two positive channels have an exact anchored path realization. For any
+positive weights $w_0,\ldots,w_{m-1}$ and real path values $a_0,\ldots,a_{m-1}$,
+put $d_0=a_0$ and $d_i=a_i-a_{i-1}$ for $i\ge1$. Then
+
+$$\sum_i w_i a_i^2=d^{\mathsf T}Gd,\qquad
+G_{ij}=\sum_{k\ge\max(i,j)}w_k. \tag{WP11}$$
+
+The matrix is positive definite and its inverse has the exact local form
+
+$$\boxed{v^{\mathsf T}G^{-1}v
+=\sum_{i=0}^{m-2}\frac{(v_i-v_{i+1})^2}{w_i}
++\frac{v_{m-1}^2}{w_{m-1}}.} \tag{WP12}$$
+
+To verify both identities, write $a=Ld$ with $L$ the lower triangular
+all-ones matrix. Then $G=L^{\mathsf T}\operatorname{diag}(w)L$ and
+$G^{-1}=L^{-1}\operatorname{diag}(w^{-1})L^{-\mathsf T}$; the last
+component of $L^{-\mathsf T}v$ is $v_{m-1}$. In particular
+$\det G=\prod_i w_i$. The usual dual quotient has its exact optimizer
+$v=Gd$ when $d\ne0$.
+
+Apply (WP11)--(WP12) separately to $(w_i,a_i)=(\omega_i,\alpha_i)$ and
+$(s_i,\beta_i)$. Their two energies sum to the local form (WP5). Neither
+initial path value may be reset to zero. Nor may the final term in (WP12)
+be discarded: doing so creates a false constant null direction. This is a
+new source-specific realization of the actual moments, not a substitution
+of a Green matrix built from a different prime or spectral source.
+
+### Arithmetic supplier audit and explicit remaining inequality
+
+The elementary counterexample $a_n=1$ separates the deterministic error
+estimate from arithmetic cancellation. Its prefix is $\lfloor x\rfloor$,
+so (WP1) gives $V(x)\ge\sqrt x-1$. On an octave $X\ge4$, every weighted
+constant mean is at least $\sqrt X/2$. Consequently its retained energy
+on that octave is at least
+
+$$\frac38(1-2^{-2/3})X^{1/3}.$$
+
+The residual bound (WP7) still applies to this sequence. Thus bounded
+coefficients, projection positivity, small complement energy and a sparse
+Jacobi inverse do not imply bounded retained energy. This is not a
+counterexample to the actual Mobius target.
+
+A current external candidate was also checked: Matomaki, Pandey, Pliego,
+Teravainen and Wang, *Higher order uniformity of the primes and cancellation
+of the Mobius function in shorter intervals*,
+[arXiv:2610.09567v1](https://arxiv.org/html/2610.09567v1), 7 October 2026.
+Theorem 1.4 gives a logarithmic saving for all intervals of length at least
+$X^{19/35+\epsilon}$; Theorem 1.2 gives arbitrary fixed logarithmic savings
+against bounded-complexity nilsequences for lengths at least
+$X^{3/5+\epsilon}$ in its stated upper range. These are primary manuscript
+statements, not Lean imports or explicit numerical constants in this work.
+
+Our blocks are long enough asymptotically to consult these results, but the
+carried moments in (WP2) are not local increments. Taking absolute values
+and accumulating a bound $h/(\log X)^A$ leaves a size allowance of order
+$X/(\log X)^A$ for a full prefix. Transferring that allowance through (WP1)
+still permits an octave energy of size $X^{1/3}/(\log X)^{2A}$, which does
+not have a summable dyadic majorant. This calculation rejects that particular
+supplier composition, not the cited theorem or the actual energy. A new
+signed estimate for the carried moments remains necessary.
+
+The exact unresolved proposition is
+
+$$\boxed{\exists C\ge0\ \forall J\in\mathbb N:\quad
+\sum_{j<J}\sum_{B\in\mathscr B_j}
+\left[\frac{p_B^2}{\omega_B}
++\frac{(q_B-\nu_Bp_B/\omega_B)^2}{s_B}\right]\le C.} \tag{WP13}$$
+
+A sufficient but stronger quantitative version bounds the complete retained
+octave energy by $C_0/(j+1)^{1+\epsilon}$, $\epsilon>0$. Its witness
+would give $H_{1/3}(T)\le C_0(1+1/\epsilon)+C_{\rm err}$.
+The weaker exact requirement is summability of the nonnegative retained
+octave energies, with no prescribed decay rate. Neither is proved here.
+No P04 premise, new Mertens exponent, new zero-free region, or RH conclusion
+is introduced.
+
+### Implementation and verification scope
+
+[`weighted_pickup_projection.py`](../../../../../scripts/weighted_pickup_projection.py)
+implements the rank-two projection, and a rank-one comparison using
+$m_j=2^{\lceil j/4\rceil}$ with error bound
+$1/[12(1-2^{-1/6})]<1$. It reuses the unchanged rational interval arithmetic
+and Mobius sieve from `one_third_energy.py`. It calculates the original
+energy, both projected channels, the residual, and the normal equations
+independently. The moment Gram must have strictly separated positive
+Schur denominators. No interval is clamped to force an equality or a sign.
+
+[`test_weighted_pickup_projection.py`](../../../../../scripts/test_weighted_pickup_projection.py)
+contains 29 test methods. Normal and optimized runs passed. They cover
+integer and partial horizons, pre-block source carry, touching atoms, actual
+Mobius sign changes, bounded test sequences, independent atom moments,
+exact rational anchored Green identities, sparse inverse and dual optimizer,
+missing-center and missing-anchor controls, and precision-failure rejection.
+Finite interval consistency is not an equality proof or an infinite-range
+arithmetic witness. The general estimates above have written proofs only.
+
+```sh
+python3 -B scripts/test_weighted_pickup_projection.py
+python3 -O -B scripts/test_weighted_pickup_projection.py
+python3 -B scripts/weighted_pickup_projection.py --rank 2 --cutoff 17/2 --cutoff 1024
+```
+
+The [source-bound receipt](../../../../../evidence/number-theory/moebius/weighted-pickup-projection-20261014.json)
+records the precise source bytes and actual runs. No Lean source, old receipt,
+compiler pin, workflow or permission is changed. Pinned Lean replay and
+owned-declaration auditing were not run because no Lean/Lake executable is
+available here. Full-repository structural checks were not run because only
+a source-bound partial snapshot is available. The preceding 34,163 article
+bytes are preserved exactly and are not promoted to new proof acceptance.
