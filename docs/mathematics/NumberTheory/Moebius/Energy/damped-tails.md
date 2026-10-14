@@ -517,3 +517,230 @@ and their historical receipt remain preserved; the new receipt does not
 promote them. The mathematical gain here is an exact short-source reduction
 and the unconditional written cost (SR4), not a bound on the remaining
 quadratic energy and not an improvement of the zeta zero-free exponent.
+
+---
+
+## Anchored Fourier reduction with a paid approximation tail
+
+**Status: written analytic argument and finite rational diagnostics; no Lean
+admission and no arithmetic bound for the retained form.** Human mathematical
+direction: grwtsk contributors. Derivation and implementation assistance:
+OpenAI ChatGPT. The finite divisor identity is the classical Huxley--Watt
+identity used above. The Bernoulli Fourier identity below is classical:
+[NIST DLMF 24.8.1](https://dlmf.nist.gov/24.8.E1), at degree two.
+No new zero-free theorem or Mertens estimate is imported.
+
+### An exact anchored kernel, without an unspecified constant
+
+For real $v$ put $\rho(v)=\{v\}(1-\{v\})/2$. It is continuous,
+periodic, zero at every integer, and $0\le\rho\le1/8$.
+Almost everywhere, $\rho'(v)=1/2-\{v\}$. Finite integration by parts
+in the already proved floor integral for $q_+$ gives, for every $y\ge1$,
+
+$$q_+(y)=\sqrt y-\frac32+\frac1{2\sqrt y}
++\frac{\rho(y)}{2y^{3/2}}
++\frac34\int_1^y\rho(v)v^{-5/2}\,dv. \tag{FF1}$$
+
+Indeed $q_+(y)=\sqrt y-1-(1/2)\int_1^y\{v\}v^{-3/2}dv$.
+Substitute $\{v\}=1/2-\rho'(v)$ and integrate the derivative term.
+All internal integer boundary terms cancel because $\rho$ is continuous;
+the lower boundary is zero because $\rho(1)=0$. This also proves (FF1)
+at touching integers, rather than only almost everywhere.
+
+For $d=ab\le x$, (FF1) gives the exact response kernel
+
+$$K_x(a,b)=\frac{2\sqrt x}{d}-\frac3{\sqrt d}+\frac1{\sqrt x}
++\frac{d}{x^{3/2}}\rho(x/d)
++\frac3{2\sqrt d}\int_1^{x/d}\rho(v)v^{-5/2}\,dv. \tag{FF2}$$
+
+Both integral endpoints and the three explicit main terms are retained.
+There is no zeta-value constant, improper integral, or numerical compact-set
+maximum in this formula. At $x=d$ the main terms sum to zero and both
+remaining terms vanish. The actual touching coefficient has not been removed.
+
+### Fourier truncation with a uniform entrywise error
+
+The degree-two Bernoulli Fourier series implies the absolutely and uniformly
+convergent expansion
+
+$$\rho(v)=\frac1{2\pi^2}\sum_{h=1}^{\infty}
+                 \frac{1-\cos(2\pi h v)}{h^2}.$$
+
+One way to get this normalization is to subtract the degree-two formula at
+$v$ from its value at zero and divide by two. For an integer $L\ge1$ define
+
+$$\rho_L(v)=\frac1{2\pi^2}\sum_{h=1}^{L}
+                 \frac{1-\cos(2\pi h v)}{h^2},\qquad r_L=\rho-\rho_L.$$
+
+Each omitted summand is nonnegative, and the integral comparison for
+$\sum_{h>L}h^{-2}$ gives
+
+$$0\le r_L(v)\le\frac1{\pi^2 L}\quad(v\in\mathbb R).
+\tag{FF3}$$
+
+Also $\rho_L(m)=0$ for every integer $m$, including the lower anchor one.
+Define $K_{x,L}(a,b)$ by replacing $\rho$ by $\rho_L$ everywhere in
+(FF2), not by discarding its finite integral or one of its main terms.
+Then, with $y=x/d\ge1$,
+
+$$K_x(a,b)-K_{x,L}(a,b)=\frac1{\sqrt d}
+\left[y^{-3/2}r_L(y)+\frac32\int_1^y r_L(v)v^{-5/2}dv\right].$$
+
+Since $y^{-3/2}+(3/2)\int_1^y v^{-5/2}dv=1$, the complete error obeys
+
+$$\boxed{0\le K_x(a,b)-K_{x,L}(a,b)
+\le\frac1{\pi^2 L\sqrt{ab}}.} \tag{FF4}$$
+
+No oscillatory integral over an infinite interval is hidden in $K_{x,L}$.
+The retained modes have reciprocal-product phase $2\pi h x/(ab)$;
+their weighted finite history integrals remain part of the same kernel.
+
+### Signed summation and its actual energy cost
+
+Retain $U=\lfloor\sqrt x\rfloor=\lfloor\sqrt{\lfloor x\rfloor}\rfloor$.
+For any specified positive integer $L(x)$ put
+
+$$\mathfrak F(x)=\sum_{a,b\le U}\mu(a)\mu(b)K_{x,L(x)}(a,b),
+\qquad \mathfrak E(x)=\mathfrak B(x)-\mathfrak F(x).$$
+
+The error $\mathfrak E$ is signed; (FF4) does not imply it is nonnegative.
+Using absolute values only to pay this approximation error gives
+
+$$|\mathfrak E(x)|\le\frac1{\pi^2L(x)}
+\left(\sum_{a\le U}\frac{|\mu(a)|}{\sqrt a}\right)^2
+\le\frac{4U}{\pi^2L(x)}\le\frac{4\sqrt x}{\pi^2L(x)}. \tag{FF5}$$
+
+Now choose the exact, moving mode count $L(x)=\lceil x^{1/4}\rceil$.
+It follows without any Mobius cancellation assumption that
+
+$$\boxed{\int_0^T e^{-2t/3}|\mathfrak E(e^t)|^2dt
+\le\frac{16}{\pi^4}\int_0^T e^{-t/6}dt
+\le\frac{96}{\pi^4}\quad(T\ge0).} \tag{FF6}$$
+
+The exponent gain here belongs only to the *approximation error*: it comes
+from the explicit $1/L$ Fourier tail and the chosen mode count. It is not
+an exponent gain for the Mobius function or for $\mathfrak F$.
+For general $\sigma>0$, $q\ge0$ and $L(x)\ge x^q$, this same error
+has squared energy at most
+
+$$\frac{16}{\pi^4(2\sigma+2q-1)}\quad\text{when }2\sigma+2q>1.$$
+
+At $\sigma=1/3$ the condition is $q>1/6$. At or below that threshold
+this particular positive allowance fails to be integrable; this does not
+prove divergence of the actual signed error. At the critical power one may
+instead use $L(x)\ge x^{1/6}(1+\log x)^{1/2+\epsilon}$, $\epsilon>0$,
+which gives error energy at most $8/(\epsilon\pi^4)$.
+These general statements concern the Fourier error only. The earlier
+short-prefix bound has its own damping threshold $\sigma>1/4$.
+
+All time-dependent sums have finitely many terms on a compact interval.
+The mode cutoff changes at fourth powers; the source cutoff changes at
+squares. The functions are bounded and measurable on each compact interval.
+No separate continuity of the truncated form is asserted or needed.
+The exact identity remains $W(t)=P(t)-\mathfrak F(e^t)-\mathfrak E(e^t)$.
+It concerns the original closed source, not a new representative chosen by
+an inverse transform. The completed numerator, both transform endpoint terms,
+and unborn-product debt remain unchanged.
+
+### The retained finite-frequency arithmetic obligation
+
+Define
+
+$$\mathcal F(T)=\int_0^T e^{-2t/3}|\mathfrak F(e^t)|^2dt,
+\qquad D=\sqrt{864/5}+\frac{4\sqrt6}{\pi^2}.$$
+
+Finite weighted triangle inequalities, (SR4), and (FF6) yield
+
+$$\boxed{|\sqrt{H_{1/3}(T)}-\sqrt{\mathcal F(T)}|\le D.
+} \tag{FF7}$$
+
+Thus the original one-third target is equivalent to
+
+$$\boxed{\exists C\ge0\ \forall T\ge0:\quad\mathcal F(T)\le C.}
+\tag{FF8}$$
+
+A witness gives $H_{1/3}(T)\le(\sqrt C+D)^2$; a uniform bound $B$ on
+$H_{1/3}$ gives $\mathcal F(T)\le(\sqrt B+D)^2$. Only finite integrals
+are used in these implications. Half-line square integrals remain extended
+nonnegative quantities until boundedness is established.
+
+In particular (FF8) is not a request to bound the oscillatory part alone.
+With $R_U=\sum_{a\le U}\mu(a)/a$ and the actual $A_U,M_U$, the complete
+retained form has the three main terms
+
+$$2\sqrt x\,R_U^2-3A_U^2+M_U^2/\sqrt x$$
+
+plus both signed kernel sums in (FF2) with $\rho_L$. They must be retained
+together. Separate absolute bounds for these terms still give an insufficient
+$O(\sqrt x)$ allowance. No improved arithmetic estimate for their sum has
+been obtained.
+
+A weaker sufficient goal than pointwise subcritical power decay is a dyadic
+mean-square bound. Set $I_j=\int_{2^j}^{2^{j+1}}|\mathfrak F(x)|^2dx$,
+with the mode count still recomputed at each actual $x$. A genuine supplier
+
+$$\exists C\ge0,\epsilon>0\ \forall j\in\mathbb N:\quad
+I_j\le \frac{C\,2^{5j/3}}{(j+1)^{1+\epsilon}} \tag{FF9}$$
+
+would give $\mathcal F(T)\le C(1+1/\epsilon)$ and hence
+$H_{1/3}(T)\le(\sqrt{C(1+1/\epsilon)}+D)^2$.
+Indeed the physical weight is $x^{-5/3}$, and
+$\sum_{j\ge0}(j+1)^{-1-\epsilon}\le1+1/\epsilon$.
+The exact weaker condition is summability of $2^{-5j/3}I_j$; the weighted
+integral lies between this sum times $2^{-5/3}$ and the sum itself.
+Neither (FF8) nor (FF9) has an arithmetic witness in this contribution.
+
+### Negative control and executable verification
+
+Even though the kernel error in (FF4) is entrywise nonnegative, its matrix
+need not be positive semidefinite. At $x=4$, $U=2$, its $(2,2)$ entry is
+zero. Its $(1,2)$ entry is strictly positive: $r_L$ is positive away from
+integers, and its history integral over $(1,2)$ is positive. Therefore its
+determinant is strictly negative for every finite $L$. One must not infer a
+quadratic ordering from the entrywise bound. At $L=1$, the tests enclose a
+strictly negative value on the rational vector $(1/4,-1)$.
+The already rejected bounded-coefficient supplier remains rejected: the
+comparison source $e_1$ has divergent full quadratic energy; a paid
+approximation error cannot make its retained energy uniformly bounded.
+These controls do not refute the actual Mobius arithmetic target.
+
+[`reciprocal_phase_kernel.py`](../../../../../scripts/reciprocal_phase_kernel.py)
+uses exact rational arithmetic. Machin's identity and alternating arctangent
+remainders enclose $\pi$; range-reduced cosine polynomials carry Taylor
+remainders and enough guard precision before Horner amplification. Finite
+history integrals carry explicit midpoint quadrature errors. For
+$f(v)=\rho_L(v)v^{-5/2}$ and $v\ge a\ge1$, the code uses
+
+$$|f'(v)|\le\frac{H_L}{3}a^{-5/2}
++\frac5{18}\left(\sum_{h=1}^L h^{-2}\right)a^{-7/2},$$
+
+where $H_L=\sum_{h\le L}h^{-1}$. This follows from $\pi>3$ and finite
+trigonometric bounds, independently of the infinite Fourier identity.
+A panel of width $\ell$ costs at most this derivative bound times
+$\ell^2/4$. The exact periodic kernel is separately integrated on integer
+cells using the primitive
+$-\sqrt v-(2j+1)v^{-1/2}+j(j+1)v^{-3/2}/3$ on $[j,j+1]$.
+
+[`test_reciprocal_phase_kernel.py`](../../../../../scripts/test_reciprocal_phase_kernel.py)
+contains 20 tests, passed normally and with optimized Python. They cover
+normalization, phase symmetries, root/phase precision, exact finite-cell
+identities, Fourier tails, quadrature errors, missing endpoint/history terms,
+square and fourth-power crossings, full ordered signed pairs, and the
+indefinite-error control. The finite batch covers rational physical cutoffs
+through $x=16$, not a horizon $T=16$. Source hashes, runs, and limitations are
+recorded in the [receipt](../../../../../evidence/number-theory/moebius/reciprocal-phase-kernel-20261014.json).
+
+```sh
+python3 -B scripts/test_reciprocal_phase_kernel.py
+python3 -O -B scripts/test_reciprocal_phase_kernel.py
+python3 -B scripts/reciprocal_phase_kernel.py --cutoff 17/2 --cutoff 16
+```
+
+The infinite Fourier identity and analytic inequalities have written proofs;
+finite interval overlaps do not prove those identities. No Lean source is
+changed, no Lean/Lake runtime is available here, and no pinned replay,
+owned-declaration audit, or full-repository layout/documentation check was
+run. Earlier article bytes and receipts are preserved, not promoted into new
+acceptance. The deterministic tail cost (FF6) is the new written result.
+The retained arithmetic estimate (FF8) remains unpaid. No P04 requirement,
+new Mertens exponent, unconditional boundary admission, or RH claim is added.
