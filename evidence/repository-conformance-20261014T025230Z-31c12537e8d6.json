@@ -1,0 +1,154 @@
+{
+  "claim_limit": "Recording this observation establishes no conformance profile, checker-soundness proof, mathematical correctness claim, or independent validation.",
+  "command": [
+    "python3",
+    "-B",
+    "scripts/check_repository_conformance.py",
+    "--write-receipt"
+  ],
+  "execution_state": "COMPLETED",
+  "observation": {
+    "blockers": [
+      "generation-census-incomplete",
+      "profile-gate-not-observed:COVERAGE.001",
+      "profile-gate-not-observed:DOCUMENTATION.001",
+      "profile-gate-not-observed:LAYOUT.001",
+      "profile-gate-not-observed:ROLE.001",
+      "profile-gate-not-receipt-bound:BINDING.001",
+      "profile-gate-not-receipt-bound:BYTES.001",
+      "profile-gate-not-receipt-bound:CONTRACT.001",
+      "profile-gate-not-receipt-bound:CONTROL.001",
+      "profile-gate-not-receipt-bound:DOCUMENTATION.001",
+      "profile-gate-not-receipt-bound:FRESHNESS.001",
+      "profile-gate-not-receipt-bound:GENERATION.001",
+      "profile-gate-not-receipt-bound:GROUNDING.001",
+      "profile-gate-not-receipt-bound:INDEPENDENCE.001",
+      "profile-gate-not-receipt-bound:ORIGIN.001",
+      "profile-gate-not-receipt-bound:PROOF.001",
+      "profile-gate-not-receipt-bound:RELEASE.001",
+      "profile-gate-not-receipt-bound:RULE.001"
+    ],
+    "catalog": {
+      "artifact_count_excluding_self": 3980,
+      "expected_sha256": "d90f2b2a3c6526faf6da481b5d4bec9d7abb258e23791960ce5f23efca113a28",
+      "path": "docs/reference/repository-artifact-catalog.json"
+    },
+    "claim_limit": "Operational observation only. It is not a proof of checker soundness, mathematical correctness, or independent validation.",
+    "generated_views": {
+      "docs/reference/math-source-catalog.json": {
+        "claim_scope": "in-process byte-freshness only; the declared command, sandbox, environment and complete executed read set are not independently enforced",
+        "operational_state": "COMPLETED",
+        "outcome": "ACCEPT",
+        "recipe_id": "GENERATE.MATH_SOURCE_CATALOG.001",
+        "sha256": "ad6cc594f994884663e33406733adc9c5d5f92731e6f614131417eb5865981a1"
+      },
+      "docs/reference/repository-artifact-catalog.json": {
+        "claim_scope": "in-process byte-freshness only; the declared command, sandbox, environment and complete executed read set are not independently enforced",
+        "operational_state": "COMPLETED",
+        "outcome": "ACCEPT",
+        "recipe_id": "GENERATE.REPOSITORY_ARTIFACT_CATALOG.001",
+        "sha256": "d90f2b2a3c6526faf6da481b5d4bec9d7abb258e23791960ce5f23efca113a28"
+      },
+      "docs/reference/results.md": {
+        "claim_scope": "in-process byte-freshness only; the declared command, sandbox, environment and complete executed read set are not independently enforced",
+        "operational_state": "COMPLETED",
+        "outcome": "ACCEPT",
+        "recipe_id": "GENERATE.DOCUMENTATION_RESULTS.001",
+        "sha256": "1d49c382e2fd48b1edb98daaff1c3b607a3ba6306cf36ae5bb0e5421548d22ba"
+      }
+    },
+    "profiles": {
+      "formally-checked": {
+        "blockers": [
+          "generation-census-incomplete",
+          "profile-gate-not-observed:COVERAGE.001",
+          "profile-gate-not-observed:DOCUMENTATION.001",
+          "profile-gate-not-observed:LAYOUT.001",
+          "profile-gate-not-observed:ROLE.001",
+          "profile-gate-not-receipt-bound:BINDING.001",
+          "profile-gate-not-receipt-bound:BYTES.001",
+          "profile-gate-not-receipt-bound:CONTRACT.001",
+          "profile-gate-not-receipt-bound:CONTROL.001",
+          "profile-gate-not-receipt-bound:DOCUMENTATION.001",
+          "profile-gate-not-receipt-bound:FRESHNESS.001",
+          "profile-gate-not-receipt-bound:GENERATION.001",
+          "profile-gate-not-receipt-bound:GROUNDING.001",
+          "profile-gate-not-receipt-bound:ORIGIN.001",
+          "profile-gate-not-receipt-bound:PROOF.001",
+          "profile-gate-not-receipt-bound:RELEASE.001",
+          "profile-gate-not-receipt-bound:RULE.001"
+        ],
+        "established": false
+      },
+      "independently-validated": {
+        "blockers": [
+          "generation-census-incomplete",
+          "profile-gate-not-observed:COVERAGE.001",
+          "profile-gate-not-observed:DOCUMENTATION.001",
+          "profile-gate-not-observed:LAYOUT.001",
+          "profile-gate-not-observed:ROLE.001",
+          "profile-gate-not-receipt-bound:BINDING.001",
+          "profile-gate-not-receipt-bound:BYTES.001",
+          "profile-gate-not-receipt-bound:CONTRACT.001",
+          "profile-gate-not-receipt-bound:CONTROL.001",
+          "profile-gate-not-receipt-bound:DOCUMENTATION.001",
+          "profile-gate-not-receipt-bound:FRESHNESS.001",
+          "profile-gate-not-receipt-bound:GENERATION.001",
+          "profile-gate-not-receipt-bound:GROUNDING.001",
+          "profile-gate-not-receipt-bound:INDEPENDENCE.001",
+          "profile-gate-not-receipt-bound:ORIGIN.001",
+          "profile-gate-not-receipt-bound:PROOF.001",
+          "profile-gate-not-receipt-bound:RELEASE.001",
+          "profile-gate-not-receipt-bound:RULE.001"
+        ],
+        "established": false
+      },
+      "organized": {
+        "blockers": [
+          "profile-gate-not-observed:COVERAGE.001",
+          "profile-gate-not-observed:DOCUMENTATION.001",
+          "profile-gate-not-observed:LAYOUT.001",
+          "profile-gate-not-observed:ROLE.001"
+        ],
+        "established": false
+      },
+      "reconstructible": {
+        "blockers": [
+          "generation-census-incomplete",
+          "profile-gate-not-observed:COVERAGE.001",
+          "profile-gate-not-observed:DOCUMENTATION.001",
+          "profile-gate-not-observed:LAYOUT.001",
+          "profile-gate-not-observed:ROLE.001",
+          "profile-gate-not-receipt-bound:BYTES.001",
+          "profile-gate-not-receipt-bound:FRESHNESS.001",
+          "profile-gate-not-receipt-bound:GENERATION.001",
+          "profile-gate-not-receipt-bound:ORIGIN.001"
+        ],
+        "established": false
+      }
+    },
+    "schema": "grwtsk-repository-conformance-observation-v1",
+    "snapshot": {
+      "branch": "main",
+      "discovery_sha256": "daeed9fd7c06a33688645ac012e4092eb663a80e7786ca5cfc298a629c13f5b1",
+      "git_object_format": "sha1",
+      "governing_inputs": {
+        "docs/math-layout.json": "aea887d2247e0f60a90cc8cb93c104bdf819655c68382cca9f68b3244678c048",
+        "docs/reference/reconstruction-recipes.json": "b3f9127e3f125bfc570add6253d83a421572a5efb5def02baa62380a32275afb",
+        "docs/reference/rules/registry-schema.json": "8f5db8490fde780c2621e75a7320df0ee1a786b2a9447f2ead83e105db8ff314",
+        "docs/reference/rules/registry.json": "1980ac3b76ba8088a04647fb4bfaf0a102611eee9c4a1542d36af36a3b841295",
+        "evidence/policy-inputs/GRWTSK_Lean_Migration_With_Rigor_Addendum.md": "783251016b84155f64ed8dc0c0a17efad8c27cfd8566591348144293b47071a0",
+        "evidence/policy-inputs/GRWTSK_Rigor_and_Reconstruction_Addendum.md": "866e5a1c8e97cade8647a4147ff885d47c0ccc55328f2ac68cc0a73ff46367a4",
+        "scripts/check_repository_conformance.py": "1de36af6babd4fd29bd112bf8404b04a78d74d2f6cb8485b4f7f3c4988351bed",
+        "scripts/monitor_math.py": "c704231abfee6917eaf83fac321504029937e5267500cb4d92cf60272c7f9d33"
+      },
+      "head": "e4f1e4d63ea8532f1e0e58abc34fbbdc45a5a9b5"
+    }
+  },
+  "observation_sha256": "31c12537e8d635542245360cfb3f6fcb92bd585857030612c464deb068f7c5d0",
+  "observed_at_utc": "2026-10-14T02:52:30Z",
+  "python_runtime": "3.9.6 (default, Aug 25 2026, 21:26:21) \n[Clang 21.0.0 (clang-2100.3.34.2)]",
+  "schema": "grwtsk-repository-conformance-receipt-v1",
+  "schema_version": 1,
+  "snapshot_relation": "The observation was closed before this receipt was created. The receipt is therefore an immutable observation of the immediately prior Git-visible snapshot and does not claim to inventory or hash its own bytes."
+}

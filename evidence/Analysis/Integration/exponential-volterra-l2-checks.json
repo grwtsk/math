@@ -1,0 +1,97 @@
+{
+  "schema": "grwtsk-focused-lean-replay-v1",
+  "schema_version": 1,
+  "recorded_utc": "2026-10-14T04:26:54Z",
+  "outcome": "passed",
+  "scope": {
+    "subject": "Analysis",
+    "object": "Integration",
+    "module": "GRWTSK.Analysis.Integration.ExponentialVolterraL2",
+    "source": "GRWTSK/Analysis/Integration/ExponentialVolterraL2.lean",
+    "positive_check": "GRWTSK/Analysis/Integration/Checks/Positive/ExponentialVolterraL2.lean"
+  },
+  "checkout": {
+    "branch": "main",
+    "head": "ddc6c1f58c3f7a6635922584d2ff6f5a6f8028d8",
+    "working_tree_snapshot": true
+  },
+  "environment": {
+    "lean_version": "4.33.0",
+    "lean_commit": "d8b18978322de05a8f3dba51ef03cf5461676c17",
+    "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "trust": 0,
+    "fatal_warnings": true,
+    "dependency_artifact_scope": "Pinned existing dependency objects reused; no cold dependency-source rebuild."
+  },
+  "source_hashes": {
+    "GRWTSK/Analysis/Integration/ExponentialVolterraL2.lean": "963957d15eab9c20a0194656e8b0fcbee721bebabb9fedd8eef55968b54d12b0",
+    "GRWTSK/Analysis/Integration/Checks/Positive/ExponentialVolterraL2.lean": "83168a5c6f10946e5c2dac506f35931c18a0118d763cddbff0aaa22ac668fece"
+  },
+  "commands": [
+    {
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-DwarningAsError=true",
+        "GRWTSK/Analysis/Integration/ExponentialVolterraL2.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "52df1f94b14eb257f59dbd4eda2bc19866478e3d4a639190661811399d9e5a5c",
+      "outcome": "passed"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "scripts/run_lean_validation.py",
+        "GRWTSK/Analysis/Integration/Checks/Positive/ExponentialVolterraL2.lean"
+      ],
+      "exit_code": 0,
+      "output_sha256": "3bc429c979bc6aea97f029a3314c9cb81ae0b6ac23eafab32068125ddf20ce02",
+      "outcome": "passed",
+      "owned_declaration_output": "EXPONENTIAL_VOLTERRA_L2_COUNT::4"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "scripts/check_math_layout.py"
+      ],
+      "exit_code": 0,
+      "output_sha256": "b394f81f26906147e34e901d4ba457a69aae2a9fb5e1719d1ad0d9ae7a94c6a0",
+      "outcome": "passed",
+      "summary": "333 library modules; 0 findings"
+    }
+  ],
+  "selected_checks": {
+    "source-elaboration": "passed",
+    "positive-consumer-contracts": "passed",
+    "owned-declaration-audit": "passed",
+    "transitive-axiom-audit": "passed",
+    "math-layout": "passed"
+  },
+  "module_audit": {
+    "owned_declaration_count": 4,
+    "positive_contract_count": 1,
+    "unsafe_declaration_count": 0,
+    "direct_axiom_declaration_count": 0,
+    "unapproved_transitive_axiom_count": 0,
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "explicit_unproved_premises": [],
+  "not_run": [
+    "cold dependency rebuild",
+    "full repository lake build",
+    "hostile controls",
+    "independent human verification"
+  ],
+  "full_repository_build": false,
+  "claim_limit": "Fresh acceptance of the finite real exponential-Volterra L2 estimate and its separate consumer only; no Mobius, zeta, half-line, or Riemann-hypothesis conclusion is included.",
+  "independent_human_acceptance": false
+}

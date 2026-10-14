@@ -17,6 +17,29 @@ LEAVES = ['DensityMoebius', 'DensityMoebiusCorrection', 'PositiveDensityCorrecti
 SERIES = {'TruncatedMoebiusSeries', 'ClosedMoebiusPolynomial'}
 def module_name(leaf):
     return 'GRWTSK.NumberTheory.'+('LSeries.' if leaf in SERIES else 'ArithmeticFunctions.')+leaf
+DECLARED_SOURCES = [
+    'GRWTSK/NumberTheory/ArithmeticFunctions/DensityMoebius.lean',
+    'GRWTSK/NumberTheory/ArithmeticFunctions/DensityMoebiusCorrection.lean',
+    'GRWTSK/NumberTheory/ArithmeticFunctions/PositiveDensityCorrection.lean',
+    'GRWTSK/NumberTheory/ArithmeticFunctions/DensityCorrectionPrimeSeries.lean',
+    'GRWTSK/NumberTheory/ArithmeticFunctions/DensityCorrectionReciprocalMass.lean',
+    'GRWTSK/NumberTheory/ArithmeticFunctions/DensityHalfPrimeFactor.lean',
+    'GRWTSK/NumberTheory/ArithmeticFunctions/DensityHalfMoment.lean',
+    'GRWTSK/NumberTheory/ArithmeticFunctions/DensityMomentTails.lean',
+    'GRWTSK/NumberTheory/ArithmeticFunctions/ExcludedDensityCorrection.lean',
+    'GRWTSK/NumberTheory/ArithmeticFunctions/MoebiusTruncation.lean',
+    'GRWTSK/NumberTheory/ArithmeticFunctions/TruncatedMoebiusCoefficients.lean',
+    'GRWTSK/NumberTheory/ArithmeticFunctions/SquarefulMoebiusReturn.lean',
+    'GRWTSK/NumberTheory/ArithmeticFunctions/SquarefreeMoebiusSum.lean',
+    'GRWTSK/NumberTheory/ArithmeticFunctions/ComplexMoebiusCast.lean',
+    'GRWTSK/NumberTheory/ArithmeticFunctions/DivisibleDensityRow.lean',
+    'GRWTSK/NumberTheory/ArithmeticFunctions/DensityFiniteSums.lean',
+    'GRWTSK/NumberTheory/ArithmeticFunctions/MoebiusReciprocalPrefix.lean',
+    'GRWTSK/NumberTheory/ArithmeticFunctions/CoprimeReciprocalForm.lean',
+    'GRWTSK/NumberTheory/ArithmeticFunctions/DensityReciprocalPrefix.lean',
+    'GRWTSK/NumberTheory/LSeries/TruncatedMoebiusSeries.lean',
+    'GRWTSK/NumberTheory/LSeries/ClosedMoebiusPolynomial.lean',
+]
 ALLOWED = {'propext', 'Classical.choice', 'Quot.sound'}
 
 def sha(p): return hashlib.sha256(p.read_bytes()).hexdigest()
@@ -40,7 +63,8 @@ def theorem_contract(name, signature):
 def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--only-series', action='store_true', help='Reuse unchanged checked arithmetic dependencies for new series consumers')
-    parser.add_argument('--receipt', default='evidence/NumberTheory/ArithmeticFunctions/density-arithmetic-checks.json')
+    parser.add_argument('--receipt', default=None,
+                        help='Fresh relative receipt path below .local (default: the run directory)')
     args=parser.parse_args()
     if (ROOT/'lean-toolchain').read_text().strip() != 'leanprover/lean4:v4.33.0':
         raise RuntimeError('toolchain mismatch')
@@ -52,6 +76,17 @@ def main():
     if lean.returncode or paths.returncode: raise RuntimeError('Lake environment unavailable')
     stamp=datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%S%fZ')
     scratch=ROOT/'.local/density-arithmetic-checks'/stamp;scratch.mkdir(parents=True)
+    expected_sources=[module_name(leaf).replace('.', '/')+'.lean' for leaf in LEAVES]
+    if DECLARED_SOURCES != expected_sources:
+        raise RuntimeError('Declared density source manifest differs from replay order')
+    if args.receipt is None:
+        target=scratch/'receipt.json'
+    else:
+        relative=Path(args.receipt)
+        if relative.is_absolute() or '..' in relative.parts or not relative.parts or relative.parts[0] != '.local':
+            raise RuntimeError('Receipt must be a relative path below .local')
+        target=ROOT/relative
+        target.parent.mkdir(parents=True,exist_ok=True)
     lib=scratch/'lib';lib.mkdir()
     env=dict(os.environ);env['LEAN_PATH']=str(lib)+os.pathsep+paths.stdout.strip()
     dependency_receipt = None
@@ -184,7 +219,8 @@ example (d p k : ℕ) (hk : k ≠ 0) : excludedDensityCorrection d (p^k) =
       'literal_contracts':contracts,'records':all_records,'hostile_controls':controls,
       'independent_human_acceptance':False,'full_repository_build':False,'checked_dependency_receipt':dependency_receipt,
       'P04':'OPEN','P05':'OPEN','absolute_MB6':'OPEN','RH':'OPEN'}
-    target=ROOT/args.receipt;target.parent.mkdir(parents=True,exist_ok=True);target.write_text(json.dumps(receipt,indent=2)+'\n')
-    print(json.dumps({'outcome':'passed','modules':len(results),'theorems':receipt['semantic_theorems'],'definitions':receipt['semantic_definitions'],'contracts':len(contracts),'body_axiom_records':len(all_records)}))
+    with target.open('x') as stream:
+        stream.write(json.dumps(receipt,indent=2)+'\n')
+    print(json.dumps({'outcome':'passed','modules':len(results),'theorems':receipt['semantic_theorems'],'definitions':receipt['semantic_definitions'],'contracts':len(contracts),'body_axiom_records':len(all_records),'receipt':str(target.relative_to(ROOT))}))
 
 if __name__=='__main__':main()

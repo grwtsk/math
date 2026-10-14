@@ -1,6 +1,6 @@
 # Selected result catalog
 
-exactly these three selected families; no declaration-wide or complete topic coverage. Records are candidate documentation. Verification labels refer to the bound source, not operational authority. Priority is editorial architectural relevance.
+exactly these three selected families; no declaration-wide or complete topic coverage. Records are candidate documentation. Verification labels refer to the bound source, not operational authority. A changed-source label preserves historical evidence and reports current replay as pending. Priority is editorial architectural relevance.
 
 | Priority | Family | Verification |
 |---|---|---|

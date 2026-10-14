@@ -16,13 +16,14 @@ import re
 import subprocess
 import tempfile
 import time
+from pathlib import PurePosixPath
 
 ROOT = Path(__file__).resolve().parents[1]
 RELS = [
     "GRWTSK/NumberTheory/Moebius/FiniteEulerProduct.lean",
-    "checks/NumberTheory/Moebius/FiniteEulerProduct.lean",
-    "checks/NumberTheory/Moebius/FiniteEulerProduct/Controls/MissingDebt.lean",
-    "checks/NumberTheory/Moebius/FiniteEulerProduct/Controls/OpenCutoff.lean",
+    "GRWTSK/NumberTheory/Moebius/Checks/Positive/FiniteEulerProduct.lean",
+    "GRWTSK/NumberTheory/Moebius/FiniteEulerProduct/Checks/Negative/MissingDebt.lean",
+    "GRWTSK/NumberTheory/Moebius/FiniteEulerProduct/Checks/Negative/OpenCutoff.lean",
 ]
 ALLOWED = {"propext", "Classical.choice", "Quot.sound"}
 PREFIX = "GRWTSK.NumberTheory.Moebius."
@@ -41,7 +42,11 @@ def digest(body):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--receipt", default="evidence/NumberTheory/Moebius/finite-euler-product-checks.json")
+    parser.add_argument(
+        "--receipt",
+        help=("fresh repository-relative durable receipt below "
+              "evidence/NumberTheory/Moebius; omitted keeps the receipt in .local"),
+    )
     args = parser.parse_args()
     lock_path = ROOT / ".local/math-trust/replay.lock"
     lock_path.parent.mkdir(parents=True, exist_ok=True)
@@ -62,6 +67,16 @@ def main():
 
 
 def replay(args):
+    destination = None
+    if args.receipt is not None:
+        relative = PurePosixPath(args.receipt)
+        require(not relative.is_absolute() and "." not in relative.parts
+                and ".." not in relative.parts, "unsafe receipt path")
+        require(relative.parts[:3] == ("evidence", "NumberTheory", "Moebius")
+                and relative.suffix == ".json", "durable receipt must be a JSON file below evidence/NumberTheory/Moebius")
+        destination = ROOT / relative
+        require(not destination.exists() and not destination.is_symlink(),
+                "durable receipt path must be absent")
     require((ROOT / "lean-toolchain").read_text().strip() == "leanprover/lean4:v4.33.0", "toolchain mismatch")
     pins = {p["name"]: p["rev"] for p in json.loads((ROOT / "lake-manifest.json").read_text())["packages"]}
     require(pins["mathlib"] == "db584cd6d46c92f209a44c0f1c829460d327499d", "Mathlib pin mismatch")
@@ -80,10 +95,10 @@ def replay(args):
     for rel in RELS:
         body = (ROOT / rel).read_bytes()
         hashes[rel] = digest(body)
-        destination = source / rel
-        destination.parent.mkdir(parents=True, exist_ok=True)
-        destination.write_bytes(body)
-        destination.chmod(0o444)
+        frozen_destination = source / rel
+        frozen_destination.parent.mkdir(parents=True, exist_ok=True)
+        frozen_destination.write_bytes(body)
+        frozen_destination.chmod(0o444)
     require(not re.search(r"^import GRWTSK\.", (source / RELS[0]).read_text(), re.M), "unexpected project dependency")
     cache = subprocess.check_output(["lake", "env", "printenv", "LEAN_PATH"], cwd=ROOT, text=True).strip()
     cache = os.pathsep.join(p for p in cache.split(os.pathsep)
@@ -151,14 +166,13 @@ def replay(args):
         require(digest(Path(__file__).read_bytes()) == receipt["checker_sha256"], "concurrent checker drift")
         receipt["outcome"] = "passed"
         save()
-        destination = ROOT / args.receipt
-        destination.parent.mkdir(parents=True, exist_ok=True)
-        if destination.exists():
-            archive = run / "prior-public-receipt.json"
-            archive.write_bytes(destination.read_bytes())
-        destination.write_text(json.dumps(receipt, indent=2) + "\n")
+        if destination is not None:
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            with destination.open("x") as output:
+                output.write(json.dumps(receipt, indent=2) + "\n")
         print(json.dumps({"outcome": "passed", "owned_declarations": len(receipt["declarations"]),
-                          "receipt": str(destination), "run": str(run)}), flush=True)
+                          "receipt": str(destination if destination is not None else run / "receipt.json"),
+                          "run": str(run)}), flush=True)
         return 0
     except Exception as error:
         receipt["outcome"] = "failed"

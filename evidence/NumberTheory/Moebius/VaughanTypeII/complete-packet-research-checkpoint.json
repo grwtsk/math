@@ -1,0 +1,169 @@
+{
+  "schema": "vaughan-typeii-complete-packet-research-checkpoint-v1",
+  "outcome": "PARTIAL_SOURCE_SPECIFIC_IMPROVEMENT_TARGET_OPEN",
+  "source_parent_commit": "399b7659afc803b3bfdafc8ddd8586ad9632ca54",
+  "main_integration": {
+    "starting_head": "9367026ca66eb720af9cc76a25a0ac19aba46a7b",
+    "source_commit": "3f2ecf0acd27eef5b09c1133b683f7ae8fea28f3",
+    "research_commit": "052c979f3ab957cbfd43b7e58e2a3f7c149e0836",
+    "branch": "main",
+    "status_after_integration": "CLEAN"
+  },
+  "source_archive": {
+    "filename": "grwtsk_typeII_sampled_return.zip",
+    "bytes": 5256433,
+    "sha256": "0c4ed7f52e3b01707300e027a522983471751c7287c156b868f57044032a4134",
+    "fresh_archive_hash_status": "ARCHIVE_NOT_PRESENT_IN_BOUNDED_LOCAL_SEARCH",
+    "repository_binding_status": "MATCHED_VERSIONED_SOURCE_CLOSURE"
+  },
+  "fresh_baseline_replays": [
+    {
+      "scope": "repository-native default range",
+      "max_X": 1024,
+      "coefficient_identities": 2032,
+      "tests_per_mode": 33,
+      "numeric_report_sha256": "6cb2a016c4580f90a48fb5c850eda6765544d44d121c93e6d1f64684fe94e673",
+      "status": "PASSED"
+    },
+    {
+      "scope": "repository-native production range",
+      "max_X": 4096,
+      "coefficient_identities": 8176,
+      "nonnegative_frequency_samples": 220,
+      "tests_per_mode": 33,
+      "numeric_report_sha256": "17ea18cd68000ddb556859e1729f78f5e2c34e4e847c1a46b7402cab2b67138b",
+      "ordinary_equals_optimized": true,
+      "status": "PASSED"
+    }
+  ],
+  "fresh_main_checkout_outputs": {
+    "default_replay_report_sha256": "8d27fb561457ecd4213d9cfbd9b18756cfafe1a7bb3f9d8b3cc9d2e9c0a54cb6",
+    "production_replay_report_sha256": "d38f0cc48a554497cb9fbbbb217db6cc51e50df962ff799c8399b8cda0672323",
+    "complete_packet_report_sha256": "2aeaf979b5ac4e3bcbfdc2c883ac520a97cd48cf9502317769f23d5c087b2ed2"
+  },
+  "added_source_hashes": {
+    "docs/mathematics/NumberTheory/Moebius/Energy/separated-mellin-samples.md": "05157c983d199a82ff7edb077731974beda857e7358f3dbfac1ed7761c86beb7",
+    "scripts/number_theory/moebius/vaughan_type_ii/analyze_complete_packet.py": "86a2da7dfb5f14611b9b18b98a35454da765c37a956c992803b589250293e0ae"
+  },
+  "complete_packet_diagnostic": {
+    "ordinary_command": "python3 -S -B scripts/number_theory/moebius/vaughan_type_ii/analyze_complete_packet.py --out FRESH_OUTPUT --max-exponent 12",
+    "optimized_command": "python3 -O -S -B scripts/number_theory/moebius/vaughan_type_ii/analyze_complete_packet.py --out FRESH_OUTPUT --max-exponent 12",
+    "max_X": 4096,
+    "rows": 9,
+    "report_sha256": "2aeaf979b5ac4e3bcbfdc2c883ac520a97cd48cf9502317769f23d5c087b2ed2",
+    "ordinary_equals_optimized": true,
+    "directed_interval_checks": [
+      "two complete center identities",
+      "original-source y-moment identity",
+      "Type-I lattice-remainder identities",
+      "Type-I plus Type-II source reconstruction",
+      "six-term signed sample-energy reconstruction",
+      "zero-frequency sample",
+      "positive-frequency dyadic bands"
+    ],
+    "status": "FINITE_IDENTITIES_CHECKED_NOT_AN_ALL_SCALE_BOUND"
+  },
+  "proved_paper_results": {
+    "center_main_term_cancellation": "EXACT_IN_BOTH_CHANNELS",
+    "type_I_lattice_remainders": "rho0 and rho1 are exact finite sum-integral remainders",
+    "elementary_all_scale_bound": "for every dyadic X=2^J with J>=4, |rho0| and |rho1| are at most 3 log(X)/(2 sqrt(X))",
+    "surviving_center_terms": [
+      "sum_{X<n<=2X} Lambda(n)/n - log(2)",
+      "(psi(2X)-psi(X))/X - 1"
+    ],
+    "complete_quadratic_form": "exact atomic, continuum, endpoint, and three mixed terms with parity retained",
+    "pointwise_correlation_obstruction": "the supplied q^2 error followed by absolute summation costs O(q^2(M+M')log^3(2X)/X) per ordered factor-box pair; balanced boxes have normalized exponent zero",
+    "verification_grade": "AUDITED_PAPER_DERIVATION_WITH_DIRECTED_FINITE_IDENTITY_CHECKS"
+  },
+  "formal_candidate": {
+    "repository_integration": "NOT_IN_TRACKED_SOURCE",
+    "toolchain": {
+      "lean": "4.33.0",
+      "lean_commit": "d8b18978322de05a8f3dba51ef03cf5461676c17",
+      "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d"
+    },
+    "baseline_manifest_sha256": "2d0da083af3dad67a975db34402298ce52501f34c438d3f656b5fc2ff416207a",
+    "stage_manifest_sha256": "a1f8e8f08cfd8a9a1390030da0d4c1ff393fe05daf0383262899bd2e6cb59974",
+    "historical_receipt": "BLOCKED_WITH_ZERO_COMPILED_MODULES",
+    "preserved_overlay": "NOT_ACCEPTED_AS_IS; DIRECT_COMPILATION_FAILED_AT_MODULE_ZERO",
+    "repair_scope": "22 FILES, 292 INSERTIONS, 143 DELETIONS, COMPATIBILITY_AND_ELABORATION ONLY",
+    "compiled_modules": "28_OF_28",
+    "compiler_flags": [
+      "--trust=0",
+      "-DwarningAsError=true",
+      "-j1",
+      "--memory=8192"
+    ],
+    "terminal_source_sha256": "5db21792bc773ef43c201bce6ae57d327e198bd222f4cb12d7406b42348ec002",
+    "terminal_theorem": "GRWTSK.NumberTheory.Zeta.DyadicGreenReturn.riemannHypothesis_of_energy : AllDyadicEnergyBound -> RiemannHypothesis",
+    "source_audit": "riemannHypothesis_of_energy has exactly AllDyadicEnergyBound as its research premise; no source-identification or positivity premise was found",
+    "brun_titchmarsh": "PAPER_LEVEL_EXTERNAL_DEPENDENCY_NOT_A_LEAN_AXIOM",
+    "kernel_acceptance": "REPAIRED_IGNORED_COPY_PASSED",
+    "separate_consumer": "PASSED",
+    "consumer_source_sha256": "ecaf383ae2c6fbe9ef7dca3194a0ea85939ca66b8c7696eeb1a3e47d26a3e739",
+    "consumer_olean_sha256": "46f406350b97f528c6450efa07e07c824b515681c749deaedbcb513b77141b31",
+    "consumer_audit_log_sha256": "1b87e3c667289d44d8a78a647fb98f9d589240e876df5116f44d2127d91cb9af",
+    "transitive_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "sampled_adapter": "ABSENT",
+    "accepted": "REPAIRED_COPY_ONLY_NOT_REPOSITORY_INTEGRATED"
+  },
+  "tracked_native_formal_route": {
+    "source_hashes": {
+      "GRWTSK/NumberTheory/Moebius/EnergyAbscissa.lean": "23330ce4bd519083f9fe8e09ecb9aaf6724a614d6b4a576afef395351e27c549",
+      "GRWTSK/NumberTheory/Zeta/ReciprocalHolomorphyZeroSymmetry.lean": "7059a50c47f5995d13226ebb9d7a198857ca40ce040730f253124cc1d239ae88"
+    },
+    "kernel_flags": [
+      "--trust=0",
+      "-DwarningAsError=true"
+    ],
+    "compiled_closure": [
+      "MertensPrimitive",
+      "DirichletLaplaceIdentity",
+      "LaplaceHolomorphy",
+      "ZeroSymmetry",
+      "Regularized",
+      "LaplaceCriterion",
+      "PolynomialEnergyCriterion",
+      "UnsignedEnergyBound",
+      "EnergyAbscissa",
+      "ReciprocalHolomorphyZeroSymmetry"
+    ],
+    "separate_consumer": "PASSED",
+    "consumer_source_sha256": "822fe8bf694f5064f0f096329c8e74b5287ac706ea6eb7691b2fa14fe25097ab",
+    "consumer_olean_sha256": "6bda309973da1feed0ec0db38ffa36a4ad98d7657b56ea11a6ed211948bf076b",
+    "terminal_theorem": "riemannHypothesis_of_pickupEnergySubexp",
+    "sole_open_arithmetic_premise": "PickupEnergySubexp",
+    "transitive_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "sampled_target_adapter": "ABSENT; A SOURCE_COMPARISON_TO_PICKUP_ENERGY_MUST_BE_PROVED",
+    "brun_titchmarsh_dependency": "NONE_IN_THIS_NATIVE_CLOSURE",
+    "declaration_audit": "Declarations.lean passed with 38 RH-family declarations",
+    "target_audit": "FAILED_STALE_MODULE_OWNER_FILTER_AFTER_REORGANIZATION",
+    "status": "CONDITIONAL_NATIVE_RETURN_KERNEL_ACCEPTED_BUT_NOT_CONNECTED_TO_SAMPLED_TARGET"
+  },
+  "smallest_surviving_inequality": {
+    "quantifiers": "for every epsilon>0 there are C_epsilon>0 and J_epsilon such that for every J>=J_epsilon and every j in N_0 with 2^j<=ceil(sqrt(2^J)), |D_{2^J,j}+P_{2^J,j}| <= C_epsilon (2^J)^(-1+epsilon)",
+    "additional_required_channels": [
+      "the analogous zero-sample bound",
+      "the complete two-channel center bound"
+    ],
+    "status": "NOT_ESTABLISHED"
+  },
+  "selected_checks": {
+    "math_layout": "PASSED_331_LIBRARY_MODULES",
+    "documentation_normal": "PASSED_84_MAINTAINED_PAGES",
+    "documentation_optimized": "PASSED_84_MAINTAINED_PAGES",
+    "documentation_controls_normal": "61_PASSED",
+    "documentation_controls_optimized": "61_PASSED",
+    "diff_check": "PASSED"
+  },
+  "all_scale_arithmetic_bound": "NOT_ESTABLISHED",
+  "riemann_hypothesis": "NOT_PROVED"
+}

@@ -16,6 +16,7 @@
       "GRWTSK/LinearAlgebra/GaugeState.lean"
     ],
     "Analysis/Integration": [
+      "GRWTSK/Analysis/Integration/ExponentialVolterraL2.lean",
       "GRWTSK/Analysis/IntervalReflection.lean"
     ],
     "LinearAlgebra/Jacobi": [
@@ -35,9 +36,15 @@
       "GRWTSK/Analysis/InnerProductSpace/CausalResponseGram.lean",
       "GRWTSK/Analysis/Polarization.lean"
     ],
+    "Logic/ProofChecking": [
+      "GRWTSK/Logic/ProofChecking/RepositoryConformance.lean"
+    ],
     "NumberTheory/Zeta/Riemann": [
       "GRWTSK/NumberTheory/Zeta/Riemann/PolynomialEnergyCriterion.lean",
       "GRWTSK/NumberTheory/Zeta/Riemann/ZeroDefinitions.lean"
+    ],
+    "NumberTheory/Zeta": [
+      "GRWTSK/NumberTheory/Zeta/Riemann/DefectCriterion.lean"
     ],
     "LinearAlgebra/Schrodinger": [
       "GRWTSK/LinearAlgebra/AlmostMathieu.lean",
@@ -116,6 +123,7 @@
     ],
     "NumberTheory/Moebius": [
       "GRWTSK/NumberTheory/Moebius/FiniteEulerProduct.lean",
+      "GRWTSK/NumberTheory/Moebius/LogarithmicMertensBoundary.lean",
       "GRWTSK/NumberTheory/Moebius/PrimitiveIdentification.lean"
     ],
     "NumberTheory/Prime": [

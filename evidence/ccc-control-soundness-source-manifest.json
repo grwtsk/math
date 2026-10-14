@@ -439,7 +439,7 @@
     "GRWTSK/NumberTheory/Zeta/ZeroFreeHalfPlaneCriteria.lean",
     "GRWTSK/NumberTheory/Zeta/HolomorphicFilteredReciprocal.lean"
   ],
-  "audit_destination": "checks/LibraryDeclarations.lean",
+  "audit_destination": "GRWTSK/Logic/ProofChecking/Checks/LibraryDeclarations.lean",
   "audit_destination_sha256": "5268ba9b369da4379e222ab02f913bf3557f29a6249d90f0d7254f5907424dc8",
   "selected_axiom_names": [
     "GRWTSK.ProofHorizon.CorkscrewChamberCap.guard_preserves_safe",

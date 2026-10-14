@@ -52,7 +52,7 @@
     "canonical_source_sha256": "97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d",
     "Lean": "4.33.0",
     "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
-    "public_check": "checks/OrderedProductAudit.lean"
+    "public_check": "GRWTSK/Algebra/OrderedProduct/Checks/Audit.lean"
   },
   "local_direction": "grwtsk contributors",
   "formalization_and_checking_assistance": "OpenAI Codex",

@@ -5,7 +5,7 @@ import GRWTSK.Order.Closure.FiniteDependencyClosure
 import GRWTSK.Logic.Locality.RevisionCertificates
 
 /-!
-# CCC finite alternative proof support
+# Grounded support in finite rule systems
 
 OR support means that one eligible provider suffices. AND support means that
 every prerequisite of that provider already has grounded support. Saturation

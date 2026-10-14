@@ -37,13 +37,6 @@ CAMPAIGN_WORDS = frozenset({
     "conversations", "research", "workstream", "workstreams", "pipeline",
     "prototype", "draft", "style", "styles",
 })
-AMBIGUOUS_MATHEMATICAL_WORDS = frozenset({"branch", "branches", "research"})
-ALIAS_SUFFIXES = CAMPAIGN_WORDS | frozenset({
-    "control", "controls", "check", "checks", "audit", "audits", "test", "tests",
-    "fixture", "fixtures",
-})
-ALIAS_SUFFIX = re.compile(r"(?:" + "|".join(sorted(ALIAS_SUFFIXES, key=len, reverse=True)) + r")+\Z")
-GIT_EXECUTABLE = "/usr/bin/git"
 IDENTIFIER = r"(?:[^\W\d][\w']*|«[^»\r\n]+»)"
 MODULE = re.compile(IDENTIFIER + r"(?:[ \t\r\n]*\.[ \t\r\n]*" + IDENTIFIER + r")*")
 IMPORT_COMMAND = re.compile(r"^[ \t]*(?:(?:public|private)[ \t]+)?import\b", re.M)
@@ -54,26 +47,24 @@ HEADER_STOP = frozenset({
     "inductive", "noncomputable", "opaque", "axiom", "macro", "syntax",
     "elab", "initialize", "builtin_initialize",
 })
-SCOPE = "Present Git tracked plus nonignored untracked Lean sources; deleted tracked regular files are reported separately. No ignored archives, builds, or native execution."
+SCOPE = ("Present Git tracked plus nonignored untracked Lean sources, partitioned into active "
+         "role-bearing sources and exact candidate-only evidence; deleted tracked regular files "
+         "are reported separately. No ignored archives, builds, or native execution.")
 LIMIT = "Explicit path bans and subject-root checks are a structural lower bound; mathematical subject review is required."
-
-
-def git_environment():
-    """Reject ambient repository/index/config redirects for every Git read."""
-    environment = {key: value for key, value in os.environ.items()
-                   if not key.startswith("GIT_")}
-    environment.update(GIT_OPTIONAL_LOCKS="0", GIT_CONFIG_NOSYSTEM="1",
-                       GIT_CONFIG_GLOBAL="/dev/null", GIT_CONFIG_SYSTEM="/dev/null")
-    return environment
+ROOT_MODULE = "GRWTSK.lean"
+CHECK_SEGMENT = "Checks"
+ROLE_SEGMENTS = {"Positive": "positive-check", "Negative": "negative-control"}
+CANDIDATE_INTAKE = "evidence/source-intake.json"
+CANDIDATE_STATUS = "CANDIDATE_SOURCE_ONLY"
 
 
 def git_inventory(root):
     """Read the index and nonignored working files without optional Git locks."""
     paths, tracked_modes = set(), {}
-    environment = git_environment()
+    environment = dict(os.environ, GIT_OPTIONAL_LOCKS="0")
     for arguments in (("--cached", "--stage"), ("--others", "--exclude-standard")):
         process = subprocess.run(
-            [GIT_EXECUTABLE, "-C", str(root), "ls-files", "-z", *arguments],
+            ["git", "-C", str(root), "ls-files", "-z", *arguments],
             env=environment, capture_output=True, timeout=60,
         )
         if process.returncode:
@@ -101,13 +92,10 @@ class MissingSource(ValueError):
 
 
 def safe_parts(relative):
-    # Inspect spelling before PurePosixPath can normalize empty or dot parts.
-    if not isinstance(relative, str) or not relative:
+    path = PurePosixPath(relative)
+    if not relative or not path.parts or path.is_absolute() or any(p in {"..", ".git"} for p in path.parts):
         raise ValueError("unsafe inventory path")
-    parts = tuple(relative.split("/"))
-    if any(part in {"", ".", ".."} or part.casefold() == ".git" for part in parts):
-        raise ValueError("unsafe inventory path")
-    return parts
+    return path.parts
 
 
 def read_regular(root, relative):
@@ -282,89 +270,347 @@ def imports(text):
     return sorted({(entry["module"], entry["line"]) for entry in found})
 
 
-def name_words(segment):
-    """Recognize separated names and CamelCase, including acronym boundaries."""
-    return tuple(word.casefold() for word in re.findall(
-        r"[A-Z]+(?=[A-Z][a-z]|[0-9]|[^A-Za-z]|$)|[A-Z]?[a-z]+|[0-9]+", segment))
-
-
 def forbidden_name(segment):
     if segment.casefold() in {name.casefold() for name in LEGACY_SEGMENTS}:
         return "legacy conjecture/campaign segment"
-    words = name_words(segment)
-    legacy = {"".join(name_words(name)) for name in LEGACY_SEGMENTS}
-    # Complete word runs cover CamelCase and separated aliases. Bound each
-    # run by retired-name length even for arbitrarily long quoted identifiers.
-    maximum = max(map(len, legacy))
-    for start in range(len(words)):
-        joined = ""
-        for finish in range(start, len(words)):
-            if len(joined) + len(words[finish]) > maximum:
-                break
-            joined += words[finish]
-            if joined in legacy:
-                return "legacy conjecture/campaign alias"
-    compact = "".join(words)
-    # A joined lowercase name has no word boundary. Recognize only explicit
-    # workflow suffixes (ccccontrols, waveformauditchecks), not substrings.
-    if any(compact.startswith(name) and ALIAS_SUFFIX.fullmatch(compact[len(name):])
-           for name in legacy):
-        return "legacy conjecture/campaign alias"
-    if any(word in CAMPAIGN_WORDS - AMBIGUOUS_MATHEMATICAL_WORDS for word in words):
-        return "campaign/branch/style alias"
-    # Branches and research also name mathematical objects. Their presence
-    # alone is not campaign evidence: BranchCut and OperationsResearch stay.
-    if any(compact.startswith(name) and ALIAS_SUFFIX.fullmatch(compact[len(name):])
-           for name in AMBIGUOUS_MATHEMATICAL_WORDS):
+    words = re.findall(r"[A-Z]+(?=[A-Z][a-z]|[0-9]|$)|[A-Z]?[a-z]+|[0-9]+", segment)
+    if any(word.casefold() == "ccc" for word in words):
+        return "legacy CCC alias"
+    if any(word.casefold() in CAMPAIGN_WORDS for word in words):
         return "campaign/branch/style alias"
     return None
 
 
 def layout_issues(parts, allowed):
-    """Ban retired names in all project paths; subject roots govern the library.
-
-    RiemannHypothesis may name a statement file with a mathematical home, but
-    cannot be a directory umbrella. Declaration namespaces are never inspected.
-    Root audit files and control directories need no library subject-root test.
-    """
+    """The same structural policy applies to filesystem and imported modules."""
     issues = []
     if parts and parts[0] == "GRWTSK":
         if len(parts) == 1:
             return issues  # The library umbrella is not a mathematical subject module.
         if parts[1] not in allowed:
             issues.append(("unknown-subject-root", parts[1], "not an approved mathematical subject root"))
-    for index, segment in enumerate(parts):
-        if index == len(parts) - 1 and segment == "RiemannHypothesis":
-            continue  # A statement module, rather than a conjecture directory.
-        reason = forbidden_name(segment)
-        if reason:
-            issues.append(("forbidden-layout-name", segment, reason))
+        for segment in parts[1:]:
+            reason = forbidden_name(segment)
+            if reason:
+                issues.append(("forbidden-layout-name", segment, reason))
     return issues
 
 
-def check_paths(root, paths, tracked_regular=()):
+def source_role(relative):
+    """Classify one maintained Lean path by its physical source-set contract."""
+    if relative == ROOT_MODULE:
+        return "library"
+    parts = PurePosixPath(relative).parts
+    if len(parts) < 3 or parts[0] != "GRWTSK":
+        return None
+    if CHECK_SEGMENT not in parts:
+        return "library"
+    index = parts.index(CHECK_SEGMENT)
+    if index < 2 or parts.count(CHECK_SEGMENT) != 1 or index == len(parts) - 1:
+        return None
+    return ROLE_SEGMENTS.get(parts[index + 1], "audit-driver")
+
+
+def candidate_intake(root):
+    """Read the exact candidate-only source set without admitting it as active.
+
+    Structurally valid candidate paths are retained in the returned index even
+    when another field is malformed.  This is deliberately fail-closed: broken
+    candidate metadata must not cause a source to fall through to the active
+    library classifier.
+    """
+    try:
+        payload = read_regular(root, CANDIDATE_INTAKE)
+    except MissingSource:
+        return {}, []
+    except (OSError, UnicodeError, ValueError) as error:
+        return {}, [{"code": "invalid-candidate-intake", "path": CANDIDATE_INTAKE,
+                     "message": str(error)}]
+    try:
+        intake = json.loads(payload.decode("utf-8"))
+    except (UnicodeError, json.JSONDecodeError) as error:
+        return {}, [{"code": "invalid-candidate-intake", "path": CANDIDATE_INTAKE,
+                     "message": str(error)}]
+    findings = []
+    if intake.get("schema") != "mathematical-source-intake-v1":
+        findings.append({"code": "invalid-candidate-intake", "path": CANDIDATE_INTAKE,
+                         "message": "unsupported or missing source-intake schema"})
+    if intake.get("status") != "CANDIDATE_SOURCE_INTAKE_NOT_THEOREM_ACCEPTANCE":
+        findings.append({"code": "invalid-candidate-intake", "path": CANDIDATE_INTAKE,
+                         "message": "source-intake status does not preserve candidate-only scope"})
+    sources = intake.get("sources")
+    if not isinstance(sources, list):
+        findings.append({"code": "invalid-candidate-intake", "path": CANDIDATE_INTAKE,
+                         "message": "sources must be a list"})
+        return {}, findings
+    if intake.get("source_count") != len(sources):
+        findings.append({"code": "candidate-intake-count-mismatch", "path": CANDIDATE_INTAKE,
+                         "message": "declared source_count does not equal the candidate list length"})
+    indexed = {}
+    for position, entry in enumerate(sources):
+        if not isinstance(entry, dict) or not isinstance(entry.get("path"), str):
+            findings.append({"code": "invalid-candidate-intake", "path": CANDIDATE_INTAKE,
+                             "message": "candidate entry %d lacks a string path" % position})
+            continue
+        relative = entry["path"]
+        try:
+            parts = safe_parts(relative)
+        except ValueError as error:
+            findings.append({"code": "invalid-candidate-path", "path": relative,
+                             "message": str(error)})
+            continue
+        if (len(parts) < 3 or parts[0] != "GRWTSK" or not relative.endswith(".lean")
+                or CHECK_SEGMENT in parts):
+            findings.append({"code": "invalid-candidate-path", "path": relative,
+                             "message": "candidate must be a subject-local non-Checks Lean source"})
+            continue
+        if relative in indexed:
+            findings.append({"code": "duplicate-candidate-intake-entry", "path": relative,
+                             "message": "candidate path occurs more than once in source intake"})
+        indexed[relative] = entry
+        digest = entry.get("sha256")
+        size = entry.get("bytes")
+        if not isinstance(digest, str) or re.fullmatch(r"[0-9a-f]{64}", digest) is None:
+            findings.append({"code": "invalid-candidate-intake", "path": relative,
+                             "message": "candidate sha256 must be a lowercase SHA-256 digest"})
+        if not isinstance(size, int) or isinstance(size, bool) or size < 0:
+            findings.append({"code": "invalid-candidate-intake", "path": relative,
+                             "message": "candidate byte count must be a nonnegative integer"})
+        if entry.get("status") != CANDIDATE_STATUS:
+            findings.append({"code": "candidate-status-mismatch", "path": relative,
+                             "message": "candidate is not explicitly CANDIDATE_SOURCE_ONLY"})
+        if entry.get("mathematical_admission") is not False:
+            findings.append({"code": "candidate-admission-mismatch", "path": relative,
+                             "message": "candidate must explicitly deny mathematical admission"})
+        if entry.get("public_release_eligible") is not False:
+            findings.append({"code": "candidate-admission-mismatch", "path": relative,
+                             "message": "candidate must not be marked public-release eligible"})
+    return indexed, findings
+
+
+def module_name(relative):
+    return str(PurePosixPath(relative).with_suffix("")).replace("/", ".")
+
+
+def source_set_findings(files):
+    """Check containment, module identity, imports, cycles, and public closure."""
+    findings = []
+    records = {entry["path"]: entry for entry in files}
+    modules = {}
+    folded = {}
+    for relative, entry in records.items():
+        role = entry["source_role"]
+        if role is None and not entry["candidate_evidence"]:
+            findings.append({"code": "unclassified-maintained-source", "path": relative,
+                             "message": "maintained Lean source is outside the canonical role layout"})
+            continue
+        module = module_name(relative)
+        if module in modules:
+            findings.append({"code": "duplicate-module", "path": relative, "module": module,
+                             "message": "duplicate exact Lean module identity"})
+        modules[module] = relative
+        folded.setdefault(module.casefold(), []).append(module)
+    for identities in folded.values():
+        if len(set(identities)) > 1:
+            for identity in sorted(set(identities)):
+                findings.append({"code": "case-folding-module-collision",
+                                 "path": modules[identity], "module": identity,
+                                 "message": "module identity collides on a case-insensitive filesystem"})
+
+    graph = {module: [] for module in modules}
+    active_graph = {module: [] for module, relative in modules.items()
+                    if not records[relative]["candidate_evidence"]}
+    for module, relative in modules.items():
+        role = records[relative]["source_role"]
+        candidate = records[relative]["candidate_evidence"]
+        for imported, line in records[relative]["imports"]:
+            if imported != "GRWTSK" and not imported.startswith("GRWTSK."):
+                continue
+            target = modules.get(imported)
+            if target is None:
+                findings.append({"code": "unresolved-local-import", "path": relative,
+                                 "line": line, "module": imported,
+                                 "message": "import has no present Git-visible maintained source"})
+                continue
+            graph[module].append(imported)
+            target_candidate = records[target]["candidate_evidence"]
+            if not candidate and target_candidate:
+                findings.append({"code": "active-source-imports-candidate", "path": relative,
+                                 "line": line, "module": imported,
+                                 "message": "active source imports candidate-only evidence"})
+            elif not candidate:
+                active_graph[module].append(imported)
+            if (not candidate and not target_candidate and role == "library"
+                    and records[target]["source_role"] != "library"):
+                findings.append({"code": "library-imports-validation", "path": relative,
+                                 "line": line, "module": imported,
+                                 "message": "public library source imports a validation source"})
+
+    visiting, visited = [], set()
+    def visit(module):
+        if module in visiting:
+            cycle = visiting[visiting.index(module):] + [module]
+            findings.append({"code": "cyclic-local-import", "path": modules[module],
+                             "module": module, "message": " -> ".join(cycle)})
+            return
+        if module in visited:
+            return
+        visiting.append(module)
+        for dependency in graph[module]:
+            visit(dependency)
+        visiting.pop()
+        visited.add(module)
+    for module in sorted(graph):
+        visit(module)
+
+    reachable, pending = set(), ["GRWTSK"] if "GRWTSK" in modules else []
+    while pending:
+        module = pending.pop()
+        if module in reachable:
+            continue
+        reachable.add(module)
+        pending.extend(active_graph.get(module, ()))
+    for module, relative in sorted(modules.items()):
+        if (not records[relative]["candidate_evidence"]
+                and records[relative]["source_role"] == "library" and module not in reachable):
+            findings.append({"code": "library-module-outside-public-closure", "path": relative,
+                             "module": module,
+                             "message": "library module is not reachable from GRWTSK.lean"})
+    return findings
+
+
+def catalog_findings(root, files, intake):
+    """Require disjoint exact catalogs for active and candidate-only sources."""
+    path = Path(root) / "docs/math-layout.json"
+    if not path.is_file():
+        return []
+    try:
+        layout = json.loads(read_regular(root, "docs/math-layout.json"))
+        catalog = layout["active_sources"]
+        candidate_catalog = layout.get("candidate_sources", [])
+        candidate_metadata = layout.get("candidate_source_catalog", {})
+        if intake and "candidate_sources" not in layout:
+            raise KeyError("candidate_sources")
+    except (KeyError, TypeError, json.JSONDecodeError, UnicodeDecodeError, ValueError) as error:
+        return [{"code": "invalid-source-catalog", "path": "docs/math-layout.json",
+                 "message": str(error)}]
+    findings, indexed, candidate_indexed = [], {}, {}
+    if not isinstance(candidate_metadata, dict):
+        findings.append({"code": "invalid-candidate-catalog", "path": "docs/math-layout.json",
+                         "message": "candidate_source_catalog must be an object"})
+        candidate_metadata = {}
+    if intake or candidate_metadata:
+        if candidate_metadata.get("status") != CANDIDATE_STATUS:
+            findings.append({"code": "candidate-status-mismatch", "path": "docs/math-layout.json",
+                             "message": "candidate catalog metadata lost candidate-only status"})
+        if candidate_metadata.get("source_count") != len(candidate_catalog):
+            findings.append({"code": "candidate-catalog-count-mismatch",
+                             "path": "docs/math-layout.json",
+                             "message": "candidate catalog metadata count disagrees with entries"})
+        if candidate_metadata.get("authoritative_intake") != CANDIDATE_INTAKE + "#sources":
+            findings.append({"code": "candidate-catalog-intake-mismatch",
+                             "path": "docs/math-layout.json",
+                             "message": "candidate catalog lacks its exact intake binding"})
+    for entry in catalog:
+        if not isinstance(entry, dict) or not isinstance(entry.get("path"), str):
+            findings.append({"code": "invalid-source-catalog", "path": "docs/math-layout.json",
+                             "message": "active source record lacks a path"})
+            continue
+        if entry["path"] in indexed:
+            findings.append({"code": "duplicate-source-catalog-entry", "path": entry["path"],
+                             "message": "active source is cataloged more than once"})
+        indexed[entry["path"]] = entry
+    for entry in candidate_catalog:
+        if not isinstance(entry, dict) or not isinstance(entry.get("path"), str):
+            findings.append({"code": "invalid-candidate-catalog", "path": "docs/math-layout.json",
+                             "message": "candidate source record lacks a path"})
+            continue
+        if entry["path"] in candidate_indexed:
+            findings.append({"code": "duplicate-candidate-catalog-entry", "path": entry["path"],
+                             "message": "candidate source is cataloged more than once"})
+        candidate_indexed[entry["path"]] = entry
+    for relative in sorted(indexed.keys() & candidate_indexed.keys()):
+        findings.append({"code": "source-catalog-overlap", "path": relative,
+                         "message": "source occurs in both active and candidate catalogs"})
+    observed = {entry["path"]: entry for entry in files}
+    observed_active = {path: entry for path, entry in observed.items()
+                       if not entry["candidate_evidence"]}
+    observed_candidates = {path: entry for path, entry in observed.items()
+                           if entry["candidate_evidence"]}
+    for relative in sorted(observed_active.keys() - indexed.keys()):
+        findings.append({"code": "uncataloged-maintained-source", "path": relative,
+                         "message": "present maintained Lean source is absent from active_sources"})
+    for relative in sorted(indexed.keys() - observed_active.keys()):
+        findings.append({"code": "stale-source-catalog-entry", "path": relative,
+                         "message": "cataloged active source is absent from the working tree"})
+    for relative in sorted(observed_active.keys() & indexed.keys()):
+        actual, declared = observed_active[relative], indexed[relative]
+        if declared.get("sha256") != actual["sha256"]:
+            findings.append({"code": "stale-source-catalog-hash", "path": relative,
+                             "message": "catalog hash does not bind the current bytes"})
+        if declared.get("source_role") != actual["source_role"]:
+            findings.append({"code": "source-role-mismatch", "path": relative,
+                             "message": "catalog role disagrees with physical role path"})
+        if declared.get("target_path") != relative:
+            findings.append({"code": "source-target-mismatch", "path": relative,
+                             "message": "catalog target is not the current canonical path"})
+        if actual["source_role"] != "library" and not declared.get("runner"):
+            findings.append({"code": "validation-without-runner", "path": relative,
+                             "message": "validation source lacks an explicit runner/outcome policy"})
+    for relative in sorted(observed_candidates.keys() - candidate_indexed.keys()):
+        findings.append({"code": "uncataloged-candidate-source", "path": relative,
+                         "message": "candidate-only source is absent from candidate_sources"})
+    for relative in sorted(candidate_indexed.keys() - observed_candidates.keys()):
+        findings.append({"code": "stale-candidate-catalog-entry", "path": relative,
+                         "message": "cataloged candidate source is absent from candidate intake/tree"})
+    for relative in sorted(observed_candidates.keys() & candidate_indexed.keys()):
+        actual, declared = observed_candidates[relative], candidate_indexed[relative]
+        intake_entry = intake[relative]
+        if declared.get("sha256") != actual["sha256"]:
+            findings.append({"code": "stale-candidate-catalog-hash", "path": relative,
+                             "message": "candidate catalog hash does not bind current bytes"})
+        if declared.get("bytes") != actual["bytes"]:
+            findings.append({"code": "stale-candidate-catalog-size", "path": relative,
+                             "message": "candidate catalog size does not bind current bytes"})
+        if declared.get("status") != CANDIDATE_STATUS:
+            findings.append({"code": "candidate-status-mismatch", "path": relative,
+                             "message": "candidate catalog lost CANDIDATE_SOURCE_ONLY status"})
+        if declared.get("source_set") != "candidate-evidence":
+            findings.append({"code": "candidate-source-set-mismatch", "path": relative,
+                             "message": "candidate catalog lost candidate-evidence isolation"})
+        if "source_role" in declared:
+            findings.append({"code": "candidate-source-set-mismatch", "path": relative,
+                             "message": "candidate must not acquire an active source role"})
+        if declared.get("target_path") != relative:
+            findings.append({"code": "candidate-target-mismatch", "path": relative,
+                             "message": "candidate target is not its retained subject-local path"})
+        if declared.get("source_intake") != CANDIDATE_INTAKE:
+            findings.append({"code": "candidate-catalog-intake-mismatch", "path": relative,
+                             "message": "candidate source lacks its intake provenance binding"})
+        for field in ("sha256", "bytes", "status", "mathematical_admission",
+                      "public_release_eligible"):
+            if declared.get(field) != intake_entry.get(field):
+                findings.append({"code": "candidate-catalog-intake-mismatch", "path": relative,
+                                 "message": "candidate catalog disagrees with intake field " + field})
+    return findings
+
+
+def check_paths(root, paths, tracked_regular=(), enforce_source_sets=False):
     allowed = set(SUBJECT_ROOTS)
     findings, files, deleted = [], [], []
-    paths = sorted(set(paths))
     tracked_regular = set(tracked_regular)
-    # Imports into local control/support trees follow the same path policy.
-    # External libraries are outside this repository's naming jurisdiction.
-    project_roots = {"GRWTSK", "checks"}
-    for relative in paths:
-        if relative.endswith(".lean"):
-            try:
-                parts = safe_parts(relative)
-            except ValueError:
-                continue  # The source read below reports the unsafe path.
-            if len(parts) > 1:
-                project_roots.add(parts[0])
-            else:
-                project_roots.add(PurePosixPath(relative).stem)
+    candidate_records, candidate_findings = candidate_intake(root) if enforce_source_sets else ({}, [])
+    candidate_paths = set(candidate_records)
+    findings.extend(candidate_findings)
     library_count, import_count = 0, 0
-    for relative in paths:
+    candidate_count = 0
+    role_counts = {name: 0 for name in ("library", "positive-check", "negative-control", "audit-driver")}
+    for relative in sorted(set(paths)):
         if not relative.endswith(".lean"):
             continue
-        library = relative.startswith("GRWTSK/")
+        candidate = relative in candidate_paths
+        role = None if candidate else source_role(relative)
+        library = role == "library"
         try:
             data = read_regular(root, relative)
             text = data.decode("utf-8")
@@ -379,28 +625,61 @@ def check_paths(root, paths, tracked_regular=()):
             if library:
                 library_count += 1
             continue
+        for line_number, line in enumerate(mask_lean(text).splitlines(), 1):
+            match = re.match(r"^[ \t]*(?:(?:public|private)[ \t]+)?import[ \t]+\S+[ \t]+\S+", line)
+            if match:
+                findings.append({"code": "invalid-import-command", "path": relative,
+                                 "line": line_number,
+                                 "message": "Lean import commands accept one module per command"})
         if library:
             library_count += 1
-        module_parts = list(PurePosixPath(relative).with_suffix("").parts)
-        for code, segment, reason in layout_issues(module_parts, allowed):
-            findings.append({"code": code, "path": relative, "segment": segment,
-                             "message": reason})
-        files.append({"path": relative, "sha256": hashlib.sha256(data).hexdigest()})
+        if candidate:
+            candidate_count += 1
+        if relative.startswith("GRWTSK/"):
+            module_parts = list(PurePosixPath(relative).with_suffix("").parts)
+            for code, segment, reason in layout_issues(module_parts, allowed):
+                findings.append({"code": code, "path": relative, "segment": segment,
+                                 "message": reason})
+        if role in role_counts:
+            role_counts[role] += 1
+        digest = hashlib.sha256(data).hexdigest()
+        files.append({"path": relative, "sha256": digest, "bytes": len(data),
+                      "source_role": role, "candidate_evidence": candidate,
+                      "imports": entries})
+        if candidate:
+            declared = candidate_records[relative]
+            if declared.get("sha256") != digest:
+                findings.append({"code": "candidate-source-byte-drift", "path": relative,
+                                 "message": "candidate bytes do not match source-intake SHA-256"})
+            if declared.get("bytes") != len(data):
+                findings.append({"code": "candidate-source-size-drift", "path": relative,
+                                 "message": "candidate byte count does not match source intake"})
         for module, line in entries:
-            if module.split(".")[0] in project_roots:
+            if module == "GRWTSK" or module.startswith("GRWTSK."):
                 import_count += 1
                 for code, segment, reason in layout_issues(module.split("."), allowed):
                     findings.append({"code": "forbidden-import", "path": relative,
                                      "line": line, "module": module, "segment": segment,
                                      "message": reason, "layout_code": code})
+    if enforce_source_sets:
+        observed_paths = {entry["path"] for entry in files}
+        for relative in sorted(candidate_paths - observed_paths):
+            findings.append({"code": "missing-candidate-source", "path": relative,
+                             "message": "source-intake candidate is not Git-visible and readable"})
+        findings.extend(source_set_findings(files))
+        findings.extend(catalog_findings(root, files, candidate_records))
     findings.sort(key=lambda entry: (entry["path"], entry.get("line", 0), entry["code"],
                                      entry.get("module", ""), entry.get("segment", "")))
     return {"schema_version": 1, "status": "FAIL" if findings else "PASS",
             "scope": SCOPE, "limit": LIMIT, "subject_review_required": True,
             "allowed_subject_roots": sorted(allowed), "library_module_count": library_count,
             "lean_source_count": len(files), "project_import_count": import_count,
+            "active_source_count": len(files) - candidate_count,
+            "candidate_source_count": candidate_count,
+            "source_role_counts": role_counts,
             "deleted_tracked_regular_paths": deleted,
-            "files": files, "findings": findings}
+            "files": [{key: value for key, value in entry.items() if key != "imports"}
+                      for entry in files], "findings": findings}
 
 
 def ignored_fixture_directory(root):
@@ -420,8 +699,8 @@ def ignored_fixture_directory(root):
         if not stat.S_ISDIR(mode) or stat.S_ISLNK(mode):
             raise ValueError("fixture parent must be a regular directory")
     directory = Path(tempfile.mkdtemp(prefix="fixtures-", dir=base))
-    process = subprocess.run([GIT_EXECUTABLE, "-C", str(root), "check-ignore", "-q", str(directory)],
-                             env=git_environment(), capture_output=True)
+    process = subprocess.run(["git", "-C", str(root), "check-ignore", "-q", str(directory)],
+                             env=dict(os.environ, GIT_OPTIONAL_LOCKS="0"), capture_output=True)
     if process.returncode:
         directory.rmdir()
         raise ValueError("self-test fixtures must be ignored by Git")
@@ -455,7 +734,8 @@ def self_test(root):
         "GRWTSK/Algebra/OrderedProduct.lean": "import Mathlib\n",
         "GRWTSK/Analysis/Integrals/CauchySchwarz.lean": "import GRWTSK.Algebra.OrderedProduct\n",
         "GRWTSK/NumberTheory/Zeta/Target.lean": "namespace GRWTSK.RiemannHypothesis\nend GRWTSK.RiemannHypothesis\n",
-        "GRWTSK.lean": "public import GRWTSK.Analysis.Integrals.CauchySchwarz\n",
+        "GRWTSK.lean": ("public import GRWTSK.Analysis.Integrals.CauchySchwarz\n"
+                        "public import GRWTSK.NumberTheory.Zeta.Target\n"),
     })
     case("all-approved-subject-roots", {
         "GRWTSK/" + subject + "/Basic.lean": "import Mathlib\n"
@@ -471,88 +751,9 @@ def self_test(root):
         case("import-" + segment, {
             "GRWTSK/Analysis/Basic.lean": "import GRWTSK.Analysis." + segment + ".Basic\n",
         }, ("forbidden-import",))
-        case("control-directory-" + segment, {
-            "checks/Analysis/" + segment + "/Controls/FalseClaim.lean": "import Mathlib\n",
-        }, ("forbidden-layout-name",))
-        case("control-alias-camel-" + segment, {
-            "checks/Analysis/" + segment + "Controls/FalseClaim.lean": "import Mathlib\n",
-        }, ("forbidden-layout-name",))
-        separated = re.sub(r"(?<=[a-z])(?=[A-Z])", "-", segment).casefold()
-        case("control-alias-hyphen-" + segment, {
-            "checks/Analysis/" + separated + "-controls/FalseClaim.lean": "import Mathlib\n",
-        }, ("forbidden-layout-name",))
-        case("control-alias-underscore-" + segment, {
-            "checks/Analysis/" + separated.replace("-", "_") + "_controls/FalseClaim.lean": "import Mathlib\n",
-        }, ("forbidden-layout-name",))
-        case("control-alias-joined-lowercase-" + segment, {
-            "checks/Analysis/" + segment.casefold() + "controls/FalseClaim.lean": "import Mathlib\n",
-        }, ("forbidden-layout-name",))
-        case("control-alias-joined-suffix-combination-" + segment, {
-            "checks/Analysis/" + segment.casefold() + "auditchecks/FalseClaim.lean": "import Mathlib\n",
-        }, ("forbidden-layout-name",))
-    case("mathematical-control-and-technical-root-audits", {
-        "checks/Analysis/Fourier/Controls/FalseTraceBound.lean": "import GRWTSK.Analysis.Fourier.Basic\n",
-        "checks/MathTrustAudit.lean": "import Lean\n",
-        "checks/DeclarationAudit.lean": "import GRWTSK\n",
-        "MathRuntimeAudit.lean": "namespace GRWTSK.CCC\nend GRWTSK.CCC\n",
-        "support/lean/RuntimeSupport/Observer.lean": "import Lean\n",
-        "checks/Analysis/Success/Control.lean": "import Mathlib\n",
-    })
-    case("conjecture-statement-filenames-have-mathematical-homes", {
-        "GRWTSK/NumberTheory/Zeta/RiemannHypothesis.lean": "namespace GRWTSK.RiemannHypothesis\nend GRWTSK.RiemannHypothesis\n",
-        "checks/NumberTheory/Zeta/Declarations.lean": "import GRWTSK.NumberTheory.Zeta.RiemannHypothesis\nimport Mathlib.NumberTheory.LSeries.RiemannHypothesis\n",
-    })
-    case("technical-source-root-retired-directory", {
-        "support/lean/CCC_Controls/Observer.lean": "import Lean\n",
-    }, ("forbidden-layout-name",))
-    case("local-control-imports-reject-retired-aliases", {
-        "checks/Analysis/Fourier/Declarations.lean": "import checks.waveform_controls.FalseTraceBound\nimport checks.Analysis.WaveformControls.FalseAlias\n",
-    }, ("forbidden-import",))
-    case("local-support-imports-reject-retired-aliases", {
-        "support/lean/RuntimeSupport/Observer.lean": "import support.lean.CCCControls.Observer\n",
-    }, ("forbidden-import",))
-    case("standalone-local-root-import-rejects-retired-alias", {
-        "Observer.lean": "import Observer.WaveformControls.Bad\n",
-    }, ("forbidden-import",))
-    case("standalone-local-root-import-permits-mathematical-object", {
-        "Observer.lean": "import Observer.Analysis.Fourier\nnamespace GRWTSK.CCC\nend GRWTSK.CCC\n",
-    })
-    case("joined-lowercase-local-imports-reject-retired-aliases", {
-        "checks/Analysis/Fourier/Declarations.lean": "import checks.waveformcontrols.Bad\nimport checks.ccccontrols.Bad\nimport checks.riemannhypothesiscontrols.Bad\n",
-    }, ("forbidden-import",))
-    case("mathematical-branch-and-research-objects", {
-        "GRWTSK/Analysis/" + name + "/Basic.lean": "import Mathlib\n"
-        for name in ("BranchCut", "BranchCuts", "BranchPoint", "AnalyticBranches",
-                     "RamificationBranch", "OperationsResearch", "BranchCorrelation")
-    })
-    case("workflow-branch-controls", {
-        "checks/Analysis/BranchControls/FalseClaim.lean": "import Mathlib\n",
-    }, ("forbidden-layout-name",))
-    case("workflow-joined-branch-controls", {
-        "checks/Analysis/branchcontrols/FalseClaim.lean": "import Mathlib\n",
-    }, ("forbidden-layout-name",))
-    case("workflow-joined-research-campaign", {
-        "checks/Analysis/researchcampaign/FalseClaim.lean": "import Mathlib\n",
-    }, ("forbidden-layout-name",))
-    case("ordinary-names-do-not-match-arbitrary-retired-substrings", {
-        "checks/Analysis/" + name + "/Control.lean": "import Mathlib\n"
-        for name in ("Success", "successcontrols", "cccx", "waveformity", "Notccccontrols")
-    })
-    case("long-quoted-import-alias-is-bounded-and-rejected", {
-        "checks/Analysis/Declarations.lean": "import checks.«" + "Ab" * 2000 + "WaveformControls».Bad\n",
-    }, ("forbidden-import",))
-    case("long-quoted-ordinary-import-is-bounded-and-permitted", {
-        "checks/Analysis/Declarations.lean": "import checks.«" + "Ab" * 2000 + "».Basic\n",
-    })
-    case("nested-acronym-directory-boundary", {
-        "checks/Analysis/CCC-controls/FalseClaim.lean": "import Mathlib\n",
-    }, ("forbidden-layout-name",))
-    case("nested-retired-alias-word-run", {
-        "checks/Analysis/ArchivedWaveformControls/FalseClaim.lean": "import Mathlib\n",
-    }, ("forbidden-layout-name",))
     case("legacy-root-aggregator", {"GRWTSK/ProofHorizon.lean": "import Mathlib\n"},
          ("unknown-subject-root", "forbidden-layout-name"))
-    case("branch-file-alias", {"GRWTSK/Analysis/BranchControls.lean": "import Mathlib\n"},
+    case("branch-file-alias", {"GRWTSK/Analysis/BranchCorrelation.lean": "import Mathlib\n"},
          ("forbidden-layout-name",))
     case("no-campaign-substitute", {"GRWTSK/Analysis/ResearchCampaign/Basic.lean": "import Mathlib\n"},
          ("forbidden-layout-name",))
@@ -567,8 +768,8 @@ def self_test(root):
             ("GRWTSK.ProofHorizon", 3), ("GRWTSK.ProofHorizon", 3)]:
         raise AssertionError("import module/line preservation")
     passed.append("import-module-line-preservation")
-    case("file-symlink", {"outside.lean": "import Mathlib\n"},
-         ("source-unavailable",), (("GRWTSK/Analysis/Link.lean", "../../outside.lean"),))
+    case("file-symlink", {"outside.txt": "import Mathlib\n"},
+         ("source-unavailable",), (("GRWTSK/Analysis/Link.lean", "../../outside.txt"),))
     case("broken-symlink-remains-error", {}, ("source-unavailable",),
          (("GRWTSK/Analysis/Link.lean", "../../missing.lean"),),
          ("GRWTSK/Analysis/Link.lean",))
@@ -583,22 +784,6 @@ def self_test(root):
     passed.append("deleted-tracked-path-reporting")
     case("unsafe-tracked-path-remains-error", {}, ("source-unavailable",),
          tracked_regular=("../Escape.lean",), extra_paths=("../Escape.lean",))
-    for number, path in enumerate((
-            "", ".", "..", "GRWTSK//Analysis/Basic.lean", "GRWTSK/./Analysis/Basic.lean",
-            "GRWTSK/../Analysis/Basic.lean", "/GRWTSK/Analysis/Basic.lean",
-            "GRWTSK/Analysis/Basic.lean/", "GRWTSK/.Git/Basic.lean", ".GIT/Control.lean",
-            "checks/.gIt/Control.lean", "checks//Control.lean")):
-        with unittest.mock.patch.object(os, "open", side_effect=AssertionError("unsafe path reached filesystem")):
-            try:
-                read_regular(fixture, path)
-            except ValueError as error:
-                if str(error) != "unsafe inventory path":
-                    raise AssertionError("unexpected raw-path rejection") from error
-            else:
-                raise AssertionError("noncanonical raw inventory path was accepted: " + path)
-        passed.append("raw-inventory-path-rejected-before-filesystem-%02d" % number)
-    case("case-variant-git-path-fails-even-if-tracked", {}, ("source-unavailable",),
-         tracked_regular=("checks/.GiT/Control.lean",), extra_paths=("checks/.GiT/Control.lean",))
     directory_source = fixture / "directory-source"
     (directory_source / "GRWTSK/Analysis/Basic.lean").mkdir(parents=True)
     report = check_paths(directory_source, ["GRWTSK/Analysis/Basic.lean"],
@@ -621,13 +806,7 @@ def self_test(root):
     tracked = b"100644 0000000000000000000000000000000000000000 0\tGRWTSK/Analysis/Tracked.lean\0"
     tracked += b"120000 0000000000000000000000000000000000000000 0\tGRWTSK/Analysis/Link.lean\0"
     untracked = b"GRWTSK/Analysis/CCC/New.lean\0"
-    redirects = {"GIT_DIR": "/unrelated/repo", "GIT_WORK_TREE": "/unrelated/tree",
-                 "GIT_INDEX_FILE": "/unrelated/index", "GIT_CONFIG_COUNT": "1",
-                 "GIT_CONFIG_KEY_0": "core.worktree", "GIT_CONFIG_VALUE_0": "/unrelated/tree",
-                 "GIT_CONFIG_GLOBAL": "/unrelated/config", "GIT_CONFIG_SYSTEM": "/unrelated/system",
-                 "GIT_CONFIG_NOSYSTEM": "0", "GIT_EXEC_PATH": "/unrelated/executables",
-                 "GIT_OPTIONAL_LOCKS": "1"}
-    with unittest.mock.patch.dict(os.environ, redirects), unittest.mock.patch.object(subprocess, "run", side_effect=[
+    with unittest.mock.patch.object(subprocess, "run", side_effect=[
             subprocess.CompletedProcess([], 0, tracked, b""),
             subprocess.CompletedProcess([], 0, untracked, b"")]) as mocked:
         observed = git_inventory(fixture)
@@ -637,19 +816,175 @@ def self_test(root):
             raise AssertionError("new untracked source missing from inventory")
         if "--exclude-standard" not in mocked.call_args_list[1][0][0]:
             raise AssertionError("ignored build/archive inventory exclusion missing")
-        for call in mocked.call_args_list:
-            if call[0][0][0] != "/usr/bin/git":
-                raise AssertionError("Git inventory executable must have an absolute pinned path")
-            observed_git_environment = {key: value for key, value in call[1]["env"].items()
-                                        if key.startswith("GIT_")}
-            if observed_git_environment != {"GIT_OPTIONAL_LOCKS": "0", "GIT_CONFIG_NOSYSTEM": "1",
-                                            "GIT_CONFIG_GLOBAL": "/dev/null", "GIT_CONFIG_SYSTEM": "/dev/null"}:
-                raise AssertionError("Git inventory inherited a redirect or enabled ambient configuration")
     passed.append("tracked-and-new-untracked-nonignored-inventory")
-    passed.append("git-inventory-pinned-executable-and-sanitized-redirects")
     case("new-untracked-legacy-source-rejected", {
         "GRWTSK/Analysis/CCC/New.lean": "import Mathlib\n",
     }, ("forbidden-layout-name",))
+    complete = fixture / "source-set-completeness"
+    (complete / "GRWTSK/Analysis/Checks/Negative").mkdir(parents=True)
+    (complete / "GRWTSK/Analysis").mkdir(exist_ok=True)
+    (complete / "GRWTSK.lean").write_text("import GRWTSK.Analysis.Public\nimport GRWTSK.Analysis.Checks.Negative.Bad\n")
+    (complete / "GRWTSK/Analysis/Public.lean").write_text("import GRWTSK.Analysis.Missing\n")
+    (complete / "GRWTSK/Analysis/Omitted.lean").write_text("import Mathlib\n")
+    (complete / "GRWTSK/Analysis/Checks/Negative/Bad.lean").write_text("import GRWTSK.Analysis.Public\n")
+    (complete / "escaped.lean").write_text("import Mathlib\n")
+    paths = sorted(str(path.relative_to(complete)) for path in complete.rglob("*.lean"))
+    report = check_paths(complete, paths, enforce_source_sets=True)
+    required = {"unclassified-maintained-source", "unresolved-local-import",
+                "library-imports-validation", "library-module-outside-public-closure"}
+    if not required <= {entry["code"] for entry in report["findings"]}:
+        raise AssertionError("source-set containment and closure fixtures were not detected")
+    passed.append("source-set-containment-imports-and-public-closure")
+    cyclic = fixture / "source-set-cycle"
+    (cyclic / "GRWTSK/Analysis").mkdir(parents=True)
+    (cyclic / "GRWTSK.lean").write_text("import GRWTSK.Analysis.A\n")
+    (cyclic / "GRWTSK/Analysis/A.lean").write_text("import GRWTSK.Analysis.B\n")
+    (cyclic / "GRWTSK/Analysis/B.lean").write_text("import GRWTSK.Analysis.A\n")
+    paths = sorted(str(path.relative_to(cyclic)) for path in cyclic.rglob("*.lean"))
+    report = check_paths(cyclic, paths, enforce_source_sets=True)
+    if "cyclic-local-import" not in {entry["code"] for entry in report["findings"]}:
+        raise AssertionError("local import cycle fixture was not detected")
+    passed.append("source-set-cycle")
+    malformed = fixture / "multiple-modules-in-one-import"
+    (malformed / "GRWTSK/Analysis").mkdir(parents=True)
+    (malformed / "GRWTSK.lean").write_text(
+        "import GRWTSK.Analysis.A GRWTSK.Analysis.B\n")
+    (malformed / "GRWTSK/Analysis/A.lean").write_text("import Mathlib\n")
+    (malformed / "GRWTSK/Analysis/B.lean").write_text("import Mathlib\n")
+    paths = sorted(str(path.relative_to(malformed)) for path in malformed.rglob("*.lean"))
+    report = check_paths(malformed, paths)
+    if "invalid-import-command" not in {entry["code"] for entry in report["findings"]}:
+        raise AssertionError("multiple modules in one import command were not rejected")
+    passed.append("single-module-import-command")
+    catalog_root = fixture / "catalog-completeness"
+    (catalog_root / "GRWTSK/Analysis").mkdir(parents=True)
+    (catalog_root / "docs").mkdir()
+    (catalog_root / "GRWTSK.lean").write_text("import GRWTSK.Analysis.A\n")
+    (catalog_root / "GRWTSK/Analysis/A.lean").write_text("import Mathlib\n")
+    (catalog_root / "docs/math-layout.json").write_text(json.dumps({"active_sources": [{
+        "path": "GRWTSK.lean", "sha256": hashlib.sha256(
+            (catalog_root / "GRWTSK.lean").read_bytes()).hexdigest(),
+        "source_role": "library", "target_path": "GRWTSK.lean", "runner": "lake build GRWTSK",
+    }]}))
+    paths = sorted(str(path.relative_to(catalog_root)) for path in catalog_root.rglob("*.lean"))
+    report = check_paths(catalog_root, paths, enforce_source_sets=True)
+    if "uncataloged-maintained-source" not in {entry["code"] for entry in report["findings"]}:
+        raise AssertionError("catalog omission fixture was not detected")
+    passed.append("catalog-omission")
+
+    def candidate_entry(directory, relative):
+        data = (directory / relative).read_bytes()
+        return {
+            "path": relative, "sha256": hashlib.sha256(data).hexdigest(),
+            "bytes": len(data), "status": CANDIDATE_STATUS,
+            "source_set": "candidate-evidence", "mathematical_admission": False,
+            "public_release_eligible": False, "target_path": relative,
+            "source_intake": CANDIDATE_INTAKE,
+        }
+
+    def write_candidate_fixture(directory, active, candidates):
+        (directory / "evidence").mkdir(exist_ok=True)
+        intake_fields = {"path", "sha256", "bytes", "status",
+                         "mathematical_admission", "public_release_eligible"}
+        intake_candidates = [{key: value for key, value in entry.items()
+                              if key in intake_fields} for entry in candidates]
+        (directory / CANDIDATE_INTAKE).write_text(json.dumps({
+            "schema": "mathematical-source-intake-v1",
+            "status": "CANDIDATE_SOURCE_INTAKE_NOT_THEOREM_ACCEPTANCE",
+            "source_count": len(candidates), "sources": intake_candidates,
+        }))
+        (directory / "docs").mkdir(exist_ok=True)
+        (directory / "docs/math-layout.json").write_text(json.dumps({
+            "active_sources": active, "candidate_sources": candidates,
+            "candidate_source_catalog": {
+                "authoritative_intake": CANDIDATE_INTAKE + "#sources",
+                "status": CANDIDATE_STATUS, "source_count": len(candidates),
+            },
+        }))
+
+    candidate_root = fixture / "candidate-source-isolation"
+    (candidate_root / "GRWTSK/Analysis").mkdir(parents=True)
+    (candidate_root / "GRWTSK.lean").write_text("import GRWTSK.Analysis.Public\n")
+    (candidate_root / "GRWTSK/Analysis/Public.lean").write_text(
+        "import GRWTSK.Analysis.Candidate\n")
+    candidate_path = "GRWTSK/Analysis/Candidate.lean"
+    (candidate_root / candidate_path).write_text("import Mathlib\n")
+    active_entries = []
+    for relative in ("GRWTSK.lean", "GRWTSK/Analysis/Public.lean"):
+        active_entries.append({
+            "path": relative,
+            "sha256": hashlib.sha256((candidate_root / relative).read_bytes()).hexdigest(),
+            "source_role": "library", "target_path": relative,
+            "runner": "lake build GRWTSK",
+        })
+    candidates = [candidate_entry(candidate_root, candidate_path)]
+    write_candidate_fixture(candidate_root, active_entries, candidates)
+    paths = sorted(str(path.relative_to(candidate_root))
+                   for path in candidate_root.rglob("*.lean"))
+    report = check_paths(candidate_root, paths, enforce_source_sets=True)
+    codes = {entry["code"] for entry in report["findings"]}
+    if codes != {"active-source-imports-candidate"}:
+        raise AssertionError("candidate import isolation fixture failed: " + repr(sorted(codes)))
+    if (report["active_source_count"], report["candidate_source_count"],
+            report["library_module_count"]) != (2, 1, 2):
+        raise AssertionError("candidate source counts were conflated with active library roles")
+    passed.append("candidate-source-import-isolation")
+
+    isolated_root = fixture / "candidate-graph-controls"
+    (isolated_root / "GRWTSK/Analysis").mkdir(parents=True)
+    (isolated_root / "GRWTSK.lean").write_text("import Mathlib\n")
+    candidate_texts = {
+        "GRWTSK/Analysis/A.lean": "import GRWTSK.Analysis.B\n",
+        "GRWTSK/Analysis/B.lean": "import GRWTSK.Analysis.A\n",
+        "GRWTSK/Analysis/Unresolved.lean": "import GRWTSK.Analysis.Absent\n",
+    }
+    for relative, text in candidate_texts.items():
+        (isolated_root / relative).write_text(text)
+    active_entries = [{
+        "path": "GRWTSK.lean",
+        "sha256": hashlib.sha256((isolated_root / "GRWTSK.lean").read_bytes()).hexdigest(),
+        "source_role": "library", "target_path": "GRWTSK.lean",
+        "runner": "lake build GRWTSK",
+    }]
+    candidates = [candidate_entry(isolated_root, relative) for relative in candidate_texts]
+    write_candidate_fixture(isolated_root, active_entries, candidates)
+    paths = sorted(str(path.relative_to(isolated_root))
+                   for path in isolated_root.rglob("*.lean"))
+    report = check_paths(isolated_root, paths, enforce_source_sets=True)
+    required = {"cyclic-local-import", "unresolved-local-import"}
+    if not required <= {entry["code"] for entry in report["findings"]}:
+        raise AssertionError("candidate graph controls did not remain active")
+    synthetic_collision = source_set_findings([{
+        "path": "GRWTSK/Analysis/Case.lean", "source_role": None,
+        "candidate_evidence": True, "imports": [],
+    }, {
+        "path": "GRWTSK/Analysis/case.lean", "source_role": None,
+        "candidate_evidence": True, "imports": [],
+    }])
+    if "case-folding-module-collision" not in {
+            entry["code"] for entry in synthetic_collision}:
+        raise AssertionError("candidate case-fold collision control was bypassed")
+    passed.append("candidate-graph-controls")
+
+    drift_root = fixture / "candidate-exact-byte-drift"
+    (drift_root / "GRWTSK/Analysis").mkdir(parents=True)
+    (drift_root / "GRWTSK.lean").write_text("import Mathlib\n")
+    drift_path = "GRWTSK/Analysis/Candidate.lean"
+    (drift_root / drift_path).write_text("import Mathlib\n")
+    active_entries = [{
+        "path": "GRWTSK.lean",
+        "sha256": hashlib.sha256((drift_root / "GRWTSK.lean").read_bytes()).hexdigest(),
+        "source_role": "library", "target_path": "GRWTSK.lean",
+        "runner": "lake build GRWTSK",
+    }]
+    bad_candidate = candidate_entry(drift_root, drift_path)
+    bad_candidate["sha256"] = "0" * 64
+    write_candidate_fixture(drift_root, active_entries, [bad_candidate])
+    paths = sorted(str(path.relative_to(drift_root)) for path in drift_root.rglob("*.lean"))
+    report = check_paths(drift_root, paths, enforce_source_sets=True)
+    if "candidate-source-byte-drift" not in {entry["code"] for entry in report["findings"]}:
+        raise AssertionError("candidate exact-byte drift fixture was not detected")
+    passed.append("candidate-exact-byte-drift")
     bad_fixture = fixture / "new-untracked-legacy-source-rejected"
     bad_inventory = {"paths": ["GRWTSK/Analysis/CCC/New.lean"], "tracked_regular": []}
     with unittest.mock.patch(__name__ + ".git_inventory", return_value=bad_inventory):
@@ -666,19 +1001,6 @@ def self_test(root):
     if baseline_exit != 0 or baseline_report["status"] != "BASELINE_VIOLATIONS" or not baseline_report["report_only"]:
         raise AssertionError("baseline must remain explicitly report-only")
     passed.append("cli-default-failure-and-report-only-baseline")
-    control_fixture = fixture / "control-alias-hyphen-Waveform"
-    control_inventory = {"paths": ["checks/Analysis/waveform-controls/FalseClaim.lean"],
-                         "tracked_regular": []}
-    with unittest.mock.patch(__name__ + ".git_inventory", return_value=control_inventory):
-        captured = io.StringIO()
-        with contextlib.redirect_stdout(captured):
-            control_exit = main(["--root", str(control_fixture), "--json"])
-        control_report = json.loads(captured.getvalue())
-    if (control_exit != 1 or control_report["status"] != "FAIL" or
-            control_report["report_only"] or
-            [item["path"] for item in control_report["findings"]] != control_inventory["paths"]):
-        raise AssertionError("CLI must reject new retired control directories without library sources")
-    passed.append("cli-rejects-untracked-control-directory")
     good_fixture = fixture / "canonical-subjects"
     good_inventory = {"paths": sorted(str(p.relative_to(good_fixture)) for p in good_fixture.rglob("*.lean")),
                       "tracked_regular": []}
@@ -718,7 +1040,8 @@ def main(argv=None):
                 print("Receipt: " + str(receipt))
             return 0
         inventory = git_inventory(root)
-        report = check_paths(root, inventory["paths"], inventory["tracked_regular"])
+        report = check_paths(root, inventory["paths"], inventory["tracked_regular"],
+                             enforce_source_sets=True)
         if inventory != git_inventory(root):
             report["findings"].append({"code": "inventory-changed", "path": "",
                                       "message": "Git-visible inventory changed during inspection"})

@@ -1,0 +1,12 @@
+{
+  "status": "kernel-checked",
+  "source": "/Users/local/Documents/ChatGPT/math 2/euler-p04-rh/FiniteEulerPolynomial.lean",
+  "source_sha256": "7f0fb43a1f1e7e3e6a3f7aad9351caa4b0638a71bbeb808bd908ffe7c0654e98",
+  "kernel_trust_level": 0,
+  "warnings_as_errors": true,
+  "exit_code": 0,
+  "source_unchanged": true,
+  "stdout": "'EulerP04RH.FEMI.finiteEulerPolynomial_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EulerP04RH.FEMI.finiteEulerPolynomial_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EulerP04RH.FEMI.polynomial_integer_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "scope": "Literal finite multivariable Euler polynomial expansion and exponent-vector coefficient theorem, with exact source integer-coefficient bridge for finite prime sets. Every repeated exponent coefficient vanishes; source parity signs are retained."
+}

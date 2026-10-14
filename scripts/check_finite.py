@@ -1,7 +1,9 @@
 """Independent finite oracle in Q(sqrt(3),sqrt(11)); no floating point or Lean output."""
 from fractions import Fraction as F
 from itertools import product,combinations
-import json,pathlib
+import json,pathlib,tempfile
+def require(condition,message):
+ if not condition:raise RuntimeError(message)
 def field(*xs):return tuple(F(x) for x in xs)
 def add(a,b):return tuple(x+y for x,y in zip(a,b))
 def neg(a):return tuple(-x for x in a)
@@ -21,17 +23,19 @@ observed=set()
 for i,j in combinations(range(7),2):
  dx=add(points[i][0],neg(points[j][0]));dy=add(points[i][1],neg(points[j][1]))
  if add(mul(dx,dx),mul(dy,dy))==one:observed.add((i,j))
-assert len(set(points))==7 and observed==edges
+require(len(set(points))==7 and observed==edges,"exact point or unit-edge census mismatch")
 color=[0,1,2,0,1,2,3]
 proper=lambda f,es:all(f[i]!=f[j] for i,j in es)
-assert proper(color,edges)
+require(proper(color,edges),"declared four-coloring is not proper")
 three=[f for f in product(range(3),repeat=7) if proper(f,edges)]
-assert not three
+require(not three,"unexpected proper three-coloring")
 deleted=edges-{(3,6)};counterexamples=[f for f in product(range(3),repeat=7) if proper(f,deleted)]
-assert counterexamples
-assert not proper([0,1,2,0,1,2,0],edges)
+require(counterexamples,"deleted-edge negative control has no counterexample")
+require(not proper([0,1,2,0,1,2,0],edges),"wrong four-color negative control was accepted")
 report={"schema_version":1,"outcome":"passed","arithmetic":"Exact rational four-basis arithmetic for Q(sqrt(3),sqrt(11)); basis independence assumed by arithmetic interpretation, geometric relation additionally Lean-checked.","vertices":7,"pairs":21,"unit_edges":11,"four_color":color,"three_assignments_tested":2187,"proper_three_colorings":0,"deleted_edge_control":{"outcome":"refuted-or-limited","edge":[3,6],"proper_three_colorings":len(counterexamples),"counterexample":counterexamples[0]},"wrong_four_color_control":"passed: rejection","scope":"Seven-point graph exact four; no exact-plane chromatic-number claim"}
 root=pathlib.Path(__file__).resolve().parent.parent
-(root/"evidence/finite-results.json").write_text(json.dumps(report,indent=2)+"\n")
+(root/".local").mkdir(exist_ok=True)
+run=pathlib.Path(tempfile.mkdtemp(prefix="finite-check-",dir=root/".local"))
+with (run/"receipt.json").open("x",encoding="utf-8") as output:
+ output.write(json.dumps(report,indent=2)+"\n")
 print(json.dumps(report))
-

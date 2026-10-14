@@ -4,10 +4,10 @@
 
 | Inventory | Count |
 |---|---:|
-| Object guides | 24 |
-| Documented object groups | 11 |
-| Distinct primary sources linked | 23 |
-| Lean source modules | 141 |
+| Object guides | 27 |
+| Documented object groups | 12 |
+| Distinct primary sources linked | 25 |
+| Lean source modules | 201 |
 | Archive intake records | 19 |
 | Selected catalog families | 1 |
 
@@ -29,11 +29,13 @@ These counts measure documentation and source coverage. They do not count accept
 
 ## Moebius
 
+- [Conditional logarithmic Mertens boundary estimate](Moebius/logarithmic-mertens-boundary.md) — `fresh-selected`.
 - [Finite Euler products with a closed cutoff](Moebius/finite-euler-product.md) — `fresh-selected`.
 - [Matched averaging for the closed Möbius pickup](Moebius/matched-pickup.md) — `historical-source-description`.
 
 ## Moebius / Energy
 
+- [An exact separated-sample return for the actual Type-II source](Moebius/Energy/separated-mellin-samples.md) — `written-argument`.
 - [Damped finite windows and extended tail energy](Moebius/Energy/damped-tails.md) — `written-argument`.
 - [Horizon-matched blocks and dyadic energy](Moebius/Energy/recording-blocks.md) — `historical-source-description`.
 - [Ordered response Gram and diagonal energy](Moebius/Energy/gram.md) — `historical-source-description`.
@@ -64,6 +66,10 @@ These counts measure documentation and source coverage. They do not count accept
 ## Prime
 
 - [Least natural prime](Prime/least-prime.md) — `fresh-selected`.
+
+## Zeta
+
+- [Riemann hypothesis criteria and their arithmetic premises](Zeta/riemann-hypothesis-criteria.md) — `historical-source-description`.
 
 ## Zeta / Riemann
 

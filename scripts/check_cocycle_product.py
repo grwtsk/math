@@ -1,7 +1,7 @@
 from pathlib import Path
 import subprocess,json
 P=Path(__file__).resolve().parents[1]
-r=subprocess.run(['lake','env','lean','-j2','--trust=0','-DwarningAsError=true','checks/LinearAlgebra/CocycleProduct/Audit.lean'],cwd=P,capture_output=True,text=True,timeout=1800)
+r=subprocess.run(['lake','env','lean','-j2','--trust=0','-DwarningAsError=true','GRWTSK/LinearAlgebra/CocycleProduct/Checks/Audit.lean'],cwd=P,capture_output=True,text=True,timeout=1800)
 s=r.stdout+r.stderr
 if r.returncode or s.count('COCYCLE_CONTRACT::')!=11 or s.count('COCYCLE_SYNTHETIC::')!=3 or s.count('COCYCLE_ORIGINAL::')!=5:raise RuntimeError(s)
 (P/'.local').mkdir(exist_ok=True)

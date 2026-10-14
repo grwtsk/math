@@ -14,7 +14,7 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeWindowLaplace",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimeFilterLaplace",
       "name": "GRWTSK.RiemannHypothesis.CCC.noteWindowLaplace_causalShift",
       "type": "\u2200 {f : \u211d \u2192 \u211d},\n  Continuous f \u2192\n    f 0 = 0 \u2192\n      \u2200 (z : \u2102) {a T : \u211d},\n        0 \u2264 a \u2192 a \u2264 T \u2192 noteWindowLaplace (causalShift a f) z T = Complex.exp (-z * \u2191a) * noteWindowLaplace f z (T - a)"
     },
@@ -25,7 +25,7 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeWindowLaplace",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimeFilterLaplace",
       "name": "GRWTSK.RiemannHypothesis.CCC.noteWindowLaplace_primeFilter",
       "type": "\u2200 {f : \u211d \u2192 \u211d},\n  Continuous f \u2192\n    f 0 = 0 \u2192\n      \u2200 (z : \u2102) {p : \u2115},\n        Nat.Prime p \u2192\n          \u2200 {T : \u211d},\n            Real.log \u2191p \u2264 T \u2192\n              noteWindowLaplace (primeNoteFilter p f) z T =\n                (1 - primeLaplaceWeight p z) * noteWindowLaplace f z T +\n                  primeLaplaceWeight p z * noteLaplaceTail f z (Real.log \u2191p) T"
     },
@@ -36,7 +36,7 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeWindowLaplace",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimeFilterLaplace",
       "name": "GRWTSK.RiemannHypothesis.CCC.noteWindowLaplace_cascade_insert",
       "type": "\u2200 {P : Finset \u2115},\n  (\u2200 p \u2208 P, Nat.Prime p) \u2192\n    \u2200 {p : \u2115},\n      Nat.Prime p \u2192\n        p \u2209 P \u2192\n          \u2200 (z : \u2102) {T : \u211d},\n            Real.log \u2191p \u2264 T \u2192\n              noteWindowLaplace (primeNoteCascade (insert p P)) z T =\n                (1 - primeLaplaceWeight p z) * noteWindowLaplace (primeNoteCascade P) z T +\n                  primeLaplaceWeight p z * noteLaplaceTail (primeNoteCascade P) z (Real.log \u2191p) T"
     },
@@ -47,7 +47,7 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeWindowLaplace",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimeFilterLaplace",
       "name": "GRWTSK.RiemannHypothesis.CCC.noteWindowLaplace_actual_cascade",
       "type": "\u2200 (z : \u2102) {T : \u211d}, 0 \u2264 T \u2192 noteWindowLaplace wholePickup z T = noteWindowLaplace (primeNoteCascade (pickupPrimes T)) z T"
     },
@@ -58,7 +58,7 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeWindowLaplace",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimeFilterLaplace",
       "name": "GRWTSK.RiemannHypothesis.CCC.noteWindowLaplace_primeFilter_before_delay",
       "type": "\u2200 {f : \u211d \u2192 \u211d},\n  f 0 = 0 \u2192\n    \u2200 (z : \u2102) (p : \u2115) {T : \u211d},\n      0 \u2264 T \u2192 T \u2264 Real.log \u2191p \u2192 noteWindowLaplace (primeNoteFilter p f) z T = noteWindowLaplace f z T"
     },
@@ -69,7 +69,7 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeWindowLaplace",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimeFilterLaplace",
       "name": "GRWTSK.RiemannHypothesis.CCC.first_prime_window_not_multiplier",
       "type": "noteWindowLaplace (primeNoteCascade {2}) 1 (Real.log 2) \u2260\n  (1 - primeLaplaceWeight 2 1) * noteWindowLaplace baseNote 1 (Real.log 2)"
     },
@@ -80,7 +80,7 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeWindowLaplace",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimeFilterLaplace",
       "name": "GRWTSK.RiemannHypothesis.CCC.primeLaplaceWeight_eq_exp",
       "type": "\u2200 {p : \u2115}, Nat.Prime p \u2192 \u2200 (z : \u2102), primeLaplaceWeight p z = Complex.exp (-(z + 1 / 2) * \u2191(Real.log \u2191p))"
     }
@@ -91,33 +91,33 @@
     "independent_signed_boundary_estimate": "OPEN"
   },
   "source_sha256": {
-    "GRWTSK/RiemannHypothesis/CCC/PickupBudgets.lean": "a0735d6120754b4921c55346a5fb0203cb3586bd6f312289f83b0a76218cffbb",
-    "GRWTSK/RiemannHypothesis/CCC/PickupRegularity.lean": "663fd9e9d6fd6af327eeac76166ea40c9dc07c029b5822468533d80db8b4f9be",
-    "GRWTSK/RiemannHypothesis/CCC/PickupFiniteIdentity.lean": "4b4be0a5e4e2614ff81d192620170b5b47941e10e74f1965b5bbd0914ec24a51",
-    "GRWTSK/RiemannHypothesis/CCC/PrimeCascade.lean": "23995d93841e2ad1babd73a476dced219992c9a675396780ab6f675b56d458ce",
-    "GRWTSK/RiemannHypothesis/CCC/DiagonalAllowance.lean": "748100ebb0ba4440335668ecb96a079d869de82bb7ac2fb7ecb09ca089469a3c",
-    "GRWTSK/RiemannHypothesis/CCC/PickupDiagonalBound.lean": "e4b835ea2904d9494dd2b5252f1297ac76a924b153b94b99865471bd619155e8",
-    "GRWTSK/RiemannHypothesis/CCC/PickupLaplaceDefinition.lean": "900d196c65816d9217c05246e6fd5a847d5fe975baa1adb869907e394a9e6514",
-    "GRWTSK/RiemannHypothesis/CCC/PickupInitialTransform.lean": "52717097ba1ac20ef02efa7d744c413458026d9c3de8d35bb6bd9de833c14f38",
-    "GRWTSK/RiemannHypothesis/CCC/EnergyIntegrability.lean": "18a3aac5fcfb6844da96d34db5febc659f8c2694bd178ab187d324fbc9d6780b",
-    "GRWTSK/RiemannHypothesis/CCC/LaplaceAnalytic.lean": "9b36cbd99be50262b982974d665a0b226495665a5e509f7355ce66a2e08e2f10",
-    "GRWTSK/RiemannHypothesis/CCC/SignedPickupAnalytic.lean": "04f4c00bae21d3fde810919c80030f2be5a2bdac9836dec0c5ea0ed5ab9b81c6",
-    "GRWTSK/RiemannHypothesis/Definitions.lean": "107f357b8c04afc16e25b8fded6922782d2756959b42f080af839f4db58e9aa0",
-    "GRWTSK/RiemannHypothesis/ZeroSymmetry.lean": "d11ab9b34e31569a7d1441fb53bdb0abfce041c80e79cca4ebee46509be910bc",
-    "GRWTSK/RiemannHypothesis/CCC/RegularizedZeta.lean": "084fe442c91faee379c83ad8a7a6af1f4500bd5eb66bbc5f999b160106627af7",
-    "GRWTSK/RiemannHypothesis/CCC/EnergyRHReturn.lean": "62ffb37232e2b35e062f180bda8fe9f54369b98b431a2f97d0b30d539932efd0",
-    "GRWTSK/RiemannHypothesis/CCC/EnergyReturn.lean": "2116d2d7191ae28844ead58af1eb76e32a0272e6e4c92566d6d48bd36c163dac",
-    "GRWTSK/RiemannHypothesis/CCC/PrimeEnergy.lean": "b90708dab380d32ea80113abe91b199614950ec705624adee64c2f4614518c28",
-    "GRWTSK/RiemannHypothesis/CCC/PrimeWindowLaplace.lean": "1758e02811afe2c78374c03a3e09d8f598bed1a176af3b0fb4d710f9c13c2fba",
-    "checks/CCCPrimeWindowLaplaceAudit.lean": "44f5fd78cf3cadce6944b7d33aae243b3a967abe31b1747cb8325d0e0dcb4432",
-    "scripts/check_prime_window_laplace.py": "08323c736721a660ac40a42f5727a85821b30d5bdd2f93d8da00066ab02eb598",
+    "GRWTSK/NumberTheory/Moebius/MertensPrimitive.lean": "a0735d6120754b4921c55346a5fb0203cb3586bd6f312289f83b0a76218cffbb",
+    "GRWTSK/NumberTheory/Moebius/PrimitiveRegularity.lean": "6cb747756c582d9f4f5872e164b091672f044bbbb0bb1478d6c47c31b565c720",
+    "GRWTSK/NumberTheory/Moebius/FiniteResponseSum.lean": "9358b6a2bbd51c10140c6fb595383355c54b072154965a06eb4651c3bc2c8bb8",
+    "GRWTSK/NumberTheory/Moebius/PrimeFactorFilters.lean": "ec4760134d86f29c697f6f8556209c1c0a735716177c36b1aee6e1d06085ca6e",
+    "GRWTSK/Analysis/Inequalities/ExponentialDiagonal.lean": "748100ebb0ba4440335668ecb96a079d869de82bb7ac2fb7ecb09ca089469a3c",
+    "GRWTSK/NumberTheory/Moebius/GramDiagonalBound.lean": "72172eb41fbc701bb53d3fe3d31f6a9d2cf5117c18769f85d5ed2e2986cb2b73",
+    "GRWTSK/NumberTheory/Moebius/LaplaceTransform.lean": "308954ccc5537fc6dc46377c72a3f18c118c87bafb72b01746ab5368b156dd05",
+    "GRWTSK/NumberTheory/Moebius/DirichletLaplaceIdentity.lean": "062ba923dbe090e8f1271ce4ffaf90332eaf5e20dc925f9d4b824dea48407cce",
+    "GRWTSK/Analysis/LaplaceTransform/PolynomialEnergy.lean": "cc49938c45c940d7049afdf2aed8f5dde3393da4e9ff301d4bc7ccfaaabc0fe5",
+    "GRWTSK/Analysis/LaplaceTransform/Analytic.lean": "9b36cbd99be50262b982974d665a0b226495665a5e509f7355ce66a2e08e2f10",
+    "GRWTSK/NumberTheory/Moebius/LaplaceHolomorphy.lean": "c65e5184b9e4354aaa2ddd27a7d61afe5fa69ad8b833436e9269b00eac2bf807",
+    "GRWTSK/NumberTheory/Zeta/Riemann/ZeroDefinitions.lean": "107f357b8c04afc16e25b8fded6922782d2756959b42f080af839f4db58e9aa0",
+    "GRWTSK/NumberTheory/Zeta/Riemann/ZeroSymmetry.lean": "6f3b74c08ed6538482ce19e90de96784b65a0d54209f65987a4e7ad45f5150ec",
+    "GRWTSK/NumberTheory/Zeta/Riemann/Regularized.lean": "084fe442c91faee379c83ad8a7a6af1f4500bd5eb66bbc5f999b160106627af7",
+    "GRWTSK/NumberTheory/Zeta/Riemann/LaplaceCriterion.lean": "be129acd7f3abe84fe8d87227d256e8c3e9318c739b4fa7c04096f2c70a9f8b0",
+    "GRWTSK/NumberTheory/Zeta/Riemann/PolynomialEnergyCriterion.lean": "b4b7949d198e478ac369d8455284cd5b0505f5b97a0323d47eb5cf59da1f11b1",
+    "GRWTSK/NumberTheory/Moebius/PrimeFilterEnergy.lean": "21bac8528e4afa692c6d623473229f3c55b28654e4da4b708b52151e9afc139c",
+    "GRWTSK/NumberTheory/Moebius/PrimeFilterLaplace.lean": "be96c983badedf9c3bde3787a273165be81163efc130b52d451ae2b51addea1b",
+    "GRWTSK/NumberTheory/Moebius/Checks/Positive/PrimeFilterLaplace.lean": "b868bc78c1edf189fedcf9d428e7653cbd7d70526cf78d75b44892d7b3ca0273",
+    "scripts/check_prime_window_laplace.py": "2c746877806eab54e398cc91127b80f82c542e2469c34ef93ab87eecb4e48296",
     "lean-toolchain": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
     "lakefile.toml": "a23f6d313f8458192328f09635ffef9078cb684374c2aac2743af541bf59b4e3",
     "lake-manifest.json": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
     "docs/ccc-prime-window-laplace.md": "86921db0e4eb58891a1f103e186d2c06ffb6c78f62c3ff2b942ba738e24b466d",
-    "checks/prime-window-controls/MissingTail.lean": "4e8f04bdf641bd1bf3e675915e79b4f4d3e1d5d6478a0cf46ac89334ad6c3897",
-    "checks/prime-window-controls/WrongWindow.lean": "eb0e8209bfe008c278bb03eb366a93c271aa70c21be915441dbd0ffb8c9f847d",
-    "checks/prime-window-controls/FalseMultiplier.lean": "b3570be4c189a5f785d7fa5c0203082308db056d4b9264b26100964ce6c3196f"
+    "GRWTSK/NumberTheory/Moebius/PrimeFilterLaplace/Checks/Negative/MissingTail.lean": "b891ea1e2a20b4f1b8865c4e803a87445e5bb0abda7c1ba90fe587aad6d63da5",
+    "GRWTSK/NumberTheory/Moebius/PrimeFilterLaplace/Checks/Negative/WrongWindow.lean": "b77ac269f8946a92ba99978920345a9c0f813ea2f838cc27892938f7add8d9a7",
+    "GRWTSK/NumberTheory/Moebius/PrimeFilterLaplace/Checks/Negative/FalseMultiplier.lean": "eee6b3dd6d462f2206bfdd8d614c8724f46e80c85f5f45d5c326ef0de7138263"
   },
   "excluded_scratch": "Exploratory floating-point calculations are not proof inputs",
   "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
@@ -142,7 +142,7 @@
         "Quot.sound"
       ],
       "kind": "definition",
-      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeWindowLaplace",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimeFilterLaplace",
       "name": "GRWTSK.RiemannHypothesis.CCC.noteWindowLaplace",
       "type": "(\u211d \u2192 \u211d) \u2192 \u2102 \u2192 \u211d \u2192 \u2102"
     },
@@ -153,7 +153,7 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeWindowLaplace",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimeFilterLaplace",
       "name": "GRWTSK.RiemannHypothesis.CCC.primeLaplaceWeight_eq_exp",
       "type": "\u2200 {p : \u2115}, Nat.Prime p \u2192 \u2200 (z : \u2102), primeLaplaceWeight p z = Complex.exp (-(z + 1 / 2) * \u2191(Real.log \u2191p))"
     },
@@ -164,18 +164,7 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeWindowLaplace",
-      "name": "_private.GRWTSK.RiemannHypothesis.CCC.PrimeWindowLaplace.0.GRWTSK.RiemannHypothesis.CCC.window_integrand_continuous",
-      "type": "\u2200 {f : \u211d \u2192 \u211d}, Continuous f \u2192 \u2200 (z : \u2102), Continuous fun u => Complex.exp (-z * \u2191u) * \u2191(f u)"
-    },
-    {
-      "axioms": [
-        "propext",
-        "Classical.choice",
-        "Quot.sound"
-      ],
-      "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeWindowLaplace",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimeFilterLaplace",
       "name": "GRWTSK.RiemannHypothesis.CCC.noteWindowLaplace_actual_cascade",
       "type": "\u2200 (z : \u2102) {T : \u211d}, 0 \u2264 T \u2192 noteWindowLaplace wholePickup z T = noteWindowLaplace (primeNoteCascade (pickupPrimes T)) z T"
     },
@@ -186,7 +175,7 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeWindowLaplace",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimeFilterLaplace",
       "name": "GRWTSK.RiemannHypothesis.CCC.first_prime_window_not_multiplier._simp_1_2",
       "type": "\u2200 (x : \u211d), Complex.exp \u2191x = \u2191(Real.exp x)"
     },
@@ -197,7 +186,7 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeWindowLaplace",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimeFilterLaplace",
       "name": "GRWTSK.RiemannHypothesis.CCC.primeLaplaceWeight.eq_1",
       "type": "\u2200 (p : \u2115) (z : \u2102), primeLaplaceWeight p z = \u2191(\u221a\u2191p)\u207b\u00b9 * Complex.exp (-z * \u2191(Real.log \u2191p))"
     },
@@ -208,7 +197,7 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeWindowLaplace",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimeFilterLaplace",
       "name": "GRWTSK.RiemannHypothesis.CCC.noteWindowLaplace_primeFilter",
       "type": "\u2200 {f : \u211d \u2192 \u211d},\n  Continuous f \u2192\n    f 0 = 0 \u2192\n      \u2200 (z : \u2102) {p : \u2115},\n        Nat.Prime p \u2192\n          \u2200 {T : \u211d},\n            Real.log \u2191p \u2264 T \u2192\n              noteWindowLaplace (primeNoteFilter p f) z T =\n                (1 - primeLaplaceWeight p z) * noteWindowLaplace f z T +\n                  primeLaplaceWeight p z * noteLaplaceTail f z (Real.log \u2191p) T"
     },
@@ -219,7 +208,7 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeWindowLaplace",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimeFilterLaplace",
       "name": "GRWTSK.RiemannHypothesis.CCC.noteWindowLaplace_shorter_add_tail",
       "type": "\u2200 {f : \u211d \u2192 \u211d},\n  Continuous f \u2192\n    \u2200 (z : \u2102) {a T : \u211d},\n      0 \u2264 a \u2192 a \u2264 T \u2192 noteWindowLaplace f z (T - a) + noteLaplaceTail f z a T = noteWindowLaplace f z T"
     },
@@ -230,7 +219,7 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeWindowLaplace",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimeFilterLaplace",
       "name": "GRWTSK.RiemannHypothesis.CCC.primeNoteFilter.eq_1",
       "type": "\u2200 (p : \u2115) (f : \u211d \u2192 \u211d) (u : \u211d), primeNoteFilter p f u = f u - (\u221a\u2191p)\u207b\u00b9 * causalShift (Real.log \u2191p) f u"
     },
@@ -241,7 +230,7 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeWindowLaplace",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimeFilterLaplace",
       "name": "GRWTSK.RiemannHypothesis.CCC.noteWindowLaplace_causalShift",
       "type": "\u2200 {f : \u211d \u2192 \u211d},\n  Continuous f \u2192\n    f 0 = 0 \u2192\n      \u2200 (z : \u2102) {a T : \u211d},\n        0 \u2264 a \u2192 a \u2264 T \u2192 noteWindowLaplace (causalShift a f) z T = Complex.exp (-z * \u2191a) * noteWindowLaplace f z (T - a)"
     },
@@ -252,7 +241,7 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeWindowLaplace",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimeFilterLaplace",
       "name": "GRWTSK.RiemannHypothesis.CCC.noteWindowLaplace_primeFilter_before_delay",
       "type": "\u2200 {f : \u211d \u2192 \u211d},\n  f 0 = 0 \u2192\n    \u2200 (z : \u2102) (p : \u2115) {T : \u211d},\n      0 \u2264 T \u2192 T \u2264 Real.log \u2191p \u2192 noteWindowLaplace (primeNoteFilter p f) z T = noteWindowLaplace f z T"
     },
@@ -263,7 +252,7 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeWindowLaplace",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimeFilterLaplace",
       "name": "GRWTSK.RiemannHypothesis.CCC.noteWindowLaplace_cascade_insert",
       "type": "\u2200 {P : Finset \u2115},\n  (\u2200 p \u2208 P, Nat.Prime p) \u2192\n    \u2200 {p : \u2115},\n      Nat.Prime p \u2192\n        p \u2209 P \u2192\n          \u2200 (z : \u2102) {T : \u211d},\n            Real.log \u2191p \u2264 T \u2192\n              noteWindowLaplace (primeNoteCascade (insert p P)) z T =\n                (1 - primeLaplaceWeight p z) * noteWindowLaplace (primeNoteCascade P) z T +\n                  primeLaplaceWeight p z * noteLaplaceTail (primeNoteCascade P) z (Real.log \u2191p) T"
     },
@@ -274,7 +263,7 @@
         "Quot.sound"
       ],
       "kind": "definition",
-      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeWindowLaplace",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimeFilterLaplace",
       "name": "GRWTSK.RiemannHypothesis.CCC.primeLaplaceWeight",
       "type": "\u2115 \u2192 \u2102 \u2192 \u2102"
     },
@@ -285,7 +274,7 @@
         "Quot.sound"
       ],
       "kind": "definition",
-      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeWindowLaplace",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimeFilterLaplace",
       "name": "GRWTSK.RiemannHypothesis.CCC.noteLaplaceTail",
       "type": "(\u211d \u2192 \u211d) \u2192 \u2102 \u2192 \u211d \u2192 \u211d \u2192 \u2102"
     },
@@ -296,7 +285,7 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeWindowLaplace",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimeFilterLaplace",
       "name": "GRWTSK.RiemannHypothesis.CCC.first_prime_window_not_multiplier._simp_1_3",
       "type": "\u2200 (r s : \u211d), \u2191r * \u2191s = \u2191(r * s)"
     },
@@ -307,7 +296,7 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeWindowLaplace",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimeFilterLaplace",
       "name": "GRWTSK.RiemannHypothesis.CCC.first_prime_window_not_multiplier._simp_1_1",
       "type": "\u2200 (r : \u211d), -\u2191r = \u2191(-r)"
     },
@@ -318,229 +307,240 @@
         "Quot.sound"
       ],
       "kind": "theorem",
-      "module": "GRWTSK.RiemannHypothesis.CCC.PrimeWindowLaplace",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimeFilterLaplace",
+      "name": "_private.GRWTSK.NumberTheory.Moebius.PrimeFilterLaplace.0.GRWTSK.RiemannHypothesis.CCC.window_integrand_continuous",
+      "type": "\u2200 {f : \u211d \u2192 \u211d}, Continuous f \u2192 \u2200 (z : \u2102), Continuous fun u => Complex.exp (-z * \u2191u) * \u2191(f u)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "module": "GRWTSK.NumberTheory.Moebius.PrimeFilterLaplace",
       "name": "GRWTSK.RiemannHypothesis.CCC.first_prime_window_not_multiplier",
       "type": "noteWindowLaplace (primeNoteCascade {2}) 1 (Real.log 2) \u2260\n  (1 - primeLaplaceWeight 2 1) * noteWindowLaplace baseNote 1 (Real.log 2)"
     }
   ],
   "checks": [
     {
-      "path": "GRWTSK/RiemannHypothesis/CCC/PickupBudgets.lean",
+      "path": "GRWTSK/NumberTheory/Moebius/MertensPrimitive.lean",
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 17.620844959,
+      "seconds": 1.6760244579999999,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
     },
     {
-      "path": "GRWTSK/RiemannHypothesis/CCC/PickupRegularity.lean",
+      "path": "GRWTSK/NumberTheory/Moebius/PrimitiveRegularity.lean",
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 15.662795124999995,
+      "seconds": 1.720578459,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
     },
     {
-      "path": "GRWTSK/RiemannHypothesis/CCC/PickupFiniteIdentity.lean",
+      "path": "GRWTSK/NumberTheory/Moebius/FiniteResponseSum.lean",
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 8.968021749999998,
+      "seconds": 1.9355663750000005,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
     },
     {
-      "path": "GRWTSK/RiemannHypothesis/CCC/PrimeCascade.lean",
+      "path": "GRWTSK/NumberTheory/Moebius/PrimeFactorFilters.lean",
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 39.013340459,
+      "seconds": 1.9675362080000003,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
     },
     {
-      "path": "GRWTSK/RiemannHypothesis/CCC/DiagonalAllowance.lean",
+      "path": "GRWTSK/Analysis/Inequalities/ExponentialDiagonal.lean",
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 14.086852792000002,
+      "seconds": 1.8952314169999998,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
     },
     {
-      "path": "GRWTSK/RiemannHypothesis/CCC/PickupDiagonalBound.lean",
+      "path": "GRWTSK/NumberTheory/Moebius/GramDiagonalBound.lean",
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 10.00551575,
+      "seconds": 2.7399030420000017,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
     },
     {
-      "path": "GRWTSK/RiemannHypothesis/CCC/PickupLaplaceDefinition.lean",
+      "path": "GRWTSK/NumberTheory/Moebius/LaplaceTransform.lean",
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 10.315658291999995,
+      "seconds": 1.5534440420000006,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
     },
     {
-      "path": "GRWTSK/RiemannHypothesis/CCC/PickupInitialTransform.lean",
+      "path": "GRWTSK/NumberTheory/Moebius/DirichletLaplaceIdentity.lean",
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 14.27938312500001,
+      "seconds": 2.405356958999999,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
     },
     {
-      "path": "GRWTSK/RiemannHypothesis/CCC/EnergyIntegrability.lean",
+      "path": "GRWTSK/Analysis/LaplaceTransform/PolynomialEnergy.lean",
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 14.007803292000006,
+      "seconds": 1.9701682500000004,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
     },
     {
-      "path": "GRWTSK/RiemannHypothesis/CCC/LaplaceAnalytic.lean",
+      "path": "GRWTSK/Analysis/LaplaceTransform/Analytic.lean",
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 33.22034875,
+      "seconds": 2.013604749999999,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
     },
     {
-      "path": "GRWTSK/RiemannHypothesis/CCC/SignedPickupAnalytic.lean",
+      "path": "GRWTSK/NumberTheory/Moebius/LaplaceHolomorphy.lean",
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 17.462956125000005,
+      "seconds": 2.239607875000001,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
     },
     {
-      "path": "GRWTSK/RiemannHypothesis/Definitions.lean",
+      "path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroDefinitions.lean",
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 18.38481066700001,
+      "seconds": 1.7501349590000004,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
     },
     {
-      "path": "GRWTSK/RiemannHypothesis/ZeroSymmetry.lean",
+      "path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroSymmetry.lean",
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 16.729991082999987,
+      "seconds": 2.071987415999999,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
     },
     {
-      "path": "GRWTSK/RiemannHypothesis/CCC/RegularizedZeta.lean",
+      "path": "GRWTSK/NumberTheory/Zeta/Riemann/Regularized.lean",
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 18.151267208000007,
+      "seconds": 2.0604869169999986,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
     },
     {
-      "path": "GRWTSK/RiemannHypothesis/CCC/EnergyRHReturn.lean",
+      "path": "GRWTSK/NumberTheory/Zeta/Riemann/LaplaceCriterion.lean",
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 19.35134337499997,
+      "seconds": 2.3774522909999973,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
     },
     {
-      "path": "GRWTSK/RiemannHypothesis/CCC/EnergyReturn.lean",
+      "path": "GRWTSK/NumberTheory/Zeta/Riemann/PolynomialEnergyCriterion.lean",
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 30.46389800000003,
+      "seconds": 2.063490083999998,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
     },
     {
-      "path": "GRWTSK/RiemannHypothesis/CCC/PrimeEnergy.lean",
+      "path": "GRWTSK/NumberTheory/Moebius/PrimeFilterEnergy.lean",
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 64.42964137500002,
+      "seconds": 2.3145153329999957,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
     },
     {
-      "path": "GRWTSK/RiemannHypothesis/CCC/PrimeWindowLaplace.lean",
+      "path": "GRWTSK/NumberTheory/Moebius/PrimeFilterLaplace.lean",
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 58.38225187499995,
+      "seconds": 2.4736967079999985,
       "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "expected_error_fragment": null,
       "expected_error_matched": true
     },
     {
-      "path": "checks/CCCPrimeWindowLaplaceAudit.lean",
+      "path": "GRWTSK/NumberTheory/Moebius/Checks/Positive/PrimeFilterLaplace.lean",
       "expected_success": true,
       "actual_success": true,
       "exit_code": 0,
-      "seconds": 31.913082374999988,
-      "output_sha256": "4260dc0625d503c1dd8628dde4c916178a9690c26dca144eb6007a036bae480c",
+      "seconds": 2.2058439580000027,
+      "output_sha256": "41fc494ed6aab899e58a070c83bde8ea2ab7966109c688d3eb1368a1119c2019",
       "expected_error_fragment": null,
       "expected_error_matched": true
     },
     {
-      "path": "checks/prime-window-controls/MissingTail.lean",
+      "path": "GRWTSK/NumberTheory/Moebius/PrimeFilterLaplace/Checks/Negative/MissingTail.lean",
       "expected_success": false,
       "actual_success": false,
       "exit_code": 1,
-      "seconds": 22.488223458999983,
-      "output_sha256": "44d80647bede0bcd441441f97b7ef608551ea4e27de15cd0c43912e3f6e79417",
+      "seconds": 1.8948978329999946,
+      "output_sha256": "066775a6e4e99a39d7c0da7a64a8071439c7a73ca4af09a44be9a0f58c415358",
       "expected_error_fragment": "Type mismatch",
       "expected_error_matched": true
     },
     {
-      "path": "checks/prime-window-controls/WrongWindow.lean",
+      "path": "GRWTSK/NumberTheory/Moebius/PrimeFilterLaplace/Checks/Negative/WrongWindow.lean",
       "expected_success": false,
       "actual_success": false,
       "exit_code": 1,
-      "seconds": 38.25391920799996,
-      "output_sha256": "418d6b93bd532a39da25f950ff2d03c07b1d07600cec4f82015bbbc6e3946df1",
+      "seconds": 1.8541404999999997,
+      "output_sha256": "bebddcb9818ea55267ffc7f28f50799391b2da30b419606296ee3e30af4df5f6",
       "expected_error_fragment": "Type mismatch",
       "expected_error_matched": true
     },
     {
-      "path": "checks/prime-window-controls/FalseMultiplier.lean",
+      "path": "GRWTSK/NumberTheory/Moebius/PrimeFilterLaplace/Checks/Negative/FalseMultiplier.lean",
       "expected_success": false,
       "actual_success": false,
       "exit_code": 1,
-      "seconds": 43.33276208399991,
-      "output_sha256": "8ceab437b922bae5c7c3e263f946aae00054d19c06142bbcbc181f47fe394e6d",
+      "seconds": 1.9000844170000022,
+      "output_sha256": "244e43978cd410bcecdd465b805b0f0edf314dc1c1f3b61ff77407c348aae8a9",
       "expected_error_fragment": "Type mismatch",
       "expected_error_matched": true
     }

@@ -35,7 +35,6 @@ The insertion identity applies directly to `primeNoteCascade P`, with its proved
 
 This contribution does not prove an arithmetic upper bound, negligible boundary correction, the PNT-based uniform-supplier rejection, or RH. The exact boundary formula makes the finite/infinite transform distinction explicit. A next useful step is to derive the complete cutoff transform in terms of the signed Möbius Dirichlet sum and endpoint sums, then seek an independently proved estimate preserving their cancellation.
 
-
 ## Source and verification scope
 
 [Source](../../../../../GRWTSK/NumberTheory/Moebius/PrimeFilterLaplace.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../../reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.

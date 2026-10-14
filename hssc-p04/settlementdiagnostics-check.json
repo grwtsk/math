@@ -1,0 +1,16 @@
+{
+  "status": "kernel-checked",
+  "source": "/Users/local/Documents/ChatGPT/math 2/hssc-p04/SettlementDiagnostics.lean",
+  "source_sha256": "6ebb5ef552d1bf5ed4b8e011b7916589ba9647b821d400519c1b2a684d41e116",
+  "kernel_trust_level": 0,
+  "warnings_as_errors": true,
+  "exit_code": 0,
+  "source_unchanged": true,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "scope": "Focused saved-file check; final fresh qualified dependency replay pending.",
+  "stdout": "'HSSCP04.Diagnostics.fixture_echo' depends on axioms: [propext, Classical.choice, Quot.sound]\n'HSSCP04.Diagnostics.missing_composite_bridge_rejected' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+}

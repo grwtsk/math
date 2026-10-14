@@ -347,4 +347,36 @@ class GitControls(unittest.TestCase):
             with self.assertRaisesRegex(checker.LayoutError,'noncanonical Git-visible path|control character'):
                 checker.visible_markdown(Path('/tmp'))
 
+class CatalogControls(unittest.TestCase):
+    def setUp(self):
+        import check_documentation as catalog
+        self.catalog=catalog;self.current=b'theorem current : True := True.intro\n'
+        self.data={'records':[{'id':'changed','premises':'Explicit premise retained',
+            'source':'GRWTSK/Analysis/Test.lean','page':PAGE,'evidence':'evidence/old.json',
+            'sha256':'0'*64,'verification':'historical-source-changed',
+            'observed_source_sha256':hashlib.sha256(self.current).hexdigest(),
+            'current_verification':'not-run','evidence_limit':'Historical receipt only'}]}
+        self.bound={'GRWTSK/Analysis/Test.lean':self.current,PAGE:b'# Object\n',
+                    'evidence/old.json':b'{}'}
+    def test_changed_source_is_retained_without_current_acceptance(self):
+        self.catalog.validate(self.data,self.bound)
+    def test_changed_source_cannot_be_silently_promoted_or_rebound(self):
+        for mutation in ['stale-observation','erase-history','old-receipt-promoted',
+                         'undeclared-drift','invent-current-pass','omit-evidence-limit']:
+            with self.subTest(mutation=mutation):
+                bad=copy.deepcopy(self.data);record=bad['records'][0]
+                if mutation=='stale-observation':record['observed_source_sha256']='1'*64
+                if mutation=='erase-history':record['sha256']=record['observed_source_sha256']
+                if mutation=='old-receipt-promoted':
+                    record['verification']='fresh-selected'
+                    record['sha256']=record.pop('observed_source_sha256')
+                    record.pop('current_verification')
+                if mutation=='undeclared-drift':
+                    record['verification']='historical'
+                    record.pop('observed_source_sha256');record.pop('current_verification')
+                if mutation=='invent-current-pass':record['current_verification']='passed'
+                if mutation=='omit-evidence-limit':record.pop('evidence_limit')
+                with self.assertRaises(checker.LayoutError):
+                    self.catalog.validate(bad,self.bound)
+
 if __name__=='__main__':unittest.main()

@@ -11,8 +11,19 @@ def validate(data,bound=None):
   layout.require(r['id'] not in ids,'duplicate ID');ids.add(r['id'])
   layout.require(r['premises'],'missing premises')
   record={k:(layout.local_bytes(ROOT,r[k],bound)) for k in ['source','page','evidence']}
-  layout.require(sha_bytes(record['source'])==r['sha256'],'source invalidated')
-  layout.require(r['verification'] in ('historical','fresh-selected'),'unsupported status')
+  layout.require(re.fullmatch(r'[0-9a-f]{64}',r['sha256']) is not None,'invalid retained source hash')
+  layout.require(r['verification'] in ('historical','fresh-selected','historical-source-changed'),'unsupported status')
+  current=sha_bytes(record['source'])
+  if r['verification']=='historical-source-changed':
+   # Retain the old binding without treating current bytes as replayed evidence.
+   layout.require(r.get('observed_source_sha256')==current,'current observation invalidated')
+   layout.require(r['sha256']!=current,'changed-source label without changed source')
+   layout.require(r.get('current_verification')=='not-run','unsupported current verification')
+   layout.require(r.get('evidence_limit'),'missing historical evidence limit')
+  else:
+   layout.require(current==r['sha256'],'source invalidated')
+   layout.require('observed_source_sha256' not in r,'changed-source metadata under verified status')
+   layout.require('current_verification' not in r,'unverified metadata under verified status')
   if r['verification']=='fresh-selected':
    try:receipt=layout.load_json(record['evidence'].decode())
    except UnicodeDecodeError as error:raise layout.LayoutError('non-UTF8 selected evidence') from error
@@ -21,8 +32,11 @@ def validate(data,bound=None):
    checks=receipt.get('selected_checks',{})
    layout.require(checks and all(x=='passed' for x in checks.values()),'absent/failed check')
   layout.require(not re.search(r'/Users/|noeaaeue|gate1-|worktree',json.dumps(r)),'private provenance')
+def verification_label(record):
+ return ('historical; current source changed, replay pending'
+         if record['verification']=='historical-source-changed' else record['verification'])
 def render(data):
- return '# Selected result catalog\n\n'+data['coverage']+'. Records are candidate documentation. Verification labels refer to the bound source, not operational authority. Priority is editorial architectural relevance.\n\n| Priority | Family | Verification |\n|---|---|---|\n'+''.join('| '+str(r['priority'])+' | ['+r['title']+'](../../'+r['page']+') | '+r['verification']+' |\n' for r in sorted(data['records'],key=lambda r:r['priority']))+'\n[Structured records](results.json) · [Mathematical page inventory](library-pages.md)\n'
+ return '# Selected result catalog\n\n'+data['coverage']+'. Records are candidate documentation. Verification labels refer to the bound source, not operational authority. A changed-source label preserves historical evidence and reports current replay as pending. Priority is editorial architectural relevance.\n\n| Priority | Family | Verification |\n|---|---|---|\n'+''.join('| '+str(r['priority'])+' | ['+r['title']+'](../../'+r['page']+') | '+verification_label(r)+' |\n' for r in sorted(data['records'],key=lambda r:r['priority']))+'\n[Structured records](results.json) · [Mathematical page inventory](library-pages.md)\n'
 def write_projection(name,raw,expected,archive):
  target=ROOT/name
  layout.require(target.parent.resolve().is_relative_to(ROOT.resolve()),'escaped generated output')
@@ -88,6 +102,7 @@ def main():
  names=record_input_names(d);bound,observations=layout.observe_inputs(ROOT,names,{
   'docs/reference/results.json':(catalog_raw,catalog_observation)})
  validate(d,bound)
+ control_count=0
  for mutation in ['duplicate','premise','source','receipt','private']:
   bad=copy.deepcopy(d)
   if mutation=='duplicate':bad['records'].append(copy.deepcopy(bad['records'][0]))
@@ -96,8 +111,23 @@ def main():
   if mutation=='receipt':bad['records'][1]['verification']='fresh-selected'
   if mutation=='private':bad['records'][0]['contribution']='/Users/hidden'
   try:validate(bad,bound)
-  except layout.LayoutError:pass
+  except layout.LayoutError:control_count+=1
   else:raise layout.LayoutError('hostile input accepted: '+mutation)
+ changed=next((r for r in d['records'] if r['verification']=='historical-source-changed'),None)
+ if changed:
+  for mutation in ['stale-observation','erase-history','old-receipt-promoted','undeclared-drift','invent-current-pass','omit-evidence-limit']:
+   bad=copy.deepcopy(d);r=next(x for x in bad['records'] if x['id']==changed['id'])
+   if mutation=='stale-observation':r['observed_source_sha256']='0'*64
+   if mutation=='erase-history':r['sha256']=r['observed_source_sha256']
+   if mutation=='old-receipt-promoted':
+    r['verification']='fresh-selected';r['sha256']=r.pop('observed_source_sha256');r.pop('current_verification')
+   if mutation=='undeclared-drift':
+    r['verification']='historical';r.pop('observed_source_sha256');r.pop('current_verification')
+   if mutation=='invent-current-pass':r['current_verification']='passed'
+   if mutation=='omit-evidence-limit':r.pop('evidence_limit')
+   try:validate(bad,bound)
+   except layout.LayoutError:control_count+=1
+   else:raise layout.LayoutError('hostile input accepted: '+mutation)
  target=ROOT/'docs/reference/results.md';expected=render(d)
  if a.render:
   outputs,preimages=render_indexes();outputs['docs/reference/results.md']=expected.encode()
@@ -110,5 +140,5 @@ def main():
  n,s=layout.check()
  unused,terminal_observations=layout.observe_inputs(ROOT,names)
  layout.require(terminal_observations==observations,'selected result catalog input changed during check')
- print(f'{n} maintained pages; {s} legacy dispositions; selected catalog and five hostile record controls passed')
+ print(f'{n} maintained pages; {s} legacy dispositions; selected catalog and {control_count} hostile record controls passed')
 if __name__=='__main__':main()

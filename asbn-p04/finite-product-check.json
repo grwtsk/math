@@ -1,0 +1,12 @@
+{
+  "status": "kernel-checked",
+  "source": "/Users/local/Documents/ChatGPT/math 2/asbn-p04/PickupFiniteProduct.lean",
+  "source_sha256": "6ca3df98da7021f2a7b0cc7abfaf13ac3e3b72d307b4b592190832991259f145",
+  "kernel_trust_level": 0,
+  "warnings_as_errors": true,
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "exit_code": 0,
+  "stdout": "'ASBNP04.FiniteProduct.cascade_eq_signedExpansion' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ASBNP04.FiniteProduct.cascade_order_independent' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ASBNP04.FiniteProduct.moebius_primeProduct' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ASBNP04.FiniteProduct.completed_pickup_identification' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ASBNP04.FiniteProduct.restrict_cascade' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ASBNP04.FiniteProduct.primeState_block_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ASBNP04.FiniteProduct.block_energy_exact' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "scope": "Actual finite prime-note operator cascade, arithmetic M\u00f6bius subset coefficients, squarefree integer reindexing, all-horizon NI, causal truncation, disjoint block factorization, and BE with explicit finite correlation integrability premises."
+}
