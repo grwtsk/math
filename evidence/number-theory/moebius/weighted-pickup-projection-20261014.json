@@ -1,0 +1,301 @@
+{
+  "schema": "weighted-pickup-projection-source-bound-receipt-v1",
+  "date": "2026-10-14",
+  "repository": "grwtsk/math",
+  "branch": "main",
+  "inspected_base_commit": "807b4bb562d62ad370e7d261a54fa9c6fe443f65",
+  "implementation_and_article_commit": "f88fc5bbbe9f0941d2eccf6cd279fd7500981873",
+  "human_mathematical_direction": "grwtsk contributors",
+  "written_derivation_and_implementation": "OpenAI ChatGPT",
+  "source_bindings": [
+    {
+      "path": "scripts/weighted_pickup_projection.py",
+      "bytes": 13634,
+      "sha256": "591eea2ffc42cf068af91ed95bb837780d175b806893c1725a56f17e8adb4ef1",
+      "git_blob_sha1": "664ce64bc169c56ec0775c19a7759b481969466b"
+    },
+    {
+      "path": "scripts/test_weighted_pickup_projection.py",
+      "bytes": 12971,
+      "sha256": "6ec56a5fa0856c7584da69dedfa65fc6e5f47253d7919d6422b582dc69e81600",
+      "git_blob_sha1": "464b4859bf35f59a883cdec7bfdb0bd4df37c8d9"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/Moebius/Energy/damped-tails.md",
+      "bytes": 47844,
+      "sha256": "2319d50d2065393492ceee5a69d000b4a7c9ed7955425ebb5489f3bffa73c435",
+      "git_blob_sha1": "bcc49e02c69ce3f616d0137b13f90553fd53f45b"
+    }
+  ],
+  "unchanged_dependency": {
+    "path": "scripts/one_third_energy.py",
+    "bytes": 11582,
+    "sha256": "9c73bb399ca9c45384f114a6cbd18fd3121991c38aa1bef62d4baf7cac37eee9",
+    "git_blob_sha1": "f13161b4d5844dbd3c873f999f1b82a25747ae93"
+  },
+  "preserved_article_prefix": {
+    "bytes": 34163,
+    "git_blob_sha1": "df0e05a0bbfead269d53f6a521252f86b8bd48e0",
+    "preserved_byte_for_byte": true,
+    "old_receipts_unchanged": true
+  },
+  "mathematical_source": {
+    "path": "GRWTSK/NumberTheory/Moebius/MertensPrimitive.lean",
+    "git_blob_sha1": "963ad70225b0d6625e7001fd643d18a890024833",
+    "scope": "Literal closed Mertens prefix, velocity, primitive and causal responses; no new replay."
+  },
+  "matched_mode_source": {
+    "path": "docs/mathematics/NumberTheory/Moebius/matched-pickup.md",
+    "git_blob_sha1": "67e593615604f86b49c0cfdac37ee9a99a4e6211",
+    "scope": "Earlier exact homogeneous-mode reproduction; P04/P05 estimates are not imported or required."
+  },
+  "written_results": [
+    "V(x)=W(log x)=int_1^x M(y)y^(-3/2)dy; H_(1/3)(log R)=int_1^R x^(-5/3)V(x)^2dx.",
+    "For integer l>=1, T_l=V(l)+2M(l)(l^(-1/2)-x^(-1/2)) retains both carried modes. The actual local remainder is bounded by (x-l)^2/(2l^(3/2)).",
+    "Weighted orthogonal projection onto span{1,x^(-1/2)} gives exact finite H=K+E, with both mode energies retained in K.",
+    "With X=2^j, m_j=2^ceil(j/8), integer blocks of width X/m_j: E_j<=X^(1/3)/(20*m_j^4)<=2^(-j/6)/20.",
+    "For all natural J: 0<=E_J<=1/[20*(1-2^(-1/6))]<1/2. This is a complement bound, NOT a bound on K_J or H.",
+    "Uniform K_J<=C is equivalent to the original one-third target and returns H_(1/3)(T)<=C+1/[20*(1-2^(-1/6))] for all real T>=0.",
+    "Exact finite moments retain closed floors, partial cells and all pre-block source. The positive 2x2 moment Gram is distinct from the indefinite reciprocal-phase kernel.",
+    "The retained block form is p^2/omega+(q-nu*p/omega)^2/s, s=tau-nu^2/omega>0. Failed numerical denominator separation rejects evaluation rather than deleting a mode.",
+    "For positive weights, G_ij=sum_(k>=max(i,j))w_k. Its Jacobi precision is sum_(i<m-1)(v_i-v_(i+1))^2/w_i+v_last^2/w_last. The boundary anchor is retained.",
+    "The constant-one coefficient sequence has the same bounded complement but unbounded retained energy. No bounded-coefficient universal supplier is accepted."
+  ],
+  "external_research": [
+    {
+      "authors": "K. Matomaki, M. Pandey, J. Pliego, J. Teravainen, M. Wang",
+      "title": "Higher order uniformity of the primes and cancellation of the Mobius function in shorter intervals",
+      "url": "https://arxiv.org/html/2610.09567v1",
+      "source_date": "2026-10-07",
+      "inspected": "Theorems 1.2 and 1.4, parameter dependence and limiting cases",
+      "scope": "Current primary manuscript; short-interval logarithmic cancellation, not a supplied Mertens power exponent or bound for carried pickup moments. No theorem imported or replayed in Lean."
+    }
+  ],
+  "verification": {
+    "test_methods": 29,
+    "runs": [
+      {
+        "command": "python3 -B scripts/test_weighted_pickup_projection.py",
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ".............................\n----------------------------------------------------------------------\nRan 29 tests in 8.320s\n\nOK\n"
+      },
+      {
+        "command": "python3 -O -B scripts/test_weighted_pickup_projection.py",
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ".............................\n----------------------------------------------------------------------\nRan 29 tests in 7.592s\n\nOK\n"
+      }
+    ],
+    "finite_cases": {
+      "partition_scale_indices_per_rank": 65,
+      "exact_anchored_path_assignments": 1092,
+      "rank_one_signed_assignments": 81,
+      "rank_two_signed_assignments": 27,
+      "green_inverse_matrix_sizes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    "arithmetic_method": "Exact Fraction interval arithmetic, integer sixth-root brackets, outward rounding and strictly positive Schur denominator enclosures. The code calculates energy, projection, residual and normal equations independently.",
+    "identity_acceptance": "Finite exact rational path identities and interval consistency checks only. Overlap is not an analytic equality proof. General projection and error estimates have written proofs, not Lean admission.",
+    "remote_integrity": "All three changed-file blob SHAs matched the local tested/source bytes after write/readback.",
+    "pinned_lean_replay": "NOT_RUN: no Lean/Lake executable in this runtime.",
+    "owned_declaration_audit": "NOT_RUN: no Lean source added or modified.",
+    "full_repository_layout_checks": "NOT_RUN: no full checkout; only source-bound partial snapshot available.",
+    "full_repository_documentation_checks": "NOT_RUN: existing registered article extended; no new canonical page or Lean source inventory added.",
+    "publication": "GitHub contents API on existing main; no Codex, new branch, reset, force-push, workflow or permission change.",
+    "privacy": "Only mathematical derivations, public-source references and finite diagnostics published; retrieved private conversation excerpts were not copied into the repository."
+  },
+  "negative_controls": [
+    "resetting pre-block source carry",
+    "deleting constant center",
+    "deleting second retained mode",
+    "removing final Jacobi anchor",
+    "changing actual Mobius sign at six",
+    "using constant-one coefficients as an arithmetic supplier",
+    "future coefficients or invalid physical cutoffs",
+    "Schur denominator not separated at inadequate precision"
+  ],
+  "finite_batch_command": "python3 -B scripts/weighted_pickup_projection.py --cutoff 1 --cutoff 7/2 --cutoff 17/2 --cutoff 16 --cutoff 64 --cutoff 256 --cutoff 1024 --rank 2 --bits 64",
+  "finite_batch_summary": [
+    {
+      "cutoff": "1",
+      "block_count": 0,
+      "rank_per_block": 2,
+      "pickup_energy": {
+        "lower": "0",
+        "upper": "0"
+      },
+      "retained_energy": {
+        "lower": "0",
+        "upper": "0"
+      },
+      "projection_error": {
+        "lower": "0",
+        "upper": "0"
+      },
+      "consistency": {
+        "orthogonal_identity_residual": true,
+        "mode_identity_residual": true
+      },
+      "normal_equations_consistent": true
+    },
+    {
+      "cutoff": "7/2",
+      "block_count": 3,
+      "rank_per_block": 2,
+      "pickup_energy": {
+        "lower": "1469025417955737037/9223372036854775808",
+        "upper": "734512708977868533/4611686018427387904"
+      },
+      "retained_energy": {
+        "lower": "2938050835911474001/18446744073709551616",
+        "upper": "1469025417955737103/9223372036854775808"
+      },
+      "projection_error": {
+        "lower": "-1/18446744073709551616",
+        "upper": "1/18446744073709551616"
+      },
+      "consistency": {
+        "orthogonal_identity_residual": true,
+        "mode_identity_residual": true
+      },
+      "normal_equations_consistent": true
+    },
+    {
+      "cutoff": "17/2",
+      "block_count": 6,
+      "rank_per_block": 2,
+      "pickup_energy": {
+        "lower": "3467121562950836551/18446744073709551616",
+        "upper": "433390195368854587/2305843009213693952"
+      },
+      "retained_energy": {
+        "lower": "3466610296472314977/18446744073709551616",
+        "upper": "1733305148236157701/9223372036854775808"
+      },
+      "projection_error": {
+        "lower": "511266478467787/18446744073709551616",
+        "upper": "63908309821885/2305843009213693952"
+      },
+      "consistency": {
+        "orthogonal_identity_residual": true,
+        "mode_identity_residual": true
+      },
+      "normal_equations_consistent": true
+    },
+    {
+      "cutoff": "16",
+      "block_count": 7,
+      "rank_per_block": 2,
+      "pickup_energy": {
+        "lower": "3581152453704731029/18446744073709551616",
+        "upper": "3581152453704731245/18446744073709551616"
+      },
+      "retained_energy": {
+        "lower": "3580546707857404371/18446744073709551616",
+        "upper": "3496627644391997/18014398509481984"
+      },
+      "projection_error": {
+        "lower": "605745847233885/18446744073709551616",
+        "upper": "605745847419089/18446744073709551616"
+      },
+      "consistency": {
+        "orthogonal_identity_residual": true,
+        "mode_identity_residual": true
+      },
+      "normal_equations_consistent": true
+    },
+    {
+      "cutoff": "64",
+      "block_count": 11,
+      "rank_per_block": 2,
+      "pickup_energy": {
+        "lower": "4619084136554984929/18446744073709551616",
+        "upper": "2309542068277492649/9223372036854775808"
+      },
+      "retained_energy": {
+        "lower": "2309195071729591405/9223372036854775808",
+        "upper": "2309195071729591817/9223372036854775808"
+      },
+      "projection_error": {
+        "lower": "693993095646113/18446744073709551616",
+        "upper": "346996547978835/9223372036854775808"
+      },
+      "consistency": {
+        "orthogonal_identity_residual": true,
+        "mode_identity_residual": true
+      },
+      "normal_equations_consistent": true
+    },
+    {
+      "cutoff": "256",
+      "block_count": 15,
+      "rank_per_block": 2,
+      "pickup_energy": {
+        "lower": "5645405664525673367/18446744073709551616",
+        "upper": "5645405664525673877/18446744073709551616"
+      },
+      "retained_energy": {
+        "lower": "5644677833151790799/18446744073709551616",
+        "upper": "2822338916575895933/9223372036854775808"
+      },
+      "projection_error": {
+        "lower": "727831373650589/18446744073709551616",
+        "upper": "363915687056995/9223372036854775808"
+      },
+      "consistency": {
+        "orthogonal_identity_residual": true,
+        "mode_identity_residual": true
+      },
+      "normal_equations_consistent": true
+    },
+    {
+      "cutoff": "1024",
+      "block_count": 21,
+      "rank_per_block": 2,
+      "pickup_energy": {
+        "lower": "3110871588228722147/9223372036854775808",
+        "upper": "1555435794114361237/4611686018427387904"
+      },
+      "retained_energy": {
+        "lower": "6221001909092442879/18446744073709551616",
+        "upper": "6221001909092444227/18446744073709551616"
+      },
+      "projection_error": {
+        "lower": "741267364648005/18446744073709551616",
+        "upper": "741267365354131/18446744073709551616"
+      },
+      "consistency": {
+        "orthogonal_identity_residual": true,
+        "mode_identity_residual": true
+      },
+      "normal_equations_consistent": true
+    }
+  ],
+  "full_finite_batch_artifact": {
+    "filename": "weighted_pickup_projection_enclosures.json",
+    "bytes": 74162,
+    "sha256": "ec570c0528cd1106bf14bf14b61945cf6ecdfade17682ec0e62cb97cca0e9d66",
+    "scope": "Conversation artifact: exact finite enclosures, not infinite-range proof."
+  },
+  "arithmetic_status": {
+    "uniform_one_third_bound": "UNPAID",
+    "uniform_retained_moment_bound": "UNPAID",
+    "MertensLogSquareBound": "Explicit premise unchanged; no unconditional boundary admission.",
+    "new_mertens_exponent": "NONE",
+    "new_zero_free_exponent": "NONE",
+    "new_lean_admissions": 0,
+    "P04": "Not required; no witness claimed.",
+    "RH": "NOT CLAIMED",
+    "next_inequality": "exists C>=0 forall natural J: sum_(j<J)sum_(B in octave j)[p_B^2/omega_B+(q_B-nu_B*p_B/omega_B)^2/s_B]<=C"
+  },
+  "limits": "Source-specific finite reduction and deterministic complement bound only. Positivity and a small complement do not establish the remaining arithmetic moment estimate."
+}
