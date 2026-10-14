@@ -179,6 +179,128 @@ class LayoutControls(unittest.TestCase):
             with self.subTest(value=value):
                 self.write(PAGE,'# Object\n\n<'+value+'>\n');self.reject('unsupported autolink scheme')
 
+class AreaIndexControls(unittest.TestCase):
+    """Frozen tiny inventory: two areas, one guide, one intake record, no catalog families."""
+    def setUp(self):
+        self.fixture=LayoutControls('test_positive');self.fixture.setUp()
+        self.addCleanup(self.fixture.doCleanups)
+        self.root=self.fixture.root;self.layout=self.fixture.layout
+        self.fixture.write('GRWTSK/Algebra/Unexplained.lean',SOURCE)
+        self.fixture.write('docs/reference/results.json',json.dumps({'schema':'docs-record/1','records':[]}))
+        self.fixture.write('evidence/source-intake.json',json.dumps({'schema':'mathematical-source-intake-v1',
+            'sources':[{'path':'GRWTSK/Analysis/Test.lean'}]}))
+        self.fixture.write('lean-toolchain','leanprover/lean4:v4.33.0\n')
+        self.fixture.write('lake-manifest.json',json.dumps({'packages':[{'name':'mathlib','rev':'b'*40}]}))
+        for path in ('docs/reference/library-pages.md','docs/reference/source-intake.md'):
+            self.layout['pages'][path]={'title':'Fixture reference','category':'reference'}
+            self.fixture.write(path,'# Fixture reference\n\n## Count definitions\n')
+        self.layout['navigation']={'schema':'subject-index-navigation-v1','summary':checker.indexes.SUMMARY_PATH}
+        for area in ('Algebra','Analysis'):
+            self.layout['pages']['docs/mathematics/'+area+'/index.md']={
+                'title':checker.indexes.area_title(area),'category':'navigation','area':area}
+        self.generate()
+    def sources(self):return {p.relative_to(self.root).as_posix() for p in (self.root/'GRWTSK').rglob('*.lean')}
+    def generate(self):
+        raw=json.dumps(self.layout);self.fixture.write('docs/reference/documentation-layout.json',raw)
+        self.summary=checker.build_navigation_summary(self.root,self.layout,self.sources())
+        self.fixture.write(checker.indexes.SUMMARY_PATH,json.dumps(self.summary))
+        self.fixture.write('docs/index.md',checker.render_navigation(self.layout,self.summary))
+        for area in self.summary['areas']:
+            self.fixture.write('docs/mathematics/'+area+'/index.md',checker.indexes.render_area(self.layout,self.summary,area))
+    def validate(self):
+        checker.validate(self.root,self.layout,self.fixture.inv,self.fixture.history,set(self.layout['pages']),
+                         source_names=self.sources())
+    def reject(self,reason):
+        with self.assertRaisesRegex(checker.LayoutError,re.escape(reason)):self.validate()
+    def test_fixed_independent_count_oracle(self):
+        self.assertEqual(self.summary['counts'],{'areas':2,'object_guides':1,'documented_objects':1,
+            'primary_sources':1,'lean_modules':2,'intake_records':1,'selected_families':0,'maintained_pages':14})
+        self.assertEqual(self.summary['areas']['Algebra']['object_guides'],0)
+        self.assertEqual(self.summary['areas']['Analysis']['lean_modules'],1)
+        self.validate()
+    def test_missing_area(self):
+        del self.layout['pages']['docs/mathematics/Algebra/index.md'];self.generate()
+        self.reject('missing/extra area index')
+    def test_extra_area(self):
+        p='docs/mathematics/Logic/index.md';self.layout['pages'][p]={'title':'Logic','category':'navigation','area':'Logic'}
+        self.fixture.write(p,'# Logic\n');self.generate();self.reject('missing/extra area index')
+    def test_wrong_index_path(self):
+        p='docs/mathematics/Analysis/elsewhere.md';self.layout['pages'][p]=self.layout['pages'].pop('docs/mathematics/Analysis/index.md')
+        self.fixture.write(p,'# Analysis\n');self.reject('area index path mismatch')
+    def test_area_index_cannot_gain_proof_fields(self):
+        for key,value in [('status','fresh-selected'),('primary_source','GRWTSK/Analysis/Test.lean'),('source_sha256','0'*64),('subject','Analysis')]:
+            with self.subTest(key=key):
+                p=self.layout['pages']['docs/mathematics/Analysis/index.md'];p[key]=value
+                try:self.reject('area index carries claim metadata')
+                finally:del p[key]
+    def test_wrong_index_category(self):
+        self.layout['pages']['docs/mathematics/Analysis/index.md']['category']='reference';self.reject('area index carries claim metadata')
+    def test_legacy_section_cannot_move_to_index(self):
+        self.layout['dispositions']['old:0']['target']='docs/mathematics/Analysis/index.md'
+        self.reject('legacy section targets navigation')
+    def test_stale_or_inflated_count(self):
+        self.summary['counts']['lean_modules']=999
+        self.fixture.write(checker.indexes.SUMMARY_PATH,json.dumps(self.summary));self.reject('stale documentation inventory')
+    def test_source_added_invalidates_counts(self):
+        self.fixture.write('GRWTSK/Analysis/Extra.lean',SOURCE);self.reject('stale documentation inventory')
+    def test_source_removed_invalidates_counts(self):
+        (self.root/'GRWTSK/Algebra/Unexplained.lean').unlink();self.reject('stale documentation inventory')
+    def test_wrong_area_link(self):
+        p='docs/mathematics/Analysis/index.md';text=(self.root/p).read_text().replace('(Test/object.md)','(../Algebra/index.md)')
+        self.fixture.write(p,text);self.reject('stale area index: Analysis')
+    def test_missing_or_duplicate_guide(self):
+        p='docs/mathematics/Analysis/index.md';original=(self.root/p).read_text();line=next(x for x in original.splitlines(True) if '[Object]' in x)
+        for text in (original.replace(line,''),original+line):
+            with self.subTest(text=text):self.fixture.write(p,text);self.reject('stale area index: Analysis')
+    def test_article_binding_remains_enforced(self):
+        self.fixture.write('GRWTSK/Analysis/Test.lean',SOURCE+'changed\n');self.reject('source identity drift')
+    def test_navigation_cannot_suppress_old_status_check(self):
+        self.layout['pages'][PAGE]['status']='accepted';self.reject('unrecognized evidence status')
+    def test_intake_cannot_count_absent_source(self):
+        self.fixture.write('evidence/source-intake.json',json.dumps({'schema':'mathematical-source-intake-v1',
+            'sources':[{'path':'GRWTSK/Analysis/Absent.lean'}]}));self.reject('intake inventory source missing')
+    def test_catalog_cannot_mislabel_area(self):
+        self.fixture.write('docs/reference/results.json',json.dumps({'schema':'docs-record/1','records':[
+            {'id':'wrong','page':PAGE,'subject':'Algebra/Test','verification':'historical'}]}))
+        self.reject('catalog inventory subject mismatch')
+    def test_navigation_schema_cannot_be_removed(self):
+        del self.layout['navigation'];self.reject('area index without navigation schema')
+    def test_concurrent_output_edit_during_render_is_preserved(self):
+        import check_documentation as catalog
+        real=checker.build_navigation_summary;changed=False
+        def racing_summary(*args,**kwargs):
+            nonlocal changed
+            if not changed:
+                self.fixture.write('docs/index.md','# Concurrent human edit\n');changed=True
+            return real(*args,**kwargs)
+        with mock.patch.object(catalog,'ROOT',self.root),mock.patch.object(checker,'visible_source_inventory',return_value=self.sources()),mock.patch.object(checker,'build_navigation_summary',side_effect=racing_summary):
+            with self.assertRaisesRegex(checker.LayoutError,'generated output changed during render: docs/index.md'):
+                catalog.render_indexes()
+        self.assertEqual((self.root/'docs/index.md').read_text(),'# Concurrent human edit\n')
+    def test_unchanged_projection_cannot_hide_concurrent_output_edit(self):
+        import check_documentation as catalog
+        self.fixture.write('docs/index.md','# Concurrent human edit\n');archive=self.root/'.local/preimage'
+        with mock.patch.object(catalog,'ROOT',self.root):
+            with self.assertRaisesRegex(checker.LayoutError,'generated output changed before write: docs/index.md'):
+                catalog.write_projection('docs/index.md',b'old projection',b'old projection',archive)
+        self.assertEqual((self.root/'docs/index.md').read_text(),'# Concurrent human edit\n')
+        self.assertFalse(archive.exists())
+    def test_unregistered_existing_area_is_not_overwritten(self):
+        import check_documentation as catalog
+        del self.layout['pages']['docs/mathematics/Algebra/index.md']
+        self.fixture.write('docs/reference/documentation-layout.json',json.dumps(self.layout))
+        original=(self.root/'docs/mathematics/Algebra/index.md').read_bytes()
+        with mock.patch.object(catalog,'ROOT',self.root),mock.patch.object(checker,'visible_source_inventory',return_value=self.sources()):
+            with self.assertRaisesRegex(checker.LayoutError,'unregistered existing area output'):
+                catalog.render_indexes()
+        self.assertEqual((self.root/'docs/mathematics/Algebra/index.md').read_bytes(),original)
+    def test_changed_source_inventory_blocks_render(self):
+        import check_documentation as catalog
+        before=self.sources();after=before|{'GRWTSK/Analysis/Later.lean'}
+        with mock.patch.object(catalog,'ROOT',self.root),mock.patch.object(checker,'visible_source_inventory',side_effect=[before,after]):
+            with self.assertRaisesRegex(checker.LayoutError,'source inventory changed during render'):
+                catalog.render_indexes()
+
 class GitControls(unittest.TestCase):
     def test_unsafe_visible_page_cannot_be_omitted(self):
         with tempfile.TemporaryDirectory() as temporary:

@@ -1034,6 +1034,37 @@ def read_lean_roles(layout):
                 "invalid active source role")
         require(path not in roles, "duplicate active source path: " + path)
         roles[path] = role
+    candidates = layout.get("candidate_sources", [])
+    require(isinstance(candidates, list), "math layout candidate_sources must be a list")
+    candidate_metadata = layout.get("candidate_source_catalog", {})
+    require(isinstance(candidate_metadata, dict),
+            "math layout candidate_source_catalog must be an object")
+    if candidates or candidate_metadata:
+        require(candidate_metadata.get("status") == "CANDIDATE_SOURCE_ONLY",
+                "candidate catalog lost candidate-only status")
+        require(candidate_metadata.get("source_count") == len(candidates),
+                "candidate catalog count mismatch")
+    for entry in candidates:
+        require(isinstance(entry, dict), "candidate source record must be an object")
+        path = entry.get("path")
+        require(isinstance(path, str) and safe_relpath(path), "invalid candidate source path")
+        require(path not in roles, "active/candidate source overlap: " + path)
+        require(entry.get("source_set") == "candidate-evidence",
+                "invalid candidate artifact role: " + path)
+        require(entry.get("target_path") == path,
+                "candidate target path differs from its current path: " + path)
+        require(entry.get("source_intake") == "evidence/source-intake.json",
+                "candidate source-intake binding changed: " + path)
+        require(entry.get("status") == "CANDIDATE_SOURCE_ONLY",
+                "invalid candidate source status: " + path)
+        require(entry.get("mathematical_admission") is False
+                and entry.get("public_release_eligible") is False,
+                "candidate source carries an admission/publication claim: " + path)
+        require(isinstance(entry.get("sha256"), str) and HEX64.fullmatch(entry["sha256"]),
+                "invalid candidate source digest: " + path)
+        require(type(entry.get("bytes")) is int and entry["bytes"] >= 0,
+                "invalid candidate source byte count: " + path)
+        roles[path] = "candidate-evidence"
     return roles
 
 
@@ -1239,6 +1270,23 @@ def generated_expected_bytes(output, layout):
     raise Invalid("unsupported external generated output: " + output)
 
 
+def candidate_binding_blockers(entries, layout):
+    """Bind candidate-only catalog status to the exact observed artifact bytes."""
+    entries_by_path = {entry["path"]: entry for entry in entries}
+    blockers = []
+    for binding in layout.get("candidate_sources", []):
+        path = binding["path"]
+        observed = entries_by_path.get(path)
+        if observed is None:
+            continue
+        filesystem = observed["filesystem"]
+        if (filesystem.get("kind") != "file"
+                or filesystem.get("sha256") != binding["sha256"]
+                or filesystem.get("size") != binding["bytes"]):
+            blockers.append("candidate-evidence-byte-drift:" + path)
+    return blockers
+
+
 def import_script(path, name):
     spec = importlib.util.spec_from_file_location(name, path)
     require(spec is not None and spec.loader is not None, "cannot import " + str(path))
@@ -1267,6 +1315,7 @@ def make_catalog(root, discovery, layout, recipes, capture=False):
         blockers.append("uncataloged-maintained-lean:" + path)
     for path in sorted(expected_lean - observed_lean):
         blockers.append("missing-maintained-lean:" + path)
+    blockers.extend(candidate_binding_blockers(entries, layout))
     exceptional = exceptional_states(entries, discovery)
     blockers.extend("tracked-deletion:" + path for path in exceptional["tracked_deletions"])
     blockers.extend("conflicted-artifact:" + path for path in exceptional["conflicts"])
@@ -1473,6 +1522,7 @@ def profile_report(inventory_blockers, generation_blockers, rules):
         "missing-maintained-lean:", "registry:", "recipes:", "stale-generated-view:",
         "generated-view-error:", "generated-view-unavailable:", "tracked-deletion:",
         "conflicted-artifact:", "submodule-input:", "path-collision:",
+        "candidate-evidence-byte-drift:",
         "concurrent-snapshot-drift",
     ))]
     organized_blockers.extend([
@@ -1701,6 +1751,48 @@ def self_test():
     profiles = profile_report([], [], descriptive_only)
     require(all(not profile["established"] for profile in profiles.values()),
             "descriptive registry status admitted a conformance profile")
+
+    candidate_layout = {
+        "source_roles": {"library": "public mathematical source"},
+        "active_sources": [{"path": "GRWTSK.lean", "source_role": "library"}],
+        "candidate_source_catalog": {
+            "status": "CANDIDATE_SOURCE_ONLY", "source_count": 1,
+        },
+        "candidate_sources": [{
+            "path": "GRWTSK/Analysis/Candidate.lean",
+            "target_path": "GRWTSK/Analysis/Candidate.lean",
+            "source_intake": "evidence/source-intake.json",
+            "source_set": "candidate-evidence",
+            "status": "CANDIDATE_SOURCE_ONLY",
+            "mathematical_admission": False,
+            "public_release_eligible": False,
+            "sha256": "0" * 64,
+            "bytes": 1,
+        }],
+    }
+    roles = read_lean_roles(candidate_layout)
+    require(roles["GRWTSK/Analysis/Candidate.lean"] == "candidate-evidence",
+            "candidate evidence was not assigned its non-admitted artifact role")
+    candidate_artifact = [{
+        "path": "GRWTSK/Analysis/Candidate.lean",
+        "filesystem": {"kind": "file", "sha256": "0" * 64, "size": 1},
+    }]
+    require(candidate_binding_blockers(candidate_artifact, candidate_layout) == [],
+            "exact candidate artifact binding was rejected")
+    drifted_candidate_artifact = copy.deepcopy(candidate_artifact)
+    drifted_candidate_artifact[0]["filesystem"]["sha256"] = "1" * 64
+    require(candidate_binding_blockers(drifted_candidate_artifact, candidate_layout) == [
+        "candidate-evidence-byte-drift:GRWTSK/Analysis/Candidate.lean",
+    ], "candidate byte-drift hostile control was not detected")
+    bad_candidate_layout = copy.deepcopy(candidate_layout)
+    bad_candidate_layout["candidate_sources"][0]["path"] = "GRWTSK.lean"
+    expect_invalid(lambda: read_lean_roles(bad_candidate_layout), "active/candidate source overlap")
+    bad_candidate_layout = copy.deepcopy(candidate_layout)
+    bad_candidate_layout["candidate_sources"][0]["mathematical_admission"] = True
+    expect_invalid(lambda: read_lean_roles(bad_candidate_layout), "admission/publication claim")
+    bad_candidate_layout = copy.deepcopy(candidate_layout)
+    bad_candidate_layout["candidate_source_catalog"]["source_count"] = 0
+    expect_invalid(lambda: read_lean_roles(bad_candidate_layout), "candidate catalog count mismatch")
 
     malformed_entry = {
         "path": "example.txt", "path_bytes_hex": "6578616d706c652e747874",

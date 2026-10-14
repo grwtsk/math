@@ -1,0 +1,26 @@
+{
+  "schema": "grwtsk-source-manifest-merge-reconciliation-v1",
+  "scope": "Historical parent manifests are evidence, not current repository acceptance. Neither parent hash is refreshed to current bytes.",
+  "merge_base": "60e758af45dd8d79bf0c9ef7fdf002051124e6b5",
+  "retained_working_manifest": {
+    "parent_commit": "88e95e6bdf949cf1f5d3486c6fa25458cda01745",
+    "path": "evidence/source-manifest.json",
+    "git_blob": "f613abecaa42f7bc72e89c5ac555b03ad66d646a",
+    "sha256": "2c6ab93c6075b54422945d34d695d9f9044b90c6700f9dacd1ace40cfa186250",
+    "disposition": "retained byte-for-byte as the historical local-parent manifest"
+  },
+  "other_parent_manifest": {
+    "parent_commit": "37d612b93d0680bebf3d3513e32a7352cbdcc056",
+    "path_in_parent": "evidence/source-manifest.json",
+    "git_blob": "f4fd5eefa69d38abda52116b32582d453b190061",
+    "sha256": "b4cb81f456040cbe89db53572ae7d712e71cfa4b0df1ad253bbf42b0529d35e1",
+    "disposition": "preserved by the merge parent and referenced here; not rewritten as current evidence"
+  },
+  "current_authorities": [
+    "docs/math-layout.json",
+    "docs/reference/math-source-catalog.json",
+    "docs/reference/repository-artifact-catalog.json"
+  ],
+  "formal_acceptance": false,
+  "reconstruction_acceptance": false
+}
