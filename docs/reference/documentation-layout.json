@@ -3088,8 +3088,26 @@
       "source_sha256": "17adb06dd4f26f4f323a3c7aeff14cd965b04348432a51f8007775a2c7ad69e9",
       "status": "fresh-selected",
       "evidence": "evidence/NumberTheory/LSeries/density-series-checks.json"
+    },
+    "docs/mathematics/NumberTheory/Moebius/finite-euler-product.md": {
+      "title": "Finite Euler products with a closed cutoff",
+      "subject": "NumberTheory",
+      "object": "Moebius",
+      "primary_source": "GRWTSK/NumberTheory/Moebius/FiniteEulerProduct.lean",
+      "source_sha256": "f43d20140bcc365829454e0b9a715243121d78fda366c0f8b22a3fd80da49341",
+      "status": "fresh-selected",
+      "evidence": "evidence/NumberTheory/Moebius/finite-euler-product-checks.json",
+      "verification_scope": "One immutable Mathlib-only project source, four public theorems and six complete owned declarations; trust zero, fatal warnings, standard transitive axioms, and two measured statement-reuse rejections. Pinned dependency objects reused; no whole-library acceptance or independent human review.",
+      "scoped_native_receipt_sha256": "e3df0b4fc5e2a57f54e0389322eaf73d72ac104687ac3188d2ce58cb655a42a3",
+      "contribution": {
+        "human_mathematical_direction": "grwtsk contributors",
+        "formalization_and_documentation_assistance": "OpenAI Codex",
+        "source_license": "MIT",
+        "upstream_mathlib_credit_and_license": "Upstream authors; Apache-2.0",
+        "scope": "Classical finite product expansion and prime-factor reindexing generalized to commutative-ring multiplicative weights; no originality claim or arithmetic-growth supplier."
+      }
     }
   },
   "object_binding_registry": "docs/reference/object-source-bindings.json",
-  "object_binding_registry_sha256": "297681888ff591c51df6b53dd38cc04fb4418058ddf3fb5d37ac10f5e3807f10"
+  "object_binding_registry_sha256": "2c6f1fc10ca7ea46084f55b9165773b8e6d93ad15ba5843800ccac17bb1cf172"
 }
