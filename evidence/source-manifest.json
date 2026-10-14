@@ -15,7 +15,7 @@
     ".gitattributes": "30ad961b8d8b3947a8f036d5390087ab5f8c1853f7d0bfb01319f449e05e1368",
     ".gitignore": "21327e9cedbf4b84ef262886e71421d4201201b052cb7b06a6ba6a522270e732",
     "AGENTS.md": "6e19b4f08f1f97490480192f77d425c2c26387eaf36387b7a2cc4e200257e212",
-    "GRWTSK.lean": "94787d8ee7ae28e3259b51d350c6a5931b62c83914c641299785296ac4a03563",
+    "GRWTSK.lean": "b033036e306599ca79244a04f278676c69747ee2c3dc16c280f41b60b81c8380",
     "GRWTSK/Algebra/BigOperators/OrderedSquare.lean": "90887152044ad24b0a96371b5aee78430e2d67f2abcc899529c43f6946d8e1d4",
     "GRWTSK/Algebra/BigOperators/QuadraticCounterexample.lean": "beba4fef99150fd9d1d9a905b33bba2a4cc20982be1eb08d62705cae37489d25",
     "GRWTSK/Algebra/OrderedProduct.lean": "97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d",
@@ -323,7 +323,7 @@
     "checks/Spectral/FiniteVolume/Controls/ZeroVolumeError.lean": "c08b348f67aa124c3b44e3ae9a193b6b8d3977c915ef9020448b372d47d3821a",
     "checks/Spectral/FiniteVolume/Declarations.lean": "a9c2d1b822b28bf47e2c004ccb66ad966d89b589a7bbf9c78a4d79f7e66e16e8",
     "checks/WrongColor.lean": "c3998d64ef4f18ae3dff2fe3268c5c717772719d9592a752a700d189d9a562ee",
-    "docs/math-layout.json": "8e9be40b9670b581ece90d0c527fe83f32c78f0b99bab6ec8c9857a3733a6a03",
+    "docs/math-layout.json": "368aee140e9160f7364ff536822016683592d104d13e5dcf54320d48395c751a",
     "evidence/canonical-integration.json": "27bc47db2922f396a4ae893689e7e32e8e63bb4ac6afe0dd14b48616af0c105c",
     "evidence/ccc-control-soundness-source-manifest.json": "38193ba33bae1a89cdecdf58fcd019271aa129848c5c39e88f684da19b735843",
     "evidence/ccc-energy-checks.json": "065d2277ef159fd344acfdcd03a5695a67b46290ded6a6848eba3f1503a8649d",
@@ -463,7 +463,7 @@
     "docs/mathematics/NumberTheory/Prime/least-prime.md": "92ef6c52678865431253511255d8b8995a6b5cf734243a5b92f24f459b268457",
     "docs/mathematics/Combinatorics/Sequences/coverage-and-quotas.md": "91eaf3b95be6d1e4e6efeb4d7ebf9778afb6651e6a7c60adeb015572dfd35abe",
     "docs/reference/literature/unitary-almost-mathieu.md": "2ee4ecb6da1d5ce95129581804eb64136d89a234b7ff5bfe3e6ff928cfd761bd",
-    "docs/index.md": "74944d3acba9e105a44911ef08b217ad4c1e2b6409f97b08b93a8341a59f6410",
+    "docs/index.md": "fbb618ca9e4fa4c7d5a14ce79f22bd5a29fbf0713275f21ef8e8c755cc0ada05",
     "docs/explanation/evidence.md": "f55abcc08195b258b500978556577eff64db963160ca7e78cf8bc9634d059b80",
     "docs/explanation/documentation.md": "33bb66f6eede83113e2bb9ce6a86ccca39a440a6b51ecfa7cd22580f293b6077",
     "docs/start/least-prime.md": "4613917ecd8f8e299b4aa0a3bef4c7e7061578dff31386073d8c531589b73d60",
@@ -473,12 +473,19 @@
     "docs/reference/results.md": "672bfa3dc39e4181b40a8d4aaef09479a37b33cb6ae95b7b827955877790307a",
     "docs/mathematics/DynamicalSystems/TransitionSystems/guarded-reachability.md": "befea5c935b7e9bf985b6b00da0956f9cb2c4c3afd3c843d0a104c1a40ec46e2",
     "docs/reference/mathematical-terminology.md": "971701db0248a4be42f3dcc2968766ff6bd272071f79f9decc22ee4a0a12b5da",
-    "docs/reference/documentation-layout.json": "af9a16527bf3068b0830eb781754f53b78fb32cb423f937aaaad3a92fdd3d27b",
-    "docs/reference/object-source-bindings.json": "f723b0a8dd9934b0ceea870caa89556190af9327d335682123b9e88a16701a26",
+    "docs/reference/documentation-layout.json": "f79abc8c83c91601962d788a4601963856600aba1328873d29d7dc575f177202",
+    "docs/reference/object-source-bindings.json": "2c6f1fc10ca7ea46084f55b9165773b8e6d93ad15ba5843800ccac17bb1cf172",
     "scripts/check_documentation.py": "b18bf374e7f50f1ccb57c8ab7f9eef8742bc346403ac0258a11bcd5c6d19bd9e",
     "scripts/check_documentation_layout.py": "aee5d8651d20c7bb461ea3aae2b8bcbedb42c38c7572ccf09043f0c95c206d81",
     "scripts/test_documentation_layout.py": "fdd69ab18c528eff15401b09dfff97113fe6cc1dcd3cf70182c31f0c80883901",
-    "docs/reference/results.json": "fe2ad2cb22d66c33a4b4b78477b95a0fd1d8ca8c537773db19307743af482527"
+    "docs/reference/results.json": "fe2ad2cb22d66c33a4b4b78477b95a0fd1d8ca8c537773db19307743af482527",
+    "GRWTSK/NumberTheory/Moebius/FiniteEulerProduct.lean": "f43d20140bcc365829454e0b9a715243121d78fda366c0f8b22a3fd80da49341",
+    "checks/NumberTheory/Moebius/FiniteEulerProduct.lean": "e75fa9f8555a89d23a8b0e1f7752d332ab698780f62954de1b0b8218ac638221",
+    "checks/NumberTheory/Moebius/FiniteEulerProduct/Controls/MissingDebt.lean": "f557f6427e8e21b0d922d3fec460f4101ffd4dc2f82d98d1fe42b9d5ee3129b0",
+    "checks/NumberTheory/Moebius/FiniteEulerProduct/Controls/OpenCutoff.lean": "7bf45809e88e44aacf618e99f968db8a34e7863f6f8bd05b08d42eea697a16d8",
+    "scripts/check_finite_euler_product.py": "1991fb7f8632f763828414cef4606bb4014bfb0726eec4ee0e77a41de873dcae",
+    "evidence/NumberTheory/Moebius/finite-euler-product-checks.json": "e3df0b4fc5e2a57f54e0389322eaf73d72ac104687ac3188d2ce58cb655a42a3",
+    "docs/mathematics/NumberTheory/Moebius/finite-euler-product.md": "cc40b67c518f5dd6f5b775bb8289154285c147736c9812db800986f772a7ac7f"
   },
   "axiom_policy": "Lean standard classical axioms propext, Classical.choice, Quot.sound permitted; sorryAx and other axioms rejected; prime exact observed list reported, Moser exact frozen lists matched.",
   "additional_claim_scope": "Exact Mathlib RH proposition, its defect equivalence and nontrivial-zero symmetries; no RH proof.",
@@ -789,5 +796,26 @@
       "docs/waveform-interfaces.md": "3060bf7b8bb8121ab37965aa932fba9f094842317b69646affa3f00f044e5f64"
     },
     "current_documentation_commit": "9489822c4b24e077033d335c4a780fd6097bdfd6"
+  },
+  "finite_euler_product_scope": {
+    "source": "GRWTSK/NumberTheory/Moebius/FiniteEulerProduct.lean",
+    "receipt": "evidence/NumberTheory/Moebius/finite-euler-product-checks.json",
+    "receipt_sha256": "e3df0b4fc5e2a57f54e0389322eaf73d72ac104687ac3188d2ce58cb655a42a3",
+    "public_theorems": 4,
+    "complete_owned_declarations": 6,
+    "trust": 0,
+    "fatal_warnings": true,
+    "axioms_allowed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "mathematics": "Generic commutative-ring identity with a closed prefix and every signed prime-subset product strictly above the cutoff; includes zero cutoff.",
+    "historical_acceptance_preserved": true,
+    "manifest_refresh_is_not_global_acceptance": true,
+    "mathlib_source_rebuilt": false,
+    "whole_repository_replay": false,
+    "independent_human_proof_review": false,
+    "rh_proved": false
   }
 }
