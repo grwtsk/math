@@ -1,0 +1,383 @@
+# Finite-source Bessel transfer for the signed Jacobi endpoint
+
+Human mathematical direction: grwtsk contributors.
+Derivation and implementation assistance: OpenAI ChatGPT. MIT.
+
+Status: WRITTEN EXPLICIT COMPARISON, NOT A UNIFORM ARITHMETIC BOUND.
+No Lean admission, new zero-free theorem, Mertens exponent, P04 premise, or
+RH proof is claimed. This does not solve the target all-degree quadratic.
+It constructs an actual-source Bessel coefficient whose difference from the
+complete Jacobi coefficient has a quantitatively summable square norm.
+
+Inspected main: 4eb6fa3615437cf762e68ff610603c27f1e13f80.
+The concurrent taxonomy contribution is preserved. Prior written source:
+  evidence/number-theory/moebius/jacobi-sequence-bounds-derivation-20261014.txt
+  Git blob 056e1a71820890fc7bf7a885ba898a80532fcc05.
+The prior moment/source norm identity is in
+  evidence/number-theory/moebius/reciprocal-moment-energy-derivation-20261014.txt
+  Git blob a3560c53f227476974f75d73239ff803da0222f2.
+These are reused as written arguments, not promoted to native proof acceptance.
+
+## 1. Exact definitions and quantitative result
+
+Use the actual closed Mertens prefix M(x)=sum_(1<=k<=floor(x))mu(k),
+V(x)=W(log x)=int_1^x M(v)v^(-3/2)dv, and
+
+  g(y)=y^(-5/12)V(y^(-1/2)),  p(y)=y^(7/6)(1-y),
+  P_n(y)=P_n^(0,1/6)(2y-1),
+  lambda_n=n(n+7/6),  nu_n=n+7/12,  b_n=(7/6)_n/n!.
+
+The previous exact full coefficient formula is
+
+  d_n=(1/(2lambda_n)) int_0^1 p(y)g'(y)P_n'(y)dy, n>=1. (BE1)
+
+Here g' is the almost-everywhere derivative of the actual primitive;
+M is not differentiated. It satisfies |g'| <= (4/3)y^(-5/3).
+For n>=2 the bulk r_n from y in [1/n,1] satisfies
+
+  |r_n|<=15 n^(-7/6),
+  sum_(n>=2)(4n+7/3)|r_n|^2<=4725.                       (BE2)
+
+For gamma>-1/2 define the entire, normalized Bessel function
+
+  F_gamma(z)=sum_(k>=0) (-z^2/4)^k / (k! (gamma+1)_k),
+  F_gamma(0)=1.
+
+For positive z this equals Gamma(gamma+1)(2/z)^gamma J_gamma(z).
+Let theta(y)=2 arcsin(sqrt(y)) for 0<y<=1/2. Define the first Bessel
+reference for the actual Jacobi normalization by
+
+  B_n(y)=(-1)^n b_n [theta(y)/(2sqrt(y))]^(2/3)
+                    (1-y)^(-1/4) F_(1/6)(nu_n theta(y)). (BE3)
+
+The analytic extension at y=0 is B_n(0)=(-1)^n b_n. Retain its exact
+frequency nu_n, geometric prefactor, and parity. Do not replace theta by
+2sqrt(y), remove the prefactor, or use the frequency n without a new error
+estimate. The construction is a classical type of Jacobi--Bessel reference;
+its existence or its name does not itself imply an arithmetic bound.
+
+For every n>=2 and 0<y<=1/n, we prove the explicit kernel comparisons
+
+  |P_n(y)-B_n(y)| <=19 b_n y,
+  |P_n'(y)-B_n'(y)| <=100 b_n(1+nu_n^2 y).                (BE4)
+
+Define the endpoint coefficient
+
+  beta_n=(1/(2lambda_n)) int_0^(1/n) p(y)g'(y)B_n'(y)dy.
+
+Then the Jacobi-to-Bessel endpoint difference epsilon_n satisfies
+
+  d_n=r_n+beta_n+epsilon_n,
+  |epsilon_n|<=200 n^(-4/3),
+  sum_(n>=2)(4n+7/3)|epsilon_n|^2<=420000.                (BE5)
+
+Finally define a FINITE-SOURCE coefficient, using the same g rather than a
+new inverse-transform representative,
+
+  t_n=(1/(2lambda_n)) int_(n^-4)^(1/n) p(y)g'(y)B_n'(y)dy.
+                                                               (BE6)
+
+Its omitted coefficient tail tau_n=beta_n-t_n obeys
+
+  |tau_n|<=50 n^(-11/6),
+  sum_(n>=2)(4n+7/3)|tau_n|^2<=10500.                    (BE7)
+
+Consequently d_n-t_n=r_n+epsilon_n+tau_n, with all terms retained, and
+
+  ||(d_n-t_n)_(n>=2)||_(ell2(4n+7/3))
+     <=D:=sqrt(4725)+sqrt(420000)+sqrt(10500)<821.         (BE8)
+
+For any integer N>=1, the squared-error tail is bounded through
+
+  ||(d_n-t_n)_(n>N)||_(ell2(4n+7/3))
+   <=sqrt(4725)N^(-1/6)+sqrt(420000)N^(-1/3)
+                         +sqrt(10500)N^(-5/6).          (BE9)
+
+This is an approximation-difference tail, NOT an upper bound for either
+actual arithmetic sequence. No smallness of t_n is inferred.
+
+## 2. Finite physical arithmetic range and all cutoff terms
+
+Changing variables in (BE6), without modifying either source term, gives
+
+  t_n = -1/(2lambda_n) int_(sqrt(n))^(n^2) (1-x^-2)
+       [(5/6)x^(-5/2)V(x)+x^(-3)M(x)] B_n'(x^-2) dx.     (BE10)
+
+Only mu(k) with k<=n^2 is needed for this coefficient, but V(x) retains
+all the coefficients before the lower endpoint. In particular, replacing
+V(x) by V(x)-V(sqrt(n)) changes t_n. The lower endpoint sqrt(n) is not
+rounded. On integer cells use M(x)=M_floor(x) and
+V(x)=2(A_floor(x)-x^-1/2 M_floor(x)), including the partial first cell and
+closed last cutoff. Integer values do not affect the Lebesgue integral, but
+the source convention is not changed. At n^2 the touching response is zero
+and its coefficient remains in the closed prefix. The original completed
+prime-product numerator, its endpoint terms, and unborn-product debt are
+not replaced or deleted by this scalar coefficient transformation.
+
+The range [sqrt(n),n^2] is a finite-source theorem for each n, not a claim
+that a finite collection of n proves the all-degree estimate. It is not a
+complexity or fast-evaluation claim. The current executable evaluates the
+reference kernels and rational identities, not these full source integrals.
+
+## 3. A Bessel Green kernel with explicit constants
+
+Put h=2/3, ell=1/3. For theta in (0,pi/2], let
+
+  y=sin(theta/2)^2, w(theta)=y^(1/3)(1-y)^(1/4),
+  U(theta)=(-1)^n w(theta)P_n(y), C_n=b_n 2^(-2/3).
+
+Direct substitution in the Jacobi equation gives
+
+  U''+[nu_n^2+2/(9theta^2)+r(theta)]U=0,
+  r(theta)=1/[18sin(theta/2)^2]-2/(9theta^2)
+                                      +1/[16cos(theta/2)^2]. (BE11)
+
+At zero U(theta)=C_n theta^(2/3)(1+O_n(theta^2)); the analogous derivative
+expansion follows from the finite Jacobi polynomial and analytic geometric
+factors. This expansion fixes the regular branch, not just the value U(0)=0.
+
+The perturbing potential satisfies
+
+  0<=r(theta)<=11/72<1/6.                                (BE12)
+
+Indeed u=theta/2<=pi/4<1. The elementary sine remainder gives
+sin(u)>=u(1-u^2/6), so
+
+  0<=csc(u)^2-u^-2
+    <=(1/3-u^2/36)/(1-u^2/6)^2 <=12/25<1/2.
+
+Also cos(u)^2>=1/2. Thus r<=1/36+1/8=11/72. The apparent singularities
+in r cancel; no unspecified compact maximum is used.
+
+The normalized Poisson integral for F_gamma is a cosine average against a
+positive probability density on [0,1] for gamma>-1/2. Therefore
+
+  |F_gamma(z)|<=1 for real z,
+  F_gamma'(z)=-z F_(gamma+1)(z)/(2(gamma+1)).              (BE13)
+
+These statements also follow by normalizing DLMF 10.9.4 and differentiating
+the entire power series. Define
+
+  a(theta)=theta^(2/3)F_(1/6)(nu_n theta),
+  b(theta)=theta^(1/3)F_(-1/6)(nu_n theta).
+
+They solve the unperturbed equation u''+[nu_n^2+2/(9theta^2)]u=0.
+Their Wronskian a b'-a' b is the constant -1/3, obtained from their leading
+powers at zero and the absence of a first-derivative term. For 0<s<=theta,
+
+  G(theta,s)=3[b(s)a(theta)-a(s)b(theta)]
+
+has G(s,s)=0 and partial_theta G(s,s)=1. From (BE13),
+
+  |G(theta,s)|<=6theta^(2/3)s^(1/3),
+  |partial_theta G(theta,s)|
+        <=4theta^(-1/3)(1+nu_n^2 theta^2)s^(1/3).         (BE14)
+
+For clarity, the derivative factors of a and b are bounded by
+
+  |a'| <=(2/3)theta^(-1/3)+(3/7)nu_n^2 theta^(5/3),
+  |b'| <=(1/3)theta^(-2/3)+(3/5)nu_n^2 theta^(4/3).
+
+Using s^(2/3)theta^(-2/3)<=s^(1/3)theta^(-1/3) and its corresponding
+higher-power version, the derivative constant is at most
+3[1+(36/35)nu_n^2 theta^2], dominated by 4(1+nu_n^2 theta^2).
+All orders in these bounds lie in the stated Poisson domain.
+
+## 4. Matching the original regular branch
+
+Let v(theta)=C_n a(theta) and D_n(theta)=U(theta)-v(theta).
+Variation of constants, with the actual branch normalization, gives
+
+  D_n(theta)=-int_0^theta G(theta,s)r(s)U(s)ds.            (BE15)
+
+This can first be derived on [epsilon,theta] and then passed to zero.
+Alternatively, the displayed integral solves the inhomogeneous difference
+equation and has order theta^(8/3). The difference from D_n is homogeneous;
+both its theta^(1/3) and theta^(2/3) coefficients vanish, so it is zero.
+The integral and its first derivative converge by the bounds in (BE14).
+Merely imposing a zero endpoint value would not eliminate the theta^(1/3)
+homogeneous branch: both unperturbed solutions vanish at zero.
+
+The classical endpoint Jacobi bound gives |P_n(y)|<=b_n. Therefore
+
+  |U(s)| <= b_n (s/2)^(2/3)=C_n s^(2/3).
+
+No Gronwall exponential or spectral bound is needed. Equations (BE12)--(BE15)
+now yield, for the complete difference and its derivative,
+
+  |D_n(theta)|<=(C_n/2)theta^(8/3),
+  |D_n'(theta)|<=(C_n/3)theta^(5/3)(1+nu_n^2 theta^2).     (BE16)
+
+For example the first follows from 6*(1/6)*int_0^theta s ds=theta^2/2;
+the second follows from 4*(1/6)*int_0^theta s ds=theta^2/3.
+
+On 0<y<=1/2, use
+
+  theta<=3sqrt(y), dtheta/dy<=2y^-1/2,
+  1/w<=2y^-1/3, |(d/dy)log w|<=1/y, C_n<=b_n.
+
+The first bound follows from arcsin(u)<=sqrt(2)u for u<=1/sqrt(2).
+Since P_n-B_n=(-1)^n D_n/w, the value error is at most
+3^(8/3)b_n y<19b_n y. Its y-derivative is bounded by
+
+  b_n[(4/3)3^(5/3)(1+9nu_n^2 y)+3^(8/3)]
+  <=b_n[85/3+84nu_n^2 y] <=100b_n(1+nu_n^2 y).
+
+Here 3^5<7^3 and 3^8<19^3 certify the root comparisons. This proves (BE4)
+for all n>=2; there is no asymptotic onset hidden in the constants.
+
+The reference is not identical to the polynomial. Its exact derivative at
+zero satisfies
+
+  B_n'(0)-P_n'(0)=(-1)^n b_n *5/72.                     (BE17)
+
+To verify this, the geometric prefactor divided by (-1)^n b_n has expansion
+1+(13/36)y+O(y^2), and F_(1/6)(nu theta)=1-(6/7)nu^2 y+O(y^2).
+Use nu^2=lambda+49/144 and P_n'(0)/((-1)^n b_n)=-6lambda/7.
+Omitting the shift in nu changes this difference to n+13/36 in modulus,
+so even the derivative allowance at zero fails for that wrong reference
+when n>100. This is a finite exact control, not a numerical asymptotic claim.
+
+## 5. Coefficient error: an all-degree summable estimate
+
+Subtract the two endpoint integrals before estimating. By (BE4) and |g'|,
+
+  |epsilon_n|
+  <= (200 b_n/(3lambda_n))
+               [2n^-1/2+(2/3)nu_n^2 n^-3/2].           (BE18)
+
+For n>=2, b_n<=(6/5)n^(1/6), lambda_n>=n^2, and nu_n^2<=2n^2.
+Consequently the right side is at most
+
+  160 n^-7/3+(320/3)n^-4/3
+  <=(560/3)n^-4/3 <200 n^-4/3.
+
+The normalization bound b_n<=(6/5)n^(1/6) follows from
+log b_n<=H_n/6<=(1+log n)/6 and exp(1/6)<6/5. The latter follows by
+comparing the exponential series with the geometric series.
+Since 4n+7/3<=7n and sum_(n>=2)n^-5/3<=int_1^infinity u^-5/3du=3/2,
+the total squared comparison cost is at most 7*200^2*(3/2)=420000.
+This proves (BE5), independent of MertensLogSquareBound.
+
+For (BE2), the prior interior derivative bound gives, from y=1/n to
+1-n^-2, a contribution at most 14n^-7/6. The endpoint derivative estimate
+on the last interval contributes less than n^-7/6. Thus |r_n|<=15n^-7/6
+and 7*15^2*int_1^infinity u^-4/3du=4725 pays its squared sum. The source
+terms are unchanged from (BE1). No target energy premise is used.
+
+## 6. The far physical tail also has an explicit summable cost
+
+For any real X>=sqrt(n), (BE4) and the endpoint derivative bound give
+
+  |B_n'(y)|<=b_n[(6/7)lambda_n+100+100nu_n^2 y],
+                                   0<y<=X^-2<=1/n.
+
+Hence the part of beta_n arising from physical x>X has modulus at most
+
+  T_n(X)=(4b_n/(3lambda_n))
+       [((6/7)lambda_n+100)/X+100nu_n^2/(3X^3)].          (BE19)
+
+This is a scalar coefficient-tail allowance, not the target half-line
+energy tail. It bounds the original future source by its elementary
+amplitude; it does not set future coefficients to zero.
+
+Take X=n^2. With nu_n^2/lambda_n<2 and n>=2,
+
+  T_n(n^2) <= b_n n^-2 [8/7+100/3+50/9]
+           <= (5044/105)n^-11/6 <50n^-11/6.
+
+Squaring with weight <=7n gives 7*50^2*int_1^infinity u^-8/3du=10500.
+This proves (BE7). The same integral comparisons from N rather than one
+prove the three terms of (BE9).
+
+## 7. Exact remaining arithmetic obligation
+
+For integer N>=1 let Bcal_N=sum_(n=2..N)(4n+7/3)t_n^2, an empty sum for
+N=1. Let Q_N be the exact full Jacobi partial energy and Q_1 its first two
+terms. Finite weighted triangle inequalities give
+
+  |sqrt(Q_N-Q_1)-sqrt(Bcal_N)|<=D<821.                   (BE20)
+
+Thus the original all-degree bound, and hence the original one-third
+finite-window energy bound, is equivalent to
+
+  exists B>=0 forall N>=1: Bcal_N<=B.                    (BE21)
+
+No witness for (BE21) is obtained. If it were supplied, the earlier exact
+moment norm identity would give
+
+  H_(1/3)(T)<=Q_1+(sqrt(B)+D)^2
+             <1+(sqrt(B)+821)^2, for all real T>=0.      (BE22)
+
+Indeed pi>3, d_0=2/pi^2 and
+ d_1=-7/(3pi^2)+195/(14pi^4)
+show Q_1<28/243+(19/3)(7/27)^2=1183/2187<1.
+Conversely H_(1/3)<=B gives Bcal_N<=(sqrt(B)+D)^2.
+The previously retained core comparison then gives
+ Z(R)<=8[Q_1+(sqrt(B)+D)^2]+69c.
+These are conditional returns only. No new zero-free region is inferred
+without the missing arithmetic witness.
+
+For a genuinely weaker sufficient route than a coefficientwise envelope,
+one may bound dyadic blocks of Bcal. For example a proved statement
+
+  exists C>=0,epsilon>0 forall k>=1:
+    sum_(2^k<=n<2^(k+1))(4n+7/3)t_n^2<=C/(k+1)^(1+epsilon)
+
+would supply a finite B after accounting for the finite initial block.
+Neither this nor a pointwise subcritical power bound is proved. All signs
+remain inside t_n before its square. Bessel names, oscillation, and the
+summable comparison error do not supply that cancellation.
+
+## 8. Why generic Bessel bounds do not complete the argument
+
+The counterexample W_*(t)=exp(t/3)-1, which is not the Mobius source,
+corresponds to V_*(x)=x^(1/3)-1 and M_*(x)=x^(5/6)/3. It satisfies the
+same elementary amplitude and derivative assumptions used in this transfer.
+The previous exact coefficients obey
+
+ d_n^*=(-1)^n/2 [1/(n+7/12)-(5/12)_n/(3/4)_(n+1)],
+ H_N^*-6<=Q_N^*<=H_N^*+45/2,
+ H_N^*=sum_(n=0..N)1/(n+7/12).
+
+Thus Q_N^* diverges. By (BE20), its corresponding finite-source Bessel energy
+also diverges. Neither oscillation of the reference kernel nor the presence
+of finitely many source values at each n proves (BE21). This refutes a
+source-independent inference, not the actual arithmetic target. In
+particular, Bessel's inequality in an unrelated Hilbert space cannot be
+applied to an input whose required norm has not been established, or to a
+family made orthogonal only by changing the source or normalization.
+
+The proved progress is a source-exact passage to an explicit Bessel kernel,
+with a summable perturbation and a summable finite-source truncation. The
+arithmetic obstruction is not claimed eliminated; it is confined to (BE21).
+
+## 9. Research references and verification limits
+
+Primary references inspected:
+* NIST DLMF 18.15.5--18.15.7, Jacobi--Bessel asymptotic references and domains:
+  https://dlmf.nist.gov/18.15 . Those O-constants are NOT used as numerical
+  constants here; (BE11)--(BE18) prove explicit allowances instead.
+* NIST DLMF 10.9.4, Poisson's integral, Re(gamma)>-1/2:
+  https://dlmf.nist.gov/10.9.E4 . The normalized function is a positive
+  cosine average, yielding (BE13) on the real axis.
+* NIST DLMF 10.6 and 18.14, Bessel derivative and Jacobi endpoint identities:
+  https://dlmf.nist.gov/10.6 and https://dlmf.nist.gov/18.14 . The exact
+  normalization and derivative signs are stated above.
+
+The executable uses exact Fraction arithmetic, explicitly bracketed positive
+roots, sine/cosine power series and normalized Bessel series with geometric
+remainder bounds. Finite kernel records use theta rational in (0,3/2] and
+require certification that sin(theta/2)^2<=1/n; the analytic theorem has the
+larger full endpoint domain theta<=pi/2. Finite tests cover normalized
+Jacobi differential equations, Bessel coefficient identities and Wronskians,
+nonzero comparison errors, exact constants and a critical-rate divergence
+control. They do NOT prove the continuum estimates or evaluate the Mobius
+source integrals t_n. A kernel sample is not an arithmetic energy sample.
+
+Lean/Lake are not present; direct Git access failed DNS. This is a source-
+bound partial workspace, not a full checkout. No pinned Lean replay,
+owned-declaration audit, full-repository layout check, or documentation
+admission was run. No existing source, canonical guide, inventory, compiler
+pin, workflow, permission or historical receipt is changed. The new evidence
+text is a versioned research record, not a freshly admitted library theorem.
