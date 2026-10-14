@@ -55,6 +55,8 @@ This rule applies to all existing and incoming code and all workers.
 
 ## Mathematical documentation
 
+- Generate one navigation-only `docs/mathematics/<Subject>/index.md` per source or documented area. It links to mathematical object guides and reports defined inventory counts; it carries no theorem status, source binding or proof claim. Preserve strict source/evidence bindings on the object articles.
+- Keep the main area directory, area indexes and `docs/reference/library-summary.json` synchronized with `python3 -B scripts/check_documentation.py --render`. Counts distinguish modules, guides, object groups, intake records and selected catalog families; they never imply theorem totals or mathematical acceptance.
 - Place canonical pages at `docs/mathematics/<Subject>/<Object>/<page>.md`, following actual source subjects. Split mixed dossiers by mathematical object; use explicit cross-subject links.
 - Lead with exact statements and hypotheses. Preserve proof explanations, counterexamples, conditional premises, source citations, individual credit and verification limits. No campaign, conversation, grant, branch or continuation chronology may organize mathematical paths or navigation.
 - Keep tutorials, how-to, explanations and source/verification reference separate. Retain raw historical evidence outside canonical reader navigation; never rewrite a historical receipt into current acceptance.

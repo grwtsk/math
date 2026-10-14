@@ -4,7 +4,9 @@
     "mathematical subject/object page with exact source",
     "complete split including historical section",
     "valid cross-subject reference",
-    "historical status retained"
+    "historical status retained",
+    "generated area indexes with exact inventory counts",
+    "source-only area with explicit zero documentation coverage"
   ],
   "reject": [
     "missing section",
@@ -17,6 +19,15 @@
     "historical receipt promoted",
     "stale index",
     "unregistered page",
-    "python optimized mode bypass"
+    "python optimized mode bypass",
+    "missing or extra area index",
+    "stale or inflated inventory counts",
+    "wrong-area or omitted article link",
+    "navigation carrying proof status or source binding",
+    "legacy section reassigned to navigation",
+    "source inventory changed during rendering or checking",
+    "concurrent generated-output edit during projection computation",
+    "unchanged projection hiding a concurrent edit",
+    "unregistered existing area output overwritten"
   ]
 }
