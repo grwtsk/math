@@ -30,7 +30,7 @@
   "sources": [
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": "e3b1dfcb676522e935c51be5e0294f29ca037d65",
+      "git_blob": "db50cb7562e77810befd65e502c8fc17a832cbf1",
       "imports": [
         "GRWTSK.Algebra.BigOperators.OrderedSquare",
         "GRWTSK.Algebra.BigOperators.QuadraticCounterexample",
@@ -525,7 +525,7 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "3e8fe36000518fe166af8ef419854593f4887060a0fe2b314424b2c4323b7d4e"
       },
-      "working_tree_state": "tracked-modified"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -13044,7 +13044,7 @@
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "018ae312da4efb150d6302796eda8ebe413d8fb9",
       "imports": [
         "GRWTSK.Analysis.Integration.ExponentialVolterraL2",
         "Lean"
@@ -13073,7 +13073,7 @@
         "lean": "not-run-for-current-source-and-local-import-closure",
         "source_sha256": "83168a5c6f10946e5c2dac506f35931c18a0118d763cddbff0aaa22ac668fece"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -13346,7 +13346,7 @@
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "3bed63cbe7ad79e78a67c82c257b5428a2e02b9d",
       "imports": [
         "Mathlib.Analysis.SpecialFunctions.ExpDeriv",
         "Mathlib.MeasureTheory.Integral.IntervalIntegral.AbsolutelyContinuousFun",
@@ -13407,7 +13407,7 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "963957d15eab9c20a0194656e8b0fcbee721bebabb9fedd8eef55968b54d12b0"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -30796,7 +30796,7 @@
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "4c6c404a530517fb3c5172a72789f9de1b8ad838",
       "imports": [
         "GRWTSK.NumberTheory.Moebius.LogarithmicMertensBoundary",
         "Lean"
@@ -30829,7 +30829,7 @@
         "lean": "not-run-for-current-source-and-local-import-closure",
         "source_sha256": "7a6b1822d9eb12c4a82e9cc60786fc77f053487020ee397f74c1b45d7b6389eb"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -34953,7 +34953,7 @@
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": null,
+      "git_blob": "5cf91262ed912e477f2d6b19c94b9791402e801d",
       "imports": [
         "GRWTSK.Analysis.Integration.ExponentialVolterraL2",
         "GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks",
@@ -35098,7 +35098,7 @@
         "lean": "not-covered-by-retained-replay",
         "source_sha256": "fb511a6a916ba559cf01d9e09d70d33dcf5de4d2f60e5bf921e60c0e1f94ca16"
       },
-      "working_tree_state": "untracked"
+      "working_tree_state": "tracked-clean"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
