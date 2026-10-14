@@ -10,24 +10,39 @@ two guarantees separate:
 
 Neither guarantee establishes the other. Exact restoration does not prove a
 theorem, and successful Lean elaboration does not reconstruct every repository
-artifact. The cumulative conformance profiles are therefore all **not
-established** for this snapshot.
+artifact. All four cumulative conformance profiles remain **not established**
+for the snapshot described here.
 
 ## Snapshot and policy identities
 
-The reconciled checkout is local `main`. The tracked Lean inventory was
-committed at `9367026ca66eb720af9cc76a25a0ac19aba46a7b`; three later commits,
-through `ddc6c1f58c3f7a6635922584d2ff6f5a6f8028d8`, added a source-bound finite
-Vaughan Type-II computation, documentation and evidence but no Lean source.
-Commit `a13f942bbecf1a47ba2c289a6aee579998b9463f` then added two library modules
-and two positive checks. This is newer than the instruction's inspected commit
+The source inventory, full library replay and current conformance observation
+are anchored at local `main` commit
+`854e04dc182c36b00479b642e6301f47acc81e5f`. That commit descends through:
+
+- `80a2a617dc458cb5f320dbbb423022116b1b8343`, the normal merge of local work
+  with upstream `37d612b93d0680bebf3d3513e32a7352cbdcc056`;
+- `20c9033283edf5b9f6824396b47e468a5ae1d311`, which bound the reconciled
+  source inventory and Finite Euler checks; and
+- `854e04dc182c36b00479b642e6301f47acc81e5f`, which closed candidate-source
+  omissions in hostile replay fixtures without admitting those candidates.
+
+This lineage is newer than the instruction's inspected commit
 `0029a80f5a86418cb62c658f3bbdaa3aad6c6285` and was not reset. Concurrent work
-was preserved in place on `main`; no branch or worktree was created for this
-migration, and no reset, destructive cleanup or force operation was used. The
-exact remote identity and final publication commit are reported only after the
-mandatory final fetch and normal push. This report binds exact files where
-evidence is available; a later byte change requires a new observation rather
-than reinterpretation of this report.
+was preserved on `main`; no migration branch or worktree, destructive cleanup,
+reset or force operation was used. The inventories name `854e04d` because they
+were generated before this report update and before any later publication
+commit. They do not claim to hash a future commit containing themselves.
+
+The upstream merge has no unresolved conflict. The selective
+`evidence/source-manifest.json` retained the exact local-parent bytes from
+`88e95e6` (SHA-256
+`2c6ab93c6075b54422945d34d695d9f9044b90c6700f9dacd1ace40cfa186250`).
+The competing upstream parent bytes were not silently discarded: Git blob
+`f4fd5eefa69d38abda52116b32582d453b190061`, SHA-256
+`b4cb81f456040cbe89db53572ae7d712e71cfa4b0df1ad253bbf42b0529d35e1`,
+are recorded as historical, non-current evidence in the merge-reconciliation
+record. The v3 mathematical layout and merged documentation remain the current
+authorities.
 
 The governing policy version is `rigor-and-reconstruction-addendum-1.0.0`.
 Its retained instruction inputs are:
@@ -37,200 +52,210 @@ Its retained instruction inputs are:
 | `evidence/policy-inputs/GRWTSK_Lean_Migration_With_Rigor_Addendum.md` | `783251016b84155f64ed8dc0c0a17efad8c27cfd8566591348144293b47071a0` |
 | `evidence/policy-inputs/GRWTSK_Rigor_and_Reconstruction_Addendum.md` | `866e5a1c8e97cade8647a4147ff885d47c0ccc55328f2ac68cc0a73ff46367a4` |
 
-The [rule registry](rules/registry.json) treats these documents as policy
-inputs, not as evidence that their requested implementation or any external
-formalization has been verified locally.
+The [rule registry](rules/registry.json) treats those documents as policy
+inputs, not as evidence that their requested implementation, the cited BB5
+development or any mathematical conclusion has been verified locally.
 
-Current source and checker bindings relevant to this report are:
+Current source, policy and evidence bindings relevant to this report are:
 
 | Artifact | SHA-256 |
 |---|---|
-| `docs/math-layout.json` | `998bf4c11f67f7373152a68f17bc500c6a089b2144a2c4d0bd5be78fcf38651a` |
-| `docs/reference/math-source-catalog.json` | `d5939a9451e70bb11dbee8680be2a395d45dec641a5e0b67e7dbddd49a3ee5f1` |
-| `docs/reference/reconstruction-recipes.json` | `59368da1de06eb6314a23d64f6635b83fc0f9d5382b39d365082e08ea892f627` |
-| `GRWTSK.lean` | `3e8fe36000518fe166af8ef419854593f4887060a0fe2b314424b2c4323b7d4e` |
-| `scripts/check_math_layout.py` | `c47ba4e547ea032236d1fc195418ed856970d6bd8458fe4fe5be203240c9a432` |
-| `scripts/check_math_trust.py` | `042839d31b7eb0c5bd1b5b316596ecd4012f8a0005cca956eb8946672eedf008` |
-| `scripts/check_ordered_product_gauge.py` | `f1351cdd9a617ce835c119437fff1218b1834ca2fd8fea1fc7339d06e1b21979` |
-| `scripts/update_math_source_inventory.py` | `d16b51ebae1c78ae93585be64aaca99c2ffdef2bcb49df9c0801d098c2df47ab` |
-| `scripts/check_density_arithmetic.py` | `588292f1c78594bf9bd74d5578340d16b75a1ac244c4dce1c197fdb9ffcf4552` |
-| `scripts/check_inputs.py` | `cdecff5bc14d784177ac05a544005d90c4936ffd7266e9325349f460d57f0a48` |
+| `docs/math-layout.json` | `c54843d92414c327db98c7baad0d0161065a9bfb710cbebc36127968592a1c8a` |
+| `docs/reference/math-source-catalog.json` | `b647c7f27b7453736ad0c6edf675f73ac8306e0abeb6b1756588a93d8d65cc11` |
+| `docs/reference/reconstruction-recipes.json` | `ef51184d4e7da906dc4cd2ccdb33460652ad5a952f161edabe561829e3be7740` |
+| `docs/reference/rules/registry.json` | `1980ac3b76ba8088a04647fb4bfaf0a102611eee9c4a1542d36af36a3b841295` |
+| `docs/reference/rules/registry-schema.json` | `8f5db8490fde780c2621e75a7320df0ee1a786b2a9447f2ead83e105db8ff314` |
+| `GRWTSK.lean` | `68e16b00f3026df81c5ee4d7ee9cce256db09082ff0e9913f3f7342078e0dde8` |
+| `scripts/check_math_layout.py` | `c85828291fb711063f4de33af982c395c69bd10ff50a001bee4bfbde04d500fb` |
+| `scripts/check_math_trust.py` | `069ca265038960243890b1c4e028637723ddc440854864a61648eb2b2fd99c9d` |
+| `scripts/update_math_source_inventory.py` | `4c6ec80128c8991a95f4afa85a400aebebcda4673eaa13aeb64f81436c41c419` |
+| `scripts/check_repository_conformance.py` | `c875e06f49b55c073436038ef74181ac72d1726c7570eb37bea64a76928ed923` |
+| `scripts/check_inputs.py` | `2615c8e3dd5da97e2d3aa5958ad0db1afff29ea6953990a0e732fb0ad397ac26` |
 | `GRWTSK/Logic/ProofChecking/Checks/OwnedDeclarationAudit.lean` | `2ef82eba00df6982ba9f693896d77eff68d9cf39e9def13a29cc9c2eb4e26c74` |
-| `evidence/lean-consolidation-rigor-2026-10-14.json` | `96a91a248f47b762fab5dae84f8741e3cda8b455538b224f6cc2238f453d90cc` |
-| `evidence/lean-consolidation-rigor-pre-volterra-2026-10-14.json` | `6124e721f7377e4b9aeaf24939b88fb73768957bcb9351259807c763ced5b340` |
-| `evidence/lean-consolidation-rigor-pre-intake-2026-10-14.json` | `5b0437dbcceca9d69474003098fc230dfb96490506a4a0173bf06467d138b964` |
+| `evidence/source-intake.json` | `975160460f769a46027efb78359df82b1f366e12b4c2346f070abfce8a667755` |
+| `evidence/source-manifest.json` | `2c6ab93c6075b54422945d34d695d9f9044b90c6700f9dacd1ace40cfa186250` |
+| `evidence/source-manifest-merge-reconciliation-2026-10-14.json` | `faebce690e9b5afe638eef1f10e5b745c17cae2c6bbe2fea855f28fedc633688` |
+| `evidence/lean-consolidation-rigor-post-merge-2026-10-14.json` | `29d9f8fef273f7956d304b0442df75a1369909646bff781666478c4f3db2d549` |
+| `evidence/repository-conformance-20261014T053244Z-60d5be5d21cc.json` | `8684f4f35f509061021a9499c8249ce7b1ee4721ba1b9cd3857235f71b9b5aa7` |
+| `evidence/NumberTheory/Moebius/finite-euler-product-checks-current-2026-10-14.json` | `0c6067fd56aa7b23a0b5fa789bbc1a45f3575426b8596d14e40aa6e6d90f03ce` |
 
-The current layout and source catalog contain a per-source SHA-256 for every
-one of the 538 active Lean sources. The current bounded replay record identified
-below freezes the 333-source public library replay set plus its configuration
-and checker inputs. `evidence/source-manifest.json` remains a
-selective older family manifest; its current SHA-256 is
-`2c6ab93c6075b54422945d34d695d9f9044b90c6700f9dacd1ace40cfa186250`,
-but it is not the current all-source authority.
-
-The retained
-[`lean-consolidation-rigor-2026-10-14.json`](../../evidence/lean-consolidation-rigor-2026-10-14.json)
-record is explicitly historical and pre-merge: it binds 475 active sources and
-292 library sources and must not be read as current. The pre-Volterra record
-binds the later 534/331 snapshot and is also historical. The pre-intake record
-below was created only after a fresh run proved all 333 source results before
-the owned-declaration audit failed for its recorded reason. Raw `.local` receipts
-remain ignored execution evidence; a durable record copies only their bounded
-outcome and never converts a failed audit into acceptance.
+These hashes bind the stated observations. A later byte change requires a new
+observation; updating a path or digest cannot turn an old run into a current
+proof.
 
 ## Mathematical organization and source roles
 
-The current authoritative Lean inventory contains 538 active sources:
+Git-visible discovery found **605 present Lean files**. The
+authoritative classification separates them as follows:
 
-| Source role | Count |
+| Population / source role | Count |
 |---|---:|
-| Library, including the root entry point | 333 |
-| Positive check | 77 |
-| Negative control | 93 |
-| Audit driver | 35 |
+| Active library, including root `GRWTSK.lean` | 334 |
+| Active positive check | 78 |
+| Active negative control | 95 |
+| Active audit driver | 35 |
+| **All active sources** | **542** |
+| Retained `CANDIDATE_SOURCE_ONLY` evidence | 63 |
+| **All present Lean files** | **605** |
 
-The subject counts are Algebra 11, Analysis 195, Combinatorics 8, Data 1,
-DynamicalSystems 16, GroupTheory 4, Library 1, LinearAlgebra 49, Logic 42,
-MeasureTheory 5, NumberTheory 178, Order 3 and Spectral 25. The canonical
-active-source digest is
-`ab6d86d2559c16d1de8e875ffc8d0c7960bf7e862bd0f336bada1782eecb6ea8`;
-the 333-source library digest is
-`bea715342bcbf5860000d55f912efc6dd922a48c446eae24849cb7bc7f07263a`.
+The 542 active-source subject totals are Algebra 11, Analysis 195,
+Combinatorics 8, Data 1, DynamicalSystems 16, GroupTheory 4, Library 1,
+LinearAlgebra 49, Logic 42, MeasureTheory 5, NumberTheory 182, Order 3 and
+Spectral 25. The 63 candidates are separately classified as Algebra 1,
+Analysis 39, LinearAlgebra 3, MeasureTheory 1 and NumberTheory 19.
 
-Of the current active sources, 335 have operation `keep` and 203 have operation
-`move`. Separately, the append-only historical migration ledger records 333
-moves, two declaration-boundary splits, four declaration-free umbrella
-retirements and no merges. These ledgers cover different populations and must
-not be added together. `keep` is a path relationship, not a claim that every
-such source existed at the inspected historical commit.
+The current byte-map digests are:
 
-No destination, case-folding or Unicode-normalization collision is recorded.
-The current inventories report no tracked deletion, conflict, unsafe entry or
-submodule. The only active Lean source outside `GRWTSK/` is the conventional
-root entry point `GRWTSK.lean`.
+| Source set | Count | Canonical SHA-256 |
+|---|---:|---|
+| Active sources | 542 | `b9be2fd7841e0b949fbf68115b0ef345bdda1df7174f3fbc51bacf0fbf4d0ab6` |
+| Active library replay set | 334 | `51b36f8a821a4d2d5807b4db75daff6855dc3938acb7ed22fc0263398dcd87b0` |
+| `CANDIDATE_SOURCE_ONLY` evidence | 63 | `bbd63c68bfab5d1e9362bf19ee3b4bc5ddac4a533236ed2764e6072e6379ad59` |
 
-Historical evidence is not active library source. In particular, the retained
-`evidence/Analysis/InnerProductSpace/CausalRealization/2026-10-11/` archive has
-an exact data-restoration contract but no new Lean acceptance, while ignored
-`.local/` receipts and migration archives remain local evidence unless their
-bytes and identities are explicitly retained by a public record. Dependency
-sources, `.lake/`, `.olean` and other generated build products are not promoted
-into the mathematical library.
+Candidate files have exact intake paths, byte hashes and subject projections,
+but they are not assigned an active source role. They are excluded from
+`GRWTSK.lean`, the public-library closure and the trust replay. No candidate
+was Lean-verified, mathematically admitted or made release-eligible by this
+migration. Candidate byte accountability therefore must not be reported as
+formal correctness.
+
+For the 542 active entries, the current per-source operation view records 336
+`keep` and 206 `move` operations. The exact role/operation matrix is 334
+library keeps, two positive-check keeps, 76 positive-check moves, 95
+negative-control moves and 35 audit-driver moves. Separately, the append-only
+historical migration ledger contains 342 relationships: 336 moves, two
+declaration-boundary splits, four declaration-free umbrella retirements and
+zero merges. The current and historical ledgers cover different relations and
+must not be added together.
+
+No destination, module-identity, case-folding or Unicode-normalization
+collision is recorded. At inventory time there was no tracked deletion,
+conflict, unsafe filesystem entry or submodule. The only active Lean file
+outside `GRWTSK/` is the conventional public entry point `GRWTSK.lean`.
+Historical evidence, dependency sources, `.lake/`, `.olean` files and ignored
+execution products are not promoted into the active mathematical source set.
 
 ## Proof and API change statement
 
-The 203 current organizational moves are validation-source relocations that
-preserve fixture content, source roles and intended outcomes; all 333 current
-library entries have operation `keep`. The historical migration ledger records
-the library relocations for which statements, hypotheses, proof bodies, public
-names, notation, attributes and instances were preserved. The earlier
-consolidation also records import-syntax repairs in 19 validation sources;
-those sources do not define public library declarations. Two
-FinitePhraseProcess validation probes were later rebound to the current
-declaration names without changing any library declaration or proof. The
-historical ledger separately records two declaration-boundary splits and four
-declaration-free umbrella retirements, and records no merge.
+The 206 active moves are role-preserving validation-source relocations; all
+334 active library sources have operation `keep`. Their relocation records do
+not authorize theorem changes. The historical ledger preserves declaration
+correspondence for the earlier library moves and splits and records no merge.
 
-Relative to the retained 472-source/289-library migration snapshot, the current
-public source set adds three generic Logic modules:
+Relative to the retained 289-library historical migration snapshot, admitted
+library growth was explicit rather than mislabeled as relocation: three
+general Logic modules were added; a later integration added 39 library modules;
+commit `a13f942bbecf1a47ba2c289a6aee579998b9463f` added
+`ExponentialVolterraL2` and conditional `LogarithmicMertensBoundary`; and the
+upstream lineage ending at `37d612b` added
+`GRWTSK.NumberTheory.Moebius.FiniteEulerProduct`. Those additions account for
+the present 334-module library set.
 
-- `GRWTSK.Logic.Inference.RuleSoundness`
-- `GRWTSK.Logic.Certificates.ArtifactDerivation`
-- `GRWTSK.Logic.ProofChecking.RepositoryConformance`
+The Finite Euler module has four public theorems and six complete owned
+declarations. Its source, positive check and two negative controls are bound by
+the durable selected receipt above. The receipt records trust-zero,
+fatal-warning replay of the library source and positive check, and rejection of
+`MissingDebt` and `OpenCutoff` for their intended statement defects. A later
+current-HEAD local observation at `854e04d` reproduced those two positive and
+two intended-negative outcomes. This selected-family evidence is not a full
+repository audit, dependency-source rebuild or independent human proof review.
 
-The subsequent merge adds 39 more library modules: one FinitePhraseProcess
-module, 19 ArithmeticFunctions modules, two LSeries modules and 17 Möbius
-modules. It also adds 20 validation sources, comprising 18 positive checks and
-two audit drivers. These additions introduce public formal interfaces and
-theorems; they are not described as byte-preserving relocations. Commit
-`a13f942bbecf1a47ba2c289a6aee579998b9463f` additionally introduces
-`GRWTSK.Analysis.Integration.ExponentialVolterraL2` (four source declarations)
-and `GRWTSK.NumberTheory.Moebius.LogarithmicMertensBoundary` (twenty source
-declarations), together with two positive checks. Their selected replay
-receipts have SHA-256 values
-`7aff421a2b2ec4e8cb26546a020995db0178180be69682346321ba8bce880257`
-and `0e7a2b6ef68e954e37b4605ae0656f778668e4ec6dacea637412c771af72bf7c`.
-The Mertens development remains conditional on its stated pointwise damped-source
-envelope, real- and natural-cutoff power bounds and `MertensLogSquareBound`; it
-does not establish an unconditional boundary theorem or the Riemann hypothesis.
-`PrimeShellEnergyGrowth.lean` changed only by removal of trailing whitespace.
-The maintained headings in
-`FiniteRuleSystems.lean` and `FiniteRuleExamples.lean` were changed from
-campaign language to mathematical-object language without changing their
-declarations. No claim of complete API equivalence is made because an
-independent elaborated trusted-statement comparison has not yet been run.
+The 63 candidates add no admitted API. They contain explicit conditional and
+open mathematical interfaces; their intake status does not discharge those
+premises. In particular, neither the candidates, the conditional Mertens work,
+nor the Finite Euler result establishes the Riemann hypothesis or another
+unstated unconditional conclusion.
+
+No independent elaborated trusted-statement comparison has been run. The
+migration therefore does not claim a complete API-equivalence proof beyond the
+source/declaration correspondence, fresh elaborations and scoped checks that
+are actually recorded.
 
 ## Reconstruction evidence and gaps
 
-The current repository has a Git-visible artifact catalog, reconstruction
-recipes, a versioned rule registry and a content-addressed byte basis. The
-[reconstruction reference](reconstruction.md) describes exact in-place byte
-comparison and the separate historical CausalRealization restorer. These are
-substantive reconstruction components, not mathematical proof evidence.
-The inventory refresher now excludes all three registered generated views from
-its consumer corpus, removing the previously documented layout/catalog input
-cycle. Recipe validation pins the reviewed generator/command associations and
-the 2,770-member historical archive-object closure; generated-view `ACCEPT`
-still means in-process byte freshness, not traced execution of those commands.
-The reconstruction registry now also discloses every writable Vaughan Type-II
-CLI added concurrently. Its top-level reports are rerun observations rather
-than tracked generated views: timings, absolute command paths and ambient PATH
-probes make the wrapper report host-sensitive even though the normal and
-optimized numeric payloads are byte-comparable. The registry accurately records
-that those CLIs currently accept caller-selected output paths and that complete
-runtime reads are not execution-traced.
+The repository now has a Git-visible artifact catalog, reconstruction recipes,
+a versioned rule registry, a content-addressed byte basis and exact source
+intake records. These are reconstruction components, not proof evidence.
+The recipes bind the 2,770-object historical archive closure and disclose the
+Vaughan Type-II tools whose fresh destinations remain caller-selectable. Their
+runtime and subprocess read sets are not fully traced, so those registrations
+do not establish repository-wide deterministic regeneration.
 
-Repository-wide **Reconstructible** status remains false because all of the
-following are still open:
+The current conformance receipt records a completed observation at `854e04d`
+over **4,212 artifacts excluding the catalog itself**. Its SHA-256 is
+`8684f4f35f509061021a9499c8249ce7b1ee4721ba1b9cd3857235f71b9b5aa7`.
+At that observation, all three declared generated views matched their expected
+bytes:
+
+- `docs/reference/math-source-catalog.json` —
+  `b647c7f27b7453736ad0c6edf675f73ac8306e0abeb6b1756588a93d8d65cc11`;
+- `docs/reference/repository-artifact-catalog.json` —
+  `969876a82effde31f6167c1207319dccf17d213102ea9626822aec33ee141537`;
+- `docs/reference/results.md` —
+  `25496ebc439c86245fcfbe8043da175781c70c5b096bbaa088103e4af1df498e`.
+
+Each `ACCEPT` is limited to in-process byte freshness. It does not establish
+that a declared command ran under an independently enforced environment,
+sandbox and complete read set. The receipt was written only after closing its
+observation, so it intentionally does not inventory or hash its own bytes; this
+report edit is later still. The catalog is therefore a bounded observation,
+not a self-authenticating post-commit reconstruction certificate.
+
+Subsequent non-receipted final captures, after integrating that receipt and
+this report, expanded and refreshed the catalog beyond the receipt's 4,212-path
+scope as the new receipt, report and content-addressed basis objects entered
+discovery. No receipt-of-receipt was created; the committed catalog remains an
+explicit pre-commit observation rather than a claim to describe its own commit.
+
+The input-control run produced a 698-file fixture from 542 active sources, 63
+candidate sources and the reconciled retained-manifest inputs after
+deduplication. Receipt
+`.local/input-controls/20261014T051031Z-a8fde17667d0/receipt.json`, SHA-256
+`40ea097c4304865602147e05d5b73cc9bc1432aad12045feeb27ecbd52dc7658`,
+records all eight normal/optimized drift and symlink controls passing for their
+intended reason. Its fixture digest is
+`c19883b62a7b01a6eef410c9a39186e09eef05bfb6aa8bb5c577f0b8e8c4d0f1`.
+This tests source/environment rejection behavior; it does not reconstruct the
+whole repository.
+
+Repository-wide **Reconstructible** status remains false because:
 
 - the generator census and complete executed read-set census are incomplete;
-- both inventory scans currently share one implementation, so independent
-  discovery has not been established;
-- there is no complete fresh-destination restorer that materializes and checks
-  every cataloged path and mode;
-- candidate generators, checkers and builds have not been executed under a
-  repository-wide least-privilege sandbox contract;
+- the two inventory views still lack genuinely independent discovery;
+- there is no complete fresh-destination restorer for every cataloged path,
+  file mode and metadata requirement;
+- candidate generators, builds and checkers have not been exercised under a
+  repository-wide least-privilege sandbox contract; and
 - concrete filesystem, JSON, process and Python adapters are not proved to
   refine the generic Lean reconstruction model.
 
-The retained conformance receipt
-`evidence/repository-conformance-20261014T022832Z-d5418b43c675.json` covers
-3,971 artifacts, and
-`evidence/repository-conformance-20261014T025230Z-31c12537e8d6.json` covers
-3,980 artifacts. Both are pre-merge observations of
-`e4f1e4d63ea8532f1e0e58abc34fbbdc45a5a9b5` and are historical, not current.
-A pre-final observation at
-`ddc6c1f58c3f7a6635922584d2ff6f5a6f8028d8` discovered 4,095 artifacts
-excluding catalog self and correctly rejected the old catalog as stale. The
-final capture/render result and its pre-commit scope are recorded in the command
-table after execution. The schema embeds HEAD and volatile Git state, including
-the catalog's own tracked status, so no finite render/stage/commit sequence can
-make a committed catalog describe the commit that contains itself. That
-self-state limitation remains explicit rather than being mislabeled as a
-post-commit freshness guarantee.
+An immutable historical restore and a successful current regeneration remain
+distinct. Historical receipts and the retained CausalRealization archive keep
+their original source identities and outcomes; none is relabeled as a fresh
+observation.
 
 ## Formal correctness evidence and gaps
 
 The pinned foundation is Lean 4.33.0, compiler commit
 `d8b18978322de05a8f3dba51ef03cf5461676c17`, and Mathlib revision
 `db584cd6d46c92f209a44c0f1c829460d327499d`. Existing pinned dependency
-objects were reused and kernel checked. Mathlib and the other pinned
-dependencies were **not** rebuilt from source, and the replay does not prove
-that cached object bytes were produced from their pinned source trees.
+objects were reused and kernel checked. Dependency sources were **not** rebuilt,
+so this is not a full dependency-source reconstruction or proof that cached
+objects were produced from the pinned source trees.
 
-The current pre-intake full replay receipt is
-`.local/math-trust/20261014T043008Z-2adb9059a1/failure.json`, with SHA-256
-`0f81257e05881c6f4f22265406acdb234a9371cb311649cbe7edb2799498020c`.
-At an 8192 MiB Lean limit it records 334 commands: all 333 public library
-sources passed fresh trust-zero elaboration with fatal warnings, including
-`GRWTSK.lean` as the final library member, and the subsequent
-`AllProjectAudit` command failed. Thus the denominator is 332 subject modules
-plus the root entry point, not “333 plus the umbrella.” The audit log is
-`.local/math-trust/20261014T043008Z-2adb9059a1/AllProjectAudit.log`, SHA-256
-`c08ae268cf5b1483638c3cb3219981933f8b5131159c05acbc24375938dd5712`.
-It enumerated 8,972 owned declarations across 333 modules before rejecting
-these 18 compiler-generated declarations, each reported by Lean as partial
-rather than unsafe:
+The final full replay command was:
+
+```text
+python3 -B scripts/check_math_trust.py --memory-mib 8192
+```
+
+Its raw receipt is
+`.local/math-trust/20261014T051042Z-549da78cbe/failure.json`, SHA-256
+`369e82cf300826167c51bfa03def6f9596e2c87e83fb3e455e44fe07390c227a`.
+All **334** admitted library sources passed fresh `--trust=0` elaboration with
+fatal warnings. The subsequent owned-declaration audit enumerated **8,978**
+owned declarations, then failed on the following exact 18 compiler-generated
+declarations, each reported as partial rather than unsafe:
 
 - `GRWTSK.Algebra.orderedProduct._unsafe_rec`
 - `GRWTSK.Analysis.Waveform.workClock._unsafe_rec`
@@ -251,88 +276,72 @@ rather than unsafe:
 - `ASBNP04.mass._unsafe_rec`
 - `HSSCP04.SignedCharts.SignedBudgetDerivation.depth._unsafe_rec`
 
-Lean 4.33 deliberately emits such `_unsafe_rec` runtime helpers for computable
-recursive definitions. Isolated review found no supported suppression that
-preserves the exact public definitions, kernel values and executable behavior:
-making a definition noncomputable removes execution, while rewriting it through
-an explicit recursor changes its kernel definition and generated declaration
-family. The existing singleton runtime-helper exception does not match Lean
-4.33's `partial=true, unsafe=false` metadata; changing or extending that
-exception would alter the audit policy and would still leave the other 17
-failures. The audit policy was therefore not weakened, public definitions were
-not rewritten to satisfy the checker, and the failure is retained. The bounded
-durable record is
-[`lean-consolidation-rigor-pre-intake-2026-10-14.json`](../../evidence/lean-consolidation-rigor-pre-intake-2026-10-14.json);
-it binds the current 538/333 source digests, all raw
-source outcomes, receipt and log hashes and exact finding sequence. The current
-native self-test receipt is
-`.local/math-trust/20261014T042644Z-fdb9189086/receipt.json`, with SHA-256
-`d0c58dcf6ca1596ec043df0f98383ea5d121caf00a2cc2088040cf95cc3472ab`;
-its nine fixture commands passed, but that fixture result is not a project
-theorem verdict.
+The audit log is
+`.local/math-trust/20261014T051042Z-549da78cbe/AllProjectAudit.log`, SHA-256
+`9bba47b137964e5357d28344a003ba89a93e3a144b8dcfce380699af50d89206`.
+The durable bounded record is
+[`lean-consolidation-rigor-post-merge-2026-10-14.json`](../../evidence/lean-consolidation-rigor-post-merge-2026-10-14.json),
+SHA-256
+`29d9f8fef273f7956d304b0442df75a1369909646bff781666478c4f3db2d549`.
+It explicitly records source replay success followed by audit failure; it does
+not convert that sequence into overall acceptance.
 
-The exact default command `python3 -B scripts/check_math_trust.py` was not rerun
-to completion after the merge. Its retained pre-merge 4,096 MiB observation
-stopped after 175 successful source results when
-`GRWTSK.NumberTheory.Moebius.LogarithmicResponse` exited with Lean's
-`memory_exception` in the interpreter. The historical failure receipt is
-`.local/math-trust/20261014T022855Z-aa15101451/failure.json`, SHA-256
-`ee11469fb8d3dce60dc59598ba97f5f3a7bd59d33301ce1de775ca99ef589188`.
-This operational resource failure is neither a mathematical rejection nor a
-current completed replay and does not replace the completed 8,192 MiB result.
-An earlier attempted 8,192 MiB replay at this stage was also interrupted after
-36 source results when concurrent work changed `HEAD`; its failure receipt is
-`.local/math-trust/20261014T042653Z-98dee7ab64/failure.json`, SHA-256
-`3fe176c0fa18c4a37475f7a5502a8bf4ded20903bd555bcae1a3cab785d4cae1`.
-That operational drift detection is not an acceptance result.
+The audit policy was not weakened, the generated-runtime exception was not
+broadened, and public definitions were not rewritten to silence the findings.
+The latest native audit self-test separately passed nine fixture commands; its
+receipt is `.local/math-trust/20261014T053317Z-de7cb18dd4/receipt.json`,
+SHA-256
+`d8c6a72210b0aff80b4b017537094c5e4f903f8e2f33f98f25c1a3a5d196bad2`.
+That fixture result is not a project theorem verdict.
 
 Repository-wide **Formally checked** status remains false even apart from the
-18 audit failures. A complete semantic occurrence map is not available for
-resolved constants and binders, universes, implicit arguments, instance and
-coercion selection, notation and macro expansion, relevant options and
-generated origins. Trusted-statement comparison outside candidate influence is
-also unimplemented. The generic Lean rule and reconstruction theorems do not
-prove that the Python, JSON, filesystem or process adapters implement their
-formal interfaces.
+18 audit findings. The 63 candidates were not elaborated by the library replay.
+A complete semantic occurrence map is unavailable for resolved constants and
+binders, universes, implicit arguments, instance and coercion selection,
+notation and macro expansion, relevant options and generated origins. There is
+no independent trusted-statement comparator, and the generic Lean rule and
+reconstruction theorems do not prove the concrete Python, JSON, filesystem or
+process adapters sound.
+
+No external independent proof checker was run. No cold dependency-source
+reconstruction or independently repeated whole-repository reconstruction was
+performed. **Independently validated** status is therefore also false.
 
 ## Cumulative profile status
 
-| Profile | Current status | Exact remaining boundary |
-|---|---|---|
-| Organized | **False / not established** | The 538-source layout and current documentation checks pass, but `COVERAGE.001`, `DOCUMENTATION.001`, `LAYOUT.001` and `ROLE.001` do not yet have current independently admitted observations. |
-| Reconstructible | **False / not established** | Organized plus a complete generator/read-set census, genuinely independent discovery, a complete path/mode restorer and least-privilege sandbox evidence are missing. |
-| Formally checked | **False / not established** | Reconstructible plus the semantic occurrence map and independent trusted-statement comparison are missing, and the owned-declaration audit rejects 18 Lean-generated partial runtime helpers. |
-| Independently validated | **False / not established** | Formally checked plus an independent proof checker, independently repeated reconstruction and a cold pinned dependency-source reconstruction/rebuild have not been completed. |
+The current conformance receipt records these exact status boundaries:
 
-`UNKNOWN`, `NOT_RUN`, `BUSY`, `TIMEOUT`, `ERROR` and `INTERRUPTED` do not
-satisfy any mandatory acceptance gate.
+| Profile | Current status | Receipt-bound blockers |
+|---|---|---|
+| Organized | **False / not established** | No independently admitted observations for `COVERAGE.001`, `DOCUMENTATION.001`, `LAYOUT.001` or `ROLE.001`. |
+| Reconstructible | **False / not established** | Organized blockers; incomplete generation census; and `BYTES.001`, `FRESHNESS.001`, `GENERATION.001` and `ORIGIN.001` are not receipt-bound. |
+| Formally checked | **False / not established** | Reconstructible blockers; `BINDING.001`, `CONTRACT.001`, `CONTROL.001`, `DOCUMENTATION.001`, `GROUNDING.001`, `PROOF.001`, `RELEASE.001` and `RULE.001` are not receipt-bound; the owned-declaration audit also failed. |
+| Independently validated | **False / not established** | Formally checked blockers; `INDEPENDENCE.001` is not receipt-bound; no independent proof checker or repeated cold reconstruction exists. |
+
+The four structural checks can pass operationally while the registry still
+lacks independently admitted observations for its gates. That distinction is
+intentional. `UNKNOWN`, `NOT_RUN`, `BUSY`, `TIMEOUT`, `ERROR` and
+`INTERRUPTED` cannot satisfy a mandatory acceptance gate.
 
 ## Commands and outcomes
 
-The current command record is:
-
-| Command | Current result |
+| Command or suite | Current result |
 |---|---|
-| `python3 -B scripts/check_math_layout.py --self-test` | Passed the current structural hostile controls. |
-| `python3 -B scripts/check_math_layout.py` | Passed: 333 library modules, 0 findings. The replay-retained log is `.local/math-trust/20261014T043008Z-2adb9059a1/math-layout.log`, SHA-256 `b394f81f26906147e34e901d4ba457a69aae2a9fb5e1719d1ad0d9ae7a94c6a0`. |
-| `lake build GRWTSK` | Passed, 9,039 jobs. No separate durable build receipt is claimed here. |
-| `python3 -B scripts/check_math_trust.py --self-test` | Passed 25 Python hostile/boundary fixtures. |
-| `python3 -B scripts/check_math_trust.py --lean-self-test` | Passed nine native fixture commands; receipt identified above. |
-| `python3 -B scripts/check_math_trust.py` | Not rerun to completion after the merge; the retained 4,096 MiB pre-merge resource failure is historical and is not an acceptance result. |
-| `python3 -B scripts/check_math_trust.py --memory-mib 8192` | Failed overall after all 333 library elaborations passed because `AllProjectAudit` rejected the 18 declarations listed above; current pre-intake receipt identified above. |
-| Seventeen relocated Möbius positive checks | Passed separately through the role-aware Lean validation runner. |
-| FinitePhraseProcess Audit, Evidence and Positive/Types checks | Passed separately through their subject-local runner interfaces. |
-| `python3 -B scripts/check_density_arithmetic.py` | Passed: 21 modules, 124 theorems, 21 definitions, 124 contracts and 183 body/axiom records. Receipt `.local/density-arithmetic-checks/20261014T031159297899Z/receipt.json`, SHA-256 `5979c1aa78fa3f4b8e977a34f64fcfc6e82d8d26782adbfa5da1db6ff3acec28`; independent human acceptance and full repository build are false. |
-| Vaughan Type-II finite runners | Max-10 and max-12 sampled payloads matched their declared hashes; normal/optimized complete-packet reports were byte-identical at SHA-256 `2aeaf979b5ac4e3bcbfdc2c883ac520a97cd48cf9502317769f23d5c087b2ed2`. These were Python finite checks, not Lean or all-scale acceptance. |
-| `python3 -B scripts/check_ordered_product_gauge.py` | Passed the audit and positive contract; all three hostile controls were rejected for their intended missing-closed-path, shifted-endpoint and stronger-group diagnostics. The runner now binds current subject-local sources and roles through `docs/math-layout.json`, not the retained stale 591-file family manifest. |
-| `python3 -B scripts/check_inputs.py` | The last completed eight-control receipt predates the two new library modules and checks. The updated checker derives a 630-file fixture for this snapshot, but its new receipt is intentionally pending the final integrated snapshot rather than being mislabeled current here. |
-| `python3 -B scripts/check_repository_conformance.py --self-test` and optimized equivalent | Passed the hostile/boundary controls. |
-| `python3 -B scripts/check_repository_conformance.py --capture-basis --render` | The 3,971-artifact result is historical. Final capture/render is pending the integrated snapshot; no cumulative profile is inferred from an ordinary checker exit code. |
+| `python3 -B scripts/check_math_layout.py --self-test` | Passed 47 hostile/boundary fixtures. |
+| `python3 -B scripts/check_math_layout.py` | Passed: 334 library modules, 0 findings. Replay-retained log SHA-256: `1b5f11fa99f9ed7af5f237eefc82bae40d3bb843ea9b24607af97d641d3c25b7`. |
+| `lake build GRWTSK` | Passed, 9,040 jobs. This is build evidence, not the owned-declaration audit. |
+| `python3 -B scripts/check_math_trust.py --self-test` | Passed 27 Python hostile/boundary fixtures. |
+| `python3 -B scripts/check_math_trust.py --lean-self-test` | Passed nine native fixture commands; receipt and hash identified above. |
+| `python3 -B scripts/check_math_trust.py` | Reached 178 successful source results, then stopped at `GRWTSK.NumberTheory.Moebius.LogarithmicResponse` when Lean exited `-6` with `lean::memory_exception` at the 4,096 MiB interpreter limit. Receipt `.local/math-trust/20261014T053342Z-174ace47cf/failure.json`, SHA-256 `66a732c929a71080d168fc1b07fc588ce278878a5927bf416068b14e99a985ee`. This is an operational resource failure, not a mathematical rejection or completed replay. |
+| `python3 -B scripts/check_math_trust.py --memory-mib 8192` | Overall failed after all 334 source elaborations passed because the audit rejected the 18 exact partial declarations listed above. |
+| Finite Euler selected runner | Passed the source and positive contract and rejected both hostile controls for their intended missing-debt and open-cutoff reasons. Durable receipt SHA-256: `0c6067fd56aa7b23a0b5fa789bbc1a45f3575426b8596d14e40aa6e6d90f03ce`. |
+| `python3 -B scripts/check_ordered_product_gauge.py` | Passed the audit and positive contract; all three hostile controls were rejected for their intended missing-closed-path, shifted-endpoint and stronger-group diagnostics. |
+| `python3 -B scripts/check_inputs.py` | Passed eight normal/optimized controls over a 698-file fixture; receipt SHA-256: `40ea097c4304865602147e05d5b73cc9bc1432aad12045feeb27ecbd52dc7658`. |
+| Repository conformance self-tests | Normal and optimized hostile/boundary self-tests passed. The source-bound receipt still establishes no profile. |
+| `python3 -B scripts/check_repository_conformance.py --write-receipt` | Completed a 4,212-artifact observation; all generated views were byte-fresh, all cumulative profiles remained false, and the receipt hash is `8684f4f35f509061021a9499c8249ce7b1ee4721ba1b9cd3857235f71b9b5aa7`. |
 
-The required documentation commands were rerun after this report and its
-navigation entries were added. All five passed against 86 registered pages;
-the main checker also passed its five hostile record controls and the independent
-layout suite its 61 tests, in both normal and optimized Python modes:
+The required documentation suite also passed in normal and optimized Python
+modes:
 
 ```text
 python3 -B scripts/check_documentation.py --render
@@ -342,30 +351,42 @@ python3 -B scripts/test_documentation_layout.py
 python3 -O -B scripts/test_documentation_layout.py
 ```
 
-No dependency-source rebuild or external independent proof checker was run.
+The rendered inventory has 100 maintained pages and 608 dispositions. The main
+checker passed five hostile record controls, and the independent layout suite
+passed 82 tests in each Python mode. Its 604 Lean module paths comprise the 604
+files below `GRWTSK/`; the separate root entry point brings repository-wide
+present Lean discovery to 605. Documentation checks establish structural
+consistency only, not theorem admission.
+
+Earlier scoped density-arithmetic, Vaughan Type-II, Volterra and Mertens
+receipts remain evidence only for their bound families and bytes. They are not
+substitutes for the current 334-source replay or a repository-wide profile.
 
 ## Historical evidence and final disposition
 
-The retained [2026-10-14 consolidation ledger](../../evidence/lean-consolidation-2026-10-14.json),
-SHA-256 `ccbdb7362a8832d4bc8feb21558218eee03d590855a3acec64e93f529ab0a393`,
-still describes its exact historical 472-source/289-library snapshot. It is not
-rewritten to cover the three later Logic modules or the 39 library modules from
-the subsequent merge, and its old successful, failed and stale outcomes remain
-historical evidence. The current 538/333 observations supplement that ledger;
-they do not make the old receipt current. The retained 475/292 rigor record and
-its receipts are likewise pre-merge evidence rather than current acceptance.
+The retained consolidation ledger
+[`lean-consolidation-2026-10-14.json`](../../evidence/lean-consolidation-2026-10-14.json),
+SHA-256
+`ccbdb7362a8832d4bc8feb21558218eee03d590855a3acec64e93f529ab0a393`,
+still describes its exact historical 472-source/289-library snapshot. The
+retained rigor record
+`evidence/lean-consolidation-rigor-2026-10-14.json`, SHA-256
+`96a91a248f47b762fab5dae84f8741e3cda8b455538b224f6cc2238f453d90cc`,
+binds a later 475/292 snapshot. The pre-Volterra and pre-intake records bind
+their own 534/331 and 538/333 snapshots. None was rewritten or rehashed to look
+current, and their successful, failed or interrupted outcomes remain attached
+to their original bytes and environments.
 
-This migration is **not complete**. Mathematical containment and structural
-classification are current, and the public source set freshly elaborates, but
-repository-wide reconstruction, the ownership/partiality audit, semantic and
-trusted-statement comparison and independent validation remain blocked or
-pending exactly as stated above.
+The current state establishes structural containment, subject/role
+classification, exact active/candidate byte inventories and a fresh successful
+elaboration of every admitted library source. It does **not** establish any
+cumulative profile: candidate mathematical admission remains pending, the
+owned-declaration audit fails on 18 generated partial declarations,
+repository-wide reconstruction is incomplete, dependency sources were not
+rebuilt, trusted-statement comparison is absent, and no independent proof
+checker was run.
 
-During the preceding audit, two commands advertised as preflight or
-validate-only nevertheless created ignored failure receipts:
-`.local/ccc-control-soundness/public-ccc-check-20261014T010013Z/receipt.json`
-and
-`.local/checks/moebius-response-20261014T010118Z-bbe2b1b735cd/receipt.json`.
-They changed no tracked or nonignored source and provide no acceptance result;
-they are disclosed here as evidence that writer/read-set classification still
-needs tightening.
+Accordingly, this report does not say “all migrated,” “all reconstructible,”
+“all formally checked” or “independently validated.” It reports separately
+where sources are classified, which source set each file participates in, what
+bytes can be accounted for, and which current formal checks actually ran.
