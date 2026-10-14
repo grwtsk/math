@@ -28,3 +28,14 @@ Cocycle product interface: R.A. Jacob Martone direction; OpenAI Codex assistance
 
 CCC cutoff Laplace continuation: human mathematical direction R.A. Jacob Martone; derivation, formalization and checking assistance OpenAI Codex. Exact single-response and complete signed cutoff transforms, endpoint omission counterexamples and the cutoff-three arithmetic product debt; local MIT, original Lean/Mathlib authors and Apache-2.0 licensing retained. No RH proof or independent arithmetic upper estimate.
 State gauge interface: R.A. Jacob Martone direction; OpenAI Codex assistance; locally maintained MIT formalization, historical authoring split unknown. Established group-action gauge mathematics and upstream Lean/Mathlib identities retained. Group-action source credits Chris Hughes and Yury Kudryashov, Apache-2.0. Canonical placement and checked reuse are engineering contributions, with no new mathematical originality or RH claim.
+
+
+Archive candidate-source intake
+------------------------------
+R.A. Jacob Martone confirms ownership of the supplied formal proof sources and
+directs this work through ChatGPT and Codex. The existing Math repository MIT
+terms apply; original assistance credit, upstream mathematical authorship and
+Mathlib Apache-2.0 terms remain retained.
+See LICENSES/ArchiveCandidates-NOTICE.txt and evidence/source-intake.json for
+exact source identities and attribution scope. Intake is not native proof
+acceptance or public-release permission.

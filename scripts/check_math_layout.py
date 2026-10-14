@@ -47,11 +47,15 @@ HEADER_STOP = frozenset({
     "inductive", "noncomputable", "opaque", "axiom", "macro", "syntax",
     "elab", "initialize", "builtin_initialize",
 })
-SCOPE = "Present Git tracked plus nonignored untracked Lean sources; deleted tracked regular files are reported separately. No ignored archives, builds, or native execution."
+SCOPE = ("Present Git tracked plus nonignored untracked Lean sources, partitioned into active "
+         "role-bearing sources and exact candidate-only evidence; deleted tracked regular files "
+         "are reported separately. No ignored archives, builds, or native execution.")
 LIMIT = "Explicit path bans and subject-root checks are a structural lower bound; mathematical subject review is required."
 ROOT_MODULE = "GRWTSK.lean"
 CHECK_SEGMENT = "Checks"
 ROLE_SEGMENTS = {"Positive": "positive-check", "Negative": "negative-control"}
+CANDIDATE_INTAKE = "evidence/source-intake.json"
+CANDIDATE_STATUS = "CANDIDATE_SOURCE_ONLY"
 
 
 def git_inventory(root):
@@ -307,6 +311,83 @@ def source_role(relative):
     return ROLE_SEGMENTS.get(parts[index + 1], "audit-driver")
 
 
+def candidate_intake(root):
+    """Read the exact candidate-only source set without admitting it as active.
+
+    Structurally valid candidate paths are retained in the returned index even
+    when another field is malformed.  This is deliberately fail-closed: broken
+    candidate metadata must not cause a source to fall through to the active
+    library classifier.
+    """
+    try:
+        payload = read_regular(root, CANDIDATE_INTAKE)
+    except MissingSource:
+        return {}, []
+    except (OSError, UnicodeError, ValueError) as error:
+        return {}, [{"code": "invalid-candidate-intake", "path": CANDIDATE_INTAKE,
+                     "message": str(error)}]
+    try:
+        intake = json.loads(payload.decode("utf-8"))
+    except (UnicodeError, json.JSONDecodeError) as error:
+        return {}, [{"code": "invalid-candidate-intake", "path": CANDIDATE_INTAKE,
+                     "message": str(error)}]
+    findings = []
+    if intake.get("schema") != "mathematical-source-intake-v1":
+        findings.append({"code": "invalid-candidate-intake", "path": CANDIDATE_INTAKE,
+                         "message": "unsupported or missing source-intake schema"})
+    if intake.get("status") != "CANDIDATE_SOURCE_INTAKE_NOT_THEOREM_ACCEPTANCE":
+        findings.append({"code": "invalid-candidate-intake", "path": CANDIDATE_INTAKE,
+                         "message": "source-intake status does not preserve candidate-only scope"})
+    sources = intake.get("sources")
+    if not isinstance(sources, list):
+        findings.append({"code": "invalid-candidate-intake", "path": CANDIDATE_INTAKE,
+                         "message": "sources must be a list"})
+        return {}, findings
+    if intake.get("source_count") != len(sources):
+        findings.append({"code": "candidate-intake-count-mismatch", "path": CANDIDATE_INTAKE,
+                         "message": "declared source_count does not equal the candidate list length"})
+    indexed = {}
+    for position, entry in enumerate(sources):
+        if not isinstance(entry, dict) or not isinstance(entry.get("path"), str):
+            findings.append({"code": "invalid-candidate-intake", "path": CANDIDATE_INTAKE,
+                             "message": "candidate entry %d lacks a string path" % position})
+            continue
+        relative = entry["path"]
+        try:
+            parts = safe_parts(relative)
+        except ValueError as error:
+            findings.append({"code": "invalid-candidate-path", "path": relative,
+                             "message": str(error)})
+            continue
+        if (len(parts) < 3 or parts[0] != "GRWTSK" or not relative.endswith(".lean")
+                or CHECK_SEGMENT in parts):
+            findings.append({"code": "invalid-candidate-path", "path": relative,
+                             "message": "candidate must be a subject-local non-Checks Lean source"})
+            continue
+        if relative in indexed:
+            findings.append({"code": "duplicate-candidate-intake-entry", "path": relative,
+                             "message": "candidate path occurs more than once in source intake"})
+        indexed[relative] = entry
+        digest = entry.get("sha256")
+        size = entry.get("bytes")
+        if not isinstance(digest, str) or re.fullmatch(r"[0-9a-f]{64}", digest) is None:
+            findings.append({"code": "invalid-candidate-intake", "path": relative,
+                             "message": "candidate sha256 must be a lowercase SHA-256 digest"})
+        if not isinstance(size, int) or isinstance(size, bool) or size < 0:
+            findings.append({"code": "invalid-candidate-intake", "path": relative,
+                             "message": "candidate byte count must be a nonnegative integer"})
+        if entry.get("status") != CANDIDATE_STATUS:
+            findings.append({"code": "candidate-status-mismatch", "path": relative,
+                             "message": "candidate is not explicitly CANDIDATE_SOURCE_ONLY"})
+        if entry.get("mathematical_admission") is not False:
+            findings.append({"code": "candidate-admission-mismatch", "path": relative,
+                             "message": "candidate must explicitly deny mathematical admission"})
+        if entry.get("public_release_eligible") is not False:
+            findings.append({"code": "candidate-admission-mismatch", "path": relative,
+                             "message": "candidate must not be marked public-release eligible"})
+    return indexed, findings
+
+
 def module_name(relative):
     return str(PurePosixPath(relative).with_suffix("")).replace("/", ".")
 
@@ -319,7 +400,7 @@ def source_set_findings(files):
     folded = {}
     for relative, entry in records.items():
         role = entry["source_role"]
-        if role is None:
+        if role is None and not entry["candidate_evidence"]:
             findings.append({"code": "unclassified-maintained-source", "path": relative,
                              "message": "maintained Lean source is outside the canonical role layout"})
             continue
@@ -337,8 +418,11 @@ def source_set_findings(files):
                                  "message": "module identity collides on a case-insensitive filesystem"})
 
     graph = {module: [] for module in modules}
+    active_graph = {module: [] for module, relative in modules.items()
+                    if not records[relative]["candidate_evidence"]}
     for module, relative in modules.items():
         role = records[relative]["source_role"]
+        candidate = records[relative]["candidate_evidence"]
         for imported, line in records[relative]["imports"]:
             if imported != "GRWTSK" and not imported.startswith("GRWTSK."):
                 continue
@@ -349,7 +433,15 @@ def source_set_findings(files):
                                  "message": "import has no present Git-visible maintained source"})
                 continue
             graph[module].append(imported)
-            if role == "library" and records[target]["source_role"] != "library":
+            target_candidate = records[target]["candidate_evidence"]
+            if not candidate and target_candidate:
+                findings.append({"code": "active-source-imports-candidate", "path": relative,
+                                 "line": line, "module": imported,
+                                 "message": "active source imports candidate-only evidence"})
+            elif not candidate:
+                active_graph[module].append(imported)
+            if (not candidate and not target_candidate and role == "library"
+                    and records[target]["source_role"] != "library"):
                 findings.append({"code": "library-imports-validation", "path": relative,
                                  "line": line, "module": imported,
                                  "message": "public library source imports a validation source"})
@@ -377,27 +469,48 @@ def source_set_findings(files):
         if module in reachable:
             continue
         reachable.add(module)
-        pending.extend(graph[module])
+        pending.extend(active_graph.get(module, ()))
     for module, relative in sorted(modules.items()):
-        if records[relative]["source_role"] == "library" and module not in reachable:
+        if (not records[relative]["candidate_evidence"]
+                and records[relative]["source_role"] == "library" and module not in reachable):
             findings.append({"code": "library-module-outside-public-closure", "path": relative,
                              "module": module,
                              "message": "library module is not reachable from GRWTSK.lean"})
     return findings
 
 
-def catalog_findings(root, files):
-    """Require the authoritative map to cover the exact current maintained set."""
+def catalog_findings(root, files, intake):
+    """Require disjoint exact catalogs for active and candidate-only sources."""
     path = Path(root) / "docs/math-layout.json"
     if not path.is_file():
         return []
     try:
         layout = json.loads(read_regular(root, "docs/math-layout.json"))
         catalog = layout["active_sources"]
+        candidate_catalog = layout.get("candidate_sources", [])
+        candidate_metadata = layout.get("candidate_source_catalog", {})
+        if intake and "candidate_sources" not in layout:
+            raise KeyError("candidate_sources")
     except (KeyError, TypeError, json.JSONDecodeError, UnicodeDecodeError, ValueError) as error:
         return [{"code": "invalid-source-catalog", "path": "docs/math-layout.json",
                  "message": str(error)}]
-    findings, indexed = [], {}
+    findings, indexed, candidate_indexed = [], {}, {}
+    if not isinstance(candidate_metadata, dict):
+        findings.append({"code": "invalid-candidate-catalog", "path": "docs/math-layout.json",
+                         "message": "candidate_source_catalog must be an object"})
+        candidate_metadata = {}
+    if intake or candidate_metadata:
+        if candidate_metadata.get("status") != CANDIDATE_STATUS:
+            findings.append({"code": "candidate-status-mismatch", "path": "docs/math-layout.json",
+                             "message": "candidate catalog metadata lost candidate-only status"})
+        if candidate_metadata.get("source_count") != len(candidate_catalog):
+            findings.append({"code": "candidate-catalog-count-mismatch",
+                             "path": "docs/math-layout.json",
+                             "message": "candidate catalog metadata count disagrees with entries"})
+        if candidate_metadata.get("authoritative_intake") != CANDIDATE_INTAKE + "#sources":
+            findings.append({"code": "candidate-catalog-intake-mismatch",
+                             "path": "docs/math-layout.json",
+                             "message": "candidate catalog lacks its exact intake binding"})
     for entry in catalog:
         if not isinstance(entry, dict) or not isinstance(entry.get("path"), str):
             findings.append({"code": "invalid-source-catalog", "path": "docs/math-layout.json",
@@ -407,15 +520,31 @@ def catalog_findings(root, files):
             findings.append({"code": "duplicate-source-catalog-entry", "path": entry["path"],
                              "message": "active source is cataloged more than once"})
         indexed[entry["path"]] = entry
+    for entry in candidate_catalog:
+        if not isinstance(entry, dict) or not isinstance(entry.get("path"), str):
+            findings.append({"code": "invalid-candidate-catalog", "path": "docs/math-layout.json",
+                             "message": "candidate source record lacks a path"})
+            continue
+        if entry["path"] in candidate_indexed:
+            findings.append({"code": "duplicate-candidate-catalog-entry", "path": entry["path"],
+                             "message": "candidate source is cataloged more than once"})
+        candidate_indexed[entry["path"]] = entry
+    for relative in sorted(indexed.keys() & candidate_indexed.keys()):
+        findings.append({"code": "source-catalog-overlap", "path": relative,
+                         "message": "source occurs in both active and candidate catalogs"})
     observed = {entry["path"]: entry for entry in files}
-    for relative in sorted(observed.keys() - indexed.keys()):
+    observed_active = {path: entry for path, entry in observed.items()
+                       if not entry["candidate_evidence"]}
+    observed_candidates = {path: entry for path, entry in observed.items()
+                           if entry["candidate_evidence"]}
+    for relative in sorted(observed_active.keys() - indexed.keys()):
         findings.append({"code": "uncataloged-maintained-source", "path": relative,
                          "message": "present maintained Lean source is absent from active_sources"})
-    for relative in sorted(indexed.keys() - observed.keys()):
+    for relative in sorted(indexed.keys() - observed_active.keys()):
         findings.append({"code": "stale-source-catalog-entry", "path": relative,
                          "message": "cataloged active source is absent from the working tree"})
-    for relative in sorted(observed.keys() & indexed.keys()):
-        actual, declared = observed[relative], indexed[relative]
+    for relative in sorted(observed_active.keys() & indexed.keys()):
+        actual, declared = observed_active[relative], indexed[relative]
         if declared.get("sha256") != actual["sha256"]:
             findings.append({"code": "stale-source-catalog-hash", "path": relative,
                              "message": "catalog hash does not bind the current bytes"})
@@ -428,6 +557,41 @@ def catalog_findings(root, files):
         if actual["source_role"] != "library" and not declared.get("runner"):
             findings.append({"code": "validation-without-runner", "path": relative,
                              "message": "validation source lacks an explicit runner/outcome policy"})
+    for relative in sorted(observed_candidates.keys() - candidate_indexed.keys()):
+        findings.append({"code": "uncataloged-candidate-source", "path": relative,
+                         "message": "candidate-only source is absent from candidate_sources"})
+    for relative in sorted(candidate_indexed.keys() - observed_candidates.keys()):
+        findings.append({"code": "stale-candidate-catalog-entry", "path": relative,
+                         "message": "cataloged candidate source is absent from candidate intake/tree"})
+    for relative in sorted(observed_candidates.keys() & candidate_indexed.keys()):
+        actual, declared = observed_candidates[relative], candidate_indexed[relative]
+        intake_entry = intake[relative]
+        if declared.get("sha256") != actual["sha256"]:
+            findings.append({"code": "stale-candidate-catalog-hash", "path": relative,
+                             "message": "candidate catalog hash does not bind current bytes"})
+        if declared.get("bytes") != actual["bytes"]:
+            findings.append({"code": "stale-candidate-catalog-size", "path": relative,
+                             "message": "candidate catalog size does not bind current bytes"})
+        if declared.get("status") != CANDIDATE_STATUS:
+            findings.append({"code": "candidate-status-mismatch", "path": relative,
+                             "message": "candidate catalog lost CANDIDATE_SOURCE_ONLY status"})
+        if declared.get("source_set") != "candidate-evidence":
+            findings.append({"code": "candidate-source-set-mismatch", "path": relative,
+                             "message": "candidate catalog lost candidate-evidence isolation"})
+        if "source_role" in declared:
+            findings.append({"code": "candidate-source-set-mismatch", "path": relative,
+                             "message": "candidate must not acquire an active source role"})
+        if declared.get("target_path") != relative:
+            findings.append({"code": "candidate-target-mismatch", "path": relative,
+                             "message": "candidate target is not its retained subject-local path"})
+        if declared.get("source_intake") != CANDIDATE_INTAKE:
+            findings.append({"code": "candidate-catalog-intake-mismatch", "path": relative,
+                             "message": "candidate source lacks its intake provenance binding"})
+        for field in ("sha256", "bytes", "status", "mathematical_admission",
+                      "public_release_eligible"):
+            if declared.get(field) != intake_entry.get(field):
+                findings.append({"code": "candidate-catalog-intake-mismatch", "path": relative,
+                                 "message": "candidate catalog disagrees with intake field " + field})
     return findings
 
 
@@ -435,12 +599,17 @@ def check_paths(root, paths, tracked_regular=(), enforce_source_sets=False):
     allowed = set(SUBJECT_ROOTS)
     findings, files, deleted = [], [], []
     tracked_regular = set(tracked_regular)
+    candidate_records, candidate_findings = candidate_intake(root) if enforce_source_sets else ({}, [])
+    candidate_paths = set(candidate_records)
+    findings.extend(candidate_findings)
     library_count, import_count = 0, 0
+    candidate_count = 0
     role_counts = {name: 0 for name in ("library", "positive-check", "negative-control", "audit-driver")}
     for relative in sorted(set(paths)):
         if not relative.endswith(".lean"):
             continue
-        role = source_role(relative)
+        candidate = relative in candidate_paths
+        role = None if candidate else source_role(relative)
         library = role == "library"
         try:
             data = read_regular(root, relative)
@@ -464,6 +633,8 @@ def check_paths(root, paths, tracked_regular=(), enforce_source_sets=False):
                                  "message": "Lean import commands accept one module per command"})
         if library:
             library_count += 1
+        if candidate:
+            candidate_count += 1
         if relative.startswith("GRWTSK/"):
             module_parts = list(PurePosixPath(relative).with_suffix("").parts)
             for code, segment, reason in layout_issues(module_parts, allowed):
@@ -471,8 +642,18 @@ def check_paths(root, paths, tracked_regular=(), enforce_source_sets=False):
                                  "message": reason})
         if role in role_counts:
             role_counts[role] += 1
-        files.append({"path": relative, "sha256": hashlib.sha256(data).hexdigest(),
-                      "source_role": role, "imports": entries})
+        digest = hashlib.sha256(data).hexdigest()
+        files.append({"path": relative, "sha256": digest, "bytes": len(data),
+                      "source_role": role, "candidate_evidence": candidate,
+                      "imports": entries})
+        if candidate:
+            declared = candidate_records[relative]
+            if declared.get("sha256") != digest:
+                findings.append({"code": "candidate-source-byte-drift", "path": relative,
+                                 "message": "candidate bytes do not match source-intake SHA-256"})
+            if declared.get("bytes") != len(data):
+                findings.append({"code": "candidate-source-size-drift", "path": relative,
+                                 "message": "candidate byte count does not match source intake"})
         for module, line in entries:
             if module == "GRWTSK" or module.startswith("GRWTSK."):
                 import_count += 1
@@ -481,14 +662,20 @@ def check_paths(root, paths, tracked_regular=(), enforce_source_sets=False):
                                      "line": line, "module": module, "segment": segment,
                                      "message": reason, "layout_code": code})
     if enforce_source_sets:
+        observed_paths = {entry["path"] for entry in files}
+        for relative in sorted(candidate_paths - observed_paths):
+            findings.append({"code": "missing-candidate-source", "path": relative,
+                             "message": "source-intake candidate is not Git-visible and readable"})
         findings.extend(source_set_findings(files))
-        findings.extend(catalog_findings(root, files))
+        findings.extend(catalog_findings(root, files, candidate_records))
     findings.sort(key=lambda entry: (entry["path"], entry.get("line", 0), entry["code"],
                                      entry.get("module", ""), entry.get("segment", "")))
     return {"schema_version": 1, "status": "FAIL" if findings else "PASS",
             "scope": SCOPE, "limit": LIMIT, "subject_review_required": True,
             "allowed_subject_roots": sorted(allowed), "library_module_count": library_count,
             "lean_source_count": len(files), "project_import_count": import_count,
+            "active_source_count": len(files) - candidate_count,
+            "candidate_source_count": candidate_count,
             "source_role_counts": role_counts,
             "deleted_tracked_regular_paths": deleted,
             "files": [{key: value for key, value in entry.items() if key != "imports"}
@@ -684,6 +871,120 @@ def self_test(root):
     if "uncataloged-maintained-source" not in {entry["code"] for entry in report["findings"]}:
         raise AssertionError("catalog omission fixture was not detected")
     passed.append("catalog-omission")
+
+    def candidate_entry(directory, relative):
+        data = (directory / relative).read_bytes()
+        return {
+            "path": relative, "sha256": hashlib.sha256(data).hexdigest(),
+            "bytes": len(data), "status": CANDIDATE_STATUS,
+            "source_set": "candidate-evidence", "mathematical_admission": False,
+            "public_release_eligible": False, "target_path": relative,
+            "source_intake": CANDIDATE_INTAKE,
+        }
+
+    def write_candidate_fixture(directory, active, candidates):
+        (directory / "evidence").mkdir(exist_ok=True)
+        intake_fields = {"path", "sha256", "bytes", "status",
+                         "mathematical_admission", "public_release_eligible"}
+        intake_candidates = [{key: value for key, value in entry.items()
+                              if key in intake_fields} for entry in candidates]
+        (directory / CANDIDATE_INTAKE).write_text(json.dumps({
+            "schema": "mathematical-source-intake-v1",
+            "status": "CANDIDATE_SOURCE_INTAKE_NOT_THEOREM_ACCEPTANCE",
+            "source_count": len(candidates), "sources": intake_candidates,
+        }))
+        (directory / "docs").mkdir(exist_ok=True)
+        (directory / "docs/math-layout.json").write_text(json.dumps({
+            "active_sources": active, "candidate_sources": candidates,
+            "candidate_source_catalog": {
+                "authoritative_intake": CANDIDATE_INTAKE + "#sources",
+                "status": CANDIDATE_STATUS, "source_count": len(candidates),
+            },
+        }))
+
+    candidate_root = fixture / "candidate-source-isolation"
+    (candidate_root / "GRWTSK/Analysis").mkdir(parents=True)
+    (candidate_root / "GRWTSK.lean").write_text("import GRWTSK.Analysis.Public\n")
+    (candidate_root / "GRWTSK/Analysis/Public.lean").write_text(
+        "import GRWTSK.Analysis.Candidate\n")
+    candidate_path = "GRWTSK/Analysis/Candidate.lean"
+    (candidate_root / candidate_path).write_text("import Mathlib\n")
+    active_entries = []
+    for relative in ("GRWTSK.lean", "GRWTSK/Analysis/Public.lean"):
+        active_entries.append({
+            "path": relative,
+            "sha256": hashlib.sha256((candidate_root / relative).read_bytes()).hexdigest(),
+            "source_role": "library", "target_path": relative,
+            "runner": "lake build GRWTSK",
+        })
+    candidates = [candidate_entry(candidate_root, candidate_path)]
+    write_candidate_fixture(candidate_root, active_entries, candidates)
+    paths = sorted(str(path.relative_to(candidate_root))
+                   for path in candidate_root.rglob("*.lean"))
+    report = check_paths(candidate_root, paths, enforce_source_sets=True)
+    codes = {entry["code"] for entry in report["findings"]}
+    if codes != {"active-source-imports-candidate"}:
+        raise AssertionError("candidate import isolation fixture failed: " + repr(sorted(codes)))
+    if (report["active_source_count"], report["candidate_source_count"],
+            report["library_module_count"]) != (2, 1, 2):
+        raise AssertionError("candidate source counts were conflated with active library roles")
+    passed.append("candidate-source-import-isolation")
+
+    isolated_root = fixture / "candidate-graph-controls"
+    (isolated_root / "GRWTSK/Analysis").mkdir(parents=True)
+    (isolated_root / "GRWTSK.lean").write_text("import Mathlib\n")
+    candidate_texts = {
+        "GRWTSK/Analysis/A.lean": "import GRWTSK.Analysis.B\n",
+        "GRWTSK/Analysis/B.lean": "import GRWTSK.Analysis.A\n",
+        "GRWTSK/Analysis/Unresolved.lean": "import GRWTSK.Analysis.Absent\n",
+    }
+    for relative, text in candidate_texts.items():
+        (isolated_root / relative).write_text(text)
+    active_entries = [{
+        "path": "GRWTSK.lean",
+        "sha256": hashlib.sha256((isolated_root / "GRWTSK.lean").read_bytes()).hexdigest(),
+        "source_role": "library", "target_path": "GRWTSK.lean",
+        "runner": "lake build GRWTSK",
+    }]
+    candidates = [candidate_entry(isolated_root, relative) for relative in candidate_texts]
+    write_candidate_fixture(isolated_root, active_entries, candidates)
+    paths = sorted(str(path.relative_to(isolated_root))
+                   for path in isolated_root.rglob("*.lean"))
+    report = check_paths(isolated_root, paths, enforce_source_sets=True)
+    required = {"cyclic-local-import", "unresolved-local-import"}
+    if not required <= {entry["code"] for entry in report["findings"]}:
+        raise AssertionError("candidate graph controls did not remain active")
+    synthetic_collision = source_set_findings([{
+        "path": "GRWTSK/Analysis/Case.lean", "source_role": None,
+        "candidate_evidence": True, "imports": [],
+    }, {
+        "path": "GRWTSK/Analysis/case.lean", "source_role": None,
+        "candidate_evidence": True, "imports": [],
+    }])
+    if "case-folding-module-collision" not in {
+            entry["code"] for entry in synthetic_collision}:
+        raise AssertionError("candidate case-fold collision control was bypassed")
+    passed.append("candidate-graph-controls")
+
+    drift_root = fixture / "candidate-exact-byte-drift"
+    (drift_root / "GRWTSK/Analysis").mkdir(parents=True)
+    (drift_root / "GRWTSK.lean").write_text("import Mathlib\n")
+    drift_path = "GRWTSK/Analysis/Candidate.lean"
+    (drift_root / drift_path).write_text("import Mathlib\n")
+    active_entries = [{
+        "path": "GRWTSK.lean",
+        "sha256": hashlib.sha256((drift_root / "GRWTSK.lean").read_bytes()).hexdigest(),
+        "source_role": "library", "target_path": "GRWTSK.lean",
+        "runner": "lake build GRWTSK",
+    }]
+    bad_candidate = candidate_entry(drift_root, drift_path)
+    bad_candidate["sha256"] = "0" * 64
+    write_candidate_fixture(drift_root, active_entries, [bad_candidate])
+    paths = sorted(str(path.relative_to(drift_root)) for path in drift_root.rglob("*.lean"))
+    report = check_paths(drift_root, paths, enforce_source_sets=True)
+    if "candidate-source-byte-drift" not in {entry["code"] for entry in report["findings"]}:
+        raise AssertionError("candidate exact-byte drift fixture was not detected")
+    passed.append("candidate-exact-byte-drift")
     bad_fixture = fixture / "new-untracked-legacy-source-rejected"
     bad_inventory = {"paths": ["GRWTSK/Analysis/CCC/New.lean"], "tracked_regular": []}
     with unittest.mock.patch(__name__ + ".git_inventory", return_value=bad_inventory):

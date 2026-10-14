@@ -21,6 +21,8 @@ LAYOUT_PATH = ROOT / "docs/math-layout.json"
 CATALOG_PATH = ROOT / "docs/reference/math-source-catalog.json"
 MIGRATION_VERIFICATION = ROOT / "evidence/lean-consolidation-2026-10-14.json"
 CURRENT_VERIFICATION = ROOT / "evidence/lean-consolidation-rigor-post-merge-2026-10-14.json"
+SOURCE_INTAKE = ROOT / "evidence/source-intake.json"
+CANDIDATE_STATUS = "CANDIDATE_SOURCE_ONLY"
 GENERATED_VIEWS = {
     CATALOG_PATH,
     ROOT / "docs/reference/results.md",
@@ -75,7 +77,7 @@ def present_sources():
         ["git", "ls-files", "-z", "--cached", "--others", "--exclude-standard", "--", "*.lean"],
         cwd=ROOT,
     )
-    return sorted(path for path in raw.decode("utf-8", "surrogateescape").split("\0") if path)
+    return sorted({path for path in raw.decode("utf-8", "surrogateescape").split("\0") if path})
 
 
 def consumer_corpus():
@@ -183,6 +185,46 @@ def source_hash_digest(entries):
     payload = json.dumps(mapping, ensure_ascii=True, sort_keys=True,
                          separators=(",", ":")).encode()
     return hashlib.sha256(payload).hexdigest()
+
+
+def exact_candidate_intake(read_regular):
+    """Return candidate-only records after validating their exact source bytes."""
+    try:
+        intake = json.loads(read_regular(ROOT, str(SOURCE_INTAKE.relative_to(ROOT))))
+    except (OSError, UnicodeError, ValueError, json.JSONDecodeError) as error:
+        raise SystemExit("invalid candidate source intake: " + str(error)) from error
+    if intake.get("schema") != "mathematical-source-intake-v1":
+        raise SystemExit("unsupported candidate source-intake schema")
+    if intake.get("status") != "CANDIDATE_SOURCE_INTAKE_NOT_THEOREM_ACCEPTANCE":
+        raise SystemExit("candidate source-intake status would broaden mathematical admission")
+    records = intake.get("sources")
+    if not isinstance(records, list) or intake.get("source_count") != len(records):
+        raise SystemExit("candidate source-intake count/list mismatch")
+    indexed = {}
+    for position, entry in enumerate(records):
+        if not isinstance(entry, dict) or not isinstance(entry.get("path"), str):
+            raise SystemExit("candidate intake entry %d lacks a string path" % position)
+        path = entry["path"]
+        parts = PurePosixPath(path).parts
+        if (PurePosixPath(path).is_absolute() or ".." in parts or ".git" in parts
+                or len(parts) < 3 or parts[0] != "GRWTSK" or "Checks" in parts
+                or not path.endswith(".lean")):
+            raise SystemExit("invalid candidate-only source path: " + path)
+        if path in indexed:
+            raise SystemExit("duplicate candidate-only source path: " + path)
+        digest, size = entry.get("sha256"), entry.get("bytes")
+        if not isinstance(digest, str) or re.fullmatch(r"[0-9a-f]{64}", digest) is None:
+            raise SystemExit("invalid candidate source SHA-256: " + path)
+        if not isinstance(size, int) or isinstance(size, bool) or size < 0:
+            raise SystemExit("invalid candidate source byte count: " + path)
+        if entry.get("status") != CANDIDATE_STATUS:
+            raise SystemExit("candidate source lost CANDIDATE_SOURCE_ONLY status: " + path)
+        if entry.get("mathematical_admission") is not False:
+            raise SystemExit("candidate source claims mathematical admission: " + path)
+        if entry.get("public_release_eligible") is not False:
+            raise SystemExit("candidate source claims public-release eligibility: " + path)
+        indexed[path] = entry
+    return indexed
 
 
 def current_verification_binding(record, active, library):
@@ -372,18 +414,37 @@ def main():
                             if CURRENT_VERIFICATION.is_file() else None)
     replay_binding = receipt_replay_binding(layout, migration_verification)
     helpers = runpy.run_path(str(ROOT / "scripts/check_math_layout.py"))
-    parse_imports, mask_lean, classify = helpers["imports"], helpers["mask_lean"], helpers["source_role"]
+    parse_imports = helpers["imports"]
+    mask_lean = helpers["mask_lean"]
+    classify = helpers["source_role"]
+    candidate_records = exact_candidate_intake(helpers["read_regular"])
+    candidate_paths = set(candidate_records)
     paths = present_sources()
-    stale_premise_paths = sorted(set(explicit_open_premises) - set(paths))
+    path_set = set(paths)
+    absent_candidates = sorted(candidate_paths - path_set)
+    if absent_candidates:
+        raise SystemExit("candidate intake names absent Git-visible source(s): " +
+                         ", ".join(absent_candidates))
+    stale_premise_paths = sorted(set(explicit_open_premises) - (path_set - candidate_paths))
     if stale_premise_paths:
         raise SystemExit("explicit premise annotation names absent source(s): " +
                          ", ".join(stale_premise_paths))
     escaped = [path for path in paths if not (path == "GRWTSK.lean" or path.startswith("GRWTSK/"))]
     if escaped:
         raise SystemExit("maintained Lean outside canonical root: " + ", ".join(escaped))
-    texts = {path: (ROOT / path).read_text() for path in paths}
+    source_bytes = {path: helpers["read_regular"](ROOT, path) for path in paths}
+    try:
+        texts = {path: data.decode("utf-8") for path, data in source_bytes.items()}
+    except UnicodeDecodeError as error:
+        raise SystemExit("maintained Lean source is not UTF-8: " + str(error)) from error
     imports = {path: [module for module, _ in parse_imports(texts[path])] for path in paths}
     module_to_path = {path[:-5].replace("/", "."): path for path in paths}
+    candidate_modules = {path[:-5].replace("/", ".") for path in candidate_paths}
+    for path in sorted(path_set - candidate_paths):
+        imported_candidates = sorted(set(imports[path]) & candidate_modules)
+        if imported_candidates:
+            raise SystemExit("active source imports candidate-only module: " + path + " -> " +
+                             ", ".join(imported_candidates))
     reverse = defaultdict(list)
     for consumer, names in imports.items():
         for name in names:
@@ -393,9 +454,8 @@ def main():
     originals = original_paths(layout)
     blobs = head_blobs()
     active = []
-    for path in paths:
-        source = ROOT / path
-        data, text = source.read_bytes(), texts[path]
+    for path in sorted(path_set - candidate_paths):
+        data, text = source_bytes[path], texts[path]
         sha256 = hashlib.sha256(data).hexdigest()
         role = classify(path)
         if role is None:
@@ -473,6 +533,47 @@ def main():
             "verification": verification,
             "runner": runner, "other_consumers": consumers,
         })
+    candidates = []
+    for path in sorted(candidate_paths):
+        data, text = source_bytes[path], texts[path]
+        sha256 = hashlib.sha256(data).hexdigest()
+        intake = candidate_records[path]
+        if sha256 != intake["sha256"] or len(data) != intake["bytes"]:
+            raise SystemExit("candidate source bytes differ from intake: " + path)
+        blob = blobs.get(path)
+        state = ("tracked-clean" if blob == worktree_blob(data) else "tracked-modified") \
+            if blob else "untracked"
+        parts = PurePosixPath(path).parts
+        subject, source_root = parts[1], "GRWTSK"
+        object_name = "/".join(parts[2:-1]) or PurePosixPath(path).stem
+        masked = mask_lean(text)
+        declarations = []
+        for match in DECLARATION.finditer(masked):
+            if match.group(1) == "private":
+                continue
+            declarations.append({"kind": match.group(2), "name": match.group(3),
+                                 "line": masked.count("\n", 0, match.start()) + 1})
+        record = dict(intake)
+        record.update({
+            "source_set": "candidate-evidence",
+            "source_intake": str(SOURCE_INTAKE.relative_to(ROOT)),
+            "git_blob": blob,
+            "working_tree_state": state,
+            "source_root": source_root,
+            "module": path[:-5].replace("/", "."),
+            "namespaces": sorted(set(NAMESPACE.findall(masked))),
+            "public_declarations": declarations,
+            "declaration_inventory_method": (
+                "source syntax only; candidate has no theorem-admission or replay status"),
+            "imports": imports[path],
+            "reverse_consumers": sorted(reverse[path]),
+            "subject": subject,
+            "object": object_name,
+            "target_path": path,
+            "logical_status": (
+                "candidate source only; exact custody does not establish formal correctness"),
+        })
+        candidates.append(record)
     library = [entry for entry in active if entry["source_role"] == "library"]
     current_binding = current_verification_binding(current_verification, active, library)
     active_by_path = {entry["path"]: entry for entry in active}
@@ -521,8 +622,10 @@ def main():
         else:
             verification["lean"] = "not-covered-by-retained-replay"
     layout["schema_version"] = 3
-    layout["inventory_scope"] = ("Every present Git-tracked and nonignored untracked maintained first-party "
-                                 "Lean source; ignored archives, dependencies and generated artifacts are excluded.")
+    layout["inventory_scope"] = (
+        "Every present Git-tracked and nonignored untracked first-party Lean source, partitioned "
+        "into active role-bearing sources and exact candidate-only evidence; ignored archives, "
+        "dependencies and generated artifacts are excluded.")
     layout["source_roles"] = {
         "library": "Public mathematical source included in the GRWTSK umbrella and trust replay.",
         "positive-check": "Validation source required to elaborate successfully, separately from the library.",
@@ -540,13 +643,22 @@ def main():
         "policy": "Historical Lean must be specifically indexed and immutable; no active exception is permitted.",
     }
     layout["active_sources"] = active
+    layout["candidate_source_catalog"] = {
+        "authoritative_intake": str(SOURCE_INTAKE.relative_to(ROOT)) + "#sources",
+        "status": CANDIDATE_STATUS,
+        "source_count": len(candidates),
+        "admission_policy": (
+            "Exact retained source evidence only; excluded from active roles, public umbrella, "
+            "build/trust replay, and mathematical acceptance until separately reviewed."),
+    }
+    layout["candidate_sources"] = candidates
     layout["source_count"] = len(library)
     layout["source_hashes"] = {entry["path"]: entry["sha256"] for entry in library}
     layout["subjects"] = dict(sorted(Counter(entry["subject"] for entry in library
                                               if entry["subject"] != "Library").items()))
     layout["control_sources"] = {entry["path"]: entry["sha256"] for entry in active
                                  if entry["source_role"] != "library"}
-    layout["verification_controls"]["python_layout_fixtures"] = 44
+    layout["verification_controls"]["python_layout_fixtures"] = 47
     if current_binding is not None:
         layout["verification_controls"]["full_source_replay_status"] = (
             current_binding["library_replay"]["source_replay_status"] + "; " +
@@ -577,13 +689,19 @@ def main():
         layout["verification_controls"].pop("full_source_replay_binding", None)
     exceptional = repository_state_facts()
     layout["current_inventory"] = {
-        "head": command("git", "rev-parse", "HEAD"), "lean_source_count": len(active),
+        "head": command("git", "rev-parse", "HEAD"), "lean_source_count": len(paths),
+        "active_source_count": len(active), "candidate_source_count": len(candidates),
         "counts_by_role": dict(sorted(Counter(entry["source_role"] for entry in active).items())),
         "counts_by_subject": dict(sorted(Counter(entry["subject"] for entry in active).items())),
+        "candidate_counts_by_status": dict(sorted(Counter(
+            entry["status"] for entry in candidates).items())),
+        "candidate_counts_by_subject": dict(sorted(Counter(
+            entry["subject"] for entry in candidates).items())),
         **exceptional,
     }
     LAYOUT_PATH.write_text(json.dumps(layout, ensure_ascii=True, indent=2) + "\n")
-    print(json.dumps({"active_sources": len(active), "library_sources": len(library),
+    print(json.dumps({"present_lean_sources": len(paths), "active_sources": len(active),
+                      "candidate_sources": len(candidates), "library_sources": len(library),
                       "roles": layout["current_inventory"]["counts_by_role"]}, sort_keys=True))
 
 

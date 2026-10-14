@@ -122,6 +122,7 @@
       "GRWTSK/Analysis/Asymptotics/PolynomialErrorBound.lean"
     ],
     "NumberTheory/Moebius": [
+      "GRWTSK/NumberTheory/Moebius/FiniteEulerProduct.lean",
       "GRWTSK/NumberTheory/Moebius/LogarithmicMertensBoundary.lean",
       "GRWTSK/NumberTheory/Moebius/PrimitiveIdentification.lean"
     ],

@@ -150,6 +150,7 @@ import GRWTSK.NumberTheory.Moebius.EnergyGrowthEquivalences
 import GRWTSK.NumberTheory.Moebius.FiniteLaplaceSums
 import GRWTSK.NumberTheory.Moebius.PrimeFilterLaplace
 import GRWTSK.NumberTheory.Moebius.FiniteLaplaceTransform
+import GRWTSK.NumberTheory.Moebius.FiniteEulerProduct
 import GRWTSK.NumberTheory.Moebius.FinitePrimeProductDebt
 import GRWTSK.NumberTheory.Moebius.IntegerSampleGrowth
 import GRWTSK.NumberTheory.Moebius.LaplaceDirichletSeries
