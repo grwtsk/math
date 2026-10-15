@@ -1,0 +1,11 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "role-relation-table-formal",
+  "owner": "indexed_dictionary",
+  "at": "2026-10-15T22:47:02.169840+00:00",
+  "kind": "native-lock-released",
+  "source": "GRWTSK/Combinatorics/DirectedGraph/RoleRelationTable.lean",
+  "exit_code": 0,
+  "all_native_children_exited": true,
+  "log": ".local/role-relation/logs/20261015T224701.299343Z-RoleRelationTable.log"
+}

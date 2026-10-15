@@ -1,0 +1,26 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "role-logwindow-source-scout",
+  "owner": "cache_taxonomy",
+  "at": "2026-10-15T22:52:57.718028+00:00",
+  "kind": "immutable-source-review-complete",
+  "review": {
+    "path": "evidence/Analysis/MellinTransform/gaussian-log-flow-source-review-2026-10-15.json",
+    "sha256": "bfa3bfce81e11a5459bef7e02820d32b6835128a5376f2118fafe6de7d707f17",
+    "bytes": 15046
+  },
+  "author_freeze": {
+    "path": "cache/coordination/events/gaussian-log-window-freeze-41e632a73ab64e79b71f4cd2711de8c1.json",
+    "sha256": "05b1e9179e5f78f61262c86527fc8777aa94c9eab155cc34175c032b255dd04c",
+    "bytes": 2465
+  },
+  "source_hashes": {
+    "GRWTSK/Analysis/MellinTransform/GaussianLogFlow.lean": "eab5f54194b6eaf1589a902c0bfa38589c04de460c45cfb9405d31d458f81013",
+    "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianLogFlow.lean": "a86561922292ff32438853f488f7f3484ae4807ff5832944d832d2aaf901f9ce",
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianLogFlowMissingScale.lean": "1eaf95304f0f2647d15901b3e4caf67d391d524cea78b95edbcd1cd727e9691c"
+  },
+  "finding": "No actionable omitted analyticity, positive-scale identity or actual Cauchy-bound premise observed in the frozen three flow sources.",
+  "native_status": "NOT_RUN",
+  "review_character": "Correlated same-team source/premise/control/credit review, not independent validation. Root-owned native evidence separate.",
+  "preservation": "No shared source/docs/registries/native/Git/remote changes; failed/stale source variants/receipts, earlier source-gap/anchor corrections and incoming custody/NOT_RUN remain intact."
+}

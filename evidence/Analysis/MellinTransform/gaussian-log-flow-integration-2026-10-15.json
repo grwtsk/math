@@ -1,0 +1,108 @@
+{
+  "schema": "selected-mathematical-integration-v1",
+  "at": "2026-10-15T22:56:02.837557+00:00",
+  "source": {
+    "path": "GRWTSK/Analysis/MellinTransform/GaussianLogFlow.lean",
+    "sha256": "eab5f54194b6eaf1589a902c0bfa38589c04de460c45cfb9405d31d458f81013"
+  },
+  "native_receipt": {
+    "path": "evidence/Analysis/MellinTransform/gaussian-log-window-checks-2026-10-15.json",
+    "sha256": "7a59883e76560edf7b4d9b74a0395e3e8ed55cf46f032f845aee680c03038da0"
+  },
+  "source_review": {
+    "path": "evidence/Analysis/MellinTransform/gaussian-log-flow-source-review-2026-10-15.json",
+    "sha256": "bfa3bfce81e11a5459bef7e02820d32b6835128a5376f2118fafe6de7d707f17"
+  },
+  "owned_declarations": 174,
+  "selected_library_owned_count": 9,
+  "owned_modules": [
+    {
+      "declarations": 23,
+      "module": "GRWTSK.Analysis.MellinTransform.ReverseInversion"
+    },
+    {
+      "declarations": 20,
+      "module": "GRWTSK.Analysis.MellinTransform.LogarithmicGaussian"
+    },
+    {
+      "declarations": 22,
+      "module": "GRWTSK.Analysis.MellinTransform.NormalizedGaussian"
+    },
+    {
+      "declarations": 9,
+      "module": "GRWTSK.Analysis.MellinTransform.GaussianLogFlow"
+    },
+    {
+      "declarations": 13,
+      "module": "GRWTSK.Analysis.Fourier.SchwartzMoments"
+    },
+    {
+      "declarations": 21,
+      "module": "GRWTSK.Analysis.MellinTransform.GaussianLogWindow"
+    },
+    {
+      "declarations": 21,
+      "module": "GRWTSK.Analysis.PartitionOfUnity.DyadicAnnulus"
+    },
+    {
+      "declarations": 21,
+      "module": "GRWTSK.Analysis.MellinTransform.CompactGaussianWindow"
+    },
+    {
+      "declarations": 10,
+      "module": "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianLogFlow"
+    },
+    {
+      "declarations": 14,
+      "module": "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianLogWindow"
+    }
+  ],
+  "operational_replay_guards": {
+    "path": "evidence/Combinatorics/DirectedGraph/role-logwindow-operational-controls-2026-10-15.json",
+    "sha256": "8242022528147f22b59627e953494c927b5d602f6cb90f5602f9c76a1b0a13be"
+  },
+  "exact_contracts": [
+    "Actual normalized entire function F(R,z)=C exp(-((log R)+z)^2/4), and for positive R its real restriction equals P(R exp s).",
+    "Unit complex disk around real |s|<=L admits C(a,L)>0 times R^-a, uniformly before all R>0. Actual complex Cauchy derivatives and real restriction yield every derivative bound."
+  ],
+  "accepted_controls": [
+    "Actual entire flow atR0, positive profile identity includingR1/s1, and actual all-real-a/natural-n derivativebound. Exact coefficientnonzero; F(0,1)=c*exp(-1/4) differs fromP(0*exp1)=c. Sole negative supplies0<=0 where0<0 required; not a full zero-scale moment counterexample."
+  ],
+  "open_obligations": [
+    "Real.log is totalized at zero. The R0/s1 failed positive-profile identity is a specific helper-domain counterexample; no full zero-scale Fourier-moment failure is inferred."
+  ],
+  "contribution_roles": [
+    "grwtsk contributors: human mathematical direction",
+    "OpenAI Codex: local formalization/adaptation/checking; correlated source/model review",
+    "Lean/Mathlib: named upstream authors, definitions/proofs and licensing retained"
+  ],
+  "limits": [
+    "Fresh immutable complete selected local import closure and actual positive controls; trust0/fatal/full owned+transitive-axiom audit, only propext/Classical.choice/Quot.sound.",
+    "Generated local object families frozen/rechecked. Clean pinned dependency objects reused/fingerprinted, not cold rebuilt. Whole umbrella not replayed.",
+    "No independent model validation, novelty, runtime refinement, proof/permission authority, full physical detector or RH acceptance."
+  ],
+  "primary_sources": [
+    {
+      "repository": "openai/math",
+      "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "path": "lean/OAI/NumberTheory/DirichletL/Detector/GaussianFlow.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/Detector/GaussianFlow.lean",
+      "archive": ".local/role-logwindow-source-scout/76336098be2f412e9e9fd4516b7705bf/GaussianFlow.lean",
+      "sha256": "86398c70748f960142fac626a425eed4d91623fd4b8a894746c1916126ebf975",
+      "git_blob": "53be336efd7cc551c43856181a7d2dc215eeb041",
+      "bytes": 3816,
+      "retrieved_utc": "2026-10-15T22:45:05.325804+00:00",
+      "declarations": {
+        "gaussianFlow": 10,
+        "gaussianFlow_analytic": 13,
+        "gaussianFlow_real": 16,
+        "iteratedDeriv_restrict_real": 22,
+        "gaussianFlow_disk_bound": 35,
+        "gaussianFlow_derivative_bound": 71
+      },
+      "native_status": "NOT_RUN"
+    }
+  ],
+  "license": "Apache-2.0; OpenAI project and individual upstream Mathlib credits retained.",
+  "joint_receipt_accounting": "Flow and log-window share one analytic census; never count it twice."
+}

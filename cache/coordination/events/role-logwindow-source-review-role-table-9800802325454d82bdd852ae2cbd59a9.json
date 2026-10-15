@@ -1,0 +1,26 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "role-logwindow-source-scout",
+  "owner": "cache_taxonomy",
+  "at": "2026-10-15T22:55:02.477951+00:00",
+  "kind": "immutable-source-review-complete",
+  "review": {
+    "path": "evidence/Combinatorics/DirectedGraph/role-relation-table-source-review-2026-10-15.json",
+    "sha256": "4ce3f600c5cbc4cfe9abcbd90bdaabcc704e3cca2036d8eafd9c0e9bff39da42",
+    "bytes": 16516
+  },
+  "author_completion": {
+    "path": "cache/coordination/events/20261015T225346Z-role-relation-complete-3b857cc2.json",
+    "sha256": "9dcaeb4df2d51835ca0e5571d99b217b362ce98c5ea7fd686ef5b0b76d946332",
+    "bytes": 6216
+  },
+  "source_hashes": {
+    "GRWTSK/Combinatorics/DirectedGraph/RoleRelationTable.lean": "52940e0c878e9d9329e74455da71dc829d643b629c8997332e8a70e458abb7b2",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/RoleRelationTable.lean": "f609f741fd0ec8fc715b07199419be10bfb3f4aaeba15cd1b941a70a450ccab5",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/RoleRelationWrongRole.lean": "51d4bd22114b46d26eec1b8835d3dce21d8c0ce32cf15265807d1be4bc97677a"
+  },
+  "finding": "No actionable omitted full-tag identity, selected-role, root/join, finite-bound, decoder inverse or compaction premise observed in the frozen three role-table sources.",
+  "native_status": "NOT_RUN",
+  "review_character": "Correlated same-team source/premise/control/credit review, not independent validation. Root native evidence separate.",
+  "preservation": "Frozen bytes unchanged; no shared source/docs/registry/native/Git/remote writes."
+}

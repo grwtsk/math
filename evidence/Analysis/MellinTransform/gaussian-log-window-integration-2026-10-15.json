@@ -1,0 +1,129 @@
+{
+  "schema": "selected-mathematical-integration-v1",
+  "at": "2026-10-15T22:56:02.847037+00:00",
+  "source": {
+    "path": "GRWTSK/Analysis/MellinTransform/GaussianLogWindow.lean",
+    "sha256": "258fdbb7e3517ae4f30db165e9281ceb2c80d595d5a891523131c365c6ae1550"
+  },
+  "native_receipt": {
+    "path": "evidence/Analysis/MellinTransform/gaussian-log-window-checks-2026-10-15.json",
+    "sha256": "7a59883e76560edf7b4d9b74a0395e3e8ed55cf46f032f845aee680c03038da0"
+  },
+  "source_review": {
+    "path": "evidence/Analysis/MellinTransform/gaussian-log-window-source-review-2026-10-15.json",
+    "sha256": "31ea223db82627151a33e0b269274288209777ecb48acac48647af1ccd45894f"
+  },
+  "owned_declarations": 174,
+  "selected_library_owned_count": 21,
+  "owned_modules": [
+    {
+      "declarations": 23,
+      "module": "GRWTSK.Analysis.MellinTransform.ReverseInversion"
+    },
+    {
+      "declarations": 20,
+      "module": "GRWTSK.Analysis.MellinTransform.LogarithmicGaussian"
+    },
+    {
+      "declarations": 22,
+      "module": "GRWTSK.Analysis.MellinTransform.NormalizedGaussian"
+    },
+    {
+      "declarations": 9,
+      "module": "GRWTSK.Analysis.MellinTransform.GaussianLogFlow"
+    },
+    {
+      "declarations": 13,
+      "module": "GRWTSK.Analysis.Fourier.SchwartzMoments"
+    },
+    {
+      "declarations": 21,
+      "module": "GRWTSK.Analysis.MellinTransform.GaussianLogWindow"
+    },
+    {
+      "declarations": 21,
+      "module": "GRWTSK.Analysis.PartitionOfUnity.DyadicAnnulus"
+    },
+    {
+      "declarations": 21,
+      "module": "GRWTSK.Analysis.MellinTransform.CompactGaussianWindow"
+    },
+    {
+      "declarations": 10,
+      "module": "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianLogFlow"
+    },
+    {
+      "declarations": 14,
+      "module": "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianLogWindow"
+    }
+  ],
+  "operational_replay_guards": {
+    "path": "evidence/Combinatorics/DirectedGraph/role-logwindow-operational-controls-2026-10-15.json",
+    "sha256": "8242022528147f22b59627e953494c927b5d602f6cb90f5602f9c76a1b0a13be"
+  },
+  "exact_contracts": [
+    "Actual compact Schwartz V times F(R,s), finite support box produced from compact support; real product-rule derivatives and zero exterior derivatives give actual seminorm bounds.",
+    "All actual paired source indices through J+p and weights0,p instantiate existing generic SchwartzMoments. Actual Fourier density of this exact log-window has Integrable weighted norm for every realR; one C(V,a,J)>0 bounds its integral by R^-a before allR>0.",
+    "The actual Fourier integrand for R>0 is V(s)*P(R exp s), with the pinned forward exp(-2pi i s t) convention. The positive-profile source and displayed phase-integrand are proved Integrable, not merely totalized integral equalities."
+  ],
+  "accepted_controls": [
+    "Actual compact nonzero V=priorG(1,0) with valueat3/4 nonzero refutes L0 supportbox; an actual positive supportbox is produced. Actual window compact and weighted density momentIntegrable atR0; positive-profile sourceintegrable and actual densityintegral atR1.",
+    "Actual J2/a1/R1 moment bound and general all-real-a/NatJ bound beforeR>0. Sole negative supplies0<=0 where actual forall supportbox throughnonzeroV is required. Full sourceclosure includes CompactGaussianWindow/DyadicAnnulus used by this positive control."
+  ],
+  "open_obligations": [
+    "Actual density differs from the previous dyadic G Fourier family. Coupled separation/cutoff, density sums, arithmetic/Hecke/calibration/physical suppliers and RH are still open."
+  ],
+  "contribution_roles": [
+    "grwtsk contributors: human mathematical direction",
+    "OpenAI Codex: local formalization/adaptation/checking; correlated source/model review",
+    "Lean/Mathlib: named upstream authors, definitions/proofs and licensing retained"
+  ],
+  "limits": [
+    "Fresh immutable complete selected local import closure and actual positive controls; trust0/fatal/full owned+transitive-axiom audit, only propext/Classical.choice/Quot.sound.",
+    "Generated local object families frozen/rechecked. Clean pinned dependency objects reused/fingerprinted, not cold rebuilt. Whole umbrella not replayed.",
+    "No independent model validation, novelty, runtime refinement, proof/permission authority, full physical detector or RH acceptance."
+  ],
+  "primary_sources": [
+    {
+      "repository": "openai/math",
+      "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "path": "lean/OAI/NumberTheory/DirichletL/Detector/GaussianLogWindow.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/Detector/GaussianLogWindow.lean",
+      "archive": ".local/role-logwindow-source-scout/76336098be2f412e9e9fd4516b7705bf/GaussianLogWindow.lean",
+      "sha256": "e508f509619ab460fd408a82752c3d2694af63fcc8e6a5ec01d9b31910945d02",
+      "git_blob": "34719c10e7a8026457efaff0acc61de7a530a8eb",
+      "bytes": 6776,
+      "retrieved_utc": "2026-10-15T22:45:05.561793+00:00",
+      "declarations": {
+        "gaussianFlow_real_smooth": 10,
+        "gaussianLogWindow": 16,
+        "gaussianLogWindow_derivative_outside": 22,
+        "gaussianLogWindow_derivative_bound": 33,
+        "gaussianLogWindow_seminorm": 62,
+        "gaussianLogWindow_fourier_moment": 79
+      },
+      "native_status": "NOT_RUN"
+    },
+    {
+      "repository": "openai/math",
+      "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "path": "lean/OAI/NumberTheory/DirichletL/Detector/GaussianCoupled.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/Detector/GaussianCoupled.lean",
+      "archive": ".local/role-logwindow-source-scout/76336098be2f412e9e9fd4516b7705bf/GaussianCoupled.lean",
+      "sha256": "21a6117120a386823e2f596b2b5e2e52e7cf4ffebddffac10de8ed320ba9cb5e",
+      "git_blob": "570522241d9ec0d34f26a634c7b5784c332503e8",
+      "bytes": 3288,
+      "retrieved_utc": "2026-10-15T22:45:05.806260+00:00",
+      "declarations": {
+        "gaussianJointDensity": 10,
+        "gaussianProfile_positive_smooth": 13,
+        "gaussianLogWindow_eq_positive": 18,
+        "gaussian_coupled_separation": 24,
+        "gaussian_coupled_family": 35
+      },
+      "native_status": "NOT_RUN"
+    }
+  ],
+  "license": "Apache-2.0; OpenAI project and individual upstream Mathlib credits retained.",
+  "joint_receipt_accounting": "Flow and log-window share one analytic census; never count it twice."
+}
