@@ -1,0 +1,24 @@
+/-
+Human mathematical direction: R.A. Jacob Martone.
+Candidate formalization assistance: OpenAI ChatGPT. MIT.
+CANDIDATE_SOURCE_ONLY. This is the homogeneous algebra behind the finite radial transfer;
+the floor-indexed sum decomposition is a separate uncompiled obligation.
+-/
+import Mathlib.Tactic
+
+set_option autoImplicit false
+
+namespace GRWTSK.NumberTheory.PrimitiveRadialMellin
+
+/-- Denominator monomial of a Tornheim weight. -/
+def denominatorMonomial (p q r a b : ℕ) : ℕ :=
+  a ^ p * b ^ q * (a + b) ^ r
+
+/-- Common gcd scaling contributes exactly the total homogeneity. -/
+theorem denominatorMonomial_scale (p q r d a b : ℕ) :
+    denominatorMonomial p q r (d * a) (d * b) =
+      d ^ (p + q + r) * denominatorMonomial p q r a b := by
+  simp only [denominatorMonomial, mul_pow, ← pow_add]
+  ring
+
+end GRWTSK.NumberTheory.PrimitiveRadialMellin
