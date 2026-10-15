@@ -1,0 +1,44 @@
+{
+  "selected_repository": "grwtsk/math",
+  "observed_main": "9c0ef233ba723096f061d6482f2074a322a4eb6c",
+  "selected_pins": {
+    "lean": "leanprover/lean4:v4.33.0",
+    "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "pins_not_replayed": true
+  },
+  "unchanged_dependency": {
+    "path": "scripts/finite_hermite_isolation.py",
+    "blob": "59a41723067ecf2c1a68d65276bdd2a70f644296",
+    "sha256": "60e7c9383abec772ee1e9a5d82f11104aa6975d203e0aff5b96d562efcb0d922"
+  },
+  "primary_sources": [
+    {
+      "id": "S22",
+      "url": "https://arxiv.org/html/2206.03682v4",
+      "used": "Exact Weil spectral/prime formula, Fourier convention, compact-test/screw adapter; no source positivity assumed."
+    },
+    {
+      "id": "S26",
+      "url": "https://arxiv.org/html/2606.09096v1",
+      "used": "Localized form bottom and source operator framework; global limit is conjectural and unused."
+    },
+    {
+      "id": "H21",
+      "url": "https://arxiv.org/pdf/2102.04663",
+      "used": "Typeset pp1-2, Cor1.2, counting both signs with multiplicity, yields N(T)<=30T^2. Screenshots inspected; no numerical companion replay."
+    },
+    {
+      "id": "K26",
+      "url": "https://arxiv.org/html/2607.24830v1",
+      "used": "Reviewed finite/injected-zero diagnostic; not an input theorem for our rate or a source lower-bound certificate."
+    },
+    {
+      "id": "Mathlib",
+      "path": "Mathlib/Analysis/Convolution.lean",
+      "revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "blob": "2f7b10b145e3f695eb1a9b3f5b47e8041a0efdbe",
+      "scope": "Selected source/API inspection, no native import replay."
+    }
+  ],
+  "priority": "No historical novelty claim; proof derives the rate from explicit compact convolution and counting hypotheses."
+}
