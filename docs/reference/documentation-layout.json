@@ -3544,10 +3544,28 @@
       "source_sha256": "2d1dbbcd5142807daa8a5b6719b0a7bf026aa90991fa030019ed2fc9c0178b0a",
       "status": "fresh-selected",
       "evidence": "evidence/Analysis/MellinTransform/scaled-gaussian-derivatives-checks-2026-10-15.json"
+    },
+    "docs/mathematics/Combinatorics/DirectedGraph/rooted-trace-revision.md": {
+      "title": "Certified revision of rooted trace dictionaries",
+      "subject": "Combinatorics",
+      "object": "DirectedGraph",
+      "primary_source": "GRWTSK/Combinatorics/DirectedGraph/RootedTraceRevision.lean",
+      "source_sha256": "784594334cff23da4bc77f62c5cd66cf8006ad381223026f1b7383e519dfef17",
+      "status": "fresh-selected",
+      "evidence": "evidence/Combinatorics/DirectedGraph/rooted-trace-revision-checks-2026-10-15.json"
+    },
+    "docs/mathematics/Analysis/MellinTransform/gaussian-window-seminorms.md": {
+      "title": "Uniform Schwartz seminorms of Gaussian windows",
+      "subject": "Analysis",
+      "object": "MellinTransform",
+      "primary_source": "GRWTSK/Analysis/MellinTransform/GaussianWindowSeminorms.lean",
+      "source_sha256": "dcfa87ebe43582e02c38b1cc820656fde9160d7d633a6a99e6a3ed6b1e3d93d0",
+      "status": "fresh-selected",
+      "evidence": "evidence/Analysis/MellinTransform/gaussian-window-seminorms-checks-2026-10-15.json"
     }
   },
   "object_binding_registry": "docs/reference/object-source-bindings.json",
-  "object_binding_registry_sha256": "edebc7203953d82214312b106dace67e75449ffc2979dfac01859ee143b65351",
+  "object_binding_registry_sha256": "d14006cf21be4dc4f53c7b524bebf9ec40dd0c037c3b8577c4b8135259f9e74c",
   "navigation": {
     "schema": "subject-index-navigation-v1",
     "summary": "docs/reference/library-summary.json"

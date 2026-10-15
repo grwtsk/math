@@ -1,0 +1,202 @@
+{
+  "schema": "grwtsk.source-review.v1",
+  "task": "revision-seminorm-source-scout",
+  "created_utc": "2026-10-15T21:28:22.196038+00:00",
+  "reviewer": "cache_taxonomy",
+  "review_scope": "Correlated same-team exact-source/premise/control/credit review; not independent validation.",
+  "finding": "No actionable missing root, lookup-agreement premise, full-row identity obligation or false source correspondence observed in the three frozen local files within the bounded scope.",
+  "native_validation": {
+    "performed_by_this_review": false,
+    "status": "NOT_RUN",
+    "authority": "Root-owned fresh native replay and complete owned-declaration audit are separate. Source comparison and author development replay do not confer mathematical acceptance."
+  },
+  "author_completion": {
+    "path": "cache/coordination/events/20261015T212714Z-rooted-revision-complete-8f4d7a35.json",
+    "sha256": "d93e80bc3ccaa9d844726af89f758651e670cad4f6aa1cf3e268f138c951ceb4",
+    "bytes": 6521
+  },
+  "local_sources": [
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/RootedTraceRevision.lean",
+      "sha256": "784594334cff23da4bc77f62c5cd66cf8006ad381223026f1b7383e519dfef17",
+      "bytes": 9615,
+      "archive": ".local/revision-seminorm-source-scout/5f2ef1061af54c86a8c93c16fdb334ed/frozen-local/GRWTSK/Combinatorics/DirectedGraph/RootedTraceRevision.lean",
+      "declarations": {
+        "RootedTrace": 33,
+        "rootedRows": 35,
+        "eraseRoots": 38,
+        "eraseRoots_rootedRows": 42,
+        "liftPacked": 47,
+        "unpack_liftPacked": 52,
+        "expandRevision": 68,
+        "beforePacked": 75,
+        "afterPacked": 79,
+        "expandRevision_encode": 84,
+        "unpack_before": 91,
+        "lifted_agreement": 97,
+        "unpack_after": 110,
+        "revised_valid": 120,
+        "revised_recovers": 138,
+        "certified_revision": 161
+      }
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/RootedTraceRevision.lean",
+      "sha256": "d87c89b8d6ae6bde49895689f19841e3f5e8a91e2adab1b3950b46851ed9e63c",
+      "bytes": 8910,
+      "archive": ".local/revision-seminorm-source-scout/5f2ef1061af54c86a8c93c16fdb334ed/frozen-local/GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/RootedTraceRevision.lean",
+      "declarations": {
+        "falseTag": 21,
+        "trueTag": 24,
+        "tags_distinct": 27,
+        "falseOccurrence": 33,
+        "trueOccurrence": 36,
+        "oldRows": 39,
+        "appendedRows": 42,
+        "repeatedRows": 45,
+        "old_inventory": 48,
+        "appended_inventory": 52,
+        "repeated_inventory": 58,
+        "old_references": 63,
+        "stale_lookup_changed": 69,
+        "stale_references_in_bounds": 76,
+        "stale_not_agreement": 80,
+        "ranks_root_and_bounds_insufficient": 88,
+        "falseCertificate": 97,
+        "stale_actual_unpack": 108,
+        "stale_predicate_rejected": 115,
+        "stale_actual_revision": 126,
+        "repeated_agreement": 133,
+        "repeated_certified_revision": 140,
+        "emptyBefore": 165,
+        "emptyAfter": 168,
+        "empty_raw_context_equal": 171,
+        "empty_root_context_lost": 175,
+        "empty_rooted_output_equal": 177,
+        "empty_roots_still_required": 181
+      }
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/RootedTraceMissingAgreement.lean",
+      "sha256": "9d8c7142222c6015772e3e418fdda83af6e33d60bc7c11db8a8b27a4ffde3449",
+      "bytes": 760,
+      "archive": ".local/revision-seminorm-source-scout/5f2ef1061af54c86a8c93c16fdb334ed/frozen-local/GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/RootedTraceMissingAgreement.lean",
+      "declarations": {}
+    }
+  ],
+  "source_context": {
+    "path": ".local/revision-seminorm-source-scout/5f2ef1061af54c86a8c93c16fdb334ed/review-context-r2.json",
+    "sha256": "0b9a4f348cc88d0d6dbdc5956395fecf4cce2a34219b815f28eb9cfed85b28b7",
+    "bytes": 6340
+  },
+  "planning_fixture_clarification": {
+    "path": "cache/coordination/events/preserving-repeat-fixture-clarification-e95d79917cfa450b9c56324124810282.json",
+    "sha256": "faaa5dc435e62269494a55ad421bcd0b5eaaeba99b62136709570b01ac44dd59",
+    "bytes": 841
+  },
+  "existing_actual_suppliers": [
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/ParentTraceDictionary.lean",
+      "sha256": "c388e127a08238f465873954f0b6982ddbe556d0f77b252d4b2d8f89bf32237a",
+      "bytes": 14294
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/PrefixInventory.lean",
+      "sha256": "fa7395f0c55943562274019d96e97e25deaea20defdf9d6f2d8a12d029e743c9",
+      "bytes": 10259
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/EdgeTrace.lean",
+      "sha256": "e1e5f2dd23b6c04a734af4bd95f3f19c15fe4f313d66c5bccff08b3312fb2a59",
+      "bytes": 8301
+    },
+    {
+      "path": "GRWTSK/Logic/FiniteSequences/IndexedDictionary.lean",
+      "sha256": "c01e5ff8067d652cafb42260ae283786c8cb78710c73eb23079a54bd05fbedff",
+      "bytes": 5972
+    },
+    {
+      "path": "GRWTSK/Logic/FiniteSequences/DictionaryRevision.lean",
+      "sha256": "6c7e6f170b1ea7ad746e4e99b0c15a680433c66d20b6d23538ef4a595bd796df",
+      "bytes": 6357
+    },
+    {
+      "path": "GRWTSK/Logic/FiniteSequences/DecisionCertificate.lean",
+      "sha256": "d7ce67b4eacedb2d84a958636c55cd0ed75be869f552377163c0832449dc0990",
+      "bytes": 5762
+    }
+  ],
+  "pinned_api_reuse": {
+    "mathlib_pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "lean_toolchain": "leanprover/lean4:v4.33.0",
+    "parent_list_option_source_scout": {
+      "path": ".local/parent-trace/api-scout.json",
+      "sha256": "bfccf332de5bb8bfea2e67cee7f7d99f5bc90da132590ff9acb48ea56f513f31",
+      "bytes": 6539
+    },
+    "role": "Existing List/Option checked-decoding and actual codec/certificate APIs are consumed. No new generic decoder, theorem-acceptance logic or foreign-source semantics is assumed. Exact imported source individual credits/licenses remain attached; local new consumer header is R.A. Jacob Martone2026 MIT, human direction R.A. Jacob Martone with OpenAI Codex assistance.",
+    "bounded_duplicate_scope": "Current exact local ParentTraceDictionary, DictionaryRevision and DecisionCertificate statements read; this is their concrete rooted-graph application. No exhaustive API absence or novelty claim."
+  },
+  "primary_anthropic": {
+    "repository": "anthropics/formal-math",
+    "pin": "e1a4e6508154ea59f030480661590a9fe3018011",
+    "path": "3sum-apsp/ThreeSumApsp/Lang/Logic.lean",
+    "source": {
+      "url": "https://raw.githubusercontent.com/anthropics/formal-math/e1a4e6508154ea59f030480661590a9fe3018011/3sum-apsp/ThreeSumApsp/Lang/Logic.lean",
+      "archive": ".local/revision-seminorm-source-scout/5f2ef1061af54c86a8c93c16fdb334ed/AnthropicLogic.lean",
+      "sha256": "859a2842fc684b359d819d0181e0143e8d6576c70f4be725f3a830947bdeb4ee",
+      "git_blob": "508e2040014eeadd11b6a8e1dd68463a9db8fe44",
+      "bytes": 13979
+    },
+    "selected_declarations": "getElem?_append_of_eq_some43, Exec.append62, Ends78/mono83/append89; exact statement/proof text read.",
+    "premises": "Existing successful procedure lookup at the same numeric index survives literal Program append; existing Exec derivation retains limits, depth, statement, states and cost. Ends.mono separately requires budget inequality and explicit pointwise postcondition implication.",
+    "limits": "Light program semantics is not our Option parent decoder or rooted certificate. Literal program append preserves old positions; full-prefix rightmost dedup repacking can change old slots. No AST/state translation, semantics/cost simulation, certificate context, byte equality or native source status is transferred.",
+    "credit": "Copyright2026 Anthropic PBC; Apache-2.0; no individual author header observed."
+  },
+  "primary_arxiv_context": {
+    "title": "Unfoldings and Coverings of Weighted Graphs",
+    "authors": [
+      "Bruno Courcelle"
+    ],
+    "id": "2212.07205v3",
+    "version_utc": "2023-06-13T12:23:51Z",
+    "url": "https://arxiv.org/html/2212.07205v3",
+    "snapshot": {
+      "path": ".local/endpoint-dyadic-source-scout/c84ff313d7694097b4d2d5925551ed37/courcelle-2212.07205v3.html",
+      "url": "https://arxiv.org/html/2212.07205v3",
+      "sha256": "c7bac0f90422a8d891b8333e9ee434aec2f93b733e9d872f893189d22efc03cf",
+      "git_blob": null,
+      "bytes": 1196648
+    },
+    "selected_scope": "Fresh read \u00a72.3 and \u00a73.1 Theorem3.5(1) proof of rooted finite directed walk-prefix unfolding; no broad survey repeated.",
+    "comparison": "Construction context only: no endpoint-section preservation theorem imported. Paper finite/countable rooted graph hypotheses and directed walk/path terminology differ from arbitrary local typed quivers. Local right inverse can exist while reachability preservation fails; no paper full covering/universal property transfer.",
+    "license": "arXiv nonexclusive distribution license; citation/paraphrase only, not code reuse license.",
+    "fresh_selected_scope": "Fresh primary open of \u00a73.1 Theorem3.5(1) proof: father removes last arc, empty walk maps to retained root, nonempty walk maps to final head. Context only; no finite parent codec/termination theorem or paper universal property transfer."
+  },
+  "exact_local_scope": {
+    "rooted_payload": "RootedTrace is V paired with complete typed edge words. rootedRows preserves input keys/order/repetitions; eraseRoots only removes per-payload roots and is proved inverse for a common retained root.",
+    "actual_parent_expansion": "expandRevision actually expands after.nodes through existing ParentTraceDictionary.expandedPacked, maps each dictionary payload to(after.root,fullTrace), and retains before.references. For encoded actual beforeRows/afterRows, expandRevision_encode identifies the actual result with afterPacked. It is not a new assumed codec roundtrip.",
+    "lookup_premises": "lifted_agreement consumes exact root equality and AgreesOnReferences of the actual complete prefix inventories at the actual old ordered references. The lifted Option lookups agree; in-bounds validity, equal endpoints, equal ranks or raw lengths alone cannot replace this premise.",
+    "successful_decoding": "unpack_liftPacked proves root-lifting commutes with the actual checked reference decoder. unpack_before uses the actual inventory packing theorem. unpack_after consumes actual unpack_replaceDictionary and lifted agreement to recover precisely the old rooted trace row list.",
+    "semantic_recovery": "revised_valid and revised_recovers derive entries equality from actual expansion+actual successful unpack, then consume proved old trace validity and existing full EdgeTrace recovery. No hypothesis assumes a desired future decoded list or a generic arbitrary table is rooted-valid.",
+    "certificate_boundary": "certified_revision takes an actual Certificate whose own entries equal the entire old referenced rooted row list. It compares actual revised unpack with certificate.unpack_packed and calls reuse_of_same_decoding. It does not confuse Certificate.packed full-payload numeric slots with prefix-inventory slots or apply reuse_of_agreement to the wrong dictionary. The predicate is of the complete old referenced row list; nothing claims it automatically holds for all new rows.",
+    "outer_root_even_empty": "The theorem consumes beforeRoot=afterRoot and returns encode(beforeRows).root=encode(afterRows).root as an explicit conjunction. This retains the semantic outer root even when there are no payload rows in which to store it. It does not infer root equality from an empty decoded list.",
+    "assumptions": "Generic V,Key and Quiver V, DecidableEq complete TotalEdge tags for actual inventory packing; DecidableEq V for existing certificate packing. No global finite/countable/reachability/order hypothesis is added.",
+    "placement": "Concrete rooted directed-graph consumer under Combinatorics/DirectedGraph; general certificate/revision lemmas stay under Logic/FiniteSequences."
+  },
+  "actual_controls": {
+    "parallel_histories": "One-object Bool parallel loops produce distinct full typed tags F,T despite equal source/target. oldRows=[(11,F)], afterRows=[(11,F),(12,T)]. Actual rightmost-dedup inventories are [[],[F]] versus [[F],[],[T]].",
+    "stale_slot": "Actual old index1 remains in bounds but changes from[F] to[]. Full positive proof establishes both valid parent ranks, same root, valid old references, failed exact agreement, actual successful changed unpack and rejection of the old all-false-loop certificate predicate. Parent expansion success is proved alongside this failure.",
+    "preserving_specific_repeat": "Actual positive repetition is precisely singleton F to[F,F] with keys11,12: inventory remains[[],[F]], agreement holds and the old certificate is genuinely reused. This is not a theorem that appending arbitrary repeated histories preserves rightmost-dedup slots.",
+    "certificate_own_dictionary": "Positive example identifies falseCertificate.packed.dictionary as the single full rooted payload[(star,[F])], distinct from the prefix inventory; this tests the intended decoded-equality bridge.",
+    "empty_context": "Actual encoded empty rows at Bool roots false/true have equal raw node tables, references, raw decode and equal expanded rooted output; agreement is vacuous yet outer roots are different. This proves rooted payload lifting alone cannot retain an absent outer root.",
+    "negative": "The sole intended source tries to supply stale_references_in_bounds (Valid of the actual revised pack) where exact AgreesOnReferences is required. Full stale semantic rejection is already proved in the positive source; compile failure alone supplies no counterexample. Root owns exact failure census/native acceptance."
+  },
+  "source_comparison_limits": [
+    "Actual Anthropic Light.getElem?_append_of_eq_some43 and Exec.append62 preserve existing procedure semantics under literal program append. Ends.mono83 needs an explicit postcondition implication; literal append preserves old positions, while actual full-prefix rightmost-dedup repacking can change them. These are distinct source-language objects, not a simulation of this decoder or certificate. No AST/state/cost/byte/refinement/source-status transfer.",
+    "Courcelle2212.07205v3 section3.1 Theorem3.5(1) proof gives rooted directed-walk-prefix context: remove last arc for parent, empty walk retains root, nonempty endpoint final head. Paper finite/countable rooted-graph premises and walk/path terminology differ. It supplies no finite numeric parent codec, root-aware revision theorem, covering/universal-property or certificate acceptance. ArXiv license is distribution/citation context, not code reuse.",
+    "No foreign formal source is accepted by citation, taxonomy membership or structural analogy. Incoming NOT_RUN statuses and earlier failed/stale receipts remain unchanged.",
+    "No runtime/JSON correspondence, byte/optimal compression, arbitrary revision stability, predicate inheritance for all appended rows, authority or permission claim follows.",
+    "No native jobs/tests, maintained source/docs/shared-registry edits, commits or remote effects by this review."
+  ]
+}

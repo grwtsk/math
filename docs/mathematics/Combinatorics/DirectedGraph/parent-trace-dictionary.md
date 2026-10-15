@@ -50,6 +50,12 @@ This is a finite mathematical representation and reconstruction theorem.
 It supplies no byte compression bound, optimality, incremental slot
 stability, executable cache implementation, or proof/permission authority.
 
+The [rooted revision consumer](rooted-trace-revision.md) now binds the
+outer root and actual old referenced premises across expanded parent
+dictionaries. It derives successful decoding from exact lookup agreement
+before reusing an existing decision certificate. Valid ranks and in-bounds
+indices alone do not establish that agreement.
+
 ## Source, verification and credit
 
 The [source](../../../../GRWTSK/Combinatorics/DirectedGraph/ParentTraceDictionary.lean),
