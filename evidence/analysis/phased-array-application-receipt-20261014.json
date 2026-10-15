@@ -1,0 +1,180 @@
+{
+  "schema": "phase-aware-array-application-receipt-v1",
+  "date": "2026-10-14",
+  "repository": "grwtsk/math",
+  "branch": "main",
+  "inspected_base_commit": "83857bf2e1d1ad2570d8a79d7b05bf885335e969",
+  "status": "WRITTEN_ANALYTIC_LEMMA_AND_EXECUTED_FINITE_COVER_ONLY",
+  "source_bindings": [
+    {
+      "path": "scripts/phase_aware_zeta_cover.py",
+      "bytes": 11026,
+      "sha256": "7b55e9db8c6f143ad3351371685c4f4645323fa044dabe211f52b6c232cea15a",
+      "git_blob_sha1": "bf5e6d4a6edfb301878e574ed8d950ef78027416"
+    },
+    {
+      "path": "scripts/test_phase_aware_zeta_cover.py",
+      "bytes": 8460,
+      "sha256": "64571867f9beec707fbc94d1d1899eced1af4c087cc18d472b0ccfcaa0418cf8",
+      "git_blob_sha1": "6ce54d22052b293e3a48833ad34125b368db8d2a"
+    },
+    {
+      "path": "evidence/analysis/phased-array-transport-20261014.txt",
+      "bytes": 14145,
+      "sha256": "0943d214933bd20c2dfb6a805a3306f23e7212cc3c5f2b8f84f953f534c10c5f",
+      "git_blob_sha1": "411c260e753b44b9960c17ce34db074f8d39ca6c"
+    },
+    {
+      "path": "evidence/analysis/phased-array-argument-applications-20261014.json",
+      "bytes": 5774,
+      "sha256": "b32e6511426b05913768e24d8c4237678cbb0c0d11532dc74e39f0c0fa912174",
+      "git_blob_sha1": "9b0e02d9b2340adb1f184f7d2feca40c767f89a2"
+    },
+    {
+      "path": "evidence/number-theory/zeta/phase-aware-cover-20261014.json",
+      "bytes": 18742,
+      "sha256": "3fdca193a355c2462d4526a6259993a05b54d960efe92956a59000c554d9539c",
+      "git_blob_sha1": "0f3ecb244d9b5fc1a435b351acbb90df0e4b1241"
+    }
+  ],
+  "unchanged_dependencies": [
+    {
+      "path": "scripts/reflected_zeta_cover.py",
+      "bytes": 22120,
+      "sha256": "9811a697087482c64bb6341e84ae38ccc762480e34f863b003195892bfc4636c",
+      "git_blob_sha1": "5d1ed201de62b87d2df2b5cd69f57982471015d3"
+    },
+    {
+      "path": "scripts/test_reflected_zeta_cover.py",
+      "bytes": 10750,
+      "sha256": "d791faa86acc6e103b12609f01290709407af4df44b9f41043e627642cc855f3",
+      "git_blob_sha1": "2bfafd4581776da9392e47e3e9a1d3dd46fbdafe"
+    },
+    {
+      "path": "evidence/number-theory/zeta/reflected-mode-cover-20261014.json",
+      "bytes": 22507,
+      "sha256": "de686c377fefc59c8b87dc89c76774678ef43c0234d22f5202c14e9253192ced",
+      "git_blob_sha1": "479c6790147f3300355522c4afcc88a5e628666a"
+    }
+  ],
+  "results": {
+    "old_cells": 236,
+    "new_cells": 176,
+    "phase_cells": 46,
+    "old_triangle_failures_at_new_phase_cells": 46,
+    "triangle_cells": 121,
+    "root_disk_cells": 9,
+    "unchanged_positive_zero_disks": 4,
+    "unchanged_full_zero_count": 8,
+    "domain": "0<=Re(s)<=1, |Im(s)|<=32 after exact xi reflection and conjugation",
+    "improvement": "60 fewer leaves; same finite domain, source, zero count and completion terms. No universal speedup claim.",
+    "example": {
+      "rectangle": [
+        "1/2",
+        "3/4",
+        "55/4",
+        "14"
+      ],
+      "old_triangle_margin": "negative",
+      "new_phase_margin_at_least": "1/2"
+    },
+    "saturation_scope": "12 explicit argument-family dispositions; not complete repository saturation"
+  },
+  "verification": {
+    "python": "3.13.5",
+    "new_tests_per_mode": 27,
+    "unchanged_baseline_tests_per_mode": 31,
+    "selected_tests_per_mode": 58,
+    "unit_logs": [
+      "...........................\n----------------------------------------------------------------------\nRan 27 tests in 1.767s\n\nOK\n",
+      "...........................\n----------------------------------------------------------------------\nRan 27 tests in 1.682s\n\nOK\n"
+    ],
+    "fresh_process_replays": [
+      {
+        "label": "cover-normal",
+        "command": [
+          "/opt/pyvenv/bin/python",
+          "-B",
+          "scripts/phase_aware_zeta_cover.py",
+          "--verify",
+          "evidence/number-theory/zeta/phase-aware-cover-20261014.json"
+        ],
+        "returncode": 0,
+        "elapsed_seconds": 72.57097644799995,
+        "stdout": "{\n  \"summary\": {\n    \"verified\": true,\n    \"phase_separated_cells\": 46,\n    \"triangle_cells\": 121,\n    \"root_disk_cells\": 9,\n    \"total_cells\": 176,\n    \"positive_zero_count\": 4,\n    \"full_strip_zero_count\": 8,\n    \"height\": \"32\",\n    \"source\": \"F(s)=(s-1)zeta(s); xi supplies zero-set reflection, not F-modulus reflection\",\n    \"scope\": \"Written analytic implications and exact finite arithmetic; not Lean or all heights\"\n  },\n  \"generation\": {}\n}\n",
+        "stderr": ""
+      },
+      {
+        "label": "cover-optimized",
+        "command": [
+          "/opt/pyvenv/bin/python",
+          "-O",
+          "-B",
+          "scripts/phase_aware_zeta_cover.py",
+          "--verify",
+          "evidence/number-theory/zeta/phase-aware-cover-20261014.json"
+        ],
+        "returncode": 0,
+        "elapsed_seconds": 73.80966347000003,
+        "stdout": "{\n  \"summary\": {\n    \"verified\": true,\n    \"phase_separated_cells\": 46,\n    \"triangle_cells\": 121,\n    \"root_disk_cells\": 9,\n    \"total_cells\": 176,\n    \"positive_zero_count\": 4,\n    \"full_strip_zero_count\": 8,\n    \"height\": \"32\",\n    \"source\": \"F(s)=(s-1)zeta(s); xi supplies zero-set reflection, not F-modulus reflection\",\n    \"scope\": \"Written analytic implications and exact finite arithmetic; not Lean or all heights\"\n  },\n  \"generation\": {}\n}\n",
+        "stderr": ""
+      },
+      {
+        "label": "baseline-tests-normal",
+        "command": [
+          "/opt/pyvenv/bin/python",
+          "-B",
+          "scripts/test_reflected_zeta_cover.py"
+        ],
+        "returncode": 0,
+        "elapsed_seconds": 10.009555185999943,
+        "stdout": "",
+        "stderr": "...............................\n----------------------------------------------------------------------\nRan 31 tests in 9.318s\n\nOK\n"
+      },
+      {
+        "label": "baseline-tests-optimized",
+        "command": [
+          "/opt/pyvenv/bin/python",
+          "-O",
+          "-B",
+          "scripts/test_reflected_zeta_cover.py"
+        ],
+        "returncode": 0,
+        "elapsed_seconds": 11.971140964000028,
+        "stdout": "",
+        "stderr": "...............................\n----------------------------------------------------------------------\nRan 31 tests in 9.913s\n\nOK\n"
+      }
+    ],
+    "initial_failure": "One test mistakenly demanded rational equality after outward dyadic rounding of 4/5. Changed only the fixture to check enclosure within 2^-100. Failed log retained; analytic rule and implementation unchanged.",
+    "native_lean": "NOT_RUN: no Lean/Lake executable",
+    "owned_declaration_admission": "NOT_RUN: no active Lean changes",
+    "full_repository_checks": "NOT_RUN: no full checkout, direct Git DNS lookup failed",
+    "external_proof_replay": "NOT_RUN; primary source and rendered-paper inspection only",
+    "previous_sources_guides_pins_receipts": "UNCHANGED"
+  },
+  "diagnostics": [
+    {
+      "path": "evidence/number-theory/zeta/phase-aware-local-improvements-20261014.json",
+      "bytes": 30481,
+      "sha256": "e07c1da5302a0dd7b1b4f9e6985c1d13ceaa33c249c2e68d45352acb3b96af65",
+      "git_blob_sha1": "2c95a5f8fdaa274af51518cef7ed0632b729a969"
+    },
+    {
+      "path": "logs/phase-tests-initial-failure.stderr",
+      "bytes": 789,
+      "sha256": "7034e51f92c90558f512aae414069bcd7c7e372e0a2ea1c02beeb490b31efa6c",
+      "git_blob_sha1": "be3a1452c70fab58de582743d1ece9478c3975ec"
+    }
+  ],
+  "nonclaims": {
+    "RH": false,
+    "all_height_zero_exclusion": false,
+    "new_zero_height_record": false,
+    "new_uniform_signed_energy": false,
+    "new_Mertens_exponent": false,
+    "native_admissions": 0,
+    "all_conversations_recovered": false,
+    "all_repo_arguments_exhausted": false
+  },
+  "remaining": "Supply a source-specific all-domain certificate construction, or the unchanged complete signed bilinear energy bound. Array synthesis alone supplies neither."
+}
