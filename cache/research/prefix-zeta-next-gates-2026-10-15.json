@@ -1,0 +1,471 @@
+{
+  "schema": "grwtsk.research.next-gates.v1",
+  "created_utc": "2026-10-15T20:26:46.991906+00:00",
+  "owner": "cache_taxonomy",
+  "status": "NOT_RUN",
+  "scope": "Bounded next-proof contracts from exact source text and correlated same-team review; no theorem admission, executable refinement, permission authority, exhaustive absence claim, or acceptance transfer.",
+  "native_checks_performed_by_this_task": false,
+  "local_source_bindings": {
+    "occurrence_prefix": {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/OccurrencePrefix.lean",
+      "sha256": "60737e2376594568f390e394417b77c9ea0cc5464693b3ef61502213e3afcee7",
+      "bytes": 6920,
+      "declarations": {
+        "trace": 36,
+        "trace_injective": 39,
+        "trace_comp": 47,
+        "reachable_iff_prefix": 52,
+        "ReachableVertex": 86,
+        "reachableEndpoint": 89,
+        "selectedOccurrence": 93,
+        "endpoint_selectedOccurrence": 96,
+        "endpoint_right_inverse": 100,
+        "reachableEndpoint_surjective": 104,
+        "selectedOccurrence_injective": 107,
+        "retractOccurrence": 111,
+        "retractOccurrence_endpoint": 114,
+        "retractOccurrence_idempotent": 117,
+        "retractOccurrence_eq_iff": 122,
+        "no_left_inverse_of_distinct_histories": 132
+      }
+    },
+    "path_unfolding": {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/PathUnfolding.lean",
+      "sha256": "8d5e2187d705ab49c52a41779b48b445d0baa223c3608ea6495e670ddac24757",
+      "bytes": 10317,
+      "declarations": {
+        "Occurrence": 41,
+        "Occurrence.endpoint": 47,
+        "Occurrence.path": 50,
+        "ofPath": 55,
+        "ofPath_path": 58,
+        "origin": 63,
+        "extend": 66,
+        "Extension": 70,
+        "step": 76,
+        "projection": 80,
+        "projection_step": 85,
+        "extension_length": 88,
+        "extension_height_lt": 92,
+        "unique_incoming": 98,
+        "root_or_incoming": 113,
+        "unfoldingArborescence": 122,
+        "uniqueRootPath": 129,
+        "liftHistory": 133,
+        "projection_liftHistory": 138,
+        "ofPath_comp_projection": 148,
+        "outgoingStarEquiv": 160,
+        "outgoing_star_bijective": 173,
+        "path_star_bijective": 177,
+        "unique_finite_lift": 181,
+        "endpoint_range_iff": 186,
+        "endpoint_surjective_iff": 194,
+        "no_arrow_into_origin": 203,
+        "empty_origin_costar": 207,
+        "origin_costar_not_surjective": 210,
+        "not_covering_of_incoming": 217
+      }
+    },
+    "edge_trace": {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/EdgeTrace.lean",
+      "sha256": "e1e5f2dd23b6c04a734af4bd95f3f19c15fe4f313d66c5bccff08b3312fb2a59",
+      "bytes": 8301,
+      "declarations": {
+        "TotalEdge": 34,
+        "taggedPrefunctor": 37,
+        "encodePath": 42,
+        "encode": 46,
+        "encodePath_nil": 49,
+        "encodePath_toPath": 52,
+        "encodePath_comp": 56,
+        "encodePath_cons": 61,
+        "ValidFrom": 66,
+        "finish": 71,
+        "finish_append": 75,
+        "validFrom_append_iff": 81,
+        "finish_encodePath": 90,
+        "validFrom_encodePath": 97,
+        "tagged_star_injective": 105,
+        "encode_injective": 114,
+        "decode": 123,
+        "encode_decode": 131,
+        "decode_encode": 145,
+        "decode_endpoint": 151,
+        "pathStarEquivTrace": 159,
+        "wrong_root_not_valid": 167,
+        "broken_join_not_valid": 171
+      }
+    },
+    "prefix_obstruction": {
+      "path": "GRWTSK/Order/Embeddings/PrefixObstruction.lean",
+      "sha256": "438d46160c2131154dc49b6c345208207c4ba0931ec0487a08153a0291ac8f46",
+      "bytes": 6424,
+      "declarations": {
+        "PreservesPrefix": 31,
+        "ReflectsPrefix": 35,
+        "comparable_of_common_upper": 39,
+        "no_prefix_representation_of_incomparable_upper": 48,
+        "chainAddress": 57,
+        "chainAddress_prefix_iff": 59,
+        "chainAddress_representation": 62,
+        "chainAddress_injective": 68,
+        "Diamond": 74,
+        "DiamondLe": 79,
+        "diamondLe_refl": 81,
+        "diamondLe_trans": 83,
+        "diamondLe_antisymm": 87,
+        "diamond_has_no_prefix_representation": 92,
+        "diamondRank": 99,
+        "diamondAddress": 105,
+        "diamondAddress_injective": 107,
+        "diamondAddress_preserves": 115,
+        "diamondAddress_not_reflects": 121,
+        "injective_preservation_without_reflection": 128
+      }
+    },
+    "gaussian_contour": {
+      "path": "GRWTSK/NumberTheory/LSeries/GaussianContour.lean",
+      "sha256": "66fdcea9766830cda6d2cfc02bc603b7b54c3f70b49e91b3f26cab4d1e1a4017",
+      "bytes": 6936,
+      "declarations": {
+        "gaussianZetaSummand": 33,
+        "gaussianZetaContour": 37,
+        "gaussianDirichletWeight_summable_iff": 42,
+        "gaussianZetaSummand_norm": 51,
+        "gaussianZetaSummand_integrable": 63,
+        "gaussianZetaSummand_integral_norm": 77,
+        "gaussianZetaSummand_integral_norm_summable": 83,
+        "gaussianZetaSummand_ratio": 88,
+        "gaussianZetaSummand_integral": 98,
+        "gaussianMellinProfile_sum_summable": 105,
+        "gaussianZetaContour_eq_tsum": 115
+      }
+    },
+    "normalized_gaussian": {
+      "path": "GRWTSK/Analysis/MellinTransform/NormalizedGaussian.lean",
+      "sha256": "a0ed0dbf644601887df128536951a9c3e17ecf42970069a13acdfcb93518e3bf",
+      "bytes": 6685,
+      "declarations": {
+        "gaussianMellinProfile": 23,
+        "gaussianMellinCoefficient": 27,
+        "quarter_root": 30,
+        "gaussianMellinCoefficient_normalizes": 40,
+        "gaussianMellinProfile_eq_quarter": 54,
+        "gaussianMellinProfile_convergent": 65,
+        "gaussianMellinProfile_mellin": 73,
+        "gaussian_transform_vertical_norm": 86,
+        "gaussian_transform_vertical_integrable": 94,
+        "gaussian_transform_vertical_continuous": 100,
+        "gaussianMellinProfile_continuousAt": 104,
+        "gaussianMellinProfile_inverse": 118,
+        "gaussianMellin_inversion": 129
+      }
+    }
+  },
+  "completed_source_reviews": [
+    {
+      "path": "evidence/Combinatorics/DirectedGraph/occurrence-prefix-source-review-2026-10-15.json",
+      "sha256": "2c2b0661fdf4691ebbab53354da3d931431d92edfffea367e4873e4ce89a006e",
+      "bytes": 14242
+    },
+    {
+      "path": "evidence/NumberTheory/LSeries/gaussian-contour-source-review-2026-10-15.json",
+      "sha256": "75ca8aa3efe09c5defea94b946143c3cbf79f8f2ca0c1af209992227bc7e4b18",
+      "bytes": 19800
+    }
+  ],
+  "primary_manifests": [
+    {
+      "path": ".local/prefix-zeta-next-gates/440b8df6959b4e0495e33ffe56758f60/manifest.json",
+      "sha256": "2414506cdc7e8bb9289dac981a935928759bad1017fc0ebbbdb10eb1a50289d9",
+      "bytes": 2081
+    },
+    {
+      "path": ".local/gaussian-zeta-next-frontier/5d4d9afa7c1046a583a55b8d846e14f1/manifest.json",
+      "sha256": "51045af1a63df8e292dd63e90ac8bea7b6856fa2e0766109c6624a04061df82a",
+      "bytes": 6993
+    },
+    {
+      "path": ".local/unfolding-normalized-next-gates/43283db56a564739906537b99127286b/manifest.json",
+      "sha256": "c576f52e992479ffec55a2711bdac819a6d850840e4ed5bd7a414994d114cf73",
+      "bytes": 1437
+    }
+  ],
+  "selected_openai_sources": {
+    "GaussianDecomposition.lean": {
+      "repository": "openai/math",
+      "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "path": "lean/OAI/NumberTheory/DirichletL/Detector/GaussianDecomposition.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/Detector/GaussianDecomposition.lean",
+      "sha256": "494752f7dcd2e0916be5e4d3c7a64c24e5551a9bc5a5f278200e46f068ebf389",
+      "git_blob": "6516b3a43e8574749aee349689c32dbc71adae12",
+      "bytes": 3890,
+      "archive": ".local/prefix-zeta-next-gates/440b8df6959b4e0495e33ffe56758f60/lean/OAI/NumberTheory/DirichletL/Detector/GaussianDecomposition.lean",
+      "declarations": {
+        "annular_reassembly_summable": 12,
+        "annular_reassembly": 24,
+        "gaussian_dyadic_correctedSummand": 35,
+        "gaussian_correctedSummand_norm_ge_one": 60,
+        "correctedGaussian_eq_tsum_dyadic": 70
+      },
+      "native_status": "NOT_RUN",
+      "credit": "No individual author header observed in these selected files; retain project and declaration-level provenance. Project Apache-2.0."
+    },
+    "GaussianPartition.lean": {
+      "repository": "openai/math",
+      "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "path": "lean/OAI/NumberTheory/DirichletL/Detector/GaussianPartition.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/Detector/GaussianPartition.lean",
+      "sha256": "e8c07b6a103deb0f0e65277c1a06b5035a36482560d9ac5c6389eaf4c783277b",
+      "git_blob": "e63aebf6a6c6794a9f11b0322b19eba9a46a73eb",
+      "bytes": 4236,
+      "archive": ".local/prefix-zeta-next-gates/440b8df6959b4e0495e33ffe56758f60/lean/OAI/NumberTheory/DirichletL/Detector/GaussianPartition.lean",
+      "declarations": {
+        "gaussianCutoff": 11,
+        "gaussianAnnulus": 12,
+        "gaussianCutoff_small": 14,
+        "gaussianCutoff_large": 16,
+        "gaussianAnnulus_small": 18,
+        "gaussianAnnulus_large": 20,
+        "gaussianAnnulus_contDiff": 22,
+        "gaussianAnnulus_compact": 26,
+        "gaussianAnnulus_nonneg": 36,
+        "gaussianAnnulus_norm": 41,
+        "gaussianAnnulus_support_scales": 47,
+        "gaussianAnnulus_partition": 65,
+        "gaussianAnnulus_partition_norm": 82
+      },
+      "native_status": "NOT_RUN",
+      "credit": "No individual author header observed in these selected files; retain project and declaration-level provenance. Project Apache-2.0."
+    },
+    "GaussianWindows.lean": {
+      "repository": "openai/math",
+      "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "path": "lean/OAI/NumberTheory/DirichletL/Detector/GaussianWindows.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/Detector/GaussianWindows.lean",
+      "sha256": "045f00d06e64c005c0d37031c3842152d959fea2609ce4cb2f4916f7485f8f50",
+      "git_blob": "227f98000f2a0b3c1572a76dc2e33eec29f5c402",
+      "bytes": 3832,
+      "archive": ".local/prefix-zeta-next-gates/440b8df6959b4e0495e33ffe56758f60/lean/OAI/NumberTheory/DirichletL/Detector/GaussianWindows.lean",
+      "declarations": {
+        "gaussianMellinProfile_real": 11,
+        "gaussianDyadicProfile": 23,
+        "gaussianDyadicProfile_small": 26,
+        "gaussianDyadicProfile_large": 29,
+        "gaussianDyadicProfile_compact": 33,
+        "gaussianDyadicProfile_contDiff": 43,
+        "gaussianDyadicProfile_Vstar": 75
+      },
+      "native_status": "NOT_RUN",
+      "credit": "No individual author header observed in these selected files; retain project and declaration-level provenance. Project Apache-2.0."
+    },
+    "Row.lean": {
+      "repository": "openai/math",
+      "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "path": "lean/OAI/NumberTheory/DirichletL/Detector/Row.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/Detector/Row.lean",
+      "sha256": "94cd0a68ced17d2ad52c67c13af03a3d199568862ebe43fde2f9f0ed96949ce0",
+      "git_blob": "d4faf3e78ce4a3bedf58665009d12cbc8c3196cf",
+      "bytes": 5130,
+      "archive": ".local/gaussian-zeta-next-frontier/5d4d9afa7c1046a583a55b8d846e14f1/lean/OAI/NumberTheory/DirichletL/Detector/Row.lean",
+      "declarations": {
+        "targetMonoid": 15,
+        "targetMonoid_norm_le_one": 20,
+        "rowCoefficient": 26,
+        "rowCoefficient_apply": 31,
+        "rowCoefficient_apply_unit": 36,
+        "rowCoefficient_norm_le_one": 46,
+        "spectralSummand": 55,
+        "spectralRow": 61,
+        "spectralSummand_norm_le": 64,
+        "spectralRow_summable": 85
+      },
+      "native_status": "NOT_RUN",
+      "credit": "No individual author header observed in these selected files; retain project and declaration-level provenance. Project Apache-2.0."
+    },
+    "RowAnalytic.lean": {
+      "repository": "openai/math",
+      "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "path": "lean/OAI/NumberTheory/DirichletL/Detector/RowAnalytic.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/Detector/RowAnalytic.lean",
+      "sha256": "0feee26f076e10767a3f7426fe13c89e56db7e60a8bb1e0dc73fb5684d609511",
+      "git_blob": "1e1d2ab36cda0ae412c116a925fccf07090650e6",
+      "bytes": 5312,
+      "archive": ".local/gaussian-zeta-next-frontier/5d4d9afa7c1046a583a55b8d846e14f1/lean/OAI/NumberTheory/DirichletL/Detector/RowAnalytic.lean",
+      "declarations": {
+        "fullIdealWeight_norm_eq_of_re": 14,
+        "fullIdealWeight_continuous": 21,
+        "rowMajorant": 31,
+        "rowMajorant_summable": 34,
+        "spectralSummand_vertical_bound": 40,
+        "spectralRow_continuous_vertical": 49,
+        "spectralRow_vertical_bound": 59,
+        "verticalKernel_norm": 67,
+        "spectralRow_vertical_integrable": 80
+      },
+      "native_status": "NOT_RUN",
+      "credit": "No individual author header observed in these selected files; retain project and declaration-level provenance. Project Apache-2.0."
+    },
+    "PhysicalAnalytic.lean": {
+      "repository": "openai/math",
+      "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "path": "lean/OAI/NumberTheory/DirichletL/Detector/PhysicalAnalytic.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/Detector/PhysicalAnalytic.lean",
+      "sha256": "2c333bbf6a0252156005ca3654c53172e3352d3776dcd01356a623fceaca3fd7",
+      "git_blob": "e68ffb8310680af93f8aece99872ba7b9b2b3aa3",
+      "bytes": 3141,
+      "archive": ".local/gaussian-zeta-next-frontier/5d4d9afa7c1046a583a55b8d846e14f1/lean/OAI/NumberTheory/DirichletL/Detector/PhysicalAnalytic.lean",
+      "declarations": {
+        "CalibrationData.residueMonoid_norm_le_one": 12,
+        "CalibrationData.Xi_norm_le_one": 19,
+        "CalibrationData.Xi_norm_one": 26,
+        "calibrated_rowCoefficient_apply": 42,
+        "physicalRow_integrable": 49
+      },
+      "native_status": "NOT_RUN",
+      "credit": "No individual author header observed in these selected files; retain project and declaration-level provenance. Project Apache-2.0."
+    },
+    "GaussianCompletion.lean": {
+      "repository": "openai/math",
+      "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "path": "lean/OAI/NumberTheory/DirichletL/Detector/GaussianCompletion.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/Detector/GaussianCompletion.lean",
+      "sha256": "5ee7ec8c1869fcce035ad7aa2b0dffefa706cc1d5d42e4385f3330d1149ceeb1",
+      "git_blob": "df898d322013e3d8375a637df488a2da73a31ca3",
+      "bytes": 5034,
+      "archive": ".local/unfolding-normalized-next-gates/43283db56a564739906537b99127286b/lean/OAI/NumberTheory/DirichletL/Detector/GaussianCompletion.lean",
+      "declarations": {
+        "gaussianCompletedProfile": 14,
+        "gaussianCompleted_Vstar": 16,
+        "gaussian_mellinSummand": 22,
+        "gaussian_correctedSummand_summable": 54,
+        "spectralRow_eq_gaussianCompleted": 66,
+        "markedPhysicalProbe_eq_gaussian": 76
+      },
+      "native_status": "NOT_RUN",
+      "credit": "No individual author header observed in these selected files; retain project and declaration-level provenance. Project Apache-2.0."
+    },
+    "RowInterchange.lean": {
+      "repository": "openai/math",
+      "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "path": "lean/OAI/NumberTheory/DirichletL/Detector/RowInterchange.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/Detector/RowInterchange.lean",
+      "sha256": "a2cce044bfc064c73bcca39bc04ee79052b64909904c30773b36648c2eca7fff",
+      "git_blob": "5d703cb7d55802241dcef8df8b35854ae9c84fb9",
+      "bytes": 3872,
+      "archive": ".local/unfolding-normalized-next-gates/43283db56a564739906537b99127286b/lean/OAI/NumberTheory/DirichletL/Detector/RowInterchange.lean",
+      "declarations": {
+        "spectralSummand_norm_eq_of_re": 12,
+        "mellinSummand": 19,
+        "mellinSummand_norm": 24,
+        "mellinSummand_integrable": 34,
+        "mellinSummand_integral_norm": 48,
+        "spectralRow_integral_eq_tsum": 56
+      },
+      "native_status": "NOT_RUN",
+      "credit": "No individual author header observed in these selected files; retain project and declaration-level provenance. Project Apache-2.0."
+    }
+  },
+  "license": {
+    "identifier": "Apache-2.0",
+    "repository_license_raw_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "repository_license_git_blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+    "obligation": "Preserve upstream attribution and license on any future adaptation; citations do not constitute local proof acceptance."
+  },
+  "gates": [
+    {
+      "id": "reachable-endpoint-section-diamond-obstruction",
+      "status": "NOT_RUN",
+      "subject": "Combinatorics/DirectedGraph",
+      "contract": "For arbitrary V with Quiver V and root, put R = OccurrencePrefix.ReachableVertex root. If a,b,c : R satisfy Reachable a.val c.val and Reachable b.val c.val, but neither Reachable a.val b.val nor Reachable b.val a.val, prove there is no s : R → PathUnfolding.Occurrence root with Function.RightInverse s OccurrencePrefix.reachableEndpoint and ∀ x y : R, Reachable x.val y.val → Reachable (s x) (s y).",
+      "existing_reuse": [
+        "PrefixObstruction.no_prefix_representation_of_incomparable_upper already proves the combinatorial prefix obstruction.",
+        "Use address = OccurrencePrefix.trace ∘ s. Preservation follows from the assumed source preservation and reachable_iff_prefix. Reflection uses reachable_iff_prefix in reverse, actual PathUnfolding.projection.mapPath, and endpoint identities supplied by RightInverse.",
+        "Current endpoint_right_inverse supplies an actual selectedOccurrence section, so arbitrary endpoint-section existence is already known and is not the new theorem."
+      ],
+      "concrete_control": {
+        "object": "Reuse PrefixObstruction.Diamond and its existing DiamondLe relation. A local quiver has Hom a b := PLift (DiamondLe a b).",
+        "graph_scope": "This is the reflexive/transitive thin diamond quiver: identity loops and the bottom→top shortcut are present. It is not the four-edge Hasse DAG. No finite occurrence-set claim is permitted.",
+        "proof_obligations": [
+          "Prove Reachable a b ↔ DiamondLe a b by Path induction with diamondLe_refl/trans and edge.down; the reverse is an actual one-edge path PLift.up h.",
+          "Every vertex is reachable from bottom using DiamondLe bottom v. The two middle vertices reach top and cannot reach one another.",
+          "Apply the generic obstruction and prove the actual selectedOccurrence section fails reachability preservation. Endpoint right inverse alone remains true.",
+          "A positive control must prove the full concrete obstruction. A sole intended negative consumer may then try to pass endpoint_right_inverse as ancestry-preservation evidence."
+        ]
+      },
+      "premise_limits": [
+        "No finiteness, countability, acyclicity, connectedness, or thinness assumption in the generic theorem.",
+        "Do not reprove the old combinatorial obstruction or claim a paper universal property, JSON correspondence, or runtime refinement."
+      ]
+    },
+    {
+      "id": "actual-log-gaussian-dyadic-window-consumer",
+      "status": "NOT_RUN",
+      "subject": "Analysis/MellinTransform and NumberTheory/LSeries",
+      "primary_sources": [
+        "GaussianPartition.lean",
+        "GaussianWindows.lean",
+        "GaussianDecomposition.lean"
+      ],
+      "objects": {
+        "P": "The exact current normalized GaussianMellin profile; no replacement by an unnormalized density.",
+        "theta": "Real.smoothTransition",
+        "A": "A(y) = theta(2-y) - theta(2-2*y), cast to ℂ, as the actual gaussianAnnulus.",
+        "scale_index": "j : ℕ, with y/(2:ℝ)^j; no unannounced extension to j : ℤ.",
+        "G": "The exact upstream dyadic profile is G(Z,j,y) = A(y) * P((2:ℝ)^j*y/Z) / (Real.sqrt y : ℂ). Preserve its square-root factor."
+      },
+      "contract": "For Z > 0, specialize actual upstream annular reassembly to a(n)=P((n+1)/Z), N(n)=n+1. Prove the product series Summable (fun q : ℕ × ℕ => A((q.1+1)/(2:ℝ)^q.2) * P((q.1+1)/Z)) and the equality ∑'j:ℕ, ∑'n:ℕ, A((n+1)/(2:ℝ)^j)*P((n+1)/Z) = ∑'n:ℕ, P((n+1)/Z). For σ > 1, identify this with the already defined coefficient-one GaussianContour at (σ,Z) using its existing actual identity.",
+      "obligations": [
+        "Establish the actual A support, nonnegative real value, norm identity, HasSum partition and HasSum norm partition. The Nat-indexed partition requires 1 ≤ x.",
+        "Supply Summable a from the current GaussianContour Gaussian profile summability theorem at Z > 0, and N(n) ≥ 1 directly; do not assume the reassembly or absolute interchange as a parameter.",
+        "Prove each fixed-j n-sum is finite supported from the actual support interval [1/2,2], rather than merely asserting truncation.",
+        "If promoting the actual G API, prove its compact support and smoothness for Z > 0 and the positive-y square-root cancellation with the exact upstream formula."
+      ],
+      "controls": [
+        "Prove the genuine missing-coverage counterexample x=1/4: every A(x/2^j) is zero for j : ℕ, hence their sum is zero and cannot equal one. Only then test rejection of weakening 1 ≤ x to 0 < x.",
+        "Preserve Z > 0 in any smoothness/positive logarithm argument.",
+        "Preserve σ > 1 for the existing ordinary-zeta contour consumer. No contour crossing, analytic continuation, or RH consequence follows."
+      ],
+      "nonduplicate_scope": "This is a new concrete coefficient-one consumer of the just-completed Gaussian sum, not a literal port of the entire ideal/mask/character theorem. Existing Mathlib smoothTransition and current absolute-zeta interchange are reuse, not new proof progress.",
+      "bounded_search_limit": "Read-only bounded exact-name/pattern searches did not locate this particular gaussianAnnulus/Nat-dyadic partition/reassembly contract in selected local GRWTSK and pinned Mathlib sources. This is not an exhaustive absence or novelty claim."
+    },
+    {
+      "id": "original-weighted-ideal-gaussian-supplier-closure",
+      "status": "NOT_RUN",
+      "subject": "NumberTheory/LSeries",
+      "priority": "Later supplier gate; the ordinary natural-number coefficient-one theorem does not discharge it.",
+      "primary_sources": [
+        "GaussianCompletion.lean",
+        "RowInterchange.lean",
+        "Row.lean",
+        "RowAnalytic.lean",
+        "PhysicalAnalytic.lean"
+      ],
+      "actual_objects": "O is the actual cubic Eisenstein ring; Id = Ideal O. Preserve S : Finset Id, D : Id, and Ψ : O →* ℂ with ∀ a, ‖Ψ a‖ ≤ 1. Retain the actual ideal-pair indices, completed mask/correction and arithmetic weights.",
+      "coefficient": "c(I,J) = completedMask S D I J * completedCorrection I J * (columnWeight Ψ I / sqrt(absNorm I)) * cubeWeight Ψ J.",
+      "kernel_ratio": "q = absNorm I * absNorm J ^ 3 / Z; both zero-ideal cases must remain explicit.",
+      "required_supplier_proofs": [
+        "For σ > 1, resolve and pin the actual defining dependency for fullIdealWeight_summable_norm and establish/replay its ideal norm summability at σ and 3σ. Its defining proof was not resolved in this bounded selected-source review.",
+        "Discharge actual mask norm ≤ 1, correction norm ≤ 2, column/sqrt norm ≤ 1 and cube-weight norm ≤ 1, retaining the Ψ bound. The actual row majorant is 2 * (‖fullIdealWeight σ I‖ * ‖fullIdealWeight (3*σ) J‖).",
+        "For the physical rowCoefficient consumer, derive the required coefficient bound using the actual C.Xi_norm_le_one / rowCoefficient_norm_le_one dependencies, finite quotient/nonzero modulus and support hypotheses wherever used; do not delete hΨ.",
+        "Establish the actual countable ideal-pair absolute interchange and Gaussian evaluation for σ > 1 and Z > 0, including zero ideals, before claiming spectralRow_eq_gaussianCompleted or markedPhysicalProbe_eq_gaussian locally."
+      ],
+      "limits": [
+        "Ordinary shifted natural-number p-series do not supply ideal weight summability.",
+        "A generic assumed Fubini theorem, a signal wrapper, or renaming an upstream statement is not this supplier closure.",
+        "No original arithmetic theorem in this gate has been locally admitted by this task. No RH or analytic continuation claim."
+      ]
+    }
+  ],
+  "coordination": {
+    "graph_findings": "Direct bounded read-only findings from indexed_dictionary; the final smaller thin DiamondLe quiver supersedes the optional stronger four-edge fixture suggestion.",
+    "analysis_findings": "Direct bounded read-only findings from cache_adapter, checked against exact archived primary bytes for selected files.",
+    "review_character": "Correlated same-team source/premise review, not independent validation."
+  },
+  "preservation": {
+    "prior_source_reviews": "Unchanged. Exact completed review references above retain all their source, control, failed/stale and native-scope boundaries.",
+    "earlier_failed_variants": "The earlier EdgeTrace generated-helper audit failure and stale intermediate OccurrencePrefix census remain historical evidence; this record changes no receipt or status.",
+    "incoming_native_statuses": "No incoming source NOT_RUN status is promoted by this planning record.",
+    "shared_registry_and_cursor": "Not edited; root owns integration, frontier and continuation."
+  }
+}

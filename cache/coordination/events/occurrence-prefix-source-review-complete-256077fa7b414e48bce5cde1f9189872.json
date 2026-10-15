@@ -1,0 +1,24 @@
+{
+  "schema": "repository-agent-event-v1",
+  "id": "occurrence-prefix-source-review-complete-256077fa7b414e48bce5cde1f9189872",
+  "at": "2026-10-15T20:16:26.537448+00:00",
+  "owner": "cache_taxonomy",
+  "task": "prefix-zeta-source-scout",
+  "review": {
+    "path": "evidence/Combinatorics/DirectedGraph/occurrence-prefix-source-review-2026-10-15.json",
+    "sha256": "2c2b0661fdf4691ebbab53354da3d931431d92edfffea367e4873e4ce89a006e",
+    "bytes": 14242
+  },
+  "source_hashes": {
+    "GRWTSK/Combinatorics/DirectedGraph/OccurrencePrefix.lean": "60737e2376594568f390e394417b77c9ea0cc5464693b3ef61502213e3afcee7",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/OccurrencePrefix.lean": "0b746beb3ea685eac5a94e987b95280aa5a4135a5716c67e6ccf802d7d2de2b6",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/OccurrenceMissingHistory.lean": "78b1f89e7ab51f8ebf6d67aa6b6e4a7ab84397e20989bf41bf487fc7c761d448"
+  },
+  "author_freeze": {
+    "path": "cache/coordination/events/20261015T201524Z-occurrence-prefix-complete-8ae23669.json",
+    "sha256": "25567aaf8b02683e6f0bf41894c70baca20e53322d8e4f35622061d000ddcda6",
+    "bytes": 10025
+  },
+  "status": "SOURCE_REVIEW_COMPLETE_CORRELATED_NATIVE_NOT_RUN_BY_REVIEWER",
+  "result": "Exact source/premise/control and bounded operational boundary review; no actionable omission observed. Root fresh native acceptance separate. No prior/shared source or status edited."
+}

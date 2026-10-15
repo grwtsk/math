@@ -4,23 +4,24 @@
 
 | Inventory | Count |
 |---|---:|
-| Object guides | 5 |
+| Object guides | 6 |
 | Documented object groups | 2 |
-| Distinct primary sources linked | 4 |
-| Lean source modules | 17 |
+| Distinct primary sources linked | 5 |
+| Lean source modules | 20 |
 | Archive intake records | 0 |
 | Selected catalog families | 1 |
 
 These counts measure documentation and source coverage. They do not count accepted theorems or establish that every source module is documented or checked. [Definitions and limits](../../reference/library-pages.md#count-definitions).
 
-154 source declaration commands, including 99 theorem/lemma commands, across 17 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+187 source declaration commands, including 122 theorem/lemma commands, across 20 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
 ## DirectedGraph
 
-3 object guides · 3 distinct linked primary source files.
+4 object guides · 4 distinct linked primary source files.
 
-Linked primary-source scope: 71 source declaration commands, including 47 theorem/lemma commands, across 3 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+Linked primary-source scope: 87 source declaration commands, including 58 theorem/lemma commands, across 4 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
+- [Occurrence reachability and complete trace prefixes](DirectedGraph/occurrence-prefix.md).
 - [Ordered occurrences of directed paths](DirectedGraph/path-occurrences.md).
 - [Typed edge traces of directed paths](DirectedGraph/edge-trace.md).
 - [Unfolding all rooted path occurrences](DirectedGraph/path-unfolding.md).

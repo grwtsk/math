@@ -1,0 +1,13 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "gaussian-zeta-formal",
+  "event": "dev-lock-released",
+  "at": "2026-10-15T20:14:38.749407+00:00",
+  "owner": "cache_adapter",
+  "attempt": ".local/gaussian-zeta/bffdcedf59b84d329028357347537196/attempts/Positive-attempt04",
+  "source_sha256": "5a56762e927413d0395c75d9add5ec8094ec4ffc7ca29b105fc6f34e23510383",
+  "competing_jobs": [],
+  "receipt": ".local/gaussian-zeta/bffdcedf59b84d329028357347537196/attempts/Positive-attempt04.json",
+  "exit_code": 0,
+  "native_jobs_running": 0
+}

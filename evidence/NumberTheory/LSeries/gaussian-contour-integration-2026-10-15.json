@@ -1,0 +1,75 @@
+{
+  "schema": "selected-mathematical-integration-v1",
+  "at": "2026-10-15T20:18:07.616465+00:00",
+  "source": {
+    "path": "GRWTSK/NumberTheory/LSeries/GaussianContour.lean",
+    "sha256": "66fdcea9766830cda6d2cfc02bc603b7b54c3f70b49e91b3f26cab4d1e1a4017"
+  },
+  "native_receipt": {
+    "path": "evidence/NumberTheory/LSeries/gaussian-contour-checks-2026-10-15.json",
+    "sha256": "64e7dd6ebad36b14c4348456ad9bb1354011fc983ea223ac08408de710536bf9"
+  },
+  "source_review": {
+    "path": "evidence/NumberTheory/LSeries/gaussian-contour-source-review-2026-10-15.json",
+    "sha256": "75ca8aa3efe09c5defea94b946143c3cbf79f8f2ca0c1af209992227bc7e4b18"
+  },
+  "owned_declarations": 83,
+  "owned_modules": [
+    {
+      "declarations": 23,
+      "module": "GRWTSK.Analysis.MellinTransform.ReverseInversion"
+    },
+    {
+      "declarations": 20,
+      "module": "GRWTSK.Analysis.MellinTransform.LogarithmicGaussian"
+    },
+    {
+      "declarations": 22,
+      "module": "GRWTSK.Analysis.MellinTransform.NormalizedGaussian"
+    },
+    {
+      "declarations": 13,
+      "module": "GRWTSK.NumberTheory.LSeries.GaussianContour"
+    },
+    {
+      "declarations": 5,
+      "module": "GRWTSK.NumberTheory.LSeries.Checks.Positive.GaussianContour"
+    }
+  ],
+  "operational_replay_guards": {
+    "path": "evidence/Combinatorics/DirectedGraph/prefix-zeta-operational-controls-2026-10-15.json",
+    "sha256": "36360760920b8e93c2c4a3b30b0569c0946688d9ddf402eb244889e8145131a7"
+  },
+  "contribution_roles": [
+    "grwtsk contributors: human direction",
+    "OpenAI Codex: formalization/adaptation/checking; correlated source/model review",
+    "Lean/Mathlib: upstream definitions/proofs, exact named original authors and licenses retained"
+  ],
+  "limits": [
+    "Fresh selected local import closure plus accepted positive controls, trust0/fatal warnings/complete owned-transitive census; only propext/Classical.choice/Quot.sound.",
+    "Generated project object families exact membership/hash/size checked before subsequent imports and acceptance; pinned dependency objects reused/fingerprinted, not cold rebuilt.",
+    "No operational Lean/Python/JSON correspondence, hash/zlib/IO refinement, model independence, whole-library acceptance, continuation to sigma<=1 or RH supplier."
+  ],
+  "exact_contracts": [
+    "For real sigma>1,Z>0, actual coefficient1 riemannZeta Gaussian contour equals tsum_n P((n+1)/Z) for exact normalized Gaussian P.",
+    "Shifted positive-natural-number real-power weight summable iff1<sigma; exact Gaussian contour summand norm, individual integrability and integrated-norm formula.",
+    "Actual absolute integrated-norm summability supplied by p-series; actual Mathlib zeta Dirichlet identity and integral/tsum interchange, termwise proved normalized inversion with positive-ratio cpow algebra.",
+    "Actual profile sum summability supplied; strict half-plane obstruction for absolute interchange is kept distinct from any possible continuation identity."
+  ],
+  "accepted_controls": [
+    "Generic sigma>1,Z>0 plus concrete sigma2,Z1 actual consumer.",
+    "Named sigma1 failure of actual absolute-interchange supplier, rather than a claim that all continued contour identities fail.",
+    "Sole intended missing-half-plane type rejection; normalization retains preceding accepted counterexamples."
+  ],
+  "license": "Apache-2.0; OpenAI primary analytic pattern and exact normalized supplier; Mathlib named RiemannZeta/p-series/Gaussian/Mellin/integral authors retained.",
+  "primary_source": {
+    "repository": "openai/math",
+    "commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+    "GaussianCompletion_raw_sha256": "5ee7ec8c1869fcce035ad7aa2b0dffefa706cc1d5d42e4385f3330d1149ceeb1",
+    "RowInterchange_raw_sha256": "a2cce044bfc064c73bcca39bc04ee79052b64909904c30773b36648c2eca7fff"
+  },
+  "open_obligations": [
+    "No wholesale upstream cubic-ideal/Hecke detector admission or arbitrary coefficient bounds.",
+    "No contour shift, residue/continuation across1, zero-free region, actual signal/growth/cancellation or RH supplier."
+  ]
+}

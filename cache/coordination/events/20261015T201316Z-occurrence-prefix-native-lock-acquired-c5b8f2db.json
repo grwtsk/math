@@ -1,0 +1,10 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "occurrence-prefix-formal",
+  "owner": "indexed_dictionary",
+  "at": "2026-10-15T20:13:16.743809+00:00",
+  "kind": "native-lock-acquired",
+  "source": "SelectedAudit.lean",
+  "source_sha256": "2b154f37f711022fe2a99725c250b655775021457f8645be1874e80ccbe2597a",
+  "guard_competing_jobs": []
+}

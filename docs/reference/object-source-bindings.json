@@ -151,7 +151,8 @@
       "GRWTSK/NumberTheory/ArithmeticFunctions/MoebiusTruncation.lean"
     ],
     "NumberTheory/LSeries": [
-      "GRWTSK/NumberTheory/LSeries/ClosedMoebiusPolynomial.lean"
+      "GRWTSK/NumberTheory/LSeries/ClosedMoebiusPolynomial.lean",
+      "GRWTSK/NumberTheory/LSeries/GaussianContour.lean"
     ],
     "Analysis/Complex/CriticalReflection": [
       "GRWTSK/Analysis/Complex/CriticalReflection.lean"
@@ -177,6 +178,7 @@
     ],
     "Combinatorics/DirectedGraph": [
       "GRWTSK/Combinatorics/DirectedGraph/EdgeTrace.lean",
+      "GRWTSK/Combinatorics/DirectedGraph/OccurrencePrefix.lean",
       "GRWTSK/Combinatorics/DirectedGraph/PathOccurrences.lean",
       "GRWTSK/Combinatorics/DirectedGraph/PathUnfolding.lean"
     ],

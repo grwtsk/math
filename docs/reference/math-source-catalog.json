@@ -5996,20 +5996,20 @@
     }
   ],
   "counts_by_operation": {
-    "add": 70,
+    "add": 76,
     "keep": 336,
     "move": 206
   },
   "counts_by_role": {
     "audit-driver": 35,
-    "library": 359,
-    "negative-control": 119,
-    "positive-check": 99
+    "library": 361,
+    "negative-control": 121,
+    "positive-check": 101
   },
   "counts_by_subject": {
     "Algebra": 19,
     "Analysis": 214,
-    "Combinatorics": 17,
+    "Combinatorics": 20,
     "Data": 1,
     "DynamicalSystems": 16,
     "GroupTheory": 4,
@@ -6017,13 +6017,13 @@
     "LinearAlgebra": 53,
     "Logic": 63,
     "MeasureTheory": 5,
-    "NumberTheory": 188,
+    "NumberTheory": 191,
     "Order": 6,
     "Spectral": 25
   },
-  "present_lean_source_count": 675,
+  "present_lean_source_count": 681,
   "schema": "grwtsk-math-source-catalog-v1",
-  "source_count": 612,
+  "source_count": 618,
   "sources": [
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -6177,6 +6177,7 @@
         "GRWTSK.Analysis.TestFunctions.Separation",
         "GRWTSK.Analysis.WeakDerivatives.PolynomialBump",
         "GRWTSK.Combinatorics.DirectedGraph.EdgeTrace",
+        "GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix",
         "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences",
         "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding",
         "GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.Moser",
@@ -6279,6 +6280,7 @@
         "GRWTSK.NumberTheory.ExplicitFormula.CorrelationPairing",
         "GRWTSK.NumberTheory.FirstPrime",
         "GRWTSK.NumberTheory.LSeries.ClosedMoebiusPolynomial",
+        "GRWTSK.NumberTheory.LSeries.GaussianContour",
         "GRWTSK.NumberTheory.LSeries.TruncatedMoebiusSeries",
         "GRWTSK.NumberTheory.Moebius.ComparisonEnergy",
         "GRWTSK.NumberTheory.Moebius.CompositeActivationExamples",
@@ -6559,7 +6561,7 @@
         "GRWTSK/Logic/ProofChecking/Checks/OwnedDeclarationAudit.lean"
       ],
       "runner": "python3 -B scripts/check_ccc_energy.py",
-      "sha256": "f77b34620b241c6f3a3f0a0c7c6565bf9db325b220868f9c6a0e3a54fbad2466",
+      "sha256": "50c598a8537ed684e83345024b25347a2b763f6d4e9a560e81a3a6a02c82f54f",
       "source_role": "library",
       "source_root": ".",
       "subject": "Library",
@@ -6568,7 +6570,7 @@
         "inventory": "observed-current-bytes",
         "layout": "repository baseline remains failed",
         "lean": "umbrella not replayed after selected import additions",
-        "source_sha256": "f77b34620b241c6f3a3f0a0c7c6565bf9db325b220868f9c6a0e3a54fbad2466"
+        "source_sha256": "50c598a8537ed684e83345024b25347a2b763f6d4e9a560e81a3a6a02c82f54f"
       },
       "working_tree_state": "tracked-modified"
     },
@@ -22923,7 +22925,8 @@
       ],
       "reverse_consumers": [
         "GRWTSK",
-        "GRWTSK.Analysis.MellinTransform.Checks.Positive.NormalizedGaussian"
+        "GRWTSK.Analysis.MellinTransform.Checks.Positive.NormalizedGaussian",
+        "GRWTSK.NumberTheory.LSeries.GaussianContour"
       ],
       "runner": "python3 -B scripts/check_normalized_gaussian.py",
       "sha256": "a0ed0dbf644601887df128536951a9c3e17ecf42970069a13acdfcb93518e3bf",
@@ -24963,6 +24966,50 @@
         "Lean and Mathlib: upstream APIs and proofs"
       ],
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/prefix-zeta-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Existing PathUnfolding occurrences wrap fixed-root actual PathStar histories; full typed EdgeTrace list retains every source/target/arrow occurrence.",
+        "Occurrence reachability and trace prefix use actual valid suffix reconstruction. Endpoint section is only a right inverse; same endpoint does not recover histories or imply occurrence reachability."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.OccurrencePrefix"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "logical_status": "intended rejected control; no theorem admission",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.OccurrenceMissingHistory",
+      "namespaces": [],
+      "object": "DirectedGraph/Checks/Negative",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/OccurrenceMissingHistory.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/OccurrenceMissingHistory.lean",
+      "placement_rationale": "Exact path-occurrence reachability and typed trace prefix contracts belong to Combinatorics/DirectedGraph.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B scripts/check_occurrence_prefix.py",
+      "sha256": "78b1f89e7ab51f8ebf6d67aa6b6e4a7ab84397e20989bf41bf487fc7c761d448",
+      "source_role": "negative-control",
+      "source_root": "GRWTSK",
+      "subject": "Combinatorics",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/OccurrenceMissingHistory.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/occurrence-prefix-checks-2026-10-15.json",
+        "source_sha256": "78b1f89e7ab51f8ebf6d67aa6b6e4a7ab84397e20989bf41bf487fc7c761d448"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
       "design_reference": "cache/research/path-mellin-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
       "explicit_premises": [
         "Actual Quiver.Path with typed endpoints; vertices chronological, toList reverse source order.",
@@ -25133,6 +25180,140 @@
         "lean": "see immutable selected replay receipt",
         "replay_binding": "evidence/Combinatorics/DirectedGraph/edge-trace-checks-2026-10-15.json",
         "source_sha256": "2b4cc40b89f7f154a3f383e575c357799cf9b0a39d6a54f20d2a93f8a5626687"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/prefix-zeta-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Existing PathUnfolding occurrences wrap fixed-root actual PathStar histories; full typed EdgeTrace list retains every source/target/arrow occurrence.",
+        "Occurrence reachability and trace prefix use actual valid suffix reconstruction. Endpoint section is only a right inverse; same endpoint does not recover histories or imply occurrence reachability."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.OccurrencePrefix",
+      "namespaces": [
+        "GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix.Checks.Positive"
+      ],
+      "object": "DirectedGraph/Checks/Positive",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/OccurrencePrefix.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/OccurrencePrefix.lean",
+      "placement_rationale": "Exact path-occurrence reachability and typed trace prefix contracts belong to Combinatorics/DirectedGraph.",
+      "public_declarations": [
+        {
+          "kind": "def",
+          "line": 32,
+          "name": "emptyOccurrence"
+        },
+        {
+          "kind": "def",
+          "line": 34,
+          "name": "falseOccurrence"
+        },
+        {
+          "kind": "def",
+          "line": 37,
+          "name": "trueOccurrence"
+        },
+        {
+          "kind": "def",
+          "line": 40,
+          "name": "twiceOccurrence"
+        },
+        {
+          "kind": "theorem",
+          "line": 52,
+          "name": "actual_chain"
+        },
+        {
+          "kind": "theorem",
+          "line": 63,
+          "name": "parallel_occurrences_distinct"
+        },
+        {
+          "kind": "theorem",
+          "line": 68,
+          "name": "parallel_traces_incomparable"
+        },
+        {
+          "kind": "theorem",
+          "line": 77,
+          "name": "parallel_occurrences_incomparable"
+        },
+        {
+          "kind": "theorem",
+          "line": 88,
+          "name": "base_reachable_to_empty"
+        },
+        {
+          "kind": "theorem",
+          "line": 91,
+          "name": "occurrence_not_reachable_to_empty"
+        },
+        {
+          "kind": "theorem",
+          "line": 100,
+          "name": "endpoint_summary_does_not_reflect"
+        },
+        {
+          "kind": "theorem",
+          "line": 106,
+          "name": "retraction_does_not_reflect_ancestry"
+        },
+        {
+          "kind": "theorem",
+          "line": 113,
+          "name": "parallel_retraction_loses_history"
+        },
+        {
+          "kind": "def",
+          "line": 118,
+          "name": "unitLoopOccurrence"
+        },
+        {
+          "kind": "theorem",
+          "line": 122,
+          "name": "unit_histories_distinct"
+        },
+        {
+          "kind": "theorem",
+          "line": 128,
+          "name": "unit_retraction_loses_history"
+        },
+        {
+          "kind": "theorem",
+          "line": 132,
+          "name": "unit_no_endpoint_left_inverse"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.OccurrenceMissingHistory"
+      ],
+      "runner": "python3 -B scripts/check_occurrence_prefix.py",
+      "sha256": "0b746beb3ea685eac5a94e987b95280aa5a4135a5716c67e6ccf802d7d2de2b6",
+      "source_role": "positive-check",
+      "source_root": "GRWTSK",
+      "subject": "Combinatorics",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/OccurrencePrefix.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/occurrence-prefix-checks-2026-10-15.json",
+        "source_sha256": "0b746beb3ea685eac5a94e987b95280aa5a4135a5716c67e6ccf802d7d2de2b6"
       },
       "working_tree_state": "untracked-at-selected-replay"
     },
@@ -25437,7 +25618,8 @@
       "reverse_consumers": [
         "GRWTSK",
         "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.EdgeTraceMissingJoin",
-        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.EdgeTrace"
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.EdgeTrace",
+        "GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix"
       ],
       "runner": "python3 -B scripts/check_edge_trace.py",
       "sha256": "e1e5f2dd23b6c04a734af4bd95f3f19c15fe4f313d66c5bccff08b3312fb2a59",
@@ -25451,6 +25633,137 @@
         "lean": "see immutable selected replay receipt",
         "replay_binding": "evidence/Combinatorics/DirectedGraph/edge-trace-checks-2026-10-15.json",
         "source_sha256": "e1e5f2dd23b6c04a734af4bd95f3f19c15fe4f313d66c5bccff08b3312fb2a59"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/prefix-zeta-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Existing PathUnfolding occurrences wrap fixed-root actual PathStar histories; full typed EdgeTrace list retains every source/target/arrow occurrence.",
+        "Occurrence reachability and trace prefix use actual valid suffix reconstruction. Endpoint section is only a right inverse; same endpoint does not recover histories or imply occurrence reachability."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.EdgeTrace",
+        "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix",
+      "namespaces": [
+        "GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix"
+      ],
+      "object": "DirectedGraph",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/OccurrencePrefix.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Combinatorics/DirectedGraph/OccurrencePrefix.lean",
+      "placement_rationale": "Exact path-occurrence reachability and typed trace prefix contracts belong to Combinatorics/DirectedGraph.",
+      "public_declarations": [
+        {
+          "kind": "def",
+          "line": 34,
+          "name": "trace"
+        },
+        {
+          "kind": "theorem",
+          "line": 38,
+          "name": "trace_injective"
+        },
+        {
+          "kind": "theorem",
+          "line": 46,
+          "name": "trace_comp"
+        },
+        {
+          "kind": "theorem",
+          "line": 50,
+          "name": "reachable_iff_prefix"
+        },
+        {
+          "kind": "abbrev",
+          "line": 84,
+          "name": "ReachableVertex"
+        },
+        {
+          "kind": "def",
+          "line": 87,
+          "name": "reachableEndpoint"
+        },
+        {
+          "kind": "def",
+          "line": 91,
+          "name": "selectedOccurrence"
+        },
+        {
+          "kind": "theorem",
+          "line": 95,
+          "name": "endpoint_selectedOccurrence"
+        },
+        {
+          "kind": "theorem",
+          "line": 98,
+          "name": "endpoint_right_inverse"
+        },
+        {
+          "kind": "theorem",
+          "line": 103,
+          "name": "reachableEndpoint_surjective"
+        },
+        {
+          "kind": "theorem",
+          "line": 106,
+          "name": "selectedOccurrence_injective"
+        },
+        {
+          "kind": "def",
+          "line": 109,
+          "name": "retractOccurrence"
+        },
+        {
+          "kind": "theorem",
+          "line": 113,
+          "name": "retractOccurrence_endpoint"
+        },
+        {
+          "kind": "theorem",
+          "line": 116,
+          "name": "retractOccurrence_idempotent"
+        },
+        {
+          "kind": "theorem",
+          "line": 120,
+          "name": "retractOccurrence_eq_iff"
+        },
+        {
+          "kind": "theorem",
+          "line": 130,
+          "name": "no_left_inverse_of_distinct_histories"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.OccurrencePrefix"
+      ],
+      "runner": "python3 -B scripts/check_occurrence_prefix.py",
+      "sha256": "60737e2376594568f390e394417b77c9ea0cc5464693b3ef61502213e3afcee7",
+      "source_role": "library",
+      "source_root": "GRWTSK",
+      "subject": "Combinatorics",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/OccurrencePrefix.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/occurrence-prefix-checks-2026-10-15.json",
+        "source_sha256": "60737e2376594568f390e394417b77c9ea0cc5464693b3ef61502213e3afcee7"
       },
       "working_tree_state": "untracked-at-selected-replay"
     },
@@ -25776,7 +26089,8 @@
       ],
       "reverse_consumers": [
         "GRWTSK",
-        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PathUnfolding"
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PathUnfolding",
+        "GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix"
       ],
       "runner": "python3 -B scripts/check_path_unfolding.py",
       "sha256": "8d5e2187d705ab49c52a41779b48b445d0baa223c3608ea6495e670ddac24757",
@@ -41504,6 +41818,126 @@
       "working_tree_state": "tracked-clean"
     },
     {
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: GaussianCompletion/RowInterchange source context and exact normalized Gaussian supplier; Mathlib RiemannZeta/p-series/integral authors retain individual credit"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/prefix-zeta-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Real sigma>1 and Z>0; actual riemannZeta Dirichlet series on its convergent half-plane; exact normalized Gaussian profile.",
+        "Individual contour integrability, sum of integrated norms and profile summability supplied from actual Gaussian integrability and positive natural-number p-series; no assumed Fubini or signal representation."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.NumberTheory.LSeries.Checks.Positive.GaussianContour"
+      ],
+      "license": "Apache-2.0",
+      "logical_status": "intended rejected control; no theorem admission",
+      "module": "GRWTSK.NumberTheory.LSeries.Checks.Negative.GaussianContourMissingHalfPlane",
+      "namespaces": [],
+      "object": "LSeries/Checks/Negative",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/NumberTheory/LSeries/Checks/Negative/GaussianContourMissingHalfPlane.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/NumberTheory/LSeries/Checks/Negative/GaussianContourMissingHalfPlane.lean",
+      "placement_rationale": "Actual riemannZeta Dirichlet series and Gaussian smoothed contour sums belong to NumberTheory/LSeries; general Mellin dependencies remain in Analysis/MellinTransform.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B scripts/check_gaussian_contour.py",
+      "sha256": "64ba991461f9816a2e2b8dbc9ddcf8e69fe75164efc1e35f712c66faede3e9c7",
+      "source_role": "negative-control",
+      "source_root": "GRWTSK",
+      "subject": "NumberTheory",
+      "target_path": "GRWTSK/NumberTheory/LSeries/Checks/Negative/GaussianContourMissingHalfPlane.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/NumberTheory/LSeries/gaussian-contour-checks-2026-10-15.json",
+        "source_sha256": "64ba991461f9816a2e2b8dbc9ddcf8e69fe75164efc1e35f712c66faede3e9c7"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: GaussianCompletion/RowInterchange source context and exact normalized Gaussian supplier; Mathlib RiemannZeta/p-series/integral authors retain individual credit"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/prefix-zeta-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Real sigma>1 and Z>0; actual riemannZeta Dirichlet series on its convergent half-plane; exact normalized Gaussian profile.",
+        "Individual contour integrability, sum of integrated norms and profile summability supplied from actual Gaussian integrability and positive natural-number p-series; no assumed Fubini or signal representation."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.NumberTheory.LSeries.GaussianContour"
+      ],
+      "license": "Apache-2.0",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.NumberTheory.LSeries.Checks.Positive.GaussianContour",
+      "namespaces": [
+        "GRWTSK.NumberTheory.LSeries.GaussianContour.Checks"
+      ],
+      "object": "LSeries/Checks/Positive",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/NumberTheory/LSeries/Checks/Positive/GaussianContour.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/NumberTheory/LSeries/Checks/Positive/GaussianContour.lean",
+      "placement_rationale": "Actual riemannZeta Dirichlet series and Gaussian smoothed contour sums belong to NumberTheory/LSeries; general Mellin dependencies remain in Analysis/MellinTransform.",
+      "public_declarations": [
+        {
+          "kind": "theorem",
+          "line": 9,
+          "name": "gaussianContour_generic"
+        },
+        {
+          "kind": "theorem",
+          "line": 13,
+          "name": "gaussianContour_two_one"
+        },
+        {
+          "kind": "theorem",
+          "line": 17,
+          "name": "gaussianProfile_sum_one"
+        },
+        {
+          "kind": "theorem",
+          "line": 21,
+          "name": "gaussianDirichletWeight_one_not_summable"
+        },
+        {
+          "kind": "theorem",
+          "line": 27,
+          "name": "gaussianZetaSummand_one_integral_norm_not_summable"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK.NumberTheory.LSeries.Checks.Negative.GaussianContourMissingHalfPlane"
+      ],
+      "runner": "python3 -B scripts/check_gaussian_contour.py",
+      "sha256": "b04a625e167ec32081408f8cd769e5bd4e523b5f043935e1c2ce9ccf32976f12",
+      "source_role": "positive-check",
+      "source_root": "GRWTSK",
+      "subject": "NumberTheory",
+      "target_path": "GRWTSK/NumberTheory/LSeries/Checks/Positive/GaussianContour.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/NumberTheory/LSeries/gaussian-contour-checks-2026-10-15.json",
+        "source_sha256": "b04a625e167ec32081408f8cd769e5bd4e523b5f043935e1c2ce9ccf32976f12"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
       "git_blob": "154afd5d8d5a907ca956e6ad3d435ae8734b3415",
       "imports": [
@@ -41574,6 +42008,114 @@
         "source_sha256": "17adb06dd4f26f4f323a3c7aeff14cd965b04348432a51f8007775a2c7ad69e9"
       },
       "working_tree_state": "tracked-clean"
+    },
+    {
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: GaussianCompletion/RowInterchange source context and exact normalized Gaussian supplier; Mathlib RiemannZeta/p-series/integral authors retain individual credit"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/prefix-zeta-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Real sigma>1 and Z>0; actual riemannZeta Dirichlet series on its convergent half-plane; exact normalized Gaussian profile.",
+        "Individual contour integrability, sum of integrated norms and profile summability supplied from actual Gaussian integrability and positive natural-number p-series; no assumed Fubini or signal representation."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Analysis.MellinTransform.NormalizedGaussian",
+        "Mathlib.MeasureTheory.Integral.DominatedConvergence",
+        "Mathlib.NumberTheory.LSeries.RiemannZeta"
+      ],
+      "license": "Apache-2.0",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.NumberTheory.LSeries.GaussianContour",
+      "namespaces": [
+        "GRWTSK.NumberTheory.LSeries.GaussianContour"
+      ],
+      "object": "LSeries",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/NumberTheory/LSeries/GaussianContour.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/NumberTheory/LSeries/GaussianContour.lean",
+      "placement_rationale": "Actual riemannZeta Dirichlet series and Gaussian smoothed contour sums belong to NumberTheory/LSeries; general Mellin dependencies remain in Analysis/MellinTransform.",
+      "public_declarations": [
+        {
+          "kind": "def",
+          "line": 32,
+          "name": "gaussianZetaSummand"
+        },
+        {
+          "kind": "def",
+          "line": 36,
+          "name": "gaussianZetaContour"
+        },
+        {
+          "kind": "lemma",
+          "line": 41,
+          "name": "gaussianDirichletWeight_summable_iff"
+        },
+        {
+          "kind": "lemma",
+          "line": 50,
+          "name": "gaussianZetaSummand_norm"
+        },
+        {
+          "kind": "lemma",
+          "line": 62,
+          "name": "gaussianZetaSummand_integrable"
+        },
+        {
+          "kind": "lemma",
+          "line": 76,
+          "name": "gaussianZetaSummand_integral_norm"
+        },
+        {
+          "kind": "lemma",
+          "line": 82,
+          "name": "gaussianZetaSummand_integral_norm_summable"
+        },
+        {
+          "kind": "lemma",
+          "line": 87,
+          "name": "gaussianZetaSummand_ratio"
+        },
+        {
+          "kind": "lemma",
+          "line": 97,
+          "name": "gaussianZetaSummand_integral"
+        },
+        {
+          "kind": "theorem",
+          "line": 103,
+          "name": "gaussianMellinProfile_sum_summable"
+        },
+        {
+          "kind": "theorem",
+          "line": 113,
+          "name": "gaussianZetaContour_eq_tsum"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.NumberTheory.LSeries.Checks.Positive.GaussianContour"
+      ],
+      "runner": "python3 -B scripts/check_gaussian_contour.py",
+      "sha256": "66fdcea9766830cda6d2cfc02bc603b7b54c3f70b49e91b3f26cab4d1e1a4017",
+      "source_role": "library",
+      "source_root": "GRWTSK",
+      "subject": "NumberTheory",
+      "target_path": "GRWTSK/NumberTheory/LSeries/GaussianContour.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/NumberTheory/LSeries/gaussian-contour-checks-2026-10-15.json",
+        "source_sha256": "66fdcea9766830cda6d2cfc02bc603b7b54c3f70b49e91b3f26cab4d1e1a4017"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",

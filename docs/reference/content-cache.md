@@ -133,6 +133,16 @@ source/occurrence construction with its own native receipt. Finite cache
 snapshots and the operational relation-ID schema do not acquire an executable
 unfolding, universal property or semantic refinement from that theorem.
 
+The [occurrence-prefix result](../mathematics/Combinatorics/DirectedGraph/occurrence-prefix.md)
+relates existing unfolding reachability to complete typed edge-trace prefixes.
+Endpoint equality and base reachability do not replace exact history. The
+separate read-only `scripts/cache_trace_prefix.py` consumer compares two fully
+validated operational traces at the same source snapshot, raw taxonomy,
+fixed root and relation role. It retains both file identities and every
+ordered edge occurrence. Its bounded tests and actual comparison receipts
+are operational evidence; the Lean/runtime relation-graph correspondence,
+proof authority and permission implications remain unestablished.
+
 The separate occurrence-trace adapter validates one fixed root, one typed
 relation kind, forward direction, exact relation content and ordered endpoint
 joins. Its current source snapshot and exact taxonomy byte/revision bindings

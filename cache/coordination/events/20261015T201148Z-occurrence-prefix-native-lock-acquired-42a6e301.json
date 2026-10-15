@@ -1,0 +1,10 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "occurrence-prefix-formal",
+  "owner": "indexed_dictionary",
+  "at": "2026-10-15T20:11:48.733463+00:00",
+  "kind": "native-lock-acquired",
+  "source": "GRWTSK/Combinatorics/DirectedGraph/OccurrencePrefix.lean",
+  "source_sha256": "60737e2376594568f390e394417b77c9ea0cc5464693b3ef61502213e3afcee7",
+  "guard_competing_jobs": []
+}

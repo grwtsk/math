@@ -360,3 +360,5 @@ import GRWTSK.Combinatorics.DirectedGraph.EdgeTrace
 import GRWTSK.Analysis.MellinTransform.LogarithmicGaussian
 import GRWTSK.Combinatorics.DirectedGraph.PathUnfolding
 import GRWTSK.Analysis.MellinTransform.NormalizedGaussian
+import GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix
+import GRWTSK.NumberTheory.LSeries.GaussianContour

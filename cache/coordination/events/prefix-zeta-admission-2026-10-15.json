@@ -1,0 +1,101 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "prefix-zeta-round",
+  "event": "selected-native-acceptance-and-actual-prefix-consumers",
+  "at": "2026-10-15T20:27:00.830661+00:00",
+  "selected": [
+    {
+      "source": {
+        "path": "GRWTSK/Combinatorics/DirectedGraph/OccurrencePrefix.lean",
+        "sha256": "60737e2376594568f390e394417b77c9ea0cc5464693b3ef61502213e3afcee7"
+      },
+      "native_receipt": {
+        "path": "evidence/Combinatorics/DirectedGraph/occurrence-prefix-checks-2026-10-15.json",
+        "sha256": "819363b4f1099fc115a4fd92e95820448353610fc49a5feedb8026fec1d5930b"
+      },
+      "owned_declarations": 154,
+      "owned_modules": [
+        {
+          "declarations": 52,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding"
+        },
+        {
+          "declarations": 18,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences"
+        },
+        {
+          "declarations": 46,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.EdgeTrace"
+        },
+        {
+          "declarations": 21,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix"
+        },
+        {
+          "declarations": 17,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.OccurrencePrefix"
+        }
+      ],
+      "integration": {
+        "path": "evidence/Combinatorics/DirectedGraph/occurrence-prefix-integration-2026-10-15.json",
+        "sha256": "6e3cfb22b014a2f54ac298b8e7f0a1b75b7b1b2dc5f8d9bdedac5eec93b0648d"
+      }
+    },
+    {
+      "source": {
+        "path": "GRWTSK/NumberTheory/LSeries/GaussianContour.lean",
+        "sha256": "66fdcea9766830cda6d2cfc02bc603b7b54c3f70b49e91b3f26cab4d1e1a4017"
+      },
+      "native_receipt": {
+        "path": "evidence/NumberTheory/LSeries/gaussian-contour-checks-2026-10-15.json",
+        "sha256": "64e7dd6ebad36b14c4348456ad9bb1354011fc983ea223ac08408de710536bf9"
+      },
+      "owned_declarations": 83,
+      "owned_modules": [
+        {
+          "declarations": 23,
+          "module": "GRWTSK.Analysis.MellinTransform.ReverseInversion"
+        },
+        {
+          "declarations": 20,
+          "module": "GRWTSK.Analysis.MellinTransform.LogarithmicGaussian"
+        },
+        {
+          "declarations": 22,
+          "module": "GRWTSK.Analysis.MellinTransform.NormalizedGaussian"
+        },
+        {
+          "declarations": 13,
+          "module": "GRWTSK.NumberTheory.LSeries.GaussianContour"
+        },
+        {
+          "declarations": 5,
+          "module": "GRWTSK.NumberTheory.LSeries.Checks.Positive.GaussianContour"
+        }
+      ],
+      "integration": {
+        "path": "evidence/NumberTheory/LSeries/gaussian-contour-integration-2026-10-15.json",
+        "sha256": "aacaa4021daf46b879161c0c5755e5c04e52fbd5023e751c059826b554da184e"
+      }
+    }
+  ],
+  "cache_revision": "69264b64c52feb1bbe3f10f837c12eabb9c7c210cb5e58bb45d8afddc0f0c930",
+  "frontier": {
+    "path": "cache/research/prefix-zeta-frontier-2026-10-15.json",
+    "sha256": "976217238dcbefacc509b2e7e293582f869685a7ea915236568dbada1e0ba806"
+  },
+  "continuation": {
+    "path": "cache/coordination/continuations/2026-10-15-prefix-zeta.json",
+    "sha256": "fd26dba161c5053fb5044d7d037245e50721e9f2c137a638eef8dff896cc53cd"
+  },
+  "decision": {
+    "path": "cache/decisions/occurrence-prefix-v1.json",
+    "sha256": "351902fa8061f24566960f583dce8bfe7db1c2cd21e10219f1218e9bfc77c6e3"
+  },
+  "operational_consumer": {
+    "path": "evidence/Combinatorics/DirectedGraph/trace-prefix-consumer-2026-10-15.json",
+    "sha256": "af5a0192463fab7d40ff4f847f51decf3c624e0c9d550bb8efffbab9a178a73a"
+  },
+  "limits": "Selected native mathematics and bounded operational/source identity tests remain separate; no model independence, runtime refinement, whole-library/RH admission or remote effect.",
+  "remote_actions": []
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "repository-agent-event-v1",
+  "id": "prefix-zeta-source-scout-progress-d433021ff4a2498e9b0eb40104583374",
+  "at": "2026-10-15T20:11:29.759480+00:00",
+  "owner": "cache_taxonomy",
+  "task": "prefix-zeta-source-scout",
+  "status": "PRIMARY_SCOUT_READY_FINAL_SOURCES_PENDING",
+  "context": {
+    "path": ".local/prefix-zeta-source-scout/84cfb947c30341db9c5f04a627122f07/context.json",
+    "sha256": "a58b99fdb1d2696bb579521589dd0408bf8b7cfb50cf21d3d90af747ada67ba8",
+    "bytes": 9864
+  },
+  "findings": [
+    "Actual pinned Anthropic BinaryPrefixes arithmetic quotient/bit transition is distinct from typed path ancestry.",
+    "New actual Anthropic DirichletLine selected interchange requires ContDiff2/compact support and a supplied coefficient majorant; no automatic Gaussian/p-series supply. ZetaBounds credited upstream port retains convergent half-plane premises.",
+    "Primary OpenAI ideal-pair GaussianCompletion/RowInterchange reused with exact hashes, not whole arithmetic-source admission.",
+    "Fresh arxiv targeted findings retain directed-walk occurrence and original smoothing/coefficient/halfplane limits; no exact coefficient1 theorem borrowed."
+  ],
+  "planned_reviews": [
+    "evidence/Combinatorics/DirectedGraph/occurrence-prefix-source-review-2026-10-15.json",
+    "evidence/NumberTheory/LSeries/gaussian-contour-source-review-2026-10-15.json"
+  ],
+  "native_jobs": 0,
+  "authority": "Correlated source inspection only, not independent validation/native acceptance."
+}

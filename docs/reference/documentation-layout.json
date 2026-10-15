@@ -3463,10 +3463,28 @@
       "source_sha256": "a0ed0dbf644601887df128536951a9c3e17ecf42970069a13acdfcb93518e3bf",
       "status": "fresh-selected",
       "evidence": "evidence/Analysis/MellinTransform/normalized-gaussian-checks-2026-10-15.json"
+    },
+    "docs/mathematics/Combinatorics/DirectedGraph/occurrence-prefix.md": {
+      "title": "Occurrence reachability and complete trace prefixes",
+      "subject": "Combinatorics",
+      "object": "DirectedGraph",
+      "primary_source": "GRWTSK/Combinatorics/DirectedGraph/OccurrencePrefix.lean",
+      "source_sha256": "60737e2376594568f390e394417b77c9ea0cc5464693b3ef61502213e3afcee7",
+      "status": "fresh-selected",
+      "evidence": "evidence/Combinatorics/DirectedGraph/occurrence-prefix-checks-2026-10-15.json"
+    },
+    "docs/mathematics/NumberTheory/LSeries/gaussian-contour.md": {
+      "title": "A Gaussian contour for the zeta Dirichlet series",
+      "subject": "NumberTheory",
+      "object": "LSeries",
+      "primary_source": "GRWTSK/NumberTheory/LSeries/GaussianContour.lean",
+      "source_sha256": "66fdcea9766830cda6d2cfc02bc603b7b54c3f70b49e91b3f26cab4d1e1a4017",
+      "status": "fresh-selected",
+      "evidence": "evidence/NumberTheory/LSeries/gaussian-contour-checks-2026-10-15.json"
     }
   },
   "object_binding_registry": "docs/reference/object-source-bindings.json",
-  "object_binding_registry_sha256": "aef7e713ac2e29d67cdd8a74071984f598ccc8a79d6f051f2bf56039d32eef5c",
+  "object_binding_registry_sha256": "47abd70b88df8e7dbae3c378574b71d02ea243039bf0666df05fdebcce88139a",
   "navigation": {
     "schema": "subject-index-navigation-v1",
     "summary": "docs/reference/library-summary.json"

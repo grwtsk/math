@@ -1,0 +1,10 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "gaussian-zeta-formal",
+  "event": "dev-lock-acquired",
+  "at": "2026-10-15T20:12:38.366538+00:00",
+  "owner": "cache_adapter",
+  "attempt": ".local/gaussian-zeta/bffdcedf59b84d329028357347537196/attempts/Scratch-attempt01",
+  "source_sha256": "59407e0defc53eafcea2b16739b043ad29a610a1439a89d414c3e0165ee45a90",
+  "competing_jobs": []
+}
