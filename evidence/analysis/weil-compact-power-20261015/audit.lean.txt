@@ -1,0 +1,14 @@
+/- INACTIVE AUDIT REQUESTS. Not executed, no axiom allowlist acceptance.
+Stage reviewed candidates at intended paths before using the pinned checker. -/
+import GRWTSK.Analysis.Complex.PowerTrace
+import GRWTSK.Analysis.Asymptotics.SupportRate
+#print axioms GRWTSK.Analysis.Complex.PowerTrace.selected_value
+#print axioms GRWTSK.Analysis.Complex.PowerTrace.cancelled_value
+#print axioms GRWTSK.Analysis.Complex.PowerTrace.real_type
+#print axioms GRWTSK.Analysis.Complex.PowerTrace.selected_pair_square
+#print axioms GRWTSK.Analysis.Complex.PowerTrace.negative_with_tail
+#print axioms GRWTSK.Analysis.Asymptotics.SupportRate.rayleigh_cross
+#print axioms GRWTSK.Analysis.Asymptotics.SupportRate.rate_gap
+#print axioms GRWTSK.Analysis.Asymptotics.SupportRate.requested_rate
+#print axioms GRWTSK.Analysis.Asymptotics.SupportRate.collar
+#print axioms GRWTSK.Analysis.Asymptotics.SupportRate.zero_rate

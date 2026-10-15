@@ -1,0 +1,201 @@
+{
+  "base_commit": "46902124f25fe3a8a2b903865830845f9bd2cdc8",
+  "date": "2026-10-15",
+  "direct_git": "fatal: unable to access https://github.com/grwtsk/math.git/: Could not resolve host: github.com",
+  "math_scope": {
+    "actual_source_tests": 3,
+    "discrepancy_only_subexponential_supplier": "REFUTED_IN_WRITTEN_ANALYSIS_FOR_ACTUAL_SOURCE; not a native theorem",
+    "first_test_discrepancy_negative": true,
+    "full_form_growth_supplier": false,
+    "positive_complete_form_tests": 3,
+    "proof_dependencies": [
+      "Suzuki explicit formula",
+      "classical digamma expansion with signed remainder",
+      "prime number theorem only for infinite-growth obstruction",
+      "Fourier/Plancherel/Riemann-Lebesgue and compact torus recurrence"
+    ],
+    "test_half_supports": [
+      "1/2",
+      "1",
+      "2"
+    ],
+    "unknown_zeros_evaluated": false,
+    "written": "exact Arch+B+D identity; signed endpoint-complete discrepancy; discrepancy-only negative growth rate one; finite H^1 source extension and archimedean tail"
+  },
+  "native": {
+    "axiom_audit": false,
+    "compilation": false,
+    "elan": null,
+    "independent_validation": false,
+    "lake": null,
+    "lean": null,
+    "new_admissions": 0,
+    "state": "BLOCKED_OPERATION"
+  },
+  "nonclaims": {
+    "RH": false,
+    "all_support_positivity": false,
+    "finite_zero_count": false,
+    "new_spectral_lower_rate": false,
+    "new_zeta_zero_region": false
+  },
+  "original_intake": {
+    "manifest_entries_checked": 60,
+    "original_archive_members": 34,
+    "original_reports": "unchanged; not relabeled as current acceptance",
+    "original_zip_sha256": "deccfd51bb19c5ea6fddcdd90a5d03d83a8bec0bf0ba16b776b03565d70b08f0",
+    "unchanged_pending_files": 11
+  },
+  "outcome": "OPEN_FRONTIER",
+  "preservation": "No existing repository source, target definition, compiler pin, workflow, guide or historical receipt modified.",
+  "publication": {
+    "attempt": "GitHub.create_blob",
+    "blob_returned": false,
+    "commit_created": false,
+    "readback_main": "46902124f25fe3a8a2b903865830845f9bd2cdc8",
+    "remote_ref_updated": false,
+    "result": "This tool call was blocked by OpenAI because we couldn't determine the safety status of the request.",
+    "state": "BLOCKED_OPERATION"
+  },
+  "remaining": "Prove a subexponential lower bound for the complete source form including archimedean/prime interaction; then native replay of the exact RH return.",
+  "replay": {
+    "actual_precisions": [
+      160,
+      192
+    ],
+    "all_test_stdout_stderr": "replay.json.xz",
+    "arch_series_terms": 512,
+    "cross_precision_intervals_overlap": true,
+    "full_repo_checks": "NOT_RUN",
+    "modes": [
+      "normal",
+      "optimized"
+    ],
+    "power_output_matches_original": true,
+    "replay_decoded_sha256": "a9488ddf558d324643296d745ee8f387ccfb28ad002e50abf51bcbe2cc558b42",
+    "source_mode_outputs_identical": true,
+    "successful_subprocesses": 16,
+    "test_inventory": {
+      "actual_source": 33,
+      "compact_power": 35,
+      "finite_hermite": 34,
+      "runner_guards": 12,
+      "spectral_lower_bounds": 33
+    },
+    "tests_per_mode": 147
+  },
+  "schema": "weil-complete-source-integration-v1",
+  "source_bindings": {
+    "evidence/analysis/weil-compact-power-20261015/audit.lean.txt": {
+      "bytes": 894,
+      "git_blob_sha1": "5aec214abced1ea3996eb0d19cd94a04b6355738",
+      "sha256": "3c217e659292289eeb3c2b92d63a24b79157fc0023fbfd163f2771f30e249355"
+    },
+    "evidence/analysis/weil-compact-power-20261015/candidates/PowerTrace.lean.txt": {
+      "bytes": 1599,
+      "git_blob_sha1": "c12e309a2859096b225512f869f8c17bbb2393bd",
+      "sha256": "c0b3ae969107e3d9441cbfd260e4cf7cb2cb5170c72dc0e135a71be35edace6d"
+    },
+    "evidence/analysis/weil-compact-power-20261015/candidates/SupportRate.lean.txt": {
+      "bytes": 1712,
+      "git_blob_sha1": "8fd63603bdf27545f9451455150924c47509c967",
+      "sha256": "5f1ec5577ed7f01c0eb71800d282f902ff52d82a9b5a64669328004249e0c1a1"
+    },
+    "evidence/analysis/weil-compact-power-20261015/certificates.json": {
+      "bytes": 19760,
+      "git_blob_sha1": "14236cb3f837e449d25a04979d5d3c6535f6cf0d",
+      "sha256": "fe4086b0f25dfe4ea325454b4405128820e38fc48d129b8cba394c8f1373b82f"
+    },
+    "evidence/analysis/weil-compact-power-20261015/derivation.txt": {
+      "bytes": 17213,
+      "git_blob_sha1": "f60628eb63d3e9b877ad8396e0bd8d669440a14c",
+      "sha256": "66b6084674cda61b22e4d69a45cea9efc82a107e2f483d9b651fcc0fa4da0f82"
+    },
+    "evidence/analysis/weil-compact-power-20261015/expected-contracts.json": {
+      "bytes": 950,
+      "git_blob_sha1": "6b145b8143406d2c8284a6b98974327149da5c72",
+      "sha256": "a593710f5539e732d496777e618021360ee4eb0aaf3c0350f38c4cb5c4ce7ff8"
+    },
+    "evidence/analysis/weil-compact-power-20261015/frontier.json": {
+      "bytes": 1134,
+      "git_blob_sha1": "f50b998a07f017ceb55cc6588b77282ed8028d7f",
+      "sha256": "8d1fe8ca5b27c648d15b3164392b5580c22ecc6e9685c75a3e514f7f45b0642a"
+    },
+    "evidence/analysis/weil-compact-power-20261015/receipt.json": {
+      "bytes": 8125,
+      "git_blob_sha1": "0177ac957a4f96c377ef93e9481b4636dc963c80",
+      "sha256": "895f6f3e5c911aa436fa4b8fe55b5036d70dfe30ba41b891e7b096dfa1fa262c"
+    },
+    "evidence/analysis/weil-compact-power-20261015/sources.json": {
+      "bytes": 1770,
+      "git_blob_sha1": "6c4388a5ec214aba23710736972fe59a91ce649b",
+      "sha256": "4a2b257dfa606e4d75cc066b441c1585450c6d263aaebaa5fb111ecb6b9af2ff"
+    },
+    "evidence/analysis/weil-prime-discrepancy-20261015/README.txt": {
+      "bytes": 3051,
+      "git_blob_sha1": "93f70456ecd42dc9f5ab5c605d1beb21514c8325",
+      "sha256": "8798c2b0c4b60bbb74e7fbbc55b3f04ad2f2787b2090a32ecd33835a3bb344a9"
+    },
+    "evidence/analysis/weil-prime-discrepancy-20261015/certificates.json": {
+      "bytes": 24079,
+      "git_blob_sha1": "f0109b19a7d76bf4e7cb208b544d10406ea85f87",
+      "sha256": "c237e0c137148318ce64fdf52ae293df104ec2b2cf3f39848e597d133dd400bd"
+    },
+    "evidence/analysis/weil-prime-discrepancy-20261015/derivation.txt": {
+      "bytes": 12423,
+      "git_blob_sha1": "464851938902f8f8f636d03fe2470b7de113a85e",
+      "sha256": "d995b0a880503df5f1b91fc24c6069217ecddd421ae0661263f8ce5207bb3a84"
+    },
+    "evidence/analysis/weil-prime-discrepancy-20261015/inputs.json": {
+      "bytes": 3032,
+      "git_blob_sha1": "136f4619cf693b7fca48068a4295590198af5671",
+      "sha256": "ebfe85c01dcf166ff033760305a902b93afabf7cbe0f82ef4b3a8579a94d4949"
+    },
+    "evidence/analysis/weil-prime-discrepancy-20261015/original-compact-power.tar.xz": {
+      "bytes": 23792,
+      "git_blob_sha1": "2f278fb2176501417743c70679a4c330f5a45c24",
+      "sha256": "065407f5d2fbafe64f7aad58f6937362e34928fcd83caf7ad31bb0d79cc061a6"
+    },
+    "evidence/analysis/weil-prime-discrepancy-20261015/original-index.json": {
+      "bytes": 6640,
+      "git_blob_sha1": "25a77a125afb1ab87e0be2ca942ed999bbb109d5",
+      "sha256": "4e7a895d19e775e82353d0b40d29cb0cbe47940aea307393d2ec6f01be43c3ad"
+    },
+    "evidence/analysis/weil-prime-discrepancy-20261015/replay.json.xz": {
+      "bytes": 8464,
+      "git_blob_sha1": "a00dbcfdba9083e6982d6156d1760be1c95d1080",
+      "sha256": "aedad2b8593cac4580ca0783937c00fd1c80fb751f6f36ade9e835254c40cbc3"
+    },
+    "scripts/verify_weil_power_source.py": {
+      "bytes": 8053,
+      "git_blob_sha1": "bf4f6b7f3dec8c18954f3b832e5b5bed23680c64",
+      "sha256": "8a89a39bcedd1cd24b43455c32167bfae74894ebc30e39fb2196e3d0c4584beb"
+    },
+    "scripts/weil_compact_power.py": {
+      "bytes": 9846,
+      "git_blob_sha1": "4973510062a5a53f0da96a68e2bfe92add0e8378",
+      "sha256": "a46b1c9dfd299bcddd2d67809250d0299910c292fc3bd34c20d02abbeff23326"
+    },
+    "scripts/weil_prime_discrepancy.py": {
+      "bytes": 11258,
+      "git_blob_sha1": "6d4d4e2625e80c83b997b49af3f926cc4c37e18f",
+      "sha256": "eca2425f21f8d535b6219d15876f5e41ae8d838da73f4268a8b03899695fd00f"
+    },
+    "tests/test_verify_weil_power_source.py": {
+      "bytes": 2400,
+      "git_blob_sha1": "0b4e30275e2b46e586a110ccbb122cd30310a768",
+      "sha256": "d609a60f7b7abd79f6a74a8969c9c946e17f65b4edecbea916fa5fe2667b2674"
+    },
+    "tests/test_weil_compact_power.py": {
+      "bytes": 9253,
+      "git_blob_sha1": "9f6f190606ee99581c339fa049846593286d823c",
+      "sha256": "1391a248024025128ae3578a57fc4741fa2422a8b4f2637c1b8e8d39005bf0ed"
+    },
+    "tests/test_weil_prime_discrepancy.py": {
+      "bytes": 8816,
+      "git_blob_sha1": "2c09e9e4dcd7c5d6601d859c2d6ef198c5dd7cd3",
+      "sha256": "a8b0ecfecb62210349a6c8928b9fb45f786e22307dfbdafb2d4b68a27bdb42ea"
+    }
+  },
+  "workspace": "source-bound partial snapshot, not full repository checkout"
+}
