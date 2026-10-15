@@ -1,0 +1,61 @@
+{
+  "attribution": {
+    "direction": "grwtsk contributors",
+    "new_derivation_and_code": "OpenAI ChatGPT",
+    "new_files_license": "MIT",
+    "novelty_claim": false
+  },
+  "formal_source": {
+    "author": "Sebastien Gouezel",
+    "blob": "e66f719517bc84d4a2ff3deafd3b47868b700bd4",
+    "declaration": "integral_cexp_quadratic",
+    "dependency_replayed": false,
+    "license": "Apache-2.0",
+    "path": "Mathlib/Analysis/SpecialFunctions/Gaussian/FourierTransform.lean",
+    "repository": "leanprover-community/mathlib4",
+    "rev": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "source_inspected": true
+  },
+  "historical_attachment": "Original RESEARCH.md and verification-report retain their original uncompiled status; neither rewritten nor represented as a fresh run.",
+  "primary_research": [
+    {
+      "author": "Masatoshi Suzuki",
+      "parts": "Section 3.2 (3.3)-(3.5), Proposition 3.1 (3.8), Section 3.5 and (1.1)",
+      "url": "https://arxiv.org/html/2206.03682v4",
+      "use": "Exact Fourier convention, actual arithmetic screw function, Weil/screw test identification. Does not supply positivity for the new tests."
+    },
+    {
+      "author": "Tim Trudgian",
+      "parts": "Corollary 1",
+      "url": "https://arxiv.org/html/1208.5846v2",
+      "use": "Unconditional multiplicity-counted N(T)=O(T log T); finite C in global weighted count. Not replayed in Lean."
+    }
+  ],
+  "repository_base": "8a20ef34ed57ab38e74152e4f068f061db7ef5fb",
+  "selected_current_reads": [
+    {
+      "blob": "e76a251bd6215517eb9c77acbe3bed80dcc34230",
+      "path": "AGENTS.md"
+    },
+    {
+      "blob": "025e59548e48cf71f2744154e2890beefe30a258",
+      "path": "lean-toolchain",
+      "value": "leanprover/lean4:v4.33.0"
+    },
+    {
+      "blob": "1f2e3e2d66253933a410e981eb359a9b454aae0b",
+      "mathlib_rev": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "path": "lake-manifest.json",
+      "scope": "selected first package and complete file blob; remaining package pins not modified"
+    },
+    {
+      "blob": "59a41723067ecf2c1a68d65276bdd2a70f644296",
+      "path": "scripts/finite_hermite_isolation.py"
+    },
+    {
+      "blob": "62a8b6a4ac8b208e01835c7809b52ca929130732",
+      "path": "evidence/number-theory/zeta/riemann/pair-localization-001/derivation.txt",
+      "scope": "sections on counting, source positivity, compact-support gap and native frontier read; earlier construction retained from context"
+    }
+  ]
+}
