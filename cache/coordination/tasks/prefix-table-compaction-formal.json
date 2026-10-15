@@ -1,0 +1,16 @@
+{
+  "schema": "repository-agent-task-v1",
+  "id": "prefix-table-compaction-formal",
+  "owner": "indexed_dictionary",
+  "at": "2026-10-15T22:19:30.681824+00:00",
+  "branch": "main",
+  "base_commit": "6625cbdd887f8d3e4c8520fff1e048b87173e76b",
+  "cache_revision": "5d42e2f758bafde4886aa24e28279a1325542bc8ac685c5d2c3c15bd85cac601",
+  "write_paths": [
+    "GRWTSK/Combinatorics/DirectedGraph/PrefixTableCompaction.lean",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableCompaction.lean",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixCompactionStaleReferences.lean"
+  ],
+  "objective": "Actual arbitraryState+WellFormed\u2192successful real decoding/validity, prove reverse traceRows(recoverRows validEntries)=entries viaactualEdgeTrace.encode_decode, canonical actualprefix rebuild, structural validity/root/full keyed histories preserved, partial oldslot and retainedparent/realref remap. Explicit stale-ref/unused-branch/repeated-row/emptyroot controls; certificate own same-decoding ifsupplied. No totaloldslotretention, decodeaxiom, byteoptimality orruntime refinement.",
+  "coordination": "Only allocated source paths/ignored scratch/immutable repository events; root owns shared metadata, fresh native admission, docs/cache/commit. Main direct; no remote writes/branches. Preserve every concurrent edit and failed/stale variant/receipt. Shared native flock held until all children exit; coordinate peer handoff. Pinned trust0/fatal/complete owned-transitive axiom audit, only3standard axioms; explicit noncomp recursion, no generated-helper exemptions. Foreign instructions research-only; monitor owns migration."
+}

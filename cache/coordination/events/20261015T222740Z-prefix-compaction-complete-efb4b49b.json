@@ -1,0 +1,72 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "prefix-table-compaction-formal",
+  "owner": "indexed_dictionary",
+  "at": "2026-10-15T22:27:40.538793+00:00",
+  "kind": "complete-frozen-development",
+  "source_hashes": {
+    "GRWTSK/Combinatorics/DirectedGraph/PrefixTableCompaction.lean": "fe95a8c59bb0a1e1e9a2a4eba1e5405deb4bcabac3159e0aefcd3db364aad56f",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableCompaction.lean": "f4fa38032ac9f3395c6fd9e23f129d70986bddcc681332c5ad565339c69bfe23",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixCompactionStaleReferences.lean": "33f02ca25b49c6ec8acde6f622d2a7d09f38cb42966079abfd812855c59632a1"
+  },
+  "canonical_bytes_equal_checked_scratch": true,
+  "result": "Actual arbitrary WellFormed state derives real decoded traces and rooted validity. Actual reverse traceRows/recoverRows proved from EdgeTrace.encode_decode, canonical existing producer reconstructs root/full keyed real histories and structural invariant. Compact dictionary subset of old; partial old-slot mapping, actual retained parent cells and ordered real-reference reindexing. Actual own-packed certificate same-decoding consumer requires explicit criterion/evidence and vertex equality.",
+  "controls": [
+    "Dold=[F,[],T], nodes=[(1,parent1F),(0,none),(1,parent1T)], repeated realrefs[(11,0),(11,0)] actual checked decode yields two complete F histories",
+    "Canonical afterD=[[],F], nodes=[(0,none),(1,parent0F)], refs[(11,1),(11,1)], actual complete keyed occurrence recovery",
+    "Unused T branch removed and dictionary length3\u21922; oldFslot0\u21921, parent slot1\u21920, oldTslot2\u2192none; actual reindexReferences mapM returns new repeated references",
+    "Stale old references on compact table still form a structurally WellFormed state, but decode two empty histories rather than two F histories",
+    "Explicit supplied old certificate reused via actual root-lifted unpack equality against its OWN real pack; outer root distinguishes empty data"
+  ],
+  "development_native": {
+    "library_passed": true,
+    "positive_passed": true,
+    "owned_census": 614,
+    "library_owned": 36,
+    "positive_owned": 46,
+    "all_mathematical_admission": true,
+    "all_owned_and_transitive_axioms_within": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "runtime_helpers_or_exemptions": false,
+    "audit_log": ".local/prefix-compaction/logs/20261015T222642.997245Z-SelectedAudit.log",
+    "audit_log_sha256": "783b08505fdc2aaba3ffe42bdcbcafc2bc4fa6fa5282b5655c254123aa36a0bd",
+    "negative_errors": 1,
+    "negative_log": ".local/prefix-compaction/logs/20261015T222640.218597Z-PrefixCompactionStaleReferences.log",
+    "negative_log_sha256": "983834d850c6ac50720b1b9900378875f674a83be9a16f6ad892d7f6b71c81a1",
+    "negative_diagnostic": "Type mismatch\n  stale_actual_decode\nhas type\n  decode stale = some [(11, []), (11, [])]\nbut is expected to have type\n  decode stale = some [(11, [falseTag]), (11, [falseTag])]",
+    "all_native_children_exited": true,
+    "shared_lock_released": true
+  },
+  "verification_limits": "Own library/positive and actual negative compiled trust0/fatal in scratch. Exact accepted prior object families reused with receipt/source/object hash checks; parent owns fresh full selected-source closure replay/admission. Source reviews correlated. No total old-slot retention, unchanged numeric indices, byte optimality, operational relation-ID/JSON/IO/hash refinement or automatic new criterion.",
+  "preservation": "Every failed source variant/log retained under ignored .local/prefix-compaction; earlier accepted sources untouched. No branch/commit/remote changes.",
+  "source_api_scout": {
+    "hashes": {
+      "GRWTSK/Combinatorics/DirectedGraph/PrefixTableState.lean": "bc2398f5aae427a813c22b6025b9ca41c99c6bbfb9b9228ce49d1326a9870c3a",
+      "GRWTSK/Combinatorics/DirectedGraph/PrefixInventory.lean": "fa7395f0c55943562274019d96e97e25deaea20defdf9d6f2d8a12d029e743c9",
+      "GRWTSK/Combinatorics/DirectedGraph/EdgeTrace.lean": "e1e5f2dd23b6c04a734af4bd95f3f19c15fe4f313d66c5bccff08b3312fb2a59",
+      "GRWTSK/Combinatorics/DirectedGraph/ParentTraceDictionary.lean": "c388e127a08238f465873954f0b6982ddbe556d0f77b252d4b2d8f89bf32237a",
+      "GRWTSK/Logic/FiniteSequences/IndexedDictionary.lean": "c01e5ff8067d652cafb42260ae283786c8cb78710c73eb23079a54bd05fbedff",
+      "GRWTSK/Logic/FiniteSequences/DecisionCertificate.lean": "d7ce67b4eacedb2d84a958636c55cd0ed75be869f552377163c0832449dc0990",
+      "GRWTSK/Combinatorics/DirectedGraph/RootedTraceRevision.lean": "784594334cff23da4bc77f62c5cd66cf8006ad381223026f1b7383e519dfef17",
+      ".lake/packages/mathlib/Mathlib/Data/List/Basic.lean": "a5490adaf9886c84cf0ffad009267ea9324bfa6c9b81b529454158c19eedd501"
+    },
+    "mathlib_pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "duplicate_boundary": "Use actual State.decode_success/ofOneStep/decode_eq_unpack, PrefixInventory.recoverRows, EdgeTrace.encode_decode, Parent actual cell/position decoder and DecisionCertificate.reuse_of_same_decoding. No new generic path datatype or assumed codec.",
+    "mathlib_apis": [
+      "List.map_congr_left and List.attach_map_subtype_val for reverse actual path trace roundtrip",
+      "Core List.Forall\u2082 and actual Option/List.mapM induction preserve pairwise key/reference correspondence",
+      "Parent.position_lookup/State.node_lookup consume existing List.getElem?_idxOf with the same exact equality convention"
+    ],
+    "named_credit": "Mathlib List.Basic: Parikshit Khanna, Jeremy Avigad, Leonardo de Moura, Floris van Doorn, Mario Carneiro. Apache-2.0; local MIT and individual prior source credits retained."
+  },
+  "whitespace": "No tabs/trailing whitespace, lines <=100, git diff --check passed.",
+  "layout_check": {
+    "command": "python3 -B scripts/check_math_layout.py",
+    "exit_code": 1,
+    "log": ".local/prefix-compaction/math-layout-final.log",
+    "scope": "Root-owned registration pending; existing unrelated findings preserved. Mathematical placement Combinatorics/DirectedGraph; no naming-ban violation."
+  }
+}

@@ -5229,7 +5229,13 @@
     "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableState.lean": "9dde5e756db1c4aa1c7be3dcf00a58b98577c9c4731d3b789923fb9f35e8d1bb",
     "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixTableMissingClosure.lean": "44914e813a0f5682ffb5620ebfea33fa094701ba4d0a11b940266847b2a9f91b",
     "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianRemoteSeminorms.lean": "f28eb9ef42a1e20a36c90c41ef5e1a37db521a26059e140794357ade4f5e5973",
-    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianRemoteMissingCutoff.lean": "611fc9e7317222314f57794e909c8482ee45bf30371cd19d6bd0e92840a17d77"
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianRemoteMissingCutoff.lean": "611fc9e7317222314f57794e909c8482ee45bf30371cd19d6bd0e92840a17d77",
+    "GRWTSK/Analysis/Fourier/Checks/Positive/SchwartzMoments.lean": "f9e557853b3f89815922fcf523101aeba80b8e86aaf080c8926b9e93e227e633",
+    "GRWTSK/Analysis/Fourier/Checks/Negative/SchwartzMomentMissingEvidence.lean": "cbb5dbaff27af0ed5244bd94221f869e620258eaff416c77e16a7c24628018b9",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableCompaction.lean": "f4fa38032ac9f3395c6fd9e23f129d70986bddcc681332c5ad565339c69bfe23",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixCompactionStaleReferences.lean": "33f02ca25b49c6ec8acde6f622d2a7d09f38cb42966079abfd812855c59632a1",
+    "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianFourierMoments.lean": "3bb18be10f76784706a8ee7ee20aee7f4fa9f9333917456241a5238faf443f92",
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianFourierMissingScale.lean": "7acf8e0a10481f3dfbc5ca386860bc96ff031289300b9b2ba008300282c7bdea"
   },
   "schema_version": 3,
   "repository_conformance": {
@@ -5261,7 +5267,7 @@
     {
       "path": "GRWTSK.lean",
       "original_path": "GRWTSK.lean",
-      "sha256": "8e1e0c89f3a2f9229db65cc524c492d23de16d0e8fe9f68af327d6740babaa60",
+      "sha256": "647c04b3dbd194f1443666188c05ee914833463d889296a8607d67cf0f78e86d",
       "git_blob": "27e45b3448f78dc6499f2fb0698eb51cac5d1904",
       "working_tree_state": "tracked-modified",
       "source_root": ".",
@@ -5341,6 +5347,7 @@
         "GRWTSK.Analysis.Fourier.PrimePhasePacketCertificates",
         "GRWTSK.Analysis.Fourier.QuadraticKernelTruncation",
         "GRWTSK.Analysis.Fourier.ReciprocalZetaQuadraticKernel",
+        "GRWTSK.Analysis.Fourier.SchwartzMoments",
         "GRWTSK.Analysis.Fourier.SignedPrimePhaseExamples",
         "GRWTSK.Analysis.Fourier.WindowCertificates",
         "GRWTSK.Analysis.Inequalities.CompactProfileDifferentialBounds",
@@ -5401,6 +5408,7 @@
         "GRWTSK.Analysis.LaplaceTransform.PolynomialEnergyHolomorphy",
         "GRWTSK.Analysis.MellinTransform.CompactGaussianWindow",
         "GRWTSK.Analysis.MellinTransform.GaussianDyadicSummation",
+        "GRWTSK.Analysis.MellinTransform.GaussianFourierMoments",
         "GRWTSK.Analysis.MellinTransform.GaussianRemoteSeminorms",
         "GRWTSK.Analysis.MellinTransform.GaussianWindowSeminorms",
         "GRWTSK.Analysis.MellinTransform.LogarithmicGaussian",
@@ -5432,6 +5440,7 @@
         "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences",
         "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding",
         "GRWTSK.Combinatorics.DirectedGraph.PrefixInventory",
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCompaction",
         "GRWTSK.Combinatorics.DirectedGraph.PrefixTableState",
         "GRWTSK.Combinatorics.DirectedGraph.RootedTraceRevision",
         "GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.Moser",
@@ -5663,7 +5672,7 @@
         "inventory": "observed-current-bytes",
         "layout": "repository baseline remains failed",
         "lean": "umbrella not replayed after selected import additions",
-        "source_sha256": "8e1e0c89f3a2f9229db65cc524c492d23de16d0e8fe9f68af327d6740babaa60"
+        "source_sha256": "647c04b3dbd194f1443666188c05ee914833463d889296a8607d67cf0f78e86d"
       },
       "runner": "python3 -B scripts/check_ccc_energy.py",
       "other_consumers": [
@@ -13319,6 +13328,52 @@
       ]
     },
     {
+      "path": "GRWTSK/Analysis/Fourier/Checks/Negative/SchwartzMomentMissingEvidence.lean",
+      "original_path": "GRWTSK/Analysis/Fourier/Checks/Negative/SchwartzMomentMissingEvidence.lean",
+      "sha256": "cbb5dbaff27af0ed5244bd94221f869e620258eaff416c77e16a7c24628018b9",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Analysis.Fourier.Checks.Negative.SchwartzMomentMissingEvidence",
+      "namespaces": [],
+      "public_declarations": [],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Analysis.Fourier.Checks.Positive.SchwartzMoments"
+      ],
+      "reverse_consumers": [],
+      "subject": "Analysis",
+      "object": "Fourier/Checks/Negative",
+      "source_role": "negative-control",
+      "target_path": "GRWTSK/Analysis/Fourier/Checks/Negative/SchwartzMomentMissingEvidence.lean",
+      "placement_rationale": "Reusable Schwartz Fourier moment bounds belong to Analysis/Fourier; their actual Gaussian-window consumer belongs to Analysis/MellinTransform.",
+      "operation": "add",
+      "logical_status": "intended rejected control; no theorem admission",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "cbb5dbaff27af0ed5244bd94221f869e620258eaff416c77e16a7c24628018b9",
+        "replay_binding": "evidence/Analysis/MellinTransform/gaussian-fourier-moments-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_gaussian_fourier_moments.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Actual Schwartz Fourier derivative integral/seminorm/source-pair moment proof, exact pinned normalization and p=volume.integrablePower.",
+        "Nonnegative S,C and actual source-pair evidence at every derivative i<=J+p; actual one-plus moment integrability derived, generic transfer has NO compactness premise.",
+        "Meaningful actual missing-evidence control. No surrounding arithmetic or desired integral/convergence oracle."
+      ],
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: exact LogProfiles generic Fourier proof slice, local actual Gaussian consumer; individual imported Mathlib Fourier/Schwartz authors retain credit"
+      ],
+      "license": "Apache-2.0",
+      "design_reference": "cache/research/compaction-fourier-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
       "path": "GRWTSK/Analysis/Fourier/Checks/Negative/WrongAngular.lean",
       "original_path": "checks/Analysis/Fourier/Controls/WrongAngular.lean",
       "sha256": "3484f4d821ac452a2c9a6db59e535a86f12746e2085ece7d8a34caf5cdc7bf35",
@@ -13358,6 +13413,88 @@
         "evidence/source-manifest.json",
         "scripts/update_math_source_inventory.py"
       ]
+    },
+    {
+      "path": "GRWTSK/Analysis/Fourier/Checks/Positive/SchwartzMoments.lean",
+      "original_path": "GRWTSK/Analysis/Fourier/Checks/Positive/SchwartzMoments.lean",
+      "sha256": "f9e557853b3f89815922fcf523101aeba80b8e86aaf080c8926b9e93e227e633",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Analysis.Fourier.Checks.Positive.SchwartzMoments",
+      "namespaces": [
+        "GRWTSK.Analysis.Fourier.SchwartzMoments.Checks"
+      ],
+      "public_declarations": [
+        {
+          "kind": "theorem",
+          "name": "actual_zero_integrable",
+          "line": 12
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_zero_source_bound",
+          "line": 16
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_zero_moment_bound",
+          "line": 23
+        },
+        {
+          "kind": "theorem",
+          "name": "source_bound_zero_false_of_nonzero",
+          "line": 28
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_gaussian_nonzero",
+          "line": 41
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_gaussian_source_bound_zero_false",
+          "line": 64
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Analysis.Fourier.SchwartzMoments",
+        "GRWTSK.Analysis.MellinTransform.CompactGaussianWindow"
+      ],
+      "reverse_consumers": [
+        "GRWTSK.Analysis.Fourier.Checks.Negative.SchwartzMomentMissingEvidence"
+      ],
+      "subject": "Analysis",
+      "object": "Fourier/Checks/Positive",
+      "source_role": "positive-check",
+      "target_path": "GRWTSK/Analysis/Fourier/Checks/Positive/SchwartzMoments.lean",
+      "placement_rationale": "Reusable Schwartz Fourier moment bounds belong to Analysis/Fourier; their actual Gaussian-window consumer belongs to Analysis/MellinTransform.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "f9e557853b3f89815922fcf523101aeba80b8e86aaf080c8926b9e93e227e633",
+        "replay_binding": "evidence/Analysis/MellinTransform/gaussian-fourier-moments-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_gaussian_fourier_moments.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Actual Schwartz Fourier derivative integral/seminorm/source-pair moment proof, exact pinned normalization and p=volume.integrablePower.",
+        "Nonnegative S,C and actual source-pair evidence at every derivative i<=J+p; actual one-plus moment integrability derived, generic transfer has NO compactness premise.",
+        "Meaningful actual missing-evidence control. No surrounding arithmetic or desired integral/convergence oracle."
+      ],
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: exact LogProfiles generic Fourier proof slice, local actual Gaussian consumer; individual imported Mathlib Fourier/Schwartz authors retain credit"
+      ],
+      "license": "Apache-2.0",
+      "design_reference": "cache/research/compaction-fourier-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
     },
     {
       "path": "GRWTSK/Analysis/Fourier/DigammaMultiplier.lean",
@@ -14867,6 +15004,103 @@
         "scripts/math_bundle_subjects.json",
         "scripts/math_bundle_subjects_interim.json"
       ]
+    },
+    {
+      "path": "GRWTSK/Analysis/Fourier/SchwartzMoments.lean",
+      "original_path": "GRWTSK/Analysis/Fourier/SchwartzMoments.lean",
+      "sha256": "da6f1239a11ad8f70f24ec4eabc709e6c7e36002949236c7a73813db0fddb0cc",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Analysis.Fourier.SchwartzMoments",
+      "namespaces": [
+        "GRWTSK.Analysis.Fourier.SchwartzMoments"
+      ],
+      "public_declarations": [
+        {
+          "kind": "theorem",
+          "name": "fourier_coefficient_moment",
+          "line": 30
+        },
+        {
+          "kind": "theorem",
+          "name": "fourier_seminorm_from_derivative_integrals",
+          "line": 38
+        },
+        {
+          "kind": "theorem",
+          "name": "uniform_fourier_seminorm_transfer",
+          "line": 59
+        },
+        {
+          "kind": "theorem",
+          "name": "uniform_fourier_coefficient_moment",
+          "line": 118
+        },
+        {
+          "kind": "theorem",
+          "name": "fourier_one_plus_moment_integrable",
+          "line": 157
+        },
+        {
+          "kind": "def",
+          "name": "coefficientMomentBound",
+          "line": 178
+        },
+        {
+          "kind": "theorem",
+          "name": "coefficientMomentBound_nonneg",
+          "line": 183
+        },
+        {
+          "kind": "theorem",
+          "name": "uniform_fourier_one_plus_moment",
+          "line": 188
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "Mathlib.Analysis.Distribution.SchwartzSpace.Fourier",
+        "Mathlib.Tactic.GCongr",
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Positivity",
+        "Mathlib.Tactic.Ring"
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Analysis.Fourier.Checks.Positive.SchwartzMoments",
+        "GRWTSK.Analysis.MellinTransform.GaussianFourierMoments"
+      ],
+      "subject": "Analysis",
+      "object": "Fourier",
+      "source_role": "library",
+      "target_path": "GRWTSK/Analysis/Fourier/SchwartzMoments.lean",
+      "placement_rationale": "Reusable Schwartz Fourier moment bounds belong to Analysis/Fourier; their actual Gaussian-window consumer belongs to Analysis/MellinTransform.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "da6f1239a11ad8f70f24ec4eabc709e6c7e36002949236c7a73813db0fddb0cc",
+        "replay_binding": "evidence/Analysis/MellinTransform/gaussian-fourier-moments-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_gaussian_fourier_moments.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Actual Schwartz Fourier derivative integral/seminorm/source-pair moment proof, exact pinned normalization and p=volume.integrablePower.",
+        "Nonnegative S,C and actual source-pair evidence at every derivative i<=J+p; actual one-plus moment integrability derived, generic transfer has NO compactness premise.",
+        "Meaningful actual missing-evidence control. No surrounding arithmetic or desired integral/convergence oracle."
+      ],
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: exact LogProfiles generic Fourier proof slice, local actual Gaussian consumer; individual imported Mathlib Fourier/Schwartz authors retain credit"
+      ],
+      "license": "Apache-2.0",
+      "design_reference": "cache/research/compaction-fourier-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
     },
     {
       "path": "GRWTSK/Analysis/Fourier/SignedPrimePhaseExamples.lean",
@@ -21623,6 +21857,52 @@
       ]
     },
     {
+      "path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianFourierMissingScale.lean",
+      "original_path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianFourierMissingScale.lean",
+      "sha256": "7acf8e0a10481f3dfbc5ca386860bc96ff031289300b9b2ba008300282c7bdea",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Analysis.MellinTransform.Checks.Negative.GaussianFourierMissingScale",
+      "namespaces": [],
+      "public_declarations": [],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianFourierMoments"
+      ],
+      "reverse_consumers": [],
+      "subject": "Analysis",
+      "object": "MellinTransform/Checks/Negative",
+      "source_role": "negative-control",
+      "target_path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianFourierMissingScale.lean",
+      "placement_rationale": "Reusable Schwartz Fourier moment bounds belong to Analysis/Fourier; their actual Gaussian-window consumer belongs to Analysis/MellinTransform.",
+      "operation": "add",
+      "logical_status": "intended rejected control; no theorem admission",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "7acf8e0a10481f3dfbc5ca386860bc96ff031289300b9b2ba008300282c7bdea",
+        "replay_binding": "evidence/Analysis/MellinTransform/gaussian-fourier-moments-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_gaussian_fourier_moments.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Actual G(Z,j) and positive Z/r=2^j/Z; finite source seminorm set {(0,i),(p,i):i<=J+p} and actual all-real power bound.",
+        "Prove actual source-pair estimate and rpow cancellation, obtain Fourier moment<=C(a,J)r^-a with C before all Z>0,j plus actual integrability.",
+        "Zero-scale cancellation helper control only; no zero Schwartz constructor/full Fourier-moment counterexample or LogWindow density/physical identity inferred."
+      ],
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: exact LogProfiles generic Fourier proof slice, local actual Gaussian consumer; individual imported Mathlib Fourier/Schwartz authors retain credit"
+      ],
+      "license": "Apache-2.0",
+      "design_reference": "cache/research/compaction-fourier-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
       "path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianMissingNormalization.lean",
       "original_path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianMissingNormalization.lean",
       "sha256": "90fc1e3e103a8db7752776804b84269ab8d3a04d8bc88230f5e5624f215a262c",
@@ -22197,6 +22477,82 @@
       ],
       "license": "Apache-2.0",
       "design_reference": "cache/research/incremental-summation-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
+      "path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianFourierMoments.lean",
+      "original_path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianFourierMoments.lean",
+      "sha256": "3bb18be10f76784706a8ee7ee20aee7f4fa9f9333917456241a5238faf443f92",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianFourierMoments",
+      "namespaces": [
+        "GRWTSK.Analysis.MellinTransform.GaussianFourierMoments.Checks"
+      ],
+      "public_declarations": [
+        {
+          "kind": "theorem",
+          "name": "all_real_power_bound",
+          "line": 9
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_moment_integrable",
+          "line": 14
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_moment_bound",
+          "line": 18
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_positive_scale_cancel",
+          "line": 23
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_zero_scale_cancel_false",
+          "line": 27
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Analysis.MellinTransform.GaussianFourierMoments"
+      ],
+      "reverse_consumers": [
+        "GRWTSK.Analysis.MellinTransform.Checks.Negative.GaussianFourierMissingScale"
+      ],
+      "subject": "Analysis",
+      "object": "MellinTransform/Checks/Positive",
+      "source_role": "positive-check",
+      "target_path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianFourierMoments.lean",
+      "placement_rationale": "Reusable Schwartz Fourier moment bounds belong to Analysis/Fourier; their actual Gaussian-window consumer belongs to Analysis/MellinTransform.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "3bb18be10f76784706a8ee7ee20aee7f4fa9f9333917456241a5238faf443f92",
+        "replay_binding": "evidence/Analysis/MellinTransform/gaussian-fourier-moments-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_gaussian_fourier_moments.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Actual G(Z,j) and positive Z/r=2^j/Z; finite source seminorm set {(0,i),(p,i):i<=J+p} and actual all-real power bound.",
+        "Prove actual source-pair estimate and rpow cancellation, obtain Fourier moment<=C(a,J)r^-a with C before all Z>0,j plus actual integrability.",
+        "Zero-scale cancellation helper control only; no zero Schwartz constructor/full Fourier-moment counterexample or LogWindow density/physical identity inferred."
+      ],
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: exact LogProfiles generic Fourier proof slice, local actual Gaussian consumer; individual imported Mathlib Fourier/Schwartz authors retain credit"
+      ],
+      "license": "Apache-2.0",
+      "design_reference": "cache/research/compaction-fourier-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
     },
     {
       "path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianRemoteSeminorms.lean",
@@ -22823,6 +23179,104 @@
       "design_reference": "cache/research/incremental-summation-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
     },
     {
+      "path": "GRWTSK/Analysis/MellinTransform/GaussianFourierMoments.lean",
+      "original_path": "GRWTSK/Analysis/MellinTransform/GaussianFourierMoments.lean",
+      "sha256": "56f14b355aeb0b89e30457cc6b7f8be887fd288e2caf3643907481f32171d86a",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Analysis.MellinTransform.GaussianFourierMoments",
+      "namespaces": [
+        "GRWTSK.Analysis.MellinTransform.GaussianFourierMoments"
+      ],
+      "public_declarations": [
+        {
+          "kind": "def",
+          "name": "gaussianFourierSourceIndices",
+          "line": 22
+        },
+        {
+          "kind": "lemma",
+          "name": "source_zero_mem",
+          "line": 27
+        },
+        {
+          "kind": "lemma",
+          "name": "source_power_mem",
+          "line": 31
+        },
+        {
+          "kind": "lemma",
+          "name": "scale_rpow_cancel",
+          "line": 35
+        },
+        {
+          "kind": "theorem",
+          "name": "gaussianFourier_source_pair",
+          "line": 40
+        },
+        {
+          "kind": "def",
+          "name": "gaussianFourierMoment",
+          "line": 63
+        },
+        {
+          "kind": "theorem",
+          "name": "gaussianFourierMoment_integrable",
+          "line": 66
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussianFourierMoment_nonneg",
+          "line": 71
+        },
+        {
+          "kind": "theorem",
+          "name": "gaussianFourierMoment_power_bound",
+          "line": 77
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Analysis.Fourier.SchwartzMoments",
+        "GRWTSK.Analysis.MellinTransform.GaussianWindowSeminorms"
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianFourierMoments"
+      ],
+      "subject": "Analysis",
+      "object": "MellinTransform",
+      "source_role": "library",
+      "target_path": "GRWTSK/Analysis/MellinTransform/GaussianFourierMoments.lean",
+      "placement_rationale": "Reusable Schwartz Fourier moment bounds belong to Analysis/Fourier; their actual Gaussian-window consumer belongs to Analysis/MellinTransform.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "56f14b355aeb0b89e30457cc6b7f8be887fd288e2caf3643907481f32171d86a",
+        "replay_binding": "evidence/Analysis/MellinTransform/gaussian-fourier-moments-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_gaussian_fourier_moments.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Actual G(Z,j) and positive Z/r=2^j/Z; finite source seminorm set {(0,i),(p,i):i<=J+p} and actual all-real power bound.",
+        "Prove actual source-pair estimate and rpow cancellation, obtain Fourier moment<=C(a,J)r^-a with C before all Z>0,j plus actual integrability.",
+        "Zero-scale cancellation helper control only; no zero Schwartz constructor/full Fourier-moment counterexample or LogWindow density/physical identity inferred."
+      ],
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: exact LogProfiles generic Fourier proof slice, local actual Gaussian consumer; individual imported Mathlib Fourier/Schwartz authors retain credit"
+      ],
+      "license": "Apache-2.0",
+      "design_reference": "cache/research/compaction-fourier-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
       "path": "GRWTSK/Analysis/MellinTransform/GaussianRemoteSeminorms.lean",
       "original_path": "GRWTSK/Analysis/MellinTransform/GaussianRemoteSeminorms.lean",
       "sha256": "e50de8626a4418b547123c0f37d94b9f3caef08a9820639524e6bd61da2061a9",
@@ -23021,7 +23475,8 @@
       "reverse_consumers": [
         "GRWTSK",
         "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianWindowSeminorms",
-        "GRWTSK.Analysis.MellinTransform.GaussianDyadicSummation"
+        "GRWTSK.Analysis.MellinTransform.GaussianDyadicSummation",
+        "GRWTSK.Analysis.MellinTransform.GaussianFourierMoments"
       ],
       "subject": "Analysis",
       "object": "MellinTransform",
@@ -25959,6 +26414,53 @@
       "design_reference": "cache/research/path-mellin-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
     },
     {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixCompactionStaleReferences.lean",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixCompactionStaleReferences.lean",
+      "sha256": "33f02ca25b49c6ec8acde6f622d2a7d09f38cb42966079abfd812855c59632a1",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.PrefixCompactionStaleReferences",
+      "namespaces": [
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCompaction.Checks.Negative"
+      ],
+      "public_declarations": [],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableCompaction"
+      ],
+      "reverse_consumers": [],
+      "subject": "Combinatorics",
+      "object": "DirectedGraph/Checks/Negative",
+      "source_role": "negative-control",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixCompactionStaleReferences.lean",
+      "placement_rationale": "Actual rooted prefix compaction and partial parent/reference reindexing belong to Combinatorics/DirectedGraph; generic incremental dictionary laws remain in Logic/FiniteSequences.",
+      "operation": "add",
+      "logical_status": "intended rejected control; no theorem admission",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "33f02ca25b49c6ec8acde6f622d2a7d09f38cb42966079abfd812855c59632a1",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/prefix-table-compaction-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_prefix_table_compaction.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Actual arbitrary storedState+WellFormed; derive successful real-row trace decoding/validity and reverse traceRows(recoverRows)=entries via actual edge codec.",
+        "Canonical actual parent-table rebuild, root/full keyed occurrence/order/multiplicity preservation, PARTIAL old-slot map and actual retained parent/real-reference reindexing.",
+        "Actual unused-branch/repeated-row/stale-reference/empty-root controls. Certificate own same-decoding requires supplied criterion/evidence; no total old-slot retention or byteoptimality."
+      ],
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "design_reference": "cache/research/compaction-fourier-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
       "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixInventoryMissingIdentity.lean",
       "original_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixInventoryMissingIdentity.lean",
       "sha256": "deedba52ebd4261b8f9ef8d6e6c58c583463141b329083405758c47b17b8064b",
@@ -27065,6 +27567,216 @@
       ],
       "license": "MIT; upstream imported Apache-2.0 retained",
       "design_reference": "cache/research/prefix-window-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableCompaction.lean",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableCompaction.lean",
+      "sha256": "f4fa38032ac9f3395c6fd9e23f129d70986bddcc681332c5ad565339c69bfe23",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableCompaction",
+      "namespaces": [
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCompaction.Checks.Positive"
+      ],
+      "public_declarations": [
+        {
+          "kind": "def",
+          "name": "falseTag",
+          "line": 21
+        },
+        {
+          "kind": "def",
+          "name": "trueTag",
+          "line": 24
+        },
+        {
+          "kind": "theorem",
+          "name": "tags_distinct",
+          "line": 27
+        },
+        {
+          "kind": "def",
+          "name": "falseOccurrence",
+          "line": 33
+        },
+        {
+          "kind": "def",
+          "name": "trueOccurrence",
+          "line": 36
+        },
+        {
+          "kind": "def",
+          "name": "seedRows",
+          "line": 39
+        },
+        {
+          "kind": "def",
+          "name": "seed",
+          "line": 42
+        },
+        {
+          "kind": "def",
+          "name": "before",
+          "line": 45
+        },
+        {
+          "kind": "def",
+          "name": "retainedRows",
+          "line": 48
+        },
+        {
+          "kind": "theorem",
+          "name": "seed_inventory",
+          "line": 51
+        },
+        {
+          "kind": "theorem",
+          "name": "before_dictionary",
+          "line": 56
+        },
+        {
+          "kind": "theorem",
+          "name": "before_wellFormed",
+          "line": 62
+        },
+        {
+          "kind": "theorem",
+          "name": "before_nodes",
+          "line": 71
+        },
+        {
+          "kind": "theorem",
+          "name": "before_actual_decode",
+          "line": 76
+        },
+        {
+          "kind": "theorem",
+          "name": "before_realEntries",
+          "line": 82
+        },
+        {
+          "kind": "theorem",
+          "name": "before_realRows",
+          "line": 86
+        },
+        {
+          "kind": "def",
+          "name": "after",
+          "line": 89
+        },
+        {
+          "kind": "theorem",
+          "name": "retained_inventory",
+          "line": 91
+        },
+        {
+          "kind": "theorem",
+          "name": "after_wellFormed",
+          "line": 96
+        },
+        {
+          "kind": "theorem",
+          "name": "after_dictionary",
+          "line": 98
+        },
+        {
+          "kind": "theorem",
+          "name": "after_nodes",
+          "line": 101
+        },
+        {
+          "kind": "theorem",
+          "name": "after_references",
+          "line": 105
+        },
+        {
+          "kind": "theorem",
+          "name": "after_actual_decode",
+          "line": 112
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_unused_branch_removed",
+          "line": 115
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_old_false_slot_remapped",
+          "line": 121
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_parent_slot_remapped",
+          "line": 130
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_old_true_slot_removed",
+          "line": 139
+        },
+        {
+          "kind": "def",
+          "name": "stale",
+          "line": 156
+        },
+        {
+          "kind": "theorem",
+          "name": "stale_wellFormed",
+          "line": 160
+        },
+        {
+          "kind": "theorem",
+          "name": "stale_actual_decode",
+          "line": 170
+        },
+        {
+          "kind": "theorem",
+          "name": "stale_histories_changed",
+          "line": 177
+        },
+        {
+          "kind": "def",
+          "name": "oldCertificate",
+          "line": 184
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCompaction"
+      ],
+      "reverse_consumers": [
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.PrefixCompactionStaleReferences"
+      ],
+      "subject": "Combinatorics",
+      "object": "DirectedGraph/Checks/Positive",
+      "source_role": "positive-check",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableCompaction.lean",
+      "placement_rationale": "Actual rooted prefix compaction and partial parent/reference reindexing belong to Combinatorics/DirectedGraph; generic incremental dictionary laws remain in Logic/FiniteSequences.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "f4fa38032ac9f3395c6fd9e23f129d70986bddcc681332c5ad565339c69bfe23",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/prefix-table-compaction-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_prefix_table_compaction.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Actual arbitrary storedState+WellFormed; derive successful real-row trace decoding/validity and reverse traceRows(recoverRows)=entries via actual edge codec.",
+        "Canonical actual parent-table rebuild, root/full keyed occurrence/order/multiplicity preservation, PARTIAL old-slot map and actual retained parent/real-reference reindexing.",
+        "Actual unused-branch/repeated-row/stale-reference/empty-root controls. Certificate own same-decoding requires supplied criterion/evidence; no total old-slot retention or byteoptimality."
+      ],
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "design_reference": "cache/research/compaction-fourier-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
     },
     {
       "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableState.lean",
@@ -28790,6 +29502,192 @@
       "design_reference": "cache/research/prefix-window-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
     },
     {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableCompaction.lean",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableCompaction.lean",
+      "sha256": "fe95a8c59bb0a1e1e9a2a4eba1e5405deb4bcabac3159e0aefcd3db364aad56f",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCompaction",
+      "namespaces": [
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCompaction"
+      ],
+      "public_declarations": [
+        {
+          "kind": "theorem",
+          "name": "traceRows_recoverRows",
+          "line": 27
+        },
+        {
+          "kind": "def",
+          "name": "realEntries",
+          "line": 44
+        },
+        {
+          "kind": "theorem",
+          "name": "decode_realEntries",
+          "line": 49
+        },
+        {
+          "kind": "theorem",
+          "name": "realEntries_valid",
+          "line": 53
+        },
+        {
+          "kind": "def",
+          "name": "realRows",
+          "line": 57
+        },
+        {
+          "kind": "theorem",
+          "name": "traceRows_realRows",
+          "line": 61
+        },
+        {
+          "kind": "theorem",
+          "name": "realRows_of_decode",
+          "line": 65
+        },
+        {
+          "kind": "def",
+          "name": "compact",
+          "line": 75
+        },
+        {
+          "kind": "theorem",
+          "name": "compact_root",
+          "line": 79
+        },
+        {
+          "kind": "theorem",
+          "name": "compact_wellFormed",
+          "line": 82
+        },
+        {
+          "kind": "theorem",
+          "name": "compact_dictionary",
+          "line": 85
+        },
+        {
+          "kind": "theorem",
+          "name": "compact_references",
+          "line": 91
+        },
+        {
+          "kind": "theorem",
+          "name": "decode_compact",
+          "line": 98
+        },
+        {
+          "kind": "theorem",
+          "name": "compact_recovers",
+          "line": 102
+        },
+        {
+          "kind": "theorem",
+          "name": "references_decoded",
+          "line": 115
+        },
+        {
+          "kind": "theorem",
+          "name": "realEntries_mem_old_dictionary",
+          "line": 149
+        },
+        {
+          "kind": "theorem",
+          "name": "realEntries_mem_compact_dictionary",
+          "line": 165
+        },
+        {
+          "kind": "theorem",
+          "name": "compact_dictionary_subset",
+          "line": 173
+        },
+        {
+          "kind": "def",
+          "name": "remap",
+          "line": 184
+        },
+        {
+          "kind": "theorem",
+          "name": "remap_retained",
+          "line": 194
+        },
+        {
+          "kind": "theorem",
+          "name": "remap_removed",
+          "line": 203
+        },
+        {
+          "kind": "theorem",
+          "name": "remap_lookup",
+          "line": 210
+        },
+        {
+          "kind": "theorem",
+          "name": "retained_parent_reindex",
+          "line": 224
+        },
+        {
+          "kind": "def",
+          "name": "reindexReferences",
+          "line": 244
+        },
+        {
+          "kind": "theorem",
+          "name": "reindexReferences_eq",
+          "line": 249
+        },
+        {
+          "kind": "theorem",
+          "name": "rooted_unpack_compact",
+          "line": 277
+        },
+        {
+          "kind": "theorem",
+          "name": "certified_compact",
+          "line": 290
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableState"
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableCompaction"
+      ],
+      "subject": "Combinatorics",
+      "object": "DirectedGraph",
+      "source_role": "library",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableCompaction.lean",
+      "placement_rationale": "Actual rooted prefix compaction and partial parent/reference reindexing belong to Combinatorics/DirectedGraph; generic incremental dictionary laws remain in Logic/FiniteSequences.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "fe95a8c59bb0a1e1e9a2a4eba1e5405deb4bcabac3159e0aefcd3db364aad56f",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/prefix-table-compaction-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_prefix_table_compaction.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Actual arbitrary storedState+WellFormed; derive successful real-row trace decoding/validity and reverse traceRows(recoverRows)=entries via actual edge codec.",
+        "Canonical actual parent-table rebuild, root/full keyed occurrence/order/multiplicity preservation, PARTIAL old-slot map and actual retained parent/real-reference reindexing.",
+        "Actual unused-branch/repeated-row/stale-reference/empty-root controls. Certificate own same-decoding requires supplied criterion/evidence; no total old-slot retention or byteoptimality."
+      ],
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "design_reference": "cache/research/compaction-fourier-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
       "path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableState.lean",
       "original_path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableState.lean",
       "sha256": "bc2398f5aae427a813c22b6025b9ca41c99c6bbfb9b9228ce49d1326a9870c3a",
@@ -29008,7 +29906,8 @@
       ],
       "reverse_consumers": [
         "GRWTSK",
-        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableState"
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableState",
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCompaction"
       ],
       "subject": "Combinatorics",
       "object": "DirectedGraph",
@@ -60673,19 +61572,19 @@
   ],
   "current_inventory": {
     "head": "854e04dc182c36b00479b642e6301f47acc81e5f",
-    "lean_source_count": 721,
-    "active_source_count": 658,
+    "lean_source_count": 730,
+    "active_source_count": 667,
     "candidate_source_count": 63,
     "counts_by_role": {
       "audit-driver": 35,
-      "library": 375,
-      "negative-control": 134,
-      "positive-check": 114
+      "library": 378,
+      "negative-control": 137,
+      "positive-check": 117
     },
     "counts_by_subject": {
       "Algebra": 19,
-      "Analysis": 233,
-      "Combinatorics": 38,
+      "Analysis": 239,
+      "Combinatorics": 41,
       "Data": 1,
       "DynamicalSystems": 16,
       "GroupTheory": 4,
@@ -67408,6 +68307,25 @@
     "replays": [
       "evidence/Analysis/MellinTransform/gaussian-remote-seminorms-checks-2026-10-15.json",
       "evidence/Combinatorics/DirectedGraph/prefix-table-state-checks-2026-10-15.json"
+    ],
+    "scope": "Incremental selected registration; no historical full-replay hashes or failed receipts refreshed."
+  },
+  "compaction_fourier_additions": {
+    "date": "2026-10-15",
+    "paths": [
+      "GRWTSK/Combinatorics/DirectedGraph/PrefixTableCompaction.lean",
+      "GRWTSK/Analysis/Fourier/SchwartzMoments.lean",
+      "GRWTSK/Analysis/MellinTransform/GaussianFourierMoments.lean",
+      "GRWTSK/Analysis/Fourier/Checks/Positive/SchwartzMoments.lean",
+      "GRWTSK/Analysis/Fourier/Checks/Negative/SchwartzMomentMissingEvidence.lean",
+      "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableCompaction.lean",
+      "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixCompactionStaleReferences.lean",
+      "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianFourierMoments.lean",
+      "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianFourierMissingScale.lean"
+    ],
+    "replays": [
+      "evidence/Analysis/MellinTransform/gaussian-fourier-moments-checks-2026-10-15.json",
+      "evidence/Combinatorics/DirectedGraph/prefix-table-compaction-checks-2026-10-15.json"
     ],
     "scope": "Incremental selected registration; no historical full-replay hashes or failed receipts refreshed."
   }
