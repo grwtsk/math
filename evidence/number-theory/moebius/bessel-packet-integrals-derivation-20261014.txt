@@ -1,0 +1,224 @@
+# Actual signed Bessel packet integrals with an explicit Taylor remainder
+
+Human mathematical direction: R.A. Jacob Martone.
+Derivation and implementation assistance: OpenAI ChatGPT. MIT.
+
+Status: WRITTEN ANALYTIC EVALUATOR AND CERTIFIED FINITE ARITHMETIC.
+The actual finite Bessel coefficients and complete mixed packet energies are
+now evaluated. No infinite-degree energy bound, new arithmetic exponent,
+zero-free result, or RH proof is obtained. The analytic proof below is not
+admitted in Lean; finite tests are not a substitute for that admission.
+
+Inspected base: grwtsk/math/main,
+2d67a7ae6d404c1e085f48ca4d755ba566d37b07.
+The unchanged dependency scripts/bessel_mobius_packet_compiler.py has blob
+c05962a9583af9ab71df3ee95aa55dba566d37b07. Its exact coefficients, strict
+cubic support gate and common shell prefix are retained. No prior source,
+canonical guide, compiler pin or historical receipt is changed.
+
+## 1. The exact integral being evaluated
+
+For n>=2 put lambda=n(n+7/6), nu=n+7/12, b_n=(7/6)_n/n!, and
+ A(y)=asin(sqrt(y))/sqrt(y), A(0)=1.
+The SAME Bessel reference from the preceding written comparison is
+ B_n(y)=(-1)^n b_n A(y)^(2/3)(1-y)^(-1/4)
+               F_(1/6)(2nu sqrt(y) A(y)),
+ F_gamma(z)=sum_(k>=0)(-z^2/4)^k/[k!(gamma+1)_k].
+
+For a=n^-4, b=min(1/n,1/k^2), define K_(n,k)=0 when b<=a; otherwise
+ K_(n,k)=(2lambda)^-1 integral_a^b
+           (1-y)[1/3-5y^(-1/4)/(6sqrt(k))] B_n'(y)dy.       (EI1)
+
+The actual coefficient is t_n=sum_(k=1..n^2)mu(k)K_(n,k). This is a
+finite sum. The physical source range is [sqrt(n),n^2]. All coefficients
+preceding sqrt(n) are present; the lower endpoint is not rounded. The
+upper touching atom k=n^2 has a zero interval but remains in the closed
+coefficient inventory. Neither original transform endpoint nor unborn-product
+completion is altered.
+
+For D=2^j and D<=n<2D, retain the single cubic compiler prefix
+ U=floor(((2D-1)^2)^(1/3)). At the common kernel, the three convolution
+branches satisfy t_n=3T1_n-3T2_n+T3_n. Their actual integrals, not rational
+test weights, are evaluated below. Production compilation uses mu through U;
+an independent validation additionally computes the full source through n^2
+by trial division. No speed or full-source-query avoidance claim is made
+about that validation.
+
+## 2. An exact rational Taylor recurrence for the complete reference
+
+Define the analytic potential
+ r(y)=[1-A(y)^(-2)]/(18y)+1/[16(1-y)].
+The apparent singularity at zero is removable, and r(0)=35/432.
+The transformed Bessel equation is
+ y(1-y)B_n''+[7/6-(13/6)y]B_n'+[lambda-r(y)]B_n=0.       (EI2)
+
+To derive it, put theta=2asin(sqrt(y)) and
+ w=y^(1/3)(1-y)^(1/4). The Bessel reference satisfies
+ (wB_n)''_theta+[nu^2+2/(9theta^2)](wB_n)=0.
+The analogous transformation of the Jacobi equation has potential
+ nu^2+1/(18y)+1/[16(1-y)]. Subtract the potentials and use
+ theta^2=4y A(y)^2. This produces (EI2), including the minus sign on r.
+
+Write B_n=sum_(m>=0)c_m y^m and r=sum_(m>=0)r_m y^m. Then
+ c_0=(-1)^n b_n,
+ c_(m+1)={ [m(m+7/6)-lambda]c_m
+                  +sum_(k=0..m)r_k c_(m-k) }/[(m+1)(m+7/6)]. (EI3)
+
+Every coefficient is rational. A itself has coefficients
+ A_k=binom(2k,k)/[4^k(2k+1)]; finite inversion and multiplication yield r_k.
+The nonzero denominator in EI3 fixes a unique analytic branch. In particular
+ B_n'(0)-P_n'(0)=(-1)^n b_n*(5/72),
+so this routine does not accidentally evaluate the Jacobi polynomial instead.
+The tests independently form A^(2/3)(1-y)^(-1/4)F_(1/6)(2nu sqrt(y)A)
+by finite formal-series composition and compare the coefficients with EI3.
+
+## 3. Explicit complex-disk bound and derivative remainder
+
+For |y|<1 one has the analytic integral
+ A(y)=integral_0^1(1-yu^2)^(-1/2)du.
+Use the principal square root. Each integrand has positive real part, so A
+has positive real part and no zeros. Thus its 2/3 power is analytic, as is
+(1-y)^(-1/4). The F function is entire and even: the square-root choice in
+its composed argument disappears. Therefore B_n is analytic in |y|<1.
+
+For 0<rho<1,
+ |A(y)|<=(1-rho)^(-1/2) on |y|<=rho.
+The normalized Poisson representation for F_(1/6) is a cosine average over
+a probability measure on [0,1]. For complex z, |cos(zu)|<=exp(|z|), hence
+ |F_(1/6)(z)|<=exp(|z|).
+It follows that
+ sup_(|y|<=rho)|B_n(y)|
+ <= b_n(1-rho)^(-7/12)*exp(2nu sqrt(rho/(1-rho))).         (EI4)
+
+The executable chooses
+ rho=min(3/4,2/n), q=1/(n rho)<1,
+ h=ceil(sqrt(4nu^2 rho/(1-rho))),
+ M=b_n*3^h/(1-rho).
+Here h is computed by integer inequalities, not a floating square root.
+Since e<3 and (1-rho)^(-7/12)<=(1-rho)^-1, M is a rational upper bound
+in EI4. The elementary bound e<3 follows from the exponential series and
+k!>=2^(k-1) for k>=2, strictly at some terms.
+
+Cauchy's coefficient estimate gives |c_k|<=M rho^-k. For L>=1 and
+0<=y<=1/n, termwise differentiation of this absolutely convergent series
+therefore proves
+ |B_n'(y)-sum_(k=1..L)k c_k y^(k-1)|
+ <= E_(n,L):=(M/rho)q^L[(L+1)-Lq]/(1-q)^2.              (EI5)
+
+The last expression sums the ENTIRE omitted derivative tail. It is not
+estimated by only the first omitted term. It tends to zero for fixed n.
+This proves mathematical termination of a precision search with no order
+cap; the finite implementation separately imposes resource limits and
+raises an error if its maximum order or width budget is not met. Neither
+resource exhaustion nor an unresolved interval is interpreted as a zero.
+
+For the complete source, |g'(y)|<=(4/3)y^-5/3 yields the direct coefficient
+error allowance
+ |t_n-t_n^(L)| <= 4 E_(n,L)/(3lambda sqrt(n)).             (EI6)
+
+For arbitrary individual atom contractions the program uses the separately
+valid allowance
+ e_(n,k) = E_(n,L)/(2lambda)*[(b-a)/3
+             +10/(9sqrt(k))*(b^(3/4)-a^(3/4))].           (EI7)
+Dropping 1-y only in this positive error estimate and applying the triangle
+inequality to the two scalar kernel terms proves EI7. All algebraic factors
+are enclosed outwards. A cubic branch uses sum_k |a_branch(k)|e_(n,k)
+for its numerical error; this does not assign that branch an independent
+infinite arithmetic energy bound. Actual coefficient values retain signs.
+
+## 4. Exact polynomial antiderivatives, no heuristic quadrature
+
+Put H_L(y)=(1-y)sum_(k=1..L)k c_k y^(k-1)=sum_(r=0..L)q_r y^r.
+Define the rational polynomials
+ F_L(y)=sum_r q_r y^(r+1)/(r+1),
+ G_L(y)=sum_r q_r y^r/(r+3/4).
+The integral of H_L is F_L; the integral of y^-1/4 H_L is y^3/4 G_L.
+Consequently
+ K_(n,k)^(L)=(2lambda)^-1{[F_L(b)-F_L(a)]/3
+   -5/[6sqrt(k)]*[b^3/4 G_L(b)-a^3/4 G_L(a)]}.           (EI8)
+
+The polynomial evaluations use exact Fraction arithmetic. Square and fourth
+roots are enclosed using integer power comparisons, and all rounding is
+outward. Add EI7 before emitting the atom interval. Recombine the full
+signed source and each complete cubic branch before taking squared energies.
+
+An independent organization integrates the actual source by integer cells.
+For 1/(k+1)^2<y<1/k^2 use the carried prefixes
+ A_k=sum_(m<=k)mu(m)/sqrt(m), M_k=sum_(m<=k)mu(m).
+The integrand is
+ (1-y)[M_k/3-(5/6)A_k y^-1/4]B_n'(y)/(2lambda).
+Its cell is intersected with [n^-4,1/n] using exact rational endpoints.
+All earlier A_k and M_k contributions survive. Apply EI8 with the two
+prefixes and attach the global error EI6. Agreement of these independently
+organized enclosures checks the implementation; general equality follows
+from finite linearity, not from interval overlap alone.
+
+## 5. Actual finite observations
+
+The recorded batch uses 48 output bits for degrees 2 through 15, covering
+three COMPLETE degree shells. Each of the following energy enclosures has
+width exactly 2^-48. Decimal values here are only readable approximations;
+the attached JSON and receipt retain the rational endpoints.
+
+ degree shell     full signed energy     diagonal-only energy      mixed sum
+ 2..3             0.01145339920           1.22581275320             -1.21435935399
+ 4..7             0.03060016153           0.07317339430             -0.04257323277
+ 8..15            0.04213499262           0.10828054409             -0.06614555147
+
+The diagonal-only expression is sum_n(4n+7/3)(9T1_n^2+9T2_n^2+T3_n^2).
+The mixed expression is sum_n(4n+7/3)(-18T1_n T2_n+6T1_n T3_n-6T2_n T3_n).
+The full signed energy includes both. No signs or mixed orders are omitted.
+The first block's diagonal-only energy exceeds its full energy by a factor
+above 100. Separate branch envelopes would lose that actual finite cancellation.
+The mixed sum is negative in these three blocks; no all-block sign is inferred.
+
+The full shell energies strictly increase in these three blocks. This refutes
+an unconditional monotone-decrease assertion starting at the first block,
+not a summable eventual upper envelope. Finitely many increasing terms do
+not establish divergence, eventual growth, or failure of the original target.
+
+At n=2 the actual t_2 lies between 0.0328 and 0.0329. The contribution of
+the carried atom k=1 lies between 0.0825 and 0.0827. Deleting it changes the
+sign of that coefficient. This is an actual-source finite control, not just
+a synthetic vector illustrating possible information loss.
+
+## 6. Remaining arithmetic and verification boundary
+
+The target remains sum_(j>=1) E_j < infinity, where
+ E_j=sum_(n=2^j..2^(j+1)-1)(4n+7/3)|3T1_n-3T2_n+T3_n|^2.
+This pass provides no infinite shell-tail budget. A sufficient bound
+ E_j<=C/(j+1)^(1+eta), eta>0,
+would still need actual witnesses C,eta and coverage of every shell. Through
+the previous written difference estimate D<821, it would give
+ H_(1/3)(T)<1+(sqrt(C(1+1/eta))+821)^2.
+No statement about the computed finite energies supplies those witnesses.
+
+The finite evaluator is now reusable to test a proposed joint signed estimate
+against the actual kernel. It does not substitute an approximation kernel
+without cost, impose P04, divide out a spectral multiplier, change any
+completion terms, or turn the square root of a sum into a sum of magnitudes.
+
+Twenty-two tests passed in normal and optimized Python. The unchanged cubic
+compiler's eighteen tests were replayed in normal Python. Tests include
+independent series composition, ODE coefficients, exact root brackets,
+Cauchy-tail algebra, source cells versus atoms, complete mixed energies,
+precision refinement, zero touching intervals, carry-deletion and altered
+Mobius-sign controls, and rejection at unpaid truncation/precision budgets.
+
+Three additional mpmath point checks were exploratory consistency checks only;
+no mpmath values, floating-point bounds, or numerical quadrature enter the
+certified outputs. Raw executed test logs and complete rational output are
+preserved in the delivery archive. Native Lean/Lake and a full checkout are
+unavailable; native replay, owned-declaration auditing and full repository
+checks were NOT_RUN. This written method is not a native proof admission.
+
+Primary external formula sources:
+- NIST DLMF 10.2.1-10.2.2: Bessel equation and normalized power series.
+  https://dlmf.nist.gov/10.2
+- NIST DLMF 10.9.4: Poisson integral for order greater than -1/2. Its analytic
+  continuation and normalized cosine-average bound are used in EI4.
+  https://dlmf.nist.gov/10.9
+- NIST DLMF 4.24: inverse-trigonometric analytic series and derivatives.
+  https://dlmf.nist.gov/4.24
+Cauchy's coefficient estimate is applied only on the explicit analytic disk
+proved above; it is not a conjectural bound for the arithmetic coefficients.
