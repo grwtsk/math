@@ -2,9 +2,9 @@
 
 Browse by mathematical area, then by object. Start with [the least-prime example](start/least-prime.md), [verification](how-to/verify.md), or the [selected result catalog](reference/results.md).
 
-12 areas · 85 object guides · 44 documented object groups · 664 Lean source modules.
+12 areas · 86 object guides · 45 documented object groups · 667 Lean source modules.
 
-At least 4638 source declaration commands, including 3396 theorem/lemma commands, across 561 parsed Lean source modules; 103 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
+At least 4658 source declaration commands, including 3409 theorem/lemma commands, across 564 parsed Lean source modules; 103 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
 
 | Area index | Object guides | Object groups | Lean modules | Intake records | Selected families |
 |---|---:|---:|---:|---:|---:|
@@ -18,9 +18,9 @@ At least 4638 source declaration commands, including 3396 theorem/lemma commands
 | [Logic](mathematics/Logic/index.md) | 10 | 3 | 65 | 3 | 0 |
 | [Measure theory](mathematics/MeasureTheory/index.md) | 0 | 0 | 6 | 1 | 0 |
 | [Number theory](mathematics/NumberTheory/index.md) | 28 | 12 | 209 | 19 | 1 |
-| [Order](mathematics/Order/index.md) | 0 | 0 | 5 | 2 | 0 |
+| [Order](mathematics/Order/index.md) | 1 | 1 | 8 | 2 | 0 |
 | [Spectral theory](mathematics/Spectral/index.md) | 7 | 4 | 25 | 0 | 0 |
-| **Total (12 areas)** | **85** | **44** | **664** | **68** | **3** |
+| **Total (12 areas)** | **86** | **45** | **667** | **68** | **3** |
 
 ## Lean source command totals
 
@@ -36,24 +36,24 @@ At least 4638 source declaration commands, including 3396 theorem/lemma commands
 | [Logic](mathematics/Logic/index.md) | ≥ 556 | ≥ 296 | 60 | 5 |
 | [Measure theory](mathematics/MeasureTheory/index.md) | 78 | 67 | 6 | 0 |
 | [Number theory](mathematics/NumberTheory/index.md) | ≥ 1692 | ≥ 1304 | 169 | 40 |
-| [Order](mathematics/Order/index.md) | 70 | 43 | 5 | 0 |
+| [Order](mathematics/Order/index.md) | 90 | 56 | 8 | 0 |
 | [Spectral theory](mathematics/Spectral/index.md) | ≥ 92 | ≥ 74 | 22 | 3 |
-| **Total** | **≥ 4638** | **≥ 3396** | **561** | **103** |
+| **Total** | **≥ 4658** | **≥ 3409** | **564** | **103** |
 
 `≥` marks a lower bound: unparsed files have unavailable counts. The theorem/lemma column is included in the declaration column.
 
 ## Inventory and evidence scope
 
-The maintained documentation contains 120 pages, including area indexes, guides and reference material. Object guides link 81 distinct primary sources. The archive intake records 68 sources; the selected catalog covers 3 families. These are separate inventories and must not be added together.
+The maintained documentation contains 121 pages, including area indexes, guides and reference material. Object guides link 82 distinct primary sources. The archive intake records 68 sources; the selected catalog covers 3 families. These are separate inventories and must not be added together.
 
 | Object-guide evidence label | Pages |
 |---|---:|
-| `fresh-selected` | 22 |
+| `fresh-selected` | 23 |
 | `historical` | 1 |
 | `historical-source-description` | 54 |
 | `literature-and-historical-source-description` | 3 |
 | `written-argument` | 5 |
-| **Total object guides** | **85** |
+| **Total object guides** | **86** |
 
 Evidence labels describe the exact page/source scope. A fresh selected check is not whole-library acceptance; a written or historical description is not a new proof verdict. Source-module counts include audit interfaces and unverified candidates. No accepted-theorem, proof or originality total is inferred.
 

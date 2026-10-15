@@ -171,6 +171,9 @@
     ],
     "LinearAlgebra/Matrix": [
       "GRWTSK/LinearAlgebra/Matrix/TraceRank.lean"
+    ],
+    "Order/Embeddings": [
+      "GRWTSK/Order/Embeddings/PrefixObstruction.lean"
     ]
   }
 }

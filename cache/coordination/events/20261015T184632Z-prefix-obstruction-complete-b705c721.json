@@ -1,0 +1,104 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "prefix-obstruction-formal",
+  "status": "implementation_complete_pending_root_admission",
+  "owner": "indexed_dictionary",
+  "branch": "main",
+  "source_sha256": {
+    "GRWTSK/Order/Embeddings/PrefixObstruction.lean": "438d46160c2131154dc49b6c345208207c4ba0931ec0487a08153a0291ac8f46",
+    "GRWTSK/Order/Embeddings/Checks/Positive/PrefixObstruction.lean": "6351f7c8ff76d7a50e5028b649405d1d8f65b3d6836724f1488c4da0da33f79a",
+    "GRWTSK/Order/Embeddings/Checks/Negative/PrefixMissingReflection.lean": "c68af330ee9d86c1aa3fc9e162c44efadefb975beec8167c1a9ae1662d625e8f"
+  },
+  "api_event": "cache/coordination/events/20261015T184527Z-prefix-obstruction-api-b180f86c.json",
+  "bounded_scout": {
+    "scope": "Bounded local pinned Lean List, Mathlib List/order and existing candidate-duplicate inspection. No exhaustive search or novelty claim.",
+    "queries": [
+      "List.IsPrefix ancestor comparability",
+      "prefix_or_prefix_of_prefix",
+      "prefix_replicate_iff",
+      "prefix representation preserving/reflection obstruction",
+      "candidate ancestors_comparable and Taxonomy.ancestors_chain"
+    ],
+    "files": {
+      ".lake/packages/mathlib/Mathlib/Data/List/Basic.lean": "a5490adaf9886c84cf0ffad009267ea9324bfa6c9b81b529454158c19eedd501",
+      ".lake/packages/mathlib/Mathlib/Data/List/Infix.lean": "e43b13698196ec82262baa7c14272090f1d26d2bfa593b45582f487665506560",
+      ".lake/packages/mathlib/Mathlib/Order/InitialSeg.lean": "fa0d99ef1cf889a281bcb0f6c4d1afd20f3555a508caf659f483d84d79081336",
+      "/Users/local/.elan/toolchains/leanprover--lean4---v4.33.0/src/lean/Init/Data/List/Sublist.lean": "aa624029539f797f6a04e6f58cab1381fbba29cc4fbe04f0d4d2322867dbdfbb",
+      "/Users/local/.elan/toolchains/leanprover--lean4---v4.33.0/src/lean/Init/Data/List/Basic.lean": "6fe2c8b4db30895cfc240e96d49119a8fb9997c6074e294ba62352a7f9adba72",
+      "GRWTSK/Order/Taxonomy/Address.lean": "aae54480d327193e1d68676baa351623373861257fed59accf0ad328a8c2ad2b",
+      "GRWTSK/Order/Taxonomy/Core.lean": "2de1811f8f126307216df30e5e3578b117acd305ca3039725f18f8bcce696497"
+    },
+    "pins": {
+      "lean_toolchain": "leanprover/lean4:v4.33.0",
+      "lean_toolchain_sha256": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
+      "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "lake_manifest_sha256": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec"
+    },
+    "reused": [
+      "List.prefix_or_prefix_of_prefix (exact upstream ancestor comparability)",
+      "List.prefix_replicate_iff (exact chain representation)",
+      "List.length_replicate (chain/rank injection proof)"
+    ],
+    "candidate_boundary": "Address/Core bytes were inspected and fingerprinted only; imported neither, edited neither, changed no candidate receipts, admission status or NOT_RUN labels.",
+    "contribution": "Generic preserving+reflecting common-upper obstruction and concrete finite diamond/chain consumers; do not duplicate the upstream/candidate ancestor-comparability proof."
+  },
+  "checks": [
+    {
+      "kind": "library",
+      "trust": 0,
+      "fatal_warnings": true,
+      "exit_code": 0,
+      "receipt": ".local/prefix-obstruction/20261015T184355.312691Z-library.json"
+    },
+    {
+      "kind": "positive_control",
+      "trust": 0,
+      "fatal_warnings": true,
+      "exit_code": 0,
+      "receipt": ".local/prefix-obstruction/20261015T184424.789985Z-positive.json"
+    },
+    {
+      "kind": "hostile_control",
+      "trust": 0,
+      "fatal_warnings": true,
+      "exit_code": 1,
+      "passed_intended_type_mismatch": true,
+      "receipt": ".local/prefix-obstruction/20261015T184425.404522Z-negative.json"
+    },
+    {
+      "kind": "repository_layout",
+      "receipt": ".local/prefix-obstruction/20261015T184631.018248Z-layout.json",
+      "command": [
+        "python3",
+        "-B",
+        "scripts/check_math_layout.py"
+      ],
+      "exit_code": 1,
+      "summary": "Math layout: FAIL (359 library modules, 175 findings).",
+      "owned_findings": [],
+      "log": ".local/prefix-obstruction/20261015T184631.018248Z-layout.log"
+    },
+    {
+      "kind": "owned_whitespace",
+      "receipt": ".local/prefix-obstruction/20261015T184631.018248Z-whitespace.json",
+      "findings": [],
+      "all_git_checks_clean": true
+    }
+  ],
+  "mathematical_scope": "For any binary source relation, incomparable a,b below common c exclude any map preserving and reflecting actual List.IsPrefix. Proved without source order/finiteness or target alphabet assumptions. Concrete four-node DiamondLe has checked reflexivity/transitivity/antisymmetry and middle-node obstruction. Actual Nat chain rank-prefix representation is injective/preserving/reflecting. Actual injective diamond rank-prefix map preserves but fails reflection, introducing extra left/right comparison.",
+  "remaining": [
+    "Root complete fresh owned-declaration/census/axiom audit, runner, metadata/documentation admission.",
+    "External typed-DAG/tree correspondence, JSON/Python validators and method identity inventory are not established."
+  ],
+  "native_coordination": "All native children exited and shared replay lock released before API/release event and root/cache_adapter notifications. No more native jobs or source edits planned.",
+  "failure_preservation": [
+    ".local/prefix-obstruction/20261015T184355.950313Z-positive.json with exact failed source variant; replaced only two closed-fixture decide proofs with simp [DiamondLe].",
+    "Initial coordination-only non-UTF-8 stdin rejection recorded separately; native proof evidence unaffected."
+  ],
+  "source_variants_directory": ".local/prefix-obstruction/source-variants",
+  "previous_source_mutations": [],
+  "candidate_status_mutations": [],
+  "shared_metadata_mutations": [],
+  "commits": [],
+  "remote_mutations": []
+}

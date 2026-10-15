@@ -1,0 +1,38 @@
+{
+  "schema": "repository-design-decision-v1",
+  "id": "prefix-embedding-v1",
+  "at": "2026-10-15T18:47:31.275986+00:00",
+  "previous_record": {
+    "path": "cache/decisions/batch-certificate-v1.json",
+    "sha256": "30691731a8029b5c1f0cf3806552d6ec393160124f8ce640d57c34e33dff8230"
+  },
+  "choice": "Require explicit relation preservation AND reflection before claiming that prefix addresses faithfully represent a taxonomy relation. Check the source relation for incomparable predecessors of a common upper bound; that configuration rules out an exact prefix representation.",
+  "premises": [
+    "Actual finite-list prefix relation is the target.",
+    "The represented source relation and its role are explicitly declared.",
+    "Reflection is a separate property; injectivity plus preservation is insufficient."
+  ],
+  "evidence": [
+    {
+      "path": "evidence/Order/Embeddings/prefix-obstruction-checks-2026-10-15.json",
+      "sha256": "0d000a611f6e9c40ba90b433c853d856a72c3b213f5d660586efd74d630da24a"
+    },
+    {
+      "path": "evidence/Order/Embeddings/prefix-obstruction-integration-2026-10-15.json",
+      "sha256": "16f868c7e3f9a2c4a08aa134afeebd4142d01c5c1f3d755550ffb2bf25c216be"
+    }
+  ],
+  "checked_controls": [
+    "Finite diamond exact representation impossible.",
+    "Actual injective monotone prefix map of same diamond introduces an extra comparison.",
+    "Natural chain admits an exact injective representation."
+  ],
+  "operational_application": "Retain typed graph edges and separate source/display occurrence identities whenever one tree cannot represent the declared relation. A display convention does not discharge exact coverage, occurrence reconstruction or relation-reflection obligations.",
+  "separate_open_obligations": [
+    "Candidate recursive Prefix to List.IsPrefix bridge; candidate native admission remains NOT_RUN.",
+    "Python/JSON typed relation/graph reachability refinement and any cache IO/serialization/hash/zlib refinement.",
+    "The 215 declared method identities remain unprovided."
+  ],
+  "contribution": "Human direction grwtsk contributors; OpenAI Codex formalization/checking and correlated review; Lean/Mathlib source credit preserved.",
+  "authority": "Durable local representation choice only; no new permission, remote effect, independent validation or broader proof acceptance."
+}
