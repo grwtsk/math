@@ -1,0 +1,42 @@
+{
+  "external_reference": {
+    "accessed": "2026-10-15",
+    "role": "classical Laguerre generating function, elementary identities proved explicitly",
+    "url": "https://dlmf.nist.gov/18.12.E13"
+  },
+  "native_Lean_admission": false,
+  "new_deductions": [
+    "exact Hankel quotient factorization",
+    "one-sided inverse cost paid by original normalization",
+    "reflected Laguerre overlap and signed heat debt",
+    "pole-centered prime-discrepancy entry formula"
+  ],
+  "not_imported_for_new_results": [
+    "seven-eighths theorem",
+    "zero-density theorem",
+    "two-thirds proportion theorem"
+  ],
+  "papers": {
+    "sofic_boundary_weil_kernel_updated.pdf": {
+      "bytes": 530703,
+      "sha256": "91d61775eb936c0ebfacf7f11c6276d63073c3b12328147e971ea958b62804c9"
+    },
+    "subexponential_arithmetic_return.pdf": {
+      "bytes": 359486,
+      "sha256": "df5508fc7b26658c1f8842f6ff6efea6d9828bcc0754716576210c78660ac8b7"
+    },
+    "transported_weights_tensor_return.pdf": {
+      "bytes": 339680,
+      "sha256": "332eba97cb1e5f8a750968af61c1829cf80515ca913fb6bbae8a5a7c9a4ec7e9"
+    }
+  },
+  "repository_base": "3def75dd484a186e529e76c382c44b1dc40b0de1",
+  "source_PDFs_published": false,
+  "source_producer": "scripts/arithmetic_quotient_sections.py",
+  "source_producer_sha256": "efc700c5aca9223b4ca07743e69e6469f61e6dd55aed53ee7e5f550a80d5580e",
+  "source_roles": {
+    "sofic_boundary_weil_kernel_updated.pdf": "Signed heat reconstruction; no positivity supplied by averaging",
+    "subexponential_arithmetic_return.pdf": "Theorem 3.1 source-specific strip return; existing finite results not rerun",
+    "transported_weights_tensor_return.pdf": "Sections 2,6,7: complete cubic mean, coupled norm comparison, exact doubling"
+  }
+}

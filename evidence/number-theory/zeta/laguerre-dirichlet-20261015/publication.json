@@ -1,0 +1,87 @@
+{
+  "additions": {
+    "evidence/number-theory/zeta/laguerre-dirichlet-20261015/README.txt": {
+      "bytes": 3724,
+      "git_blob_sha1": "050c323bc882f627ce1c4d306f382b340e6b34f6",
+      "sha256": "35c0bb407d5d565e6b491f01a2182ccb58093ee8880c8b6b5d102029c1bc3b2f"
+    },
+    "evidence/number-theory/zeta/laguerre-dirichlet-20261015/attempt-01.json.xz": {
+      "bytes": 6668,
+      "git_blob_sha1": "bce28db8d51ef9ade6f58a9449ca48e156e38fb0",
+      "sha256": "b51e2b58d1667588a78be21d7e512f35e1ba006f553107d20e0d5ab68668670d"
+    },
+    "evidence/number-theory/zeta/laguerre-dirichlet-20261015/derivation.txt": {
+      "bytes": 13370,
+      "git_blob_sha1": "3bb6452fec0b4c17b2a31342898961ded7d59148",
+      "sha256": "c6174f6bbf37f3efe14e4fcd1d15151f7975f2a42e1ec9418b09e9cc4a919631"
+    },
+    "evidence/number-theory/zeta/laguerre-dirichlet-20261015/execution-history.json.xz": {
+      "bytes": 17708,
+      "git_blob_sha1": "f1df23cee79bc94f7c8fee94cffad85b7501a806",
+      "sha256": "58f19837deb91e20cd7028b940943786f6586d98b424ebb6b095c1f458bec458"
+    },
+    "evidence/number-theory/zeta/laguerre-dirichlet-20261015/inputs.json": {
+      "bytes": 1517,
+      "git_blob_sha1": "e0366ef17cd26af7e66f76b49812a0c35c960a54",
+      "sha256": "52e4ff0c304fde12353e30eb7818fcf713cef4b752a69b5731b5e1332f592d25"
+    },
+    "evidence/number-theory/zeta/laguerre-dirichlet-20261015/replay.json.xz": {
+      "bytes": 14000,
+      "git_blob_sha1": "1f73d5881ec2a628208cc299df1d735f12fcec8c",
+      "sha256": "cfbbb3e06e8f1f4acb2566c32938ad8bf1577ed2e45aa70bbbb4b6b21a803c84"
+    },
+    "evidence/number-theory/zeta/laguerre-dirichlet-20261015/requirements-tests.txt": {
+      "bytes": 28,
+      "git_blob_sha1": "de9542d36e40090c2dad83e84c503496a711bec7",
+      "sha256": "47fd19021144e071cc43b6e265aafada0056abe89724ad95bd6e3a8e37995b94"
+    },
+    "evidence/number-theory/zeta/laguerre-dirichlet-20261015/results.json": {
+      "bytes": 4721,
+      "git_blob_sha1": "b96e44c41b2cdefb3c9a9359f7e4aeed604c9d94",
+      "sha256": "815eb550f0c6d9e7dec36585f30093ec732c2e0fbaf64aeff8d54f77a7c691de"
+    },
+    "evidence/number-theory/zeta/laguerre-dirichlet-20261015/source-ledger.json": {
+      "bytes": 2757,
+      "git_blob_sha1": "be24f735c52d739d77987738a808a58c92ff4fe5",
+      "sha256": "37cfb1f45f986ebd48f988de4824473a8369334db86074fb4c1a0f4b72e39c1d"
+    },
+    "scripts/laguerre_dirichlet_bridge.py": {
+      "bytes": 8753,
+      "git_blob_sha1": "556698cc30f54c5c1abd420e809713e8253d25fd",
+      "sha256": "1de112f9a54e5019a3c41f6aca9aeaa4e2b8f4828aaf2bdc7a7d3034e1c8e9d3"
+    },
+    "scripts/verify_laguerre_dirichlet.py": {
+      "bytes": 8574,
+      "git_blob_sha1": "3dfc800d25b11e07c41cca63a75c333d95b45d14",
+      "sha256": "baca7257952c6137f10abfb38c9e9b988607313c664d0fa93cb7bad8358f676d"
+    },
+    "tests/test_laguerre_dirichlet_bridge.py": {
+      "bytes": 10670,
+      "git_blob_sha1": "cfd22cc878931cc3ed5549b2dd7baa6d16e5e44d",
+      "sha256": "ede0be3c44a58a03a2c1b26b772f8eed3c12d85a691a4a0d6961e14280788a07"
+    }
+  },
+  "branch": "main",
+  "concurrent_work_preserved": {
+    "added_paths": 10,
+    "commit": "ba77517b0b4e74d36a824d34c2948b276471b844",
+    "overlapping_paths": [],
+    "tests_of_concurrent_work": "NOT_RERUN"
+  },
+  "existing_files_deleted": 0,
+  "existing_files_modified": 0,
+  "files_added_including_this_record": 13,
+  "mathematical_status": {
+    "RH_proved": false,
+    "all_depth_signed_head": "OPEN",
+    "finite_energy_bound": "D_N < 5/24 for every integer 1 <= N <= 128",
+    "new_zero_exclusion": false
+  },
+  "parent_tree": "f7410c61b505cd130e6c791ea235af9f46fe70ff",
+  "publication_operation": "Additive tree on publication_parent; non-force expected-head update; subsequent remote confirmation required.",
+  "publication_parent": "ba77517b0b4e74d36a824d34c2948b276471b844",
+  "repository": "grwtsk/math",
+  "research_base": "d1ae4ef6c9fd5a246f1a9fbff56097a498366fd8",
+  "schema": "laguerre-dirichlet-publication-v1",
+  "verification_scope": "137 tests per Python mode and both source profiles replayed in each mode. No full checkout, native Lean, owned-declaration audit, or whole-repository checks. Analytic remainder and return arguments remain written proofs."
+}

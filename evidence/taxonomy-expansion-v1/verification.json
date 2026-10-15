@@ -1,0 +1,111 @@
+{
+  "schema": "taxonomy-expansion-execution/v1",
+  "repository": "grwtsk/math",
+  "base_commit": "d4802c5db02ffa5ffbafff118ec87dd9a091457c",
+  "scope": "Selected staged files from the prior integration archive plus the new implementation; NOT a full checkout or whole-repository suite.",
+  "python": "3.13.5",
+  "source_bindings": [
+    {
+      "path": "scripts/taxonomy_expansion.py",
+      "bytes": 15998,
+      "sha256": "c9046c06f3f22662b6320c76ca2fcc4297f2ac668eec0389130aedb628cbc0f5",
+      "git_blob_sha1": "4380851132470637d60dab131de0f0e7836bf7c5"
+    },
+    {
+      "path": "tests/test_taxonomy_expansion.py",
+      "bytes": 5616,
+      "sha256": "99683da0e4bfa353be12a16a8cc639d717fb37c1678153d6b50f6e46d2e82c32",
+      "git_blob_sha1": "dd347deb00eff394b89626a238ccc90ef96da67b"
+    },
+    {
+      "path": "examples/taxonomy-expansion/registry.json",
+      "bytes": 828,
+      "sha256": "27a212b46d2d8f600ba132a83791553d39091eb716ddae7fca83df74eb1a3913",
+      "git_blob_sha1": "aedf3cbebd4ea2c28026aa0aa37acad89d205787"
+    },
+    {
+      "path": "examples/taxonomy-expansion/request.json",
+      "bytes": 1319,
+      "sha256": "f92412ebf3c7f05f2089a9ddcce120673d620cb350f72a5900e7cb89a161246e",
+      "git_blob_sha1": "03a054d0452e9857ab13653568007be41d7c2cbb"
+    },
+    {
+      "path": "examples/taxonomy-expansion/policy.json",
+      "bytes": 174,
+      "sha256": "8976c8bc33caa9c1cd904c8d5afde9137a5d38b6391202341700e9a074a24ddf",
+      "git_blob_sha1": "cbbbf1a4b481d16fe7246e1d74c66a738c6576db"
+    },
+    {
+      "path": "evidence/taxonomy-expansion-v1/formal-candidates.zip",
+      "bytes": 5471,
+      "sha256": "9a3ec88990cddc988bf70710311e98b69a77f650c7137cfa807ee013f61e26f0",
+      "git_blob_sha1": "dd5597a856676f6a3b68a5e668dfb80adff73aac"
+    },
+    {
+      "path": "evidence/taxonomy-expansion-v1/formal-sources.json",
+      "bytes": 1981,
+      "sha256": "5148bcc12198efcf2bd3f2aa1fa3aa900c7a1212c3f50bb71da0da94e2ee62a0",
+      "git_blob_sha1": "3887e4c1addb28812d2699f9912a3803fc81e4d4"
+    },
+    {
+      "path": "evidence/taxonomy-expansion-v1/execution-log-index.json",
+      "bytes": 2303,
+      "sha256": "fc6ef486e0af161665331157551662e0429ed85c4b2cd0ed62bf262a80bb5ec1",
+      "git_blob_sha1": "e37ed0175b215f3cfb0c8bce8fdb7e4f85f06375"
+    }
+  ],
+  "runs": [
+    {
+      "command": "python3 -B -m unittest discover -s tests -v",
+      "test_methods": 76,
+      "exit_code": 0,
+      "log": "math-normal-final.log",
+      "log_sha256": "487354226122485d48fb8e30f4b0e0c5be88a923a87b7738a389be0617d1e4e5"
+    },
+    {
+      "command": "python3 -O -B -m unittest discover -s tests -v",
+      "test_methods": 76,
+      "exit_code": 0,
+      "log": "math-optimized.log",
+      "log_sha256": "606d266770de40e5582cd14315f3fdd0d901dd80a266b141fc980bb0e8756b52"
+    }
+  ],
+  "cross_repository_smoke": {
+    "producer": "grwtsk/math:scripts/taxonomy_expansion.py",
+    "consumer": "grwtsk/noeaaeue:tools/taxonomy_expansion_review.py",
+    "status": "PASSED_SYNTHETIC_ONLY",
+    "attachment_verdicts": [
+      "INTEGRITY_MATCH_REPLAY_REQUIRED"
+    ],
+    "semantic_classification": "NOT_ESTABLISHED",
+    "search_without_review": {
+      "matches": 1,
+      "unknown": 0
+    },
+    "search_requiring_review": {
+      "matches": 0,
+      "unknown": 1
+    },
+    "native_observations": false
+  },
+  "formal_candidates": {
+    "modules": 5,
+    "status": "ARCHIVED_NOT_INSTALLED_OR_ADMITTED",
+    "new_filesystem_lean_modules": 0
+  },
+  "native_lean_replay": "NOT_RUN_EXECUTABLE_NOT_FOUND",
+  "native_rust_replay": "NOT_RUN_EXECUTABLE_NOT_FOUND",
+  "owned_declaration_axiom_audit": "NOT_RUN",
+  "full_repository_layout_and_documentation_checks": "NOT_RUN_NO_FULL_CHECKOUT",
+  "PMD_checkpoint": "NOT_RECOVERED_NOT_MUTATED",
+  "source_intake_ledger": "UNCHANGED",
+  "library_umbrella": "UNCHANGED",
+  "policy_adoption": "NOT_PERFORMED",
+  "initial_failure": "Consumer test fixture builder initially had a missing closing brace; corrected before final runs. The failed log is retained; no native failure is inferred.",
+  "remote_effect": "Publication and readback are separate from this pre-commit execution receipt.",
+  "complete_execution_logs": {
+    "location": "delivery_attachment_only",
+    "archive_sha256": "c88fc0344630e4e3649b33eede7cecc5a621d62f1c8bb3902b5e44754776fd13",
+    "bytes": 5447
+  }
+}
