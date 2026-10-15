@@ -1,0 +1,250 @@
+--- a/scripts/log_cell_relaxation.py
++++ b/scripts/log_cell_relaxation.py
+@@ -2,8 +2,10 @@
+ """Source-specific logarithmic-cell centering with outward rational arithmetic.
+ 
+ Human mathematical direction: grwtsk contributors. Derivation/implementation:
+-OpenAI ChatGPT. MIT. The continuum implications are written in DERIVATION.md;
+-these computations do not constitute Lean admission or an RH proof.
++OpenAI ChatGPT. MIT. Written continuum proofs and historical candidates are in
++evidence/number-theory/moebius/log-cell-relaxation-20261014/. These computations
++do not constitute Lean admission or an RH proof. Integration hardening retains
++the original arithmetic and source signs.
+ 
+ The source is F(t)=2*(sum_{k<=exp(t)} mu(k)/sqrt(k)
+                       -exp(-t/2)*sum_{k<=exp(t)} mu(k)).
+@@ -18,6 +20,37 @@
+ import hashlib
+ import json
+ 
++MAX_REPORT_BYTES = 16 * 1024 * 1024
++MAX_SUBCELLS = 262144
++PREFIX_FIELDS = frozenset({
++    'schema', 'source', 'horizon', 'cutoff', 'level', 'bits', 'mu_sha256',
++    'integrated_energy', 'cell_mean_energy', 'prefix_variance',
++    'uncomputed_variance_tail_upper', 'all_height_variance_upper',
++    'theoretical_all_height_bound', 'whole_source_energy_bounded',
++    'native_lean_admission', 'rows',
++})
++OPERATOR_FIELDS = frozenset({
++    'schema', 'cutoff', 'bits', 'linfinity_norm_squared_prefix',
++    'linfinity_norm_squared_tail_upper', 'linfinity_norm_squared_upper',
++    'hilbert_schmidt_squared_prefix', 'hilbert_schmidt_squared_tail_upper',
++    'hilbert_schmidt_squared_upper', 'universal_bounds', 'source_scope',
++    'full_signed_energy_bound', 'native_lean_admission',
++})
++
++
++def unique_object(pairs):
++    """Reject ambiguous JSON objects at every nesting level."""
++    result = {}
++    for key, value in pairs:
++        if key in result:
++            raise ValueError(f'duplicate JSON key: {key}')
++        result[key] = value
++    return result
++
++
++def nonexact_json_number(value):
++    raise ValueError(f'nonexact JSON number: {value}')
++
+ 
+ def integer(x: int, name: str, lo: int, hi: int) -> int:
+     if type(x) is not int or not lo <= x <= hi:
+@@ -58,8 +91,12 @@
+ 
+     @classmethod
+     def rounded(cls, lo, hi, bits=160):
++        integer(bits, 'bits', 64, 512)
++        lo, hi = rational(lo), rational(hi)
++        if lo > hi:
++            raise ValueError('reversed interval before rounding')
+         s = 1 << bits
+-        return cls(Q(floorq(rational(lo)*s), s), Q(ceilq(rational(hi)*s), s), bits)
++        return cls(Q(floorq(lo*s), s), Q(ceilq(hi*s), s), bits)
+ 
+     def coerce(self, other):
+         if not isinstance(other, Interval):
+@@ -196,7 +233,7 @@
+         mean = 2*(A - M*(S/h))
+         v = 4*M*M*(C - S.square()/h)
+         # Derived continuum inequality: Var_I(F)<=M^2*h^3/(12*n).
+-        # This intersection is justified in DERIVATION.md, not by sampling.
++        # The archived written derivation justifies this, not sampling.
+         v = v.intersect(0,Q(M*M,12*n)*h.hi**3)
+         g = h*mean.square()
+         e = 4*(A.square()*h - 2*M*A*S + M*M*C)
+@@ -216,6 +253,10 @@
+     integer(cutoff,'cutoff',1,1000000)
+     integer(level,'level',0,6)
+     integer(bits,'bits',64,512)
++    if type(keep_rows) is not bool:
++        raise ValueError('keep_rows must be Boolean')
++    if cutoff * (1 << level) > MAX_SUBCELLS:
++        raise ValueError('subcell resource guard; no result')
+     mu = moebius_sieve(cutoff)
+     A = Interval.exact(0,bits)
+     M = 0
+@@ -276,6 +317,8 @@
+     """
+     integer(cutoff,'cutoff',1,1000000)
+     integer(bits,'bits',64,512)
++    if cutoff > MAX_SUBCELLS:
++        raise ValueError('subcell resource guard; no result')
+     infnorm=trace=Interval.exact(0,bits)
+     for n in range(1,cutoff+1):
+         b=cell_components(n,Interval.exact(0,bits),1)['variance']
+@@ -295,26 +338,46 @@
+ 
+ 
+ def verify_saved(path: str):
+-    with open(path,encoding='utf-8') as f:
+-        saved=json.load(f)
++    """Replay exact data; saved margins and status flags grant no authority."""
++    with open(path, 'rb') as f:
++        raw = f.read(MAX_REPORT_BYTES + 1)
++    if len(raw) > MAX_REPORT_BYTES:
++        raise ValueError('report size resource guard; no result')
++    saved = json.loads(raw.decode('utf-8'), object_pairs_hook=unique_object,
++                       parse_float=nonexact_json_number,
++                       parse_constant=nonexact_json_number)
+     if type(saved) is not dict:
+         raise ValueError('report object required')
+-    if saved.get('schema')=='source-log-cell-residual-operator-v1':
+-        if 'cutoff' not in saved or 'bits' not in saved:
+-            raise ValueError('incomplete operator report')
+-        expected=residual_operator_certificate(saved['cutoff'],saved['bits'])
+-    elif saved.get('schema')=='source-log-cell-centering-v1':
+-        for key in ('cutoff','level','bits','rows'):
+-            if key not in saved:
+-                raise ValueError('incomplete report')
+-        expected=full_prefix(saved['cutoff'],saved['level'],saved['bits'],bool(saved['rows']))
++    schema = saved.get('schema')
++    if schema == 'source-log-cell-residual-operator-v1':
++        if set(saved) != OPERATOR_FIELDS:
++            raise ValueError('operator report fields mismatch')
++        if saved['full_signed_energy_bound'] is not False:
++            raise ValueError('full energy status promotion')
++    elif schema == 'source-log-cell-centering-v1':
++        if set(saved) != PREFIX_FIELDS:
++            raise ValueError('prefix report fields mismatch')
++        if saved['whole_source_energy_bounded'] is not False:
++            raise ValueError('full energy status promotion')
++        if type(saved['rows']) is not list:
++            raise ValueError('rows must be a list')
++        if saved['rows'] and len(saved['rows']) != saved['cutoff']:
++            raise ValueError('incomplete row inventory')
+     else:
+         raise ValueError('unrecognized report schema')
+-    if json.dumps(saved,sort_keys=True,separators=(',',':')) != json.dumps(expected,sort_keys=True,separators=(',',':')):
++    if saved['native_lean_admission'] is not False:
++        raise ValueError('native admission status promotion')
++    if schema == 'source-log-cell-residual-operator-v1':
++        expected = residual_operator_certificate(saved['cutoff'], saved['bits'])
++    else:
++        expected = full_prefix(saved['cutoff'], saved['level'], saved['bits'],
++                               bool(saved['rows']))
++    if json.dumps(saved, sort_keys=True, separators=(',', ':')) != json.dumps(
++            expected, sort_keys=True, separators=(',', ':')):
+         raise ValueError('source-bound recomputation mismatch')
+-    return {'verified':True,'cutoff':saved['cutoff'],'level':saved.get('level'),
+-            'all_height_variance_upper':saved.get('all_height_variance_upper'),
+-            'native_lean_admission':False,'whole_source_energy_bounded':False}
++    return {'verified': True, 'cutoff': saved['cutoff'], 'level': saved.get('level'),
++            'all_height_variance_upper': saved.get('all_height_variance_upper'),
++            'native_lean_admission': False, 'whole_source_energy_bounded': False}
+ 
+ 
+ def main():
+--- a/tests/test_log_cell_relaxation.py
++++ b/tests/test_log_cell_relaxation.py
+@@ -224,4 +224,89 @@
+         self.assertEqual((v.T*H*v)[0],0)
+         self.assertNotEqual(H*v,sp.zeros(2,1))
+ 
++class IntegrationControls(unittest.TestCase):
++    def with_report(self, raw, function):
++        with tempfile.TemporaryDirectory() as d:
++            path = Path(d) / 'report.json'
++            path.write_text(raw, encoding='utf-8')
++            return function(str(path))
++
++    def test_duplicate_top_level_key_rejected(self):
++        raw = json.dumps(m.full_prefix(2))
++        raw = raw[:-1] + ', "native_lean_admission": false}'
++        with self.assertRaisesRegex(ValueError, 'duplicate JSON key'):
++            self.with_report(raw, m.verify_saved)
++
++    def test_duplicate_nested_key_rejected(self):
++        raw = json.dumps(m.full_prefix(2))
++        raw = raw.replace('"integrated_energy": {',
++                          '"integrated_energy": {"lower":"0",', 1)
++        with self.assertRaisesRegex(ValueError, 'duplicate JSON key'):
++            self.with_report(raw, m.verify_saved)
++
++    def test_nonfinite_json_rejected(self):
++        with self.assertRaisesRegex(ValueError, 'nonexact JSON number'):
++            self.with_report('{"cutoff":NaN}', m.verify_saved)
++
++    def test_float_json_rejected(self):
++        raw = json.dumps(m.full_prefix(2)).replace('"cutoff": 2', '"cutoff": 2.0')
++        with self.assertRaisesRegex(ValueError, 'nonexact JSON number'):
++            self.with_report(raw, m.verify_saved)
++
++    def test_unknown_fields_rejected_before_work(self):
++        row = m.full_prefix(2); row['unreviewed'] = True
++        with self.assertRaisesRegex(ValueError, 'fields mismatch'):
++            self.with_report(json.dumps(row), m.verify_saved)
++
++    def test_missing_field_rejected(self):
++        row = m.residual_operator_certificate(2); del row['source_scope']
++        with self.assertRaisesRegex(ValueError, 'fields mismatch'):
++            self.with_report(json.dumps(row), m.verify_saved)
++
++    def test_full_energy_promotion_rejected(self):
++        row = m.full_prefix(2); row['whole_source_energy_bounded'] = True
++        with self.assertRaisesRegex(ValueError, 'full energy status promotion'):
++            self.with_report(json.dumps(row), m.verify_saved)
++
++    def test_rows_type_rejected(self):
++        row = m.full_prefix(2); row['rows'] = {}
++        with self.assertRaisesRegex(ValueError, 'rows must be a list'):
++            self.with_report(json.dumps(row), m.verify_saved)
++
++    def test_truncated_row_inventory_rejected(self):
++        row = m.full_prefix(2, keep_rows=True); row['rows'].pop()
++        with self.assertRaisesRegex(ValueError, 'incomplete row inventory'):
++            self.with_report(json.dumps(row), m.verify_saved)
++
++    def test_rows_replay(self):
++        self.assertTrue(self.with_report(json.dumps(m.full_prefix(3, keep_rows=True)),
++                                         m.verify_saved)['verified'])
++
++    def test_rounding_cannot_hide_reversed_interval(self):
++        with self.assertRaisesRegex(ValueError, 'reversed interval before rounding'):
++            m.Interval.rounded(Q(1, 10)+Q(1, 1 << 200), Q(1, 10), 64)
++
++    def test_rounding_validates_bits_before_shift(self):
++        with self.assertRaisesRegex(ValueError, 'bits must be an integer'):
++            m.Interval.rounded(0, 1, 10**9)
++
++    def test_combined_subcell_resource_guard(self):
++        with self.assertRaisesRegex(ValueError, 'subcell resource guard'):
++            m.full_prefix(4097, 6)
++
++    def test_boolean_row_switch_required(self):
++        with self.assertRaisesRegex(ValueError, 'keep_rows must be Boolean'):
++            m.full_prefix(2, keep_rows=1)
++
++    def test_report_size_guard(self):
++        from unittest.mock import patch
++        with patch.object(m, 'MAX_REPORT_BYTES', 8):
++            with self.assertRaisesRegex(ValueError, 'report size resource guard'):
++                self.with_report('{"payload":1234}', m.verify_saved)
++
++    def test_json_array_not_certificate(self):
++        with self.assertRaisesRegex(ValueError, 'report object required'):
++            self.with_report('[]', m.verify_saved)
++
++
+ if __name__=='__main__':unittest.main()

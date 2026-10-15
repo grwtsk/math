@@ -1,0 +1,105 @@
+{
+  "schema": "phased-array-argument-applications-v1",
+  "date": "2026-10-14",
+  "base_commit": "83857bf2e1d1ad2570d8a79d7b05bf885335e969",
+  "scope": "Twelve named argument families in the current research spine, not every repository file or every historical conversation.",
+  "new_arithmetic_uniform_bound": false,
+  "applications": [
+    {
+      "id": "PA-COVER",
+      "family": "Completed logarithmic mode stack",
+      "source_path": "scripts/reflected_zeta_cover.py",
+      "disposition": "APPLIED_EXECUTED",
+      "application": "PA3-5 replace the whole-disk triangle test on 46 larger rectangles while retaining every completion and source remainder.",
+      "remaining": "A source-specific all-height or off-line exhaustion theorem is still absent."
+    },
+    {
+      "id": "PA-REFLECTION",
+      "family": "Same-height reflection and geometric coverage",
+      "source_path": "scripts/reflected_zeta_cover.py",
+      "disposition": "PRESERVED_EXECUTED",
+      "application": "Retain the xi normalizer, four unique root disks, full binary partition, and exact reflected zero sets.",
+      "remaining": "No equal-modulus law for F; no new all-height coverage."
+    },
+    {
+      "id": "PA-COLLISION",
+      "family": "Root locking and collision handling",
+      "source_path": "scripts/test_reflected_zeta_cover.py",
+      "disposition": "PRESERVED_EXECUTED",
+      "application": "A zero count of one is required; phase symmetry or a nonzero beam center cannot exclude a double-zero collision.",
+      "remaining": "No global zero-simplicity or no-collision theorem."
+    },
+    {
+      "id": "PA-SIGNED",
+      "family": "Complete signed Mobius bilinear energy",
+      "source_path": "evidence/number-theory/moebius/signed-newton-bessel-reduction-20261014.txt",
+      "disposition": "APPLIED_NONTRANSFER_CONTROL",
+      "application": "PA6 and PA9 retain ordered mixed terms; a phase change or taper without its complement changes the actual source.",
+      "remaining": "exists B>=0 forall N: sum_(n=2..N)(4n+7/3)|ell_n|^2<=B remains unproved."
+    },
+    {
+      "id": "PA-BESSEL",
+      "family": "Bessel approximation, prefix and high-source tails",
+      "source_path": "scripts/bessel_bilinear_reduction.py",
+      "disposition": "PRESERVED_NO_NEW_ARITHMETIC_GAIN",
+      "application": "All existing paid differences stay paid at their own written grade. Tapering introduces its own exact complementary source.",
+      "remaining": "The retained middle sequence is not a sidelobe error and remains unpaid."
+    },
+    {
+      "id": "PA-NEWTON",
+      "family": "Signed covariance and Newton divisor updates",
+      "source_path": "scripts/signed_residual_calculus.py",
+      "disposition": "APPLIED_EXACT_SOURCE_CONSTRAINT",
+      "application": "Beam weights cannot be chosen as if Mobius coefficients were free. Use only exact reconstruction on the proved gate and retain correction squares.",
+      "remaining": "Residual support-doubling does not imply a weighted-norm contraction."
+    },
+    {
+      "id": "PA-GRAM",
+      "family": "Hodge centers, Schur complements and regularization",
+      "source_path": "evidence/analysis/signed-residual-algebra-20261014.lean.txt",
+      "disposition": "APPLIED_WRITTEN_CONTROL",
+      "application": "PA7 exposes source-independent inverse conditioning; diagonal loading requires the explicit resolvent difference.",
+      "remaining": "A source-visible lower bound or restricted decoder estimate is not supplied by positive diagonals."
+    },
+    {
+      "id": "PA-FK",
+      "family": "FK hull phase coordinates and small divisors",
+      "source_path": null,
+      "disposition": "APPLIED_WRITTEN_ARITHMETIC_CONSTRAINT",
+      "application": "Composite logarithmic modes satisfy exact multiplicative phase relations. An independent-phase FK realization is not obtained by labels.",
+      "remaining": "A source-derived hull, compatibility/neutral mode, and quantitative inverse bounds remain necessary."
+    },
+    {
+      "id": "PA-MATHIEU",
+      "family": "Almost-Mathieu comparison",
+      "source_path": null,
+      "disposition": "NONTRANSFER_RECORDED",
+      "application": "Nonuniform log k frequencies and arbitrary arithmetic weights are not a uniform cosine potential. Any operator replacement requires its difference bound.",
+      "remaining": "No transfer of a spectral gap or localization theorem to the arithmetic input."
+    },
+    {
+      "id": "PA-BOUNCE",
+      "family": "Ordered collision and frame transport",
+      "source_path": null,
+      "disposition": "APPLIED_WRITTEN_ERROR_ACCOUNTING",
+      "application": "PA8 distinguishes common from differential phase. Operator/readout transport and every repeated use retain their full cost.",
+      "remaining": "Isometric scans do not reduce an invariant source norm."
+    },
+    {
+      "id": "PA-FRAME",
+      "family": "Moment/Jacobi sequence and multi-beam sampling",
+      "source_path": null,
+      "disposition": "APPLIED_EXACT_FINITE_CONTROL",
+      "application": "Complete tight-frame Parseval preserves energy. PA7 gives lambda_min<=T^2/(6n^2) for adjacent log frequencies at fixed aperture.",
+      "remaining": "Neither finite rank, one favorable beam, nor a finite coefficient prefix establishes uniform reconstruction."
+    },
+    {
+      "id": "PA-CALIBRATION",
+      "family": "Whole-cell uncertainty and error propagation",
+      "source_path": "scripts/phase_aware_zeta_cover.py",
+      "disposition": "APPLIED_EXECUTED",
+      "application": "Use a proven Bernstein outer enclosure plus every analytic tail; proposed readout phases and margins are independently replayed.",
+      "remaining": "A sampled uncertainty ellipse is not automatically a whole-cell bound; native Lean remains unavailable."
+    }
+  ]
+}

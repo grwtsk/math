@@ -1,0 +1,180 @@
+Quartic source integration: finite moments, coefficient regions, and replay
+
+Human mathematical direction: grwtsk contributors.
+Integration and implementation: OpenAI ChatGPT. MIT.
+Inspected repository: grwtsk/math main, 9adf061bf5aa34e65fb8237ed56c766539e22506.
+
+STATUS: EXECUTABLE FINITE RESEARCH, NOT NATIVE LEAN ADMISSION.
+This integrates the supplied quartic candidate patch with the staged source
+moment producer and the general even-quartic coefficient consumer. It does
+not install any active Lean source. The original patch, audit harness and
+symbolic checker are preserved byte-for-byte under evidence. The runner
+reconstructs the original candidates ONLY in temporary directories.
+The original package's older source/verification statements keep their original
+scope. In particular its "producer not constructed" field describes that
+package, not the separately developed producer integrated here.
+
+1. Source-to-moment transport (written analysis)
+
+Let f and P be holomorphic on a neighborhood of the closed disk D(c,h), h>0.
+Assume, on the ENTIRE boundary,
+
+ |f-P| <= epsilon < mu <= |P|, epsilon>=0.
+
+Rouche gives equal finite interior zero counts N, with analytic multiplicity.
+For normalized powers u=(z-c)/h define S_k by summing u(rho)^k over those
+interior zeros. Only interior polynomial roots are used. Then
+
+ S_0(f)=S_0(P)=N,
+ |S_k(f)-S_k(P)| <= k*epsilon/(mu-epsilon), k>=1.           (1)
+
+Proof. On a collar of the contour the power-series branch
+L=log(f/P)=log(1+(f-P)/P) is single-valued. It need not extend through interior
+zeros. Its boundary modulus is at most -log(1-epsilon/mu), which is at most
+epsilon/(mu-epsilon). The difference of the residue formulas is
+(2*pi*i)^(-1) integral u^k dL. Integration by parts on the CLOSED contour
+gives -k/(2*pi*i) integral_(|u|=1) u^(k-1)L du and proves (1). No numerical
+value or bound for f'/f is used. The single-valued branch accounts for winding.
+For an analytic weight psi the same calculation gives
+
+ |sum_f psi(rho)-sum_P psi(rho)|
+       <= h*sup_boundary|psi'|*epsilon/(mu-epsilon).        (2)
+
+Suppose the actual normalized source divisor is conjugation-stable. Its
+moments are real. Put H_f=(S_(i+j)(f))_(0<=i,j<N), and use the REAL parts
+of P's interior moments for K_P. Equation (1) gives entry error at most
+(i+j)*theta, theta=epsilon/(mu-epsilon), so
+
+ ||H_f-K_P||_(2->2) <= (3/2)*N*(N-1)*theta.                (3)
+
+Indeed the largest absolute row sum is bounded by
+N*(N-1)+N*(N-1)/2. For N=4 the allowance is 18*theta.
+A paid lower bound K_P >= (18*theta+delta)I implies H_f>=delta I.
+Reality is supplied by the actual divisor symmetry, not by rounding imaginary
+parts to zero. These continuum implications are written, not Lean-checked.
+
+2. General even-quartic coefficient consumer (written algebra)
+
+For P(X)=X^4+pX^2+r with p,r real, let G=p^2-4r and let H(p,r) be the
+explicit Newton-sum Hermite matrix in the archived QuarticHermite candidate.
+Then
+
+ H(p,r) >= 0  iff  p<=0, r>=0, G>=0;
+ H(p,r) >  0  iff  p< 0, r> 0, G> 0.                      (4)
+
+Permuting indices to (0,2,1,3) gives parity blocks
+ [[4,-2p],[-2p,2p^2-4r]],
+ [[-2p,2p^2-4r],[2p^2-4r,-2p^3+6pr]],
+with determinants 4G and 4rG. Necessity follows from principal minors;
+if G=0, r=p^2/4 already. Strict positivity forces all strict signs.
+For sufficiency at p<0, write q(u)=u^T H u. Direct expansion gives
+
+ (-2p)q(u) = -8p(u0-p*u2/2)^2 -2pG*u2^2
+             +[-2p*u1+(2p^2-4r)*u3]^2 +4rG*u3^2.         (5)
+
+All terms have nonnegative coefficients under (4), and -2p>0. With strict
+signs, equality forces all coordinates to vanish. At p=0 the conditions
+force r=0 and q(u)=4u0^2. No division by zero is made.
+For a GENERAL divisor r>=0 is necessary: p=-1,r=-1 has G=5>0 but odd
+minor 4rG=-20. For an orbit r=(a^2+b^2)^2 it is automatic.
+The test suite reads the hash-bound literal arithmetic body of `def value`
+from the candidate patch and verifies (5) against it. This limited arithmetic
+reader is not a Lean parser, elaborator, or proof-term extractor.
+
+3. Actual finite producer and its unchanged scope
+
+The source is the entire regularization F(s)=(s-1)zeta(s), F(1)=1 by analytic
+continuation. The four existing Python modules supplying its compensated
+Euler--Maclaurin jets, quadratic errors, root localization and exact intervals
+are unchanged and hash-pinned by the replay command.
+Use centers c=1/2+i*b with b in
+ 113/8, 21, 25, 487/16, 527/16, 601/16,
+radius h=1/16, and spectral coordinate w=-i(s-1/2)/40.
+For the complete quadratic p(z)=Az^2+Bz+C, the producer independently proves
+
+ mu=|B|_lower*h-|C|_upper-|A|_upper*h^2 > epsilon.
+
+Comparison with Bz gives one interior polynomial root, then Rouche gives one
+interior source root. Its polynomial reference is enclosed separately at
+radius eta=2^-72. A second quadratic root outside the parent domain is not
+included. The complete k-th spectral-moment allowance is
+
+ k*((b+h)/40)^(k-1)*(h*epsilon/(mu-epsilon)+eta)/40.
+
+Pair two positive disks with their negative-height conjugates. The exact
+nonvanishing completion factor xi(s)=Gamma(1+s/2)*pi^(-s/2)*F(s) transports
+zero multiplicities and symmetry. It does NOT give F a same-modulus reflection
+law. The four-zero divisor has m0=4, odd moments zero, and real even moments.
+Newton identities yield p=-m2/2 and r=m2^2/8-m4/4. The consumer widens p,r
+outward to 64-bit dyadic boxes and tests the WHOLE boxes using
+ p.hi<0, r.lo>0, lower(p^2-4r)>0.
+All three saved examples pass. They concern the same twelve zeros already
+localized through height 40, not a new region or independent analytic replay
+of the full atlas. Source disks and moments are recomputed, not accepted from
+self-declared status flags or from a table of zero ordinates.
+
+A counted divisor containing FOUR DISTINCT zeros is NOT the orbit polynomial
+constructed from one hypothetical zero and four symmetry slots. The latter
+has G=-16a^2b^2 and repeated slots on the axis. Our selected divisor has G>0.
+The source identification of these two different polynomials is never asserted.
+Likewise sum q(root)^2 is not replaced by sum |q(root)|^2.
+
+4. Direct replay from this repository
+
+Prerequisite used for these exact tests: Python 3.13.5 and SymPy 1.14.0.
+No package installation or network request is performed by the runner.
+From the repository root, with a NEW output directory:
+
+ python3 -B scripts/replay_quartic_source.py --output-dir /tmp/quartic-source-run
+
+The command runs both ordinary and optimized Python. It verifies the pinned
+input hashes; decodes exactly eight complete candidate additions into a
+temporary directory; checks that the written audit imports all eight and
+requests all 53 theorem declarations exactly once; runs the unchanged original
+63-check script; runs the 36 source tests, 18 coefficient tests, and 20 new
+replay-boundary tests; independently regenerates both producers in both modes;
+and compares the regenerated coefficient records with the repository record.
+
+Successful normal and optimized source outputs must agree exactly. Original
+symbolic reports may differ only in their optimization flag. JSON comparison
+is type-sensitive (false is not 0); duplicate keys, NaN, extra fields or altered
+coefficients do not silently validate. Output directories are never reused.
+A failure writes a failed record when the output directory has been created,
+never a success record. Partial/timeout runs are not complete replay evidence.
+The ordinary unit-test APIs remain tests of explicit premises; only the joined
+command provides the pinned source-to-saved-record replay described here.
+
+The raw audit contains #print axioms requests. Counting those requests is NOT
+executing them and is not an allowlist-enforcing native audit. No generated
+candidate is copied to GRWTSK by this command; no Git write is performed by it.
+
+5. Admission boundary and next research obligation
+
+Native candidate integration still requires the pinned Lean 4.33.0 environment,
+trust-zero replay, fatal warnings, the owned-declaration axiom audit and full
+repository layout/documentation checks. The literal form/matrix identification,
+regularized-source-to-zeta adapter, contour-moment theorem and coefficient
+producer must be formalized before their analytic use is natively admitted.
+The present environment has no Lean/Lake/elan executable; Git clone failed at
+DNS resolution. Only a source-bound partial snapshot was tested. Existing
+active library, atlas certificates, compiler pins, workflows and historical
+receipts remain unchanged by these additions.
+
+The mathematical target is still an independently proved source-specific
+positive Hermite margin (or exact neutral-mode identity) over a family covering
+every required region, or the previously isolated signed bilinear energy bound.
+Finite errors near a singular positive form need not preserve positivity:
+P=z^2, f=z^2+delta gives reference diag(2,0) but source diag(2,-2delta).
+Additional roots can also overwhelm a chosen orbit's negative witness. Neither
+singular positivity nor arbitrary cluster aggregation is promoted to a theorem.
+
+This integration makes the reviewed source chain reproducible in the repository.
+It does not prove RH, discharge MertensLogSquareBound, extend the height-40
+atlas, establish universal orbit positivity, or add a kernel-checked theorem.
+
+Proof sources: the supplied quartic RESEARCH.md and original candidate patch;
+the previously staged hermite_source_bridge.md and reconciliation review;
+Nathanson, arXiv:1911.01745 (Hermite--Sylvester with multiplicities);
+DLMF 1.10 (residues/logarithm) and 25.4 (completed zeta functional equation).
+These are source attributions for the retained mathematics, not new external
+proof replays in this integration pass.

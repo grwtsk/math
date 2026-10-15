@@ -1,0 +1,207 @@
+{
+  "schema": "reciprocal-moment-energy-source-bound-v1",
+  "date": "2026-10-14",
+  "repository": "grwtsk/math",
+  "branch": "main",
+  "inspected_base_commit": "3f977f32111ff52e95fcf93b98687e74f0dccef8",
+  "implementation_and_derivation_commit": "46da4a740479546cb262a4b13d9fc86372874bdf",
+  "status": "WRITTEN_EXACT_ENERGY_CRITERION_AND_FINITE_LOWER_CERTIFICATES",
+  "requested_uniform_signed_core_bound": "NOT_PROVED",
+  "human_mathematical_direction": "grwtsk contributors",
+  "written_derivation_and_implementation": "OpenAI ChatGPT",
+  "source_bindings": [
+    {
+      "path": "scripts/reciprocal_moment_energy.py",
+      "bytes": 11342,
+      "sha256": "124b311e103f57ef5abe68930cdf8767b124f6889ef1ac67dfaac0a487ee616f",
+      "git_blob_sha1": "58c6ae1ff90e1a3268c2f7fb6768ad6df576a6d3"
+    },
+    {
+      "path": "scripts/test_reciprocal_moment_energy.py",
+      "bytes": 11482,
+      "sha256": "b645ee98361bf5675a7d69ded3a56042474bdb31ae5213d09315c67aad5fafee",
+      "git_blob_sha1": "83bcc47be0e2c166bad72a7e283d02282a13c4ec"
+    },
+    {
+      "path": "evidence/number-theory/moebius/reciprocal-moment-energy-derivation-20261014.txt",
+      "bytes": 16590,
+      "sha256": "8a7f7f359dc2e22a9881299df641b350f6199508bd5a7370ce4884d383d9bee5",
+      "git_blob_sha1": "a3560c53f227476974f75d73239ff803da0222f2"
+    }
+  ],
+  "literal_source": {
+    "path": "GRWTSK/NumberTheory/Moebius/FiniteLaplaceTransform.lean",
+    "git_blob_sha1": "57817369f523ecc3a166a8a51810d2af23589399",
+    "scope": "Closed inventory, active touching atom, both finite endpoint sums inspected. Source not modified or replayed."
+  },
+  "written_results": [
+    {
+      "id": "RM1",
+      "statement": "m_j=int_0^infinity exp(-(2j+3/2)t)W(t)dt=1/((2j+3/2)(2j+2)zeta(2j+2)) for all integer j>=0.",
+      "scope": "Actual complete Mobius source. Absolute Fubini only at zeta arguments >=2; no critical-strip continuation or target L2 premise."
+    },
+    {
+      "id": "RM2-4",
+      "statement": "For 0<sigma<=1/2, A_N[i,j]=1/(2i+2j+3-2sigma) is an actual positive Gram. With shifted Jacobi alpha=1/2-sigma, Q_N=m^t A_N^-1 m=sum_(n<=N)(4n+3-2sigma)d_n^2.",
+      "scope": "Exact finite min-norm interpolation; arithmetic signs retained inside d_n. Same m vector at every damping."
+    },
+    {
+      "id": "RM6",
+      "statement": "sup_T H_sigma(T)=sup_N Q_N(sigma) in [0,infinity].",
+      "proof_boundary": "No prior L2 membership assumed in the reverse direction. Construct g in L2 from square-summable coefficients; (f_sigma-g)exp(-(3/2-sigma)t)dt is a finite signed measure with zero polynomial moments under y=exp(-2t). Polynomial density identifies the actual source. Written proof, not Lean admission."
+    },
+    {
+      "id": "RM8",
+      "statement": "A witness sup_N Q_N(1/3)<=B gives H_(1/3)(T)<=B and Z(R)<=8B+69c. Conversely sup_J Z(2^J)<=C gives Q_N(1/3)<=123(C+123c/2).",
+      "scope": "Comparison constants use earlier written sector and localization results; no witness B or C supplied."
+    },
+    {
+      "id": "RM9-10",
+      "statement": "m_j(R)=D_N(s)/(zs)-2A_N R^-z/z+2M_N R^-s/s, N=floor(R), z=2j+3/2,s=2j+2. Moment tail <=2[R^(-(z-1/2))/(z-1/2)-R^-z/z].",
+      "scope": "Both endpoint corrections and real cutoffs retained. This is a scalar moment tail allowance, not a target-energy tail bound."
+    },
+    {
+      "id": "RM11-12",
+      "statement": "The remaining arithmetic is the uniform upper bound for all partial Jacobi energy sums. A pointwise coefficient supplier |d_n|<=C/(n+1)^(1+epsilon), n>N0, would give total energy <=Q_N0+(2C^2/epsilon)(N0+1)^(-2epsilon).",
+      "scope": "Supplier unproved; the weaker exact all-degree quadratic criterion remains primary."
+    },
+    {
+      "id": "CONTROLS",
+      "statement": "Finite moments cannot bound an unobserved orthogonal mode. Also W_*=2(exp(t/2)-1) has rational moments of order j^-2 but infinite one-third energy.",
+      "scope": "Counterexamples to inference rules, not counterexamples to the actual Mobius target."
+    }
+  ],
+  "external_sources": [
+    {
+      "source": "NIST DLMF Table 18.3.1 and equation 18.5.7",
+      "urls": [
+        "https://dlmf.nist.gov/18.3",
+        "https://dlmf.nist.gov/18.5"
+      ],
+      "scope": "Jacobi orthogonality and finite polynomial normalization inspected; explicitly shifted and normalized in the derivation. Not a cancellation supplier."
+    },
+    {
+      "source": "NIST DLMF 25.6.2",
+      "url": "https://dlmf.nist.gov/25.6.E2",
+      "scope": "Euler even-zeta/Bernoulli identity inspected. No external Lean proof imported."
+    },
+    {
+      "source": "Luis Baez-Duarte, A sequential Riesz-like criterion for the Riemann hypothesis (2005)",
+      "doi": "10.1155/IJMMS.2005.3527",
+      "scope": "Priority/context for classical reciprocal-value criteria. No claim that using even-zeta values itself is new, and no external arithmetic bound imported."
+    }
+  ],
+  "verification": {
+    "test_methods": 25,
+    "runs": [
+      {
+        "command": "python3 -B scripts/test_reciprocal_moment_energy.py",
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ".........................\n----------------------------------------------------------------------\nRan 25 tests in 2.138s\n\nOK\n"
+      },
+      {
+        "command": "python3 -O -B scripts/test_reciprocal_moment_energy.py",
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ".........................\n----------------------------------------------------------------------\nRan 25 tests in 1.707s\n\nOK\n"
+      }
+    ],
+    "selected_exact_case_counts": {
+      "rational_orthogonality": 605,
+      "cauchy_determinants": 21,
+      "independent_matrix_inverse_quadratics": 21,
+      "signed_four_entry_vectors": 81,
+      "finite_recording_tail_cases": 25,
+      "independent_atom_recording_cases": 9,
+      "signed_dirichlet_series_comparisons": 6,
+      "positive_zeta_series_comparisons": 6,
+      "moment_invisible_pairings": 36
+    },
+    "arithmetic": "Standard library Fraction arithmetic only; signed Machin arctan remainders, exact Bernoulli recurrence, outward dyadic intervals and checked final cancellation widths. No numerical zeta call, floating point, or quadrature in recorded enclosures.",
+    "remote_integrity": "All three source/evidence blob hashes read back and matched the tested local bytes before this receipt.",
+    "analytic_acceptance": "Written only. Exact finite tests and overlapping enclosures do not verify the general Hilbert-space identification or all-degree bound in Lean.",
+    "pinned_lean_replay": "NOT_RUN: no Lean or Lake executable found in the active runtime.",
+    "owned_declaration_audit": "NOT_RUN: no Lean source added or modified.",
+    "full_repository_checks": "NOT_RUN: no full checkout; direct Git access failed at DNS resolution.",
+    "documentation": "Existing canonical guides and inventories unchanged. The derivation is a versioned research-evidence text, not an admitted canonical library guide.",
+    "publication": "New files only on existing remote main through GitHub contents API. No branch creation, reset, force-push, Codex task, workflow or permission change.",
+    "old_source_and_receipts": "UNCHANGED"
+  },
+  "negative_controls": [
+    "missing norm/Jacobian factor",
+    "wrong Jacobi weight parameter",
+    "finite lower approximation promoted to a full upper bound",
+    "deleted finite-transform endpoint terms",
+    "unobserved orthogonal mode deleted",
+    "generic j^-2 scalar moment allowance promoted to L2 boundedness",
+    "insufficient work precision mistaken for cancellation",
+    "wrong numeric types and zero damping"
+  ],
+  "finite_batch": {
+    "command": "python3 -B scripts/reciprocal_moment_energy.py --degree 128 --sigma 1/3 --bits 96",
+    "degree": 128,
+    "moment_count": 129,
+    "zeta_arguments": "2,4,...,258",
+    "work_bits": 1708,
+    "output_bits": 96,
+    "partial_energy_interval": {
+      "lower": "26047816968674984515691008551/79228162514264337593543950336",
+      "upper": "3255977121084373064461376069/9903520314283042199192993792"
+    },
+    "partial_energy_less_than_one": true,
+    "scope": "A finite LOWER approximation to total one-third energy. Degree is not a physical cutoff. No tail allowance or all-degree B=1 bound proved.",
+    "selected_prefixes": [
+      {
+        "degree": 0,
+        "partial_energy": {
+          "lower": "7591312497465053757687595441/79228162514264337593543950336",
+          "upper": "3795656248732526878843797721/39614081257132168796771975168"
+        }
+      },
+      {
+        "degree": 8,
+        "partial_energy": {
+          "lower": "16969248424789633281892635281/79228162514264337593543950336",
+          "upper": "8484624212394816640946317641/39614081257132168796771975168"
+        }
+      },
+      {
+        "degree": 32,
+        "partial_energy": {
+          "lower": "22728148077223767713015740245/79228162514264337593543950336",
+          "upper": "11364074038611883856507870123/39614081257132168796771975168"
+        }
+      },
+      {
+        "degree": 64,
+        "partial_energy": {
+          "lower": "6175412506039896612209661071/19807040628566084398385987584",
+          "upper": "24701650024159586448838644285/79228162514264337593543950336"
+        }
+      },
+      {
+        "degree": 128,
+        "partial_energy": {
+          "lower": "26047816968674984515691008551/79228162514264337593543950336",
+          "upper": "3255977121084373064461376069/9903520314283042199192993792"
+        }
+      }
+    ]
+  },
+  "conversation_artifact": {
+    "filename": "reciprocal_moment_energy_128.json",
+    "bytes": 96861,
+    "sha256": "aa6c8962a10ef4c78e7bb3bd54043f59aeb321fa2ca1263a5bbcbaea75a83b17",
+    "scope": "All 129 moments and coefficient/partial-energy enclosures. Finite arithmetic, not uniform-core acceptance."
+  },
+  "nonclaims": {
+    "uniform_signed_core_bound": false,
+    "new_mertens_exponent": false,
+    "new_zero_free_region": false,
+    "MertensLogSquareBound_discharged_natively": false,
+    "new_lean_admissions": 0,
+    "P04_required": false,
+    "RH_proof": false
+  }
+}

@@ -1,0 +1,203 @@
+#!/usr/bin/env python3
+"""Exact symbolic regression checks, not Lean elaboration or theorem admission.
+
+Run from any directory with Python 3 and SymPy 1.14.0. No network, zeta zero
+samples, floating-point tolerances, or optimization-sensitive assertions are used.
+The JSON receipt binds this run to the source hashes in the package.
+"""
+from __future__ import annotations
+import hashlib
+import itertools
+import json
+from pathlib import Path
+import platform
+import sys
+import sympy as sp
+
+ROOT = Path(__file__).resolve().parent
+checks: list[dict[str, object]] = []
+
+
+def identity(name: str, lhs: sp.Expr, rhs: sp.Expr, *, conditions: str = "none") -> None:
+    residual = sp.cancel(sp.expand(lhs - rhs))
+    ok = residual == 0
+    checks.append({"name": name, "kind": "symbolic_identity", "passed": bool(ok),
+                   "conditions": conditions, "residual": str(residual)})
+
+
+def control(name: str, condition: bool, detail: str) -> None:
+    checks.append({"name": name, "kind": "exact_regression_control", "passed": bool(condition),
+                   "detail": detail})
+
+
+def sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def main() -> int:
+    a, b, x, y, p, r, z, u, v = sp.symbols("a b x y p r z u v", real=True)
+    P = x**4 + p*x**2 + r
+    G = p**2 - 4*r
+    D = 16*r*G**2
+    I = p**2 + 12*r
+    J = 72*p*r - 2*p**3
+    po = 2*(a**2-b**2)
+    ro = (a**2+b**2)**2
+    orbit = {p: po, r: ro}
+    Po = P.subs(orbit)
+    roots = [b+sp.I*a, b-sp.I*a, -b+sp.I*a, -b-sp.I*a]
+    identity("even_quartic_derivative", sp.diff(P,x), 4*x**3+2*p*x)
+    identity("even_quartic_discriminant", sp.discriminant(P,x), D)
+    identity("even_quartic_resultant", sp.resultant(P,sp.diff(P,x),x), D)
+    identity("even_invariant_relation", 4*I**3-J**2, 27*D)
+    identity("even_cubic_resolvent", y**3-p*y**2-4*r*y+4*p*r, (y-p)*(y**2-4*r))
+    Abez = 16*G*(p**2+2*p*x**2-4*r)
+    Bbez = -8*x*G*(p**2+p*x**2-2*r)
+    identity("denominator_free_bezout", Abez*P+Bbez*sp.diff(P,x), D)
+    identity("orbit_factor_real", Po, ((x-b)**2+a**2)*((x+b)**2+a**2))
+    identity("orbit_four_slots_complex", Po, sp.prod(x-q for q in roots))
+    identity("orbit_gap", G.subs(orbit), -16*a**2*b**2)
+    identity("orbit_discriminant", D.subs(orbit), 4096*a**4*b**4*(a**2+b**2)**2)
+    identity("orbit_pair_difference_discriminant", sp.prod((roots[i]-roots[j])**2
+             for i in range(4) for j in range(i+1,4)), D.subs(orbit))
+    identity("orbit_I", I.subs(orbit), 16*(a**4+a**2*b**2+b**4))
+    identity("axis_repeated_slots", Po.subs(a,0), (x**2-b**2)**2)
+    identity("defect_gap", G.subs(orbit), -4*(4*a**2)*b**2)
+    identity("defect_discriminant", D.subs(orbit), 256*(4*a**2)**2*b**4*(a**2+b**2)**2)
+    identity("orbit_modular_real_locus",256*(a**4+a**2*b**2+b**4)**3-
+             1728*a**4*b**4*(a**2+b**2)**2,
+             64*(a**2-b**2)**2*(a**2+2*b**2)**2*(2*a**2+b**2)**2)
+    identity("orbit_real_resolvent_factor", ((y-p)*(y**2-4*r)).subs(orbit),
+             (y-po)*(y-2*(a**2+b**2))*(y+2*(a**2+b**2)))
+
+    moments = [4,0,-2*p,0,2*p**2-4*r,0,-2*p**3+6*p*r]
+    for k in (0,1,2,3,4,5,6):
+        identity(f"orbit_Newton_moment_{k}", sum(q**k for q in roots),
+                 sp.sympify(moments[k]).subs(orbit))
+    H = sp.Matrix(4,4,lambda i,j:moments[i+j])
+    u0,u1,u2,u3 = sp.symbols("u0 u1 u2 u3", real=True)
+    U = sp.Matrix([u0,u1,u2,u3])
+    form = (U.T*H*U)[0]
+    expanded_form = (4*u0**2-4*p*u0*u2-2*p*u1**2+(2*p**2-4*r)*u2**2+
+                     2*(2*p**2-4*r)*u1*u3+(-2*p**3+6*p*r)*u3**2)
+    identity("Hermite_form_expansion", form, expanded_form)
+    identity("Hermite_determinant", H.det(), D)
+    identity("Hermite_even_minor", H.extract([0,2],[0,2]).det(),4*G)
+    identity("Hermite_gap_test_vector", form.subs({u0:p/2,u1:0,u2:1,u3:0}),G)
+    identity("Hermite_second_moment_test",form.subs({u0:0,u1:1,u2:0,u3:0}),-2*p)
+    identity("Hermite_axis_SOS",form.subs(orbit).subs(a,0),
+             4*(u0+b**2*u2)**2+4*b**2*(u1+b**2*u3)**2)
+    identity("Hermite_test_vector_norm",(p/2)**2+1,1+p**2/4)
+    identity("Hermite_orbit_gap_test",G.subs(orbit),-16*a**2*b**2)
+
+    aa,bb,cc,dd,ee = sp.symbols("aa bb cc dd ee")
+    general = aa*x**4+bb*x**3+cc*x**2+dd*x+ee
+    bi = 12*aa*ee-3*bb*dd+cc**2
+    bj = 72*aa*cc*ee+9*bb*cc*dd-27*aa*dd**2-27*bb**2*ee-2*cc**3
+    gd = sp.discriminant(general,x)
+    identity("binary_quartic_invariants",4*bi**3-bj**2,27*gd)
+    identity("binary_even_specialization_I",bi.subs({aa:1,bb:0,cc:p,dd:0,ee:r}),I)
+    identity("binary_even_specialization_J",bj.subs({aa:1,bb:0,cc:p,dd:0,ee:r}),J)
+    identity("Jacobian_Weierstrass_discriminant",-16*(4*(-27*bi)**3+27*(-27*bj)**2),
+             16*27**3*(4*bi**3-bj**2))
+    identity("Jacobian_j_scaling",1728*4*(-27*bi)**3/(4*(-27*bi)**3+27*(-27*bj)**2),
+             6912*bi**3/(4*bi**3-bj**2), conditions="4I^3-J^2 != 0")
+    identity("orbit_j_formula",(256*I**3/D).subs(orbit),
+             256*(a**4+a**2*b**2+b**4)**3/(a**4*b**4*(a**2+b**2)**2),
+             conditions="a*b != 0 (real a,b)")
+    cross_ratio = (roots[0]-roots[1])*(roots[2]-roots[3])/((roots[0]-roots[2])*(roots[1]-roots[3]))
+    identity("labeled_orbit_cross_ratio",cross_ratio,-a**2/b**2,conditions="b != 0")
+    lam = -a**2/b**2
+    identity("Legendre_j_equals_orbit_j",256*(1-lam+lam**2)**3/(lam**2*(1-lam)**2),
+             (256*I**3/D).subs(orbit), conditions="a*b != 0 (real a,b)")
+
+    A,B=sp.symbols("A B",real=True)
+    reciprocal = z**4-A*z**3+B*z**2-A*z+1
+    identity("reciprocal_trace",reciprocal,(z**2+1)**2-A*z*(z**2+1)+(B-2)*z**2)
+    identity("reciprocal_factor",reciprocal.subs({A:u+v,B:u*v+2}),
+             (z**2-u*z+1)*(z**2-v*z+1))
+    C=1-p+r; Dc=4-4*r; E=6+2*p+6*r
+    pullback=(1+z)**4-p*(1+z)**2*(1-z)**2+r*(1-z)**4
+    identity("homogeneous_Cayley_pullback",pullback,C*(z**4+1)+Dc*(z**3+z)+E*z**2)
+    identity("rational_Cayley_substitution",(1-z)**4*P.subs(x,sp.I*(1+z)/(1-z)),pullback,
+             conditions="z != 1")
+    identity("Cayley_trace_discriminant",Dc**2-4*E*C+8*C**2,16*G)
+    identity("Cayley_normalized_trace_discriminant",(-Dc/C)**2-4*(E/C-2),16*G/C**2,
+             conditions="C != 0")
+    identity("Cayley_leading_SOS",C.subs(orbit),(1-a**2)**2+2*b**2*(1+a**2)+b**4)
+    identity("Cayley_norm_difference",(x**2+(y-1)**2)-(x**2+(y+1)**2),-4*y)
+    f0,f1,f2,f3,f4=sp.symbols("f0 f1 f2 f3 f4",real=True)
+    jet=f0+f1*sp.I*y+f2*(sp.I*y)**2/2+f3*(sp.I*y)**3/6+f4*(sp.I*y)**4/24
+    identity("fourth_order_Laguerre_jet",sp.expand(jet*sp.conjugate(jet)).coeff(y,4)*12,
+             3*f2**2-4*f1*f3+f0*f4)
+
+    lift=sp.Matrix([1,a,b,a**2,a*b,b**2])
+    gap_matrix=sp.zeros(6); gap_matrix[4,4]=-16
+    identity("quadratic_lift_gap",(lift.T*gap_matrix*lift)[0],G.subs(orbit))
+    identity("quadratic_lift_square_consistency",lift[0]*lift[3]-lift[1]**2,sp.Integer(0))
+    identity("quadratic_lift_mixed_consistency",lift[0]*lift[4]-lift[1]*lift[2],sp.Integer(0))
+    identity("quadratic_lift_other_square_consistency",lift[0]*lift[5]-lift[2]**2,sp.Integer(0))
+
+    q={a:sp.Rational(1,4),b:2}
+    control("positive_discriminant_off_axis",D.subs(orbit).subs(q)>0 and G.subs(orbit).subs(q)<0,
+            "a=1/4, b=2: reflection-symmetric quartic, positive discriminant, negative Hermite gap; not a zeta-zero claim.")
+    control("real_split_resolvent_off_axis",len(sp.Poly(((y-p)*(y**2-4*r)).subs(orbit).subs(q),y).all_roots())==3
+            and all(qr.is_real for qr in sp.Poly(((y-p)*(y**2-4*r)).subs(orbit).subs(q),y).all_roots()),
+            "a=1/4,b=2: all three resolvent roots real, but quartic roots nonreal.")
+    control("zero_height_collision_not_axis",G.subs(orbit).subs({a:1,b:0})==0 and (-2*p).subs(orbit).subs({a:1,b:0})<0,
+            "a=1,b=0: gap and discriminant vanish, second Hermite diagonal is negative.")
+    rr=[sp.simplify(qr.subs({a:0,b:2})) for qr in roots]
+    control("orbit_slots_not_distinct_zeros",len(rr)==4 and len(set(rr))==2,
+            "a=0,b=2: four orbit slots, two distinct points. No inference about zeta multiplicity.")
+    control("Hermitian_not_PSD",sp.Matrix([[-1]])==sp.Matrix([[-1]]).T and sp.Matrix([[-1]]).det()<0,
+            "The real symmetric 1x1 matrix [-1] is not positive semidefinite.")
+    control("nonstrict_residual_not_exclusion",(0-1)**2<=1 and 1<=1**2,
+            "F=0, approximation=1, errorSq=1 satisfies only non-strict separation and still vanishes.")
+    quartic_norm=sp.expand(((x+sp.I*y)**4)*((x-sp.I*y)**4))
+    control("quartic_norm_degree_eight",sp.Poly(quartic_norm,x,y).total_degree()==8,
+            "The squared complex norm of a quartic generally has total degree eight.")
+    # A more transparent reciprocal guard with roots 2, 1/2, 3, 1/3.
+    nonunit=sp.prod(z-rrr for rrr in [sp.Integer(2),sp.Rational(1,2),sp.Integer(3),sp.Rational(1,3)])
+    nonunit=sp.Poly(sp.expand(nonunit),z)
+    cs=nonunit.all_coeffs()
+    control("reciprocity_not_unit_circle",cs==list(reversed(cs)) and any(abs(rrr)!=1 for rrr in nonunit.all_roots()),
+            "Roots 2,1/2,3,1/3 form a real reciprocal quartic but lie off the unit circle.")
+    # Exact finite regression, not a replacement for the universal algebraic proof.
+    grid=[sp.Rational(-2),sp.Rational(-1),sp.Rational(-1,4),sp.Rational(0),sp.Rational(1,4),sp.Rational(1),sp.Rational(2)]
+    grid_rows=[]
+    for av,bv in itertools.product(grid,repeat=2):
+        hh=H.subs(orbit).subs({a:av,b:bv})
+        minors=[hh.extract(list(idx),list(idx)).det()
+                for k in range(1,5) for idx in itertools.combinations(range(4),k)]
+        psd=all(m>=0 for m in minors)
+        grid_rows.append({"a":str(av),"b":str(bv),"all_15_principal_minors_nonnegative":bool(psd),
+                          "axis":bool(av==0),"matches":bool(psd==(av==0))})
+    checks.append({"name":"Hermite_49_point_exact_regression","kind":"finite_exact_regression",
+                   "passed":all(row["matches"] for row in grid_rows),"cases":grid_rows,
+                   "scope":"49 rational parameter pairs only; universal claim is not inferred from sampling."})
+    lean=list(sorted(ROOT.rglob("*.lean")))
+    control("candidate_source_no_explicit_proof_holes",
+            all(not __import__('re').search(r'^\s*(axiom|sorry|admit)\b',f.read_text(),__import__('re').M) for f in lean),
+            "Text scan only. Does not imply elaboration, kernel acceptance, axiom safety, or absence of hidden dependencies.")
+    passed=all(bool(c["passed"]) for c in checks)
+    report={"status":"passed" if passed else "failed","python":platform.python_version(),
+            "sympy":sp.__version__,"python_optimization_flag":sys.flags.optimize,"check_count":len(checks),
+            "passed_count":sum(bool(c["passed"]) for c in checks),
+            "symbolic_identity_count":sum(c["kind"]=="symbolic_identity" for c in checks),
+            "lean_compiled":False,"lean_axiom_audit":False,"repository_layout_checked":False,
+            "zeta_zero_exclusion_producer_constructed":False,"new_unconditional_zeta_region_claimed":False,
+            "method":"Exact symbolic/rational checks. No floats, no zero samples, no Lean process.",
+            "limitations":["The Lean declarations were not elaborated or kernel checked.",
+                           "The script independently transcribes formulas; it is not a Lean term extractor.",
+                           "Resultant and discriminant API identities are checked in SymPy only.",
+                           "No source-derived positivity, analytic remainder, modular period map, or global cover is supplied."],
+            "source_sha256":{str(f.relative_to(ROOT)):sha256(f) for f in [*lean,Path(__file__)]},
+            "checks":checks}
+    (ROOT/"verification-report.json").write_text(json.dumps(report,indent=2)+"\n")
+    for c in checks:
+        print(("PASS" if c["passed"] else "FAIL")+" "+str(c["name"]))
+    print(f"{report['passed_count']}/{len(checks)} exact checks passed; Lean NOT run.")
+    return 0 if passed else 1
+
+if __name__=="__main__":
+    sys.exit(main())

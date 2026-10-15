@@ -1,0 +1,263 @@
+# Joint cubic Mobius packets for the source-exact Bessel sequence
+
+Human mathematical direction: grwtsk contributors.
+Derivation and implementation assistance: OpenAI ChatGPT. MIT.
+
+STATUS: WRITTEN EXACT ARITHMETIC COMPILER AND RESEARCH APPLICATION.
+The uniform Bessel, Jacobi, one-third pickup, and signed-core bounds remain
+UNPROVED. No new Mertens exponent, zero-free region, RH proof, or Lean
+admission is claimed. A finite coefficient compiler is not a cancellation
+estimate. Numerical evaluations of the actual Bessel coefficients were NOT
+performed by this contribution.
+
+Inspected repository: grwtsk/math/main, ab0010ebd75bc99aac4bb1517d7093148ecb20ee.
+The existing Bessel source and comparison are in
+ evidence/number-theory/moebius/jacobi-bessel-endpoint-derivation-20261014.txt
+ Git blob 785d5720e03ae1cf130a55c22225fa249ab546d6.
+Its 16330 bytes match the received derivation's SHA256
+ f431feeeb5027927156482f4ac7ab47b4c490d6bd6c8a414c3d39838f6b78b42.
+That comparison is reused at its written evidence grade, not newly replayed.
+Existing sources, guides, and receipts are unchanged.
+
+## 1. Freeze the actual target
+
+For n>=2 let lambda_n=n(n+7/6), nu_n=n+7/12, and let B_n(y) be the
+complete Bessel reference in the preceding derivation: it includes the
+parity (-1)^n, normalization (7/6)_n/n!, frequency nu_n, geometric
+prefactor, and argument 2 nu_n arcsin(sqrt(y)). The actual coefficient is
+
+ t_n = (2 lambda_n)^(-1) integral_(n^-4)^(1/n)
+          y^(7/6)(1-y) g'(y) B_n'(y) dy,
+ g(y)=y^(-5/12) V(y^(-1/2)),
+ V(x)=2 sum_(k<=floor(x)) mu(k)(k^(-1/2)-x^(-1/2)).       (CP1)
+
+The prime-product completion and both original endpoint sums are not
+modified. The existing comparison states
+
+ ||d-t||_(ell2(4n+7/3), n>=2) <= D
+ D=sqrt(4725)+sqrt(420000)+sqrt(10500)<821.                (CP2)
+
+Only the difference is bounded. No supplier of
+ sum_(n>=2)(4n+7/3)t_n^2 < infinity
+is supplied here. Research priorities are joint source estimation and
+source-aware finite evaluation, not another unpriced change of basis.
+
+## 2. Recognize each coefficient as one finite arithmetic functional
+
+For a single source atom, in the y coordinate,
+
+ g_k(y)=2[k^(-1/2)y^(-5/12)-y^(-1/6)] 1_(0<y<=k^-2).
+
+The bracket is zero at y=k^-2. Thus g_k is continuous at its arrival
+boundary and locally absolutely continuous away from zero. Its derivative
+has no delta term and almost everywhere equals
+
+ g_k'(y)=[-(5/6)k^(-1/2)y^(-17/12)+(1/3)y^(-7/6)]
+          1_(0<y<k^-2).
+
+Put a_n=n^-4 and b_(n,k)=min(1/n,1/k^2). Define K_(n,k)=0 when
+b_(n,k)<=a_n; otherwise define
+
+ K_(n,k)=(2 lambda_n)^(-1) integral_(a_n)^(b_(n,k))
+       (1-y)[1/3-(5/(6sqrt(k)))y^(-1/4)] B_n'(y) dy.      (CP3)
+
+Every endpoint is rational. The Bessel kernel and square roots are actual
+real functions; rational endpoints do not make the integral rational.
+Only finitely many source atoms are active on [a_n,1/n]. Finite linearity
+therefore gives the exact identity
+
+                  t_n=sum_(k=1..n^2) mu(k) K_(n,k).     (CP4)
+
+No improper exchange, zeta continuation, or target energy assumption is
+needed. At k=n^2 the interval degenerates, so K_(n,k)=0; its coefficient
+is still in the closed inventory. At k<=sqrt(n), b_(n,k)=1/n: the entire
+carried source before sqrt(n) survives. Deleting those atoms is not a
+localization of the same coefficient. The code records both support cases.
+
+## 3. Classical cubic identity with a strict support gate
+
+Let * denote finite divisor convolution on positive integers, 1 the
+constant-one arithmetic function, and epsilon its convolution identity.
+For an integer U>=1 define a(k)=mu(k) when k<=U and a(k)=0 otherwise;
+put b=mu-a. Since mu*1=epsilon, expanding (mu-b)^3 in
+the convolution ring proves
+
+ mu = 3a - 3(a*a*1) + (a*a*a*1*1) + (b*b*b*1*1).         (CP5)
+
+This is the standard order-three Mobius identity, not a new cancellation
+theorem. Each nonzero term of the last convolution requires three factors
+at least U+1, so it vanishes coefficientwise at k<(U+1)^3.
+For any K<(U+1)^3 and every 1<=k<=K,
+
+ mu(k)=3a(k)-3(a*a*1)(k)+(a*a*a*1*1)(k).                 (CP6)
+
+All tuples are ordered; neutral multiplier repetitions are retained.
+For a supported only at one, the second branch is identically one and the
+third branch is the divisor-count function, not identically one.
+The gate is strict: U=1,K=8 gives reconstructed coefficient 1 at eight,
+where actual mu(8)=0. A zero response at a touching horizon is not a
+substitute for this coefficientwise gate.
+
+Huxley--Watt (2018), equation (1.6), gives the general order version and
+records its classical antecedents. Their coefficientwise discussion after
+Theorem 1 explains why arbitrary finite test weights are then allowed.
+Our proof uses only finite convolution; it does not assume multiplicativity
+of K_(n,k) or import a Mangoldt Type-I theorem for the Mobius function.
+
+## 4. One frozen input prefix for a complete degree shell
+
+Let D0=2^j, j>=1, and D0<=n<2D0. Put
+
+ K=(2D0-1)^2,             U=floor(K^(1/3)).               (CP7)
+
+These are exact integer operations: U^3<=K<(U+1)^3. The code computes
+the cube root by integer inequalities. It queries actual mu only at
+1,...,U. No mu(k) above U is needed to compile the entire source prefix
+through K. This is an arithmetic input-range statement, NOT a speed claim.
+In particular U<=4^(1/3)D0^(2/3); the square-root version would use an
+input prefix of order D0 on this degree shell.
+
+Extend K_(n,k) by zero for k>n^2. Define, using this common U,
+
+ T_(1,n)=sum_(u<=U) mu(u) K_(n,u),
+ T_(2,n)=sum_(u,v<=U; uvr<=K) mu(u)mu(v) K_(n,uvr),
+ T_(3,n)=sum_(u,v,w<=U; uvwrs<=K)
+                         mu(u)mu(v)mu(w) K_(n,uvwrs).   (CP8)
+
+Here r,s range over positive integers, including repeated factors.
+Equations CP4 and CP6 give
+
+                    t_n=3T_(1,n)-3T_(2,n)+T_(3,n).      (CP9)
+
+All occurrences at the same product use the SAME exact K_(n,k), including
+its support, normalization, and cutoff. Aggregate before estimating. The
+cubic identity does not itself justify separate estimates for its branches.
+
+## 5. Complete mixed energy, not three positive branch budgets
+
+For this degree shell the exact energy is
+
+ E_j=sum_(n=D0..2D0-1) (4n+7/3) *
+       [9T1^2+9T2^2+T3^2-18T1*T2+6T1*T3-6T2*T3].       (CP10)
+
+It equals sum (4n+7/3)t_n^2. All three mixed terms retain both orders.
+Dropping them fails already at (T1,T2,T3)=(1,2,3): the complete square
+is zero, whereas the three diagonal terms sum to 54.
+A positive Gram representation proves E_j>=0, not a small upper bound.
+The normalized coherence of only three aggregate columns is at most three
+by the trace bound, but their diagonal capacity remains uncontrolled.
+Consequently importing a coherence slogan without its capacity theorem
+would prove no improvement.
+
+The exact smallest remaining condition in this organization is
+
+                         sum_(j>=1) E_j < infinity.    (CP11)
+
+A stronger sufficient arithmetic statement is
+ E_j<=C/(j+1)^(1+eta), every j>=1, C>=0, eta>0.          (CP12)
+
+It gives sum E_j<=C(1+1/eta), and through CP2 and the existing source-exact
+moment criterion,
+ H_(1/3)(T)<=Q_1+(sqrt(C(1+1/eta))+D)^2
+          <1+(sqrt(C(1+1/eta))+821)^2, every real T>=0.   (CP13)
+
+The constants C and eta have NO supplied arithmetic witnesses. A uniform
+bound per shell alone, without summability over shells, would not suffice.
+No P04, individual-branch bound, or uniform operator bound is imposed as
+an extra necessary condition. All-positive-damping closure remains a
+further family of arithmetic estimates, not a consequence of a single line.
+
+## 6. The Bessel argument is not uniformly oscillatory
+
+For n>=4 the physical subinterval [3nu_n,n^2] is nonempty and lies inside
+[sqrt(n),n^2]. Put z=2nu_n arcsin(1/x). Since
+ arcsin(u)=integral_0^u (1-v^2)^(-1/2)dv
+          <=u/sqrt(1-u^2), 0<=u<1,
+we obtain on this subinterval
+
+ z^2<=4nu_n^2/(x^2-1)<=4nu_n^2/(9nu_n^2-1)<=1/2.       (CP14)
+
+The normalized Poisson integral for F_(1/6) is a cosine average against a
+probability measure whose second moment is 3/7. The elementary bound
+cos(zv)>=1-z^2v^2/2 yields
+
+               F_(1/6)(z)>=1-3z^2/14>=25/28.           (CP15)
+
+This is NOT a sign theorem for B_n', K_(n,k), or t_n. It does show that a
+large-argument oscillatory approximation cannot be assigned to the entire
+integration interval. Any proposed oscillatory proof must retain the
+small-argument portion and its interaction with the rest. No new phase
+approximation is inserted into CP3.
+
+## 7. Research input disposition
+
+The primary literature examined for this implementation is:
+
+1. M. N. Huxley and N. Watt, Mertens Sums requiring Fewer Values of the
+   Mobius Function, arXiv:1807.05890v1, equations (1.6), (1.8), (1.10)
+   and the coefficientwise explanation following Theorem 1.
+   https://arxiv.org/html/1807.05890v1
+   APPLIED: finite cubic coefficient reconstruction. No Mertens saving
+   is imported from its matrix or spectral discussion.
+
+2. NIST DLMF 10.9.4, Poisson integral, order greater than -1/2.
+   https://dlmf.nist.gov/10.9.E4
+   APPLIED: the normalized small-argument lower bound CP15. Its second
+   moment also follows from the defining entire power series.
+
+3. S. B. Trickovic and M. S. Stankovic, Series over Bessel functions as
+   series in terms of Riemann's zeta function, arXiv:2407.13004v1,
+   equation (2.4), printed page 6, checked in the rendered PDF.
+   https://arxiv.org/pdf/2407.13004v1
+   NOT IMPORTED: its ordinary-index Bessel sum with power-law weights
+   is not the present Mobius-weighted finite kernel with moving support
+   and exact arcsine phase. Replacing zeta values by reciprocal zeta
+   values is not an allowed substitution. No formula from that paper
+   supplies CP11 or CP12 here.
+
+Archived conversation-derived material was reviewed separately. Private
+conversation excerpts and repository discussion bodies are not published
+in this evidence file. Their operational consequence is to require exact
+source recognition, joint packet assembly, independent capacity and
+coherence accounting, and a stated residual for every proposed transfer.
+Those constraints do not constitute an arithmetic theorem.
+
+## 8. Next bounded research pass
+
+First evaluate CP3 for actual low-degree source coefficients with rigorous
+kernel and quadrature enclosures; compare CP4 with the source-integral CP1.
+Retain every k<=n^2, all birth boundaries, and the full prefactor. The present
+compiler evaluates none of these integrals, so this numerical task is still
+PENDING rather than silently marked complete.
+
+Then investigate CP10 jointly, splitting only with exact retained
+cross-terms or a separately justified error budget. Candidate Type-I/II,
+Mellin, and normalized-coherence estimates must state the actual kernel,
+coefficient norm, parameter range, packet count, and shell summation cost.
+If a packet-dependent transform is proposed, recover a common spectral
+variable before combining the branches. Do not insert unproved full-plane
+nonvanishing into a contour shift.
+
+The mathematical stopping test for a failed candidate is explicit: retain
+its strongest proved inequality, state the first unpaid uniform bound,
+and do not relabel a kernel comparison or coefficient identity as CP11.
+
+## 9. Verification boundary
+
+The companion tests use standard-library exact integers and Fraction
+arithmetic. They independently check Mobius values, all closed small
+cutoffs, six degree shells, the strict cubic support gate, the complete
+remainder identity, ordered multiplier multiplicities, finite linear test
+weights, all six mixed-energy terms, rational support boundaries, and the
+symbolic source-derivative kernel. The low-phase tests check finite scalar
+comparisons, not the analytic Poisson integral theorem.
+
+The largest tested shell 64<=n<=127 has full coefficient inventory through
+16129 reconstructed from actual mu through 25 and compared to an independent
+sieve through 16129. This is not a Bessel-energy computation.
+
+No Lean/Lake executable is available in this runtime; no full checkout was
+used. Native proof replay, owned-declaration auditing, and repository-wide
+layout/documentation checks are NOT_RUN. This is a research-evidence text,
+not a newly admitted canonical library guide. No old proof receipt is
+changed. The universal arithmetic estimate and RH remain unproved here.

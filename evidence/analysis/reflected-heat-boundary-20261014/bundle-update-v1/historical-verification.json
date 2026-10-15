@@ -1,0 +1,120 @@
+{
+  "additional_staged_layout_replay": {
+    "path": "reports/staged-layout-replay.json",
+    "status": "PASSED",
+    "subprocesses": 6
+  },
+  "base_commit": "bf407f3b289236171d1b50e5f497be622e167bba",
+  "base_tree": "fe5478933a2e0df0968ed38d68ca3b37a9b8bebd",
+  "branch": "main",
+  "changes": {
+    "active_Lean_additions": 0,
+    "active_Python_files": 3,
+    "existing_files_modified": 0,
+    "new_files": 11,
+    "source_PDFs_uploaded": 0
+  },
+  "created_utc": "2026-10-15T05:45:43.304331+00:00",
+  "nonclaims": {
+    "RH": false,
+    "global_positive_boundary_approximation": false,
+    "new_zero_free_region": false,
+    "subpower_mean_growth_proved": false,
+    "unitary_identification_of_all_sources": false
+  },
+  "publication": {
+    "branch": "main",
+    "commit": "23bf37f3e389c9b0b8ccf111c68e72c05c9a0d3c",
+    "existing_files_modified": 0,
+    "expected_head_lease": true,
+    "full_repository_checks": "NOT_RUN",
+    "local_exact_sources_match_published_blob_ids": true,
+    "new_Lean_admissions": 0,
+    "new_files": 11,
+    "new_zero_exclusion": false,
+    "non_force_update": true,
+    "parent": "bf407f3b289236171d1b50e5f497be622e167bba",
+    "pdfs_published": 0,
+    "remote_head_confirmed": true,
+    "repository": "grwtsk/math",
+    "schema": "confirmed-repository-publication-v1",
+    "tree": "e020ceb0391c7366edb6a8d530ca79be44206598"
+  },
+  "repository": "grwtsk/math",
+  "schema": "reflected-heat-boundary-integration-v1",
+  "source_bindings": {
+    "evidence/analysis/reflected-heat-boundary-20261014/README.txt": {
+      "bytes": 1781,
+      "git_blob_sha1": "3ac0d8f6309bd19b00e1465d5d90dd32f4ad815d",
+      "sha256": "a20a2032a18e9a96ebe62f4e1ee955641717aa4ccdd1c8971c2f40d7440f1071"
+    },
+    "evidence/analysis/reflected-heat-boundary-20261014/bilateral-4096-160.json": {
+      "bytes": 1531,
+      "git_blob_sha1": "c65dea2e2690e34996374a6d66b7a60be21cb8f1",
+      "sha256": "b2e3497e0dce57803a875eb7c141bf0dedbc0f9ffd27169ae5bfc07a71a579ce"
+    },
+    "evidence/analysis/reflected-heat-boundary-20261014/bilateral-4096-192.json": {
+      "bytes": 1687,
+      "git_blob_sha1": "ed2f731d54b618cd3454d15f07cd959c9408ae77",
+      "sha256": "93baa56f7a69c25e3099d4389925cb0cd7e6a37b81643033474fb4ee285e954b"
+    },
+    "evidence/analysis/reflected-heat-boundary-20261014/derivation.txt": {
+      "bytes": 13233,
+      "git_blob_sha1": "ec0ae5dfdddfa8ded9b1da4beb23e113959e5011",
+      "sha256": "65e13cfb5fb817806e1311931d3df42e633fd3d9a74e5b092fd420fc09bd2829"
+    },
+    "evidence/analysis/reflected-heat-boundary-20261014/paper-sources.json": {
+      "bytes": 2139,
+      "git_blob_sha1": "5dac263465ec2fb8b9e9c29c956d7160de47dff2",
+      "sha256": "4fa2c23bbb1d095e7a697d25799561be4fc9fb555543ec57d0323ee5fbb8c511"
+    },
+    "evidence/analysis/reflected-heat-boundary-20261014/replay-summary.json": {
+      "bytes": 5138,
+      "git_blob_sha1": "c31ae9b37c9b7775d3c761d558a29e343205d61f",
+      "sha256": "23f31dba943d9d45cd0f31f310e056bef2acef231d26776ff9ee1a7bc4658c8a"
+    },
+    "evidence/analysis/reflected-heat-boundary-20261014/requirements-tests.txt": {
+      "bytes": 14,
+      "git_blob_sha1": "1ca5fd06160543f8bd736f1b51db6f42372c66f4",
+      "sha256": "25f9f1fb1988b230147a1d3092d34e09c069eb7a6c6d6df46b3973b9f2d36efc"
+    },
+    "scripts/screw_hodge_transfer.py": {
+      "bytes": 13940,
+      "git_blob_sha1": "64f38e300514e2c8fba6bc82513d8af090bd81b3",
+      "sha256": "c716b2174efff26b22e1b6a36b733e0d121401c021b4e8a05e535b2563b0650a"
+    },
+    "scripts/verify_screw_hodge_transfer.py": {
+      "bytes": 4593,
+      "git_blob_sha1": "c7b8508e5d68914b893545a2add3b23826e7efea",
+      "sha256": "a7f09dcd7c695c958905b7405af6e12ae1879901b8ffc93340e5c70e3fa769b9"
+    },
+    "tests/test_screw_hodge_transfer.py": {
+      "bytes": 13626,
+      "git_blob_sha1": "ee953956e51642f40d30654f3401f0f1ba2ee5d4",
+      "sha256": "b2869349bc1ee79def23231ae430afae5f78e3b0d94b6466f4c5e2b208f43081"
+    }
+  },
+  "verification": {
+    "complete_endpoint_replays_per_mode": [
+      {
+        "bits": 160,
+        "cutoff": 4096
+      },
+      {
+        "bits": 192,
+        "cutoff": 4096
+      }
+    ],
+    "continuum_proofs": "WRITTEN_NOT_KERNEL_CHECKED",
+    "full_repository_checks": "NOT_RUN: source-bound partial snapshot only",
+    "independent_mobius_factorization_through": 4096,
+    "modes": [
+      "normal",
+      "optimized"
+    ],
+    "native_Lean": "NOT_RUN: no Lean/Lake executable",
+    "paper_companion_replays": "NOT_RUN: datasets not in this PDF corpus",
+    "previous_height_40_atlas": "UNCHANGED_NOT_RERUN",
+    "tests_per_mode": 64
+  }
+}

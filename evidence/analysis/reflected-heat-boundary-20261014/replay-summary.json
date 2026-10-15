@@ -1,0 +1,158 @@
+{
+  "RH": false,
+  "continuum_proofs": "WRITTEN_NOT_KERNEL_CHECKED",
+  "cross_precision_overlap": true,
+  "finite_replay": "PASSED",
+  "full_log_bodies": "User-facing heat-boundary-continuation package reports/full-replay.json; replay runner emits full bodies.",
+  "global_positive_boundary_approximation": false,
+  "independent_mobius_factorization_through": 4096,
+  "modes": [
+    "normal",
+    "optimized"
+  ],
+  "new_Lean_admissions": 0,
+  "new_zeta_zero_exclusion": false,
+  "python": "3.13.5",
+  "schema": "screw-hodge-transfer-replay-v1",
+  "source_bindings": {
+    "bilateral-4096-160.json": {
+      "bytes": 1531,
+      "sha256": "b2e3497e0dce57803a875eb7c141bf0dedbc0f9ffd27169ae5bfc07a71a579ce"
+    },
+    "bilateral-4096-192.json": {
+      "bytes": 1687,
+      "sha256": "93baa56f7a69c25e3099d4389925cb0cd7e6a37b81643033474fb4ee285e954b"
+    },
+    "scripts/screw_hodge_transfer.py": {
+      "bytes": 13940,
+      "sha256": "c716b2174efff26b22e1b6a36b733e0d121401c021b4e8a05e535b2563b0650a"
+    },
+    "scripts/verify_screw_hodge_transfer.py": {
+      "bytes": 4593,
+      "sha256": "a7f09dcd7c695c958905b7405af6e12ae1879901b8ffc93340e5c70e3fa769b9"
+    },
+    "tests/test_screw_hodge_transfer.py": {
+      "bytes": 13626,
+      "sha256": "b2869349bc1ee79def23231ae430afae5f78e3b0d94b6466f4c5e2b208f43081"
+    }
+  },
+  "steps": [
+    {
+      "argv": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/mnt/data/heat-boundary-continuation/tests",
+        "-p",
+        "test_screw_hodge_transfer.py",
+        "-v"
+      ],
+      "label": "finite-tests",
+      "mode": "normal",
+      "returncode": 0,
+      "seconds": 1.6235940980000123,
+      "stderr_bytes": 7001,
+      "stderr_sha256": "2fd39ba2c9e2be34f75b9e1042bbd17480472e406f88f9102d101d9bc0a48b49",
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "/mnt/data/heat-boundary-continuation/scripts/screw_hodge_transfer.py",
+        "--verify",
+        "/mnt/data/heat-boundary-continuation/reports/bilateral-4096-160.json"
+      ],
+      "label": "endpoint-160",
+      "mode": "normal",
+      "returncode": 0,
+      "seconds": 2.5862256390000766,
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 53,
+      "stdout_sha256": "e8973ff5dba39bf960ae23e4eff5de9b887a533b4c4552925fa983e3393f76bb"
+    },
+    {
+      "argv": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "/mnt/data/heat-boundary-continuation/scripts/screw_hodge_transfer.py",
+        "--verify",
+        "/mnt/data/heat-boundary-continuation/reports/bilateral-4096-192.json"
+      ],
+      "label": "endpoint-192",
+      "mode": "normal",
+      "returncode": 0,
+      "seconds": 2.5936390489998757,
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 53,
+      "stdout_sha256": "e8973ff5dba39bf960ae23e4eff5de9b887a533b4c4552925fa983e3393f76bb"
+    },
+    {
+      "argv": [
+        "/opt/pyvenv/bin/python",
+        "-O",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/mnt/data/heat-boundary-continuation/tests",
+        "-p",
+        "test_screw_hodge_transfer.py",
+        "-v"
+      ],
+      "label": "finite-tests",
+      "mode": "optimized",
+      "returncode": 0,
+      "seconds": 4.428243209999891,
+      "stderr_bytes": 7001,
+      "stderr_sha256": "5b02df792357c8fa5501113e46cd3d07e907ae46ceb2f8cdad5485651e35e9ea",
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/opt/pyvenv/bin/python",
+        "-O",
+        "-B",
+        "/mnt/data/heat-boundary-continuation/scripts/screw_hodge_transfer.py",
+        "--verify",
+        "/mnt/data/heat-boundary-continuation/reports/bilateral-4096-160.json"
+      ],
+      "label": "endpoint-160",
+      "mode": "optimized",
+      "returncode": 0,
+      "seconds": 3.9610124460000407,
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 53,
+      "stdout_sha256": "e8973ff5dba39bf960ae23e4eff5de9b887a533b4c4552925fa983e3393f76bb"
+    },
+    {
+      "argv": [
+        "/opt/pyvenv/bin/python",
+        "-O",
+        "-B",
+        "/mnt/data/heat-boundary-continuation/scripts/screw_hodge_transfer.py",
+        "--verify",
+        "/mnt/data/heat-boundary-continuation/reports/bilateral-4096-192.json"
+      ],
+      "label": "endpoint-192",
+      "mode": "optimized",
+      "returncode": 0,
+      "seconds": 3.9947002339999926,
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 53,
+      "stdout_sha256": "e8973ff5dba39bf960ae23e4eff5de9b887a533b4c4552925fa983e3393f76bb"
+    }
+  ],
+  "sympy": "1.14.0",
+  "tests_per_mode": 64
+}

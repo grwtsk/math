@@ -1,0 +1,123 @@
+{
+  "schema": "grl-rh-observed-execution-v1",
+  "base_commit": "522d3ee7a53317fbec96b78c2869bc95d80068aa",
+  "outcome": "OPEN_FRONTIER",
+  "observations": [
+    {
+      "command": [
+        "lean",
+        "--version"
+      ],
+      "started_utc": "2026-10-15T13:58:56.562719+00:00",
+      "returncode": null,
+      "stdout": "",
+      "stderr": "[Errno 2] No such file or directory: 'lean'",
+      "state": "BLOCKED_OPERATION",
+      "finished_utc": "2026-10-15T13:58:56.563567+00:00"
+    },
+    {
+      "command": [
+        "lake",
+        "--version"
+      ],
+      "started_utc": "2026-10-15T13:58:56.563575+00:00",
+      "returncode": null,
+      "stdout": "",
+      "stderr": "[Errno 2] No such file or directory: 'lake'",
+      "state": "BLOCKED_OPERATION",
+      "finished_utc": "2026-10-15T13:58:56.563915+00:00"
+    },
+    {
+      "command": [
+        "elan",
+        "--version"
+      ],
+      "started_utc": "2026-10-15T13:58:56.563923+00:00",
+      "returncode": null,
+      "stdout": "",
+      "stderr": "[Errno 2] No such file or directory: 'elan'",
+      "state": "BLOCKED_OPERATION",
+      "finished_utc": "2026-10-15T13:58:56.564288+00:00"
+    },
+    {
+      "command": [
+        "git",
+        "ls-remote",
+        "https://github.com/grwtsk/math.git",
+        "HEAD"
+      ],
+      "started_utc": "2026-10-15T13:58:56.564295+00:00",
+      "returncode": 128,
+      "stdout": "",
+      "stderr": "fatal: unable to access 'https://github.com/grwtsk/math.git/': Could not resolve host: github.com\n",
+      "state": "BLOCKED_OPERATION",
+      "finished_utc": "2026-10-15T13:58:56.578452+00:00"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "/mnt/data/rh-next/additions/evidence/number-theory/zeta/riemann/pair-localization-001/verify_pair_localization.py",
+        "--output",
+        "/mnt/data/rh-next/additions/evidence/number-theory/zeta/riemann/pair-localization-001/exact-checks.json"
+      ],
+      "started_utc": "2026-10-15T14:07:25.421891+00:00",
+      "returncode": 0,
+      "stdout": "{\n  \"outcome\": \"EXACT_FINITE_CHECKS_PASSED\",\n  \"total_checks\": 692,\n  \"groups\": {\n    \"symbolic\": 8,\n    \"finite-interpolation\": 192,\n    \"cross-path\": 144,\n    \"weighted-trace\": 48,\n    \"rational-envelope\": 288,\n    \"negative-controls\": 12\n  },\n  \"all_events_sha256\": \"ba6e74e91385896dece2dbd29fe3d0a71c9072863b64438ff2ae6967e33861af\",\n  \"native_lean\": \"NOT_RUN\",\n  \"rh_proof\": false\n}\n",
+      "stderr": "",
+      "finished_utc": "2026-10-15T14:07:27.140211+00:00",
+      "state": "COMPLETED"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "-O",
+        "/mnt/data/rh-next/additions/evidence/number-theory/zeta/riemann/pair-localization-001/verify_pair_localization.py",
+        "--output",
+        "/mnt/data/rh-next/additions/evidence/number-theory/zeta/riemann/pair-localization-001/exact-checks-optimized.json"
+      ],
+      "started_utc": "2026-10-15T14:07:27.140300+00:00",
+      "returncode": 0,
+      "stdout": "{\n  \"outcome\": \"EXACT_FINITE_CHECKS_PASSED\",\n  \"total_checks\": 692,\n  \"groups\": {\n    \"symbolic\": 8,\n    \"finite-interpolation\": 192,\n    \"cross-path\": 144,\n    \"weighted-trace\": 48,\n    \"rational-envelope\": 288,\n    \"negative-controls\": 12\n  },\n  \"all_events_sha256\": \"ba6e74e91385896dece2dbd29fe3d0a71c9072863b64438ff2ae6967e33861af\",\n  \"native_lean\": \"NOT_RUN\",\n  \"rh_proof\": false\n}\n",
+      "stderr": "",
+      "finished_utc": "2026-10-15T14:07:31.733412+00:00",
+      "state": "COMPLETED"
+    }
+  ],
+  "exact_checks_per_mode": 692,
+  "reports_byte_identical": true,
+  "predecessor_manifest_matches": 14,
+  "frozen_target_sha256": "bd061de3483aa53b73a81f087c0d4fdbf23c15d57e083dbedda4f32157334b8e",
+  "frozen_target_unchanged": true,
+  "supplementary_lexical_checks": [
+    {
+      "path": "evidence/algebra/polynomial/interpolation/ConjugatePair.lean.txt",
+      "selected_lexical_scan": "PASSED_NOT_AN_AXIOM_AUDIT"
+    },
+    {
+      "path": "evidence/algebra/polynomial/quartic/PairMargin.lean.txt",
+      "selected_lexical_scan": "PASSED_NOT_AN_AXIOM_AUDIT"
+    },
+    {
+      "path": "evidence/analysis/complex/gaussian/PairLocalization.lean.txt",
+      "selected_lexical_scan": "PASSED_NOT_AN_AXIOM_AUDIT"
+    },
+    {
+      "path": "evidence/number-theory/zeta/riemann/ZeroWindow.lean.txt",
+      "selected_lexical_scan": "PASSED_NOT_AN_AXIOM_AUDIT"
+    }
+  ],
+  "native_compilation": "NOT_RUN",
+  "native_target_comparison": "NOT_RUN",
+  "owned_transitive_axiom_audit": "NOT_RUN",
+  "full_repository_checks": "NOT_RUN",
+  "independent_validation": "NOT_RUN",
+  "rh_proof_checked": false,
+  "scoped_blockers": [
+    "Native Lean/lake/elan unavailable.",
+    "Local Git network retrieval fails DNS; connected GitHub reads and writes remain available.",
+    "Selected plugin search did not expose a Lean execution integration."
+  ],
+  "scope": "One manually orchestrated mathematical continuation. No deployed autonomous service, workflow change or background execution."
+}

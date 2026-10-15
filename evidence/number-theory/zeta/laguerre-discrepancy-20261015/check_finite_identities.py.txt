@@ -1,0 +1,336 @@
+#!/usr/bin/env python3
+"""UNEXECUTED candidate regressions for the digamma/Laguerre research notes.
+
+Human mathematical direction: grwtsk contributors. Preparation: OpenAI ChatGPT.
+MIT. Stored as .py.txt outside active scripts/tests because this publication
+has no working execution service. Running this file checks only finite exact
+identities and synthetic controls. It does not check a continuum proof, an
+actual prime-discrepancy growth bound, a Lean term, or RH. No network, Git,
+installation, file writes, numerical zeta routines, or zero tables are used.
+"""
+from __future__ import annotations
+
+from fractions import Fraction as F
+from itertools import product
+from math import comb, factorial
+import unittest
+
+
+def exact(value):
+    if type(value) not in (int, str, F):
+        raise TypeError('exact integer, rational string, or Fraction required')
+    if isinstance(value, str) and len(value) > 8192:
+        raise ValueError('rational input too long')
+    return F(value)
+
+
+def bounded_integer(value, name, lower=0, upper=64):
+    if type(value) is not int or not lower <= value <= upper:
+        raise ValueError(f'{name}: integer in [{lower},{upper}] required')
+    return value
+
+
+def trim(coefficients):
+    out = [exact(x) for x in coefficients]
+    while len(out) > 1 and out[-1] == 0:
+        out.pop()
+    return tuple(out or [F(0)])
+
+
+def add(a, b):
+    n = max(len(a), len(b))
+    return trim((a[j] if j < len(a) else 0) +
+                (b[j] if j < len(b) else 0) for j in range(n))
+
+
+def scale(a, scalar):
+    scalar = exact(scalar)
+    return trim(scalar*x for x in a)
+
+
+def multiply(a, b):
+    out = [F(0)]*(len(a)+len(b)-1)
+    for i, x in enumerate(a):
+        for j, y in enumerate(b):
+            out[i+j] += x*y
+    return trim(out)
+
+
+def derivative(a):
+    return trim(j*a[j] for j in range(1, len(a)))
+
+
+def evaluate(a, x):
+    x = exact(x)
+    value = F(0)
+    for coefficient in reversed(a):
+        value = value*x+coefficient
+    return value
+
+
+def integrate(a, lower, upper):
+    lower, upper = exact(lower), exact(upper)
+    if lower > upper:
+        raise ValueError('reversed integration endpoints')
+    return sum((a[j]*(upper**(j+1)-lower**(j+1))/F(j+1)
+                for j in range(len(a))), F(0))
+
+
+def laguerre(k):
+    bounded_integer(k, 'degree', 0, 32)
+    return tuple(F((-1)**j*comb(k, j), factorial(j))
+                 for j in range(k+1))
+
+
+def q_polynomial(k):
+    bounded_integer(k, 'degree', 0, 32)
+    if k == 0:
+        return (F(1),)
+    return (F(0),)+tuple(F((-1)**j*comb(k-1, j-1), factorial(j))
+                         for j in range(1, k+1))
+
+
+def complete_prefix(values):
+    values = tuple(exact(x) for x in values)
+    bounded_integer(len(values), 'prefix length', 1, 64)
+    return values
+
+
+def source_filter(u):
+    u = complete_prefix(u)
+    return tuple(-(3*x+(u[k-1] if k else 0))/2
+                 for k, x in enumerate(u))
+
+
+def inverse_source_filter(p):
+    p = complete_prefix(p)
+    u = []
+    for x in p:
+        u.append(-2*x/3-(u[-1] if u else 0)/3)
+    return tuple(u)
+
+
+def squared_norm(values):
+    values = tuple(exact(x) for x in values)
+    return sum((x*x for x in values), F(0))
+
+
+def gamma_node(m):
+    bounded_integer(m, 'moment index', 0, 4096)
+    h = F(m)+F(7, 4)
+    return 1-1/h, F(1, 2)/(h*h)
+
+
+def gamma_prefix_moment(k, count):
+    bounded_integer(k, 'positive coefficient index', 1, 32)
+    bounded_integer(count, 'atom count', 0, 128)
+    return sum((gamma_node(m)[1]*gamma_node(m)[0]**(k-1)
+                for m in range(count)), F(0))
+
+
+def kernel(n, x, y):
+    bounded_integer(n, 'kernel size', 1, 32)
+    x, y = exact(x), exact(y)
+    return sum((evaluate(laguerre(k), x)*evaluate(laguerre(k), y)
+                for k in range(n)), F(0))
+
+
+def exponential_polynomial_integral(a, rate):
+    rate = exact(rate)
+    if rate <= 0:
+        raise ValueError('positive exponential decay required')
+    return sum((a[j]*factorial(j)/rate**(j+1)
+                for j in range(len(a))), F(0))
+
+
+def synthetic_moment(beta, k):
+    """Delta(x)=x**beta-1 is SYNTHETIC, not a prime discrepancy."""
+    beta = exact(beta)
+    polynomial = tuple(coefficient*2**j
+                       for j, coefficient in enumerate(laguerre(k)))
+    return (exponential_polynomial_integral(polynomial, F(3, 2)-beta)
+            - exponential_polynomial_integral(polynomial, F(3, 2)))
+
+
+def tail_budget_squared(n):
+    bounded_integer(n, 'energy size', 1, 64)
+    return F(16*n*(4*n+1)**2*9**(2*n-2), 256**n)
+
+
+class FiniteIdentityCandidates(unittest.TestCase):
+    def test_exact_inputs_reject_float_and_bool(self):
+        for value in (1.0, True, False, complex(1, 0)):
+            with self.assertRaises(TypeError):
+                exact(value)
+
+    def test_bounded_indices(self):
+        for value in (-1, 33, True, F(1)):
+            with self.assertRaises(ValueError):
+                laguerre(value)
+        with self.assertRaises(ValueError):
+            complete_prefix([])
+        with self.assertRaises(ValueError):
+            tail_budget_squared(0)
+
+    def test_initial_polynomials(self):
+        self.assertEqual(laguerre(2), (F(1), F(-2), F(1, 2)))
+        self.assertEqual(q_polynomial(2), (F(0), F(-1), F(1, 2)))
+        self.assertEqual(q_polynomial(0), (F(1),))
+
+    def test_q_contiguous_identity(self):
+        for k in range(1, 17):
+            self.assertEqual(q_polynomial(k),
+                             add(laguerre(k), scale(laguerre(k-1), -1)))
+
+    def test_q_derivative_identity(self):
+        for k in range(1, 17):
+            self.assertEqual(derivative(q_polynomial(k)),
+                             scale(laguerre(k-1), -1))
+
+    def test_entire_derivative_filter_including_constant(self):
+        for k in range(17):
+            previous = laguerre(k-1) if k else (F(0),)
+            left = add(scale(derivative(q_polynomial(k)), 2),
+                       scale(q_polynomial(k), F(-3, 2)))
+            right = scale(add(scale(laguerre(k), 3), previous), F(-1, 2))
+            self.assertEqual(left, right)
+
+    def test_finite_filter_inverse_signed_prefixes(self):
+        for n in range(1, 6):
+            for u in product((F(-2), F(0), F(1)), repeat=n):
+                self.assertEqual(inverse_source_filter(source_filter(u)), u)
+
+    def test_filter_energy_has_both_dimension_free_bounds(self):
+        for n in range(1, 6):
+            for u in product((F(-2), F(0), F(1)), repeat=n):
+                before, after = squared_norm(u), squared_norm(source_filter(u))
+                self.assertLessEqual(before, after)
+                self.assertLessEqual(after, 4*before)
+
+    def test_constant_and_terminal_coefficient_retained(self):
+        self.assertEqual(source_filter((1, 0)), (F(-3, 2), F(-1, 2)))
+        self.assertEqual(source_filter((0, 0, 7)), (F(0), F(0), F(-21, 2)))
+        self.assertNotEqual(inverse_source_filter((0, F(-1, 2))),
+                            (F(1), F(0)))
+
+    def test_gamma_grid_and_cell_ratio(self):
+        for m in range(32):
+            theta, weight = gamma_node(m)
+            next_theta, _ = gamma_node(m+1)
+            h = F(m)+F(7, 4)
+            self.assertEqual(next_theta-theta, 1/(h*(h+1)))
+            self.assertEqual(weight/(next_theta-theta), (h+1)/(2*h))
+            self.assertLessEqual(weight, F(11, 14)*(next_theta-theta))
+
+    def test_finite_positive_gamma_moment_bounds(self):
+        for k in range(1, 10):
+            for count in (0, 1, 4, 12):
+                value = gamma_prefix_moment(k, count)
+                self.assertGreaterEqual(value, 0)
+                self.assertLessEqual(value, F(11, 14)*(1-F(3, 7)**k)/k)
+
+    def test_finite_gamma_gram_keeps_signed_vector(self):
+        vector = (F(1), F(-3), F(2), F(-1))
+        n = len(vector)
+        direct = sum((vector[i]*vector[j]*gamma_prefix_moment(i+j+1, 12)
+                      for i in range(n) for j in range(n)), F(0))
+        atoms = sum((gamma_node(m)[1]*
+                     sum((vector[i]*gamma_node(m)[0]**i
+                          for i in range(n)), F(0))**2
+                     for m in range(12)), F(0))
+        self.assertEqual(direct, atoms)
+        self.assertGreaterEqual(direct, 0)
+
+    def test_gamma_tail_telescoping_majorant(self):
+        for start in range(12):
+            subtotal = sum((gamma_node(m)[1]
+                            for m in range(start, start+16)), F(0))
+            self.assertLessEqual(subtotal, 1/(2*(F(start)+F(3, 4))))
+
+    def test_archimedean_denominator_rational_gap(self):
+        self.assertEqual(-1+F(1, 5)+F(1, 18), F(-67, 90))
+        self.assertEqual(1+(F(-67, 90)-F(6, 5))/2, F(1, 36))
+        exp_lower = sum((F(6, 5)**k/factorial(k) for k in range(5)), F(0))
+        self.assertEqual(exp_lower, F(2059, 625))
+        self.assertGreater(exp_lower, F(22, 7))
+
+    def test_christoffel_darboux_off_diagonal(self):
+        for n in range(1, 9):
+            for x, y in ((F(0), F(3)), (F(1, 3), F(7, 2)),
+                         (F(-2), F(5, 4))):
+                numerator = n*(evaluate(laguerre(n-1), x)*evaluate(laguerre(n), y)
+                               -evaluate(laguerre(n), x)*evaluate(laguerre(n-1), y))
+                self.assertEqual(kernel(n, x, y), numerator/(x-y))
+
+    def test_christoffel_darboux_removable_diagonal(self):
+        for n in range(1, 9):
+            for x in (F(0), F(2, 3), F(5)):
+                right = n*(evaluate(laguerre(n), x)*evaluate(derivative(laguerre(n-1)), x)
+                           -evaluate(laguerre(n-1), x)*evaluate(derivative(laguerre(n)), x))
+                self.assertEqual(kernel(n, x, x), right)
+
+    def test_projection_kernel_is_not_pointwise_nonnegative(self):
+        self.assertEqual(kernel(2, 0, 3), -1)
+
+    def test_exact_exponential_polynomial_integral(self):
+        for k in range(10):
+            polynomial = tuple(v*2**j for j, v in enumerate(laguerre(k)))
+            for rate in (F(5, 8), F(1), F(3, 2), F(4)):
+                self.assertEqual(exponential_polynomial_integral(polynomial, rate),
+                                 (rate-2)**k/rate**(k+1))
+        with self.assertRaises(ValueError):
+            exponential_polynomial_integral((F(1),), 0)
+
+    def test_tail_binomial_constant(self):
+        for k in range(17):
+            exact_sum = sum((F(comb(k, j)*2**j, factorial(j))*
+                             (factorial(j+1)*4**(j+2)+factorial(j)*4**(j+1))
+                             for j in range(k+1)), F(0))
+            derivative_term = 32*k*9**(k-1) if k else 0
+            self.assertEqual(exact_sum, 4*(5*9**k+derivative_term))
+            self.assertLessEqual(exact_sum, 4*(4*k+5)*9**k)
+
+    def test_integer_cutoff_energy_budget(self):
+        for n in range(1, 17):
+            individual_squared_bound = F(16*(4*n+1)**2*9**(2*n-2), 2**(8*n))
+            self.assertEqual(tail_budget_squared(n), n*individual_squared_bound)
+        for n in range(8, 32):
+            self.assertLess(tail_budget_squared(n+1), tail_budget_squared(n))
+
+    def test_synthetic_seven_eighths_has_exponential_mode(self):
+        for k in range(10):
+            expected = F(8, 5)*F(-11, 5)**k-F(2, 3)*F(-1, 3)**k
+            self.assertEqual(synthetic_moment(F(7, 8), k), expected)
+            if k:
+                self.assertGreater(abs(expected), 2**k)
+        self.assertEqual(synthetic_moment(F(7, 8), 0), F(14, 15))
+
+    def test_synthetic_filtered_source_pole_is_retained(self):
+        beta, decay = F(7, 8), F(5, 8)
+        u = tuple(synthetic_moment(beta, k) for k in range(10))
+        pole_ratio = F(-11, 5)
+        expected = tuple(-beta/decay*(pole_ratio**k-
+                                     (pole_ratio**(k-1) if k else 0))
+                         for k in range(10))
+        self.assertEqual(source_filter(u), expected)
+
+    def test_synthetic_half_exponent_is_bounded(self):
+        for k in range(16):
+            self.assertLessEqual(abs(synthetic_moment(F(1, 2), k)), F(5, 3))
+
+    def test_stieltjes_upper_endpoint_and_touching_atom(self):
+        f = (F(2), F(-1), F(3, 2), F(-1, 4))
+        fp = derivative(f)
+        for upper, atom, mass in ((F(5), F(3), F(7)),
+                                  (F(3), F(3), F(7)),
+                                  (F(9, 2), F(7, 2), F(2, 5))):
+            left = integrate(multiply((F(1), F(-1)), fp), 1, upper)
+            left += mass*integrate(fp, atom, upper)
+            endpoint = (mass-upper+1)*evaluate(f, upper)
+            right_without_endpoint = -mass*evaluate(f, atom)+integrate(f, 1, upper)
+            self.assertEqual(left, endpoint+right_without_endpoint)
+            self.assertNotEqual(left, right_without_endpoint)
+
+
+if __name__ == '__main__':
+    unittest.main(verbosity=2)

@@ -1,0 +1,71 @@
+{
+  "schema": "grl-rh-frozen-source-targets-v1",
+  "context": "pair-localization-001",
+  "frozen_utc": "2026-10-15T13:58:56.578956+00:00",
+  "base_commit": "522d3ee7a53317fbec96b78c2869bc95d80068aa",
+  "root": "_root_.RiemannHypothesis",
+  "native_elaboration": "NOT_RUN",
+  "lean": "leanprover/lean4:v4.33.0",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "target_preservation": "No root definition, prior target file, source function, package pin or historical receipt may be edited.",
+  "targets": [
+    {
+      "id": "PAIR-1",
+      "statement": "For a finite set S of complex nodes excluding r and conjugate r, Im r != 0, construct a polynomial P with P(r)=i, P(conjugate r)=-i, P(w)=0 for w in S, and P(conjugate z)=conjugate(P(z)). S need not be conjugation-closed.",
+      "status": "FROZEN_BEFORE_CANDIDATE"
+    },
+    {
+      "id": "PAIR-2",
+      "statement": "The two selected squared values with arbitrary positive weights m1,m2 contribute -(m1+m2). No equality of multiplicities or fourfold orbit weights is assumed.",
+      "status": "FROZEN_BEFORE_CANDIDATE"
+    },
+    {
+      "id": "GAUSS-1",
+      "statement": "G_L(z)=P(z)*exp(-L*((z-Re r)^2+(Im r)^2)); norm squared is |P(z)|^2 exp(-2 L D(z)), D=(Re z-Re r)^2+(Im r)^2-(Im z)^2. G_L agrees with P at r and conjugate r.",
+      "status": "FROZEN_BEFORE_CANDIDATE"
+    },
+    {
+      "id": "GAUSS-2",
+      "statement": "For |Im z|<=1/2 and |Re z-Re r|>=1, D>=3/4 and |G_(n+1)(z)|^2 <= exp(-3n/2)*|G_1(z)|^2 for all natural n. P and finite S are fixed before n.",
+      "status": "FROZEN_BEFORE_CANDIDATE"
+    },
+    {
+      "id": "TAIL-1",
+      "statement": "If b is summable and ||f_i||<=q*b_i, prove f summable and ||sum f_i||<=q*sum b_i. From any mass>0 and finite C obtain n with exp(-3n/2)*C<mass, not by an unproved terminating search.",
+      "status": "FROZEN_BEFORE_CANDIDATE"
+    },
+    {
+      "id": "SOURCE-1",
+      "statement": "Use pinned ZetaZeros compact-finiteness and existing zero-strip theorem to form a finite source window 0<=Re s<=1, t-1<=Im s<=t+1. Its frequency image, after removing r and conjugate r, is an admissible S covering every non-target actual zero with |Im s-t|<=1.",
+      "status": "FROZEN_BEFORE_CANDIDATE"
+    },
+    {
+      "id": "BRIDGE-1",
+      "statement": "For a!=0 and mass>0, scale=mass/(16*a^4)>0 and scale*witnessTrace 2 a t=-mass, linking the negative pair margin to the existing finite-residual quartic consumer.",
+      "status": "FROZEN_BEFORE_CANDIDATE"
+    }
+  ],
+  "open_source_obligations": [
+    "Native replay of candidates and selected complete dependency closure.",
+    "Actual analytic zero multiplicity positivity and indexing.",
+    "Weighted Gaussian moment summability for actual zeta zeros.",
+    "Admissibility and exact Weil/arithmetic source identity for the constructed tests.",
+    "Source nonnegativity without assuming RH or equivalent positivity."
+  ],
+  "negative_controls": [
+    "Target/conjugate in S must be rejected.",
+    "Im r=0 is outside pair normalizer domain, not omitted from RH.",
+    "Repeated interpolation factors do not imply analytic zero multiplicity.",
+    "Squared moduli must not replace signed squares.",
+    "Strip and far-window hypotheses cannot be dropped.",
+    "A shrinking Gaussian alone need not suppress nearby off-line zeros.",
+    "Finite support success cannot establish an infinite summability theorem.",
+    "C depends on the fixed P and source zero, not on the Gaussian index.",
+    "No zero set is numerically fabricated as actual zeta zeros."
+  ]
+}

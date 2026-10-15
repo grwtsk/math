@@ -1,0 +1,32 @@
+{
+  "schema": "log-cell-preserved-attempts-v1",
+  "attempts": [
+    {
+      "stage": "combined integration replay",
+      "tool_timeout_seconds": 45,
+      "completed": false,
+      "claim": "No final receipt emitted"
+    },
+    {
+      "stage": "streaming execution request",
+      "completed": false,
+      "reason": "StreamingExecNotEnabledContainerError",
+      "claim": "No process started by this request"
+    },
+    {
+      "stage": "combined integration replay with extended tool limit",
+      "tool_timeout_seconds": 120,
+      "completed": false,
+      "stderr": "unit-tests optimized=False: exit=0\nprefix-4096.json optimized=False: exit=0\nprefix-4096-bits-192.json optimized=False: exit=0\nresidual-operator-4096.json optimized=False: exit=0\nunit-tests optimized=True: exit=0\nprefix-4096.json optimized=True: exit=0\nprefix-4096-bits-192.json optimized=True: exit=0\n",
+      "claim": "Seven child steps reported zero exit; no completed aggregate receipt. Fresh separate-mode runs supersede no historical bytes."
+    },
+    {
+      "stage": "sequential separate-mode commands in one tool request after runner comment correction",
+      "tool_timeout_seconds": 120,
+      "completed": false,
+      "normal_receipt_completed": true,
+      "optimized_progress": "unit-tests optimized=True: exit=0\nprefix-4096.json optimized=True: exit=0\n",
+      "claim": "The optimized aggregate did not finish; it is rerun in its own tool request."
+    }
+  ]
+}

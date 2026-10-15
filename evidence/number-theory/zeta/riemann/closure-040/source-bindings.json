@@ -1,0 +1,101 @@
+{
+  "schema": "grl-rh-source-observations-v1",
+  "method": "connected GitHub reads at fixed refs; not a cloned or rebuilt dependency closure",
+  "bindings": [
+    {
+      "repository": "grwtsk/math",
+      "commit": "0242bb202aafc15c8212aee3015e9bf9002edb3e",
+      "path": "AGENTS.md",
+      "git_blob": "e76a251bd6215517eb9c77acbe3bed80dcc34230",
+      "observed_scope": "full text"
+    },
+    {
+      "repository": "grwtsk/math",
+      "commit": "0242bb202aafc15c8212aee3015e9bf9002edb3e",
+      "path": "lean-toolchain",
+      "git_blob": "025e59548e48cf71f2744154e2890beefe30a258",
+      "observed_scope": "full text"
+    },
+    {
+      "repository": "grwtsk/math",
+      "commit": "0242bb202aafc15c8212aee3015e9bf9002edb3e",
+      "path": "lake-manifest.json",
+      "git_blob": "1f2e3e2d66253933a410e981eb359a9b454aae0b",
+      "observed_scope": "full text; all package pins retained unchanged in repository"
+    },
+    {
+      "repository": "grwtsk/math",
+      "commit": "0242bb202aafc15c8212aee3015e9bf9002edb3e",
+      "path": "GRWTSK/NumberTheory/Zeta/Riemann/PolynomialEnergyCriterion.lean",
+      "git_blob": "19b11e609c6c96ab4ea3d912e219e63130aaa8cf",
+      "observed_scope": "full text"
+    },
+    {
+      "repository": "grwtsk/math",
+      "commit": "0242bb202aafc15c8212aee3015e9bf9002edb3e",
+      "path": "GRWTSK/NumberTheory/Moebius/MertensPrimitive.lean",
+      "git_blob": "963ad70225b0d6625e7001fd643d18a890024833",
+      "observed_scope": "lines 1-100"
+    },
+    {
+      "repository": "grwtsk/math",
+      "commit": "0242bb202aafc15c8212aee3015e9bf9002edb3e",
+      "path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroDefinitions.lean",
+      "git_blob": "3768bab2649a6ae19e4973bf2ee2dfe41bfe3fe9",
+      "observed_scope": "full text"
+    },
+    {
+      "repository": "grwtsk/math",
+      "commit": "0242bb202aafc15c8212aee3015e9bf9002edb3e",
+      "path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroSymmetry.lean",
+      "git_blob": "5f465139ee895a99b79af84ee0866aa5f637bdfa",
+      "observed_scope": "full text"
+    },
+    {
+      "repository": "grwtsk/math",
+      "commit": "0242bb202aafc15c8212aee3015e9bf9002edb3e",
+      "path": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/uniform-supplier-obstruction.md",
+      "git_blob": "705bb9d6466f82926e39f9f78e88e63ba0fdb964",
+      "observed_scope": "full text; written-argument status preserved"
+    },
+    {
+      "repository": "grwtsk/math",
+      "commit": "0242bb202aafc15c8212aee3015e9bf9002edb3e",
+      "path": "evidence/algebra/polynomial/quartic/quartic-enclosure-candidates-20261014.patch",
+      "git_blob": "5754597437bb219139bec71cae2a7c6b5f4c16e3",
+      "observed_scope": "lines 1-240; historical candidate patch not applied"
+    },
+    {
+      "repository": "grwtsk/math",
+      "commit": "0242bb202aafc15c8212aee3015e9bf9002edb3e",
+      "path": "evidence/source-intake.json",
+      "git_blob": "5768dd6443326f9137958546065006ddbe451d7b",
+      "observed_scope": "lines 1-180; not rewritten"
+    },
+    {
+      "repository": "grwtsk/math",
+      "commit": "0242bb202aafc15c8212aee3015e9bf9002edb3e",
+      "path": "GRWTSK/Algebra/OrderedProduct/Checks/Audit.lean",
+      "git_blob": "09a8944cb41d74b8da9eb6d4787cfb902727c82d",
+      "observed_scope": "full text; inspected audit pattern, not executed"
+    },
+    {
+      "repository": "leanprover-community/mathlib4",
+      "commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "path": "Mathlib/NumberTheory/LSeries/RiemannZeta.lean",
+      "git_blob": "3c92195fce20df7fda41cfd823b3266f83cf3070",
+      "observed_scope": "selected contiguous lines 1-202; includes literal root definition"
+    }
+  ],
+  "provided_not_reobserved": {
+    "mp002_commit": "0734d7977ceccad683e4dc9389ebbeaa159b0b57",
+    "mp002_amendment_blob": "87db231fee50715621cbe69e8e9c7eea3ba2f799",
+    "status": "proposed constraints only; no governance effect"
+  },
+  "missing_original_input": {
+    "path": "GRL-1-v0.3.md",
+    "sha256": null,
+    "state": "not located; not reauthored"
+  },
+  "root_environment_binding": "NOT_RUN"
+}

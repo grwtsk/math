@@ -1,0 +1,127 @@
+/-
+Human mathematical direction and supplied targets: grwtsk contributors.
+Candidate implementation and additional algebraic derivations: OpenAI ChatGPT.
+MIT; Lean and Mathlib retain their upstream authorship and licenses.
+CANDIDATE_SOURCE_ONLY. Not natively compiled or axiom-audited in this run.
+This retained text is not imported by the active library. No RH proof is claimed.
+-/
+import Mathlib.Data.Complex.Basic
+import Mathlib.Tactic
+
+set_option autoImplicit false
+
+noncomputable section
+
+namespace GRWTSK.Polynomial.QuarticTrace
+
+/-- Real coefficients; evaluation in the complex numbers. -/
+def quadraticValue (c0 c1 c2 : ℝ) (z : ℂ) : ℂ :=
+  (c0 : ℂ) + (c1 : ℂ) * z + (c2 : ℂ) * z ^ 2
+
+/-- Four listed roots, with repetitions retained. This is not an analytic divisor. -/
+def roots (a t : ℝ) : List ℂ := [⟨t, a⟩, ⟨t, -a⟩, ⟨-t, a⟩, ⟨-t, -a⟩]
+
+/-- The signed trace of squares, NOT the sum of squared complex moduli. -/
+def squareTrace (a t c0 c1 c2 : ℝ) : ℂ :=
+  ((roots a t).map (fun z => quadraticValue c0 c1 c2 z ^ 2)).sum
+
+/-- Newton-sum expression; its identification with the root trace is proved below. -/
+def traceForm (a t c0 c1 c2 : ℝ) : ℝ :=
+  4 * c0 ^ 2 + 4 * (t ^ 2 - a ^ 2) * (c1 ^ 2 + 2 * c0 * c2) +
+    4 * (t ^ 4 - 6 * a ^ 2 * t ^ 2 + a ^ 4) * c2 ^ 2
+
+/-- Identification of the actual four-term complex square trace. -/
+theorem squareTrace_eq (a t c0 c1 c2 : ℝ) :
+    squareTrace a t c0 c1 c2 = (traceForm a t c0 c1 c2 : ℂ) := by
+  apply Complex.ext <;>
+    simp [squareTrace, roots, quadraticValue, traceForm, pow_two,
+      Complex.mul_re, Complex.mul_im] <;> ring
+
+/-- A slope family containing the even-only, supplied, and height-uniform witnesses. -/
+def witnessTrace (k a t : ℝ) : ℝ := traceForm a t (a ^ 2 - t ^ 2) (k * a) 1
+
+theorem witnessTrace_formula (k a t : ℝ) :
+    witnessTrace k a t = -4 * a ^ 2 * (k ^ 2 * a ^ 2 + (4 - k ^ 2) * t ^ 2) := by
+  dsimp [witnessTrace, traceForm]
+  ring
+
+theorem supplied_witness (a t : ℝ) :
+    witnessTrace 1 a t = -4 * a ^ 2 * (a ^ 2 + 3 * t ^ 2) := by
+  rw [witnessTrace_formula]
+  ring
+
+/-- Cancels the height term without losing the zero-height obstruction. -/
+theorem uniform_witness (a t : ℝ) : witnessTrace 2 a t = -16 * a ^ 4 := by
+  rw [witnessTrace_formula]
+  ring
+
+theorem witnessTrace_neg {k a : ℝ} (t : ℝ)
+    (hk0 : 0 < k ^ 2) (hk4 : k ^ 2 ≤ 4) (ha : a ≠ 0) :
+    witnessTrace k a t < 0 := by
+  have ha2 : 0 < a ^ 2 := sq_pos_of_ne_zero ha
+  have hka : 0 < k ^ 2 * a ^ 2 := mul_pos hk0 ha2
+  have hkt : 0 ≤ (4 - k ^ 2) * t ^ 2 :=
+    mul_nonneg (sub_nonneg.mpr hk4) (sq_nonneg t)
+  have hinner : 0 < k ^ 2 * a ^ 2 + (4 - k ^ 2) * t ^ 2 := by linarith
+  rw [witnessTrace_formula]
+  exact mul_neg_of_neg_of_pos (by nlinarith) hinner
+
+theorem uniform_witness_nonneg_iff (a t : ℝ) :
+    0 ≤ witnessTrace 2 a t ↔ a = 0 := by
+  constructor
+  · intro h
+    by_contra ha
+    exact (not_lt_of_ge h) (witnessTrace_neg t (by norm_num) (by norm_num) ha)
+  · intro ha
+    simp [uniform_witness, ha]
+
+/-- An approximate signed-trace lower bound gives an exact fourth-power enclosure. -/
+theorem fourth_power_enclosure (a t ε : ℝ) (h : -ε ≤ witnessTrace 2 a t) :
+    16 * a ^ 4 ≤ ε := by
+  rw [uniform_witness] at h
+  linarith
+
+/-- A finite residual smaller than the negative margin already suffices. -/
+theorem residual_contradiction (a t w scale residual : ℝ)
+    (hw : 0 ≤ w) (hscale : 0 < scale)
+    (hsource : w = scale * witnessTrace 2 a t + residual)
+    (hresidual : residual < 16 * scale * a ^ 4) : False := by
+  rw [uniform_witness] at hsource
+  nlinarith
+
+/-- The even-only test loses the zero-height obstruction. -/
+theorem even_zero_height : witnessTrace 0 1 0 = 0 := by
+  norm_num [witnessTrace, traceForm]
+
+/-- Enlarging the slope beyond the admissible range is not harmless. -/
+theorem oversized_slope : witnessTrace 3 1 2 = 44 := by
+  norm_num [witnessTrace, traceForm]
+
+/-- Every oversized slope has an explicit positive-trace counterexample. -/
+theorem oversized_slope_witness {k : ℝ} (hk : 4 < k ^ 2) :
+    0 < witnessTrace k 1 ((k ^ 2 + 1) / (k ^ 2 - 4)) := by
+  have hd : 0 < k ^ 2 - 4 := by linarith
+  have hid : witnessTrace k 1 ((k ^ 2 + 1) / (k ^ 2 - 4)) =
+      4 * (6 * k ^ 2 + 1) / (k ^ 2 - 4) := by
+    rw [witnessTrace_formula]
+    field_simp [ne_of_gt hd] <;> ring
+  rw [hid]
+  exact div_pos (by nlinarith [sq_nonneg k]) hd
+
+/-- Complete detection classification within this fixed polynomial family. -/
+theorem all_parameters_detected_iff (k : ℝ) :
+    (∀ a t : ℝ, a ≠ 0 → witnessTrace k a t < 0) ↔
+      0 < k ^ 2 ∧ k ^ 2 ≤ 4 := by
+  constructor
+  · intro h
+    have hzero : -4 * k ^ 2 < 0 := by
+      simpa [witnessTrace_formula] using h 1 0 (by norm_num)
+    refine ⟨by linarith, ?_⟩
+    by_contra hk
+    have hpos := oversized_slope_witness (lt_of_not_ge hk)
+    have hneg := h 1 ((k ^ 2 + 1) / (k ^ 2 - 4)) (by norm_num)
+    linarith
+  · rintro ⟨hk0, hk4⟩ a t ha
+    exact witnessTrace_neg t hk0 hk4 ha
+
+end GRWTSK.Polynomial.QuarticTrace

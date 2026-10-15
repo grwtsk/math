@@ -1,0 +1,269 @@
+# Coherent arrays, source-preserving readouts, and phase-separated analytic covers
+
+Human research direction: grwtsk contributors.
+Research, mathematical adaptation, and implementation: OpenAI ChatGPT. MIT.
+
+STATUS: written finite analytic comparison and executed rational certificates.
+No all-height zero exclusion, all-degree Mobius bound, or Lean admission.
+This is a bounded application audit of the current argument families, not
+an assertion that every file or historical conversation has been exhausted.
+Inspected math/main: 83857bf2e1d1ad2570d8a79d7b05bf885335e969.
+
+## 1. Sources and the exact phased-array interpretation
+
+The recovered logarithmic pendulum model is a finite exponential sum.
+For real sigma,t and a finite integer support A, use
+
+ D_sigma(t) = sum_(k in A) c_k k^(-sigma) exp(-it log k).       (PA1)
+
+The log k are a nonuniform frequency array, and c_k may be signed or
+complex. This is a mathematical comparison with an array factor, not a
+claim of an electromagnetic realization. Integer modes are not all prime
+modes. In the actual finite zeta evaluator, polynomially weighted
+Euler--Maclaurin completion terms also occur and remain part of the source.
+
+Primary external references inspected:
+[S1] Delos, Broughton, Kraft, Phased Array Antenna Patterns, Part 1,
+     Analog Devices, sections on steering and array factor.
+     https://www.analog.com/en/resources/analog-dialogue/articles/phased-array-antenna-patterns-part1.html
+[S2] Same authors, Part 2, grating lobes and beam squint.
+     https://www.analog.com/en/resources/analog-dialogue/articles/phased-array-antenna-patterns-part2.html
+[S3] Same authors, Part 3, tapering, mutual coupling, quantization.
+     https://www.analog.com/en/resources/analog-dialogue/articles/phased-array-antenna-patterns-part3.html
+[S4] Lorenz and Boyd, Robust Minimum Variance Beamforming, IEEE TSP
+     53(5), 1684-1696, 2005. In particular equations 17-21: use a real
+     projection as a robust lower bound, with the complete uncertainty set.
+     https://web.stanford.edu/~boyd/papers/pdf/rmvb.pdf
+     Rendered pages 1685-1686 inspected; derivative constraints and the
+     distinction between real and complex uncertainty sets were retained.
+[S5] Lebret and Boyd, Antenna Array Pattern Synthesis via Convex
+     Optimization, IEEE TSP 45(3), 526-532, 1997.
+     https://web.stanford.edu/~boyd/papers/ant-pat.html
+     Bibliographic identification only in this pass, not a theorem import.
+
+No external code was copied. The Bernstein control-net proof below is a
+self-contained application of the binomial theorem, not attributed to S4.
+Private retrieved source bodies are not published in this evidence file.
+Search of accessible records recovered the pendulum/reflection lineage;
+a dedicated earlier transcript explicitly named phased arrays was not
+identified. That retrieval limit is not a claim of historical absence.
+
+## 2. What can be steered without changing the problem
+
+Changing t to t0+u in PA1 is exact if c_k is first multiplied by
+exp(-it0 log k). The subsequent factor exp(-iu log k) remains. Changing
+sigma also changes k^(-sigma). A phase-only model that freezes that
+amplitude is not an off-line approximation with zero cost. Every
+polynomial amplitude in the completed zeta stack must also be transported.
+
+For a column a and readout w, D=w* a. Under an invertible change a'=Ta,
+the faithful readout is w'=(T^-1)*w, so w'*a'=w*a. For unitary T this
+preserves vector energy as well. Steering only the coefficients or only
+the readout changes D unless a separate reconstruction is proved.
+Example: (1,-1) and (1,1) have equal squared coefficient norm 2 but their
+sum-readout powers are 0 and 4. Thus phase-only element steering can
+remove a genuine null of a different function; it cannot exclude a zero
+of the fixed zeta function.
+
+A GLOBAL scalar phase in a modulus certificate is different: it only
+chooses a direction in which to prove a lower bound on the same complex
+number. The new algorithm uses this latter operation, not elementwise
+source steering.
+
+For complex columns a=a0+Eu, ||u||_2<=1, a direct support calculation is
+
+ inf Re(w* a) = Re(w* a0)-||E* w||_2,                       (PA2)
+
+when u ranges over a complex Euclidean ball. With a real uncertainty
+parameter the dual term is ||Re(E* w)||_2. An arbitrary uncertainty
+ellipsoid inferred from finite samples is not a proof that a whole
+analytic cell is contained in it. Our executable instead derives its
+whole-cell enclosure algebraically from a Taylor polynomial and its tail.
+
+## 3. New phase-separated whole-rectangle certificate
+
+Let F be the ACTUAL F(s)=(s-1)zeta(s), with F(1)=1 by analytic limit.
+Retain the unchanged completed Euler--Maclaurin stack E from
+scripts/reflected_zeta_cover.py and its disk source error epsilon_EM.
+At the exact center c of a rectangle, its complete Taylor coefficients
+are a_j, with complex interval enclosures supplied by the same evaluator.
+Its existing outer disk radius is R=1/2, Taylor degree d=24.
+
+For z=x+iy, |x|<=hx, |y|<=hy, set r=hx+hy<R. Choose 1<=b<=d and keep
+p_b(z)=sum_(j=0..b) a_j z^j. The ENTIRE discarded allowance is
+
+ epsilon = epsilon_EM + M_E (r/R)^(d+1)/(1-r/R)
+                  + sum_(j=b+1..d) U_j r^j,               (PA3)
+
+where M_E is the original whole-disk stack bound and U_j encloses |a_j|.
+All finite coefficient rounding errors stay in the coefficient intervals.
+In particular b=4 does not mean that terms 5..24 have been deleted.
+
+Write x=hx(2u-1), y=hy(2v-1), with 0<=u,v<=1. If the corresponding
+power polynomial is sum h_pq u^p v^q, its bidegree-(b,b) Bernstein
+coefficients are
+
+ B_ij = sum_(p<=i,q<=j) h_pq * binom(i,p)/binom(b,p)
+                                  * binom(j,q)/binom(b,q). (PA4)
+
+The identity follows twice from
+ u^p=sum_(i=p..b) [binom(i,p)/binom(b,p)] binom(b,i)
+                                              u^i(1-u)^(b-i).
+Indeed binom(b,i)binom(i,p)/binom(b,p)=binom(b-p,i-p), so the remaining
+sum equals u^p[u+(1-u)]^(b-p)=u^p. The Bernstein basis functions are
+nonnegative on [0,1], and their sum is one. Consequently p_b(z) belongs
+to the convex hull of the B_ij throughout the entire closed rectangle.
+Interval arithmetic may widen this hull but cannot remove true values.
+
+Choose a rational pair q=(q_re,q_im) with |q_re|+|q_im|=1. Its Euclidean
+norm is at most one. If L_ij is a lower interval bound for
+q_re Re(B_ij)+q_im Im(B_ij), then
+
+ m = min_(i,j) L_ij - epsilon > 0                         (PA5)
+
+implies Re(conj(q)F(c+z))>=m throughout the closed rectangle and hence
+|F(c+z)|>=m>0. The proof subtracts at most |q| epsilon<=epsilon from the
+projected polynomial bound. A convex combination cannot fall below its
+smallest projected control point. This is a whole-region certificate,
+not a test at vertices of F or at sampled look directions.
+
+The direction is proposed from the midpoint of a0 and normalized in L1.
+It can be chosen differently, but the verifier checks its exact norm
+and recomputes PA3-5. Direction search can fail to certify a nonvanishing
+cell; failure is not a zero theorem. A nonvanishing image that winds
+around zero may have no global separating half-plane, so subdivision
+and the existing one-zero Rouche mechanism remain necessary.
+
+Strict improvement is possible even for p(z)=1+20z on
+|Re z|<=1/100, |Im z|<=1/10: Re p>=4/5, although the older whole-disk
+triangle allowance 1-20(11/100) is negative. This example is a test of
+the certificate rule, not a zeta-source identity.
+
+## 4. Actual finite application and unchanged reflection
+
+The inherited cover is the closed domain 1/2<=Re s<=1, 0<=Im s<=32.
+It had 236 cells: 227 zero-free, nine contained in four one-zero disks.
+The new pass merges only root-free portions of its complete binary tree.
+Every final leaf is replayed from the actual analytic evaluator.
+
+With degree b=4, the output has 176 cells: 46 phase-separated rectangles,
+121 old-rule triangle rectangles, and the same nine root-disk cells.
+All 46 new phase rectangles fail the old triangle rule at their own
+centers and radii. Thus this is not simply re-labeling already successful
+cells. There are 60 fewer leaves (15/59 of the old count, about 25.4%).
+This is a finite representation improvement, not a universal speedup.
+
+For example the actual rectangle
+ 1/2<=Re s<=3/4, 55/4<=Im s<=14
+has old triangle margin <0 but PA5 margin >=1/2. The exact rational
+comparison for every new rectangle is saved in a separate diagnostic.
+
+The exact normalizer remains
+ xi(s)=Gamma(1+s/2) pi^(-s/2) F(s).
+It is nonzero in the domains used. Same-height reflection
+s->1-conj(s) preserves xi zeros and their multiplicities; it does NOT
+preserve F modulus. The four line-centered one-zero disks still use
+the original linear Rouche bound. Uniqueness plus reflection puts their
+zeros on the critical line exactly, without numerical projection.
+Conjugation supplies negative heights. The finite full-strip conclusion
+is unchanged: eight simple zeros in 0<=Re s<=1, |Im s|<=32, all on the
+line. This is known low-height behavior, not a new height record.
+No all-height, shrinking-collar, or general termination claim follows.
+
+## 5. Coherence, aliases, and conditioning for the arithmetic arrays
+
+For PA1 define a_k=c_k k^(-sigma). Exact integration gives, for T>0,
+
+ (2T)^-1 integral_(-T)^T |D_sigma(t)|^2 dt
+ =sum_(m,n) a_m conj(a_n) sinc(T log(n/m)),                 (PA6)
+
+where sinc(0)=1. Signs can be placed consistently on the conjugated
+factor since the Gram is real symmetric. This is a genuine finite Gram
+identity; its off-diagonal terms are NOT removed by assigning separate
+labels to array elements. A finite spectral-frequency average is also
+not the original physical-time H_(1/3) energy without its exact adapter.
+
+The two-mode normalized Gram for frequencies 0 and epsilon has eigenvalues
+1+/-sinc(T epsilon). In particular
+
+ lambda_min <= 1-sinc(T epsilon) <= T^2 epsilon^2/6.        (PA7)
+
+The last inequality follows by integrating 1-cos(epsilon t)<=epsilon^2
+t^2/2. The first inequality allows sinc to be negative. For adjacent
+arithmetic modes epsilon=log(1+1/n)<=1/n, lambda_min<=T^2/(6n^2).
+Thus a fixed observation aperture does not give a uniform stable inverse
+for arbitrary increasingly close log frequencies. A source-specific
+restricted estimate could still avoid this worst-case cost; none is
+assumed. An observed finite matrix rank is not a uniform frame bound.
+
+Multiplicative characters retain exact dependencies:
+ exp(-it log(ab))=exp(-it log a)exp(-it log b).
+On support {2^j}, the entire phase vector has period 2pi/log2. Adding 3
+removes this exact common period but does not provide a quantitative
+small-divisor estimate or independent random phases. The actual phase
+trajectory of composite modes lies on the subtorus specified by prime
+factorization. This is the relevant alias/coherence constraint for FK
+and almost-Mathieu comparisons, not a freely chosen uniform array grid.
+
+If beam transforms satisfy sum_j B_j* B_j=I on a finite source space,
+then sum_j ||B_j a||^2=||a||^2: the complete energy is preserved, not
+reduced. A discarded beam has a residual cost. A lower frame bound is
+needed for reconstruction when the transform is not an isometry.
+
+## 6. Calibration, tapering, and coupled residuals
+
+For real phase errors delta_k and any common phase alpha,
+
+ |sum c_k exp(i(theta_k+delta_k))
+       -exp(i alpha)sum c_k exp(i theta_k)|
+ <=sum |c_k| |delta_k-alpha|.                             (PA8)
+
+The proof uses |exp(iu)-1|<=|u|. Common phase is harmless for modulus;
+differential phase is charged with the actual amplitudes. Repeating an
+operation charges every occurrence, and a growing arithmetic readout
+can amplify a small phase error. There is no automatic large-n gain.
+
+A taper tau_k gives D=D_tau+D_(1-tau), so
+ |D|^2=|D_tau|^2+2Re(D_tau conj(D_(1-tau)))+|D_(1-tau)|^2.  (PA9)
+
+Antenna design may choose tau to create a new pattern. Our source cannot
+be replaced in this way without proving that the complete complementary
+terms have the required bound. The already paid prefix and Bessel tails
+are legitimate such comparisons; no new bound on the remaining Mobius
+bilinear sequence follows from a desirable tapered plot.
+
+Similarly, if a coupling operator is replaced by C0 with ||C-C0||<=e,
+then |w*(C-C0)a|<=||w||e||a||. Diagonal loading of a Gram is an actual
+operator change. For invertible positive G,
+ G^-1-(G+lambda I)^-1=lambda G^-1(G+lambda I)^-1.
+Dropping this correction cannot turn a collapsing mode into a paid one.
+The retained-center, Schur, Newton, and FK rules follow this same
+principle: keep the observable and every residual of its transformation.
+
+## 7. Application ledger and the remaining obligations
+
+The companion ledger assigns twelve current argument families a source,
+an application, and an exact remaining premise. This records a bounded
+saturation pass, not blanket theorem acceptance or account-wide recall.
+
+The two principal open alternatives are unchanged:
+(A) Produce actual zero-exclusion certificates for every finite height
+    and every positive distance from the critical line, with a proved
+    source-specific generation/coverage argument.
+(B) Bound uniformly in N the complete sum
+ sum_(n=2..N)(4n+7/3)|ell_n|^2,
+ where ell_n is the exact signed bilinear middle coefficient at
+ U_n=ceil(n^(3/5)) from the prior written Newton/Bessel reduction.
+
+In (B), the previously written ||d+ell||_(ell2(w))<1936 comparison stays
+unchanged. Phase rotations do not improve that norm. In (A), local positive
+margins need not share a single global lower bound, but every claimed
+region and analytic remainder must actually be covered. The new PA5
+predicate improves finite feasibility, not the all-domain existence proof.
+
+Verification: general analytic deductions above are written proofs.
+The executable uses integers/Fraction and outward interval arithmetic;
+no floating-point analytic library, sampled-only certificate, or changed
+zeta source is used. Native Lean/Lake, owned-declaration admission, and
+full-repository structural checks are NOT_RUN. Existing canonical guides,
+compiler pins, old certificates, and historical receipts remain unchanged.

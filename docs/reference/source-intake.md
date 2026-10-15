@@ -1,12 +1,14 @@
 # Mathematical source candidates
 
-These 63 Lean source candidates are organized by mathematical subject and object. Exact inherited copies are coalesced; all original source and evidence variants are retained. The project umbrella and existing native-verification profiles are unchanged. These candidates have not been elaborated, axiom-audited or admitted as checked mathematics.
+The original 63 Lean source candidates are organized by mathematical subject and object. Exact inherited copies are coalesced; all original source and evidence variants are retained. The project umbrella and existing native-verification profiles are unchanged. These candidates have not been elaborated, axiom-audited or admitted as checked mathematics.
 
 Only module import references changed when paths moved. Statements, hypotheses, proof text, compatibility declaration names, attribution and source comments remain unchanged. This textual comparison is not a Lean preservation receipt.
 
 The supplied materials target Lean 4.33.0 and Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`. Their compiler reports do not establish successful verification. Definitions of goals and certificate assumptions remain obligations; they are not supplied proofs of arithmetic energy bounds, Type-II estimates, analytic continuation or RH.
 
-## Source inventory
+Five additional taxonomy and classification candidates bring the current intake to 68 sources. Their logical code is unchanged from the supplied reference bundle; license/status comments and the evidence-reference path were updated. Native compilation and axiom auditing remain unrun.
+
+## Original source inventory
 
 | Subject / object | Source | Rights | Native status |
 |---|---|---|---|
@@ -73,6 +75,31 @@ The supplied materials target Lean 4.33.0 and Mathlib `db584cd6d46c92f209a44c0f1
 | NumberTheory/Zeta | [GreenMellinContinuation](../../GRWTSK/NumberTheory/Zeta/GreenMellinContinuation.lean) | MIT notice retained | Not run |
 | NumberTheory/Zeta | [LogDerivativeZeroExclusion](../../GRWTSK/NumberTheory/Zeta/LogDerivativeZeroExclusion.lean) | MIT notice retained | Not run |
 | NumberTheory/Zeta | [PoleRemovedSource](../../GRWTSK/NumberTheory/Zeta/PoleRemovedSource.lean) | MIT notice retained | Not run |
+
+## Taxonomy and classification extension
+
+| Subject / object | Source | Native status |
+|---|---|---|
+| Order/Taxonomy | [Address](../../GRWTSK/Order/Taxonomy/Address.lean) | Not run |
+| Order/Taxonomy | [Core](../../GRWTSK/Order/Taxonomy/Core.lean) | Not run |
+| Logic/Classification | [Catalogue](../../GRWTSK/Logic/Classification/Catalogue.lean) | Not run |
+| Logic/Classification | [Types](../../GRWTSK/Logic/Classification/Types.lean) | Not run |
+| Logic/Classification | [Provenance](../../GRWTSK/Logic/Classification/Provenance.lean) | Not run |
+
+The taxonomy represents ancestry by finite natural-number paths while retaining external notation as text. Classification, actual typed values and justified bindings remain separate. The example taxonomy is illustrative, not the PMD catalogue or an official Dewey schedule.
+
+The importer and source-bound assignment exporter are executable Python tools:
+
+```sh
+python3 -B scripts/taxonomy.py examples/taxonomy.json --output /tmp/taxonomy-output
+python3 -B scripts/taxonomy_handoff.py TAXONOMY.json ASSIGNMENTS.json --out HANDOFF.json
+python3 -B -m unittest discover -s tests -p 'test_taxonomy*.py' -v
+python3 -O -B -m unittest discover -s tests -p 'test_taxonomy*.py' -v
+```
+
+Output destinations must be new. Assignments use the closed `math-taxonomy-assignments/v1` format: taxonomy identity/revision and rows containing an immutable 64-hex audit `record_id`, primary node, secondary nodes, `PROPOSED` or `REVIEWED` editorial state, and rationale. `scripts/taxonomy_handoff.py` produces `math-taxonomy-handoff/v1` with exact input digests, normalized paths and unchanged notation. It neither extracts Lean declarations nor certifies proofs, source authenticity or access rights.
+
+Consumers must establish current permitted source projections before indexing or ranking and retain unresolved fields as unresolved. A matching classification is not a proof of theorem applicability. [The source-bound integration receipt](../../evidence/taxonomy-integration-v1.json) records the Python runs and explicit native/full-repository checks not run. The five candidate modules are deliberately absent from the public `GRWTSK.lean` import closure until native admission.
 
 ## Written mathematical material
 

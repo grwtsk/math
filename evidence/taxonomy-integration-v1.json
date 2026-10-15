@@ -1,0 +1,158 @@
+{
+  "schema": "taxonomy-integration-evidence/v1",
+  "date": "2026-10-14",
+  "repository": "grwtsk/math",
+  "base_commit": "f78dbb136fb62e44b41480bc781851856a76a0f9",
+  "scope": "Selected staged files, Python tests and finite synthetic fixtures only; no full checkout or native admission.",
+  "python": "3.13.5",
+  "source_bindings": [
+    {
+      "path": "GRWTSK/Logic/Classification/Catalogue.lean",
+      "sha256": "f9ff182c00c1f337f984fe925fe52b1fd226bbb925eb52e2fa2c546f481db7a9",
+      "bytes": 2740,
+      "git_blob_sha1": "0c6d361ce1456c42ee52dd800971323e99b34b44"
+    },
+    {
+      "path": "GRWTSK/Logic/Classification/Provenance.lean",
+      "sha256": "b2720293dfce970de023adf3508ab915210dae37a02359d2b62c82c5a2813028",
+      "bytes": 2828,
+      "git_blob_sha1": "60cee3203188b5f1e15450fb7bfcdb4d40e290fd"
+    },
+    {
+      "path": "GRWTSK/Logic/Classification/Types.lean",
+      "sha256": "3024e899ffee5956c713f8931780ef87e4c2c010d87bf8c291588e01e447f203",
+      "bytes": 4876,
+      "git_blob_sha1": "2d738b3b089ad7d7d210aca164c0943b4d3f6802"
+    },
+    {
+      "path": "GRWTSK/Order/Taxonomy/Address.lean",
+      "sha256": "aae54480d327193e1d68676baa351623373861257fed59accf0ad328a8c2ad2b",
+      "bytes": 5724,
+      "git_blob_sha1": "e3179269eb3bc58b9142c5c2540c3f8feba225cb"
+    },
+    {
+      "path": "GRWTSK/Order/Taxonomy/Core.lean",
+      "sha256": "2de1811f8f126307216df30e5e3578b117acd305ca3039725f18f8bcce696497",
+      "bytes": 5322,
+      "git_blob_sha1": "15a2ee1d5bcf54a901b55eacfaa360798ff4ca3c"
+    },
+    {
+      "path": "docs/index.md",
+      "sha256": "a93c131b5e67b143bea2258bad6dc2b1c539dd1578ea7564053984669429fe41",
+      "bytes": 2914,
+      "git_blob_sha1": "b94e029e0993a7b4c42253c6b0124e068e20d9ce"
+    },
+    {
+      "path": "docs/mathematics/Logic/index.md",
+      "sha256": "893e63597953f5776949a60ef3c312155420c307e2e7f4f41a11806d5f8604a4",
+      "bytes": 1137,
+      "git_blob_sha1": "cc71ffac5563e7a5173a3936ed7c4912240960e0"
+    },
+    {
+      "path": "docs/mathematics/Order/index.md",
+      "sha256": "4e1cee58e981c20d4593bc7b9c544cc03405e04a8167886a21997e44beab1a52",
+      "bytes": 905,
+      "git_blob_sha1": "2e9cdfdc7f634323825840d91c8248b65c7d4658"
+    },
+    {
+      "path": "docs/reference/library-summary.json",
+      "sha256": "b1fcf5a3d4b13bae8c927611a4c46d8ed26376bbcf0584a45fcd909403bf6a69",
+      "bytes": 47684,
+      "git_blob_sha1": "1f360d7dcb6dec892b716d56dd15b1aa2e3acae7"
+    },
+    {
+      "path": "docs/reference/source-intake.md",
+      "sha256": "7e124e420b7805a18cd1b1cfa699f4881dd154abd199570c0d349a757c0e2a61",
+      "bytes": 15704,
+      "git_blob_sha1": "46b4b0e8d2ffb9da5dd3d661b54d55186f948aa1"
+    },
+    {
+      "path": "evidence/source-intake.json",
+      "sha256": "ef9f4145cfe681bc5553cf59c8f389d4d0c58fcca7d784cca9399f08fba803c3",
+      "bytes": 77783,
+      "git_blob_sha1": "5768dd6443326f9137958546065006ddbe451d7b"
+    },
+    {
+      "path": "examples/source-bindings.json",
+      "sha256": "5cae3e6516beb7267d4ece950e9e670fb21fbb69aa572b1f21e3a95544dd1cc8",
+      "bytes": 2279,
+      "git_blob_sha1": "92435696f930c5d3b1d3626f89e4c117cfb993b6"
+    },
+    {
+      "path": "examples/taxonomy.json",
+      "sha256": "83cd0386a1596109bbdb80967d9b7faf21686b8dc178f0114604f7a503147a4f",
+      "bytes": 1129,
+      "git_blob_sha1": "2a4e658e7a979b9b0267e4c0beaf8b23e25f3347"
+    },
+    {
+      "path": "scripts/taxonomy.py",
+      "sha256": "28e460c182c4e13650a932fe9b611593754685f925938d5afd41de005ed1db77",
+      "bytes": 22308,
+      "git_blob_sha1": "77bf0ff1892e4969c629d580e55d2a5b16273572"
+    },
+    {
+      "path": "scripts/taxonomy_handoff.py",
+      "sha256": "ab326dfef43a90048847023d5105fe51ff3cd28f1b02d51dd7dba839f35a428d",
+      "bytes": 4961,
+      "git_blob_sha1": "8da89a30b1ae865f49759edd4765ae6f61d76200"
+    },
+    {
+      "path": "tests/test_taxonomy.py",
+      "sha256": "7b6280a785b4716b8afa42ae2140808ec3c9468b3a94b7f23d27629cee8939ac",
+      "bytes": 11169,
+      "git_blob_sha1": "0782b1e96593d6ebde92271b6800187a42635bba"
+    },
+    {
+      "path": "tests/test_taxonomy_handoff.py",
+      "sha256": "2ffec7e7d4e8222705f11c3c9fbb122a8de85204d4d4c77ae2eb176f3e53f2b9",
+      "bytes": 2573,
+      "git_blob_sha1": "751c21df9d081314edfeab7d0f4663b1c98b421d"
+    }
+  ],
+  "runs": [
+    {
+      "command": "python3 -B -m unittest discover -s tests -v",
+      "cwd": "math",
+      "test_methods": 50,
+      "exit_code": 0,
+      "log_sha256": "aa56e3a7ebe8f98d0ee9e67da1442688db8b75f367561a4cfb8e88a4e44fbb8a",
+      "tail": [
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 50 tests in 0.184s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "command": "python3 -O -B -m unittest discover -s tests -v",
+      "cwd": "math",
+      "test_methods": 50,
+      "exit_code": 0,
+      "log_sha256": "aa56e3a7ebe8f98d0ee9e67da1442688db8b75f367561a4cfb8e88a4e44fbb8a",
+      "tail": [
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 50 tests in 0.184s",
+        "",
+        "OK"
+      ]
+    }
+  ],
+  "native_lean_replay": "NOT_RUN: Lean and Lake executables unavailable",
+  "owned_declaration_axiom_audit": "NOT_RUN",
+  "native_rust_replay": "NOT_RUN: Cargo unavailable",
+  "full_repository_layout_checks": "NOT_RUN: no full checkout",
+  "full_repository_documentation_checks": "NOT_RUN: no full checkout and pinned host Git unavailable",
+  "full_corpus_indexing": "NOT_RUN",
+  "authorization_and_durable_admission": "NOT_IMPLEMENTED_BY_THIS_PROFILE",
+  "remote_write_method": "Atomic Git tree/commit followed by non-force main ref update with expected head; no branch publication status inferred by this receipt.",
+  "remote_readback": "Git object identity comparison is recorded in the delivery response after commit; not claimed by this pre-commit receipt.",
+  "input_bundle_sha256": "7367ed8e379a4e6da5e0674ed6195b21fd6e7b8da1508a0d7176d9ee656916a5",
+  "candidate_lean_modules": 5,
+  "previous_intake_records_unchanged": 63,
+  "candidate_intake_total": 68,
+  "navigation_source_paths": 609,
+  "navigation_method": "Original summary, intake and touched pages reconstructed from GitHub reads and verified against their exact original Git blobs; only new candidate counts, source paths and intake hash changed in navigation. This is not a full documentation-checker run.",
+  "unchanged": "Existing umbrella, toolchain, Lake configuration, active theorem source, all original source-intake entries and historical receipts."
+}

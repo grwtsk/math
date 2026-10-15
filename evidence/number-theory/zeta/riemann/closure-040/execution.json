@@ -1,0 +1,95 @@
+{
+  "schema": "grl-rh-observed-execution-v1",
+  "observations": [
+    {
+      "command": [
+        "lean",
+        "--version"
+      ],
+      "returncode": null,
+      "stdout": "",
+      "stderr": "[Errno 2] No such file or directory: 'lean'",
+      "state": "BLOCKED_OPERATION",
+      "reason": "executable not found",
+      "started_utc": "2026-10-15T06:57:19.145883+00:00",
+      "finished_utc": "2026-10-15T06:57:19.146560+00:00"
+    },
+    {
+      "command": [
+        "lake",
+        "--version"
+      ],
+      "returncode": null,
+      "stdout": "",
+      "stderr": "[Errno 2] No such file or directory: 'lake'",
+      "state": "BLOCKED_OPERATION",
+      "reason": "executable not found",
+      "started_utc": "2026-10-15T06:57:19.146567+00:00",
+      "finished_utc": "2026-10-15T06:57:19.146858+00:00"
+    },
+    {
+      "command": [
+        "elan",
+        "--version"
+      ],
+      "returncode": null,
+      "stdout": "",
+      "stderr": "[Errno 2] No such file or directory: 'elan'",
+      "state": "BLOCKED_OPERATION",
+      "reason": "executable not found",
+      "started_utc": "2026-10-15T06:57:19.146864+00:00",
+      "finished_utc": "2026-10-15T06:57:19.147103+00:00"
+    },
+    {
+      "command": [
+        "git",
+        "ls-remote",
+        "https://github.com/grwtsk/math.git",
+        "HEAD"
+      ],
+      "returncode": 128,
+      "stdout": "",
+      "stderr": "fatal: unable to access 'https://github.com/grwtsk/math.git/': Could not resolve host: github.com\n",
+      "state": "BLOCKED_OPERATION",
+      "started_utc": "2026-10-15T06:57:19.147108+00:00",
+      "finished_utc": "2026-10-15T06:57:19.159357+00:00"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "evidence/algebra/polynomial/quartic/verify_trace_witness.py",
+        "--output",
+        "evidence/algebra/polynomial/quartic/trace-witness-exact-checks.json"
+      ],
+      "state": "COMPLETED",
+      "returncode": 0,
+      "stdout": "{\n  \"schema\": \"quartic-trace-exact-checks-v1\",\n  \"outcome\": \"EXACT_ALGEBRA_CHECKS_PASSED\",\n  \"total_checks\": 159,\n  \"python\": \"3.13.5\",\n  \"sympy\": \"1.14.0\",\n  \"script_sha256\": \"074f7e4910b7bcee9b2bcbf2a1da17fe7e12c82894fd606c0b338d5b5cddf43d\",\n  \"native_lean\": \"NOT_RUN\",\n  \"axiom_audit\": \"NOT_RUN\",\n  \"rh_proof\": false,\n  \"independent_review\": false,\n  \"scope\": \"Polynomial identities, exact rational evaluations, and listed counterfixtures only; no arithmetic source positivity or all-height supplier.\"\n}\n",
+      "stderr": "",
+      "started_utc": "2026-10-15T06:57:19.159378+00:00",
+      "finished_utc": "2026-10-15T06:57:20.842422+00:00"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "-O",
+        "evidence/algebra/polynomial/quartic/verify_trace_witness.py",
+        "--output",
+        "evidence/algebra/polynomial/quartic/trace-witness-exact-checks-optimized.json"
+      ],
+      "state": "COMPLETED",
+      "returncode": 0,
+      "stdout": "{\n  \"schema\": \"quartic-trace-exact-checks-v1\",\n  \"outcome\": \"EXACT_ALGEBRA_CHECKS_PASSED\",\n  \"total_checks\": 159,\n  \"python\": \"3.13.5\",\n  \"sympy\": \"1.14.0\",\n  \"script_sha256\": \"074f7e4910b7bcee9b2bcbf2a1da17fe7e12c82894fd606c0b338d5b5cddf43d\",\n  \"native_lean\": \"NOT_RUN\",\n  \"axiom_audit\": \"NOT_RUN\",\n  \"rh_proof\": false,\n  \"independent_review\": false,\n  \"scope\": \"Polynomial identities, exact rational evaluations, and listed counterfixtures only; no arithmetic source positivity or all-height supplier.\"\n}\n",
+      "stderr": "",
+      "started_utc": "2026-10-15T06:57:20.842452+00:00",
+      "finished_utc": "2026-10-15T06:57:24.806278+00:00"
+    }
+  ],
+  "native_compilation": "NOT_RUN",
+  "native_rejection": false,
+  "root_proof_checked": false,
+  "independent_review": false,
+  "outcome": "OPEN_FRONTIER",
+  "scope": "one bounded manually orchestrated mathematical cycle; not a deployed autonomous prover"
+}

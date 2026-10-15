@@ -1,0 +1,79 @@
+{
+  "accepted_native_edges": [],
+  "candidate_expected_contracts": [
+    {
+      "elaborated_type": null,
+      "name": "GRWTSK.Analysis.Fourier.GaussianCompactification.shifted_gaussian_integral",
+      "source": "evidence/analysis/fourier/gaussian-compactification-20261015/candidates/ShiftedGaussian.lean.txt",
+      "source_level_statement": "theorem shifted_gaussian_integral (L t x : \u211d) (hL : 0 < L) :\n    (\u222b u : \u211d, Complex.exp (-(L : \u2102) * ((u : \u2102) - (t : \u2102)) ^ 2 -\n      Complex.I * (x : \u2102) * (u : \u2102))) =\n    ((Real.pi : \u2102) / (L : \u2102)) ^ (1 / 2 : \u2102) *\n      Complex.exp (-(x : \u2102) ^ 2 / (4 * (L : \u2102)) -\n        Complex.I * (t : \u2102) * (x : \u2102))",
+      "status": "UNCOMPILED_CANDIDATE"
+    },
+    {
+      "elaborated_type": null,
+      "name": "GRWTSK.Analysis.Complex.WeightedSquareBudget.square_difference",
+      "source": "evidence/analysis/fourier/gaussian-compactification-20261015/candidates/WeightedSquareBudget.lean.txt",
+      "source_level_statement": "theorem square_difference (z w : \u2102) :\n    \u2016z ^ 2 - w ^ 2\u2016 \u2264 \u2016z - w\u2016 * (2 * \u2016w\u2016 + \u2016z - w\u2016)",
+      "status": "UNCOMPILED_CANDIDATE"
+    },
+    {
+      "elaborated_type": null,
+      "name": "GRWTSK.Analysis.Complex.WeightedSquareBudget.weighted_square_difference",
+      "source": "evidence/analysis/fourier/gaussian-compactification-20261015/candidates/WeightedSquareBudget.lean.txt",
+      "source_level_statement": "theorem weighted_square_difference (z w : \u2102) (q B \u03b4 : \u211d)\n    (hq : 1 \u2264 q) (hB : 0 \u2264 B) (h\u03b4 : 0 \u2264 \u03b4)\n    (hw : \u2016w\u2016 \u2264 B) (hd : q * \u2016z - w\u2016 \u2264 \u03b4) :\n    q * \u2016z ^ 2 - w ^ 2\u2016 \u2264 \u03b4 * (2 * B + \u03b4)",
+      "status": "UNCOMPILED_CANDIDATE"
+    },
+    {
+      "elaborated_type": null,
+      "name": "GRWTSK.Analysis.Complex.WeightedSquareBudget.finite_trace_budget",
+      "source": "evidence/analysis/fourier/gaussian-compactification-20261015/candidates/WeightedSquareBudget.lean.txt",
+      "source_level_statement": "theorem finite_trace_budget {\u03b9 : Type*} (S : Finset \u03b9)\n    (m q : \u03b9 \u2192 \u211d) (f g : \u03b9 \u2192 \u2102) (B \u03b4 : \u211d)\n    (hB : 0 \u2264 B) (h\u03b4 : 0 \u2264 \u03b4)\n    (hm : \u2200 i \u2208 S, 0 \u2264 m i) (hq : \u2200 i \u2208 S, 1 \u2264 q i)\n    (hg : \u2200 i \u2208 S, \u2016g i\u2016 \u2264 B)\n    (hd : \u2200 i \u2208 S, q i * \u2016f i - g i\u2016 \u2264 \u03b4) :\n    \u2016\u2211 i \u2208 S, (m i : \u2102) * (f i ^ 2 - g i ^ 2)\u2016 \u2264\n      \u03b4 * (2 * B + \u03b4) * \u2211 i \u2208 S, m i / q i",
+      "status": "UNCOMPILED_CANDIDATE"
+    },
+    {
+      "elaborated_type": null,
+      "name": "GRWTSK.Analysis.Complex.WeightedSquareBudget.negative_of_two_errors",
+      "source": "evidence/analysis/fourier/gaussian-compactification-20261015/candidates/WeightedSquareBudget.lean.txt",
+      "source_level_statement": "theorem negative_of_two_errors (W M tail cut : \u211d) (hM : 0 < M)\n    (hW : W \u2264 -M + tail + cut) (ht : tail \u2264 M / 4) (hc : cut \u2264 M / 4) :\n    W \u2264 -M / 2 \u2227 W < 0",
+      "status": "UNCOMPILED_CANDIDATE"
+    }
+  ],
+  "formal_admission": {
+    "missing": [
+      "Lean/Lake/elan",
+      "full selected native dependency closure",
+      "owned/transitive axiom audit",
+      "native expected-type comparison"
+    ],
+    "state": "BLOCKED_OPERATION"
+  },
+  "mathematical_frontier": [
+    {
+      "id": "Q3-COMPACT-SOURCE-SIGN",
+      "state": "OPEN_FRONTIER",
+      "task": "Prove nonnegativity of the exact Suzuki/Weil functional for the selected compact tests from independent arithmetic relations, not RH-equivalent positivity as an assumed field."
+    },
+    {
+      "id": "Q4-NATIVE-ANALYTIC-JOIN",
+      "state": "OPEN_FRONTIER",
+      "task": "Formalize compact zero finiteness, analytic multiplicities/counting, Gaussian inverse and cutoff estimates, summed signed trace and the exact W=-g second-derivative/Suzuki pairing. These continuum arguments are written/cited, not native."
+    }
+  ],
+  "new_native_admissions": 0,
+  "outcome": "OPEN_FRONTIER",
+  "quantifier_order": "Fix actual pair, complete finite near-window divisor and polynomial P; then C,K,M; choose L; then choose R. No uniform source-independent coefficient bound.",
+  "root": "_root_.RiemannHypothesis",
+  "root_redefined": false,
+  "schema": "gaussian-compactification-frontier-v1",
+  "source_producer": {
+    "count_C_32": "not claimed for zeta",
+    "examples": "synthetic infinite spectra; finite exact cost computations",
+    "zeta_test_or_zero_evaluated": false
+  },
+  "unchanged_alternatives": [
+    "P04",
+    "all-height exclusion atlas",
+    "retained-mean subpower growth",
+    "Hankel-source growth"
+  ],
+  "written_target": "Every fixed real polynomial Gaussian pair isolator can be truncated to a compactly supported smooth Weil test with total spectral perturbation <=27*C*delta*(2*B+delta); combine with full tail <=M/4 to keep negative mass <=-M/2."
+}
