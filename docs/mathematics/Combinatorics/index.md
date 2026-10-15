@@ -4,22 +4,22 @@
 
 | Inventory | Count |
 |---|---:|
-| Object guides | 15 |
+| Object guides | 16 |
 | Documented object groups | 2 |
-| Distinct primary sources linked | 14 |
-| Lean source modules | 47 |
+| Distinct primary sources linked | 15 |
+| Lean source modules | 50 |
 | Archive intake records | 0 |
 | Selected catalog families | 1 |
 
 These counts measure documentation and source coverage. They do not count accepted theorems or establish that every source module is documented or checked. [Definitions and limits](../../reference/library-pages.md#count-definitions).
 
-692 source declaration commands, including 426 theorem/lemma commands, across 47 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+772 source declaration commands, including 470 theorem/lemma commands, across 50 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
 ## DirectedGraph
 
-13 object guides · 13 distinct linked primary source files.
+14 object guides · 14 distinct linked primary source files.
 
-Linked primary-source scope: 333 source declaration commands, including 222 theorem/lemma commands, across 13 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+Linked primary-source scope: 361 source declaration commands, including 243 theorem/lemma commands, across 14 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
 - [A finite inventory of complete history prefixes](DirectedGraph/prefix-inventory.md).
 - [Certified revision of rooted trace dictionaries](DirectedGraph/rooted-trace-revision.md).
@@ -29,6 +29,7 @@ Linked primary-source scope: 333 source declaration commands, including 222 theo
 - [Ordered occurrences of directed paths](DirectedGraph/path-occurrences.md).
 - [Parent dictionaries for complete rooted path traces](DirectedGraph/parent-trace-dictionary.md).
 - [Reindexing finite relation tables and rooted histories](DirectedGraph/role-relation-reindex.md).
+- [Reindexing stored prefix-table states](DirectedGraph/prefix-table-reindex.md).
 - [Role-qualified finite relation tables and typed histories](DirectedGraph/role-relation-table.md).
 - [Stable incremental tables of rooted history prefixes](DirectedGraph/incremental-prefix-table.md).
 - [Stable updates of stored rooted prefix tables](DirectedGraph/prefix-table-state.md).

@@ -1,0 +1,10 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "gaussian-coupled-separation-formal",
+  "event": "dev-lock-acquired",
+  "at": "2026-10-15T23:39:20.097026+00:00",
+  "owner": "cache_adapter",
+  "attempt": ".local/gaussian-coupled-separation/f26de62e07d647c6b4f9242afbd6ee01/attempts/Negative-attempt07",
+  "source_sha256": "8e406b4ca04e11c62bef70fe2de448a17f9df3d1c4cdb7cee7edbd2a335d15d2",
+  "competing_jobs": []
+}

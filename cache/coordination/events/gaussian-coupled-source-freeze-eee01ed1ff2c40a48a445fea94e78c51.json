@@ -1,0 +1,19 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "gaussian-coupled-separation-formal",
+  "event": "complete-source-freeze-pending-owned-census",
+  "at": "2026-10-15T23:39:51.729734+00:00",
+  "owner": "cache_adapter",
+  "source_hashes": {
+    "GRWTSK/Analysis/Calculus/CompactCutoff.lean": "c6ff2d2f5346607bb62c7234a4bfe35a0e308cc427fa8c9c26ac6b06b7838172",
+    "GRWTSK/Analysis/MellinTransform/GaussianCoupledSeparation.lean": "904f3991a65106ee9c0a93f575ba536eec2645d64cff7ff3d9a16de8f389e6fc",
+    "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianCoupledSeparation.lean": "77a69b9e75bcf5d59a8cff75786b2ca900d9d14e79aad0ccc939a182980baff4",
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianCoupledMissingActive.lean": "2ffc3c2f2e3e173703e599c0907e6fac798142dfcf5556f4b69eae29ab3b38f8"
+  },
+  "negative_expected_substring": "∏ i, 1 ≠ 0",
+  "positive_extra_local_imports": [],
+  "scratch": ".local/gaussian-coupled-separation/f26de62e07d647c6b4f9242afbd6ee01",
+  "native_jobs_running": 0,
+  "upstream_identity": "openai/math@1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "native_admission": "PENDING_ROOT_SEPARATE_FRESH_REPLAY"
+}

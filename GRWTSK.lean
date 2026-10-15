@@ -384,3 +384,6 @@ import GRWTSK.Analysis.MellinTransform.GaussianLogFlow
 import GRWTSK.Analysis.MellinTransform.GaussianLogWindow
 import GRWTSK.Combinatorics.DirectedGraph.RoleRelationReindex
 import GRWTSK.Analysis.MellinTransform.GaussianDensityMoments
+import GRWTSK.Combinatorics.DirectedGraph.PrefixTableReindex
+import GRWTSK.Analysis.Calculus.CompactCutoff
+import GRWTSK.Analysis.MellinTransform.GaussianCoupledSeparation

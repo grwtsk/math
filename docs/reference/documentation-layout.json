@@ -3679,10 +3679,37 @@
       "source_sha256": "7bdf9b9141eaf1a5cdfb043265211dc067508f91edcc27c935d1c5c118f30f1b",
       "status": "fresh-selected",
       "evidence": "evidence/Analysis/MellinTransform/gaussian-density-moments-checks-2026-10-15.json"
+    },
+    "docs/mathematics/Combinatorics/DirectedGraph/prefix-table-reindex.md": {
+      "title": "Reindexing stored prefix-table states",
+      "subject": "Combinatorics",
+      "object": "DirectedGraph",
+      "primary_source": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableReindex.lean",
+      "source_sha256": "83fc343c02d16384124ce39ed4b3f996f7a7000ee4dbba05d2015b153a9aa53c",
+      "status": "fresh-selected",
+      "evidence": "evidence/Combinatorics/DirectedGraph/prefix-table-reindex-checks-2026-10-15.json"
+    },
+    "docs/mathematics/Analysis/Calculus/compact-cutoff.md": {
+      "title": "Compact smooth Schwartz cutoffs on a real interval",
+      "subject": "Analysis",
+      "object": "Calculus",
+      "primary_source": "GRWTSK/Analysis/Calculus/CompactCutoff.lean",
+      "source_sha256": "c6ff2d2f5346607bb62c7234a4bfe35a0e308cc427fa8c9c26ac6b06b7838172",
+      "status": "fresh-selected",
+      "evidence": "evidence/Analysis/MellinTransform/gaussian-coupled-separation-checks-2026-10-15.json"
+    },
+    "docs/mathematics/Analysis/MellinTransform/gaussian-coupled-separation.md": {
+      "title": "Coupled Gaussian separation for finite window families",
+      "subject": "Analysis",
+      "object": "MellinTransform",
+      "primary_source": "GRWTSK/Analysis/MellinTransform/GaussianCoupledSeparation.lean",
+      "source_sha256": "904f3991a65106ee9c0a93f575ba536eec2645d64cff7ff3d9a16de8f389e6fc",
+      "status": "fresh-selected",
+      "evidence": "evidence/Analysis/MellinTransform/gaussian-coupled-separation-checks-2026-10-15.json"
     }
   },
   "object_binding_registry": "docs/reference/object-source-bindings.json",
-  "object_binding_registry_sha256": "2da18fc1ac162fa521387e654f8e9e4810c9f65df9073dd874c609eaea38fb79",
+  "object_binding_registry_sha256": "5f0448aa1b49394c90ad3badad704745ed8897a5b2b9c80be9398c60d0567931",
   "navigation": {
     "schema": "subject-index-navigation-v1",
     "summary": "docs/reference/library-summary.json"

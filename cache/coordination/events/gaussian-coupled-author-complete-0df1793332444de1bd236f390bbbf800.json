@@ -1,0 +1,29 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "gaussian-coupled-separation-formal",
+  "event": "author-complete-native-released-awaiting-root-admission",
+  "at": "2026-10-15T23:41:09.602136+00:00",
+  "owner": "cache_adapter",
+  "source_hashes": {
+    "GRWTSK/Analysis/Calculus/CompactCutoff.lean": "c6ff2d2f5346607bb62c7234a4bfe35a0e308cc427fa8c9c26ac6b06b7838172",
+    "GRWTSK/Analysis/MellinTransform/GaussianCoupledSeparation.lean": "904f3991a65106ee9c0a93f575ba536eec2645d64cff7ff3d9a16de8f389e6fc",
+    "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianCoupledSeparation.lean": "77a69b9e75bcf5d59a8cff75786b2ca900d9d14e79aad0ccc939a182980baff4",
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianCoupledMissingActive.lean": "2ffc3c2f2e3e173703e599c0907e6fac798142dfcf5556f4b69eae29ab3b38f8"
+  },
+  "negative_expected_substring": "∏ i, 1 ≠ 0",
+  "contracts_file": ".local/state-coupled/root/analysis-final-contracts.json",
+  "contracts_sha256": "4981f3017d09d00a93f4ce00b81c5a11d4abc483642f76e9b0d972ed597372bb",
+  "development": {
+    "trust": 0,
+    "fatal_warnings": true,
+    "main_and_positive": "PASS",
+    "negative": "one intended Application type mismatch",
+    "all_children_exited": true,
+    "shared_lock_released": true,
+    "full_census": "NOT_RUN author; delegated to root fresh replay"
+  },
+  "root_full_census_required": true,
+  "full_census_author_not_run_at_root_request": true,
+  "source_whitespace_checked": true,
+  "native_jobs_running": 0
+}

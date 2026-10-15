@@ -4,16 +4,16 @@
 
 | Inventory | Count |
 |---|---:|
-| Object guides | 34 |
-| Documented object groups | 15 |
-| Distinct primary sources linked | 34 |
-| Lean source modules | 291 |
+| Object guides | 36 |
+| Documented object groups | 16 |
+| Distinct primary sources linked | 36 |
+| Lean source modules | 295 |
 | Archive intake records | 39 |
 | Selected catalog families | 1 |
 
 These counts measure documentation and source coverage. They do not count accepted theorems or establish that every source module is documented or checked. [Definitions and limits](../../reference/library-pages.md#count-definitions).
 
-At least 1649 source declaration commands, including 1347 theorem/lemma commands, across 241 parsed Lean source modules; 50 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
+At least 1676 source declaration commands, including 1370 theorem/lemma commands, across 244 parsed Lean source modules; 51 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
 
 ## Asymptotics
 
@@ -22,6 +22,14 @@ At least 1649 source declaration commands, including 1347 theorem/lemma commands
 Linked primary-source scope: 1 source declaration commands, including 1 theorem/lemma commands, across 1 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
 - [Polynomial return with a paid error](Asymptotics/polynomial-error.md).
+
+## Calculus
+
+1 object guide · 1 distinct linked primary source file.
+
+Linked primary-source scope: At least 0 source declaration commands, including 0 theorem/lemma commands, across 0 parsed Lean source modules; 1 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
+
+- [Compact smooth Schwartz cutoffs on a real interval](Calculus/compact-cutoff.md).
 
 ## Complex / CriticalReflection
 
@@ -103,11 +111,12 @@ Linked primary-source scope: 1 source declaration commands, including 1 theorem/
 
 ## MellinTransform
 
-12 object guides · 12 distinct linked primary source files.
+13 object guides · 13 distinct linked primary source files.
 
-Linked primary-source scope: At least 92 source declaration commands, including 75 theorem/lemma commands, across 9 parsed Lean source modules; 3 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
+Linked primary-source scope: At least 102 source declaration commands, including 84 theorem/lemma commands, across 10 parsed Lean source modules; 3 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
 
 - [Compact logarithmic Gaussian windows and Fourier density moments](MellinTransform/gaussian-log-window.md).
+- [Coupled Gaussian separation for finite window families](MellinTransform/gaussian-coupled-separation.md).
 - [Dyadic sums and remote moments of Gaussian Fourier densities](MellinTransform/gaussian-density-moments.md).
 - [Entire Gaussian flow in logarithmic coordinates](MellinTransform/gaussian-log-flow.md).
 - [Mellin transform of a logarithmic Gaussian](MellinTransform/logarithmic-gaussian.md).

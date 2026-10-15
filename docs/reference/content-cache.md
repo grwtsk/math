@@ -242,6 +242,12 @@ reusing supplied evidence. Relation IDs and parent-dictionary references
 are different indices; unchanged numbers and matching endpoint summaries
 do not certify transport of full histories.
 
+The [stored-state reindex result](../mathematics/Combinatorics/DirectedGraph/prefix-table-reindex.md)
+transports actual well-formed root/dictionary/parent/reference state through full
+typed relation tags. The [durable decision](../../cache/decisions/prefix-state-reindex-v1.json)
+requires derived decoding and common old rooted entries for certificate reuse.
+Parent slots and real references retain their numbers; relation tags translate.
+
 See [cache operations](../how-to/cache.md), the
 [taxonomy](../../cache/taxonomy.json), and the
 [integration evidence](../../evidence/Logic/FiniteSequences/cache-integration-2026-10-15.json).
