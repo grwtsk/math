@@ -1,0 +1,55 @@
+{
+  "schema": "selected-current-validation-update-v2",
+  "at": "2026-10-15T18:07:55.311651+00:00",
+  "previous_validation": {
+    "path": "evidence/Logic/FiniteSequences/incremental-dictionary-validation-2026-10-15.json",
+    "sha256": "570cac6ad12d222d7719b4aa84ed2a8b922df14fb467f828798468f5d8d7c88a"
+  },
+  "cause": "Trailing whitespace detected before commit; corrected source and freshly replayed operator instead of refreshing old receipt.",
+  "current_operator_receipt": "evidence/Analysis/InnerProductSpace/closed-operator-checks-2026-10-15-r2.json",
+  "current_operator_integration": "evidence/Analysis/InnerProductSpace/closed-operator-integration-2026-10-15-r2.json",
+  "incremental_dictionary_receipt_unchanged": "evidence/Logic/FiniteSequences/incremental-dictionary-checks-2026-10-15.json",
+  "current_cache_roundtrip": "evidence/Logic/FiniteSequences/incremental-dictionary-cache-roundtrip-2026-10-15-r2.json",
+  "native_inputs_and_two_page_bindings": "passed",
+  "all_registered_links": "passed",
+  "documentation": {
+    "normal_exit_code": 1,
+    "optimized_exit_code": 1,
+    "reason": "17 retained historical source binding drifts",
+    "control_tests_normal": 92,
+    "control_tests_optimized": 92,
+    "whole_acceptance": false
+  },
+  "layout": {
+    "findings": 175,
+    "selected_findings": 0,
+    "whole_acceptance": false
+  },
+  "logs": [
+    {
+      "path": ".local/incremental-dictionary/root/closed-operator-native-replay-2.log",
+      "sha256": "b444bfa577de9714c231519539567ffa33f44e705e7ea2edc8019ee832a0ad9f"
+    },
+    {
+      "path": ".local/incremental-dictionary/root/documentation-render-r2.log",
+      "sha256": "c247e38d42d122332812cec6770616cf02517ae931c63315dd4bc58d47516bb0"
+    },
+    {
+      "path": ".local/incremental-dictionary/root/documentation-normal-r2.log",
+      "sha256": "c247e38d42d122332812cec6770616cf02517ae931c63315dd4bc58d47516bb0"
+    },
+    {
+      "path": ".local/incremental-dictionary/root/documentation-optimized-r2.log",
+      "sha256": "c247e38d42d122332812cec6770616cf02517ae931c63315dd4bc58d47516bb0"
+    },
+    {
+      "path": ".local/incremental-dictionary/root/documentation-tests-normal-r2.log",
+      "sha256": "3c27eede4e3b5f6f91b72029f237b2565b5d8e843b9c26f6325a37acdf82d357"
+    },
+    {
+      "path": ".local/incremental-dictionary/root/documentation-tests-optimized-r2.log",
+      "sha256": "a1c64296b60b4c4b1acfb797792423b6fc6504fa6f3fffc78ea3ae944414381c"
+    }
+  ],
+  "history": "Prior successful native/source/cache variants and validation failure retained without overwriting or promotion."
+}

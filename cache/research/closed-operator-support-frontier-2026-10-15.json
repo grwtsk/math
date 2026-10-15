@@ -1,0 +1,50 @@
+{
+  "schema": "bounded-formal-research-frontier-v1",
+  "at": "2026-10-15T17:58:27.645882+00:00",
+  "previous_frontier": {
+    "path": "cache/research/frontier-2026-10-15.json",
+    "sha256": "3ea12e9b4e33f1b13e4795e726eee68d7a9d35f45590b4c322b739bf4436e4e8"
+  },
+  "primary_repository": "https://github.com/openai/math",
+  "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "completed_selected_support": {
+    "source": "lean/OAI/Analysis/InnerProductSpace/ComplexSolvability.lean",
+    "declarations": [
+      "mem_graph_of_adjoint_identity",
+      "exists_solution_of_adjoint_bound"
+    ],
+    "local_source": "GRWTSK/Analysis/InnerProductSpace/ClosedOperatorSolvability.lean",
+    "local_sha256": "f71d4aa7e5e4f9b6e5cf01164dddf7f2f3aea41ca2b29c9a68711d38ae57153a",
+    "receipt": "evidence/Analysis/InnerProductSpace/closed-operator-checks-2026-10-15.json",
+    "receipt_sha256": "d7ba3f593aaaf2da6822b9e5109faa4343a23b8c4dbae3ef3e984d4a68bff630"
+  },
+  "remaining_same_source": [
+    {
+      "declaration": "exists_solution_of_complex_estimate",
+      "status": "candidate only; not replayed locally",
+      "suggested_home": "Analysis/InnerProductSpace/ClosedComplexSolvability.lean",
+      "premises": [
+        "Dense closed T, closed S, actual range(T) subset kernel(S).",
+        "Complete Hilbert E and F over RCLike; source H need not be complete.",
+        "Strict epsilon>0 and universal joint adjoint-domain estimate.",
+        "Target f in actual graph kernel of S."
+      ],
+      "next_step": "Bounded duplicate search and selected subject-factored port importing accepted support; preserve every domain/estimate premise; positive and missing-estimate controls."
+    },
+    {
+      "declaration": "jointGraph and exists_solution_of_core_estimate",
+      "status": "candidate only; not replayed locally",
+      "premises": [
+        "Actual joint-graph subtype and Dense D therein.",
+        "Universal coercive estimate on D; positivity epsilon and complex operator assumptions."
+      ],
+      "next_step": "After full-domain estimate accepted, transfer through actual graph topology and closed inequality; do not use sampling or density as a substitute for an estimate."
+    }
+  ],
+  "other_frontier_items_preserved": [
+    "Anthropic threshold count scratch remains candidate-only without complete owned audit/controls.",
+    "Trace-rank equality/Welch literature remains unformalized; printed equality-scalar discrepancy retained.",
+    "Dirichlet half-plane identity API candidate requires actual consumer reuse before adding."
+  ],
+  "novelty_and_rh": "No novelty, paper-main-result or RH supplier claim."
+}

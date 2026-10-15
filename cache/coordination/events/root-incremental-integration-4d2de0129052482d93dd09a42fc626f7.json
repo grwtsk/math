@@ -1,0 +1,57 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "incremental-dictionary-integration",
+  "actor": "root",
+  "at": "2026-10-15T18:00:47.578596+00:00",
+  "event": "selected-results-integrated-ready-for-scoped-checkpoint",
+  "cache_revision": "190b6a5ae87b4331e76d7f3454802c5435fe4ca8b8f23a4527343ac5269ed181",
+  "selected_results": {
+    "incremental_dictionary_owned_closure": 86,
+    "incremental_dictionary_new_owned": 20,
+    "closed_operator_owned": 2,
+    "native_trust": 0,
+    "fatal_warnings": true,
+    "full_owned_transitive_axiom_audit": "passed; standard three axioms only",
+    "independent_review": false
+  },
+  "actual_cache": {
+    "lean_sources": 653,
+    "all_files": 664,
+    "byte_exact_outside_expansion": "passed",
+    "proof_status": "unknown-unreplayed"
+  },
+  "global_checks": {
+    "new_source_layout_findings": 0,
+    "retained_global_layout_findings": 175,
+    "retained_documentation_source_drifts": 17,
+    "documentation_control_tests_normal_and_optimized": 92,
+    "whole_repository_acceptance": false
+  },
+  "bound_records": [
+    {
+      "path": "evidence/Logic/FiniteSequences/incremental-dictionary-validation-2026-10-15.json",
+      "sha256": "570cac6ad12d222d7719b4aa84ed2a8b922df14fb467f828798468f5d8d7c88a"
+    },
+    {
+      "path": "evidence/Logic/FiniteSequences/incremental-dictionary-cache-roundtrip-2026-10-15.json",
+      "sha256": "da04cf4bb8461f1d2d8dd976cf157a37d6aeaebe6df746d1671461f5926ba5d4"
+    },
+    {
+      "path": "evidence/Logic/FiniteSequences/incremental-dictionary-integration-2026-10-15.json",
+      "sha256": "b864b623348da586e1d31962a81eae02890250e04b6ba685d08b1efa97031f25"
+    },
+    {
+      "path": "evidence/Analysis/InnerProductSpace/closed-operator-integration-2026-10-15.json",
+      "sha256": "b4ea0ecb7960ca24cd06f24ae7678eca6397d83478960eb6c85f29e153e01da4"
+    },
+    {
+      "path": "cache/coordination/continuations/2026-10-15-incremental-dictionary.json",
+      "sha256": "94abfffb7e5f0ac5cb5f74106eb63257e4918c09609ab4e77e19b4c387bf2323"
+    },
+    {
+      "path": "cache/decisions/incremental-dictionary-v1.json",
+      "sha256": "29c587753b2ddb54780c731d0c82dd6b37b25e56240618ee3f7b563e35b3607b"
+    }
+  ],
+  "policy": "Preserve unrelated concurrent documentation counts work, original source variants and all failed/stale receipts. No remote writes. Only main exists; stale worktree prune completed with no entries."
+}

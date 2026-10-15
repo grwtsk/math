@@ -1,0 +1,55 @@
+{
+  "schema": "incremental-dictionary-integration-v1",
+  "at": "2026-10-15T17:54:50.245618+00:00",
+  "native_receipt": {
+    "path": "evidence/Logic/FiniteSequences/incremental-dictionary-checks-2026-10-15.json",
+    "sha256": "8ee843eec23c7759d9d64dbfc6e5d84ec700f6c6e4095e77cdf536433b63e272",
+    "owned_closure_declarations": 86,
+    "new_module_owned_declarations": 20,
+    "trust": 0,
+    "fatal_warnings": true,
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "algorithm": [
+    "Retain complete old dictionary as prefix; append only distinct new payloads absent from it.",
+    "Keep old references as prefix and append one index per new row.",
+    "Under Valid original, preserve old-reference decoder and decode all rows as previous decoding plus appended entries.",
+    "Preserve Nodup only under its separate old-dictionary hypothesis.",
+    "Use actual existing pack_valid/unpack_pack for the fresh source-list specialization."
+  ],
+  "checked_obstruction": "An invalid old empty dictionary with reference zero can change from none to a successful payload after expansion. The Valid premise cannot be omitted.",
+  "reviews": [
+    {
+      "path": "evidence/Logic/FiniteSequences/incremental-dictionary-source-review-2026-10-15.json",
+      "sha256": "e27268f11131565839d65a18947b0a4fc7f95cad533dec50a9a13c3fdbad5cd4"
+    },
+    {
+      "path": "evidence/Logic/FiniteSequences/incremental-dictionary-final-review-2026-10-15.json",
+      "sha256": "163b70da049318dc4c5b1388d5e365f0ce4d43af48a0421abd352a5d162025e2"
+    }
+  ],
+  "contribution_roles": [
+    {
+      "actor": "grwtsk contributors",
+      "role": "human direction"
+    },
+    {
+      "actor": "OpenAI Codex and delegated agents",
+      "role": "algorithm, formal proofs, controls, source scouts and correlated source review"
+    },
+    {
+      "actor": "Lean and Mathlib contributors",
+      "role": "upstream exact list/lookup and finite algorithm interfaces"
+    }
+  ],
+  "limits": [
+    "Finite Lean lists and decidable equality only.",
+    "No byte serializer, Python cache refinement, hash collision assumption, compression, filesystem transaction, complexity or independent-review theorem.",
+    "No whole-repository acceptance or complete catalog of the 215 unprovided method identities."
+  ],
+  "failures_preserved": ".local/incremental-dictionary/"
+}

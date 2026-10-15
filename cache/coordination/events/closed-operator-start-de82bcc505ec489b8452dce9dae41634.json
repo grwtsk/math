@@ -1,0 +1,15 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "closed-operator-formal",
+  "status": "source-identity-checked-starting-port",
+  "at": "2026-10-15T17:47:51.781255+00:00",
+  "upstream": {
+    "repository": "openai/math",
+    "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+    "path": "lean/OAI/Analysis/InnerProductSpace/ComplexSolvability.lean",
+    "sha256": "3bd52605fab93edac918126a231a2f5c7fda48c0e04a8b43104b9bb7fc51d841",
+    "git_blob": "1dcdff16b52cba2412cbf3c30cad7e39c5b5eb52"
+  },
+  "archive": ".local/closed-operator/98cf497cb6174c568f6e717a599736c5",
+  "scope": "Only graph membership from exact adjoint pairing and bounded solution from actual adjoint-domain bound; later complex/core results excluded. Root owns audit/docs/licensing metadata."
+}

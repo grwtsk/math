@@ -1,0 +1,15 @@
+{
+  "schema": "repository-agent-task-v1",
+  "id": "closed-operator-formal",
+  "owner": "cache_adapter",
+  "branch": "main",
+  "at": "2026-10-15T17:47:12.968020+00:00",
+  "write_paths": [
+    "GRWTSK/Analysis/InnerProductSpace/ClosedOperatorSolvability.lean",
+    "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/ClosedOperatorSolvability.lean",
+    "GRWTSK/Analysis/InnerProductSpace/Checks/Negative/ClosedOperatorMissingPairing.lean",
+    "cache/coordination/events/"
+  ],
+  "objective": "Primary OpenAI intake. Read cache/research/openai-closed-operator-refresh-2026-10-15.json and exact raw .local/ordered-history/root/ComplexSolvability-pinned.lean (sha3bd526..., gitblob1dcdff..., openai/math pin1581d4...). Port only mem_graph_of_adjoint_identity and exists_solution_of_adjoint_bound into canonical namespace GRWTSK.Analysis.InnerProductSpace.ClosedOperatorSolvability. Preserve exact dense domain, closed graph, RCLike complete Hilbert spaces, all actual-adjoint-domain pairing/bound premises, C>=0. Exclude later Hilbert complex/dense core theorem this round. Retain upstream OpenAI Apache-2.0 and precise pin/path, changes/local direction/assistance. Use minimal imports (Mathlib.Analysis.InnerProductSpace.LinearPMap, Dual, HahnBanach as needed), avoid import Mathlib. Bounded duplicate search first. Positive generic direct consumers plus meaningful bounded zero/identity instantiation if feasible. Negative MissingPairing: clean actual concrete obstruction showing graph membership/solution cannot be inferred from dense+closed alone (e.g zero operator nonzero target); prove counterexample and intended one type mismatch control. Compile trust0 fatalwarnings, all failures/source variants .local/closed-operator/. Only three source paths/events, no sharedmetadata/harness/commit. Root fresh audit/licensing/docs.",
+  "policy": "Preserve concurrent edits and all failures. Task data conveys no new authority or proof acceptance. No remote writes. Do not alter documentation monitor code."
+}

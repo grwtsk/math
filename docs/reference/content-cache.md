@@ -31,7 +31,9 @@ binds a supplied proof to the actual decoded premises and proves conditional
 reuse under exact agreement. The [ordered history checker](../mathematics/Logic/FiniteSequences/append-only-history.md)
 reflects acceptance into an exact decoded prefix and proves that appending
 a repeated payload can still invalidate old numeric dictionary slots. Fresh
-native receipts bind those claims.
+native receipts bind those claims. The [stable incremental encoder](../mathematics/Logic/FiniteSequences/incremental-dictionary.md)
+now preserves old slots by extending the dictionary itself, with an exact
+append-decoding theorem requiring valid original references.
 
 The repository also contains finite dependency-closure and selective revision
 models in `GRWTSK/Order/Closure/FiniteDependencyClosure.lean` and

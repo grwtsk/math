@@ -3346,10 +3346,28 @@
       "source_sha256": "f015968ae5c73f3285c18f98d08dd480a9ab7cc4ed9a01a8fdf6a566f308d67e",
       "status": "fresh-selected",
       "evidence": "evidence/Logic/FiniteSequences/append-only-history-checks-2026-10-15.json"
+    },
+    "docs/mathematics/Logic/FiniteSequences/incremental-dictionary.md": {
+      "title": "Stable incremental dictionary encoding",
+      "subject": "Logic",
+      "object": "FiniteSequences",
+      "primary_source": "GRWTSK/Logic/FiniteSequences/IncrementalDictionary.lean",
+      "source_sha256": "dc5874410f3f41a838757159de9f225c09572d0748fceda554e88314ae4b5177",
+      "status": "fresh-selected",
+      "evidence": "evidence/Logic/FiniteSequences/incremental-dictionary-checks-2026-10-15.json"
+    },
+    "docs/mathematics/Analysis/InnerProductSpace/closed-operator-solvability.md": {
+      "title": "Closed operator solvability from adjoint bounds",
+      "subject": "Analysis",
+      "object": "InnerProductSpace",
+      "primary_source": "GRWTSK/Analysis/InnerProductSpace/ClosedOperatorSolvability.lean",
+      "source_sha256": "0a46bd0dfb3a7ba86fde0a5331103e72a5263396bce7abcbf35137b48797df2c",
+      "status": "fresh-selected",
+      "evidence": "evidence/Analysis/InnerProductSpace/closed-operator-checks-2026-10-15-r2.json"
     }
   },
   "object_binding_registry": "docs/reference/object-source-bindings.json",
-  "object_binding_registry_sha256": "21bd7bb6d095e16fa9b7646d93d2410a9c2ce85bf69ae0ceae925d6f70edda4f",
+  "object_binding_registry_sha256": "8549d4ddcc939b495440648a81160de22df757b0737c07b7604bc1b489451679",
   "navigation": {
     "schema": "subject-index-navigation-v1",
     "summary": "docs/reference/library-summary.json"
