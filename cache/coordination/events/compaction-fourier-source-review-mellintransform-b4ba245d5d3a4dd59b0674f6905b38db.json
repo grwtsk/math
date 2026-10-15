@@ -1,0 +1,21 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "compaction-fourier-source-scout",
+  "event": "source-review-complete",
+  "owner": "cache_taxonomy",
+  "at": "2026-10-15T22:27:13.357123+00:00",
+  "review": {
+    "path": "evidence/Analysis/MellinTransform/gaussian-fourier-moments-source-review-2026-10-15.json",
+    "sha256": "dcfa62479d36f9c402d49a89d6e2cb6ff1564914b0bc96d21ad2835d2f15983c",
+    "bytes": 16362
+  },
+  "source_hashes": {
+    "GRWTSK/Analysis/MellinTransform/GaussianFourierMoments.lean": "56f14b355aeb0b89e30457cc6b7f8be887fd288e2caf3643907481f32171d86a",
+    "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianFourierMoments.lean": "3bb18be10f76784706a8ee7ee20aee7f4fa9f9333917456241a5238faf443f92",
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianFourierMissingScale.lean": "7acf8e0a10481f3dfbc5ca386860bc96ff031289300b9b2ba008300282c7bdea"
+  },
+  "finding": "No actionable omitted finite-family, positivity/cancellation or uniform-constant premise observed in the three frozen actual Gaussian Fourier sources within bounded review.",
+  "review_character": "Correlated same-team exact-source/premise/control/credit review; not independent validation.",
+  "native_status": "NOT_RUN",
+  "scope": "New immutable review/event and ignored exact source copies; no shared/source/native/remote effects."
+}

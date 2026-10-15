@@ -1,0 +1,29 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "gaussian-fourier-moments-formal",
+  "event": "sources-frozen",
+  "owner": "cache_adapter",
+  "at": "2026-10-15T22:25:31.319088+00:00",
+  "source_hashes": {
+    "GRWTSK/Analysis/Fourier/SchwartzMoments.lean": "da6f1239a11ad8f70f24ec4eabc709e6c7e36002949236c7a73813db0fddb0cc",
+    "GRWTSK/Analysis/Fourier/Checks/Positive/SchwartzMoments.lean": "f9e557853b3f89815922fcf523101aeba80b8e86aaf080c8926b9e93e227e633",
+    "GRWTSK/Analysis/Fourier/Checks/Negative/SchwartzMomentMissingEvidence.lean": "cbb5dbaff27af0ed5244bd94221f869e620258eaff416c77e16a7c24628018b9",
+    "GRWTSK/Analysis/MellinTransform/GaussianFourierMoments.lean": "56f14b355aeb0b89e30457cc6b7f8be887fd288e2caf3643907481f32171d86a",
+    "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianFourierMoments.lean": "3bb18be10f76784706a8ee7ee20aee7f4fa9f9333917456241a5238faf443f92",
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianFourierMissingScale.lean": "7acf8e0a10481f3dfbc5ca386860bc96ff031289300b9b2ba008300282c7bdea"
+  },
+  "status": "scratch-development-PASS; canonical-final-development-pending; root-admission-pending",
+  "contracts": [
+    "Actual generic Fourier source-pair transfer, actual one-plus Fourier moment integrability, finite derivatives through J+p, p=volume.integrablePower, S/C nonnegative, no compactness premise.",
+    "Actual finite Gaussian source set{(0,i),(p,i):i<=J+p}; source pair proved from admitted finite-seminorm supplier; actual Fourier moment integrability/nonnegativity and all-real-a bound with C(a,J)>0 before all Z>0/j.",
+    "Complete concrete nonzero Gaussian C0 source-budget obstruction; actual zero Schwartz valid input; positive Gaussian moment/integrability consumers; actual totalized zero-ratio cancellation failure, no zero-scale Schwartz constructor or full-moment counterexample inferred."
+  ],
+  "negative_expected": {
+    "SchwartzMomentMissingEvidence": "Exactly one Application type mismatch;0<=0 supplied to actual universal sourcepair; expectedsubstring\u2200 i \u2264 0 + volume.integrablePower",
+    "GaussianFourierMissingScale": "Exactly one Application type mismatch;0<=0 supplied where0<0; expectedsubstring0 < 0"
+  },
+  "native_jobs_running": 0,
+  "archive": ".local/gaussian-fourier-moments/514ed253fe1d4a488e8637ad0c7ebc35",
+  "license": "OpenAI LogProfiles Apache-2.0 exactpin1581d4.../SHAff8735e4...; named individual Mathlib Fourier/Schwartz authors and notices retained.",
+  "limits": "No log-window Gaussian density, Hecke, calibration, physical row, RH/continuation or runtime cache-refinement result."
+}

@@ -4,16 +4,16 @@
 
 | Inventory | Count |
 |---|---:|
-| Object guides | 29 |
-| Documented object groups | 14 |
-| Distinct primary sources linked | 29 |
-| Lean source modules | 276 |
+| Object guides | 31 |
+| Documented object groups | 15 |
+| Distinct primary sources linked | 31 |
+| Lean source modules | 282 |
 | Archive intake records | 39 |
 | Selected catalog families | 1 |
 
 These counts measure documentation and source coverage. They do not count accepted theorems or establish that every source module is documented or checked. [Definitions and limits](../../reference/library-pages.md#count-definitions).
 
-At least 1577 source declaration commands, including 1283 theorem/lemma commands, across 229 parsed Lean source modules; 47 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
+At least 1591 source declaration commands, including 1295 theorem/lemma commands, across 233 parsed Lean source modules; 49 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
 
 ## Asymptotics
 
@@ -39,6 +39,14 @@ Linked primary-source scope: 25 source declaration commands, including 25 theore
 
 - [Autocorrelation derivatives and unsigned mass bounds](Convolution/derivative-energy.md).
 - [Compact autocorrelation regularity](Convolution/compact-correlation.md).
+
+## Fourier
+
+1 object guide · 1 distinct linked primary source file.
+
+Linked primary-source scope: At least 0 source declaration commands, including 0 theorem/lemma commands, across 0 parsed Lean source modules; 1 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
+
+- [Fourier moments from Schwartz derivative seminorms](Fourier/schwartz-moments.md).
 
 ## Fourier / IntegerSeries
 
@@ -95,15 +103,16 @@ Linked primary-source scope: 1 source declaration commands, including 1 theorem/
 
 ## MellinTransform
 
-8 object guides · 8 distinct linked primary source files.
+9 object guides · 9 distinct linked primary source files.
 
-Linked primary-source scope: At least 60 source declaration commands, including 49 theorem/lemma commands, across 6 parsed Lean source modules; 2 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
+Linked primary-source scope: At least 69 source declaration commands, including 56 theorem/lemma commands, across 7 parsed Lean source modules; 2 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
 
 - [Mellin transform of a logarithmic Gaussian](MellinTransform/logarithmic-gaussian.md).
 - [Reverse Mellin inversion](MellinTransform/reverse-inversion.md).
 - [Summing weighted Gaussian-window seminorms](MellinTransform/gaussian-dyadic-summation.md).
 - [The compact Gaussian window and its square-root factor](MellinTransform/compact-gaussian-window.md).
 - [The normalized Gaussian Mellin pair](MellinTransform/normalized-gaussian.md).
+- [Uniform Fourier moments of Gaussian windows](MellinTransform/gaussian-fourier-moments.md).
 - [Uniform Schwartz seminorms of Gaussian windows](MellinTransform/gaussian-window-seminorms.md).
 - [Uniform scale bounds for Gaussian derivatives](MellinTransform/scaled-gaussian-derivatives.md).
 - [Weighted and remote sums of Gaussian seminorms](MellinTransform/gaussian-remote-seminorms.md).

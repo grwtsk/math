@@ -53,6 +53,12 @@ actual weighted seminorm summability and a bound $C(s,S)Z^s$. Evaluation
 through the zeroth seminorm also gives actual weighted norm-value sums
 with one constant independent of the real evaluation point.
 
+The [Fourier-moment consumer](gaussian-fourier-moments.md) supplies a
+concrete finite source family through order $J+p$, where $p$ is Lebesgue
+measure's `integrablePower`. The separately proved generic Fourier transfer
+and actual positive-scale cancellation give integrability and a uniform
+one-plus Fourier norm moment bounded by $C(a,J)(2^j/Z)^{-a}$.
+
 ## Positive-scale control
 
 For the exact totalized functions, $G(0,0,3/4)\ne0$: the annulus and $P(0)$
