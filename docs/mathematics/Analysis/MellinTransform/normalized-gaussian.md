@@ -80,6 +80,14 @@ absolute sum–integral interchange from the positive-natural-number
 $p$-series before using this inversion termwise. Its coefficient-one zeta
 series and native receipt are separate from the normalized Mellin pair.
 
+The [compact Gaussian window](compact-gaussian-window.md) is another actual
+consumer of this exact profile:
+$G(Z,j,y)=A(y)P(2^j y/Z)/(\sqrt y:\mathbb C)$, with $A$ the smooth dyadic
+annulus. Its compact support holds for every real $Z$; for $Z>0$, its proved
+smoothness supplies an actual Schwartz map. At $y>0$, multiplying by
+$(\sqrt y:\mathbb C)$ recovers $A(y)P(2^j y/Z)$, independently of $Z$.
+The window guide binds its separate source, controls and native receipt.
+
 Apache-2.0 terms remain retained. OpenAI supplies the upstream profile and
 selected inverse statement. Mathlib credits Sébastien Gouëzel for Gaussian
 integration, Lawrence Wu for Mellin inversion and David Loeffler for Mellin

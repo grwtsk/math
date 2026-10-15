@@ -1,0 +1,32 @@
+{
+  "schema": "repository-design-decision-v1",
+  "id": "prefix-inventory-v1",
+  "at": "2026-10-15T20:55:46.703348+00:00",
+  "previous_record": {
+    "path": "cache/decisions/endpoint-section-v1.json",
+    "sha256": "bd8b99628efc4dc66956d64fac4e34d5de2670914dd4d4cdfbe0a40d0da83f65"
+  },
+  "choice": "Share exact complete typed prefix payloads across a finite ordered list of rooted keyed occurrences; preserve separate original ordered references and use actual checked unpack/history reconstruction.",
+  "premises": [
+    "One fixed root and exact full source/target/arrow tags, with equality supplied explicitly.",
+    "Actual complete-prefix membership and validity; successful existing Option decoder output supplies its actual history decoder validity.",
+    "Full ordered keyed occurrence list recovered, including duplicate keys/rows."
+  ],
+  "native_evidence": [
+    {
+      "path": "evidence/Combinatorics/DirectedGraph/prefix-inventory-integration-2026-10-15.json",
+      "sha256": "179b11bc0b28691f53859bfca1cfa813a146c3f3e366852da25d37e8c21db253"
+    }
+  ],
+  "checked_boundaries": [
+    "Actual parallel loops: same endpoint, unequal histories.",
+    "Rightmost dedup dictionary may place parent after child; no incremental slot stability or index-decreasing parent inference.",
+    "Finite list length bound only; no byte savings, optimality, runtime or parent-pointer codec claim."
+  ],
+  "operational_boundary": "No Lean/Python/JSON/hash/zlib/IO correspondence or proof/permission authority inferred. Operational prefix comparison/source custody remain separately bounded evidence.",
+  "open_obligations": [
+    "Actual parent-pointer representation and ordered rooted-forest reconstruction remain NOT_RUN.",
+    "16 declared method families and215 declared total do not supply the missing215 individual identities."
+  ],
+  "authority": "Durable local mathematical/design decision; no remote effect or newly adopted external-document policy."
+}
