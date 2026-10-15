@@ -1,0 +1,245 @@
+{
+  "schema": "ordered-history-literature-review/v1",
+  "task": "ordered-history-literature",
+  "at": "2026-10-15T17:31:28.621081+00:00",
+  "retrieved_client_date": "2026-10-15",
+  "scope": "Bounded arxiv primary-source scout and source-as-data review. This JSON records literature and proposed refinement obligations; it admits no new mathematical source, crypto protocol or Python implementation.",
+  "literature": [
+    {
+      "id": "arxiv:cs/0302010v1",
+      "title": "Authenticated Append-only Skip Lists",
+      "authors": [
+        "Petros Maniatis",
+        "Mary Baker"
+      ],
+      "submitted_utc": "2003-02-07T01:51:54Z",
+      "version": "v1",
+      "abstract_url": "https://arxiv.org/abs/cs/0302010v1",
+      "inspected_full_text_url": "https://arxiv.org/html/cs/0302010v1",
+      "locations": [
+        "Sections 3.2 and 3.3",
+        "Theorems 2 and 3",
+        "Appendix A"
+      ],
+      "result_and_assumptions": "Commits to indexed sequence contents and order, with membership and advancement proofs. Dynamic verification retains size, digest and basis authenticators; checking only a newly received digest is insufficient. Security arguments require a computationally bounded adversary and collision-resistant hashing, plus the specified proof checks and previously trusted commitment. This is not an unconditional injectivity theorem for a finite digest, nor a theorem that arbitrary local logs have one globally agreed history.",
+      "verification_here": "Primary text inspected; construction not implemented or independently replayed."
+    },
+    {
+      "id": "arxiv:2103.04519v1",
+      "title": "Formal Verification of Authenticated, Append-Only Skip Lists in Agda: Extended Version",
+      "authors": [
+        "Victor Cacciari Miraldo",
+        "Harold Carr",
+        "Mark Moir",
+        "Lisandra Silva",
+        "Guy L. Steele Jr"
+      ],
+      "submitted_utc": "2021-03-08T02:43:46Z",
+      "version": "v1",
+      "abstract_url": "https://arxiv.org/abs/2103.04519v1",
+      "inspected_full_text_url": "https://arxiv.org/pdf/2103.04519v1",
+      "locations": [
+        "Sections 4.1–4.4",
+        "Section 5 hash-collision discussion"
+      ],
+      "result_and_assumptions": "Agda results establish agreement or an existential hash collision. The dependency interface requires distinct decreasing hop targets, noncrossing hops, no zero-index hops and positive successor levels. Authenticator lemmas use injective encoding and fixed-size concatenation; the index encoding is fixed-width in their treatment. A full polynomial-time security reduction remains future work.",
+      "author_linked_development": "https://github.com/oracle/aaosl-agda/releases/tag/extended-paper-2021-02-23",
+      "verification_here": "Paper inspected; linked development not fetched or rerun."
+    },
+    {
+      "id": "arxiv:2308.13836v1",
+      "title": "SoK: Authenticated Prefix Relations -- A Unified Perspective On Relative Time-Stamping and Append-Only Logs",
+      "authors": [
+        "Aljoscha Meyer"
+      ],
+      "submitted_utc": "2023-08-26T10:04:37Z",
+      "version": "v1",
+      "abstract_url": "https://arxiv.org/abs/2308.13836v1",
+      "inspected_full_text_url": "https://arxiv.org/html/2308.13836v1",
+      "locations": [
+        "Section 3 finite-sequence preliminaries",
+        "Section 4 Definition 1",
+        "Section 5 Propositions 1–2",
+        "Section 2 fork discussion"
+      ],
+      "result_and_assumptions": "Defines commit/certify/verify for prefix relations between finite ordered sequences, keeping prefix authentication distinct from membership. Hash-based constructions require secure hashing and an appropriate acyclic graph; aggregation uses a fixed total order. Authentication concerns supplied digests and lengths. Fork detection needs communication between views; the structure alone does not prevent a malicious maintainer presenting divergent histories.",
+      "verification_here": "Primary definition and assumptions inspected; no implementation or new security claim."
+    }
+  ],
+  "external_source_identity": "Pinned arxiv version IDs and primary URLs; PDF/HTML bytes were inspected through browser tooling and were not retained or cryptographically hashed by this scout. Version labels do not constitute our formal replay.",
+  "local_bindings": [
+    {
+      "path": "GRWTSK/Logic/FiniteSequences/IndexedDictionary.lean",
+      "sha256": "c01e5ff8067d652cafb42260ae283786c8cb78710c73eb23079a54bd05fbedff",
+      "bytes": 5972
+    },
+    {
+      "path": "GRWTSK/Logic/FiniteSequences/DictionaryRevision.lean",
+      "sha256": "6c7e6f170b1ea7ad746e4e99b0c15a680433c66d20b6d23538ef4a595bd796df",
+      "bytes": 6357
+    },
+    {
+      "path": "GRWTSK/Logic/FiniteSequences/Checks/Positive/IndexedDictionary.lean",
+      "sha256": "421c43bcf34cdb8deac3f4d959e247abeecdaecc60b3dd2c51a2c5799163fd2c",
+      "bytes": 1610
+    },
+    {
+      "path": "GRWTSK/Logic/Classification/Provenance.lean",
+      "sha256": "b2720293dfce970de023adf3508ab915210dae37a02359d2b62c82c5a2813028",
+      "bytes": 2828
+    },
+    {
+      "path": "scripts/cache_taxonomy.py",
+      "sha256": "ed6d4ca7940a35a334e7015b56dc691f7636327d7c3f487d914286cf4bc39e42",
+      "bytes": 24070
+    },
+    {
+      "path": "scripts/cache_math.py",
+      "sha256": "81f7d48a575ee212d8fac9bad812cc93c3c4ace3eae031ae82acabac2c44d424",
+      "bytes": 35863
+    },
+    {
+      "path": "cache/coordination/tasks/ordered-history-literature.json",
+      "sha256": "8f4013911d199350532146a9dbdc4e7941f9ca4a2663064fd62596821e7bfddb",
+      "bytes": 1223
+    }
+  ],
+  "ordered_history_contract": {
+    "exact_statement": "For lists old and new of actual records, AppendOnly(old,new) means there exists a suffix tail with new = old ++ tail.",
+    "local_definition": "GRWTSK/Logic/Classification/Provenance.lean:75",
+    "proposed_operational_check": "Reject unless both values are lists, len(new) >= len(old), and every old position equals the corresponding complete new row under the explicitly defined record equality. On success return new[len(old):] as the suffix witness.",
+    "strictly_weaker_controls": [
+      "Set inclusion loses occurrence order and multiplicity.",
+      "Equal cardinality or an unchanged ID set permits permutations and row rewrites.",
+      "ID-keyed literal row preservation permits reordering and insertion before historical rows.",
+      "Equal digests alone need an independent authentication/collision model and source commitment."
+    ],
+    "boundary": "A mathematical proof for lists and exact equality does not by itself prove JSON parsing, Python equality, filesystem behavior, CAS mutation or cryptographic authenticity."
+  },
+  "codec_review": {
+    "source": "GRWTSK/Logic/FiniteSequences/IndexedDictionary.lean",
+    "facts_read_as_data": [
+      "pack uses dictionary = (entries.map Prod.snd).dedup; the comment specifies rightmost payload occurrence retention.",
+      "References are mapped from every original entry; repeated keys and payload occurrences are retained in order.",
+      "The stated exact contract unpack(pack(entries)) = some entries concerns finite Lean lists and DecidableEq Payload. It needs no hash-injectivity assumption.",
+      "Repacking a longer source list need not preserve a raw prefix of dictionary slots or numeric references. Prefix preservation belongs to decoded source entries unless a separate stable-interning policy is specified."
+    ],
+    "source_derived_example_not_replayed": {
+      "old_entries": [
+        [
+          11,
+          7
+        ],
+        [
+          12,
+          8
+        ]
+      ],
+      "old_dictionary": [
+        7,
+        8
+      ],
+      "old_references": [
+        [
+          11,
+          0
+        ],
+        [
+          12,
+          1
+        ]
+      ],
+      "appended_entry": [
+        13,
+        7
+      ],
+      "new_entries": [
+        [
+          11,
+          7
+        ],
+        [
+          12,
+          8
+        ],
+        [
+          13,
+          7
+        ]
+      ],
+      "repacked_dictionary": [
+        8,
+        7
+      ],
+      "repacked_references": [
+        [
+          11,
+          1
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          13,
+          1
+        ]
+      ],
+      "meaning": "Decoded old entries are the exact first two new entries; payload-slot positions and old numeric references changed under rightmost dedup. This is a source-derived calculation, not an added compiled Lean example."
+    },
+    "revision_condition": "DictionaryRevision.AgreesOnReferences requires exact optional-lookup equality at every retained reference. Reusing old references after slot reordering violates that premise. Repacking all references is a different operation that is justified by each full round trip, rather than fixed-reference agreement.",
+    "failure_caveat": "The local failed_decoders_do_not_imply_agreement example shows equal none results can hide a later disagreement; require successful decoding and/or per-reference agreement, not equality of two failing results.",
+    "runtime_boundary": "scripts/cache_math.py stores zlib-compressed raw byte objects and checks bytes/digests/lengths. It is not established here as a Python refinement of the Lean pack/unpack definitions."
+  },
+  "current_operational_gap": {
+    "source": "scripts/cache_taxonomy.py:validate_transition",
+    "observed_behavior": "Old decisions/contributions/aliases are looked up by ID and compared literally; previous row order need not survive. Stable method IDs are preserved by set inclusion.",
+    "relation_to_lean": "This keyed-retention condition does not imply the incoming ordered AppendOnly predicate. A prefix checker is a strict operational strengthening, not an inference from the existing test count.",
+    "change_performed": false
+  },
+  "proposed_refinement_obligations": [
+    {
+      "id": "ordered-row-soundness",
+      "statement": "Prove the chosen executable checker true iff there exists a suffix producing exact list equality; include shrinking, permutation, front insertion, multiplicity and edited-row hostile cases."
+    },
+    {
+      "id": "record-equality",
+      "statement": "Define the Record representation and type-sensitive equality. Python can equate True with 1 and 1 with 1.0; JSON parsing/canonicalization must reject or distinguish such cross-type cases, duplicate keys, nonfinite values and unsupported fields before claiming correspondence."
+    },
+    {
+      "id": "decoded-prefix-lifting",
+      "statement": "Use successful exact round trips to transfer a prefix fact for original entries to decoded packed objects. Do not assert the interned payload dictionary itself is append-only."
+    },
+    {
+      "id": "json-python-codec-refinement",
+      "statement": "Prove or separately audit parsing, serialization, payload equality, dictionary/index behavior and the runtime decoder against the Lean definitions. Runtime finite bounds and failure cases must match."
+    },
+    {
+      "id": "source-and-revision-binding",
+      "statement": "Bind exact ordered row bytes/identities and parent revision, freeze/read back current sources, and perform expected-current CAS under the core lock. A pure prefix checker does not perform atomic commit or establish durable disk state."
+    },
+    {
+      "id": "authentication-not-preservation",
+      "statement": "Treat literal history preservation independently from hash collision resistance, trusted genesis/checkpoints, signatures, inter-view communication and permissions. Do not replace the exact-list premise with digest equality without a justified cryptographic model."
+    },
+    {
+      "id": "fresh-lean-acceptance",
+      "statement": "The source-as-data review adds no replay. Any newly formalized checker/result needs pinned --trust=0, fatal warnings, owned-declaration axiom audit and relevant consumer evidence. Incoming Provenance candidate native statuses remain NOT_RUN."
+    }
+  ],
+  "claims_not_made": [
+    "No novelty or priority claim for ordered-prefix preservation, exact interning or authenticated histories.",
+    "No unconditional digest injectivity, global fork prevention, source authenticity, standing permission or complete catalogue claim.",
+    "No Riemann-sphere compactification theorem follows from byte compression or indexed dictionaries.",
+    "No incoming source native status or historical receipt was rebound."
+  ],
+  "checks_performed": [
+    "Current primary arxiv abstract/version metadata and relevant full text browsed.",
+    "Bounded local source excerpts read as data; no Lean/compiler/incoming Python execution.",
+    "Local input bytes re-read before writing this evidence."
+  ],
+  "tests_or_formal_replay": "NOT_RUN_BY_THIS_LITERATURE_TASK",
+  "code_or_global_metadata_edits": false,
+  "remote_writes_or_commit": false,
+  "local_readback": "UNCHANGED_FROM_BOUND_REVIEW_SNAPSHOT"
+}

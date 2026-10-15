@@ -1,0 +1,83 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "ordered-history-formal",
+  "status": "implementation_complete_pending_root_admission",
+  "owner": "indexed_dictionary",
+  "branch": "main",
+  "source_sha256": {
+    "GRWTSK/Logic/FiniteSequences/AppendOnlyHistory.lean": "f015968ae5c73f3285c18f98d08dd480a9ab7cc4ed9a01a8fdf6a566f308d67e",
+    "GRWTSK/Logic/FiniteSequences/Checks/Positive/AppendOnlyHistory.lean": "84054e557b4ef0ac9aeb439d973a2aa52b831d73c8b595dac64ffafe3cf28483",
+    "GRWTSK/Logic/FiniteSequences/Checks/Negative/AppendOnlyHistoryReorder.lean": "b817c436b1f8f6baf476adac5b1ef8a68ca07434f848d81a220fe2507b830726"
+  },
+  "imports": [
+    "GRWTSK.Logic.FiniteSequences.DictionaryRevision"
+  ],
+  "api_event": "cache/coordination/events/20261015T173241Z-ordered-history-api-0a16173f.json",
+  "checks": [
+    {
+      "kind": "behavior_probe_before_theorem",
+      "trust": 0,
+      "fatal_warnings": true,
+      "exit_code": 0,
+      "receipt": ".local/ordered-history/20261015T172947Z-behavior-probe.json"
+    },
+    {
+      "kind": "kernel_compile",
+      "trust": 0,
+      "fatal_warnings": true,
+      "exit_code": 0,
+      "receipt": ".local/ordered-history/20261015T173142Z-compile.json"
+    },
+    {
+      "kind": "positive_control",
+      "trust": 0,
+      "fatal_warnings": true,
+      "exit_code": 0,
+      "receipt": ".local/ordered-history/20261015T173152Z-positive.json"
+    },
+    {
+      "kind": "hostile_control",
+      "trust": 0,
+      "fatal_warnings": true,
+      "exit_code": 1,
+      "passed_expected_type_mismatch": true,
+      "expected_diagnostic_target": "checkPrefix [1, 2] [2, 1] = true",
+      "receipt": ".local/ordered-history/20261015T173153Z-negative.json"
+    },
+    {
+      "kind": "repository_layout",
+      "receipt": ".local/ordered-history/20261015T173817Z-layout.json",
+      "command": [
+        "python3",
+        "-B",
+        "scripts/check_math_layout.py"
+      ],
+      "exit_code": 1,
+      "summary": "Math layout: FAIL (352 library modules, 179 findings).",
+      "owned_findings": [
+        "GRWTSK/Logic/FiniteSequences/AppendOnlyHistory.lean: library-module-outside-public-closure [GRWTSK.Logic.FiniteSequences.AppendOnlyHistory]: library module is not reachable from GRWTSK.lean",
+        "GRWTSK/Logic/FiniteSequences/AppendOnlyHistory.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources",
+        "GRWTSK/Logic/FiniteSequences/Checks/Negative/AppendOnlyHistoryReorder.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources",
+        "GRWTSK/Logic/FiniteSequences/Checks/Positive/AppendOnlyHistory.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources"
+      ],
+      "log": ".local/ordered-history/20261015T173817Z-layout.log"
+    }
+  ],
+  "mathematical_scope": "Executable ordered prefix checker reflected into existing List.IsPrefix and suffix witness; acceptance composition, row-position and key-sequence preservation; actual decoder history checker accepted iff successful exact old++suffix reconstruction; actual unpack_pack application; permutation/reordering rejection; checked append-only source history with corrupt reused numeric dictionary references.",
+  "counterexample": "Old [(11,7),(12,8)] appended with [(13,7)]: dedup dictionary [7,8] becomes [8,7], fresh new refs are [(11,1),(12,0),(13,1)], old refs [(11,0),(12,1)] reused with new dictionary decode [(11,8),(12,7)] despite valid bounds. Exact AgreesOnReferences is false.",
+  "reuse_and_duplicate_search": "Reuses pinned Lean List.isPrefixOf, reflection/position/map/composition APIs and avoids another generic AppendOnly relation; bounded local duplicate search recorded exact inspected file hashes in API event. No novelty claim.",
+  "remaining": [
+    "Root fresh native audit, combined runner and source/metadata/doc integration.",
+    "Runtime adapter/taxonomy ordered-history refinement and byte/IO correctness remain open."
+  ],
+  "failed_attempts_preserved": [
+    ".local/ordered-history/20261015T173130Z-compile.json with exact failed source variant and diagnostic."
+  ],
+  "source_mutations_outside_owned_paths": [],
+  "concurrent_edits_untouched": [
+    "scripts/documentation_indexes.py",
+    "scripts/test_documentation_layout.py"
+  ],
+  "commits": [],
+  "remote_mutations": []
+}

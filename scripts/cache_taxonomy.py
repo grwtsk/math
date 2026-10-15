@@ -373,7 +373,15 @@ def validate_taxonomy(document, expected_current=UNSET, require_complete=False):
 
 
 def validate_transition(previous, proposed):
-    """Validate a proposed revision and retain literal decision/contribution history."""
+    """Validate a revision with literal ordered history preserved as a prefix.
+
+    Identity-map preservation prevents erasure and rewriting. The separate
+    sequence check also rejects reordering and insertion before historical
+    rows; only a suffix may be appended to these three history collections.
+    Their schemas admit strings, lists and shaped dictionaries, with no
+    numeric/Boolean row payloads. This is not arbitrary typed-JSON equality.
+    This operational check establishes no theorem or permission status.
+    """
     validate_taxonomy(previous)
     report = validate_taxonomy(proposed, expected_current=previous["revision"]["id"])
     _require(previous["id"] == proposed["id"], "taxonomy identity changed across revision")
@@ -382,6 +390,8 @@ def validate_transition(previous, proposed):
         for old in previous[collection]:
             _require(new_entries.get(old["id"]) == old,
                      "revision erased or rewrote historical " + collection + ": " + old["id"])
+        _require(proposed[collection][:len(previous[collection])] == previous[collection],
+                 "revision does not preserve ordered prefix of historical " + collection)
     old_records = {entry["id"] for entry in previous["records"]}
     _require(old_records <= {entry["id"] for entry in proposed["records"]},
              "revision erased a stable method identity")

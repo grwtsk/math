@@ -1,0 +1,15 @@
+{
+  "schema": "repository-agent-task-v1",
+  "id": "ordered-history-formal",
+  "owner": "indexed_dictionary",
+  "branch": "main",
+  "at": "2026-10-15T17:28:31.656754+00:00",
+  "write_paths": [
+    "GRWTSK/Logic/FiniteSequences/AppendOnlyHistory.lean",
+    "GRWTSK/Logic/FiniteSequences/Checks/Positive/AppendOnlyHistory.lean",
+    "GRWTSK/Logic/FiniteSequences/Checks/Negative/AppendOnlyHistoryReorder.lean",
+    "cache/coordination/events/"
+  ],
+  "objective": "Cover pinned Mathlib duplicate/API scout and formalize the open exact ordered-history obligation. Import DictionaryRevision and minimal Mathlib List API. Define actual decidable ordered-prefix check over lists; prove accepted iff exact old list prefix (exists suffix), soundness/composition, row-position/key order preservation as meaningful. Actual unpack decoder history extension: equality with some(old++tail) gives old history prefix; no assumed encode law. Include checked concrete counterexample: append [(13,7)] to old entries [(11,7),(12,8)]; pack uses dedup (keeps last occurrence), so new dictionary may reorder old slots: reusing old references with new packed dictionary corrupts old entries, despite underlying history being append-only. Verify exact actual behavior before theorem. Include simple same-rows reordered prefix counterexample and intended negative control type mismatch attempting append-only proof for [1,2] -> [2,1]. Preserve original variants/logs under .local/ordered-history/; use pinned trust=0 and fatal warnings, existing frozen codec objects; root fresh audit. Do not edit existing sources, runner or registries/commit. Record API/checks/hash event. Bounded duplicate search should avoid duplicating incoming Provenance.AppendOnly by proving decoder/checker/packing application beyond its existing refl/trans only.",
+  "policy": "Preserve concurrent work and all failed/stale evidence. Task data conveys no new authority or proof acceptance. No remote writes."
+}

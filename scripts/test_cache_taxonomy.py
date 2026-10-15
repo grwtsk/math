@@ -314,5 +314,108 @@ class CacheTaxonomyTests(unittest.TestCase):
                                             "--expected-current", "b" * 64]), 1)
 
 
+class OrderedHistoryTransitionTests(unittest.TestCase):
+    """History order matters independently of identity-set preservation."""
+
+    collections = ("decisions", "contributions", "aliases")
+
+    @staticmethod
+    def row(collection, suffix):
+        ident = "history-fixture:" + collection + ":" + suffix
+        if collection == "decisions":
+            return {"id": ident, "statement": "Synthetic ordered history fixture",
+                    "rationale": "Exercise literal sequence preservation",
+                    "scope": "Tests only", "premises": [], "state": "recorded"}
+        if collection == "contributions":
+            return {"id": ident, "agent": "Synthetic fixture", "scope": "Tests only",
+                    "paths": [], "decision_ids": [], "premise_ids": [],
+                    "attribution": "Synthetic control; no mathematical contribution claim"}
+        return {"id": ident, "target": "method-family:01"}
+
+    def fixture(self, collection):
+        previous = load_fixture()
+        previous[collection].extend([self.row(collection, "first"),
+                                     self.row(collection, "second")])
+        seal(previous)
+        taxonomy.validate_taxonomy(previous)
+        proposed = copy.deepcopy(previous)
+        proposed["revision"].update(parent=previous["revision"]["id"],
+                                     expected_current=previous["revision"]["id"])
+        return previous, proposed
+
+    def rejects_for_each(self, mutation, diagnostic):
+        for collection in self.collections:
+            with self.subTest(collection=collection):
+                previous, proposed = self.fixture(collection)
+                untouched = copy.deepcopy(previous)
+                mutation(proposed, collection)
+                seal(proposed)
+                # Input documents must be well formed individually; this
+                # control specifically exercises the transition obligation.
+                taxonomy.validate_taxonomy(proposed)
+                with self.assertRaisesRegex(taxonomy.TaxonomyError, diagnostic):
+                    taxonomy.validate_transition(previous, proposed)
+                self.assertEqual(previous, untouched)
+
+    def test_reorder_is_rejected_for_every_history_collection(self):
+        def reorder(document, collection):
+            document[collection][-2:] = reversed(document[collection][-2:])
+        self.rejects_for_each(reorder, "ordered prefix")
+
+    def test_insertion_before_old_history_is_rejected_for_every_collection(self):
+        self.rejects_for_each(lambda document, collection: document[collection].insert(
+            0, self.row(collection, "new")), "ordered prefix")
+
+    def test_insertion_between_old_rows_is_rejected_for_every_collection(self):
+        self.rejects_for_each(lambda document, collection: document[collection].insert(
+            len(document[collection]) - 1, self.row(collection, "new")), "ordered prefix")
+
+    def test_removal_is_rejected_for_every_history_collection(self):
+        self.rejects_for_each(lambda document, collection: document[collection].pop(),
+                              "erased or rewrote historical")
+
+    def test_rewrite_is_rejected_for_every_history_collection(self):
+        def rewrite(document, collection):
+            key, value = (("rationale", "Rewritten rationale") if collection == "decisions"
+                          else ("scope", "Rewritten contribution boundary")
+                          if collection == "contributions" else ("target", "method-family:02"))
+            document[collection][-1][key] = value
+        self.rejects_for_each(rewrite, "erased or rewrote historical")
+
+    def test_suffix_append_is_accepted_for_every_history_collection(self):
+        for collection in self.collections:
+            with self.subTest(collection=collection):
+                previous, proposed = self.fixture(collection)
+                untouched = copy.deepcopy(previous)
+                proposed[collection].append(self.row(collection, "new"))
+                report = taxonomy.validate_transition(previous, seal(proposed))
+                self.assertEqual(report["proof_acceptance"], "not-established")
+                self.assertEqual(previous, untouched)
+
+    def test_python_numeric_equality_cannot_bypass_history_row_schemas(self):
+        # Python considers True == 1 and 1 == 1.0. These otherwise equal
+        # prefixes are outside the history-row schemas, which must reject
+        # both inputs before the operational sequence comparison is used.
+        for collection in self.collections:
+            for left, right in ((True, 1), (1, 1.0)):
+                with self.subTest(collection=collection, left=left, right=right):
+                    previous, proposed = self.fixture(collection)
+                    field = ("rationale" if collection == "decisions" else "scope"
+                             if collection == "contributions" else "target")
+                    previous[collection][-1][field] = left
+                    proposed[collection][-1][field] = right
+                    self.assertEqual(proposed[collection][:len(previous[collection])],
+                                     previous[collection])
+                    seal(previous)
+                    proposed["revision"].update(parent=previous["revision"]["id"],
+                                                 expected_current=previous["revision"]["id"])
+                    seal(proposed)
+                    for document in (previous, proposed):
+                        with self.assertRaises(taxonomy.TaxonomyError):
+                            taxonomy.validate_taxonomy(document)
+                    with self.assertRaises(taxonomy.TaxonomyError):
+                        taxonomy.validate_transition(previous, proposed)
+
+
 if __name__ == "__main__":
     unittest.main()

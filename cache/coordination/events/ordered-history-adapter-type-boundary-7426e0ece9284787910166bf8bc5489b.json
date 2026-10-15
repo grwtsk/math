@@ -1,0 +1,56 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "ordered-history-adapter",
+  "event": "completion-addendum",
+  "status": "complete-type-boundary-explicit",
+  "at": "2026-10-15T17:39:16.094329+00:00",
+  "extends_evidence": {
+    "path": "evidence/Logic/FiniteSequences/ordered-history-adapter-2026-10-15.json",
+    "sha256": "0ae137551711422bef455c23c4dca06fb2cca655a2c4c36b8ac74d45f8f49c7e",
+    "meaning": "Prior 53-test source receipt and Anthropic scout remain immutable historical observations. This addendum binds the final 54-test source pair."
+  },
+  "current_owned_files": [
+    {
+      "path": "scripts/cache_taxonomy.py",
+      "sha256": "d0691c4efd77961dd1895924f1bd2c5f8a4d7c8f24974bf0d1eb3ba3682874a9"
+    },
+    {
+      "path": "scripts/test_cache_taxonomy.py",
+      "sha256": "480a46fceb5bd226e32b43bfd32545dd2462d75b300caad05a55c166cbe46fe9"
+    }
+  ],
+  "json_equality_boundary": {
+    "observation": "Python True == 1 and 1 == 1.0 do not establish typed JSON equality.",
+    "verified_history_shapes": {
+      "decisions": "id,statement,rationale,scope,state are strings; premises is a list of shaped records with string id/statement/status and list-of-string evidence_refs. State/status string enumerations cannot accept numeric/Boolean substitutes.",
+      "contributions": "id,agent,scope,attribution are strings; paths,decision_ids,premise_ids are lists of strings.",
+      "aliases": "id and target are strings checked as stable identifiers."
+    },
+    "guard": "Both documents pass validate_taxonomy before prefix equality. These three row schemas have no numeric or Boolean payload fields; lists and dictionaries contain only these admitted string/list/dict shapes.",
+    "new_control": "test_python_numeric_equality_cannot_bypass_history_row_schemas builds otherwise Python-equal True/1 and 1/1.0 history prefixes for all three collections, then confirms both standalone documents and their transition are rejected by schema validation. Six subcases.",
+    "limit": "The Python check is not arbitrary typed-JSON equality and is not a Python-to-Lean refinement proof. Custom Python subclasses and arbitrary objects are outside decoded JSON inputs."
+  },
+  "checks": [
+    {
+      "command": "python3 -B scripts/test_cache_taxonomy.py",
+      "exit_code": 0,
+      "tests": 54,
+      "log": ".local/ordered-history/adapter/c02f1a40f9d24ee997a4b434b89d5096/after-type-boundary-normal-tests.log",
+      "log_sha256": "cfae120f55dfc049e56bfc74aafa840cd0192505561872b336626de53a5b5f5c"
+    },
+    {
+      "command": "python3 -B -O scripts/test_cache_taxonomy.py",
+      "exit_code": 0,
+      "tests": 54,
+      "log": ".local/ordered-history/adapter/c02f1a40f9d24ee997a4b434b89d5096/after-type-boundary-optimized-tests.log",
+      "log_sha256": "cfae120f55dfc049e56bfc74aafa840cd0192505561872b336626de53a5b5f5c"
+    },
+    {
+      "command": "git diff --check -- scripts/cache_taxonomy.py scripts/test_cache_taxonomy.py",
+      "exit_code": 0
+    }
+  ],
+  "preservation": "Original 47-test inputs, the nine-failure regression log, 53-test accepted variants and logs, and final 54-test logs all remain in the ignored task archive. The old 53-test variants were recovered by reversing the bounded addition and checked byte-hash-exact against the earlier immutable receipt.",
+  "anthropic_scout": "Unchanged pinned read-only scout is fully recorded in extends_evidence; official source pin e1a4e6508154ea59f030480661590a9fe3018011. No new source module or upstream execution.",
+  "effects": "No taxonomy.json, source, documentation, catalog, cache-ref, commit, branch, worktree or remote mutation by this worker."
+}

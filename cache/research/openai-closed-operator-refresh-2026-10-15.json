@@ -1,0 +1,33 @@
+{
+  "schema": "bounded-openai-source-refresh-v1",
+  "at": "2026-10-15T17:29:37.812307+00:00",
+  "repository": "https://github.com/openai/math",
+  "commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "path": "lean/OAI/Analysis/InnerProductSpace/ComplexSolvability.lean",
+  "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/Analysis/InnerProductSpace/ComplexSolvability.lean",
+  "git_blob": "1dcdff16b52cba2412cbf3c30cad7e39c5b5eb52",
+  "sha256": "3bd52605fab93edac918126a231a2f5c7fda48c0e04a8b43104b9bb7fc51d841",
+  "bytes": 8028,
+  "matches_preserved_candidate_bytes": true,
+  "license": "Apache-2.0",
+  "project_authors": [
+    "OpenAI"
+  ],
+  "selected_contract": "Dense closed partial linear operator graph membership from all adjoint inner-product identities, followed by bounded solution from an adjoint pairing bound.",
+  "exact_premises": [
+    "RCLike scalar field; complete Hilbert domain and codomain.",
+    "T domain dense and T graph closed.",
+    "Pairing identity or adjoint norm bound on every element of actual adjoint domain.",
+    "Solution-bound constant C nonnegative; later complex estimate epsilon strictly positive and ST=0, S graph closed."
+  ],
+  "bounded_duplicate_search": {
+    "roots": [
+      "GRWTSK/Analysis/InnerProductSpace",
+      ".lake/packages/mathlib/Mathlib/Analysis/InnerProductSpace"
+    ],
+    "observed_existing": "Mathlib LaxMilgram coercive bounded bilinear forms and local VariationalResidual do not have this exact densely-defined partial-operator statement.",
+    "exhaustive": false
+  },
+  "native_replay": "NOT_RUN this round; no admission",
+  "next_step": "Port only graph/adjoint-bound support lemmas first with minimal imports and meaningful missing-domain/closedness controls; preserve rest as candidate. Ordered-history obligation is this round native work."
+}

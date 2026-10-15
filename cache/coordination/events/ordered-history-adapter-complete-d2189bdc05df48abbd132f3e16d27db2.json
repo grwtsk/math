@@ -1,0 +1,30 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "ordered-history-adapter",
+  "event": "completion",
+  "status": "complete-with-explicit-limits",
+  "at": "2026-10-15T17:37:48.723524+00:00",
+  "evidence": {
+    "path": "evidence/Logic/FiniteSequences/ordered-history-adapter-2026-10-15.json",
+    "sha256": "0ae137551711422bef455c23c4dca06fb2cca655a2c4c36b8ac74d45f8f49c7e"
+  },
+  "owned_files": [
+    {
+      "path": "scripts/cache_taxonomy.py",
+      "sha256": "ed6d4ca7940a35a334e7015b56dc691f7636327d7c3f487d914286cf4bc39e42"
+    },
+    {
+      "path": "scripts/test_cache_taxonomy.py",
+      "sha256": "ef66910019eaa82cb509d4524820753e593ebdfa14cd9bd77f297f13eee2e13d"
+    }
+  ],
+  "normal_tests": 53,
+  "optimized_tests": 53,
+  "new_collection_scenarios": 18,
+  "preserved_before_fix_failures": 9,
+  "anthropic_pin": "e1a4e6508154ea59f030480661590a9fe3018011",
+  "anthropic_files_source_inspected": 6,
+  "upstream_executed": false,
+  "next_candidate": "Light.Exec.append is a source-inspected semantic design reference; no Light-language port or new theorem admission.",
+  "remaining": "Root owns integration, formal model relation, taxonomy metadata/ref/doc updates; no operational acceptance promotion."
+}

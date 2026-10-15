@@ -1,0 +1,13 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "ordered-history-literature",
+  "event": "scout-progress",
+  "at": "2026-10-15T17:29:52.934586+00:00",
+  "findings": [
+    "Primary arxiv sources located: cs/0302010v1 (Maniatis/Baker), 2103.04519v1 (Agda AAOSL verification), 2308.13836v1 (prefix authentication formalization).",
+    "Important local refinement point: IndexedDictionary.pack deduplicates payloads by rightmost occurrence. Repacking an appended source can reorder dictionary slots and rewrite old numeric references; decoded source history can still be an exact prefix. Raw packed-field prefix is therefore not the right generic preservation condition.",
+    "Agda paper explicitly proves desired properties modulo an existential hash collision and leaves a full polynomial-time security reduction as future work; do not import an unconditional SHA injectivity claim.",
+    "A strict operational history checker should compare complete ordered rows (length plus exact initial segment), then return the suffix witness. JSON equality, Python implementation and cryptographic authentication remain separate refinement premises."
+  ],
+  "scope": "Read-only primary-source literature and local source-as-data review; final source-bound evidence forthcoming."
+}

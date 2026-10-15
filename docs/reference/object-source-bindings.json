@@ -92,6 +92,7 @@
       "GRWTSK/Analysis/Fourier/WindowCertificates.lean"
     ],
     "Logic/FiniteSequences": [
+      "GRWTSK/Logic/FiniteSequences/AppendOnlyHistory.lean",
       "GRWTSK/Logic/FiniteSequences/DecisionCertificate.lean",
       "GRWTSK/Logic/FiniteSequences/DictionaryRevision.lean",
       "GRWTSK/Logic/FiniteSequences/IndexedDictionary.lean",

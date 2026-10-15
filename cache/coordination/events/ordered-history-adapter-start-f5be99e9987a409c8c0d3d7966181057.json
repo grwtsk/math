@@ -1,0 +1,23 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "ordered-history-adapter",
+  "status": "in-progress",
+  "at": "2026-10-15T17:29:17.266752+00:00",
+  "preimages": {
+    "schema": "ordered-history-adapter-preserved-preimages-v1",
+    "at": "2026-10-15T17:29:17.266538+00:00",
+    "files": [
+      {
+        "path": "scripts/cache_taxonomy.py",
+        "sha256": "539d3dc247b1f10093dcd6b8f61f8b7a9de9dff3f4edf85000efc5e54c2e14c5",
+        "preserved_path": ".local/ordered-history/adapter/c02f1a40f9d24ee997a4b434b89d5096/cache_taxonomy.py"
+      },
+      {
+        "path": "scripts/test_cache_taxonomy.py",
+        "sha256": "cc1a5e747f9884802229797d0649e6a27efca2e7ec381b96ee15aa5155c07f9d",
+        "preserved_path": ".local/ordered-history/adapter/c02f1a40f9d24ee997a4b434b89d5096/test_cache_taxonomy.py"
+      }
+    ]
+  },
+  "scope": "Owned script/test edits plus bounded pinned Anthropic read-only source inspection. Taxonomy metadata, formal sources, refs and docs remain root-owned."
+}
