@@ -1,0 +1,79 @@
+{
+  "schema": "source-specific-weil-research-map-v1",
+  "date": "2026-10-15",
+  "inspected_repository": "grwtsk/math@ba77517b0b4e74d36a824d34c2948b276471b844",
+  "primary_sources": [
+    {
+      "id": "S26",
+      "url": "https://arxiv.org/html/2606.09096v1",
+      "author": "Masatoshi Suzuki",
+      "read": "Section1, Theorems1.1/1.3/1.4, Sections2.3/2.4, Corollary1.6 and its caveat",
+      "supplies": "Localized actual Weil operator, finite-support variational framework, continuous bottom; not global positivity",
+      "used_as": "research motivation and classical source context; new elementary estimates are proved in derivation",
+      "not_used": "Conjectural global spectral limit; RH-dependent heuristic factorization"
+    },
+    {
+      "id": "S22",
+      "url": "https://arxiv.org/html/2206.03682v4",
+      "author": "Masatoshi Suzuki",
+      "read": "Sections3.2-3.5, Proposition3.1, equation5.15",
+      "supplies": "Complete arithmetic/spectral Weil identity, exact Fourier convention and derivative source law",
+      "limit": "No global positivity imported"
+    },
+    {
+      "id": "CC20",
+      "url": "https://arxiv.org/abs/2006.13771",
+      "authors": [
+        "Alain Connes",
+        "Caterina Consani"
+      ],
+      "read": "Lemma3.3, Theorem6.11, support restriction and rank-one cost",
+      "supplies": "Pole-annihilating operator and restricted-support comparison",
+      "limit": "No scaling to all support; quantitative spectral companions not replayed"
+    },
+    {
+      "id": "D57",
+      "url": "https://dlmf.nist.gov/5.7",
+      "read": "Digamma series, equation5.7.6",
+      "supplies": "Actual archimedean multiplier expansion"
+    },
+    {
+      "id": "D54",
+      "url": "https://dlmf.nist.gov/5.4",
+      "read": "Digamma special values",
+      "supplies": "psi(1/4)=-gamma-pi/2-3log2"
+    },
+    {
+      "id": "H21",
+      "url": "https://arxiv.org/pdf/2102.04663",
+      "authors": [
+        "Elchin Hasanalizade",
+        "Quanli Shen",
+        "Peng-Jie Wong"
+      ],
+      "read": "Rendered PDF pages1-2, Corollary1.2; absolute ordinate and multiplicity definition",
+      "supplies": "Published counting bound; derived loose weighted sum<=190",
+      "limit": "Author numerical proof machinery not replayed; no native import"
+    },
+    {
+      "id": "ML",
+      "repository": "leanprover-community/mathlib4",
+      "revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "path": "Mathlib/Analysis/SpecialFunctions/Gaussian/FourierTransform.lean",
+      "declaration": "fourierIntegral_gaussian",
+      "blob": "e66f719517bc84d4a2ff3deafd3b47868b700bd4",
+      "status": "previously source-inspected; not freshly kernel replayed"
+    }
+  ],
+  "attached_source": {
+    "name": "compact_weil_derivation.txt",
+    "sha256": "be8e3b5616314815986dea440ffcdbc43fda181a154504ed6aea0a63bad85adf",
+    "use": "Fourier convention, exact pole-preserving cutoff and weighted strip construction; Section5 here proves a new joint schedule and norm comparison"
+  },
+  "user_dossier": {
+    "name": "RESEARCH.md",
+    "sha256": "f09e9c36d293dade091c49c456475973e0ebc1bfc51f065ce419cebe1e3f0253",
+    "preserved_requirement": "Actual source sign required; orbit quartic and generic positive Gram not interchangeable"
+  },
+  "source_effects": "No PDFs, private conversations or account data redistributed; no licenses or external toolchains changed"
+}
