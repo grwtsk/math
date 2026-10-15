@@ -4,16 +4,24 @@
 
 | Inventory | Count |
 |---|---:|
-| Object guides | 2 |
-| Documented object groups | 1 |
-| Distinct primary sources linked | 1 |
-| Lean source modules | 8 |
+| Object guides | 3 |
+| Documented object groups | 2 |
+| Distinct primary sources linked | 2 |
+| Lean source modules | 11 |
 | Archive intake records | 0 |
 | Selected catalog families | 1 |
 
 These counts measure documentation and source coverage. They do not count accepted theorems or establish that every source module is documented or checked. [Definitions and limits](../../reference/library-pages.md#count-definitions).
 
-57 source declaration commands, including 40 theorem/lemma commands, across 8 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+74 source declaration commands, including 55 theorem/lemma commands, across 11 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+
+## DirectedGraph
+
+1 object guide · 1 distinct linked primary source file.
+
+Linked primary-source scope: 17 source declaration commands, including 15 theorem/lemma commands, across 1 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+
+- [Ordered occurrences of directed paths](DirectedGraph/path-occurrences.md).
 
 ## Sequences
 

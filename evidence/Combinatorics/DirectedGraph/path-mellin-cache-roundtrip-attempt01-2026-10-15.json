@@ -1,0 +1,11 @@
+{
+  "schema": "source-cache-roundtrip-attempt-v1",
+  "at": "2026-10-15T19:17:59.187547+00:00",
+  "outcome": "rejected-unsafe-destination",
+  "error": "symlink path/ancestor rejected: /var",
+  "cause": "Default macOS tempfile lexical path has /var symlink ancestor; adapter correctly rejects it.",
+  "failed_destination_owned_temporary_directory_removed": true,
+  "live_repository_files_modified": false,
+  "mathematical_acceptance": false,
+  "retry": "Use resolved physical tempfile parent, keeping expansion outside repository."
+}

@@ -1,0 +1,325 @@
+{
+  "schema": "path-occurrences-source-review-v1",
+  "task": "cache/coordination/tasks/path-mellin-source-scout.json",
+  "at": "2026-10-15T19:12:29.750899+00:00",
+  "status": "complete-bounded-correlated-source-review",
+  "review_boundary": {
+    "independent_validation": false,
+    "correlation": "Same agent team/model workflow as source implementation; bounded source, premise and control review, not independent mathematical or native validation.",
+    "native_jobs_by_reviewer": "NOT_RUN",
+    "code_or_shared_metadata_edits": false,
+    "commits_or_remote_effects": false
+  },
+  "final_source_bindings": {
+    "completion": {
+      "path": "cache/coordination/events/20261015T191018Z-path-occurrences-complete-49a12114.json",
+      "sha256": "129df75255ff7edfb95f8c5ed42866d77b69ff0a47b54ac5ae0dc3343a4c09dc"
+    },
+    "api": {
+      "path": "cache/coordination/events/20261015T190903Z-path-occurrences-api-79bf2209.json",
+      "sha256": "b46276995175e17923a1efafff78aa8cdcd18a3f1aa146c2773d1a7b138a25b3"
+    },
+    "sources": [
+      {
+        "path": "GRWTSK/Combinatorics/DirectedGraph/PathOccurrences.lean",
+        "sha256": "b2b140e2f370d07ef866e81ebb93580ed706d64ad463377fcce82df37c4a39e5",
+        "bytes": 9344
+      },
+      {
+        "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PathOccurrences.lean",
+        "sha256": "2219cc672fbea5667d62ee833d6633dd8a6f2d894bbdb12a76cd880d612fe163",
+        "bytes": 2195
+      },
+      {
+        "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PathMissingEdgeIdentity.lean",
+        "sha256": "f1936c3eaf77f02e7fbc644de6d0404c1cc787f8de64c67c37af7c2dff8eba69",
+        "bytes": 337
+      }
+    ],
+    "all_three_final_hashes_match_completion_and_api": true
+  },
+  "actual_generic_path_contracts": {
+    "object": "All paths are actual upstream Quiver.Path a b, whose cons constructor retains a typed arrow. The module introduces no replacement path structure, equivalence quotient, new graph or assumed codec.",
+    "list_convention": "The checked bridge is path.vertices.reverse = final_endpoint :: path.toList. Path.vertices contains all vertices chronologically including both endpoints. Path.toList recursively prepends the source of each appended edge; it lists edge sources in reverse chronological order, excluding the final endpoint.",
+    "composition": "For left:a->b followed by right:b->c, vertices(left.comp right)=left.vertices ++ right.vertices.tail. The shared join occurs once; all left vertices form a literal prefix and every valid left index retains its exact getElem? value. This is sequence equality and position retention, not only vertex-set inclusion.",
+    "actual_occurrences": "For each index < path.vertices.length, split_at_occurrence produces actual typed prefix/suffix paths at path.vertices[index], reconstructs path by composition and has prefix.length=index. distinct_occurrence_prefixes uses those exact lengths to prove the dependent (endpoint, prefix path) values unequal when indices differ, even if endpoint vertex values coincide.",
+    "hypotheses": "These generic statements require a Quiver and matching typed endpoints plus valid occurrence bounds; no finite graph, acyclicity, simple graph or Hom-subsingleton hypothesis is silently added.",
+    "scope": "This formalizes occurrences inside a supplied actual path. It does not construct an arbitrary DAG unfolding, assign a single address to each source vertex, or identify repeated vertices as the same occurrence."
+  },
+  "full_edge_identity_contracts": {
+    "domain": "Only existing SingleObj Edge paths from star Edge to star Edge are serialized as plain List Edge. A general dependent-arrow serialization is not claimed.",
+    "construction": "edgeOccurrences(path) reverses the actual SingleObj.pathEquivList output. pathToList_comp proves that upstream edge lists compose in reversed block order, so chronological edgeOccurrences compose by exact forward append.",
+    "actual_inverse": "reconstruct_edgeOccurrences applies SingleObj.pathEquivList.symm to the reverse edge list and returns the original actual path. edgeOccurrences_reconstruct returns every supplied edge list. Injectivity follows from the real upstream equivalence, rather than an assumed round-trip premise.",
+    "parallel_counterexample": "parallelLoop false and parallelLoop true are actual one-edge paths in SingleObj Bool. They have identical typed endpoints, length 1 and full vertex list [star,star], but their actual edge lists are [false] versus [true], so the paths differ. The source also proves length-plus-vertices is not injective on paths with these fixed typed endpoints.",
+    "safe_vertex_reconstruction": "path_eq_of_vertices_eq explicitly requires forall x y, Subsingleton (x -> y). It converts full vertex equality to toList equality using the proved reverse/tail bridge, then applies the upstream toList_injective theorem with exactly its essential hypothesis. This hypothesis excludes the two Bool parallel arrows.",
+    "positive_consumers": "The final positive source supplies Hom subsingletons from actual SimpleGraph adjacency arrows PLift(graph.Adj a b). It also checks chronological edge list [false,true] and full vertex occurrences [star,star,star] for actual composed parallel loops.",
+    "negative_control": "The final negative asks for parallelLoop false = parallelLoop true and supplies the proof of equality of their full vertex lists. This intentionally fails at the path-versus-vertex-projection equality boundary. The actual distinction of paths is already a proved library theorem."
+  },
+  "pinned_mathlib_context": {
+    "lean": "leanprover/lean4:v4.33.0",
+    "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "sources": [
+      {
+        "path": "lean-toolchain",
+        "sha256": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
+        "bytes": 25
+      },
+      {
+        "path": "lake-manifest.json",
+        "sha256": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
+        "bytes": 3577
+      },
+      {
+        "path": ".lake/packages/mathlib/Mathlib/Combinatorics/Quiver/Path.lean",
+        "sha256": "9528a3551a251e8e72c253dca4a8854657fb4a9e74af440379af67cc7f419e2a",
+        "bytes": 14161
+      },
+      {
+        "path": ".lake/packages/mathlib/Mathlib/Combinatorics/Quiver/Path/Vertices.lean",
+        "sha256": "3a7598d7e2bb55b03a4544c9a16ac5764a21b742f100a1afe8643370565ca6c0",
+        "bytes": 9372
+      },
+      {
+        "path": ".lake/packages/mathlib/Mathlib/Combinatorics/Quiver/SingleObj.lean",
+        "sha256": "8fe88cb3039bf8304dcce492a11391ec3d67c26497301578481aa6b8d0b43106",
+        "bytes": 4431
+      },
+      {
+        "path": ".lake/packages/mathlib/Mathlib/Combinatorics/SimpleGraph/Basic.lean",
+        "sha256": "e45d2248020078b2b2f853e6c6000af23cc0808e28ef54fda0471924bc4c9f8a",
+        "bytes": 41858
+      }
+    ],
+    "exact_source_occurrences": [
+      {
+        "path": ".lake/packages/mathlib/Mathlib/Combinatorics/Quiver/Path.lean",
+        "declaration": "Quiver.Path",
+        "line": 30
+      },
+      {
+        "path": ".lake/packages/mathlib/Mathlib/Combinatorics/Quiver/Path.lean",
+        "declaration": "Quiver.Path.toList",
+        "line": 204
+      },
+      {
+        "path": ".lake/packages/mathlib/Mathlib/Combinatorics/Quiver/Path.lean",
+        "declaration": "Quiver.Path.toList_comp",
+        "line": 211
+      },
+      {
+        "path": ".lake/packages/mathlib/Mathlib/Combinatorics/Quiver/Path.lean",
+        "declaration": "Quiver.Path.toList_injective",
+        "line": 228,
+        "required_instance_line": 226,
+        "premise": "forall a b, Subsingleton (a -> b)"
+      },
+      {
+        "path": ".lake/packages/mathlib/Mathlib/Combinatorics/Quiver/Path/Vertices.lean",
+        "declaration": "Quiver.Path.vertices",
+        "line": 35
+      },
+      {
+        "path": ".lake/packages/mathlib/Mathlib/Combinatorics/Quiver/Path/Vertices.lean",
+        "declaration": "Quiver.Path.vertices_comp",
+        "line": 111
+      },
+      {
+        "path": ".lake/packages/mathlib/Mathlib/Combinatorics/Quiver/Path/Vertices.lean",
+        "declaration": "Quiver.Path.exists_eq_comp_and_length_eq_of_lt_length",
+        "line": 194
+      },
+      {
+        "path": ".lake/packages/mathlib/Mathlib/Combinatorics/Quiver/SingleObj.lean",
+        "declaration": "Quiver.SingleObj.pathToList",
+        "line": 93
+      },
+      {
+        "path": ".lake/packages/mathlib/Mathlib/Combinatorics/Quiver/SingleObj.lean",
+        "declaration": "Quiver.SingleObj.pathEquivList",
+        "line": 118
+      }
+    ],
+    "reuse_limit": "The review compared actual definitions and premises, not only theorem names. The local module derives occurrence/consumer results from existing typed paths, decomposition and equivalence APIs; no novelty of the underlying path/list representation is claimed."
+  },
+  "official_anthropic_primary_source_scout": {
+    "repository": "https://github.com/anthropics/formal-math",
+    "pin": "e1a4e6508154ea59f030480661590a9fe3018011",
+    "fresh_fetch": true,
+    "tree": {
+      "path": ".local/external-math/anthropic/e1a4e6508154ea59f030480661590a9fe3018011/formal-math-tree.json",
+      "sha256": "01c7743b24df9d0dd6c165d47751b7ece26cd203f241736a0840deabd34acdb5",
+      "truncated": false
+    },
+    "selection": "Filename index narrowed to graph/walk/path candidates; selected actual PathsAndWalks and its defining EndStatement/PaperStatements files. Read the entire small correspondence file and relevant definition sections of the larger PaperStatements, not a whole-corpus content search.",
+    "sources": [
+      {
+        "path": "3sum-apsp/ThreeSumApsp/Sec3/Theorem21b/PathsAndWalks.lean",
+        "url": "https://github.com/anthropics/formal-math/blob/e1a4e6508154ea59f030480661590a9fe3018011/3sum-apsp/ThreeSumApsp/Sec3/Theorem21b/PathsAndWalks.lean",
+        "raw_url": "https://raw.githubusercontent.com/anthropics/formal-math/e1a4e6508154ea59f030480661590a9fe3018011/3sum-apsp/ThreeSumApsp/Sec3/Theorem21b/PathsAndWalks.lean",
+        "snapshot": {
+          "path": ".local/path-mellin/source-scout/4224d50b17af41118b3eadfe73437062/anthropic/3sum-apsp/ThreeSumApsp/Sec3/Theorem21b/PathsAndWalks.lean",
+          "sha256": "dd2e0d199859027fc481934d523853fe12757d63daf929ec849f4db70d65c363",
+          "bytes": 5628
+        },
+        "git_blob": "9c81a4c44bf54ff9180199bfc4d0bdf564718927",
+        "blob_and_size_match_official_pinned_tree": true
+      },
+      {
+        "path": "3sum-apsp/EndStatement.lean",
+        "url": "https://github.com/anthropics/formal-math/blob/e1a4e6508154ea59f030480661590a9fe3018011/3sum-apsp/EndStatement.lean",
+        "raw_url": "https://raw.githubusercontent.com/anthropics/formal-math/e1a4e6508154ea59f030480661590a9fe3018011/3sum-apsp/EndStatement.lean",
+        "snapshot": {
+          "path": ".local/path-mellin/source-scout/4224d50b17af41118b3eadfe73437062/anthropic/3sum-apsp/EndStatement.lean",
+          "sha256": "4291e3f05781cea42f9d672ff73ceac1f6d1a0c3021038e94372fa8f7e1ad987",
+          "bytes": 7255
+        },
+        "git_blob": "b2e03ddc7dc78c273aa5a1edda073fd2274d87de",
+        "blob_and_size_match_official_pinned_tree": true
+      },
+      {
+        "path": "3sum-apsp/PaperStatements.lean",
+        "url": "https://github.com/anthropics/formal-math/blob/e1a4e6508154ea59f030480661590a9fe3018011/3sum-apsp/PaperStatements.lean",
+        "raw_url": "https://raw.githubusercontent.com/anthropics/formal-math/e1a4e6508154ea59f030480661590a9fe3018011/3sum-apsp/PaperStatements.lean",
+        "snapshot": {
+          "path": ".local/path-mellin/source-scout/4224d50b17af41118b3eadfe73437062/anthropic/3sum-apsp/PaperStatements.lean",
+          "sha256": "2ee2dca7adcc4e1612ec057f3b063c7d6bc64ec89107244018fea247e9ead4c3",
+          "bytes": 237977
+        },
+        "git_blob": "158248acf61ca4cef6341cf131028114b1a8ca3e",
+        "blob_and_size_match_official_pinned_tree": true
+      }
+    ],
+    "exact_occurrences": [
+      {
+        "path": "3sum-apsp/ThreeSumApsp/Sec3/Theorem21b/PathsAndWalks.lean",
+        "declaration": "ThreeSumApsp.exists_walk_of_path",
+        "line": 42
+      },
+      {
+        "path": "3sum-apsp/ThreeSumApsp/Sec3/Theorem21b/PathsAndWalks.lean",
+        "declaration": "ThreeSumApsp.path_of_walk",
+        "line": 54
+      },
+      {
+        "path": "3sum-apsp/ThreeSumApsp/Sec3/Theorem21b/PathsAndWalks.lean",
+        "declaration": "ThreeSumApsp.noNegativeCycle_toTop",
+        "line": 76
+      },
+      {
+        "path": "3sum-apsp/EndStatement.lean",
+        "declaration": "EndStatement.Path",
+        "line": 110
+      },
+      {
+        "path": "3sum-apsp/PaperStatements.lean",
+        "declaration": "ThreeSumApsp.walkEnd",
+        "line": 1089
+      },
+      {
+        "path": "3sum-apsp/PaperStatements.lean",
+        "declaration": "ThreeSumApsp.walkWeight",
+        "line": 1095
+      },
+      {
+        "path": "3sum-apsp/PaperStatements.lean",
+        "declaration": "ThreeSumApsp.IsDistanceMatrix",
+        "line": 1108
+      }
+    ],
+    "source_model": "The graph is w : Fin n -> Fin n -> Option Int, storing at most one optional weight per ordered vertex pair. EndStatement.Path w i j d is an inductive Prop indexed by endpoints and total integer weight. PaperStatements.walkEnd and walkWeight recurse over a start vertex plus a vertex list, with a missing edge represented as WithTop.top.",
+    "actual_correspondence": "exists_walk_of_path turns a supplied weighted Path proof into a vertex-list walk with the same endpoint and finite weight. path_of_walk consumes an actual finite total-weight equation to produce Path. noNegativeCycle_toTop additionally consumes nonnegativity of every closed weighted Path. Distance consequences consume an actual IsDistanceMatrix premise; they do not manufacture it.",
+    "transfer_limits": [
+      "These source theorems relate endpoints and total weights in the fixed optional-weight graph model. They are not an injective serialization of arbitrary multigraph arrows or of path derivation identities.",
+      "A graph indexed by a single Option weight per vertex pair does not encode two separately identified parallel arrows. It cannot discharge Hom-subsingleton-free vertex reconstruction for the local Bool counterexample.",
+      "No representation map between that weighted graph and our general quiver/single-object model is formalized. No theorem or code is ported from these Anthropic files."
+    ],
+    "rights": "Original Anthropic, PBC 2026 Apache-2.0/SPDX headers retained in all archived raw snapshots. No upstream source execution or native replay by this scout.",
+    "upstream_acceptance": "SOURCE_INSPECTED_ONLY; no admission from this scout"
+  },
+  "fresh_arxiv_search_boundary": {
+    "queries": [
+      "site:arxiv.org directed multigraph path parallel edges vertex sequence paths",
+      "site:arxiv.org quiver paths parallel arrows distinct paths",
+      "site:arxiv.org \"quiver\" \"sequence of arrows\" \"path\"",
+      "site:arxiv.org \"multigraph\" \"vertex sequence\" \"edges\" path"
+    ],
+    "scope": "Bounded searches returned mostly path algorithms, geometric paths and special representation-algebra results. None was selected as the exact source of the local occurrence/parallel-arrow theorem; no direct correspondence was invented.",
+    "mellin_primary_scout": {
+      "path": "evidence/Analysis/MellinTransform/reverse-inversion-source-review-2026-10-15.json",
+      "sha256": "3dac646a70e9b030f73057ae27da4aca6148abb991443574731807ba93c3977d",
+      "selected_arxiv_id": "1509.08235v1",
+      "reason": "The same assigned scout freshly inspected the primary Mellin/Fourier normalization paper; its distinct analytic premises and a.e. versus pointwise scope are recorded under Analysis/MellinTransform."
+    }
+  },
+  "observed_author_development_evidence": {
+    "checks": [
+      {
+        "kind": "library",
+        "trust": 0,
+        "fatal_warnings": true,
+        "exit_code": 0,
+        "receipt": ".local/path-occurrences/20261015T190710.762504Z-library.json"
+      },
+      {
+        "kind": "positive_control",
+        "trust": 0,
+        "fatal_warnings": true,
+        "exit_code": 0,
+        "receipt": ".local/path-occurrences/20261015T190755.180005Z-positive.json"
+      },
+      {
+        "kind": "hostile_control",
+        "trust": 0,
+        "fatal_warnings": true,
+        "exit_code": 1,
+        "passed_intended_type_mismatch": true,
+        "receipt": ".local/path-occurrences/20261015T190755.822197Z-negative.json",
+        "exact_diagnostic": "/Users/think/Desktop/math/GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PathMissingEdgeIdentity.lean:7:2: error: Type mismatch\n  rfl\nhas type\n  (parallelLoop false).vertices = (parallelLoop false).vertices\nbut is expected to have type\n  parallelLoop false = parallelLoop true\n"
+      },
+      {
+        "kind": "repository_layout",
+        "receipt": ".local/path-occurrences/20261015T191016.228631Z-layout.json",
+        "command": [
+          "python3",
+          "-B",
+          "scripts/check_math_layout.py"
+        ],
+        "exit_code": 1,
+        "summary": "Math layout: FAIL (361 library modules, 183 findings).",
+        "owned_findings": [
+          "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PathMissingEdgeIdentity.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources",
+          "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PathOccurrences.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources",
+          "GRWTSK/Combinatorics/DirectedGraph/PathOccurrences.lean: library-module-outside-public-closure [GRWTSK.Combinatorics.DirectedGraph.PathOccurrences]: library module is not reachable from GRWTSK.lean",
+          "GRWTSK/Combinatorics/DirectedGraph/PathOccurrences.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources"
+        ],
+        "log": ".local/path-occurrences/20261015T191016.228631Z-layout.log"
+      },
+      {
+        "kind": "owned_whitespace",
+        "receipt": ".local/path-occurrences/20261015T191016.228631Z-whitespace.json",
+        "findings": [],
+        "all_git_checks_clean": true
+      }
+    ],
+    "failures_preserved": [
+      ".local/path-occurrences/20261015T190617.553468Z-library.json and original source variant (initial proof/syntax issues).",
+      ".local/path-occurrences/20261015T190711.458394Z-positive.json and original variant (local instance style/inference errors); final positive uses explicit genuine graph adjacency quiver instance."
+    ],
+    "interpretation": "Native statuses here are the author event report, not independent reviewer replay. Global layout failure, uncataloged/unreachable owned paths pending root registration, and failed earlier source variants remain preserved. Later root registration and fresh audit are separately owned.",
+    "root_native_receipt_pointer": "evidence/Combinatorics/DirectedGraph/path-occurrences-checks-2026-10-15.json",
+    "reviewer_native_replay": "NOT_RUN"
+  },
+  "attribution": {
+    "local": "R.A. Jacob Martone mathematical direction; OpenAI Codex formal assistance. Local source MIT.",
+    "mathlib": "Path: David Waern, Kim Morrison, Matteo Cipollina, Runtian Zhou; Path.Vertices: Matteo Cipollina; SingleObj: Antoine Labelle. Original Apache-2.0 headers/imports untouched.",
+    "review": "Source selection and bounded review by cache_taxonomy agent; correlated with implementation workflow."
+  },
+  "finding": "No actionable omitted hypothesis, list-orientation mismatch or false reconstruction conclusion found in the bounded final-source read. The graph guide correctly limits faithful edge-list reconstruction to SingleObj and vertex reconstruction to Hom subsingletons.",
+  "remaining_limits": [
+    "No arbitrary DAG unfolding or single-address representation of every source vertex is constructed.",
+    "Typed ancestry, reachability, proof implication, provenance, communication and governance roles remain distinct unless a concrete bridge is proved.",
+    "No candidate taxonomy import, edit, native receipt rebinding or NOT_RUN promotion.",
+    "No JSON/Python/cache hash or IO refinement, operational global-cache acceptance or 215-method identity inventory follows.",
+    "Root owns fresh complete closure/declaration/axiom audit and source/documentation/cache integration."
+  ]
+}

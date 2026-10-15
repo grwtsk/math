@@ -1,0 +1,237 @@
+{
+  "schema": "reverse-mellin-source-review-v1",
+  "task": "cache/coordination/tasks/path-mellin-source-scout.json",
+  "at": "2026-10-15T19:10:52.614828+00:00",
+  "status": "complete-bounded-correlated-source-review",
+  "review_boundary": {
+    "independent_validation": false,
+    "correlation": "Same agent team/model research workflow; bounded source, premise and control review only.",
+    "native_jobs_by_reviewer": "NOT_RUN",
+    "code_or_shared_metadata_edits": false,
+    "commits_or_remote_effects": false
+  },
+  "final_source_bindings": {
+    "completion": {
+      "path": "cache/coordination/events/reverse-mellin-complete-e0e7d0d7bf774046a613820141fc486c.json",
+      "sha256": "51e09cf5fbef9b6c73dbecb20038e9a96aea4eb13df3a194cbc5b85ac96301c3"
+    },
+    "sources": [
+      {
+        "path": "GRWTSK/Analysis/MellinTransform/ReverseInversion.lean",
+        "sha256": "88d959d74d9d5e27772f57e847497b9a943167cc41ae6abb453c3932cbb84c57",
+        "bytes": 8017
+      },
+      {
+        "path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/ReverseInversion.lean",
+        "sha256": "10073b9002b7bfa89fe59764adf488b7ff24328fcf976efc930d7a9bdab37259",
+        "bytes": 1215
+      },
+      {
+        "path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/ReverseInversionMissingPremise.lean",
+        "sha256": "7b1f38a5c2ae34030c0c41048f6b0195eda53e3577f075edaebee8286c699ebd",
+        "bytes": 2483
+      }
+    ],
+    "all_three_final_hashes_match": true,
+    "counterexample_prefix": {
+      "marker": "-- Intended rejection:",
+      "marker_occurrences": 1,
+      "sha256": "506367e16bd6ba4e0204995690ad290434ab8c24c0e9100d1b098c3f174d2386",
+      "bytes": 2098,
+      "scope": "All seven named counterexample declarations precede the sole intended rejection. The prefix is separately replayed by the author; failure of the whole negative file alone is not positive proof evidence."
+    }
+  },
+  "official_openai_source": {
+    "repository": "https://github.com/openai/math",
+    "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+    "path": "lean/OAI/NumberTheory/DirichletL/ContinuationInversion.lean",
+    "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/ContinuationInversion.lean",
+    "raw_url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/ContinuationInversion.lean",
+    "snapshot": {
+      "path": ".local/path-mellin/source-scout/4224d50b17af41118b3eadfe73437062/openai/lean/OAI/NumberTheory/DirichletL/ContinuationInversion.lean",
+      "sha256": "166139695fcd8753df43d21f7e0b3a5a0ffc774bd75d0535fb4d0b33757170d8",
+      "bytes": 5378
+    },
+    "git_blob": "9ccdbb58a4af00f4b9afc496da448dc26783d547",
+    "fresh_raw_fetch_blob_verified": true,
+    "selected_declarations": [
+      "integrable_logProfile",
+      "mellin_mellinInv_eq"
+    ],
+    "selected_statement_and_proof_text_exact_match": true,
+    "comparison": "Exact text from theorem integrable_logProfile through end of mellin_mellinInv_eq, with outer leading/trailing blank space removed; namespace/import/header not part of comparison. This is source bookkeeping, not Lean parsing or proof acceptance.",
+    "selected_text_sha256": "5b44a87243aab305d855c7cf676daca7bff3b73cc667d5a0d5a411b73c4919a5",
+    "excluded_scope": "normalizedSignal, signalMellin_eq_on_line and the DirichletL continuation import are not ported or admitted by this file."
+  },
+  "exact_contract_and_proof_review": {
+    "profile": "MellinConvergent f (sigma : Complex) is integrability on x>0 of x^(sigma-1) smul f(x). The helper uses the bijection x=exp(-u), its absolute derivative exp(-u), and complex-power cancellation to prove Integrable (u -> exp(-sigma*u) smul f(exp(-u))).",
+    "reverse_hypotheses": [
+      "sigma is real, F : Complex -> Complex, f : Real -> Complex.",
+      "MellinConvergent f (sigma : Complex).",
+      "The actual scaled line A(y)=F(sigma+2*pi*y*I) is Integrable over real volume.",
+      "That same A is Continuous.",
+      "For every real x>0, f(x)=mellinInv sigma F x."
+    ],
+    "conclusion": "For every real y, mellin f (sigma+2*pi*y*I)=F(sigma+2*pi*y*I).",
+    "normalization": "Mathlib mellin_eq_fourier evaluates the Fourier transform of exp(-sigma*u) smul f(exp(-u)) at s.im/(2*pi). mellinInv_eq_fourierInv evaluates inverse Fourier at -log x and multiplies by x^(-sigma). Consequently the reverse target is exactly sigma+2*pi*y*I; sign and 2*pi factors are not optional.",
+    "proof": "The representation premise identifies the integrable log profile g with inverse Fourier of A. Its reflected argument provides Fourier(A) integrability. Integrable.fourier_fourierInv_eq then applies to A using its actual continuousAt premise. No continuity is inferred from integrability alone.",
+    "no_removed_premise": "All upstream hypotheses and proof bodies are retained. The generic theorem does not derive inverse representation, Mellin convergence, spectral line integrability, analytic continuation or arithmetic hypotheses from names or formulas."
+  },
+  "genuine_nonzero_consumer_review": {
+    "signal": "logarithmicGaussian(x)=Complex.exp(-pi*(Real.log x)^2); only x>0 enters Mellin integration.",
+    "candidate_transform": "gaussianMellin(s)=Complex.exp(s^2/(4*pi)).",
+    "actual_scope": "sigma=0 and all real y on s=2*pi*y*I.",
+    "proved_suppliers": [
+      "gaussianMellin_on_line proves the line function is exp(-pi*y^2).",
+      "logarithmicGaussian_convergent proves the full weighted Mellin integrability via the positive-half-line logarithmic change of variables and pinned Gaussian integrability; it does not assume the result of reverse inversion.",
+      "gaussianMellin_line_integrable and gaussianMellin_line_continuous prove the actual scaled-line inputs.",
+      "logarithmicGaussian_inverse proves the representation for every x>0 using the pinned mellinInv_eq_fourierInv and fourier_gaussian_pi at b=1.",
+      "logarithmicGaussian_mellin applies the retained generic reverse theorem to those four proved inputs.",
+      "logarithmicGaussian_one proves f(1)=1; the positive file also proves f(1) != 0 and mellin f 0=1."
+    ],
+    "limits": "The source proves the zero-real-part line identity. Defining the complex expression gaussianMellin(s) is not a proof of the Mellin integral identity at every complex s or of an arithmetic continuation theorem."
+  },
+  "actual_continuity_obstruction_review": {
+    "data": "pointSpike(s)=1 if s=0 and 0 otherwise; f is the zero signal and sigma=0.",
+    "proved_before_rejection": [
+      "The scaled line is 1 at y=0 and 0 elsewhere.",
+      "The line is zero almost everywhere and integrable.",
+      "The zero signal is MellinConvergent at 0.",
+      "For every x>0 its inverse Mellin integral is zero, using the actual inverse-Fourier a.e. congruence API.",
+      "mellin zero 0 != pointSpike 0, by direct simplification of the actual Mellin integral and spike.",
+      "The scaled line is not Continuous: hypothesizing continuity and applying the valid retained theorem to all other proved inputs contradicts failed recovery."
+    ],
+    "final_rejection": "The sole failing example passes pointSpike_line_integrable in the required continuity position. The supplied term is an actual Integrable proof, not Continuous, so this is the intended missing-premise rejection.",
+    "control_distinction": "Checks/Positive/ReverseInversion.lean contains generic and nonzero Gaussian consumers. The point-spike proof is the separately compiled prefix of Checks/Negative/ReverseInversionMissingPremise.lean, not a claim obtained merely from its final whole-file error."
+  },
+  "fresh_primary_arxiv_review": {
+    "fresh_browsing": true,
+    "scope": "Targeted, bounded and non-exhaustive searches for Mellin/Fourier inversion normalization and continuity; numerical/physics-specific inversions were not used as exact theorem evidence.",
+    "queries": [
+      "site:arxiv.org Mellin inversion Fourier transform logarithmic normalization continuity inversion formula",
+      "site:arxiv.org Mellin transform inversion weighted Fourier L1 continuous inverse",
+      "site:arxiv.org Mellin inversion theorem continuous point L1 Fourier",
+      "site:arxiv.org \"Mellin inversion\" \"continuity\"",
+      "site:arxiv.org \"Mellin\" \"2π\" \"inverse Fourier\""
+    ],
+    "selected_source": {
+      "id": "1509.08235v1",
+      "title": "On the Paley-Wiener theorem in the Mellin transform setting",
+      "authors": [
+        "Carlo Bardaro",
+        "Paul L. Butzer",
+        "Ilaria Mantellini",
+        "Gerhard Schmeisser"
+      ],
+      "submitted_utc": "2015-09-28T08:42:06Z",
+      "version_url": "https://arxiv.org/abs/1509.08235v1",
+      "read_url": "https://arxiv.org/pdf/1509.08235v1",
+      "locations": [
+        "Section 2, Mellin definition, PDF page 4",
+        "Section 2, inverse definition and Lemma 1, PDF page 5"
+      ],
+      "correspondence": "The paper uses M f(s)=integral_0^infinity x^(s-1)f(x) dx and inverse x^(-c)/(2*pi) times integral g(c+it)x^(-it)dt. Its Xc condition is weighted L1. Lemma 1 gives forward inversion almost everywhere when f is in Xc and its line transform is L1.",
+      "limits": "This selected statement is forward composition and a.e. equality. It does not justify deleting the reverse theorem continuity or representation hypotheses, nor does it provide the exact local Gaussian supplier proof. Source correspondence is contextual; no theorem or proof port from this paper is claimed."
+    }
+  },
+  "pinned_mathlib_context": {
+    "lean": "leanprover/lean4:v4.33.0",
+    "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "sources": [
+      {
+        "path": "lean-toolchain",
+        "sha256": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
+        "bytes": 25
+      },
+      {
+        "path": "lake-manifest.json",
+        "sha256": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
+        "bytes": 3577
+      },
+      {
+        "path": ".lake/packages/mathlib/Mathlib/Analysis/MellinInversion.lean",
+        "sha256": "72c7c31cd6742d24384267526a82106b4c9a0ad968220e4cfcaa495e766e3b07",
+        "bytes": 5575
+      },
+      {
+        "path": ".lake/packages/mathlib/Mathlib/Analysis/MellinTransform.lean",
+        "sha256": "81851086004a6e5424da555061a4b2f9d2e7cece148d9d49c3537a05adba73ff",
+        "bytes": 25264
+      },
+      {
+        "path": ".lake/packages/mathlib/Mathlib/Analysis/Fourier/Inversion.lean",
+        "sha256": "c16e758b0c905129a50059a319bedab96c3246474ef8f7ea8a9f40cda544ea01",
+        "bytes": 9554
+      },
+      {
+        "path": ".lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Gaussian/FourierTransform.lean",
+        "sha256": "6bdd5e351d714198761da26ce7eac19a140a54218e9902dcf4fd41616d311523",
+        "bytes": 17152
+      }
+    ],
+    "exact_apis": [
+      {
+        "path": ".lake/packages/mathlib/Mathlib/Analysis/MellinInversion.lean",
+        "declaration": "mellin_eq_fourier",
+        "line": 49
+      },
+      {
+        "path": ".lake/packages/mathlib/Mathlib/Analysis/MellinInversion.lean",
+        "declaration": "mellinInv_eq_fourierInv",
+        "line": 72
+      },
+      {
+        "path": ".lake/packages/mathlib/Mathlib/Analysis/Fourier/Inversion.lean",
+        "declaration": "MeasureTheory.Integrable.fourier_fourierInv_eq",
+        "line": 183
+      }
+    ],
+    "attribution": "Local source retains OpenAI Apache-2.0, Lawrence Wu for Mellin inversion, Sebastien Gouezel for Fourier Gaussian and David Loeffler for Mellin transforms; human direction R.A. Jacob Martone, formal assistance OpenAI Codex. No novelty claim."
+  },
+  "observed_author_evidence": {
+    "verification": {
+      "receipt": ".local/reverse-mellin/eb213f626b4b435386b51e98d71035af/final/receipt.json",
+      "receipt_sha256": "cb01ab32c60b41efbca7dbc6356c4de6a5564d3cb40130012dfaad8aa58d49f0",
+      "library": "PASS",
+      "positive": "PASS",
+      "proved_counterexample_prefix": "PASS",
+      "negative": "PASS_EXPECTED_SINGLE_TYPE_MISMATCH",
+      "trust": 0,
+      "fatal_warnings": true,
+      "pinned_lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+      "dependency_objects_reused": true,
+      "canonical_project_objects_excluded": true,
+      "sources_stable": true,
+      "source_whitespace": "PASS",
+      "upstream_statement_proof_preservation": "PASS",
+      "owned_declaration_axiom_audit": "NOT_RUN_ROOT_OWNS",
+      "root_fresh_closure_census": "PENDING",
+      "native_jobs_running": 0,
+      "all_children_exited": true,
+      "shared_replay_lock": "RELEASED"
+    },
+    "failed_attempts_preserved": "All scratch source variants/receipts/logs retained in attempts; exact initial Gaussian and point-spike API/coercion failures were corrected without weakening assumptions.",
+    "layout_check": {
+      "command": "python3 -B scripts/check_math_layout.py",
+      "exit_code": 1,
+      "summary": "Math layout: FAIL (361 library modules, 183 findings).",
+      "log": ".local/reverse-mellin/eb213f626b4b435386b51e98d71035af/math-layout.log",
+      "sha256": "f311e6c5ab42955ed609fe7d3c5033d8fb2b650aaae4619aa6f7054b2b47f991",
+      "owned_findings": [
+        "GRWTSK/Analysis/MellinTransform/Checks/Negative/ReverseInversionMissingPremise.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources",
+        "GRWTSK/Analysis/MellinTransform/Checks/Positive/ReverseInversion.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources",
+        "GRWTSK/Analysis/MellinTransform/ReverseInversion.lean: library-module-outside-public-closure [GRWTSK.Analysis.MellinTransform.ReverseInversion]: library module is not reachable from GRWTSK.lean",
+        "GRWTSK/Analysis/MellinTransform/ReverseInversion.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources"
+      ],
+      "interpretation": "Four owned findings are pending active-source catalog registration and GRWTSK.lean public import, both root-owned integration. No owned mathematical naming/placement violation is reported. Concurrent and pre-existing findings remain preserved."
+    },
+    "interpretation": "Author receipt is development evidence. Its global layout failure and initial failed source variants remain failures; later root registration/audit is a separate source-bound act. This reviewer ran no native job.",
+    "root_native_receipt_pointer": "evidence/Analysis/MellinTransform/reverse-mellin-checks-2026-10-15.json"
+  },
+  "finding": "No actionable omitted hypothesis, normalization mismatch, circular supplier or zero-only consumer found in this bounded final-source read. A draft-guide wording correction was sent to root: the spike is checked in the separately compiled negative-source prefix, while positive-source consumers are generic/Gaussian.",
+  "remaining_limits": [
+    "No independent model review, upstream full-corpus replay or whole-library acceptance is claimed.",
+    "No JSON/Python/cache refinement, arithmetic supplier, zero-free region or Riemann hypothesis result follows.",
+    "Root owns fresh native closure/declaration/axiom audit, source registration and documentation admission."
+  ]
+}

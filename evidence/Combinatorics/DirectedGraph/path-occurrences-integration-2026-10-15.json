@@ -1,0 +1,63 @@
+{
+  "schema": "selected-mathematical-integration-v1",
+  "at": "2026-10-15T19:14:22.979549+00:00",
+  "native_receipt": {
+    "path": "evidence/Combinatorics/DirectedGraph/path-occurrences-checks-2026-10-15-r2.json",
+    "sha256": "726c4e8003ec7120739b538bb9918503df1b1305b873fbe93f99e7540a16afe2"
+  },
+  "earlier_receipt_retained": {
+    "path": "evidence/Combinatorics/DirectedGraph/path-occurrences-checks-2026-10-15.json",
+    "sha256": "e01f9abc8a731c5b8bd8260668c6264a92c8ccf660644e285e62cdc1f968542f"
+  },
+  "source_review": {
+    "path": "evidence/Combinatorics/DirectedGraph/path-occurrences-source-review-2026-10-15.json",
+    "sha256": "c8c55d6759e05a118ab1e0de7eb5be6fcbc5f76ec601d06aa4c020c9b91ca9f6"
+  },
+  "driver_guard_controls": {
+    "path": "evidence/Logic/ProofChecking/selected-replay-guard-controls-2026-10-15.json",
+    "sha256": "c9d8b480d0b2225d8a9439fdbfbfce6adadfa62ecd9ae997f14dcfb4b1b796d0"
+  },
+  "source": {
+    "path": "GRWTSK/Combinatorics/DirectedGraph/PathOccurrences.lean",
+    "sha256": "b2b140e2f370d07ef866e81ebb93580ed706d64ad463377fcce82df37c4a39e5"
+  },
+  "contribution_roles": [
+    "R.A. Jacob Martone: human mathematical direction",
+    "OpenAI Codex: adaptation/formalization/checking; model reviews correlated",
+    "Lean and Mathlib: imported definitions/proofs and source authors; licenses retained"
+  ],
+  "limits": [
+    "Fresh selected project/control objects only; pinned dependency objects reused and fingerprinted.",
+    "Generated project object families frozen/rechecked; exact full coded/plain error count for negative rejection.",
+    "No cold Mathlib rebuild, whole-library acceptance, independent review, arithmetic/RH supplier or operational cache refinement.",
+    "Historical failed and r1 passed receipts retained; current acceptance binds current r2 driver and exact sources."
+  ],
+  "owned_declarations": 18,
+  "owned_modules": [
+    {
+      "declarations": 18,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences"
+    },
+    {
+      "declarations": 0,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PathOccurrences"
+    }
+  ],
+  "exact_contracts": [
+    "Actual typed Quiver.Path chronological vertices include both endpoints; explicit reverse/toList conversion.",
+    "Composition retains complete left vertices as ordered prefix; old positions fixed; actual typed prefix/suffix witnesses at each valid occurrence.",
+    "Distinct indices yield distinct dependent prefix occurrences, even for repeated source vertices.",
+    "Chronological complete edge identity composes and reconstructs actual SingleObj paths through existing pathEquivList.",
+    "General vertex reconstruction requires every hom space subsingleton; reuses existing Mathlib toList_injective."
+  ],
+  "native_controls": [
+    "Actual SimpleGraph adjacency lifted as arrows supplies uniqueness; exact safe vertex reconstruction.",
+    "Actual Bool parallel loops share fixed endpoints, length and vertices yet are unequal; same actual edge lists distinguish them.",
+    "Sole final negative mismatch rejects vertex equality as equality of parallel paths."
+  ],
+  "separate_open_obligations": [
+    "General dependent edge serializer or arbitrary DAG unfolding not constructed.",
+    "Typed source/display occurrences and relation-role exact JSON correspondence remain open.",
+    "Taxonomy/classification candidates retain NOT_RUN;215 declared method identities unprovided."
+  ]
+}
