@@ -1,0 +1,44 @@
+/-
+Human mathematical direction: grwtsk contributors.
+Candidate implementation: OpenAI ChatGPT. MIT.
+INACTIVE CANDIDATE, uncompiled and unaudited. Intended subject path:
+GRWTSK/Analysis/Asymptotics/SupportRate.lean.
+These algebraic consumers do not supply a Weil lower bound or RH theorem.
+-/
+import Mathlib.Tactic
+set_option autoImplicit false
+
+namespace GRWTSK.Analysis.Asymptotics.SupportRate
+
+/-- Cross-multiplied Rayleigh estimate keeps the true test norm N and cost C. -/
+theorem rayleigh_cross (W M C E N : ℝ) (hM : 0 < M) (hC : 0 < C)
+    (hW : W ≤ -M / 2) (hN : E * N ≤ C) :
+    2 * C * W ≤ -(M * E) * N := by
+  have h₁ := mul_le_mul_of_nonneg_left hW (show 0 ≤ 2 * C by positivity)
+  have h₂ := mul_le_mul_of_nonneg_left hN (le_of_lt hM)
+  nlinarith
+
+/-- Identity behind the approach to the fixed-pair exponential-type rate. -/
+theorem rate_gap (b ell : ℝ) (hell : 0 < ell) :
+    2 * b - 2 * (ell * b - 7 / 10) / (ell + 2) =
+      (4 * b + 7 / 5) / (ell + 2) := by
+  have hd : ell + 2 ≠ 0 := by linarith
+  field_simp [hd]
+  ring
+
+/-- Exact finite parameter choice; b is a positive displacement, not height. -/
+theorem requested_rate (b ell r : ℝ) (hell : 0 < ell)
+    (h : 2 * r + 7 / 5 < ell * (2 * b - r)) :
+    r < 2 * (ell * b - 7 / 10) / (ell + 2) := by
+  apply (lt_div_iff₀ (show 0 < ell + 2 by linarith)).2
+  nlinarith
+
+/-- Exclusion from any genuinely supplied rate comparison. -/
+theorem collar (d alpha : ℝ) (h : 2 * d ≤ alpha) : d ≤ alpha / 2 := by
+  linarith
+
+/-- A zero upper rate forces the nonnegative displacement to vanish. -/
+theorem zero_rate (d : ℝ) (hd : 0 ≤ d) (h : 2 * d ≤ 0) : d = 0 := by
+  linarith
+
+end GRWTSK.Analysis.Asymptotics.SupportRate
