@@ -1,0 +1,12 @@
+{
+  "schema": "repository-agent-task-v1",
+  "id": "joint-graph-source-scout",
+  "at": "2026-10-15T18:25:05.556840+00:00",
+  "owner": "cache_taxonomy",
+  "branch": "main",
+  "base_commit": "744842446576b7bcc73b3dd29015eb780f4e4a43",
+  "cache_revision": "3a28e10b8ef6e3f74b358bf0df38c038ac59a0c5a89738c5f5ca11aa229d7e03",
+  "write_paths": [],
+  "objective": "Pinned actual Anthropic and current primary arxiv source review of dense graph cores, semantic proof reuse, source identity and exact hypotheses; no proof/refinement by analogy.",
+  "coordination": "Immutable event with exact final source hashes, verification states, remaining root audit and preserved failures. No prior source edits, shared metadata edits, commits or remote effects."
+}

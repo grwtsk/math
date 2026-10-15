@@ -1,0 +1,15 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "joint-graph-source-scout",
+  "event": "primary-source-progress",
+  "at": "2026-10-15T18:26:20.267770+00:00",
+  "arxiv_primary": "https://arxiv.org/pdf/1507.00562v1",
+  "bounded_reinspection": "Fresh browse of Theorem4.1.3h and nearby4.1.3i/j, PDFpp41\u201343, retaining smooth-weight/cutoff and actual graph-approximation conditions.",
+  "findings": [
+    "Pinned OpenAI core theorem explicitly assumes Dense D for D:Set(jointGraph T S), with simultaneous triple coordinates(v,T-adjoint v,Sv). Continuity of all three norm expressions permits closed-set extension of the actual D-estimate.",
+    "The notes display separate approximation sequences for adjoint and S graphs under explicit analytic hypotheses. This is not by itself the local simultaneous jointGraph density premise. Coordinatewise dense projections do not generally establish density in a product/subtype topology.",
+    "The empty core makes a universal estimate vacuous; it supplies no nontrivial solvability without the density premise.",
+    "Pinned Anthropic Ends.append consumes an existing same-Q execution certificate; it does not prove arbitrary predicates after appending history rows. Any full-history certificate must carry its full-history predicate proof or an explicit preservation theorem."
+  ],
+  "scope": "New batch/joint modules not yet present at this observation. Final-source comparison and immutable evidence pending; no source/metadata/native mutation."
+}

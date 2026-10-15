@@ -1,0 +1,9 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "joint-graph-formal",
+  "event": "native-lock-released",
+  "at": "2026-10-15T18:28:09.972583+00:00",
+  "sequence": "attempt01",
+  "native_jobs_running": false,
+  "note": "Each subprocess returned before this event; lock releases on leaving context."
+}

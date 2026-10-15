@@ -1,0 +1,14 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "joint-graph-formal",
+  "event": "start",
+  "at": "2026-10-15T18:26:46.348266+00:00",
+  "archive": ".local/joint-graph/f373c91f346b4ec7832ba8f9fe66905f",
+  "native_state": "No native jobs running; writing sources first. Other formal agent may run its locked BatchCertificate sequence first. All worker Lean children will use shared replay lock and competing-job guard.",
+  "scope": "Port exact jointGraph and core-estimate theorem, preserving complete E/F and no completeness of H, actual subtype topology/density, estimate on D, all operator/kernel/epsilon assumptions. No prior accepted-source edits.",
+  "mathlib_scout": {
+    "pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "manifest": ".local/joint-graph/f373c91f346b4ec7832ba8f9fe66905f/mathlib-scout.json",
+    "manifest_sha256": "0b9686b2d25d7cf06ff675e9c245f3a23037b2bb120143cf9b6e042b58700c9d"
+  }
+}

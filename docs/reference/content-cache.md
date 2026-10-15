@@ -38,6 +38,10 @@ Its [composition law](../mathematics/Logic/FiniteSequences/incremental-compositi
 equates actual decoded histories for sequential and concatenated batches.
 Checked unequal representations show why this does not identify numeric slots
 or serialized bytes across batching choices.
+The [batch certificate theorem](../mathematics/Logic/FiniteSequences/batch-certificate.md)
+reuses actual evidence for the complete appended history across those different
+representations. A checked counterexample prevents automatic inheritance of
+an arbitrary predicate from the old history.
 
 The repository also contains finite dependency-closure and selective revision
 models in `GRWTSK/Order/Closure/FiniteDependencyClosure.lean` and
@@ -86,6 +90,9 @@ The [composition decision](../../cache/decisions/incremental-composition-v1.json
 requires an explicit choice between decoded-history comparison and exact
 representation comparison; successful decoding cannot silently substitute for
 byte custody or a source identity.
+The [full-history evidence decision](../../cache/decisions/batch-certificate-v1.json)
+requires actual evidence for all current decoded premises. Preserving old
+storage slots does not establish an arbitrary predicate after new rows arrive.
 
 The incoming prefix-tree taxonomy does not directly cover every acyclic diamond
 allowed by the method taxonomy. The earlier identity-only history guard

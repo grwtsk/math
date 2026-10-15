@@ -1,0 +1,8 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "joint-graph-formal",
+  "event": "prefix-lock-released",
+  "at": "2026-10-15T18:29:01.937636+00:00",
+  "all_worker_native_jobs_finished": true,
+  "source_edits_finished": true
+}

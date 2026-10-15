@@ -1,0 +1,57 @@
+{
+  "schema": "joint-graph-integration-v1",
+  "at": "2026-10-15T18:32:20.613774+00:00",
+  "native_receipt": {
+    "path": "evidence/Analysis/InnerProductSpace/joint-graph-checks-2026-10-15.json",
+    "sha256": "58d22e7bd3bbbedb25e9b2c444ee269e6c759edae5d605dc7ddfe1771e8cf33a",
+    "owned_closure_declarations": 5,
+    "new_module_owned_declarations": 2,
+    "trust": 0,
+    "fatal_warnings": true,
+    "allowed_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "exact_contracts": [
+    "RCLike scalars; complete E,F; H an inner product space with no completeness premise.",
+    "Dense actual T.domain; T and S closed graphs; actual graph relation range(T) subset kernel(S).",
+    "D is dense in the actual jointGraph subtype of F × E × H; epsilon>0 and universal squared coercive estimate on D.",
+    "Closed inequality extends from Dense D to all jointGraph; actual domain triple supplies admitted full-domain complex estimate; actual target is in S graph kernel.",
+    "Actual domain solution T u=f with norm u<=norm f/sqrt epsilon. Identity/zero full-core consumer succeeds; zero/zero empty core has vacuous estimate but is not dense and target1 is unsolvable."
+  ],
+  "controls": {
+    "GRWTSK/Analysis/InnerProductSpace/ClosedOperatorSolvability.lean": "passed",
+    "GRWTSK/Analysis/InnerProductSpace/ClosedComplexSolvability.lean": "passed",
+    "GRWTSK/Analysis/InnerProductSpace/JointGraphSolvability.lean": "passed",
+    "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/JointGraphSolvability.lean": "passed",
+    "SelectedAudit.lean": "passed",
+    "GRWTSK/Analysis/InnerProductSpace/Checks/Negative/JointGraphMissingDensity.lean": "passed"
+  },
+  "source_review": "evidence/Logic/FiniteSequences/batch-certificate-source-review-2026-10-15.json",
+  "contribution_roles": [
+    {
+      "actor": "grwtsk contributors",
+      "role": "human mathematical direction"
+    },
+    {
+      "actor": "OpenAI Codex and delegated agents",
+      "role": "local formalization/adaptation, controls, source scouting and correlated source review"
+    },
+    {
+      "actor": "Lean and Mathlib contributors",
+      "role": "upstream exact interfaces and proofs"
+    },
+    {
+      "actor": "OpenAI",
+      "role": "upstream Apache-2.0 formalization author for pinned ComplexSolvability jointGraph/core theorem"
+    }
+  ],
+  "limits": [
+    "Concrete analytic/arithmetic operators, actual graph-core density and coercive estimate are suppliers, not conclusions.",
+    "No separate-coordinate or finite-sample density substitute.",
+    "No manuscript main result, novelty, RH proof, cold dependency rebuild, whole-library acceptance or independent validation."
+  ],
+  "preservation": "Previous accepted sources, failed/stale receipts and NOT_RUN candidates retained without rebinding. Development archives .local/batch-certificate/ and .local/joint-graph/."
+}

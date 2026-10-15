@@ -1,0 +1,17 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "batch-certificate-formal",
+  "status": "in_progress",
+  "owner": "indexed_dictionary",
+  "owned_paths": [
+    "GRWTSK/Logic/FiniteSequences/BatchCertificate.lean",
+    "GRWTSK/Logic/FiniteSequences/Checks/Positive/BatchCertificate.lean",
+    "GRWTSK/Logic/FiniteSequences/Checks/Negative/BatchCertificateMissingEvidence.lean"
+  ],
+  "continuation_read": "cache/coordination/continuations/2026-10-15-incremental-composition.json",
+  "design": "Use actual DecisionCertificate.DecodesSatisfying and Certificate.reuse_of_same_decoding with accepted IncrementalComposition decoder equalities. Generic reuse requires certificate.entries = complete oldRows++first++second; stored old evidence alone will not imply an arbitrary predicate of the appended list.",
+  "native_coordination": "cache_adapter confirmed no running native jobs and will use same replay lock/preflight. This worker may run its short development sequence first, then notify release.",
+  "remaining": [
+    "Implement generic seq/combined semantic equivalence and exact full-history certificate reuse, successful unequal-representation fixture and checked old-predicate append failure."
+  ]
+}

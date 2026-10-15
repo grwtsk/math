@@ -51,7 +51,9 @@ The [source](../../../../GRWTSK/Analysis/InnerProductSpace/ClosedOperatorSolvabi
 adapts only the first two supporting results from OpenAI's
 [ComplexSolvability formalization](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/Analysis/InnerProductSpace/ComplexSolvability.lean).
 The subsequent [Hilbert-complex estimate](closed-complex-solvability.md) has its
-own source and selected replay; the dense-core estimate remains open.
+own source and selected replay; the
+[dense joint-graph core estimate](joint-graph-solvability.md) has a separate
+source and replay retaining its density and coercivity premises.
 Upstream project metadata names OpenAI as formalization author;
 the adapted file retains Apache-2.0 terms and its precise source pin.
 

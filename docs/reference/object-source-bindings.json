@@ -36,6 +36,7 @@
       "GRWTSK/Analysis/InnerProductSpace/CausalResponseGram.lean",
       "GRWTSK/Analysis/InnerProductSpace/ClosedComplexSolvability.lean",
       "GRWTSK/Analysis/InnerProductSpace/ClosedOperatorSolvability.lean",
+      "GRWTSK/Analysis/InnerProductSpace/JointGraphSolvability.lean",
       "GRWTSK/Analysis/Polarization.lean"
     ],
     "Logic/ProofChecking": [
@@ -95,6 +96,7 @@
     ],
     "Logic/FiniteSequences": [
       "GRWTSK/Logic/FiniteSequences/AppendOnlyHistory.lean",
+      "GRWTSK/Logic/FiniteSequences/BatchCertificate.lean",
       "GRWTSK/Logic/FiniteSequences/DecisionCertificate.lean",
       "GRWTSK/Logic/FiniteSequences/DictionaryRevision.lean",
       "GRWTSK/Logic/FiniteSequences/IncrementalComposition.lean",

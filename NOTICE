@@ -72,6 +72,13 @@ GRWTSK/Analysis/InnerProductSpace/ClosedComplexSolvability.lean additionally
 adapts that pinned source's exists_solution_of_complex_estimate theorem,
 retaining Apache-2.0 terms and its exact actual-domain, closedness, complex
 relation, positive-epsilon and coercive-estimate hypotheses. The dense
-joint-graph core theorem remains a separate unported obligation. Upstream
+joint-graph core theorem has its own separately checked module below. Upstream
 OpenAI credit, local human direction and Codex assistance remain as above;
 no surrounding manuscript result, independent review or RH supplier is claimed.
+
+GRWTSK/Analysis/InnerProductSpace/JointGraphSolvability.lean adapts jointGraph
+and exists_solution_of_core_estimate from the same pinned OpenAI source.
+The exact joint-graph subtype, its dense subset, estimate, actual operator
+domains and target-kernel premises are retained. Apache-2.0, upstream OpenAI
+credit, local human direction and Codex assistance remain as above. This
+abstract port supplies no concrete analytic/arithmetic estimate or RH proof.

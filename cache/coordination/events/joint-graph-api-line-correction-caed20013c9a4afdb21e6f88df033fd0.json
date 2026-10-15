@@ -1,0 +1,20 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "joint-graph-formal",
+  "event": "source-reference-correction",
+  "at": "2026-10-15T18:30:48.217236+00:00",
+  "prior_event": {
+    "path": "cache/coordination/events/joint-graph-complete-c3edb585f3e445a1a11b34f913cdf5a0.json",
+    "sha256": "45497d3c524d775bc7483f58b4ed9708e07c872c13b554d7edaf6a8b7c87118e"
+  },
+  "correction": {
+    "path": "Mathlib/Topology/Closure.lean",
+    "declaration": "dense_univ",
+    "previous_reported_line": 403,
+    "verified_line": 405
+  },
+  "basis": "Exact rg line lookup under unchanged pinned Mathlib bytes. Other five reported declaration lines match.",
+  "source_edits": false,
+  "native_jobs_started": false,
+  "status": "All owned sources remain frozen, worker native jobs exited and shared locks released. No further Lean jobs planned."
+}

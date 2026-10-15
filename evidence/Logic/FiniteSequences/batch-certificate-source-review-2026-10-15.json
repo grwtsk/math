@@ -1,0 +1,212 @@
+{
+  "schema": "batch-certificate-and-joint-graph-source-review/v1",
+  "task": "joint-graph-source-scout",
+  "at": "2026-10-15T18:32:12.591768+00:00",
+  "scope": "Bounded correlated model review of final six sources/controls, exact pinned OpenAI and Anthropic sources, and a fresh narrow primary arxiv reinspection. No source edits, compiler jobs, proof admission or independent-validation claim. Root native evidence remains separate.",
+  "decision": "NO_ACTIONABLE_HYPOTHESIS_OMISSION_OR_FALSE_AUTOMATIC_EXTENSION_FOUND_WITHIN_REVIEW_SCOPE",
+  "extends_without_rewriting": [
+    "evidence/Logic/FiniteSequences/composition-source-review-2026-10-15.json",
+    "evidence/Logic/FiniteSequences/incremental-dictionary-final-review-2026-10-15.json"
+  ],
+  "source_bindings": [
+    {
+      "path": "GRWTSK/Logic/FiniteSequences/BatchCertificate.lean",
+      "sha256": "fb32c13a6ebecd24ca926c13e332f4d1e5c1f97bdf548dcad9a1c6d6940c5578",
+      "bytes": 4988,
+      "matches_author_final_source_hash": true
+    },
+    {
+      "path": "GRWTSK/Logic/FiniteSequences/Checks/Positive/BatchCertificate.lean",
+      "sha256": "221ff43d11229b41b51ecb8ac0dab1cec0eec51c814171e0ac2449f8ca063307",
+      "bytes": 2036,
+      "matches_author_final_source_hash": true
+    },
+    {
+      "path": "GRWTSK/Logic/FiniteSequences/Checks/Negative/BatchCertificateMissingEvidence.lean",
+      "sha256": "f0d8510a0db792a2669e899a89284bc1f4a50bb3254e89fbb2bd50506140263a",
+      "bytes": 420,
+      "matches_author_final_source_hash": true
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/JointGraphSolvability.lean",
+      "sha256": "c5245e36d784b906ee455bde42596ebd0f18fcc2dabceb9993b3ac1e3e0470a0",
+      "bytes": 2823,
+      "matches_author_final_source_hash": true
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/JointGraphSolvability.lean",
+      "sha256": "d21475186a1095c71231daf1399d9c79b24d3abc2cc20782a5d4032f815815bc",
+      "bytes": 4187,
+      "matches_author_final_source_hash": true
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/Checks/Negative/JointGraphMissingDensity.lean",
+      "sha256": "7b3d7fef30d38620a0a2cd10427ef4c3b1768307342af1b658f3e229935079ce",
+      "bytes": 3167,
+      "matches_author_final_source_hash": true
+    },
+    {
+      "path": "cache/coordination/events/20261015T182911Z-batch-certificate-complete-9f16757d.json",
+      "sha256": "f3772215b2602bfea08889beaa5c662f9391735f2a81b91777e8d5ddcfe50ed7",
+      "bytes": 6103
+    },
+    {
+      "path": "cache/coordination/events/joint-graph-complete-c3edb585f3e445a1a11b34f913cdf5a0.json",
+      "sha256": "45497d3c524d775bc7483f58b4ed9708e07c872c13b554d7edaf6a8b7c87118e",
+      "bytes": 17003
+    },
+    {
+      "path": "cache/coordination/events/joint-graph-api-line-correction-caed20013c9a4afdb21e6f88df033fd0.json",
+      "sha256": "a710f590b8a67073992890954fa23a9b67e8deda7a0296cd0a5cd86f52241c86",
+      "bytes": 834
+    },
+    {
+      "path": ".local/ordered-history/root/ComplexSolvability-pinned.lean",
+      "sha256": "3bd52605fab93edac918126a231a2f5c7fda48c0e04a8b43104b9bb7fc51d841",
+      "bytes": 8028
+    },
+    {
+      "path": ".local/ordered-history/adapter/c02f1a40f9d24ee997a4b434b89d5096/anthropic/3sum-apsp/ThreeSumApsp/Lang/Logic.lean",
+      "sha256": "859a2842fc684b359d819d0181e0143e8d6576c70f4be725f3a830947bdeb4ee",
+      "bytes": 13979
+    },
+    {
+      "path": "evidence/Logic/FiniteSequences/ordered-history-adapter-2026-10-15.json",
+      "sha256": "0ae137551711422bef455c23c4dca06fb2cca655a2c4c36b8ac74d45f8f49c7e",
+      "bytes": 16441
+    },
+    {
+      "path": "GRWTSK/Logic/FiniteSequences/DecisionCertificate.lean",
+      "sha256": "d7ce67b4eacedb2d84a958636c55cd0ed75be869f552377163c0832449dc0990",
+      "bytes": 5762
+    },
+    {
+      "path": "GRWTSK/Logic/FiniteSequences/IncrementalComposition.lean",
+      "sha256": "7dbd7e782e1c21e8855223efa03b1d4c690eddcc3df8c7a8f7c8da6c722ac89c",
+      "bytes": 3302
+    },
+    {
+      "path": "cache/coordination/continuations/2026-10-15-incremental-composition.json",
+      "sha256": "5f9fb616e12350f71b5bf5d03f0ed5468303869fd4d2942195a5f7813314e964",
+      "bytes": 5013
+    },
+    {
+      "path": "cache/coordination/tasks/joint-graph-source-scout.json",
+      "sha256": "66c5dd7715434f33710164dc41972a7626d17bb7e6e76475edd97198e0185402",
+      "bytes": 746
+    }
+  ],
+  "fresh_arxiv_primary": {
+    "id": "arxiv:1507.00562v1",
+    "title": "Several Complex Variables",
+    "authors": [
+      "John Erik Fornæss"
+    ],
+    "version": "v1",
+    "submitted_utc": "2015-07-02T13:06:17Z",
+    "url": "https://arxiv.org/abs/1507.00562v1",
+    "freshly_browsed_primary": "https://arxiv.org/pdf/1507.00562v1",
+    "locations": [
+      "Theorem4.1.3h; PDFpp41–42",
+      "Corollary4.1.3i and Theorem4.1.3j; PDFpp42–43"
+    ],
+    "narrow_statement": "The graph-approximation passage gives separate sequences for f in Dom(T*) and g in Dom(S), retaining smooth-weight/cutoff conditions and its stated bounded-volume condition when exponents differ. The later estimate uses its explicit domain and approximation hypotheses.",
+    "correspondence_limit": "Separate approximations do not themselves instantiate the local Dense D premise in the simultaneous joint-graph subtype. No analytic application or exact theorem identity is inferred.",
+    "external_identity_limit": "Version and primary URL identify inspected text; external PDF bytes were not retained or hashed; no replay of the notes."
+  },
+  "anthropic_source_reference": {
+    "repository": "https://github.com/anthropics/formal-math",
+    "pin": "e1a4e6508154ea59f030480661590a9fe3018011",
+    "path": "3sum-apsp/ThreeSumApsp/Lang/Logic.lean",
+    "url": "https://raw.githubusercontent.com/anthropics/formal-math/e1a4e6508154ea59f030480661590a9fe3018011/3sum-apsp/ThreeSumApsp/Lang/Logic.lean",
+    "sha256": "859a2842fc684b359d819d0181e0143e8d6576c70f4be725f3a830947bdeb4ee",
+    "git_blob": "508e2040014eeadd11b6a8e1dd68463a9db8fe44",
+    "verification": "Existing official pinned snapshot re-read; SHA256/Git blob match, no upstream execution.",
+    "declarations": [
+      "Light.Exec.append",
+      "Light.Ends.append",
+      "Light.Ends.mono"
+    ],
+    "exact_boundary": "Ends.append consumes an existing Ends lim P depth statement state budget Q proof and retains the same Q, statement, state and budget under procedure-list extension. Ends.mono explicitly needs the postcondition implication and budget inequality. These are existing source-language execution proofs.",
+    "comparison": "They motivate explicit proof transport but do not make arbitrary predicates append-stable. No producer grammar/AST/state translation, interpreter simulation, runtime decoder refinement, proof-status transfer or authority follows."
+  },
+  "batch_certificate_actual_source_review": {
+    "library": "GRWTSK/Logic/FiniteSequences/BatchCertificate.lean",
+    "findings": [
+      {
+        "declaration": "decodesSatisfying_sequential_iff_combined",
+        "finding": "For arbitrary predicate and Valid original, actual decoder composition rewrites the existential successful-decoding condition on both sides. The equivalence alone does not establish the predicate on either side."
+      },
+      {
+        "declarations": [
+          "reuse_sequential",
+          "reuse_combined"
+        ],
+        "finding": "The supplied Certificate already contains evidence:predicate certificate.entries. The separate hentries premise identifies those entries with the full oldRows++(first++second), not only a prefix. Both theorems invoke Certificate.reuse_of_same_decoding and actual accepted decoder/pack laws. No old-history predicate is automatically extended."
+      },
+      {
+        "declarations": [
+          "completeHistoryCertificate",
+          "complete_history_reuse"
+        ],
+        "finding": "A proof of length3 for exact complete entries[(11,7),(12,8),(13,7)] is reused for sequential and combined actual encodings. The source explicitly proves the sequential numeric representation differs from the certificate packed representation although their decodings agree."
+      },
+      {
+        "declarations": [
+          "emptyHistoryCertificate",
+          "old_evidence_not_append_stable"
+        ],
+        "finding": "The empty history genuinely satisfies length0; successful one-row append genuinely fails that predicate. Thus old evidence cannot be relabeled as full-history evidence."
+      }
+    ],
+    "controls": "Final positive consumers retain full-history hentries and repeated occurrences. Final negative constructor assigns old empty-history evidence to nonempty entries, producing the intended semantic-evidence type mismatch. All final source hashes match the author completion.",
+    "limits": "Only exact finite-list predicate evidence is transported. No Packed/byte identity, arbitrary append-stability, runtime certificate loader, external approval or catalogue coverage is established."
+  },
+  "openai_joint_graph_actual_source_review": {
+    "repository": "https://github.com/openai/math",
+    "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+    "path": "lean/OAI/Analysis/InnerProductSpace/ComplexSolvability.lean",
+    "raw_sha256": "3bd52605fab93edac918126a231a2f5c7fda48c0e04a8b43104b9bb7fc51d841",
+    "local_library": "GRWTSK/Analysis/InnerProductSpace/JointGraphSolvability.lean",
+    "selected_text_matches_pinned_upstream": {
+      "jointGraph": true,
+      "exists_solution_of_core_estimate": true
+    },
+    "comparison_method": "Exact selected definition/theorem text after removing empty lines and trailing whitespace; bookkeeping only, not a parser or independent equivalence proof.",
+    "hypotheses_preserved": [
+      "RCLike scalars and complete Hilbert E,F; H inner-product space without completeness assumption.",
+      "Dense actual T.domain, closed T and S graphs, and actual (T x,0) membership in S.graph for every T-domain x.",
+      "D:Set(jointGraph T S) is dense in the actual induced topology of the entire joint-graph subtype.",
+      "Strict epsilon>0 and universal squared coercive estimate on actual elements of D.",
+      "Actual target (f,0) membership in S.graph."
+    ],
+    "topology_and_proof": "jointGraph consists of triples(v,a,b) satisfying both actual graph memberships for T-adjoint and S. The proof constructs the exact triple for each common-domain v. Continuous coordinate norms make the inequality set closed in this subtype; closure_minimal and hD extend the D-estimate, then the accepted closed-complex theorem supplies a solution.",
+    "density_limit": "Density of a projected coordinate set, separate sampled outputs, ambient density in F, or an estimate on a possibly empty sample is not substituted for the actual subtype Dense D premise. Any conversion from another core notion needs its own theorem. D need not be a linear subspace; the theorem only uses its stated density and estimate.",
+    "counterexample": "Final negative source uses real zero operators, epsilon1,target1 and D=empty. All structural operator/complex/kernel assumptions hold, the estimate is vacuous and no solution exists. An actual zero joint-graph point proves D is not dense. The final application supplies empty_estimate where Dense empty is required.",
+    "positive": "Generic exact-premise consumer preserves no-complete-H scope. Concrete identity/zero operators with D=univ in the actual joint graph, epsilon1,target1 instantiate an actual estimate and solution.",
+    "attribution": "Pinned OpenAI path/revision, Apache-2.0 reference, mathematical direction/assistance and Mathlib credit remain in header."
+  },
+  "author_records_and_preservation": {
+    "batch_completion": "cache/coordination/events/20261015T182911Z-batch-certificate-complete-9f16757d.json",
+    "joint_completion": "cache/coordination/events/joint-graph-complete-c3edb585f3e445a1a11b34f913cdf5a0.json",
+    "joint_reference_correction": "cache/coordination/events/joint-graph-api-line-correction-caed20013c9a4afdb21e6f88df033fd0.json",
+    "correction_scope": "Retains the original event and appends correction dense_univ line403->405 under unchanged source bytes; no theorem or source edit implied.",
+    "batch_failed_variants": "No failed source elaboration attempts. Intended negative source, exact diagnostic and all successful source variants retained.",
+    "joint_failed_variants": "Every attempted dependency/library/control source and diagnostic is retained in the ignored archive, including the expected invalid negative file. No failed or stale receipt has been overwritten.",
+    "joint_unexpected_native_failures": [],
+    "joint_proved_prefix": "Author completion separately records successful native checking of the exact proved counterexample prefix and exactly one intended final type mismatch. This scout does not rerun those jobs.",
+    "historical_layout_receipts": "Both author completions retain their183-findings pre-admission layout failures. Later integration cannot rewrite those historical failures.",
+    "root_native_scope": "Root owns fresh closure replay, full owned-declaration/axiom census, control acceptance and source/doc/cache integration. This review records no new native receipt."
+  },
+  "remaining_refinement_premises": [
+    "Any concrete analytic supplier must establish actual common-domain membership, simultaneous joint-graph core density, coercivity and graph-kernel target assumptions.",
+    "Actual JSON/Python/byte/hash/zlib/filesystem/CAS correspondence remains separate from finite-list semantic certificate transport.",
+    "Source-language execution semantics requires an explicit producer/interpreter translation before relating Anthropic Light certificates to this codec.",
+    "Correlated model review is not independent mathematical validation; source names, hashes, similarity and receipts do not discharge missing propositions."
+  ],
+  "native_replay_by_this_task": "NOT_RUN",
+  "independent_review": false,
+  "source_or_shared_metadata_edits": false,
+  "commit_or_remote_effect": false,
+  "final_bound_source_readback": "UNCHANGED"
+}
