@@ -1,0 +1,315 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "joint-graph-formal",
+  "event": "completion",
+  "status": "development-checks-passed-awaiting-root-audit",
+  "at": "2026-10-15T18:30:29.824430+00:00",
+  "all_worker_native_jobs_finished": true,
+  "all_source_edits_finished": true,
+  "shared_lock": "Every Lean child ran while holding .local/math-trust/replay.lock after competing_jobs(root)==[]. Both lock sequences released; sibling BatchCertificate worker informed. No native overlap was requested or forced.",
+  "owned_sources": [
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/JointGraphSolvability.lean",
+      "sha256": "c5245e36d784b906ee455bde42596ebd0f18fcc2dabceb9993b3ac1e3e0470a0"
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/JointGraphSolvability.lean",
+      "sha256": "d21475186a1095c71231daf1399d9c79b24d3abc2cc20782a5d4032f815815bc"
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/Checks/Negative/JointGraphMissingDensity.lean",
+      "sha256": "7b3d7fef30d38620a0a2cd10427ef4c3b1768307342af1b658f3e229935079ce"
+    }
+  ],
+  "upstream": {
+    "repository": "https://github.com/openai/math",
+    "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+    "path": "lean/OAI/Analysis/InnerProductSpace/ComplexSolvability.lean",
+    "raw_sha256": "3bd52605fab93edac918126a231a2f5c7fda48c0e04a8b43104b9bb7fc51d841",
+    "selected_declarations": [
+      "OAI.NadelL2.jointGraph",
+      "OAI.NadelL2.exists_solution_of_core_estimate"
+    ],
+    "license": "OpenAI Apache-2.0 retained; exact provenance and local changes credited in source header"
+  },
+  "local_declarations": [
+    "GRWTSK.Analysis.InnerProductSpace.JointGraphSolvability.jointGraph",
+    "GRWTSK.Analysis.InnerProductSpace.JointGraphSolvability.exists_solution_of_core_estimate"
+  ],
+  "statement": {
+    "joint_graph": "Actual subtype of F\u00d7E\u00d7H with both (v,T-adjoint v) in T-adjoint.graph and (v,S v) in S.graph, carrying induced product topology.",
+    "premises": [
+      "RCLike scalar; complete Hilbert E and F; H inner-product space without CompleteSpace H",
+      "Dense actual T.domain; T.IsClosed and S.IsClosed",
+      "Actual complex relation: every x:T.domain has (T x,0) in S.graph",
+      "D:Set(jointGraph T S), Dense D in the actual whole joint-graph subtype",
+      "epsilon>0 and universal squared coercive estimate for every element of D",
+      "Actual target graph-kernel membership (f,0) in S.graph"
+    ],
+    "conclusion": "An actual-domain u solves T u=f with norm(u)<=norm(f)/sqrt(epsilon).",
+    "mechanism": "Construct the actual joint-graph point for every adjoint-domain/S-domain vector. Continuous coordinate norms make the estimate set closed. closure_minimal plus actual Dense D transfers its estimate to that point, then imported ClosedComplexSolvability supplies the solution.",
+    "changes": "Upstream definition/proof preserved, with mathematical namespace, focused imports and trailing-space removal. No prior accepted source edits."
+  },
+  "imports": [
+    "GRWTSK.Analysis.InnerProductSpace.ClosedComplexSolvability",
+    "Mathlib.Tactic.FunProp"
+  ],
+  "positive_controls": "Generic exact-premise direct consumer with no CompleteSpace H; concrete T=identity, S=zero on real line, D=univ in actual joint graph, epsilon=1, target=1, actual joint-graph estimate and solution norm<=1. Reused MIT control helper proofs remain outside library.",
+  "negative_control": {
+    "counterexample": "T=S=zero on real line, D=empty and epsilon=1. Dense T.domain, both closed graphs, actual complex relation and kernel target1 hold; estimate on D is vacuous, yet no input maps to1. An explicit zero joint-graph point proves empty D is not dense in the actual subtype.",
+    "proved_prefix": "Exact final negative prefix compiles separately with trust0/fatal warnings.",
+    "final_error_count": 1,
+    "expected_substring": "Dense \u2205",
+    "diagnostic": "/Users/local/Desktop/math/GRWTSK/Analysis/InnerProductSpace/Checks/Negative/JointGraphMissingDensity.lean:71:61: error: Application type mismatch: The argument\n  empty_estimate\nhas type\n  \u2200 v \u2208 \u2205, 1 * \u2016(\u2191v).1\u2016 ^ 2 \u2264 \u2016(\u2191v).2.1\u2016 ^ 2 + \u2016(\u2191v).2.2\u2016 ^ 2\nbut is expected to have type\n  Dense \u2205\nin the application\n  @exists_solution_of_core_estimate \u211d \u211d \u211d \u211d Real.instRCLike Real.normedAddCommGroup RCLike.toInnerProductSpaceReal\n    Real.instCompleteSpace Real.normedAddCommGroup RCLike.toInnerProductSpaceReal ?m.65 Real.normedAddCommGroup\n    RCLike.toInnerProductSpaceReal 0 0 zero_dense zero_closed zero_closed zero_complex \u2205 empty_estimate\n",
+    "meaning": "Exactly one final Application type mismatch: vacuous empty_estimate is supplied where actual density hD is required."
+  },
+  "checks": [
+    {
+      "source": "GRWTSK/Analysis/InnerProductSpace/ClosedOperatorSolvability.lean",
+      "source_sha256": "0a46bd0dfb3a7ba86fde0a5331103e72a5263396bce7abcbf35137b48797df2c",
+      "exit_code": 0,
+      "error_count": 0,
+      "command": [
+        "/Users/local/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "-j1",
+        "--trust=0",
+        "--memory=4096",
+        "-DwarningAsError=true",
+        "--root=/Users/local/Desktop/math",
+        "-o",
+        "/Users/local/Desktop/math/.local/joint-graph/f373c91f346b4ec7832ba8f9fe66905f/build/GRWTSK/Analysis/InnerProductSpace/ClosedOperatorSolvability.olean",
+        "/Users/local/Desktop/math/GRWTSK/Analysis/InnerProductSpace/ClosedOperatorSolvability.lean"
+      ],
+      "source_unchanged_after": true,
+      "shared_replay_lock_held": true,
+      "record": ".local/joint-graph/f373c91f346b4ec7832ba8f9fe66905f/support-attempt01.json",
+      "record_sha256": "e6bbfeeea58d1df276bc6bcb86da99cbfb468a22132a81d1b6cee38f784ec7c7"
+    },
+    {
+      "source": "GRWTSK/Analysis/InnerProductSpace/ClosedComplexSolvability.lean",
+      "source_sha256": "4b43a6bd90cfdec303bfa073e151847c40103bcfc84b7b27696872cadeb4a94a",
+      "exit_code": 0,
+      "error_count": 0,
+      "command": [
+        "/Users/local/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "-j1",
+        "--trust=0",
+        "--memory=4096",
+        "-DwarningAsError=true",
+        "--root=/Users/local/Desktop/math",
+        "-o",
+        "/Users/local/Desktop/math/.local/joint-graph/f373c91f346b4ec7832ba8f9fe66905f/build/GRWTSK/Analysis/InnerProductSpace/ClosedComplexSolvability.olean",
+        "/Users/local/Desktop/math/GRWTSK/Analysis/InnerProductSpace/ClosedComplexSolvability.lean"
+      ],
+      "source_unchanged_after": true,
+      "shared_replay_lock_held": true,
+      "record": ".local/joint-graph/f373c91f346b4ec7832ba8f9fe66905f/complex-attempt01.json",
+      "record_sha256": "3aceaac01bd86ef9a7895db70df55f42e035b7de920e49e801ae031f685c397f"
+    },
+    {
+      "source": "GRWTSK/Analysis/InnerProductSpace/JointGraphSolvability.lean",
+      "source_sha256": "c5245e36d784b906ee455bde42596ebd0f18fcc2dabceb9993b3ac1e3e0470a0",
+      "exit_code": 0,
+      "error_count": 0,
+      "command": [
+        "/Users/local/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "-j1",
+        "--trust=0",
+        "--memory=4096",
+        "-DwarningAsError=true",
+        "--root=/Users/local/Desktop/math",
+        "-o",
+        "/Users/local/Desktop/math/.local/joint-graph/f373c91f346b4ec7832ba8f9fe66905f/build/GRWTSK/Analysis/InnerProductSpace/JointGraphSolvability.olean",
+        "/Users/local/Desktop/math/GRWTSK/Analysis/InnerProductSpace/JointGraphSolvability.lean"
+      ],
+      "source_unchanged_after": true,
+      "shared_replay_lock_held": true,
+      "record": ".local/joint-graph/f373c91f346b4ec7832ba8f9fe66905f/library-attempt01.json",
+      "record_sha256": "e2a268875a19fb6bddca6b8a16e2c316c542c7bc488519c340d8bd0be7d2b2ae"
+    },
+    {
+      "source": "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/JointGraphSolvability.lean",
+      "source_sha256": "d21475186a1095c71231daf1399d9c79b24d3abc2cc20782a5d4032f815815bc",
+      "exit_code": 0,
+      "error_count": 0,
+      "command": [
+        "/Users/local/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "-j1",
+        "--trust=0",
+        "--memory=4096",
+        "-DwarningAsError=true",
+        "--root=/Users/local/Desktop/math",
+        "/Users/local/Desktop/math/GRWTSK/Analysis/InnerProductSpace/Checks/Positive/JointGraphSolvability.lean"
+      ],
+      "source_unchanged_after": true,
+      "shared_replay_lock_held": true,
+      "record": ".local/joint-graph/f373c91f346b4ec7832ba8f9fe66905f/positive-attempt01.json",
+      "record_sha256": "7a72715bd80f0a1152895c09ae92d3278be2ca8a36d61c8bf9849e2a4204f9c9"
+    },
+    {
+      "source": "GRWTSK/Analysis/InnerProductSpace/Checks/Negative/JointGraphMissingDensity.lean",
+      "source_sha256": "7b3d7fef30d38620a0a2cd10427ef4c3b1768307342af1b658f3e229935079ce",
+      "exit_code": 1,
+      "error_count": 1,
+      "command": [
+        "/Users/local/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "-j1",
+        "--trust=0",
+        "--memory=4096",
+        "-DwarningAsError=true",
+        "--root=/Users/local/Desktop/math",
+        "/Users/local/Desktop/math/GRWTSK/Analysis/InnerProductSpace/Checks/Negative/JointGraphMissingDensity.lean"
+      ],
+      "source_unchanged_after": true,
+      "shared_replay_lock_held": true,
+      "record": ".local/joint-graph/f373c91f346b4ec7832ba8f9fe66905f/negative-attempt01.json",
+      "record_sha256": "3374af219aae79f4efa0460da76377602c960e10cd227cd4258b9c1e54c0271a"
+    },
+    {
+      "source": ".local/joint-graph/f373c91f346b4ec7832ba8f9fe66905f/NegativeCounterexamples.lean",
+      "source_sha256": "7b2ddf22c31d38f5ee408c4212272f52fa94e40a4816bcf2702094b5394816e6",
+      "exit_code": 0,
+      "command": [
+        "/Users/local/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "-j1",
+        "--trust=0",
+        "--memory=4096",
+        "-DwarningAsError=true",
+        "--root=/Users/local/Desktop/math/.local/joint-graph/f373c91f346b4ec7832ba8f9fe66905f",
+        "/Users/local/Desktop/math/.local/joint-graph/f373c91f346b4ec7832ba8f9fe66905f/NegativeCounterexamples.lean"
+      ],
+      "shared_replay_lock_held": true,
+      "construction": "Exact final negative source prefix before marked intentionally invalid example, closed by its original section/namespace ends.",
+      "record": ".local/joint-graph/f373c91f346b4ec7832ba8f9fe66905f/negative-proved-prefix.json",
+      "record_sha256": "5dfd5d9b4f4298eb4cdab0f53a6ad3fedb47056e4d1358a9e76143fcc067c02c"
+    }
+  ],
+  "unexpected_native_failures": [],
+  "preserved_variants": "Every attempted dependency/library/control source and diagnostic is retained in the ignored archive, including the expected invalid negative file. No failed or stale receipt has been overwritten.",
+  "whitespace": {
+    "path": ".local/joint-graph/f373c91f346b4ec7832ba8f9fe66905f/whitespace-check.json",
+    "sha256": "cafd3a5e05b987bca9a7e6a2d446fa25d2cfe5817fa4882af1b01282ceb49e68",
+    "trailing_lines": []
+  },
+  "mathlib_scout": {
+    "repository": "https://github.com/leanprover-community/mathlib4",
+    "pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "scope": "Bounded exact theorem/definition-name duplicate search in GRWTSK and pinned Mathlib inner-product modules, direct closure/density/closed-inequality/subtype topology API inspection. No exact local joint-graph/core-estimate duplicate observed; not exhaustive.",
+    "manifest": {
+      "path": ".local/joint-graph/f373c91f346b4ec7832ba8f9fe66905f/mathlib-scout.json",
+      "sha256": "0b9686b2d25d7cf06ff675e9c245f3a23037b2bb120143cf9b6e042b58700c9d"
+    },
+    "files": [
+      {
+        "path": "Mathlib/Topology/Defs/Basic.lean",
+        "sha256": "3cb4ca362581be75b708c555c7b0d0d00802bb7e6dbc5a5849eb065d8d06a65c",
+        "selected_apis": [
+          "Dense"
+        ],
+        "preserved_path": ".local/joint-graph/f373c91f346b4ec7832ba8f9fe66905f/mathlib/Mathlib/Topology/Defs/Basic.lean"
+      },
+      {
+        "path": "Mathlib/Topology/Closure.lean",
+        "sha256": "608f830e702214c420fdb7efd88386e82f09b9eb04469ffb5b03e10a9f1aa763",
+        "selected_apis": [
+          "closure_minimal",
+          "dense_univ",
+          "closure_empty",
+          "Dense.nonempty"
+        ],
+        "preserved_path": ".local/joint-graph/f373c91f346b4ec7832ba8f9fe66905f/mathlib/Mathlib/Topology/Closure.lean"
+      },
+      {
+        "path": "Mathlib/Topology/Order/OrderClosed.lean",
+        "sha256": "e311dbc7fca744dc0f0d4a10e3c838eb4996c2fa8b63e833077c40f763f05444",
+        "selected_apis": [
+          "isClosed_le"
+        ],
+        "preserved_path": ".local/joint-graph/f373c91f346b4ec7832ba8f9fe66905f/mathlib/Mathlib/Topology/Order/OrderClosed.lean"
+      },
+      {
+        "path": "Mathlib/Topology/Constructions.lean",
+        "sha256": "1b2099fa575c72263e2d512bf166ed78cc483fb09100b0e56a923e9b8dc31048",
+        "selected_apis": [
+          "product/subtype topology support"
+        ],
+        "preserved_path": ".local/joint-graph/f373c91f346b4ec7832ba8f9fe66905f/mathlib/Mathlib/Topology/Constructions.lean"
+      },
+      {
+        "path": "Mathlib/Analysis/InnerProductSpace/LinearPMap.lean",
+        "sha256": "52eb9aade1019a56c5299e3eee416b3f301327ab2c11741e5a142f78a47bf847",
+        "selected_apis": [
+          "LinearPMap.mem_graph_iff",
+          "LinearPMap.adjoint_graph_eq_graph_adjoint"
+        ],
+        "preserved_path": ".local/joint-graph/f373c91f346b4ec7832ba8f9fe66905f/mathlib/Mathlib/Analysis/InnerProductSpace/LinearPMap.lean"
+      },
+      {
+        "path": "Mathlib/LinearAlgebra/LinearPMap.lean",
+        "sha256": "1d2975571378546a4b12058c99724b255e5a3b05def0c238e1e800c6f3a60090",
+        "selected_apis": [
+          "LinearPMap.mem_graph_iff"
+        ],
+        "preserved_path": ".local/joint-graph/f373c91f346b4ec7832ba8f9fe66905f/mathlib/Mathlib/LinearAlgebra/LinearPMap.lean"
+      },
+      {
+        "path": "Mathlib/Topology/Defs/Induced.lean",
+        "sha256": "ba804ff6a2bd28aea83da56dfc339e565745a088d7aeac977643410f1dae8f74",
+        "preserved_path": ".local/joint-graph/f373c91f346b4ec7832ba8f9fe66905f/mathlib/Mathlib/Topology/Defs/Induced.lean"
+      }
+    ],
+    "exact_definition_locations": [
+      {
+        "path": "Mathlib/Topology/Defs/Basic.lean",
+        "line": 146,
+        "name": "Dense",
+        "contract": "Every point belongs to closure D; an actual ambient topology is part of the type."
+      },
+      {
+        "path": "Mathlib/Topology/Closure.lean",
+        "line": 199,
+        "name": "closure_minimal",
+        "contract": "D subset C and IsClosed C imply closure D subset C."
+      },
+      {
+        "path": "Mathlib/Topology/Closure.lean",
+        "line": 403,
+        "name": "dense_univ",
+        "contract": "The whole set of the actual topological space is dense."
+      },
+      {
+        "path": "Mathlib/Topology/Order/OrderClosed.lean",
+        "line": 447,
+        "name": "isClosed_le",
+        "contract": "Continuous functions into an order-closed topology have a closed pointwise inequality set."
+      },
+      {
+        "path": "Mathlib/Topology/Defs/Induced.lean",
+        "line": 76,
+        "name": "instTopologicalSpaceSubtype",
+        "contract": "Subtype topology is induced along its actual coercion."
+      },
+      {
+        "path": "Mathlib/LinearAlgebra/LinearPMap.lean",
+        "line": 742,
+        "name": "LinearPMap.mem_graph_iff",
+        "contract": "Membership is witnessed by an actual domain element with exact input/output equalities."
+      }
+    ],
+    "limit": "These exact file hashes are source-inspection/dependency references, not a new Mathlib source replay or independent audit. No new mathematical acceptance follows from filename/API matching."
+  },
+  "layout_pre_admission": {
+    "command": "python3 -B scripts/check_math_layout.py",
+    "summary": "Math layout: FAIL (358 library modules, 183 findings).",
+    "log": ".local/joint-graph/f373c91f346b4ec7832ba8f9fe66905f/math-layout-pre-admission.log",
+    "sha256": "92efec295682af4b55c3065527e375b20e7066d5ed0fda766ec52461dc8a9d4c",
+    "limit": "Root-owned source/catalog/public-closure registration remains pending; prior baseline findings are preserved."
+  },
+  "remaining": [
+    "Root fresh immutable selected three-module closure replay, complete owned-declaration/axiom audit and control receipt before admission.",
+    "Root owns licensing/docs/metadata/cache revision integration and broader frontier.",
+    "Coercive estimate, density, actual domains, operator closedness and target-kernel premises are hypotheses, not arithmetic suppliers. No RH, full-library or Python-refinement claim."
+  ],
+  "archive": ".local/joint-graph/f373c91f346b4ec7832ba8f9fe66905f",
+  "effects": "Only three owned Lean paths, ignored raw/diagnostic/API archive and immutable events. No prior source/shared docs/harness/catalog edits, commits or remote effects."
+}

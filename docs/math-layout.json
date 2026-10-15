@@ -5181,7 +5181,11 @@
     "GRWTSK/Logic/FiniteSequences/Checks/Positive/IncrementalComposition.lean": "21067dc0e6cc6947312a592542d00ff990a14a3183d130d33875e1b238d23dea",
     "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/ClosedComplexSolvability.lean": "f4221308d31ec7efc8916cfc58fb7afecea6e358407311208c37e0fea15c32ff",
     "GRWTSK/Logic/FiniteSequences/Checks/Negative/IncrementalCompositionRepresentation.lean": "c73ccb9c485298ccdcdfd289e88609c4bf7b23dc92a247473ee12cf3a7c15e36",
-    "GRWTSK/Analysis/InnerProductSpace/Checks/Negative/ClosedComplexMissingEstimate.lean": "c3e6ef4001f46391a26ba653d87e510e4ee187037cd3a9d6ef01456844e40228"
+    "GRWTSK/Analysis/InnerProductSpace/Checks/Negative/ClosedComplexMissingEstimate.lean": "c3e6ef4001f46391a26ba653d87e510e4ee187037cd3a9d6ef01456844e40228",
+    "GRWTSK/Logic/FiniteSequences/Checks/Positive/BatchCertificate.lean": "221ff43d11229b41b51ecb8ac0dab1cec0eec51c814171e0ac2449f8ca063307",
+    "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/JointGraphSolvability.lean": "d21475186a1095c71231daf1399d9c79b24d3abc2cc20782a5d4032f815815bc",
+    "GRWTSK/Logic/FiniteSequences/Checks/Negative/BatchCertificateMissingEvidence.lean": "f0d8510a0db792a2669e899a89284bc1f4a50bb3254e89fbb2bd50506140263a",
+    "GRWTSK/Analysis/InnerProductSpace/Checks/Negative/JointGraphMissingDensity.lean": "7b3d7fef30d38620a0a2cd10427ef4c3b1768307342af1b658f3e229935079ce"
   },
   "schema_version": 3,
   "repository_conformance": {
@@ -5213,7 +5217,7 @@
     {
       "path": "GRWTSK.lean",
       "original_path": "GRWTSK.lean",
-      "sha256": "f50a549c24b022490232688ce774372492320e2fdd881e359182d8b382fcfa5f",
+      "sha256": "0dad8706cd354e15c2af9144da9fc44560b252389dd4aa7c3c4692114d1a9312",
       "git_blob": "27e45b3448f78dc6499f2fb0698eb51cac5d1904",
       "working_tree_state": "tracked-modified",
       "source_root": ".",
@@ -5320,6 +5324,7 @@
         "GRWTSK.Analysis.InnerProductSpace.CompactSourceGramPositiveDefinite",
         "GRWTSK.Analysis.InnerProductSpace.DilationGram",
         "GRWTSK.Analysis.InnerProductSpace.DilationResponseSeparation",
+        "GRWTSK.Analysis.InnerProductSpace.JointGraphSolvability",
         "GRWTSK.Analysis.InnerProductSpace.LogarithmicCharacterGramBounds",
         "GRWTSK.Analysis.InnerProductSpace.MoebiusResponseGramExpansion",
         "GRWTSK.Analysis.InnerProductSpace.NonzeroVectorRealization",
@@ -5413,6 +5418,7 @@
         "GRWTSK.Logic.Certificates.ProofCoverage",
         "GRWTSK.Logic.FiniteCoverage",
         "GRWTSK.Logic.FiniteSequences.AppendOnlyHistory",
+        "GRWTSK.Logic.FiniteSequences.BatchCertificate",
         "GRWTSK.Logic.FiniteSequences.DecisionCertificate",
         "GRWTSK.Logic.FiniteSequences.DictionaryRevision",
         "GRWTSK.Logic.FiniteSequences.IncrementalComposition",
@@ -5590,7 +5596,7 @@
         "inventory": "observed-current-bytes",
         "layout": "repository baseline remains failed",
         "lean": "umbrella not replayed after selected import additions",
-        "source_sha256": "f50a549c24b022490232688ce774372492320e2fdd881e359182d8b382fcfa5f"
+        "source_sha256": "0dad8706cd354e15c2af9144da9fc44560b252389dd4aa7c3c4692114d1a9312"
       },
       "runner": "python3 -B scripts/check_ccc_energy.py",
       "other_consumers": [
@@ -16964,6 +16970,96 @@
       "other_consumers": []
     },
     {
+      "path": "GRWTSK/Analysis/InnerProductSpace/Checks/Negative/JointGraphMissingDensity.lean",
+      "original_path": "GRWTSK/Analysis/InnerProductSpace/Checks/Negative/JointGraphMissingDensity.lean",
+      "sha256": "7b3d7fef30d38620a0a2cd10427ef4c3b1768307342af1b658f3e229935079ce",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Analysis.InnerProductSpace.Checks.Negative.JointGraphMissingDensity",
+      "namespaces": [
+        "GRWTSK.Analysis.InnerProductSpace.JointGraphSolvability.NegativeChecks"
+      ],
+      "public_declarations": [
+        {
+          "kind": "theorem",
+          "name": "zero_dense",
+          "line": 19
+        },
+        {
+          "kind": "theorem",
+          "name": "zero_closed",
+          "line": 23
+        },
+        {
+          "kind": "theorem",
+          "name": "zero_complex",
+          "line": 37
+        },
+        {
+          "kind": "theorem",
+          "name": "zero_kernel_unit",
+          "line": 41
+        },
+        {
+          "kind": "theorem",
+          "name": "zero_has_no_unit_solution",
+          "line": 44
+        },
+        {
+          "kind": "theorem",
+          "name": "empty_core_not_dense",
+          "line": 53
+        },
+        {
+          "kind": "theorem",
+          "name": "empty_estimate",
+          "line": 59
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Analysis.InnerProductSpace.JointGraphSolvability"
+      ],
+      "reverse_consumers": [],
+      "subject": "Analysis",
+      "object": "InnerProductSpace/Checks/Negative",
+      "source_role": "negative-control",
+      "target_path": "GRWTSK/Analysis/InnerProductSpace/Checks/Negative/JointGraphMissingDensity.lean",
+      "placement_rationale": "Semantic certificates for actual decoded batches belong to finite-sequence logic; dense joint-graph solvability belongs to Hilbert-space analysis.",
+      "operation": "add",
+      "logical_status": "intended rejected control; no theorem admission",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "7b3d7fef30d38620a0a2cd10427ef4c3b1768307342af1b658f3e229935079ce",
+        "replay_binding": "evidence/Analysis/InnerProductSpace/joint-graph-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_joint_graph.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "RCLike scalar; complete inner product E and F; inner product H without completeness assumption.",
+        "Dense actual T.domain; closed T and S graphs.",
+        "For every actual T.domain element, (T x,0) belongs to S.graph.",
+        "D is dense in the actual jointGraph subtype; strict epsilon positivity and universal coercive estimate on D.",
+        "Target (f,0) belongs to S.graph."
+      ],
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "external_source": {
+        "repository": "openai/math",
+        "revision": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+        "path": "lean/OAI/Analysis/InnerProductSpace/ComplexSolvability.lean",
+        "license": "Apache-2.0",
+        "formalization_author": "OpenAI"
+      }
+    },
+    {
       "path": "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/CausalContactHilbertSeparation.lean",
       "original_path": "checks/Analysis/InnerProductSpace/CausalContactHilbertSeparation.lean",
       "sha256": "d272c2a69422485f4a338d67076ddb3c638f6dba9d7cc89863446a03c6c2b0c0",
@@ -17404,6 +17500,60 @@
       ]
     },
     {
+      "path": "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/JointGraphSolvability.lean",
+      "original_path": "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/JointGraphSolvability.lean",
+      "sha256": "d21475186a1095c71231daf1399d9c79b24d3abc2cc20782a5d4032f815815bc",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Analysis.InnerProductSpace.Checks.Positive.JointGraphSolvability",
+      "namespaces": [
+        "GRWTSK.Analysis.InnerProductSpace.JointGraphSolvability.PositiveChecks"
+      ],
+      "public_declarations": [],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Analysis.InnerProductSpace.JointGraphSolvability"
+      ],
+      "reverse_consumers": [],
+      "subject": "Analysis",
+      "object": "InnerProductSpace/Checks/Positive",
+      "source_role": "positive-check",
+      "target_path": "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/JointGraphSolvability.lean",
+      "placement_rationale": "Semantic certificates for actual decoded batches belong to finite-sequence logic; dense joint-graph solvability belongs to Hilbert-space analysis.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "d21475186a1095c71231daf1399d9c79b24d3abc2cc20782a5d4032f815815bc",
+        "replay_binding": "evidence/Analysis/InnerProductSpace/joint-graph-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_joint_graph.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "RCLike scalar; complete inner product E and F; inner product H without completeness assumption.",
+        "Dense actual T.domain; closed T and S graphs.",
+        "For every actual T.domain element, (T x,0) belongs to S.graph.",
+        "D is dense in the actual jointGraph subtype; strict epsilon positivity and universal coercive estimate on D.",
+        "Target (f,0) belongs to S.graph."
+      ],
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "external_source": {
+        "repository": "openai/math",
+        "revision": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+        "path": "lean/OAI/Analysis/InnerProductSpace/ComplexSolvability.lean",
+        "license": "Apache-2.0",
+        "formalization_author": "OpenAI"
+      }
+    },
+    {
       "path": "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/NonzeroVectorRealization.lean",
       "original_path": "checks/Analysis/InnerProductSpace/NonzeroVectorRealization.lean",
       "sha256": "9e07c221f6156209f5b85377c8c1d66dcc67743b936560031da1c02bb958e743",
@@ -17468,7 +17618,8 @@
       "reverse_consumers": [
         "GRWTSK",
         "GRWTSK.Analysis.InnerProductSpace.Checks.Negative.ClosedComplexMissingEstimate",
-        "GRWTSK.Analysis.InnerProductSpace.Checks.Positive.ClosedComplexSolvability"
+        "GRWTSK.Analysis.InnerProductSpace.Checks.Positive.ClosedComplexSolvability",
+        "GRWTSK.Analysis.InnerProductSpace.JointGraphSolvability"
       ],
       "subject": "Analysis",
       "object": "InnerProductSpace",
@@ -18007,6 +18158,76 @@
         "evidence/moebius-response-sources.json",
         "evidence/source-manifest.json"
       ]
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/JointGraphSolvability.lean",
+      "original_path": "GRWTSK/Analysis/InnerProductSpace/JointGraphSolvability.lean",
+      "sha256": "c5245e36d784b906ee455bde42596ebd0f18fcc2dabceb9993b3ac1e3e0470a0",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Analysis.InnerProductSpace.JointGraphSolvability",
+      "namespaces": [
+        "GRWTSK.Analysis.InnerProductSpace.JointGraphSolvability"
+      ],
+      "public_declarations": [
+        {
+          "kind": "def",
+          "name": "jointGraph",
+          "line": 40
+        },
+        {
+          "kind": "theorem",
+          "name": "exists_solution_of_core_estimate",
+          "line": 43
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Analysis.InnerProductSpace.ClosedComplexSolvability",
+        "Mathlib.Tactic.FunProp"
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Analysis.InnerProductSpace.Checks.Negative.JointGraphMissingDensity",
+        "GRWTSK.Analysis.InnerProductSpace.Checks.Positive.JointGraphSolvability"
+      ],
+      "subject": "Analysis",
+      "object": "InnerProductSpace",
+      "source_role": "library",
+      "target_path": "GRWTSK/Analysis/InnerProductSpace/JointGraphSolvability.lean",
+      "placement_rationale": "Semantic certificates for actual decoded batches belong to finite-sequence logic; dense joint-graph solvability belongs to Hilbert-space analysis.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "c5245e36d784b906ee455bde42596ebd0f18fcc2dabceb9993b3ac1e3e0470a0",
+        "replay_binding": "evidence/Analysis/InnerProductSpace/joint-graph-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_joint_graph.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "RCLike scalar; complete inner product E and F; inner product H without completeness assumption.",
+        "Dense actual T.domain; closed T and S graphs.",
+        "For every actual T.domain element, (T x,0) belongs to S.graph.",
+        "D is dense in the actual jointGraph subtype; strict epsilon positivity and universal coercive estimate on D.",
+        "Target (f,0) belongs to S.graph."
+      ],
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "external_source": {
+        "repository": "openai/math",
+        "revision": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+        "path": "lean/OAI/Analysis/InnerProductSpace/ComplexSolvability.lean",
+        "license": "Apache-2.0",
+        "formalization_author": "OpenAI"
+      }
     },
     {
       "path": "GRWTSK/Analysis/InnerProductSpace/LogarithmicCharacterGramBounds.lean",
@@ -31738,6 +31959,91 @@
       ]
     },
     {
+      "path": "GRWTSK/Logic/FiniteSequences/BatchCertificate.lean",
+      "original_path": "GRWTSK/Logic/FiniteSequences/BatchCertificate.lean",
+      "sha256": "fb32c13a6ebecd24ca926c13e332f4d1e5c1f97bdf548dcad9a1c6d6940c5578",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Logic.FiniteSequences.BatchCertificate",
+      "namespaces": [
+        "GRWTSK.Logic.FiniteSequences.BatchCertificate"
+      ],
+      "public_declarations": [
+        {
+          "kind": "theorem",
+          "name": "decodesSatisfying_sequential_iff_combined",
+          "line": 31
+        },
+        {
+          "kind": "theorem",
+          "name": "reuse_sequential",
+          "line": 40
+        },
+        {
+          "kind": "theorem",
+          "name": "reuse_combined",
+          "line": 49
+        },
+        {
+          "kind": "def",
+          "name": "completeHistoryCertificate",
+          "line": 58
+        },
+        {
+          "kind": "theorem",
+          "name": "complete_history_reuse",
+          "line": 62
+        },
+        {
+          "kind": "def",
+          "name": "emptyHistoryCertificate",
+          "line": 79
+        },
+        {
+          "kind": "theorem",
+          "name": "old_evidence_not_append_stable",
+          "line": 83
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Logic.FiniteSequences.DecisionCertificate",
+        "GRWTSK.Logic.FiniteSequences.IncrementalComposition"
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Logic.FiniteSequences.Checks.Negative.BatchCertificateMissingEvidence",
+        "GRWTSK.Logic.FiniteSequences.Checks.Positive.BatchCertificate"
+      ],
+      "subject": "Logic",
+      "object": "FiniteSequences",
+      "source_role": "library",
+      "target_path": "GRWTSK/Logic/FiniteSequences/BatchCertificate.lean",
+      "placement_rationale": "Semantic certificates for actual decoded batches belong to finite-sequence logic; dense joint-graph solvability belongs to Hilbert-space analysis.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "fb32c13a6ebecd24ca926c13e332f4d1e5c1f97bdf548dcad9a1c6d6940c5578",
+        "replay_binding": "evidence/Logic/FiniteSequences/batch-certificate-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_batch_certificate.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Finite lists with decidable payload equality.",
+        "Valid original references for general composition; the certificate contains actual evidence for the full appended history, with entries equal to that history."
+      ],
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ]
+    },
+    {
       "path": "GRWTSK/Logic/FiniteSequences/Checks/Negative/AppendOnlyHistoryReorder.lean",
       "original_path": "GRWTSK/Logic/FiniteSequences/Checks/Negative/AppendOnlyHistoryReorder.lean",
       "sha256": "b817c436b1f8f6baf476adac5b1ef8a68ca07434f848d81a220fe2507b830726",
@@ -31769,6 +32075,48 @@
       },
       "runner": "python3 -B scripts/check_append_only_history.py",
       "other_consumers": []
+    },
+    {
+      "path": "GRWTSK/Logic/FiniteSequences/Checks/Negative/BatchCertificateMissingEvidence.lean",
+      "original_path": "GRWTSK/Logic/FiniteSequences/Checks/Negative/BatchCertificateMissingEvidence.lean",
+      "sha256": "f0d8510a0db792a2669e899a89284bc1f4a50bb3254e89fbb2bd50506140263a",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Logic.FiniteSequences.Checks.Negative.BatchCertificateMissingEvidence",
+      "namespaces": [],
+      "public_declarations": [],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Logic.FiniteSequences.BatchCertificate"
+      ],
+      "reverse_consumers": [],
+      "subject": "Logic",
+      "object": "FiniteSequences/Checks/Negative",
+      "source_role": "negative-control",
+      "target_path": "GRWTSK/Logic/FiniteSequences/Checks/Negative/BatchCertificateMissingEvidence.lean",
+      "placement_rationale": "Semantic certificates for actual decoded batches belong to finite-sequence logic; dense joint-graph solvability belongs to Hilbert-space analysis.",
+      "operation": "add",
+      "logical_status": "intended rejected control; no theorem admission",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "f0d8510a0db792a2669e899a89284bc1f4a50bb3254e89fbb2bd50506140263a",
+        "replay_binding": "evidence/Logic/FiniteSequences/batch-certificate-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_batch_certificate.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Finite lists with decidable payload equality.",
+        "Valid original references for general composition; the certificate contains actual evidence for the full appended history, with entries equal to that history."
+      ],
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ]
     },
     {
       "path": "GRWTSK/Logic/FiniteSequences/Checks/Negative/DecisionCertificateStalePremise.lean",
@@ -31976,6 +32324,48 @@
       },
       "runner": "python3 -B scripts/check_append_only_history.py",
       "other_consumers": []
+    },
+    {
+      "path": "GRWTSK/Logic/FiniteSequences/Checks/Positive/BatchCertificate.lean",
+      "original_path": "GRWTSK/Logic/FiniteSequences/Checks/Positive/BatchCertificate.lean",
+      "sha256": "221ff43d11229b41b51ecb8ac0dab1cec0eec51c814171e0ac2449f8ca063307",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Logic.FiniteSequences.Checks.Positive.BatchCertificate",
+      "namespaces": [],
+      "public_declarations": [],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Logic.FiniteSequences.BatchCertificate"
+      ],
+      "reverse_consumers": [],
+      "subject": "Logic",
+      "object": "FiniteSequences/Checks/Positive",
+      "source_role": "positive-check",
+      "target_path": "GRWTSK/Logic/FiniteSequences/Checks/Positive/BatchCertificate.lean",
+      "placement_rationale": "Semantic certificates for actual decoded batches belong to finite-sequence logic; dense joint-graph solvability belongs to Hilbert-space analysis.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "221ff43d11229b41b51ecb8ac0dab1cec0eec51c814171e0ac2449f8ca063307",
+        "replay_binding": "evidence/Logic/FiniteSequences/batch-certificate-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_batch_certificate.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Finite lists with decidable payload equality.",
+        "Valid original references for general composition; the certificate contains actual evidence for the full appended history, with entries equal to that history."
+      ],
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ]
     },
     {
       "path": "GRWTSK/Logic/FiniteSequences/Checks/Positive/DecisionCertificate.lean",
@@ -32220,6 +32610,7 @@
       ],
       "reverse_consumers": [
         "GRWTSK",
+        "GRWTSK.Logic.FiniteSequences.BatchCertificate",
         "GRWTSK.Logic.FiniteSequences.Checks.Negative.DecisionCertificateStalePremise",
         "GRWTSK.Logic.FiniteSequences.Checks.Positive.DecisionCertificate"
       ],
@@ -32383,6 +32774,7 @@
       ],
       "reverse_consumers": [
         "GRWTSK",
+        "GRWTSK.Logic.FiniteSequences.BatchCertificate",
         "GRWTSK.Logic.FiniteSequences.Checks.Negative.IncrementalCompositionRepresentation",
         "GRWTSK.Logic.FiniteSequences.Checks.Positive.IncrementalComposition"
       ],
@@ -53815,25 +54207,25 @@
   ],
   "current_inventory": {
     "head": "854e04dc182c36b00479b642e6301f47acc81e5f",
-    "lean_source_count": 648,
-    "active_source_count": 585,
+    "lean_source_count": 654,
+    "active_source_count": 591,
     "candidate_source_count": 63,
     "counts_by_role": {
       "audit-driver": 35,
-      "library": 350,
-      "negative-control": 110,
-      "positive-check": 90
+      "library": 352,
+      "negative-control": 112,
+      "positive-check": 92
     },
     "counts_by_subject": {
       "Algebra": 19,
-      "Analysis": 202,
+      "Analysis": 205,
       "Combinatorics": 8,
       "Data": 1,
       "DynamicalSystems": 16,
       "GroupTheory": 4,
       "Library": 1,
       "LinearAlgebra": 53,
-      "Logic": 60,
+      "Logic": 63,
       "MeasureTheory": 5,
       "NumberTheory": 188,
       "Order": 3,
@@ -60358,6 +60750,22 @@
     "replays": [
       "evidence/Analysis/InnerProductSpace/closed-complex-checks-2026-10-15.json",
       "evidence/Logic/FiniteSequences/incremental-composition-checks-2026-10-15.json"
+    ],
+    "scope": "Incremental selected registration; no historical full-replay hashes or failed receipts refreshed."
+  },
+  "batch_certificate_joint_graph_additions": {
+    "date": "2026-10-15",
+    "paths": [
+      "GRWTSK/Logic/FiniteSequences/BatchCertificate.lean",
+      "GRWTSK/Analysis/InnerProductSpace/JointGraphSolvability.lean",
+      "GRWTSK/Logic/FiniteSequences/Checks/Positive/BatchCertificate.lean",
+      "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/JointGraphSolvability.lean",
+      "GRWTSK/Logic/FiniteSequences/Checks/Negative/BatchCertificateMissingEvidence.lean",
+      "GRWTSK/Analysis/InnerProductSpace/Checks/Negative/JointGraphMissingDensity.lean"
+    ],
+    "replays": [
+      "evidence/Analysis/InnerProductSpace/joint-graph-checks-2026-10-15.json",
+      "evidence/Logic/FiniteSequences/batch-certificate-checks-2026-10-15.json"
     ],
     "scope": "Incremental selected registration; no historical full-replay hashes or failed receipts refreshed."
   }

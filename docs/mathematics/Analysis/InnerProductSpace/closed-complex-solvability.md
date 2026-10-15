@@ -36,9 +36,9 @@ The [source](../../../../GRWTSK/Analysis/InnerProductSpace/ClosedComplexSolvabil
 adapts the third theorem of OpenAI's pinned
 [ComplexSolvability source](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/Analysis/InnerProductSpace/ComplexSolvability.lean),
 retaining its proof and exact hypotheses. Upstream project metadata credits
-OpenAI. The adapted file retains Apache-2.0 terms. The subsequent theorem
-transferring an estimate from a dense joint-graph core remains a separate
-frontier obligation.
+OpenAI. The adapted file retains Apache-2.0 terms. The subsequent
+[dense joint-graph core theorem](joint-graph-solvability.md) has its own source
+and selected replay, retaining its exact topology and density premise.
 
 The [positive consumers](../../../../GRWTSK/Analysis/InnerProductSpace/Checks/Positive/ClosedComplexSolvability.lean)
 and [native receipt](../../../../evidence/Analysis/InnerProductSpace/closed-complex-checks-2026-10-15.json)
