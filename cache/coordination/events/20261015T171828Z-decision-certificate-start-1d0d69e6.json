@@ -1,0 +1,13 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "decision-certificate",
+  "status": "in_progress",
+  "owner": "indexed_dictionary",
+  "design": "A certificate records exact source entries, a semantic list predicate, and actual proof of that predicate. Its packed source is derived with the existing real pack. DecodesSatisfying asserts successful actual decoding plus the predicate. Reuse will follow from exact decoder equality or referenced-slot agreement; stale payloads will violate a concrete arithmetic predicate.",
+  "paths": [
+    "GRWTSK/Logic/FiniteSequences/DecisionCertificate.lean",
+    "GRWTSK/Logic/FiniteSequences/Checks/Positive/DecisionCertificate.lean",
+    "GRWTSK/Logic/FiniteSequences/Checks/Negative/DecisionCertificateStalePremise.lean"
+  ],
+  "limits": "No runtime/hash/serialization/IO refinement, no proof promotion from a decision record."
+}

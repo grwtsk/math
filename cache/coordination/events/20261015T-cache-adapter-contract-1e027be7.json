@@ -1,0 +1,35 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "cache-adapter",
+  "status": "contract-ready-testing",
+  "created_at": "2026-10-15T17:03:18.981599+00:00",
+  "cli": [
+    "python3 -B scripts/cache_math.py snapshot --expected none",
+    "python3 -B scripts/cache_math.py verify --live",
+    "python3 -B scripts/cache_math.py status",
+    "python3 -B scripts/cache_math.py revise --expected <current-revision-digest>",
+    "python3 -B scripts/cache_math.py expand <absent-or-empty-directory-outside-repository> [--revision <digest>]"
+  ],
+  "paths": {
+    "manifest": "cache/manifests/<sha256-canonical-manifest>.json",
+    "source_blobs": "cache/objects/<first-two-hex>/<sha256-raw>.zlib",
+    "current_ref": "cache/refs/current.json",
+    "past_refs": "cache/refs/history/<past-revision>.json",
+    "attempts": "cache/attempts/<uuid>.json"
+  },
+  "manifest_contract": {
+    "schema": "mathematical-source-cache-v1",
+    "scope": "git-visible-first-party-GRWTSK-lean-v1",
+    "parent": "previous manifest digest or null",
+    "sources": "id=source:<path>,path,module,blob(raw/compressed sha256+length),imports,dependencies,external_imports,subject,object,source_role,role_bindings,role_binding_status,proof_status=unknown-unreplayed,mathematical_acceptance=false",
+    "source_inventory": "exact ordered id/path/raw_sha256 set; redundant coverage checked",
+    "catalogs": "immutable bytes of docs/math-layout.json and evidence/source-intake.json when present",
+    "revision_effect": "changed_sources, exact union-graph reverse closure invalidated_sources, receipt preservation policy"
+  },
+  "taxonomy_integration": "Independent method-facet metadata; no adapter dependence on taxonomy.json and no facet-to-import/proof coercion. Root may bind adapter snapshot revision into taxonomy decision records.",
+  "remaining_work": [
+    "hostile fixture tests",
+    "conservative import parser review",
+    "no real source snapshot created by adapter worker"
+  ]
+}

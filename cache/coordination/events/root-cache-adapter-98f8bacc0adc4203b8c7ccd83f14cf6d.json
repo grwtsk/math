@@ -1,0 +1,8 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "cache-adapter",
+  "event": "integration-request",
+  "actor": "root",
+  "at": "2026-10-15T17:01:36.229503+00:00",
+  "details": "Please publish manifest schema, CLI and role-handling API in a progress event as soon as stable. Root will integrate source/docs metadata and take the first real snapshot only after agent source files are stable. The user clarified: create cache in this repository; complete compact representation expands back under GRWTSK. Distinguish exact finite source universe completeness from absent215 method-record identities."
+}

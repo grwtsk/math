@@ -1,0 +1,13 @@
+{
+  "schema": "repository-agent-task-v1",
+  "id": "durable-decision-review",
+  "owner": "indexed_dictionary",
+  "branch": "main",
+  "at": "2026-10-15T17:15:18.404927+00:00",
+  "write_paths": [
+    "cache/coordination/events/",
+    "evidence/Logic/FiniteSequences/decision-durability-review-2026-10-15.json"
+  ],
+  "objective": "Review our two dictionary modules and selected native receipt. Latest user explicitly asks techniques formalized for durable decisions. Review which claims are actually proved, counterexamples, relation to runtime adapter and durable decision records. Inspect receipt identities and allowed axioms. Record exact proof obligations still open and source/receipt hashes. Write bounded review JSON and event only, no code/doc/catalog edits or commit.",
+  "policy": "Preserve concurrent edits; events communicate, never confer authority or mathematical acceptance; no remote mutations."
+}

@@ -1,0 +1,38 @@
+{
+  "schema": "cache-actual-roundtrip-v1",
+  "at": "2026-10-15T17:23:09.828375+00:00",
+  "head_observed": "253cc1a63fb0d7de79d084d562a442776fa4ce17",
+  "revision": "2d648f1aca303da5695048ae22d3e22b0a4905a96b80a9fcf8b651c76bad3628",
+  "manifest_path": "cache/manifests/2d648f1aca303da5695048ae22d3e22b0a4905a96b80a9fcf8b651c76bad3628.json",
+  "manifest_sha256": "2d648f1aca303da5695048ae22d3e22b0a4905a96b80a9fcf8b651c76bad3628",
+  "adapter_sha256": "81f7d48a575ee212d8fac9bad812cc93c3c4ace3eae031ae82acabac2c44d424",
+  "taxonomy_sha256": "072a431bca2c960488c7681d4fb316db2135a7f91d2e181f5664db610e0103fa",
+  "checks": {
+    "stored_manifest_and_entire_parent_chain": "passed",
+    "complete_live_sources_catalogs_context": "passed",
+    "outside_repository_expansion": "passed",
+    "expanded_exact_path_and_byte_comparison": "passed",
+    "live_readback_after_expansion": "passed"
+  },
+  "expansion": {
+    "exact_path_identity_set": true,
+    "byte_mismatches": [],
+    "expanded_file_count": 655,
+    "source_count": 644,
+    "catalog_file_count": 2,
+    "context_file_count": 9,
+    "temporary_destination_outside_repository": true,
+    "owned_temporary_destination_removed_after_check": true
+  },
+  "storage": {
+    "selected_occurrences_including_context": 655,
+    "unique_raw_objects": 649,
+    "raw_occurrence_bytes": 5594011,
+    "raw_unique_bytes": 5590982,
+    "compressed_unique_bytes": 1230181
+  },
+  "metadata_findings_preserved": 82,
+  "proof_status": "unknown-unreplayed",
+  "mathematical_acceptance": false,
+  "scope_limit": "Byte custody and operational readback only. No Python refinement, hash injectivity, cold dependency reconstruction or new native proof acceptance."
+}
