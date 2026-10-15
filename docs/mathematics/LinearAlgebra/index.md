@@ -4,10 +4,10 @@
 
 | Inventory | Count |
 |---|---:|
-| Object guides | 11 |
-| Documented object groups | 7 |
-| Distinct primary sources linked | 11 |
-| Lean source modules | 53 |
+| Object guides | 13 |
+| Documented object groups | 9 |
+| Distinct primary sources linked | 13 |
+| Lean source modules | 57 |
 | Archive intake records | 3 |
 | Selected catalog families | 0 |
 
@@ -29,6 +29,14 @@ These counts measure documentation and source coverage. They do not count accept
 ## Jacobi
 
 - [Jacobi transfer matrices](Jacobi/transfer.md).
+
+## Matrix
+
+- [Hermitian trace-rank moment bounds](Matrix/trace-rank.md).
+
+## Matrix / HermitianCounterexamples
+
+- [A Hermitian matrix with a negative quadratic direction](Matrix/HermitianCounterexamples/negative-identity.md).
 
 ## OrderedProduct
 

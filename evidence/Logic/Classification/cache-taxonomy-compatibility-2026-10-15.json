@@ -1,0 +1,313 @@
+{
+  "schema": "cache-taxonomy-compatibility-review/v1",
+  "task": "taxonomy-compatibility-review",
+  "task_path": "cache/coordination/tasks/taxonomy-compatibility-review.json",
+  "at": "2026-10-15T17:19:21.128313+00:00",
+  "scope": "Read-only comparison of five incoming Lean candidate modules, three incoming Python scripts and cache metadata/checker. Incoming scripts and proof terms read as data; neither executed. Only existing cache taxonomy tests run.",
+  "decision": "COMPATIBLE_COMPONENTS_WITH_OPEN_ADAPTER_PREMISES",
+  "mathematical_acceptance": "NOT_ESTABLISHED",
+  "native_lean_replay": "NOT_RUN",
+  "owned_declaration_axiom_audit": "NOT_RUN",
+  "incoming_source_statuses_preserved": true,
+  "source_bindings": [
+    {
+      "path": "GRWTSK/Order/Taxonomy/Address.lean",
+      "sha256": "aae54480d327193e1d68676baa351623373861257fed59accf0ad328a8c2ad2b",
+      "bytes": 5724,
+      "matches_historical_integration_binding": true,
+      "observed_header_status": "Candidate source: native compilation and axiom audit NOT_RUN.",
+      "source_intake_status": {
+        "status": "CANDIDATE_SOURCE_ONLY",
+        "native_compilation": "not-run",
+        "axiom_audit": "not-run",
+        "mathematical_admission": false,
+        "public_release_eligible": false
+      },
+      "matches_source_intake_binding": true
+    },
+    {
+      "path": "GRWTSK/Order/Taxonomy/Core.lean",
+      "sha256": "2de1811f8f126307216df30e5e3578b117acd305ca3039725f18f8bcce696497",
+      "bytes": 5322,
+      "matches_historical_integration_binding": true,
+      "observed_header_status": "Candidate source: native compilation and axiom audit NOT_RUN.",
+      "source_intake_status": {
+        "status": "CANDIDATE_SOURCE_ONLY",
+        "native_compilation": "not-run",
+        "axiom_audit": "not-run",
+        "mathematical_admission": false,
+        "public_release_eligible": false
+      },
+      "matches_source_intake_binding": true
+    },
+    {
+      "path": "GRWTSK/Logic/Classification/Types.lean",
+      "sha256": "3024e899ffee5956c713f8931780ef87e4c2c010d87bf8c291588e01e447f203",
+      "bytes": 4876,
+      "matches_historical_integration_binding": true,
+      "observed_header_status": "Candidate source: native compilation and axiom audit NOT_RUN.",
+      "source_intake_status": {
+        "status": "CANDIDATE_SOURCE_ONLY",
+        "native_compilation": "not-run",
+        "axiom_audit": "not-run",
+        "mathematical_admission": false,
+        "public_release_eligible": false
+      },
+      "matches_source_intake_binding": true
+    },
+    {
+      "path": "GRWTSK/Logic/Classification/Provenance.lean",
+      "sha256": "b2720293dfce970de023adf3508ab915210dae37a02359d2b62c82c5a2813028",
+      "bytes": 2828,
+      "matches_historical_integration_binding": true,
+      "observed_header_status": "Candidate source: native compilation and axiom audit NOT_RUN.",
+      "source_intake_status": {
+        "status": "CANDIDATE_SOURCE_ONLY",
+        "native_compilation": "not-run",
+        "axiom_audit": "not-run",
+        "mathematical_admission": false,
+        "public_release_eligible": false
+      },
+      "matches_source_intake_binding": true
+    },
+    {
+      "path": "GRWTSK/Logic/Classification/Catalogue.lean",
+      "sha256": "f9ff182c00c1f337f984fe925fe52b1fd226bbb925eb52e2fa2c546f481db7a9",
+      "bytes": 2740,
+      "matches_historical_integration_binding": true,
+      "observed_header_status": "Candidate source: native compilation and axiom audit NOT_RUN.",
+      "source_intake_status": {
+        "status": "CANDIDATE_SOURCE_ONLY",
+        "native_compilation": "not-run",
+        "axiom_audit": "not-run",
+        "mathematical_admission": false,
+        "public_release_eligible": false
+      },
+      "matches_source_intake_binding": true
+    },
+    {
+      "path": "scripts/taxonomy.py",
+      "sha256": "28e460c182c4e13650a932fe9b611593754685f925938d5afd41de005ed1db77",
+      "bytes": 22308,
+      "matches_historical_integration_binding": true
+    },
+    {
+      "path": "scripts/taxonomy_expansion.py",
+      "sha256": "c9046c06f3f22662b6320c76ca2fcc4297f2ac668eec0389130aedb628cbc0f5",
+      "bytes": 15998
+    },
+    {
+      "path": "scripts/taxonomy_handoff.py",
+      "sha256": "ab326dfef43a90048847023d5105fe51ff3cd28f1b02d51dd7dba839f35a428d",
+      "bytes": 4961,
+      "matches_historical_integration_binding": true
+    },
+    {
+      "path": "cache/taxonomy.json",
+      "sha256": "072a431bca2c960488c7681d4fb316db2135a7f91d2e181f5664db610e0103fa",
+      "bytes": 19573
+    },
+    {
+      "path": "scripts/cache_taxonomy.py",
+      "sha256": "539d3dc247b1f10093dcd6b8f61f8b7a9de9dff3f4edf85000efc5e54c2e14c5",
+      "bytes": 23592
+    },
+    {
+      "path": "scripts/test_cache_taxonomy.py",
+      "sha256": "cc1a5e747f9884802229797d0649e6a27efca2e7ec381b96ee15aa5155c07f9d",
+      "bytes": 15965
+    },
+    {
+      "path": "evidence/taxonomy-integration-v1.json",
+      "sha256": "31ebfd8516e7fe4432c732cd7037d017d7806d1f4bde9637749e9054367371e5",
+      "bytes": 6551
+    },
+    {
+      "path": "evidence/source-intake.json",
+      "sha256": "ef9f4145cfe681bc5553cf59c8f389d4d0c58fcca7d784cca9399f08fba803c3",
+      "bytes": 77783,
+      "matches_historical_integration_binding": true
+    }
+  ],
+  "cache_inventory": {
+    "taxonomy_revision": "554b2000eb0ddcaa5e38cc30812a1741c3c826b224ddf0e032eb7460229cc8fb",
+    "family_count": 16,
+    "declared_record_total": 215,
+    "actual_record_count": 0,
+    "expected_record_ids": null,
+    "individual_method_coverage": "INCOMPLETE",
+    "durable_decision_ids": [
+      "decision:method-facets-separate-homes",
+      "decision:unprovided-identities-remain-open",
+      "decision:typed-relations-no-promotion",
+      "decision:revision-freshness-and-history"
+    ],
+    "open_premise_ids": [
+      "premise:215-stable-method-identities",
+      "premise:formal-implications-replayed",
+      "premise:adapter-refinement"
+    ]
+  },
+  "compatible_reuse_opportunities": [
+    {
+      "id": "reuse:structural-addresses",
+      "references": [
+        "GRWTSK/Order/Taxonomy/Address.lean:Address, Prefix, commonPrefix, prefix_iff_mem_prefixes",
+        "GRWTSK/Order/Taxonomy/Core.lean:ClosedPaths, checkClosed_sound, ofPaths_exact, finite_representation, representationOrderIso",
+        "scripts/taxonomy.py:normalize, emit_lean"
+      ],
+      "application": "A separate rooted-tree export can represent the 16 family IDs with finite natural-number addresses while retaining stable IDs, notation and exact external rows. An added administrative root is not a seventeenth method family or a method record.",
+      "required_premises": [
+        "Explicit deterministic ID/address mapping and inverse on exported identities; slots, prefix closure and exact membership.",
+        "Preserve non-tree relations outside the tree projection.",
+        "Replay actual generated terms; a theorem name in metadata is not a checked instance."
+      ]
+    },
+    {
+      "id": "reuse:record-preserving-membership",
+      "references": [
+        "GRWTSK/Logic/Classification/Catalogue.lean:Catalogue, Catalogue.Assigned, Catalogue.restrict_val, Catalogue.restrict_injective, Catalogue.atRoot, Catalogue.presheaf",
+        "scripts/taxonomy_handoff.py:build"
+      ],
+      "application": "A primary assignment and optional secondary references roll up one underlying record without duplicating a declaration. This can express mathematical homes or method facets only when those dimensions are explicitly separated.",
+      "required_premises": [
+        "Supply the exact Artifact universe and a total primary assignment on that universe.",
+        "The empty supplied method universe is honest empty coverage; it does not prove a 215-record catalogue.",
+        "Keep mathematical subject/object homes distinct from primary method-family facets."
+      ]
+    },
+    {
+      "id": "reuse:typed-semantic-maps",
+      "references": [
+        "GRWTSK/Logic/Classification/Types.lean:Signature, CheckedTerm, Binding, Binding.comp, ReversibleBinding, RestrictionSystem.UniqueLift, noUniversalConversion"
+      ],
+      "application": "Actual typed maps and inverse laws are compatible with the cache decision that ancestry, string references and arbitrary graph reachability confer no formal implication, theorem acceptance or implicit type coercion.",
+      "required_premises": [
+        "Translate formal-implication metadata to exact propositions, hypotheses and checked Binding terms at bound current sources.",
+        "Supply any restriction compatibility and unique-lift premise before constructing a map.",
+        "Any analytic Riemann-sphere compactification or transform needs separate mathematical definitions and theorems; the cache metaphor supplies none."
+      ]
+    },
+    {
+      "id": "reuse:provenance-without-status-promotion",
+      "references": [
+        "GRWTSK/Logic/Classification/Provenance.lean:Snapshot, SourceRef, VerificationRecord, ClassificationRecord, SourceRole, ReportedStatus",
+        "scripts/taxonomy.py:validate_bindings, emit_catalogue"
+      ],
+      "application": "Keep snapshots, source roles, editorial classification and reported verification scopes/receipts separate. A classification can be reviewed while native proof replay remains NOT_RUN.",
+      "required_premises": [
+        "A total role/status adapter must retain candidate-source-only isolation and original unknown/unreplayed/NOT_RUN statuses.",
+        "Incoming SourceRole has no candidate-source-only constructor: retain the original cache role/status separately instead of silently defaulting it to library.",
+        "Receipt/source digests remain evidence references; they do not prove source authenticity, permission or hash injectivity."
+      ]
+    },
+    {
+      "id": "reuse:bounded-structural-proposals",
+      "references": [
+        "scripts/taxonomy.py:validate_extension, emit_lean",
+        "scripts/taxonomy_expansion.py:validate, build, lean_obligations"
+      ],
+      "application": "A future exporter may produce a source-bound proposal and separate structural Lean obligations while retaining NOT_RUN and NOT_ESTABLISHED. No actual exporter is implemented by this review.",
+      "required_premises": [
+        "Bind exact input rows, policy/base bytes, producer/dependency bytes and outputs.",
+        "Policy JSON is an input, not authenticated standing authority.",
+        "Replay generated Lean and dependencies with pinned trust-zero/fatal-warning/axiom/consumer checks before any mathematical claim."
+      ]
+    }
+  ],
+  "gaps": [
+    {
+      "id": "gap:dag-versus-prefix-tree",
+      "blocks": "DIRECT_REFINEMENT",
+      "cache": "cache_taxonomy._acyclic and its diamond test admit arbitrary acyclic taxonomy-parent graphs.",
+      "incoming": "Core.Taxonomy.ancestors_chain and Address.ancestors_comparable require comparable ancestors; taxonomy.normalize requires one parent.",
+      "obligation": "Choose a primary tree projection and preserve secondary edges separately, or supply a separately checked DAG/polyhierarchy model. Never erase a permitted cache diamond."
+    },
+    {
+      "id": "gap:edge-orientation",
+      "blocks": "DIRECT_REFINEMENT",
+      "cache": "taxonomy-parent is child->parent; dependency is consumer->prerequisite; formal implication, provenance, communication and governance are separately typed.",
+      "incoming": "Prefix order is ancestor<=descendant; expansion domain edges are parent->child.",
+      "obligation": "Specify and prove direction per relation kind; no undifferentiated reachability can establish acceptance."
+    },
+    {
+      "id": "gap:keyed-history-versus-ordered-prefix",
+      "blocks": "DIRECT_REFINEMENT",
+      "cache": "validate_transition preserves old decision/contribution/alias rows by id with literal row equality, permitting reordering and insertion before old rows.",
+      "incoming": "Provenance.AppendOnly requires newRows = oldRows ++ tail. taxonomy.validate_extension and expansion.build preserve exact ordered old-row prefixes.",
+      "obligation": "Strengthen Python to exact ordered-prefix transitions with reorder hostile tests, or supply a separate keyed-history model/theorem. Existing AppendOnly does not establish the current Python property. No change is made in this bounded review."
+    },
+    {
+      "id": "gap:absent-method-identities",
+      "blocks": "COMPLETE_CATALOGUE_CLAIM",
+      "cache": "16 families declare 215 records; actual records is empty and expected_record_ids is null. Example phrases are not 215 identities.",
+      "incoming": "Catalogue.primary is total on the selected supplied Artifact type; handoff/expansion concern supplied rows only.",
+      "obligation": "Obtain the intended stable method identity set and primary families, then check exact identity equality and per-family counts. An empty type cannot supply the missing intended universe."
+    },
+    {
+      "id": "gap:logical-id-version-and-address",
+      "blocks": "DROP_IN_ADAPTER",
+      "cache": "Logical IDs such as method-family:01 are distinct from SHA256 payload revision IDs, parent identities and expected_current CAS premises.",
+      "incoming": "Decimal taxonomy revisions are arbitrary text; structural addresses are slot paths. Handoff record_id requires a 64-character hexadecimal external audit ID. Expansion binds raw base/policy digests but performs no atomic cache ref update.",
+      "obligation": "Keep logical ID, source occurrence/version identity, raw-byte digest, structural address and cache revision distinct; supply a lossless explicit mapping without assuming hash injectivity. Preserve CAS and immutable manifest history at the core ref boundary."
+    },
+    {
+      "id": "gap:typed-relations-and-decision-premises",
+      "blocks": "DIRECT_REFINEMENT",
+      "cache": "Strict relation registry separates taxonomy, implication, provenance, dependency, communication and governance; decisions/contributions retain explicit open premises.",
+      "incoming": "The five Lean candidates model tree structure, actual semantic bindings, membership and provenance. They do not implement this exact relation registry, decision-premise grammar, dependency invalidation or CAS protocol.",
+      "obligation": "Define a concrete interpretation and prove the full checker refinement, including hostile rejection, or maintain the components as references only."
+    },
+    {
+      "id": "gap:generated-imports-not-live-sources",
+      "blocks": "GENERATED_LEAN_ACCEPTANCE",
+      "cache": "No additional candidate source is accepted by this review.",
+      "incoming": "expansion.lean_obligations emits imports GRWTSK.Order.Taxonomy.ConservativeExtension and GRWTSK.Order.Taxonomy.Polyhierarchy. Live source inventory contains only Address.lean and Core.lean; producer also reads retained evidence/taxonomy-expansion-v1/formal-candidates.zip.",
+      "obligation": "Review and stage missing dependencies from retained candidates under mathematical paths, then replay the actual generated dependency closure. ZIP presence is not source acceptance."
+    },
+    {
+      "id": "gap:native-and-operational-evidence",
+      "blocks": "MATHEMATICAL_ACCEPTANCE",
+      "cache": "Python reports proof_acceptance not-established and statistical_algorithms not-implemented.",
+      "incoming": "All five headers and intake records retain NOT_RUN/not-run, candidate-source-only status and mathematical_admission false.",
+      "obligation": "Pinned Lean --trust=0 replay, fatal warnings, owned-declaration axiom audit and relevant consumers, plus separate source authenticity, permissions/effect authority and adapter operational evidence. No implementation of all 16 statistical families is established."
+    }
+  ],
+  "checks": [
+    {
+      "command": "python3 -B scripts/test_cache_taxonomy.py",
+      "exit_code": 0,
+      "test_methods": 47,
+      "elapsed_seconds_observed": 0.05,
+      "result": "PASS"
+    },
+    {
+      "command": "python3 -O -B scripts/test_cache_taxonomy.py",
+      "exit_code": 0,
+      "test_methods": 47,
+      "elapsed_seconds_observed": 0.047,
+      "result": "PASS"
+    }
+  ],
+  "expected_negative_controls": "CLI incomplete-coverage, stale-current and unknown-schema rejections are asserted by the passing tests; they are not suite failures.",
+  "not_run": [
+    "Incoming Python scripts and their own suites.",
+    "Lean compilation, generated-source elaboration, kernel replay, axiom audit or source-status rebinding.",
+    "Full repository layout/documentation checks and actual adapter/export implementation."
+  ],
+  "historical_receipt_retained": {
+    "path": "evidence/taxonomy-integration-v1.json",
+    "native_lean_replay": "NOT_RUN: Lean and Lake executables unavailable",
+    "owned_declaration_axiom_audit": "NOT_RUN",
+    "status_change": false
+  },
+  "failed_review_attempts": [
+    {
+      "operation": "Initial report writer",
+      "result": "KeyError files before any output write; corrected source-intake collection name to sources. No source/status mutation."
+    }
+  ],
+  "source_script_catalog_edits": false,
+  "commit_or_remote_effect": false,
+  "final_input_readback": "UNCHANGED_FROM_HASHED_REVIEW_SNAPSHOT"
+}

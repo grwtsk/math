@@ -1,0 +1,16 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "indexed-dictionary",
+  "status": "in_progress",
+  "owner": "indexed_dictionary",
+  "paths": [
+    "GRWTSK/Logic/FiniteSequences/IndexedDictionary.lean",
+    "GRWTSK/Logic/FiniteSequences/Checks/Positive/IndexedDictionary.lean",
+    "GRWTSK/Logic/FiniteSequences/Checks/Negative/IndexedDictionaryInvalidReference.lean"
+  ],
+  "decision": "Formalize exact finite-list value interning with checked indexed decoding; keep every key occurrence and order. Runtime hashing, compression, filesystem transport, and cache revision policy are separate adapter obligations.",
+  "checks": [],
+  "remaining": [
+    "Implement and kernel-check generic round trip, bounds, nodup and occurrence-preservation statements."
+  ]
+}

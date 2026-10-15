@@ -3260,10 +3260,87 @@
       "source_sha256": "63697f423370348ef200a0d52326586d7b80c0f47d6fe8463b977d9ac5a4ef6a",
       "status": "fresh-selected",
       "evidence": "evidence/Algebra/Polynomial/signed-root-trace-checks-2026-10-15.json"
+    },
+    "docs/mathematics/Analysis/Inequalities/finite-square-sum.md": {
+      "title": "Finite square sums with support size",
+      "subject": "Analysis",
+      "object": "Inequalities",
+      "primary_source": "GRWTSK/Analysis/Inequalities/FiniteSquareSum.lean",
+      "source_sha256": "fc5253fb956da23dc8bd67257f233d7281e5afb28542b87af6831de047e246d0",
+      "status": "fresh-selected",
+      "evidence": "evidence/LinearAlgebra/Matrix/trace-rank-checks-2026-10-15.json"
+    },
+    "docs/mathematics/LinearAlgebra/Matrix/trace-rank.md": {
+      "title": "Hermitian trace-rank moment bounds",
+      "subject": "LinearAlgebra",
+      "object": "Matrix",
+      "primary_source": "GRWTSK/LinearAlgebra/Matrix/TraceRank.lean",
+      "source_sha256": "3a5f51c3d44df520a45f31043aebb5c13f12290d05eaa121f2128e95589de08f",
+      "status": "fresh-selected",
+      "evidence": "evidence/LinearAlgebra/Matrix/trace-rank-checks-2026-10-15.json"
+    },
+    "docs/mathematics/Logic/FiniteSequences/indexed-dictionary.md": {
+      "title": "Exact indexed dictionaries",
+      "subject": "Logic",
+      "object": "FiniteSequences",
+      "primary_source": "GRWTSK/Logic/FiniteSequences/IndexedDictionary.lean",
+      "source_sha256": "c01e5ff8067d652cafb42260ae283786c8cb78710c73eb23079a54bd05fbedff",
+      "status": "fresh-selected",
+      "evidence": "evidence/Logic/FiniteSequences/indexed-dictionary-checks-2026-10-15.json"
+    },
+    "docs/mathematics/Logic/FiniteSequences/dictionary-revision.md": {
+      "title": "Revision of indexed dictionaries",
+      "subject": "Logic",
+      "object": "FiniteSequences",
+      "primary_source": "GRWTSK/Logic/FiniteSequences/DictionaryRevision.lean",
+      "source_sha256": "6c7e6f170b1ea7ad746e4e99b0c15a680433c66d20b6d23538ef4a595bd796df",
+      "status": "fresh-selected",
+      "evidence": "evidence/Logic/FiniteSequences/indexed-dictionary-checks-2026-10-15.json"
+    },
+    "docs/mathematics/Logic/FiniteSequences/decision-certificate.md": {
+      "title": "Semantic certificates for finite premises",
+      "subject": "Logic",
+      "object": "FiniteSequences",
+      "primary_source": "GRWTSK/Logic/FiniteSequences/DecisionCertificate.lean",
+      "source_sha256": "d7ce67b4eacedb2d84a958636c55cd0ed75be869f552377163c0832449dc0990",
+      "status": "fresh-selected",
+      "evidence": "evidence/Logic/FiniteSequences/decision-certificate-checks-2026-10-15.json"
+    },
+    "docs/mathematics/Analysis/Complex/CriticalReflection/reflection.md": {
+      "title": "Critical line reflection and Gaussian rotation",
+      "subject": "Analysis",
+      "object": "Complex/CriticalReflection",
+      "primary_source": "GRWTSK/Analysis/Complex/CriticalReflection.lean",
+      "source_sha256": "8c17e27406bc4508600cb9bb202a302a074720dcc01409167428487cdd72d065",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/Analysis/LaplaceTransform/exponential-energy.md": {
+      "title": "Exponential energy bounds and square integrability",
+      "subject": "Analysis",
+      "object": "LaplaceTransform",
+      "primary_source": "GRWTSK/Analysis/LaplaceTransform/ExponentialEnergy.lean",
+      "source_sha256": "6a9b43308dcb2a373f5d131014ad8c3826829b96c2d6c700ee9fd35232f43083",
+      "status": "historical-source-description"
+    },
+    "docs/mathematics/LinearAlgebra/Matrix/HermitianCounterexamples/negative-identity.md": {
+      "title": "A Hermitian matrix with a negative quadratic direction",
+      "subject": "LinearAlgebra",
+      "object": "Matrix/HermitianCounterexamples",
+      "primary_source": "GRWTSK/LinearAlgebra/Matrix/HermitianCounterexamples.lean",
+      "source_sha256": "19bc221e98824279b30df1dfd6411be2ccca6c19ddba2d698f46d1fb0cc9f46e",
+      "status": "historical-source-description"
+    },
+    "docs/reference/content-cache.md": {
+      "title": "Compact source cache",
+      "category": "reference"
+    },
+    "docs/how-to/cache.md": {
+      "title": "Use the compact source cache",
+      "category": "how-to"
     }
   },
   "object_binding_registry": "docs/reference/object-source-bindings.json",
-  "object_binding_registry_sha256": "72feb32a89c1be84de2a2f07628c1df2fbbc7650450e5ffa49c5407a8f9655fd",
+  "object_binding_registry_sha256": "3d6aa0f66e355529ec0a53d603cd4716e2e08e5039bce8adb093e0031b1d4b5a",
   "navigation": {
     "schema": "subject-index-navigation-v1",
     "summary": "docs/reference/library-summary.json"

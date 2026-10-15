@@ -1,0 +1,39 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "dictionary-revision",
+  "status": "api_stable",
+  "owner": "indexed_dictionary",
+  "source": "GRWTSK/Logic/FiniteSequences/DictionaryRevision.lean",
+  "source_sha256": "6c7e6f170b1ea7ad746e4e99b0c15a680433c66d20b6d23538ef4a595bd796df",
+  "module": "GRWTSK.Logic.FiniteSequences.DictionaryRevision",
+  "namespace": "GRWTSK.Logic.FiniteSequences.DictionaryRevision",
+  "definitions": {
+    "AgreesOnReferences": "(before after : List Payload) \u2192 (references : List (Key \u00d7 Nat)) \u2192 Prop := \u2200 reference \u2208 references, before[reference.2]? = after[reference.2]?",
+    "replaceDictionary": "(packed : IndexedDictionary.Packed Key Payload) \u2192 (dictionary : List Payload) \u2192 IndexedDictionary.Packed Key Payload := \u27e8dictionary, packed.references\u27e9",
+    "RevisionCertificate": "structure carrying before : List Payload, after : List Payload, references : List (Key \u00d7 Nat), agreement : AgreesOnReferences before after references"
+  },
+  "theorems": {
+    "decodeReference_eq_iff_lookup_eq": "decodeReference before reference = decodeReference after reference \u2194 before[reference.2]? = after[reference.2]?",
+    "agrees_refl": "AgreesOnReferences dictionary dictionary references",
+    "agrees_symm": "AgreesOnReferences before after references \u2192 AgreesOnReferences after before references",
+    "agrees_trans": "AgreesOnReferences before middle references \u2192 AgreesOnReferences middle after references \u2192 AgreesOnReferences before after references",
+    "unpack_eq_of_agreement": "AgreesOnReferences before after references \u2192 unpack \u27e8before,references\u27e9 = unpack \u27e8after,references\u27e9",
+    "unpack_replaceDictionary": "AgreesOnReferences packed.dictionary after packed.references \u2192 unpack (replaceDictionary packed after) = unpack packed",
+    "RevisionCertificate.unpack_preserved": "unpack \u27e8certificate.before,certificate.references\u27e9 = unpack \u27e8certificate.after,certificate.references\u27e9",
+    "unpack_pack_after": "[DecidableEq Payload] \u2192 AgreesOnReferences (pack entries).dictionary after (pack entries).references \u2192 unpack (replaceDictionary (pack entries) after) = some entries",
+    "stale_slots_counterexample": "Exists equally long dictionaries with identical valid references, decoding [11\u21a67,12\u21a68] vs [11\u21a68,12\u21a67].",
+    "failed_decoders_do_not_imply_agreement": "Exists before/after/references whose actual unpack results are equal, but per-reference agreement fails because both decoders stop at an earlier invalid index."
+  },
+  "kernel_check": {
+    "lean": "leanprover/lean4:v4.33.0",
+    "trust": 0,
+    "warningAsError": true,
+    "exit_code": 0,
+    "receipt": ".local/cache-formalization/dictionary-revision/20261015T170554Z-compile.json"
+  },
+  "verified_olean_directory": ".local/cache-formalization/indexed-dictionary",
+  "evidence_preserved": [
+    ".local/cache-formalization/dictionary-revision/20261015T170537Z-compile.json records the initial missing-olean-path failure before compilation with the unified build root."
+  ],
+  "limits": "No runtime/hash/compression/IO claims; theorems use actual codec and exact optional-lookup agreement."
+}

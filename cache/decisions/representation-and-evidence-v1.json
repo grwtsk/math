@@ -1,0 +1,91 @@
+{
+  "schema": "repository-design-decision-v1",
+  "id": "representation-and-evidence-v1",
+  "at": "2026-10-15T17:19:33.570035+00:00",
+  "head_observed": "253cc1a63fb0d7de79d084d562a442776fa4ce17",
+  "authority": "User requested an in-repository compact expandable source cache, repository agent coordination, integration on main, and formal durable decision techniques. Repository records do not create new authority.",
+  "decisions": [
+    {
+      "id": "exact-reconstruction",
+      "choice": "Store immutable compressed source bytes and occurrence paths; formally model exact indexed dictionaries.",
+      "reason": "Sharing payload storage must preserve every ordered key/payload occurrence, including duplicate keys and payloads.",
+      "mathematical_contract": "IndexedDictionary.unpack_pack and packing injectivity; no hash or serializer law assumed.",
+      "runtime_boundary": "Python/zlib/filesystem adapter is separately tested; refinement to Lean remains open."
+    },
+    {
+      "id": "replay-premises",
+      "choice": "Require exact agreement at every referenced dictionary lookup when reusing decoded content.",
+      "reason": "Same counts, valid indices and equal overall failures can conceal changed payloads.",
+      "mathematical_contract": "DictionaryRevision.unpack_eq_of_agreement, unpack_pack_after; stale-slot and failed-decoder counterexamples."
+    },
+    {
+      "id": "exact-source-universe",
+      "choice": "Freeze Git-tracked plus nonignored untracked first-party GRWTSK Lean files and root GRWTSK.lean; record catalogs and build/license context separately.",
+      "reason": "A finite declared identity set makes omission checks and byte expansion reviewable.",
+      "limits": [
+        "External dependency bytes and implicit imports are outside source snapshot scope.",
+        "Lexical import edges are observations rather than elaboration certificates.",
+        "Captured source role and historical receipts never imply current proof acceptance."
+      ]
+    },
+    {
+      "id": "revision-and-invalidation",
+      "choice": "Use immutable manifests, expected-parent compare-and-swap, retained history and failures, and reverse reachability on old/new dependency graph union.",
+      "reason": "Source changes and concurrent writers must remain observable without erasing historical evidence.",
+      "limits": [
+        "No globally atomic filesystem/source freeze theorem.",
+        "SHA256 is byte-identity bookkeeping; mathematical injectivity is not assumed.",
+        "Operational algorithm refinement to finite closure models remains open."
+      ]
+    },
+    {
+      "id": "method-facets",
+      "choice": "Preserve all 16 supplied family labels and declared counts totaling 215 while leaving the absent individual method identity inventory explicitly incomplete.",
+      "reason": "Count equality cannot establish exact record coverage. Mathematical subject/object remains canonical primary placement.",
+      "limits": [
+        "No invented method records.",
+        "Statistical diagnostics require their own applicability premises and do not replace structural identity checks."
+      ]
+    },
+    {
+      "id": "typed-relations",
+      "choice": "Keep taxonomy parents, aliases, provenance, formal implication, dependencies, communication and governance distinct.",
+      "reason": "Reachability and source custody alone establish neither a theorem nor permission.",
+      "limits": [
+        "Incoming prefix-tree taxonomy versus cache acyclic diamonds needs an explicit representation map.",
+        "Identity-preserving history does not yet establish an exact append-only sequence refinement."
+      ]
+    },
+    {
+      "id": "shared-main-integration",
+      "choice": "Work on main, retain conflicting source/index variants and integrate concurrent progress.",
+      "reason": "The user explicitly requires shared-main work and preservation of concurrent stability evidence.",
+      "limits": [
+        "No remote push or remote branch mutation is authorized.",
+        "Only stale worktree metadata or wholly owned obsolete work is eligible for cleanup."
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/Logic/FiniteSequences/indexed-dictionary-checks-2026-10-15.json",
+      "sha256": "613f81a331828e4f019cc45d351a3532f23f2d0e3a9229733b9056f42e49d0c6"
+    },
+    {
+      "path": "evidence/LinearAlgebra/Matrix/trace-rank-checks-2026-10-15.json",
+      "sha256": "0f5dbd64ed7b9b820f57e6f7a204086c9d0f7545fc94a2aa24810ed9f7c2ea35"
+    }
+  ],
+  "preserved_merge_event": "cache/coordination/events/root-concurrent-merge-b95ca93089994027a0df78dfaf96f8f5.json",
+  "contributions": [
+    {
+      "actor": "R.A. Jacob Martone",
+      "role": "human direction and supplied requirements"
+    },
+    {
+      "actor": "OpenAI Codex and delegated agents",
+      "role": "formal models, adapters, controls, source review and integration; author self-review is not independent validation"
+    }
+  ],
+  "status": "design decisions bound to explicit premises; selected Lean results checked; runtime refinement and full method catalog open"
+}

@@ -5996,34 +5996,34 @@
     }
   ],
   "counts_by_operation": {
-    "add": 14,
+    "add": 28,
     "keep": 336,
     "move": 206
   },
   "counts_by_role": {
     "audit-driver": 35,
-    "library": 340,
-    "negative-control": 100,
-    "positive-check": 81
+    "library": 345,
+    "negative-control": 105,
+    "positive-check": 85
   },
   "counts_by_subject": {
     "Algebra": 19,
-    "Analysis": 195,
+    "Analysis": 196,
     "Combinatorics": 8,
     "Data": 1,
     "DynamicalSystems": 16,
     "GroupTheory": 4,
     "Library": 1,
-    "LinearAlgebra": 49,
-    "Logic": 42,
+    "LinearAlgebra": 53,
+    "Logic": 51,
     "MeasureTheory": 5,
     "NumberTheory": 188,
     "Order": 3,
     "Spectral": 25
   },
-  "present_lean_source_count": 619,
+  "present_lean_source_count": 633,
   "schema": "grwtsk-math-source-catalog-v1",
-  "source_count": 556,
+  "source_count": 570,
   "sources": [
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -6107,6 +6107,7 @@
         "GRWTSK.Analysis.Inequalities.ExponentialDiagonal",
         "GRWTSK.Analysis.Inequalities.FiniteLogarithmicProfileBounds",
         "GRWTSK.Analysis.Inequalities.FiniteShiftedDerivativeBounds",
+        "GRWTSK.Analysis.Inequalities.FiniteSquareSum",
         "GRWTSK.Analysis.Inequalities.LogarithmicProfileIntegralPrices",
         "GRWTSK.Analysis.Inequalities.LogarithmicShiftKernelBounds",
         "GRWTSK.Analysis.Inequalities.LogarithmicShiftKernelPositiveSector",
@@ -6198,6 +6199,7 @@
         "GRWTSK.LinearAlgebra.LinearMap.FiniteMixingObstruction",
         "GRWTSK.LinearAlgebra.Matrix.HermitianCounterexamples",
         "GRWTSK.LinearAlgebra.Matrix.SingularCongruenceObstruction",
+        "GRWTSK.LinearAlgebra.Matrix.TraceRank",
         "GRWTSK.LinearAlgebra.OrderedProductDeterminant",
         "GRWTSK.LinearAlgebra.OrderedTransfer",
         "GRWTSK.LinearAlgebra.QuadraticCertificates",
@@ -6215,6 +6217,9 @@
         "GRWTSK.Logic.Certificates.ModelExamples",
         "GRWTSK.Logic.Certificates.ProofCoverage",
         "GRWTSK.Logic.FiniteCoverage",
+        "GRWTSK.Logic.FiniteSequences.DecisionCertificate",
+        "GRWTSK.Logic.FiniteSequences.DictionaryRevision",
+        "GRWTSK.Logic.FiniteSequences.IndexedDictionary",
         "GRWTSK.Logic.FiniteSequences.PrefixCoverage",
         "GRWTSK.Logic.Inference.FiniteRuleExamples",
         "GRWTSK.Logic.Inference.FiniteRuleSystems",
@@ -6540,7 +6545,7 @@
         "GRWTSK/Logic/ProofChecking/Checks/OwnedDeclarationAudit.lean"
       ],
       "runner": "python3 -B scripts/check_ccc_energy.py",
-      "sha256": "a7bf2f005d1656915332155017744032d18370ce6bcbaf057724fda8929789a5",
+      "sha256": "9c3524c4c9873b2e597192c930ea73f3181e09302b4ffdc4473f5ac942e16c44",
       "source_role": "library",
       "source_root": ".",
       "subject": "Library",
@@ -6549,7 +6554,7 @@
         "inventory": "observed-current-bytes",
         "layout": "repository baseline remains failed",
         "lean": "umbrella not replayed after selected import additions",
-        "source_sha256": "a7bf2f005d1656915332155017744032d18370ce6bcbaf057724fda8929789a5"
+        "source_sha256": "9c3524c4c9873b2e597192c930ea73f3181e09302b4ffdc4473f5ac942e16c44"
       },
       "working_tree_state": "tracked-modified"
     },
@@ -16506,6 +16511,51 @@
         "source_sha256": "deaf9c4af549226f4cf68d08487cf8d2d96e069de6c0c10cffa986c4a5353382"
       },
       "working_tree_state": "tracked-clean"
+    },
+    {
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "git_blob": null,
+      "imports": [
+        "Mathlib.Algebra.Order.Chebyshev",
+        "Mathlib.Data.Real.Basic"
+      ],
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.Analysis.Inequalities.FiniteSquareSum",
+      "namespaces": [
+        "GRWTSK.Analysis.FiniteSquareSum"
+      ],
+      "object": "Inequalities",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Analysis/Inequalities/FiniteSquareSum.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Analysis/Inequalities/FiniteSquareSum.lean",
+      "placement_rationale": "Generic finite-list representation and semantic decisions belong to Logic; finite real inequalities to Analysis; Hermitian spectral moments to LinearAlgebra. Method facets do not replace mathematical homes.",
+      "public_declarations": [
+        {
+          "kind": "theorem",
+          "line": 22,
+          "name": "sq_sum_le_support_card_mul_sum_sq"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.LinearAlgebra.Matrix.TraceRank"
+      ],
+      "runner": "python3 -B scripts/check_trace_rank.py",
+      "sha256": "fc5253fb956da23dc8bd67257f233d7281e5afb28542b87af6831de047e246d0",
+      "source_role": "library",
+      "source_root": "GRWTSK",
+      "subject": "Analysis",
+      "target_path": "GRWTSK/Analysis/Inequalities/FiniteSquareSum.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; repository baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/LinearAlgebra/Matrix/trace-rank-checks-2026-10-15.json",
+        "source_sha256": "fc5253fb956da23dc8bd67257f233d7281e5afb28542b87af6831de047e246d0"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -28777,6 +28827,73 @@
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.LinearAlgebra.Matrix.TraceRank",
+        "Mathlib.Tactic.NormNum"
+      ],
+      "logical_status": "intended rejected control; no theorem admission",
+      "module": "GRWTSK.LinearAlgebra.Matrix.Checks.Negative.TraceRankMissingHermitian",
+      "namespaces": [],
+      "object": "Matrix/Checks/Negative",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/LinearAlgebra/Matrix/Checks/Negative/TraceRankMissingHermitian.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/LinearAlgebra/Matrix/Checks/Negative/TraceRankMissingHermitian.lean",
+      "placement_rationale": "Generic finite-list representation and semantic decisions belong to Logic; finite real inequalities to Analysis; Hermitian spectral moments to LinearAlgebra. Method facets do not replace mathematical homes.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B scripts/check_trace_rank.py",
+      "sha256": "cdf692545dd4cc4270770ee802bb31c4d3c90271c85a9754d7e1d7d942220a5f",
+      "source_role": "negative-control",
+      "source_root": "GRWTSK",
+      "subject": "LinearAlgebra",
+      "target_path": "GRWTSK/LinearAlgebra/Matrix/Checks/Negative/TraceRankMissingHermitian.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; repository baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/LinearAlgebra/Matrix/trace-rank-checks-2026-10-15.json",
+        "source_sha256": "cdf692545dd4cc4270770ee802bb31c4d3c90271c85a9754d7e1d7d942220a5f"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.LinearAlgebra.Matrix.TraceRank"
+      ],
+      "logical_status": "intended rejected control; no theorem admission",
+      "module": "GRWTSK.LinearAlgebra.Matrix.Checks.Negative.TraceRankZeroSecondMoment",
+      "namespaces": [],
+      "object": "Matrix/Checks/Negative",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/LinearAlgebra/Matrix/Checks/Negative/TraceRankZeroSecondMoment.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/LinearAlgebra/Matrix/Checks/Negative/TraceRankZeroSecondMoment.lean",
+      "placement_rationale": "Generic finite-list representation and semantic decisions belong to Logic; finite real inequalities to Analysis; Hermitian spectral moments to LinearAlgebra. Method facets do not replace mathematical homes.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B scripts/check_trace_rank.py",
+      "sha256": "34a74d31f85952e588e39a8070cd3fe1b1174b4d7330c63959aeb45b6792bf4e",
+      "source_role": "negative-control",
+      "source_root": "GRWTSK",
+      "subject": "LinearAlgebra",
+      "target_path": "GRWTSK/LinearAlgebra/Matrix/Checks/Negative/TraceRankZeroSecondMoment.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; repository baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/LinearAlgebra/Matrix/trace-rank-checks-2026-10-15.json",
+        "source_sha256": "34a74d31f85952e588e39a8070cd3fe1b1174b4d7330c63959aeb45b6792bf4e"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
       "git_blob": "41ed92607e48d507c667d7f785383b0349c612a9",
       "imports": [
         "GRWTSK.LinearAlgebra.Matrix.SingularCongruenceObstruction"
@@ -28813,6 +28930,40 @@
         "source_sha256": "6fd9d60696fe068f41a0551a991d3c70fac09f6c045c26087b876641fef4ee20"
       },
       "working_tree_state": "tracked-renamed"
+    },
+    {
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.LinearAlgebra.Matrix.TraceRank",
+        "Mathlib.Tactic.NormNum"
+      ],
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.LinearAlgebra.Matrix.Checks.Positive.TraceRank",
+      "namespaces": [],
+      "object": "Matrix/Checks/Positive",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/LinearAlgebra/Matrix/Checks/Positive/TraceRank.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/LinearAlgebra/Matrix/Checks/Positive/TraceRank.lean",
+      "placement_rationale": "Generic finite-list representation and semantic decisions belong to Logic; finite real inequalities to Analysis; Hermitian spectral moments to LinearAlgebra. Method facets do not replace mathematical homes.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B scripts/check_trace_rank.py",
+      "sha256": "2c1ffa87ac7b7e81f95500fd08dd08c7435cca99b4bbe4e7a6a3ac263ab490f2",
+      "source_role": "positive-check",
+      "source_root": "GRWTSK",
+      "subject": "LinearAlgebra",
+      "target_path": "GRWTSK/LinearAlgebra/Matrix/Checks/Positive/TraceRank.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; repository baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/LinearAlgebra/Matrix/trace-rank-checks-2026-10-15.json",
+        "source_sha256": "2c1ffa87ac7b7e81f95500fd08dd08c7435cca99b4bbe4e7a6a3ac263ab490f2"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -28869,6 +29020,73 @@
         "source_sha256": "7899d4d071aba9e9e84de316cbc902b24dbd0589041b6e11f53d40036ed20677"
       },
       "working_tree_state": "tracked-clean"
+    },
+    {
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Analysis.Inequalities.FiniteSquareSum",
+        "Mathlib.Analysis.Matrix.Spectrum"
+      ],
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.LinearAlgebra.Matrix.TraceRank",
+      "namespaces": [
+        "GRWTSK.LinearAlgebra.Matrix.TraceRank"
+      ],
+      "object": "Matrix",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/LinearAlgebra/Matrix/TraceRank.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/LinearAlgebra/Matrix/TraceRank.lean",
+      "placement_rationale": "Generic finite-list representation and semantic decisions belong to Logic; finite real inequalities to Analysis; Hermitian spectral moments to LinearAlgebra. Method facets do not replace mathematical homes.",
+      "public_declarations": [
+        {
+          "kind": "theorem",
+          "line": 29,
+          "name": "hermitian_trace_sq_eq_sum_eigenvalues_sq"
+        },
+        {
+          "kind": "theorem",
+          "line": 38,
+          "name": "hermitian_trace_sq_le_rank_mul_trace_sq"
+        },
+        {
+          "kind": "theorem",
+          "line": 47,
+          "name": "hermitian_trace_sq_pos"
+        },
+        {
+          "kind": "theorem",
+          "line": 59,
+          "name": "hermitian_rank_ge_trace_ratio"
+        },
+        {
+          "kind": "theorem",
+          "line": 67,
+          "name": "gram_rank_ge_trace_ratio"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.LinearAlgebra.Matrix.Checks.Negative.TraceRankMissingHermitian",
+        "GRWTSK.LinearAlgebra.Matrix.Checks.Negative.TraceRankZeroSecondMoment",
+        "GRWTSK.LinearAlgebra.Matrix.Checks.Positive.TraceRank"
+      ],
+      "runner": "python3 -B scripts/check_trace_rank.py",
+      "sha256": "3a5f51c3d44df520a45f31043aebb5c13f12290d05eaa121f2128e95589de08f",
+      "source_role": "library",
+      "source_root": "GRWTSK",
+      "subject": "LinearAlgebra",
+      "target_path": "GRWTSK/LinearAlgebra/Matrix/TraceRank.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; repository baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/LinearAlgebra/Matrix/trace-rank-checks-2026-10-15.json",
+        "source_sha256": "3a5f51c3d44df520a45f31043aebb5c13f12290d05eaa121f2128e95589de08f"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -31868,6 +32086,522 @@
         "source_sha256": "ca887f60818df881452b175ca95addab318a60b3e7c05ebc4ee546c1e9ec388c"
       },
       "working_tree_state": "tracked-renamed"
+    },
+    {
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Logic.FiniteSequences.DecisionCertificate"
+      ],
+      "logical_status": "intended rejected control; no theorem admission",
+      "module": "GRWTSK.Logic.FiniteSequences.Checks.Negative.DecisionCertificateStalePremise",
+      "namespaces": [],
+      "object": "FiniteSequences/Checks/Negative",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Logic/FiniteSequences/Checks/Negative/DecisionCertificateStalePremise.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Logic/FiniteSequences/Checks/Negative/DecisionCertificateStalePremise.lean",
+      "placement_rationale": "Generic finite-list representation and semantic decisions belong to Logic; finite real inequalities to Analysis; Hermitian spectral moments to LinearAlgebra. Method facets do not replace mathematical homes.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B scripts/check_decision_certificate.py",
+      "sha256": "8b9bbaf344a61a854d91ff31ad4c1bde38f0df7c880c266d644605cf0cffd69d",
+      "source_role": "negative-control",
+      "source_root": "GRWTSK",
+      "subject": "Logic",
+      "target_path": "GRWTSK/Logic/FiniteSequences/Checks/Negative/DecisionCertificateStalePremise.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; repository baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Logic/FiniteSequences/decision-certificate-checks-2026-10-15.json",
+        "source_sha256": "8b9bbaf344a61a854d91ff31ad4c1bde38f0df7c880c266d644605cf0cffd69d"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Logic.FiniteSequences.DictionaryRevision"
+      ],
+      "logical_status": "intended rejected control; no theorem admission",
+      "module": "GRWTSK.Logic.FiniteSequences.Checks.Negative.DictionaryRevisionStaleSlots",
+      "namespaces": [],
+      "object": "FiniteSequences/Checks/Negative",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Logic/FiniteSequences/Checks/Negative/DictionaryRevisionStaleSlots.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Logic/FiniteSequences/Checks/Negative/DictionaryRevisionStaleSlots.lean",
+      "placement_rationale": "Generic finite-list representation and semantic decisions belong to Logic; finite real inequalities to Analysis; Hermitian spectral moments to LinearAlgebra. Method facets do not replace mathematical homes.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B scripts/check_indexed_dictionary.py",
+      "sha256": "18c8e1385378f16688266c40d9abd8810f1f1649080a466f393da61b8ad06dbb",
+      "source_role": "negative-control",
+      "source_root": "GRWTSK",
+      "subject": "Logic",
+      "target_path": "GRWTSK/Logic/FiniteSequences/Checks/Negative/DictionaryRevisionStaleSlots.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; repository baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Logic/FiniteSequences/indexed-dictionary-checks-2026-10-15.json",
+        "source_sha256": "18c8e1385378f16688266c40d9abd8810f1f1649080a466f393da61b8ad06dbb"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Logic.FiniteSequences.IndexedDictionary"
+      ],
+      "logical_status": "intended rejected control; no theorem admission",
+      "module": "GRWTSK.Logic.FiniteSequences.Checks.Negative.IndexedDictionaryInvalidReference",
+      "namespaces": [],
+      "object": "FiniteSequences/Checks/Negative",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Logic/FiniteSequences/Checks/Negative/IndexedDictionaryInvalidReference.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Logic/FiniteSequences/Checks/Negative/IndexedDictionaryInvalidReference.lean",
+      "placement_rationale": "Generic finite-list representation and semantic decisions belong to Logic; finite real inequalities to Analysis; Hermitian spectral moments to LinearAlgebra. Method facets do not replace mathematical homes.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B scripts/check_indexed_dictionary.py",
+      "sha256": "6e0c5e2aba86cbe81c884a873ab3dbd4b94c4814f421dedc388967adc49181a4",
+      "source_role": "negative-control",
+      "source_root": "GRWTSK",
+      "subject": "Logic",
+      "target_path": "GRWTSK/Logic/FiniteSequences/Checks/Negative/IndexedDictionaryInvalidReference.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; repository baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Logic/FiniteSequences/indexed-dictionary-checks-2026-10-15.json",
+        "source_sha256": "6e0c5e2aba86cbe81c884a873ab3dbd4b94c4814f421dedc388967adc49181a4"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Logic.FiniteSequences.DecisionCertificate"
+      ],
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.Logic.FiniteSequences.Checks.Positive.DecisionCertificate",
+      "namespaces": [],
+      "object": "FiniteSequences/Checks/Positive",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Logic/FiniteSequences/Checks/Positive/DecisionCertificate.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Logic/FiniteSequences/Checks/Positive/DecisionCertificate.lean",
+      "placement_rationale": "Generic finite-list representation and semantic decisions belong to Logic; finite real inequalities to Analysis; Hermitian spectral moments to LinearAlgebra. Method facets do not replace mathematical homes.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B scripts/check_decision_certificate.py",
+      "sha256": "26c9f09e818342dd7906060f0f2b45c56584d88fce64a8237e39b56ba5f5b00f",
+      "source_role": "positive-check",
+      "source_root": "GRWTSK",
+      "subject": "Logic",
+      "target_path": "GRWTSK/Logic/FiniteSequences/Checks/Positive/DecisionCertificate.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; repository baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Logic/FiniteSequences/decision-certificate-checks-2026-10-15.json",
+        "source_sha256": "26c9f09e818342dd7906060f0f2b45c56584d88fce64a8237e39b56ba5f5b00f"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Logic.FiniteSequences.DictionaryRevision"
+      ],
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.Logic.FiniteSequences.Checks.Positive.DictionaryRevision",
+      "namespaces": [],
+      "object": "FiniteSequences/Checks/Positive",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Logic/FiniteSequences/Checks/Positive/DictionaryRevision.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Logic/FiniteSequences/Checks/Positive/DictionaryRevision.lean",
+      "placement_rationale": "Generic finite-list representation and semantic decisions belong to Logic; finite real inequalities to Analysis; Hermitian spectral moments to LinearAlgebra. Method facets do not replace mathematical homes.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B scripts/check_indexed_dictionary.py",
+      "sha256": "d8be12d9a614a86ca3355fd4a5a9df7f0fe7425e282fe3ac3c2804d0ce1800cc",
+      "source_role": "positive-check",
+      "source_root": "GRWTSK",
+      "subject": "Logic",
+      "target_path": "GRWTSK/Logic/FiniteSequences/Checks/Positive/DictionaryRevision.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; repository baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Logic/FiniteSequences/indexed-dictionary-checks-2026-10-15.json",
+        "source_sha256": "d8be12d9a614a86ca3355fd4a5a9df7f0fe7425e282fe3ac3c2804d0ce1800cc"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Logic.FiniteSequences.IndexedDictionary"
+      ],
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.Logic.FiniteSequences.Checks.Positive.IndexedDictionary",
+      "namespaces": [],
+      "object": "FiniteSequences/Checks/Positive",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Logic/FiniteSequences/Checks/Positive/IndexedDictionary.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Logic/FiniteSequences/Checks/Positive/IndexedDictionary.lean",
+      "placement_rationale": "Generic finite-list representation and semantic decisions belong to Logic; finite real inequalities to Analysis; Hermitian spectral moments to LinearAlgebra. Method facets do not replace mathematical homes.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B scripts/check_indexed_dictionary.py",
+      "sha256": "421c43bcf34cdb8deac3f4d959e247abeecdaecc60b3dd2c51a2c5799163fd2c",
+      "source_role": "positive-check",
+      "source_root": "GRWTSK",
+      "subject": "Logic",
+      "target_path": "GRWTSK/Logic/FiniteSequences/Checks/Positive/IndexedDictionary.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; repository baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Logic/FiniteSequences/indexed-dictionary-checks-2026-10-15.json",
+        "source_sha256": "421c43bcf34cdb8deac3f4d959e247abeecdaecc60b3dd2c51a2c5799163fd2c"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Logic.FiniteSequences.DictionaryRevision"
+      ],
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.Logic.FiniteSequences.DecisionCertificate",
+      "namespaces": [
+        "GRWTSK.Logic.FiniteSequences.DecisionCertificate"
+      ],
+      "object": "FiniteSequences",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Logic/FiniteSequences/DecisionCertificate.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Logic/FiniteSequences/DecisionCertificate.lean",
+      "placement_rationale": "Generic finite-list representation and semantic decisions belong to Logic; finite real inequalities to Analysis; Hermitian spectral moments to LinearAlgebra. Method facets do not replace mathematical homes.",
+      "public_declarations": [
+        {
+          "kind": "def",
+          "line": 28,
+          "name": "DecodesSatisfying"
+        },
+        {
+          "kind": "structure",
+          "line": 33,
+          "name": "Certificate"
+        },
+        {
+          "kind": "def",
+          "line": 42,
+          "name": "Certificate.packed"
+        },
+        {
+          "kind": "theorem",
+          "line": 46,
+          "name": "Certificate.unpack_packed"
+        },
+        {
+          "kind": "theorem",
+          "line": 51,
+          "name": "Certificate.decodesSatisfying"
+        },
+        {
+          "kind": "theorem",
+          "line": 56,
+          "name": "Certificate.predicate_of_successful_equal_decoding"
+        },
+        {
+          "kind": "theorem",
+          "line": 68,
+          "name": "Certificate.reuse_of_same_decoding"
+        },
+        {
+          "kind": "theorem",
+          "line": 75,
+          "name": "Certificate.reuse_of_agreement"
+        },
+        {
+          "kind": "theorem",
+          "line": 84,
+          "name": "Certificate.predicate_after_agreement"
+        },
+        {
+          "kind": "theorem",
+          "line": 95,
+          "name": "stale_premise_counterexample"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Logic.FiniteSequences.Checks.Negative.DecisionCertificateStalePremise",
+        "GRWTSK.Logic.FiniteSequences.Checks.Positive.DecisionCertificate"
+      ],
+      "runner": "python3 -B scripts/check_decision_certificate.py",
+      "sha256": "d7ce67b4eacedb2d84a958636c55cd0ed75be869f552377163c0832449dc0990",
+      "source_role": "library",
+      "source_root": "GRWTSK",
+      "subject": "Logic",
+      "target_path": "GRWTSK/Logic/FiniteSequences/DecisionCertificate.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; repository baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Logic/FiniteSequences/decision-certificate-checks-2026-10-15.json",
+        "source_sha256": "d7ce67b4eacedb2d84a958636c55cd0ed75be869f552377163c0832449dc0990"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Logic.FiniteSequences.IndexedDictionary"
+      ],
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.Logic.FiniteSequences.DictionaryRevision",
+      "namespaces": [
+        "GRWTSK.Logic.FiniteSequences.DictionaryRevision"
+      ],
+      "object": "FiniteSequences",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Logic/FiniteSequences/DictionaryRevision.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Logic/FiniteSequences/DictionaryRevision.lean",
+      "placement_rationale": "Generic finite-list representation and semantic decisions belong to Logic; finite real inequalities to Analysis; Hermitian spectral moments to LinearAlgebra. Method facets do not replace mathematical homes.",
+      "public_declarations": [
+        {
+          "kind": "def",
+          "line": 26,
+          "name": "AgreesOnReferences"
+        },
+        {
+          "kind": "def",
+          "line": 32,
+          "name": "replaceDictionary"
+        },
+        {
+          "kind": "theorem",
+          "line": 37,
+          "name": "decodeReference_eq_iff_lookup_eq"
+        },
+        {
+          "kind": "theorem",
+          "line": 46,
+          "name": "agrees_refl"
+        },
+        {
+          "kind": "theorem",
+          "line": 50,
+          "name": "agrees_symm"
+        },
+        {
+          "kind": "theorem",
+          "line": 55,
+          "name": "agrees_trans"
+        },
+        {
+          "kind": "theorem",
+          "line": 63,
+          "name": "unpack_eq_of_agreement"
+        },
+        {
+          "kind": "theorem",
+          "line": 78,
+          "name": "unpack_replaceDictionary"
+        },
+        {
+          "kind": "structure",
+          "line": 84,
+          "name": "RevisionCertificate"
+        },
+        {
+          "kind": "theorem",
+          "line": 91,
+          "name": "RevisionCertificate.unpack_preserved"
+        },
+        {
+          "kind": "theorem",
+          "line": 97,
+          "name": "unpack_pack_after"
+        },
+        {
+          "kind": "theorem",
+          "line": 104,
+          "name": "stale_slots_counterexample"
+        },
+        {
+          "kind": "theorem",
+          "line": 119,
+          "name": "failed_decoders_do_not_imply_agreement"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Logic.FiniteSequences.Checks.Negative.DictionaryRevisionStaleSlots",
+        "GRWTSK.Logic.FiniteSequences.Checks.Positive.DictionaryRevision",
+        "GRWTSK.Logic.FiniteSequences.DecisionCertificate"
+      ],
+      "runner": "python3 -B scripts/check_indexed_dictionary.py",
+      "sha256": "6c7e6f170b1ea7ad746e4e99b0c15a680433c66d20b6d23538ef4a595bd796df",
+      "source_role": "library",
+      "source_root": "GRWTSK",
+      "subject": "Logic",
+      "target_path": "GRWTSK/Logic/FiniteSequences/DictionaryRevision.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; repository baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Logic/FiniteSequences/indexed-dictionary-checks-2026-10-15.json",
+        "source_sha256": "6c7e6f170b1ea7ad746e4e99b0c15a680433c66d20b6d23538ef4a595bd796df"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "git_blob": null,
+      "imports": [
+        "Mathlib.Data.List.Basic",
+        "Mathlib.Data.List.Dedup"
+      ],
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.Logic.FiniteSequences.IndexedDictionary",
+      "namespaces": [
+        "GRWTSK.Logic.FiniteSequences.IndexedDictionary"
+      ],
+      "object": "FiniteSequences",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Logic/FiniteSequences/IndexedDictionary.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Logic/FiniteSequences/IndexedDictionary.lean",
+      "placement_rationale": "Generic finite-list representation and semantic decisions belong to Logic; finite real inequalities to Analysis; Hermitian spectral moments to LinearAlgebra. Method facets do not replace mathematical homes.",
+      "public_declarations": [
+        {
+          "kind": "structure",
+          "line": 26,
+          "name": "Packed"
+        },
+        {
+          "kind": "def",
+          "line": 33,
+          "name": "decodeReference"
+        },
+        {
+          "kind": "def",
+          "line": 38,
+          "name": "unpack"
+        },
+        {
+          "kind": "def",
+          "line": 42,
+          "name": "Valid"
+        },
+        {
+          "kind": "def",
+          "line": 48,
+          "name": "pack"
+        },
+        {
+          "kind": "theorem",
+          "line": 54,
+          "name": "payload_mem_dictionary"
+        },
+        {
+          "kind": "theorem",
+          "line": 60,
+          "name": "pack_dictionary_nodup"
+        },
+        {
+          "kind": "theorem",
+          "line": 65,
+          "name": "pack_reference_bound"
+        },
+        {
+          "kind": "theorem",
+          "line": 72,
+          "name": "pack_valid"
+        },
+        {
+          "kind": "theorem",
+          "line": 76,
+          "name": "pack_references_keys"
+        },
+        {
+          "kind": "theorem",
+          "line": 81,
+          "name": "pack_references_length"
+        },
+        {
+          "kind": "theorem",
+          "line": 86,
+          "name": "decodeReference_index_of_mem"
+        },
+        {
+          "kind": "theorem",
+          "line": 92,
+          "name": "unpack_map_indices"
+        },
+        {
+          "kind": "theorem",
+          "line": 107,
+          "name": "unpack_pack"
+        },
+        {
+          "kind": "theorem",
+          "line": 113,
+          "name": "pack_injective"
+        },
+        {
+          "kind": "theorem",
+          "line": 119,
+          "name": "unpack_pack_position"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Logic.FiniteSequences.Checks.Negative.IndexedDictionaryInvalidReference",
+        "GRWTSK.Logic.FiniteSequences.Checks.Positive.IndexedDictionary",
+        "GRWTSK.Logic.FiniteSequences.DictionaryRevision"
+      ],
+      "runner": "python3 -B scripts/check_indexed_dictionary.py",
+      "sha256": "c01e5ff8067d652cafb42260ae283786c8cb78710c73eb23079a54bd05fbedff",
+      "source_role": "library",
+      "source_root": "GRWTSK",
+      "subject": "Logic",
+      "target_path": "GRWTSK/Logic/FiniteSequences/IndexedDictionary.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; repository baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Logic/FiniteSequences/indexed-dictionary-checks-2026-10-15.json",
+        "source_sha256": "c01e5ff8067d652cafb42260ae283786c8cb78710c73eb23079a54bd05fbedff"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
