@@ -186,11 +186,13 @@
       "GRWTSK/Combinatorics/DirectedGraph/PathOccurrences.lean",
       "GRWTSK/Combinatorics/DirectedGraph/PathUnfolding.lean",
       "GRWTSK/Combinatorics/DirectedGraph/PrefixInventory.lean",
+      "GRWTSK/Combinatorics/DirectedGraph/PrefixTableState.lean",
       "GRWTSK/Combinatorics/DirectedGraph/RootedTraceRevision.lean"
     ],
     "Analysis/MellinTransform": [
       "GRWTSK/Analysis/MellinTransform/CompactGaussianWindow.lean",
       "GRWTSK/Analysis/MellinTransform/GaussianDyadicSummation.lean",
+      "GRWTSK/Analysis/MellinTransform/GaussianRemoteSeminorms.lean",
       "GRWTSK/Analysis/MellinTransform/GaussianWindowSeminorms.lean",
       "GRWTSK/Analysis/MellinTransform/LogarithmicGaussian.lean",
       "GRWTSK/Analysis/MellinTransform/NormalizedGaussian.lean",

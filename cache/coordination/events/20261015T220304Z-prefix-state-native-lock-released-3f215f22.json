@@ -1,0 +1,11 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "prefix-table-state-formal",
+  "owner": "indexed_dictionary",
+  "at": "2026-10-15T22:03:04.740607+00:00",
+  "kind": "native-lock-released",
+  "source": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableState.lean",
+  "exit_code": 1,
+  "all_native_children_exited": true,
+  "log": ".local/prefix-state/logs/20261015T220303.764699Z-PrefixTableState.log"
+}

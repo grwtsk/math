@@ -32,6 +32,13 @@ The source also consumes the actual zeroth seminorm to bound weighted
 window values uniformly in their real evaluation point. This is a separate
 actual evaluation consumer of the seminorm series.
 
+The [weighted and remote seminorm consumer](gaussian-remote-seminorms.md)
+now adds arbitrary real scale weights and an actual remote cutoff. Bounds
+at opposite weights supply a remote sum bounded by $C Z^s/A^N$ for
+$Z>0,A\ge1$, including an actual norm-value consumer uniform in the
+real evaluation point. This window-seminorm result remains separate from
+the original Fourier-density moment and physical-row integrals.
+
 ## Domain and verification
 
 The retained premises are $s>0$, $Z>0$ and the chosen $N>s$. For the

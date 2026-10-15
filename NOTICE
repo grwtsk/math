@@ -268,3 +268,23 @@ controls are local formalization contributions. Human direction: R.A. Jacob
 Martone; adaptation/formalization/checking: OpenAI Codex. No surrounding
 arithmetic, ideal/Hecke/calibration/physical detector, RH supplier or
 operational cache refinement is admitted by these modules.
+
+Weighted Gaussian seminorms and remote cutoff sums
+------------------------------------------------
+GRWTSK/Analysis/MellinTransform/GaussianRemoteSeminorms.lean retains
+Apache-2.0 terms. It adapts the weighted/remote proof shape from
+openai/math@1581d4cbdd69a0faf34b2089614fe2a814316a6a,
+lean/OAI/NumberTheory/DirichletL/Detector/GaussianTailBudget.lean,
+raw SHA256 38f614d4aa36aff2966a4143f0fd73876902f38004d643acf22d3a41716f071b,
+Git blob 19a1a25b04c89d50d99e0fdae1ba1295609e554e. OpenAI remains the
+upstream project author; see LICENSES/OpenAI-Apache-2.0.txt.
+The local result concerns actual Gaussian-window seminorms and norm-values;
+the original density-moment integrals and their Fourier/Hecke/calibration/
+physical suppliers are not instantiated. Earlier Gaussian, Schwartz,
+real-power, geometric-series and infinite-sum individual author notices
+remain retained, including the Johannes Hölzl infinite-sum APIs.
+Human direction: R.A. Jacob Martone; adaptation/formalization/checking:
+OpenAI Codex. Local concrete controls prove a convergent positive A=0
+value sum that violates the proposed N=1 zero-denominator bound for every
+constant; no divergence, sharpness, whole-library, physical detector,
+RH or operational cache-refinement claim is inferred.
