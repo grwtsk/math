@@ -1,0 +1,10 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "scaled-gaussian-derivatives-formal",
+  "event": "source-work-start",
+  "owner": "cache_adapter",
+  "at": "2026-10-15T21:02:25.336063+00:00",
+  "scratch": ".local/scaled-gaussian-derivatives/86325cb19597432387f3d1f74f4d3a2a",
+  "native_jobs_running": 0,
+  "contract": "exactprincipal-logP complexpowerbound,analyticdisk,Cauchy andactualrealrestriction;forall a,n onepositiveC independentr>0,y\u2208[1/2,2];actualzeroobstruction"
+}

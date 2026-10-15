@@ -1,0 +1,16 @@
+{
+  "schema": "repository-agent-task-v1",
+  "id": "scaled-gaussian-derivatives-formal",
+  "owner": "cache_adapter",
+  "at": "2026-10-15T21:01:32.692403+00:00",
+  "branch": "main",
+  "base_commit": "2a3b48f46164ee3df2367b598bf4a98dee35b506",
+  "cache_revision": "626c8c53019622b42a9105bf50e3b5727de5cc24d61d822d41b42acf995f43f9",
+  "write_paths": [
+    "GRWTSK/Analysis/MellinTransform/ScaledGaussianDerivatives.lean",
+    "GRWTSK/Analysis/MellinTransform/Checks/Positive/ScaledGaussianDerivatives.lean",
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/ScaledGaussianMissingDomain.lean"
+  ],
+  "objective": "Supply actual all-orders uniform-in-positive-scale derivative bound for exact normalized P on[1/2,2] from pinned OpenAI GaussianDerivative real/complex Gaussian, disk and Cauchy suppliers. Preserve constants dependence; prove actual y0 missing-away-from-zero counterexample. If fullchain technically hard, retain exact bounded implemented supplier and narrow frontier, never assume desired bound via wrapper.",
+  "coordination": "Read actual current sources/frontier; use allocated paths/ignoredscratch and append immutable progress/completion events. Preserve prior/concurrent changes and failedvariants/receipts. Root owns sharedmetadata/docs/cache/freshnativeadmission/commit. Mathematical subjects/objects only. Sharednativeflock .local/math-trust/replay.lock until allchildexit; explicitnoncomputable recursive mathematical defs, no generatedhelperexemptions. No remote writes/branches/migration takeover."
+}
