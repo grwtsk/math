@@ -1,0 +1,44 @@
+{
+  "branch": "main",
+  "checks_not_performed": [
+    "native Lean compilation",
+    "owned-declaration axiom audit",
+    "full repository layout/documentation checks",
+    "external PNT proof dependency replay",
+    "enormous prime cutoff enumeration"
+  ],
+  "execution_history": "history.json.xz preserves the interrupted outer-timeout attempt separately; replay-parts.json indexes the complete successful replay with stored and decoded SHA-256 identities.",
+  "existing_files_deleted": 0,
+  "existing_files_modified": 0,
+  "fresh_replay": {
+    "completed_subprocesses": 18,
+    "cross_precision_boxes_per_mode": 288,
+    "inherited_numerical_diagnostics_per_mode": 3,
+    "old_128_moment_profiles": "NOT_RERUN",
+    "profiles": "N=16, X=1024/4096, 192/256 working bits; outward 160-bit output grid",
+    "status": "PASSED",
+    "tests_per_mode": 112,
+    "unrelated_concurrent_packages": "NOT_RERUN"
+  },
+  "identity_check": "All new source, test, proof, manifest and report entries match the locally computed Git tree. Six archive-part blob hashes match local bytes, and the joined archive decompresses to the complete fresh replay. Pins are checked again after execution. Hashes establish identity, not analytic correctness.",
+  "mathematical_status": {
+    "RH_proved": false,
+    "compensated_primary_prime_growth": "OPEN",
+    "critical_carrier": "EXPLICIT_NOT_SQUARE_SUMMABLE",
+    "new_Lean_admissions": 0,
+    "new_zero_exclusion": false,
+    "proper_power_energy_over_N": "WRITTEN_LIMIT_1",
+    "proper_power_residual_H2_squared": "WRITTEN_BOUND_LT_2000_WITH_NAMED_EXTERNAL_PNT_INPUT"
+  },
+  "new_files_total": 20,
+  "new_payload_files": 19,
+  "new_payload_tree_without_this_receipt": "7ffa71043ec7dd6cb6da6155022ad6951bf6980a",
+  "preparation_base": "46902124f25fe3a8a2b903865830845f9bd2cdc8",
+  "preservation": "All existing main files, source PDFs, exact source definitions, compiler/package pins, active Lean imports, workflows, canonical guides and historical receipts remain unchanged.",
+  "publication_parent": "46902124f25fe3a8a2b903865830845f9bd2cdc8",
+  "publication_parent_tree": "b0d6853e05e2840e0414fcd4beefda27016c6ebd",
+  "publication_plan": "Create an additive commit on publication_parent, inspect its changed paths, then update main non-forced with expected head and confirm the resulting remote head. This prepublication receipt does not assert a ref update before it happens.",
+  "publication_receipt_files": 1,
+  "repository": "grwtsk/math",
+  "schema": "laguerre-prime-power-publication-v1"
+}
