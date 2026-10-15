@@ -1,0 +1,67 @@
+{
+  "schema": "bounded-formal-research-frontier-v1",
+  "at": "2026-10-15T18:20:16.608222+00:00",
+  "previous_frontier": {
+    "path": "cache/research/closed-operator-support-frontier-2026-10-15-r2.json",
+    "sha256": "6666e418c746a68376f17c9fdd383ca0d8a3d0da7970eb1890e7fa1a0a5a20dd"
+  },
+  "primary_repository": "https://github.com/openai/math",
+  "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "upstream_source": {
+    "path": "lean/OAI/Analysis/InnerProductSpace/ComplexSolvability.lean",
+    "sha256": "3bd52605fab93edac918126a231a2f5c7fda48c0e04a8b43104b9bb7fc51d841",
+    "git_blob": "1dcdff16b52cba2412cbf3c30cad7e39c5b5eb52",
+    "upstream_toolchain": "Lean 4.34.1; local selected port replayed with pinned Lean 4.33.0"
+  },
+  "completed_selected_support": {
+    "prior_two_theorems_receipt": "evidence/Analysis/InnerProductSpace/closed-operator-checks-2026-10-15-r2.json",
+    "new_declaration": "GRWTSK.Analysis.InnerProductSpace.ClosedComplexSolvability.exists_solution_of_complex_estimate",
+    "local_source": {
+      "path": "GRWTSK/Analysis/InnerProductSpace/ClosedComplexSolvability.lean",
+      "sha256": "4b43a6bd90cfdec303bfa073e151847c40103bcfc84b7b27696872cadeb4a94a"
+    },
+    "native_receipt": {
+      "path": "evidence/Analysis/InnerProductSpace/closed-complex-checks-2026-10-15.json",
+      "sha256": "d9e29de119c835ea51df0cba5b89e8536bef2e9c6e0cbe92d8aebec69bd13ce3"
+    },
+    "actual_consumer_reuse": "New estimate invokes existing exists_solution_of_adjoint_bound; complete two-module closure freshly elaborated/audited."
+  },
+  "remaining_same_source": [
+    {
+      "declarations": [
+        "jointGraph",
+        "exists_solution_of_core_estimate"
+      ],
+      "status": "NOT_RUN locally; not imported into admitted library",
+      "suggested_home": "Analysis/InnerProductSpace/JointGraphSolvability.lean",
+      "explicit_premises": [
+        "RCLike; complete E,F; H inner-product space without completeness.",
+        "Dense actual T.domain; T,S closed; actual graph relation ST=0.",
+        "D is dense in the actual joint-graph subtype (F × E × H), not separately dense component samples.",
+        "Positive epsilon and universal squared coercive estimate on D.",
+        "Actual target graph-kernel membership."
+      ],
+      "next_step": "Use admitted full-domain estimate and closed inequality on jointGraph to extend actual D estimate; prove actual positive case and failure when density or coercivity removed. Preserve current source/receipts rather than editing accepted module."
+    }
+  ],
+  "other_frontiers_preserved": [
+    "Anthropic threshold-count native census/controls remain NOT_RUN.",
+    "Dirichlet source half-plane interface requires a real consumer before adding.",
+    "Trace-rank equality scalar discrepancy in arxiv0909.0206v2 remains source-bound and unresolved."
+  ],
+  "cache_technique_next": [
+    {
+      "objective": "Actual certificate reuse across unequal representations with equal successful decoded rows.",
+      "premises": "Use actual DecisionCertificate decoder evidence and the now-checked composition law. Do not replace separate hash/source/representation identities."
+    },
+    {
+      "objective": "Typed DAG versus prefix-tree mapping and dependency revision.",
+      "premises": "Read incoming candidate modules without changing NOT_RUN labels; construct checked diamond obstruction or explicit role-preserving map under precise hypotheses."
+    }
+  ],
+  "source_review": {
+    "path": "evidence/Logic/FiniteSequences/composition-source-review-2026-10-15.json",
+    "sha256": "a1c50b46630bd832e9ec820821470a4bdfbf59a888fb32c224fb216984b0bc6c"
+  },
+  "no_promotion": "No mathematical novelty, independent validation, PDE/arithmetic supplier, manuscript main result, RH proof or operational refinement."
+}

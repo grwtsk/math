@@ -34,6 +34,10 @@ a repeated payload can still invalidate old numeric dictionary slots. Fresh
 native receipts bind those claims. The [stable incremental encoder](../mathematics/Logic/FiniteSequences/incremental-dictionary.md)
 now preserves old slots by extending the dictionary itself, with an exact
 append-decoding theorem requiring valid original references.
+Its [composition law](../mathematics/Logic/FiniteSequences/incremental-composition.md)
+equates actual decoded histories for sequential and concatenated batches.
+Checked unequal representations show why this does not identify numeric slots
+or serialized bytes across batching choices.
 
 The repository also contains finite dependency-closure and selective revision
 models in `GRWTSK/Order/Closure/FiniteDependencyClosure.lean` and
@@ -78,6 +82,10 @@ binds representation choices to their premises and native receipts. Decision and
 contribution records preserve their exact scope and premises across taxonomy revisions. Repository events communicate current agent work;
 they do not manufacture independent review or human authorization. Concurrent
 changes remain visible and must be reconciled by identity and checked contracts.
+The [composition decision](../../cache/decisions/incremental-composition-v1.json)
+requires an explicit choice between decoded-history comparison and exact
+representation comparison; successful decoding cannot silently substitute for
+byte custody or a source identity.
 
 The incoming prefix-tree taxonomy does not directly cover every acyclic diamond
 allowed by the method taxonomy. The earlier identity-only history guard

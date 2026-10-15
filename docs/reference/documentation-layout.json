@@ -3364,10 +3364,28 @@
       "source_sha256": "0a46bd0dfb3a7ba86fde0a5331103e72a5263396bce7abcbf35137b48797df2c",
       "status": "fresh-selected",
       "evidence": "evidence/Analysis/InnerProductSpace/closed-operator-checks-2026-10-15-r2.json"
+    },
+    "docs/mathematics/Logic/FiniteSequences/incremental-composition.md": {
+      "title": "Composition of incremental dictionary decoding",
+      "subject": "Logic",
+      "object": "FiniteSequences",
+      "primary_source": "GRWTSK/Logic/FiniteSequences/IncrementalComposition.lean",
+      "source_sha256": "7dbd7e782e1c21e8855223efa03b1d4c690eddcc3df8c7a8f7c8da6c722ac89c",
+      "status": "fresh-selected",
+      "evidence": "evidence/Logic/FiniteSequences/incremental-composition-checks-2026-10-15.json"
+    },
+    "docs/mathematics/Analysis/InnerProductSpace/closed-complex-solvability.md": {
+      "title": "Solvability from a closed complex estimate",
+      "subject": "Analysis",
+      "object": "InnerProductSpace",
+      "primary_source": "GRWTSK/Analysis/InnerProductSpace/ClosedComplexSolvability.lean",
+      "source_sha256": "4b43a6bd90cfdec303bfa073e151847c40103bcfc84b7b27696872cadeb4a94a",
+      "status": "fresh-selected",
+      "evidence": "evidence/Analysis/InnerProductSpace/closed-complex-checks-2026-10-15.json"
     }
   },
   "object_binding_registry": "docs/reference/object-source-bindings.json",
-  "object_binding_registry_sha256": "8549d4ddcc939b495440648a81160de22df757b0737c07b7604bc1b489451679",
+  "object_binding_registry_sha256": "cb29ef85e0a7875795816a3d125daefbdccfb232a0e0063f329d66aecb98a129",
   "navigation": {
     "schema": "subject-index-navigation-v1",
     "summary": "docs/reference/library-summary.json"
