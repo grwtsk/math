@@ -37,6 +37,12 @@ hypothesis that every arrow space is a subsingleton, using Mathlib's existing
 simple-graph adjacency lifted into a quiver. The negative consumer attempts to
 use vertex equality as equality of the two Bool-edge paths and must be rejected.
 
+The later [typed edge-trace equivalence](edge-trace.md) retains source, target
+and actual arrow tags to reconstruct paths in arbitrary quivers from valid
+lists at a fixed root. It has its own source and native receipt; the faithful
+edge-list contract of the present module remains scoped to single-object
+quivers.
+
 ## Representation decisions and scope
 
 These contracts support separate occurrence identities for repeated vertices

@@ -36,6 +36,12 @@ $f(1)=1$. The theorem here proves the identity on the zero-real-part line;
 the complex expression defining $F$ alone is not a proved Mellin identity at
 all complex arguments.
 
+The later [logarithmic Gaussian calculation](logarithmic-gaussian.md) proves
+convergence and the transform formula at every complex coordinate by direct
+Gaussian integration. It has a separate source and native receipt. The
+reverse-inversion receipt on this page retains its original zero-line
+Gaussian consumer and generic four-premise contract.
+
 ## Why the continuity premise remains
 
 The checked point-spike example uses $f=0$ and $F(s)=1$ at $s=0$, zero elsewhere.

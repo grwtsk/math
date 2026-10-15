@@ -1,0 +1,68 @@
+{
+  "schema": "selected-mathematical-integration-v1",
+  "at": "2026-10-15T19:36:57.806327+00:00",
+  "source": {
+    "path": "GRWTSK/Analysis/MellinTransform/LogarithmicGaussian.lean",
+    "sha256": "cd47e598796f4f901ddea56dd05bb9e719534e1aac5589c1be6ddfb8d9fea66d"
+  },
+  "native_receipt": {
+    "path": "evidence/Analysis/MellinTransform/logarithmic-gaussian-checks-2026-10-15.json",
+    "sha256": "1fffe550e46069344cd79b4d0808e05d9c7ede544345010f45cba0aa5f51f028"
+  },
+  "source_review": {
+    "path": "evidence/Analysis/MellinTransform/logarithmic-gaussian-source-review-2026-10-15.json",
+    "sha256": "c004e203570eecd2e13c36b855d337254b146ace5213934e13759cc892882bd1"
+  },
+  "owned_declarations": 46,
+  "owned_modules": [
+    {
+      "declarations": 23,
+      "module": "GRWTSK.Analysis.MellinTransform.ReverseInversion"
+    },
+    {
+      "declarations": 20,
+      "module": "GRWTSK.Analysis.MellinTransform.LogarithmicGaussian"
+    },
+    {
+      "declarations": 3,
+      "module": "GRWTSK.Analysis.MellinTransform.Checks.Positive.LogarithmicGaussian"
+    }
+  ],
+  "operational_controls": {
+    "path": "evidence/Combinatorics/DirectedGraph/typed-trace-operational-controls-2026-10-15.json",
+    "sha256": "4c6eb78b07a90eb52d386eaed597bf5b984c9bd20b28262929f8f791122e9a95"
+  },
+  "contribution_roles": [
+    "grwtsk contributors: human direction",
+    "OpenAI Codex: formalization/adaptation/checking; source/model review correlated",
+    "Lean/Mathlib: upstream definitions/proofs, named authors and original licensing retained",
+    "Sebastien Gouezel: Mathlib complex Gaussian integral/integrability",
+    "Lawrence Wu: Mathlib Mellin change of variables",
+    "David Loeffler: Mathlib Mellin definitions",
+    "OpenAI: imported previous reverse Mellin declaration/actual log-profile consumer; selected upstream inverse Gaussian contextual normalization differs"
+  ],
+  "limits": [
+    "Complete selected local closure and accepted controls freshly compiled; pinned dependency objects reused/fingerprinted, not cold-rebuilt.",
+    "Trust0, fatal warnings, complete owned-declaration/transitive-axiom census; only propext/Classical.choice/Quot.sound.",
+    "Generated project object families and exact coded/plain diagnostic counts checked; no new helper exemptions.",
+    "No operational Lean/JSON/Python/hash/zlib/IO refinement, model independence, whole-library acceptance, arithmetic supplier or RH proof."
+  ],
+  "exact_contracts": [
+    "b,s complex, 0<Re b: actual Mellin convergence of exp(-b*(log x)^2) at every s.",
+    "mellin = (pi/b)^(1/2:Complex)*exp(s²/(4b)), with Mathlib principal complex power.",
+    "Actual log substitution exp(-u), absolute Jacobian/cpow identity give exp(-b*u²-s*u); full integrable/integral complex quadratic Gaussian APIs supply value/convergence.",
+    "b=pi specializes the prior immutable Gaussian definitions at every complex s; actual transform nonzero by exact complex exponential formula."
+  ],
+  "accepted_controls": [
+    "Complex width1+I supplies strict positive real part.",
+    "Actual Mellin value at s1=exp(1/(4pi)); all-complex convergence and own-transform nonvanishing.",
+    "Named accepted positive3 lemmas prove width0 profile constant1, nonnegative real part and divergence at coordinate0.",
+    "Negative imports accepted positive module and supplies nonnegative-width proof as strict-width premise; sole Application type mismatch."
+  ],
+  "license": "Apache-2.0; exact individual copyright/author notices retained in source.",
+  "open_obligations": [
+    "Actual arithmetic signal representation, coefficient/growth/continuation suppliers remain open.",
+    "Nonvanishing applies to the proved logarithmic Gaussian transform, not zeta/Dirichlet functions.",
+    "No novelty or exact theorem identity with differently normalized lognormal-moment/inverse-Gaussian sources claimed."
+  ]
+}

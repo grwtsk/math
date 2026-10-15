@@ -4,16 +4,16 @@
 
 | Inventory | Count |
 |---|---:|
-| Object guides | 20 |
+| Object guides | 21 |
 | Documented object groups | 12 |
-| Distinct primary sources linked | 20 |
-| Lean source modules | 251 |
+| Distinct primary sources linked | 21 |
+| Lean source modules | 254 |
 | Archive intake records | 39 |
 | Selected catalog families | 1 |
 
 These counts measure documentation and source coverage. They do not count accepted theorems or establish that every source module is documented or checked. [Definitions and limits](../../reference/library-pages.md#count-definitions).
 
-At least 1480 source declaration commands, including 1197 theorem/lemma commands, across 208 parsed Lean source modules; 43 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
+At least 1495 source declaration commands, including 1210 theorem/lemma commands, across 211 parsed Lean source modules; 43 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
 
 ## Asymptotics
 
@@ -95,10 +95,11 @@ Linked primary-source scope: 1 source declaration commands, including 1 theorem/
 
 ## MellinTransform
 
-1 object guide · 1 distinct linked primary source file.
+2 object guides · 2 distinct linked primary source files.
 
-Linked primary-source scope: 12 source declaration commands, including 10 theorem/lemma commands, across 1 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+Linked primary-source scope: 24 source declaration commands, including 20 theorem/lemma commands, across 2 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
+- [Mellin transform of a logarithmic Gaussian](MellinTransform/logarithmic-gaussian.md).
 - [Reverse Mellin inversion](MellinTransform/reverse-inversion.md).
 
 ## NormedSpace

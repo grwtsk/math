@@ -1,0 +1,175 @@
+{
+  "schema": "bounded-formal-research-frontier-v1",
+  "at": "2026-10-15T19:41:28.788648+00:00",
+  "previous_frontier": {
+    "path": "cache/research/path-mellin-frontier-2026-10-15.json",
+    "sha256": "4936af6660294690276929545fdffab224af130cf16fa06c110823e4514b3307"
+  },
+  "completed": [
+    {
+      "source": {
+        "path": "GRWTSK/Combinatorics/DirectedGraph/EdgeTrace.lean",
+        "sha256": "e1e5f2dd23b6c04a734af4bd95f3f19c15fe4f313d66c5bccff08b3312fb2a59"
+      },
+      "native_receipt": {
+        "path": "evidence/Combinatorics/DirectedGraph/edge-trace-checks-2026-10-15.json",
+        "sha256": "5226ba076cfdf2c4509926bca7056216b37165e5387f55a9f4af2df85edeb275"
+      },
+      "owned_declarations": 80,
+      "owned_modules": [
+        {
+          "declarations": 18,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences"
+        },
+        {
+          "declarations": 46,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.EdgeTrace"
+        },
+        {
+          "declarations": 11,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.EdgeTrace"
+        },
+        {
+          "declarations": 5,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.EdgeTraceCounterexample"
+        }
+      ],
+      "integration": {
+        "path": "evidence/Combinatorics/DirectedGraph/edge-trace-integration-2026-10-15.json",
+        "sha256": "dd63f5b0d909e16ee230d18752a491f043415feec934eaa32aaf3a12ddb0e176"
+      }
+    },
+    {
+      "source": {
+        "path": "GRWTSK/Analysis/MellinTransform/LogarithmicGaussian.lean",
+        "sha256": "cd47e598796f4f901ddea56dd05bb9e719534e1aac5589c1be6ddfb8d9fea66d"
+      },
+      "native_receipt": {
+        "path": "evidence/Analysis/MellinTransform/logarithmic-gaussian-checks-2026-10-15.json",
+        "sha256": "1fffe550e46069344cd79b4d0808e05d9c7ede544345010f45cba0aa5f51f028"
+      },
+      "owned_declarations": 46,
+      "owned_modules": [
+        {
+          "declarations": 23,
+          "module": "GRWTSK.Analysis.MellinTransform.ReverseInversion"
+        },
+        {
+          "declarations": 20,
+          "module": "GRWTSK.Analysis.MellinTransform.LogarithmicGaussian"
+        },
+        {
+          "declarations": 3,
+          "module": "GRWTSK.Analysis.MellinTransform.Checks.Positive.LogarithmicGaussian"
+        }
+      ],
+      "integration": {
+        "path": "evidence/Analysis/MellinTransform/logarithmic-gaussian-integration-2026-10-15.json",
+        "sha256": "6afd2aebe587674f2507a41b72410370129e3cca43c200060adf7a53d46b1a40"
+      }
+    }
+  ],
+  "current_cache_contract": "Fixed-root existing PathStar equivalent to valid lists of complete dependent edge tags; exact actual roundtrips/endpoint/composition. Recursive mathematical defs explicitly noncomputable; no executable codec/refinement admitted.",
+  "current_gaussian_contract": "Complex b with0<Re b, every complex Mellin coordinate converges and equals(pi/b)^(1/2:Complex)*exp(s²/(4b)); actual b=pi specialization/own-transform nonvanishing; zero-width divergence proves strict positivity essential.",
+  "operational_progress": {
+    "adapter": {
+      "path": "scripts/cache_occurrences.py",
+      "sha256": "1ff39b1a99d8167f5ece162861cbcd8c04741edb92494ee8579df971df371868"
+    },
+    "tests": {
+      "path": "scripts/test_cache_occurrences.py",
+      "sha256": "ec3469e37ab923ac558e1ada0493f086aa9a45b5aa1fff51165594b6dc6e92d3"
+    },
+    "controls": {
+      "path": "evidence/Combinatorics/DirectedGraph/typed-trace-operational-controls-2026-10-15.json",
+      "sha256": "4c6eb78b07a90eb52d386eaed597bf5b984c9bd20b28262929f8f791122e9a95"
+    },
+    "actual_consumer": {
+      "path": "evidence/Combinatorics/DirectedGraph/occurrence-trace-consumer-2026-10-15.json",
+      "sha256": "8be3d5166b528c710433d34667a63ed75928d1d6f45d24693d2e7ab75d64c851"
+    },
+    "trace": {
+      "path": "cache/occurrences/communication-trace-2026-10-15.json",
+      "sha256": "f1968385d5867b90eb0d37feffcd96e96d09ca2e2b25ba0f79815a259777c50b"
+    },
+    "scope": "Separate read-only schema; exact declared pair of source snapshot and byte/revision-bound taxonomy, ordered role/forward joins/full relation content/positions;21 normal+21 optimized controls, no proof/permission status or snapshot-taxonomy containment/Lean refinement."
+  },
+  "next_primary_openai_target": {
+    "status": "PRECISE_UNCHECKED_FRONTIER",
+    "repository": "openai/math",
+    "commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+    "path": "lean/OAI/NumberTheory/DirichletL/Detector/GaussianMellin.lean",
+    "raw_sha256": "0526d85d63bcee8a85cb945c231af1263839ca0808c6d714132d0781b2618a04",
+    "source_review": {
+      "path": "evidence/Analysis/MellinTransform/logarithmic-gaussian-source-review-2026-10-15.json",
+      "sha256": "c004e203570eecd2e13c36b855d337254b146ace5213934e13759cc892882bd1"
+    },
+    "exact_profile": "P(x)=((1/(2*pi):Real):Complex)*(pi:Complex)^(1/2:Complex)*exp(-(Complex.log(x:Complex))²/4)",
+    "obligations": [
+      "Use accepted general Gaussian at b=1/4 plus actual scalar multiplication and equality on x>0 to prove MellinConvergent P s and mellin P s=exp(s²) for every complex s.",
+      "Pay exact principal half-power normalization C*(4*pi)^(1/2)=1; do not silently identify prior b=pi profile.",
+      "Prove actual vertical-line integrability/continuity of exp((sigma+v*i)²), using exp(sigma²-v²), and positive-x profile continuity.",
+      "Use existing Mathlib mellinInv_mellin_eq to derive exact upstream inverse formula for every real sigma and x>0. Scout existing scalar/congruence/inversion APIs before adding wrappers.",
+      "Preserve actual positive argument, coordinate and normalization premises, named copyright/license and negative controls. No arithmetic signal supplier inferred."
+    ],
+    "port_gate": "Actual consumer of accepted general formula with inputs discharged, not an assumed representation/holomorphy wrapper.",
+    "native_status": "NOT_RUN; source/premise frontier only."
+  },
+  "next_path_target": {
+    "status": "PRECISE_UNCHECKED_FRONTIER",
+    "objective": "All-occurrence rooted extension quiver on an object-specific wrapper of existing PathStar r, actual base-edge projection, arborescence and outgoing unique finite path lifting.",
+    "definition": "An extension arrow p->q is an actual base edge e:p.endpoint->q.endpoint with Sigma equality PathStar.mk(p.path.cons e)=q. No new inductive path structure.",
+    "obligations": [
+      "Reuse Arborescence.arborescenceMk with height=p.path.length; prove strict increase, unique predecessor/last edge, and root-or-parent from existing Path nil/cons.",
+      "Project to base endpoints/actual edges; prove each outgoing-star map bijective. Reuse Prefunctor.pathStar_bijective for unique finite path lifts from every occurrence.",
+      "State exact occurrence/path coverage and retain source vertex versus occurrence identity; loops create repeated vertices, distinct histories remain distinct occurrences.",
+      "Genuine base loop/parallel-edge controls, explicit root-empty occurrence and length2 lifts.",
+      "Prove failure of full covering for one-vertex one-loop base: nil occurrence costar empty, base costar contains loop. Do not infer costar surjectivity from outgoing-star bijection.",
+      "Geodesic subtree selects a single shortest path inside base graph; it does not cover all occurrences. Repeat bounded duplicate/API scout before source allocation."
+    ],
+    "pinned_api": [
+      {
+        "path": ".lake/packages/mathlib/Mathlib/Combinatorics/Quiver/Covering.lean",
+        "sha256": "cd917cebf3f69c14dd2596343577ddfa07783b1b73bd4e0e91a20b1a1be30f59",
+        "anchors": {
+          "PathStar": 172,
+          "pathStar_bijective_requires_only_star": 250,
+          "IsCovering_requires_star_and_costar": 101,
+          "isCovering_of_bijective_star_needs_involutive_reverse_do_not_apply": 296
+        }
+      },
+      {
+        "path": ".lake/packages/mathlib/Mathlib/Combinatorics/Quiver/Arborescence.lean",
+        "sha256": "67cf4c2b462a1ab0b9f7797ab97cddf4e3769345149bca47cee4b9d5cf733d40",
+        "anchors": {
+          "arborescenceMk": 61,
+          "geodesicSubtree": 116,
+          "geodesicArborescence": 120
+        }
+      }
+    ],
+    "runtime_guard": "Use explicit noncomputable defs where needed; noncomputable section alone does not suppress generated helpers. Never weaken audit or enroll helper names by suffix.",
+    "native_status": "NOT_RUN; bounded correlated API scout, not exhaustive absence or correctness proof."
+  },
+  "failure_history": {
+    "failed_native": {
+      "path": "evidence/Combinatorics/DirectedGraph/edge-trace-audit-failed-2026-10-15.json",
+      "sha256": "9ba71e930b49d76dafc3f4416d3bbb674dfe0eef3b1cbbe0a045c22ecc3823d1"
+    },
+    "original_review": {
+      "path": "evidence/Combinatorics/DirectedGraph/edge-trace-source-review-2026-10-15.json",
+      "sha256": "d8bdef6fb48aaa499eab500280b3ba02f34105801bb02f27e9cfef8600c4570f"
+    },
+    "current_review": {
+      "path": "evidence/Combinatorics/DirectedGraph/edge-trace-source-review-2026-10-15-r2.json",
+      "sha256": "41a9dd392a62f7370b9cc1effaee5a85e5be4665efad2025324fde7c556b718f"
+    },
+    "policy": "Old360c...source set, intermediate section-only failure and coded dependsOnNoncomputable negative failure retained under immutable events and ignored source variants. Final explicit noncomputable defs/negative example preserve mathematical bodies; native audit80 passes with zero helpers. No historical failure rebound."
+  },
+  "open_obligations": [
+    "Lean/Python/JSON typed relation-ID graph correspondence and hash/zlib/IO runtime refinement.",
+    "Incoming taxonomy/classification source native statuses remain NOT_RUN;215 method identities unprovided,16declared facets only.",
+    "Actual analytic/arithmetic coefficient, initial product, signal representation and growth suppliers; RH remains open."
+  ],
+  "authority": "No independent model validation, taxonomy/source custody proof authority, permission from graph reachability or remote effect."
+}

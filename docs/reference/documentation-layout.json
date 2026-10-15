@@ -3427,10 +3427,28 @@
       "source_sha256": "88d959d74d9d5e27772f57e847497b9a943167cc41ae6abb453c3932cbb84c57",
       "status": "fresh-selected",
       "evidence": "evidence/Analysis/MellinTransform/reverse-mellin-checks-2026-10-15-r2.json"
+    },
+    "docs/mathematics/Combinatorics/DirectedGraph/edge-trace.md": {
+      "title": "Typed edge traces of directed paths",
+      "subject": "Combinatorics",
+      "object": "DirectedGraph",
+      "primary_source": "GRWTSK/Combinatorics/DirectedGraph/EdgeTrace.lean",
+      "source_sha256": "e1e5f2dd23b6c04a734af4bd95f3f19c15fe4f313d66c5bccff08b3312fb2a59",
+      "status": "fresh-selected",
+      "evidence": "evidence/Combinatorics/DirectedGraph/edge-trace-checks-2026-10-15.json"
+    },
+    "docs/mathematics/Analysis/MellinTransform/logarithmic-gaussian.md": {
+      "title": "Mellin transform of a logarithmic Gaussian",
+      "subject": "Analysis",
+      "object": "MellinTransform",
+      "primary_source": "GRWTSK/Analysis/MellinTransform/LogarithmicGaussian.lean",
+      "source_sha256": "cd47e598796f4f901ddea56dd05bb9e719534e1aac5589c1be6ddfb8d9fea66d",
+      "status": "fresh-selected",
+      "evidence": "evidence/Analysis/MellinTransform/logarithmic-gaussian-checks-2026-10-15.json"
     }
   },
   "object_binding_registry": "docs/reference/object-source-bindings.json",
-  "object_binding_registry_sha256": "18ade91493cca4b923669b928f3e0a7d38943495e94f05b17b6aad527598bd00",
+  "object_binding_registry_sha256": "affd02b5c754fb808098947df25bbf2f59a4c3f451b2e5da6a73fa0cbf0a85c2",
   "navigation": {
     "schema": "subject-index-navigation-v1",
     "summary": "docs/reference/library-summary.json"
