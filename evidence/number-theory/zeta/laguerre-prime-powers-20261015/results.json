@@ -1,0 +1,141 @@
+{
+  "archives": {
+    "history.json.xz": {
+      "decoded_bytes": 5321,
+      "decoded_sha256": "44c5e191f3a48d2dfe53f05d1fe9f099eb4c95bad3a4066777f430acf0262810",
+      "stored_bytes": 1344,
+      "stored_sha256": "f6f0e8ce7a270e5d89e46c35376c1494556dbe2d45ffe6ab9061293023da0e8e"
+    },
+    "replay.json.xz": {
+      "decoded_bytes": 585771,
+      "decoded_sha256": "dd546f3905778522da81b4660ff4590233d6eb3f85dbb3b5f4f3abdf5fc0abc1",
+      "storage": "Concatenate parts in the exact order given by replay-parts.json; joined bytes equal this archive.",
+      "stored_bytes": 26420,
+      "stored_sha256": "8c527600f65b88400b398d4940942e522a06fbc83eaa9ce0b46623bcac49798d"
+    }
+  },
+  "base_commit": "46902124f25fe3a8a2b903865830845f9bd2cdc8",
+  "budgets": {
+    "correction_tail_targets": [
+      {
+        "prime_cutoff_power_of_two": 3072,
+        "squared_error_strict_upper": "1/1000000"
+      },
+      {
+        "prime_cutoff_power_of_two": 12288,
+        "squared_error_strict_upper": "1/10000000000000000000000000"
+      }
+    ],
+    "full_residual_coefficient_energy_upper": "2000",
+    "higher_power_coefficient_energy_upper": "81",
+    "normalized_square_error_L2_squared_target": "2250"
+  },
+  "completed_subprocesses": 18,
+  "cross_precision_boxes_per_mode": 288,
+  "environment": {
+    "Lean_Lake": "executables not present",
+    "git_access": "git ls-remote failed DNS",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "python": "3.13.5",
+    "snapshot": "source-bound partial snapshot; four inherited blobs compared to live connector"
+  },
+  "new_exact_tests_per_mode": 32,
+  "new_receipt_rejection_tests_per_mode": 12,
+  "prior_numerical_diagnostics_per_mode": 3,
+  "prior_tests_per_mode": 68,
+  "profiles": [
+    {
+      "count": 16,
+      "cutoff": 1024,
+      "energies": {
+        "compensated_prime": {
+          "lower": "344654274367979386630029064965315682693644733331/1461501637330902918203684832716283019655932542976",
+          "upper": "86163568591994846657507266241328920673411183337/365375409332725729550921208179070754913983135744"
+        },
+        "original": {
+          "lower": "298066505201319130197324013160294222148942498823/1461501637330902918203684832716283019655932542976",
+          "upper": "298066505201319130197324013160294222148942498839/1461501637330902918203684832716283019655932542976"
+        },
+        "prime_only": {
+          "lower": "5103587840775779721631806374224102687259212420139/1461501637330902918203684832716283019655932542976",
+          "upper": "5103587840775779721631806374224102687259212420167/1461501637330902918203684832716283019655932542976"
+        },
+        "residual": {
+          "lower": "302646584412119442960455695480396255497637555911/1461501637330902918203684832716283019655932542976",
+          "upper": "302646584412119442960455695480396255497637555929/1461501637330902918203684832716283019655932542976"
+        }
+      },
+      "inventory": {
+        "factorization_checked_through": 1024,
+        "higher_power_count": 15,
+        "prime_count": 172,
+        "prime_power_count": 198,
+        "sha256": "611aaf8bff7300bdf419f4a0154c953891cde0d53bfe035ded43a0b7ab719a9d",
+        "square_count": 11,
+        "touching_feature_exact_zero": true,
+        "touching_label_retained": true
+      },
+      "mixed_compensated_residual": {
+        "lower": "-87308588394694924848290186821354429010584947611/365375409332725729550921208179070754913983135744",
+        "upper": "-43654294197347462424145093410677214505292473801/182687704666362864775460604089535377456991567872"
+      },
+      "output_grid_bits": 160,
+      "source_comparison_boxes": 16,
+      "working_bits": 256
+    },
+    {
+      "count": 16,
+      "cutoff": 4096,
+      "energies": {
+        "compensated_prime": {
+          "lower": "419296780252204607666781331247500582573665265577/1461501637330902918203684832716283019655932542976",
+          "upper": "104824195063051151916695332811875145643416316399/365375409332725729550921208179070754913983135744"
+        },
+        "original": {
+          "lower": "149063332131976170848632322727822474227365360911/730750818665451459101842416358141509827966271488",
+          "upper": "298126664263952341697264645455644948454730721839/1461501637330902918203684832716283019655932542976"
+        },
+        "prime_only": {
+          "lower": "6664339000022441869739062488789132429370988711455/1461501637330902918203684832716283019655932542976",
+          "upper": "6664339000022441869739062488789132429370988711481/1461501637330902918203684832716283019655932542976"
+        },
+        "residual": {
+          "lower": "369624559712004419089965743510487692430855419427/1461501637330902918203684832716283019655932542976",
+          "upper": "92406139928001104772491435877621923107713854861/365375409332725729550921208179070754913983135744"
+        }
+      },
+      "inventory": {
+        "factorization_checked_through": 4096,
+        "higher_power_count": 22,
+        "prime_count": 564,
+        "prime_power_count": 604,
+        "sha256": "dc78cf71278dbfbe6b54aef02736f6236c910e13e01eeb292f4e4798edd81195",
+        "square_count": 18,
+        "touching_feature_exact_zero": true,
+        "touching_label_retained": true
+      },
+      "mixed_compensated_residual": {
+        "lower": "-122698668925064171264870607325585831637447490803/365375409332725729550921208179070754913983135744",
+        "upper": "-245397337850128342529741214651171663274894981589/730750818665451459101842416358141509827966271488"
+      },
+      "output_grid_bits": 160,
+      "source_comparison_boxes": 16,
+      "working_bits": 256
+    }
+  ],
+  "schema": "laguerre-prime-power-results-v1",
+  "status": "PASSED",
+  "tests_per_mode": 112,
+  "verification_limits": {
+    "RH_proved": false,
+    "all_depth_compensated_prime_bound": "OPEN",
+    "continuum_results": "WRITTEN_PROOFS_WITH_NAMED_EXTERNAL_PNT_INPUT",
+    "external_PNT_proof_replayed": false,
+    "native_Lean": "NOT_RUN",
+    "new_zero_exclusion": false,
+    "old_128_coefficient_profiles": "NOT_RERUN",
+    "owned_axiom_audit": "NOT_RUN",
+    "whole_repository_checks": "NOT_RUN"
+  },
+  "within_profile_mode_equality": true
+}
