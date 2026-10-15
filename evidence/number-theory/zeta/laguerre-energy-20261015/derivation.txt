@@ -1,0 +1,228 @@
+Laguerre discrepancy energy: finite source, sharper truncation, exact dissipation
+===============================================================================
+Human mathematical direction: R.A. Jacob Martone.
+New deductions, implementation and replay: OpenAI ChatGPT. MIT.
+Source base: grwtsk/math at d1ae4ef6c9fd5a246f1a9fbff56097a498366fd8.
+
+This is an additive written derivation. The supplied manuscripts and historical
+receipts are not rewritten. The scalar return and preceding prime-discrepancy
+identities are used at their written-proof grade. Finite rational replay is not
+a proof of an all-depth estimate or Lean-kernel acceptance. No priority claim
+is made for the classical Laguerre, Cauchy, Lyapunov, or Schur facts.
+
+1. The unchanged linear arithmetic source
+-----------------------------------------
+Let Delta(x)=sum_(n<=x) Lambda(n)-x+1, x>=1, with every prime power present.
+Delta(1)=0. Define s(w)=(3+w)/(2(1-w)),
+ a(w)=xi'(s(w))/xi(s(w)),
+ r(w)=[psi_digamma(1+s(w)/2)-log(pi)]/2,
+ p(w)=a(w)-r(w),
+ u_k=integral_0^infinity Delta(exp t) exp(-3t/2) L_k(2t) dt.
+
+The original source identity, initially on |w|<1/3, is
+ p(w)=1/(s(w)-1)+zeta'(s(w))/zeta(s(w))
+     =-(3+w) sum_(k>=0) u_k w^k /2.
+Thus p_k=-(3u_k+u_(k-1))/2, with u_(-1)=0. The inverse has Euclidean
+operator norm at most one on every finite prefix; no global Xi-quotient inverse
+is needed. The prior written proof gives
+ log(1+sum_(k<N)|u_k|^2)=o(N) => RH.
+It does not establish the antecedent. Subexponential growth is the inherited
+endpoint; a fixed positive exponential allowance is not enough.
+
+The new producer evaluates p directly as follows. At s=3/2+h, enclose the
+coefficients of zeta by the existing rational Euler--Maclaurin evaluator,
+including its Cauchy-priced remainder, form zeta'/zeta, and ADD 1/(1/2+h)
+BEFORE composition with h=2w/(1-w). Apply the stable two-term inverse last.
+Only the initial zeta value is inverted, and its lower endpoint is positive.
+The separate path assembles the original a and r jets and then subtracts them.
+Both paths share the zeta evaluator; their overlap is a consistency check, not
+an independent proof of its analytic remainder. The constant and terminal
+coefficients are retained.
+
+2. A smaller all-depth prime cutoff, proved before enumeration
+---------------------------------------------------------------
+For X>=1, let L=log X and
+ u_k^(X)=integral_0^L Delta(exp t) exp(-3t/2) L_k(2t) dt.
+Use only |Delta(exp t)|<=exp(t)(t+1), valid by Lambda(n)<=log n.
+
+The standard ordinary Laguerre generating function is
+ sum_(k>=0) L_k(2t) z^k=(1-z)^(-1) exp(-2tz/(1-z)), |z|<1.
+It is DLMF 18.12.13 at alpha=0 and follows directly from the finite binomial
+coefficient formula used by the scripts. For |z|=r<1,
+ Re(z/(1-z))>=-r/(1+r).
+One exact verification, writing x=Re z and |z|=r, is
+ (1+r)|1-z|^2 [Re(z/(1-z))+r/(1+r)]=(1-r)(r+x)>=0.
+Cauchy's coefficient estimate therefore gives, t>=0,
+ |L_k(2t)| <= r^(-k)/(1-r) exp(2rt/(1+r)).
+
+Unlike replacing every polynomial coefficient by its magnitude, this bounds
+one completed Laguerre polynomial. It does not assume cancellation of primes.
+For 0<r<1/3 put alpha=(1-3r)/(2(1+r))>0. Exact tail integration yields
+
+ |u_k-u_k^(X)| <= r^(-k)/(1-r) X^(-alpha)
+                         [(log X+1)/alpha+1/alpha^2].          (2.1)
+
+Take r=1/12, alpha=9/26, and the INTEGER cutoff X_N=2^(11N). The exact
+integer inequality
+ 14^26=629983141281877223603213172736
+       <633825300114114700748351602688=2^99
+implies X_N^(-alpha)<14^(-N). Also log2<7/10. For k<N this proves
+
+ |u_k-u_k^(X_N)| <= (91N/45+910/891) (6/7)^N,
+ sum_(k<N)|u_k-u_k^(X_N)|^2
+             <= N(91N/45+910/891)^2(36/49)^N =: E_N^2.         (2.2)
+
+The error tends to zero exponentially up to its displayed polynomial factor.
+This reduces the prior sufficient cutoff 2^(16N) to 2^(11N), by a factor
+2^(5N), while retaining a proved vanishing tail. The earlier tail at the larger
+cutoff has a faster convergence rate; no claim is made that (2.2) improves
+that rate. At cutoff 2^(11N) the old absolute-polynomial majorant would have
+squared exponential ratio 81/sqrt(2^11)>1, whereas the completed-polynomial
+bound above decays. The enormous prime range is not enumerated by the program.
+
+The new large-cutoff finite head satisfies
+ |sqrt(D_N)-sqrt(D_N^(X_N))|<=E_N,
+where D_N=sum_(k<N)|u_k|^2. Hence the same subexponential criterion is equivalent
+to subexponential growth of D_N^(X_N). This improves truncation, not the
+remaining all-depth arithmetic estimate.
+
+The coefficient count N, prime cutoff X_N, zeta ordinate, and Tao heat time
+are different variables. No conversion between them is asserted here.
+
+3. Complete finite-head evaluation at actually enumerated cutoffs
+-----------------------------------------------------------------
+For fixed k write P_k(t)=L_k(2t). For lambda>0 define the finite polynomial
+ A_(k,lambda)(t)=sum_(j>=0) P_k^(j)(t)/lambda^(j+1).
+It satisfies lambda A-A'=P_k and
+ J_(k,lambda)(a)=exp(-lambda a) A_(k,lambda)(a)
+               =integral_a^infinity exp(-lambda t) P_k(t)dt.
+
+On the finite interval [0,L], direct substitution of Delta gives
+
+ u_k^(X)=sum_(n<=X) Lambda(n)[J_(k,3/2)(log n)-J_(k,3/2)(L)]
+          -[J_(k,1/2)(0)-J_(k,1/2)(L)]
+          +[J_(k,3/2)(0)-J_(k,3/2)(L)].                       (3.1)
+
+Every summand at n=X is exactly zero, but that touching prime power remains
+in the inventory. The subtracted common endpoint in each prime contribution
+must NOT be removed. The two continuum differences include the original +1.
+At X=1 the interval is empty and every u_k^(1) is exactly zero.
+
+The program uses elementary rational logarithm and square-root enclosures,
+finite polynomial evaluation, and complete sums over primes AND higher powers.
+An independent trial-factorization pass checks each integer through X. It
+computes (3.1) through k=7 for X=256 and X=1024. These finite heads are not
+silently substituted for the complete u_k; they are recorded separately.
+There is no floating-point acceptance or numerical integration in this route.
+
+The first test run caught interval dependency widening at X=1: equal rational
+antiderivative endpoint expressions produced a tiny interval around zero.
+The producer now uses the exact empty-interval identity at X=1. The test was
+not weakened. Original source and failure output are retained under attempts/.
+
+4. An exact dissipative realization of the same Laguerre synthesis
+-----------------------------------------------------------------
+Let S_N be the lower nilpotent shift and let v=(1,...,1)^T. Put
+ A_N=(I+S_N)(I-S_N)^(-1)=I+2S_N+...+2S_N^(N-1).
+This is NOT the preceding relative-energy normalization with the same letter;
+here A_N is a specified finite GENERATOR. To avoid importing either meaning,
+its code name is dissipation_generator.
+
+The full identity is
+ A_N+A_N^T=2vv^T.                                             (4.1)
+Thus A_N=vv^T+J_N with J_N^T=-J_N. The symmetric part is the Hodge Laplacian
+d^*d for d(x)=v^T x; the skew part is retained. A_N itself is not a
+self-adjoint Hodge Laplacian, and its semigroup is not identified with Tao heat.
+
+Let Phi_N(t)=exp(-tA_N). For every real or complex vector x,
+
+ d/dt ||Phi_N(t)x||^2=-2|v^T Phi_N(t)x|^2,
+ ||Phi_N(t)||<=1,                                             (4.2)
+ ||x||^2-||Phi_N(T)x||^2=2 integral_0^T |v^T Phi_N(t)x|^2 dt.
+
+This is a dimension-independent contraction of the EXACT finite Laguerre
+propagator, not a sign statement for the arithmetic forcing. The eigenvalues
+of A_N are all one, but its symmetric part has a large kernel when N>1.
+There is no falsely assigned dimension-independent positive symmetric gap.
+
+The generating function, or direct differentiation of finite polynomials,
+proves
+
+ Phi_N(t)v=exp(-t)(L_0(2t),...,L_(N-1)(2t))^T.                (4.3)
+
+More explicitly, after factoring out exp(-t), Phi_N(t) is lower triangular
+Toeplitz with coefficient q_k(2t). Multiplication of these polynomial matrices
+at t and u gives the same matrix at t+u. No terminal coefficient is omitted.
+
+For f_X(t)=Delta(exp t)exp(-t/2)1_[0,L](t), the actual finite head is
+
+ u_(<N)^(X)=integral_0^L Phi_N(t)v f_X(t)dt.                  (4.4)
+
+A time-reversed driven state x'(tau)=-A_N x(tau)+v f_X(L-tau), x(0)=0,
+therefore satisfies x(L)=u_(<N)^(X). Its exact real energy law is
+
+ d/dtau ||x||^2=-2|v^T x|^2+2 Re(f_X(L-tau) overline(v^T x))
+              =|f_X(L-tau)|^2/2
+                 -2|v^T x-f_X(L-tau)/2|^2.                 (4.5)
+
+The input-state interaction has not been made positive, discarded, or treated
+as independent. Integrating (4.5) gives the complete remainder formula
+
+ D_N^(X)=1/2 integral_0^L |f_X(t)|^2dt
+           -2 integral_0^L |v^T x(tau)-f_X(L-tau)/2|^2dt.    (4.6)
+
+This identifies exactly which mismatch a coarse Bessel upper bound drops.
+When f_X is the prime discrepancy, estimating the difference in (4.6), not
+merely each large positive term separately, is still an arithmetic problem.
+The scalar subexponential target is not proved by (4.2).
+
+For completeness, stability of the finite triangular matrix gives Phi_N(t)->0.
+Differentiating Phi_N(t)Phi_N(t)^T and using (4.1) yields
+ integral_0^infinity Phi_N(t)vv^T Phi_N(t)^T dt=I/2.           (4.7)
+This agrees with ordinary Laguerre orthogonality. It does not assert f_X has
+an untruncated L2 limit. No change of integration measure is hidden.
+
+5. A finite certificate, including a huge head without enumerating it
+--------------------------------------------------------------------
+The new computation encloses u_0,...,u_127, first at 768 and again at 896 working
+bits, using the unchanged source evaluator (cutoff 128, EM order 64).
+It rounds OUTWARD to a declared 160-bit output grid. Working precision is not
+claimed to equal achieved analytic accuracy; the highest coefficient also
+contains its explicitly retained EM remainder. All 128 full-source consistency
+boxes are checked in each profile, and complete corresponding outputs are
+compared across the two profiles.
+
+The resulting upper bound is D_128<21/100. Since D_N is an unweighted prefix
+sum of nonnegative squares, this also bounds every 1<=N<=128. It does not
+bound ANY coefficient with index >=128 or prove an all-depth estimate.
+
+At N=128, formula (2.2) gives E_128^2<10^-10. If d is the generated rational
+upper endpoint for D_128, e=E_128^2 and B=21/100, the runner independently checks
+
+ B-d-e>0, (B-d-e)^2>4de.                                     (5.1)
+
+Thus (sqrt(d)+sqrt(e))^2<B and D_128^(2^1408)<21/100. This is an inferred
+bound for a specified enormous FINITE head, obtained through the full analytic
+coefficients and the proved tail. It does not enumerate primes to 2^1408,
+claim new zero information, or supply a uniform-in-N certificate. For this SAME
+fixed cutoff, all shorter coefficient prefixes obey the same bound.
+
+6. Provenance and remaining estimate
+------------------------------------
+The previous inactive 24-test candidate is replayed byte-for-byte under its
+original repository path. Its header remains historical; its new execution
+receipt is separate. Existing source and test files are not modified. This
+extension has new written deductions and finite exact calculations, not active
+Lean additions. Compiler, owned-axiom and whole-repository checks are NOT_RUN.
+
+The supplied Subexponential arithmetic matrix growth, Theorem 3.1, records the
+needed subexponential rather than fixed-rate endpoint. The supplied Hodge and
+sofic notes explicitly retain signed interactions removed by heat and distinguish
+source preservation from positivity of an auxiliary model. Equations (4.4)-(4.6)
+apply that discipline to this particular, exactly identified discrepancy signal.
+They are new comparisons here, not claims already contained in those papers.
+
+The unresolved theorem is log(1+D_N^(2^(11N)))=o(N), or any other sufficient
+all-depth estimate for the unchanged moments. The gamma contribution, stable
+filter, finite tail and dissipative propagator now have explicit suppliers.
+The forced arithmetic energy still does not have the required all-depth bound.
