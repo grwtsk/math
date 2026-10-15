@@ -1,0 +1,26 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "role-logwindow-source-scout",
+  "owner": "cache_taxonomy",
+  "at": "2026-10-15T22:52:57.718976+00:00",
+  "kind": "immutable-source-review-complete",
+  "review": {
+    "path": "evidence/Analysis/MellinTransform/gaussian-log-window-source-review-2026-10-15.json",
+    "sha256": "31ea223db82627151a33e0b269274288209777ecb48acac48647af1ccd45894f",
+    "bytes": 20587
+  },
+  "author_freeze": {
+    "path": "cache/coordination/events/gaussian-log-window-freeze-41e632a73ab64e79b71f4cd2711de8c1.json",
+    "sha256": "05b1e9179e5f78f61262c86527fc8777aa94c9eab155cc34175c032b255dd04c",
+    "bytes": 2465
+  },
+  "source_hashes": {
+    "GRWTSK/Analysis/MellinTransform/GaussianLogWindow.lean": "258fdbb7e3517ae4f30db165e9281ceb2c80d595d5a891523131c365c6ae1550",
+    "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianLogWindow.lean": "fd159e0dfc762dba6a3db7652004e6147afdd71f9e10bb7ee043a79ead83273d",
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianLogWindowMissingBox.lean": "36c5ccf9a7d71c3fa32de16d5c834dcb7ce883b44828e22230fd0f05ac3c1b40"
+  },
+  "finding": "No actionable omitted compact-support-box, full Fourier source-pair, phase/integrability or scale premise observed in the frozen three window sources.",
+  "native_status": "NOT_RUN",
+  "review_character": "Correlated same-team source/premise/control/credit review, not independent validation. Root-owned native evidence separate.",
+  "preservation": "No shared source/docs/registries/native/Git/remote changes; failed/stale source variants/receipts, earlier source-gap/anchor corrections and incoming custody/NOT_RUN remain intact."
+}

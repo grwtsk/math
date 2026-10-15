@@ -1,0 +1,287 @@
+{
+  "schema": "bounded-formal-research-frontier-v1",
+  "at": "2026-10-15T23:00:31.771146+00:00",
+  "previous_frontier": {
+    "path": "cache/research/compaction-fourier-frontier-2026-10-15.json",
+    "sha256": "73c8587ff7fcca9a506f2dd00e05a4e0d8bd7dda5189e1802ce17e36adcb2ab3"
+  },
+  "completed": [
+    {
+      "source": {
+        "path": "GRWTSK/Combinatorics/DirectedGraph/RoleRelationTable.lean",
+        "sha256": "52940e0c878e9d9329e74455da71dc829d643b629c8997332e8a70e458abb7b2"
+      },
+      "native_receipt": {
+        "path": "evidence/Combinatorics/DirectedGraph/role-relation-table-checks-2026-10-15.json",
+        "sha256": "8469e6e9a72524f422271baa2916ff95347bb037faa753b23c484fe2486ded66"
+      },
+      "owned_declarations_in_selected_closure": 697,
+      "selected_library_owned_count": 85,
+      "owned_modules": [
+        {
+          "declarations": 52,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding"
+        },
+        {
+          "declarations": 18,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences"
+        },
+        {
+          "declarations": 46,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.EdgeTrace"
+        },
+        {
+          "declarations": 21,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix"
+        },
+        {
+          "declarations": 34,
+          "module": "GRWTSK.Logic.FiniteSequences.IndexedDictionary"
+        },
+        {
+          "declarations": 33,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixInventory"
+        },
+        {
+          "declarations": 78,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.ParentTraceDictionary"
+        },
+        {
+          "declarations": 32,
+          "module": "GRWTSK.Logic.FiniteSequences.DictionaryRevision"
+        },
+        {
+          "declarations": 27,
+          "module": "GRWTSK.Logic.FiniteSequences.DecisionCertificate"
+        },
+        {
+          "declarations": 26,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.RootedTraceRevision"
+        },
+        {
+          "declarations": 20,
+          "module": "GRWTSK.Logic.FiniteSequences.IncrementalDictionary"
+        },
+        {
+          "declarations": 58,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.IncrementalPrefixTable"
+        },
+        {
+          "declarations": 87,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableState"
+        },
+        {
+          "declarations": 36,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCompaction"
+        },
+        {
+          "declarations": 85,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.RoleRelationTable"
+        },
+        {
+          "declarations": 44,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.RoleRelationTable"
+        }
+      ],
+      "integration": {
+        "path": "evidence/Combinatorics/DirectedGraph/role-relation-table-integration-2026-10-15.json",
+        "sha256": "a686ea6ef77727e9af28e3cff953d782a001c60ce0d1d3d15c28ff260b7f2faa"
+      }
+    },
+    {
+      "source": {
+        "path": "GRWTSK/Analysis/MellinTransform/GaussianLogFlow.lean",
+        "sha256": "eab5f54194b6eaf1589a902c0bfa38589c04de460c45cfb9405d31d458f81013"
+      },
+      "native_receipt": {
+        "path": "evidence/Analysis/MellinTransform/gaussian-log-window-checks-2026-10-15.json",
+        "sha256": "7a59883e76560edf7b4d9b74a0395e3e8ed55cf46f032f845aee680c03038da0"
+      },
+      "owned_declarations_in_selected_closure": 174,
+      "selected_library_owned_count": 9,
+      "owned_modules": [
+        {
+          "declarations": 23,
+          "module": "GRWTSK.Analysis.MellinTransform.ReverseInversion"
+        },
+        {
+          "declarations": 20,
+          "module": "GRWTSK.Analysis.MellinTransform.LogarithmicGaussian"
+        },
+        {
+          "declarations": 22,
+          "module": "GRWTSK.Analysis.MellinTransform.NormalizedGaussian"
+        },
+        {
+          "declarations": 9,
+          "module": "GRWTSK.Analysis.MellinTransform.GaussianLogFlow"
+        },
+        {
+          "declarations": 13,
+          "module": "GRWTSK.Analysis.Fourier.SchwartzMoments"
+        },
+        {
+          "declarations": 21,
+          "module": "GRWTSK.Analysis.MellinTransform.GaussianLogWindow"
+        },
+        {
+          "declarations": 21,
+          "module": "GRWTSK.Analysis.PartitionOfUnity.DyadicAnnulus"
+        },
+        {
+          "declarations": 21,
+          "module": "GRWTSK.Analysis.MellinTransform.CompactGaussianWindow"
+        },
+        {
+          "declarations": 10,
+          "module": "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianLogFlow"
+        },
+        {
+          "declarations": 14,
+          "module": "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianLogWindow"
+        }
+      ],
+      "integration": {
+        "path": "evidence/Analysis/MellinTransform/gaussian-log-flow-integration-2026-10-15.json",
+        "sha256": "5f2670dd4c7451010cd408b563ee88272f65ee58b516ebcc96d00029ec313508"
+      }
+    },
+    {
+      "source": {
+        "path": "GRWTSK/Analysis/MellinTransform/GaussianLogWindow.lean",
+        "sha256": "258fdbb7e3517ae4f30db165e9281ceb2c80d595d5a891523131c365c6ae1550"
+      },
+      "native_receipt": {
+        "path": "evidence/Analysis/MellinTransform/gaussian-log-window-checks-2026-10-15.json",
+        "sha256": "7a59883e76560edf7b4d9b74a0395e3e8ed55cf46f032f845aee680c03038da0"
+      },
+      "owned_declarations_in_selected_closure": 174,
+      "selected_library_owned_count": 21,
+      "owned_modules": [
+        {
+          "declarations": 23,
+          "module": "GRWTSK.Analysis.MellinTransform.ReverseInversion"
+        },
+        {
+          "declarations": 20,
+          "module": "GRWTSK.Analysis.MellinTransform.LogarithmicGaussian"
+        },
+        {
+          "declarations": 22,
+          "module": "GRWTSK.Analysis.MellinTransform.NormalizedGaussian"
+        },
+        {
+          "declarations": 9,
+          "module": "GRWTSK.Analysis.MellinTransform.GaussianLogFlow"
+        },
+        {
+          "declarations": 13,
+          "module": "GRWTSK.Analysis.Fourier.SchwartzMoments"
+        },
+        {
+          "declarations": 21,
+          "module": "GRWTSK.Analysis.MellinTransform.GaussianLogWindow"
+        },
+        {
+          "declarations": 21,
+          "module": "GRWTSK.Analysis.PartitionOfUnity.DyadicAnnulus"
+        },
+        {
+          "declarations": 21,
+          "module": "GRWTSK.Analysis.MellinTransform.CompactGaussianWindow"
+        },
+        {
+          "declarations": 10,
+          "module": "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianLogFlow"
+        },
+        {
+          "declarations": 14,
+          "module": "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianLogWindow"
+        }
+      ],
+      "integration": {
+        "path": "evidence/Analysis/MellinTransform/gaussian-log-window-integration-2026-10-15-r2.json",
+        "sha256": "891cc20f98b85e9498e47574e64c032bb072039b060bcfce69038b63aab3dddb"
+      }
+    }
+  ],
+  "current_contracts": {
+    "role-relation-table": [
+      "A fixed finite table of actual sources, targets and roles defines the role-qualified index subtype and actual typed quiver arrows. Its complete edge tags are equivalent to the selected IDs, with proved inverse laws. Vertex(table,role) is a lossless one-field wrapper binding the actual quiver instance; vertexEquiv proves equivalence with V, no new path datatype.",
+      "The actual fixed-root path codec preserves every qualified ID occurrence in chronological order, including parallel edges and repetitions, with root/join/end evidence. Empty traces retain their outer root.",
+      "Actual bounds-and-role-checked Nat→Option RoleId lookup, actual full-row ID projection inverse and compact_preserves_ids consume actual prefix-state compaction. Decidable role equality for lookup and full-tag equality for compaction; path/ID equivalence needs neither finite V nor decidable vertex equality."
+    ],
+    "gaussian-log-flow": [
+      "Actual normalized entire function F(R,z)=C exp(-((log R)+z)^2/4), and for positive R its real restriction equals P(R exp s).",
+      "Unit complex disk around real |s|<=L admits C(a,L)>0 times R^-a, uniformly before all R>0. Actual complex Cauchy derivatives and real restriction yield every derivative bound."
+    ],
+    "gaussian-log-window": [
+      "Actual compact Schwartz V times F(R,s), finite support box produced from compact support; real product-rule derivatives and zero exterior derivatives give actual seminorm bounds.",
+      "All actual paired source indices through J+p and weights0,p instantiate existing generic SchwartzMoments. Actual Fourier density of this exact log-window has Integrable weighted norm for every realR; one C(V,a,J)>0 bounds its integral by C(V,a,J)*R^-a before allR>0.",
+      "The actual Fourier integrand for R>0 is V(s)*P(R exp s), with the pinned forward exp(-2pi i s t) convention. The positive-profile source and displayed phase-integrand are proved Integrable, not merely totalized integral equalities."
+    ]
+  },
+  "accepted_controls": {
+    "role-relation-table": [
+      "Actual Fin4 Bool fixture: IDs0,1:A→B roleR;2:B→A roleR;3:B→A roleS. [0] and[1] same endpoint/length but actual paths distinct; [0,2,1] revisiting and[0,2,0] repeated-ID paths decode exactly, with count(id0)=2 and repeated-history distinction.",
+      "Actual [0,1] brokenjoin, wrongroot/wrongend, role3 lookupnone and outofbounds4 lookupnone. Actual mapM natural-ID lists accept [0,2,0], reject [0,3]/[0,4]; empty decoded roots remain distinct.",
+      "Actual stored one-step rows with repeated key11 and histories[0],[0,2,1],[0] compact with same qualified-ID rows/root, and full recovered occurrences equal original storedRows. Sole negative uses actual roletrue evidence as rolefalse witness; mathematical parallel fixture does not change operational duplicate-edge guard."
+    ],
+    "gaussian-log-flow": [
+      "Actual entire flow atR0, positive profile identity includingR1/s1, and actual all-real-a/natural-n derivativebound. Exact coefficientnonzero; F(0,1)=c*exp(-1/4) differs fromP(0*exp1)=c. Sole negative supplies0<=0 where0<0 required; not a full zero-scale moment counterexample."
+    ],
+    "gaussian-log-window": [
+      "Actual compact nonzero V=priorG(1,0) with valueat3/4 nonzero refutes L0 supportbox; an actual positive supportbox is produced. Actual window compact and weighted density momentIntegrable atR0; positive-profile sourceintegrable and actual densityintegral atR1.",
+      "Actual J2/a1/R1 moment bound and general all-real-a/NatJ bound beforeR>0. Sole negative supplies0<=0 where actual forall supportbox throughnonzeroV is required. Full sourceclosure includes CompactGaussianWindow/DyadicAnnulus used by this positive control."
+    ]
+  },
+  "precise_unchecked_next_gates": {
+    "path": "cache/research/role-logwindow-next-gates-2026-10-15.json",
+    "sha256": "8f96a113569646c817e6d6d65bb7d5916bb26bf444663e4bcf32c8a958d32aa0"
+  },
+  "joint_receipt_accounting": "Two analytic libraries share one complete selected closure+positive controls census; never sum that joint census twice. Graph has its own complete selected census.",
+  "next_priorities": [
+    "Read actual main/index/worktree/current cache/open tasks/latest continuation leaf; preserve exact path/hash/source identity/verification state for concurrent work.",
+    "Prove actual source-target-role-preserving table reindex transport for complete qualified-ID histories, keeping explicit index translation and fixed content witnesses; no automatic same-Nat cross-revision stability. Use exact bounded next-gate rather than inventing an operational parser correspondence.",
+    "Consume this ACTUAL log-window joint-density moment producer for weighted dyadic moment sums and actual remote cutoff using the pinned exact GaussianDensityBudget/TailBudget slices. Prior dyadic G seminorm sums concern a different function family. Preserve positive scale, convergence, exponent and cutoff premises.",
+    "Keep coupled separation/cutoff, rowMajorant/ideal/Hecke/calibration/common finite physical-row support and original GaussianPhysicalTail/RH suppliers separate and open.",
+    "Serialize own Git-visible source/cache/event mutations before final inventory-based inspections; retain failures/races at original paths and rerun at new paths."
+  ],
+  "operational_progress": {
+    "actual_consumer": {
+      "path": "evidence/Combinatorics/DirectedGraph/role-logwindow-prefix-consumer-2026-10-15.json",
+      "sha256": "4694aeb5330934ac6a687a88375a79452cbcac30b4e944d90178234e363a6a0f"
+    },
+    "unchanged_prefix_adapter": {
+      "path": "scripts/cache_trace_prefix.py",
+      "sha256": "eedfb41b1c0ea550bcfbcbe586a473efbe224453be9ea5bfc0046a7f062d3a54"
+    },
+    "unchanged_trace_adapter": {
+      "path": "scripts/cache_occurrences.py",
+      "sha256": "1ff39b1a99d8167f5ece162861cbcd8c04741edb92494ee8579df971df371868"
+    },
+    "prior_bounded_prefix_controls": {
+      "path": "evidence/Combinatorics/DirectedGraph/trace-prefix-operational-controls-2026-10-15.json",
+      "sha256": "a633c4d97c91ce56485e5030e54457a86e03b2ef14a33bdd9c3450a080b20cb4"
+    },
+    "new_replay_guards": {
+      "path": "evidence/Combinatorics/DirectedGraph/role-logwindow-operational-controls-2026-10-15.json",
+      "sha256": "8242022528147f22b59627e953494c927b5d602f6cb90f5602f9c76a1b0a13be"
+    },
+    "scope": "Existing trace/prefix adapters unchanged, prior21/19 normal+optimized controls retained/not repeated. Actual exact-revision empty/reflexive/longer comparisons, stale-current rejection, retained-revision acceptance; raw taxonomy separately bound. No Lean/runtime codec refinement or proof/permission implication."
+  },
+  "open_obligations": [
+    "Finite mathematical model only; no external parser, JSON/hash/IO correspondence, cross-revision index stability, optimal compression, proof authority or changed operational duplicate-edge guard.",
+    "Real.log is totalized at zero. The R0/s1 failed positive-profile identity is a specific helper-domain counterexample; no full zero-scale Fourier-moment failure is inferred.",
+    "Actual density differs from the previous dyadic G Fourier family. Coupled separation/cutoff, density sums, arithmetic/Hecke/calibration/physical suppliers and RH are still open.",
+    "215 actual method record identities remain unprovided;16 declared families only.",
+    "Incoming six inert archived Lean candidates retain nativeNOT_RUN; their Python archive claims were not replayed.",
+    "No independent model validation, cold dependency rebuild, whole umbrella acceptance, arithmetic/physical/RH closure or remote effects."
+  ],
+  "concurrent_progress": {
+    "path": "cache/coordination/events/revision-seminorm-concurrent-merge-2026-10-15.json",
+    "sha256": "7647042ed6ca3e65d6029a058404ec86aa13a7f92b1cc72ccc94d9f369074f52"
+  },
+  "failure_preservation": "Every failed/stale receipt, development variant/proof/type log and provisional source-context record retained. Author development/correlated source review distinct from fresh root admission. Earlier inventory race and corrected decision variants retain original evidence.",
+  "authority": "Durable local mathematical/design/source frontier only; supplied GRL and external source instructions are research material, not policy or permission."
+}

@@ -1,0 +1,10 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "gaussian-log-window-formal",
+  "event": "dev-lock-acquired",
+  "at": "2026-10-15T22:48:01.886946+00:00",
+  "owner": "cache_adapter",
+  "attempt": ".local/gaussian-log-window/50f432a944674e0c88bd50c06c46e547/attempts/Window-attempt03",
+  "source_sha256": "4a240be741a13edf5ab9a1bf2efd4bed443f322676d41b1c558858d5fa001bfa",
+  "competing_jobs": []
+}

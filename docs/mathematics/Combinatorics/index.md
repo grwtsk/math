@@ -4,22 +4,22 @@
 
 | Inventory | Count |
 |---|---:|
-| Object guides | 13 |
+| Object guides | 14 |
 | Documented object groups | 2 |
-| Distinct primary sources linked | 12 |
-| Lean source modules | 41 |
+| Distinct primary sources linked | 13 |
+| Lean source modules | 44 |
 | Archive intake records | 0 |
 | Selected catalog families | 1 |
 
 These counts measure documentation and source coverage. They do not count accepted theorems or establish that every source module is documented or checked. [Definitions and limits](../../reference/library-pages.md#count-definitions).
 
-547 source declaration commands, including 353 theorem/lemma commands, across 41 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+620 source declaration commands, including 391 theorem/lemma commands, across 44 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
 ## DirectedGraph
 
-11 object guides · 11 distinct linked primary source files.
+12 object guides · 12 distinct linked primary source files.
 
-Linked primary-source scope: 264 source declaration commands, including 185 theorem/lemma commands, across 11 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+Linked primary-source scope: 303 source declaration commands, including 206 theorem/lemma commands, across 12 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
 - [A finite inventory of complete history prefixes](DirectedGraph/prefix-inventory.md).
 - [Certified revision of rooted trace dictionaries](DirectedGraph/rooted-trace-revision.md).
@@ -28,6 +28,7 @@ Linked primary-source scope: 264 source declaration commands, including 185 theo
 - [Occurrence reachability and complete trace prefixes](DirectedGraph/occurrence-prefix.md).
 - [Ordered occurrences of directed paths](DirectedGraph/path-occurrences.md).
 - [Parent dictionaries for complete rooted path traces](DirectedGraph/parent-trace-dictionary.md).
+- [Role-qualified finite relation tables and typed histories](DirectedGraph/role-relation-table.md).
 - [Stable incremental tables of rooted history prefixes](DirectedGraph/incremental-prefix-table.md).
 - [Stable updates of stored rooted prefix tables](DirectedGraph/prefix-table-state.md).
 - [Typed edge traces of directed paths](DirectedGraph/edge-trace.md).

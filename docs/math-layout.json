@@ -5235,7 +5235,13 @@
     "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableCompaction.lean": "f4fa38032ac9f3395c6fd9e23f129d70986bddcc681332c5ad565339c69bfe23",
     "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixCompactionStaleReferences.lean": "33f02ca25b49c6ec8acde6f622d2a7d09f38cb42966079abfd812855c59632a1",
     "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianFourierMoments.lean": "3bb18be10f76784706a8ee7ee20aee7f4fa9f9333917456241a5238faf443f92",
-    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianFourierMissingScale.lean": "7acf8e0a10481f3dfbc5ca386860bc96ff031289300b9b2ba008300282c7bdea"
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianFourierMissingScale.lean": "7acf8e0a10481f3dfbc5ca386860bc96ff031289300b9b2ba008300282c7bdea",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/RoleRelationTable.lean": "f609f741fd0ec8fc715b07199419be10bfb3f4aaeba15cd1b941a70a450ccab5",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/RoleRelationWrongRole.lean": "51d4bd22114b46d26eec1b8835d3dce21d8c0ce32cf15265807d1be4bc97677a",
+    "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianLogFlow.lean": "a86561922292ff32438853f488f7f3484ae4807ff5832944d832d2aaf901f9ce",
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianLogFlowMissingScale.lean": "1eaf95304f0f2647d15901b3e4caf67d391d524cea78b95edbcd1cd727e9691c",
+    "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianLogWindow.lean": "fd159e0dfc762dba6a3db7652004e6147afdd71f9e10bb7ee043a79ead83273d",
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianLogWindowMissingBox.lean": "36c5ccf9a7d71c3fa32de16d5c834dcb7ce883b44828e22230fd0f05ac3c1b40"
   },
   "schema_version": 3,
   "repository_conformance": {
@@ -5267,7 +5273,7 @@
     {
       "path": "GRWTSK.lean",
       "original_path": "GRWTSK.lean",
-      "sha256": "647c04b3dbd194f1443666188c05ee914833463d889296a8607d67cf0f78e86d",
+      "sha256": "c07f9279482225b5b025a1d9cc8c209379eb3347259ff98d1143ceaf5fd38a03",
       "git_blob": "27e45b3448f78dc6499f2fb0698eb51cac5d1904",
       "working_tree_state": "tracked-modified",
       "source_root": ".",
@@ -5409,6 +5415,8 @@
         "GRWTSK.Analysis.MellinTransform.CompactGaussianWindow",
         "GRWTSK.Analysis.MellinTransform.GaussianDyadicSummation",
         "GRWTSK.Analysis.MellinTransform.GaussianFourierMoments",
+        "GRWTSK.Analysis.MellinTransform.GaussianLogFlow",
+        "GRWTSK.Analysis.MellinTransform.GaussianLogWindow",
         "GRWTSK.Analysis.MellinTransform.GaussianRemoteSeminorms",
         "GRWTSK.Analysis.MellinTransform.GaussianWindowSeminorms",
         "GRWTSK.Analysis.MellinTransform.LogarithmicGaussian",
@@ -5442,6 +5450,7 @@
         "GRWTSK.Combinatorics.DirectedGraph.PrefixInventory",
         "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCompaction",
         "GRWTSK.Combinatorics.DirectedGraph.PrefixTableState",
+        "GRWTSK.Combinatorics.DirectedGraph.RoleRelationTable",
         "GRWTSK.Combinatorics.DirectedGraph.RootedTraceRevision",
         "GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.Moser",
         "GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.MoserCoordinates",
@@ -5672,7 +5681,7 @@
         "inventory": "observed-current-bytes",
         "layout": "repository baseline remains failed",
         "lean": "umbrella not replayed after selected import additions",
-        "source_sha256": "647c04b3dbd194f1443666188c05ee914833463d889296a8607d67cf0f78e86d"
+        "source_sha256": "c07f9279482225b5b025a1d9cc8c209379eb3347259ff98d1143ceaf5fd38a03"
       },
       "runner": "python3 -B scripts/check_ccc_energy.py",
       "other_consumers": [
@@ -15069,7 +15078,8 @@
       "reverse_consumers": [
         "GRWTSK",
         "GRWTSK.Analysis.Fourier.Checks.Positive.SchwartzMoments",
-        "GRWTSK.Analysis.MellinTransform.GaussianFourierMoments"
+        "GRWTSK.Analysis.MellinTransform.GaussianFourierMoments",
+        "GRWTSK.Analysis.MellinTransform.GaussianLogWindow"
       ],
       "subject": "Analysis",
       "object": "Fourier",
@@ -21903,6 +21913,97 @@
       "design_reference": "cache/research/compaction-fourier-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
     },
     {
+      "path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianLogFlowMissingScale.lean",
+      "original_path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianLogFlowMissingScale.lean",
+      "sha256": "1eaf95304f0f2647d15901b3e4caf67d391d524cea78b95edbcd1cd727e9691c",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Analysis.MellinTransform.Checks.Negative.GaussianLogFlowMissingScale",
+      "namespaces": [],
+      "public_declarations": [],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianLogFlow"
+      ],
+      "reverse_consumers": [],
+      "subject": "Analysis",
+      "object": "MellinTransform/Checks/Negative",
+      "source_role": "negative-control",
+      "target_path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianLogFlowMissingScale.lean",
+      "placement_rationale": "The actual Gaussian log-flow, positive Mellin-profile identity and compact logarithmic window belong to Analysis/MellinTransform; reusable Schwartz Fourier transfer remains in Analysis/Fourier.",
+      "operation": "add",
+      "logical_status": "intended rejected control; no theorem admission",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "1eaf95304f0f2647d15901b3e4caf67d391d524cea78b95edbcd1cd727e9691c",
+        "replay_binding": "evidence/Analysis/MellinTransform/gaussian-log-window-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_gaussian_log_window.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Actual entire normalized Gaussian log-shift, positive R identity with P(R*exp s), exact bounded-strip unit-disk/Cauchy derivative bounds with uniform constant before R>0.",
+        "Actual R0/s1 failure of the positive-profile identity only; no full zero-scale moment counterexample."
+      ],
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: exact GaussianFlow/GaussianLogWindow/GaussianCoupled definition and proof slices; individual imported Mathlib Fourier/Schwartz/Cauchy authors retain credit"
+      ],
+      "license": "Apache-2.0",
+      "design_reference": "cache/research/role-logwindow-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
+      "path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianLogWindowMissingBox.lean",
+      "original_path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianLogWindowMissingBox.lean",
+      "sha256": "36c5ccf9a7d71c3fa32de16d5c834dcb7ce883b44828e22230fd0f05ac3c1b40",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Analysis.MellinTransform.Checks.Negative.GaussianLogWindowMissingBox",
+      "namespaces": [],
+      "public_declarations": [],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianLogWindow"
+      ],
+      "reverse_consumers": [],
+      "subject": "Analysis",
+      "object": "MellinTransform/Checks/Negative",
+      "source_role": "negative-control",
+      "target_path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianLogWindowMissingBox.lean",
+      "placement_rationale": "The actual Gaussian log-flow, positive Mellin-profile identity and compact logarithmic window belong to Analysis/MellinTransform; reusable Schwartz Fourier transfer remains in Analysis/Fourier.",
+      "operation": "add",
+      "logical_status": "intended rejected control; no theorem admission",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "36c5ccf9a7d71c3fa32de16d5c834dcb7ce883b44828e22230fd0f05ac3c1b40",
+        "replay_binding": "evidence/Analysis/MellinTransform/gaussian-log-window-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_gaussian_log_window.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Actual compact Schwartz V times entire Gaussian log-flow; produce finite support box, product-rule derivative and seminorm bounds.",
+        "All derivative source-pair indices through J+p, p=Lebesgue integrablePower; actual generic Fourier-moment consumer derives Integrable and C(a,J)>0 before all R>0.",
+        "Actual jointdensity=Fourier(actual logwindow) and positive-profile integrand identity. Coupled separation/cutoff, density sums, Hecke/calibration/physical/RH remain open."
+      ],
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: exact GaussianFlow/GaussianLogWindow/GaussianCoupled definition and proof slices; individual imported Mathlib Fourier/Schwartz/Cauchy authors retain credit"
+      ],
+      "license": "Apache-2.0",
+      "design_reference": "cache/research/role-logwindow-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
       "path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianMissingNormalization.lean",
       "original_path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianMissingNormalization.lean",
       "sha256": "90fc1e3e103a8db7752776804b84269ab8d3a04d8bc88230f5e5624f215a262c",
@@ -22553,6 +22654,208 @@
       ],
       "license": "Apache-2.0",
       "design_reference": "cache/research/compaction-fourier-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
+      "path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianLogFlow.lean",
+      "original_path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianLogFlow.lean",
+      "sha256": "a86561922292ff32438853f488f7f3484ae4807ff5832944d832d2aaf901f9ce",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianLogFlow",
+      "namespaces": [
+        "GRWTSK.Analysis.MellinTransform.GaussianLogFlow.Checks"
+      ],
+      "public_declarations": [
+        {
+          "kind": "theorem",
+          "name": "actual_zero_entire",
+          "line": 8
+        },
+        {
+          "kind": "theorem",
+          "name": "positive_profile_identity",
+          "line": 11
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_one_identity",
+          "line": 15
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_derivative_bound",
+          "line": 18
+        },
+        {
+          "kind": "lemma",
+          "name": "coefficient_nonzero",
+          "line": 23
+        },
+        {
+          "kind": "lemma",
+          "name": "actual_zero_flow_value",
+          "line": 29
+        },
+        {
+          "kind": "lemma",
+          "name": "actual_zero_profile_value",
+          "line": 36
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_zero_identity_false",
+          "line": 40
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Analysis.MellinTransform.GaussianLogFlow"
+      ],
+      "reverse_consumers": [
+        "GRWTSK.Analysis.MellinTransform.Checks.Negative.GaussianLogFlowMissingScale"
+      ],
+      "subject": "Analysis",
+      "object": "MellinTransform/Checks/Positive",
+      "source_role": "positive-check",
+      "target_path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianLogFlow.lean",
+      "placement_rationale": "The actual Gaussian log-flow, positive Mellin-profile identity and compact logarithmic window belong to Analysis/MellinTransform; reusable Schwartz Fourier transfer remains in Analysis/Fourier.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "a86561922292ff32438853f488f7f3484ae4807ff5832944d832d2aaf901f9ce",
+        "replay_binding": "evidence/Analysis/MellinTransform/gaussian-log-window-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_gaussian_log_window.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Actual entire normalized Gaussian log-shift, positive R identity with P(R*exp s), exact bounded-strip unit-disk/Cauchy derivative bounds with uniform constant before R>0.",
+        "Actual R0/s1 failure of the positive-profile identity only; no full zero-scale moment counterexample."
+      ],
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: exact GaussianFlow/GaussianLogWindow/GaussianCoupled definition and proof slices; individual imported Mathlib Fourier/Schwartz/Cauchy authors retain credit"
+      ],
+      "license": "Apache-2.0",
+      "design_reference": "cache/research/role-logwindow-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
+      "path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianLogWindow.lean",
+      "original_path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianLogWindow.lean",
+      "sha256": "fd159e0dfc762dba6a3db7652004e6147afdd71f9e10bb7ee043a79ead83273d",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianLogWindow",
+      "namespaces": [
+        "GRWTSK.Analysis.MellinTransform.GaussianLogWindow.Checks"
+      ],
+      "public_declarations": [
+        {
+          "kind": "def",
+          "name": "exampleWindow",
+          "line": 12
+        },
+        {
+          "kind": "lemma",
+          "name": "exampleWindow_compact",
+          "line": 14
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_gaussian_nonzero",
+          "line": 16
+        },
+        {
+          "kind": "lemma",
+          "name": "exampleWindow_nonzero",
+          "line": 39
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_zero_box_false",
+          "line": 42
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_box_produced",
+          "line": 47
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_zero_scale_window_compact",
+          "line": 50
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_zero_scale_density_integrable",
+          "line": 54
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_positive_profile_integrable",
+          "line": 58
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_density_integral",
+          "line": 62
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_moment_bound",
+          "line": 67
+        },
+        {
+          "kind": "theorem",
+          "name": "all_real_power_moment",
+          "line": 74
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Analysis.MellinTransform.CompactGaussianWindow",
+        "GRWTSK.Analysis.MellinTransform.GaussianLogWindow"
+      ],
+      "reverse_consumers": [
+        "GRWTSK.Analysis.MellinTransform.Checks.Negative.GaussianLogWindowMissingBox"
+      ],
+      "subject": "Analysis",
+      "object": "MellinTransform/Checks/Positive",
+      "source_role": "positive-check",
+      "target_path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianLogWindow.lean",
+      "placement_rationale": "The actual Gaussian log-flow, positive Mellin-profile identity and compact logarithmic window belong to Analysis/MellinTransform; reusable Schwartz Fourier transfer remains in Analysis/Fourier.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "fd159e0dfc762dba6a3db7652004e6147afdd71f9e10bb7ee043a79ead83273d",
+        "replay_binding": "evidence/Analysis/MellinTransform/gaussian-log-window-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_gaussian_log_window.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Actual compact Schwartz V times entire Gaussian log-flow; produce finite support box, product-rule derivative and seminorm bounds.",
+        "All derivative source-pair indices through J+p, p=Lebesgue integrablePower; actual generic Fourier-moment consumer derives Integrable and C(a,J)>0 before all R>0.",
+        "Actual jointdensity=Fourier(actual logwindow) and positive-profile integrand identity. Coupled separation/cutoff, density sums, Hecke/calibration/physical/RH remain open."
+      ],
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: exact GaussianFlow/GaussianLogWindow/GaussianCoupled definition and proof slices; individual imported Mathlib Fourier/Schwartz/Cauchy authors retain credit"
+      ],
+      "license": "Apache-2.0",
+      "design_reference": "cache/research/role-logwindow-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
     },
     {
       "path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianRemoteSeminorms.lean",
@@ -23277,6 +23580,225 @@
       "design_reference": "cache/research/compaction-fourier-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
     },
     {
+      "path": "GRWTSK/Analysis/MellinTransform/GaussianLogFlow.lean",
+      "original_path": "GRWTSK/Analysis/MellinTransform/GaussianLogFlow.lean",
+      "sha256": "eab5f54194b6eaf1589a902c0bfa38589c04de460c45cfb9405d31d458f81013",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Analysis.MellinTransform.GaussianLogFlow",
+      "namespaces": [
+        "GRWTSK.Analysis.MellinTransform.GaussianLogFlow"
+      ],
+      "public_declarations": [
+        {
+          "kind": "def",
+          "name": "gaussianFlow",
+          "line": 30
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussianFlow_analytic",
+          "line": 34
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussianFlow_real",
+          "line": 37
+        },
+        {
+          "kind": "lemma",
+          "name": "iteratedDeriv_restrict_real",
+          "line": 42
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussianFlow_disk_bound",
+          "line": 55
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussianFlow_derivative_bound",
+          "line": 91
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Analysis.MellinTransform.NormalizedGaussian",
+        "Mathlib.Analysis.Complex.Liouville",
+        "Mathlib.Analysis.Complex.RealDeriv",
+        "Mathlib.Analysis.SpecialFunctions.Complex.Analytic"
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianLogFlow",
+        "GRWTSK.Analysis.MellinTransform.GaussianLogWindow"
+      ],
+      "subject": "Analysis",
+      "object": "MellinTransform",
+      "source_role": "library",
+      "target_path": "GRWTSK/Analysis/MellinTransform/GaussianLogFlow.lean",
+      "placement_rationale": "The actual Gaussian log-flow, positive Mellin-profile identity and compact logarithmic window belong to Analysis/MellinTransform; reusable Schwartz Fourier transfer remains in Analysis/Fourier.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "eab5f54194b6eaf1589a902c0bfa38589c04de460c45cfb9405d31d458f81013",
+        "replay_binding": "evidence/Analysis/MellinTransform/gaussian-log-window-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_gaussian_log_window.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Actual entire normalized Gaussian log-shift, positive R identity with P(R*exp s), exact bounded-strip unit-disk/Cauchy derivative bounds with uniform constant before R>0.",
+        "Actual R0/s1 failure of the positive-profile identity only; no full zero-scale moment counterexample."
+      ],
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: exact GaussianFlow/GaussianLogWindow/GaussianCoupled definition and proof slices; individual imported Mathlib Fourier/Schwartz/Cauchy authors retain credit"
+      ],
+      "license": "Apache-2.0",
+      "design_reference": "cache/research/role-logwindow-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
+      "path": "GRWTSK/Analysis/MellinTransform/GaussianLogWindow.lean",
+      "original_path": "GRWTSK/Analysis/MellinTransform/GaussianLogWindow.lean",
+      "sha256": "258fdbb7e3517ae4f30db165e9281ceb2c80d595d5a891523131c365c6ae1550",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Analysis.MellinTransform.GaussianLogWindow",
+      "namespaces": [
+        "GRWTSK.Analysis.MellinTransform.GaussianLogWindow"
+      ],
+      "public_declarations": [
+        {
+          "kind": "lemma",
+          "name": "gaussianFlow_real_smooth",
+          "line": 30
+        },
+        {
+          "kind": "def",
+          "name": "gaussianLogWindow",
+          "line": 36
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussianLogWindow_derivative_outside",
+          "line": 42
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussianLogWindow_derivative_bound",
+          "line": 53
+        },
+        {
+          "kind": "theorem",
+          "name": "gaussianLogWindow_seminorm",
+          "line": 82
+        },
+        {
+          "kind": "theorem",
+          "name": "gaussianLogWindow_fourier_moment",
+          "line": 99
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussianLogWindow_compact",
+          "line": 141
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussianLogWindow_support_box",
+          "line": 147
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussianLogWindow_apply_positive",
+          "line": 155
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussianLogWindow_positive_integrable",
+          "line": 160
+        },
+        {
+          "kind": "def",
+          "name": "gaussianJointDensity",
+          "line": 171
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussianJointDensity_eq_fourier_positive",
+          "line": 176
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussianJointDensity_integral",
+          "line": 185
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussianJointDensity_integrand_integrable",
+          "line": 193
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussianJointDensity_moment_integrable",
+          "line": 202
+        },
+        {
+          "kind": "theorem",
+          "name": "gaussianJointDensity_moment",
+          "line": 208
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Analysis.Fourier.SchwartzMoments",
+        "GRWTSK.Analysis.MellinTransform.GaussianLogFlow",
+        "Mathlib.Analysis.Calculus.IteratedDeriv.Lemmas"
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianLogWindow"
+      ],
+      "subject": "Analysis",
+      "object": "MellinTransform",
+      "source_role": "library",
+      "target_path": "GRWTSK/Analysis/MellinTransform/GaussianLogWindow.lean",
+      "placement_rationale": "The actual Gaussian log-flow, positive Mellin-profile identity and compact logarithmic window belong to Analysis/MellinTransform; reusable Schwartz Fourier transfer remains in Analysis/Fourier.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "258fdbb7e3517ae4f30db165e9281ceb2c80d595d5a891523131c365c6ae1550",
+        "replay_binding": "evidence/Analysis/MellinTransform/gaussian-log-window-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_gaussian_log_window.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Actual compact Schwartz V times entire Gaussian log-flow; produce finite support box, product-rule derivative and seminorm bounds.",
+        "All derivative source-pair indices through J+p, p=Lebesgue integrablePower; actual generic Fourier-moment consumer derives Integrable and C(a,J)>0 before all R>0.",
+        "Actual jointdensity=Fourier(actual logwindow) and positive-profile integrand identity. Coupled separation/cutoff, density sums, Hecke/calibration/physical/RH remain open."
+      ],
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: exact GaussianFlow/GaussianLogWindow/GaussianCoupled definition and proof slices; individual imported Mathlib Fourier/Schwartz/Cauchy authors retain credit"
+      ],
+      "license": "Apache-2.0",
+      "design_reference": "cache/research/role-logwindow-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
       "path": "GRWTSK/Analysis/MellinTransform/GaussianRemoteSeminorms.lean",
       "original_path": "GRWTSK/Analysis/MellinTransform/GaussianRemoteSeminorms.lean",
       "sha256": "e50de8626a4418b547123c0f37d94b9f3caef08a9820639524e6bd61da2061a9",
@@ -23682,6 +24204,7 @@
         "GRWTSK",
         "GRWTSK.Analysis.MellinTransform.Checks.Positive.NormalizedGaussian",
         "GRWTSK.Analysis.MellinTransform.CompactGaussianWindow",
+        "GRWTSK.Analysis.MellinTransform.GaussianLogFlow",
         "GRWTSK.Analysis.MellinTransform.ScaledGaussianDerivatives",
         "GRWTSK.NumberTheory.LSeries.GaussianContour"
       ],
@@ -26553,6 +27076,53 @@
       "design_reference": "cache/research/state-remote-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
     },
     {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/RoleRelationWrongRole.lean",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/RoleRelationWrongRole.lean",
+      "sha256": "51d4bd22114b46d26eec1b8835d3dce21d8c0ce32cf15265807d1be4bc97677a",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.RoleRelationWrongRole",
+      "namespaces": [
+        "GRWTSK.Combinatorics.DirectedGraph.RoleRelationTable.Checks.Negative"
+      ],
+      "public_declarations": [],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.RoleRelationTable"
+      ],
+      "reverse_consumers": [],
+      "subject": "Combinatorics",
+      "object": "DirectedGraph/Checks/Negative",
+      "source_role": "negative-control",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/RoleRelationWrongRole.lean",
+      "placement_rationale": "Finite role-qualified relation IDs and actual typed rooted paths belong to Combinatorics/DirectedGraph; generic dictionaries remain in Logic/FiniteSequences.",
+      "operation": "add",
+      "logical_status": "intended rejected control; no theorem admission",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "51d4bd22114b46d26eec1b8835d3dce21d8c0ce32cf15265807d1be4bc97677a",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/role-relation-table-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_role_relation_table.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Fixed actual finite source/target/role table; role-qualified IDs and actual typed Quiver.TotalEdge inverse codec. Decidable role equality for natural lookup; decidable full-tag equality for compaction; neither finite nor decidable vertex type is required for path equivalence.",
+        "Actual valid full rooted chronological ID histories; preserve joins, parallel IDs, repeats/order and root, even empty. Actual compaction consumer uses proved codec.",
+        "Formal finite-table theorem only; no external parser/hash/JSON/IO refinement, cross-revision ID stability or operational taxonomy duplicate-policy change."
+      ],
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "design_reference": "cache/research/role-logwindow-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
       "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/RootedTraceMissingAgreement.lean",
       "original_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/RootedTraceMissingAgreement.lean",
       "sha256": "9d8c7142222c6015772e3e418fdda83af6e33d60bc7c11db8a8b27a4ffde3449",
@@ -27992,6 +28562,221 @@
       ],
       "license": "MIT; upstream imported Apache-2.0 retained",
       "design_reference": "cache/research/state-remote-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/RoleRelationTable.lean",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/RoleRelationTable.lean",
+      "sha256": "f609f741fd0ec8fc715b07199419be10bfb3f4aaeba15cd1b941a70a450ccab5",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.RoleRelationTable",
+      "namespaces": [
+        "GRWTSK.Combinatorics.DirectedGraph.RoleRelationTable.Checks.Positive"
+      ],
+      "public_declarations": [
+        {
+          "kind": "def",
+          "name": "fixture",
+          "line": 14
+        },
+        {
+          "kind": "def",
+          "name": "vertexA",
+          "line": 20
+        },
+        {
+          "kind": "def",
+          "name": "vertexB",
+          "line": 22
+        },
+        {
+          "kind": "def",
+          "name": "id0",
+          "line": 23
+        },
+        {
+          "kind": "def",
+          "name": "id1",
+          "line": 25
+        },
+        {
+          "kind": "def",
+          "name": "id2",
+          "line": 26
+        },
+        {
+          "kind": "def",
+          "name": "index3",
+          "line": 27
+        },
+        {
+          "kind": "def",
+          "name": "arrow0",
+          "line": 28
+        },
+        {
+          "kind": "def",
+          "name": "arrow1",
+          "line": 30
+        },
+        {
+          "kind": "def",
+          "name": "arrow2",
+          "line": 31
+        },
+        {
+          "kind": "def",
+          "name": "single0",
+          "line": 32
+        },
+        {
+          "kind": "def",
+          "name": "single1",
+          "line": 34
+        },
+        {
+          "kind": "def",
+          "name": "revisited",
+          "line": 35
+        },
+        {
+          "kind": "def",
+          "name": "repeated",
+          "line": 38
+        },
+        {
+          "kind": "theorem",
+          "name": "encode_single0",
+          "line": 41
+        },
+        {
+          "kind": "theorem",
+          "name": "encode_single1",
+          "line": 43
+        },
+        {
+          "kind": "theorem",
+          "name": "encode_revisited",
+          "line": 44
+        },
+        {
+          "kind": "theorem",
+          "name": "encode_repeated",
+          "line": 49
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_parallel_paths",
+          "line": 54
+        },
+        {
+          "kind": "theorem",
+          "name": "revisited_valid",
+          "line": 65
+        },
+        {
+          "kind": "theorem",
+          "name": "revisited_actual_decode",
+          "line": 69
+        },
+        {
+          "kind": "theorem",
+          "name": "repeated_history_distinct",
+          "line": 82
+        },
+        {
+          "kind": "theorem",
+          "name": "broken_join_rejected",
+          "line": 92
+        },
+        {
+          "kind": "theorem",
+          "name": "wrong_root_rejected",
+          "line": 98
+        },
+        {
+          "kind": "theorem",
+          "name": "wrong_end_rejected",
+          "line": 103
+        },
+        {
+          "kind": "theorem",
+          "name": "index3_role",
+          "line": 108
+        },
+        {
+          "kind": "theorem",
+          "name": "index3_not_selected",
+          "line": 110
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_wrong_role_lookup",
+          "line": 112
+        },
+        {
+          "kind": "def",
+          "name": "storedRows",
+          "line": 134
+        },
+        {
+          "kind": "def",
+          "name": "stored",
+          "line": 137
+        },
+        {
+          "kind": "theorem",
+          "name": "stored_wellFormed",
+          "line": 140
+        },
+        {
+          "kind": "theorem",
+          "name": "stored_actual_ids",
+          "line": 143
+        },
+        {
+          "kind": "theorem",
+          "name": "compact_actual_ids",
+          "line": 150
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.RoleRelationTable"
+      ],
+      "reverse_consumers": [
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.RoleRelationWrongRole"
+      ],
+      "subject": "Combinatorics",
+      "object": "DirectedGraph/Checks/Positive",
+      "source_role": "positive-check",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/RoleRelationTable.lean",
+      "placement_rationale": "Finite role-qualified relation IDs and actual typed rooted paths belong to Combinatorics/DirectedGraph; generic dictionaries remain in Logic/FiniteSequences.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "f609f741fd0ec8fc715b07199419be10bfb3f4aaeba15cd1b941a70a450ccab5",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/role-relation-table-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_role_relation_table.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Fixed actual finite source/target/role table; role-qualified IDs and actual typed Quiver.TotalEdge inverse codec. Decidable role equality for natural lookup; decidable full-tag equality for compaction; neither finite nor decidable vertex type is required for path equivalence.",
+        "Actual valid full rooted chronological ID histories; preserve joins, parallel IDs, repeats/order and root, even empty. Actual compaction consumer uses proved codec.",
+        "Formal finite-table theorem only; no external parser/hash/JSON/IO refinement, cross-revision ID stability or operational taxonomy duplicate-policy change."
+      ],
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "design_reference": "cache/research/role-logwindow-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
     },
     {
       "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/RootedTraceRevision.lean",
@@ -29655,7 +30440,8 @@
       ],
       "reverse_consumers": [
         "GRWTSK",
-        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableCompaction"
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableCompaction",
+        "GRWTSK.Combinatorics.DirectedGraph.RoleRelationTable"
       ],
       "subject": "Combinatorics",
       "object": "DirectedGraph",
@@ -29938,6 +30724,247 @@
       ],
       "license": "MIT; upstream imported Apache-2.0 retained",
       "design_reference": "cache/research/state-remote-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/RoleRelationTable.lean",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/RoleRelationTable.lean",
+      "sha256": "52940e0c878e9d9329e74455da71dc829d643b629c8997332e8a70e458abb7b2",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.RoleRelationTable",
+      "namespaces": [
+        "GRWTSK.Combinatorics.DirectedGraph.RoleRelationTable"
+      ],
+      "public_declarations": [
+        {
+          "kind": "structure",
+          "name": "Table",
+          "line": 29
+        },
+        {
+          "kind": "structure",
+          "name": "Vertex",
+          "line": 35
+        },
+        {
+          "kind": "abbrev",
+          "name": "RoleId",
+          "line": 39
+        },
+        {
+          "kind": "def",
+          "name": "vertexEquiv",
+          "line": 48
+        },
+        {
+          "kind": "def",
+          "name": "edgeId",
+          "line": 55
+        },
+        {
+          "kind": "def",
+          "name": "fullEdge",
+          "line": 59
+        },
+        {
+          "kind": "theorem",
+          "name": "fullEdge_source",
+          "line": 63
+        },
+        {
+          "kind": "theorem",
+          "name": "fullEdge_target",
+          "line": 66
+        },
+        {
+          "kind": "theorem",
+          "name": "fullEdge_edgeId",
+          "line": 69
+        },
+        {
+          "kind": "theorem",
+          "name": "edgeId_fullEdge",
+          "line": 76
+        },
+        {
+          "kind": "def",
+          "name": "edgeEquiv",
+          "line": 79
+        },
+        {
+          "kind": "def",
+          "name": "expandIds",
+          "line": 85
+        },
+        {
+          "kind": "def",
+          "name": "encodePath",
+          "line": 90
+        },
+        {
+          "kind": "def",
+          "name": "encode",
+          "line": 93
+        },
+        {
+          "kind": "theorem",
+          "name": "expand_encodePath",
+          "line": 96
+        },
+        {
+          "kind": "theorem",
+          "name": "expand_encode",
+          "line": 102
+        },
+        {
+          "kind": "theorem",
+          "name": "ids_expand",
+          "line": 106
+        },
+        {
+          "kind": "theorem",
+          "name": "encodePath_comp",
+          "line": 111
+        },
+        {
+          "kind": "theorem",
+          "name": "encode_nil",
+          "line": 116
+        },
+        {
+          "kind": "abbrev",
+          "name": "ValidFrom",
+          "line": 119
+        },
+        {
+          "kind": "theorem",
+          "name": "valid_encode",
+          "line": 123
+        },
+        {
+          "kind": "def",
+          "name": "decode",
+          "line": 128
+        },
+        {
+          "kind": "theorem",
+          "name": "encode_decode",
+          "line": 133
+        },
+        {
+          "kind": "theorem",
+          "name": "decode_encode",
+          "line": 141
+        },
+        {
+          "kind": "def",
+          "name": "pathStarEquivIds",
+          "line": 148
+        },
+        {
+          "kind": "theorem",
+          "name": "encode_injective",
+          "line": 156
+        },
+        {
+          "kind": "def",
+          "name": "finish",
+          "line": 162
+        },
+        {
+          "kind": "theorem",
+          "name": "finish_nil",
+          "line": 166
+        },
+        {
+          "kind": "theorem",
+          "name": "finish_cons",
+          "line": 168
+        },
+        {
+          "kind": "theorem",
+          "name": "decode_endpoint",
+          "line": 172
+        },
+        {
+          "kind": "def",
+          "name": "lookup",
+          "line": 179
+        },
+        {
+          "kind": "theorem",
+          "name": "lookup_roleId",
+          "line": 185
+        },
+        {
+          "kind": "theorem",
+          "name": "lookup_out_of_bounds",
+          "line": 188
+        },
+        {
+          "kind": "theorem",
+          "name": "lookup_wrong_role",
+          "line": 192
+        },
+        {
+          "kind": "def",
+          "name": "idRows",
+          "line": 198
+        },
+        {
+          "kind": "theorem",
+          "name": "expand_idRows",
+          "line": 204
+        },
+        {
+          "kind": "def",
+          "name": "decodeState",
+          "line": 218
+        },
+        {
+          "kind": "theorem",
+          "name": "compact_preserves_ids",
+          "line": 226
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCompaction"
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.RoleRelationTable"
+      ],
+      "subject": "Combinatorics",
+      "object": "DirectedGraph",
+      "source_role": "library",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/RoleRelationTable.lean",
+      "placement_rationale": "Finite role-qualified relation IDs and actual typed rooted paths belong to Combinatorics/DirectedGraph; generic dictionaries remain in Logic/FiniteSequences.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "52940e0c878e9d9329e74455da71dc829d643b629c8997332e8a70e458abb7b2",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/role-relation-table-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_role_relation_table.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Fixed actual finite source/target/role table; role-qualified IDs and actual typed Quiver.TotalEdge inverse codec. Decidable role equality for natural lookup; decidable full-tag equality for compaction; neither finite nor decidable vertex type is required for path equivalence.",
+        "Actual valid full rooted chronological ID histories; preserve joins, parallel IDs, repeats/order and root, even empty. Actual compaction consumer uses proved codec.",
+        "Formal finite-table theorem only; no external parser/hash/JSON/IO refinement, cross-revision ID stability or operational taxonomy duplicate-policy change."
+      ],
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "design_reference": "cache/research/role-logwindow-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
     },
     {
       "path": "GRWTSK/Combinatorics/DirectedGraph/RootedTraceRevision.lean",
@@ -61572,19 +62599,19 @@
   ],
   "current_inventory": {
     "head": "854e04dc182c36b00479b642e6301f47acc81e5f",
-    "lean_source_count": 730,
-    "active_source_count": 667,
+    "lean_source_count": 739,
+    "active_source_count": 676,
     "candidate_source_count": 63,
     "counts_by_role": {
       "audit-driver": 35,
-      "library": 378,
-      "negative-control": 137,
-      "positive-check": 117
+      "library": 381,
+      "negative-control": 140,
+      "positive-check": 120
     },
     "counts_by_subject": {
       "Algebra": 19,
-      "Analysis": 239,
-      "Combinatorics": 41,
+      "Analysis": 245,
+      "Combinatorics": 44,
       "Data": 1,
       "DynamicalSystems": 16,
       "GroupTheory": 4,
@@ -68326,6 +69353,25 @@
     "replays": [
       "evidence/Analysis/MellinTransform/gaussian-fourier-moments-checks-2026-10-15.json",
       "evidence/Combinatorics/DirectedGraph/prefix-table-compaction-checks-2026-10-15.json"
+    ],
+    "scope": "Incremental selected registration; no historical full-replay hashes or failed receipts refreshed."
+  },
+  "role_logwindow_additions": {
+    "date": "2026-10-15",
+    "paths": [
+      "GRWTSK/Combinatorics/DirectedGraph/RoleRelationTable.lean",
+      "GRWTSK/Analysis/MellinTransform/GaussianLogFlow.lean",
+      "GRWTSK/Analysis/MellinTransform/GaussianLogWindow.lean",
+      "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/RoleRelationTable.lean",
+      "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/RoleRelationWrongRole.lean",
+      "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianLogFlow.lean",
+      "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianLogFlowMissingScale.lean",
+      "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianLogWindow.lean",
+      "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianLogWindowMissingBox.lean"
+    ],
+    "replays": [
+      "evidence/Analysis/MellinTransform/gaussian-log-window-checks-2026-10-15.json",
+      "evidence/Combinatorics/DirectedGraph/role-relation-table-checks-2026-10-15.json"
     ],
     "scope": "Incremental selected registration; no historical full-replay hashes or failed receipts refreshed."
   }

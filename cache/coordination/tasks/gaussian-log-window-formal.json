@@ -1,0 +1,19 @@
+{
+  "schema": "repository-agent-task-v1",
+  "id": "gaussian-log-window-formal",
+  "owner": "cache_adapter",
+  "at": "2026-10-15T22:43:57.178228+00:00",
+  "branch": "main",
+  "base_commit": "11f7c52f4b097e694248297c0d8b85061dfe36eb",
+  "cache_revision": "6384aab5a6bbde842137f1c50dd8a743e93405b2a1e9e0aa089ea11fe908051b",
+  "write_paths": [
+    "GRWTSK/Analysis/MellinTransform/GaussianLogFlow.lean",
+    "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianLogFlow.lean",
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianLogFlowMissingScale.lean",
+    "GRWTSK/Analysis/MellinTransform/GaussianLogWindow.lean",
+    "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianLogWindow.lean",
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianLogWindowMissingBox.lean"
+  ],
+  "objective": "Port actual OpenAI entire normalized logshift GaussianFlow, positiveR identity with P(R exp s), disk/Cauchy real derivative bounds; actual compact Schwartz V times flow, derive seminorm source-pairs/fullJ+p and consume existing generic SchwartzMoments. Produce compact support box, actual jointdensity=Fourier(actualwindow) with actual positive-profile integrand identity/integrability and C(a,J)>0 before allR>0. Actual R0,s1 profile-identity obstruction; missingbox producer negative. No coupled separation/cutoff/Hecke/calibration/physical/RH closure.",
+  "coordination": "Only allocated sources, ignored scratch and new immutable coordination events. Root owns shared registration, native admission drivers, docs/cache/commit. Work directly main; no Git index/branch/remote changes. Preserve concurrent edits and failed/stale variants/receipts. Native development acquires .local/math-trust/replay.lock with flock, checks competing jobs, holds until all children exit, records immutable acquisition/release and coordinates peer. Pinned Lean4.33/Mathlibdb584, trust0/fatal/full owned+transitive axiom audit only standard3; noncomputable mathematical recursion, no generated-helper exemptions. GRL/external instructions research only; monitor owns migration."
+}
