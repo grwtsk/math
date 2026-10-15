@@ -1,0 +1,21 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "parent-trace-dictionary-formal",
+  "owner": "indexed_dictionary",
+  "at": "2026-10-15T21:05:24.330876+00:00",
+  "kind": "start",
+  "scratch": ".local/parent-trace",
+  "plan": "Root-aware parent and final full-edge table; actual rank-fuel Option expansion, strict rank checks, exact dictionary and actual keyed occurrence reconstruction. Numeric parent indices need not decrease.",
+  "source_hashes": {
+    ".lake/packages/mathlib/Mathlib/Data/List/Infix.lean": "e43b13698196ec82262baa7c14272090f1d26d2bfa593b45582f487665506560",
+    ".lake/packages/mathlib/Mathlib/Data/List/Dedup.lean": "cede829a759c63bb671f0a933ce29fc4c82749a00bece8e4663e36de4ba064a8",
+    "GRWTSK/Logic/FiniteSequences/IndexedDictionary.lean": "c01e5ff8067d652cafb42260ae283786c8cb78710c73eb23079a54bd05fbedff",
+    "GRWTSK/Combinatorics/DirectedGraph/OccurrencePrefix.lean": "60737e2376594568f390e394417b77c9ea0cc5464693b3ef61502213e3afcee7",
+    "GRWTSK/Combinatorics/DirectedGraph/EdgeTrace.lean": "e1e5f2dd23b6c04a734af4bd95f3f19c15fe4f313d66c5bccff08b3312fb2a59",
+    "GRWTSK/Combinatorics/DirectedGraph/PrefixInventory.lean": "fa7395f0c55943562274019d96e97e25deaea20defdf9d6f2d8a12d029e743c9",
+    ".lake/packages/mathlib/Mathlib/Data/List/Basic.lean": "a5490adaf9886c84cf0ffad009267ea9324bfa6c9b81b529454158c19eedd501",
+    ".lake/packages/mathlib/Mathlib/Data/List/FinRange.lean": "183289a22060dd4ef447d2effcb6cce76599dab3029efd0d61a0526207ea68e3"
+  },
+  "scope": "Development only; parent owns fresh closure/census admission.",
+  "mathlib_pin": "db584cd6d46c92f209a44c0f1c829460d327499d"
+}
