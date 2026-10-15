@@ -40,3 +40,22 @@ This contribution does not prove an arithmetic upper bound, negligible boundary 
 [Source](../../../../../GRWTSK/NumberTheory/Moebius/PrimeFilterLaplace.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../../reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
 
 The current import-only repair passed source elaboration at trust zero with fatal warnings. The statements, hypotheses and proof text are unchanged. Complete current owned-declaration auditing and affected-consumer acceptance remain pending; the historical status above is retained.
+
+<!-- BEGIN GENERATED MATHEMATICS TOTALS -->
+
+## Totals
+
+Scope: this object guide and the current bytes of its registered primary source [`GRWTSK/NumberTheory/Moebius/PrimeFilterLaplace.lean`](../../../../../GRWTSK/NumberTheory/Moebius/PrimeFilterLaplace.lean).
+
+| Inventory | Total |
+|---|---:|
+| Object guide | 1 |
+| Linked primary source file | 1 |
+| Source declaration commands | 12 |
+| Theorem/lemma commands | 9 |
+
+Theorem/lemma commands are included in declaration commands. These are source syntax counts; compiler-generated declarations and proof acceptance are outside their scope.
+
+[Count definitions](../../../../reference/library-pages.md#count-definitions) · [Structured inventory](../../../../reference/library-summary.json).
+
+<!-- END GENERATED MATHEMATICS TOTALS -->

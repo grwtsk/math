@@ -11,3 +11,22 @@
 **Evidence.** [The earlier waveform receipt](../../../../evidence/waveform-checks.json) records checks at former source paths. It is historical; current relocated-source replay is not claimed by this page. Proposed scheduling relevance is not an implemented runtime consumer.
 
 **Credit.** Human mathematical direction: grwtsk contributors; OpenAI Codex assistance. Classical scheduling reasoning and Mathlib origins retained; local MIT, Mathlib Apache-2.0; no originality claim.
+
+<!-- BEGIN GENERATED MATHEMATICS TOTALS -->
+
+## Totals
+
+Scope: this object guide and the current bytes of its registered primary source [`GRWTSK/Combinatorics/Sequences/QuotaDiscrepancy.lean`](../../../../GRWTSK/Combinatorics/Sequences/QuotaDiscrepancy.lean).
+
+| Inventory | Total |
+|---|---:|
+| Object guide | 1 |
+| Linked primary source file | 1 |
+| Source declaration commands | 22 |
+| Theorem/lemma commands | 17 |
+
+Theorem/lemma commands are included in declaration commands. These are source syntax counts; compiler-generated declarations and proof acceptance are outside their scope.
+
+[Count definitions](../../../reference/library-pages.md#count-definitions) · [Structured inventory](../../../reference/library-summary.json).
+
+<!-- END GENERATED MATHEMATICS TOTALS -->

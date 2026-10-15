@@ -132,3 +132,22 @@ The frozen specialization replay freshly elaborates both affected owners and che
 The subsequent frozen 25-source audit checks all 278 owned declarations with standard transitive axioms and no runtime exclusions. Its actual Energy consumer reports the same 243 unique declarations, with only the moved theorem's owner field changed; the new native row order is retained. Five intended controls fail freshly for their exact measured reason and source range. The phase-scaling control reuses its qualified unchanged two-source ancestry. Unchanged source exports and pinned imported Mathlib objects are reused, without a Mathlib source-rebuild claim. The arithmetic energy supplier, full project source and consumer acceptance, and unconditional RH remain open.
 
 The reusable cumulative exponential square-energy implication is described separately in [Exponential energy bounds and square integrability](../../../Analysis/LaplaceTransform/exponential-energy.md). It applies to arbitrary continuous functions with a supplied exponential energy bound and a strict gap between that rate and the tilt. Its exact 3357-byte declaration now belongs to Analysis. The separately qualified frozen transfer checks the complete 26-owner family of 278 declarations, the actual 243-declaration Energy consumer, and five freshly measured intended failures, with unchanged phase-scaling evidence reused. All twenty-eight raw types and twenty-seven other complete proof values are exact; the moved proof changes only two measured source-module lambda binder-name fields. Its strict raw-equality failures remain historical, and no equality of all twenty-eight raw values is claimed. The preceding 25-source paragraph records its original frozen generation: after this transfer, 24 of those 25 source hashes remain current. Earlier receipts retain their original inputs. Other project consumers, full replay, the open Möbius pickup growth supplier and unconditional RH are not established by this result.
+
+<!-- BEGIN GENERATED MATHEMATICS TOTALS -->
+
+## Totals
+
+Scope: this object guide and the current bytes of its registered primary source [`GRWTSK/NumberTheory/Moebius/EnergyGrowthEquivalences.lean`](../../../../../GRWTSK/NumberTheory/Moebius/EnergyGrowthEquivalences.lean).
+
+| Inventory | Total |
+|---|---:|
+| Object guide | 1 |
+| Linked primary source file | 1 |
+| Source declaration commands | 12 |
+| Theorem/lemma commands | 12 |
+
+Theorem/lemma commands are included in declaration commands. These are source syntax counts; compiler-generated declarations and proof acceptance are outside their scope.
+
+[Count definitions](../../../../reference/library-pages.md#count-definitions) · [Structured inventory](../../../../reference/library-summary.json).
+
+<!-- END GENERATED MATHEMATICS TOTALS -->

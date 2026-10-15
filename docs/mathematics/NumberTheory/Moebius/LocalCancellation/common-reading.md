@@ -40,3 +40,22 @@ Then \(Q>C(1+T)^b\) for every \(T\ge T_*\) and every admissible \(U,Y\). This fo
 ## Source and remaining arithmetic
 
 The [signed cutoff source](../../../../../GRWTSK/NumberTheory/ArithmeticFunctions/MoebiusTruncation.lean) retains the exact compensation that the written transport uses. Its source replay does not formalize this entire written aggregate argument. The [literal pickup registry](../pickup-problem-registry.json) preserves the original targets. The complete signed main, high-output channel and discrepancy must be controlled together, or an independent original P04, P05 or absolute MB6 witness must be supplied. All remain open. Positive moments, finite sign diagnostics and cost reparametrization do not discharge them.
+
+<!-- BEGIN GENERATED MATHEMATICS TOTALS -->
+
+## Totals
+
+Scope: this object guide and the current bytes of its registered primary source [`GRWTSK/NumberTheory/ArithmeticFunctions/MoebiusTruncation.lean`](../../../../../GRWTSK/NumberTheory/ArithmeticFunctions/MoebiusTruncation.lean).
+
+| Inventory | Total |
+|---|---:|
+| Object guide | 1 |
+| Linked primary source file | 1 |
+| Source declaration commands | 4 |
+| Theorem/lemma commands | 3 |
+
+Theorem/lemma commands are included in declaration commands. These are source syntax counts; compiler-generated declarations and proof acceptance are outside their scope.
+
+[Count definitions](../../../../reference/library-pages.md#count-definitions) · [Structured inventory](../../../../reference/library-summary.json).
+
+<!-- END GENERATED MATHEMATICS TOTALS -->

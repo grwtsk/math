@@ -117,3 +117,22 @@ See the [detailed pickup-energy discussion](../Moebius/Energy/growth.md),
 [recording-scale discussion](../Moebius/Energy/recording-blocks.md),
 [evidence roles](../../../explanation/evidence.md) and
 [verification instructions](../../../how-to/verify.md).
+
+<!-- BEGIN GENERATED MATHEMATICS TOTALS -->
+
+## Totals
+
+Scope: this object guide and the current bytes of its registered primary source [`GRWTSK/NumberTheory/Zeta/Riemann/DefectCriterion.lean`](../../../../GRWTSK/NumberTheory/Zeta/Riemann/DefectCriterion.lean).
+
+| Inventory | Total |
+|---|---:|
+| Object guide | 1 |
+| Linked primary source file | 1 |
+| Source declaration commands | 1 |
+| Theorem/lemma commands | 1 |
+
+Theorem/lemma commands are included in declaration commands. These are source syntax counts; compiler-generated declarations and proof acceptance are outside their scope.
+
+[Count definitions](../../../reference/library-pages.md#count-definitions) · [Structured inventory](../../../reference/library-summary.json).
+
+<!-- END GENERATED MATHEMATICS TOTALS -->

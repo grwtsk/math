@@ -5,6 +5,7 @@ Explicit checks remain effective with Python optimization enabled.
 from pathlib import Path
 import hashlib,html,json,re,subprocess,sys,unicodedata,stat,os
 import documentation_indexes as indexes
+import lean_declaration_census as census
 from urllib.parse import unquote,urlsplit
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -309,7 +310,7 @@ def render_navigation(layout,summary=None):
             if p.get('subject')==subject:text+='- ['+p['title']+']('+str(Path(path).relative_to('docs'))+')\n'
     text+='\n## Reading and verification\n\n[Evidence roles](explanation/evidence.md) · [Documentation standard](explanation/documentation.md) · [Source layout](reference/source-layout.md) · [Verification interfaces](reference/verification-interfaces.md) · [Provenance and historical limits](reference/documentation-history.md).\n\nThis is a page index, not a complete theorem catalog or a proof of the documented claims.\n'
     return text
-def build_navigation_summary(root,layout,source_names,bound=None,layout_raw=None):
+def build_navigation_summary(root,layout,source_names,bound=None,layout_raw=None,source_census=None):
     require(layout.get('navigation')=={'schema':'subject-index-navigation-v1','summary':indexes.SUMMARY_PATH},'navigation schema')
     raw={name:local_bytes(root,name,bound) for name in indexes.INPUT_PATHS}
     raw['docs/reference/documentation-layout.json']=(layout_raw if layout_raw is not None
@@ -320,8 +321,15 @@ def build_navigation_summary(root,layout,source_names,bound=None,layout_raw=None
         toolchain=raw['lean-toolchain'].decode().strip()
         lake=load_json(raw['lake-manifest.json'])
     except (UnicodeDecodeError,KeyError,TypeError) as error:raise LayoutError('invalid navigation inventory input') from error
+    source_bytes={name:local_bytes(root,name,bound) for name in sorted(source_names)}
+    if source_census is None:source_census=census.count_sources(root,source_bytes)
+    require(isinstance(source_census,dict) and set(source_census)==set(source_names),
+            'source census inventory mismatch')
+    for name,value in source_bytes.items():
+        require(isinstance(source_census[name],dict) and source_census[name].get('sha256')==digest(value),
+                'source census byte drift: '+name)
     return indexes.build_summary(layout,source_names,catalog,intake,toolchain,lake,
-        {name:digest(value) for name,value in raw.items()},require)
+        {name:digest(value) for name,value in raw.items()},require,source_census)
 def check_links(root,pages,bound=None):
     for name in pages:
         try:text=local_bytes(root,name,bound).decode()
@@ -355,7 +363,7 @@ def check_links(root,pages,bound=None):
                 try:target_text=local_bytes(root,target_name,bound).decode()
                 except UnicodeDecodeError as error:raise LayoutError('non-UTF8 page: '+target_name) from error
                 require(unquote(parsed.fragment) in slugs(target_text),'broken fragment: '+name+' -> '+link)
-def validate(root,layout,inventory,historical,visible,bound=None,source_names=None):
+def validate(root,layout,inventory,historical,visible,bound=None,source_names=None,source_census=None):
     require(layout.get('schema')=='mathematical-documentation-layout-v1','layout schema')
     require(inventory.get('schema')=='legacy-documentation-sections-v1','inventory schema')
     require(re.fullmatch('[0-9a-f]{40}',inventory.get('origin_commit','')) is not None,'mutable historical origin')
@@ -438,15 +446,21 @@ def validate(root,layout,inventory,historical,visible,bound=None,source_names=No
     summary=None
     if 'navigation' in layout:
         require(source_names is not None,'missing source inventory observation')
-        summary=build_navigation_summary(root,layout,source_names,bound)
+        summary=build_navigation_summary(root,layout,source_names,bound,source_census=source_census)
         require(load_json(local_bytes(root,indexes.SUMMARY_PATH,bound))==summary,'stale documentation inventory')
         actual={p['area']:name for name,p in pages.items() if 'area' in p}
         require(set(actual)==set(summary['areas']),'missing/extra area index')
         for area,name in actual.items():
             require(local_bytes(root,name,bound).decode()==indexes.render_area(layout,summary,area),'stale area index: '+area)
+        for name in indexes.articles(layout):
+            text=local_bytes(root,name,bound).decode()
+            expected=indexes.render_article_totals(layout,summary,name)
+            try:projected=indexes.update_article_totals(text,expected)
+            except ValueError as error:raise LayoutError(str(error)+': '+name) from error
+            require(projected==text,'missing or stale mathematics totals: '+name)
     require(index_text==render_navigation(layout,summary),'stale mathematical navigation')
     check_links(root,pages,bound)
-def check(root=ROOT):
+def check(root=ROOT,source_census=None):
     verify_git_root(root)
     layout_raw,layout_observation=read_safe(root,'docs/reference/documentation-layout.json',with_observation=True)
     try:layout=load_json(layout_raw.decode())
@@ -457,6 +471,7 @@ def check(root=ROOT):
     inventory=load_json(inventory_raw);historical={}
     visible=visible_markdown_inventory(root);names=live_input_names(layout)
     source_names=visible_source_inventory(root) if 'navigation' in layout else None
+    if source_names is not None:names.update(source_names)
     bound,observations=observe_inputs(root,names,{
         'docs/reference/documentation-layout.json':(layout_raw,layout_observation),
         layout['legacy_inventory']:(inventory_raw,inventory_observation)})
@@ -468,7 +483,9 @@ def check(root=ROOT):
         raw_source=git_bytes(root,['cat-file','blob',inventory['origin_commit']+':'+name])
         try:historical[name]=raw_source.decode()
         except UnicodeDecodeError as error:raise LayoutError('non-UTF8 historical source: '+name) from error
-    validate(root,layout,inventory,historical,visible,bound,source_names)
+    if source_names is not None and source_census is None:
+        source_census=census.count_sources(root,{name:bound[name] for name in source_names})
+    validate(root,layout,inventory,historical,visible,bound,source_names,source_census)
     require(visible_markdown_inventory(root)==visible,'Git-visible documentation changed during check')
     if source_names is not None:require(visible_source_inventory(root)==source_names,'source inventory changed during check')
     unused,terminal_observations=observe_inputs(root,names)
