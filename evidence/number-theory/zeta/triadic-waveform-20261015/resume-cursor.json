@@ -1,0 +1,29 @@
+{
+  "next_formal_tasks": [
+    "native-elaborate the finite candidate Lean modules under Lean 4.33.0/Mathlib db584c...",
+    "formalize the finite gcd radial decomposition with floors",
+    "formalize the coprime additive triple/totient bijection",
+    "prove or refute an adapter to the literal repository pickup before adding K-theory layers",
+    "run check_math_layout and owned/transitive axiom audit only after active-source admission is selected"
+  ],
+  "schema": "grl-twmk-resume-cursor-v1",
+  "secondary_unresolved_theorem": {
+    "id": "TWMK-INDEX-BRIDGE",
+    "statement": "Construct a source-specific Fredholm/cyclic pairing for the invariant lattice algebra and prove its equality with an independently defined arithmetic count or moment used by the analytic estimate."
+  },
+  "smallest_unresolved_theorem": {
+    "id": "TWMK-SOURCE-BRIDGE",
+    "must_retain": [
+      "all three cross terms",
+      "M\u00f6bius signs",
+      "floors and endpoints",
+      "pole/completion terms",
+      "reflection multiplicities",
+      "operator domains",
+      "continuation domain",
+      "all error constants"
+    ],
+    "statement": "Construct an exact adapter from a selected triadic primitive waveform and its screw/quartic transports to the repository's literal M\u00f6bius or completed-zeta source, and prove a complete signed mixed-interaction estimate strong enough for an existing checked RH consumer."
+  },
+  "status": "OPEN_FRONTIER"
+}
