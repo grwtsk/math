@@ -1,0 +1,162 @@
+{
+  "branch": "main",
+  "date": "2026-10-15",
+  "inactive_candidates": {
+    "admitted_edges": [],
+    "audit_requests": 5,
+    "compiled": false,
+    "elaborated_contracts": null,
+    "modules": 2,
+    "source_theorems": 5
+  },
+  "inspected_base": "8a20ef34ed57ab38e74152e4f068f061db7ef5fb",
+  "mathematics": "WRITTEN_CONTINUUM_BOUNDS_AND_EXECUTED_EXACT_COSTS",
+  "native_operation": "BLOCKED_OPERATION",
+  "nonclaims": {
+    "P04_witness": false,
+    "RH": false,
+    "actual_offline_zero": false,
+    "all_height_atlas": false,
+    "new_native_admissions": 0,
+    "new_zero_free_region": false,
+    "uniform_arithmetic_positivity": false
+  },
+  "outcome": "OPEN_FRONTIER",
+  "preservation": "Additive research only. Existing active Lean, compiler/package pins, source signs, old receipts, workflows, canonical documentation and concurrent work are unchanged.",
+  "remaining": "Independent source sign on the compact pair-extraction tests, plus native admission of the written/cited analytic chain. The known counting input is not mistaken for the source sign.",
+  "repository": "grwtsk/math",
+  "results": {
+    "arithmetic_source_identification": "Suzuki W(f*tilde f)=integral Psi (f*tilde f) second derivative = source screw form of f derivative, with all terms retained; written/cited only",
+    "compact_test_support": "[-2R,2R], convolution support [-4R,4R]",
+    "full_signed_trace_error": "27*C*delta*(2*B_L+delta)",
+    "no_actual_source_positivity": true,
+    "selected_negative_mass_return": "-M + Gaussian tail + compactification error <= -M/2",
+    "smooth_cutoff_bounds": [
+      "1",
+      "36/R",
+      "144/R^2"
+    ],
+    "synthetic_schedules": [
+      {
+        "L": 34,
+        "M": "2",
+        "R": 136,
+        "b": "1/4",
+        "support_radius": 272,
+        "t": "0"
+      },
+      {
+        "L": 42,
+        "M": "2",
+        "R": 168,
+        "b": "1/16",
+        "support_radius": 336,
+        "t": "2"
+      },
+      {
+        "L": 49,
+        "M": "6",
+        "R": 196,
+        "b": "1/256",
+        "support_radius": 392,
+        "t": "2"
+      }
+    ],
+    "weighted_count_bound": "27*C",
+    "weighted_strip_error": "delta=T2+(72/R+2A)T1+(1+144/R^2+72A/R+A^2)T0"
+  },
+  "schema": "gaussian-compactification-receipt-v1",
+  "source_bindings": [
+    {
+      "bytes": 9167,
+      "git_blob_sha1": "800e7e48f4e551a2418a81bdeacefcce3b761c00",
+      "path": "scripts/gaussian_weil_compactification.py",
+      "sha256": "993620666dee34dd195796958a6de2bc704721dc734b3067ed1d6c9673b2880a"
+    },
+    {
+      "bytes": 10088,
+      "git_blob_sha1": "c8711e12fcebc0fa64d75557545b444f7a4d333d",
+      "path": "tests/test_gaussian_weil_compactification.py",
+      "sha256": "8cdd0c0b7a2879d4e4a6ed3e71dc1eb8c441d2ec8d56ee81665f5ad28bfdb784"
+    },
+    {
+      "bytes": 808,
+      "git_blob_sha1": "6766725a8738e4dc3f20816eb18f08f4496ad3ed",
+      "path": "evidence/analysis/fourier/gaussian-compactification-20261015/audit.lean.txt",
+      "sha256": "fb5f2a1118d57bf7f382231f4265997ef2d94d576ce4a55d7d92cae62bae4ab3"
+    },
+    {
+      "bytes": 1603,
+      "git_blob_sha1": "0f563d81c92990414ad6e7674483dd03f3f9e246",
+      "path": "evidence/analysis/fourier/gaussian-compactification-20261015/candidates/ShiftedGaussian.lean.txt",
+      "sha256": "5f053dc498b738e5ff87795c3e4086dec731a3957548edd29a265cd0d0650670"
+    },
+    {
+      "bytes": 3392,
+      "git_blob_sha1": "99da6a819849ea45625c62772426ac4d4c7864e8",
+      "path": "evidence/analysis/fourier/gaussian-compactification-20261015/candidates/WeightedSquareBudget.lean.txt",
+      "sha256": "d40d5873a4a963290f663c9226db358a1c4677b95baa0d842f7cbdb3fffc7e81"
+    },
+    {
+      "bytes": 15146,
+      "git_blob_sha1": "20bd8d471d1d78268f9bf0738e09eb1f09adfe9b",
+      "path": "evidence/analysis/fourier/gaussian-compactification-20261015/derivation.txt",
+      "sha256": "76bdb78e68655fcb89320942c2b5bf6d96fcf8760f802651927037e22b9e5248"
+    },
+    {
+      "bytes": 8185,
+      "git_blob_sha1": "ad669ed0f921d92537851cbb44365269db8cf826",
+      "path": "evidence/analysis/fourier/gaussian-compactification-20261015/examples.json",
+      "sha256": "e2f0ec6b98a0aa05032b22a4f5229a9e22e529b1cbc8df4a13663447a9a308df"
+    },
+    {
+      "bytes": 5076,
+      "git_blob_sha1": "2bad755e32fd3a6d5fec8026927cc5fd98b029f1",
+      "path": "evidence/analysis/fourier/gaussian-compactification-20261015/frontier.json",
+      "sha256": "efa43732186c1601b0c2838aba4ea9690c71ad65deaba6ea89e73290cf2d71dd"
+    },
+    {
+      "bytes": 2445,
+      "git_blob_sha1": "7f52b8943762d6d6fefaaf79d09e2eb2eca9c1bb",
+      "path": "evidence/analysis/fourier/gaussian-compactification-20261015/sources.json",
+      "sha256": "a0237815fbd714914943d7ab811dfa83ab2e81841d72da54ec6d3e8b32f2efbb"
+    }
+  ],
+  "unchanged_dependency": {
+    "bytes": 11160,
+    "git_blob_sha1": "59a41723067ecf2c1a68d65276bdd2a70f644296",
+    "path": "scripts/finite_hermite_isolation.py",
+    "sha256": "60e7c9383abec772ee1e9a5d82f11104aa6975d203e0aff5b96d562efcb0d922"
+  },
+  "verification": {
+    "actual_fourier_or_Weil_integral_evaluation": "NOT_RUN",
+    "external_dependency_replay": "NOT_RUN",
+    "full_repository_layout_documentation": "NOT_RUN",
+    "independent_validation": "NOT_RUN",
+    "logs": {
+      "dependency-normal.stderr": "..................................\n----------------------------------------------------------------------\nRan 34 tests in 0.621s\n\nOK\n",
+      "dependency-optimized.stderr": "..................................\n----------------------------------------------------------------------\nRan 34 tests in 1.855s\n\nOK\n",
+      "tests-final-normal.stderr": "....................................\n----------------------------------------------------------------------\nRan 36 tests in 1.554s\n\nOK\n",
+      "tests-final-optimized.stderr": "....................................\n----------------------------------------------------------------------\nRan 36 tests in 1.697s\n\nOK\n",
+      "tests-initial.stderr": ".................................\n----------------------------------------------------------------------\nRan 33 tests in 1.049s\n\nOK\n",
+      "tests-inventory-failure-normal.stderr": "........................F...........\n======================================================================\nFAIL: test_candidate_inventory_is_not_native (test_gaussian_weil_compactification.Hostile.test_candidate_inventory_is_not_native)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/mnt/data/gaussian_compactification/work/tests/test_gaussian_weil_compactification.py\", line 219, in test_candidate_inventory_is_not_native\n    self.assertEqual(len(requests),5)\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\nAssertionError: 6 != 5\n\n----------------------------------------------------------------------\nRan 36 tests in 1.792s\n\nFAILED (failures=1)\n",
+      "tests-inventory-failure-optimized.stderr": "........................F...........\n======================================================================\nFAIL: test_candidate_inventory_is_not_native (test_gaussian_weil_compactification.Hostile.test_candidate_inventory_is_not_native)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/mnt/data/gaussian_compactification/work/tests/test_gaussian_weil_compactification.py\", line 219, in test_candidate_inventory_is_not_native\n    self.assertEqual(len(requests),5)\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\nAssertionError: 6 != 5\n\n----------------------------------------------------------------------\nRan 36 tests in 1.791s\n\nFAILED (failures=1)\n"
+    },
+    "native_axiom_type_audit": "NOT_RUN",
+    "native_preflight": {
+      "elan": null,
+      "full_checkout": false,
+      "git_attempt": "git ls-remote https://github.com/grwtsk/math.git HEAD failed: Could not resolve host: github.com",
+      "lake": null,
+      "lean": null
+    },
+    "new_tests_per_mode": 36,
+    "normal_and_optimized_pass": true,
+    "preserved_failure": "The first audit-inventory test counted #print axioms inside a block comment as a sixth request. The lexical fixture was corrected to strip comments, as already done for candidate declarations. The five theorem statements, proof bodies and mathematical code were unchanged. Both failure logs retained.",
+    "producer_outputs_identical": true,
+    "python": "3.13.5",
+    "selected_tests_per_mode": 70,
+    "sympy": "1.14.0",
+    "unchanged_dependency_tests_per_mode": 34
+  }
+}
