@@ -1,0 +1,19 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "batch-certificate-formal",
+  "status": "native_dev_lock_acquired",
+  "owner": "indexed_dictionary",
+  "at": "20261015T182754.509528Z",
+  "lock": "/Users/think/Desktop/math/.local/math-trust/replay.lock",
+  "competing_jobs": [],
+  "dependency_receipts": [
+    {
+      "path": "evidence/Logic/FiniteSequences/incremental-composition-checks-2026-10-15.json",
+      "sha256": "51746aae3baf3caa2bb965bc1c1b334036c0e5464e340b837591920494892de5"
+    },
+    {
+      "path": "evidence/Logic/FiniteSequences/decision-certificate-checks-2026-10-15.json",
+      "sha256": "1c7dd9f0b8c67354b60722bc2604636b710681dd7aca47bde7bfddbcb2bac9d3"
+    }
+  ]
+}

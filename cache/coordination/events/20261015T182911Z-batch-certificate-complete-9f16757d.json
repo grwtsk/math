@@ -1,0 +1,105 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "batch-certificate-formal",
+  "status": "implementation_complete_pending_root_admission",
+  "owner": "indexed_dictionary",
+  "branch": "main",
+  "source_sha256": {
+    "GRWTSK/Logic/FiniteSequences/BatchCertificate.lean": "fb32c13a6ebecd24ca926c13e332f4d1e5c1f97bdf548dcad9a1c6d6940c5578",
+    "GRWTSK/Logic/FiniteSequences/Checks/Positive/BatchCertificate.lean": "221ff43d11229b41b51ecb8ac0dab1cec0eec51c814171e0ac2449f8ca063307",
+    "GRWTSK/Logic/FiniteSequences/Checks/Negative/BatchCertificateMissingEvidence.lean": "f0d8510a0db792a2669e899a89284bc1f4a50bb3254e89fbb2bd50506140263a"
+  },
+  "api_event": "cache/coordination/events/20261015T182816Z-batch-certificate-api-07e640bf.json",
+  "scout": {
+    "scope": "Bounded local GRWTSK finite-sequence and pinned Mathlib/Batteries List API search; no exhaustive-repository search or novelty claim.",
+    "queries": [
+      "reuse_sequential|reuse_combined|DecodesSatisfying.*iff|batch.*certificate",
+      "Option inductive generated some.inj",
+      "List.length_nil and List.length_cons"
+    ],
+    "files": {
+      "GRWTSK/Logic/FiniteSequences/DecisionCertificate.lean": "d7ce67b4eacedb2d84a958636c55cd0ed75be869f552377163c0832449dc0990",
+      "GRWTSK/Logic/FiniteSequences/IncrementalComposition.lean": "7dbd7e782e1c21e8855223efa03b1d4c690eddcc3df8c7a8f7c8da6c722ac89c",
+      "GRWTSK/Logic/FiniteSequences/IncrementalDictionary.lean": "dc5874410f3f41a838757159de9f225c09572d0748fceda554e88314ae4b5177",
+      ".lake/packages/mathlib/Mathlib/Data/List/Basic.lean": "a5490adaf9886c84cf0ffad009267ea9324bfa6c9b81b529454158c19eedd501",
+      "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/src/lean/Init/Prelude.lean": "56de5780adc4358372fa9cfac270a70f2d03fd4f213a373aea4365483b31a544",
+      "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/src/lean/Init/Data/List/Basic.lean": "6fe2c8b4db30895cfc240e96d49119a8fb9997c6074e294ba62352a7f9adba72"
+    },
+    "reused": [
+      "DecisionCertificate.DecodesSatisfying",
+      "Certificate.reuse_of_same_decoding",
+      "Certificate.unpack_packed",
+      "IncrementalComposition.unpack_appendEntries_compose",
+      "IncrementalComposition.unpack_appendEntries_twice_pack",
+      "IncrementalDictionary.unpack_appendEntries_pack",
+      "Option.some.inj",
+      "List.length_nil",
+      "List.length_cons"
+    ],
+    "decision": "No equivalent batch-certificate application found before writing this task. Reuse accepted representation/semantic APIs; introduce no new certificate structure or assumed encoder law."
+  },
+  "checks": [
+    {
+      "kind": "library",
+      "trust": 0,
+      "fatal_warnings": true,
+      "exit_code": 0,
+      "receipt": ".local/batch-certificate/20261015T182755.400407Z-library.json"
+    },
+    {
+      "kind": "positive_control",
+      "trust": 0,
+      "fatal_warnings": true,
+      "exit_code": 0,
+      "receipt": ".local/batch-certificate/20261015T182756.026758Z-positive.json"
+    },
+    {
+      "kind": "hostile_control",
+      "trust": 0,
+      "fatal_warnings": true,
+      "exit_code": 1,
+      "passed_intended_type_mismatch": true,
+      "receipt": ".local/batch-certificate/20261015T182756.655459Z-negative.json"
+    },
+    {
+      "kind": "repository_layout",
+      "receipt": ".local/batch-certificate/20261015T182909.396891Z-layout.json",
+      "command": [
+        "python3",
+        "-B",
+        "scripts/check_math_layout.py"
+      ],
+      "exit_code": 1,
+      "summary": "Math layout: FAIL (358 library modules, 183 findings).",
+      "owned_findings": [
+        "GRWTSK/Logic/FiniteSequences/BatchCertificate.lean: library-module-outside-public-closure [GRWTSK.Logic.FiniteSequences.BatchCertificate]: library module is not reachable from GRWTSK.lean",
+        "GRWTSK/Logic/FiniteSequences/BatchCertificate.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources",
+        "GRWTSK/Logic/FiniteSequences/Checks/Negative/BatchCertificateMissingEvidence.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources",
+        "GRWTSK/Logic/FiniteSequences/Checks/Positive/BatchCertificate.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources"
+      ],
+      "log": ".local/batch-certificate/20261015T182909.396891Z-layout.log"
+    },
+    {
+      "kind": "owned_whitespace",
+      "receipt": ".local/batch-certificate/20261015T182909.396891Z-whitespace.json",
+      "findings": [],
+      "all_git_checks_clean": true
+    }
+  ],
+  "mathematical_scope": "For arbitrary semantic decoded-list predicate and Valid original, sequential/combined actual appendEntries satisfaction is equivalent. A certificate for exact FULL oldRows++first++second reuses its actual proof for either representation by accepted exact decoder/codec APIs. Concrete complete length3 certificate works despite unequal numeric representation; empty-history length0 certificate actually fails after successful one-row append.",
+  "boundaries": [
+    "The actual proof about the complete appended history is essential; an arbitrary old predicate need not be append-stable.",
+    "Semantic reuse preserves no numeric/byte identity and grants no external approval or taxonomy coverage.",
+    "No Python/JSON/hash/compression/IO refinement."
+  ],
+  "native_coordination": "Shared lock held across all three dev checks with no competing jobs at acquisition. All native children exited and lock released before release event and notifications to root/cache_adapter; no more native jobs planned.",
+  "remaining": [
+    "Root complete fresh local-closure owned-declaration/census/axiom audit, harness and source/doc/metadata admission."
+  ],
+  "source_variants_directory": ".local/batch-certificate/source-variants",
+  "failed_attempts_preserved": "No failed source elaboration attempts. Intended negative source, exact diagnostic and all successful source variants retained.",
+  "previous_source_mutations": [],
+  "shared_metadata_mutations": [],
+  "commits": [],
+  "remote_mutations": []
+}

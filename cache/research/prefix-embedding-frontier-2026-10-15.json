@@ -1,0 +1,45 @@
+{
+  "schema": "bounded-formal-research-frontier-v1",
+  "at": "2026-10-15T18:29:28.452626+00:00",
+  "basis": "Actual local candidate source inspection; no native replay or status change.",
+  "sources": [
+    {
+      "path": "GRWTSK/Order/Taxonomy/Address.lean",
+      "sha256": "aae54480d327193e1d68676baa351623373861257fed59accf0ad328a8c2ad2b",
+      "status": "SOURCE_INSPECTED; original NOT_RUN preserved"
+    },
+    {
+      "path": "GRWTSK/Order/Taxonomy/Core.lean",
+      "sha256": "2de1811f8f126307216df30e5e3578b117acd305ca3039725f18f8bcce696497",
+      "status": "SOURCE_INSPECTED; original NOT_RUN preserved"
+    },
+    {
+      "path": "cache/taxonomy.json",
+      "sha256": "072a431bca2c960488c7681d4fb316db2135a7f91d2e181f5664db610e0103fa",
+      "status": "SOURCE_INSPECTED; original NOT_RUN preserved"
+    }
+  ],
+  "observed_candidate_contracts": [
+    "Address.lean defines its own recursive Prefix and includes ancestors_comparable.",
+    "Core.lean includes Taxonomy.ancestors_chain, finite_representation and representationOrderIso for finite presentations of an already prefix-closed taxonomy.",
+    "None is a theorem representing an arbitrary typed DAG by a prefix tree; all candidate native labels remain NOT_RUN."
+  ],
+  "precise_next_target": {
+    "suggested_home": "GRWTSK/Order/Embeddings/PrefixObstruction.lean",
+    "statement": "For any source relation with incomparable a,b both below c, no map to finite lists can both preserve and reflect the source relation as List.IsPrefix. Ancestors of one target address are comparable. Instantiate the four-element Boolean subset lattice as an actual finite diamond.",
+    "essential_hypotheses": [
+      "Preservation sends both a,b below c to prefixes of f c.",
+      "Reflection turns target prefix comparability back into a<=b or b<=a, contradicting source incomparability.",
+      "Injective monotonicity alone is insufficient: a linear extension can introduce extra target comparisons. Do not claim this weaker premise excludes maps."
+    ],
+    "required_controls": [
+      "Actual finite diamond obstruction plus a valid chain-prefix embedding.",
+      "Concrete injective monotone map whose target introduces source-incomparable comparisons, demonstrating the need for reflection.",
+      "One intended missing-reflection rejection control."
+    ],
+    "reuse_and_duplicate_policy": "Do not duplicate or silently promote candidate ancestor lemmas. Prefer exact pinned List.IsPrefix APIs and a genuinely new embedding obstruction/consumer; if a candidate is used, first discharge its own fresh audit/admission and preserve historical receipts.",
+    "status": "PRECISE_UNCHECKED_FRONTIER"
+  },
+  "taxonomy_boundary": "Method relation roles are distinct; only a declared ancestry relation is in scope. DAG reachability, proof implication, provenance, communication and governance are not interchangeable. The supplied 16 families/215 total still have no individual method identities.",
+  "operational_refinement": "No correspondence between Python/JSON relation validation and a Lean relation model is proved."
+}

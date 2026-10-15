@@ -1,0 +1,7 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "joint-graph-formal",
+  "event": "prefix-lock-acquired",
+  "at": "2026-10-15T18:29:00.708597+00:00",
+  "competing_jobs": []
+}
