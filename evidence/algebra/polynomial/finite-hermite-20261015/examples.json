@@ -1,0 +1,499 @@
+{
+  "fixed_quadratic_masked_trace": "2361857/128",
+  "global_source_supplier": "OPEN",
+  "native_Lean": "NOT_RUN",
+  "nonclaims": {
+    "RH": false,
+    "all_height_coverage": false,
+    "zeta_zero_data": false
+  },
+  "old_I_test_fourth_trace": "2",
+  "outcome": "EXACT_FINITE_ALGEBRA_ONLY",
+  "records": [
+    {
+      "RH": false,
+      "coefficient_l1": "1182664651/307141250",
+      "conditioning": {
+        "coefficient_l1_upper": "10307264",
+        "distinct_nodes": 6,
+        "radius_upper": "10",
+        "separation_lower": "1/2"
+      },
+      "degree": 5,
+      "kernel_checked": false,
+      "moment_contraction": "-2",
+      "moments": [
+        "6",
+        "0",
+        "863/4",
+        "0",
+        "1283713/64",
+        "0",
+        "2048201663/1024",
+        "0",
+        "3276809722113/16384",
+        "0",
+        "5242880372960063/262144"
+      ],
+      "nodes": [
+        {
+          "multiplicity": 1,
+          "point": [
+            "-10",
+            "0"
+          ]
+        },
+        {
+          "multiplicity": 1,
+          "point": [
+            "-2",
+            "-1/4"
+          ]
+        },
+        {
+          "multiplicity": 1,
+          "point": [
+            "-2",
+            "1/4"
+          ]
+        },
+        {
+          "multiplicity": 1,
+          "point": [
+            "2",
+            "-1/4"
+          ]
+        },
+        {
+          "multiplicity": 1,
+          "point": [
+            "2",
+            "1/4"
+          ]
+        },
+        {
+          "multiplicity": 1,
+          "point": [
+            "10",
+            "0"
+          ]
+        }
+      ],
+      "power": 2,
+      "propagated_error": "1156878922662295351/2797391353449903602",
+      "real_coefficients": [
+        "-194174/94505",
+        "-6024896/6142825",
+        "2556287/4725250",
+        "40904624/153570625",
+        "-12296/2362625",
+        "-393984/153570625"
+      ],
+      "signed_trace": "-2",
+      "source_kind": "synthetic_exact_finite_divisor_NOT_zeta_data",
+      "strict_negative_margin": "4437903784237511853/2797391353449903602",
+      "synthetic_uniform_moment_error": "47167873725781250/1398695676724951801",
+      "target": [
+        "2",
+        "1/4"
+      ],
+      "target_pair_mass": 2
+    },
+    {
+      "RH": false,
+      "coefficient_l1": "904961919/307141250",
+      "conditioning": {
+        "coefficient_l1_upper": "20614528",
+        "distinct_nodes": 6,
+        "radius_upper": "10",
+        "separation_lower": "1/2"
+      },
+      "degree": 5,
+      "kernel_checked": false,
+      "moment_contraction": "-8",
+      "moments": [
+        "6",
+        "0",
+        "863/4",
+        "0",
+        "1283713/64",
+        "0",
+        "2048201663/1024",
+        "0",
+        "3276809722113/16384",
+        "0",
+        "5242880372960063/262144",
+        "0",
+        "8388608005917040513/4194304",
+        "0",
+        "13421772799169790838463/67108864",
+        "0",
+        "21474836479870394149478913/1073741824",
+        "0",
+        "34359738367987177296541836863/17179869184",
+        "0",
+        "54975581388798931924082723037313/274877906944"
+      ],
+      "nodes": [
+        {
+          "multiplicity": 1,
+          "point": [
+            "-10",
+            "0"
+          ]
+        },
+        {
+          "multiplicity": 1,
+          "point": [
+            "-2",
+            "-1/4"
+          ]
+        },
+        {
+          "multiplicity": 1,
+          "point": [
+            "-2",
+            "1/4"
+          ]
+        },
+        {
+          "multiplicity": 1,
+          "point": [
+            "2",
+            "-1/4"
+          ]
+        },
+        {
+          "multiplicity": 1,
+          "point": [
+            "2",
+            "1/4"
+          ]
+        },
+        {
+          "multiplicity": 1,
+          "point": [
+            "10",
+            "0"
+          ]
+        }
+      ],
+      "power": 4,
+      "propagated_error": "253503439428439620739985292751431466/223563017505868647220854718968692907",
+      "real_coefficients": [
+        "-147006/94505",
+        "-3738824/6142825",
+        "2558303/4725250",
+        "35824306/153570625",
+        "-12424/2362625",
+        "-348896/153570625"
+      ],
+      "signed_trace": "-8",
+      "source_kind": "synthetic_exact_finite_divisor_NOT_zeta_data",
+      "strict_negative_margin": "1535000700618509557026852458998111790/223563017505868647220854718968692907",
+      "synthetic_uniform_moment_error": "17798466494489961426567382812500000/670689052517605941662564156906078721",
+      "target": [
+        "2",
+        "1/4"
+      ],
+      "target_pair_mass": 2
+    },
+    {
+      "RH": false,
+      "coefficient_l1": "12288/205",
+      "conditioning": {
+        "coefficient_l1_upper": "128000",
+        "distinct_nodes": 4,
+        "radius_upper": "4",
+        "separation_lower": "1/8"
+      },
+      "degree": 3,
+      "kernel_checked": false,
+      "moment_contraction": "-2",
+      "moments": [
+        "4",
+        "8",
+        "3071/128",
+        "5117/64",
+        "9431041/32768",
+        "17815557/16384",
+        "35417766911/8388608"
+      ],
+      "nodes": [
+        {
+          "multiplicity": 1,
+          "point": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "multiplicity": 1,
+          "point": [
+            "2",
+            "-1/16"
+          ]
+        },
+        {
+          "multiplicity": 1,
+          "point": [
+            "2",
+            "1/16"
+          ]
+        },
+        {
+          "multiplicity": 1,
+          "point": [
+            "4",
+            "0"
+          ]
+        }
+      ],
+      "power": 2,
+      "propagated_error": "1/2",
+      "real_coefficients": [
+        "0",
+        "-32768/1025",
+        "24576/1025",
+        "-4096/1025"
+      ],
+      "signed_trace": "-2",
+      "source_kind": "synthetic_exact_finite_divisor_NOT_zeta_data",
+      "strict_negative_margin": "3/2",
+      "synthetic_uniform_moment_error": "42025/301989888",
+      "target": [
+        "2",
+        "1/16"
+      ],
+      "target_pair_mass": 2
+    },
+    {
+      "RH": false,
+      "coefficient_l1": "50331648/52429",
+      "conditioning": {
+        "coefficient_l1_upper": "524288000",
+        "distinct_nodes": 4,
+        "radius_upper": "4",
+        "separation_lower": "1/128"
+      },
+      "degree": 3,
+      "kernel_checked": false,
+      "moment_contraction": "-2",
+      "moments": [
+        "4",
+        "8",
+        "786431/32768",
+        "1310717/16384",
+        "618473717761/2147483648",
+        "1168228483077/1073741824",
+        "594474120024686591/140737488355328"
+      ],
+      "nodes": [
+        {
+          "multiplicity": 1,
+          "point": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "multiplicity": 1,
+          "point": [
+            "2",
+            "-1/256"
+          ]
+        },
+        {
+          "multiplicity": 1,
+          "point": [
+            "2",
+            "1/256"
+          ]
+        },
+        {
+          "multiplicity": 1,
+          "point": [
+            "4",
+            "0"
+          ]
+        }
+      ],
+      "power": 2,
+      "propagated_error": "1/2",
+      "real_coefficients": [
+        "0",
+        "-134217728/262145",
+        "100663296/262145",
+        "-16777216/262145"
+      ],
+      "signed_trace": "-2",
+      "source_kind": "synthetic_exact_finite_divisor_NOT_zeta_data",
+      "strict_negative_margin": "3/2",
+      "synthetic_uniform_moment_error": "2748800041/5066549580791808",
+      "target": [
+        "2",
+        "1/256"
+      ],
+      "target_pair_mass": 2
+    },
+    {
+      "RH": false,
+      "coefficient_l1": "206158430208/13421773",
+      "conditioning": {
+        "coefficient_l1_upper": "2147483648000",
+        "distinct_nodes": 4,
+        "radius_upper": "4",
+        "separation_lower": "1/2048"
+      },
+      "degree": 3,
+      "kernel_checked": false,
+      "moment_contraction": "-2",
+      "moments": [
+        "4",
+        "8",
+        "201326591/8388608",
+        "335544317/4194304",
+        "40532396243681281/140737488355328",
+        "76561192994209797/70368744177664",
+        "9973637944266697287401471/2361183241434822606848"
+      ],
+      "nodes": [
+        {
+          "multiplicity": 1,
+          "point": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "multiplicity": 1,
+          "point": [
+            "2",
+            "-1/4096"
+          ]
+        },
+        {
+          "multiplicity": 1,
+          "point": [
+            "2",
+            "1/4096"
+          ]
+        },
+        {
+          "multiplicity": 1,
+          "point": [
+            "4",
+            "0"
+          ]
+        }
+      ],
+      "power": 2,
+      "propagated_error": "1/2",
+      "real_coefficients": [
+        "0",
+        "-549755813888/67108865",
+        "412316860416/67108865",
+        "-68719476736/67108865"
+      ],
+      "signed_trace": "-2",
+      "source_kind": "synthetic_exact_finite_divisor_NOT_zeta_data",
+      "strict_negative_margin": "3/2",
+      "synthetic_uniform_moment_error": "180143990463529/85002596691653613846528",
+      "target": [
+        "2",
+        "1/4096"
+      ],
+      "target_pair_mass": 2
+    },
+    {
+      "RH": false,
+      "coefficient_l1": "1182664651/307141250",
+      "conditioning": {
+        "coefficient_l1_upper": "10307264",
+        "distinct_nodes": 6,
+        "radius_upper": "10",
+        "separation_lower": "1/2"
+      },
+      "degree": 5,
+      "kernel_checked": false,
+      "moment_contraction": "-6",
+      "moments": [
+        "10",
+        "8",
+        "463/2",
+        "61/2",
+        "643713/32",
+        "3461/32",
+        "1024201663/512",
+        "178361/512",
+        "1638409722113/8192",
+        "7850761/8192",
+        "2621440372960063/131072"
+      ],
+      "nodes": [
+        {
+          "multiplicity": 1,
+          "point": [
+            "-10",
+            "0"
+          ]
+        },
+        {
+          "multiplicity": 1,
+          "point": [
+            "-2",
+            "-1/4"
+          ]
+        },
+        {
+          "multiplicity": 1,
+          "point": [
+            "-2",
+            "1/4"
+          ]
+        },
+        {
+          "multiplicity": 3,
+          "point": [
+            "2",
+            "-1/4"
+          ]
+        },
+        {
+          "multiplicity": 3,
+          "point": [
+            "2",
+            "1/4"
+          ]
+        },
+        {
+          "multiplicity": 1,
+          "point": [
+            "10",
+            "0"
+          ]
+        }
+      ],
+      "power": 2,
+      "propagated_error": "3470636767986886053/2797391353449903602",
+      "real_coefficients": [
+        "-194174/94505",
+        "-6024896/6142825",
+        "2556287/4725250",
+        "40904624/153570625",
+        "-12296/2362625",
+        "-393984/153570625"
+      ],
+      "signed_trace": "-6",
+      "source_kind": "synthetic_exact_finite_divisor_NOT_zeta_data",
+      "strict_negative_margin": "13313711352712535559/2797391353449903602",
+      "synthetic_uniform_moment_error": "141503621177343750/1398695676724951801",
+      "target": [
+        "2",
+        "1/4"
+      ],
+      "target_pair_mass": 6
+    }
+  ],
+  "schema": "finite-hermite-isolation-results-v1"
+}
