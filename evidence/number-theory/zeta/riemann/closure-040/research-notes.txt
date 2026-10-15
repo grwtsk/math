@@ -1,0 +1,137 @@
+GRL-RH-1 / 0.4.0: bounded mathematical continuation
+
+Outcome: OPEN_FRONTIER. Native replay: BLOCKED_OPERATION.
+These are retained candidate sources and exact algebra evidence, not admitted
+Lean results. Existing formalized results remain in grwtsk/math, unchanged.
+No root proof, governance adoption, independent validation or autonomous
+termination claim is made. No source files or receipts from earlier work are
+replaced. The supplied GRL-1-v0.3.md bytes and candidate package were not located;
+their historical hashes and claimed earlier 33-check receipt are not recreated.
+
+1. Mathematical advance: the full witness slope family
+
+For R(a,t)=[t+ia,t-ia,-t+ia,-t-ia], with all four list weights retained, let
+p_k(x)=x^2+k*a*x+a^2-t^2. Direct evaluation of the complex squares gives
+
+  H_k(a,t) = -4*a^2*[k^2*a^2+(4-k^2)*t^2].
+
+This is a signed trace of p(r)^2, not of |p(r)|^2. It specializes to the
+supplied H_1=-4*a^2*(a^2+3*t^2) and to H_2=-16*a^4. Thus the slope-two
+witness removes height from the negative margin, including height zero.
+The slope-one witness can have a larger negative magnitude at large height;
+height-independence is not an assertion of uniformly superior localization
+conditioning or smaller analytic error.
+
+Within this fixed family, strict detection for every a!=0 and every real t
+holds exactly when 0<k^2<=4. Sufficiency follows because the inner bracket
+has a strictly positive first term and a nonnegative second term. Necessity
+at k=0 follows from a=1,t=0. If k^2>4, use
+
+  a=1, t=(k^2+1)/(k^2-4),
+  H_k = 4*(6*k^2+1)/(k^2-4) > 0.
+
+The simple counterfixture k=3,a=1,t=2 has trace 44. This refutes only
+oversized-slope universal detection, not RH and not the admissible slopes.
+The original expected target record was frozen before candidate generation.
+The complete classification was frozen in a separate discovered-targets
+record before its candidate proof was added; no old target was weakened.
+
+2. Quantitative and source-extraction consequences
+
+A lower approximation H_2(a,t)>=-epsilon gives 16*a^4<=epsilon. For any
+fixed exclusion width delta>0, |a|>=delta and epsilon<16*delta^4 are
+incompatible. Arbitrarily small such errors force a=0; one finite positive
+error only gives an enclosure, never exact equality.
+
+A generic ordered-real lemma now isolates the sufficient extraction:
+for every epsilon>0, obtain w>=0 and scale>0 with
+
+  w <= scale*(x+epsilon).
+
+Then x>=0. Indeed, were x<0, choose epsilon=-x/2; the right side is strictly
+negative. An exact decomposition w=scale*x+residual and the one-sided bound
+residual<=scale*epsilon suffice. No uniform positive lower bound on scale
+is needed, provided the error is controlled relative to that same scale.
+This is a generic order lemma, not zeta positivity disguised as an assumption.
+The zeta consumer keeps the entire extraction supplier explicit.
+
+A finite test can also exclude a specific hypothetical off-line zero:
+
+  w = scale*H_2(a,t)+residual >= 0,
+  scale>0, residual < 16*scale*a^4.
+
+Substitution makes w<0. Thus one adequately sharp source test per hypothetical
+off-line zero is sufficient. Constructing that test on the actual zeta source
+remains open. Generic positive matrices and arbitrary choices of w do not
+supply the required decomposition or residual estimate.
+
+The loss of a scale condition is genuinely dangerous. For x=-1, take
+scale_n=1/(n+1), residual_n=1/(n+1), w_n=0. Both scale_n and residual_n tend
+to zero and w_n is nonnegative, yet x<0. The relative residual stays 1.
+Likewise a positive total (-1)+2 does not make its first component positive.
+
+3. Canonical source reuse and the root
+
+The candidate orbit module reuses NontrivialZetaZero and the existing
+conjugation/reflection zero-transport declarations. Its coordinate map is
+frequency(s)=-I*(s-1/2). Applied in the order criticalReflection(s),s,
+zeroReflect(s),zeroConjugate(s), it gives precisely R(s.re-1/2,s.im).
+This closes only a coordinate/orbit-membership interface at candidate level.
+It does not establish analytic multiplicities, divisor divisibility or
+localization of a spectral contribution. Degenerate list weights stay explicit.
+
+The candidate quartic consumer uses the existing exact zero predicate and
+proves the proposed equivalence to _root_.RiemannHypothesis, not a replacement
+definition. Relative-error and finite-residual consumers remain conditional.
+The height module uses natural-number induction and Archimedean exhaustion;
+it constructs no zeta HeightScheme. The contracts reference the existing P04
+consumer directly rather than giving it a duplicate named wrapper.
+
+P04 is source-bound to MertensPrimitive.lean: there exist real C,r>=0,
+uniformly in every real T>=0, with pickupCross T <= C*(1+T)^r. The real
+exponent, ordered signed cross terms and closed floor(exp T) cutoff remain
+unchanged. The inspected uniform-supplier obstruction is retained at its
+stated written-argument level; it has not been Lean-replayed here. No rejected
+independent-cutoff/horizon supplier was silently reused.
+
+4. Actual verification and scope limits
+
+The new verifier completed 159 exact checks in normal Python and again under
+-O: 18 symbolic identities, 125 Gaussian-rational evaluations and 16 hostile
+controls. The two full reports are identical. This does not replay the absent
+original package or its claimed 33 tests. Assertions are not used as gates.
+The Fraction-based Gaussian evaluator is a separate code path, not an
+independent reviewer or separate formal acceptance profile.
+
+The native probes could not find lean, lake or elan. The direct Git remote
+probe failed DNS. Connected GitHub reads and writes are separately available.
+Native compilation, elaborated contract export, complete owned/transitive
+source-policy auditing, full repository layout/documentation checks, target
+fingerprint comparison in a checker environment and independent replay are
+NOT_RUN. A source inspection and declaration-specific axiom-print driver are
+not substitutes. There is no unconditional root candidate to promote.
+
+Candidates are retained as .lean.txt evidence under their mathematical
+objects, matching the repository's existing inert quartic-intake approach.
+They are not added to GRWTSK.lean or silently admitted to the active library.
+The campaign manifest gives intended canonical .lean destinations for a
+subsequent authorized pinned replay. No toolchain or package pin is upgraded.
+Full source admission must also run the repository's layout, documentation,
+contract and owned-declaration checks. No workflow or external service is
+created in this run.
+
+5. Resume cursor
+
+First obtain the unchanged pinned native environment and selected dependency
+closure; stage the retained candidates at their declared mathematical paths,
+compile imports in order, and run the repository's actual trust-zero, fatal-
+warning, owned-declaration and contract checks. Preserve every diagnostic.
+The print-axioms contracts here are supplementary, not that complete audit.
+
+In parallel, prioritize a concrete admissible arithmetic/zeta functional with
+proved nonnegativity and a source-identified one-sided relative residual
+estimate. The finite threshold is 16*scale*(Re(s)-1/2)^4. Multiplicity-aware
+orbit extraction and all limiting operations remain obligations. Alternative
+routes remain open: construct the literal PickupCrossPoly witness, or give
+a total source-sound all-height induction. One complete checked route suffices;
+no requirement to finish the other speculative routes is introduced.
