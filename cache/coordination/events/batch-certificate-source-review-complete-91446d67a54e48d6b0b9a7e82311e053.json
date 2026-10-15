@@ -1,0 +1,23 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "joint-graph-source-scout",
+  "event": "completion",
+  "status": "complete-bounded-correlated-source-review",
+  "at": "2026-10-15T18:32:12.592709+00:00",
+  "evidence": "evidence/Logic/FiniteSequences/batch-certificate-source-review-2026-10-15.json",
+  "sha256": "6d1d1465fdaa3fa261d9ecf909987616cb0996c0dec2748816a55518d050cd72",
+  "bytes": 14101,
+  "all_six_final_hashes_match": true,
+  "selected_upstream_text_matches": {
+    "jointGraph": true,
+    "exists_solution_of_core_estimate": true
+  },
+  "finding": "No actionable omission found. Full-history evidence is explicitly required; old length0 evidence fails append. JointGraph density is actual simultaneous subtype density, not separate projections or an empty sample.",
+  "primary_arxiv_version": "1507.00562v1",
+  "anthropic_pin": "e1a4e6508154ea59f030480661590a9fe3018011",
+  "native_replay_by_this_task": "NOT_RUN",
+  "independent_review": false,
+  "pending": "Separately root-owned fresh native audits, source/doc/cache integration and concrete supplier/runtime refinement premises.",
+  "source_or_shared_metadata_edits": false,
+  "commit_or_remote_effect": false
+}

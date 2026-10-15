@@ -29,6 +29,10 @@ does not permit substitution of packed values, byte identities or numeric
 references. The negative consumer attempts precisely this invalid inference
 and must fail with one intended type mismatch.
 
+[Batch certificates](batch-certificate.md) reuse a supplied semantic proof
+across these representations when it covers the complete appended history.
+An old history's certificate alone does not establish a predicate after append.
+
 ## Sources, verification and limits
 
 The [source](../../../../GRWTSK/Logic/FiniteSequences/IncrementalComposition.lean)

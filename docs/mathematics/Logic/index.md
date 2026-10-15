@@ -4,16 +4,16 @@
 
 | Inventory | Count |
 |---|---:|
-| Object guides | 9 |
+| Object guides | 10 |
 | Documented object groups | 3 |
-| Distinct primary sources linked | 9 |
-| Lean source modules | 62 |
+| Distinct primary sources linked | 10 |
+| Lean source modules | 65 |
 | Archive intake records | 3 |
 | Selected catalog families | 0 |
 
 These counts measure documentation and source coverage. They do not count accepted theorems or establish that every source module is documented or checked. [Definitions and limits](../../reference/library-pages.md#count-definitions).
 
-At least 549 source declaration commands, including 291 theorem/lemma commands, across 57 parsed Lean source modules; 5 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
+At least 556 source declaration commands, including 296 theorem/lemma commands, across 60 parsed Lean source modules; 5 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
 
 ## FiniteCoverage
 
@@ -25,10 +25,11 @@ Linked primary-source scope: 4 source declaration commands, including 4 theorem/
 
 ## FiniteSequences
 
-7 object guides · 7 distinct linked primary source files.
+8 object guides · 8 distinct linked primary source files.
 
-Linked primary-source scope: 81 source declaration commands, including 63 theorem/lemma commands, across 7 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+Linked primary-source scope: 88 source declaration commands, including 68 theorem/lemma commands, across 8 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
+- [Certificates for incrementally decoded batches](FiniteSequences/batch-certificate.md).
 - [Composition of incremental dictionary decoding](FiniteSequences/incremental-composition.md).
 - [Exact indexed dictionaries](FiniteSequences/indexed-dictionary.md).
 - [Exact ordered history extensions](FiniteSequences/append-only-history.md).
