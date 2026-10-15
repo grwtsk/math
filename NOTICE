@@ -314,3 +314,38 @@ normalization is the forward exp(-2*pi*i*x*t) convention. Generic transfer
 has no compactness premise; actual log-window density, physical/arithmetic
 and RH suppliers remain separate. No novelty, whole-library or operational
 cache-refinement acceptance is inferred.
+
+Entire Gaussian logarithmic flow and compact logarithmic-window density
+---------------------------------------------------------------------
+GRWTSK/Analysis/MellinTransform/GaussianLogFlow.lean and
+GRWTSK/Analysis/MellinTransform/GaussianLogWindow.lean retain Apache-2.0.
+Definitions and exact proof slices are adapted from
+openai/math@1581d4cbdd69a0faf34b2089614fe2a814316a6a,
+lean/OAI/NumberTheory/DirichletL/Detector/GaussianFlow.lean
+(raw SHA256 86398c70748f960142fac626a425eed4d91623fd4b8a894746c1916126ebf975,
+Git blob 53be336efd7cc551c43856181a7d2dc215eeb041),
+GaussianLogWindow.lean
+(raw SHA256 e508f509619ab460fd408a82752c3d2694af63fcc8e6a5ec01d9b31910945d02,
+Git blob 34719c10e7a8026457efaff0acc61de7a530a8eb), and the actual density
+definition from GaussianCoupled.lean
+(raw SHA256 21a6117120a386823e2f596b2b5e2e52e7cf4ffebddffac10de8ed320ba9cb5e,
+Git blob 570522241d9ec0d34f26a634c7b5784c332503e8).
+OpenAI remains the upstream project author; no individual author was present
+in those source headers. See LICENSES/OpenAI-Apache-2.0.txt. Upstream Lean
+4.34.1 differs from the local pinned4.33.0; exact selected local replays
+supply admission. Compact support-box production, actual integrability,
+positive-profile identity and obstruction controls are explicit local
+formalization contributions. Coupled separation/cutoff and physical/arithmetic
+suppliers are not imported or accepted by this slice.
+Mathlib Analysis/Complex/Liouville.lean retains copyright (c) 2022
+Yury Kudryashov, author Yury Kudryashov. Topology/Algebra/Support.lean retains
+copyright (c) 2022 Floris van Doorn, authors Floris van Doorn and Patrick Massot.
+Topology/MetricSpace/Bounded.lean retains copyright (c) 2015 Jeremy Avigad,
+authors Jeremy Avigad, Robert Y. Lewis, Johannes Hölzl, Mario Carneiro and
+Sébastien Gouëzel. Quiver/Basic.lean retains copyright (c) 2021 David Wärn,
+authors David Wärn and Kim Morrison; Quiver/Path.lean authors also include
+Matteo Cipollina and Runtian Zhou. Data/Fin/Basic.lean retains copyright
+(c) 2017 Robert Y. Lewis, authors Robert Y. Lewis and Keeley Hoek. All retain
+Apache-2.0. Prior Gaussian, Fourier, Schwartz and derivative credits remain.
+Human direction: grwtsk contributors; adaptation/formalization/checking:
+OpenAI Codex. Correlated model review is not independent validation.

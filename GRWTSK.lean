@@ -379,3 +379,6 @@ import GRWTSK.Analysis.MellinTransform.GaussianRemoteSeminorms
 import GRWTSK.Combinatorics.DirectedGraph.PrefixTableCompaction
 import GRWTSK.Analysis.Fourier.SchwartzMoments
 import GRWTSK.Analysis.MellinTransform.GaussianFourierMoments
+import GRWTSK.Combinatorics.DirectedGraph.RoleRelationTable
+import GRWTSK.Analysis.MellinTransform.GaussianLogFlow
+import GRWTSK.Analysis.MellinTransform.GaussianLogWindow

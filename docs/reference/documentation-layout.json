@@ -3634,10 +3634,37 @@
       "source_sha256": "56f14b355aeb0b89e30457cc6b7f8be887fd288e2caf3643907481f32171d86a",
       "status": "fresh-selected",
       "evidence": "evidence/Analysis/MellinTransform/gaussian-fourier-moments-checks-2026-10-15.json"
+    },
+    "docs/mathematics/Combinatorics/DirectedGraph/role-relation-table.md": {
+      "title": "Role-qualified finite relation tables and typed histories",
+      "subject": "Combinatorics",
+      "object": "DirectedGraph",
+      "primary_source": "GRWTSK/Combinatorics/DirectedGraph/RoleRelationTable.lean",
+      "source_sha256": "52940e0c878e9d9329e74455da71dc829d643b629c8997332e8a70e458abb7b2",
+      "status": "fresh-selected",
+      "evidence": "evidence/Combinatorics/DirectedGraph/role-relation-table-checks-2026-10-15.json"
+    },
+    "docs/mathematics/Analysis/MellinTransform/gaussian-log-flow.md": {
+      "title": "Entire Gaussian flow in logarithmic coordinates",
+      "subject": "Analysis",
+      "object": "MellinTransform",
+      "primary_source": "GRWTSK/Analysis/MellinTransform/GaussianLogFlow.lean",
+      "source_sha256": "eab5f54194b6eaf1589a902c0bfa38589c04de460c45cfb9405d31d458f81013",
+      "status": "fresh-selected",
+      "evidence": "evidence/Analysis/MellinTransform/gaussian-log-window-checks-2026-10-15.json"
+    },
+    "docs/mathematics/Analysis/MellinTransform/gaussian-log-window.md": {
+      "title": "Compact logarithmic Gaussian windows and Fourier density moments",
+      "subject": "Analysis",
+      "object": "MellinTransform",
+      "primary_source": "GRWTSK/Analysis/MellinTransform/GaussianLogWindow.lean",
+      "source_sha256": "258fdbb7e3517ae4f30db165e9281ceb2c80d595d5a891523131c365c6ae1550",
+      "status": "fresh-selected",
+      "evidence": "evidence/Analysis/MellinTransform/gaussian-log-window-checks-2026-10-15.json"
     }
   },
   "object_binding_registry": "docs/reference/object-source-bindings.json",
-  "object_binding_registry_sha256": "60e986013e5895f8bbd8fe252d9d64bfc0ee45f14e9fa8bd6729927c11141016",
+  "object_binding_registry_sha256": "dc48d88ebec89423ef0097e06ad008d7a79f4de0b3f5b9db92733e8cd57dc210",
   "navigation": {
     "schema": "subject-index-navigation-v1",
     "summary": "docs/reference/library-summary.json"

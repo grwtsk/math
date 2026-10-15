@@ -1,0 +1,27 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "role-logwindow-source-scout",
+  "owner": "cache_taxonomy",
+  "at": "2026-10-15T22:46:01.066821+00:00",
+  "kind": "primary-source-context-ready",
+  "context": {
+    "path": ".local/role-logwindow-source-scout/76336098be2f412e9e9fd4516b7705bf/review-context.json",
+    "sha256": "8c1e9dc3b36189f14cb2b8e0f81dd34043d4089335bd12386b9f452095e1db35",
+    "bytes": 21618
+  },
+  "primary_manifest": {
+    "path": ".local/role-logwindow-source-scout/76336098be2f412e9e9fd4516b7705bf/primary-manifest.json",
+    "sha256": "6da35857c2ba7c20c5c5021ed5e761f7b9ca7191a86c235363582993cc734acd",
+    "bytes": 3836
+  },
+  "status": "NOT_RUN",
+  "review_character": "Correlated same-team exact-source/premise/credit review, not independent validation; native NOT_RUN. Frozen local sources not yet bound.",
+  "findings": [
+    "Primary OpenAI entire flow is analytic for every totalized real R; real profile identity/rpow estimates need R>0. Positive R omission control must prove actual formula mismatch; no false R0 nonsmoothness claim.",
+    "Compact log-window V*flow is a Schwartz object for every R because V is compact and actual flow smooth. Uniform estimates have positive R and actual support box; a missing box does not show total function nonsmooth.",
+    "Full finite source-pairs through J+p and actual Integrable Fourier norm moment are needed; exact forward Fourier convention exp(-2πi*x*frequency) retained.",
+    "Actual Anthropic weighted path/walk bridge is endpoint-pair Optionℤ graph, not a parallel role-ID quiver: no direct codec theorem correspondence or acceptance transfer.",
+    "Existing operational duplicate-edge guard must remain; parallel ID fixture can be mathematical without being an admitted taxonomy. Equal hash strings are not proved equal table contents."
+  ],
+  "preservation": "No shared source/docs/registries/native/Git/remote writes. Prior failed/stale receipts, incoming custody/NOT_RUN and historical source gaps unchanged."
+}

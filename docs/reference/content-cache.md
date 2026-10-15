@@ -225,6 +225,15 @@ removed; stale old references can decode empty histories. The
 retains the root, order, repetitions and explicit certificate criterion.
 It proves no byte-optimality or operational cache implementation refinement.
 
+The [finite relation-table codec](../mathematics/Combinatorics/DirectedGraph/role-relation-table.md)
+now qualifies actual table indices by role and relates them to actual typed
+edges and full ordered rooted histories. The
+[role-qualified codec decision](../../cache/decisions/role-relation-codec-v1.json)
+records the fixed-table premises, actual compaction consumer and boundary:
+no cross-revision index stability or operational parser correspondence is
+inferred. Parallel IDs in the mathematical fixture leave the existing
+operational duplicate-edge guard unchanged.
+
 See [cache operations](../how-to/cache.md), the
 [taxonomy](../../cache/taxonomy.json), and the
 [integration evidence](../../evidence/Logic/FiniteSequences/cache-integration-2026-10-15.json).
