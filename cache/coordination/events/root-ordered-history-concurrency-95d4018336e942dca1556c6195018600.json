@@ -1,0 +1,46 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "ordered-history-integration",
+  "actor": "root",
+  "at": "2026-10-15T17:30:43.127217+00:00",
+  "event": "concurrent-documentation-work-observed",
+  "paths": [
+    {
+      "path": "docs/explanation/documentation.md",
+      "state": "modified; concurrent and preserved",
+      "sha256": "70f4edb793b9fabcec71f0e556b231d9cea4d8e564562f6f2e77434e95f49c80",
+      "retained": ".local/ordered-history/root/concurrent-e535e4e8809c43bdb8372562b9c094d9/docs/explanation/documentation.md"
+    },
+    {
+      "path": "docs/reference/library-pages.md",
+      "state": "modified; concurrent and preserved",
+      "sha256": "265a88cd0f33b60a49b7a7a24bbb11fe8385169d72d0a2564b948b14407c834d",
+      "retained": ".local/ordered-history/root/concurrent-e535e4e8809c43bdb8372562b9c094d9/docs/reference/library-pages.md"
+    },
+    {
+      "path": "scripts/check_documentation.py",
+      "state": "modified; concurrent and preserved",
+      "sha256": "2468c81e3f6688a9076e8ac7e876f3b91c7772802b601ac2897f9adc7dc22fe8",
+      "retained": ".local/ordered-history/root/concurrent-e535e4e8809c43bdb8372562b9c094d9/scripts/check_documentation.py"
+    },
+    {
+      "path": "scripts/check_documentation_layout.py",
+      "state": "modified; concurrent and preserved",
+      "sha256": "0b1a9809cbb1cd6d88b19a947f2a9875dfeb45ca17e3f0866f11e9a5ff029917",
+      "retained": ".local/ordered-history/root/concurrent-e535e4e8809c43bdb8372562b9c094d9/scripts/check_documentation_layout.py"
+    },
+    {
+      "path": "scripts/documentation_indexes.py",
+      "state": "modified; concurrent and preserved",
+      "sha256": "9265f65915ec6d42916df3f7f50d3f2be522ec18f728f1cf5f130f9107668d3b",
+      "retained": ".local/ordered-history/root/concurrent-e535e4e8809c43bdb8372562b9c094d9/scripts/documentation_indexes.py"
+    },
+    {
+      "path": "scripts/test_documentation_layout.py",
+      "state": "modified; concurrent and preserved",
+      "sha256": "1accb9e5cae3309ead1d187bc1e355e060a043695797605dc2c74bd7e006a6b9",
+      "retained": ".local/ordered-history/root/concurrent-e535e4e8809c43bdb8372562b9c094d9/scripts/test_documentation_layout.py"
+    }
+  ],
+  "policy": "Preserve these concurrent files and do not stage their code/docs as owned work. Shared registries/navigation are reconciled by exact preimage checks; no blanket hold or source-hash rebinding."
+}
