@@ -60,3 +60,22 @@ Status: **fresh-selected**. [Verification receipt](../../../../evidence/Analysis
 [credit and evidence limits](../../../reference/documentation-history.md).
 The receipt covers the finite theorem and a separate consumer under the pinned
 compiler with trust zero, fatal warnings, and an owned-declaration axiom audit.
+
+<!-- BEGIN GENERATED MATHEMATICS TOTALS -->
+
+## Totals
+
+Scope: this object guide and the current bytes of its registered primary source [`GRWTSK/Analysis/Integration/ExponentialVolterraL2.lean`](../../../../GRWTSK/Analysis/Integration/ExponentialVolterraL2.lean).
+
+| Inventory | Total |
+|---|---:|
+| Object guide | 1 |
+| Linked primary source file | 1 |
+| Source declaration commands | 4 |
+| Theorem/lemma commands | 3 |
+
+Theorem/lemma commands are included in declaration commands. These are source syntax counts; compiler-generated declarations and proof acceptance are outside their scope.
+
+[Count definitions](../../../reference/library-pages.md#count-definitions) · [Structured inventory](../../../reference/library-summary.json).
+
+<!-- END GENERATED MATHEMATICS TOTALS -->

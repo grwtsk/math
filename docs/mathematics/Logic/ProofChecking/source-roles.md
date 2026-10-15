@@ -25,3 +25,22 @@ or unavailable dependency does not count as a mathematical rejection.
 See the [source-layout reference](../../../reference/source-layout.md) and the
 [current consolidation report](../../../reference/lean-consolidation-report.md).
 
+
+<!-- BEGIN GENERATED MATHEMATICS TOTALS -->
+
+## Totals
+
+Scope: this object guide and the current bytes of its registered primary source [`GRWTSK/Logic/ProofChecking/RepositoryConformance.lean`](../../../../GRWTSK/Logic/ProofChecking/RepositoryConformance.lean).
+
+| Inventory | Total |
+|---|---:|
+| Object guide | 1 |
+| Linked primary source file | 1 |
+| Source declaration commands | 19 |
+| Theorem/lemma commands | 6 |
+
+Theorem/lemma commands are included in declaration commands. These are source syntax counts; compiler-generated declarations and proof acceptance are outside their scope.
+
+[Count definitions](../../../reference/library-pages.md#count-definitions) · [Structured inventory](../../../reference/library-summary.json).
+
+<!-- END GENERATED MATHEMATICS TOTALS -->

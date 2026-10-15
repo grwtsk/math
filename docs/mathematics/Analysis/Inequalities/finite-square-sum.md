@@ -35,3 +35,22 @@ recorded in the header and repository `NOTICE`. Human project direction:
 grwtsk contributors. Adaptation and checking assistance: OpenAI Codex.
 Mathlib retains its authorship and licensing. The inequality is classical;
 the port does not establish a surrounding circuit lower bound or an RH supplier.
+
+<!-- BEGIN GENERATED MATHEMATICS TOTALS -->
+
+## Totals
+
+Scope: this object guide and the current bytes of its registered primary source [`GRWTSK/Analysis/Inequalities/FiniteSquareSum.lean`](../../../../GRWTSK/Analysis/Inequalities/FiniteSquareSum.lean).
+
+| Inventory | Total |
+|---|---:|
+| Object guide | 1 |
+| Linked primary source file | 1 |
+| Source declaration commands | 1 |
+| Theorem/lemma commands | 1 |
+
+Theorem/lemma commands are included in declaration commands. These are source syntax counts; compiler-generated declarations and proof acceptance are outside their scope.
+
+[Count definitions](../../../reference/library-pages.md#count-definitions) · [Structured inventory](../../../reference/library-summary.json).
+
+<!-- END GENERATED MATHEMATICS TOTALS -->

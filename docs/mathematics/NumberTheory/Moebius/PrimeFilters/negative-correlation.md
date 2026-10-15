@@ -25,3 +25,22 @@ The radical sum before the exponential is strictly below $-1/3$; $e^{-u/2}\le1/\
 [Source](../../../../../GRWTSK/NumberTheory/Moebius/NegativePrimeCorrelation.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../../reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
 
 The current import-only repair passed source elaboration at trust zero with fatal warnings. The statements, hypotheses and proof text are unchanged. Complete current owned-declaration auditing and affected-consumer acceptance remain pending; the historical status above is retained.
+
+<!-- BEGIN GENERATED MATHEMATICS TOTALS -->
+
+## Totals
+
+Scope: this object guide and the current bytes of its registered primary source [`GRWTSK/NumberTheory/Moebius/NegativePrimeCorrelation.lean`](../../../../../GRWTSK/NumberTheory/Moebius/NegativePrimeCorrelation.lean).
+
+| Inventory | Total |
+|---|---:|
+| Object guide | 1 |
+| Linked primary source file | 1 |
+| Source declaration commands | 8 |
+| Theorem/lemma commands | 8 |
+
+Theorem/lemma commands are included in declaration commands. These are source syntax counts; compiler-generated declarations and proof acceptance are outside their scope.
+
+[Count definitions](../../../../reference/library-pages.md#count-definitions) · [Structured inventory](../../../../reference/library-summary.json).
+
+<!-- END GENERATED MATHEMATICS TOTALS -->

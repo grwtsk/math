@@ -13,6 +13,8 @@
 
 These counts measure documentation and source coverage. They do not count accepted theorems or establish that every source module is documented or checked. [Definitions and limits](../../reference/library-pages.md#count-definitions).
 
+70 source declaration commands, including 43 theorem/lemma commands, across 5 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+
 Object guides have not yet been written for this area. The source folder remains available; source presence is not proof acceptance.
 
 ## Sources and verification

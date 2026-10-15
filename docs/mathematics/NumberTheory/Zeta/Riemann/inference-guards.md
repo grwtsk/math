@@ -27,3 +27,22 @@ The reusable [complex reflection result](../../../Analysis/Complex/CriticalRefle
 Three original guard proofs use canonical dependencies, while four synthetic audit wrappers exercise the guard theorems. The wrappers are verification fixtures. No external original proof consumer of these four guards has been verified. The scoped check preserves all 30 compared declaration types and the source proof text; the Hermitian proof's elaborated value differs only in 32 local binder names associated with its source module.
 
 Local direction: grwtsk contributors. Formalization and verification assistance: OpenAI Codex. MIT; historical human/machine authoring split unknown. Lean and Mathlib retain upstream identities, named authors and licenses. No mathematical originality is claimed. [Credit and historical evidence limits](../../../../reference/documentation-history.md).
+
+<!-- BEGIN GENERATED MATHEMATICS TOTALS -->
+
+## Totals
+
+Scope: this object guide and the current bytes of its registered primary source [`GRWTSK/NumberTheory/Zeta/Riemann/ZeroDefinitions.lean`](../../../../../GRWTSK/NumberTheory/Zeta/Riemann/ZeroDefinitions.lean).
+
+| Inventory | Total |
+|---|---:|
+| Object guide | 1 |
+| Linked primary source file | 1 |
+| Source declaration commands | 4 |
+| Theorem/lemma commands | 0 |
+
+Theorem/lemma commands are included in declaration commands. These are source syntax counts; compiler-generated declarations and proof acceptance are outside their scope.
+
+[Count definitions](../../../../reference/library-pages.md#count-definitions) · [Structured inventory](../../../../reference/library-summary.json).
+
+<!-- END GENERATED MATHEMATICS TOTALS -->

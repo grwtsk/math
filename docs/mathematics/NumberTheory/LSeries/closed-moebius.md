@@ -20,3 +20,22 @@ All ordered factors, squareful outputs and signs remain present. The complete cl
 ## Sources and evidence
 
 [Truncated series](../../../../GRWTSK/NumberTheory/LSeries/TruncatedMoebiusSeries.lean) and [entire closed polynomial](../../../../GRWTSK/NumberTheory/LSeries/ClosedMoebiusPolynomial.lean) have a separate [public consumer receipt](../../../../evidence/NumberTheory/LSeries/density-series-checks.json). It reuses only unchanged source-bound arithmetic dependencies already publicly checked, and freshly replays the series consumers with literal contracts, owned bodies and transitive axioms. Counts for the reused dependencies are not counted as new proofs. Neither identity supplies P04, P05, original absolute MB6 or RH; all remain open.
+
+<!-- BEGIN GENERATED MATHEMATICS TOTALS -->
+
+## Totals
+
+Scope: this object guide and the current bytes of its registered primary source [`GRWTSK/NumberTheory/LSeries/ClosedMoebiusPolynomial.lean`](../../../../GRWTSK/NumberTheory/LSeries/ClosedMoebiusPolynomial.lean).
+
+| Inventory | Total |
+|---|---:|
+| Object guide | 1 |
+| Linked primary source file | 1 |
+| Source declaration commands | 5 |
+| Theorem/lemma commands | 5 |
+
+Theorem/lemma commands are included in declaration commands. These are source syntax counts; compiler-generated declarations and proof acceptance are outside their scope.
+
+[Count definitions](../../../reference/library-pages.md#count-definitions) · [Structured inventory](../../../reference/library-summary.json).
+
+<!-- END GENERATED MATHEMATICS TOTALS -->

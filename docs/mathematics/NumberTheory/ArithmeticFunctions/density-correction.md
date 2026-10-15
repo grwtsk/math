@@ -72,3 +72,22 @@ A_\nu(x)=\sum_{d\le\lfloor x\rfloor}\frac{\gamma(d)}d A_\mu(x/d),
 The Möbius bound includes all real cutoffs below one as the empty prefix. It uses the complete finite divisor regrouping and fractional-part identity, without an RH or PNT hypothesis. The closed coprime quadratic form also equals its complete signed common-divisor rows; it is indefinite and retains every ordered term. [Moebius reciprocal prefix](../../../../GRWTSK/NumberTheory/ArithmeticFunctions/MoebiusReciprocalPrefix.lean), [density prefix](../../../../GRWTSK/NumberTheory/ArithmeticFunctions/DensityReciprocalPrefix.lean), and [complete coprime form](../../../../GRWTSK/NumberTheory/ArithmeticFunctions/CoprimeReciprocalForm.lean) are included in the scoped public receipt. Boundedness is not a decay rate.
 
 The touching divisible prime row equals \(-1/(p+1)\); this rules out a uniform \(C/p^2\) row estimate over all primes. It does not refute a complete Möbius pickup budget. P04, P05, original absolute MB6 and RH remain open. These positive correction moments do not supply the required complete signed arithmetic cancellation.
+
+<!-- BEGIN GENERATED MATHEMATICS TOTALS -->
+
+## Totals
+
+Scope: this object guide and the current bytes of its registered primary source [`GRWTSK/NumberTheory/ArithmeticFunctions/DensityMomentTails.lean`](../../../../GRWTSK/NumberTheory/ArithmeticFunctions/DensityMomentTails.lean).
+
+| Inventory | Total |
+|---|---:|
+| Object guide | 1 |
+| Linked primary source file | 1 |
+| Source declaration commands | 9 |
+| Theorem/lemma commands | 7 |
+
+Theorem/lemma commands are included in declaration commands. These are source syntax counts; compiler-generated declarations and proof acceptance are outside their scope.
+
+[Count definitions](../../../reference/library-pages.md#count-definitions) · [Structured inventory](../../../reference/library-summary.json).
+
+<!-- END GENERATED MATHEMATICS TOTALS -->

@@ -18,3 +18,22 @@ receipt does not certify the present split module.
 Human mathematical direction: grwtsk contributors; OpenAI Codex assistance; classical estimates and direct Mathlib origins retained. Local MIT, Mathlib Apache-2.0; no originality claim.
 
 The source binding was updated after history integration. Earlier proof receipts retain their original bytes; this page does not assert fresh acceptance of the updated source.
+
+<!-- BEGIN GENERATED MATHEMATICS TOTALS -->
+
+## Totals
+
+Scope: this object guide and the current bytes of its registered primary source [`GRWTSK/Analysis/Asymptotics/PolynomialErrorBound.lean`](../../../../GRWTSK/Analysis/Asymptotics/PolynomialErrorBound.lean).
+
+| Inventory | Total |
+|---|---:|
+| Object guide | 1 |
+| Linked primary source file | 1 |
+| Source declaration commands | 1 |
+| Theorem/lemma commands | 1 |
+
+Theorem/lemma commands are included in declaration commands. These are source syntax counts; compiler-generated declarations and proof acceptance are outside their scope.
+
+[Count definitions](../../../reference/library-pages.md#count-definitions) · [Structured inventory](../../../reference/library-summary.json).
+
+<!-- END GENERATED MATHEMATICS TOTALS -->

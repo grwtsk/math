@@ -511,3 +511,22 @@ from the [direct finite-response reduction](Energy/damped-tails.md).
 A new zero-free supplier strictly to the left of $5/6$, with the corresponding
 quantitative transfer, would be another route; no such supplier is claimed.
 Neither P04 nor an RH premise is added. No RH proof is claimed.
+
+<!-- BEGIN GENERATED MATHEMATICS TOTALS -->
+
+## Totals
+
+Scope: this object guide and the current bytes of its registered primary source [`GRWTSK/NumberTheory/Moebius/LogarithmicMertensBoundary.lean`](../../../../GRWTSK/NumberTheory/Moebius/LogarithmicMertensBoundary.lean).
+
+| Inventory | Total |
+|---|---:|
+| Object guide | 1 |
+| Linked primary source file | 1 |
+| Source declaration commands | 20 |
+| Theorem/lemma commands | 18 |
+
+Theorem/lemma commands are included in declaration commands. These are source syntax counts; compiler-generated declarations and proof acceptance are outside their scope.
+
+[Count definitions](../../../reference/library-pages.md#count-definitions) · [Structured inventory](../../../reference/library-summary.json).
+
+<!-- END GENERATED MATHEMATICS TOTALS -->
