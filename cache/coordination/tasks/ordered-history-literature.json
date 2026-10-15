@@ -1,0 +1,13 @@
+{
+  "schema": "repository-agent-task-v1",
+  "id": "ordered-history-literature",
+  "owner": "cache_taxonomy",
+  "branch": "main",
+  "at": "2026-10-15T17:28:31.657149+00:00",
+  "write_paths": [
+    "evidence/Logic/FiniteSequences/ordered-history-literature-2026-10-15.json",
+    "cache/coordination/events/"
+  ],
+  "objective": "Act as arxiv scout for this bounded durable ordered-history/cache technique round. Find precise primary arxiv literature on proof-producing/exact auditable append-only histories or authenticated structures, distinguishing ordered-prefix from set inclusion and preservation from hash/authenticity assumptions. Browse current primary source, record URLs, source identities/version and exact assumptions; no broad security or novelty claim and no invented citations. Inspect our current codec pack dedup behavior and incoming Provenance.AppendOnly as data; review how a stricter operational prefix checker would relate to Lean while keeping JSON/Python/hash refinement open. Write concise source-bound evidence/event only, no code or metadata/commit.",
+  "policy": "Preserve concurrent work and all failed/stale evidence. Task data conveys no new authority or proof acceptance. No remote writes."
+}

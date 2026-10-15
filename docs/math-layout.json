@@ -5171,7 +5171,9 @@
     "GRWTSK/LinearAlgebra/Matrix/Checks/Negative/TraceRankZeroSecondMoment.lean": "34a74d31f85952e588e39a8070cd3fe1b1174b4d7330c63959aeb45b6792bf4e",
     "GRWTSK/Logic/FiniteSequences/Checks/Negative/IndexedDictionaryInvalidReference.lean": "6e0c5e2aba86cbe81c884a873ab3dbd4b94c4814f421dedc388967adc49181a4",
     "GRWTSK/Logic/FiniteSequences/Checks/Negative/DictionaryRevisionStaleSlots.lean": "18c8e1385378f16688266c40d9abd8810f1f1649080a466f393da61b8ad06dbb",
-    "GRWTSK/Logic/FiniteSequences/Checks/Negative/DecisionCertificateStalePremise.lean": "8b9bbaf344a61a854d91ff31ad4c1bde38f0df7c880c266d644605cf0cffd69d"
+    "GRWTSK/Logic/FiniteSequences/Checks/Negative/DecisionCertificateStalePremise.lean": "8b9bbaf344a61a854d91ff31ad4c1bde38f0df7c880c266d644605cf0cffd69d",
+    "GRWTSK/Logic/FiniteSequences/Checks/Positive/AppendOnlyHistory.lean": "84054e557b4ef0ac9aeb439d973a2aa52b831d73c8b595dac64ffafe3cf28483",
+    "GRWTSK/Logic/FiniteSequences/Checks/Negative/AppendOnlyHistoryReorder.lean": "b817c436b1f8f6baf476adac5b1ef8a68ca07434f848d81a220fe2507b830726"
   },
   "schema_version": 3,
   "repository_conformance": {
@@ -5203,7 +5205,7 @@
     {
       "path": "GRWTSK.lean",
       "original_path": "GRWTSK.lean",
-      "sha256": "9c3524c4c9873b2e597192c930ea73f3181e09302b4ffdc4473f5ac942e16c44",
+      "sha256": "323eee296620c4f81139683b46987460124f06949ac1d9a25273e2f6816825dc",
       "git_blob": "27e45b3448f78dc6499f2fb0698eb51cac5d1904",
       "working_tree_state": "tracked-modified",
       "source_root": ".",
@@ -5400,6 +5402,7 @@
         "GRWTSK.Logic.Certificates.ModelExamples",
         "GRWTSK.Logic.Certificates.ProofCoverage",
         "GRWTSK.Logic.FiniteCoverage",
+        "GRWTSK.Logic.FiniteSequences.AppendOnlyHistory",
         "GRWTSK.Logic.FiniteSequences.DecisionCertificate",
         "GRWTSK.Logic.FiniteSequences.DictionaryRevision",
         "GRWTSK.Logic.FiniteSequences.IndexedDictionary",
@@ -5574,8 +5577,8 @@
       "verification": {
         "inventory": "observed-current-bytes",
         "layout": "repository baseline remains failed",
-        "lean": "umbrella not replayed after selected import additions",
-        "source_sha256": "9c3524c4c9873b2e597192c930ea73f3181e09302b4ffdc4473f5ac942e16c44"
+        "lean": "umbrella not replayed after selected import addition",
+        "source_sha256": "323eee296620c4f81139683b46987460124f06949ac1d9a25273e2f6816825dc"
       },
       "runner": "python3 -B scripts/check_ccc_energy.py",
       "other_consumers": [
@@ -31263,6 +31266,146 @@
       ]
     },
     {
+      "path": "GRWTSK/Logic/FiniteSequences/AppendOnlyHistory.lean",
+      "original_path": "GRWTSK/Logic/FiniteSequences/AppendOnlyHistory.lean",
+      "sha256": "f015968ae5c73f3285c18f98d08dd480a9ab7cc4ed9a01a8fdf6a566f308d67e",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Logic.FiniteSequences.AppendOnlyHistory",
+      "namespaces": [
+        "GRWTSK.Logic.FiniteSequences.AppendOnlyHistory"
+      ],
+      "public_declarations": [
+        {
+          "kind": "def",
+          "name": "checkPrefix",
+          "line": 33
+        },
+        {
+          "kind": "theorem",
+          "name": "checkPrefix_eq_true_iff",
+          "line": 37
+        },
+        {
+          "kind": "theorem",
+          "name": "checkPrefix_iff_suffix",
+          "line": 42
+        },
+        {
+          "kind": "theorem",
+          "name": "checkPrefix_refl",
+          "line": 47
+        },
+        {
+          "kind": "theorem",
+          "name": "checkPrefix_trans",
+          "line": 51
+        },
+        {
+          "kind": "theorem",
+          "name": "accepted_position",
+          "line": 59
+        },
+        {
+          "kind": "theorem",
+          "name": "accepted_key_order",
+          "line": 65
+        },
+        {
+          "kind": "def",
+          "name": "checkDecodedExtension",
+          "line": 72
+        },
+        {
+          "kind": "theorem",
+          "name": "checkDecodedExtension_iff",
+          "line": 79
+        },
+        {
+          "kind": "theorem",
+          "name": "decoded_prefix_of_acceptance",
+          "line": 98
+        },
+        {
+          "kind": "theorem",
+          "name": "checkDecodedExtension_pack_append",
+          "line": 109
+        },
+        {
+          "kind": "theorem",
+          "name": "reordered_rows_not_prefix",
+          "line": 115
+        },
+        {
+          "kind": "theorem",
+          "name": "append_repack_stale_slot_counterexample",
+          "line": 125
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Logic.FiniteSequences.DictionaryRevision"
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Logic.FiniteSequences.Checks.Negative.AppendOnlyHistoryReorder",
+        "GRWTSK.Logic.FiniteSequences.Checks.Positive.AppendOnlyHistory"
+      ],
+      "subject": "Logic",
+      "object": "FiniteSequences",
+      "source_role": "library",
+      "target_path": "GRWTSK/Logic/FiniteSequences/AppendOnlyHistory.lean",
+      "placement_rationale": "Exact order-preserving finite histories, decoded prefix contracts and representation counterexamples are mathematical finite-sequence results.",
+      "operation": "add",
+      "logical_status": "selected native checked finite-sequence result; exact premises retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "f015968ae5c73f3285c18f98d08dd480a9ab7cc4ed9a01a8fdf6a566f308d67e",
+        "replay_binding": "evidence/Logic/FiniteSequences/append-only-history-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_append_only_history.py",
+      "other_consumers": [
+        "docs/mathematics/Logic/FiniteSequences/append-only-history.md"
+      ]
+    },
+    {
+      "path": "GRWTSK/Logic/FiniteSequences/Checks/Negative/AppendOnlyHistoryReorder.lean",
+      "original_path": "GRWTSK/Logic/FiniteSequences/Checks/Negative/AppendOnlyHistoryReorder.lean",
+      "sha256": "b817c436b1f8f6baf476adac5b1ef8a68ca07434f848d81a220fe2507b830726",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Logic.FiniteSequences.Checks.Negative.AppendOnlyHistoryReorder",
+      "namespaces": [],
+      "public_declarations": [],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Logic.FiniteSequences.AppendOnlyHistory"
+      ],
+      "reverse_consumers": [],
+      "subject": "Logic",
+      "object": "FiniteSequences/Checks/Negative",
+      "source_role": "negative-control",
+      "target_path": "GRWTSK/Logic/FiniteSequences/Checks/Negative/AppendOnlyHistoryReorder.lean",
+      "placement_rationale": "Exact order-preserving finite histories, decoded prefix contracts and representation counterexamples are mathematical finite-sequence results.",
+      "operation": "add",
+      "logical_status": "intended rejected control; no theorem admission",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "b817c436b1f8f6baf476adac5b1ef8a68ca07434f848d81a220fe2507b830726",
+        "replay_binding": "evidence/Logic/FiniteSequences/append-only-history-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_append_only_history.py",
+      "other_consumers": []
+    },
+    {
       "path": "GRWTSK/Logic/FiniteSequences/Checks/Negative/DecisionCertificateStalePremise.lean",
       "original_path": "GRWTSK/Logic/FiniteSequences/Checks/Negative/DecisionCertificateStalePremise.lean",
       "sha256": "8b9bbaf344a61a854d91ff31ad4c1bde38f0df7c880c266d644605cf0cffd69d",
@@ -31359,6 +31502,39 @@
         "replay_binding": "evidence/Logic/FiniteSequences/indexed-dictionary-checks-2026-10-15.json"
       },
       "runner": "python3 -B scripts/check_indexed_dictionary.py",
+      "other_consumers": []
+    },
+    {
+      "path": "GRWTSK/Logic/FiniteSequences/Checks/Positive/AppendOnlyHistory.lean",
+      "original_path": "GRWTSK/Logic/FiniteSequences/Checks/Positive/AppendOnlyHistory.lean",
+      "sha256": "84054e557b4ef0ac9aeb439d973a2aa52b831d73c8b595dac64ffafe3cf28483",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Logic.FiniteSequences.Checks.Positive.AppendOnlyHistory",
+      "namespaces": [],
+      "public_declarations": [],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Logic.FiniteSequences.AppendOnlyHistory"
+      ],
+      "reverse_consumers": [],
+      "subject": "Logic",
+      "object": "FiniteSequences/Checks/Positive",
+      "source_role": "positive-check",
+      "target_path": "GRWTSK/Logic/FiniteSequences/Checks/Positive/AppendOnlyHistory.lean",
+      "placement_rationale": "Exact order-preserving finite histories, decoded prefix contracts and representation counterexamples are mathematical finite-sequence results.",
+      "operation": "add",
+      "logical_status": "selected native checked finite-sequence result; exact premises retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "84054e557b4ef0ac9aeb439d973a2aa52b831d73c8b595dac64ffafe3cf28483",
+        "replay_binding": "evidence/Logic/FiniteSequences/append-only-history-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_append_only_history.py",
       "other_consumers": []
     },
     {
@@ -31634,6 +31810,7 @@
       ],
       "reverse_consumers": [
         "GRWTSK",
+        "GRWTSK.Logic.FiniteSequences.AppendOnlyHistory",
         "GRWTSK.Logic.FiniteSequences.Checks.Negative.DictionaryRevisionStaleSlots",
         "GRWTSK.Logic.FiniteSequences.Checks.Positive.DictionaryRevision",
         "GRWTSK.Logic.FiniteSequences.DecisionCertificate"
@@ -52932,14 +53109,14 @@
   ],
   "current_inventory": {
     "head": "854e04dc182c36b00479b642e6301f47acc81e5f",
-    "lean_source_count": 633,
-    "active_source_count": 570,
+    "lean_source_count": 636,
+    "active_source_count": 573,
     "candidate_source_count": 63,
     "counts_by_role": {
       "audit-driver": 35,
-      "library": 345,
-      "negative-control": 105,
-      "positive-check": 85
+      "library": 346,
+      "negative-control": 106,
+      "positive-check": 86
     },
     "counts_by_subject": {
       "Algebra": 19,
@@ -52950,7 +53127,7 @@
       "GroupTheory": 4,
       "Library": 1,
       "LinearAlgebra": 53,
-      "Logic": 51,
+      "Logic": 54,
       "MeasureTheory": 5,
       "NumberTheory": 188,
       "Order": 3,
@@ -59429,5 +59606,15 @@
       "evidence/Logic/FiniteSequences/decision-certificate-checks-2026-10-15.json",
       "evidence/Logic/FiniteSequences/indexed-dictionary-checks-2026-10-15.json"
     ]
+  },
+  "ordered_history_additions": {
+    "date": "2026-10-15",
+    "paths": [
+      "GRWTSK/Logic/FiniteSequences/AppendOnlyHistory.lean",
+      "GRWTSK/Logic/FiniteSequences/Checks/Positive/AppendOnlyHistory.lean",
+      "GRWTSK/Logic/FiniteSequences/Checks/Negative/AppendOnlyHistoryReorder.lean"
+    ],
+    "replay": "evidence/Logic/FiniteSequences/append-only-history-checks-2026-10-15.json",
+    "scope": "Incremental selected registration; no historical full-replay hashes or failed receipts refreshed."
   }
 }

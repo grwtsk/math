@@ -1,0 +1,71 @@
+{
+  "schema": "ordered-history-integration-v1",
+  "at": "2026-10-15T17:38:57.747811+00:00",
+  "native": {
+    "receipt": "evidence/Logic/FiniteSequences/append-only-history-checks-2026-10-15.json",
+    "sha256": "13f9394fcb560d2c5c6fd76604b69cf97b64ee77b289b315c1abfba70540305b",
+    "outcome": "passed",
+    "closure_owned_declarations": 83,
+    "new_module_owned_declarations": 17,
+    "trust": 0,
+    "fatal_warnings": true,
+    "allowed_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "dependency_objects_reused_and_fingerprinted": true,
+    "independent_review": false,
+    "whole_repository_acceptance": false
+  },
+  "checked_results": [
+    "Executable exact ordered-prefix reflection, position/key-order preservation and composition.",
+    "Actual dictionary decoding accepted exactly when it succeeds with old history plus an ordered suffix.",
+    "Fresh pack(old++tail) passes using actual unpack_pack.",
+    "Reordered identical rows are rejected.",
+    "Appending a repeated payload can reorder dictionary slots and corrupt stale references despite exact source-history prefix and valid bounds."
+  ],
+  "operational_change": {
+    "path": "scripts/cache_taxonomy.py",
+    "contract": "Each of decisions/contributions/aliases must preserve all old complete rows as literal ordered prefix, in addition to existing identity/no-rewrite/CAS/type checks.",
+    "python_refinement_to_lean": "open"
+  },
+  "bound_reviews": [
+    {
+      "path": "evidence/Logic/FiniteSequences/ordered-history-adapter-2026-10-15.json",
+      "sha256": "0ae137551711422bef455c23c4dca06fb2cca655a2c4c36b8ac74d45f8f49c7e"
+    },
+    {
+      "path": "evidence/Logic/FiniteSequences/ordered-history-literature-2026-10-15.json",
+      "sha256": "c2c50d29cc8b96de03c8c8dfb68b988c0d23286007fe3ae74e683821dffe1543"
+    },
+    {
+      "path": "cache/research/openai-closed-operator-refresh-2026-10-15.json",
+      "sha256": "267153f8b8b94fc9573fb64dfe79cee6f6a122abd8ee5efcf39faa4b83ff7e54"
+    }
+  ],
+  "decisions": {
+    "previous_record": "cache/decisions/representation-and-evidence-v1.json",
+    "change": "Close the permissive ordered-history operational gap without assuming that prefix extension preserves numeric dictionary slots.",
+    "preserved_limits": [
+      "No SHA injectivity, authenticated hash history, source authenticity, Python/JSON refinement or globally atomic file transaction theorem.",
+      "215 intended method identities remain unprovided; method counts are separate.",
+      "Incoming candidate classification/taxonomy modules retain original NOT_RUN status.",
+      "Concurrent documentation counts work is preserved; its changes do not confer proof acceptance."
+    ]
+  },
+  "attribution": [
+    {
+      "actor": "grwtsk contributors",
+      "role": "human direction"
+    },
+    {
+      "actor": "OpenAI Codex and delegated agents",
+      "role": "local formalization, adapter controls, source scouts and same-author review"
+    },
+    {
+      "actor": "Lean and Mathlib contributors",
+      "role": "upstream list-prefix and finite-list APIs; source attribution/licensing retained"
+    }
+  ]
+}

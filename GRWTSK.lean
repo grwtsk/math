@@ -346,3 +346,4 @@ import GRWTSK.LinearAlgebra.Matrix.TraceRank
 import GRWTSK.Logic.FiniteSequences.IndexedDictionary
 import GRWTSK.Logic.FiniteSequences.DictionaryRevision
 import GRWTSK.Logic.FiniteSequences.DecisionCertificate
+import GRWTSK.Logic.FiniteSequences.AppendOnlyHistory
