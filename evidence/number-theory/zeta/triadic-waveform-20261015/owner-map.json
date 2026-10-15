@@ -1,0 +1,57 @@
+{
+  "families": {
+    "canonical_runtime_records": {
+      "notes": "No Rust schema or executable selected.",
+      "owner": "Rust",
+      "state": "inactive"
+    },
+    "exact_finite_arithmetic": {
+      "notes": "Fractions and integer arithmetic; no floating point acceptance.",
+      "owner": "Python",
+      "state": "executed"
+    },
+    "formal_definitions_and_theorems": {
+      "notes": "No active additions or native replay.",
+      "owner": "Lean",
+      "state": "candidate_only"
+    },
+    "presentation": {
+      "notes": "No presentation authority used.",
+      "owner": "TypeScript/WebAssembly",
+      "state": "inactive"
+    },
+    "repository_identity_and_publication": {
+      "notes": "Commit receipt does not confer theorem authority.",
+      "owner": "GitHub/Git",
+      "state": "authorized_additive_write"
+    },
+    "source_mathematics": {
+      "notes": "External results keep their own scope and licenses.",
+      "owner": "identified source authors and repository declarations",
+      "state": "retained"
+    },
+    "terminal_RH_target": {
+      "notes": "No replacement target.",
+      "owner": "pinned Mathlib _root_.RiemannHypothesis",
+      "state": "unchanged"
+    }
+  },
+  "forbidden_promotions": [
+    "Python exact result -> Lean theorem",
+    "Git commit -> proof acceptance",
+    "K-theory analogy -> arithmetic index equality",
+    "finite certificate -> all-height theorem",
+    "taxonomy edge -> mathematical implication"
+  ],
+  "schema": "grl-twmk-owner-map-v1",
+  "separate_graphs": [
+    "filesystem",
+    "execution",
+    "mathematical dependency",
+    "authority",
+    "refinement/transport",
+    "taxonomy/presentation",
+    "provenance",
+    "governance/effects"
+  ]
+}

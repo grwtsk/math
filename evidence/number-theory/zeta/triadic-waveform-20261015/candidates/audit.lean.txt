@@ -1,0 +1,21 @@
+/- Inactive audit harness. The candidate files must be staged at their intended
+mathematical paths and compiled under the pinned environment before these requests
+have any acceptance value. -/
+import GRWTSK.NumberTheory.CoprimeAdditive
+import GRWTSK.Analysis.TriadicEnergy
+import GRWTSK.Analysis.ReflectionCollapse
+import GRWTSK.NumberTheory.PrimitiveRadialMellin
+import GRWTSK.Analysis.MomentObstructions
+import GRWTSK.Algebra.LatticeReflection
+
+#print axioms GRWTSK.NumberTheory.CoprimeAdditive.PrimitiveTriple.pairwiseCoprime
+#print axioms GRWTSK.NumberTheory.CoprimeAdditive.card_primitiveFirstCoordinates
+#print axioms GRWTSK.Analysis.TriadicEnergy.energy_add_three
+#print axioms GRWTSK.Analysis.TriadicEnergy.diagonal_does_not_determine_total
+#print axioms GRWTSK.Analysis.ReflectionCollapse.reconstruct_left
+#print axioms GRWTSK.Analysis.ReflectionCollapse.reconstruct_right
+#print axioms GRWTSK.Analysis.ReflectionCollapse.energy_split
+#print axioms GRWTSK.NumberTheory.PrimitiveRadialMellin.denominatorMonomial_scale
+#print axioms GRWTSK.Analysis.MomentObstructions.first_three_moments_zero
+#print axioms GRWTSK.Analysis.MomentObstructions.third_moment_nonzero
+#print axioms GRWTSK.Algebra.LatticeReflection.swap_translate_swap
