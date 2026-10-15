@@ -5207,7 +5207,11 @@
     "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/EndpointSection.lean": "ba640039622b78f42cfcbaf31dce0f0dcc4028b429b764aad482488dfbb4deba",
     "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/EndpointSectionMissingPreservation.lean": "299e1fcbde14d3f1132f35de38754d2c8a9ed3ca627d4f40b91ecdb3c211cd79",
     "GRWTSK/NumberTheory/LSeries/Checks/Positive/GaussianDyadic.lean": "39081981a4fa7fa0091a94894e16c59b6c87199c64bf766be9e2edc2ffeedc72",
-    "GRWTSK/NumberTheory/LSeries/Checks/Negative/DyadicMissingCoverage.lean": "f9f98dfdbbac48fac2e3a696c65c7af0f1daefdc2d344fb6a5b7534d457b11c3"
+    "GRWTSK/NumberTheory/LSeries/Checks/Negative/DyadicMissingCoverage.lean": "f9f98dfdbbac48fac2e3a696c65c7af0f1daefdc2d344fb6a5b7534d457b11c3",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixInventory.lean": "91c594954863dd29e14e21632042cb5d0fcc4063c473662fcce8b745a65cb7fa",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixInventoryMissingIdentity.lean": "deedba52ebd4261b8f9ef8d6e6c58c583463141b329083405758c47b17b8064b",
+    "GRWTSK/Analysis/MellinTransform/Checks/Positive/CompactGaussianWindow.lean": "96ec310820e5d010bb0c67ff624456dba652703a731800aa195c65cd7f87ac0d",
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianWindowMissingRootFactor.lean": "ce09a5a803778f75a2da288d554bef9f11f8c112414e42f2325c29e202a1c6b5"
   },
   "schema_version": 3,
   "repository_conformance": {
@@ -5239,7 +5243,7 @@
     {
       "path": "GRWTSK.lean",
       "original_path": "GRWTSK.lean",
-      "sha256": "3b42f3ef53b122ee316bfbe6e4f966236392426c59d069f6a9c0b716188e40ff",
+      "sha256": "043cc4136cd1199bc10a9efa44afab714ce96bdf4b02f45d1001c76432fde2ce",
       "git_blob": "27e45b3448f78dc6499f2fb0698eb51cac5d1904",
       "working_tree_state": "tracked-modified",
       "source_root": ".",
@@ -5377,6 +5381,7 @@
         "GRWTSK.Analysis.LaplaceTransform.MoebiusResponseFormula",
         "GRWTSK.Analysis.LaplaceTransform.PolynomialEnergy",
         "GRWTSK.Analysis.LaplaceTransform.PolynomialEnergyHolomorphy",
+        "GRWTSK.Analysis.MellinTransform.CompactGaussianWindow",
         "GRWTSK.Analysis.MellinTransform.LogarithmicGaussian",
         "GRWTSK.Analysis.MellinTransform.NormalizedGaussian",
         "GRWTSK.Analysis.MellinTransform.ReverseInversion",
@@ -5401,6 +5406,7 @@
         "GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix",
         "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences",
         "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding",
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixInventory",
         "GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.Moser",
         "GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.MoserCoordinates",
         "GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.MoserSource",
@@ -5630,7 +5636,7 @@
         "inventory": "observed-current-bytes",
         "layout": "repository baseline remains failed",
         "lean": "umbrella not replayed after selected import additions",
-        "source_sha256": "3b42f3ef53b122ee316bfbe6e4f966236392426c59d069f6a9c0b716188e40ff"
+        "source_sha256": "043cc4136cd1199bc10a9efa44afab714ce96bdf4b02f45d1001c76432fde2ce"
       },
       "runner": "python3 -B scripts/check_ccc_energy.py",
       "other_consumers": [
@@ -21680,6 +21686,52 @@
       "design_reference": "cache/research/typed-trace-gaussian-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
     },
     {
+      "path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianWindowMissingRootFactor.lean",
+      "original_path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianWindowMissingRootFactor.lean",
+      "sha256": "ce09a5a803778f75a2da288d554bef9f11f8c112414e42f2325c29e202a1c6b5",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Analysis.MellinTransform.Checks.Negative.GaussianWindowMissingRootFactor",
+      "namespaces": [],
+      "public_declarations": [],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Analysis.MellinTransform.Checks.Positive.CompactGaussianWindow"
+      ],
+      "reverse_consumers": [],
+      "subject": "Analysis",
+      "object": "MellinTransform/Checks/Negative",
+      "source_role": "negative-control",
+      "target_path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianWindowMissingRootFactor.lean",
+      "placement_rationale": "Exact compact smooth Gaussian windows, square-root normalization and Schwartz-map consumers belong to Analysis/MellinTransform; generic annulus remains in Analysis/PartitionOfUnity.",
+      "operation": "add",
+      "logical_status": "intended rejected control; no theorem admission",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "ce09a5a803778f75a2da288d554bef9f11f8c112414e42f2325c29e202a1c6b5",
+        "replay_binding": "evidence/Analysis/MellinTransform/compact-gaussian-window-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_compact_gaussian_window.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Exact G(Z,j,y)=A(y)P(2^j*y/Z)/(sqrt y:Complex), Nat j and existing normalized Gaussian/annulus Analysis suppliers.",
+        "Support/compact for arbitrary real Z; smoothness retains Z>0; positive-y sqrt cancellation independent of Z. Actual Schwartz-map consumer, not assumed smoothness.",
+        "Missing-root-factor counterexample at3/4; no false necessity claim about Z0 or full arithmetic/physical detector."
+      ],
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: exact GaussianWindows G profile and GaussianLow Schwartz consumer; Mathlib smooth/sqrt/Schwartz/Mellin authors retain individual credit"
+      ],
+      "license": "Apache-2.0",
+      "design_reference": "cache/research/prefix-window-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
       "path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/ReverseInversionMissingPremise.lean",
       "original_path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/ReverseInversionMissingPremise.lean",
       "sha256": "7b1f38a5c2ae34030c0c41048f6b0195eda53e3577f075edaebee8286c699ebd",
@@ -21766,6 +21818,102 @@
       ],
       "license": "Apache-2.0",
       "design_reference": "cache/research/path-mellin-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
+      "path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/CompactGaussianWindow.lean",
+      "original_path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/CompactGaussianWindow.lean",
+      "sha256": "96ec310820e5d010bb0c67ff624456dba652703a731800aa195c65cd7f87ac0d",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Analysis.MellinTransform.Checks.Positive.CompactGaussianWindow",
+      "namespaces": [
+        "GRWTSK.Analysis.MellinTransform.CompactGaussianWindow.Checks"
+      ],
+      "public_declarations": [
+        {
+          "kind": "theorem",
+          "name": "compactWindow_smooth",
+          "line": 10
+        },
+        {
+          "kind": "theorem",
+          "name": "compactWindow_schwartz_one",
+          "line": 14
+        },
+        {
+          "kind": "theorem",
+          "name": "compactWindow_zero",
+          "line": 19
+        },
+        {
+          "kind": "def",
+          "name": "unnormalizedWindow",
+          "line": 22
+        },
+        {
+          "kind": "theorem",
+          "name": "annulus_three_quarters_ne_zero",
+          "line": 24
+        },
+        {
+          "kind": "theorem",
+          "name": "profile_three_quarters_ne_zero",
+          "line": 34
+        },
+        {
+          "kind": "theorem",
+          "name": "unnormalizedWindow_three_quarters_ne_zero",
+          "line": 43
+        },
+        {
+          "kind": "theorem",
+          "name": "correctWindow_normalizes",
+          "line": 46
+        },
+        {
+          "kind": "theorem",
+          "name": "omittedRootFactor_counterexample",
+          "line": 51
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Analysis.MellinTransform.CompactGaussianWindow"
+      ],
+      "reverse_consumers": [
+        "GRWTSK.Analysis.MellinTransform.Checks.Negative.GaussianWindowMissingRootFactor"
+      ],
+      "subject": "Analysis",
+      "object": "MellinTransform/Checks/Positive",
+      "source_role": "positive-check",
+      "target_path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/CompactGaussianWindow.lean",
+      "placement_rationale": "Exact compact smooth Gaussian windows, square-root normalization and Schwartz-map consumers belong to Analysis/MellinTransform; generic annulus remains in Analysis/PartitionOfUnity.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "96ec310820e5d010bb0c67ff624456dba652703a731800aa195c65cd7f87ac0d",
+        "replay_binding": "evidence/Analysis/MellinTransform/compact-gaussian-window-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_compact_gaussian_window.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Exact G(Z,j,y)=A(y)P(2^j*y/Z)/(sqrt y:Complex), Nat j and existing normalized Gaussian/annulus Analysis suppliers.",
+        "Support/compact for arbitrary real Z; smoothness retains Z>0; positive-y sqrt cancellation independent of Z. Actual Schwartz-map consumer, not assumed smoothness.",
+        "Missing-root-factor counterexample at3/4; no false necessity claim about Z0 or full arithmetic/physical detector."
+      ],
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: exact GaussianWindows G profile and GaussianLow Schwartz consumer; Mathlib smooth/sqrt/Schwartz/Mellin authors retain individual credit"
+      ],
+      "license": "Apache-2.0",
+      "design_reference": "cache/research/prefix-window-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
     },
     {
       "path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/LogarithmicGaussian.lean",
@@ -21954,6 +22102,111 @@
       "design_reference": "cache/research/path-mellin-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
     },
     {
+      "path": "GRWTSK/Analysis/MellinTransform/CompactGaussianWindow.lean",
+      "original_path": "GRWTSK/Analysis/MellinTransform/CompactGaussianWindow.lean",
+      "sha256": "db195580ca2f4e4a941f13c71d285af377d2bb29ed7250db0f0b13570984cec5",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Analysis.MellinTransform.CompactGaussianWindow",
+      "namespaces": [
+        "GRWTSK.Analysis.MellinTransform.CompactGaussianWindow"
+      ],
+      "public_declarations": [
+        {
+          "kind": "def",
+          "name": "rootWeight",
+          "line": 31
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussianMellinProfile_real",
+          "line": 33
+        },
+        {
+          "kind": "def",
+          "name": "gaussianDyadicProfile",
+          "line": 45
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussianDyadicProfile_small",
+          "line": 48
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussianDyadicProfile_large",
+          "line": 52
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussianDyadicProfile_compact",
+          "line": 55
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussianDyadicProfile_contDiff",
+          "line": 65
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussianDyadicProfile_rootWeight",
+          "line": 97
+        },
+        {
+          "kind": "def",
+          "name": "gaussianDyadicSchwartz",
+          "line": 104
+        },
+        {
+          "kind": "theorem",
+          "name": "gaussianDyadicSchwartz_rootWeight",
+          "line": 112
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Analysis.MellinTransform.NormalizedGaussian",
+        "GRWTSK.Analysis.PartitionOfUnity.DyadicAnnulus",
+        "Mathlib.Analysis.Distribution.SchwartzSpace.Basic",
+        "Mathlib.Analysis.SpecialFunctions.Sqrt"
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Analysis.MellinTransform.Checks.Positive.CompactGaussianWindow"
+      ],
+      "subject": "Analysis",
+      "object": "MellinTransform",
+      "source_role": "library",
+      "target_path": "GRWTSK/Analysis/MellinTransform/CompactGaussianWindow.lean",
+      "placement_rationale": "Exact compact smooth Gaussian windows, square-root normalization and Schwartz-map consumers belong to Analysis/MellinTransform; generic annulus remains in Analysis/PartitionOfUnity.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "db195580ca2f4e4a941f13c71d285af377d2bb29ed7250db0f0b13570984cec5",
+        "replay_binding": "evidence/Analysis/MellinTransform/compact-gaussian-window-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_compact_gaussian_window.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Exact G(Z,j,y)=A(y)P(2^j*y/Z)/(sqrt y:Complex), Nat j and existing normalized Gaussian/annulus Analysis suppliers.",
+        "Support/compact for arbitrary real Z; smoothness retains Z>0; positive-y sqrt cancellation independent of Z. Actual Schwartz-map consumer, not assumed smoothness.",
+        "Missing-root-factor counterexample at3/4; no false necessity claim about Z0 or full arithmetic/physical detector."
+      ],
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: exact GaussianWindows G profile and GaussianLow Schwartz consumer; Mathlib smooth/sqrt/Schwartz/Mellin authors retain individual credit"
+      ],
+      "license": "Apache-2.0",
+      "design_reference": "cache/research/prefix-window-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
       "path": "GRWTSK/Analysis/MellinTransform/LogarithmicGaussian.lean",
       "original_path": "GRWTSK/Analysis/MellinTransform/LogarithmicGaussian.lean",
       "sha256": "cd47e598796f4f901ddea56dd05bb9e719534e1aac5589c1be6ddfb8d9fea66d",
@@ -22125,6 +22378,7 @@
       "reverse_consumers": [
         "GRWTSK",
         "GRWTSK.Analysis.MellinTransform.Checks.Positive.NormalizedGaussian",
+        "GRWTSK.Analysis.MellinTransform.CompactGaussianWindow",
         "GRWTSK.NumberTheory.LSeries.GaussianContour"
       ],
       "subject": "Analysis",
@@ -22443,6 +22697,7 @@
       ],
       "reverse_consumers": [
         "GRWTSK",
+        "GRWTSK.Analysis.MellinTransform.CompactGaussianWindow",
         "GRWTSK.NumberTheory.LSeries.GaussianDyadic"
       ],
       "subject": "Analysis",
@@ -24435,6 +24690,51 @@
       "design_reference": "cache/research/path-mellin-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
     },
     {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixInventoryMissingIdentity.lean",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixInventoryMissingIdentity.lean",
+      "sha256": "deedba52ebd4261b8f9ef8d6e6c58c583463141b329083405758c47b17b8064b",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.PrefixInventoryMissingIdentity",
+      "namespaces": [],
+      "public_declarations": [],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixInventory"
+      ],
+      "reverse_consumers": [],
+      "subject": "Combinatorics",
+      "object": "DirectedGraph/Checks/Negative",
+      "source_role": "negative-control",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixInventoryMissingIdentity.lean",
+      "placement_rationale": "Finite complete-tag path-history prefix inventories and actual occurrence reconstruction belong to Combinatorics/DirectedGraph.",
+      "operation": "add",
+      "logical_status": "intended rejected control; no theorem admission",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "deedba52ebd4261b8f9ef8d6e6c58c583463141b329083405758c47b17b8064b",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/prefix-inventory-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_prefix_inventory.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Finite original keyed existing occurrences at one fixed root, full typed EdgeTrace tags and exact equality or classical noncomputable construction.",
+        "Dictionary consists exactly of deduplicated full prefixes, valid-from-root decode and actual source occurrence recovery; key/order/multiplicity retained through existing indexed decoder.",
+        "No endpoint-only, parent-pointer, byte/optimal compression or incremental index-stability claim."
+      ],
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "design_reference": "cache/research/prefix-window-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
       "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/UnfoldingMissingCostar.lean",
       "original_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/UnfoldingMissingCostar.lean",
       "sha256": "d76888ed8dbf6e9126dc4d13971158b770092b86dbe991b0b62fde7302304b65",
@@ -24946,6 +25246,121 @@
       "design_reference": "cache/research/unfolding-normalized-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
     },
     {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixInventory.lean",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixInventory.lean",
+      "sha256": "91c594954863dd29e14e21632042cb5d0fcc4063c473662fcce8b745a65cb7fa",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixInventory",
+      "namespaces": [
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixInventory.Checks.Positive"
+      ],
+      "public_declarations": [
+        {
+          "kind": "def",
+          "name": "falseOccurrence",
+          "line": 16
+        },
+        {
+          "kind": "def",
+          "name": "trueOccurrence",
+          "line": 19
+        },
+        {
+          "kind": "def",
+          "name": "falseTag",
+          "line": 22
+        },
+        {
+          "kind": "def",
+          "name": "trueTag",
+          "line": 25
+        },
+        {
+          "kind": "theorem",
+          "name": "tags_distinct",
+          "line": 28
+        },
+        {
+          "kind": "def",
+          "name": "parallelRows",
+          "line": 34
+        },
+        {
+          "kind": "theorem",
+          "name": "parallel_inventory_exact",
+          "line": 37
+        },
+        {
+          "kind": "theorem",
+          "name": "parallel_same_endpoint",
+          "line": 43
+        },
+        {
+          "kind": "theorem",
+          "name": "parallel_occurrences_distinct",
+          "line": 45
+        },
+        {
+          "kind": "theorem",
+          "name": "parallel_common_prefix_only_empty",
+          "line": 50
+        },
+        {
+          "kind": "theorem",
+          "name": "endpoint_rows_lose_identity",
+          "line": 61
+        },
+        {
+          "kind": "def",
+          "name": "repeatedRows",
+          "line": 92
+        },
+        {
+          "kind": "theorem",
+          "name": "repeated_references_exact",
+          "line": 95
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixInventory"
+      ],
+      "reverse_consumers": [
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.PrefixInventoryMissingIdentity"
+      ],
+      "subject": "Combinatorics",
+      "object": "DirectedGraph/Checks/Positive",
+      "source_role": "positive-check",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixInventory.lean",
+      "placement_rationale": "Finite complete-tag path-history prefix inventories and actual occurrence reconstruction belong to Combinatorics/DirectedGraph.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "91c594954863dd29e14e21632042cb5d0fcc4063c473662fcce8b745a65cb7fa",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/prefix-inventory-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_prefix_inventory.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Finite original keyed existing occurrences at one fixed root, full typed EdgeTrace tags and exact equality or classical noncomputable construction.",
+        "Dictionary consists exactly of deduplicated full prefixes, valid-from-root decode and actual source occurrence recovery; key/order/multiplicity retained through existing indexed decoder.",
+        "No endpoint-only, parent-pointer, byte/optimal compression or incremental index-stability claim."
+      ],
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "design_reference": "cache/research/prefix-window-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
       "path": "GRWTSK/Combinatorics/DirectedGraph/EdgeTrace.lean",
       "original_path": "GRWTSK/Combinatorics/DirectedGraph/EdgeTrace.lean",
       "sha256": "e1e5f2dd23b6c04a734af4bd95f3f19c15fe4f313d66c5bccff08b3312fb2a59",
@@ -25286,7 +25701,8 @@
       "reverse_consumers": [
         "GRWTSK",
         "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.OccurrencePrefix",
-        "GRWTSK.Combinatorics.DirectedGraph.EndpointSection"
+        "GRWTSK.Combinatorics.DirectedGraph.EndpointSection",
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixInventory"
       ],
       "subject": "Combinatorics",
       "object": "DirectedGraph",
@@ -25656,6 +26072,174 @@
       ],
       "license": "MIT; upstream imported Apache-2.0 retained",
       "design_reference": "cache/research/unfolding-normalized-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/PrefixInventory.lean",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/PrefixInventory.lean",
+      "sha256": "fa7395f0c55943562274019d96e97e25deaea20defdf9d6f2d8a12d029e743c9",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixInventory",
+      "namespaces": [
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixInventory"
+      ],
+      "public_declarations": [
+        {
+          "kind": "def",
+          "name": "traceRows",
+          "line": 37
+        },
+        {
+          "kind": "def",
+          "name": "inventory",
+          "line": 44
+        },
+        {
+          "kind": "theorem",
+          "name": "mem_inventory_iff",
+          "line": 49
+        },
+        {
+          "kind": "theorem",
+          "name": "trace_mem_inventory",
+          "line": 55
+        },
+        {
+          "kind": "theorem",
+          "name": "prefix_closed",
+          "line": 60
+        },
+        {
+          "kind": "theorem",
+          "name": "inventory_nodup",
+          "line": 68
+        },
+        {
+          "kind": "theorem",
+          "name": "inventory_valid",
+          "line": 71
+        },
+        {
+          "kind": "def",
+          "name": "occurrence",
+          "line": 81
+        },
+        {
+          "kind": "theorem",
+          "name": "trace_occurrence",
+          "line": 87
+        },
+        {
+          "kind": "theorem",
+          "name": "occurrence_trace",
+          "line": 92
+        },
+        {
+          "kind": "theorem",
+          "name": "inventory_length_le",
+          "line": 98
+        },
+        {
+          "kind": "def",
+          "name": "packed",
+          "line": 108
+        },
+        {
+          "kind": "theorem",
+          "name": "unpack_packed",
+          "line": 115
+        },
+        {
+          "kind": "theorem",
+          "name": "packed_valid",
+          "line": 125
+        },
+        {
+          "kind": "theorem",
+          "name": "references_length",
+          "line": 134
+        },
+        {
+          "kind": "def",
+          "name": "recoverRows",
+          "line": 141
+        },
+        {
+          "kind": "theorem",
+          "name": "traceRows_valid",
+          "line": 149
+        },
+        {
+          "kind": "theorem",
+          "name": "recoverRows_traceRows",
+          "line": 156
+        },
+        {
+          "kind": "theorem",
+          "name": "recoverRows_of_unpack",
+          "line": 172
+        },
+        {
+          "kind": "theorem",
+          "name": "unpack_valid",
+          "line": 183
+        },
+        {
+          "kind": "theorem",
+          "name": "unpack_recovers",
+          "line": 193
+        },
+        {
+          "kind": "theorem",
+          "name": "inventory_nil",
+          "line": 202
+        },
+        {
+          "kind": "theorem",
+          "name": "inventory_singleton_origin",
+          "line": 205
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix",
+        "GRWTSK.Logic.FiniteSequences.IndexedDictionary",
+        "Mathlib.Data.List.Infix"
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixInventory"
+      ],
+      "subject": "Combinatorics",
+      "object": "DirectedGraph",
+      "source_role": "library",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/PrefixInventory.lean",
+      "placement_rationale": "Finite complete-tag path-history prefix inventories and actual occurrence reconstruction belong to Combinatorics/DirectedGraph.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "fa7395f0c55943562274019d96e97e25deaea20defdf9d6f2d8a12d029e743c9",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/prefix-inventory-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_prefix_inventory.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Finite original keyed existing occurrences at one fixed root, full typed EdgeTrace tags and exact equality or classical noncomputable construction.",
+        "Dictionary consists exactly of deduplicated full prefixes, valid-from-root decode and actual source occurrence recovery; key/order/multiplicity retained through existing indexed decoder.",
+        "No endpoint-only, parent-pointer, byte/optimal compression or incremental index-stability claim."
+      ],
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "design_reference": "cache/research/prefix-window-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
     },
     {
       "path": "GRWTSK/Combinatorics/GraphTheory/UnitDistanceGraph/Moser.lean",
@@ -35297,6 +35881,7 @@
       ],
       "reverse_consumers": [
         "GRWTSK",
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixInventory",
         "GRWTSK.Logic.FiniteSequences.Checks.Negative.IndexedDictionaryInvalidReference",
         "GRWTSK.Logic.FiniteSequences.Checks.Positive.IndexedDictionary",
         "GRWTSK.Logic.FiniteSequences.DictionaryRevision"
@@ -57154,19 +57739,19 @@
   ],
   "current_inventory": {
     "head": "854e04dc182c36b00479b642e6301f47acc81e5f",
-    "lean_source_count": 688,
-    "active_source_count": 625,
+    "lean_source_count": 694,
+    "active_source_count": 631,
     "candidate_source_count": 63,
     "counts_by_role": {
       "audit-driver": 35,
-      "library": 364,
-      "negative-control": 123,
-      "positive-check": 103
+      "library": 366,
+      "negative-control": 125,
+      "positive-check": 105
     },
     "counts_by_subject": {
       "Algebra": 19,
-      "Analysis": 215,
-      "Combinatorics": 23,
+      "Analysis": 218,
+      "Combinatorics": 26,
       "Data": 1,
       "DynamicalSystems": 16,
       "GroupTheory": 4,
@@ -63806,6 +64391,22 @@
     "replays": [
       "evidence/Combinatorics/DirectedGraph/endpoint-section-checks-2026-10-15.json",
       "evidence/NumberTheory/LSeries/gaussian-dyadic-checks-2026-10-15.json"
+    ],
+    "scope": "Incremental selected registration; no historical full-replay hashes or failed receipts refreshed."
+  },
+  "prefix_window_additions": {
+    "date": "2026-10-15",
+    "paths": [
+      "GRWTSK/Combinatorics/DirectedGraph/PrefixInventory.lean",
+      "GRWTSK/Analysis/MellinTransform/CompactGaussianWindow.lean",
+      "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixInventory.lean",
+      "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixInventoryMissingIdentity.lean",
+      "GRWTSK/Analysis/MellinTransform/Checks/Positive/CompactGaussianWindow.lean",
+      "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianWindowMissingRootFactor.lean"
+    ],
+    "replays": [
+      "evidence/Analysis/MellinTransform/compact-gaussian-window-checks-2026-10-15.json",
+      "evidence/Combinatorics/DirectedGraph/prefix-inventory-checks-2026-10-15.json"
     ],
     "scope": "Incremental selected registration; no historical full-replay hashes or failed receipts refreshed."
   }

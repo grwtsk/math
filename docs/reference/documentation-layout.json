@@ -3508,10 +3508,28 @@
       "source_sha256": "2e5af752af46fde0d50a807b45cbf1724df88834c5d7464a19701d46360bbc0d",
       "status": "fresh-selected",
       "evidence": "evidence/NumberTheory/LSeries/gaussian-dyadic-checks-2026-10-15.json"
+    },
+    "docs/mathematics/Combinatorics/DirectedGraph/prefix-inventory.md": {
+      "title": "A finite inventory of complete history prefixes",
+      "subject": "Combinatorics",
+      "object": "DirectedGraph",
+      "primary_source": "GRWTSK/Combinatorics/DirectedGraph/PrefixInventory.lean",
+      "source_sha256": "fa7395f0c55943562274019d96e97e25deaea20defdf9d6f2d8a12d029e743c9",
+      "status": "fresh-selected",
+      "evidence": "evidence/Combinatorics/DirectedGraph/prefix-inventory-checks-2026-10-15.json"
+    },
+    "docs/mathematics/Analysis/MellinTransform/compact-gaussian-window.md": {
+      "title": "The compact Gaussian window and its square-root factor",
+      "subject": "Analysis",
+      "object": "MellinTransform",
+      "primary_source": "GRWTSK/Analysis/MellinTransform/CompactGaussianWindow.lean",
+      "source_sha256": "db195580ca2f4e4a941f13c71d285af377d2bb29ed7250db0f0b13570984cec5",
+      "status": "fresh-selected",
+      "evidence": "evidence/Analysis/MellinTransform/compact-gaussian-window-checks-2026-10-15.json"
     }
   },
   "object_binding_registry": "docs/reference/object-source-bindings.json",
-  "object_binding_registry_sha256": "8e39e887c6e26b0a2b3497bc6723e66f6cae86fdcc2f35d3a8a423a7b6c21cea",
+  "object_binding_registry_sha256": "2ac16d89a39d46b11e4a3b426faee6b38ec31d6136866e3fe1502346ba56537b",
   "navigation": {
     "schema": "subject-index-navigation-v1",
     "summary": "docs/reference/library-summary.json"

@@ -11,7 +11,7 @@ A Lean library of exact statements, reusable proofs, counterexamples and explici
 
 Lean 4.33.0 and Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d` are pinned. Mathematical statements, written arguments, historical checks and fresh source-bound verification have distinct statuses. The Riemann hypothesis and the actual Möbius cross-energy bound remain open.
 
-Local source is MIT except where source headers retain upstream terms. The trace-rank, closed-operator, reverse Mellin, logarithmic Gaussian, normalized Gaussian, zeta Gaussian contour and dyadic partition interfaces and Mathlib retain Apache-2.0 terms. [NOTICE](NOTICE) and [licenses](LICENSES) preserve upstream authorship and individual credit. Translation, checking and repository custody do not confer mathematical origin.
+Local source is MIT except where source headers retain upstream terms. The trace-rank, closed-operator, reverse Mellin, logarithmic Gaussian, normalized Gaussian, zeta Gaussian contour, dyadic partition and compact Gaussian window interfaces and Mathlib retain Apache-2.0 terms. [NOTICE](NOTICE) and [licenses](LICENSES) preserve upstream authorship and individual credit. Translation, checking and repository custody do not confer mathematical origin.
 
 [Documentation standard](docs/explanation/documentation.md) · [Source layout](docs/reference/source-layout.md) · [Verification reference](docs/reference/verification-interfaces.md) · [Rigor and reconstruction status](docs/reference/rigor-and-reconstruction-report.md) · [Historical provenance](docs/reference/documentation-history.md).
 

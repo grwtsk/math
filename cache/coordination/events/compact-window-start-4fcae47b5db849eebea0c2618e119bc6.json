@@ -1,0 +1,10 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "compact-gaussian-window-formal",
+  "event": "source-work-start",
+  "owner": "cache_adapter",
+  "at": "2026-10-15T20:47:39.229438+00:00",
+  "scratch": ".local/compact-gaussian-window/c6ad1160b80a480eb7220c61e623b061",
+  "native_jobs_running": 0,
+  "contract": "exactG/sqrt,arbitraryZcompactness,Z>0smoothness,positive-yrootWeight,actualSchwartzmap;actual3/4wrongfactorcontrol"
+}

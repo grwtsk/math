@@ -1,0 +1,108 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "finite-prefix-inventory-formal",
+  "owner": "indexed_dictionary",
+  "at": "2026-10-15T20:54:24.328032+00:00",
+  "kind": "complete-frozen",
+  "source_hashes": {
+    "GRWTSK/Combinatorics/DirectedGraph/PrefixInventory.lean": "fa7395f0c55943562274019d96e97e25deaea20defdf9d6f2d8a12d029e743c9",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixInventory.lean": "91c594954863dd29e14e21632042cb5d0fcc4063c473662fcce8b745a65cb7fa",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixInventoryMissingIdentity.lean": "deedba52ebd4261b8f9ef8d6e6c58c583463141b329083405758c47b17b8064b"
+  },
+  "api": [
+    "inventory exact flatMap List.inits then rightmost dedup",
+    "mem_inventory_iff/prefix_closed/inventory_nodup/inventory_valid",
+    "occurrence/trace_occurrence/occurrence_trace actual proof-indexed existing EdgeTrace decoder",
+    "inventory_length_le",
+    "packed/unpack_packed/packed_valid/references_length consume actual existing IndexedDictionary.Packed/unpack_map_indices",
+    "recoverRows/recoverRows_traceRows/recoverRows_of_unpack/unpack_valid/unpack_recovers actual existing codec+trace_injective keyed rows identity"
+  ],
+  "positive_controls": [
+    "empty inventory, singleton root inventory",
+    "Bool parallel full tags distinct, same endpoint, common prefix only empty",
+    "actual rightmost inventory order [[falseTag],[],[trueTag]]; no parent-before-child assumption",
+    "actual unpack and actual occurrence recovery",
+    "repeated row keys, order, payload repetitions and separate ordered references",
+    "named endpoint_rows_lose_identity real summary counterexample"
+  ],
+  "development_verification": {
+    "lean": "leanprover/lean4:v4.33.0",
+    "trust": 0,
+    "fatal_warnings": true,
+    "owned_census": 219,
+    "modules": 7,
+    "new_library_declarations": 33,
+    "new_positive_declarations": 15,
+    "all_mathematical_admission": true,
+    "unsafe_partial_or_runtime_helpers": [],
+    "negative": "Exactly1 Type mismatch at12:2: parallel_same_endpoint has endpoint equality, expected falseOccurrence=trueOccurrence",
+    "objects": "Own new library and positive, plus unchanged IndexedDictionary, compiled freshly. Four prior graph dependency object families reused only after exact frozen source and object-family receipt hash checks. Canonical project objects excluded. Parent fresh full closure/census admission is separate.",
+    "source_bytes_match_last_successful_compilations": true
+  },
+  "artifacts": {
+    ".local/prefix-inventory/owned-census.json": "8899c977db56d578627b34ab274449f206c6b0320087f373672c162618e7c087",
+    ".local/prefix-inventory/negative-check.json": "303b1a707fbac0c35d499c89acf9a89ab10595a31f39e028e64ca7d162ed820e",
+    ".local/prefix-inventory/api-scout.json": "e693f765b37ff386e76644ec38bdfba80369c99d894c1d5344569a67bb436601",
+    ".local/prefix-inventory/final-whitespace.json": "56f8cf8ec5b81558e7b1d440c3f4fb562e122a2a5ed32ed9584a00b8ea0645d7",
+    ".local/prefix-inventory/layout.json": "04464e5f200ee00a61c6c70497eccbe0871dee1c720efad9da73a925b3449c53",
+    ".local/prefix-inventory/layout.log": "56f8912d4ee5a65dab4145d23de8bf541adb454c413a3ff1b8fb0944d12ba007"
+  },
+  "preservation": {
+    "failed_development_attempts": [
+      {
+        "receipt": ".local/prefix-inventory/logs/20261015T204929.921211Z-PrefixInventory.json",
+        "source_sha256": "03747a56262c8d4da8a4add2dffb7111fa6d474cb07bd92715ab599c351e111d",
+        "exit_code": 1
+      },
+      {
+        "receipt": ".local/prefix-inventory/logs/20261015T204951.290346Z-PrefixInventory.json",
+        "source_sha256": "6fc30dfc4f4f403198db093319b08c888c0ce995a6baf2465861f0c0c50ba05e",
+        "exit_code": 1
+      },
+      {
+        "receipt": ".local/prefix-inventory/logs/20261015T205004.211831Z-PrefixInventory.json",
+        "source_sha256": "7036499db92edf82b0fc65922f2dd24bfbe0836f91ee96a34f8cbcebc48d56d0",
+        "exit_code": 1
+      },
+      {
+        "receipt": ".local/prefix-inventory/logs/20261015T205005.064089Z-PrefixInventory.json",
+        "source_sha256": "9297e1e2384da987cef4a9bd076ac51742d338ac4ae68dbb14f8ed31249da62d",
+        "exit_code": 1
+      },
+      {
+        "receipt": ".local/prefix-inventory/logs/20261015T205133.696113Z-PrefixInventory.json",
+        "source_sha256": "a17435cff909ac7833f977861315892c750b2cf04e4ef153b538476b1dda60dd",
+        "exit_code": 1
+      },
+      {
+        "receipt": ".local/prefix-inventory/logs/20261015T205152.321611Z-PrefixInventory.json",
+        "source_sha256": "c73c5126c9bd7a8b4189fbf73ef7db5eddf58166cb169aa63a0a8811385bb38a",
+        "exit_code": 1
+      },
+      {
+        "receipt": ".local/prefix-inventory/logs/20261015T205215.058111Z-PrefixInventory.json",
+        "source_sha256": "2588aba9413cd56c21c336875c6601f111b4257125215363383a512e77c084ed",
+        "exit_code": 1
+      }
+    ],
+    "all_source_variants_and_logs_retained": true,
+    "previous_census_preserved_under_sha_named_ignored_path": true,
+    "one_accidental_positive_attempt_failed_for_missing_library_object_before_library_success": "retained; no stale output audited or promoted",
+    "deferred_guard": "one read-only layout job detected; native launch deferred",
+    "prior_accepted_sources_untouched": true
+  },
+  "layout": {
+    "exit_code": 1,
+    "findings": 183,
+    "owned_paths_only_findings": "new3source registration plus library public closure; parent-owned integration, no owned subject/naming violation",
+    "baseline_and_concurrent_findings_preserved": true
+  },
+  "whitespace": "No trailing whitespace/tabs/over100columns; canonical bytes equal verified scratch bytes. git diff --check passed.",
+  "native_children": "Every owned native child exited; shared lock released; no further native jobs planned. Shared native slot explicitly handed to root.",
+  "limits": [
+    "Full typed-tag DecidableEq explicit; controls use classical noncomputable equality. No byte or optimal compression theorem.",
+    "No parent-pointer decoder, root-first slot order, incremental slot stability, runtime/JSON refinement, or infinite occurrence closure.",
+    "Correlated source review and development are not root fresh complete closure acceptance.",
+    "No prior source, shared metadata, commit, branch, migration, or remote modifications."
+  ]
+}

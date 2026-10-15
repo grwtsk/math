@@ -1,0 +1,115 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "prefix-window-round",
+  "event": "selected-native-acceptance-and-source-bound-revision-consumers",
+  "at": "2026-10-15T20:57:38.537626+00:00",
+  "selected": [
+    {
+      "source": {
+        "path": "GRWTSK/Combinatorics/DirectedGraph/PrefixInventory.lean",
+        "sha256": "fa7395f0c55943562274019d96e97e25deaea20defdf9d6f2d8a12d029e743c9"
+      },
+      "native_receipt": {
+        "path": "evidence/Combinatorics/DirectedGraph/prefix-inventory-checks-2026-10-15.json",
+        "sha256": "0db58115ad71029a0fd0f0e3239111f964e8e7dc6401bf3a753b415824889447"
+      },
+      "owned_declarations_in_selected_closure": 219,
+      "selected_library_owned_count": 33,
+      "owned_modules": [
+        {
+          "declarations": 52,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding"
+        },
+        {
+          "declarations": 18,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences"
+        },
+        {
+          "declarations": 46,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.EdgeTrace"
+        },
+        {
+          "declarations": 21,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix"
+        },
+        {
+          "declarations": 34,
+          "module": "GRWTSK.Logic.FiniteSequences.IndexedDictionary"
+        },
+        {
+          "declarations": 33,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixInventory"
+        },
+        {
+          "declarations": 15,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixInventory"
+        }
+      ],
+      "integration": {
+        "path": "evidence/Combinatorics/DirectedGraph/prefix-inventory-integration-2026-10-15.json",
+        "sha256": "179b11bc0b28691f53859bfca1cfa813a146c3f3e366852da25d37e8c21db253"
+      }
+    },
+    {
+      "source": {
+        "path": "GRWTSK/Analysis/MellinTransform/CompactGaussianWindow.lean",
+        "sha256": "db195580ca2f4e4a941f13c71d285af377d2bb29ed7250db0f0b13570984cec5"
+      },
+      "native_receipt": {
+        "path": "evidence/Analysis/MellinTransform/compact-gaussian-window-checks-2026-10-15.json",
+        "sha256": "6df8ea1e52fb494c981c8fa0e4ae8c6479f0f2323058ec007745bc65eef4576c"
+      },
+      "owned_declarations_in_selected_closure": 118,
+      "selected_library_owned_count": 21,
+      "owned_modules": [
+        {
+          "declarations": 21,
+          "module": "GRWTSK.Analysis.PartitionOfUnity.DyadicAnnulus"
+        },
+        {
+          "declarations": 23,
+          "module": "GRWTSK.Analysis.MellinTransform.ReverseInversion"
+        },
+        {
+          "declarations": 20,
+          "module": "GRWTSK.Analysis.MellinTransform.LogarithmicGaussian"
+        },
+        {
+          "declarations": 22,
+          "module": "GRWTSK.Analysis.MellinTransform.NormalizedGaussian"
+        },
+        {
+          "declarations": 21,
+          "module": "GRWTSK.Analysis.MellinTransform.CompactGaussianWindow"
+        },
+        {
+          "declarations": 11,
+          "module": "GRWTSK.Analysis.MellinTransform.Checks.Positive.CompactGaussianWindow"
+        }
+      ],
+      "integration": {
+        "path": "evidence/Analysis/MellinTransform/compact-gaussian-window-integration-2026-10-15.json",
+        "sha256": "95bf8f94a1379ab50580fdf2d422833ae8cc0df054bd8c6b2ae5e7d214366342"
+      }
+    }
+  ],
+  "cache_revision": "626c8c53019622b42a9105bf50e3b5727de5cc24d61d822d41b42acf995f43f9",
+  "frontier": {
+    "path": "cache/research/prefix-window-frontier-2026-10-15.json",
+    "sha256": "9f7a67f291d6cfe0707b44e27fdb2ae748cc2037f2708926c11a2f334aef75d5"
+  },
+  "continuation": {
+    "path": "cache/coordination/continuations/2026-10-15-prefix-window.json",
+    "sha256": "1befe7d1fe6c8b3d23d205f0ded51755607acb6bae63b073a9c62595df4247da"
+  },
+  "decision": {
+    "path": "cache/decisions/prefix-inventory-v1.json",
+    "sha256": "f165d2e8c9274562f2e814987439b0401954359512d58b0fd76c20b94c0db26b"
+  },
+  "operational_consumer": {
+    "path": "evidence/Combinatorics/DirectedGraph/prefix-window-prefix-consumer-2026-10-15.json",
+    "sha256": "0088653892d19b048d5d8029ee4e411b161f3277a1cc73685ddb9927c2b61d83"
+  },
+  "limits": "Selected native mathematical contracts and bounded operational/source custody remain separate. No independent model validation, runtime refinement, full detector/whole-library/RH admission or remote effect.",
+  "remote_actions": []
+}
