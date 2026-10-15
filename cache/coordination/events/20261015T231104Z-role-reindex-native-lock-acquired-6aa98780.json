@@ -1,0 +1,10 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "role-reindex-reindex-formal",
+  "owner": "indexed_dictionary",
+  "at": "2026-10-15T23:11:04.074276+00:00",
+  "kind": "native-lock-acquired",
+  "source": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/RoleRelationReindex.lean",
+  "source_sha256": "540d490fef25e11bc4a45e1dfd44d588b10873ed3f99b6732ca0502f27cade1a",
+  "guard_competing_jobs": []
+}
