@@ -1,0 +1,66 @@
+{
+  "schema": "grl-rh-frozen-expected-targets-v1",
+  "context": "grwtsk/math@0242bb202aafc15c8212aee3015e9bf9002edb3e",
+  "scope": "source-level contracts frozen before this run generated their candidate proofs; no elaborated type export",
+  "root": "_root_.RiemannHypothesis",
+  "targets": [
+    {
+      "id": "Q0.family.v1",
+      "expected": "H(a,t;x^2+k*a*x+a^2-t^2) = -4*a^2*(k^2*a^2+(4-k^2)*t^2)"
+    },
+    {
+      "id": "Q0.single.v1",
+      "expected": "H(a,t;x^2+a*x+a^2-t^2) = -4*a^2*(a^2+3*t^2)"
+    },
+    {
+      "id": "Q0.uniform.v1",
+      "expected": "H(a,t;x^2+2*a*x+a^2-t^2) = -16*a^4"
+    },
+    {
+      "id": "Q0.complex.v1",
+      "expected": "sum of p(r)^2 over [t+i*a,t-i*a,-t+i*a,-t-i*a] equals complex coercion of real Newton-sum expression"
+    },
+    {
+      "id": "Q0.range.v1",
+      "expected": "0 < k^2 and k^2 <= 4 and a != 0 imply H(a,t;p_k) < 0"
+    },
+    {
+      "id": "Q0.boundary.v1",
+      "expected": "H(1,0;p_0)=0 and H(1,2;p_3)=44; neither is a counterexample to RH"
+    },
+    {
+      "id": "Q0.quantitative.v1",
+      "expected": "-epsilon <= H(a,t;p_2) implies 16*a^4 <= epsilon"
+    },
+    {
+      "id": "Q4.relative.v1",
+      "expected": "(forall epsilon>0, exists w lambda, 0<=w and 0<lambda and w<=lambda*(x+epsilon)) implies 0<=x"
+    },
+    {
+      "id": "Q4.finite.v1",
+      "expected": "a != 0, 0<=w, 0<lambda, w=lambda*H(a,t;p_2)+R, R<16*lambda*a^4 imply False"
+    },
+    {
+      "id": "Q6.root.v1",
+      "expected": "(forall s, existing NontrivialZetaZero s -> 0<=H(s.re-1/2,s.im;p_2)) iff _root_.RiemannHypothesis"
+    },
+    {
+      "id": "H0.exhaustion.v1",
+      "expected": "(forall N:Nat, RHThrough(N)) iff _root_.RiemannHypothesis"
+    },
+    {
+      "id": "H1.induction.v1",
+      "expected": "HeightScheme -> _root_.RiemannHypothesis; explicitly conditional"
+    },
+    {
+      "id": "Q1.orbit.v1",
+      "expected": "-I*(s-1/2) coordinates for each existing Klein-four symmetry; no analytic multiplicity conclusion"
+    },
+    {
+      "id": "P04.consumer.v1",
+      "expected": "existing GRWTSK.RiemannHypothesis.CCC.riemannHypothesis_of_pickupCrossPoly : existing PickupCrossPoly -> _root_.RiemannHypothesis"
+    }
+  ],
+  "exact_elaborated_types": null,
+  "independent_validation": "not performed; generated checks are same-session controls, not independent review"
+}
