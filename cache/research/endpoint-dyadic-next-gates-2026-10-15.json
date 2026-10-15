@@ -1,0 +1,104 @@
+{
+  "schema": "grwtsk.research.next-gates.v1",
+  "created_utc": "2026-10-15T20:42:25.551343+00:00",
+  "owner": "cache_taxonomy",
+  "status": "NOT_RUN",
+  "scope": "Bounded exact-source contracts; correlated same-team review is not independent validation. No new proof acceptance, native jobs, code, docs, shared registry or remote changes.",
+  "completed_reviews": [
+    {
+      "path": "evidence/Combinatorics/DirectedGraph/endpoint-section-source-review-2026-10-15.json",
+      "sha256": "af9472541e171bb4b17d0a40659290392bd49a795eada1c2d1301fd67dd9483b"
+    },
+    {
+      "path": "evidence/NumberTheory/LSeries/gaussian-dyadic-source-review-2026-10-15.json",
+      "sha256": "0d5b3a973f4271dfdb5b1585862519b6373b4419684b83f38e6a0970151f6279"
+    }
+  ],
+  "source_identity_manifests": [
+    {
+      "path": ".local/endpoint-dyadic-source-scout/c84ff313d7694097b4d2d5925551ed37/review-context.json",
+      "sha256": "1f0326f5f27d12cbe27e3264e07726176ab94eaab1b14222a73cc5e012a356e4"
+    },
+    {
+      "path": ".local/endpoint-dyadic-source-scout/c84ff313d7694097b4d2d5925551ed37/additional-primary-manifest.json",
+      "sha256": "5b6d023d209945c10373b4874d61a3c3ce56a4a424a9df57b8b2feaac5223f81"
+    }
+  ],
+  "additional_local_bindings": [
+    {
+      "path": "GRWTSK/Logic/FiniteSequences/IndexedDictionary.lean",
+      "sha256": "c01e5ff8067d652cafb42260ae283786c8cb78710c73eb23079a54bd05fbedff"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/PathUnfolding.lean",
+      "sha256": "8d5e2187d705ab49c52a41779b48b445d0baa223c3608ea6495e670ddac24757"
+    }
+  ],
+  "author_completions": [
+    {
+      "path": "cache/coordination/events/20261015T203748Z-endpoint-section-complete-195732d3.json",
+      "sha256": "554c94468ae99863bdbbdee0dc3e8149ab80cd669cad5deffae7dfc26ed7dd6c"
+    },
+    {
+      "path": "cache/coordination/events/gaussian-dyadic-complete-33635a167d3f4050a0469787103867f7.json",
+      "sha256": "959235e7c0b757d94c2480e1f6b1fbbe7613452631710554b2d88fe2fe53f142"
+    }
+  ],
+  "gates": [
+    {
+      "id": "finite-tagged-history-prefix-inventory",
+      "status": "NOT_RUN",
+      "subject": "Combinatorics/DirectedGraph, using Logic/FiniteSequences",
+      "input": "Finite rows : List (Key × PathUnfolding.Occurrence root), one fixed root/quiver. Equality compares complete EdgeTrace.TotalEdge tags: explicit DecidableEq or classical noncomputable mathematical choice, with no executable claim.",
+      "construction": "D=(rows.flatMap (fun row => List.inits (OccurrencePrefix.trace row.2))).dedup. Existing IndexedDictionary.Packed stores complete traces in D and original ordered references (key,D.idxOf(trace occurrence)).",
+      "obligations": [
+        "Prove d∈D iff some input trace extends d; prefix closure; ValidFrom root for every d; actual EdgeTrace.decode reconstruction with trace exactly d.",
+        "Consume existing unpack_map_indices to recover original keys, complete traces, order and multiplicity exactly. Recovering occurrences must use actual encode/decode equivalence and trace injectivity, not a new codec axiom.",
+        "Prove D.length ≤ sum over rows of (trace.length+1)."
+      ],
+      "controls": [
+        "Empty rows→empty D; singleton origin→[[]].",
+        "Bool parallel one-edge histories give distinct tagged children sharing only[] despite equal endpoints.",
+        "Repeated rows retain separate ordered references even if their payload is shared."
+      ],
+      "reuse_anchors": "IndexedDictionary.Packed30/unpack40/unpack_map_indices94; OccurrencePrefix.trace36/trace_injective39/reachable_iff_prefix52; EdgeTrace.TotalEdge34/ValidFrom66/validFrom_append_iff81/decode123/encode_decode131; PathUnfolding.Occurrence41/ofPath55. Existing pinned Mathlib List.mem_inits204/length_inits291.",
+      "limits": "Finite shared prefix identity inventory only. GCA, parent-pointer/edge-only reconstruction, incremental slot stability, byte/optimal compression and Python/JSON refinement remain separate. Endpoints never replace complete tags; no permission/proof authority."
+    },
+    {
+      "id": "exact-compact-gaussian-window",
+      "status": "NOT_RUN",
+      "subject": "Analysis/MellinTransform",
+      "primary": "openai/math@1581d4cbdd69a0faf34b2089614fe2a814316a6a: GaussianWindows.lean SHA045f00d06e64c005c0d37031c3842152d959fea2609ce4cb2f4916f7485f8f50 blob227f98000f2a0b3c1572a76dc2e33eec29f5c402. GaussianLow.lean SHA3a37f28e065cc4c54fbd92e44a08cf0dd03ac6ae1cebc0bba46203be74721bd6 blob2da8c38a79c609a386e61449e0131c4e40f6ea1f; actual gaussianDyadicSchwartz13.",
+      "object": "G(Z,j,y)=A(y)*P((2:ℝ)^j*y/Z)/(Real.sqrt y:ℂ), j:ℕ, exact normalized P and current annulus A. Use their Analysis modules without a NumberTheory detector dependency.",
+      "obligations": [
+        "Prove zero for y≤1/2 and y≥2, and compact support in[1/2,2], for arbitrary Z.",
+        "For Z>0 prove ContDiff ℝ ∞ G via the positive-argument real-log formula/nonzero square root when y>0, and a locally zero expression otherwise. Preserve the source premise without asserting necessity.",
+        "For y>0 prove(sqrt y:ℂ)*G(Z,j,y)=A(y)*P(2^j*y/Z), independently of Z.",
+        "Package this exact G as a SchwartzMap using existing HasCompactSupport.toSchwartzMap; the constructor is reuse."
+      ],
+      "controls": [
+        "At j0,Z1,y3/4 prove A>0,P≠0,sqrt(3/4)≠1: omitting1/sqrt changes the actual weighted identity. y1 cannot detect this error.",
+        "Do not claim Z0 is nonsmooth: totalized P0 may leave a smooth cutoff/sqrt expression.",
+        "Prove the concrete wrong-window counterexample before the sole intended negative consumer omits its factor."
+      ],
+      "limits": "GaussianLow.physicalSpectralRow_eq_dyadic_inverse16 still needs actual characters, maximal-prime set, fixed bad primes, support, calibration, ideal row/norm suppliers. Neither this window nor coefficient-one reassembly admits that theorem. Mellin convergence/vertical integrability/inversion require actual further suppliers, no assumed wrapper or RH continuation."
+    }
+  ],
+  "pinned_mathlib": {
+    "pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "ListInfix": {
+      "path": "Mathlib/Data/List/Infix.lean",
+      "sha256": "e43b13698196ec82262baa7c14272090f1d26d2bfa593b45582f487665506560",
+      "git_blob": "faa5479209cc27ddc5858209c7a4afcd3cf33cee",
+      "credit": "Mario Carneiro; Apache-2.0"
+    },
+    "SchwartzBasic": {
+      "path": "Mathlib/Analysis/Distribution/SchwartzSpace/Basic.lean",
+      "sha256": "419ecc0c5e5041be90969b55722b67e368c253d62c75e65209a749a031602cd0",
+      "git_blob": "3662f5e0037dafdaa62d8661e27c4dac33ed4858",
+      "api": "HasCompactSupport.toSchwartzMap555",
+      "credit": "Moritz Doll; Apache-2.0"
+    }
+  },
+  "coordination_and_preservation": "Graph findings: indexed_dictionary; analytic findings: cache_adapter. Selected exact source bytes/API anchors were read back. Preserve Apache/MIT and named author credit through linked reviews, all earlier failed/stale receipts and incoming native NOT_RUN statuses. Root owns frontier/cursor and native acceptance."
+}

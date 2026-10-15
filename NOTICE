@@ -145,3 +145,23 @@ Patrick Massot and Louis (Yiyang) Liu retain dominated-convergence/integral
 interchange credit, alongside the Gaussian/Mellin authors named above.
 Human direction: grwtsk contributors; local formalization/checking:
 OpenAI Codex. No contour continuation, RH supplier or independent validation.
+
+Smooth dyadic annulus and Gaussian reconstruction
+------------------------------------------------
+GRWTSK/Analysis/PartitionOfUnity/DyadicAnnulus.lean and
+GRWTSK/NumberTheory/LSeries/GaussianDyadic.lean retain Apache-2.0 terms.
+Exact annulus and selected partition/reassembly proof patterns:
+openai/math@1581d4cbdd69a0faf34b2089614fe2a814316a6a,
+lean/OAI/NumberTheory/DirichletL/Detector/GaussianPartition.lean,
+raw SHA256 e8c07b6a103deb0f0e65277c1a06b5035a36482560d9ac5c6389eaf4c783277b;
+GaussianDecomposition.lean in that directory,
+raw SHA256 494752f7dcd2e0916be5e4d3c7a64c24e5551a9bc5a5f278200e46f068ebf389.
+GaussianWindows.lean is comparison context only, raw SHA256
+045f00d06e64c005c0d37031c3842152d959fea2609ce4cb2f4916f7485f8f50;
+its optional square-root window API and surrounding ideal detector are not
+admitted by the local natural-number consumer. Mathlib SmoothTransition
+copyright (c) 2020 Sebastien Gouezel, with authors Sebastien Gouezel and
+Yury Kudryashov, retains Apache-2.0; infinite-sum and prior Gaussian/Mellin
+author notices remain upstream. Human direction: grwtsk contributors;
+local adaptation/formalization/checking: OpenAI Codex. No mathematical
+novelty, whole-library acceptance, Haar-mass normalization or RH supplier.

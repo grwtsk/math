@@ -1,0 +1,10 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "endpoint-section-formal",
+  "owner": "indexed_dictionary",
+  "at": "2026-10-15T20:32:28.165871+00:00",
+  "kind": "native-lock-acquired",
+  "source": "GRWTSK/Combinatorics/DirectedGraph/EndpointSection.lean",
+  "source_sha256": "d2cc9ff5f427ca5bde321b3f6ba64254d1f1f7554f86335aaf40c0ca7c52966c",
+  "guard_competing_jobs": []
+}
