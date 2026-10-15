@@ -1,0 +1,45 @@
+/-
+Human mathematical direction: R.A. Jacob Martone.
+Candidate formalization assistance: OpenAI ChatGPT. MIT.
+CANDIDATE_SOURCE_ONLY. This file has not been elaborated or axiom-audited.
+-/
+import Mathlib.Data.Nat.Totient
+import Mathlib.Tactic
+
+set_option autoImplicit false
+
+namespace GRWTSK.NumberTheory.CoprimeAdditive
+
+/-- A positive primitive solution of `a + b = c`. -/
+structure PrimitiveTriple where
+  a b c : ℕ
+  a_pos : 0 < a
+  b_pos : 0 < b
+  add_eq : a + b = c
+  coprime : a.Coprime b
+
+/-- The additive equation transports coprimality to all three pairs. -/
+theorem PrimitiveTriple.pairwiseCoprime (t : PrimitiveTriple) :
+    t.a.Coprime t.b ∧ t.a.Coprime t.c ∧ t.b.Coprime t.c := by
+  rcases t with ⟨a, b, c, ha, hb, hadd, hab⟩
+  subst c
+  exact ⟨hab, Nat.coprime_self_add_right.mpr hab,
+    Nat.coprime_add_self_right.mpr hab.symm⟩
+
+/-- Coprime first coordinates at a fixed additive total. -/
+def primitiveFirstCoordinates (c : ℕ) : Finset ℕ :=
+  (Finset.range c).filter (c.Coprime ·)
+
+/-- The fixed-total primitive count is Euler's totient by its pinned definition. -/
+theorem card_primitiveFirstCoordinates (c : ℕ) :
+    #(primitiveFirstCoordinates c) = Nat.totient c := by
+  rfl
+
+/-- The finite primitive-triple count used by the exact producer. -/
+def primitiveCount (X : ℕ) : ℕ :=
+  ∑ c ∈ Finset.Icc 2 X, Nat.totient c
+
+@[simp] theorem primitiveCount_zero : primitiveCount 0 = 0 := by
+  simp [primitiveCount]
+
+end GRWTSK.NumberTheory.CoprimeAdditive

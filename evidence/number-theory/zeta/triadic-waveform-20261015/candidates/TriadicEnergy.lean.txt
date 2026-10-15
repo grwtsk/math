@@ -1,0 +1,32 @@
+/-
+Human mathematical direction: R.A. Jacob Martone.
+Candidate formalization assistance: OpenAI ChatGPT. MIT.
+CANDIDATE_SOURCE_ONLY. Not natively checked.
+-/
+import Mathlib.Data.Complex.Basic
+import Mathlib.Tactic
+
+set_option autoImplicit false
+
+namespace GRWTSK.Analysis.TriadicEnergy
+
+/-- Squared Euclidean energy of a complex channel. -/
+def energy (z : ℂ) : ℝ := z.re ^ 2 + z.im ^ 2
+
+/-- Real Hermitian cross term, without discarding its sign. -/
+def cross (z w : ℂ) : ℝ := z.re * w.re + z.im * w.im
+
+/-- Complete three-channel energy, including all three pairwise interactions. -/
+theorem energy_add_three (x y z : ℂ) :
+    energy (x + y + z) =
+      energy x + energy y + energy z +
+      2 * cross x y + 2 * cross x z + 2 * cross y z := by
+  simp only [energy, cross, Complex.add_re, Complex.add_im]
+  ring
+
+/-- Deleting mixed terms changes the value even in the smallest example. -/
+theorem diagonal_does_not_determine_total :
+    energy (1 : ℂ) + energy (-1 : ℂ) = 2 ∧ energy ((1 : ℂ) + (-1 : ℂ)) = 0 := by
+  norm_num [energy]
+
+end GRWTSK.Analysis.TriadicEnergy
