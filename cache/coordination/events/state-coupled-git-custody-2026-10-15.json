@@ -1,0 +1,18 @@
+{
+  "schema": "repository-agent-event-v1",
+  "at": "2026-10-15T23:45:08.187298+00:00",
+  "task": "state-coupled-round",
+  "event": "actual-git-and-cleanup-observation",
+  "initial_main": "5deda578ff880fc4649d220e84449f60453a2139",
+  "main_head": "d531c98a56693be6f7e4a0bc23f21dbcaffed1ec",
+  "origin_main_observed": "d531c98a56693be6f7e4a0bc23f21dbcaffed1ec",
+  "worktrees": "worktree /Users/think/Desktop/math\nHEAD d531c98a56693be6f7e4a0bc23f21dbcaffed1ec\nbranch refs/heads/main",
+  "local_branches": "main d531c98a56693be6f7e4a0bc23f21dbcaffed1ec",
+  "stale_worktree_prune_dry_run": "empty",
+  "stale_worktree_prune": "completed; empty",
+  "redundant_local_branches": "none; only main retained",
+  "native_children": "all author/root selected jobs exited and shared lock released before this event",
+  "remote_actions": [],
+  "concurrent_history": "Initial clean main5deda578 matching observed origin/main. Prior incoming23archive/tool paths and six inert Lean candidates nativeNOT_RUN retained. No source/migration take-over, fetch/push or remote writes by root.",
+  "limits": "Git/source custody only; mathematical acceptance is confined to separate exact selected native receipts."
+}

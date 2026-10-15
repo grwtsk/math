@@ -1,0 +1,217 @@
+{
+  "schema": "grwtsk.source-review.v1",
+  "task": "state-coupled-source-scout",
+  "created_utc": "2026-10-15T23:41:23.197536+00:00",
+  "reviewer": "cache_taxonomy",
+  "review_scope": "Correlated same-team exact-source/premise/control/credit review; not independent validation.",
+  "native_validation": {
+    "performed_by_this_review": false,
+    "status": "NOT_RUN",
+    "authority": "Separate root-owned fresh trust-zero/fatal replay/full owned-transitive audit. Generic cutoff and Gaussian consumer share one joint analytic native census, counted once; this review does not admit either."
+  },
+  "author_freeze": {
+    "path": "cache/coordination/events/gaussian-coupled-source-freeze-eee01ed1ff2c40a48a445fea94e78c51.json",
+    "sha256": "a3ca4c757a1e59879d351fd188d85283e8ad72808b0391561d19142982e3030b",
+    "bytes": 1155
+  },
+  "source_context": {
+    "path": ".local/state-coupled-source-scout/603f567968604c9ab808a5ae5307149c/review-context-r2.json",
+    "sha256": "f000aa204eb6db9efbe864aec5f00af9668abbbcb190a15e4548476af4de0ff9",
+    "bytes": 22096
+  },
+  "source_manifest": {
+    "path": ".local/state-coupled-source-scout/603f567968604c9ab808a5ae5307149c/primary-manifest.json",
+    "sha256": "10f3d0d39e958c4a6ef1ba1b759c14ffb4e17b3acd62d2d8d8dd19f04b081a45",
+    "bytes": 12405
+  },
+  "primary_OpenAI": [
+    {
+      "repository": "openai/math",
+      "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "path": "lean/OAI/NumberTheory/DirichletL/Detector/GaussianCoupled.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/Detector/GaussianCoupled.lean",
+      "archive": ".local/state-coupled-source-scout/603f567968604c9ab808a5ae5307149c/GaussianCoupled.lean",
+      "sha256": "21a6117120a386823e2f596b2b5e2e52e7cf4ffebddffac10de8ed320ba9cb5e",
+      "git_blob": "570522241d9ec0d34f26a634c7b5784c332503e8",
+      "bytes": 3288,
+      "native_status": "NOT_RUN"
+    },
+    {
+      "repository": "openai/math",
+      "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "path": "lean/OAI/NumberTheory/DirichletL/Mellin/LogProfiles.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/Mellin/LogProfiles.lean",
+      "archive": ".local/state-coupled-source-scout/603f567968604c9ab808a5ae5307149c/LogProfiles-pinned.lean",
+      "sha256": "ff8735e421a2ee659df15272704206f2d114d7e2a849e8a755d545508f4038be",
+      "git_blob": "4ca0df6768674c87654fe3637be3851c8c6d12cc",
+      "bytes": 66745,
+      "native_status": "NOT_RUN"
+    }
+  ],
+  "primary_license": "OpenAI project Apache-2.0,no individual source header author observed; exact pinned1581d4cbdd69a0faf34b2089614fe2a814316a6a rawSHA/Gitblob preserved. Upstream4.34.1 differs from local4.33; no toolchain upgrade/source acceptance transfer.",
+  "actual_Anthropic_primary": [
+    {
+      "repository": "anthropics/formal-math",
+      "pin": "e1a4e6508154ea59f030480661590a9fe3018011",
+      "path": "3sum-apsp/ThreeSumApsp/Lang/Logic.lean",
+      "url": "https://raw.githubusercontent.com/anthropics/formal-math/e1a4e6508154ea59f030480661590a9fe3018011/3sum-apsp/ThreeSumApsp/Lang/Logic.lean",
+      "archive": ".local/state-coupled-source-scout/603f567968604c9ab808a5ae5307149c/AnthropicLogic.lean",
+      "sha256": "859a2842fc684b359d819d0181e0143e8d6576c70f4be725f3a830947bdeb4ee",
+      "git_blob": "508e2040014eeadd11b6a8e1dd68463a9db8fe44",
+      "bytes": 13979,
+      "native_status": "NOT_RUN"
+    },
+    {
+      "repository": "anthropics/formal-math",
+      "pin": "e1a4e6508154ea59f030480661590a9fe3018011",
+      "path": "zeta23/Zeta23/FromPNTPlus/Fourier.lean",
+      "url": "https://raw.githubusercontent.com/anthropics/formal-math/e1a4e6508154ea59f030480661590a9fe3018011/zeta23/Zeta23/FromPNTPlus/Fourier.lean",
+      "archive": ".local/state-coupled-source-scout/603f567968604c9ab808a5ae5307149c/AnthropicFourier.lean",
+      "sha256": "8d53e47135861fd5afaa2ff273737e09353dc9ae0ba8b6875baa16f3a167b1bc",
+      "git_blob": "4e3f24af43b78dfe109a344c5517956c1cd4fbfe",
+      "bytes": 9623,
+      "native_status": "NOT_RUN"
+    }
+  ],
+  "Anthropic_credit": "PrimeNumberTheoremAnd contributors/Apache-2.0; original upstream6a380f0c4658c04a420a9eb00b1ed62a1e3fde01 tagv4.32.2 filePrimeNumberTheoremAnd/Fourier.lean; Anthropic2026 port modifications. Actual header credits preserved, no sole Anthropic authorship claim.",
+  "Anthropic_comparison": "Actual Lang/Logic execution/append rules retain source-language states/limits/costs; actual public Fourier port retains pointwise differentiability/integrability/nonzero-frequency premises. Neither supplies this actual cutoff or active finite-family Gaussian separation theorem. No analogue or source acceptance transfer.",
+  "arxiv_context": {
+    "analysis": {
+      "author": "Gerald Kaiser",
+      "title": "Wavelet Filtering with the Mellin Transform",
+      "id": "math-ph/0108013v1",
+      "url": "https://arxiv.org/pdf/math-ph/0108013v1",
+      "snapshot_sha256": "c20738e4cf5dc3f1c4d03bea90b971a1fda5f43fb630f308fe147986f53d89a2",
+      "scope": "Section1 cycles-frequency2pi Fourier convention only; wavelet amplitude/scale conventions differ. No present cutoff/separation/integrability theorem transfers.",
+      "license": "arxiv assumed nonexclusive1991-2003,citation/paraphrase only."
+    }
+  },
+  "preservation": "No shared source/docs/registries/native/Git/remote writes. Failed/stale variants, corrected raw anchors, historical source gaps and incoming custody/NOT_RUN retained.",
+  "subject": "Actual finite-family Gaussian separation using an active compact cutoff",
+  "local_sources": [
+    {
+      "path": "GRWTSK/Analysis/MellinTransform/GaussianCoupledSeparation.lean",
+      "sha256": "904f3991a65106ee9c0a93f575ba536eec2645d64cff7ff3d9a16de8f389e6fc",
+      "bytes": 6522,
+      "archive": ".local/state-coupled-source-scout/603f567968604c9ab808a5ae5307149c/frozen-local/GRWTSK/Analysis/MellinTransform/GaussianCoupledSeparation.lean",
+      "declarations": {
+        "logPhase": 32,
+        "logPhase_add": 35,
+        "logPhase_sum": 46,
+        "coupled_phase_product": 53,
+        "gaussianLogWindow_inversion": 61,
+        "gaussian_coupled_integrable": 73,
+        "gaussian_coupled_separation": 85,
+        "gaussian_coupled_family": 100
+      }
+    },
+    {
+      "path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianCoupledSeparation.lean",
+      "sha256": "77a69b9e75bcf5d59a8cff75786b2ca900d9d14e79aad0ccc939a182980baff4",
+      "bytes": 5517,
+      "archive": ".local/state-coupled-source-scout/603f567968604c9ab808a5ae5307149c/frozen-local/GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianCoupledSeparation.lean",
+      "declarations": {
+        "actual_cutoff_center": 12,
+        "actual_cutoff_boundary": 15,
+        "actual_negative_radius_compact": 18,
+        "boxWindow": 21,
+        "boxWeight": 22,
+        "boxPoint": 23,
+        "boxWindow_support": 25,
+        "actual_two_factor_family": 30,
+        "actual_two_factor_integral": 42,
+        "actual_empty_family": 55,
+        "zero_cutoff_compact": 64,
+        "actual_zero_product": 69,
+        "zero_cutoff_density": 76,
+        "profile_one_ne_zero": 85,
+        "actual_missing_active_false": 95,
+        "actual_zero_cutoff_not_active": 101,
+        "actual_empty_phase": 106
+      }
+    },
+    {
+      "path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianCoupledMissingActive.lean",
+      "sha256": "2ffc3c2f2e3e173703e599c0907e6fac798142dfcf5556f4b69eae29ab3b38f8",
+      "bytes": 1086,
+      "archive": ".local/state-coupled-source-scout/603f567968604c9ab808a5ae5307149c/frozen-local/GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianCoupledMissingActive.lean",
+      "declarations": {}
+    }
+  ],
+  "generic_cutoff_dependency": {
+    "path": "GRWTSK/Analysis/Calculus/CompactCutoff.lean",
+    "sha256": "c6ff2d2f5346607bb62c7234a4bfe35a0e308cc427fa8c9c26ac6b06b7838172",
+    "bytes": 4290,
+    "archive": ".local/state-coupled-source-scout/603f567968604c9ab808a5ae5307149c/frozen-local/GRWTSK/Analysis/Calculus/CompactCutoff.lean",
+    "declarations": {
+      "compactCutoff": 26,
+      "compactCutoff_smooth": 29,
+      "compactCutoff_zero_left": 34,
+      "compactCutoff_zero_right": 38,
+      "compactCutoff_tsupport_subset": 42,
+      "compactCutoff_compact": 53,
+      "compactCutoff_one": 56,
+      "schwartzCutoff": 63,
+      "schwartzCutoff_compact": 68,
+      "schwartzCutoff_one": 71,
+      "coupled_cutoff_active": 75
+    }
+  },
+  "other_actual_dependencies": [
+    {
+      "path": "GRWTSK/Analysis/MellinTransform/GaussianLogWindow.lean",
+      "sha256": "258fdbb7e3517ae4f30db165e9281ceb2c80d595d5a891523131c365c6ae1550",
+      "bytes": 12487
+    },
+    {
+      "path": "GRWTSK/Analysis/MellinTransform/NormalizedGaussian.lean",
+      "sha256": "a0ed0dbf644601887df128536951a9c3e17ecf42970069a13acdfcb93518e3bf",
+      "bytes": 6685
+    }
+  ],
+  "pinned_mathlib": [
+    {
+      "repository": "leanprover-community/mathlib4",
+      "pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "path": "Mathlib/Analysis/Distribution/SchwartzSpace/Fourier.lean",
+      "archive": ".local/state-coupled-source-scout/603f567968604c9ab808a5ae5307149c/mathlib/Mathlib/Analysis/Distribution/SchwartzSpace/Fourier.lean",
+      "sha256": "8f74642098d0390e08eae980f72ba29801c46b03446dae2fd20eff9ba0f08737",
+      "git_blob": "29b759c53de55f6eee6359d7603e7a12c94d70e1",
+      "bytes": 15347,
+      "header_credit": "/-\nCopyright (c) 2024 Sébastien Gouëzel. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: Sébastien Gouëzel, Moritz Doll\n-/\nmodule",
+      "native_status": "NOT_RUN"
+    },
+    {
+      "repository": "leanprover-community/mathlib4",
+      "pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "path": "Mathlib/Analysis/Fourier/FourierTransform.lean",
+      "archive": ".local/state-coupled-source-scout/603f567968604c9ab808a5ae5307149c/mathlib/Mathlib/Analysis/Fourier/FourierTransform.lean",
+      "sha256": "589a62a5719d3912b7f16b834c47c24a1f782ca025920b1849fc3cf788609412",
+      "git_blob": "afb0c9ea45eb72c9c8a6b9db78f5deceb52a7193",
+      "bytes": 28060,
+      "header_credit": "/-\nCopyright (c) 2023 David Loeffler. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: David Loeffler\n-/\nmodule",
+      "native_status": "NOT_RUN"
+    }
+  ],
+  "finding": "No actionable omitted positive-scale/inverse Fourier/active-cutoff/frequency-integrability or finite-family quantifier premise observed in the frozen coupled source and controls.",
+  "exact_scope": {
+    "phase": "Actual phase(t,y)=exp(+2*pi*i*t*y), with proved add/zero/norm1/finite-sum-product laws. This is positive inverse phase; actual density uses pinned negative2pi forward Fourier and volume.",
+    "actual_inverse": "Use actual Schwartz inverse equation for actual gaussianLogWindow, evaluate it, unfold pinned inverse integral and actual positive-R profile identity. This proves V(x)*P(R exp x)=integral phase(t,x)*actualdensity(V,R)(t) forR>0; no desired evaluation assumption.",
+    "actual_integrability": "gaussian_coupled_integrable is proved for EVERY realR: norm1 continuous phase, actual Schwartz density Integrable and a finite constant product W_i(y_i). No smoothness/integrability of W itself or Fubini hypothesis.",
+    "pointwise_separation": "For actual compact Schwartz V and R>0, only nonzero product requires active cutoff V(sum a_i*y_i)=1. Zero product branch is handled separately. Actual finite phase-product and scalar multiplication of actual inverse produce exact separation formula.",
+    "constructed_family": "For finite index type, arbitrary pointwise W_i, realweightsa_i and nonnegative radiiM_i with actual support bound, defineT=sum|a_i|M_i>=0 and actualV=schwartzCutoffT. Prove active from support boxes using generic cutoff. V chosen before ALL positiveR and parameter tuples y; actual integrability and identity are bundled.",
+    "moment_bundle": "For every realA,naturalJ, actual current GaussianLogWindow density moment supplies C(V,A,J)>0 beforeALLR>0, actual weighted norm Integrable plus powerbound. No newly bundled dyadic/remote sum and no DensityMoments import/wrapper: source imports only genericCompactCutoff+GaussianLogWindow.",
+    "source_correspondence": "Selected exact primary GaussianCoupled definition/active-separation/family theorem and LogProfiles inverse/phase/active supplier compared. Actual local explicit cutoff and additional exported frequency-integrability producer are proved, not assumed. No completed/physical/ideal/Hecke/calibration port."
+  },
+  "controls": {
+    "nontrivial_family": "Actual two Bool factors with rough indicator boxWindow, weights-1 and2, points1/4 and1/2 give nonzero product and weighted sum3/4. Actual integral has phases at1 and-1/4 with exact2pi normalization and produced cutoff3. Demonstrates W need not be smooth.",
+    "empty_and_zero": "Actual empty index family has product1,sum0 and genuine inverse evaluation using radius0 cutoff; actual zero product imposes no active condition even for literal zero function cutoff. Radius0 cutoff is not the literal zero function.",
+    "missing_active_counter": "Positive source proves literal zero Schwartz cutoff makes actual logwindow/density0, actual integral0, while P1 equals a nonzero normalized coefficient. It proves actual failed identity and failed active implication. Sole negative then supplies a real reflexive inequality instead of required active implication; exact native error is root-owned.",
+    "dependency_boundary": "Positive imports only actual coupled library, no extra prior Positive or local proof fixture modules. Generic cutoff controls share this analytic closure; native counts must not be summed twice."
+  },
+  "credit_limits": [
+    "Source Apache-2.0,OpenAI project and Mathlib individual authors Sebastien Gouezel/Moritz Doll/David Loeffler plus transition/Schwartz notices retained, exact original diacritics in source headers. Human direction R.A. Jacob Martone/formal implementation OpenAI Codex.",
+    "No full arithmetic corrected sums, common finite physical-row support, row majorants, ideal/Hecke/calibration/detector/continuation/RH claim. New actual annular quotient/log-slot supplier is future NOT_RUN.",
+    "No novelty, independent validation, runtime/PythonJSON/hashIO refinement, policy or proof authority inferred."
+  ]
+}

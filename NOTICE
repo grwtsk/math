@@ -378,3 +378,25 @@ Human direction: R.A. Jacob Martone; adaptation/formalization/checking:
 OpenAI Codex. Correlated source/model review is not independent validation.
 Coupled separation/cutoff-active, physical-row, ideal/Hecke/calibration and
 RH suppliers remain separate; no operational cache refinement is inferred.
+
+Actual compact cutoffs and coupled Gaussian separation
+-----------------------------------------------------
+GRWTSK/Analysis/Calculus/CompactCutoff.lean and
+GRWTSK/Analysis/MellinTransform/GaussianCoupledSeparation.lean retain Apache-2.0.
+Proof slices adapt openai/math@1581d4cbdd69a0faf34b2089614fe2a814316a6a,
+lean/OAI/NumberTheory/DirichletL/Detector/GaussianCoupled.lean
+(raw SHA256 21a6117120a386823e2f596b2b5e2e52e7cf4ffebddffac10de8ed320ba9cb5e,
+Git blob 570522241d9ec0d34f26a634c7b5784c332503e8) and
+lean/OAI/NumberTheory/DirichletL/Mellin/LogProfiles.lean
+(raw SHA256 ff8735e421a2ee659df15272704206f2d114d7e2a849e8a755d545508f4038be,
+Git blob 4ca0df6768674c87654fe3637be3851c8c6d12cc).
+OpenAI remains the upstream project author; no individual author occurred in
+those headers. LICENSES/OpenAI-Apache-2.0.txt retains project terms.
+The actual smooth-transition cutoff construction adapts the idea to the pinned
+Mathlib API; Mathlib Analysis/SpecialFunctions/SmoothTransition.lean retains
+Sébastien Gouëzel and Yury Kudryashov's individual author credit and Apache-2.0.
+Prior Fourier inverse, Schwartz, Gaussian, quiver/path/list and integration
+credits remain retained. Human direction: R.A. Jacob Martone; adaptation,
+formalization and checking: OpenAI Codex. Correlated model/source review is not
+independent validation. Physical/common-support, row-majorant, ideal/Hecke/
+calibration, original detector and RH suppliers remain separate and open.

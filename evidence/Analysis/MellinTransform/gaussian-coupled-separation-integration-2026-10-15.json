@@ -1,0 +1,192 @@
+{
+  "schema": "selected-mathematical-integration-v1",
+  "at": "2026-10-15T23:46:58.587658+00:00",
+  "source": {
+    "path": "GRWTSK/Analysis/MellinTransform/GaussianCoupledSeparation.lean",
+    "sha256": "904f3991a65106ee9c0a93f575ba536eec2645d64cff7ff3d9a16de8f389e6fc"
+  },
+  "native_receipt": {
+    "path": "evidence/Analysis/MellinTransform/gaussian-coupled-separation-checks-2026-10-15.json",
+    "sha256": "55bb4b6b848ef44337c21869d39998a20cbcca2c4adf97612afedb87ea774263"
+  },
+  "source_review": {
+    "path": "evidence/Analysis/MellinTransform/gaussian-coupled-separation-source-review-2026-10-15.json",
+    "sha256": "5efb5e9e92e5ebe38c4fd672a88d3cde090e1217b3ed33166ffa23cfe3da218e"
+  },
+  "owned_declarations": 159,
+  "selected_library_owned_count": 14,
+  "owned_modules": [
+    {
+      "declarations": 13,
+      "module": "GRWTSK.Analysis.Calculus.CompactCutoff"
+    },
+    {
+      "declarations": 23,
+      "module": "GRWTSK.Analysis.MellinTransform.ReverseInversion"
+    },
+    {
+      "declarations": 20,
+      "module": "GRWTSK.Analysis.MellinTransform.LogarithmicGaussian"
+    },
+    {
+      "declarations": 22,
+      "module": "GRWTSK.Analysis.MellinTransform.NormalizedGaussian"
+    },
+    {
+      "declarations": 9,
+      "module": "GRWTSK.Analysis.MellinTransform.GaussianLogFlow"
+    },
+    {
+      "declarations": 13,
+      "module": "GRWTSK.Analysis.Fourier.SchwartzMoments"
+    },
+    {
+      "declarations": 21,
+      "module": "GRWTSK.Analysis.MellinTransform.GaussianLogWindow"
+    },
+    {
+      "declarations": 14,
+      "module": "GRWTSK.Analysis.MellinTransform.GaussianCoupledSeparation"
+    },
+    {
+      "declarations": 24,
+      "module": "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianCoupledSeparation"
+    }
+  ],
+  "receipt_accounting": "Joint analytic closure shared by CompactCutoff and GaussianCoupledSeparation; count once, selected module count separately.",
+  "operational_replay_guards": {
+    "path": "evidence/Combinatorics/DirectedGraph/state-coupled-operational-controls-2026-10-15.json",
+    "sha256": "7d1bb1c06030378f91bd2e0c799893038cf3378438f07dbea334b003eab85f48"
+  },
+  "exact_contracts": [
+    "logPhase(t,y)=exp(2*pi*i*t*y), the exact positive inverse-Fourier convention. Actual phase sum/product identity, including the empty index type.",
+    "For every realR, every actual compact Schwartz V, finite arbitrary W and real a,y: the exact separation frequency integrand is Integrable.",
+    "For R>0 and active premise (product_i W_i(y_i)≠0→V(sum_i a_i*y_i)=1): product_i W_i(y_i)*P(R*exp(sum_i a_i*y_i)) equals integral_t product_i[W_i(y_i)*logPhase(t,a_i*y_i)]*actual gaussianJointDensity(V,R,t).",
+    "The inverse evaluation is proved using the actual Schwartz Fourier inverse and the existing positive-profile equality; the nonzero and zero-product cases are proved separately.",
+    "If each M_i≥0 and W_i(z)≠0→|z|≤M_i, choose the actual common Schwartz cutoff V=schwartzCutoff(sum_i|a_i|M_i) before everyR and every evaluation tupley. This V supplies separation plus actual integrand Integrable for allR>0. No smoothness ofW is assumed.",
+    "For the same V: for every realA and naturalJ there exists C>0, chosen before R>0, such that the actual density norm weighted by (1+normt)^J is Integrable and its integral≤C*R^(-A). This calls the admitted GaussianLogWindow moment theorem with its actual suppliers."
+  ],
+  "accepted_controls": [
+    "actual_two_factor_family: discontinuous bounded indicator factors on Bool, weights2 and-1, actual common cutoff and all moments.",
+    "actual_two_factor_integral: y_true=1/2,y_false=1/4, actual V=schwartzCutoff3 and positive-scale P(R*exp(3/4)) integral with phases1 and-1/4.",
+    "actual_empty_family: product1, weighted sum0, V=schwartzCutoff0, actual P(R)=integral density for everyR>0.",
+    "actual_zero_product: actual zero factor product and zero cutoff, theorem applies via vacuous active implication.",
+    "zero_cutoff_density: actual zero cutoff gives actual density0 for every realR and frequency.",
+    "profile_one_ne_zero: exact normalized profileP1≠0, with its normalization supplier.",
+    "actual_missing_active_false: literal V0, Unit-family all factors1, weights/evaluation0,R1 gives actual inverse RHS0 whileP1≠0.",
+    "actual_zero_cutoff_not_active proves the active implication is actually false.",
+    "Strict negative imports accepted positive counterproofs and supplies 0≤0 as active implication; sole Application type mismatch."
+  ],
+  "open_obligations": [
+    "PositiveR is retained for the profile identity and uniform power bound. This is not a pointwise necessity theorem for allR0 data.",
+    "No ideal-counting, arithmetic coefficient, completed physical-row, Hecke/calibration or RH statement is inferred.",
+    "No new coupled dyadic or remote moment sum theorem is asserted. The admitted GaussianDensityMoments results remain exact separately available downstream for this actual compactV."
+  ],
+  "contribution_roles": [
+    "R.A. Jacob Martone: human mathematical direction",
+    "OpenAI Codex: local formalization/adaptation/checking; correlated source/model review",
+    "Lean/Mathlib: named upstream authors, definitions/proofs and licensing retained"
+  ],
+  "limits": [
+    "Fresh immutable complete selected local import closure and actual positive controls; trust0/fatal/full owned+transitive-axiom audit, only propext/Classical.choice/Quot.sound.",
+    "Generated local object families frozen/rechecked; clean pinned dependency objects reused/fingerprinted, not cold rebuilt. Whole umbrella not replayed.",
+    "No independent model validation, novelty, runtime refinement, proof/permission authority, complete physical detector or RH acceptance."
+  ],
+  "primary_sources": [
+    {
+      "repository": "openai/math",
+      "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "path": "lean/OAI/NumberTheory/DirichletL/Detector/GaussianCoupled.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/Detector/GaussianCoupled.lean",
+      "archive": ".local/state-coupled-source-scout/603f567968604c9ab808a5ae5307149c/GaussianCoupled.lean",
+      "sha256": "21a6117120a386823e2f596b2b5e2e52e7cf4ffebddffac10de8ed320ba9cb5e",
+      "git_blob": "570522241d9ec0d34f26a634c7b5784c332503e8",
+      "bytes": 3288,
+      "retrieved_utc": "2026-10-15T23:30:35.295278+00:00",
+      "declarations": {
+        "gaussianJointDensity": 10,
+        "gaussianProfile_positive_smooth": 13,
+        "gaussianLogWindow_eq_positive": 18,
+        "gaussian_coupled_separation": 24,
+        "gaussian_coupled_family": 35
+      },
+      "native_status": "NOT_RUN"
+    },
+    {
+      "repository": "openai/math",
+      "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "path": "lean/OAI/NumberTheory/DirichletL/Mellin/LogProfiles.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/Mellin/LogProfiles.lean",
+      "archive": ".local/state-coupled-source-scout/603f567968604c9ab808a5ae5307149c/LogProfiles-pinned.lean",
+      "sha256": "ff8735e421a2ee659df15272704206f2d114d7e2a849e8a755d545508f4038be",
+      "git_blob": "4ca0df6768674c87654fe3637be3851c8c6d12cc",
+      "bytes": 66745,
+      "retrieved_utc": "2026-10-15T23:30:35.592014+00:00",
+      "declarations": {
+        "mobiusExpSum_continuousOn_pos": 13,
+        "mobiusExpSum_inv_continuousOn_pos": 65,
+        "mobiusExpSum_inv_locallyIntegrableOn_pos": 75,
+        "dirichlet_exp_zero_free_of_power_bound_only": 81,
+        "principal_dirichlet_exp_zero_free_of_power_bound_only": 91,
+        "ExponentialMobiusPowerBound": 145,
+        "dirichletTarget_of_exponentialMobiusPowerBound": 151,
+        "sum_chars_zero": 180,
+        "sum_chars": 187,
+        "unit_char_orthogonal": 199,
+        "complete_character_plancherel": 212,
+        "complex_sum_cauchy": 261,
+        "character_norm_le_one": 271,
+        "primitive_gauss_norm_sq": 284,
+        "gauss_shift_all": 297,
+        "character_gauss_expansion": 309,
+        "character_sum_le_additive_energy": 318,
+        "mulCharProd": 378,
+        "addCharProd": 389,
+        "schwartz_log_inversion": 411,
+        "logProfile": 419,
+        "logProfile_apply": 435,
+        "smooth_log_separation": 442,
+        "fourier_coefficient_moment": 453,
+        "logProfile_coefficient_integrable": 461,
+        "logProfile_coefficient_moment": 470,
+        "logProfile_pointwise_decay": 484,
+        "logProfile_zero_seminorm_decay": 513,
+        "exp_argument_derivative_bound": 545,
+        "coupled_factor_derivative_bound": 568,
+        "derivative_scale_absorption": 590,
+        "coupled_factor_uniform_derivative": 626,
+        "logProfile_derivative_decay": 648,
+        "logProfile_uniform_seminorm": 706,
+        "fourier_seminorm_from_derivative_integrals": 789,
+        "uniform_fourier_seminorm_transfer": 810,
+        "uniform_fourier_coefficient_moment": 869,
+        "profileDerivativeConstant": 908,
+        "profileDerivativeConstant_nonneg": 913,
+        "profileMomentConstant": 921,
+        "profileMomentConstant_nonneg": 926,
+        "profileMomentConstant_dominates": 935,
+        "uniform_logProfile_source_pair": 951,
+        "uniform_logProfile_coefficient_moment": 1030,
+        "uniform_logProfile_coefficient_moment_explicit": 1070,
+        "coefficientMomentBound": 1113,
+        "coefficientMomentBound_nonneg": 1118,
+        "uniform_fourier_one_plus_moment": 1123,
+        "logPhase": 1188,
+        "logPhase_add": 1191,
+        "logPhase_zero": 1196,
+        "logPhase_sum": 1199,
+        "coupled_cutoff_active": 1207,
+        "exists_complex_smooth_cutoff": 1228,
+        "exists_complex_smooth_cutoff_with_derivative_bounds": 1269,
+        "schwartzDerivativeDecayConstant": 1300,
+        "schwartzDerivativeDecayConstant_nonneg": 1307,
+        "schwartz_derivative_decay_finite": 1313,
+        "coupled_log_separation": 1369,
+        "coupled_log_coefficient_bound": 1425,
+        "coupled_log_separation_schwartz": 1467
+      },
+      "native_status": "NOT_RUN"
+    }
+  ],
+  "license": "Apache-2.0; OpenAI project and individual upstream Mathlib credits retained."
+}
