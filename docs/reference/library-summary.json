@@ -2,7 +2,7 @@
   "schema": "mathematical-documentation-inventory-v1",
   "scope": "Current local source paths and maintained documentation metadata; not theorem acceptance",
   "input_sha256": {
-    "docs/reference/documentation-layout.json": "189d6cd2532750accace8a5e2f1d86890abb1cf025b446d9edd9b771b8fad172",
+    "docs/reference/documentation-layout.json": "0ae424b280da0bbb70063475c143ef104c0ee02b5da90cded63b5c34fb567f5e",
     "docs/reference/results.json": "544f454120ac34dfb0da29d767bdf9b3e6d4d3085c02f09ac475913975775288",
     "evidence/source-intake.json": "975160460f769a46027efb78359df82b1f366e12b4c2346f070abfce8a667755",
     "lake-manifest.json": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
@@ -20,9 +20,14 @@
     "GRWTSK/Algebra/OrderedProduct/Conjugation/Checks/Negative/StrongerGroup.lean",
     "GRWTSK/Algebra/OrderedProduct/Conjugation/Checks/Positive/ExactGaugeContracts.lean",
     "GRWTSK/Algebra/OrderedProductGauge.lean",
+    "GRWTSK/Algebra/Polynomial/Checks/Negative/SignedRootTraceModulus.lean",
+    "GRWTSK/Algebra/Polynomial/Checks/Negative/SignedRootTraceNegativeWeight.lean",
     "GRWTSK/Algebra/Polynomial/Checks/Positive/ConjugateQuartic.lean",
+    "GRWTSK/Algebra/Polynomial/Checks/Positive/SignedRootTrace.lean",
+    "GRWTSK/Algebra/Polynomial/ConjugateInterpolation.lean",
     "GRWTSK/Algebra/Polynomial/ConjugateQuartic.lean",
     "GRWTSK/Algebra/Polynomial/ConjugateQuartic/Checks/Negative/ZeroHeight.lean",
+    "GRWTSK/Algebra/Polynomial/SignedRootTrace.lean",
     "GRWTSK/Algebra/Ring/FourTermDecomposition.lean",
     "GRWTSK/Analysis/Asymptotics/Checks/Positive/FinitePowerSum.lean",
     "GRWTSK/Analysis/Asymptotics/Checks/Positive/PowerWeightedSquareSummability.lean",
@@ -635,16 +640,16 @@
   },
   "counts": {
     "areas": 12,
-    "object_guides": 69,
+    "object_guides": 70,
     "documented_objects": 39,
-    "primary_sources": 65,
-    "lean_modules": 619,
+    "primary_sources": 66,
+    "lean_modules": 624,
     "intake_records": 63,
     "selected_families": 3,
-    "maintained_pages": 102
+    "maintained_pages": 103
   },
   "page_statuses": {
-    "fresh-selected": 9,
+    "fresh-selected": 10,
     "historical": 1,
     "historical-source-description": 51,
     "literature-and-historical-source-description": 3,
@@ -657,14 +662,14 @@
   "areas": {
     "Algebra": {
       "title": "Algebra",
-      "object_guides": 3,
+      "object_guides": 4,
       "documented_objects": 2,
-      "primary_sources": 3,
-      "lean_modules": 15,
+      "primary_sources": 4,
+      "lean_modules": 20,
       "intake_records": 1,
       "selected_families": 0,
       "page_statuses": {
-        "fresh-selected": 1,
+        "fresh-selected": 2,
         "historical-source-description": 2
       }
     },
