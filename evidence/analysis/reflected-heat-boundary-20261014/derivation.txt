@@ -1,0 +1,248 @@
+REFLECTED HEAT, SOFIC CORNERS, AND CENTERED-SOURCE ANALYTIC CONTINUATION
+
+Human mathematical direction: R.A. Jacob Martone.
+Corpus mining, new deductions, code and verification: OpenAI ChatGPT. MIT.
+Base: grwtsk/math at bf407f3b289236171d1b50e5f497be622e167bba.
+
+GRADE: written mathematical proofs and executed exact finite arithmetic.
+No new Lean admission, arithmetic all-depth positivity, zero-free region or RH
+proof is asserted. The ten supplied author PDFs (180 pages) are bound in
+paper-sources.json, not modified or redistributed. Their reported numerical
+companions and external formal libraries were not replayed from the PDFs.
+This is archival research evidence, not a canonical maintained guide.
+
+A. WHAT IS MINED
+
+The updated sofic paper, Theorems 7.1 and 11.4, supplies transverse Gaussian
+heat and the full heat-to-zero Schur return. The original sofic paper, Sections
+4-5, supplies fixed-mesh isometric norm-corona corners and cyclic covariance.
+Its normalized-trace counterexample and the updated paper's two parity blocks
+remain essential. Kepler Sections 9-10 supplies full Pick-block range conditions
+and paid heat changes, not positivity from four isolated samples. Grover-Hodge
+Sections 2, 7, 10 and 16 supplies the signed pickup, retained zero modes,
+necessary growing resolvent mass, and subexponential-energy return. Gross-Zagier
+Sections 8 and 10 supplies an exact cusp source embedding and another energy
+return, while its threshold-limit test blocks a free-Laplacian substitution.
+
+The subexponential-matrix paper permits sublinear logarithmic reconstruction
+cost instead of uniform norms. The transported-weights paper keeps physical
+metric, internal tensor metrics and terminal carry distinct. The score paper
+retains numerator/denominator multiplicities and distinguishes density smoothing
+from Tao heat. The oscillator paper keeps the whole stencil and proves that
+unitary scans leave the actual residual unchanged. Global Emphasis supplies the
+typed comparison and ordered-error discipline. None of these source papers
+constructs the all-depth arithmetic estimate needed below. The reported forty
+Schur parameters, 128-dimensional Gram and 64-dimensional tensor certificate
+are not described as freshly executed here.
+
+B. THE TWO ANALYTIC SIDES AND THE HEAT NORMALIZATION
+
+Use X(z)=xi(1/2-iz), X_tau(z)=8 H_(4 tau)(-2z),
+E_tau=X_tau+i X_tau', E_tau^#=X_tau-i X_tau'. A source zero beta+i gamma
+maps to z=-gamma+i(beta-1/2). Thus right/left of the critical line in s map to
+upper/lower half-planes in z. Critical reflection 1-conj(s) maps to conj(z).
+For an upper Schur function Omega_+, put Omega_-(z)=conj(Omega_+(conj(z))).
+The exact reflected residuals are
+
+ R_+=E_tau Omega_+ + E_tau^#,
+ R_-=E_tau^# Omega_- + E_tau,
+ R_-(conj(z))=conj(R_+(z)).
+
+The lower target is -E/E^#, not -E^#/E. A real-spectral resolvent uses
+Omega_+=(m-i)/(m+i) above and Omega_-=(m+i)/(m-i) below. At a source zero of
+multiplicity k the respective removable quotient derivatives are +2i/k,-2i/k.
+For xi, D(s)=4 Re(conj(xi(s))*xi'(s)) changes sign under critical reflection;
+right nonnegative and left nonpositive are the corresponding oriented orders.
+
+The source's Gaussian identity becomes
+
+ X_tau(z)=pi^(-1/2) integral_R exp(-v^2) X_0(z-2i sqrt(tau) v) dv.
+
+It is forward heat in transverse y, variance 2 tau; Rodgers-Tao time is 4 tau.
+Its domain is a Gaussian-integrable growing-profile class, not ordinary L2
+contractivity. For B_j bounding |X_theta^(j)| on a compact and 0<=theta<=tau_*,
+integrating partial_tau X_tau=-X_tau'' gives
+
+ ||R_tau-R_0|| <= 2 tau(B_2+B_3)
+
+for any Schur Omega. A local polynomial P with ||X_tau-P||_Q<=e excludes zeros
+of X_0 on Q only if inf_Q|P|>e+tau B_2(Q). Reflection then gives the other cell.
+This strict lower margin is not supplied by positive averaging. On a quartic,
+exp(-tau D^2)(z^4+a z^2+b)=z^4+(a-12tau)z^2+b-2a tau+12tau^2.
+
+C. EXACT FINITE COVARIANCE-TO-HODGE ADAPTER
+
+For a fixed mesh q and cycle length M=q n!, write its covariance as
+Re<w,U^k w>-||w||^2. A cyclic eigenbasis gives masses a_l>=0 and a chosen real
+frequency lift lambda_l, exp(i lambda_l/q)=exp(2pi i l/M). Its continuous
+interpolation is sum a_l(cos(lambda_l t)-1). The choice of lift is additional
+data: adding 2pi q times an integer does not change mesh values but does change
+the resolvent and its mass.
+
+More generally retain an axial term and define
+ g(t)=-alpha t^2/2+sum a_l(cos(lambda_l t)-1), alpha>=0.
+For each l take a two-term cochain differential d_l=lambda_l, with
+ Q_l=[[0,lambda_l],[lambda_l,0]],
+and a degree-zero vector of norm sqrt(a_l)|lambda_l|. Add a harmonic component
+of squared norm alpha. Direct diagonalization proves
+
+ -1/2 ||integral_0^t exp(iuQ)v du||^2=g(t),
+ m(z)=<v,(Q-zI)^(-1)v>=-alpha/z+sum a_l lambda_l^2 z/(lambda_l^2-z^2),
+ ||v||^2=alpha+sum a_l lambda_l^2=-g''(0).
+
+Indeed the two eigenvalues carry half the mass a_l lambda_l^2 each; integrating
+their exponentials gives 2a_l(1-cos(lambda_l t)). The harmonic integral is tv_0.
+A zero-frequency covariance weight contributes zero, not the separate axial
+mass. Pure cyclic covariance has alpha=0. This finite adapter is not an
+identification with the arithmetic source. It explains why bounded covariance
+mass sum a_l can coexist with the diverging resolvent mass required in the
+Grover-Hodge and Gross-Zagier papers.
+
+For paired real nodes +/-t_i, let A=[[B,C],[C,B]]. Direct trigonometry gives
+ B+C=2 sum_l a_l(cos(lambda_l t_i)-1)(cos(lambda_l t_j)-1),
+ B-C=2alpha t_i t_j+2 sum_l a_l sin(lambda_l t_i)sin(lambda_l t_j).
+The even block starts at fourth order; the odd block at second order, with
+one half its mixed derivative at the origin equal to ||v||^2. Averaging away
+the odd block loses this mass channel. Neither block of the ACTUAL arithmetic
+kernel is declared positive without its own comparison.
+
+For H=P_+ + r P_-, 0<r<=1, if Btilde>=-eta I and
+||Btilde-H A H||<=e, congruence by H^(-1) gives
+ A>=-(eta+e)/r^2 I.
+Thus r=exp(-t) requires exp(2t)(eta+e)->0 for restoration. At r=0 no inverse
+exists. A smoothed negative eigenvalue -r^2 restores to -1, not zero. The
+sofic embedding retains this exact finite-corner norm and order; fix q and the
+nodes before taking cycle size to infinity. No normalized trace is used.
+
+D. A CONCRETE SOURCE COMPARISON AND A CHEAPER ANCHOR HEAT COST
+
+Suzuki's published Theorem 1.1(1), equation (1.2), arXiv:2206.03682v4, gives
+for the papers' complete arithmetic g_zeta=-Psi
+
+ m_xi(z)=-X'(z)/X(z)=i z^2 integral_0^infty g_zeta(t)exp(izt)dt,
+ Im(z)>1/2.
+
+This external identity was checked in the full primary text. It is not a new
+transform. Integrating one cosine atom and the axial t^2 term gives exactly
+the finite m above, including -alpha/z.
+
+Fix y0>1/2. The MISSING arithmetic task is to construct positive finite models
+and prove delta_n=integral exp(-y0 t)|g_n-g_zeta|dt ->0. Then on Im(z)>=y0,
+ |m_n-m_xi|<=|z|^2 delta_n,
+ |E Omega_n+E^#|<=2|X| |z|^2 delta_n.
+The proof is the transform bound and |m_n+i|>=1. A Schur normal-family
+subsequence on all C+ has the exact source identity on any fixed accumulating
+set iy_j above y0, hence on C+ by the identity theorem. The nonzero quotient
+jet at any off-line zero contradicts the maximum principle. Reflection gives
+the left side. This is a conditional return, not a proof that delta_n->0.
+
+Let v_r=exp(-rQ^2/2)v and M_n=sum a_l lambda_l^2. At iy, y>0,
+ |m_(n,r)(iy)-m_n(iy)|
+ =y sum a_l(1-exp(-r lambda_l^2))lambda_l^2/(lambda_l^2+y^2)
+ <=r y M_n.
+Use 1-exp(-r lambda^2)<=r lambda^2 and lambda^2/(lambda^2+y^2)<=1.
+Consequently the joint anchor residual is bounded by
+ 2|X(iy)|(y^2 delta_n+r y M_n)+2tau(B_2+B_3).
+Thus delta_n->0, r_n M_n->0 and tau_n->0 suffice. The conditional choice
+r_n=1/[n(1+M_n)] pays smoothing without a fourth spectral moment, while
+leaving delta_n unproved. This is distinct from arbitrary large-time collapse.
+
+A source tail is available without positivity: the exact arithmetic formula
+implies |g_zeta(t)|<=(2t^2+4t+9)exp(t/2). Bound the prime sum by 2t^2exp(t/2),
+the polar term by 4exp(t/2), the digamma linear coefficient by 4t, and the
+Lerch difference by sum_(j>=0)(2j+1/2)^(-2)<=5. For a=y0-1/2, define
+ J0=1/a, J1=L/a+1/a^2, J2=L^2/a+2L/a^2+2/a^3.
+The source tail beyond L is <=exp(-aL)(2J2+4J1+9J0). The finite-model tail
+is <=exp(-y0 L)(2 sum a_l/y0+(alpha/2)J2(L,y0)). A PROVED sup approximation
+error e on [0,L] then gives delta<=e/y0+these tails. Samples or phase aliases
+alone do not prove that sup error, especially at the source's origin.
+
+E. UNCONDITIONAL ANALYTIC CONTINUATION OF THE CENTERED PICKUP ERROR
+
+This is the different source W from Grover-Hodge Section 2 and the repository's
+logarithmic-cell calculation. For |a_k|<=B, let M_n=sum_(k<=n)a_k and
+A_n=sum_(k<=n)a_k/sqrt(k). On I_n=[log n,log(n+1)],
+ W(t)=2(A_n-M_n exp(-t/2)), h_n=log(1+1/n),
+ S_n=2(n^(-1/2)-(n+1)^(-1/2)), mu_n=2(A_n-M_n S_n/h_n).
+Then r=W-mu_n=-2M_n(exp(-t/2)-S_n/h_n) has cell mean zero. Set the entire
+cell transform
+ L_n(w)=integral_(I_n)exp(-wt)dt,
+ R_n(w)=-2M_n[L_n(w+1/2)-(S_n/h_n)L_n(w)].
+The formula [n^(-w)-(n+1)^(-w)]/w for L_n retains the removable value h_n.
+
+For Re(w)>=sigma and |w|<=Z, the covariance identity gives
+ R_n(w)=-(M_n/h_n) integral integral
+  (exp(-t/2)-exp(-u/2))(exp(-wt)-exp(-wu))dtdu.
+The two Lipschitz constants are 1/(2sqrt(n)) and
+Z n^(-sigma)2^max(0,-sigma). Since the double integral of (t-u)^2 is h_n^4/6,
+|M_n|<=Bn and h_n<=1/n prove
+ |R_n(w)|<=BZ2^max(0,-sigma)/(12n^(sigma+5/2)).
+Hence sum R_n(w) converges locally normally on Re(w)>-3/2. In original
+coordinates E_c(s)=sum R_n(s-1/2) is holomorphic on Re(s)>-1. It agrees with
+the ordinary absolute Laplace integral of r on Re(s)>0. Beyond that domain
+this is grouped analytic continuation, not an unproved rearrangement of the
+original integral.
+
+On Re(s)>=a>-1, |s-1/2|<=Z, the tail after N is at most
+ BZ2^max(0,1/2-a)/[12(a+1)N^(a+1)].
+For actual Mobius B=1, throughout 0<=Re(s)<=1, |Im(s)|<=H, this is at most
+ (2H+1)/(16N), using sqrt(2)<3/2 and |s-1/2|<=H+1/2.
+This covers BOTH sides of the nontrivial strip with a holomorphic error and
+explicit finite-height approximation cost. It does NOT exclude zeta zeros.
+
+On Re(s)>1 the actual source identity gives
+ integral exp(-(s-1/2)t)W(t)dt=1/[s(s-1/2)zeta(s)].
+Thus the RETAINED MEAN transform continues meromorphically as
+ M_c(s)=1/[s(s-1/2)zeta(s)]-E_c(s), Re(s)>-1.
+Every nontrivial zero has nonzero factors s and s-1/2; its full principal part
+stays in M_c. The analytic residual cannot cancel it. Elementary poles at
+0 and 1/2 are distinct. No holomorphy of M_c is asserted.
+
+Fresh exact interval arithmetic at N=4096 gives prefix displays
+ E_c(0):  0.011004419077102135, tail<=1/(16N),
+ E_c(1): -0.009307089269670797, tail<=1/(48N^2),
+and E_c(1/2)=0 exactly cell by cell. All actual signed M_n remain; every Mobius
+coefficient is independently trial-factored. Full rational endpoints are in
+bilateral-4096-{160,192}.json. These are error-function values, not zeta values.
+
+F. HIGHER MOMENTS AND THE REMAINING MEAN GROWTH
+
+Let P_d be the cellwise L2(dt) projection onto polynomials of degree at most d.
+For r_d=W-P_dW, the first d+1 moments vanish. A Taylor approximation and the
+least-error property give
+ ||r_d||_(L2(I_n))<=B2^(-d)sqrt(n)h_n^(d+3/2)/(d+1)!.
+Subtract the degree-d Taylor polynomial of exp(-wt) in the dual pairing. Its
+L2 error is <=Z^(d+1)n^(-sigma)2^max(0,-sigma)h_n^(d+3/2)/(d+1)!.
+Cauchy-Schwarz gives a normally convergent error chart on Re(s)>-2d-1 and
+tail, for a>-2d-1,
+ B2^(-d)Z^(d+1)2^max(0,1/2-a)
+ /[(d+1)!^2(a+2d+1)N^(a+2d+1)].
+Different d have different retained sources. On overlaps retain the exact
+transform of P_eW-P_dW; do not identify the errors as one entire function.
+
+At T_N=log(N+1), the earlier result is E(T_N)=G_N+V_N, 0<=V_N<=B^2/6.
+Thus subexponential E in T is equivalent to
+ for every epsilon>0, G_N<=C_epsilon(N+1)^epsilon for ALL N.
+Indeed G_N<=E(T_N); conversely use N=floor(exp(T)), monotonicity of E,
+T_N<=T+log2, and the bounded variance. The supplied subexponential-energy
+return would then give RH. This mean estimate remains unproved. The all-positive
+coefficient control satisfies the same residual bounds while its mean energy
+grows exponentially in T.
+
+VERIFICATION AND NONCLAIMS
+
+The single replay command is
+ python3 -B scripts/verify_screw_hodge_transfer.py --mode both
+with SymPy 1.14.0 for symbolic unit tests; the evaluator uses only the standard
+library. Sixty-four tests passed in each Python mode. Both endpoint precisions
+were fully replayed in each mode, including all 4096 independent factorizations.
+The replay summary binds source bytes and complete stdout/stderr hashes; the
+user-facing package retains the complete log bodies. The runner emits those
+bodies on each future run. An interrupted/nonzero child fails, never certifies.
+
+No Lean/Lake executable or full checkout is available. Native, full-repository
+layout, documentation and owned-declaration audits are NOT_RUN. Existing Lean,
+pins, workflows, canonical navigation and earlier receipts are unchanged.
+This extension neither reruns nor extends the existing height-40 zero atlas.
+No global arithmetic positive approximation, full signed-energy bound or
+all-height nonvanishing margin is supplied.
