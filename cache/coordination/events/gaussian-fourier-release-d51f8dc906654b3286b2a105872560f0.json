@@ -1,0 +1,13 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "gaussian-fourier-moments-formal",
+  "event": "dev-lock-released",
+  "at": "2026-10-15T22:21:16.624435+00:00",
+  "owner": "cache_adapter",
+  "attempt": ".local/gaussian-fourier-moments/514ed253fe1d4a488e8637ad0c7ebc35/attempts/Generic-attempt01",
+  "source_sha256": "da6f1239a11ad8f70f24ec4eabc709e6c7e36002949236c7a73813db0fddb0cc",
+  "competing_jobs": [],
+  "receipt": ".local/gaussian-fourier-moments/514ed253fe1d4a488e8637ad0c7ebc35/attempts/Generic-attempt01.json",
+  "exit_code": 0,
+  "native_jobs_running": 0
+}

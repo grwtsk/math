@@ -1,0 +1,11 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "prefix-table-compaction-formal",
+  "owner": "indexed_dictionary",
+  "at": "2026-10-15T22:26:34.845201+00:00",
+  "kind": "native-lock-released",
+  "source": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableCompaction.lean",
+  "exit_code": 0,
+  "all_native_children_exited": true,
+  "log": ".local/prefix-compaction/logs/20261015T222633.942129Z-PrefixTableCompaction.log"
+}

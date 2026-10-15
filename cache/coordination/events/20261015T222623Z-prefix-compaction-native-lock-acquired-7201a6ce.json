@@ -1,0 +1,10 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "prefix-table-compaction-formal",
+  "owner": "indexed_dictionary",
+  "at": "2026-10-15T22:26:23.297844+00:00",
+  "kind": "native-lock-acquired",
+  "source": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableCompaction.lean",
+  "source_sha256": "c75f7cc8ed38c681599d2295a6986556a82b1577e341b1f0f2a1936d9b6fd7bf",
+  "guard_competing_jobs": []
+}

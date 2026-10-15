@@ -1,0 +1,29 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "compaction-fourier-source-scout",
+  "owner": "cache_taxonomy",
+  "at": "2026-10-15T22:32:53.689090+00:00",
+  "kind": "immutable-next-gates-complete",
+  "record": {
+    "path": "cache/research/compaction-fourier-next-gates-2026-10-15.json",
+    "sha256": "8011ff3a8ec9f6da9a064778b313b3652afcc732a922667a157896529ac7abb3",
+    "bytes": 7637
+  },
+  "reviews": [
+    {
+      "path": "evidence/Combinatorics/DirectedGraph/prefix-table-compaction-source-review-2026-10-15.json",
+      "sha256": "2855aba820f745cb84755e93934dbedf5f0d1dcef7dcc544f1bad42525a1fc6d"
+    },
+    {
+      "path": "evidence/Analysis/Fourier/schwartz-moments-source-review-2026-10-15.json",
+      "sha256": "f5f6451588f917beee9e88bc6c836e19ca4d7176f8395b30958b858cc3c37f37"
+    },
+    {
+      "path": "evidence/Analysis/MellinTransform/gaussian-fourier-moments-source-review-2026-10-15.json",
+      "sha256": "dcfa62479d36f9c402d49a89d6e2cb6ff1564914b0bc96d21ad2835d2f15983c"
+    }
+  ],
+  "status": "NOT_RUN",
+  "scope": "Bounded finite role-ID/typed trace codec and actual Flow/log-window/joint-density Fourier moment producers. No acceptance or runtime-refinement claim.",
+  "preservation": "No shared source/docs/registry/native/remote writes; all historical evidence retained."
+}

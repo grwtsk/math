@@ -215,6 +215,16 @@ requires this invariant and preserves semantic ordered histories;
 different update groupings may have different dictionaries. No operational
 JSON/hash/zlib/IO correspondence or authority follows.
 
+The [actual compaction result](../mathematics/Combinatorics/DirectedGraph/prefix-table-compaction.md)
+now reconstructs canonical parent storage from actually decoded real rooted
+histories. The reverse occurrence/trace roundtrip and actual parent/indexed
+decoding prove semantic preservation, with an explicit partial old-slot map
+and remapped retained parents and real references. Unused branches may be
+removed; stale old references can decode empty histories. The
+[compaction decision](../../cache/decisions/prefix-table-compaction-v2.json)
+retains the root, order, repetitions and explicit certificate criterion.
+It proves no byte-optimality or operational cache implementation refinement.
+
 See [cache operations](../how-to/cache.md), the
 [taxonomy](../../cache/taxonomy.json), and the
 [integration evidence](../../evidence/Logic/FiniteSequences/cache-integration-2026-10-15.json).

@@ -40,6 +40,13 @@ rightmost deduplication can give different dictionaries and reference
 positions under different groupings. Exact grouped representations need
 not agree.
 
+The [compaction and remapping result](prefix-table-compaction.md) now
+rebuilds a state from its actually decoded real histories. It proves the
+reverse occurrence/trace roundtrip and actual decoded equality, with a
+partial old-slot map and explicit retained-parent and real-reference
+remapping. Unused branches may disappear; needed parent prefixes remain.
+This is a different operation from copying old slots during stable updates.
+
 ## Boundaries and verification
 
 For two updates appending false/true loops and then another false loop,

@@ -4,25 +4,26 @@
 
 | Inventory | Count |
 |---|---:|
-| Object guides | 12 |
+| Object guides | 13 |
 | Documented object groups | 2 |
-| Distinct primary sources linked | 11 |
-| Lean source modules | 38 |
+| Distinct primary sources linked | 12 |
+| Lean source modules | 41 |
 | Archive intake records | 0 |
 | Selected catalog families | 1 |
 
 These counts measure documentation and source coverage. They do not count accepted theorems or establish that every source module is documented or checked. [Definitions and limits](../../reference/library-pages.md#count-definitions).
 
-484 source declaration commands, including 310 theorem/lemma commands, across 38 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+547 source declaration commands, including 353 theorem/lemma commands, across 41 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
 ## DirectedGraph
 
-10 object guides · 10 distinct linked primary source files.
+11 object guides · 11 distinct linked primary source files.
 
-Linked primary-source scope: 237 source declaration commands, including 163 theorem/lemma commands, across 10 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+Linked primary-source scope: 264 source declaration commands, including 185 theorem/lemma commands, across 11 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
 - [A finite inventory of complete history prefixes](DirectedGraph/prefix-inventory.md).
 - [Certified revision of rooted trace dictionaries](DirectedGraph/rooted-trace-revision.md).
+- [Compaction and remapping of rooted prefix tables](DirectedGraph/prefix-table-compaction.md).
 - [Endpoint sections and incomparable ancestors](DirectedGraph/endpoint-section.md).
 - [Occurrence reachability and complete trace prefixes](DirectedGraph/occurrence-prefix.md).
 - [Ordered occurrences of directed paths](DirectedGraph/path-occurrences.md).

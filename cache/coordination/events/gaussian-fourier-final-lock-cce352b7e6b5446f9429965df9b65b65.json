@@ -1,0 +1,24 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "gaussian-fourier-moments-formal",
+  "event": "final-dev-lock-acquired",
+  "owner": "cache_adapter",
+  "at": "2026-10-15T22:25:31.461395+00:00",
+  "source_hashes": {
+    "GRWTSK/Analysis/Fourier/SchwartzMoments.lean": "da6f1239a11ad8f70f24ec4eabc709e6c7e36002949236c7a73813db0fddb0cc",
+    "GRWTSK/Analysis/MellinTransform/ReverseInversion.lean": "88d959d74d9d5e27772f57e847497b9a943167cc41ae6abb453c3932cbb84c57",
+    "GRWTSK/Analysis/MellinTransform/LogarithmicGaussian.lean": "cd47e598796f4f901ddea56dd05bb9e719534e1aac5589c1be6ddfb8d9fea66d",
+    "GRWTSK/Analysis/MellinTransform/NormalizedGaussian.lean": "a0ed0dbf644601887df128536951a9c3e17ecf42970069a13acdfcb93518e3bf",
+    "GRWTSK/Analysis/PartitionOfUnity/DyadicAnnulus.lean": "15637b705583781150ff8ba8b0f6aaa6ef969fe394f775e35124c5fa30f7aa67",
+    "GRWTSK/Analysis/MellinTransform/CompactGaussianWindow.lean": "db195580ca2f4e4a941f13c71d285af377d2bb29ed7250db0f0b13570984cec5",
+    "GRWTSK/Analysis/MellinTransform/ScaledGaussianDerivatives.lean": "2d1dbbcd5142807daa8a5b6719b0a7bf026aa90991fa030019ed2fc9c0178b0a",
+    "GRWTSK/Analysis/MellinTransform/GaussianWindowSeminorms.lean": "dcfa87ebe43582e02c38b1cc820656fde9160d7d633a6a99e6a3ed6b1e3d93d0",
+    "GRWTSK/Analysis/MellinTransform/GaussianFourierMoments.lean": "56f14b355aeb0b89e30457cc6b7f8be887fd288e2caf3643907481f32171d86a",
+    "GRWTSK/Analysis/Fourier/Checks/Positive/SchwartzMoments.lean": "f9e557853b3f89815922fcf523101aeba80b8e86aaf080c8926b9e93e227e633",
+    "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianFourierMoments.lean": "3bb18be10f76784706a8ee7ee20aee7f4fa9f9333917456241a5238faf443f92",
+    "GRWTSK/Analysis/Fourier/Checks/Negative/SchwartzMomentMissingEvidence.lean": "cbb5dbaff27af0ed5244bd94221f869e620258eaff416c77e16a7c24628018b9",
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianFourierMissingScale.lean": "7acf8e0a10481f3dfbc5ca386860bc96ff031289300b9b2ba008300282c7bdea"
+  },
+  "competing_jobs": [],
+  "archive": ".local/gaussian-fourier-moments/514ed253fe1d4a488e8637ad0c7ebc35/final"
+}

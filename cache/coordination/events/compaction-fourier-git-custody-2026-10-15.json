@@ -1,0 +1,18 @@
+{
+  "schema": "repository-agent-event-v1",
+  "at": "2026-10-15T22:35:08.021849+00:00",
+  "task": "compaction-fourier-round",
+  "event": "actual-git-and-cleanup-observation",
+  "initial_main": "6625cbdd887f8d3e4c8520fff1e048b87173e76b",
+  "main_head": "6625cbdd887f8d3e4c8520fff1e048b87173e76b",
+  "origin_main_observed": "6625cbdd887f8d3e4c8520fff1e048b87173e76b",
+  "concurrent_history": "Initial main was ahead of observed origin/main1; another actor advanced origin/main to current main during this round. No main movement/selected source collision. Prior incoming23archive/tool paths and six inert candidates/nativeNOT_RUN retained. No fetch/push/remote write by root.",
+  "worktrees": "worktree /Users/local/Desktop/math\nHEAD 6625cbdd887f8d3e4c8520fff1e048b87173e76b\nbranch refs/heads/main",
+  "local_branches": "main 6625cbdd887f8d3e4c8520fff1e048b87173e76b",
+  "stale_worktree_prune_dry_run": "empty",
+  "stale_worktree_prune": "completed; empty",
+  "redundant_local_branches": "none; onlymain retained",
+  "native_children": "all exited; shared replay lock released",
+  "remote_actions": [],
+  "limits": "Git/source custody only; exact mathematical proof acceptance remains in separate selected native receipts."
+}
