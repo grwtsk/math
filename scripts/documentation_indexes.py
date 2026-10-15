@@ -132,7 +132,7 @@ def render_area(layout, summary, area):
         for name, page in sorted(pages.items(), key=lambda item: (item[1]['title'], item[0])):
             if page['object'] == obj:
                 relative = PurePosixPath(name).relative_to('docs/mathematics/' + area)
-                text += f"- [{page['title']}]({relative}) — `{page['status']}`.\n"
+                text += f"- [{page['title']}]({relative}).\n"
     if not pages:
         text += ('\nObject guides have not yet been written for this area. The source folder remains '
                  'available; source presence is not proof acceptance.\n')

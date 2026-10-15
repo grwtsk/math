@@ -4,10 +4,10 @@
 
 | Inventory | Count |
 |---|---:|
-| Object guides | 3 |
+| Object guides | 4 |
 | Documented object groups | 2 |
-| Distinct primary sources linked | 3 |
-| Lean source modules | 15 |
+| Distinct primary sources linked | 4 |
+| Lean source modules | 20 |
 | Archive intake records | 1 |
 | Selected catalog families | 0 |
 
@@ -15,12 +15,13 @@ These counts measure documentation and source coverage. They do not count accept
 
 ## OrderedProduct
 
-- [Ordered interval products](OrderedProduct/intervals.md) — `historical-source-description`.
-- [Ordered products under gauge and chart changes](OrderedProduct/gauge.md) — `historical-source-description`.
+- [Ordered interval products](OrderedProduct/intervals.md).
+- [Ordered products under gauge and chart changes](OrderedProduct/gauge.md).
 
 ## Polynomial
 
-- [Signed traces on a conjugate quartic](Polynomial/conjugate-quartic.md) — `fresh-selected`.
+- [Finite weighted signed-root traces](Polynomial/signed-root-traces.md).
+- [Signed traces on a conjugate quartic](Polynomial/conjugate-quartic.md).
 
 ## Sources and verification
 

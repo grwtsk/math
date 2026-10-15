@@ -15,15 +15,15 @@ These counts measure documentation and source coverage. They do not count accept
 
 ## FiniteCoverage
 
-- [Finite coverage and scope](FiniteCoverage/scope.md) — `historical-source-description`.
+- [Finite coverage and scope](FiniteCoverage/scope.md).
 
 ## FiniteSequences
 
-- [Prefix service intervals and obligation coverage](FiniteSequences/prefix-coverage.md) — `historical-source-description`.
+- [Prefix service intervals and obligation coverage](FiniteSequences/prefix-coverage.md).
 
 ## ProofChecking
 
-- [Proof-checking source roles](ProofChecking/source-roles.md) — `written-argument`.
+- [Proof-checking source roles](ProofChecking/source-roles.md).
 
 ## Sources and verification
 

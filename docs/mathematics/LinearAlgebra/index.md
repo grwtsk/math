@@ -15,35 +15,35 @@ These counts measure documentation and source coverage. They do not count accept
 
 ## Cocycle
 
-- [Cocycle products and endpoint gauges](Cocycle/product.md) — `historical-source-description`.
+- [Cocycle products and endpoint gauges](Cocycle/product.md).
 
 ## CommonGenerator
 
-- [Common-generator rotations and sign reversal](CommonGenerator/rotations.md) — `historical-source-description`.
-- [Rational shear counterexamples](CommonGenerator/counterexamples.md) — `historical-source-description`.
+- [Common-generator rotations and sign reversal](CommonGenerator/rotations.md).
+- [Rational shear counterexamples](CommonGenerator/counterexamples.md).
 
 ## Gauge
 
-- [State dynamics under a gauge](Gauge/state.md) — `historical-source-description`.
+- [State dynamics under a gauge](Gauge/state.md).
 
 ## Jacobi
 
-- [Jacobi transfer matrices](Jacobi/transfer.md) — `historical-source-description`.
+- [Jacobi transfer matrices](Jacobi/transfer.md).
 
 ## OrderedProduct
 
-- [Determinant-one ordered products](OrderedProduct/determinant.md) — `historical-source-description`.
+- [Determinant-one ordered products](OrderedProduct/determinant.md).
 
 ## Schrodinger
 
-- [Almost Mathieu potential and spectral hypotheses](Schrodinger/almost-mathieu.md) — `literature-and-historical-source-description`.
-- [Sampled-potential equality and aliases](Schrodinger/sampled-potential.md) — `historical-source-description`.
-- [Schrödinger transfer matrices](Schrodinger/transfer.md) — `historical-source-description`.
-- [Sturmian potential, half-open coding and recurrence](Schrodinger/sturmian.md) — `literature-and-historical-source-description`.
+- [Almost Mathieu potential and spectral hypotheses](Schrodinger/almost-mathieu.md).
+- [Sampled-potential equality and aliases](Schrodinger/sampled-potential.md).
+- [Schrödinger transfer matrices](Schrodinger/transfer.md).
+- [Sturmian potential, half-open coding and recurrence](Schrodinger/sturmian.md).
 
 ## Transfer
 
-- [Ordered transfer and state propagation](Transfer/ordered.md) — `historical-source-description`.
+- [Ordered transfer and state propagation](Transfer/ordered.md).
 
 ## Sources and verification
 

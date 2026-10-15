@@ -15,11 +15,11 @@ These counts measure documentation and source coverage. They do not count accept
 
 ## Sequences
 
-- [Approximation readouts and conditional error return](Sequences/approximation-return.md) — `historical-source-description`.
+- [Approximation readouts and conditional error return](Sequences/approximation-return.md).
 
 ## TransitionSystems
 
-- [Guarded transition systems and reachability](TransitionSystems/guarded-reachability.md) — `historical-source-description`.
+- [Guarded transition systems and reachability](TransitionSystems/guarded-reachability.md).
 
 ## Sources and verification
 

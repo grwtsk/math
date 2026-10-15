@@ -15,67 +15,67 @@ These counts measure documentation and source coverage. They do not count accept
 
 ## ArithmeticFunctions
 
-- [Complete density Möbius correction](ArithmeticFunctions/density-correction.md) — `fresh-selected`.
-- [Signed Möbius cutoff decomposition](ArithmeticFunctions/signed-cutoffs.md) — `fresh-selected`.
+- [Complete density Möbius correction](ArithmeticFunctions/density-correction.md).
+- [Signed Möbius cutoff decomposition](ArithmeticFunctions/signed-cutoffs.md).
 
 ## ContinuedFractions
 
-- [Irrational frequency realization and native readback](ContinuedFractions/frequency-realization.md) — `historical-source-description`.
-- [Scheduled digits and continued-fraction denominators](ContinuedFractions/scheduled-denominators.md) — `historical-source-description`.
+- [Irrational frequency realization and native readback](ContinuedFractions/frequency-realization.md).
+- [Scheduled digits and continued-fraction denominators](ContinuedFractions/scheduled-denominators.md).
 
 ## LSeries
 
-- [Closed Möbius Dirichlet polynomials](LSeries/closed-moebius.md) — `fresh-selected`.
+- [Closed Möbius Dirichlet polynomials](LSeries/closed-moebius.md).
 
 ## Moebius
 
-- [Conditional logarithmic Mertens boundary estimate](Moebius/logarithmic-mertens-boundary.md) — `fresh-selected`.
-- [Finite Euler products with a closed cutoff](Moebius/finite-euler-product.md) — `fresh-selected`.
-- [Matched averaging for the closed Möbius pickup](Moebius/matched-pickup.md) — `historical-source-description`.
+- [Conditional logarithmic Mertens boundary estimate](Moebius/logarithmic-mertens-boundary.md).
+- [Finite Euler products with a closed cutoff](Moebius/finite-euler-product.md).
+- [Matched averaging for the closed Möbius pickup](Moebius/matched-pickup.md).
 
 ## Moebius / Energy
 
-- [An exact separated-sample return for the actual Type-II source](Moebius/Energy/separated-mellin-samples.md) — `written-argument`.
-- [Damped finite windows and extended tail energy](Moebius/Energy/damped-tails.md) — `written-argument`.
-- [Horizon-matched blocks and dyadic energy](Moebius/Energy/recording-blocks.md) — `historical-source-description`.
-- [Ordered response Gram and diagonal energy](Moebius/Energy/gram.md) — `historical-source-description`.
-- [Rank-one determinant representation of pickup energy](Moebius/Energy/determinant.md) — `historical-source-description`.
-- [Signed pickup energy and open growth bounds](Moebius/Energy/growth.md) — `historical-source-description`.
+- [An exact separated-sample return for the actual Type-II source](Moebius/Energy/separated-mellin-samples.md).
+- [Damped finite windows and extended tail energy](Moebius/Energy/damped-tails.md).
+- [Horizon-matched blocks and dyadic energy](Moebius/Energy/recording-blocks.md).
+- [Ordered response Gram and diagonal energy](Moebius/Energy/gram.md).
+- [Rank-one determinant representation of pickup energy](Moebius/Energy/determinant.md).
+- [Signed pickup energy and open growth bounds](Moebius/Energy/growth.md).
 
 ## Moebius / Laplace
 
-- [Exact signed cutoff Laplace transform](Moebius/Laplace/cutoff.md) — `historical-source-description`.
-- [Finite Laplace recordings and signed tails](Moebius/Laplace/finite-window.md) — `historical-source-description`.
-- [Finite signed prime-product debt](Moebius/Laplace/finite-product-debt.md) — `historical-source-description`.
+- [Exact signed cutoff Laplace transform](Moebius/Laplace/cutoff.md).
+- [Finite Laplace recordings and signed tails](Moebius/Laplace/finite-window.md).
+- [Finite signed prime-product debt](Moebius/Laplace/finite-product-debt.md).
 
 ## Moebius / LocalCancellation
 
-- [Common-reading row costs](Moebius/LocalCancellation/common-reading.md) — `written-argument`.
+- [Common-reading row costs](Moebius/LocalCancellation/common-reading.md).
 
 ## Moebius / Pickup
 
-- [Equivalent signed pickup integrals](Moebius/Pickup/identification.md) — `historical-source-description`.
+- [Equivalent signed pickup integrals](Moebius/Pickup/identification.md).
 
 ## Moebius / PrimeFilters
 
-- [A strict negative prime-prefix correlation](Moebius/PrimeFilters/negative-correlation.md) — `historical-source-description`.
-- [Conditional prime-filter growth and harmonic mass](Moebius/PrimeFilters/conditional-growth.md) — `historical-source-description`.
-- [Finite causal prime filters and insertion energy](Moebius/PrimeFilters/cascade.md) — `historical-source-description`.
-- [Uniform finite-product suppliers: a written obstruction](Moebius/PrimeFilters/uniform-supplier-obstruction.md) — `written-argument`.
+- [A strict negative prime-prefix correlation](Moebius/PrimeFilters/negative-correlation.md).
+- [Conditional prime-filter growth and harmonic mass](Moebius/PrimeFilters/conditional-growth.md).
+- [Finite causal prime filters and insertion energy](Moebius/PrimeFilters/cascade.md).
+- [Uniform finite-product suppliers: a written obstruction](Moebius/PrimeFilters/uniform-supplier-obstruction.md).
 
 ## Prime
 
-- [Least natural prime](Prime/least-prime.md) — `fresh-selected`.
+- [Least natural prime](Prime/least-prime.md).
 
 ## Zeta
 
-- [Riemann hypothesis criteria and their arithmetic premises](Zeta/riemann-hypothesis-criteria.md) — `historical-source-description`.
+- [Riemann hypothesis criteria and their arithmetic premises](Zeta/riemann-hypothesis-criteria.md).
 
 ## Zeta / Riemann
 
-- [Conditional energy criteria for the Riemann hypothesis](Zeta/Riemann/criteria.md) — `historical-source-description`.
-- [Nontrivial zeros and inference guards](Zeta/Riemann/inference-guards.md) — `historical-source-description`.
-- [Signed-trace and bounded-height zeta criteria](Zeta/Riemann/trace-and-height-criteria.md) — `fresh-selected`.
+- [Conditional energy criteria for the Riemann hypothesis](Zeta/Riemann/criteria.md).
+- [Nontrivial zeros and inference guards](Zeta/Riemann/inference-guards.md).
+- [Signed-trace and bounded-height zeta criteria](Zeta/Riemann/trace-and-height-criteria.md).
 
 ## Sources and verification
 

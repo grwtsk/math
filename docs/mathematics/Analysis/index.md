@@ -15,40 +15,40 @@ These counts measure documentation and source coverage. They do not count accept
 
 ## Asymptotics
 
-- [Polynomial return with a paid error](Asymptotics/polynomial-error.md) — `historical-source-description`.
+- [Polynomial return with a paid error](Asymptotics/polynomial-error.md).
 
 ## Convolution
 
-- [Autocorrelation derivatives and unsigned mass bounds](Convolution/derivative-energy.md) — `historical-source-description`.
-- [Compact autocorrelation regularity](Convolution/compact-correlation.md) — `historical-source-description`.
+- [Autocorrelation derivatives and unsigned mass bounds](Convolution/derivative-energy.md).
+- [Compact autocorrelation regularity](Convolution/compact-correlation.md).
 
 ## Fourier / IntegerSeries
 
-- [Bounded integer encoding and regular Fourier series](Fourier/IntegerSeries/encoding.md) — `historical-source-description`.
+- [Bounded integer encoding and regular Fourier series](Fourier/IntegerSeries/encoding.md).
 
 ## Fourier / WindowCertificates
 
-- [Angular Fourier normalization and window certificates](Fourier/WindowCertificates/angular.md) — `historical-source-description`.
+- [Angular Fourier normalization and window certificates](Fourier/WindowCertificates/angular.md).
 
 ## InnerProductSpace
 
-- [Finite causal response Gram positivity](InnerProductSpace/causal-response-gram.md) — `historical-source-description`.
-- [Real polarization and signed quadratic sectors](InnerProductSpace/polarization.md) — `historical-source-description`.
+- [Finite causal response Gram positivity](InnerProductSpace/causal-response-gram.md).
+- [Real polarization and signed quadratic sectors](InnerProductSpace/polarization.md).
 
 ## Integration
 
-- [Finite exponential Volterra L2 estimates](Integration/exponential-volterra-l2.md) — `fresh-selected`.
-- [Interval reflection and signed integral pairing](Integration/interval-reflection.md) — `historical-source-description`.
+- [Finite exponential Volterra L2 estimates](Integration/exponential-volterra-l2.md).
+- [Interval reflection and signed integral pairing](Integration/interval-reflection.md).
 
 ## NormedSpace
 
-- [Quadratic reconstruction and energy error](NormedSpace/reconstruction.md) — `historical-source-description`.
+- [Quadratic reconstruction and energy error](NormedSpace/reconstruction.md).
 
 ## TestFunctions
 
-- [Compact polynomial profiles and endpoint regularity](TestFunctions/polynomial-profile.md) — `historical-source-description`.
-- [Exponential moments and second-derivative variation](TestFunctions/exponential-moments.md) — `historical-source-description`.
-- [Smooth compact tests separate continuous residuals](TestFunctions/separation.md) — `historical-source-description`.
+- [Compact polynomial profiles and endpoint regularity](TestFunctions/polynomial-profile.md).
+- [Exponential moments and second-derivative variation](TestFunctions/exponential-moments.md).
+- [Smooth compact tests separate continuous residuals](TestFunctions/separation.md).
 
 ## Sources and verification
 

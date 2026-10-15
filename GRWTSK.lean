@@ -3,6 +3,8 @@ import GRWTSK.Algebra.BigOperators.OrderedSquare
 import GRWTSK.Algebra.BigOperators.QuadraticCounterexample
 import GRWTSK.Algebra.OrderedProduct
 import GRWTSK.Algebra.OrderedProductGauge
+import GRWTSK.Algebra.Polynomial.ConjugateInterpolation
+import GRWTSK.Algebra.Polynomial.SignedRootTrace
 import GRWTSK.Analysis.Asymptotics.PolynomialErrorBound
 import GRWTSK.Analysis.Asymptotics.FiniteConvolutionRecurrence
 import GRWTSK.Analysis.Asymptotics.PolynomialClosure

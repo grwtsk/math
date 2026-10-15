@@ -15,8 +15,8 @@ These counts measure documentation and source coverage. They do not count accept
 
 ## Sequences
 
-- [Coverage and discrete quotas](Sequences/coverage-and-quotas.md) — `historical`.
-- [Integer quota allocation and discrepancy](Sequences/quotas.md) — `historical-source-description`.
+- [Coverage and discrete quotas](Sequences/coverage-and-quotas.md).
+- [Integer quota allocation and discrepancy](Sequences/quotas.md).
 
 ## Sources and verification
 
