@@ -1,0 +1,28 @@
+{
+  "outcome": "OPEN_FRONTIER",
+  "items": [
+    {
+      "id": "CW-NATIVE",
+      "status": "BLOCKED_OPERATION",
+      "task": "Elaborate candidates and actual analytic source bridge at fixed pins; run owned/transitive audit."
+    },
+    {
+      "id": "CW-SOURCE-LOWER",
+      "status": "OPEN_FRONTIER",
+      "task": "Prove lower bounds for the actual Weil form on pole-null compact tests along a cofinal support sequence, with log(1+K_j)/A_j tending to zero or an improved upper rate."
+    },
+    {
+      "id": "CW-COUPLED-BLOCK",
+      "status": "OPEN_FRONTIER",
+      "task": "Retain pole constraints and high-low Schur coupling in a finite-dimensional lower-bound producer. No uncoupled diagonal inference."
+    },
+    {
+      "id": "CW-PUBLISH",
+      "status": "BLOCKED_OPERATION",
+      "task": "Apply the additive patch after live source/repository reconciliation; no GitHub mutation action is exposed in this session."
+    }
+  ],
+  "RH_proof": false,
+  "positive_source_supplier": false,
+  "scope": "The exact compact detector and linear obstruction are written mathematics, not a new positive lower bound or root proof."
+}
