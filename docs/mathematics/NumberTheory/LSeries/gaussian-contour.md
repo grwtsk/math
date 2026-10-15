@@ -46,6 +46,12 @@ not admit that surrounding arithmetic machinery or replace its hypotheses.
 No contour shift through $\sigma=1$, analytic continuation, new zero-free
 region or RH supplier is asserted.
 
+The [dyadic Gaussian reconstruction](gaussian-dyadic.md) is an actual consumer
+of this profile sum and contour. It supplies the smooth natural-scale annulus
+partition, product-series summability and finite fixed-scale inner sums.
+Its scale-coverage premise and native receipt are separate from this
+convergent-half-plane interchange.
+
 ## Source, verification and credit
 
 The [source](../../../../GRWTSK/NumberTheory/LSeries/GaussianContour.lean),

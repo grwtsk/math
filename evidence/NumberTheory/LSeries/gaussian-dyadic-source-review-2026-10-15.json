@@ -1,0 +1,267 @@
+{
+  "schema": "grwtsk.source-review.v1",
+  "task": "endpoint-dyadic-source-scout",
+  "created_utc": "2026-10-15T20:35:27.030339+00:00",
+  "reviewer": "cache_taxonomy",
+  "review_scope": "Correlated same-team exact-source, premise, control and credit review; not independent validation or theorem admission.",
+  "finding": "No actionable premise omission or false source correspondence observed in the four frozen local files within the bounded scope below.",
+  "native_validation": {
+    "performed_by_this_review": false,
+    "status": "NOT_RUN",
+    "authority": "Separate root-owned fresh native receipt; worker source-freeze and source comparisons do not confer acceptance."
+  },
+  "author_freeze": {
+    "path": "cache/coordination/events/gaussian-dyadic-freeze-8ed0a80a11e34044a1783315902250d8.json",
+    "sha256": "a1d29be55f970e103917e91e635b63a1a803b41f047eacc0cd7b271235d53f87",
+    "bytes": 1490
+  },
+  "local_sources": [
+    {
+      "path": "GRWTSK/Analysis/PartitionOfUnity/DyadicAnnulus.lean",
+      "sha256": "15637b705583781150ff8ba8b0f6aaa6ef969fe394f775e35124c5fa30f7aa67",
+      "bytes": 6536,
+      "archive": ".local/endpoint-dyadic-source-scout/c84ff313d7694097b4d2d5925551ed37/frozen-local/GRWTSK/Analysis/PartitionOfUnity/DyadicAnnulus.lean",
+      "declarations": {
+        "dyadicCutoff": 25,
+        "dyadicAnnulus": 26,
+        "dyadicCutoff_small": 28,
+        "dyadicCutoff_large": 31,
+        "dyadicAnnulus_small": 34,
+        "dyadicAnnulus_large": 38,
+        "dyadicAnnulus_contDiff": 42,
+        "dyadicAnnulus_compact": 47,
+        "dyadicAnnulus_nonneg": 57,
+        "dyadicAnnulus_norm": 63,
+        "dyadicAnnulus_support_scales": 69,
+        "dyadicAnnulus_partition": 88,
+        "dyadicAnnulus_partition_norm": 105,
+        "annular_reassembly_summable": 111,
+        "annular_reassembly": 123
+      }
+    },
+    {
+      "path": "GRWTSK/NumberTheory/LSeries/GaussianDyadic.lean",
+      "sha256": "2e5af752af46fde0d50a807b45cbf1724df88834c5d7464a19701d46360bbc0d",
+      "bytes": 3870,
+      "archive": ".local/endpoint-dyadic-source-scout/c84ff313d7694097b4d2d5925551ed37/frozen-local/GRWTSK/NumberTheory/LSeries/GaussianDyadic.lean",
+      "declarations": {
+        "gaussianDyadicTerm": 20,
+        "gaussianDyadicTerm_summable": 25,
+        "gaussianDyadicTerm_finite_support": 31,
+        "gaussianDyadicTerm_inner_summable": 45,
+        "gaussianDyadicTerm_tsum_eq_sum": 50,
+        "gaussianDyadic_reassembly": 64,
+        "gaussianZetaContour_eq_dyadic": 71
+      }
+    },
+    {
+      "path": "GRWTSK/NumberTheory/LSeries/Checks/Positive/GaussianDyadic.lean",
+      "sha256": "39081981a4fa7fa0091a94894e16c59b6c87199c64bf766be9e2edc2ffeedc72",
+      "bytes": 2159,
+      "archive": ".local/endpoint-dyadic-source-scout/c84ff313d7694097b4d2d5925551ed37/frozen-local/GRWTSK/NumberTheory/LSeries/Checks/Positive/GaussianDyadic.lean",
+      "declarations": {
+        "dyadic_partition_generic": 12,
+        "gaussianDyadic_generic": 16,
+        "gaussianDyadic_two_one": 21,
+        "gaussianDyadic_first_scale": 26,
+        "dyadic_quarter_all_zero": 33,
+        "dyadic_quarter_tsum_zero": 40,
+        "dyadic_quarter_not_partition": 44
+      }
+    },
+    {
+      "path": "GRWTSK/NumberTheory/LSeries/Checks/Negative/DyadicMissingCoverage.lean",
+      "sha256": "f9f98dfdbbac48fac2e3a696c65c7af0f1daefdc2d344fb6a5b7534d457b11c3",
+      "bytes": 393,
+      "archive": ".local/endpoint-dyadic-source-scout/c84ff313d7694097b4d2d5925551ed37/frozen-local/GRWTSK/NumberTheory/LSeries/Checks/Negative/DyadicMissingCoverage.lean",
+      "declarations": {}
+    }
+  ],
+  "prior_local_supplier_bindings": [
+    {
+      "path": "GRWTSK/NumberTheory/LSeries/GaussianContour.lean",
+      "sha256": "66fdcea9766830cda6d2cfc02bc603b7b54c3f70b49e91b3f26cab4d1e1a4017",
+      "bytes": 6936
+    },
+    {
+      "path": "GRWTSK/Analysis/MellinTransform/NormalizedGaussian.lean",
+      "sha256": "a0ed0dbf644601887df128536951a9c3e17ecf42970069a13acdfcb93518e3bf",
+      "bytes": 6685
+    }
+  ],
+  "source_context": {
+    "path": ".local/endpoint-dyadic-source-scout/c84ff313d7694097b4d2d5925551ed37/review-context.json",
+    "sha256": "1f0326f5f27d12cbe27e3264e07726176ab94eaab1b14222a73cc5e012a356e4",
+    "bytes": 11435
+  },
+  "fresh_primary_manifest": {
+    "path": ".local/endpoint-dyadic-source-scout/c84ff313d7694097b4d2d5925551ed37/manifest.json",
+    "sha256": "5571c84401f8dd41f90ee95356366aa4f344fe2aaa20d21ae18a1df7d5dfbd66",
+    "bytes": 1752
+  },
+  "primary_openai": {
+    "repository": "openai/math",
+    "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+    "sources": {
+      "GaussianDecomposition.lean": {
+        "repository": "openai/math",
+        "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+        "path": "lean/OAI/NumberTheory/DirichletL/Detector/GaussianDecomposition.lean",
+        "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/Detector/GaussianDecomposition.lean",
+        "sha256": "494752f7dcd2e0916be5e4d3c7a64c24e5551a9bc5a5f278200e46f068ebf389",
+        "git_blob": "6516b3a43e8574749aee349689c32dbc71adae12",
+        "bytes": 3890,
+        "archive": ".local/prefix-zeta-next-gates/440b8df6959b4e0495e33ffe56758f60/lean/OAI/NumberTheory/DirichletL/Detector/GaussianDecomposition.lean",
+        "declarations": {
+          "annular_reassembly_summable": 12,
+          "annular_reassembly": 24,
+          "gaussian_dyadic_correctedSummand": 35,
+          "gaussian_correctedSummand_norm_ge_one": 60,
+          "correctedGaussian_eq_tsum_dyadic": 70
+        },
+        "native_status": "NOT_RUN",
+        "credit": "No individual author header observed in these selected files; retain project and declaration-level provenance. Project Apache-2.0."
+      },
+      "GaussianPartition.lean": {
+        "repository": "openai/math",
+        "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+        "path": "lean/OAI/NumberTheory/DirichletL/Detector/GaussianPartition.lean",
+        "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/Detector/GaussianPartition.lean",
+        "sha256": "e8c07b6a103deb0f0e65277c1a06b5035a36482560d9ac5c6389eaf4c783277b",
+        "git_blob": "e63aebf6a6c6794a9f11b0322b19eba9a46a73eb",
+        "bytes": 4236,
+        "archive": ".local/prefix-zeta-next-gates/440b8df6959b4e0495e33ffe56758f60/lean/OAI/NumberTheory/DirichletL/Detector/GaussianPartition.lean",
+        "declarations": {
+          "gaussianCutoff": 11,
+          "gaussianAnnulus": 12,
+          "gaussianCutoff_small": 14,
+          "gaussianCutoff_large": 16,
+          "gaussianAnnulus_small": 18,
+          "gaussianAnnulus_large": 20,
+          "gaussianAnnulus_contDiff": 22,
+          "gaussianAnnulus_compact": 26,
+          "gaussianAnnulus_nonneg": 36,
+          "gaussianAnnulus_norm": 41,
+          "gaussianAnnulus_support_scales": 47,
+          "gaussianAnnulus_partition": 65,
+          "gaussianAnnulus_partition_norm": 82
+        },
+        "native_status": "NOT_RUN",
+        "credit": "No individual author header observed in these selected files; retain project and declaration-level provenance. Project Apache-2.0."
+      },
+      "GaussianWindows.lean": {
+        "repository": "openai/math",
+        "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+        "path": "lean/OAI/NumberTheory/DirichletL/Detector/GaussianWindows.lean",
+        "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/Detector/GaussianWindows.lean",
+        "sha256": "045f00d06e64c005c0d37031c3842152d959fea2609ce4cb2f4916f7485f8f50",
+        "git_blob": "227f98000f2a0b3c1572a76dc2e33eec29f5c402",
+        "bytes": 3832,
+        "archive": ".local/prefix-zeta-next-gates/440b8df6959b4e0495e33ffe56758f60/lean/OAI/NumberTheory/DirichletL/Detector/GaussianWindows.lean",
+        "declarations": {
+          "gaussianMellinProfile_real": 11,
+          "gaussianDyadicProfile": 23,
+          "gaussianDyadicProfile_small": 26,
+          "gaussianDyadicProfile_large": 29,
+          "gaussianDyadicProfile_compact": 33,
+          "gaussianDyadicProfile_contDiff": 43,
+          "gaussianDyadicProfile_Vstar": 75
+        },
+        "native_status": "NOT_RUN",
+        "credit": "No individual author header observed in these selected files; retain project and declaration-level provenance. Project Apache-2.0."
+      }
+    },
+    "credit": "No individual author headers observed in the three selected files. Retain project Apache-2.0 and exact upstream source attribution.",
+    "comparison": "Exact A(y)=theta(2-y)-theta(2-2y), Nat-index scale y/2^j, partition and norm partition require1≤y. annular_reassembly_summable/reassembly require Summable a and N≥1 on nonzero coefficients. Full upstream corrected ideal sum remains distinct. Optional G has denominator sqrt y and needs actual compact/smooth proofs if promoted."
+  },
+  "selected_mathlib": [
+    {
+      "pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "path": "Mathlib/Analysis/SpecialFunctions/SmoothTransition.lean",
+      "sha256": "0feea244614398679aac0efdf3c67e72c1d246f103d48ae1dbb8d40d0e75ccfa",
+      "git_blob": "cd24266ad8eb620150d7dd302ea1d6932745c14b",
+      "license": "Apache-2.0",
+      "header": [
+        "/-",
+        "Copyright (c) 2020 Sébastien Gouëzel. All rights reserved.",
+        "Released under Apache 2.0 license as described in the file LICENSE.",
+        "Authors: Sébastien Gouëzel, Yury Kudryashov",
+        "-/"
+      ]
+    }
+  ],
+  "anthropic_comparison": {
+    "repository": "anthropics/formal-math",
+    "pin": "e1a4e6508154ea59f030480661590a9fe3018011",
+    "sources": [
+      {
+        "path": ".local/endpoint-dyadic-source-scout/c84ff313d7694097b4d2d5925551ed37/anthropic-binary-prefixes.lean",
+        "url": "https://raw.githubusercontent.com/anthropics/formal-math/e1a4e6508154ea59f030480661590a9fe3018011/3sum-apsp/ThreeSumApsp/Util/BinaryPrefixes.lean",
+        "sha256": "2675465d78a38d6e644ef26a779d43c2bc655e762cf303f2705d4c30c12714c4",
+        "git_blob": "91d3d961c6704e8cea11d53354654262f06604b8",
+        "bytes": 6218
+      },
+      {
+        "path": ".local/endpoint-dyadic-source-scout/c84ff313d7694097b4d2d5925551ed37/anthropic-mellin-calculus.lean",
+        "url": "https://raw.githubusercontent.com/anthropics/formal-math/e1a4e6508154ea59f030480661590a9fe3018011/zeta23/Zeta23/FromPNTPlus/MellinCalculus.lean",
+        "sha256": "010a74544650e8daeb2124aa0aefa218b5a437e9dba80b4d7b2752e456e93b02",
+        "git_blob": "777619836d60555d8a9103b384489d1e66f2fe88",
+        "bytes": 51009
+      }
+    ],
+    "comparison": [
+      "BinaryPrefixes.prefQ31/prefR34/pref_step52 describe integer bounded-bit extraction, not endpoint history sections or directed reachability.",
+      "MellinCalculus.MellinConvolutionTransform296 assumes actual two-variable IntegrableOn, not an automatic interchange. Smooth1MellinConvergent1003 and Differentiable1026 assume ContDiff1, compact support [1/2,2], epsilon in (0,1), nonnegative profile, Haar mass_one, and positive real part. A Nat-scale partition is not itself a Haar-mass proof."
+    ],
+    "credit": "BinaryPrefixes header: Copyright 2026 Anthropic PBC, Apache-2.0, no individual author header. MellinCalculus credits PrimeNumberTheoremAnd contributors at 6a380f0c4658c04a420a9eb00b1ed62a1e3fde01/tagv4.32.2, with 2026 Anthropic port modifications; retain original credit."
+  },
+  "arxiv_primary_comparison": {
+    "title": "Multiple Dirichlet Series and Shifted Convolutions",
+    "authors_pdf_title": [
+      "Jeff Hoffstein",
+      "Thomas A. Hulse"
+    ],
+    "author_credit_note": "Official arXiv metadata also lists Andre Reznikov; retain his appendix credit rather than silently dropping it.",
+    "id": "1110.4868v6",
+    "version_utc": "2015-11-01T14:37:25Z",
+    "url": "https://arxiv.org/pdf/1110.4868v6",
+    "snapshot": {
+      "path": ".local/endpoint-dyadic-source-scout/c84ff313d7694097b4d2d5925551ed37/hoffstein-hulse-1110.4868v6.pdf",
+      "url": "https://arxiv.org/pdf/1110.4868v6",
+      "sha256": "a3250e3468b0b6430ef565a79783130532afe520cc76d4fff1c8ff1774e095e5",
+      "git_blob": null,
+      "bytes": 1219713
+    },
+    "selected_scope": "Fresh bounded §9 p56 eq(9.1), adjacent definition B_chi and smooth compact window G in[1,2].",
+    "comparison": "Uses smooth dyadic windows in twisted modular-form L-function estimates with actual primitive character/modular assumptions. It is not the exact theta-difference annulus, normalized log Gaussian, Nat coverage theorem, or present coefficient-one contour identity; no subconvexity or critical-line transfer.",
+    "license": "arXiv nonexclusive distribution license; citation/paraphrase only, not code reuse license."
+  },
+  "exact_local_scope": {
+    "annulus": "A(y)=theta(2-y)-theta(2-2*y), theta=Real.smoothTransition. Complex cast, real nonnegative values, norm equals real part. It is zero for y≤1/2 and for2≤y, smooth and compact supported in[1/2,2].",
+    "coverage": "For x≥1 and j:ℕ, the actual HasSum annulus and norm partition equal1. Proof chooses K with2^K≤x<2^(K+1), reduces to scales K,K+1, and telescopes the actual cutoff. It does not merely assume the desired partition.",
+    "generic_reassembly": "For arbitrary α:Type*, a:α→ℂ with Summable a and N:α→ℝ satisfying ∀p,a p≠0→1≤N p, the product-index family A(Np/2^j)*a p is proved summable from the actual norm partition. The resulting tsum interchange and reassembly are proved with these concrete suppliers. No Countable α assumption is silently added or removed.",
+    "gaussian_consumer": "The NumberTheory module supplies a(n)=the exact current P((n+1)/Z), N(n)=n+1≥1, and actual profile Summable forZ>0. Thus the product-index dyadic terms are summable, and outer-j/inner-n reassembly equals the actual Gaussian profile sum.",
+    "finite_inner_support": "For each j and arbitrary Z, support of n↦term Z n j is contained in n<2^(j+1); the source proves the finite support and exact inner tsum = sum over Finset.range(2^(j+1)). This range is a valid finite upper bound, not a claim that every term in it is nonzero.",
+    "contour": "For σ>1,Z>0, the already proved coefficient-one ordinary-zeta contour equals the convergent outer sum of those exact finite pieces. Existing absolute-zeta interchange is reused with its original strict half-plane premise.",
+    "not_ported": "The optional upstream gaussianDyadicProfile G with sqrt denominator, its compact/smooth API and Vstar cancellation are not defined or claimed locally here. The original ideal-pair/mask/character correctedGaussian_eq_tsum_dyadic remains a separate NOT_REPLAYED supplier gate."
+  },
+  "actual_controls": {
+    "positive": "Named generic partition and contour consumers, concrete σ2,Z1 contour consumer, and an exact first-scale sum equalP(1/Z). The first-scale algebraic identity for arbitrary Z uses totalized functions and does not assert analytic convergence without positive Z.",
+    "coverage_counterexample": "The positive module proves for every j:ℕ that A((1/4)/2^j)=0, its tsum=0, and not HasSum1. These complete mathematical counterproofs are in the positive module.",
+    "negative": "DyadicMissingCoverage attempts to supply proof0<1/4 where dyadicAnnulus_partition requires1≤1/4. The sole intended mismatch tests the missing coverage premise; this source review does not treat a failed compilation alone as proof of the counterexample.",
+    "limits": "No control claims every identity below x1 fails, all analytic identities at σ≤1 fail, or any RH implication."
+  },
+  "contribution_and_credit": {
+    "general_annulus": "Explicit adaptation of exact pinned OpenAI GaussianPartition and GaussianDecomposition general statements/proofs into an Analysis object module, preserving project Apache-2.0 attribution. No novel annulus theorem claim.",
+    "new_consumer": "Concrete ordinary natural-number coefficient-one Gaussian application plus finite inner support/finite-sum expression. It is not the literal original cubic-ideal theorem.",
+    "mathlib": "SmoothTransition authors Sébastien Gouëzel and Yury Kudryashov retained; existing source provides transition endpoints, smoothness and monotonicity.",
+    "anthropic": "Actual public byte identities retained separately. MellinCalculus original PrimeNumberTheoremAnd contributor credit and Anthropic modifications retained; none of its conditional integrability or Haar-mass premises is discharged by citation.",
+    "license": "Adapted local sources explicitly retain Apache-2.0 notices. Original math repository license raw SHA256 c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4, Git blob261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64. ArXiv nonexclusive distribution licenses are citation/paraphrase permissions, not code reuse licenses."
+  },
+  "verification_limits": [
+    "This review read the exact four final source/control bytes and exact selected primary upstream sources; it did not run Lean, audit axioms, execute tests, or independently validate the worker/root native receipts.",
+    "Bounded duplicate/API search is recorded in the source context; it establishes no exhaustive absence, novelty or source acceptance.",
+    "No paper approximate functional equation, subconvexity, analytic continuation or critical-line theorem is transferred into the local ordinary-zeta result.",
+    "All earlier failed/stale receipts and incoming NOT_RUN statuses remain unchanged. No shared metadata, docs, source code or remote state was modified."
+  ]
+}

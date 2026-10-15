@@ -5996,20 +5996,20 @@
     }
   ],
   "counts_by_operation": {
-    "add": 76,
+    "add": 83,
     "keep": 336,
     "move": 206
   },
   "counts_by_role": {
     "audit-driver": 35,
-    "library": 361,
-    "negative-control": 121,
-    "positive-check": 101
+    "library": 364,
+    "negative-control": 123,
+    "positive-check": 103
   },
   "counts_by_subject": {
     "Algebra": 19,
-    "Analysis": 214,
-    "Combinatorics": 20,
+    "Analysis": 215,
+    "Combinatorics": 23,
     "Data": 1,
     "DynamicalSystems": 16,
     "GroupTheory": 4,
@@ -6017,13 +6017,13 @@
     "LinearAlgebra": 53,
     "Logic": 63,
     "MeasureTheory": 5,
-    "NumberTheory": 191,
+    "NumberTheory": 194,
     "Order": 6,
     "Spectral": 25
   },
-  "present_lean_source_count": 681,
+  "present_lean_source_count": 688,
   "schema": "grwtsk-math-source-catalog-v1",
-  "source_count": 618,
+  "source_count": 625,
   "sources": [
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -6162,6 +6162,7 @@
         "GRWTSK.Analysis.MellinTransform.NormalizedGaussian",
         "GRWTSK.Analysis.MellinTransform.ReverseInversion",
         "GRWTSK.Analysis.NormedSpace.QuadraticError",
+        "GRWTSK.Analysis.PartitionOfUnity.DyadicAnnulus",
         "GRWTSK.Analysis.Polarization",
         "GRWTSK.Analysis.ReciprocalKernel",
         "GRWTSK.Analysis.SpecialFunctions.DigammaFourierBound",
@@ -6177,6 +6178,7 @@
         "GRWTSK.Analysis.TestFunctions.Separation",
         "GRWTSK.Analysis.WeakDerivatives.PolynomialBump",
         "GRWTSK.Combinatorics.DirectedGraph.EdgeTrace",
+        "GRWTSK.Combinatorics.DirectedGraph.EndpointSection",
         "GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix",
         "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences",
         "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding",
@@ -6281,6 +6283,7 @@
         "GRWTSK.NumberTheory.FirstPrime",
         "GRWTSK.NumberTheory.LSeries.ClosedMoebiusPolynomial",
         "GRWTSK.NumberTheory.LSeries.GaussianContour",
+        "GRWTSK.NumberTheory.LSeries.GaussianDyadic",
         "GRWTSK.NumberTheory.LSeries.TruncatedMoebiusSeries",
         "GRWTSK.NumberTheory.Moebius.ComparisonEnergy",
         "GRWTSK.NumberTheory.Moebius.CompositeActivationExamples",
@@ -6561,7 +6564,7 @@
         "GRWTSK/Logic/ProofChecking/Checks/OwnedDeclarationAudit.lean"
       ],
       "runner": "python3 -B scripts/check_ccc_energy.py",
-      "sha256": "50c598a8537ed684e83345024b25347a2b763f6d4e9a560e81a3a6a02c82f54f",
+      "sha256": "3b42f3ef53b122ee316bfbe6e4f966236392426c59d069f6a9c0b716188e40ff",
       "source_role": "library",
       "source_root": ".",
       "subject": "Library",
@@ -6570,7 +6573,7 @@
         "inventory": "observed-current-bytes",
         "layout": "repository baseline remains failed",
         "lean": "umbrella not replayed after selected import additions",
-        "source_sha256": "50c598a8537ed684e83345024b25347a2b763f6d4e9a560e81a3a6a02c82f54f"
+        "source_sha256": "3b42f3ef53b122ee316bfbe6e4f966236392426c59d069f6a9c0b716188e40ff"
       },
       "working_tree_state": "tracked-modified"
     },
@@ -23134,6 +23137,134 @@
       "working_tree_state": "tracked-clean"
     },
     {
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: exact GaussianPartition/Windows/Decomposition source context and annulus formula; Mathlib smooth transition, sums and Gaussian/Mellin authors retain individual credit"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/endpoint-dyadic-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Actual Real.smoothTransition annulus and Nat-indexed dyadic scales, with support/nonneg/norm properties proved.",
+        "Coverage1<=x retained for partition; positive x alone fails at1/4. No Gaussian dependency required by generic annulus."
+      ],
+      "git_blob": null,
+      "imports": [
+        "Mathlib.Analysis.Normed.Module.FiniteDimension",
+        "Mathlib.Analysis.SpecialFunctions.SmoothTransition",
+        "Mathlib.LinearAlgebra.Complex.FiniteDimensional"
+      ],
+      "license": "Apache-2.0",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.Analysis.PartitionOfUnity.DyadicAnnulus",
+      "namespaces": [
+        "GRWTSK.Analysis.PartitionOfUnity.DyadicAnnulus"
+      ],
+      "object": "PartitionOfUnity",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Analysis/PartitionOfUnity/DyadicAnnulus.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Analysis/PartitionOfUnity/DyadicAnnulus.lean",
+      "placement_rationale": "Generic smooth Nat-dyadic annulus partitions and coverage belong to Analysis/PartitionOfUnity.",
+      "public_declarations": [
+        {
+          "kind": "def",
+          "line": 24,
+          "name": "dyadicCutoff"
+        },
+        {
+          "kind": "def",
+          "line": 26,
+          "name": "dyadicAnnulus"
+        },
+        {
+          "kind": "lemma",
+          "line": 27,
+          "name": "dyadicCutoff_small"
+        },
+        {
+          "kind": "lemma",
+          "line": 30,
+          "name": "dyadicCutoff_large"
+        },
+        {
+          "kind": "lemma",
+          "line": 33,
+          "name": "dyadicAnnulus_small"
+        },
+        {
+          "kind": "lemma",
+          "line": 37,
+          "name": "dyadicAnnulus_large"
+        },
+        {
+          "kind": "lemma",
+          "line": 41,
+          "name": "dyadicAnnulus_contDiff"
+        },
+        {
+          "kind": "lemma",
+          "line": 46,
+          "name": "dyadicAnnulus_compact"
+        },
+        {
+          "kind": "lemma",
+          "line": 56,
+          "name": "dyadicAnnulus_nonneg"
+        },
+        {
+          "kind": "lemma",
+          "line": 62,
+          "name": "dyadicAnnulus_norm"
+        },
+        {
+          "kind": "lemma",
+          "line": 68,
+          "name": "dyadicAnnulus_support_scales"
+        },
+        {
+          "kind": "theorem",
+          "line": 86,
+          "name": "dyadicAnnulus_partition"
+        },
+        {
+          "kind": "theorem",
+          "line": 104,
+          "name": "dyadicAnnulus_partition_norm"
+        },
+        {
+          "kind": "theorem",
+          "line": 109,
+          "name": "annular_reassembly_summable"
+        },
+        {
+          "kind": "theorem",
+          "line": 122,
+          "name": "annular_reassembly"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.NumberTheory.LSeries.GaussianDyadic"
+      ],
+      "runner": "python3 -B scripts/check_gaussian_dyadic.py",
+      "sha256": "15637b705583781150ff8ba8b0f6aaa6ef969fe394f775e35124c5fa30f7aa67",
+      "source_role": "library",
+      "source_root": "GRWTSK",
+      "subject": "Analysis",
+      "target_path": "GRWTSK/Analysis/PartitionOfUnity/DyadicAnnulus.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/NumberTheory/LSeries/gaussian-dyadic-checks-2026-10-15.json",
+        "source_sha256": "15637b705583781150ff8ba8b0f6aaa6ef969fe394f775e35124c5fa30f7aa67"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
       "git_blob": "82743542ee01c4a521ac4195c7888f6e92849757",
       "imports": [
@@ -24966,6 +25097,51 @@
         "Lean and Mathlib: upstream APIs and proofs"
       ],
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/endpoint-dyadic-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Fixed-root existing path occurrences and endpoint projection to root-reachable subtype.",
+        "Reachable incomparable a,b with a common upper c obstruct any reachability-preserving endpoint right inverse; no finite/countable/acyclic/thin base premise.",
+        "Concrete DiamondLe quiver is reflexive/transitive and thin, including identity loops and shortcut; it is not a Hasse DAG."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.EndpointSection"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "logical_status": "intended rejected control; no theorem admission",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.EndpointSectionMissingPreservation",
+      "namespaces": [],
+      "object": "DirectedGraph/Checks/Negative",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/EndpointSectionMissingPreservation.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/EndpointSectionMissingPreservation.lean",
+      "placement_rationale": "Reachable-endpoint sections and exact occurrence reachability obstructions belong to Combinatorics/DirectedGraph.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B scripts/check_endpoint_section.py",
+      "sha256": "299e1fcbde14d3f1132f35de38754d2c8a9ed3ca627d4f40b91ecdb3c211cd79",
+      "source_role": "negative-control",
+      "source_root": "GRWTSK",
+      "subject": "Combinatorics",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/EndpointSectionMissingPreservation.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/endpoint-section-checks-2026-10-15.json",
+        "source_sha256": "299e1fcbde14d3f1132f35de38754d2c8a9ed3ca627d4f40b91ecdb3c211cd79"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
       "design_reference": "cache/research/prefix-zeta-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
       "explicit_premises": [
         "Existing PathUnfolding occurrences wrap fixed-root actual PathStar histories; full typed EdgeTrace list retains every source/target/arrow occurrence.",
@@ -25180,6 +25356,96 @@
         "lean": "see immutable selected replay receipt",
         "replay_binding": "evidence/Combinatorics/DirectedGraph/edge-trace-checks-2026-10-15.json",
         "source_sha256": "2b4cc40b89f7f154a3f383e575c357799cf9b0a39d6a54f20d2a93f8a5626687"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/endpoint-dyadic-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Fixed-root existing path occurrences and endpoint projection to root-reachable subtype.",
+        "Reachable incomparable a,b with a common upper c obstruct any reachability-preserving endpoint right inverse; no finite/countable/acyclic/thin base premise.",
+        "Concrete DiamondLe quiver is reflexive/transitive and thin, including identity loops and shortcut; it is not a Hasse DAG."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.EndpointSection"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.EndpointSection",
+      "namespaces": [
+        "GRWTSK.Combinatorics.DirectedGraph.EndpointSection.Checks.Positive"
+      ],
+      "object": "DirectedGraph/Checks/Positive",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/EndpointSection.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/EndpointSection.lean",
+      "placement_rationale": "Reachable-endpoint sections and exact occurrence reachability obstructions belong to Combinatorics/DirectedGraph.",
+      "public_declarations": [
+        {
+          "kind": "theorem",
+          "line": 14,
+          "name": "diamond_middle_obstruction"
+        },
+        {
+          "kind": "theorem",
+          "line": 19,
+          "name": "diamond_no_preserving_section"
+        },
+        {
+          "kind": "theorem",
+          "line": 28,
+          "name": "diamond_selected_right_inverse"
+        },
+        {
+          "kind": "theorem",
+          "line": 32,
+          "name": "diamond_selected_not_preserving"
+        },
+        {
+          "kind": "theorem",
+          "line": 38,
+          "name": "actual_diamond_counterexample"
+        },
+        {
+          "kind": "def",
+          "line": 51,
+          "name": "leftTopHistory"
+        },
+        {
+          "kind": "def",
+          "line": 55,
+          "name": "rightTopHistory"
+        },
+        {
+          "kind": "theorem",
+          "line": 59,
+          "name": "distinct_top_histories"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.EndpointSectionMissingPreservation"
+      ],
+      "runner": "python3 -B scripts/check_endpoint_section.py",
+      "sha256": "ba640039622b78f42cfcbaf31dce0f0dcc4028b429b764aad482488dfbb4deba",
+      "source_role": "positive-check",
+      "source_root": "GRWTSK",
+      "subject": "Combinatorics",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/EndpointSection.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/endpoint-section-checks-2026-10-15.json",
+        "source_sha256": "ba640039622b78f42cfcbaf31dce0f0dcc4028b429b764aad482488dfbb4deba"
       },
       "working_tree_state": "untracked-at-selected-replay"
     },
@@ -25643,6 +25909,78 @@
         "Lean and Mathlib: upstream APIs and proofs"
       ],
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/endpoint-dyadic-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Fixed-root existing path occurrences and endpoint projection to root-reachable subtype.",
+        "Reachable incomparable a,b with a common upper c obstruct any reachability-preserving endpoint right inverse; no finite/countable/acyclic/thin base premise.",
+        "Concrete DiamondLe quiver is reflexive/transitive and thin, including identity loops and shortcut; it is not a Hasse DAG."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix",
+        "GRWTSK.Order.Embeddings.PrefixObstruction"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.EndpointSection",
+      "namespaces": [
+        "GRWTSK.Combinatorics.DirectedGraph.EndpointSection"
+      ],
+      "object": "DirectedGraph",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/EndpointSection.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Combinatorics/DirectedGraph/EndpointSection.lean",
+      "placement_rationale": "Reachable-endpoint sections and exact occurrence reachability obstructions belong to Combinatorics/DirectedGraph.",
+      "public_declarations": [
+        {
+          "kind": "theorem",
+          "line": 34,
+          "name": "no_preserving_endpoint_section"
+        },
+        {
+          "kind": "theorem",
+          "line": 60,
+          "name": "diamond_reachable_iff"
+        },
+        {
+          "kind": "theorem",
+          "line": 70,
+          "name": "diamond_bottom_reachable"
+        },
+        {
+          "kind": "def",
+          "line": 73,
+          "name": "diamondVertex"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.EndpointSection"
+      ],
+      "runner": "python3 -B scripts/check_endpoint_section.py",
+      "sha256": "5186e4848b7e30d5d6d18070d8948650652d0fc7ec9f004d1f5b451709c4c52f",
+      "source_role": "library",
+      "source_root": "GRWTSK",
+      "subject": "Combinatorics",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/EndpointSection.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/endpoint-section-checks-2026-10-15.json",
+        "source_sha256": "5186e4848b7e30d5d6d18070d8948650652d0fc7ec9f004d1f5b451709c4c52f"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
       "design_reference": "cache/research/prefix-zeta-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
       "explicit_premises": [
         "Existing PathUnfolding occurrences wrap fixed-root actual PathStar histories; full typed EdgeTrace list retains every source/target/arrow occurrence.",
@@ -25750,7 +26088,8 @@
       ],
       "reverse_consumers": [
         "GRWTSK",
-        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.OccurrencePrefix"
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.OccurrencePrefix",
+        "GRWTSK.Combinatorics.DirectedGraph.EndpointSection"
       ],
       "runner": "python3 -B scripts/check_occurrence_prefix.py",
       "sha256": "60737e2376594568f390e394417b77c9ea0cc5464693b3ef61502213e3afcee7",
@@ -41822,6 +42161,52 @@
         "grwtsk contributors: human direction",
         "OpenAI Codex: local formalization/adaptation/checking",
         "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: exact GaussianPartition/Windows/Decomposition source context and annulus formula; Mathlib smooth transition, sums and Gaussian/Mellin authors retain individual credit"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/endpoint-dyadic-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Exact normalized Gaussian P, real Z>0, natural positive indices n+1 and Nat dyadic scales.",
+        "Actual partition/normpartition/product-series summability, finite fixed-j inner support and reassembly; contour consumer retains sigma>1.",
+        "Original weighted cubic-ideal coefficient/norm suppliers and optional sqrt-profile G API not inferred."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.NumberTheory.LSeries.Checks.Positive.GaussianDyadic"
+      ],
+      "license": "Apache-2.0",
+      "logical_status": "intended rejected control; no theorem admission",
+      "module": "GRWTSK.NumberTheory.LSeries.Checks.Negative.DyadicMissingCoverage",
+      "namespaces": [],
+      "object": "LSeries/Checks/Negative",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/NumberTheory/LSeries/Checks/Negative/DyadicMissingCoverage.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/NumberTheory/LSeries/Checks/Negative/DyadicMissingCoverage.lean",
+      "placement_rationale": "Actual natural-number Gaussian profile/window and zeta contour consumers belong to NumberTheory/LSeries.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B scripts/check_gaussian_dyadic.py",
+      "sha256": "f9f98dfdbbac48fac2e3a696c65c7af0f1daefdc2d344fb6a5b7534d457b11c3",
+      "source_role": "negative-control",
+      "source_root": "GRWTSK",
+      "subject": "NumberTheory",
+      "target_path": "GRWTSK/NumberTheory/LSeries/Checks/Negative/DyadicMissingCoverage.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/NumberTheory/LSeries/gaussian-dyadic-checks-2026-10-15.json",
+        "source_sha256": "f9f98dfdbbac48fac2e3a696c65c7af0f1daefdc2d344fb6a5b7534d457b11c3"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
         "OpenAI: GaussianCompletion/RowInterchange source context and exact normalized Gaussian supplier; Mathlib RiemannZeta/p-series/integral authors retain individual credit"
       ],
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -41934,6 +42319,92 @@
         "lean": "see immutable selected replay receipt",
         "replay_binding": "evidence/NumberTheory/LSeries/gaussian-contour-checks-2026-10-15.json",
         "source_sha256": "b04a625e167ec32081408f8cd769e5bd4e523b5f043935e1c2ce9ccf32976f12"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: exact GaussianPartition/Windows/Decomposition source context and annulus formula; Mathlib smooth transition, sums and Gaussian/Mellin authors retain individual credit"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/endpoint-dyadic-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Exact normalized Gaussian P, real Z>0, natural positive indices n+1 and Nat dyadic scales.",
+        "Actual partition/normpartition/product-series summability, finite fixed-j inner support and reassembly; contour consumer retains sigma>1.",
+        "Original weighted cubic-ideal coefficient/norm suppliers and optional sqrt-profile G API not inferred."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.NumberTheory.LSeries.GaussianDyadic"
+      ],
+      "license": "Apache-2.0",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.NumberTheory.LSeries.Checks.Positive.GaussianDyadic",
+      "namespaces": [
+        "GRWTSK.NumberTheory.LSeries.GaussianDyadic.Checks"
+      ],
+      "object": "LSeries/Checks/Positive",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/NumberTheory/LSeries/Checks/Positive/GaussianDyadic.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/NumberTheory/LSeries/Checks/Positive/GaussianDyadic.lean",
+      "placement_rationale": "Actual natural-number Gaussian profile/window and zeta contour consumers belong to NumberTheory/LSeries.",
+      "public_declarations": [
+        {
+          "kind": "theorem",
+          "line": 11,
+          "name": "dyadic_partition_generic"
+        },
+        {
+          "kind": "theorem",
+          "line": 15,
+          "name": "gaussianDyadic_generic"
+        },
+        {
+          "kind": "theorem",
+          "line": 20,
+          "name": "gaussianDyadic_two_one"
+        },
+        {
+          "kind": "theorem",
+          "line": 25,
+          "name": "gaussianDyadic_first_scale"
+        },
+        {
+          "kind": "theorem",
+          "line": 31,
+          "name": "dyadic_quarter_all_zero"
+        },
+        {
+          "kind": "theorem",
+          "line": 39,
+          "name": "dyadic_quarter_tsum_zero"
+        },
+        {
+          "kind": "theorem",
+          "line": 43,
+          "name": "dyadic_quarter_not_partition"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK.NumberTheory.LSeries.Checks.Negative.DyadicMissingCoverage"
+      ],
+      "runner": "python3 -B scripts/check_gaussian_dyadic.py",
+      "sha256": "39081981a4fa7fa0091a94894e16c59b6c87199c64bf766be9e2edc2ffeedc72",
+      "source_role": "positive-check",
+      "source_root": "GRWTSK",
+      "subject": "NumberTheory",
+      "target_path": "GRWTSK/NumberTheory/LSeries/Checks/Positive/GaussianDyadic.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/NumberTheory/LSeries/gaussian-dyadic-checks-2026-10-15.json",
+        "source_sha256": "39081981a4fa7fa0091a94894e16c59b6c87199c64bf766be9e2edc2ffeedc72"
       },
       "working_tree_state": "untracked-at-selected-replay"
     },
@@ -42100,7 +42571,8 @@
       ],
       "reverse_consumers": [
         "GRWTSK",
-        "GRWTSK.NumberTheory.LSeries.Checks.Positive.GaussianContour"
+        "GRWTSK.NumberTheory.LSeries.Checks.Positive.GaussianContour",
+        "GRWTSK.NumberTheory.LSeries.GaussianDyadic"
       ],
       "runner": "python3 -B scripts/check_gaussian_contour.py",
       "sha256": "66fdcea9766830cda6d2cfc02bc603b7b54c3f70b49e91b3f26cab4d1e1a4017",
@@ -42114,6 +42586,94 @@
         "lean": "see immutable selected replay receipt",
         "replay_binding": "evidence/NumberTheory/LSeries/gaussian-contour-checks-2026-10-15.json",
         "source_sha256": "66fdcea9766830cda6d2cfc02bc603b7b54c3f70b49e91b3f26cab4d1e1a4017"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: exact GaussianPartition/Windows/Decomposition source context and annulus formula; Mathlib smooth transition, sums and Gaussian/Mellin authors retain individual credit"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/endpoint-dyadic-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Exact normalized Gaussian P, real Z>0, natural positive indices n+1 and Nat dyadic scales.",
+        "Actual partition/normpartition/product-series summability, finite fixed-j inner support and reassembly; contour consumer retains sigma>1.",
+        "Original weighted cubic-ideal coefficient/norm suppliers and optional sqrt-profile G API not inferred."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Analysis.PartitionOfUnity.DyadicAnnulus",
+        "GRWTSK.NumberTheory.LSeries.GaussianContour"
+      ],
+      "license": "Apache-2.0",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.NumberTheory.LSeries.GaussianDyadic",
+      "namespaces": [
+        "GRWTSK.NumberTheory.LSeries.GaussianDyadic"
+      ],
+      "object": "LSeries",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/NumberTheory/LSeries/GaussianDyadic.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/NumberTheory/LSeries/GaussianDyadic.lean",
+      "placement_rationale": "Actual natural-number Gaussian profile/window and zeta contour consumers belong to NumberTheory/LSeries.",
+      "public_declarations": [
+        {
+          "kind": "def",
+          "line": 19,
+          "name": "gaussianDyadicTerm"
+        },
+        {
+          "kind": "theorem",
+          "line": 22,
+          "name": "gaussianDyadicTerm_summable"
+        },
+        {
+          "kind": "theorem",
+          "line": 29,
+          "name": "gaussianDyadicTerm_finite_support"
+        },
+        {
+          "kind": "theorem",
+          "line": 44,
+          "name": "gaussianDyadicTerm_inner_summable"
+        },
+        {
+          "kind": "theorem",
+          "line": 48,
+          "name": "gaussianDyadicTerm_tsum_eq_sum"
+        },
+        {
+          "kind": "theorem",
+          "line": 63,
+          "name": "gaussianDyadic_reassembly"
+        },
+        {
+          "kind": "theorem",
+          "line": 69,
+          "name": "gaussianZetaContour_eq_dyadic"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.NumberTheory.LSeries.Checks.Positive.GaussianDyadic"
+      ],
+      "runner": "python3 -B scripts/check_gaussian_dyadic.py",
+      "sha256": "2e5af752af46fde0d50a807b45cbf1724df88834c5d7464a19701d46360bbc0d",
+      "source_role": "library",
+      "source_root": "GRWTSK",
+      "subject": "NumberTheory",
+      "target_path": "GRWTSK/NumberTheory/LSeries/GaussianDyadic.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/NumberTheory/LSeries/gaussian-dyadic-checks-2026-10-15.json",
+        "source_sha256": "2e5af752af46fde0d50a807b45cbf1724df88834c5d7464a19701d46360bbc0d"
       },
       "working_tree_state": "untracked-at-selected-replay"
     },
@@ -55693,6 +56253,7 @@
       ],
       "reverse_consumers": [
         "GRWTSK",
+        "GRWTSK.Combinatorics.DirectedGraph.EndpointSection",
         "GRWTSK.Order.Embeddings.Checks.Negative.PrefixMissingReflection",
         "GRWTSK.Order.Embeddings.Checks.Positive.PrefixObstruction"
       ],

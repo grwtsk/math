@@ -152,7 +152,8 @@
     ],
     "NumberTheory/LSeries": [
       "GRWTSK/NumberTheory/LSeries/ClosedMoebiusPolynomial.lean",
-      "GRWTSK/NumberTheory/LSeries/GaussianContour.lean"
+      "GRWTSK/NumberTheory/LSeries/GaussianContour.lean",
+      "GRWTSK/NumberTheory/LSeries/GaussianDyadic.lean"
     ],
     "Analysis/Complex/CriticalReflection": [
       "GRWTSK/Analysis/Complex/CriticalReflection.lean"
@@ -178,6 +179,7 @@
     ],
     "Combinatorics/DirectedGraph": [
       "GRWTSK/Combinatorics/DirectedGraph/EdgeTrace.lean",
+      "GRWTSK/Combinatorics/DirectedGraph/EndpointSection.lean",
       "GRWTSK/Combinatorics/DirectedGraph/OccurrencePrefix.lean",
       "GRWTSK/Combinatorics/DirectedGraph/PathOccurrences.lean",
       "GRWTSK/Combinatorics/DirectedGraph/PathUnfolding.lean"
@@ -186,6 +188,9 @@
       "GRWTSK/Analysis/MellinTransform/LogarithmicGaussian.lean",
       "GRWTSK/Analysis/MellinTransform/NormalizedGaussian.lean",
       "GRWTSK/Analysis/MellinTransform/ReverseInversion.lean"
+    ],
+    "Analysis/PartitionOfUnity": [
+      "GRWTSK/Analysis/PartitionOfUnity/DyadicAnnulus.lean"
     ]
   }
 }

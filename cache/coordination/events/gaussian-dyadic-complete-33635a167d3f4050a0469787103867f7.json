@@ -1,0 +1,53 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "gaussian-dyadic-formal",
+  "event": "frozen-complete-development",
+  "owner": "cache_adapter",
+  "at": "2026-10-15T20:35:31.442518+00:00",
+  "source_hashes": {
+    "GRWTSK/Analysis/PartitionOfUnity/DyadicAnnulus.lean": "15637b705583781150ff8ba8b0f6aaa6ef969fe394f775e35124c5fa30f7aa67",
+    "GRWTSK/NumberTheory/LSeries/GaussianDyadic.lean": "2e5af752af46fde0d50a807b45cbf1724df88834c5d7464a19701d46360bbc0d",
+    "GRWTSK/NumberTheory/LSeries/Checks/Positive/GaussianDyadic.lean": "39081981a4fa7fa0091a94894e16c59b6c87199c64bf766be9e2edc2ffeedc72",
+    "GRWTSK/NumberTheory/LSeries/Checks/Negative/DyadicMissingCoverage.lean": "f9f98dfdbbac48fac2e3a696c65c7af0f1daefdc2d344fb6a5b7534d457b11c3"
+  },
+  "freeze_event": "cache/coordination/events/gaussian-dyadic-freeze-8ed0a80a11e34044a1783315902250d8.json",
+  "status": "written-and-development-replayed-not-admitted",
+  "receipt": ".local/gaussian-dyadic/0340f9ec405a46188d1f41f3db8a8d07/final/receipt.json",
+  "receipt_sha256": "278f20aad447444d276fc6c2fc2343f11f018f5bf1eb0aa6a716796f40b96fed",
+  "verification": {
+    "trust": 0,
+    "fatal_warnings": true,
+    "fresh_local_closure": "4priorlibraries+2newlibraries+positive",
+    "accepted_stages": 7,
+    "source_and_object_family_stability": true,
+    "negative_error_count": 1,
+    "negative_expected_substring": "1 \u2264 1 / 4",
+    "negative_actual": "Application type mismatch:0<1/4 supplied for1<=1/4",
+    "negative_only_complete_proofs": false,
+    "owned_complete_transitive_axiom_census": "NOT_RUN_ROOT_OWNS",
+    "native_jobs_running": 0,
+    "shared_lock": "RELEASED"
+  },
+  "mathematics": {
+    "generic": "A(y)=st(2-y)-st(2-2*y): exact support outside(1/2,2), compact and smooth, realnonnegative with norm=re; actual Natdyadic partition and normpartition for1<=x",
+    "generic_reassembly": "arbitrary\u03b1,a:\u03b1\u2192\u2102,N:\u03b1\u2192\u211d; Summable a; coverage1<=Np onlywhenap!=0; actual productSummable and doubletsum equality",
+    "actual_consumer": "normalizedP((n+1)/Z),Z>0; actual productSummable; fixedj support containedn<2^(j+1),actual finite inner sum; exactdyadicreassembly and actualzeta contour\u03c3>1,Z>0",
+    "positive": "generic partition+contour;actual\u03c32Z1;firstscale=P(1/Z);quarterallzero,tsumzero,notHasSum1",
+    "scope": "optionalG/sqrt compact-smooth-profileAPI NOT_PORTED; no surroundingideal/character/mask detector acceptance or RH/continuation claim"
+  },
+  "layout": {
+    "status": "FAIL370modules185findings:6allocatedpendingrootcatalog/publicimport+4sibling+175baseline",
+    "log": ".local/gaussian-dyadic/0340f9ec405a46188d1f41f3db8a8d07/math-layout.log",
+    "receipt": ".local/gaussian-dyadic/0340f9ec405a46188d1f41f3db8a8d07/math-layout-result.json",
+    "new_naming_or_subject_violation": false
+  },
+  "failure_history": {
+    "directory": ".local/gaussian-dyadic/0340f9ec405a46188d1f41f3db8a8d07/attempts",
+    "preserved": "first Annulus missingSummable.norm import; second Annulus missingFiniteDimensional\u211d\u2102 instance; firstGaussian positivity tactic unableto prove1<=n+1; all source/log/JSON variantsretained",
+    "proof_statements_weakened": false
+  },
+  "licensing": "ExactpinnedOpenAI Partition+Decomposition source hashes and Apache2 notice retained; MathlibSmoothTransition2020S\u00e9bastienGou\u00ebzel,YuryKudryashov credit retained; priornotices unchanged",
+  "prior_sources_modified": false,
+  "commits_or_remote_writes": false,
+  "native_jobs_exited": true
+}

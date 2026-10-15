@@ -4,16 +4,16 @@
 
 | Inventory | Count |
 |---|---:|
-| Object guides | 22 |
-| Documented object groups | 12 |
-| Distinct primary sources linked | 22 |
-| Lean source modules | 257 |
+| Object guides | 23 |
+| Documented object groups | 13 |
+| Distinct primary sources linked | 23 |
+| Lean source modules | 258 |
 | Archive intake records | 39 |
 | Selected catalog families | 1 |
 
 These counts measure documentation and source coverage. They do not count accepted theorems or establish that every source module is documented or checked. [Definitions and limits](../../reference/library-pages.md#count-definitions).
 
-At least 1513 source declaration commands, including 1225 theorem/lemma commands, across 214 parsed Lean source modules; 43 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
+At least 1513 source declaration commands, including 1225 theorem/lemma commands, across 214 parsed Lean source modules; 44 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
 
 ## Asymptotics
 
@@ -110,6 +110,14 @@ Linked primary-source scope: 37 source declaration commands, including 31 theore
 Linked primary-source scope: 2 source declaration commands, including 2 theorem/lemma commands, across 1 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
 - [Quadratic reconstruction and energy error](NormedSpace/reconstruction.md).
+
+## PartitionOfUnity
+
+1 object guide · 1 distinct linked primary source file.
+
+Linked primary-source scope: At least 0 source declaration commands, including 0 theorem/lemma commands, across 0 parsed Lean source modules; 1 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
+
+- [A smooth annulus partition on natural dyadic scales](PartitionOfUnity/dyadic-annulus.md).
 
 ## TestFunctions
 

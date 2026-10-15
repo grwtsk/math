@@ -1,0 +1,19 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "gaussian-dyadic-formal",
+  "event": "final-dev-lock-acquired",
+  "owner": "cache_adapter",
+  "at": "2026-10-15T20:34:39.148156+00:00",
+  "source_hashes": {
+    "GRWTSK/Analysis/MellinTransform/ReverseInversion.lean": "88d959d74d9d5e27772f57e847497b9a943167cc41ae6abb453c3932cbb84c57",
+    "GRWTSK/Analysis/MellinTransform/LogarithmicGaussian.lean": "cd47e598796f4f901ddea56dd05bb9e719534e1aac5589c1be6ddfb8d9fea66d",
+    "GRWTSK/Analysis/MellinTransform/NormalizedGaussian.lean": "a0ed0dbf644601887df128536951a9c3e17ecf42970069a13acdfcb93518e3bf",
+    "GRWTSK/NumberTheory/LSeries/GaussianContour.lean": "66fdcea9766830cda6d2cfc02bc603b7b54c3f70b49e91b3f26cab4d1e1a4017",
+    "GRWTSK/Analysis/PartitionOfUnity/DyadicAnnulus.lean": "15637b705583781150ff8ba8b0f6aaa6ef969fe394f775e35124c5fa30f7aa67",
+    "GRWTSK/NumberTheory/LSeries/GaussianDyadic.lean": "2e5af752af46fde0d50a807b45cbf1724df88834c5d7464a19701d46360bbc0d",
+    "GRWTSK/NumberTheory/LSeries/Checks/Positive/GaussianDyadic.lean": "39081981a4fa7fa0091a94894e16c59b6c87199c64bf766be9e2edc2ffeedc72",
+    "GRWTSK/NumberTheory/LSeries/Checks/Negative/DyadicMissingCoverage.lean": "f9f98dfdbbac48fac2e3a696c65c7af0f1daefdc2d344fb6a5b7534d457b11c3"
+  },
+  "competing_jobs": [],
+  "archive": ".local/gaussian-dyadic/0340f9ec405a46188d1f41f3db8a8d07/final"
+}
