@@ -1,0 +1,192 @@
+{
+  "schema": "quartic-source-integration-receipt-v1",
+  "evidence_series_date": "2026-10-14",
+  "repository": "grwtsk/math",
+  "branch": "main",
+  "inspected_base_commit": "9adf061bf5aa34e65fb8237ed56c766539e22506",
+  "status": "EXECUTED_FINITE_RESEARCH_INTEGRATION; CANDIDATE_LEAN_NOT_ADMITTED",
+  "attribution": {
+    "human_direction": "grwtsk contributors",
+    "integration": "OpenAI ChatGPT",
+    "license": "MIT"
+  },
+  "source_bindings": [
+    {
+      "path": "scripts/source_hermite_bridge.py",
+      "bytes": 7867,
+      "sha256": "960e3bd698cfa72fcda4c2d73b2d46663cfee4c72d0c6c95179542410546844e",
+      "git_blob_sha1": "d00ea5b1e08301d6ab7b76b156d5d87f0f87d3c2"
+    },
+    {
+      "path": "scripts/even_quartic_coefficient_region.py",
+      "bytes": 4303,
+      "sha256": "a791bb4ff09205ca113f007a4aff691c0e5d1568fa2c820f20673ff98e918d0f",
+      "git_blob_sha1": "f8264f9e7a6382f6ba453411e9b05ac2b9e6561a"
+    },
+    {
+      "path": "scripts/test_source_hermite_bridge.py",
+      "bytes": 7564,
+      "sha256": "9554957bba43047bd3ae9a16dc4270fabe7c1cab4dc36cc7780ba94e24d9043e",
+      "git_blob_sha1": "14e7da7d2e3f1f98c8ddc9b1d2088695e42d7012"
+    },
+    {
+      "path": "scripts/test_even_quartic_coefficient_region.py",
+      "bytes": 7116,
+      "sha256": "d44afddd25f8246854b0185317f3ed52935378bf56477b45cdcfb8f33a171d89",
+      "git_blob_sha1": "0357ec6b3f6cc654867df0417610dbb9c505def1"
+    },
+    {
+      "path": "scripts/replay_quartic_source.py",
+      "bytes": 9953,
+      "sha256": "8bd18ff053ff353d26898e8a873477b6cd9b554d13c38583c4468deaae1ba0bb",
+      "git_blob_sha1": "5c84068d6e4716813ef21a532516c29359a33a20"
+    },
+    {
+      "path": "scripts/test_replay_quartic_source.py",
+      "bytes": 4353,
+      "sha256": "14b2b8e85659d18d7d80f97b2bfc8c065c1ada7d082cb0f065d7e018a547eaf7",
+      "git_blob_sha1": "cfa285a18c1853e47f1e6fab17c9bf17fd952ff0"
+    },
+    {
+      "path": "evidence/algebra/polynomial/quartic/quartic-enclosure-candidates-20261014.patch",
+      "bytes": 27959,
+      "sha256": "7cf4b170496012d0d41cb76ebc5f061bd6bc73b6745b82decc54d4a50c7cb7c2",
+      "git_blob_sha1": "5754597437bb219139bec71cae2a7c6b5f4c16e3"
+    },
+    {
+      "path": "evidence/algebra/polynomial/quartic/quartic-enclosure-audit-20261014.lean.txt",
+      "bytes": 4257,
+      "sha256": "c700728b40a0ba21a9e4d076117e79644a886f353e7e0b44ed1b8e21c094385b",
+      "git_blob_sha1": "309d71d639421d1a90e4d30e58b48c0995ba6f48"
+    },
+    {
+      "path": "evidence/algebra/polynomial/quartic/quartic-enclosure-verify-exact-20261014.py.txt",
+      "bytes": 11967,
+      "sha256": "c98da7656b33898afaf7a3c41b0aede46f79471c6ec20c6cb55065930019538c",
+      "git_blob_sha1": "e3674b8166cd48de9e773cc984fb2762c63cff10"
+    },
+    {
+      "path": "evidence/number-theory/zeta/even-quartic-source-regions-20261014.json",
+      "bytes": 4629,
+      "sha256": "b02084e80c2d4845b7cbf8038104f471ec0f9a72e461b847f7d90e0b15a2b5b9",
+      "git_blob_sha1": "bfafa29836df29f022b45e187fe184ca444e8988"
+    },
+    {
+      "path": "evidence/number-theory/zeta/quartic-source-integration-20261014.txt",
+      "bytes": 9700,
+      "sha256": "6a855c8ed4b3dc1a8f75d165129599684ab0175590985422f7d6ef86fe12bffb",
+      "git_blob_sha1": "40517f9e928adc311c4fc56536b04555d059e9e8"
+    }
+  ],
+  "unchanged_dependencies": [
+    {
+      "path": "scripts/reflected_zeta_cover.py",
+      "bytes": 22120,
+      "sha256": "9811a697087482c64bb6341e84ae38ccc762480e34f863b003195892bfc4636c",
+      "git_blob_sha1": "5d1ed201de62b87d2df2b5cd69f57982471015d3"
+    },
+    {
+      "path": "scripts/phase_aware_zeta_cover.py",
+      "bytes": 11026,
+      "sha256": "7b55e9db8c6f143ad3351371685c4f4645323fa044dabe211f52b6c232cea15a",
+      "git_blob_sha1": "bf5e6d4a6edfb301878e574ed8d950ef78027416"
+    },
+    {
+      "path": "scripts/zero_region_tracker.py",
+      "bytes": 6516,
+      "sha256": "957d3d9bb16a7616b47ec09434facd007221dc98d4e7be19e85b0cacb573815b",
+      "git_blob_sha1": "1c215401ea44b28f8cadbe7ad8462c2e85537c9d"
+    },
+    {
+      "path": "scripts/zeta_region_atlas.py",
+      "bytes": 15553,
+      "sha256": "b04761ba005e1fababe00a4571b0a1d7ba3a00e04974098e69351ed4e33a0800",
+      "git_blob_sha1": "0b4f36fe2c2fd4c36a7292af5ddfb71ccb35f4e1"
+    }
+  ],
+  "candidate_archive": {
+    "original_zip_sha256": "2b5d73cdbe74ed7a760949652dc1517dd57c24a4f47a96e11a82a5eb0acf27d4",
+    "candidate_modules": 8,
+    "written_theorem_declarations": 53,
+    "audit_requests": 53,
+    "native_axiom_audit": false,
+    "preservation": "Original eight module bodies, patch, audit and symbolic checker are unchanged. Patch and audit are inert research evidence, not active library additions.",
+    "audit_scope": "Text inventory of 53 print-axiom requests only; no Lean execution or axiom allowlist acceptance.",
+    "candidate_hashes": "The complete eight-module SHA-256 inventory is recorded in the bound replay report and checked by the unchanged original verifier."
+  },
+  "mathematics": {
+    "source": "F(s)=(s-1)zeta(s), F(1)=1 by analytic continuation; unchanged complete Euler--Maclaurin evaluator.",
+    "contour_moment_bound": "If |f-P|<=epsilon<mu<=|P| on the entire boundary, normalized power-sum error at order k is <=k*epsilon/(mu-epsilon). Written continuum proof.",
+    "hermite_error": "For N roots, operator error <=(3/2)N(N-1)*epsilon/(mu-epsilon); real source-divisor symmetry is an explicit premise.",
+    "general_even_quartic": "H(p,r)>=0 iff p<=0,r>=0,p^2-4r>=0; positive definite iff all three signs are strict. Written algebra and exact finite consumer.",
+    "executed_divisors": 3,
+    "source_disks": 6,
+    "positive_disk_centers": [
+      "113/8",
+      "21",
+      "25",
+      "487/16",
+      "527/16",
+      "601/16"
+    ],
+    "disk_radius": "1/16",
+    "spectral_coordinate": "w=-i(s-1/2)/40",
+    "coefficient_bits": 64,
+    "all_three_strict_coefficient_boxes": true,
+    "scope": "The same twelve zeros previously localized through height 40, grouped as three four-zero divisors. No new region or height.",
+    "orbit_distinction": "Actual four-distinct-zero divisors are not single repeated-slot reflection orbits. The positive source gap is not substituted into the negative orbit-gap identity."
+  },
+  "verification": {
+    "python": "3.13.5",
+    "sympy": "1.14.0",
+    "command": "python3 -B scripts/replay_quartic_source.py --output-dir /tmp/quartic-source-run",
+    "both_modes_run_by_command": true,
+    "original_symbolic_checks_per_mode": 63,
+    "unit_tests_per_mode": {
+      "source_bridge": 36,
+      "coefficient_region": 18,
+      "replay_boundary": 20,
+      "total": 74
+    },
+    "successful_subprocesses": 12,
+    "fresh_source_modes_identical": true,
+    "fresh_coefficient_record_matches_repository_record": true,
+    "original_mode_reports_differ_only_in_optimization_flag": true,
+    "replay_report_sha256": "6047efe5ba027d7aeaec142c09255632cab9c0731ae50f9828fd46abc6cdac8a",
+    "source_moments_sha256": "01e9f03266a7a742d44c82c9679318bd4f0b101b1681bfe7b91228f4ab96aee3",
+    "coefficient_regions_sha256": "b02084e80c2d4845b7cbf8038104f471ec0f9a72e461b847f7d90e0b15a2b5b9",
+    "native_lean": "NOT_RUN: no Lean/Lake/elan executable",
+    "owned_declaration_axiom_audit": "NOT_RUN: no active Lean additions",
+    "full_repository_layout_and_documentation": "NOT_RUN: partial source snapshot; direct Git DNS resolution failed",
+    "full_atlas_replay": "NOT_RUN in this integration; source disks and moments were freshly recomputed",
+    "interrupted_attempts": "Two foreground attempts ended before producing a complete replay receipt. Their partial logs are preserved in the user-facing bundle. Only replay-final is acceptance evidence.",
+    "upload_correction": "Unattached patch and receipt transcriptions with mismatched content hashes were rejected before branch publication. Only blobs matching the final local source/evidence bytes are included.",
+    "logs": "Complete successful logs and source outputs are retained in the user-facing reproduction bundle."
+  },
+  "controls": [
+    "exact input hashes",
+    "eight complete safe patch additions",
+    "53 distinct audit requests",
+    "duplicate or missing modules and requests",
+    "source and coefficient uncertainty retained",
+    "no false==0 JSON equivalence",
+    "duplicate keys and nonfinite JSON rejected",
+    "fresh producer equality rather than trusted status flags",
+    "new output directory required",
+    "no active candidate installation",
+    "singular positive matrix perturbation",
+    "missing r>=0 constraint",
+    "distinct divisor versus repeated symmetry slots"
+  ],
+  "preserved": "Existing source, active Lean library, pins, workflows, canonical guides, atlas certificates and historical receipts are unchanged by these additions.",
+  "remaining": "Pinned native admission and source adapters remain separate tasks. The global mathematical gap remains a source-specific positive margin or exact neutral-mode identity covering all required regions, or the unchanged uniform signed bilinear estimate.",
+  "nonclaims": {
+    "RH": false,
+    "new_zero_free_region": false,
+    "new_height": false,
+    "all_height_coverage": false,
+    "uniform_orbit_positivity": false,
+    "MertensLogSquareBound_discharged": false,
+    "new_Lean_admissions": 0
+  }
+}
