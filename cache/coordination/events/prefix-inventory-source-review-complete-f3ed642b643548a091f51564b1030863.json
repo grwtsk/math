@@ -1,0 +1,24 @@
+{
+  "schema": "grwtsk.coordination.event.v1",
+  "event": "prefix-inventory-source-review-complete",
+  "agent": "cache_taxonomy",
+  "at": "2026-10-15T20:55:36.063188+00:00",
+  "review": {
+    "path": "evidence/Combinatorics/DirectedGraph/prefix-inventory-source-review-2026-10-15.json",
+    "sha256": "eadd733cdc7ff3d36e36fa6c14fde90c2b896856b2c7ef2c7ae13da6df088839",
+    "bytes": 12780
+  },
+  "author_completion": {
+    "path": "cache/coordination/events/20261015T205424Z-prefix-inventory-complete-b9b4a068.json",
+    "sha256": "94d4f4368c9d4fb3b42248ec5922c3135ea31c5fb6abc5bd6c30f997f06719a0",
+    "bytes": 6320
+  },
+  "local_source_hashes": {
+    "GRWTSK/Combinatorics/DirectedGraph/PrefixInventory.lean": "fa7395f0c55943562274019d96e97e25deaea20defdf9d6f2d8a12d029e743c9",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixInventory.lean": "91c594954863dd29e14e21632042cb5d0fcc4063c473662fcce8b745a65cb7fa",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixInventoryMissingIdentity.lean": "deedba52ebd4261b8f9ef8d6e6c58c583463141b329083405758c47b17b8064b"
+  },
+  "status": "correlated-source-review-complete-native-NOT_RUN",
+  "finding": "No actionable missing hypothesis, history-identity shortcut or false primary-source correspondence observed in the three final frozen files within the bounded scope.",
+  "scope": "Source/premise/control/credit review only; root native acceptance separate."
+}

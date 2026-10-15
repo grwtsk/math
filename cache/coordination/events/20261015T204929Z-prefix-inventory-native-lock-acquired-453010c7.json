@@ -1,0 +1,10 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "finite-prefix-inventory-formal",
+  "owner": "indexed_dictionary",
+  "at": "2026-10-15T20:49:29.913832+00:00",
+  "kind": "native-lock-acquired",
+  "source": "GRWTSK/Combinatorics/DirectedGraph/PrefixInventory.lean",
+  "source_sha256": "03747a56262c8d4da8a4add2dffb7111fa6d474cb07bd92715ab599c351e111d",
+  "guard_competing_jobs": []
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "grwtsk.coordination.event.v1",
+  "event": "prefix-window-source-scout-progress",
+  "agent": "cache_taxonomy",
+  "at": "2026-10-15T20:48:10.567660+00:00",
+  "primary_manifest": {
+    "path": ".local/prefix-window-source-scout/7bb1ae6675734be1b0b6fa92ba093fa9/manifest.json",
+    "sha256": "be4c19f19350be5d2ae351d1d4ba2805f85dad09616d8e741657be5f58511994"
+  },
+  "additional_manifest": {
+    "path": ".local/prefix-window-source-scout/7bb1ae6675734be1b0b6fa92ba093fa9/additional-primary-manifest.json",
+    "sha256": "b971cecb1448adc8ea730301729c12e038f3b5936f80ded1a5fd99373d34e51b"
+  },
+  "findings": [
+    "Exact upstream Vstar465 = sqrt(y)*W(y), checked from pinned IdealMobius SHA/blob.",
+    "Existing List.inits/dedup and SchwartzMap constructor APIs re-read; finite actual full-tag inventory and exact G proofs remain local obligations.",
+    "Fresh bounded arxiv Courcelle/rooted walk and Hoffstein-Hulse/dyadic compact window comparison, retaining prior exact captures/credit/version and no paper theorem transfer."
+  ],
+  "native_status": "NOT_RUN",
+  "final_local_bindings": "Pending worker freezes."
+}

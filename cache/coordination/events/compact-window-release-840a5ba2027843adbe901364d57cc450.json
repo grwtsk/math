@@ -1,0 +1,13 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "compact-gaussian-window-formal",
+  "event": "dev-lock-released",
+  "at": "2026-10-15T20:49:19.306721+00:00",
+  "owner": "cache_adapter",
+  "attempt": ".local/compact-gaussian-window/c6ad1160b80a480eb7220c61e623b061/attempts/Negative-attempt04",
+  "source_sha256": "9e5d3293cdc82cdb795fa55287be9d9e09ae716786140e6f76b2a0b13e5207bf",
+  "competing_jobs": [],
+  "receipt": ".local/compact-gaussian-window/c6ad1160b80a480eb7220c61e623b061/attempts/Negative-attempt04.json",
+  "exit_code": 1,
+  "native_jobs_running": 0
+}

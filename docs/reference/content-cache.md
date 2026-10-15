@@ -166,6 +166,19 @@ old occurrence label. The taxonomy is separately byte-bound; it is not part
 of the Lean-source snapshot. Validation binds this declared pair of inputs
 without claiming the taxonomy was historically contained in that snapshot.
 
+The [finite prefix inventory](../mathematics/Combinatorics/DirectedGraph/prefix-inventory.md)
+shares complete typed prefix traces among a finite ordered list of keyed
+occurrences. Every dictionary entry is valid from its fixed root and decodes
+to an actual occurrence. The existing indexed decoder reconstructs all
+original keys and complete traces; the valid-trace decoder then recovers
+the actual occurrences, including duplicate rows, in order.
+Its size is at most the sum of input trace lengths plus one per row.
+`List.dedup` retains rightmost copies: parents need not precede children,
+and indices need not remain stable after revision. This noncomputable
+mathematical contract does not verify operational byte compression or the
+relation-ID adapter. The [inventory decision](../../cache/decisions/prefix-inventory-v1.json)
+records those boundaries durably.
+
 See [cache operations](../how-to/cache.md), the
 [taxonomy](../../cache/taxonomy.json), and the
 [integration evidence](../../evidence/Logic/FiniteSequences/cache-integration-2026-10-15.json).

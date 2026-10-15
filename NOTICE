@@ -156,7 +156,7 @@ lean/OAI/NumberTheory/DirichletL/Detector/GaussianPartition.lean,
 raw SHA256 e8c07b6a103deb0f0e65277c1a06b5035a36482560d9ac5c6389eaf4c783277b;
 GaussianDecomposition.lean in that directory,
 raw SHA256 494752f7dcd2e0916be5e4d3c7a64c24e5551a9bc5a5f278200e46f068ebf389.
-GaussianWindows.lean is comparison context only, raw SHA256
+For these two modules, GaussianWindows.lean is comparison context only, raw SHA256
 045f00d06e64c005c0d37031c3842152d959fea2609ce4cb2f4916f7485f8f50;
 its optional square-root window API and surrounding ideal detector are not
 admitted by the local natural-number consumer. Mathlib SmoothTransition
@@ -165,3 +165,29 @@ Yury Kudryashov, retains Apache-2.0; infinite-sum and prior Gaussian/Mellin
 author notices remain upstream. Human direction: grwtsk contributors;
 local adaptation/formalization/checking: OpenAI Codex. No mathematical
 novelty, whole-library acceptance, Haar-mass normalization or RH supplier.
+
+Compact Gaussian window and square-root weighting
+------------------------------------------------
+GRWTSK/Analysis/MellinTransform/CompactGaussianWindow.lean retains Apache-2.0
+terms. The exact window and selected proof patterns are adapted from
+openai/math@1581d4cbdd69a0faf34b2089614fe2a814316a6a,
+lean/OAI/NumberTheory/DirichletL/Detector/GaussianWindows.lean,
+raw SHA256 045f00d06e64c005c0d37031c3842152d959fea2609ce4cb2f4916f7485f8f50.
+The actual Schwartz-map supplier follows GaussianLow.lean in that directory,
+raw SHA256 3a37f28e065cc4c54fbd92e44a08cf0dd03ac6ae1cebc0bba46203be74721bd6.
+The rootWeight definition preserves CompletedGauss.Vstar from
+lean/OAI/NumberTheory/DirichletL/Arithmetic/IdealMobius.lean,
+raw SHA256 dd0ae071b0bdb5746fa6362de83aa86a4ee4462810a7fdbc72f0af95b5887675.
+OpenAI remains the upstream project formalization author; see
+LICENSES/OpenAI-Apache-2.0.txt. Mathlib SpecialFunctions/Sqrt.lean retains
+copyright (c) 2021 Yury Kudryashov, author Yury Kudryashov, Apache-2.0.
+Mathlib Distribution/SchwartzSpace/Basic.lean retains copyright (c) 2022
+Moritz Doll, author Moritz Doll, Apache-2.0. Earlier Gaussian/Mellin and
+smooth-transition author and license notices remain retained.
+The actual window is A(y)*P(2^j*y/Z)/(sqrt(y):Complex). Its cutoff and compact
+support hold for arbitrary real Z; the source smoothness theorem retains
+Z>0. Positive-y square-root weighting cancels the exact denominator.
+Human direction: grwtsk contributors; local adaptation/formalization/checking:
+OpenAI Codex. No necessity of Z>0, uniform-scale derivative bound,
+surrounding physical/ideal detector admission, independent validation or RH
+supplier is claimed by this window construction.

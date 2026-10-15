@@ -1,0 +1,16 @@
+{
+  "schema": "repository-agent-task-v1",
+  "id": "finite-prefix-inventory-formal",
+  "owner": "indexed_dictionary",
+  "at": "2026-10-15T20:46:37.381728+00:00",
+  "branch": "main",
+  "base_commit": "6542833b15f463e35c1b8de6436d2ad1ec0eb27a",
+  "cache_revision": "e3290594713428b4ab34127bb7037aa012f8c792f7b5cba3a64f09300f660511",
+  "write_paths": [
+    "GRWTSK/Combinatorics/DirectedGraph/PrefixInventory.lean",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixInventory.lean",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixInventoryMissingIdentity.lean"
+  ],
+  "objective": "Finite full-tag history prefix inventory for keyed existing occurrences. Exact member/prefix-closure/ValidFrom decode and length bound; reuse actual IndexedDictionary.Packed/unpack_map_indices for key/order/multiplicity recovery, then actual occurrence identity via existing decode/trace injectivity. Empty/singleton/parallel/repeated controls; no endpoint/parent-only/optimalbyte/runtime claim.",
+  "coordination": "Use allocatednewfiles/ignoredscratch and immutable repository tasks/events/reviews. Root owns fresh complete acceptance/sharedregistries/docs/cache/commit. Preserve prior sources/history/variants/failures/licenses. Shared native lock held until allchildrenexit; explicit noncomputable mathematical recursive defs, no helper exemptions. No remote writes/branches/migration takeover."
+}

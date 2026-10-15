@@ -1,0 +1,19 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "compact-gaussian-window-formal",
+  "event": "source-freeze",
+  "owner": "cache_adapter",
+  "at": "2026-10-15T20:49:44.212369+00:00",
+  "source_hashes": {
+    "GRWTSK/Analysis/MellinTransform/CompactGaussianWindow.lean": "db195580ca2f4e4a941f13c71d285af377d2bb29ed7250db0f0b13570984cec5",
+    "GRWTSK/Analysis/MellinTransform/Checks/Positive/CompactGaussianWindow.lean": "96ec310820e5d010bb0c67ff624456dba652703a731800aa195c65cd7f87ac0d",
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianWindowMissingRootFactor.lean": "ce09a5a803778f75a2da288d554bef9f11f8c112414e42f2325c29e202a1c6b5"
+  },
+  "contract": "exactG=A(y)P(2^j*y/Z)/sqrt(y);arbitraryZzero/support/compact;sourceZ>0ContDiff\u221e;positive-yrootWeightindependentZ;actualSchwartzMap+consumers",
+  "positive": "actual3/4annulus/profile nonzero,sqrtneq1,correctGweightedidentityandwrongomittedfactorinequality;Zarbitraryzero;actualSchwartzj0Z1evaluation",
+  "negative_error_count": 1,
+  "negative_expected_substring": "rootWeight unnormalizedWindow",
+  "negative_actual": "sole Type mismatch: correctWindow_normalizes for rootWeight(gaussianDyadicProfile1,0) cannot supply rootWeightunnormalizedWindow(3/4)",
+  "native_state": "all scratch children exited/sharedlockreleased; canonicalfinalfreshdevelopmentpending",
+  "scope": "noZ0necessity,nofullideal/Hecke/calibration/physicaladmission,nocontourorRHclaim"
+}
