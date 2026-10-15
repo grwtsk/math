@@ -1,0 +1,10 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "role-relation-table-formal",
+  "owner": "indexed_dictionary",
+  "at": "2026-10-15T22:52:37.041993+00:00",
+  "kind": "native-lock-acquired",
+  "source": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/RoleRelationTable.lean",
+  "source_sha256": "f609f741fd0ec8fc715b07199419be10bfb3f4aaeba15cd1b941a70a450ccab5",
+  "guard_competing_jobs": []
+}

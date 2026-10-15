@@ -49,6 +49,12 @@ actual Gaussian value at $Z=1,j=0,y=3/4$ supplies that witness. This refutes
 the zero source budget, without asserting a full moment counterexample or
 sharpness of the derivative range.
 
+The [compact logarithmic Gaussian-window consumer](../MellinTransform/gaussian-log-window.md)
+also supplies the full source-pair family. It constructs the actual compact
+window from the entire logarithmic flow, produces a support box, and defines
+the actual density as its Fourier transform. Its positive-scale power bound
+is separate from the dyadic Gaussian-window family above.
+
 ## Source, verification and credit
 
 The [source](../../../../GRWTSK/Analysis/Fourier/SchwartzMoments.lean),

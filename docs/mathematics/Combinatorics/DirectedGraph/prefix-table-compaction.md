@@ -36,6 +36,13 @@ row list, retaining order and repetitions. Its criterion and evidence are
 also premises. No criterion on new
 or different rows follows merely from compaction.
 
+The [finite role-qualified relation codec](role-relation-table.md) now
+connects actual finite table IDs to the complete typed edges used here.
+Its inverse laws and actual rooted path construction preserve parallel ID
+identity, joins, order and repetitions. The actual compaction consumer
+projects the same complete decoded rows through that codec. The table and
+selected role remain explicit; operational JSON refinement is still open.
+
 ## Premises and verification
 
 The construction requires decidable equality of full typed edge tags;

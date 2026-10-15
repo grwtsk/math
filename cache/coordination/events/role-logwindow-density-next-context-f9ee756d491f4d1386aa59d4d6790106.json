@@ -1,0 +1,14 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "role-logwindow-source-scout",
+  "owner": "cache_taxonomy",
+  "at": "2026-10-15T22:50:07.112732+00:00",
+  "kind": "bounded-next-source-context",
+  "context": {
+    "path": ".local/role-logwindow-source-scout/76336098be2f412e9e9fd4516b7705bf/density-next-source-context.json",
+    "sha256": "a1789d0e479b7d89aa8b2ffaf4afd432331eec986e420b4b2860a819622e316a",
+    "bytes": 3366
+  },
+  "status": "NOT_RUN",
+  "review_character": "Correlated same-team source-only, not independent validation. No new source/native/shared/Git writes."
+}

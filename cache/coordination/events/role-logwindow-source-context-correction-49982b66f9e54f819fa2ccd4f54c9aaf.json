@@ -1,0 +1,19 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "role-logwindow-source-scout",
+  "owner": "cache_taxonomy",
+  "at": "2026-10-15T22:46:13.979459+00:00",
+  "kind": "source-anchor-correction",
+  "prior_context": {
+    "path": ".local/role-logwindow-source-scout/76336098be2f412e9e9fd4516b7705bf/review-context.json",
+    "sha256": "8c1e9dc3b36189f14cb2b8e0f81dd34043d4089335bd12386b9f452095e1db35",
+    "bytes": 21618
+  },
+  "corrected_context": {
+    "path": ".local/role-logwindow-source-scout/76336098be2f412e9e9fd4516b7705bf/review-context-r2.json",
+    "sha256": "cbfab923c6e154a831ac1e639afd298c43089b18f695a2a752719e847918535d",
+    "bytes": 21961
+  },
+  "correction": "Previous ignored context contained provisional Bounded API names/lines in one scope sentence; this r2 uses exact source declarations. Prior context preserved, source bytes unchanged.",
+  "status": "NOT_RUN"
+}

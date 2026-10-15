@@ -1,0 +1,11 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "gaussian-log-window-formal",
+  "event": "design-and-contract",
+  "owner": "cache_adapter",
+  "at": "2026-10-15T22:46:27.120815+00:00",
+  "archive": ".local/gaussian-log-window/50f432a944674e0c88bd50c06c46e547",
+  "contract": "Exact entire log-flow, positiveR profile identity, actual disk/Cauchy derivatives; exact compact V times flow Schwartz window; derive support box; actual full J+p sourcepairs and generic Fourier moment; actual density=Fourierwindow, positiveprofile integral identity/integrability and one C before allR>0.",
+  "status": "written-in-ignored-scratch-native-NOT_RUN",
+  "limits": "No coupled separation, cutoff, physical/arithmetic/RH closure."
+}

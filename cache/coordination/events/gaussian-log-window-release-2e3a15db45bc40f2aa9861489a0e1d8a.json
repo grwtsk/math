@@ -1,0 +1,13 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "gaussian-log-window-formal",
+  "event": "dev-lock-released",
+  "at": "2026-10-15T22:50:13.632889+00:00",
+  "owner": "cache_adapter",
+  "attempt": ".local/gaussian-log-window/50f432a944674e0c88bd50c06c46e547/attempts/FlowPositive-attempt05",
+  "source_sha256": "2f1acd0a48ca6277c99a8a26e3dcfb51b15fec56801f57b1b41085d261c71eb6",
+  "competing_jobs": [],
+  "receipt": ".local/gaussian-log-window/50f432a944674e0c88bd50c06c46e547/attempts/FlowPositive-attempt05.json",
+  "exit_code": 0,
+  "native_jobs_running": 0
+}
