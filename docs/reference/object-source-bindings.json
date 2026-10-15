@@ -34,6 +34,7 @@
     ],
     "Analysis/InnerProductSpace": [
       "GRWTSK/Analysis/InnerProductSpace/CausalResponseGram.lean",
+      "GRWTSK/Analysis/InnerProductSpace/ClosedOperatorSolvability.lean",
       "GRWTSK/Analysis/Polarization.lean"
     ],
     "Logic/ProofChecking": [
@@ -95,6 +96,7 @@
       "GRWTSK/Logic/FiniteSequences/AppendOnlyHistory.lean",
       "GRWTSK/Logic/FiniteSequences/DecisionCertificate.lean",
       "GRWTSK/Logic/FiniteSequences/DictionaryRevision.lean",
+      "GRWTSK/Logic/FiniteSequences/IncrementalDictionary.lean",
       "GRWTSK/Logic/FiniteSequences/IndexedDictionary.lean",
       "GRWTSK/Logic/FiniteSequences/PrefixCoverage.lean"
     ],
