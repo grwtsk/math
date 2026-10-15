@@ -5996,17 +5996,18 @@
     }
   ],
   "counts_by_operation": {
+    "add": 9,
     "keep": 336,
     "move": 206
   },
   "counts_by_role": {
     "audit-driver": 35,
-    "library": 334,
-    "negative-control": 95,
-    "positive-check": 78
+    "library": 338,
+    "negative-control": 98,
+    "positive-check": 80
   },
   "counts_by_subject": {
-    "Algebra": 11,
+    "Algebra": 14,
     "Analysis": 195,
     "Combinatorics": 8,
     "Data": 1,
@@ -6016,13 +6017,13 @@
     "LinearAlgebra": 49,
     "Logic": 42,
     "MeasureTheory": 5,
-    "NumberTheory": 182,
+    "NumberTheory": 188,
     "Order": 3,
     "Spectral": 25
   },
-  "present_lean_source_count": 605,
+  "present_lean_source_count": 614,
   "schema": "grwtsk-math-source-catalog-v1",
-  "source_count": 542,
+  "source_count": 551,
   "sources": [
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -6033,6 +6034,7 @@
         "GRWTSK.Algebra.MvPolynomial.SquarefreeEulerProduct",
         "GRWTSK.Algebra.OrderedProduct",
         "GRWTSK.Algebra.OrderedProductGauge",
+        "GRWTSK.Algebra.Polynomial.ConjugateQuartic",
         "GRWTSK.Analysis.Asymptotics.DisjointPrimeChainBounds",
         "GRWTSK.Analysis.Asymptotics.ExponentialEnergyObstruction",
         "GRWTSK.Analysis.Asymptotics.ExponentialRecurrence",
@@ -6061,6 +6063,8 @@
         "GRWTSK.Analysis.Calculus.PolynomialBumpNormalization",
         "GRWTSK.Analysis.Calculus.SupportEdgeDifferentiability",
         "GRWTSK.Analysis.CausalTranslation.ExponentialResponse",
+        "GRWTSK.Analysis.Complex.CriticalReflection",
+        "GRWTSK.Analysis.Complex.ReflectionCounterexamples",
         "GRWTSK.Analysis.Complex.VerticalReflection",
         "GRWTSK.Analysis.Convolution.AutocorrelationDerivativeEnergy",
         "GRWTSK.Analysis.Convolution.AutocorrelationSecondDerivative",
@@ -6190,6 +6194,7 @@
         "GRWTSK.LinearAlgebra.GaugeState",
         "GRWTSK.LinearAlgebra.JacobiTransfer",
         "GRWTSK.LinearAlgebra.LinearMap.FiniteMixingObstruction",
+        "GRWTSK.LinearAlgebra.Matrix.HermitianCounterexamples",
         "GRWTSK.LinearAlgebra.Matrix.SingularCongruenceObstruction",
         "GRWTSK.LinearAlgebra.OrderedProductDeterminant",
         "GRWTSK.LinearAlgebra.OrderedTransfer",
@@ -6207,7 +6212,6 @@
         "GRWTSK.Logic.Certificates.DependencyRevisionExamples",
         "GRWTSK.Logic.Certificates.ModelExamples",
         "GRWTSK.Logic.Certificates.ProofCoverage",
-        "GRWTSK.Logic.Counterexamples.ComplexSymmetryAndPositivity",
         "GRWTSK.Logic.FiniteCoverage",
         "GRWTSK.Logic.FiniteSequences.PrefixCoverage",
         "GRWTSK.Logic.Inference.FiniteRuleExamples",
@@ -6292,6 +6296,7 @@
         "GRWTSK.NumberTheory.Moebius.MertensSquareEnergyPowerBound",
         "GRWTSK.NumberTheory.Moebius.MoebiusEulerProduct",
         "GRWTSK.NumberTheory.Moebius.NegativePrimeCorrelation",
+        "GRWTSK.NumberTheory.Moebius.PolynomialEnergyHolomorphy",
         "GRWTSK.NumberTheory.Moebius.PolynomialLaplaceHolomorphy",
         "GRWTSK.NumberTheory.Moebius.PrimeBlockEnergy",
         "GRWTSK.NumberTheory.Moebius.PrimeFactorFilters",
@@ -6339,13 +6344,17 @@
         "GRWTSK.NumberTheory.Zeta.ReciprocalHolomorphyZeroSymmetry",
         "GRWTSK.NumberTheory.Zeta.ResponseBoundZeroConversions",
         "GRWTSK.NumberTheory.Zeta.Riemann",
+        "GRWTSK.NumberTheory.Zeta.Riemann.BoundedHeightCriterion",
         "GRWTSK.NumberTheory.Zeta.Riemann.CriticalLineDefect",
         "GRWTSK.NumberTheory.Zeta.Riemann.DefectCriterion",
         "GRWTSK.NumberTheory.Zeta.Riemann.Hypothesis",
         "GRWTSK.NumberTheory.Zeta.Riemann.LaplaceCriterion",
         "GRWTSK.NumberTheory.Zeta.Riemann.PolynomialEnergyCriterion",
+        "GRWTSK.NumberTheory.Zeta.Riemann.QuadraticTraceCriterion",
         "GRWTSK.NumberTheory.Zeta.Riemann.Regularized",
         "GRWTSK.NumberTheory.Zeta.Riemann.ZeroDefinitions",
+        "GRWTSK.NumberTheory.Zeta.Riemann.ZeroExclusions",
+        "GRWTSK.NumberTheory.Zeta.Riemann.ZeroOrbitQuartic",
         "GRWTSK.NumberTheory.Zeta.Riemann.ZeroSymmetry",
         "GRWTSK.NumberTheory.Zeta.ZeroFreeHalfPlaneCriteria",
         "GRWTSK.Order.Closure.FiniteDependencyClosure",
@@ -6529,21 +6538,18 @@
         "GRWTSK/Logic/ProofChecking/Checks/OwnedDeclarationAudit.lean"
       ],
       "runner": "python3 -B scripts/check_ccc_energy.py",
-      "sha256": "68e16b00f3026df81c5ee4d7ee9cce256db09082ff0e9913f3f7342078e0dde8",
+      "sha256": "b1f31cb8473a72298ca616e7da9e168ed1ec054283fa3300445141b9306b93d0",
       "source_role": "library",
       "source_root": ".",
       "subject": "Library",
       "target_path": "GRWTSK.lean",
       "verification": {
         "inventory": "observed-current-bytes",
-        "layout": "passed-current-layout-20261014",
-        "layout_binding": "evidence/lean-consolidation-rigor-post-merge-2026-10-14.json",
-        "lean": "334_LIBRARY_SOURCES_PASSED_TRUST_ZERO_FATAL_WARNINGS_20261014T051042Z",
-        "owned_declaration_audit": "FAILED_ON_18_PARTIAL_DECLARATION_FINDINGS",
-        "replay_binding": "evidence/lean-consolidation-rigor-post-merge-2026-10-14.json",
-        "source_sha256": "68e16b00f3026df81c5ee4d7ee9cce256db09082ff0e9913f3f7342078e0dde8"
+        "layout": "repository baseline remains failed",
+        "lean": "not-replayed-after-import-additions",
+        "source_sha256": "b1f31cb8473a72298ca616e7da9e168ed1ec054283fa3300445141b9306b93d0"
       },
-      "working_tree_state": "tracked-clean"
+      "working_tree_state": "tracked-modified"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -7242,6 +7248,198 @@
         "source_sha256": "d6ca049d4674503df5b175e7028c41c742af43ec7c42389a3fb3528c8f6ec5ae"
       },
       "working_tree_state": "tracked-clean"
+    },
+    {
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Algebra.Polynomial.ConjugateQuartic"
+      ],
+      "logical_status": "selected checked theorem or construction; conditional premises retained",
+      "module": "GRWTSK.Algebra.Polynomial.Checks.Positive.ConjugateQuartic",
+      "namespaces": [],
+      "object": "Polynomial/Checks/Positive",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Algebra/Polynomial/Checks/Positive/ConjugateQuartic.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Algebra/Polynomial/Checks/Positive/ConjugateQuartic.lean",
+      "placement_rationale": "Polynomial trace algebra is independent of zeta; zeta-specific consumers belong with the zeta function; checks stay subject-local.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B scripts/check_quartic_trace.py",
+      "sha256": "cd9ed21329e5587f3ff3dd291b63d085ad61d5ebd93302112721828d46946c60",
+      "source_role": "positive-check",
+      "source_root": "GRWTSK",
+      "subject": "Algebra",
+      "target_path": "GRWTSK/Algebra/Polynomial/Checks/Positive/ConjugateQuartic.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path-check; repository baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/NumberTheory/Zeta/quartic-trace-checks-2026-10-15.json",
+        "source_sha256": "cd9ed21329e5587f3ff3dd291b63d085ad61d5ebd93302112721828d46946c60"
+      },
+      "working_tree_state": "untracked"
+    },
+    {
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "git_blob": null,
+      "imports": [
+        "Mathlib.Algebra.Polynomial.Eval.Defs",
+        "Mathlib.Analysis.Complex.Basic",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.Positivity",
+        "Mathlib.Tactic.Ring"
+      ],
+      "logical_status": "selected checked theorem or construction; conditional premises retained",
+      "module": "GRWTSK.Algebra.Polynomial.ConjugateQuartic",
+      "namespaces": [
+        "GRWTSK.Polynomial.ConjugateQuartic"
+      ],
+      "object": "Polynomial",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Algebra/Polynomial/ConjugateQuartic.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Algebra/Polynomial/ConjugateQuartic.lean",
+      "placement_rationale": "Polynomial trace algebra is independent of zeta; zeta-specific consumers belong with the zeta function; checks stay subject-local.",
+      "public_declarations": [
+        {
+          "kind": "def",
+          "line": 27,
+          "name": "roots"
+        },
+        {
+          "kind": "def",
+          "line": 31,
+          "name": "quartic"
+        },
+        {
+          "kind": "def",
+          "line": 35,
+          "name": "quadratic"
+        },
+        {
+          "kind": "def",
+          "line": 39,
+          "name": "signedTrace"
+        },
+        {
+          "kind": "def",
+          "line": 43,
+          "name": "quadraticTrace"
+        },
+        {
+          "kind": "theorem",
+          "line": 46,
+          "name": "quartic_expansion"
+        },
+        {
+          "kind": "theorem",
+          "line": 52,
+          "name": "quartic_eval_roots"
+        },
+        {
+          "kind": "theorem",
+          "line": 60,
+          "name": "signedTrace_quadratic"
+        },
+        {
+          "kind": "theorem",
+          "line": 69,
+          "name": "quadraticTrace_eq"
+        },
+        {
+          "kind": "def",
+          "line": 78,
+          "name": "witnessTrace"
+        },
+        {
+          "kind": "theorem",
+          "line": 81,
+          "name": "witnessTrace_eq"
+        },
+        {
+          "kind": "theorem",
+          "line": 86,
+          "name": "witnessTrace_neg"
+        },
+        {
+          "kind": "theorem",
+          "line": 94,
+          "name": "witnessTrace_nonneg_iff"
+        },
+        {
+          "kind": "theorem",
+          "line": 103,
+          "name": "quadraticTrace_nonneg_iff"
+        },
+        {
+          "kind": "theorem",
+          "line": 115,
+          "name": "even_test_trace"
+        },
+        {
+          "kind": "theorem",
+          "line": 120,
+          "name": "witnessTrace_zero_height"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Algebra.Polynomial.Checks.Positive.ConjugateQuartic",
+        "GRWTSK.Algebra.Polynomial.ConjugateQuartic.Checks.Negative.ZeroHeight",
+        "GRWTSK.NumberTheory.Zeta.Riemann.QuadraticTraceCriterion",
+        "GRWTSK.NumberTheory.Zeta.Riemann.ZeroOrbitQuartic"
+      ],
+      "runner": "python3 -B scripts/check_quartic_trace.py",
+      "sha256": "7ec04ba3204a196a01744d12cdb4f807c19387853d373e9f31d533ae03bd18fe",
+      "source_role": "library",
+      "source_root": "GRWTSK",
+      "subject": "Algebra",
+      "target_path": "GRWTSK/Algebra/Polynomial/ConjugateQuartic.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path-check; repository baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/NumberTheory/Zeta/quartic-trace-checks-2026-10-15.json",
+        "source_sha256": "7ec04ba3204a196a01744d12cdb4f807c19387853d373e9f31d533ae03bd18fe"
+      },
+      "working_tree_state": "untracked"
+    },
+    {
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Algebra.Polynomial.ConjugateQuartic"
+      ],
+      "logical_status": "intentionally invalid control; measured rejection required",
+      "module": "GRWTSK.Algebra.Polynomial.ConjugateQuartic.Checks.Negative.ZeroHeight",
+      "namespaces": [],
+      "object": "Polynomial/ConjugateQuartic/Checks/Negative",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Algebra/Polynomial/ConjugateQuartic/Checks/Negative/ZeroHeight.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Algebra/Polynomial/ConjugateQuartic/Checks/Negative/ZeroHeight.lean",
+      "placement_rationale": "Polynomial trace algebra is independent of zeta; zeta-specific consumers belong with the zeta function; checks stay subject-local.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B scripts/check_quartic_trace.py",
+      "sha256": "39a4f2bb318eb668c425cb26757170e31a09609fc43b09f95c656c5035a4efe0",
+      "source_role": "negative-control",
+      "source_root": "GRWTSK",
+      "subject": "Algebra",
+      "target_path": "GRWTSK/Algebra/Polynomial/ConjugateQuartic/Checks/Negative/ZeroHeight.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path-check; repository baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/NumberTheory/Zeta/quartic-trace-checks-2026-10-15.json",
+        "source_sha256": "39a4f2bb318eb668c425cb26757170e31a09609fc43b09f95c656c5035a4efe0"
+      },
+      "working_tree_state": "untracked"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -49557,6 +49755,89 @@
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.NumberTheory.Zeta.Riemann.ZeroSymmetry",
+        "Mathlib.Algebra.Order.Archimedean.Basic"
+      ],
+      "logical_status": "selected checked theorem or construction; conditional premises retained",
+      "module": "GRWTSK.NumberTheory.Zeta.Riemann.BoundedHeightCriterion",
+      "namespaces": [
+        "GRWTSK.NumberTheory.Zeta.Riemann"
+      ],
+      "object": "Zeta/Riemann",
+      "open_premises": [
+        "No zeta HeightScheme instance or all-N/all-m rectangle exclusion supplied"
+      ],
+      "operation": "add",
+      "original_path": "GRWTSK/NumberTheory/Zeta/Riemann/BoundedHeightCriterion.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/NumberTheory/Zeta/Riemann/BoundedHeightCriterion.lean",
+      "placement_rationale": "Polynomial trace algebra is independent of zeta; zeta-specific consumers belong with the zeta function; checks stay subject-local.",
+      "public_declarations": [
+        {
+          "kind": "def",
+          "line": 19,
+          "name": "RHThrough"
+        },
+        {
+          "kind": "theorem",
+          "line": 22,
+          "name": "riemannHypothesis_iff_all_heights"
+        },
+        {
+          "kind": "theorem",
+          "line": 31,
+          "name": "RHThrough.mono"
+        },
+        {
+          "kind": "structure",
+          "line": 36,
+          "name": "HeightScheme"
+        },
+        {
+          "kind": "def",
+          "line": 43,
+          "name": "HeightScheme.state"
+        },
+        {
+          "kind": "theorem",
+          "line": 46,
+          "name": "HeightScheme.riemannHypothesis"
+        },
+        {
+          "kind": "def",
+          "line": 51,
+          "name": "OffLineRectangle"
+        },
+        {
+          "kind": "theorem",
+          "line": 55,
+          "name": "riemannHypothesis_iff_rectangle_exclusion"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Negative.FiniteHeights",
+        "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.TraceAndHeightCriteria"
+      ],
+      "runner": "python3 -B scripts/check_quartic_trace.py",
+      "sha256": "737f3f33dcf2e13cd6b883a4f16355764c09e99828e74863dfa7cfec720b13e1",
+      "source_role": "library",
+      "source_root": "GRWTSK",
+      "subject": "NumberTheory",
+      "target_path": "GRWTSK/NumberTheory/Zeta/Riemann/BoundedHeightCriterion.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path-check; repository baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/NumberTheory/Zeta/quartic-trace-checks-2026-10-15.json",
+        "source_sha256": "737f3f33dcf2e13cd6b883a4f16355764c09e99828e74863dfa7cfec720b13e1"
+      },
+      "working_tree_state": "untracked"
+    },
+    {
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
       "git_blob": "95317518f54b303cc34f2f6d160209717b48c46d",
       "imports": [
         "GRWTSK.NumberTheory.Zeta.Riemann",
@@ -49595,6 +49876,72 @@
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.NumberTheory.Zeta.Riemann.BoundedHeightCriterion"
+      ],
+      "logical_status": "intentionally invalid control; measured rejection required",
+      "module": "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Negative.FiniteHeights",
+      "namespaces": [],
+      "object": "Zeta/Riemann/Checks/Negative",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/NumberTheory/Zeta/Riemann/Checks/Negative/FiniteHeights.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/NumberTheory/Zeta/Riemann/Checks/Negative/FiniteHeights.lean",
+      "placement_rationale": "Polynomial trace algebra is independent of zeta; zeta-specific consumers belong with the zeta function; checks stay subject-local.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B scripts/check_quartic_trace.py",
+      "sha256": "33d67935571adc34b671552827eab06e0466d1a1506a6a3a5374748ee17b66c3",
+      "source_role": "negative-control",
+      "source_root": "GRWTSK",
+      "subject": "NumberTheory",
+      "target_path": "GRWTSK/NumberTheory/Zeta/Riemann/Checks/Negative/FiniteHeights.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path-check; repository baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/NumberTheory/Zeta/quartic-trace-checks-2026-10-15.json",
+        "source_sha256": "33d67935571adc34b671552827eab06e0466d1a1506a6a3a5374748ee17b66c3"
+      },
+      "working_tree_state": "untracked"
+    },
+    {
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.NumberTheory.Zeta.Riemann.QuadraticTraceCriterion"
+      ],
+      "logical_status": "intentionally invalid control; measured rejection required",
+      "module": "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Negative.MissingTraceSupplier",
+      "namespaces": [],
+      "object": "Zeta/Riemann/Checks/Negative",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/NumberTheory/Zeta/Riemann/Checks/Negative/MissingTraceSupplier.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/NumberTheory/Zeta/Riemann/Checks/Negative/MissingTraceSupplier.lean",
+      "placement_rationale": "Polynomial trace algebra is independent of zeta; zeta-specific consumers belong with the zeta function; checks stay subject-local.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B scripts/check_quartic_trace.py",
+      "sha256": "8d0d636c94afc9374b7c94b32358ba43f5d933ebdc799c1097942b049809bfb9",
+      "source_role": "negative-control",
+      "source_root": "GRWTSK",
+      "subject": "NumberTheory",
+      "target_path": "GRWTSK/NumberTheory/Zeta/Riemann/Checks/Negative/MissingTraceSupplier.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path-check; repository baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/NumberTheory/Zeta/quartic-trace-checks-2026-10-15.json",
+        "source_sha256": "8d0d636c94afc9374b7c94b32358ba43f5d933ebdc799c1097942b049809bfb9"
+      },
+      "working_tree_state": "untracked"
+    },
+    {
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
       "git_blob": "89514dc342809be3a54f6c8c633ad5fb71d2d876",
       "imports": [
         "GRWTSK.NumberTheory.Zeta.Riemann"
@@ -49629,6 +49976,41 @@
         "source_sha256": "6e54ec9ddb515e9a2a428c0fb61ba050d64b53a895c74cd34c4fb1260f97b2ae"
       },
       "working_tree_state": "tracked-renamed"
+    },
+    {
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.NumberTheory.Zeta.Riemann.BoundedHeightCriterion",
+        "GRWTSK.NumberTheory.Zeta.Riemann.QuadraticTraceCriterion",
+        "GRWTSK.NumberTheory.Zeta.Riemann.ZeroOrbitQuartic"
+      ],
+      "logical_status": "selected checked theorem or construction; conditional premises retained",
+      "module": "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.TraceAndHeightCriteria",
+      "namespaces": [],
+      "object": "Zeta/Riemann/Checks/Positive",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/NumberTheory/Zeta/Riemann/Checks/Positive/TraceAndHeightCriteria.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/NumberTheory/Zeta/Riemann/Checks/Positive/TraceAndHeightCriteria.lean",
+      "placement_rationale": "Polynomial trace algebra is independent of zeta; zeta-specific consumers belong with the zeta function; checks stay subject-local.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B scripts/check_quartic_trace.py",
+      "sha256": "7d6309a27804cb1058e8763f85badd714a0bc7cee328c521a99e6555535d2753",
+      "source_role": "positive-check",
+      "source_root": "GRWTSK",
+      "subject": "NumberTheory",
+      "target_path": "GRWTSK/NumberTheory/Zeta/Riemann/Checks/Positive/TraceAndHeightCriteria.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path-check; repository baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/NumberTheory/Zeta/quartic-trace-checks-2026-10-15.json",
+        "source_sha256": "7d6309a27804cb1058e8763f85badd714a0bc7cee328c521a99e6555535d2753"
+      },
+      "working_tree_state": "untracked"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -50031,6 +50413,65 @@
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Algebra.Polynomial.ConjugateQuartic",
+        "GRWTSK.NumberTheory.Zeta.Riemann.ZeroDefinitions",
+        "Mathlib.Topology.Order.Basic"
+      ],
+      "logical_status": "selected checked theorem or construction; conditional premises retained",
+      "module": "GRWTSK.NumberTheory.Zeta.Riemann.QuadraticTraceCriterion",
+      "namespaces": [
+        "GRWTSK.NumberTheory.Zeta.Riemann"
+      ],
+      "object": "Zeta/Riemann",
+      "open_premises": [
+        "QuadraticTraceNonnegative / exact source extraction remains unproved"
+      ],
+      "operation": "add",
+      "original_path": "GRWTSK/NumberTheory/Zeta/Riemann/QuadraticTraceCriterion.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/NumberTheory/Zeta/Riemann/QuadraticTraceCriterion.lean",
+      "placement_rationale": "Polynomial trace algebra is independent of zeta; zeta-specific consumers belong with the zeta function; checks stay subject-local.",
+      "public_declarations": [
+        {
+          "kind": "def",
+          "line": 21,
+          "name": "QuadraticTraceNonnegative"
+        },
+        {
+          "kind": "theorem",
+          "line": 24,
+          "name": "riemannHypothesis_iff_quadraticTraceNonnegative"
+        },
+        {
+          "kind": "theorem",
+          "line": 37,
+          "name": "riemannHypothesis_of_trace_extraction"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Negative.MissingTraceSupplier",
+        "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.TraceAndHeightCriteria"
+      ],
+      "runner": "python3 -B scripts/check_quartic_trace.py",
+      "sha256": "a43004a73d85b8ca2cf77664f1f27c940acf0d888e83a36d4c201afebee563f3",
+      "source_role": "library",
+      "source_root": "GRWTSK",
+      "subject": "NumberTheory",
+      "target_path": "GRWTSK/NumberTheory/Zeta/Riemann/QuadraticTraceCriterion.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path-check; repository baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/NumberTheory/Zeta/quartic-trace-checks-2026-10-15.json",
+        "source_sha256": "a43004a73d85b8ca2cf77664f1f27c940acf0d888e83a36d4c201afebee563f3"
+      },
+      "working_tree_state": "untracked"
+    },
+    {
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
       "git_blob": "136826c1d970496eb069c63bc8875663541522d7",
       "imports": [
         "Mathlib.Analysis.Analytic.Uniqueness",
@@ -50171,6 +50612,61 @@
         "source_sha256": "107f357b8c04afc16e25b8fded6922782d2756959b42f080af839f4db58e9aa0"
       },
       "working_tree_state": "tracked-clean"
+    },
+    {
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Algebra.Polynomial.ConjugateQuartic",
+        "GRWTSK.NumberTheory.Zeta.Riemann.ZeroSymmetry"
+      ],
+      "logical_status": "selected checked theorem or construction; conditional premises retained",
+      "module": "GRWTSK.NumberTheory.Zeta.Riemann.ZeroOrbitQuartic",
+      "namespaces": [
+        "GRWTSK.NumberTheory.Zeta.Riemann"
+      ],
+      "object": "Zeta/Riemann",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroOrbitQuartic.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroOrbitQuartic.lean",
+      "placement_rationale": "Polynomial trace algebra is independent of zeta; zeta-specific consumers belong with the zeta function; checks stay subject-local.",
+      "public_declarations": [
+        {
+          "kind": "def",
+          "line": 19,
+          "name": "zeroCoordinate"
+        },
+        {
+          "kind": "theorem",
+          "line": 22,
+          "name": "roots_eq_zero_coordinates"
+        },
+        {
+          "kind": "theorem",
+          "line": 46,
+          "name": "root_has_nontrivial_zero"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.TraceAndHeightCriteria"
+      ],
+      "runner": "python3 -B scripts/check_quartic_trace.py",
+      "sha256": "3771c06585421ebfb382f551f9bac1d8c289e7205c5ea357b05f1b65fdb69cff",
+      "source_role": "library",
+      "source_root": "GRWTSK",
+      "subject": "NumberTheory",
+      "target_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroOrbitQuartic.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path-check; repository baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/NumberTheory/Zeta/quartic-trace-checks-2026-10-15.json",
+        "source_sha256": "3771c06585421ebfb382f551f9bac1d8c289e7205c5ea357b05f1b65fdb69cff"
+      },
+      "working_tree_state": "untracked"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",

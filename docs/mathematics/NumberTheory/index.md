@@ -4,10 +4,10 @@
 
 | Inventory | Count |
 |---|---:|
-| Object guides | 27 |
+| Object guides | 28 |
 | Documented object groups | 12 |
-| Distinct primary sources linked | 25 |
-| Lean source modules | 201 |
+| Distinct primary sources linked | 26 |
+| Lean source modules | 209 |
 | Archive intake records | 19 |
 | Selected catalog families | 1 |
 
@@ -75,6 +75,7 @@ These counts measure documentation and source coverage. They do not count accept
 
 - [Conditional energy criteria for the Riemann hypothesis](Zeta/Riemann/criteria.md) — `historical-source-description`.
 - [Nontrivial zeros and inference guards](Zeta/Riemann/inference-guards.md) — `historical-source-description`.
+- [Signed-trace and bounded-height zeta criteria](Zeta/Riemann/trace-and-height-criteria.md) — `fresh-selected`.
 
 ## Sources and verification
 
