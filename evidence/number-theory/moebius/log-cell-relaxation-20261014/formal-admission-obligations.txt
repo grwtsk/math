@@ -1,0 +1,38 @@
+# Remaining formal interfaces
+
+All three delivered Lean modules are uncompiled candidates. The 18 named
+candidate theorem declarations printed by `Audit.lean` concern finite algebra,
+positive cell width, and reuse of the original source expression. They do not
+formally prove the written continuum results.
+
+To close the continuum layer without introducing arithmetic hypotheses:
+
+1. Identify `firstMoment`, `secondMoment`, and `cellQuadratic` with the actual
+   integrals on the positive-index logarithmic cell. Reuse the imported
+   `wholePickup_eq_prefix_flux_on_log_cell`, exponential integration and
+   continuity/integrability lemmas; preserve endpoint conventions.
+2. Prove the compact-interval double-integral variance identity and the
+   Lipschitz estimate `L^2*h^3/12`. Apply the exact source derivative and
+   `|M_n|<=n`. Supply the full-cell and partial-cell coverage proofs.
+3. Establish the nonnegative series bound, and formalize the rational interval
+   evaluator's relationship to the real source before treating its output as
+   a kernel-certified numerical constant.
+4. Prove the finite ordered residual Gram identity; extend it by a proved
+   absolute convergence bound to bounded coefficient sequences. Prove the
+   stated operator-norm tail, compactness and Hilbert–Schmidt assertions.
+5. Formalize the normalized Haar coefficient, mesh-refinement tail and
+   completeness on the residual. Keep the coarse constants. Establish the
+   separate forward heat spectral estimate, without identifying it with the
+   arithmetic Hodge or backwards theta heat.
+6. Derive the polynomial growth equivalence from the bounded residual and
+   energy monotonicity. Only then instantiate the existing conditional RH
+   consumer. Its remaining cell-mean arithmetic bound remains explicit.
+
+No line should supply `PickupEnergyPoly`, source screw positivity, a uniform
+signed bilinear estimate, or an all-height atlas margin by a structure field
+that is described as an independently proved result. Such fields would only
+name the missing premise.
+
+Repository source placement, documentation registration, pinned dependency
+checking and full audits are further admission requirements. `#print axioms`
+for selected declarations alone does not discharge them.

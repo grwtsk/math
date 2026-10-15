@@ -1,0 +1,110 @@
+{
+  "all_height_zero_atlas": false,
+  "base_commit": "9adf061bf5aa34e65fb8237ed56c766539e22506",
+  "cell_mean_growth_proved": false,
+  "continuum_proofs": "Written analytic derivation; not kernel checked",
+  "cross_precision_bits": [
+    160,
+    192
+  ],
+  "full_signed_energy_bound": false,
+  "independent_factorization_through": 4096,
+  "native_lean_admission": false,
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "residual_operator_norm_squared_bound": "1049/20000",
+  "residual_operator_trace_bound": "711/25000",
+  "runs": [
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-O",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_log_cell_relaxation.py",
+        "-v"
+      ],
+      "label": "unit-tests",
+      "optimized": true,
+      "returncode": 0,
+      "seconds": 6.4141731419999815,
+      "stderr": "test_bad_root_order (test_log_cell_relaxation.Arithmetic.test_bad_root_order) ... ok\ntest_boolean_rejected (test_log_cell_relaxation.Arithmetic.test_boolean_rejected) ... ok\ntest_exact_square_root_cases (test_log_cell_relaxation.Arithmetic.test_exact_square_root_cases) ... ok\ntest_float_rejected (test_log_cell_relaxation.Arithmetic.test_float_rejected) ... ok\ntest_log_invalid_index (test_log_cell_relaxation.Arithmetic.test_log_invalid_index) ... ok\ntest_log_precision_consistency (test_log_cell_relaxation.Arithmetic.test_log_precision_consistency) ... ok\ntest_log_width_elementary_bounds (test_log_cell_relaxation.Arithmetic.test_log_width_elementary_bounds) ... ok\ntest_mixed_precision_rejected (test_log_cell_relaxation.Arithmetic.test_mixed_precision_rejected) ... ok\ntest_product_encloses_all_corners (test_log_cell_relaxation.Arithmetic.test_product_encloses_all_corners) ... ok\ntest_reversed_interval_rejected (test_log_cell_relaxation.Arithmetic.test_reversed_interval_rejected) ... ok\ntest_root_enclosures_by_integer_powers (test_log_cell_relaxation.Arithmetic.test_root_enclosures_by_integer_powers) ... ok\ntest_square_across_zero (test_log_cell_relaxation.Arithmetic.test_square_across_zero) ... ok\ntest_subcell_endpoint_compatibility (test_log_cell_relaxation.Arithmetic.test_subcell_endpoint_compatibility) ... ok\ntest_zero_divisor_rejected (test_log_cell_relaxation.Arithmetic.test_zero_divisor_rejected) ... ok\ntest_absolute_sign_substitution_changes_source (test_log_cell_relaxation.HostileControls.test_absolute_sign_substitution_changes_source) ... ok\ntest_averaging_does_not_erase_variance (test_log_cell_relaxation.HostileControls.test_averaging_does_not_erase_variance) ... ok\ntest_harmonic_channel_survives_heat (test_log_cell_relaxation.HostileControls.test_harmonic_channel_survives_heat) ... ok\ntest_native_complex_source_not_inferred_from_auxiliary_gram (test_log_cell_relaxation.HostileControls.test_native_complex_source_not_inferred_from_auxiliary_gram) ... ok\ntest_reversed_mixed_sign_changes_energy (test_log_cell_relaxation.HostileControls.test_reversed_mixed_sign_changes_energy) ... ok\ntest_small_schur_floor_not_upper_bound (test_log_cell_relaxation.HostileControls.test_small_schur_floor_not_upper_bound) ... ok\ntest_boolean_row_switch_required (test_log_cell_relaxation.IntegrationControls.test_boolean_row_switch_required) ... ok\ntest_combined_subcell_resource_guard (test_log_cell_relaxation.IntegrationControls.test_combined_subcell_resource_guard) ... ok\ntest_duplicate_nested_key_rejected (test_log_cell_relaxation.IntegrationControls.test_duplicate_nested_key_rejected) ... ok\ntest_duplicate_top_level_key_rejected (test_log_cell_relaxation.IntegrationControls.test_duplicate_top_level_key_rejected) ... ok\ntest_float_json_rejected (test_log_cell_relaxation.IntegrationControls.test_float_json_rejected) ... ok\ntest_full_energy_promotion_rejected (test_log_cell_relaxation.IntegrationControls.test_full_energy_promotion_rejected) ... ok\ntest_json_array_not_certificate (test_log_cell_relaxation.IntegrationControls.test_json_array_not_certificate) ... ok\ntest_missing_field_rejected (test_log_cell_relaxation.IntegrationControls.test_missing_field_rejected) ... ok\ntest_nonfinite_json_rejected (test_log_cell_relaxation.IntegrationControls.test_nonfinite_json_rejected) ... ok\ntest_report_size_guard (test_log_cell_relaxation.IntegrationControls.test_report_size_guard) ... ok\ntest_rounding_cannot_hide_reversed_interval (test_log_cell_relaxation.IntegrationControls.test_rounding_cannot_hide_reversed_interval) ... ok\ntest_rounding_validates_bits_before_shift (test_log_cell_relaxation.IntegrationControls.test_rounding_validates_bits_before_shift) ... ok\ntest_rows_replay (test_log_cell_relaxation.IntegrationControls.test_rows_replay) ... ok\ntest_rows_type_rejected (test_log_cell_relaxation.IntegrationControls.test_rows_type_rejected) ... ok\ntest_truncated_row_inventory_rejected (test_log_cell_relaxation.IntegrationControls.test_truncated_row_inventory_rejected) ... ok\ntest_unknown_fields_rejected_before_work (test_log_cell_relaxation.IntegrationControls.test_unknown_fields_rejected_before_work) ... ok\ntest_boolean_false_is_not_numeric_zero_in_receipt (test_log_cell_relaxation.SourceChecks.test_boolean_false_is_not_numeric_zero_in_receipt) ... ok\ntest_bounded_coefficient_operator_majorant (test_log_cell_relaxation.SourceChecks.test_bounded_coefficient_operator_majorant) ... ok\ntest_finite_prefix_coherent_energy (test_log_cell_relaxation.SourceChecks.test_finite_prefix_coherent_energy) ... ok\ntest_global_variance_certificate_128 (test_log_cell_relaxation.SourceChecks.test_global_variance_certificate_128) ... ok\ntest_invalid_mertens_bound_rejected (test_log_cell_relaxation.SourceChecks.test_invalid_mertens_bound_rejected) ... ok\ntest_mertens_essential_bound (test_log_cell_relaxation.SourceChecks.test_mertens_essential_bound) ... ok\ntest_no_cancellation_source_still_has_small_variance (test_log_cell_relaxation.SourceChecks.test_no_cancellation_source_still_has_small_variance) ... ok\ntest_operator_report_replay_and_tamper (test_log_cell_relaxation.SourceChecks.test_operator_report_replay_and_tamper) ... ok\ntest_refinement_energy_accounting (test_log_cell_relaxation.SourceChecks.test_refinement_energy_accounting) ... ok\ntest_residual_gram_keeps_all_pairs (test_log_cell_relaxation.SourceChecks.test_residual_gram_keeps_all_pairs) ... ok\ntest_residual_gram_trace_identity (test_log_cell_relaxation.SourceChecks.test_residual_gram_trace_identity) ... ok\ntest_residual_operator_bounds (test_log_cell_relaxation.SourceChecks.test_residual_operator_bounds) ... ok\ntest_saved_report_replay_and_tamper (test_log_cell_relaxation.SourceChecks.test_saved_report_replay_and_tamper) ... ok\ntest_sieve_independent_trial_factorization (test_log_cell_relaxation.SourceChecks.test_sieve_independent_trial_factorization) ... ok\ntest_source_prefix_refinement_improves (test_log_cell_relaxation.SourceChecks.test_source_prefix_refinement_improves) ... ok\ntest_squareful_sources_retained_as_zero (test_log_cell_relaxation.SourceChecks.test_squareful_sources_retained_as_zero) ... ok\ntest_variance_is_not_full_energy (test_log_cell_relaxation.SourceChecks.test_variance_is_not_full_energy) ... ok\ntest_zero_mertens_zero_detail (test_log_cell_relaxation.SourceChecks.test_zero_mertens_zero_detail) ... ok\ntest_antiderivative (test_log_cell_relaxation.SymbolicIdentities.test_antiderivative) ... ok\ntest_arrival_atom_cancels (test_log_cell_relaxation.SymbolicIdentities.test_arrival_atom_cancels) ... ok\ntest_centering (test_log_cell_relaxation.SymbolicIdentities.test_centering) ... ok\ntest_denominator_free_centering (test_log_cell_relaxation.SymbolicIdentities.test_denominator_free_centering) ... ok\ntest_haar_split (test_log_cell_relaxation.SymbolicIdentities.test_haar_split) ... ok\ntest_quartic_detail (test_log_cell_relaxation.SymbolicIdentities.test_quartic_detail) ... ok\ntest_refinement_geometric_bound (test_log_cell_relaxation.SymbolicIdentities.test_refinement_geometric_bound) ... ok\ntest_schur_minimizer (test_log_cell_relaxation.SymbolicIdentities.test_schur_minimizer) ... ok\ntest_variance_double_integral_constant (test_log_cell_relaxation.SymbolicIdentities.test_variance_double_integral_constant) ... ok\ntest_weighted_merge (test_log_cell_relaxation.SymbolicIdentities.test_weighted_merge) ... ok\n\n----------------------------------------------------------------------\nRan 64 tests in 1.247s\n\nOK\n",
+      "stderr_sha256": "aabfec69130e079d785169c6286c8b1a4a6d172d9e2551df0606ddd591a3f8f4",
+      "stdout": "",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-O",
+        "-B",
+        "scripts/log_cell_relaxation.py",
+        "--verify",
+        "evidence/number-theory/moebius/log-cell-relaxation-20261014/prefix-4096.json"
+      ],
+      "label": "prefix-4096.json",
+      "optimized": true,
+      "returncode": 0,
+      "seconds": 5.214270997999961,
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "{\n  \"all_height_variance_upper\": \"23359331537178943356623554640666240077577948269/1096126227998177188652763624537212264741949407232\",\n  \"cutoff\": 4096,\n  \"level\": 0,\n  \"native_lean_admission\": false,\n  \"verified\": true,\n  \"whole_source_energy_bounded\": false\n}\n",
+      "stdout_sha256": "ee0e0856851378a563535d2321ba208bb6db37976c64b15aee983d9ca3d656c0"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-O",
+        "-B",
+        "scripts/log_cell_relaxation.py",
+        "--verify",
+        "evidence/number-theory/moebius/log-cell-relaxation-20261014/prefix-4096-bits-192.json"
+      ],
+      "label": "prefix-4096-bits-192.json",
+      "optimized": true,
+      "returncode": 0,
+      "seconds": 5.722656901999926,
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "{\n  \"all_height_variance_upper\": \"100327565008604969816534632164930532778712707976991214773/4707826301540010572876842067405749812076766583348025884672\",\n  \"cutoff\": 4096,\n  \"level\": 0,\n  \"native_lean_admission\": false,\n  \"verified\": true,\n  \"whole_source_energy_bounded\": false\n}\n",
+      "stdout_sha256": "b93644e1f1251d575abf4855553af87e1f9250423d9770ccef474e7c1fa12534"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-O",
+        "-B",
+        "scripts/log_cell_relaxation.py",
+        "--verify",
+        "evidence/number-theory/moebius/log-cell-relaxation-20261014/residual-operator-4096.json"
+      ],
+      "label": "residual-operator-4096.json",
+      "optimized": true,
+      "returncode": 0,
+      "seconds": 5.273452751000036,
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "{\n  \"all_height_variance_upper\": null,\n  \"cutoff\": 4096,\n  \"level\": null,\n  \"native_lean_admission\": false,\n  \"verified\": true,\n  \"whole_source_energy_bounded\": false\n}\n",
+      "stdout_sha256": "7fa9373bbca69d5384c9c6d811f99fec3f3a97a461dc85ae0eedc7c81095a326"
+    }
+  ],
+  "schema": "log-cell-integration-replay-v1",
+  "source_bindings": {
+    "evidence/number-theory/moebius/log-cell-relaxation-20261014/prefix-4096-bits-192.json": "9e65ab183d0043cffaeebed63c674ea1cf033020e623d7831f270048b1b9b4f4",
+    "evidence/number-theory/moebius/log-cell-relaxation-20261014/prefix-4096.json": "f55cba453c8a37ea70055566b55e75ecd3e084f31eb82caa51d310939e942215",
+    "evidence/number-theory/moebius/log-cell-relaxation-20261014/residual-operator-4096.json": "aeacc56133ed20b5c04041e597241c9246b49b705152946ab978256ac183b93c",
+    "scripts/log_cell_relaxation.py": "6b0c5615d2d566de3b1a39816be72a6d59eee8ac38a29220df668cab28ffe9c3",
+    "scripts/verify_log_cell_relaxation.py": "dc685e3ffe22fe642444acdb497f3a1e0fb65ab002c7aae7000ae4a0222d9ac3",
+    "tests/test_log_cell_relaxation.py": "c3476d3904959a19c1e8bc68b9531c2138a54b748de1bd32d5ad46c0376d2364"
+  },
+  "source_residual_bound": "533/25000",
+  "test_count_per_mode": 64,
+  "tested_modes": [
+    true
+  ],
+  "whole_repository_checks": "NOT_RUN by this scoped replay"
+}
