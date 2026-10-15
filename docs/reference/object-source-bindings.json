@@ -176,9 +176,11 @@
       "GRWTSK/Order/Embeddings/PrefixObstruction.lean"
     ],
     "Combinatorics/DirectedGraph": [
+      "GRWTSK/Combinatorics/DirectedGraph/EdgeTrace.lean",
       "GRWTSK/Combinatorics/DirectedGraph/PathOccurrences.lean"
     ],
     "Analysis/MellinTransform": [
+      "GRWTSK/Analysis/MellinTransform/LogarithmicGaussian.lean",
       "GRWTSK/Analysis/MellinTransform/ReverseInversion.lean"
     ]
   }

@@ -1,0 +1,172 @@
+{
+  "schema": "typed-edge-trace-source-review-correction-v1",
+  "task": "cache/coordination/tasks/typed-edge-source-scout.json",
+  "at": "2026-10-15T19:36:12.588237+00:00",
+  "status": "complete-bounded-correlated-post-audit-source-review",
+  "review_boundary": {
+    "independent_validation": false,
+    "native_jobs_by_reviewer": "NOT_RUN",
+    "code_or_prior_review_edits": false,
+    "commits_or_remote_effects": false
+  },
+  "preserved_old_review": {
+    "path": "evidence/Combinatorics/DirectedGraph/edge-trace-source-review-2026-10-15.json",
+    "sha256": "d8bdef6fb48aaa499eab500280b3ba02f34105801bb02f27e9cfef8600c4570f",
+    "status": "Historical correlated inspection at original source hashes; not current-source acceptance.",
+    "rule": "The original evidence and completion event are immutable. This separate record supersedes only the current source bindings and records the audit-discovered limitation."
+  },
+  "material_failed_audit": {
+    "path": "evidence/Combinatorics/DirectedGraph/edge-trace-audit-failed-2026-10-15.json",
+    "sha256": "9ba71e930b49d76dafc3f4416d3bbb674dfe0eef3b1cbbe0a045c22ecc3823d1",
+    "outcome": "failed",
+    "original_library_sha256": "360c97f7c5c82104870aa45fa0575972260238b91d13e4a96430e3259a600d8b",
+    "ordinary_checks": "The original library, positive module and derived counterexample source compiled; complete owned audit then failed.",
+    "rejected_declarations": [
+      "GRWTSK.Combinatorics.DirectedGraph.EdgeTrace.ValidFrom._unsafe_rec",
+      "GRWTSK.Combinatorics.DirectedGraph.EdgeTrace.finish._unsafe_rec",
+      "GRWTSK.Combinatorics.DirectedGraph.EdgeTrace.decode._unsafe_rec"
+    ],
+    "reason": "Pinned Lean code generation emitted partial runtime helpers. Root complete audit rejected them under the unchanged admission profile. Source-level mathematical review and ordinary source compilation alone did not establish acceptance.",
+    "original_source_variants": ".local/typed-edge-trace/native-rejected-sources",
+    "additional_failed_attempt": "noncomputable section alone does not suppress recursive helper emission under pinned Lean; full failed dev census and source variant preserved. Explicit modifiers are required by shouldGenCodeFor in pinned Lean.Elab.PreDefinition.Basic.",
+    "preservation": "Both original root failure and intermediate noncomputable-section-only failure stay preserved. No stale receipt or old hash is refreshed into current admission."
+  },
+  "current_frozen_source_bindings": {
+    "completion": {
+      "path": "cache/coordination/events/20261015T193455Z-edge-trace-noncomputable-complete-46ca10d0.json",
+      "sha256": "b9fd8e7ed750f863911edb66d07dc4f08dafc8fdf2d6afeccf68a9ae6a359315"
+    },
+    "sources": [
+      {
+        "path": "GRWTSK/Combinatorics/DirectedGraph/EdgeTrace.lean",
+        "sha256": "e1e5f2dd23b6c04a734af4bd95f3f19c15fe4f313d66c5bccff08b3312fb2a59",
+        "bytes": 8301
+      },
+      {
+        "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/EdgeTrace.lean",
+        "sha256": "2b4cc40b89f7f154a3f383e575c357799cf9b0a39d6a54f20d2a93f8a5626687",
+        "bytes": 3435
+      },
+      {
+        "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/EdgeTraceMissingJoin.lean",
+        "sha256": "aadb3d7d14b5b832ff9df32b0823c6e9f223952faf1e50cc6d0aeec80e6a8be8",
+        "bytes": 1051
+      }
+    ],
+    "all_three_hashes_match_completion": true,
+    "comparison_to_actual_old_snapshot": [
+      {
+        "path": "GRWTSK/Combinatorics/DirectedGraph/EdgeTrace.lean",
+        "old_sha256": "360c97f7c5c82104870aa45fa0575972260238b91d13e4a96430e3259a600d8b",
+        "new_sha256": "e1e5f2dd23b6c04a734af4bd95f3f19c15fe4f313d66c5bccff08b3312fb2a59",
+        "exact_bytes_unchanged": false,
+        "after_removing_noncomputable_modifier_and_normalizing_whitespace_text_equal": true
+      },
+      {
+        "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/EdgeTrace.lean",
+        "old_sha256": "2b4cc40b89f7f154a3f383e575c357799cf9b0a39d6a54f20d2a93f8a5626687",
+        "new_sha256": "2b4cc40b89f7f154a3f383e575c357799cf9b0a39d6a54f20d2a93f8a5626687",
+        "exact_bytes_unchanged": true,
+        "after_removing_noncomputable_modifier_and_normalizing_whitespace_text_equal": true
+      },
+      {
+        "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/EdgeTraceMissingJoin.lean",
+        "old_sha256": "5a741b2223cc92c5eeb3c800f3a4e2881d8fe8be71c4bd75aa5a1d117773695e",
+        "new_sha256": "aadb3d7d14b5b832ff9df32b0823c6e9f223952faf1e50cc6d0aeec80e6a8be8",
+        "exact_bytes_unchanged": false,
+        "after_removing_noncomputable_modifier_and_normalizing_whitespace_text_equal": true
+      }
+    ]
+  },
+  "correction_review": {
+    "changes": [
+      "Explicit noncomputable on ValidFrom, finish, decode and pathStarEquivTrace.",
+      "Explicit noncomputable on the intentionally invalid data-valued negative example.",
+      "One decode signature line wrap. Positive source unchanged."
+    ],
+    "mathematical_contract": "Fixed-root existing PathStar r remains equivalent to the subtype of chronological TotalEdge lists satisfying exact ValidFrom source/root/join conditions. Actual arrow identity, endpoint recovery, both round trips, composition and counterexamples retain their original statements and proofs.",
+    "source_comparison_limit": "The above preservation check compares actual old/new source after removing only noncomputable modifiers and normalizing whitespace. It is bookkeeping, not a new kernel or code-generation audit. Native acceptance still requires the root fresh replay.",
+    "runtime_scope": "These are mathematical noncomputable definitions. The representation theorem and proof-indexed decoder are not an executable JSON codec, a Lean/Python extraction theorem or an IO guarantee.",
+    "audit_policy": "No auditor, declaration-coverage rule or allowed axiom profile was relaxed by this task or the reported source remediation.",
+    "control_scope": "Positive retains real two-vertex parallel arrows and valid/empty/return traces, wrong roots, broken joins and actual roundtrips. Negative still supplies ValidFrom false [firstEdge] for a decoder requiring ValidFrom false [firstEdge,brokenEdge]. Its added noncomputable modifier changes code-generation eligibility, not the missing-join obligation.",
+    "finding": "No actionable mathematical or hypothesis weakening observed in corrected final source. The original runtime-helper admission failure is material and remains separately recorded."
+  },
+  "source_and_premise_review_inherited_by_exact_reference": {
+    "from": {
+      "path": "evidence/Combinatorics/DirectedGraph/edge-trace-source-review-2026-10-15.json",
+      "sha256": "d8bdef6fb48aaa499eab500280b3ba02f34105801bb02f27e9cfef8600c4570f"
+    },
+    "unchanged_review_sections": [
+      "actual_contract_review",
+      "actual_controls except current negative code-generation modifier",
+      "pinned_api_reuse",
+      "fresh_primary_arxiv",
+      "fresh_official_anthropic_scout",
+      "operational_sidecar_scope_at_review",
+      "attribution",
+      "remaining_limits"
+    ],
+    "primary_arxiv": {
+      "id": "1208.4410v1",
+      "pdf_sha256": "3d90ff57915629a4b978e5b41f9c6c16cbbab310152dcbf45e818fcc831e0b8a",
+      "url": "https://arxiv.org/pdf/1208.4410v1",
+      "role": "Composable arrow-sequence/zero-length-root definitions only, not a theorem/proof port."
+    },
+    "anthropic": {
+      "pin": "e1a4e6508154ea59f030480661590a9fe3018011",
+      "path": "3sum-apsp/ThreeSumApsp/Sec3/Theorem21b/PathsAndWalks.lean",
+      "sha256": "dd2e0d199859027fc481934d523853fe12757d63daf929ec849f4db70d65c363",
+      "role": "Optional weight-per-pair path/walk correspondence; not arbitrary parallel-arrow serialization."
+    },
+    "no_status_transfer": "These pinned source-context inspections stay source-only; no upstream replay, candidate NOT_RUN promotion or operational refinement follows."
+  },
+  "author_remediation_development_report": {
+    "development": {
+      "library": "passed trust0/fatal",
+      "positive": "passed trust0/fatal",
+      "derived_negative_prefix": "passed trust0/fatal, exact current negative prefix",
+      "owned_census": {
+        "path": ".local/typed-edge-trace/noncomputable-owned-census.json",
+        "sha256": "5a88aedcb868d477f6022fe697d0363bcf972e13ef71e290dabe33a457e89df1",
+        "declarations": 80,
+        "modules": [
+          {
+            "declarations": 18,
+            "module": "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences"
+          },
+          {
+            "declarations": 46,
+            "module": "GRWTSK.Combinatorics.DirectedGraph.EdgeTrace"
+          },
+          {
+            "declarations": 11,
+            "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.EdgeTrace"
+          },
+          {
+            "declarations": 5,
+            "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.EdgeTraceCounterexample"
+          }
+        ],
+        "all_mathematical_admission": true,
+        "partial_unsafe_or_runtime_helpers": []
+      },
+      "negative": {
+        "log": ".local/typed-edge-trace/logs/20261015T193412.264468Z-EdgeTraceMissingJoin.log",
+        "sha256": "cc16daacbf387aee83c9e14ca681ed9039dcf1108272802478dec6cdecbe2299",
+        "errors": [
+          "Application type mismatch: The argument"
+        ],
+        "intended_expected_type": "ValidFrom false [firstEdge, brokenEdge]",
+        "sole_missing_join_error": true
+      },
+      "scope": "Development objects reuse exact source-bound accepted PathOccurrences object. Parent complete fresh local closure/census admission remains necessary."
+    },
+    "scope": "Author dev census reports80 declarations and no partial/unsafe/runtime helpers; review does not rerun it or elevate it to root fresh acceptance.",
+    "root_current_native_receipt_pointer": "evidence/Combinatorics/DirectedGraph/edge-trace-checks-2026-10-15.json"
+  },
+  "durable_verification_lesson": "Complete owned-declaration and generated-helper audit is a separate necessary gate after successful source/control compilation. Noncomputable section syntax alone did not prevent helper code generation in pinned Lean; explicit declaration modifiers were needed in this remediation. Preserve both failures, fix the allocated source and replay without weakening coverage.",
+  "remaining_limits": [
+    "No independent source/model/native validation, arbitrary-DAG unfolding, full covering/costar bijection, general JSON/runtime refinement, source-snapshot historical containment, arithmetic theorem or whole-library acceptance.",
+    "Root owns current complete fresh closure/census admission, exact docs/cache registration and native status."
+  ]
+}

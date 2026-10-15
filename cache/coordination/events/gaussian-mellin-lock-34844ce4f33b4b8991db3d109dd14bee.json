@@ -1,0 +1,10 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "gaussian-mellin-formal",
+  "event": "dev-lock-acquired",
+  "at": "2026-10-15T19:26:57.502142+00:00",
+  "owner": "cache_adapter",
+  "attempt": ".local/gaussian-mellin/443dbc4e8fbf4163a17f18a28e2b9e8f/attempts/Positive-attempt04",
+  "source_sha256": "b88cacd3ed7b2013cfe92915278a193b804d534c8b5f30568610fedee38db4c3",
+  "competing_jobs": []
+}
