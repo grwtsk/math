@@ -371,3 +371,6 @@ import GRWTSK.Combinatorics.DirectedGraph.ParentTraceDictionary
 import GRWTSK.Analysis.MellinTransform.ScaledGaussianDerivatives
 import GRWTSK.Combinatorics.DirectedGraph.RootedTraceRevision
 import GRWTSK.Analysis.MellinTransform.GaussianWindowSeminorms
+import GRWTSK.Combinatorics.DirectedGraph.IncrementalPrefixTable
+import GRWTSK.Analysis.Series.DyadicKernel
+import GRWTSK.Analysis.MellinTransform.GaussianDyadicSummation

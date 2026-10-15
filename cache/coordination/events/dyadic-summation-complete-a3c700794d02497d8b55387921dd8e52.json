@@ -1,0 +1,70 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "gaussian-dyadic-summation-formal",
+  "owner": "cache_adapter",
+  "event": "author-completion",
+  "at": "2026-10-15T21:48:21.136677+00:00",
+  "status": "written-and-development-replayed-not-admitted",
+  "source_hashes": {
+    "GRWTSK/Analysis/Series/DyadicKernel.lean": "c99ee7e558c21befc57822c87a0221b84d8e45254acf77e4f1ba2c2e1a4abbeb",
+    "GRWTSK/Analysis/Series/Checks/Positive/DyadicKernel.lean": "3a0c27b07525b6309c12035ee0cd0b9970b0958328e4dfdcfbf5d9d4dfda3247",
+    "GRWTSK/Analysis/Series/Checks/Negative/DyadicKernelMissingDecay.lean": "937880bf27578df2b4d5de6292bdb684b4a7a05dc9c04d4cb07972061f43ca1a",
+    "GRWTSK/Analysis/MellinTransform/GaussianDyadicSummation.lean": "1f0129ffe0408983f6b19be9ae8fb40998105ce3b88e1e7fcf1a2e625eb8ced0",
+    "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianDyadicSummation.lean": "c8044b4c445d92b3baf68c12b58a6da3f33351de7088d9009bea56e3556b2f45",
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianSummationNonpositiveParameter.lean": "bf5bac0c4947c20ad51e252f7e140bb75a433e869afae017f6dafc37744e214f"
+  },
+  "freeze_event": "cache/coordination/events/dyadic-summation-freeze-c4da391cdad346938caea7bf413fa016.json",
+  "development": {
+    "receipt": ".local/gaussian-dyadic-summation/73368016eb9542a190ee06a985b254a0/final/receipt.json",
+    "receipt_sha256": "ea79f35e30e1e62f986a7a9eb625c33b434a3a219732e29f4f68c0fae5a8833a",
+    "outcome": "PASS",
+    "accepted_compilations": 11,
+    "intended_negative_compilations": 2,
+    "trust": 0,
+    "fatal_warnings": true,
+    "sources_and_objects_stable": true,
+    "native_jobs_running": 0,
+    "shared_native_lock": "RELEASED; no further native jobs planned",
+    "exact_negative_substrings": {
+      "DyadicKernelMissingDecay": "1 < 1",
+      "GaussianSummationNonpositiveParameter": "0 < 0"
+    },
+    "each_negative": "Exactly one Application type mismatch; complete counterexample declarations accepted in positive modules"
+  },
+  "owned_transitive_axiom_census": "NOT_RUN_ROOT_OWNS",
+  "structural_check": {
+    "receipt": ".local/gaussian-dyadic-summation/73368016eb9542a190ee06a985b254a0/math-layout-final.json",
+    "result": "FAIL: 379 library modules, 187 findings; baseline 175 + 8 allocated-source registration findings + 4 concurrent graph registration findings. No new mathematical-subject naming violation in allocated sources. Root owns registration."
+  },
+  "mathematical_scope": [
+    "Actual dyadic kernel definition and geometric head/tail summability/bound; kernel_summable retains weaker t>0, 0<=A, s<A premises. The global power bound retains s>0 and s<A.",
+    "Actual Gaussian finite-seminorm polynomial envelope and weighted seminorm sum, plus weighted function-value norm summability with constant independent of y.",
+    "Complete concrete controls: kernel A=s=1,t=1 nonsummability; t=0 growth; Gaussian Z=0,j-varying nonzero value at y=3/4 nonsummability. No claim s>0 is necessary for all stronger Gaussian estimates."
+  ],
+  "upstream": {
+    "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+    "path": "lean/OAI/NumberTheory/DirichletL/CubicSieve/QuantitativePassage.lean",
+    "sha256": "9abb0b7909494b09587017f6bdc731c69d379770aecece0d458e8f0d5f637600",
+    "gitblob": "c6ff994dc7f77081436f7a59a98e373bd3123091",
+    "bytes": 35351,
+    "archive": ".local/gaussian-dyadic-summation/73368016eb9542a190ee06a985b254a0/QuantitativePassage-pinned.lean",
+    "status": "source-inspected-not-replayed"
+  },
+  "gaussian_upstream": {
+    "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+    "path": "lean/OAI/NumberTheory/DirichletL/Detector/GaussianSummation.lean",
+    "sha256": "8cbdf3603586c4d8f8da6f22fcbbcc8d4521d19b7977da4a2db8c7b5e537e196",
+    "git_blob": "78d47764d7755a5bf6b6277356e94c157e191339",
+    "license": "Apache-2.0; OpenAI source identity retained, no invented individual attribution"
+  },
+  "failures_preserved": ".local/gaussian-dyadic-summation/73368016eb9542a190ee06a985b254a0/attempts",
+  "earlier_failures": [
+    "Missing nonexistent Mathlib.Algebra.GeomSum import, corrected to Algebra.Order.Field.GeomSum",
+    "Positive constant-series API elaboration failures; corrected explicit InfiniteSum.Group import and constant argument"
+  ],
+  "dependencies": "No prior positive-control modules imported. Positive modules additionally use Mathlib.Topology.Algebra.InfiniteSum.Group (copyright 2017 Johannes H\u00f6lzl).",
+  "limits": [
+    "No ideal arithmetic, Hecke calibration, physical row, analytic continuation or RH claim.",
+    "Native development replay is not root complete-owned mathematical admission."
+  ]
+}

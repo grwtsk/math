@@ -1,0 +1,18 @@
+{
+  "schema": "repository-agent-event-v1",
+  "at": "2026-10-15T21:51:47.526812+00:00",
+  "task": "incremental-summation-round",
+  "event": "actual-git-and-cleanup-observation",
+  "initial_main": "68a0e353a0a0c769d3a4bc632894d82a19738d91",
+  "main_head": "68a0e353a0a0c769d3a4bc632894d82a19738d91",
+  "origin_main_observed": "68a0e353a0a0c769d3a4bc632894d82a19738d91",
+  "concurrent_history": "Another actor advanced origin/main to same current main during this round; no main movement or selected input collision. Root made no fetch/push/remote writes. Prior incoming23archive/tool paths and six inert candidates nativeNOT_RUN retained.",
+  "worktrees": "worktree /Users/think/Desktop/math\nHEAD 68a0e353a0a0c769d3a4bc632894d82a19738d91\nbranch refs/heads/main",
+  "local_branches": "main 68a0e353a0a0c769d3a4bc632894d82a19738d91",
+  "stale_worktree_prune_dry_run": "empty",
+  "stale_worktree_prune": "completed; empty",
+  "redundant_local_branches": "none; only main retained",
+  "native_children": "all exited; shared replay lock released",
+  "remote_actions": [],
+  "limits": "Custody bookkeeping only; incoming archive and selected native results retain separate proof states."
+}

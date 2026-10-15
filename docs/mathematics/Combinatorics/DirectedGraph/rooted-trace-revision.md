@@ -34,6 +34,13 @@ comparison of two failed decoders is not a substitute. Outer root agreement
 binds the context even for an empty list, where per-row root tags provide
 no evidence about the retained root.
 
+The [stable incremental prefix table](incremental-prefix-table.md) now
+constructs one actual extension that satisfies the old-reference decoding
+requirement. It copies the old dictionary and parent cells literally,
+adds only missing prefixes, and recovers all original old and new rows.
+This one-step construction starts from the canonical old encoding; its
+noncanonical output needs an additional state-invariant proof for iteration.
+
 ## Concrete revision controls
 
 For a singleton false loop, the dictionary is `[[], [falseTag]]`. Appending

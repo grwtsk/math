@@ -5996,20 +5996,20 @@
     }
   ],
   "counts_by_operation": {
-    "add": 101,
+    "add": 110,
     "keep": 336,
     "move": 206
   },
   "counts_by_role": {
     "audit-driver": 35,
-    "library": 370,
-    "negative-control": 129,
-    "positive-check": 109
+    "library": 373,
+    "negative-control": 132,
+    "positive-check": 112
   },
   "counts_by_subject": {
     "Algebra": 19,
-    "Analysis": 224,
-    "Combinatorics": 32,
+    "Analysis": 230,
+    "Combinatorics": 35,
     "Data": 1,
     "DynamicalSystems": 16,
     "GroupTheory": 4,
@@ -6021,9 +6021,9 @@
     "Order": 6,
     "Spectral": 25
   },
-  "present_lean_source_count": 706,
+  "present_lean_source_count": 715,
   "schema": "grwtsk-math-source-catalog-v1",
-  "source_count": 643,
+  "source_count": 652,
   "sources": [
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -6159,6 +6159,7 @@
         "GRWTSK.Analysis.LaplaceTransform.PolynomialEnergy",
         "GRWTSK.Analysis.LaplaceTransform.PolynomialEnergyHolomorphy",
         "GRWTSK.Analysis.MellinTransform.CompactGaussianWindow",
+        "GRWTSK.Analysis.MellinTransform.GaussianDyadicSummation",
         "GRWTSK.Analysis.MellinTransform.GaussianWindowSeminorms",
         "GRWTSK.Analysis.MellinTransform.LogarithmicGaussian",
         "GRWTSK.Analysis.MellinTransform.NormalizedGaussian",
@@ -6168,6 +6169,7 @@
         "GRWTSK.Analysis.PartitionOfUnity.DyadicAnnulus",
         "GRWTSK.Analysis.Polarization",
         "GRWTSK.Analysis.ReciprocalKernel",
+        "GRWTSK.Analysis.Series.DyadicKernel",
         "GRWTSK.Analysis.SpecialFunctions.DigammaFourierBound",
         "GRWTSK.Analysis.SpecialFunctions.ExponentialFloorGap",
         "GRWTSK.Analysis.SpecialFunctions.ExponentialPolynomialDomination",
@@ -6182,6 +6184,7 @@
         "GRWTSK.Analysis.WeakDerivatives.PolynomialBump",
         "GRWTSK.Combinatorics.DirectedGraph.EdgeTrace",
         "GRWTSK.Combinatorics.DirectedGraph.EndpointSection",
+        "GRWTSK.Combinatorics.DirectedGraph.IncrementalPrefixTable",
         "GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix",
         "GRWTSK.Combinatorics.DirectedGraph.ParentTraceDictionary",
         "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences",
@@ -6570,7 +6573,7 @@
         "GRWTSK/Logic/ProofChecking/Checks/OwnedDeclarationAudit.lean"
       ],
       "runner": "python3 -B scripts/check_ccc_energy.py",
-      "sha256": "9818817bd2b0bd9f13ae71d116061ced90a0f062befb27771262583a1389f72f",
+      "sha256": "e38ca161303d7f1220db600b1b45e834e327bafe300dfd8b1ba538254dd64284",
       "source_role": "library",
       "source_root": ".",
       "subject": "Library",
@@ -6579,7 +6582,7 @@
         "inventory": "observed-current-bytes",
         "layout": "repository baseline remains failed",
         "lean": "umbrella not replayed after selected import additions",
-        "source_sha256": "9818817bd2b0bd9f13ae71d116061ced90a0f062befb27771262583a1389f72f"
+        "source_sha256": "e38ca161303d7f1220db600b1b45e834e327bafe300dfd8b1ba538254dd64284"
       },
       "working_tree_state": "tracked-modified"
     },
@@ -22479,6 +22482,52 @@
         "R.A. Jacob Martone: human direction",
         "OpenAI Codex: local formalization/adaptation/checking",
         "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: exact QuantitativePassage scalar dyadic proof slice and GaussianSummation consumer; Mathlib power/geometric-series/Schwartz authors retain individual credit"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/incremental-summation-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Actual Gaussian finite-family seminorm polynomial envelope from accepted exponent0/N bounds; constants before Z>0,j.",
+        "Actual scalar kernel supplier with 0<s<N, t=Z^-1>0 supplies summability and weighted Gaussian seminorm sum <=C(s,S)*Z^s.",
+        "No assumed kernel/summed estimate, unsupported nonpositive-exponent necessity, physical detector or RH supplier."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianDyadicSummation"
+      ],
+      "license": "Apache-2.0",
+      "logical_status": "intended rejected control; no theorem admission",
+      "module": "GRWTSK.Analysis.MellinTransform.Checks.Negative.GaussianSummationNonpositiveParameter",
+      "namespaces": [],
+      "object": "MellinTransform/Checks/Negative",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianSummationNonpositiveParameter.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianSummationNonpositiveParameter.lean",
+      "placement_rationale": "Actual scalar dyadic series and uniform kernel sums belong to Analysis/Series; the actual Gaussian weighted seminorm consumer belongs to Analysis/MellinTransform.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B scripts/check_gaussian_dyadic_summation.py",
+      "sha256": "bf5bac0c4947c20ad51e252f7e140bb75a433e869afae017f6dafc37744e214f",
+      "source_role": "negative-control",
+      "source_root": "GRWTSK",
+      "subject": "Analysis",
+      "target_path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianSummationNonpositiveParameter.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Analysis/MellinTransform/gaussian-dyadic-summation-checks-2026-10-15.json",
+        "source_sha256": "bf5bac0c4947c20ad51e252f7e140bb75a433e869afae017f6dafc37744e214f"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
         "OpenAI: exact GaussianWindows G profile and GaussianLow Schwartz consumer; Mathlib smooth/sqrt/Schwartz/Mellin authors retain individual credit"
       ],
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -22793,6 +22842,78 @@
         "lean": "see immutable selected replay receipt",
         "replay_binding": "evidence/Analysis/MellinTransform/compact-gaussian-window-checks-2026-10-15.json",
         "source_sha256": "96ec310820e5d010bb0c67ff624456dba652703a731800aa195c65cd7f87ac0d"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: exact QuantitativePassage scalar dyadic proof slice and GaussianSummation consumer; Mathlib power/geometric-series/Schwartz authors retain individual credit"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/incremental-summation-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Actual Gaussian finite-family seminorm polynomial envelope from accepted exponent0/N bounds; constants before Z>0,j.",
+        "Actual scalar kernel supplier with 0<s<N, t=Z^-1>0 supplies summability and weighted Gaussian seminorm sum <=C(s,S)*Z^s.",
+        "No assumed kernel/summed estimate, unsupported nonpositive-exponent necessity, physical detector or RH supplier."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Analysis.MellinTransform.GaussianDyadicSummation",
+        "Mathlib.Topology.Algebra.InfiniteSum.Group"
+      ],
+      "license": "Apache-2.0",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianDyadicSummation",
+      "namespaces": [
+        "GRWTSK.Analysis.MellinTransform.GaussianDyadicSummation.Checks"
+      ],
+      "object": "MellinTransform/Checks/Positive",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianDyadicSummation.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianDyadicSummation.lean",
+      "placement_rationale": "Actual scalar dyadic series and uniform kernel sums belong to Analysis/Series; the actual Gaussian weighted seminorm consumer belongs to Analysis/MellinTransform.",
+      "public_declarations": [
+        {
+          "kind": "theorem",
+          "line": 11,
+          "name": "gaussian_weighted_generic"
+        },
+        {
+          "kind": "theorem",
+          "line": 17,
+          "name": "gaussian_values_one"
+        },
+        {
+          "kind": "theorem",
+          "line": 22,
+          "name": "gaussian_zero_scale_nonzero"
+        },
+        {
+          "kind": "theorem",
+          "line": 44,
+          "name": "gaussian_zero_scale_values_not_summable"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK.Analysis.MellinTransform.Checks.Negative.GaussianSummationNonpositiveParameter"
+      ],
+      "runner": "python3 -B scripts/check_gaussian_dyadic_summation.py",
+      "sha256": "c8044b4c445d92b3baf68c12b58a6da3f33351de7088d9009bea56e3556b2f45",
+      "source_role": "positive-check",
+      "source_root": "GRWTSK",
+      "subject": "Analysis",
+      "target_path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianDyadicSummation.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Analysis/MellinTransform/gaussian-dyadic-summation-checks-2026-10-15.json",
+        "source_sha256": "c8044b4c445d92b3baf68c12b58a6da3f33351de7088d9009bea56e3556b2f45"
       },
       "working_tree_state": "untracked-at-selected-replay"
     },
@@ -23255,6 +23376,74 @@
         "R.A. Jacob Martone: human direction",
         "OpenAI Codex: local formalization/adaptation/checking",
         "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: exact QuantitativePassage scalar dyadic proof slice and GaussianSummation consumer; Mathlib power/geometric-series/Schwartz authors retain individual credit"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/incremental-summation-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Actual Gaussian finite-family seminorm polynomial envelope from accepted exponent0/N bounds; constants before Z>0,j.",
+        "Actual scalar kernel supplier with 0<s<N, t=Z^-1>0 supplies summability and weighted Gaussian seminorm sum <=C(s,S)*Z^s.",
+        "No assumed kernel/summed estimate, unsupported nonpositive-exponent necessity, physical detector or RH supplier."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Analysis.MellinTransform.GaussianWindowSeminorms",
+        "GRWTSK.Analysis.Series.DyadicKernel"
+      ],
+      "license": "Apache-2.0",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.Analysis.MellinTransform.GaussianDyadicSummation",
+      "namespaces": [
+        "GRWTSK.Analysis.MellinTransform.GaussianDyadicSummation"
+      ],
+      "object": "MellinTransform",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Analysis/MellinTransform/GaussianDyadicSummation.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Analysis/MellinTransform/GaussianDyadicSummation.lean",
+      "placement_rationale": "Actual scalar dyadic series and uniform kernel sums belong to Analysis/Series; the actual Gaussian weighted seminorm consumer belongs to Analysis/MellinTransform.",
+      "public_declarations": [
+        {
+          "kind": "lemma",
+          "line": 21,
+          "name": "gaussianDyadicSchwartz_polynomial_decay"
+        },
+        {
+          "kind": "theorem",
+          "line": 55,
+          "name": "gaussianDyadicSchwartz_summed"
+        },
+        {
+          "kind": "theorem",
+          "line": 82,
+          "name": "gaussianDyadicProfile_values_summed"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianDyadicSummation"
+      ],
+      "runner": "python3 -B scripts/check_gaussian_dyadic_summation.py",
+      "sha256": "1f0129ffe0408983f6b19be9ae8fb40998105ce3b88e1e7fcf1a2e625eb8ced0",
+      "source_role": "library",
+      "source_root": "GRWTSK",
+      "subject": "Analysis",
+      "target_path": "GRWTSK/Analysis/MellinTransform/GaussianDyadicSummation.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Analysis/MellinTransform/gaussian-dyadic-summation-checks-2026-10-15.json",
+        "source_sha256": "1f0129ffe0408983f6b19be9ae8fb40998105ce3b88e1e7fcf1a2e625eb8ced0"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
         "OpenAI: actual GaussianSeminorm window/product-rule/seminorm supplier chain; Mathlib Schwartz/smooth/sqrt/derivative authors retain individual credit"
       ],
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -23352,7 +23541,8 @@
       ],
       "reverse_consumers": [
         "GRWTSK",
-        "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianWindowSeminorms"
+        "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianWindowSeminorms",
+        "GRWTSK.Analysis.MellinTransform.GaussianDyadicSummation"
       ],
       "runner": "python3 -B scripts/check_gaussian_window_seminorms.py",
       "sha256": "dcfa87ebe43582e02c38b1cc820656fde9160d7d633a6a99e6a3ed6b1e3d93d0",
@@ -24213,6 +24403,240 @@
         "source_sha256": "0a926ada5b98fa02e97f6a962160486e758f2716f6d870c375e61e84635282d2"
       },
       "working_tree_state": "tracked-clean"
+    },
+    {
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: exact QuantitativePassage scalar dyadic proof slice and GaussianSummation consumer; Mathlib power/geometric-series/Schwartz authors retain individual credit"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/incremental-summation-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Actual kernelTerm(t,s,A,j)=(2^j)^s/(1+t*2^j)^A, exact primary source and head/tail geometric cutoff proof.",
+        "Uniform sum constant requires 0<s<A and t>0; summability helper keeps its weaker exact A>=0,s<A hypotheses.",
+        "Actual missing-decay/scale controls; no arithmetic/Hecke/calibration supplier inferred."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Analysis.Series.Checks.Positive.DyadicKernel"
+      ],
+      "license": "Apache-2.0",
+      "logical_status": "intended rejected control; no theorem admission",
+      "module": "GRWTSK.Analysis.Series.Checks.Negative.DyadicKernelMissingDecay",
+      "namespaces": [],
+      "object": "Series/Checks/Negative",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Analysis/Series/Checks/Negative/DyadicKernelMissingDecay.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Analysis/Series/Checks/Negative/DyadicKernelMissingDecay.lean",
+      "placement_rationale": "Actual scalar dyadic series and uniform kernel sums belong to Analysis/Series; the actual Gaussian weighted seminorm consumer belongs to Analysis/MellinTransform.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B scripts/check_gaussian_dyadic_summation.py",
+      "sha256": "937880bf27578df2b4d5de6292bdb684b4a7a05dc9c04d4cb07972061f43ca1a",
+      "source_role": "negative-control",
+      "source_root": "GRWTSK",
+      "subject": "Analysis",
+      "target_path": "GRWTSK/Analysis/Series/Checks/Negative/DyadicKernelMissingDecay.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Analysis/MellinTransform/gaussian-dyadic-summation-checks-2026-10-15.json",
+        "source_sha256": "937880bf27578df2b4d5de6292bdb684b4a7a05dc9c04d4cb07972061f43ca1a"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: exact QuantitativePassage scalar dyadic proof slice and GaussianSummation consumer; Mathlib power/geometric-series/Schwartz authors retain individual credit"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/incremental-summation-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Actual kernelTerm(t,s,A,j)=(2^j)^s/(1+t*2^j)^A, exact primary source and head/tail geometric cutoff proof.",
+        "Uniform sum constant requires 0<s<A and t>0; summability helper keeps its weaker exact A>=0,s<A hypotheses.",
+        "Actual missing-decay/scale controls; no arithmetic/Hecke/calibration supplier inferred."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Analysis.Series.DyadicKernel",
+        "Mathlib.Topology.Algebra.InfiniteSum.Group"
+      ],
+      "license": "Apache-2.0",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.Analysis.Series.Checks.Positive.DyadicKernel",
+      "namespaces": [
+        "GRWTSK.Analysis.Series.DyadicKernel.Checks"
+      ],
+      "object": "Series/Checks/Positive",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Analysis/Series/Checks/Positive/DyadicKernel.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Analysis/Series/Checks/Positive/DyadicKernel.lean",
+      "placement_rationale": "Actual scalar dyadic series and uniform kernel sums belong to Analysis/Series; the actual Gaussian weighted seminorm consumer belongs to Analysis/MellinTransform.",
+      "public_declarations": [
+        {
+          "kind": "theorem",
+          "line": 7,
+          "name": "kernel_generic"
+        },
+        {
+          "kind": "theorem",
+          "line": 12,
+          "name": "kernel_one_one_two"
+        },
+        {
+          "kind": "theorem",
+          "line": 15,
+          "name": "kernel_boundary_lower"
+        },
+        {
+          "kind": "theorem",
+          "line": 22,
+          "name": "kernel_boundary_not_summable"
+        },
+        {
+          "kind": "theorem",
+          "line": 29,
+          "name": "kernel_zero_parameter"
+        },
+        {
+          "kind": "theorem",
+          "line": 32,
+          "name": "kernel_zero_parameter_not_summable"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK.Analysis.Series.Checks.Negative.DyadicKernelMissingDecay"
+      ],
+      "runner": "python3 -B scripts/check_gaussian_dyadic_summation.py",
+      "sha256": "3a0c27b07525b6309c12035ee0cd0b9970b0958328e4dfdcfbf5d9d4dfda3247",
+      "source_role": "positive-check",
+      "source_root": "GRWTSK",
+      "subject": "Analysis",
+      "target_path": "GRWTSK/Analysis/Series/Checks/Positive/DyadicKernel.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Analysis/MellinTransform/gaussian-dyadic-summation-checks-2026-10-15.json",
+        "source_sha256": "3a0c27b07525b6309c12035ee0cd0b9970b0958328e4dfdcfbf5d9d4dfda3247"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: exact QuantitativePassage scalar dyadic proof slice and GaussianSummation consumer; Mathlib power/geometric-series/Schwartz authors retain individual credit"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/incremental-summation-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Actual kernelTerm(t,s,A,j)=(2^j)^s/(1+t*2^j)^A, exact primary source and head/tail geometric cutoff proof.",
+        "Uniform sum constant requires 0<s<A and t>0; summability helper keeps its weaker exact A>=0,s<A hypotheses.",
+        "Actual missing-decay/scale controls; no arithmetic/Hecke/calibration supplier inferred."
+      ],
+      "git_blob": null,
+      "imports": [
+        "Mathlib.Algebra.Order.Archimedean.Basic",
+        "Mathlib.Algebra.Order.Field.GeomSum",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Real",
+        "Mathlib.Analysis.SpecificLimits.Normed",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Positivity",
+        "Mathlib.Tactic.Ring"
+      ],
+      "license": "Apache-2.0",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.Analysis.Series.DyadicKernel",
+      "namespaces": [
+        "GRWTSK.Analysis.Series.DyadicKernel"
+      ],
+      "object": "Series",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Analysis/Series/DyadicKernel.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Analysis/Series/DyadicKernel.lean",
+      "placement_rationale": "Actual scalar dyadic series and uniform kernel sums belong to Analysis/Series; the actual Gaussian weighted seminorm consumer belongs to Analysis/MellinTransform.",
+      "public_declarations": [
+        {
+          "kind": "def",
+          "line": 34,
+          "name": "kernelTerm"
+        },
+        {
+          "kind": "theorem",
+          "line": 36,
+          "name": "pow_rpow_comm"
+        },
+        {
+          "kind": "theorem",
+          "line": 41,
+          "name": "kernelTerm_nonneg"
+        },
+        {
+          "kind": "theorem",
+          "line": 45,
+          "name": "kernelTerm_le_head"
+        },
+        {
+          "kind": "theorem",
+          "line": 51,
+          "name": "kernelTerm_le_tail"
+        },
+        {
+          "kind": "theorem",
+          "line": 65,
+          "name": "ratio_lt_one"
+        },
+        {
+          "kind": "theorem",
+          "line": 68,
+          "name": "kernel_summable"
+        },
+        {
+          "kind": "theorem",
+          "line": 73,
+          "name": "kernel_sum_cutoff"
+        },
+        {
+          "kind": "theorem",
+          "line": 97,
+          "name": "kernel_sum_bound"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Analysis.MellinTransform.GaussianDyadicSummation",
+        "GRWTSK.Analysis.Series.Checks.Positive.DyadicKernel"
+      ],
+      "runner": "python3 -B scripts/check_gaussian_dyadic_summation.py",
+      "sha256": "c99ee7e558c21befc57822c87a0221b84d8e45254acf77e4f1ba2c2e1a4abbeb",
+      "source_role": "library",
+      "source_root": "GRWTSK",
+      "subject": "Analysis",
+      "target_path": "GRWTSK/Analysis/Series/DyadicKernel.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Analysis/MellinTransform/gaussian-dyadic-summation-checks-2026-10-15.json",
+        "source_sha256": "c99ee7e558c21befc57822c87a0221b84d8e45254acf77e4f1ba2c2e1a4abbeb"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -25868,6 +26292,51 @@
         "Lean and Mathlib: upstream APIs and proofs"
       ],
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/incremental-summation-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "One retained root, actual old complete-prefix inventory/parent cells and real references, plus actual new rooted occurrences; full-tag equality supplied.",
+        "Existing incremental encoder constructs Dold++only missing full prefixes; literal old node prefix preserved; actual rank-fuel expansion must reconstruct noncanonical Dext.",
+        "Real references append only original new rows, no auxiliary prefixes; actual full keyed occurrence recovery and old certificate reuse require actual decoder bridge. No canonical rightmost slot stability, runtime or appended-predicate inference."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.IncrementalPrefixTable"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "logical_status": "intended rejected control; no theorem admission",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.IncrementalPrefixMissingRows",
+      "namespaces": [],
+      "object": "DirectedGraph/Checks/Negative",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/IncrementalPrefixMissingRows.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/IncrementalPrefixMissingRows.lean",
+      "placement_rationale": "Stable incremental complete-prefix/parent tables and rooted occurrence reconstruction belong to Combinatorics/DirectedGraph; generic incremental dictionary laws remain in Logic/FiniteSequences.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B scripts/check_incremental_prefix_table.py",
+      "sha256": "2abf02b0560512b43585ad99b37cf129cda7b8fb9d6dfac668c34e71f4bf682b",
+      "source_role": "negative-control",
+      "source_root": "GRWTSK",
+      "subject": "Combinatorics",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/IncrementalPrefixMissingRows.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/incremental-prefix-table-checks-2026-10-15.json",
+        "source_sha256": "2abf02b0560512b43585ad99b37cf129cda7b8fb9d6dfac668c34e71f4bf682b"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
       "design_reference": "cache/research/prefix-zeta-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
       "explicit_premises": [
         "Existing PathUnfolding occurrences wrap fixed-root actual PathStar histories; full typed EdgeTrace list retains every source/target/arrow occurrence.",
@@ -26307,6 +26776,196 @@
         "lean": "see immutable selected replay receipt",
         "replay_binding": "evidence/Combinatorics/DirectedGraph/endpoint-section-checks-2026-10-15.json",
         "source_sha256": "ba640039622b78f42cfcbaf31dce0f0dcc4028b429b764aad482488dfbb4deba"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/incremental-summation-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "One retained root, actual old complete-prefix inventory/parent cells and real references, plus actual new rooted occurrences; full-tag equality supplied.",
+        "Existing incremental encoder constructs Dold++only missing full prefixes; literal old node prefix preserved; actual rank-fuel expansion must reconstruct noncanonical Dext.",
+        "Real references append only original new rows, no auxiliary prefixes; actual full keyed occurrence recovery and old certificate reuse require actual decoder bridge. No canonical rightmost slot stability, runtime or appended-predicate inference."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.IncrementalPrefixTable"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.IncrementalPrefixTable",
+      "namespaces": [
+        "GRWTSK.Combinatorics.DirectedGraph.IncrementalPrefixTable.Checks.Positive"
+      ],
+      "object": "DirectedGraph/Checks/Positive",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/IncrementalPrefixTable.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/IncrementalPrefixTable.lean",
+      "placement_rationale": "Stable incremental complete-prefix/parent tables and rooted occurrence reconstruction belong to Combinatorics/DirectedGraph; generic incremental dictionary laws remain in Logic/FiniteSequences.",
+      "public_declarations": [
+        {
+          "kind": "def",
+          "line": 21,
+          "name": "falseTag"
+        },
+        {
+          "kind": "def",
+          "line": 24,
+          "name": "trueTag"
+        },
+        {
+          "kind": "theorem",
+          "line": 27,
+          "name": "tags_distinct"
+        },
+        {
+          "kind": "def",
+          "line": 33,
+          "name": "falseOccurrence"
+        },
+        {
+          "kind": "def",
+          "line": 36,
+          "name": "trueOccurrence"
+        },
+        {
+          "kind": "def",
+          "line": 39,
+          "name": "joinedOccurrence"
+        },
+        {
+          "kind": "def",
+          "line": 42,
+          "name": "oldRows"
+        },
+        {
+          "kind": "def",
+          "line": 45,
+          "name": "newRows"
+        },
+        {
+          "kind": "theorem",
+          "line": 48,
+          "name": "old_inventory"
+        },
+        {
+          "kind": "theorem",
+          "line": 52,
+          "name": "new_inventory"
+        },
+        {
+          "kind": "theorem",
+          "line": 56,
+          "name": "stable_dictionary"
+        },
+        {
+          "kind": "theorem",
+          "line": 62,
+          "name": "canonical_dictionary"
+        },
+        {
+          "kind": "theorem",
+          "line": 67,
+          "name": "old_nodes"
+        },
+        {
+          "kind": "theorem",
+          "line": 70,
+          "name": "stable_nodes"
+        },
+        {
+          "kind": "theorem",
+          "line": 76,
+          "name": "old_slot_preserved_canonical_slot_changed"
+        },
+        {
+          "kind": "theorem",
+          "line": 82,
+          "name": "complete_old_parent_cell_preserved"
+        },
+        {
+          "kind": "theorem",
+          "line": 93,
+          "name": "actual_real_decode"
+        },
+        {
+          "kind": "theorem",
+          "line": 96,
+          "name": "no_new_rows_omitted"
+        },
+        {
+          "kind": "def",
+          "line": 112,
+          "name": "oldCertificate"
+        },
+        {
+          "kind": "theorem",
+          "line": 117,
+          "name": "old_certificate_reused"
+        },
+        {
+          "kind": "theorem",
+          "line": 124,
+          "name": "full_new_predicate_not_inherited"
+        },
+        {
+          "kind": "def",
+          "line": 139,
+          "name": "sharedRows"
+        },
+        {
+          "kind": "theorem",
+          "line": 142,
+          "name": "shared_inventory"
+        },
+        {
+          "kind": "theorem",
+          "line": 147,
+          "name": "shared_prefix_only_one_new_cell"
+        },
+        {
+          "kind": "def",
+          "line": 152,
+          "name": "repeatedRows"
+        },
+        {
+          "kind": "def",
+          "line": 180,
+          "name": "emptyFalse"
+        },
+        {
+          "kind": "def",
+          "line": 183,
+          "name": "emptyTrue"
+        },
+        {
+          "kind": "theorem",
+          "line": 186,
+          "name": "empty_table_root_retained"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.IncrementalPrefixMissingRows"
+      ],
+      "runner": "python3 -B scripts/check_incremental_prefix_table.py",
+      "sha256": "f23796f040bc59d9270370391b54e0b7d047e4ae0c69b315e34891854f959d08",
+      "source_role": "positive-check",
+      "source_root": "GRWTSK",
+      "subject": "Combinatorics",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/IncrementalPrefixTable.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/incremental-prefix-table-checks-2026-10-15.json",
+        "source_sha256": "f23796f040bc59d9270370391b54e0b7d047e4ae0c69b315e34891854f959d08"
       },
       "working_tree_state": "untracked-at-selected-replay"
     },
@@ -27302,6 +27961,238 @@
         "Lean and Mathlib: upstream APIs and proofs"
       ],
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/incremental-summation-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "One retained root, actual old complete-prefix inventory/parent cells and real references, plus actual new rooted occurrences; full-tag equality supplied.",
+        "Existing incremental encoder constructs Dold++only missing full prefixes; literal old node prefix preserved; actual rank-fuel expansion must reconstruct noncanonical Dext.",
+        "Real references append only original new rows, no auxiliary prefixes; actual full keyed occurrence recovery and old certificate reuse require actual decoder bridge. No canonical rightmost slot stability, runtime or appended-predicate inference."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.RootedTraceRevision",
+        "GRWTSK.Logic.FiniteSequences.IncrementalDictionary"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.IncrementalPrefixTable",
+      "namespaces": [
+        "GRWTSK.Combinatorics.DirectedGraph.IncrementalPrefixTable"
+      ],
+      "object": "DirectedGraph",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/IncrementalPrefixTable.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Combinatorics/DirectedGraph/IncrementalPrefixTable.lean",
+      "placement_rationale": "Stable incremental complete-prefix/parent tables and rooted occurrence reconstruction belong to Combinatorics/DirectedGraph; generic incremental dictionary laws remain in Logic/FiniteSequences.",
+      "public_declarations": [
+        {
+          "kind": "def",
+          "line": 36,
+          "name": "prefixEntries"
+        },
+        {
+          "kind": "def",
+          "line": 41,
+          "name": "dictionary"
+        },
+        {
+          "kind": "theorem",
+          "line": 46,
+          "name": "mem_dictionary_iff"
+        },
+        {
+          "kind": "theorem",
+          "line": 55,
+          "name": "dictionary_prefix"
+        },
+        {
+          "kind": "theorem",
+          "line": 59,
+          "name": "dictionary_nodup"
+        },
+        {
+          "kind": "theorem",
+          "line": 63,
+          "name": "dictionary_closed"
+        },
+        {
+          "kind": "theorem",
+          "line": 73,
+          "name": "dictionary_valid"
+        },
+        {
+          "kind": "def",
+          "line": 80,
+          "name": "cell"
+        },
+        {
+          "kind": "def",
+          "line": 86,
+          "name": "nodes"
+        },
+        {
+          "kind": "theorem",
+          "line": 92,
+          "name": "nodes_prefix"
+        },
+        {
+          "kind": "theorem",
+          "line": 95,
+          "name": "old_cell_eq"
+        },
+        {
+          "kind": "theorem",
+          "line": 110,
+          "name": "nodes_eq_map"
+        },
+        {
+          "kind": "theorem",
+          "line": 122,
+          "name": "old_dictionary_lookup"
+        },
+        {
+          "kind": "theorem",
+          "line": 127,
+          "name": "old_node_lookup"
+        },
+        {
+          "kind": "theorem",
+          "line": 132,
+          "name": "old_parent_lookup"
+        },
+        {
+          "kind": "theorem",
+          "line": 146,
+          "name": "node_lookup"
+        },
+        {
+          "kind": "theorem",
+          "line": 153,
+          "name": "parent_lookup"
+        },
+        {
+          "kind": "theorem",
+          "line": 160,
+          "name": "nodes_validRanks"
+        },
+        {
+          "kind": "theorem",
+          "line": 174,
+          "name": "expand_nodes"
+        },
+        {
+          "kind": "theorem",
+          "line": 201,
+          "name": "decodeSlot_nodes"
+        },
+        {
+          "kind": "theorem",
+          "line": 209,
+          "name": "expandDictionary_nodes"
+        },
+        {
+          "kind": "def",
+          "line": 237,
+          "name": "oldPacked"
+        },
+        {
+          "kind": "theorem",
+          "line": 241,
+          "name": "unpack_oldPacked"
+        },
+        {
+          "kind": "theorem",
+          "line": 251,
+          "name": "oldPacked_valid"
+        },
+        {
+          "kind": "def",
+          "line": 257,
+          "name": "realPacked"
+        },
+        {
+          "kind": "theorem",
+          "line": 262,
+          "name": "new_trace_mem"
+        },
+        {
+          "kind": "theorem",
+          "line": 269,
+          "name": "realPacked_dictionary"
+        },
+        {
+          "kind": "def",
+          "line": 282,
+          "name": "representation"
+        },
+        {
+          "kind": "theorem",
+          "line": 285,
+          "name": "expandedPacked_representation"
+        },
+        {
+          "kind": "theorem",
+          "line": 290,
+          "name": "unpack_realPacked"
+        },
+        {
+          "kind": "theorem",
+          "line": 296,
+          "name": "decode_representation"
+        },
+        {
+          "kind": "theorem",
+          "line": 301,
+          "name": "real_reference_count"
+        },
+        {
+          "kind": "theorem",
+          "line": 307,
+          "name": "output_valid"
+        },
+        {
+          "kind": "theorem",
+          "line": 316,
+          "name": "output_recovers"
+        },
+        {
+          "kind": "theorem",
+          "line": 325,
+          "name": "expand_old_revision"
+        },
+        {
+          "kind": "theorem",
+          "line": 335,
+          "name": "certified_old_references"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.IncrementalPrefixTable"
+      ],
+      "runner": "python3 -B scripts/check_incremental_prefix_table.py",
+      "sha256": "dc6e8066e3539897464cdfe3bf1d31797ca76baae11066a79c0d0f0c5c7ffa37",
+      "source_role": "library",
+      "source_root": "GRWTSK",
+      "subject": "Combinatorics",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/IncrementalPrefixTable.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/incremental-prefix-table-checks-2026-10-15.json",
+        "source_sha256": "dc6e8066e3539897464cdfe3bf1d31797ca76baae11066a79c0d0f0c5c7ffa37"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
       "design_reference": "cache/research/prefix-zeta-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
       "explicit_premises": [
         "Existing PathUnfolding occurrences wrap fixed-root actual PathStar histories; full typed EdgeTrace list retains every source/target/arrow occurrence.",
@@ -28255,7 +29146,8 @@
       ],
       "reverse_consumers": [
         "GRWTSK",
-        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.RootedTraceRevision"
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.RootedTraceRevision",
+        "GRWTSK.Combinatorics.DirectedGraph.IncrementalPrefixTable"
       ],
       "runner": "python3 -B scripts/check_rooted_trace_revision.py",
       "sha256": "784594334cff23da4bc77f62c5cd66cf8006ad381223026f1b7383e519dfef17",
@@ -37794,6 +38686,7 @@
       ],
       "reverse_consumers": [
         "GRWTSK",
+        "GRWTSK.Combinatorics.DirectedGraph.IncrementalPrefixTable",
         "GRWTSK.Logic.FiniteSequences.Checks.Negative.IncrementalDictionaryMissingValidity",
         "GRWTSK.Logic.FiniteSequences.Checks.Positive.IncrementalDictionary",
         "GRWTSK.Logic.FiniteSequences.IncrementalComposition"

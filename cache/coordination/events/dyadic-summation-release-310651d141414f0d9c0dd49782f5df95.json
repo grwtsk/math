@@ -1,0 +1,13 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "gaussian-dyadic-summation-formal",
+  "event": "dev-lock-released",
+  "at": "2026-10-15T21:43:36.022757+00:00",
+  "owner": "cache_adapter",
+  "attempt": ".local/gaussian-dyadic-summation/73368016eb9542a190ee06a985b254a0/attempts/Gaussian-attempt06",
+  "source_sha256": "b09b4f2d7e15613c3e513ce5618e93f2441a292ce57ea30d1e78b27aa7fcaba4",
+  "competing_jobs": [],
+  "receipt": ".local/gaussian-dyadic-summation/73368016eb9542a190ee06a985b254a0/attempts/Gaussian-attempt06.json",
+  "exit_code": 0,
+  "native_jobs_running": 0
+}
