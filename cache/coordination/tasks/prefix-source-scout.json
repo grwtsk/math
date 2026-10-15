@@ -1,0 +1,12 @@
+{
+  "schema": "repository-agent-task-v1",
+  "id": "prefix-source-scout",
+  "at": "2026-10-15T18:40:20.880067+00:00",
+  "owner": "cache_taxonomy",
+  "branch": "main",
+  "base_commit": "5372baf055363563c2f59c5b9e61c0898b35c52c",
+  "cache_revision": "86216996c73eafb52b7888eeaddeb2c2d92d045a58d0457025d6a9b91a08266a",
+  "write_paths": [],
+  "objective": "Fresh primary arxiv and actual official pinned Anthropic sources for order embeddings/ancestor cones/prefix representations; bounded final source review, distinct relation roles and no independent-validation claim.",
+  "coordination": "Write immutable exact-hash progress/completion events; no prior source edits, commits or shared metadata changes. Root owns native audit/admission."
+}

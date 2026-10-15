@@ -1,0 +1,16 @@
+{
+  "schema": "repository-agent-task-v1",
+  "id": "prefix-obstruction-formal",
+  "at": "2026-10-15T18:40:20.879876+00:00",
+  "owner": "indexed_dictionary",
+  "branch": "main",
+  "base_commit": "5372baf055363563c2f59c5b9e61c0898b35c52c",
+  "cache_revision": "86216996c73eafb52b7888eeaddeb2c2d92d045a58d0457025d6a9b91a08266a",
+  "write_paths": [
+    "GRWTSK/Order/Embeddings/PrefixObstruction.lean",
+    "GRWTSK/Order/Embeddings/Checks/Positive/PrefixObstruction.lean",
+    "GRWTSK/Order/Embeddings/Checks/Negative/PrefixMissingReflection.lean"
+  ],
+  "objective": "Use pinned Mathlib List.IsPrefix to prove no relation-preserving and reflecting prefix representation of incomparable elements with common upper bound; actual finite diamond, valid chain and injective monotone nonreflecting example.",
+  "coordination": "Write immutable exact-hash progress/completion events; no prior source edits, commits or shared metadata changes. Root owns native audit/admission."
+}

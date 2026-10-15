@@ -1,0 +1,330 @@
+{
+  "schema": "prefix-obstruction-source-review-v1",
+  "task": "cache/coordination/tasks/prefix-source-scout.json",
+  "at": "2026-10-15T18:48:30.121864+00:00",
+  "status": "complete-bounded-correlated-source-review",
+  "review_kind": {
+    "independent_validation": false,
+    "correlation": "Same agent team/model workflow as source authors. This is a bounded assumption/source/control review, not an independent mathematical or native-kernel validation.",
+    "native_jobs_by_this_task": "NOT_RUN",
+    "source_or_shared_metadata_edits": false,
+    "commits_or_remote_mutations": false
+  },
+  "final_author_bindings": {
+    "completion": {
+      "path": "cache/coordination/events/20261015T184632Z-prefix-obstruction-complete-b705c721.json",
+      "sha256": "f0bbf0fff8c61cb2d305edc4bb5e903f658cab9431e9c60f54ff98e0e180db26"
+    },
+    "api": {
+      "path": "cache/coordination/events/20261015T184527Z-prefix-obstruction-api-b180f86c.json",
+      "sha256": "1117f7c4b3d41614196fb812f3e79c6d6906e64ae94e2fbf9d2cdb8ef4c5ccff"
+    },
+    "sources": [
+      {
+        "path": "GRWTSK/Order/Embeddings/PrefixObstruction.lean",
+        "sha256": "438d46160c2131154dc49b6c345208207c4ba0931ec0487a08153a0291ac8f46",
+        "bytes": 6424
+      },
+      {
+        "path": "GRWTSK/Order/Embeddings/Checks/Positive/PrefixObstruction.lean",
+        "sha256": "6351f7c8ff76d7a50e5028b649405d1d8f65b3d6836724f1488c4da0da33f79a",
+        "bytes": 1339
+      },
+      {
+        "path": "GRWTSK/Order/Embeddings/Checks/Negative/PrefixMissingReflection.lean",
+        "sha256": "c68af330ee9d86c1aa3fc9e162c44efadefb975beec8167c1a9ae1662d625e8f",
+        "bytes": 273
+      }
+    ],
+    "all_three_hashes_match_final_completion_and_api": true,
+    "declaration_lines": {
+      "PreservesPrefix": [
+        31
+      ],
+      "ReflectsPrefix": [
+        35
+      ],
+      "comparable_of_common_upper": [
+        39
+      ],
+      "no_prefix_representation_of_incomparable_upper": [
+        48
+      ],
+      "chainAddress_prefix_iff": [
+        59
+      ],
+      "chainAddress_representation": [
+        62
+      ],
+      "diamondLe_refl": [
+        81
+      ],
+      "diamondLe_trans": [
+        83
+      ],
+      "diamondLe_antisymm": [
+        87
+      ],
+      "diamond_has_no_prefix_representation": [
+        92
+      ],
+      "diamondAddress_injective": [
+        107
+      ],
+      "diamondAddress_preserves": [
+        115
+      ],
+      "diamondAddress_not_reflects": [
+        121
+      ],
+      "injective_preservation_without_reflection": [
+        128
+      ]
+    }
+  },
+  "actual_source_review": {
+    "generic_contract": "For an arbitrary binary relation R on Node and a map address : Node -> List Label, preservation is forall a b, R a b -> IsPrefix (address a) (address b); reflection is the reverse implication. If R a c and R b c, both assumptions force R a b or R b a. If neither comparison holds, no map satisfying both exists.",
+    "proof_boundary": "The actual comparable_of_common_upper proof applies List.prefix_or_prefix_of_prefix to the two preserved comparisons, then reflection to both branches. The obstruction consumes explicit hac, hbc, not-hab and not-hba. It requires no order axioms, injectivity, source finiteness or inhabited/finite target alphabet. No converse representation theorem is stated.",
+    "actual_chain": "chainAddress n is List.replicate n (). Actual prefix iff m <= n is proved using the upstream replicate theorem; preservation/reflection and injectivity are separate proved consumers.",
+    "actual_diamond": "The four-constructor Diamond has relation a = bottom OR b = top OR a = b, with reflexivity, transitivity and antisymmetry proved in the library. left and right are incomparable and each is below top. The actual obstruction theorem quantifies over any Label type.",
+    "same_map_counterexample": "diamondRank sends bottom,left,right,top to 0,1,2,3; diamondAddress is the corresponding Unit-list length. The same map is proved injective and preserving, while address left is a prefix of address right and DiamondLe left right is false. Thus injective preservation alone does not discharge reflection.",
+    "positive_control": "Actual final positive file consumes the generic obstruction, exact chain prefix equivalence, concrete diamond obstruction, same-map injectivity/preservation/reflection failure, an actual false source comparison and both actual common-upper comparisons. The three order-law proofs are present in the library; the positive file does not separately invoke each law.",
+    "negative_control": "Actual final negative file asks for ReflectsPrefix DiamondLe diamondAddress and supplies diamondAddress_preserves. It is precisely a preservation-versus-reflection mismatch for the concrete map, not a generic placeholder hypothesis.",
+    "findings": "No actionable omitted hypothesis or false preservation/reflection inference observed in the bounded final-source read."
+  },
+  "upstream_list_source": {
+    "lean_toolchain": "leanprover/lean4:v4.33.0",
+    "mathlib_pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "context": [
+      {
+        "path": "lean-toolchain",
+        "sha256": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
+        "bytes": 25
+      },
+      {
+        "path": "lake-manifest.json",
+        "sha256": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
+        "bytes": 3577
+      },
+      {
+        "path": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/src/lean/Init/Data/List/Sublist.lean",
+        "sha256": "aa624029539f797f6a04e6f58cab1381fbba29cc4fbe04f0d4d2322867dbdfbb",
+        "bytes": 58551
+      },
+      {
+        "path": ".lake/packages/mathlib/Mathlib/Data/List/Basic.lean",
+        "sha256": "a5490adaf9886c84cf0ffad009267ea9324bfa6c9b81b529454158c19eedd501",
+        "bytes": 43674
+      }
+    ],
+    "exact_occurrences": [
+      {
+        "declaration": "List.prefix_or_prefix_of_prefix",
+        "path": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/src/lean/Init/Data/List/Sublist.lean",
+        "line": 902,
+        "role": "Ancestor comparability for two actual List.IsPrefix premises; defined in Lean Core, exposed through imported Mathlib.Data.List.Basic."
+      },
+      {
+        "declaration": "List.prefix_replicate_iff",
+        "path": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/src/lean/Init/Data/List/Sublist.lean",
+        "line": 1070,
+        "role": "Characterizes prefixes of a replicate by length and constant content; specialized to the actual natural-number chain."
+      }
+    ],
+    "attribution": "The ancestor comparison is reused from Lean Core, rather than reproved or claimed as a novel Mathlib result. Upstream import authorship and licensing remain in place."
+  },
+  "primary_arxiv_scout": {
+    "fresh_browsing": true,
+    "scope": "Bounded and non-exhaustive primary-source search and targeted reading; no priority or corpus-completeness claim.",
+    "queries": [
+      "site:arxiv.org partial order tree order embedding principal ideals chains",
+      "site:arxiv.org prefix order embedding poset tree incomparable upper bound",
+      "site:arxiv.org order embedding tree semilinear order",
+      "site:arxiv.org \"tree\" \"principal ideals\" \"chains\"",
+      "site:arxiv.org \"semilinear order\" \"embedding\"",
+      "site:arxiv.org \"tree order\" \"downsets\"",
+      "site:arxiv.org \"prefix order\" \"embedding\""
+    ],
+    "search_limits": "The first search returned relevant and irrelevant terminology matches. The four exact-phrase queries returned no results. Irrelevant geometric embeddings/string indexes and papers merely mentioning Hasse-tree posets were excluded.",
+    "sources": [
+      {
+        "id": "math/0510344v2",
+        "title": "Semilinear metric semilattices on R-trees",
+        "authors": [
+          "P. D. Andreev"
+        ],
+        "version_submitted_utc": "2009-02-19T07:13:03Z",
+        "first_submitted_utc": "2005-10-17T06:50:58Z",
+        "abstract_url": "https://arxiv.org/abs/math/0510344",
+        "version_url": "https://arxiv.org/abs/math/0510344v2",
+        "read_url": "https://arxiv.org/pdf/math/0510344v2",
+        "locations": [
+          "Section 3, Definition 1 and semilinearity definition, PDF page 4",
+          "Theorem 1 and its rooted-order construction, PDF pages 1 and 4-5"
+        ],
+        "correspondence": "Section 3 defines lower semilinearity by linearly ordered lower cones, matching the necessary cone property obtained locally. The paper constructs the reverse ancestor orientation as an upper-semilinear order on a rooted R-tree.",
+        "limits": "Its R-tree criterion also needs a geodesic metric space and compatible semilattice distance identities. It is not a finite-list representation theorem. Reversing the order changes which cones are linear; these directions cannot be interchanged silently. Only the order terminology and orientation comparison are used."
+      },
+      {
+        "id": "1309.7379v1",
+        "title": "Incomparable copies of a poset in the Boolean lattice",
+        "authors": [
+          "Gyula O. H. Katona",
+          "Dániel T. Nagy"
+        ],
+        "version_submitted_utc": "2013-09-27T22:03:08Z",
+        "abstract_url": "https://arxiv.org/abs/1309.7379",
+        "version_url": "https://arxiv.org/abs/1309.7379v1",
+        "read_url": "https://arxiv.org/pdf/1309.7379v1",
+        "locations": [
+          "Section 1, first definitions, PDF page 1"
+        ],
+        "correspondence": "The opening definitions distinguish an injective strict-order-preserving map into the Boolean lattice from an induced embedding that also reflects strict order. This supports keeping preservation, injectivity and reflection distinct in the review.",
+        "limits": "The target is a Boolean lattice and the source convention uses strict order. The local theorem uses an arbitrary binary relation and non-strict List.IsPrefix. No direct formal translation or proof port from this paper is claimed; the local prefix obstruction follows the pinned Lean list theorem."
+      }
+    ],
+    "novelty": "The local theorem is a direct reusable consequence of the existing ancestor-comparability API with explicit relation-preserving/reflection premises. Neither cited paper is asserted to contain the exact local Lean theorem."
+  },
+  "official_anthropic_source_scout": {
+    "repository": "https://github.com/anthropics/formal-math",
+    "pin": "e1a4e6508154ea59f030480661590a9fe3018011",
+    "reused_source_manifest": {
+      "path": "evidence/Logic/FiniteSequences/ordered-history-adapter-2026-10-15.json",
+      "sha256": "0ae137551711422bef455c23c4dca06fb2cca655a2c4c36b8ac74d45f8f49c7e"
+    },
+    "inspection": "Reread the actual preserved raw pinned files, verify SHA256 and Git blob against the earlier official pinned repository inspection, and inspect exact declarations; no new upstream execution.",
+    "sources": [
+      {
+        "path": "3sum-apsp/ThreeSumApsp/Util/BinaryPrefixes.lean",
+        "url": "https://raw.githubusercontent.com/anthropics/formal-math/e1a4e6508154ea59f030480661590a9fe3018011/3sum-apsp/ThreeSumApsp/Util/BinaryPrefixes.lean",
+        "bytes": 6218,
+        "sha256": "2675465d78a38d6e644ef26a779d43c2bc655e762cf303f2705d4c30c12714c4",
+        "git_blob": "91d3d961c6704e8cea11d53354654262f06604b8",
+        "local_path": ".local/ordered-history/adapter/c02f1a40f9d24ee997a4b434b89d5096/anthropic/3sum-apsp/ThreeSumApsp/Util/BinaryPrefixes.lean",
+        "source_bytes_and_git_blob_match_prior_pinned_tree": true,
+        "declaration_lines": {
+          "prefQ": [
+            31
+          ],
+          "prefR": [
+            34
+          ],
+          "pref_step": [
+            52
+          ],
+          "testBit_iff_shift": [
+            106
+          ]
+        }
+      },
+      {
+        "path": "3sum-apsp/ThreeSumApsp/Sec2/Orders.lean",
+        "url": "https://raw.githubusercontent.com/anthropics/formal-math/e1a4e6508154ea59f030480661590a9fe3018011/3sum-apsp/ThreeSumApsp/Sec2/Orders.lean",
+        "bytes": 16576,
+        "sha256": "9e6b269f285b33110a3d19d351de071d93d3dbf9660b77dbc5461705ae08248c",
+        "git_blob": "6969770c7681b1ae81e32dfe52a397cd65edb058",
+        "local_path": ".local/ordered-history/adapter/c02f1a40f9d24ee997a4b434b89d5096/anthropic/3sum-apsp/ThreeSumApsp/Sec2/Orders.lean",
+        "source_bytes_and_git_blob_match_prior_pinned_tree": true,
+        "declaration_lines": {
+          "order_nonneg": [
+            111
+          ],
+          "order_le": [
+            119
+          ],
+          "order_eq_iff": [
+            124
+          ]
+        }
+      }
+    ],
+    "findings": [
+      {
+        "path": "3sum-apsp/ThreeSumApsp/Util/BinaryPrefixes.lean",
+        "finding": "prefQ ell z = z / 2^ell and prefR L ell z = z % 2^ell * 2^(L-ell) track integer binary-prefix arithmetic. pref_step and testBit_iff_shift require ell+1 <= L. These statements are not a list-prefix order embedding of arbitrary relations or posets.",
+        "decision": "No embedding theorem inferred or code imported."
+      },
+      {
+        "path": "3sum-apsp/ThreeSumApsp/Sec2/Orders.lean",
+        "finding": "The order quantity counts choices of leaves in a 3SUM tensor construction; order_nonneg assumes contribution and the output inner-set cardinality, and order_le bounds this integer quantity. The file name does not establish a poset-order or reflection result.",
+        "decision": "Excluded as support for the prefix representation theorem."
+      }
+    ],
+    "rights": "Original 2026 Anthropic, PBC Apache-2.0/SPDX headers remain in the archived source snapshots. No Anthropic source is copied into the three local files.",
+    "upstream_native_compilation": "NOT_RUN",
+    "upstream_mathematical_admission": "none from this scout"
+  },
+  "incoming_candidate_boundary": {
+    "intake_reference": {
+      "path": "evidence/source-intake.json",
+      "sha256_at_inspection": "ef9f4145cfe681bc5553cf59c8f389d4d0c58fcca7d784cca9399f08fba803c3"
+    },
+    "sources": [
+      {
+        "path": "GRWTSK/Order/Taxonomy/Address.lean",
+        "sha256": "aae54480d327193e1d68676baa351623373861257fed59accf0ad328a8c2ad2b",
+        "bytes": 5724,
+        "intake_status": "CANDIDATE_SOURCE_ONLY",
+        "native_compilation": "not-run",
+        "axiom_audit": "not-run",
+        "mathematical_admission": false,
+        "license": "MIT",
+        "inspection_role": "Reference only; no import, edit, replay or admission transfer."
+      },
+      {
+        "path": "GRWTSK/Order/Taxonomy/Core.lean",
+        "sha256": "2de1811f8f126307216df30e5e3578b117acd305ca3039725f18f8bcce696497",
+        "bytes": 5322,
+        "intake_status": "CANDIDATE_SOURCE_ONLY",
+        "native_compilation": "not-run",
+        "axiom_audit": "not-run",
+        "mathematical_admission": false,
+        "license": "MIT",
+        "inspection_role": "Reference only; no import, edit, replay or admission transfer."
+      }
+    ],
+    "comparison": "Address.ancestors_comparable uses a separately defined recursive Prefix. Core.Taxonomy.ancestors_chain inherits that property. Core.representationOrderIso represents an already prefix-closed taxonomy by its own finite presentation with identical addresses; it does not represent an arbitrary DAG or arbitrary partial order.",
+    "status_transfer": "None. Their original CANDIDATE_SOURCE_ONLY/NOT_RUN status, bytes and receipts are preserved, and the final local module imports neither candidate."
+  },
+  "author_development_evidence_observed": {
+    "authority": "The author completion/API events report development runs; this review does not rerun or convert them into independent evidence.",
+    "reported_native_checks": [
+      {
+        "kind": "library",
+        "trust": 0,
+        "fatal_warnings": true,
+        "exit_code": 0,
+        "receipt": ".local/prefix-obstruction/20261015T184355.312691Z-library.json"
+      },
+      {
+        "kind": "positive_control",
+        "trust": 0,
+        "fatal_warnings": true,
+        "exit_code": 0,
+        "receipt": ".local/prefix-obstruction/20261015T184424.789985Z-positive.json"
+      },
+      {
+        "kind": "hostile_control",
+        "trust": 0,
+        "fatal_warnings": true,
+        "exit_code": 1,
+        "passed_intended_type_mismatch": true,
+        "receipt": ".local/prefix-obstruction/20261015T184425.404522Z-negative.json"
+      }
+    ],
+    "failed_and_stale_evidence_preserved": [
+      ".local/prefix-obstruction/20261015T184355.950313Z-positive.json with exact failed source variant; replaced only two closed-fixture decide proofs with simp [DiamondLe].",
+      "Initial coordination-only non-UTF-8 stdin rejection recorded separately; native proof evidence unaffected."
+    ],
+    "structural_check_limit": "Author completion reports the full repository math-layout check failed with 175 findings and zero owned-path findings. This is recorded as a failed global check, not rewritten as a passing repository check.",
+    "root_native_evidence": "evidence/Order/Embeddings/prefix-obstruction-checks-2026-10-15.json",
+    "native_replay_by_this_review": "NOT_RUN"
+  },
+  "remaining_representation_obligations": [
+    "Only the explicitly declared relation is in scope. Typed ancestry, proof implication, provenance, communication and governance links must not be conflated.",
+    "Any claim about the operational JSON/Python taxonomy or graph reachability requires an explicit model/refinement theorem identifying its relation with the Lean relation; none is supplied by this result.",
+    "The necessary lower-cone chain property is not stated as sufficient for finite-word representability. Infinite ancestor structure and target alphabet constraints require further arguments.",
+    "No individual identities for the declared 215 methods, exact catalog completeness, arbitrary typed-DAG/tree correspondence or general global-cache reconciliation theorem follows from this obstruction."
+  ],
+  "contribution": "Primary-source selection and source-identity/premise review by cache_taxonomy agent under R.A. Jacob Martone direction; formal implementation and native audits remain separately attributed to their author/root receipts."
+}

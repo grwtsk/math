@@ -1,0 +1,9 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "prefix-obstruction-formal",
+  "status": "native_dev_lock_acquired",
+  "owner": "indexed_dictionary",
+  "at": "20261015T184354.583977Z",
+  "competing_jobs": [],
+  "lock": "/Users/think/Desktop/math/.local/math-trust/replay.lock"
+}

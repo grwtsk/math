@@ -5996,15 +5996,15 @@
     }
   ],
   "counts_by_operation": {
-    "add": 49,
+    "add": 52,
     "keep": 336,
     "move": 206
   },
   "counts_by_role": {
     "audit-driver": 35,
-    "library": 352,
-    "negative-control": 112,
-    "positive-check": 92
+    "library": 353,
+    "negative-control": 113,
+    "positive-check": 93
   },
   "counts_by_subject": {
     "Algebra": 19,
@@ -6018,12 +6018,12 @@
     "Logic": 63,
     "MeasureTheory": 5,
     "NumberTheory": 188,
-    "Order": 3,
+    "Order": 6,
     "Spectral": 25
   },
-  "present_lean_source_count": 654,
+  "present_lean_source_count": 657,
   "schema": "grwtsk-math-source-catalog-v1",
-  "source_count": 591,
+  "source_count": 594,
   "sources": [
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -6373,6 +6373,7 @@
         "GRWTSK.NumberTheory.Zeta.ZeroFreeHalfPlaneCriteria",
         "GRWTSK.Order.Closure.FiniteDependencyClosure",
         "GRWTSK.Order.Closure.FiniteDependencyExamples",
+        "GRWTSK.Order.Embeddings.PrefixObstruction",
         "GRWTSK.Order.WellFounded.AdditiveNaturalRank",
         "GRWTSK.Spectral.DirichletCut",
         "GRWTSK.Spectral.FreeDirichletSpectrum",
@@ -6552,7 +6553,7 @@
         "GRWTSK/Logic/ProofChecking/Checks/OwnedDeclarationAudit.lean"
       ],
       "runner": "python3 -B scripts/check_ccc_energy.py",
-      "sha256": "0dad8706cd354e15c2af9144da9fc44560b252389dd4aa7c3c4692114d1a9312",
+      "sha256": "9dba8290083d876da497df87bf85927208b810a46f0f3ef56b5dec609027dfc3",
       "source_role": "library",
       "source_root": ".",
       "subject": "Library",
@@ -6561,7 +6562,7 @@
         "inventory": "observed-current-bytes",
         "layout": "repository baseline remains failed",
         "lean": "umbrella not replayed after selected import additions",
-        "source_sha256": "0dad8706cd354e15c2af9144da9fc44560b252389dd4aa7c3c4692114d1a9312"
+        "source_sha256": "9dba8290083d876da497df87bf85927208b810a46f0f3ef56b5dec609027dfc3"
       },
       "working_tree_state": "tracked-modified"
     },
@@ -53346,6 +53347,237 @@
         "source_sha256": "3b0fe0e9203fdd65f3ae8252aec3e66159e114863a23c840ea4fdfb19a63a467"
       },
       "working_tree_state": "tracked-clean"
+    },
+    {
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/prefix-embedding-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Actual List.IsPrefix target relation; source relation has incomparable a,b with a common upper bound.",
+        "Mapping preserves and reflects the chosen source relation; injective monotonicity alone is insufficient."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Order.Embeddings.PrefixObstruction"
+      ],
+      "logical_status": "intended rejected control; no theorem admission",
+      "module": "GRWTSK.Order.Embeddings.Checks.Negative.PrefixMissingReflection",
+      "namespaces": [],
+      "object": "Embeddings/Checks/Negative",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Order/Embeddings/Checks/Negative/PrefixMissingReflection.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Order/Embeddings/Checks/Negative/PrefixMissingReflection.lean",
+      "placement_rationale": "Relation-preserving and reflecting prefix maps and their finite order obstructions belong to Order/Embeddings.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B scripts/check_prefix_obstruction.py",
+      "sha256": "c68af330ee9d86c1aa3fc9e162c44efadefb975beec8167c1a9ae1662d625e8f",
+      "source_role": "negative-control",
+      "source_root": "GRWTSK",
+      "subject": "Order",
+      "target_path": "GRWTSK/Order/Embeddings/Checks/Negative/PrefixMissingReflection.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Order/Embeddings/prefix-obstruction-checks-2026-10-15.json",
+        "source_sha256": "c68af330ee9d86c1aa3fc9e162c44efadefb975beec8167c1a9ae1662d625e8f"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/prefix-embedding-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Actual List.IsPrefix target relation; source relation has incomparable a,b with a common upper bound.",
+        "Mapping preserves and reflects the chosen source relation; injective monotonicity alone is insufficient."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Order.Embeddings.PrefixObstruction"
+      ],
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.Order.Embeddings.Checks.Positive.PrefixObstruction",
+      "namespaces": [],
+      "object": "Embeddings/Checks/Positive",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Order/Embeddings/Checks/Positive/PrefixObstruction.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Order/Embeddings/Checks/Positive/PrefixObstruction.lean",
+      "placement_rationale": "Relation-preserving and reflecting prefix maps and their finite order obstructions belong to Order/Embeddings.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B scripts/check_prefix_obstruction.py",
+      "sha256": "6351f7c8ff76d7a50e5028b649405d1d8f65b3d6836724f1488c4da0da33f79a",
+      "source_role": "positive-check",
+      "source_root": "GRWTSK",
+      "subject": "Order",
+      "target_path": "GRWTSK/Order/Embeddings/Checks/Positive/PrefixObstruction.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Order/Embeddings/prefix-obstruction-checks-2026-10-15.json",
+        "source_sha256": "6351f7c8ff76d7a50e5028b649405d1d8f65b3d6836724f1488c4da0da33f79a"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/prefix-embedding-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Actual List.IsPrefix target relation; source relation has incomparable a,b with a common upper bound.",
+        "Mapping preserves and reflects the chosen source relation; injective monotonicity alone is insufficient."
+      ],
+      "git_blob": null,
+      "imports": [
+        "Mathlib.Data.List.Basic"
+      ],
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.Order.Embeddings.PrefixObstruction",
+      "namespaces": [
+        "GRWTSK.Order.Embeddings.PrefixObstruction"
+      ],
+      "object": "Embeddings",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Order/Embeddings/PrefixObstruction.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Order/Embeddings/PrefixObstruction.lean",
+      "placement_rationale": "Relation-preserving and reflecting prefix maps and their finite order obstructions belong to Order/Embeddings.",
+      "public_declarations": [
+        {
+          "kind": "def",
+          "line": 29,
+          "name": "PreservesPrefix"
+        },
+        {
+          "kind": "def",
+          "line": 33,
+          "name": "ReflectsPrefix"
+        },
+        {
+          "kind": "theorem",
+          "line": 37,
+          "name": "comparable_of_common_upper"
+        },
+        {
+          "kind": "theorem",
+          "line": 45,
+          "name": "no_prefix_representation_of_incomparable_upper"
+        },
+        {
+          "kind": "def",
+          "line": 55,
+          "name": "chainAddress"
+        },
+        {
+          "kind": "theorem",
+          "line": 58,
+          "name": "chainAddress_prefix_iff"
+        },
+        {
+          "kind": "theorem",
+          "line": 61,
+          "name": "chainAddress_representation"
+        },
+        {
+          "kind": "theorem",
+          "line": 67,
+          "name": "chainAddress_injective"
+        },
+        {
+          "kind": "def",
+          "line": 77,
+          "name": "DiamondLe"
+        },
+        {
+          "kind": "theorem",
+          "line": 80,
+          "name": "diamondLe_refl"
+        },
+        {
+          "kind": "theorem",
+          "line": 82,
+          "name": "diamondLe_trans"
+        },
+        {
+          "kind": "theorem",
+          "line": 86,
+          "name": "diamondLe_antisymm"
+        },
+        {
+          "kind": "theorem",
+          "line": 90,
+          "name": "diamond_has_no_prefix_representation"
+        },
+        {
+          "kind": "def",
+          "line": 97,
+          "name": "diamondRank"
+        },
+        {
+          "kind": "def",
+          "line": 104,
+          "name": "diamondAddress"
+        },
+        {
+          "kind": "theorem",
+          "line": 106,
+          "name": "diamondAddress_injective"
+        },
+        {
+          "kind": "theorem",
+          "line": 113,
+          "name": "diamondAddress_preserves"
+        },
+        {
+          "kind": "theorem",
+          "line": 119,
+          "name": "diamondAddress_not_reflects"
+        },
+        {
+          "kind": "theorem",
+          "line": 126,
+          "name": "injective_preservation_without_reflection"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Order.Embeddings.Checks.Negative.PrefixMissingReflection",
+        "GRWTSK.Order.Embeddings.Checks.Positive.PrefixObstruction"
+      ],
+      "runner": "python3 -B scripts/check_prefix_obstruction.py",
+      "sha256": "438d46160c2131154dc49b6c345208207c4ba0931ec0487a08153a0291ac8f46",
+      "source_role": "library",
+      "source_root": "GRWTSK",
+      "subject": "Order",
+      "target_path": "GRWTSK/Order/Embeddings/PrefixObstruction.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Order/Embeddings/prefix-obstruction-checks-2026-10-15.json",
+        "source_sha256": "438d46160c2131154dc49b6c345208207c4ba0931ec0487a08153a0291ac8f46"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",

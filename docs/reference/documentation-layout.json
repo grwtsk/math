@@ -3400,10 +3400,19 @@
       "source_sha256": "c5245e36d784b906ee455bde42596ebd0f18fcc2dabceb9993b3ac1e3e0470a0",
       "status": "fresh-selected",
       "evidence": "evidence/Analysis/InnerProductSpace/joint-graph-checks-2026-10-15.json"
+    },
+    "docs/mathematics/Order/Embeddings/prefix-obstruction.md": {
+      "title": "Obstructions to prefix representations of orders",
+      "subject": "Order",
+      "object": "Embeddings",
+      "primary_source": "GRWTSK/Order/Embeddings/PrefixObstruction.lean",
+      "source_sha256": "438d46160c2131154dc49b6c345208207c4ba0931ec0487a08153a0291ac8f46",
+      "status": "fresh-selected",
+      "evidence": "evidence/Order/Embeddings/prefix-obstruction-checks-2026-10-15.json"
     }
   },
   "object_binding_registry": "docs/reference/object-source-bindings.json",
-  "object_binding_registry_sha256": "4f17a399148ab7b615615d49e4d8d91c2b624d85f3f1875c8a12573a59815424",
+  "object_binding_registry_sha256": "d365eeb088fb8b3fbdf25300607facfcb350fd143bdadfc3872bbe20395a4b93",
   "navigation": {
     "schema": "subject-index-navigation-v1",
     "summary": "docs/reference/library-summary.json"
