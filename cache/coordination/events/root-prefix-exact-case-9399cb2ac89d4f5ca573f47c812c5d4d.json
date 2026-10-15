@@ -1,0 +1,20 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "prefix-obstruction-round",
+  "event": "exact-case-evidence-staging",
+  "at": "2026-10-15T18:57:26.214119+00:00",
+  "physical_parent": "evidence/order",
+  "canonical_new_git_paths": [
+    "evidence/Order/Embeddings/prefix-obstruction-cache-roundtrip-2026-10-15.json",
+    "evidence/Order/Embeddings/prefix-obstruction-checks-2026-10-15.json",
+    "evidence/Order/Embeddings/prefix-obstruction-documentation-2026-10-15.json",
+    "evidence/Order/Embeddings/prefix-obstruction-integration-2026-10-15.json",
+    "evidence/Order/Embeddings/prefix-obstruction-source-review-2026-10-15.json"
+  ],
+  "first_attempt": "Default case-insensitive bulk staging omitted these5 paths; exact staged-identity guard failed before any commit. Ignored failure log retained.",
+  "correction": "Per-command git -c core.ignorecase=false add on only the five owned evidence paths; exact staged set now equals owned paths. No global config change or source/receipt byte mutation.",
+  "verification": "Staged path names have canonical uppercase Order; commit will use the same per-command case option and all committed bytes will be read back.",
+  "failure_log": ".local/prefix-obstruction/root/stage-attempt01.log",
+  "failure_log_sha256": "e64d49c704b5ced305820101ff104df933cd414fe09610c1bb067b29567558ae",
+  "proof_effect": "None; no source hash or native receipt rebound."
+}

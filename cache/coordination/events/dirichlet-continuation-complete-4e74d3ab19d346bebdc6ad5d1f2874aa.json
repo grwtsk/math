@@ -1,0 +1,26 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "dirichlet-continuation-scout",
+  "event": "complete",
+  "at": "2026-10-15T18:49:13.864713+00:00",
+  "owner": "cache_adapter",
+  "status": "source-inspected/not-replayed",
+  "evidence": {
+    "path": "evidence/NumberTheory/LSeries/dirichlet-continuation-source-review-2026-10-15.json",
+    "sha256": "a2520df3fad292965d2ebf7dd4b119051dd7b796fcd546a68ea367f0fb402ec8",
+    "bytes": 36189
+  },
+  "upstream_pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "primary_source_sha256": "5e82c4cd2ddfad95227dbcd9f7a87c8cf9e16d62c46fee297309c0a99a9678ac",
+  "bounded_upstream_immediate_lean_count": 54,
+  "current_own_conceptual_consumer_count": 4,
+  "literal_local_openai_product_consumers": 0,
+  "decision": "Do not port another half-plane identity convenience wrapper. Four current sources already call Mathlib identity principle. Preserve differing regularizations and open analytic/arithmetic inputs.",
+  "narrowed_next_target": "Reverse Mellin inversion in ContinuationInversion.lean (mellin_mellinInv_eq), only as a separately allocated Analysis/IntegralTransforms port with exact hypotheses and an actual consumer proving representation/convergence inputs; signalMellin_eq_on_line is a source-level consumer but does not itself discharge representation.",
+  "native_jobs_started": 0,
+  "native_jobs_running": 0,
+  "source_edits": 0,
+  "shared_metadata_edits": 0,
+  "commits_or_remote_writes": 0,
+  "archive": ".local/dirichlet-continuation/a1bb819f19b04cf5a774e48bad70c10c"
+}
