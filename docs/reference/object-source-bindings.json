@@ -180,6 +180,7 @@
     "Combinatorics/DirectedGraph": [
       "GRWTSK/Combinatorics/DirectedGraph/EdgeTrace.lean",
       "GRWTSK/Combinatorics/DirectedGraph/EndpointSection.lean",
+      "GRWTSK/Combinatorics/DirectedGraph/IncrementalPrefixTable.lean",
       "GRWTSK/Combinatorics/DirectedGraph/OccurrencePrefix.lean",
       "GRWTSK/Combinatorics/DirectedGraph/ParentTraceDictionary.lean",
       "GRWTSK/Combinatorics/DirectedGraph/PathOccurrences.lean",
@@ -189,6 +190,7 @@
     ],
     "Analysis/MellinTransform": [
       "GRWTSK/Analysis/MellinTransform/CompactGaussianWindow.lean",
+      "GRWTSK/Analysis/MellinTransform/GaussianDyadicSummation.lean",
       "GRWTSK/Analysis/MellinTransform/GaussianWindowSeminorms.lean",
       "GRWTSK/Analysis/MellinTransform/LogarithmicGaussian.lean",
       "GRWTSK/Analysis/MellinTransform/NormalizedGaussian.lean",
@@ -197,6 +199,9 @@
     ],
     "Analysis/PartitionOfUnity": [
       "GRWTSK/Analysis/PartitionOfUnity/DyadicAnnulus.lean"
+    ],
+    "Analysis/Series": [
+      "GRWTSK/Analysis/Series/DyadicKernel.lean"
     ]
   }
 }

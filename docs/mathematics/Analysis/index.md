@@ -4,16 +4,16 @@
 
 | Inventory | Count |
 |---|---:|
-| Object guides | 26 |
-| Documented object groups | 13 |
-| Distinct primary sources linked | 26 |
-| Lean source modules | 267 |
+| Object guides | 28 |
+| Documented object groups | 14 |
+| Distinct primary sources linked | 28 |
+| Lean source modules | 273 |
 | Archive intake records | 39 |
 | Selected catalog families | 1 |
 
 These counts measure documentation and source coverage. They do not count accepted theorems or establish that every source module is documented or checked. [Definitions and limits](../../reference/library-pages.md#count-definitions).
 
-At least 1533 source declaration commands, including 1244 theorem/lemma commands, across 220 parsed Lean source modules; 47 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
+At least 1555 source declaration commands, including 1265 theorem/lemma commands, across 226 parsed Lean source modules; 47 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
 
 ## Asymptotics
 
@@ -95,12 +95,13 @@ Linked primary-source scope: 1 source declaration commands, including 1 theorem/
 
 ## MellinTransform
 
-6 object guides · 6 distinct linked primary source files.
+7 object guides · 7 distinct linked primary source files.
 
-Linked primary-source scope: At least 45 source declaration commands, including 38 theorem/lemma commands, across 4 parsed Lean source modules; 2 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
+Linked primary-source scope: At least 48 source declaration commands, including 41 theorem/lemma commands, across 5 parsed Lean source modules; 2 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
 
 - [Mellin transform of a logarithmic Gaussian](MellinTransform/logarithmic-gaussian.md).
 - [Reverse Mellin inversion](MellinTransform/reverse-inversion.md).
+- [Summing weighted Gaussian-window seminorms](MellinTransform/gaussian-dyadic-summation.md).
 - [The compact Gaussian window and its square-root factor](MellinTransform/compact-gaussian-window.md).
 - [The normalized Gaussian Mellin pair](MellinTransform/normalized-gaussian.md).
 - [Uniform Schwartz seminorms of Gaussian windows](MellinTransform/gaussian-window-seminorms.md).
@@ -121,6 +122,14 @@ Linked primary-source scope: 2 source declaration commands, including 2 theorem/
 Linked primary-source scope: At least 0 source declaration commands, including 0 theorem/lemma commands, across 0 parsed Lean source modules; 1 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
 
 - [A smooth annulus partition on natural dyadic scales](PartitionOfUnity/dyadic-annulus.md).
+
+## Series
+
+1 object guide · 1 distinct linked primary source file.
+
+Linked primary-source scope: 9 source declaration commands, including 8 theorem/lemma commands, across 1 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+
+- [A uniform bound for a dyadic kernel series](Series/dyadic-kernel.md).
 
 ## TestFunctions
 

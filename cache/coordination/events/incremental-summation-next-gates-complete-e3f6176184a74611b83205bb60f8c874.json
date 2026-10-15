@@ -1,0 +1,28 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "incremental-summation-source-scout",
+  "event": "next-gates-complete",
+  "owner": "cache_taxonomy",
+  "at": "2026-10-15T21:51:51.362150+00:00",
+  "record": {
+    "path": "cache/research/incremental-summation-next-gates-2026-10-15.json",
+    "sha256": "23710323952045c311c1e177e78075170729004d0e38fe6da85ad25b7906aed5",
+    "bytes": 7674
+  },
+  "reviews": [
+    {
+      "path": "evidence/Combinatorics/DirectedGraph/incremental-prefix-table-source-review-2026-10-15.json",
+      "sha256": "bc6c5ec3808dcef01a1a5d61e97a509025db98389db5d459260902f40a275fad"
+    },
+    {
+      "path": "evidence/Analysis/Series/dyadic-kernel-source-review-2026-10-15.json",
+      "sha256": "248caabc8cf8fb6049fdb7f4edf3d632e49f083844ed503855c8d1f45fac527b"
+    },
+    {
+      "path": "evidence/Analysis/MellinTransform/gaussian-dyadic-summation-source-review-2026-10-15.json",
+      "sha256": "9896ae5f851aed6f50cbc3deb1d301d232e494f22bc512bf5ed3b7c7089e5837"
+    }
+  ],
+  "future_native_status": "NOT_RUN",
+  "scope": "Bounded source/peer findings only; no code/docs/sharedregistry/native/remote effects. Root owns cursor/admission."
+}

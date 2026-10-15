@@ -199,6 +199,17 @@ The [rooted revision decision](../../cache/decisions/rooted-trace-revision-v1.js
 requires both premises; it grants no criterion for all appended rows and
 no correspondence with operational hashes, JSON or effect authorization.
 
+The [stable incremental prefix table](../mathematics/Combinatorics/DirectedGraph/incremental-prefix-table.md)
+now copies the actual old dictionary, parent cells and ordered references
+literally, appends missing prefixes, and adds references only for real new
+rows. Actual parent expansion and indexed decoding recover the complete
+old and new keyed histories. Auxiliary prefixes do not become communication
+rows. The root remains explicit, and old evidence covers only its original
+premises. The [stable extension decision](../../cache/decisions/incremental-prefix-table-v1.json)
+records this finite one-step construction: the base is canonical and the
+output generally noncanonical, so arbitrary stored-state iteration remains
+open. It proves no operational JSON/hash/zlib/IO correspondence or authority.
+
 See [cache operations](../how-to/cache.md), the
 [taxonomy](../../cache/taxonomy.json), and the
 [integration evidence](../../evidence/Logic/FiniteSequences/cache-integration-2026-10-15.json).

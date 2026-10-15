@@ -1,0 +1,186 @@
+{
+  "schema": "grwtsk.source-review.v1",
+  "task": "incremental-summation-source-scout",
+  "created_utc": "2026-10-15T21:45:58.301724+00:00",
+  "reviewer": "cache_taxonomy",
+  "review_scope": "Correlated same-team exact-source/premise/control/credit review; not independent validation.",
+  "native_validation": {
+    "performed_by_this_review": false,
+    "status": "NOT_RUN",
+    "authority": "Separate root-owned fresh replay and complete owned-declaration audit; neither source similarity nor author development compilation confers acceptance."
+  },
+  "author_freeze": {
+    "path": "cache/coordination/events/dyadic-summation-freeze-c4da391cdad346938caea7bf413fa016.json",
+    "sha256": "e1f107c15942c5977c766aac76e8287cf30b19ef2ffa0d5854c99ddecd687689",
+    "bytes": 1808
+  },
+  "source_context": {
+    "path": ".local/incremental-summation-source-scout/610dc174d922459a9b9923e1f14fc2dc/review-context.json",
+    "sha256": "8a1f1c70617b8864656fca98c7a1a72e791fa953f2313a9cb66b258c40e3e546",
+    "bytes": 11960
+  },
+  "finding": "No actionable missing positivity/uniformity/summability hypothesis or false primary-source correspondence observed within the bounded review of the three frozen Gaussian files.",
+  "local_sources": [
+    {
+      "path": "GRWTSK/Analysis/MellinTransform/GaussianDyadicSummation.lean",
+      "sha256": "1f0129ffe0408983f6b19be9ae8fb40998105ce3b88e1e7fcf1a2e625eb8ced0",
+      "bytes": 5464,
+      "archive": ".local/incremental-summation-source-scout/610dc174d922459a9b9923e1f14fc2dc/frozen-local/GRWTSK/Analysis/MellinTransform/GaussianDyadicSummation.lean",
+      "declarations": {
+        "gaussianDyadicSchwartz_polynomial_decay": 22,
+        "gaussianDyadicSchwartz_summed": 56,
+        "gaussianDyadicProfile_values_summed": 85
+      }
+    },
+    {
+      "path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianDyadicSummation.lean",
+      "sha256": "c8044b4c445d92b3baf68c12b58a6da3f33351de7088d9009bea56e3556b2f45",
+      "bytes": 3165,
+      "archive": ".local/incremental-summation-source-scout/610dc174d922459a9b9923e1f14fc2dc/frozen-local/GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianDyadicSummation.lean",
+      "declarations": {
+        "gaussian_weighted_generic": 12,
+        "gaussian_values_one": 18,
+        "gaussian_zero_scale_nonzero": 23,
+        "gaussian_zero_scale_values_not_summable": 46
+      }
+    },
+    {
+      "path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianSummationNonpositiveParameter.lean",
+      "sha256": "bf5bac0c4947c20ad51e252f7e140bb75a433e869afae017f6dafc37744e214f",
+      "bytes": 570,
+      "archive": ".local/incremental-summation-source-scout/610dc174d922459a9b9923e1f14fc2dc/frozen-local/GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianSummationNonpositiveParameter.lean",
+      "declarations": {}
+    }
+  ],
+  "primary_openai": {
+    "repository": "openai/math",
+    "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+    "source_path": "lean/OAI/NumberTheory/DirichletL/Detector/GaussianSummation.lean",
+    "archive": {
+      "path": ".local/revision-seminorm-source-scout/5f2ef1061af54c86a8c93c16fdb334ed/GaussianSummation.lean",
+      "sha256": "8cbdf3603586c4d8f8da6f22fcbbcc8d4521d19b7977da4a2db8c7b5e537e196",
+      "bytes": 3520
+    },
+    "git_blob": "78d47764d7755a5bf6b6277356e94c157e191339",
+    "scope": "polynomial_decay9 uses exponent0,N finite seminorms; summed43 chooses naturalN>s, actualscalar supplier51, t=Z^-1>0 at54; actualnonnegative domination+tsum. C before Z>0, no physical/idealclosure."
+  },
+  "actual_scalar_supplier": {
+    "path": "GRWTSK/Analysis/Series/DyadicKernel.lean",
+    "sha256": "c99ee7e558c21befc57822c87a0221b84d8e45254acf77e4f1ba2c2e1a4abbeb",
+    "bytes": 7625
+  },
+  "scalar_supplier_primary": {
+    "repository": "openai/math",
+    "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+    "source_path": "lean/OAI/NumberTheory/DirichletL/CubicSieve/QuantitativePassage.lean",
+    "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/CubicSieve/QuantitativePassage.lean",
+    "archive": {
+      "path": ".local/incremental-summation-source-scout/610dc174d922459a9b9923e1f14fc2dc/QuantitativePassage-pinned.lean",
+      "sha256": "9abb0b7909494b09587017f6bdc731c69d379770aecece0d458e8f0d5f637600",
+      "bytes": 35351
+    },
+    "git_blob": "c6ff994dc7f77081436f7a59a98e373bd3123091",
+    "selected_scope": "Full scalar slice483-608: kernelTerm485, head496,tail502,geometricratio516,summable519,cutoff524,uniform548-606. Surrounding arithmetic code not ported by review.",
+    "premises": "kernelTerm(t,s,A,n)=((2^n)^s)/(1+t*2^n)^A. Summability uses t>0,A>=0,s<A. Scale-uniform bound exists C(s,A)>0 before all t>0 with tsum<=C*t^(-s), requiring0<s<A.",
+    "license_and_credit": "OpenAI project Apache-2.0, no individual header author observed. Imported Mathlib authors/licenses and exact pin/source preserved.",
+    "identity_event": {
+      "path": "cache/coordination/events/dyadic-kernel-source-located-0c0a40c9dc984908a07aecab405a367c.json",
+      "sha256": "b84352bb0edaa43580f14850bdbb86506bd519ae7b051670025553c18d41b951",
+      "bytes": 2332
+    }
+  },
+  "existing_analytic_suppliers": [
+    {
+      "path": "GRWTSK/Analysis/MellinTransform/GaussianWindowSeminorms.lean",
+      "sha256": "dcfa87ebe43582e02c38b1cc820656fde9160d7d633a6a99e6a3ed6b1e3d93d0",
+      "bytes": 9388
+    },
+    {
+      "path": "GRWTSK/Analysis/MellinTransform/CompactGaussianWindow.lean",
+      "sha256": "db195580ca2f4e4a941f13c71d285af377d2bb29ed7250db0f0b13570984cec5",
+      "bytes": 6130
+    },
+    {
+      "path": "GRWTSK/Analysis/MellinTransform/NormalizedGaussian.lean",
+      "sha256": "a0ed0dbf644601887df128536951a9c3e17ecf42970069a13acdfcb93518e3bf",
+      "bytes": 6685
+    }
+  ],
+  "exact_scope": {
+    "profile": "Uses exact existing normalized P, annulus A and G=A*P(2^j*y/Z)/sqrt y. Does not substitute an unnormalized density or omit the root-weight factor.",
+    "polynomial_envelope": "For natural N and finite S of(k,n), exists C(N,S)>0 before all Z>0,j with S.sup p(G_Zj)<=C/(1+2^j/Z)^N. Actual proof combines previously proved exponent0,N bounds, splitting r=2^j/Z at1; includes N0/emptyS.",
+    "weighted_seminorm_sum": "For real s>0 and finite S, exists C(s,S)>0 before all Z>0 with actual Summable j of(2^j)^s*S.sup p(G_Zj), and actual tsum<=C*Z^s. Chooses natural N>s and consumes the proved actual scalar kernel at t=Z^-1>0. Nonnegative domination and tsum comparison are supplied explicitly, not assumed interchange/vector convergence.",
+    "value_consumer": "gaussianDyadicProfile_values_summed proves actual nonnegative weighted norm values Summable and tsum<=C(s)*Z^s for ALL real y with ONE C chosen before Z and y. It consumes singleton seminorm(0,0), actual pointwise seminorm estimate and scalar domination. This is an actual norm-value consumer, not an assumed continuous-functional theorem.",
+    "scope": "Real s>0,Z>0 remain exact source premises. It does not claim s>0 necessary for every stronger Gaussian result. Actual complex/vector-valued series convergence, arbitrary functional evaluation and physical/arithmetic closure are not asserted."
+  },
+  "controls": {
+    "positive": "Generic weighted seminorm theorem and concrete s1,Z1,y1 weighted norm-value summability. No earlier positive-control imports.",
+    "zero_scale": "Positive source fully proves A(3/4)!=0, exact P0!=0 and G0,0(3/4)!=0. At Z0 all G0,j(3/4) are equal; weighted s1 norms dominate their nonzero constant norm, hence actual nonsummability. No zero-scale Schwartz constructor or Z0 nonsmoothness claim.",
+    "negative": "Sole intended consumer supplies0<=0 where actual value-sum theorem requires0<0. Full nonsummability is already proved positive. Root owns exact error count/native census."
+  },
+  "pinned_mathlib_reuse": [
+    {
+      "repository": "leanprover-community/mathlib4",
+      "pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "source_path": "Mathlib/Analysis/SpecificLimits/Basic.lean",
+      "path": ".lake/packages/mathlib/Mathlib/Analysis/SpecificLimits/Basic.lean",
+      "sha256": "2e397149f39d3258efbbcfa3c272a5148cc622d9a4eb3cfca4ff5d5b73cd5a7d",
+      "bytes": 37357,
+      "git_blob": "3e6f9b38f9ce90f06575354ef64c4c2190dde107",
+      "authors": "S\u00e9bastien Gou\u00ebzel, Johannes H\u00f6lzl, Yury Kudryashov, Patrick Massot",
+      "license": "Apache-2.0",
+      "selected_scope": "summable_geometric_of_lt_one324 / tsum_geometric_of_lt_one329:0<=r<1.",
+      "native_status": "NOT_RUN"
+    },
+    {
+      "repository": "leanprover-community/mathlib4",
+      "pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "source_path": "Mathlib/Algebra/Order/Archimedean/Basic.lean",
+      "path": ".lake/packages/mathlib/Mathlib/Algebra/Order/Archimedean/Basic.lean",
+      "sha256": "ca25cdb403d7ddf3fd916954cad89c9a47d16c80b5b37c2e711ef8bc7418ca26",
+      "bytes": 22498,
+      "git_blob": "739a8386bdac7f88c775a5958cd4805fdf0d2ab2",
+      "authors": "Mario Carneiro",
+      "license": "Apache-2.0",
+      "selected_scope": "exists_nat_pow_near197:1<=x,1<y gives y^N<=x<y^(N+1).",
+      "native_status": "NOT_RUN"
+    }
+  ],
+  "arxiv_context": {
+    "title": "Wavelet Filtering with the Mellin Transform",
+    "author": "Gerald Kaiser",
+    "id": "math-ph/0108013v1",
+    "version_utc": "2001-08-20T18:33:27Z",
+    "published_context": "PDF states December1995 and Applied Mathematics Letters9#5,1996; arxiv version2001 distinct.",
+    "url": "https://arxiv.org/pdf/math-ph/0108013v1",
+    "snapshot": {
+      "url": "https://arxiv.org/pdf/math-ph/0108013v1",
+      "archive": ".local/revision-seminorm-source-scout/5f2ef1061af54c86a8c93c16fdb334ed/kaiser-math-ph0108013v1.pdf",
+      "sha256": "c20738e4cf5dc3f1c4d03bea90b971a1fda5f43fb630f308fe147986f53d89a2",
+      "git_blob": null,
+      "bytes": 85113
+    },
+    "selected_scope": "Fresh primary abstract/version and \u00a71 pp1\u20135: scale convention/convergence discussion, Mellin eq10/11 and admissibility eq24. Section2 is Applications and is not the source of those equations. No full paper theorem transferred.",
+    "comparison": "Wavelet scale sigma\u22600, scaling-invariant d\u03c3/|\u03c3|, conditional integral convergence and explicit transform convention. Its wavelet dilation amplitude convention differs from the y^-1/2 factor in the actual local G. It provides no exact normalized G seminorm bound, zero-scale value claim, arithmetic closure or RH continuation.",
+    "license": "arXiv assumed non-exclusive distribution license for1991-2003, checked from abstract license link https://arxiv.org/licenses/assumed-1991-2003/license.html. Citation/paraphrase context only, not code reuse license.",
+    "fresh_scope": "Fresh exact abstract/v1 metadata open; prior archived Section1 pp1-5 scale/Mellin convention/convergence/admissibility comparison reused. Does not supply exact scalar dyadic kernel or actual G weighted seminorm theorem."
+  },
+  "anthropic_context": {
+    "source": {
+      "url": "https://raw.githubusercontent.com/anthropics/formal-math/e1a4e6508154ea59f030480661590a9fe3018011/3sum-apsp/ThreeSumApsp/Lang/Logic.lean",
+      "archive": ".local/incremental-summation-source-scout/610dc174d922459a9b9923e1f14fc2dc/AnthropicLogic.lean",
+      "sha256": "859a2842fc684b359d819d0181e0143e8d6576c70f4be725f3a830947bdeb4ee",
+      "git_blob": "508e2040014eeadd11b6a8e1dd68463a9db8fe44",
+      "bytes": 13979
+    },
+    "pin": "e1a4e6508154ea59f030480661590a9fe3018011",
+    "limits": "Actual Light append/postcondition rules are source-language objects, not analytic suppliers or simulations of the local decoder/certificate. No formal status transfer."
+  },
+  "credit_and_limits": [
+    "Exact primary OpenAI GaussianSummation adaptation under Apache-2.0, pin/path/rawSHA, imported Gaussian/Schwartz/power/geometric author/license notices retained. No individual upstream OpenAI source author header observed. Human direction grwtsk contributors; formal implementation OpenAI Codex.",
+    "Kaiser math-ph/0108013v1 Section1 pp1-5 provides scale/Mellin convention with convergence/admissibility premises; different wavelet amplitude/normalization. It provides no exact G seminorm or weighted-series proof, Z0 object convention, arithmetic/RH continuation.",
+    "Separate scalar supplier proof now supplies the formerly missing bound; historical UNPROVIDED planning remains preserved, never rewritten into acceptance. Source identity/taxonomy membership does not prove a theorem.",
+    "Original GaussianLow physical inverse still requires actual eta, maximal S, fixedBadPrimes subset S, Supported(span{s}), z,D,Z>0, calibration and ideal/row/character suppliers. This analytic sum discharges none of those. No contour crossing/continuation/RH.",
+    "No native jobs/tests, shared source/docs/registries, commits or remote effects by this review. Earlier failed/stale variants, incoming triadic archive states and source NOT_RUN statuses remain unchanged."
+  ]
+}

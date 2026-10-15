@@ -3562,10 +3562,37 @@
       "source_sha256": "dcfa87ebe43582e02c38b1cc820656fde9160d7d633a6a99e6a3ed6b1e3d93d0",
       "status": "fresh-selected",
       "evidence": "evidence/Analysis/MellinTransform/gaussian-window-seminorms-checks-2026-10-15.json"
+    },
+    "docs/mathematics/Combinatorics/DirectedGraph/incremental-prefix-table.md": {
+      "title": "Stable incremental tables of rooted history prefixes",
+      "subject": "Combinatorics",
+      "object": "DirectedGraph",
+      "primary_source": "GRWTSK/Combinatorics/DirectedGraph/IncrementalPrefixTable.lean",
+      "source_sha256": "dc6e8066e3539897464cdfe3bf1d31797ca76baae11066a79c0d0f0c5c7ffa37",
+      "status": "fresh-selected",
+      "evidence": "evidence/Combinatorics/DirectedGraph/incremental-prefix-table-checks-2026-10-15.json"
+    },
+    "docs/mathematics/Analysis/Series/dyadic-kernel.md": {
+      "title": "A uniform bound for a dyadic kernel series",
+      "subject": "Analysis",
+      "object": "Series",
+      "primary_source": "GRWTSK/Analysis/Series/DyadicKernel.lean",
+      "source_sha256": "c99ee7e558c21befc57822c87a0221b84d8e45254acf77e4f1ba2c2e1a4abbeb",
+      "status": "fresh-selected",
+      "evidence": "evidence/Analysis/MellinTransform/gaussian-dyadic-summation-checks-2026-10-15.json"
+    },
+    "docs/mathematics/Analysis/MellinTransform/gaussian-dyadic-summation.md": {
+      "title": "Summing weighted Gaussian-window seminorms",
+      "subject": "Analysis",
+      "object": "MellinTransform",
+      "primary_source": "GRWTSK/Analysis/MellinTransform/GaussianDyadicSummation.lean",
+      "source_sha256": "1f0129ffe0408983f6b19be9ae8fb40998105ce3b88e1e7fcf1a2e625eb8ced0",
+      "status": "fresh-selected",
+      "evidence": "evidence/Analysis/MellinTransform/gaussian-dyadic-summation-checks-2026-10-15.json"
     }
   },
   "object_binding_registry": "docs/reference/object-source-bindings.json",
-  "object_binding_registry_sha256": "d14006cf21be4dc4f53c7b524bebf9ec40dd0c037c3b8577c4b8135259f9e74c",
+  "object_binding_registry_sha256": "256d292e075c1db108059ab23eea6159c08777163ec43a31511a5fe66272992a",
   "navigation": {
     "schema": "subject-index-navigation-v1",
     "summary": "docs/reference/library-summary.json"

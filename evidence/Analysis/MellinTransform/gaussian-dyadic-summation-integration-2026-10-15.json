@@ -1,0 +1,99 @@
+{
+  "schema": "selected-mathematical-integration-v1",
+  "at": "2026-10-15T21:49:35.661052+00:00",
+  "source": {
+    "path": "GRWTSK/Analysis/MellinTransform/GaussianDyadicSummation.lean",
+    "sha256": "1f0129ffe0408983f6b19be9ae8fb40998105ce3b88e1e7fcf1a2e625eb8ced0"
+  },
+  "native_receipt": {
+    "path": "evidence/Analysis/MellinTransform/gaussian-dyadic-summation-checks-2026-10-15.json",
+    "sha256": "24c007c0695f436930ea89d1f0789e5f2b5e994670ad6cdda3a0232d70239fa7"
+  },
+  "source_review": {
+    "path": "evidence/Analysis/MellinTransform/gaussian-dyadic-summation-source-review-2026-10-15.json",
+    "sha256": "9896ae5f851aed6f50cbc3deb1d301d232e494f22bc512bf5ed3b7c7089e5837"
+  },
+  "owned_declarations": 165,
+  "selected_library_owned_count": 3,
+  "owned_modules": [
+    {
+      "declarations": 21,
+      "module": "GRWTSK.Analysis.PartitionOfUnity.DyadicAnnulus"
+    },
+    {
+      "declarations": 23,
+      "module": "GRWTSK.Analysis.MellinTransform.ReverseInversion"
+    },
+    {
+      "declarations": 20,
+      "module": "GRWTSK.Analysis.MellinTransform.LogarithmicGaussian"
+    },
+    {
+      "declarations": 22,
+      "module": "GRWTSK.Analysis.MellinTransform.NormalizedGaussian"
+    },
+    {
+      "declarations": 21,
+      "module": "GRWTSK.Analysis.MellinTransform.CompactGaussianWindow"
+    },
+    {
+      "declarations": 13,
+      "module": "GRWTSK.Analysis.MellinTransform.ScaledGaussianDerivatives"
+    },
+    {
+      "declarations": 19,
+      "module": "GRWTSK.Analysis.MellinTransform.GaussianWindowSeminorms"
+    },
+    {
+      "declarations": 11,
+      "module": "GRWTSK.Analysis.Series.DyadicKernel"
+    },
+    {
+      "declarations": 3,
+      "module": "GRWTSK.Analysis.MellinTransform.GaussianDyadicSummation"
+    },
+    {
+      "declarations": 6,
+      "module": "GRWTSK.Analysis.Series.Checks.Positive.DyadicKernel"
+    },
+    {
+      "declarations": 6,
+      "module": "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianDyadicSummation"
+    }
+  ],
+  "operational_replay_guards": {
+    "path": "evidence/Combinatorics/DirectedGraph/incremental-summation-operational-controls-2026-10-15.json",
+    "sha256": "732d5c7eb2ed596292828b27f6506000112c02fc6b60e4b881212ccf425de57e"
+  },
+  "contribution_roles": [
+    "grwtsk contributors: human mathematical direction",
+    "OpenAI Codex: local adaptation/formalization/checking; correlated source/model review",
+    "Lean/Mathlib: named upstream authors, definitions/proofs and licensing retained"
+  ],
+  "limits": [
+    "Fresh complete selected local import closure and accepted positive controls; trust0/fatal, complete owned-declaration/transitive-axiom census, only propext/Classical.choice/Quot.sound.",
+    "Generated local object families frozen and rechecked; clean pinned dependency objects reused/fingerprinted, not cold rebuilt.",
+    "Whole umbrella not replayed after import additions. No independent model validation, mathematical novelty, operational JSON/Python/hash/zlib/IO refinement, proof/permission authority, whole arithmetic detector or RH supplier."
+  ],
+  "exact_contracts": [
+    "For every NatN/finiteS oneB(N,S)>0 before Z>0,j bounds actual finite Gaussian Schwartz seminorm supremum by B/(1+2^j/Z)^N. Actual exponent0/N estimates and split r<=1 supply envelope.",
+    "For reals>0/finiteS choose actual NatN>s and proven scalar kernel at t=Z^-1>0. Actual nonnegative domination proves weighted seminorm Summable and tsum<=C(s,S)*Z^s with oneC before all Z.",
+    "Actual p00 evaluation consumer proves weighted norms of underlying G(Z,j,y) summable and bounded by C(s)*Z^s uniformly in all realy; no constructor at Z0 or assumed evaluation/sum oracle."
+  ],
+  "accepted_controls": [
+    "Actual generic weighted finite-seminorm sum and actual Z1,s1,value point1 Summable. G(0,0,3/4) nonzero and all G(0,j,3/4) equal, so weighted actual norms at s1 are NOT Summable. Sole negative attempts0<=0 as0<0. No zero Schwartz constructor or nonsmoothness inference."
+  ],
+  "primary_source": {
+    "repository": "openai/math",
+    "commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+    "path": "lean/OAI/NumberTheory/DirichletL/Detector/GaussianSummation.lean",
+    "sha256": "8cbdf3603586c4d8f8da6f22fcbbcc8d4521d19b7977da4a2db8c7b5e537e196",
+    "git_blob": "78d47764d7755a5bf6b6277356e94c157e191339"
+  },
+  "license": "Apache-2.0; OpenAI actual primary consumer, local value corollary/controls by Codex under human direction, imported Mathlib individual credits retained.",
+  "open_obligations": [
+    "Do not infer s>0 necessary for every stronger Gaussian sequence.",
+    "Original ideal-pair/masks/Hecke/calibration/physical-row/arithmetic summability and RH suppliers remain open locally.",
+    "Shares joint complete analytic receipt with scalar supplier, not separate duplicate census."
+  ]
+}

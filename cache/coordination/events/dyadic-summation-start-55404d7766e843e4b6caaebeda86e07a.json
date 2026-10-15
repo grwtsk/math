@@ -1,0 +1,12 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "gaussian-dyadic-summation-formal",
+  "event": "actual-source-located-development-start",
+  "owner": "cache_adapter",
+  "at": "2026-10-15T21:38:35.476394+00:00",
+  "scratch": ".local/gaussian-dyadic-summation/73368016eb9542a190ee06a985b254a0",
+  "primary_manifest": ".local/gaussian-dyadic-summation/73368016eb9542a190ee06a985b254a0/primary-manifest.json",
+  "planned_source_count": 6,
+  "native_jobs_running": 0,
+  "contract": "actual scalar head/tail/geometriccutoff proof s>0,A>s,t>0;actualGaussianpolynomialenvelope+weightedSummableandtsumbound s>0,Z>0; no arithmetic imports"
+}

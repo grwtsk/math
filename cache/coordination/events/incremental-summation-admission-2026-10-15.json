@@ -1,0 +1,221 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "incremental-summation-round",
+  "event": "selected-native-acceptance-and-source-bound-revision-consumers",
+  "at": "2026-10-15T21:53:29.930175+00:00",
+  "selected": [
+    {
+      "source": {
+        "path": "GRWTSK/Combinatorics/DirectedGraph/IncrementalPrefixTable.lean",
+        "sha256": "dc6e8066e3539897464cdfe3bf1d31797ca76baae11066a79c0d0f0c5c7ffa37"
+      },
+      "native_receipt": {
+        "path": "evidence/Combinatorics/DirectedGraph/incremental-prefix-table-checks-2026-10-15.json",
+        "sha256": "3ff97e4941125c367663053fbd32f28bc174a2f4055a644790186ef796fd578f"
+      },
+      "owned_declarations_in_selected_closure": 481,
+      "selected_library_owned_count": 58,
+      "owned_modules": [
+        {
+          "declarations": 52,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding"
+        },
+        {
+          "declarations": 18,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences"
+        },
+        {
+          "declarations": 46,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.EdgeTrace"
+        },
+        {
+          "declarations": 21,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix"
+        },
+        {
+          "declarations": 34,
+          "module": "GRWTSK.Logic.FiniteSequences.IndexedDictionary"
+        },
+        {
+          "declarations": 33,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixInventory"
+        },
+        {
+          "declarations": 78,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.ParentTraceDictionary"
+        },
+        {
+          "declarations": 32,
+          "module": "GRWTSK.Logic.FiniteSequences.DictionaryRevision"
+        },
+        {
+          "declarations": 27,
+          "module": "GRWTSK.Logic.FiniteSequences.DecisionCertificate"
+        },
+        {
+          "declarations": 26,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.RootedTraceRevision"
+        },
+        {
+          "declarations": 20,
+          "module": "GRWTSK.Logic.FiniteSequences.IncrementalDictionary"
+        },
+        {
+          "declarations": 58,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.IncrementalPrefixTable"
+        },
+        {
+          "declarations": 36,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.IncrementalPrefixTable"
+        }
+      ],
+      "integration": {
+        "path": "evidence/Combinatorics/DirectedGraph/incremental-prefix-table-integration-2026-10-15.json",
+        "sha256": "f8bc458709afaa473eb0ebddd07470837f3c9e2c434055ff0aeebd3e5e5e319b"
+      }
+    },
+    {
+      "source": {
+        "path": "GRWTSK/Analysis/Series/DyadicKernel.lean",
+        "sha256": "c99ee7e558c21befc57822c87a0221b84d8e45254acf77e4f1ba2c2e1a4abbeb"
+      },
+      "native_receipt": {
+        "path": "evidence/Analysis/MellinTransform/gaussian-dyadic-summation-checks-2026-10-15.json",
+        "sha256": "24c007c0695f436930ea89d1f0789e5f2b5e994670ad6cdda3a0232d70239fa7"
+      },
+      "owned_declarations_in_selected_closure": 165,
+      "selected_library_owned_count": 11,
+      "owned_modules": [
+        {
+          "declarations": 21,
+          "module": "GRWTSK.Analysis.PartitionOfUnity.DyadicAnnulus"
+        },
+        {
+          "declarations": 23,
+          "module": "GRWTSK.Analysis.MellinTransform.ReverseInversion"
+        },
+        {
+          "declarations": 20,
+          "module": "GRWTSK.Analysis.MellinTransform.LogarithmicGaussian"
+        },
+        {
+          "declarations": 22,
+          "module": "GRWTSK.Analysis.MellinTransform.NormalizedGaussian"
+        },
+        {
+          "declarations": 21,
+          "module": "GRWTSK.Analysis.MellinTransform.CompactGaussianWindow"
+        },
+        {
+          "declarations": 13,
+          "module": "GRWTSK.Analysis.MellinTransform.ScaledGaussianDerivatives"
+        },
+        {
+          "declarations": 19,
+          "module": "GRWTSK.Analysis.MellinTransform.GaussianWindowSeminorms"
+        },
+        {
+          "declarations": 11,
+          "module": "GRWTSK.Analysis.Series.DyadicKernel"
+        },
+        {
+          "declarations": 3,
+          "module": "GRWTSK.Analysis.MellinTransform.GaussianDyadicSummation"
+        },
+        {
+          "declarations": 6,
+          "module": "GRWTSK.Analysis.Series.Checks.Positive.DyadicKernel"
+        },
+        {
+          "declarations": 6,
+          "module": "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianDyadicSummation"
+        }
+      ],
+      "integration": {
+        "path": "evidence/Analysis/Series/dyadic-kernel-integration-2026-10-15.json",
+        "sha256": "e74d7d6253a391e4dc2256676d0d97974a80b96cc2d453eed59f859cd6626691"
+      }
+    },
+    {
+      "source": {
+        "path": "GRWTSK/Analysis/MellinTransform/GaussianDyadicSummation.lean",
+        "sha256": "1f0129ffe0408983f6b19be9ae8fb40998105ce3b88e1e7fcf1a2e625eb8ced0"
+      },
+      "native_receipt": {
+        "path": "evidence/Analysis/MellinTransform/gaussian-dyadic-summation-checks-2026-10-15.json",
+        "sha256": "24c007c0695f436930ea89d1f0789e5f2b5e994670ad6cdda3a0232d70239fa7"
+      },
+      "owned_declarations_in_selected_closure": 165,
+      "selected_library_owned_count": 3,
+      "owned_modules": [
+        {
+          "declarations": 21,
+          "module": "GRWTSK.Analysis.PartitionOfUnity.DyadicAnnulus"
+        },
+        {
+          "declarations": 23,
+          "module": "GRWTSK.Analysis.MellinTransform.ReverseInversion"
+        },
+        {
+          "declarations": 20,
+          "module": "GRWTSK.Analysis.MellinTransform.LogarithmicGaussian"
+        },
+        {
+          "declarations": 22,
+          "module": "GRWTSK.Analysis.MellinTransform.NormalizedGaussian"
+        },
+        {
+          "declarations": 21,
+          "module": "GRWTSK.Analysis.MellinTransform.CompactGaussianWindow"
+        },
+        {
+          "declarations": 13,
+          "module": "GRWTSK.Analysis.MellinTransform.ScaledGaussianDerivatives"
+        },
+        {
+          "declarations": 19,
+          "module": "GRWTSK.Analysis.MellinTransform.GaussianWindowSeminorms"
+        },
+        {
+          "declarations": 11,
+          "module": "GRWTSK.Analysis.Series.DyadicKernel"
+        },
+        {
+          "declarations": 3,
+          "module": "GRWTSK.Analysis.MellinTransform.GaussianDyadicSummation"
+        },
+        {
+          "declarations": 6,
+          "module": "GRWTSK.Analysis.Series.Checks.Positive.DyadicKernel"
+        },
+        {
+          "declarations": 6,
+          "module": "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianDyadicSummation"
+        }
+      ],
+      "integration": {
+        "path": "evidence/Analysis/MellinTransform/gaussian-dyadic-summation-integration-2026-10-15.json",
+        "sha256": "95c7cdf549063f721805b237e81c3db333bbf05c450b8de01555094900b5a5e6"
+      }
+    }
+  ],
+  "cache_revision": "022b7f30c2a5a67f961570bd9bc9052da85aacd1714be90bf9ec036fe5e448a0",
+  "frontier": {
+    "path": "cache/research/incremental-summation-frontier-2026-10-15.json",
+    "sha256": "d136f5a3d6815ff97a1b3478167dae22a17f14fe8b4a21f96080b14b187c72be"
+  },
+  "continuation": {
+    "path": "cache/coordination/continuations/2026-10-15-incremental-summation.json",
+    "sha256": "85788e1c0a9ef921b6dafb81c58dbea7c8fb2220f1a4c7dc166f2c7f2545e88b"
+  },
+  "decision": {
+    "path": "cache/decisions/incremental-prefix-table-v1.json",
+    "sha256": "53f6342aefa3fff1d30a76238242ee190ad804a7044a4b7075b7cd3e2dbf6aa8"
+  },
+  "operational_consumer": {
+    "path": "evidence/Combinatorics/DirectedGraph/incremental-summation-prefix-consumer-2026-10-15.json",
+    "sha256": "7c1ada306043e18ff5f435ab7f3cbfe33f9dda8ed8e0f411c1bf4504bd95712a"
+  },
+  "limits": "Selected native mathematical contracts and bounded operational/source custody remain separate. Analytic joint census not counted twice. No independent model validation, runtime refinement, full detector/whole library/RH admission or remote effect.",
+  "remote_actions": []
+}

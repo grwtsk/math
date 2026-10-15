@@ -1,0 +1,10 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "incremental-prefix-table-formal",
+  "owner": "indexed_dictionary",
+  "at": "2026-10-15T21:45:20.545443+00:00",
+  "kind": "native-lock-acquired",
+  "source": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/IncrementalPrefixTable.lean",
+  "source_sha256": "6c50595c65c9407a077728b331e64ffead8f0062283a89fafa0ab9ada13fdc9c",
+  "guard_competing_jobs": []
+}

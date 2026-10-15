@@ -1,0 +1,248 @@
+{
+  "schema": "bounded-formal-research-frontier-v1",
+  "at": "2026-10-15T21:53:29.895533+00:00",
+  "previous_frontier": {
+    "path": "cache/research/revision-seminorm-frontier-2026-10-15.json",
+    "sha256": "eddd8017bb2e9ec011e7f797ac655f169cc5c8f9bd500aded30bb8a7aeb13dd3"
+  },
+  "completed": [
+    {
+      "source": {
+        "path": "GRWTSK/Combinatorics/DirectedGraph/IncrementalPrefixTable.lean",
+        "sha256": "dc6e8066e3539897464cdfe3bf1d31797ca76baae11066a79c0d0f0c5c7ffa37"
+      },
+      "native_receipt": {
+        "path": "evidence/Combinatorics/DirectedGraph/incremental-prefix-table-checks-2026-10-15.json",
+        "sha256": "3ff97e4941125c367663053fbd32f28bc174a2f4055a644790186ef796fd578f"
+      },
+      "owned_declarations_in_selected_closure": 481,
+      "selected_library_owned_count": 58,
+      "owned_modules": [
+        {
+          "declarations": 52,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding"
+        },
+        {
+          "declarations": 18,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences"
+        },
+        {
+          "declarations": 46,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.EdgeTrace"
+        },
+        {
+          "declarations": 21,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix"
+        },
+        {
+          "declarations": 34,
+          "module": "GRWTSK.Logic.FiniteSequences.IndexedDictionary"
+        },
+        {
+          "declarations": 33,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixInventory"
+        },
+        {
+          "declarations": 78,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.ParentTraceDictionary"
+        },
+        {
+          "declarations": 32,
+          "module": "GRWTSK.Logic.FiniteSequences.DictionaryRevision"
+        },
+        {
+          "declarations": 27,
+          "module": "GRWTSK.Logic.FiniteSequences.DecisionCertificate"
+        },
+        {
+          "declarations": 26,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.RootedTraceRevision"
+        },
+        {
+          "declarations": 20,
+          "module": "GRWTSK.Logic.FiniteSequences.IncrementalDictionary"
+        },
+        {
+          "declarations": 58,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.IncrementalPrefixTable"
+        },
+        {
+          "declarations": 36,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.IncrementalPrefixTable"
+        }
+      ],
+      "integration": {
+        "path": "evidence/Combinatorics/DirectedGraph/incremental-prefix-table-integration-2026-10-15.json",
+        "sha256": "f8bc458709afaa473eb0ebddd07470837f3c9e2c434055ff0aeebd3e5e5e319b"
+      }
+    },
+    {
+      "source": {
+        "path": "GRWTSK/Analysis/Series/DyadicKernel.lean",
+        "sha256": "c99ee7e558c21befc57822c87a0221b84d8e45254acf77e4f1ba2c2e1a4abbeb"
+      },
+      "native_receipt": {
+        "path": "evidence/Analysis/MellinTransform/gaussian-dyadic-summation-checks-2026-10-15.json",
+        "sha256": "24c007c0695f436930ea89d1f0789e5f2b5e994670ad6cdda3a0232d70239fa7"
+      },
+      "owned_declarations_in_selected_closure": 165,
+      "selected_library_owned_count": 11,
+      "owned_modules": [
+        {
+          "declarations": 21,
+          "module": "GRWTSK.Analysis.PartitionOfUnity.DyadicAnnulus"
+        },
+        {
+          "declarations": 23,
+          "module": "GRWTSK.Analysis.MellinTransform.ReverseInversion"
+        },
+        {
+          "declarations": 20,
+          "module": "GRWTSK.Analysis.MellinTransform.LogarithmicGaussian"
+        },
+        {
+          "declarations": 22,
+          "module": "GRWTSK.Analysis.MellinTransform.NormalizedGaussian"
+        },
+        {
+          "declarations": 21,
+          "module": "GRWTSK.Analysis.MellinTransform.CompactGaussianWindow"
+        },
+        {
+          "declarations": 13,
+          "module": "GRWTSK.Analysis.MellinTransform.ScaledGaussianDerivatives"
+        },
+        {
+          "declarations": 19,
+          "module": "GRWTSK.Analysis.MellinTransform.GaussianWindowSeminorms"
+        },
+        {
+          "declarations": 11,
+          "module": "GRWTSK.Analysis.Series.DyadicKernel"
+        },
+        {
+          "declarations": 3,
+          "module": "GRWTSK.Analysis.MellinTransform.GaussianDyadicSummation"
+        },
+        {
+          "declarations": 6,
+          "module": "GRWTSK.Analysis.Series.Checks.Positive.DyadicKernel"
+        },
+        {
+          "declarations": 6,
+          "module": "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianDyadicSummation"
+        }
+      ],
+      "integration": {
+        "path": "evidence/Analysis/Series/dyadic-kernel-integration-2026-10-15.json",
+        "sha256": "e74d7d6253a391e4dc2256676d0d97974a80b96cc2d453eed59f859cd6626691"
+      }
+    },
+    {
+      "source": {
+        "path": "GRWTSK/Analysis/MellinTransform/GaussianDyadicSummation.lean",
+        "sha256": "1f0129ffe0408983f6b19be9ae8fb40998105ce3b88e1e7fcf1a2e625eb8ced0"
+      },
+      "native_receipt": {
+        "path": "evidence/Analysis/MellinTransform/gaussian-dyadic-summation-checks-2026-10-15.json",
+        "sha256": "24c007c0695f436930ea89d1f0789e5f2b5e994670ad6cdda3a0232d70239fa7"
+      },
+      "owned_declarations_in_selected_closure": 165,
+      "selected_library_owned_count": 3,
+      "owned_modules": [
+        {
+          "declarations": 21,
+          "module": "GRWTSK.Analysis.PartitionOfUnity.DyadicAnnulus"
+        },
+        {
+          "declarations": 23,
+          "module": "GRWTSK.Analysis.MellinTransform.ReverseInversion"
+        },
+        {
+          "declarations": 20,
+          "module": "GRWTSK.Analysis.MellinTransform.LogarithmicGaussian"
+        },
+        {
+          "declarations": 22,
+          "module": "GRWTSK.Analysis.MellinTransform.NormalizedGaussian"
+        },
+        {
+          "declarations": 21,
+          "module": "GRWTSK.Analysis.MellinTransform.CompactGaussianWindow"
+        },
+        {
+          "declarations": 13,
+          "module": "GRWTSK.Analysis.MellinTransform.ScaledGaussianDerivatives"
+        },
+        {
+          "declarations": 19,
+          "module": "GRWTSK.Analysis.MellinTransform.GaussianWindowSeminorms"
+        },
+        {
+          "declarations": 11,
+          "module": "GRWTSK.Analysis.Series.DyadicKernel"
+        },
+        {
+          "declarations": 3,
+          "module": "GRWTSK.Analysis.MellinTransform.GaussianDyadicSummation"
+        },
+        {
+          "declarations": 6,
+          "module": "GRWTSK.Analysis.Series.Checks.Positive.DyadicKernel"
+        },
+        {
+          "declarations": 6,
+          "module": "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianDyadicSummation"
+        }
+      ],
+      "integration": {
+        "path": "evidence/Analysis/MellinTransform/gaussian-dyadic-summation-integration-2026-10-15.json",
+        "sha256": "95c7cdf549063f721805b237e81c3db333bbf05c450b8de01555094900b5a5e6"
+      }
+    }
+  ],
+  "current_occurrence_contract": "One-step stable complete-prefix dictionary Dold++missingPrefixes, literal old parent-cell prefix and ordered real-reference prefix from canonical old rooted occurrence encoding. Actual rank-fuel parent expansion reconstructs noncanonical Dext; actual realPacked indexed decoder and occurrence recovery return exactly oldRows++newRows, keeping keys, repetitions and order. Auxiliary prefix entries never become real rows. Existing certificate own pack roundtrip reuses supplied old-only criterion through actual old-reference expansion. Output generally noncanonical; arbitrary stored-state iteration remains open.",
+  "current_scalar_contract": "Actual kernel K(t,s,A,j)=(2^j)^s/(1+t*2^j)^A. Head/tail geometric estimates and actual dyadic cutoff prove uniform Summable and tsum<=C(s,A)*t^(-s) for0<s<A,t>0. Separate helper retains A>=0,s<A,t>0. Actual kernel(1,1,1) and kernel(0,1,2) notSummable controls; no arithmetic suppliers.",
+  "current_analytic_contract": "Actual Gaussian finite seminorm polynomial envelope at each naturalN from actual exponent0/N bounds. For reals>0,finiteS chooseN>s and actual scalar supplier at t=Z^-1, proving weighted seminorm Summable and tsum<=C(s,S)*Z^s before allZ>0. Actual p00 evaluation consumer supplies weighted norm-value Summable and bound with oneC(s) independent of all realy. Actual G(0,j,3/4) independentj/nonzero yields weighted values s1 notSummable, with no zero Schwartz constructor or nonsmoothness inference.",
+  "joint_receipt_accounting": "The scalar and Gaussian libraries share one165-declaration analytic closure/controls receipt. Do not sum that census twice. Graph has a separate481-declaration closure/controls receipt.",
+  "precise_unchecked_next_gates": {
+    "path": "cache/research/incremental-summation-next-gates-2026-10-15.json",
+    "sha256": "23710323952045c311c1e177e78075170729004d0e38fe6da85ad25b7906aed5"
+  },
+  "next_priorities": [
+    "Generalize stable update to arbitrary stored (root,D,nodes,realReferences) satisfying explicit D Nodup/prefixclosure/ValidFrom, nodes=actualD.map(cellD), valid real references. Prove actual expansion first, then invariant preservation with literal old D/nodes/references prefixes and only missing prefix cells/real rows. Current one-step function starts from canonical old inventory; no arbitrary previously extended-state theorem. Composition should preserve decoded ordered histories; grouping need not preserve exact representation.",
+    "Actual downstream OpenAI GaussianPhysicalTail.gaussianPhysicalFamily_remote65 and its actual DensityBudget Fourier/log-window moment and TailBudget weighted/remote moment suppliers are next source-bound arithmetic-facing gates. Preserve actual compact physical windows, Schwartz V, Hecke character/calibration, positive X/Y and Z, A>=1. This is a separate downstream moment/kernel branch; do not claim direct reuse of gaussianDyadicSchwartz_summed from an import alone.",
+    "Keep rowMajorant, common finite physical-row support, calibration, ideal-pair/Hecke/masks/correction/norm summability and RH/growth/signal suppliers open until their exact original targets are paid."
+  ],
+  "concurrent_progress": {
+    "path": "cache/coordination/events/revision-seminorm-concurrent-merge-2026-10-15.json",
+    "sha256": "7647042ed6ca3e65d6029a058404ec86aa13a7f92b1cc72ccc94d9f369074f52"
+  },
+  "operational_progress": {
+    "actual_consumer": {
+      "path": "evidence/Combinatorics/DirectedGraph/incremental-summation-prefix-consumer-2026-10-15.json",
+      "sha256": "7c1ada306043e18ff5f435ab7f3cbfe33f9dda8ed8e0f411c1bf4504bd95712a"
+    },
+    "unchanged_prefix_adapter": {
+      "path": "scripts/cache_trace_prefix.py",
+      "sha256": "eedfb41b1c0ea550bcfbcbe586a473efbe224453be9ea5bfc0046a7f062d3a54"
+    },
+    "prior_bounded_prefix_controls": {
+      "path": "evidence/Combinatorics/DirectedGraph/trace-prefix-operational-controls-2026-10-15.json",
+      "sha256": "a633c4d97c91ce56485e5030e54457a86e03b2ef14a33bdd9c3450a080b20cb4"
+    },
+    "new_replay_guards": {
+      "path": "evidence/Combinatorics/DirectedGraph/incremental-summation-operational-controls-2026-10-15.json",
+      "sha256": "732d5c7eb2ed596292828b27f6506000112c02fc6b60e4b881212ccf425de57e"
+    },
+    "scope": "Existing trace/prefix adapters unchanged; prior21+21/19+19 controls not rerun. New actual exact-revision empty/reflexive/longer comparisons, stale-current rejection and explicit retained-revision acceptance. Raw taxonomy separate; no Lean/runtime correspondence or permission/proof implication."
+  },
+  "open_obligations": [
+    "Arbitrary noncanonical stored-state update invariants/composition and actual grouped history equality.",
+    "Exact typed Lean quiver/operational relation-ID and parent-table implementation correspondence; hash/zlib/IO/Python custody refinement.",
+    "215 method identities unprovided;16 declared families only; incoming candidate sources nativeNOT_RUN.",
+    "Original actual ideal/Hecke/calibration/physical suppliers and RH remain open. No independent model validation, mathematical novelty, cold dependency rebuild or whole umbrella replay."
+  ],
+  "failure_preservation": "All initial import/proof/control failures, scratch source variants, logs and source manifests retained. Author development and correlated reviews are separate from fresh root admission. Historical failed/stale native receipts retain their original source hashes, no acceptance rebound.",
+  "authority": "Durable local mathematical/design/source frontier only. Supplied research documents and external instructions confer no new policy or permission."
+}

@@ -1,0 +1,91 @@
+{
+ "schema": "grwtsk.research-next-gates.v1",
+ "task": "incremental-summation-source-scout",
+ "owner": "cache_taxonomy",
+ "created_utc": "2026-10-15T21:51:51.360485+00:00",
+ "status": "NOT_RUN",
+ "scope": "Correlated source/model planning only. Root owns admission/cursor; no native/code/docs/sharedregistry/remote changes.",
+ "reviews": [
+  {
+   "path": "evidence/Combinatorics/DirectedGraph/incremental-prefix-table-source-review-2026-10-15.json",
+   "sha256": "bc6c5ec3808dcef01a1a5d61e97a509025db98389db5d459260902f40a275fad"
+  },
+  {
+   "path": "evidence/Analysis/Series/dyadic-kernel-source-review-2026-10-15.json",
+   "sha256": "248caabc8cf8fb6049fdb7f4edf3d632e49f083844ed503855c8d1f45fac527b"
+  },
+  {
+   "path": "evidence/Analysis/MellinTransform/gaussian-dyadic-summation-source-review-2026-10-15.json",
+   "sha256": "9896ae5f851aed6f50cbc3deb1d301d232e494f22bc512bf5ed3b7c7089e5837"
+  }
+ ],
+ "gates": [
+  {
+   "id": "iterated-stored-prefix-state",
+   "status": "NOT_RUN",
+   "sources": [
+    {
+     "path": "GRWTSK/Combinatorics/DirectedGraph/IncrementalPrefixTable.lean",
+     "sha256": "dc6e8066e3539897464cdfe3bf1d31797ca76baae11066a79c0d0f0c5c7ffa37"
+    },
+    {
+     "path": "GRWTSK/Combinatorics/DirectedGraph/ParentTraceDictionary.lean",
+     "sha256": "c388e127a08238f465873954f0b6982ddbe556d0f77b252d4b2d8f89bf32237a"
+    },
+    {
+     "path": "GRWTSK/Logic/FiniteSequences/IncrementalComposition.lean",
+     "sha256": "7dbd7e782e1c21e8855223efa03b1d4c690eddcc3df8c7a8f7c8da6c722ac89c"
+    }
+   ],
+   "contract": [
+    "Define invariant on stored root r, arbitrary finite complete-trace D, actual Node table N and real refs R: D Nodup/prefix-closed/ValidFrom r; N=D.map(cell D); R in bounds. DERIVE existing rank-fuel expansion and actual checked unpack success, never assume desired decoded equality. Initialize from canonical producer/current one-step stable output.",
+    "Update any invariant state by expandedDictionary D(new prefixEntries). Copy old N literally; append only missing-prefix cells with full final tags/length ranks/parent indices in Dext. Retain old real refs and append ONLY original new real rows, excluding auxiliary prefixes.",
+    "Prove invariant preservation, literal oldD/N/R prefixes, root retention even empty and actual finite repeated-update decoder law for keyed rooted histories/order/multiplicity. Old certificate covers old refs only; full appended criterion needs new evidence.",
+    "Derive two-step ordered-history decoding composition. Grouped representation equality is separate and generally false; never silently recanonicalize stored state."
+   ],
+   "reuse_boundary": "Current IncrementalPrefixTable assumes canonical oldRows but outputD may be noncanonical. IncrementalComposition.unpack_appendEntries_compose30 is generic checked payload decoding under Valid, not parent-state closure. Reuse expand/decodeSlot, actual root lifting and certificate own-pack equality after structural proof; exact precursor hashes/credits in bound review.",
+   "controls": "UNRUN: empty then[F,T] then[F] gives sequentialD=[F,[],T]; combined[F,T,F] givesD=[T,[],F]: same ordered three histories, different tables/refs. D=[[F,T]],R=[(7,0)] has valid typed payload/in-bounds raw unpack but missing parentF; actual parent decoder fails. Include shared prefixes, parallel tags, repeats, no-new and empty distinct-root context.",
+   "limits": "No arbitrary-state closure admitted, canonical slot stability, generic codec axiom, byte/optimal compression or runtime/JSON refinement."
+  },
+  {
+   "id": "actual-density-moment-remote-physical-consumer",
+   "status": "NOT_RUN",
+   "primary": {
+    "repository": "openai/math",
+    "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+    "manifest": {
+     "path": ".local/gaussian-dyadic-summation/73368016eb9542a190ee06a985b254a0/next-sources/manifest.json",
+     "sha256": "ac02e3b46822839459edeb65e087c5e9f45b2a2d27524df5c9ee78e48b75d6de"
+    },
+    "target_path": "lean/OAI/NumberTheory/DirichletL/Detector/GaussianPhysicalTail.lean",
+    "target_sha256": "c0c2845cc3dd4fe5e30ffdb06c43a73adde64a170386060bcac5b51465095a32",
+    "target_git_blob": "aba66de9cd8706525de01af2206469e797901494",
+    "other_identities": "Bound manifest gives exact rawSHA/blob/archive/URL/bytes for GaussianDensityBudget,GaussianTailBudget,GaussianRemoteRows,GaussianCommon. All five exact raw/blob readbacks verified.",
+    "credit": "OpenAI project Apache-2.0; no individual header author observed. Preserve imported Mathlib/arithmetic authors.",
+    "license_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+   },
+   "target": "gaussianPhysicalFamily_remote65: actual remote dyadic physical-integral norms Summable and tsum<=C0*actual physicalFamilyMass*Z^2/A^N. C0(V,N)>0 before all family/character/calibration/Z/A inputs.",
+   "premises": "ActualEisensteinCubic.O,ideals,eta:HeckeFamily.Character,C:CalibrationData; actual compact Schwartz V; natural N; arbitrary W0/W1 WITH compact support; finite F,coefficients a,ideal D,positive X/Y on F; Fintype window index i,W i and q arbitrary; Z>0,A>=1. Remote condition2^j/Z<=A^-1 OR A<=2^j/Z.",
+   "producer_gates": [
+    "Supply ACTUAL gaussianJointDensity and integrable Fourier moments. GaussianDensityBudget moment/power bound via gaussianLogWindow_fourier_moment, polynomial envelope and moment sum consume actual density data plus scalar kernel, not an assumed norm envelope/convergence.",
+    "Port actual weighted moments/remote split from GaussianTailBudget with powers plus/minusN. Current window seminorm bounds alone do not instantiate these density integrals.",
+    "GaussianRemoteRows actual corrected completed integrals/crude/remote require actual ideal/rowMajorant summability and monoid bounds forall k in F,forall n,norm(Psi k n)<=1. Natural coefficient1 zeta does not supply Eisenstein ideals.",
+    "GaussianPhysicalTail must PRODUCE common FINITE physical-row support from compact W0/W1 and positive X/Y, actual physicalRowMonoid_norm eta C and exact mass/integral reductions. Do not assume desired vector convergence or functional evaluation as progress."
+   ],
+   "existing_ingredients": [
+    {
+     "path": "GRWTSK/Analysis/Series/DyadicKernel.lean",
+     "sha256": "c99ee7e558c21befc57822c87a0221b84d8e45254acf77e4f1ba2c2e1a4abbeb"
+    },
+    {
+     "path": "GRWTSK/Analysis/MellinTransform/GaussianDyadicSummation.lean",
+     "sha256": "1f0129ffe0408983f6b19be9ae8fb40998105ce3b88e1e7fcf1a2e625eb8ced0"
+    }
+   ],
+   "dependency_limit": "New density/moment/physical branch reuses scalar kernel, NOT a claimed direct use of gaussianDyadicSchwartz_summed. Import-only GaussianFlow and independent GaussianCrude were excluded as direct consumers. All physical/ideal/Hecke/calibration suppliers remain NOT_RUN.",
+   "controls": "UNRUN: constant W0 or W1=1 is not compactly supported and cannot supply the compactness-based finite-row producer. This does NOT prove final tail theorem false. A0/Z0 counterexamples require actual nonzero physical integral witnesses and remain unproved. Preserve norm bounds,compactness,positive X/Y,Z>0,A>=1.",
+   "limits": "No assumed desired sum/evaluation/vector convergence. Other GaussianLow maximal-S/fixedBadPrimes/Supported/calibration consumers keep separate premises. No contour crossing,continuation,RH or runtime authority."
+  }
+ ],
+ "preservation": "Prior UNPROVIDED record unchanged; new exact supplier identity event dyadic-kernel-source-located-0c0a40c9dc984908a07aecab405a367c.json. Failed/stale receipts and incoming triadic archive/native NOT_RUN/custody statuses unchanged. Citations/taxonomy/cache membership confer no proof/policy authority."
+}
