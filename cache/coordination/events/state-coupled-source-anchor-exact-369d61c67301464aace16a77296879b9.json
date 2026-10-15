@@ -1,0 +1,19 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "state-coupled-source-scout",
+  "owner": "cache_taxonomy",
+  "at": "2026-10-15T23:31:26.854986+00:00",
+  "kind": "source-anchor-correction",
+  "prior_context": {
+    "path": ".local/state-coupled-source-scout/603f567968604c9ab808a5ae5307149c/review-context.json",
+    "sha256": "5282a354de470a72f2135add4fd14365bf5206f6e05221c2424f7a0094bae71e",
+    "bytes": 21947
+  },
+  "context": {
+    "path": ".local/state-coupled-source-scout/603f567968604c9ab808a5ae5307149c/review-context-r2.json",
+    "sha256": "f000aa204eb6db9efbe864aec5f00af9668abbbcb190a15e4548476af4de0ff9",
+    "bytes": 22096
+  },
+  "correction": "Exact declaration fourierInv_coe is raw118, not provisional119; original ignored context retained, source bytes unchanged.",
+  "status": "NOT_RUN"
+}

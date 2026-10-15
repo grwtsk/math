@@ -39,6 +39,12 @@ this collision. Repacking the common old rooted payload additionally
 requires decidable vertex equality; the core path naturality and inverse
 require neither a finite nor a decidable vertex type.
 
+The [stored-state transport result](prefix-table-reindex.md) now applies this
+actual full-tag map to arbitrary well-formed prefix states. It preserves ranks,
+parent slots and keyed real references while mapping root, dictionary and final
+tags, and derives actual decoding commutation. This is a stronger producer than
+mapping a newly constructed row packet.
+
 ## Checked boundaries
 
 A concrete swap of relation slots zero and two sends the old valid word

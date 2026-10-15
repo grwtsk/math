@@ -1,0 +1,10 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "prefix-reindex-reindex-formal",
+  "owner": "indexed_dictionary",
+  "at": "2026-10-15T23:34:06.867879+00:00",
+  "kind": "native-lock-acquired",
+  "source": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableReindex.lean",
+  "source_sha256": "f75a75f14b73bdd46890445c171dee91f917be2b17aa6085a3f5c6d55cb19711",
+  "guard_competing_jobs": []
+}

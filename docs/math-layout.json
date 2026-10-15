@@ -5245,7 +5245,11 @@
     "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/RoleRelationReindex.lean": "eea06196e6857c9954da1031125dcc5ae2104449b00a82731385b29f73d0f018",
     "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/RoleReindexMissingInjectivity.lean": "17ec95ac53d0bae0c68e1c0ebac8389d906c7949dbbd1b5ef05dc24e804a645f",
     "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianDensityMoments.lean": "6ca3a7a73e1bb7bc7254f7a06e676fade81aaf5ad9b5091cc08b71e6f41efdec",
-    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianDensityMissingCutoff.lean": "689ba388e7697b64837957703519a677644d95728f9eab6fbe3c5cdbef149214"
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianDensityMissingCutoff.lean": "689ba388e7697b64837957703519a677644d95728f9eab6fbe3c5cdbef149214",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableReindex.lean": "9011fabcd634118e2278a5bda4dabeb47e730ec41bdf63bd1a96ab29335dae57",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixReindexStaleRoleIds.lean": "a4a1548df828aa4b32cbdc171addfca6f1394dbc447fc75e43fd2c87fb5afcb6",
+    "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianCoupledSeparation.lean": "77a69b9e75bcf5d59a8cff75786b2ca900d9d14e79aad0ccc939a182980baff4",
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianCoupledMissingActive.lean": "2ffc3c2f2e3e173703e599c0907e6fac798142dfcf5556f4b69eae29ab3b38f8"
   },
   "schema_version": 3,
   "repository_conformance": {
@@ -5277,7 +5281,7 @@
     {
       "path": "GRWTSK.lean",
       "original_path": "GRWTSK.lean",
-      "sha256": "a07cd937c4eabcb13b35f38fcc61323cb2a32429f890603ff2fc06cf8d7d961c",
+      "sha256": "112b8a498fba3ddce709fb4b9c34af89f36dbcd26ceec931992b4b361be7db70",
       "git_blob": "27e45b3448f78dc6499f2fb0698eb51cac5d1904",
       "working_tree_state": "tracked-modified",
       "source_root": ".",
@@ -5311,6 +5315,7 @@
         "GRWTSK.Analysis.Asymptotics.QuadraticKernelEnergyEquivalence",
         "GRWTSK.Analysis.Asymptotics.SelectedPrimeChainBounds",
         "GRWTSK.Analysis.Asymptotics.SignedEnergyDecomposition",
+        "GRWTSK.Analysis.Calculus.CompactCutoff",
         "GRWTSK.Analysis.Calculus.CompactPolynomialDerivatives",
         "GRWTSK.Analysis.Calculus.CompactProfileBoundaryCounterexamples",
         "GRWTSK.Analysis.Calculus.CompactProfileDerivativeEnergy",
@@ -5417,6 +5422,7 @@
         "GRWTSK.Analysis.LaplaceTransform.PolynomialEnergy",
         "GRWTSK.Analysis.LaplaceTransform.PolynomialEnergyHolomorphy",
         "GRWTSK.Analysis.MellinTransform.CompactGaussianWindow",
+        "GRWTSK.Analysis.MellinTransform.GaussianCoupledSeparation",
         "GRWTSK.Analysis.MellinTransform.GaussianDensityMoments",
         "GRWTSK.Analysis.MellinTransform.GaussianDyadicSummation",
         "GRWTSK.Analysis.MellinTransform.GaussianFourierMoments",
@@ -5454,6 +5460,7 @@
         "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding",
         "GRWTSK.Combinatorics.DirectedGraph.PrefixInventory",
         "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCompaction",
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableReindex",
         "GRWTSK.Combinatorics.DirectedGraph.PrefixTableState",
         "GRWTSK.Combinatorics.DirectedGraph.RoleRelationReindex",
         "GRWTSK.Combinatorics.DirectedGraph.RoleRelationTable",
@@ -5687,7 +5694,7 @@
         "inventory": "observed-current-bytes",
         "layout": "repository baseline remains failed",
         "lean": "umbrella not replayed after selected import additions",
-        "source_sha256": "a07cd937c4eabcb13b35f38fcc61323cb2a32429f890603ff2fc06cf8d7d961c"
+        "source_sha256": "112b8a498fba3ddce709fb4b9c34af89f36dbcd26ceec931992b4b361be7db70"
       },
       "runner": "python3 -B scripts/check_ccc_energy.py",
       "other_consumers": [
@@ -8742,6 +8749,115 @@
         "evidence/Analysis/InnerProductSpace/CausalRealization/formalization-admission.json",
         "evidence/source-manifest.json"
       ]
+    },
+    {
+      "path": "GRWTSK/Analysis/Calculus/CompactCutoff.lean",
+      "original_path": "GRWTSK/Analysis/Calculus/CompactCutoff.lean",
+      "sha256": "c6ff2d2f5346607bb62c7234a4bfe35a0e308cc427fa8c9c26ac6b06b7838172",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Analysis.Calculus.CompactCutoff",
+      "namespaces": [
+        "GRWTSK.Analysis.Calculus.CompactCutoff"
+      ],
+      "public_declarations": [
+        {
+          "kind": "def",
+          "name": "compactCutoff",
+          "line": 24
+        },
+        {
+          "kind": "lemma",
+          "name": "compactCutoff_smooth",
+          "line": 28
+        },
+        {
+          "kind": "lemma",
+          "name": "compactCutoff_zero_left",
+          "line": 33
+        },
+        {
+          "kind": "lemma",
+          "name": "compactCutoff_zero_right",
+          "line": 37
+        },
+        {
+          "kind": "lemma",
+          "name": "compactCutoff_tsupport_subset",
+          "line": 41
+        },
+        {
+          "kind": "lemma",
+          "name": "compactCutoff_compact",
+          "line": 52
+        },
+        {
+          "kind": "lemma",
+          "name": "compactCutoff_one",
+          "line": 55
+        },
+        {
+          "kind": "def",
+          "name": "schwartzCutoff",
+          "line": 61
+        },
+        {
+          "kind": "lemma",
+          "name": "schwartzCutoff_compact",
+          "line": 67
+        },
+        {
+          "kind": "lemma",
+          "name": "schwartzCutoff_one",
+          "line": 70
+        },
+        {
+          "kind": "theorem",
+          "name": "coupled_cutoff_active",
+          "line": 73
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "Mathlib.Analysis.Distribution.SchwartzSpace.Basic",
+        "Mathlib.Analysis.SpecialFunctions.SmoothTransition"
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Analysis.MellinTransform.GaussianCoupledSeparation"
+      ],
+      "subject": "Analysis",
+      "object": "Calculus",
+      "source_role": "library",
+      "target_path": "GRWTSK/Analysis/Calculus/CompactCutoff.lean",
+      "placement_rationale": "Generic compact smooth Schwartz cutoffs belong to Analysis/Calculus; the actual coupled normalized logarithmic Gaussian density separation belongs to Analysis/MellinTransform.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "c6ff2d2f5346607bb62c7234a4bfe35a0e308cc427fa8c9c26ac6b06b7838172",
+        "replay_binding": "evidence/Analysis/MellinTransform/gaussian-coupled-separation-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_gaussian_coupled_separation.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "compactCutoff T s = complex-coerced smoothTransition(T+1-s)*smoothTransition(T+1+s).",
+        "For every realT: ContDiff ℝ ∞, HasCompactSupport and tsupport contained in [-(T+1),T+1].",
+        "For T≥0 and |s|≤T: value1. The actual function is packaged as schwartzCutoff T.",
+        "For any finite index type, arbitrary complex-valued W, real weights a and evaluation y, support bounds W_j(z)≠0→|z|≤M_j and cutoff one on |s|≤sum_j|a_j|M_j activate V at sum_j a_jy_j whenever the W product is nonzero."
+      ],
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: exact GaussianCoupled/LogProfiles proof slices; named imported Mathlib smooth-transition/Fourier/Schwartz authors retain credit"
+      ],
+      "license": "Apache-2.0",
+      "design_reference": "cache/research/state-coupled-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
     },
     {
       "path": "GRWTSK/Analysis/Calculus/CompactPolynomialDerivatives.lean",
@@ -21873,6 +21989,57 @@
       ]
     },
     {
+      "path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianCoupledMissingActive.lean",
+      "original_path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianCoupledMissingActive.lean",
+      "sha256": "2ffc3c2f2e3e173703e599c0907e6fac798142dfcf5556f4b69eae29ab3b38f8",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Analysis.MellinTransform.Checks.Negative.GaussianCoupledMissingActive",
+      "namespaces": [
+        "GRWTSK.Analysis.MellinTransform.GaussianCoupledSeparation.Checks"
+      ],
+      "public_declarations": [],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianCoupledSeparation"
+      ],
+      "reverse_consumers": [],
+      "subject": "Analysis",
+      "object": "MellinTransform/Checks/Negative",
+      "source_role": "negative-control",
+      "target_path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianCoupledMissingActive.lean",
+      "placement_rationale": "Generic compact smooth Schwartz cutoffs belong to Analysis/Calculus; the actual coupled normalized logarithmic Gaussian density separation belongs to Analysis/MellinTransform.",
+      "operation": "add",
+      "logical_status": "intended rejected control; no theorem admission",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "2ffc3c2f2e3e173703e599c0907e6fac798142dfcf5556f4b69eae29ab3b38f8",
+        "replay_binding": "evidence/Analysis/MellinTransform/gaussian-coupled-separation-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_gaussian_coupled_separation.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "logPhase(t,y)=exp(2*pi*i*t*y), the exact positive inverse-Fourier convention. Actual phase sum/product identity, including the empty index type.",
+        "For every realR, every actual compact Schwartz V, finite arbitrary W and real a,y: the exact separation frequency integrand is Integrable.",
+        "For R>0 and active premise (product_i W_i(y_i)≠0→V(sum_i a_i*y_i)=1): product_i W_i(y_i)*P(R*exp(sum_i a_i*y_i)) equals integral_t product_i[W_i(y_i)*logPhase(t,a_i*y_i)]*actual gaussianJointDensity(V,R,t).",
+        "The inverse evaluation is proved using the actual Schwartz Fourier inverse and the existing positive-profile equality; the nonzero and zero-product cases are proved separately.",
+        "If each M_i≥0 and W_i(z)≠0→|z|≤M_i, choose the actual common Schwartz cutoff V=schwartzCutoff(sum_i|a_i|M_i) before everyR and every evaluation tupley. This V supplies separation plus actual integrand Integrable for allR>0. No smoothness ofW is assumed.",
+        "For the same V: for every realA and naturalJ there exists C>0, chosen before R>0, such that the actual density norm weighted by (1+normt)^J is Integrable and its integral≤C*R^(-A). This calls the admitted GaussianLogWindow moment theorem with its actual suppliers."
+      ],
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: exact GaussianCoupled/LogProfiles proof slices; named imported Mathlib smooth-transition/Fourier/Schwartz authors retain credit"
+      ],
+      "license": "Apache-2.0",
+      "design_reference": "cache/research/state-coupled-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
       "path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianDensityMissingCutoff.lean",
       "original_path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianDensityMissingCutoff.lean",
       "sha256": "689ba388e7697b64837957703519a677644d95728f9eab6fbe3c5cdbef149214",
@@ -22558,6 +22725,145 @@
       ],
       "license": "Apache-2.0",
       "design_reference": "cache/research/prefix-window-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
+      "path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianCoupledSeparation.lean",
+      "original_path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianCoupledSeparation.lean",
+      "sha256": "77a69b9e75bcf5d59a8cff75786b2ca900d9d14e79aad0ccc939a182980baff4",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianCoupledSeparation",
+      "namespaces": [
+        "GRWTSK.Analysis.MellinTransform.GaussianCoupledSeparation.Checks"
+      ],
+      "public_declarations": [
+        {
+          "kind": "lemma",
+          "name": "actual_cutoff_center",
+          "line": 11
+        },
+        {
+          "kind": "lemma",
+          "name": "actual_cutoff_boundary",
+          "line": 14
+        },
+        {
+          "kind": "lemma",
+          "name": "actual_negative_radius_compact",
+          "line": 17
+        },
+        {
+          "kind": "def",
+          "name": "boxWindow",
+          "line": 20
+        },
+        {
+          "kind": "def",
+          "name": "boxWeight",
+          "line": 22
+        },
+        {
+          "kind": "def",
+          "name": "boxPoint",
+          "line": 23
+        },
+        {
+          "kind": "lemma",
+          "name": "boxWindow_support",
+          "line": 24
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_two_factor_family",
+          "line": 28
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_two_factor_integral",
+          "line": 40
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_empty_family",
+          "line": 53
+        },
+        {
+          "kind": "lemma",
+          "name": "zero_cutoff_compact",
+          "line": 63
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_zero_product",
+          "line": 67
+        },
+        {
+          "kind": "lemma",
+          "name": "zero_cutoff_density",
+          "line": 75
+        },
+        {
+          "kind": "lemma",
+          "name": "profile_one_ne_zero",
+          "line": 84
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_missing_active_false",
+          "line": 93
+        },
+        {
+          "kind": "lemma",
+          "name": "actual_zero_cutoff_not_active",
+          "line": 100
+        },
+        {
+          "kind": "lemma",
+          "name": "actual_empty_phase",
+          "line": 104
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Analysis.MellinTransform.GaussianCoupledSeparation"
+      ],
+      "reverse_consumers": [
+        "GRWTSK.Analysis.MellinTransform.Checks.Negative.GaussianCoupledMissingActive"
+      ],
+      "subject": "Analysis",
+      "object": "MellinTransform/Checks/Positive",
+      "source_role": "positive-check",
+      "target_path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianCoupledSeparation.lean",
+      "placement_rationale": "Generic compact smooth Schwartz cutoffs belong to Analysis/Calculus; the actual coupled normalized logarithmic Gaussian density separation belongs to Analysis/MellinTransform.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "77a69b9e75bcf5d59a8cff75786b2ca900d9d14e79aad0ccc939a182980baff4",
+        "replay_binding": "evidence/Analysis/MellinTransform/gaussian-coupled-separation-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_gaussian_coupled_separation.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "logPhase(t,y)=exp(2*pi*i*t*y), the exact positive inverse-Fourier convention. Actual phase sum/product identity, including the empty index type.",
+        "For every realR, every actual compact Schwartz V, finite arbitrary W and real a,y: the exact separation frequency integrand is Integrable.",
+        "For R>0 and active premise (product_i W_i(y_i)≠0→V(sum_i a_i*y_i)=1): product_i W_i(y_i)*P(R*exp(sum_i a_i*y_i)) equals integral_t product_i[W_i(y_i)*logPhase(t,a_i*y_i)]*actual gaussianJointDensity(V,R,t).",
+        "The inverse evaluation is proved using the actual Schwartz Fourier inverse and the existing positive-profile equality; the nonzero and zero-product cases are proved separately.",
+        "If each M_i≥0 and W_i(z)≠0→|z|≤M_i, choose the actual common Schwartz cutoff V=schwartzCutoff(sum_i|a_i|M_i) before everyR and every evaluation tupley. This V supplies separation plus actual integrand Integrable for allR>0. No smoothness ofW is assumed.",
+        "For the same V: for every realA and naturalJ there exists C>0, chosen before R>0, such that the actual density norm weighted by (1+normt)^J is Integrable and its integral≤C*R^(-A). This calls the admitted GaussianLogWindow moment theorem with its actual suppliers."
+      ],
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: exact GaussianCoupled/LogProfiles proof slices; named imported Mathlib smooth-transition/Fourier/Schwartz authors retain credit"
+      ],
+      "license": "Apache-2.0",
+      "design_reference": "cache/research/state-coupled-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
     },
     {
       "path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianDensityMoments.lean",
@@ -23592,6 +23898,102 @@
       "design_reference": "cache/research/prefix-window-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
     },
     {
+      "path": "GRWTSK/Analysis/MellinTransform/GaussianCoupledSeparation.lean",
+      "original_path": "GRWTSK/Analysis/MellinTransform/GaussianCoupledSeparation.lean",
+      "sha256": "904f3991a65106ee9c0a93f575ba536eec2645d64cff7ff3d9a16de8f389e6fc",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Analysis.MellinTransform.GaussianCoupledSeparation",
+      "namespaces": [
+        "GRWTSK.Analysis.MellinTransform.GaussianCoupledSeparation"
+      ],
+      "public_declarations": [
+        {
+          "kind": "def",
+          "name": "logPhase",
+          "line": 30
+        },
+        {
+          "kind": "lemma",
+          "name": "logPhase_add",
+          "line": 34
+        },
+        {
+          "kind": "lemma",
+          "name": "logPhase_sum",
+          "line": 45
+        },
+        {
+          "kind": "lemma",
+          "name": "coupled_phase_product",
+          "line": 52
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussianLogWindow_inversion",
+          "line": 59
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussian_coupled_integrable",
+          "line": 71
+        },
+        {
+          "kind": "theorem",
+          "name": "gaussian_coupled_separation",
+          "line": 83
+        },
+        {
+          "kind": "theorem",
+          "name": "gaussian_coupled_family",
+          "line": 97
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Analysis.Calculus.CompactCutoff",
+        "GRWTSK.Analysis.MellinTransform.GaussianLogWindow"
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianCoupledSeparation"
+      ],
+      "subject": "Analysis",
+      "object": "MellinTransform",
+      "source_role": "library",
+      "target_path": "GRWTSK/Analysis/MellinTransform/GaussianCoupledSeparation.lean",
+      "placement_rationale": "Generic compact smooth Schwartz cutoffs belong to Analysis/Calculus; the actual coupled normalized logarithmic Gaussian density separation belongs to Analysis/MellinTransform.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "904f3991a65106ee9c0a93f575ba536eec2645d64cff7ff3d9a16de8f389e6fc",
+        "replay_binding": "evidence/Analysis/MellinTransform/gaussian-coupled-separation-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_gaussian_coupled_separation.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "logPhase(t,y)=exp(2*pi*i*t*y), the exact positive inverse-Fourier convention. Actual phase sum/product identity, including the empty index type.",
+        "For every realR, every actual compact Schwartz V, finite arbitrary W and real a,y: the exact separation frequency integrand is Integrable.",
+        "For R>0 and active premise (product_i W_i(y_i)≠0→V(sum_i a_i*y_i)=1): product_i W_i(y_i)*P(R*exp(sum_i a_i*y_i)) equals integral_t product_i[W_i(y_i)*logPhase(t,a_i*y_i)]*actual gaussianJointDensity(V,R,t).",
+        "The inverse evaluation is proved using the actual Schwartz Fourier inverse and the existing positive-profile equality; the nonzero and zero-product cases are proved separately.",
+        "If each M_i≥0 and W_i(z)≠0→|z|≤M_i, choose the actual common Schwartz cutoff V=schwartzCutoff(sum_i|a_i|M_i) before everyR and every evaluation tupley. This V supplies separation plus actual integrand Integrable for allR>0. No smoothness ofW is assumed.",
+        "For the same V: for every realA and naturalJ there exists C>0, chosen before R>0, such that the actual density norm weighted by (1+normt)^J is Integrable and its integral≤C*R^(-A). This calls the admitted GaussianLogWindow moment theorem with its actual suppliers."
+      ],
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: exact GaussianCoupled/LogProfiles proof slices; named imported Mathlib smooth-transition/Fourier/Schwartz authors retain credit"
+      ],
+      "license": "Apache-2.0",
+      "design_reference": "cache/research/state-coupled-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
       "path": "GRWTSK/Analysis/MellinTransform/GaussianDensityMoments.lean",
       "original_path": "GRWTSK/Analysis/MellinTransform/GaussianDensityMoments.lean",
       "sha256": "7bdf9b9141eaf1a5cdfb043265211dc067508f91edcc27c935d1c5c118f30f1b",
@@ -24083,6 +24485,7 @@
       "reverse_consumers": [
         "GRWTSK",
         "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianLogWindow",
+        "GRWTSK.Analysis.MellinTransform.GaussianCoupledSeparation",
         "GRWTSK.Analysis.MellinTransform.GaussianDensityMoments"
       ],
       "subject": "Analysis",
@@ -27348,6 +27751,53 @@
       "design_reference": "cache/research/prefix-window-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
     },
     {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixReindexStaleRoleIds.lean",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixReindexStaleRoleIds.lean",
+      "sha256": "a4a1548df828aa4b32cbdc171addfca6f1394dbc447fc75e43fd2c87fb5afcb6",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.PrefixReindexStaleRoleIds",
+      "namespaces": [],
+      "public_declarations": [],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableReindex"
+      ],
+      "reverse_consumers": [],
+      "subject": "Combinatorics",
+      "object": "DirectedGraph/Checks/Negative",
+      "source_role": "negative-control",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixReindexStaleRoleIds.lean",
+      "placement_rationale": "Actual stored prefix-state transport by full typed relation-table tags belong to Combinatorics/DirectedGraph; generic certificates remain in Logic/FiniteSequences.",
+      "operation": "add",
+      "logical_status": "intended rejected control; no theorem admission",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "a4a1548df828aa4b32cbdc171addfca6f1394dbc447fc75e43fd2c87fb5afcb6",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/prefix-table-reindex-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_prefix_table_reindex.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "mapEdge and mapTrace use the actual source-target-role-preserving quiver prefunctor. mapNode changes only its actual last edge; transport maps the actual stored root and every complete dictionary trace while copying numeric ranks, parent slots and ordered real references.",
+        "mapTrace_idxOf is proved by actual list equality search under relation-index injectivity; map_cell then derives the exact new stored cell equation. transport_wellFormed proves dictionary Nodup, prefix closure, rooted validity, exact cells and reference bounds for an arbitrary old WellFormed State. Both old/new full-tag DecidableEq are explicit; no Key equality is required.",
+        "expand_map and decodeSlot_map prove the actual numeric lookup/rank/fuel recursion commutes for all stored node arrays without WellFormed or injectivity. unpack_transport proves actual ordered dictionary lookup naturality without WellFormed or injectivity. expandDictionary_transport and decode_transport derive actual well-formed stored parent and real-row decoder laws.",
+        "compact_decode_commutes compares actual decoded compacted histories, not raw compacted State values. It requires arbitrary old WellFormed state and injective table map, with old/new full-tag equality.",
+        "restoreState actually invokes the new State Option decoder, inverse-maps its full typed traces under bijection, and uses the actual stored new root underlying V value to pack common OLD rooted payloads. restore_transport derives its exact output for actual transported old WellFormed states. certified_transport requires an explicit Certificate whose entries equal those actual old derived rooted rows; it consumes certificate.reuse_of_same_decoding against the certificate own pack and separately retains outer root equality, including empty rows. Rooted repacking additionally requires DecidableEq V."
+      ],
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "design_reference": "cache/research/state-coupled-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
       "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixTableMissingClosure.lean",
       "original_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixTableMissingClosure.lean",
       "sha256": "44914e813a0f5682ffb5620ebfea33fa094701ba4d0a11b940266847b2a9f91b",
@@ -28713,6 +29163,308 @@
       ],
       "license": "MIT; upstream imported Apache-2.0 retained",
       "design_reference": "cache/research/compaction-fourier-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableReindex.lean",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableReindex.lean",
+      "sha256": "9011fabcd634118e2278a5bda4dabeb47e730ec41bdf63bd1a96ab29335dae57",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableReindex",
+      "namespaces": [
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableReindex.Checks.Positive"
+      ],
+      "public_declarations": [
+        {
+          "kind": "def",
+          "name": "original",
+          "line": 15
+        },
+        {
+          "kind": "def",
+          "name": "swapIndex",
+          "line": 20
+        },
+        {
+          "kind": "def",
+          "name": "updated",
+          "line": 22
+        },
+        {
+          "kind": "def",
+          "name": "translation",
+          "line": 27
+        },
+        {
+          "kind": "theorem",
+          "name": "translation_bijective",
+          "line": 33
+        },
+        {
+          "kind": "def",
+          "name": "vertexA",
+          "line": 35
+        },
+        {
+          "kind": "def",
+          "name": "vertexB",
+          "line": 37
+        },
+        {
+          "kind": "def",
+          "name": "id0",
+          "line": 38
+        },
+        {
+          "kind": "def",
+          "name": "id1",
+          "line": 39
+        },
+        {
+          "kind": "def",
+          "name": "new0",
+          "line": 40
+        },
+        {
+          "kind": "def",
+          "name": "new1",
+          "line": 41
+        },
+        {
+          "kind": "def",
+          "name": "new2",
+          "line": 42
+        },
+        {
+          "kind": "def",
+          "name": "oldTag0",
+          "line": 43
+        },
+        {
+          "kind": "def",
+          "name": "oldTag1",
+          "line": 45
+        },
+        {
+          "kind": "def",
+          "name": "newTag0",
+          "line": 46
+        },
+        {
+          "kind": "def",
+          "name": "newTag1",
+          "line": 47
+        },
+        {
+          "kind": "def",
+          "name": "newTag2",
+          "line": 48
+        },
+        {
+          "kind": "theorem",
+          "name": "old_tags_distinct",
+          "line": 55
+        },
+        {
+          "kind": "def",
+          "name": "arrow0",
+          "line": 62
+        },
+        {
+          "kind": "def",
+          "name": "arrow1",
+          "line": 64
+        },
+        {
+          "kind": "def",
+          "name": "single0",
+          "line": 65
+        },
+        {
+          "kind": "def",
+          "name": "single1",
+          "line": 66
+        },
+        {
+          "kind": "def",
+          "name": "seedRows",
+          "line": 67
+        },
+        {
+          "kind": "def",
+          "name": "seed",
+          "line": 70
+        },
+        {
+          "kind": "def",
+          "name": "before",
+          "line": 72
+        },
+        {
+          "kind": "theorem",
+          "name": "seed_inventory",
+          "line": 76
+        },
+        {
+          "kind": "theorem",
+          "name": "before_dictionary",
+          "line": 81
+        },
+        {
+          "kind": "theorem",
+          "name": "before_wellFormed",
+          "line": 87
+        },
+        {
+          "kind": "theorem",
+          "name": "before_nodes",
+          "line": 96
+        },
+        {
+          "kind": "theorem",
+          "name": "before_actual_decode",
+          "line": 101
+        },
+        {
+          "kind": "def",
+          "name": "after",
+          "line": 108
+        },
+        {
+          "kind": "theorem",
+          "name": "after_wellFormed",
+          "line": 110
+        },
+        {
+          "kind": "theorem",
+          "name": "after_dictionary",
+          "line": 113
+        },
+        {
+          "kind": "theorem",
+          "name": "after_nodes",
+          "line": 118
+        },
+        {
+          "kind": "theorem",
+          "name": "after_references",
+          "line": 124
+        },
+        {
+          "kind": "theorem",
+          "name": "after_root",
+          "line": 126
+        },
+        {
+          "kind": "theorem",
+          "name": "child_before_parent",
+          "line": 128
+        },
+        {
+          "kind": "theorem",
+          "name": "after_actual_decode",
+          "line": 134
+        },
+        {
+          "kind": "def",
+          "name": "mappedOccurrenceRows",
+          "line": 140
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_occurrences_recovered",
+          "line": 144
+        },
+        {
+          "kind": "theorem",
+          "name": "before_realEntries",
+          "line": 155
+        },
+        {
+          "kind": "def",
+          "name": "oldCertificate",
+          "line": 160
+        },
+        {
+          "kind": "theorem",
+          "name": "certificate_entries",
+          "line": 166
+        },
+        {
+          "kind": "def",
+          "name": "stale",
+          "line": 179
+        },
+        {
+          "kind": "theorem",
+          "name": "stale_actual_decode",
+          "line": 184
+        },
+        {
+          "kind": "theorem",
+          "name": "stale_reference_bounds",
+          "line": 187
+        },
+        {
+          "kind": "theorem",
+          "name": "stale_ranks",
+          "line": 193
+        },
+        {
+          "kind": "theorem",
+          "name": "stale_root_rejected",
+          "line": 217
+        },
+        {
+          "kind": "theorem",
+          "name": "stale_not_wellFormed",
+          "line": 222
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_numeric_checks_insufficient",
+          "line": 226
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableReindex"
+      ],
+      "reverse_consumers": [
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.PrefixReindexStaleRoleIds"
+      ],
+      "subject": "Combinatorics",
+      "object": "DirectedGraph/Checks/Positive",
+      "source_role": "positive-check",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableReindex.lean",
+      "placement_rationale": "Actual stored prefix-state transport by full typed relation-table tags belong to Combinatorics/DirectedGraph; generic certificates remain in Logic/FiniteSequences.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "9011fabcd634118e2278a5bda4dabeb47e730ec41bdf63bd1a96ab29335dae57",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/prefix-table-reindex-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_prefix_table_reindex.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "mapEdge and mapTrace use the actual source-target-role-preserving quiver prefunctor. mapNode changes only its actual last edge; transport maps the actual stored root and every complete dictionary trace while copying numeric ranks, parent slots and ordered real references.",
+        "mapTrace_idxOf is proved by actual list equality search under relation-index injectivity; map_cell then derives the exact new stored cell equation. transport_wellFormed proves dictionary Nodup, prefix closure, rooted validity, exact cells and reference bounds for an arbitrary old WellFormed State. Both old/new full-tag DecidableEq are explicit; no Key equality is required.",
+        "expand_map and decodeSlot_map prove the actual numeric lookup/rank/fuel recursion commutes for all stored node arrays without WellFormed or injectivity. unpack_transport proves actual ordered dictionary lookup naturality without WellFormed or injectivity. expandDictionary_transport and decode_transport derive actual well-formed stored parent and real-row decoder laws.",
+        "compact_decode_commutes compares actual decoded compacted histories, not raw compacted State values. It requires arbitrary old WellFormed state and injective table map, with old/new full-tag equality.",
+        "restoreState actually invokes the new State Option decoder, inverse-maps its full typed traces under bijection, and uses the actual stored new root underlying V value to pack common OLD rooted payloads. restore_transport derives its exact output for actual transported old WellFormed states. certified_transport requires an explicit Certificate whose entries equal those actual old derived rooted rows; it consumes certificate.reuse_of_same_decoding against the certificate own pack and separately retains outer root equality, including empty rows. Rooted repacking additionally requires DecidableEq V."
+      ],
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "design_reference": "cache/research/state-coupled-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
     },
     {
       "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableState.lean",
@@ -31100,6 +31852,199 @@
       "design_reference": "cache/research/compaction-fourier-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
     },
     {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableReindex.lean",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableReindex.lean",
+      "sha256": "83fc343c02d16384124ce39ed4b3f996f7a7000ee4dbba05d2015b153a9aa53c",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableReindex",
+      "namespaces": [
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableReindex"
+      ],
+      "public_declarations": [
+        {
+          "kind": "def",
+          "name": "mapEdge",
+          "line": 33
+        },
+        {
+          "kind": "def",
+          "name": "mapTrace",
+          "line": 38
+        },
+        {
+          "kind": "theorem",
+          "name": "mapEdge_injective",
+          "line": 41
+        },
+        {
+          "kind": "theorem",
+          "name": "mapTrace_injective",
+          "line": 48
+        },
+        {
+          "kind": "theorem",
+          "name": "mapTrace_valid",
+          "line": 52
+        },
+        {
+          "kind": "def",
+          "name": "mapNode",
+          "line": 61
+        },
+        {
+          "kind": "theorem",
+          "name": "mapNode_rank",
+          "line": 65
+        },
+        {
+          "kind": "theorem",
+          "name": "mapNode_parent",
+          "line": 68
+        },
+        {
+          "kind": "def",
+          "name": "transport",
+          "line": 73
+        },
+        {
+          "kind": "theorem",
+          "name": "transport_root",
+          "line": 77
+        },
+        {
+          "kind": "theorem",
+          "name": "transport_references",
+          "line": 80
+        },
+        {
+          "kind": "theorem",
+          "name": "transport_node_lookup",
+          "line": 83
+        },
+        {
+          "kind": "theorem",
+          "name": "expand_map",
+          "line": 87
+        },
+        {
+          "kind": "theorem",
+          "name": "decodeSlot_map",
+          "line": 120
+        },
+        {
+          "kind": "def",
+          "name": "mapRows",
+          "line": 130
+        },
+        {
+          "kind": "theorem",
+          "name": "unpack_transport",
+          "line": 135
+        },
+        {
+          "kind": "theorem",
+          "name": "mapTrace_idxOf",
+          "line": 155
+        },
+        {
+          "kind": "theorem",
+          "name": "map_cell",
+          "line": 174
+        },
+        {
+          "kind": "theorem",
+          "name": "transport_wellFormed",
+          "line": 195
+        },
+        {
+          "kind": "theorem",
+          "name": "expandDictionary_transport",
+          "line": 222
+        },
+        {
+          "kind": "theorem",
+          "name": "decode_transport",
+          "line": 230
+        },
+        {
+          "kind": "theorem",
+          "name": "compact_decode_commutes",
+          "line": 238
+        },
+        {
+          "kind": "theorem",
+          "name": "inverse_mapEdge",
+          "line": 253
+        },
+        {
+          "kind": "theorem",
+          "name": "inverse_mapRows",
+          "line": 262
+        },
+        {
+          "kind": "def",
+          "name": "rootedRows",
+          "line": 273
+        },
+        {
+          "kind": "def",
+          "name": "restoreState",
+          "line": 279
+        },
+        {
+          "kind": "theorem",
+          "name": "restore_transport",
+          "line": 288
+        },
+        {
+          "kind": "theorem",
+          "name": "certified_transport",
+          "line": 300
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.RoleRelationReindex"
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableReindex"
+      ],
+      "subject": "Combinatorics",
+      "object": "DirectedGraph",
+      "source_role": "library",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableReindex.lean",
+      "placement_rationale": "Actual stored prefix-state transport by full typed relation-table tags belong to Combinatorics/DirectedGraph; generic certificates remain in Logic/FiniteSequences.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "83fc343c02d16384124ce39ed4b3f996f7a7000ee4dbba05d2015b153a9aa53c",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/prefix-table-reindex-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_prefix_table_reindex.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "mapEdge and mapTrace use the actual source-target-role-preserving quiver prefunctor. mapNode changes only its actual last edge; transport maps the actual stored root and every complete dictionary trace while copying numeric ranks, parent slots and ordered real references.",
+        "mapTrace_idxOf is proved by actual list equality search under relation-index injectivity; map_cell then derives the exact new stored cell equation. transport_wellFormed proves dictionary Nodup, prefix closure, rooted validity, exact cells and reference bounds for an arbitrary old WellFormed State. Both old/new full-tag DecidableEq are explicit; no Key equality is required.",
+        "expand_map and decodeSlot_map prove the actual numeric lookup/rank/fuel recursion commutes for all stored node arrays without WellFormed or injectivity. unpack_transport proves actual ordered dictionary lookup naturality without WellFormed or injectivity. expandDictionary_transport and decode_transport derive actual well-formed stored parent and real-row decoder laws.",
+        "compact_decode_commutes compares actual decoded compacted histories, not raw compacted State values. It requires arbitrary old WellFormed state and injective table map, with old/new full-tag equality.",
+        "restoreState actually invokes the new State Option decoder, inverse-maps its full typed traces under bijection, and uses the actual stored new root underlying V value to pack common OLD rooted payloads. restore_transport derives its exact output for actual transported old WellFormed states. certified_transport requires an explicit Certificate whose entries equal those actual old derived rooted rows; it consumes certificate.reuse_of_same_decoding against the certificate own pack and separately retains outer root equality, including empty rows. Rooted repacking additionally requires DecidableEq V."
+      ],
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "design_reference": "cache/research/state-coupled-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
       "path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableState.lean",
       "original_path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableState.lean",
       "sha256": "bc2398f5aae427a813c22b6025b9ca41c99c6bbfb9b9228ce49d1326a9870c3a",
@@ -31520,7 +32465,8 @@
       ],
       "reverse_consumers": [
         "GRWTSK",
-        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.RoleRelationReindex"
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.RoleRelationReindex",
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableReindex"
       ],
       "subject": "Combinatorics",
       "object": "DirectedGraph",
@@ -63427,19 +64373,19 @@
   ],
   "current_inventory": {
     "head": "854e04dc182c36b00479b642e6301f47acc81e5f",
-    "lean_source_count": 745,
-    "active_source_count": 682,
+    "lean_source_count": 752,
+    "active_source_count": 689,
     "candidate_source_count": 63,
     "counts_by_role": {
       "audit-driver": 35,
-      "library": 383,
-      "negative-control": 142,
-      "positive-check": 122
+      "library": 386,
+      "negative-control": 144,
+      "positive-check": 124
     },
     "counts_by_subject": {
       "Algebra": 19,
-      "Analysis": 248,
-      "Combinatorics": 47,
+      "Analysis": 252,
+      "Combinatorics": 50,
       "Data": 1,
       "DynamicalSystems": 16,
       "GroupTheory": 4,
@@ -70216,6 +71162,23 @@
     "replays": [
       "evidence/Analysis/MellinTransform/gaussian-density-moments-checks-2026-10-15.json",
       "evidence/Combinatorics/DirectedGraph/role-relation-reindex-checks-2026-10-15.json"
+    ],
+    "scope": "Incremental selected registration; no historical full-replay hashes or failed receipts refreshed."
+  },
+  "state_coupled_additions": {
+    "date": "2026-10-15",
+    "paths": [
+      "GRWTSK/Combinatorics/DirectedGraph/PrefixTableReindex.lean",
+      "GRWTSK/Analysis/Calculus/CompactCutoff.lean",
+      "GRWTSK/Analysis/MellinTransform/GaussianCoupledSeparation.lean",
+      "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableReindex.lean",
+      "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixReindexStaleRoleIds.lean",
+      "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianCoupledSeparation.lean",
+      "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianCoupledMissingActive.lean"
+    ],
+    "replays": [
+      "evidence/Analysis/MellinTransform/gaussian-coupled-separation-checks-2026-10-15.json",
+      "evidence/Combinatorics/DirectedGraph/prefix-table-reindex-checks-2026-10-15.json"
     ],
     "scope": "Incremental selected registration; no historical full-replay hashes or failed receipts refreshed."
   }

@@ -1,0 +1,14 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "state-coupled-source-scout",
+  "owner": "cache_taxonomy",
+  "at": "2026-10-15T23:34:06.998647+00:00",
+  "kind": "bounded-next-source-context",
+  "context": {
+    "path": ".local/state-coupled-source-scout/603f567968604c9ab808a5ae5307149c/slots-next-source-context.json",
+    "sha256": "3a0db9ae43fd2cf24c47ad3dfdea350ae82a36e79057a96b65e66ba424f48497",
+    "bytes": 6699
+  },
+  "status": "NOT_RUN",
+  "scope": "Read only3 exact nextfiles from known import chain, no repeated broad search. No source/native/docs/sharedmetadata/Git/remote writes."
+}
