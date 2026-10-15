@@ -206,9 +206,14 @@ rows. Actual parent expansion and indexed decoding recover the complete
 old and new keyed histories. Auxiliary prefixes do not become communication
 rows. The root remains explicit, and old evidence covers only its original
 premises. The [stable extension decision](../../cache/decisions/incremental-prefix-table-v1.json)
-records this finite one-step construction: the base is canonical and the
-output generally noncanonical, so arbitrary stored-state iteration remains
-open. It proves no operational JSON/hash/zlib/IO correspondence or authority.
+records its finite one-step construction from a canonical base, with a
+generally noncanonical output. The [stored-state result](../mathematics/Combinatorics/DirectedGraph/prefix-table-state.md)
+now derives actual expansion from a structural invariant on arbitrary
+stored dictionaries and parent cells, then proves stable update closure
+and actual two-step row decoding. The [stored-state decision](../../cache/decisions/prefix-table-state-v2.json)
+requires this invariant and preserves semantic ordered histories;
+different update groupings may have different dictionaries. No operational
+JSON/hash/zlib/IO correspondence or authority follows.
 
 See [cache operations](../how-to/cache.md), the
 [taxonomy](../../cache/taxonomy.json), and the

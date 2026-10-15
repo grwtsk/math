@@ -1,0 +1,10 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "gaussian-remote-seminorms-formal",
+  "event": "dev-lock-acquired",
+  "at": "2026-10-15T21:59:26.434536+00:00",
+  "owner": "cache_adapter",
+  "attempt": ".local/gaussian-remote-seminorms/fef32e2ebce64330897ccca8e900b4bb/attempts/Scratch-attempt02",
+  "source_sha256": "e50de8626a4418b547123c0f37d94b9f3caef08a9820639524e6bd61da2061a9",
+  "competing_jobs": []
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "gaussian-remote-seminorms-formal",
+  "owner": "cache_adapter",
+  "event": "design-and-contract",
+  "at": "2026-10-15T21:58:52.863348+00:00",
+  "scratch": ".local/gaussian-remote-seminorms/fef32e2ebce64330897ccca8e900b4bb",
+  "contract": "Actual all-real weighted finite Gaussian seminorm profiles, nonnegative power/envelope bounds from accepted exponent(a+k) theorem, scalar-kernel weighted sums, actual \u00b1N remote cutoff sum and uniform-y p00 consumer. Constants before all Z,j,A,y. No density/physical supplier assumed.",
+  "allocation": [
+    "GRWTSK/Analysis/MellinTransform/GaussianRemoteSeminorms.lean",
+    "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianRemoteSeminorms.lean",
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianRemoteMissingCutoff.lean"
+  ],
+  "primary_source": {
+    "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+    "path": "lean/OAI/NumberTheory/DirichletL/Detector/GaussianTailBudget.lean",
+    "sha256": "38f614d4aa36aff2966a4143f0fd73876902f38004d643acf22d3a41716f071b",
+    "git_blob": "19a1a25b04c89d50d99e0fdae1ba1295609e554e"
+  },
+  "status": "written-in-ignored-scratch-not-replayed"
+}

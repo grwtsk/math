@@ -1,0 +1,10 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "prefix-table-state-formal",
+  "owner": "indexed_dictionary",
+  "at": "2026-10-15T22:03:53.619864+00:00",
+  "kind": "native-lock-acquired",
+  "source": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableState.lean",
+  "source_sha256": "1e1d0bed09dc9bcac4a0b3466db8aa277cd964c08903baef809b4257dbb8c1da",
+  "guard_competing_jobs": []
+}

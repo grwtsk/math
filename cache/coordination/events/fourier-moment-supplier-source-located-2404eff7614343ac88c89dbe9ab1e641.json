@@ -1,0 +1,31 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "state-remote-source-scout",
+  "event": "fourier-moment-supplier-source-located",
+  "owner": "cache_taxonomy",
+  "at": "2026-10-15T22:06:47.270945+00:00",
+  "source": {
+    "repository": "openai/math",
+    "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+    "path": "lean/OAI/NumberTheory/DirichletL/Mellin/LogProfiles.lean",
+    "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/Mellin/LogProfiles.lean",
+    "archive": ".local/state-remote-source-scout/4f3b0a0ef1724a3ca08237286c1db3a8/LogProfiles-pinned.lean",
+    "sha256": "ff8735e421a2ee659df15272704206f2d114d7e2a849e8a755d545508f4038be",
+    "git_blob": "4ca0df6768674c87654fe3637be3851c8c6d12cc",
+    "bytes": 66745,
+    "selected_scope": "Selected exactgenericFourier slices453ff,789-906,1113-1186 only; surrounding log/arithmetic code not read/ported by this source review.",
+    "native_status": "NOT_RUN"
+  },
+  "manifest": {
+    "path": ".local/state-remote-source-scout/4f3b0a0ef1724a3ca08237286c1db3a8/next-fourier-moment-manifest-r2.json",
+    "sha256": "baa1f263776ca7a5a0da4e96439122472c1f075d4571b2c630c02f52b3836b9b",
+    "bytes": 4350
+  },
+  "exact_anchors": "FourierBridge namespace409; coefficient moment453; derivative-integral transfer789; uniform seminorm810; uniform coefficient moment869; coefficientMomentBound1113/nonnegative1118; uniform_fourier_one_plus_moment1123-1186.",
+  "statement": "For actual Schwartz g,J natural,S,C>=0 and actual source-pair seminorm bounds to derivative orderJ+volume.integrablePower, S*integral(1+normt)^J*norm(Fourierg t)<=2^J*(coefficientMomentBound0C+coefficientMomentBoundJC).",
+  "proof_boundary": "Actual genericSchwartz Fourier/integral machinery, not an assumed desired Fourier moment. Source789 uses Mathlib.Real.pow_mul_norm_iteratedFDeriv_fourier_le and actual weighted derivative integrability; uniform coefficient transfer composes with actual polynomial Fourier moment bounds.",
+  "preservation": "Prior source-bound2e4d9a... UNPROVIDED statement stays immutable/historically accurate. New identity located by bounded exact symbol search in existing22-source import archive, raw/blob checked against pinned tree; no new broad fetch. This event does not confer native admission.",
+  "license_and_credit": "OpenAI project Apache-2.0; no individual header author observed in selected raw source. Imported Mathlib individual authors/licenses must be retained when porting selected reusable Analysis slices.",
+  "native_status": "NOT_RUN",
+  "review_character": "Correlated same-team source/premise review, not independent validation."
+}
