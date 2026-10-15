@@ -4,16 +4,16 @@
 
 | Inventory | Count |
 |---|---:|
-| Object guides | 8 |
+| Object guides | 9 |
 | Documented object groups | 3 |
-| Distinct primary sources linked | 8 |
-| Lean source modules | 59 |
+| Distinct primary sources linked | 9 |
+| Lean source modules | 62 |
 | Archive intake records | 3 |
 | Selected catalog families | 0 |
 
 These counts measure documentation and source coverage. They do not count accepted theorems or establish that every source module is documented or checked. [Definitions and limits](../../reference/library-pages.md#count-definitions).
 
-At least 544 source declaration commands, including 288 theorem/lemma commands, across 54 parsed Lean source modules; 5 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
+At least 549 source declaration commands, including 291 theorem/lemma commands, across 57 parsed Lean source modules; 5 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
 
 ## FiniteCoverage
 
@@ -25,10 +25,11 @@ Linked primary-source scope: 4 source declaration commands, including 4 theorem/
 
 ## FiniteSequences
 
-6 object guides · 6 distinct linked primary source files.
+7 object guides · 7 distinct linked primary source files.
 
-Linked primary-source scope: 78 source declaration commands, including 60 theorem/lemma commands, across 6 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+Linked primary-source scope: 81 source declaration commands, including 63 theorem/lemma commands, across 7 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
+- [Composition of incremental dictionary decoding](FiniteSequences/incremental-composition.md).
 - [Exact indexed dictionaries](FiniteSequences/indexed-dictionary.md).
 - [Exact ordered history extensions](FiniteSequences/append-only-history.md).
 - [Prefix service intervals and obligation coverage](FiniteSequences/prefix-coverage.md).

@@ -1,0 +1,19 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "composition-source-scout",
+  "event": "completion",
+  "status": "complete-bounded-correlated-source-review",
+  "at": "2026-10-15T18:19:28.347810+00:00",
+  "evidence": "evidence/Logic/FiniteSequences/composition-source-review-2026-10-15.json",
+  "sha256": "a1c50b46630bd832e9ec820821470a4bdfbf59a888fb32c224fb216984b0bc6c",
+  "bytes": 13377,
+  "all_six_final_source_control_hashes_match": true,
+  "anthropic_pin": "e1a4e6508154ea59f030480661590a9fe3018011",
+  "arxiv_primary_version": "1507.00562v1",
+  "finding": "No actionable bounded source defect found. Actual decoder composition is distinguished from Packed/byte equality. Exact closed-complex hypotheses and upstream theorem text retained. Primary-language literature assumptions and dense-core limits are explicit.",
+  "failed_evidence_preserved": "Earlier closed-complex negative helper failure retained; final separately proved prefix and intended mismatch remain separate author receipts.",
+  "native_replay_by_this_task": "NOT_RUN",
+  "independent_validation": false,
+  "no_source_or_shared_metadata_edit": true,
+  "no_commit_or_remote_effect": true
+}

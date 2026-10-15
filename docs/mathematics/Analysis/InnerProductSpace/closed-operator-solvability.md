@@ -50,8 +50,9 @@ for every target.
 The [source](../../../../GRWTSK/Analysis/InnerProductSpace/ClosedOperatorSolvability.lean)
 adapts only the first two supporting results from OpenAI's
 [ComplexSolvability formalization](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/Analysis/InnerProductSpace/ComplexSolvability.lean).
-Later Hilbert-complex and dense-core estimates in that source remain outside
-this port. Upstream project metadata names OpenAI as formalization author;
+The subsequent [Hilbert-complex estimate](closed-complex-solvability.md) has its
+own source and selected replay; the dense-core estimate remains open.
+Upstream project metadata names OpenAI as formalization author;
 the adapted file retains Apache-2.0 terms and its precise source pin.
 
 The [positive consumers](../../../../GRWTSK/Analysis/InnerProductSpace/Checks/Positive/ClosedOperatorSolvability.lean)

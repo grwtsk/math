@@ -67,3 +67,11 @@ Human direction: grwtsk contributors; adaptation/checking assistance: OpenAI Cod
 All density, closedness, pairing and nonnegative-bound premises remain explicit.
 No surrounding Hilbert-complex main result, novelty, independent review or RH
 supplier is asserted. Mathlib retains upstream credit and licensing.
+
+GRWTSK/Analysis/InnerProductSpace/ClosedComplexSolvability.lean additionally
+adapts that pinned source's exists_solution_of_complex_estimate theorem,
+retaining Apache-2.0 terms and its exact actual-domain, closedness, complex
+relation, positive-epsilon and coercive-estimate hypotheses. The dense
+joint-graph core theorem remains a separate unported obligation. Upstream
+OpenAI credit, local human direction and Codex assistance remain as above;
+no surrounding manuscript result, independent review or RH supplier is claimed.

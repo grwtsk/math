@@ -4,16 +4,16 @@
 
 | Inventory | Count |
 |---|---:|
-| Object guides | 17 |
+| Object guides | 18 |
 | Documented object groups | 11 |
-| Distinct primary sources linked | 17 |
-| Lean source modules | 242 |
+| Distinct primary sources linked | 18 |
+| Lean source modules | 245 |
 | Archive intake records | 39 |
 | Selected catalog families | 1 |
 
 These counts measure documentation and source coverage. They do not count accepted theorems or establish that every source module is documented or checked. [Definitions and limits](../../reference/library-pages.md#count-definitions).
 
-At least 1460 source declaration commands, including 1180 theorem/lemma commands, across 205 parsed Lean source modules; 37 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
+At least 1460 source declaration commands, including 1180 theorem/lemma commands, across 205 parsed Lean source modules; 40 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
 
 ## Asymptotics
 
@@ -66,13 +66,14 @@ Linked primary-source scope: 1 source declaration commands, including 1 theorem/
 
 ## InnerProductSpace
 
-3 object guides · 3 distinct linked primary source files.
+4 object guides · 4 distinct linked primary source files.
 
-Linked primary-source scope: At least 13 source declaration commands, including 11 theorem/lemma commands, across 1 parsed Lean source modules; 2 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
+Linked primary-source scope: At least 13 source declaration commands, including 11 theorem/lemma commands, across 1 parsed Lean source modules; 3 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
 
 - [Closed operator solvability from adjoint bounds](InnerProductSpace/closed-operator-solvability.md).
 - [Finite causal response Gram positivity](InnerProductSpace/causal-response-gram.md).
 - [Real polarization and signed quadratic sectors](InnerProductSpace/polarization.md).
+- [Solvability from a closed complex estimate](InnerProductSpace/closed-complex-solvability.md).
 
 ## Integration
 

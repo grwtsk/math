@@ -1,0 +1,16 @@
+{
+  "schema": "repository-agent-task-v1",
+  "id": "closed-complex-formal",
+  "at": "2026-10-15T18:12:12.172064+00:00",
+  "owner": "cache_adapter",
+  "status": "assigned",
+  "base_commit": "367d438a021ac75286bfef1a19339b70597a2eb6",
+  "cache_revision": "24a6468a7c15d3ccf5d6424cd98ede01783dfac564ababb8d5f290bd0987ab77",
+  "paths": [
+    "GRWTSK/Analysis/InnerProductSpace/ClosedComplexSolvability.lean",
+    "GRWTSK/Analysis/InnerProductSpace/Checks/ClosedComplexPositive.lean",
+    "GRWTSK/Analysis/InnerProductSpace/Checks/ClosedComplexNegative.lean"
+  ],
+  "objective": "Port exact OpenAI exists_solution_of_complex_estimate with explicit domains, closedness, complex relation, epsilon positivity and coercive estimate. Keep dense-core theorem as later frontier.",
+  "coordination": "Write immutable completion event with exact source hashes, verification state, failed variants and pending root audit. No commits or shared metadata edits."
+}

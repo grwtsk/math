@@ -349,3 +349,5 @@ import GRWTSK.Logic.FiniteSequences.DecisionCertificate
 import GRWTSK.Logic.FiniteSequences.AppendOnlyHistory
 import GRWTSK.Logic.FiniteSequences.IncrementalDictionary
 import GRWTSK.Analysis.InnerProductSpace.ClosedOperatorSolvability
+import GRWTSK.Logic.FiniteSequences.IncrementalComposition
+import GRWTSK.Analysis.InnerProductSpace.ClosedComplexSolvability

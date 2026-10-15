@@ -1,0 +1,17 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "closed-complex-formal",
+  "event": "scope-refinement-and-start",
+  "at": "2026-10-15T18:14:11.226019+00:00",
+  "paths": [
+    "GRWTSK/Analysis/InnerProductSpace/ClosedComplexSolvability.lean",
+    "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/ClosedComplexSolvability.lean",
+    "GRWTSK/Analysis/InnerProductSpace/Checks/Negative/ClosedComplexMissingEstimate.lean"
+  ],
+  "path_refinement": "Parent refined provisional sibling check filenames to established Checks/Positive and Checks/Negative role locations before any source write. Root harness binds these exact paths.",
+  "archive": ".local/closed-complex/47b12d84dd2f470da1c94e83ee35f33c",
+  "upstream_pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "upstream_sha256": "3bd52605fab93edac918126a231a2f5c7fda48c0e04a8b43104b9bb7fc51d841",
+  "contract": "Port only exists_solution_of_complex_estimate. Preserve complete E/F, no CompleteSpace H premise, explicit actual T-adjoint/S domains, dense closed T, closed S, complex relation, epsilon>0, universal estimate and actual graph-kernel target.",
+  "duplicate_search": "Bounded exact theorem-name search in GRWTSK and pinned Mathlib inner-product sources found no local duplicate. Reuse accepted ClosedOperatorSolvability; jointGraph and dense-core estimate remain frontier."
+}
