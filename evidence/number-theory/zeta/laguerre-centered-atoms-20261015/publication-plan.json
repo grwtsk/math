@@ -1,0 +1,192 @@
+{
+  "all_payload_bytes_verified": true,
+  "archive": "archive-index.json",
+  "archived_payloads": 17,
+  "branch": "main",
+  "direct_payloads": 7,
+  "inspected_parent": "ba77517b0b4e74d36a824d34c2948b276471b844",
+  "inspected_parent_tree": "f7410c61b505cd130e6c791ea235af9f46fe70ff",
+  "operation_limits": {
+    "existing_files_changed": 0,
+    "full_checkout": "git ls-remote failed DNS; partial snapshot matched to live Git blob identities",
+    "full_repository_checks": "NOT_RUN",
+    "native_Lean": "not installed; NOT_RUN",
+    "source_PDFs_published": 0
+  },
+  "original_repository_payloads": 24,
+  "payloads": [
+    {
+      "member": "evidence/number-theory/zeta/laguerre-energy-20261015/README.txt",
+      "path": "evidence/number-theory/zeta/laguerre-energy-20261015/README.txt",
+      "sha256": "ed615b4392a3640462d08c87445bc6ee4c30751a7ca0015fe95839c235cf831a",
+      "size": 3826,
+      "storage": "archive-member"
+    },
+    {
+      "member": "evidence/number-theory/zeta/laguerre-energy-20261015/attempts/early-128-moment-profile.json",
+      "path": "evidence/number-theory/zeta/laguerre-energy-20261015/attempts/early-128-moment-profile.json",
+      "sha256": "eafe76a1401ac8dab8e58122683a918845ee5b7185a88f9e70474eee512c90eb",
+      "size": 67042,
+      "storage": "archive-member"
+    },
+    {
+      "member": "evidence/number-theory/zeta/laguerre-energy-20261015/attempts/initial-test-failure.log",
+      "path": "evidence/number-theory/zeta/laguerre-energy-20261015/attempts/initial-test-failure.log",
+      "sha256": "bc29e015dd4bc6f92d8a31f05a33e2db661a6c079e9e68c2ffe474b9cb2b2be6",
+      "size": 5091,
+      "storage": "archive-member"
+    },
+    {
+      "member": "evidence/number-theory/zeta/laguerre-energy-20261015/attempts/prior-candidate-initial-normal.log",
+      "path": "evidence/number-theory/zeta/laguerre-energy-20261015/attempts/prior-candidate-initial-normal.log",
+      "sha256": "941d1e1b152a74244ad9e6c1807c1147f5e7c4af6e692fa3f7e0a989e3cfe7bc",
+      "size": 3029,
+      "storage": "archive-member"
+    },
+    {
+      "member": "evidence/number-theory/zeta/laguerre-energy-20261015/attempts/prior-candidate-initial-optimized.log",
+      "path": "evidence/number-theory/zeta/laguerre-energy-20261015/attempts/prior-candidate-initial-optimized.log",
+      "sha256": "90e3b4102d9444e3ffb9bc08abc7f860031c041c94c4e38a7df8a78b9591c7e2",
+      "size": 3029,
+      "storage": "archive-member"
+    },
+    {
+      "member": "evidence/number-theory/zeta/laguerre-energy-20261015/attempts/producer-before-empty-interval-fix.py.txt",
+      "path": "evidence/number-theory/zeta/laguerre-energy-20261015/attempts/producer-before-empty-interval-fix.py.txt",
+      "sha256": "9ce60c90442effb9cb847f2f0d715b9050f4a60e660bf6f6c0912c62f0d22b1b",
+      "size": 9502,
+      "storage": "archive-member"
+    },
+    {
+      "member": "evidence/number-theory/zeta/laguerre-energy-20261015/attempts/stage-timing.log",
+      "path": "evidence/number-theory/zeta/laguerre-energy-20261015/attempts/stage-timing.log",
+      "sha256": "6d1b1d95de98c8d0b595fd8587ff3a200cd4116f4dfa1844f3eb428a6e48dbe7",
+      "size": 234,
+      "storage": "archive-member"
+    },
+    {
+      "member": "evidence/number-theory/zeta/laguerre-energy-20261015/check_receipt_controls.py.txt",
+      "path": "evidence/number-theory/zeta/laguerre-energy-20261015/check_receipt_controls.py.txt",
+      "sha256": "4fc0bdb9c4b4a1b6bd17470ada1fad34cc2808176497cc2c1cee8155455f74fb",
+      "size": 2098,
+      "storage": "archive-member"
+    },
+    {
+      "member": "evidence/number-theory/zeta/laguerre-energy-20261015/concurrency.json",
+      "path": "evidence/number-theory/zeta/laguerre-energy-20261015/concurrency.json",
+      "sha256": "ec42e40974d66a6019e5e3ddc52cf3da2c64f3a0cd4a80ee9a1b30fb8e7e241f",
+      "size": 461,
+      "storage": "archive-member"
+    },
+    {
+      "member": null,
+      "path": "evidence/number-theory/zeta/laguerre-energy-20261015/derivation.txt",
+      "sha256": "d3591fc26705e76f0eafc0e66f846d2ff325ce24c2df1e0c2f9cf2cbe2279d36",
+      "size": 12049,
+      "storage": "direct"
+    },
+    {
+      "member": "evidence/number-theory/zeta/laguerre-energy-20261015/execution-attempts.json",
+      "path": "evidence/number-theory/zeta/laguerre-energy-20261015/execution-attempts.json",
+      "sha256": "76cb85dc63ed9310cb4350ae4c44d926fe33d1826efd1015500fa743c854870f",
+      "size": 1324,
+      "storage": "archive-member"
+    },
+    {
+      "member": "evidence/number-theory/zeta/laguerre-energy-20261015/fresh-replay.json.xz",
+      "path": "evidence/number-theory/zeta/laguerre-energy-20261015/fresh-replay.json.xz",
+      "sha256": "4d81806d68c59219ce2ad56907ecc6a01e61a44f23498fc6ddb1e57f9098ee5a",
+      "size": 19256,
+      "storage": "archive-member"
+    },
+    {
+      "member": "evidence/number-theory/zeta/laguerre-energy-20261015/fresh-replay.stderr",
+      "path": "evidence/number-theory/zeta/laguerre-energy-20261015/fresh-replay.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0,
+      "storage": "archive-member"
+    },
+    {
+      "member": null,
+      "path": "evidence/number-theory/zeta/laguerre-energy-20261015/inputs.json",
+      "sha256": "0bb8f00c688d05d1767e1e770ce88abeec6fbfd48753ba0983b1f24428aae6f3",
+      "size": 1419,
+      "storage": "direct"
+    },
+    {
+      "member": "evidence/number-theory/zeta/laguerre-energy-20261015/package-manifest.json",
+      "path": "evidence/number-theory/zeta/laguerre-energy-20261015/package-manifest.json",
+      "sha256": "3bad35261a31635e9b49e046df9b4c8cbcf4f0c5e75545e8a68a57dac98430e2",
+      "size": 6201,
+      "storage": "archive-member"
+    },
+    {
+      "member": "evidence/number-theory/zeta/laguerre-energy-20261015/receipt-controls-normal.json",
+      "path": "evidence/number-theory/zeta/laguerre-energy-20261015/receipt-controls-normal.json",
+      "sha256": "c904e4ae8b47afdec75a2664c6abe24fc41de62e8c21db26c563a4cbe37de95e",
+      "size": 574,
+      "storage": "archive-member"
+    },
+    {
+      "member": "evidence/number-theory/zeta/laguerre-energy-20261015/receipt-controls-optimized.json",
+      "path": "evidence/number-theory/zeta/laguerre-energy-20261015/receipt-controls-optimized.json",
+      "sha256": "c904e4ae8b47afdec75a2664c6abe24fc41de62e8c21db26c563a4cbe37de95e",
+      "size": 574,
+      "storage": "archive-member"
+    },
+    {
+      "member": "evidence/number-theory/zeta/laguerre-energy-20261015/replay-exit.json",
+      "path": "evidence/number-theory/zeta/laguerre-energy-20261015/replay-exit.json",
+      "sha256": "eef042ca5b6974318003a95b1b1fc6d466dbf91d9f55fee7442261a02a63766f",
+      "size": 48,
+      "storage": "archive-member"
+    },
+    {
+      "member": null,
+      "path": "evidence/number-theory/zeta/laguerre-energy-20261015/requirements-tests.txt",
+      "sha256": "47fd19021144e071cc43b6e265aafada0056abe89724ad95bd6e3a8e37995b94",
+      "size": 28,
+      "storage": "direct"
+    },
+    {
+      "member": "evidence/number-theory/zeta/laguerre-energy-20261015/results.json",
+      "path": "evidence/number-theory/zeta/laguerre-energy-20261015/results.json",
+      "sha256": "58a0819c38660e8a0e64bb5b8442fe4eff69a61ee6652aa306946055ed4fa9a6",
+      "size": 9585,
+      "storage": "archive-member"
+    },
+    {
+      "member": null,
+      "path": "evidence/number-theory/zeta/laguerre-energy-20261015/source-ledger.json",
+      "sha256": "bbaced886303ac328cdb0eca5520e87fbcab8307c5d701c95fa8ebe368c2c276",
+      "size": 2701,
+      "storage": "direct"
+    },
+    {
+      "member": null,
+      "path": "scripts/laguerre_discrepancy_energy.py",
+      "sha256": "78ab10cde308dcc273473f10e4ce1c1ed0e35cc9c34ad1a8332788fcc9e9797a",
+      "size": 9817,
+      "storage": "direct"
+    },
+    {
+      "member": null,
+      "path": "scripts/verify_laguerre_discrepancy_energy.py",
+      "sha256": "63e25b9d0f3fe6905ceac3ee9307517c55437613cec7d3e0c1fef58781c732cc",
+      "size": 8911,
+      "storage": "direct"
+    },
+    {
+      "member": null,
+      "path": "tests/test_laguerre_discrepancy_energy.py",
+      "sha256": "5d510a97e7f26d47380b76266a665ac7d26ca49a33b2432e4a256d0cd737c65f",
+      "size": 9477,
+      "storage": "direct"
+    }
+  ],
+  "pending_package_sha256": "daa00db65e7c729928ecd2475069f8083979460c2a7589e84e7e3f68aae45062",
+  "publication_method": "additive Git tree; compare changed paths; non-force expected-head update; confirm remote head",
+  "repository": "grwtsk/math",
+  "schema": "centered-atom-publication-plan-v1",
+  "status": "PREPUBLICATION_RECORD; remote update receipt is external to this commit"
+}
