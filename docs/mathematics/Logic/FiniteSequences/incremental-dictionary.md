@@ -34,6 +34,10 @@ decoding of exactly those old references. This repairs the specific failure of
 [repacking an appended history](append-only-history.md): deduplication within
 the new suffix cannot renumber an old slot.
 
+[Composition of extensions](incremental-composition.md) compares sequential and
+combined batches through their actual decoded rows. Equal decoded outcomes can
+still have different dictionaries and numeric references.
+
 ## Why input validity is necessary
 
 Take an empty dictionary with old reference `(11,0)`. It decodes to `none`.

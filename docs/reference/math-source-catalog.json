@@ -5996,34 +5996,34 @@
     }
   ],
   "counts_by_operation": {
-    "add": 37,
+    "add": 43,
     "keep": 336,
     "move": 206
   },
   "counts_by_role": {
     "audit-driver": 35,
-    "library": 348,
-    "negative-control": 108,
-    "positive-check": 88
+    "library": 350,
+    "negative-control": 110,
+    "positive-check": 90
   },
   "counts_by_subject": {
     "Algebra": 19,
-    "Analysis": 199,
+    "Analysis": 202,
     "Combinatorics": 8,
     "Data": 1,
     "DynamicalSystems": 16,
     "GroupTheory": 4,
     "Library": 1,
     "LinearAlgebra": 53,
-    "Logic": 57,
+    "Logic": 60,
     "MeasureTheory": 5,
     "NumberTheory": 188,
     "Order": 3,
     "Spectral": 25
   },
-  "present_lean_source_count": 642,
+  "present_lean_source_count": 648,
   "schema": "grwtsk-math-source-catalog-v1",
-  "source_count": 579,
+  "source_count": 585,
   "sources": [
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -6121,6 +6121,7 @@
         "GRWTSK.Analysis.InnerProductSpace.CausalLastLabelOperatorCost",
         "GRWTSK.Analysis.InnerProductSpace.CausalRealizationPolynomialObstruction",
         "GRWTSK.Analysis.InnerProductSpace.CausalResponseGram",
+        "GRWTSK.Analysis.InnerProductSpace.ClosedComplexSolvability",
         "GRWTSK.Analysis.InnerProductSpace.ClosedOperatorSolvability",
         "GRWTSK.Analysis.InnerProductSpace.CompactResidualNormalization",
         "GRWTSK.Analysis.InnerProductSpace.CompactSourceGramPositiveDefinite",
@@ -6221,6 +6222,7 @@
         "GRWTSK.Logic.FiniteSequences.AppendOnlyHistory",
         "GRWTSK.Logic.FiniteSequences.DecisionCertificate",
         "GRWTSK.Logic.FiniteSequences.DictionaryRevision",
+        "GRWTSK.Logic.FiniteSequences.IncrementalComposition",
         "GRWTSK.Logic.FiniteSequences.IncrementalDictionary",
         "GRWTSK.Logic.FiniteSequences.IndexedDictionary",
         "GRWTSK.Logic.FiniteSequences.PrefixCoverage",
@@ -6548,7 +6550,7 @@
         "GRWTSK/Logic/ProofChecking/Checks/OwnedDeclarationAudit.lean"
       ],
       "runner": "python3 -B scripts/check_ccc_energy.py",
-      "sha256": "491c21e0fe1b673faacddfbfbb0d722f2eac177336ddcab774219f83ad3dbb1c",
+      "sha256": "f50a549c24b022490232688ce774372492320e2fdd881e359182d8b382fcfa5f",
       "source_role": "library",
       "source_root": ".",
       "subject": "Library",
@@ -6557,7 +6559,7 @@
         "inventory": "observed-current-bytes",
         "layout": "repository baseline remains failed",
         "lean": "umbrella not replayed after selected import additions",
-        "source_sha256": "491c21e0fe1b673faacddfbfbb0d722f2eac177336ddcab774219f83ad3dbb1c"
+        "source_sha256": "f50a549c24b022490232688ce774372492320e2fdd881e359182d8b382fcfa5f"
       },
       "working_tree_state": "tracked-modified"
     },
@@ -17631,6 +17633,91 @@
       "working_tree_state": "tracked-clean"
     },
     {
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "explicit_premises": [
+        "RCLike scalar; complete inner product E and F; inner product H without completeness assumption.",
+        "Dense actual T.domain; closed T and S graphs.",
+        "For every actual T.domain element, (T x,0) belongs to S.graph.",
+        "Strict epsilon positivity and universal coercive estimate on actual adjoint-domain/S-domain intersection.",
+        "Target (f,0) belongs to S.graph."
+      ],
+      "external_source": {
+        "formalization_author": "OpenAI",
+        "license": "Apache-2.0",
+        "path": "lean/OAI/Analysis/InnerProductSpace/ComplexSolvability.lean",
+        "repository": "openai/math",
+        "revision": "1581d4cbdd69a0faf34b2089614fe2a814316a6a"
+      },
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Analysis.InnerProductSpace.ClosedComplexSolvability"
+      ],
+      "logical_status": "intended rejected control; no theorem admission",
+      "module": "GRWTSK.Analysis.InnerProductSpace.Checks.Negative.ClosedComplexMissingEstimate",
+      "namespaces": [
+        "GRWTSK.Analysis.InnerProductSpace.ClosedComplexSolvability.NegativeChecks"
+      ],
+      "object": "InnerProductSpace/Checks/Negative",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Analysis/InnerProductSpace/Checks/Negative/ClosedComplexMissingEstimate.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Analysis/InnerProductSpace/Checks/Negative/ClosedComplexMissingEstimate.lean",
+      "placement_rationale": "Composition of actual finite dictionary decoders belongs to finite-sequence logic; coercive complex estimates for closed partial operators belong to Hilbert-space analysis.",
+      "public_declarations": [
+        {
+          "kind": "theorem",
+          "line": 19,
+          "name": "zero_dense"
+        },
+        {
+          "kind": "theorem",
+          "line": 23,
+          "name": "zero_closed"
+        },
+        {
+          "kind": "theorem",
+          "line": 37,
+          "name": "zero_complex"
+        },
+        {
+          "kind": "theorem",
+          "line": 41,
+          "name": "zero_kernel_unit"
+        },
+        {
+          "kind": "theorem",
+          "line": 44,
+          "name": "zero_has_no_unit_solution"
+        },
+        {
+          "kind": "theorem",
+          "line": 62,
+          "name": "zero_estimate_fails"
+        }
+      ],
+      "reverse_consumers": [],
+      "runner": "python3 -B scripts/check_closed_complex.py",
+      "sha256": "c3e6ef4001f46391a26ba653d87e510e4ee187037cd3a9d6ef01456844e40228",
+      "source_role": "negative-control",
+      "source_root": "GRWTSK",
+      "subject": "Analysis",
+      "target_path": "GRWTSK/Analysis/InnerProductSpace/Checks/Negative/ClosedComplexMissingEstimate.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Analysis/InnerProductSpace/closed-complex-checks-2026-10-15.json",
+        "source_sha256": "c3e6ef4001f46391a26ba653d87e510e4ee187037cd3a9d6ef01456844e40228"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
       "git_blob": null,
       "imports": [
@@ -18004,6 +18091,60 @@
       "working_tree_state": "tracked-renamed"
     },
     {
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "explicit_premises": [
+        "RCLike scalar; complete inner product E and F; inner product H without completeness assumption.",
+        "Dense actual T.domain; closed T and S graphs.",
+        "For every actual T.domain element, (T x,0) belongs to S.graph.",
+        "Strict epsilon positivity and universal coercive estimate on actual adjoint-domain/S-domain intersection.",
+        "Target (f,0) belongs to S.graph."
+      ],
+      "external_source": {
+        "formalization_author": "OpenAI",
+        "license": "Apache-2.0",
+        "path": "lean/OAI/Analysis/InnerProductSpace/ComplexSolvability.lean",
+        "repository": "openai/math",
+        "revision": "1581d4cbdd69a0faf34b2089614fe2a814316a6a"
+      },
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Analysis.InnerProductSpace.ClosedComplexSolvability"
+      ],
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.Analysis.InnerProductSpace.Checks.Positive.ClosedComplexSolvability",
+      "namespaces": [
+        "GRWTSK.Analysis.InnerProductSpace.ClosedComplexSolvability.PositiveChecks"
+      ],
+      "object": "InnerProductSpace/Checks/Positive",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/ClosedComplexSolvability.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/ClosedComplexSolvability.lean",
+      "placement_rationale": "Composition of actual finite dictionary decoders belongs to finite-sequence logic; coercive complex estimates for closed partial operators belong to Hilbert-space analysis.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B scripts/check_closed_complex.py",
+      "sha256": "f4221308d31ec7efc8916cfc58fb7afecea6e358407311208c37e0fea15c32ff",
+      "source_role": "positive-check",
+      "source_root": "GRWTSK",
+      "subject": "Analysis",
+      "target_path": "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/ClosedComplexSolvability.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Analysis/InnerProductSpace/closed-complex-checks-2026-10-15.json",
+        "source_sha256": "f4221308d31ec7efc8916cfc58fb7afecea6e358407311208c37e0fea15c32ff"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
       "git_blob": null,
       "imports": [
@@ -18117,6 +18258,71 @@
       "working_tree_state": "tracked-renamed"
     },
     {
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "explicit_premises": [
+        "RCLike scalar; complete inner product E and F; inner product H without completeness assumption.",
+        "Dense actual T.domain; closed T and S graphs.",
+        "For every actual T.domain element, (T x,0) belongs to S.graph.",
+        "Strict epsilon positivity and universal coercive estimate on actual adjoint-domain/S-domain intersection.",
+        "Target (f,0) belongs to S.graph."
+      ],
+      "external_source": {
+        "formalization_author": "OpenAI",
+        "license": "Apache-2.0",
+        "path": "lean/OAI/Analysis/InnerProductSpace/ComplexSolvability.lean",
+        "repository": "openai/math",
+        "revision": "1581d4cbdd69a0faf34b2089614fe2a814316a6a"
+      },
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Analysis.InnerProductSpace.ClosedOperatorSolvability",
+        "Mathlib.Tactic.Ring"
+      ],
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.Analysis.InnerProductSpace.ClosedComplexSolvability",
+      "namespaces": [
+        "GRWTSK.Analysis.InnerProductSpace.ClosedComplexSolvability"
+      ],
+      "object": "InnerProductSpace",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Analysis/InnerProductSpace/ClosedComplexSolvability.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Analysis/InnerProductSpace/ClosedComplexSolvability.lean",
+      "placement_rationale": "Composition of actual finite dictionary decoders belongs to finite-sequence logic; coercive complex estimates for closed partial operators belong to Hilbert-space analysis.",
+      "public_declarations": [
+        {
+          "kind": "theorem",
+          "line": 40,
+          "name": "exists_solution_of_complex_estimate"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Analysis.InnerProductSpace.Checks.Negative.ClosedComplexMissingEstimate",
+        "GRWTSK.Analysis.InnerProductSpace.Checks.Positive.ClosedComplexSolvability"
+      ],
+      "runner": "python3 -B scripts/check_closed_complex.py",
+      "sha256": "4b43a6bd90cfdec303bfa073e151847c40103bcfc84b7b27696872cadeb4a94a",
+      "source_role": "library",
+      "source_root": "GRWTSK",
+      "subject": "Analysis",
+      "target_path": "GRWTSK/Analysis/InnerProductSpace/ClosedComplexSolvability.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Analysis/InnerProductSpace/closed-complex-checks-2026-10-15.json",
+        "source_sha256": "4b43a6bd90cfdec303bfa073e151847c40103bcfc84b7b27696872cadeb4a94a"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
       "git_blob": null,
       "imports": [
@@ -18151,7 +18357,8 @@
       "reverse_consumers": [
         "GRWTSK",
         "GRWTSK.Analysis.InnerProductSpace.Checks.Negative.ClosedOperatorMissingPairing",
-        "GRWTSK.Analysis.InnerProductSpace.Checks.Positive.ClosedOperatorSolvability"
+        "GRWTSK.Analysis.InnerProductSpace.Checks.Positive.ClosedOperatorSolvability",
+        "GRWTSK.Analysis.InnerProductSpace.ClosedComplexSolvability"
       ],
       "runner": "python3 -B scripts/check_closed_operator.py",
       "sha256": "0a46bd0dfb3a7ba86fde0a5331103e72a5263396bce7abcbf35137b48797df2c",
@@ -32445,6 +32652,48 @@
       "working_tree_state": "untracked-at-selected-replay"
     },
     {
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "explicit_premises": [
+        "Finite lists with decidable payload equality.",
+        "Valid original references for general composition; fresh pack specialization proves this premise through pack_valid."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Logic.FiniteSequences.IncrementalComposition"
+      ],
+      "logical_status": "intended rejected control; no theorem admission",
+      "module": "GRWTSK.Logic.FiniteSequences.Checks.Negative.IncrementalCompositionRepresentation",
+      "namespaces": [],
+      "object": "FiniteSequences/Checks/Negative",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Logic/FiniteSequences/Checks/Negative/IncrementalCompositionRepresentation.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Logic/FiniteSequences/Checks/Negative/IncrementalCompositionRepresentation.lean",
+      "placement_rationale": "Composition of actual finite dictionary decoders belongs to finite-sequence logic; coercive complex estimates for closed partial operators belong to Hilbert-space analysis.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B scripts/check_incremental_composition.py",
+      "sha256": "c73ccb9c485298ccdcdfd289e88609c4bf7b23dc92a247473ee12cf3a7c15e36",
+      "source_role": "negative-control",
+      "source_root": "GRWTSK",
+      "subject": "Logic",
+      "target_path": "GRWTSK/Logic/FiniteSequences/Checks/Negative/IncrementalCompositionRepresentation.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Logic/FiniteSequences/incremental-composition-checks-2026-10-15.json",
+        "source_sha256": "c73ccb9c485298ccdcdfd289e88609c4bf7b23dc92a247473ee12cf3a7c15e36"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
       "git_blob": null,
       "imports": [
@@ -32606,6 +32855,48 @@
         "lean": "see immutable selected replay receipt",
         "replay_binding": "evidence/Logic/FiniteSequences/indexed-dictionary-checks-2026-10-15.json",
         "source_sha256": "d8be12d9a614a86ca3355fd4a5a9df7f0fe7425e282fe3ac3c2804d0ce1800cc"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "explicit_premises": [
+        "Finite lists with decidable payload equality.",
+        "Valid original references for general composition; fresh pack specialization proves this premise through pack_valid."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Logic.FiniteSequences.IncrementalComposition"
+      ],
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.Logic.FiniteSequences.Checks.Positive.IncrementalComposition",
+      "namespaces": [],
+      "object": "FiniteSequences/Checks/Positive",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Logic/FiniteSequences/Checks/Positive/IncrementalComposition.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Logic/FiniteSequences/Checks/Positive/IncrementalComposition.lean",
+      "placement_rationale": "Composition of actual finite dictionary decoders belongs to finite-sequence logic; coercive complex estimates for closed partial operators belong to Hilbert-space analysis.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B scripts/check_incremental_composition.py",
+      "sha256": "21067dc0e6cc6947312a592542d00ff990a14a3183d130d33875e1b238d23dea",
+      "source_role": "positive-check",
+      "source_root": "GRWTSK",
+      "subject": "Logic",
+      "target_path": "GRWTSK/Logic/FiniteSequences/Checks/Positive/IncrementalComposition.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Logic/FiniteSequences/incremental-composition-checks-2026-10-15.json",
+        "source_sha256": "21067dc0e6cc6947312a592542d00ff990a14a3183d130d33875e1b238d23dea"
       },
       "working_tree_state": "untracked-at-selected-replay"
     },
@@ -32874,6 +33165,70 @@
       "working_tree_state": "untracked-at-selected-replay"
     },
     {
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "explicit_premises": [
+        "Finite lists with decidable payload equality.",
+        "Valid original references for general composition; fresh pack specialization proves this premise through pack_valid."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Logic.FiniteSequences.IncrementalDictionary"
+      ],
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.Logic.FiniteSequences.IncrementalComposition",
+      "namespaces": [
+        "GRWTSK.Logic.FiniteSequences.IncrementalComposition"
+      ],
+      "object": "FiniteSequences",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Logic/FiniteSequences/IncrementalComposition.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Logic/FiniteSequences/IncrementalComposition.lean",
+      "placement_rationale": "Composition of actual finite dictionary decoders belongs to finite-sequence logic; coercive complex estimates for closed partial operators belong to Hilbert-space analysis.",
+      "public_declarations": [
+        {
+          "kind": "theorem",
+          "line": 28,
+          "name": "unpack_appendEntries_compose"
+        },
+        {
+          "kind": "theorem",
+          "line": 38,
+          "name": "unpack_appendEntries_twice_pack"
+        },
+        {
+          "kind": "theorem",
+          "line": 44,
+          "name": "sequential_representation_counterexample"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Logic.FiniteSequences.Checks.Negative.IncrementalCompositionRepresentation",
+        "GRWTSK.Logic.FiniteSequences.Checks.Positive.IncrementalComposition"
+      ],
+      "runner": "python3 -B scripts/check_incremental_composition.py",
+      "sha256": "7dbd7e782e1c21e8855223efa03b1d4c690eddcc3df8c7a8f7c8da6c722ac89c",
+      "source_role": "library",
+      "source_root": "GRWTSK",
+      "subject": "Logic",
+      "target_path": "GRWTSK/Logic/FiniteSequences/IncrementalComposition.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Logic/FiniteSequences/incremental-composition-checks-2026-10-15.json",
+        "source_sha256": "7dbd7e782e1c21e8855223efa03b1d4c690eddcc3df8c7a8f7c8da6c722ac89c"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
       "git_blob": null,
       "imports": [
@@ -32981,7 +33336,8 @@
       "reverse_consumers": [
         "GRWTSK",
         "GRWTSK.Logic.FiniteSequences.Checks.Negative.IncrementalDictionaryMissingValidity",
-        "GRWTSK.Logic.FiniteSequences.Checks.Positive.IncrementalDictionary"
+        "GRWTSK.Logic.FiniteSequences.Checks.Positive.IncrementalDictionary",
+        "GRWTSK.Logic.FiniteSequences.IncrementalComposition"
       ],
       "runner": "python3 -B scripts/check_incremental_dictionary.py",
       "sha256": "dc5874410f3f41a838757159de9f225c09572d0748fceda554e88314ae4b5177",
