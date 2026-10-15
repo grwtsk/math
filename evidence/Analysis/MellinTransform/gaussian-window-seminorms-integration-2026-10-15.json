@@ -1,0 +1,89 @@
+{
+  "schema": "selected-mathematical-integration-v1",
+  "at": "2026-10-15T21:28:50.364462+00:00",
+  "source": {
+    "path": "GRWTSK/Analysis/MellinTransform/GaussianWindowSeminorms.lean",
+    "sha256": "dcfa87ebe43582e02c38b1cc820656fde9160d7d633a6a99e6a3ed6b1e3d93d0"
+  },
+  "native_receipt": {
+    "path": "evidence/Analysis/MellinTransform/gaussian-window-seminorms-checks-2026-10-15.json",
+    "sha256": "b3544d043e1da387df71584a3a2d20c5aa784e8eac03d148848c79045101b93d"
+  },
+  "source_review": {
+    "path": "evidence/Analysis/MellinTransform/gaussian-window-seminorms-source-review-2026-10-15.json",
+    "sha256": "2846860b1c568159868aa667ab0713b04bca978c69aec9656776a23ef2c47d50"
+  },
+  "owned_declarations": 148,
+  "selected_library_owned_count": 19,
+  "owned_modules": [
+    {
+      "declarations": 21,
+      "module": "GRWTSK.Analysis.PartitionOfUnity.DyadicAnnulus"
+    },
+    {
+      "declarations": 23,
+      "module": "GRWTSK.Analysis.MellinTransform.ReverseInversion"
+    },
+    {
+      "declarations": 20,
+      "module": "GRWTSK.Analysis.MellinTransform.LogarithmicGaussian"
+    },
+    {
+      "declarations": 22,
+      "module": "GRWTSK.Analysis.MellinTransform.NormalizedGaussian"
+    },
+    {
+      "declarations": 21,
+      "module": "GRWTSK.Analysis.MellinTransform.CompactGaussianWindow"
+    },
+    {
+      "declarations": 13,
+      "module": "GRWTSK.Analysis.MellinTransform.ScaledGaussianDerivatives"
+    },
+    {
+      "declarations": 19,
+      "module": "GRWTSK.Analysis.MellinTransform.GaussianWindowSeminorms"
+    },
+    {
+      "declarations": 9,
+      "module": "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianWindowSeminorms"
+    }
+  ],
+  "operational_replay_guards": {
+    "path": "evidence/Combinatorics/DirectedGraph/revision-seminorm-operational-controls-2026-10-15.json",
+    "sha256": "1f18b84c52bd77a06a00d35c94e49a3acc03ffadd1d9e4bde985570834d65d38"
+  },
+  "contribution_roles": [
+    "grwtsk contributors: human mathematical direction",
+    "OpenAI Codex: local adaptation/formalization/checking; correlated source/model review",
+    "Lean/Mathlib: named upstream authors, definitions/proofs and licensing retained"
+  ],
+  "limits": [
+    "Fresh complete selected local import closure and accepted positive controls; trust0/fatal, complete owned-declaration/transitive-axiom census, only propext/Classical.choice/Quot.sound.",
+    "Generated local object families frozen and rechecked; clean pinned dependency objects reused/fingerprinted, not cold rebuilt.",
+    "Whole umbrella not replayed after import additions. No independent model validation, mathematical novelty, operational JSON/Python/hash/zlib/IO refinement, proof/permission authority, whole arithmetic detector or RH supplier."
+  ],
+  "exact_contracts": [
+    "Actual fixed H(y)=A(y)/(sqrt y:Complex) compact/smooth and actual Schwartz packaging; exact G factorization with scaled normalized P and derivatives zero outside[1/2,2].",
+    "For every real a and Nat n, actual iterated product rule and accepted scaled-P bounds give C(a,n)>0 independent of Z>0,j,y in[1/2,2] for actual G derivatives bounded by C*(2^j/Z)^(-a).",
+    "For real a, Nat k,n, actual support and |y|^k<=2^k yield C(a,k,n) for existing actual G Schwartz seminorm, independent of Z>0,j.",
+    "Finite seminorm family S has C(a,S); actual exponents +/-b estimates combine to C(b,S)*min(r^b,r^(-b)), r=2^j/Z>0. No desired bound assumed as premise."
+  ],
+  "accepted_controls": [
+    "Generic actual derivative and two-sided finite-family consumers; concrete two-index family{(0,0),(1,2)} atZ1, exponent2, allNatj with oneconstant.",
+    "Actual A(3/4), P0 and sqrt(3/4) nonzero imply G(0,0,3/4)!=0. For every real C, actual n0,a1 zero-scale bound is false since totalized RHS0.",
+    "Sole negative offers 0<=0 as required 0<0; full actual value obstruction is separately proved in accepted positive module."
+  ],
+  "primary_source": {
+    "repository": "openai/math",
+    "commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+    "path": "lean/OAI/NumberTheory/DirichletL/Detector/GaussianSeminorm.lean",
+    "sha256": "f355f3fe007d6f1f3bb535ca92e0e37e996ffc214669ae3f33cb1a8f2d11b25a",
+    "git_blob": "2ead043c3ef474d221a4f078c990f944a5efb11a"
+  },
+  "license": "Apache-2.0; OpenAI project author and named Mathlib Schwartz/smooth/sqrt/iterated-derivative authors retained.",
+  "open_obligations": [
+    "Function-level omitted-Z0 counterexample makes no nonsmoothness claim and needs no Schwartz constructor at zero.",
+    "Original ideal-pair/masks/Hecke/calibration/norm summability and full physical row/RH suppliers remain open locally."
+  ]
+}

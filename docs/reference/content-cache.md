@@ -189,6 +189,16 @@ root/edge-join correctness theorem from those numeric checks. The
 [parent dictionary decision](../../cache/decisions/parent-trace-dictionary-v1.json)
 requires rank descent rather than an assumed ordering of numeric indices.
 
+The [rooted revision consumer](../mathematics/Combinatorics/DirectedGraph/rooted-trace-revision.md)
+now derives actual old-premise decoding across expanded parent dictionaries
+from exact referenced lookup agreement and retained outer root equality.
+It then uses the existing certificate's own actual pack roundtrip to reuse
+its supplied criterion and evidence. A stale in-bounds index can decode a
+different valid history, and an empty decoded list can hide a changed root.
+The [rooted revision decision](../../cache/decisions/rooted-trace-revision-v1.json)
+requires both premises; it grants no criterion for all appended rows and
+no correspondence with operational hashes, JSON or effect authorization.
+
 See [cache operations](../how-to/cache.md), the
 [taxonomy](../../cache/taxonomy.json), and the
 [integration evidence](../../evidence/Logic/FiniteSequences/cache-integration-2026-10-15.json).

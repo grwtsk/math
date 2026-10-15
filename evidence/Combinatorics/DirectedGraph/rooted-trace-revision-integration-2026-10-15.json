@@ -1,0 +1,96 @@
+{
+  "schema": "selected-mathematical-integration-v1",
+  "at": "2026-10-15T21:28:50.355090+00:00",
+  "source": {
+    "path": "GRWTSK/Combinatorics/DirectedGraph/RootedTraceRevision.lean",
+    "sha256": "784594334cff23da4bc77f62c5cd66cf8006ad381223026f1b7383e519dfef17"
+  },
+  "native_receipt": {
+    "path": "evidence/Combinatorics/DirectedGraph/rooted-trace-revision-checks-2026-10-15.json",
+    "sha256": "8d5fc56de90ed39645293de55e5f8a71585f5b1854bc1f715ac672ede47a15b0"
+  },
+  "source_review": {
+    "path": "evidence/Combinatorics/DirectedGraph/rooted-trace-revision-source-review-2026-10-15.json",
+    "sha256": "052792ed88d170d57f8f7ede65c881bf8ed606685310efc7d6b1099407685f5b"
+  },
+  "owned_declarations": 403,
+  "selected_library_owned_count": 26,
+  "owned_modules": [
+    {
+      "declarations": 52,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding"
+    },
+    {
+      "declarations": 18,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences"
+    },
+    {
+      "declarations": 46,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.EdgeTrace"
+    },
+    {
+      "declarations": 21,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix"
+    },
+    {
+      "declarations": 34,
+      "module": "GRWTSK.Logic.FiniteSequences.IndexedDictionary"
+    },
+    {
+      "declarations": 33,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixInventory"
+    },
+    {
+      "declarations": 78,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.ParentTraceDictionary"
+    },
+    {
+      "declarations": 32,
+      "module": "GRWTSK.Logic.FiniteSequences.DictionaryRevision"
+    },
+    {
+      "declarations": 27,
+      "module": "GRWTSK.Logic.FiniteSequences.DecisionCertificate"
+    },
+    {
+      "declarations": 26,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.RootedTraceRevision"
+    },
+    {
+      "declarations": 36,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.RootedTraceRevision"
+    }
+  ],
+  "operational_replay_guards": {
+    "path": "evidence/Combinatorics/DirectedGraph/revision-seminorm-operational-controls-2026-10-15.json",
+    "sha256": "1f18b84c52bd77a06a00d35c94e49a3acc03ffadd1d9e4bde985570834d65d38"
+  },
+  "contribution_roles": [
+    "grwtsk contributors: human mathematical direction",
+    "OpenAI Codex: local adaptation/formalization/checking; correlated source/model review",
+    "Lean/Mathlib: named upstream authors, definitions/proofs and licensing retained"
+  ],
+  "limits": [
+    "Fresh complete selected local import closure and accepted positive controls; trust0/fatal, complete owned-declaration/transitive-axiom census, only propext/Classical.choice/Quot.sound.",
+    "Generated local object families frozen and rechecked; clean pinned dependency objects reused/fingerprinted, not cold rebuilt.",
+    "Whole umbrella not replayed after import additions. No independent model validation, mathematical novelty, operational JSON/Python/hash/zlib/IO refinement, proof/permission authority, whole arithmetic detector or RH supplier."
+  ],
+  "exact_contracts": [
+    "Actually expand the after ParentTraceDictionary, lift each payload to(after.root,fullTrace), retain complete before ordered references; actual Option expanded result proved.",
+    "Actual liftPacked/unpack commutation followed by retained outer root equality and actual optional lookup agreement supplies rooted agreement and successful old-row decoding via existing DictionaryRevision.unpack_replaceDictionary.",
+    "Existing Certificate supplies explicit criterion/proof bound to complete actual old rooted rows. Actual unpack equality against certificate own actual pack roundtrip supplies existing reuse_of_same_decoding; numeric prefix slots are not substituted for certificate packed slots.",
+    "Conclusion retains equality of outer encoded roots even for zero rows. Successful actual revised output derives old-root ValidFrom and actual recovery of complete old keyed occurrences, order and repeats. Full-tag equality supplied, vertex equality additionally supplied for certificate packing."
+  ],
+  "accepted_controls": [
+    "Actual singleton false loop D=[[],F] append true loop D=[F,[],T]; old index1 remains in bounds but selects []. Actual expanded revision/unpack success carries wrong old payload, actual false-loop criterion is rejected. Both actual encoded tables have valid ranks and the same root.",
+    "Concrete singleton false loop repeated as two rows has D=[[],F] unchanged; actual agreement and certificate reuse plus actual occurrence recovery proved. No arbitrary-repeat stability claim.",
+    "Actual certificate packed dictionary contains only full payload F and differs from full-prefix D.",
+    "Zero rows at distinct Bool roots have equal nodes, raw refs, decoded/expanded rooted outputs and vacuous lookup agreement, but unequal outer roots. Sole negative offers Valid bounds as missing AgreesOnReferences."
+  ],
+  "license": "MIT; existing Lean/Mathlib Apache-2.0 and named list/API authors retained.",
+  "open_obligations": [
+    "Exact lookup agreement and retained outer root are premises; no numeric-slot stability or rank/bounds shortcut.",
+    "Existing predicate evidence covers the old referenced list, not an arbitrary criterion for all appended rows.",
+    "No runtime/JSON/hash/IO refinement or proof/permission authority.16 declared families/215 declared records; identities remain unprovided."
+  ]
+}

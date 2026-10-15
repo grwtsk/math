@@ -1,0 +1,170 @@
+{
+  "schema": "repository-agent-concurrent-integration-v1",
+  "at": "2026-10-15T21:31:23.261574+00:00",
+  "task": "revision-seminorm-round",
+  "initial_main": "18e1e72ea72cdf4c6ca910838f41338c03811f71",
+  "merge_commit": "0a3f4c442f77709b83391072d05e30aa325ed0a9",
+  "parents": [
+    "18e1e72ea72cdf4c6ca910838f41338c03811f71",
+    "21aa7f2e1bf8f1cce877a16c39ebaab0a9698468"
+  ],
+  "changed_paths": [
+    {
+      "path": "evidence/number-theory/zeta/triadic-waveform-20261015/README.txt",
+      "sha256": "ed51456141c361c3771b0256c871ad83b4cdedab74ba97306a50453fc803d94e",
+      "bytes": 1639,
+      "git_blob": "9ffc4b074ae2c250a68750c43bf05fa091585ed1"
+    },
+    {
+      "path": "evidence/number-theory/zeta/triadic-waveform-20261015/candidate-inventory.json",
+      "sha256": "c030595cac9ecbb9724bd3378ed138939f29272ab5745ac3f1ba8c5d3d35444d",
+      "bytes": 2243,
+      "git_blob": "cc717e679f5987141c56465f55a0f8e16c731890"
+    },
+    {
+      "path": "evidence/number-theory/zeta/triadic-waveform-20261015/candidates/CoprimeAdditiveTriples.lean.txt",
+      "sha256": "f79df092efb19ec6445c01cd90f672bbf496afc661530774d27b2a73f36231d0",
+      "bytes": 1496,
+      "git_blob": "c0d5793d523d8b8232dee2b3d9b5745a1eba36b1"
+    },
+    {
+      "path": "evidence/number-theory/zeta/triadic-waveform-20261015/candidates/FiniteMomentObstructions.lean.txt",
+      "sha256": "a573a1bd3b2b2cb9e862b9e6029510e176f05147a0fd3c4fabef5f0814303e5f",
+      "bytes": 1068,
+      "git_blob": "e0008702cd3c82e87e0242274d4fa84c0ff40e3f"
+    },
+    {
+      "path": "evidence/number-theory/zeta/triadic-waveform-20261015/candidates/LatticeReflection.lean.txt",
+      "sha256": "88ee70b4d776e18627d8a2452189c613d491e32656c224bf7985a4946f9e3416",
+      "bytes": 1061,
+      "git_blob": "e358bae935267829a43b5a235a6e0bcb8fb468b5"
+    },
+    {
+      "path": "evidence/number-theory/zeta/triadic-waveform-20261015/candidates/PrimitiveHomogeneity.lean.txt",
+      "sha256": "390e47925cc495f61fd963737edecd491b30d9dbf293d095b8684f6e1f360d94",
+      "bytes": 858,
+      "git_blob": "2e4a9573354260812a775430f0a8af232bb6dcf5"
+    },
+    {
+      "path": "evidence/number-theory/zeta/triadic-waveform-20261015/candidates/ReflectionCollapse.lean.txt",
+      "sha256": "61a367fced965c7cd8d0999b69525609aa1bb656048b8944661d1bcee514fe96",
+      "bytes": 1363,
+      "git_blob": "a4f84c4c60188dec4da45cb3cfc5b5780800468d"
+    },
+    {
+      "path": "evidence/number-theory/zeta/triadic-waveform-20261015/candidates/TriadicEnergy.lean.txt",
+      "sha256": "2019ef623276b3521811ee375fd13174ebbb42221c47b12f2c4041726e563a31",
+      "bytes": 1091,
+      "git_blob": "03f81b2304e619cc890e256c52d9b46b1e37193f"
+    },
+    {
+      "path": "evidence/number-theory/zeta/triadic-waveform-20261015/candidates/audit.lean.txt",
+      "sha256": "0887765eb39bd4b2c419e11c0cf846cfbda6c3625afce642e06e450fe03d337c",
+      "bytes": 1237,
+      "git_blob": "d77f962362c0ef582e2df4e03c65b39ac67e5f44"
+    },
+    {
+      "path": "evidence/number-theory/zeta/triadic-waveform-20261015/holomorphic-estimate.md",
+      "sha256": "3d95e311f356cce7fb83b3175b82c2561bff565df3efdcbcd0ac86783f6b28c9",
+      "bytes": 2508,
+      "git_blob": "68962506be73d14cf6dce21354f33bca25a3b6a7"
+    },
+    {
+      "path": "evidence/number-theory/zeta/triadic-waveform-20261015/k-theory-feasibility.md",
+      "sha256": "0dd4baabb789e0fa79df7c2b4a1a0f17a2a0146b48c3c726a778e7e3039b7093",
+      "bytes": 3804,
+      "git_blob": "9ec56197b68d258268b44f45e88c76dda2725e0f"
+    },
+    {
+      "path": "evidence/number-theory/zeta/triadic-waveform-20261015/moment-system.json",
+      "sha256": "3bebc8daa8f55a00024dfaefab84e2094f4038b0a155b87caee2cfdacf85e6eb",
+      "bytes": 2491,
+      "git_blob": "f3473d368cb2f0d79fe54d0e96e63c20062512f5"
+    },
+    {
+      "path": "evidence/number-theory/zeta/triadic-waveform-20261015/negative-controls.json",
+      "sha256": "b8ada41a2c749442adad58f47a0df54d693d6ef090992208f0a0eb9d5fe55853",
+      "bytes": 2987,
+      "git_blob": "3d29f19cb1b7d430e0d8ba5fd3dba7ef296b6c6c"
+    },
+    {
+      "path": "evidence/number-theory/zeta/triadic-waveform-20261015/owner-map.json",
+      "sha256": "a5235164a93ab318131b696f43239463d7233527c3d4c9eae6c6c74fe32e4f50",
+      "bytes": 1716,
+      "git_blob": "4e639032e3fcb174cfff67aa556e2f022b530018"
+    },
+    {
+      "path": "evidence/number-theory/zeta/triadic-waveform-20261015/proof-hypergraph.json",
+      "sha256": "817f2e3fc4edc9fa13e550bc2849e8762466feba84828d4bf424794c1bcf52c2",
+      "bytes": 5445,
+      "git_blob": "03be656ae569c6ffe56a3ddf3d6fd9e0e0a2f36a"
+    },
+    {
+      "path": "evidence/number-theory/zeta/triadic-waveform-20261015/publication-receipt-20261015.json",
+      "sha256": "3df63edada67bba6f967121785436c7df15c30e3d29c532973b261b58a2f06e1",
+      "bytes": 3430,
+      "git_blob": "de0dda03c9ebcbf56e9dc456537a34226e6067b9"
+    },
+    {
+      "path": "evidence/number-theory/zeta/triadic-waveform-20261015/resume-cursor.json",
+      "sha256": "2e02945e3253d6987ea04ff719a73e21a0606420c74a4a6348957b08be12ad70",
+      "bytes": 1449,
+      "git_blob": "3c45c1dab9b950cfd7b19dde7819899e20cfe1e6"
+    },
+    {
+      "path": "evidence/number-theory/zeta/triadic-waveform-20261015/retrieval-ledger.json",
+      "sha256": "cbca72447794787f6c071bebfac655b4f5cdba6546832aba36d564bffa55757e",
+      "bytes": 12893,
+      "git_blob": "bdee43e4498b6a59ded55f47ba15f3fac3037506"
+    },
+    {
+      "path": "evidence/number-theory/zeta/triadic-waveform-20261015/source-freeze.json",
+      "sha256": "bc675758a86a80922e89cdd65fc3f15b02a5649030d91a62bebd7ea059672b75",
+      "bytes": 762,
+      "git_blob": "32cd40e1f424afb2a22185d6253407a1117c8e00"
+    },
+    {
+      "path": "evidence/number-theory/zeta/triadic-waveform-20261015/triadic-waveform-model.md",
+      "sha256": "ce6cc1075c7ecdc138169da86466fb0de705094f9f20ef7dd7e6b0f1ae612897",
+      "bytes": 12983,
+      "git_blob": "ea589208ffb813bd6e3bea296ba37fd6741cfdc2"
+    },
+    {
+      "path": "scripts/triadic_waveform_exact.py",
+      "sha256": "f818de4909ba470912447633c662631c7eaf778e8a44839f2e2ab8ebf159d59d",
+      "bytes": 13376,
+      "git_blob": "446a95d8a134e8920508db6918ac5da118d3c3ad"
+    },
+    {
+      "path": "scripts/verify_triadic_waveform.py",
+      "sha256": "473bf2a864c84f81739cc908eee06760512bd9ea137d4a90987e63a7432e3daf",
+      "bytes": 3396,
+      "git_blob": "f1cc56cb65dfa442a0180aae0fe6bef1369714ee"
+    },
+    {
+      "path": "tests/test_triadic_waveform_exact.py",
+      "sha256": "81f85fc789c1ecd1f1298c62d44c2c2f29d61ac76515a5e4907060fc5dd2ba10",
+      "bytes": 6908,
+      "git_blob": "f8e2865c66ad2aa73e95e0fbf28a52f4ebf0df62"
+    }
+  ],
+  "exact_path_count": 23,
+  "selected_native_input_overlap": [],
+  "selected_native_frozen_sources_and_drivers": "all hashes still match; both accepted receipts unchanged",
+  "incoming_publication_receipt": {
+    "path": "evidence/number-theory/zeta/triadic-waveform-20261015/publication-receipt-20261015.json",
+    "sha256": "3df63edada67bba6f967121785436c7df15c30e3d29c532973b261b58a2f06e1"
+  },
+  "incoming_candidate_inventory": {
+    "path": "evidence/number-theory/zeta/triadic-waveform-20261015/candidate-inventory.json",
+    "sha256": "c030595cac9ecbb9724bd3378ed138939f29272ab5745ac3f1ba8c5d3d35444d"
+  },
+  "verification_state": {
+    "incoming_native_Lean": "NOT_RUN; zero active Lean modules, six inert .lean.txt candidate modules plus audit text",
+    "incoming_Python_claims": "Receipt reports354 exact checks/22 tests in each mode; not replayed or accepted by this round",
+    "incoming_RH": "OPEN_FRONTIER; no source-specific bridge or RH acceptance",
+    "source_cache": "Added archive/scripts/tests are outside frozen Lean/catalog/context scope; selected snapshot unchanged by this merge"
+  },
+  "preservation": "All23 committed incoming paths and merge parents retained intact; no path collision or index conflict. No incoming instructions adopted. No remote action by this agent.",
+  "next_intake": "Separate actual pinned native candidate admission or bounded Python replay requires its own scoped task and exact evidence; current selected results do not admit this package."
+}

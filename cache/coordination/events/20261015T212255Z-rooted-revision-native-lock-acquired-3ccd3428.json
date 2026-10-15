@@ -1,0 +1,10 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "rooted-trace-revision-formal",
+  "owner": "indexed_dictionary",
+  "at": "2026-10-15T21:22:55.211307+00:00",
+  "kind": "native-lock-acquired",
+  "source": "GRWTSK/Combinatorics/DirectedGraph/RootedTraceRevision.lean",
+  "source_sha256": "93897a87086513a6ee311be2853d720aa4b3a4ff1caaee7061eb1b8a9362f425",
+  "guard_competing_jobs": []
+}

@@ -1,0 +1,23 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "window-seminorms-formal",
+  "event": "final-dev-lock-released",
+  "owner": "cache_adapter",
+  "at": "2026-10-15T21:23:28.814771+00:00",
+  "source_hashes": {
+    "GRWTSK/Analysis/MellinTransform/ReverseInversion.lean": "88d959d74d9d5e27772f57e847497b9a943167cc41ae6abb453c3932cbb84c57",
+    "GRWTSK/Analysis/MellinTransform/LogarithmicGaussian.lean": "cd47e598796f4f901ddea56dd05bb9e719534e1aac5589c1be6ddfb8d9fea66d",
+    "GRWTSK/Analysis/MellinTransform/NormalizedGaussian.lean": "a0ed0dbf644601887df128536951a9c3e17ecf42970069a13acdfcb93518e3bf",
+    "GRWTSK/Analysis/PartitionOfUnity/DyadicAnnulus.lean": "15637b705583781150ff8ba8b0f6aaa6ef969fe394f775e35124c5fa30f7aa67",
+    "GRWTSK/Analysis/MellinTransform/CompactGaussianWindow.lean": "db195580ca2f4e4a941f13c71d285af377d2bb29ed7250db0f0b13570984cec5",
+    "GRWTSK/Analysis/MellinTransform/ScaledGaussianDerivatives.lean": "2d1dbbcd5142807daa8a5b6719b0a7bf026aa90991fa030019ed2fc9c0178b0a",
+    "GRWTSK/Analysis/MellinTransform/GaussianWindowSeminorms.lean": "dcfa87ebe43582e02c38b1cc820656fde9160d7d633a6a99e6a3ed6b1e3d93d0",
+    "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianWindowSeminorms.lean": "d4339a2bc10ffffc39a0ee40f4d24600e65ee92903f2933f05d18afd3f61e2ae",
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianWindowNonpositiveScale.lean": "e2e4db4820bd154bfb51c74237b9b2dc66b5c0988106f51c2f0312bc7849004e"
+  },
+  "competing_jobs": [],
+  "archive": ".local/gaussian-window-seminorms/31eefdc334894c49a3ea8be1cc12dd6c/final",
+  "outcome": "PASS",
+  "receipt": ".local/gaussian-window-seminorms/31eefdc334894c49a3ea8be1cc12dd6c/final/receipt.json",
+  "native_jobs_running": 0
+}

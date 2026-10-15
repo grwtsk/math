@@ -1,0 +1,22 @@
+{
+  "schema": "grwtsk.coordination.event.v1",
+  "event": "revision-seminorm-source-scout-progress",
+  "agent": "cache_taxonomy",
+  "at": "2026-10-15T21:22:00.726415+00:00",
+  "context": {
+    "path": ".local/revision-seminorm-source-scout/5f2ef1061af54c86a8c93c16fdb334ed/review-context.json",
+    "sha256": "1ec548d9fab577422818e7a5a20a059c40aa2316e59d687c39a9ef7e66763df7",
+    "bytes": 6284
+  },
+  "clarification": {
+    "path": "cache/coordination/events/preserving-repeat-fixture-clarification-e95d79917cfa450b9c56324124810282.json",
+    "sha256": "faaa5dc435e62269494a55ad421bcd0b5eaaeba99b62136709570b01ac44dd59",
+    "bytes": 841
+  },
+  "findings": [
+    "Actual Anthropic Light proof preservation consumes literal-program-prefix lookup preservation and explicit semantic implications; no certificate or reindexing theorem transferred.",
+    "Exact OpenAI GaussianSeminorm chain and arxiv Kaiser nonzero-scale/convergence conventions compared without transferring normalization or arithmetic claims."
+  ],
+  "native_status": "NOT_RUN",
+  "final_local_bindings": "Pending final author hashes."
+}

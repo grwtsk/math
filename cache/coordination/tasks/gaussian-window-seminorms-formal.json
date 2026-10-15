@@ -1,0 +1,16 @@
+{
+  "schema": "repository-agent-task-v1",
+  "id": "gaussian-window-seminorms-formal",
+  "owner": "cache_adapter",
+  "at": "2026-10-15T21:18:34.922026+00:00",
+  "branch": "main",
+  "base_commit": "18e1e72ea72cdf4c6ca910838f41338c03811f71",
+  "cache_revision": "63b74b16b853db140529976fe75dbc6d8c833bd5a1d868652a6adf1c411124c3",
+  "write_paths": [
+    "GRWTSK/Analysis/MellinTransform/GaussianWindowSeminorms.lean",
+    "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianWindowSeminorms.lean",
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianWindowNonpositiveScale.lean"
+  ],
+  "objective": "Actual OpenAI GaussianSeminorm chain: fixed cutoff/sqrt factor compact/smooth, actual G factorization and product rule with accepted scaled Gaussian derivatives, uniform derivative/Schwartz seminorm finite-family/two-sided bounds with constants independent of Z>0,j. Actual function-level omitted-Z control G(0,0,3/4)!=0 versus totalized RHS0; no Z0 nonsmoothness claim.",
+  "coordination": "Use allocated files/ignored scratch and append immutable repository progress/completion events. Root owns shared metadata/docs/cache/fresh native admission/commit. Preserve prior/concurrent changes and failed variants/receipts. Mathematical subjects/objects only. Shared native flock .local/math-trust/replay.lock until all children exit; explicit noncomputable recursive mathematical defs, no generated-helper exemptions. No remote writes, branches or migration takeover."
+}

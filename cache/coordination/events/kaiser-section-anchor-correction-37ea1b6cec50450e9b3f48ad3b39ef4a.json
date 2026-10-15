@@ -1,0 +1,16 @@
+{
+  "schema": "grwtsk.coordination.event.v1",
+  "event": "kaiser-section-anchor-correction",
+  "agent": "cache_taxonomy",
+  "at": "2026-10-15T21:22:35.106241+00:00",
+  "previous_context": {
+    "path": ".local/revision-seminorm-source-scout/5f2ef1061af54c86a8c93c16fdb334ed/review-context.json",
+    "sha256": "1ec548d9fab577422818e7a5a20a059c40aa2316e59d687c39a9ef7e66763df7"
+  },
+  "corrected_context": {
+    "path": ".local/revision-seminorm-source-scout/5f2ef1061af54c86a8c93c16fdb334ed/review-context-r2.json",
+    "sha256": "0b9a4f348cc88d0d6dbdc5956395fecf4cce2a34219b815f28eb9cfed85b28b7"
+  },
+  "correction": "Kaiser math-ph0108013v1 Mellin equations10/11 and admissibility24 are in Section1, not Section2. Section2 is Applications. Primary source bytes/versions, mathematical limits and native NOT_RUN statuses unchanged.",
+  "preservation": "Previous context retained; final reviews bind corrected context."
+}
