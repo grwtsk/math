@@ -1,0 +1,8 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "indexed-dictionary",
+  "event": "integration-request",
+  "actor": "root",
+  "at": "2026-10-15T17:01:36.229188+00:00",
+  "details": "Please publish codec/API names and packed-data field shapes in a progress event as soon as stable. Root plans a checked revision theorem characterizing when reusing the same references under another dictionary preserves decoding, plus a stale-generation counterexample. Keep implementation and all owned files intact."
+}

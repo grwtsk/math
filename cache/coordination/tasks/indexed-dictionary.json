@@ -1,0 +1,16 @@
+{
+  "schema": "repository-agent-task-v1",
+  "created_at": "2026-10-15T16:59:10.269616+00:00",
+  "status": "ready",
+  "branch": "main",
+  "policy": "Follow AGENTS.md. Preserve concurrent changes. Task records and events communicate work; they confer no mathematical acceptance or remote authority. Append one uniquely named event file under cache/coordination/events on completion, with actual paths, hashes, checks, failures, remaining premises. Do not commit; root integrates. Never overwrite an existing task/event.",
+  "source_scope": "Selected repository files and user-supplied research scope only; no account intake.",
+  "id": "indexed-dictionary",
+  "owner_role": "Lean finite-sequence formalization",
+  "write_paths": [
+    "GRWTSK/Logic/FiniteSequences/IndexedDictionary.lean",
+    "GRWTSK/Logic/FiniteSequences/Checks/Positive/IndexedDictionary.lean",
+    "GRWTSK/Logic/FiniteSequences/Checks/Negative/IndexedDictionaryInvalidReference.lean"
+  ],
+  "objective": "Implement a real finite dictionary interning codec and prove exact round-trip. Suggested dictionary = (entries.map Prod.snd).dedup; references retain each (key,indexOf value). Decoder uses checked lookup and List.mapM. Prove unpack(pack entries)=some entries, valid reference bounds, dictionary nodup, and preservation of occurrences/order (duplicate payloads never merge source occurrence identity). Generic Key/Payload with DecidableEq Payload, no collision-freedom axiom, no custom axioms/sorry. Explicitly distinguish this exact finite-list codec from unverified SHA/zlib/runtime adapters. Use mathematical namespace and minimal imports. Preserve all compile failures in ignored .local/cache-formalization. Compile with pinned Lean --trust=0 and fatal warnings. Report exact contracts and APIs for root native owned-declaration audit; do not alter public umbrella or registries."
+}

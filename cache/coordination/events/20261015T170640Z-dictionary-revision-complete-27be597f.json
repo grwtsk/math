@@ -1,0 +1,69 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "dictionary-revision",
+  "status": "implementation_complete_pending_root_admission",
+  "owner": "indexed_dictionary",
+  "branch": "main",
+  "source_sha256": {
+    "GRWTSK/Logic/FiniteSequences/DictionaryRevision.lean": "6c7e6f170b1ea7ad746e4e99b0c15a680433c66d20b6d23538ef4a595bd796df",
+    "GRWTSK/Logic/FiniteSequences/Checks/Positive/DictionaryRevision.lean": "d8be12d9a614a86ca3355fd4a5a9df7f0fe7425e282fe3ac3c2804d0ce1800cc",
+    "GRWTSK/Logic/FiniteSequences/Checks/Negative/DictionaryRevisionStaleSlots.lean": "18c8e1385378f16688266c40d9abd8810f1f1649080a466f393da61b8ad06dbb"
+  },
+  "imports": [
+    "GRWTSK.Logic.FiniteSequences.IndexedDictionary"
+  ],
+  "api_event": "cache/coordination/events/20261015T170623Z-dictionary-revision-api-00af2788.json",
+  "checks": [
+    {
+      "kind": "kernel_compile",
+      "trust": 0,
+      "warningAsError": true,
+      "exit_code": 0,
+      "receipt": ".local/cache-formalization/dictionary-revision/20261015T170554Z-compile.json"
+    },
+    {
+      "kind": "positive_control",
+      "trust": 0,
+      "warningAsError": true,
+      "exit_code": 0,
+      "receipt": ".local/cache-formalization/dictionary-revision/20261015T170608Z-positive.json"
+    },
+    {
+      "kind": "hostile_control",
+      "trust": 0,
+      "warningAsError": true,
+      "exit_code": 1,
+      "passed_expected_type_mismatch": true,
+      "receipt": ".local/cache-formalization/dictionary-revision/20261015T170609Z-negative.json"
+    },
+    {
+      "kind": "repository_layout",
+      "receipt": ".local/cache-formalization/dictionary-revision/20261015T170640Z-layout.json",
+      "command": [
+        "python3",
+        "-B",
+        "scripts/check_math_layout.py"
+      ],
+      "exit_code": 1,
+      "summary": "Math layout: FAIL (350 library modules, 185 findings).",
+      "owned_findings": [
+        "GRWTSK/Logic/FiniteSequences/Checks/Negative/DictionaryRevisionStaleSlots.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources",
+        "GRWTSK/Logic/FiniteSequences/Checks/Positive/DictionaryRevision.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources",
+        "GRWTSK/Logic/FiniteSequences/DictionaryRevision.lean: library-module-outside-public-closure [GRWTSK.Logic.FiniteSequences.DictionaryRevision]: library module is not reachable from GRWTSK.lean",
+        "GRWTSK/Logic/FiniteSequences/DictionaryRevision.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources"
+      ],
+      "log": ".local/cache-formalization/dictionary-revision/20261015T170640Z-layout.log"
+    }
+  ],
+  "mathematical_scope": "Exact optional dictionary lookup agreement at referenced indices; individual decode iff lookup equality; reflexive/symmetric/transitive agreement; actual sequential decoder preservation; exact pack roundtrip after agreed replacement; proof-carrying revision certificate; equal-length stale-slot and both-failing decoder counterexamples.",
+  "open_obligations": [
+    "Root native owned-declaration audit, public umbrella, source and control catalogs.",
+    "No theorem about hashing, compression, serialization, filesystems, Git or runtime adapter correctness."
+  ],
+  "failures_preserved": [
+    ".local/cache-formalization/dictionary-revision/20261015T170537Z-compile.json (initial import-root lookup failure; fixed only build path)."
+  ],
+  "source_mutations_outside_owned_paths": [],
+  "commits": [],
+  "remote_mutations": []
+}

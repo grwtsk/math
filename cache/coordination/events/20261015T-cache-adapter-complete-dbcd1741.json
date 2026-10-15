@@ -1,0 +1,66 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "cache-adapter",
+  "status": "complete-awaiting-root-integration",
+  "created_at": "2026-10-15T17:11:15.589243+00:00",
+  "paths": [
+    {
+      "path": "scripts/cache_math.py",
+      "sha256": "81f7d48a575ee212d8fac9bad812cc93c3c4ace3eae031ae82acabac2c44d424"
+    },
+    {
+      "path": "scripts/test_cache_math.py",
+      "sha256": "96845a68a4d484b797250ad8f7e673d82cb61e059b7b784d02c947e5635c3651"
+    }
+  ],
+  "checks": [
+    {
+      "command": "python3 -B scripts/test_cache_math.py",
+      "outcome": "passed",
+      "controls": 23
+    },
+    {
+      "command": "python3 -B -O scripts/test_cache_math.py",
+      "outcome": "passed",
+      "controls": 23
+    },
+    {
+      "command": "git diff --check -- scripts/cache_math.py scripts/test_cache_math.py",
+      "outcome": "passed"
+    },
+    {
+      "command": "python3 -B scripts/cache_math.py --help",
+      "outcome": "passed"
+    }
+  ],
+  "contract": {
+    "snapshot": "python3 -B scripts/cache_math.py snapshot --expected none",
+    "revise": "python3 -B scripts/cache_math.py revise --expected <digest>",
+    "verify": "python3 -B scripts/cache_math.py verify --live",
+    "status": "python3 -B scripts/cache_math.py status",
+    "expand": "python3 -B scripts/cache_math.py expand <empty-or-absent-directory-outside-repository> [--revision <digest>]",
+    "root_option": "--root <path> is a global option before subcommand",
+    "schema": "mathematical-source-cache-v1",
+    "counts": "Lean source occurrences, catalog files and build/license context files are separate",
+    "proof_status": "unknown-unreplayed for every cached source and operation; mathematical_acceptance=false",
+    "source_roles": "Existing layout and intake membership; uncataloged current files stay candidate-source-only; all old declared hashes/statuses/verification values and per-binding stale status retained, plus metadata_findings",
+    "head_semantics": "HEAD frozen and reread during snapshot/CAS; subsequent live byte checks tolerate a containing commit and report changed HEAD separately",
+    "expansion": "Restores exact GRWTSK source, captured catalogs, toolchain/build/license context, preserving each occurrence even if bytes deduplicate",
+    "context_invalidation": "Any captured context-file byte change seeds all sources; otherwise exact reverse reachability on old/new import graph union, supporting cycles",
+    "failure_policy": "Failed attempt receipts/candidate manifests/source blobs remain; no old receipt erased or promoted; no source execution/network acquisition"
+  },
+  "failures_preserved": [
+    {
+      "observation": "Read-only real-repository preflight refused because unrelated shared index has unmerged docs/index.md, docs/mathematics/Logic/index.md, docs/reference/library-summary.json.",
+      "event": "cache/coordination/events/20261015T-cache-adapter-preflight-conflict-c931e0df.json"
+    }
+  ],
+  "remaining_premises": [
+    "Root integrates and preserves concurrent index conflicts before final actual snapshot. No real snapshot was created by this worker.",
+    "Root owns source/documentation/catalog integration and actual pinned Lean proof admission.",
+    "Import graph is lexical explicit-import inventory for ordinary module identifiers; unsupported quoted module headers fail closed. Implicit Init imports and external package bytes are outside the graph/snapshot.",
+    "Cache-writer lock serializes cooperating writers; immediate complete readback detects observed source/HEAD drift, while sources are not globally locked. No atomic source-freeze theorem is claimed.",
+    "Adapter is operational Python, not an extracted or kernel-verified implementation of the separate Lean finite models.",
+    "No commits, branches, worktrees or remote changes made."
+  ]
+}

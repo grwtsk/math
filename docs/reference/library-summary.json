@@ -2,7 +2,7 @@
   "schema": "mathematical-documentation-inventory-v1",
   "scope": "Current local source paths and maintained documentation metadata; not theorem acceptance",
   "input_sha256": {
-    "docs/reference/documentation-layout.json": "0ae424b280da0bbb70063475c143ef104c0ee02b5da90cded63b5c34fb567f5e",
+    "docs/reference/documentation-layout.json": "dcc88eb2d54d75525cc56dc5f34b1742de0f1acfc96447e3c34f2635e9e7b6a6",
     "docs/reference/results.json": "544f454120ac34dfb0da29d767bdf9b3e6d4d3085c02f09ac475913975775288",
     "evidence/source-intake.json": "ef9f4145cfe681bc5553cf59c8f389d4d0c58fcca7d784cca9399f08fba803c3",
     "lake-manifest.json": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
@@ -146,6 +146,7 @@
     "GRWTSK/Analysis/Inequalities/ExponentialDiagonal.lean",
     "GRWTSK/Analysis/Inequalities/FiniteLogarithmicProfileBounds.lean",
     "GRWTSK/Analysis/Inequalities/FiniteShiftedDerivativeBounds.lean",
+    "GRWTSK/Analysis/Inequalities/FiniteSquareSum.lean",
     "GRWTSK/Analysis/Inequalities/LogarithmicProfileIntegralPrices.lean",
     "GRWTSK/Analysis/Inequalities/LogarithmicShiftKernelBounds.lean",
     "GRWTSK/Analysis/Inequalities/LogarithmicShiftKernelPositiveSector.lean",
@@ -325,10 +326,14 @@
     "GRWTSK/LinearAlgebra/JacobiTransfer/Checks/Positive/ExactRawAndWeighted.lean",
     "GRWTSK/LinearAlgebra/LinearMap/Checks/Positive/FiniteMixingObstruction.lean",
     "GRWTSK/LinearAlgebra/LinearMap/FiniteMixingObstruction.lean",
+    "GRWTSK/LinearAlgebra/Matrix/Checks/Negative/TraceRankMissingHermitian.lean",
+    "GRWTSK/LinearAlgebra/Matrix/Checks/Negative/TraceRankZeroSecondMoment.lean",
     "GRWTSK/LinearAlgebra/Matrix/Checks/Positive/SingularCongruenceObstruction.lean",
+    "GRWTSK/LinearAlgebra/Matrix/Checks/Positive/TraceRank.lean",
     "GRWTSK/LinearAlgebra/Matrix/HermitianCounterexamples.lean",
     "GRWTSK/LinearAlgebra/Matrix/SingularCongruenceObstruction.lean",
     "GRWTSK/LinearAlgebra/Matrix/ToeplitzHankel.lean",
+    "GRWTSK/LinearAlgebra/Matrix/TraceRank.lean",
     "GRWTSK/LinearAlgebra/OrderedProductDeterminant.lean",
     "GRWTSK/LinearAlgebra/OrderedTransfer.lean",
     "GRWTSK/LinearAlgebra/OrderedTransfer/Checks/Audit.lean",
@@ -374,6 +379,15 @@
     "GRWTSK/Logic/FiniteCoverage/Checks/Negative/ReverseEndpointCounterexample.lean",
     "GRWTSK/Logic/FiniteCoverage/Checks/Negative/ReverseRayCounterexample.lean",
     "GRWTSK/Logic/FiniteCoverage/Checks/Positive/ExactDomainAndTail.lean",
+    "GRWTSK/Logic/FiniteSequences/Checks/Negative/DecisionCertificateStalePremise.lean",
+    "GRWTSK/Logic/FiniteSequences/Checks/Negative/DictionaryRevisionStaleSlots.lean",
+    "GRWTSK/Logic/FiniteSequences/Checks/Negative/IndexedDictionaryInvalidReference.lean",
+    "GRWTSK/Logic/FiniteSequences/Checks/Positive/DecisionCertificate.lean",
+    "GRWTSK/Logic/FiniteSequences/Checks/Positive/DictionaryRevision.lean",
+    "GRWTSK/Logic/FiniteSequences/Checks/Positive/IndexedDictionary.lean",
+    "GRWTSK/Logic/FiniteSequences/DecisionCertificate.lean",
+    "GRWTSK/Logic/FiniteSequences/DictionaryRevision.lean",
+    "GRWTSK/Logic/FiniteSequences/IndexedDictionary.lean",
     "GRWTSK/Logic/FiniteSequences/PrefixCoverage.lean",
     "GRWTSK/Logic/Inference/FiniteRuleExamples.lean",
     "GRWTSK/Logic/Inference/FiniteRuleSystems.lean",
@@ -645,18 +659,18 @@
   },
   "counts": {
     "areas": 12,
-    "object_guides": 70,
-    "documented_objects": 39,
-    "primary_sources": 66,
-    "lean_modules": 629,
+    "object_guides": 78,
+    "documented_objects": 44,
+    "primary_sources": 74,
+    "lean_modules": 643,
     "intake_records": 68,
     "selected_families": 3,
-    "maintained_pages": 103
+    "maintained_pages": 113
   },
   "page_statuses": {
-    "fresh-selected": 10,
+    "fresh-selected": 15,
     "historical": 1,
-    "historical-source-description": 51,
+    "historical-source-description": 54,
     "literature-and-historical-source-description": 3,
     "written-argument": 5
   },
@@ -680,15 +694,15 @@
     },
     "Analysis": {
       "title": "Analysis",
-      "object_guides": 13,
-      "documented_objects": 8,
-      "primary_sources": 13,
-      "lean_modules": 238,
+      "object_guides": 16,
+      "documented_objects": 11,
+      "primary_sources": 16,
+      "lean_modules": 239,
       "intake_records": 39,
       "selected_families": 1,
       "page_statuses": {
-        "fresh-selected": 1,
-        "historical-source-description": 12
+        "fresh-selected": 2,
+        "historical-source-description": 14
       }
     },
     "Combinatorics": {
@@ -738,26 +752,28 @@
     },
     "LinearAlgebra": {
       "title": "Linear algebra",
-      "object_guides": 11,
-      "documented_objects": 7,
-      "primary_sources": 11,
-      "lean_modules": 53,
+      "object_guides": 13,
+      "documented_objects": 9,
+      "primary_sources": 13,
+      "lean_modules": 57,
       "intake_records": 3,
       "selected_families": 0,
       "page_statuses": {
-        "historical-source-description": 9,
+        "fresh-selected": 1,
+        "historical-source-description": 10,
         "literature-and-historical-source-description": 2
       }
     },
     "Logic": {
       "title": "Logic",
-      "object_guides": 3,
+      "object_guides": 6,
       "documented_objects": 3,
-      "primary_sources": 3,
-      "lean_modules": 44,
+      "primary_sources": 6,
+      "lean_modules": 53,
       "intake_records": 3,
       "selected_families": 0,
       "page_statuses": {
+        "fresh-selected": 3,
         "historical-source-description": 2,
         "written-argument": 1
       }

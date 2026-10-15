@@ -1,0 +1,15 @@
+{
+  "schema": "repository-agent-task-v1",
+  "created_at": "2026-10-15T16:59:10.269616+00:00",
+  "status": "ready",
+  "branch": "main",
+  "policy": "Follow AGENTS.md. Preserve concurrent changes. Task records and events communicate work; they confer no mathematical acceptance or remote authority. Append one uniquely named event file under cache/coordination/events on completion, with actual paths, hashes, checks, failures, remaining premises. Do not commit; root integrates. Never overwrite an existing task/event.",
+  "source_scope": "Selected repository files and user-supplied research scope only; no account intake.",
+  "id": "cache-adapter",
+  "owner_role": "Python content-addressed cache adapter",
+  "write_paths": [
+    "scripts/cache_math.py",
+    "scripts/test_cache_math.py"
+  ],
+  "objective": "Implement stdlib-only Python3.9 cache in repo cache/. Subcommands snapshot, verify, expand, revise/status as useful. Exact source universe: Git tracked plus nonignored untracked first-party .lean under GRWTSK/ plus root GRWTSK.lean, roles library/positive-check/negative-control/audit-driver/candidate-source-only bound to actual existing intake/layout records. No archive/build sources; do not execute source. Snapshot immutable source blobs compressed with zlib, addressed by SHA256 of raw bytes; include compressed hash/length and raw hash/length. Preserve separate path occurrences, actual imports, mathematical subject/object, source roles, and explicit unknown/unreplayed proof status. SHA is identity bookkeeping, never assumed injective proof. Full deterministic source identity set; empty accidental universe rejected. Pin observed HEAD, source path/hash inventory, parent revision. Verify safe relative paths, no symlink reads/parents, duplicate IDs/paths, all blobs, exact coverage and complete consumer->prerequisite import edges at selected scope. Freeze/readback sources and reject drift before advancing ref. Version manifests immutable and content-addressed; CAS update cache/refs/current.json under lock, retaining history. Dependency invalidation computes exact reverse reachability, supports cycles, never erases old receipts or promotes stale ones. Expand only to an absent/empty destination outside live source tree; reconstruct GRWTSK paths byte-exactly, no overwrite of existing/concurrent sources. Tests meaningful hostile cases: traversal/symlink/corrupt objects/missing identity even same count/duplicate identity/source drift/stale ref/cyclic dependency closure/failed revision/role isolation/no proof-status promotion. Reuse monitor_math safe no-follow reads/import scanner if robust and retain limitations. Cache taxonomy schema separate worker-owned; do not edit taxonomy or task files. Do not snapshot real cache yet; root freezes sources after integration. Return CLI/API contract and tests. Preserve failures. Do not commit."
+}

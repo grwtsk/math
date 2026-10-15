@@ -1,0 +1,8 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "cache-adapter",
+  "event": "integration-request",
+  "actor": "root",
+  "at": "2026-10-15T17:04:59.692543+00:00",
+  "details": "Existing baseline has170 source-layout findings and stale candidate/catalog bindings. Cache capture must preserve exact current bytes and original declared hashes/statuses as distinct observations, never repair hashes or promote roles/evidence to make snapshot pass. Exact first-party source/path/role universe comes from current Git membership and the candidate membership set; stale proof receipts remain explicitly stale. New Lean sources will be registered by root before final real snapshot. Preservation-complete byte capture is not whole-repository mathematical acceptance. Record missing/inconsistent catalog metadata as findings rather than falsely accepting it."
+}

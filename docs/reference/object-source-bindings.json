@@ -92,6 +92,9 @@
       "GRWTSK/Analysis/Fourier/WindowCertificates.lean"
     ],
     "Logic/FiniteSequences": [
+      "GRWTSK/Logic/FiniteSequences/DecisionCertificate.lean",
+      "GRWTSK/Logic/FiniteSequences/DictionaryRevision.lean",
+      "GRWTSK/Logic/FiniteSequences/IndexedDictionary.lean",
       "GRWTSK/Logic/FiniteSequences/PrefixCoverage.lean"
     ],
     "Combinatorics/Sequences": [
@@ -155,6 +158,12 @@
     "Algebra/Polynomial": [
       "GRWTSK/Algebra/Polynomial/ConjugateQuartic.lean",
       "GRWTSK/Algebra/Polynomial/SignedRootTrace.lean"
+    ],
+    "Analysis/Inequalities": [
+      "GRWTSK/Analysis/Inequalities/FiniteSquareSum.lean"
+    ],
+    "LinearAlgebra/Matrix": [
+      "GRWTSK/LinearAlgebra/Matrix/TraceRank.lean"
     ]
   }
 }

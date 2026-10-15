@@ -1,0 +1,14 @@
+{
+  "schema": "repository-agent-task-v1",
+  "id": "decision-certificate",
+  "owner": "indexed_dictionary",
+  "branch": "main",
+  "created_at": "2026-10-15T17:16:07.835420+00:00",
+  "write_paths": [
+    "GRWTSK/Logic/FiniteSequences/DecisionCertificate.lean",
+    "GRWTSK/Logic/FiniteSequences/Checks/Positive/DecisionCertificate.lean",
+    "GRWTSK/Logic/FiniteSequences/Checks/Negative/DecisionCertificateStalePremise.lean",
+    "cache/coordination/events/"
+  ],
+  "objective": "After bounded review, add a small useful formal bridge from actual decoded premise lists to durable conditional decisions. Import DictionaryRevision only. A certificate should bind exact packed entries and a semantic predicate on the decoded key-payload list; require an actual proof of that predicate on original decoded entries, prove reuse at any successful decoding equal to original and under AgreesOnReferences revisions. Avoid an assumed encode/decode law: use existing unpack_pack. Include explicit counterexample: same keys/count/bounds with changed premise payload can invalidate a semantic predicate; negative control attempts stale proof and fails at intended type. Do not model arbitrary runtime hash/IO as verified. Standard mathematical namespace GRWTSK.Logic.FiniteSequences.DecisionCertificate. Positive and negative controls. Compile locally with trust=0 and fatal warnings using existing frozen dictionary object directory (.local/indexed-dictionary/replay-hm_vmad2/build) plus pinned paths; retain all attempts in .local/cache-formalization/decision-certificate/. Root will run fresh combined native audit and integrate docs. Do not edit existing source or runner, do not commit. Write event API/checks/hashes."
+}

@@ -341,3 +341,8 @@ import GRWTSK.Algebra.Polynomial.ConjugateQuartic
 import GRWTSK.NumberTheory.Zeta.Riemann.BoundedHeightCriterion
 import GRWTSK.NumberTheory.Zeta.Riemann.QuadraticTraceCriterion
 import GRWTSK.NumberTheory.Zeta.Riemann.ZeroOrbitQuartic
+import GRWTSK.Analysis.Inequalities.FiniteSquareSum
+import GRWTSK.LinearAlgebra.Matrix.TraceRank
+import GRWTSK.Logic.FiniteSequences.IndexedDictionary
+import GRWTSK.Logic.FiniteSequences.DictionaryRevision
+import GRWTSK.Logic.FiniteSequences.DecisionCertificate

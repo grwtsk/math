@@ -39,3 +39,17 @@ Mathlib Apache-2.0 terms remain retained.
 See LICENSES/ArchiveCandidates-NOTICE.txt and evidence/source-intake.json for
 exact source identities and attribution scope. Intake is not native proof
 acceptance or public-release permission.
+
+Finite square-sum and Hermitian trace-rank interfaces
+--------------------------------------------------
+GRWTSK/Analysis/Inequalities/FiniteSquareSum.lean and
+GRWTSK/LinearAlgebra/Matrix/TraceRank.lean are adapted from OpenAI's
+openai/math at 1581d4cbdd69a0faf34b2089614fe2a814316a6a,
+lean/OAI/Algebra/DepthFive/TraceRank.lean. Upstream project metadata names
+OpenAI as author. These adapted files retain Apache-2.0 licensing; see
+LICENSES/OpenAI-Apache-2.0.txt. Changes split the general finite-sum result,
+use mathematical module names, minimize imports and replay in the local pinned
+environment. Human project direction: grwtsk contributors; adaptation and
+checking assistance: OpenAI Codex. Classical mathematics and Mathlib authorship
+remain attributed upstream. This port makes no claim about surrounding circuit
+lower bounds, mathematical novelty, independent review, or RH.

@@ -1,0 +1,37 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "decision-certificate",
+  "status": "api_stable",
+  "owner": "indexed_dictionary",
+  "source": "GRWTSK/Logic/FiniteSequences/DecisionCertificate.lean",
+  "source_sha256": "d7ce67b4eacedb2d84a958636c55cd0ed75be869f552377163c0832449dc0990",
+  "module": "GRWTSK.Logic.FiniteSequences.DecisionCertificate",
+  "namespace": "GRWTSK.Logic.FiniteSequences.DecisionCertificate",
+  "definitions": {
+    "DecodesSatisfying": "(packed : Packed Key Payload) \u2192 (predicate : List (Key \u00d7 Payload) \u2192 Prop) \u2192 Prop := \u2203 decoded, unpack packed = some decoded \u2227 predicate decoded",
+    "Certificate": "structure with entries : List (Key \u00d7 Payload), predicate : List (Key \u00d7 Payload) \u2192 Prop, evidence : predicate entries",
+    "Certificate.packed": "[DecidableEq Payload] \u2192 Packed Key Payload := pack certificate.entries"
+  },
+  "theorems": {
+    "Certificate.unpack_packed": "unpack certificate.packed = some certificate.entries, using existing unpack_pack",
+    "Certificate.decodesSatisfying": "DecodesSatisfying certificate.packed certificate.predicate",
+    "Certificate.predicate_of_successful_equal_decoding": "unpack revised = some decoded \u2192 unpack revised = unpack certificate.packed \u2192 certificate.predicate decoded",
+    "Certificate.reuse_of_same_decoding": "unpack revised = unpack certificate.packed \u2192 DecodesSatisfying revised certificate.predicate",
+    "Certificate.reuse_of_agreement": "AgreesOnReferences certificate.packed.dictionary after certificate.packed.references \u2192 DecodesSatisfying (replaceDictionary certificate.packed after) certificate.predicate",
+    "Certificate.predicate_after_agreement": "AgreesOnReferences ... \u2192 unpack (replaceDictionary certificate.packed after) = some decoded \u2192 certificate.predicate decoded",
+    "stale_premise_counterexample": "Exists original/revised Packed Nat Nat with identical references, equal reference/dictionary lengths, both Valid; original actual decoder satisfies every payload \u2264 7, revised actual decoder does not (7 changes to 8)."
+  },
+  "kernel_check": {
+    "lean": "leanprover/lean4:v4.33.0",
+    "trust": 0,
+    "warningAsError": true,
+    "exit_code": 0,
+    "receipt": ".local/cache-formalization/decision-certificate/20261015T171937Z-compile.json"
+  },
+  "verified_olean_directory": ".local/cache-formalization/decision-certificate/build",
+  "object_policy": "Copied byte-identical frozen dictionary project object families from .local/indexed-dictionary/replay-hm_vmad2/build; then used those and the selected native receipt pinned dependency search paths, excluding canonical project objects. Existing frozen replay directories were not changed.",
+  "limits": "Semantic predicate and its proof are required data. A stored reason/hash/count/id/event cannot supply that proof. No runtime/IO/hash/serialization correspondence claimed.",
+  "remaining": [
+    "Positive/negative controls and structural report now running; root fresh combined native audit/admission required."
+  ]
+}
