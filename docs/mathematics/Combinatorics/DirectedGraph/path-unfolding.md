@@ -52,6 +52,11 @@ Python/JSON relation-trace correspondence is asserted. The
 [typed edge-trace equivalence](edge-trace.md) has its own exact list contracts;
 operational graph interpretation and proof/permission roles remain separate.
 
+The [occurrence-prefix equivalence](occurrence-prefix.md) separately relates
+actual unfolding reachability to full typed trace prefixes. It also records
+why selecting one history for each reachable base vertex loses occurrence
+identity. Its own source and native receipt carry those additional claims.
+
 ## Source, verification and credit
 
 The [source](../../../../GRWTSK/Combinatorics/DirectedGraph/PathUnfolding.lean),

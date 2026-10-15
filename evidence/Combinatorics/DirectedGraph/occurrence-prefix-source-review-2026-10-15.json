@@ -1,0 +1,223 @@
+{
+  "schema": "bounded-mathematical-source-review-v1",
+  "task": "prefix-zeta-source-scout",
+  "status": "BOUNDED_CORRELATED_SOURCE_REVIEW_COMPLETE_NATIVE_NOT_RUN_BY_REVIEWER",
+  "review_boundary": {
+    "kind": "Correlated same-team/model source and premise review, not independent validation.",
+    "native_lean": "NOT_RUN by source reviewer. Root fresh compile/owned-transitive axiom census/dependency closure is separate evidence.",
+    "authority": "No source/taxonomy/citation admission, policy/permission, operational JSON/Lean refinement or whole-repository replay."
+  },
+  "source_context": {
+    "path": ".local/prefix-zeta-source-scout/84cfb947c30341db9c5f04a627122f07/context.json",
+    "sha256": "a58b99fdb1d2696bb579521589dd0408bf8b7cfb50cf21d3d90af747ada67ba8"
+  },
+  "final_bindings": [
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/OccurrencePrefix.lean",
+      "sha256": "60737e2376594568f390e394417b77c9ea0cc5464693b3ef61502213e3afcee7",
+      "bytes": 6920,
+      "archive": ".local/prefix-zeta-source-scout/84cfb947c30341db9c5f04a627122f07/frozen-local/GRWTSK/Combinatorics/DirectedGraph/OccurrencePrefix.lean",
+      "declaration_anchors": {
+        "trace": 36,
+        "trace_injective": 39,
+        "trace_comp": 47,
+        "reachable_iff_prefix": 52,
+        "ReachableVertex": 86,
+        "reachableEndpoint": 89,
+        "selectedOccurrence": 93,
+        "endpoint_selectedOccurrence": 96,
+        "endpoint_right_inverse": 100,
+        "reachableEndpoint_surjective": 104,
+        "selectedOccurrence_injective": 107,
+        "retractOccurrence": 111,
+        "retractOccurrence_endpoint": 114,
+        "retractOccurrence_idempotent": 117,
+        "retractOccurrence_eq_iff": 122,
+        "no_left_inverse_of_distinct_histories": 132
+      }
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/OccurrencePrefix.lean",
+      "sha256": "0b746beb3ea685eac5a94e987b95280aa5a4135a5716c67e6ccf802d7d2de2b6",
+      "bytes": 6254,
+      "archive": ".local/prefix-zeta-source-scout/84cfb947c30341db9c5f04a627122f07/frozen-local/GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/OccurrencePrefix.lean",
+      "declaration_anchors": {
+        "emptyOccurrence": 33,
+        "falseOccurrence": 35,
+        "trueOccurrence": 38,
+        "twiceOccurrence": 41,
+        "actual_chain": 53,
+        "parallel_occurrences_distinct": 64,
+        "parallel_traces_incomparable": 69,
+        "parallel_occurrences_incomparable": 78,
+        "base_reachable_to_empty": 89,
+        "occurrence_not_reachable_to_empty": 92,
+        "endpoint_summary_does_not_reflect": 101,
+        "retraction_does_not_reflect_ancestry": 107,
+        "parallel_retraction_loses_history": 114,
+        "unitLoopOccurrence": 120,
+        "unit_histories_distinct": 123,
+        "unit_retraction_loses_history": 129,
+        "unit_no_endpoint_left_inverse": 133
+      }
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/OccurrenceMissingHistory.lean",
+      "sha256": "78b1f89e7ab51f8ebf6d67aa6b6e4a7ab84397e20989bf41bf487fc7c761d448",
+      "bytes": 642,
+      "archive": ".local/prefix-zeta-source-scout/84cfb947c30341db9c5f04a627122f07/frozen-local/GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/OccurrenceMissingHistory.lean",
+      "declaration_anchors": {}
+    }
+  ],
+  "guide_review": {
+    "path": "docs/mathematics/Combinatorics/DirectedGraph/occurrence-prefix.md",
+    "sha256": "f03e036b0890bcd123d0040b15821adbf2b264908ef3b5d94b57ef42eff6cd0a",
+    "bytes": 3767,
+    "scope": "Read-only scope/credit inspection at these draft bytes. Correct exact occurrence-prefix equivalence, actual suffix reconstruction, reachable-subtype right inverse, idempotent history loss and ancestry nonreflection. No source-node prefix embedding/quiver-map/runtime/permission claim. Native/receipt paragraphs are root integration claims pending separate evidence."
+  },
+  "actual_controls": {
+    "positive": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/OccurrencePrefix.lean",
+    "loop_model": "Actual one-vertex SingleObj Bool with distinct Bool loop arrows; false/true occurrences share endpoint and vertex sequence but distinct full traces/histories.",
+    "chain": "Actual existing empty->false->twice path chain, empty/reflexive full prefixes, exact false/true two-tag chronological trace and repeated vertex list.",
+    "named_obstructions": [
+      "parallel_occurrences_distinct",
+      "parallel_traces_incomparable",
+      "parallel_occurrences_incomparable",
+      "base_reachable_to_empty",
+      "occurrence_not_reachable_to_empty",
+      "endpoint_summary_does_not_reflect",
+      "retraction_does_not_reflect_ancestry",
+      "parallel_retraction_loses_history",
+      "unit_histories_distinct",
+      "unit_retraction_loses_history",
+      "unit_no_endpoint_left_inverse"
+    ],
+    "one_loop_boundary": "Separate actual Unit loop gives unequal nil/length1 histories with same endpoint, merged retraction, and impossibility of every endpoint left inverse.",
+    "negative": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/OccurrenceMissingHistory.lean",
+    "negative_line": 13,
+    "intended_rejection": "base_reachable_to_empty proves Reachable falseOccurrence.endpoint emptyOccurrence.endpoint, not Reachable falseOccurrence emptyOccurrence. Positive module contains the actual base-reachability and failed occurrence-reachability proofs.",
+    "proof_location_boundary": "All named counterexample proofs are in imported positive module; no proof is inferred from the failed whole negative file and no derived prefix is required.",
+    "result": "No actionable mathematical premise/control omission observed in these exact final source bytes."
+  },
+  "mathematical_object": "Exact full trace ancestry on existing rooted unfolding occurrences",
+  "exact_mathematical_review": [
+    "Occurrence.trace is exactly EdgeTrace.encode at a fixed root, retaining complete source,target and actual Hom tags. It is injective from existing PathStar encoding; no vertex-only decoder or new path/reachability relation appears.",
+    "Forward existing Reachable implies prefix by actual projected suffix and exact appended-history endpoint recovery. Reverse prefix implication proves actual suffix validity from validFrom_append_iff/finish_encodePath, decodes the suffix, obtains the existing unique finite lift, and proves the exact target occurrence by full trace injectivity.",
+    "ReachableVertex is the subtype of existing root-reachable base vertices. selectedOccurrence chooses an actual path witness, reachableEndpoint after selection equals identity, and selection is injective. No identity on every original occurrence follows.",
+    "Actual retractOccurrence preserves endpoint and is idempotent; equality of retracted histories is equivalent to endpoint equality. Distinct histories to one endpoint obstruct any left inverse. Set-theoretic chosen paths supply no arrow-preservation/ancestry-reflection/canonical-shortest-path property."
+  ],
+  "pinned_mathlib_and_prior_api_reference": {
+    "path": "cache/research/unfolding-normalized-next-gates-2026-10-15.json",
+    "sha256": "a31a1dcce7c026a05acf1cf02d633a37a07d8700a95344228314d988647a45db",
+    "bytes": 18912
+  },
+  "retained_anchor_correction": {
+    "path": "cache/coordination/events/unfolding-normalized-next-gates-anchor-correction-85b966983aca42d795a077e6f18c2f4c.json",
+    "sha256": "702a8aa19cf06264c108eebc5d0ae606415757e78ee296dbd3d7efc62070385b",
+    "bytes": 1051
+  },
+  "bounded_duplicate_scout": {
+    "paths": [
+      ".lake/packages/mathlib/Mathlib",
+      "GRWTSK/Combinatorics/DirectedGraph",
+      "GRWTSK/NumberTheory/LSeries"
+    ],
+    "patterns": [
+      "riemannZeta.*mellin",
+      "mellin.*riemannZeta",
+      "[Gg]aussian.*[Zz]eta",
+      "[Zz]eta.*[Gg]aussian",
+      "Reachable.*IsPrefix",
+      "IsPrefix.*Reachable",
+      "reachable.*prefix",
+      "prefix.*reachable"
+    ],
+    "result": "Only irrelevant linter text matched; no exact target found in this bounded name search. No exhaustive absence/novelty proof."
+  },
+  "fresh_primary_arxiv": {
+    "title": "Unfoldings and coverings of weighted graphs",
+    "author": "Bruno Courcelle",
+    "version": "2212.07205v3",
+    "at": "2023-06-13T12:23:51Z",
+    "url": "https://arxiv.org/abs/2212.07205v3",
+    "html_snapshot": {
+      "repository": "arxiv",
+      "version": "2212.07205v3",
+      "path": "2212.07205v3.html",
+      "url": "https://arxiv.org/html/2212.07205v3",
+      "archive": ".local/prefix-zeta-source-scout/84cfb947c30341db9c5f04a627122f07/arxiv/2212.07205v3.html",
+      "sha256": "c7bac0f90422a8d891b8333e9ee434aec2f93b733e9d872f893189d22efc03cf",
+      "bytes": 1196648
+    },
+    "selected_scope": "Section2.3 father/son and rooted reachability; Section3.1 Theorem3.5(1) proof actual finite-walk prefix tree and endpoint/last-arc projection. Context only; no full covering/universal property transfer. Rooted/countable conventions remain separate from generic Lean quiver.",
+    "license": "arXiv perpetual nonexclusive distribution, not source-code reuse license"
+  },
+  "actual_anthropic_source_comparison": {
+    "source": {
+      "repository": "anthropics/formal-math",
+      "pin": "e1a4e6508154ea59f030480661590a9fe3018011",
+      "path": "3sum-apsp/ThreeSumApsp/Util/BinaryPrefixes.lean",
+      "url": "https://raw.githubusercontent.com/anthropics/formal-math/e1a4e6508154ea59f030480661590a9fe3018011/3sum-apsp/ThreeSumApsp/Util/BinaryPrefixes.lean",
+      "git_blob": "91d3d961c6704e8cea11d53354654262f06604b8",
+      "archive": ".local/prefix-zeta-source-scout/84cfb947c30341db9c5f04a627122f07/anthropics/formal-math/3sum-apsp/ThreeSumApsp/Util/BinaryPrefixes.lean",
+      "sha256": "2675465d78a38d6e644ef26a779d43c2bc655e762cf303f2705d4c30c12714c4",
+      "bytes": 6218
+    },
+    "copyright_license": "2026 Anthropic PBC, Apache-2.0 per actual source header; no individual Lean author named.",
+    "selected_declarations": {
+      "ThreeSumApsp.prefQ": 31,
+      "ThreeSumApsp.prefR": 34,
+      "ThreeSumApsp.pref_step": 52,
+      "ThreeSumApsp.testBit_iff_shift": 106,
+      "ThreeSumApsp.zipWith_shiftQ": 118,
+      "ThreeSumApsp.map_shiftR": 125
+    },
+    "scope": "Arithmetic binary prefixes floor(z/2^level), remainders, bit transition and mapped integer lists, with bit-level/bounded-number assumptions. This selected file does not prove arbitrary typed-edge quiver ancestry or source-node order embedding; no theorem/source acceptance is transferred.",
+    "path_model_context": "Previously read actual PathsAndWalks.lean compares optional endpoint weights over Fin n with weighted vertex walks; source identity and limits remain bound in prior path-unfolding review."
+  },
+  "prior_source_review": {
+    "path": "evidence/Combinatorics/DirectedGraph/path-unfolding-source-review-2026-10-15.json",
+    "sha256": "4bf6e31ca17373c97c2e187cacf27029887d55fec5efed20e845da4cf0e85a9d"
+  },
+  "prior_prefix_obstruction_source": {
+    "path": "GRWTSK/Order/Embeddings/PrefixObstruction.lean",
+    "sha256": "438d46160c2131154dc49b6c345208207c4ba0931ec0487a08153a0291ac8f46"
+  },
+  "operational_read_only_review": {
+    "adapter": {
+      "path": "scripts/cache_trace_prefix.py",
+      "sha256": "eedfb41b1c0ea550bcfbcbe586a473efbe224453be9ea5bfc0046a7f062d3a54"
+    },
+    "tests": {
+      "path": "scripts/test_cache_trace_prefix.py",
+      "sha256": "2b32741d467c874b334abec819f4727a24a1fde0e06846a4001528de92db3080"
+    },
+    "result": "No actionable boundary issue observed in bounded read-only inspection. Both docs separately strictly validated; same fixed root/role/context required; complete ordered occurrence tuples compared, not endpoints/lengths/IDs. CLI retains each file identity and rechecks both files/raw taxonomy/current ref.",
+    "test_boundary": "Source inspector ran no tests/native jobs. Root owns normal/-O operational receipts. The test source contains19 controls; count does not imply theorem acceptance.",
+    "refinement_boundary": "Source snapshot and raw taxonomy are independently bound, not historical containment. No semantic Lean/Python typed-quiver/JSON correspondence or permission implication is proved."
+  },
+  "remaining_limits": [
+    "Occurrence histories, not arbitrary base vertices, receive exact prefix representation. Existing diamond obstruction/preservation-versus-reflection distinction remains unchanged.",
+    "No automatic full covering, source DAG prefix embedding, execution/serialization algorithm or cache taxonomy authority."
+  ],
+  "at": "2026-10-15T20:16:26.536801+00:00",
+  "author_freeze": {
+    "path": "cache/coordination/events/20261015T201524Z-occurrence-prefix-complete-8ae23669.json",
+    "sha256": "25567aaf8b02683e6f0bf41894c70baca20e53322d8e4f35622061d000ddcda6",
+    "bytes": 10025,
+    "scope": "Author completion/source freeze read; development verification reported there is not independently replayed by this reviewer."
+  },
+  "preserved_author_development_evidence": {
+    "event": {
+      "path": "cache/coordination/events/20261015T201524Z-occurrence-prefix-complete-8ae23669.json",
+      "sha256": "25567aaf8b02683e6f0bf41894c70baca20e53322d8e4f35622061d000ddcda6",
+      "bytes": 10025
+    },
+    "failures": "Author completion preserves endpoint congrArg and extra-tactic failures plus all variants. It explicitly excludes a stale intermediate census that reused a previous positive object after positive compilation failure; final positive rebuild/census reported separately. This review does not relabel either as fresh acceptance.",
+    "development_census_report": "Author reports154 closure declarations (21new library,17new positive plus exact older library closure); this is source-event context only, root owns fresh acceptance."
+  },
+  "attribution": {
+    "local": "Copyright2026 R.A.Jacob Martone, MIT; human mathematical direction R.A.Jacob Martone, OpenAI Codex formalization assistance.",
+    "upstream": "Existing PathUnfolding/EdgeTrace source notices retain actual Lean/Mathlib Apache2 and individual authors; exact prior source reviews remain referenced. Anthropic BinaryPrefixes and Courcelle article are bounded comparisons, not proof ports or independent source acceptance."
+  }
+}

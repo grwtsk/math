@@ -1,0 +1,11 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "occurrence-prefix-formal",
+  "owner": "indexed_dictionary",
+  "at": "2026-10-15T20:13:29.958726+00:00",
+  "kind": "native-lock-released",
+  "source": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/OccurrenceMissingHistory.lean",
+  "exit_code": 1,
+  "all_native_children_exited": true,
+  "log": ".local/path-prefix/logs/20261015T201329.344957Z-OccurrenceMissingHistory.log"
+}

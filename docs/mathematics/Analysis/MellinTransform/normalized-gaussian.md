@@ -74,6 +74,12 @@ forward transform and recovers the selected inverse identity through an actual
 consumer of the previously accepted Gaussian. It does not import the
 surrounding detector or its arithmetic hypotheses.
 
+The [zeta Gaussian contour](../../NumberTheory/LSeries/gaussian-contour.md)
+is a separate actual consumer for $\sigma>1$ and $Z>0$. It discharges
+absolute sum–integral interchange from the positive-natural-number
+$p$-series before using this inversion termwise. Its coefficient-one zeta
+series and native receipt are separate from the normalized Mellin pair.
+
 Apache-2.0 terms remain retained. OpenAI supplies the upstream profile and
 selected inverse statement. Mathlib credits Sébastien Gouëzel for Gaussian
 integration, Lawrence Wu for Mellin inversion and David Loeffler for Mellin
