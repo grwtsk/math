@@ -1,0 +1,55 @@
+{
+  "schema": "selected-replay-guard-controls-v1",
+  "at": "2026-10-15T19:13:01.521069+00:00",
+  "outcome": "passed",
+  "source_hashes": {
+    "scripts/check_path_occurrences.py": "9f9fed2a9d52a21bbeb9fc2f88e4878a06f7f180e08f53eb9691f21cc22c1016",
+    "scripts/check_reverse_mellin.py": "98d4495d47c4ef3bd29324198f5a847ebd2325abb5ae2bf81399196fb8b44a02",
+    "scripts/test_selected_replay_guards.py": "c7cd4f7dcceb7332f850c816b42e8239712264d7f8f6f0cff4cde3a5aa2b3f6a",
+    "scripts/check_math_trust.py": "069ca265038960243890b1c4e028637723ddc440854864a61648eb2b2fd99c9d"
+  },
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "scripts/test_selected_replay_guards.py"
+      ],
+      "exit_code": 0,
+      "unittest_methods": 2
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "-O",
+        "scripts/test_selected_replay_guards.py"
+      ],
+      "exit_code": 0,
+      "unittest_methods": 2
+    }
+  ],
+  "bounded_cases": {
+    "drivers": 2,
+    "object_scenarios_per_driver": 9,
+    "scenarios": [
+      "unchanged accepted",
+      "same-path replacement rejected",
+      "truncation rejected",
+      "main deletion rejected",
+      "private replacement rejected",
+      "private deletion rejected",
+      "new server member rejected",
+      "main symlink rejected even with same bytes",
+      "private symlink rejected even with same bytes"
+    ],
+    "diagnostics": [
+      "plain Type mismatch counted",
+      "coded error counted",
+      "plain+extra coded errors counted as two",
+      "warning text is not error"
+    ],
+    "claim": "Operational bounded hostile controls only; no formal Python/kernel/OS/hash collision-resistance refinement."
+  },
+  "historical_receipts": "Both original r1 native receipts retained; current hardened-driver replay requires distinct r2 receipts."
+}
