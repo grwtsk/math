@@ -143,6 +143,16 @@ ordered edge occurrence. Its bounded tests and actual comparison receipts
 are operational evidence; the Lean/runtime relation-graph correspondence,
 proof authority and permission implications remain unestablished.
 
+The [endpoint-section obstruction](../mathematics/Combinatorics/DirectedGraph/endpoint-section.md)
+gives an exact limit on choosing one history for every reachable source
+vertex. If two incomparable reachable vertices share a reachable upper
+vertex, no endpoint right inverse can preserve every source reachability
+comparison. The concrete thin diamond includes loops and a shortcut.
+This conditional mathematical obstruction supplies no claim that the
+current operational taxonomy contains that configuration. Source entities,
+chosen representatives and all exact path occurrences retain separate
+identities and verification states.
+
 The separate occurrence-trace adapter validates one fixed root, one typed
 relation kind, forward direction, exact relation content and ordered endpoint
 joins. Its current source snapshot and exact taxonomy byte/revision bindings

@@ -4,16 +4,16 @@
 
 | Inventory | Count |
 |---|---:|
-| Object guides | 29 |
+| Object guides | 30 |
 | Documented object groups | 12 |
-| Distinct primary sources linked | 27 |
-| Lean source modules | 212 |
+| Distinct primary sources linked | 28 |
+| Lean source modules | 215 |
 | Archive intake records | 19 |
 | Selected catalog families | 1 |
 
 These counts measure documentation and source coverage. They do not count accepted theorems or establish that every source module is documented or checked. [Definitions and limits](../../reference/library-pages.md#count-definitions).
 
-At least 1708 source declaration commands, including 1318 theorem/lemma commands, across 172 parsed Lean source modules; 40 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
+At least 1722 source declaration commands, including 1331 theorem/lemma commands, across 175 parsed Lean source modules; 40 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
 
 ## ArithmeticFunctions
 
@@ -35,12 +35,13 @@ Linked primary-source scope: 100 source declaration commands, including 79 theor
 
 ## LSeries
 
-2 object guides · 2 distinct linked primary source files.
+3 object guides · 3 distinct linked primary source files.
 
-Linked primary-source scope: 16 source declaration commands, including 14 theorem/lemma commands, across 2 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+Linked primary-source scope: 23 source declaration commands, including 20 theorem/lemma commands, across 3 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
 - [A Gaussian contour for the zeta Dirichlet series](LSeries/gaussian-contour.md).
 - [Closed Möbius Dirichlet polynomials](LSeries/closed-moebius.md).
+- [Dyadic reconstruction of the Gaussian zeta sum](LSeries/gaussian-dyadic.md).
 
 ## Moebius
 
