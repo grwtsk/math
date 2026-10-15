@@ -1,0 +1,16 @@
+{
+  "schema": "repository-agent-task-v1",
+  "created_at": "2026-10-15T16:59:10.269616+00:00",
+  "status": "ready",
+  "branch": "main",
+  "policy": "Follow AGENTS.md. Preserve concurrent changes. Task records and events communicate work; they confer no mathematical acceptance or remote authority. Append one uniquely named event file under cache/coordination/events on completion, with actual paths, hashes, checks, failures, remaining premises. Do not commit; root integrates. Never overwrite an existing task/event.",
+  "source_scope": "Selected repository files and user-supplied research scope only; no account intake.",
+  "id": "cache-taxonomy",
+  "owner_role": "Taxonomy integrity and revision mapping",
+  "write_paths": [
+    "cache/taxonomy.json",
+    "scripts/cache_taxonomy.py",
+    "scripts/test_cache_taxonomy.py"
+  ],
+  "objective": "Encode user supplied 16 method-family table and declared record counts summing 215, including actual example names from chat; preserve distinction between declared counts and missing individual 215 method record identities. Do not fabricate placeholder records or claim complete method coverage. Keep metadata method facets separate from canonical mathematical subject/object placement under GRWTSK. Implement stable IDs, unique codes, exact declared total, allowed typed relations, parent/reference integrity, primary home uniqueness, alias targets, acyclic taxonomy parent edges, revision parent/CAS expected identity validation, contribution/decision premise records and exact coverage identity comparison. Distinguish taxonomy, formal implication, provenance, dependency, communication and governance relation kinds; no arbitrary graph reachability promotes acceptance. Use existing mathematical revision/dependency formal models in GRWTSK as referenced design antecedents, without claiming Python is Lean-verified. Provide honest per-family applicability for structural integrity: exact counts/identities/revisions are admission gates; Benford/Zipf/randomness/spectra/clustering are advisory or not applied unless meaningful data/hypotheses exist. All 16 families retained but do not implement or claim all algorithms. Test duplicate/fake-total/dangling parent/cycle/missing ID with same cardinality/alias collision/type confusion/revision stale/unknown schema. Do not edit cache core adapter, source modules, umbrella/docs registries. Append completion event file, no commit."
+}

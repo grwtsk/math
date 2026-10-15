@@ -1,0 +1,88 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "global-integration",
+  "event": "concurrent-merge-preserved",
+  "actor": "root",
+  "at": "2026-10-15T17:12:15.321260+00:00",
+  "heads": {
+    "HEAD": "1c3cd0902caa5e43471473071ec9febebf1e9c5f",
+    "MERGE_HEAD": "f4962651aacf7485470096f22e4d3f1dfc22c10a",
+    "origin/main": "f4962651aacf7485470096f22e4d3f1dfc22c10a"
+  },
+  "conflicts": [
+    {
+      "path": "docs/index.md",
+      "stage": 1,
+      "mode": "100644",
+      "git_blob": "76485b20a904186e24bde92d38698e099e8c11f1",
+      "sha256": "798899a033f5045b58cec8fe575058b4f65d194d7b695cc2bf3bd2c252bbfbc6",
+      "retained": ".local/cache-reconciliation/117f58c788c141ea86795a718b025a08/stages/docs/index.md/1.blob"
+    },
+    {
+      "path": "docs/index.md",
+      "stage": 2,
+      "mode": "100644",
+      "git_blob": "06cf5d8e7574211037f42fcaab6129071ba73ed5",
+      "sha256": "eba76e6f49a3e5cabc70165dedcfa82def6832f3a4586bfcc43cb0ef9abd1764",
+      "retained": ".local/cache-reconciliation/117f58c788c141ea86795a718b025a08/stages/docs/index.md/2.blob"
+    },
+    {
+      "path": "docs/index.md",
+      "stage": 3,
+      "mode": "100644",
+      "git_blob": "b94e029e0993a7b4c42253c6b0124e068e20d9ce",
+      "sha256": "a93c131b5e67b143bea2258bad6dc2b1c539dd1578ea7564053984669429fe41",
+      "retained": ".local/cache-reconciliation/117f58c788c141ea86795a718b025a08/stages/docs/index.md/3.blob"
+    },
+    {
+      "path": "docs/mathematics/Logic/index.md",
+      "stage": 1,
+      "mode": "100644",
+      "git_blob": "4b4aa01df80878b4c729114f313ce1a67199199e",
+      "sha256": "8f4ebca887b7947fab9ca6ec6f35876a01ae7fcb2b7e501541e73a667b5b124c",
+      "retained": ".local/cache-reconciliation/117f58c788c141ea86795a718b025a08/stages/docs/mathematics/Logic/index.md/1.blob"
+    },
+    {
+      "path": "docs/mathematics/Logic/index.md",
+      "stage": 2,
+      "mode": "100644",
+      "git_blob": "755dec80014b6a30edc36765e83f0a734cc381d2",
+      "sha256": "ad163c9e6f445828bbc081c3f6e9d38a3d10319122baf63261f62b87518255aa",
+      "retained": ".local/cache-reconciliation/117f58c788c141ea86795a718b025a08/stages/docs/mathematics/Logic/index.md/2.blob"
+    },
+    {
+      "path": "docs/mathematics/Logic/index.md",
+      "stage": 3,
+      "mode": "100644",
+      "git_blob": "cc71ffac5563e7a5173a3936ed7c4912240960e0",
+      "sha256": "893e63597953f5776949a60ef3c312155420c307e2e7f4f41a11806d5f8604a4",
+      "retained": ".local/cache-reconciliation/117f58c788c141ea86795a718b025a08/stages/docs/mathematics/Logic/index.md/3.blob"
+    },
+    {
+      "path": "docs/reference/library-summary.json",
+      "stage": 1,
+      "mode": "100644",
+      "git_blob": "967fa9e4a19fd47f86fab00cf71fbe40e23d46ee",
+      "sha256": "9c1ed923ed7ce8937a3be4c389054908c1a00ac33cf2273020c817e9f0e3ee1b",
+      "retained": ".local/cache-reconciliation/117f58c788c141ea86795a718b025a08/stages/docs/reference/library-summary.json/1.blob"
+    },
+    {
+      "path": "docs/reference/library-summary.json",
+      "stage": 2,
+      "mode": "100644",
+      "git_blob": "0254674106db0c826c85985d3ac266ee45ee8692",
+      "sha256": "969ed5825789db7b1a8b92cf737902e49a19be8dcf72061dddd13b10ccb6303f",
+      "retained": ".local/cache-reconciliation/117f58c788c141ea86795a718b025a08/stages/docs/reference/library-summary.json/2.blob"
+    },
+    {
+      "path": "docs/reference/library-summary.json",
+      "stage": 3,
+      "mode": "100644",
+      "git_blob": "1f360d7dcb6dec892b716d56dd15b1aa2e3acae7",
+      "sha256": "b1fcf5a3d4b13bae8c927611a4c46d8ed26376bbcf0584a45fcd909403bf6a69",
+      "retained": ".local/cache-reconciliation/117f58c788c141ea86795a718b025a08/stages/docs/reference/library-summary.json/3.blob"
+    }
+  ],
+  "archive": ".local/cache-reconciliation/117f58c788c141ea86795a718b025a08",
+  "policy": "Preserve all stages and concurrent edits; reconcile combined mathematical metadata, never choose a side merely to hide a collision. Cache source capture remains blocked until index is merged."
+}

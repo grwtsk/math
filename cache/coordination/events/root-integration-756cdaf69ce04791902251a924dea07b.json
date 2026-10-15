@@ -1,0 +1,61 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "global-integration",
+  "actor": "root",
+  "at": "2026-10-15T17:24:22.170032+00:00",
+  "event": "selected-proofs-and-cache-integrated",
+  "head_observed": "253cc1a63fb0d7de79d084d562a442776fa4ce17",
+  "branch": "main",
+  "cache_revision": "2d648f1aca303da5695048ae22d3e22b0a4905a96b80a9fcf8b651c76bad3628",
+  "current_scope": {
+    "lean_source_paths": 644,
+    "catalogs": 2,
+    "build_license_context_files": 9,
+    "exact_roundtrip": "passed",
+    "disjoint_owned_native_declarations": 101,
+    "declaration_count_is_not_theorem_total": true,
+    "cache_proof_status": "unknown-unreplayed"
+  },
+  "evidence": [
+    {
+      "path": "evidence/Logic/FiniteSequences/cache-integration-2026-10-15.json",
+      "sha256": "e780abe49ddf3d8afce86e333f6138185b524c2575016f4d4ce7ccc79f45bead"
+    },
+    {
+      "path": "evidence/Logic/FiniteSequences/cache-validation-2026-10-15.json",
+      "sha256": "5981fdec33d5437fcefaa414dfcee2102aa0107f0ae03cdd92607b834183a5af"
+    },
+    {
+      "path": "evidence/Logic/FiniteSequences/cache-roundtrip-2026-10-15.json",
+      "sha256": "627d17fe7dc7e796578a904f74b16aeaa64b2e052d34532223b6d9de5b9a6745"
+    },
+    {
+      "path": "evidence/LinearAlgebra/Matrix/trace-rank-integration-2026-10-15.json",
+      "sha256": "f8ee096cb655d046586415b340317efdab74f547d4e45bee7cb7c04ba796c537"
+    },
+    {
+      "path": "cache/research/frontier-2026-10-15.json",
+      "sha256": "3ea12e9b4e33f1b13e4795e726eee68d7a9d35f45590b4c322b739bf4436e4e8"
+    },
+    {
+      "path": "cache/decisions/representation-and-evidence-v1.json",
+      "sha256": "a7ac98db02abca1efffae9334d0ff414e6feb55cc9118e4818b52bacb8d808f4"
+    }
+  ],
+  "integration": {
+    "concurrent_merge": "253cc1a63fb0d7de79d084d562a442776fa4ce17",
+    "all_nine_conflict_stages_preserved": true,
+    "unrelated_layout_findings_unchanged": true,
+    "historical_source_hashes_not_rebound": true,
+    "old_receipts_retained": true
+  },
+  "cleanup": {
+    "worktree_prune": "completed; no stale worktree found",
+    "branches": [
+      "main"
+    ],
+    "new_branches_or_worktrees_created": false
+  },
+  "publication": "No remote writes authorized or performed. Local checkpoint commit follows after current identities are rechecked.",
+  "continuation": "Recurring research remains active. Open candidate proof and representation/refinement obligations remain in the research frontier and compatibility review."
+}

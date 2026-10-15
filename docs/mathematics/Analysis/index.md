@@ -4,10 +4,10 @@
 
 | Inventory | Count |
 |---|---:|
-| Object guides | 13 |
-| Documented object groups | 8 |
-| Distinct primary sources linked | 13 |
-| Lean source modules | 238 |
+| Object guides | 16 |
+| Documented object groups | 11 |
+| Distinct primary sources linked | 16 |
+| Lean source modules | 239 |
 | Archive intake records | 39 |
 | Selected catalog families | 1 |
 
@@ -16,6 +16,10 @@ These counts measure documentation and source coverage. They do not count accept
 ## Asymptotics
 
 - [Polynomial return with a paid error](Asymptotics/polynomial-error.md).
+
+## Complex / CriticalReflection
+
+- [Critical line reflection and Gaussian rotation](Complex/CriticalReflection/reflection.md).
 
 ## Convolution
 
@@ -30,6 +34,10 @@ These counts measure documentation and source coverage. They do not count accept
 
 - [Angular Fourier normalization and window certificates](Fourier/WindowCertificates/angular.md).
 
+## Inequalities
+
+- [Finite square sums with support size](Inequalities/finite-square-sum.md).
+
 ## InnerProductSpace
 
 - [Finite causal response Gram positivity](InnerProductSpace/causal-response-gram.md).
@@ -39,6 +47,10 @@ These counts measure documentation and source coverage. They do not count accept
 
 - [Finite exponential Volterra L2 estimates](Integration/exponential-volterra-l2.md).
 - [Interval reflection and signed integral pairing](Integration/interval-reflection.md).
+
+## LaplaceTransform
+
+- [Exponential energy bounds and square integrability](LaplaceTransform/exponential-energy.md).
 
 ## NormedSpace
 

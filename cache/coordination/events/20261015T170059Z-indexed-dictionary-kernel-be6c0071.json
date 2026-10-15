@@ -1,0 +1,36 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "indexed-dictionary",
+  "status": "in_progress",
+  "owner": "indexed_dictionary",
+  "paths": [
+    "GRWTSK/Logic/FiniteSequences/IndexedDictionary.lean"
+  ],
+  "kernel_check": {
+    "lean": "leanprover/lean4:v4.33.0",
+    "trust": 0,
+    "warningAsError": true,
+    "exit_code": 0,
+    "source_sha256": "c01e5ff8067d652cafb42260ae283786c8cb78710c73eb23079a54bd05fbedff",
+    "receipt": ".local/cache-formalization/indexed-dictionary/20261015T170042Z-compile.json"
+  },
+  "contracts": [
+    "unpack_pack: unpack (pack entries) = some entries, for arbitrary Key/Payload and DecidableEq Payload",
+    "pack_dictionary_nodup",
+    "pack_reference_bound and pack_valid",
+    "pack_references_keys and pack_references_length preserve ordered occurrence keys and source length",
+    "pack_injective and unpack_pack_position"
+  ],
+  "structural_check": {
+    "command": "python3 -B scripts/check_math_layout.py",
+    "exit_code": 1,
+    "findings": 179,
+    "note": "Existing repository drift and uncataloged ongoing modules, plus this new module awaits root registry/public-umbrella integration."
+  },
+  "remaining": [
+    "Positive and negative controls, final source hashes and precise root audit interface."
+  ],
+  "adapter_limits": [
+    "No theorem about SHA,zlib,JSON,filesystems or runtime implementation; exact finite-list and decidable-equality model only."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "cache-adapter",
+  "status": "preflight-refused-concurrent-index-conflict",
+  "created_at": "2026-10-15T17:09:56.756982+00:00",
+  "observation": "Read-only real-source preflight now refuses unmerged index. No real cache snapshot has been written. Synthetic fixture controls continue independently. Root must preserve/integrate conflicts before final snapshot.",
+  "collision_paths": [
+    "docs/index.md",
+    "docs/mathematics/Logic/index.md",
+    "docs/reference/library-summary.json"
+  ],
+  "index_stages": [
+    "100644 76485b20a904186e24bde92d38698e099e8c11f1 1\tdocs/index.md",
+    "100644 06cf5d8e7574211037f42fcaab6129071ba73ed5 2\tdocs/index.md",
+    "100644 b94e029e0993a7b4c42253c6b0124e068e20d9ce 3\tdocs/index.md",
+    "100644 4b4aa01df80878b4c729114f313ce1a67199199e 1\tdocs/mathematics/Logic/index.md",
+    "100644 755dec80014b6a30edc36765e83f0a734cc381d2 2\tdocs/mathematics/Logic/index.md",
+    "100644 cc71ffac5563e7a5173a3936ed7c4912240960e0 3\tdocs/mathematics/Logic/index.md",
+    "100644 967fa9e4a19fd47f86fab00cf71fbe40e23d46ee 1\tdocs/reference/library-summary.json",
+    "100644 0254674106db0c826c85985d3ac266ee45ee8692 2\tdocs/reference/library-summary.json",
+    "100644 1f360d7dcb6dec892b716d56dd15b1aa2e3acae7 3\tdocs/reference/library-summary.json"
+  ],
+  "actions": "No conflict/source/branch mutation; worker-owned script/tests only."
+}
