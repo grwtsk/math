@@ -1,0 +1,49 @@
+{
+  "actual_parent_tree": "51c206f188d614ddcb2fdeb8905407ed7f2aba60",
+  "actual_publication_parent": "9c0ef233ba723096f061d6482f2074a322a4eb6c",
+  "comparison": {
+    "added_paths": 23,
+    "ahead_by": 2,
+    "behind_by": 0,
+    "deleted_paths": 0,
+    "modified_paths": 0,
+    "overlap_with_this_publication": []
+  },
+  "concurrent_mathematical_comparison": {
+    "adapter_scope": "The concurrent Fourier/Cayley adapter includes the entire discrepancy, continuum and endpoint. The present centered-atom identity separates the integer-label source and fractional-cell remainder, and supplies a quadratic all-depth diagonal bound. Neither adapter establishes the signed cross upper bound.",
+    "finite_scope": "The concurrent producer reports D_128 < 5/24 at 1024/1152 working bits. That is stronger than the pending package bound 21/100 published here; neither extends depth beyond 128. The pending work is preserved, not substituted for the stronger result.",
+    "laguerre_dirichlet_blob": "3bb6452fec0b4c17b2a31342898961ded7d59148",
+    "laguerre_dirichlet_source": "evidence/number-theory/zeta/laguerre-dirichlet-20261015/derivation.txt at 9c0ef233ba723096f061d6482f2074a322a4eb6c",
+    "new_written_schedule_combination": {
+      "combined_vector_error_squared": "2*(E_N^2+F_N^2)",
+      "frequency_cutoff": "Y_N=2^(7N)",
+      "frequency_error_squared": "F_N^2=N*(11*N+1)^2/8^N",
+      "grade": "WRITTEN_COMBINATION_ONLY; these enormous cutoffs and frequency integrals were not numerically evaluated; signed head remains OPEN",
+      "prime_cutoff": "X_N=2^(11N)",
+      "prime_error_squared": "E_N^2=N*(91*N/45+910/891)^2*(36/49)^N",
+      "proof": "Concurrent Section 4 proves the length-N frequency error <= sqrt(N)*3*sqrt(X)*(log(X)+1)/(pi*Y). Insert X=2^(11N), Y=2^(7N), pi>3 and log(2)<1, then square. Combine with the present prime-label tail by the triangle inequality and (a+b)^2<=2(a^2+b^2). Both budgets tend to zero. The finite-frequency coefficients are those of the concurrent full discrepancy adapter; no endpoint, factor or mesh term is deleted."
+    }
+  },
+  "initial_inspected_parent": "ba77517b0b4e74d36a824d34c2948b276471b844",
+  "limits": {
+    "RH_proved": false,
+    "active_Lean_additions": 0,
+    "all_depth_cross_upper_bound": "OPEN",
+    "independent_review": "NOT_PERFORMED",
+    "native_Lean": "NOT_RUN",
+    "new_zero_exclusion": false,
+    "whole_repository_checks": "NOT_RUN"
+  },
+  "preserved_commits": [
+    "f4962651aacf7485470096f22e4d3f1dfc22c10a",
+    "9c0ef233ba723096f061d6482f2074a322a4eb6c"
+  ],
+  "publication_inventory": {
+    "existing_files_deleted": 0,
+    "existing_files_modified": 0,
+    "new_files": 26
+  },
+  "replay_scope": "The same pinned source closure was freshly replayed before publication. Concurrent commits add unrelated paths only. Their test suites were not rerun. Source hash equality is not independent analytic verification.",
+  "schema": "centered-atom-concurrent-publication-v1",
+  "staging_records": "The original parent in README, manifests, results and publication-plan remains the inspected preparation base. This record identifies the actual publication parent; historical records are not rewritten."
+}
