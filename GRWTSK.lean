@@ -358,3 +358,5 @@ import GRWTSK.Combinatorics.DirectedGraph.PathOccurrences
 import GRWTSK.Analysis.MellinTransform.ReverseInversion
 import GRWTSK.Combinatorics.DirectedGraph.EdgeTrace
 import GRWTSK.Analysis.MellinTransform.LogarithmicGaussian
+import GRWTSK.Combinatorics.DirectedGraph.PathUnfolding
+import GRWTSK.Analysis.MellinTransform.NormalizedGaussian

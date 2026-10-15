@@ -1,0 +1,109 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "normalized-gaussian-formal",
+  "event": "complete",
+  "at": "2026-10-15T19:54:56.793684+00:00",
+  "owner": "cache_adapter",
+  "status": "COMPLETE_DEV_REPLAY_ROOT_AUDIT_PENDING",
+  "source_hashes": {
+    "GRWTSK/Analysis/MellinTransform/NormalizedGaussian.lean": "a0ed0dbf644601887df128536951a9c3e17ecf42970069a13acdfcb93518e3bf",
+    "GRWTSK/Analysis/MellinTransform/Checks/Positive/NormalizedGaussian.lean": "afd23b18615ec575c59f64be4c1e8bd710bf7425e24939cc4c765c9956d8c525",
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianMissingNormalization.lean": "90fc1e3e103a8db7752776804b84269ab8d3a04d8bc88230f5e5624f215a262c"
+  },
+  "unchanged_accepted_dependency_hashes": {
+    "GRWTSK/Analysis/MellinTransform/ReverseInversion.lean": "88d959d74d9d5e27772f57e847497b9a943167cc41ae6abb453c3932cbb84c57",
+    "GRWTSK/Analysis/MellinTransform/LogarithmicGaussian.lean": "cd47e598796f4f901ddea56dd05bb9e719534e1aac5589c1be6ddfb8d9fea66d"
+  },
+  "primary_source": {
+    "repository": "https://github.com/openai/math",
+    "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+    "path": "lean/OAI/NumberTheory/DirichletL/Detector/GaussianMellin.lean",
+    "sha256": "0526d85d63bcee8a85cb945c231af1263839ca0808c6d714132d0781b2618a04",
+    "git_blob": "93c23e9dd51f20828eb7c216ea7f8f17963d9314",
+    "bytes": 2952,
+    "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/Detector/GaussianMellin.lean",
+    "archive": ".local/normalized-gaussian/aa266caa5e43482598ff0e9092ed1db5/OpenAI-GaussianMellin-pinned.lean",
+    "project_author": "OpenAI",
+    "individual_author": "No individual source header supplied; none invented.",
+    "license": "Apache-2.0",
+    "original_profile_definition_and_inverse_statement": "Preserved exactly up to whitespace, namespace and explicit noncomputable/theorem modifiers. Original full source proof body retained unchanged in archive. New inverse proof uses accepted forward result and Mathlib Mellin inversion.",
+    "entire_upstream_source_replay": "NOT_RUN; local complete selected closure is separate."
+  },
+  "exact_contract": {
+    "profile": "P(y)=((1/(2*pi):real):complex)*(pi:complex)^(1/2:complex)*exp(-(Complex.log(y:complex))^2/4)",
+    "positive_half_line_bridge": "Only for x>0: P(x)=coefficient • logarithmicGaussianWith(1/4)(x); no global equality between real and complex logarithm claimed.",
+    "principal_root_normalization": "coefficient*((pi:complex)/(1/4:complex))^(1/2:complex)=1, proved using positive real factors and principal complex powers.",
+    "forward": "For every s:complex, MellinConvergent P s and mellin P s=exp(s^2).",
+    "actual_line_norm": "For every real sigma,v: norm(exp((sigma+v*i)^2))=exp(sigma^2)*exp(-v^2).",
+    "actual_inverse_inputs": [
+      "VerticalIntegrable(exp(s^2)) at every real sigma, from an actual Gaussian integrable bound",
+      "Continuity of every vertical-line restriction of exp(s^2)",
+      "Continuity of P at every positive x",
+      "Mellin convergence at the actual real sigma",
+      "Exact all-complex forward identity, used to supply the transform input to Mathlib inversion"
+    ],
+    "inverse": "For every real sigma and positive x, mellinInv sigma (fun s=>exp(s^2)) x=P(x).",
+    "exact_upstream_integral": "The original inverse statement with1/(2*pi), x^(-(sigma+v*i)) and real v integral follows by unfolding Mellin inverse.",
+    "no_assumed_suppliers": "No holomorphy, initial identity, convergence, representation or integrability inputs are left as external hypotheses."
+  },
+  "actual_missing_normalization_control": {
+    "complete_proof_module": "GRWTSK/Analysis/MellinTransform/Checks/Positive/NormalizedGaussian.lean",
+    "namespace": "GaussianNormalizationControl",
+    "declarations": [
+      "unnormalizedProfile",
+      "unnormalizedProfile_eq_quarter",
+      "unnormalizedProfile_convergent",
+      "unnormalizedProfile_mellin_zero",
+      "unnormalizedProfile_not_unit_transform"
+    ],
+    "raw_profile": "exp(-(Complex.log(x:complex))^2/4), the exact profile with coefficient omitted.",
+    "actual_inputs": "Convergence for every complex s is proved using accepted quarter-width Gaussian and positive-half-line congruence.",
+    "failure": "Its Mellin value at0 is (4*pi)^(1/2), not1. The proof squares the exact principal root and uses the existing pinned real pi bound; no divergent totalized integral value is used.",
+    "negative_imports_complete_positive_module": true,
+    "sole_error": "Type mismatch after simplification: normalized-profile Mellin value0=1 cannot supply unnormalized-profile Mellin value0=1.",
+    "expected_substring": "mellin unnormalizedProfile 0 = 1",
+    "actual_diagnostic": "/Users/local/Desktop/math/.local/normalized-gaussian/aa266caa5e43482598ff0e9092ed1db5/final/source/GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianMissingNormalization.lean:9:2: error: Type mismatch: After simplification, term\n  gaussianMellinProfile_mellin 0\n has type\n  mellin gaussianMellinProfile 0 = 1\nbut is expected to have type\n  mellin unnormalizedProfile 0 = 1\n",
+    "root_audit_requirement": "Census complete accepted positive control module; no negative-only proof claim or derived prefix is required."
+  },
+  "verification": {
+    "receipt": ".local/normalized-gaussian/aa266caa5e43482598ff0e9092ed1db5/final/receipt.json",
+    "receipt_sha256": "168b5223c03c5425198b7e5924aaba7de93bf049f59a57633daf44a023fed3d3",
+    "prior_local_closure": "PASS freshly compiled ReverseInversion and LogarithmicGaussian",
+    "new_library": "PASS",
+    "positive_consumers_and_named_counterexample": "PASS",
+    "negative": "PASS_EXPECTED_SINGLE_TYPE_MISMATCH",
+    "trust": 0,
+    "fatal_warnings": true,
+    "pinned_lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+    "dependency_objects_reused": true,
+    "canonical_project_objects_excluded": true,
+    "source_and_generated_object_stability": true,
+    "source_whitespace": "PASS",
+    "exact_profile_and_inverse_statement_comparison": "PASS",
+    "owned_declaration_axiom_audit": "NOT_RUN_ROOT_OWNS",
+    "root_fresh_complete_acceptance": "PENDING",
+    "native_jobs_running": 0,
+    "all_children_exited": true,
+    "shared_lock": "RELEASED"
+  },
+  "layout_check": {
+    "command": "python3 -B scripts/check_math_layout.py",
+    "exit_code": 1,
+    "summary": "Math layout: FAIL (365 library modules, 183 findings).",
+    "log": ".local/normalized-gaussian/aa266caa5e43482598ff0e9092ed1db5/math-layout.log",
+    "sha256": "e4b156fbb9969089695807445b86cb6f696a59b748ddefce60ec750170863ce7",
+    "owned_findings": [
+      "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianMissingNormalization.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources",
+      "GRWTSK/Analysis/MellinTransform/Checks/Positive/NormalizedGaussian.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources",
+      "GRWTSK/Analysis/MellinTransform/NormalizedGaussian.lean: library-module-outside-public-closure [GRWTSK.Analysis.MellinTransform.NormalizedGaussian]: library module is not reachable from GRWTSK.lean",
+      "GRWTSK/Analysis/MellinTransform/NormalizedGaussian.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources"
+    ],
+    "boundary": "Owned findings are pending catalog/public-import registration; root owns integration. All unrelated/pre-existing findings preserved; no naming violation reported for owned paths."
+  },
+  "credit": "OpenAI project/source identity and Apache2 preserved. Individual Mathlib copyright/credit for Gouëzel Gaussian, Wu Mellin inversion, and Loeffler Mellin definitions retained. Mathematical direction grwtsk contributors; formal implementation assistance OpenAI Codex.",
+  "limits": "Actual analytic Gaussian supplier only. No Dirichlet coefficient, arithmetic initial product, signal/energy comparison, zero-free half-plane, zeta nonvanishing, RH proof, independent validation, whole-library admission or full upstream replay.",
+  "archive": ".local/normalized-gaussian/aa266caa5e43482598ff0e9092ed1db5",
+  "failures": "Every scratch variant/diagnostic retained, including initial scalar-cast/continuity/linter issues and pi-bound import/real-part normalization issues in the counterexample; statements/hypotheses not weakened.",
+  "source_freeze": "All three allocated new source paths frozen at listed hashes. No further native jobs planned.",
+  "prior_source_shared_metadata_commits_remote_edits": 0
+}

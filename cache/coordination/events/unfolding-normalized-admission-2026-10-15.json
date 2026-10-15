@@ -1,0 +1,85 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "unfolding-normalized-round",
+  "event": "selected-native-acceptance-and-revision-consumers",
+  "at": "2026-10-15T20:04:56.070096+00:00",
+  "selected": [
+    {
+      "source": {
+        "path": "GRWTSK/Combinatorics/DirectedGraph/PathUnfolding.lean",
+        "sha256": "8d5e2187d705ab49c52a41779b48b445d0baa223c3608ea6495e670ddac24757"
+      },
+      "native_receipt": {
+        "path": "evidence/Combinatorics/DirectedGraph/path-unfolding-checks-2026-10-15.json",
+        "sha256": "2dacba6e65847c05f6dff1615f073c588d99553d704ad324fccf4858a8536b43"
+      },
+      "owned_declarations": 63,
+      "owned_modules": [
+        {
+          "declarations": 52,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding"
+        },
+        {
+          "declarations": 11,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PathUnfolding"
+        }
+      ],
+      "integration": {
+        "path": "evidence/Combinatorics/DirectedGraph/path-unfolding-integration-2026-10-15.json",
+        "sha256": "bf72e8c4a34fbab79e4290d328153b5efb2e6501d2853ee25a36e76bbbe9f144"
+      }
+    },
+    {
+      "source": {
+        "path": "GRWTSK/Analysis/MellinTransform/NormalizedGaussian.lean",
+        "sha256": "a0ed0dbf644601887df128536951a9c3e17ecf42970069a13acdfcb93518e3bf"
+      },
+      "native_receipt": {
+        "path": "evidence/Analysis/MellinTransform/normalized-gaussian-checks-2026-10-15.json",
+        "sha256": "888ff77d3ea061f63f9ca29e29d7848006ad17cb24578302c59578b16cf3ff39"
+      },
+      "owned_declarations": 71,
+      "owned_modules": [
+        {
+          "declarations": 23,
+          "module": "GRWTSK.Analysis.MellinTransform.ReverseInversion"
+        },
+        {
+          "declarations": 20,
+          "module": "GRWTSK.Analysis.MellinTransform.LogarithmicGaussian"
+        },
+        {
+          "declarations": 22,
+          "module": "GRWTSK.Analysis.MellinTransform.NormalizedGaussian"
+        },
+        {
+          "declarations": 6,
+          "module": "GRWTSK.Analysis.MellinTransform.Checks.Positive.NormalizedGaussian"
+        }
+      ],
+      "integration": {
+        "path": "evidence/Analysis/MellinTransform/normalized-gaussian-integration-2026-10-15.json",
+        "sha256": "6d43d973ee540077942b323d24ac747a1159a5ae3a9d5aabc4185d88ef2608b2"
+      }
+    }
+  ],
+  "cache_revision": "e4bf780053a01fad79887c17e6affe586baf872dbd6644b6e7f936be2352a6b8",
+  "frontier": {
+    "path": "cache/research/unfolding-normalized-frontier-2026-10-15.json",
+    "sha256": "55222e6d5c20b3c8719b1711720bd0b453be64b16dd776d33dd7cf1d6225de8f"
+  },
+  "continuation": {
+    "path": "cache/coordination/continuations/2026-10-15-unfolding-normalized.json",
+    "sha256": "d6fcc635d6e8a0a0c070f2a3c925dfed898e745169d1a8c598912dcd24b2a0bb"
+  },
+  "decision": {
+    "path": "cache/decisions/path-unfolding-v1.json",
+    "sha256": "d25c3477060467631ded19bfdc032171f7f10f390f7a45a5ff1fdb8b5f1b5f26"
+  },
+  "concurrent_progress": {
+    "path": "cache/coordination/events/unfolding-concurrent-weil-observed-2026-10-15.json",
+    "sha256": "735e9e38ed8c51cee75cef598af458b9c57c291750d648fe2e8ef2316f67476a"
+  },
+  "limits": "Selected native mathematics and bounded operational/source identity checks remain distinct. No independent model validation, runtime refinement, whole-library/RH admission or remote effect.",
+  "remote_actions": []
+}

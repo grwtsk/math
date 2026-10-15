@@ -1,0 +1,28 @@
+{
+  "schema": "repository-agent-event-v1",
+  "id": "path-unfolding-source-review-complete-0c606e2031514ffe84c4c49228ce9e86",
+  "at": "2026-10-15T19:55:29.365599+00:00",
+  "task": "unfolding-gaussian-source-scout",
+  "owner": "cache_taxonomy",
+  "kind": "bounded-source-review-complete",
+  "review": {
+    "path": "evidence/Combinatorics/DirectedGraph/path-unfolding-source-review-2026-10-15.json",
+    "sha256": "4bf6e31ca17373c97c2e187cacf27029887d55fec5efed20e845da4cf0e85a9d"
+  },
+  "source_hashes": {
+    "GRWTSK/Combinatorics/DirectedGraph/PathUnfolding.lean": "8d5e2187d705ab49c52a41779b48b445d0baa223c3608ea6495e670ddac24757",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PathUnfolding.lean": "81c0c9fd724a7eda6038ed3e24edf24e08280377f39b72c06152f508327dc438",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/UnfoldingMissingCostar.lean": "d76888ed8dbf6e9126dc4d13971158b770092b86dbe991b0b62fde7302304b65"
+  },
+  "author_freeze": {
+    "path": "cache/coordination/events/20261015T195416Z-path-unfolding-complete-721c784c.json",
+    "sha256": "8368fad098b198091f7b5899cb30b58bdf467396cd170793bad398d2e3d94eb0",
+    "status": "Author frozen source/event inspected; native development statements are author reports, not replayed by reviewer."
+  },
+  "result": "No actionable omission observed in exact source/premise/control review. Correlated team/model inspection only; native NOT_RUN by reviewer, root acceptance separate.",
+  "limits": [
+    "Reachable image only; no global base coverage without supplied reachability.",
+    "Outgoing-star/path lifting does not imply costar/full covering or universality.",
+    "No code/shared metadata/native jobs/commits/remote changes by this reviewer."
+  ]
+}
