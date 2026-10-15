@@ -3233,10 +3233,28 @@
       "title": "Spectral theory",
       "category": "navigation",
       "area": "Spectral"
+    },
+    "docs/mathematics/Algebra/Polynomial/conjugate-quartic.md": {
+      "title": "Signed traces on a conjugate quartic",
+      "subject": "Algebra",
+      "object": "Polynomial",
+      "primary_source": "GRWTSK/Algebra/Polynomial/ConjugateQuartic.lean",
+      "source_sha256": "7ec04ba3204a196a01744d12cdb4f807c19387853d373e9f31d533ae03bd18fe",
+      "status": "fresh-selected",
+      "evidence": "evidence/NumberTheory/Zeta/quartic-trace-checks-2026-10-15.json"
+    },
+    "docs/mathematics/NumberTheory/Zeta/Riemann/trace-and-height-criteria.md": {
+      "title": "Signed-trace and bounded-height zeta criteria",
+      "subject": "NumberTheory",
+      "object": "Zeta/Riemann",
+      "primary_source": "GRWTSK/NumberTheory/Zeta/Riemann/QuadraticTraceCriterion.lean",
+      "source_sha256": "a43004a73d85b8ca2cf77664f1f27c940acf0d888e83a36d4c201afebee563f3",
+      "status": "fresh-selected",
+      "evidence": "evidence/NumberTheory/Zeta/quartic-trace-checks-2026-10-15.json"
     }
   },
   "object_binding_registry": "docs/reference/object-source-bindings.json",
-  "object_binding_registry_sha256": "b0a6761e855a8323abfe92c8fd9fa76cb3a38c0170b7ab264e54c27c08c33928",
+  "object_binding_registry_sha256": "46dffb5c3293f7fe41a036df91df1490d64d5e6bc0ce34ada6f6f53852e1fb08",
   "navigation": {
     "schema": "subject-index-navigation-v1",
     "summary": "docs/reference/library-summary.json"

@@ -2,30 +2,30 @@
 
 Browse by mathematical area, then by object. Start with [the least-prime example](start/least-prime.md), [verification](how-to/verify.md), or the [selected result catalog](reference/results.md).
 
-12 areas · 67 object guides · 38 documented object groups · 604 Lean source modules.
+12 areas · 69 object guides · 39 documented object groups · 619 Lean source modules.
 
 | Area index | Object guides | Object groups | Lean modules | Intake records | Selected families |
 |---|---:|---:|---:|---:|---:|
-| [Algebra](mathematics/Algebra/index.md) | 2 | 1 | 12 | 1 | 0 |
-| [Analysis](mathematics/Analysis/index.md) | 13 | 8 | 234 | 39 | 1 |
+| [Algebra](mathematics/Algebra/index.md) | 3 | 2 | 15 | 1 | 0 |
+| [Analysis](mathematics/Analysis/index.md) | 13 | 8 | 238 | 39 | 1 |
 | [Combinatorics](mathematics/Combinatorics/index.md) | 2 | 1 | 8 | 0 | 1 |
 | [Data structures](mathematics/Data/index.md) | 0 | 0 | 1 | 0 | 0 |
 | [Dynamical systems](mathematics/DynamicalSystems/index.md) | 2 | 2 | 16 | 0 | 0 |
 | [GroupTheory](mathematics/GroupTheory/index.md) | 0 | 0 | 4 | 0 | 0 |
-| [Linear algebra](mathematics/LinearAlgebra/index.md) | 11 | 7 | 52 | 3 | 0 |
-| [Logic](mathematics/Logic/index.md) | 3 | 3 | 42 | 0 | 0 |
+| [Linear algebra](mathematics/LinearAlgebra/index.md) | 11 | 7 | 53 | 3 | 0 |
+| [Logic](mathematics/Logic/index.md) | 3 | 3 | 41 | 0 | 0 |
 | [Measure theory](mathematics/MeasureTheory/index.md) | 0 | 0 | 6 | 1 | 0 |
-| [Number theory](mathematics/NumberTheory/index.md) | 27 | 12 | 201 | 19 | 1 |
+| [Number theory](mathematics/NumberTheory/index.md) | 28 | 12 | 209 | 19 | 1 |
 | [Order](mathematics/Order/index.md) | 0 | 0 | 3 | 0 | 0 |
 | [Spectral theory](mathematics/Spectral/index.md) | 7 | 4 | 25 | 0 | 0 |
 
 ## Inventory and evidence scope
 
-The maintained documentation contains 100 pages, including area indexes, guides and reference material. Object guides link 63 distinct primary sources. The archive intake records 63 sources; the selected catalog covers 3 families. These are separate inventories and must not be added together.
+The maintained documentation contains 102 pages, including area indexes, guides and reference material. Object guides link 65 distinct primary sources. The archive intake records 63 sources; the selected catalog covers 3 families. These are separate inventories and must not be added together.
 
 | Object-guide evidence label | Pages |
 |---|---:|
-| `fresh-selected` | 7 |
+| `fresh-selected` | 9 |
 | `historical` | 1 |
 | `historical-source-description` | 51 |
 | `literature-and-historical-source-description` | 3 |
