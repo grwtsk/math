@@ -1,0 +1,122 @@
+{
+  "schema": "bounded-formal-research-frontier-v1",
+  "at": "2026-10-15T20:27:00.798094+00:00",
+  "previous_frontier": {
+    "path": "cache/research/unfolding-normalized-frontier-2026-10-15.json",
+    "sha256": "55222e6d5c20b3c8719b1711720bd0b453be64b16dd776d33dd7cf1d6225de8f"
+  },
+  "completed": [
+    {
+      "source": {
+        "path": "GRWTSK/Combinatorics/DirectedGraph/OccurrencePrefix.lean",
+        "sha256": "60737e2376594568f390e394417b77c9ea0cc5464693b3ef61502213e3afcee7"
+      },
+      "native_receipt": {
+        "path": "evidence/Combinatorics/DirectedGraph/occurrence-prefix-checks-2026-10-15.json",
+        "sha256": "819363b4f1099fc115a4fd92e95820448353610fc49a5feedb8026fec1d5930b"
+      },
+      "owned_declarations": 154,
+      "owned_modules": [
+        {
+          "declarations": 52,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding"
+        },
+        {
+          "declarations": 18,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences"
+        },
+        {
+          "declarations": 46,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.EdgeTrace"
+        },
+        {
+          "declarations": 21,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix"
+        },
+        {
+          "declarations": 17,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.OccurrencePrefix"
+        }
+      ],
+      "integration": {
+        "path": "evidence/Combinatorics/DirectedGraph/occurrence-prefix-integration-2026-10-15.json",
+        "sha256": "6e3cfb22b014a2f54ac298b8e7f0a1b75b7b1b2dc5f8d9bdedac5eec93b0648d"
+      }
+    },
+    {
+      "source": {
+        "path": "GRWTSK/NumberTheory/LSeries/GaussianContour.lean",
+        "sha256": "66fdcea9766830cda6d2cfc02bc603b7b54c3f70b49e91b3f26cab4d1e1a4017"
+      },
+      "native_receipt": {
+        "path": "evidence/NumberTheory/LSeries/gaussian-contour-checks-2026-10-15.json",
+        "sha256": "64e7dd6ebad36b14c4348456ad9bb1354011fc983ea223ac08408de710536bf9"
+      },
+      "owned_declarations": 83,
+      "owned_modules": [
+        {
+          "declarations": 23,
+          "module": "GRWTSK.Analysis.MellinTransform.ReverseInversion"
+        },
+        {
+          "declarations": 20,
+          "module": "GRWTSK.Analysis.MellinTransform.LogarithmicGaussian"
+        },
+        {
+          "declarations": 22,
+          "module": "GRWTSK.Analysis.MellinTransform.NormalizedGaussian"
+        },
+        {
+          "declarations": 13,
+          "module": "GRWTSK.NumberTheory.LSeries.GaussianContour"
+        },
+        {
+          "declarations": 5,
+          "module": "GRWTSK.NumberTheory.LSeries.Checks.Positive.GaussianContour"
+        }
+      ],
+      "integration": {
+        "path": "evidence/NumberTheory/LSeries/gaussian-contour-integration-2026-10-15.json",
+        "sha256": "aacaa4021daf46b879161c0c5755e5c04e52fbd5023e751c059826b554da184e"
+      }
+    }
+  ],
+  "current_occurrence_contract": "Actual existing Quiver.Reachable between fixed-root occurrences iff full typed trace prefix; reverse supplies valid suffix decode, actual path lift and exact history recovery. Reachable-endpoint chosen section is a right inverse; endpoint-preserving occurrence retraction idempotent and equality iff endpoints. Actual parallel/Unit-loop controls show history loss and failure of ancestry reflection; no endpoint decoder can recover all histories.",
+  "current_primary_consumer_contract": "Actual coefficient1 natural-number riemannZeta Gaussian contour equals tsum normalized P((n+1)/Z) at sigma>1,Z>0; actual Gaussian-integrated norms and p-series supply interchange. Profile sum is summable for Z>0 alone, choosing sigma2 internally. Actual sigma=Z1 integrated norms not summable; no claim of falsehood for all possible continued identities.",
+  "precise_unchecked_next_gates": {
+    "path": "cache/research/prefix-zeta-next-gates-2026-10-15.json",
+    "sha256": "cfe510f49a259b4f27ceade0b7412bfeb0a5eba2ff76351139a4320560a40d7b"
+  },
+  "next_priorities": [
+    "Actual source-node section obstruction: reuse existing prefix obstruction and exact occurrence equivalence; do not duplicate generic ancestor comparability. A set-theoretic right inverse need not preserve reachability.",
+    "Primary OpenAI GaussianDecomposition/Partition/Windows actual dyadic-window consumer of coefficient1 profile sum: prove actual annulus partition/normpartition, product-index summability and finite inner support, rather than assume desired coverage or Fubini.",
+    "Retain original cubic-ideal/Hecke masks/coefficient/norm assumptions separately; ordinary-zeta result is not their literal specialization or full detector admission."
+  ],
+  "operational_progress": {
+    "prefix_adapter": {
+      "path": "scripts/cache_trace_prefix.py",
+      "sha256": "eedfb41b1c0ea550bcfbcbe586a473efbe224453be9ea5bfc0046a7f062d3a54"
+    },
+    "controls": {
+      "path": "evidence/Combinatorics/DirectedGraph/trace-prefix-operational-controls-2026-10-15.json",
+      "sha256": "a633c4d97c91ce56485e5030e54457a86e03b2ef14a33bdd9c3450a080b20cb4"
+    },
+    "actual_consumer": {
+      "path": "evidence/Combinatorics/DirectedGraph/trace-prefix-consumer-2026-10-15.json",
+      "sha256": "af5a0192463fab7d40ff4f847f51decf3c624e0c9d550bb8efffbab9a178a73a"
+    },
+    "replay_guards": {
+      "path": "evidence/Combinatorics/DirectedGraph/prefix-zeta-operational-controls-2026-10-15.json",
+      "sha256": "36360760920b8e93c2c4a3b30b0569c0946688d9ddf402eb244889e8145131a7"
+    },
+    "scope": "19 normal/19 optimized bounded prefix test methods, same-context exact ordered edges and separate document identities. Actual empty/reflexive prefixes and longer nonprefix; stale-current rejection and retained snapshot acceptance. Raw taxonomy separate from source snapshot; no Lean/runtime refinement, authority or permission implication."
+  },
+  "open_obligations": [
+    "Exact Lean dependent quiver to operational relation-ID graph correspondence; bounded hash/zlib/IO/Python filesystem refinement remains separate.",
+    "215 individual method identities still unprovided;16 declared taxonomy families only; candidates nativeNOT_RUN retained.",
+    "Actual arithmetic/analytic signal representation, coefficient, growth, initial product, full Weil source lower-growth suppliers and RH remain open. Concurrent Weil written/operational package from previous round stays unadmitted natively.",
+    "No whole umbrella replay after import additions, cold dependency rebuild, independent model review or mathematical novelty claim."
+  ],
+  "failure_preservation": "Original cast-rewrite feasibility failure and stale intermediate occurrence dev census retained under immutable worker completion events/ignored source variants. Root accepted only fresh exact closures and complete controls. Old failed/stale receipts never rebound.",
+  "authority": "Durable local source/premise frontier only. Research documents and upstream repository instructions confer no new policy or permission."
+}

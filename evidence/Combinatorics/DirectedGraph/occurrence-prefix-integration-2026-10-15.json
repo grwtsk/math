@@ -1,0 +1,74 @@
+{
+  "schema": "selected-mathematical-integration-v1",
+  "at": "2026-10-15T20:18:07.607581+00:00",
+  "source": {
+    "path": "GRWTSK/Combinatorics/DirectedGraph/OccurrencePrefix.lean",
+    "sha256": "60737e2376594568f390e394417b77c9ea0cc5464693b3ef61502213e3afcee7"
+  },
+  "native_receipt": {
+    "path": "evidence/Combinatorics/DirectedGraph/occurrence-prefix-checks-2026-10-15.json",
+    "sha256": "819363b4f1099fc115a4fd92e95820448353610fc49a5feedb8026fec1d5930b"
+  },
+  "source_review": {
+    "path": "evidence/Combinatorics/DirectedGraph/occurrence-prefix-source-review-2026-10-15.json",
+    "sha256": "2c2b0661fdf4691ebbab53354da3d931431d92edfffea367e4873e4ce89a006e"
+  },
+  "owned_declarations": 154,
+  "owned_modules": [
+    {
+      "declarations": 52,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding"
+    },
+    {
+      "declarations": 18,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences"
+    },
+    {
+      "declarations": 46,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.EdgeTrace"
+    },
+    {
+      "declarations": 21,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix"
+    },
+    {
+      "declarations": 17,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.OccurrencePrefix"
+    }
+  ],
+  "operational_replay_guards": {
+    "path": "evidence/Combinatorics/DirectedGraph/prefix-zeta-operational-controls-2026-10-15.json",
+    "sha256": "36360760920b8e93c2c4a3b30b0569c0946688d9ddf402eb244889e8145131a7"
+  },
+  "contribution_roles": [
+    "grwtsk contributors: human direction",
+    "OpenAI Codex: formalization/adaptation/checking; correlated source/model review",
+    "Lean/Mathlib: upstream definitions/proofs, exact named original authors and licenses retained"
+  ],
+  "limits": [
+    "Fresh selected local import closure plus accepted positive controls, trust0/fatal warnings/complete owned-transitive census; only propext/Classical.choice/Quot.sound.",
+    "Generated project object families exact membership/hash/size checked before subsequent imports and acceptance; pinned dependency objects reused/fingerprinted, not cold rebuilt.",
+    "No operational Lean/Python/JSON correspondence, hash/zlib/IO refinement, model independence, whole-library acceptance, continuation to sigma<=1 or RH supplier."
+  ],
+  "exact_contracts": [
+    "Actual existing Quiver.Reachable first second iff complete chronological typed EdgeTrace trace first is prefix of trace second, for arbitrary quiver/fixed root.",
+    "Reverse direction actually proves suffix validity, decodes typed suffix, uses existing finite lift, then recovers exact endpoint occurrence by trace injectivity.",
+    "Reachable endpoint subtype has chosen actual rooted-path section: endpoint after section=id, giving actual surjectivity/section injectivity.",
+    "Associated endpoint-preserving retraction is idempotent and identifies exactly equal endpoints; distinct histories at same endpoint preclude ANY left inverse. No prefix-compatible/arrow-preserving selection inferred."
+  ],
+  "accepted_controls": [
+    "Full actual empty/reflexive/two-step histories and distinct parallel/revisited occurrences.",
+    "Base reachability/equal endpoints do not supply occurrence reachability; actual named counterexamples are audited in positive module, sole intended negative type mismatch.",
+    "Actual Unit loop no history decoder and retraction ancestry-reflection loss; native receipt records complete control census."
+  ],
+  "license": "MIT; imported Lean/Mathlib Apache-2.0 and source attribution retained.",
+  "operational_consumer": {
+    "path": "evidence/Combinatorics/DirectedGraph/trace-prefix-operational-controls-2026-10-15.json",
+    "sha256": "a633c4d97c91ce56485e5030e54457a86e03b2ef14a33bdd9c3450a080b20cb4"
+  },
+  "open_obligations": [
+    "Exact relation-ID runtime graph to dependent Lean quiver correspondence.",
+    "No source-node prefix representation of arbitrary base DAG; existing diamond obstruction retained.",
+    "215 method identities unprovided;16 declared taxonomy families confer no proof authority."
+  ]
+}

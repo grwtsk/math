@@ -1,0 +1,76 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "gaussian-zeta-formal",
+  "event": "frozen-complete-development",
+  "owner": "cache_adapter",
+  "at": "2026-10-15T20:16:26.989781+00:00",
+  "source_hashes": {
+    "GRWTSK/NumberTheory/LSeries/GaussianContour.lean": "66fdcea9766830cda6d2cfc02bc603b7b54c3f70b49e91b3f26cab4d1e1a4017",
+    "GRWTSK/NumberTheory/LSeries/Checks/Positive/GaussianContour.lean": "b04a625e167ec32081408f8cd769e5bd4e523b5f043935e1c2ce9ccf32976f12",
+    "GRWTSK/NumberTheory/LSeries/Checks/Negative/GaussianContourMissingHalfPlane.lean": "64ba991461f9816a2e2b8dbc9ddcf8e69fe75164efc1e35f712c66faede3e9c7"
+  },
+  "status": "written-and-development-replayed-not-admitted",
+  "native_development_receipt": ".local/gaussian-zeta/bffdcedf59b84d329028357347537196/final/receipt.json",
+  "native_development_receipt_sha256": "72ff1dd4aefccf6806bf5083163ca98612536bfc1f5c49e108a6ea4cf3421e63",
+  "native_sequence": {
+    "trust": 0,
+    "fatal_warnings": true,
+    "fresh_local_dependency_closure": {
+      "GRWTSK/Analysis/MellinTransform/ReverseInversion.lean": "88d959d74d9d5e27772f57e847497b9a943167cc41ae6abb453c3932cbb84c57",
+      "GRWTSK/Analysis/MellinTransform/LogarithmicGaussian.lean": "cd47e598796f4f901ddea56dd05bb9e719534e1aac5589c1be6ddfb8d9fea66d",
+      "GRWTSK/Analysis/MellinTransform/NormalizedGaussian.lean": "a0ed0dbf644601887df128536951a9c3e17ecf42970069a13acdfcb93518e3bf",
+      "GRWTSK/NumberTheory/LSeries/GaussianContour.lean": "66fdcea9766830cda6d2cfc02bc603b7b54c3f70b49e91b3f26cab4d1e1a4017",
+      "GRWTSK/NumberTheory/LSeries/Checks/Positive/GaussianContour.lean": "b04a625e167ec32081408f8cd769e5bd4e523b5f043935e1c2ce9ccf32976f12",
+      "GRWTSK/NumberTheory/LSeries/Checks/Negative/GaussianContourMissingHalfPlane.lean": "64ba991461f9816a2e2b8dbc9ddcf8e69fe75164efc1e35f712c66faede3e9c7"
+    },
+    "accepted_stages": "three prior library modules, new GaussianContour library, new positive module",
+    "negative_error_count": 1,
+    "negative_expected_substring": "1 < 1",
+    "negative_actual": "Application type mismatch: le_refl 1 has type 1 \u2264 1 but is expected to have type 1 < 1",
+    "negative_prefix_audit": "not needed: all complete named obstructions reside in accepted positive module",
+    "frozen_sources_and_object_families_stable": true,
+    "complete_owned_axiom_census": "NOT_RUN_ROOT_OWNS",
+    "native_jobs_running": 0,
+    "shared_lock": "RELEASED"
+  },
+  "results": {
+    "main": "actual coefficient-one riemannZeta contour, all real sigma>1 and positive real Z, equals tsum P((n+1)/Z)",
+    "absolute_supplier": "actual shifted p-series iff sigma>1; exact Gaussian norm and integrated norm; every summand integrable; actual integrated-norm sequence summable",
+    "ratio_and_inversion": "actual positive-real principal complex-power ratio and accepted normalized Gaussian inversion",
+    "profile_sum": "Summable for every Z>0, with internal sigma2 actual norm supplier",
+    "positive": "generic contour use, actual sigma2,Z1 contour equality, Z1 profile sum, sigma1 harmonic nonsummability, actual sigma=Z=1 integrated-norm nonsummability",
+    "scope": "no arithmetic ideal/character detector, no sigma<=1 continuation, zero-free or RH claim"
+  },
+  "source_review": "cache_taxonomy read all3 frozen hashes and reported no actionable mathematical premise/control omission; correlated read-only review is separate from native admission",
+  "layout": {
+    "log": ".local/gaussian-zeta/bffdcedf59b84d329028357347537196/math-layout.log",
+    "status": "FAIL:367 modules,183 findings; 4 allocated findings pending root catalogs/public import, no new mathematical naming/path violation",
+    "owned_findings": [
+      "library-module-outside-public-closure GaussianContour",
+      "uncataloged-maintained-source GaussianContour library",
+      "uncataloged-maintained-source positive",
+      "uncataloged-maintained-source negative"
+    ],
+    "capture_note": "checker completed and FAIL log retained; shell wrapper afterwards failed because zsh status is readonly, no diagnostic evidence discarded"
+  },
+  "preserved_development_attempts": ".local/gaussian-zeta/bffdcedf59b84d329028357347537196/attempts",
+  "first_failed_variant": "Scratch-attempt01.lean/log with exact positive-real cast normalization rewrite failure; later proof complete",
+  "primary_sources": [
+    {
+      "repo": "openai/math",
+      "commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "path": "lean/OAI/NumberTheory/DirichletL/Detector/GaussianCompletion.lean",
+      "sha256": "5ee7ec8c1869fcce035ad7aa2b0dffefa706cc1d5d42e4385f3330d1149ceeb1"
+    },
+    {
+      "repo": "openai/math",
+      "commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "path": "lean/OAI/NumberTheory/DirichletL/Detector/RowInterchange.lean",
+      "sha256": "a2cce044bfc064c73bcca39bc04ee79052b64909904c30773b36648c2eca7fff"
+    }
+  ],
+  "licenses": "Apache2 source identity plus explicit Mathlib David Loeffler2023,Yury Kudryashov2020,Zhouhang Zhou2019 and coauthors retained in library header; root owns full NOTICE integration",
+  "jobs_released": true,
+  "prior_sources_modified": false,
+  "commits_or_remote_writes": false
+}
