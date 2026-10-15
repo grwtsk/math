@@ -1,0 +1,64 @@
+/- Candidate audit harness. Not run in the authoring environment.
+Printing axioms is evidence to inspect, not automatic admission. -/
+import GRWTSK.Algebra.Polynomial.QuadraticLift
+import GRWTSK.Algebra.Polynomial.Quartic.BinaryInvariants
+import GRWTSK.Algebra.Polynomial.Quartic.EvenInvariants
+import GRWTSK.Algebra.Polynomial.Quartic.ReciprocalCayley
+import GRWTSK.Algebra.Polynomial.Quartic.ReflectionOrbit
+import GRWTSK.Analysis.Complex.SquaredResidualExclusion
+import GRWTSK.LinearAlgebra.QuadraticForm.QuarticHermite
+import GRWTSK.NumberTheory.Zeta.Riemann.QuarticEnclosure
+
+#print axioms GRWTSK.Polynomial.QuadraticLift.square_consistency
+#print axioms GRWTSK.Polynomial.QuadraticLift.mixed_consistency
+#print axioms GRWTSK.Polynomial.QuadraticLift.other_square_consistency
+#print axioms GRWTSK.Polynomial.QuadraticLift.gap_evaluation
+#print axioms GRWTSK.Polynomial.QuadraticLift.certified_nonnegative
+#print axioms GRWTSK.Polynomial.QuadraticLift.gap_nonnegative_of_certificate
+#print axioms GRWTSK.Polynomial.Quartic.binary_invariant_identity
+#print axioms GRWTSK.Polynomial.Quartic.even_binary_specialization
+#print axioms GRWTSK.Polynomial.Quartic.jacobian_discriminant_scale
+#print axioms GRWTSK.Polynomial.Quartic.even_invariant_identity
+#print axioms GRWTSK.Polynomial.Quartic.even_resolvent_factor
+#print axioms GRWTSK.Polynomial.Quartic.even_bezout
+#print axioms GRWTSK.Polynomial.Quartic.common_root_forces_discriminant_expr_zero
+#print axioms GRWTSK.Polynomial.Quartic.no_common_root_of_discriminant_expr_ne_zero
+#print axioms GRWTSK.Polynomial.Quartic.reciprocal_trace_identity
+#print axioms GRWTSK.Polynomial.Quartic.reciprocal_factor
+#print axioms GRWTSK.Polynomial.Quartic.cayley_pullback_identity
+#print axioms GRWTSK.Polynomial.Quartic.cayley_gap_identity
+#print axioms GRWTSK.Polynomial.Quartic.cayley_leading_positive
+#print axioms GRWTSK.Polynomial.Quartic.cayley_norm_difference
+#print axioms GRWTSK.Polynomial.Quartic.cayley_equal_norms_iff
+#print axioms GRWTSK.Polynomial.Quartic.orbit_factor
+#print axioms GRWTSK.Polynomial.Quartic.orbit_gap_identity
+#print axioms GRWTSK.Polynomial.Quartic.orbit_discriminant_identity
+#print axioms GRWTSK.Polynomial.Quartic.orbit_invariantI_identity
+#print axioms GRWTSK.Polynomial.Quartic.orbit_modular_locus_identity
+#print axioms GRWTSK.Polynomial.Quartic.orbit_axis_square
+#print axioms GRWTSK.Polynomial.Quartic.orbit_gap_nonpos
+#print axioms GRWTSK.Polynomial.Quartic.orbit_gap_nonneg_iff
+#print axioms GRWTSK.Polynomial.Quartic.orbit_enclosure_iff
+#print axioms GRWTSK.Polynomial.Quartic.axis_of_gap_nonneg_of_height_ne_zero
+#print axioms GRWTSK.Polynomial.Quartic.collar_from_gap_budget
+#print axioms GRWTSK.Polynomial.Quartic.gap_nonneg_of_all_budgets
+#print axioms GRWTSK.Polynomial.Quartic.off_axis_positive_discriminant_guard
+#print axioms GRWTSK.Polynomial.Quartic.zero_height_collision_guard
+#print axioms GRWTSK.Complex.SquaredResidualExclusion.Certificate.nonzero
+#print axioms GRWTSK.Complex.SquaredResidualExclusion.nonstrict_gap_guard
+#print axioms GRWTSK.QuadraticForm.QuarticHermite.second_moment_test
+#print axioms GRWTSK.QuadraticForm.QuarticHermite.discriminant_gap_test
+#print axioms GRWTSK.QuadraticForm.QuarticHermite.even_principal_minor
+#print axioms GRWTSK.QuadraticForm.QuarticHermite.axis_sum_of_squares
+#print axioms GRWTSK.QuadraticForm.QuarticHermite.nonnegative_orbit_iff
+#print axioms GRWTSK.QuadraticForm.QuarticHermite.normalized_error_collar
+#print axioms GRWTSK.NumberTheory.Zeta.Riemann.defect_offset_identity
+#print axioms GRWTSK.NumberTheory.Zeta.Riemann.gap_defect_identity
+#print axioms GRWTSK.NumberTheory.Zeta.Riemann.discriminant_defect_identity
+#print axioms GRWTSK.NumberTheory.Zeta.Riemann.quartic_enclosure_iff
+#print axioms GRWTSK.NumberTheory.Zeta.Riemann.riemannHypothesis_iff_quartic_enclosure
+#print axioms GRWTSK.NumberTheory.Zeta.Riemann.riemannHypothesis_iff_orbitHermite_nonnegative
+#print axioms GRWTSK.NumberTheory.Zeta.Riemann.local_critical_line_of_lifted_certificate
+#print axioms GRWTSK.NumberTheory.Zeta.Riemann.local_critical_line_of_unique_zero
+#print axioms GRWTSK.NumberTheory.Zeta.Riemann.no_nontrivial_zero_of_residual_certificate
+#print axioms GRWTSK.NumberTheory.Zeta.Riemann.riemannHypothesis_of_exclusion_cover

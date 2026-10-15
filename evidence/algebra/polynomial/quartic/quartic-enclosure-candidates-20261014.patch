@@ -1,0 +1,696 @@
+diff --git a/GRWTSK/Algebra/Polynomial/QuadraticLift.lean b/GRWTSK/Algebra/Polynomial/QuadraticLift.lean
+new file mode 100644
+--- /dev/null
++++ b/GRWTSK/Algebra/Polynomial/QuadraticLift.lean
+@@ -0,0 +1,76 @@
++/-
++Copyright (c) 2026 R.A. Jacob Martone. Released under the MIT license.
++Human mathematical direction: R.A. Jacob Martone.
++Formalization assistance: OpenAI ChatGPT.
++Upstream Lean and Mathlib retain their authorship and licenses.
++
++REVIEW SOURCE: not compiled in the authoring environment. Algebraic identities
++are separately checked with SymPy; those checks are not Lean proof acceptance.
++-/
++import GRWTSK.LinearAlgebra.QuadraticCertificates
++import GRWTSK.Algebra.Polynomial.Quartic.ReflectionOrbit
++
++set_option autoImplicit false
++set_option relaxedAutoImplicit false
++
++namespace GRWTSK.Polynomial.QuadraticLift
++
++open Matrix
++
++/-- Degree-at-most-two monomials. Quadratic forms in this vector have degree
++at most four in x,y. A squared norm of a complex quartic instead needs the
++15 monomials of degree at most four; it is not represented by this six-vector. -/
++def monomials (x y : ℝ) : Fin 6 → ℝ := ![1, x, y, x ^ 2, x * y, y ^ 2]
++
++def evaluate (M : Matrix (Fin 6) (Fin 6) ℝ) (x y : ℝ) : ℝ :=
++  GRWTSK.LinearAlgebra.QuadraticCertificates.quadratic M (monomials x y)
++
++/-- Veronese consistency constraints are identities, not assumptions that
++arbitrary lifted vectors satisfy. -/
++theorem square_consistency (x y : ℝ) :
++    monomials x y 0 * monomials x y 3 - (monomials x y 1) ^ 2 = 0 := by
++  simp [monomials]
++
++theorem mixed_consistency (x y : ℝ) :
++    monomials x y 0 * monomials x y 4 - monomials x y 1 * monomials x y 2 = 0 := by
++  simp [monomials]
++
++theorem other_square_consistency (x y : ℝ) :
++    monomials x y 0 * monomials x y 5 - (monomials x y 2) ^ 2 = 0 := by
++  simp [monomials]
++
++/-- The exact quartic gap is negative sixteen times the xy monomial squared. -/
++def gapMatrix : Matrix (Fin 6) (Fin 6) ℝ :=
++  fun i j => if i = 4 ∧ j = 4 then -16 else 0
++
++theorem gap_evaluation (x y : ℝ) :
++    evaluate gapMatrix x y = GRWTSK.Polynomial.Quartic.orbitGap x y := by
++  simp [evaluate, GRWTSK.LinearAlgebra.QuadraticCertificates.quadratic,
++    Matrix.mulVec, dotProduct, gapMatrix, monomials, Fin.sum_univ_succ,
++    GRWTSK.Polynomial.Quartic.orbitGap, GRWTSK.Polynomial.Quartic.orbitP,
++    GRWTSK.Polynomial.Quartic.orbitR] <;> ring
++
++/-- Reuse the repository's exact checker and its actual admissibility boundary.
++No coefficient solver, Positivstellensatz completeness, or source existence is
++claimed. Source-zero admissibility must be proved outside this consumer. -/
++theorem certified_nonnegative {ε γ ν : Type*} [Fintype ε] [Fintype γ] [Fintype ν]
++    (P : GRWTSK.LinearAlgebra.QuadraticCertificates.Problem ℝ (Fin 6) ε γ)
++    (S : GRWTSK.LinearAlgebra.QuadraticCertificates.Certificate ℝ (Fin 6) ε γ ν)
++    (hS : GRWTSK.LinearAlgebra.QuadraticCertificates.Valid P S)
++    (x y : ℝ) (hx : P.Admissible (monomials x y)) :
++    0 ≤ evaluate P.target x y :=
++  GRWTSK.LinearAlgebra.QuadraticCertificates.sound P S hS (monomials x y) hx
++
++theorem gap_nonnegative_of_certificate {ε γ ν : Type*}
++    [Fintype ε] [Fintype γ] [Fintype ν]
++    (P : GRWTSK.LinearAlgebra.QuadraticCertificates.Problem ℝ (Fin 6) ε γ)
++    (S : GRWTSK.LinearAlgebra.QuadraticCertificates.Certificate ℝ (Fin 6) ε γ ν)
++    (hS : GRWTSK.LinearAlgebra.QuadraticCertificates.Valid P S)
++    (htarget : P.target = gapMatrix)
++    (x y : ℝ) (hx : P.Admissible (monomials x y)) :
++    0 ≤ GRWTSK.Polynomial.Quartic.orbitGap x y := by
++  have h := certified_nonnegative P S hS x y hx
++  rw [htarget, gap_evaluation] at h
++  exact h
++
++end GRWTSK.Polynomial.QuadraticLift
+diff --git a/GRWTSK/Algebra/Polynomial/Quartic/BinaryInvariants.lean b/GRWTSK/Algebra/Polynomial/Quartic/BinaryInvariants.lean
+new file mode 100644
+--- /dev/null
++++ b/GRWTSK/Algebra/Polynomial/Quartic/BinaryInvariants.lean
+@@ -0,0 +1,61 @@
++/-
++Copyright (c) 2026 R.A. Jacob Martone. Released under the MIT license.
++Human mathematical direction: R.A. Jacob Martone.
++Formalization assistance: OpenAI ChatGPT.
++Upstream Lean and Mathlib retain their authorship and licenses.
++
++REVIEW SOURCE: not compiled in the authoring environment. Algebraic identities
++are separately checked with SymPy; those checks are not Lean proof acceptance.
++-/
++import GRWTSK.Algebra.Polynomial.Quartic.EvenInvariants
++
++set_option autoImplicit false
++set_option relaxedAutoImplicit false
++
++namespace GRWTSK.Polynomial.Quartic
++
++variable {R : Type*} [CommRing R]
++
++/-- Unweighted coefficients aX⁴+bX³Z+cX²Z²+dXZ³+eZ⁴. -/
++def binaryI (a b c d e : R) : R := 12 * a * e - 3 * b * d + c ^ 2
++
++def binaryJ (a b c d e : R) : R :=
++  72 * a * c * e + 9 * b * c * d - 27 * a * d ^ 2 -
++    27 * b ^ 2 * e - 2 * c ^ 3
++
++/-- Polynomial discriminant normalization. Fisher's genus-one-model
++normalization is 16 times this expression. -/
++def binaryDiscriminantExpr (a b c d e : R) : R :=
++  256 * a ^ 3 * e ^ 3 - 192 * a ^ 2 * b * d * e ^ 2 -
++  128 * a ^ 2 * c ^ 2 * e ^ 2 + 144 * a ^ 2 * c * d ^ 2 * e -
++  27 * a ^ 2 * d ^ 4 + 144 * a * b ^ 2 * c * e ^ 2 -
++  6 * a * b ^ 2 * d ^ 2 * e - 80 * a * b * c ^ 2 * d * e +
++  18 * a * b * c * d ^ 3 + 16 * a * c ^ 4 * e -
++  4 * a * c ^ 3 * d ^ 2 - 27 * b ^ 4 * e ^ 2 +
++  18 * b ^ 3 * c * d * e - 4 * b ^ 3 * d ^ 3 -
++  4 * b ^ 2 * c ^ 3 * e + b ^ 2 * c ^ 2 * d ^ 2
++
++theorem binary_invariant_identity (a b c d e : R) :
++    4 * binaryI a b c d e ^ 3 - binaryJ a b c d e ^ 2 =
++      27 * binaryDiscriminantExpr a b c d e := by
++  dsimp [binaryI, binaryJ, binaryDiscriminantExpr]
++  ring
++
++theorem even_binary_specialization (p r : R) :
++    binaryI 1 0 p 0 r = evenInvariantI p r ∧
++    binaryJ 1 0 p 0 r = evenInvariantJ p r ∧
++    binaryDiscriminantExpr 1 0 p 0 r = evenDiscriminantExpr p r := by
++  dsimp [binaryI, binaryJ, binaryDiscriminantExpr,
++    evenInvariantI, evenInvariantJ, evenDiscriminantExpr]
++  constructor
++  · ring
++  constructor <;> ring
++
++/-- Algebraic compatibility with y²=x³-27Ix-27J. This does not construct
++its Jacobian, cohomology, modular parametrization, or a zeta correspondence. -/
++theorem jacobian_discriminant_scale (I J : R) :
++    -16 * (4 * (-27 * I) ^ 3 + 27 * (-27 * J) ^ 2) =
++      16 * 27 ^ 3 * (4 * I ^ 3 - J ^ 2) := by
++  ring
++
++end GRWTSK.Polynomial.Quartic
+diff --git a/GRWTSK/Algebra/Polynomial/Quartic/EvenInvariants.lean b/GRWTSK/Algebra/Polynomial/Quartic/EvenInvariants.lean
+new file mode 100644
+--- /dev/null
++++ b/GRWTSK/Algebra/Polynomial/Quartic/EvenInvariants.lean
+@@ -0,0 +1,69 @@
++/-
++Copyright (c) 2026 R.A. Jacob Martone. Released under the MIT license.
++Human mathematical direction: R.A. Jacob Martone.
++Formalization assistance: OpenAI ChatGPT.
++Upstream Lean and Mathlib retain their authorship and licenses.
++
++REVIEW SOURCE: not compiled in the authoring environment. Algebraic identities
++are separately checked with SymPy; those checks are not Lean proof acceptance.
++-/
++import Mathlib.Tactic
++
++set_option autoImplicit false
++set_option relaxedAutoImplicit false
++
++namespace GRWTSK.Polynomial.Quartic
++
++section Ring
++variable {R : Type*} [CommRing R]
++
++/-- Evaluation of the monic even quartic. -/
++def evenValue (p r x : R) : R := x ^ 4 + p * x ^ 2 + r
++
++/-- Evaluation of its formal derivative, written without division. -/
++def evenDerivativeValue (p x : R) : R := 4 * x ^ 3 + 2 * p * x
++
++/-- Closed polynomial-discriminant expression, not a definition of the
++Mathlib discriminant API. Its resultant-API identification remains a separate
++integration obligation. The Bezout identity below is independently usable. -/
++def evenDiscriminantExpr (p r : R) : R := 16 * r * (p ^ 2 - 4 * r) ^ 2
++
++def evenInvariantI (p r : R) : R := p ^ 2 + 12 * r
++
++def evenInvariantJ (p r : R) : R := 72 * p * r - 2 * p ^ 3
++
++theorem even_invariant_identity (p r : R) :
++    4 * evenInvariantI p r ^ 3 - evenInvariantJ p r ^ 2 =
++      27 * evenDiscriminantExpr p r := by
++  dsimp [evenInvariantI, evenInvariantJ, evenDiscriminantExpr]
++  ring
++
++/-- One conventional cubic resolvent factors completely for an even quartic. -/
++theorem even_resolvent_factor (p r y : R) :
++    y ^ 3 - p * y ^ 2 - 4 * r * y + 4 * p * r =
++      (y - p) * (y ^ 2 - 4 * r) := by
++  ring
++
++/-- A denominator-free Bezout certificate for the quartic and its derivative. -/
++theorem even_bezout (p r x : R) :
++    (16 * (p ^ 2 - 4 * r) * (p ^ 2 + 2 * p * x ^ 2 - 4 * r)) *
++        evenValue p r x +
++    (-8 * x * (p ^ 2 - 4 * r) * (p ^ 2 + p * x ^ 2 - 2 * r)) *
++        evenDerivativeValue p x = evenDiscriminantExpr p r := by
++  dsimp [evenValue, evenDerivativeValue, evenDiscriminantExpr]
++  ring
++
++theorem common_root_forces_discriminant_expr_zero (p r x : R)
++    (h : evenValue p r x = 0) (hd : evenDerivativeValue p x = 0) :
++    evenDiscriminantExpr p r = 0 := by
++  have hc := even_bezout p r x
++  simpa [h, hd] using hc.symm
++
++theorem no_common_root_of_discriminant_expr_ne_zero (p r x : R)
++    (hdisc : evenDiscriminantExpr p r ≠ 0) :
++    ¬ (evenValue p r x = 0 ∧ evenDerivativeValue p x = 0) := by
++  rintro ⟨h, hd⟩
++  exact hdisc (common_root_forces_discriminant_expr_zero p r x h hd)
++
++end Ring
++end GRWTSK.Polynomial.Quartic
+diff --git a/GRWTSK/Algebra/Polynomial/Quartic/ReciprocalCayley.lean b/GRWTSK/Algebra/Polynomial/Quartic/ReciprocalCayley.lean
+new file mode 100644
+--- /dev/null
++++ b/GRWTSK/Algebra/Polynomial/Quartic/ReciprocalCayley.lean
+@@ -0,0 +1,77 @@
++/-
++Copyright (c) 2026 R.A. Jacob Martone. Released under the MIT license.
++Human mathematical direction: R.A. Jacob Martone.
++Formalization assistance: OpenAI ChatGPT.
++Upstream Lean and Mathlib retain their authorship and licenses.
++
++REVIEW SOURCE: not compiled in the authoring environment. Algebraic identities
++are separately checked with SymPy; those checks are not Lean proof acceptance.
++-/
++import GRWTSK.Algebra.Polynomial.Quartic.EvenInvariants
++
++set_option autoImplicit false
++set_option relaxedAutoImplicit false
++
++namespace GRWTSK.Polynomial.Quartic
++
++section Ring
++variable {R : Type*} [CommRing R]
++
++def reciprocalValue (A B z : R) : R :=
++  z ^ 4 - A * z ^ 3 + B * z ^ 2 - A * z + 1
++
++/-- Homogeneous version of reduction by U=z+z⁻¹, without a division premise. -/
++theorem reciprocal_trace_identity (A B z : R) :
++    reciprocalValue A B z =
++      (z ^ 2 + 1) ^ 2 - A * z * (z ^ 2 + 1) + (B - 2) * z ^ 2 := by
++  dsimp [reciprocalValue]
++  ring
++
++theorem reciprocal_factor (u v z : R) :
++    reciprocalValue (u + v) (u * v + 2) z =
++      (z ^ 2 - u * z + 1) * (z ^ 2 - v * z + 1) := by
++  dsimp [reciprocalValue]
++  ring
++
++/-- Homogenized Cayley pullback of x⁴+px²+r under x=i(1+z)/(1-z).
++The rational map itself has an exceptional point z=1. -/
++theorem cayley_pullback_identity (p r z : R) :
++    (1 + z) ^ 4 - p * (1 + z) ^ 2 * (1 - z) ^ 2 + r * (1 - z) ^ 4 =
++      (1 - p + r) * (z ^ 4 + 1) + (4 - 4 * r) * (z ^ 3 + z) +
++        (6 + 2 * p + 6 * r) * z ^ 2 := by
++  ring
++
++/-- Discriminant of the reciprocal trace quadratic, with denominators cleared. -/
++theorem cayley_gap_identity (p r : R) :
++    (4 - 4 * r) ^ 2 - 4 * (6 + 2 * p + 6 * r) * (1 - p + r) +
++        8 * (1 - p + r) ^ 2 = 16 * (p ^ 2 - 4 * r) := by
++  ring
++
++end Ring
++
++/-- Positive leading coefficient on the entire nontrivial critical strip,
++including zero height. This makes normalization of the Cayley quartic safe. -/
++theorem cayley_leading_positive (a b : ℝ) (ha : a ^ 2 < 1) :
++    0 < 1 - 2 * (a ^ 2 - b ^ 2) + (a ^ 2 + b ^ 2) ^ 2 := by
++  have h1 : 0 < (1 - a ^ 2) ^ 2 := sq_pos_of_pos (by linarith)
++  have h2 : 0 ≤ 2 * b ^ 2 * (1 + a ^ 2) := by positivity
++  have h3 : 0 ≤ b ^ 4 := by positivity
++  nlinarith
++
++/-- Cartesian numerator/denominator identity for |(w-i)/(w+i)|². -/
++theorem cayley_norm_difference (x y : ℝ) :
++    (x ^ 2 + (y - 1) ^ 2) - (x ^ 2 + (y + 1) ^ 2) = -4 * y := by
++  ring
++
++/-- Division-free unit-circle condition. The denominator must separately be
++nonzero when this identity is used for a rational Cayley map. -/
++theorem cayley_equal_norms_iff (x y : ℝ) :
++    x ^ 2 + (y - 1) ^ 2 = x ^ 2 + (y + 1) ^ 2 ↔ y = 0 := by
++  constructor
++  · intro h
++    nlinarith
++  · intro h
++    subst y
++    ring
++
++end GRWTSK.Polynomial.Quartic
+diff --git a/GRWTSK/Algebra/Polynomial/Quartic/ReflectionOrbit.lean b/GRWTSK/Algebra/Polynomial/Quartic/ReflectionOrbit.lean
+new file mode 100644
+--- /dev/null
++++ b/GRWTSK/Algebra/Polynomial/Quartic/ReflectionOrbit.lean
+@@ -0,0 +1,119 @@
++/-
++Copyright (c) 2026 R.A. Jacob Martone. Released under the MIT license.
++Human mathematical direction: R.A. Jacob Martone.
++Formalization assistance: OpenAI ChatGPT.
++Upstream Lean and Mathlib retain their authorship and licenses.
++
++REVIEW SOURCE: not compiled in the authoring environment. Algebraic identities
++are separately checked with SymPy; those checks are not Lean proof acceptance.
++-/
++import GRWTSK.Algebra.Polynomial.Quartic.EvenInvariants
++
++set_option autoImplicit false
++set_option relaxedAutoImplicit false
++
++namespace GRWTSK.Polynomial.Quartic
++
++/-- Coefficients for roots b ± ia and -b ± ia, counted with repetition. -/
++def orbitP (a b : ℝ) : ℝ := 2 * (a ^ 2 - b ^ 2)
++def orbitR (a b : ℝ) : ℝ := (a ^ 2 + b ^ 2) ^ 2
++def orbitGap (a b : ℝ) : ℝ := orbitP a b ^ 2 - 4 * orbitR a b
++
++theorem orbit_factor (a b x : ℝ) :
++    evenValue (orbitP a b) (orbitR a b) x =
++      ((x - b) ^ 2 + a ^ 2) * ((x + b) ^ 2 + a ^ 2) := by
++  dsimp [evenValue, orbitP, orbitR]
++  ring
++
++theorem orbit_gap_identity (a b : ℝ) :
++    orbitGap a b = -16 * (a * b) ^ 2 := by
++  dsimp [orbitGap, orbitP, orbitR]
++  ring
++
++theorem orbit_discriminant_identity (a b : ℝ) :
++    evenDiscriminantExpr (orbitP a b) (orbitR a b) =
++      4096 * a ^ 4 * b ^ 4 * (a ^ 2 + b ^ 2) ^ 2 := by
++  dsimp [evenDiscriminantExpr, orbitP, orbitR]
++  ring
++
++theorem orbit_invariantI_identity (a b : ℝ) :
++    evenInvariantI (orbitP a b) (orbitR a b) =
++      16 * (a ^ 4 + a ^ 2 * b ^ 2 + b ^ 4) := by
++  dsimp [evenInvariantI, orbitP, orbitR]
++  ring
++
++/-- Cleared-denominator real-modular-locus identity. With a*b nonzero,
++this shows j >= 1728; that inequality holds off-axis as well. -/
++theorem orbit_modular_locus_identity (a b : ℝ) :
++    256 * (a ^ 4 + a ^ 2 * b ^ 2 + b ^ 4) ^ 3 -
++        1728 * a ^ 4 * b ^ 4 * (a ^ 2 + b ^ 2) ^ 2 =
++      64 * (a ^ 2 - b ^ 2) ^ 2 * (a ^ 2 + 2 * b ^ 2) ^ 2 *
++        (2 * a ^ 2 + b ^ 2) ^ 2 := by
++  ring
++
++theorem orbit_axis_square (b x : ℝ) :
++    evenValue (orbitP 0 b) (orbitR 0 b) x = (x ^ 2 - b ^ 2) ^ 2 := by
++  dsimp [evenValue, orbitP, orbitR]
++  ring
++
++theorem orbit_gap_nonpos (a b : ℝ) : orbitGap a b ≤ 0 := by
++  rw [orbit_gap_identity]
++  nlinarith [sq_nonneg (a * b)]
++
++theorem orbit_gap_nonneg_iff (a b : ℝ) :
++    0 ≤ orbitGap a b ↔ a = 0 ∨ b = 0 := by
++  rw [orbit_gap_identity]
++  constructor
++  · intro h
++    have hz : (a * b) ^ 2 = 0 := by nlinarith [sq_nonneg (a * b)]
++    exact mul_eq_zero.mp (sq_eq_zero_iff.mp hz)
++  · rintro (rfl | rfl) <;> simp
++
++/-- The second inequality alone does not handle zero height. -/
++theorem orbit_enclosure_iff (a b : ℝ) :
++    (orbitP a b ≤ 0 ∧ 0 ≤ orbitGap a b) ↔ a = 0 := by
++  constructor
++  · rintro ⟨hp, hg⟩
++    rcases (orbit_gap_nonneg_iff a b).mp hg with ha | hb
++    · exact ha
++    · subst b
++      dsimp [orbitP] at hp
++      have hz : a ^ 2 = 0 := by nlinarith [sq_nonneg a]
++      exact sq_eq_zero_iff.mp hz
++  · intro ha
++    subst a
++    constructor
++    · dsimp [orbitP]
++      nlinarith [sq_nonneg b]
++    · exact (orbit_gap_nonneg_iff 0 b).mpr (Or.inl rfl)
++
++theorem axis_of_gap_nonneg_of_height_ne_zero (a b : ℝ)
++    (hb : b ≠ 0) (hg : 0 ≤ orbitGap a b) : a = 0 :=
++  ((orbit_gap_nonneg_iff a b).mp hg).resolve_right hb
++
++/-- A local scalar error budget gives an exact algebraic collar. -/
++theorem collar_from_gap_budget (a b ε : ℝ) (h : -ε ≤ orbitGap a b) :
++    16 * a ^ 2 * b ^ 2 ≤ ε := by
++  rw [orbit_gap_identity] at h
++  nlinarith
++
++/-- Every positive error budget is needed; a finite prefix is insufficient. -/
++theorem gap_nonneg_of_all_budgets (a b : ℝ)
++    (h : ∀ ε : ℝ, 0 < ε → -ε ≤ orbitGap a b) : 0 ≤ orbitGap a b := by
++  by_contra hn
++  have hneg : orbitGap a b < 0 := lt_of_not_ge hn
++  have ht := h (-orbitGap a b / 2) (by linarith)
++  linarith
++
++/-- Positive discriminant does not imply real-rootedness. -/
++theorem off_axis_positive_discriminant_guard :
++    0 < evenDiscriminantExpr (orbitP 1 1) (orbitR 1 1) ∧
++      orbitGap 1 1 < 0 := by
++  norm_num [evenDiscriminantExpr, orbitP, orbitR, orbitGap]
++
++/-- Discriminant collision at zero height does not force zero horizontal offset. -/
++theorem zero_height_collision_guard :
++    orbitGap 1 0 = 0 ∧ 0 < orbitP 1 0 := by
++  norm_num [orbitGap, orbitP, orbitR]
++
++end GRWTSK.Polynomial.Quartic
+diff --git a/GRWTSK/Analysis/Complex/SquaredResidualExclusion.lean b/GRWTSK/Analysis/Complex/SquaredResidualExclusion.lean
+new file mode 100644
+--- /dev/null
++++ b/GRWTSK/Analysis/Complex/SquaredResidualExclusion.lean
+@@ -0,0 +1,42 @@
++/-
++Copyright (c) 2026 R.A. Jacob Martone. Released under the MIT license.
++Human mathematical direction: R.A. Jacob Martone.
++Formalization assistance: OpenAI ChatGPT.
++Upstream Lean and Mathlib retain their authorship and licenses.
++
++REVIEW SOURCE: not compiled in the authoring environment. Algebraic identities
++are separately checked with SymPy; those checks are not Lean proof acceptance.
++-/
++import Mathlib.Tactic
++
++set_option autoImplicit false
++set_option relaxedAutoImplicit false
++
++namespace GRWTSK.Complex.SquaredResidualExclusion
++
++/-- Generic certificate. Polynomial/Taylor producers must prove these fields;
++this consumer neither fabricates an analytic remainder nor checks sample points. -/
++structure Certificate {α : Type*} (F : α → ℂ) (S : Set α) where
++  realApprox : α → ℝ
++  imagApprox : α → ℝ
++  errorSq : α → ℝ
++  residual_le : ∀ x ∈ S,
++    ((F x).re - realApprox x) ^ 2 + ((F x).im - imagApprox x) ^ 2 ≤ errorSq x
++  strict_gap : ∀ x ∈ S,
++    errorSq x < realApprox x ^ 2 + imagApprox x ^ 2
++
++/-- Exact zero exclusion without a bound on F'/F. -/
++theorem Certificate.nonzero {α : Type*} {F : α → ℂ} {S : Set α}
++    (c : Certificate F S) (x : α) (hx : x ∈ S) : F x ≠ 0 := by
++  intro hz
++  have hb := c.residual_le x hx
++  have hg := c.strict_gap x hx
++  simp only [hz, _root_.Complex.zero_re, _root_.Complex.zero_im, zero_sub, neg_sq] at hb
++  linarith
++
++/-- Closed, non-strict separation is insufficient. -/
++theorem nonstrict_gap_guard :
++    ((0 : ℝ) - 1) ^ 2 ≤ 1 ^ 2 ∧ ¬ ((0 : ℂ) ≠ 0) := by
++  norm_num
++
++end GRWTSK.Complex.SquaredResidualExclusion
+diff --git a/GRWTSK/LinearAlgebra/QuadraticForm/QuarticHermite.lean b/GRWTSK/LinearAlgebra/QuadraticForm/QuarticHermite.lean
+new file mode 100644
+--- /dev/null
++++ b/GRWTSK/LinearAlgebra/QuadraticForm/QuarticHermite.lean
+@@ -0,0 +1,82 @@
++/-
++Copyright (c) 2026 R.A. Jacob Martone. Released under the MIT license.
++Human mathematical direction: R.A. Jacob Martone.
++Formalization assistance: OpenAI ChatGPT.
++Upstream Lean and Mathlib retain their authorship and licenses.
++
++REVIEW SOURCE: not compiled in the authoring environment. Algebraic identities
++are separately checked with SymPy; those checks are not Lean proof acceptance.
++-/
++import GRWTSK.Algebra.Polynomial.Quartic.ReflectionOrbit
++
++set_option autoImplicit false
++set_option relaxedAutoImplicit false
++
++namespace GRWTSK.QuadraticForm.QuarticHermite
++
++open GRWTSK.Polynomial.Quartic
++
++/-- Expanded Hankel form for Newton sums m0=4, m1=m3=m5=0,
++m2=-2p, m4=2p²-4r and m6=-2p³+6pr.
++This module uses the explicit form, not a substituted positive Gram matrix. -/
++def value (p r u0 u1 u2 u3 : ℝ) : ℝ :=
++  4 * u0 ^ 2 - 4 * p * u0 * u2 - 2 * p * u1 ^ 2 +
++    (2 * p ^ 2 - 4 * r) * u2 ^ 2 +
++    2 * (2 * p ^ 2 - 4 * r) * u1 * u3 +
++    (-2 * p ^ 3 + 6 * p * r) * u3 ^ 2
++
++def Nonnegative (p r : ℝ) : Prop :=
++  ∀ u0 u1 u2 u3 : ℝ, 0 ≤ value p r u0 u1 u2 u3
++
++theorem second_moment_test (p r : ℝ) :
++    value p r 0 1 0 0 = -2 * p := by
++  dsimp [value]
++  ring
++
++theorem discriminant_gap_test (p r : ℝ) :
++    value p r (p / 2) 0 1 0 = p ^ 2 - 4 * r := by
++  dsimp [value]
++  ring
++
++theorem even_principal_minor (p r : ℝ) :
++    4 * (2 * p ^ 2 - 4 * r) - (-2 * p) ^ 2 = 4 * (p ^ 2 - 4 * r) := by
++  ring
++
++theorem axis_sum_of_squares (b u0 u1 u2 u3 : ℝ) :
++    value (orbitP 0 b) (orbitR 0 b) u0 u1 u2 u3 =
++      4 * (u0 + b ^ 2 * u2) ^ 2 +
++        4 * b ^ 2 * (u1 + b ^ 2 * u3) ^ 2 := by
++  dsimp [value, orbitP, orbitR]
++  ring
++
++/-- Exact orbit characterization, not an assertion of zeta-derived positivity. -/
++theorem nonnegative_orbit_iff (a b : ℝ) :
++    Nonnegative (orbitP a b) (orbitR a b) ↔ a = 0 := by
++  constructor
++  · intro h
++    have hp := h 0 1 0 0
++    rw [second_moment_test] at hp
++    have hg := h (orbitP a b / 2) 0 1 0
++    rw [discriminant_gap_test] at hg
++    apply (orbit_enclosure_iff a b).mp
++    exact ⟨by linarith, hg⟩
++  · intro ha
++    subst a
++    intro u0 u1 u2 u3
++    rw [axis_sum_of_squares]
++    positivity
++
++/-- A matrix lower-bound error must be multiplied by the test-vector norm.
++Here η bounds the full quadratic form against the Euclidean norm squared. -/
++theorem normalized_error_collar (a b η : ℝ)
++    (h : ∀ u0 u1 u2 u3 : ℝ,
++      -η * (u0 ^ 2 + u1 ^ 2 + u2 ^ 2 + u3 ^ 2) ≤
++        value (orbitP a b) (orbitR a b) u0 u1 u2 u3) :
++    16 * a ^ 2 * b ^ 2 ≤ η * (1 + orbitP a b ^ 2 / 4) := by
++  have ht := h (orbitP a b / 2) 0 1 0
++  rw [discriminant_gap_test] at ht
++  have hid := orbit_gap_identity a b
++  dsimp [orbitGap] at hid
++  nlinarith
++
++end GRWTSK.QuadraticForm.QuarticHermite
+diff --git a/GRWTSK/NumberTheory/Zeta/Riemann/QuarticEnclosure.lean b/GRWTSK/NumberTheory/Zeta/Riemann/QuarticEnclosure.lean
+new file mode 100644
+--- /dev/null
++++ b/GRWTSK/NumberTheory/Zeta/Riemann/QuarticEnclosure.lean
+@@ -0,0 +1,130 @@
++/-
++Copyright (c) 2026 R.A. Jacob Martone. Released under the MIT license.
++Human mathematical direction: R.A. Jacob Martone.
++Formalization assistance: OpenAI ChatGPT.
++Upstream Lean and Mathlib retain their authorship and licenses.
++
++REVIEW SOURCE: not compiled in the authoring environment. Algebraic identities
++are separately checked with SymPy; those checks are not Lean proof acceptance.
++-/
++import GRWTSK.NumberTheory.Zeta.Riemann.CriticalLineDefect
++import GRWTSK.NumberTheory.Zeta.Riemann.ZeroSymmetry
++import GRWTSK.LinearAlgebra.QuadraticForm.QuarticHermite
++import GRWTSK.Algebra.Polynomial.QuadraticLift
++import GRWTSK.Analysis.Complex.SquaredResidualExclusion
++
++set_option autoImplicit false
++set_option relaxedAutoImplicit false
++
++namespace GRWTSK.NumberTheory.Zeta.Riemann
++
++open GRWTSK.RiemannHypothesis
++open GRWTSK.Polynomial.Quartic
++
++/-- The horizontal displacement in the centered critical strip. -/
++def axisOffset (s : ℂ) : ℝ := s.re - 1 / 2
++
++theorem defect_offset_identity (s : ℂ) : rhDefect s = 4 * axisOffset s ^ 2 := by
++  rw [rh_defect_eq_square]
++  dsimp [axisOffset]
++  ring
++
++theorem gap_defect_identity (s : ℂ) :
++    orbitGap (axisOffset s) s.im = -4 * rhDefect s * s.im ^ 2 := by
++  rw [orbit_gap_identity, defect_offset_identity]
++  ring
++
++theorem discriminant_defect_identity (s : ℂ) :
++    evenDiscriminantExpr (orbitP (axisOffset s) s.im)
++      (orbitR (axisOffset s) s.im) =
++      256 * rhDefect s ^ 2 * s.im ^ 4 * (axisOffset s ^ 2 + s.im ^ 2) ^ 2 := by
++  rw [orbit_discriminant_identity, defect_offset_identity]
++  ring
++
++/-- Height-free characterization; the first inequality retains the zero-height case. -/
++theorem quartic_enclosure_iff (s : ℂ) :
++    (orbitP (axisOffset s) s.im ≤ 0 ∧ 0 ≤ orbitGap (axisOffset s) s.im) ↔
++      s.re = 1 / 2 := by
++  rw [orbit_enclosure_iff]
++  dsimp [axisOffset]
++  constructor <;> intro h <;> linarith
++
++/-- Equivalent reformulation only. Neither inequality is asserted at zeta zeros. -/
++theorem riemannHypothesis_iff_quartic_enclosure :
++    _root_.RiemannHypothesis ↔
++      ∀ s : ℂ, NontrivialZetaZero s →
++        orbitP (axisOffset s) s.im ≤ 0 ∧ 0 ≤ orbitGap (axisOffset s) s.im := by
++  constructor
++  · intro h s hs
++    exact (quartic_enclosure_iff s).mpr (h s hs.1 hs.2.1 hs.2.2)
++  · intro h s hz ht hp
++    exact (quartic_enclosure_iff s).mp (h s ⟨hz, ht, hp⟩)
++
++/-- Equivalent reformulation only; source-derived positivity remains open. -/
++theorem riemannHypothesis_iff_orbitHermite_nonnegative :
++    _root_.RiemannHypothesis ↔
++      ∀ s : ℂ, NontrivialZetaZero s →
++        GRWTSK.QuadraticForm.QuarticHermite.Nonnegative
++          (orbitP (axisOffset s) s.im) (orbitR (axisOffset s) s.im) := by
++  constructor
++  · intro h s hs
++    apply (GRWTSK.QuadraticForm.QuarticHermite.nonnegative_orbit_iff _ _).mpr
++    dsimp [axisOffset]
++    have heq := h s hs.1 hs.2.1 hs.2.2
++    linarith
++  · intro h s hz ht hp
++    have ha := (GRWTSK.QuadraticForm.QuarticHermite.nonnegative_orbit_iff _ _).mp
++      (h s ⟨hz, ht, hp⟩)
++    dsimp [axisOffset] at ha
++    linarith
++
++/-- Local source-bound use of the pre-existing exact matrix checker.
++Both certificate existence and source admissibility remain visible hypotheses. -/
++theorem local_critical_line_of_lifted_certificate {ε γ ν : Type*}
++    [Fintype ε] [Fintype γ] [Fintype ν]
++    (P : GRWTSK.LinearAlgebra.QuadraticCertificates.Problem ℝ (Fin 6) ε γ)
++    (C : GRWTSK.LinearAlgebra.QuadraticCertificates.Certificate ℝ (Fin 6) ε γ ν)
++    (hC : GRWTSK.LinearAlgebra.QuadraticCertificates.Valid P C)
++    (htarget : P.target = GRWTSK.Polynomial.QuadraticLift.gapMatrix)
++    (S : Set ℂ)
++    (hsource : ∀ z ∈ S, NontrivialZetaZero z →
++      P.Admissible (GRWTSK.Polynomial.QuadraticLift.monomials (axisOffset z) z.im))
++    (s : ℂ) (hmem : s ∈ S) (hz : NontrivialZetaZero s) (hheight : s.im ≠ 0) :
++    s.re = 1 / 2 := by
++  have hg := GRWTSK.Polynomial.QuadraticLift.gap_nonnegative_of_certificate
++    P C hC htarget (axisOffset s) s.im (hsource s hmem hz)
++  have ha := axis_of_gap_nonneg_of_height_ne_zero (axisOffset s) s.im hheight hg
++  dsimp [axisOffset] at ha
++  linarith
++
++/-- A sound local enclosure consumer: existence and uniqueness are hypotheses.
++An external root-count certificate must prove uniqueness, not assume it. -/
++theorem local_critical_line_of_unique_zero (S : Set ℂ) (s : ℂ)
++    (hsS : s ∈ S) (hs : NontrivialZetaZero s)
++    (hstable : ∀ z ∈ S, criticalReflection z ∈ S)
++    (hunique : ∀ z ∈ S, NontrivialZetaZero z → z = s) : s.re = 1 / 2 := by
++  have hfix := hunique (criticalReflection s) (hstable s hsS) hs.critical_reflection
++  have hr := congrArg _root_.Complex.re hfix
++  simp [criticalReflection] at hr
++  linarith
++
++/-- Generic local certificates specialize without changing the zero predicate. -/
++theorem no_nontrivial_zero_of_residual_certificate (S : Set ℂ)
++    (c : GRWTSK.Complex.SquaredResidualExclusion.Certificate riemannZeta S)
++    (s : ℂ) (hs : s ∈ S) : ¬ NontrivialZetaZero s := by
++  intro hz
++  exact c.nonzero s hs hz.1
++
++/-- A cover must really cover every off-line nontrivial zero. Finite coverage
++is not silently promoted to an unbounded critical-strip claim. -/
++theorem riemannHypothesis_of_exclusion_cover {ι : Type*} (S : ι → Set ℂ)
++    (cert : ∀ i, GRWTSK.Complex.SquaredResidualExclusion.Certificate riemannZeta (S i))
++    (cover : ∀ s : ℂ, NontrivialZetaZero s → s.re ≠ 1 / 2 → ∃ i, s ∈ S i) :
++    _root_.RiemannHypothesis := by
++  intro s hz ht hp
++  by_contra hoff
++  have hs : NontrivialZetaZero s := ⟨hz, ht, hp⟩
++  obtain ⟨i, hi⟩ := cover s hs hoff
++  exact (cert i).nonzero s hi hz
++
++end GRWTSK.NumberTheory.Zeta.Riemann
