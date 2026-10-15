@@ -1,0 +1,116 @@
+/-
+Human direction: R.A. Jacob Martone. Candidate implementation: OpenAI ChatGPT.
+MIT. Adapts Nathanson, arXiv:1911.01745v2 and arXiv:2003.13008v3.
+UNCOMPILED CANDIDATE. Destination:
+GRWTSK/Algebra/Polynomial/FiniteSignedTrace.lean
+-/
+import GRWTSK.Algebra.Polynomial.ConjugateInterpolation
+
+set_option autoImplicit false
+noncomputable section
+
+namespace GRWTSK.Polynomial.FiniteSignedTrace
+open ConjugateInterpolation
+
+/-- Positive multiplicity weights are NOT discarded when support is deduplicated.
+The real part is explicit. Conjugation-invariant weights make the unsimplified
+complex trace real; the negative-pair theorem needs only positive weights. -/
+def powerTrace (s : Finset ℂ) (mass : ℂ → ℝ) (k : ℕ) (p : Polynomial ℂ) : ℝ :=
+  ∑ z ∈ s, mass z * ((p.eval z) ^ k).re
+
+def NonnegativeTests (s : Finset ℂ) (mass : ℂ → ℝ) (k : ℕ) : Prop :=
+  ∀ p : Polynomial ℂ, RealCoefficients p → p.degree < s.card →
+    0 ≤ powerTrace s mass k p
+
+/-- Every other support point vanishes BEFORE the trace is estimated. -/
+theorem pair_trace (s : Finset ℂ) (mass : ℂ → ℝ) (k : ℕ) (hk : k ≠ 0)
+    (z η : ℂ) (hz : star z ≠ z) (hzs : z ∈ s) (hzs' : star z ∈ s)
+    (p : Polynomial ℂ)
+    (hp : ∀ x ∈ s, p.eval x = pairValues z η x) :
+    powerTrace s mass k p = (mass z + mass (star z)) * (η ^ k).re := by
+  classical
+  have hstar : ((star η) ^ k).re = (η ^ k).re := by
+    rw [← star_pow]
+    rfl
+  have ht : ∀ x ∈ s,
+      mass x * ((p.eval x) ^ k).re =
+        (if x = z then mass z * (η ^ k).re else 0) +
+        (if x = star z then mass (star z) * (η ^ k).re else 0) := by
+    intro x hx
+    rw [hp x hx]
+    by_cases h : x = z
+    · subst x
+      simp [pairValues, hz, hz.symm]
+    by_cases h' : x = star z
+    · subst x
+      simp [pairValues, hz, hstar]
+    simp [pairValues, h, h', hk]
+  unfold powerTrace
+  rw [Finset.sum_congr rfl ht, Finset.sum_add_distrib]
+  simp [hzs, hzs', add_mul]
+
+/-- Finite pair isolation with its ACTUAL mass, including repeated source zeros. -/
+theorem exists_negative_test (s : Finset ℂ) (hs : StarClosed s)
+    (mass : ℂ → ℝ) (hm : ∀ x ∈ s, 0 < mass x)
+    (k : ℕ) (hk : k ≠ 0) (η : ℂ) (hη : (η ^ k).re < 0)
+    {z : ℂ} (hzs : z ∈ s) (hz : z.im ≠ 0) :
+    ∃ p : Polynomial ℂ, RealCoefficients p ∧ p.degree < s.card ∧
+      powerTrace s mass k p < 0 := by
+  have hne : star z ≠ z := by
+    intro h
+    have hi := congrArg Complex.im h
+    change -z.im = z.im at hi
+    apply hz
+    linarith
+  obtain ⟨p, hp, hd, he⟩ := exists_pair_interpolant s hs z η hne
+  refine ⟨p, hp, hd, ?_⟩
+  rw [pair_trace s mass k hk z η hne hzs (hs z hzs) p he]
+  exact mul_neg_of_pos_of_neg (add_pos (hm z hzs) (hm (star z) (hs z hzs))) hη
+
+/-- Degree-bounded positivity is tested against the actual signed squares. -/
+theorem square_nonnegative_iff (s : Finset ℂ) (hs : StarClosed s)
+    (mass : ℂ → ℝ) (hm : ∀ x ∈ s, 0 < mass x) :
+    NonnegativeTests s mass 2 ↔ ∀ x ∈ s, x.im = 0 := by
+  constructor
+  · intro h x hx
+    by_contra hbad
+    obtain ⟨p, hp, hd, hn⟩ := exists_negative_test s hs mass hm 2
+      (by norm_num) Complex.I (by norm_num) hx hbad
+    exact (not_lt_of_ge (h p hp hd)) hn
+  · intro h p hp _
+    apply Finset.sum_nonneg
+    intro x hx
+    have hr := eval_im_eq_zero hp (h x hx)
+    have hv : ((p.eval x) ^ 2).re = (p.eval x).re ^ 2 := by
+      simp [pow_two, Complex.mul_re, hr]
+    rw [hv]
+    exact mul_nonneg (le_of_lt (hm x hx)) (sq_nonneg _)
+
+/-- Fourth-power tests need a different interpolated value; I^4 is POSITIVE. -/
+theorem fourth_nonnegative_iff (s : Finset ℂ) (hs : StarClosed s)
+    (mass : ℂ → ℝ) (hm : ∀ x ∈ s, 0 < mass x) :
+    NonnegativeTests s mass 4 ↔ ∀ x ∈ s, x.im = 0 := by
+  constructor
+  · intro h x hx
+    by_contra hbad
+    obtain ⟨p, hp, hd, hn⟩ := exists_negative_test s hs mass hm 4
+      (by norm_num) (1 + Complex.I)
+      (by norm_num [pow_succ, Complex.mul_re, Complex.mul_im]) hx hbad
+    exact (not_lt_of_ge (h p hp hd)) hn
+  · intro h p hp _
+    apply Finset.sum_nonneg
+    intro x hx
+    have hr := eval_im_eq_zero hp (h x hx)
+    have hv : ((p.eval x) ^ 4).re = (p.eval x).re ^ 4 := by
+      simp [pow_succ, Complex.mul_re, Complex.mul_im, hr]
+      ring
+    rw [hv]
+    exact mul_nonneg (le_of_lt (hm x hx)) (by positivity)
+
+/-- This equivalence does not assert either positivity predicate for zeta data. -/
+theorem square_iff_fourth (s : Finset ℂ) (hs : StarClosed s)
+    (mass : ℂ → ℝ) (hm : ∀ x ∈ s, 0 < mass x) :
+    NonnegativeTests s mass 2 ↔ NonnegativeTests s mass 4 := by
+  rw [square_nonnegative_iff s hs mass hm, fourth_nonnegative_iff s hs mass hm]
+
+end GRWTSK.Polynomial.FiniteSignedTrace
