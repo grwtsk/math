@@ -362,3 +362,6 @@ import GRWTSK.Combinatorics.DirectedGraph.PathUnfolding
 import GRWTSK.Analysis.MellinTransform.NormalizedGaussian
 import GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix
 import GRWTSK.NumberTheory.LSeries.GaussianContour
+import GRWTSK.Combinatorics.DirectedGraph.EndpointSection
+import GRWTSK.Analysis.PartitionOfUnity.DyadicAnnulus
+import GRWTSK.NumberTheory.LSeries.GaussianDyadic

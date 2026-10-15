@@ -1,0 +1,17 @@
+{
+  "schema": "grwtsk.coordination.event.v1",
+  "event": "endpoint-dyadic-source-scout-progress",
+  "agent": "cache_taxonomy",
+  "at": "2026-10-15T20:31:08.750527+00:00",
+  "manifest": {
+    "path": ".local/endpoint-dyadic-source-scout/c84ff313d7694097b4d2d5925551ed37/manifest.json",
+    "sha256": "5571c84401f8dd41f90ee95356366aa4f344fe2aaa20d21ae18a1df7d5dfbd66"
+  },
+  "findings": [
+    "Exact OpenAI Nat-dyadic annulus partition/reassembly source re-read; coverage 1\u2264x and actual norm partition essential.",
+    "Courcelle v3 supplies walk-prefix construction context, not endpoint section preservation.",
+    "Hoffstein/Hulse v6 \u00a79 p56 eq9.1 uses a smooth compact dyadic window for twisted modular forms, not this exact Gaussian partition.",
+    "Actual pinned Anthropic BinaryPrefixes and MellinCalculus bytes freshly fetched; arithmetic binary prefix and conditional convolution/smoothing roles remain distinct."
+  ],
+  "final_local_source_bindings": "Pending worker freezes; no source or status promotion."
+}

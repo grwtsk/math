@@ -48,6 +48,12 @@ original endpoints are equal. The controls prove that this replacement
 loses parallel histories and does not reflect ancestry; an actual one-edge
 Unit loop already rules out every endpoint decoder recovering all histories.
 
+The [endpoint-section obstruction](endpoint-section.md) gives a stronger
+conditional boundary for source reachability: incomparable ancestors of a
+common upper vertex prevent every endpoint section from preserving all
+source reachability. Its actual thin-diamond control and native receipt are
+separate from this full-history equivalence.
+
 ## Source, verification and credit
 
 The [source](../../../../GRWTSK/Combinatorics/DirectedGraph/OccurrencePrefix.lean),

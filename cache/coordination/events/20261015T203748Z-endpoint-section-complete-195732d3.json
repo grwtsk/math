@@ -1,0 +1,154 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "endpoint-section-formal",
+  "owner": "indexed_dictionary",
+  "kind": "complete",
+  "at": "2026-10-15T20:37:48.662642+00:00",
+  "source_hashes": {
+    "GRWTSK/Combinatorics/DirectedGraph/EndpointSection.lean": "5186e4848b7e30d5d6d18070d8948650652d0fc7ec9f004d1f5b451709c4c52f",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/EndpointSection.lean": "ba640039622b78f42cfcbaf31dce0f0dcc4028b429b764aad482488dfbb4deba",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/EndpointSectionMissingPreservation.lean": "299e1fcbde14d3f1132f35de38754d2c8a9ed3ca627d4f40b91ecdb3c211cd79"
+  },
+  "mathematical_contract": "Arbitrary Quiver/fixed root: if root-reachable a,b reach common root-reachable c but neither reaches the other, no endpoint right-inverse section can preserve source Reachable. Exact trace composition invokes existing PrefixObstruction.no_prefix_representation_of_incomparable_upper; reflection derives from actual projection.mapPath plus right-inverse endpoint equalities, not assumed injectivity. No new generic comparator/order or path/reachability structure.",
+  "concrete_contract": "Existing Diamond/DiamondLe with Hom a b=PLift(DiamondLe a b); actual Reachable iff DiamondLe and every vertex reachable from bottom. This is reflexive/transitive thin quiver with loops and bottom-top shortcut, not Hasse DAG; no finite history-set claim.",
+  "accepted_development_controls": [
+    "Complete named actual middle-node obstruction, all-sections nonpreservation, actual selectedOccurrence rightinverse and its failed preservation, paired in actual_diamond_counterexample",
+    "Actual loop and shortcut arrows inhabit advertised types",
+    "Actual bottom-left-top and bottom-right-top typed paths have distinct occurrence histories, same endpoint, length2"
+  ],
+  "negative": {
+    "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/EndpointSectionMissingPreservation.lean",
+    "line": 18,
+    "errors": [
+      "Type mismatch"
+    ],
+    "sole_intended_mismatch": "diamond_selected_right_inverse : Function.RightInverse selectedOccurrence reachableEndpoint cannot supply \u2200 (x y : ReachableVertex Diamond.bottom), Reachable \u2191x \u2191y \u2192 Reachable (selectedOccurrence x) (selectedOccurrence y)",
+    "log": ".local/endpoint-section/logs/20261015T203412.816172Z-EndpointSectionMissingPreservation.log",
+    "sha256": "bb8738665329bf0760c7d87d29d2b07b52db798a00a645736914d076d479da12",
+    "proved_counterexample": "All actual counterexample proofs are in compiled/audited positive module, imported by negative. No derived prefix required."
+  },
+  "development": {
+    "trust": 0,
+    "fatal_warnings": true,
+    "library": "passed",
+    "positive": "passed",
+    "negative": "exactly1intendedtypeerror",
+    "owned_census": {
+      "path": ".local/endpoint-section/owned-census.json",
+      "sha256": "006e785a3376f8c73ec8739c61475e00f086324a0e81caa1b919a9ec8f877c34",
+      "declarations": 219,
+      "modules": [
+        {
+          "declarations": 18,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences"
+        },
+        {
+          "declarations": 52,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding"
+        },
+        {
+          "declarations": 46,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.EdgeTrace"
+        },
+        {
+          "declarations": 21,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix"
+        },
+        {
+          "declarations": 64,
+          "module": "GRWTSK.Order.Embeddings.PrefixObstruction"
+        },
+        {
+          "declarations": 5,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.EndpointSection"
+        },
+        {
+          "declarations": 13,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.EndpointSection"
+        }
+      ],
+      "all_mathematical_admission": true,
+      "partial_unsafe_or_runtime_helpers": []
+    },
+    "native_records": [
+      {
+        "path": ".local/endpoint-section/logs/20261015T203221.199160Z-PrefixObstruction.json",
+        "sha256": "6db5a01aace6cd06b44638d59a7acca15e1ccea735010efdd08ebb45c132392b",
+        "source_sha256": "438d46160c2131154dc49b6c345208207c4ba0931ec0487a08153a0291ac8f46",
+        "exit_code": 0,
+        "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": ".local/endpoint-section/logs/20261015T203228.172961Z-EndpointSection.json",
+        "sha256": "0f5c3d58faa64127a194ecbbfdbec6b6f8ff66904f80e6e92e8f01ba243e3ebd",
+        "source_sha256": "d2cc9ff5f427ca5bde321b3f6ba64254d1f1f7554f86335aaf40c0ca7c52966c",
+        "exit_code": 1,
+        "output_sha256": "e739bd8bb1246968e518efd7d5f399e9e84e76df94138bb6741d696598cdb242"
+      },
+      {
+        "path": ".local/endpoint-section/logs/20261015T203235.284234Z-EndpointSection.json",
+        "sha256": "e9965def6a358864d456526e1bd45b5d913f7fc245b908b93dc673650f74dab4",
+        "source_sha256": "5186e4848b7e30d5d6d18070d8948650652d0fc7ec9f004d1f5b451709c4c52f",
+        "exit_code": 0,
+        "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": ".local/endpoint-section/logs/20261015T203409.412030Z-EndpointSection.json",
+        "sha256": "d7e8b85376b0584922ee99c38a14c92e0e7f13664c00048c5ffe2191488dd12e",
+        "source_sha256": "ba640039622b78f42cfcbaf31dce0f0dcc4028b429b764aad482488dfbb4deba",
+        "exit_code": 0,
+        "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": ".local/endpoint-section/logs/20261015T203412.816172Z-EndpointSectionMissingPreservation.json",
+        "sha256": "3a1c321c478568fd34cc94f64b67ba97215f39184c9eedf9392a318c2e86a428",
+        "source_sha256": "299e1fcbde14d3f1132f35de38754d2c8a9ed3ca627d4f40b91ecdb3c211cd79",
+        "exit_code": 1,
+        "output_sha256": "bb8738665329bf0760c7d87d29d2b07b52db798a00a645736914d076d479da12"
+      },
+      {
+        "path": ".local/endpoint-section/logs/20261015T203416.682578Z-SelectedAudit.json",
+        "sha256": "2e4a6ac5d174e100c1dd4a40563958185ab5db595b45d9172b4aa4a126d6d66b",
+        "source_sha256": "ac99a27fdaf7eb8ae4e9bb9f58a2b675ed1a18d83a0bcc0486391fc93d70fb35",
+        "exit_code": 0,
+        "output_sha256": "f5df823b06325b12074fdf6dccaef7bc1954a9feac51d457274d5283f5c459a2"
+      }
+    ],
+    "limits": "Development only; exact source-bound accepted OccurrencePrefix closure objects reused. Older PrefixObstruction receipt omitted generated object family identities, so no unbound legacy object reused: exact source-hash-bound immutable ignored copy freshly compiled at trust0/fatal into owned build. Root owns complete fresh immutable source closure, dependency fingerprints, full census/admission and metadata."
+  },
+  "preserved_failures": {
+    "source_variants": ".local/endpoint-section/source-variants",
+    "proof_failure": "Initial projection-object normalization rejected; exact source variant/log preserved, corrected only by explicit change to actual occurrence endpoints.",
+    "legacy_preflight": {
+      "path": ".local/endpoint-section/legacy-receipt-preflight.json",
+      "sha256": "c7a22f2e06b176f5947da3d766c35d9ba72a0cda729cecf95389146444309744",
+      "limit": "Missing legacy object family field caused preflight KeyError before any child; source-copy fresh compilation used instead. No stale receipt rebound or audit helper exemption."
+    }
+  },
+  "api_scout": {
+    "path": ".local/endpoint-section/api-scout.json",
+    "sha256": "9bdf83c483d86e7ccc5b963813e7f4f90da04a62c4c9882f1dfeba63c8572c3e",
+    "duplicate_log": ".local/endpoint-section/api-duplicate-scout.log",
+    "duplicate_log_sha256": "90c807fe8e10456cefa4cfd46c028285e6438dbfba2ee5ddbc21d2c959c57fe7"
+  },
+  "whitespace": {
+    "path": ".local/endpoint-section/final-whitespace.json",
+    "sha256": "407d740f335b8805be716de92b10f78608b6f7ceaedc914111813ffb4dba1e18",
+    "passed": true
+  },
+  "layout": {
+    "path": ".local/endpoint-section/layout.json",
+    "sha256": "4a335be9a57c35a8251463f56e7b3467690429c771f5007ef25de4d5ea6139a6",
+    "owned_findings": "Expected3active-source registrations/public closure only, root-owned; no new mathematical subject/path-ban finding."
+  },
+  "scope_limits": [
+    "No global connectivity, finiteness, countability, acyclicity, thinness assumption in generic theorem",
+    "Old prefix obstruction reused, no claim of new comparability theorem, novelty or Courcelle universal-property transfer",
+    "No JSON/Python/runtime correspondence, taxonomy proof promotion, proof/permission role interpretation or remote effect"
+  ],
+  "all_native_children_exited": true,
+  "shared_lock_released": true,
+  "source_frozen": true,
+  "further_native_jobs_planned": false,
+  "no_prior_source_edits_commits_or_remote_changes": true
+}

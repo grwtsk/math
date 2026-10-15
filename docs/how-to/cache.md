@@ -59,10 +59,10 @@ Validate a separate, revision-bound occurrence trace without changing the
 taxonomy schema:
 
 ```sh
-python3 -B scripts/cache_occurrences.py cache/occurrences/communication-trace-2026-10-15-r3.json
+python3 -B scripts/cache_occurrences.py cache/occurrences/communication-trace-2026-10-15-r4.json
 python3 -B scripts/test_cache_occurrences.py
 python3 -O -B scripts/test_cache_occurrences.py
-python3 -B scripts/cache_trace_prefix.py cache/occurrences/communication-empty-2026-10-15.json cache/occurrences/communication-trace-2026-10-15-r3.json
+python3 -B scripts/cache_trace_prefix.py cache/occurrences/communication-empty-2026-10-15-r2.json cache/occurrences/communication-trace-2026-10-15-r4.json
 python3 -B scripts/test_cache_trace_prefix.py
 python3 -O -B scripts/test_cache_trace_prefix.py
 ```

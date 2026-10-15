@@ -1,0 +1,31 @@
+{
+  "schema": "repository-design-decision-v1",
+  "id": "endpoint-section-v1",
+  "at": "2026-10-15T20:39:24.663426+00:00",
+  "previous_record": {
+    "path": "cache/decisions/occurrence-prefix-v1.json",
+    "sha256": "351902fa8061f24566960f583dce8bfe7db1c2cd21e10219f1218e9bfc77c6e3"
+  },
+  "choice": "Keep source entities, chosen endpoint representatives and full path occurrences separate. An endpoint right inverse cannot be promoted into global source-reachability preservation; require its actual proof or retain multiple histories.",
+  "premises": [
+    "Fixed root and actual root-reachable vertex subtype/endpoint right inverse.",
+    "Actual incomparable a,b reaching common c obstruct every preserving section. No current taxonomy diamond is presumed.",
+    "Projection supplies reflection; preservation is a separate obligation, not a consequence of injectivity or right inverse."
+  ],
+  "native_evidence": [
+    {
+      "path": "evidence/Combinatorics/DirectedGraph/endpoint-section-integration-2026-10-15.json",
+      "sha256": "eb226d555d93c809839f63b0f40f9b9eab3b9cf2d2d1ddf3e28b4ae11a5ea48c"
+    }
+  ],
+  "checked_counterexamples": [
+    "Actual reflexive/transitive thin diamond with identity loops and shortcut; selected section right inverse but not preserving.",
+    "Distinct two-edge diamond histories share source endpoint but retain occurrence identity."
+  ],
+  "operational_boundary": "No executable section/decoder, taxonomy-specific obstruction, runtime relation-ID graph refinement, permission or proof authority derived. Existing operational strict trace prefix comparator remains separately bounded/tested.",
+  "open_obligations": [
+    "215 method identities unprovided;16 declared families only.",
+    "Exact runtime/formal relation graph and hash/IO/custody refinement."
+  ],
+  "authority": "Durable local mathematical/design decision only; no remote effect or newly adopted research-document policy."
+}

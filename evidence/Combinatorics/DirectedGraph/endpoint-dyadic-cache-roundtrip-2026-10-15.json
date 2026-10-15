@@ -1,0 +1,49 @@
+{
+  "schema": "source-cache-exact-roundtrip-v1",
+  "at": "2026-10-15T20:41:56.899911+00:00",
+  "outcome": "passed",
+  "revision": "e3290594713428b4ab34127bb7037aa012f8c792f7b5cba3a64f09300f660511",
+  "parent": "69264b64c52feb1bbe3f10f837c12eabb9c7c210cb5e58bb45d8afddc0f0c930",
+  "manifest": {
+    "path": "cache/manifests/e3290594713428b4ab34127bb7037aa012f8c792f7b5cba3a64f09300f660511.json",
+    "sha256": "e3290594713428b4ab34127bb7037aa012f8c792f7b5cba3a64f09300f660511"
+  },
+  "attempt": {
+    "path": "cache/attempts/f3e59e62408444f6b33c4468b178b0e5.json",
+    "sha256": "79ce0b899562fe547334ff963570506cae949d8246a5119febdda94ede8c6c83"
+  },
+  "source_count": 699,
+  "catalog_file_count": 2,
+  "context_file_count": 9,
+  "all_exact_files": 710,
+  "live_source_catalog_context_verification": "passed",
+  "physical_external_temp_parent": true,
+  "outside_live_repository": true,
+  "owned_temporary_tree_removed": true,
+  "expanded_code_executed": false,
+  "exact_path_byte_identity": true,
+  "cache_statuses": "Every source unknown-unreplayed; mathematical_acceptancefalse",
+  "metadata_findings_retained": 82,
+  "revision_effect_summary": {
+    "changed_sources": [
+      "GRWTSK.lean",
+      "GRWTSK/Analysis/PartitionOfUnity/DyadicAnnulus.lean",
+      "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/EndpointSectionMissingPreservation.lean",
+      "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/EndpointSection.lean",
+      "GRWTSK/Combinatorics/DirectedGraph/EndpointSection.lean",
+      "GRWTSK/Combinatorics/DirectedGraph/OccurrencePrefix.lean",
+      "GRWTSK/NumberTheory/LSeries/Checks/Negative/DyadicMissingCoverage.lean",
+      "GRWTSK/NumberTheory/LSeries/Checks/Positive/GaussianDyadic.lean",
+      "GRWTSK/NumberTheory/LSeries/GaussianContour.lean",
+      "GRWTSK/NumberTheory/LSeries/GaussianDyadic.lean",
+      "GRWTSK/Order/Embeddings/PrefixObstruction.lean"
+    ],
+    "changed_context_files": [
+      "NOTICE"
+    ],
+    "invalidation_seed_count": 699,
+    "invalidated_source_count": 699,
+    "exact_full_effect": "See byte-bound immutable manifest; prior receipts retained, no acceptance propagated."
+  },
+  "limits": "Operational source custody only. Separate native receipts contain selected mathematical admission; no Lean proof of hash injectivity,zlib,IO,Python,JSON adapter or runtime refinement. Taxonomy remains separately bound outside source snapshot."
+}
