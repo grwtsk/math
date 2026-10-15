@@ -1,0 +1,21 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "revision-seminorm-source-scout",
+  "event": "gaussian-window-seminorms-source-review-complete",
+  "owner": "cache_taxonomy",
+  "at": "2026-10-15T21:27:12.886420+00:00",
+  "review": {
+    "path": "evidence/Analysis/MellinTransform/gaussian-window-seminorms-source-review-2026-10-15.json",
+    "sha256": "2846860b1c568159868aa667ab0713b04bca978c69aec9656776a23ef2c47d50",
+    "bytes": 14142
+  },
+  "local_source_hashes": {
+    "GRWTSK/Analysis/MellinTransform/GaussianWindowSeminorms.lean": "dcfa87ebe43582e02c38b1cc820656fde9160d7d633a6a99e6a3ed6b1e3d93d0",
+    "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianWindowSeminorms.lean": "d4339a2bc10ffffc39a0ee40f4d24600e65ee92903f2933f05d18afd3f61e2ae",
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianWindowNonpositiveScale.lean": "e2e4db4820bd154bfb51c74237b9b2dc66b5c0988106f51c2f0312bc7849004e"
+  },
+  "finding": "No actionable missing hypothesis, changed constant quantifier or false source correspondence observed within the bounded review of the three frozen source files.",
+  "review_character": "Correlated same-team exact-source/premise/control/credit review; not independent validation.",
+  "native_status": "NOT_RUN",
+  "writes": "New immutable review, frozen ignored source copies and this event only; no source/docs/sharedregistry/native/remote changes."
+}

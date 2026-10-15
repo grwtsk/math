@@ -47,11 +47,12 @@ $a=1$, no single constant can bound $\|P(r\cdot0)\|$ by $C/r$ for every
 positive $r$. The positive module proves this actual omitted-domain
 obstruction before the negative consumer attempts to weaken the domain.
 
-The accepted domain remains $r>0$ and $y\in[1/2,2]$. The result does not
-supply uniform Schwartz seminorms of the compact window merely by naming
-its Schwartz-map object: that consumer still needs actual product-rule
-bounds for the fixed cutoff divided by the square root. Arithmetic ideal,
-Hecke, calibration and physical-row suppliers retain their own obligations.
+The accepted domain remains $r>0$ and $y\in[1/2,2]$. The [uniform window seminorm consumer](gaussian-window-seminorms.md)
+now combines this bound with actual product-rule estimates for the fixed
+cutoff divided by the square root. It supplies uniform window derivatives,
+Schwartz seminorms, finite families and two-sided estimates, with its own
+source, controls and native receipt. Arithmetic ideal, Hecke, calibration
+and physical-row suppliers retain their own obligations.
 
 ## Source, verification and credit
 

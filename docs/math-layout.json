@@ -5215,7 +5215,11 @@
     "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/ParentTraceDictionary.lean": "bf76ed65efcca287eb7d312994978944169752300bfdfd4aa30250b79b96bc11",
     "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/ParentTraceMissingRoot.lean": "052573ca2d1b2d8ccf76810beb9ebebc5a522009afdbcac4750e10229b4b046f",
     "GRWTSK/Analysis/MellinTransform/Checks/Positive/ScaledGaussianDerivatives.lean": "4b3a1a55c2f80e7284cc89e6fa4a25c3dfbc0c246a8ec3af99a04af46434cb80",
-    "GRWTSK/Analysis/MellinTransform/Checks/Negative/ScaledGaussianMissingDomain.lean": "11128d1302a4e430ed7d68ed2ee0904156efb3503d75abf438559cfaee260f16"
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/ScaledGaussianMissingDomain.lean": "11128d1302a4e430ed7d68ed2ee0904156efb3503d75abf438559cfaee260f16",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/RootedTraceRevision.lean": "d87c89b8d6ae6bde49895689f19841e3f5e8a91e2adab1b3950b46851ed9e63c",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/RootedTraceMissingAgreement.lean": "9d8c7142222c6015772e3e418fdda83af6e33d60bc7c11db8a8b27a4ffde3449",
+    "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianWindowSeminorms.lean": "d4339a2bc10ffffc39a0ee40f4d24600e65ee92903f2933f05d18afd3f61e2ae",
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianWindowNonpositiveScale.lean": "e2e4db4820bd154bfb51c74237b9b2dc66b5c0988106f51c2f0312bc7849004e"
   },
   "schema_version": 3,
   "repository_conformance": {
@@ -5247,7 +5251,7 @@
     {
       "path": "GRWTSK.lean",
       "original_path": "GRWTSK.lean",
-      "sha256": "5009cd63325ab42e31a9577f65f305a767e1b95dc79e7c5cc187f941798dcd09",
+      "sha256": "9818817bd2b0bd9f13ae71d116061ced90a0f062befb27771262583a1389f72f",
       "git_blob": "27e45b3448f78dc6499f2fb0698eb51cac5d1904",
       "working_tree_state": "tracked-modified",
       "source_root": ".",
@@ -5386,6 +5390,7 @@
         "GRWTSK.Analysis.LaplaceTransform.PolynomialEnergy",
         "GRWTSK.Analysis.LaplaceTransform.PolynomialEnergyHolomorphy",
         "GRWTSK.Analysis.MellinTransform.CompactGaussianWindow",
+        "GRWTSK.Analysis.MellinTransform.GaussianWindowSeminorms",
         "GRWTSK.Analysis.MellinTransform.LogarithmicGaussian",
         "GRWTSK.Analysis.MellinTransform.NormalizedGaussian",
         "GRWTSK.Analysis.MellinTransform.ReverseInversion",
@@ -5413,6 +5418,7 @@
         "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences",
         "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding",
         "GRWTSK.Combinatorics.DirectedGraph.PrefixInventory",
+        "GRWTSK.Combinatorics.DirectedGraph.RootedTraceRevision",
         "GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.Moser",
         "GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.MoserCoordinates",
         "GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.MoserSource",
@@ -5642,7 +5648,7 @@
         "inventory": "observed-current-bytes",
         "layout": "repository baseline remains failed",
         "lean": "umbrella not replayed after selected import additions",
-        "source_sha256": "5009cd63325ab42e31a9577f65f305a767e1b95dc79e7c5cc187f941798dcd09"
+        "source_sha256": "9818817bd2b0bd9f13ae71d116061ced90a0f062befb27771262583a1389f72f"
       },
       "runner": "python3 -B scripts/check_ccc_energy.py",
       "other_consumers": [
@@ -21738,6 +21744,52 @@
       "design_reference": "cache/research/prefix-window-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
     },
     {
+      "path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianWindowNonpositiveScale.lean",
+      "original_path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianWindowNonpositiveScale.lean",
+      "sha256": "e2e4db4820bd154bfb51c74237b9b2dc66b5c0988106f51c2f0312bc7849004e",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Analysis.MellinTransform.Checks.Negative.GaussianWindowNonpositiveScale",
+      "namespaces": [],
+      "public_declarations": [],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianWindowSeminorms"
+      ],
+      "reverse_consumers": [],
+      "subject": "Analysis",
+      "object": "MellinTransform/Checks/Negative",
+      "source_role": "negative-control",
+      "target_path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianWindowNonpositiveScale.lean",
+      "placement_rationale": "Uniform Gaussian-window derivative and Schwartz seminorm estimates belong to Analysis/MellinTransform, consuming the exact cutoff/window and scaled Gaussian suppliers.",
+      "operation": "add",
+      "logical_status": "intended rejected control; no theorem admission",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "e2e4db4820bd154bfb51c74237b9b2dc66b5c0988106f51c2f0312bc7849004e",
+        "replay_binding": "evidence/Analysis/MellinTransform/gaussian-window-seminorms-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_gaussian_window_seminorms.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Actual fixed cutoff/sqrt factor and exact G=A(y)P(2^j*y/Z)/sqrt(y), with Z>0 and Nat j; actual scaled-P derivative suppliers.",
+        "Constants may depend on real exponent, derivative/weight orders and finite seminorm family, but not Z or j; actual product rule, cutoff support and seminorm APIs supply estimates.",
+        "Actual Z0 function-level nonzero counterexample versus totalized zero RHS. No Z0 nonsmoothness, whole arithmetic/physical detector or RH supplier."
+      ],
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: actual GaussianSeminorm window/product-rule/seminorm supplier chain; Mathlib Schwartz/smooth/sqrt/derivative authors retain individual credit"
+      ],
+      "license": "Apache-2.0",
+      "design_reference": "cache/research/revision-seminorm-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
       "path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/ReverseInversionMissingPremise.lean",
       "original_path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/ReverseInversionMissingPremise.lean",
       "sha256": "7b1f38a5c2ae34030c0c41048f6b0195eda53e3577f075edaebee8286c699ebd",
@@ -21966,6 +22018,92 @@
       ],
       "license": "Apache-2.0",
       "design_reference": "cache/research/prefix-window-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
+      "path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianWindowSeminorms.lean",
+      "original_path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianWindowSeminorms.lean",
+      "sha256": "d4339a2bc10ffffc39a0ee40f4d24600e65ee92903f2933f05d18afd3f61e2ae",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianWindowSeminorms",
+      "namespaces": [
+        "GRWTSK.Analysis.MellinTransform.GaussianWindowSeminorms.Checks"
+      ],
+      "public_declarations": [
+        {
+          "kind": "theorem",
+          "name": "gaussianWindow_derivative_generic",
+          "line": 12
+        },
+        {
+          "kind": "theorem",
+          "name": "gaussianWindow_two_sided_generic",
+          "line": 17
+        },
+        {
+          "kind": "theorem",
+          "name": "gaussianWindow_two_indices",
+          "line": 23
+        },
+        {
+          "kind": "theorem",
+          "name": "annulus_three_quarters_ne_zero",
+          "line": 33
+        },
+        {
+          "kind": "theorem",
+          "name": "gaussianMellinProfile_zero_ne_zero",
+          "line": 43
+        },
+        {
+          "kind": "theorem",
+          "name": "gaussianWindow_zero_scale_value_ne_zero",
+          "line": 52
+        },
+        {
+          "kind": "theorem",
+          "name": "gaussianWindow_zero_scale_counterexample",
+          "line": 59
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Analysis.MellinTransform.GaussianWindowSeminorms"
+      ],
+      "reverse_consumers": [
+        "GRWTSK.Analysis.MellinTransform.Checks.Negative.GaussianWindowNonpositiveScale"
+      ],
+      "subject": "Analysis",
+      "object": "MellinTransform/Checks/Positive",
+      "source_role": "positive-check",
+      "target_path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianWindowSeminorms.lean",
+      "placement_rationale": "Uniform Gaussian-window derivative and Schwartz seminorm estimates belong to Analysis/MellinTransform, consuming the exact cutoff/window and scaled Gaussian suppliers.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "d4339a2bc10ffffc39a0ee40f4d24600e65ee92903f2933f05d18afd3f61e2ae",
+        "replay_binding": "evidence/Analysis/MellinTransform/gaussian-window-seminorms-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_gaussian_window_seminorms.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Actual fixed cutoff/sqrt factor and exact G=A(y)P(2^j*y/Z)/sqrt(y), with Z>0 and Nat j; actual scaled-P derivative suppliers.",
+        "Constants may depend on real exponent, derivative/weight orders and finite seminorm family, but not Z or j; actual product rule, cutoff support and seminorm APIs supply estimates.",
+        "Actual Z0 function-level nonzero counterexample versus totalized zero RHS. No Z0 nonsmoothness, whole arithmetic/physical detector or RH supplier."
+      ],
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: actual GaussianSeminorm window/product-rule/seminorm supplier chain; Mathlib Schwartz/smooth/sqrt/derivative authors retain individual credit"
+      ],
+      "license": "Apache-2.0",
+      "design_reference": "cache/research/revision-seminorm-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
     },
     {
       "path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/LogarithmicGaussian.lean",
@@ -22301,7 +22439,8 @@
       ],
       "reverse_consumers": [
         "GRWTSK",
-        "GRWTSK.Analysis.MellinTransform.Checks.Positive.CompactGaussianWindow"
+        "GRWTSK.Analysis.MellinTransform.Checks.Positive.CompactGaussianWindow",
+        "GRWTSK.Analysis.MellinTransform.GaussianWindowSeminorms"
       ],
       "subject": "Analysis",
       "object": "MellinTransform",
@@ -22333,6 +22472,125 @@
       ],
       "license": "Apache-2.0",
       "design_reference": "cache/research/prefix-window-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
+      "path": "GRWTSK/Analysis/MellinTransform/GaussianWindowSeminorms.lean",
+      "original_path": "GRWTSK/Analysis/MellinTransform/GaussianWindowSeminorms.lean",
+      "sha256": "dcfa87ebe43582e02c38b1cc820656fde9160d7d633a6a99e6a3ed6b1e3d93d0",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Analysis.MellinTransform.GaussianWindowSeminorms",
+      "namespaces": [
+        "GRWTSK.Analysis.MellinTransform.GaussianWindowSeminorms"
+      ],
+      "public_declarations": [
+        {
+          "kind": "def",
+          "name": "gaussianFixedWindow",
+          "line": 30
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussianFixedWindow_small",
+          "line": 32
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussianFixedWindow_large",
+          "line": 34
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussianFixedWindow_compact",
+          "line": 36
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussianFixedWindow_contDiff",
+          "line": 43
+        },
+        {
+          "kind": "def",
+          "name": "gaussianFixedSchwartz",
+          "line": 56
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussianProfile_scaled_smooth",
+          "line": 58
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussianDyadicProfile_factor",
+          "line": 65
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussianDyadicProfile_derivative_outside",
+          "line": 73
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussianDyadicProfile_derivative_uniform",
+          "line": 85
+        },
+        {
+          "kind": "theorem",
+          "name": "gaussianDyadicSchwartz_seminorm",
+          "line": 116
+        },
+        {
+          "kind": "theorem",
+          "name": "gaussianDyadicSchwartz_finite_seminorm",
+          "line": 136
+        },
+        {
+          "kind": "theorem",
+          "name": "gaussianDyadicSchwartz_two_sided",
+          "line": 157
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Analysis.MellinTransform.CompactGaussianWindow",
+        "GRWTSK.Analysis.MellinTransform.ScaledGaussianDerivatives",
+        "Mathlib.Analysis.Calculus.IteratedDeriv.Lemmas"
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianWindowSeminorms"
+      ],
+      "subject": "Analysis",
+      "object": "MellinTransform",
+      "source_role": "library",
+      "target_path": "GRWTSK/Analysis/MellinTransform/GaussianWindowSeminorms.lean",
+      "placement_rationale": "Uniform Gaussian-window derivative and Schwartz seminorm estimates belong to Analysis/MellinTransform, consuming the exact cutoff/window and scaled Gaussian suppliers.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "dcfa87ebe43582e02c38b1cc820656fde9160d7d633a6a99e6a3ed6b1e3d93d0",
+        "replay_binding": "evidence/Analysis/MellinTransform/gaussian-window-seminorms-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_gaussian_window_seminorms.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Actual fixed cutoff/sqrt factor and exact G=A(y)P(2^j*y/Z)/sqrt(y), with Z>0 and Nat j; actual scaled-P derivative suppliers.",
+        "Constants may depend on real exponent, derivative/weight orders and finite seminorm family, but not Z or j; actual product rule, cutoff support and seminorm APIs supply estimates.",
+        "Actual Z0 function-level nonzero counterexample versus totalized zero RHS. No Z0 nonsmoothness, whole arithmetic/physical detector or RH supplier."
+      ],
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: actual GaussianSeminorm window/product-rule/seminorm supplier chain; Mathlib Schwartz/smooth/sqrt/derivative authors retain individual credit"
+      ],
+      "license": "Apache-2.0",
+      "design_reference": "cache/research/revision-seminorm-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
     },
     {
       "path": "GRWTSK/Analysis/MellinTransform/LogarithmicGaussian.lean",
@@ -22715,7 +22973,8 @@
       ],
       "reverse_consumers": [
         "GRWTSK",
-        "GRWTSK.Analysis.MellinTransform.Checks.Positive.ScaledGaussianDerivatives"
+        "GRWTSK.Analysis.MellinTransform.Checks.Positive.ScaledGaussianDerivatives",
+        "GRWTSK.Analysis.MellinTransform.GaussianWindowSeminorms"
       ],
       "subject": "Analysis",
       "object": "MellinTransform",
@@ -25004,6 +25263,51 @@
       "design_reference": "cache/research/prefix-window-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
     },
     {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/RootedTraceMissingAgreement.lean",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/RootedTraceMissingAgreement.lean",
+      "sha256": "9d8c7142222c6015772e3e418fdda83af6e33d60bc7c11db8a8b27a4ffde3449",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.RootedTraceMissingAgreement",
+      "namespaces": [],
+      "public_declarations": [],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.RootedTraceRevision"
+      ],
+      "reverse_consumers": [],
+      "subject": "Combinatorics",
+      "object": "DirectedGraph/Checks/Negative",
+      "source_role": "negative-control",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/RootedTraceMissingAgreement.lean",
+      "placement_rationale": "Rooted path-trace dictionary revision and actual reuse of existing finite-sequence certificates belong to Combinatorics/DirectedGraph; generic certificate laws remain in Logic/FiniteSequences.",
+      "operation": "add",
+      "logical_status": "intended rejected control; no theorem admission",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "9d8c7142222c6015772e3e418fdda83af6e33d60bc7c11db8a8b27a4ffde3449",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/rooted-trace-revision-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_rooted_trace_revision.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Actual expanded parent dictionaries and original ordered key/index references; bind retained outer root even for an empty history. Full-tag equality supplied, with vertex equality additionally supplied for actual certificate packing.",
+        "Lift payloads to root/full trace and derive actual referenced lookup agreement and successful decoding via existing DictionaryRevision; consume existing Certificate same-decoding against its own pack.",
+        "Actual stale in-bounds index and unequal-root controls; concrete singleton-repeat preserving fixture. No arbitrary-repeat index stability, assumed serializer, runtime or automatic predicate inheritance."
+      ],
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "design_reference": "cache/research/revision-seminorm-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
       "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/UnfoldingMissingCostar.lean",
       "original_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/UnfoldingMissingCostar.lean",
       "sha256": "d76888ed8dbf6e9126dc4d13971158b770092b86dbe991b0b62fde7302304b65",
@@ -25785,6 +26089,196 @@
       "design_reference": "cache/research/prefix-window-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
     },
     {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/RootedTraceRevision.lean",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/RootedTraceRevision.lean",
+      "sha256": "d87c89b8d6ae6bde49895689f19841e3f5e8a91e2adab1b3950b46851ed9e63c",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.RootedTraceRevision",
+      "namespaces": [
+        "GRWTSK.Combinatorics.DirectedGraph.RootedTraceRevision.Checks.Positive"
+      ],
+      "public_declarations": [
+        {
+          "kind": "def",
+          "name": "falseTag",
+          "line": 20
+        },
+        {
+          "kind": "def",
+          "name": "trueTag",
+          "line": 23
+        },
+        {
+          "kind": "theorem",
+          "name": "tags_distinct",
+          "line": 26
+        },
+        {
+          "kind": "def",
+          "name": "falseOccurrence",
+          "line": 32
+        },
+        {
+          "kind": "def",
+          "name": "trueOccurrence",
+          "line": 35
+        },
+        {
+          "kind": "def",
+          "name": "oldRows",
+          "line": 38
+        },
+        {
+          "kind": "def",
+          "name": "appendedRows",
+          "line": 41
+        },
+        {
+          "kind": "def",
+          "name": "repeatedRows",
+          "line": 44
+        },
+        {
+          "kind": "theorem",
+          "name": "old_inventory",
+          "line": 47
+        },
+        {
+          "kind": "theorem",
+          "name": "appended_inventory",
+          "line": 51
+        },
+        {
+          "kind": "theorem",
+          "name": "repeated_inventory",
+          "line": 56
+        },
+        {
+          "kind": "theorem",
+          "name": "old_references",
+          "line": 62
+        },
+        {
+          "kind": "theorem",
+          "name": "stale_lookup_changed",
+          "line": 68
+        },
+        {
+          "kind": "theorem",
+          "name": "stale_references_in_bounds",
+          "line": 74
+        },
+        {
+          "kind": "theorem",
+          "name": "stale_not_agreement",
+          "line": 79
+        },
+        {
+          "kind": "theorem",
+          "name": "ranks_root_and_bounds_insufficient",
+          "line": 87
+        },
+        {
+          "kind": "def",
+          "name": "falseCertificate",
+          "line": 96
+        },
+        {
+          "kind": "theorem",
+          "name": "stale_actual_unpack",
+          "line": 107
+        },
+        {
+          "kind": "theorem",
+          "name": "stale_predicate_rejected",
+          "line": 114
+        },
+        {
+          "kind": "theorem",
+          "name": "stale_actual_revision",
+          "line": 124
+        },
+        {
+          "kind": "theorem",
+          "name": "repeated_agreement",
+          "line": 132
+        },
+        {
+          "kind": "theorem",
+          "name": "repeated_certified_revision",
+          "line": 138
+        },
+        {
+          "kind": "def",
+          "name": "emptyBefore",
+          "line": 164
+        },
+        {
+          "kind": "def",
+          "name": "emptyAfter",
+          "line": 167
+        },
+        {
+          "kind": "theorem",
+          "name": "empty_raw_context_equal",
+          "line": 170
+        },
+        {
+          "kind": "theorem",
+          "name": "empty_root_context_lost",
+          "line": 174
+        },
+        {
+          "kind": "theorem",
+          "name": "empty_rooted_output_equal",
+          "line": 176
+        },
+        {
+          "kind": "theorem",
+          "name": "empty_roots_still_required",
+          "line": 179
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.RootedTraceRevision"
+      ],
+      "reverse_consumers": [
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.RootedTraceMissingAgreement"
+      ],
+      "subject": "Combinatorics",
+      "object": "DirectedGraph/Checks/Positive",
+      "source_role": "positive-check",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/RootedTraceRevision.lean",
+      "placement_rationale": "Rooted path-trace dictionary revision and actual reuse of existing finite-sequence certificates belong to Combinatorics/DirectedGraph; generic certificate laws remain in Logic/FiniteSequences.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "d87c89b8d6ae6bde49895689f19841e3f5e8a91e2adab1b3950b46851ed9e63c",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/rooted-trace-revision-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_rooted_trace_revision.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Actual expanded parent dictionaries and original ordered key/index references; bind retained outer root even for an empty history. Full-tag equality supplied, with vertex equality additionally supplied for actual certificate packing.",
+        "Lift payloads to root/full trace and derive actual referenced lookup agreement and successful decoding via existing DictionaryRevision; consume existing Certificate same-decoding against its own pack.",
+        "Actual stale in-bounds index and unequal-root controls; concrete singleton-repeat preserving fixture. No arbitrary-repeat index stability, assumed serializer, runtime or automatic predicate inheritance."
+      ],
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "design_reference": "cache/research/revision-seminorm-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
       "path": "GRWTSK/Combinatorics/DirectedGraph/EdgeTrace.lean",
       "original_path": "GRWTSK/Combinatorics/DirectedGraph/EdgeTrace.lean",
       "sha256": "e1e5f2dd23b6c04a734af4bd95f3f19c15fe4f313d66c5bccff08b3312fb2a59",
@@ -26327,7 +26821,8 @@
       ],
       "reverse_consumers": [
         "GRWTSK",
-        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.ParentTraceDictionary"
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.ParentTraceDictionary",
+        "GRWTSK.Combinatorics.DirectedGraph.RootedTraceRevision"
       ],
       "subject": "Combinatorics",
       "object": "DirectedGraph",
@@ -26867,6 +27362,138 @@
       ],
       "license": "MIT; upstream imported Apache-2.0 retained",
       "design_reference": "cache/research/prefix-window-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/RootedTraceRevision.lean",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/RootedTraceRevision.lean",
+      "sha256": "784594334cff23da4bc77f62c5cd66cf8006ad381223026f1b7383e519dfef17",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.RootedTraceRevision",
+      "namespaces": [
+        "GRWTSK.Combinatorics.DirectedGraph.RootedTraceRevision"
+      ],
+      "public_declarations": [
+        {
+          "kind": "abbrev",
+          "name": "RootedTrace",
+          "line": 31
+        },
+        {
+          "kind": "def",
+          "name": "rootedRows",
+          "line": 34
+        },
+        {
+          "kind": "def",
+          "name": "eraseRoots",
+          "line": 37
+        },
+        {
+          "kind": "theorem",
+          "name": "eraseRoots_rootedRows",
+          "line": 42
+        },
+        {
+          "kind": "def",
+          "name": "liftPacked",
+          "line": 45
+        },
+        {
+          "kind": "theorem",
+          "name": "unpack_liftPacked",
+          "line": 50
+        },
+        {
+          "kind": "def",
+          "name": "expandRevision",
+          "line": 66
+        },
+        {
+          "kind": "def",
+          "name": "beforePacked",
+          "line": 74
+        },
+        {
+          "kind": "def",
+          "name": "afterPacked",
+          "line": 77
+        },
+        {
+          "kind": "theorem",
+          "name": "expandRevision_encode",
+          "line": 83
+        },
+        {
+          "kind": "theorem",
+          "name": "unpack_before",
+          "line": 90
+        },
+        {
+          "kind": "theorem",
+          "name": "lifted_agreement",
+          "line": 95
+        },
+        {
+          "kind": "theorem",
+          "name": "unpack_after",
+          "line": 108
+        },
+        {
+          "kind": "theorem",
+          "name": "revised_valid",
+          "line": 118
+        },
+        {
+          "kind": "theorem",
+          "name": "revised_recovers",
+          "line": 136
+        },
+        {
+          "kind": "theorem",
+          "name": "certified_revision",
+          "line": 158
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.ParentTraceDictionary",
+        "GRWTSK.Logic.FiniteSequences.DecisionCertificate"
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.RootedTraceRevision"
+      ],
+      "subject": "Combinatorics",
+      "object": "DirectedGraph",
+      "source_role": "library",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/RootedTraceRevision.lean",
+      "placement_rationale": "Rooted path-trace dictionary revision and actual reuse of existing finite-sequence certificates belong to Combinatorics/DirectedGraph; generic certificate laws remain in Logic/FiniteSequences.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "784594334cff23da4bc77f62c5cd66cf8006ad381223026f1b7383e519dfef17",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/rooted-trace-revision-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_rooted_trace_revision.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Actual expanded parent dictionaries and original ordered key/index references; bind retained outer root even for an empty history. Full-tag equality supplied, with vertex equality additionally supplied for actual certificate packing.",
+        "Lift payloads to root/full trace and derive actual referenced lookup agreement and successful decoding via existing DictionaryRevision; consume existing Certificate same-decoding against its own pack.",
+        "Actual stale in-bounds index and unequal-root controls; concrete singleton-repeat preserving fixture. No arbitrary-repeat index stability, assumed serializer, runtime or automatic predicate inheritance."
+      ],
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "design_reference": "cache/research/revision-seminorm-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
     },
     {
       "path": "GRWTSK/Combinatorics/GraphTheory/UnitDistanceGraph/Moser.lean",
@@ -36087,6 +36714,7 @@
       ],
       "reverse_consumers": [
         "GRWTSK",
+        "GRWTSK.Combinatorics.DirectedGraph.RootedTraceRevision",
         "GRWTSK.Logic.FiniteSequences.BatchCertificate",
         "GRWTSK.Logic.FiniteSequences.Checks.Negative.DecisionCertificateStalePremise",
         "GRWTSK.Logic.FiniteSequences.Checks.Positive.DecisionCertificate"
@@ -58366,19 +58994,19 @@
   ],
   "current_inventory": {
     "head": "854e04dc182c36b00479b642e6301f47acc81e5f",
-    "lean_source_count": 700,
-    "active_source_count": 637,
+    "lean_source_count": 706,
+    "active_source_count": 643,
     "candidate_source_count": 63,
     "counts_by_role": {
       "audit-driver": 35,
-      "library": 368,
-      "negative-control": 127,
-      "positive-check": 107
+      "library": 370,
+      "negative-control": 129,
+      "positive-check": 109
     },
     "counts_by_subject": {
       "Algebra": 19,
-      "Analysis": 221,
-      "Combinatorics": 29,
+      "Analysis": 224,
+      "Combinatorics": 32,
       "Data": 1,
       "DynamicalSystems": 16,
       "GroupTheory": 4,
@@ -65050,6 +65678,22 @@
     "replays": [
       "evidence/Analysis/MellinTransform/scaled-gaussian-derivatives-checks-2026-10-15.json",
       "evidence/Combinatorics/DirectedGraph/parent-trace-dictionary-checks-2026-10-15.json"
+    ],
+    "scope": "Incremental selected registration; no historical full-replay hashes or failed receipts refreshed."
+  },
+  "revision_seminorm_additions": {
+    "date": "2026-10-15",
+    "paths": [
+      "GRWTSK/Combinatorics/DirectedGraph/RootedTraceRevision.lean",
+      "GRWTSK/Analysis/MellinTransform/GaussianWindowSeminorms.lean",
+      "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/RootedTraceRevision.lean",
+      "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/RootedTraceMissingAgreement.lean",
+      "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianWindowSeminorms.lean",
+      "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianWindowNonpositiveScale.lean"
+    ],
+    "replays": [
+      "evidence/Analysis/MellinTransform/gaussian-window-seminorms-checks-2026-10-15.json",
+      "evidence/Combinatorics/DirectedGraph/rooted-trace-revision-checks-2026-10-15.json"
     ],
     "scope": "Incremental selected registration; no historical full-replay hashes or failed receipts refreshed."
   }

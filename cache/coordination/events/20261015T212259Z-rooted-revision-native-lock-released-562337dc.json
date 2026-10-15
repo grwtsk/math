@@ -1,0 +1,11 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "rooted-trace-revision-formal",
+  "owner": "indexed_dictionary",
+  "at": "2026-10-15T21:22:59.135275+00:00",
+  "kind": "native-lock-released",
+  "source": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/RootedTraceRevision.lean",
+  "exit_code": 1,
+  "all_native_children_exited": true,
+  "log": ".local/rooted-revision/logs/20261015T212258.314405Z-RootedTraceRevision.log"
+}

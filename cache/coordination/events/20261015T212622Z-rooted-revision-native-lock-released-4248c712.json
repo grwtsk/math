@@ -1,0 +1,11 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "rooted-trace-revision-formal",
+  "owner": "indexed_dictionary",
+  "at": "2026-10-15T21:26:22.591587+00:00",
+  "kind": "native-lock-released",
+  "source": "SelectedAudit.lean",
+  "exit_code": 0,
+  "all_native_children_exited": true,
+  "log": ".local/rooted-revision/logs/20261015T212621.313849Z-SelectedAudit.log"
+}
