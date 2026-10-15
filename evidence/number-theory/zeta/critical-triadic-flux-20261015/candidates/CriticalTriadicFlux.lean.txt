@@ -1,0 +1,122 @@
+/-
+Human mathematical direction: grwtsk contributors.
+Candidate formalization assistance: OpenAI ChatGPT. MIT.
+CANDIDATE_SOURCE_ONLY. Not elaborated or axiom-audited.
+-/
+import Mathlib.Algebra.BigOperators.Group.Finset.Basic
+import Mathlib.Tactic.Ring
+
+set_option autoImplicit false
+
+namespace GRWTSK.Analysis.Sequences.WeightedAbelFlux
+
+open scoped BigOperators
+
+/-- The square increment retained in the signed endpoint-flux identity. -/
+theorem square_increment (q d : ℝ) :
+    (q + d) ^ 2 - q ^ 2 = 2 * q * d + d ^ 2 := by
+  ring
+
+/-- Finite weighted Abel identity, including both the positive correction and
+terminal boundary.  No monotonicity or positivity is assumed. -/
+theorem finite_weighted_square_abel
+    (q d v : ℕ → ℝ)
+    (hrec : ∀ n, q (n + 1) = q n + d n) :
+    ∀ N : ℕ,
+      (∑ n ∈ Finset.range N, q n ^ 2 * (v n - v (n + 1))) +
+          q N ^ 2 * v N =
+        q 0 ^ 2 * v 0 +
+          ∑ n ∈ Finset.range N,
+            (2 * q n * d n + d n ^ 2) * v (n + 1) := by
+  intro N
+  induction N with
+  | zero => simp
+  | succ N ih =>
+      rw [Finset.sum_range_succ, Finset.sum_range_succ, hrec N]
+      rw [ih]
+      ring
+
+end GRWTSK.Analysis.Sequences.WeightedAbelFlux
+
+
+/-
+Human mathematical direction: grwtsk contributors.
+Candidate formalization assistance: OpenAI ChatGPT. MIT.
+CANDIDATE_SOURCE_ONLY. Not elaborated or axiom-audited.
+-/
+import GRWTSK.NumberTheory.Moebius.CriticalEndpointDefectRecurrence
+import GRWTSK.NumberTheory.Moebius.VerticalLineMonotonicity
+
+set_option autoImplicit false
+
+noncomputable section
+open scoped BigOperators
+
+namespace GRWTSK.NumberTheory.Moebius.DampedEndpointTriadicFlux
+
+open GRWTSK.RiemannHypothesis.CCC
+open GRWTSK.NumberTheory.Moebius.CriticalEndpointDefect
+open GRWTSK.NumberTheory.Moebius.CriticalEndpointDefectRecurrence
+open GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks
+open GRWTSK.NumberTheory.Moebius.VerticalLineCriterion
+open GRWTSK.NumberTheory.Moebius.VerticalLineMonotonicity
+
+/-- Signed endpoint flux at a positive damping.  This is not an absolute value
+and not a Hermitian square. -/
+def dampedTriadicFluxTerm (σ : ℝ) (n : ℕ) : ℝ :=
+  ((n + 1 : ℕ) : ℝ) ^ (-2 * σ) / σ *
+    criticalEndpointDefect n * pickupMertensPrefix n * criticalEndpointGap n
+
+/-- Closed finite signed flux inventory. -/
+def dampedTriadicFluxPartial (σ : ℝ) (N : ℕ) : ℝ :=
+  ∑ n ∈ Finset.Icc 1 N, dampedTriadicFluxTerm σ n
+
+/-- One constant bounds every signed partial sum from above. -/
+def DampedTriadicFluxUpper (σ : ℝ) : Prop :=
+  0 < σ ∧ ∃ C : ℝ, 0 ≤ C ∧
+    ∀ N : ℕ, dampedTriadicFluxPartial σ N ≤ C
+
+/-- The countable cofinal family required by the existing vertical-line
+criterion. -/
+def ReciprocalTriadicFluxUpper : Prop :=
+  ∀ n : ℕ, 1 ≤ n →
+    DampedTriadicFluxUpper (1 / ((n + 1 : ℕ) : ℝ))
+
+/-- Formalization frontier for the written cell and Abel estimates.  It is kept
+as an explicit proposition until the analytic proof is admitted. -/
+def DampedTriadicFluxBridge : Prop :=
+  ∀ σ : ℝ, 0 < σ → DampedTriadicFluxUpper σ →
+    ∃ C : ℝ, 0 ≤ C ∧
+      ∀ T : ℝ, 0 ≤ T → verticalLineMass σ T ≤ C
+
+/-- Conditional composition with the existing countable reciprocal-line
+consumer. -/
+theorem criticalReciprocal_of_reciprocalTriadicFluxUpper
+    (hBridge : DampedTriadicFluxBridge)
+    (hFlux : ReciprocalTriadicFluxUpper) :
+    CriticalReciprocalVerticalLineUniform := by
+  intro n hn
+  have hσ : 0 < 1 / ((n + 1 : ℕ) : ℝ) := by positivity
+  exact hBridge _ hσ (hFlux n hn)
+
+/-- Conditional terminal return.  The bridge and flux supplier remain explicit
+and no replacement RH target is introduced. -/
+theorem riemannHypothesis_of_reciprocalTriadicFluxUpper
+    (hBridge : DampedTriadicFluxBridge)
+    (hFlux : ReciprocalTriadicFluxUpper) :
+    _root_.RiemannHypothesis :=
+  riemannHypothesis_of_criticalReciprocal
+    (criticalReciprocal_of_reciprocalTriadicFluxUpper hBridge hFlux)
+
+end GRWTSK.NumberTheory.Moebius.DampedEndpointTriadicFlux
+
+
+
+/- Unexecuted axiom-audit inventory. -/
+import GRWTSK.Analysis.Sequences.WeightedAbelFlux
+import GRWTSK.NumberTheory.Moebius.DampedEndpointTriadicFlux
+
+#print axioms GRWTSK.Analysis.Sequences.WeightedAbelFlux.square_increment
+#print axioms GRWTSK.Analysis.Sequences.WeightedAbelFlux.finite_weighted_square_abel
+#print axioms GRWTSK.NumberTheory.Moebius.DampedEndpointTriadicFlux.criticalReciprocal_of_reciprocalTriadicFluxUpper
+#print axioms GRWTSK.NumberTheory.Moebius.DampedEndpointTriadicFlux.riemannHypothesis_of_reciprocalTriadicFluxUpper
