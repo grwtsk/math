@@ -128,3 +128,20 @@ Mathlib Gaussian/Mellin author credit and copyright/license notices. Human
 direction: grwtsk contributors; local formalization/checking assistance:
 OpenAI Codex. No surrounding detector admission, arithmetic supplier,
 mathematical novelty, independent review or RH proof is asserted.
+
+Gaussian contour for the convergent zeta Dirichlet series
+-------------------------------------------------------
+GRWTSK/NumberTheory/LSeries/GaussianContour.lean retains Apache-2.0 terms.
+The exact normalized Gaussian supplier is attributed above. Research context:
+openai/math@1581d4cbdd69a0faf34b2089614fe2a814316a6a,
+lean/OAI/NumberTheory/DirichletL/Detector/GaussianCompletion.lean,
+raw SHA256 5ee7ec8c1869fcce035ad7aa2b0dffefa706cc1d5d42e4385f3330d1149ceeb1,
+and RowInterchange.lean in that directory,
+raw SHA256 a2cce044bfc064c73bcca39bc04ee79052b64909904c30773b36648c2eca7fff.
+The local coefficient-one natural-number zeta consumer does not admit the
+upstream cubic-ideal detector. David Loeffler retains RiemannZeta authorship;
+Yury Kudryashov retains p-series authorship; Zhouhang Zhou, Yury Kudryashov,
+Patrick Massot and Louis (Yiyang) Liu retain dominated-convergence/integral
+interchange credit, alongside the Gaussian/Mellin authors named above.
+Human direction: grwtsk contributors; local formalization/checking:
+OpenAI Codex. No contour continuation, RH supplier or independent validation.

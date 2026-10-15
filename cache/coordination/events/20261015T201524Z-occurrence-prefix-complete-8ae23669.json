@@ -1,0 +1,170 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "occurrence-prefix-formal",
+  "owner": "indexed_dictionary",
+  "kind": "complete",
+  "at": "2026-10-15T20:15:24.587398+00:00",
+  "source_hashes": {
+    "GRWTSK/Combinatorics/DirectedGraph/OccurrencePrefix.lean": "60737e2376594568f390e394417b77c9ea0cc5464693b3ef61502213e3afcee7",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/OccurrencePrefix.lean": "0b746beb3ea685eac5a94e987b95280aa5a4135a5716c67e6ccf802d7d2de2b6",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/OccurrenceMissingHistory.lean": "78b1f89e7ab51f8ebf6d67aa6b6e4a7ab84397e20989bf41bf487fc7c761d448"
+  },
+  "core_contract": "Existing Quiver.Reachable first second iff EdgeTrace.encode root first.history List.IsPrefix of complete second history trace, arbitrary Quiver/fixed root with no finite/countable/thin/decidable/acyclic premise. Reverse direction actually obtains suffix, proves ValidFrom, uses EdgeTrace.decode and PathUnfolding.unique_finite_lift, then full trace injectivity and ofPath_comp_projection recover the exact endpoint occurrence.",
+  "endpoint_contract": [
+    "Actual reachableEndpoint map into ReachableVertex root and selectedOccurrence defined by Classical.choice of the subtype path witness",
+    "endpoint_right_inverse: endpoint after selected occurrence is identity; actual endpoint surjectivity and selected occurrence injectivity",
+    "retractOccurrence preserves endpoint and is idempotent; retractOccurrence first=retractOccurrence second iff their endpoints agree",
+    "Distinct same-endpoint histories rule out any left inverse of endpoint map; no canonical/shortest/arrow-preserving/ancestry-reflecting choice is assumed"
+  ],
+  "controls": [
+    "Actual empty/reflexive/two-step existing path-occurrence prefix chain",
+    "Actual Bool parallel loops retain distinct histories with same endpoint and vertex sequence; full traces and occurrence reachability are incomparable",
+    "Actual repeated base vertex permits base Reachable back to empty endpoint but no occurrence Reachable back to empty history",
+    "Actual retraction fails to reflect ancestry and merges different parallel histories",
+    "Actual one-Unit-loop nil/length1 histories remain distinct while endpoint retraction merges them and no endpoint left inverse exists"
+  ],
+  "negative": {
+    "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/OccurrenceMissingHistory.lean",
+    "line": 13,
+    "sole_intended_error": "Type mismatch: base_reachable_to_empty has Reachable falseOccurrence.endpoint emptyOccurrence.endpoint but expected Reachable falseOccurrence emptyOccurrence",
+    "proved_counterexamples": "Imported accepted positive module contains all named full counterexample proofs; no derived prefix needed",
+    "log": ".local/path-prefix/logs/20261015T201329.344957Z-OccurrenceMissingHistory.log",
+    "sha256": "4bbe82cdf8d6b20bcd8e899f32c695fa7cfd712b411b740d962ff6fd1790ab10"
+  },
+  "development": {
+    "trust": 0,
+    "fatal_warnings": true,
+    "library": "passed",
+    "positive": "passed",
+    "negative": "sole intended type mismatch",
+    "owned_census": {
+      "path": ".local/path-prefix/owned-census.json",
+      "sha256": "5a1906a51d97d6582c188ef7a7679bd11807867c3a42958baa54ff5758b09db7",
+      "declarations": 154,
+      "modules": [
+        {
+          "declarations": 18,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences"
+        },
+        {
+          "declarations": 52,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding"
+        },
+        {
+          "declarations": 46,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.EdgeTrace"
+        },
+        {
+          "declarations": 21,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix"
+        },
+        {
+          "declarations": 17,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.OccurrencePrefix"
+        }
+      ],
+      "all_mathematical_admission": true,
+      "partial_unsafe_or_runtime_helpers": []
+    },
+    "scope": "Development only. Root owns complete fresh immutable selected-source closure, dependency identity/axiom census, registries/docs/metadata admission. Prior exact source-bound accepted project objects were copied/reused in one isolated build root.",
+    "native_records": [
+      {
+        "path": ".local/path-prefix/logs/20261015T200928.192968Z-OccurrencePrefix.json",
+        "sha256": "b433ca6589ed4ba9d6141fd75eb4dcf0dccb2b761631d9176f1a51223a16e092",
+        "source_sha256": "e5a81a386b876a65e2ae0fb78a589cd9f114162bd423ab70e244279dbf5799a0",
+        "exit_code": 0,
+        "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": ".local/path-prefix/logs/20261015T201131.907034Z-OccurrencePrefix.json",
+        "sha256": "3e5f3ffaafa1cf2ee133327a8e9a31c37957ef68d19d3a07989381eda3e6699f",
+        "source_sha256": "0403b9346d2797e3817ed308c32ad0677c942b071e459f8ee137f0e7cc932b9c",
+        "exit_code": 1,
+        "output_sha256": "869ed534df0bc50e8f6ded0dbe95f74a48cd5b756d025e09d0eb946e276faa68"
+      },
+      {
+        "path": ".local/path-prefix/logs/20261015T201148.740599Z-OccurrencePrefix.json",
+        "sha256": "c14712680dd975c579fd8d71da504862070b764cc8120fcf67deb24e18e901b1",
+        "source_sha256": "60737e2376594568f390e394417b77c9ea0cc5464693b3ef61502213e3afcee7",
+        "exit_code": 0,
+        "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": ".local/path-prefix/logs/20261015T201149.538167Z-OccurrencePrefix.json",
+        "sha256": "e8fa7608ae7e55627a14a0f425fa703ffeb72e87d65c4c36e9c31fcaf61c5dec",
+        "source_sha256": "42613163bf370b571b0c377accf85a73e1c4da96ee3805bc24b4ea58e6d6e444",
+        "exit_code": 0,
+        "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": ".local/path-prefix/logs/20261015T201150.331506Z-OccurrenceMissingHistory.json",
+        "sha256": "ebd4bc8e02409936cc1a001b660c1a78fbbc22e1a4d0bab6866689ea8270ad13",
+        "source_sha256": "78b1f89e7ab51f8ebf6d67aa6b6e4a7ab84397e20989bf41bf487fc7c761d448",
+        "exit_code": 1,
+        "output_sha256": "4bbe82cdf8d6b20bcd8e899f32c695fa7cfd712b411b740d962ff6fd1790ab10"
+      },
+      {
+        "path": ".local/path-prefix/logs/20261015T201224.097200Z-OccurrencePrefix.json",
+        "sha256": "9b025266e6d614c320b6d884c992d7cb3e5768e92785c3678e26bbdfa90fa228",
+        "source_sha256": "7124067c37f7aafeafa0eae69ecc944ce19237e50171a1888f079306f80e2f1d",
+        "exit_code": 1,
+        "output_sha256": "5817f2ed64f35b3534dc3b0545e041b144ed8e8c34368f6e5d1839c78a3e7a40"
+      },
+      {
+        "path": ".local/path-prefix/logs/20261015T201224.880483Z-SelectedAudit.json",
+        "sha256": "338cd6f0f290f34fca3e39b79486d39e2cc0bad6730ab3540fffdbdf5a432b0b",
+        "source_sha256": "2b154f37f711022fe2a99725c250b655775021457f8645be1874e80ccbe2597a",
+        "exit_code": 0,
+        "output_sha256": "79f96499f9ad4153b1ec3f8524a90146e3701f0b3acacaf7104c4fee8fc7b0f5"
+      },
+      {
+        "path": ".local/path-prefix/logs/20261015T201313.429633Z-OccurrencePrefix.json",
+        "sha256": "52fbf2e696e723bd2717298842207fce197436306c7c895748477b99cfe28633",
+        "source_sha256": "0b746beb3ea685eac5a94e987b95280aa5a4135a5716c67e6ccf802d7d2de2b6",
+        "exit_code": 0,
+        "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": ".local/path-prefix/logs/20261015T201316.750907Z-SelectedAudit.json",
+        "sha256": "494d29fd3bf29441f53c6ef2b16ed55e0e8bf9e5065e1cd9b4cb69818e58881c",
+        "source_sha256": "2b154f37f711022fe2a99725c250b655775021457f8645be1874e80ccbe2597a",
+        "exit_code": 0,
+        "output_sha256": "eb2487533947751d438ea7ff919cf0c3c5b289a81c0fbff7a203ee3edaddbfd3"
+      },
+      {
+        "path": ".local/path-prefix/logs/20261015T201329.344957Z-OccurrenceMissingHistory.json",
+        "sha256": "220457293d5fd73358b72d316a3200b8f2d0b89df6503abbfc54ea9e39c7e0ea",
+        "source_sha256": "78b1f89e7ab51f8ebf6d67aa6b6e4a7ab84397e20989bf41bf487fc7c761d448",
+        "exit_code": 1,
+        "output_sha256": "4bbe82cdf8d6b20bcd8e899f32c695fa7cfd712b411b740d962ff6fd1790ab10"
+      }
+    ]
+  },
+  "preserved_failures": {
+    "variants": ".local/path-prefix/source-variants",
+    "proof_attempts": "Endpoint congrArg elaboration failure and extra tactic after closing retraction-reflection rewrite preserved. No unsafe helper rejection or audit exemption.",
+    "stale_intermediate_census": ".local/path-prefix/logs/20261015T201224.880483Z-SelectedAudit.log",
+    "stale_reason": "An intermediate positive compilation rejected; subsequent development census used previous positive object. Explicitly excluded from current evidence. Final positive rebuilt successfully at201314, final census at201316 includes17positive declarations and all154owned declarations."
+  },
+  "api_scout": {
+    "path": ".local/path-prefix/api-scout.json",
+    "sha256": "faee1e24fe610436696eab90e81025953ff8c043c2c903c9fd83b0c3d7d8f0bf",
+    "duplicate_log": ".local/path-prefix/api-duplicate-scout.log",
+    "duplicate_log_sha256": "f5801d7bb413b105c1043132de176221a35b3fd0aec23b009466abd50fb6b0f6"
+  },
+  "whitespace": {
+    "path": ".local/path-prefix/final-whitespace.json",
+    "sha256": "02f21c38f5c8c978e0b158a46d4e562f0b71fffd86df631152e488774bf03909",
+    "passed": true
+  },
+  "layout": {
+    "path": ".local/path-prefix/layout.json",
+    "sha256": "9c9de6ce750943838af7bc76acaa86f6842d9abe515c67aebd0fa07860c54966",
+    "scope": "Owned findings only expected3source registrations and public import closure bookkeeping, parent-owned; no new subject/path-ban finding."
+  },
+  "all_native_children_exited": true,
+  "shared_lock_released": true,
+  "source_frozen": true,
+  "further_native_jobs_planned": false,
+  "no_prior_source_edits_commits_or_remote_changes": true
+}

@@ -1,0 +1,11 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "occurrence-prefix-formal",
+  "owner": "indexed_dictionary",
+  "at": "2026-10-15T20:09:29.134403+00:00",
+  "kind": "native-lock-released",
+  "source": "GRWTSK/Combinatorics/DirectedGraph/OccurrencePrefix.lean",
+  "exit_code": 0,
+  "all_native_children_exited": true,
+  "log": ".local/path-prefix/logs/20261015T200928.192968Z-OccurrencePrefix.log"
+}
