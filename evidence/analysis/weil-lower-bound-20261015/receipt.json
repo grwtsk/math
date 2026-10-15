@@ -1,0 +1,124 @@
+{
+  "schema": "weil-lower-bound-research-receipt-v1",
+  "date": "2026-10-15",
+  "base_commit": "ba77517b0b4e74d36a824d34c2948b276471b844",
+  "outcome": "OPEN_FRONTIER",
+  "math_grade": "WRITTEN_CONTINUUM_PLUS_EXACT_SCALAR_CERTIFICATES",
+  "native": "BLOCKED_OPERATION",
+  "native_executables": {
+    "lean": null,
+    "lake": null,
+    "elan": null
+  },
+  "python": "3.13.5",
+  "tests_per_mode": 33,
+  "tests": {
+    "normal": {
+      "stdout": "",
+      "stderr": ".................................\n----------------------------------------------------------------------\nRan 33 tests in 0.794s\n\nOK\n",
+      "returncode": 0
+    },
+    "optimized": {
+      "stdout": "",
+      "stderr": ".................................\n----------------------------------------------------------------------\nRan 33 tests in 0.987s\n\nOK\n",
+      "returncode": 0
+    }
+  },
+  "producer_modes_identical": true,
+  "producer_sha256": "87a3ced4ba8afd74225c3177d9557863d4deeae556e9934de5cc7cc15c6b39f1",
+  "candidate_inventory": [
+    {
+      "path": "evidence/analysis/weil-lower-bound-20261015/candidates/CoercivityBudget.lean.txt",
+      "theorems": [
+        "band_split_lower",
+        "lower_bound_of_cost_le",
+        "schur_identity",
+        "schur_nonneg",
+        "schur_lower",
+        "positive_diagonals_negative_form"
+      ]
+    },
+    {
+      "path": "evidence/analysis/weil-lower-bound-20261015/candidates/NegativeRayleighBudget.lean.txt",
+      "theorems": [
+        "three_square_bound",
+        "cutoff_square_bound",
+        "lower_bound_contradiction",
+        "escape_rate_identity",
+        "chosen_rate_identity"
+      ]
+    }
+  ],
+  "candidate_theorems": 11,
+  "audit_requests": 11,
+  "native_type_comparison": false,
+  "axiom_audit": false,
+  "full_repository_checks": "NOT_RUN: source-bound partial workspace; direct Git DNS failed",
+  "new_zeta_region": false,
+  "RH": false,
+  "global_source_growth_supplier": false,
+  "actual_source_integral_or_eigenvalue_evaluation": false,
+  "figures_generated": false,
+  "historical_receipts": "UNCHANGED",
+  "attribution": {
+    "human_direction": "R.A. Jacob Martone",
+    "research_code": "OpenAI ChatGPT",
+    "license": "MIT"
+  },
+  "sources": [
+    {
+      "path": "evidence/analysis/weil-lower-bound-20261015/audit.lean.txt",
+      "bytes": 1050,
+      "sha256": "6c272d78a52cfdbe3c979f0ee341355b1e72d0a73fe604fec80e304b6fe114c4",
+      "git_blob_sha1": "4626035d203a3f6c618135699c3e27b45edc6557"
+    },
+    {
+      "path": "evidence/analysis/weil-lower-bound-20261015/candidates/CoercivityBudget.lean.txt",
+      "bytes": 2256,
+      "sha256": "e1c2e068173358af0ea396a98925cbede4d21d533b2c01b22515c65a42c9ed64",
+      "git_blob_sha1": "aadbbadb45e5edf7ccf30b6ac9262e3ff14fea49"
+    },
+    {
+      "path": "evidence/analysis/weil-lower-bound-20261015/candidates/NegativeRayleighBudget.lean.txt",
+      "bytes": 1626,
+      "sha256": "78bf193582a436c8d4d599e04c28ddae399dfc12165269aeed7c1155266ef72b",
+      "git_blob_sha1": "2326d4285ad6b5368a6affd6c940d5c5daa3de92"
+    },
+    {
+      "path": "evidence/analysis/weil-lower-bound-20261015/certificates.json",
+      "bytes": 7805,
+      "sha256": "87a3ced4ba8afd74225c3177d9557863d4deeae556e9934de5cc7cc15c6b39f1",
+      "git_blob_sha1": "7d4d6aac704493a7e955c40065f97d0361614d8b"
+    },
+    {
+      "path": "evidence/analysis/weil-lower-bound-20261015/derivation.txt",
+      "bytes": 18325,
+      "sha256": "350c06935625f7cdd6260db913729d0a2dbab31faec3c81290a18a0830fa6d18",
+      "git_blob_sha1": "4d5c4ca49100715c886a4e49361e3ddd63f957cd"
+    },
+    {
+      "path": "evidence/analysis/weil-lower-bound-20261015/frontier.json",
+      "bytes": 1799,
+      "sha256": "50291715c91db71d8655e80854029e247c8c9fb85596ab335288bdf42acc2940",
+      "git_blob_sha1": "5006c1e11bfb699bd163eb4b19dc36337c2eb1af"
+    },
+    {
+      "path": "evidence/analysis/weil-lower-bound-20261015/sources.json",
+      "bytes": 3393,
+      "sha256": "ead6bfd42688a6651faaa24659ddded8ef86b228bf109592cd7e238b00fd90aa",
+      "git_blob_sha1": "31b86c0dc3207fe9201ac06d7bce64e35bc5002e"
+    },
+    {
+      "path": "scripts/weil_spectral_lower_bounds.py",
+      "bytes": 10447,
+      "sha256": "d5678e0d9da169f12c4ac3f62307c02ea956921ccb74cd89e4ad83f8bea387e4",
+      "git_blob_sha1": "7b8a6a19d55eb2b15640d9f1a08bccbdf38dfb72"
+    },
+    {
+      "path": "tests/test_weil_spectral_lower_bounds.py",
+      "bytes": 8353,
+      "sha256": "d271c7fc5685746133d291478978882db3d86e6265a1dd3cf900c17f2684e130",
+      "git_blob_sha1": "f503fe29fa6ca88312a1ce3c3142c27a4a697e45"
+    }
+  ]
+}
