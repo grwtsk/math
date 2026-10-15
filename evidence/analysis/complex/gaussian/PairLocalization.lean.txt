@@ -1,0 +1,107 @@
+/-
+Human mathematical direction and GRL-RH-1 specification: grwtsk contributors.
+Construction, derivation and candidate formalization assistance: OpenAI ChatGPT.
+MIT. Lean and Mathlib retain their upstream authorship and licenses.
+CANDIDATE_SOURCE_ONLY: not natively elaborated, compiled or axiom-audited.
+This inert evidence file is not imported by the active library.
+-/
+import Mathlib.Tactic
+import Mathlib.Analysis.Normed.Group.InfiniteSum
+
+set_option autoImplicit false
+noncomputable section
+open Complex
+
+namespace GRWTSK.Analysis.GaussianPair
+
+def gap (r z : ℂ) : ℝ :=
+  (z.re - r.re) ^ 2 + r.im ^ 2 - z.im ^ 2
+
+def localized (L : ℝ) (P : ℂ → ℂ) (r z : ℂ) : ℂ :=
+  P z * Complex.exp (-(L : ℂ) *
+    ((z - (r.re : ℂ)) ^ 2 + ((r.im ^ 2 : ℝ) : ℂ)))
+
+theorem phase_at (r : ℂ) :
+    (r - (r.re : ℂ)) ^ 2 + ((r.im ^ 2 : ℝ) : ℂ) = 0 := by
+  apply Complex.ext <;> simp [pow_two, Complex.mul_re, Complex.mul_im] <;> ring
+
+theorem phase_at_conj (r : ℂ) :
+    (conj r - (r.re : ℂ)) ^ 2 + ((r.im ^ 2 : ℝ) : ℂ) = 0 := by
+  apply Complex.ext <;> simp [pow_two, Complex.mul_re, Complex.mul_im] <;> ring
+
+theorem localized_at (L : ℝ) (P : ℂ → ℂ) (r : ℂ) :
+    localized L P r r = P r := by
+  simp [localized, phase_at]
+
+theorem localized_at_conj (L : ℝ) (P : ℂ → ℂ) (r : ℂ) :
+    localized L P r (conj r) = P (conj r) := by
+  simp [localized, phase_at_conj]
+
+theorem localized_zero (L : ℝ) (P : ℂ → ℂ) (r z : ℂ) (hz : P z = 0) :
+    localized L P r z = 0 := by simp [localized, hz]
+
+theorem norm_sq_localized (L : ℝ) (P : ℂ → ℂ) (r z : ℂ) :
+    ‖localized L P r z‖ ^ 2 = ‖P z‖ ^ 2 * Real.exp (-2 * L * gap r z) := by
+  have he : (-(L : ℂ) *
+      ((z - (r.re : ℂ)) ^ 2 + ((r.im ^ 2 : ℝ) : ℂ))).re = -L * gap r z := by
+    simp [gap, pow_two, Complex.mul_re, Complex.mul_im] <;> ring
+  rw [localized, norm_mul, mul_pow, Complex.norm_exp, he]
+  congr 1
+  rw [pow_two, ← Real.exp_add]
+  congr 1
+  ring
+
+/-- The closed endpoints are included. Nearer zeros must be cancelled first. -/
+theorem gap_ge (r z : ℂ) (hstrip : |z.im| ≤ 1 / 2)
+    (hfar : 1 ≤ |z.re - r.re|) : 3 / 4 ≤ gap r z := by
+  have hb := (sq_le_sq₀ (abs_nonneg z.im) (by norm_num : (0 : ℝ) ≤ 1 / 2)).2 hstrip
+  have hf := (sq_le_sq₀ (by norm_num : (0 : ℝ) ≤ 1)
+    (abs_nonneg (z.re - r.re))).2 hfar
+  simp only [sq_abs] at hb hf
+  dsimp [gap]
+  nlinarith [sq_nonneg r.im]
+
+theorem geometric_envelope (P : ℂ → ℂ) (r z : ℂ) (n : ℕ)
+    (hstrip : |z.im| ≤ 1 / 2) (hfar : 1 ≤ |z.re - r.re|) :
+    ‖localized ((n : ℝ) + 1) P r z‖ ^ 2 ≤
+      Real.exp (-(3 / 2 : ℝ) * n) * ‖localized 1 P r z‖ ^ 2 := by
+  rw [norm_sq_localized, norm_sq_localized]
+  have hg := gap_ge r z hstrip hfar
+  have hmul : 0 ≤ (n : ℝ) * (gap r z - 3 / 4) :=
+    mul_nonneg (Nat.cast_nonneg n) (sub_nonneg.mpr hg)
+  have he : -2 * ((n : ℝ) + 1) * gap r z ≤
+      -(3 / 2 : ℝ) * n + -2 * 1 * gap r z := by nlinarith
+  have hb := mul_le_mul_of_nonneg_left (Real.exp_le_exp.mpr he) (sq_nonneg ‖P z‖)
+  rw [Real.exp_add] at hb
+  nlinarith [hb]
+
+/-- Absolute summability is a premise, never inferred from finite samples. -/
+theorem summable_tail_bound {ι : Type*} (b : ι → ℝ) (hb : Summable b)
+    (q : ℝ) (f : ι → ℂ) (hf : ∀ i, ‖f i‖ ≤ q * b i) :
+    Summable f ∧ ‖∑' i, f i‖ ≤ q * ∑' i, b i := by
+  have hqb : Summable (fun i => q * b i) := hb.mul_left q
+  refine ⟨hqb.of_norm_bounded hf, ?_⟩
+  exact tsum_of_norm_bounded (hb.hasSum.mul_left q) hf
+
+/-- A natural index exists by an Archimedean bound, not an empirical search.
+C may depend on the fixed test polynomial and zero, but not on n. -/
+theorem exists_small_envelope (C mass : ℝ) (hmass : 0 < mass) :
+    ∃ n : ℕ, Real.exp (-(3 / 2 : ℝ) * n) * C < mass := by
+  by_cases hC : 0 < C
+  · obtain ⟨n, hn⟩ := exists_nat_gt (-(2 / 3 : ℝ) * Real.log (mass / C))
+    refine ⟨n, ?_⟩
+    have he : Real.exp (-(3 / 2 : ℝ) * n) < mass / C := by
+      rw [← Real.exp_log (div_pos hmass hC)]
+      exact Real.exp_lt_exp.mpr (by linarith)
+    exact (lt_div_iff₀ hC).mp he
+  · refine ⟨0, ?_⟩
+    simp only [Nat.cast_zero, mul_zero, Real.exp_zero, one_mul]
+    exact lt_of_le_of_lt (le_of_not_gt hC) hmass
+
+/-- A positive source cannot have negative pair mass plus this small a tail. -/
+theorem finite_tail_contradiction (mass W : ℝ) (R : ℂ)
+    (hW : 0 ≤ W) (hidentity : W = -mass + R.re) (hR : ‖R‖ < mass) : False := by
+  have hreal : R.re ≤ ‖R‖ := R.re_le_norm
+  linarith
+
+end GRWTSK.Analysis.GaussianPair
