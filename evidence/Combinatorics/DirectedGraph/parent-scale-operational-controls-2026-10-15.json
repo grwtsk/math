@@ -1,0 +1,56 @@
+{
+  "schema": "bounded-replay-operational-controls-v1",
+  "at": "2026-10-15T21:14:08.721969+00:00",
+  "sources": [
+    {
+      "path": "scripts/check_parent_trace_dictionary.py",
+      "sha256": "2356f3e071b6ebfb0b58388146eb538679129d51f5c52577a2f9e511c3f74f40"
+    },
+    {
+      "path": "scripts/check_scaled_gaussian_derivatives.py",
+      "sha256": "3ce21e22a03b565c17be703178cea978540ab5ebfb5bda1cb06ae0eeac2ad69e"
+    },
+    {
+      "path": "scripts/test_parent_scale_replay_guards.py",
+      "sha256": "ec4325edf8a18fc5bd627972fdd5a655e79e6e41daf79547dba6189e794b066d"
+    },
+    {
+      "path": "scripts/check_math_trust.py",
+      "sha256": "069ca265038960243890b1c4e028637723ddc440854864a61648eb2b2fd99c9d"
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "scripts/test_parent_scale_replay_guards.py"
+      ],
+      "exit_code": 0,
+      "log": {
+        "path": ".local/parent-scale/root/replay-guards-normal.log",
+        "sha256": "ada8287c158c47db545f6c9e762701c9fdb3de124ea9dbacac45d9e31b016b77"
+      },
+      "output": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.033s\n\nOK\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "-O",
+        "scripts/test_parent_scale_replay_guards.py"
+      ],
+      "exit_code": 0,
+      "log": {
+        "path": ".local/parent-scale/root/replay-guards-optimized.log",
+        "sha256": "4a161cc7b3a2a7650a43c693841d3032e38bfd52137c410e6ff625e4a510de87"
+      },
+      "output": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.049s\n\nOK\n"
+    }
+  ],
+  "controls": [
+    "Two replay drivers times nine generated object-family scenarios: unchanged accepted; main replacement/truncation/deletion, private replacement/deletion, extra server, main/private symlinks rejected.",
+    "Plain/coded diagnostic parser counts every error; each actual negative compile must produce exactly one intended type mismatch."
+  ],
+  "limits": "Bounded Python operational tests only. No Lean proof of hash injectivity, generated object custody, diagnostic parser, filesystem transactions, IO, JSON/Python relation graph or runtime refinement. Correlated source/model review is not independent validation."
+}

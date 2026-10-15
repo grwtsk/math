@@ -53,6 +53,13 @@ This inventory contains prefixes of the selected finite rows. It is not
 the infinite all-occurrence unfolding of a cyclic base graph, nor a claim
 of permission or proof implication from graph reachability.
 
+The [parent dictionary](parent-trace-dictionary.md) now represents each
+complete prefix by an empty marker or a checked parent reference and its
+actual last full edge, with the root retained separately. Its actual
+rank-fuel expansion reconstructs this exact dictionary before indexed
+unpacking and occurrence recovery. Trace length supplies the decreasing
+rank; rightmost numeric positions need not decrease.
+
 ## Source, verification and credit
 
 The [source](../../../../GRWTSK/Combinatorics/DirectedGraph/PrefixInventory.lean),

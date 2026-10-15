@@ -367,3 +367,5 @@ import GRWTSK.Analysis.PartitionOfUnity.DyadicAnnulus
 import GRWTSK.NumberTheory.LSeries.GaussianDyadic
 import GRWTSK.Combinatorics.DirectedGraph.PrefixInventory
 import GRWTSK.Analysis.MellinTransform.CompactGaussianWindow
+import GRWTSK.Combinatorics.DirectedGraph.ParentTraceDictionary
+import GRWTSK.Analysis.MellinTransform.ScaledGaussianDerivatives

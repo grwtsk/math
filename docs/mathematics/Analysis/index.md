@@ -4,16 +4,16 @@
 
 | Inventory | Count |
 |---|---:|
-| Object guides | 24 |
+| Object guides | 25 |
 | Documented object groups | 13 |
-| Distinct primary sources linked | 24 |
-| Lean source modules | 261 |
+| Distinct primary sources linked | 25 |
+| Lean source modules | 264 |
 | Archive intake records | 39 |
 | Selected catalog families | 1 |
 
 These counts measure documentation and source coverage. They do not count accepted theorems or establish that every source module is documented or checked. [Definitions and limits](../../reference/library-pages.md#count-definitions).
 
-At least 1513 source declaration commands, including 1225 theorem/lemma commands, across 215 parsed Lean source modules; 46 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
+At least 1526 source declaration commands, including 1237 theorem/lemma commands, across 218 parsed Lean source modules; 46 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
 
 ## Asymptotics
 
@@ -95,14 +95,15 @@ Linked primary-source scope: 1 source declaration commands, including 1 theorem/
 
 ## MellinTransform
 
-4 object guides · 4 distinct linked primary source files.
+5 object guides · 5 distinct linked primary source files.
 
-Linked primary-source scope: At least 37 source declaration commands, including 31 theorem/lemma commands, across 3 parsed Lean source modules; 1 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
+Linked primary-source scope: At least 45 source declaration commands, including 38 theorem/lemma commands, across 4 parsed Lean source modules; 1 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
 
 - [Mellin transform of a logarithmic Gaussian](MellinTransform/logarithmic-gaussian.md).
 - [Reverse Mellin inversion](MellinTransform/reverse-inversion.md).
 - [The compact Gaussian window and its square-root factor](MellinTransform/compact-gaussian-window.md).
 - [The normalized Gaussian Mellin pair](MellinTransform/normalized-gaussian.md).
+- [Uniform scale bounds for Gaussian derivatives](MellinTransform/scaled-gaussian-derivatives.md).
 
 ## NormedSpace
 

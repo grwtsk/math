@@ -1,0 +1,18 @@
+{
+  "schema": "grwtsk.coordination.event.v1",
+  "event": "parent-scale-source-scout-progress",
+  "agent": "cache_taxonomy",
+  "at": "2026-10-15T21:04:32.371032+00:00",
+  "context": {
+    "path": ".local/parent-scale-source-scout/0cdf65b66a274bf99d9aea7c55a424b1/review-context.json",
+    "sha256": "b358dc62113ae944a38c1c58e8e8ae35615c2b2bf333d9920cb6633db2cf045a",
+    "bytes": 7971
+  },
+  "findings": [
+    "Primary Courcelle empty-walk root and last-edge parent context confirmed; no finitecodec transfer.",
+    "Actual Anthropic weighted vertex-walk start and derivative-domain premises read from exact public bytes.",
+    "Exact OpenAI GaussianDerivative sources and pinned Mathlib Cauchy hypotheses re-read; Miles positive dx density is a separate object."
+  ],
+  "native_status": "NOT_RUN",
+  "final_local_bindings": "Pending author freezes."
+}

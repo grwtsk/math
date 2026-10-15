@@ -1,0 +1,10 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "parent-trace-dictionary-formal",
+  "owner": "indexed_dictionary",
+  "at": "2026-10-15T21:07:47.507297+00:00",
+  "kind": "native-lock-acquired",
+  "source": "GRWTSK/Combinatorics/DirectedGraph/ParentTraceDictionary.lean",
+  "source_sha256": "b160afef53491de909d23ebb05ebff58dfee3aee75e0231b392173eba3dbfbc9",
+  "guard_competing_jobs": []
+}

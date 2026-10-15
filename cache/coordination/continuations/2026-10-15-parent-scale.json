@@ -1,0 +1,206 @@
+{
+  "schema": "repository-agent-continuation-v1",
+  "at": "2026-10-15T21:15:58.410801+00:00",
+  "branch": "main",
+  "initial_main_observed": "2a3b48f46164ee3df2367b598bf4a98dee35b506",
+  "base_commit_observed": "2a3b48f46164ee3df2367b598bf4a98dee35b506",
+  "previous_cursor": {
+    "path": "cache/coordination/continuations/2026-10-15-prefix-window.json",
+    "sha256": "1befe7d1fe6c8b3d23d205f0ded51755607acb6bae63b073a9c62595df4247da"
+  },
+  "current_cache_revision": "63b74b16b853db140529976fe75dbc6d8c833bd5a1d868652a6adf1c411124c3",
+  "current_cache_roundtrip": {
+    "path": "evidence/Combinatorics/DirectedGraph/parent-scale-cache-roundtrip-2026-10-15.json",
+    "sha256": "b7c25779ca6a776b48ce3c1dd288582a79d310e49c11c82e257b50fd280c448c"
+  },
+  "completed_task_ids": [
+    "indexed-dictionary",
+    "dictionary-revision",
+    "cache-adapter",
+    "cache-taxonomy",
+    "cache-final-review",
+    "taxonomy-compatibility-review",
+    "durable-decision-review",
+    "decision-certificate",
+    "ordered-history-formal",
+    "ordered-history-adapter",
+    "ordered-history-literature",
+    "incremental-dictionary-formal",
+    "closed-operator-formal",
+    "incremental-source-scout",
+    "incremental-final-review",
+    "incremental-composition-formal",
+    "closed-complex-formal",
+    "composition-source-scout",
+    "batch-certificate-formal",
+    "joint-graph-formal",
+    "joint-graph-source-scout",
+    "prefix-obstruction-formal",
+    "dirichlet-continuation-scout",
+    "prefix-source-scout",
+    "path-occurrences-formal",
+    "reverse-mellin-formal",
+    "path-mellin-source-scout",
+    "path-mellin-final-review",
+    "typed-edge-trace-formal",
+    "gaussian-mellin-formal",
+    "typed-edge-source-scout",
+    "occurrence-trace-adapter",
+    "path-unfolding-formal",
+    "normalized-gaussian-formal",
+    "unfolding-gaussian-source-scout",
+    "occurrence-prefix-formal",
+    "gaussian-zeta-formal",
+    "prefix-zeta-source-scout",
+    "occurrence-prefix-adapter",
+    "endpoint-section-formal",
+    "gaussian-dyadic-formal",
+    "endpoint-dyadic-source-scout",
+    "finite-prefix-inventory-formal",
+    "compact-gaussian-window-formal",
+    "prefix-window-source-scout",
+    "parent-trace-dictionary-formal",
+    "scaled-gaussian-derivatives-formal",
+    "parent-scale-source-scout"
+  ],
+  "new_results": [
+    {
+      "source": {
+        "path": "GRWTSK/Combinatorics/DirectedGraph/ParentTraceDictionary.lean",
+        "sha256": "c388e127a08238f465873954f0b6982ddbe556d0f77b252d4b2d8f89bf32237a"
+      },
+      "native_receipt": {
+        "path": "evidence/Combinatorics/DirectedGraph/parent-trace-dictionary-checks-2026-10-15.json",
+        "sha256": "543171b9d0139c972f290d87d3dbf00c9e483c90a73a4c3ecb56f09aa0916ca6"
+      },
+      "owned_declarations_in_selected_closure": 307,
+      "selected_library_owned_count": 78,
+      "owned_modules": [
+        {
+          "declarations": 52,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding"
+        },
+        {
+          "declarations": 18,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences"
+        },
+        {
+          "declarations": 46,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.EdgeTrace"
+        },
+        {
+          "declarations": 21,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix"
+        },
+        {
+          "declarations": 34,
+          "module": "GRWTSK.Logic.FiniteSequences.IndexedDictionary"
+        },
+        {
+          "declarations": 33,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixInventory"
+        },
+        {
+          "declarations": 78,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.ParentTraceDictionary"
+        },
+        {
+          "declarations": 25,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.ParentTraceDictionary"
+        }
+      ],
+      "integration": {
+        "path": "evidence/Combinatorics/DirectedGraph/parent-trace-dictionary-integration-2026-10-15.json",
+        "sha256": "aa1e26165d7b782937b433b8c28f4224d18ace0290245d699f048290419f3df2"
+      }
+    },
+    {
+      "source": {
+        "path": "GRWTSK/Analysis/MellinTransform/ScaledGaussianDerivatives.lean",
+        "sha256": "2d1dbbcd5142807daa8a5b6719b0a7bf026aa90991fa030019ed2fc9c0178b0a"
+      },
+      "native_receipt": {
+        "path": "evidence/Analysis/MellinTransform/scaled-gaussian-derivatives-checks-2026-10-15.json",
+        "sha256": "b4e86c8fffb7be81258fcb80a2caf2f891934bbd1b05f7dfeb66900c60e60f32"
+      },
+      "owned_declarations_in_selected_closure": 85,
+      "selected_library_owned_count": 13,
+      "owned_modules": [
+        {
+          "declarations": 23,
+          "module": "GRWTSK.Analysis.MellinTransform.ReverseInversion"
+        },
+        {
+          "declarations": 20,
+          "module": "GRWTSK.Analysis.MellinTransform.LogarithmicGaussian"
+        },
+        {
+          "declarations": 22,
+          "module": "GRWTSK.Analysis.MellinTransform.NormalizedGaussian"
+        },
+        {
+          "declarations": 13,
+          "module": "GRWTSK.Analysis.MellinTransform.ScaledGaussianDerivatives"
+        },
+        {
+          "declarations": 7,
+          "module": "GRWTSK.Analysis.MellinTransform.Checks.Positive.ScaledGaussianDerivatives"
+        }
+      ],
+      "integration": {
+        "path": "evidence/Analysis/MellinTransform/scaled-gaussian-derivatives-integration-2026-10-15.json",
+        "sha256": "85350d3f1189cad4ef92888e00364bec18cc60dbf7ce5d27ef7710740753b526"
+      }
+    }
+  ],
+  "frontier": {
+    "path": "cache/research/parent-scale-frontier-2026-10-15.json",
+    "sha256": "8b0e4a92640e18d5bf993939e831fc9a87906428105e8dbe3bdf37e536ac00be"
+  },
+  "decision_record": {
+    "path": "cache/decisions/parent-trace-dictionary-v1.json",
+    "sha256": "7e035c9a7a65cf3d1a7ae8ebf38302522ef81a2111ae66dd89428b543499d7ce"
+  },
+  "actual_operational_consumer": {
+    "path": "evidence/Combinatorics/DirectedGraph/parent-scale-prefix-consumer-2026-10-15.json",
+    "sha256": "fa76ebb732bd77a56973d1a3097e9a1ea1792a38a97881e3a3090321c381abff"
+  },
+  "documentation_check": {
+    "path": "evidence/Combinatorics/DirectedGraph/parent-scale-documentation-2026-10-15.json",
+    "sha256": "40a0a02d89c25bc069bd567c9f97c6af4142d50a031e408caf5ef335b51e7fff"
+  },
+  "native_scope": {
+    "graph_closure_count": 307,
+    "graph_new_library_count": 78,
+    "analytic_closure_count": 85,
+    "analytic_new_library_count": 13,
+    "scope": "Complete fresh selected local import closures and positive controls; trust zero, fatal warnings, full owned-declaration/transitive-axiom census, only three standard axioms. Clean pinned dependency objects reused/fingerprinted, not cold rebuilt. Whole umbrella not replayed."
+  },
+  "next_priorities": [
+    "Read actual main/index/worktree/current cache, open tasks and latest continuation leaf by parent/time first. Preserve exact source/hash/verification state and every concurrent edit/history.",
+    "Actual root-aware decision-certificate reuse across expanded parent dictionaries. Retain outer root equality even with zero rows, lift payloads to (retained root, full trace), and prove actual unpack equality from reference agreement, then use Certificate.reuse_of_same_decoding with its own actual pack roundtrip. The prefix dictionary has different numeric slots from Certificate.packed. Check the actual stale slot after appending a distinct parallel loop, and equal empty words at unequal roots. No in-bounds/rank-validity shortcut supplies semantic equality.",
+    "Actual OpenAI GaussianSeminorm cutoff/square-root factor derivatives and product rule to uniform G derivatives, Schwartz seminorms, finite families and two-sided estimates. Constants depend on exponents/orders/finite family, never Z>0 or j; use actual r=2^j/Z. Fixed-scale Schwartz packaging and P bound alone do not discharge this consumer.",
+    "Keep original ideal-pair/Hecke/calibration/mask/correction/norm summability and RH/growth/signal suppliers separate; current ordinary natural-number/window/derivative results do not discharge them.",
+    "Use mathematical subjects/objects and exact separate source occurrences, contribution roles, explicit premises and immutable revision/decision evidence.",
+    "Explicit noncomputable recursive mathematical definitions where needed; no generated-helper exemptions. Preserve failed/stale receipts and ignored variants.",
+    "Scoped local main commits with core.ignorecase=false, exact staged set and committed blob readback. Never push or modify remote branches."
+  ],
+  "unresolved_claims": {
+    "whole_documentation": "17 historical source drifts; whole normal/-O FAIL retained, 92 tests each PASS; selected four page bindings and all registered links/projections PASS.",
+    "whole_layout": "175 identical baseline findings; selected six sources zero findings.",
+    "cache_custody": {
+      "sources": 711,
+      "catalogs": 2,
+      "context": 9,
+      "all_exact_files": 722,
+      "source_statuses": "Every source unknown-unreplayed/acceptance false; 82 metadata findings retained."
+    },
+    "runtime_refinement": "open; raw taxonomy separate from source snapshot.",
+    "method_identity_inventory": "215 unprovided; 16 declared families only.",
+    "candidate_native_status": "NOT_RUN retained.",
+    "RH_suppliers": "open"
+  },
+  "concurrent_history": "Initial main 2a3b48f clean/ahead one; actual Git/custody event records any concurrent origin update. No fetch, merge, reset, discard or remote write by this agent. Read actual Git before next round.",
+  "cleanup": "Only main and primary checkout. Stale worktree dry-run/prune empty and no redundant local branches; no live or unmerged history removed.",
+  "continuation_policy": "Continue authorized rounds until stop. Heartbeat active; stop cancels future rounds and must pause heartbeat. Quiet when unchanged."
+}

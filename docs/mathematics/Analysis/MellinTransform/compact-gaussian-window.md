@@ -50,6 +50,12 @@ No Mellin convergence, vertical integrability, inversion or actual Hecke
 row supplier follows merely from this Schwartz-map construction. Those
 require their own inputs and source-bound checks.
 
+The [uniform Gaussian derivative bound](scaled-gaussian-derivatives.md)
+now supplies actual bounds on $D^n_x P(rx)$ for $r>0$ and $y\in[1/2,2]$,
+with one constant for each real exponent and derivative order. Combining
+that estimate with derivatives of the cutoff divided by the square root
+to bound the actual window's Schwartz seminorms remains a separate consumer.
+
 ## Source, verification and credit
 
 The [source](../../../../GRWTSK/Analysis/MellinTransform/CompactGaussianWindow.lean),

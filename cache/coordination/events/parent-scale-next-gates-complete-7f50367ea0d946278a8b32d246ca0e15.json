@@ -1,0 +1,13 @@
+{
+  "schema": "grwtsk.coordination.event.v1",
+  "event": "parent-scale-next-gates-complete",
+  "agent": "cache_taxonomy",
+  "at": "2026-10-15T21:15:48.788585+00:00",
+  "record": {
+    "path": "cache/research/parent-scale-next-gates-2026-10-15.json",
+    "sha256": "5f3a0d369957ae08cdfd0cbb3eece637d20ec6a11211873b45a83edfaadd62b4",
+    "bytes": 7870
+  },
+  "status": "metadata-complete-new-gates-NOT_RUN",
+  "scope": "Bounded exact-source planning only; no native/code/docs/sharedregistry/remotechanges."
+}

@@ -1,0 +1,179 @@
+{
+  "schema": "grwtsk.source-review.v1",
+  "task": "parent-scale-source-scout",
+  "created_utc": "2026-10-15T21:05:47.123786+00:00",
+  "reviewer": "cache_taxonomy",
+  "review_scope": "Correlated same-team exact-source/premise/control/credit review; not independent validation.",
+  "finding": "No actionable missing hypothesis, changed uniformity quantifier or false primary-source correspondence observed in the three frozen local files within the bounded scope.",
+  "native_validation": {
+    "performed_by_this_review": false,
+    "status": "NOT_RUN",
+    "authority": "Separate root-owned fresh native receipt. Source comparison and author development replay do not confer native acceptance."
+  },
+  "author_freeze": {
+    "path": "cache/coordination/events/scaled-gaussian-freeze-9064c682adc242f4ada8378a9789a239.json",
+    "sha256": "1e416141a5e2727008239f38c0721a0b898cac8de4aa42e3c9226bd2010844cc",
+    "bytes": 1338
+  },
+  "local_sources": [
+    {
+      "path": "GRWTSK/Analysis/MellinTransform/ScaledGaussianDerivatives.lean",
+      "sha256": "2d1dbbcd5142807daa8a5b6719b0a7bf026aa90991fa030019ed2fc9c0178b0a",
+      "bytes": 7291,
+      "archive": ".local/parent-scale-source-scout/0cdf65b66a274bf99d9aea7c55a424b1/frozen-local/GRWTSK/Analysis/MellinTransform/ScaledGaussianDerivatives.lean",
+      "declarations": {
+        "gaussianLog": 31,
+        "gaussianLog_ofReal": 34,
+        "gaussianLog_power_bound": 36,
+        "iteratedDeriv_restrict_positive": 54,
+        "gaussianLog_analytic": 67,
+        "gaussianLog_scaled_analytic": 72,
+        "gaussianLog_scaled_disk_bound": 77,
+        "gaussianLog_scaled_derivative_bound": 110
+      }
+    },
+    {
+      "path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/ScaledGaussianDerivatives.lean",
+      "sha256": "4b3a1a55c2f80e7284cc89e6fa4a25c3dfbc0c246a8ec3af99a04af46434cb80",
+      "bytes": 2358,
+      "archive": ".local/parent-scale-source-scout/0cdf65b66a274bf99d9aea7c55a424b1/frozen-local/GRWTSK/Analysis/MellinTransform/Checks/Positive/ScaledGaussianDerivatives.lean",
+      "declarations": {
+        "scaledGaussian_generic": 10,
+        "scaledGaussian_first_derivative": 15,
+        "gaussianMellinProfile_zero_eq_coefficient": 23,
+        "gaussianMellinProfile_zero_ne_zero": 27,
+        "scaledGaussian_zero_no_uniform_bound": 36
+      }
+    },
+    {
+      "path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/ScaledGaussianMissingDomain.lean",
+      "sha256": "11128d1302a4e430ed7d68ed2ee0904156efb3503d75abf438559cfaee260f16",
+      "bytes": 682,
+      "archive": ".local/parent-scale-source-scout/0cdf65b66a274bf99d9aea7c55a424b1/frozen-local/GRWTSK/Analysis/MellinTransform/Checks/Negative/ScaledGaussianMissingDomain.lean",
+      "declarations": {}
+    }
+  ],
+  "existing_profile_supplier": {
+    "path": "GRWTSK/Analysis/MellinTransform/NormalizedGaussian.lean",
+    "sha256": "a0ed0dbf644601887df128536951a9c3e17ecf42970069a13acdfcb93518e3bf",
+    "bytes": 6685
+  },
+  "source_context": {
+    "path": ".local/parent-scale-source-scout/0cdf65b66a274bf99d9aea7c55a424b1/review-context.json",
+    "sha256": "b358dc62113ae944a38c1c58e8e8ae35615c2b2bf333d9920cb6633db2cf045a",
+    "bytes": 7971
+  },
+  "primary_openai": {
+    "source": {
+      "repository": "openai/math",
+      "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "path": "lean/OAI/NumberTheory/DirichletL/Detector/GaussianDerivative.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/Detector/GaussianDerivative.lean",
+      "archive": ".local/prefix-window-source-scout/7bb1ae6675734be1b0b6fa92ba093fa9/GaussianDerivative.lean",
+      "sha256": "e822dd45a58f81ae149643bd4749a53a2e52cee9d70dd83397415ac8e522cf6d",
+      "git_blob": "022aea0421700bf32d13df8184f1ef6ae641af10",
+      "bytes": 6055,
+      "native_status": "NOT_RUN"
+    },
+    "selected_proof_chain": "gaussianLog13/ofReal16, power_bound18 requiring z≠0, iteratedDeriv_restrict_positive36, positive-Re analytic49/scaled_analytic54, scaled_disk_bound59, all-orders scaled_derivative_bound92. Exact pinned raw source re-read including full proof chain.",
+    "license_and_credit": "OpenAI project Apache-2.0; no individual author header observed in this selected source. Exact upstream pin/path/raw SHA/Git blob and local adaptation notice retained. License rawSHA c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4 / Gitblob261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64.",
+    "next_consumer_boundary": "The exact GaussianSeminorm source is separately identified in source context. Its G uniform derivatives/seminorm estimates65/96/116/137 are NOT_PORTED here; fixed-scale CompactGaussianWindow packaging and this P bound do not by themselves constitute their local proof."
+  },
+  "mathlib_sources": [
+    {
+      "path": ".lake/packages/mathlib/Mathlib/Analysis/Complex/Liouville.lean",
+      "sha256": "9f4bd4ef66951f410189d2f27f1de049d588411d9b0c174c8d7c5e56da18be31",
+      "bytes": 7936,
+      "pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "git_blob": "6dbaa4eb65d1a6a0858121d7dea60481a1055a7d",
+      "header": [
+        "/-",
+        "Copyright (c) 2022 Yury Kudryashov. All rights reserved.",
+        "Released under Apache 2.0 license as described in the file LICENSE.",
+        "Authors: Yury Kudryashov",
+        "-/"
+      ]
+    },
+    {
+      "path": ".lake/packages/mathlib/Mathlib/Analysis/Complex/RealDeriv.lean",
+      "sha256": "a9ca5646135c0b940b16184412c0d5cb16e6cfc7b455a534e3794ac30be27097",
+      "bytes": 6899,
+      "pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "git_blob": "dbf10e546853b9445331d48263c6e3d73f506393",
+      "header": [
+        "/-",
+        "Copyright (c) 2019 Sébastien Gouëzel. All rights reserved.",
+        "Released under Apache 2.0 license as described in the file LICENSE.",
+        "Authors: Sébastien Gouëzel, Yourong Zang",
+        "-/"
+      ]
+    },
+    {
+      "path": ".lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Complex/Analytic.lean",
+      "sha256": "0c4eb8e1498a7b6adb7378eb18b95ed472fc84482b30b4deea85ed712c391928",
+      "bytes": 9079,
+      "pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "git_blob": "3b4689beba9938b3c13d4892e592cfe3d0d9f9e3",
+      "header": [
+        "/-",
+        "Copyright (c) 2024 Geoffrey Irving. All rights reserved.",
+        "Released under Apache 2.0 license as described in the file LICENSE.",
+        "Authors: Geoffrey Irving",
+        "-/"
+      ]
+    }
+  ],
+  "mathlib_role": "Cauchy estimate Complex.norm_iteratedDeriv_le_of_forall_mem_sphere_norm_le44 is existing reuse, with actual positive radius, DiffContOnCl and sphere norm bound supplied locally. RealDeriv and complex-log analytic APIs retain their named authors and hypotheses.",
+  "actual_anthropic_comparison": {
+    "source": {
+      "path": ".local/endpoint-dyadic-source-scout/c84ff313d7694097b4d2d5925551ed37/anthropic-mellin-calculus.lean",
+      "sha256": "010a74544650e8daeb2124aa0aefa218b5a437e9dba80b4d7b2752e456e93b02",
+      "bytes": 51009
+    },
+    "git_blob": "777619836d60555d8a9103b384489d1e66f2fe88",
+    "pin": "e1a4e6508154ea59f030480661590a9fe3018011",
+    "path": "zeta23/Zeta23/FromPNTPlus/MellinCalculus.lean",
+    "selected_scope": "support_deriv_subset_Icc129, deriv.ofReal_comp206, deriv.comp_ofReal210, PartialIntegration215 exact statement/premises newly read, preserving prior derivative/support context.",
+    "limits": "comp_ofReal210 assumes globally Differentiable ℂ e; cannot erase local positive-domain analytic requirements for principal log. PartialIntegration requires actual differentiability, integrability and endpoint limits. None is a uniform-in-scale Gaussian derivative supplier by citation.",
+    "credit": "PrimeNumberTheoremAnd contributors, Apache-2.0, upstream6a380f0c4658c04a420a9eb00b1ed62a1e3fde01/tagv4.32.2, with explicit2026 Anthropic port modifications."
+  },
+  "arxiv_primary_comparison": {
+    "title": "The Laplace transform of the lognormal distribution",
+    "author": "Justin Miles",
+    "id": "1803.05878v2",
+    "version_utc": "2020-05-13T15:06:24Z",
+    "url": "https://arxiv.org/pdf/1803.05878v2",
+    "snapshot": {
+      "url": "https://arxiv.org/pdf/1803.05878v2",
+      "archive": ".local/parent-scale-source-scout/0cdf65b66a274bf99d9aea7c55a424b1/miles-1803.05878v2.pdf",
+      "sha256": "cbfe4e70f14bf2a108c6fea5e80c786e4f4cc438497a50c363567ac40c8644ae",
+      "git_blob": null,
+      "bytes": 243689
+    },
+    "selected_scope": "Fresh abstract/version and PDF p1 definition of positive lognormal dx density and Laplace transform; no full paper reread.",
+    "role_limits": "The paper density contains1/x and is defined forx>0. It is not the exact totalized P, its value at0, or the all-orders C r^-a bound on a compact positive interval. Analytic continuation of that Laplace transform does not supply the present derivative bound or RH continuation.",
+    "license": "arXiv perpetual nonexclusive distribution license, checked from exact abstract license link. Citation/paraphrase only, not code reuse license."
+  },
+  "search_limit": "A narrow arxiv query on log-Gaussian derivatives mostly returned stochastic log-Gaussian process models; these were excluded as distinct objects. No exact arxiv derivative-bound supplier was identified in this bounded search.",
+  "exact_local_scope": {
+    "normalization": "gaussianLog z is the exact normalized coefficient times exp(-(principal complex log z)^2/4), and gaussianLog(y:ℂ)=the existing exact P y. No unnormalized substitute or entire-function assertion is introduced.",
+    "power_bound": "For z≠0 and every real a, the actual principal-log imaginary bound and completing-square inequality yield a concrete norm upper bound proportional to||z||^(-a). The nonzero premise is explicit.",
+    "restriction": "All real/complex iterated derivative identifications are local to positive real points where the supplied complex function is analytic. No global differentiability assumption is silently erased.",
+    "disk": "For y∈[1/2,2], complex closed radius1/4 disks have norms in[1/4,9/4] and positive real part. The proof establishes an actual scale-uniform disk norm bound, then DiffContOnCl and the actual sphere bound for Cauchy.",
+    "main_statement": "For every a:ℝ and n:ℕ there exists C>0 such that, for every r>0 and y∈[1/2,2], ||iteratedDeriv n(fun x=>P(r*x)) y||≤C*r^(-a). C may depend on(a,n), not r or y. The supplied C is factorial(n)*diskBound/(1/4)^n.",
+    "dependencies": "The library imports only the Analysis normalized profile and pinned Mathlib analytic/Cauchy APIs, with no NumberTheory physical detector or ideal-weight supplier."
+  },
+  "actual_controls": {
+    "positive": "Named generic all-order consumer and concrete a1,n1,y1 derivative bound C/r, with actual interval/scale premises supplied.",
+    "zero_value": "Positive module proves P0 equals the exact existing normalization coefficient and is nonzero using its proved normalization identity. This is the totalized source definition at0, not an imported probability density convention.",
+    "counterexample": "For n0,a1,y0 it proves no real C satisfies the C/r bound for all positive r, choosing r=(|C|+1)/||P0||. This is a complete mathematical counterexample to admitting zero into the asserted domain.",
+    "negative": "The sole intended negative consumer tries to supply 0∈[0,2] where the actual theorem requires 0∈[1/2,2]. The positive module already proves the failed broadened claim; compilation failure alone is not its proof."
+  },
+  "credit_and_limits": [
+    "Actual OpenAI GaussianDerivative proof adaptation and exact normalization retained under Apache-2.0. Mathlib source headers preserve Yury Kudryashov; Sébastien Gouëzel and Yourong Zang; Geoffrey Irving. Human direction grwtsk contributors, formalization assistance OpenAI Codex. No novelty claim.",
+    "The actual pinned Anthropic derivative comparison requires globally Differentiable ℂ e in comp_ofReal210, while the local proof supplies positive-domain analytic hypotheses explicitly. Its partial-integration integrability/endpoint premises remain separate; no source acceptance by similarity. Retain original PrimeNumberTheoremAnd contributor credit and Anthropic port modifications.",
+    "Miles1803.05878v2 only supplies a precisely different positive lognormal dx-density/Laplace-transform context; its extra1/x and positive-only domain do not supply this totalized P0 or the uniform derivative bound. No paper analytic continuation or RH claim transfers. ArXiv distribution license is citation/paraphrase context, not code relicensing.",
+    "No G uniform derivative/seminorm, full ideal/Hecke/calibration/physical detector, arithmetic norm summability, contour continuation or RH theorem is admitted here.",
+    "No native jobs, tests, maintained source/docs/sharedregistry edits or remote effects by this review. Preserve prior failed/stale receipts and incoming NOT_RUN statuses."
+  ]
+}

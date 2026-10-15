@@ -1,0 +1,24 @@
+{
+  "schema": "grwtsk.coordination.event.v1",
+  "event": "parent-trace-dictionary-source-review-complete",
+  "agent": "cache_taxonomy",
+  "at": "2026-10-15T21:13:36.562732+00:00",
+  "review": {
+    "path": "evidence/Combinatorics/DirectedGraph/parent-trace-dictionary-source-review-2026-10-15.json",
+    "sha256": "e29e2ce5b985e0f1cb613c73dd2654db196da83926424b5783443a1f03068c3d",
+    "bytes": 12801
+  },
+  "author_completion": {
+    "path": "cache/coordination/events/20261015T211211Z-parent-trace-complete-e235198a.json",
+    "sha256": "1a5084c00b9273f222bfe22b8f9a5acca1799980157e37df2c0b6340d7c6f6f2",
+    "bytes": 6614
+  },
+  "local_source_hashes": {
+    "GRWTSK/Combinatorics/DirectedGraph/ParentTraceDictionary.lean": "c388e127a08238f465873954f0b6982ddbe556d0f77b252d4b2d8f89bf32237a",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/ParentTraceDictionary.lean": "bf76ed65efcca287eb7d312994978944169752300bfdfd4aa30250b79b96bc11",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/ParentTraceMissingRoot.lean": "052573ca2d1b2d8ccf76810beb9ebebc5a522009afdbcac4750e10229b4b046f"
+  },
+  "status": "correlated-source-review-complete-native-NOT_RUN",
+  "finding": "No actionable missing hypothesis, original-trace decoding oracle or false primary-source correspondence observed in the final frozen three files within the bounded scope.",
+  "scope": "Source/premise/control/credit review only; root native acceptance separate."
+}

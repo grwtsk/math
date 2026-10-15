@@ -5996,20 +5996,20 @@
     }
   ],
   "counts_by_operation": {
-    "add": 89,
+    "add": 95,
     "keep": 336,
     "move": 206
   },
   "counts_by_role": {
     "audit-driver": 35,
-    "library": 366,
-    "negative-control": 125,
-    "positive-check": 105
+    "library": 368,
+    "negative-control": 127,
+    "positive-check": 107
   },
   "counts_by_subject": {
     "Algebra": 19,
-    "Analysis": 218,
-    "Combinatorics": 26,
+    "Analysis": 221,
+    "Combinatorics": 29,
     "Data": 1,
     "DynamicalSystems": 16,
     "GroupTheory": 4,
@@ -6021,9 +6021,9 @@
     "Order": 6,
     "Spectral": 25
   },
-  "present_lean_source_count": 694,
+  "present_lean_source_count": 700,
   "schema": "grwtsk-math-source-catalog-v1",
-  "source_count": 631,
+  "source_count": 637,
   "sources": [
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -6162,6 +6162,7 @@
         "GRWTSK.Analysis.MellinTransform.LogarithmicGaussian",
         "GRWTSK.Analysis.MellinTransform.NormalizedGaussian",
         "GRWTSK.Analysis.MellinTransform.ReverseInversion",
+        "GRWTSK.Analysis.MellinTransform.ScaledGaussianDerivatives",
         "GRWTSK.Analysis.NormedSpace.QuadraticError",
         "GRWTSK.Analysis.PartitionOfUnity.DyadicAnnulus",
         "GRWTSK.Analysis.Polarization",
@@ -6181,6 +6182,7 @@
         "GRWTSK.Combinatorics.DirectedGraph.EdgeTrace",
         "GRWTSK.Combinatorics.DirectedGraph.EndpointSection",
         "GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix",
+        "GRWTSK.Combinatorics.DirectedGraph.ParentTraceDictionary",
         "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences",
         "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding",
         "GRWTSK.Combinatorics.DirectedGraph.PrefixInventory",
@@ -6566,7 +6568,7 @@
         "GRWTSK/Logic/ProofChecking/Checks/OwnedDeclarationAudit.lean"
       ],
       "runner": "python3 -B scripts/check_ccc_energy.py",
-      "sha256": "043cc4136cd1199bc10a9efa44afab714ce96bdf4b02f45d1001c76432fde2ce",
+      "sha256": "5009cd63325ab42e31a9577f65f305a767e1b95dc79e7c5cc187f941798dcd09",
       "source_role": "library",
       "source_root": ".",
       "subject": "Library",
@@ -6575,7 +6577,7 @@
         "inventory": "observed-current-bytes",
         "layout": "repository baseline remains failed",
         "lean": "umbrella not replayed after selected import additions",
-        "source_sha256": "043cc4136cd1199bc10a9efa44afab714ce96bdf4b02f45d1001c76432fde2ce"
+        "source_sha256": "5009cd63325ab42e31a9577f65f305a767e1b95dc79e7c5cc187f941798dcd09"
       },
       "working_tree_state": "tracked-modified"
     },
@@ -22609,6 +22611,52 @@
         "grwtsk contributors: human direction",
         "OpenAI Codex: local formalization/adaptation/checking",
         "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: actual GaussianDerivative supplier chain; Mathlib complex Gaussian/log/Cauchy/derivative authors retain individual credit"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/parent-scale-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Exact normalized P, real exponent a, natural derivative order n; one positive constant depending on(a,n), independent of r>0 and y in[1/2,2].",
+        "Actual complex principal-log Gaussian all-power norm bound, analytic disk and pinned Cauchy derivative estimate suppliers; no assumed desired bound wrapper.",
+        "Actual omitted-positive-domain obstruction at y0; no full arithmetic/Hecke/physical detector or RH supplier."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Analysis.MellinTransform.Checks.Positive.ScaledGaussianDerivatives"
+      ],
+      "license": "Apache-2.0",
+      "logical_status": "intended rejected control; no theorem admission",
+      "module": "GRWTSK.Analysis.MellinTransform.Checks.Negative.ScaledGaussianMissingDomain",
+      "namespaces": [],
+      "object": "MellinTransform/Checks/Negative",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/ScaledGaussianMissingDomain.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/ScaledGaussianMissingDomain.lean",
+      "placement_rationale": "Actual uniformly scaled log-Gaussian derivatives, complex Gaussian estimates and real/complex derivative correspondence belong to Analysis/MellinTransform.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B scripts/check_scaled_gaussian_derivatives.py",
+      "sha256": "11128d1302a4e430ed7d68ed2ee0904156efb3503d75abf438559cfaee260f16",
+      "source_role": "negative-control",
+      "source_root": "GRWTSK",
+      "subject": "Analysis",
+      "target_path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/ScaledGaussianMissingDomain.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Analysis/MellinTransform/scaled-gaussian-derivatives-checks-2026-10-15.json",
+        "source_sha256": "11128d1302a4e430ed7d68ed2ee0904156efb3503d75abf438559cfaee260f16"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
         "OpenAI: exact GaussianWindows G profile and GaussianLow Schwartz consumer; Mathlib smooth/sqrt/Schwartz/Mellin authors retain individual credit"
       ],
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -22883,6 +22931,82 @@
         "lean": "see immutable selected replay receipt",
         "replay_binding": "evidence/Analysis/MellinTransform/reverse-mellin-checks-2026-10-15-r2.json",
         "source_sha256": "10073b9002b7bfa89fe59764adf488b7ff24328fcf976efc930d7a9bdab37259"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: actual GaussianDerivative supplier chain; Mathlib complex Gaussian/log/Cauchy/derivative authors retain individual credit"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/parent-scale-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Exact normalized P, real exponent a, natural derivative order n; one positive constant depending on(a,n), independent of r>0 and y in[1/2,2].",
+        "Actual complex principal-log Gaussian all-power norm bound, analytic disk and pinned Cauchy derivative estimate suppliers; no assumed desired bound wrapper.",
+        "Actual omitted-positive-domain obstruction at y0; no full arithmetic/Hecke/physical detector or RH supplier."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Analysis.MellinTransform.ScaledGaussianDerivatives"
+      ],
+      "license": "Apache-2.0",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.Analysis.MellinTransform.Checks.Positive.ScaledGaussianDerivatives",
+      "namespaces": [
+        "GRWTSK.Analysis.MellinTransform.ScaledGaussianDerivatives.Checks"
+      ],
+      "object": "MellinTransform/Checks/Positive",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/ScaledGaussianDerivatives.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/ScaledGaussianDerivatives.lean",
+      "placement_rationale": "Actual uniformly scaled log-Gaussian derivatives, complex Gaussian estimates and real/complex derivative correspondence belong to Analysis/MellinTransform.",
+      "public_declarations": [
+        {
+          "kind": "theorem",
+          "line": 9,
+          "name": "scaledGaussian_generic"
+        },
+        {
+          "kind": "theorem",
+          "line": 14,
+          "name": "scaledGaussian_first_derivative"
+        },
+        {
+          "kind": "theorem",
+          "line": 22,
+          "name": "gaussianMellinProfile_zero_eq_coefficient"
+        },
+        {
+          "kind": "theorem",
+          "line": 26,
+          "name": "gaussianMellinProfile_zero_ne_zero"
+        },
+        {
+          "kind": "theorem",
+          "line": 33,
+          "name": "scaledGaussian_zero_no_uniform_bound"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK.Analysis.MellinTransform.Checks.Negative.ScaledGaussianMissingDomain"
+      ],
+      "runner": "python3 -B scripts/check_scaled_gaussian_derivatives.py",
+      "sha256": "4b3a1a55c2f80e7284cc89e6fa4a25c3dfbc0c246a8ec3af99a04af46434cb80",
+      "source_role": "positive-check",
+      "source_root": "GRWTSK",
+      "subject": "Analysis",
+      "target_path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/ScaledGaussianDerivatives.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Analysis/MellinTransform/scaled-gaussian-derivatives-checks-2026-10-15.json",
+        "source_sha256": "4b3a1a55c2f80e7284cc89e6fa4a25c3dfbc0c246a8ec3af99a04af46434cb80"
       },
       "working_tree_state": "untracked-at-selected-replay"
     },
@@ -23179,6 +23303,7 @@
         "GRWTSK",
         "GRWTSK.Analysis.MellinTransform.Checks.Positive.NormalizedGaussian",
         "GRWTSK.Analysis.MellinTransform.CompactGaussianWindow",
+        "GRWTSK.Analysis.MellinTransform.ScaledGaussianDerivatives",
         "GRWTSK.NumberTheory.LSeries.GaussianContour"
       ],
       "runner": "python3 -B scripts/check_normalized_gaussian.py",
@@ -23306,6 +23431,101 @@
         "lean": "see immutable selected replay receipt",
         "replay_binding": "evidence/Analysis/MellinTransform/reverse-mellin-checks-2026-10-15-r2.json",
         "source_sha256": "88d959d74d9d5e27772f57e847497b9a943167cc41ae6abb453c3932cbb84c57"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: actual GaussianDerivative supplier chain; Mathlib complex Gaussian/log/Cauchy/derivative authors retain individual credit"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/parent-scale-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Exact normalized P, real exponent a, natural derivative order n; one positive constant depending on(a,n), independent of r>0 and y in[1/2,2].",
+        "Actual complex principal-log Gaussian all-power norm bound, analytic disk and pinned Cauchy derivative estimate suppliers; no assumed desired bound wrapper.",
+        "Actual omitted-positive-domain obstruction at y0; no full arithmetic/Hecke/physical detector or RH supplier."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Analysis.MellinTransform.NormalizedGaussian",
+        "Mathlib.Analysis.Complex.Liouville",
+        "Mathlib.Analysis.Complex.RealDeriv",
+        "Mathlib.Analysis.SpecialFunctions.Complex.Analytic"
+      ],
+      "license": "Apache-2.0",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.Analysis.MellinTransform.ScaledGaussianDerivatives",
+      "namespaces": [
+        "GRWTSK.Analysis.MellinTransform.ScaledGaussianDerivatives"
+      ],
+      "object": "MellinTransform",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Analysis/MellinTransform/ScaledGaussianDerivatives.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Analysis/MellinTransform/ScaledGaussianDerivatives.lean",
+      "placement_rationale": "Actual uniformly scaled log-Gaussian derivatives, complex Gaussian estimates and real/complex derivative correspondence belong to Analysis/MellinTransform.",
+      "public_declarations": [
+        {
+          "kind": "def",
+          "line": 30,
+          "name": "gaussianLog"
+        },
+        {
+          "kind": "lemma",
+          "line": 33,
+          "name": "gaussianLog_ofReal"
+        },
+        {
+          "kind": "lemma",
+          "line": 35,
+          "name": "gaussianLog_power_bound"
+        },
+        {
+          "kind": "lemma",
+          "line": 53,
+          "name": "iteratedDeriv_restrict_positive"
+        },
+        {
+          "kind": "lemma",
+          "line": 66,
+          "name": "gaussianLog_analytic"
+        },
+        {
+          "kind": "lemma",
+          "line": 71,
+          "name": "gaussianLog_scaled_analytic"
+        },
+        {
+          "kind": "lemma",
+          "line": 76,
+          "name": "gaussianLog_scaled_disk_bound"
+        },
+        {
+          "kind": "lemma",
+          "line": 109,
+          "name": "gaussianLog_scaled_derivative_bound"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Analysis.MellinTransform.Checks.Positive.ScaledGaussianDerivatives"
+      ],
+      "runner": "python3 -B scripts/check_scaled_gaussian_derivatives.py",
+      "sha256": "2d1dbbcd5142807daa8a5b6719b0a7bf026aa90991fa030019ed2fc9c0178b0a",
+      "source_role": "library",
+      "source_root": "GRWTSK",
+      "subject": "Analysis",
+      "target_path": "GRWTSK/Analysis/MellinTransform/ScaledGaussianDerivatives.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Analysis/MellinTransform/scaled-gaussian-derivatives-checks-2026-10-15.json",
+        "source_sha256": "2d1dbbcd5142807daa8a5b6719b0a7bf026aa90991fa030019ed2fc9c0178b0a"
       },
       "working_tree_state": "untracked-at-selected-replay"
     },
@@ -25437,6 +25657,51 @@
         "Lean and Mathlib: upstream APIs and proofs"
       ],
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/parent-scale-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Finite actual PrefixInventory with full source/target/arrow tags, explicit fixed root and exact equality.",
+        "Actual checked parent/last-edge slots and trace-length rank, never assumed parent index decrease; terminating expansion must reconstruct original full traces.",
+        "Exact ordered keyed traces and actual occurrences recovered via existing Option unpack and valid-trace decoder. No slot-stability/byteoptimal/runtime claim."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.ParentTraceDictionary"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "logical_status": "intended rejected control; no theorem admission",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.ParentTraceMissingRoot",
+      "namespaces": [],
+      "object": "DirectedGraph/Checks/Negative",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/ParentTraceMissingRoot.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/ParentTraceMissingRoot.lean",
+      "placement_rationale": "Root-aware finite parent/edge dictionaries, terminating full-trace expansion and actual keyed occurrence reconstruction belong to Combinatorics/DirectedGraph.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B scripts/check_parent_trace_dictionary.py",
+      "sha256": "052573ca2d1b2d8ccf76810beb9ebebc5a522009afdbcac4750e10229b4b046f",
+      "source_role": "negative-control",
+      "source_root": "GRWTSK",
+      "subject": "Combinatorics",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/ParentTraceMissingRoot.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/parent-trace-dictionary-checks-2026-10-15.json",
+        "source_sha256": "052573ca2d1b2d8ccf76810beb9ebebc5a522009afdbcac4750e10229b4b046f"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
       "design_reference": "cache/research/path-mellin-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
       "explicit_premises": [
         "Actual Quiver.Path with typed endpoints; vertices chronological, toList reverse source order.",
@@ -25876,6 +26141,161 @@
         "lean": "see immutable selected replay receipt",
         "replay_binding": "evidence/Combinatorics/DirectedGraph/occurrence-prefix-checks-2026-10-15.json",
         "source_sha256": "0b746beb3ea685eac5a94e987b95280aa5a4135a5716c67e6ccf802d7d2de2b6"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/parent-scale-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Finite actual PrefixInventory with full source/target/arrow tags, explicit fixed root and exact equality.",
+        "Actual checked parent/last-edge slots and trace-length rank, never assumed parent index decrease; terminating expansion must reconstruct original full traces.",
+        "Exact ordered keyed traces and actual occurrences recovered via existing Option unpack and valid-trace decoder. No slot-stability/byteoptimal/runtime claim."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.ParentTraceDictionary"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.ParentTraceDictionary",
+      "namespaces": [
+        "GRWTSK.Combinatorics.DirectedGraph.ParentTraceDictionary.Checks.Positive"
+      ],
+      "object": "DirectedGraph/Checks/Positive",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/ParentTraceDictionary.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/ParentTraceDictionary.lean",
+      "placement_rationale": "Root-aware finite parent/edge dictionaries, terminating full-trace expansion and actual keyed occurrence reconstruction belong to Combinatorics/DirectedGraph.",
+      "public_declarations": [
+        {
+          "kind": "def",
+          "line": 16,
+          "name": "falseTag"
+        },
+        {
+          "kind": "def",
+          "line": 19,
+          "name": "trueTag"
+        },
+        {
+          "kind": "def",
+          "line": 22,
+          "name": "falseOccurrence"
+        },
+        {
+          "kind": "def",
+          "line": 25,
+          "name": "trueOccurrence"
+        },
+        {
+          "kind": "def",
+          "line": 28,
+          "name": "twiceOccurrence"
+        },
+        {
+          "kind": "def",
+          "line": 31,
+          "name": "backwardRows"
+        },
+        {
+          "kind": "theorem",
+          "line": 34,
+          "name": "backward_inventory"
+        },
+        {
+          "kind": "theorem",
+          "line": 40,
+          "name": "backward_nodes"
+        },
+        {
+          "kind": "theorem",
+          "line": 44,
+          "name": "actual_parent_index_later"
+        },
+        {
+          "kind": "def",
+          "line": 78,
+          "name": "repeatedRows"
+        },
+        {
+          "kind": "theorem",
+          "line": 92,
+          "name": "parallel_identity_preserved"
+        },
+        {
+          "kind": "theorem",
+          "line": 101,
+          "name": "missing_parent_rejected"
+        },
+        {
+          "kind": "theorem",
+          "line": 104,
+          "name": "self_cycle_rejected"
+        },
+        {
+          "kind": "theorem",
+          "line": 107,
+          "name": "self_cycle_not_validRanks"
+        },
+        {
+          "kind": "theorem",
+          "line": 114,
+          "name": "increasing_rank_rejected"
+        },
+        {
+          "kind": "theorem",
+          "line": 118,
+          "name": "nonzero_empty_rejected"
+        },
+        {
+          "kind": "theorem",
+          "line": 126,
+          "name": "same_empty_words"
+        },
+        {
+          "kind": "theorem",
+          "line": 129,
+          "name": "empty_roots_distinct"
+        },
+        {
+          "kind": "theorem",
+          "line": 132,
+          "name": "root_loss_counterexample"
+        },
+        {
+          "kind": "theorem",
+          "line": 137,
+          "name": "no_empty_word_root_decoder"
+        },
+        {
+          "kind": "theorem",
+          "line": 142,
+          "name": "explicit_roots_retained"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.ParentTraceMissingRoot"
+      ],
+      "runner": "python3 -B scripts/check_parent_trace_dictionary.py",
+      "sha256": "bf76ed65efcca287eb7d312994978944169752300bfdfd4aa30250b79b96bc11",
+      "source_role": "positive-check",
+      "source_root": "GRWTSK",
+      "subject": "Combinatorics",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/ParentTraceDictionary.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/parent-trace-dictionary-checks-2026-10-15.json",
+        "source_sha256": "bf76ed65efcca287eb7d312994978944169752300bfdfd4aa30250b79b96bc11"
       },
       "working_tree_state": "untracked-at-selected-replay"
     },
@@ -26525,6 +26945,208 @@
         "Lean and Mathlib: upstream APIs and proofs"
       ],
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/parent-scale-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Finite actual PrefixInventory with full source/target/arrow tags, explicit fixed root and exact equality.",
+        "Actual checked parent/last-edge slots and trace-length rank, never assumed parent index decrease; terminating expansion must reconstruct original full traces.",
+        "Exact ordered keyed traces and actual occurrences recovered via existing Option unpack and valid-trace decoder. No slot-stability/byteoptimal/runtime claim."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixInventory",
+        "Mathlib.Data.List.FinRange"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.ParentTraceDictionary",
+      "namespaces": [
+        "GRWTSK.Combinatorics.DirectedGraph.ParentTraceDictionary"
+      ],
+      "object": "DirectedGraph",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/ParentTraceDictionary.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Combinatorics/DirectedGraph/ParentTraceDictionary.lean",
+      "placement_rationale": "Root-aware finite parent/edge dictionaries, terminating full-trace expansion and actual keyed occurrence reconstruction belong to Combinatorics/DirectedGraph.",
+      "public_declarations": [
+        {
+          "kind": "abbrev",
+          "line": 36,
+          "name": "Node"
+        },
+        {
+          "kind": "structure",
+          "line": 39,
+          "name": "Representation"
+        },
+        {
+          "kind": "def",
+          "line": 45,
+          "name": "ValidRanks"
+        },
+        {
+          "kind": "def",
+          "line": 53,
+          "name": "expand"
+        },
+        {
+          "kind": "def",
+          "line": 72,
+          "name": "decodeSlot"
+        },
+        {
+          "kind": "def",
+          "line": 78,
+          "name": "expandDictionary"
+        },
+        {
+          "kind": "def",
+          "line": 83,
+          "name": "expandedPacked"
+        },
+        {
+          "kind": "def",
+          "line": 90,
+          "name": "decodeReferences"
+        },
+        {
+          "kind": "def",
+          "line": 97,
+          "name": "position"
+        },
+        {
+          "kind": "theorem",
+          "line": 102,
+          "name": "position_lookup"
+        },
+        {
+          "kind": "theorem",
+          "line": 108,
+          "name": "position_lt"
+        },
+        {
+          "kind": "def",
+          "line": 114,
+          "name": "nodeFor"
+        },
+        {
+          "kind": "def",
+          "line": 120,
+          "name": "encodedNodes"
+        },
+        {
+          "kind": "def",
+          "line": 123,
+          "name": "encode"
+        },
+        {
+          "kind": "theorem",
+          "line": 127,
+          "name": "encoded_lookup"
+        },
+        {
+          "kind": "theorem",
+          "line": 133,
+          "name": "parent_mem"
+        },
+        {
+          "kind": "theorem",
+          "line": 138,
+          "name": "parent_join"
+        },
+        {
+          "kind": "theorem",
+          "line": 149,
+          "name": "parent_rank_lt"
+        },
+        {
+          "kind": "theorem",
+          "line": 154,
+          "name": "nodeFor_empty_iff"
+        },
+        {
+          "kind": "theorem",
+          "line": 158,
+          "name": "encoded_validRanks"
+        },
+        {
+          "kind": "theorem",
+          "line": 172,
+          "name": "expand_encoded"
+        },
+        {
+          "kind": "theorem",
+          "line": 198,
+          "name": "decodeSlot_encoded"
+        },
+        {
+          "kind": "theorem",
+          "line": 207,
+          "name": "expandDictionary_encoded"
+        },
+        {
+          "kind": "theorem",
+          "line": 235,
+          "name": "expandedPacked_encode"
+        },
+        {
+          "kind": "theorem",
+          "line": 240,
+          "name": "decodeReferences_encode"
+        },
+        {
+          "kind": "theorem",
+          "line": 246,
+          "name": "decoded_valid"
+        },
+        {
+          "kind": "theorem",
+          "line": 255,
+          "name": "decoded_recovers"
+        },
+        {
+          "kind": "theorem",
+          "line": 264,
+          "name": "empty_mem_iff"
+        },
+        {
+          "kind": "theorem",
+          "line": 275,
+          "name": "empty_count"
+        },
+        {
+          "kind": "theorem",
+          "line": 283,
+          "name": "no_root_decoder"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.ParentTraceDictionary"
+      ],
+      "runner": "python3 -B scripts/check_parent_trace_dictionary.py",
+      "sha256": "c388e127a08238f465873954f0b6982ddbe556d0f77b252d4b2d8f89bf32237a",
+      "source_role": "library",
+      "source_root": "GRWTSK",
+      "subject": "Combinatorics",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/ParentTraceDictionary.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/parent-trace-dictionary-checks-2026-10-15.json",
+        "source_sha256": "c388e127a08238f465873954f0b6982ddbe556d0f77b252d4b2d8f89bf32237a"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
       "design_reference": "cache/research/path-mellin-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
       "explicit_premises": [
         "Actual Quiver.Path with typed endpoints; vertices chronological, toList reverse source order.",
@@ -27009,7 +27631,8 @@
       ],
       "reverse_consumers": [
         "GRWTSK",
-        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixInventory"
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixInventory",
+        "GRWTSK.Combinatorics.DirectedGraph.ParentTraceDictionary"
       ],
       "runner": "python3 -B scripts/check_prefix_inventory.py",
       "sha256": "fa7395f0c55943562274019d96e97e25deaea20defdf9d6f2d8a12d029e743c9",

@@ -179,6 +179,16 @@ mathematical contract does not verify operational byte compression or the
 relation-ID adapter. The [inventory decision](../../cache/decisions/prefix-inventory-v1.json)
 records those boundaries durably.
 
+The [root-aware parent dictionary](../mathematics/Combinatorics/DirectedGraph/parent-trace-dictionary.md)
+now expands a finite table of length ranks, parent references and actual
+last full edge tags to the complete prefix dictionary. It stores the root
+and original ordered references separately. Its Option expansion checks
+numeric lookups and decreasing ranks; actual encoded inventory proofs
+supply rooted edge validity. Generic rank-valid tables do not acquire a
+root/edge-join correctness theorem from those numeric checks. The
+[parent dictionary decision](../../cache/decisions/parent-trace-dictionary-v1.json)
+requires rank descent rather than an assumed ordering of numeric indices.
+
 See [cache operations](../how-to/cache.md), the
 [taxonomy](../../cache/taxonomy.json), and the
 [integration evidence](../../evidence/Logic/FiniteSequences/cache-integration-2026-10-15.json).

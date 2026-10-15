@@ -1,0 +1,53 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "scaled-gaussian-derivatives-formal",
+  "event": "frozen-complete-development",
+  "owner": "cache_adapter",
+  "at": "2026-10-15T21:05:39.836295+00:00",
+  "source_hashes": {
+    "GRWTSK/Analysis/MellinTransform/ScaledGaussianDerivatives.lean": "2d1dbbcd5142807daa8a5b6719b0a7bf026aa90991fa030019ed2fc9c0178b0a",
+    "GRWTSK/Analysis/MellinTransform/Checks/Positive/ScaledGaussianDerivatives.lean": "4b3a1a55c2f80e7284cc89e6fa4a25c3dfbc0c246a8ec3af99a04af46434cb80",
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/ScaledGaussianMissingDomain.lean": "11128d1302a4e430ed7d68ed2ee0904156efb3503d75abf438559cfaee260f16"
+  },
+  "freeze_event": "cache/coordination/events/scaled-gaussian-freeze-9064c682adc242f4ada8378a9789a239.json",
+  "status": "written-and-development-replayed-not-admitted",
+  "receipt": ".local/scaled-gaussian-derivatives/86325cb19597432387f3d1f74f4d3a2a/final/receipt.json",
+  "receipt_sha256": "8aeae3aeb33d118977acc2a6ace3162d2320a9c9601b1be6308121af44cafced",
+  "verification": {
+    "trust": 0,
+    "fatal_warnings": true,
+    "fresh_local_closure": "ReverseInversion,LogarithmicGaussian,NormalizedGaussian,ScaledGaussianDerivatives,acceptedpositive",
+    "accepted_stages": 5,
+    "source_and_object_family_stability": true,
+    "negative_error_count": 1,
+    "negative_expected_substring": "0 \u2208 Icc (1 / 2) 2",
+    "negative_actual": "Application type mismatch:0\u2208Icc0,2 supplied for0\u2208Icc(1/2),2",
+    "negative_only_complete_proofs": false,
+    "owned_complete_transitive_axiom_census": "NOT_RUN_ROOT_OWNS",
+    "native_jobs_running": 0,
+    "shared_lock": "RELEASED"
+  },
+  "mathematics": {
+    "exactcomplexextension": "gaussianLog(z)=coefficient*exp(-Complex.log(z)^2/4), actualofReal=P",
+    "suppliers": "nonzero-zallrealpowernormbound fromprincipalargument+squares; positive-real-partanalyticity; actualuniformradius1/4disk boundfory\u2208[1/2,2]; actualreal-complexiteratedderivrestriction; pinnedMathlibCauchywithDiffContOnClandspherepremisesproved",
+    "result": "foralla:\u211d,n:\u2115 existsC(a,n)>0 forallr>0,y\u2208[1/2,2],normD^n(P(r*x))(y)<=C*r^-a; C independentr,y",
+    "positive": "genericallorders;actualn1a1y1uniformC/r;P0=nonzerocoefficient;actualnoANYrealCuniformC/rforallpositiveraty0,n0",
+    "scope": "No uniformGderivative/Schwartzseminorm admission, ideal/Hecke/calibration/physical/RH/continuationoroperationalrefinementclaim"
+  },
+  "layout": {
+    "status": "FAIL373modules179findings:175baseline+4allocatedpendingrootcatalog/publicimport",
+    "log": ".local/scaled-gaussian-derivatives/86325cb19597432387f3d1f74f4d3a2a/math-layout.log",
+    "receipt": ".local/scaled-gaussian-derivatives/86325cb19597432387f3d1f74f4d3a2a/math-layout-result.json",
+    "new_naming_or_subject_violation": false
+  },
+  "source_review": "cache_taxonomy reviewingexactfrozenbytes; acceptance remainsrootfreshnative",
+  "failure_history": {
+    "directory": ".local/scaled-gaussian-derivatives/86325cb19597432387f3d1f74f4d3a2a/attempts",
+    "preserved": "libraryandpositivepassedfirstattempt;fullintentionalnegativevariant/logretained;canonicalfinalobjectcustodyreceiptretained",
+    "proof_statements_weakened": false
+  },
+  "licensing": "ExactprimaryGaussianDerivativeSHA/OpenAI/Apache2 andMathlibYuryKudryashov2022,S\u00e9bastienGou\u00ebzel2019+YourongZang,GeoffreyIrving2024credits retained;priornoticesunchanged",
+  "prior_sources_modified": false,
+  "commits_or_remote_writes": false,
+  "native_jobs_exited": true
+}

@@ -1,0 +1,13 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "scaled-gaussian-derivatives-formal",
+  "event": "dev-lock-released",
+  "at": "2026-10-15T21:03:38.074985+00:00",
+  "owner": "cache_adapter",
+  "attempt": ".local/scaled-gaussian-derivatives/86325cb19597432387f3d1f74f4d3a2a/attempts/Negative-attempt03",
+  "source_sha256": "30b249b5659be1b0f5126354766fd0102d89d02a605395fd3804d917764b015e",
+  "competing_jobs": [],
+  "receipt": ".local/scaled-gaussian-derivatives/86325cb19597432387f3d1f74f4d3a2a/attempts/Negative-attempt03.json",
+  "exit_code": 1,
+  "native_jobs_running": 0
+}
