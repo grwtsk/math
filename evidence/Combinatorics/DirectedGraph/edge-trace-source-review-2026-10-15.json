@@ -1,0 +1,241 @@
+{
+  "schema": "typed-edge-trace-source-review-v1",
+  "task": "cache/coordination/tasks/typed-edge-source-scout.json",
+  "at": "2026-10-15T19:31:36.507531+00:00",
+  "status": "complete-bounded-correlated-source-review",
+  "review_scope": {
+    "independent_validation": false,
+    "correlation": "Same agent team/model workflow; source/premise/control review only.",
+    "native_jobs_by_reviewer": "NOT_RUN",
+    "code_or_prior_shared_evidence_edits": false,
+    "commits_or_remote_effects": false
+  },
+  "final_bindings": {
+    "author_completion": {
+      "path": "cache/coordination/events/20261015T192908Z-edge-trace-complete-8d2bcd90.json",
+      "sha256": "b92927c3d78e17d5fa8afd1ca6dd357e4bdade7b35d196021dde7008c918dfd0"
+    },
+    "sources": [
+      {
+        "path": "GRWTSK/Combinatorics/DirectedGraph/EdgeTrace.lean",
+        "sha256": "360c97f7c5c82104870aa45fa0575972260238b91d13e4a96430e3259a600d8b",
+        "bytes": 8241
+      },
+      {
+        "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/EdgeTrace.lean",
+        "sha256": "2b4cc40b89f7f154a3f383e575c357799cf9b0a39d6a54f20d2a93f8a5626687",
+        "bytes": 3435
+      },
+      {
+        "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/EdgeTraceMissingJoin.lean",
+        "sha256": "5a741b2223cc92c5eeb3c800f3a4e2881d8fe8be71c4bd75aa5a1d117773695e",
+        "bytes": 1037
+      }
+    ],
+    "all_three_frozen_hashes_match": true,
+    "prior_frontier": {
+      "path": "cache/research/path-mellin-frontier-2026-10-15.json",
+      "sha256": "4936af6660294690276929545fdffab224af130cf16fa06c110823e4514b3307"
+    },
+    "pinned_context": [
+      {
+        "path": "lean-toolchain",
+        "sha256": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
+        "bytes": 25
+      },
+      {
+        "path": "lake-manifest.json",
+        "sha256": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
+        "bytes": 3577
+      },
+      {
+        "path": ".lake/packages/mathlib/Mathlib/Combinatorics/Quiver/Covering.lean",
+        "sha256": "cd917cebf3f69c14dd2596343577ddfa07783b1b73bd4e0e91a20b1a1be30f59",
+        "bytes": 12221
+      },
+      {
+        "path": ".lake/packages/mathlib/Mathlib/Combinatorics/Quiver/Path.lean",
+        "sha256": "9528a3551a251e8e72c253dca4a8854657fb4a9e74af440379af67cc7f419e2a",
+        "bytes": 14161
+      },
+      {
+        "path": ".lake/packages/mathlib/Mathlib/Combinatorics/Quiver/SingleObj.lean",
+        "sha256": "8fe88cb3039bf8304dcce492a11391ec3d67c26497301578481aa6b8d0b43106",
+        "bytes": 4431
+      },
+      {
+        "path": "GRWTSK/Combinatorics/DirectedGraph/PathOccurrences.lean",
+        "sha256": "b2b140e2f370d07ef866e81ebb93580ed706d64ad463377fcce82df37c4a39e5",
+        "bytes": 9344
+      }
+    ]
+  },
+  "actual_contract_review": {
+    "domain": "An arbitrary typed Quiver V and a fixed root r. TotalEdge V is Sigma source, Sigma target, source -> target, retaining actual arrow values and endpoint tags. Existing Quiver.PathStar r is reused, not replaced by a new path structure.",
+    "encoding": "taggedPrefunctor maps every source object to the existing SingleObj TotalEdge and every actual arrow to its source/target/arrow triple. encodePath composes actual mapPath with the previously checked chronological SingleObj edgeOccurrences. encode extends it to existing PathStar r.",
+    "validity": "ValidFrom r [] is True; ValidFrom r (edge::rest) requires edge.source=r and ValidFrom edge.target rest. finish follows all targets and keeps r on empty input; finish alone is not a validity check or invalid-list decoder.",
+    "injectivity": "tagged_star_injective proves injection on each entire outgoing star including varying targets. encode_injective explicitly invokes upstream Prefunctor.pathStar_injective, then existing SingleObj edge-list injectivity. It does not replace star injectivity by a weaker per-Hom condition or use covering surjectivity.",
+    "actual_construction": "decode r edges hvalid recursively constructs edge.toPath.comp suffix, transporting the actual first-source equality. encode_decode and decode_encode are proved on actual data; decode_endpoint identifies the typed endpoint with finish. pathStarEquivTrace is exactly PathStar r equivalent to the ValidFrom r subtype.",
+    "append": "Actual path composition encodes as chronological list append. finish_append and validFrom_append_iff retain the required boundary: second starts at finish r first. No adjacency condition is inferred from list concatenation alone.",
+    "assumptions": "No thinness/Hom-subsingleton, finite graph, acyclicity, DecidableEq V or inhabited alphabet assumption. The decoder is indexed by a validity proof; an executable JSON decoder is not supplied.",
+    "root_boundary": "Root is fixed by the equivalence parameter. A root-free empty edge list cannot distinguish nil paths at different vertices. No equivalence with all arbitrary tagged lists is stated.",
+    "finding": "No actionable omitted hypothesis, target/source-direction error, false roundtrip premise or covering-surjectivity inference found in the bounded final-source read."
+  },
+  "actual_controls": {
+    "positive": "The final positive module supplies actual Quiver Bool with Bool arrow values for every endpoint pair. outward false and outward true are two actual false->true paths with identical vertex lists but distinct full traces. The returning true->false path makes a valid length2 round trip. Actual encode/decode roundtrips, endpoint=false, nil-root preservation, wrong-root rejection and broken-join rejection are consumed.",
+    "negative": "The actual full trace is [firstEdge:false->true, brokenEdge:false->false]. valid_initial proves ValidFrom false [firstEdge] only. The failing call decode false [firstEdge,brokenEdge] valid_initial requires the missing full-list validity and is the intended Application type mismatch.",
+    "proved_counterexample_source_rule": {
+      "marker": "/- A valid initial edge does not prove the missing join for the full trace. -/",
+      "closure_appended": "end GRWTSK.Combinatorics.DirectedGraph.EdgeTrace.Checks.Negative",
+      "scope": "The derived source is the exact bytes before the unique comment marker followed by the explicitly recorded namespace closure. It is not described as an unmodified literal prefix. Both valid_initial and actual broken_join_rejected precede rejection.",
+      "author_derived_source_sha256": "4c8bce6dd84051b7d8700584987e2efed937fab313622be70b1d962c0f87a89a"
+    },
+    "author_status_scope": "Author completion reports development library, positive, derived counterexample source pass and sole intended full negative failure. Root fresh closure/census audit is separate; this review does not replay them."
+  },
+  "pinned_api_reuse": {
+    "lean": "leanprover/lean4:v4.33.0",
+    "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "occurrences": [
+      {
+        "path": ".lake/packages/mathlib/Mathlib/Combinatorics/Quiver/Covering.lean",
+        "name": "Quiver.Star",
+        "line": 58
+      },
+      {
+        "path": ".lake/packages/mathlib/Mathlib/Combinatorics/Quiver/Covering.lean",
+        "name": "Quiver.PathStar",
+        "line": 172
+      },
+      {
+        "path": ".lake/packages/mathlib/Mathlib/Combinatorics/Quiver/Covering.lean",
+        "name": "Prefunctor.pathStar",
+        "line": 180
+      },
+      {
+        "path": ".lake/packages/mathlib/Mathlib/Combinatorics/Quiver/Covering.lean",
+        "name": "Prefunctor.pathStar_injective",
+        "line": 188,
+        "hypothesis": "forall u, Injective (phi.star u)"
+      },
+      {
+        "path": ".lake/packages/mathlib/Mathlib/Combinatorics/Quiver/Path.lean",
+        "name": "Prefunctor.mapPath",
+        "line": 360
+      },
+      {
+        "path": ".lake/packages/mathlib/Mathlib/Combinatorics/Quiver/Path.lean",
+        "name": "Prefunctor.mapPath_comp",
+        "line": 374
+      },
+      {
+        "path": ".lake/packages/mathlib/Mathlib/Combinatorics/Quiver/SingleObj.lean",
+        "name": "Quiver.SingleObj.pathEquivList",
+        "line": 118
+      }
+    ],
+    "excluded_api": "Prefunctor.pathStar_surjective needs outgoing-star surjectivity; tagging into a SingleObj with labels from every possible source does not satisfy it. No full covering claim is made."
+  },
+  "fresh_primary_arxiv": {
+    "search_scope": "Bounded fresh primary search, with early exact-phrase queries returning no useful matches; selected quiver definition read only. No exhaustive search or novelty claim.",
+    "queries": [
+      "site:arxiv.org \"quiver\" \"path\" \"sequence of arrows\"",
+      "site:arxiv.org \"quiver\" \"paths\" \"concatenation\" \"parallel\"",
+      "site:arxiv.org quiver path algebra lecture notes",
+      "site:arxiv.org quiver path category composable arrows"
+    ],
+    "selected": {
+      "id": "1208.4410v1",
+      "url": "https://arxiv.org/pdf/1208.4410v1",
+      "local_path": ".local/typed-edge-source-scout/4534f3c3ab94435c820eeec3464d9e62/arxiv/1208.4410v1.pdf",
+      "sha256": "3d90ff57915629a4b978e5b41f9c6c16cbbab310152dcbf45e818fcc831e0b8a",
+      "bytes": 332203,
+      "license_uri": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+      "title": "Quiver Algebras, Path Coalgebras and co-reflexivity",
+      "authors": [
+        "S. Dascalescu",
+        "M. C. Iovanov",
+        "C. Nastasescu"
+      ],
+      "submitted_utc": "2012-08-22T01:45:20Z",
+      "version_url": "https://arxiv.org/abs/1208.4410v1",
+      "location": "Section1, end of PDF page2 and start of page3",
+      "correspondence": "The primary definition keeps distinct arrows, demands consecutive target/source matches, treats each vertex as its own length-zero path, and concatenates only at a matching endpoint. This supports the tagged-edge, valid-join and explicit-empty-root conventions.",
+      "limits": "The local actual equivalence and decoder are not stated to be theorem ports from the paper. No path coalgebra, algebraic reconstruction, finite-dual or bialgebra conclusion is imported.",
+      "license": "The abstract-page license link resolves to arxiv nonexclusive-distrib/1.0. This is article distribution metadata, not an Apache/CC source-code license; only concise attribution/paraphrase is used."
+    }
+  },
+  "fresh_official_anthropic_scout": {
+    "repository": "https://github.com/anthropics/formal-math",
+    "pin": "e1a4e6508154ea59f030480661590a9fe3018011",
+    "manifest": {
+      "path": ".local/typed-edge-source-scout/4534f3c3ab94435c820eeec3464d9e62/inspection-manifest.json",
+      "sha256": "13d80c8a9dee87ecdc3e5a2586cb4bc239149461158950913f44e33a6db0057f"
+    },
+    "source": {
+      "pin": "e1a4e6508154ea59f030480661590a9fe3018011",
+      "path": "3sum-apsp/ThreeSumApsp/Sec3/Theorem21b/PathsAndWalks.lean",
+      "url": "https://raw.githubusercontent.com/anthropics/formal-math/e1a4e6508154ea59f030480661590a9fe3018011/3sum-apsp/ThreeSumApsp/Sec3/Theorem21b/PathsAndWalks.lean",
+      "local_path": ".local/typed-edge-source-scout/4534f3c3ab94435c820eeec3464d9e62/anthropic/3sum-apsp/ThreeSumApsp/Sec3/Theorem21b/PathsAndWalks.lean",
+      "git_blob": "9c81a4c44bf54ff9180199bfc4d0bdf564718927",
+      "sha256": "dd2e0d199859027fc481934d523853fe12757d63daf929ec849f4db70d65c363",
+      "bytes": 5628
+    },
+    "fresh_raw_fetch_and_git_blob_verified": true,
+    "exact_source_role": "The reread actual PathsAndWalks source uses EndStatement.Path for w:Fin n->Fin n->Option Int and shows correspondence with vertex-list walks with finite WithTop weight. Its source graph stores one optional weight per ordered vertex pair.",
+    "limits": "The correspondence preserves endpoints and total weights, not arbitrary parallel-arrow/path identity. It cannot supply the general TotalEdge equivalence or remove ValidFrom. No code is ported from this file; no source-language/refinement theorem is inferred.",
+    "prior_defining_source_review": {
+      "path": "evidence/Combinatorics/DirectedGraph/path-occurrences-source-review-2026-10-15.json",
+      "sha256": "c8c55d6759e05a118ab1e0de7eb5be6fcbc5f76ec601d06aa4c020c9b91ca9f6"
+    },
+    "rights": "Original Anthropic,PBC2026 Apache-2.0/SPDX header retained in raw snapshot. Upstream native replay NOT_RUN."
+  },
+  "operational_sidecar_scope_at_review": {
+    "sources": [
+      {
+        "path": "scripts/cache_occurrences.py",
+        "sha256": "1ff39b1a99d8167f5ece162861cbcd8c04741edb92494ee8579df971df371868",
+        "bytes": 6925
+      },
+      {
+        "path": "scripts/test_cache_occurrences.py",
+        "sha256": "ec3469e37ab923ac558e1ada0493f086aa9a45b5aa1fff51165594b6dc6e92d3",
+        "bytes": 7846
+      },
+      {
+        "path": "scripts/cache_taxonomy.py",
+        "sha256": "d0691c4efd77961dd1895924f1bd2c5f8a4d7c8f24974bf0d1eb3ba3682874a9",
+        "bytes": 24219
+      },
+      {
+        "path": "scripts/cache_math.py",
+        "sha256": "81f7d48a575ee212d8fac9bad812cc93c3c4ace3eae031ae82acabac2c44d424",
+        "bytes": 35863
+      },
+      {
+        "path": "cache/taxonomy.json",
+        "sha256": "072a431bca2c960488c7681d4fb316db2135a7f91d2e181f5664db610e0103fa",
+        "bytes": 19573
+      }
+    ],
+    "observed_progress": "Root added a separate math-cache-occurrence-trace-v1 sidecar; taxonomy v1 and its same-role/source/target duplicate guard remain. The current pure validator checks ordered/repeated exact relation IDs/content hashes, expected source-snapshot identity, exact taxonomy bytes/revision, canonical root/end, common relation role/direction, indices and all joins. It always reports proof and Lean/runtime refinement not-established.",
+    "remaining_bridge": "A root/tagged-arrow interpretation relating these JSON rows to the Lean equivalence is still unproved. Source snapshot and taxonomy bindings are supplied separately; passing does not prove historical containment of taxonomy in the source snapshot. No operational all-path unfolding or authentication/authorization theorem follows.",
+    "read_only_review": "No actionable role/identity acceptance bypass observed. Root separately hardened huge-integer/overflow-float JSON parser cases after review; this task ran no operational tests or native jobs."
+  },
+  "attribution": "Local source MIT: R.A. Jacob Martone human mathematical direction and OpenAI Codex implementation assistance. Mathlib Covering credits Antoine Labelle and Remi Bottinelli, SingleObj Antoine Labelle, Path David Waern/Kim Morrison/Matteo Cipollina/Runtian Zhou; original Apache-2.0 imports retained. Review is correlated, no novelty claim.",
+  "preserved_development_boundaries": {
+    "initial_failed_source": "3b153adb71168f1ffabcc05ccf2b2ff00ce004d498a5e275c7c486d7db5995e7",
+    "failed_reason": "Preserved first library unused pattern-binder linter rejection and exact source variant; no proof admitted from it",
+    "layout": {
+      "log": ".local/typed-edge-trace/layout.log",
+      "sha256": "e524e3f8e32767fb2e7e3861ea819e88de4bf8e566df63d8fcf8edb19eb8adc5",
+      "owned_findings": "Only expected new active_sources registrations and library public-closure bookkeeping; parent owns these. No new subject/path ban findings."
+    },
+    "root_native_receipt_pointer": "evidence/Combinatorics/DirectedGraph/edge-trace-checks-2026-10-15.json",
+    "rule": "Failed source variants/layout observations stay historical; source hashes and metadata rebinding are not native acceptance."
+  },
+  "remaining_limits": [
+    "No arbitrary DAG unfolding/tree theorem or reachability-to-proof-implication identification.",
+    "No incoming taxonomy/classification candidate source edit, import, receipt rebinding or NOT_RUN promotion.",
+    "No215-method identity inventory, general catalog completeness, independent validation or whole-library acceptance."
+  ]
+}

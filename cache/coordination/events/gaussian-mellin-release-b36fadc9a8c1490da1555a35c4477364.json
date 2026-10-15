@@ -1,0 +1,13 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "gaussian-mellin-formal",
+  "event": "dev-lock-released",
+  "at": "2026-10-15T19:26:07.905033+00:00",
+  "owner": "cache_adapter",
+  "attempt": ".local/gaussian-mellin/443dbc4e8fbf4163a17f18a28e2b9e8f/attempts/Positive-attempt03",
+  "source_sha256": "cf1f715ac68dc2303c4d01c4b277cc1e0aed8dcdc683e553f089d7e0b44adcc8",
+  "competing_jobs": [],
+  "receipt": ".local/gaussian-mellin/443dbc4e8fbf4163a17f18a28e2b9e8f/attempts/Positive-attempt03.json",
+  "exit_code": 0,
+  "native_jobs_running": 0
+}

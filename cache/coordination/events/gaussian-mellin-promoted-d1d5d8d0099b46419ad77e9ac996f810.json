@@ -1,0 +1,28 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "gaussian-mellin-formal",
+  "event": "complete-source-promotion",
+  "at": "2026-10-15T19:29:01.240663+00:00",
+  "owner": "cache_adapter",
+  "source_hashes": {
+    "GRWTSK/Analysis/MellinTransform/LogarithmicGaussian.lean": "cd47e598796f4f901ddea56dd05bb9e719534e1aac5589c1be6ddfb8d9fea66d",
+    "GRWTSK/Analysis/MellinTransform/Checks/Positive/LogarithmicGaussian.lean": "77518c3affd6b19974827e5cdc7ce7504b120ab0f902965c116fa3b5281d8ae1",
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianMissingPremise.lean": "5b789bdbed857454d57e44d0ef289a5d786c3265948031a87b6049ad875a6a59"
+  },
+  "basis": "Ignored scratch generic complex-width all-complex transform/convergence, actual nonzero prior-Gaussian consumer, and complete positive controls including actual zero-width divergence pass. Sole intended negative rejects nonnegative width as evidence of strictly positive real part.",
+  "counterexample_location": "GRWTSK/Analysis/MellinTransform/Checks/Positive/LogarithmicGaussian.lean",
+  "counterexample_namespace": "GaussianWidthControl",
+  "counterexample_declarations": [
+    "zero_width_profile",
+    "zero_width_nonnegative",
+    "zero_width_not_convergent"
+  ],
+  "counterexample_audit_policy": "Complete named counterexample lives in the accepted positive control module and must be included in the root owned-declaration census; negative imports that module. No rejected full-file elaboration is used as evidence for its proof.",
+  "negative_marker": "-- Intended rejection:",
+  "negative_expected_substrings": [
+    "Application type mismatch",
+    "0 < Complex.re 0"
+  ],
+  "native_jobs_running": 0,
+  "next": "Final canonical fresh selected native development sequence under shared lock; root complete closure/census/registration remains pending."
+}

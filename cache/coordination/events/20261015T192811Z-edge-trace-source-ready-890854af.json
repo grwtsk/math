@@ -1,0 +1,17 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "typed-edge-trace-formal",
+  "owner": "indexed_dictionary",
+  "kind": "source-ready",
+  "at": "2026-10-15T19:28:11.086685+00:00",
+  "source_hashes": {
+    "GRWTSK/Combinatorics/DirectedGraph/EdgeTrace.lean": "360c97f7c5c82104870aa45fa0575972260238b91d13e4a96430e3259a600d8b",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/EdgeTrace.lean": "2b4cc40b89f7f154a3f383e575c357799cf9b0a39d6a54f20d2a93f8a5626687",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/EdgeTraceMissingJoin.lean": "5a741b2223cc92c5eeb3c800f3a4e2881d8fe8be71c4bd75aa5a1d117773695e"
+  },
+  "development": "library+generic/actual positive trust0/fatal pass; negative sole intended missing-join application mismatch. Separate proved-prefix attempt deferred on shared lock, no child launched. Fresh complete closure and census remain root-owned.",
+  "scratch": ".local/typed-edge-trace",
+  "api_scout": ".local/typed-edge-trace/api-scout.json",
+  "whitespace": ".local/typed-edge-trace/final-whitespace.json",
+  "operational_boundary": "No JSON/runtime refinement, covering assumption, arbitrary DAG unfolding, or mathematical role identification."
+}

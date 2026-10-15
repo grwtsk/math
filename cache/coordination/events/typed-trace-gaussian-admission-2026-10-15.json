@@ -1,0 +1,85 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "typed-edge-trace-round",
+  "event": "selected-acceptance-and-actual-runtime-consumer",
+  "at": "2026-10-15T19:41:28.826741+00:00",
+  "selected": [
+    {
+      "source": {
+        "path": "GRWTSK/Combinatorics/DirectedGraph/EdgeTrace.lean",
+        "sha256": "e1e5f2dd23b6c04a734af4bd95f3f19c15fe4f313d66c5bccff08b3312fb2a59"
+      },
+      "native_receipt": {
+        "path": "evidence/Combinatorics/DirectedGraph/edge-trace-checks-2026-10-15.json",
+        "sha256": "5226ba076cfdf2c4509926bca7056216b37165e5387f55a9f4af2df85edeb275"
+      },
+      "owned_declarations": 80,
+      "owned_modules": [
+        {
+          "declarations": 18,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences"
+        },
+        {
+          "declarations": 46,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.EdgeTrace"
+        },
+        {
+          "declarations": 11,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.EdgeTrace"
+        },
+        {
+          "declarations": 5,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.EdgeTraceCounterexample"
+        }
+      ],
+      "integration": {
+        "path": "evidence/Combinatorics/DirectedGraph/edge-trace-integration-2026-10-15.json",
+        "sha256": "dd63f5b0d909e16ee230d18752a491f043415feec934eaa32aaf3a12ddb0e176"
+      }
+    },
+    {
+      "source": {
+        "path": "GRWTSK/Analysis/MellinTransform/LogarithmicGaussian.lean",
+        "sha256": "cd47e598796f4f901ddea56dd05bb9e719534e1aac5589c1be6ddfb8d9fea66d"
+      },
+      "native_receipt": {
+        "path": "evidence/Analysis/MellinTransform/logarithmic-gaussian-checks-2026-10-15.json",
+        "sha256": "1fffe550e46069344cd79b4d0808e05d9c7ede544345010f45cba0aa5f51f028"
+      },
+      "owned_declarations": 46,
+      "owned_modules": [
+        {
+          "declarations": 23,
+          "module": "GRWTSK.Analysis.MellinTransform.ReverseInversion"
+        },
+        {
+          "declarations": 20,
+          "module": "GRWTSK.Analysis.MellinTransform.LogarithmicGaussian"
+        },
+        {
+          "declarations": 3,
+          "module": "GRWTSK.Analysis.MellinTransform.Checks.Positive.LogarithmicGaussian"
+        }
+      ],
+      "integration": {
+        "path": "evidence/Analysis/MellinTransform/logarithmic-gaussian-integration-2026-10-15.json",
+        "sha256": "6afd2aebe587674f2507a41b72410370129e3cca43c200060adf7a53d46b1a40"
+      }
+    }
+  ],
+  "cache_revision": "df7c8b4245aad7e5866121690735cb5eb4e3e4726ee0757a37bac16cadc683fd",
+  "runtime_consumer": {
+    "path": "evidence/Combinatorics/DirectedGraph/occurrence-trace-consumer-2026-10-15.json",
+    "sha256": "8be3d5166b528c710433d34667a63ed75928d1d6f45d24693d2e7ab75d64c851"
+  },
+  "frontier": {
+    "path": "cache/research/typed-trace-gaussian-frontier-2026-10-15.json",
+    "sha256": "b54037b6a488c459ead203681c09fe22036c5b8042e02144ac1e89324afa3e47"
+  },
+  "continuation": {
+    "path": "cache/coordination/continuations/2026-10-15-typed-trace-gaussian.json",
+    "sha256": "e0cee642ca277bd27cdf4b8447bd6853fb9f2edaaa49adb3576c8f5a594b8f36"
+  },
+  "limits": "Native mathematical acceptance and bounded operational checks kept distinct; no model independence, runtime refinement, RHSupplier or remote effect.",
+  "remote_actions": []
+}

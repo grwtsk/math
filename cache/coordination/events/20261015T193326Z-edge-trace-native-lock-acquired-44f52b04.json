@@ -1,0 +1,10 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "typed-edge-trace-formal",
+  "owner": "indexed_dictionary",
+  "at": "2026-10-15T19:33:26.050949+00:00",
+  "kind": "native-lock-acquired",
+  "source": "GRWTSK/Combinatorics/DirectedGraph/EdgeTrace.lean",
+  "source_sha256": "e1e5f2dd23b6c04a734af4bd95f3f19c15fe4f313d66c5bccff08b3312fb2a59",
+  "guard_competing_jobs": []
+}

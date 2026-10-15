@@ -1,0 +1,85 @@
+{
+  "schema": "bounded-operational-controls-v1",
+  "at": "2026-10-15T19:34:02.980514+00:00",
+  "outcome": "passed",
+  "source_hashes": {
+    "scripts/cache_occurrences.py": "1ff39b1a99d8167f5ece162861cbcd8c04741edb92494ee8579df971df371868",
+    "scripts/test_cache_occurrences.py": "ec3469e37ab923ac558e1ada0493f086aa9a45b5aa1fff51165594b6dc6e92d3",
+    "scripts/cache_taxonomy.py": "d0691c4efd77961dd1895924f1bd2c5f8a4d7c8f24974bf0d1eb3ba3682874a9",
+    "scripts/cache_math.py": "81f7d48a575ee212d8fac9bad812cc93c3c4ace3eae031ae82acabac2c44d424",
+    "scripts/check_edge_trace.py": "647b8ac27b238bee45ee3e2baa909e79b0acc257cc39e9a6c1bb04aea995806c",
+    "scripts/check_logarithmic_gaussian.py": "3a5ea221a92b24d3dc0751a220bc75bcb3254fad9b14532137c9f0602fc3cb7e",
+    "scripts/test_typed_replay_guards.py": "8310dfeed2d23971568c9d4a9b1efa3a3e0e58e5db6f343c117bb76f5959061c"
+  },
+  "occurrence_tests": {
+    "at": "2026-10-15T19:26:00.018910+00:00",
+    "results": [
+      {
+        "argv": [
+          "python3",
+          "-B",
+          "scripts/test_cache_occurrences.py"
+        ],
+        "exit_code": 0,
+        "log": ".local/typed-edge-trace/root/occurrence-tests-normal.log",
+        "sha256": "3cab2fcf2d072652f17982a5774f74101ad4afcfb27baeea68d5a9c9d3fdf57b",
+        "tail": ".....................\n----------------------------------------------------------------------\nRan 21 tests in 0.014s\n\nOK\n"
+      },
+      {
+        "argv": [
+          "python3",
+          "-B",
+          "-O",
+          "scripts/test_cache_occurrences.py"
+        ],
+        "exit_code": 0,
+        "log": ".local/typed-edge-trace/root/occurrence-tests-optimized.log",
+        "sha256": "d0de71bb4e368440f092c46933fda2fa073aba07faf308f3a3c208cd23955b74",
+        "tail": ".....................\n----------------------------------------------------------------------\nRan 21 tests in 0.015s\n\nOK\n"
+      }
+    ],
+    "source_hashes": {
+      "scripts/cache_occurrences.py": "1ff39b1a99d8167f5ece162861cbcd8c04741edb92494ee8579df971df371868",
+      "scripts/test_cache_occurrences.py": "ec3469e37ab923ac558e1ada0493f086aa9a45b5aa1fff51165594b6dc6e92d3",
+      "scripts/cache_taxonomy.py": "d0691c4efd77961dd1895924f1bd2c5f8a4d7c8f24974bf0d1eb3ba3682874a9",
+      "scripts/cache_math.py": "81f7d48a575ee212d8fac9bad812cc93c3c4ace3eae031ae82acabac2c44d424"
+    }
+  },
+  "replay_guard_tests": [
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "scripts/test_typed_replay_guards.py"
+      ],
+      "exit_code": 0,
+      "test_methods": 2,
+      "object_family_scenarios": 18
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "-O",
+        "scripts/test_typed_replay_guards.py"
+      ],
+      "exit_code": 0,
+      "test_methods": 2,
+      "object_family_scenarios": 18
+    }
+  ],
+  "case_summary": [
+    "Exact actual communication-edge and empty fixed-root positive consumers.",
+    "Repeated edge identities retain separate positions in synthetic dependency cycle; no synthetic methods written to live taxonomy.",
+    "Wrong root, broken joins, endpoint tampering, dangling relation IDs and whole-relation content rewrites rejected.",
+    "Exact source snapshot, taxonomy revision and raw-byte bindings required; semantic JSON equality does not substitute for raw-byte identity.",
+    "Mixed relation roles, reversed direction, boolean/gapped indices, false proof authority and extra schema fields rejected.",
+    "Bounded input/step counts, duplicate keys, nonfinite/overflow floats, oversized integer tokens, UTF8 and JSON syntax checks.",
+    "Both selected drivers reject generated object mutations, missing/new family members and symlinks; all coded/plain error diagnostics counted."
+  ],
+  "limits": [
+    "Bounded operational controls, not a Lean/Python/hash/zlib/OS/IO refinement proof.",
+    "Source snapshot and taxonomy are separately bound; taxonomy is not contained by that Lean-source manifest.",
+    "Current taxonomy schema and duplicate-edge guard unchanged;215 method identities unprovided; no trace confers proof or permission."
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "typed-edge-trace-formal",
+  "owner": "indexed_dictionary",
+  "at": "2026-10-15T19:33:36.275753+00:00",
+  "kind": "native-lock-released",
+  "source": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/EdgeTraceCounterexample.lean",
+  "exit_code": 0,
+  "all_native_children_exited": true,
+  "log": ".local/typed-edge-trace/logs/20261015T193335.634039Z-EdgeTraceCounterexample.log"
+}
