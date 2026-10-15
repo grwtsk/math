@@ -1,0 +1,21 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "state-coupled-source-scout",
+  "owner": "cache_taxonomy",
+  "at": "2026-10-15T23:46:34.994193+00:00",
+  "kind": "frozen-source-review-complete",
+  "review": {
+    "path": "evidence/Combinatorics/DirectedGraph/prefix-table-reindex-source-review-2026-10-15.json",
+    "sha256": "cf730a892d74e0bfb994146e9a7902339dced9b9138228745dcc6454515d3368",
+    "bytes": 16125
+  },
+  "source_hashes": {
+    "GRWTSK/Combinatorics/DirectedGraph/PrefixTableReindex.lean": "83fc343c02d16384124ce39ed4b3f996f7a7000ee4dbba05d2015b153a9aa53c",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableReindex.lean": "9011fabcd634118e2278a5bda4dabeb47e730ec41bdf63bd1a96ab29335dae57",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixReindexStaleRoleIds.lean": "a4a1548df828aa4b32cbdc171addfca6f1394dbc447fc75e43fd2c87fb5afcb6"
+  },
+  "native_status": "NOT_RUN",
+  "review_scope": "Correlated same-team exact-source/premise/control/credit review; no independent validation or native acceptance. Parent receipts remain separate.",
+  "finding": "No actionable premise omission observed; raw numeric laws do not authenticate root/joins. Actual State root retained even empty; inverse certificate restoration requires bijection/own-pack entries binding.",
+  "next_record_pending": "cache/research/state-coupled-next-gates-2026-10-15.json"
+}

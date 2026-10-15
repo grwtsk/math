@@ -1,0 +1,27 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "state-coupled-source-scout",
+  "owner": "cache_taxonomy",
+  "at": "2026-10-15T23:41:23.198191+00:00",
+  "kind": "immutable-source-review-complete",
+  "review": {
+    "path": "evidence/Analysis/Calculus/compact-cutoff-source-review-2026-10-15.json",
+    "sha256": "eb8fc2d8b78dc188f023242d585ccd9d5127dda0253bb76e88208b92adbcff9b",
+    "bytes": 12606
+  },
+  "author_freeze": {
+    "path": "cache/coordination/events/gaussian-coupled-source-freeze-eee01ed1ff2c40a48a445fea94e78c51.json",
+    "sha256": "a3ca4c757a1e59879d351fd188d85283e8ad72808b0391561d19142982e3030b",
+    "bytes": 1155
+  },
+  "all_joint_source_hashes": {
+    "GRWTSK/Analysis/Calculus/CompactCutoff.lean": "c6ff2d2f5346607bb62c7234a4bfe35a0e308cc427fa8c9c26ac6b06b7838172",
+    "GRWTSK/Analysis/MellinTransform/GaussianCoupledSeparation.lean": "904f3991a65106ee9c0a93f575ba536eec2645d64cff7ff3d9a16de8f389e6fc",
+    "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianCoupledSeparation.lean": "77a69b9e75bcf5d59a8cff75786b2ca900d9d14e79aad0ccc939a182980baff4",
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianCoupledMissingActive.lean": "2ffc3c2f2e3e173703e599c0907e6fac798142dfcf5556f4b69eae29ab3b38f8"
+  },
+  "finding": "No actionable omitted transition/support/Schwartz/finite-product activation premise observed in the frozen generic cutoff and its selected shared positive controls.",
+  "native_status": "NOT_RUN",
+  "review_character": "Correlated source/premise/control/credit review, not independent validation. Shared native census root-owned,countonce.",
+  "preservation": "No shared source/docs/registries/native/Git/remote writes. Failed/stale variants, corrected raw anchors, historical source gaps and incoming custody/NOT_RUN retained."
+}

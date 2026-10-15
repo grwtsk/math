@@ -1,0 +1,38 @@
+{
+  "schema": "repository-design-decision-v1",
+  "id": "prefix-state-reindex-v1",
+  "at": "2026-10-15T23:46:58.589637+00:00",
+  "previous_record": {
+    "path": "cache/decisions/relation-table-reindex-v1.json",
+    "sha256": "3fdd964e098caf50411d44a7b14ef8bf0d156e340e37f162e6ad27c5295b1a9f"
+  },
+  "choice": "Transport an actual structurally well-formed retained-root prefix-table state through the actual source-target-role-preserving injective full-tag map. Preserve ranks, parent slots and ordered real references, derive actual lookup/cell/decoder naturality. Reuse a certificate only after proved inverse transport to its exact old rooted entries.",
+  "premises": [
+    "mapEdge and mapTrace use the actual source-target-role-preserving quiver prefunctor. mapNode changes only its actual last edge; transport maps the actual stored root and every complete dictionary trace while copying numeric ranks, parent slots and ordered real references.",
+    "mapTrace_idxOf is proved by actual list equality search under relation-index injectivity; map_cell then derives the exact new stored cell equation. transport_wellFormed proves dictionary Nodup, prefix closure, rooted validity, exact cells and reference bounds for an arbitrary old WellFormed State. Both old/new full-tag DecidableEq are explicit; no Key equality is required.",
+    "expand_map and decodeSlot_map prove the actual numeric lookup/rank/fuel recursion commutes for all stored node arrays without WellFormed or injectivity. unpack_transport proves actual ordered dictionary lookup naturality without WellFormed or injectivity. expandDictionary_transport and decode_transport derive actual well-formed stored parent and real-row decoder laws.",
+    "compact_decode_commutes compares actual decoded compacted histories, not raw compacted State values. It requires arbitrary old WellFormed state and injective table map, with old/new full-tag equality.",
+    "restoreState actually invokes the new State Option decoder, inverse-maps its full typed traces under bijection, and uses the actual stored new root underlying V value to pack common OLD rooted payloads. restore_transport derives its exact output for actual transported old WellFormed states. certified_transport requires an explicit Certificate whose entries equal those actual old derived rooted rows; it consumes certificate.reuse_of_same_decoding against the certificate own pack and separately retains outer root equality, including empty rows. Rooted repacking additionally requires DecidableEq V."
+  ],
+  "native_evidence": {
+    "path": "evidence/Combinatorics/DirectedGraph/prefix-table-reindex-integration-2026-10-15.json",
+    "sha256": "b165f5d4f5d01a7360cf9c61ec1fdbd5ab71f08374aaa30184f100aa979bf2fa"
+  },
+  "checked_boundaries": [
+    "Actual source producer creates D=[[oldTag0],[],[oldTag1]] and exact stored nodes [(1,parent1/tag0),(0,none),(1,parent1/tag1)]. Real refs [(11,0),(11,0)] retain repeated keys and occurrence identity; an unused parallel branch remains stored.",
+    "Actual swap relation0/2 yields D=[[newTag2],[],[newTag1]], mapped final tags, unchanged node rank/parent numbers, unchanged refs, root value false. Actual expand/decodeSlot at child slot0 use parent slot1, so no parent-before-child numeric ordering is assumed.",
+    "Actual checked real decoding yields two full newTag2 histories; actual recoverRows through PrefixTableCompaction.realRows recovers the two mapped actual Quiver paths. Semantic compaction commutation and explicit old certificate actual restoration are consumed.",
+    "Stale actual typed new relationID0 gives a table whose numeric rank/lookup/reference bounds and actual numeric decoder all pass, producing two newTag0 rows, while actual stored-root validity fails and WellFormed is false. Sole negative deliberately supplies updated.kind new0=false to EdgeTrace.ValidFrom stale.root [newTag0].",
+    "Empty State transport still retains distinct root values A/B although actual empty real decode is Some[]."
+  ],
+  "operational_boundary": "Relation identities and parent storage slots are different indices. This is mathematical state transport; operational parser, strings, hashes, JSON/zlib/IO and transaction refinement remain separate. No new criterion or permission authority is inherited.",
+  "open_obligations": [
+    "Actual numeric parent/reference decoder checks numeric lookup/rank/fuel, not root/joins. Semantic validity follows from old WellFormed and proven transported WellFormed, not arbitrary hostile tables.",
+    "Injectivity is required for full-tag/trace injection, search/cell and structural invariant preservation; generic mapping/validity/numeric expansion/unpack laws use only actual source/target/role preservation. Global inverse and common OLD certificate restoration require actual bijectivity.",
+    "Root wrappers have different table-indexed types; transport_root compares their underlying V values. restoreState stores that V root per restored row, while certified_transport separately retains outer root equality even for zero rows.",
+    "No raw compaction State equality, stable relation IDs, parent-slot reindexing, automatic criterion inheritance, total inverse for injection-only maps, arbitrary hostile semantic validation, runtime/JSON/hash refinement or taxonomy duplicate-edge guard change is claimed.",
+    "Update/composition naturality for arbitrary stored State is a separate future gate; it is not supplied by current static transport laws.",
+    "16 declared families/215 declared total do not supply215 actual method identities."
+  ],
+  "authority": "Durable local mathematical/design decision only; foreign research specifications confer no policy/authority or remote permission."
+}

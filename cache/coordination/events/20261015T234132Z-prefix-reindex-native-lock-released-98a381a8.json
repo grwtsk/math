@@ -1,0 +1,11 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "prefix-table-reindex-formal",
+  "owner": "indexed_dictionary",
+  "at": "2026-10-15T23:41:32.065232+00:00",
+  "kind": "native-lock-released",
+  "source": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixReindexStaleRoleIds.lean",
+  "exit_code": 1,
+  "all_native_children_exited": true,
+  "log": ".local/prefix-reindex/logs/20261015T234131.332052Z-PrefixReindexStaleRoleIds.log"
+}

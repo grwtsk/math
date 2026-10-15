@@ -72,9 +72,10 @@ adaptation/formalization/checking: OpenAI Codex. Correlated review is not
 independent validation.
 
 This quantity differs from the prior dyadic Gaussian-window seminorms.
-Coupled separation and active cutoff construction, density use in physical
-rows, row majorants, ideals/Hecke/calibration, the original detector and RH
-remain open. No novelty, whole-library or operational cache-refinement
+The [coupled separation result](gaussian-coupled-separation.md) now constructs
+an actual active cutoff and uses this same log-window density in a finite-family
+Fourier inverse identity. Density use in physical rows, common finite support,
+row majorants, ideals/Hecke/calibration, the original detector and RH remain open. No novelty, whole-library or operational cache-refinement
 acceptance is inferred.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
