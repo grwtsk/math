@@ -1,0 +1,279 @@
+{
+  "schema": "bounded-formal-research-next-gates-v1",
+  "at": "2026-10-15T20:03:56.043039+00:00",
+  "owner": "cache_taxonomy",
+  "task": "unfolding-normalized-next-gates",
+  "branch": "main",
+  "base_commit_observed": "742630e4e406bdcc9b2c0be8b190e7151c004417",
+  "status": "NOT_RUN_NEXT_GATES_ONLY",
+  "purpose": "Durable exact candidate contracts for the next bounded round. Existing source identity is preserved separately from new proof obligations; no new implementation or theorem acceptance is asserted.",
+  "bound_local_sources": [
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/PathUnfolding.lean",
+      "sha256": "8d5e2187d705ab49c52a41779b48b445d0baa223c3608ea6495e670ddac24757",
+      "bytes": 10317
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/EdgeTrace.lean",
+      "sha256": "e1e5f2dd23b6c04a734af4bd95f3f19c15fe4f313d66c5bccff08b3312fb2a59",
+      "bytes": 8301
+    },
+    {
+      "path": "GRWTSK/Analysis/MellinTransform/NormalizedGaussian.lean",
+      "sha256": "a0ed0dbf644601887df128536951a9c3e17ecf42970069a13acdfcb93518e3bf",
+      "bytes": 6685
+    }
+  ],
+  "bound_source_reviews": [
+    {
+      "path": "evidence/Combinatorics/DirectedGraph/path-unfolding-source-review-2026-10-15.json",
+      "sha256": "4bf6e31ca17373c97c2e187cacf27029887d55fec5efed20e845da4cf0e85a9d",
+      "bytes": 16814
+    },
+    {
+      "path": "evidence/Combinatorics/DirectedGraph/edge-trace-source-review-2026-10-15-r2.json",
+      "sha256": "41a9dd392a62f7370b9cc1effaee5a85e5be4665efad2025324fde7c556b718f",
+      "bytes": 10725
+    },
+    {
+      "path": "evidence/Analysis/MellinTransform/normalized-gaussian-source-review-2026-10-15.json",
+      "sha256": "7ea31df4c340b73c30f968448311cddfe9c7634bb4c0c839d8f934d070995a7b",
+      "bytes": 23058
+    }
+  ],
+  "pinned_mathlib": [
+    {
+      "repository": "leanprover-community/mathlib4",
+      "commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "path": "Mathlib/Combinatorics/Quiver/Path.lean",
+      "sha256": "9528a3551a251e8e72c253dca4a8854657fb4a9e74af440379af67cc7f419e2a",
+      "git_blob": "0795ef0ea0af951cfed9678e9b207d9a25c205d8",
+      "bytes": 14161
+    },
+    {
+      "repository": "leanprover-community/mathlib4",
+      "commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "path": "Mathlib/Combinatorics/Quiver/Arborescence.lean",
+      "sha256": "67cf4c2b462a1ab0b9f7797ab97cddf4e3769345149bca47cee4b9d5cf733d40",
+      "git_blob": "063ffb6f43e8881518a20bc5369bf0bc3ba2b9f7",
+      "bytes": 5278
+    },
+    {
+      "repository": "leanprover-community/mathlib4",
+      "commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "path": "Mathlib/Combinatorics/Quiver/Covering.lean",
+      "sha256": "cd917cebf3f69c14dd2596343577ddfa07783b1b73bd4e0e91a20b1a1be30f59",
+      "git_blob": "53e9578ba5240afa7bf29ab12345e7af7a23b7d1",
+      "bytes": 12221
+    },
+    {
+      "repository": "leanprover-community/mathlib4",
+      "commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "path": "Mathlib/NumberTheory/LSeries/RiemannZeta.lean",
+      "sha256": "db9f37f08bcce379c502549f604c0e98bf4a39b3a3440606861bbac847f2a1a9",
+      "git_blob": "3c92195fce20df7fda41cfd823b3266f83cf3070",
+      "bytes": 12306
+    },
+    {
+      "repository": "leanprover-community/mathlib4",
+      "commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "path": "Mathlib/Analysis/PSeries.lean",
+      "sha256": "dffb9a0012d0091a609e2caa5a8581e3245a8f8508b6c77ef31bc7f59c2d2f7c",
+      "git_blob": "6499506f39f848904fbf7c0aca08bc303c19dca4",
+      "bytes": 22165
+    },
+    {
+      "repository": "leanprover-community/mathlib4",
+      "commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "path": "Mathlib/MeasureTheory/Integral/DominatedConvergence.lean",
+      "sha256": "18b709ea5c9ef9136e3e75ded82a6135641e6e19688e0ca3abcb0af45648ab84",
+      "git_blob": "e01402b504d1b8f96ed88bdd18266da7def493aa",
+      "bytes": 39563
+    }
+  ],
+  "pinned_lean_prefix_source": {
+    "toolchain": "leanprover/lean4:v4.33.0",
+    "path": "/Users/local/.elan/toolchains/leanprover--lean4---v4.33.0/src/lean/Init/Data/List/Sublist.lean",
+    "sha256": "aa624029539f797f6a04e6f58cab1381fbba29cc4fbe04f0d4d2322867dbdfbb",
+    "bytes": 58551
+  },
+  "fresh_primary_openai": {
+    "manifest": {
+      "path": ".local/unfolding-normalized-next-gates/43283db56a564739906537b99127286b/manifest.json",
+      "sha256": "c576f52e992479ffec55a2711bdac819a6d850840e4ed5bd7a414994d114cf73",
+      "bytes": 1437
+    },
+    "sources": [
+      {
+        "repository": "openai/math",
+        "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+        "path": "lean/OAI/NumberTheory/DirichletL/Detector/GaussianCompletion.lean",
+        "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/Detector/GaussianCompletion.lean",
+        "archive": ".local/unfolding-normalized-next-gates/43283db56a564739906537b99127286b/lean/OAI/NumberTheory/DirichletL/Detector/GaussianCompletion.lean",
+        "sha256": "5ee7ec8c1869fcce035ad7aa2b0dffefa706cc1d5d42e4385f3330d1149ceeb1",
+        "git_blob": "df898d322013e3d8375a637df488a2da73a31ca3",
+        "bytes": 5034
+      },
+      {
+        "repository": "openai/math",
+        "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+        "path": "lean/OAI/NumberTheory/DirichletL/Detector/RowInterchange.lean",
+        "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/Detector/RowInterchange.lean",
+        "archive": ".local/unfolding-normalized-next-gates/43283db56a564739906537b99127286b/lean/OAI/NumberTheory/DirichletL/Detector/RowInterchange.lean",
+        "sha256": "a2cce044bfc064c73bcca39bc04ee79052b64909904c30773b36648c2eca7fff",
+        "git_blob": "5d703cb7d55802241dcef8df8b35854ae9c84fb9",
+        "bytes": 3872
+      }
+    ],
+    "license": {
+      "name": "Apache-2.0",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "source": "Pinned openai/math repository LICENSE, independently captured in normalized Gaussian source review."
+    },
+    "authorship": "Public OpenAI repository source identity retained. These two files supply no individual author header; none is invented. Native replay of upstream files NOT_RUN."
+  },
+  "gates": [
+    {
+      "id": "occurrence-trace-prefix-reachability",
+      "status": "NOT_RUN",
+      "mathematical_subject": "Combinatorics/DirectedGraph",
+      "parameters": "Any V with Quiver V, fixed root:V, p q:PathUnfolding.Occurrence root. No finite/countable/thin/acyclic/decidable-equality assumption.",
+      "candidate_exact_statement": "Quiver.Reachable p q \u2194 List.IsPrefix (EdgeTrace.encode root p.history) (EdgeTrace.encode root q.history)",
+      "statement_syntax": "Mathematical/Lean-shaped target only; not elaborated or checked. Reachable is existing Nonempty(Quiver.Path p q).",
+      "required_proof_work": [
+        "Forward direction: use the actual unfolding path, ofPath_comp_projection, and encodePath_comp to express q trace as p trace appended with the projected suffix trace.",
+        "Reverse direction: obtain an actual suffix list from List.IsPrefix; use validity of the q trace, validFrom_append_iff, and finish_encodePath to prove this suffix valid from p.endpoint.",
+        "Use existing proof-indexed EdgeTrace.decode at p.endpoint, existing unique_finite_lift from p, and encode_injective at the fixed original root to prove the lifted endpoint is the exact q occurrence.",
+        "Preserve source/target/actual-arrow tags, chronological append order and repeated positions. An endpoint equality or mere base Reachable proof cannot substitute for full-history equality.",
+        "State exact equivalence for occurrence ancestry; do not claim an arbitrary base DAG embeds in a single prefix tree, or that reachability gives proof implication or permission."
+      ],
+      "existing_declarations": {
+        "PathUnfolding.ofPath_comp_projection": 148,
+        "PathUnfolding.unique_finite_lift": 181,
+        "PathUnfolding.endpoint_range_iff": 186,
+        "EdgeTrace.encodePath_comp": 56,
+        "EdgeTrace.validFrom_append_iff": 81,
+        "EdgeTrace.finish_encodePath": 90,
+        "EdgeTrace.validFrom_encodePath": 97,
+        "EdgeTrace.encode_injective": 114,
+        "EdgeTrace.decode": 123,
+        "Mathlib.Quiver.Reachable_in_Path": 322,
+        "Lean.List.prefix_iff_exists_eq_append": 1335
+      },
+      "required_controls": [
+        "Actual empty occurrence/reflexive prefix and a concrete two-edge lifted prefix chain.",
+        "Two distinct Bool parallel-loop length1 occurrences have equal base endpoint and vertex sequence but incomparable full tagged traces and no occurrence path between them.",
+        "Actual base loop/revisit permits endpoint/base reachability while a selected occurrence relation still fails; prove that precise obstruction in accepted positive control code before testing intended negative consumer.",
+        "Negative consumer must reject substitution of projected base reachability or endpoint equality for the exact occurrence/prefix obligation; bind the sole intended diagnostic and complete named control proof census."
+      ],
+      "limits": [
+        "No JSON/list parser runtime refinement, serialization certificate or whole-cache taxonomy implication.",
+        "Explicit noncomputable mathematical definitions where needed; no generated partial-helper exemption."
+      ]
+    },
+    {
+      "id": "reachable-endpoint-section-retraction",
+      "status": "NOT_RUN",
+      "mathematical_subject": "Combinatorics/DirectedGraph",
+      "parameters": "Fixed root in arbitrary Quiver; reachable vertex subtype R={v:V // Quiver.Reachable root v}.",
+      "candidate_exact_contract": [
+        "Construct the actual map e:Occurrence root\u2192R from node.endpoint and node.path.reachable.",
+        "Choose a noncomputable section s:R\u2192Occurrence root using a supplied reachable path witness via classical choice; prove e(s(v))=v, hence e\u2218s=id_R and s injective.",
+        "Retraction terminology: e is a retraction of s. Do not reverse the identity: s\u2218e=id_Occurrence generally fails.",
+        "Use existing endpoint_range_iff as an actual existence supplier, not an assumed new global surjectivity hypothesis. Full base V coverage still requires every vertex reachable."
+      ],
+      "required_proof_work": [
+        "Expose the exact chosen-path witness and both maps; prove the actual right-inverse identity, rather than an abstract existence-only wrapper.",
+        "Prove genuine history loss: two distinct occurrences with same endpoint prevent any section of endpoint projection from being its left inverse.",
+        "Do not assume the chosen path is shortest, canonical, prefix compatible or arrow preserving; a set-theoretic section alone is not a quiver prefunctor, graph embedding or order embedding."
+      ],
+      "existing_declarations": {
+        "PathUnfolding.endpoint_range_iff": 186,
+        "PathUnfolding.endpoint_surjective_iff": 194,
+        "PathUnfolding.Checks.Positive.parallel_occurrences_distinct": "Current positive module",
+        "PathUnfolding.Checks.Positive.repeated_base_vertices_distinct": "Current positive module"
+      },
+      "required_controls": [
+        "One actual Unit loop gives distinct nil/length1 histories with equal endpoint; prove no choice of section can recover both.",
+        "Two actual Bool parallel loops give different histories even at equal length and endpoint; retain actual arrow identity.",
+        "Actual right inverse succeeds on the reachable subtype; an attempted left-inverse or arbitrary chosen-path monotonicity consumer must fail at its missing premise."
+      ],
+      "limits": [
+        "No base connectedness or countability presumed; no full covering/costar identity or universal property.",
+        "No automatic source-node prefix representation of arbitrary base reachability; occurrence and vertex identities remain distinct."
+      ]
+    },
+    {
+      "id": "natural-coefficient-one-zeta-gaussian-contour",
+      "status": "NOT_RUN",
+      "mathematical_subject": "NumberTheory/LSeries with Analysis/MellinTransform dependencies",
+      "parameters": "sigma:Real with1<sigma and Z:Real with0<Z; s_v=(sigma:Complex)+(v:Complex)*I; coefficients exactly1 on positive natural numbers n+1.",
+      "candidate_exact_statement": "((1/(2*Real.pi):Real):Complex) * (\u222b v:Real, (Z:Complex)^s_v * Complex.exp(s_v^2) * riemannZeta(s_v)) = \u2211' n:Nat, NormalizedGaussian.gaussianMellinProfile (((n+1:Nat):Real)/Z)",
+      "statement_syntax": "Mathematical/Lean-shaped target only; not elaborated or checked. The index n+1 deliberately avoids reliance on totalized n=0 complex power conventions.",
+      "primary_source_correspondence": {
+        "GaussianCompletion.spectralRow_eq_gaussianCompleted": 66,
+        "GaussianCompletion.gaussian_mellinSummand": 22,
+        "GaussianCompletion.gaussian_correctedSummand_summable": 54,
+        "GaussianCompletion.gaussianCompletedProfile": 14,
+        "GaussianCompletion.gaussianCompleted_Vstar": 16,
+        "RowInterchange.mellinSummand_norm": 24,
+        "RowInterchange.mellinSummand_integrable": 34,
+        "RowInterchange.mellinSummand_integral_norm": 48,
+        "RowInterchange.spectralRow_integral_eq_tsum": 56,
+        "boundary": "Exact primary completion/interchange sources guide the actual termwise Gaussian inverse plus absolute interchange structure. Their original spectralRow is indexed by pairs of cubic Eisenstein ideals with masks/corrections/monoid weights and supplied norm bounds; this proposed ordinary-zeta coefficient1 consumer is not a literal specialization or admission of that arithmetic machinery."
+      },
+      "required_actual_suppliers": [
+        "For each real v, obtain the actual pinned riemannZeta Dirichlet series at1<Re(s_v)=sigma using zeta_eq_tsum_one_div_nat_add_one_cpow. Do not assume a signal representation, initial product, series identity or holomorphy wrapper.",
+        "For each n, prove integrability of the actual contour summand F_n(v)=(Z:Complex)^s_v * exp(s_v^2) / ((n+1:Complex)^s_v). Z>0 and n+1>0 justify principal complex-power splitting.",
+        "Prove the actual absolute bound/equality ||F_n(v)||=Z^sigma*exp(sigma^2)*(n+1)^(-sigma)*exp(-v^2), with real rpow and every cast/sign/normalization justified.",
+        "Prove Summable(n\u21a6\u222bv ||F_n(v)||) using the pinned real p-series theorem at sigma>1, index shift n+1, actual Gaussian integrability and finite positive scalar factor. Do not leave this interchange premise as an assumed hypothesis.",
+        "Use integral_tsum_of_summable_integral_norm only after actual individual integrability and absolute integral-norm summability are proved. Its equality direction is tsum(integral)=integral(tsum), so orient the rewriting explicitly.",
+        "Rewrite each actual term as ((n+1)/Z)^(-s_v)*exp(s_v^2), prove its positive argument, then consume the exact accepted normalized gaussianMellin_inversion at every real sigma.",
+        "Prove actual summability of the resulting profile series, retaining coefficient1 and1/(2*pi) factor; no missing scalar coefficient may be hidden by an assumed equality."
+      ],
+      "existing_declarations": {
+        "Mathlib.zeta_eq_tsum_one_div_nat_add_one_cpow": {
+          "path": "Mathlib/NumberTheory/LSeries/RiemannZeta.lean",
+          "line": 214,
+          "premise": "1<Re(s)"
+        },
+        "Mathlib.Real.summable_one_div_nat_rpow": {
+          "path": "Mathlib/Analysis/PSeries.lean",
+          "line": 317,
+          "premise": "Summable iff1<p; apply shifted n+1 form with actual proof"
+        },
+        "Mathlib.MeasureTheory.integral_tsum_of_summable_integral_norm": {
+          "path": "Mathlib/MeasureTheory/Integral/DominatedConvergence.lean",
+          "line": 111,
+          "premises": [
+            "Countable index",
+            "Integrable each F_i",
+            "Summable integrated norms"
+          ]
+        },
+        "NormalizedGaussian.gaussian_transform_vertical_norm": 90,
+        "NormalizedGaussian.gaussianMellin_inversion": 129
+      },
+      "required_controls": [
+        "Concrete sigma2,Z1 consumer and generic sigma>1,Z>0 consumer must discharge all analytic inputs.",
+        "Preserve the exact original normalized profile; reuse/prove an actual omitted-coefficient obstruction rather than treating convergence as normalization.",
+        "At sigma1 the positive-nature absolute p-series supplier fails (harmonic series). If used as a negative gate, prove that specific absolute-interchange obstruction in positive code and reject a weakened0<sigma premise at the intended type. Do not infer that every possible continued contour identity is false for all sigma<=1.",
+        "Reject missing positive Z/ratio or normalization obligations at intended diagnostics; a failed whole file alone is not a counterexample proof."
+      ],
+      "limits": [
+        "No contour shift across sigma1, analytic continuation, residue theorem, critical-line/zero-free claim, RH proof or arbitrary Dirichlet-coefficient supplier.",
+        "No direct port/native acceptance of the full OpenAI GaussianCompletion/RowInterchange sources or surrounding Hecke/cubic-ideal detector.",
+        "This must be an actual riemannZeta coefficient1 consumer with supplied p-series interchange; a theorem conditioned on the desired representation or absolute summability is not completion of this gate."
+      ]
+    }
+  ],
+  "durable_boundaries": [
+    "Every next gate has native compilation NOT_RUN and owned-declaration/axiom audit NOT_RUN; no gate code exists or is accepted by this metadata record.",
+    "Current byte/source-review bindings are references only. Existing source and receipt statuses are not refreshed or transferred by this record.",
+    "Same-team/model mathematical planning is correlated, not independent validation. No policy/permission authority follows from graph reachability, cache identity or proof bookkeeping.",
+    "Future new public modules belong under mathematical subject/object; root owns allocations, main frontier/continuation and shared metadata integration.",
+    "Preserve failed/stale receipts and actual source variants. Recursive mathematical constructions require explicit noncomputable modifiers where necessary; never weaken the census for generated helpers.",
+    "Incoming taxonomy/classification native NOT_RUN states, missing215 method identities and Python/Lean/runtime correspondence obligations remain unchanged."
+  ],
+  "work_performed": "Read-only local/pinned primary source inspection, exact source hash/Gitblob verification and this single immutable next-gates record plus completion event. No code/docs/shared registries/native jobs/commits/remote effects."
+}

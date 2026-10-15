@@ -1,0 +1,29 @@
+{
+  "schema": "repository-agent-event-v1",
+  "id": "normalized-gaussian-source-review-complete-2d441ddaf8a845c79a0cc178c8496f6d",
+  "at": "2026-10-15T19:56:35.234467+00:00",
+  "task": "unfolding-gaussian-source-scout",
+  "owner": "cache_taxonomy",
+  "kind": "bounded-source-review-complete",
+  "review": {
+    "path": "evidence/Analysis/MellinTransform/normalized-gaussian-source-review-2026-10-15.json",
+    "sha256": "7ea31df4c340b73c30f968448311cddfe9c7634bb4c0c839d8f934d070995a7b"
+  },
+  "source_hashes": {
+    "GRWTSK/Analysis/MellinTransform/NormalizedGaussian.lean": "a0ed0dbf644601887df128536951a9c3e17ecf42970069a13acdfcb93518e3bf",
+    "GRWTSK/Analysis/MellinTransform/Checks/Positive/NormalizedGaussian.lean": "afd23b18615ec575c59f64be4c1e8bd710bf7425e24939cc4c765c9956d8c525",
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianMissingNormalization.lean": "90fc1e3e103a8db7752776804b84269ab8d3a04d8bc88230f5e5624f215a262c"
+  },
+  "author_freeze": {
+    "path": "cache/coordination/events/normalized-gaussian-complete-41a4f8a9905445499ea3ae013983d04b.json",
+    "sha256": "c9a2360a89d7343870294a592f5178a1f7610268c7829dde2c4c7640680ecccb",
+    "status": "Final author completion/freeze inspected; native development statements are author reports, not replayed by this reviewer."
+  },
+  "result": "Exact final source/profile/inverse/premise/control review complete with no actionable omission observed. Correlated model/team review, native NOT_RUN by reviewer; root native acceptance separate.",
+  "source_comparison": "Exact OpenAI profile body/signature and selected inverse signature match modulo disclosed whitespace/namespace/command adornments; local proof is a new actual forward+inversion consumer.",
+  "limits": [
+    "Mellin0 Haar normalization, not ordinary dx density normalization.",
+    "No arithmetic/RH/full-upstream replay or independent validation claim.",
+    "No code/shared metadata/native jobs/commits/remote changes by reviewer."
+  ]
+}

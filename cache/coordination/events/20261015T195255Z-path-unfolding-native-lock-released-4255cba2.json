@@ -1,0 +1,11 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "path-unfolding-formal",
+  "owner": "indexed_dictionary",
+  "at": "2026-10-15T19:52:55.745737+00:00",
+  "kind": "native-lock-released",
+  "source": "SelectedAudit.lean",
+  "exit_code": 0,
+  "all_native_children_exited": true,
+  "log": ".local/path-unfolding/logs/20261015T195253.382220Z-SelectedAudit.log"
+}

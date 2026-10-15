@@ -1,0 +1,11 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "path-unfolding-formal",
+  "owner": "indexed_dictionary",
+  "at": "2026-10-15T19:51:10.687910+00:00",
+  "kind": "native-lock-released",
+  "source": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PathUnfolding.lean",
+  "exit_code": 1,
+  "all_native_children_exited": true,
+  "log": ".local/path-unfolding/logs/20261015T195109.929590Z-PathUnfolding.log"
+}

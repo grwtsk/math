@@ -4,16 +4,16 @@
 
 | Inventory | Count |
 |---|---:|
-| Object guides | 21 |
+| Object guides | 22 |
 | Documented object groups | 12 |
-| Distinct primary sources linked | 21 |
-| Lean source modules | 254 |
+| Distinct primary sources linked | 22 |
+| Lean source modules | 257 |
 | Archive intake records | 39 |
 | Selected catalog families | 1 |
 
 These counts measure documentation and source coverage. They do not count accepted theorems or establish that every source module is documented or checked. [Definitions and limits](../../reference/library-pages.md#count-definitions).
 
-At least 1495 source declaration commands, including 1210 theorem/lemma commands, across 211 parsed Lean source modules; 43 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
+At least 1513 source declaration commands, including 1225 theorem/lemma commands, across 214 parsed Lean source modules; 43 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
 
 ## Asymptotics
 
@@ -95,12 +95,13 @@ Linked primary-source scope: 1 source declaration commands, including 1 theorem/
 
 ## MellinTransform
 
-2 object guides · 2 distinct linked primary source files.
+3 object guides · 3 distinct linked primary source files.
 
-Linked primary-source scope: 24 source declaration commands, including 20 theorem/lemma commands, across 2 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+Linked primary-source scope: 37 source declaration commands, including 31 theorem/lemma commands, across 3 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
 - [Mellin transform of a logarithmic Gaussian](MellinTransform/logarithmic-gaussian.md).
 - [Reverse Mellin inversion](MellinTransform/reverse-inversion.md).
+- [The normalized Gaussian Mellin pair](MellinTransform/normalized-gaussian.md).
 
 ## NormedSpace
 

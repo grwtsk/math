@@ -1,0 +1,20 @@
+{
+  "schema": "repository-agent-event-v1",
+  "id": "unfolding-normalized-next-gates-anchor-correction-85b966983aca42d795a077e6f18c2f4c",
+  "at": "2026-10-15T20:04:26.552273+00:00",
+  "owner": "cache_taxonomy",
+  "task": "unfolding-normalized-next-gates",
+  "kind": "immutable-line-anchor-correction",
+  "record": {
+    "path": "cache/research/unfolding-normalized-next-gates-2026-10-15.json",
+    "sha256": "a31a1dcce7c026a05acf1cf02d633a37a07d8700a95344228314d988647a45db"
+  },
+  "field": "gates[id=natural-coefficient-one-zeta-gaussian-contour].existing_declarations.NormalizedGaussian.gaussian_transform_vertical_norm",
+  "original_line": 90,
+  "correct_declaration_start_line": 86,
+  "source": {
+    "path": "GRWTSK/Analysis/MellinTransform/NormalizedGaussian.lean",
+    "sha256": "a0ed0dbf644601887df128536951a9c3e17ecf42970069a13acdfcb93518e3bf"
+  },
+  "scope": "Line90 lies within the proof; declaration starts at86. Source identity, statements, all NOT_RUN gate statuses and record bytes unchanged. No mathematical acceptance or code edit."
+}

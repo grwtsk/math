@@ -1,0 +1,125 @@
+{
+  "schema": "actual-operational-revision-trace-consumer-v1",
+  "at": "2026-10-15T20:03:10.665536+00:00",
+  "outcome": "passed",
+  "old_trace": {
+    "path": "cache/occurrences/communication-trace-2026-10-15.json",
+    "sha256": "f1968385d5867b90eb0d37feffcd96e96d09ca2e2b25ba0f79815a259777c50b"
+  },
+  "fresh_trace": {
+    "path": "cache/occurrences/communication-trace-2026-10-15-r2.json",
+    "sha256": "02fda3441aa6ed1fb9dcae7dd901bc87a1a117648c5a184c49010f76b4b30eea"
+  },
+  "adapter": {
+    "path": "scripts/cache_occurrences.py",
+    "sha256": "1ff39b1a99d8167f5ece162861cbcd8c04741edb92494ee8579df971df371868"
+  },
+  "unchanged_adapter_controls": {
+    "path": "evidence/Combinatorics/DirectedGraph/typed-trace-operational-controls-2026-10-15.json",
+    "sha256": "4c6eb78b07a90eb52d386eaed597bf5b984c9bd20b28262929f8f791122e9a95"
+  },
+  "previous_snapshot": "df7c8b4245aad7e5866121690735cb5eb4e3e4726ee0757a37bac16cadc683fd",
+  "current_snapshot": "e4bf780053a01fad79887c17e6affe586baf872dbd6644b6e7f936be2352a6b8",
+  "taxonomy": {
+    "id": "taxonomy:method-families",
+    "revision": "554b2000eb0ddcaa5e38cc30812a1741c3c826b224ddf0e032eb7460229cc8fb",
+    "sha256": "072a431bca2c960488c7681d4fb316db2135a7f91d2e181f5664db610e0103fa"
+  },
+  "commands": [
+    {
+      "name": "old-trace-current-rejected",
+      "argv": [
+        "python3",
+        "-B",
+        "scripts/cache_occurrences.py",
+        "cache/occurrences/communication-trace-2026-10-15.json"
+      ],
+      "exit_code": 1,
+      "expected": "reject stale snapshot",
+      "log": {
+        "path": ".local/path-unfolding/root/old-trace-current-rejected.log",
+        "sha256": "123beab47834fed59f69a78bcc6bbdc22de85cd7774760a2edcc0da87ac78bce"
+      },
+      "output": "Traceback (most recent call last):\n  File \"/Users/local/Desktop/math/scripts/cache_occurrences.py\", line 149, in <module>\n    main()\n  File \"/Users/local/Desktop/math/scripts/cache_occurrences.py\", line 140, in main\n    result = validate_trace(document, taxonomy_raw, revision)\n  File \"/Users/local/Desktop/math/scripts/cache_occurrences.py\", line 83, in validate_trace\n    require(document[\"source_snapshot\"] == expected_snapshot, \"stale source snapshot\")\n  File \"/Users/local/Desktop/math/scripts/cache_occurrences.py\", line 29, in require\n    raise TraceError(message)\n__main__.TraceError: stale source snapshot\n"
+    },
+    {
+      "name": "old-trace-retained-snapshot",
+      "argv": [
+        "python3",
+        "-B",
+        "scripts/cache_occurrences.py",
+        "cache/occurrences/communication-trace-2026-10-15.json",
+        "--revision",
+        "df7c8b4245aad7e5866121690735cb5eb4e3e4726ee0757a37bac16cadc683fd"
+      ],
+      "exit_code": 0,
+      "expected": "pass",
+      "log": {
+        "path": ".local/path-unfolding/root/old-trace-retained-snapshot.log",
+        "sha256": "b202ff9d9685e04f5e9d62f360507b3933ba0d7bc592b69c2e8df6cbaf427e29"
+      },
+      "output": "{\"end\": \"task:cache-taxonomy\", \"id\": \"occurrence-trace:taxonomy-adapter-communication-2026-10-15\", \"lean_runtime_refinement\": \"not-established\", \"occurrences\": [{\"index\": 0, \"relation_id\": \"relation:taxonomy-contribution-task\", \"relation_sha256\": \"9d2c11260d84c8c6c6560c625be57cc741e0f257f09e9602aa106dbc6521ab77\", \"source\": \"contribution:taxonomy-adapter-v1\", \"target\": \"task:cache-taxonomy\"}], \"proof_acceptance\": \"not-established\", \"relation_kind\": \"communication\", \"root\": \"contribution:taxonomy-adapter-v1\", \"schema\": \"math-cache-occurrence-trace-v1\", \"source_snapshot\": \"df7c8b4245aad7e5866121690735cb5eb4e3e4726ee0757a37bac16cadc683fd\", \"step_count\": 1, \"taxonomy_revision\": \"554b2000eb0ddcaa5e38cc30812a1741c3c826b224ddf0e032eb7460229cc8fb\"}\n",
+      "result": {
+        "end": "task:cache-taxonomy",
+        "id": "occurrence-trace:taxonomy-adapter-communication-2026-10-15",
+        "lean_runtime_refinement": "not-established",
+        "occurrences": [
+          {
+            "index": 0,
+            "relation_id": "relation:taxonomy-contribution-task",
+            "relation_sha256": "9d2c11260d84c8c6c6560c625be57cc741e0f257f09e9602aa106dbc6521ab77",
+            "source": "contribution:taxonomy-adapter-v1",
+            "target": "task:cache-taxonomy"
+          }
+        ],
+        "proof_acceptance": "not-established",
+        "relation_kind": "communication",
+        "root": "contribution:taxonomy-adapter-v1",
+        "schema": "math-cache-occurrence-trace-v1",
+        "source_snapshot": "df7c8b4245aad7e5866121690735cb5eb4e3e4726ee0757a37bac16cadc683fd",
+        "step_count": 1,
+        "taxonomy_revision": "554b2000eb0ddcaa5e38cc30812a1741c3c826b224ddf0e032eb7460229cc8fb"
+      }
+    },
+    {
+      "name": "fresh-trace-current",
+      "argv": [
+        "python3",
+        "-B",
+        "scripts/cache_occurrences.py",
+        "cache/occurrences/communication-trace-2026-10-15-r2.json"
+      ],
+      "exit_code": 0,
+      "expected": "pass",
+      "log": {
+        "path": ".local/path-unfolding/root/fresh-trace-current.log",
+        "sha256": "04a7ee8a610e26fceb4865d7b658f6608253d6696e5931f1c7c15e3f1bc1478b"
+      },
+      "output": "{\"end\": \"task:cache-taxonomy\", \"id\": \"occurrence-trace:taxonomy-adapter-communication-2026-10-15-r2\", \"lean_runtime_refinement\": \"not-established\", \"occurrences\": [{\"index\": 0, \"relation_id\": \"relation:taxonomy-contribution-task\", \"relation_sha256\": \"9d2c11260d84c8c6c6560c625be57cc741e0f257f09e9602aa106dbc6521ab77\", \"source\": \"contribution:taxonomy-adapter-v1\", \"target\": \"task:cache-taxonomy\"}], \"proof_acceptance\": \"not-established\", \"relation_kind\": \"communication\", \"root\": \"contribution:taxonomy-adapter-v1\", \"schema\": \"math-cache-occurrence-trace-v1\", \"source_snapshot\": \"e4bf780053a01fad79887c17e6affe586baf872dbd6644b6e7f936be2352a6b8\", \"step_count\": 1, \"taxonomy_revision\": \"554b2000eb0ddcaa5e38cc30812a1741c3c826b224ddf0e032eb7460229cc8fb\"}\n",
+      "result": {
+        "end": "task:cache-taxonomy",
+        "id": "occurrence-trace:taxonomy-adapter-communication-2026-10-15-r2",
+        "lean_runtime_refinement": "not-established",
+        "occurrences": [
+          {
+            "index": 0,
+            "relation_id": "relation:taxonomy-contribution-task",
+            "relation_sha256": "9d2c11260d84c8c6c6560c625be57cc741e0f257f09e9602aa106dbc6521ab77",
+            "source": "contribution:taxonomy-adapter-v1",
+            "target": "task:cache-taxonomy"
+          }
+        ],
+        "proof_acceptance": "not-established",
+        "relation_kind": "communication",
+        "root": "contribution:taxonomy-adapter-v1",
+        "schema": "math-cache-occurrence-trace-v1",
+        "source_snapshot": "e4bf780053a01fad79887c17e6affe586baf872dbd6644b6e7f936be2352a6b8",
+        "step_count": 1,
+        "taxonomy_revision": "554b2000eb0ddcaa5e38cc30812a1741c3c826b224ddf0e032eb7460229cc8fb"
+      }
+    }
+  ],
+  "old_trace_and_receipt_retained": true,
+  "snapshot_taxonomy_containment": false,
+  "limits": "Exact declared pair of source snapshot and separately byte/revision-bound taxonomy. Actual existing communication relation only. No new method, relation, permission, mathematical acceptance or Lean/runtime correspondence. Previous21 normal/optimized adapter controls remain bound to unchanged code; these are additional actual revision consumers."
+}

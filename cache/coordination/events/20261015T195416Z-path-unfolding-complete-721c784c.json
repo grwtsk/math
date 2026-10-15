@@ -1,0 +1,162 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "path-unfolding-formal",
+  "owner": "indexed_dictionary",
+  "kind": "complete",
+  "at": "2026-10-15T19:54:16.434850+00:00",
+  "branch": "main",
+  "source_hashes": {
+    "GRWTSK/Combinatorics/DirectedGraph/PathUnfolding.lean": "8d5e2187d705ab49c52a41779b48b445d0baa223c3608ea6495e670ddac24757",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PathUnfolding.lean": "81c0c9fd724a7eda6038ed3e24edf24e08280377f39b72c06152f508327dc438",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/UnfoldingMissingCostar.lean": "d76888ed8dbf6e9126dc4d13971158b770092b86dbe991b0b62fde7302304b65"
+  },
+  "mathematical_contract": [
+    "Occurrence is an object-specific one-field wrapper of existing Quiver.PathStar root; no new path inductive",
+    "Extension contains actual typed base edge and exact equality of appended source history with target occurrence",
+    "Existing arborescenceMk supplies unfoldingArborescence from strict path-length height, unique incoming parent and edge, and root-or-parent",
+    "Actual canonical liftHistory and projection_liftHistory recover base path; ofPath_comp_projection recovers appended history after every actual lifted path",
+    "outgoingStarEquiv is an actual inverse for endpoint/actual-edge projection.star; upstream pathStar_bijective yields unique_finite_lift from each chosen occurrence",
+    "endpoint_range_iff and endpoint_surjective_iff give exact Nonempty(Path root target) range; no generic base connectivity/countability/global endpoint surjectivity assumption",
+    "empty_origin_costar and origin_costar_not_surjective prove root costar obstruction when the base root has an incoming edge; not_covering_of_incoming retains full-covering distinction"
+  ],
+  "positive_controls": [
+    "Actual Bool parallel loop edges yield distinct full-history occurrences with same endpoint and vertex sequence",
+    "Actual repeated base vertex occurrences of lengths0,1,2 remain distinct; length2 actual lifted path and exact projection/canonical lift agree",
+    "Generic arborescence, unique root path, exact reachable range and chosen-occurrence unique finite lift consumers",
+    "Complete named one-vertex one-Unit-loop outgoing bijection, empty root costar, failed incoming surjectivity and failed full covering proofs are in audited positive module"
+  ],
+  "negative": {
+    "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/UnfoldingMissingCostar.lean",
+    "imports_positive_counterexample": true,
+    "intended_error": "Type mismatch: single_loop_outgoing_bijective has type \u2200 node : Occurrence (SingleObj.star Unit), Function.Bijective ((projection (SingleObj.star Unit)).star node), but is expected to have type (projection (SingleObj.star Unit)).IsCovering",
+    "single_intended_type_error": true,
+    "source_line": 14,
+    "derived_prefix_needed": false
+  },
+  "development_verification": {
+    "trust": 0,
+    "fatal_warnings": true,
+    "library": "passed",
+    "positive": "passed",
+    "negative": "one intended type rejection",
+    "owned_census": {
+      "path": ".local/path-unfolding/owned-census.json",
+      "sha256": "47e68e9ddfc04d5ea49e214c96f996e22137536ec345ed17bb3207a26bf22db2",
+      "declarations": 63,
+      "modules": [
+        {
+          "declarations": 52,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding"
+        },
+        {
+          "declarations": 11,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PathUnfolding"
+        }
+      ],
+      "all_mathematical_admission": true,
+      "partial_unsafe_or_runtime_helpers": []
+    },
+    "logs": [
+      {
+        "path": ".local/path-unfolding/logs/20261015T194744.742539Z-PathUnfolding.json",
+        "sha256": "09d12fcd5f3e274faee8d2fe3f559f38d8547b4d3cb3ddade6982598b0662ac2",
+        "source_sha256": "4103b5a7fa7002b1b184858f414efa28158ff0871e9ba9fa69d7a6d88104f3ba",
+        "exit_code": 1,
+        "output_sha256": "b22eb0387662f041fe3939eb98eed426d97a564eb947177afcf55ad74d456732"
+      },
+      {
+        "path": ".local/path-unfolding/logs/20261015T194807.469404Z-PathUnfolding.json",
+        "sha256": "fc63443740c91ceb01e5fc211b85eb8b80c089401cae047846250fb4f17bb398",
+        "source_sha256": "7f75db94ddf10b6ef85084593e2802278bda3fbacc5d984aba5daadfb5ca8d34",
+        "exit_code": 1,
+        "output_sha256": "90e322f6c0c4219a132190dafe5ba3230e8b625cc47816e1c1ad08beee98311c"
+      },
+      {
+        "path": ".local/path-unfolding/logs/20261015T194837.287155Z-PathUnfolding.json",
+        "sha256": "3e6b3488ef75a39707bb09570d977980159da012717a08795644261558952e0e",
+        "source_sha256": "963e5bd0215fa7874d9f38354f4d75a6fb020714712e55abce930c4dc2f519e2",
+        "exit_code": 1,
+        "output_sha256": "ae1ea9366e1d85a23eb11e5c1e5b73eabb3df9edd1daab0f102aebe3d78d27c8"
+      },
+      {
+        "path": ".local/path-unfolding/logs/20261015T194845.765213Z-PathUnfolding.json",
+        "sha256": "4022b434b4a92cc4c5ca2a57f3849b0cc4e76cb7902fa62d70ea9becea2b2979",
+        "source_sha256": "0d9cb6a68d5e3b82d851fb822fe9d1c585bd4981714b134151025fced9d54fe1",
+        "exit_code": 0,
+        "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": ".local/path-unfolding/logs/20261015T195100.473225Z-PathUnfolding.json",
+        "sha256": "3ccc9fbb45cf472c744a300d60caa9571657265fb520618b1dd2ae26cb1bf4f7",
+        "source_sha256": "4a2032720cc1da416143aa072ae62495e514aaf6333afc3ecda652928c26b512",
+        "exit_code": 0,
+        "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": ".local/path-unfolding/logs/20261015T195109.929590Z-PathUnfolding.json",
+        "sha256": "2eafe0002c98be179097ca8353f1b71846b4b4595c65f33e8ff263efa26b96b3",
+        "source_sha256": "05028e6a6ba7a32da9b6ac7a61eacdf8bfbcf4b5184a2dbc3ea14a6f34ab6047",
+        "exit_code": 1,
+        "output_sha256": "c1ed264bb48323e7b12387237501634ce78dda13a3c8f8a69ad2a920e559db0d"
+      },
+      {
+        "path": ".local/path-unfolding/logs/20261015T195251.080072Z-PathUnfolding.json",
+        "sha256": "7f4e9fc1fb66d6c3f1b15e703a7ddc7b94e0701d62be15495f79c7b4dd361200",
+        "source_sha256": "8d5e2187d705ab49c52a41779b48b445d0baa223c3608ea6495e670ddac24757",
+        "exit_code": 0,
+        "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": ".local/path-unfolding/logs/20261015T195251.920601Z-PathUnfolding.json",
+        "sha256": "da3f5f8a4dffe844bb111bbfed1b276e1cc0f985221b7a66f83aa71fb063caaa",
+        "source_sha256": "81c0c9fd724a7eda6038ed3e24edf24e08280377f39b72c06152f508327dc438",
+        "exit_code": 0,
+        "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": ".local/path-unfolding/logs/20261015T195252.681808Z-UnfoldingMissingCostar.json",
+        "sha256": "6b704641a507879c21f0b81ac32ac97bb9c7f9cd311e53ea431831c4c7490d37",
+        "source_sha256": "d76888ed8dbf6e9126dc4d13971158b770092b86dbe991b0b62fde7302304b65",
+        "exit_code": 1,
+        "output_sha256": "f3779387fe90b06ac066e3377580ff5d1474a6e4ce7e36dad58737deded3dcc6"
+      },
+      {
+        "path": ".local/path-unfolding/logs/20261015T195253.382220Z-SelectedAudit.json",
+        "sha256": "16cda53a974d0e35f27b2f415fca7f2aa3c23dafc3a3014c9905b38475da3cba",
+        "source_sha256": "432f0c0ccf21f575220bf5b4a93ebd5ac4b7cc02b59e6673a00e81f78732e33c",
+        "exit_code": 0,
+        "output_sha256": "dba97179f25876152ffce8ea9361b1e8205f59eb476bca9ffacbb01d2a2c5579"
+      }
+    ],
+    "scope": "Development only; root owns hardened fresh immutable source closure, complete native census, dependency identities and metadata admission. No project local object imports in this library closure."
+  },
+  "source_scout": {
+    "path": ".local/path-unfolding/api-scout.json",
+    "sha256": "7b9d06004b21032a4eabc433d53ecbd50be69d1ec85dddd644bfa93e739593b3",
+    "duplicate_log": ".local/path-unfolding/duplicate-scout.log",
+    "duplicate_log_sha256": "d8f2efe5447268d576d16341eb95434410cceaf39f8af4b30ca734b0bb97e5bd",
+    "scope": "Bounded pinned Mathlib quiver and local Combinatorics API/duplicate scout, correlated model review, no exhaustive absence or novelty claim. Root scout supplied Courcelle arXiv2212.07205v3 standard-construction context and exact PDF identity; no paper result imported."
+  },
+  "whitespace": {
+    "path": ".local/path-unfolding/final-whitespace.json",
+    "sha256": "1cacf8726275b058046389148a395aaee602e4a28cc1a99b2a416a06a8d6a8ae",
+    "passed": true
+  },
+  "layout": {
+    "path": ".local/path-unfolding/layout.json",
+    "sha256": "666ef2f587360ab775970d103f1c618facfae7912b157dab6bf418dee12dfe5c",
+    "owned_findings": "Expected new active_sources registrations/public-import-closure bookkeeping only, root-owned. No new subject/path-ban findings."
+  },
+  "failed_attempts_preserved": "Exact source variants and logs retained for field-namespace/callback elaboration failures, dependent outgoing-star elimination/rewrite failures, and Nat.noConfusion(1=2) positive attempt. No failed byte set rebound as acceptance.",
+  "boundaries": [
+    "Mathlib Path permits revisits; corresponds to finite directed walks in paper terminology",
+    "No global base endpoint surjectivity without reachability; generic result independent of finiteness, countability, rooted-connectivity, arrow uniqueness or acyclicity",
+    "No weighted-graph paper theorem, universal property, JSON/runtime correspondence, implication/authorization or full-covering claim",
+    "Explicit noncomputable definitions prevent recursive liftHistory runtime helper emission; no audit exemptions or helper enrollment"
+  ],
+  "all_native_children_exited": true,
+  "shared_lock_released": true,
+  "source_frozen": true,
+  "further_native_jobs_planned": false,
+  "no_commits_or_remote_changes": true
+}

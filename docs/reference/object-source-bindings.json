@@ -177,10 +177,12 @@
     ],
     "Combinatorics/DirectedGraph": [
       "GRWTSK/Combinatorics/DirectedGraph/EdgeTrace.lean",
-      "GRWTSK/Combinatorics/DirectedGraph/PathOccurrences.lean"
+      "GRWTSK/Combinatorics/DirectedGraph/PathOccurrences.lean",
+      "GRWTSK/Combinatorics/DirectedGraph/PathUnfolding.lean"
     ],
     "Analysis/MellinTransform": [
       "GRWTSK/Analysis/MellinTransform/LogarithmicGaussian.lean",
+      "GRWTSK/Analysis/MellinTransform/NormalizedGaussian.lean",
       "GRWTSK/Analysis/MellinTransform/ReverseInversion.lean"
     ]
   }

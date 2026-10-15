@@ -1,0 +1,115 @@
+{
+  "schema": "bounded-formal-research-frontier-v1",
+  "at": "2026-10-15T20:04:56.032990+00:00",
+  "previous_frontier": {
+    "path": "cache/research/typed-trace-gaussian-frontier-2026-10-15.json",
+    "sha256": "b54037b6a488c459ead203681c09fe22036c5b8042e02144ac1e89324afa3e47"
+  },
+  "completed": [
+    {
+      "source": {
+        "path": "GRWTSK/Combinatorics/DirectedGraph/PathUnfolding.lean",
+        "sha256": "8d5e2187d705ab49c52a41779b48b445d0baa223c3608ea6495e670ddac24757"
+      },
+      "native_receipt": {
+        "path": "evidence/Combinatorics/DirectedGraph/path-unfolding-checks-2026-10-15.json",
+        "sha256": "2dacba6e65847c05f6dff1615f073c588d99553d704ad324fccf4858a8536b43"
+      },
+      "owned_declarations": 63,
+      "owned_modules": [
+        {
+          "declarations": 52,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding"
+        },
+        {
+          "declarations": 11,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PathUnfolding"
+        }
+      ],
+      "integration": {
+        "path": "evidence/Combinatorics/DirectedGraph/path-unfolding-integration-2026-10-15.json",
+        "sha256": "bf72e8c4a34fbab79e4290d328153b5efb2e6501d2853ee25a36e76bbbe9f144"
+      }
+    },
+    {
+      "source": {
+        "path": "GRWTSK/Analysis/MellinTransform/NormalizedGaussian.lean",
+        "sha256": "a0ed0dbf644601887df128536951a9c3e17ecf42970069a13acdfcb93518e3bf"
+      },
+      "native_receipt": {
+        "path": "evidence/Analysis/MellinTransform/normalized-gaussian-checks-2026-10-15.json",
+        "sha256": "888ff77d3ea061f63f9ca29e29d7848006ad17cb24578302c59578b16cf3ff39"
+      },
+      "owned_declarations": 71,
+      "owned_modules": [
+        {
+          "declarations": 23,
+          "module": "GRWTSK.Analysis.MellinTransform.ReverseInversion"
+        },
+        {
+          "declarations": 20,
+          "module": "GRWTSK.Analysis.MellinTransform.LogarithmicGaussian"
+        },
+        {
+          "declarations": 22,
+          "module": "GRWTSK.Analysis.MellinTransform.NormalizedGaussian"
+        },
+        {
+          "declarations": 6,
+          "module": "GRWTSK.Analysis.MellinTransform.Checks.Positive.NormalizedGaussian"
+        }
+      ],
+      "integration": {
+        "path": "evidence/Analysis/MellinTransform/normalized-gaussian-integration-2026-10-15.json",
+        "sha256": "6d43d973ee540077942b323d24ac747a1159a5ae3a9d5aabc4185d88ef2608b2"
+      }
+    }
+  ],
+  "current_cache_contract": "All rooted exact path occurrences form an arborescence; projection bijective on outgoing stars and unique finite path lifts; lifted endpoint exactly starting history composed with projected suffix. Endpoint image exactly root-reachable vertices. Incoming root edge prevents full covering. Existing valid typed-edge list equivalence unchanged; no executable or JSON correspondence.",
+  "current_gaussian_contract": "Exact pinned OpenAI quarter-width principal-power coefficient; actual Mellin convergence/exp(s²) at every complex s, actual inversion for every real contour and x>0. Width/scalar identities and vertical integrability/continuity discharged, unnormalized mass not1 checked.",
+  "precise_unchecked_next_gates": {
+    "path": "cache/research/unfolding-normalized-next-gates-2026-10-15.json",
+    "sha256": "a31a1dcce7c026a05acf1cf02d633a37a07d8700a95344228314d988647a45db"
+  },
+  "next_gate_anchor_correction": {
+    "path": "cache/coordination/events/unfolding-normalized-next-gates-anchor-correction-85b966983aca42d795a077e6f18c2f4c.json",
+    "sha256": "702a8aa19cf06264c108eebc5d0ae606415757e78ee296dbd3d7efc62070385b"
+  },
+  "next_priorities": [
+    "Use existing Reachable and full EdgeTrace.encode to prove occurrence reachability iff typed trace prefix, with exact valid suffix decoding and history recovery. No new path/ancestry relation needed.",
+    "Reachable endpoint subtype has noncomputable section/retraction; distinguish endpoint preservation/idempotency from ancestry reflection. Actual loop history-loss and existing diamond obstruction are controls.",
+    "Primary OpenAI actual GaussianCompletion summand consumer: sigma>1,Z>0 zeta contour equals tsum P((n+1)/Z), requiring actual p-series absolute sum/integral interchange and termwise normalized inversion. A helper identity/assumed Fubini wrapper alone is insufficient.",
+    "Concurrent Weil source package is written/operational research with nativeNOT_RUN; retain exact complete-source lower-growth frontier and no discrepancy-only/RH supplier inference."
+  ],
+  "operational_progress": {
+    "adapter": {
+      "path": "scripts/cache_occurrences.py",
+      "sha256": "1ff39b1a99d8167f5ece162861cbcd8c04741edb92494ee8579df971df371868"
+    },
+    "revision_consumers": {
+      "path": "evidence/Combinatorics/DirectedGraph/occurrence-trace-revision-consumer-2026-10-15.json",
+      "sha256": "9cdf8cdec742453408133fa512488b363b0f3e14a263ad7e45e5ac0d5abb8783"
+    },
+    "new_trace": {
+      "path": "cache/occurrences/communication-trace-2026-10-15-r2.json",
+      "sha256": "02fda3441aa6ed1fb9dcae7dd901bc87a1a117648c5a184c49010f76b4b30eea"
+    },
+    "replay_guards": {
+      "path": "evidence/Combinatorics/DirectedGraph/unfolding-operational-controls-2026-10-15.json",
+      "sha256": "aadbf641bcc96ad0c67eff8dbf15f3bbc5a03a61afe2f9e10e6176ebe9c5ce27"
+    },
+    "scope": "Actual stale-current rejection, retained-revision acceptance and fresh-current acceptance; immutable prior trace retained. Source snapshot and raw taxonomy bindings separate. No mathematical acceptance, permission or Lean/runtime refinement."
+  },
+  "concurrent_research": {
+    "path": "cache/coordination/events/unfolding-concurrent-weil-observed-2026-10-15.json",
+    "sha256": "735e9e38ed8c51cee75cef598af458b9c57c291750d648fe2e8ef2316f67476a"
+  },
+  "open_obligations": [
+    "Exact Lean dependent-quiver/operational relation-ID correspondence and bounded hash/zlib/IO/Python transactions refinement.",
+    "215 individual method records unprovided; only16 declared families, no taxonomy/similarity proof authority.",
+    "Taxonomy/classification candidate native statuses NOT_RUN retained; selected native closure is not whole-library replay.",
+    "Actual analytic/arithmetic coefficient, signal representation, initial product, growth and full Weil source lower-bound suppliers; RH remains open."
+  ],
+  "failure_preservation": "All old failed/stale receipts and original variants retained; no historical binding refreshed. Explicit noncomputable recursive mathematical defs; no helper audit exemptions. Correlated source review is not independent validation.",
+  "authority": "Durable source/premise frontier only, no remote effect or new policy from supplied research documents."
+}

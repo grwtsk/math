@@ -3445,10 +3445,28 @@
       "source_sha256": "cd47e598796f4f901ddea56dd05bb9e719534e1aac5589c1be6ddfb8d9fea66d",
       "status": "fresh-selected",
       "evidence": "evidence/Analysis/MellinTransform/logarithmic-gaussian-checks-2026-10-15.json"
+    },
+    "docs/mathematics/Combinatorics/DirectedGraph/path-unfolding.md": {
+      "title": "Unfolding all rooted path occurrences",
+      "subject": "Combinatorics",
+      "object": "DirectedGraph",
+      "primary_source": "GRWTSK/Combinatorics/DirectedGraph/PathUnfolding.lean",
+      "source_sha256": "8d5e2187d705ab49c52a41779b48b445d0baa223c3608ea6495e670ddac24757",
+      "status": "fresh-selected",
+      "evidence": "evidence/Combinatorics/DirectedGraph/path-unfolding-checks-2026-10-15.json"
+    },
+    "docs/mathematics/Analysis/MellinTransform/normalized-gaussian.md": {
+      "title": "The normalized Gaussian Mellin pair",
+      "subject": "Analysis",
+      "object": "MellinTransform",
+      "primary_source": "GRWTSK/Analysis/MellinTransform/NormalizedGaussian.lean",
+      "source_sha256": "a0ed0dbf644601887df128536951a9c3e17ecf42970069a13acdfcb93518e3bf",
+      "status": "fresh-selected",
+      "evidence": "evidence/Analysis/MellinTransform/normalized-gaussian-checks-2026-10-15.json"
     }
   },
   "object_binding_registry": "docs/reference/object-source-bindings.json",
-  "object_binding_registry_sha256": "affd02b5c754fb808098947df25bbf2f59a4c3f451b2e5da6a73fa0cbf0a85c2",
+  "object_binding_registry_sha256": "aef7e713ac2e29d67cdd8a74071984f598ccc8a79d6f051f2bf56039d32eef5c",
   "navigation": {
     "schema": "subject-index-navigation-v1",
     "summary": "docs/reference/library-summary.json"

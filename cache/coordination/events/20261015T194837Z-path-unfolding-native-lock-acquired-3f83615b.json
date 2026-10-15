@@ -1,0 +1,10 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "path-unfolding-formal",
+  "owner": "indexed_dictionary",
+  "at": "2026-10-15T19:48:37.280041+00:00",
+  "kind": "native-lock-acquired",
+  "source": "GRWTSK/Combinatorics/DirectedGraph/PathUnfolding.lean",
+  "source_sha256": "963e5bd0215fa7874d9f38354f4d75a6fb020714712e55abce930c4dc2f519e2",
+  "guard_competing_jobs": []
+}

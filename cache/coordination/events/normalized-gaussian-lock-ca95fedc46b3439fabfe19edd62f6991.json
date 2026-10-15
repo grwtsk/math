@@ -1,0 +1,10 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "normalized-gaussian-formal",
+  "event": "dev-lock-acquired",
+  "at": "2026-10-15T19:49:02.158959+00:00",
+  "owner": "cache_adapter",
+  "attempt": ".local/normalized-gaussian/aa266caa5e43482598ff0e9092ed1db5/attempts/Scratch-attempt02",
+  "source_sha256": "5c6cede5894e165c00a84aba85d98b45f404bfac696b2e4225638a693ffe2212",
+  "competing_jobs": []
+}
