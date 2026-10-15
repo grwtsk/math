@@ -1,0 +1,105 @@
+{
+  "schema": "selected-mathematical-integration-v1",
+  "at": "2026-10-15T22:32:49.353504+00:00",
+  "source": {
+    "path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableCompaction.lean",
+    "sha256": "fe95a8c59bb0a1e1e9a2a4eba1e5405deb4bcabac3159e0aefcd3db364aad56f"
+  },
+  "native_receipt": {
+    "path": "evidence/Combinatorics/DirectedGraph/prefix-table-compaction-checks-2026-10-15.json",
+    "sha256": "f31b49be4d6eae752b5f9d130853dc53f72604993e9406b331cdf3fe964a4de9"
+  },
+  "source_review": {
+    "path": "evidence/Combinatorics/DirectedGraph/prefix-table-compaction-source-review-2026-10-15.json",
+    "sha256": "2855aba820f745cb84755e93934dbedf5f0d1dcef7dcc544f1bad42525a1fc6d"
+  },
+  "owned_declarations": 614,
+  "selected_library_owned_count": 36,
+  "owned_modules": [
+    {
+      "declarations": 52,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding"
+    },
+    {
+      "declarations": 18,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences"
+    },
+    {
+      "declarations": 46,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.EdgeTrace"
+    },
+    {
+      "declarations": 21,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix"
+    },
+    {
+      "declarations": 34,
+      "module": "GRWTSK.Logic.FiniteSequences.IndexedDictionary"
+    },
+    {
+      "declarations": 33,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixInventory"
+    },
+    {
+      "declarations": 78,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.ParentTraceDictionary"
+    },
+    {
+      "declarations": 32,
+      "module": "GRWTSK.Logic.FiniteSequences.DictionaryRevision"
+    },
+    {
+      "declarations": 27,
+      "module": "GRWTSK.Logic.FiniteSequences.DecisionCertificate"
+    },
+    {
+      "declarations": 26,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.RootedTraceRevision"
+    },
+    {
+      "declarations": 20,
+      "module": "GRWTSK.Logic.FiniteSequences.IncrementalDictionary"
+    },
+    {
+      "declarations": 58,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.IncrementalPrefixTable"
+    },
+    {
+      "declarations": 87,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableState"
+    },
+    {
+      "declarations": 36,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCompaction"
+    },
+    {
+      "declarations": 46,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableCompaction"
+    }
+  ],
+  "operational_replay_guards": {
+    "path": "evidence/Combinatorics/DirectedGraph/compaction-fourier-operational-controls-2026-10-15.json",
+    "sha256": "b6325b77c870723b27b2e7885a4ac0ec1a0bd0323a1e50d396c2eda0aecda9f4"
+  },
+  "contribution_roles": [
+    "R.A. Jacob Martone: human mathematical direction",
+    "OpenAI Codex: local adaptation/formalization/checking; correlated source/model review",
+    "Lean/Mathlib: named upstream authors, definitions/proofs and licensing retained"
+  ],
+  "limits": [
+    "Fresh complete selected local import closure and positive controls; trust0/fatal, full owned-declaration/transitive-axiom census, only propext/Classical.choice/Quot.sound.",
+    "Generated local object families frozen/rechecked. Clean pinned dependency objects reused/fingerprinted, not cold rebuilt. Whole umbrella not replayed after import additions.",
+    "No independent model validation, novelty, operational JSON/Python/hash/zlib/IO refinement, proof/permission authority, whole physical detector or RH acceptance."
+  ],
+  "exact_contracts": [
+    "Actual arbitraryState+WellFormed derives successful realEntries/rooted validity; reverse traceRows(recoverRows validEntries)=entries proved from actual EdgeTrace.encode_decode. realRows recovered, compact=actualofOneStep realRows[], structural validity/root preserved and actual parent+indexed decode equality, full actual occurrence recovery. Compact dictionary is a subset of oldD, only required real-history prefixes retained. Actual remap is partial oldlookup/full-trace retainedmembership→new canonical idx; retained nonempty parent cells and all ordered real refs remapped, keys/order/repeats preserved. Root-lifted actual unpack equality and supplied Certificate own actualpack roundtrip yield same-decoding criterion reuse; vertex equality additionally for packing."
+  ],
+  "accepted_controls": [
+    "Actual Dold=[F,[],T], oldrealrefs[(11,0),(11,0)] decodes twoF histories; compactD=[[],F], actualnewrefs[(11,1),(11,1)], unusedTremapnone, parent1→0,F0→1. Actualwellformed/parentdecode/real occurrence recovery/explicitcertificate reuse proved. Staleoldrefs0 on compactD decode twoEMPTY histories despite same root and endpoints; sole negative uses actualstaleEMPTYdecode proof where twoFdecode is required. Emptydata root retained and distinctemptyroots remain different."
+  ],
+  "license": "MIT; imported Lean/Mathlib individual authors retain Apache-2.0.",
+  "open_obligations": [
+    "No finite role/relation-ID→typedQuiver/operationalJSON implementation bridge, cross-revision label stability, hash injectivity or IO refinement admitted. Compact canonical index positions can change; no byteoptimality/totaloldslotretention claim.",
+    "No byte-optimal compression, source authenticity, new criterion inheritance or operational relation-ID/JSON/hash/IO refinement."
+  ]
+}

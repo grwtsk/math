@@ -288,3 +288,31 @@ OpenAI Codex. Local concrete controls prove a convergent positive A=0
 value sum that violates the proposed N=1 zero-denominator bound for every
 constant; no divergence, sharpness, whole-library, physical detector,
 RH or operational cache-refinement claim is inferred.
+
+Schwartz Fourier moments and actual Gaussian-window consumer
+----------------------------------------------------------
+GRWTSK/Analysis/Fourier/SchwartzMoments.lean and
+GRWTSK/Analysis/MellinTransform/GaussianFourierMoments.lean retain Apache-2.0.
+The generic proof slice is adapted from
+openai/math@1581d4cbdd69a0faf34b2089614fe2a814316a6a,
+lean/OAI/NumberTheory/DirichletL/Mellin/LogProfiles.lean,
+raw SHA256 ff8735e421a2ee659df15272704206f2d114d7e2a849e8a755d545508f4038be,
+Git blob 4ca0df6768674c87654fe3637be3851c8c6d12cc. OpenAI remains the
+upstream project author; see LICENSES/OpenAI-Apache-2.0.txt. Only selected
+generic Fourier derivative/integral/seminorm/moment slices are adapted;
+surrounding log-profile and arithmetic suppliers are not imported.
+Mathlib Analysis/Distribution/SchwartzSpace/Basic.lean retains copyright
+(c) 2022 Moritz Doll, author Moritz Doll. SchwartzSpace/Fourier.lean retains
+copyright (c) 2024 Sébastien Gouëzel, authors Sébastien Gouëzel and Moritz Doll.
+Analysis/Fourier/FourierTransformDeriv.lean retains copyright (c) 2024
+David Loeffler, authors Alex Kontorovich, David Loeffler, Heather Macbeth
+and Sébastien Gouëzel. FourierTransform.lean retains copyright (c) 2023
+David Loeffler, author David Loeffler. All retain Apache-2.0. Prior Gaussian,
+Schwartz, derivative, real-power and integral individual credits remain.
+The actual finite-family Gaussian Fourier-moment application and positive
+controls are local formalization contributions. Human direction: R.A. Jacob
+Martone; adaptation/formalization/checking: OpenAI Codex. Pinned Fourier
+normalization is the forward exp(-2*pi*i*x*t) convention. Generic transfer
+has no compactness premise; actual log-window density, physical/arithmetic
+and RH suppliers remain separate. No novelty, whole-library or operational
+cache-refinement acceptance is inferred.

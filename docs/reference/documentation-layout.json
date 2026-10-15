@@ -3607,10 +3607,37 @@
       "source_sha256": "e50de8626a4418b547123c0f37d94b9f3caef08a9820639524e6bd61da2061a9",
       "status": "fresh-selected",
       "evidence": "evidence/Analysis/MellinTransform/gaussian-remote-seminorms-checks-2026-10-15.json"
+    },
+    "docs/mathematics/Combinatorics/DirectedGraph/prefix-table-compaction.md": {
+      "title": "Compaction and remapping of rooted prefix tables",
+      "subject": "Combinatorics",
+      "object": "DirectedGraph",
+      "primary_source": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableCompaction.lean",
+      "source_sha256": "fe95a8c59bb0a1e1e9a2a4eba1e5405deb4bcabac3159e0aefcd3db364aad56f",
+      "status": "fresh-selected",
+      "evidence": "evidence/Combinatorics/DirectedGraph/prefix-table-compaction-checks-2026-10-15.json"
+    },
+    "docs/mathematics/Analysis/Fourier/schwartz-moments.md": {
+      "title": "Fourier moments from Schwartz derivative seminorms",
+      "subject": "Analysis",
+      "object": "Fourier",
+      "primary_source": "GRWTSK/Analysis/Fourier/SchwartzMoments.lean",
+      "source_sha256": "da6f1239a11ad8f70f24ec4eabc709e6c7e36002949236c7a73813db0fddb0cc",
+      "status": "fresh-selected",
+      "evidence": "evidence/Analysis/MellinTransform/gaussian-fourier-moments-checks-2026-10-15.json"
+    },
+    "docs/mathematics/Analysis/MellinTransform/gaussian-fourier-moments.md": {
+      "title": "Uniform Fourier moments of Gaussian windows",
+      "subject": "Analysis",
+      "object": "MellinTransform",
+      "primary_source": "GRWTSK/Analysis/MellinTransform/GaussianFourierMoments.lean",
+      "source_sha256": "56f14b355aeb0b89e30457cc6b7f8be887fd288e2caf3643907481f32171d86a",
+      "status": "fresh-selected",
+      "evidence": "evidence/Analysis/MellinTransform/gaussian-fourier-moments-checks-2026-10-15.json"
     }
   },
   "object_binding_registry": "docs/reference/object-source-bindings.json",
-  "object_binding_registry_sha256": "d35ac12e6890c53a9ca5f376204eb1cb47093f238ea2c06111dbe125858ad11a",
+  "object_binding_registry_sha256": "60e986013e5895f8bbd8fe252d9d64bfc0ee45f14e9fa8bd6729927c11141016",
   "navigation": {
     "schema": "subject-index-navigation-v1",
     "summary": "docs/reference/library-summary.json"

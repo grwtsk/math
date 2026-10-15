@@ -1,0 +1,11 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "gaussian-fourier-moments-formal",
+  "event": "design-and-contract",
+  "owner": "cache_adapter",
+  "at": "2026-10-15T22:21:01.495861+00:00",
+  "archive": ".local/gaussian-fourier-moments/514ed253fe1d4a488e8637ad0c7ebc35",
+  "contract": "Generic actual Fourier derivative-integral and source-pair transfer through J+p, actual one-plus moment Integrable and bound; actual G consumer via finite source indices and positive r cancellation. No generic compact-support premise, no assumed desired integral bound, no Gaussian log-density/Hecke/physical closure.",
+  "status": "source-written-in-ignored-scratch; native-NOT_RUN",
+  "native_jobs_running": 0
+}
