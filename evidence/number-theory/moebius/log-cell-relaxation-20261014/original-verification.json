@@ -1,0 +1,256 @@
+{
+  "base_commit": "9adf061bf5aa34e65fb8237ed56c766539e22506",
+  "candidate_lean_theorems": [
+    {
+      "name": "cleared_merge",
+      "path": "GRWTSK/Analysis/FiniteSum/BinaryMeanVariance.lean"
+    },
+    {
+      "name": "weighted_merge",
+      "path": "GRWTSK/Analysis/FiniteSum/BinaryMeanVariance.lean"
+    },
+    {
+      "name": "binary_split",
+      "path": "GRWTSK/Analysis/FiniteSum/BinaryMeanVariance.lean"
+    },
+    {
+      "name": "mean_square_mono",
+      "path": "GRWTSK/Analysis/FiniteSum/BinaryMeanVariance.lean"
+    },
+    {
+      "name": "exponential_difference_quartic",
+      "path": "GRWTSK/Analysis/FiniteSum/BinaryMeanVariance.lean"
+    },
+    {
+      "name": "mesh_variance_scale",
+      "path": "GRWTSK/Analysis/FiniteSum/BinaryMeanVariance.lean"
+    },
+    {
+      "name": "mean_does_not_erase_variance",
+      "path": "GRWTSK/Analysis/FiniteSum/BinaryMeanVariance.lean"
+    },
+    {
+      "name": "cleared_centering",
+      "path": "GRWTSK/LinearAlgebra/QuadraticForm/TwoMomentCentering.lean"
+    },
+    {
+      "name": "centering",
+      "path": "GRWTSK/LinearAlgebra/QuadraticForm/TwoMomentCentering.lean"
+    },
+    {
+      "name": "variance_nonneg",
+      "path": "GRWTSK/LinearAlgebra/QuadraticForm/TwoMomentCentering.lean"
+    },
+    {
+      "name": "relaxed_value",
+      "path": "GRWTSK/LinearAlgebra/QuadraticForm/TwoMomentCentering.lean"
+    },
+    {
+      "name": "relaxed_lower_bound",
+      "path": "GRWTSK/LinearAlgebra/QuadraticForm/TwoMomentCentering.lean"
+    },
+    {
+      "name": "relaxation_debt",
+      "path": "GRWTSK/LinearAlgebra/QuadraticForm/TwoMomentCentering.lean"
+    },
+    {
+      "name": "width_pos",
+      "path": "GRWTSK/NumberTheory/Moebius/LogCellMeanVariance.lean"
+    },
+    {
+      "name": "actual_source_on_cell",
+      "path": "GRWTSK/NumberTheory/Moebius/LogCellMeanVariance.lean"
+    },
+    {
+      "name": "cell_centering",
+      "path": "GRWTSK/NumberTheory/Moebius/LogCellMeanVariance.lean"
+    },
+    {
+      "name": "retained_mean_debt",
+      "path": "GRWTSK/NumberTheory/Moebius/LogCellMeanVariance.lean"
+    },
+    {
+      "name": "cleared_cell_centering",
+      "path": "GRWTSK/NumberTheory/Moebius/LogCellMeanVariance.lean"
+    }
+  ],
+  "limits": {
+    "Suzuki_source_kernel_identification": "NOT_ESTABLISHED",
+    "candidate_lean_theorem_count": 18,
+    "cell_mean_growth": "NOT_ESTABLISHED",
+    "continuum_proofs": "WRITTEN in DERIVATION.md; not kernel checked",
+    "full_repository_layout_and_documentation": "NOT_RUN: no full checkout",
+    "full_uniform_signed_energy": "NOT_ESTABLISHED",
+    "higher_zeta_atlas": "NOT_EXECUTED",
+    "lake_executable": null,
+    "lean_executable": null,
+    "native_lean": "NOT_RUN: no Lean or Lake executable in this runtime",
+    "owned_declaration_audit": "NOT_RUN",
+    "remote_changes": false
+  },
+  "operator_checks": {
+    "hilbert_schmidt_squared_bound": "711/25000",
+    "linfinity_norm_squared_bound": "1049/20000",
+    "strict_rational_comparisons_passed": true
+  },
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "prefix_checks": {
+    "all_height_variance_upper": "23359331537178943356623554640666240077577948269/1096126227998177188652763624537212264741949407232",
+    "cross_precision_bits": 192,
+    "cross_precision_intervals_overlap": true,
+    "cutoff": 4096,
+    "independent_factorization_matches": true,
+    "independent_trial_factorization_through": 4096,
+    "strict_rational_bound": "533/25000",
+    "strict_rational_comparison_passed": true,
+    "working_bits": 160
+  },
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "refinement": [
+    {
+      "all_height_variance_upper": "24050537318454166684552736423848752062149074809/1096126227998177188652763624537212264741949407232",
+      "level": 0,
+      "prefix_variance": {
+        "lower": "3889485578683531124003932239854000748992918465/182687704666362864775460604089535377456991567872",
+        "upper": "7778971157367062248007864479708001497985900499/365375409332725729550921208179070754913983135744"
+      },
+      "theoretical_all_height_bound": "1/6"
+    },
+    {
+      "all_height_variance_upper": "6061696671919192602542244126811269130839437711/1096126227998177188652763624537212264741949407232",
+      "level": 1,
+      "prefix_variance": {
+        "lower": "980548451721824602901659730105013706465139107/182687704666362864775460604089535377456991567872",
+        "upper": "1961096903443649205803319460210027412930531461/365375409332725729550921208179070754913983135744"
+      },
+      "theoretical_all_height_bound": "1/24"
+    },
+    {
+      "all_height_variance_upper": "759262620728629849922012221310970401277062551/548063113999088594326381812268606132370974703616",
+      "level": 2,
+      "prefix_variance": {
+        "lower": "491307917020066151186984335358881359846381587/365375409332725729550921208179070754913983135744",
+        "upper": "245653958510033075593492167679440679923694045/182687704666362864775460604089535377456991567872"
+      },
+      "theoretical_all_height_bound": "1/96"
+    },
+    {
+      "all_height_variance_upper": "379825675769042804884597714414740709837583879/1096126227998177188652763624537212264741949407232",
+      "level": 3,
+      "prefix_variance": {
+        "lower": "122891767723259164437943285092805509690858033/365375409332725729550921208179070754913983135744",
+        "upper": "122891767723259164437943285092805509694864557/365375409332725729550921208179070754913983135744"
+      },
+      "theoretical_all_height_bound": "1/384"
+    }
+  ],
+  "repository": "grwtsk/math",
+  "runs": [
+    {
+      "argv": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "label": "final-unit-tests-normal",
+      "returncode": 0,
+      "seconds": 1.9060524970000188,
+      "stderr_sha256": "d630e896318cd65ffc020b82dae5f059387775c5322a6eef4420bf9d8133ed11",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "scripts/log_cell_relaxation.py",
+        "--verify",
+        "reports/prefix-4096.json"
+      ],
+      "label": "final-prefix-4096-normal",
+      "returncode": 0,
+      "seconds": 3.239901292000013,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "ee0e0856851378a563535d2321ba208bb6db37976c64b15aee983d9ca3d656c0"
+    },
+    {
+      "argv": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "scripts/log_cell_relaxation.py",
+        "--verify",
+        "reports/residual-operator-4096.json"
+      ],
+      "label": "final-operator-4096-normal",
+      "returncode": 0,
+      "seconds": 3.039001610000014,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "7fa9373bbca69d5384c9c6d811f99fec3f3a97a461dc85ae0eedc7c81095a326"
+    },
+    {
+      "argv": [
+        "/opt/pyvenv/bin/python",
+        "-O",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "label": "final-unit-tests-optimized",
+      "returncode": 0,
+      "seconds": 4.6767285579999225,
+      "stderr_sha256": "ecfc52ed5d69b02f06465c52a131befac86afc5f5b3a4ce9eed5eda49133cccc",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/opt/pyvenv/bin/python",
+        "-O",
+        "-B",
+        "scripts/log_cell_relaxation.py",
+        "--verify",
+        "reports/prefix-4096.json"
+      ],
+      "label": "final-prefix-4096-optimized",
+      "returncode": 0,
+      "seconds": 4.800554844999851,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "ee0e0856851378a563535d2321ba208bb6db37976c64b15aee983d9ca3d656c0"
+    },
+    {
+      "argv": [
+        "/opt/pyvenv/bin/python",
+        "-O",
+        "-B",
+        "scripts/log_cell_relaxation.py",
+        "--verify",
+        "reports/residual-operator-4096.json"
+      ],
+      "label": "final-operator-4096-optimized",
+      "returncode": 0,
+      "seconds": 4.607451149999861,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "7fa9373bbca69d5384c9c6d811f99fec3f3a97a461dc85ae0eedc7c81095a326"
+    }
+  ],
+  "schema": "log-cell-relaxation-verification-v1",
+  "source_bindings": {
+    "DERIVATION.md": "6f3d14be37bfb534927a0b7aa760119a553f09eceb3f5174568d5f474ffc76e1",
+    "GRWTSK/Analysis/FiniteSum/BinaryMeanVariance.lean": "795d7a49174708ee29b991aab2e2af65201329ba53e4c886bb5c0c21e4567576",
+    "GRWTSK/LinearAlgebra/QuadraticForm/TwoMomentCentering.lean": "ebb1be0b321762166fedce921ca4c7546f84992e9e98addc7e72ac605d73dff2",
+    "GRWTSK/NumberTheory/Moebius/LogCellMeanVariance.lean": "683d7632c4b6d8223e8b7621900308d7fb2d059655b32b96af168d826116587f",
+    "proofs/Audit.lean": "6bf57510cbc1f4166547de2053edb1b9f3837603207d8b513e16d9eaa44322ca",
+    "scripts/log_cell_relaxation.py": "abb4126d50fe05fe6c6ff92ca7c46361a7953ec4cb20efc02c08447e89c9523c",
+    "source-bindings/repository.json": "530d8b98ca041314fb131fbea59d83c4baadd11bc9ed4ba31e7b8315f9cb7070",
+    "tests/test_log_cell_relaxation.py": "686151936fc213fa2ddb6863f8c713ff1a887b55e9fc79624ad9432835b74dcb"
+  },
+  "sympy_version": "1.14.0",
+  "test_count_per_mode": 48
+}

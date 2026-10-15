@@ -1,0 +1,22 @@
+import GRWTSK.Analysis.FiniteSum.BinaryMeanVariance
+import GRWTSK.NumberTheory.Moebius.LogCellMeanVariance
+
+#print axioms GRWTSK.LinearAlgebra.QuadraticForm.TwoMomentCentering.cleared_centering
+#print axioms GRWTSK.LinearAlgebra.QuadraticForm.TwoMomentCentering.centering
+#print axioms GRWTSK.LinearAlgebra.QuadraticForm.TwoMomentCentering.variance_nonneg
+#print axioms GRWTSK.LinearAlgebra.QuadraticForm.TwoMomentCentering.relaxed_value
+#print axioms GRWTSK.LinearAlgebra.QuadraticForm.TwoMomentCentering.relaxed_lower_bound
+#print axioms GRWTSK.LinearAlgebra.QuadraticForm.TwoMomentCentering.relaxation_debt
+#print axioms GRWTSK.Analysis.FiniteSum.BinaryMeanVariance.cleared_merge
+#print axioms GRWTSK.Analysis.FiniteSum.BinaryMeanVariance.weighted_merge
+#print axioms GRWTSK.Analysis.FiniteSum.BinaryMeanVariance.binary_split
+#print axioms GRWTSK.Analysis.FiniteSum.BinaryMeanVariance.mean_square_mono
+#print axioms GRWTSK.Analysis.FiniteSum.BinaryMeanVariance.exponential_difference_quartic
+#print axioms GRWTSK.Analysis.FiniteSum.BinaryMeanVariance.mesh_variance_scale
+#print axioms GRWTSK.Analysis.FiniteSum.BinaryMeanVariance.mean_does_not_erase_variance
+#print axioms GRWTSK.NumberTheory.Moebius.LogCellMeanVariance.actual_source_on_cell
+#print axioms GRWTSK.NumberTheory.Moebius.LogCellMeanVariance.cell_centering
+#print axioms GRWTSK.NumberTheory.Moebius.LogCellMeanVariance.retained_mean_debt
+#print axioms GRWTSK.NumberTheory.Moebius.LogCellMeanVariance.cleared_cell_centering
+
+#print axioms GRWTSK.NumberTheory.Moebius.LogCellMeanVariance.width_pos
