@@ -19,6 +19,7 @@ identifying a cache with the Riemann sphere or proving a topological equivalence
 | `cache/taxonomy.json` | Method facets, declared counts, typed relations, decisions, contributions and open premises |
 | `cache/coordination/tasks/` | Scoped agent work and owned paths |
 | `cache/coordination/events/` | Separate immutable progress, review and completion records |
+| `cache/occurrences/` | Separate ordered relation-trace documents bound to exact taxonomy bytes/revision and a source snapshot |
 
 ## Mathematical contracts and operational evidence
 
@@ -116,6 +117,26 @@ Vertex reconstruction has a separate arrow-uniqueness premise. The
 these scopes distinct; general DAG unfolding and Python/JSON refinement remain
 open. Neither source occurrences nor repeated display positions gain proof
 authority from a common vertex label.
+
+The [general typed edge-trace equivalence](../mathematics/Combinatorics/DirectedGraph/edge-trace.md)
+now reconstructs arbitrary quiver paths from valid lists of actual source,
+target and arrow tags at a fixed root. Its mathematical decoder requires a
+validity proof and is maintained without executable code generation. It
+supplies no automatic interpretation or correctness proof for operational
+relation-ID rows.
+
+The separate occurrence-trace adapter validates one fixed root, one typed
+relation kind, forward direction, exact relation content and ordered endpoint
+joins. Its current source snapshot and exact taxonomy byte/revision bindings
+are external inputs to validation. Repeated relation IDs retain their distinct
+positions, and an empty trace retains its explicit root. The existing taxonomy
+schema and duplicate-edge guard remain unchanged. A trace is metadata with
+`proof_acceptance = not-established`; the operational validator's bounded
+hostile controls do not prove its correspondence with a Lean quiver. Changes
+to taxonomy relation content require new validation rather than reuse of an
+old occurrence label. The taxonomy is separately byte-bound; it is not part
+of the Lean-source snapshot. Validation binds this declared pair of inputs
+without claiming the taxonomy was historically contained in that snapshot.
 
 See [cache operations](../how-to/cache.md), the
 [taxonomy](../../cache/taxonomy.json), and the

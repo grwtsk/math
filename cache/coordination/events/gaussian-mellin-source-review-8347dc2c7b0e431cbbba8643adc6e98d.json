@@ -1,0 +1,109 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "gaussian-mellin-formal",
+  "event": "source-review",
+  "at": "2026-10-15T19:28:22.635068+00:00",
+  "owner": "cache_adapter",
+  "mathlib_sources": [
+    {
+      "path": "Mathlib/Analysis/SpecialFunctions/Gaussian/FourierTransform.lean",
+      "repository": "https://github.com/leanprover-community/mathlib4",
+      "pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "sha256": "6bdd5e351d714198761da26ce7eac19a140a54218e9902dcf4fd41616d311523",
+      "git_blob": "e66f719517bc84d4a2ff3deafd3b47868b700bd4",
+      "archive": ".local/gaussian-mellin/443dbc4e8fbf4163a17f18a28e2b9e8f/source-inspection/mathlib/Mathlib/Analysis/SpecialFunctions/Gaussian/FourierTransform.lean",
+      "url": "https://github.com/leanprover-community/mathlib4/blob/db584cd6d46c92f209a44c0f1c829460d327499d/Mathlib/Analysis/SpecialFunctions/Gaussian/FourierTransform.lean",
+      "status": "source-inspected; dependency objects reused in dev replay, not a Mathlib source rebuild"
+    },
+    {
+      "path": "Mathlib/Analysis/MellinInversion.lean",
+      "repository": "https://github.com/leanprover-community/mathlib4",
+      "pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "sha256": "72c7c31cd6742d24384267526a82106b4c9a0ad968220e4cfcaa495e766e3b07",
+      "git_blob": "37601adc7e73963c748cd754155cbb0ee28be86f",
+      "archive": ".local/gaussian-mellin/443dbc4e8fbf4163a17f18a28e2b9e8f/source-inspection/mathlib/Mathlib/Analysis/MellinInversion.lean",
+      "url": "https://github.com/leanprover-community/mathlib4/blob/db584cd6d46c92f209a44c0f1c829460d327499d/Mathlib/Analysis/MellinInversion.lean",
+      "status": "source-inspected; dependency objects reused in dev replay, not a Mathlib source rebuild"
+    },
+    {
+      "path": "Mathlib/Analysis/MellinTransform.lean",
+      "repository": "https://github.com/leanprover-community/mathlib4",
+      "pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "sha256": "81851086004a6e5424da555061a4b2f9d2e7cece148d9d49c3537a05adba73ff",
+      "git_blob": "665d618fa526c81b3606cb8fbadf27b5a7913d32",
+      "archive": ".local/gaussian-mellin/443dbc4e8fbf4163a17f18a28e2b9e8f/source-inspection/mathlib/Mathlib/Analysis/MellinTransform.lean",
+      "url": "https://github.com/leanprover-community/mathlib4/blob/db584cd6d46c92f209a44c0f1c829460d327499d/Mathlib/Analysis/MellinTransform.lean",
+      "status": "source-inspected; dependency objects reused in dev replay, not a Mathlib source rebuild"
+    },
+    {
+      "path": "Mathlib/MeasureTheory/Function/L1Space/Integrable.lean",
+      "repository": "https://github.com/leanprover-community/mathlib4",
+      "pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "sha256": "86008d68eeb9281c5a382f49c21ed58246c5f9a5f0d5268f8eeadb050b50e70f",
+      "git_blob": "5895b55e6d15c6b006c03eba868bb5c418858fe2",
+      "archive": ".local/gaussian-mellin/443dbc4e8fbf4163a17f18a28e2b9e8f/source-inspection/mathlib/Mathlib/MeasureTheory/Function/L1Space/Integrable.lean",
+      "url": "https://github.com/leanprover-community/mathlib4/blob/db584cd6d46c92f209a44c0f1c829460d327499d/Mathlib/MeasureTheory/Function/L1Space/Integrable.lean",
+      "status": "source-inspected; dependency objects reused in dev replay, not a Mathlib source rebuild"
+    }
+  ],
+  "primary_openai_sources": [
+    {
+      "path": "lean/OAI/NumberTheory/DirichletL/Detector/GaussianMellin.lean",
+      "repository": "https://github.com/openai/math",
+      "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "sha256": "0526d85d63bcee8a85cb945c231af1263839ca0808c6d714132d0781b2618a04",
+      "git_blob": "93c23e9dd51f20828eb7c216ea7f8f17963d9314",
+      "bytes": 2952,
+      "archive": ".local/gaussian-mellin/443dbc4e8fbf4163a17f18a28e2b9e8f/source-inspection/openai/lean/OAI/NumberTheory/DirichletL/Detector/GaussianMellin.lean",
+      "scout_archive": ".local/typed-edge-source-scout/4534f3c3ab94435c820eeec3464d9e62/openai/lean/OAI/NumberTheory/DirichletL/Detector/GaussianMellin.lean",
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/Detector/GaussianMellin.lean",
+      "status": "source-inspected/not-replayed"
+    },
+    {
+      "path": "lean/OAI/NumberTheory/PrimePackets/GaussianMellin.lean",
+      "repository": "https://github.com/openai/math",
+      "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "sha256": "b75fbc1485f8d75baf8465098891974d6143ce2d870ae20a2573f6e45e6213a6",
+      "git_blob": "330164ffe080d5cbaf26edc2cb8155cd88deccf9",
+      "bytes": 29078,
+      "archive": ".local/gaussian-mellin/443dbc4e8fbf4163a17f18a28e2b9e8f/source-inspection/openai/lean/OAI/NumberTheory/PrimePackets/GaussianMellin.lean",
+      "scout_archive": ".local/typed-edge-source-scout/4534f3c3ab94435c820eeec3464d9e62/openai/lean/OAI/NumberTheory/PrimePackets/GaussianMellin.lean",
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/PrimePackets/GaussianMellin.lean",
+      "status": "source-inspected/not-replayed"
+    }
+  ],
+  "primary_source_roles": [
+    {
+      "path": "lean/OAI/NumberTheory/DirichletL/Detector/GaussianMellin.lean",
+      "actual_statement": "gaussianMellinProfile y=(1/(2*pi))*pi^(1/2)*exp(-(Complex.log(y))^2/4); gaussianMellin_integral/inversion establish its inverse vertical integral for F(s)=exp(s^2), y>0, arbitrary real sigma. Actual profile norm/power bound also proved.",
+      "scope": "A genuine actual inverse Gaussian supplier at its explicit normalization, not a direct all-complex forward MellinConvergent/formula declaration. No proof port from this file in the current library."
+    },
+    {
+      "path": "lean/OAI/NumberTheory/PrimePackets/GaussianMellin.lean",
+      "actual_statement": "Selected hasMellin_of_add_inversion and weighted-theta/character-flow statements concern actual convergence/decomposition and arithmetic theta families with zero-weight, bounded-map, determinant, nontrivial-character and related premises.",
+      "scope": "Selected statement portions inspected with source scout; no exact scalar complex-width log-Gaussian Mellin duplicate in those portions. Not a complete source theorem audit or arithmetic supplier acceptance."
+    }
+  ],
+  "bounded_duplicate_search": {
+    "paths": [
+      "Mathlib/Analysis/**/*.lean",
+      "GRWTSK/**/*.lean"
+    ],
+    "queries": [
+      "mellin.*[Gg]aussian",
+      "[Gg]aussian.*mellin",
+      "integrable_cexp.*quadratic",
+      "integral_cexp_quadratic",
+      "integrable.*exp.*log.*sq"
+    ],
+    "known_generic_api_duplicates": [
+      "integrable_cexp_quadratic",
+      "integral_cexp_quadratic",
+      "Mellin/Fourier logarithmic change of variables"
+    ],
+    "new_composition": "Combine actual full exponential change of variables with general complex quadratic Gaussian APIs to obtain the Mellin transform and convergence of the named logarithmic Gaussian for every s and positive-real-part width b. Existing zero-line theorem remains immutable.",
+    "absence_limit": "No exact scalar log-Gaussian Mellin statement found in these bounded name/expression searches and selected pinned OpenAI statement portions; no global novelty/completeness claim."
+  },
+  "credit": "Mathlib exact copyright/Apache2 notices for Sébastien Gouëzel (2022), Lawrence Wu (2024), and David Loeffler (2023) retained in final source header; accepted imported ReverseInversion retains OpenAI project authorship/Apache2. OpenAI primary files remain source-inspected context, not newly replayed upstream theorem closure.",
+  "arithmetic_frontier": "The actual Gaussian is an unconditional analytic transform supplier only. It does not discharge arithmetic Dirichlet coefficients, initial product identities, signal comparison/energy bounds, regularization premises or zero-free/RH conclusions. A future normalized-source bridge must pay the exact1/(2*pi) and pi^(1/2) constants, positive-y complex-log identification, and its own convergence obligations."
+}

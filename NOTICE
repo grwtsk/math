@@ -97,3 +97,18 @@ grwtsk contributors; adaptation/formalization/checking assistance: OpenAI Codex.
 Only the stated line transform identity is checked; no arithmetic supplier,
 independent review, mathematical novelty or RH proof is asserted. See
 LICENSES/OpenAI-Apache-2.0.txt and exact source headers for upstream terms.
+
+Complex logarithmic Gaussian Mellin transform
+--------------------------------------------
+GRWTSK/Analysis/MellinTransform/LogarithmicGaussian.lean retains Apache-2.0
+terms. The exact log change of variables follows Mathlib MellinInversion
+(copyright 2024 Lawrence Wu); the complex quadratic Gaussian formula and
+integrability are supplied by Mathlib (copyright 2022 Sebastien Gouezel).
+Mellin definitions credit David Loeffler (copyright 2023). Imported prior
+ReverseInversion retains OpenAI source credit and licensing. Human direction:
+grwtsk contributors; local formalization/adaptation/checking assistance:
+OpenAI Codex. The actual strictly-decaying complex-width profile and every
+complex Mellin coordinate are checked under their explicit hypotheses; the
+concrete Gaussian nonvanishing consumer is not an arithmetic or RH supplier.
+Original names, authors and source licenses remain upstream. No mathematical
+novelty, independent review or whole-library admission is claimed.

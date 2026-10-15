@@ -1,0 +1,11 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "typed-edge-trace-formal",
+  "owner": "indexed_dictionary",
+  "at": "2026-10-15T19:27:12.114391+00:00",
+  "kind": "native-lock-released",
+  "source": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/EdgeTraceMissingJoin.lean",
+  "exit_code": 1,
+  "all_native_children_exited": true,
+  "log": ".local/typed-edge-trace/logs/20261015T192711.483836Z-EdgeTraceMissingJoin.log"
+}

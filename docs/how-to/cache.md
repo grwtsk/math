@@ -54,3 +54,27 @@ files in `cache/coordination/events/`. They preserve the task's owned paths,
 source variants, actual failures and explicit remaining premises. Integrators
 read back the current sources, native receipts and revision before accepting
 or committing progress. A task or event never grants remote-publication rights.
+
+Validate a separate, revision-bound occurrence trace without changing the
+taxonomy schema:
+
+```sh
+python3 -B scripts/cache_occurrences.py cache/occurrences/communication-trace-2026-10-15.json
+python3 -B scripts/test_cache_occurrences.py
+python3 -O -B scripts/test_cache_occurrences.py
+```
+
+The default uses the current source-cache reference. An explicit `--revision
+RECORDED_SNAPSHOT` selects a retained source snapshot. Both modes require the
+exact current `cache/taxonomy.json` bytes and revision recorded in the trace.
+A later taxonomy change or source-cache reference change is not silently
+rebound: retain the old document and validate a separately constructed new
+trace against the new exact inputs. Rechecking a historical source snapshot
+alone does not bypass taxonomy drift.
+
+A trace fixes a root, relation kind and forward direction, retains every
+relation identity and occurrence position, checks exact endpoint joins, and
+binds each relation's full content. Empty traces retain their root; repeated
+relations retain separate positions. The validator is read-only. It neither
+relaxes the taxonomy's duplicate-edge rule nor establishes proof acceptance,
+permission or a Lean/Python correspondence.
