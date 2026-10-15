@@ -1,0 +1,19 @@
+{
+  "status": "FAILED",
+  "tests": 16,
+  "failures": 1,
+  "errors": 0,
+  "optimization": 0,
+  "source_sha256": "3d7bf8fd53d633e1c602a61925400feb77717c9ed73ce6de8c22c040cb672c98",
+  "tail_threshold": "59/452",
+  "selected_height_exponent": "2/15",
+  "proved_grid_exponential_margin_lower": "1/100",
+  "fixed_deviation_strata": 300,
+  "external_seven_eighths": "IMPORTED_THEOREM_NOT_REPLAYED",
+  "external_zero_density": "IMPORTED_PUBLISHED_THEOREM_NOT_REPROVED",
+  "continuum_tail_proof": "WRITTEN_ARGUMENT",
+  "all_depth_source_estimate": "OPEN",
+  "RH_proved": false,
+  "native_Lean_audit": false,
+  "remote_repository_changed": false
+}
