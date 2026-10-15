@@ -1,0 +1,48 @@
+/-
+Human mathematical direction and GRL-RH-1 specification: grwtsk contributors.
+Construction, derivation and candidate formalization assistance: OpenAI ChatGPT.
+MIT. Lean and Mathlib retain their upstream authorship and licenses.
+CANDIDATE_SOURCE_ONLY: not natively elaborated, compiled or axiom-audited.
+This inert evidence file is not imported by the active library.
+-/
+import GRWTSK.Algebra.Polynomial.Quartic.TraceWitness
+import Mathlib.Tactic
+
+set_option autoImplicit false
+noncomputable section
+
+namespace GRWTSK.Polynomial.QuarticTrace
+
+/-- The exact scale linking a negative pair mass to the retained slope-two trace.
+This definition is total; every division-based theorem retains a != 0. -/
+def pairScale (mass a : ℝ) : ℝ := mass / (16 * a ^ 4)
+
+theorem pairScale_pos (mass a : ℝ) (hmass : 0 < mass) (ha : a ≠ 0) :
+    0 < pairScale mass a := by
+  have ha4 : 0 < a ^ 4 := by
+    nlinarith [sq_pos_of_ne_zero (pow_ne_zero 2 ha)]
+  exact div_pos hmass (mul_pos (by norm_num) ha4)
+
+theorem pairScale_margin (mass a : ℝ) (ha : a ≠ 0) :
+    16 * pairScale mass a * a ^ 4 = mass := by
+  dsimp [pairScale]
+  field_simp [ha]
+
+theorem pair_margin_as_quartic (mass a t : ℝ) (ha : a ≠ 0) :
+    pairScale mass a * witnessTrace 2 a t = -mass := by
+  rw [uniform_witness]
+  have h := pairScale_margin mass a ha
+  nlinarith
+
+/-- Use the existing canonical contradiction, without changing its target. -/
+theorem pair_residual_contradiction (mass a t w residual : ℝ)
+    (hmass : 0 < mass) (ha : a ≠ 0) (hw : 0 ≤ w)
+    (hid : w = -mass + residual) (hr : residual < mass) : False := by
+  apply residual_contradiction a t w (pairScale mass a) residual hw
+    (pairScale_pos mass a hmass ha)
+  · rw [pair_margin_as_quartic mass a t ha]
+    exact hid
+  · rw [pairScale_margin mass a ha]
+    exact hr
+
+end GRWTSK.Polynomial.QuarticTrace
