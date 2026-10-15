@@ -1,0 +1,17 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "scaled-gaussian-formal",
+  "event": "final-dev-lock-acquired",
+  "owner": "cache_adapter",
+  "at": "2026-10-15T21:04:30.564661+00:00",
+  "source_hashes": {
+    "GRWTSK/Analysis/MellinTransform/ReverseInversion.lean": "88d959d74d9d5e27772f57e847497b9a943167cc41ae6abb453c3932cbb84c57",
+    "GRWTSK/Analysis/MellinTransform/LogarithmicGaussian.lean": "cd47e598796f4f901ddea56dd05bb9e719534e1aac5589c1be6ddfb8d9fea66d",
+    "GRWTSK/Analysis/MellinTransform/NormalizedGaussian.lean": "a0ed0dbf644601887df128536951a9c3e17ecf42970069a13acdfcb93518e3bf",
+    "GRWTSK/Analysis/MellinTransform/ScaledGaussianDerivatives.lean": "2d1dbbcd5142807daa8a5b6719b0a7bf026aa90991fa030019ed2fc9c0178b0a",
+    "GRWTSK/Analysis/MellinTransform/Checks/Positive/ScaledGaussianDerivatives.lean": "4b3a1a55c2f80e7284cc89e6fa4a25c3dfbc0c246a8ec3af99a04af46434cb80",
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/ScaledGaussianMissingDomain.lean": "11128d1302a4e430ed7d68ed2ee0904156efb3503d75abf438559cfaee260f16"
+  },
+  "competing_jobs": [],
+  "archive": ".local/scaled-gaussian-derivatives/86325cb19597432387f3d1f74f4d3a2a/final"
+}

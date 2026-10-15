@@ -191,3 +191,27 @@ Human direction: R.A. Jacob Martone; local adaptation/formalization/checking:
 OpenAI Codex. No necessity of Z>0, uniform-scale derivative bound,
 surrounding physical/ideal detector admission, independent validation or RH
 supplier is claimed by this window construction.
+
+Uniform scale bounds for logarithmic Gaussian derivatives
+--------------------------------------------------------
+GRWTSK/Analysis/MellinTransform/ScaledGaussianDerivatives.lean retains
+Apache-2.0 terms. The actual supplier chain is adapted from
+openai/math@1581d4cbdd69a0faf34b2089614fe2a814316a6a,
+lean/OAI/NumberTheory/DirichletL/Detector/GaussianDerivative.lean,
+raw SHA256 e822dd45a58f81ae149643bd4749a53a2e52cee9d70dd83397415ac8e522cf6d,
+Git blob 022aea0421700bf32d13df8184f1ef6ae641af10.
+OpenAI remains the upstream project author; see
+LICENSES/OpenAI-Apache-2.0.txt. Mathlib Analysis/Complex/Liouville.lean
+retains copyright (c) 2022 Yury Kudryashov, author Yury Kudryashov;
+Analysis/Complex/RealDeriv.lean retains copyright (c) 2019 Sébastien Gouëzel,
+authors Sébastien Gouëzel and Yourong Zang; SpecialFunctions/Complex/Analytic.lean
+retains copyright (c) 2024 Geoffrey Irving, author Geoffrey Irving. All
+retain Apache-2.0, with their original headers preserved in source.
+Prior Gaussian, logarithm, Mellin and derivative author notices remain upstream.
+The actual principal-log power bound, positive-half-plane analyticity,
+closed disk bound, iterated derivative restriction and Cauchy estimate
+supply one constant depending on real exponent and derivative order,
+independent of positive scale and real y in [1/2,2].
+Human direction: R.A. Jacob Martone; adaptation/formalization/checking:
+OpenAI Codex. No independent validation, whole arithmetic/physical detector,
+uniform compact-window seminorm consumer or RH admission is claimed here.

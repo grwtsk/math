@@ -1,0 +1,11 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "parent-trace-dictionary-formal",
+  "owner": "indexed_dictionary",
+  "at": "2026-10-15T21:10:44.599677+00:00",
+  "kind": "native-lock-released",
+  "source": "GRWTSK/Combinatorics/DirectedGraph/ParentTraceDictionary.lean",
+  "exit_code": 0,
+  "all_native_children_exited": true,
+  "log": ".local/parent-trace/logs/20261015T211043.439776Z-ParentTraceDictionary.log"
+}

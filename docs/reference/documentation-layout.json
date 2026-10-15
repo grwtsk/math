@@ -3526,10 +3526,28 @@
       "source_sha256": "db195580ca2f4e4a941f13c71d285af377d2bb29ed7250db0f0b13570984cec5",
       "status": "fresh-selected",
       "evidence": "evidence/Analysis/MellinTransform/compact-gaussian-window-checks-2026-10-15.json"
+    },
+    "docs/mathematics/Combinatorics/DirectedGraph/parent-trace-dictionary.md": {
+      "title": "Parent dictionaries for complete rooted path traces",
+      "subject": "Combinatorics",
+      "object": "DirectedGraph",
+      "primary_source": "GRWTSK/Combinatorics/DirectedGraph/ParentTraceDictionary.lean",
+      "source_sha256": "c388e127a08238f465873954f0b6982ddbe556d0f77b252d4b2d8f89bf32237a",
+      "status": "fresh-selected",
+      "evidence": "evidence/Combinatorics/DirectedGraph/parent-trace-dictionary-checks-2026-10-15.json"
+    },
+    "docs/mathematics/Analysis/MellinTransform/scaled-gaussian-derivatives.md": {
+      "title": "Uniform scale bounds for Gaussian derivatives",
+      "subject": "Analysis",
+      "object": "MellinTransform",
+      "primary_source": "GRWTSK/Analysis/MellinTransform/ScaledGaussianDerivatives.lean",
+      "source_sha256": "2d1dbbcd5142807daa8a5b6719b0a7bf026aa90991fa030019ed2fc9c0178b0a",
+      "status": "fresh-selected",
+      "evidence": "evidence/Analysis/MellinTransform/scaled-gaussian-derivatives-checks-2026-10-15.json"
     }
   },
   "object_binding_registry": "docs/reference/object-source-bindings.json",
-  "object_binding_registry_sha256": "2ac16d89a39d46b11e4a3b426faee6b38ec31d6136866e3fe1502346ba56537b",
+  "object_binding_registry_sha256": "edebc7203953d82214312b106dace67e75449ffc2979dfac01859ee143b65351",
   "navigation": {
     "schema": "subject-index-navigation-v1",
     "summary": "docs/reference/library-summary.json"
