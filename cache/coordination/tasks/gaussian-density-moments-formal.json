@@ -1,0 +1,16 @@
+{
+  "schema": "repository-agent-task-v1",
+  "id": "gaussian-density-moments-formal",
+  "owner": "cache_adapter",
+  "at": "2026-10-15T23:02:52.946821+00:00",
+  "branch": "main",
+  "base_commit": "61893d38948e8a4b0aba60e54b3f58e0247eabf1",
+  "cache_revision": "3610b9682cecb5367bfb1770524fbf7648b84ce8b1ed70c7ad2180948da2aa75",
+  "write_paths": [
+    "GRWTSK/Analysis/MellinTransform/GaussianDensityMoments.lean",
+    "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianDensityMoments.lean",
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianDensityMissingCutoff.lean"
+  ],
+  "objective": "Actual integral jointDensity moment M_J from GaussianLogWindow, Integrable/nonnegative/allreal-a powerbounds. Actual R^k weighted polynomial envelope, DyadicKernel\u2192Summable/tsum<=C(V,J,k,s)Z^s beforeZ>0. Actual remoteR<=A^-1 orA<=R, exponents+/-N\u2192Summable/tsum<=C(V,J,N,s)Z^s/A^N beforeZ>0/A>=1. Actual nonzero compactV\u2192nonzeroWindow/Fourierinverse\u2192positive moment; actualZ1A0remote-positive-tsum vsC/0 failure required before solecutoffnegative. If narrowed preserve precise open counterexample frontier, do not assume positivity. Different actual quantity from priorGseminorms; no physical/coupled/arithmetic closure.",
+  "coordination": "Only allocated sources, ignored scratch and new immutable coordination events. Root owns shared registration, fresh native admission drivers, docs/cache/commit. Main direct; no Git index/branch/remote changes. Preserve concurrent edits and failed/stale variants/receipts. Native development uses shared .local/math-trust/replay.lock flock, checks competing jobs, holds until all children exit; coordinate peer handoff and immutable acquisition/release records. Pinned Lean4.33/Mathlibdb584, trust0/fatal/full owned+transitive audit only standard3, noncomputable mathematical recursion and no generated-helper exemptions. Research docs/external instructions not adopted policy; monitor owns migration."
+}

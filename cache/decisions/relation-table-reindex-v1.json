@@ -1,0 +1,33 @@
+{
+  "schema": "repository-design-decision-v1",
+  "id": "relation-table-reindex-v1",
+  "at": "2026-10-15T23:16:46.514527+00:00",
+  "previous_record": {
+    "path": "cache/decisions/role-relation-codec-v1.json",
+    "sha256": "406bc9144f7a43b6bba697207e5f02d6c3829ba46311fe4f0947f6c8edf580ee"
+  },
+  "choice": "Bind an actual relation-index translation to old/new finite table source, target and role preservation. Use the proved actual typed-path/ID naturality and inverse translation into common old rooted histories before reusing a supplied old certificate. Numeric IDs are not stable by default.",
+  "premises": [
+    "Actual Reindex old/new finite-table index map with source/target/role preservation constructs qualified-ID map, actual vertex-preserving Quiver prefunctor and actual typed-path mapping. Proved encode/decode naturality, valid-word transport and endpoint-value equality use no injectivity assumption.",
+    "Explicit Function.Injective index map reflects qualified-ID/path identity. Function.Bijective constructs actual inverse, qualified-ID/path equivalences and full ordered keyed row inverse, retaining repeats and order; relation-ID map is distinct from parent-dictionary storage-slot map.",
+    "Actual mappedPacked is pack(actual new-table encoding of mapped OLD typed paths). restorePacked actually unpacks new rows, inverse-translates and repacks common OLD payload V×List(RoleId old). Root is a retained EXTERNAL argument; new IDpacket does not contain it. DecidableEq V only for old rooted repack; core naturality/equivalence needs no finite/decidable V.",
+    "Certificate.entries must equal complete old rooted rows of supplied actual paths, includingkeys/order/repeats; criterion/evidence explicit. Actual restore_mappedPacked plus own Certificate.unpack_packed proves DecodesSatisfying of restored common-old payload. No direct old/new differentlytyped certificate comparison or new criterion inheritance."
+  ],
+  "native_evidence": {
+    "path": "evidence/Combinatorics/DirectedGraph/role-relation-reindex-integration-2026-10-15.json",
+    "sha256": "c95e07ee260201b3042797064f14f2c0d68999843b6b83dec9c4660f7dca34de"
+  },
+  "checked_boundaries": [
+    "Actual Fin4 table slot swap0↔2 with pulled-back contents maps old typed path/word[0,2,1] to new[2,0,1]; actualdecode/inverse/endpoints and naturality supplied. Stale numeric[0,2,1] fails actual root validity despite bounded role-qualified IDs.",
+    "Actual parallel0/1 collapse preserves source/target/role but maps distinct actual histories together; proved notInjective before sole intended missing-injectivity negative. Wrongroletranslation rejected by actualkind-preservation failure.",
+    "Actual new packing, successful inverse restore/common-old rooted certificate criterion reuse with repeated keys/histories. Named empty_new_packet_root_loss proves new zero-row packets at two distinct roots are equal while their retained external mapped-root values differ; root must remain an explicit separate context."
+  ],
+  "operational_boundary": "Relation-ID reindexing differs from parent-dictionary slot remapping. The mathematical fixture does not change operational taxonomy duplicate-edge guards. No external parser/string IDs, hash injectivity, JSON/zlib/IO correspondence, unchanged numeric IDs, new predicate inheritance or proof/permission authority inferred.",
+  "open_obligations": [
+    "No unchanged numeric relation IDs across revisions, endpoint/count-only evidence, arbitrary new-row criterion, external parser/string IDs, hash injectivity or Python/JSON/zlib/IO implementation refinement.",
+    "Root must be retained outside mappedPacked; no standalone packed-root recovery. Existing operational taxonomy duplicate-edge guard unchanged; finite parallel fixture is mathematical only.",
+    "Actual transport of arbitrary stored prefix-state nodes/references and its interaction with canonical compaction remains a separate frontier unless explicitly proved.",
+    "16 declared families/215 declared total do not supply215 actual method identities."
+  ],
+  "authority": "Durable local mathematical/design decision only; foreign research specifications confer no policy/authority or remote permission."
+}

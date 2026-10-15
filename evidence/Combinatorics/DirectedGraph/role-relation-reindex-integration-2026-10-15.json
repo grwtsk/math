@@ -1,0 +1,119 @@
+{
+  "schema": "selected-mathematical-integration-v1",
+  "at": "2026-10-15T23:16:46.502921+00:00",
+  "source": {
+    "path": "GRWTSK/Combinatorics/DirectedGraph/RoleRelationReindex.lean",
+    "sha256": "ffff5137b1c0837f0cd84416db993d5d81e3bf6476891eb50984652d0f88a4a9"
+  },
+  "native_receipt": {
+    "path": "evidence/Combinatorics/DirectedGraph/role-relation-reindex-checks-2026-10-15.json",
+    "sha256": "e1e7425092c1a78b6d03343116c105766927d6956cc0425ea1a4831622f777c9"
+  },
+  "source_review": {
+    "path": "evidence/Combinatorics/DirectedGraph/role-relation-reindex-source-review-2026-10-15.json",
+    "sha256": "85a95e8df1de78802eaa3ddcd4dc3da39d24bd8e15bed7e1277523e256b7c0f2"
+  },
+  "owned_declarations": 776,
+  "selected_library_owned_count": 60,
+  "owned_modules": [
+    {
+      "declarations": 52,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding"
+    },
+    {
+      "declarations": 18,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences"
+    },
+    {
+      "declarations": 46,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.EdgeTrace"
+    },
+    {
+      "declarations": 21,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix"
+    },
+    {
+      "declarations": 34,
+      "module": "GRWTSK.Logic.FiniteSequences.IndexedDictionary"
+    },
+    {
+      "declarations": 33,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixInventory"
+    },
+    {
+      "declarations": 78,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.ParentTraceDictionary"
+    },
+    {
+      "declarations": 32,
+      "module": "GRWTSK.Logic.FiniteSequences.DictionaryRevision"
+    },
+    {
+      "declarations": 27,
+      "module": "GRWTSK.Logic.FiniteSequences.DecisionCertificate"
+    },
+    {
+      "declarations": 26,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.RootedTraceRevision"
+    },
+    {
+      "declarations": 20,
+      "module": "GRWTSK.Logic.FiniteSequences.IncrementalDictionary"
+    },
+    {
+      "declarations": 58,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.IncrementalPrefixTable"
+    },
+    {
+      "declarations": 87,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableState"
+    },
+    {
+      "declarations": 36,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCompaction"
+    },
+    {
+      "declarations": 85,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.RoleRelationTable"
+    },
+    {
+      "declarations": 60,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.RoleRelationReindex"
+    },
+    {
+      "declarations": 63,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.RoleRelationReindex"
+    }
+  ],
+  "operational_replay_guards": {
+    "path": "evidence/Combinatorics/DirectedGraph/reindex-density-operational-controls-2026-10-15.json",
+    "sha256": "c4d7d6ba6accdea13e672949a41db167fcb3ad87bd6125640b30e523d59b47c0"
+  },
+  "exact_contracts": [
+    "Actual Reindex old/new finite-table index map with source/target/role preservation constructs qualified-ID map, actual vertex-preserving Quiver prefunctor and actual typed-path mapping. Proved encode/decode naturality, valid-word transport and endpoint-value equality use no injectivity assumption.",
+    "Explicit Function.Injective index map reflects qualified-ID/path identity. Function.Bijective constructs actual inverse, qualified-ID/path equivalences and full ordered keyed row inverse, retaining repeats and order; relation-ID map is distinct from parent-dictionary storage-slot map.",
+    "Actual mappedPacked is pack(actual new-table encoding of mapped OLD typed paths). restorePacked actually unpacks new rows, inverse-translates and repacks common OLD payload V×List(RoleId old). Root is a retained EXTERNAL argument; new IDpacket does not contain it. DecidableEq V only for old rooted repack; core naturality/equivalence needs no finite/decidable V.",
+    "Certificate.entries must equal complete old rooted rows of supplied actual paths, includingkeys/order/repeats; criterion/evidence explicit. Actual restore_mappedPacked plus own Certificate.unpack_packed proves DecodesSatisfying of restored common-old payload. No direct old/new differentlytyped certificate comparison or new criterion inheritance."
+  ],
+  "accepted_controls": [
+    "Actual Fin4 table slot swap0↔2 with pulled-back contents maps old typed path/word[0,2,1] to new[2,0,1]; actualdecode/inverse/endpoints and naturality supplied. Stale numeric[0,2,1] fails actual root validity despite bounded role-qualified IDs.",
+    "Actual parallel0/1 collapse preserves source/target/role but maps distinct actual histories together; proved notInjective before sole intended missing-injectivity negative. Wrongroletranslation rejected by actualkind-preservation failure.",
+    "Actual new packing, successful inverse restore/common-old rooted certificate criterion reuse with repeated keys/histories. Named empty_new_packet_root_loss proves new zero-row packets at two distinct roots are equal while their retained external mapped-root values differ; root must remain an explicit separate context."
+  ],
+  "open_obligations": [
+    "No unchanged numeric relation IDs across revisions, endpoint/count-only evidence, arbitrary new-row criterion, external parser/string IDs, hash injectivity or Python/JSON/zlib/IO implementation refinement.",
+    "Root must be retained outside mappedPacked; no standalone packed-root recovery. Existing operational taxonomy duplicate-edge guard unchanged; finite parallel fixture is mathematical only.",
+    "Actual transport of arbitrary stored prefix-state nodes/references and its interaction with canonical compaction remains a separate frontier unless explicitly proved."
+  ],
+  "contribution_roles": [
+    "R.A. Jacob Martone: human mathematical direction",
+    "OpenAI Codex: local formalization/adaptation/checking; correlated source/model review",
+    "Lean/Mathlib: named upstream authors, definitions/proofs and licensing retained"
+  ],
+  "limits": [
+    "Fresh immutable complete selected local import closure and actual positive controls; trust0/fatal/full owned+transitive-axiom audit, only propext/Classical.choice/Quot.sound.",
+    "Generated local object families frozen/rechecked; clean pinned dependency objects reused/fingerprinted, not cold rebuilt. Whole umbrella not replayed.",
+    "No independent model validation, novelty, runtime refinement, proof/permission authority, complete physical detector or RH acceptance."
+  ],
+  "license": "MIT; imported Lean/Mathlib authors retain Apache-2.0."
+}

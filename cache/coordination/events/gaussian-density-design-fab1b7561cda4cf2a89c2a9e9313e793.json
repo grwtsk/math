@@ -1,0 +1,11 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "gaussian-density-moments-formal",
+  "event": "design-and-contract",
+  "owner": "cache_adapter",
+  "at": "2026-10-15T23:05:20.142563+00:00",
+  "archive": ".local/gaussian-density-moments/ff0816e4eac54b9db2b23a4aa60a9841",
+  "contract": "Actual density integral and weighted all-real profile, actual geometric kernel supplies dyadic/remote sums. New general strict-positive J0 moment from V!=0, actual nonzero flow/window, Schwartz Fourier inverse, continuous Integrable nonnegative norm and nonzero point. Concrete V=G(1,0) supplies actualA0positive-sum obstruction.",
+  "status": "ignored-scratch-written-native-NOT_RUN",
+  "limits": "No assumed positivity/evaluation/convergence, no coupled/arithmetic/physical/RH claim."
+}

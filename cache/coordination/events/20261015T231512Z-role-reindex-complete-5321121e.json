@@ -1,0 +1,85 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "role-relation-reindex-formal",
+  "owner": "indexed_dictionary",
+  "at": "2026-10-15T23:15:12.264678+00:00",
+  "kind": "complete-frozen-development",
+  "source_hashes": {
+    "GRWTSK/Combinatorics/DirectedGraph/RoleRelationReindex.lean": "ffff5137b1c0837f0cd84416db993d5d81e3bf6476891eb50984652d0f88a4a9",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/RoleRelationReindex.lean": "eea06196e6857c9954da1031125dcc5ae2104449b00a82731385b29f73d0f018",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/RoleReindexMissingInjectivity.lean": "17ec95ac53d0bae0c68e1c0ebac8389d906c7949dbbd1b5ef05dc24e804a645f"
+  },
+  "canonical_bytes_equal_checked_scratch": true,
+  "result": "Actual source/target/kind-preserving finite Reindex constructs qualified-ID map and actual Quiver prefunctor; actual original PathStar mapping/encodePath/encode naturality, derived actual ValidFrom transport, proved actual decode commutation and finish preservation. Injectivity separately gives ID/path reflection. Bijection produces actual inverse/qualified/path equivalences and inverse rows. Actual new ID.pack\u2192unpack\u2192inverse old-row map\u2192root-lift\u2192actual old-payload pack precedes explicit certificate own-pack same-decoding reuse.",
+  "premises": [
+    "Source/target/kind preservation suffices for mapping/naturality/validity; injectivity is required only for ID/path reflection.",
+    "Global inverse and common-old-payload restoration require Function.Bijective actual index map; added rows under injection-only have no automatic old preimage.",
+    "Certificate requires DecidableEq V, exact actual old-rooted entries binding and explicit criterion/evidence. Root is retained externally; new ID pack does not encode it for entirely empty row data.",
+    "No equality between differently typed old/new Vertex wrappers is claimed; actual mapVertex preserves underlying V value."
+  ],
+  "controls": [
+    "Actual Fin4 swap0\u21942 with new table content pulled back; actual old typed path word[0,2,1] maps/decodes as[2,0,1] with same underlying endpoint",
+    "Stale numeric[0,2,1] at new table has wrong initial source despite inbounds selected-role IDs",
+    "Actual inverse maps original actual typed path back; injective actual path-star consumer",
+    "Collapse parallel0/1 preserves source/target/role but fails index/qualified injectivity and identifies distinct actual single0/single1 histories",
+    "Role-changing2\u21923 preserves endpoints but fails role equality",
+    "Actual mapped path rows with repeated key11/repeated histories are packed and actually unpacked; inverse common-old-rooted packing yields explicit old criterion via its own pack",
+    "Named empty_new_packet_root_loss: actual empty new-ID packs at distinct roots are equal while their retained mapped-root values differ",
+    "Sole negative supplies actual source agreement as required Function.Injective collapse.index"
+  ],
+  "development_native": {
+    "library_passed": true,
+    "positive_passed": true,
+    "owned_census": 776,
+    "library_owned": 60,
+    "positive_owned": 63,
+    "all_mathematical_admission": true,
+    "all_owned_and_transitive_axioms_within": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "runtime_helpers_or_exemptions": false,
+    "audit_log": ".local/role-reindex/logs/20261015T231358.183573Z-SelectedAudit.log",
+    "audit_log_sha256": "d3cbcb22aac816b6045916980357df538b134bda823bc4b6c18e1ff271d20901",
+    "negative_errors": 1,
+    "negative_log": ".local/role-reindex/logs/20261015T231355.582750Z-RoleReindexMissingInjectivity.log",
+    "negative_log_sha256": "c16b3692bdafeea0f646e74c90a2061375c829d330ed61549d58717bad53a68b",
+    "negative_diagnostic": "Application type mismatch: The argument\n  collapse.source\nhas type\n  \u2200 (i : Fin 4), original.source (collapse.index i) = original.source i\nbut is expected to have type\n  Function.Injective collapse.index\nin the application\n  qualified_injective collapse false collapse.source",
+    "all_native_children_exited": true,
+    "shared_lock_released": true
+  },
+  "verification_limits": "Own trust0/fatal development; exact accepted prior project object families reused after source/receipt/object identity checks. Root owns fresh complete selected-source closure replay. restorePacked checks actual indexed unpacking but does not validate arbitrary hostile root/join/snapshot content; restoration theorem is restricted to actual mapped typed-path producer. No unchanged relation numbers, parent-slot correspondence, full arbitrary stored-state transport, new-row criterion inheritance, runtime JSON/hash/IO/parser refinement or changed taxonomy duplicate-edge policy.",
+  "preservation": "Every failed source variant/log retained under ignored .local/role-reindex. Prior775 successful census/positive bytes retained before root requested explicit empty-packet root-loss control; final census776 binds new63-positive declarations. Prior accepted library sources unchanged; no Git index/branch/commit/remote changes.",
+  "source_api_scout": {
+    "hashes": {
+      "GRWTSK/Combinatorics/DirectedGraph/RoleRelationTable.lean": "52940e0c878e9d9329e74455da71dc829d643b629c8997332e8a70e458abb7b2",
+      "GRWTSK/Combinatorics/DirectedGraph/EdgeTrace.lean": "e1e5f2dd23b6c04a734af4bd95f3f19c15fe4f313d66c5bccff08b3312fb2a59",
+      "GRWTSK/Combinatorics/DirectedGraph/PrefixTableState.lean": "bc2398f5aae427a813c22b6025b9ca41c99c6bbfb9b9228ce49d1326a9870c3a",
+      "GRWTSK/Combinatorics/DirectedGraph/PrefixTableCompaction.lean": "fe95a8c59bb0a1e1e9a2a4eba1e5405deb4bcabac3159e0aefcd3db364aad56f",
+      "GRWTSK/Logic/FiniteSequences/IndexedDictionary.lean": "c01e5ff8067d652cafb42260ae283786c8cb78710c73eb23079a54bd05fbedff",
+      "GRWTSK/Logic/FiniteSequences/DecisionCertificate.lean": "d7ce67b4eacedb2d84a958636c55cd0ed75be869f552377163c0832449dc0990",
+      ".lake/packages/mathlib/Mathlib/Combinatorics/Quiver/Basic.lean": "f77135699f522ea3d41d4eb015a191676663c4b5f52315c82f5a3545dfb47645",
+      ".lake/packages/mathlib/Mathlib/Combinatorics/Quiver/Prefunctor.lean": "898e728292408f11a78e9545e062d2adc4e1165942e33dbe9ceff3fced3b7a04",
+      ".lake/packages/mathlib/Mathlib/Combinatorics/Quiver/Path.lean": "9528a3551a251e8e72c253dca4a8854657fb4a9e74af440379af67cc7f419e2a",
+      ".lake/packages/mathlib/Mathlib/Logic/Equiv/Basic.lean": "5b69b238b9fb70f3b1fdede5be53fa5d69047943bf1b1e36162f37de71b67cc8",
+      ".lake/packages/mathlib/Mathlib/Data/List/Basic.lean": "a5490adaf9886c84cf0ffad009267ea9324bfa6c9b81b529454158c19eedd501"
+    },
+    "mathlib_pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "anchors": [
+      "Mathlib Quiver.Prefunctor actual structure/map/obj; Quiver.Path mapPath360, mapPath_comp373, mapPath_toPath378",
+      "Mathlib Logic.Equiv.Basic swap639/apply_left655/apply_right659/apply_self704; actual finite swap fixture",
+      "Mathlib List.Basic map_injective_iff750; actual qualified-ID injection reflects chronological lists",
+      "Existing RoleRelationTable actual encode/decode/injective/ValidFrom and DecisionCertificate.reuse_of_same_decoding70 with its own unpack_packed48"
+    ],
+    "credit": "Mathlib Quiver Basic/Prefunctor/Path: David W\u00e4rn, Kim Morrison; Logic.Equiv.Basic: Leonardo de Moura, Mario Carneiro; List.Basic: Parikshit Khanna, Jeremy Avigad, Leonardo de Moura, Floris van Doorn, Mario Carneiro. Apache-2.0; local MIT and individual source credits retained.",
+    "duplicate_boundary": "No new path datatype or assumed codec/commuting law. Relation-index reindexing is separate from parent-dictionary numeric slots. Arbitrary stored-state transport remains next gate."
+  },
+  "whitespace": "No tabs/trailing whitespace; lines <=100; git diff --check passed.",
+  "layout_check": {
+    "command": "python3 -B scripts/check_math_layout.py",
+    "exit_code": 1,
+    "log": ".local/role-reindex/math-layout-final-r2.log",
+    "scope": "Root-owned registration/public closure pending; existing unrelated findings preserved; no new naming violation. Earlier layout log retained."
+  }
+}

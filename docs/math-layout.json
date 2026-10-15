@@ -5241,7 +5241,11 @@
     "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianLogFlow.lean": "a86561922292ff32438853f488f7f3484ae4807ff5832944d832d2aaf901f9ce",
     "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianLogFlowMissingScale.lean": "1eaf95304f0f2647d15901b3e4caf67d391d524cea78b95edbcd1cd727e9691c",
     "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianLogWindow.lean": "fd159e0dfc762dba6a3db7652004e6147afdd71f9e10bb7ee043a79ead83273d",
-    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianLogWindowMissingBox.lean": "36c5ccf9a7d71c3fa32de16d5c834dcb7ce883b44828e22230fd0f05ac3c1b40"
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianLogWindowMissingBox.lean": "36c5ccf9a7d71c3fa32de16d5c834dcb7ce883b44828e22230fd0f05ac3c1b40",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/RoleRelationReindex.lean": "eea06196e6857c9954da1031125dcc5ae2104449b00a82731385b29f73d0f018",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/RoleReindexMissingInjectivity.lean": "17ec95ac53d0bae0c68e1c0ebac8389d906c7949dbbd1b5ef05dc24e804a645f",
+    "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianDensityMoments.lean": "6ca3a7a73e1bb7bc7254f7a06e676fade81aaf5ad9b5091cc08b71e6f41efdec",
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianDensityMissingCutoff.lean": "689ba388e7697b64837957703519a677644d95728f9eab6fbe3c5cdbef149214"
   },
   "schema_version": 3,
   "repository_conformance": {
@@ -5273,7 +5277,7 @@
     {
       "path": "GRWTSK.lean",
       "original_path": "GRWTSK.lean",
-      "sha256": "c07f9279482225b5b025a1d9cc8c209379eb3347259ff98d1143ceaf5fd38a03",
+      "sha256": "a07cd937c4eabcb13b35f38fcc61323cb2a32429f890603ff2fc06cf8d7d961c",
       "git_blob": "27e45b3448f78dc6499f2fb0698eb51cac5d1904",
       "working_tree_state": "tracked-modified",
       "source_root": ".",
@@ -5413,6 +5417,7 @@
         "GRWTSK.Analysis.LaplaceTransform.PolynomialEnergy",
         "GRWTSK.Analysis.LaplaceTransform.PolynomialEnergyHolomorphy",
         "GRWTSK.Analysis.MellinTransform.CompactGaussianWindow",
+        "GRWTSK.Analysis.MellinTransform.GaussianDensityMoments",
         "GRWTSK.Analysis.MellinTransform.GaussianDyadicSummation",
         "GRWTSK.Analysis.MellinTransform.GaussianFourierMoments",
         "GRWTSK.Analysis.MellinTransform.GaussianLogFlow",
@@ -5450,6 +5455,7 @@
         "GRWTSK.Combinatorics.DirectedGraph.PrefixInventory",
         "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCompaction",
         "GRWTSK.Combinatorics.DirectedGraph.PrefixTableState",
+        "GRWTSK.Combinatorics.DirectedGraph.RoleRelationReindex",
         "GRWTSK.Combinatorics.DirectedGraph.RoleRelationTable",
         "GRWTSK.Combinatorics.DirectedGraph.RootedTraceRevision",
         "GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.Moser",
@@ -5681,7 +5687,7 @@
         "inventory": "observed-current-bytes",
         "layout": "repository baseline remains failed",
         "lean": "umbrella not replayed after selected import additions",
-        "source_sha256": "c07f9279482225b5b025a1d9cc8c209379eb3347259ff98d1143ceaf5fd38a03"
+        "source_sha256": "a07cd937c4eabcb13b35f38fcc61323cb2a32429f890603ff2fc06cf8d7d961c"
       },
       "runner": "python3 -B scripts/check_ccc_energy.py",
       "other_consumers": [
@@ -21867,6 +21873,52 @@
       ]
     },
     {
+      "path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianDensityMissingCutoff.lean",
+      "original_path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianDensityMissingCutoff.lean",
+      "sha256": "689ba388e7697b64837957703519a677644d95728f9eab6fbe3c5cdbef149214",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Analysis.MellinTransform.Checks.Negative.GaussianDensityMissingCutoff",
+      "namespaces": [],
+      "public_declarations": [],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianDensityMoments"
+      ],
+      "reverse_consumers": [],
+      "subject": "Analysis",
+      "object": "MellinTransform/Checks/Negative",
+      "source_role": "negative-control",
+      "target_path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianDensityMissingCutoff.lean",
+      "placement_rationale": "The actual logarithmic Gaussian Fourier-density moment and its dyadic/remote sums belong to Analysis/MellinTransform; generic scalar kernels remain in Analysis/Series.",
+      "operation": "add",
+      "logical_status": "intended rejected control; no theorem admission",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "689ba388e7697b64837957703519a677644d95728f9eab6fbe3c5cdbef149214",
+        "replay_binding": "evidence/Analysis/MellinTransform/gaussian-density-moments-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_gaussian_density_moments.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Actual integral of weighted norm of current compact log-window Fourier density, with actual Integrable, nonnegativity and all-real-exponent power bounds.",
+        "For real k and s>0, actual weighted polynomial envelope and actual DyadicKernel prove Summable and tsum<=C(V,J,k,s)Z^s for allZ>0, constant beforeZ.",
+        "Actual remote selection Rj<=A^-1 OR A<=Rj, NatN and A>=1 give Summable/tsum<=C(V,J,N,s)Z^s/A^N. Actual nonzero Fourier-density/integral and A0 obstruction controls require their own proved suppliers; no physical/coupled/arithmetic/RH closure."
+      ],
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: exact GaussianDensityBudget/GaussianTailBudget proof slices, actual current density consumer; individual imported Mathlib Fourier/Schwartz/integration/summation authors retain credit"
+      ],
+      "license": "Apache-2.0",
+      "design_reference": "cache/research/reindex-density-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
       "path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianFourierMissingScale.lean",
       "original_path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianFourierMissingScale.lean",
       "sha256": "7acf8e0a10481f3dfbc5ca386860bc96ff031289300b9b2ba008300282c7bdea",
@@ -22506,6 +22558,133 @@
       ],
       "license": "Apache-2.0",
       "design_reference": "cache/research/prefix-window-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
+      "path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianDensityMoments.lean",
+      "original_path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianDensityMoments.lean",
+      "sha256": "6ca3a7a73e1bb7bc7254f7a06e676fade81aaf5ad9b5091cc08b71e6f41efdec",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianDensityMoments",
+      "namespaces": [
+        "GRWTSK.Analysis.MellinTransform.GaussianDensityMoments.Checks"
+      ],
+      "public_declarations": [
+        {
+          "kind": "def",
+          "name": "exampleWindow",
+          "line": 13
+        },
+        {
+          "kind": "lemma",
+          "name": "exampleWindow_compact",
+          "line": 15
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_gaussian_nonzero",
+          "line": 17
+        },
+        {
+          "kind": "lemma",
+          "name": "exampleWindow_nonzero",
+          "line": 40
+        },
+        {
+          "kind": "lemma",
+          "name": "exampleWindow_ne_zero",
+          "line": 43
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_weighted_sum",
+          "line": 49
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_remote_sum",
+          "line": 55
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_moment_integrable",
+          "line": 61
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_moment_pos",
+          "line": 65
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_positive_remote_summable",
+          "line": 68
+        },
+        {
+          "kind": "theorem",
+          "name": "remote_zero_cutoff_eq",
+          "line": 73
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_zero_cutoff_summable",
+          "line": 81
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_zero_cutoff_term_pos",
+          "line": 87
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_zero_cutoff_sum_pos",
+          "line": 92
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_zero_cutoff_bound_false",
+          "line": 101
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Analysis.MellinTransform.CompactGaussianWindow",
+        "GRWTSK.Analysis.MellinTransform.GaussianDensityMoments"
+      ],
+      "reverse_consumers": [
+        "GRWTSK.Analysis.MellinTransform.Checks.Negative.GaussianDensityMissingCutoff"
+      ],
+      "subject": "Analysis",
+      "object": "MellinTransform/Checks/Positive",
+      "source_role": "positive-check",
+      "target_path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianDensityMoments.lean",
+      "placement_rationale": "The actual logarithmic Gaussian Fourier-density moment and its dyadic/remote sums belong to Analysis/MellinTransform; generic scalar kernels remain in Analysis/Series.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "6ca3a7a73e1bb7bc7254f7a06e676fade81aaf5ad9b5091cc08b71e6f41efdec",
+        "replay_binding": "evidence/Analysis/MellinTransform/gaussian-density-moments-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_gaussian_density_moments.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Actual integral of weighted norm of current compact log-window Fourier density, with actual Integrable, nonnegativity and all-real-exponent power bounds.",
+        "For real k and s>0, actual weighted polynomial envelope and actual DyadicKernel prove Summable and tsum<=C(V,J,k,s)Z^s for allZ>0, constant beforeZ.",
+        "Actual remote selection Rj<=A^-1 OR A<=Rj, NatN and A>=1 give Summable/tsum<=C(V,J,N,s)Z^s/A^N. Actual nonzero Fourier-density/integral and A0 obstruction controls require their own proved suppliers; no physical/coupled/arithmetic/RH closure."
+      ],
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: exact GaussianDensityBudget/GaussianTailBudget proof slices, actual current density consumer; individual imported Mathlib Fourier/Schwartz/integration/summation authors retain credit"
+      ],
+      "license": "Apache-2.0",
+      "design_reference": "cache/research/reindex-density-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
     },
     {
       "path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianDyadicSummation.lean",
@@ -23413,6 +23592,144 @@
       "design_reference": "cache/research/prefix-window-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
     },
     {
+      "path": "GRWTSK/Analysis/MellinTransform/GaussianDensityMoments.lean",
+      "original_path": "GRWTSK/Analysis/MellinTransform/GaussianDensityMoments.lean",
+      "sha256": "7bdf9b9141eaf1a5cdfb043265211dc067508f91edcc27c935d1c5c118f30f1b",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Analysis.MellinTransform.GaussianDensityMoments",
+      "namespaces": [
+        "GRWTSK.Analysis.MellinTransform.GaussianDensityMoments"
+      ],
+      "public_declarations": [
+        {
+          "kind": "def",
+          "name": "gaussianJointMoment",
+          "line": 29
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussianJointMoment_nonneg",
+          "line": 33
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussianJointMoment_integrable",
+          "line": 39
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussianJointMoment_power_bound",
+          "line": 43
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussianJointMoment_polynomial_decay",
+          "line": 49
+        },
+        {
+          "kind": "theorem",
+          "name": "gaussianJointMoment_summed",
+          "line": 77
+        },
+        {
+          "kind": "def",
+          "name": "gaussianWeightedMoment",
+          "line": 103
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussianWeightedMoment_nonneg",
+          "line": 106
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussianWeightedMoment_power_bound",
+          "line": 111
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussianWeightedMoment_polynomial_decay",
+          "line": 126
+        },
+        {
+          "kind": "theorem",
+          "name": "gaussianWeightedMoment_summed",
+          "line": 154
+        },
+        {
+          "kind": "def",
+          "name": "gaussianRemoteMoment",
+          "line": 180
+        },
+        {
+          "kind": "theorem",
+          "name": "gaussianRemoteMoment_summed",
+          "line": 186
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussianFlow_ne_zero",
+          "line": 251
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussianLogWindow_ne_zero",
+          "line": 262
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussianJointDensity_ne_zero",
+          "line": 272
+        },
+        {
+          "kind": "theorem",
+          "name": "gaussianJointMoment_zero_pos",
+          "line": 280
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Analysis.MellinTransform.GaussianLogWindow",
+        "GRWTSK.Analysis.Series.DyadicKernel"
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianDensityMoments"
+      ],
+      "subject": "Analysis",
+      "object": "MellinTransform",
+      "source_role": "library",
+      "target_path": "GRWTSK/Analysis/MellinTransform/GaussianDensityMoments.lean",
+      "placement_rationale": "The actual logarithmic Gaussian Fourier-density moment and its dyadic/remote sums belong to Analysis/MellinTransform; generic scalar kernels remain in Analysis/Series.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "7bdf9b9141eaf1a5cdfb043265211dc067508f91edcc27c935d1c5c118f30f1b",
+        "replay_binding": "evidence/Analysis/MellinTransform/gaussian-density-moments-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_gaussian_density_moments.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Actual integral of weighted norm of current compact log-window Fourier density, with actual Integrable, nonnegativity and all-real-exponent power bounds.",
+        "For real k and s>0, actual weighted polynomial envelope and actual DyadicKernel prove Summable and tsum<=C(V,J,k,s)Z^s for allZ>0, constant beforeZ.",
+        "Actual remote selection Rj<=A^-1 OR A<=Rj, NatN and A>=1 give Summable/tsum<=C(V,J,N,s)Z^s/A^N. Actual nonzero Fourier-density/integral and A0 obstruction controls require their own proved suppliers; no physical/coupled/arithmetic/RH closure."
+      ],
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: exact GaussianDensityBudget/GaussianTailBudget proof slices, actual current density consumer; individual imported Mathlib Fourier/Schwartz/integration/summation authors retain credit"
+      ],
+      "license": "Apache-2.0",
+      "design_reference": "cache/research/reindex-density-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
       "path": "GRWTSK/Analysis/MellinTransform/GaussianDyadicSummation.lean",
       "original_path": "GRWTSK/Analysis/MellinTransform/GaussianDyadicSummation.lean",
       "sha256": "1f0129ffe0408983f6b19be9ae8fb40998105ce3b88e1e7fcf1a2e625eb8ced0",
@@ -23765,7 +24082,8 @@
       ],
       "reverse_consumers": [
         "GRWTSK",
-        "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianLogWindow"
+        "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianLogWindow",
+        "GRWTSK.Analysis.MellinTransform.GaussianDensityMoments"
       ],
       "subject": "Analysis",
       "object": "MellinTransform",
@@ -25077,6 +25395,7 @@
       ],
       "reverse_consumers": [
         "GRWTSK",
+        "GRWTSK.Analysis.MellinTransform.GaussianDensityMoments",
         "GRWTSK.Analysis.MellinTransform.GaussianDyadicSummation",
         "GRWTSK.Analysis.Series.Checks.Positive.DyadicKernel"
       ],
@@ -27076,6 +27395,53 @@
       "design_reference": "cache/research/state-remote-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
     },
     {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/RoleReindexMissingInjectivity.lean",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/RoleReindexMissingInjectivity.lean",
+      "sha256": "17ec95ac53d0bae0c68e1c0ebac8389d906c7949dbbd1b5ef05dc24e804a645f",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.RoleReindexMissingInjectivity",
+      "namespaces": [
+        "GRWTSK.Combinatorics.DirectedGraph.RoleRelationReindex.Checks.Negative"
+      ],
+      "public_declarations": [],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.RoleRelationReindex"
+      ],
+      "reverse_consumers": [],
+      "subject": "Combinatorics",
+      "object": "DirectedGraph/Checks/Negative",
+      "source_role": "negative-control",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/RoleReindexMissingInjectivity.lean",
+      "placement_rationale": "Actual finite relation-table reindexing, quiver maps and rooted history naturality belong to Combinatorics/DirectedGraph; generic certificates remain in Logic/FiniteSequences.",
+      "operation": "add",
+      "logical_status": "intended rejected control; no theorem admission",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "17ec95ac53d0bae0c68e1c0ebac8389d906c7949dbbd1b5ef05dc24e804a645f",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/role-relation-reindex-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_role_relation_reindex.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Actual fixed old/new finite relation tables and actual index map with source, target and role preservation witnesses; actual Quiver prefunctor and codec naturality.",
+        "Injectivity preserves distinct full histories; bijective inverse or explicit retained-image witnesses needed for inverse transport. Numeric IDs may change.",
+        "Old certificate reuse requires actual inverse transport into the common OLD rooted payload and its own pack/unpack plus exact entries/criterion/evidence. Retained root is external to new IDpacket, even empty; DecidableEq V for rooted repack only. No direct differently labeled payload equality or operational parser/JSON/hash/IO refinement."
+      ],
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "design_reference": "cache/research/reindex-density-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
       "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/RoleRelationWrongRole.lean",
       "original_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/RoleRelationWrongRole.lean",
       "sha256": "51d4bd22114b46d26eec1b8835d3dce21d8c0ce32cf15265807d1be4bc97677a",
@@ -28562,6 +28928,266 @@
       ],
       "license": "MIT; upstream imported Apache-2.0 retained",
       "design_reference": "cache/research/state-remote-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/RoleRelationReindex.lean",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/RoleRelationReindex.lean",
+      "sha256": "eea06196e6857c9954da1031125dcc5ae2104449b00a82731385b29f73d0f018",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.RoleRelationReindex",
+      "namespaces": [
+        "GRWTSK.Combinatorics.DirectedGraph.RoleRelationReindex.Checks.Positive"
+      ],
+      "public_declarations": [
+        {
+          "kind": "def",
+          "name": "original",
+          "line": 14
+        },
+        {
+          "kind": "def",
+          "name": "swapIndex",
+          "line": 19
+        },
+        {
+          "kind": "def",
+          "name": "updated",
+          "line": 21
+        },
+        {
+          "kind": "def",
+          "name": "translation",
+          "line": 26
+        },
+        {
+          "kind": "theorem",
+          "name": "translation_bijective",
+          "line": 32
+        },
+        {
+          "kind": "def",
+          "name": "vertexA",
+          "line": 34
+        },
+        {
+          "kind": "def",
+          "name": "vertexB",
+          "line": 36
+        },
+        {
+          "kind": "def",
+          "name": "id0",
+          "line": 37
+        },
+        {
+          "kind": "def",
+          "name": "id1",
+          "line": 38
+        },
+        {
+          "kind": "def",
+          "name": "id2",
+          "line": 39
+        },
+        {
+          "kind": "def",
+          "name": "new0",
+          "line": 40
+        },
+        {
+          "kind": "def",
+          "name": "new1",
+          "line": 41
+        },
+        {
+          "kind": "def",
+          "name": "new2",
+          "line": 42
+        },
+        {
+          "kind": "def",
+          "name": "arrow0",
+          "line": 43
+        },
+        {
+          "kind": "def",
+          "name": "arrow1",
+          "line": 45
+        },
+        {
+          "kind": "def",
+          "name": "arrow2",
+          "line": 46
+        },
+        {
+          "kind": "def",
+          "name": "single0",
+          "line": 47
+        },
+        {
+          "kind": "def",
+          "name": "single1",
+          "line": 48
+        },
+        {
+          "kind": "def",
+          "name": "revisited",
+          "line": 49
+        },
+        {
+          "kind": "theorem",
+          "name": "encode_single0",
+          "line": 51
+        },
+        {
+          "kind": "theorem",
+          "name": "encode_single1",
+          "line": 53
+        },
+        {
+          "kind": "theorem",
+          "name": "encode_revisited",
+          "line": 54
+        },
+        {
+          "kind": "theorem",
+          "name": "old_word_valid",
+          "line": 59
+        },
+        {
+          "kind": "theorem",
+          "name": "translated_word",
+          "line": 63
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_mapped_history",
+          "line": 66
+        },
+        {
+          "kind": "theorem",
+          "name": "translated_valid",
+          "line": 72
+        },
+        {
+          "kind": "theorem",
+          "name": "translated_actual_decode",
+          "line": 77
+        },
+        {
+          "kind": "theorem",
+          "name": "stale_word_rejected",
+          "line": 95
+        },
+        {
+          "kind": "def",
+          "name": "collapseIndex",
+          "line": 102
+        },
+        {
+          "kind": "def",
+          "name": "collapse",
+          "line": 104
+        },
+        {
+          "kind": "theorem",
+          "name": "collapse_not_injective",
+          "line": 123
+        },
+        {
+          "kind": "theorem",
+          "name": "qualified_collapse_not_injective",
+          "line": 128
+        },
+        {
+          "kind": "theorem",
+          "name": "old_parallel_paths_distinct",
+          "line": 136
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_parallel_history_loss",
+          "line": 145
+        },
+        {
+          "kind": "def",
+          "name": "roleChangedIndex",
+          "line": 153
+        },
+        {
+          "kind": "theorem",
+          "name": "role_change_preserves_endpoints",
+          "line": 155
+        },
+        {
+          "kind": "theorem",
+          "name": "role_change_fails",
+          "line": 170
+        },
+        {
+          "kind": "def",
+          "name": "rows",
+          "line": 176
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_new_rows",
+          "line": 179
+        },
+        {
+          "kind": "def",
+          "name": "oldCertificate",
+          "line": 194
+        },
+        {
+          "kind": "theorem",
+          "name": "certificate_entries",
+          "line": 200
+        },
+        {
+          "kind": "theorem",
+          "name": "empty_new_packet_root_loss",
+          "line": 216
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.RoleRelationReindex"
+      ],
+      "reverse_consumers": [
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.RoleReindexMissingInjectivity"
+      ],
+      "subject": "Combinatorics",
+      "object": "DirectedGraph/Checks/Positive",
+      "source_role": "positive-check",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/RoleRelationReindex.lean",
+      "placement_rationale": "Actual finite relation-table reindexing, quiver maps and rooted history naturality belong to Combinatorics/DirectedGraph; generic certificates remain in Logic/FiniteSequences.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "eea06196e6857c9954da1031125dcc5ae2104449b00a82731385b29f73d0f018",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/role-relation-reindex-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_role_relation_reindex.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Actual fixed old/new finite relation tables and actual index map with source, target and role preservation witnesses; actual Quiver prefunctor and codec naturality.",
+        "Injectivity preserves distinct full histories; bijective inverse or explicit retained-image witnesses needed for inverse transport. Numeric IDs may change.",
+        "Old certificate reuse requires actual inverse transport into the common OLD rooted payload and its own pack/unpack plus exact entries/criterion/evidence. Retained root is external to new IDpacket, even empty; DecidableEq V for rooted repack only. No direct differently labeled payload equality or operational parser/JSON/hash/IO refinement."
+      ],
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "design_reference": "cache/research/reindex-density-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
     },
     {
       "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/RoleRelationTable.lean",
@@ -30726,6 +31352,207 @@
       "design_reference": "cache/research/state-remote-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
     },
     {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/RoleRelationReindex.lean",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/RoleRelationReindex.lean",
+      "sha256": "ffff5137b1c0837f0cd84416db993d5d81e3bf6476891eb50984652d0f88a4a9",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.RoleRelationReindex",
+      "namespaces": [
+        "GRWTSK.Combinatorics.DirectedGraph.RoleRelationReindex"
+      ],
+      "public_declarations": [
+        {
+          "kind": "structure",
+          "name": "Reindex",
+          "line": 31
+        },
+        {
+          "kind": "def",
+          "name": "mapVertex",
+          "line": 40
+        },
+        {
+          "kind": "def",
+          "name": "qualified",
+          "line": 43
+        },
+        {
+          "kind": "theorem",
+          "name": "qualified_injective",
+          "line": 46
+        },
+        {
+          "kind": "def",
+          "name": "prefunctor",
+          "line": 52
+        },
+        {
+          "kind": "def",
+          "name": "mapStar",
+          "line": 60
+        },
+        {
+          "kind": "theorem",
+          "name": "mapped_endpoint",
+          "line": 64
+        },
+        {
+          "kind": "theorem",
+          "name": "encodePath_naturality",
+          "line": 67
+        },
+        {
+          "kind": "theorem",
+          "name": "encode_naturality",
+          "line": 81
+        },
+        {
+          "kind": "theorem",
+          "name": "valid_map",
+          "line": 86
+        },
+        {
+          "kind": "theorem",
+          "name": "decode_naturality",
+          "line": 95
+        },
+        {
+          "kind": "theorem",
+          "name": "finish_naturality",
+          "line": 104
+        },
+        {
+          "kind": "theorem",
+          "name": "mapStar_injective",
+          "line": 112
+        },
+        {
+          "kind": "def",
+          "name": "inverse",
+          "line": 121
+        },
+        {
+          "kind": "theorem",
+          "name": "inverse_qualified",
+          "line": 141
+        },
+        {
+          "kind": "theorem",
+          "name": "qualified_inverse",
+          "line": 147
+        },
+        {
+          "kind": "def",
+          "name": "qualifiedEquiv",
+          "line": 153
+        },
+        {
+          "kind": "theorem",
+          "name": "inverse_mapStar",
+          "line": 160
+        },
+        {
+          "kind": "theorem",
+          "name": "mapStar_inverse",
+          "line": 178
+        },
+        {
+          "kind": "def",
+          "name": "pathStarEquiv",
+          "line": 197
+        },
+        {
+          "kind": "def",
+          "name": "reindexRows",
+          "line": 204
+        },
+        {
+          "kind": "theorem",
+          "name": "inverse_rows",
+          "line": 209
+        },
+        {
+          "kind": "def",
+          "name": "pathRows",
+          "line": 222
+        },
+        {
+          "kind": "def",
+          "name": "mappedPathRows",
+          "line": 227
+        },
+        {
+          "kind": "theorem",
+          "name": "mappedPathRows_eq",
+          "line": 233
+        },
+        {
+          "kind": "def",
+          "name": "rootedRows",
+          "line": 241
+        },
+        {
+          "kind": "def",
+          "name": "mappedPacked",
+          "line": 246
+        },
+        {
+          "kind": "def",
+          "name": "restorePacked",
+          "line": 252
+        },
+        {
+          "kind": "theorem",
+          "name": "restore_mappedPacked",
+          "line": 261
+        },
+        {
+          "kind": "theorem",
+          "name": "certified_reindex",
+          "line": 271
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.RoleRelationTable"
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.RoleRelationReindex"
+      ],
+      "subject": "Combinatorics",
+      "object": "DirectedGraph",
+      "source_role": "library",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/RoleRelationReindex.lean",
+      "placement_rationale": "Actual finite relation-table reindexing, quiver maps and rooted history naturality belong to Combinatorics/DirectedGraph; generic certificates remain in Logic/FiniteSequences.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "ffff5137b1c0837f0cd84416db993d5d81e3bf6476891eb50984652d0f88a4a9",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/role-relation-reindex-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_role_relation_reindex.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Actual fixed old/new finite relation tables and actual index map with source, target and role preservation witnesses; actual Quiver prefunctor and codec naturality.",
+        "Injectivity preserves distinct full histories; bijective inverse or explicit retained-image witnesses needed for inverse transport. Numeric IDs may change.",
+        "Old certificate reuse requires actual inverse transport into the common OLD rooted payload and its own pack/unpack plus exact entries/criterion/evidence. Retained root is external to new IDpacket, even empty; DecidableEq V for rooted repack only. No direct differently labeled payload equality or operational parser/JSON/hash/IO refinement."
+      ],
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "design_reference": "cache/research/reindex-density-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
       "path": "GRWTSK/Combinatorics/DirectedGraph/RoleRelationTable.lean",
       "original_path": "GRWTSK/Combinatorics/DirectedGraph/RoleRelationTable.lean",
       "sha256": "52940e0c878e9d9329e74455da71dc829d643b629c8997332e8a70e458abb7b2",
@@ -30934,7 +31761,8 @@
       ],
       "reverse_consumers": [
         "GRWTSK",
-        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.RoleRelationTable"
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.RoleRelationTable",
+        "GRWTSK.Combinatorics.DirectedGraph.RoleRelationReindex"
       ],
       "subject": "Combinatorics",
       "object": "DirectedGraph",
@@ -62599,19 +63427,19 @@
   ],
   "current_inventory": {
     "head": "854e04dc182c36b00479b642e6301f47acc81e5f",
-    "lean_source_count": 739,
-    "active_source_count": 676,
+    "lean_source_count": 745,
+    "active_source_count": 682,
     "candidate_source_count": 63,
     "counts_by_role": {
       "audit-driver": 35,
-      "library": 381,
-      "negative-control": 140,
-      "positive-check": 120
+      "library": 383,
+      "negative-control": 142,
+      "positive-check": 122
     },
     "counts_by_subject": {
       "Algebra": 19,
-      "Analysis": 245,
-      "Combinatorics": 44,
+      "Analysis": 248,
+      "Combinatorics": 47,
       "Data": 1,
       "DynamicalSystems": 16,
       "GroupTheory": 4,
@@ -69372,6 +70200,22 @@
     "replays": [
       "evidence/Analysis/MellinTransform/gaussian-log-window-checks-2026-10-15.json",
       "evidence/Combinatorics/DirectedGraph/role-relation-table-checks-2026-10-15.json"
+    ],
+    "scope": "Incremental selected registration; no historical full-replay hashes or failed receipts refreshed."
+  },
+  "reindex_density_additions": {
+    "date": "2026-10-15",
+    "paths": [
+      "GRWTSK/Combinatorics/DirectedGraph/RoleRelationReindex.lean",
+      "GRWTSK/Analysis/MellinTransform/GaussianDensityMoments.lean",
+      "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/RoleRelationReindex.lean",
+      "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/RoleReindexMissingInjectivity.lean",
+      "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianDensityMoments.lean",
+      "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianDensityMissingCutoff.lean"
+    ],
+    "replays": [
+      "evidence/Analysis/MellinTransform/gaussian-density-moments-checks-2026-10-15.json",
+      "evidence/Combinatorics/DirectedGraph/role-relation-reindex-checks-2026-10-15.json"
     ],
     "scope": "Incremental selected registration; no historical full-replay hashes or failed receipts refreshed."
   }

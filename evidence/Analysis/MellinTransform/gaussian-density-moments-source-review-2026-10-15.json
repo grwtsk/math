@@ -1,0 +1,268 @@
+{
+  "schema": "grwtsk.source-review.v1",
+  "task": "reindex-density-source-scout",
+  "created_utc": "2026-10-15T23:09:57.581542+00:00",
+  "reviewer": "cache_taxonomy",
+  "review_scope": "Correlated same-team exact-source/premise/control/credit review; not independent validation.",
+  "native_validation": {
+    "performed_by_this_review": false,
+    "status": "NOT_RUN",
+    "authority": "Separate root-owned fresh pinned trust-zero/fatal replay/full owned-transitive axiom audit. Source comparison and author development do not admit proofs."
+  },
+  "author_freeze": {
+    "path": "cache/coordination/events/gaussian-density-freeze-dc35fa49da514cc2942df9a88ecfa51f.json",
+    "sha256": "a5860e1cf1a2b8d47caac93a86021af401faab283dcd84783d372b6b5460a5a4",
+    "bytes": 2004
+  },
+  "source_context": {
+    "path": ".local/reindex-density-source-scout/7141bac342214855845ce5db1746e39b/review-context.json",
+    "sha256": "06e54f4e81f6ed4c4062eb53b1c176300b18fab7cdcd5c3a3c4ddd92e712ed24",
+    "bytes": 17739
+  },
+  "primary_openai": [
+    {
+      "repository": "openai/math",
+      "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "path": "lean/OAI/NumberTheory/DirichletL/Detector/GaussianDensityBudget.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/Detector/GaussianDensityBudget.lean",
+      "archive": ".local/reindex-density-source-scout/7141bac342214855845ce5db1746e39b/GaussianDensityBudget.lean",
+      "sha256": "42ee10381da1a2003fe309f4b7773c4908bc625eff31f9c23392f82836ba9730",
+      "git_blob": "995f4fa1be3f4dfc968a6af0494437556dab8e9b",
+      "bytes": 4200,
+      "retrieved_utc": "2026-10-15T23:04:20.273805+00:00",
+      "declarations": {
+        "gaussianJointMoment": 10,
+        "gaussianJointMoment_nonneg": 14,
+        "gaussianJointMoment_power_bound": 20,
+        "gaussianJointMoment_polynomial_decay": 29,
+        "gaussianJointMoment_summed": 57
+      },
+      "native_status": "NOT_RUN"
+    },
+    {
+      "repository": "openai/math",
+      "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "path": "lean/OAI/NumberTheory/DirichletL/Detector/GaussianTailBudget.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/Detector/GaussianTailBudget.lean",
+      "archive": ".local/reindex-density-source-scout/7141bac342214855845ce5db1746e39b/GaussianTailBudget.lean",
+      "sha256": "38f614d4aa36aff2966a4143f0fd73876902f38004d643acf22d3a41716f071b",
+      "git_blob": "19a1a25b04c89d50d99e0fdae1ba1295609e554e",
+      "bytes": 8154,
+      "retrieved_utc": "2026-10-15T23:04:20.507914+00:00",
+      "declarations": {
+        "gaussianWeightedMoment": 10,
+        "gaussianWeightedMoment_nonneg": 13,
+        "gaussianWeightedMoment_power_bound": 18,
+        "gaussianWeightedMoment_polynomial_decay": 33,
+        "gaussianWeightedMoment_summed": 61,
+        "gaussianRemoteMoment": 87,
+        "gaussianRemoteMoment_summed": 93
+      },
+      "native_status": "NOT_RUN"
+    }
+  ],
+  "primary_source_credit": "Project OpenAI,Apache-2.0,no individual header author observed; LICENSE rawSHA c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4.",
+  "pinned_mathlib": [
+    {
+      "repository": "leanprover-community/mathlib4",
+      "pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "path": "Mathlib/Analysis/Distribution/SchwartzSpace/Fourier.lean",
+      "local_path": ".lake/packages/mathlib/Mathlib/Analysis/Distribution/SchwartzSpace/Fourier.lean",
+      "archive": ".local/reindex-density-source-scout/7141bac342214855845ce5db1746e39b/mathlib/Mathlib/Analysis/Distribution/SchwartzSpace/Fourier.lean",
+      "sha256": "8f74642098d0390e08eae980f72ba29801c46b03446dae2fd20eff9ba0f08737",
+      "git_blob": "29b759c53de55f6eee6359d7603e7a12c94d70e1",
+      "bytes": 15347,
+      "header_credit": "/-\nCopyright (c) 2024 Sébastien Gouëzel. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: Sébastien Gouëzel, Moritz Doll\n-/\nmodule",
+      "native_status": "NOT_RUN"
+    },
+    {
+      "repository": "leanprover-community/mathlib4",
+      "pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "path": "Mathlib/Analysis/Fourier/Notation.lean",
+      "local_path": ".lake/packages/mathlib/Mathlib/Analysis/Fourier/Notation.lean",
+      "archive": ".local/reindex-density-source-scout/7141bac342214855845ce5db1746e39b/mathlib/Mathlib/Analysis/Fourier/Notation.lean",
+      "sha256": "05c27ac26ef7efb35b27b1e022a783082846bd11e4d87730425873a6322c80fb",
+      "git_blob": "fa130a45039688864921a2cd8a83631fa8c47da2",
+      "bytes": 9555,
+      "header_credit": "/-\nCopyright (c) 2025 Moritz Doll. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: Moritz Doll\n-/\nmodule",
+      "native_status": "NOT_RUN"
+    },
+    {
+      "repository": "leanprover-community/mathlib4",
+      "pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "path": "Mathlib/MeasureTheory/Integral/Bochner/Basic.lean",
+      "local_path": ".lake/packages/mathlib/Mathlib/MeasureTheory/Integral/Bochner/Basic.lean",
+      "archive": ".local/reindex-density-source-scout/7141bac342214855845ce5db1746e39b/mathlib/Mathlib/MeasureTheory/Integral/Bochner/Basic.lean",
+      "sha256": "f81a06eab17faccbc4b671a93e7af73332f5fd3946f7690e7c2a3cfee77d28c8",
+      "git_blob": "5aab70490dd61ebcfaf9c50ef26dcb612c25091b",
+      "bytes": 70432,
+      "header_credit": "/-\nCopyright (c) 2019 Zhouhang Zhou. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: Zhouhang Zhou, Yury Kudryashov, Sébastien Gouëzel, Rémy Degenne\n-/\nmodule",
+      "native_status": "NOT_RUN"
+    }
+  ],
+  "actual_Anthropic_comparison": {
+    "sources": [
+      {
+        "repository": "anthropics/formal-math",
+        "pin": "e1a4e6508154ea59f030480661590a9fe3018011",
+        "path": "zeta23/Zeta23/FromPNTPlus/Fourier.lean",
+        "url": "https://raw.githubusercontent.com/anthropics/formal-math/e1a4e6508154ea59f030480661590a9fe3018011/zeta23/Zeta23/FromPNTPlus/Fourier.lean",
+        "archive": ".local/reindex-density-source-scout/7141bac342214855845ce5db1746e39b/AnthropicFourier.lean",
+        "sha256": "8d53e47135861fd5afaa2ff273737e09353dc9ae0ba8b6875baa16f3a167b1bc",
+        "git_blob": "4e3f24af43b78dfe109a344c5517956c1cd4fbfe",
+        "bytes": 9623,
+        "retrieved_utc": "2026-10-15T23:04:21.033867+00:00",
+        "declarations": {
+          "nnnorm_eq_of_mem_circle": 29,
+          "nnnorm_circle_smul": 32,
+          "e": 35,
+          "hasDerivAt_e": 42,
+          "fourierIntegral_deriv_aux2": 49,
+          "fourierIntegral_self_add_deriv_deriv": 72,
+          "tendsto_intervalIntegral_zero_of_uniform_norm_bound": 87,
+          "tendsto_const_mul_log_add_two_div_add_two_atTop": 98,
+          "norm_fourier_le_integral_deriv_div": 111,
+          "norm_oscillatory_integral_le_integral_deriv_div": 140,
+          "norm_oscillatory_integral_le_integral_deriv_div_abs": 172
+        },
+        "native_status": "NOT_RUN"
+      }
+    ],
+    "credit": "PrimeNumberTheoremAnd contributors/Apache-2.0; original upstream6a380f0c4658c04a420a9eb00b1ed62a1e3fde01 tagv4.32.2 filePrimeNumberTheoremAnd/Fourier.lean; Anthropic2026 port modifications. Actual header credits preserved, no sole Anthropic authorship claim.",
+    "scope": "Actual pointwise Fourier derivative bound has integrable function/derivative, real differentiability and nonzero frequency premises. It is not this actual L1 density norm moment, its positivity proof, scalar kernel sum or remote estimate; no source acceptance transfers."
+  },
+  "arxiv_primary": {
+    "title": "Wavelet Filtering with the Mellin Transform",
+    "author": "Gerald Kaiser",
+    "id": "math-ph/0108013v1",
+    "version_utc": "2001-08-20T18:33:27Z",
+    "published_context": "PDF states December1995 and Applied Mathematics Letters9#5,1996; arxiv version2001 distinct.",
+    "url": "https://arxiv.org/pdf/math-ph/0108013v1",
+    "snapshot": {
+      "url": "https://arxiv.org/pdf/math-ph/0108013v1",
+      "archive": ".local/revision-seminorm-source-scout/5f2ef1061af54c86a8c93c16fdb334ed/kaiser-math-ph0108013v1.pdf",
+      "sha256": "c20738e4cf5dc3f1c4d03bea90b971a1fda5f43fb630f308fe147986f53d89a2",
+      "git_blob": null,
+      "bytes": 85113
+    },
+    "selected_scope": "Fresh primary abstract/version and §1 pp1–5: scale convention/convergence discussion, Mellin eq10/11 and admissibility eq24. Section2 is Applications and is not the source of those equations. No full paper theorem transferred.",
+    "comparison": "Wavelet scale sigma≠0, scaling-invariant dσ/|σ|, conditional integral convergence and explicit transform convention. Its wavelet dilation amplitude convention differs from the y^-1/2 factor in the actual local G. It provides no exact normalized G seminorm bound, zero-scale value claim, arithmetic closure or RH continuation.",
+    "license": "arXiv assumed non-exclusive distribution license for1991-2003, checked from abstract license link https://arxiv.org/licenses/assumed-1991-2003/license.html. Citation/paraphrase context only, not code reuse license.",
+    "fresh_scope": "Fresh exactv1 abstract metadata open; prior Section1 scale/Mellin/admissibility context reused. It is not the exact seminorm remote-cutoff or density integral theorem.",
+    "fresh_selected_scope": "Fresh primaryPDFv1 Section1pp1-3 eq3/4/9 (cycles-frequency2pi Fourier), plus priorMellin/admissibility10/11/24 context.",
+    "limits": "Fourier exponential2pi agrees at convention level, but wavelet dilation amplitude and Mellin sign/scale conventions differ. No exact integrated Schwartzsource-pair/Gaussian moment theorem, actualLogWindowdensity,convergenceorRH result transferred."
+  },
+  "arxiv_scope": "Fresh selected Kaiser math-ph/0108013v1 Section1 discusses2pi Fourier/weighted norms and excludes zero wavelet scale. That context is distinct from local L1 density positivity and exact natural dyadic remote series; no Plancherel/measure/normalization or acceptance transfer.",
+  "local_sources": [
+    {
+      "path": "GRWTSK/Analysis/MellinTransform/GaussianDensityMoments.lean",
+      "sha256": "7bdf9b9141eaf1a5cdfb043265211dc067508f91edcc27c935d1c5c118f30f1b",
+      "bytes": 15763,
+      "archive": ".local/reindex-density-source-scout/7141bac342214855845ce5db1746e39b/frozen-local/GRWTSK/Analysis/MellinTransform/GaussianDensityMoments.lean",
+      "declarations": {
+        "gaussianJointMoment": 30,
+        "gaussianJointMoment_nonneg": 34,
+        "gaussianJointMoment_integrable": 40,
+        "gaussianJointMoment_power_bound": 44,
+        "gaussianJointMoment_polynomial_decay": 50,
+        "gaussianJointMoment_summed": 78,
+        "gaussianWeightedMoment": 104,
+        "gaussianWeightedMoment_nonneg": 107,
+        "gaussianWeightedMoment_power_bound": 112,
+        "gaussianWeightedMoment_polynomial_decay": 127,
+        "gaussianWeightedMoment_summed": 155,
+        "gaussianRemoteMoment": 181,
+        "gaussianRemoteMoment_summed": 187,
+        "gaussianFlow_ne_zero": 254,
+        "gaussianLogWindow_ne_zero": 264,
+        "gaussianJointDensity_ne_zero": 274,
+        "gaussianJointMoment_zero_pos": 282
+      }
+    },
+    {
+      "path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianDensityMoments.lean",
+      "sha256": "6ca3a7a73e1bb7bc7254f7a06e676fade81aaf5ad9b5091cc08b71e6f41efdec",
+      "bytes": 5566,
+      "archive": ".local/reindex-density-source-scout/7141bac342214855845ce5db1746e39b/frozen-local/GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianDensityMoments.lean",
+      "declarations": {
+        "exampleWindow": 14,
+        "exampleWindow_compact": 15,
+        "actual_gaussian_nonzero": 18,
+        "exampleWindow_nonzero": 42,
+        "exampleWindow_ne_zero": 45,
+        "actual_weighted_sum": 50,
+        "actual_remote_sum": 56,
+        "actual_moment_integrable": 62,
+        "actual_moment_pos": 66,
+        "actual_positive_remote_summable": 69,
+        "remote_zero_cutoff_eq": 74,
+        "actual_zero_cutoff_summable": 82,
+        "actual_zero_cutoff_term_pos": 88,
+        "actual_zero_cutoff_sum_pos": 93,
+        "actual_zero_cutoff_bound_false": 103
+      }
+    },
+    {
+      "path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianDensityMissingCutoff.lean",
+      "sha256": "689ba388e7697b64837957703519a677644d95728f9eab6fbe3c5cdbef149214",
+      "bytes": 634,
+      "archive": ".local/reindex-density-source-scout/7141bac342214855845ce5db1746e39b/frozen-local/GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianDensityMissingCutoff.lean",
+      "declarations": {}
+    }
+  ],
+  "actual_dependencies": [
+    {
+      "path": "GRWTSK/Analysis/MellinTransform/GaussianLogWindow.lean",
+      "sha256": "258fdbb7e3517ae4f30db165e9281ceb2c80d595d5a891523131c365c6ae1550",
+      "bytes": 12487
+    },
+    {
+      "path": "GRWTSK/Analysis/MellinTransform/GaussianLogFlow.lean",
+      "sha256": "eab5f54194b6eaf1589a902c0bfa38589c04de460c45cfb9405d31d458f81013",
+      "bytes": 5172
+    },
+    {
+      "path": "GRWTSK/Analysis/Series/DyadicKernel.lean",
+      "sha256": "c99ee7e558c21befc57822c87a0221b84d8e45254acf77e4f1ba2c2e1a4abbeb",
+      "bytes": 7625
+    },
+    {
+      "path": "GRWTSK/Analysis/MellinTransform/CompactGaussianWindow.lean",
+      "sha256": "db195580ca2f4e4a941f13c71d285af377d2bb29ed7250db0f0b13570984cec5",
+      "bytes": 6130
+    },
+    {
+      "path": "GRWTSK/Analysis/PartitionOfUnity/DyadicAnnulus.lean",
+      "sha256": "15637b705583781150ff8ba8b0f6aaa6ef969fe394f775e35124c5fa30f7aa67",
+      "bytes": 6536
+    }
+  ],
+  "finding": "No actionable missing actual moment/integrability, weighted-kernel/remote hypothesis or nonzero-Fourier/positive-integral producer observed in the three frozen density-moment sources.",
+  "exact_scope": {
+    "object": "Actual M_J(V,R)=integral(1+normt)^J*norm(gaussianJointDensity V hV R t), with actual compact Schwartz V and the exact current logarithmic-window Fourier density. This is distinct from prior dyadic G seminorm and value sums.",
+    "integrability": "Actual Integrable and nonnegative moment for EVERY real R, J natural. Actual all-real-a power bound C(V,J,a)>0 precedes all R>0 and derives from current actual GaussianLogWindow support-box/full-source-pair Fourier producer. No desired integral bound assumed.",
+    "weighted_sums": "Actual R^k*M for every real k; shift existing power bound by A+k, polynomial envelope from bounds at0 and naturalN. Pick actual N>s, instantiate scalar DyadicKernel at positiveZ inverse, prove actual termwise domination/nonnegativity and Summable/tsum bound. For s>0, C(V,J,k,s)>0 precedes all Z>0; natural dyadic indices retained.",
+    "remote": "Actual cutoff R_j<=A inverse OR A<=R_j. Actual weighted moment sums with exponents +/-N dominate remote terms, then actual nonnegative tsum comparison gives Summable and boundC(V,J,N,s)*Z^s/A^N. C precedes all Z>0 and A>=1, N natural,s>0. No vector convergence, desired tsum or Fubini assumption.",
+    "source_correspondence": "Actual selected DensityBudget/TailBudget definitions and complete envelope/kernel/+/-N proof slice compared at exact rawSHA/Gitblob/pin. Local public all-R integrability and strictJ0positivity are additional explicit consumers, not asserted literal upstream theorems. Upstream4.34.1 and local4.33 are distinct; only root native receipts may admit the port."
+  },
+  "actual_positivity_chain": {
+    "flow": "Prove exact normalized coefficient nonzero using existing normalization, then gaussianFlow_ne_zero for every realR/complexz from nonzero exponential.",
+    "window": "For V!=0, actual pointwise multiplication by nonzero flow proves gaussianLogWindow V R!=0. No target integral/evaluation evidence is assumed.",
+    "Fourier": "If actual density were zero, applying actual Schwartz Fourier inverse and its inverse_zero law gives actual window zero. Exact pinned Schwartz inverse makes actual density nonzero; actual function extensionality yields a nonzero value. No compact support of density or unproved injectivity of arbitrary integrals.",
+    "integral": "Density norm is continuous, actual norm Integrable from J0 exported theorem, nonnegative everywhere and nonzero at a point. Pinned Bochner.Basic integral_pos_of_integrable_nonneg_nonzero1224 under real-volume IsOpenPosMeasure yields strict positive integral. Thus J0 moment is proved positive for ANY realR and compact actualV!=0.",
+    "API_credit": "SchwartzSpace.Fourier Sebastien Gouezel/Moritz Doll; Fourier notation Moritz Doll2025; Bochner.Basic Zhouhang Zhou,Yury Kudryashov,Sebastien Gouezel,Remy Degenne. Exact original diacritics/notices and blob identities bound in manifest."
+  },
+  "actual_controls": {
+    "concrete_window": "Actual compact V=G(1,0); positive source fully proves V(3/4)!=0 from smooth annulus, exact Gaussian coefficient/exponential and nonzero sqrt. This supplies actual V!=0 rather than an assumed positive moment. No prior Positive imports.",
+    "zero_cutoff": "AtZ1,A0 cutoff selects every natural index. Actual unrestricted moment-sum theorem supplies Summable, actualJ0momentpositive supplies positive j0 term, actual nonnegative Summable.tsum_pos supplies positive tsum. ForN1 every proposedC bound reduces to0 by totalized division, hence actual inequality false for every realC.",
+    "positive_consumers": "Actual general weighted/remote theorems, actual Integrable and positive moment, and an actual remote series at positive cutoff are consumed.",
+    "negative": "Sole intended consumer supplies le_refl0 as1<=0 to remote theorem, attempting the actual falseA0 bound. Complete semantic counterproof occurs first in positive source. Native exact diagnostic/census remain root-owned.",
+    "limits": "No claim s>0 or A>=1 is sharp at all excluded values. Only actualA0 failure proved; flow/density atR0 remain smooth/Integrable and strictJ0positive whereV!=0. No unrelated zero-scale full-moment-bound assertion."
+  },
+  "credit_and_limits": [
+    "Primary OpenAI projectApache-2.0,no individual source-header author observed; local human direction R.A. Jacob Martone/formal implementation OpenAI Codex. Imported named individual licenses retained. Exact primary sources freshly retrieved/tree-blob verified; no source acceptance transfer.",
+    "Future actual coupled separation/cutoff-active finite-family construction remains separate, as do physical-row support/majorants, ideal/Hecke/calibration/detector/continuation/RH.",
+    "No runtime/PythonJSON/hashIO refinement, proof/policy authority, novelty or independent review inferred.",
+    "No shared source/docs/registries/native/Git/remote writes; preserve all failed/stale source/receipt variants and incoming custody/NOT_RUN."
+  ]
+}
