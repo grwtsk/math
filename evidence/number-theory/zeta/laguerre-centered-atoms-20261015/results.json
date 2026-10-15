@@ -1,0 +1,144 @@
+{
+  "additional_prior_receipt_rejection_checks_per_mode": 12,
+  "attempts": [
+    {
+      "arithmetic_failure": false,
+      "record": "publication-run/centered-attempt-01-status.json",
+      "status": "INTERRUPTED_OUTER_45_SECOND_TIMEOUT"
+    },
+    {
+      "bad_blob": "445aef8a2343bc207ca0e0298221c6fa49cad48b",
+      "corrected_blob": "0a22c23441e5849991512582ebd2ed4f1005898f",
+      "published_bad_blob": false,
+      "status": "REJECTED_STAGED_BLOB_HASH_MISMATCH"
+    }
+  ],
+  "base_commit": "ba77517b0b4e74d36a824d34c2948b276471b844",
+  "completed_leaf_subprocesses": 24,
+  "environment": {
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "python": "3.13.5"
+  },
+  "mathematical_status": {
+    "RH_proved": false,
+    "all_depth_cross_upper_bound": "OPEN",
+    "all_depth_diagonal_bound": "WRITTEN_UNCONDITIONAL: Q_(N,2^(11N)) <= 64*N^2+4*N",
+    "external_theorem_audit": "NOT_RUN",
+    "fractional_mesh_budget": "WRITTEN_UNCONDITIONAL: sum_k |epsilon_k^(X)|^2 <= 1/2",
+    "native_Lean": "NOT_RUN",
+    "new_zero_exclusion": false,
+    "whole_repository_checks": "NOT_RUN"
+  },
+  "new_cross_precision_moment_boxes_per_mode": 48,
+  "new_output_grid_bits": 160,
+  "new_source_profiles": [
+    {
+      "atom_inventory": {
+        "complete_features_sha256": "031c673416f26ca111c0511fa3d4f79ba8d8281d34e2985d02e3994996f4cae2",
+        "count": 255,
+        "factorization_checked_through": 256,
+        "first": 2,
+        "last": 256,
+        "non_prime_powers_kept_with_weight_minus_one": 185,
+        "prime_power_count": 70,
+        "touching_atom_kept": true,
+        "touching_feature_exact_zero": true
+      },
+      "coefficient_count": 8,
+      "cutoff": 256,
+      "diagonal": {
+        "lower": "2711831336706072893707323014121354957736922783217/1461501637330902918203684832716283019655932542976",
+        "upper": "1355915668353036446853661507060677478868461391609/730750818665451459101842416358141509827966271488"
+      },
+      "finite_atom_Bessel_checks": 255,
+      "fractional_energy": {
+        "lower": "37343503898185305829030338906465228590502020729/365375409332725729550921208179070754913983135744",
+        "upper": "149374015592741223316121355625860914362008082917/1461501637330902918203684832716283019655932542976"
+      },
+      "mixed_fractional": {
+        "lower": "28414279951330143781693893604457073574667516875/365375409332725729550921208179070754913983135744",
+        "upper": "113657119805320575126775574417828294298670067501/1461501637330902918203684832716283019655932542976"
+      },
+      "ordered_cross": {
+        "lower": "-669809860517442707445206222382156913532196310681/365375409332725729550921208179070754913983135744",
+        "upper": "-2679239442069770829780824889528627654128785242723/1461501637330902918203684832716283019655932542976"
+      },
+      "ordered_cross_term_count": 64770,
+      "source_comparison_boxes": 8,
+      "source_energy": {
+        "lower": "147811515017181931184697527318208256134407845455/730750818665451459101842416358141509827966271488",
+        "upper": "295623030034363862369395054636416512268815690911/1461501637330902918203684832716283019655932542976"
+      },
+      "step_energy": {
+        "lower": "32591894636302063926498124592727303608137540493/1461501637330902918203684832716283019655932542976",
+        "upper": "16295947318151031963249062296363651804068770247/730750818665451459101842416358141509827966271488"
+      }
+    },
+    {
+      "atom_inventory": {
+        "complete_features_sha256": "45c47d4e3a42add66a82481667ce41ff4067d3d83122bc28f8fa203454fccf1e",
+        "count": 1023,
+        "factorization_checked_through": 1024,
+        "first": 2,
+        "last": 1024,
+        "non_prime_powers_kept_with_weight_minus_one": 825,
+        "prime_power_count": 198,
+        "touching_atom_kept": true,
+        "touching_feature_exact_zero": true
+      },
+      "coefficient_count": 8,
+      "cutoff": 1024,
+      "diagonal": {
+        "lower": "5325669424624369758821255971506899165417220961273/1461501637330902918203684832716283019655932542976",
+        "upper": "2662834712312184879410627985753449582708610480637/730750818665451459101842416358141509827966271488"
+      },
+      "finite_atom_Bessel_checks": 1023,
+      "fractional_energy": {
+        "lower": "75028422230238861732306808906461338180802177073/730750818665451459101842416358141509827966271488",
+        "upper": "150056844460477723464613617812922676361604354147/1461501637330902918203684832716283019655932542976"
+      },
+      "mixed_fractional": {
+        "lower": "114464799160762614474903016321094010423703374923/1461501637330902918203684832716283019655932542976",
+        "upper": "28616199790190653618725754080273502605925843731/365375409332725729550921208179070754913983135744"
+      },
+      "ordered_cross": {
+        "lower": "-2646422593974036347330812232259133318777822754679/730750818665451459101842416358141509827966271488",
+        "upper": "-5292845187948072694661624464518266637555645509357/1461501637330902918203684832716283019655932542976"
+      },
+      "ordered_cross_term_count": 1045506,
+      "source_comparison_boxes": 8,
+      "source_energy": {
+        "lower": "148672940148768701049574070561324607323441590493/730750818665451459101842416358141509827966271488",
+        "upper": "297345880297537402099148141122649214646883180987/1461501637330902918203684832716283019655932542976"
+      },
+      "step_energy": {
+        "lower": "8206059169074266039907876747158131965393862979/365375409332725729550921208179070754913983135744",
+        "upper": "32824236676297064159631506988632527861575451917/1461501637330902918203684832716283019655932542976"
+      }
+    }
+  ],
+  "new_tests_per_mode": 26,
+  "new_working_precisions": [
+    192,
+    256
+  ],
+  "pending_source_profiles": {
+    "coefficient_count": 128,
+    "energy_strict_bound": "21/100",
+    "huge_finite_head_exponent": 1408,
+    "huge_prime_enumeration": false,
+    "output_grid_bits": 160,
+    "replay_identical_to_prepared_source_outputs": true,
+    "scope": "1 <= N <= 128 only",
+    "working_bits": [
+      768,
+      896
+    ]
+  },
+  "prior_numerical_diagnostics_per_mode": 3,
+  "prior_tests_per_mode": 147,
+  "replay_archive": "archive-index.json",
+  "schema": "centered-atom-results-v1",
+  "status": "PASSED",
+  "tests_per_mode": 173
+}
