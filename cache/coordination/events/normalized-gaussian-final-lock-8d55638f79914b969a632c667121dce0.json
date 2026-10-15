@@ -1,0 +1,16 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "normalized-gaussian-formal",
+  "event": "final-dev-lock-acquired",
+  "owner": "cache_adapter",
+  "at": "2026-10-15T19:53:29.808118+00:00",
+  "source_hashes": {
+    "GRWTSK/Analysis/MellinTransform/ReverseInversion.lean": "88d959d74d9d5e27772f57e847497b9a943167cc41ae6abb453c3932cbb84c57",
+    "GRWTSK/Analysis/MellinTransform/LogarithmicGaussian.lean": "cd47e598796f4f901ddea56dd05bb9e719534e1aac5589c1be6ddfb8d9fea66d",
+    "GRWTSK/Analysis/MellinTransform/NormalizedGaussian.lean": "a0ed0dbf644601887df128536951a9c3e17ecf42970069a13acdfcb93518e3bf",
+    "GRWTSK/Analysis/MellinTransform/Checks/Positive/NormalizedGaussian.lean": "afd23b18615ec575c59f64be4c1e8bd710bf7425e24939cc4c765c9956d8c525",
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianMissingNormalization.lean": "90fc1e3e103a8db7752776804b84269ab8d3a04d8bc88230f5e5624f215a262c"
+  },
+  "competing_jobs": [],
+  "archive": ".local/normalized-gaussian/aa266caa5e43482598ff0e9092ed1db5/final"
+}

@@ -5996,20 +5996,20 @@
     }
   ],
   "counts_by_operation": {
-    "add": 64,
+    "add": 70,
     "keep": 336,
     "move": 206
   },
   "counts_by_role": {
     "audit-driver": 35,
-    "library": 357,
-    "negative-control": 117,
-    "positive-check": 97
+    "library": 359,
+    "negative-control": 119,
+    "positive-check": 99
   },
   "counts_by_subject": {
     "Algebra": 19,
-    "Analysis": 211,
-    "Combinatorics": 14,
+    "Analysis": 214,
+    "Combinatorics": 17,
     "Data": 1,
     "DynamicalSystems": 16,
     "GroupTheory": 4,
@@ -6021,9 +6021,9 @@
     "Order": 6,
     "Spectral": 25
   },
-  "present_lean_source_count": 669,
+  "present_lean_source_count": 675,
   "schema": "grwtsk-math-source-catalog-v1",
-  "source_count": 606,
+  "source_count": 612,
   "sources": [
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -6159,6 +6159,7 @@
         "GRWTSK.Analysis.LaplaceTransform.PolynomialEnergy",
         "GRWTSK.Analysis.LaplaceTransform.PolynomialEnergyHolomorphy",
         "GRWTSK.Analysis.MellinTransform.LogarithmicGaussian",
+        "GRWTSK.Analysis.MellinTransform.NormalizedGaussian",
         "GRWTSK.Analysis.MellinTransform.ReverseInversion",
         "GRWTSK.Analysis.NormedSpace.QuadraticError",
         "GRWTSK.Analysis.Polarization",
@@ -6177,6 +6178,7 @@
         "GRWTSK.Analysis.WeakDerivatives.PolynomialBump",
         "GRWTSK.Combinatorics.DirectedGraph.EdgeTrace",
         "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences",
+        "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding",
         "GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.Moser",
         "GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.MoserCoordinates",
         "GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.MoserSource",
@@ -6557,7 +6559,7 @@
         "GRWTSK/Logic/ProofChecking/Checks/OwnedDeclarationAudit.lean"
       ],
       "runner": "python3 -B scripts/check_ccc_energy.py",
-      "sha256": "1d740c4f0f8b0a99f25a255a0c5ee226a1d571c617647c0904af2d114123e00e",
+      "sha256": "f77b34620b241c6f3a3f0a0c7c6565bf9db325b220868f9c6a0e3a54fbad2466",
       "source_role": "library",
       "source_root": ".",
       "subject": "Library",
@@ -6566,7 +6568,7 @@
         "inventory": "observed-current-bytes",
         "layout": "repository baseline remains failed",
         "lean": "umbrella not replayed after selected import additions",
-        "source_sha256": "1d740c4f0f8b0a99f25a255a0c5ee226a1d571c617647c0904af2d114123e00e"
+        "source_sha256": "f77b34620b241c6f3a3f0a0c7c6565bf9db325b220868f9c6a0e3a54fbad2466"
       },
       "working_tree_state": "tracked-modified"
     },
@@ -22376,6 +22378,51 @@
         "R.A. Jacob Martone: human direction",
         "OpenAI Codex: local formalization/adaptation/checking",
         "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: exact normalized Gaussian source context/profile and selected inverse identities; Mathlib Mellin/Gaussian authors retain individual credit"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/unfolding-normalized-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Exact OpenAI normalized Gaussian profile, principal complex half-power coefficient and equality on positive arguments.",
+        "Actual Mellin convergence/transform at every complex s and contour input hypotheses proved for every real sigma and x>0; no arithmetic supplier inferred."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Analysis.MellinTransform.Checks.Positive.NormalizedGaussian"
+      ],
+      "license": "Apache-2.0",
+      "logical_status": "intended rejected control; no theorem admission",
+      "module": "GRWTSK.Analysis.MellinTransform.Checks.Negative.GaussianMissingNormalization",
+      "namespaces": [],
+      "object": "MellinTransform/Checks/Negative",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianMissingNormalization.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianMissingNormalization.lean",
+      "placement_rationale": "Normalized Gaussian Mellin transforms and contour inversion belong to Analysis/MellinTransform.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B scripts/check_normalized_gaussian.py",
+      "sha256": "90fc1e3e103a8db7752776804b84269ab8d3a04d8bc88230f5e5624f215a262c",
+      "source_role": "negative-control",
+      "source_root": "GRWTSK",
+      "subject": "Analysis",
+      "target_path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianMissingNormalization.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Analysis/MellinTransform/normalized-gaussian-checks-2026-10-15.json",
+        "source_sha256": "90fc1e3e103a8db7752776804b84269ab8d3a04d8bc88230f5e5624f215a262c"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
         "OpenAI: prior reverse Mellin input reused; Lawrence Wu: Mathlib Mellin change of variables; Gaussian integral source authors retain credit"
       ],
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -22574,6 +22621,82 @@
         "R.A. Jacob Martone: human direction",
         "OpenAI Codex: local formalization/adaptation/checking",
         "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: exact normalized Gaussian source context/profile and selected inverse identities; Mathlib Mellin/Gaussian authors retain individual credit"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/unfolding-normalized-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Exact OpenAI normalized Gaussian profile, principal complex half-power coefficient and equality on positive arguments.",
+        "Actual Mellin convergence/transform at every complex s and contour input hypotheses proved for every real sigma and x>0; no arithmetic supplier inferred."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Analysis.MellinTransform.NormalizedGaussian",
+        "Mathlib.Analysis.Real.Pi.Bounds"
+      ],
+      "license": "Apache-2.0",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.Analysis.MellinTransform.Checks.Positive.NormalizedGaussian",
+      "namespaces": [
+        "GaussianNormalizationControl"
+      ],
+      "object": "MellinTransform/Checks/Positive",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/NormalizedGaussian.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/NormalizedGaussian.lean",
+      "placement_rationale": "Normalized Gaussian Mellin transforms and contour inversion belong to Analysis/MellinTransform.",
+      "public_declarations": [
+        {
+          "kind": "def",
+          "line": 27,
+          "name": "unnormalizedProfile"
+        },
+        {
+          "kind": "lemma",
+          "line": 29,
+          "name": "unnormalizedProfile_eq_quarter"
+        },
+        {
+          "kind": "lemma",
+          "line": 36,
+          "name": "unnormalizedProfile_convergent"
+        },
+        {
+          "kind": "lemma",
+          "line": 43,
+          "name": "unnormalizedProfile_mellin_zero"
+        },
+        {
+          "kind": "lemma",
+          "line": 53,
+          "name": "unnormalizedProfile_not_unit_transform"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK.Analysis.MellinTransform.Checks.Negative.GaussianMissingNormalization"
+      ],
+      "runner": "python3 -B scripts/check_normalized_gaussian.py",
+      "sha256": "afd23b18615ec575c59f64be4c1e8bd710bf7425e24939cc4c765c9956d8c525",
+      "source_role": "positive-check",
+      "source_root": "GRWTSK",
+      "subject": "Analysis",
+      "target_path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/NormalizedGaussian.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Analysis/MellinTransform/normalized-gaussian-checks-2026-10-15.json",
+        "source_sha256": "afd23b18615ec575c59f64be4c1e8bd710bf7425e24939cc4c765c9956d8c525"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
         "OpenAI: upstream reverse Mellin declarations; Lawrence Wu: Mathlib Mellin change of variables"
       ],
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -22683,7 +22806,8 @@
       ],
       "reverse_consumers": [
         "GRWTSK",
-        "GRWTSK.Analysis.MellinTransform.Checks.Positive.LogarithmicGaussian"
+        "GRWTSK.Analysis.MellinTransform.Checks.Positive.LogarithmicGaussian",
+        "GRWTSK.Analysis.MellinTransform.NormalizedGaussian"
       ],
       "runner": "python3 -B scripts/check_logarithmic_gaussian.py",
       "sha256": "cd47e598796f4f901ddea56dd05bb9e719534e1aac5589c1be6ddfb8d9fea66d",
@@ -22697,6 +22821,122 @@
         "lean": "see immutable selected replay receipt",
         "replay_binding": "evidence/Analysis/MellinTransform/logarithmic-gaussian-checks-2026-10-15.json",
         "source_sha256": "cd47e598796f4f901ddea56dd05bb9e719534e1aac5589c1be6ddfb8d9fea66d"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: exact normalized Gaussian source context/profile and selected inverse identities; Mathlib Mellin/Gaussian authors retain individual credit"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/unfolding-normalized-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Exact OpenAI normalized Gaussian profile, principal complex half-power coefficient and equality on positive arguments.",
+        "Actual Mellin convergence/transform at every complex s and contour input hypotheses proved for every real sigma and x>0; no arithmetic supplier inferred."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Analysis.MellinTransform.LogarithmicGaussian"
+      ],
+      "license": "Apache-2.0",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.Analysis.MellinTransform.NormalizedGaussian",
+      "namespaces": [
+        "GRWTSK.Analysis.MellinTransform.NormalizedGaussian"
+      ],
+      "object": "MellinTransform",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Analysis/MellinTransform/NormalizedGaussian.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Analysis/MellinTransform/NormalizedGaussian.lean",
+      "placement_rationale": "Normalized Gaussian Mellin transforms and contour inversion belong to Analysis/MellinTransform.",
+      "public_declarations": [
+        {
+          "kind": "def",
+          "line": 22,
+          "name": "gaussianMellinProfile"
+        },
+        {
+          "kind": "def",
+          "line": 26,
+          "name": "gaussianMellinCoefficient"
+        },
+        {
+          "kind": "lemma",
+          "line": 29,
+          "name": "quarter_root"
+        },
+        {
+          "kind": "lemma",
+          "line": 39,
+          "name": "gaussianMellinCoefficient_normalizes"
+        },
+        {
+          "kind": "lemma",
+          "line": 53,
+          "name": "gaussianMellinProfile_eq_quarter"
+        },
+        {
+          "kind": "theorem",
+          "line": 63,
+          "name": "gaussianMellinProfile_convergent"
+        },
+        {
+          "kind": "theorem",
+          "line": 71,
+          "name": "gaussianMellinProfile_mellin"
+        },
+        {
+          "kind": "lemma",
+          "line": 85,
+          "name": "gaussian_transform_vertical_norm"
+        },
+        {
+          "kind": "lemma",
+          "line": 93,
+          "name": "gaussian_transform_vertical_integrable"
+        },
+        {
+          "kind": "lemma",
+          "line": 99,
+          "name": "gaussian_transform_vertical_continuous"
+        },
+        {
+          "kind": "lemma",
+          "line": 103,
+          "name": "gaussianMellinProfile_continuousAt"
+        },
+        {
+          "kind": "theorem",
+          "line": 116,
+          "name": "gaussianMellinProfile_inverse"
+        },
+        {
+          "kind": "theorem",
+          "line": 127,
+          "name": "gaussianMellin_inversion"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Analysis.MellinTransform.Checks.Positive.NormalizedGaussian"
+      ],
+      "runner": "python3 -B scripts/check_normalized_gaussian.py",
+      "sha256": "a0ed0dbf644601887df128536951a9c3e17ecf42970069a13acdfcb93518e3bf",
+      "source_role": "library",
+      "source_root": "GRWTSK",
+      "subject": "Analysis",
+      "target_path": "GRWTSK/Analysis/MellinTransform/NormalizedGaussian.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Analysis/MellinTransform/normalized-gaussian-checks-2026-10-15.json",
+        "source_sha256": "a0ed0dbf644601887df128536951a9c3e17ecf42970069a13acdfcb93518e3bf"
       },
       "working_tree_state": "untracked-at-selected-replay"
     },
@@ -24767,6 +25007,50 @@
         "Lean and Mathlib: upstream APIs and proofs"
       ],
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/unfolding-normalized-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Occurrence carrier wraps existing Quiver.PathStar at fixed root; extension carries actual base edge plus equality of appended path.",
+        "Outgoing-star bijection supplies unique suffix path lifts, not costar/full covering. Endpoint image is root-reachable vertices; no base connectedness or countability assumed."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PathUnfolding"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "logical_status": "intended rejected control; no theorem admission",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.UnfoldingMissingCostar",
+      "namespaces": [],
+      "object": "DirectedGraph/Checks/Negative",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/UnfoldingMissingCostar.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/UnfoldingMissingCostar.lean",
+      "placement_rationale": "Rooted quiver path occurrences, arborescences and local outgoing path lifts belong to Combinatorics/DirectedGraph.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B scripts/check_path_unfolding.py",
+      "sha256": "d76888ed8dbf6e9126dc4d13971158b770092b86dbe991b0b62fde7302304b65",
+      "source_role": "negative-control",
+      "source_root": "GRWTSK",
+      "subject": "Combinatorics",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/UnfoldingMissingCostar.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/path-unfolding-checks-2026-10-15.json",
+        "source_sha256": "d76888ed8dbf6e9126dc4d13971158b770092b86dbe991b0b62fde7302304b65"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
       "design_reference": "cache/research/typed-trace-gaussian-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
       "explicit_premises": [
         "Existing Quiver.PathStar with fixed root and fully tagged dependent edge identities.",
@@ -24894,6 +25178,112 @@
         "lean": "see immutable selected replay receipt",
         "replay_binding": "evidence/Combinatorics/DirectedGraph/path-occurrences-checks-2026-10-15-r2.json",
         "source_sha256": "2219cc672fbea5667d62ee833d6633dd8a6f2d894bbdb12a76cd880d612fe163"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/unfolding-normalized-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Occurrence carrier wraps existing Quiver.PathStar at fixed root; extension carries actual base edge plus equality of appended path.",
+        "Outgoing-star bijection supplies unique suffix path lifts, not costar/full covering. Endpoint image is root-reachable vertices; no base connectedness or countability assumed."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding",
+        "Mathlib.Combinatorics.Quiver.Path.Vertices",
+        "Mathlib.Combinatorics.Quiver.SingleObj"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PathUnfolding",
+      "namespaces": [
+        "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding.Checks.Positive"
+      ],
+      "object": "DirectedGraph/Checks/Positive",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PathUnfolding.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PathUnfolding.lean",
+      "placement_rationale": "Rooted quiver path occurrences, arborescences and local outgoing path lifts belong to Combinatorics/DirectedGraph.",
+      "public_declarations": [
+        {
+          "kind": "def",
+          "line": 37,
+          "name": "firstOccurrence"
+        },
+        {
+          "kind": "def",
+          "line": 41,
+          "name": "otherOccurrence"
+        },
+        {
+          "kind": "def",
+          "line": 44,
+          "name": "twiceOccurrence"
+        },
+        {
+          "kind": "def",
+          "line": 47,
+          "name": "twoStepLift"
+        },
+        {
+          "kind": "def",
+          "line": 51,
+          "name": "twoBaseEdges"
+        },
+        {
+          "kind": "theorem",
+          "line": 54,
+          "name": "parallel_occurrences_distinct"
+        },
+        {
+          "kind": "theorem",
+          "line": 61,
+          "name": "repeated_base_vertices_distinct"
+        },
+        {
+          "kind": "theorem",
+          "line": 94,
+          "name": "single_loop_outgoing_bijective"
+        },
+        {
+          "kind": "theorem",
+          "line": 99,
+          "name": "single_loop_empty_origin_costar"
+        },
+        {
+          "kind": "theorem",
+          "line": 102,
+          "name": "single_loop_costar_not_surjective"
+        },
+        {
+          "kind": "theorem",
+          "line": 106,
+          "name": "single_loop_not_covering"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.UnfoldingMissingCostar"
+      ],
+      "runner": "python3 -B scripts/check_path_unfolding.py",
+      "sha256": "81c0c9fd724a7eda6038ed3e24edf24e08280377f39b72c06152f508327dc438",
+      "source_role": "positive-check",
+      "source_root": "GRWTSK",
+      "subject": "Combinatorics",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PathUnfolding.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/path-unfolding-checks-2026-10-15.json",
+        "source_sha256": "81c0c9fd724a7eda6038ed3e24edf24e08280377f39b72c06152f508327dc438"
       },
       "working_tree_state": "untracked-at-selected-replay"
     },
@@ -25199,6 +25589,207 @@
         "lean": "see immutable selected replay receipt",
         "replay_binding": "evidence/Combinatorics/DirectedGraph/path-occurrences-checks-2026-10-15-r2.json",
         "source_sha256": "b2b140e2f370d07ef866e81ebb93580ed706d64ad463377fcce82df37c4a39e5"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/unfolding-normalized-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Occurrence carrier wraps existing Quiver.PathStar at fixed root; extension carries actual base edge plus equality of appended path.",
+        "Outgoing-star bijection supplies unique suffix path lifts, not costar/full covering. Endpoint image is root-reachable vertices; no base connectedness or countability assumed."
+      ],
+      "git_blob": null,
+      "imports": [
+        "Mathlib.Combinatorics.Quiver.Arborescence",
+        "Mathlib.Combinatorics.Quiver.Covering"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding",
+      "namespaces": [
+        "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding"
+      ],
+      "object": "DirectedGraph",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/PathUnfolding.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Combinatorics/DirectedGraph/PathUnfolding.lean",
+      "placement_rationale": "Rooted quiver path occurrences, arborescences and local outgoing path lifts belong to Combinatorics/DirectedGraph.",
+      "public_declarations": [
+        {
+          "kind": "structure",
+          "line": 39,
+          "name": "Occurrence"
+        },
+        {
+          "kind": "abbrev",
+          "line": 45,
+          "name": "Occurrence.endpoint"
+        },
+        {
+          "kind": "abbrev",
+          "line": 48,
+          "name": "Occurrence.path"
+        },
+        {
+          "kind": "def",
+          "line": 53,
+          "name": "ofPath"
+        },
+        {
+          "kind": "theorem",
+          "line": 58,
+          "name": "ofPath_path"
+        },
+        {
+          "kind": "def",
+          "line": 61,
+          "name": "origin"
+        },
+        {
+          "kind": "def",
+          "line": 64,
+          "name": "extend"
+        },
+        {
+          "kind": "abbrev",
+          "line": 68,
+          "name": "Extension"
+        },
+        {
+          "kind": "def",
+          "line": 74,
+          "name": "step"
+        },
+        {
+          "kind": "def",
+          "line": 78,
+          "name": "projection"
+        },
+        {
+          "kind": "theorem",
+          "line": 85,
+          "name": "projection_step"
+        },
+        {
+          "kind": "theorem",
+          "line": 87,
+          "name": "extension_length"
+        },
+        {
+          "kind": "theorem",
+          "line": 91,
+          "name": "extension_height_lt"
+        },
+        {
+          "kind": "theorem",
+          "line": 96,
+          "name": "unique_incoming"
+        },
+        {
+          "kind": "theorem",
+          "line": 112,
+          "name": "root_or_incoming"
+        },
+        {
+          "kind": "def",
+          "line": 122,
+          "name": "unfoldingArborescence"
+        },
+        {
+          "kind": "def",
+          "line": 129,
+          "name": "uniqueRootPath"
+        },
+        {
+          "kind": "def",
+          "line": 131,
+          "name": "liftHistory"
+        },
+        {
+          "kind": "theorem",
+          "line": 137,
+          "name": "projection_liftHistory"
+        },
+        {
+          "kind": "theorem",
+          "line": 146,
+          "name": "ofPath_comp_projection"
+        },
+        {
+          "kind": "def",
+          "line": 158,
+          "name": "outgoingStarEquiv"
+        },
+        {
+          "kind": "theorem",
+          "line": 172,
+          "name": "outgoing_star_bijective"
+        },
+        {
+          "kind": "theorem",
+          "line": 175,
+          "name": "path_star_bijective"
+        },
+        {
+          "kind": "theorem",
+          "line": 180,
+          "name": "unique_finite_lift"
+        },
+        {
+          "kind": "theorem",
+          "line": 184,
+          "name": "endpoint_range_iff"
+        },
+        {
+          "kind": "theorem",
+          "line": 193,
+          "name": "endpoint_surjective_iff"
+        },
+        {
+          "kind": "theorem",
+          "line": 201,
+          "name": "no_arrow_into_origin"
+        },
+        {
+          "kind": "theorem",
+          "line": 206,
+          "name": "empty_origin_costar"
+        },
+        {
+          "kind": "theorem",
+          "line": 209,
+          "name": "origin_costar_not_surjective"
+        },
+        {
+          "kind": "theorem",
+          "line": 215,
+          "name": "not_covering_of_incoming"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PathUnfolding"
+      ],
+      "runner": "python3 -B scripts/check_path_unfolding.py",
+      "sha256": "8d5e2187d705ab49c52a41779b48b445d0baa223c3608ea6495e670ddac24757",
+      "source_role": "library",
+      "source_root": "GRWTSK",
+      "subject": "Combinatorics",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/PathUnfolding.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/path-unfolding-checks-2026-10-15.json",
+        "source_sha256": "8d5e2187d705ab49c52a41779b48b445d0baa223c3608ea6495e670ddac24757"
       },
       "working_tree_state": "untracked-at-selected-replay"
     },

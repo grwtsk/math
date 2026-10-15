@@ -112,3 +112,19 @@ complex Mellin coordinate are checked under their explicit hypotheses; the
 concrete Gaussian nonvanishing consumer is not an arithmetic or RH supplier.
 Original names, authors and source licenses remain upstream. No mathematical
 novelty, independent review or whole-library admission is claimed.
+
+Exact normalized Gaussian Mellin pair
+------------------------------------
+GRWTSK/Analysis/MellinTransform/NormalizedGaussian.lean retains the exact
+profile and selected inverse statement from openai/math at
+1581d4cbdd69a0faf34b2089614fe2a814316a6a,
+lean/OAI/NumberTheory/DirichletL/Detector/GaussianMellin.lean,
+raw SHA2560526d85d63bcee8a85cb945c231af1263839ca0808c6d714132d0781b2618a04.
+OpenAI is the upstream project author; Apache-2.0 terms are retained. The
+new forward-transform/normalization proof uses the accepted general Gaussian
+and actual Mathlib Mellin inversion inputs for every real contour and positive
+argument. Sebastien Gouezel, Lawrence Wu and David Loeffler retain their
+Mathlib Gaussian/Mellin author credit and copyright/license notices. Human
+direction: R.A. Jacob Martone; local formalization/checking assistance:
+OpenAI Codex. No surrounding detector admission, arithmetic supplier,
+mathematical novelty, independent review or RH proof is asserted.

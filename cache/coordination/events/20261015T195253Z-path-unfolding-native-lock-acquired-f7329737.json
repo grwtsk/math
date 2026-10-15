@@ -1,0 +1,10 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "path-unfolding-formal",
+  "owner": "indexed_dictionary",
+  "at": "2026-10-15T19:52:53.375508+00:00",
+  "kind": "native-lock-acquired",
+  "source": "SelectedAudit.lean",
+  "source_sha256": "432f0c0ccf21f575220bf5b4a93ebd5ac4b7cc02b59e6673a00e81f78732e33c",
+  "guard_competing_jobs": []
+}

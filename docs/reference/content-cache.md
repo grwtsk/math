@@ -125,6 +125,14 @@ validity proof and is maintained without executable code generation. It
 supplies no automatic interpretation or correctness proof for operational
 relation-ID rows.
 
+The [all-occurrence path unfolding](../mathematics/Combinatorics/DirectedGraph/path-unfolding.md)
+now gives a mathematical tree of every rooted path history and exact outgoing
+finite lifts. Its endpoint image is precisely root-reachable vertices; an
+incoming base edge at the root prevents full covering. This is a distinct
+source/occurrence construction with its own native receipt. Finite cache
+snapshots and the operational relation-ID schema do not acquire an executable
+unfolding, universal property or semantic refinement from that theorem.
+
 The separate occurrence-trace adapter validates one fixed root, one typed
 relation kind, forward direction, exact relation content and ordered endpoint
 joins. Its current source snapshot and exact taxonomy byte/revision bindings

@@ -1,0 +1,56 @@
+{
+  "schema": "bounded-replay-operational-controls-v1",
+  "at": "2026-10-15T20:01:01.217536+00:00",
+  "sources": [
+    {
+      "path": "scripts/check_path_unfolding.py",
+      "sha256": "55a631f515f5ccda05a183f51a4d0b91a3c121693929f07bddb7338d907c6a0d"
+    },
+    {
+      "path": "scripts/check_normalized_gaussian.py",
+      "sha256": "9471239ea409f5570e65a062bff87e86fe3686a48fcde43ac1dbc399aa624257"
+    },
+    {
+      "path": "scripts/test_unfolding_replay_guards.py",
+      "sha256": "c09f2c17ab2090973259d58312a12df8e1e97601a1f5edaea1334411a80a37b4"
+    },
+    {
+      "path": "scripts/check_math_trust.py",
+      "sha256": "069ca265038960243890b1c4e028637723ddc440854864a61648eb2b2fd99c9d"
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "scripts/test_unfolding_replay_guards.py"
+      ],
+      "exit_code": 0,
+      "log": {
+        "path": ".local/path-unfolding/root/replay-guards-normal.log",
+        "sha256": "f3874f1bc83a634fd04abbf35e717328a24a73dc1cffe20a6972ccd456a246ac"
+      },
+      "output": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.046s\n\nOK\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "-O",
+        "scripts/test_unfolding_replay_guards.py"
+      ],
+      "exit_code": 0,
+      "log": {
+        "path": ".local/path-unfolding/root/replay-guards-optimized.log",
+        "sha256": "d9b7d85467ae812bc6b0f2b086dc2a9180509c041948b52912432a0bd3ed543b"
+      },
+      "output": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.062s\n\nOK\n"
+    }
+  ],
+  "controls": [
+    "Two drivers times nine generated-object family scenarios: unchanged passes; replace/truncate/delete main, replace/delete private, add server, symlink main/private reject.",
+    "Plain and coded errors are both counted; exactly one intended type mismatch required in each actual negative compile."
+  ],
+  "limits": "Bounded Python operational tests only; no Lean proof of filesystem transactions, generated artifact custody, diagnostic parser, JSON adapter, hash or IO refinement. Correlated source review is not independent validation."
+}

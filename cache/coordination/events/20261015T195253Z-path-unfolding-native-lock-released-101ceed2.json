@@ -1,0 +1,11 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "path-unfolding-formal",
+  "owner": "indexed_dictionary",
+  "at": "2026-10-15T19:52:53.298333+00:00",
+  "kind": "native-lock-released",
+  "source": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/UnfoldingMissingCostar.lean",
+  "exit_code": 1,
+  "all_native_children_exited": true,
+  "log": ".local/path-unfolding/logs/20261015T195252.681808Z-UnfoldingMissingCostar.log"
+}
