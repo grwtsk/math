@@ -234,6 +234,14 @@ no cross-revision index stability or operational parser correspondence is
 inferred. Parallel IDs in the mathematical fixture leave the existing
 operational duplicate-edge guard unchanged.
 
+The [relation-table reindex result](../mathematics/Combinatorics/DirectedGraph/role-relation-reindex.md)
+now binds actual index translations to source, target and role preservation.
+The [reindex decision](../../cache/decisions/relation-table-reindex-v1.json)
+requires actual inverse transport into a common old rooted payload before
+reusing supplied evidence. Relation IDs and parent-dictionary references
+are different indices; unchanged numbers and matching endpoint summaries
+do not certify transport of full histories.
+
 See [cache operations](../how-to/cache.md), the
 [taxonomy](../../cache/taxonomy.json), and the
 [integration evidence](../../evidence/Logic/FiniteSequences/cache-integration-2026-10-15.json).

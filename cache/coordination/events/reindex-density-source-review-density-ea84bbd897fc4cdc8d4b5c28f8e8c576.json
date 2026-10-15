@@ -1,0 +1,26 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "reindex-density-source-scout",
+  "owner": "cache_taxonomy",
+  "at": "2026-10-15T23:09:57.582673+00:00",
+  "kind": "immutable-source-review-complete",
+  "review": {
+    "path": "evidence/Analysis/MellinTransform/gaussian-density-moments-source-review-2026-10-15.json",
+    "sha256": "0e8eaceef3ef074f7ebba3100c4ad1febeb4245daa5d40bd93f6fe73c2d90f1a",
+    "bytes": 18892
+  },
+  "author_freeze": {
+    "path": "cache/coordination/events/gaussian-density-freeze-dc35fa49da514cc2942df9a88ecfa51f.json",
+    "sha256": "a5860e1cf1a2b8d47caac93a86021af401faab283dcd84783d372b6b5460a5a4",
+    "bytes": 2004
+  },
+  "source_hashes": {
+    "GRWTSK/Analysis/MellinTransform/GaussianDensityMoments.lean": "7bdf9b9141eaf1a5cdfb043265211dc067508f91edcc27c935d1c5c118f30f1b",
+    "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianDensityMoments.lean": "6ca3a7a73e1bb7bc7254f7a06e676fade81aaf5ad9b5091cc08b71e6f41efdec",
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianDensityMissingCutoff.lean": "689ba388e7697b64837957703519a677644d95728f9eab6fbe3c5cdbef149214"
+  },
+  "finding": "No actionable missing actual moment/integrability, weighted-kernel/remote hypothesis or nonzero-Fourier/positive-integral producer observed in the three frozen density-moment sources.",
+  "native_status": "NOT_RUN",
+  "review_character": "Correlated source/premise/control/credit review, not independent validation; root native evidence separate.",
+  "preservation": "No maintained source/docs/sharedmetadata/native/Git/remote writes; old failed/stale source variants/receipts and historical unprovided/corrected source records retained."
+}

@@ -1,0 +1,134 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "gaussian-density-moments-formal",
+  "owner": "cache_adapter",
+  "event": "author-completion-and-native-release",
+  "at": "2026-10-15T23:10:51.619419+00:00",
+  "status": "development-full-census-checked-root-admission-pending",
+  "source_hashes": {
+    "GRWTSK/Analysis/MellinTransform/GaussianDensityMoments.lean": "7bdf9b9141eaf1a5cdfb043265211dc067508f91edcc27c935d1c5c118f30f1b",
+    "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianDensityMoments.lean": "6ca3a7a73e1bb7bc7254f7a06e676fade81aaf5ad9b5091cc08b71e6f41efdec",
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianDensityMissingCutoff.lean": "689ba388e7697b64837957703519a677644d95728f9eab6fbe3c5cdbef149214"
+  },
+  "freeze_event": "cache/coordination/events/gaussian-density-freeze-dc35fa49da514cc2942df9a88ecfa51f.json",
+  "development": {
+    "receipt": ".local/gaussian-density-moments/ff0816e4eac54b9db2b23a4aa60a9841/full-census/replay-8e_8x1ja/receipt.json",
+    "receipt_sha256": "0d1bea1abe3316149bf647c12d5d546dcb1f8f228dedf6e20058abc812a16ecb",
+    "outcome": "passed",
+    "library_modules": 10,
+    "positive_modules": 1,
+    "intended_negative_compilations": 1,
+    "trust": 0,
+    "fatal_warnings": true,
+    "full_owned_transitive_census": {
+      "declarations": 201,
+      "modules": [
+        {
+          "declarations": 23,
+          "module": "GRWTSK.Analysis.MellinTransform.ReverseInversion"
+        },
+        {
+          "declarations": 20,
+          "module": "GRWTSK.Analysis.MellinTransform.LogarithmicGaussian"
+        },
+        {
+          "declarations": 22,
+          "module": "GRWTSK.Analysis.MellinTransform.NormalizedGaussian"
+        },
+        {
+          "declarations": 9,
+          "module": "GRWTSK.Analysis.MellinTransform.GaussianLogFlow"
+        },
+        {
+          "declarations": 13,
+          "module": "GRWTSK.Analysis.Fourier.SchwartzMoments"
+        },
+        {
+          "declarations": 21,
+          "module": "GRWTSK.Analysis.MellinTransform.GaussianLogWindow"
+        },
+        {
+          "declarations": 11,
+          "module": "GRWTSK.Analysis.Series.DyadicKernel"
+        },
+        {
+          "declarations": 23,
+          "module": "GRWTSK.Analysis.MellinTransform.GaussianDensityMoments"
+        },
+        {
+          "declarations": 21,
+          "module": "GRWTSK.Analysis.PartitionOfUnity.DyadicAnnulus"
+        },
+        {
+          "declarations": 21,
+          "module": "GRWTSK.Analysis.MellinTransform.CompactGaussianWindow"
+        },
+        {
+          "declarations": 17,
+          "module": "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianDensityMoments"
+        }
+      ],
+      "all_mathematical_admission": true,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "generated_helper_exemptions": false
+    },
+    "canonical_project_objects_excluded": true,
+    "dependency_objects_reused_and_fingerprinted": true,
+    "native_jobs_running": 0,
+    "shared_lock": "RELEASED; graph/root explicitly handed off; no further native jobs planned",
+    "negative_exact": "Exactly one Application type mismatch:0<=0 supplied where1<=0 required; expectedsubstring1 \u2264 0"
+  },
+  "structural_check": {
+    "argv": [
+      "python3",
+      "-B",
+      "scripts/check_math_layout.py"
+    ],
+    "exit_code": 1,
+    "summary": "Math layout: FAIL (388 library modules, 179 findings).",
+    "log": ".local/gaussian-density-moments/ff0816e4eac54b9db2b23a4aa60a9841/math-layout-final.log",
+    "log_sha256": "dc0f9a681f4389f86a4088ef5bbb46b3df26cbc156b130c96be2539293f4e36c",
+    "allocated_findings": [
+      "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianDensityMissingCutoff.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources",
+      "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianDensityMoments.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources",
+      "GRWTSK/Analysis/MellinTransform/GaussianDensityMoments.lean: library-module-outside-public-closure [GRWTSK.Analysis.MellinTransform.GaussianDensityMoments]: library module is not reachable from GRWTSK.lean",
+      "GRWTSK/Analysis/MellinTransform/GaussianDensityMoments.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources"
+    ],
+    "scope": "Structural only; root owns shared catalog/umbrella registration."
+  },
+  "primary_sources": [
+    {
+      "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "path": "lean/OAI/NumberTheory/DirichletL/Detector/GaussianDensityBudget.lean",
+      "sha256": "42ee10381da1a2003fe309f4b7773c4908bc625eff31f9c23392f82836ba9730",
+      "git_blob": "995f4fa1be3f4dfc968a6af0494437556dab8e9b"
+    },
+    {
+      "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "path": "lean/OAI/NumberTheory/DirichletL/Detector/GaussianTailBudget.lean",
+      "sha256": "38f614d4aa36aff2966a4143f0fd73876902f38004d643acf22d3a41716f071b",
+      "git_blob": "19a1a25b04c89d50d99e0fdae1ba1295609e554e"
+    }
+  ],
+  "contracts": [
+    "Exact actual M_J(V,R) is the integral of(1+normt)^J times norm(currentGaussianJointDensityVhVRt). Actual Integrable and nonnegative for allrealR; allreal exponent powerbound C(V,J,a)>0 beforeR>0 from the current derived-box Fourier density producer.",
+    "Actual R^k*M for allrealk: nonnegative forR>=0, allreal exponent powerbounds forR>0, polynomial envelope. Proven scalarDyadicKernel at Z^-1 pays actual weighted dyadic Summable and tsum<=C(V,J,k,s)*Z^s, s>0,Z>0.",
+    "Actual remote Rj<=A^-1 orA<=Rj and +/-N weighted sums give Summable/tsum<=C(V,J,N,s)*Z^s/A^N for s>0,Z>0,A>=1; constants before allZ/A.",
+    "Local strict positivity producer: actual normalized entire flow neverzero; V!=0 implies actual logwindow!=0; actual Schwartz inverse gives Fourier density!=0; continuity/integrability/nonnegative norm and a nonzero point give actualJ0moment>0 for every realR. No positivity/evaluation/oracle input.",
+    "Concrete compact nonzero V=G(1,0) has nonzero value at3/4. Its actual J0 moment atR1>0. AtZ1,A0 all indices selected; actual density series Summable with positivej0 and positive tsum. Every realC fails the actualN1 bound because C*1/0^1=0. No divergence or A>=1 sharpness claim."
+  ],
+  "source_review": "Final source scout review SHA0e8eaceef3ef074f7ebba3100c4ad1febeb4245daa5d40bd93f6fe73c2d90f1a; correlated source-only, root fresh admission separate.",
+  "preserved_variants": ".local/gaussian-density-moments/ff0816e4eac54b9db2b23a4aa60a9841/attempts",
+  "failure_history": "First development attempt hit only a split LEAN_PATH project-root object lookup, before mathematical elaboration; preserved. Isolated dependency objects were then consolidated under source/object hashes, and all actual library/positive mathematical elaboration passed first try. Full final development rebuilt complete selected local sources from immutable copies; intended negative preserved.",
+  "license_and_credits": "OpenAI project Apache2 exactsource identity retained. Named imported Fourier/Schwartz/Gaussian/real-power individual notices preserved; Bochner.Basic2019ZhouhangZhou with authors ZhouhangZhou/YuryKudryashov/SebastienGouezel/RemyDegenne credited in header. Fourier.Notation2025MoritzDoll source API credit supplied by scout.",
+  "dependency_boundary": "Main imports GaussianLogWindow+DyadicKernel; positive actualGfixture additionally imports CompactGaussianWindow/DyadicAnnulus. No prior Positive imports. All actual defs explicitly noncomputable; no generated-helper exemption.",
+  "limits": [
+    "Root fresh immutable admission, shared registration/docs/cache/commit remain separate.",
+    "Original coupled separation/cutoff-active constructed family, ideal/Hecke/calibration/row-majorant/physical/RH and contourcontinuation remain open.",
+    "No runtime cache/parser/JSON/hash/IO refinement or assumed target-integral/positivity/convergence supplier."
+  ]
+}

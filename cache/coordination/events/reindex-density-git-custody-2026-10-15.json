@@ -1,0 +1,18 @@
+{
+  "schema": "repository-agent-event-v1",
+  "at": "2026-10-15T23:16:47.619537+00:00",
+  "task": "reindex-density-round",
+  "event": "actual-git-and-cleanup-observation",
+  "initial_main": "61893d38948e8a4b0aba60e54b3f58e0247eabf1",
+  "main_head": "61893d38948e8a4b0aba60e54b3f58e0247eabf1",
+  "origin_main_observed": "61893d38948e8a4b0aba60e54b3f58e0247eabf1",
+  "worktrees": "worktree /Users/local/Desktop/math\nHEAD 61893d38948e8a4b0aba60e54b3f58e0247eabf1\nbranch refs/heads/main",
+  "local_branches": "main 61893d38948e8a4b0aba60e54b3f58e0247eabf1",
+  "stale_worktree_prune_dry_run": "empty",
+  "stale_worktree_prune": "completed; empty",
+  "redundant_local_branches": "none; only main retained",
+  "native_children": "all author/root selected jobs exited and shared lock released before this event",
+  "remote_actions": [],
+  "concurrent_history": "Initial clean main61893d3/ahead observed origin1. Prior incoming23archive/tool paths and six inert Lean candidates nativeNOT_RUN retained. No source/migration take-over, fetch/push or remote writes by root.",
+  "limits": "Git/source custody only; mathematical acceptance is confined to separate exact selected native receipts."
+}

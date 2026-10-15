@@ -3661,10 +3661,28 @@
       "source_sha256": "258fdbb7e3517ae4f30db165e9281ceb2c80d595d5a891523131c365c6ae1550",
       "status": "fresh-selected",
       "evidence": "evidence/Analysis/MellinTransform/gaussian-log-window-checks-2026-10-15.json"
+    },
+    "docs/mathematics/Combinatorics/DirectedGraph/role-relation-reindex.md": {
+      "title": "Reindexing finite relation tables and rooted histories",
+      "subject": "Combinatorics",
+      "object": "DirectedGraph",
+      "primary_source": "GRWTSK/Combinatorics/DirectedGraph/RoleRelationReindex.lean",
+      "source_sha256": "ffff5137b1c0837f0cd84416db993d5d81e3bf6476891eb50984652d0f88a4a9",
+      "status": "fresh-selected",
+      "evidence": "evidence/Combinatorics/DirectedGraph/role-relation-reindex-checks-2026-10-15.json"
+    },
+    "docs/mathematics/Analysis/MellinTransform/gaussian-density-moments.md": {
+      "title": "Dyadic sums and remote moments of Gaussian Fourier densities",
+      "subject": "Analysis",
+      "object": "MellinTransform",
+      "primary_source": "GRWTSK/Analysis/MellinTransform/GaussianDensityMoments.lean",
+      "source_sha256": "7bdf9b9141eaf1a5cdfb043265211dc067508f91edcc27c935d1c5c118f30f1b",
+      "status": "fresh-selected",
+      "evidence": "evidence/Analysis/MellinTransform/gaussian-density-moments-checks-2026-10-15.json"
     }
   },
   "object_binding_registry": "docs/reference/object-source-bindings.json",
-  "object_binding_registry_sha256": "dc48d88ebec89423ef0097e06ad008d7a79f4de0b3f5b9db92733e8cd57dc210",
+  "object_binding_registry_sha256": "2da18fc1ac162fa521387e654f8e9e4810c9f65df9073dd874c609eaea38fb79",
   "navigation": {
     "schema": "subject-index-navigation-v1",
     "summary": "docs/reference/library-summary.json"

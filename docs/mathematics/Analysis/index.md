@@ -4,16 +4,16 @@
 
 | Inventory | Count |
 |---|---:|
-| Object guides | 33 |
+| Object guides | 34 |
 | Documented object groups | 15 |
-| Distinct primary sources linked | 33 |
-| Lean source modules | 288 |
+| Distinct primary sources linked | 34 |
+| Lean source modules | 291 |
 | Archive intake records | 39 |
 | Selected catalog families | 1 |
 
 These counts measure documentation and source coverage. They do not count accepted theorems or establish that every source module is documented or checked. [Definitions and limits](../../reference/library-pages.md#count-definitions).
 
-At least 1617 source declaration commands, including 1319 theorem/lemma commands, across 238 parsed Lean source modules; 50 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
+At least 1649 source declaration commands, including 1347 theorem/lemma commands, across 241 parsed Lean source modules; 50 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
 
 ## Asymptotics
 
@@ -103,11 +103,12 @@ Linked primary-source scope: 1 source declaration commands, including 1 theorem/
 
 ## MellinTransform
 
-11 object guides · 11 distinct linked primary source files.
+12 object guides · 12 distinct linked primary source files.
 
-Linked primary-source scope: At least 75 source declaration commands, including 61 theorem/lemma commands, across 8 parsed Lean source modules; 3 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
+Linked primary-source scope: At least 92 source declaration commands, including 75 theorem/lemma commands, across 9 parsed Lean source modules; 3 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
 
 - [Compact logarithmic Gaussian windows and Fourier density moments](MellinTransform/gaussian-log-window.md).
+- [Dyadic sums and remote moments of Gaussian Fourier densities](MellinTransform/gaussian-density-moments.md).
 - [Entire Gaussian flow in logarithmic coordinates](MellinTransform/gaussian-log-flow.md).
 - [Mellin transform of a logarithmic Gaussian](MellinTransform/logarithmic-gaussian.md).
 - [Reverse Mellin inversion](MellinTransform/reverse-inversion.md).

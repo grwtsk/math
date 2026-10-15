@@ -1,0 +1,13 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "gaussian-density-moments-formal",
+  "event": "dev-lock-released",
+  "at": "2026-10-15T23:07:53.314554+00:00",
+  "owner": "cache_adapter",
+  "attempt": ".local/gaussian-density-moments/ff0816e4eac54b9db2b23a4aa60a9841/attempts/Negative-attempt04",
+  "source_sha256": "060a43fa11e12f84befdde5376155723efe45d3a7210e7bda042420735680902",
+  "competing_jobs": [],
+  "receipt": ".local/gaussian-density-moments/ff0816e4eac54b9db2b23a4aa60a9841/attempts/Negative-attempt04.json",
+  "exit_code": 1,
+  "native_jobs_running": 0
+}

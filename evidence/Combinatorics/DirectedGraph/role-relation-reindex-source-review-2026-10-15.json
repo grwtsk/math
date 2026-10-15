@@ -1,0 +1,265 @@
+{
+  "schema": "grwtsk.source-review.v1",
+  "task": "reindex-density-source-scout",
+  "created_utc": "2026-10-15T23:16:26.651268+00:00",
+  "reviewer": "cache_taxonomy",
+  "review_scope": "Correlated same-team exact-source/premise/control/credit review; not independent validation.",
+  "native_validation": {
+    "performed_by_this_review": false,
+    "status": "NOT_RUN",
+    "authority": "Root-owned separate fresh pinned trust-zero/fatal replay and complete owned/transitive axiom audit; source comparison or author development do not admit proofs."
+  },
+  "author_completion": {
+    "path": "cache/coordination/events/20261015T231512Z-role-reindex-complete-5321121e.json",
+    "sha256": "331dcb13e975285f9ade55797942b8b91919e509e609c4a992e64b350c9c20ab",
+    "bytes": 8118
+  },
+  "source_context": {
+    "path": ".local/reindex-density-source-scout/7141bac342214855845ce5db1746e39b/review-context.json",
+    "sha256": "06e54f4e81f6ed4c4062eb53b1c176300b18fab7cdcd5c3a3c4ddd92e712ed24",
+    "bytes": 17739
+  },
+  "local_sources": [
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/RoleRelationReindex.lean",
+      "sha256": "ffff5137b1c0837f0cd84416db993d5d81e3bf6476891eb50984652d0f88a4a9",
+      "bytes": 14840,
+      "archive": ".local/reindex-density-source-scout/7141bac342214855845ce5db1746e39b/frozen-local/GRWTSK/Combinatorics/DirectedGraph/RoleRelationReindex.lean",
+      "declarations": {
+        "Reindex": 33,
+        "mapVertex": 41,
+        "qualified": 44,
+        "qualified_injective": 47,
+        "prefunctor": 54,
+        "mapStar": 61,
+        "mapped_endpoint": 65,
+        "encodePath_naturality": 69,
+        "encode_naturality": 82,
+        "valid_map": 88,
+        "decode_naturality": 97,
+        "finish_naturality": 105,
+        "mapStar_injective": 114,
+        "inverse": 123,
+        "inverse_qualified": 142,
+        "qualified_inverse": 148,
+        "qualifiedEquiv": 154,
+        "inverse_mapStar": 161,
+        "mapStar_inverse": 179,
+        "pathStarEquiv": 198,
+        "reindexRows": 206,
+        "inverse_rows": 210,
+        "pathRows": 224,
+        "mappedPathRows": 229,
+        "mappedPathRows_eq": 234,
+        "rootedRows": 243,
+        "mappedPacked": 247,
+        "restorePacked": 254,
+        "restore_mappedPacked": 262,
+        "certified_reindex": 272
+      }
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/RoleRelationReindex.lean",
+      "sha256": "eea06196e6857c9954da1031125dcc5ae2104449b00a82731385b29f73d0f018",
+      "bytes": 10098,
+      "archive": ".local/reindex-density-source-scout/7141bac342214855845ce5db1746e39b/frozen-local/GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/RoleRelationReindex.lean",
+      "declarations": {
+        "original": 15,
+        "swapIndex": 20,
+        "updated": 22,
+        "translation": 27,
+        "translation_bijective": 33,
+        "vertexA": 35,
+        "vertexB": 36,
+        "id0": 37,
+        "id1": 38,
+        "id2": 39,
+        "new0": 40,
+        "new1": 41,
+        "new2": 42,
+        "arrow0": 44,
+        "arrow1": 45,
+        "arrow2": 46,
+        "single0": 47,
+        "single1": 48,
+        "revisited": 49,
+        "encode_single0": 52,
+        "encode_single1": 53,
+        "encode_revisited": 55,
+        "old_word_valid": 60,
+        "translated_word": 64,
+        "actual_mapped_history": 67,
+        "translated_valid": 73,
+        "translated_actual_decode": 78,
+        "stale_word_rejected": 97,
+        "collapseIndex": 103,
+        "collapse": 106,
+        "collapse_not_injective": 124,
+        "qualified_collapse_not_injective": 129,
+        "old_parallel_paths_distinct": 137,
+        "actual_parallel_history_loss": 146,
+        "roleChangedIndex": 154,
+        "role_change_preserves_endpoints": 156,
+        "role_change_fails": 171,
+        "rows": 177,
+        "actual_new_rows": 180,
+        "oldCertificate": 195,
+        "certificate_entries": 201,
+        "empty_new_packet_root_loss": 218
+      }
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/RoleReindexMissingInjectivity.lean",
+      "sha256": "17ec95ac53d0bae0c68e1c0ebac8389d906c7949dbbd1b5ef05dc24e804a645f",
+      "bytes": 841,
+      "archive": ".local/reindex-density-source-scout/7141bac342214855845ce5db1746e39b/frozen-local/GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/RoleReindexMissingInjectivity.lean",
+      "declarations": {}
+    }
+  ],
+  "pinned_mathlib": [
+    {
+      "repository": "leanprover-community/mathlib4",
+      "pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "path": "Mathlib/Combinatorics/Quiver/Prefunctor.lean",
+      "local_path": ".lake/packages/mathlib/Mathlib/Combinatorics/Quiver/Prefunctor.lean",
+      "archive": ".local/reindex-density-source-scout/7141bac342214855845ce5db1746e39b/mathlib/Mathlib/Combinatorics/Quiver/Prefunctor.lean",
+      "sha256": "898e728292408f11a78e9545e062d2adc4e1165942e33dbe9ceff3fced3b7a04",
+      "git_blob": "0ea71146820086ecab50db17381aab747bbe0391",
+      "bytes": 4364,
+      "header_credit": "/-\nCopyright (c) 2021 David Wärn. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: David Wärn, Kim Morrison\n-/\nmodule",
+      "native_status": "NOT_RUN"
+    },
+    {
+      "repository": "leanprover-community/mathlib4",
+      "pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "path": "Mathlib/Combinatorics/Quiver/Path.lean",
+      "local_path": ".lake/packages/mathlib/Mathlib/Combinatorics/Quiver/Path.lean",
+      "archive": ".local/reindex-density-source-scout/7141bac342214855845ce5db1746e39b/mathlib/Mathlib/Combinatorics/Quiver/Path.lean",
+      "sha256": "9528a3551a251e8e72c253dca4a8854657fb4a9e74af440379af67cc7f419e2a",
+      "git_blob": "0795ef0ea0af951cfed9678e9b207d9a25c205d8",
+      "bytes": 14161,
+      "header_credit": "/-\nCopyright (c) 2021 David Wärn,. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: David Wärn, Kim Morrison, Matteo Cipollina, Runtian Zhou\n-/\nmodule",
+      "native_status": "NOT_RUN"
+    },
+    {
+      "repository": "leanprover-community/mathlib4",
+      "pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "path": ".lake/packages/mathlib/Mathlib/Logic/Equiv/Basic.lean",
+      "sha256": "5b69b238b9fb70f3b1fdede5be53fa5d69047943bf1b1e36162f37de71b67cc8",
+      "bytes": 44235,
+      "git_blob": "15df8adf560a48e8eb5f83854967893b909b3951",
+      "archive": ".local/reindex-density-source-scout/7141bac342214855845ce5db1746e39b/mathlib/Mathlib/Logic/Equiv/Basic.lean",
+      "header_credit": "/-\nCopyright (c) 2015 Microsoft Corporation. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: Leonardo de Moura, Mario Carneiro\n-/\nmodule",
+      "native_status": "NOT_RUN"
+    },
+    {
+      "repository": "leanprover-community/mathlib4",
+      "pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "path": ".lake/packages/mathlib/Mathlib/Data/List/Basic.lean",
+      "sha256": "a5490adaf9886c84cf0ffad009267ea9324bfa6c9b81b529454158c19eedd501",
+      "bytes": 43674,
+      "git_blob": "3e4a92e1a882c202d73c4f7066151a926a7fe4cc",
+      "archive": ".local/reindex-density-source-scout/7141bac342214855845ce5db1746e39b/mathlib/Mathlib/Data/List/Basic.lean",
+      "header_credit": "/-\nCopyright (c) 2014 Parikshit Khanna. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: Parikshit Khanna, Jeremy Avigad, Leonardo de Moura, Floris van Doorn, Mario Carneiro\n-/\nmodule",
+      "native_status": "NOT_RUN"
+    }
+  ],
+  "reused_actual_sources": {
+    "hashes": {
+      "GRWTSK/Combinatorics/DirectedGraph/RoleRelationTable.lean": "52940e0c878e9d9329e74455da71dc829d643b629c8997332e8a70e458abb7b2",
+      "GRWTSK/Combinatorics/DirectedGraph/EdgeTrace.lean": "e1e5f2dd23b6c04a734af4bd95f3f19c15fe4f313d66c5bccff08b3312fb2a59",
+      "GRWTSK/Combinatorics/DirectedGraph/PrefixTableState.lean": "bc2398f5aae427a813c22b6025b9ca41c99c6bbfb9b9228ce49d1326a9870c3a",
+      "GRWTSK/Combinatorics/DirectedGraph/PrefixTableCompaction.lean": "fe95a8c59bb0a1e1e9a2a4eba1e5405deb4bcabac3159e0aefcd3db364aad56f",
+      "GRWTSK/Logic/FiniteSequences/IndexedDictionary.lean": "c01e5ff8067d652cafb42260ae283786c8cb78710c73eb23079a54bd05fbedff",
+      "GRWTSK/Logic/FiniteSequences/DecisionCertificate.lean": "d7ce67b4eacedb2d84a958636c55cd0ed75be869f552377163c0832449dc0990",
+      ".lake/packages/mathlib/Mathlib/Combinatorics/Quiver/Basic.lean": "f77135699f522ea3d41d4eb015a191676663c4b5f52315c82f5a3545dfb47645",
+      ".lake/packages/mathlib/Mathlib/Combinatorics/Quiver/Prefunctor.lean": "898e728292408f11a78e9545e062d2adc4e1165942e33dbe9ceff3fced3b7a04",
+      ".lake/packages/mathlib/Mathlib/Combinatorics/Quiver/Path.lean": "9528a3551a251e8e72c253dca4a8854657fb4a9e74af440379af67cc7f419e2a",
+      ".lake/packages/mathlib/Mathlib/Logic/Equiv/Basic.lean": "5b69b238b9fb70f3b1fdede5be53fa5d69047943bf1b1e36162f37de71b67cc8",
+      ".lake/packages/mathlib/Mathlib/Data/List/Basic.lean": "a5490adaf9886c84cf0ffad009267ea9324bfa6c9b81b529454158c19eedd501"
+    },
+    "mathlib_pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "anchors": [
+      "Mathlib Quiver.Prefunctor actual structure/map/obj; Quiver.Path mapPath360, mapPath_comp373, mapPath_toPath378",
+      "Mathlib Logic.Equiv.Basic swap639/apply_left655/apply_right659/apply_self704; actual finite swap fixture",
+      "Mathlib List.Basic map_injective_iff750; actual qualified-ID injection reflects chronological lists",
+      "Existing RoleRelationTable actual encode/decode/injective/ValidFrom and DecisionCertificate.reuse_of_same_decoding70 with its own unpack_packed48"
+    ],
+    "credit": "Mathlib Quiver Basic/Prefunctor/Path: David Wärn, Kim Morrison; Logic.Equiv.Basic: Leonardo de Moura, Mario Carneiro; List.Basic: Parikshit Khanna, Jeremy Avigad, Leonardo de Moura, Floris van Doorn, Mario Carneiro. Apache-2.0; local MIT and individual source credits retained.",
+    "duplicate_boundary": "No new path datatype or assumed codec/commuting law. Relation-index reindexing is separate from parent-dictionary numeric slots. Arbitrary stored-state transport remains next gate."
+  },
+  "actual_Anthropic_primary": [
+    {
+      "repository": "anthropics/formal-math",
+      "pin": "e1a4e6508154ea59f030480661590a9fe3018011",
+      "path": "3sum-apsp/ThreeSumApsp/Sec3/Theorem21b/PathsAndWalks.lean",
+      "url": "https://raw.githubusercontent.com/anthropics/formal-math/e1a4e6508154ea59f030480661590a9fe3018011/3sum-apsp/ThreeSumApsp/Sec3/Theorem21b/PathsAndWalks.lean",
+      "archive": ".local/reindex-density-source-scout/7141bac342214855845ce5db1746e39b/AnthropicPathsAndWalks.lean",
+      "sha256": "dd2e0d199859027fc481934d523853fe12757d63daf929ec849f4db70d65c363",
+      "git_blob": "9c81a4c44bf54ff9180199bfc4d0bdf564718927",
+      "bytes": 5628,
+      "retrieved_utc": "2026-10-15T23:04:20.800731+00:00",
+      "declarations": {
+        "exists_walk_of_path": 42,
+        "path_of_walk": 54,
+        "noNegativeCycle_toTop": 76,
+        "dist_le_of_path": 89,
+        "not_path_of_dist_eq_top": 94,
+        "isLeast_path_of_dist_eq_coe": 102,
+        "reachable_or_not": 117,
+        "output_apsp": 129
+      },
+      "native_status": "NOT_RUN"
+    }
+  ],
+  "anthropic_comparison": "Actual weighted endpoint-pair Option-integer graph path/walk bridge is a different object, not parallel role-qualified IDs, table reindexing or codec naturality. Its finite-weight premise and actual source-language statements are retained; no direct theorem or source acceptance transfer.",
+  "arxiv_primary": {
+    "title": "Unfoldings and Coverings of Weighted Graphs",
+    "authors": [
+      "Bruno Courcelle"
+    ],
+    "id": "2212.07205v3",
+    "version_utc": "2023-06-13T12:23:51Z",
+    "url": "https://arxiv.org/html/2212.07205v3",
+    "snapshot": {
+      "path": ".local/endpoint-dyadic-source-scout/c84ff313d7694097b4d2d5925551ed37/courcelle-2212.07205v3.html",
+      "url": "https://arxiv.org/html/2212.07205v3",
+      "sha256": "c7bac0f90422a8d891b8333e9ee434aec2f93b733e9d872f893189d22efc03cf",
+      "git_blob": null,
+      "bytes": 1196648
+    },
+    "selected_scope": "Fresh read §2.3 and §3.1 Theorem3.5(1) proof of rooted finite directed walk-prefix unfolding; no broad survey repeated.",
+    "comparison": "Construction context only: no endpoint-section preservation theorem imported. Paper finite/countable rooted graph hypotheses and directed walk/path terminology differ from arbitrary local typed quivers. Local right inverse can exist while reachability preservation fails; no paper full covering/universal property transfer.",
+    "license": "arXiv nonexclusive distribution license; citation/paraphrase only, not code reuse license.",
+    "fresh_selected_scope": "Fresh primary §2.2 definitions134-147: explicit arc IDs, parallel arcs, directed walks by chronological arc sequence, ambiguity of empty arc word without retained vertex. No paper unfolding theorem or role-ID parser imported.",
+    "critical_boundary": "Paper unfolding requires rooted weighted graph surjection/outgoing coverage. An arbitrary finite inventory of selected typed histories need not be an i-unfolding and no source-graph reachability/coverage property follows. Stored-state table iteration is distinct from composition of unfolding homomorphisms."
+  },
+  "arxiv_comparison": "Fresh Courcelle2212.07205v3 section2.2 incidence/root-preserving graph homomorphism terminology supplies context. It does not give the actual finite row equalities, index injectivity, typed codec commuting proof, partial preimage or rooted certificate restoration. Paper rooted/countable/covering premises do not transfer.",
+  "openai_primary_boundary": "This round exact OpenAI DensityBudget/TailBudget analytic objects are separately reviewed; no invented matching OpenAI relation-table-reindex theorem.",
+  "finding": "No actionable omitted row-preservation, injectivity, inverse/common-payload or externally retained-root premise observed in the frozen three reindex sources.",
+  "exact_scope": {
+    "actual_map": "Reindex stores actual Fin n→Fin m and equality of new.source/target/kind at every image with old row values. Actual qualified-ID map, wrapper vertex map and quiver prefunctor are constructed from those witnesses. Vertex map preserves underlying V, not equality of differently typed old/new wrappers.",
+    "naturality_hypotheses": "Source/target/kind preservation alone gives actual typed path map, encodePath/encode naturality, derived ValidFrom transport, proved actual decode commutation and finish/endpoint preservation. These laws do NOT silently require injectivity or assume commuting serializer. No new path datatype.",
+    "identity_reflection": "Only additional Function.Injective actual index gives qualified-ID and actual rooted-path injectivity. Equal endpoints/roles/bounds are insufficient, as full semantic collapse is proved in controls.",
+    "inverse": "Only Function.Bijective actual index constructs a global inverse Reindex with actual endpoint/role witnesses, inverse qualified-ID laws, path-star equivalence and inverse ordered row law. Injection only has no automatic old preimage for added relations.",
+    "actual_pack_producer": "mappedPathRows maps actual typed old paths then encodes with actual new codec; proved equal to actual old encoded rows mapped through qualified index translation. mappedPacked is actual pack of those rows; keys/order/repeated histories are preserved. This is NOT arbitrary stored PrefixTableState transport.",
+    "root_context": "mappedPacked stores new qualified-ID words, NOT the outer root. restorePacked takes the retained underlying V root EXTERNALLY, actually unpacks numeric references, inverse-maps rows and root-lifts/re-packs common OLD payload. Even entirely empty data needs that retained source context. It is not a root decoder or hostile root/join/snapshot validator.",
+    "criterion": "restore_mappedPacked proves restoration only for actual mapped typed-path producer, not every arbitrary new pack. certified_reindex requires bijection, retained actual root, explicit old certificate/entries binding and its criterion/evidence; actual common old rooted payload is repacked before own-pack reuse_of_same_decoding. No direct old/new differently typed numeric payload equality.",
+    "equality_requirements": "No finite V or DecidableEq V required for core map/naturality/path inverse. DecidableEq V is required for actual common-rooted payload repacking/certificate consumer; local role-ID equality is handled mathematically.",
+    "not_claimed": "No standalone fullEdge-expansion naturality theorem, arbitrary parent-state transport/compaction correspondence, relation-number stability, new criteria, runtime serialization/authentication or policy authority."
+  },
+  "controls": {
+    "swap": "Actual Fin4 swap0/2 and new table contents pulled back. Actual old [0,2,1] maps/decodes [2,0,1] with same underlying endpoint; actual inverse returns original typed path. Stale numeric [0,2,1] fails initial root in new table despite bounds/selected role.",
+    "collapse": "Actual parallel0/1 collapse preserves source,target,kind but is proved noninjective; qualified IDs noninjective and distinct actual one-edge paths become equal. Sole negative supplies source equality as Function.Injective evidence; false identity-reflection already proved in positive source.",
+    "role": "Actual2→3 has equal endpoints but fails role equality, distinguishing role from endpoint preservation.",
+    "rows_certificate": "Actual repeated-key/repeated-history mapped rows are packed and actually unpacked. Actual inverse common OLD rooted repack precedes old supplied criterion reuse via own actual pack roundtrip.",
+    "empty_root_loss": "Named empty_new_packet_root_loss proves empty new ID packs at two distinct roots are equal while mapped-root values differ. This preserves explicit external-root boundary; empty encoded words do not recover root.",
+    "history": "Author retained earlier775-declaration positive variant before named empty packet control; final776 author census/source bytes are bound here, not retroactively rebound. Native counts/diagnostics remain root-owned."
+  },
+  "credit_limits": [
+    "Local MIT, grwtsk contributors direction/OpenAI Codex formal assistance retained. Mathlib Quiver David Wärn/Kim Morrison; Equiv Leonardo de Moura/Mario Carneiro; List Parikshit Khanna/Jeremy Avigad/Leonardo de Moura/Floris van Doorn/Mario Carneiro, Apache-2.0 exact headers bound.",
+    "Actual Anthropic source projectApache-2.0 and arxiv nonexclusive citation context retained; no direct corresponding codec or mathematical admission inferred.",
+    "No Python/JSON/hash/zlib/IO parser refinement, source authenticity, new-row criterion inheritance, automatic external-ID stability or taxonomy duplicate-guard change.",
+    "No shared source/docs/registries/native/Git/remote writes; all failed/stale/source-gap/anchor records and incoming custody/NOT_RUN preserved."
+  ]
+}

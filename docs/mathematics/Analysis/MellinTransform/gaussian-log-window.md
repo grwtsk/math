@@ -37,6 +37,13 @@ replace that evidence with an unrelated nonnegativity proof. The compact
 window construction itself is valid at every real $R$; the positive-profile
 identity and the stated uniform power bound retain $R>0$.
 
+The [actual density-moment sums](gaussian-density-moments.md) now consume
+this exact Fourier-density producer. They prove weighted dyadic summability
+and uniform bounds, together with remote cutoff bounds. A nonzero-window
+and Fourier-inverse argument supplies actual positive norm integral and a
+complete zero-cutoff obstruction. This is a different quantity from the
+prior finite-seminorm sums.
+
 ## Source, verification and limits
 
 The [source](../../../../GRWTSK/Analysis/MellinTransform/GaussianLogWindow.lean),

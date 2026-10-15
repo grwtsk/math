@@ -1,0 +1,56 @@
+{
+  "schema": "bounded-replay-operational-controls-v1",
+  "at": "2026-10-15T23:16:46.495976+00:00",
+  "sources": [
+    {
+      "path": "scripts/check_role_relation_reindex.py",
+      "sha256": "db6e7b902553ea927295dae0eb2c312aece804e84118f81086c16c0833df7d18"
+    },
+    {
+      "path": "scripts/check_gaussian_density_moments.py",
+      "sha256": "caac3e516ae6c5a251272e8cf101485cb4cf71aaf67e0857c35c6dbc5f584b28"
+    },
+    {
+      "path": "scripts/test_reindex_density_replay_guards.py",
+      "sha256": "d77c079afd2024490a3988e4040edd061abd396a7b5abe07661d9d9d58fb6306"
+    },
+    {
+      "path": "scripts/check_math_trust.py",
+      "sha256": "069ca265038960243890b1c4e028637723ddc440854864a61648eb2b2fd99c9d"
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "scripts/test_reindex_density_replay_guards.py"
+      ],
+      "exit_code": 0,
+      "log": {
+        "path": ".local/reindex-density/root/replay-guards-normal.log",
+        "sha256": "6c6e85bc8f2cebb86c2395ab2385844c501d4b0d4b69a48a9082d6ecce781600"
+      },
+      "output": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.030s\n\nOK\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "-O",
+        "scripts/test_reindex_density_replay_guards.py"
+      ],
+      "exit_code": 0,
+      "log": {
+        "path": ".local/reindex-density/root/replay-guards-optimized.log",
+        "sha256": "f3874f1bc83a634fd04abbf35e717328a24a73dc1cffe20a6972ccd456a246ac"
+      },
+      "output": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.046s\n\nOK\n"
+    }
+  ],
+  "controls": [
+    "Two drivers times9 exact generated-object-family scenarios: unchanged accepted; main replacement/truncation/deletion, private replacement/deletion, extra server and main/private symlinks rejected.",
+    "Plain/coded diagnostics counted; actual negative compiles require exactly one intended type mismatch."
+  ],
+  "limits": "Bounded Python operational tests only; no Lean proof of hashes/filesystem/diagnostic parser/runtime codec/JSON/zlib/IO refinement. Correlated review is not independent validation."
+}
