@@ -55,6 +55,11 @@ JSON rows to this Lean equivalence remains open. Taxonomy/classification
 candidates retain `NOT_RUN`; the 16 declared method families do not provide
 the missing 215 individual method identities.
 
+The separate [path unfolding](path-unfolding.md) constructs the arborescence
+of all rooted history occurrences with exact outgoing lifts and reachable
+endpoint image. That source has its own native receipt; it does not replace
+the valid-list equivalence or its binding on this page.
+
 ## Source, verification and credit
 
 The [source](../../../../GRWTSK/Combinatorics/DirectedGraph/EdgeTrace.lean),

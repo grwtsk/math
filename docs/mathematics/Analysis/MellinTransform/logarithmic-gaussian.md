@@ -33,6 +33,11 @@ this particular Mellin transform is never zero, using the exact exponential
 formula. This nonvanishing statement concerns the specified Gaussian transform;
 it supplies no zeta or Dirichlet zero-free result.
 
+The [normalized Gaussian pair](normalized-gaussian.md) is an actual consumer
+at width $b=1/4$, paying its exact principal-root scalar coefficient and
+proving the contour-inversion inputs. Its OpenAI profile, normalization and
+native receipt are separate from this general formula and its $b=\pi$ consumer.
+
 ## Why strict decay remains
 
 At width $b=0$, the actual profile is the constant one function. The checked

@@ -1,0 +1,36 @@
+{
+  "schema": "repository-design-decision-v1",
+  "id": "path-unfolding-v1",
+  "at": "2026-10-15T20:01:01.237745+00:00",
+  "previous_record": {
+    "path": "cache/decisions/typed-edge-traces-v1.json",
+    "sha256": "f9fda316625ceb6db79ca757722176986fb2b9799109288bdb8a4da0369f31e6"
+  },
+  "choice": "Retain all rooted exact path occurrences and actual edge extension identities. Project occurrences to source endpoints without merging different histories.",
+  "premises": [
+    "Fixed root and existing Quiver.PathStar; exact base arrow and equality of appended history on every extension.",
+    "Outgoing local bijection supplies unique finite lifts; vertex coverage is only the reachable image.",
+    "Full covering also requires incoming-star bijections; the empty occurrence cannot provide an incoming lift."
+  ],
+  "native_evidence": [
+    {
+      "path": "evidence/Combinatorics/DirectedGraph/path-unfolding-integration-2026-10-15.json",
+      "sha256": "bf72e8c4a34fbab79e4290d328153b5efb2e6501d2853ee25a36e76bbbe9f144"
+    }
+  ],
+  "checked_counterexamples": [
+    "Distinct parallel/repeated source walks remain distinct occurrences.",
+    "Single Unit loop has outgoing bijections but no full covering at the empty occurrence."
+  ],
+  "operational_evidence": {
+    "path": "evidence/Combinatorics/DirectedGraph/unfolding-operational-controls-2026-10-15.json",
+    "sha256": "aadbf641bcc96ad0c67eff8dbf15f3bbc5a03a61afe2f9e10e6176ebe9c5ce27"
+  },
+  "separate_open_obligations": [
+    "Complete typed trace prefix and occurrence reachability equivalence.",
+    "Endpoint preserving source sections/retractions and explicit limits on ancestry reflection.",
+    "Exact Lean/runtime relation graph refinement; source custody/taxonomy authority remains separate.",
+    "215 method identities not supplied; retain16 declared facets without inventing records."
+  ],
+  "authority": "Durable local mathematical/design decision; no new permission or remote effect. Noncomputable mathematical maps are not executable expansion machinery."
+}

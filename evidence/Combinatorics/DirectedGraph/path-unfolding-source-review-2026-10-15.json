@@ -1,0 +1,234 @@
+{
+  "schema": "bounded-mathematical-source-review-v1",
+  "task": "unfolding-gaussian-source-scout",
+  "status": "BOUNDED_CORRELATED_SOURCE_REVIEW_COMPLETE_NATIVE_NOT_RUN_BY_REVIEWER",
+  "review_boundary": {
+    "review_kind": "Correlated same-team/model mathematical source and premise inspection; not independent validation.",
+    "native_lean": "NOT_RUN by this source scout. Root fresh kernel replay and complete owned/transitive axiom census are separate evidence.",
+    "authority": "No theorem admission, permission/policy authority, executable JSON codec or IO/hash/compression refinement is conferred.",
+    "immutability": "Final evidence is written once only after exact author freeze; prior receipts and failures remain unchanged."
+  },
+  "fresh_source_manifest": {
+    "path": ".local/unfolding-gaussian-source-scout/32c21633e0a0432897125ba843556052/inspection-manifest.json",
+    "sha256": "660969b106edba06ff1d19e5587946042789e8363917876c105d1ee8ff8f8fca"
+  },
+  "mathlib_manifest": {
+    "path": ".local/unfolding-gaussian-source-scout/32c21633e0a0432897125ba843556052/mathlib-inspection-manifest.json",
+    "sha256": "44ea1fa183530acaf039d592f2c552e9ebf0d2abcb056af57efd7e5d02f36a16"
+  },
+  "final_bindings": [
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/PathUnfolding.lean",
+      "sha256": "8d5e2187d705ab49c52a41779b48b445d0baa223c3608ea6495e670ddac24757",
+      "bytes": 10317,
+      "archive": ".local/unfolding-gaussian-source-scout/32c21633e0a0432897125ba843556052/frozen-local/GRWTSK/Combinatorics/DirectedGraph/PathUnfolding.lean",
+      "declaration_anchors": {
+        "Occurrence": 41,
+        "Occurrence.endpoint": 47,
+        "Occurrence.path": 50,
+        "ofPath": 55,
+        "ofPath_path": 58,
+        "origin": 63,
+        "extend": 66,
+        "Extension": 70,
+        "step": 76,
+        "projection": 80,
+        "projection_step": 85,
+        "extension_length": 88,
+        "extension_height_lt": 92,
+        "unique_incoming": 98,
+        "root_or_incoming": 113,
+        "unfoldingArborescence": 122,
+        "uniqueRootPath": 129,
+        "liftHistory": 133,
+        "projection_liftHistory": 138,
+        "ofPath_comp_projection": 148,
+        "outgoingStarEquiv": 160,
+        "outgoing_star_bijective": 173,
+        "path_star_bijective": 177,
+        "unique_finite_lift": 181,
+        "endpoint_range_iff": 186,
+        "endpoint_surjective_iff": 194,
+        "no_arrow_into_origin": 203,
+        "empty_origin_costar": 207,
+        "origin_costar_not_surjective": 210,
+        "not_covering_of_incoming": 217
+      }
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PathUnfolding.lean",
+      "sha256": "81c0c9fd724a7eda6038ed3e24edf24e08280377f39b72c06152f508327dc438",
+      "bytes": 4940,
+      "archive": ".local/unfolding-gaussian-source-scout/32c21633e0a0432897125ba843556052/frozen-local/GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PathUnfolding.lean",
+      "declaration_anchors": {
+        "firstOccurrence": 39,
+        "otherOccurrence": 42,
+        "twiceOccurrence": 45,
+        "twoStepLift": 48,
+        "twoBaseEdges": 52,
+        "parallel_occurrences_distinct": 55,
+        "repeated_base_vertices_distinct": 62,
+        "single_loop_outgoing_bijective": 96,
+        "single_loop_empty_origin_costar": 100,
+        "single_loop_costar_not_surjective": 103,
+        "single_loop_not_covering": 107
+      }
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/UnfoldingMissingCostar.lean",
+      "sha256": "d76888ed8dbf6e9126dc4d13971158b770092b86dbe991b0b62fde7302304b65",
+      "bytes": 714,
+      "archive": ".local/unfolding-gaussian-source-scout/32c21633e0a0432897125ba843556052/frozen-local/GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/UnfoldingMissingCostar.lean",
+      "declaration_anchors": {}
+    }
+  ],
+  "mathematical_object": "Fixed-root all-finite-occurrence path extension quiver",
+  "exact_mathematical_review": [
+    "Occurrence root wraps existing dependent PathStar root; Extension source target retains an actual typed base edge and equality of target occurrence with parent history.cons edge. Endpoint-only or vertex-list equality never replaces arrow identity.",
+    "Extension increases original history length by one. Unique incoming parent/last arrow follows from actual Path constructor injectivity; nil/cons analysis supplies root-or-parent. These are the precise premises of upstream arborescenceMk, rather than an assumed tree invariant.",
+    "OutgoingStarEquiv is actual edge projection with inverse canonical extension by that edge. Upstream Prefunctor.pathStar_bijective needs only outgoing star bijections, and yields unique finite path lifting from every chosen occurrence.",
+    "ofPath_comp_projection proves any actual lifted path ends at the occurrence whose stored history is source.path composed with its actual projected path. This is an equality of actual existing paths/occurrences, beyond an abstract fresh tree or merely vertex reachability.",
+    "Endpoint image is exactly base vertices with Nonempty(Path root target); full endpoint surjectivity is equivalent to that reachability condition. Generic statements need neither global reachability nor finiteness, countability, acyclicity, thin Hom, or decidable equality.",
+    "Every extension raises length, so empty occurrence has no incoming edge. Any base incoming edge at the root obstructs costar surjectivity and hence full IsCovering. Outgoing lifting does not discharge this missing costar premise."
+  ],
+  "exact_pinned_mathlib_apis": [
+    {
+      "repository": "leanprover-community/mathlib4",
+      "pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "path": "Mathlib/Combinatorics/Quiver/Covering.lean",
+      "local_path": ".lake/packages/mathlib/Mathlib/Combinatorics/Quiver/Covering.lean",
+      "archive": ".local/unfolding-gaussian-source-scout/32c21633e0a0432897125ba843556052/mathlib/Mathlib/Combinatorics/Quiver/Covering.lean",
+      "sha256": "cd917cebf3f69c14dd2596343577ddfa07783b1b73bd4e0e91a20b1a1be30f59",
+      "git_blob": "53e9578ba5240afa7bf29ab12345e7af7a23b7d1",
+      "bytes": 12221,
+      "header": "/-\nCopyright (c) 2022 Antoine Labelle, R\u00e9mi Bottinelli. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: Antoine Labelle, R\u00e9mi Bottinelli\n-/"
+    },
+    {
+      "repository": "leanprover-community/mathlib4",
+      "pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "path": "Mathlib/Combinatorics/Quiver/Arborescence.lean",
+      "local_path": ".lake/packages/mathlib/Mathlib/Combinatorics/Quiver/Arborescence.lean",
+      "archive": ".local/unfolding-gaussian-source-scout/32c21633e0a0432897125ba843556052/mathlib/Mathlib/Combinatorics/Quiver/Arborescence.lean",
+      "sha256": "67cf4c2b462a1ab0b9f7797ab97cddf4e3769345149bca47cee4b9d5cf733d40",
+      "git_blob": "063ffb6f43e8881518a20bc5369bf0bc3ba2b9f7",
+      "bytes": 5278,
+      "header": "/-\nCopyright (c) 2021 David W\u00e4rn. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: David W\u00e4rn\n-/"
+    },
+    {
+      "repository": "leanprover-community/mathlib4",
+      "pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "path": "Mathlib/Combinatorics/Quiver/Path.lean",
+      "local_path": ".lake/packages/mathlib/Mathlib/Combinatorics/Quiver/Path.lean",
+      "archive": ".local/unfolding-gaussian-source-scout/32c21633e0a0432897125ba843556052/mathlib/Mathlib/Combinatorics/Quiver/Path.lean",
+      "sha256": "9528a3551a251e8e72c253dca4a8854657fb4a9e74af440379af67cc7f419e2a",
+      "git_blob": "0795ef0ea0af951cfed9678e9b207d9a25c205d8",
+      "bytes": 14161,
+      "header": "/-\nCopyright (c) 2021 David W\u00e4rn,. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: David W\u00e4rn, Kim Morrison, Matteo Cipollina, Runtian Zhou\n-/"
+    }
+  ],
+  "fresh_primary_arxiv": [
+    {
+      "repository": "arxiv",
+      "pin_or_version": "2212.07205v3",
+      "path": "2212.07205v3.pdf",
+      "url": "https://arxiv.org/pdf/2212.07205v3",
+      "archive": ".local/unfolding-gaussian-source-scout/32c21633e0a0432897125ba843556052/arxiv/2212.07205v3.pdf",
+      "sha256": "a9796843746b008e5a05edc8dbecc29a9f553fbf53d635b36a52d30732179f37",
+      "bytes": 1025637,
+      "git_blob": null,
+      "expected_git_blob": null,
+      "title": "Unfoldings and coverings of weighted graphs",
+      "authors": [
+        "Bruno Courcelle"
+      ],
+      "submitted_version_at": "2023-06-13T12:23:51Z",
+      "first_version_at": "2022-12-14T13:08:11Z",
+      "abstract_url": "https://arxiv.org/abs/2212.07205v3",
+      "html_url": "https://arxiv.org/html/2212.07205v3",
+      "license": {
+        "label": "arXiv perpetual nonexclusive distribution license",
+        "url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+        "scope": "Distribution of article; not an Apache/CC code-license grant. Citation/paraphrase only, no proof text ported."
+      },
+      "selected_sections": [
+        "2.1 sets finite or countable",
+        "2.2 directed walks versus paths and rooted reachability",
+        "3.1 Definition3.2 and Theorem3.5 proof"
+      ],
+      "correspondence": "The complete-unfolding construction uses finite directed walks, prefix father, and endpoint/last-arc projection. Directed unfolding uses outgoing neighbourhoods.",
+      "limits": "Paper globally restricts sets to finite/countable and rooted base requires every vertex reachable. Generic Lean quiver construction has no cardinality bound and covers exactly root-reachable base vertices. Paper path forbids repeats; its walk matches Lean Path. No weighted factorization, regularity, finite quotient, categorical universality or full covering theorem is transferred."
+    }
+  ],
+  "official_anthropic_source_scout": {
+    "source": {
+      "repository": "anthropics/formal-math",
+      "pin_or_version": "e1a4e6508154ea59f030480661590a9fe3018011",
+      "path": "3sum-apsp/ThreeSumApsp/Sec3/Theorem21b/PathsAndWalks.lean",
+      "url": "https://raw.githubusercontent.com/anthropics/formal-math/e1a4e6508154ea59f030480661590a9fe3018011/3sum-apsp/ThreeSumApsp/Sec3/Theorem21b/PathsAndWalks.lean",
+      "archive": ".local/unfolding-gaussian-source-scout/32c21633e0a0432897125ba843556052/anthropics/formal-math/3sum-apsp/ThreeSumApsp/Sec3/Theorem21b/PathsAndWalks.lean",
+      "sha256": "dd2e0d199859027fc481934d523853fe12757d63daf929ec849f4db70d65c363",
+      "bytes": 5628,
+      "git_blob": "9c81a4c44bf54ff9180199bfc4d0bdf564718927",
+      "expected_git_blob": "9c81a4c44bf54ff9180199bfc4d0bdf564718927"
+    },
+    "license": {
+      "repository": "anthropics/formal-math",
+      "pin_or_version": "e1a4e6508154ea59f030480661590a9fe3018011",
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/anthropics/formal-math/e1a4e6508154ea59f030480661590a9fe3018011/LICENSE",
+      "archive": ".local/unfolding-gaussian-source-scout/32c21633e0a0432897125ba843556052/anthropics/formal-math/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357,
+      "git_blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "expected_git_blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+    },
+    "source_copyright": "2026 Anthropic PBC, Apache-2.0. Source does not name an individual Lean author. Paper authors Josh Alman and Virginia Vassilevska Williams per source README; no authorship invented.",
+    "selected_declarations": {
+      "ThreeSumApsp.exists_walk_of_path": 42,
+      "ThreeSumApsp.path_of_walk": 54,
+      "ThreeSumApsp.noNegativeCycle_toTop": 76
+    },
+    "exact_scope": "Fin n vertices and w:Fin n->Fin n->Option Int. Selected theorems connect endpoint/weight path predicates with weighted vertex walks and finite-weight/no-negative-cycle premises. They do not encode arbitrary parallel dependent arrows, all-occurrence unfolding or outgoing-star bijection.",
+    "bounded_absence": "Actual selected file read and pinned complete-tree path-name scout; no global absence claim or native source acceptance."
+  },
+  "duplicate_and_coverage_limits": [
+    "Pinned Mathlib Arborescence.geodesicSubtree:116/geodesicArborescence:120 select one shortest path inside the base graph, unlike all histories.",
+    "Bounded symbol search in pinned Mathlib and existing DirectedGraph source found no previous PathStar extension quiver. This is not an exhaustive absence or novelty proof.",
+    "Covering.isCovering_of_bijective_star:296 requires source/target HasInvolutiveReverse and Prefunctor.MapReverse; it cannot be transferred to length-increasing extension quivers."
+  ],
+  "actual_controls": {
+    "positive_module": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PathUnfolding.lean",
+    "parallel_loop_model": "SingleObj.star Bool: one base vertex with two actual parallel Bool loop arrows. firstOccurrence/otherOccurrence have same endpoint/vertex list and provably unequal full histories. origin, first, twice occurrences have different history lengths despite same endpoint.",
+    "actual_lift": "twoStepLift is an actual length2 extension path; projection equals actual false-then-true base path; canonical liftHistory agrees and ofPath recovers the target occurrence. Generic arborescence/uniqueRootPath/reachable-range/unique-finite-lift/append recovery consumers occur in the same positive source.",
+    "single_loop_counterexample": "Separate SingleObj.star Unit actual one-loop model proves outgoing-star bijectivity, empty origin costar, failed origin costar surjectivity and failed full covering. Named proof declarations reside in the positive module.",
+    "negative_module": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/UnfoldingMissingCostar.lean",
+    "intended_rejection": "At line14 the negative attempts (projection (SingleObj.star Unit)).IsCovering := single_loop_outgoing_bijective; a star-bijection family cannot inhabit the full two-sided covering structure.",
+    "negative_boundary": "Negative imports the positive counterexample module. No failed-whole-file theorem proof or derived negative-prefix acceptance is claimed. Root must separately validate intended diagnostic and census all owned positive declarations.",
+    "review_result": "No actionable mathematical premise/control omission observed in these exact frozen sources."
+  },
+  "guide_review": {
+    "path": "docs/mathematics/Combinatorics/DirectedGraph/path-unfolding.md",
+    "sha256": "dccc5abeebf9da76a4e82a7791d7728e95eea598b345de0da6149e56a8b62718",
+    "scope": "Read-only mathematical/citation review at these draft bytes. Exact reachable-image, directed walks, missing costar, non-executable/universal-property limits and standard-source credit are accurately stated. Verification/receipt paragraphs are integration drafts pending root evidence; this review does not establish their acceptance."
+  },
+  "remaining_limits": [
+    "No weighted-graph, finite quotient/regularity, categorical universal property, non-backtracking universal cover, source refinement or policy claim follows.",
+    "Incoming taxonomy/classification candidate native statuses remain unchanged; operational cache sidecar is separate."
+  ],
+  "at": "2026-10-15T19:55:29.364974+00:00",
+  "author_freeze": {
+    "path": "cache/coordination/events/20261015T195416Z-path-unfolding-complete-721c784c.json",
+    "sha256": "8368fad098b198091f7b5899cb30b58bdf467396cd170793bad398d2e3d94eb0",
+    "status": "Author frozen source/event inspected; native development statements are author reports, not replayed by reviewer."
+  },
+  "attribution": {
+    "local": "Source header: copyright2026 grwtsk contributors; MIT; human mathematical direction grwtsk contributors, OpenAI Codex formalization assistance.",
+    "upstream": "Mathlib Apache2.0 with exact individual authors retained in captured primary headers; Courcelle article cited as standard construction context, not source-code/proof port.",
+    "dependency_boundary": "Actual library imports pinned Mathlib Arborescence and Covering directly; it does not import local EdgeTrace/PathOccurrences or turn their prior acceptance into this source acceptance."
+  },
+  "preserved_author_development_evidence": {
+    "completion_event": "cache/coordination/events/20261015T195416Z-path-unfolding-complete-721c784c.json",
+    "scope": "Complete event retains source variants/logs of field namespace/callback elaboration, dependent outgoing-star elimination/rewrite and Nat.noConfusion control attempts. No old failed source hash is rebound here.",
+    "native_audit": "Author reports development census63 (52library+11positive) and no unsafe/partial helpers; this review neither replays nor independently validates it."
+  }
+}

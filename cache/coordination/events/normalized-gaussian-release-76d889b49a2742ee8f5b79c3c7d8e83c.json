@@ -1,0 +1,13 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "normalized-gaussian-formal",
+  "event": "dev-lock-released",
+  "at": "2026-10-15T19:47:22.952056+00:00",
+  "owner": "cache_adapter",
+  "attempt": ".local/normalized-gaussian/aa266caa5e43482598ff0e9092ed1db5/attempts/Scratch-attempt01",
+  "source_sha256": "df17d214ad031b1a6bd329901a27fed63037df8d4e3870566f8245a7f263dc39",
+  "competing_jobs": [],
+  "receipt": ".local/normalized-gaussian/aa266caa5e43482598ff0e9092ed1db5/attempts/Scratch-attempt01.json",
+  "exit_code": 1,
+  "native_jobs_running": 0
+}
