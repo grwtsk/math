@@ -1,0 +1,29 @@
+{
+  "outcome": "OPEN_FRONTIER",
+  "admitted_implication_edges": [],
+  "exact_elaborated_types": null,
+  "partial_written_results": [
+    "Explicit complete-source seed Q_W>=norm2/4 on half-support1/64",
+    "Actual-source coercivity >=norm2/2 after finitely many moments for each fixed support, with executable sufficient constants",
+    "Off-line pair implies exponential negative Rayleigh growth with rate at least b^2/4 along half-support8L"
+  ],
+  "missing_supplier": {
+    "type_description": "For every epsilon>0, exists C_epsilon<infinity, for every A>=1 and compact smooth f supported in [-A,A], Q_W(f)>=-C_epsilon exp(epsilon A)||f||^2",
+    "status": "UNPROVED; sufficient for original RH through written source-identification and compactification argument"
+  },
+  "alternative_finite_task": "Bound the full source Schur block including high-low coupling; finite Galerkin positivity alone insufficient",
+  "native_tasks": [
+    "Compile two candidate real-algebra modules under unchanged pin",
+    "Formalize actual-source Fourier bounds, compactification norm and all-scale return without new axioms",
+    "Complete intended-type and owned/transitive axiom audits"
+  ],
+  "scope_guards": [
+    "No fixed codimension for all support",
+    "Pole-null profile requires actual two exponential constraints",
+    "Synthetic selector costs are not zeta zeros or evaluated Weil integrals",
+    "Positive seed and continuity do not prove global positivity",
+    "Subexponential target is not automatically discharged by exponential lower bound",
+    "No sigma=1/3 milestone promoted to RH"
+  ],
+  "resume_cursor": "Prove source-aware subexponential control of the negative Schur part or a sharper lower bound just for the selected compact tests; preserve all prime powers and completion terms."
+}

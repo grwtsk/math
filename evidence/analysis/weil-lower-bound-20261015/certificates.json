@@ -1,0 +1,213 @@
+{
+  "schema": "weil-lower-bounds-v1",
+  "grade": "WRITTEN_CONTINUUM_AND_EXACT_SCALAR_CHECKS",
+  "seed": {
+    "half_support": "1/64",
+    "source": "complete arithmetic Weil form",
+    "universal_lower_bound": "1/4 * L2_norm_squared",
+    "computed_lower_rounded": "5193875420672146367/18446744073709551616",
+    "prime_powers": [],
+    "pole_null_required": false,
+    "native_admission": false
+  },
+  "complement_profiles": [
+    {
+      "half_support": "1/64",
+      "prime_enumeration_upper": 2,
+      "prime_powers": [],
+      "prime_cost_upper": "0",
+      "polar_cost_upper": "37780469110395078365151/604462909807314587353088",
+      "pole_null_required": false,
+      "vanishing_moments": 6,
+      "frequency_threshold": "64",
+      "arch_lower": "526822847778296361724535/302231454903657293676544",
+      "certified_gap_at_least": "1/2",
+      "scalar_gap_lower_rounded": "30999934186424548077/18446744073709551616",
+      "meaning": "Universal written lower bound on this moment-null subspace; no eigenvalue sampled",
+      "full_source_nonnegative": false,
+      "low_block_or_schur_bound": null
+    },
+    {
+      "half_support": "1/8",
+      "prime_enumeration_upper": 2,
+      "prime_powers": [],
+      "prime_cost_upper": "0",
+      "polar_cost_upper": "606038262208817216445807/1208925819614629174706176",
+      "pole_null_required": false,
+      "vanishing_moments": 48,
+      "frequency_threshold": "64",
+      "arch_lower": "526822847778296361724535/302231454903657293676544",
+      "certified_gap_at_least": "1/2",
+      "scalar_gap_lower_rounded": "22907304823369876563/18446744073709551616",
+      "meaning": "Universal written lower bound on this moment-null subspace; no eigenvalue sampled",
+      "full_source_nonnegative": false,
+      "low_block_or_schur_bound": null
+    },
+    {
+      "half_support": "1/4",
+      "prime_enumeration_upper": 2,
+      "prime_powers": [],
+      "prime_cost_upper": "0",
+      "polar_cost_upper": "610779104284130474670695/604462909807314587353088",
+      "pole_null_required": false,
+      "vanishing_moments": 192,
+      "frequency_threshold": "128",
+      "arch_lower": "368098145578379919096825/151115727451828646838272",
+      "certified_gap_at_least": "1/2",
+      "scalar_gap_lower_rounded": "26294356629314856009/18446744073709551616",
+      "meaning": "Universal written lower bound on this moment-null subspace; no eigenvalue sampled",
+      "full_source_nonnegative": false,
+      "low_block_or_schur_bound": null
+    },
+    {
+      "half_support": "1/2",
+      "prime_enumeration_upper": 3,
+      "prime_powers": [
+        {
+          "n": 2,
+          "prime": 2,
+          "cutoff": "inside",
+          "upper": "1185059379526628168201961/1208925819614629174706176"
+        }
+      ],
+      "prime_cost_upper": "1185059379526628168201961/1208925819614629174706176",
+      "polar_cost_upper": "2519862277165456424349459/1208925819614629174706176",
+      "pole_null_required": false,
+      "vanishing_moments": 3072,
+      "frequency_threshold": "1024",
+      "arch_lower": "5458521430209552109524797/1208925819614629174706176",
+      "certified_gap_at_least": "1/2",
+      "scalar_gap_lower_rounded": "6689452261037702625/4611686018427387904",
+      "meaning": "Universal written lower bound on this moment-null subspace; no eigenvalue sampled",
+      "full_source_nonnegative": false,
+      "low_block_or_schur_bound": null
+    },
+    {
+      "half_support": "1",
+      "prime_enumeration_upper": 8,
+      "prime_powers": [
+        {
+          "n": 2,
+          "prime": 2,
+          "cutoff": "inside",
+          "upper": "1185059379526628168201961/1208925819614629174706176"
+        },
+        {
+          "n": 3,
+          "prime": 3,
+          "cutoff": "inside",
+          "upper": "1533604852366875867608963/1208925819614629174706176"
+        },
+        {
+          "n": 4,
+          "prime": 2,
+          "cutoff": "inside",
+          "upper": "209490880843000310329977/302231454903657293676544"
+        },
+        {
+          "n": 5,
+          "prime": 5,
+          "cutoff": "inside",
+          "upper": "1740278978087047506328951/1208925819614629174706176"
+        },
+        {
+          "n": 7,
+          "prime": 7,
+          "cutoff": "inside",
+          "upper": "889146690395682979921279/604462909807314587353088"
+        }
+      ],
+      "prime_cost_upper": "3537600057071959371651169/604462909807314587353088",
+      "polar_cost_upper": "0",
+      "pole_null_required": true,
+      "vanishing_moments": 98304,
+      "frequency_threshold": "16384",
+      "arch_lower": "4405186541659985665751665/604462909807314587353088",
+      "certified_gap_at_least": "1/2",
+      "scalar_gap_lower_rounded": "26476638323609200869/18446744073709551616",
+      "meaning": "Universal written lower bound on this moment-null subspace; no eigenvalue sampled",
+      "full_source_nonnegative": false,
+      "low_block_or_schur_bound": null
+    }
+  ],
+  "escape_profiles": [
+    {
+      "synthetic_selected_pair": {
+        "real": "0",
+        "imag": "1/4"
+      },
+      "mass": "2",
+      "polynomial_Q": [
+        "0",
+        "64/3"
+      ],
+      "L_first_checked": 45,
+      "valid_for_all_integer_L_at_least_this": true,
+      "cutoff_R": 180,
+      "half_support": 360,
+      "convolution_half_support": 720,
+      "tail_upper": "5702375/36028797018963968",
+      "cutoff_upper": "511299726852096000000001/1208925819614629174706176",
+      "norm_constant_C": "3834368/3",
+      "norm_bound": "C * exp(-2 L b^2) / sqrt(L)",
+      "rayleigh_upper": "-mass/(2C) * sqrt(L) * exp(2 L b^2)",
+      "negative_growth_rate_in_half_support": "1/64",
+      "meaning": "Synthetic scalar costs; actual negative test requires the hypothetical source-pair and complete near-node cancellation",
+      "actual_source_integral_evaluated": false,
+      "RH": false
+    },
+    {
+      "synthetic_selected_pair": {
+        "real": "2",
+        "imag": "1/4"
+      },
+      "mass": "2",
+      "polynomial_Q": [
+        "-128/73",
+        "4288/4745"
+      ],
+      "L_first_checked": 42,
+      "valid_for_all_integer_L_at_least_this": true,
+      "cutoff_R": 168,
+      "half_support": 336,
+      "convolution_half_support": 672,
+      "tail_upper": "80135497000959/302231454903657293676544",
+      "cutoff_upper": "99119560566119015332805/302231454903657293676544",
+      "norm_constant_C": "108072605184/22515025",
+      "norm_bound": "C * exp(-2 L b^2) / sqrt(L)",
+      "rayleigh_upper": "-mass/(2C) * sqrt(L) * exp(2 L b^2)",
+      "negative_growth_rate_in_half_support": "1/64",
+      "meaning": "Synthetic scalar costs; actual negative test requires the hypothetical source-pair and complete near-node cancellation",
+      "actual_source_integral_evaluated": false,
+      "RH": false
+    },
+    {
+      "synthetic_selected_pair": {
+        "real": "2",
+        "imag": "1/16"
+      },
+      "mass": "2",
+      "polynomial_Q": [
+        "-1777664/237133",
+        "4452352/1185665"
+      ],
+      "L_first_checked": 45,
+      "valid_for_all_integer_L_at_least_this": true,
+      "cutoff_R": 180,
+      "half_support": 360,
+      "convolution_half_support": 720,
+      "tail_upper": "83040767042343/604462909807314587353088",
+      "cutoff_upper": "597091521222067425455329/1208925819614629174706176",
+      "norm_constant_C": "112974547264733184/1405801492225",
+      "norm_bound": "C * exp(-2 L b^2) / sqrt(L)",
+      "rayleigh_upper": "-mass/(2C) * sqrt(L) * exp(2 L b^2)",
+      "negative_growth_rate_in_half_support": "1/1024",
+      "meaning": "Synthetic scalar costs; actual negative test requires the hypothetical source-pair and complete near-node cancellation",
+      "actual_source_integral_evaluated": false,
+      "RH": false
+    }
+  ],
+  "RH": false,
+  "native_admissions": 0,
+  "all_support_source_lower_bound_proved": false
+}
