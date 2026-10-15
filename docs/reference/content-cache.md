@@ -28,7 +28,10 @@ proves exact finite-list packing and reconstruction. The
 proves preservation from explicit lookup agreement and includes stale-slot and
 failed-decoder counterexamples. The [semantic decision certificate](../mathematics/Logic/FiniteSequences/decision-certificate.md)
 binds a supplied proof to the actual decoded premises and proves conditional
-reuse under exact agreement. Fresh native receipts bind those claims.
+reuse under exact agreement. The [ordered history checker](../mathematics/Logic/FiniteSequences/append-only-history.md)
+reflects acceptance into an exact decoded prefix and proves that appending
+a repeated payload can still invalidate old numeric dictionary slots. Fresh
+native receipts bind those claims.
 
 The repository also contains finite dependency-closure and selective revision
 models in `GRWTSK/Order/Closure/FiniteDependencyClosure.lean` and
@@ -75,9 +78,11 @@ they do not manufacture independent review or human authorization. Concurrent
 changes remain visible and must be reconciled by identity and checked contracts.
 
 The incoming prefix-tree taxonomy does not directly cover every acyclic diamond
-allowed by the method taxonomy. Preserving history by record identity also does
-not establish the exact list-prefix `AppendOnly` property of the provenance
-model. These representation/refinement obligations remain explicit.
+allowed by the method taxonomy. The earlier identity-only history guard
+permitted reorderings; the current transition guard requires the complete old
+ordered rows as a literal prefix for decisions, contributions and aliases.
+The correspondence from those Python/JSON rows to the exact Lean list model
+remains an explicit refinement obligation.
 
 See [cache operations](../how-to/cache.md), the
 [taxonomy](../../cache/taxonomy.json), and the

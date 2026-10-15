@@ -1,0 +1,59 @@
+{
+  "schema": "repository-design-decision-v1",
+  "id": "ordered-history-v1",
+  "at": "2026-10-15T17:39:59.678932+00:00",
+  "previous_decision_record": {
+    "path": "cache/decisions/representation-and-evidence-v1.json",
+    "sha256": "a7ac98db02abca1efffae9334d0ff414e6feb55cc9118e4818b52bacb8d808f4"
+  },
+  "decision": "Require complete old ordered rows as literal prefix of each decisions/contributions/aliases history, and test decoded history independently of packed dictionary slot numbering.",
+  "reason": "Prior identity-map preservation accepted reorderings and insertion. Appending repeated payloads can also reindex the existing codec dictionary while the source history remains an exact prefix.",
+  "actual_checked_contracts": [
+    "checkPrefix = true iff newRows = oldRows ++ tail for an actual ordered suffix.",
+    "checkDecodedExtension = true iff actual unpack succeeds with oldRows ++ tail.",
+    "Positions and mapped key order preserved; accepted prefixes compose; fresh pack append accepted.",
+    "Checked concrete stale-slot example [7,8] -> [8,7] decodes wrong old payloads even though all references stay in bounds."
+  ],
+  "operational_obligations": [
+    "Strict input schema validation precedes complete row prefix equality.",
+    "Existing identity/no-rewrite/parent/expected-current checks remain.",
+    "Numeric and boolean values are rejected from these typed history fields; no arbitrary JSON equality claim."
+  ],
+  "evidence": [
+    {
+      "path": "evidence/Logic/FiniteSequences/append-only-history-checks-2026-10-15.json",
+      "sha256": "13f9394fcb560d2c5c6fd76604b69cf97b64ee77b289b315c1abfba70540305b"
+    },
+    {
+      "path": "evidence/Logic/FiniteSequences/ordered-history-adapter-2026-10-15.json",
+      "sha256": "0ae137551711422bef455c23c4dca06fb2cca655a2c4c36b8ac74d45f8f49c7e"
+    },
+    {
+      "path": "cache/coordination/events/ordered-history-adapter-type-boundary-7426e0ece9284787910166bf8bc5489b.json",
+      "sha256": "ce42994e4577face562f8c328b7c86a5673fd01262f97e85f26bb935149e49d8"
+    }
+  ],
+  "tests": {
+    "normal": 54,
+    "optimized": 54,
+    "new_meaningful_methods": 7,
+    "before_fix_failures_preserved": 9
+  },
+  "remaining_premises": [
+    "No extracted/verified Python JSON adapter or equality correspondence to Lean.",
+    "No authenticated hash history, global agreement, SHA injectivity, or filesystem durability theorem.",
+    "Prefix-tree/DAG mapping and incremental slot-stable packing remain future work.",
+    "No complete catalog of the 215 unprovided method identities."
+  ],
+  "contributions": [
+    {
+      "actor": "R.A. Jacob Martone",
+      "role": "human direction"
+    },
+    {
+      "actor": "OpenAI Codex and delegated agents",
+      "role": "formal decoder/history contracts, controls, operational correction and source scouts; correlated review"
+    }
+  ],
+  "policy": "This record grants no authority or theorem acceptance beyond its exact bound receipts; all historical decisions and failed evidence remain preserved."
+}

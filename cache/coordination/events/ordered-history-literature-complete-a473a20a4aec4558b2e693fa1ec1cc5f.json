@@ -1,0 +1,32 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "ordered-history-literature",
+  "event": "completion",
+  "status": "complete-literature-review-with-open-refinement-premises",
+  "at": "2026-10-15T17:31:28.621770+00:00",
+  "evidence": "evidence/Logic/FiniteSequences/ordered-history-literature-2026-10-15.json",
+  "sha256": "c2c50d29cc8b96de03c8c8dfb68b988c0d23286007fe3ae74e683821dffe1543",
+  "bytes": 12908,
+  "primary_arxiv_versions": [
+    "arxiv:cs/0302010v1",
+    "arxiv:2103.04519v1",
+    "arxiv:2308.13836v1"
+  ],
+  "findings": [
+    "Ordered-prefix preservation, indexed membership and cryptographic authentication are separate properties.",
+    "Rightmost payload dedup can reorder dictionary slots when repacking an appended source; preserve decoded entry prefix rather than raw packed-field prefix.",
+    "A stronger operational complete-row prefix checker can yield a suffix witness, but current keyed preservation does not establish it.",
+    "JSON/Python/codec/hash/filesystem/ref-update correspondence remains explicitly open."
+  ],
+  "remaining_premise_ids": [
+    "ordered-row-soundness",
+    "record-equality",
+    "decoded-prefix-lifting",
+    "json-python-codec-refinement",
+    "source-and-revision-binding",
+    "authentication-not-preservation",
+    "fresh-lean-acceptance"
+  ],
+  "no_source_script_metadata_edits": true,
+  "no_commit_or_remote_write": true
+}

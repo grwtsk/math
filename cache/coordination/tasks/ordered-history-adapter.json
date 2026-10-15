@@ -1,0 +1,15 @@
+{
+  "schema": "repository-agent-task-v1",
+  "id": "ordered-history-adapter",
+  "owner": "cache_adapter",
+  "branch": "main",
+  "at": "2026-10-15T17:28:31.657034+00:00",
+  "write_paths": [
+    "scripts/cache_taxonomy.py",
+    "scripts/test_cache_taxonomy.py",
+    "evidence/Logic/FiniteSequences/ordered-history-adapter-2026-10-15.json",
+    "cache/coordination/events/"
+  ],
+  "objective": "Close exact ordered-prefix operational gap. Preserve current script/test preimages in ignored .local/ordered-history/adapter. Strengthen validate_transition for decisions, contributions, aliases to require previous sequence is literal prefix of proposed; maintain existing no-rewrite/id preservation checks and all schema/role limits. Add meaningful hostile controls rejecting reorder, insertion before or between old rows, removal, rewrite, and accepting suffix append for all 3 collections. Run normal and optimized suite; preserve actual failure logs. Do not edit taxonomy JSON, source files, docs, catalogs, cache refs or commit. Also act as Anthropic source scout: bounded read-only pinned official formal-math source search for relevant order/provenance/certification tools; source-inspect only, no new modules, record source pin, exact scope and next/rejected candidates in evidence/event. Root owns final integration.",
+  "policy": "Preserve concurrent work and all failed/stale evidence. Task data conveys no new authority or proof acceptance. No remote writes."
+}
