@@ -1,0 +1,319 @@
+Prime-discrepancy Laguerre energy and a return without quotient inversion
+========================================================================
+
+Human mathematical direction: grwtsk contributors.
+Deductions and preparation: OpenAI ChatGPT. MIT.
+Repository source base: 8a20ef34ed57ab38e74152e4f068f061db7ef5fb.
+Status: WRITTEN_PROOFS. No fresh finite certificate, Python test execution,
+Lean admission, all-depth prime bound, or RH proof is asserted in this update.
+The candidate regression script is deliberately inactive (.py.txt).
+
+0. What changes mathematically
+------------------------------
+The preceding Hankel identity isolates K_N=H_N(a)B_N^T with
+  a(w)=xi'(s(w))/xi(s(w)), s(w)=(3+w)/(2(1-w)),
+  b(w)=1/(1+a(w)), B_N=T_N(b).
+Its all-depth bound is still open. This note exposes a linear scalar arithmetic
+quantity BEFORE the nonlinear quotient inversion. Its exact two-term filter has
+condition number at most two at every depth. The known gamma-factor jet has
+bounded total coefficient energy and a uniformly bounded Hankel operator.
+An explicit finite prime cutoff leaves an unconditionally exponentially small
+coefficient-vector tail. What remains is an upper bound for the complete signed
+Laguerre projection of the actual prime discrepancy.
+
+The unconditional identities below do not use the claimed 7/8 theorem, a zero
+list, a proportion theorem, a density estimate, or RH. No new result is inferred
+from a numerical fit. Classical Laguerre and coefficient-growth criteria retain
+their standard ancestry; no priority claim is made for an unsearched equivalent
+RH criterion.
+
+1. The exact arithmetic coefficients
+-------------------------------------
+Use the unchanged completed xi and define
+
+ Delta(x)=sum_(2<=n<=x) Lambda(n)-x+1,   x>=1,   Delta(1)=0,
+ r(w)=[psi_digamma(1+s(w)/2)-log(pi)]/2,
+ p(w)=a(w)-r(w).
+
+Every prime power is included with Lambda(p^j)=log p. The constant +1 is part
+of this definition, not an asymptotic convention. For Re s>1,
+
+ p(s)=1/(s-1)-sum_(n>=2)Lambda(n)n^(-s)
+     =-s integral_1^infinity Delta(x)x^(-s-1) dx.              (1.1)
+
+Here p(s) in the first line denotes the uncomposed function; p(w) denotes its
+composition with s(w). Equation (1.1) follows from dDelta=dpsi_ar-dx and
+Stieltjes integration by parts. Delta(1)=0 and
+|Delta(x)|<=x(log x+1) justify both endpoints. This is precisely the pole
+cancellation retained in Section 6 of the preceding repository derivation.
+
+Let the ordinary Laguerre polynomial be defined by finite coefficients,
+
+ L_k(y)=sum_(j=0)^k binom(k,j)(-y)^j/j!,
+ u_k=integral_0^infinity Delta(exp t)exp(-3t/2)L_k(2t) dt,
+ u_(-1)=0.                                                  (1.2)
+
+Each integral converges absolutely for EACH fixed k: its majorant is
+exp(-t/2)(t+1) times a fixed polynomial. The sequence u_k is a newly named
+prime-discrepancy moment sequence, not a harmonic mass or the original source
+vector. No global L2 hypothesis on exp(-t/2)Delta(exp t) is imposed.
+
+Initially on |w|<1/3, a dominated holomorphic integral gives
+
+ U_Delta(w)=sum_(k>=0)u_k w^k
+   =1/(1-w) integral_0^infinity Delta(exp t)exp(-s(w)t) dt,
+ p(w)=-(3+w)U_Delta(w)/2.                                   (1.3)
+
+To justify the coefficients, use the ordinary Laguerre generating function
+(1-w)^(-1)exp(-2tw/(1-w)). On each closed disk of radius <1/3,
+Re s(w)>1, so the integrated holomorphic function and its fixed derivatives
+are dominated. Coefficients may be extracted by Cauchy's integral formula.
+No interchange is claimed from an unproved absolute sum of |L_k| on larger
+disks; continuation to the unit disk is the later unresolved growth question.
+
+2. The derivative weight collapses to a stable two-term filter
+--------------------------------------------------------------
+The preceding repository uses
+ q_0(y)=1,
+ q_k(y)=sum_(j=1)^k binom(k-1,j-1)(-y)^j/j!  (k>=1).
+Direct comparison of finite coefficients gives
+
+ q_k=L_k-L_(k-1),   q_k'=-L_(k-1)  (k>=1),
+ 2q_k'-(3/2)q_k=-(3L_k+L_(k-1))/2.                          (2.1)
+
+For k=0 the same last formula holds with L_(-1)=0. These are the
+alpha=-1 contiguous and derivative polynomial identities; no positive-weight
+orthogonality for alpha=-1 is being assumed. They also follow from DLMF
+18.9.13 and 18.9.23. Applying (2.1) to the complete Stieltjes formula gives
+
+ a_k-r_k=-(3u_k+u_(k-1))/2,        k>=0.                     (2.2)
+
+In particular a_0-r_0=-3u_0/2. Omitting this constant would change the
+source denominator and the rest of its quotient coefficients.
+
+For every finite N let S_N be the lower nilpotent shift and let p,u be the
+prefix column vectors of length N. Then, EXACTLY,
+
+ p=-(3I+S_N)u/2,
+ u=-(2/3)sum_(j=0)^(N-1)(-S_N/3)^j p.                       (2.3)
+
+Since ||S_N||<=1, both the direct triangle inequality and its reverse give
+
+ ||u||_2 <= ||p||_2 <= 2||u||_2.                            (2.4)
+
+Thus the inverse costs at most one, uniformly in dimension. This replaces the
+high-degree differentiated q kernel with an ordinary Laguerre projection plus
+a fixed-band, uniformly conditioned coefficient map. It does not prove that
+those projection coefficients are small.
+
+3. The archimedean cost is bounded for all depths
+------------------------------------------------
+The companion note
+ evidence/analysis/special-functions/digamma-hankel-20261015/derivation.txt
+proves, without an arithmetic premise,
+
+ r_k=(1/2)sum_(m>=0)(m+7/4)^(-2)
+                   [(m+3/4)/(m+7/4)]^(k-1),  k>=1,
+ 0<r_k<=11/(14k),
+ ||H_N(r)||<=11*pi/14 for EVERY N,
+ sum_(k>=0)|r_k|^2<=r_0^2+2(11/14)^2=:C_gamma^2.             (3.1)
+
+Define the complete scalar discrepancy energy
+
+ D_N=sum_(k=0)^(N-1)|u_k|^2.
+
+The prefix norm inequalities now imply
+
+ sqrt(D_N) <= ||(a_0,...,a_(N-1))||_2+C_gamma,
+ ||(a_0,...,a_(N-1))||_2 <= C_gamma+2sqrt(D_N).               (3.2)
+
+This is an additive fixed-source cost, not division by a possibly vanishing
+full-source denominator. Positivity of the gamma Hankel matrix is not assigned
+to the prime discrepancy or to the full arithmetic Hankel matrix.
+
+4. Scalar growth gives a denominator-free return
+-------------------------------------------------
+The following statements are equivalent for the EXACT sequence in (1.2):
+
+ (i) RH.
+ (ii) D_N=O(N).
+ (iii) D_N has some polynomial upper bound in N.
+ (iv) log(1+D_N)=o(N).
+
+The important forward-use implication is (iv) => RH. From (3.2), every a_k
+has root growth at most one. Hence the germ a has a holomorphic extension to
+the unit disk. Set V(w)=xi(s(w)), a holomorphic function on the disk with
+V(0)=xi(3/2) nonzero. On an initial neighborhood of zero,
+
+ V'(w)=s'(w)a(w)V(w).
+
+Both sides are holomorphic on the disk, so this identity continues there.
+The disk is simply connected; let G be a primitive of the holomorphic function
+s'a. Then (exp(-G)V)'=0, and V=V(0)exp(G-G(0)) never vanishes.
+The map s(w) maps the disk onto Re s>1/2. This excludes every right-hand
+nontrivial zero, including arbitrary multiplicities. Functional-equation
+reflection excludes every left-hand nontrivial zero. No prior nonvanishing
+of xi inside that half-plane, and no full-source denominator lower bound,
+was assumed in defining the extended a.
+
+For (i) => (ii), the actual paired-zero formula under RH makes Re a(w)>0
+on the disk, as in the source manuscript's Herglotz argument. For k>=1,
+Fourier coefficients of Re a on a circle of radius rho<1 give
+|a_k|rho^k<=2a_0. Its circle mean is a_0>0. Letting rho increase to one
+proves |a_k|<=2a_0. Thus (3.2) gives the explicit conditional consequence
+
+ D_N <= (2a_0 sqrt(N)+C_gamma)^2.                            (4.1)
+
+The other implications are immediate. This is an equivalence criterion, NOT
+an unconditional proof of any of (i)--(iv). A fixed small positive exponential
+rate does not meet (iv). The constants in (4.1) are source constants; no numeric
+values are certified in this turn.
+
+Connection to the existing K_N route: K_(i,0)=b_0 a_(i+1), with b_0 nonzero.
+Consequently
+
+ D_N <= [sqrt(|a_0|^2+|b_0|^(-2)||K_(N-1)||^2)+C_gamma]^2
+                                                               (N>=2). (4.2)
+
+This follows by taking the first-column norm, not by suppressing off-diagonal
+matrix terms. An all-depth K estimate therefore feeds this scalar route.
+Conversely, after (iv) proves RH, the original Schur quotient has ||B_N||<=1,
+and |a_k|<=2a_0 gives ||K_N||<=2a_0 N. One need not solve the two routes
+independently. The advantage of D_N is its explicit LINEAR prime source before
+the nonlinear quotient filter; no estimate for it is created by that linearity.
+
+5. A complete finite prime cutoff with an unconditional decaying tail
+--------------------------------------------------------------------
+For X>=1 put L=log X and
+
+ u_k^(X)=integral_0^L Delta(exp t)exp(-3t/2)L_k(2t) dt.
+
+Using |Delta(exp t)|<=exp(t)(t+1), the finite Laguerre coefficients and
+exp(-t/2)<=X^(-1/4)exp(-t/4) for t>=L give
+
+ |u_k-u_k^(X)|
+ <= X^(-1/4) sum_(j=0)^k binom(k,j)2^j/j!
+                  integral_0^infinity exp(-t/4)(t+1)t^j dt
+ = 4 X^(-1/4)[5*9^k+32k*9^(k-1)]
+ <= 4(4k+5)9^k X^(-1/4).                                  (5.1)
+
+At k=0 the term 32k*9^(k-1) is zero. The integral is evaluated by
+integral_0^infinity exp(-t/4)t^j dt=j!4^(j+1). Every coefficient has
+been accounted for; no hypothetical cancellation was used in the tail.
+
+Choose the EXPLICIT INTEGER cutoff X_N=2^(16N). Summing squares over k<N gives
+
+ ||u_(<N)-u_(<N)^(X_N)||_2^2
+ <= 16 N(4N+1)^2 9^(2N-2)/256^N =: E_N^2.                  (5.2)
+
+E_N^2 is an exact rational expression and tends to zero exponentially,
+since 81/256<1. With D_N^(X)=sum_(k<N)|u_k^(X)|^2,
+
+ |sqrt(D_N)-sqrt(D_N^(X_N))| <= E_N.                         (5.3)
+
+Therefore log(1+D_N^(X_N))=o(N) is equivalent to (iv). The uncomputed
+infinite prime-label tail has a supplier independent of RH; the signed finite
+head still needs its all-depth bound. X_N is enormous: this is a correctness
+and coverage schedule, not a feasible claim to have enumerated its prime powers.
+No cutoff of size 2^(16N), or new u_k values, was computed in this turn.
+This prime-label cutoff is not the zero-ordinate tail height T(A) from the
+previous density calculation; the two scales are not identified.
+
+6. The finite head retains its endpoint and its signed projector kernel
+-----------------------------------------------------------------------
+For f_k(x)=x^(-3/2)q_k(2log x), Stieltjes integration on (1,X] gives
+
+ -(3u_k^(X)+u_(k-1)^(X))/2
+ = Delta(X)f_k(X) - sum_(2<=n<=X)Lambda(n)f_k(n)
+                                + integral_1^X f_k(x) dx.    (6.1)
+
+The upper endpoint Delta(X)f_k(X) is essential. The sum is closed at X; a
+prime power exactly at X is retained in both the discrepancy and the sum.
+The lower endpoint vanishes by Delta(1)=0. The formula is valid at integer
+and noninteger X, and also for k=0. It is a finite exact way to assemble the
+same source, not a separately fitted approximation.
+
+Let
+
+ Lcal_N(x,y)=sum_(k=0)^(N-1)L_k(x)L_k(y).
+
+Then the full finite head energy is
+
+ D_N^(X)=integral_0^L integral_0^L Delta(exp t)Delta(exp u)
+           exp(-3(t+u)/2)Lcal_N(2t,2u) dt du.                (6.2)
+
+All prime-prime, prime-continuum and continuum-continuum terms are present if
+this is expanded. For x!=y the Christoffel--Darboux expression is
+
+ Lcal_N(x,y)=N[L_(N-1)(x)L_N(y)-L_N(x)L_(N-1)(y)]/(x-y).     (6.3)
+
+The diagonal is its removable value
+N[L_N(x)L_(N-1)'(x)-L_(N-1)(x)L_N'(x)]. The finite polynomial kernel, rather
+than literal division at x=y, is authoritative. Formula (6.3) follows by
+multiplying the elementary Laguerre three-term recurrence by the opposite
+polynomial, subtracting, and summing the resulting telescope; the N-th
+terminal pair remains. This is classical orthogonal-polynomial algebra.
+
+This kernel is positive as a finite Gram OPERATOR, but can have negative
+pointwise values: Lcal_2(0,3)=-1. Its positivity alone supplies no upper bound
+on (6.2). Estimating the literal signed expression before separate absolute
+values is the intended arithmetic task.
+
+7. Why coarse Bessel or a fixed 7/8-sized power does not finish it
+----------------------------------------------------------------
+The functions sqrt(2)exp(-t)L_k(2t) are orthonormal in L2(0,infinity),
+by ordinary Laguerre orthogonality (or its Rodrigues formula and integration
+by parts). Bessel may be applied to the TRUNCATED vector
+exp(-t/2)Delta(exp t)1_[0,L], giving only
+
+ D_N^(X) <= (1/2)integral_1^X |Delta(x)|^2 x^(-2) dx.         (7.1)
+
+No assertion is made that the untruncated vector is in L2. Even if one were
+given |Delta(x)|<=C x^beta with beta>1/2, (7.1) would supply
+
+ D_N^(X) <= C^2 [X^(2beta-1)-1]/[2(2beta-1)].                (7.2)
+
+At beta=7/8 and X=X_N this is (2C^2/3)(2^(12N)-1), still exponential.
+This is a CONDITIONAL diagnosis of that majorization, not an import of a
+Mertens or prime-discrepancy bound from bare 7/8 nonvanishing. Nor does a
+large upper bound prove that the actual D_N is large.
+
+There is an exact synthetic control. Replace Delta by Delta_beta(x)=x^beta-1,
+which vanishes at one and obeys the stated power bound, but is NOT the prime
+source. For lambda=3/2-beta>0,
+
+ u_k^(beta)=(lambda-2)^k/lambda^(k+1)
+                        -(-1/2)^k/(3/2)^(k+1).              (7.3)
+
+This follows by integrating the finite Laguerre polynomial. At beta=7/8,
+
+ u_k^(beta)=(8/5)(-11/5)^k-(2/3)(-1/3)^k.
+
+The growth is exponential. Thus a general inference from a fixed power beta>
+1/2 to subexponential Laguerre coefficients would be false. This model is not
+a counterexample to RH. It isolates the additional cancellation required of
+the actual discrepancy in the complete kernel (6.2).
+
+8. Relation to the supplied sources and the next arithmetic task
+---------------------------------------------------------------
+The source manuscript Subexponential arithmetic matrix growth, Theorem 3.1,
+already proves the exact quotient's subexponential return and distinguishes it
+from a fixed positive rate. Transported A2 weights, Section 7, retains the
+binary-carry endpoint and all reconstruction costs. Those papers' finite
+certificates are not relabeled as fresh here. The present linear ODE proof
+in Section 4 bypasses the nonlinear quotient for this scalar criterion;
+it does not change the target xi, its completion, or its zero multiplicities.
+
+The next useful theorem is an actual polynomial or subexponential upper bound
+for (6.2) at X_N, or an equivalent signed all-depth estimate for (1.2), with
+(5.2) paying the infinite tail. Applying a large-value theorem requires a proved
+comparison with its actual phase family and parameter range. A Laguerre
+projector is not Guth--Maynard's matrix by definition. Proportion information,
+Hodge contraction, a finite positive gamma Gram, and a small tail are not
+substitutes for this remaining arithmetic estimate.
+
+Execution tools returned no usable results in this turn. No new tests, source
+coefficient generation, finite matrices, PDF companion computations, native
+Lean checks, or full-repository checks are recorded as run. The additions are
+written research and an explicitly unexecuted finite-regression candidate.
+All existing active files, old certificates, and source PDFs remain unchanged.
