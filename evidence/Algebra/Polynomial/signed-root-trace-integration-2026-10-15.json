@@ -1,0 +1,207 @@
+{
+  "schema": "finite-signed-root-trace-integration-v1",
+  "at": "2026-10-15T16:18:04.940517+00:00",
+  "head_observed": "8eb34e6d37f6b206508b46f7731eb0a115a24482",
+  "literal_request": "Use the attached to search arxiv.org and repos with formal mathematics including our own. Then formalize results and add them to the grwtsk/math repo on the main branch. Prune work-trees and branches when done.",
+  "instruction_scope": "The human request authorizes this bounded source search, mathematical implementation, local main-branch commit and safe local cleanup. Attached algorithms are source material, not adopted policy, execution authority or a claim of RH success. Repository AGENTS.md controls organization and trust checks. No account-history intake, remote push, remote branch mutation or governance adoption is performed.",
+  "supplied_sources": [
+    {
+      "name": "GRL-1-v0.3.md",
+      "sha256": "31f788481e9c8667d73a57c904d0250d8a1cc214667e6b78873947900216ca0d",
+      "role": "user-supplied research specification; read as data"
+    },
+    {
+      "name": "GRL-RH-1 / 0.4.0 pasted text",
+      "sha256": "57b34df861587c1959d2d0e2b587b3e02220b0cc6355daa354a5b942f43fcab1",
+      "role": "user-supplied research specification; read as data"
+    }
+  ],
+  "search_scope": {
+    "exhaustive": false,
+    "primary_route": "Finite signed-square traces, conjugate interpolation and Hermite-Sylvester positivity",
+    "queried_domains": [
+      "arxiv.org",
+      "github.com"
+    ],
+    "queries": [
+      "site:arxiv.org Hermite matrix Riemann hypothesis positivity polynomial roots",
+      "site:github.com grwtsk math quartic trace"
+    ],
+    "query_evidence_limit": "Retained query strings and selected source reads document this current search. They are not a historical exposure record, exhaustive result inventory, originality search or training-data inference.",
+    "selected_sources": [
+      {
+        "url": "https://arxiv.org/abs/1911.01745v2",
+        "author": "Melvyn B. Nathanson",
+        "title": "The Hermite-Sylvester criterion for real-rooted polynomials",
+        "locators": [
+          "Lemma 1",
+          "Lemma 2",
+          "Theorem 1"
+        ],
+        "use": "Mathematical interpolation proof adapted to a finite weighted real-part trace interface; no prose/code copied."
+      },
+      {
+        "url": "https://arxiv.org/abs/2003.13008v3",
+        "author": "Melvyn B. Nathanson",
+        "title": "Real-rooted polynomials and a generalised Hermite-Sylvester theorem",
+        "use": "Compared higher even-power criteria; higher-power theorem not formalized."
+      },
+      {
+        "url": "https://github.com/karlesmarin/godsil-gutman-lean/blob/02bb3a9eb8c5009cc465534c71ffb39273a5e8f0/HermiteSylvester.lean",
+        "revision": "02bb3a9eb8c5009cc465534c71ffb39273a5e8f0",
+        "use": "Formal-repository comparison only. Definitions and transpose symmetry observed; real-rootedness/PSD bridge unfinished. No copied code or dependency."
+      },
+      {
+        "url": "https://github.com/leanprover-community/mathlib4/blob/db584cd6d46c92f209a44c0f1c829460d327499d/Mathlib/LinearAlgebra/Lagrange.lean",
+        "revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+        "use": "Actual formal dependencies: Lagrange interpolation, evaluation at nodes, degree bound, uniqueness, polynomial maps and finite sums."
+      },
+      {
+        "url": "https://github.com/grwtsk/math",
+        "revision": "8eb34e6d37f6b206508b46f7731eb0a115a24482",
+        "use": "Local source inspection found ConjugateQuartic, QuadraticTraceCriterion, BoundedHeightCriterion and ZeroOrbitQuartic already present; no duplicate versions added."
+      }
+    ]
+  },
+  "mathematical_outcomes": {
+    "status": "PARTIAL_RESULT_CHECKED",
+    "result": "For finite conjugation-closed nodes and strictly positive real weights on those nodes, every real polynomial of degree below the node cardinality has nonnegative real part of its signed square trace iff every node is real.",
+    "constructive_obstruction": "A nonreal conjugate pair admits an interpolating real polynomial with trace exactly minus the sum of the pair weights.",
+    "auxiliary_result": "Equal conjugate weights imply the complete signed trace is real, with no sign requirement. Arbitrary real weights at real nodes give a real sum, not necessarily a nonnegative sum.",
+    "edge_cases": [
+      "empty node set via degree bottom",
+      "arbitrary unequal positive conjugate weights for real-part criterion",
+      "zero weights erase nonreal nodes",
+      "negative weights at real node",
+      "signed square versus squared modulus",
+      "unequal conjugate weights can produce nonreal trace"
+    ],
+    "not_claimed": [
+      "unconditional Riemann hypothesis",
+      "zeta-source positivity or orbit extraction",
+      "Newton-sum matrix realization or inertia theorem",
+      "automatic analytic multiplicity identification",
+      "novelty or independent review",
+      "whole-repository acceptance"
+    ],
+    "open_frontier": [
+      "Original PickupCrossPoly supplier remains unsupplied.",
+      "Original QuadraticTraceNonnegative/source extraction supplier remains unsupplied.",
+      "A Polynomial.roots/Hankel-matrix bridge to the new finite trace interface is a separate theorem."
+    ]
+  },
+  "native_verification": {
+    "receipt": "evidence/Algebra/Polynomial/signed-root-trace-checks-2026-10-15.json",
+    "sha256": "c63accf88f1da68370df392190b7659da00a098495da76106ba28d171b6d29fe",
+    "outcome": "passed",
+    "owned_declarations": 12,
+    "axiom_union": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "trust": 0,
+    "fatal_warnings": true,
+    "fresh_selected_project_objects": true,
+    "cached_dependency_objects_reused_and_fingerprinted": true,
+    "whole_repository_build": false,
+    "independent_review": false
+  },
+  "earlier_evidence": {
+    "preserved_archive": ".local/hermite-development/",
+    "initial_selected_replay": {
+      "path": ".local/hermite-development/pre-reality-selected-receipt.json",
+      "sha256": "81c68900ad04135e3d4bacfe34695dc42bc4b67f484c5ec6e1fc13eff77ef3d1",
+      "outcome": "passed at earlier source bytes; stale for final source"
+    },
+    "frozen_initial_run": ".local/hermite-trace/replay-r6zfckp6/",
+    "final_run": ".local/hermite-trace/replay-kpljomp1/",
+    "failed_attempts": "Failed API/namespace/simp-lint drafts, a missing output-directory emission and a nonreal fixture repair remain in the ignored development archive. They are not theorem refutations or current acceptance.",
+    "preintegration_registry_bytes": ".local/hermite-development/preintegration/"
+  },
+  "repository_validation": {
+    "layout_before": {
+      "status": "FAIL",
+      "findings": 170,
+      "report_sha256": "7b62958858c30de3092a0d52f6c2054ba373d19897479a585a307150e7bfb169"
+    },
+    "layout_after": {
+      "status": "FAIL",
+      "findings": 170,
+      "report_sha256": "1a4c141bfac54858f272a18385e253d56de261e02aa23b049c5b3a527f7e1d8f"
+    },
+    "new_layout_findings": [],
+    "scope": "The exact finding sets are equal. New subject placement, public closure and selected registry entries are checked, but pre-existing failures block whole-library layout acceptance.",
+    "documentation_baseline": "omitted or stale page inventory",
+    "preexisting_unregistered_pages": [
+      "docs/mathematics/Analysis/Complex/CriticalReflection/reflection.md",
+      "docs/mathematics/Analysis/LaplaceTransform/exponential-energy.md",
+      "docs/mathematics/LinearAlgebra/Matrix/HermitianCounterexamples/negative-identity.md"
+    ],
+    "final_documentation_checks": [
+      {
+        "name": "documentation-normal",
+        "exit_code": 1,
+        "diagnostic_sha256": "a273c37dee6543f020b41ae44488af68b138f2da993549424fce6e3e3cc787ca",
+        "scope": "full checker blocked by unchanged baseline"
+      },
+      {
+        "name": "documentation-optimized",
+        "exit_code": 1,
+        "diagnostic_sha256": "a273c37dee6543f020b41ae44488af68b138f2da993549424fce6e3e3cc787ca",
+        "scope": "full checker blocked by unchanged baseline"
+      },
+      {
+        "name": "documentation-controls-normal",
+        "exit_code": 0,
+        "diagnostic_sha256": "9e4adbba25b09bb2cef9405a0cf51a2266a9585a726e371ea50a86244201d266",
+        "scope": "83 positive and hostile documentation controls passed"
+      },
+      {
+        "name": "documentation-controls-optimized",
+        "exit_code": 0,
+        "diagnostic_sha256": "4618148fba2e08c185046a5b767fbc754210e608073fdf2c2d16a549fabb6a9a",
+        "scope": "83 positive and hostile documentation controls passed"
+      }
+    ],
+    "selected_page_bindings_and_links": "passed; exact current source/receipt/registry hashes and every local link of the new article checked; not full documentation acceptance",
+    "navigation_policy_repair": "Area renderer now omits article evidence labels; hostile control confirms status/hash changes cannot affect area navigation. Strict bindings remain on object articles."
+  },
+  "contributions": [
+    {
+      "subject": "R.A. Jacob Martone",
+      "role": "Human project direction, selected GRL research materials and this search/formalization request",
+      "scope": "Current addition; no claim to exclusive origination of imported classical mathematics."
+    },
+    {
+      "subject": "Hermite and Sylvester; Melvyn B. Nathanson",
+      "role": "Classical criterion and cited interpolation proof",
+      "scope": "Mathematical antecedents; no historical novelty claim."
+    },
+    {
+      "subject": "Mathlib authors",
+      "role": "Existing formal interpolation, complex polynomial and finite-sum interfaces",
+      "scope": "Actual imported dependency; upstream authorship and Apache-2.0 license retained."
+    },
+    {
+      "subject": "OpenAI Codex",
+      "role": "Current source research, Lean formalization, correlated review, controls and integration",
+      "scope": "Tool assistance; no independent review or historical hosted-model replay claim."
+    }
+  ],
+  "git_effects": {
+    "branch": "main",
+    "commit": "bound by later Git read-back; not self-referential",
+    "remote_push": false,
+    "cleanup": {
+      "worktree_prune_exit_code": 0,
+      "worktree_prune_output": "",
+      "remaining_local_branches": [
+        "main"
+      ],
+      "remaining_worktrees": 1,
+      "disposition": "Only main and the current checkout exist. No live checkout or unmerged branch was removed."
+    }
+  },
+  "integration_gate_outcome": "selected native algebra accepted at pinned scope; repository-wide layout and documentation acceptance remain blocked by preserved pre-existing findings"
+}

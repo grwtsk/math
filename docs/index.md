@@ -2,11 +2,11 @@
 
 Browse by mathematical area, then by object. Start with [the least-prime example](start/least-prime.md), [verification](how-to/verify.md), or the [selected result catalog](reference/results.md).
 
-12 areas · 69 object guides · 39 documented object groups · 619 Lean source modules.
+12 areas · 70 object guides · 39 documented object groups · 624 Lean source modules.
 
 | Area index | Object guides | Object groups | Lean modules | Intake records | Selected families |
 |---|---:|---:|---:|---:|---:|
-| [Algebra](mathematics/Algebra/index.md) | 3 | 2 | 15 | 1 | 0 |
+| [Algebra](mathematics/Algebra/index.md) | 4 | 2 | 20 | 1 | 0 |
 | [Analysis](mathematics/Analysis/index.md) | 13 | 8 | 238 | 39 | 1 |
 | [Combinatorics](mathematics/Combinatorics/index.md) | 2 | 1 | 8 | 0 | 1 |
 | [Data structures](mathematics/Data/index.md) | 0 | 0 | 1 | 0 | 0 |
@@ -21,11 +21,11 @@ Browse by mathematical area, then by object. Start with [the least-prime example
 
 ## Inventory and evidence scope
 
-The maintained documentation contains 102 pages, including area indexes, guides and reference material. Object guides link 65 distinct primary sources. The archive intake records 63 sources; the selected catalog covers 3 families. These are separate inventories and must not be added together.
+The maintained documentation contains 103 pages, including area indexes, guides and reference material. Object guides link 66 distinct primary sources. The archive intake records 63 sources; the selected catalog covers 3 families. These are separate inventories and must not be added together.
 
 | Object-guide evidence label | Pages |
 |---|---:|
-| `fresh-selected` | 9 |
+| `fresh-selected` | 10 |
 | `historical` | 1 |
 | `historical-source-description` | 51 |
 | `literature-and-historical-source-description` | 3 |

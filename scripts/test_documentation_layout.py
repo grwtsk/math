@@ -233,6 +233,13 @@ class AreaIndexControls(unittest.TestCase):
                 p=self.layout['pages']['docs/mathematics/Analysis/index.md'];p[key]=value
                 try:self.reject('area index carries claim metadata')
                 finally:del p[key]
+    def test_area_navigation_does_not_promote_article_evidence(self):
+        original=checker.indexes.render_area(self.layout,self.summary,'Analysis')
+        changed=copy.deepcopy(self.layout)
+        changed['pages'][PAGE]['status']='unsupported-proof-claim'
+        changed['pages'][PAGE]['source_sha256']='f'*64
+        self.assertEqual(checker.indexes.render_area(changed,self.summary,'Analysis'),original)
+        self.assertNotIn('`historical`',original)
     def test_wrong_index_category(self):
         self.layout['pages']['docs/mathematics/Analysis/index.md']['category']='reference';self.reject('area index carries claim metadata')
     def test_legacy_section_cannot_move_to_index(self):

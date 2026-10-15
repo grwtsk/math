@@ -5996,18 +5996,18 @@
     }
   ],
   "counts_by_operation": {
-    "add": 9,
+    "add": 14,
     "keep": 336,
     "move": 206
   },
   "counts_by_role": {
     "audit-driver": 35,
-    "library": 338,
-    "negative-control": 98,
-    "positive-check": 80
+    "library": 340,
+    "negative-control": 100,
+    "positive-check": 81
   },
   "counts_by_subject": {
-    "Algebra": 14,
+    "Algebra": 19,
     "Analysis": 195,
     "Combinatorics": 8,
     "Data": 1,
@@ -6021,9 +6021,9 @@
     "Order": 3,
     "Spectral": 25
   },
-  "present_lean_source_count": 614,
+  "present_lean_source_count": 619,
   "schema": "grwtsk-math-source-catalog-v1",
-  "source_count": 551,
+  "source_count": 556,
   "sources": [
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -6034,7 +6034,9 @@
         "GRWTSK.Algebra.MvPolynomial.SquarefreeEulerProduct",
         "GRWTSK.Algebra.OrderedProduct",
         "GRWTSK.Algebra.OrderedProductGauge",
+        "GRWTSK.Algebra.Polynomial.ConjugateInterpolation",
         "GRWTSK.Algebra.Polynomial.ConjugateQuartic",
+        "GRWTSK.Algebra.Polynomial.SignedRootTrace",
         "GRWTSK.Analysis.Asymptotics.DisjointPrimeChainBounds",
         "GRWTSK.Analysis.Asymptotics.ExponentialEnergyObstruction",
         "GRWTSK.Analysis.Asymptotics.ExponentialRecurrence",
@@ -6538,7 +6540,7 @@
         "GRWTSK/Logic/ProofChecking/Checks/OwnedDeclarationAudit.lean"
       ],
       "runner": "python3 -B scripts/check_ccc_energy.py",
-      "sha256": "b1f31cb8473a72298ca616e7da9e168ed1ec054283fa3300445141b9306b93d0",
+      "sha256": "a7bf2f005d1656915332155017744032d18370ce6bcbaf057724fda8929789a5",
       "source_role": "library",
       "source_root": ".",
       "subject": "Library",
@@ -6546,8 +6548,8 @@
       "verification": {
         "inventory": "observed-current-bytes",
         "layout": "repository baseline remains failed",
-        "lean": "not-replayed-after-import-additions",
-        "source_sha256": "b1f31cb8473a72298ca616e7da9e168ed1ec054283fa3300445141b9306b93d0"
+        "lean": "umbrella not replayed after selected import additions",
+        "source_sha256": "a7bf2f005d1656915332155017744032d18370ce6bcbaf057724fda8929789a5"
       },
       "working_tree_state": "tracked-modified"
     },
@@ -7253,6 +7255,74 @@
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
       "git_blob": null,
       "imports": [
+        "GRWTSK.Algebra.Polynomial.SignedRootTrace",
+        "Mathlib.Tactic.NormNum"
+      ],
+      "logical_status": "intended rejected control; no theorem admission",
+      "module": "GRWTSK.Algebra.Polynomial.Checks.Negative.SignedRootTraceModulus",
+      "namespaces": [],
+      "object": "Polynomial/Checks/Negative",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Algebra/Polynomial/Checks/Negative/SignedRootTraceModulus.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Algebra/Polynomial/Checks/Negative/SignedRootTraceModulus.lean",
+      "placement_rationale": "Finite polynomial interpolation and signed-root traces are algebra independent of zeta; validation roles remain subject-local.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B scripts/check_hermite_trace.py",
+      "sha256": "c8cf54d6c813b3675a0f55298a93d7f78b2efe544ba46f4a1084ecbd265defe4",
+      "source_role": "negative-control",
+      "source_root": "GRWTSK",
+      "subject": "Algebra",
+      "target_path": "GRWTSK/Algebra/Polynomial/Checks/Negative/SignedRootTraceModulus.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path-check; repository baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Algebra/Polynomial/signed-root-trace-checks-2026-10-15.json",
+        "source_sha256": "c8cf54d6c813b3675a0f55298a93d7f78b2efe544ba46f4a1084ecbd265defe4"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Algebra.Polynomial.SignedRootTrace",
+        "Mathlib.Tactic.NormNum"
+      ],
+      "logical_status": "intended rejected control; no theorem admission",
+      "module": "GRWTSK.Algebra.Polynomial.Checks.Negative.SignedRootTraceNegativeWeight",
+      "namespaces": [],
+      "object": "Polynomial/Checks/Negative",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Algebra/Polynomial/Checks/Negative/SignedRootTraceNegativeWeight.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Algebra/Polynomial/Checks/Negative/SignedRootTraceNegativeWeight.lean",
+      "placement_rationale": "Finite polynomial interpolation and signed-root traces are algebra independent of zeta; validation roles remain subject-local.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B scripts/check_hermite_trace.py",
+      "sha256": "17e40863d0a436709d06f1c57966b630e60243e60301a9e9a9f93f1ce95538fc",
+      "source_role": "negative-control",
+      "source_root": "GRWTSK",
+      "subject": "Algebra",
+      "target_path": "GRWTSK/Algebra/Polynomial/Checks/Negative/SignedRootTraceNegativeWeight.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path-check; repository baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Algebra/Polynomial/signed-root-trace-checks-2026-10-15.json",
+        "source_sha256": "17e40863d0a436709d06f1c57966b630e60243e60301a9e9a9f93f1ce95538fc"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "git_blob": null,
+      "imports": [
         "GRWTSK.Algebra.Polynomial.ConjugateQuartic"
       ],
       "logical_status": "selected checked theorem or construction; conditional premises retained",
@@ -7281,6 +7351,92 @@
         "source_sha256": "cd9ed21329e5587f3ff3dd291b63d085ad61d5ebd93302112721828d46946c60"
       },
       "working_tree_state": "untracked"
+    },
+    {
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Algebra.Polynomial.SignedRootTrace",
+        "Mathlib.Tactic.NormNum"
+      ],
+      "logical_status": "selected checked finite algebra; explicit hypotheses retained",
+      "module": "GRWTSK.Algebra.Polynomial.Checks.Positive.SignedRootTrace",
+      "namespaces": [],
+      "object": "Polynomial/Checks/Positive",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Algebra/Polynomial/Checks/Positive/SignedRootTrace.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Algebra/Polynomial/Checks/Positive/SignedRootTrace.lean",
+      "placement_rationale": "Finite polynomial interpolation and signed-root traces are algebra independent of zeta; validation roles remain subject-local.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B scripts/check_hermite_trace.py",
+      "sha256": "89c10ca8b404f61cc12411d60486dcba1d51fed7694958dc00b4bdb43b24d4ac",
+      "source_role": "positive-check",
+      "source_root": "GRWTSK",
+      "subject": "Algebra",
+      "target_path": "GRWTSK/Algebra/Polynomial/Checks/Positive/SignedRootTrace.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path-check; repository baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Algebra/Polynomial/signed-root-trace-checks-2026-10-15.json",
+        "source_sha256": "89c10ca8b404f61cc12411d60486dcba1d51fed7694958dc00b4bdb43b24d4ac"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "git_blob": null,
+      "imports": [
+        "Mathlib.Analysis.Complex.Basic",
+        "Mathlib.LinearAlgebra.Lagrange"
+      ],
+      "logical_status": "selected checked finite algebra; explicit hypotheses retained",
+      "module": "GRWTSK.Algebra.Polynomial.ConjugateInterpolation",
+      "namespaces": [
+        "GRWTSK.Polynomial.ConjugateInterpolation"
+      ],
+      "object": "Polynomial",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Algebra/Polynomial/ConjugateInterpolation.lean",
+      "other_consumers": [
+        "docs/mathematics/Algebra/Polynomial/signed-root-traces.md"
+      ],
+      "path": "GRWTSK/Algebra/Polynomial/ConjugateInterpolation.lean",
+      "placement_rationale": "Finite polynomial interpolation and signed-root traces are algebra independent of zeta; validation roles remain subject-local.",
+      "public_declarations": [
+        {
+          "kind": "theorem",
+          "line": 23,
+          "name": "coeff_im_eq_zero_of_eval_compatible"
+        },
+        {
+          "kind": "theorem",
+          "line": 47,
+          "name": "exists_real_interpolate"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Algebra.Polynomial.SignedRootTrace"
+      ],
+      "runner": "python3 -B scripts/check_hermite_trace.py",
+      "sha256": "6906e3f1c5d79fd1b28e96f0ac35cfbd8149544d5a12eb0d98c24ab509a079d4",
+      "source_role": "library",
+      "source_root": "GRWTSK",
+      "subject": "Algebra",
+      "target_path": "GRWTSK/Algebra/Polynomial/ConjugateInterpolation.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path-check; repository baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Algebra/Polynomial/signed-root-trace-checks-2026-10-15.json",
+        "source_sha256": "6906e3f1c5d79fd1b28e96f0ac35cfbd8149544d5a12eb0d98c24ab509a079d4"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -7440,6 +7596,90 @@
         "source_sha256": "39a4f2bb318eb668c425cb26757170e31a09609fc43b09f95c656c5035a4efe0"
       },
       "working_tree_state": "untracked"
+    },
+    {
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Algebra.Polynomial.ConjugateInterpolation",
+        "Mathlib.Tactic.Linarith"
+      ],
+      "logical_status": "selected checked finite algebra; explicit hypotheses retained",
+      "module": "GRWTSK.Algebra.Polynomial.SignedRootTrace",
+      "namespaces": [
+        "GRWTSK.Polynomial.SignedRootTrace"
+      ],
+      "object": "Polynomial",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Algebra/Polynomial/SignedRootTrace.lean",
+      "other_consumers": [
+        "docs/mathematics/Algebra/Polynomial/signed-root-traces.md"
+      ],
+      "path": "GRWTSK/Algebra/Polynomial/SignedRootTrace.lean",
+      "placement_rationale": "Finite polynomial interpolation and signed-root traces are algebra independent of zeta; validation roles remain subject-local.",
+      "public_declarations": [
+        {
+          "kind": "def",
+          "line": 24,
+          "name": "squareTrace"
+        },
+        {
+          "kind": "def",
+          "line": 29,
+          "name": "pairValues"
+        },
+        {
+          "kind": "theorem",
+          "line": 33,
+          "name": "pairValues_conj"
+        },
+        {
+          "kind": "theorem",
+          "line": 50,
+          "name": "squareTrace_of_pair_values"
+        },
+        {
+          "kind": "theorem",
+          "line": 73,
+          "name": "exists_pair_test"
+        },
+        {
+          "kind": "theorem",
+          "line": 85,
+          "name": "squareTrace_eq_real"
+        },
+        {
+          "kind": "theorem",
+          "line": 100,
+          "name": "squareTrace_im_eq_zero"
+        },
+        {
+          "kind": "theorem",
+          "line": 122,
+          "name": "squareTrace_nonneg_iff_real"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Algebra.Polynomial.Checks.Negative.SignedRootTraceModulus",
+        "GRWTSK.Algebra.Polynomial.Checks.Negative.SignedRootTraceNegativeWeight",
+        "GRWTSK.Algebra.Polynomial.Checks.Positive.SignedRootTrace"
+      ],
+      "runner": "python3 -B scripts/check_hermite_trace.py",
+      "sha256": "63697f423370348ef200a0d52326586d7b80c0f47d6fe8463b977d9ac5a4ef6a",
+      "source_role": "library",
+      "source_root": "GRWTSK",
+      "subject": "Algebra",
+      "target_path": "GRWTSK/Algebra/Polynomial/SignedRootTrace.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path-check; repository baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Algebra/Polynomial/signed-root-trace-checks-2026-10-15.json",
+        "source_sha256": "63697f423370348ef200a0d52326586d7b80c0f47d6fe8463b977d9ac5a4ef6a"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
     },
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
