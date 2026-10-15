@@ -15,22 +15,22 @@ These counts measure documentation and source coverage. They do not count accept
 
 ## FiniteVolume
 
-- [Dirichlet joining edge and boundary count error](FiniteVolume/dirichlet-cut.md) — `historical-source-description`.
-- [Finite-volume eigenvalue-count comparison](FiniteVolume/count-comparison.md) — `historical-source-description`.
-- [Repeated blocks, true remainders and phase shifts](FiniteVolume/repeated-blocks.md) — `historical-source-description`.
-- [Sturmian phase partitions and count limits](FiniteVolume/phase-count-limits.md) — `historical-source-description`.
+- [Dirichlet joining edge and boundary count error](FiniteVolume/dirichlet-cut.md).
+- [Finite-volume eigenvalue-count comparison](FiniteVolume/count-comparison.md).
+- [Repeated blocks, true remainders and phase shifts](FiniteVolume/repeated-blocks.md).
+- [Sturmian phase partitions and count limits](FiniteVolume/phase-count-limits.md).
 
 ## FreeDirichletSpectrum
 
-- [Free Dirichlet eigenvalues and sine basis](FreeDirichletSpectrum/eigenvalues.md) — `historical-source-description`.
+- [Free Dirichlet eigenvalues and sine basis](FreeDirichletSpectrum/eigenvalues.md).
 
 ## GapTransport
 
-- [Gap labels, tree coding and faithful transport](GapTransport/labels-and-coding.md) — `literature-and-historical-source-description`.
+- [Gap labels, tree coding and faithful transport](GapTransport/labels-and-coding.md).
 
 ## IntegratedDensityOfStates
 
-- [Free eigenvalue counts and integrated density of states](IntegratedDensityOfStates/free.md) — `historical-source-description`.
+- [Free eigenvalue counts and integrated density of states](IntegratedDensityOfStates/free.md).
 
 ## Sources and verification
 

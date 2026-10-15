@@ -153,7 +153,8 @@
       "GRWTSK/Analysis/LaplaceTransform/ExponentialEnergy.lean"
     ],
     "Algebra/Polynomial": [
-      "GRWTSK/Algebra/Polynomial/ConjugateQuartic.lean"
+      "GRWTSK/Algebra/Polynomial/ConjugateQuartic.lean",
+      "GRWTSK/Algebra/Polynomial/SignedRootTrace.lean"
     ]
   }
 }
