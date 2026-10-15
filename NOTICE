@@ -215,3 +215,25 @@ independent of positive scale and real y in [1/2,2].
 Human direction: grwtsk contributors; adaptation/formalization/checking:
 OpenAI Codex. No independent validation, whole arithmetic/physical detector,
 uniform compact-window seminorm consumer or RH admission is claimed here.
+
+Uniform Gaussian-window Schwartz seminorms
+-----------------------------------------
+GRWTSK/Analysis/MellinTransform/GaussianWindowSeminorms.lean retains
+Apache-2.0 terms. The exact fixed-window/product-rule/seminorm supplier
+chain is adapted from openai/math@1581d4cbdd69a0faf34b2089614fe2a814316a6a,
+lean/OAI/NumberTheory/DirichletL/Detector/GaussianSeminorm.lean,
+raw SHA256 f355f3fe007d6f1f3bb535ca92e0e37e996ffc214669ae3f33cb1a8f2d11b25a,
+Git blob 2ead043c3ef474d221a4f078c990f944a5efb11a. OpenAI remains the
+upstream project author; see LICENSES/OpenAI-Apache-2.0.txt.
+Mathlib Analysis/Calculus/IteratedDeriv/Lemmas.lean retains copyright
+(c) 2023 Chris Birkbeck, authors Chris Birkbeck and Ruben Van de Velde,
+Apache-2.0. Analysis/Distribution/SchwartzSpace/Basic.lean retains
+copyright (c) 2022 Moritz Doll, author Moritz Doll, Apache-2.0.
+Prior Gaussian, smooth-transition, square-root and Cauchy credits remain.
+Actual product-rule and support estimates supply constants independent of
+positive Z and natural j for window derivatives, Schwartz seminorms,
+finite families and two-sided estimates. The zero-scale control concerns
+an actual function value; no nonsmoothness or constructor at zero is claimed.
+Human direction: grwtsk contributors; adaptation/formalization/checking:
+OpenAI Codex. No independent validation, whole ideal/Hecke/calibration/
+physical detector, arithmetic summability or RH admission is claimed here.

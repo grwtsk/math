@@ -1,0 +1,12 @@
+{
+  "schema": "repository-agent-task-v1",
+  "id": "revision-seminorm-source-scout",
+  "owner": "cache_taxonomy",
+  "at": "2026-10-15T21:18:34.922026+00:00",
+  "branch": "main",
+  "base_commit": "18e1e72ea72cdf4c6ca910838f41338c03811f71",
+  "cache_revision": "63b74b16b853db140529976fe75dbc6d8c833bd5a1d868652a6adf1c411124c3",
+  "write_paths": [],
+  "objective": "Independent bounded primary source checks for pinned Mathlib, actual Anthropic public formal mathematics and arxiv original contexts, with OpenAI primary pin. Exact final6-source premise/control/credit review and concise NOT_RUN future gates; no shared source/docs/registry/native writes.",
+  "coordination": "Use allocated files/ignored scratch and append immutable repository progress/completion events. Root owns shared metadata/docs/cache/fresh native admission/commit. Preserve prior/concurrent changes and failed variants/receipts. Mathematical subjects/objects only. Shared native flock .local/math-trust/replay.lock until all children exit; explicit noncomputable recursive mathematical defs, no generated-helper exemptions. No remote writes, branches or migration takeover."
+}

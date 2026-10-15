@@ -369,3 +369,5 @@ import GRWTSK.Combinatorics.DirectedGraph.PrefixInventory
 import GRWTSK.Analysis.MellinTransform.CompactGaussianWindow
 import GRWTSK.Combinatorics.DirectedGraph.ParentTraceDictionary
 import GRWTSK.Analysis.MellinTransform.ScaledGaussianDerivatives
+import GRWTSK.Combinatorics.DirectedGraph.RootedTraceRevision
+import GRWTSK.Analysis.MellinTransform.GaussianWindowSeminorms

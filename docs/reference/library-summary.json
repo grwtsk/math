@@ -2,7 +2,7 @@
   "schema": "mathematical-documentation-inventory-v1",
   "scope": "Current local source paths and maintained documentation metadata; not theorem acceptance",
   "input_sha256": {
-    "docs/reference/documentation-layout.json": "a01b3dcf8c1c9e7f1e418ed09a49e0cb42219b2a4efb197a3ca89ed078ddcdf3",
+    "docs/reference/documentation-layout.json": "73c239cf06594d481ae757c6eeea51966d63b86a5b5e2674d5be56f89c044052",
     "docs/reference/results.json": "544f454120ac34dfb0da29d767bdf9b3e6d4d3085c02f09ac475913975775288",
     "evidence/source-intake.json": "ef9f4145cfe681bc5553cf59c8f389d4d0c58fcca7d784cca9399f08fba803c3",
     "lake-manifest.json": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
@@ -248,9 +248,11 @@
     "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianMissingNormalization.lean",
     "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianMissingPremise.lean",
     "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianWindowMissingRootFactor.lean",
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianWindowNonpositiveScale.lean",
     "GRWTSK/Analysis/MellinTransform/Checks/Negative/ReverseInversionMissingPremise.lean",
     "GRWTSK/Analysis/MellinTransform/Checks/Negative/ScaledGaussianMissingDomain.lean",
     "GRWTSK/Analysis/MellinTransform/Checks/Positive/CompactGaussianWindow.lean",
+    "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianWindowSeminorms.lean",
     "GRWTSK/Analysis/MellinTransform/Checks/Positive/LogarithmicGaussian.lean",
     "GRWTSK/Analysis/MellinTransform/Checks/Positive/NormalizedGaussian.lean",
     "GRWTSK/Analysis/MellinTransform/Checks/Positive/ReverseInversion.lean",
@@ -258,6 +260,7 @@
     "GRWTSK/Analysis/MellinTransform/CompactGaussianWindow.lean",
     "GRWTSK/Analysis/MellinTransform/DyadicBounds.lean",
     "GRWTSK/Analysis/MellinTransform/DyadicIntegralSeries.lean",
+    "GRWTSK/Analysis/MellinTransform/GaussianWindowSeminorms.lean",
     "GRWTSK/Analysis/MellinTransform/LogarithmicGaussian.lean",
     "GRWTSK/Analysis/MellinTransform/NormalizedGaussian.lean",
     "GRWTSK/Analysis/MellinTransform/PositiveCoordinates.lean",
@@ -299,6 +302,7 @@
     "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/ParentTraceMissingRoot.lean",
     "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PathMissingEdgeIdentity.lean",
     "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixInventoryMissingIdentity.lean",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/RootedTraceMissingAgreement.lean",
     "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/UnfoldingMissingCostar.lean",
     "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/EdgeTrace.lean",
     "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/EndpointSection.lean",
@@ -307,6 +311,7 @@
     "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PathOccurrences.lean",
     "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PathUnfolding.lean",
     "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixInventory.lean",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/RootedTraceRevision.lean",
     "GRWTSK/Combinatorics/DirectedGraph/EdgeTrace.lean",
     "GRWTSK/Combinatorics/DirectedGraph/EndpointSection.lean",
     "GRWTSK/Combinatorics/DirectedGraph/OccurrencePrefix.lean",
@@ -314,6 +319,7 @@
     "GRWTSK/Combinatorics/DirectedGraph/PathOccurrences.lean",
     "GRWTSK/Combinatorics/DirectedGraph/PathUnfolding.lean",
     "GRWTSK/Combinatorics/DirectedGraph/PrefixInventory.lean",
+    "GRWTSK/Combinatorics/DirectedGraph/RootedTraceRevision.lean",
     "GRWTSK/Combinatorics/GraphTheory/UnitDistanceGraph/Moser.lean",
     "GRWTSK/Combinatorics/GraphTheory/UnitDistanceGraph/Moser/Checks/DeclarationAudit.lean",
     "GRWTSK/Combinatorics/GraphTheory/UnitDistanceGraph/Moser/Checks/Negative/WrongColor.lean",
@@ -726,16 +732,16 @@
   },
   "counts": {
     "areas": 12,
-    "object_guides": 101,
+    "object_guides": 103,
     "documented_objects": 48,
-    "primary_sources": 97,
-    "lean_modules": 710,
+    "primary_sources": 99,
+    "lean_modules": 716,
     "intake_records": 68,
     "selected_families": 3,
-    "maintained_pages": 136
+    "maintained_pages": 138
   },
   "page_statuses": {
-    "fresh-selected": 38,
+    "fresh-selected": 40,
     "historical": 1,
     "historical-source-description": 54,
     "literature-and-historical-source-description": 3,
@@ -767,40 +773,40 @@
     },
     "Analysis": {
       "title": "Analysis",
-      "object_guides": 25,
+      "object_guides": 26,
       "documented_objects": 13,
-      "primary_sources": 25,
-      "lean_modules": 264,
+      "primary_sources": 26,
+      "lean_modules": 267,
       "intake_records": 39,
       "selected_families": 1,
       "page_statuses": {
-        "fresh-selected": 11,
+        "fresh-selected": 12,
         "historical-source-description": 14
       },
       "declaration_totals": {
-        "declarations": 1526,
-        "theorems": 1237,
-        "parsed_modules": 218,
-        "unparsed_modules": 46
+        "declarations": 1533,
+        "theorems": 1244,
+        "parsed_modules": 220,
+        "unparsed_modules": 47
       }
     },
     "Combinatorics": {
       "title": "Combinatorics",
-      "object_guides": 9,
+      "object_guides": 10,
       "documented_objects": 2,
-      "primary_sources": 8,
-      "lean_modules": 29,
+      "primary_sources": 9,
+      "lean_modules": 32,
       "intake_records": 0,
       "selected_families": 1,
       "page_statuses": {
-        "fresh-selected": 7,
+        "fresh-selected": 8,
         "historical": 1,
         "historical-source-description": 1
       },
       "declaration_totals": {
-        "declarations": 291,
-        "theorems": 188,
-        "parsed_modules": 29,
+        "declarations": 339,
+        "theorems": 215,
+        "parsed_modules": 32,
         "unparsed_modules": 0
       }
     },
@@ -5198,6 +5204,24 @@
       "lake_manifest_sha256": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
       "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d"
     },
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianWindowNonpositiveScale.lean": {
+      "sha256": "e2e4db4820bd154bfb51c74237b9b2dc66b5c0988106f51c2f0312bc7849004e",
+      "counts": {
+        "declarations": 0,
+        "theorems": 0
+      },
+      "errors": [],
+      "kinds": {
+        "example": 1
+      },
+      "status": "parsed",
+      "method": "pinned-lean-parser-explicit-source-commands-v1",
+      "parser_sha256": "3d0b2e20dce89cbe6029b99b9486065e04c6e2b21b2adc1cff4bf31a1bf61046",
+      "counter_sha256": "7451dda0fa34d7b39cc4c7e797dcfb6b69fd8ba5be65956b6434d67149dc741d",
+      "compiler_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+      "lake_manifest_sha256": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
+      "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d"
+    },
     "GRWTSK/Analysis/MellinTransform/Checks/Negative/ReverseInversionMissingPremise.lean": {
       "sha256": "7b1f38a5c2ae34030c0c41048f6b0195eda53e3577f075edaebee8286c699ebd",
       "counts": {
@@ -5243,6 +5267,24 @@
       ],
       "kinds": {},
       "status": "unparsed",
+      "method": "pinned-lean-parser-explicit-source-commands-v1",
+      "parser_sha256": "3d0b2e20dce89cbe6029b99b9486065e04c6e2b21b2adc1cff4bf31a1bf61046",
+      "counter_sha256": "7451dda0fa34d7b39cc4c7e797dcfb6b69fd8ba5be65956b6434d67149dc741d",
+      "compiler_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+      "lake_manifest_sha256": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
+      "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d"
+    },
+    "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianWindowSeminorms.lean": {
+      "sha256": "d4339a2bc10ffffc39a0ee40f4d24600e65ee92903f2933f05d18afd3f61e2ae",
+      "counts": {
+        "declarations": 7,
+        "theorems": 7
+      },
+      "errors": [],
+      "kinds": {
+        "theorem": 7
+      },
+      "status": "parsed",
       "method": "pinned-lean-parser-explicit-source-commands-v1",
       "parser_sha256": "3d0b2e20dce89cbe6029b99b9486065e04c6e2b21b2adc1cff4bf31a1bf61046",
       "counter_sha256": "7451dda0fa34d7b39cc4c7e797dcfb6b69fd8ba5be65956b6434d67149dc741d",
@@ -5370,6 +5412,21 @@
         "theorem": 13
       },
       "status": "parsed",
+      "method": "pinned-lean-parser-explicit-source-commands-v1",
+      "parser_sha256": "3d0b2e20dce89cbe6029b99b9486065e04c6e2b21b2adc1cff4bf31a1bf61046",
+      "counter_sha256": "7451dda0fa34d7b39cc4c7e797dcfb6b69fd8ba5be65956b6434d67149dc741d",
+      "compiler_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+      "lake_manifest_sha256": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
+      "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d"
+    },
+    "GRWTSK/Analysis/MellinTransform/GaussianWindowSeminorms.lean": {
+      "sha256": "dcfa87ebe43582e02c38b1cc820656fde9160d7d633a6a99e6a3ed6b1e3d93d0",
+      "errors": [
+        "GRWTSK/Analysis/MellinTransform/GaussianWindowSeminorms.lean:43:48: error: expected token\n",
+        "GRWTSK/Analysis/MellinTransform/GaussianWindowSeminorms.lean:60:17: error: expected token\n"
+      ],
+      "kinds": {},
+      "status": "unparsed",
       "method": "pinned-lean-parser-explicit-source-commands-v1",
       "parser_sha256": "3d0b2e20dce89cbe6029b99b9486065e04c6e2b21b2adc1cff4bf31a1bf61046",
       "counter_sha256": "7451dda0fa34d7b39cc4c7e797dcfb6b69fd8ba5be65956b6434d67149dc741d",
@@ -6099,6 +6156,24 @@
       "lake_manifest_sha256": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
       "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d"
     },
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/RootedTraceMissingAgreement.lean": {
+      "sha256": "9d8c7142222c6015772e3e418fdda83af6e33d60bc7c11db8a8b27a4ffde3449",
+      "counts": {
+        "declarations": 0,
+        "theorems": 0
+      },
+      "errors": [],
+      "kinds": {
+        "example": 1
+      },
+      "status": "parsed",
+      "method": "pinned-lean-parser-explicit-source-commands-v1",
+      "parser_sha256": "3d0b2e20dce89cbe6029b99b9486065e04c6e2b21b2adc1cff4bf31a1bf61046",
+      "counter_sha256": "7451dda0fa34d7b39cc4c7e797dcfb6b69fd8ba5be65956b6434d67149dc741d",
+      "compiler_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+      "lake_manifest_sha256": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
+      "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d"
+    },
     "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/UnfoldingMissingCostar.lean": {
       "sha256": "d76888ed8dbf6e9126dc4d13971158b770092b86dbe991b0b62fde7302304b65",
       "counts": {
@@ -6258,6 +6333,27 @@
       "lake_manifest_sha256": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
       "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d"
     },
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/RootedTraceRevision.lean": {
+      "sha256": "d87c89b8d6ae6bde49895689f19841e3f5e8a91e2adab1b3950b46851ed9e63c",
+      "counts": {
+        "declarations": 32,
+        "theorems": 18
+      },
+      "errors": [],
+      "kinds": {
+        "def": 10,
+        "example": 3,
+        "instance": 4,
+        "theorem": 18
+      },
+      "status": "parsed",
+      "method": "pinned-lean-parser-explicit-source-commands-v1",
+      "parser_sha256": "3d0b2e20dce89cbe6029b99b9486065e04c6e2b21b2adc1cff4bf31a1bf61046",
+      "counter_sha256": "7451dda0fa34d7b39cc4c7e797dcfb6b69fd8ba5be65956b6434d67149dc741d",
+      "compiler_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+      "lake_manifest_sha256": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
+      "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d"
+    },
     "GRWTSK/Combinatorics/DirectedGraph/EdgeTrace.lean": {
       "sha256": "e1e5f2dd23b6c04a734af4bd95f3f19c15fe4f313d66c5bccff08b3312fb2a59",
       "counts": {
@@ -6390,6 +6486,26 @@
       "kinds": {
         "def": 5,
         "theorem": 18
+      },
+      "status": "parsed",
+      "method": "pinned-lean-parser-explicit-source-commands-v1",
+      "parser_sha256": "3d0b2e20dce89cbe6029b99b9486065e04c6e2b21b2adc1cff4bf31a1bf61046",
+      "counter_sha256": "7451dda0fa34d7b39cc4c7e797dcfb6b69fd8ba5be65956b6434d67149dc741d",
+      "compiler_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+      "lake_manifest_sha256": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
+      "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d"
+    },
+    "GRWTSK/Combinatorics/DirectedGraph/RootedTraceRevision.lean": {
+      "sha256": "784594334cff23da4bc77f62c5cd66cf8006ad381223026f1b7383e519dfef17",
+      "counts": {
+        "declarations": 16,
+        "theorems": 9
+      },
+      "errors": [],
+      "kinds": {
+        "abbrev": 1,
+        "def": 6,
+        "theorem": 9
       },
       "status": "parsed",
       "method": "pinned-lean-parser-explicit-source-commands-v1",
@@ -13721,9 +13837,9 @@
     }
   },
   "declaration_totals": {
-    "declarations": 4988,
-    "theorems": 3641,
-    "parsed_modules": 604,
-    "unparsed_modules": 106
+    "declarations": 5043,
+    "theorems": 3675,
+    "parsed_modules": 609,
+    "unparsed_modules": 107
   }
 }

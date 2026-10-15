@@ -1,0 +1,19 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "gaussian-window-seminorms-formal",
+  "event": "source-freeze",
+  "owner": "cache_adapter",
+  "at": "2026-10-15T21:22:37.752708+00:00",
+  "source_hashes": {
+    "GRWTSK/Analysis/MellinTransform/GaussianWindowSeminorms.lean": "dcfa87ebe43582e02c38b1cc820656fde9160d7d633a6a99e6a3ed6b1e3d93d0",
+    "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianWindowSeminorms.lean": "d4339a2bc10ffffc39a0ee40f4d24600e65ee92903f2933f05d18afd3f61e2ae",
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianWindowNonpositiveScale.lean": "e2e4db4820bd154bfb51c74237b9b2dc66b5c0988106f51c2f0312bc7849004e"
+  },
+  "contract": "exactH/Gfactor/productrule/outsidezero;uniformGderivativesC(a,n),SchwartzC(a,k,n),finiteSC(a,S),twosidedC(A,S)*minr^A,r^-A;constantsbeforeZ>0,j",
+  "positive": "genericderivative/twosided;concreteS={(0,0),(1,2)},a2,Z1;actualA.75/P0nonzero/G0,0,.75nonzero;actualfalseC*0^-1boundforallC",
+  "negative_error_count": 1,
+  "negative_expected_substring": "0 < 0",
+  "negative_actual": "soleApplication type mismatch:le_refl0 has0<=0 expected0<0",
+  "native_state": "allscratchchildrenexited/sharedlockreleased;canonicalfinaldevelopmentpendinggraphslot",
+  "scope": "noZ0nonsmoothnessorSchwartzconstructor0;noarithmeticphysical/RH/continuationclaim;no priorPositiveimports"
+}

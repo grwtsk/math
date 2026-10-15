@@ -1,0 +1,56 @@
+{
+  "schema": "bounded-replay-operational-controls-v1",
+  "at": "2026-10-15T21:28:50.349194+00:00",
+  "sources": [
+    {
+      "path": "scripts/check_rooted_trace_revision.py",
+      "sha256": "3f64ce95f5644f5acaec26236cf839cd4d512548c29ba2f924c5249646a1a5b6"
+    },
+    {
+      "path": "scripts/check_gaussian_window_seminorms.py",
+      "sha256": "0b816beba1d0a235e2151f5f305c33b2cf05ecc9fe8218c5622324db19a3e35a"
+    },
+    {
+      "path": "scripts/test_revision_seminorm_replay_guards.py",
+      "sha256": "8f4763d3f2d98688950efb74774cfb5cd94b108eb95310eb3efd084e497fe74e"
+    },
+    {
+      "path": "scripts/check_math_trust.py",
+      "sha256": "069ca265038960243890b1c4e028637723ddc440854864a61648eb2b2fd99c9d"
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "scripts/test_revision_seminorm_replay_guards.py"
+      ],
+      "exit_code": 0,
+      "log": {
+        "path": ".local/revision-seminorm/root/replay-guards-normal.log",
+        "sha256": "f17e74ae6d4c64bbf7742b3b4c4070447c991e5a061c812e883aa883e88edd81"
+      },
+      "output": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.037s\n\nOK\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "-O",
+        "scripts/test_revision_seminorm_replay_guards.py"
+      ],
+      "exit_code": 0,
+      "log": {
+        "path": ".local/revision-seminorm/root/replay-guards-optimized.log",
+        "sha256": "f3874f1bc83a634fd04abbf35e717328a24a73dc1cffe20a6972ccd456a246ac"
+      },
+      "output": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.046s\n\nOK\n"
+    }
+  ],
+  "controls": [
+    "Two replay drivers times nine generated object-family scenarios: unchanged accepted; main replacement/truncation/deletion, private replacement/deletion, extra server, main/private symlinks rejected.",
+    "Plain/coded diagnostic parser counts every error; each actual negative compile must produce exactly one intended type mismatch."
+  ],
+  "limits": "Bounded Python operational tests only. No Lean proof of hash injectivity, generated object custody, diagnostic parser, filesystem transactions, IO, JSON/Python relation graph or runtime refinement. Correlated source/model review is not independent validation."
+}
