@@ -1,0 +1,26 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "reindex-density-source-scout",
+  "owner": "cache_taxonomy",
+  "at": "2026-10-15T23:04:54.481973+00:00",
+  "kind": "primary-source-context-ready",
+  "context": {
+    "path": ".local/reindex-density-source-scout/7141bac342214855845ce5db1746e39b/review-context.json",
+    "sha256": "06e54f4e81f6ed4c4062eb53b1c176300b18fab7cdcd5c3a3c4ddd92e712ed24",
+    "bytes": 17739
+  },
+  "manifest": {
+    "path": ".local/reindex-density-source-scout/7141bac342214855845ce5db1746e39b/primary-manifest.json",
+    "sha256": "e426e587a3aef2a6cbe800598d9fe0a8f664bf4ceba626bf45e1fc5fb9a5aff9",
+    "bytes": 8642
+  },
+  "status": "NOT_RUN",
+  "review_character": "Correlated same-team primary-source/premise/credit review, not independent validation; native NOT_RUN. Final local bindings await authorfreeze.",
+  "findings": [
+    "The future A0 control must produce actual nonzero window, actual nonzero Fourier via inverse and actual continuous Integrable norm positivity; no desired positive moment may be assumed. Exact pinned APIs are available.",
+    "Actual current density moment weighted Integrable allR is distinct from positiveR power bound; summed theorem retains s>0,Z>0,remote theoremA>=1. Do not claim sharpness from an absent premise.",
+    "Graph source/target/kind reindex preservation plus injectivity distinguishes parallel IDs; any certificate transfer needs actual common rooted payload after inverse transport, not direct old/new numeric ID equality.",
+    "Relation table reindex is distinct from parentdictionary slot compaction. Root remains explicit even empty. Existing taxonomy duplicate guard and runtime-refinement not-established flags stay unchanged."
+  ],
+  "preservation": "No maintained source/docs/sharedmetadata/native/Git/remote writes; old failed/stale source variants/receipts and historical unprovided/corrected source records retained."
+}

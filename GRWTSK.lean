@@ -382,3 +382,5 @@ import GRWTSK.Analysis.MellinTransform.GaussianFourierMoments
 import GRWTSK.Combinatorics.DirectedGraph.RoleRelationTable
 import GRWTSK.Analysis.MellinTransform.GaussianLogFlow
 import GRWTSK.Analysis.MellinTransform.GaussianLogWindow
+import GRWTSK.Combinatorics.DirectedGraph.RoleRelationReindex
+import GRWTSK.Analysis.MellinTransform.GaussianDensityMoments

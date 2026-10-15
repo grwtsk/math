@@ -349,3 +349,30 @@ Matteo Cipollina and Runtian Zhou. Data/Fin/Basic.lean retains copyright
 Apache-2.0. Prior Gaussian, Fourier, Schwartz and derivative credits remain.
 Human direction: grwtsk contributors; adaptation/formalization/checking:
 OpenAI Codex. Correlated model review is not independent validation.
+
+Actual Gaussian Fourier-density moments and dyadic remote sums
+-------------------------------------------------------------
+GRWTSK/Analysis/MellinTransform/GaussianDensityMoments.lean retains Apache-2.0.
+The actual integral-moment and weighted/remote summation proof slices are
+adapted from openai/math@1581d4cbdd69a0faf34b2089614fe2a814316a6a,
+lean/OAI/NumberTheory/DirichletL/Detector/GaussianDensityBudget.lean
+(raw SHA256 42ee10381da1a2003fe309f4b7773c4908bc625eff31f9c23392f82836ba9730,
+Git blob 995f4fa1be3f4dfc968a6af0494437556dab8e9b) and GaussianTailBudget.lean
+(raw SHA256 38f614d4aa36aff2966a4143f0fd73876902f38004d643acf22d3a41716f071b,
+Git blob 19a1a25b04c89d50d99e0fdae1ba1295609e554e).
+OpenAI remains the upstream project author; no individual author occurred in
+those headers. LICENSES/OpenAI-Apache-2.0.txt retains project license terms.
+The actual nonzero-window/Fourier-inverse/positive-integral supplier and
+complete zero-cutoff obstruction are local formalization contributions.
+Mathlib MeasureTheory/Integral/Bochner/Basic.lean retains copyright (c) 2019
+Zhouhang Zhou, authors Zhouhang Zhou, Yury Kudryashov, Sébastien Gouëzel and
+Rémy Degenne. Analysis/Fourier/Notation.lean retains copyright (c) 2025
+Moritz Doll, author Moritz Doll. SchwartzSpace/Fourier.lean retains copyright
+(c) 2024 Sébastien Gouëzel, authors Sébastien Gouëzel and Moritz Doll.
+Combinatorics/Quiver/Prefunctor.lean retains copyright (c) 2021 David Wärn,
+authors David Wärn and Kim Morrison. All retain Apache-2.0; prior individual
+path, Gaussian, Schwartz, real-power, integration and summation credits remain.
+Human direction: grwtsk contributors; adaptation/formalization/checking:
+OpenAI Codex. Correlated source/model review is not independent validation.
+Coupled separation/cutoff-active, physical-row, ideal/Hecke/calibration and
+RH suppliers remain separate; no operational cache refinement is inferred.

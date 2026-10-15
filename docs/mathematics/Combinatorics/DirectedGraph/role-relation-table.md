@@ -41,6 +41,13 @@ uses decidable equality of complete typed edge tags; classical noncomputable
 comparison may supply it. The path/ID equivalence itself requires neither
 decidable vertex equality nor a finite vertex type.
 
+The [relation-table reindexing result](role-relation-reindex.md) now proves
+actual source/target/role-preserving translation of these typed histories.
+Injectivity preserves distinctions; a bijection supplies an inverse into
+common old rooted payloads for explicit certificate reuse. This is separate
+from parent-dictionary storage-slot remapping, and numeric relation indices
+are not stable across revisions without that translation.
+
 ## Verification and boundaries
 
 The [source](../../../../GRWTSK/Combinatorics/DirectedGraph/RoleRelationTable.lean),
