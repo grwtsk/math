@@ -1,0 +1,56 @@
+/-
+Human mathematical direction: R.A. Jacob Martone.
+Candidate algebra implementation: OpenAI ChatGPT. MIT.
+CANDIDATE_SOURCE_ONLY: no native elaboration or axiom audit.
+Intended canonical destination: GRWTSK/Analysis/InnerProductSpace/CoercivityBudget.lean.
+The Fourier and actual Weil-form hypotheses must be supplied independently.
+-/
+import Mathlib.Tactic
+
+set_option autoImplicit false
+namespace GRWTSK.Analysis.CoercivityBudget
+
+/-- A complete low/high frequency bound, with the low-band error retained. -/
+theorem band_split_lower (W energy low high base level cost leakage : ℝ)
+    (hsplit : low + high = energy)
+    (hform : -base * low + level * high - cost * energy ≤ W)
+    (hgap : 0 ≤ level + base) (hleak : low ≤ leakage * energy) :
+    (level - cost - (level + base) * leakage) * energy ≤ W := by
+  have hmul := mul_le_mul_of_nonneg_left hleak hgap
+  nlinarith
+
+/-- Source costs may be enlarged, not silently dropped. -/
+theorem lower_bound_of_cost_le (W energy bound cost upper : ℝ)
+    (henergy : 0 ≤ energy) (hcost : cost ≤ upper)
+    (h : (bound - cost) * energy ≤ W) :
+    (bound - upper) * energy ≤ W := by
+  have := mul_le_mul_of_nonneg_right hcost henergy
+  nlinarith
+
+/-- Denominator-free Schur identity; the mixed term is literal. -/
+theorem schur_identity (a b c x y : ℝ) :
+    c * (a*x^2 + 2*b*x*y + c*y^2) =
+      (c*y+b*x)^2 + (a*c-b^2)*x^2 := by ring
+
+/-- Both diagonal signs alone do not establish this hypothesis. -/
+theorem schur_nonneg (a b c x y : ℝ)
+    (hc : 0 < c) (hschur : 0 ≤ a*c-b^2) :
+    0 ≤ a*x^2+2*b*x*y+c*y^2 := by
+  have hs : 0 ≤ (a*c-b^2)*x^2 := mul_nonneg hschur (sq_nonneg x)
+  have hid := schur_identity a b c x y
+  have hsq := sq_nonneg (c*y+b*x)
+  nlinarith
+
+/-- Add the proposed negative allowance before the Schur test. -/
+theorem schur_lower (a b c allowance x y : ℝ)
+    (hc : 0 < c) (hschur : 0 ≤ (a+allowance)*c-b^2) :
+    -allowance*x^2 ≤ a*x^2+2*b*x*y+c*y^2 := by
+  have h := schur_nonneg (a+allowance) b c x y hc hschur
+  nlinarith
+
+/-- Synthetic counterexample, not a zeta or source eigenvalue. -/
+theorem positive_diagonals_negative_form :
+    (0 : ℝ) < 1 ∧ (1 : ℝ)*1^2+2*2*1*(-1)+1*(-1)^2 = -2 := by
+  norm_num
+
+end GRWTSK.Analysis.CoercivityBudget
