@@ -374,3 +374,5 @@ import GRWTSK.Analysis.MellinTransform.GaussianWindowSeminorms
 import GRWTSK.Combinatorics.DirectedGraph.IncrementalPrefixTable
 import GRWTSK.Analysis.Series.DyadicKernel
 import GRWTSK.Analysis.MellinTransform.GaussianDyadicSummation
+import GRWTSK.Combinatorics.DirectedGraph.PrefixTableState
+import GRWTSK.Analysis.MellinTransform.GaussianRemoteSeminorms

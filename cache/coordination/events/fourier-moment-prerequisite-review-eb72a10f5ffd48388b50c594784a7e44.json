@@ -1,0 +1,46 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "gaussian-remote-seminorms-formal",
+  "owner": "cache_adapter",
+  "event": "bounded-fourier-moment-prerequisite-source-review",
+  "at": "2026-10-15T22:07:02.643670+00:00",
+  "status": "SOURCE_INSPECTED_NOT_REPLAYED",
+  "finding_provenance": "cache_taxonomy located defining source in an already pinned22-source archive; this correlated review then read exact prerequisite proofs. Prior UNPROVIDED frontier is historical and remains preserved.",
+  "source": {
+    "repository": "openai/math",
+    "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+    "path": "lean/OAI/NumberTheory/DirichletL/Mellin/LogProfiles.lean",
+    "raw_url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/Mellin/LogProfiles.lean",
+    "sha256": "ff8735e421a2ee659df15272704206f2d114d7e2a849e8a755d545508f4038be",
+    "git_blob": "4ca0df6768674c87654fe3637be3851c8c6d12cc",
+    "bytes": 66745,
+    "archive": ".local/incremental-summation-source-scout/610dc174d922459a9b9923e1f14fc2dc/lean/OAI/NumberTheory/DirichletL/Mellin/LogProfiles.lean",
+    "license": "Repository Apache-2.0; source has no individual author header; preserve OpenAI project identity and Mathlib imported author notices."
+  },
+  "anchors_one_based_raw": {
+    "fourier_coefficient_moment": 453,
+    "fourier_seminorm_from_derivative_integrals": 789,
+    "uniform_fourier_seminorm_transfer": 810,
+    "uniform_fourier_coefficient_moment": 869,
+    "coefficientMomentBound": 1113,
+    "coefficientMomentBound_nonneg": 1118,
+    "uniform_fourier_one_plus_moment": 1123
+  },
+  "generic_actual_contract": {
+    "object": "g is an actual real-to-complex SchwartzMap; J natural; S,C real nonnegative.",
+    "premise": "For every i<=J+p, S*(p_(0,i)(g)+p_(p,i)(g))<=C where p=volume.integrablePower. No compact support premise in this generic transfer.",
+    "conclusion": "S*integral((1+norm(t))^J*norm(Fourier(g)(t))) <=2^J*(coefficientMomentBound0C+coefficientMomentBoundJC).",
+    "constant": "coefficientMomentBoundJC=V*(V*C+2^(J+p)*(J+p+1)*V*C), V=2^p*integral((1+norm(t))^(-p)). Exactp is left as volume.integrablePower, not silently replaced by a numeric value."
+  },
+  "actual_prerequisite_chain": [
+    "fourier_seminorm_from_derivative_integrals: actual Mathlib Real.pow_mul_norm_iteratedFDeriv_fourier_le applied to a SchwartzMap, with actual smoothness and weighted derivative integrability.",
+    "uniform_fourier_seminorm_transfer: Mathlib SchwartzMap.integral_pow_mul_iteratedFDeriv_le bounds derivative integrals by the actual source seminorm pair; then finite derivative sum.",
+    "fourier_coefficient_moment: same Mathlib integral bound applied to actual Fourier SchwartzMap.",
+    "uniform_fourier_coefficient_moment: actual source-to-Fourier seminorm transfer at0 and J+p, then actual J-moment integral.",
+    "one-plus theorem: actual Schwartz Fourier integrability and pointwise(1+norm(t))^J<=2^J*(1+norm(t)^J), then moments0/J."
+  ],
+  "downstream_gate": "Actual GaussianLogWindow Fourier moment can feed this with proved finite source pairs, R^a>=0, and exact cancellation forR>0; flow/log-window API and proof port remainNOT_RUN locally. An actual Fourier moment consumer of already admitted G windows could instead use the finite family{(0,i),(p,i):i<=J+p}, but is a future proof gate, not proved here.",
+  "bounded_negative_locator_manifest": ".local/fourier-moment-source-locator/27e5c08f24db41349b6433dd00ad3d3f/manifest.json",
+  "native_jobs": 0,
+  "edits": "No Lean/code/native/shared registry/docs changes; only ignored locator archive and immutable event."
+}

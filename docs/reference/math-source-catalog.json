@@ -5996,20 +5996,20 @@
     }
   ],
   "counts_by_operation": {
-    "add": 110,
+    "add": 116,
     "keep": 336,
     "move": 206
   },
   "counts_by_role": {
     "audit-driver": 35,
-    "library": 373,
-    "negative-control": 132,
-    "positive-check": 112
+    "library": 375,
+    "negative-control": 134,
+    "positive-check": 114
   },
   "counts_by_subject": {
     "Algebra": 19,
-    "Analysis": 230,
-    "Combinatorics": 35,
+    "Analysis": 233,
+    "Combinatorics": 38,
     "Data": 1,
     "DynamicalSystems": 16,
     "GroupTheory": 4,
@@ -6021,9 +6021,9 @@
     "Order": 6,
     "Spectral": 25
   },
-  "present_lean_source_count": 715,
+  "present_lean_source_count": 721,
   "schema": "grwtsk-math-source-catalog-v1",
-  "source_count": 652,
+  "source_count": 658,
   "sources": [
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -6160,6 +6160,7 @@
         "GRWTSK.Analysis.LaplaceTransform.PolynomialEnergyHolomorphy",
         "GRWTSK.Analysis.MellinTransform.CompactGaussianWindow",
         "GRWTSK.Analysis.MellinTransform.GaussianDyadicSummation",
+        "GRWTSK.Analysis.MellinTransform.GaussianRemoteSeminorms",
         "GRWTSK.Analysis.MellinTransform.GaussianWindowSeminorms",
         "GRWTSK.Analysis.MellinTransform.LogarithmicGaussian",
         "GRWTSK.Analysis.MellinTransform.NormalizedGaussian",
@@ -6190,6 +6191,7 @@
         "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences",
         "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding",
         "GRWTSK.Combinatorics.DirectedGraph.PrefixInventory",
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableState",
         "GRWTSK.Combinatorics.DirectedGraph.RootedTraceRevision",
         "GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.Moser",
         "GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.MoserCoordinates",
@@ -6573,7 +6575,7 @@
         "GRWTSK/Logic/ProofChecking/Checks/OwnedDeclarationAudit.lean"
       ],
       "runner": "python3 -B scripts/check_ccc_energy.py",
-      "sha256": "e38ca161303d7f1220db600b1b45e834e327bafe300dfd8b1ba538254dd64284",
+      "sha256": "8e1e0c89f3a2f9229db65cc524c492d23de16d0e8fe9f68af327d6740babaa60",
       "source_role": "library",
       "source_root": ".",
       "subject": "Library",
@@ -6582,7 +6584,7 @@
         "inventory": "observed-current-bytes",
         "layout": "repository baseline remains failed",
         "lean": "umbrella not replayed after selected import additions",
-        "source_sha256": "e38ca161303d7f1220db600b1b45e834e327bafe300dfd8b1ba538254dd64284"
+        "source_sha256": "8e1e0c89f3a2f9229db65cc524c492d23de16d0e8fe9f68af327d6740babaa60"
       },
       "working_tree_state": "tracked-modified"
     },
@@ -22482,6 +22484,52 @@
         "grwtsk contributors: human direction",
         "OpenAI Codex: local formalization/adaptation/checking",
         "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: GaussianTailBudget weighted/remote proof shape adapted to actual Gaussian Schwartz seminorms; imported Mathlib individual author credits retained"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/state-remote-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Actual finite Gaussian Schwartz seminorm profile, Z>0, r=2^j/Z, real weight k; existing all-real power estimates and actual scalar kernel supplier.",
+        "Weighted and remote cutoff Summable/tsum bound with s>0, A>=1, natural N; constants before positive Z and cutoff A, plus value corollary uniform in y.",
+        "Actual missing-cutoff boundary controls; original Gaussian density/moment/Hecke/physical suppliers remain open."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianRemoteSeminorms"
+      ],
+      "license": "Apache-2.0",
+      "logical_status": "intended rejected control; no theorem admission",
+      "module": "GRWTSK.Analysis.MellinTransform.Checks.Negative.GaussianRemoteMissingCutoff",
+      "namespaces": [],
+      "object": "MellinTransform/Checks/Negative",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianRemoteMissingCutoff.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianRemoteMissingCutoff.lean",
+      "placement_rationale": "Weighted Gaussian Schwartz seminorms and actual remote cutoff sums belong to Analysis/MellinTransform, consuming the exact cutoff/window and scaled Gaussian suppliers.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B scripts/check_gaussian_remote_seminorms.py",
+      "sha256": "611fc9e7317222314f57794e909c8482ee45bf30371cd19d6bd0e92840a17d77",
+      "source_role": "negative-control",
+      "source_root": "GRWTSK",
+      "subject": "Analysis",
+      "target_path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianRemoteMissingCutoff.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Analysis/MellinTransform/gaussian-remote-seminorms-checks-2026-10-15.json",
+        "source_sha256": "611fc9e7317222314f57794e909c8482ee45bf30371cd19d6bd0e92840a17d77"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
         "OpenAI: exact QuantitativePassage scalar dyadic proof slice and GaussianSummation consumer; Mathlib power/geometric-series/Schwartz authors retain individual credit"
       ],
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -22914,6 +22962,107 @@
         "lean": "see immutable selected replay receipt",
         "replay_binding": "evidence/Analysis/MellinTransform/gaussian-dyadic-summation-checks-2026-10-15.json",
         "source_sha256": "c8044b4c445d92b3baf68c12b58a6da3f33351de7088d9009bea56e3556b2f45"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: GaussianTailBudget weighted/remote proof shape adapted to actual Gaussian Schwartz seminorms; imported Mathlib individual author credits retained"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/state-remote-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Actual finite Gaussian Schwartz seminorm profile, Z>0, r=2^j/Z, real weight k; existing all-real power estimates and actual scalar kernel supplier.",
+        "Weighted and remote cutoff Summable/tsum bound with s>0, A>=1, natural N; constants before positive Z and cutoff A, plus value corollary uniform in y.",
+        "Actual missing-cutoff boundary controls; original Gaussian density/moment/Hecke/physical suppliers remain open."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Analysis.MellinTransform.GaussianRemoteSeminorms"
+      ],
+      "license": "Apache-2.0",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianRemoteSeminorms",
+      "namespaces": [
+        "GRWTSK.Analysis.MellinTransform.GaussianRemoteSeminorms.Checks"
+      ],
+      "object": "MellinTransform/Checks/Positive",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianRemoteSeminorms.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianRemoteSeminorms.lean",
+      "placement_rationale": "Weighted Gaussian Schwartz seminorms and actual remote cutoff sums belong to Analysis/MellinTransform, consuming the exact cutoff/window and scaled Gaussian suppliers.",
+      "public_declarations": [
+        {
+          "kind": "theorem",
+          "line": 11,
+          "name": "weighted_generic"
+        },
+        {
+          "kind": "theorem",
+          "line": 17,
+          "name": "remote_generic"
+        },
+        {
+          "kind": "theorem",
+          "line": 23,
+          "name": "remote_values_generic"
+        },
+        {
+          "kind": "theorem",
+          "line": 29,
+          "name": "remote_values_one"
+        },
+        {
+          "kind": "theorem",
+          "line": 33,
+          "name": "gaussian_positive_scale_nonzero"
+        },
+        {
+          "kind": "theorem",
+          "line": 56,
+          "name": "remote_zero_cutoff_eq"
+        },
+        {
+          "kind": "theorem",
+          "line": 62,
+          "name": "remote_zero_cutoff_summable"
+        },
+        {
+          "kind": "theorem",
+          "line": 67,
+          "name": "remote_zero_cutoff_term_pos"
+        },
+        {
+          "kind": "theorem",
+          "line": 71,
+          "name": "remote_zero_cutoff_sum_pos"
+        },
+        {
+          "kind": "theorem",
+          "line": 74,
+          "name": "remote_zero_cutoff_bound_false"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK.Analysis.MellinTransform.Checks.Negative.GaussianRemoteMissingCutoff"
+      ],
+      "runner": "python3 -B scripts/check_gaussian_remote_seminorms.py",
+      "sha256": "f28eb9ef42a1e20a36c90c41ef5e1a37db521a26059e140794357ade4f5e5973",
+      "source_role": "positive-check",
+      "source_root": "GRWTSK",
+      "subject": "Analysis",
+      "target_path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianRemoteSeminorms.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Analysis/MellinTransform/gaussian-remote-seminorms-checks-2026-10-15.json",
+        "source_sha256": "f28eb9ef42a1e20a36c90c41ef5e1a37db521a26059e140794357ade4f5e5973"
       },
       "working_tree_state": "untracked-at-selected-replay"
     },
@@ -23422,7 +23571,8 @@
       ],
       "reverse_consumers": [
         "GRWTSK",
-        "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianDyadicSummation"
+        "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianDyadicSummation",
+        "GRWTSK.Analysis.MellinTransform.GaussianRemoteSeminorms"
       ],
       "runner": "python3 -B scripts/check_gaussian_dyadic_summation.py",
       "sha256": "1f0129ffe0408983f6b19be9ae8fb40998105ce3b88e1e7fcf1a2e625eb8ced0",
@@ -23436,6 +23586,118 @@
         "lean": "see immutable selected replay receipt",
         "replay_binding": "evidence/Analysis/MellinTransform/gaussian-dyadic-summation-checks-2026-10-15.json",
         "source_sha256": "1f0129ffe0408983f6b19be9ae8fb40998105ce3b88e1e7fcf1a2e625eb8ced0"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: GaussianTailBudget weighted/remote proof shape adapted to actual Gaussian Schwartz seminorms; imported Mathlib individual author credits retained"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/state-remote-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Actual finite Gaussian Schwartz seminorm profile, Z>0, r=2^j/Z, real weight k; existing all-real power estimates and actual scalar kernel supplier.",
+        "Weighted and remote cutoff Summable/tsum bound with s>0, A>=1, natural N; constants before positive Z and cutoff A, plus value corollary uniform in y.",
+        "Actual missing-cutoff boundary controls; original Gaussian density/moment/Hecke/physical suppliers remain open."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Analysis.MellinTransform.GaussianDyadicSummation"
+      ],
+      "license": "Apache-2.0",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.Analysis.MellinTransform.GaussianRemoteSeminorms",
+      "namespaces": [
+        "GRWTSK.Analysis.MellinTransform.GaussianRemoteSeminorms"
+      ],
+      "object": "MellinTransform",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Analysis/MellinTransform/GaussianRemoteSeminorms.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Analysis/MellinTransform/GaussianRemoteSeminorms.lean",
+      "placement_rationale": "Weighted Gaussian Schwartz seminorms and actual remote cutoff sums belong to Analysis/MellinTransform, consuming the exact cutoff/window and scaled Gaussian suppliers.",
+      "public_declarations": [
+        {
+          "kind": "def",
+          "line": 24,
+          "name": "gaussianSeminormProfile"
+        },
+        {
+          "kind": "lemma",
+          "line": 27,
+          "name": "gaussianSeminormProfile_nonneg"
+        },
+        {
+          "kind": "def",
+          "line": 32,
+          "name": "gaussianWeightedSeminorm"
+        },
+        {
+          "kind": "lemma",
+          "line": 35,
+          "name": "gaussianWeightedSeminorm_nonneg"
+        },
+        {
+          "kind": "lemma",
+          "line": 39,
+          "name": "gaussianWeightedSeminorm_power_bound"
+        },
+        {
+          "kind": "lemma",
+          "line": 55,
+          "name": "gaussianWeightedSeminorm_polynomial_decay"
+        },
+        {
+          "kind": "theorem",
+          "line": 89,
+          "name": "gaussianWeightedSeminorm_summed"
+        },
+        {
+          "kind": "def",
+          "line": 117,
+          "name": "gaussianRemoteSeminorm"
+        },
+        {
+          "kind": "theorem",
+          "line": 122,
+          "name": "gaussianRemoteSeminorm_summed"
+        },
+        {
+          "kind": "def",
+          "line": 186,
+          "name": "gaussianRemoteValue"
+        },
+        {
+          "kind": "lemma",
+          "line": 193,
+          "name": "gaussianRemoteValue_nonneg"
+        },
+        {
+          "kind": "theorem",
+          "line": 197,
+          "name": "gaussianRemoteValue_summed"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianRemoteSeminorms"
+      ],
+      "runner": "python3 -B scripts/check_gaussian_remote_seminorms.py",
+      "sha256": "e50de8626a4418b547123c0f37d94b9f3caef08a9820639524e6bd61da2061a9",
+      "source_role": "library",
+      "source_root": "GRWTSK",
+      "subject": "Analysis",
+      "target_path": "GRWTSK/Analysis/MellinTransform/GaussianRemoteSeminorms.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Analysis/MellinTransform/gaussian-remote-seminorms-checks-2026-10-15.json",
+        "source_sha256": "e50de8626a4418b547123c0f37d94b9f3caef08a9820639524e6bd61da2061a9"
       },
       "working_tree_state": "untracked-at-selected-replay"
     },
@@ -26515,6 +26777,53 @@
         "Lean and Mathlib: upstream APIs and proofs"
       ],
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/state-remote-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Arbitrary stored complete-prefix D/N/root/realrefs satisfies explicit structural invariant; actual parent expansion and checked decoding must be derived, not assumed.",
+        "Stable update literally copies old dictionary/cells/references and appends only needed full prefixes and actual new rows; derive invariant preservation and actual ordered occurrence recovery.",
+        "Actual repeated-update history composition versus potentially different grouped representations. Missing-prefix closure counterexample; no executable refinement or inherited full-row criterion."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableState"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "logical_status": "intended rejected control; no theorem admission",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.PrefixTableMissingClosure",
+      "namespaces": [
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableState.Checks.Negative"
+      ],
+      "object": "DirectedGraph/Checks/Negative",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixTableMissingClosure.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixTableMissingClosure.lean",
+      "placement_rationale": "Arbitrary structural rooted prefix-table states and actual stable updates belong to Combinatorics/DirectedGraph; generic certificate laws remain in Logic/FiniteSequences.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B scripts/check_prefix_table_state.py",
+      "sha256": "44914e813a0f5682ffb5620ebfea33fa094701ba4d0a11b940266847b2a9f91b",
+      "source_role": "negative-control",
+      "source_root": "GRWTSK",
+      "subject": "Combinatorics",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixTableMissingClosure.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/prefix-table-state-checks-2026-10-15.json",
+        "source_sha256": "44914e813a0f5682ffb5620ebfea33fa094701ba4d0a11b940266847b2a9f91b"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
       "design_reference": "cache/research/revision-seminorm-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
       "explicit_premises": [
         "Actual expanded parent dictionaries and original ordered key/index references; bind retained outer root even for an empty history. Full-tag equality supplied, with vertex equality additionally supplied for actual certificate packing.",
@@ -27531,6 +27840,221 @@
         "Lean and Mathlib: upstream APIs and proofs"
       ],
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/state-remote-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Arbitrary stored complete-prefix D/N/root/realrefs satisfies explicit structural invariant; actual parent expansion and checked decoding must be derived, not assumed.",
+        "Stable update literally copies old dictionary/cells/references and appends only needed full prefixes and actual new rows; derive invariant preservation and actual ordered occurrence recovery.",
+        "Actual repeated-update history composition versus potentially different grouped representations. Missing-prefix closure counterexample; no executable refinement or inherited full-row criterion."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableState"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableState",
+      "namespaces": [
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableState.Checks.Positive"
+      ],
+      "object": "DirectedGraph/Checks/Positive",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableState.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableState.lean",
+      "placement_rationale": "Arbitrary structural rooted prefix-table states and actual stable updates belong to Combinatorics/DirectedGraph; generic certificate laws remain in Logic/FiniteSequences.",
+      "public_declarations": [
+        {
+          "kind": "def",
+          "line": 20,
+          "name": "falseTag"
+        },
+        {
+          "kind": "def",
+          "line": 23,
+          "name": "trueTag"
+        },
+        {
+          "kind": "theorem",
+          "line": 26,
+          "name": "tags_distinct"
+        },
+        {
+          "kind": "def",
+          "line": 32,
+          "name": "falseOccurrence"
+        },
+        {
+          "kind": "def",
+          "line": 35,
+          "name": "trueOccurrence"
+        },
+        {
+          "kind": "def",
+          "line": 38,
+          "name": "firstRows"
+        },
+        {
+          "kind": "def",
+          "line": 41,
+          "name": "secondRows"
+        },
+        {
+          "kind": "def",
+          "line": 44,
+          "name": "initial"
+        },
+        {
+          "kind": "def",
+          "line": 46,
+          "name": "sequential"
+        },
+        {
+          "kind": "def",
+          "line": 48,
+          "name": "combined"
+        },
+        {
+          "kind": "theorem",
+          "line": 50,
+          "name": "first_inventory"
+        },
+        {
+          "kind": "theorem",
+          "line": 55,
+          "name": "second_inventory"
+        },
+        {
+          "kind": "theorem",
+          "line": 59,
+          "name": "combined_inventory"
+        },
+        {
+          "kind": "theorem",
+          "line": 65,
+          "name": "first_dictionary"
+        },
+        {
+          "kind": "theorem",
+          "line": 71,
+          "name": "sequential_dictionary"
+        },
+        {
+          "kind": "theorem",
+          "line": 77,
+          "name": "combined_dictionary"
+        },
+        {
+          "kind": "theorem",
+          "line": 83,
+          "name": "sequential_wellFormed"
+        },
+        {
+          "kind": "theorem",
+          "line": 86,
+          "name": "combined_wellFormed"
+        },
+        {
+          "kind": "theorem",
+          "line": 89,
+          "name": "sequential_actual_decode"
+        },
+        {
+          "kind": "theorem",
+          "line": 94,
+          "name": "combined_actual_decode"
+        },
+        {
+          "kind": "theorem",
+          "line": 99,
+          "name": "actual_grouping_counterexample"
+        },
+        {
+          "kind": "theorem",
+          "line": 108,
+          "name": "sequential_old_slots_retained"
+        },
+        {
+          "kind": "def",
+          "line": 126,
+          "name": "seeded"
+        },
+        {
+          "kind": "theorem",
+          "line": 129,
+          "name": "seeded_dictionary"
+        },
+        {
+          "kind": "theorem",
+          "line": 139,
+          "name": "seeded_wellFormed"
+        },
+        {
+          "kind": "def",
+          "line": 152,
+          "name": "missingParent"
+        },
+        {
+          "kind": "theorem",
+          "line": 156,
+          "name": "missingParent_nodup"
+        },
+        {
+          "kind": "theorem",
+          "line": 159,
+          "name": "missingParent_rooted"
+        },
+        {
+          "kind": "theorem",
+          "line": 166,
+          "name": "missingParent_cells"
+        },
+        {
+          "kind": "theorem",
+          "line": 170,
+          "name": "missingParent_references"
+        },
+        {
+          "kind": "theorem",
+          "line": 176,
+          "name": "missingParent_not_closed"
+        },
+        {
+          "kind": "theorem",
+          "line": 183,
+          "name": "missingParent_not_wellFormed"
+        },
+        {
+          "kind": "theorem",
+          "line": 187,
+          "name": "actual_missing_parent_failure"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.PrefixTableMissingClosure"
+      ],
+      "runner": "python3 -B scripts/check_prefix_table_state.py",
+      "sha256": "9dde5e756db1c4aa1c7be3dcf00a58b98577c9c4731d3b789923fb9f35e8d1bb",
+      "source_role": "positive-check",
+      "source_root": "GRWTSK",
+      "subject": "Combinatorics",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableState.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/prefix-table-state-checks-2026-10-15.json",
+        "source_sha256": "9dde5e756db1c4aa1c7be3dcf00a58b98577c9c4731d3b789923fb9f35e8d1bb"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
       "design_reference": "cache/research/revision-seminorm-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
       "explicit_premises": [
         "Actual expanded parent dictionaries and original ordered key/index references; bind retained outer root even for an empty history. Full-tag equality supplied, with vertex equality additionally supplied for actual certificate packing.",
@@ -28169,7 +28693,8 @@
       ],
       "reverse_consumers": [
         "GRWTSK",
-        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.IncrementalPrefixTable"
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.IncrementalPrefixTable",
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableState"
       ],
       "runner": "python3 -B scripts/check_incremental_prefix_table.py",
       "sha256": "dc6e8066e3539897464cdfe3bf1d31797ca76baae11066a79c0d0f0c5c7ffa37",
@@ -29028,6 +29553,257 @@
         "lean": "see immutable selected replay receipt",
         "replay_binding": "evidence/Combinatorics/DirectedGraph/prefix-inventory-checks-2026-10-15.json",
         "source_sha256": "fa7395f0c55943562274019d96e97e25deaea20defdf9d6f2d8a12d029e743c9"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/state-remote-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Arbitrary stored complete-prefix D/N/root/realrefs satisfies explicit structural invariant; actual parent expansion and checked decoding must be derived, not assumed.",
+        "Stable update literally copies old dictionary/cells/references and appends only needed full prefixes and actual new rows; derive invariant preservation and actual ordered occurrence recovery.",
+        "Actual repeated-update history composition versus potentially different grouped representations. Missing-prefix closure counterexample; no executable refinement or inherited full-row criterion."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.IncrementalPrefixTable"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableState",
+      "namespaces": [
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableState"
+      ],
+      "object": "DirectedGraph",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableState.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableState.lean",
+      "placement_rationale": "Arbitrary structural rooted prefix-table states and actual stable updates belong to Combinatorics/DirectedGraph; generic certificate laws remain in Logic/FiniteSequences.",
+      "public_declarations": [
+        {
+          "kind": "structure",
+          "line": 32,
+          "name": "State"
+        },
+        {
+          "kind": "def",
+          "line": 38,
+          "name": "rawPacked"
+        },
+        {
+          "kind": "def",
+          "line": 41,
+          "name": "representation"
+        },
+        {
+          "kind": "def",
+          "line": 44,
+          "name": "decode"
+        },
+        {
+          "kind": "structure",
+          "line": 50,
+          "name": "WellFormed"
+        },
+        {
+          "kind": "theorem",
+          "line": 59,
+          "name": "node_lookup"
+        },
+        {
+          "kind": "theorem",
+          "line": 66,
+          "name": "parent_lookup"
+        },
+        {
+          "kind": "theorem",
+          "line": 73,
+          "name": "expand_state"
+        },
+        {
+          "kind": "theorem",
+          "line": 99,
+          "name": "decodeSlot_state"
+        },
+        {
+          "kind": "theorem",
+          "line": 107,
+          "name": "expandDictionary_state"
+        },
+        {
+          "kind": "theorem",
+          "line": 132,
+          "name": "expandedPacked_state"
+        },
+        {
+          "kind": "theorem",
+          "line": 137,
+          "name": "decode_eq_unpack"
+        },
+        {
+          "kind": "theorem",
+          "line": 142,
+          "name": "unpack_success"
+        },
+        {
+          "kind": "theorem",
+          "line": 171,
+          "name": "decode_success"
+        },
+        {
+          "kind": "theorem",
+          "line": 177,
+          "name": "output_valid"
+        },
+        {
+          "kind": "def",
+          "line": 187,
+          "name": "extendedDictionary"
+        },
+        {
+          "kind": "theorem",
+          "line": 192,
+          "name": "mem_extended_iff"
+        },
+        {
+          "kind": "def",
+          "line": 201,
+          "name": "extendedNodes"
+        },
+        {
+          "kind": "def",
+          "line": 207,
+          "name": "basePacked"
+        },
+        {
+          "kind": "def",
+          "line": 211,
+          "name": "realPacked"
+        },
+        {
+          "kind": "theorem",
+          "line": 215,
+          "name": "base_valid"
+        },
+        {
+          "kind": "theorem",
+          "line": 222,
+          "name": "real_dictionary"
+        },
+        {
+          "kind": "def",
+          "line": 238,
+          "name": "update"
+        },
+        {
+          "kind": "theorem",
+          "line": 244,
+          "name": "old_cell_stable"
+        },
+        {
+          "kind": "theorem",
+          "line": 259,
+          "name": "extended_cells"
+        },
+        {
+          "kind": "theorem",
+          "line": 272,
+          "name": "update_wellFormed"
+        },
+        {
+          "kind": "theorem",
+          "line": 292,
+          "name": "prefixes_retained"
+        },
+        {
+          "kind": "theorem",
+          "line": 299,
+          "name": "unpack_base"
+        },
+        {
+          "kind": "theorem",
+          "line": 306,
+          "name": "rawPacked_update"
+        },
+        {
+          "kind": "theorem",
+          "line": 311,
+          "name": "unpack_update"
+        },
+        {
+          "kind": "theorem",
+          "line": 320,
+          "name": "decode_update"
+        },
+        {
+          "kind": "theorem",
+          "line": 326,
+          "name": "decode_two_updates"
+        },
+        {
+          "kind": "theorem",
+          "line": 337,
+          "name": "decode_grouped"
+        },
+        {
+          "kind": "theorem",
+          "line": 343,
+          "name": "update_recovers"
+        },
+        {
+          "kind": "def",
+          "line": 359,
+          "name": "ofOneStep"
+        },
+        {
+          "kind": "theorem",
+          "line": 366,
+          "name": "ofOneStep_wellFormed"
+        },
+        {
+          "kind": "theorem",
+          "line": 379,
+          "name": "decode_ofOneStep"
+        },
+        {
+          "kind": "def",
+          "line": 383,
+          "name": "empty"
+        },
+        {
+          "kind": "theorem",
+          "line": 385,
+          "name": "empty_wellFormed"
+        },
+        {
+          "kind": "theorem",
+          "line": 396,
+          "name": "decode_empty"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableState"
+      ],
+      "runner": "python3 -B scripts/check_prefix_table_state.py",
+      "sha256": "bc2398f5aae427a813c22b6025b9ca41c99c6bbfb9b9228ce49d1326a9870c3a",
+      "source_role": "library",
+      "source_root": "GRWTSK",
+      "subject": "Combinatorics",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableState.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/prefix-table-state-checks-2026-10-15.json",
+        "source_sha256": "bc2398f5aae427a813c22b6025b9ca41c99c6bbfb9b9228ce49d1326a9870c3a"
       },
       "working_tree_state": "untracked-at-selected-replay"
     },

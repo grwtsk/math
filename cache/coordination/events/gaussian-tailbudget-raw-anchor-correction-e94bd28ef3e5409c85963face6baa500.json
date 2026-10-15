@@ -1,0 +1,28 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "state-remote-source-scout",
+  "event": "raw-source-anchor-correction",
+  "owner": "cache_taxonomy",
+  "at": "2026-10-15T22:00:11.048189+00:00",
+  "source": "openai/math@1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/Detector/GaussianTailBudget.lean",
+  "source_sha256": "38f614d4aa36aff2966a4143f0fd73876902f38004d643acf22d3a41716f071b",
+  "old_context": {
+    "path": ".local/state-remote-source-scout/4f3b0a0ef1724a3ca08237286c1db3a8/review-context.json",
+    "sha256": "521c9294c42d88de61721538f178340b446520cecb44ac8991a8641af197118a"
+  },
+  "corrected_context": {
+    "path": ".local/state-remote-source-scout/4f3b0a0ef1724a3ca08237286c1db3a8/review-context-r2.json",
+    "sha256": "b7505abe503fa7d40aa5982c23e4cef814878f5e0eff301140fd9475c5afba3e",
+    "bytes": 11477
+  },
+  "exact_raw_anchors": {
+    "gaussianWeightedMoment": 10,
+    "gaussianWeightedMoment_nonneg": 13,
+    "gaussianWeightedMoment_power_bound": 18,
+    "gaussianWeightedMoment_polynomial_decay": 33,
+    "gaussianWeightedMoment_summed": 61,
+    "gaussianRemoteMoment": 87,
+    "gaussianRemoteMoment_summed": 93
+  },
+  "correction": "Inherited provisional summed57/remote87 references do not identify actual raw theorem declaration lines. Actual weighted summed61, remote definition87, remote summed93. Corrected review context used for final reviews; old context/progress kept immutable. Source bytes/proofs/premises/native/custody statuses unchanged."
+}
