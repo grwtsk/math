@@ -1,0 +1,54 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "incremental-composition-formal",
+  "status": "api_stable_kernel_checked",
+  "owner": "indexed_dictionary",
+  "source_sha256": {
+    "GRWTSK/Logic/FiniteSequences/IncrementalComposition.lean": "7dbd7e782e1c21e8855223efa03b1d4c690eddcc3df8c7a8f7c8da6c722ac89c",
+    "GRWTSK/Logic/FiniteSequences/Checks/Positive/IncrementalComposition.lean": "21067dc0e6cc6947312a592542d00ff990a14a3183d130d33875e1b238d23dea",
+    "GRWTSK/Logic/FiniteSequences/Checks/Negative/IncrementalCompositionRepresentation.lean": "c73ccb9c485298ccdcdfd289e88609c4bf7b23dc92a247473ee12cf3a7c15e36"
+  },
+  "module": "GRWTSK.Logic.FiniteSequences.IncrementalComposition",
+  "namespace": "GRWTSK.Logic.FiniteSequences.IncrementalComposition",
+  "imports": [
+    "GRWTSK.Logic.FiniteSequences.IncrementalDictionary"
+  ],
+  "theorems": {
+    "unpack_appendEntries_compose": "[DecidableEq Payload] \u2192 Valid original \u2192 unpack (appendEntries (appendEntries original first) second) = unpack (appendEntries original (first ++ second))",
+    "unpack_appendEntries_twice_pack": "[DecidableEq Payload] \u2192 unpack (appendEntries (appendEntries (pack oldRows) first) second) = some (oldRows ++ (first ++ second))",
+    "sequential_representation_counterexample": "From pack [], batches [(11,7),(12,8)] then [(13,7)] yield dictionary[7,8]/refs[(11,0),(12,1),(13,0)] versus combined dictionary[8,7]/refs[(11,1),(12,0),(13,1)]. Actual decoded lists are both [(11,7),(12,8),(13,7)] while full Packed values differ."
+  },
+  "checks": [
+    {
+      "kind": "library",
+      "trust": 0,
+      "fatal_warnings": true,
+      "exit_code": 0,
+      "receipt": ".local/incremental-composition/20261015T181541.418190Z-library.json"
+    },
+    {
+      "kind": "positive",
+      "trust": 0,
+      "fatal_warnings": true,
+      "exit_code": 0,
+      "receipt": ".local/incremental-composition/20261015T181542.024193Z-positive.json"
+    },
+    {
+      "kind": "negative",
+      "trust": 0,
+      "fatal_warnings": true,
+      "exit_code": 1,
+      "passed_intended_type_mismatch": true,
+      "receipt": ".local/incremental-composition/20261015T181542.651776Z-negative.json",
+      "diagnostic": "unpack_appendEntries_compose proves unpack(seq)=unpack(combined), but target is seq=combined; exactly one Type mismatch."
+    }
+  ],
+  "scout_and_whitespace_event": "cache/coordination/events/20261015T181512Z-incremental-composition-source-51a37360.json",
+  "native_coordination": "Shared .local/math-trust/replay.lock acquired for entire successful library/positive/negative run; competing_jobs empty at start. All this worker native processes exited and lock released before this event. Initial competing-job deferral preserved.",
+  "verified_olean_directory": ".local/incremental-composition/build",
+  "dependency_objects": "Copied exact prior native audited IncrementalDictionary local closure objects into task build; verified current dependency source bytes against accepted receipt. Pinned dependency search paths reused, canonical project objects excluded. Root fresh closure/census audit still pending.",
+  "limits": "Equality of actual decoded lists, with Valid original premise; no injectivity of unpack or full representation equality, no runtime/byte/hash/IO refinement.",
+  "remaining": [
+    "Root fresh native audit/harness admission and metadata; final structural/whitespace completion event follows."
+  ]
+}
