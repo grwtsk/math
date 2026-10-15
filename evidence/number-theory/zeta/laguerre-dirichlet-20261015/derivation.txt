@@ -1,0 +1,266 @@
+Prime-discrepancy Laguerre moments and the complete Dirichlet phase pairing
+=======================================================================
+
+Direction: R.A. Jacob Martone. Deductions/implementation: OpenAI ChatGPT. MIT.
+Source base: grwtsk/math at d1ae4ef6c9fd5a246f1a9fbff56097a498366fd8.
+These are written analytic deductions and separately executed finite checks.
+They do not prove an all-depth arithmetic upper bound or RH. No historical
+novelty is claimed for the classical Laplace, Laguerre, or Fourier identities.
+
+1. The unchanged source; cancel gamma before numerical extraction
+----------------------------------------------------------------
+Use Delta(x)=sum_(n<=x) Lambda(n)-x+1, Delta(1)=0, every prime power retained,
+s(w)=(3+w)/(2(1-w)), a(w)=xi'(s(w))/xi(s(w)), and
+r(w)=[psi_digamma(1+s(w)/2)-log(pi)]/2 from the preceding two derivations.
+For k>=0 let
+
+ u_k=integral_0^infinity Delta(exp(t))exp(-3t/2)L_k(2t)dt,
+ p_k=a_k-r_k=-(3u_k+u_(k-1))/2, u_(-1)=0.                   (1.1)
+
+Each moment exists absolutely for every FIXED k. Initially on |w|<1/3,
+
+ p(w)=1/(s(w)-1)+zeta'(s(w))/zeta(s(w)).                    (1.2)
+
+Our new coefficient producer uses (1.2) directly. It never independently
+subtracts two computed gamma jets, and never inverts 1+a on a large disk.
+The only zeta inversion is the triangular local jet at the independently
+nonzero value zeta(3/2). The deterministic pole is included before coefficient
+composition, norms, or absolute values. The stable inverse in (1.1) is
+u_k=-(2p_k+u_(k-1))/3, with all constants and terminal coefficients retained.
+
+The predecessor proves that log(1+D_N)=o(N), D_N=sum_(k<N)|u_k|^2, implies RH
+by holomorphic continuation of a and the denominator-free equation
+V'=s'aV for V(w)=xi(s(w)). The present work uses that written return, not an
+assumption of nonvanishing on the disk. It is compatible with the supplied
+Subexponential arithmetic matrix growth, Theorem 3.1: a fixed positive rate
+is not subexponential. The new task below is still an arithmetic inequality.
+
+2. The exact finite Dirichlet residual includes the endpoint
+-----------------------------------------------------------
+Fix a real X>=1, L=log X, and define the entire function
+
+ J_X(s)=integral_0^L Delta(exp(t))exp(-s t)dt.
+ P_X(s)=sum_(2<=n<=X) Lambda(n)n^(-s),
+ C_X(s)=integral_1^X x^(-s)dx,
+ R_X(s)=P_X(s)-C_X(s)-Delta(X)X^(-s).                       (2.1)
+
+Then, for EVERY complex s,
+
+                  R_X(s)=s J_X(s).                        (2.2)
+
+Proof. Stieltjes integration by parts for dDelta=dpsi_ar-dx on (1,X]
+gives integral x^(-s)dDelta=Delta(X)X^(-s)+s integral_1^X
+Delta(x)x^(-s-1)dx. The lower term is zero by Delta(1)=0. The latter
+integral is J_X after x=exp(t). All quantities are entire in s because
+the integration range and prime inventory are finite. Thus any calculation
+first made away from s=0,1 extends through those values. C_X(1)=log X;
+R_X(0)=0. No zeta quotient is evaluated on the critical line in (2.1).
+At a prime power exactly equal to X its jump cancels between P_X and the
+endpoint in R_X. It is retained in both, not dropped from either inventory.
+
+For any partition 1=x_0<...<x_m=X define
+
+ R_[U,V](s)=sum_(U<n<=V)Lambda(n)n^(-s)-integral_U^V x^(-s)dx
+                         -Delta(V)V^(-s)+Delta(U)U^(-s).
+
+It equals s integral_U^V Delta(x)x^(-s-1)dx. Summing shells reconstructs
+R_X exactly. Internal endpoints cancel only when the SAME actual Delta is
+used; resetting the discrepancy to zero separately in each shell changes it.
+The discrete shell convention is open at U and closed at V.
+
+3. A literal Cayley-Fourier adapter, not a renaming of a matrix
+-------------------------------------------------------------
+Set s_tau=1/2+i*tau and
+
+ omega(tau)=(i*tau-1)/(i*tau+1), |omega(tau)|=1,
+ A_X(tau)=R_X(s_tau)/[s_tau(1-i*tau)].
+
+For every k>=0 the finite Laguerre moment satisfies
+
+ u_k^(X)=(1/(2*pi)) integral_R A_X(tau)omega(tau)^(-k)dtau.  (3.1)
+
+Proof. Put f_X(t)=exp(-t/2)Delta(exp(t))1_[0,L](t), extended by zero,
+and h_k(t)=exp(-t)L_k(2t)1_[0,infinity)(t). Both belong to L2(R).
+In the Fourier convention hat(f)(tau)=integral f(t)exp(-i*tau*t)dt,
+
+ hat(f_X)(tau)=J_X(s_tau),
+ hat(h_k)(tau)=(i*tau-1)^k/(i*tau+1)^(k+1)
+             =omega(tau)^k/(1+i*tau).
+
+The second equality follows by integrating the finite polynomial term by
+term, or from its Laplace transform. Parseval yields (3.1) using (2.2).
+The entire source is assembled before this pairing. The factors s_tau and
+1-i*tau never vanish on the real tau axis.
+
+At each FIXED X, f_X is compactly supported and of bounded variation. For
+Re(z)>0, integration by parts bounds |z integral f_X(t)exp(-zt)dt| by its
+endpoint values and total variation, and bounds the integral itself by
+||f_X||_1. Thus (z+1)/2 times this transform is bounded in that half-plane.
+The corresponding disk function belongs to H-infinity for this finite X.
+This justifies its Hardy boundary interpretation without inferring boundedness
+from boundary values alone. Its bound can grow with X; no uniform arithmetic
+estimate has been proved by this observation.
+
+For an independent normalization check, w=exp(i*theta) gives
+s(w)=1/2+i*cot(theta/2), 1/(1-w)=(1+i*tau)/2, and
+|dtheta/dtau|=2/(1+tau^2). Thus
+
+ (1/(2*pi)) integral_0^(2*pi) |(1-w)^(-1)J_X(s(w))|^2 dtheta
+              =(1/(4*pi)) integral_R |J_X(s_tau)|^2dtau
+              =(1/2) integral_1^X |Delta(x)|^2 x^(-2)dx.    (3.2)
+
+The factor one half is essential. This is the norm of the full finite-cutoff
+coefficient series, NOT its first-N energy. Its Bessel upper bound is already
+known to lose the required scale when used with a fixed power beta>1/2.
+No square-integrability of the untruncated f is assumed.
+
+Define the complete phase kernel
+
+ Theta_N(tau,nu)=sum_(k=0)^(N-1)[omega(nu)/omega(tau)]^k.    (3.3)
+
+For tau=nu it is N; otherwise it is the ordinary finite geometric quotient.
+The sum, including its terminal exponent N-1, is authoritative at the diagonal.
+Then EXACTLY
+
+ D_N^(X)=(1/(4*pi^2)) integral_R integral_R
+       A_X(tau) conjugate(A_X(nu)) Theta_N(tau,nu) dtau dnu. (3.4)
+
+This is the promised two-frequency comparison. It contains the literal
+Dirichlet phases n^(-i*tau), the continuum, the endpoint, and all their mixed
+terms. It is not an estimate for an arbitrary positive Gram. Absolute
+convergence follows from Section 4 and |Theta_N|<=N at each finite N.
+Equivalently, it is the squared operator norm of the functional
+
+ v -> (1/(2*pi)) integral_R A_X(tau)
+                           sum_(k<N) conjugate(v_k)omega(tau)^(-k)dtau
+
+on the Euclidean unit sphere in C^N. The low-degree projection is retained;
+replacing it by the full boundary norm reintroduces the coarse Bessel loss.
+
+4. Both infinite tails can now be paid by explicit rational budgets
+------------------------------------------------------------------
+For all real tau, elementary estimates give
+
+ |R_X(s_tau)| <= 3 sqrt(X)(log X+1)=:B_X.                   (4.1)
+
+Indeed sum_(2<=n<=X)n^(-1/2)<=2sqrt(X), Lambda(n)<=log X,
+|C_X(s_tau)|<=2sqrt(X), and |Delta(X)|<=X(log X+1).
+For Y>=1, |s_tau| |1-i*tau|>=tau^2 when |tau|>Y. Therefore
+
+ |u_k^(X)-(1/(2*pi))integral_(-Y)^Y A_X(tau)omega(tau)^(-k)dtau|
+                         <= B_X/(pi*Y).                    (4.2)
+
+This controls the WHOLE omitted two-sided frequency tail, independently of k.
+The length-N Euclidean error is at most sqrt(N)B_X/(pi*Y).
+
+Retain the predecessor's integer prime-label cutoff X_N=2^(16N), and choose
+a second, distinct frequency cutoff Y_N=2^(10N). Define v_(N,k) by the finite
+integral in (4.2) at X_N,Y_N, and F_N=sum_(k<N)|v_(N,k)|^2. The written
+prime-label estimate is
+
+ E_N^2=16N(4N+1)^2 9^(2N-2)/256^N.
+
+Since pi>3 and log 2<1, (4.2) supplies the rational frequency budget
+
+ Q_N^2=N(16N+1)^2/16^N.
+
+Consequently
+
+ |sqrt(D_N)-sqrt(F_N)| <= E_N+Q_N,
+ ||u_(<N)-v_N||_2^2 <= 2(E_N^2+Q_N^2)=:B_N.               (4.3)
+
+Both budgets tend to zero exponentially (up to the displayed polynomial
+factors). In particular log(1+F_N)=o(N) is equivalent to the preceding scalar
+growth target, and would imply RH. This is still an UNPROVED SIGNED HEAD
+ESTIMATE. The right side of (3.4) with both integrals restricted to [-Y_N,Y_N]
+is a completely finite-domain expression for F_N. No such enormous prime
+inventory or frequency integral was evaluated in this contribution.
+The finite moment calculations in Section 6 instead use the actual analytic
+germ and its rigorous remainder. The two computations must not be confused.
+
+5. What may actually be inserted into Guth--Maynard
+---------------------------------------------------
+On a prime shell M<n<=V<=2M, M>=1, write
+
+ P_[M,V](s_tau)=A_M sum_(M<n<=2M)b_n n^(-i*tau),
+ A_M=log(2M)/sqrt(M),
+ b_n=1_(n<=V) [Lambda(n)/log(2M)]sqrt(M/n), |b_n|<=1.        (5.1)
+
+Thus this shell's atomic polynomial really does have the coefficient bound
+in Guth--Maynard, arXiv:2405.20552v2 (7 April 2026), Theorem 1.1. Translation
+or reversal of a frequency interval multiplies coefficients by unit phases
+or conjugates them and preserves that bound. It does NOT remove A_M.
+For 1-separated tau-points in an interval of length T, atomic values at
+least A_M*V are bounded in count by the theorem's
+
+ C_epsilon T^epsilon (M^2/V^2+M^(18/5)/V^4+T M^(12/5)/V^4)
+
+in its stated asymptotic sense. C_epsilon and the large-T qualification are
+not numerically evaluated here. Physical tau-separation is required; angular
+Cayley separation cannot replace it without its Jacobian and density cost.
+The paper's coefficient-supremum hypothesis cannot be replaced by coefficient
+energy alone. This theorem is an external input, not newly proved or imported
+as a Lean axiom.
+
+The actual residual is P_[M,V]-C_[M,V]-Delta(V)V^(-s)+Delta(M)M^(-s),
+not P_[M,V] alone. Each correction and every cross-shell pairing in (3.4)
+remains. Inserting the published upper count for P as though it counted this
+complete residual would be invalid. If a discrete layer argument is used,
+
+ sum_i w_i |z_i|^2
+   =sum_(j=1)^m (q_j-q_(j-1)) sum_(i: |z_i|^2>=q_j) w_i,
+
+where 0=q_0<q_1<...<q_m are all distinct nonzero squared amplitudes. The
+highest layer and the low-value contribution are included. The implementation
+checks this identity rather than extrapolating a count beyond its range.
+
+The selected largest prime scale X_N is Y_N^(8/5), so the most expensive
+prime shells are LONGER than this frequency window. The published favorable
+regime near normalized amplitude M^(3/4) is not obtained merely by substituting
+N for M or by choosing a larger bookkeeping clock. Frequency annuli, actual
+shell lengths, their endpoint corrections and the weighted Theta_N pairing
+need a genuine dispersion estimate. This work now specifies those objects
+exactly, but supplies no all-depth bound for their joint correlation.
+
+6. Executed finite mathematics and verification boundary
+--------------------------------------------------------
+The previously inactive check_finite_identities.py.txt is replayed unmodified,
+with its original Git blob identity preserved. Its old UNEXECUTED header and
+historical execution-status.json remain statements about the old publication;
+a new receipt records the 24 tests actually run now.
+
+The new producer computes 128 actual u_k at zero heat by zeta-only local jets,
+cutoff 128 and Euler--Maclaurin order 96, independently at 1024 and 1152 working
+bits. The inherited interval source supplies a complex-circle remainder and
+Cauchy coefficient errors; their analytic justification remains written proof.
+All intervals are rounded OUTWARD to a declared 160-bit grid for reporting
+and energy addition. Working precision is not a claim of that many accurate
+output bits. No zeta-zero table or numerical zeta routine is used for acceptance.
+
+The complete sum through k=127 is certified to satisfy
+
+                       D_128 < 5/24.
+
+Nonnegative summands give the same upper bound for every integer 1<=N<=128.
+Selected dyadic prefix values and all coefficient boxes are retained. No
+coefficient tail beyond 127 is bounded by this finite numerical conclusion.
+Separately, eight finite-head moments at X=64 are obtained from the literal
+prime-power inventory and elementary incomplete-exponential integrals, with
+both continuum terms and the touching-prime-power convention retained. This
+small cutoff is not the exponentially large X_N of the analytic schedule.
+
+The new tests compare finite-head assembly with its complete cell integrals,
+independently trial-factor all prime-power labels through 4096, check the
+full-source/gamma-canceled jet agreement, and verify the Cayley signs,
+normalization, polynomial Fourier transform, diagonal phase kernel, shell
+coverage, endpoint telescope, layer identity and tail algebra. The predecessor
+85-test suites are also rerun (three of those tests are numerical diagnostics).
+The coupled-mode/Hankel 64-coefficient profiles themselves are NOT regenerated.
+No source PDF companion is relabeled as a fresh replay. Native Lean, owned
+axiom audits and whole-repository checks remain NOT_RUN.
+
+A first test attempt is retained: the zero-length integral needed an exact
+zero endpoint branch, and two symbolic assertions compared equivalent but
+unsimplified rational expressions. Both equations are now checked by reducing
+their difference; no mathematical target was weakened. Full attempt sources
+and output remain separate from the successful replay.
