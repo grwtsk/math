@@ -1,0 +1,23 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "state-remote-round",
+  "event": "precise-premise-and-control-wording-correction",
+  "at": "2026-10-15T22:12:30.888384+00:00",
+  "prior_decision": {
+    "path": "cache/decisions/prefix-table-state-v1.json",
+    "sha256": "948a13655d57246c9b32f879c56b7fedd3dbe10bf9b5f6b7a56cfb894aa7f901"
+  },
+  "current_decision": {
+    "path": "cache/decisions/prefix-table-state-v2.json",
+    "sha256": "0899b113070ce850a5c52ee3b0bee84f5ea0fa24b170847b2d2162f5336e361a"
+  },
+  "correction": "Clarify the actual missing-parent control: it has stored length labels, bounded REAL references and valid full payloads. It does not satisfy existing ValidRanks because its required parent lookup is absent. No mathematical source, native receipt or acceptance is changed.",
+  "guide_correction": "Decidable full-tag equality is ASSUMED by the construction; classical choice may supply an instance.",
+  "native_sources_changed": false,
+  "mathematical_acceptance_changed": false,
+  "correlated_review": "Source/model review, not independent validation.",
+  "preserved_failed_layout": {
+    "path": "evidence/Combinatorics/DirectedGraph/state-remote-layout-inventory-race-2026-10-15.json",
+    "sha256": "861ba95e07f25efada73cece8b255b4c3d6c315630e18f8fe8ede6081d209c3b"
+  }
+}

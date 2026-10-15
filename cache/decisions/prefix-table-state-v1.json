@@ -1,0 +1,28 @@
+{
+  "schema": "repository-design-decision-v1",
+  "id": "prefix-table-state-v1",
+  "at": "2026-10-15T22:10:27.316891+00:00",
+  "previous_record": {
+    "path": "cache/decisions/incremental-prefix-table-v1.json",
+    "sha256": "53f6342aefa3fff1d30a76238242ee190ad804a7044a4b7075b7cd3e2dbf6aa8"
+  },
+  "choice": "Store structural invariant evidence for the actual root, complete-prefix dictionary, parent cells and ordered real references. Derive actual decoder correctness and stable update closure, enabling successive stored-state updates without recanonicalization.",
+  "premises": [
+    "Full typed-tag decidable equality and structural WellFormed for the actual retained state; actual new rooted occurrences at state.root. Parent expansion and checkeddecode are conclusions. Full old/new occurrence recovery additionally retains explicit oldRows traceRows decode equality and successful new decode. Root preserved definitionally under each update, including empty inputs. Old certificate criterion/proof remains a separate premise; no key equality is needed."
+  ],
+  "native_evidence": [
+    {
+      "path": "evidence/Combinatorics/DirectedGraph/prefix-table-state-integration-2026-10-15.json",
+      "sha256": "7341e1adfe64dc36d6152a009a6c0f040603c3717cfdfba7c533e564b4db709c"
+    }
+  ],
+  "checked_boundaries": [
+    "Actual same decoded F/T/F histories with different grouped D/N/references; missing parent closure gives valid full payloads/inboundsrawunpack but failed numeric parentdecode; distinct roots can share empty nodes/refs. Numeric rank/bounds/rootedness do not replace closure. No inherited predicate for appended rows, source-proof/permission authority, finitefold implementation, byteoptimality or runtime refinement."
+  ],
+  "operational_boundary": "Finite noncomputable mathematical representation; no Lean/Python/JSON/hash/zlib/IO correspondence, byte/optimal compression, permission or source-proof authority inferred.",
+  "open_obligations": [
+    "No finite-fold implementation or exact grouped representation equality admitted. Arbitrary stored-state compaction/reindexing and operational relation-ID/IO refinement remain open.",
+    "16declared families/215declared total do not supply215actual method identities."
+  ],
+  "authority": "Durable local mathematical/design decision; no remote effect or newly adopted external-document policy."
+}

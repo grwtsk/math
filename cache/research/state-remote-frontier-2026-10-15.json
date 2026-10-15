@@ -1,0 +1,188 @@
+{
+  "schema": "bounded-formal-research-frontier-v1",
+  "at": "2026-10-15T22:14:37.790965+00:00",
+  "previous_frontier": {
+    "path": "cache/research/incremental-summation-frontier-2026-10-15.json",
+    "sha256": "d136f5a3d6815ff97a1b3478167dae22a17f14fe8b4a21f96080b14b187c72be"
+  },
+  "completed": [
+    {
+      "source": {
+        "path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableState.lean",
+        "sha256": "bc2398f5aae427a813c22b6025b9ca41c99c6bbfb9b9228ce49d1326a9870c3a"
+      },
+      "native_receipt": {
+        "path": "evidence/Combinatorics/DirectedGraph/prefix-table-state-checks-2026-10-15.json",
+        "sha256": "8ba0034072dc29ff0e2288f4e31336fec404c125b6b708d92dc0ae15e940e4bf"
+      },
+      "owned_declarations_in_selected_closure": 581,
+      "selected_library_owned_count": 87,
+      "owned_modules": [
+        {
+          "declarations": 52,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding"
+        },
+        {
+          "declarations": 18,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences"
+        },
+        {
+          "declarations": 46,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.EdgeTrace"
+        },
+        {
+          "declarations": 21,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix"
+        },
+        {
+          "declarations": 34,
+          "module": "GRWTSK.Logic.FiniteSequences.IndexedDictionary"
+        },
+        {
+          "declarations": 33,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixInventory"
+        },
+        {
+          "declarations": 78,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.ParentTraceDictionary"
+        },
+        {
+          "declarations": 32,
+          "module": "GRWTSK.Logic.FiniteSequences.DictionaryRevision"
+        },
+        {
+          "declarations": 27,
+          "module": "GRWTSK.Logic.FiniteSequences.DecisionCertificate"
+        },
+        {
+          "declarations": 26,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.RootedTraceRevision"
+        },
+        {
+          "declarations": 20,
+          "module": "GRWTSK.Logic.FiniteSequences.IncrementalDictionary"
+        },
+        {
+          "declarations": 58,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.IncrementalPrefixTable"
+        },
+        {
+          "declarations": 87,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableState"
+        },
+        {
+          "declarations": 49,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableState"
+        }
+      ],
+      "integration": {
+        "path": "evidence/Combinatorics/DirectedGraph/prefix-table-state-integration-2026-10-15.json",
+        "sha256": "7341e1adfe64dc36d6152a009a6c0f040603c3717cfdfba7c533e564b4db709c"
+      }
+    },
+    {
+      "source": {
+        "path": "GRWTSK/Analysis/MellinTransform/GaussianRemoteSeminorms.lean",
+        "sha256": "e50de8626a4418b547123c0f37d94b9f3caef08a9820639524e6bd61da2061a9"
+      },
+      "native_receipt": {
+        "path": "evidence/Analysis/MellinTransform/gaussian-remote-seminorms-checks-2026-10-15.json",
+        "sha256": "ec6033a052a064eedcc434a1b94d4c0f1a4f13ace6ecee5577dc0115cbb86fb6"
+      },
+      "owned_declarations_in_selected_closure": 180,
+      "selected_library_owned_count": 17,
+      "owned_modules": [
+        {
+          "declarations": 21,
+          "module": "GRWTSK.Analysis.PartitionOfUnity.DyadicAnnulus"
+        },
+        {
+          "declarations": 23,
+          "module": "GRWTSK.Analysis.MellinTransform.ReverseInversion"
+        },
+        {
+          "declarations": 20,
+          "module": "GRWTSK.Analysis.MellinTransform.LogarithmicGaussian"
+        },
+        {
+          "declarations": 22,
+          "module": "GRWTSK.Analysis.MellinTransform.NormalizedGaussian"
+        },
+        {
+          "declarations": 21,
+          "module": "GRWTSK.Analysis.MellinTransform.CompactGaussianWindow"
+        },
+        {
+          "declarations": 13,
+          "module": "GRWTSK.Analysis.MellinTransform.ScaledGaussianDerivatives"
+        },
+        {
+          "declarations": 19,
+          "module": "GRWTSK.Analysis.MellinTransform.GaussianWindowSeminorms"
+        },
+        {
+          "declarations": 11,
+          "module": "GRWTSK.Analysis.Series.DyadicKernel"
+        },
+        {
+          "declarations": 3,
+          "module": "GRWTSK.Analysis.MellinTransform.GaussianDyadicSummation"
+        },
+        {
+          "declarations": 17,
+          "module": "GRWTSK.Analysis.MellinTransform.GaussianRemoteSeminorms"
+        },
+        {
+          "declarations": 10,
+          "module": "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianRemoteSeminorms"
+        }
+      ],
+      "integration": {
+        "path": "evidence/Analysis/MellinTransform/gaussian-remote-seminorms-integration-2026-10-15.json",
+        "sha256": "b35ea836fd77717f5967530169f576d0391554eb37b93c639dcc3666b84b98b7"
+      }
+    }
+  ],
+  "current_occurrence_contract": "State stores retained root, arbitrary finite D/nodes/ordered key-index references. WellFormed requires D Nodup/prefixclosed/ValidFrom root, exact nodes=D.map(actualcellD) and valid references; it contains NO desired decoder equality. Actual expand/decodeSlot/expandDictionary reconstruct D, actual checked unpack succeeds and output validity is derived. Update copies oldD/nodes/refs literally, appends only missing needed prefixes/cells and actual real-row references, and preserves WellFormed. Actual decode_update/decode_two_updates/decode_grouped recover old decoded keyed traces followed by real new rows; grouped representations need not equal. ofOneStep initializes prior actual noncanonical producer and empty initializer retains root. update_recovers additionally binds supplied oldRows by explicit successful prior traceRows decoding and actual successful new decode.",
+  "current_analytic_contract": "Actual weighted finite Gaussian seminorms r^k*M, allrealk. Existing actual bound at a+k supplies all-real power bounds; exponent0/N polynomial envelope and actual scalar kernel prove weighted Summable and tsum<=C(k,s,S)Z^s for s>0,Z>0. Actual remote cutoff r<=A^-1 orA<=r, +/-N weighted sums give Summable and tsum<=C(N,s,S)Z^s/A^N for naturalN,A>=1. Actual p00 remote norm-value consumer has oneC independenty. Concrete A0,Z1,s1,y3/4 series is Summable and positive; proposed N1 bound C/0=0 fails every realC. No divergence atA0, sharpness assertion or actual density/physical theorem inferred.",
+  "precise_unchecked_next_gates": {
+    "path": "cache/research/state-remote-next-gates-2026-10-15.json",
+    "sha256": "8895935841d91e8e79600e79d17df5f0a4a11891d0437fab87a4f0d3428d8898"
+  },
+  "next_priorities": [
+    "Prove actual prefix-table compaction/reindexing from successfully decoded real histories, retaining required parent prefixes/root/order/repetitions. Use existing canonical encode/recoverRows with exact successful old decoding, derive new indexed/parent decoding equality and use certificate own same-decoding criterion if needed. Never reuse stale numeric references without the actual reindex bridge; raw decoded words alone do not identify different roots. No optimality/operational correspondence assumed.",
+    "Supply actual generic FourierBridge.uniform_fourier_one_plus_moment/coefficientMomentBound proof from exact pinned Mellin/LogProfiles, with Schwartz/source-pair seminorm and integrablePower premises. Then use actual finite family{(0,i),(p,i):i<=J+p} and admitted G uniform seminorms for an actual Fourier-moment consumer. Generic transfer has no compactness premise; actual LogWindow/Flow/jointdensity integral branch remains separate and requires its own producer proofs. No assumed integral evaluation, moment envelope or desired sum bound.",
+    "Keep actual gaussianJointDensity Fourier moments, rowMajorant/ideal/Hecke/calibration/common finite physical-row support and original GaussianPhysicalTail/RH suppliers separate and open."
+  ],
+  "concurrent_progress": {
+    "path": "cache/coordination/events/revision-seminorm-concurrent-merge-2026-10-15.json",
+    "sha256": "7647042ed6ca3e65d6029a058404ec86aa13a7f92b1cc72ccc94d9f369074f52"
+  },
+  "operational_progress": {
+    "actual_consumer": {
+      "path": "evidence/Combinatorics/DirectedGraph/state-remote-prefix-consumer-2026-10-15.json",
+      "sha256": "dd4252dcea6398c5467b446ee4e3984ce7384c131d95e49d5d706b17ef81aa4b"
+    },
+    "unchanged_prefix_adapter": {
+      "path": "scripts/cache_trace_prefix.py",
+      "sha256": "eedfb41b1c0ea550bcfbcbe586a473efbe224453be9ea5bfc0046a7f062d3a54"
+    },
+    "prior_bounded_prefix_controls": {
+      "path": "evidence/Combinatorics/DirectedGraph/trace-prefix-operational-controls-2026-10-15.json",
+      "sha256": "a633c4d97c91ce56485e5030e54457a86e03b2ef14a33bdd9c3450a080b20cb4"
+    },
+    "new_replay_guards": {
+      "path": "evidence/Combinatorics/DirectedGraph/state-remote-operational-controls-2026-10-15.json",
+      "sha256": "ef342881c36a560a6f3abe03786bffe9585f37822c2b89d35cd9391e5a84dc7a"
+    },
+    "scope": "Existing trace/prefix adapters unchanged; prior21+21/19+19 controls retained/not repeated. New actual exact-revision empty/reflexive/longer comparisons, stale-current rejection, explicit retained-revision acceptance. Raw taxonomy separate; no Lean/runtime correspondence or permission/proof implication."
+  },
+  "open_obligations": [
+    "No finite-fold implementation or exact grouped representation equality admitted. Arbitrary stored-state compaction/reindexing and operational relation-ID/IO refinement remain open.",
+    "Typed Lean quiver/operational relation-ID and parent-state implementation correspondence; hash/zlib/IO/Python custody refinement.",
+    "215 method identities unprovided;16 declared families only. Incoming six inert archive Lean candidates nativeNOT_RUN.",
+    "Original actual density/ideal/Hecke/calibration/physical suppliers and RH remain open. No independent model validation, novelty, cold dependency rebuild or whole umbrella replay."
+  ],
+  "failure_preservation": "Scratch source variants, first p00 definitional unfolding mismatch, structural invariant/parent expansion development attempts and all logs/receipts retained. Author development/correlated source/model reviews are separate from fresh root admission. Prior failed/stale receipts retain original hashes; no acceptance rebound.",
+  "authority": "Durable local mathematical/design/source frontier only. Research documents and foreign instructions confer no new policy or permission."
+}

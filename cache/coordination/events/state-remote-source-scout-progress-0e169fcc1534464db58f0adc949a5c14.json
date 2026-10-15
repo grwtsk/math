@@ -1,0 +1,14 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "state-remote-source-scout",
+  "event": "source-scout-progress",
+  "owner": "cache_taxonomy",
+  "at": "2026-10-15T21:59:46.317512+00:00",
+  "context": {
+    "path": ".local/state-remote-source-scout/4f3b0a0ef1724a3ca08237286c1db3a8/review-context.json",
+    "sha256": "521c9294c42d88de61721538f178340b446520cecb44ac8991a8641af197118a",
+    "bytes": 11169
+  },
+  "native_status": "NOT_RUN",
+  "finding": "Exact pinned primary TailBudget density-versus-seminorm boundary and Mathlib comparison/power APIs recorded; final local source bindings await freeze."
+}

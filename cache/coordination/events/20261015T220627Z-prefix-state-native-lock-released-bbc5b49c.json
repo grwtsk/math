@@ -1,0 +1,11 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "prefix-table-state-formal",
+  "owner": "indexed_dictionary",
+  "at": "2026-10-15T22:06:27.341909+00:00",
+  "kind": "native-lock-released",
+  "source": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixTableMissingClosure.lean",
+  "exit_code": 1,
+  "all_native_children_exited": true,
+  "log": ".local/prefix-state/logs/20261015T220626.704588Z-PrefixTableMissingClosure.log"
+}

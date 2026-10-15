@@ -4,16 +4,16 @@
 
 | Inventory | Count |
 |---|---:|
-| Object guides | 28 |
+| Object guides | 29 |
 | Documented object groups | 14 |
-| Distinct primary sources linked | 28 |
-| Lean source modules | 273 |
+| Distinct primary sources linked | 29 |
+| Lean source modules | 276 |
 | Archive intake records | 39 |
 | Selected catalog families | 1 |
 
 These counts measure documentation and source coverage. They do not count accepted theorems or establish that every source module is documented or checked. [Definitions and limits](../../reference/library-pages.md#count-definitions).
 
-At least 1555 source declaration commands, including 1265 theorem/lemma commands, across 226 parsed Lean source modules; 47 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
+At least 1577 source declaration commands, including 1283 theorem/lemma commands, across 229 parsed Lean source modules; 47 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
 
 ## Asymptotics
 
@@ -95,9 +95,9 @@ Linked primary-source scope: 1 source declaration commands, including 1 theorem/
 
 ## MellinTransform
 
-7 object guides · 7 distinct linked primary source files.
+8 object guides · 8 distinct linked primary source files.
 
-Linked primary-source scope: At least 48 source declaration commands, including 41 theorem/lemma commands, across 5 parsed Lean source modules; 2 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
+Linked primary-source scope: At least 60 source declaration commands, including 49 theorem/lemma commands, across 6 parsed Lean source modules; 2 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
 
 - [Mellin transform of a logarithmic Gaussian](MellinTransform/logarithmic-gaussian.md).
 - [Reverse Mellin inversion](MellinTransform/reverse-inversion.md).
@@ -106,6 +106,7 @@ Linked primary-source scope: At least 48 source declaration commands, including 
 - [The normalized Gaussian Mellin pair](MellinTransform/normalized-gaussian.md).
 - [Uniform Schwartz seminorms of Gaussian windows](MellinTransform/gaussian-window-seminorms.md).
 - [Uniform scale bounds for Gaussian derivatives](MellinTransform/scaled-gaussian-derivatives.md).
+- [Weighted and remote sums of Gaussian seminorms](MellinTransform/gaussian-remote-seminorms.md).
 
 ## NormedSpace
 

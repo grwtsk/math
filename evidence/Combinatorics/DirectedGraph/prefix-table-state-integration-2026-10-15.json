@@ -1,0 +1,102 @@
+{
+  "schema": "selected-mathematical-integration-v1",
+  "at": "2026-10-15T22:10:27.304352+00:00",
+  "source": {
+    "path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableState.lean",
+    "sha256": "bc2398f5aae427a813c22b6025b9ca41c99c6bbfb9b9228ce49d1326a9870c3a"
+  },
+  "native_receipt": {
+    "path": "evidence/Combinatorics/DirectedGraph/prefix-table-state-checks-2026-10-15.json",
+    "sha256": "8ba0034072dc29ff0e2288f4e31336fec404c125b6b708d92dc0ae15e940e4bf"
+  },
+  "source_review": {
+    "path": "evidence/Combinatorics/DirectedGraph/prefix-table-state-source-review-2026-10-15.json",
+    "sha256": "0c3b6c1b35c5eb4d975ef63f4bbe3b14adff7a46255b03cb67b5c1b536bb7d4a"
+  },
+  "owned_declarations": 581,
+  "selected_library_owned_count": 87,
+  "owned_modules": [
+    {
+      "declarations": 52,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding"
+    },
+    {
+      "declarations": 18,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences"
+    },
+    {
+      "declarations": 46,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.EdgeTrace"
+    },
+    {
+      "declarations": 21,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix"
+    },
+    {
+      "declarations": 34,
+      "module": "GRWTSK.Logic.FiniteSequences.IndexedDictionary"
+    },
+    {
+      "declarations": 33,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixInventory"
+    },
+    {
+      "declarations": 78,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.ParentTraceDictionary"
+    },
+    {
+      "declarations": 32,
+      "module": "GRWTSK.Logic.FiniteSequences.DictionaryRevision"
+    },
+    {
+      "declarations": 27,
+      "module": "GRWTSK.Logic.FiniteSequences.DecisionCertificate"
+    },
+    {
+      "declarations": 26,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.RootedTraceRevision"
+    },
+    {
+      "declarations": 20,
+      "module": "GRWTSK.Logic.FiniteSequences.IncrementalDictionary"
+    },
+    {
+      "declarations": 58,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.IncrementalPrefixTable"
+    },
+    {
+      "declarations": 87,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableState"
+    },
+    {
+      "declarations": 49,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableState"
+    }
+  ],
+  "operational_replay_guards": {
+    "path": "evidence/Combinatorics/DirectedGraph/state-remote-operational-controls-2026-10-15.json",
+    "sha256": "ef342881c36a560a6f3abe03786bffe9585f37822c2b89d35cd9391e5a84dc7a"
+  },
+  "contribution_roles": [
+    "grwtsk contributors: human mathematical direction",
+    "OpenAI Codex: local adaptation/formalization/checking; correlated source/model review",
+    "Lean/Mathlib: named upstream authors/definitions/proofs and licensing retained"
+  ],
+  "limits": [
+    "Fresh complete selected local import closure and positive controls; trust0/fatal, full owned-declaration/transitive-axiom census; only propext/Classical.choice/Quot.sound.",
+    "Generated local object families frozen/rechecked. Clean pinned dependency objects reused/fingerprinted, not cold rebuilt. Whole umbrella not replayed after import additions.",
+    "No independent model validation, novelty, operational JSON/Python/hash/zlib/IO refinement, proof/permission authority, whole detector or RH acceptance."
+  ],
+  "exact_contracts": [
+    "State stores retained root, arbitrary finite D/nodes/ordered key-index references. WellFormed requires D Nodup/prefixclosed/ValidFrom root, exact nodes=D.map(actualcellD) and valid references; it contains NO desired decoder equality. Actual expand/decodeSlot/expandDictionary reconstruct D, actual checked unpack succeeds and output validity is derived. Update copies oldD/nodes/refs literally, appends only missing needed prefixes/cells and actual real-row references, and preserves WellFormed. Actual decode_update/decode_two_updates/decode_grouped recover old decoded keyed traces followed by real new rows; grouped representations need not equal. ofOneStep initializes prior actual noncanonical producer and empty initializer retains root. update_recovers additionally binds supplied oldRows by explicit successful prior traceRows decoding and actual successful new decode."
+  ],
+  "accepted_controls": [
+    "Actual empty then[F,T] then[F] yields D=[F,[],T], combined[F,T,F] yields D=[T,[],F], same ordered keyed F/T/F decoded rows but distinct States. Actual prefixes retained and parent expansion works; prior noncanonical one-step seed WellFormed and later update decoded; no-new/empty/different retained root controls. missingParent D=[[F,T]], exactN=[(2,(1,T))], boundedref(7,0) and valid payloads/rawunpack succeeds, while actual parentdecode=none and WellFormed false. Sole negative substitutes actual rooted-payload proof for required prefix-closure field."
+  ],
+  "license": "MIT; imported Lean/Mathlib individual authors retain Apache-2.0.",
+  "open_obligations": [
+    "No finite-fold implementation or exact grouped representation equality admitted. Arbitrary stored-state compaction/reindexing and operational relation-ID/IO refinement remain open.",
+    "Operational relation-ID/state codec correspondence, compact byte/optimality and IO/hashing semantics remain separate.",
+    "Old criterion proof remains required; no criterion for appended rows follows from stable old decoding alone."
+  ]
+}

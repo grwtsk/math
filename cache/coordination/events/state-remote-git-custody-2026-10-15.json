@@ -1,0 +1,18 @@
+{
+  "schema": "repository-agent-event-v1",
+  "at": "2026-10-15T22:13:03.683664+00:00",
+  "task": "state-remote-round",
+  "event": "actual-git-and-cleanup-observation",
+  "initial_main": "aca834ef07be610af9050477fef7329b8ef0da00",
+  "main_head": "aca834ef07be610af9050477fef7329b8ef0da00",
+  "origin_main_observed": "aca834ef07be610af9050477fef7329b8ef0da00",
+  "concurrent_history": "Origin/main was already observed at initial main on this round. No main movement or selected source collision. Prior incoming23archive/tool paths and six inert candidate sources/nativeNOT_RUN retained. No fetch/push/remote write by root.",
+  "worktrees": "worktree /Users/local/Desktop/math\nHEAD aca834ef07be610af9050477fef7329b8ef0da00\nbranch refs/heads/main",
+  "local_branches": "main aca834ef07be610af9050477fef7329b8ef0da00",
+  "stale_worktree_prune_dry_run": "empty",
+  "stale_worktree_prune": "completed; empty",
+  "redundant_local_branches": "none; main retained",
+  "native_children": "all exited; shared replay lock released",
+  "remote_actions": [],
+  "limits": "Source custody only; independent mathematical acceptance claims remain in exact native receipts."
+}

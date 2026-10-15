@@ -1,0 +1,16 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "state-remote-source-scout",
+  "event": "next-fourier-moment-source-bound",
+  "owner": "cache_taxonomy",
+  "at": "2026-10-15T22:04:07.941817+00:00",
+  "manifest": {
+    "path": ".local/state-remote-source-scout/4f3b0a0ef1724a3ca08237286c1db3a8/next-fourier-moment-manifest.json",
+    "sha256": "3a3660a11ec9ba614b8c030f77c672a1953ee92c171636b0f0f20b62ece8ec7d",
+    "bytes": 3561
+  },
+  "scope": "Exact primary scalar analytic flow, compact log window, Fourier joint density and moment consumer read; selected symbol/path inventory only, no huge arithmetic search or acceptance.",
+  "finding": "GaussianCoupled.gaussianJointDensity10 is EXACT Mathlib Fourier of gaussianLogWindow, not a generic assumed density. LogWindow contains actual seminorm-to-Fourier moment proof, but calls source FourierBridge.uniform_fourier_one_plus_moment/coefficientMomentBound, whose defining file is not yet located in bounded scope and must be supplied/proved separately.",
+  "next_native_status": "NOT_RUN",
+  "preservation": "Current remote finite-seminorm theorem does not instantiate this density integral. Source/premise/credit review correlated, not independent validation; no source/docs/sharedregistry/native/remote edits."
+}

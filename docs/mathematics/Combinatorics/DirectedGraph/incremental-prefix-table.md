@@ -8,8 +8,10 @@ one real reference for each original new row.
 
 The base in this theorem is the canonical inventory and encoded table of
 the old rows. The produced stable dictionary is generally noncanonical.
-Applying another update directly to an arbitrary previously extended
-stored table needs an additional state invariant and composition proof.
+The [stored prefix-table invariant](prefix-table-state.md) supplies the
+additional structural closure and actual two-step decoding proof for
+updates on arbitrary valid stored tables. That result retains the
+noncanonical stored state rather than re-encoding the old rows.
 
 Actual parent-table expansion reconstructs the extended dictionary. The
 existing checked indexed decoder and valid-trace decoder recover exactly
