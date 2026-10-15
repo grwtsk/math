@@ -1,0 +1,12 @@
+Weil subspace source integration — partial publication state
+
+Fresh exact-rational replay of the staged source and test files completed 193
+unit tests per Python mode and 24 leaf subprocesses. The source calculations
+certify lower bounds on the stated six-dimensional pole-null test spaces at
+A=1/2, 1, 2. They are not all-test or all-support source estimates. Native Lean
+elaboration and transitive axiom auditing were not run.
+
+This file alone does not publish the full package. The previously uploaded
+source blobs and staging trees are not proof of a completed main-branch
+integration. A complete publication receipt must name and verify the final
+commit, all expected additions, and their exact hashes.
