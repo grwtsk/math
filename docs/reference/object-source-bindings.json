@@ -41,7 +41,8 @@
     ],
     "NumberTheory/Zeta/Riemann": [
       "GRWTSK/NumberTheory/Zeta/Riemann/PolynomialEnergyCriterion.lean",
-      "GRWTSK/NumberTheory/Zeta/Riemann/ZeroDefinitions.lean"
+      "GRWTSK/NumberTheory/Zeta/Riemann/ZeroDefinitions.lean",
+      "GRWTSK/NumberTheory/Zeta/Riemann/QuadraticTraceCriterion.lean"
     ],
     "NumberTheory/Zeta": [
       "GRWTSK/NumberTheory/Zeta/Riemann/DefectCriterion.lean"
@@ -150,6 +151,9 @@
     ],
     "Analysis/LaplaceTransform": [
       "GRWTSK/Analysis/LaplaceTransform/ExponentialEnergy.lean"
+    ],
+    "Algebra/Polynomial": [
+      "GRWTSK/Algebra/Polynomial/ConjugateQuartic.lean"
     ]
   }
 }
