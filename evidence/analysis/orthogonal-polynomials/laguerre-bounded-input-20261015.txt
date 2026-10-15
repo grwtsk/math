@@ -1,0 +1,49 @@
+A dimension-priced bounded-input estimate for finite Laguerre synthesis
+====================================================================
+Direction: R.A. Jacob Martone. Derivation: OpenAI ChatGPT. MIT.
+Written proof, with finite polynomial regressions; no Lean admission.
+
+Let L_k be the ordinary Laguerre polynomial, and phi_k(t)=sqrt(2)e^-t L_k(2t)
+on t>=0. For every measurable bounded complex function f, define
+ alpha_k(f)=integral_0^infinity f(t)e^-t L_k(2t)dt.
+Every individual integral is absolutely convergent. For every integer N>=1,
+
+ sum_(k<N)|alpha_k(f)|^2 <= 4N ||f||_infinity^2.             (1)
+
+No global L2 hypothesis is imposed on f, and the right side is NOT independent
+of N. The same estimate applies to f times an arbitrary measurable indicator.
+For f in L2 the separate Bessel inequality gives
+
+ sum_(k>=0)|alpha_k(f)|^2 <= ||f||_2^2/2.                    (2)
+
+Proof. The normalization integral integral e^-x L_i(x)L_j(x)dx=delta_ij
+follows from Rodrigues' formula and repeated integration by parts: all boundary
+terms vanish, and the leading coefficient gives norm one. The substitution
+x=2t proves orthonormality of phi_k. Classical ancestry: NIST DLMF 18.3.
+For g=sum_(k<N)v_k phi_k, the Laguerre recurrence gives
+
+ t phi_k = (k+1/2)phi_k -(k+1)phi_(k+1)/2-k phi_(k-1)/2.
+
+The last outgoing term at k=N-1 is -N phi_N/2; it must be retained. The
+three rectangular maps on the coefficient vector have norms at most
+N-1/2, N/2, (N-1)/2. Consequently ||t g||_2 <=(2N-1)||v||_2 <=2N||v||_2.
+The recurrence is DLMF 18.9, ordinary Laguerre row; it also follows directly
+from the finite coefficients L_k(x)=sum_j binom(k,j)(-x)^j/j!.
+
+For any b>0, weighted Cauchy--Schwarz gives
+
+ ||g||_1^2 <= [integral_0^infinity (b+t)^(-2)dt]||(b+t)g||_2^2
+           <= (b+2N)^2/b * ||v||_2^2.
+
+Choose b=2N, giving ||g||_1<=sqrt(8N)||v||_2. Since
+sum conjugate(v_k)alpha_k(f)=integral f conjugate(g)/sqrt(2), finite-dimensional
+duality proves (1). Applying orthonormal Bessel directly proves (2).
+
+The example f=1 has alpha_k=(-1)^k, hence exact prefix energy N. Thus linear
+N growth is necessary for a bounded-input theorem of this type; replacing
+(1) by a dimension-independent bound for all bounded f would be false.
+The example does not identify f=1 with a full arithmetic discrepancy. The
+application to prime squares uses an independently established bounded input.
+
+No claim of historical novelty is made for this standard recurrence/duality
+argument. It is supplied explicitly to price the retained critical component.
