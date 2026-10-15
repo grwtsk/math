@@ -1,0 +1,21 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "incremental-summation-source-scout",
+  "event": "source-review-complete",
+  "owner": "cache_taxonomy",
+  "at": "2026-10-15T21:48:01.708941+00:00",
+  "review": {
+    "path": "evidence/Combinatorics/DirectedGraph/incremental-prefix-table-source-review-2026-10-15.json",
+    "sha256": "bc6c5ec3808dcef01a1a5d61e97a509025db98389db5d459260902f40a275fad",
+    "bytes": 18109
+  },
+  "source_hashes": {
+    "GRWTSK/Combinatorics/DirectedGraph/IncrementalPrefixTable.lean": "dc6e8066e3539897464cdfe3bf1d31797ca76baae11066a79c0d0f0c5c7ffa37",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/IncrementalPrefixTable.lean": "f23796f040bc59d9270370391b54e0b7d047e4ae0c69b315e34891854f959d08",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/IncrementalPrefixMissingRows.lean": "2abf02b0560512b43585ad99b37cf129cda7b8fb9d6dfac668c34e71f4bf682b"
+  },
+  "finding": "No actionable omission in the one-step canonical-base stable extension, actual full-row decoder/recovery or old-reference certificate boundary observed within the three frozen files. Iterated closure on arbitrary stored extended states remains explicitly open.",
+  "review_character": "Correlated same-team exact-source/premise/control/credit review; not independent validation.",
+  "native_status": "NOT_RUN",
+  "scope": "New immutable review/event and ignored exact frozen source copies only; no shared/source/native/remote changes."
+}

@@ -237,3 +237,33 @@ an actual function value; no nonsmoothness or constructor at zero is claimed.
 Human direction: grwtsk contributors; adaptation/formalization/checking:
 OpenAI Codex. No independent validation, whole ideal/Hecke/calibration/
 physical detector, arithmetic summability or RH admission is claimed here.
+
+Actual scalar dyadic kernel and weighted Gaussian summation
+---------------------------------------------------------
+GRWTSK/Analysis/Series/DyadicKernel.lean and
+GRWTSK/Analysis/MellinTransform/GaussianDyadicSummation.lean retain
+Apache-2.0 terms. Both adapt exact sources from
+openai/math@1581d4cbdd69a0faf34b2089614fe2a814316a6a:
+lean/OAI/NumberTheory/DirichletL/CubicSieve/QuantitativePassage.lean,
+raw SHA256 9abb0b7909494b09587017f6bdc731c69d379770aecece0d458e8f0d5f637600,
+Git blob c6ff994dc7f77081436f7a59a98e373bd3123091, scalar CompletedDyadic
+slice only; and lean/OAI/NumberTheory/DirichletL/Detector/GaussianSummation.lean,
+raw SHA256 8cbdf3603586c4d8f8da6f22fcbbcc8d4521d19b7977da4a2db8c7b5e537e196,
+Git blob 78d47764d7755a5bf6b6277356e94c157e191339. OpenAI remains the
+upstream project author; see LICENSES/OpenAI-Apache-2.0.txt.
+Mathlib Analysis/SpecificLimits/Normed.lean retains copyright
+(c) 2020 Sébastien Gouëzel, authors Anatole Dedecker, Sébastien Gouëzel,
+Yury Kudryashov, Dylan MacKenzie and Patrick Massot.
+Analysis/SpecialFunctions/Pow/Real.lean retains
+copyright (c) 2018 Chris Hughes; authors Chris Hughes, Abhimanyu Pallavi
+Sudhir, Jean Lo, Calle Sönne, Sébastien Gouëzel, Rémy Degenne and David Loeffler.
+Algebra/Order/Field/GeomSum.lean retains copyright (c) 2019 Neil Strickland,
+author Neil Strickland. The controls' InfiniteSum/Group API retains
+copyright (c) 2017 Johannes Hölzl. All retain Apache-2.0; earlier Gaussian,
+Schwartz, calculus, power and infinite-sum author notices remain upstream.
+The actual scalar head/tail proof supplies a uniform positive-scale sum;
+the actual Gaussian consumer derives weighted finite-seminorm and value-norm
+summability. The value corollary and concrete zero-scale nonsummability
+controls are local formalization contributions. Human direction: grwtsk contributors; adaptation/formalization/checking: OpenAI Codex. No surrounding
+arithmetic, ideal/Hecke/calibration/physical detector, RH supplier or
+operational cache refinement is admitted by these modules.

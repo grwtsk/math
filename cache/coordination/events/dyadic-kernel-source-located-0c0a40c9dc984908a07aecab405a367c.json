@@ -1,0 +1,26 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "incremental-summation-source-scout",
+  "event": "exact-dyadic-kernel-source-located",
+  "owner": "cache_taxonomy",
+  "at": "2026-10-15T21:37:47.945475+00:00",
+  "discovery": "cache_adapter found exact source via bounded pinned import/source check; cache_taxonomy independently read full scalar slice and verified exact raw SHA/Git blob against pinned NumberTheory subtree.",
+  "primary": {
+    "repository": "openai/math",
+    "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+    "path": "lean/OAI/NumberTheory/DirichletL/CubicSieve/QuantitativePassage.lean",
+    "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/CubicSieve/QuantitativePassage.lean",
+    "archive": ".local/incremental-summation-source-scout/610dc174d922459a9b9923e1f14fc2dc/QuantitativePassage-pinned.lean",
+    "sha256": "9abb0b7909494b09587017f6bdc731c69d379770aecece0d458e8f0d5f637600",
+    "git_blob": "c6ff994dc7f77081436f7a59a98e373bd3123091",
+    "bytes": 35351,
+    "license": "OpenAI project Apache-2.0; no individual header author observed; imported authorship retained.",
+    "native_status": "NOT_RUN"
+  },
+  "exact_anchors": "CompletedDyadic namespace483; kernelTerm485; pow_rpow_comm487; nonneg492; head496; tail502; ratio516; summable519; cutoff524; uniform bound548-606.",
+  "exact_statement": "For real s,A with 0<s and s<A, exists C>0 before every t>0, Summable(kernelTerm t s A) and tsum<=C*t^(-s). kernelTerm=((2^n)^s)/(1+t*2^n)^A.",
+  "proof_scope": "Actual head/tail bounds, geometric tail, cutoff using exists_nat_pow_near, separate t>=1/t<1; scalar reusable slice only, no surrounding arithmetic port.",
+  "preservation": "Previous UNPROVIDED next-gates record is historically correct and unchanged. This event supplies a new identity, no mathematical acceptance transfer. Earlier CompletedDyadicRows and unrelated plural kernel_sum_bounds are not its supplier.",
+  "native_validation": "NOT_RUN; correlated same-team source/premise review, not independent validation.",
+  "bounded_search": "Own LowPuncture import branch stopped at22 fetched source nodes with no target occurrence, unvisited queue retained in ignored manifest; this is not exhaustive absence. Stop search after actual supplier found."
+}
