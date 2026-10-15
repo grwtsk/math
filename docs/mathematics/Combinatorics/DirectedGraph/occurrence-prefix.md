@@ -54,6 +54,12 @@ common upper vertex prevent every endpoint section from preserving all
 source reachability. Its actual thin-diamond control and native receipt are
 separate from this full-history equivalence.
 
+The [finite prefix inventory](prefix-inventory.md) now collects complete
+prefix traces of selected finite keyed occurrences. It proves valid-prefix
+decoding and exact reconstruction of original ordered occurrences through
+the checked indexed dictionary. Full edge tags remain the identity criterion;
+shared endpoint labels and numeric dictionary positions do not replace them.
+
 ## Source, verification and credit
 
 The [source](../../../../GRWTSK/Combinatorics/DirectedGraph/OccurrencePrefix.lean),

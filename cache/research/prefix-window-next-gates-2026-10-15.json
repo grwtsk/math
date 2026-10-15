@@ -1,0 +1,104 @@
+{
+  "schema": "grwtsk.research.next-gates.v1",
+  "created_utc": "2026-10-15T20:56:56.152401+00:00",
+  "owner": "cache_taxonomy",
+  "status": "NOT_RUN",
+  "scope": "Bounded exact-source next contracts only. Correlated same-team review is not independent validation; no native jobs, code, docs, shared registry, remote effects or new acceptance.",
+  "completed_source_reviews": [
+    {
+      "path": "evidence/Combinatorics/DirectedGraph/prefix-inventory-source-review-2026-10-15.json",
+      "sha256": "eadd733cdc7ff3d36e36fa6c14fde90c2b896856b2c7ef2c7ae13da6df088839"
+    },
+    {
+      "path": "evidence/Analysis/MellinTransform/compact-gaussian-window-source-review-2026-10-15.json",
+      "sha256": "465e171f320557b3142ecb432b237bcdd0847d538a906c53740c99e8e2a12bed"
+    }
+  ],
+  "current_libraries": [
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/PrefixInventory.lean",
+      "sha256": "fa7395f0c55943562274019d96e97e25deaea20defdf9d6f2d8a12d029e743c9"
+    },
+    {
+      "path": "GRWTSK/Analysis/MellinTransform/CompactGaussianWindow.lean",
+      "sha256": "db195580ca2f4e4a941f13c71d285af377d2bb29ed7250db0f0b13570984cec5"
+    }
+  ],
+  "source_identity_manifests": [
+    {
+      "path": ".local/prefix-window-source-scout/7bb1ae6675734be1b0b6fa92ba093fa9/review-context.json",
+      "sha256": "4e7f5afff124983c1e8bd96abc8a0bb65cacb0e7a84632db28443c1e946774c4"
+    },
+    {
+      "path": ".local/prefix-window-source-scout/7bb1ae6675734be1b0b6fa92ba093fa9/gaussian-derivative-manifest.json",
+      "sha256": "de7113667a74deb858ef4778ace67ef26a0f3b662cf5d676a8eca4af09162e6a"
+    }
+  ],
+  "gates": [
+    {
+      "id": "root-aware-finite-parent-edge-reconstruction",
+      "status": "NOT_RUN",
+      "subject": "Combinatorics/DirectedGraph",
+      "input": "The actual finite PrefixInventory D of keyed occurrences at one fixed root, full TotalEdge equality, inventory prefix closure/Nodup/ValidFrom, and existing Packed ordered row references. Retain the root as an explicit external parameter.",
+      "contract": "Represent each inventory slot as an empty-root case or a checked parent-slot reference plus its actual final full typed edge. For nonempty d prove d=dropLast(d)++[lastEdge], parent∈D, all source/target joins, and parent rank=length(d)-1. Prove a decoder using strict trace-length descent expands each slot to its exact original full trace. Then existing dictionary unpack recovers keyed traces; the separate actual EdgeTrace decoder recovers the full ordered keyed occurrences.",
+      "required_obligations": [
+        "Parent references are in bounds; empty case is exactly the empty trace at the retained root. Nonempty rows include exactly one such root slot; empty rows need no slot.",
+        "Termination uses a proved rank decrease or a separately proved topological reordering, never an assumed parent index smaller than child.",
+        "Preserve original row reference order, keys and multiplicity independently from prefix sharing. Actual decode/trace injectivity must prove occurrence identity, not just endpoint identity."
+      ],
+      "controls": [
+        "Empty rows; singleton empty history; distinct Bool parallel edges; revisited loop histories; repeated keyed rows.",
+        "Prove actual child-before-parent example: trace rows[a,a] then[a] produce D=[[a,a],[],[a]], so parent index can exceed child index. Existing parallel_inventory_exact already places root at slot1.",
+        "Two distinct roots can have identical empty trace words; prove that dropping the root cannot recover the intended empty-history endpoint.",
+        "A later checked pointer representation must reject missing parents or cyclic/nondecreasing-rank links; prove actual fixture failures before any intended negative consumer."
+      ],
+      "reuse_and_limits": "Reuse PrefixInventory.prefix_closed/inventory_valid, exact IndexedDictionary unpack, and actual EdgeTrace decoding. Pinned Mathlib List dropLast/concat APIs must be matched before implementation. This contract is not byte/optimal compression, stable revision slots, runtime/JSON refinement, proof or permission authority."
+    },
+    {
+      "id": "actual-log-gaussian-uniform-scale-derivatives",
+      "status": "NOT_RUN",
+      "subject": "Analysis/MellinTransform",
+      "pin": "openai/math@1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "primary_sources": [
+        {
+          "path": "lean/OAI/NumberTheory/DirichletL/Detector/GaussianDerivative.lean",
+          "sha256": "e822dd45a58f81ae149643bd4749a53a2e52cee9d70dd83397415ac8e522cf6d",
+          "git_blob": "022aea0421700bf32d13df8184f1ef6ae641af10",
+          "anchor": "gaussianLog_scaled_derivative_bound92"
+        },
+        {
+          "path": "lean/OAI/NumberTheory/DirichletL/Detector/GaussianSeminorm.lean",
+          "sha256": "f355f3fe007d6f1f3bb535ca92e0e37e996ffc214669ae3f33cb1a8f2d11b25a",
+          "git_blob": "2ead043c3ef474d221a4f078c990f944a5efb11a",
+          "anchors": "gaussianDyadicProfile_derivative_uniform65; gaussianDyadicSchwartz_seminorm96; gaussianDyadicSchwartz_finite_seminorm116; gaussianDyadicSchwartz_two_sided137"
+        }
+      ],
+      "contract": "For every a:ℝ and n:ℕ, prove ∃C>0,∀r>0,∀y∈[1/2,2], ||iteratedDeriv n(fun x=>P(r*x)) y||≤C*r^(-a), for the exact current normalized P. C may depend on(a,n), not r or y.",
+      "actual_suppliers": [
+        "Use the exact complex principal-log extension of P, its nonzero-z all-real-power norm bound, positive-real-part analyticity, and the actual closed disk centered at y with radius1/4 staying away from zero.",
+        "Supply the disk norm bound and real/complex iterated-derivative restriction identity, then apply the existing pinned Mathlib Cauchy derivative estimate with its actual DiffContOnCl and sphere-bound premises. No assumed derivative/interchange wrapper counts as this proof."
+      ],
+      "direct_consumer": "Apply the bound to actual G(Z,j,y)=A(y)P(2^j*y/Z)/sqrt(y), with r=2^j/Z>0 for Z>0. Combine actual derivatives of the fixed compact factor A/sqrt with the product rule to prove the source uniform G-derivative and Schwartz seminorm estimates. A seminorm constant may additionally depend on k,n or the finite seminorm family, never Z or j. The source two-sided estimate takes min(r^A,r^(-A)) with its explicit finite family.",
+      "controls": [
+        "Prove actual omitted-away-from-zero obstruction: n0,a1,y0 gives P(r*0)=P0≠0, so no one constant bounds it by C/r for all positive r. Positive control must prove this before a negative consumer weakens y∈[1/2,2].",
+        "Keep r>0 and the radius1/4 disk hypotheses. A fixed-scale Schwartz object supplies no uniform-in-scale constant.",
+        "Do not infer nonsmoothness at Z0 from the retained Z>0 smoothness premise; the new statement concerns uniform scale estimates."
+      ],
+      "limits": "All listed source theorems are NOT_RUN locally. No full ideal/Hecke/calibration/physical detector, contour continuation, RH supplier or arithmetic norm summability is paid by this analytic gate."
+    }
+  ],
+  "pinned_mathlib_Cauchy": {
+    "path": ".lake/packages/mathlib/Mathlib/Analysis/Complex/Liouville.lean",
+    "sha256": "9f4bd4ef66951f410189d2f27f1de049d588411d9b0c174c8d7c5e56da18be31",
+    "pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "api": "Complex.norm_iteratedDeriv_le_of_forall_mem_sphere_norm_le44",
+    "header": [
+      "/-",
+      "Copyright (c) 2022 Yury Kudryashov. All rights reserved.",
+      "Released under Apache 2.0 license as described in the file LICENSE.",
+      "Authors: Yury Kudryashov",
+      "-/"
+    ]
+  },
+  "coordination_and_preservation": "Graph contract from indexed_dictionary; analytic contract from cache_adapter, with exact primary bytes/anchors read back. Selected OpenAI files have project Apache-2.0 provenance; retain individual Mathlib and existing MIT source credits through linked reviews. Preserve failed/stale receipts and incoming NOT_RUN statuses. Root owns next cursor/frontier and fresh acceptance."
+}

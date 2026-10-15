@@ -365,3 +365,5 @@ import GRWTSK.NumberTheory.LSeries.GaussianContour
 import GRWTSK.Combinatorics.DirectedGraph.EndpointSection
 import GRWTSK.Analysis.PartitionOfUnity.DyadicAnnulus
 import GRWTSK.NumberTheory.LSeries.GaussianDyadic
+import GRWTSK.Combinatorics.DirectedGraph.PrefixInventory
+import GRWTSK.Analysis.MellinTransform.CompactGaussianWindow
