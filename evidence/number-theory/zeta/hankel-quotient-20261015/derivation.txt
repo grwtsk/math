@@ -1,0 +1,273 @@
+Hankel quotient factorization and the retained prime discrepancy
+==============================================================
+
+Direction: R.A. Jacob Martone. Deductions and implementation: OpenAI ChatGPT.
+MIT. Repository source base: 3def75dd484a186e529e76c382c44b1dc40b0de1.
+The algebraic identities and analytic transfers below are written proofs.
+The program checks finite exact rational instances and source enclosures.
+No native Lean admission, all-depth bound, new zero exclusion or RH proof is
+asserted. This record adds to the source manuscripts without revising them.
+
+1. EXACT OBJECTS
+---------------
+Use the unchanged normalization of Subexponential arithmetic matrix growth,
+Sections 1--3, and Transported A2 weights, Sections 1--2 and 7:
+
+ s(w)=(3+w)/(2(1-w)), a(w)=xi'(s(w))/xi(s(w)),
+ F(w)=(a(w)-1)/(a(w)+1)=sum c_k w^k.
+ T_N(f)_(i,j)=1_(i>=j) f_(i-j), H_N(f)_(i,j)=f_(i+j+1).
+ A_N=1+||T_N(F)||, beta_N=||H_N(F)||/A_N.
+
+All norms are Euclidean operator norms. The jets are real. Only a germ at zero
+and a(0)+1 nonzero are required; the latter is independently separated by the
+rational source calculation. No global positivity or zero-free disk is assumed.
+The whole source includes its rational, digamma, and prime-power terms.
+
+2. AN EXACT QUOTIENT HANKEL IDENTITY
+----------------------------------
+Put b(w)=1/(1+a(w))=(1-F(w))/2 and B_N=T_N(b).
+For EVERY N>=1, without a tail or boundary correction,
+
+ H_N(F)=2 B_N H_N(a) B_N^T.                                    (2.1)
+
+Proof. In the bivariate power-series ring the exact identity is
+
+ (F(x)-F(y))/(x-y)
+   =2 b(x)b(y)(a(x)-a(y))/(x-y).
+
+The coefficient of x^i y^j in the divided difference of f is f_(i+j+1).
+Taking i,j<N gives (2.1): only multipliers b_0,...,b_(N-1) and
+source coefficients through a_(2N-1) enter. No bivariate term of lower degree
+is changed by truncating higher terms. Both transposes are ordinary transposes;
+the stated norm application is to the real arithmetic jets. The algebra also
+holds over commutative characteristic-zero fields, not with an inserted complex
+conjugation. The entry (N-1,N-1) really uses index 2N-1.
+
+Define the ONE-SIDED FILTERED SOURCE MATRIX
+
+ K_N=H_N(a) B_N^T.
+
+Since 2B_N=I-T_N(F), (2.1) becomes
+
+ H_N(F)=(I-T_N(F)) K_N,
+ beta_N <= ||K_N||.                                           (2.2)
+
+The second inequality follows from ||I-T_N||<=1+||T_N||=A_N.
+This uses the existing normalization to pay one inverse factor exactly; it does
+not charge two independent denominator inverses. K_N need not be symmetric.
+It is a coherently nested principal-section family: each entry is
+
+ K_(i,j)=sum_(l=0)^j a_(i+l+1)b_(j-l),
+
+independent of a chosen containing dimension. Thus a finite norm bound at N
+also bounds K_n for 1<=n<=N by principal compression. This is not an all-size
+conclusion from one finite computation.
+
+3. COMPLETE COEFFICIENT-RECONSTRUCTION COST
+------------------------------------------
+Suppose actual and approximate a,c jets obey
+
+ e_a=sum_(k=1)^(2N-1)|a_k-ahat_k|,
+ e_c=sum_(k=0)^(N-1)|c_k-chat_k|.
+
+Let Bhat=(I-T_N(chat))/2 and Khat=H_N(ahat) Bhat^T. If
+||H_N(ahat)||<=h and ||Bhat||<=b, then
+
+ ||K_N-Khat|| <= e_a b + h e_c/2 + e_a e_c/2.                  (3.1)
+
+Proof. A single Hankel anti-diagonal mask has norm one (it is a partial
+permutation); hence ||H(a)-H(ahat)||<=e_a. Each Toeplitz shift has norm at
+most one, giving ||B-Bhat||<=e_c/2. Expand the product difference into its
+three terms and bound all three. The cross-error is NOT deleted. This is a
+sufficient coefficientwise majorant, not a claim that independent errors occur.
+The old shared-denominator interval certificate is reused to enclose c itself.
+
+4. THE RESULTING ALL-DEPTH TARGET
+--------------------------------
+The supplied tensor paper proves A_(2N)<=A_N(1+beta_N), with the terminal
+carry retained. By (2.2), a NEW sufficient source inequality is
+
+ ||K_(2^j)|| <= C (2^j)^p for all j>=0, for some C,p>=0.       (4.1)
+
+Indeed log A_(2^J)<=log A_1+sum_(j<J)log(1+C 2^(pj))=O(J^2).
+Compression then gives ||T_N||<=exp(O((log N)^2)). The supplied source-specific
+strip return, Subexponential arithmetic matrix growth Theorem 3.1, implies RH.
+More generally log(1+||K_(2^j)||)=o(2^j) suffices: for any epsilon>0 the late
+terms are at most epsilon 2^j, and the dyadic sum is at most epsilon 2^J plus
+a fixed finite prefix. Divide by 2^J and let epsilon decrease to zero.
+
+Equation (4.1) is an UNPROVED ARITHMETIC TARGET, not an estimate established
+by this extension. It is permitted to grow. No identification with Guth--Maynard's
+phase matrix or affine functional has been assumed. This removes one avoidable
+inverse cost and identifies the exact matrix to which a future bound must apply.
+
+5. THE PRIME-POWER HANKEL KERNEL IS A REFLECTED LAGUERRE PAIRING
+-------------------------------------------------------------
+Define directly
+
+ q_0(x)=1,
+ q_k(x)=sum_(r=1)^k binom(k-1,r-1)(-x)^r/r! (k>=1),
+ L_i(x)=sum_(r=0)^i binom(i,r)(-x)^r/r!.
+
+The elementary generating functions are
+
+ sum q_k(x) w^k = exp(-x w/(1-w)),
+ sum L_i(x) w^i = (1-w)^(-1) exp(-x w/(1-w)).
+
+These are the generalized alpha=-1 and ordinary Laguerre forms; DLMF 18.12.13
+is the classical generating-function ancestry. Our proof uses the displayed
+finite polynomial coefficients and formal series, not orthogonality at alpha=-1.
+For every i,j>=0 and x>=0,
+
+ q_(i+j+1)(x)=-x integral_0^1 L_i(tx)L_j((1-t)x) dt.            (5.1)
+
+Proof. Apply the fundamental theorem of calculus to the two exponentials in
+the divided difference. Since x/(1-x)-y/(1-y)=(x-y)/((1-x)(1-y)), their divided
+difference is minus the spectral argument times the product of the two ordinary
+Laguerre generating functions, integrated over t. Equate coefficients.
+The dummy series variables in this proof are distinct from the nonnegative
+spectral argument called x in (5.1). At spectral argument zero, both sides vanish.
+
+For the vector ell(t)=(L_0(tx),...,L_(N-1)(tx)), define
+
+ ell_+=(ell(t)+ell(1-t))/2, ell_-=(ell(t)-ell(1-t))/2.
+
+Reflection has opposite signs on these two channels, and its mixed integrals
+vanish under t->1-t. Therefore
+
+ integral ell(t)ell(1-t)^T dt
+    = integral ell_+ell_+^T dt - integral ell_-ell_-^T dt.      (5.2)
+
+In the initial half-plane Re s>1, the prime part of a is
+- sum Lambda(n)n^(-3/2) exp(-2log(n)w/(1-w)). Thus its Hankel matrix is
+
+ sum_(n>=2) Lambda(n)n^(-3/2) 2log(n)
+        [Gram(ell_+) - Gram(ell_-)], x=2log(n).                (5.3)
+
+For every fixed N this converges absolutely, since the features are polynomials
+in log(n), Lambda(n)<=log(n), and the power is n^(-3/2).
+After the FULL-source B_N has been constructed, multiplying both features by
+B_N gives the corresponding decomposition in (2.1), with its factor two.
+B_N is not recomputed separately for each prime packet or for the archimedean
+part: that would change the nonlinear quotient.
+
+The signed distinction is necessary. At x=1,N=2 the reflected matrix is
+[[1,1/2],[1/2,1/6]]. On v=(1,-2) it has value -1/3. Replacing reflection by an
+ordinary Gram yields [[1,1/2],[1/2,1/3]], with value +1/3 on the SAME v.
+For odd-channel Hodge attenuation ell_- -> r ell_-, 0<=r<=1, the original
+pairing equals the relaxed pairing MINUS (1-r^2)Gram(ell_-). This exact signed
+debt survives filtering as well. It is not licensed to disappear.
+The auxiliary reflection here acts on the Laguerre integration coordinate t;
+it is not identified with critical reflection of a zero.
+
+6. CANCEL THE DETERMINISTIC POLE BEFORE TAKING ABSOLUTE VALUES
+-------------------------------------------------------------
+Let psi_ar(x)=sum_(n<=x)Lambda(n) and
+
+ Delta(x)=psi_ar(x)-x+1, Delta(1)=0.
+
+This is a new notationally explicit use of the ACTUAL prime discrepancy, not
+a replacement for the manuscripts' source means. The digamma recurrence gives
+
+ R(s)=[psi_digamma(1+s/2)-log(pi)]/2,
+ xi'(s)/xi(s)=R(s)+1/(s-1)-sum_(n>=2)Lambda(n)n^(-s).           (6.1)
+
+The recurrence cancels 1/s against the digamma pole at zero. At the initial
+point s=3/2 it does not cross any singularity. The remaining 1/(s-1) must stay
+paired with the prime-power series. Its kth composed coefficient is
+
+ integral_1^infty y^(-3/2) q_k(2log y) dy
+    = 2 (k=0), and -8(-3)^(k-1) (k>=1).                      (6.2)
+
+Proof. Integrate each finite monomial using
+integral_1^infty y^(-3/2)(log y)^r dy=r! 2^(r+1), then apply the binomial theorem.
+The continuum Hankel is exactly -8 u_Nu_N^T with u_N=(1,-3,...,(-3)^(N-1)).
+Its norm is 9^N-1. This exponentially large deterministic piece is canceled
+in the actual source; bounding it separately is an avoidable loss.
+
+For f_k(x)=x^(-3/2)q_k(2log x), Stieltjes integration by parts gives
+
+ a_k=R_k + integral_1^infty Delta(x)x^(-5/2)
+       [2q_k'(2log x)-(3/2)q_k(2log x)] dx.                  (6.3)
+
+Here R_k=[w^k]R(s(w)). To check the sign, dDelta=dpsi_ar-dx, so continuum minus
+prime is -integral f_k dDelta=integral Delta f_k' dx. The lower boundary is
+zero by Delta(1)=0; the upper boundary vanishes. The crude bound
+|Delta(x)|<=x(log x+1) suffices for absolute convergence at every FIXED k.
+The k=0 weight is -3/2 and is retained, because it affects the denominator b_0.
+
+For the filtered matrix define the true source polynomial
+
+ P_(i,j)(t)=sum_(l=0)^j b_(j-l) q_(i+l+1)(2t).
+
+Equations (2.2) and (6.3) give the EXACT ALL-DEPTH ENTRY IDENTITY
+
+ K_(i,j)=[H(R)B^T]_(i,j)+integral_1^infty Delta(x)x^(-5/2)
+                          [P_(i,j)'(log x)-(3/2)P_(i,j)(log x)] dx. (6.4)
+
+This is the concrete source comparison for a future dispersion/large-value
+argument. It retains the continuum, every prime power, the archimedean term,
+the derivative weight and the full quotient filter. It needs no zero list,
+7/8 input, zero-density theorem, or RH to be an identity of the initial jets.
+The degree-dependent coefficients and b_j can amplify errors; their norm is not
+asserted subexponential. A generic density estimate or a positive feature Gram
+alone does not establish (4.1). A finite continuum/prime truncation must include
+its boundary term and omitted tail; none has been silently discarded here.
+
+7. FRESH FINITE COMPUTATION AND ITS SCOPE
+----------------------------------------
+The new program regenerates 64 coefficients using the unchanged repository
+Euler--Maclaurin source (cutoff 128, order 64), independently at 512 and 640
+working bits. Every source and quotient interval is rounded OUTWARD onto a
+common 160-bit binary grid before matrix arithmetic. This storage/working-grid
+change is explicit and does not assert 512/640-bit accuracy of the output.
+The two analytic remainders and shared-denominator certificate remain recorded.
+
+The general identity (2.1) is proved in Section 2 and exercised on arbitrary
+signed rational jets. For the actual source all 1024 interval residuals contain
+zero; that agreement is a consistency check, not a separate proof of identity.
+The whole K_32 and H_32 are formed, with a_63 and c_63 included.
+
+For a finite matrix M, form G=MM^T. For a nonzero rational proposed vector v,
+let u=v/||v|| and compute with exact rational interval bounds
+
+ a=u^TGu, r=u^TG^2u-a^2, c=Tr(G)-a.
+
+The full complement is positive with norm at most c, and the squared coupling
+is r. If B>a, B>c, and (B-a)(B-c)>r, the two-by-two Schur comparison proves
+||M||^2<B. This is the supplied tensor paper's coupled-mode certificate.
+Our proposer uses rational, grid-rounded power iteration; its quality is not
+trusted. The final strict inequalities use every original matrix entry.
+
+The resulting zero-time bounds are
+
+ ||K_n||^2 < 7/25 and ||H_n(F)||^2 < 23/50 for EVERY 1<=n<=32.
+
+The extension also forms the unchanged retained cubic numerator
+Tr((H_NH_N^T)^3)-(N-1)(Tr(H_NH_N^T)/N)^3 and divides by a certified lower bound
+for (1+||T_N||)^6. It proves J_N<1/600 at N=1,2,4,8,16,32.
+Only the first two norm statements extend to intervening n by compression;
+the J assertion is stated only at the listed sizes. No heat interval is asserted.
+
+These calculations extend this repository producer's 32-coefficient replay to
+64 coefficients; they are not presented as exceeding every finite result in the
+source papers. The paper's separate 40 Schur margins and uniform-in-heat
+128-coefficient computation were NOT replayed by this extension.
+
+8. VERIFICATION LIMITS AND NEXT ESTIMATE
+---------------------------------------
+The replay pins the original producer, the new producer and tests, this proof,
+and the source ledger. It runs the new 39-test exact/guard suite and the prior
+46-test suite (30 source tests plus 16 historical algebra tests) separately in ordinary and optimized Python. Three tests in that
+prior suite are numerical diagnostics, not certificate acceptance. It regenerates
+both profiles in both modes and compares complete deterministic output within
+each profile, then checks all 128 source/quotient boxes across profiles.
+Native Lean, owned-declaration audits and whole-repository conformance are NOT_RUN.
+Existing sources, receipts, workflows, compiler pins and canonical guides remain
+unchanged. Source PDFs are not redistributed.
+
+The next mathematical estimate is (4.1), or the weaker subexponential condition,
+for K_N as actually identified in (6.4), with any approximation error paid using
+(3.1). The unconditional work here establishes the identities and finite
+certificates, not that missing bound. Historical novelty is not claimed for
+standard quotient, Laguerre, integration-by-parts or Schur-complement identities.

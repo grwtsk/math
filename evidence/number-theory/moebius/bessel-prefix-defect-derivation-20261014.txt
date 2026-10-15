@@ -1,0 +1,314 @@
+# Summable moving Mobius prefix and the joint divisor-defect remainder
+
+Human mathematical direction: R.A. Jacob Martone.
+Derivation and implementation assistance: OpenAI ChatGPT. MIT.
+
+STATUS: WRITTEN ALL-DEGREE PREFIX BOUND; FULL ARITHMETIC ENERGY STILL OPEN.
+This contribution bounds an entire source-dependent branch, not merely a
+finite prefix of degrees or a kernel error. Its arithmetic input is the
+explicit MertensLogSquareBound premise. JLT supplies that premise in published
+classical mathematics; no native Lean supplier or theorem admission is made.
+The joint remaining defect norm is not bounded here. No RH claim, P04
+requirement, new Mertens exponent or new zero-free region is introduced.
+
+Inspected repository main: 9a976dbfad03cf9cbbaa8fda8925c8fdab4f7d09.
+Existing executable/source identities:
+ scripts/bessel_mobius_packet_compiler.py
+  blob c05962a9583af9ab71df3ee95aa55dba80bb2531
+ scripts/bessel_packet_integrals.py
+  blob a1207359b1d0edfd5592478b45996c2465c8598f
+The unchanged written Jacobi and Bessel comparisons are respectively
+ evidence/number-theory/moebius/jacobi-sequence-bounds-derivation-20261014.txt
+  blob 056e1a71820890fc7bf7a885ba898a80532fcc05
+ evidence/number-theory/moebius/jacobi-bessel-endpoint-derivation-20261014.txt
+  blob 785d5720e03ae1cf130a55c22225fa249ab546d6.
+They are reused at the written-proof grade, not refreshed into formal acceptance.
+
+## 1. The moving source prefix, not a degree truncation
+
+For j>=1 put D=2^j, K_j=(2D-1)^2, U_j=floor(cuberoot(K_j)).
+For D<=n<2D define U(n)=U_j and a_U(k)=mu(k)1_(k<=U).
+Use the SAME source-exact Bessel kernel K_(n,k) from CP3/EI1, with y range
+ [n^-4, min(1/n,k^-2)], zero if this interval is degenerate. It retains
+(1-y)[1/3-5y^-1/4/(6sqrt(k))] B_n'(y)/(2lambda_n), the full Bessel
+frequency n+7/12, parity, normalization and geometric prefactor.
+
+Write
+ s_n=sum_(k<=U(n))mu(k)K_(n,k) = T_(1,n),
+ v_n=sum_(U(n)<k<=n^2)mu(k)K_(n,k),
+ t_n=s_n+v_n.                                                (PD1)
+
+All sums are finite. No replacement of the Bessel kernel or its endpoints
+is made. In particular, s_n is not zero and is not silently deleted.
+
+The result below proves, under MertensLogSquareBound,
+
+ ||s||_(ell2(w_n), n>=2) < 78200,     w_n=4n+7/3.              (PD2)
+
+More directly, for the ORIGINAL complete Jacobi coefficients d_n,
+
+ ||(d_n-v_n)_(n>=2)||_(ell2(w_n)) < 78200.                    (PD3)
+
+Thus the finite source before U(n), not just before sqrt(n), can be removed
+from the remaining obligation with a paid norm error. This does not assert
+that removing it preserves any finite coefficient, sign, or energy exactly.
+The previous carry-deletion counterexamples remain correct.
+
+## 2. A uniform truncated-source Jacobi estimate
+
+This section requires only a real source c_k supported on 1<=k<=U with
+|c_k|<=1, and integers 2<=U<=n. Define
+ M_U(x)=sum_(k<=min(floor(x),U))c_k,
+ A_U=sum_(k<=U)c_k/sqrt(k),
+ V_U(x)=int_1^x M_U(t)t^-3/2 dt,
+ g_U(y)=y^-5/12 V_U(y^-1/2),
+ p(y)=y^7/6(1-y), lambda_n=n(n+7/6), P_n=P_n^(0,1/6)(2y-1).
+Let pJ_(n,U) be the COMPLETE Jacobi coefficient of this truncated source:
+
+ pJ_(n,U)=sum_(j=0..n) p_(n,j)
+            [sum_(k<=U)c_k/k^(2j+2)]/[(2j+3/2)(2j+2)].       (PD4)
+
+This expression is rational for rational c_k. It integrates the truncated
+source on the entire half-line; it is NOT the original full Mobius d_n.
+The ordinary absolute-convergence source calculation and Jacobi integration
+by parts yield
+ pJ_(n,U)=(2lambda_n)^-1 int_0^1 p(y)g_U'(y)P_n'(y)dy.         (PD5)
+
+For y<=U^-2, all the short source is already active, giving the EXACT form
+ g_U'(y)=-(5/6)A_U y^-17/12+(1/3)M_U(U)y^-7/6.                (PD6)
+For every 0<y<=1 we also have |g_U'|<=(4/3)y^-5/3.
+The primitive is locally absolutely continuous; we do not differentiate
+M_U. The boundary at zero in PD5 is O_n,U(y^3/4), hence zero; the factor
+1-y kills the other boundary. No target square-integrability is assumed.
+
+Use the previously written, explicitly derived Jacobi bounds
+ b_n=(7/6)_n/n! <=(6/5)n^1/6,
+ |P_n'|<=(6/7)lambda_n b_n,
+ |P_n'(y)|<=7sqrt(n)y^-5/6(1-y)^-3/4
+    when n^-2<=y<=1-n^-2.                                  (PD7)
+The last bound follows from the transformed scalar ODE, not an unproved
+arithmetic derivative estimate. Its endpoint/weighted polynomial inputs are
+DLMF 18.14.2 and 18.14.3, with parameters (0,1/6) in the stated domains;
+the derivative endpoint formula uses parameters (1,7/6) in 18.14.2.
+
+Put delta=n^-2, v=U^-2, epsilon=1-delta. Since 2<=U<=n,
+ delta<=v<=1/4<=epsilon. Split PD5 into four intervals.
+
+(0,delta): PD6 and the global derivative bound give at most
+ (4/7)|A_U| n^-4/3+(6/35)|M_U(U)| n^-11/6.
+The integral powers are int y^-1/4=(4/3)y^3/4 and int 1=y.
+
+(delta,v): PD6 and the interior derivative bound give at most
+ 35|A_U| n^-4/3+7|M_U(U)| U^-1/3 n^-3/2.
+Here int_delta^v y^-13/12 <=12n^1/6 and
+int_delta^v y^-5/6 <=6U^-1/3. The factor (1-y)^1/4 is bounded by one.
+
+(v,epsilon): the elementary full-source bound gives at most
+ 14 U^2/3 n^-3/2,
+using int_v^epsilon y^-4/3 <=3U^2/3.
+
+(epsilon,1): the endpoint bound gives at most
+ (24/35)n^-23/6,
+using y^-1/2<2 and int_epsilon^1(1-y)dy=delta^2/2.
+
+Since |M_U(U)|<=U and U<=n, both
+ U n^-11/6 <= U^2/3 n^-3/2 and
+ n^-23/6 <= U^2/3 n^-3/2 hold. The exact constants satisfy
+ 4/7+35=249/7<36,
+ 6/35+7+14+24/35=153/7<22.
+We obtain the all-(n,U) theorem
+
+ |pJ_(n,U)| <=36|A_U| n^-4/3+22U^2/3 n^-3/2,
+                       integers 2<=U<=n.                   (PD8)
+
+The two source terms in PD6 are retained in the identity. Taking their
+absolute values here bounds ONLY the short source, not the positive and
+negative masses of the full arithmetic core.
+
+## 3. Actual Mobius cancellation supplies the critical logarithmic gain
+
+Assume explicitly
+ |M(x)|<=3x/(log x)^2 for every real x>1.                    (ML)
+JLT Theorem A.1(A.5), arXiv:2408.04143v2, has the stronger coefficient
+2.91890. Its typeset statement on PDF page index 23 has been inspected.
+No finite experiment is used to supply ML and no native Lean import is made.
+
+Together with |M(x)|<=x this gives |M(x)|<=12x/(1+log x)^2 on x>=1.
+The source integral then gives
+ |V(x)|<=312sqrt(x)/(1+log x)^2.
+For completeness put x=e^t and use
+ (1+t)/(1+t-u)<=1+u, 0<=u<=t,
+ int_0^infinity e^-u/2(1+u)^2du=26.
+All compact ranges, including x=1, are covered.
+
+Finite Abel summation, with the closed cutoff, gives exactly
+ A_U=M(U)/sqrt(U)+(1/2)V(U).
+Consequently
+
+ |A_U|<=168sqrt(U)/(1+log U)^2.                             (PD9)
+
+For the actual shell cutoff we have 2<=U(n)<=n, U(n)^3<=4n^2,
+and n^2<(U(n)+1)^3. The upper U<=n follows at D>=4 from
+(2D-1)^2<4D^2<=D^3, and at D=2 by the exact value U=2.
+Thus
+ sqrt(U)<=(4/3)n^1/3,
+ U^2/3<=(3/2)n^4/9,
+ 1+log n <=(5/2)(1+log U).
+The last inequality follows from n<(2U)^3/2 and log 2<1, not from
+an asymptotic equivalence that might omit small degrees.
+
+It follows from PD9 that
+ |A_(U(n))|<=1400 n^1/3/(1+log n)^2.
+Therefore the moving-prefix Jacobi coefficients p_n=pJ_(n,U(n)) satisfy
+
+ |p_n| <= 50400/[n(1+log n)^2]+33n^-19/18, n>=2.            (PD10)
+
+This is the literal arithmetic exponent gain in this contribution. The
+source cutoff U=O(n^2/3) changes the generic n^-5/6 estimate to the
+critical n^-1 term; ACTUAL signed Mertens cancellation supplies log^-2.
+The independently bounded remainder is n^-19/18. Neither exponent is
+claimed for the full source d_n. Bounded coefficients alone would replace
+the first term by a constant times n^-1; that envelope is not summable
+in the weighted square norm.
+
+Using w_n<=7n, Minkowski for finite sums and decreasing integral comparisons,
+
+ ||p||_w <= Kp:=50400sqrt(7/3)+33sqrt(63).                    (PD11)
+
+Indeed sum_(n>=2)1/[n(1+log n)^4]<=1/3, and
+sum_(n>=2)n^-10/9<=9. The squared budgets before Minkowski are
+5927040000 and 68607, respectively. No weighted norm of p is assumed
+before deriving these finite bounds and passing to their supremum.
+
+For every integer N>=1 the explicit tail is
+ ||(p_n)_(n>N)||_w <=
+ 50400sqrt(7/3)(1+log N)^-3/2+33sqrt(63)N^-1/18.             (PD12)
+
+## 4. Transfer the prefix estimate without charging an error twice
+
+The prior Jacobi-to-Bessel proof uses only |c_k|<=1 and the source identities.
+It applies for EACH degree n to the short source mu(k)1_(k<=U(n)), even
+though the source changes with n. The pointwise error allowances do not
+depend on U:
+
+ e_n=15n^-7/6+200n^-4/3+50n^-11/6,
+ |p_n-s_n|<=e_n,
+ ||e||_w <= D=sqrt(4725)+sqrt(420000)+sqrt(10500)<821.        (PD13)
+
+Hence ||s||_w<=Kp+D. The same comparison can be applied DIRECTLY to the
+long source mu(k)1_(k>U(n)), whose coefficients also have modulus <=1.
+Linearity at each degree says that its Jacobi coefficient is d_n-p_n,
+while its finite Bessel coefficient is v_n. Thus
+ |d_n-p_n-v_n|<=e_n and ||d-v||_w<=Kp+D, not Kp+2D.
+There is no assumption that p, s, or v are coefficients of one fixed
+function independent of degree; only the degreewise comparisons and
+uniform pointwise error allowances are used.
+
+Let L=Kp+D. The exact rational inequalities sqrt(7/3)<153/100,
+sqrt(63)<8, sqrt(4725)<69, sqrt(420000)<649, sqrt(10500)<103 give
+
+ L<50400*(153/100)+33*8+69+649+103=78197<78200.              (PD14)
+
+This proves PD2 and PD3. In particular sum_(n>=2)w_n*s_n^2<6115240000.
+This constant is deliberately nonoptimal; it is independent of every
+shell, cutoff and degree. The arithmetic premise ML is unchanged.
+
+The corresponding tail for either s or d-v is bounded by
+ L(N)=50400sqrt(7/3)(1+log N)^-3/2+33sqrt(63)N^-1/18
+       +sqrt(4725)N^-1/6+sqrt(420000)N^-1/3
+       +sqrt(10500)N^-5/6, N>=1.                           (PD15)
+It tends to zero. This is a short-source/difference tail, not an upper
+bound for the remaining full energy tail.
+
+## 5. Two signed defect terms reconstruct exactly the remaining source
+
+Use divisor convolution on positive integers, identity epsilon and
+constant-one arithmetic function 1. For the frozen shell prefix define
+ eta_U=a_U*1-epsilon.
+At 1<=k<=U the full divisor sum of mu is epsilon(k), so eta_U(k)=0.
+The cubic compiler, with K_j<(U+1)^3, gives
+
+ mu=a_U-a_U*eta_U+a_U*eta_U*eta_U     on indices 1,...,K_j.   (PD16)
+
+A direct proof notes a_U=mu*(epsilon+eta_U). Multiplication by
+ epsilon-eta_U+eta_U^2 gives mu+mu*eta_U^3. The cube of eta_U
+vanishes before (U+1)^3. Beyond the strict gate the exact remainder is
+-mu*eta_U^3 and must not be dropped. This is a regrouping of the classical
+Huxley--Watt/Vaughan/Heath--Brown identity, not new divisor cancellation.
+
+Let L_n be the coefficient functional CP3 applied to a_U*eta_U, and
+R_n the same functional applied to a_U*eta_U^2. Then
+
+ v_n=R_n-L_n,     t_n=s_n-L_n+R_n.                          (PD17)
+
+In the earlier three-branch notation,
+ L_n=T2_n-T1_n, R_n=T3_n-2T2_n+T1_n,
+ v_n=T3_n-3T2_n+2T1_n.
+These are exact identities using the same K_(n,k) everywhere. All ordered
+multiplier tuples remain, and the strict cubic gate is unchanged.
+The long coefficient vector is EXACTLY mu(k) for U<k<=K_j and zero for
+k<=U; in particular it does not include an arbitrary reset of V.
+The quadratic defect is zero below (U+1)^2. The full long source generally
+starts already at U+1 through the linear defect.
+
+The remaining shell energy is
+ V_j=sum_(n=2^j..2^(j+1)-1) w_n [R_n^2+L_n^2-2R_n L_n].     (PD18)
+The mixed term is required; neither defect term is proved summable alone.
+They do NOT satisfy the bounded-coefficient assumptions individually.
+For a prime p>U, eta_U(p)=1, so delayed support is not coefficientwise
+smallness. Nilpotence at a finite cutoff is not a uniform inverse bound:
+N_R=[[0,R,0],[0,0,R],[0,0,0]] obeys N_R^3=0, but
+||(I+N_R)^-1 e_3||^2=1+R^2+R^4. This control is not a Mobius counterexample.
+
+## 6. Exact return and the remaining quantified obligation
+
+For finite N>=1, define B_N=sum_(n=2..N)w_n v_n^2. PD3 implies
+
+ |sqrt(Q_N-Q_1)-sqrt(B_N)|<=L<78200.                        (PD19)
+
+Under ML, sup_N B_N<infinity is therefore EQUIVALENT to the original
+sup_N Q_N<infinity. In the dyadic form it is sum_(j>=1)V_j<infinity.
+A witness B_N<=B gives
+
+ H_(1/3)(T)<=Q_1+(sqrt(B)+L)^2
+            <1+(sqrt(B)+78200)^2, all real T>=0.            (PD20)
+
+The original source-identification theorem, not a change to an auxiliary
+function, supplies this return. The original signed core consequently
+satisfies Z(R)<=8[1+(sqrt(B)+78200)^2]+69c for R>=1, with the
+unchanged localized-atom constant c. These are conditional returns;
+NO witness B has been supplied. A sufficient shell bound
+V_j<=C/(j+1)^(1+eta), eta>0, likewise remains unproved.
+
+No pointwise Mertens power saving, all-positive-damping conclusion or RH
+proof follows from this one short-prefix theorem. The finite compiler,
+source corrections, and old failed unsigned suppliers are preserved.
+
+## 7. Verification grade and external sources
+
+The companion executable provides exact finite divisor reconstruction,
+rational complete Jacobi moments for finite sources, independent analytic
+atom antiderivatives, exact constant accounting, and actual Bessel integral
+checks through the unchanged certified evaluator. The program's finite
+values do NOT prove PD8-PD15; those statements have the written proofs above.
+The new public functions reject wrong numeric types, missing gates,
+invalid source lengths and resource/precision exhaustion.
+
+Primary sources used:
+- Johnston, Leong, Tudzi, arXiv:2408.04143v2, Theorem A.1(A.5), PDF p.24.
+  https://www.arxiv.org/pdf/2408.04143v2
+  Actual rendered statement inspected: |M(x)|<=2.91890*x/log(x)^2, x>1.
+- NIST DLMF 18.14.2-18.14.3 and the prior explicit transformed-ODE proof.
+  https://dlmf.nist.gov/18.14
+  Endpoint/weighted polynomial inequalities have the required domains.
+- Huxley and Watt, Mertens Sums requiring Fewer Values of the Mobius Function,
+  arXiv:1807.05890v1, (1.6), coefficientwise discussion (1.10).
+  https://arxiv.org/html/1807.05890v1
+  The cubic identity is classical; PD16 is its exact finite regrouping.
+
+Native Lean/Lake is unavailable in this execution. No full checkout is
+available: direct git ls-remote failed DNS. Pinned native replay, owned
+axiom audit and repository-wide layout/documentation checks are NOT_RUN.
+No active Lean source, old receipt, canonical guide, compiler pin, workflow
+or permission is changed. This research evidence does not refresh old
+verification into new theorem acceptance.

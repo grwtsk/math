@@ -7,8 +7,8 @@
 | Object guides | 3 |
 | Documented object groups | 3 |
 | Distinct primary sources linked | 3 |
-| Lean source modules | 41 |
-| Archive intake records | 0 |
+| Lean source modules | 44 |
+| Archive intake records | 3 |
 | Selected catalog families | 0 |
 
 These counts measure documentation and source coverage. They do not count accepted theorems or establish that every source module is documented or checked. [Definitions and limits](../../reference/library-pages.md#count-definitions).

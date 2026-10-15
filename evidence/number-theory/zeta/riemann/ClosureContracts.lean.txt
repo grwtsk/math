@@ -1,0 +1,65 @@
+/- Candidate replay contracts, not a native acceptance receipt.
+Human direction: R.A. Jacob Martone. Implementation assistance: OpenAI ChatGPT.
+MIT; upstream sources retain their respective licenses.
+The declaration-specific axiom prints below do not constitute complete owned
+and transitive source-policy auditing. That gate remains separately required. -/
+import GRWTSK.Algebra.Polynomial.Quartic.TraceWitness
+import GRWTSK.Order.Approximation.PositiveScale
+import GRWTSK.NumberTheory.Zeta.Riemann.QuarticCriteria
+import GRWTSK.NumberTheory.Zeta.Riemann.HeightExhaustion
+import GRWTSK.NumberTheory.Zeta.Riemann.OrbitFrequency
+import GRWTSK.NumberTheory.Zeta.Riemann.PolynomialEnergyCriterion
+
+set_option autoImplicit false
+
+noncomputable section
+
+-- The original target is referenced, never redefined or shadowed.
+#check (_root_.RiemannHypothesis : Prop)
+#print _root_.RiemannHypothesis
+#print _root_.riemannZeta
+
+example (a t : ℝ) :
+    GRWTSK.Polynomial.QuarticTrace.witnessTrace 2 a t = -16 * a ^ 4 :=
+  GRWTSK.Polynomial.QuarticTrace.uniform_witness a t
+
+example (a t : ℝ) :
+    (0 ≤ GRWTSK.Polynomial.QuarticTrace.witnessTrace 2 a t) ↔ a = 0 :=
+  GRWTSK.Polynomial.QuarticTrace.uniform_witness_nonneg_iff a t
+
+example (k : ℝ) :
+    (∀ a t : ℝ, a ≠ 0 → GRWTSK.Polynomial.QuarticTrace.witnessTrace k a t < 0) ↔
+      0 < k ^ 2 ∧ k ^ 2 ≤ 4 :=
+  GRWTSK.Polynomial.QuarticTrace.all_parameters_detected_iff k
+
+-- These are explicitly conditional consumers, not root proofs.
+example (h : GRWTSK.Zeta.Riemann.QuarticTraceNonnegative) : _root_.RiemannHypothesis :=
+  GRWTSK.Zeta.Riemann.quarticTraceNonnegative_iff.mp h
+
+example (h : GRWTSK.Zeta.Riemann.HeightScheme) : _root_.RiemannHypothesis :=
+  h.riemannHypothesis
+
+-- Reuse the canonical P04 theorem directly, without a second named wrapper.
+example (hX : GRWTSK.RiemannHypothesis.CCC.PickupCrossPoly) : _root_.RiemannHypothesis :=
+  GRWTSK.RiemannHypothesis.CCC.riemannHypothesis_of_pickupCrossPoly hX
+
+#print axioms GRWTSK.Polynomial.QuarticTrace.squareTrace_eq
+#print axioms GRWTSK.Polynomial.QuarticTrace.witnessTrace_formula
+#print axioms GRWTSK.Polynomial.QuarticTrace.uniform_witness
+#print axioms GRWTSK.Polynomial.QuarticTrace.witnessTrace_neg
+#print axioms GRWTSK.Polynomial.QuarticTrace.uniform_witness_nonneg_iff
+#print axioms GRWTSK.Polynomial.QuarticTrace.fourth_power_enclosure
+#print axioms GRWTSK.Polynomial.QuarticTrace.residual_contradiction
+#print axioms GRWTSK.Polynomial.QuarticTrace.oversized_slope_witness
+#print axioms GRWTSK.Polynomial.QuarticTrace.all_parameters_detected_iff
+#print axioms GRWTSK.Order.PositiveScale.nonneg_of_upper_approximations
+#print axioms GRWTSK.Order.PositiveScale.nonneg_of_residual_extraction
+#print axioms GRWTSK.Zeta.Riemann.quarticTraceNonnegative_iff
+#print axioms GRWTSK.Zeta.Riemann.riemannHypothesis_of_relative_extraction
+#print axioms GRWTSK.Zeta.Riemann.riemannHypothesis_of_finite_residual
+#print axioms GRWTSK.Zeta.Riemann.all_heights_iff
+#print axioms GRWTSK.Zeta.Riemann.HeightScheme.riemannHypothesis
+#print axioms GRWTSK.Zeta.Riemann.frequency_eq_rotation
+#print axioms GRWTSK.Zeta.Riemann.frequency_orbit
+#print axioms GRWTSK.Zeta.Riemann.orbit_zero_members
+#print axioms GRWTSK.RiemannHypothesis.CCC.riemannHypothesis_of_pickupCrossPoly

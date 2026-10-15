@@ -1,0 +1,86 @@
+{
+  "base_commit": "23bf37f3e389c9b0b8ccf111c68e72c05c9a0d3c",
+  "inputs": {
+    "evidence/analysis/reflected-heat-boundary-20261014/README.txt": {
+      "bytes": 1781,
+      "sha256": "a20a2032a18e9a96ebe62f4e1ee955641717aa4ccdd1c8971c2f40d7440f1071"
+    },
+    "evidence/analysis/reflected-heat-boundary-20261014/bilateral-4096-160.json": {
+      "bytes": 1531,
+      "sha256": "b2e3497e0dce57803a875eb7c141bf0dedbc0f9ffd27169ae5bfc07a71a579ce"
+    },
+    "evidence/analysis/reflected-heat-boundary-20261014/bilateral-4096-192.json": {
+      "bytes": 1687,
+      "sha256": "93baa56f7a69c25e3099d4389925cb0cd7e6a37b81643033474fb4ee285e954b"
+    },
+    "evidence/analysis/reflected-heat-boundary-20261014/bundle-update-v1/README.txt": {
+      "bytes": 4039,
+      "sha256": "184173cb7845f661b99503424d1a38db7752a70fe7061bf8d86642c2a40ea7e5"
+    },
+    "evidence/analysis/reflected-heat-boundary-20261014/bundle-update-v1/full-derivation.txt": {
+      "bytes": 23252,
+      "sha256": "982712e3d52d234cd145a9a1d900dbbdf3b86d2757280ee9055b616283455a37"
+    },
+    "evidence/analysis/reflected-heat-boundary-20261014/bundle-update-v1/historical-replay.json": {
+      "bytes": 18603,
+      "sha256": "0ab151c701d6b057beda63dcc1efbf45f71783f59f4f7a6f68840a2e84515601"
+    },
+    "evidence/analysis/reflected-heat-boundary-20261014/bundle-update-v1/historical-verification.json": {
+      "bytes": 4595,
+      "sha256": "4cdfbac21e1f93090f4d4fad3a6eb922c519e8f19c30a1eaea6006de9bd8e548"
+    },
+    "evidence/analysis/reflected-heat-boundary-20261014/bundle-update-v1/intake-receipt.json": {
+      "bytes": 4243,
+      "sha256": "dd38fc735c9b8ef7bb38446032744175c1e87fea84178090bd91490e3f575d4c"
+    },
+    "evidence/analysis/reflected-heat-boundary-20261014/bundle-update-v1/package-manifest.json": {
+      "bytes": 5363,
+      "sha256": "9b1d43bb1a4558756bc649b7e2c939105a7e3ce18cdd5f3c78c0ee47961ac561"
+    },
+    "evidence/analysis/reflected-heat-boundary-20261014/bundle-update-v1/paper-map.json": {
+      "bytes": 11873,
+      "sha256": "748e9b1f1147559e4e69233f2531292a7222bf858cc5cc9d9aa5c2bf409d6571"
+    },
+    "evidence/analysis/reflected-heat-boundary-20261014/bundle-update-v1/paper-map.txt": {
+      "bytes": 10740,
+      "sha256": "1496f585cd6c3482ef015725204318bff04011ded1003dbf2207514e3df80737"
+    },
+    "evidence/analysis/reflected-heat-boundary-20261014/derivation.txt": {
+      "bytes": 13233,
+      "sha256": "65e13cfb5fb817806e1311931d3df42e633fd3d9a74e5b092fd420fc09bd2829"
+    },
+    "evidence/analysis/reflected-heat-boundary-20261014/integration-receipt.json": {
+      "bytes": 3813,
+      "sha256": "e5e5b32db165681f54f020ad19984e0e8388bcb4b3ef87f0e612671d4172d578"
+    },
+    "evidence/analysis/reflected-heat-boundary-20261014/paper-sources.json": {
+      "bytes": 2139,
+      "sha256": "4fa2c23bbb1d095e7a697d25799561be4fc9fb555543ec57d0323ee5fbb8c511"
+    },
+    "evidence/analysis/reflected-heat-boundary-20261014/replay-summary.json": {
+      "bytes": 5138,
+      "sha256": "23f31dba943d9d45cd0f31f310e056bef2acef231d26776ff9ee1a7bc4658c8a"
+    },
+    "evidence/analysis/reflected-heat-boundary-20261014/requirements-tests.txt": {
+      "bytes": 14,
+      "sha256": "25f9f1fb1988b230147a1d3092d34e09c069eb7a6c6d6df46b3973b9f2d36efc"
+    },
+    "scripts/screw_hodge_transfer.py": {
+      "bytes": 13940,
+      "sha256": "c716b2174efff26b22e1b6a36b733e0d121401c021b4e8a05e535b2563b0650a"
+    },
+    "scripts/verify_screw_hodge_transfer.py": {
+      "bytes": 4593,
+      "sha256": "a7f09dcd7c695c958905b7405af6e12ae1879901b8ffc93340e5c70e3fa769b9"
+    },
+    "tests/test_reflected_heat_bundle.py": {
+      "bytes": 8776,
+      "sha256": "23195cd723f224f439153cefee393f82d65c90860838a99c64e617c5505d1572"
+    },
+    "tests/test_screw_hodge_transfer.py": {
+      "bytes": 13626,
+      "sha256": "b2869349bc1ee79def23231ae430afae5f78e3b0d94b6466f4c5e2b208f43081"
+    }
+  },
+  "schema": "reflected-heat-replay-inputs-v1"
+}

@@ -1,0 +1,38 @@
+{
+  "guth_maynard": {
+    "source": "https://arxiv.org/html/2405.20552v2",
+    "theorem": "1.2",
+    "exponent": "15(1-sigma)/(3+5sigma)",
+    "status": "PRIMARY_TEXT_INSPECTED_NOT_REPROVED"
+  },
+  "seven_eighths": {
+    "repository": "openai/math",
+    "commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+    "path": "lean/OAI/NumberTheory/DirichletL/Nonvanishing.lean",
+    "status": "IMPORTED_FROM_SUPPLIED_SYNTHESIS_NOT_REPLAYED"
+  },
+  "euler_maclaurin": {
+    "source": "https://dlmf.nist.gov/25.11",
+    "status": "PRIMARY_TEXT_INSPECTED_WRITTEN_REMAINDER_DERIVED"
+  },
+  "digamma": {
+    "source": "https://dlmf.nist.gov/5.11",
+    "status": "PRIMARY_TEXT_INSPECTED_WRITTEN_REMAINDER_DERIVED"
+  },
+  "author_return": {
+    "file": "subexponential_arithmetic_return.pdf",
+    "theorem": "3.1",
+    "status": "SUPPLIED_WRITTEN_PROOF_NOT_KERNEL_CHECKED"
+  },
+  "author_matrix": {
+    "file": "transported_weights_tensor_return.pdf",
+    "sections": [
+      "2",
+      "7"
+    ],
+    "status": "SUPPLIED_WRITTEN_PROOF_NOT_KERNEL_CHECKED"
+  },
+  "density_constants_evaluated": false,
+  "all_depth_J_bound": "OPEN",
+  "RH_proved": false
+}

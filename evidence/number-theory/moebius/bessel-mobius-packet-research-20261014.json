@@ -1,0 +1,329 @@
+{
+  "schema": "bessel-mobius-packet-research-v1",
+  "date": "2026-10-14",
+  "repository": "grwtsk/math",
+  "branch": "main",
+  "inspected_base_commit": "ab0010ebd75bc99aac4bb1517d7093148ecb20ee",
+  "implementation_and_derivation_commit": "aa18de27e17fee3e888c238e3f32e4e2dc078799",
+  "status": "WRITTEN_EXACT_SOURCE_COMPILER_WITH_FINITE_TESTS_NOT_ARITHMETIC_ENERGY_BOUND",
+  "human_mathematical_direction": "R.A. Jacob Martone",
+  "derivation_and_implementation": "OpenAI ChatGPT",
+  "source_bindings": [
+    {
+      "path": "scripts/bessel_mobius_packet_compiler.py",
+      "bytes": 9550,
+      "sha256": "599d0cfb14cd9595372262081225a1c61be5d2ca1c0fbac52730cbf4d51a4a2b",
+      "git_blob_sha1": "c05962a9583af9ab71df3ee95aa55dba80bb2531"
+    },
+    {
+      "path": "scripts/test_bessel_mobius_packet_compiler.py",
+      "bytes": 7403,
+      "sha256": "2de6bc2187c6521dd7d393f0db74800a6b0018572273bbb19a2ca221dfbeace0",
+      "git_blob_sha1": "a17fa897642d0b7f5de58c7848095ce8854a2a3f"
+    },
+    {
+      "path": "evidence/number-theory/moebius/bessel-mobius-packet-research-20261014.txt",
+      "bytes": 12299,
+      "sha256": "360b573d6d2873263f7ed5f85266f03f0a18fe764286c5b528c5d6e4ae7188be",
+      "git_blob_sha1": "e2df8cda89ffda347f5cfe756ced14a3dedc083d"
+    }
+  ],
+  "prior_written_source": {
+    "path": "evidence/number-theory/moebius/jacobi-bessel-endpoint-derivation-20261014.txt",
+    "bytes": 16330,
+    "git_blob_sha1": "785d5720e03ae1cf130a55c22225fa249ab546d6",
+    "sha256": "f431feeeb5027927156482f4ac7ab47b4c490d6bd6c8a414c3d39838f6b78b42",
+    "status": "WRITTEN_ONLY; reused at its existing grade, not promoted to native admission"
+  },
+  "research_application_dispositions": [
+    {
+      "topic": "Source-specific packet aggregation",
+      "status": "APPLIED_WITH_NEW_WRITTEN_ADAPTER",
+      "action": "Recognize t_n as a finite weighted sum of actual mu, then apply the classical cubic coefficient identity before taking a square."
+    },
+    {
+      "topic": "Older von-Mangoldt Bessel and common-Mellin sources",
+      "status": "DIRECT_IMPORT_INAPPLICABLE",
+      "action": "Do not identify a logarithmic-derivative source with the reciprocal-zeta Mobius source. Preserve any future normalization, contour, and multiplier costs."
+    },
+    {
+      "topic": "Conditional Type-I and normalized-coherence estimates",
+      "status": "MISSING_HYPOTHESES_RETAINED",
+      "action": "Finite coefficient compilation does not supply a uniform coefficient budget, capacity estimate, or signed coherence bound."
+    },
+    {
+      "topic": "Grounded centers and source-bearing zero modes",
+      "status": "APPLIED_TO_CARRY_ACCOUNTING",
+      "action": "All atoms k<=sqrt(n) remain in the Bessel coefficient; no source reset or deletion of mixed terms."
+    },
+    {
+      "topic": "Ordinary Bessel series involving zeta values",
+      "status": "NOT_IMPORTED_AS_RECIPROCAL_ZETA_ESTIMATE",
+      "action": "The ordinary integer-index sum is not the current finite Mobius kernel. Its formula does not furnish the target bound."
+    }
+  ],
+  "written_results": [
+    {
+      "id": "CP3-4",
+      "statement": "For n>=2, t_n=sum_(k=1..n^2)mu(k)K_(n,k), with exact y-support [n^-4,min(1/n,k^-2)] and zero when degenerate. K retains both scalar source-derivative terms and the full Bessel derivative.",
+      "scope": "Finite linearity for the actual source. Rational endpoints do not make the Bessel integrals rational; integrals not evaluated here."
+    },
+    {
+      "id": "CP5-6",
+      "statement": "With a=mu restricted to 1..U and b=mu-a, mu=3a-3a*a*1+a*a*a*1*1+b*b*b*1*1. For k<(U+1)^3 the remainder is zero.",
+      "scope": "Classical finite divisor identity, not a new cancellation bound; all multiplier multiplicities retained."
+    },
+    {
+      "id": "CP7-9",
+      "statement": "For a degree shell D0<=n<2D0, use K=(2D0-1)^2 and U=floor(cuberoot(K)); the complete source through K is compiled from actual mu through U. Thus t_n=3T1_n-3T2_n+T3_n at the same actual kernel.",
+      "scope": "Input-range reduction only. Neither speed nor arithmetic norm improvement is claimed."
+    },
+    {
+      "id": "CP10-13",
+      "statement": "Retain 9T1^2+9T2^2+T3^2-18T1T2+6T1T3-6T2T3. A still-unproved E_j<=C/(j+1)^(1+eta), eta>0, would give H_(1/3)(T)<1+(sqrt(C*(1+1/eta))+821)^2.",
+      "scope": "Conditional bound return. The exact remaining condition is sum_j E_j<infinity; no witnesses C or eta supplied."
+    },
+    {
+      "id": "CP14-15",
+      "statement": "For n>=4 and 3(n+7/12)<=x<=n^2, z=2(n+7/12)asin(1/x) satisfies z^2<=1/2; the normalized F_(1/6)(z)>=25/28.",
+      "scope": "A small-argument region, not a sign or size bound for B_n-prime, K_(n,k), or t_n. The full interval cannot be assigned large-argument oscillation."
+    }
+  ],
+  "external_sources": [
+    {
+      "title": "Huxley and Watt, Mertens Sums requiring Fewer Values of the Mobius Function",
+      "url": "https://arxiv.org/html/1807.05890v1",
+      "locator": "(1.6), Theorem 1, and coefficientwise explanation (1.10)",
+      "disposition": "Classical cubic identity rederived and applied to the finite source; no power-saving theorem imported."
+    },
+    {
+      "title": "NIST DLMF 10.9.4",
+      "url": "https://dlmf.nist.gov/10.9.E4",
+      "disposition": "Normalized Poisson integral for order greater than -1/2; used for the small-argument lower bound."
+    },
+    {
+      "title": "Trickovic and Stankovic, Series over Bessel functions as series in terms of Riemann zeta function",
+      "url": "https://arxiv.org/pdf/2407.13004v1",
+      "locator": "Equation (2.4), printed page 6",
+      "inspection": "Relevant rendered PDF page inspected. No formula used to infer Mobius or reciprocal-zeta cancellation."
+    }
+  ],
+  "verification": {
+    "python_version": "3.13.5",
+    "test_methods": 18,
+    "runs": [
+      {
+        "command": "python3 -B scripts/test_bessel_mobius_packet_compiler.py",
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "..................\n----------------------------------------------------------------------\nRan 18 tests in 1.705s\n\nOK\n"
+      },
+      {
+        "command": "python3 -O -B scripts/test_bessel_mobius_packet_compiler.py",
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "..................\n----------------------------------------------------------------------\nRan 18 tests in 1.733s\n\nOK\n"
+      }
+    ],
+    "selected_finite_cases": {
+      "cube_root_boundary_cases": 198,
+      "independent_mobius_indices": 2048,
+      "all_small_source_cutoffs": 256,
+      "complete_degree_shells": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "finite_rational_test_weight_transports": 16,
+      "signed_three_channel_energies": 125,
+      "symbolic_source_derivative_degrees": 32,
+      "atom_support_degrees": 98,
+      "small_argument_scalar_degrees": 97,
+      "largest_complete_source_limit": 16129,
+      "largest_shell_short_mobius_input": 25
+    },
+    "calculation_scope": "Exact integers and standard-library Fraction arithmetic. All rational weights used in linear transport tests are test weights, not Bessel kernel evaluations.",
+    "bessel_source_integrals_evaluated": false,
+    "uniform_energy_tested_or_proved": false,
+    "remote_integrity": "Both Python blobs and the derivation blob were read back and match the local source bytes.",
+    "native_lean_replay": "NOT_RUN: no Lean/Lake executable available.",
+    "owned_declaration_audit": "NOT_RUN: no active Lean source added or changed.",
+    "full_repository_layout_and_documentation_checks": "NOT_RUN: no full checkout used; existing canonical guides and inventories unchanged.",
+    "privacy": "Private conversation excerpts and discussion bodies are not published here. Detailed source-to-application research notes are provided separately to the user.",
+    "publication": "Four new text files on existing main through the GitHub contents API. No branch creation, reset, force-push, workflow or permission change.",
+    "historical_evidence": "UNCHANGED"
+  },
+  "finite_batch": {
+    "command": "python3 -B scripts/bessel_mobius_packet_compiler.py --shell 2 --shell 8 --shell 32 --shell 64",
+    "records": [
+      {
+        "first_degree": 2,
+        "last_degree": 3,
+        "degree_count": 2,
+        "closed_source_limit": 9,
+        "mobius_input_limit": 2,
+        "strict_support_threshold": 27,
+        "coefficient_count": 9,
+        "source_queries_beyond_short_cutoff": 0,
+        "branch_l1_masses": [
+          2,
+          7,
+          13
+        ],
+        "recombined_l1_mass": 6,
+        "initial_coefficients": [
+          0,
+          1,
+          -1,
+          -1,
+          0,
+          -1,
+          1,
+          -1,
+          0,
+          0
+        ],
+        "all_cross_channels_required": true
+      },
+      {
+        "first_degree": 8,
+        "last_degree": 15,
+        "degree_count": 8,
+        "closed_source_limit": 225,
+        "mobius_input_limit": 6,
+        "strict_support_threshold": 343,
+        "coefficient_count": 225,
+        "source_queries_beyond_short_cutoff": 0,
+        "branch_l1_masses": [
+          5,
+          149,
+          347
+        ],
+        "recombined_l1_mass": 139,
+        "initial_coefficients": [
+          0,
+          1,
+          -1,
+          -1,
+          0,
+          -1,
+          1,
+          -1,
+          0,
+          0,
+          1,
+          -1,
+          0,
+          -1,
+          1,
+          1,
+          0
+        ],
+        "all_cross_channels_required": true
+      },
+      {
+        "first_degree": 32,
+        "last_degree": 63,
+        "degree_count": 32,
+        "closed_source_limit": 3969,
+        "mobius_input_limit": 15,
+        "strict_support_threshold": 4096,
+        "coefficient_count": 3969,
+        "source_queries_beyond_short_cutoff": 0,
+        "branch_l1_masses": [
+          11,
+          2618,
+          6792
+        ],
+        "recombined_l1_mass": 2415,
+        "initial_coefficients": [
+          0,
+          1,
+          -1,
+          -1,
+          0,
+          -1,
+          1,
+          -1,
+          0,
+          0,
+          1,
+          -1,
+          0,
+          -1,
+          1,
+          1,
+          0
+        ],
+        "all_cross_channels_required": true
+      },
+      {
+        "first_degree": 64,
+        "last_degree": 127,
+        "degree_count": 64,
+        "closed_source_limit": 16129,
+        "mobius_input_limit": 25,
+        "strict_support_threshold": 17576,
+        "coefficient_count": 16129,
+        "source_queries_beyond_short_cutoff": 0,
+        "branch_l1_masses": [
+          16,
+          11077,
+          29932
+        ],
+        "recombined_l1_mass": 9805,
+        "initial_coefficients": [
+          0,
+          1,
+          -1,
+          -1,
+          0,
+          -1,
+          1,
+          -1,
+          0,
+          0,
+          1,
+          -1,
+          0,
+          -1,
+          1,
+          1,
+          0
+        ],
+        "all_cross_channels_required": true
+      }
+    ],
+    "scope": "Coefficient arrays and counts only; no Bessel energies calculated."
+  },
+  "negative_controls": [
+    "cubic support threshold equality",
+    "ordered neutral multipliers dropped",
+    "changed cubic sign",
+    "mixed energy term omitted",
+    "pre-block source carry deleted",
+    "invalid exact numeric type",
+    "future coefficient array",
+    "negative energy weight",
+    "large diagnostic run without explicit source budget"
+  ],
+  "pending_work": [
+    "Rigorous finite evaluation of the actual Bessel atom integrals and comparison with the original source integrals.",
+    "A source-specific uniform estimate for the complete mixed shell energy, with the small-argument region retained.",
+    "Native source and theorem admission under the pinned Lean environment."
+  ],
+  "nonclaims": {
+    "uniform_signed_core_bound": false,
+    "uniform_bessel_energy_bound": false,
+    "uniform_jacobi_energy_bound": false,
+    "new_mertens_exponent": false,
+    "new_zero_free_region": false,
+    "P04_required": false,
+    "MertensLogSquareBound_discharged_natively": false,
+    "new_lean_admissions": 0,
+    "RH_proof": false
+  }
+}

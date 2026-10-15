@@ -1,0 +1,186 @@
+{
+  "schema": "reciprocal-phase-kernel-source-bound-receipt-v1",
+  "date": "2026-10-14",
+  "repository": "grwtsk/math",
+  "branch": "main",
+  "inspected_base_commit": "51b121d5c644a5de7af64916c796d362b4fba8fa",
+  "implementation_and_article_commit": "ff1191dde1eb8bb397f5a2a64fe429f7af742e62",
+  "human_mathematical_direction": "R.A. Jacob Martone",
+  "written_derivation_and_implementation": "OpenAI ChatGPT",
+  "source_bindings": [
+    {
+      "path": "scripts/reciprocal_phase_kernel.py",
+      "bytes": 11465,
+      "sha256": "fd6873f9d927cfb27d8c8f9aad80fec78a2e59f6fbdf6b7fd389fb3b9085813a",
+      "git_blob_sha1": "58a71f487e522fb58e5d8ed234da6967bd22f1df"
+    },
+    {
+      "path": "scripts/test_reciprocal_phase_kernel.py",
+      "bytes": 8329,
+      "sha256": "8a4cd84638874460e8e188ea2b054cb36b99e9eb91dd0c6266d21dc34309faeb",
+      "git_blob_sha1": "7df82d23e26739d70400e5b0f33bbebcda0ec44b"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/Moebius/Energy/damped-tails.md",
+      "bytes": 34163,
+      "sha256": "9e09dd47881e11cd300d17e226bcbd51781d40447040ff0f3454258155b3016d",
+      "git_blob_sha1": "df0e05a0bbfead269d53f6a521252f86b8bd48e0"
+    }
+  ],
+  "unchanged_dependency": {
+    "path": "scripts/one_third_energy.py",
+    "bytes": 11582,
+    "git_blob_sha1": "f13161b4d5844dbd3c873f999f1b82a25747ae93",
+    "sha256": "9c73bb399ca9c45384f114a6cbd18fd3121991c38aa1bef62d4baf7cac37eee9"
+  },
+  "preserved_article_prefix": {
+    "bytes": 23597,
+    "git_blob_sha1": "25f9a85ac5b521f71870b13bba113dbcfaa2d0e8",
+    "preserved_byte_for_byte": true,
+    "historical_receipts_unchanged": true
+  },
+  "sources": [
+    {
+      "name": "NIST DLMF 24.8.1",
+      "url": "https://dlmf.nist.gov/24.8.E1",
+      "scope": "Classical degree-two Bernoulli Fourier formula; used with explicit normalization and absolute tail bound. HTML inspected; no external Lean import."
+    },
+    {
+      "name": "M. N. Huxley and N. Watt, Mertens Sums requiring Fewer Values of the Mobius Function",
+      "url": "https://arxiv.org/html/1807.05890v1",
+      "scope": "Classical finite divisor compression already used in the preceding article; no new cancellation theorem."
+    }
+  ],
+  "written_results": [
+    "For y>=1: q_+(y)=sqrt(y)-3/2+1/(2sqrt(y))+rho(y)/(2*y^(3/2))+(3/4)*int_1^y rho(v)*v^(-5/2)dv, rho(v)={v}(1-{v})/2.",
+    "rho_L(v)=(1/(2*pi^2))*sum_(h=1..L)(1-cos(2*pi*h*v))/h^2; 0<=rho-rho_L<=1/(pi^2*L), and rho_L is exactly zero at integers.",
+    "The complete anchored kernel keeps three main terms, the endpoint, and the finite history integral. For ab<=x: 0<=K_x(a,b)-K_(x,L)(a,b)<=1/(pi^2*L*sqrt(ab)).",
+    "With U=floor(sqrt(x)), F(x)=sum_(a,b<=U)mu(a)mu(b)K_(x,L(x))(a,b), E=B-F: |E(x)|<=4sqrt(x)/(pi^2*L(x)). No positivity of E is asserted.",
+    "For L(x)=ceil(x^(1/4)): int_0^T exp(-2t/3)*|E(exp(t))|^2 dt<=96/pi^4 for every T>=0. This is an approximation-error bound, not a bound on F or W.",
+    "General error budget for L(x)>=x^q: 16/[pi^4*(2sigma+2q-1)] when sigma>0, q>=0, 2sigma+2q>1. Failure of this majorant at q<=1/6 for sigma=1/3 is not divergence of actual error.",
+    "With D=sqrt(864/5)+4sqrt(6)/pi^2: |sqrt(H_(1/3)(T))-sqrt(int_0^T exp(-2t/3)|F(exp(t))|^2dt)|<=D. The remaining uniform F-energy premise is equivalent to the original one-third target.",
+    "The retained three main terms 2sqrt(x)R_U^2-3A_U^2+M_U^2/sqrt(x) and both signed finite-mode terms remain together. No arithmetic exponent gain is supplied.",
+    "A dyadic supplier I_j<=C*2^(5j/3)/(j+1)^(1+epsilon) would give retained energy <=C*(1+1/epsilon); the supplier is unpaid.",
+    "At x=4 the entrywise-nonnegative error kernel has zero (2,2) entry and positive (1,2) entry; its determinant is negative. No quadratic ordering follows from entrywise order."
+  ],
+  "verification": {
+    "test_methods": 20,
+    "runs": [
+      {
+        "command": "python3 -B scripts/test_reciprocal_phase_kernel.py",
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "....................\n----------------------------------------------------------------------\nRan 20 tests in 5.925s\n\nOK\n"
+      },
+      {
+        "command": "python3 -O -B scripts/test_reciprocal_phase_kernel.py",
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "....................\n----------------------------------------------------------------------\nRan 20 tests in 6.011s\n\nOK\n"
+      }
+    ],
+    "finite_grid_cases": {
+      "periodic_polynomial_phases": 193,
+      "Fourier_tail_phase_and_mode_pairs": 124,
+      "independent_anchored_kernel_cases": 18,
+      "signed_two_coefficient_assignments": 9,
+      "positive_decay_budget_cases": 40
+    },
+    "arithmetic_method": "Exact Fraction interval arithmetic; Machin pi enclosure, Taylor cosine remainder, outward rounding with guard precision, sixth-root brackets and explicit midpoint quadrature error. No floating-point values enter the recorded enclosures.",
+    "exact_identity_check_scope": "Overlapping enclosures are consistency checks, not equality proofs. The identities and general inequalities have written proofs only.",
+    "remote_integrity": "All three changed-file Git blob SHA-1 values matched the local tested/source bytes after readback.",
+    "pinned_lean_replay": "NOT_RUN: no Lean/Lake executable in active runtime.",
+    "owned_declaration_audit": "NOT_RUN: no Lean source added or modified.",
+    "full_repository_layout": "NOT_RUN: no full checkout; direct Git access failed at DNS resolution.",
+    "full_repository_documentation_checks": "NOT_RUN: only a source-bound partial snapshot available. No new documentation page or source inventory was added.",
+    "publication": "GitHub contents API on existing main; no Codex task, new branch, reset, force-push, workflow or permission changes."
+  },
+  "negative_control": {
+    "cutoff": "4",
+    "modes": 1,
+    "test_vector": [
+      "1/4",
+      "-1"
+    ],
+    "quadratic_error_interval": {
+      "lower": "-422282248323/70368744177664",
+      "upper": "-181901301601/35184372088832"
+    },
+    "strictly_negative": true
+  },
+  "finite_batch_command": "python3 -B scripts/reciprocal_phase_kernel.py --cutoff 1 --cutoff 7/2 --cutoff 4 --cutoff 9/2 --cutoff 17/2 --cutoff 16 --panels 128 --bits 48",
+  "arithmetic_status": {
+    "uniform_one_third_bound": "UNPAID",
+    "retained_finite_mode_energy_bound": "UNPAID",
+    "new_mertens_exponent": "NONE",
+    "new_zero_free_exponent": "NONE",
+    "MertensLogSquareBound": "Explicit premise unchanged; no unconditional boundary admission.",
+    "new_lean_admissions": 0,
+    "P04": "Not required; no witness claimed.",
+    "RH": "NOT CLAIMED",
+    "next_inequality": "exists C>=0 forall T>=0: int_0^T exp(-2t/3)*abs(sum_(a,b<=floor(exp(t/2)))mu(a)mu(b)K_(exp(t),ceil(exp(t/4)))(a,b))^2dt<=C"
+  },
+  "limits": "Deterministic approximation-tail control, exact written reductions and finite executable diagnostics only. Not an arithmetic cancellation witness or a formal proof admission.",
+  "finite_batch_summary": [
+    {
+      "cutoff": "1",
+      "closed_N": 1,
+      "short_cutoff": 1,
+      "modes": 1,
+      "source": "actual Mobius",
+      "exact_identity_consistent": true,
+      "error_enclosure_inside_allowance": true
+    },
+    {
+      "cutoff": "7/2",
+      "closed_N": 3,
+      "short_cutoff": 1,
+      "modes": 2,
+      "source": "actual Mobius",
+      "exact_identity_consistent": true,
+      "error_enclosure_inside_allowance": true
+    },
+    {
+      "cutoff": "4",
+      "closed_N": 4,
+      "short_cutoff": 2,
+      "modes": 2,
+      "source": "actual Mobius",
+      "exact_identity_consistent": true,
+      "error_enclosure_inside_allowance": true
+    },
+    {
+      "cutoff": "9/2",
+      "closed_N": 4,
+      "short_cutoff": 2,
+      "modes": 2,
+      "source": "actual Mobius",
+      "exact_identity_consistent": true,
+      "error_enclosure_inside_allowance": true
+    },
+    {
+      "cutoff": "17/2",
+      "closed_N": 8,
+      "short_cutoff": 2,
+      "modes": 2,
+      "source": "actual Mobius",
+      "exact_identity_consistent": true,
+      "error_enclosure_inside_allowance": true
+    },
+    {
+      "cutoff": "16",
+      "closed_N": 16,
+      "short_cutoff": 4,
+      "modes": 2,
+      "source": "actual Mobius",
+      "exact_identity_consistent": true,
+      "error_enclosure_inside_allowance": true
+    }
+  ],
+  "full_finite_batch_artifact": {
+    "filename": "reciprocal_phase_kernel_enclosures.json",
+    "bytes": 5880,
+    "sha256": "ecf12f5a824afa3f11ffe9389c1e12be2a5848db604c217271df8220ecec7dca",
+    "scope": "Conversation artifact; finite interval calculations, not a uniform arithmetic bound."
+  }
+}

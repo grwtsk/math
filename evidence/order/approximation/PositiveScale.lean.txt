@@ -1,0 +1,51 @@
+/-
+Human mathematical direction and supplied targets: R.A. Jacob Martone.
+Candidate implementation and additional algebraic derivations: OpenAI ChatGPT.
+MIT; Lean and Mathlib retain their upstream authorship and licenses.
+CANDIDATE_SOURCE_ONLY. Not natively compiled or axiom-audited in this run.
+This retained text is not imported by the active library. No RH proof is claimed.
+-/
+import Mathlib.Data.Real.Basic
+import Mathlib.Tactic.Linarith
+import Mathlib.Tactic.Ring
+import Mathlib.Tactic.NormNum
+
+set_option autoImplicit false
+
+noncomputable section
+
+namespace GRWTSK.Order.PositiveScale
+
+/-- Arbitrarily small RELATIVE errors suffice. No common positive lower bound
+on the scales is required, but each selected scale must be strictly positive. -/
+theorem nonneg_of_upper_approximations (x : ℝ)
+    (h : ∀ ε : ℝ, 0 < ε → ∃ w scale : ℝ,
+      0 ≤ w ∧ 0 < scale ∧ w ≤ scale * (x + ε)) : 0 ≤ x := by
+  by_contra hx
+  have hx0 : x < 0 := lt_of_not_ge hx
+  obtain ⟨w, scale, hw, hs, hb⟩ := h (-x / 2) (by linarith)
+  have hneg : scale * (x + -x / 2) < 0 :=
+    mul_neg_of_pos_of_neg hs (by linarith)
+  exact (not_lt_of_ge hw) (lt_of_le_of_lt hb hneg)
+
+/-- Exact source identification and a one-sided residual estimate provide the
+upper approximations. Absolute-value bounds are sufficient but unnecessary. -/
+theorem nonneg_of_residual_extraction (x : ℝ)
+    (h : ∀ ε : ℝ, 0 < ε → ∃ w scale residual : ℝ,
+      0 ≤ w ∧ 0 < scale ∧ w = scale * x + residual ∧ residual ≤ scale * ε) :
+    0 ≤ x := by
+  apply nonneg_of_upper_approximations x
+  intro ε hε
+  obtain ⟨w, scale, residual, hw, hs, heq, hr⟩ := h ε hε
+  refine ⟨w, scale, hw, hs, ?_⟩
+  calc
+    w = scale * x + residual := heq
+    _ ≤ scale * x + scale * ε := add_le_add_left hr _
+    _ = scale * (x + ε) := by ring
+
+/-- A positive total expression cannot be assigned to an individual summand. -/
+theorem positive_total_negative_component :
+    (0 : ℝ) ≤ (-1) + 2 ∧ ¬ (0 : ℝ) ≤ -1 := by
+  constructor <;> norm_num
+
+end GRWTSK.Order.PositiveScale

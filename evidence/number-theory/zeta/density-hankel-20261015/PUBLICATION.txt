@@ -1,0 +1,49 @@
+Density--Hankel publication on main
+==================================
+
+Human mathematical direction: R.A. Jacob Martone.
+Repository publication and replay: OpenAI ChatGPT. MIT.
+Publication parent: 522d3ee7a53317fbec96b78c2869bc95d80068aa.
+
+This publication installs the prepared source, tests and research evidence. It
+preserves every existing repository file, including the concurrent quartic
+slope-witness commit. It does not change the arithmetic or add active Lean code.
+
+README.txt, work-receipt.json, historical/ and fresh-replay.json.xz are prior
+records. Their no-publication statements and prior timestamps remain historical,
+not statements about this commit. All 32 prepared payloads are preserved: 28
+at their original paths and four as lossless XZ files. publication-receipt.json
+records original and compressed hashes, sizes and paths. Original manifest paths
+for those four files describe the decoded bytes; they are not missing evidence.
+The compression changes storage only. No source PDF is redistributed.
+
+From the repository root with requirements-tests.txt installed:
+
+  python3 -B scripts/verify_density_hankel.py --mode both
+
+The unchanged runner regenerates the source and density certificates. It does
+not read the four generated records, so no decompression is needed to replay.
+It still checks its fixed 23-input manifest. For example, view a stored report:
+
+  xz -dc evidence/number-theory/zeta/density-hankel-20261015/source-32-384.json.xz
+
+Python's standard-library lzma.decompress provides the same decoded bytes.
+publication-replay.json retains the new complete replay. Six repeated producer
+stdout bodies are referenced by exact decoded hashes and XZ paths; test output,
+stderr, exit codes, arguments and proof-status fields remain inline. Each linked
+producer output was freshly reproduced and matched byte for byte. The original
+full replay is retained separately as fresh-replay.json.xz.
+
+Fresh publication replay: 46 tests in each of ordinary and optimized Python;
+32 actual coefficients at 256 and 384 bits; all ten subprocesses completed;
+complete dyadic sections N=1,2,4,8,16; all corresponding coefficient boxes overlap;
+300 complete density bands. J_N<1/600 is certified only at those five sizes.
+The 7/8 and density inputs remain imported, not freshly audited; their unknown
+constants are not assigned values. Symbolic and rational computations do not
+establish the all-depth arithmetic bound or the analytic remainder proofs.
+
+A full checkout and native Lean/Lake are unavailable here. Direct Git still
+fails DNS resolution; publication uses the authenticated GitHub Git-data API,
+an additive tree and a non-force expected-head update. Native compilation,
+owned-declaration audit and whole-repository layout/documentation checks were
+not run. No RH proof, new nonvanishing region, or all-depth bound is claimed.
