@@ -1,0 +1,27 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "prefix-source-scout",
+  "event": "completion",
+  "status": "complete-bounded-correlated-source-review",
+  "at": "2026-10-15T18:48:30.123326+00:00",
+  "evidence": "evidence/Order/Embeddings/prefix-obstruction-source-review-2026-10-15.json",
+  "sha256": "281ea9fe09e0181d1c0f49f73f1946259c49dbf175ed888ac153976983d50ca3",
+  "bytes": 18222,
+  "final_source_sha256": {
+    "GRWTSK/Order/Embeddings/PrefixObstruction.lean": "438d46160c2131154dc49b6c345208207c4ba0931ec0487a08153a0291ac8f46",
+    "GRWTSK/Order/Embeddings/Checks/Positive/PrefixObstruction.lean": "6351f7c8ff76d7a50e5028b649405d1d8f65b3d6836724f1488c4da0da33f79a",
+    "GRWTSK/Order/Embeddings/Checks/Negative/PrefixMissingReflection.lean": "c68af330ee9d86c1aa3fc9e162c44efadefb975beec8167c1a9ae1662d625e8f"
+  },
+  "all_three_final_hashes_match": true,
+  "finding": "No actionable omission observed. Preservation and reflection remain distinct; actual injective monotone diamond map fails reflection. Arxiv cone/embedding terminology is source-bound and orientation/target limits retained.",
+  "arxiv_versions": [
+    "math/0510344v2",
+    "1309.7379v1"
+  ],
+  "anthropic_pin": "e1a4e6508154ea59f030480661590a9fe3018011",
+  "incoming_candidate_status": "CANDIDATE_SOURCE_ONLY; native compilation and axiom audit NOT_RUN unchanged",
+  "native_replay_by_this_task": "NOT_RUN",
+  "independent_review": false,
+  "source_or_shared_metadata_edits": false,
+  "commit_or_remote_effect": false
+}

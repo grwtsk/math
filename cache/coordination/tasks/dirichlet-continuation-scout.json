@@ -1,0 +1,12 @@
+{
+  "schema": "repository-agent-task-v1",
+  "id": "dirichlet-continuation-scout",
+  "at": "2026-10-15T18:40:20.879991+00:00",
+  "owner": "cache_adapter",
+  "branch": "main",
+  "base_commit": "5372baf055363563c2f59c5b9e61c0898b35c52c",
+  "cache_revision": "86216996c73eafb52b7888eeaddeb2c2d92d045a58d0457025d6a9b91a08266a",
+  "write_paths": [],
+  "objective": "Inspect pinned OpenAI NumberTheory/DirichletL/Continuation.lean product_identity_on_halfPlane and actual current consumers; exact source/license/hypotheses/duplicates; no duplicate convenience port.",
+  "coordination": "Write immutable exact-hash progress/completion events; no prior source edits, commits or shared metadata changes. Root owns native audit/admission."
+}

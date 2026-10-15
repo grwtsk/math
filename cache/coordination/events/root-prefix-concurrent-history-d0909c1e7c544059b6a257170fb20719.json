@@ -1,0 +1,33 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "prefix-obstruction-round",
+  "event": "concurrent-history-integration",
+  "at": "2026-10-15T18:54:51.303397+00:00",
+  "initial_head": "5372baf055363563c2f59c5b9e61c0898b35c52c",
+  "current_head": "0f21b26bc192b876af5d0f41beb8515c22d4f463",
+  "intervening_commits": [
+    "0f21b26bc192b876af5d0f41beb8515c22d4f463 5bf87b5b97579ff0fd063893110c4afb9418a506 c202b844e76651d5d6a643c4e564cff928bff754 Merge remote-tracking branch 'origin/main'",
+    "5bf87b5b97579ff0fd063893110c4afb9418a506 2ae9ba8ca2ffc0fe59a166c5213d2072b497045a 46902124f25fe3a8a2b903865830845f9bd2cdc8 Merge remote-tracking branch 'origin/main'",
+    "2ae9ba8ca2ffc0fe59a166c5213d2072b497045a 5372baf055363563c2f59c5b9e61c0898b35c52c Add inventory and source-command totals throughout mathematical documentation",
+    "c202b844e76651d5d6a643c4e564cff928bff754 46902124f25fe3a8a2b903865830845f9bd2cdc8 Isolate proper prime powers as a critical carrier and a bounded Hardy remainder",
+    "46902124f25fe3a8a2b903865830845f9bd2cdc8 9c0ef233ba723096f061d6482f2074a322a4eb6c Bound the complete Laguerre atom diagonal and publish source-preserving energy replays"
+  ],
+  "changed_committed_paths_archive": ".local/prefix-obstruction/root/concurrent-head-paths.txt",
+  "changed_committed_paths_sha256": "04aaa417eee539ce70a5676440e0538842724d69562453473e300e401ee1b918",
+  "preserved_initial_bytes_count": 95,
+  "scope": "Monitor committed the source-command tooling and existing generated guide/index changes; concurrent merges added scientific research evidence and scripts. No selected Lean/library source, native runner or pinned context bytes changed. No index conflict.",
+  "overlap_paths": [
+    "docs/mathematics/Order/index.md"
+  ],
+  "Order_index": "Monitor preimage now belongs to committed history. Current generated projection includes new selected guide; original bytes remain separately archived.",
+  "remote_reference_observation": {
+    "origin_main": "0f21b26bc192b876af5d0f41beb8515c22d4f463",
+    "scope": "Observed concurrent ref state; this agent performed no fetch, merge, push or remote write."
+  },
+  "path_case_observation": {
+    "physical_parent": "evidence/order",
+    "new_git_paths": "evidence/Order/Embeddings/*.json",
+    "probe": "git add --dry-run confirms exact requested uppercase paths; no existing leaf collision, path rename or proof receipt rebind."
+  },
+  "acceptance": "No unrelated scientific result or historical receipt promoted by the merge. Selected native source hashes remain unchanged."
+}

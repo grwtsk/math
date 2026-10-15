@@ -1,0 +1,43 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "prefix-obstruction-round",
+  "event": "selected-round-complete",
+  "at": "2026-10-15T18:55:32.888561+00:00",
+  "branch": "main",
+  "base_commit_observed": "0f21b26bc192b876af5d0f41beb8515c22d4f463",
+  "continuation": {
+    "path": "cache/coordination/continuations/2026-10-15-prefix-obstruction.json",
+    "sha256": "3478dde3b18ce6f4fe94312718d931955877e080567696114dab9d55399cb780"
+  },
+  "native_result": [
+    {
+      "source": "GRWTSK/Order/Embeddings/PrefixObstruction.lean",
+      "receipt": {
+        "path": "evidence/Order/Embeddings/prefix-obstruction-checks-2026-10-15.json",
+        "sha256": "0d000a611f6e9c40ba90b433c853d856a72c3b213f5d660586efd74d630da24a"
+      },
+      "scope": "Generic preserve+reflect prefix obstruction, actual diamond, valid chain and same injective preserving/nonreflecting map; closure64 owned."
+    }
+  ],
+  "decision": {
+    "path": "cache/decisions/prefix-embedding-v1.json",
+    "sha256": "196d242c8cefa0c25b8817312f71790cf620da6d60d0c7cb7db3b1eb23e5cb0e"
+  },
+  "source_review": {
+    "path": "evidence/Order/Embeddings/prefix-obstruction-source-review-2026-10-15.json",
+    "sha256": "281ea9fe09e0181d1c0f49f73f1946259c49dbf175ed888ac153976983d50ca3"
+  },
+  "primary_openai_review": {
+    "path": "evidence/NumberTheory/LSeries/dirichlet-continuation-source-review-2026-10-15.json",
+    "sha256": "c68b1346c449d3563e69d4c1d0d5bf0b76835cefca462ee7cbdeab228ad2d47c"
+  },
+  "cache_custody": "668 Lean +2 catalogs+9 context=679 exact outside expansion files; all cached labels remain unknown-unreplayed. Operational invalidation8 with context unchanged; no theorem acceptance propagated.",
+  "documentation": "Selected page/source/evidence/links/Order+main projections PASS; whole source drift17/layout175 remain. Both hostile suites PASS92.",
+  "concurrent_history": "Preserved new main HEAD0f21b26 and five intervening commits/merges. Monitor source-count edits are now committed; 93 initial nonoverlap tracked and2 initial untracked file byte preimages unchanged. Order index regenerated from monitor projection. This agent made no remote writes.",
+  "cleanup": "Sole main branch/checkout; stale-worktree dry run and actual prune empty. No live or unmerged history removed.",
+  "limits": [
+    "Correlated review not independent, dependency objects reused/fingerprinted not rebuilt cold.",
+    "No candidate Prefix/typed-JSON/runtime/hash/zlib/IO refinement, missing215 method identities or RH supplier discharged."
+  ],
+  "remote_effects_by_this_agent": false
+}

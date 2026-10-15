@@ -1,0 +1,658 @@
+{
+  "schema": "mathematical-source-review-v1",
+  "id": "openai-dirichlet-continuation-2026-10-15",
+  "at": "2026-10-15T18:49:13.864713+00:00",
+  "task": "cache/coordination/tasks/dirichlet-continuation-scout.json",
+  "owner": "cache_adapter",
+  "status": "source-inspected/not-replayed",
+  "branch_observed": "main",
+  "scope": {
+    "kind": "bounded-read-only-research",
+    "upstream_repository": "https://github.com/openai/math",
+    "upstream_pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+    "primary_path": "lean/OAI/NumberTheory/DirichletL/Continuation.lean",
+    "primary_declaration": "OAI.SevenEighths.Continuation.product_identity_on_halfPlane",
+    "upstream_lean_files_inspected": 54,
+    "upstream_search_boundary": "All 54 immediate .lean children of lean/OAI/NumberTheory/DirichletL at the exact pinned directory listing; no subdirectory or repository-wide completeness claim.",
+    "own_search_boundary": "Current GRWTSK/**/*.lean exact-name/identity-principle textual searches plus statement/proof inspection of the four matching continuation consumers; this is not an axiom/dependency audit.",
+    "mathlib_search_boundary": "Pinned local Mathlib/Analysis Lean-source exact-name and Mellin/Fourier API searches; absence of an exact reverse-Mellin declaration is bounded textual evidence, not a universal nonexistence theorem.",
+    "upstream_instructions": "Inspected upstream text/metadata only as source material; no instruction in it was executed or promoted to user authorization."
+  },
+  "source_bindings": [
+    {
+      "path": "lean/OAI/NumberTheory/DirichletL/Continuation.lean",
+      "sha256": "5e82c4cd2ddfad95227dbcd9f7a87c8cf9e16d62c46fee297309c0a99a9678ac",
+      "git_blob": "ca5f566eaed0bc230eb0c9bc2005e807709d2e09",
+      "bytes": 7455,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/Continuation.lean",
+      "preserved_path": ".local/dirichlet-continuation/a1bb819f19b04cf5a774e48bad70c10c/lean/OAI/NumberTheory/DirichletL/Continuation.lean",
+      "raw_url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/Continuation.lean"
+    },
+    {
+      "path": "lean/OAI/NumberTheory/DirichletL/ContinuationInversion.lean",
+      "sha256": "166139695fcd8753df43d21f7e0b3a5a0ffc774bd75d0535fb4d0b33757170d8",
+      "git_blob": "9ccdbb58a4af00f4b9afc496da448dc26783d547",
+      "bytes": 5378,
+      "matches": [
+        {
+          "line": 1,
+          "text": "import OAI.NumberTheory.DirichletL.Continuation"
+        }
+      ],
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/ContinuationInversion.lean",
+      "raw_url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/ContinuationInversion.lean",
+      "preserved_path": ".local/dirichlet-continuation/a1bb819f19b04cf5a774e48bad70c10c/lean/OAI/NumberTheory/DirichletL/ContinuationInversion.lean"
+    },
+    {
+      "path": "lean/OAI/NumberTheory/DirichletL/Supremum.lean",
+      "sha256": "4731fe9e9d86cde2ba9accf807fa8e257fe8114674a304040d7515a0aee1880d",
+      "git_blob": "54f346f4b187d6ee0ae8303c44dc59fbf0ed4ab3",
+      "bytes": 3893,
+      "matches": [],
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/Supremum.lean",
+      "raw_url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/Supremum.lean",
+      "preserved_path": ".local/dirichlet-continuation/a1bb819f19b04cf5a774e48bad70c10c/lean/OAI/NumberTheory/DirichletL/Supremum.lean"
+    },
+    {
+      "path": "lean/lean-toolchain",
+      "sha256": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+      "git_blob": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+      "bytes": 25,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/lean-toolchain",
+      "preserved_path": ".local/dirichlet-continuation/a1bb819f19b04cf5a774e48bad70c10c/lean/lean-toolchain",
+      "raw_url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/lean-toolchain"
+    },
+    {
+      "path": "lean/lake-manifest.json",
+      "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794",
+      "git_blob": "67d01d2717d0aaff59fb8814bb53581b961f42b4",
+      "bytes": 14622,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/lake-manifest.json",
+      "preserved_path": ".local/dirichlet-continuation/a1bb819f19b04cf5a774e48bad70c10c/lean/lake-manifest.json",
+      "raw_url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/lake-manifest.json"
+    },
+    {
+      "path": "lean/formalization.yaml",
+      "sha256": "5a8a164259591208886cd018416e61552665265ec9e20cff636f9d51117c2278",
+      "git_blob": "275eee8cfab7ce49d3a5e88f02cbb8f28fe6fee6",
+      "bytes": 79482,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/formalization.yaml",
+      "preserved_path": ".local/dirichlet-continuation/a1bb819f19b04cf5a774e48bad70c10c/lean/formalization.yaml",
+      "raw_url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/formalization.yaml"
+    },
+    {
+      "path": "lean/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "git_blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "bytes": 11357,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/LICENSE",
+      "preserved_path": ".local/dirichlet-continuation/a1bb819f19b04cf5a774e48bad70c10c/lean/LICENSE",
+      "raw_url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/LICENSE"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "git_blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "bytes": 11357,
+      "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/LICENSE",
+      "preserved_path": ".local/dirichlet-continuation/a1bb819f19b04cf5a774e48bad70c10c/LICENSE",
+      "raw_url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/LICENSE"
+    }
+  ],
+  "retrieval_and_integrity": {
+    "method": "Exact-commit GitHub raw bytes, pinned GitHub contents/listing API Git-blob identifiers, independent SHA-256 and Git-blob SHA-1 calculation; website browsing for primary page verification.",
+    "verified_raw_hash_and_git_blob_binding": true,
+    "archived_source_count": 59,
+    "all_selected_immediate_lean_fetches_succeeded": true,
+    "directory_listing": ".local/dirichlet-continuation/a1bb819f19b04cf5a774e48bad70c10c/DirichletL-listing.json",
+    "inspection_manifest": ".local/dirichlet-continuation/a1bb819f19b04cf5a774e48bad70c10c/inspection-manifest.json",
+    "full_bounded_search_manifest": ".local/dirichlet-continuation/a1bb819f19b04cf5a774e48bad70c10c/upstream-consumer-search.json",
+    "algorithmic_boundary": "Hashes identify inspected bytes. They do not establish Lean elaboration, theorem validity, source freshness at another commit, or absence of axioms."
+  },
+  "credit_and_environment": {
+    "upstream_project_author": "OpenAI",
+    "credit_source": "lean/formalization.yaml project.authors and associated source authors at the exact pin; Continuation.lean and ContinuationInversion.lean have no individual author header.",
+    "upstream_project_license": "Apache-2.0",
+    "license_binding": "Both root LICENSE and lean/LICENSE are byte-identical pinned Apache-2.0 texts; see source_bindings.",
+    "future_port_requirement": "Retain OpenAI attribution and Apache-2.0 credit; retain individual Mathlib credit for reused source/proof fragments. Do not label a port as wholly original GRWTSK mathematics.",
+    "mathlib_individual_credit": [
+      {
+        "path": "Mathlib/Analysis/Analytic/Uniqueness.lean",
+        "authors": [
+          "Sébastien Gouëzel"
+        ],
+        "license": "Apache-2.0"
+      },
+      {
+        "path": "Mathlib/Analysis/MellinTransform.lean",
+        "authors": [
+          "David Loeffler"
+        ],
+        "license": "Apache-2.0"
+      },
+      {
+        "path": "Mathlib/Analysis/MellinInversion.lean",
+        "authors": [
+          "Lawrence Wu"
+        ],
+        "license": "Apache-2.0"
+      },
+      {
+        "path": "Mathlib/Analysis/SpecialFunctions/Gaussian/FourierTransform.lean",
+        "authors": [
+          "Sébastien Gouëzel"
+        ],
+        "license": "Apache-2.0"
+      }
+    ],
+    "upstream_toolchain": "leanprover/lean4:v4.34.1",
+    "upstream_mathlib_pin": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "local_toolchain": "leanprover/lean4:v4.33.0",
+    "local_mathlib_manifest_pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "local_mathlib_checkout_pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "toolchain_mismatch_requires_future_replay": true,
+    "headline_boundary": "The catalog title reporting a zero-free half-plane is source metadata only. This inspection does not verify that headline or a theorem closure supporting it."
+  },
+  "primary_contract": {
+    "source_lines": [
+      77,
+      90
+    ],
+    "parameters": {
+      "a": "arbitrary real number",
+      "b": "arbitrary real number",
+      "L,M,W": "arbitrary functions from complex numbers to complex numbers"
+    },
+    "target_domain": "{s : ℂ | a < s.re}",
+    "initial_domain": "{s : ℂ | max a b < s.re}",
+    "hypotheses": [
+      "AnalyticOnNhd ℂ L {s | a < s.re}",
+      "AnalyticOnNhd ℂ M {s | a < s.re}",
+      "AnalyticOnNhd ℂ W {s | a < s.re}",
+      "For every s with max a b < s.re: L s * M s = W s"
+    ],
+    "conclusion": "Set.EqOn (fun s => L s * M s) W {s | a < s.re}",
+    "coefficient_assumptions": "None: no arithmetic coefficients, Dirichlet character, modulus, Euler product or Dirichlet series is fixed by this declaration.",
+    "nonvanishing": "No nonvanishing hypothesis or conclusion in this declaration.",
+    "ordering": "No premise a < b is required; max a b supplies a nonempty open initial subdomain.",
+    "proof_mechanism": "Anchor max a b + 1; initial equality gives full-neighborhood eventual equality there; convex target half-plane is preconnected; apply existing Mathlib analytic identity principle to the analytic product.",
+    "mathematical_role": "Half-plane convenience specialization of an existing Mathlib identity theorem, not an arithmetic continuation supplier."
+  },
+  "conditional_nonvanishing_contracts": [
+    {
+      "declaration": "signalMellin_analytic",
+      "source_lines": [
+        59,
+        75
+      ],
+      "definition": "signalMellin f c s = mellin f (-(s + (c : ℂ)))",
+      "hypotheses": [
+        "f : ℝ → ℂ; a,c : ℝ",
+        "LocallyIntegrableOn f (Set.Ioi 0)",
+        "f =O[atTop] (fun x : ℝ => x ^ (a + c))",
+        "RapidDecayAtZero f, defined as every real-power big-O bound at the right neighborhood of zero"
+      ],
+      "conclusion": "AnalyticOnNhd ℂ (signalMellin f c) {s | a < s.re}",
+      "role": "Actual Mellin differentiability from integrability/power bounds, using Mathlib, followed by affine composition. It does not construct f or prove arithmetic bounds."
+    },
+    {
+      "declaration": "nonzero_of_regularized_signal",
+      "source_lines": [
+        92,
+        111
+      ],
+      "domain": "Re(s) > a; initial identity on Re(s) > max a b",
+      "hypotheses": [
+        "L,Lregular,R,W : ℂ → ℂ and f : ℝ → ℂ; a,b,c : ℝ",
+        "Lregular, R, W analytic on the entire target half-plane",
+        "f locally integrable on (0,∞), f=O(x^(a+c)) at infinity, rapid decay at zero",
+        "Initial exact identity Lregular(s) * signalMellin(f,c,s) = R(s) * W(s)",
+        "rho.re > a",
+        "Pointwise regularization Lregular(rho) = R(rho) * L(rho)",
+        "Explicit R(rho) ≠ 0",
+        "Explicit W(rho) ≠ 0"
+      ],
+      "conclusion": "L(rho) ≠ 0",
+      "open_suppliers": [
+        "actual arithmetic f/L and coefficient identity",
+        "analytic regularization and R,W suppliers",
+        "initial identity",
+        "regularization at rho",
+        "the stated nonvanishing suppliers"
+      ]
+    },
+    {
+      "declaration": "nonzero_of_common_signal",
+      "source_lines": [
+        130,
+        158
+      ],
+      "continuation_margin": "min (β - 7/8 - ω) σ; a = β - continuationMargin β ω σ",
+      "hypotheses": [
+        "β,ω,σ,c : ℝ with 0 < ω",
+        "Lregular and R analytic on Re(s)>a",
+        "H analytic on Re(s)>7/8",
+        "For every s with Re(s)>7/8: norm(H(s)-1) ≤ 1/2",
+        "f locally integrable on (0,∞) with rapid decay at zero",
+        "J=O(x^(7/8+c+ω)) at infinity",
+        "J-f=O(x^(β+c-σ)) at infinity",
+        "Exact initial product identity on Re(s)>max a 1 with gaussianMultiplier H(s)=exp((s-5/6)^2)*H(s)",
+        "rho.re > a",
+        "Lregular(rho)=R(rho)*L(rho)",
+        "R(rho) ≠ 0"
+      ],
+      "conclusion": "L(rho) ≠ 0",
+      "boundary": "The contraction supplies gaussian-multiplier nonvanishing; it does not discharge the initial product, actual signal bounds, analytic regularization, or R(rho)≠0. No arithmetic L or coefficients are fixed by this theorem."
+    }
+  ],
+  "upstream_actual_consumers": {
+    "scope_count": 54,
+    "exact_name_occurrences": [
+      {
+        "name": "signalMellin_analytic",
+        "path": "lean/OAI/NumberTheory/DirichletL/Continuation.lean",
+        "line": 59,
+        "text": "theorem signalMellin_analytic (f : ℝ → ℂ) (a c : ℝ)"
+      },
+      {
+        "name": "product_identity_on_halfPlane",
+        "path": "lean/OAI/NumberTheory/DirichletL/Continuation.lean",
+        "line": 77,
+        "text": "theorem product_identity_on_halfPlane (a b : ℝ) (L M W : ℂ → ℂ)"
+      },
+      {
+        "name": "nonzero_of_regularized_signal",
+        "path": "lean/OAI/NumberTheory/DirichletL/Continuation.lean",
+        "line": 92,
+        "text": "theorem nonzero_of_regularized_signal (a b c : ℝ)"
+      },
+      {
+        "name": "product_identity_on_halfPlane",
+        "path": "lean/OAI/NumberTheory/DirichletL/Continuation.lean",
+        "line": 105,
+        "text": "have hid := product_identity_on_halfPlane a b Lregular (signalMellin f c)"
+      },
+      {
+        "name": "signalMellin_analytic",
+        "path": "lean/OAI/NumberTheory/DirichletL/Continuation.lean",
+        "line": 106,
+        "text": "(fun s => R s * W s) hL (signalMellin_analytic f a c hlocal htop hzero)"
+      },
+      {
+        "name": "nonzero_of_common_signal",
+        "path": "lean/OAI/NumberTheory/DirichletL/Continuation.lean",
+        "line": 130,
+        "text": "theorem nonzero_of_common_signal (β ω σ c : ℝ) (hω : 0 < ω)"
+      },
+      {
+        "name": "nonzero_of_regularized_signal",
+        "path": "lean/OAI/NumberTheory/DirichletL/Continuation.lean",
+        "line": 156,
+        "text": "exact nonzero_of_regularized_signal _ 1 c L Lregular R (gaussianMultiplier H) f"
+      },
+      {
+        "name": "integrable_logProfile",
+        "path": "lean/OAI/NumberTheory/DirichletL/ContinuationInversion.lean",
+        "line": 11,
+        "text": "theorem integrable_logProfile {f : ℝ → ℂ} {σ : ℝ}"
+      },
+      {
+        "name": "mellin_mellinInv_eq",
+        "path": "lean/OAI/NumberTheory/DirichletL/ContinuationInversion.lean",
+        "line": 42,
+        "text": "theorem mellin_mellinInv_eq (σ : ℝ) (F : ℂ → ℂ) (f : ℝ → ℂ)"
+      },
+      {
+        "name": "integrable_logProfile",
+        "path": "lean/OAI/NumberTheory/DirichletL/ContinuationInversion.lean",
+        "line": 51,
+        "text": "have hg : Integrable g := integrable_logProfile hf"
+      },
+      {
+        "name": "signalMellin_eq_on_line",
+        "path": "lean/OAI/NumberTheory/DirichletL/ContinuationInversion.lean",
+        "line": 88,
+        "text": "theorem signalMellin_eq_on_line (f : ℝ → ℂ) (A : ℂ → ℂ) (c d : ℝ)"
+      },
+      {
+        "name": "mellin_mellinInv_eq",
+        "path": "lean/OAI/NumberTheory/DirichletL/ContinuationInversion.lean",
+        "line": 108,
+        "text": "have hid := mellin_mellinInv_eq (-d) (fun s => A (-s))"
+      }
+    ],
+    "direct_product_use": [
+      {
+        "path": "lean/OAI/NumberTheory/DirichletL/Continuation.lean",
+        "line": 105,
+        "consumer": "nonzero_of_regularized_signal"
+      }
+    ],
+    "transitive_nonvanishing_use": [
+      {
+        "path": "lean/OAI/NumberTheory/DirichletL/Continuation.lean",
+        "line": 156,
+        "consumer": "nonzero_of_common_signal",
+        "uses": "nonzero_of_regularized_signal"
+      }
+    ],
+    "external_direct_product_uses_observed": 0,
+    "import_only_relations": [
+      {
+        "consumer": "ContinuationInversion.lean",
+        "imports": "Continuation.lean"
+      },
+      {
+        "consumer": "ContinuationContour.lean",
+        "imports": "ContinuationInversion.lean"
+      },
+      {
+        "consumer": "ContinuationPolynomialContour.lean",
+        "imports": "ContinuationContour.lean"
+      },
+      {
+        "consumer": "ContinuationShiftedGaussian.lean",
+        "imports": "ContinuationPolynomialContour.lean"
+      },
+      {
+        "consumer": "PrincipalMellinResidues.lean",
+        "imports": "ContinuationContour.lean"
+      }
+    ],
+    "import_boundary": "An import is a dependency edge only; it does not prove a direct theorem call or a discharged mathematical premise."
+  },
+  "current_own_conceptual_consumers": {
+    "previous_frontier_count": "Three was provisional; current exact search and source inspection observes four.",
+    "observed_count": 4,
+    "literal_openai_theorem_consumers": 0,
+    "common_existing_api": "AnalyticOnNhd.eqOn_of_preconnected_of_eventuallyEq",
+    "records": [
+      {
+        "path": "GRWTSK/NumberTheory/Zeta/ReciprocalHolomorphyZeroSymmetry.lean",
+        "declaration": "regularized_identity_of_initial_and_holomorphic",
+        "direct_mathlib_identity_call_line": 92,
+        "sha256": "1e7d3a2a466f8e13a5de90905fa9ea777e6be60a3ca71d785926e874ccf262d5",
+        "preserved_path": ".local/dirichlet-continuation/a1bb819f19b04cf5a774e48bad70c10c/local-sources/GRWTSK/NumberTheory/Zeta/ReciprocalHolomorphyZeroSymmetry.lean"
+      },
+      {
+        "path": "GRWTSK/NumberTheory/Zeta/PoleRegularization.lean",
+        "declaration": "regularized_product_identity",
+        "direct_mathlib_identity_call_line": 142,
+        "sha256": "7c813c2d75d8f9d96216a620ba337ca793728a1e0270620c1d19e1521a623cc1",
+        "preserved_path": ".local/dirichlet-continuation/a1bb819f19b04cf5a774e48bad70c10c/local-sources/GRWTSK/NumberTheory/Zeta/PoleRegularization.lean"
+      },
+      {
+        "path": "GRWTSK/NumberTheory/Zeta/LogDerivativeZeroExclusion.lean",
+        "declaration": "ode_on_halfPlane",
+        "direct_mathlib_identity_call_line": 56,
+        "sha256": "3708bc8982a4ce18b3b9886f730c2f7fdbf3cfab6e63e8b74772e48de314c79a",
+        "preserved_path": ".local/dirichlet-continuation/a1bb819f19b04cf5a774e48bad70c10c/local-sources/GRWTSK/NumberTheory/Zeta/LogDerivativeZeroExclusion.lean"
+      },
+      {
+        "path": "GRWTSK/NumberTheory/Zeta/Riemann/LaplaceCriterion.lean",
+        "declaration": "regularized_laplace_identity",
+        "direct_mathlib_identity_call_line": 57,
+        "sha256": "be129acd7f3abe84fe8d87227d256e8c3e9318c739b4fa7c04096f2c70a9f8b0",
+        "preserved_path": ".local/dirichlet-continuation/a1bb819f19b04cf5a774e48bad70c10c/local-sources/GRWTSK/NumberTheory/Zeta/Riemann/LaplaceCriterion.lean"
+      }
+    ],
+    "contract_differences": [
+      {
+        "path": "GRWTSK/NumberTheory/Zeta/ReciprocalHolomorphyZeroSymmetry.lean",
+        "declaration": "regularized_identity_of_initial_and_holomorphic",
+        "domain": "Re(z)>0; initial reciprocal on Re(z)>1/2",
+        "retained_premises": "Arbitrary L analytic on positive half-plane and exact initial reciprocal identity. Uses pole-correct regularized zeta factor and the actual initial Re>1 zeta nonvanishing API.",
+        "conclusion": "z*(z+1/2)*regularizedZeta(z+1/2)*L(z) = z-1/2",
+        "normalization": "Here regularizedZeta=(s-1)*zeta(s) away from 0,1, with value 1 at 1; source is defined via entire numerator divided by s."
+      },
+      {
+        "path": "GRWTSK/NumberTheory/Zeta/PoleRegularization.lean",
+        "declaration": "regularized_product_identity",
+        "domain": "Re(z)>0; initial exact product on Re(z)>1/2",
+        "retained_premises": "Arbitrary F differentiable on target and exact InitialReciprocalIdentity F.",
+        "conclusion": "Same stated four-factor regularized product on target half-plane.",
+        "normalization": "Function.update ((s-1)*zeta(s)) 1 1, separately proved entire by residue/removable singularity."
+      },
+      {
+        "path": "GRWTSK/NumberTheory/Zeta/LogDerivativeZeroExclusion.lean",
+        "declaration": "ode_on_halfPlane",
+        "domain": "Re(s)>1/2, including pole coordinate 1; initial Euler identity Re(s)>1",
+        "retained_premises": "Arbitrary F differentiable on target and exact F=-zeta_derivative/zeta-1/(s-1) on Re>1.",
+        "conclusion": "Denominator-free ODE deriv poleRemoved(s)=(-F(s))*poleRemoved(s).",
+        "status_in_source_header": "candidate proof source, NOT elaborated in the pinned environment; no acceptance inferred here."
+      },
+      {
+        "path": "GRWTSK/NumberTheory/Zeta/Riemann/LaplaceCriterion.lean",
+        "declaration": "regularized_laplace_identity",
+        "domain": "Re(z)>0; initial regularized product Re(z)>1/2",
+        "retained_premises": "Arbitrary L differentiable on pickupLaplaceDomain and exact initial regularized product.",
+        "conclusion": "z*regularizedZeta(z+1/2)*L(z)=z-1/2",
+        "normalization": "This declaration omits the separate (z+1/2) factor because its imported regularizedZeta uses a different normalization. Do not merge or substitute formulas merely by matching names.",
+        "status_in_source_header": "local conditional candidate; RH remains open."
+      }
+    ],
+    "classification": "These are existing direct Mathlib consumers and conceptual duplicates, not calls to the OpenAI theorem. No source was refactored; old names/namespaces and differing hypotheses/formulas are preserved."
+  },
+  "other_own_findings": [
+    {
+      "path": "GRWTSK/NumberTheory/Zeta/GreenMellinContinuation.lean",
+      "declaration": "continuation_of_energy",
+      "contract": "Under explicit AllDyadicEnergyBound, the specified blockSeries is differentiable on Re(s)>1/2 and agrees with -zeta_derivative/zeta-1/(s-1) on Re(s)>1.",
+      "status": "Source header: candidate, not elaborated. This is conditional actual-witness work, not a proof of its open energy supplier.",
+      "decision": "Preserve the actual energy premise; a fresh closure audit can be scoped separately, but another arbitrary-function holomorphy wrapper adds no arithmetic supplier."
+    },
+    {
+      "path": "GRWTSK/NumberTheory/LSeries/TruncatedMoebiusSeries.lean",
+      "observation": "Existing mathematical object code already works with actual closed/high Moebius coefficients and initial Re>1 L-series identities; do not replace exact coefficients by arbitrary function placeholders."
+    },
+    {
+      "path": "GRWTSK/Analysis/IntegralTransforms/LogarithmicMomentSubstitution.lean",
+      "observation": "Existing full real exponential change of variables and weighted moment results are useful context; they are not complex reverse Mellin inversion declarations."
+    }
+  ],
+  "mathlib_api_findings": [
+    {
+      "path": ".lake/packages/mathlib/Mathlib/Analysis/Analytic/Uniqueness.lean",
+      "line": 223,
+      "declaration": "AnalyticOnNhd.eqOn_of_preconnected_of_eventuallyEq",
+      "contract": "Two analytic functions on a preconnected complex set U agreeing eventually in a full neighborhood of z0∈U agree on U.",
+      "decision": "Reuse existing API directly for current consumers. The OpenAI product specialization is redundant for this round."
+    },
+    {
+      "path": ".lake/packages/mathlib/Mathlib/Analysis/MellinTransform.lean",
+      "line": 45,
+      "declaration": "MellinConvergent",
+      "contract": "IntegrableOn (fun t : ℝ => (t : ℂ)^(s-1) • f t) (Ioi 0).",
+      "related_api": "mellinConvergent_of_isBigO_rpow and mellin_differentiableAt_of_isBigO_rpow already supply power-bound-to-Mellin convergence/holomorphy."
+    },
+    {
+      "path": ".lake/packages/mathlib/Mathlib/Analysis/MellinInversion.lean",
+      "lines": [
+        49,
+        72,
+        92
+      ],
+      "declarations": [
+        "mellin_eq_fourier",
+        "mellinInv_eq_fourierInv",
+        "mellinInv_mellin_eq"
+      ],
+      "existing_inversion_direction": "mellinInv σ (mellin f) x=f x for x>0, MellinConvergent f σ, vertical integrability of mellin f, and continuity at x.",
+      "duplicate_fragment": "Its proof at lines96-101 already derives weighted log-profile integrability from MellinConvergent; OpenAI integrable_logProfile exposes a similar fragment.",
+      "reverse_direction_search": "No declaration named mellin_mellinInv_eq, no public reverse-Mellin formula, and no exact-name local GRWTSK counterpart were found in the bounded Analysis/source scan. This is not a claim of complete Mathlib novelty."
+    },
+    {
+      "path": ".lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Gaussian/FourierTransform.lean",
+      "lines": [
+        207,
+        227
+      ],
+      "declarations": [
+        "fourier_gaussian_pi'",
+        "fourier_gaussian_pi"
+      ],
+      "role": "Exact existing Fourier Gaussian formulas provide an available route to a nonzero Gaussian example; no such example was elaborated in this task."
+    }
+  ],
+  "decision": {
+    "product_identity_port": "defer-as-existing-API-specialization",
+    "reason": "The general identity theorem is already used directly by four current sources; porting another arbitrary-analytic-function wrapper does not supply an actual arithmetic function, coefficient identity, continuation estimate, or nonvanishing input.",
+    "this_round_action": "Record exact source/contracts/consumer evidence only; no Lean port or shared source changes.",
+    "next_target": {
+      "priority": "candidate for a separately allocated bounded round",
+      "primary_source": "lean/OAI/NumberTheory/DirichletL/ContinuationInversion.lean",
+      "declarations": [
+        "integrable_logProfile",
+        "mellin_mellinInv_eq"
+      ],
+      "precise_contract": {
+        "parameters": "σ,y : ℝ; F : ℂ → ℂ; f : ℝ → ℂ",
+        "premises": [
+          "MellinConvergent f (σ : ℂ)",
+          "Integrable (fun y : ℝ => F ((σ : ℂ)+2*Real.pi*y*Complex.I))",
+          "Continuous (fun y : ℝ => F ((σ : ℂ)+2*Real.pi*y*Complex.I))",
+          "For every x>0: f x=mellinInv σ F x"
+        ],
+        "conclusion": "mellin f ((σ : ℂ)+2*Real.pi*y*Complex.I)=F ((σ : ℂ)+2*Real.pi*y*Complex.I)"
+      },
+      "actual_upstream_consumer": {
+        "declaration": "signalMellin_eq_on_line",
+        "source_lines": [
+          88,
+          112
+        ],
+        "call_line": 108,
+        "retained_premises": [
+          "MellinConvergent f (-(d+c)) in the exact complex-coercion form",
+          "Integrability and continuity of A on d-2*pi*y*i",
+          "For every positive x, x^(-c) • f x equals mellinInv (-d) (fun s => A (-s)) x"
+        ],
+        "conclusion": "signalMellin f c (d-2*pi*y*i)=A(d-2*pi*y*i)",
+        "limit": "This consumer itself retains the actual inverse-representation premise; it is not an arithmetic representation supplier."
+      },
+      "canonical_home": "Analysis/IntegralTransforms, with an object-based Mellin module/namespace chosen only after root allocates paths. No NumberTheory or conjecture namespace is required for the generic reverse inversion theorem.",
+      "nontrivial_consumer_gate": "Port only with a concrete reusable consumer that proves its representation/convergence inputs (for example a nonzero Gaussian pair from the existing Fourier Gaussian API), or another explicitly scoped actual transform consumer. A source-level generic signal-on-line wrapper alone should not be presented as supplying arithmetic continuation.",
+      "future_acceptance_requirements": [
+        "Preserve every convergence, integrability, continuity, positive-x, frequency-normalization and representation hypothesis.",
+        "Use minimal imports and preserve OpenAI/Mathlib credit.",
+        "Add a genuine positive consumer and a missing-hypothesis hostile control with a proved counterexample when possible.",
+        "Replay local dependency closure with pinned Lean, trust=0, fatal warnings, and owned-declaration axiom audit under the shared lock.",
+        "Check exact duplicates/API at implementation time; this inspection alone authorizes no source paths or admission."
+      ],
+      "arithmetic_frontier": "Actual coefficient/initial-identity and signal-growth suppliers remain open. No RH or zero-free-half-plane result is supplied by the reverse transform theorem."
+    }
+  },
+  "local_source_bindings": [
+    {
+      "path": "GRWTSK/NumberTheory/Zeta/ReciprocalHolomorphyZeroSymmetry.lean",
+      "sha256": "1e7d3a2a466f8e13a5de90905fa9ea777e6be60a3ca71d785926e874ccf262d5",
+      "git_blob_computed": "dff398c2e39a25893aef3976b7569f96cf479fda",
+      "bytes": 9441,
+      "preserved_path": ".local/dirichlet-continuation/a1bb819f19b04cf5a774e48bad70c10c/local-sources/GRWTSK/NumberTheory/Zeta/ReciprocalHolomorphyZeroSymmetry.lean"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Zeta/PoleRegularization.lean",
+      "sha256": "7c813c2d75d8f9d96216a620ba337ca793728a1e0270620c1d19e1521a623cc1",
+      "git_blob_computed": "a4474cd5f7eb14547a0d3e04b68ad02c0a3bf3f5",
+      "bytes": 7645,
+      "preserved_path": ".local/dirichlet-continuation/a1bb819f19b04cf5a774e48bad70c10c/local-sources/GRWTSK/NumberTheory/Zeta/PoleRegularization.lean"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Zeta/LogDerivativeZeroExclusion.lean",
+      "sha256": "3708bc8982a4ce18b3b9886f730c2f7fdbf3cfab6e63e8b74772e48de314c79a",
+      "git_blob_computed": "3d4b5b238893d73cc13959efb9c1743e07ee294f",
+      "bytes": 5168,
+      "preserved_path": ".local/dirichlet-continuation/a1bb819f19b04cf5a774e48bad70c10c/local-sources/GRWTSK/NumberTheory/Zeta/LogDerivativeZeroExclusion.lean"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Zeta/Riemann/LaplaceCriterion.lean",
+      "sha256": "be129acd7f3abe84fe8d87227d256e8c3e9318c739b4fa7c04096f2c70a9f8b0",
+      "git_blob_computed": "69fead00554a0a2c093e7f084f25d1c4ece412a7",
+      "bytes": 6071,
+      "preserved_path": ".local/dirichlet-continuation/a1bb819f19b04cf5a774e48bad70c10c/local-sources/GRWTSK/NumberTheory/Zeta/Riemann/LaplaceCriterion.lean"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Zeta/GreenMellinContinuation.lean",
+      "sha256": "bd4bfd6be906b7ed36601ac806639edddc9ce465dada76be39f8dae1ec1af30a",
+      "git_blob_computed": "ab8d66c62df845988b554d486b5bbbc8bf9676ad",
+      "bytes": 2610,
+      "preserved_path": ".local/dirichlet-continuation/a1bb819f19b04cf5a774e48bad70c10c/local-sources/GRWTSK/NumberTheory/Zeta/GreenMellinContinuation.lean"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/LSeries/TruncatedMoebiusSeries.lean",
+      "sha256": "1c4c4b02ddbd61034b5c8cd68a4784f5bc8b975484653976fd0a83f8f15458df",
+      "git_blob_computed": "d75b5c157b5f51705e36a4887e90b20b1b570065",
+      "bytes": 4951,
+      "preserved_path": ".local/dirichlet-continuation/a1bb819f19b04cf5a774e48bad70c10c/local-sources/GRWTSK/NumberTheory/LSeries/TruncatedMoebiusSeries.lean"
+    },
+    {
+      "path": "GRWTSK/Analysis/IntegralTransforms/LogarithmicMomentSubstitution.lean",
+      "sha256": "8f09bfa02c86da0e30c8ee80f4887dd17d48d3e0e803b5b8a0631d1052cab4a7",
+      "git_blob_computed": "bdcd1953927a3492c1a79bf4678f7f44e95d5fd3",
+      "bytes": 5907,
+      "preserved_path": ".local/dirichlet-continuation/a1bb819f19b04cf5a774e48bad70c10c/local-sources/GRWTSK/Analysis/IntegralTransforms/LogarithmicMomentSubstitution.lean"
+    },
+    {
+      "path": ".lake/packages/mathlib/Mathlib/Analysis/Analytic/Uniqueness.lean",
+      "sha256": "3c095cfff0c66f30905355dfe8918c74148cf462427b0b59f5322a495e002424",
+      "git_blob_computed": "20fe97cfe84c8c26280250418f78ab8f317207e2",
+      "bytes": 13190,
+      "preserved_path": ".local/dirichlet-continuation/a1bb819f19b04cf5a774e48bad70c10c/local-sources/.lake/packages/mathlib/Mathlib/Analysis/Analytic/Uniqueness.lean"
+    },
+    {
+      "path": ".lake/packages/mathlib/Mathlib/Analysis/MellinTransform.lean",
+      "sha256": "81851086004a6e5424da555061a4b2f9d2e7cece148d9d49c3537a05adba73ff",
+      "git_blob_computed": "665d618fa526c81b3606cb8fbadf27b5a7913d32",
+      "bytes": 25264,
+      "preserved_path": ".local/dirichlet-continuation/a1bb819f19b04cf5a774e48bad70c10c/local-sources/.lake/packages/mathlib/Mathlib/Analysis/MellinTransform.lean"
+    },
+    {
+      "path": ".lake/packages/mathlib/Mathlib/Analysis/MellinInversion.lean",
+      "sha256": "72c7c31cd6742d24384267526a82106b4c9a0ad968220e4cfcaa495e766e3b07",
+      "git_blob_computed": "37601adc7e73963c748cd754155cbb0ee28be86f",
+      "bytes": 5575,
+      "preserved_path": ".local/dirichlet-continuation/a1bb819f19b04cf5a774e48bad70c10c/local-sources/.lake/packages/mathlib/Mathlib/Analysis/MellinInversion.lean"
+    },
+    {
+      "path": ".lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Gaussian/FourierTransform.lean",
+      "sha256": "6bdd5e351d714198761da26ce7eac19a140a54218e9902dcf4fd41616d311523",
+      "git_blob_computed": "e66f719517bc84d4a2ff3deafd3b47868b700bd4",
+      "bytes": 17152,
+      "preserved_path": ".local/dirichlet-continuation/a1bb819f19b04cf5a774e48bad70c10c/local-sources/.lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Gaussian/FourierTransform.lean"
+    },
+    {
+      "path": ".lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Gaussian/GaussianIntegral.lean",
+      "sha256": "96a282f317e96505e89e51553f8129e52f381953dd142ee269f2525cb00f6197",
+      "git_blob_computed": "13927ae74e7ce60a2d053df06eacec80b3f924a0",
+      "bytes": 17746,
+      "preserved_path": ".local/dirichlet-continuation/a1bb819f19b04cf5a774e48bad70c10c/local-sources/.lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Gaussian/GaussianIntegral.lean"
+    }
+  ],
+  "validation": {
+    "hashes_recomputed": true,
+    "selected_upstream_git_blobs_recomputed": true,
+    "own_duplicate_source_snapshots_match_current_at_write": true,
+    "json_parse_check": "performed before immutable event publication",
+    "lean_jobs_started": 0,
+    "native_replays": 0,
+    "admitted_declarations": 0,
+    "owned_declaration_axiom_audit": "not performed; no admission claim",
+    "library_source_edits": 0,
+    "commits_or_remote_writes": 0,
+    "scope_limit": "Bounded source inspection only. Source-reported status, exact raw integrity, and mathematical acceptance are kept separate.",
+    "native_replay_status": "NOT_RUN",
+    "owned_declaration_axiom_audit_status": "NOT_RUN"
+  },
+  "preserved_search_limitations": [
+    "An initial broad rg reached a one-line truncated root-tree JSON and returned truncated noisy output. It was excluded from completeness evidence; corrected searches used only pinned immediate Lean files and bounded local Lean paths.",
+    "The pre-existing recursive upstream root-tree artifact is truncated; no exhaustive repository completeness is inferred.",
+    "No source variants, stale receipts, rejected proofs, or concurrent documentation/source edits were modified."
+  ],
+  "coordination_events": [
+    "cache/coordination/events/dirichlet-continuation-start-a61712d2e3c542528df64a3fae0c2588.json",
+    "cache/coordination/events/dirichlet-continuation-duplicates-b4dca532aa874f24b22d8b9aba55a479.json"
+  ],
+  "checkout_head_observed": "5372baf055363563c2f59c5b9e61c0898b35c52c",
+  "evidence_containing_commit": null,
+  "evidence_commit_binding": "This newly written evidence is uncommitted at inspection. checkout_head_observed records ambient checkout state only; it is not a containing-commit claim."
+}

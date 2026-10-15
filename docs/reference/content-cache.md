@@ -94,8 +94,14 @@ The [full-history evidence decision](../../cache/decisions/batch-certificate-v1.
 requires actual evidence for all current decoded premises. Preserving old
 storage slots does not establish an arbitrary predicate after new rows arrive.
 
-The incoming prefix-tree taxonomy does not directly cover every acyclic diamond
-allowed by the method taxonomy. The earlier identity-only history guard
+The [prefix representation obstruction](../mathematics/Order/Embeddings/prefix-obstruction.md)
+requires both preservation and reflection of the chosen source relation. An
+incomparable pair with a common upper bound rules out such a representation;
+injective monotonicity alone does not. The incoming taxonomy candidates remain
+`NOT_RUN`, and correspondence with their prefix definition and the operational
+typed graph remains separate. The
+[representation decision](../../cache/decisions/prefix-embedding-v1.json)
+keeps these mapping obligations explicit. The earlier identity-only history guard
 permitted reorderings; the current transition guard requires the complete old
 ordered rows as a literal prefix for decisions, contributions and aliases.
 The correspondence from those Python/JSON rows to the exact Lean list model
