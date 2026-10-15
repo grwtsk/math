@@ -1,0 +1,12 @@
+{
+  "schema": "repository-agent-task-v1",
+  "id": "incremental-summation-source-scout",
+  "owner": "cache_taxonomy",
+  "at": "2026-10-15T21:35:35.909503+00:00",
+  "branch": "main",
+  "base_commit": "68a0e353a0a0c769d3a4bc632894d82a19738d91",
+  "cache_revision": "c5299bc76bb4fc0f8f68a139405415043b80e122b533cda525cdb9e6847b2414",
+  "write_paths": [],
+  "objective": "Independent source scout covering pinned Mathlib, actual Anthropic and arxiv original contexts with OpenAI primary; bounded exact kernel source search and source reviews of final owned files, concise NOT_RUN next gates. Preserve incoming archive candidate states; no shared source/docs/registry/native writes.",
+  "coordination": "Only allocated paths/ignored scratch and immutable repository events. Root owns fresh acceptance, shared metadata/docs/cache/commit. Preserve concurrent changes, failures and historical hashes; monitor owns migration. Pinned trust0/fatal/full owned-transitive audit, only3standard axioms; explicit noncomputable recursive mathematical defs, no generated helper exemptions. Hold shared native flock until all children exit and coordinate handoff. No remote writes/branches."
+}

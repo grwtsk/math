@@ -1,0 +1,21 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "incremental-summation-source-scout",
+  "event": "source-review-complete",
+  "owner": "cache_taxonomy",
+  "at": "2026-10-15T21:45:58.304260+00:00",
+  "review": {
+    "path": "evidence/Analysis/Series/dyadic-kernel-source-review-2026-10-15.json",
+    "sha256": "248caabc8cf8fb6049fdb7f4edf3d632e49f083844ed503855c8d1f45fac527b",
+    "bytes": 14642
+  },
+  "source_hashes": {
+    "GRWTSK/Analysis/Series/DyadicKernel.lean": "c99ee7e558c21befc57822c87a0221b84d8e45254acf77e4f1ba2c2e1a4abbeb",
+    "GRWTSK/Analysis/Series/Checks/Positive/DyadicKernel.lean": "3a0c27b07525b6309c12035ee0cd0b9970b0958328e4dfdcfbf5d9d4dfda3247",
+    "GRWTSK/Analysis/Series/Checks/Negative/DyadicKernelMissingDecay.lean": "937880bf27578df2b4d5de6292bdb684b4a7a05dc9c04d4cb07972061f43ca1a"
+  },
+  "finding": "No actionable missing parameter/decay hypothesis or false primary-source correspondence observed within the bounded review of the three frozen scalar files.",
+  "review_character": "Correlated same-team exact-source/premise/control/credit review; not independent validation.",
+  "native_status": "NOT_RUN",
+  "scope": "New immutable review/event and ignored exact frozen source copies only; no shared/source/native/remote changes."
+}

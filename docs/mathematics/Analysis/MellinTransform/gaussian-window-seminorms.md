@@ -46,6 +46,13 @@ suprema and the two-sided minimum use the same actual estimates.
 No uniform window bound is assumed as a premise. A fixed-scale Schwartz
 object alone would not supply these constants.
 
+The [weighted summation consumer](gaussian-dyadic-summation.md) now uses
+these actual estimates at exponents zero and a natural $N>s$ to derive
+a polynomial envelope. Its separately proved scalar dyadic kernel supplies
+actual weighted seminorm summability and a bound $C(s,S)Z^s$. Evaluation
+through the zeroth seminorm also gives actual weighted norm-value sums
+with one constant independent of the real evaluation point.
+
 ## Positive-scale control
 
 For the exact totalized functions, $G(0,0,3/4)\ne0$: the annulus and $P(0)$

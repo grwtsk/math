@@ -1,0 +1,28 @@
+{
+  "schema": "repository-design-decision-v1",
+  "id": "incremental-prefix-table-v1",
+  "at": "2026-10-15T21:49:35.663359+00:00",
+  "previous_record": {
+    "path": "cache/decisions/rooted-trace-revision-v1.json",
+    "sha256": "fa4167ff049678dfaaf8125592ebaecd8b239ca01ac55d8fbd2841066d321238"
+  },
+  "choice": "Retain the canonical old complete-prefix dictionary, parent cells and ordered references literally; append only missing full prefixes/parent cells and only actual new semantic row references. Use the actual stable parent decoder bridge before reusing old evidence.",
+  "premises": [
+    "One-step base is actual canonical old rooted occurrence encoding; full typed-tag equality, prefix closure, ValidFrom, old valid references and actual expansion are proved from the construction. Existing IncrementalDictionary constructs missing payloads; actual indexed decoder recovers all old++new keyed histories. Explicit vertex equality only for old certificate packing, criterion/proof supplied for old rows."
+  ],
+  "native_evidence": [
+    {
+      "path": "evidence/Combinatorics/DirectedGraph/incremental-prefix-table-integration-2026-10-15.json",
+      "sha256": "f8bc458709afaa473eb0ebddd07470837f3c9e2c434055ff0aeebd3e5e5e319b"
+    }
+  ],
+  "checked_boundaries": [
+    "Canonical rightmost repack can change slots despite valid ranks/root/bounds. Actual stable F/T extension preserves old cells and old certificate but does not inherit its predicate over all new rows. Auxiliary prefixes are not semantic rows. Root remains explicit for empty input. Output is noncanonical; arbitrary stored-state iteration/composition remains open."
+  ],
+  "operational_boundary": "Mathematical finite one-step representation only. No Lean/Python/JSON/hash/zlib/IO correspondence, byte/optimal compression, permission or source-proof acceptance inferred. Separate operational custody evidence retained.",
+  "open_obligations": [
+    "Arbitrary noncanonical stored-state iteration/composition and operational adapter refinement remain open.",
+    "16 declared families/215 declared total do not supply215 individual method identities."
+  ],
+  "authority": "Durable local mathematical/design decision; no remote effect or newly adopted external-document policy."
+}

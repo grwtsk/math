@@ -1,0 +1,24 @@
+{
+  "schema": "math-cache-occurrence-trace-v1",
+  "id": "occurrence-trace:taxonomy-adapter-communication-2026-10-15-r8",
+  "source_snapshot": "022b7f30c2a5a67f961570bd9bc9052da85aacd1714be90bf9ec036fe5e448a0",
+  "taxonomy": {
+    "id": "taxonomy:method-families",
+    "revision": "554b2000eb0ddcaa5e38cc30812a1741c3c826b224ddf0e032eb7460229cc8fb",
+    "sha256": "072a431bca2c960488c7681d4fb316db2135a7f91d2e181f5664db610e0103fa"
+  },
+  "relation_kind": "communication",
+  "direction": "source-to-target",
+  "root": "contribution:taxonomy-adapter-v1",
+  "steps": [
+    {
+      "index": 0,
+      "relation_id": "relation:taxonomy-contribution-task",
+      "relation_sha256": "9d2c11260d84c8c6c6560c625be57cc741e0f257f09e9602aa106dbc6521ab77",
+      "source": "contribution:taxonomy-adapter-v1",
+      "target": "task:cache-taxonomy"
+    }
+  ],
+  "end": "task:cache-taxonomy",
+  "proof_acceptance": "not-established"
+}
