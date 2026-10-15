@@ -1,0 +1,28 @@
+{
+  "schema": "repository-agent-event-v1",
+  "at": "2026-10-15T19:11:49.736372+00:00",
+  "task": "path-mellin-final-review",
+  "event": "replay-driver-hardening",
+  "changes": [
+    {
+      "path": "scripts/check_path_occurrences.py",
+      "old_sha256": "f607e9435dc1a4fd13562d8f764ace202d1874f9f7706cad3afbd920b116113f",
+      "new_sha256": "9f9fed2a9d52a21bbeb9fc2f88e4878a06f7f180e08f53eb9691f21cc22c1016"
+    },
+    {
+      "path": "scripts/check_reverse_mellin.py",
+      "old_sha256": "9c2771ab1d31bd64a85db136487347bafa8bd990daa5906c358c08a74903a3de",
+      "new_sha256": "98d4495d47c4ef3bd29324198f5a847ebd2325abb5ae2bf81399196fb8b44a02"
+    }
+  ],
+  "gaps": [
+    "Produced project/control objects were not fingerprinted/rechecked after compilation.",
+    "Literal error: counter missed error(lean.code): diagnostics."
+  ],
+  "resolution": "Exact output .olean/.private/.server families rechecked before every subsequent import and final acceptance; structured guard.error_messages parser counts all Lean diagnostics. Bounded hostile controls and fresh r2 receipts required.",
+  "historical_receipts": [
+    "evidence/Combinatorics/DirectedGraph/path-occurrences-checks-2026-10-15.json",
+    "evidence/Analysis/MellinTransform/reverse-mellin-checks-2026-10-15.json"
+  ],
+  "history_policy": "Original passed receipts and original runner byte variants retained; current acceptance must bind hardened driver bytes."
+}

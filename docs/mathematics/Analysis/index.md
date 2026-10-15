@@ -4,16 +4,16 @@
 
 | Inventory | Count |
 |---|---:|
-| Object guides | 19 |
-| Documented object groups | 11 |
-| Distinct primary sources linked | 19 |
-| Lean source modules | 248 |
+| Object guides | 20 |
+| Documented object groups | 12 |
+| Distinct primary sources linked | 20 |
+| Lean source modules | 251 |
 | Archive intake records | 39 |
 | Selected catalog families | 1 |
 
 These counts measure documentation and source coverage. They do not count accepted theorems or establish that every source module is documented or checked. [Definitions and limits](../../reference/library-pages.md#count-definitions).
 
-At least 1460 source declaration commands, including 1180 theorem/lemma commands, across 205 parsed Lean source modules; 43 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
+At least 1480 source declaration commands, including 1197 theorem/lemma commands, across 208 parsed Lean source modules; 43 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
 
 ## Asymptotics
 
@@ -92,6 +92,14 @@ Linked primary-source scope: 18 source declaration commands, including 14 theore
 Linked primary-source scope: 1 source declaration commands, including 1 theorem/lemma commands, across 1 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
 - [Exponential energy bounds and square integrability](LaplaceTransform/exponential-energy.md).
+
+## MellinTransform
+
+1 object guide · 1 distinct linked primary source file.
+
+Linked primary-source scope: 12 source declaration commands, including 10 theorem/lemma commands, across 1 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+
+- [Reverse Mellin inversion](MellinTransform/reverse-inversion.md).
 
 ## NormedSpace
 
