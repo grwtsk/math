@@ -1,0 +1,149 @@
+{
+  "schema": "bounded-formal-research-frontier-v1",
+  "at": "2026-10-15T19:18:27.285641+00:00",
+  "previous_frontier": {
+    "path": "cache/research/prefix-obstruction-frontier-2026-10-15.json",
+    "sha256": "0bd6bb58d2790689177553100714e6138331fc38a1350e44c320037fd8513ed4"
+  },
+  "completed": [
+    {
+      "source": {
+        "path": "GRWTSK/Combinatorics/DirectedGraph/PathOccurrences.lean",
+        "sha256": "b2b140e2f370d07ef866e81ebb93580ed706d64ad463377fcce82df37c4a39e5"
+      },
+      "native_receipt": {
+        "path": "evidence/Combinatorics/DirectedGraph/path-occurrences-checks-2026-10-15-r2.json",
+        "sha256": "726c4e8003ec7120739b538bb9918503df1b1305b873fbe93f99e7540a16afe2"
+      },
+      "owned_declarations": 18,
+      "scope": "Actual typed vertex occurrences/composition/splits; complete SingleObj edges reconstruct; parallel-edge information-loss; actual simple-graph unique-arrow consumer."
+    },
+    {
+      "source": {
+        "path": "GRWTSK/Analysis/MellinTransform/ReverseInversion.lean",
+        "sha256": "88d959d74d9d5e27772f57e847497b9a943167cc41ae6abb453c3932cbb84c57"
+      },
+      "native_receipt": {
+        "path": "evidence/Analysis/MellinTransform/reverse-mellin-checks-2026-10-15-r2.json",
+        "sha256": "c83642110276632bda6a911fa987ab707b21dabe06519c3fa6f97b6bc2d65c1e"
+      },
+      "owned_declarations": 35,
+      "scope": "Exact OpenAI reverse Mellin prerequisites; nonzero Gaussian discharges all inputs at sigma0;23 library plus12 spike-prefix declarations; positive consumer module0."
+    }
+  ],
+  "primary_openai_source_completed": {
+    "repository": "openai/math",
+    "commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+    "path": "lean/OAI/NumberTheory/DirichletL/ContinuationInversion.lean",
+    "selected_declarations": [
+      "integrable_logProfile",
+      "mellin_mellinInv_eq"
+    ],
+    "source_review": {
+      "path": "evidence/Analysis/MellinTransform/reverse-inversion-source-review-2026-10-15.json",
+      "sha256": "3dac646a70e9b030f73057ae27da4aca6148abb991443574731807ba93c3977d"
+    },
+    "remaining_source_wrappers": "normalizedSignal and signalMellin_eq_on_line retain actual inverse representation/convergence; no arithmetic supplier obtained and no wrapper-only port planned."
+  },
+  "next_cache_contract": {
+    "status": "PRECISE_UNCHECKED_FRONTIER",
+    "objective": "Equivalence of existing Quiver.PathStar r with valid chronological lists of fully tagged typed edges; no duplicate path structure.",
+    "definition_plan": [
+      "TotalEdge(V) := Sigma a:V, Sigma b:V, (a to b).",
+      "Use evident prefunctor from V to SingleObj TotalEdge; edge maps to its actual source,target,edge triple.",
+      "For fixed root r, encode existing PathStar r through prefunctor.mapPath, existing pathEquivList and reverse.",
+      "Prove each outgoing-star map injective; reuse Prefunctor.pathStar_injective for exact trace injectivity.",
+      "Define ValidFrom r: first source matches root, each consecutive target/source matches. Do not assume arbitrary total-edge lists decode.",
+      "Prove actual two round trips for PathStar r equivalence with valid traces, typed endpoint recovery, composition/chronological append and invalid join rejection."
+    ],
+    "essential_limits": [
+      "Root must be fixed or serialized: empty lists at different roots coincide.",
+      "No hom-subsingleton, finiteness or acyclicity premise intended.",
+      "Do NOT apply Prefunctor.pathStar_surjective to flattening: target outgoing labels may have wrong source tags.",
+      "All-occurrence unfolding would need its own exact coverage/typed relation theorem; shortest-path subtree selects one original path and is not such an unfolding."
+    ],
+    "positive_negative_controls": [
+      "Actual two-vertex quiver with two distinct arrows sharing endpoints.",
+      "Composable length2 and empty traces; preserve repeats/indices and distinguish same-vertex-list paths.",
+      "Wrong-root/source and broken target/source joins rejected; no arbitrary List TotalEdge decoding claim."
+    ],
+    "pinned_api": [
+      {
+        "path": ".lake/packages/mathlib/Mathlib/Combinatorics/Quiver/Covering.lean",
+        "sha256": "cd917cebf3f69c14dd2596343577ddfa07783b1b73bd4e0e91a20b1a1be30f59",
+        "anchors": {
+          "Star": 58,
+          "PathStar": 172,
+          "Prefunctor.pathStar": 180,
+          "Prefunctor.pathStar_injective": 188,
+          "pathStar_surjective_do_not_apply": 229
+        }
+      },
+      {
+        "path": ".lake/packages/mathlib/Mathlib/Combinatorics/Quiver/Path.lean",
+        "sha256": "9528a3551a251e8e72c253dca4a8854657fb4a9e74af440379af67cc7f419e2a",
+        "anchors": {
+          "mapPath": 360,
+          "mapPath_comp": 374
+        }
+      },
+      {
+        "path": ".lake/packages/mathlib/Mathlib/Combinatorics/Quiver/SingleObj.lean",
+        "sha256": "8fe88cb3039bf8304dcce492a11391ec3d67c26497301578481aa6b8d0b43106",
+        "anchors": {
+          "pathEquivList": 118
+        }
+      }
+    ],
+    "native_status": "NOT_RUN; source/API scout only, correlated review, not an absence or admission proof."
+  },
+  "operational_gap": {
+    "taxonomy_adapter": {
+      "path": "scripts/cache_taxonomy.py",
+      "sha256": "d0691c4efd77961dd1895924f1bd2c5f8a4d7c8f24974bf0d1eb3ba3682874a9"
+    },
+    "source_cache_adapter": {
+      "path": "scripts/cache_math.py",
+      "sha256": "81f7d48a575ee212d8fac9bad812cc93c3c4ace3eae031ae82acabac2c44d424"
+    },
+    "taxonomy": {
+      "path": "cache/taxonomy.json",
+      "sha256": "072a431bca2c960488c7681d4fb316db2135a7f91d2e181f5664db610e0103fa"
+    },
+    "observations": [
+      "Current taxonomy root schema has no ordered occurrence/path collection and rejects extra fields.",
+      "Unique relation IDs coexist with duplicate(kind,source,target) rejection; no separately identified parallel edges of same role/endpoints in current schema.",
+      "Relation IDs are not entity endpoint kinds. Only taxonomy-parent is required acyclic.",
+      "Transition guard preserves ordered decisions/contributions/aliases, but has no general relation-ID no-rewrite/no-erasure law.",
+      "Source cache stores raw blobs and lexical import adjacency, with no semantic typed occurrence interpretation."
+    ],
+    "required_before_runtime_claim": [
+      "Explicit new schema version or separate occurrence document; never silently relax duplicate guard.",
+      "Every ordered trace bound to exact taxonomy revision, relation interpretation/direction, root and exact relation IDs/content.",
+      "Validate exact source/target joins and retain repeats/indices; invalidate or revalidate when edge content changes.",
+      "Bounded hostile operational tests and independent Lean/runtime refinement obligation; byte roundtrip alone insufficient."
+    ]
+  },
+  "next_primary_research_gate": [
+    "Read current main changes/cache/tasks and exact source pins before next work; integrate by path/hash/status.",
+    "Continue openai/math supplier search, retaining exact hypotheses and concrete consumer gate. Gaussian all-complex identity is not yet proved; first scout existing Mellin/Gaussian APIs before extending to nonzero real parts.",
+    "Actual Dirichlet signal representation/convergence/coefficient and growth premises remain open; wrappers and analytic identity specialization supply none of them.",
+    "Do not repeat completed ComplexSolvability support or product_identity convenience port; four existing local Mathlib identity consumers retained."
+  ],
+  "unresolved": [
+    "215 method identities remain unprovided;16 declared families are facets, not proof authority.",
+    "Incoming taxonomy/classification candidates remain NOT_RUN; no recursive Prefix/List.IsPrefix or Python/JSON/hash/zlib/IO refinement.",
+    "RH and actual analytic/arithmetic suppliers remain open."
+  ],
+  "source_reviews": [
+    {
+      "path": "evidence/Combinatorics/DirectedGraph/path-occurrences-source-review-2026-10-15.json",
+      "sha256": "c8c55d6759e05a118ab1e0de7eb5be6fcbc5f76ec601d06aa4c020c9b91ca9f6"
+    },
+    {
+      "path": "evidence/Analysis/MellinTransform/reverse-inversion-source-review-2026-10-15.json",
+      "sha256": "3dac646a70e9b030f73057ae27da4aca6148abb991443574731807ba93c3977d"
+    }
+  ],
+  "authority": "Durable bounded frontier; no remote effect, independent model validation or candidate promotion."
+}

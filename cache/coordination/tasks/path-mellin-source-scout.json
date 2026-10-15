@@ -1,0 +1,12 @@
+{
+  "schema": "repository-agent-task-v1",
+  "id": "path-mellin-source-scout",
+  "at": "2026-10-15T19:00:25.893746+00:00",
+  "owner": "cache_taxonomy",
+  "branch": "main",
+  "base_commit": "e43d335e13021560925e16587af9d53e07f7b25d",
+  "cache_revision": "82a5e0cfdb22a20499838f10dbb6f5c0f544fc14c49aa65d8e59fbd14d729c04",
+  "write_paths": [],
+  "objective": "Fresh primary arxiv and actual pinned Anthropic source scout/review for path occurrences versus vertex/edge identity and Mellin Fourier normalization; exact source/premise/role boundaries, correlated review only.",
+  "coordination": "Only allocated source paths and immutable events; no previous source edits, shared metadata/code changes or commits. Finish all native jobs before final event. Root owns acceptance audit/metadata."
+}

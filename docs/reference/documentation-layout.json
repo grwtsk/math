@@ -3409,10 +3409,28 @@
       "source_sha256": "438d46160c2131154dc49b6c345208207c4ba0931ec0487a08153a0291ac8f46",
       "status": "fresh-selected",
       "evidence": "evidence/Order/Embeddings/prefix-obstruction-checks-2026-10-15.json"
+    },
+    "docs/mathematics/Combinatorics/DirectedGraph/path-occurrences.md": {
+      "title": "Ordered occurrences of directed paths",
+      "subject": "Combinatorics",
+      "object": "DirectedGraph",
+      "primary_source": "GRWTSK/Combinatorics/DirectedGraph/PathOccurrences.lean",
+      "source_sha256": "b2b140e2f370d07ef866e81ebb93580ed706d64ad463377fcce82df37c4a39e5",
+      "status": "fresh-selected",
+      "evidence": "evidence/Combinatorics/DirectedGraph/path-occurrences-checks-2026-10-15-r2.json"
+    },
+    "docs/mathematics/Analysis/MellinTransform/reverse-inversion.md": {
+      "title": "Reverse Mellin inversion",
+      "subject": "Analysis",
+      "object": "MellinTransform",
+      "primary_source": "GRWTSK/Analysis/MellinTransform/ReverseInversion.lean",
+      "source_sha256": "88d959d74d9d5e27772f57e847497b9a943167cc41ae6abb453c3932cbb84c57",
+      "status": "fresh-selected",
+      "evidence": "evidence/Analysis/MellinTransform/reverse-mellin-checks-2026-10-15-r2.json"
     }
   },
   "object_binding_registry": "docs/reference/object-source-bindings.json",
-  "object_binding_registry_sha256": "d365eeb088fb8b3fbdf25300607facfcb350fd143bdadfc3872bbe20395a4b93",
+  "object_binding_registry_sha256": "18ade91493cca4b923669b928f3e0a7d38943495e94f05b17b6aad527598bd00",
   "navigation": {
     "schema": "subject-index-navigation-v1",
     "summary": "docs/reference/library-summary.json"

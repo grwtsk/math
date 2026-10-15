@@ -82,3 +82,18 @@ The exact joint-graph subtype, its dense subset, estimate, actual operator
 domains and target-kernel premises are retained. Apache-2.0, upstream OpenAI
 credit, local human direction and Codex assistance remain as above. This
 abstract port supplies no concrete analytic/arithmetic estimate or RH proof.
+
+Reverse Mellin inversion
+-----------------------
+GRWTSK/Analysis/MellinTransform/ReverseInversion.lean adapts integrable_logProfile
+and mellin_mellinInv_eq from openai/math at
+1581d4cbdd69a0faf34b2089614fe2a814316a6a,
+lean/OAI/NumberTheory/DirichletL/ContinuationInversion.lean. OpenAI is the
+upstream project formalization author; Apache-2.0 terms are retained. The
+change-of-variables argument follows Mathlib MellinInversion, copyright 2024
+Lawrence Wu, Apache-2.0. The local nonzero logarithmic Gaussian consumer and
+point-spike control retain these terms and exact hypotheses. Human direction:
+grwtsk contributors; adaptation/formalization/checking assistance: OpenAI Codex.
+Only the stated line transform identity is checked; no arithmetic supplier,
+independent review, mathematical novelty or RH proof is asserted. See
+LICENSES/OpenAI-Apache-2.0.txt and exact source headers for upstream terms.

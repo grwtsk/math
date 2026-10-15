@@ -1,0 +1,13 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "reverse-mellin-formal",
+  "event": "dev-lock-released",
+  "at": "2026-10-15T19:04:05.544346+00:00",
+  "owner": "cache_adapter",
+  "attempt": ".local/reverse-mellin/eb213f626b4b435386b51e98d71035af/attempts/Scratch-attempt02",
+  "source_sha256": "40452e64939f958f0bec984238c0ff296f4f88f777769371d7685ba956465108",
+  "competing_jobs": [],
+  "receipt": ".local/reverse-mellin/eb213f626b4b435386b51e98d71035af/attempts/Scratch-attempt02.json",
+  "exit_code": 0,
+  "native_jobs_running": 0
+}

@@ -5187,7 +5187,11 @@
     "GRWTSK/Logic/FiniteSequences/Checks/Negative/BatchCertificateMissingEvidence.lean": "f0d8510a0db792a2669e899a89284bc1f4a50bb3254e89fbb2bd50506140263a",
     "GRWTSK/Analysis/InnerProductSpace/Checks/Negative/JointGraphMissingDensity.lean": "7b3d7fef30d38620a0a2cd10427ef4c3b1768307342af1b658f3e229935079ce",
     "GRWTSK/Order/Embeddings/Checks/Positive/PrefixObstruction.lean": "6351f7c8ff76d7a50e5028b649405d1d8f65b3d6836724f1488c4da0da33f79a",
-    "GRWTSK/Order/Embeddings/Checks/Negative/PrefixMissingReflection.lean": "c68af330ee9d86c1aa3fc9e162c44efadefb975beec8167c1a9ae1662d625e8f"
+    "GRWTSK/Order/Embeddings/Checks/Negative/PrefixMissingReflection.lean": "c68af330ee9d86c1aa3fc9e162c44efadefb975beec8167c1a9ae1662d625e8f",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PathOccurrences.lean": "2219cc672fbea5667d62ee833d6633dd8a6f2d894bbdb12a76cd880d612fe163",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PathMissingEdgeIdentity.lean": "f1936c3eaf77f02e7fbc644de6d0404c1cc787f8de64c67c37af7c2dff8eba69",
+    "GRWTSK/Analysis/MellinTransform/Checks/Positive/ReverseInversion.lean": "10073b9002b7bfa89fe59764adf488b7ff24328fcf976efc930d7a9bdab37259",
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/ReverseInversionMissingPremise.lean": "7b1f38a5c2ae34030c0c41048f6b0195eda53e3577f075edaebee8286c699ebd"
   },
   "schema_version": 3,
   "repository_conformance": {
@@ -5219,7 +5223,7 @@
     {
       "path": "GRWTSK.lean",
       "original_path": "GRWTSK.lean",
-      "sha256": "9dba8290083d876da497df87bf85927208b810a46f0f3ef56b5dec609027dfc3",
+      "sha256": "06d7d9c7ddaf558377098b3fba416e9e0f90c6b38d2b436907c7080e48fb748d",
       "git_blob": "27e45b3448f78dc6499f2fb0698eb51cac5d1904",
       "working_tree_state": "tracked-modified",
       "source_root": ".",
@@ -5357,6 +5361,7 @@
         "GRWTSK.Analysis.LaplaceTransform.MoebiusResponseFormula",
         "GRWTSK.Analysis.LaplaceTransform.PolynomialEnergy",
         "GRWTSK.Analysis.LaplaceTransform.PolynomialEnergyHolomorphy",
+        "GRWTSK.Analysis.MellinTransform.ReverseInversion",
         "GRWTSK.Analysis.NormedSpace.QuadraticError",
         "GRWTSK.Analysis.Polarization",
         "GRWTSK.Analysis.ReciprocalKernel",
@@ -5372,6 +5377,7 @@
         "GRWTSK.Analysis.TestFunctions.PowerFourResidualSigns",
         "GRWTSK.Analysis.TestFunctions.Separation",
         "GRWTSK.Analysis.WeakDerivatives.PolynomialBump",
+        "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences",
         "GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.Moser",
         "GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.MoserCoordinates",
         "GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.MoserSource",
@@ -5599,7 +5605,7 @@
         "inventory": "observed-current-bytes",
         "layout": "repository baseline remains failed",
         "lean": "umbrella not replayed after selected import additions",
-        "source_sha256": "9dba8290083d876da497df87bf85927208b810a46f0f3ef56b5dec609027dfc3"
+        "source_sha256": "06d7d9c7ddaf558377098b3fba416e9e0f90c6b38d2b436907c7080e48fb748d"
       },
       "runner": "python3 -B scripts/check_ccc_energy.py",
       "other_consumers": [
@@ -21559,6 +21565,251 @@
       ]
     },
     {
+      "path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/ReverseInversionMissingPremise.lean",
+      "original_path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/ReverseInversionMissingPremise.lean",
+      "sha256": "7b1f38a5c2ae34030c0c41048f6b0195eda53e3577f075edaebee8286c699ebd",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Analysis.MellinTransform.Checks.Negative.ReverseInversionMissingPremise",
+      "namespaces": [
+        "ReverseMellinControl"
+      ],
+      "public_declarations": [
+        {
+          "kind": "def",
+          "name": "pointSpike",
+          "line": 11
+        },
+        {
+          "kind": "lemma",
+          "name": "pointSpike_on_line",
+          "line": 13
+        },
+        {
+          "kind": "lemma",
+          "name": "pointSpike_line_ae_zero",
+          "line": 17
+        },
+        {
+          "kind": "lemma",
+          "name": "pointSpike_line_integrable",
+          "line": 23
+        },
+        {
+          "kind": "lemma",
+          "name": "zero_mellin_convergent",
+          "line": 28
+        },
+        {
+          "kind": "lemma",
+          "name": "pointSpike_inverse",
+          "line": 31
+        },
+        {
+          "kind": "lemma",
+          "name": "pointSpike_not_recovered",
+          "line": 38
+        },
+        {
+          "kind": "lemma",
+          "name": "pointSpike_line_not_continuous",
+          "line": 42
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Analysis.MellinTransform.ReverseInversion"
+      ],
+      "reverse_consumers": [],
+      "subject": "Analysis",
+      "object": "MellinTransform/Checks/Negative",
+      "source_role": "negative-control",
+      "target_path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/ReverseInversionMissingPremise.lean",
+      "placement_rationale": "Mellin transform convergence and reverse inversion belong to Analysis/MellinTransform.",
+      "operation": "add",
+      "logical_status": "intended rejected control; no theorem admission",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "7b1f38a5c2ae34030c0c41048f6b0195eda53e3577f075edaebee8286c699ebd",
+        "replay_binding": "evidence/Analysis/MellinTransform/reverse-mellin-checks-2026-10-15-r2.json"
+      },
+      "runner": "python3 -B scripts/check_reverse_mellin.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Actual Mellin convergence at real sigma; vertical-line integrability and continuity; inverse representation for every positive x.",
+        "Concrete nonzero logarithmic Gaussian discharges every input at sigma0; no all-complex identity or arithmetic supplier inferred."
+      ],
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: upstream reverse Mellin declarations; Lawrence Wu: Mathlib Mellin change of variables"
+      ],
+      "license": "Apache-2.0",
+      "design_reference": "cache/research/path-mellin-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
+      "path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/ReverseInversion.lean",
+      "original_path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/ReverseInversion.lean",
+      "sha256": "10073b9002b7bfa89fe59764adf488b7ff24328fcf976efc930d7a9bdab37259",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Analysis.MellinTransform.Checks.Positive.ReverseInversion",
+      "namespaces": [],
+      "public_declarations": [],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Analysis.MellinTransform.ReverseInversion"
+      ],
+      "reverse_consumers": [],
+      "subject": "Analysis",
+      "object": "MellinTransform/Checks/Positive",
+      "source_role": "positive-check",
+      "target_path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/ReverseInversion.lean",
+      "placement_rationale": "Mellin transform convergence and reverse inversion belong to Analysis/MellinTransform.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "10073b9002b7bfa89fe59764adf488b7ff24328fcf976efc930d7a9bdab37259",
+        "replay_binding": "evidence/Analysis/MellinTransform/reverse-mellin-checks-2026-10-15-r2.json"
+      },
+      "runner": "python3 -B scripts/check_reverse_mellin.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Actual Mellin convergence at real sigma; vertical-line integrability and continuity; inverse representation for every positive x.",
+        "Concrete nonzero logarithmic Gaussian discharges every input at sigma0; no all-complex identity or arithmetic supplier inferred."
+      ],
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: upstream reverse Mellin declarations; Lawrence Wu: Mathlib Mellin change of variables"
+      ],
+      "license": "Apache-2.0",
+      "design_reference": "cache/research/path-mellin-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
+      "path": "GRWTSK/Analysis/MellinTransform/ReverseInversion.lean",
+      "original_path": "GRWTSK/Analysis/MellinTransform/ReverseInversion.lean",
+      "sha256": "88d959d74d9d5e27772f57e847497b9a943167cc41ae6abb453c3932cbb84c57",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Analysis.MellinTransform.ReverseInversion",
+      "namespaces": [
+        "GRWTSK.Analysis.MellinTransform.ReverseInversion"
+      ],
+      "public_declarations": [
+        {
+          "kind": "theorem",
+          "name": "integrable_logProfile",
+          "line": 20
+        },
+        {
+          "kind": "theorem",
+          "name": "mellin_mellinInv_eq",
+          "line": 51
+        },
+        {
+          "kind": "def",
+          "name": "logarithmicGaussian",
+          "line": 87
+        },
+        {
+          "kind": "def",
+          "name": "gaussianMellin",
+          "line": 91
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussianMellin_on_line",
+          "line": 95
+        },
+        {
+          "kind": "lemma",
+          "name": "logarithmicGaussian_profile",
+          "line": 104
+        },
+        {
+          "kind": "lemma",
+          "name": "logarithmicGaussian_convergent",
+          "line": 109
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussianMellin_line_integrable",
+          "line": 132
+        },
+        {
+          "kind": "lemma",
+          "name": "gaussianMellin_line_continuous",
+          "line": 137
+        },
+        {
+          "kind": "lemma",
+          "name": "logarithmicGaussian_inverse",
+          "line": 142
+        },
+        {
+          "kind": "theorem",
+          "name": "logarithmicGaussian_mellin",
+          "line": 152
+        },
+        {
+          "kind": "lemma",
+          "name": "logarithmicGaussian_one",
+          "line": 161
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "Mathlib.Analysis.MellinInversion"
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Analysis.MellinTransform.Checks.Negative.ReverseInversionMissingPremise",
+        "GRWTSK.Analysis.MellinTransform.Checks.Positive.ReverseInversion"
+      ],
+      "subject": "Analysis",
+      "object": "MellinTransform",
+      "source_role": "library",
+      "target_path": "GRWTSK/Analysis/MellinTransform/ReverseInversion.lean",
+      "placement_rationale": "Mellin transform convergence and reverse inversion belong to Analysis/MellinTransform.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "88d959d74d9d5e27772f57e847497b9a943167cc41ae6abb453c3932cbb84c57",
+        "replay_binding": "evidence/Analysis/MellinTransform/reverse-mellin-checks-2026-10-15-r2.json"
+      },
+      "runner": "python3 -B scripts/check_reverse_mellin.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Actual Mellin convergence at real sigma; vertical-line integrability and continuity; inverse representation for every positive x.",
+        "Concrete nonzero logarithmic Gaussian discharges every input at sigma0; no all-complex identity or arithmetic supplier inferred."
+      ],
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: upstream reverse Mellin declarations; Lawrence Wu: Mathlib Mellin change of variables"
+      ],
+      "license": "Apache-2.0",
+      "design_reference": "cache/research/path-mellin-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
       "path": "GRWTSK/Analysis/NormedSpace/QuadraticError.lean",
       "original_path": "GRWTSK/Analysis/NormedSpace/QuadraticError.lean",
       "sha256": "79581bb3cf4ce27f646aa513375e0c51912c0ce57f379f1380114e225f0f5980",
@@ -23393,6 +23644,232 @@
         "evidence/moebius-response-sources.json",
         "evidence/source-manifest.json"
       ]
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PathMissingEdgeIdentity.lean",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PathMissingEdgeIdentity.lean",
+      "sha256": "f1936c3eaf77f02e7fbc644de6d0404c1cc787f8de64c67c37af7c2dff8eba69",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.PathMissingEdgeIdentity",
+      "namespaces": [],
+      "public_declarations": [],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences"
+      ],
+      "reverse_consumers": [],
+      "subject": "Combinatorics",
+      "object": "DirectedGraph/Checks/Negative",
+      "source_role": "negative-control",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PathMissingEdgeIdentity.lean",
+      "placement_rationale": "Typed directed path occurrences and edge/vertex reconstruction belong to Combinatorics/DirectedGraph.",
+      "operation": "add",
+      "logical_status": "intended rejected control; no theorem admission",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "f1936c3eaf77f02e7fbc644de6d0404c1cc787f8de64c67c37af7c2dff8eba69",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/path-occurrences-checks-2026-10-15-r2.json"
+      },
+      "runner": "python3 -B scripts/check_path_occurrences.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Actual Quiver.Path with typed endpoints; vertices chronological, toList reverse source order.",
+        "Vertex reconstruction assumes every arrow type is a subsingleton; edge-list equivalence scoped to SingleObj."
+      ],
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "design_reference": "cache/research/path-mellin-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PathOccurrences.lean",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PathOccurrences.lean",
+      "sha256": "2219cc672fbea5667d62ee833d6633dd8a6f2d894bbdb12a76cd880d612fe163",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PathOccurrences",
+      "namespaces": [],
+      "public_declarations": [],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences",
+        "Mathlib.Combinatorics.SimpleGraph.Basic"
+      ],
+      "reverse_consumers": [],
+      "subject": "Combinatorics",
+      "object": "DirectedGraph/Checks/Positive",
+      "source_role": "positive-check",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PathOccurrences.lean",
+      "placement_rationale": "Typed directed path occurrences and edge/vertex reconstruction belong to Combinatorics/DirectedGraph.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "2219cc672fbea5667d62ee833d6633dd8a6f2d894bbdb12a76cd880d612fe163",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/path-occurrences-checks-2026-10-15-r2.json"
+      },
+      "runner": "python3 -B scripts/check_path_occurrences.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Actual Quiver.Path with typed endpoints; vertices chronological, toList reverse source order.",
+        "Vertex reconstruction assumes every arrow type is a subsingleton; edge-list equivalence scoped to SingleObj."
+      ],
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "design_reference": "cache/research/path-mellin-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/PathOccurrences.lean",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/PathOccurrences.lean",
+      "sha256": "b2b140e2f370d07ef866e81ebb93580ed706d64ad463377fcce82df37c4a39e5",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences",
+      "namespaces": [
+        "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences"
+      ],
+      "public_declarations": [
+        {
+          "kind": "theorem",
+          "name": "vertices_reverse",
+          "line": 36
+        },
+        {
+          "kind": "theorem",
+          "name": "vertices_comp_keep_left",
+          "line": 44
+        },
+        {
+          "kind": "theorem",
+          "name": "vertices_prefix_comp",
+          "line": 57
+        },
+        {
+          "kind": "theorem",
+          "name": "vertex_position_comp",
+          "line": 63
+        },
+        {
+          "kind": "theorem",
+          "name": "split_at_occurrence",
+          "line": 69
+        },
+        {
+          "kind": "theorem",
+          "name": "distinct_occurrence_prefixes",
+          "line": 80
+        },
+        {
+          "kind": "theorem",
+          "name": "path_eq_of_vertices_eq",
+          "line": 97
+        },
+        {
+          "kind": "def",
+          "name": "edgeOccurrences",
+          "line": 107
+        },
+        {
+          "kind": "theorem",
+          "name": "pathToList_comp",
+          "line": 112
+        },
+        {
+          "kind": "theorem",
+          "name": "edgeOccurrences_comp",
+          "line": 126
+        },
+        {
+          "kind": "theorem",
+          "name": "reconstruct_edgeOccurrences",
+          "line": 134
+        },
+        {
+          "kind": "theorem",
+          "name": "edgeOccurrences_reconstruct",
+          "line": 140
+        },
+        {
+          "kind": "theorem",
+          "name": "edgeOccurrences_injective",
+          "line": 145
+        },
+        {
+          "kind": "def",
+          "name": "parallelLoop",
+          "line": 152
+        },
+        {
+          "kind": "theorem",
+          "name": "parallel_loops_ne",
+          "line": 157
+        },
+        {
+          "kind": "theorem",
+          "name": "parallel_loop_summary_counterexample",
+          "line": 163
+        },
+        {
+          "kind": "theorem",
+          "name": "endpoint_vertex_summary_not_injective",
+          "line": 173
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "Mathlib.Combinatorics.Quiver.Path.Vertices",
+        "Mathlib.Combinatorics.Quiver.SingleObj"
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.PathMissingEdgeIdentity",
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PathOccurrences"
+      ],
+      "subject": "Combinatorics",
+      "object": "DirectedGraph",
+      "source_role": "library",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/PathOccurrences.lean",
+      "placement_rationale": "Typed directed path occurrences and edge/vertex reconstruction belong to Combinatorics/DirectedGraph.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "b2b140e2f370d07ef866e81ebb93580ed706d64ad463377fcce82df37c4a39e5",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/path-occurrences-checks-2026-10-15-r2.json"
+      },
+      "runner": "python3 -B scripts/check_path_occurrences.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Actual Quiver.Path with typed endpoints; vertices chronological, toList reverse source order.",
+        "Vertex reconstruction assumes every arrow type is a subsingleton; edge-list equivalence scoped to SingleObj."
+      ],
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "design_reference": "cache/research/path-mellin-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
     },
     {
       "path": "GRWTSK/Combinatorics/GraphTheory/UnitDistanceGraph/Moser.lean",
@@ -54441,19 +54918,19 @@
   ],
   "current_inventory": {
     "head": "854e04dc182c36b00479b642e6301f47acc81e5f",
-    "lean_source_count": 657,
-    "active_source_count": 594,
+    "lean_source_count": 663,
+    "active_source_count": 600,
     "candidate_source_count": 63,
     "counts_by_role": {
       "audit-driver": 35,
-      "library": 353,
-      "negative-control": 113,
-      "positive-check": 93
+      "library": 355,
+      "negative-control": 115,
+      "positive-check": 95
     },
     "counts_by_subject": {
       "Algebra": 19,
-      "Analysis": 205,
-      "Combinatorics": 8,
+      "Analysis": 208,
+      "Combinatorics": 11,
       "Data": 1,
       "DynamicalSystems": 16,
       "GroupTheory": 4,
@@ -61012,6 +61489,22 @@
     ],
     "replays": [
       "evidence/Order/Embeddings/prefix-obstruction-checks-2026-10-15.json"
+    ],
+    "scope": "Incremental selected registration; no historical full-replay hashes or failed receipts refreshed."
+  },
+  "path_mellin_additions": {
+    "date": "2026-10-15",
+    "paths": [
+      "GRWTSK/Combinatorics/DirectedGraph/PathOccurrences.lean",
+      "GRWTSK/Analysis/MellinTransform/ReverseInversion.lean",
+      "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PathOccurrences.lean",
+      "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PathMissingEdgeIdentity.lean",
+      "GRWTSK/Analysis/MellinTransform/Checks/Positive/ReverseInversion.lean",
+      "GRWTSK/Analysis/MellinTransform/Checks/Negative/ReverseInversionMissingPremise.lean"
+    ],
+    "replays": [
+      "evidence/Combinatorics/DirectedGraph/path-occurrences-checks-2026-10-15-r2.json",
+      "evidence/Analysis/MellinTransform/reverse-mellin-checks-2026-10-15-r2.json"
     ],
     "scope": "Incremental selected registration; no historical full-replay hashes or failed receipts refreshed."
   }

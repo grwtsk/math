@@ -354,3 +354,5 @@ import GRWTSK.Analysis.InnerProductSpace.ClosedComplexSolvability
 import GRWTSK.Logic.FiniteSequences.BatchCertificate
 import GRWTSK.Analysis.InnerProductSpace.JointGraphSolvability
 import GRWTSK.Order.Embeddings.PrefixObstruction
+import GRWTSK.Combinatorics.DirectedGraph.PathOccurrences
+import GRWTSK.Analysis.MellinTransform.ReverseInversion

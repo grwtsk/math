@@ -1,0 +1,37 @@
+{
+  "schema": "repository-design-decision-v1",
+  "id": "path-occurrences-v1",
+  "at": "2026-10-15T19:14:22.997656+00:00",
+  "previous_record": {
+    "path": "cache/decisions/prefix-embedding-v1.json",
+    "sha256": "196d242c8cefa0c25b8817312f71790cf620da6d60d0c7cb7db3b1eb23e5cb0e"
+  },
+  "choice": "Keep source vertex identities, repeated path/display occurrences and complete edge identities distinct. Declare relation role and representation fidelity explicitly.",
+  "premises": [
+    "Actual Quiver.Path has typed endpoints and composition.",
+    "Chronological vertices differ from reverse source-only toList.",
+    "Vertex-only reconstruction requires hom subsingletons; faithful edge-list contract currently scoped to SingleObj."
+  ],
+  "evidence": [
+    {
+      "path": "evidence/Combinatorics/DirectedGraph/path-occurrences-checks-2026-10-15-r2.json",
+      "sha256": "726c4e8003ec7120739b538bb9918503df1b1305b873fbe93f99e7540a16afe2"
+    },
+    {
+      "path": "evidence/Combinatorics/DirectedGraph/path-occurrences-integration-2026-10-15.json",
+      "sha256": "2fbc5ad96c911e619c09761f67dff9057a63e3d12ee2c30651c6017f3de67664"
+    }
+  ],
+  "checked_controls": [
+    "Bool parallel loops same endpoints/length/full vertex sequence, distinct path identities.",
+    "SimpleGraph adjacency quiver supplies actual unique-arrow positive case.",
+    "Repeated source vertices at different indices have unequal dependent prefix occurrences."
+  ],
+  "operational_application": "Retain source and occurrence IDs separately; do not deduplicate edge occurrences by vertex labels, endpoint pairs or lengths. Only use a vertex-only reconstruction claim after proving exact arrow-uniqueness and endpoint premises.",
+  "open_obligations": [
+    "General DAG unfolding/coverage and relation reflection.",
+    "Python/JSON/IO/hash/zlib refinement; candidate taxonomy admission.",
+    "215 individual method identities remain unprovided."
+  ],
+  "authority": "Durable local design decision only; no new permission, theorem authority from taxonomy, independent validation or remote write."
+}

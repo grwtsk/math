@@ -107,6 +107,16 @@ ordered rows as a literal prefix for decisions, contributions and aliases.
 The correspondence from those Python/JSON rows to the exact Lean list model
 remains an explicit refinement obligation.
 
+The [typed path occurrence contracts](../mathematics/Combinatorics/DirectedGraph/path-occurrences.md)
+retain every chronological vertex occurrence on path extension and split at
+actual typed prefix positions. Complete edge occurrences reconstruct
+single-object paths; endpoint/length/vertex summaries can erase parallel edges.
+Vertex reconstruction has a separate arrow-uniqueness premise. The
+[path identity decision](../../cache/decisions/path-occurrences-v1.json) keeps
+these scopes distinct; general DAG unfolding and Python/JSON refinement remain
+open. Neither source occurrences nor repeated display positions gain proof
+authority from a common vertex label.
+
 See [cache operations](../how-to/cache.md), the
 [taxonomy](../../cache/taxonomy.json), and the
 [integration evidence](../../evidence/Logic/FiniteSequences/cache-integration-2026-10-15.json).

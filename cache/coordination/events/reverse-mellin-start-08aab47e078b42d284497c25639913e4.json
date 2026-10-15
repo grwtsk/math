@@ -1,0 +1,12 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "reverse-mellin-formal",
+  "event": "scratch-start",
+  "at": "2026-10-15T19:02:21.988486+00:00",
+  "owner": "cache_adapter",
+  "archive": ".local/reverse-mellin/eb213f626b4b435386b51e98d71035af",
+  "source_status": "scratch-not-replayed",
+  "planned_consumer": "sigma=0 logarithmic Gaussian exp(-pi*(log x)^2), complex transform exp(s^2/(4*pi)), with direct Mellin convergence and Fourier-Gaussian inverse representation; not an assumed-holomorphy wrapper.",
+  "native_jobs_started": 0,
+  "upstream_sha256": "166139695fcd8753df43d21f7e0b3a5a0ffc774bd75d0535fb4d0b33757170d8"
+}

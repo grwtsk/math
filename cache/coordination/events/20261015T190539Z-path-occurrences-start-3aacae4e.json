@@ -1,0 +1,20 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "path-occurrences-formal",
+  "status": "in_progress",
+  "owner": "indexed_dictionary",
+  "owned_paths": [
+    "GRWTSK/Combinatorics/DirectedGraph/PathOccurrences.lean",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PathOccurrences.lean",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PathMissingEdgeIdentity.lean"
+  ],
+  "frontier": "cache/research/prefix-obstruction-frontier-2026-10-15.json",
+  "cursor": "cache/coordination/continuations/2026-10-15-prefix-obstruction-r2.json",
+  "design": "Use actual Quiver.Path and Path.vertices, not a new path type. Explicitly prove chronological vertices.reverse = endpoint :: reverse-source toList. Compose occurrence lists retaining join once, split typed prefixes at positions. Use actual SingleObj.pathEquivList with reverse for faithful chronological edge-occurrence reconstruction and composition. Actual Bool parallel loops give vertex/endpoint/length information-loss counterexample.",
+  "safe_boundary": "Under every Hom subsingleton, reuse actual Path.toList_injective through proved conversion to reconstruct from vertices; test against genuine SimpleGraph adjacency quiver.",
+  "native_coordination": "cache_adapter may run reverse-Mellin feasibility scratch first. This worker will use shared replay lock/preflight after writing source.",
+  "candidate_boundary": "No candidate taxonomy imports, source edits or status promotion.",
+  "remaining": [
+    "Write actual consumers, kernel-check trust0/fatal warnings, intended missing-edge type rejection, bounded scout and whitespace evidence."
+  ]
+}

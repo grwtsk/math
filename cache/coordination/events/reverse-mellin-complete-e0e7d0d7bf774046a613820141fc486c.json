@@ -1,0 +1,102 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "reverse-mellin-formal",
+  "event": "complete",
+  "at": "2026-10-15T19:09:28.840909+00:00",
+  "owner": "cache_adapter",
+  "status": "COMPLETE_DEV_REPLAY_ROOT_AUDIT_PENDING",
+  "source_hashes": {
+    "GRWTSK/Analysis/MellinTransform/ReverseInversion.lean": "88d959d74d9d5e27772f57e847497b9a943167cc41ae6abb453c3932cbb84c57",
+    "GRWTSK/Analysis/MellinTransform/Checks/Positive/ReverseInversion.lean": "10073b9002b7bfa89fe59764adf488b7ff24328fcf976efc930d7a9bdab37259",
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/ReverseInversionMissingPremise.lean": "7b1f38a5c2ae34030c0c41048f6b0195eda53e3577f075edaebee8286c699ebd"
+  },
+  "upstream": {
+    "repository": "https://github.com/openai/math",
+    "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+    "path": "lean/OAI/NumberTheory/DirichletL/ContinuationInversion.lean",
+    "sha256": "166139695fcd8753df43d21f7e0b3a5a0ffc774bd75d0535fb4d0b33757170d8",
+    "git_blob": "9ccdbb58a4af00f4b9afc496da448dc26783d547",
+    "license": "Apache-2.0",
+    "project_author": "OpenAI",
+    "preserved_declarations": [
+      "integrable_logProfile",
+      "mellin_mellinInv_eq"
+    ],
+    "preserved_statements_and_proof_bodies_sha256": "5b44a87243aab305d855c7cf676daca7bff3b73cc667d5a0d5a411b73c4919a5",
+    "minimal_import": "Mathlib.Analysis.MellinInversion"
+  },
+  "new_actual_consumer": {
+    "f": "logarithmicGaussian x = exp(-pi*(log x)^2)",
+    "F": "gaussianMellin s = exp(s^2/(4*pi))",
+    "sigma": 0,
+    "frequency": "2*pi*y*i",
+    "convergence": "Full positive-half-line log change of variables, exact Jacobian/inverse-power cancellation, Gaussian integrability.",
+    "vertical_line": "Integrability and continuity proved for actual F(2*pi*y*i)=exp(-pi*y^2).",
+    "inverse_representation": "Proved for every x>0 via Mathlib mellinInv_eq_fourierInv and Fourier Gaussian formula b=1.",
+    "reverse_theorem_use": "logarithmicGaussian_mellin applies exact generic theorem to those proved inputs.",
+    "nonzero": "logarithmicGaussian 1=1; positive check also proves nonzero and Mellin transform at zero equals1.",
+    "scope": "Only the zero vertical-line identity is claimed; no all-complex Mellin identity, arithmetic continuation, zero-free half-plane or RH result."
+  },
+  "actual_missing_continuity_obstruction": {
+    "F": "pointSpike s = if s=0 then1 else0",
+    "f": "identically zero",
+    "sigma": 0,
+    "proved_inputs": [
+      "line restriction equals if y=0 then1 else0",
+      "line restriction is zero almost everywhere",
+      "line restriction is integrable",
+      "zero f is MellinConvergent at0",
+      "for every x>0, zero=mellinInv 0 pointSpike x",
+      "mellin zero0 differs from pointSpike0",
+      "line restriction is not continuous"
+    ],
+    "proved_prefix_marker": "-- Intended rejection:",
+    "derived_prefix_sha256": "506367e16bd6ba4e0204995690ad290434ab8c24c0e9100d1b098c3f174d2386",
+    "sole_intended_failure_line": 58,
+    "expected_substrings": [
+      "Type mismatch",
+      "Continuous"
+    ],
+    "actual_diagnostic": "/Users/local/Desktop/math/.local/reverse-mellin/eb213f626b4b435386b51e98d71035af/final/source/GRWTSK/Analysis/MellinTransform/Checks/Negative/ReverseInversionMissingPremise.lean:58:8: error: Type mismatch: After simplification, term\n  pointSpike_line_integrable\n has type\n  Integrable (fun y => pointSpike (2 * ↑Real.pi * ↑y * Complex.I)) volume\nbut is expected to have type\n  Continuous fun y => pointSpike (2 * ↑Real.pi * ↑y * Complex.I)\n",
+    "failure_meaning": "Integrability cannot replace the required pointwise continuity; a single-point change leaves inverse integrals unchanged but changes the recovery target at that point."
+  },
+  "verification": {
+    "receipt": ".local/reverse-mellin/eb213f626b4b435386b51e98d71035af/final/receipt.json",
+    "receipt_sha256": "cb01ab32c60b41efbca7dbc6356c4de6a5564d3cb40130012dfaad8aa58d49f0",
+    "library": "PASS",
+    "positive": "PASS",
+    "proved_counterexample_prefix": "PASS",
+    "negative": "PASS_EXPECTED_SINGLE_TYPE_MISMATCH",
+    "trust": 0,
+    "fatal_warnings": true,
+    "pinned_lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+    "dependency_objects_reused": true,
+    "canonical_project_objects_excluded": true,
+    "sources_stable": true,
+    "source_whitespace": "PASS",
+    "upstream_statement_proof_preservation": "PASS",
+    "owned_declaration_axiom_audit": "NOT_RUN_ROOT_OWNS",
+    "root_fresh_closure_census": "PENDING",
+    "native_jobs_running": 0,
+    "all_children_exited": true,
+    "shared_replay_lock": "RELEASED"
+  },
+  "layout_check": {
+    "command": "python3 -B scripts/check_math_layout.py",
+    "exit_code": 1,
+    "summary": "Math layout: FAIL (361 library modules, 183 findings).",
+    "log": ".local/reverse-mellin/eb213f626b4b435386b51e98d71035af/math-layout.log",
+    "sha256": "f311e6c5ab42955ed609fe7d3c5033d8fb2b650aaae4619aa6f7054b2b47f991",
+    "owned_findings": [
+      "GRWTSK/Analysis/MellinTransform/Checks/Negative/ReverseInversionMissingPremise.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources",
+      "GRWTSK/Analysis/MellinTransform/Checks/Positive/ReverseInversion.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources",
+      "GRWTSK/Analysis/MellinTransform/ReverseInversion.lean: library-module-outside-public-closure [GRWTSK.Analysis.MellinTransform.ReverseInversion]: library module is not reachable from GRWTSK.lean",
+      "GRWTSK/Analysis/MellinTransform/ReverseInversion.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources"
+    ],
+    "interpretation": "Four owned findings are pending active-source catalog registration and GRWTSK.lean public import, both root-owned integration. No owned mathematical naming/placement violation is reported. Concurrent and pre-existing findings remain preserved."
+  },
+  "archive": ".local/reverse-mellin/eb213f626b4b435386b51e98d71035af",
+  "failed_attempts": "All scratch source variants/receipts/logs retained in attempts; exact initial Gaussian and point-spike API/coercion failures were corrected without weakening assumptions.",
+  "source_freeze": "All three owned paths frozen at listed hashes; no further native jobs planned.",
+  "prior_source_shared_metadata_commits_remote_edits": 0
+}
