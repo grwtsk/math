@@ -12,7 +12,7 @@ admitted in Lean; finite tests are not a substitute for that admission.
 Inspected base: grwtsk/math/main,
 2d67a7ae6d404c1e085f48ca4d755ba566d37b07.
 The unchanged dependency scripts/bessel_mobius_packet_compiler.py has blob
-c05962a9583af9ab71df3ee95aa55dba566d37b07. Its exact coefficients, strict
+c05962a9583af9ab71df3ee95aa55dba80bb2531. Its exact coefficients, strict
 cubic support gate and common shell prefix are retained. No prior source,
 canonical guide, compiler pin or historical receipt is changed.
 
