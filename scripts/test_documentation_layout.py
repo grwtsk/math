@@ -185,6 +185,8 @@ class AreaIndexControls(unittest.TestCase):
         self.fixture=LayoutControls('test_positive');self.fixture.setUp()
         self.addCleanup(self.fixture.doCleanups)
         self.root=self.fixture.root;self.layout=self.fixture.layout
+        self.census_patch=mock.patch.object(checker.census,'count_sources',side_effect=self.fixture_census)
+        self.census_patch.start();self.addCleanup(self.census_patch.stop)
         self.fixture.write('GRWTSK/Algebra/Unexplained.lean',SOURCE)
         self.fixture.write('docs/reference/results.json',json.dumps({'schema':'docs-record/1','records':[]}))
         self.fixture.write('evidence/source-intake.json',json.dumps({'schema':'mathematical-source-intake-v1',
@@ -200,6 +202,23 @@ class AreaIndexControls(unittest.TestCase):
                 'title':checker.indexes.area_title(area),'category':'navigation','area':area}
         self.generate()
     def sources(self):return {p.relative_to(self.root).as_posix() for p in (self.root/'GRWTSK').rglob('*.lean')}
+    def fixture_census(self,root,source_bytes):
+        """Finite source oracle, independent of the native parser and renderers."""
+        self.assertEqual(root,self.root)
+        known={SOURCE.encode():(1,1),
+               (SOURCE+'-- Same declarations, different source bytes.\n').encode():(1,1),
+               (SOURCE+'def extra : Nat := 1\n').encode():(2,1)}
+        result={}
+        for name,raw in source_bytes.items():
+            self.assertIsInstance(raw,bytes)
+            entry={'sha256':hashlib.sha256(raw).hexdigest(),'status':'unparsed'}
+            if raw in known:
+                declarations,theorems=known[raw]
+                entry.update(status='parsed',counts={'declarations':declarations,'theorems':theorems})
+            result[name]=entry
+        return result
+    def source_census(self):
+        return self.fixture_census(self.root,{name:(self.root/name).read_bytes() for name in self.sources()})
     def generate(self):
         raw=json.dumps(self.layout);self.fixture.write('docs/reference/documentation-layout.json',raw)
         self.summary=checker.build_navigation_summary(self.root,self.layout,self.sources())
@@ -207,9 +226,13 @@ class AreaIndexControls(unittest.TestCase):
         self.fixture.write('docs/index.md',checker.render_navigation(self.layout,self.summary))
         for area in self.summary['areas']:
             self.fixture.write('docs/mathematics/'+area+'/index.md',checker.indexes.render_area(self.layout,self.summary,area))
+        for name in checker.indexes.articles(self.layout):
+            text=(self.root/name).read_text()
+            block=checker.indexes.render_article_totals(self.layout,self.summary,name)
+            self.fixture.write(name,checker.indexes.update_article_totals(text,block))
     def validate(self):
         checker.validate(self.root,self.layout,self.fixture.inv,self.fixture.history,set(self.layout['pages']),
-                         source_names=self.sources())
+                         source_names=self.sources(),source_census=self.source_census())
     def reject(self,reason):
         with self.assertRaisesRegex(checker.LayoutError,re.escape(reason)):self.validate()
     def test_fixed_independent_count_oracle(self):
@@ -217,7 +240,69 @@ class AreaIndexControls(unittest.TestCase):
             'primary_sources':1,'lean_modules':2,'intake_records':1,'selected_families':0,'maintained_pages':14})
         self.assertEqual(self.summary['areas']['Algebra']['object_guides'],0)
         self.assertEqual(self.summary['areas']['Analysis']['lean_modules'],1)
+        self.assertEqual(self.summary['declaration_totals'],{
+            'declarations':2,'theorems':2,'parsed_modules':2,'unparsed_modules':0})
+        self.assertEqual(self.summary['areas']['Algebra']['declaration_totals'],{
+            'declarations':1,'theorems':1,'parsed_modules':1,'unparsed_modules':0})
+        self.assertEqual(self.summary['areas']['Analysis']['declaration_totals'],{
+            'declarations':1,'theorems':1,'parsed_modules':1,'unparsed_modules':0})
+        self.assertEqual(self.summary['source_census']['GRWTSK/Analysis/Test.lean'],{
+            'sha256':sha(SOURCE),'status':'parsed','counts':{'declarations':1,'theorems':1}})
         self.validate()
+    def test_inventory_table_totals_and_guide_source_scope(self):
+        overview=(self.root/'docs/index.md').read_text()
+        self.assertIn('| **Total (2 areas)** | **1** | **1** | **2** | **1** | **0** |',overview)
+        self.assertIn('| **Total object guides** | **1** |',overview)
+        self.assertIn('2 source declaration commands, including 2 theorem/lemma commands',overview)
+        article=(self.root/PAGE).read_text()
+        self.assertIn('| Object guide | 1 |',article)
+        self.assertIn('| Linked primary source file | 1 |',article)
+        self.assertIn('| Source declaration commands | 1 |',article)
+        self.assertIn('| Theorem/lemma commands | 1 |',article)
+        self.assertIn('GRWTSK/Analysis/Test.lean',article)
+        self.assertNotIn('GRWTSK/Algebra/Unexplained.lean',article)
+        self.assertTrue(article.startswith('# Object\n\n[Object](#object)\n'))
+    def test_multiple_guides_do_not_duplicate_primary_source_declarations(self):
+        page='docs/mathematics/Analysis/Test/second.md'
+        self.layout['pages'][page]={**self.layout['pages'][PAGE],'title':'Second'}
+        self.fixture.write(page,'# Second\n\nA separate exact statement.\n');self.generate()
+        self.assertEqual(self.summary['counts']['object_guides'],2)
+        self.assertEqual(self.summary['counts']['primary_sources'],1)
+        self.assertEqual(self.summary['declaration_totals']['declarations'],2)
+        self.assertEqual(self.summary['areas']['Analysis']['declaration_totals']['theorems'],1)
+        self.assertIn('2 object guides · 1 distinct linked primary source file.',
+                      (self.root/'docs/mathematics/Analysis/index.md').read_text())
+        for path in (PAGE,page):
+            self.assertIn('| Source declaration commands | 1 |',(self.root/path).read_text())
+        self.validate()
+    def test_unparsed_source_is_explicitly_unavailable(self):
+        source='GRWTSK/Analysis/Test.lean';raw='unsupported fixture command\n'
+        self.fixture.write(source,raw);self.layout['pages'][PAGE]['source_sha256']=sha(raw);self.generate()
+        self.assertEqual(self.summary['declaration_totals'],{
+            'declarations':1,'theorems':1,'parsed_modules':1,'unparsed_modules':1})
+        self.assertEqual(self.summary['areas']['Analysis']['declaration_totals'],{
+            'declarations':0,'theorems':0,'parsed_modules':0,'unparsed_modules':1})
+        article=(self.root/PAGE).read_text()
+        self.assertIn('| Source declaration commands | Unavailable |',article)
+        self.assertIn('| Theorem/lemma commands | Unavailable |',article)
+        self.assertNotIn('| Source declaration commands | 0 |',article)
+        self.assertIn('totals are lower bounds',(self.root/'docs/index.md').read_text())
+        self.validate()
+    def test_missing_guide_totals_are_rejected(self):
+        self.fixture.write(PAGE,'# Object\n\n[Object](#object)\n');self.reject('mathematics totals')
+    def test_duplicate_guide_totals_are_rejected(self):
+        block=checker.indexes.render_article_totals(self.layout,self.summary,PAGE)
+        self.fixture.write(PAGE,(self.root/PAGE).read_text()+'\n'+block+'\n');self.reject('mathematics totals')
+    def test_tampered_guide_totals_are_rejected(self):
+        text=(self.root/PAGE).read_text().replace('| Theorem/lemma commands | 1 |',
+                                                '| Theorem/lemma commands | 999 |')
+        self.fixture.write(PAGE,text);self.reject('mathematics totals')
+    def test_undocumented_source_byte_drift_invalidates_totals(self):
+        self.fixture.write('GRWTSK/Algebra/Unexplained.lean',SOURCE+'-- Same declarations, different source bytes.\n')
+        self.reject('stale documentation inventory')
+    def test_undocumented_source_declaration_drift_invalidates_totals(self):
+        self.fixture.write('GRWTSK/Algebra/Unexplained.lean',SOURCE+'def extra : Nat := 1\n')
+        self.reject('stale documentation inventory')
     def test_missing_area(self):
         del self.layout['pages']['docs/mathematics/Algebra/index.md'];self.generate()
         self.reject('missing/extra area index')
@@ -284,6 +369,18 @@ class AreaIndexControls(unittest.TestCase):
             with self.assertRaisesRegex(checker.LayoutError,'generated output changed during render: docs/index.md'):
                 catalog.render_indexes()
         self.assertEqual((self.root/'docs/index.md').read_text(),'# Concurrent human edit\n')
+    def test_concurrent_guide_edit_during_render_is_preserved(self):
+        import check_documentation as catalog
+        real=checker.build_navigation_summary;changed=False
+        def racing_summary(*args,**kwargs):
+            nonlocal changed
+            if not changed:
+                self.fixture.write(PAGE,'# Object\n\nConcurrent human statement.\n');changed=True
+            return real(*args,**kwargs)
+        with mock.patch.object(catalog,'ROOT',self.root),mock.patch.object(checker,'visible_source_inventory',return_value=self.sources()),mock.patch.object(checker,'build_navigation_summary',side_effect=racing_summary):
+            with self.assertRaisesRegex(checker.LayoutError,'generated output changed during render: '+re.escape(PAGE)):
+                catalog.render_indexes()
+        self.assertEqual((self.root/PAGE).read_text(),'# Object\n\nConcurrent human statement.\n')
     def test_unchanged_projection_cannot_hide_concurrent_output_edit(self):
         import check_documentation as catalog
         self.fixture.write('docs/index.md','# Concurrent human edit\n');archive=self.root/'.local/preimage'

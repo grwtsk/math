@@ -47,3 +47,22 @@ Human mathematical direction: grwtsk contributors. Formalization assistance:
 OpenAI Codex. Local source is MIT. Mathlib retains its authorship and license.
 The result formalizes a finite representation technique; no mathematical
 novelty, independent validation or RH consequence is claimed.
+
+<!-- BEGIN GENERATED MATHEMATICS TOTALS -->
+
+## Totals
+
+Scope: this object guide and the current bytes of its registered primary source [`GRWTSK/Logic/FiniteSequences/IndexedDictionary.lean`](../../../../GRWTSK/Logic/FiniteSequences/IndexedDictionary.lean).
+
+| Inventory | Total |
+|---|---:|
+| Object guide | 1 |
+| Linked primary source file | 1 |
+| Source declaration commands | 16 |
+| Theorem/lemma commands | 11 |
+
+Theorem/lemma commands are included in declaration commands. These are source syntax counts; compiler-generated declarations and proof acceptance are outside their scope.
+
+[Count definitions](../../../reference/library-pages.md#count-definitions) · [Structured inventory](../../../reference/library-summary.json).
+
+<!-- END GENERATED MATHEMATICS TOTALS -->
