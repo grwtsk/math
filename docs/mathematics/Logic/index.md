@@ -4,16 +4,16 @@
 
 | Inventory | Count |
 |---|---:|
-| Object guides | 7 |
+| Object guides | 8 |
 | Documented object groups | 3 |
-| Distinct primary sources linked | 7 |
-| Lean source modules | 56 |
+| Distinct primary sources linked | 8 |
+| Lean source modules | 59 |
 | Archive intake records | 3 |
 | Selected catalog families | 0 |
 
 These counts measure documentation and source coverage. They do not count accepted theorems or establish that every source module is documented or checked. [Definitions and limits](../../reference/library-pages.md#count-definitions).
 
-At least 526 source declaration commands, including 274 theorem/lemma commands, across 51 parsed Lean source modules; 5 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
+At least 544 source declaration commands, including 288 theorem/lemma commands, across 54 parsed Lean source modules; 5 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
 
 ## FiniteCoverage
 
@@ -25,15 +25,16 @@ Linked primary-source scope: 4 source declaration commands, including 4 theorem/
 
 ## FiniteSequences
 
-5 object guides · 5 distinct linked primary source files.
+6 object guides · 6 distinct linked primary source files.
 
-Linked primary-source scope: 61 source declaration commands, including 46 theorem/lemma commands, across 5 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+Linked primary-source scope: 78 source declaration commands, including 60 theorem/lemma commands, across 6 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
 - [Exact indexed dictionaries](FiniteSequences/indexed-dictionary.md).
 - [Exact ordered history extensions](FiniteSequences/append-only-history.md).
 - [Prefix service intervals and obligation coverage](FiniteSequences/prefix-coverage.md).
 - [Revision of indexed dictionaries](FiniteSequences/dictionary-revision.md).
 - [Semantic certificates for finite premises](FiniteSequences/decision-certificate.md).
+- [Stable incremental dictionary encoding](FiniteSequences/incremental-dictionary.md).
 
 ## ProofChecking
 

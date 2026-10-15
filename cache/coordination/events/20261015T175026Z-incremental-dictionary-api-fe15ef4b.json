@@ -1,0 +1,64 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "incremental-dictionary-formal",
+  "status": "api_stable",
+  "owner": "indexed_dictionary",
+  "source": "GRWTSK/Logic/FiniteSequences/IncrementalDictionary.lean",
+  "source_sha256": "dc5874410f3f41a838757159de9f225c09572d0748fceda554e88314ae4b5177",
+  "module": "GRWTSK.Logic.FiniteSequences.IncrementalDictionary",
+  "namespace": "GRWTSK.Logic.FiniteSequences.IncrementalDictionary",
+  "definitions": {
+    "missingPayloads": "[DecidableEq Payload] \u2192 (dictionary : List Payload) \u2192 (entries : List (Key \u00d7 Payload)) \u2192 List Payload := ((entries.map Prod.snd).filter (fun payload => decide (payload \u2209 dictionary))).dedup",
+    "expandedDictionary": "dictionary ++ missingPayloads dictionary entries",
+    "appendEntries": "dictionary := expandedDictionary original.dictionary entries; Packed := \u27e8dictionary, original.references ++ entries.map (fun entry => (entry.1, dictionary.idxOf entry.2))\u27e9"
+  },
+  "theorems": {
+    "mem_missingPayloads_iff": "payload \u2208 missingPayloads dictionary entries \u2194 payload \u2208 entries.map Prod.snd \u2227 payload \u2209 dictionary",
+    "missingPayloads_nodup": "(missingPayloads dictionary entries).Nodup",
+    "dictionary_prefix": "dictionary <+: expandedDictionary dictionary entries",
+    "payload_mem_expandedDictionary": "entry \u2208 entries \u2192 entry.2 \u2208 expandedDictionary dictionary entries",
+    "expandedDictionary_nodup": "dictionary.Nodup \u2192 (expandedDictionary dictionary entries).Nodup",
+    "references_prefix": "original.references <+: (appendEntries original entries).references",
+    "appendEntries_keys": "(appendEntries original entries).references.map Prod.fst = original.references.map Prod.fst ++ entries.map Prod.fst",
+    "appendEntries_nil": "appendEntries original [] = original (no Valid premise)",
+    "agreement_of_valid": "Valid original \u2192 AgreesOnReferences original.dictionary (expandedDictionary original.dictionary entries) original.references",
+    "unpack_original_references": "Valid original \u2192 unpack (replaceDictionary original (expandedDictionary original.dictionary entries)) = unpack original",
+    "appendEntries_valid": "Valid original \u2192 Valid (appendEntries original entries)",
+    "unpack_appendEntries": "Valid original \u2192 unpack (appendEntries original entries) = (unpack original).map (fun rows => rows ++ entries)",
+    "unpack_appendEntries_pack": "unpack (appendEntries (pack oldRows) entries) = some (oldRows ++ entries), using actual unpack_pack",
+    "missing_validity_counterexample": "Original Packed Nat Nat = \u27e8[],[(11,0)]\u27e9 is invalid and decodes none; entries [(12,7)] fill slot zero. Reusing original refs decodes [(11,7)], full appendEntries decodes [(11,7),(12,7)], violating old optional-map equation without Valid."
+  },
+  "kernel_check": {
+    "lean": "leanprover/lean4:v4.33.0",
+    "trust": 0,
+    "fatal_warnings": true,
+    "exit_code": 0,
+    "receipt": ".local/incremental-dictionary/20261015T174951Z-compile.json"
+  },
+  "verified_olean_directory": ".local/incremental-dictionary/build",
+  "duplicate_scout": {
+    "scope": "Bounded local GRWTSK and pinned Mathlib/Batteries List API search for appendEntries/missingPayloads/dictionary extension. No equivalent application found; no novelty or exhaustive-search claim.",
+    "files": {
+      "GRWTSK/Logic/FiniteSequences/IndexedDictionary.lean": "c01e5ff8067d652cafb42260ae283786c8cb78710c73eb23079a54bd05fbedff",
+      "GRWTSK/Logic/FiniteSequences/DictionaryRevision.lean": "6c7e6f170b1ea7ad746e4e99b0c15a680433c66d20b6d23538ef4a595bd796df",
+      "GRWTSK/Logic/FiniteSequences/AppendOnlyHistory.lean": "f015968ae5c73f3285c18f98d08dd480a9ab7cc4ed9a01a8fdf6a566f308d67e",
+      ".lake/packages/mathlib/Mathlib/Data/List/Nodup.lean": "a171582a4611a508efa9e9fcf5ae85d6be39eaf38b13d51256a08ad465bfb598",
+      "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/src/lean/Init/Data/List/Lemmas.lean": "0724ebc7c72c87ad6d480dba407c43cc60393e7a0facfbaa6670045f66f636ac",
+      "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/src/lean/Init/Data/List/Monadic.lean": "6ba9e4977f92ae19fab7f283fc04d7c0071464a8452c528167df52119dcefbf0",
+      "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/src/lean/Init/Data/List/Pairwise.lean": "0dbf6798e805477e651b1ff6fe472f5fb14beb37d6883167d36a81cba9c122ed"
+    },
+    "reused": [
+      "List.getElem?_append_left",
+      "List.mapM_append",
+      "List.nodup_append",
+      "List.nodup_dedup",
+      "IndexedDictionary.unpack_map_indices",
+      "IndexedDictionary.unpack_pack",
+      "DictionaryRevision.unpack_replaceDictionary"
+    ]
+  },
+  "boundaries": "Only finite-list definitions and exact hypotheses; no hash/compression/IO/runtime-adapter refinement. Original dictionaries need not be nodup for decoder law, but Valid is essential. Nodup is preserved separately when given.",
+  "remaining": [
+    "Positive/negative controls running. Root owns fresh closure audit, runner, metadata and documentation admission."
+  ]
+}

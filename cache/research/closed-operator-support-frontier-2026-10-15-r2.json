@@ -1,0 +1,13 @@
+{
+  "schema": "bounded-formal-frontier-replay-update-v1",
+  "at": "2026-10-15T18:06:45.799378+00:00",
+  "previous_frontier": {
+    "path": "cache/research/closed-operator-support-frontier-2026-10-15.json",
+    "sha256": "68daa9189c9d452ead560cd47ceb350d80ff4dd5ab88dd7728ee24b96d85cd7c"
+  },
+  "current_selected_source": "GRWTSK/Analysis/InnerProductSpace/ClosedOperatorSolvability.lean",
+  "current_sha256": "0a46bd0dfb3a7ba86fde0a5331103e72a5263396bce7abcbf35137b48797df2c",
+  "current_receipt": "evidence/Analysis/InnerProductSpace/closed-operator-checks-2026-10-15-r2.json",
+  "scope": "Same two support theorems; fresh replay after removing one trailing-space-only line. Prior source/receipts/frontier retained.",
+  "remaining_open_candidates": "Exactly the Hilbert-complex/dense-core and other frontier obligations in the prior record; no main-result or RH promotion."
+}

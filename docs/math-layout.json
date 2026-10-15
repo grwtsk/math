@@ -5173,7 +5173,11 @@
     "GRWTSK/Logic/FiniteSequences/Checks/Negative/DictionaryRevisionStaleSlots.lean": "18c8e1385378f16688266c40d9abd8810f1f1649080a466f393da61b8ad06dbb",
     "GRWTSK/Logic/FiniteSequences/Checks/Negative/DecisionCertificateStalePremise.lean": "8b9bbaf344a61a854d91ff31ad4c1bde38f0df7c880c266d644605cf0cffd69d",
     "GRWTSK/Logic/FiniteSequences/Checks/Positive/AppendOnlyHistory.lean": "84054e557b4ef0ac9aeb439d973a2aa52b831d73c8b595dac64ffafe3cf28483",
-    "GRWTSK/Logic/FiniteSequences/Checks/Negative/AppendOnlyHistoryReorder.lean": "b817c436b1f8f6baf476adac5b1ef8a68ca07434f848d81a220fe2507b830726"
+    "GRWTSK/Logic/FiniteSequences/Checks/Negative/AppendOnlyHistoryReorder.lean": "b817c436b1f8f6baf476adac5b1ef8a68ca07434f848d81a220fe2507b830726",
+    "GRWTSK/Logic/FiniteSequences/Checks/Positive/IncrementalDictionary.lean": "86d2edb49225a13cbb4c3737e07702755ec931c6564d52f812b85b3ae020c8c9",
+    "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/ClosedOperatorSolvability.lean": "4c1cbdca6fa0a54ece4597f6533f06777a20ac331b6c6634f9df1a91c89bba32",
+    "GRWTSK/Logic/FiniteSequences/Checks/Negative/IncrementalDictionaryMissingValidity.lean": "fd9eaec3a4a0b0d34dc283d60936bd8fad669a873e6d1fd21432684f6c7afb25",
+    "GRWTSK/Analysis/InnerProductSpace/Checks/Negative/ClosedOperatorMissingPairing.lean": "cf19ffb811ab3b6d6cdd6aca3a236aabfdd4cb02446fc3b660b0bacb6d12ea2c"
   },
   "schema_version": 3,
   "repository_conformance": {
@@ -5205,7 +5209,7 @@
     {
       "path": "GRWTSK.lean",
       "original_path": "GRWTSK.lean",
-      "sha256": "323eee296620c4f81139683b46987460124f06949ac1d9a25273e2f6816825dc",
+      "sha256": "491c21e0fe1b673faacddfbfbb0d722f2eac177336ddcab774219f83ad3dbb1c",
       "git_blob": "27e45b3448f78dc6499f2fb0698eb51cac5d1904",
       "working_tree_state": "tracked-modified",
       "source_root": ".",
@@ -5306,6 +5310,7 @@
         "GRWTSK.Analysis.InnerProductSpace.CausalLastLabelOperatorCost",
         "GRWTSK.Analysis.InnerProductSpace.CausalRealizationPolynomialObstruction",
         "GRWTSK.Analysis.InnerProductSpace.CausalResponseGram",
+        "GRWTSK.Analysis.InnerProductSpace.ClosedOperatorSolvability",
         "GRWTSK.Analysis.InnerProductSpace.CompactResidualNormalization",
         "GRWTSK.Analysis.InnerProductSpace.CompactSourceGramPositiveDefinite",
         "GRWTSK.Analysis.InnerProductSpace.DilationGram",
@@ -5405,6 +5410,7 @@
         "GRWTSK.Logic.FiniteSequences.AppendOnlyHistory",
         "GRWTSK.Logic.FiniteSequences.DecisionCertificate",
         "GRWTSK.Logic.FiniteSequences.DictionaryRevision",
+        "GRWTSK.Logic.FiniteSequences.IncrementalDictionary",
         "GRWTSK.Logic.FiniteSequences.IndexedDictionary",
         "GRWTSK.Logic.FiniteSequences.PrefixCoverage",
         "GRWTSK.Logic.Inference.FiniteRuleExamples",
@@ -5577,8 +5583,8 @@
       "verification": {
         "inventory": "observed-current-bytes",
         "layout": "repository baseline remains failed",
-        "lean": "umbrella not replayed after selected import addition",
-        "source_sha256": "323eee296620c4f81139683b46987460124f06949ac1d9a25273e2f6816825dc"
+        "lean": "umbrella not replayed after selected import additions",
+        "source_sha256": "491c21e0fe1b673faacddfbfbb0d722f2eac177336ddcab774219f83ad3dbb1c"
       },
       "runner": "python3 -B scripts/check_ccc_energy.py",
       "other_consumers": [
@@ -16806,6 +16812,67 @@
       ]
     },
     {
+      "path": "GRWTSK/Analysis/InnerProductSpace/Checks/Negative/ClosedOperatorMissingPairing.lean",
+      "original_path": "GRWTSK/Analysis/InnerProductSpace/Checks/Negative/ClosedOperatorMissingPairing.lean",
+      "sha256": "cf19ffb811ab3b6d6cdd6aca3a236aabfdd4cb02446fc3b660b0bacb6d12ea2c",
+      "git_blob": null,
+      "working_tree_state": "staged-addition-or-prior-version-at-fresh-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Analysis.InnerProductSpace.Checks.Negative.ClosedOperatorMissingPairing",
+      "namespaces": [
+        "GRWTSK.Analysis.InnerProductSpace.ClosedOperatorSolvability.NegativeChecks"
+      ],
+      "public_declarations": [
+        {
+          "kind": "theorem",
+          "name": "zero_dense",
+          "line": 16
+        },
+        {
+          "kind": "theorem",
+          "name": "zero_closed",
+          "line": 20
+        },
+        {
+          "kind": "theorem",
+          "name": "zero_target_not_mem_graph",
+          "line": 34
+        },
+        {
+          "kind": "theorem",
+          "name": "zero_has_no_unit_solution",
+          "line": 40
+        },
+        {
+          "kind": "theorem",
+          "name": "zero_pairing_fails",
+          "line": 45
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Analysis.InnerProductSpace.ClosedOperatorSolvability"
+      ],
+      "reverse_consumers": [],
+      "subject": "Analysis",
+      "object": "InnerProductSpace/Checks/Negative",
+      "source_role": "negative-control",
+      "target_path": "GRWTSK/Analysis/InnerProductSpace/Checks/Negative/ClosedOperatorMissingPairing.lean",
+      "placement_rationale": "Stable exact dictionary extension belongs to finite-sequence logic; densely defined closed operator solvability belongs to Hilbert-space analysis.",
+      "operation": "add",
+      "logical_status": "intended rejected control; no theorem admission",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "cf19ffb811ab3b6d6cdd6aca3a236aabfdd4cb02446fc3b660b0bacb6d12ea2c",
+        "replay_binding": "evidence/Analysis/InnerProductSpace/closed-operator-checks-2026-10-15-r2.json"
+      },
+      "runner": "python3 -B scripts/check_closed_operator.py",
+      "other_consumers": []
+    },
+    {
       "path": "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/CausalContactHilbertSeparation.lean",
       "original_path": "checks/Analysis/InnerProductSpace/CausalContactHilbertSeparation.lean",
       "sha256": "d272c2a69422485f4a338d67076ddb3c638f6dba9d7cc89863446a03c6c2b0c0",
@@ -17118,6 +17185,41 @@
       ]
     },
     {
+      "path": "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/ClosedOperatorSolvability.lean",
+      "original_path": "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/ClosedOperatorSolvability.lean",
+      "sha256": "4c1cbdca6fa0a54ece4597f6533f06777a20ac331b6c6634f9df1a91c89bba32",
+      "git_blob": null,
+      "working_tree_state": "staged-addition-or-prior-version-at-fresh-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Analysis.InnerProductSpace.Checks.Positive.ClosedOperatorSolvability",
+      "namespaces": [
+        "GRWTSK.Analysis.InnerProductSpace.ClosedOperatorSolvability.PositiveChecks"
+      ],
+      "public_declarations": [],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Analysis.InnerProductSpace.ClosedOperatorSolvability"
+      ],
+      "reverse_consumers": [],
+      "subject": "Analysis",
+      "object": "InnerProductSpace/Checks/Positive",
+      "source_role": "positive-check",
+      "target_path": "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/ClosedOperatorSolvability.lean",
+      "placement_rationale": "Stable exact dictionary extension belongs to finite-sequence logic; densely defined closed operator solvability belongs to Hilbert-space analysis.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "4c1cbdca6fa0a54ece4597f6533f06777a20ac331b6c6634f9df1a91c89bba32",
+        "replay_binding": "evidence/Analysis/InnerProductSpace/closed-operator-checks-2026-10-15-r2.json"
+      },
+      "runner": "python3 -B scripts/check_closed_operator.py",
+      "other_consumers": []
+    },
+    {
       "path": "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/CompactSourceGramPositiveDefinite.lean",
       "original_path": "checks/Analysis/InnerProductSpace/CompactSourceGramPositiveDefinite.lean",
       "sha256": "99790bbec938bc3ce444252c07ae2e2862fd7c3803fdc6713b6ce05c3d181282",
@@ -17194,6 +17296,58 @@
         "evidence/Analysis/InnerProductSpace/CausalRealization/formalization-admission.json",
         "evidence/source-manifest.json"
       ]
+    },
+    {
+      "path": "GRWTSK/Analysis/InnerProductSpace/ClosedOperatorSolvability.lean",
+      "original_path": "GRWTSK/Analysis/InnerProductSpace/ClosedOperatorSolvability.lean",
+      "sha256": "0a46bd0dfb3a7ba86fde0a5331103e72a5263396bce7abcbf35137b48797df2c",
+      "git_blob": null,
+      "working_tree_state": "staged-addition-or-prior-version-at-fresh-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Analysis.InnerProductSpace.ClosedOperatorSolvability",
+      "namespaces": [
+        "GRWTSK.Analysis.InnerProductSpace.ClosedOperatorSolvability"
+      ],
+      "public_declarations": [
+        {
+          "kind": "theorem",
+          "name": "mem_graph_of_adjoint_identity",
+          "line": 38
+        },
+        {
+          "kind": "theorem",
+          "name": "exists_solution_of_adjoint_bound",
+          "line": 75
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "Mathlib.Analysis.InnerProductSpace.Dual",
+        "Mathlib.Analysis.InnerProductSpace.LinearPMap",
+        "Mathlib.Analysis.Normed.Module.HahnBanach"
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Analysis.InnerProductSpace.Checks.Negative.ClosedOperatorMissingPairing",
+        "GRWTSK.Analysis.InnerProductSpace.Checks.Positive.ClosedOperatorSolvability"
+      ],
+      "subject": "Analysis",
+      "object": "InnerProductSpace",
+      "source_role": "library",
+      "target_path": "GRWTSK/Analysis/InnerProductSpace/ClosedOperatorSolvability.lean",
+      "placement_rationale": "Stable exact dictionary extension belongs to finite-sequence logic; densely defined closed operator solvability belongs to Hilbert-space analysis.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "0a46bd0dfb3a7ba86fde0a5331103e72a5263396bce7abcbf35137b48797df2c",
+        "replay_binding": "evidence/Analysis/InnerProductSpace/closed-operator-checks-2026-10-15-r2.json"
+      },
+      "runner": "python3 -B scripts/check_closed_operator.py",
+      "other_consumers": []
     },
     {
       "path": "GRWTSK/Analysis/InnerProductSpace/CompactResidualNormalization.lean",
@@ -31472,6 +31626,39 @@
       "other_consumers": []
     },
     {
+      "path": "GRWTSK/Logic/FiniteSequences/Checks/Negative/IncrementalDictionaryMissingValidity.lean",
+      "original_path": "GRWTSK/Logic/FiniteSequences/Checks/Negative/IncrementalDictionaryMissingValidity.lean",
+      "sha256": "fd9eaec3a4a0b0d34dc283d60936bd8fad669a873e6d1fd21432684f6c7afb25",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Logic.FiniteSequences.Checks.Negative.IncrementalDictionaryMissingValidity",
+      "namespaces": [],
+      "public_declarations": [],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Logic.FiniteSequences.IncrementalDictionary"
+      ],
+      "reverse_consumers": [],
+      "subject": "Logic",
+      "object": "FiniteSequences/Checks/Negative",
+      "source_role": "negative-control",
+      "target_path": "GRWTSK/Logic/FiniteSequences/Checks/Negative/IncrementalDictionaryMissingValidity.lean",
+      "placement_rationale": "Stable exact dictionary extension belongs to finite-sequence logic; densely defined closed operator solvability belongs to Hilbert-space analysis.",
+      "operation": "add",
+      "logical_status": "intended rejected control; no theorem admission",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "fd9eaec3a4a0b0d34dc283d60936bd8fad669a873e6d1fd21432684f6c7afb25",
+        "replay_binding": "evidence/Logic/FiniteSequences/incremental-dictionary-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_incremental_dictionary.py",
+      "other_consumers": []
+    },
+    {
       "path": "GRWTSK/Logic/FiniteSequences/Checks/Negative/IndexedDictionaryInvalidReference.lean",
       "original_path": "GRWTSK/Logic/FiniteSequences/Checks/Negative/IndexedDictionaryInvalidReference.lean",
       "sha256": "6e0c5e2aba86cbe81c884a873ab3dbd4b94c4814f421dedc388967adc49181a4",
@@ -31601,6 +31788,39 @@
         "replay_binding": "evidence/Logic/FiniteSequences/indexed-dictionary-checks-2026-10-15.json"
       },
       "runner": "python3 -B scripts/check_indexed_dictionary.py",
+      "other_consumers": []
+    },
+    {
+      "path": "GRWTSK/Logic/FiniteSequences/Checks/Positive/IncrementalDictionary.lean",
+      "original_path": "GRWTSK/Logic/FiniteSequences/Checks/Positive/IncrementalDictionary.lean",
+      "sha256": "86d2edb49225a13cbb4c3737e07702755ec931c6564d52f812b85b3ae020c8c9",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Logic.FiniteSequences.Checks.Positive.IncrementalDictionary",
+      "namespaces": [],
+      "public_declarations": [],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Logic.FiniteSequences.IncrementalDictionary"
+      ],
+      "reverse_consumers": [],
+      "subject": "Logic",
+      "object": "FiniteSequences/Checks/Positive",
+      "source_role": "positive-check",
+      "target_path": "GRWTSK/Logic/FiniteSequences/Checks/Positive/IncrementalDictionary.lean",
+      "placement_rationale": "Stable exact dictionary extension belongs to finite-sequence logic; densely defined closed operator solvability belongs to Hilbert-space analysis.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "86d2edb49225a13cbb4c3737e07702755ec931c6564d52f812b85b3ae020c8c9",
+        "replay_binding": "evidence/Logic/FiniteSequences/incremental-dictionary-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_incremental_dictionary.py",
       "other_consumers": []
     },
     {
@@ -31813,7 +32033,8 @@
         "GRWTSK.Logic.FiniteSequences.AppendOnlyHistory",
         "GRWTSK.Logic.FiniteSequences.Checks.Negative.DictionaryRevisionStaleSlots",
         "GRWTSK.Logic.FiniteSequences.Checks.Positive.DictionaryRevision",
-        "GRWTSK.Logic.FiniteSequences.DecisionCertificate"
+        "GRWTSK.Logic.FiniteSequences.DecisionCertificate",
+        "GRWTSK.Logic.FiniteSequences.IncrementalDictionary"
       ],
       "subject": "Logic",
       "object": "FiniteSequences",
@@ -31831,6 +32052,131 @@
         "replay_binding": "evidence/Logic/FiniteSequences/indexed-dictionary-checks-2026-10-15.json"
       },
       "runner": "python3 -B scripts/check_indexed_dictionary.py",
+      "other_consumers": []
+    },
+    {
+      "path": "GRWTSK/Logic/FiniteSequences/IncrementalDictionary.lean",
+      "original_path": "GRWTSK/Logic/FiniteSequences/IncrementalDictionary.lean",
+      "sha256": "dc5874410f3f41a838757159de9f225c09572d0748fceda554e88314ae4b5177",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Logic.FiniteSequences.IncrementalDictionary",
+      "namespaces": [
+        "GRWTSK.Logic.FiniteSequences.IncrementalDictionary"
+      ],
+      "public_declarations": [
+        {
+          "kind": "def",
+          "name": "missingPayloads",
+          "line": 30
+        },
+        {
+          "kind": "def",
+          "name": "expandedDictionary",
+          "line": 36
+        },
+        {
+          "kind": "def",
+          "name": "appendEntries",
+          "line": 41
+        },
+        {
+          "kind": "theorem",
+          "name": "mem_missingPayloads_iff",
+          "line": 48
+        },
+        {
+          "kind": "theorem",
+          "name": "missingPayloads_nodup",
+          "line": 55
+        },
+        {
+          "kind": "theorem",
+          "name": "dictionary_prefix",
+          "line": 60
+        },
+        {
+          "kind": "theorem",
+          "name": "payload_mem_expandedDictionary",
+          "line": 65
+        },
+        {
+          "kind": "theorem",
+          "name": "expandedDictionary_nodup",
+          "line": 75
+        },
+        {
+          "kind": "theorem",
+          "name": "references_prefix",
+          "line": 84
+        },
+        {
+          "kind": "theorem",
+          "name": "appendEntries_keys",
+          "line": 89
+        },
+        {
+          "kind": "theorem",
+          "name": "appendEntries_nil",
+          "line": 95
+        },
+        {
+          "kind": "theorem",
+          "name": "agreement_of_valid",
+          "line": 100
+        },
+        {
+          "kind": "theorem",
+          "name": "unpack_original_references",
+          "line": 108
+        },
+        {
+          "kind": "theorem",
+          "name": "appendEntries_valid",
+          "line": 115
+        },
+        {
+          "kind": "theorem",
+          "name": "unpack_appendEntries",
+          "line": 128
+        },
+        {
+          "kind": "theorem",
+          "name": "unpack_appendEntries_pack",
+          "line": 144
+        },
+        {
+          "kind": "theorem",
+          "name": "missing_validity_counterexample",
+          "line": 150
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Logic.FiniteSequences.DictionaryRevision"
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Logic.FiniteSequences.Checks.Negative.IncrementalDictionaryMissingValidity",
+        "GRWTSK.Logic.FiniteSequences.Checks.Positive.IncrementalDictionary"
+      ],
+      "subject": "Logic",
+      "object": "FiniteSequences",
+      "source_role": "library",
+      "target_path": "GRWTSK/Logic/FiniteSequences/IncrementalDictionary.lean",
+      "placement_rationale": "Stable exact dictionary extension belongs to finite-sequence logic; densely defined closed operator solvability belongs to Hilbert-space analysis.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "dc5874410f3f41a838757159de9f225c09572d0748fceda554e88314ae4b5177",
+        "replay_binding": "evidence/Logic/FiniteSequences/incremental-dictionary-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_incremental_dictionary.py",
       "other_consumers": []
     },
     {
@@ -53109,25 +53455,25 @@
   ],
   "current_inventory": {
     "head": "854e04dc182c36b00479b642e6301f47acc81e5f",
-    "lean_source_count": 636,
-    "active_source_count": 573,
+    "lean_source_count": 642,
+    "active_source_count": 579,
     "candidate_source_count": 63,
     "counts_by_role": {
       "audit-driver": 35,
-      "library": 346,
-      "negative-control": 106,
-      "positive-check": 86
+      "library": 348,
+      "negative-control": 108,
+      "positive-check": 88
     },
     "counts_by_subject": {
       "Algebra": 19,
-      "Analysis": 196,
+      "Analysis": 199,
       "Combinatorics": 8,
       "Data": 1,
       "DynamicalSystems": 16,
       "GroupTheory": 4,
       "Library": 1,
       "LinearAlgebra": 53,
-      "Logic": 54,
+      "Logic": 57,
       "MeasureTheory": 5,
       "NumberTheory": 188,
       "Order": 3,
@@ -59616,5 +59962,27 @@
     ],
     "replay": "evidence/Logic/FiniteSequences/append-only-history-checks-2026-10-15.json",
     "scope": "Incremental selected registration; no historical full-replay hashes or failed receipts refreshed."
+  },
+  "incremental_dictionary_closed_operator_additions": {
+    "date": "2026-10-15",
+    "paths": [
+      "GRWTSK/Logic/FiniteSequences/IncrementalDictionary.lean",
+      "GRWTSK/Analysis/InnerProductSpace/ClosedOperatorSolvability.lean",
+      "GRWTSK/Logic/FiniteSequences/Checks/Positive/IncrementalDictionary.lean",
+      "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/ClosedOperatorSolvability.lean",
+      "GRWTSK/Logic/FiniteSequences/Checks/Negative/IncrementalDictionaryMissingValidity.lean",
+      "GRWTSK/Analysis/InnerProductSpace/Checks/Negative/ClosedOperatorMissingPairing.lean"
+    ],
+    "replays": [
+      "evidence/Analysis/InnerProductSpace/closed-operator-checks-2026-10-15.json",
+      "evidence/Logic/FiniteSequences/incremental-dictionary-checks-2026-10-15.json",
+      "evidence/Analysis/InnerProductSpace/closed-operator-checks-2026-10-15-r2.json"
+    ],
+    "scope": "Incremental selected registration; no historical full-replay hashes or failed receipts refreshed."
+  },
+  "closed_operator_whitespace_replay": {
+    "prior_receipt": "evidence/Analysis/InnerProductSpace/closed-operator-checks-2026-10-15.json",
+    "current_receipt": "evidence/Analysis/InnerProductSpace/closed-operator-checks-2026-10-15-r2.json",
+    "change": "Remove one trailing-space-only line; statements and proof text otherwise unchanged; both source variants and receipts retained."
   }
 }

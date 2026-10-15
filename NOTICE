@@ -53,3 +53,17 @@ environment. Human project direction: R.A. Jacob Martone; adaptation and
 checking assistance: OpenAI Codex. Classical mathematics and Mathlib authorship
 remain attributed upstream. This port makes no claim about surrounding circuit
 lower bounds, mathematical novelty, independent review, or RH.
+
+Closed partial operator solvability interfaces
+---------------------------------------------
+GRWTSK/Analysis/InnerProductSpace/ClosedOperatorSolvability.lean adapts the first
+two graph/adjoint-bound results of openai/math at
+1581d4cbdd69a0faf34b2089614fe2a814316a6a,
+lean/OAI/Analysis/InnerProductSpace/ComplexSolvability.lean. Upstream project
+metadata names OpenAI as formalization author. Apache-2.0 terms are retained;
+see LICENSES/OpenAI-Apache-2.0.txt. Changes select reusable Hilbert-space results,
+use a mathematical namespace, minimize imports and replay with local pinned Lean.
+Human direction: R.A. Jacob Martone; adaptation/checking assistance: OpenAI Codex.
+All density, closedness, pairing and nonnegative-bound premises remain explicit.
+No surrounding Hilbert-complex main result, novelty, independent review or RH
+supplier is asserted. Mathlib retains upstream credit and licensing.

@@ -2,7 +2,7 @@
   "schema": "mathematical-documentation-inventory-v1",
   "scope": "Current local source paths and maintained documentation metadata; not theorem acceptance",
   "input_sha256": {
-    "docs/reference/documentation-layout.json": "02276b32184ddb896ebc2abdbf57963df49cc5ff919e91743ef8c22a3814050a",
+    "docs/reference/documentation-layout.json": "2630645f41de993614f2a9c19ad681d1260018f2379a3a8c5e41d0161dc50de0",
     "docs/reference/results.json": "544f454120ac34dfb0da29d767bdf9b3e6d4d3085c02f09ac475913975775288",
     "evidence/source-intake.json": "ef9f4145cfe681bc5553cf59c8f389d4d0c58fcca7d784cca9399f08fba803c3",
     "lake-manifest.json": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
@@ -167,6 +167,7 @@
     "GRWTSK/Analysis/InnerProductSpace/CausalLastLabelOperatorCost.lean",
     "GRWTSK/Analysis/InnerProductSpace/CausalRealizationPolynomialObstruction.lean",
     "GRWTSK/Analysis/InnerProductSpace/CausalResponseGram.lean",
+    "GRWTSK/Analysis/InnerProductSpace/Checks/Negative/ClosedOperatorMissingPairing.lean",
     "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/CausalContactHilbertSeparation.lean",
     "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/CausalContactOperatorCost.lean",
     "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/CausalContactSeparation.lean",
@@ -175,8 +176,10 @@
     "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/CausalIndividualRealization.lean",
     "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/CausalLastLabelOperatorCost.lean",
     "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/CausalRealizationPolynomialObstruction.lean",
+    "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/ClosedOperatorSolvability.lean",
     "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/CompactSourceGramPositiveDefinite.lean",
     "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/NonzeroVectorRealization.lean",
+    "GRWTSK/Analysis/InnerProductSpace/ClosedOperatorSolvability.lean",
     "GRWTSK/Analysis/InnerProductSpace/CompactResidualNormalization.lean",
     "GRWTSK/Analysis/InnerProductSpace/CompactSourceGramPositiveDefinite.lean",
     "GRWTSK/Analysis/InnerProductSpace/DilationGram.lean",
@@ -383,13 +386,16 @@
     "GRWTSK/Logic/FiniteSequences/Checks/Negative/AppendOnlyHistoryReorder.lean",
     "GRWTSK/Logic/FiniteSequences/Checks/Negative/DecisionCertificateStalePremise.lean",
     "GRWTSK/Logic/FiniteSequences/Checks/Negative/DictionaryRevisionStaleSlots.lean",
+    "GRWTSK/Logic/FiniteSequences/Checks/Negative/IncrementalDictionaryMissingValidity.lean",
     "GRWTSK/Logic/FiniteSequences/Checks/Negative/IndexedDictionaryInvalidReference.lean",
     "GRWTSK/Logic/FiniteSequences/Checks/Positive/AppendOnlyHistory.lean",
     "GRWTSK/Logic/FiniteSequences/Checks/Positive/DecisionCertificate.lean",
     "GRWTSK/Logic/FiniteSequences/Checks/Positive/DictionaryRevision.lean",
+    "GRWTSK/Logic/FiniteSequences/Checks/Positive/IncrementalDictionary.lean",
     "GRWTSK/Logic/FiniteSequences/Checks/Positive/IndexedDictionary.lean",
     "GRWTSK/Logic/FiniteSequences/DecisionCertificate.lean",
     "GRWTSK/Logic/FiniteSequences/DictionaryRevision.lean",
+    "GRWTSK/Logic/FiniteSequences/IncrementalDictionary.lean",
     "GRWTSK/Logic/FiniteSequences/IndexedDictionary.lean",
     "GRWTSK/Logic/FiniteSequences/PrefixCoverage.lean",
     "GRWTSK/Logic/Inference/FiniteRuleExamples.lean",
@@ -662,16 +668,16 @@
   },
   "counts": {
     "areas": 12,
-    "object_guides": 79,
+    "object_guides": 81,
     "documented_objects": 44,
-    "primary_sources": 75,
-    "lean_modules": 646,
+    "primary_sources": 77,
+    "lean_modules": 652,
     "intake_records": 68,
     "selected_families": 3,
-    "maintained_pages": 114
+    "maintained_pages": 116
   },
   "page_statuses": {
-    "fresh-selected": 16,
+    "fresh-selected": 18,
     "historical": 1,
     "historical-source-description": 54,
     "literature-and-historical-source-description": 3,
@@ -703,21 +709,21 @@
     },
     "Analysis": {
       "title": "Analysis",
-      "object_guides": 16,
+      "object_guides": 17,
       "documented_objects": 11,
-      "primary_sources": 16,
-      "lean_modules": 239,
+      "primary_sources": 17,
+      "lean_modules": 242,
       "intake_records": 39,
       "selected_families": 1,
       "page_statuses": {
-        "fresh-selected": 2,
+        "fresh-selected": 3,
         "historical-source-description": 14
       },
       "declaration_totals": {
         "declarations": 1460,
         "theorems": 1180,
         "parsed_modules": 205,
-        "unparsed_modules": 34
+        "unparsed_modules": 37
       }
     },
     "Combinatorics": {
@@ -811,21 +817,21 @@
     },
     "Logic": {
       "title": "Logic",
-      "object_guides": 7,
+      "object_guides": 8,
       "documented_objects": 3,
-      "primary_sources": 7,
-      "lean_modules": 56,
+      "primary_sources": 8,
+      "lean_modules": 59,
       "intake_records": 3,
       "selected_families": 0,
       "page_statuses": {
-        "fresh-selected": 4,
+        "fresh-selected": 5,
         "historical-source-description": 2,
         "written-argument": 1
       },
       "declaration_totals": {
-        "declarations": 526,
-        "theorems": 274,
-        "parsed_modules": 51,
+        "declarations": 544,
+        "theorems": 288,
+        "parsed_modules": 54,
         "unparsed_modules": 5
       }
     },
@@ -3738,6 +3744,20 @@
       "lake_manifest_sha256": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
       "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d"
     },
+    "GRWTSK/Analysis/InnerProductSpace/Checks/Negative/ClosedOperatorMissingPairing.lean": {
+      "sha256": "cf19ffb811ab3b6d6cdd6aca3a236aabfdd4cb02446fc3b660b0bacb6d12ea2c",
+      "errors": [
+        "GRWTSK/Analysis/InnerProductSpace/Checks/Negative/ClosedOperatorMissingPairing.lean:47:28: error: expected token\n"
+      ],
+      "kinds": {},
+      "status": "unparsed",
+      "method": "pinned-lean-parser-explicit-source-commands-v1",
+      "parser_sha256": "3d0b2e20dce89cbe6029b99b9486065e04c6e2b21b2adc1cff4bf31a1bf61046",
+      "counter_sha256": "7451dda0fa34d7b39cc4c7e797dcfb6b69fd8ba5be65956b6434d67149dc741d",
+      "compiler_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+      "lake_manifest_sha256": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
+      "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d"
+    },
     "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/CausalContactHilbertSeparation.lean": {
       "sha256": "d272c2a69422485f4a338d67076ddb3c638f6dba9d7cc89863446a03c6c2b0c0",
       "counts": {
@@ -3866,6 +3886,21 @@
       "lake_manifest_sha256": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
       "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d"
     },
+    "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/ClosedOperatorSolvability.lean": {
+      "sha256": "4c1cbdca6fa0a54ece4597f6533f06777a20ac331b6c6634f9df1a91c89bba32",
+      "errors": [
+        "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/ClosedOperatorSolvability.lean:21:20: error: expected token\n",
+        "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/ClosedOperatorSolvability.lean:27:21: error: expected token\n"
+      ],
+      "kinds": {},
+      "status": "unparsed",
+      "method": "pinned-lean-parser-explicit-source-commands-v1",
+      "parser_sha256": "3d0b2e20dce89cbe6029b99b9486065e04c6e2b21b2adc1cff4bf31a1bf61046",
+      "counter_sha256": "7451dda0fa34d7b39cc4c7e797dcfb6b69fd8ba5be65956b6434d67149dc741d",
+      "compiler_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+      "lake_manifest_sha256": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
+      "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d"
+    },
     "GRWTSK/Analysis/InnerProductSpace/Checks/Positive/CompactSourceGramPositiveDefinite.lean": {
       "sha256": "99790bbec938bc3ce444252c07ae2e2862fd7c3803fdc6713b6ce05c3d181282",
       "counts": {
@@ -3891,6 +3926,21 @@
       "errors": [],
       "kinds": {},
       "status": "parsed",
+      "method": "pinned-lean-parser-explicit-source-commands-v1",
+      "parser_sha256": "3d0b2e20dce89cbe6029b99b9486065e04c6e2b21b2adc1cff4bf31a1bf61046",
+      "counter_sha256": "7451dda0fa34d7b39cc4c7e797dcfb6b69fd8ba5be65956b6434d67149dc741d",
+      "compiler_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+      "lake_manifest_sha256": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
+      "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d"
+    },
+    "GRWTSK/Analysis/InnerProductSpace/ClosedOperatorSolvability.lean": {
+      "sha256": "0a46bd0dfb3a7ba86fde0a5331103e72a5263396bce7abcbf35137b48797df2c",
+      "errors": [
+        "GRWTSK/Analysis/InnerProductSpace/ClosedOperatorSolvability.lean:42:20: error: expected token\n",
+        "GRWTSK/Analysis/InnerProductSpace/ClosedOperatorSolvability.lean:81:21: error: expected token\n"
+      ],
+      "kinds": {},
+      "status": "unparsed",
       "method": "pinned-lean-parser-explicit-source-commands-v1",
       "parser_sha256": "3d0b2e20dce89cbe6029b99b9486065e04c6e2b21b2adc1cff4bf31a1bf61046",
       "counter_sha256": "7451dda0fa34d7b39cc4c7e797dcfb6b69fd8ba5be65956b6434d67149dc741d",
@@ -7578,6 +7628,25 @@
       "lake_manifest_sha256": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
       "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d"
     },
+    "GRWTSK/Logic/FiniteSequences/Checks/Negative/IncrementalDictionaryMissingValidity.lean": {
+      "sha256": "fd9eaec3a4a0b0d34dc283d60936bd8fad669a873e6d1fd21432684f6c7afb25",
+      "counts": {
+        "declarations": 1,
+        "theorems": 0
+      },
+      "errors": [],
+      "kinds": {
+        "def": 1,
+        "example": 1
+      },
+      "status": "parsed",
+      "method": "pinned-lean-parser-explicit-source-commands-v1",
+      "parser_sha256": "3d0b2e20dce89cbe6029b99b9486065e04c6e2b21b2adc1cff4bf31a1bf61046",
+      "counter_sha256": "7451dda0fa34d7b39cc4c7e797dcfb6b69fd8ba5be65956b6434d67149dc741d",
+      "compiler_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+      "lake_manifest_sha256": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
+      "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d"
+    },
     "GRWTSK/Logic/FiniteSequences/Checks/Negative/IndexedDictionaryInvalidReference.lean": {
       "sha256": "6e0c5e2aba86cbe81c884a873ab3dbd4b94c4814f421dedc388967adc49181a4",
       "counts": {
@@ -7651,6 +7720,24 @@
       "lake_manifest_sha256": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
       "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d"
     },
+    "GRWTSK/Logic/FiniteSequences/Checks/Positive/IncrementalDictionary.lean": {
+      "sha256": "86d2edb49225a13cbb4c3737e07702755ec931c6564d52f812b85b3ae020c8c9",
+      "counts": {
+        "declarations": 0,
+        "theorems": 0
+      },
+      "errors": [],
+      "kinds": {
+        "example": 9
+      },
+      "status": "parsed",
+      "method": "pinned-lean-parser-explicit-source-commands-v1",
+      "parser_sha256": "3d0b2e20dce89cbe6029b99b9486065e04c6e2b21b2adc1cff4bf31a1bf61046",
+      "counter_sha256": "7451dda0fa34d7b39cc4c7e797dcfb6b69fd8ba5be65956b6434d67149dc741d",
+      "compiler_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+      "lake_manifest_sha256": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
+      "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d"
+    },
     "GRWTSK/Logic/FiniteSequences/Checks/Positive/IndexedDictionary.lean": {
       "sha256": "421c43bcf34cdb8deac3f4d959e247abeecdaecc60b3dd2c51a2c5799163fd2c",
       "counts": {
@@ -7700,6 +7787,25 @@
         "def": 2,
         "structure": 1,
         "theorem": 10
+      },
+      "status": "parsed",
+      "method": "pinned-lean-parser-explicit-source-commands-v1",
+      "parser_sha256": "3d0b2e20dce89cbe6029b99b9486065e04c6e2b21b2adc1cff4bf31a1bf61046",
+      "counter_sha256": "7451dda0fa34d7b39cc4c7e797dcfb6b69fd8ba5be65956b6434d67149dc741d",
+      "compiler_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+      "lake_manifest_sha256": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
+      "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d"
+    },
+    "GRWTSK/Logic/FiniteSequences/IncrementalDictionary.lean": {
+      "sha256": "dc5874410f3f41a838757159de9f225c09572d0748fceda554e88314ae4b5177",
+      "counts": {
+        "declarations": 17,
+        "theorems": 14
+      },
+      "errors": [],
+      "kinds": {
+        "def": 3,
+        "theorem": 14
       },
       "status": "parsed",
       "method": "pinned-lean-parser-explicit-source-commands-v1",
@@ -12488,9 +12594,9 @@
     }
   },
   "declaration_totals": {
-    "declarations": 4608,
-    "theorems": 3374,
-    "parsed_modules": 552,
-    "unparsed_modules": 94
+    "declarations": 4626,
+    "theorems": 3388,
+    "parsed_modules": 555,
+    "unparsed_modules": 97
   }
 }

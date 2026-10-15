@@ -1,0 +1,12 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "incremental-dictionary-integration",
+  "actor": "root",
+  "at": "2026-10-15T18:04:11.885777+00:00",
+  "event": "whitespace-check-correction-freshly-replayed",
+  "source": "GRWTSK/Analysis/InnerProductSpace/ClosedOperatorSolvability.lean",
+  "current_sha256": "0a46bd0dfb3a7ba86fde0a5331103e72a5263396bce7abcbf35137b48797df2c",
+  "prior_source_and_receipt_retained": true,
+  "fresh_receipt": "evidence/Analysis/InnerProductSpace/closed-operator-checks-2026-10-15-r2.json",
+  "remaining": "Regenerate docs and cache for changed bytes, preserving all prior attempts and revisions."
+}

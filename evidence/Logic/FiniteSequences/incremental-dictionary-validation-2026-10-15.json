@@ -1,0 +1,185 @@
+{
+  "schema": "incremental-dictionary-closed-operator-validation-v1",
+  "at": "2026-10-15T17:59:20.946190+00:00",
+  "selected_native_results": [
+    {
+      "path": "evidence/Logic/FiniteSequences/incremental-dictionary-checks-2026-10-15.json",
+      "sha256": "8ee843eec23c7759d9d64dbfc6e5d84ec700f6c6e4095e77cdf536433b63e272",
+      "outcome": "passed",
+      "all_bound_source_inputs_match": true
+    },
+    {
+      "path": "evidence/Analysis/InnerProductSpace/closed-operator-checks-2026-10-15.json",
+      "sha256": "d7ba3f593aaaf2da6822b9e5109faa4343a23b8c4dbae3ef3e984d4a68bff630",
+      "outcome": "passed",
+      "all_bound_source_inputs_match": true
+    }
+  ],
+  "documentation": {
+    "render": "projections regenerated; validation blocked by retained source identity drift",
+    "normal_exit_code": 1,
+    "optimized_exit_code": 1,
+    "controls_normal": {
+      "exit_code": 0,
+      "tests": 92
+    },
+    "controls_optimized": {
+      "exit_code": 0,
+      "tests": 92
+    },
+    "two_new_page_bindings": "passed",
+    "all_registered_links": "passed",
+    "retained_source_drifts": [
+      {
+        "page": "docs/mathematics/LinearAlgebra/Cocycle/product.md",
+        "source": "GRWTSK/LinearAlgebra/CocycleProduct.lean",
+        "retained_source_sha256": "64ebbd43849bfffee9f92d74f271c55a1ffcba28c1b7debcf491a901ddfff67b",
+        "current_observed_sha256": "cb6e4e4e9d8f1c8c2fd54a906f2274a2eb329a6b9c54499c941ed7378a49e77e"
+      },
+      {
+        "page": "docs/mathematics/LinearAlgebra/CommonGenerator/rotations.md",
+        "source": "GRWTSK/LinearAlgebra/CommonJ.lean",
+        "retained_source_sha256": "c4fb5fef172e3855ba2d9ed1811246022e07813fbce00ee5341d393fcdb62767",
+        "current_observed_sha256": "4f411bdb393848c79f0aaa8f48af69f4a7d8b0f620ddcc03991c25eae055b5d5"
+      },
+      {
+        "page": "docs/mathematics/Algebra/OrderedProduct/intervals.md",
+        "source": "GRWTSK/Algebra/OrderedProduct.lean",
+        "retained_source_sha256": "97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d",
+        "current_observed_sha256": "dee4c3dc356426d3fdce86b71aa3e5c93e58597fd688381c38d73d80cc23e300"
+      },
+      {
+        "page": "docs/mathematics/NumberTheory/Zeta/Riemann/inference-guards.md",
+        "source": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroDefinitions.lean",
+        "retained_source_sha256": "107f357b8c04afc16e25b8fded6922782d2756959b42f080af839f4db58e9aa0",
+        "current_observed_sha256": "79f45d7a61819fce066baa26094d480aaf40ce6c46cfd2526b8107f3bf62a8a4"
+      },
+      {
+        "page": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-window.md",
+        "source": "GRWTSK/NumberTheory/Moebius/PrimeFilterLaplace.lean",
+        "retained_source_sha256": "be96c983badedf9c3bde3787a273165be81163efc130b52d451ae2b51addea1b",
+        "current_observed_sha256": "f76be07a02a9cae45f5d22fca86fa534d2f31f295858238c0124222ca03e460b"
+      },
+      {
+        "page": "docs/mathematics/LinearAlgebra/Schrodinger/almost-mathieu.md",
+        "source": "GRWTSK/LinearAlgebra/AlmostMathieu.lean",
+        "retained_source_sha256": "8e33555ed354415b1604c4a7fc192d065fcd87ec4c765f6200faafd633c74d5c",
+        "current_observed_sha256": "ed4a3641f340c856b6e0d98cbeb99c18f06cc86c64d3d84f306adc1b35849643"
+      },
+      {
+        "page": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/negative-correlation.md",
+        "source": "GRWTSK/NumberTheory/Moebius/NegativePrimeCorrelation.lean",
+        "retained_source_sha256": "020042e6753763a9894a6ef63256f9583f72dbc5d114a9fa45c495f7650e716d",
+        "current_observed_sha256": "f658aa8536cb22225e3995a0250a36933ec6a4bd820ba0908f8650b2463b134c"
+      },
+      {
+        "page": "docs/mathematics/Analysis/Fourier/WindowCertificates/angular.md",
+        "source": "GRWTSK/Analysis/Fourier/WindowCertificates.lean",
+        "retained_source_sha256": "acf0f90e233095c8e4949a4c22e1f67fa68f4d85e0be5cb99bf9fcfbbea671db",
+        "current_observed_sha256": "568586ca097a0fc94ec0866a627d9cb8c17a7a781ee7849d01c7229f5d44bbc8"
+      },
+      {
+        "page": "docs/mathematics/Logic/FiniteSequences/prefix-coverage.md",
+        "source": "GRWTSK/Logic/FiniteSequences/PrefixCoverage.lean",
+        "retained_source_sha256": "a6ee772e91591f1e51ad01a4a0ff68df9f2455d4c0c168a660159fb0fd55485f",
+        "current_observed_sha256": "b3a18d904fddadd6d32f938796b01dcac292d89f639546fa01f4a06006225ac1"
+      },
+      {
+        "page": "docs/mathematics/Combinatorics/Sequences/quotas.md",
+        "source": "GRWTSK/Combinatorics/Sequences/QuotaDiscrepancy.lean",
+        "retained_source_sha256": "851cb36b5b9db3a4e2695e4c4164dbca4af83dcc913caebd41160fd4db8f882f",
+        "current_observed_sha256": "8d07146fa509e71b3e8d70e33714d121c08460ee3519f5aa1f18f1746f11183a"
+      },
+      {
+        "page": "docs/mathematics/Analysis/Fourier/IntegerSeries/encoding.md",
+        "source": "GRWTSK/Analysis/Fourier/IntegerSeries.lean",
+        "retained_source_sha256": "bd741ea9dd1e4efbc8eab2f77574a73c0cd82d85f2a76d604b14f05cd2f09789",
+        "current_observed_sha256": "f56a64af2b2992777785b2bef7d7130fe59d7393ef437d3a9e92733a19046d9f"
+      },
+      {
+        "page": "docs/mathematics/LinearAlgebra/Schrodinger/sampled-potential.md",
+        "source": "GRWTSK/LinearAlgebra/Schrodinger/SampledPotential.lean",
+        "retained_source_sha256": "412246f06dbbe474c57fa268af5751faf5a8315a41d6569d476101b6914aa3f1",
+        "current_observed_sha256": "60c9febe94a5f6bbd8748983eb9d7e01d74afcc0a0018f6e40a0afa71ab1d21c"
+      },
+      {
+        "page": "docs/mathematics/Analysis/NormedSpace/reconstruction.md",
+        "source": "GRWTSK/Analysis/NormedSpace/QuadraticError.lean",
+        "retained_source_sha256": "79581bb3cf4ce27f646aa513375e0c51912c0ce57f379f1380114e225f0f5980",
+        "current_observed_sha256": "f265b44001d2fb74859425c0e10002a8912f64906ce4437594206cd6de808816"
+      },
+      {
+        "page": "docs/mathematics/NumberTheory/ContinuedFractions/scheduled-denominators.md",
+        "source": "GRWTSK/NumberTheory/ContinuedFractions/ScheduledDenominators.lean",
+        "retained_source_sha256": "3f18269367c2ef839a97591d1d5d36198c6c4c6faff132120f45659c19e94a03",
+        "current_observed_sha256": "7ee299eed00ef1cf731e1e1b1ea7a507ae8e83d5ea0ed63f0861cf63f0e42f2c"
+      },
+      {
+        "page": "docs/mathematics/NumberTheory/ContinuedFractions/frequency-realization.md",
+        "source": "GRWTSK/NumberTheory/ContinuedFractions/FrequencyRealization.lean",
+        "retained_source_sha256": "fe53414320a78931bf2add8a168544df853ce7bd10b82b2cf257082ceb77e4be",
+        "current_observed_sha256": "70b9bdd17943fc63ba329431a71a5c9d40bd7bea62726dfb6dcc1e2ac54a1e80"
+      },
+      {
+        "page": "docs/mathematics/Analysis/Asymptotics/polynomial-error.md",
+        "source": "GRWTSK/Analysis/Asymptotics/PolynomialErrorBound.lean",
+        "retained_source_sha256": "7f04746894b0774969d506fde6c8287056361051f29196c8dc23c2f38932b6e6",
+        "current_observed_sha256": "532d46ae618acc957bdb799be09f19e04f936d23b344dd0e0e0cf743c105372f"
+      },
+      {
+        "page": "docs/mathematics/Combinatorics/Sequences/coverage-and-quotas.md",
+        "source": "GRWTSK/Combinatorics/Sequences/QuotaDiscrepancy.lean",
+        "retained_source_sha256": "851cb36b5b9db3a4e2695e4c4164dbca4af83dcc913caebd41160fd4db8f882f",
+        "current_observed_sha256": "8d07146fa509e71b3e8d70e33714d121c08460ee3519f5aa1f18f1746f11183a"
+      }
+    ],
+    "whole_documentation_acceptance": false
+  },
+  "layout": {
+    "findings": 175,
+    "nonselected_findings_unchanged": true,
+    "new_selected_findings": 0,
+    "whole_repository_acceptance": false
+  },
+  "actual_cache": "evidence/Logic/FiniteSequences/incremental-dictionary-cache-roundtrip-2026-10-15.json",
+  "run_logs": [
+    {
+      "path": ".local/incremental-dictionary/root/native-replay-1.log",
+      "sha256": "a357650a01d627e0c34746e1ab2ae0dafe6cac5c6f3b20e3c3e63110a54e434a"
+    },
+    {
+      "path": ".local/incremental-dictionary/root/closed-operator-native-replay-1.log",
+      "sha256": "f6a1f86f21f05fe0d5b53526ff53fff5de9b4f9cff0af406ba51cb1b5bb1d02c"
+    },
+    {
+      "path": ".local/incremental-dictionary/root/documentation-render.log",
+      "sha256": "c247e38d42d122332812cec6770616cf02517ae931c63315dd4bc58d47516bb0"
+    },
+    {
+      "path": ".local/incremental-dictionary/root/documentation-normal.log",
+      "sha256": "c247e38d42d122332812cec6770616cf02517ae931c63315dd4bc58d47516bb0"
+    },
+    {
+      "path": ".local/incremental-dictionary/root/documentation-optimized.log",
+      "sha256": "c247e38d42d122332812cec6770616cf02517ae931c63315dd4bc58d47516bb0"
+    },
+    {
+      "path": ".local/incremental-dictionary/root/documentation-tests-normal.log",
+      "sha256": "4d0e711c63ffe90062c20bf22b52888f826aba4754c64b89f61bc0a64814f08b"
+    },
+    {
+      "path": ".local/incremental-dictionary/root/documentation-tests-optimized.log",
+      "sha256": "a9f981632edf29520f4fc7026266b5e37e3bcd39e88fe558007ceb585289f478"
+    }
+  ],
+  "failure_preservation": [
+    ".local/incremental-dictionary/",
+    ".local/closed-operator/",
+    ".local/documentation-index-render/"
+  ],
+  "verification_limits": [
+    "Pinned dependency objects reused/fingerprinted; no source rebuild or independent review.",
+    "Source syntactic counts from concurrent monitor are separate from native proof acceptance.",
+    "All existing failed/stale receipts and historical source bindings remain unchanged."
+  ]
+}

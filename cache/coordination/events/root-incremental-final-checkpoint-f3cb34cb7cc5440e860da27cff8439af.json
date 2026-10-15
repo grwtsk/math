@@ -1,0 +1,15 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "incremental-dictionary-integration",
+  "actor": "root",
+  "at": "2026-10-15T18:07:55.312666+00:00",
+  "event": "corrected-current-source-ready-for-checkpoint",
+  "current_cache_revision": "24a6468a7c15d3ccf5d6424cd98ede01783dfac564ababb8d5f290bd0987ab77",
+  "current_validation": {
+    "path": "evidence/Logic/FiniteSequences/incremental-dictionary-validation-2026-10-15-r2.json",
+    "sha256": "3c93cbb907f96dfd51a725aebe7245d556daf73a316331d9846f668fa44bb648"
+  },
+  "continuation": "cache/coordination/continuations/2026-10-15-incremental-dictionary-r2.json",
+  "prior_attempts_and_receipts_preserved": true,
+  "policy": "Restage only owned current bytes, retain unrelated staged/working edits, commit main locally and read back all committed objects. No remote writes."
+}
