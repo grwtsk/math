@@ -1,0 +1,81 @@
+{
+  "schema": "grl-rh-package-manifest-v1",
+  "scope": "Selected additive files only; excludes this manifest. No mathematical authority follows from these digests.",
+  "files": [
+    {
+      "path": "evidence/algebra/polynomial/interpolation/ConjugatePair.lean.txt",
+      "bytes": 4559,
+      "sha256": "229bf046ad86400c586a5927d5f920e47677169158edd74e1cde82022835a80f",
+      "git_blob": "ae264a0fe67f35679c98b4a13cba1accff6eb375"
+    },
+    {
+      "path": "evidence/algebra/polynomial/quartic/PairMargin.lean.txt",
+      "bytes": 1849,
+      "sha256": "5a18ad7f9ece08364a7eeb7f0cb48acf3b6a94c43369cfab93acb81e798d40cc",
+      "git_blob": "a5d99f98c81cec9420860786c1041328b05d330e"
+    },
+    {
+      "path": "evidence/analysis/complex/gaussian/PairLocalization.lean.txt",
+      "bytes": 4608,
+      "sha256": "59494b754ebbd6d65cf22b49835c71f22c7c6b2af77e06bbf16ef782ef25fe6f",
+      "git_blob": "441374d2cebd3d77da24178ca785ae6444bca88a"
+    },
+    {
+      "path": "evidence/number-theory/zeta/riemann/ZeroWindow.lean.txt",
+      "bytes": 6433,
+      "sha256": "5820b98e9908e8e534f015b10a3b9ef36e2d08f8714d37f550cd0bcb776e2f03",
+      "git_blob": "45fdcad4419c1dc7e678e5036afae922084086ff"
+    },
+    {
+      "path": "evidence/number-theory/zeta/riemann/pair-localization-001/derivation.txt",
+      "bytes": 10326,
+      "sha256": "488bad14e0d08f44dba555804eae6fbf54e52ffe4253d98ec921be3afc468ca4",
+      "git_blob": "62a8b6a4ac8b208e01835c7809b52ca929130732"
+    },
+    {
+      "path": "evidence/number-theory/zeta/riemann/pair-localization-001/exact-checks-optimized.json",
+      "bytes": 6950,
+      "sha256": "d3be65cdd8dd4bec502b5e76856eac9f7c9ba33c3a9efe29d1eb3d4b1db5d33a",
+      "git_blob": "97ae054788468d6b3011167dd2f811c2a5a0ad5b"
+    },
+    {
+      "path": "evidence/number-theory/zeta/riemann/pair-localization-001/exact-checks.json",
+      "bytes": 6950,
+      "sha256": "d3be65cdd8dd4bec502b5e76856eac9f7c9ba33c3a9efe29d1eb3d4b1db5d33a",
+      "git_blob": "97ae054788468d6b3011167dd2f811c2a5a0ad5b"
+    },
+    {
+      "path": "evidence/number-theory/zeta/riemann/pair-localization-001/execution.json",
+      "bytes": 5093,
+      "sha256": "eb56d3efa5b40968075eb90ef7fb60b9e35c88635e505c2203b7e8ca0cc0c6b7",
+      "git_blob": "473b1d947212797a90bb88ac1736222456a97e2c"
+    },
+    {
+      "path": "evidence/number-theory/zeta/riemann/pair-localization-001/expected-targets.json",
+      "bytes": 3635,
+      "sha256": "bd061de3483aa53b73a81f087c0d4fdbf23c15d57e083dbedda4f32157334b8e",
+      "git_blob": "2fcd660df52d9c2e37515761dbe4c07feabb0cbe"
+    },
+    {
+      "path": "evidence/number-theory/zeta/riemann/pair-localization-001/frontier.json",
+      "bytes": 8542,
+      "sha256": "3885c6d51faf263f3d3147f9e58aa3f5e878789984fd5fe5312c32f2a46731ab",
+      "git_blob": "09383a8183f6f659e682cba8c4a4fb2ff106cd44"
+    },
+    {
+      "path": "evidence/number-theory/zeta/riemann/pair-localization-001/source-bindings.json",
+      "bytes": 4584,
+      "sha256": "0d1f50e35bdb74abd86b3a8b25b76b5106cd40fd579709dc28573650bd60acdd",
+      "git_blob": "65b70b0adf3d3554afd6977b650c3f70611ebd7a"
+    },
+    {
+      "path": "evidence/number-theory/zeta/riemann/pair-localization-001/verify_pair_localization.py",
+      "bytes": 8696,
+      "sha256": "14b112a4446f2d89ec65060410a109434eb77500c1d812b5d7036f505a71c6f3",
+      "git_blob": "b6c9fc0c7b1efcf44badc8476ccb34a5a7b41218"
+    }
+  ],
+  "file_count": 12,
+  "frozen_target_unchanged": true,
+  "native_acceptance": false
+}

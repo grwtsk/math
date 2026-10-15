@@ -1,0 +1,65 @@
+{
+  "schema": "laguerre-discrepancy-execution-status-v1",
+  "status": "WRITTEN_RESEARCH_ONLY",
+  "repository": "grwtsk/math",
+  "source_base": "8a20ef34ed57ab38e74152e4f068f061db7ef5fb",
+  "source_base_tree": "ac5ff08fda868ad0b3b1867648a67e105496bb3a",
+  "branch": "main",
+  "new_files_planned": 6,
+  "existing_files_modified_planned": 0,
+  "existing_files_deleted_planned": 0,
+  "source_bound_artifacts": {
+    "evidence/analysis/special-functions/digamma-hankel-20261015/derivation.txt": "c055c37183a5e3a8825c0553891674a6cbb29225",
+    "evidence/number-theory/zeta/laguerre-discrepancy-20261015/derivation.txt": "2147bef05856a6e113c24e236f606d533d24df17",
+    "evidence/number-theory/zeta/laguerre-discrepancy-20261015/check_finite_identities.py.txt": "e9492a0b33853267ff2ddb6fe4dcdba3f3d0c223",
+    "evidence/number-theory/zeta/laguerre-discrepancy-20261015/README.txt": "5d1b60b99f82a2a326a95b520459c1a2fb4c252e",
+    "evidence/number-theory/zeta/laguerre-discrepancy-20261015/source-ledger.json": "f2be3ab9034183694d22679105034c245ec72828"
+  },
+  "identity_convention": "Git SHA-1 blob identities returned by the authenticated repository API. Identity does not establish mathematical correctness; no local SHA-256 or build attestation was obtained in this turn.",
+  "runtime_access_attempts": [
+    {
+      "operation": "Container filesystem and executable availability probe",
+      "result": "No usable runtime response"
+    },
+    {
+      "operation": "Python filesystem and executable availability probe",
+      "result": "No usable runtime response"
+    },
+    {
+      "operation": "Minimal container working-directory probe",
+      "result": "No usable runtime response"
+    },
+    {
+      "operation": "Minimal Python arithmetic probe",
+      "result": "No usable runtime response"
+    }
+  ],
+  "checks": {
+    "new_finite_regression_candidate_normal": "NOT_RUN",
+    "new_finite_regression_candidate_optimized": "NOT_RUN",
+    "existing_85_test_suite": "NOT_RERUN",
+    "existing_source_coefficient_profiles": "NOT_RERUN",
+    "new_prime_discrepancy_moments": "NOT_COMPUTED",
+    "enormous_prime_cutoff_enumeration": "NOT_PERFORMED",
+    "native_Lean": "NOT_RUN",
+    "owned_declaration_axiom_audit": "NOT_RUN",
+    "whole_repository_layout_and_documentation": "NOT_RUN",
+    "source_PDF_companion_checks": "NOT_RUN",
+    "source_PDF_hashes": "NOT_RECOMPUTED",
+    "independent_review": "NOT_PERFORMED"
+  },
+  "test_candidate_scope": "Finite rational polynomial, filter, moment-grid, endpoint and synthetic-control identities only. Stored as inactive .py.txt outside scripts and tests. No pass count or generated certificate is claimed.",
+  "mathematical_status": {
+    "digamma_Hankel_uniform_bound": "WRITTEN_PROOF_FOR_ALL_FINITE_N",
+    "linear_prime_discrepancy_filter": "WRITTEN_EXACT_IDENTITY_WITH_UNIFORM_INVERSE_BOUND",
+    "prime_label_coefficient_tail": "WRITTEN_UNCONDITIONAL_BOUND",
+    "scalar_RH_return": "WRITTEN_EQUIVALENCE_CRITERION",
+    "all_depth_prime_energy_bound": "OPEN",
+    "new_zero_exclusion": false,
+    "RH_proved": false,
+    "new_Lean_admissions": 0,
+    "new_computational_certificates": 0
+  },
+  "publication_intent": "Create an additive Git-data commit on the inspected main head, compare changed paths, use a non-force expected-head update, and confirm the resulting remote head. No local checkout operation succeeded in this turn.",
+  "preservation": "Existing source definitions, arithmetic coefficients, kernel signs, finite certificates, active source imports, compiler pins, workflows, canonical documentation and historical receipts are left unchanged. No PDF bytes are uploaded."
+}

@@ -1,0 +1,191 @@
+{
+  "schema": "one-third-energy-finite-diagnostic-receipt-v1",
+  "date": "2026-10-14",
+  "repository": "grwtsk/math",
+  "branch": "main",
+  "inspected_base_commit": "3986b851f893f16b84627ab97d2543fb34be0b4a",
+  "reported_local_checkpoint": "a13f942bbecf1a47ba2c289a6aee579998b9463f",
+  "checkpoint_replay": "User-reported; not independently replayed in this contribution.",
+  "human_mathematical_direction": "grwtsk contributors",
+  "written_reduction_and_implementation": "OpenAI ChatGPT",
+  "source_bindings": [
+    {
+      "path": "scripts/one_third_energy.py",
+      "bytes": 11582,
+      "sha256": "9c73bb399ca9c45384f114a6cbd18fd3121991c38aa1bef62d4baf7cac37eee9",
+      "git_blob_sha1": "f13161b4d5844dbd3c873f999f1b82a25747ae93"
+    },
+    {
+      "path": "scripts/test_one_third_energy.py",
+      "bytes": 9540,
+      "sha256": "c55fe6b47c7664635890c4f480b720db253a836dec64699471f53e1b20fc7e1c",
+      "git_blob_sha1": "0801f81e85c3469bfa19858d28559c144a2a08bc"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/Moebius/Energy/damped-tails.md",
+      "bytes": 14135,
+      "sha256": "67f8911abf28a50dde8439db36ef61e0e57b471e624f5c0473f260da9b581b69",
+      "git_blob_sha1": "f6ddb54f998f28f797d917b7d2fd8e5fbed49240"
+    }
+  ],
+  "written_results": [
+    "For x>=1, N=floor(x): H_(1/3)(log x)=D_N+C_N-T_N(x), retaining every ordered pair and the entire finite-response tail.",
+    "The finite-response tail is 6*x^(-2/3)*(A_N-(4/7)*M_N*x^(-1/2))^2+(108/245)*M_N^2*x^(-5/3). It is not the actual future pickup tail or the Euler-product correction.",
+    "0<=D_N<=27/7; uniform C_N-T_N(N)<=C gives uniform H_(1/3)<=C+27/7.",
+    "For S_N=(3/2)*sum_(1<=n<N)(A_n-M_n/sqrt(n))^2*(n^(-2/3)-(n+1)^(-2/3)): H_(1/3)(log N)<=8*S_N+3 and S_N<=H_(1/3)(log N)/2+3/4.",
+    "The finite weighted Mertens-source identity retains the negative (3/5)*M_N^2*x^(-5/3) cutoff compensation."
+  ],
+  "verification": {
+    "python_runs": [
+      {
+        "command": "python3 -B scripts/test_one_third_energy.py",
+        "exit_code": 0,
+        "test_methods": 21,
+        "result": "PASS",
+        "captured_output": ".....................\n----------------------------------------------------------------------\nRan 21 tests in 3.952s\n\nOK\n"
+      },
+      {
+        "command": "python3 -O -B scripts/test_one_third_energy.py",
+        "exit_code": 0,
+        "test_methods": 21,
+        "result": "PASS",
+        "captured_output": ".....................\n----------------------------------------------------------------------\nRan 21 tests in 3.945s\n\nOK\n"
+      }
+    ],
+    "exact_rational_grid_sign_assignments": 363,
+    "independent_sieve_checks": "trial division for 1<=n<=500",
+    "rational_interval_method": "Integer sixth-power root brackets; exact Fraction operations; outward dyadic rounding.",
+    "kernel_equality_proof": "NOT_RUN. Interval overlap is only a consistency check; the identities have written derivations.",
+    "pinned_lean_replay": "NOT_RUN: no Lean/Lake runtime available in this execution environment.",
+    "owned_declaration_audit": "NOT_RUN; no Lean source added or changed.",
+    "full_repository_math_layout": "NOT_RUN: full repository checkout unavailable in this execution environment.",
+    "full_repository_documentation_checks": "NOT_RUN: full repository checkout unavailable in this execution environment.",
+    "remote_write_method": "GitHub contents API on existing main; no feature branch, reset, force-push, or Codex task."
+  },
+  "finite_batch_command": "python3 -B scripts/one_third_energy.py --cutoff 1 --cutoff 3/2 --cutoff 2 --cutoff 7/2 --cutoff 16 --cutoff 64 --cutoff 256 --cutoff 1024 --bits 64",
+  "finite_batch_records": [
+    {
+      "cutoff": "1",
+      "horizon": "log(1)",
+      "energy_interval": {
+        "lower": "0",
+        "upper": "0"
+      },
+      "residual_enclosures_contain_zero": {
+        "energy_identity_residual": true,
+        "tail_identity_residual": true,
+        "source_identity_residual": true
+      }
+    },
+    {
+      "cutoff": "3/2",
+      "horizon": "log(3/2)",
+      "energy_interval": {
+        "lower": "144635671742273929/9223372036854775808",
+        "upper": "289271343484547915/18446744073709551616"
+      },
+      "residual_enclosures_contain_zero": {
+        "energy_identity_residual": true,
+        "tail_identity_residual": true,
+        "source_identity_residual": true
+      }
+    },
+    {
+      "cutoff": "2",
+      "horizon": "log(2)",
+      "energy_interval": {
+        "lower": "1137264904406956333/18446744073709551616",
+        "upper": "568632452203478187/9223372036854775808"
+      },
+      "residual_enclosures_contain_zero": {
+        "energy_identity_residual": true,
+        "tail_identity_residual": true,
+        "source_identity_residual": true
+      }
+    },
+    {
+      "cutoff": "7/2",
+      "horizon": "log(7/2)",
+      "energy_interval": {
+        "lower": "1469025417955737037/9223372036854775808",
+        "upper": "734512708977868533/4611686018427387904"
+      },
+      "residual_enclosures_contain_zero": {
+        "energy_identity_residual": true,
+        "tail_identity_residual": true,
+        "source_identity_residual": true
+      }
+    },
+    {
+      "cutoff": "16",
+      "horizon": "log(16)",
+      "energy_interval": {
+        "lower": "3581152453704731029/18446744073709551616",
+        "upper": "3581152453704731245/18446744073709551616"
+      },
+      "residual_enclosures_contain_zero": {
+        "energy_identity_residual": true,
+        "tail_identity_residual": true,
+        "source_identity_residual": true
+      }
+    },
+    {
+      "cutoff": "64",
+      "horizon": "log(64)",
+      "energy_interval": {
+        "lower": "4619084136554984929/18446744073709551616",
+        "upper": "2309542068277492649/9223372036854775808"
+      },
+      "residual_enclosures_contain_zero": {
+        "energy_identity_residual": true,
+        "tail_identity_residual": true,
+        "source_identity_residual": true
+      }
+    },
+    {
+      "cutoff": "256",
+      "horizon": "log(256)",
+      "energy_interval": {
+        "lower": "5645405664525673367/18446744073709551616",
+        "upper": "5645405664525673877/18446744073709551616"
+      },
+      "residual_enclosures_contain_zero": {
+        "energy_identity_residual": true,
+        "tail_identity_residual": true,
+        "source_identity_residual": true
+      }
+    },
+    {
+      "cutoff": "1024",
+      "horizon": "log(1024)",
+      "energy_interval": {
+        "lower": "3110871588228722147/9223372036854775808",
+        "upper": "1555435794114361237/4611686018427387904"
+      },
+      "residual_enclosures_contain_zero": {
+        "energy_identity_residual": true,
+        "tail_identity_residual": true,
+        "source_identity_residual": true
+      }
+    }
+  ],
+  "negative_controls": [
+    "deleted finite-response tail",
+    "deleted mixed endpoint term",
+    "missing ordered-pair factor two",
+    "deleted Mertens cutoff compensation",
+    "changed Mobius sign at six",
+    "constant-sign comparison source",
+    "invalid physical cutoff and future coefficient inclusion"
+  ],
+  "arithmetic_status": {
+    "uniform_one_third_energy_bound": "UNPAID",
+    "pointwise_mertens_exponent_below_five_sixths": "NO SUPPLIER OBTAINED",
+    "mertens_log_square_bound": "Explicit premise unchanged; no unconditional boundary admission.",
+    "P04": "Not required; no witness claimed.",
+    "RH": "NOT CLAIMED",
+    "new_lean_theorem_admissions": 0,
+    "smallest_surviving_direct_inequality": "exists C>=0, forall natural N>=1: C_N-T_N(N)<=C; definitions and exact return are in the bound article."
+  },
+  "limits": "Finite tests and written reductions only. These receipts are not Lean proof acceptance, infinite-range arithmetic witnesses, a new Mertens exponent, or an RH proof. Existing source bindings and historical receipts are not promoted."
+}

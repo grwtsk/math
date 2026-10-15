@@ -1,0 +1,204 @@
+Conjugate-pair interpolation and Gaussian localization
+GRL-RH-1 / 0.4.0 -- mathematical continuation pair-localization-001
+
+STATUS
+OPEN_FRONTIER. Four new inert Lean candidates, exact finite checks, and a
+written source-linked isolation argument. No fresh Lean theorem acceptance,
+closed RH proof, independent validation, or autonomous execution is claimed.
+The unchanged root is Mathlib's _root_.RiemannHypothesis. The preceding
+522d3ee7a53317fbec96b78c2869bc95d80068aa work is retained without alteration.
+
+1. An explicit pair isolator, not an arbitrary positive model
+
+Let r=t+ib with b!=0. Let S be a finite set of other complex locations,
+containing neither r nor conjugate(r). Define
+
+ h(z) = product over w in S of (z-w)(z-conjugate(w)),
+ d = i/h(r),
+ P(z) = h(z) [Re(d) + (Im(d)/b)(z-t)].
+
+Each factor of h is (z-Re(w))^2+Im(w)^2. Hence P has real coefficients,
+degree at most 2|S|+1, and respects conjugation. No assumption that S itself
+is closed under conjugation is needed. Exclusion of both selected nodes
+makes h(r) nonzero. At r, the affine factor equals d, so
+
+ P(r)=i,  P(conjugate(r))=-i,  P(w)=0 for every w in S.
+
+For arbitrary positive analytic weights m_r,m_conjugate(r), the selected
+signed square contribution is exactly -M, where M=m_r+m_conjugate(r)>0.
+No equality between these weights is required. Real nodes or both members
+of another conjugate pair may produce repeated factors of the TEST
+polynomial; these are not claims about analytic source multiplicities.
+This construction remains valid when t=0. It excludes b=0 solely because
+that is already the desired real-frequency/critical-line case.
+
+ConjugatePair.lean.txt gives product, polynomial evaluation, normalization,
+conjugation and finite weighted-trace candidates. All quantities are literal
+signed squares. Norms enter only to bound residuals, never as a replacement
+for the signed functional.
+
+2. Freeze the polynomial before shrinking the Gaussian
+
+For L>0 set
+
+ G_L(z)=P(z) exp(-L[(z-t)^2+b^2]),
+ D(z)=(Re(z)-t)^2+b^2-Im(z)^2.
+
+The exponent is zero at BOTH selected nodes. Therefore G_L(r)=i and
+G_L(conjugate(r))=-i for every L; all cancelled values stay zero. Direct
+complex-exponential evaluation gives
+
+ |G_L(z)|^2=|P(z)|^2 exp(-2L D(z)).
+
+For |Im(z)|<=1/2 and |Re(z)-t|>=1,
+
+ D(z)-3/4 = [(Re(z)-t)^2-1]+b^2+[1/4-Im(z)^2] >= 0.
+
+Taking L=n+1 yields, for every natural n,
+
+ |G_(n+1)(z)|^2 <= exp(-3n/2) |G_1(z)|^2.              (A)
+
+The closed endpoints are included. All near-window locations other than
+the selected pair must have been cancelled first. S, P and all constants
+are fixed before n. Allowing an unbounded interpolation polynomial P_n to
+change with n would not justify this bound with one fixed summable majorant.
+PairLocalization.lean.txt retains the exact norm identity, exponent estimate,
+comparison theorem and a finite natural-index selection using exp/log and
+exists_nat_gt. It supplies no claim of numerical certificate-search totality.
+
+3. The nodes can be selected from the actual zeta source
+
+Use the retained affine rotation frequency(s)=-i(s-1/2). The existing
+NontrivialZetaZero.mem_critical_strip gives |Im(frequency(s))|<1/2.
+Critical reflection s -> 1-conjugate(s) maps frequency(s) to its conjugate.
+The coordinate map is injective, so it does not merge distinct zero locations.
+
+For fixed t, the rectangle 0<=Re(s)<=1, t-1<=Im(s)<=t+1 is compact.
+At the pinned Mathlib revision, Huanyu Zheng's ZetaZeros.lean supplies
+IsCompact.inter_riemannZetaZeros_finite. Use that actual finite source set,
+map by frequency, and erase the selected pair. The resulting S cancels every
+other nontrivial zero with |Im(s)-t|<=1. All remaining locations satisfy (A).
+
+ZeroWindow.lean.txt implements this as source candidates zeroWindow,
+windowZeros, otherWindowFrequencies, zeroPairTest and zeroGaussianTest. It
+also supplies candidate evaluations at the pair, near-window cancellation,
+and the actual-source pointwise tail bound. This is a classical finite-set
+construction, not a computed list of zeta zeros or an approximate zero atlas.
+The underlying source references are bound in source-bindings.json.
+
+4. From pointwise decay to the infinite weighted tail
+
+Index DISTINCT actual nontrivial frequency locations by z and retain their
+positive finite analytic multiplicities m_z. Separate the selected pair,
+other near-window locations, and the far tail. Provided
+
+ C = sum over far z of m_z |G_1(z)|^2 < infinity,        (B)
+
+absolute comparison gives a well-defined complex residual
+
+ R_n = sum over far z of m_z G_(n+1)(z)^2,
+ |R_n| <= C exp(-3n/2).                               (C)
+
+The finite cancellation is exact; it introduces no extra analytic weights.
+Thus the real part of the FULL actual spectral sum is
+
+ W_n = Re(sum over all z of m_z G_(n+1)(z)^2)
+     = -M + Re(R_n).
+
+Choose a natural n with C exp(-3n/2)<M. When C>0 it suffices that
+n>(2/3)log(C/M); when C=0, n=0 suffices. Then W_n<0. This provides a
+concrete local-pair extraction sequence, including a fixed negative margin
+and geometric remainder, rather than asserting positivity of an orbit by
+positivity of an unrelated form.
+
+There is a classical route to (B), not an additional RH assumption. Trudgian,
+arXiv:1208.5846v2, Corollary 1, gives a multiplicity-counted zero estimate
+implying N(T)=O(T log T). Conjugation handles negative heights and compact
+finiteness absorbs any bounded central region. For a fixed polynomial P of
+degree d and |Im(z)|<=1/2, |P(z)|^2 is bounded by a constant times
+(1+|Re(z)-t|)^(2d). Splitting into unit annuli around t bounds (B) by a
+constant times sum_(k>=1) (k+2)^(2d+2) exp(-2k^2), which converges by the
+ratio test. Constants may depend on this fixed zero and P, not on n.
+This is a written consequence of an externally cited counting theorem;
+no native counting, analytic-order or moment theorem is supplied here.
+Neither finite samples nor discreteness ALONE prove (B).
+
+5. Exact bridge to the retained quartic consumer
+
+For a=Re(s)-1/2 !=0, put scale=M/(16a^4)>0. The retained slope-two witness
+satisfies
+
+ scale*H_2(a,t)=-M,   16*scale*a^4=M.
+
+Consequently W_n=-M+Re(R_n) is literally the previous finite-residual
+pattern, with residual=Re(R_n)<M. PairMargin.lean.txt references the existing
+uniform_witness and residual_contradiction rather than replacing the root
+or redefining a new version of RH. There is no division by the height t.
+No common bound on these per-zero constants is claimed or used as P04.
+
+6. The positivity supplier is still missing
+
+The actual spectral expression has now been specified, not proved positive.
+For a real-type transform G, the Weil pairing
+G(z)*conjugate(G(conjugate(z))) equals G(z)^2, not |G(z)|^2. To finish this
+route one still needs an exact admissibility/explicit-formula bridge to an
+actual arithmetic functional and its nonnegativity for these tests, without
+RH or an equivalent positivity assertion as an unproved premise.
+
+Connes--Consani, arXiv:2006.13771, Introduction and Appendix C, explain the
+Weil criterion with additional finite vanishing conditions; their Theorem 1
+is an archimedean, restricted-support result. This is existing literature,
+not a new equivalent criterion discovered here. Its positivity theorem is
+not a supplier for the full Gaussian family. The inverse Fourier transforms
+of nonzero polynomial-Gaussians are not compactly supported. Increasing L
+does not preserve a fixed compact support in logarithmic coordinates.
+Using that literature requires a proved truncation/continuity extension or
+a separate admissibility theorem, with all prime and archimedean terms.
+
+Pole evaluations can be killed algebraically by adjoining i/2 to S: its
+paired factor kills both +/-i/2, which are not nontrivial source frequencies
+in the open half-strip. This observation does not by itself establish the
+Fourier/Mellin normalization, pole-term identities or the positivity theorem.
+Those source effects remain explicit integration obligations.
+
+The complete source-level positivity assertion on this rich test class
+would imply RH by the above isolation argument. Calling it positivity does
+not make it a weaker proven fact. Conversely, on RH the locations are real
+and each real-type squared value is nonnegative; this explains exactly
+where the unproved arithmetic content remains.
+
+7. Falsification and execution
+
+692 exact finite checks passed in normal Python and again under -O, with
+identical reports: 8 symbolic identities, 192 finite interpolation checks,
+144 cross-path evaluations, 48 weighted-trace/scale checks, 288 rational
+exponent bounds, and 12 negative controls. Every node is synthetic. No actual
+zeta-zero computation, transcendental interval bound, Lean elaboration,
+complete axiom audit or independent verification is included in that count.
+
+A naive Gaussian without finite cancellation fails: with r=i/4 and another
+location z=i/2, D(z)=-3/16, so its Gaussian factor grows. Dropping the half-strip
+condition also fails: r=i/4,z=1+2i gives D=-47/16 despite real separation 1.
+These refute only the indicated surrogate assertions on synthetic spectra,
+not an assertion that such off-line locations are actual zeta zeros.
+
+The recorded probes again found no lean, lake or elan. Local Git retrieval
+failed DNS. Connected GitHub operations remained available. No toolchain was
+upgraded, no missing import was counted as mathematical rejection, and no
+new active library source was admitted. The 14 predecessor manifest entries
+matched their bytes; all frozen expected statements stayed unchanged.
+
+8. Resume cursor
+
+Obtain the selected native dependency closure and stage the four candidates
+at the mathematical destinations in frontier.json, including the retained
+TraceWitness and OrbitFrequency prerequisites. Compile and repair proof
+terms without weakening the frozen statements. Run the actual root identity,
+owned/transitive axiom, contract and negative-control procedures.
+
+Next formalize analytic zero multiplicities, the actual Gaussian moment,
+and the summed source pair-plus-tail identity. Then attempt the actual
+arithmetic positivity supplier. The Gaussian isolation construction should
+not be replaced by a generic positive Gram or Hodge model. P04 and the
+all-height induction route remain unchanged alternatives; one complete
+checked route would suffice, with no requirement to finish the others.

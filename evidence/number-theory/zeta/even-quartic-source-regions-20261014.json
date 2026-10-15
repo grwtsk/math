@@ -1,0 +1,128 @@
+{
+  "schema": "even-quartic-source-region-v1",
+  "scope": "Three previously covered four-zero divisors; written analytic source bridge and exact finite inequalities; not Lean",
+  "coefficient_rounding_bits": 64,
+  "divisors": [
+    {
+      "centers": [
+        "113/8",
+        "21"
+      ],
+      "count": 4,
+      "family": "actual divisor; NOT a single repeated-slot reflection orbit",
+      "spectral_scale": "40",
+      "scalar_consumer": {
+        "p": {
+          "lo": "-462410107418812439/1152921504606846976",
+          "hi": "-7398413102660563737/18446744073709551616"
+        },
+        "r": {
+          "lo": "636167616935980601/18446744073709551616",
+          "hi": "318131445329397813/9223372036854775808"
+        },
+        "gap": {
+          "lo": "7788601607293722651483691042471278705/340282366920938463463374607431768211456",
+          "hi": "30460275918081903440628275733250577/1329227995784915872903807060280344576"
+        },
+        "coefficient_region_certified": true,
+        "strict_coefficient_region_certified": true,
+        "conclusion": "ALL_ENCLOSED_COEFFICIENTS_HAVE_POSITIVE_DEFINITE_HERMITE_FORM",
+        "actual_zeta_source_identified_by_this_function": false
+      },
+      "moment_gap": {
+        "lo": "13198129714605039/576460752303423488",
+        "hi": "105650508513464347/4611686018427387904"
+      },
+      "odd_minor": {
+        "lo": "14556936120327567/4611686018427387904",
+        "hi": "58338106757279311/18446744073709551616"
+      },
+      "even_minor": {
+        "lo": "13198129714605039/144115188075855872",
+        "hi": "105650508513464347/1152921504606846976"
+      }
+    },
+    {
+      "centers": [
+        "25",
+        "487/16"
+      ],
+      "count": 4,
+      "family": "actual divisor; NOT a single repeated-slot reflection orbit",
+      "spectral_scale": "40",
+      "scalar_consumer": {
+        "p": {
+          "lo": "-17884543791094405215/18446744073709551616",
+          "hi": "-17884064603643885041/18446744073709551616"
+        },
+        "r": {
+          "lo": "2086063897729381663/9223372036854775808",
+          "hi": "2086419066849177421/9223372036854775808"
+        },
+        "gap": {
+          "lo": "11938658293910699779367422589293472993/340282366920938463463374607431768211456",
+          "hi": "12008211873022085207635253365319856961/340282366920938463463374607431768211456"
+        },
+        "coefficient_region_certified": true,
+        "strict_coefficient_region_certified": true,
+        "conclusion": "ALL_ENCLOSED_COEFFICIENTS_HAVE_POSITIVE_DEFINITE_HERMITE_FORM",
+        "actual_zeta_source_identified_by_this_function": false
+      },
+      "moment_gap": {
+        "lo": "648125117061472589/18446744073709551616",
+        "hi": "650037315899369393/18446744073709551616"
+      },
+      "odd_minor": {
+        "lo": "585307033719504157/18446744073709551616",
+        "hi": "147305581875319911/4611686018427387904"
+      },
+      "even_minor": {
+        "lo": "2592500468245890357/18446744073709551616",
+        "hi": "2600149263597477569/18446744073709551616"
+      }
+    },
+    {
+      "centers": [
+        "527/16",
+        "601/16"
+      ],
+      "count": 4,
+      "family": "actual divisor; NOT a single repeated-slot reflection orbit",
+      "spectral_scale": "40",
+      "scalar_consumer": {
+        "p": {
+          "lo": "-7198477928457244631/4611686018427387904",
+          "hi": "-14396550226323938809/9223372036854775808"
+        },
+        "r": {
+          "lo": "2760292151232267855/4611686018427387904",
+          "hi": "11043093263021368101/18446744073709551616"
+        },
+        "gap": {
+          "lo": "3551543214006556984054637868380937265/85070591730234615865843651857942052864",
+          "hi": "899681604035277495000436325718222481/21267647932558653966460912964485513216"
+        },
+        "coefficient_region_certified": true,
+        "strict_coefficient_region_certified": true,
+        "conclusion": "ALL_ENCLOSED_COEFFICIENTS_HAVE_POSITIVE_DEFINITE_HERMITE_FORM",
+        "actual_zeta_source_identified_by_this_function": false
+      },
+      "moment_gap": {
+        "lo": "386325383671523131/9223372036854775808",
+        "hi": "48613550376849919/1152921504606846976"
+      },
+      "odd_minor": {
+        "lo": "115186175704819567/1152921504606846976",
+        "hi": "467357615316957079/4611686018427387904"
+      },
+      "even_minor": {
+        "lo": "1545301534686092525/9223372036854775808",
+        "hi": "3111267224118394813/18446744073709551616"
+      }
+    }
+  ],
+  "all_height_claim": false,
+  "new_region_claim": false,
+  "single_orbit_positivity_claim": false,
+  "native_lean_admission": false
+}
