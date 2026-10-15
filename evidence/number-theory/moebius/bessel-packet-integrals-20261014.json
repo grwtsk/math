@@ -1,0 +1,226 @@
+{
+  "schema": "bessel-packet-actual-integrals-source-bound-v1",
+  "date": "2026-10-14",
+  "repository": "grwtsk/math",
+  "branch": "main",
+  "inspected_base_commit": "2d67a7ae6d404c1e085f48ca4d755ba566d37b07",
+  "implementation_tests_derivation_commit": "276a729b3d9c3e74c4dbff1dedcb9584029462c0",
+  "status": "WRITTEN_ANALYTIC_ERROR_BOUNDS_AND_CERTIFIED_FINITE_SOURCE_INTEGRALS",
+  "uniform_signed_energy_bound": "NOT_PROVED",
+  "human_mathematical_direction": "R.A. Jacob Martone",
+  "derivation_and_implementation": "OpenAI ChatGPT",
+  "source_bindings": [
+    {
+      "path": "scripts/bessel_packet_integrals.py",
+      "bytes": 15624,
+      "sha256": "d97c7c00fcb8bed8661854d23b27fd60e4189970e5e43d6f57db8a04c0213451",
+      "git_blob_sha1": "a1207359b1d0edfd5592478b45996c2465c8598f"
+    },
+    {
+      "path": "scripts/test_bessel_packet_integrals.py",
+      "bytes": 8270,
+      "sha256": "765af9ede390979c1db3f5dceeedac032e5d6f106fcaef2d2445007b4e4af170",
+      "git_blob_sha1": "64b9d5200f0e96a8ffc51bbb273aa263e4b67f80"
+    },
+    {
+      "path": "evidence/number-theory/moebius/bessel-packet-integrals-derivation-20261014.txt",
+      "bytes": 11385,
+      "sha256": "79c99c497b1f08e2cd8a3b339e865cbca1f850834322c390d0863cfd22a3771f",
+      "git_blob_sha1": "46c31449c8ddd4c89d3513f2e9f512bbcb044b7e"
+    }
+  ],
+  "unchanged_dependency": {
+    "path": "scripts/bessel_mobius_packet_compiler.py",
+    "bytes": 9550,
+    "sha256": "599d0cfb14cd9595372262081225a1c61be5d2ca1c0fbac52730cbf4d51a4a2b",
+    "git_blob_sha1": "c05962a9583af9ab71df3ee95aa55dba80bb2531"
+  },
+  "written_results": [
+    {
+      "id": "EI2-3",
+      "statement": "The actual complete Bessel reference obeys y(1-y)B_second+(7/6-13y/6)B_prime+(lambda-r)B=0, r=(1-A^-2)/(18y)+1/[16(1-y)], A=asin(sqrt(y))/sqrt(y). The analytic-branch rational Taylor recurrence retains the exact frequency and prefactor.",
+      "note": "First derivative differs from the Jacobi derivative by (-1)^n b_n*5/72."
+    },
+    {
+      "id": "EI4-5",
+      "statement": "For rho=min(3/4,2/n), q=1/(n*rho), h=ceil(sqrt(4nu^2*rho/(1-rho))), M=b_n*3^h/(1-rho), the full omitted derivative tail after degree L is <=(M/rho)*q^L*((L+1)-L*q)/(1-q)^2.",
+      "scope": "Analytic disk and zero-free branch of A are proved in writing; no arithmetic zero-free premise."
+    },
+    {
+      "id": "EI6-8",
+      "statement": "The actual scalar coefficient error is <=4*tail/(3*lambda*sqrt(n)); atom contractions have separate explicit propagated allowances. Polynomial antiderivatives, rational endpoints, and enclosed square/fourth roots evaluate the actual Bessel integrals.",
+      "scope": "Numerical truncation costs only, not the infinite arithmetic energy tail."
+    }
+  ],
+  "finite_observations": {
+    "degrees": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "shell_starts": [
+      2,
+      4,
+      8
+    ],
+    "source_integrals_evaluated": true,
+    "max_closed_source_limit": 225,
+    "common_compiler_input_limits": [
+      2,
+      3,
+      6
+    ],
+    "independent_full_source_validation": "Trial division additionally checks actual coefficients through each n^2.",
+    "output_bits": 48,
+    "selected_energy_interval_width": "1/281474976710656",
+    "shell_results": [
+      {
+        "first_degree": 2,
+        "last_degree": 3,
+        "energies": {
+          "joint": {
+            "lower": "805961334745/70368744177664",
+            "upper": "3223845338981/281474976710656"
+          },
+          "diagonal_only": {
+            "lower": "345035616161853/281474976710656",
+            "upper": "172517808080927/140737488355328"
+          },
+          "mixed": {
+            "lower": "-341811770822873/281474976710656",
+            "upper": "-42726471352859/35184372088832"
+          }
+        }
+      },
+      {
+        "first_degree": 4,
+        "last_degree": 7,
+        "energies": {
+          "joint": {
+            "lower": "8613179754047/281474976710656",
+            "upper": "134580933657/4398046511104"
+          },
+          "diagonal_only": {
+            "lower": "20596479456673/281474976710656",
+            "upper": "10298239728337/140737488355328"
+          },
+          "mixed": {
+            "lower": "-5991649851313/140737488355328",
+            "upper": "-11983299702625/281474976710656"
+          }
+        }
+      },
+      {
+        "first_degree": 8,
+        "last_degree": 15,
+        "energies": {
+          "joint": {
+            "lower": "11859946067219/281474976710656",
+            "upper": "2964986516805/70368744177664"
+          },
+          "diagonal_only": {
+            "lower": "30478263626043/281474976710656",
+            "upper": "7619565906511/70368744177664"
+          },
+          "mixed": {
+            "lower": "-18618317558825/281474976710656",
+            "upper": "-2327289694853/35184372088832"
+          }
+        }
+      }
+    ],
+    "exact_postchecks": {
+      "first_three_shells_strictly_increase": true,
+      "first_diagonal_over_100_times_joint": true,
+      "mixed_negative_in_selected_shells": true,
+      "energy_widths_exactly_two_to_minus_48": true,
+      "carry_deletion_changes_actual_t2_sign": true
+    },
+    "limits": "Increasing first three shells does not prove divergence or rule out an eventual summable envelope. Negative mixed terms at these shells do not establish an all-shell sign."
+  },
+  "verification": {
+    "python_version": "3.13.5",
+    "runs": [
+      {
+        "command": "python -B scripts/test_bessel_packet_integrals.py",
+        "test_methods": 22,
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "......................\n----------------------------------------------------------------------\nRan 22 tests in 5.694s\n\nOK\n"
+      },
+      {
+        "command": "python -O -B scripts/test_bessel_packet_integrals.py",
+        "test_methods": 22,
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "......................\n----------------------------------------------------------------------\nRan 22 tests in 5.871s\n\nOK\n"
+      },
+      {
+        "command": "python -B scripts/test_bessel_mobius_packet_compiler.py",
+        "test_methods": 18,
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "..................\n----------------------------------------------------------------------\nRan 18 tests in 2.509s\n\nOK\n"
+      }
+    ],
+    "independent_bessel_series_coefficients": 110,
+    "exact_ode_coefficient_checks": 51,
+    "test_source_sign_assignments": 27,
+    "finite_batch_command": "python -B scripts/bessel_packet_integrals.py --shell 2 --shell 4 --shell 8 --bits 48",
+    "arithmetic": "Standard-library Fraction arithmetic, integer root enclosures, exact Taylor recurrence, and complete analytic remainder; no floating-point values or numerical quadrature in certified output.",
+    "exploratory_checks": "Three mpmath kernel point comparisons were exploratory only and not used for any bound.",
+    "source_return": "Independent atom sums and carried-prefix cell integrals; interval overlap is a consistency check, not a proof of the general identity.",
+    "remote_integrity": "Both Python blobs matched tested local bytes at readback; corrected derivation blob 46c31449c8ddd4c89d3513f2e9f512bbcb044b7e matched on update.",
+    "publication_correction": "A compiler blob identifier was transcribed incorrectly in the newly published derivation; corrected in commit 276a729b3d9c3e74c4dbff1dedcb9584029462c0. Mathematical text and executable files were unaffected; prior commit retained.",
+    "native_lean_replay": "NOT_RUN: Lean/Lake executable unavailable.",
+    "owned_declaration_audit": "NOT_RUN: no active Lean source changed.",
+    "full_repository_checks": "NOT_RUN: no full checkout; direct network access failed DNS.",
+    "old_sources_and_receipts": "UNCHANGED",
+    "publication": "New source/test/evidence files on existing main, plus correction of this contribution’s new provenance line. No branch creation, reset, force-push, workflow or permission changes."
+  },
+  "external_sources": [
+    {
+      "source": "NIST DLMF 10.2.1-10.2.2",
+      "url": "https://dlmf.nist.gov/10.2",
+      "scope": "Bessel equation and normalized entire even series."
+    },
+    {
+      "source": "NIST DLMF 10.9.4",
+      "url": "https://dlmf.nist.gov/10.9",
+      "scope": "Normalized Poisson integral, complex argument bound."
+    },
+    {
+      "source": "NIST DLMF 4.24",
+      "url": "https://dlmf.nist.gov/4.24",
+      "scope": "Inverse-trigonometric series and derivative conventions."
+    }
+  ],
+  "conversation_artifact": {
+    "path": "bessel_actual_integrals.json",
+    "bytes": 30957,
+    "sha256": "33b56ef005972f364d710c91b02cb0d9c085a35511cf5d37b75b56858bc0eab1",
+    "git_blob_sha1": "d9b010dc27695657f76d0a6e35fe93ea60b51a4e"
+  },
+  "nonclaims": {
+    "uniform_bessel_energy": false,
+    "uniform_jacobi_energy": false,
+    "uniform_signed_core_bound": false,
+    "new_mertens_exponent": false,
+    "new_zero_free_region": false,
+    "new_lean_admissions": 0,
+    "P04_required": false,
+    "RH_proof": false
+  },
+  "remaining_inequality": "sum_(j>=1) sum_(n=2^j..2^(j+1)-1)(4n+7/3)*|3T1_n-3T2_n+T3_n|^2 < infinity. No all-shell tail witness supplied."
+}
