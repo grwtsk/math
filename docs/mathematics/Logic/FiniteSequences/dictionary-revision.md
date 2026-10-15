@@ -53,3 +53,22 @@ from that Python adapter to these definitions remains open.
 
 Human mathematical direction: R.A. Jacob Martone. Formalization assistance:
 OpenAI Codex. Local source is MIT; Mathlib retains upstream credit and licensing.
+
+<!-- BEGIN GENERATED MATHEMATICS TOTALS -->
+
+## Totals
+
+Scope: this object guide and the current bytes of its registered primary source [`GRWTSK/Logic/FiniteSequences/DictionaryRevision.lean`](../../../../GRWTSK/Logic/FiniteSequences/DictionaryRevision.lean).
+
+| Inventory | Total |
+|---|---:|
+| Object guide | 1 |
+| Linked primary source file | 1 |
+| Source declaration commands | 13 |
+| Theorem/lemma commands | 10 |
+
+Theorem/lemma commands are included in declaration commands. These are source syntax counts; compiler-generated declarations and proof acceptance are outside their scope.
+
+[Count definitions](../../../reference/library-pages.md#count-definitions) · [Structured inventory](../../../reference/library-summary.json).
+
+<!-- END GENERATED MATHEMATICS TOTALS -->

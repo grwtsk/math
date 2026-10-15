@@ -108,3 +108,22 @@ construct a total sound zeta height scheme, establish rectangle exclusions
 for both unbounded indices, or supply the existing exact P04 bound. None is
 assumed as an unconditional result. The exact remaining Lean interfaces and
 their quantifiers are recorded in the receipt's declaration census.
+
+<!-- BEGIN GENERATED MATHEMATICS TOTALS -->
+
+## Totals
+
+Scope: this object guide and the current bytes of its registered primary source [`GRWTSK/NumberTheory/Zeta/Riemann/QuadraticTraceCriterion.lean`](../../../../../GRWTSK/NumberTheory/Zeta/Riemann/QuadraticTraceCriterion.lean).
+
+| Inventory | Total |
+|---|---:|
+| Object guide | 1 |
+| Linked primary source file | 1 |
+| Source declaration commands | 3 |
+| Theorem/lemma commands | 2 |
+
+Theorem/lemma commands are included in declaration commands. These are source syntax counts; compiler-generated declarations and proof acceptance are outside their scope.
+
+[Count definitions](../../../../reference/library-pages.md#count-definitions) · [Structured inventory](../../../../reference/library-summary.json).
+
+<!-- END GENERATED MATHEMATICS TOTALS -->

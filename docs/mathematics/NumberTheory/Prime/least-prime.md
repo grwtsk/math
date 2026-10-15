@@ -9,3 +9,22 @@
 **Sources and evidence.** [Original conjunction](../../../../GRWTSK/NumberTheory/FirstPrime.lean), [uniqueness consumer](../../../../GRWTSK/NumberTheory/Prime/LeastPrime.lean), [current selected receipt](../../../../evidence/prime-architecture-checks.json), [retained citation](../../../../evidence/citation-prime.json). Standard axioms are recorded; no `sorryAx` is accepted. Earlier checker failures remain historical.
 
 **Credit.** Mathlib source authors Leonardo de Moura, Jeremy Avigad and Mario Carneiro; Mathlib community, Apache-2.0. Local composition and consumer: R.A. Jacob Martone, with OpenAI Codex assistance, MIT. No mathematical originality or priority claim; earlier elementary historical lineage is not researched here.
+
+<!-- BEGIN GENERATED MATHEMATICS TOTALS -->
+
+## Totals
+
+Scope: this object guide and the current bytes of its registered primary source [`GRWTSK/NumberTheory/Prime/LeastPrime.lean`](../../../../GRWTSK/NumberTheory/Prime/LeastPrime.lean).
+
+| Inventory | Total |
+|---|---:|
+| Object guide | 1 |
+| Linked primary source file | 1 |
+| Source declaration commands | 1 |
+| Theorem/lemma commands | 1 |
+
+Theorem/lemma commands are included in declaration commands. These are source syntax counts; compiler-generated declarations and proof acceptance are outside their scope.
+
+[Count definitions](../../../reference/library-pages.md#count-definitions) · [Structured inventory](../../../reference/library-summary.json).
+
+<!-- END GENERATED MATHEMATICS TOTALS -->

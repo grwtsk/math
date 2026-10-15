@@ -62,3 +62,22 @@ adapted files. Human project direction: R.A. Jacob Martone. Local adaptation
 and checking assistance: OpenAI Codex. Mathlib retains its source authorship
 and Apache-2.0 license. The [integration record](../../../../evidence/LinearAlgebra/Matrix/trace-rank-integration-2026-10-15.json)
 records source pins, contribution roles, search coverage and remaining work.
+
+<!-- BEGIN GENERATED MATHEMATICS TOTALS -->
+
+## Totals
+
+Scope: this object guide and the current bytes of its registered primary source [`GRWTSK/LinearAlgebra/Matrix/TraceRank.lean`](../../../../GRWTSK/LinearAlgebra/Matrix/TraceRank.lean).
+
+| Inventory | Total |
+|---|---:|
+| Object guide | 1 |
+| Linked primary source file | 1 |
+| Source declaration commands | 5 |
+| Theorem/lemma commands | 5 |
+
+Theorem/lemma commands are included in declaration commands. These are source syntax counts; compiler-generated declarations and proof acceptance are outside their scope.
+
+[Count definitions](../../../reference/library-pages.md#count-definitions) · [Structured inventory](../../../reference/library-summary.json).
+
+<!-- END GENERATED MATHEMATICS TOTALS -->

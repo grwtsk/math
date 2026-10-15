@@ -69,3 +69,22 @@ Martone, supplied GRL-RH-1 / 0.4.0 specification. Lean formalization and source
 research assistance: OpenAI Codex. The classical Hermite–Sylvester context
 retains its attribution; no novelty claim is made. Local source is MIT;
 Mathlib retains upstream authorship and Apache-2.0 licensing.
+
+<!-- BEGIN GENERATED MATHEMATICS TOTALS -->
+
+## Totals
+
+Scope: this object guide and the current bytes of its registered primary source [`GRWTSK/Algebra/Polynomial/ConjugateQuartic.lean`](../../../../GRWTSK/Algebra/Polynomial/ConjugateQuartic.lean).
+
+| Inventory | Total |
+|---|---:|
+| Object guide | 1 |
+| Linked primary source file | 1 |
+| Source declaration commands | 16 |
+| Theorem/lemma commands | 10 |
+
+Theorem/lemma commands are included in declaration commands. These are source syntax counts; compiler-generated declarations and proof acceptance are outside their scope.
+
+[Count definitions](../../../reference/library-pages.md#count-definitions) · [Structured inventory](../../../reference/library-summary.json).
+
+<!-- END GENERATED MATHEMATICS TOTALS -->

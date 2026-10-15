@@ -753,3 +753,22 @@ structural checks are NOT_RUN. The mathematics proved in this appendix is
 written, including the two sign-mass divergence arguments. The new uniform
 signed core estimate (PS11), an unconditional native Mertens-log supplier,
 and the terminal RH theorem remain unproved here.
+
+<!-- BEGIN GENERATED MATHEMATICS TOTALS -->
+
+## Totals
+
+Scope: this object guide and the current bytes of its registered primary source [`GRWTSK/NumberTheory/Moebius/PrimitiveIdentification.lean`](../../../../GRWTSK/NumberTheory/Moebius/PrimitiveIdentification.lean).
+
+| Inventory | Total |
+|---|---:|
+| Object guide | 1 |
+| Linked primary source file | 1 |
+| Source declaration commands | 21 |
+| Theorem/lemma commands | 20 |
+
+Theorem/lemma commands are included in declaration commands. These are source syntax counts; compiler-generated declarations and proof acceptance are outside their scope.
+
+[Count definitions](../../../reference/library-pages.md#count-definitions) · [Structured inventory](../../../reference/library-summary.json).
+
+<!-- END GENERATED MATHEMATICS TOTALS -->

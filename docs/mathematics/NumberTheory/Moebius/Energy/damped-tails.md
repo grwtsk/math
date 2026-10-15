@@ -1046,3 +1046,22 @@ owned-declaration auditing were not run because no Lean/Lake executable is
 available here. Full-repository structural checks were not run because only
 a source-bound partial snapshot is available. The preceding 34,163 article
 bytes are preserved exactly and are not promoted to new proof acceptance.
+
+<!-- BEGIN GENERATED MATHEMATICS TOTALS -->
+
+## Totals
+
+Scope: this object guide and the current bytes of its registered primary source [`GRWTSK/NumberTheory/Moebius/WeightedIntegralEnergy.lean`](../../../../../GRWTSK/NumberTheory/Moebius/WeightedIntegralEnergy.lean).
+
+| Inventory | Total |
+|---|---:|
+| Object guide | 1 |
+| Linked primary source file | 1 |
+| Source declaration commands | 31 |
+| Theorem/lemma commands | 19 |
+
+Theorem/lemma commands are included in declaration commands. These are source syntax counts; compiler-generated declarations and proof acceptance are outside their scope.
+
+[Count definitions](../../../../reference/library-pages.md#count-definitions) · [Structured inventory](../../../../reference/library-summary.json).
+
+<!-- END GENERATED MATHEMATICS TOTALS -->

@@ -97,3 +97,22 @@ Human project direction and research materials: R.A. Jacob Martone. Lean
 formalization, source search and implementation assistance: OpenAI Codex.
 Classical source authors retain mathematical credit. Local source is MIT;
 Mathlib retains its authorship and Apache-2.0 license.
+
+<!-- BEGIN GENERATED MATHEMATICS TOTALS -->
+
+## Totals
+
+Scope: this object guide and the current bytes of its registered primary source [`GRWTSK/Algebra/Polynomial/SignedRootTrace.lean`](../../../../GRWTSK/Algebra/Polynomial/SignedRootTrace.lean).
+
+| Inventory | Total |
+|---|---:|
+| Object guide | 1 |
+| Linked primary source file | 1 |
+| Source declaration commands | 8 |
+| Theorem/lemma commands | 6 |
+
+Theorem/lemma commands are included in declaration commands. These are source syntax counts; compiler-generated declarations and proof acceptance are outside their scope.
+
+[Count definitions](../../../reference/library-pages.md#count-definitions) · [Structured inventory](../../../reference/library-summary.json).
+
+<!-- END GENERATED MATHEMATICS TOTALS -->

@@ -829,3 +829,22 @@ $S_X\approx4.86442\mathbin{\cdot}10^{-6}$; the sum of their absolute values
 is about $4.7\mathbin{\cdot}10^3$ times larger.  This finite calculation does
 not prove (15.2), but it rejects termwise absolute bounds as a plausible
 all-scale mechanism for the retained packet.
+
+<!-- BEGIN GENERATED MATHEMATICS TOTALS -->
+
+## Totals
+
+Scope: this object guide and the current bytes of its registered primary source [`GRWTSK/NumberTheory/Moebius/WeightedIntegralEnergy.lean`](../../../../../GRWTSK/NumberTheory/Moebius/WeightedIntegralEnergy.lean).
+
+| Inventory | Total |
+|---|---:|
+| Object guide | 1 |
+| Linked primary source file | 1 |
+| Source declaration commands | 31 |
+| Theorem/lemma commands | 19 |
+
+Theorem/lemma commands are included in declaration commands. These are source syntax counts; compiler-generated declarations and proof acceptance are outside their scope.
+
+[Count definitions](../../../../reference/library-pages.md#count-definitions) · [Structured inventory](../../../../reference/library-summary.json).
+
+<!-- END GENERATED MATHEMATICS TOTALS -->

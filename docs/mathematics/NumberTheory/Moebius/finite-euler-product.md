@@ -33,3 +33,22 @@ Two deliberately changed consumer statements were rejected when reusing the theo
 ## Credit
 
 The proof uses classical finite product expansion and unique prime factorization; no mathematical originality or priority claim is made. Human mathematical direction: R.A. Jacob Martone. Local generalization and Lean formalization assistance: OpenAI Codex. Local source is MIT; Mathlib retains its upstream authorship and Apache-2.0 license.
+
+<!-- BEGIN GENERATED MATHEMATICS TOTALS -->
+
+## Totals
+
+Scope: this object guide and the current bytes of its registered primary source [`GRWTSK/NumberTheory/Moebius/FiniteEulerProduct.lean`](../../../../GRWTSK/NumberTheory/Moebius/FiniteEulerProduct.lean).
+
+| Inventory | Total |
+|---|---:|
+| Object guide | 1 |
+| Linked primary source file | 1 |
+| Source declaration commands | 4 |
+| Theorem/lemma commands | 4 |
+
+Theorem/lemma commands are included in declaration commands. These are source syntax counts; compiler-generated declarations and proof acceptance are outside their scope.
+
+[Count definitions](../../../reference/library-pages.md#count-definitions) · [Structured inventory](../../../reference/library-summary.json).
+
+<!-- END GENERATED MATHEMATICS TOTALS -->

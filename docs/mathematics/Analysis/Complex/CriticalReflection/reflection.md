@@ -25,3 +25,22 @@ The involution follows by simplifying conjugation and subtraction. The counterex
 [Critical reflection](../../../../../GRWTSK/Analysis/Complex/CriticalReflection.lean) and [reflection counterexample](../../../../../GRWTSK/Analysis/Complex/ReflectionCounterexamples.lean). Status: **historical-source-description**. The frozen source qualification covers 10 source owners and 41 owned mathematical declarations under the standard axiom profile. It also checks 39 zeta declarations and 32 guard contracts. Broader consumer acceptance remains incomplete; the Riemann hypothesis and missing arithmetic premises remain open. The old declaration namespace remains for compatibility; the reusable source modules are under complex analysis.
 
 Local direction: R.A. Jacob Martone. Formalization and verification assistance: OpenAI Codex. MIT; historical human/machine authoring split unknown. Lean and Mathlib retain upstream identities, named authors and licenses. No mathematical originality is claimed. [Credit and historical evidence limits](../../../../reference/documentation-history.md).
+
+<!-- BEGIN GENERATED MATHEMATICS TOTALS -->
+
+## Totals
+
+Scope: this object guide and the current bytes of its registered primary source [`GRWTSK/Analysis/Complex/CriticalReflection.lean`](../../../../../GRWTSK/Analysis/Complex/CriticalReflection.lean).
+
+| Inventory | Total |
+|---|---:|
+| Object guide | 1 |
+| Linked primary source file | 1 |
+| Source declaration commands | 2 |
+| Theorem/lemma commands | 1 |
+
+Theorem/lemma commands are included in declaration commands. These are source syntax counts; compiler-generated declarations and proof acceptance are outside their scope.
+
+[Count definitions](../../../../reference/library-pages.md#count-definitions) · [Structured inventory](../../../../reference/library-summary.json).
+
+<!-- END GENERATED MATHEMATICS TOTALS -->
