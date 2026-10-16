@@ -11,8 +11,8 @@
         "bytes": 77783
       },
       ".noeaaeue/documentation/math-layout.json": {
-        "sha256": "b3e64b55f4c16cc92842813373da01b341f103d39e262c691ba0ae9d077ccf3a",
-        "bytes": 3341484
+        "sha256": "0815d036b3cdbeb591794dcb9e210d038ad7f147609116bb709e4b521cf05e17",
+        "bytes": 3342940
       },
       ".noeaaeue/documentation/reference/taxonomy/tree-policy-v1.json": {
         "sha256": "c56558d595cf9627d2c4e5583a0bb04472eff8153e4880a86ac6ba6490273c46",
@@ -25,18 +25,18 @@
     },
     "entrypoint": {
       "path": "GRWTSK.lean",
-      "sha256": "44e183a171c933e0635d85b0316dd37f88667640c1b4acdde90fd759b506a106",
-      "bytes": 26350,
+      "sha256": "79b42ec3fc844aee565bc901d2221974f097c73fde2070342eda110c3f46e205",
+      "bytes": 26397,
       "physical_role": "library",
       "source_role": "library",
       "qualified_role_alias": null
     },
-    "source_count": 871,
+    "source_count": 878,
     "sources": [
       {
         "path": "GRWTSK.lean",
-        "sha256": "44e183a171c933e0635d85b0316dd37f88667640c1b4acdde90fd759b506a106",
-        "bytes": 26350,
+        "sha256": "79b42ec3fc844aee565bc901d2221974f097c73fde2070342eda110c3f46e205",
+        "bytes": 26397,
         "physical_role": "library",
         "source_role": "library",
         "qualified_role_alias": null,
@@ -11867,6 +11867,46 @@
         }
       },
       {
+        "path": "GRWTSK/Analysis/Fourier/Checks/Negative/LargerSliceMissingMargin.lean",
+        "sha256": "340a90e04188051a1288aa83b54315b4009cdc79b7c8a40da18a5744698fb376",
+        "bytes": 993,
+        "physical_role": "negative-control",
+        "source_role": "negative-control",
+        "qualified_role_alias": null,
+        "source_set": "active",
+        "classification_reason": "subject-local-validation-source",
+        "historical_intake_binding": null,
+        "historical_catalog_binding": null,
+        "proof_status": "not-replayed",
+        "mathematical_admission": false,
+        "public_release_eligible": false,
+        "runner": {
+          "kind": "source-role-only-not-executed",
+          "expected_outcome": "reject",
+          "command_contract": "lake env lean --trust=0 -DwarningAsError=true <source>"
+        }
+      },
+      {
+        "path": "GRWTSK/Analysis/Fourier/Checks/Negative/LargerSliceMissingPositiveSample.lean",
+        "sha256": "5baa48827886f4f57d3af3ceba74dd2e2c6042d54a6f1adcb9411d6c39766266",
+        "bytes": 995,
+        "physical_role": "negative-control",
+        "source_role": "negative-control",
+        "qualified_role_alias": null,
+        "source_set": "active",
+        "classification_reason": "subject-local-validation-source",
+        "historical_intake_binding": null,
+        "historical_catalog_binding": null,
+        "proof_status": "not-replayed",
+        "mathematical_admission": false,
+        "public_release_eligible": false,
+        "runner": {
+          "kind": "source-role-only-not-executed",
+          "expected_outcome": "reject",
+          "command_contract": "lake env lean --trust=0 -DwarningAsError=true <source>"
+        }
+      },
+      {
         "path": "GRWTSK/Analysis/Fourier/Checks/Negative/MissingReturn.lean",
         "sha256": "2a5504aaa73f08720c870999ce5444afe59aaa67af1219732afa6722d6140563",
         "bytes": 421,
@@ -12088,6 +12128,26 @@
         "runner": {
           "kind": "source-role-only-not-executed",
           "expected_outcome": "reject",
+          "command_contract": "lake env lean --trust=0 -DwarningAsError=true <source>"
+        }
+      },
+      {
+        "path": "GRWTSK/Analysis/Fourier/Checks/Positive/LargerSliceAntiConcentration.lean",
+        "sha256": "7ebd91795eb8fb1a176c41495aa91fc465f95bfd5d6358c1da7d652a477470f8",
+        "bytes": 5706,
+        "physical_role": "positive-check",
+        "source_role": "positive-check",
+        "qualified_role_alias": null,
+        "source_set": "active",
+        "classification_reason": "subject-local-validation-source",
+        "historical_intake_binding": null,
+        "historical_catalog_binding": null,
+        "proof_status": "not-replayed",
+        "mathematical_admission": false,
+        "public_release_eligible": false,
+        "runner": {
+          "kind": "source-role-only-not-executed",
+          "expected_outcome": "compile",
           "command_contract": "lake env lean --trust=0 -DwarningAsError=true <source>"
         }
       },
@@ -15302,6 +15362,51 @@
             "source_sha256": "7a45f532becf96acf98301a64c2eab4439e3923ad1e6434229860a0909074fb1"
           }
         },
+        "proof_status": "not-replayed",
+        "mathematical_admission": false,
+        "public_release_eligible": false
+      },
+      {
+        "path": "GRWTSK/Analysis/Fourier/ZModLargerSlice.lean",
+        "sha256": "ce0cef36c53052f9f014f0928e6038cd78febda91fe29bd107f23fdafa943a39",
+        "bytes": 9525,
+        "physical_role": "library",
+        "source_role": "library",
+        "qualified_role_alias": null,
+        "source_set": "active",
+        "classification_reason": "entrypoint-library-source",
+        "historical_intake_binding": null,
+        "historical_catalog_binding": null,
+        "proof_status": "not-replayed",
+        "mathematical_admission": false,
+        "public_release_eligible": false
+      },
+      {
+        "path": "GRWTSK/Analysis/Fourier/ZModLargerSliceBounds.lean",
+        "sha256": "b2a19420111290d3897cf53b8493a6ec3e998c3b78f016fce8b855d238d4f380",
+        "bytes": 11635,
+        "physical_role": "library",
+        "source_role": "library",
+        "qualified_role_alias": null,
+        "source_set": "active",
+        "classification_reason": "entrypoint-library-source",
+        "historical_intake_binding": null,
+        "historical_catalog_binding": null,
+        "proof_status": "not-replayed",
+        "mathematical_admission": false,
+        "public_release_eligible": false
+      },
+      {
+        "path": "GRWTSK/Analysis/Fourier/ZModLargerSliceParameters.lean",
+        "sha256": "e420c03572f3214d7438834d4eaeac69ca3b56d803014d861819e5f2b7fb090e",
+        "bytes": 11370,
+        "physical_role": "library",
+        "source_role": "library",
+        "qualified_role_alias": null,
+        "source_set": "active",
+        "classification_reason": "entrypoint-library-source",
+        "historical_intake_binding": null,
+        "historical_catalog_binding": null,
         "proof_status": "not-replayed",
         "mathematical_admission": false,
         "public_release_eligible": false
@@ -44052,6 +44157,21 @@
             "source_sha256": "b5053ed826ac19979142b7c908b35cee2b7e97ba07d4a4bdaef26cf62a6f5409"
           }
         },
+        "proof_status": "not-replayed",
+        "mathematical_admission": false,
+        "public_release_eligible": false
+      },
+      {
+        "path": "GRWTSK/Combinatorics/Sequences/FixedSizeSubsetExposure.lean",
+        "sha256": "f23c62d8129b4458caf159eb2f0936bfc593de3dc658669d3ac5d79d21769f9b",
+        "bytes": 17632,
+        "physical_role": "library",
+        "source_role": "library",
+        "qualified_role_alias": null,
+        "source_set": "active",
+        "classification_reason": "entrypoint-library-source",
+        "historical_intake_binding": null,
+        "historical_catalog_binding": null,
         "proof_status": "not-replayed",
         "mathematical_admission": false,
         "public_release_eligible": false
@@ -90823,6 +90943,9 @@
       "GRWTSK.Analysis.Fourier.ZModConcentratedFrequencies",
       "GRWTSK.Analysis.Fourier.ZModExpectedLayers",
       "GRWTSK.Analysis.Fourier.ZModIndependentSelection",
+      "GRWTSK.Analysis.Fourier.ZModLargerSlice",
+      "GRWTSK.Analysis.Fourier.ZModLargerSliceBounds",
+      "GRWTSK.Analysis.Fourier.ZModLargerSliceParameters",
       "GRWTSK.Analysis.Fourier.ZModPartitionConcentration",
       "GRWTSK.Analysis.Fourier.ZModPartitionEnergy",
       "GRWTSK.Analysis.Fourier.ZModSmallEnergySets",
@@ -90946,6 +91069,7 @@
       "GRWTSK.Combinatorics.Sequences.ConditionalPartitionExposure",
       "GRWTSK.Combinatorics.Sequences.CyclicSumsetGrowth",
       "GRWTSK.Combinatorics.Sequences.DisjointTranspositions",
+      "GRWTSK.Combinatorics.Sequences.FixedSizeSubsetExposure",
       "GRWTSK.Combinatorics.Sequences.HypergeometricLowerTail",
       "GRWTSK.Combinatorics.Sequences.PartialSumCertificate",
       "GRWTSK.Combinatorics.Sequences.PartialSumOrdering",
@@ -91186,6 +91310,13 @@
     ],
     "historical_findings": [
       {
+        "path": "GRWTSK.lean",
+        "code": "historical-catalog-source-hash-stale",
+        "historical_sha256": "44e183a171c933e0635d85b0316dd37f88667640c1b4acdde90fd759b506a106",
+        "observed_sha256": "79b42ec3fc844aee565bc901d2221974f097c73fde2070342eda110c3f46e205",
+        "acceptance_inherited": false
+      },
+      {
         "path": "GRWTSK/Algebra/BigOperators/OrderedSquare.lean",
         "code": "historical-catalog-source-hash-stale",
         "historical_sha256": "8484616dda2d4290a16aa53d1515a87ace9a4891f70006a4885069e81308e883",
@@ -91341,12 +91472,27 @@
         "acceptance_inherited": false
       },
       {
+        "path": "GRWTSK/Analysis/Fourier/Checks/Negative/LargerSliceMissingMargin.lean",
+        "code": "absent-from-historical-source-catalog",
+        "acceptance_inherited": false
+      },
+      {
+        "path": "GRWTSK/Analysis/Fourier/Checks/Negative/LargerSliceMissingPositiveSample.lean",
+        "code": "absent-from-historical-source-catalog",
+        "acceptance_inherited": false
+      },
+      {
         "path": "GRWTSK/Analysis/Fourier/Checks/Negative/SubsetAntiConcentrationMissingPrime.lean",
         "code": "absent-from-historical-source-catalog",
         "acceptance_inherited": false
       },
       {
         "path": "GRWTSK/Analysis/Fourier/Checks/Negative/SubsetAntiConcentrationMissingRange.lean",
+        "code": "absent-from-historical-source-catalog",
+        "acceptance_inherited": false
+      },
+      {
+        "path": "GRWTSK/Analysis/Fourier/Checks/Positive/LargerSliceAntiConcentration.lean",
         "code": "absent-from-historical-source-catalog",
         "acceptance_inherited": false
       },
@@ -91383,6 +91529,21 @@
       },
       {
         "path": "GRWTSK/Analysis/Fourier/ZModExpectedLayers.lean",
+        "code": "absent-from-historical-source-catalog",
+        "acceptance_inherited": false
+      },
+      {
+        "path": "GRWTSK/Analysis/Fourier/ZModLargerSlice.lean",
+        "code": "absent-from-historical-source-catalog",
+        "acceptance_inherited": false
+      },
+      {
+        "path": "GRWTSK/Analysis/Fourier/ZModLargerSliceBounds.lean",
+        "code": "absent-from-historical-source-catalog",
+        "acceptance_inherited": false
+      },
+      {
+        "path": "GRWTSK/Analysis/Fourier/ZModLargerSliceParameters.lean",
         "code": "absent-from-historical-source-catalog",
         "acceptance_inherited": false
       },
@@ -91536,6 +91697,11 @@
       },
       {
         "path": "GRWTSK/Combinatorics/Sequences/ConditionalPartitionExposure.lean",
+        "code": "absent-from-historical-source-catalog",
+        "acceptance_inherited": false
+      },
+      {
+        "path": "GRWTSK/Combinatorics/Sequences/FixedSizeSubsetExposure.lean",
         "code": "absent-from-historical-source-catalog",
         "acceptance_inherited": false
       },
@@ -101170,5 +101336,5 @@
       ]
     }
   },
-  "identity": "61df5292d39da000be4d97d49b47bce428cbdfd8b7b6e5ff89e60a093783e7b4"
+  "identity": "20d22365fdcecde85ba5b67460cfc79153aa6d6c3dd8a6ac8e253f79a12939cf"
 }

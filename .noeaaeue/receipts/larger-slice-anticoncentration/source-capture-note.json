@@ -1,0 +1,11 @@
+{
+  "schema": "larger-slice-source-capture-note-v1",
+  "captured_by": "Formalize RH results in Lean",
+  "cache_revision": "ecefbe78491e1bc142a3e80aa8cf68202a2ae9bf60837942a113b4eafc6bc728",
+  "head_observed": "b558869a97fcbc346ce5cc0f1a28119d26abd6ba",
+  "lean_sources": 875,
+  "captured_files": 886,
+  "source_hold_released": true,
+  "mathematical_acceptance": false,
+  "scope": "Initial candidate bytes only; subsequent proof repairs deliberately stale this observation. Cache ref changes belong to the concurrent RH chat and are excluded from this mathematical commit."
+}

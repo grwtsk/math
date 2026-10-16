@@ -4,16 +4,16 @@
 
 | Inventory | Count |
 |---|---:|
-| Object guides | 42 |
+| Object guides | 43 |
 | Documented object groups | 18 |
-| Distinct primary sources linked | 42 |
-| Lean source modules | 318 |
+| Distinct primary sources linked | 43 |
+| Lean source modules | 324 |
 | Archive intake records | 39 |
 | Selected catalog families | 1 |
 
 These counts measure documentation and source coverage. They do not count accepted theorems or establish that every source module is documented or checked. [Definitions and limits](../../reference/library-pages.md#count-definitions).
 
-At least 1943 source declaration commands, including 1594 theorem/lemma commands, across 267 parsed Lean source modules; 51 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
+At least 1989 source declaration commands, including 1634 theorem/lemma commands, across 273 parsed Lean source modules; 51 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
 
 ## Asymptotics
 
@@ -58,14 +58,15 @@ Linked primary-source scope: 11 source declaration commands, including 9 theorem
 
 ## Fourier
 
-4 object guides · 4 distinct linked primary source files.
+5 object guides · 5 distinct linked primary source files.
 
-Linked primary-source scope: At least 56 source declaration commands, including 44 theorem/lemma commands, across 3 parsed Lean source modules; 1 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
+Linked primary-source scope: At least 61 source declaration commands, including 49 theorem/lemma commands, across 4 parsed Lean source modules; 1 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
 
 - [Character energy of balanced random partitions](Fourier/partition-character-energy.md).
 - [Finite subset sum laws and Fourier inversion](Fourier/subset-sum-laws.md).
 - [Fixed-size subset sum anti-concentration](Fourier/subset-sum-anticoncentration.md).
 - [Fourier moments from Schwartz derivative seminorms](Fourier/schwartz-moments.md).
+- [Larger-slice subset sum anti-concentration](Fourier/larger-slice-anticoncentration.md).
 
 ## Fourier / FiniteAdditiveProjector
 

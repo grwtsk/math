@@ -1,0 +1,48 @@
+{
+  "schema": "larger-slice-native-receipt-archives-v1",
+  "application_replay": "running; later final index records actual result",
+  "receipts": [
+    {
+      "kind": "public",
+      "original": ".noeaaeue/.local/math-trust/20261016T094325Z-e250254225/receipt.json",
+      "lossless_archive": ".noeaaeue/receipts/larger-slice-anticoncentration/native/public-receipt.json.zlib",
+      "raw_sha256": "f03a78461181eae1bbbe22cafa12f0abe25bb57521a3d3aecb0a09bb58d506de",
+      "raw_bytes": 25359737,
+      "archive_sha256": "6225d3c7d87b7db7d048370692f1a9717c7c099f977e593ff3d4f67f26aeb69c",
+      "archive_bytes": 2501737,
+      "status": "ALL_PROJECT_SOURCE_AND_AXIOM_CHECKS_PASSED",
+      "kernel_checked": null,
+      "source_count": 451,
+      "declaration_count": 12257,
+      "scope": "Actual driver receipt bytes, losslessly retained. Compression is transport, not mathematical validation."
+    },
+    {
+      "kind": "self-test",
+      "original": ".noeaaeue/.local/math-trust/20261016T094308Z-654e277fdc/receipt.json",
+      "lossless_archive": ".noeaaeue/receipts/larger-slice-anticoncentration/native/self-test-receipt.json.zlib",
+      "raw_sha256": "53783ef69cf0da0fa7cc46669370a0dc1e0c287f8bd6f50b7b4210ad53554622",
+      "raw_bytes": 32311,
+      "archive_sha256": "bce30e3847e197a0f364f3a804f81d3eccefa00b1fb3db832909d38f57ce034d",
+      "archive_bytes": 4233,
+      "status": "LEAN_AUDIT_SELF_TEST_PASSED",
+      "kernel_checked": null,
+      "source_count": null,
+      "declaration_count": null,
+      "scope": "Actual driver receipt bytes, losslessly retained. Compression is transport, not mathematical validation."
+    },
+    {
+      "kind": "input-validation",
+      "original": ".noeaaeue/.local/checks/moebius-response-20261016T094235Z-5387209c7d21/receipt.json",
+      "lossless_archive": ".noeaaeue/receipts/larger-slice-anticoncentration/native/input-validation-receipt.json.zlib",
+      "raw_sha256": "cbf56a83b7177014b95b7bab32ec288061ddd620db0267a8c17678b7ad82d99d",
+      "raw_bytes": 1988246,
+      "archive_sha256": "25fee31f73451122fe94fff2580681ccb3981831517991290c8aa22477c1817e",
+      "archive_bytes": 260810,
+      "status": "inputs-validated",
+      "kernel_checked": false,
+      "source_count": null,
+      "declaration_count": null,
+      "scope": "Actual driver receipt bytes, losslessly retained. Compression is transport, not mathematical validation."
+    }
+  ]
+}

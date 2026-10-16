@@ -1,0 +1,26 @@
+GRWTSK/Analysis/Fourier/ZModLargerSlice.lean:40:41: error: unsolved goals
+case e'_2
+p : ℕ
+inst✝ : NeZero p
+S : Finset (ZMod p)
+a b : ℕ
+hab : a + b ≤ S.card
+z : ZMod p
+⊢ ↑{R ∈ Finset.powersetCard (a + b) S | ∑ x ∈ R, x = z}.card / ↑(Finset.powersetCard (a + b) S).card =
+    ↑{R ∈ Finset.powersetCard (a + b) S | ∑ x ∈ R, x = z}.card / ↑(Finset.powersetCard (a + b) S).card
+
+case e'_3
+p : ℕ
+inst✝ : NeZero p
+S : Finset (ZMod p)
+a b : ℕ
+hab : a + b ≤ S.card
+z : ZMod p
+⊢ (∑ x ∈ Finset.powersetCard a S,
+        ↑{R ∈ Finset.powersetCard b (S \ x) | ∑ x ∈ R, x = z - ∑ x ∈ x, x}.card /
+          ↑(Finset.powersetCard b (S \ x)).card) /
+      ↑(Finset.powersetCard a S).card =
+    (∑ A ∈ Finset.powersetCard a S,
+        ↑{B ∈ Finset.powersetCard b (S \ A) | ∑ x ∈ B, x = z - ∑ x ∈ A, x}.card /
+          ↑(Finset.powersetCard b (S \ A)).card) /
+      ↑(Finset.powersetCard a S).card

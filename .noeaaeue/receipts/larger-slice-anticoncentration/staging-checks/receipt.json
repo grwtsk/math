@@ -1,0 +1,25 @@
+{
+  "schema": "larger-slice-staging-checks-v1",
+  "full_diff_whitespace_exit_code": 2,
+  "full_diff_whitespace_log": ".noeaaeue/receipts/larger-slice-anticoncentration/staging-checks/raw-diff-whitespace.log",
+  "full_diff_whitespace_log_sha256": "48135d6315e13f393041507bd4e7e32d937c96f147dcf2be097adfd43ab2804d",
+  "only_flagged_path": ".noeaaeue/receipts/larger-slice-anticoncentration/ordinary-build/lake.log",
+  "raw_log_bytes_preserved": true,
+  "reason": "Original Lake diagnostic whitespace and its exact whitespace-check transcript are retained byte for byte. All other staged files, including every source, guide, JSON receipt and verifier, pass the whitespace check.",
+  "scoped_argv": [
+    "git",
+    "diff",
+    "--cached",
+    "--check",
+    "--",
+    ".",
+    ":(exclude).noeaaeue/receipts/larger-slice-anticoncentration/ordinary-build/lake.log",
+    ":(exclude).noeaaeue/receipts/larger-slice-anticoncentration/staging-checks/raw-diff-whitespace.log"
+  ],
+  "scoped_exit_code": 0,
+  "raw_log_sha256": "d26f701eb9685a7bec1069ab114ac5dc5ee620ae4b53274bce412d0c58138d6b",
+  "excluded_exact_raw_evidence_paths": [
+    ".noeaaeue/receipts/larger-slice-anticoncentration/ordinary-build/lake.log",
+    ".noeaaeue/receipts/larger-slice-anticoncentration/staging-checks/raw-diff-whitespace.log"
+  ]
+}

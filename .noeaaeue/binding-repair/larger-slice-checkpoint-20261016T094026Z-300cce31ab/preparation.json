@@ -1,0 +1,37 @@
+{
+  "schema": "larger-slice-checkpoint-preparation-v1",
+  "head": "8913a0a303962e0d202f9d69ce1fe5eedf70ff34",
+  "archives": [
+    {
+      "source": ".noeaaeue/bindings/current-source-observations.json",
+      "archive": ".noeaaeue/binding-repair/larger-slice-checkpoint-20261016T094026Z-300cce31ab/current-source-observations.previous.json",
+      "sha256": "e318f3661a592f775b564a8b347d772707e4d4719970ab54ca9078c7a673da08",
+      "bytes": 5002036
+    },
+    {
+      "source": "docs/reference/math-source-catalog.json",
+      "archive": ".noeaaeue/binding-repair/larger-slice-checkpoint-20261016T094026Z-300cce31ab/math-source-catalog.previous.json",
+      "sha256": "4abfa8daa74c7abc8777c33e7b3d53f5dd97c6e6ad079dd6f8da312dc11767b2",
+      "bytes": 3502849
+    },
+    {
+      "source": ".noeaaeue/bindings/moebius-current-inputs-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe.json",
+      "archive": ".noeaaeue/binding-repair/larger-slice-checkpoint-20261016T094026Z-300cce31ab/moebius-current-inputs.previous.json",
+      "sha256": "01d71938a74e3184c2ddf93d9aea0576337f803835bcbfa338dd575908a879cb",
+      "bytes": 225812
+    }
+  ],
+  "new_observation": ".noeaaeue/binding-repair/larger-slice-checkpoint-20261016T094026Z-300cce31ab/current-source-observations.new.json",
+  "new_contract": ".noeaaeue/bindings/moebius-current-inputs-larger-slice-20261016T094026Z-300cce31ab.json",
+  "producer": {
+    "argv": [
+      "python3",
+      "-B",
+      ".noeaaeue/scripts/source_observations.py",
+      "--output",
+      ".noeaaeue/binding-repair/larger-slice-checkpoint-20261016T094026Z-300cce31ab/current-source-observations.new.json"
+    ],
+    "exit_code": 0
+  },
+  "scope": "Fresh unaccepted observation proposed; not installed or accepted until review. Historical source and verification pins unchanged."
+}

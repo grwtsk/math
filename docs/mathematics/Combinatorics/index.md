@@ -4,16 +4,16 @@
 
 | Inventory | Count |
 |---|---:|
-| Object guides | 24 |
+| Object guides | 25 |
 | Documented object groups | 2 |
-| Distinct primary sources linked | 23 |
-| Lean source modules | 76 |
+| Distinct primary sources linked | 24 |
+| Lean source modules | 77 |
 | Archive intake records | 0 |
 | Selected catalog families | 1 |
 
 These counts measure documentation and source coverage. They do not count accepted theorems or establish that every source module is documented or checked. [Definitions and limits](../../reference/library-pages.md#count-definitions).
 
-1368 source declaration commands, including 836 theorem/lemma commands, across 76 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+1391 source declaration commands, including 856 theorem/lemma commands, across 77 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
 ## DirectedGraph
 
@@ -43,11 +43,12 @@ Linked primary-source scope: 437 source declaration commands, including 299 theo
 
 ## Sequences
 
-5 object guides · 4 distinct linked primary source files.
+6 object guides · 5 distinct linked primary source files.
 
-Linked primary-source scope: 118 source declaration commands, including 71 theorem/lemma commands, across 4 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+Linked primary-source scope: 141 source declaration commands, including 91 theorem/lemma commands, across 5 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
 - [Balanced partitions and uniform subset sampling](Sequences/balanced-partition-sampling.md).
+- [Conditional exposure of fixed-size subsets](Sequences/fixed-size-subset-exposure.md).
 - [Conditional part exposure and finite sampling tails](Sequences/conditional-partition-exposure.md).
 - [Coverage and discrete quotas](Sequences/coverage-and-quotas.md).
 - [Integer quota allocation and discrepancy](Sequences/quotas.md).

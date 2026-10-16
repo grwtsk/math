@@ -1,0 +1,189 @@
+Math layout: FAIL (451 library modules, 187 findings).
+.noeaaeue/bindings/current-source-observations.json: invalid-current-source-observations: current source observation membership omission or drift
+.noeaaeue/documentation/math-layout.json: candidate-catalog-intake-mismatch: candidate catalog lacks its exact intake binding
+.noeaaeue/documentation/reference/taxonomy/tree-policy-v1.json: invalid-taxonomy-tree-policy: taxonomy metadata must use the explicit external locations
+GRWTSK/Algebra/BigOperators/OrderedSquare.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/Algebra/BigOperators/QuadraticCounterexample.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/Algebra/OrderedProduct.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/Algebra/OrderedProduct/Conjugation/Checks/Negative/StrongerGroup.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/Algebra/Ring/FourTermDecomposition.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/Analysis/Asymptotics/DisjointPrimeChainBounds.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/Analysis/Asymptotics/DyadicNormBudget.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/Analysis/Asymptotics/ExponentialRecurrence.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/Analysis/Asymptotics/FixedWidthEnergyBoundEquivalence.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/Analysis/Asymptotics/LogarithmicGrowth.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/Analysis/Asymptotics/LogarithmicGrowth.lean: candidate-source-byte-drift: candidate bytes do not match source-intake SHA-256
+GRWTSK/Analysis/Asymptotics/LogarithmicGrowth.lean: candidate-source-size-drift: candidate byte count does not match source intake
+GRWTSK/Analysis/Asymptotics/LogarithmicGrowth.lean: stale-candidate-catalog-hash: candidate catalog hash does not bind current bytes
+GRWTSK/Analysis/Asymptotics/LogarithmicGrowth.lean: stale-candidate-catalog-size: candidate catalog size does not bind current bytes
+GRWTSK/Analysis/Asymptotics/MassWeightedRecurrence.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/Analysis/Asymptotics/PolynomialClosure.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/Analysis/Asymptotics/PolynomialErrorBound.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/Analysis/Asymptotics/PolynomialSubexponential.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/Analysis/Asymptotics/PrimeMassPotentialBounds.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/Analysis/Asymptotics/SelectedPrimeChainBounds.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/Analysis/Asymptotics/SignedEnergyDecomposition.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/Analysis/Asymptotics/SquareRootResidualIteration.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/Analysis/Asymptotics/SublinearDyadic.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/Analysis/Asymptotics/SublinearDyadic.lean: candidate-source-byte-drift: candidate bytes do not match source-intake SHA-256
+GRWTSK/Analysis/Asymptotics/SublinearDyadic.lean: candidate-source-size-drift: candidate byte count does not match source intake
+GRWTSK/Analysis/Asymptotics/SublinearDyadic.lean: stale-candidate-catalog-hash: candidate catalog hash does not bind current bytes
+GRWTSK/Analysis/Asymptotics/SublinearDyadic.lean: stale-candidate-catalog-size: candidate catalog size does not bind current bytes
+GRWTSK/Analysis/Calculus/LogarithmicResponseDerivatives.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/Analysis/Complex/AnalyticLinearODE.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/Analysis/Complex/CriticalReflection.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources
+GRWTSK/Analysis/Complex/PositiveHalfPlane.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources
+GRWTSK/Analysis/Complex/ReflectionCounterexamples.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources
+GRWTSK/Analysis/Energy/Checks/Declarations.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/Analysis/FiniteSum/DyadicVariance.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/Analysis/FiniteSum/TentReadout.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/Analysis/FiniteSum/ThresholdEnergy.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/Analysis/FiniteSum/WeightedCellRefinement.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/Analysis/Fourier/Checks/Negative/SubsetAntiConcentrationMissingPrime.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources
+GRWTSK/Analysis/Fourier/Checks/Negative/SubsetAntiConcentrationMissingRange.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources
+GRWTSK/Analysis/Fourier/Checks/Positive/SubsetAntiConcentration.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources
+GRWTSK/Analysis/Fourier/IntegerSeries.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/Analysis/Fourier/Parseval.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/Analysis/Fourier/PrimePhaseLargeValueAdapter.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/Analysis/Fourier/WindowCertificates.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/Analysis/Fourier/ZModBalancedExpectedLayers.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources
+GRWTSK/Analysis/Fourier/ZModExpectedLayers.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources
+GRWTSK/Analysis/Fourier/ZModLargerSlice.lean: library-module-outside-public-closure [GRWTSK.Analysis.Fourier.ZModLargerSlice]: library module is not reachable from GRWTSK.lean
+GRWTSK/Analysis/Fourier/ZModLargerSlice.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources
+GRWTSK/Analysis/Fourier/ZModLargerSliceBounds.lean: library-module-outside-public-closure [GRWTSK.Analysis.Fourier.ZModLargerSliceBounds]: library module is not reachable from GRWTSK.lean
+GRWTSK/Analysis/Fourier/ZModLargerSliceBounds.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources
+GRWTSK/Analysis/Fourier/ZModLargerSliceParameters.lean: library-module-outside-public-closure [GRWTSK.Analysis.Fourier.ZModLargerSliceParameters]: library module is not reachable from GRWTSK.lean
+GRWTSK/Analysis/Fourier/ZModLargerSliceParameters.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources
+GRWTSK/Analysis/Fourier/ZModPartitionConcentration.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources
+GRWTSK/Analysis/GreenKernel/TailAugmentation.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/Analysis/GreenKernel/UnitInterval.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/Analysis/Inequalities/AdaptiveResidualBudget.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/Analysis/Inequalities/CenteredCubicMoment.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/Analysis/Inequalities/CenteredCubicMoment.lean: candidate-source-byte-drift: candidate bytes do not match source-intake SHA-256
+GRWTSK/Analysis/Inequalities/CenteredCubicMoment.lean: candidate-source-size-drift: candidate byte count does not match source intake
+GRWTSK/Analysis/Inequalities/CenteredCubicMoment.lean: stale-candidate-catalog-hash: candidate catalog hash does not bind current bytes
+GRWTSK/Analysis/Inequalities/CenteredCubicMoment.lean: stale-candidate-catalog-size: candidate catalog size does not bind current bytes
+GRWTSK/Analysis/Inequalities/ExponentialDiagonal.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/Analysis/Inequalities/ResidualEnclosure.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/Analysis/Inequalities/ResidualGrowthComparison.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/Analysis/Inequalities/ResidualGrowthComparison.lean: candidate-source-byte-drift: candidate bytes do not match source-intake SHA-256
+GRWTSK/Analysis/Inequalities/ResidualGrowthComparison.lean: candidate-source-size-drift: candidate byte count does not match source intake
+GRWTSK/Analysis/Inequalities/ResidualGrowthComparison.lean: stale-candidate-catalog-hash: candidate catalog hash does not bind current bytes
+GRWTSK/Analysis/Inequalities/ResidualGrowthComparison.lean: stale-candidate-catalog-size: candidate catalog size does not bind current bytes
+GRWTSK/Analysis/Inequalities/SquaredNormBudget.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/Analysis/Inequalities/SquaredNormErrorBounds.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/Analysis/Inequalities/SquaredSumBounds.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/Analysis/Inequalities/TriangularBlock.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/Analysis/Inequalities/TwoHeightEnclosures.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/Analysis/InnerProductSpace/HankelGramBounds.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/Analysis/InnerProductSpace/HankelGramBounds.lean: candidate-source-byte-drift: candidate bytes do not match source-intake SHA-256
+GRWTSK/Analysis/InnerProductSpace/HankelGramBounds.lean: candidate-source-size-drift: candidate byte count does not match source intake
+GRWTSK/Analysis/InnerProductSpace/HankelGramBounds.lean: stale-candidate-catalog-hash: candidate catalog hash does not bind current bytes
+GRWTSK/Analysis/InnerProductSpace/HankelGramBounds.lean: stale-candidate-catalog-size: candidate catalog size does not bind current bytes
+GRWTSK/Analysis/InnerProductSpace/LogarithmicCharacterGramBounds.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/Analysis/InnerProductSpace/SignedWindowPacketCertificates.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/Analysis/InnerProductSpace/SignedWindowRootBounds.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/Analysis/InnerProductSpace/VariationalResidual.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/Analysis/InnerProductSpace/WeightedSchurBounds.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/Analysis/Integration/AffineWeightedTransport.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/Analysis/Integration/QuadraticReadoutBound.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/Analysis/Integration/QuadraticRootTransport.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/Analysis/Integration/QuadraticRootTransport.lean: candidate-source-byte-drift: candidate bytes do not match source-intake SHA-256
+GRWTSK/Analysis/Integration/QuadraticRootTransport.lean: candidate-source-size-drift: candidate byte count does not match source intake
+GRWTSK/Analysis/Integration/QuadraticRootTransport.lean: stale-candidate-catalog-hash: candidate catalog hash does not bind current bytes
+GRWTSK/Analysis/Integration/QuadraticRootTransport.lean: stale-candidate-catalog-size: candidate catalog size does not bind current bytes
+GRWTSK/Analysis/Integration/UnitIntervalPrimitives.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/Analysis/LaplaceTransform/Analytic.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/Analysis/LaplaceTransform/ExponentialEnergy.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources
+GRWTSK/Analysis/LaplaceTransform/ExponentialThreshold.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/Analysis/LaplaceTransform/PolynomialEnergy.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/Analysis/LaplaceTransform/PolynomialEnergyHolomorphy.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/Analysis/MellinTransform/DyadicBounds.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/Analysis/MellinTransform/DyadicIntegralSeries.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/Analysis/MellinTransform/PositiveCoordinates.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/Analysis/NormedSpace/IntertwiningResidual.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/Analysis/NormedSpace/NormTransport.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/Analysis/NormedSpace/QuadraticError.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/Analysis/NormedSpace/SimilarityReconstruction.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/Analysis/NormedSpace/SimilarityReconstruction.lean: candidate-source-byte-drift: candidate bytes do not match source-intake SHA-256
+GRWTSK/Analysis/NormedSpace/SimilarityReconstruction.lean: candidate-source-size-drift: candidate byte count does not match source intake
+GRWTSK/Analysis/NormedSpace/SimilarityReconstruction.lean: stale-candidate-catalog-hash: candidate catalog hash does not bind current bytes
+GRWTSK/Analysis/NormedSpace/SimilarityReconstruction.lean: stale-candidate-catalog-size: candidate catalog size does not bind current bytes
+GRWTSK/Analysis/Resolvent/ScreenAlgebra.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/Analysis/Resolvent/ScreenBudget.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/Analysis/Series/DyadicPartition.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/Analysis/Spectral/LowMassSpecifications.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/Analysis/Spectral/TwoHeightMoments.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/Combinatorics/Sequences/BalancedPartitionTails.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources
+GRWTSK/Combinatorics/Sequences/ConditionalPartitionExposure.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources
+GRWTSK/Combinatorics/Sequences/FixedSizeSubsetExposure.lean: library-module-outside-public-closure [GRWTSK.Combinatorics.Sequences.FixedSizeSubsetExposure]: library module is not reachable from GRWTSK.lean
+GRWTSK/Combinatorics/Sequences/FixedSizeSubsetExposure.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources
+GRWTSK/Combinatorics/Sequences/HypergeometricLowerTail.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources
+GRWTSK/Combinatorics/Sequences/PartitionExposureChecks.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources
+GRWTSK/Combinatorics/Sequences/QuotaDiscrepancy.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/DynamicalSystems/TransitionSystems/BudgetResetCounterexamples.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/LinearAlgebra/AlmostMathieu.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/LinearAlgebra/CocycleProduct.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/LinearAlgebra/CommonJ.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/LinearAlgebra/Matrix/HermitianCounterexamples.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources
+GRWTSK/LinearAlgebra/Matrix/ToeplitzHankel.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/LinearAlgebra/Matrix/ToeplitzHankel.lean: candidate-source-byte-drift: candidate bytes do not match source-intake SHA-256
+GRWTSK/LinearAlgebra/Matrix/ToeplitzHankel.lean: candidate-source-size-drift: candidate byte count does not match source intake
+GRWTSK/LinearAlgebra/Matrix/ToeplitzHankel.lean: stale-candidate-catalog-hash: candidate catalog hash does not bind current bytes
+GRWTSK/LinearAlgebra/Matrix/ToeplitzHankel.lean: stale-candidate-catalog-size: candidate catalog size does not bind current bytes
+GRWTSK/LinearAlgebra/QuadraticForm/BinaryFormIdentities.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/LinearAlgebra/QuadraticForm/OrderedTransport.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/LinearAlgebra/Schrodinger/SampledPotential.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/LinearAlgebra/Schrodinger/Sampling.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/Logic/Classification/Catalogue.lean: uncataloged-candidate-source: candidate-only source is absent from candidate_sources
+GRWTSK/Logic/Classification/Provenance.lean: uncataloged-candidate-source: candidate-only source is absent from candidate_sources
+GRWTSK/Logic/Classification/Types.lean: uncataloged-candidate-source: candidate-only source is absent from candidate_sources
+GRWTSK/Logic/Counterexamples/Checks/Positive/ComplexSymmetryAndPositivity.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/Logic/Counterexamples/ComplexSymmetryAndPositivity.lean: stale-source-catalog-entry: cataloged active source is absent from the working tree
+GRWTSK/Logic/FiniteSequences/PrefixCoverage.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/Logic/ProofChecking/Checks/FullAnalyticArithmeticKernel.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/Logic/ProofChecking/Checks/LibraryDeclarations.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/Logic/ProofChecking/Checks/OwnedDeclarationAudit.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/Logic/ProofEvidence/DirichletResponseStatus.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/Logic/ProofEvidence/ProvenanceCertificates.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/MeasureTheory/Integral/Centering.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/MeasureTheory/Integral/FinitePrimeTranslationEnergy.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/NumberTheory/BinaryDigits/Carry.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/NumberTheory/ContinuedFractions/FrequencyRealization.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/NumberTheory/ContinuedFractions/ScheduledDenominators.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/NumberTheory/Moebius/EnergyAbscissa.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/NumberTheory/Moebius/FiniteTranslationProduct.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/NumberTheory/Moebius/LaplaceHolomorphy.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/NumberTheory/Moebius/LogarithmicResponse.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/NumberTheory/Moebius/NegativePrimeCorrelation.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/NumberTheory/Moebius/PolynomialEnergyHolomorphy.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources
+GRWTSK/NumberTheory/Moebius/PrimeFilterLaplace.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/NumberTheory/Powers/OctaveSeparation.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/NumberTheory/VonMangoldt/CenteredReadout.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/NumberTheory/VonMangoldt/ComplexReadout.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/NumberTheory/VonMangoldt/DyadicDiscrepancy.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/NumberTheory/VonMangoldt/DyadicEulerIdentification.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/NumberTheory/VonMangoldt/DyadicMellinConvergence.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/NumberTheory/VonMangoldt/GreenEnergyFormula.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/NumberTheory/VonMangoldt/LatticeCellSource.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/NumberTheory/VonMangoldt/LatticeGreenReconstruction.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/NumberTheory/VonMangoldt/MellinBlockHolomorphy.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/NumberTheory/VonMangoldt/MellinReadout.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/NumberTheory/VonMangoldt/PrimeTailReturn.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/NumberTheory/Zeta/CompletedQuotientSource.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/NumberTheory/Zeta/DyadicGreenReturn.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/NumberTheory/Zeta/DyadicGreenSpecifications.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/NumberTheory/Zeta/GreenMellinContinuation.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/NumberTheory/Zeta/LogDerivativeZeroExclusion.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/NumberTheory/Zeta/PoleRemovedSource.lean: candidate-catalog-intake-mismatch: candidate source lacks its intake provenance binding
+GRWTSK/NumberTheory/Zeta/ReciprocalHolomorphyZeroSymmetry.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/NumberTheory/Zeta/ResponseBoundZeroConversions.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/NumberTheory/Zeta/Riemann.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/NumberTheory/Zeta/Riemann/Checks/Declarations.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/NumberTheory/Zeta/Riemann/Regularized.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/NumberTheory/Zeta/Riemann/ZeroDefinitions.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/NumberTheory/Zeta/Riemann/ZeroExclusions.lean: uncataloged-maintained-source: present maintained Lean source is absent from active_sources
+GRWTSK/NumberTheory/Zeta/Riemann/ZeroSymmetry.lean: stale-source-catalog-hash: catalog hash does not bind the current bytes
+GRWTSK/Order/Taxonomy/Address.lean: uncataloged-candidate-source: candidate-only source is absent from candidate_sources
+GRWTSK/Order/Taxonomy/Core.lean: uncataloged-candidate-source: candidate-only source is absent from candidate_sources
+Explicit path bans and subject-root checks are a structural lower bound; mathematical subject review is required.

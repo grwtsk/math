@@ -1,0 +1,356 @@
+GRWTSK/Analysis/Fourier/ZModLargerSlice.lean:32:36: error: unexpected token 'set_option'; expected 'lemma'
+GRWTSK/Analysis/Fourier/ZModLargerSlice.lean:46:50: error: Tactic `rfl` failed: The left-hand side
+  @HDiv.hDiv.{0, 0, 0} Real Real Real
+    (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real (@DivisionRing.toDivInvMonoid.{0} Real Real.instDivisionRing)))
+    (@Nat.cast.{0} Real
+      (@AddMonoidWithOne.toNatCast.{0} Real
+        (@AddGroupWithOne.toAddMonoidWithOne.{0} Real
+          (@Ring.toAddGroupWithOne.{0} Real (@DivisionRing.toRing.{0} Real Real.instDivisionRing))))
+      (@Finset.card.{0} (Finset.{0} (ZMod p))
+        (@Finset.filter.{0} (Finset.{0} (ZMod p))
+          (fun (R : Finset.{0} (ZMod p)) =>
+            @Eq.{1} (ZMod p)
+              (@Finset.sum.{0, 0} (ZMod p) (ZMod p)
+                (@Semiring.toAddCommMonoid.{0} (ZMod p)
+                  (@CommSemiring.toSemiring.{0} (ZMod p) (@CommRing.toCommSemiring.{0} (ZMod p) (ZMod.commRing p))))
+                R fun (x : ZMod p) => x)
+              z)
+          (fun (a : Finset.{0} (ZMod p)) =>
+            ZMod.decidableEq p
+              (@Finset.sum.{0, 0} (ZMod p) (ZMod p)
+                (@Semiring.toAddCommMonoid.{0} (ZMod p)
+                  (@CommSemiring.toSemiring.{0} (ZMod p) (@CommRing.toCommSemiring.{0} (ZMod p) (ZMod.commRing p))))
+                a fun (x : ZMod p) => x)
+              z)
+          (@Finset.powersetCard.{0} (ZMod p) (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a b) S))))
+    (@Nat.cast.{0} Real
+      (@AddMonoidWithOne.toNatCast.{0} Real
+        (@AddGroupWithOne.toAddMonoidWithOne.{0} Real
+          (@Ring.toAddGroupWithOne.{0} Real (@DivisionRing.toRing.{0} Real Real.instDivisionRing))))
+      (@Finset.card.{0} (Finset.{0} (ZMod p))
+        (@Finset.powersetCard.{0} (ZMod p) (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a b) S)))
+is not definitionally equal to the right-hand side
+  @HDiv.hDiv.{0, 0, 0} Real Real Real (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+    (@Nat.cast.{0} Real Real.instNatCast
+      (@Finset.card.{0} (Finset.{0} (ZMod p))
+        (@Finset.filter.{0} (Finset.{0} (ZMod p))
+          (fun (R : Finset.{0} (ZMod p)) =>
+            @Eq.{1} (ZMod p)
+              (@Finset.sum.{0, 0} (ZMod p) (ZMod p)
+                (@AddCommGroup.toAddCommMonoid.{0} (ZMod p)
+                  (@Ring.toAddCommGroup.{0} (ZMod p) (@CommRing.toRing.{0} (ZMod p) (ZMod.commRing p))))
+                R fun (x : ZMod p) => x)
+              z)
+          (fun (a : Finset.{0} (ZMod p)) =>
+            Classical.propDecidable
+              (@Eq.{1} (ZMod p)
+                (@Finset.sum.{0, 0} (ZMod p) (ZMod p)
+                  (@AddCommGroup.toAddCommMonoid.{0} (ZMod p)
+                    (@Ring.toAddCommGroup.{0} (ZMod p) (@CommRing.toRing.{0} (ZMod p) (ZMod.commRing p))))
+                  a fun (x : ZMod p) => x)
+                z))
+          (@Finset.powersetCard.{0} (ZMod p) (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a b) S))))
+    (@Nat.cast.{0} Real Real.instNatCast
+      (@Finset.card.{0} (Finset.{0} (ZMod p))
+        (@Finset.powersetCard.{0} (ZMod p) (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a b) S)))
+
+case e'_2
+p : Nat
+inst✝ : @NeZero.{0} Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass) p
+S : Finset.{0} (ZMod p)
+a b : Nat
+hab :
+  @LE.le.{0} Nat instLENat (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a b)
+    (@Finset.card.{0} (ZMod p) S)
+z : ZMod p
+⊢ @Eq.{1} Real
+    (@HDiv.hDiv.{0, 0, 0} Real Real Real
+      (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real (@DivisionRing.toDivInvMonoid.{0} Real Real.instDivisionRing)))
+      (@Nat.cast.{0} Real
+        (@AddMonoidWithOne.toNatCast.{0} Real
+          (@AddGroupWithOne.toAddMonoidWithOne.{0} Real
+            (@Ring.toAddGroupWithOne.{0} Real (@DivisionRing.toRing.{0} Real Real.instDivisionRing))))
+        (@Finset.card.{0} (Finset.{0} (ZMod p))
+          (@Finset.filter.{0} (Finset.{0} (ZMod p))
+            (fun (R : Finset.{0} (ZMod p)) =>
+              @Eq.{1} (ZMod p)
+                (@Finset.sum.{0, 0} (ZMod p) (ZMod p)
+                  (@Semiring.toAddCommMonoid.{0} (ZMod p)
+                    (@CommSemiring.toSemiring.{0} (ZMod p) (@CommRing.toCommSemiring.{0} (ZMod p) (ZMod.commRing p))))
+                  R fun (x : ZMod p) => x)
+                z)
+            (fun (a : Finset.{0} (ZMod p)) =>
+              ZMod.decidableEq p
+                (@Finset.sum.{0, 0} (ZMod p) (ZMod p)
+                  (@Semiring.toAddCommMonoid.{0} (ZMod p)
+                    (@CommSemiring.toSemiring.{0} (ZMod p) (@CommRing.toCommSemiring.{0} (ZMod p) (ZMod.commRing p))))
+                  a fun (x : ZMod p) => x)
+                z)
+            (@Finset.powersetCard.{0} (ZMod p) (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a b)
+              S))))
+      (@Nat.cast.{0} Real
+        (@AddMonoidWithOne.toNatCast.{0} Real
+          (@AddGroupWithOne.toAddMonoidWithOne.{0} Real
+            (@Ring.toAddGroupWithOne.{0} Real (@DivisionRing.toRing.{0} Real Real.instDivisionRing))))
+        (@Finset.card.{0} (Finset.{0} (ZMod p))
+          (@Finset.powersetCard.{0} (ZMod p) (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a b) S))))
+    (@HDiv.hDiv.{0, 0, 0} Real Real Real (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+      (@Nat.cast.{0} Real Real.instNatCast
+        (@Finset.card.{0} (Finset.{0} (ZMod p))
+          (@Finset.filter.{0} (Finset.{0} (ZMod p))
+            (fun (R : Finset.{0} (ZMod p)) =>
+              @Eq.{1} (ZMod p)
+                (@Finset.sum.{0, 0} (ZMod p) (ZMod p)
+                  (@AddCommGroup.toAddCommMonoid.{0} (ZMod p)
+                    (@Ring.toAddCommGroup.{0} (ZMod p) (@CommRing.toRing.{0} (ZMod p) (ZMod.commRing p))))
+                  R fun (x : ZMod p) => x)
+                z)
+            (fun (a : Finset.{0} (ZMod p)) =>
+              Classical.propDecidable
+                (@Eq.{1} (ZMod p)
+                  (@Finset.sum.{0, 0} (ZMod p) (ZMod p)
+                    (@AddCommGroup.toAddCommMonoid.{0} (ZMod p)
+                      (@Ring.toAddCommGroup.{0} (ZMod p) (@CommRing.toRing.{0} (ZMod p) (ZMod.commRing p))))
+                    a fun (x : ZMod p) => x)
+                  z))
+            (@Finset.powersetCard.{0} (ZMod p) (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a b)
+              S))))
+      (@Nat.cast.{0} Real Real.instNatCast
+        (@Finset.card.{0} (Finset.{0} (ZMod p))
+          (@Finset.powersetCard.{0} (ZMod p) (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a b) S))))
+GRWTSK/Analysis/Fourier/ZModLargerSlice.lean:46:50: error: Tactic `rfl` failed: The left-hand side
+  @HDiv.hDiv.{0, 0, 0} Real Real Real (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+    (@Finset.sum.{0, 0} (Finset.{0} (ZMod p)) Real Real.instAddCommMonoid (@Finset.powersetCard.{0} (ZMod p) a S)
+      fun (x : Finset.{0} (ZMod p)) =>
+      @HDiv.hDiv.{0, 0, 0} Real Real Real
+        (@instHDiv.{0} Real
+          (@DivInvMonoid.toDiv.{0} Real (@DivisionRing.toDivInvMonoid.{0} Real Real.instDivisionRing)))
+        (@Nat.cast.{0} Real
+          (@AddMonoidWithOne.toNatCast.{0} Real
+            (@AddGroupWithOne.toAddMonoidWithOne.{0} Real
+              (@Ring.toAddGroupWithOne.{0} Real (@DivisionRing.toRing.{0} Real Real.instDivisionRing))))
+          (@Finset.card.{0} (Finset.{0} (ZMod p))
+            (@Finset.filter.{0} (Finset.{0} (ZMod p))
+              (fun (R : Finset.{0} (ZMod p)) =>
+                @Eq.{1} (ZMod p)
+                  (@Finset.sum.{0, 0} (ZMod p) (ZMod p)
+                    (@Semiring.toAddCommMonoid.{0} (ZMod p)
+                      (@CommSemiring.toSemiring.{0} (ZMod p) (@CommRing.toCommSemiring.{0} (ZMod p) (ZMod.commRing p))))
+                    R fun (x : ZMod p) => x)
+                  (@HSub.hSub.{0, 0, 0} (ZMod p) (ZMod p) (ZMod p)
+                    (@instHSub.{0} (ZMod p)
+                      (@SubNegMonoid.toSub.{0} (ZMod p)
+                        (@AddGroup.toSubNegMonoid.{0} (ZMod p)
+                          (@AddGroupWithOne.toAddGroup.{0} (ZMod p)
+                            (@Ring.toAddGroupWithOne.{0} (ZMod p) (@CommRing.toRing.{0} (ZMod p) (ZMod.commRing p)))))))
+                    z
+                    (@Finset.sum.{0, 0} (ZMod p) (ZMod p)
+                      (@Semiring.toAddCommMonoid.{0} (ZMod p)
+                        (@CommSemiring.toSemiring.{0} (ZMod p)
+                          (@CommRing.toCommSemiring.{0} (ZMod p) (ZMod.commRing p))))
+                      x fun (x : ZMod p) => x)))
+              (fun (a : Finset.{0} (ZMod p)) =>
+                ZMod.decidableEq p
+                  (@Finset.sum.{0, 0} (ZMod p) (ZMod p)
+                    (@Semiring.toAddCommMonoid.{0} (ZMod p)
+                      (@CommSemiring.toSemiring.{0} (ZMod p) (@CommRing.toCommSemiring.{0} (ZMod p) (ZMod.commRing p))))
+                    a fun (x : ZMod p) => x)
+                  (@HSub.hSub.{0, 0, 0} (ZMod p) (ZMod p) (ZMod p)
+                    (@instHSub.{0} (ZMod p)
+                      (@SubNegMonoid.toSub.{0} (ZMod p)
+                        (@AddGroup.toSubNegMonoid.{0} (ZMod p)
+                          (@AddGroupWithOne.toAddGroup.{0} (ZMod p)
+                            (@Ring.toAddGroupWithOne.{0} (ZMod p) (@CommRing.toRing.{0} (ZMod p) (ZMod.commRing p)))))))
+                    z
+                    (@Finset.sum.{0, 0} (ZMod p) (ZMod p)
+                      (@Semiring.toAddCommMonoid.{0} (ZMod p)
+                        (@CommSemiring.toSemiring.{0} (ZMod p)
+                          (@CommRing.toCommSemiring.{0} (ZMod p) (ZMod.commRing p))))
+                      x fun (x : ZMod p) => x)))
+              (@Finset.powersetCard.{0} (ZMod p) b
+                (@SDiff.sdiff.{0} (Finset.{0} (ZMod p)) (@Finset.instSDiff.{0} (ZMod p) (ZMod.decidableEq p)) S x)))))
+        (@Nat.cast.{0} Real
+          (@AddMonoidWithOne.toNatCast.{0} Real
+            (@AddGroupWithOne.toAddMonoidWithOne.{0} Real
+              (@Ring.toAddGroupWithOne.{0} Real (@DivisionRing.toRing.{0} Real Real.instDivisionRing))))
+          (@Finset.card.{0} (Finset.{0} (ZMod p))
+            (@Finset.powersetCard.{0} (ZMod p) b
+              (@SDiff.sdiff.{0} (Finset.{0} (ZMod p)) (@Finset.instSDiff.{0} (ZMod p) (ZMod.decidableEq p)) S x)))))
+    (@Nat.cast.{0} Real Real.instNatCast
+      (@Finset.card.{0} (Finset.{0} (ZMod p)) (@Finset.powersetCard.{0} (ZMod p) a S)))
+is not definitionally equal to the right-hand side
+  @HDiv.hDiv.{0, 0, 0} Real Real Real (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+    (@Finset.sum.{0, 0} (Finset.{0} (ZMod p)) Real Real.instAddCommMonoid (@Finset.powersetCard.{0} (ZMod p) a S)
+      fun (A : Finset.{0} (ZMod p)) =>
+      @HDiv.hDiv.{0, 0, 0} Real Real Real (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+        (@Nat.cast.{0} Real Real.instNatCast
+          (@Finset.card.{0} (Finset.{0} (ZMod p))
+            (@Finset.filter.{0} (Finset.{0} (ZMod p))
+              (fun (B : Finset.{0} (ZMod p)) =>
+                @Eq.{1} (ZMod p)
+                  (@Finset.sum.{0, 0} (ZMod p) (ZMod p)
+                    (@AddCommGroup.toAddCommMonoid.{0} (ZMod p)
+                      (@Ring.toAddCommGroup.{0} (ZMod p) (@CommRing.toRing.{0} (ZMod p) (ZMod.commRing p))))
+                    B fun (x : ZMod p) => x)
+                  (@HSub.hSub.{0, 0, 0} (ZMod p) (ZMod p) (ZMod p)
+                    (@instHSub.{0} (ZMod p)
+                      (@SubNegMonoid.toSub.{0} (ZMod p)
+                        (@AddGroup.toSubNegMonoid.{0} (ZMod p)
+                          (@AddCommGroup.toAddGroup.{0} (ZMod p)
+                            (@Ring.toAddCommGroup.{0} (ZMod p) (@CommRing.toRing.{0} (ZMod p) (ZMod.commRing p)))))))
+                    z
+                    (@Finset.sum.{0, 0} (ZMod p) (ZMod p)
+                      (@AddCommGroup.toAddCommMonoid.{0} (ZMod p)
+                        (@Ring.toAddCommGroup.{0} (ZMod p) (@CommRing.toRing.{0} (ZMod p) (ZMod.commRing p))))
+                      A fun (x : ZMod p) => x)))
+              (fun (a : Finset.{0} (ZMod p)) =>
+                Classical.propDecidable
+                  (@Eq.{1} (ZMod p)
+                    (@Finset.sum.{0, 0} (ZMod p) (ZMod p)
+                      (@AddCommGroup.toAddCommMonoid.{0} (ZMod p)
+                        (@Ring.toAddCommGroup.{0} (ZMod p) (@CommRing.toRing.{0} (ZMod p) (ZMod.commRing p))))
+                      a fun (x : ZMod p) => x)
+                    (@HSub.hSub.{0, 0, 0} (ZMod p) (ZMod p) (ZMod p)
+                      (@instHSub.{0} (ZMod p)
+                        (@SubNegMonoid.toSub.{0} (ZMod p)
+                          (@AddGroup.toSubNegMonoid.{0} (ZMod p)
+                            (@AddCommGroup.toAddGroup.{0} (ZMod p)
+                              (@Ring.toAddCommGroup.{0} (ZMod p) (@CommRing.toRing.{0} (ZMod p) (ZMod.commRing p)))))))
+                      z
+                      (@Finset.sum.{0, 0} (ZMod p) (ZMod p)
+                        (@AddCommGroup.toAddCommMonoid.{0} (ZMod p)
+                          (@Ring.toAddCommGroup.{0} (ZMod p) (@CommRing.toRing.{0} (ZMod p) (ZMod.commRing p))))
+                        A fun (x : ZMod p) => x))))
+              (@Finset.powersetCard.{0} (ZMod p) b
+                (@SDiff.sdiff.{0} (Finset.{0} (ZMod p)) (@Finset.instSDiff.{0} (ZMod p) (ZMod.decidableEq p)) S A)))))
+        (@Nat.cast.{0} Real Real.instNatCast
+          (@Finset.card.{0} (Finset.{0} (ZMod p))
+            (@Finset.powersetCard.{0} (ZMod p) b
+              (@SDiff.sdiff.{0} (Finset.{0} (ZMod p)) (@Finset.instSDiff.{0} (ZMod p) (ZMod.decidableEq p)) S A)))))
+    (@Nat.cast.{0} Real Real.instNatCast
+      (@Finset.card.{0} (Finset.{0} (ZMod p)) (@Finset.powersetCard.{0} (ZMod p) a S)))
+
+case e'_3
+p : Nat
+inst✝ : @NeZero.{0} Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass) p
+S : Finset.{0} (ZMod p)
+a b : Nat
+hab :
+  @LE.le.{0} Nat instLENat (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a b)
+    (@Finset.card.{0} (ZMod p) S)
+z : ZMod p
+⊢ @Eq.{1} Real
+    (@HDiv.hDiv.{0, 0, 0} Real Real Real (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+      (@Finset.sum.{0, 0} (Finset.{0} (ZMod p)) Real Real.instAddCommMonoid (@Finset.powersetCard.{0} (ZMod p) a S)
+        fun (x : Finset.{0} (ZMod p)) =>
+        @HDiv.hDiv.{0, 0, 0} Real Real Real
+          (@instHDiv.{0} Real
+            (@DivInvMonoid.toDiv.{0} Real (@DivisionRing.toDivInvMonoid.{0} Real Real.instDivisionRing)))
+          (@Nat.cast.{0} Real
+            (@AddMonoidWithOne.toNatCast.{0} Real
+              (@AddGroupWithOne.toAddMonoidWithOne.{0} Real
+                (@Ring.toAddGroupWithOne.{0} Real (@DivisionRing.toRing.{0} Real Real.instDivisionRing))))
+            (@Finset.card.{0} (Finset.{0} (ZMod p))
+              (@Finset.filter.{0} (Finset.{0} (ZMod p))
+                (fun (R : Finset.{0} (ZMod p)) =>
+                  @Eq.{1} (ZMod p)
+                    (@Finset.sum.{0, 0} (ZMod p) (ZMod p)
+                      (@Semiring.toAddCommMonoid.{0} (ZMod p)
+                        (@CommSemiring.toSemiring.{0} (ZMod p)
+                          (@CommRing.toCommSemiring.{0} (ZMod p) (ZMod.commRing p))))
+                      R fun (x : ZMod p) => x)
+                    (@HSub.hSub.{0, 0, 0} (ZMod p) (ZMod p) (ZMod p)
+                      (@instHSub.{0} (ZMod p)
+                        (@SubNegMonoid.toSub.{0} (ZMod p)
+                          (@AddGroup.toSubNegMonoid.{0} (ZMod p)
+                            (@AddGroupWithOne.toAddGroup.{0} (ZMod p)
+                              (@Ring.toAddGroupWithOne.{0} (ZMod p)
+                                (@CommRing.toRing.{0} (ZMod p) (ZMod.commRing p)))))))
+                      z
+                      (@Finset.sum.{0, 0} (ZMod p) (ZMod p)
+                        (@Semiring.toAddCommMonoid.{0} (ZMod p)
+                          (@CommSemiring.toSemiring.{0} (ZMod p)
+                            (@CommRing.toCommSemiring.{0} (ZMod p) (ZMod.commRing p))))
+                        x fun (x : ZMod p) => x)))
+                (fun (a : Finset.{0} (ZMod p)) =>
+                  ZMod.decidableEq p
+                    (@Finset.sum.{0, 0} (ZMod p) (ZMod p)
+                      (@Semiring.toAddCommMonoid.{0} (ZMod p)
+                        (@CommSemiring.toSemiring.{0} (ZMod p)
+                          (@CommRing.toCommSemiring.{0} (ZMod p) (ZMod.commRing p))))
+                      a fun (x : ZMod p) => x)
+                    (@HSub.hSub.{0, 0, 0} (ZMod p) (ZMod p) (ZMod p)
+                      (@instHSub.{0} (ZMod p)
+                        (@SubNegMonoid.toSub.{0} (ZMod p)
+                          (@AddGroup.toSubNegMonoid.{0} (ZMod p)
+                            (@AddGroupWithOne.toAddGroup.{0} (ZMod p)
+                              (@Ring.toAddGroupWithOne.{0} (ZMod p)
+                                (@CommRing.toRing.{0} (ZMod p) (ZMod.commRing p)))))))
+                      z
+                      (@Finset.sum.{0, 0} (ZMod p) (ZMod p)
+                        (@Semiring.toAddCommMonoid.{0} (ZMod p)
+                          (@CommSemiring.toSemiring.{0} (ZMod p)
+                            (@CommRing.toCommSemiring.{0} (ZMod p) (ZMod.commRing p))))
+                        x fun (x : ZMod p) => x)))
+                (@Finset.powersetCard.{0} (ZMod p) b
+                  (@SDiff.sdiff.{0} (Finset.{0} (ZMod p)) (@Finset.instSDiff.{0} (ZMod p) (ZMod.decidableEq p)) S x)))))
+          (@Nat.cast.{0} Real
+            (@AddMonoidWithOne.toNatCast.{0} Real
+              (@AddGroupWithOne.toAddMonoidWithOne.{0} Real
+                (@Ring.toAddGroupWithOne.{0} Real (@DivisionRing.toRing.{0} Real Real.instDivisionRing))))
+            (@Finset.card.{0} (Finset.{0} (ZMod p))
+              (@Finset.powersetCard.{0} (ZMod p) b
+                (@SDiff.sdiff.{0} (Finset.{0} (ZMod p)) (@Finset.instSDiff.{0} (ZMod p) (ZMod.decidableEq p)) S x)))))
+      (@Nat.cast.{0} Real Real.instNatCast
+        (@Finset.card.{0} (Finset.{0} (ZMod p)) (@Finset.powersetCard.{0} (ZMod p) a S))))
+    (@HDiv.hDiv.{0, 0, 0} Real Real Real (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+      (@Finset.sum.{0, 0} (Finset.{0} (ZMod p)) Real Real.instAddCommMonoid (@Finset.powersetCard.{0} (ZMod p) a S)
+        fun (A : Finset.{0} (ZMod p)) =>
+        @HDiv.hDiv.{0, 0, 0} Real Real Real (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+          (@Nat.cast.{0} Real Real.instNatCast
+            (@Finset.card.{0} (Finset.{0} (ZMod p))
+              (@Finset.filter.{0} (Finset.{0} (ZMod p))
+                (fun (B : Finset.{0} (ZMod p)) =>
+                  @Eq.{1} (ZMod p)
+                    (@Finset.sum.{0, 0} (ZMod p) (ZMod p)
+                      (@AddCommGroup.toAddCommMonoid.{0} (ZMod p)
+                        (@Ring.toAddCommGroup.{0} (ZMod p) (@CommRing.toRing.{0} (ZMod p) (ZMod.commRing p))))
+                      B fun (x : ZMod p) => x)
+                    (@HSub.hSub.{0, 0, 0} (ZMod p) (ZMod p) (ZMod p)
+                      (@instHSub.{0} (ZMod p)
+                        (@SubNegMonoid.toSub.{0} (ZMod p)
+                          (@AddGroup.toSubNegMonoid.{0} (ZMod p)
+                            (@AddCommGroup.toAddGroup.{0} (ZMod p)
+                              (@Ring.toAddCommGroup.{0} (ZMod p) (@CommRing.toRing.{0} (ZMod p) (ZMod.commRing p)))))))
+                      z
+                      (@Finset.sum.{0, 0} (ZMod p) (ZMod p)
+                        (@AddCommGroup.toAddCommMonoid.{0} (ZMod p)
+                          (@Ring.toAddCommGroup.{0} (ZMod p) (@CommRing.toRing.{0} (ZMod p) (ZMod.commRing p))))
+                        A fun (x : ZMod p) => x)))
+                (fun (a : Finset.{0} (ZMod p)) =>
+                  Classical.propDecidable
+                    (@Eq.{1} (ZMod p)
+                      (@Finset.sum.{0, 0} (ZMod p) (ZMod p)
+                        (@AddCommGroup.toAddCommMonoid.{0} (ZMod p)
+                          (@Ring.toAddCommGroup.{0} (ZMod p) (@CommRing.toRing.{0} (ZMod p) (ZMod.commRing p))))
+                        a fun (x : ZMod p) => x)
+                      (@HSub.hSub.{0, 0, 0} (ZMod p) (ZMod p) (ZMod p)
+                        (@instHSub.{0} (ZMod p)
+                          (@SubNegMonoid.toSub.{0} (ZMod p)
+                            (@AddGroup.toSubNegMonoid.{0} (ZMod p)
+                              (@AddCommGroup.toAddGroup.{0} (ZMod p)
+                                (@Ring.toAddCommGroup.{0} (ZMod p)
+                                  (@CommRing.toRing.{0} (ZMod p) (ZMod.commRing p)))))))
+                        z
+                        (@Finset.sum.{0, 0} (ZMod p) (ZMod p)
+                          (@AddCommGroup.toAddCommMonoid.{0} (ZMod p)
+                            (@Ring.toAddCommGroup.{0} (ZMod p) (@CommRing.toRing.{0} (ZMod p) (ZMod.commRing p))))
+                          A fun (x : ZMod p) => x))))
+                (@Finset.powersetCard.{0} (ZMod p) b
+                  (@SDiff.sdiff.{0} (Finset.{0} (ZMod p)) (@Finset.instSDiff.{0} (ZMod p) (ZMod.decidableEq p)) S A)))))
+          (@Nat.cast.{0} Real Real.instNatCast
+            (@Finset.card.{0} (Finset.{0} (ZMod p))
+              (@Finset.powersetCard.{0} (ZMod p) b
+                (@SDiff.sdiff.{0} (Finset.{0} (ZMod p)) (@Finset.instSDiff.{0} (ZMod p) (ZMod.decidableEq p)) S A)))))
+      (@Nat.cast.{0} Real Real.instNatCast
+        (@Finset.card.{0} (Finset.{0} (ZMod p)) (@Finset.powersetCard.{0} (ZMod p) a S))))

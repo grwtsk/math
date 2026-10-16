@@ -1,0 +1,7 @@
+GRWTSK/Analysis/Fourier/ZModLargerSliceBounds.lean:96:4: error: mod_cast has type
+  ZModSubsetSum.subsetSumProbability S m z ≤ 1 / ↑(S.card - m + 1)
+but is expected to have type
+  ↑(ZModSubsetSum.subsetSumProbability S m z) ≤ 1 / ↑(S.card - m + 1)
+GRWTSK/Analysis/Fourier/ZModLargerSliceBounds.lean:255:8: error: failed to prove positivity/nonnegativity/nonzeroness
+GRWTSK/Analysis/Fourier/ZModLargerSliceBounds.lean:258:8: error: failed to prove positivity/nonnegativity/nonzeroness
+GRWTSK/Analysis/Fourier/ZModLargerSliceBounds.lean:281:8: error: No goals to be solved

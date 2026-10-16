@@ -1,0 +1,22 @@
+{
+  "schema": "larger-slice-final-documentation-checks-v1",
+  "scope": "Final editorial prose and generated navigation; mathematical acceptance remains in separate native receipts",
+  "outcome": "failed",
+  "checks": [
+    {
+      "argv": [
+        "python3",
+        "-B",
+        ".noeaaeue/scripts/check_documentation.py",
+        "--render"
+      ],
+      "exit_code": 1,
+      "seconds": 33.31461875,
+      "log": ".noeaaeue/receipts/larger-slice-anticoncentration/documentation-final-checks/0.log",
+      "sha256": "b4b77e610c06f4cfab768628dfc0c0a8f8e10391b5a57c877c4ee24eb656085d"
+    }
+  ],
+  "formal_source_bindings_checked_before_and_after_each_command": 878,
+  "application_assets_checked_before_and_after_each_command": 24,
+  "head_unchanged": "8913a0a303962e0d202f9d69ce1fe5eedf70ff34"
+}

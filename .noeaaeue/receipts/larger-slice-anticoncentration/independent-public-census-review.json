@@ -1,0 +1,27 @@
+{
+  "schema": "larger-slice-independent-public-census-review-v1",
+  "reviewer": "independent character_decay agent",
+  "scope": "Read-only receipt/source comparison; actual kernel acceptance remains in native driver receipt",
+  "old_owned_count": 12157,
+  "new_owned_count": 12257,
+  "added_names": 100,
+  "removed_names": 0,
+  "all_retained_names_preserve": [
+    "type",
+    "module",
+    "axioms",
+    "unsafe",
+    "partial",
+    "mathematical_admission"
+  ],
+  "all_new_names_safe_nonpartial_standard_three_mathematically_admitted": true,
+  "acceptance_names_present": 7,
+  "selected_library_source_hashes_match_full": 22,
+  "existing_operational_partial_helpers": 5,
+  "operational_helpers_mathematically_admitted": false,
+  "new_operational_helpers": 0,
+  "generated_ownership_explanation": "Lean/Meta/CongrTheorems.lean:399\u2013475 generates reserved congr-simp names on demand. Selected/full import orders first materialize subsetSumProbability.congr_simp in different modules; type/axioms/safety agree.",
+  "receipt": ".noeaaeue/.local/math-trust/20261016T094325Z-e250254225/receipt.json",
+  "receipt_sha256": "f03a78461181eae1bbbe22cafa12f0abe25bb57521a3d3aecb0a09bb58d506de",
+  "verdict": "No missing declaration, no weakening of retained declarations and no count inconsistency."
+}
