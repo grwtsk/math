@@ -1,0 +1,80 @@
+{
+  "entries": [
+    {
+      "bytes": 665,
+      "path": "README.txt",
+      "sha256": "b047d27a7a02e2197e432ab811194e499f903048f13bdd8efd309477f92ea22b"
+    },
+    {
+      "bytes": 371,
+      "path": "candidate-inventory.json",
+      "sha256": "acc30ea833f1ea61b6fdf55ae54d4d81bf00747fcf2b32d20afc8366b5de36ff"
+    },
+    {
+      "bytes": 1527,
+      "path": "candidates/SignedDyadicCoherence.lean.txt",
+      "sha256": "91f4f4c12e14d8b992831fb1c686f2ee9e387019c314b516fd6d38093a9ba695"
+    },
+    {
+      "bytes": 1206,
+      "path": "candidates/SquareVariationBounds.lean.txt",
+      "sha256": "4ceac82ba3fd9e7c33bbc7f05d6696411cbd18af7fb6684d4121eca7a9b2b92b"
+    },
+    {
+      "bytes": 320,
+      "path": "candidates/audit.lean.txt",
+      "sha256": "0b196d78ba998a386447f7385c89829c440cba8008abed3e109ea5295a842c44"
+    },
+    {
+      "bytes": 2207,
+      "path": "certificates.json",
+      "sha256": "9ccc6c88e65d7a81fcd1f1291554c352e90d17e1a38a56c517e52418e47aef73"
+    },
+    {
+      "bytes": 4596,
+      "path": "derivation.md",
+      "sha256": "1a7cb2403859f08393ce31ce604479d61194152455ccc97568f70bc661dfca73"
+    },
+    {
+      "bytes": 1251,
+      "path": "negative-controls.json",
+      "sha256": "4eff731d2f2fd44caef8c68b1587e7ab595996d95fd7b80124903f3d30f9971a"
+    },
+    {
+      "bytes": 1159,
+      "path": "proof-hypergraph.json",
+      "sha256": "c14c15b95cc81ae9fbc8b17b7167590c4b64ac4a7237a71288a568a9f566ea8e"
+    },
+    {
+      "bytes": 1446,
+      "path": "receipt.json",
+      "sha256": "3474610da24de5b804e4f497d4fd685b888aa1d2595c07092387d8b74097daff"
+    },
+    {
+      "bytes": 519,
+      "path": "replay-receipt.json",
+      "sha256": "ff22fd79be7be1a0ba9d9d998fb7e3b360ea5d75fe7a03d88a4061dffcf49878"
+    },
+    {
+      "bytes": 674,
+      "path": "resume-cursor.json",
+      "sha256": "41d36799d85dd647221b514bcccd7f5166b6dbfd72b901a1dce11aaabed5be9a"
+    },
+    {
+      "bytes": 8568,
+      "path": "scripts/square_variation_coherence.py",
+      "sha256": "3c634addb5e5d1c99c39535a5f80cb012c27d941d814ad147ddbbc8a51dc8dff"
+    },
+    {
+      "bytes": 1363,
+      "path": "source-ledger.json",
+      "sha256": "0b7fa4294491ee57e5dfc3edea2ed6c6d4d10da64ea75e9946ee448123cacd66"
+    },
+    {
+      "bytes": 4255,
+      "path": "tests/test_square_variation_coherence.py",
+      "sha256": "b1431269a3618e651ad4969ce2254ae29f50c1992a29f5834c99e2454adcc482"
+    }
+  ],
+  "schema": "square-variation-coherence-published-manifest-v1"
+}
