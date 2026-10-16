@@ -1,0 +1,10 @@
+{
+  "origin_receipt": {
+    "path": "/Users/think/Desktop/math/.noeaaeue/.local/math-trust/20261016T183536Z-6c1ee7dfee/proof-validation-origin.json",
+    "sha256": "e30b73d26010e740fbf02b77e18ea79ab58ada160e62443f9c053d8ff22a8471",
+    "bytes": 22076845,
+    "attempt_id": "math-trust:20261016T183536Z-6c1ee7dfee"
+  },
+  "outcome": "passed",
+  "published": []
+}

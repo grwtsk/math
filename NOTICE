@@ -492,3 +492,34 @@ The scoped good-maximal-quotient cubic character is supplied with its explicit
 good-prime exclusion; sextic/Jacobi/primary-generator, completed/common-support,
 global and RH suppliers remain open. No novelty, independent validation or
 operational runtime refinement is claimed.
+
+Cubic Jacobi primary congruence
+------------------------------
+GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicJacobi.lean retains Apache-2.0
+and adapts cubicJacobi_primary, lines656-668, from
+openai/math@1581d4cbdd69a0faf34b2089614fe2a814316a6a,
+lean/OAI/NumberTheory/DirichletL/GaussSum/FiniteFourier.lean, raw SHA256
+0e8e4184de91161a75802e3a26abfd19a322dffa6441968bf9caeb25800b5d7c.
+See LICENSES/OpenAI-Apache-2.0.txt and the retained source notices.
+Mathlib NumberTheory/JacobiSum/Basic.lean retains Michael Stoll's2024
+copyright and Apache-2.0 terms, including its acknowledgment of Alexander
+Spahl's bachelor-thesis code. The local actual-character specialization
+retains the generated integer-subalgebra coefficient and good-prime premise.
+Human mathematical direction: R.A. Jacob Martone; adaptation/formalization
+and checking assistance: OpenAI Codex. Exact verification belongs to its
+separate source-bound receipts. Jacobi prime generation, norm/product and
+conjugation identities, stronger-modulus normalization and RH remain
+separate obligations. No novelty or independent-validation claim is made.
+
+Direct lookup on original prefix-reference support
+-------------------------------------------------
+GRWTSK/Combinatorics/DirectedGraph/PrefixTableDirectLookup.lean and its controls
+are local MIT formalization under R.A. Jacob Martone's mathematical direction
+with OpenAI Codex assistance. The positive controls retain the source credits
+of copied local schedule/reference fixtures. Lean core's List.Nodup.idxOf_getElem
+in Init/Data/List/Nat/Pairwise.lean retains Mario Carneiro and James Gallicchio's
+Apache-2.0 credits; imported List/Option and mathematical producer credits
+remain attached. Exact source-bound receipts govern the supported-reference
+equality and actual dropped/reintroduced-slot counterexample. This mathematical
+statement supplies no operational hash, compression, filesystem or transaction
+refinement and makes no independent-validation or novelty claim.

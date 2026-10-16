@@ -4,27 +4,28 @@
 
 | Inventory | Count |
 |---|---:|
-| Object guides | 25 |
+| Object guides | 26 |
 | Documented object groups | 2 |
-| Distinct primary sources linked | 24 |
-| Lean source modules | 77 |
+| Distinct primary sources linked | 25 |
+| Lean source modules | 82 |
 | Archive intake records | 0 |
 | Selected catalog families | 1 |
 
 These counts measure documentation and source coverage. They do not count accepted theorems or establish that every source module is documented or checked. [Definitions and limits](../../reference/library-pages.md#count-definitions).
 
-1391 source declaration commands, including 856 theorem/lemma commands, across 77 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+1490 source declaration commands, including 922 theorem/lemma commands, across 82 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
 ## DirectedGraph
 
-19 object guides · 19 distinct linked primary source files.
+20 object guides · 20 distinct linked primary source files.
 
-Linked primary-source scope: 437 source declaration commands, including 299 theorem/lemma commands, across 19 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+Linked primary-source scope: 439 source declaration commands, including 300 theorem/lemma commands, across 20 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
 - [A finite inventory of complete history prefixes](DirectedGraph/prefix-inventory.md).
 - [Certified revision of rooted trace dictionaries](DirectedGraph/rooted-trace-revision.md).
 - [Compaction and remapping of rooted prefix tables](DirectedGraph/prefix-table-compaction.md).
 - [Compaction checkpoints between finite prefix batches](DirectedGraph/prefix-compaction-checkpoint.md).
+- [Direct lookup after a finite rooted prefix schedule](DirectedGraph/prefix-table-direct-lookup.md).
 - [Endpoint sections and incomparable ancestors](DirectedGraph/endpoint-section.md).
 - [Finite chronological batches of stored prefix states](DirectedGraph/prefix-finite-batch.md).
 - [Finite schedules of batches and compaction](DirectedGraph/prefix-compaction-schedule.md).

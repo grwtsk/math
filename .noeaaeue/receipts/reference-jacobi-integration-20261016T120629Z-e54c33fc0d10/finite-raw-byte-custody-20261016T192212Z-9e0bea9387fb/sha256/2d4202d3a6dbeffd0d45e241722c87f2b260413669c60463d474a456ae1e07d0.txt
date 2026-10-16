@@ -1,0 +1,3 @@
+'ASBNP04.amortized_iteration' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ASBNP04.terminal_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ASBNP04.shifted_homogeneous_iteration' depends on axioms: [propext, Classical.choice, Quot.sound]

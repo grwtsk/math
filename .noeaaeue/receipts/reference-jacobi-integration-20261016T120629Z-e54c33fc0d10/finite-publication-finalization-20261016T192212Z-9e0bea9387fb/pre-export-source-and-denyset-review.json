@@ -1,0 +1,60 @@
+{
+  "actual_export": false,
+  "all_source_hashes_rechecked": true,
+  "denyset": {
+    "bytes": 2862013,
+    "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-custody-allowlist-proposal-20261016T190721Z-6de4af86b238/excluded-foreign-paths-data-only.json",
+    "sha256": "2dad4eb3e18642a9a5e0b83c020980d4d96d4e08f13538f2569eb65c8767c7d7"
+  },
+  "foreign_excluded_count_including_completion": 13533,
+  "foreign_indices": [
+    {
+      "bytes": 4999477,
+      "path": "/Users/think/Desktop/math/.noeaaeue/records/receipts/incremental-validation/sha256-049c791645491dafdf560a19cd8447603c1ac5273e50e5bd6af1aa40995018ca.json",
+      "sha256": "d817f91c1e8e363005a2f0f5344e6d20f36a979b4e65f9759914227e8dfbce68"
+    },
+    {
+      "bytes": 15882,
+      "path": "/Users/think/Desktop/math/.noeaaeue/records/receipts/incremental-validation/sha256-93b6076d8cd6bad1052795462ffb51b36f1d93d6d62f4324cf92ce52e473815a.json",
+      "sha256": "57a3094eae6b8be0d881ab5b1f93cf0cf3325a5466bdebc38df43ab98057a9d3"
+    },
+    {
+      "bytes": 518246,
+      "path": "/Users/think/Desktop/math/.noeaaeue/records/receipts/incremental-validation-runtime-pair/sha256-de830f18eeffb5b9b8a8b2728e8105bc163819e277bec8b049050a1c883ce08f.json",
+      "sha256": "cee847d99ab5ded8e2c68f37c9435a43b22f97d4ae3c0e12de4c2586973d9f46"
+    }
+  ],
+  "foreign_payload_files_read": 0,
+  "intersection": [],
+  "limits": "Raw byte custody only. All three source index raw identities and declared paths were reconstructed; foreign output payloads were not read. Exact final publication paths must be intersected again before staging.",
+  "native_jobs": 0,
+  "planned_output_count": 558,
+  "request": {
+    "bytes": 1089067,
+    "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-publication-finalization-20261016T192212Z-9e0bea9387fb/request.json",
+    "sha256": "0a9eddcc9cbcde26f16ec33611b8a2def0d19892ead26a3a1d6214d7d9d3ac7a"
+  },
+  "schema": "finite-export-root-source-and-denyset-preflight-v1",
+  "source_occurrence_bytes": 313718833,
+  "source_proposals": [
+    {
+      "bytes": 2178082,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-custody-allowlist-proposal-20261016T190721Z-6de4af86b238/allowlist-proposal.json",
+      "sha256": "91acb06741762ac5eb7db85599f222cf4a8a380c06b76c931c8253cece1d8662"
+    },
+    {
+      "bytes": 7260,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-custody-allowlist-proposal-20261016T190721Z-6de4af86b238/source-control-and-scope-append.json",
+      "sha256": "e90aba4bceb6db6f3fac3e1ac9bbeaf07664a8779247e6df1d7e34742e49ba5b"
+    },
+    {
+      "bytes": 168916,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-custody-final-evidence-append-20261016T191853Z-1e4d5c5eed8f/selected-docs-cache-append.json",
+      "sha256": "290e839c69cbf035cc65ae22b7ff12f72bd0d6c291ee8f41298eb9ff1cec7ce8"
+    }
+  ],
+  "source_rows": 1692,
+  "staging_commit_push": false,
+  "status": "ALL_1692_SOURCE_IDENTITIES_RECHECKED_FOREIGN_INTERSECTION_EMPTY_PENDING_COORDINATOR_EXACT_REQUEST_ACK",
+  "unique_hashes": 555
+}

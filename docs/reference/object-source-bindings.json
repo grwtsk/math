@@ -194,6 +194,7 @@
       "GRWTSK/Combinatorics/DirectedGraph/PrefixTableBatch.lean",
       "GRWTSK/Combinatorics/DirectedGraph/PrefixTableCheckpoint.lean",
       "GRWTSK/Combinatorics/DirectedGraph/PrefixTableCompaction.lean",
+      "GRWTSK/Combinatorics/DirectedGraph/PrefixTableDirectLookup.lean",
       "GRWTSK/Combinatorics/DirectedGraph/PrefixTableReferenceTransport.lean",
       "GRWTSK/Combinatorics/DirectedGraph/PrefixTableReindex.lean",
       "GRWTSK/Combinatorics/DirectedGraph/PrefixTableSchedule.lean",
@@ -241,6 +242,7 @@
     "NumberTheory/Cyclotomic": [
       "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicCharacters.lean",
       "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicIdeals.lean",
+      "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicJacobi.lean",
       "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicReduction.lean"
     ],
     "NumberTheory/Diophantine/PrimitiveAdditiveTriples": [
@@ -408,6 +410,8 @@
     "GRWTSK/Combinatorics/DirectedGraph/PrefixTableReferenceTransport.lean": "Combinatorics",
     "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicCharacters.lean": "NumberTheory",
     "GRWTSK/Combinatorics/Sequences/FixedSizeSubsetExposure.lean": "Combinatorics",
-    "GRWTSK/Analysis/Fourier/ZModLargerSlice.lean": "Analysis"
+    "GRWTSK/Analysis/Fourier/ZModLargerSlice.lean": "Analysis",
+    "GRWTSK/Combinatorics/DirectedGraph/PrefixTableDirectLookup.lean": "Combinatorics",
+    "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicJacobi.lean": "NumberTheory"
   }
 }

@@ -1,0 +1,2 @@
+'PPNCP04.energy_eq_diagonal_add_cross' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PPNCP04.energy_polynomial_implies_P04' depends on axioms: [propext, Classical.choice, Quot.sound]

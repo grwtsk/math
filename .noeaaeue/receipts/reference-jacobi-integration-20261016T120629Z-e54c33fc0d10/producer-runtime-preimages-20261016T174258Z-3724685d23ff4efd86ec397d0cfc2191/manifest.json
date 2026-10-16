@@ -1,0 +1,19 @@
+{
+  "created_utc": "2026-10-16T17:42:58.889135+00:00",
+  "native_jobs": 0,
+  "schema": "producer-runtime-preimages-v1",
+  "sources": [
+    {
+      "bytes": 22062,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/producer-runtime-preimages-20261016T174258Z-3724685d23ff4efd86ec397d0cfc2191/observe_current_moebius_inputs.py.txt",
+      "sha256": "0d37421178a56f2a586209d7767279d7d113338dffd595ad7ec0d0e4cf9af038",
+      "source": "/Users/think/Desktop/math/.noeaaeue/binding-repair/observe_current_moebius_inputs.py"
+    },
+    {
+      "bytes": 63878,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/producer-runtime-preimages-20261016T174258Z-3724685d23ff4efd86ec397d0cfc2191/test_observe_current_moebius_inputs.py.txt",
+      "sha256": "e6420a1b842d63a58467519c2c418c7d706b6636bac02a8a277a8841f6f2bab0",
+      "source": "/Users/think/Desktop/math/.noeaaeue/binding-repair/test_observe_current_moebius_inputs.py"
+    }
+  ]
+}

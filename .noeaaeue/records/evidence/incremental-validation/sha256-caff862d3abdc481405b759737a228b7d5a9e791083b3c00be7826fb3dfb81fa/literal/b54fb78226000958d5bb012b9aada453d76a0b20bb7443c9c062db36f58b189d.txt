@@ -1,0 +1,574 @@
+"""One-shot inert WSC data authoring. No project imports or native/Git jobs."""
+from pathlib import Path, PurePosixPath
+import ast
+import copy
+import hashlib
+import importlib.metadata
+import json
+import os
+import platform
+import random
+import re
+import stat
+import sys
+import unicodedata
+import jsonschema
+
+ROOT = Path('/Users/think/Desktop/math')
+STAGE = Path(__file__).parent
+PROFILE = 'grwtsk.math.incremental-validation-data/1.0.0'
+API = 'noeaaeue.dev/v1alpha2'
+H = ROOT / '.noeaaeue/.local/incremental-validation-handoff/20261016T150209Z-67c1ab03'
+SCHEMA_PATH = '.noeaaeue/interfaces/schemas/incremental-validation-data-v1.schema.json'
+FIXED = {
+    'VerificationSpec': '.noeaaeue/spec/formal/verification/incremental-validation-v1.json',
+    'AdapterDeclaration': '.noeaaeue/interfaces/adapters/lean-incremental-v1.json',
+    'RetentionPolicy': '.noeaaeue/spec/governance/retention/incremental-validation-v1.json',
+}
+
+def canon(x):
+    return (json.dumps(x, sort_keys=True, ensure_ascii=False, separators=(',', ':'), allow_nan=False) + '\n').encode()
+
+def sha(b):
+    return hashlib.sha256(b).hexdigest()
+
+def digest_file(p):
+    h = hashlib.sha256()
+    size = 0
+    with p.open('rb') as f:
+        for b in iter(lambda: f.read(1048576), b''):
+            h.update(b)
+            size += len(b)
+    return h.hexdigest(), size
+
+def regular(p):
+    if not p.is_absolute():
+        p = ROOT / p
+    p.relative_to(ROOT)
+    for parent in (p,) + tuple(p.parents):
+        if parent == ROOT.parent:
+            break
+        if parent.is_symlink():
+            raise ValueError('symlink source: ' + str(parent))
+    if not stat.S_ISREG(p.stat().st_mode):
+        raise ValueError('not regular: ' + str(p))
+    return p
+
+def load(p):
+    def unique(pairs):
+        d = {}
+        for k, v in pairs:
+            if k in d:
+                raise ValueError('duplicate JSON key: ' + k)
+            d[k] = v
+        return d
+    return json.loads(regular(p).read_bytes(), object_pairs_hook=unique)
+
+def rel(p):
+    return str(p.relative_to(ROOT))
+
+def safe_label(s):
+    if unicodedata.normalize('NFC', s) != s or '\\' in s:
+        raise ValueError('unnormalized label')
+    q = PurePosixPath(s)
+    if q.is_absolute() or str(q) != s or any(x in ('', '.', '..') for x in q.parts):
+        raise ValueError('unsafe label: ' + s)
+    return s
+
+assets = {}
+payloads = {}
+reference_observations = []
+
+def asset(p, role, expected=None, length=None):
+    p = regular(p)
+    label = safe_label('math/' + rel(p))
+    b = p.read_bytes()
+    h = sha(b)
+    if expected is not None and h != expected:
+        raise ValueError('digest mismatch: ' + str(p))
+    if length is not None and len(b) != length:
+        raise ValueError('length mismatch: ' + str(p))
+    row = {'label': label, 'original_path': rel(p), 'sha256': h, 'size_bytes': len(b), 'role': role}
+    if label in assets and assets[label]['sha256'] != h:
+        raise ValueError('source changed during capture: ' + label)
+    if label not in assets:
+        assets[label] = row
+        payloads[label] = b
+    return row
+
+for name, h, n in [
+    ('handoff.json', '3b3ffad31dea3bc7225028f9c36a3e465e2868ea56f2ab3f8e071e408ba039f6', 29750),
+    ('files.json', '204d64667e089a4fc2650e9dd5812e2a6b8c08e668b62879fa94007075c29413', 30884),
+    ('scope-clarification.json', '0e7c1b57dbb9c59c2980047b77c4eb18e7d58e63c48848ddd1fea594e5dd618b', 965),
+]:
+    asset(H / name, 'handoff', h, n)
+
+queue = [H / 'handoff.json', H / 'files.json', H / 'scope-clarification.json']
+parsed = set()
+while queue:
+    p = queue.pop(0)
+    if str(p) in parsed:
+        continue
+    parsed.add(str(p))
+    data = load(p)
+    def walk(v):
+        if isinstance(v, dict):
+            if isinstance(v.get('path'), str) and isinstance(v.get('sha256'), str) and len(v['sha256']) == 64:
+                target = Path(v['path'])
+                if not target.is_absolute():
+                    target = ROOT / target
+                # Old source identities are claims about a prior variant, not current bytes.
+                if str(target).startswith(str(ROOT / '.noeaaeue/.local') + '/'):
+                    a = asset(target, 'bound-evidence', v['sha256'], v.get('bytes', v.get('size_bytes')))
+                    reference_observations.append({'source': rel(p), 'target': a['original_path'], 'sha256': a['sha256'], 'size_bytes': a['size_bytes']})
+                    if target.suffix == '.json':
+                        queue.append(target)
+            if isinstance(v.get('retained_source'), str):
+                asset(Path(v['retained_source']), 'final-retained-source', v.get('sha256'), v.get('bytes', v.get('size_bytes')))
+            for x in v.values():
+                walk(x)
+        elif isinstance(v, list):
+            for x in v:
+                walk(x)
+    walk(data)
+
+manifest = load(H / 'files.json')
+current_rows = manifest['files'] + manifest['additional_frozen_parser_inputs']
+if len(current_rows) != 74 or len({r['path'] for r in current_rows}) != 74:
+    raise ValueError('not exact 74 source manifest')
+for row in current_rows:
+    asset(ROOT / row['path'], 'current-implementation-source', row['sha256'], row['bytes'])
+
+# Finite static local-import closure. This is source inspection; dynamic/ambient reads remain open.
+source_queue = [ROOT / r['path'] for r in current_rows if r['path'].endswith('.py')]
+inspected = set()
+local_import_edges = []
+while source_queue:
+    p = source_queue.pop(0)
+    if str(p) in inspected:
+        continue
+    inspected.add(str(p))
+    tree = ast.parse(regular(p).read_bytes(), filename=rel(p))
+    modules = set()
+    for node in ast.walk(tree):
+        if isinstance(node, ast.Import):
+            modules.update(x.name.split('.')[0] for x in node.names)
+        if isinstance(node, ast.ImportFrom) and node.module:
+            modules.add(node.module.split('.')[0])
+    for m in sorted(modules):
+        q = ROOT / '.noeaaeue/scripts' / (m + '.py')
+        if q.is_file():
+            asset(q, 'static-local-import-source')
+            local_import_edges.append({'reader': rel(p), 'read': rel(q), 'mechanism': 'static-local-import'})
+            source_queue.append(q)
+
+extra = [
+    '.noeaaeue/scripts/repository_paths.py', '.noeaaeue/scripts/owned_audit_protocol.py', '.noeaaeue/scripts/source_observations.py',
+    '.noeaaeue/scripts/check_moebius_response.py', '.noeaaeue/scripts/moebius_response_inputs.py', '.noeaaeue/scripts/moebius_owner_census.py',
+    '.noeaaeue/bindings/moebius-current-inputs-reference-jacobi-20261016T120629Z-e54c33fc0d10.json',
+    '.noeaaeue/coordination/plans/NOE-MATH-WSC-CODEX-0.1.0.md', '.noeaaeue/AGENTS.md', 'AGENTS.md',
+    '.noeaaeue/interfaces/registry.lock.json', '.noeaaeue/interfaces/schemas/wsc-boundary-v1alpha2.schema.json',
+    '.noeaaeue/records/receipts/cycle-000-blocked.json', '.noeaaeue/records/observations/resume-001/engine-recheck.json',
+    '.noeaaeue/records/observations/resume-001/source-search/report.json',
+    '.noeaaeue/records/resolutions/resume-001/authoring-source.txt',
+    'lean-toolchain', 'lake-manifest.json', 'lakefile.toml',
+]
+for name in extra:
+    asset(ROOT / name, 'bounded-contract-context')
+for p in [STAGE / 'release-input.json', STAGE / 'contract-draft.json', Path(__file__)]:
+    asset(p, 'literal-authoring-input')
+for row in load(STAGE / 'contract-draft.json')['verification']['finite_read_set']['files']:
+    asset(Path(row['path']), 'quoted-draft-source-inspection', row['sha256'], row['size_bytes'])
+ledger = load(STAGE / 'finite-ledger.json')
+asset(STAGE / 'finite-ledger.json', 'literal-authoring-input')
+for row in ledger['rows']:
+    asset(Path(row['path']), 'supplemental-policy-or-test-source-quote', row['sha256'], row['size_bytes'])
+
+head_asset = asset(ROOT / '.git/HEAD', 'read-only-git-metadata')
+ref_asset = asset(ROOT / '.git/refs/heads/main', 'read-only-git-metadata')
+head = payloads[head_asset['label']].decode().strip()
+if head != 'ref: refs/heads/main':
+    raise ValueError('main checkout required; no Git operation allowed')
+head_revision = payloads[ref_asset['label']].decode().strip()
+if len(head_revision) != 40 or any(c not in '0123456789abcdef' for c in head_revision):
+    raise ValueError('invalid captured main revision')
+
+env = {'python_version': platform.python_version(), 'python_implementation': platform.python_implementation(),
+       'python_executable_sha256': digest_file(Path(sys.executable).resolve())[0],
+       'jsonschema_version': importlib.metadata.version('jsonschema'),
+       'jsonschema_module_sha256': digest_file(Path(jsonschema.__file__))[0],
+       'project_imports': False, 'native_or_git_commands': False}
+selection = {'profile': PROFILE, 'canonicalization': 'wsc-incremental-inputs-json-v1',
+             'base_repository_revision_observed': head_revision, 'environment': env,
+             'assets': sorted(assets.values(), key=lambda x: x['label'])}
+S = 'sha256-' + sha(canon(selection))
+BASE = '.noeaaeue/records/history/baselines/' + S
+EVID = '.noeaaeue/records/evidence/incremental-validation/' + S
+SOURCE = '.noeaaeue/records/source-bindings/incremental-validation/' + S + '.jsonl'
+LOCK = '.noeaaeue/interfaces/locks/incremental-validation/' + S + '.json'
+OBS = '.noeaaeue/records/observations/incremental-validation/' + S + '.json'
+CORR = '.noeaaeue/records/corrections/incremental-validation/' + S + '.json'
+RECEIPT = '.noeaaeue/records/receipts/incremental-validation/' + S + '.json'
+CONT = '.noeaaeue/coordination/continuations/incremental-validation/' + S + '.json'
+
+def hashrow(p):
+    h, n = digest_file(p)
+    return {'path': rel(p), 'sha256': h, 'size_bytes': n}
+
+protected = [
+    {'path': a['original_path'], 'sha256': a['sha256'], 'size_bytes': a['size_bytes']}
+    for a in selection['assets']
+    if any(a['original_path'].startswith('.noeaaeue/' + plane + '/') for plane in ('interfaces', 'spec', 'records', 'coordination'))
+]
+
+created = []
+planned = {}
+publishing = False
+def allowed_output(path):
+    if path in [SCHEMA_PATH, SOURCE, LOCK, OBS, CORR, RECEIPT, CONT] + list(FIXED.values()):
+        return True
+    if path in [BASE + '/' + n for n in ('inputs.json', 'preexisting-wsc-paths.jsonl', 'authoring-source.txt', 'local-import-closure.json')]:
+        return True
+    if path == EVID + '/manifest.json':
+        return True
+    if path in ['.noeaaeue/records/reviews/incremental-validation/' + S + '/' + x + '.json' for x in 'ABCD']:
+        return True
+    prefix = EVID + '/literal/'
+    if path.startswith(prefix) and path.endswith('.txt'):
+        h = path[len(prefix):-4]
+        return len(h) == 64 and all(c in '0123456789abcdef' for c in h)
+    return False
+
+def write_new(path, b):
+    p = ROOT / path
+    q = PurePosixPath(path)
+    if not allowed_output(path) or '..' in q.parts or p.suffix == '.lean':
+        raise ValueError('unauthorized output')
+    if p.exists() or path in planned:
+        raise ValueError('create-only collision: ' + path)
+    for parent in (p,) + tuple(p.parents):
+        if parent == ROOT.parent:
+            break
+        if parent.is_symlink():
+            raise ValueError('symlink output')
+    if publishing:
+        p.parent.mkdir(parents=True, exist_ok=True)
+        with p.open('xb') as f:
+            f.write(b)
+    else:
+        planned[path] = b
+    created.append({'path': path, 'sha256': sha(b), 'size_bytes': len(b)})
+
+# Refuse every primary collision before creating any durable output.
+for name in [SCHEMA_PATH, SOURCE, LOCK, OBS, CORR, RECEIPT, CONT] + list(FIXED.values()):
+    if (ROOT / name).exists():
+        raise ValueError('create-only collision: ' + name)
+if (ROOT / BASE).exists() or (ROOT / EVID).exists():
+    raise ValueError('digest partition collision')
+
+write_new(BASE + '/inputs.json', canon(selection))
+write_new(BASE + '/preexisting-wsc-paths.jsonl', b''.join(canon(x) for x in protected))
+write_new(BASE + '/authoring-source.txt', Path(__file__).read_bytes())
+write_new(BASE + '/local-import-closure.json', canon({'edges': sorted(local_import_edges, key=lambda x: (x['reader'], x['read'])),
+    'limitation': 'Finite static Python import inspection only; does not establish dynamic, native, OS or ambient read confinement.'}))
+
+literal_rows = []
+written_literals = set()
+for a in selection['assets']:
+    target = EVID + '/literal/' + a['sha256'] + '.txt'
+    if target not in written_literals:
+        write_new(target, payloads[a['label']])
+        written_literals.add(target)
+    literal_rows.append(dict(a, retained_path=target))
+
+nonclaims = [
+    'No Lean/Lake/native job or project import was run by this adoption.',
+    'No theorem, public integration, application acceptance, cold equivalence or whole-library acceptance is established.',
+    'Final five-file custody delta has Python evidence; old native PASS is not transferred to changed reads.',
+    'No per-command native fixture origin reconstruction: teardown removed the original artifacts.',
+    'No central WSC compiler/query/read-confinement/runtime capability or fixed point is established.',
+    'No architecture-source completeness or full legacy/member foliation is established.',
+    'Reviews are internal agent review, not independent external validation.',
+]
+
+def obj(kind, id_suffix, plane, data, labels=None, attempt=False):
+    logical = 'noe://grwtsk/math/incremental-validation/' + id_suffix
+    return {'api_version': API, 'profile': PROFILE, 'kind': kind, 'id': logical,
+        'snapshot_id': S,
+        'identities': {'logical_id': logical, 'semantic_id': None, 'content_id': None, 'occurrence_id': None,
+                       'environment_id': 'sha256-' + sha(canon(env)) if attempt else None,
+                       'attempt_id': 'noe://grwtsk/math/attempt/wsc-data-adoption/' + S if attempt else None,
+                       'limitation': 'Input occurrence bytes are bound separately; authored semantic/content/occurrence equivalence is unasserted. Environment is local data-check identity only.'},
+        'retention': {'class': 'durable_immutable', 'write_plane': plane},
+        'finite_read_set': {'manifest': BASE + '/inputs.json', 'labels': labels if labels is not None else [x['label'] for x in selection['assets']]},
+        'nonclaims': nonclaims, 'data': data}
+
+def normalized_declaration(v):
+    if isinstance(v, dict):
+        result = {k: normalized_declaration(x) for k,x in v.items() if k != 'status'}
+        p = result.get('path')
+        a = assets.get('math/' + p) if isinstance(p, str) else None
+        if a and ('sha256' not in result or result['sha256'] == a['sha256']):
+            result['durable_source'] = EVID + '/literal/' + a['sha256'] + '.txt'
+            result['source_sha256'] = a['sha256']
+            result['source_size_bytes'] = a['size_bytes']
+            result['path_role'] = 'selected-original-occurrence;durable-literal-is-custody'
+        return result
+    if isinstance(v, list):
+        return [normalized_declaration(x) for x in v]
+    if isinstance(v, str) and v.startswith(str(ROOT) + '/'):
+        return v[len(str(ROOT)) + 1:]
+    return v
+
+draft = normalized_declaration(load(STAGE / 'contract-draft.json'))
+draft['verification']['contract_id'] = 'grwtsk.math.incremental-validation/1.0.0'
+draft['verification']['evidence_resolution_policy'] = 'Original paths denote observed occurrences. Resolve exact hash/length through this snapshot evidence manifest to durable literal custody; disposable .local references alone grant no authority.'
+draft['verification']['remaining_limits'].extend([
+    'The five prior-native source variants are not retained as raw bytes; native source identity is receipt/hash bound only, not source-reconstructed or independently source-inspected here.',
+    'The78 replay-guard tests per Python mode have retained logs and declared implementation bindings. Their23 test roots were not bound in the74-source freeze; current quoted test bytes do not retroactively prove execution-time test-source custody.',
+    'Supplemental current/historical policy and static-import bytes retained by this adoption describe a finite inspected closure, not a complete execution read set.'
+])
+declarations = {
+    FIXED['VerificationSpec']: obj('VerificationSpec', 'verification/v1', 'spec', draft['verification']),
+    FIXED['AdapterDeclaration']: obj('AdapterDeclaration', 'adapter/lean/v1', 'interfaces', draft['adapter']),
+    FIXED['RetentionPolicy']: obj('RetentionPolicy', 'retention/v1', 'spec', draft['retention']),
+}
+bindings = [obj('SourceBinding', 'source/' + sha(a['label'].encode()), 'records', a, [a['label']]) for a in literal_rows]
+declarations[EVID + '/manifest.json'] = obj('EvidenceManifest', 'evidence/' + S, 'records', {
+    'assets': literal_rows, 'asset_count': len(literal_rows), 'unique_literal_count': len(written_literals),
+    'upstream_bound_reference_count': len(reference_observations), 'upstream_references': reference_observations,
+    'binding_scope': 'Literal byte custody and source inspection; selected retained-local path/hash references checked; receipt contents remain collaborator assertions unless explicitly verified by local data checks.',
+    'raw_operational_json_is_not_canonical_identity': True})
+declarations[LOCK] = obj('SnapshotLock', 'lock/' + S, 'interfaces', {
+    'selected_input_manifest': BASE + '/inputs.json', 'manifest_sha256': sha(canon(selection)),
+    'schema': SCHEMA_PATH, 'schema_sha256': 'TO_BE_BOUND', 'central_registry_adopted': False,
+    'base_revision': head_revision, 'branch_observed': 'main', 'git_command_executed': False,
+    'canonicalization': {'label_normalization': 'NFC normalized relative POSIX paths; absolute/dot/dotdot/backslash/symlink labels rejected',
+        'ordering': 'unique labels sorted by Unicode code point; compact sorted-key UTF-8 JSON with one LF; SHA256 over exact manifest bytes',
+        'numbers': 'New identity data only exact integers0..2^53-1; no floating numbers, NaN or duplicate JSON keys',
+        'cycle_exclusion': 'Only retained external/authoring input assets and local data-check environment enter snapshot identity; generated envelopes and self IDs are excluded'},
+    'environment': env, 'schema_authority': 'Local extension only; no shared registry or workspace.lock change'})
+declarations[OBS] = obj('Observation', 'observation/' + S, 'records', {
+    'bound_handoff_label': '20261016T150209Z-67c1ab03',
+    'execution_scope': 'WSC non-native byte/schema/reference/custody checks only',
+    'source_inspected': {'current_final_sources': 74, 'frozen_final_sources': 74, 'selected_adapters_source_inspected': 59,
+        'all_59_native_qualified': False, 'static_local_import_source_count': len(inspected), 'ambient_read_closure_established': False},
+    'evidence_grades': [
+        {'identity': 'initial-native-suite', 'grade': 'retained-source-bound-receipt-and-log', 'outcome': 'failed-interrupted-exit-minus2', 'scope': 'Three methods passed; fourth interrupted; original failure preserved'},
+        {'identity': 'isolated-native-repeat', 'grade': 'retained-source-bound-receipt-and-log', 'outcome': 'one-test-passed-old72-variant', 'scope': '52.208seconds; warm0compile/0nativeaudit; leaf3; empty1; cold4compile/4audited; not final-source native qualification'},
+        {'identity': 'parser-custody-delta', 'grade': 'retained-source-bound-receipt-and-logs', 'outcome': '176normal-plus176optimized-reported-passed-and-log-counts-verified', 'scope': 'Five exact changed files; Python/mocks; no native'},
+        {'identity': 'layout453', 'grade': 'reported-unverified-no-retained-log', 'outcome': 'not-adopted-as-authority', 'scope': 'No rerun during hold'},
+        {'identity': 'native-fixture-origins', 'grade': 'unavailable', 'outcome': 'retention-map-zero', 'scope': 'No command-origin/publication/census reconstruction'},
+    ],
+    'native_idle_evidence': {'source': 'successor handoff and bound qualification receipts', 'reported': True, 'new_native_jobs_started_by_wsc': 0, 'live_native_process_census_performed': False},
+    'old_native_source_custody': {'raw_five_prior_variants_available': False, 'receipt_hash_identities_retained': True, 'source_reconstruction_claim': False},
+    'replay_guard_test_custody': {'tests_per_mode_reported_and_logged': 78, 'test_roots_bound_in_upstream74_freeze': 0, 'current_test_source_quotes_are_retroactive_execution_evidence': False},
+    'suspended_authoring': {'resumed': False, 'prior_selection_is_stale': True,
+        'reason': 'Narrow release excludes56legacy and old script output scope; original attempt remains preserved'},
+    'legacy_tranche': {'reviewed_containers': 56, 'materialized_by_this_adoption': 0, 'release': 'explicitly-held', 'original_map_rewritten': False},
+    'application_consumer': {'incremental_capability_adopted': False, 'selected_manifest_count': 456, 'historical_default_count': 439, 'public_comparison_count': 453, 'bridge': 'pending-separate-qualification'},
+})
+declarations[CORR] = obj('Correction', 'correction/' + S, 'records', {
+    'append_only': True, 'rewritten_original_records': [],
+    'corrections': [
+        {'id': 'handoff-supersession', 'original': '145130Z-b3056f7b handoff remains historical', 'clarification': '150209Z-67c1ab03 successor binds current74; five exact source variants changed; no substitution'},
+        {'id': 'cold-audit-count', 'original': 'prior receipt suffix1native-audit', 'clarification': 'One cold native audit command is implementation expectation, not explicit assertion or retained trace; only4compiled/4audited asserted'},
+        {'id': 'layout-retention', 'original': 'layout PASS453 reported', 'clarification': 'No retained layout log; unverified; no acceptance transfer'},
+        {'id': 'native-fixture-retention', 'original': 'isolated test passes', 'clarification': 'Temporary origins already removed; retain source-bound executable-test evidence only'},
+        {'id': 'consumer-scope', 'original': 'public/selected incremental implementation', 'clarification': 'Application456 remains outside adoption; historical default439 differs; public453 does not establish application admission'},
+        {'id': 'prior-selection', 'original': 'resume-001 baseline and suspended authoring attempt', 'clarification': 'Preserved; this narrow inputs-only snapshot supersedes no original bytes and does not resume stale authoring'},
+    ]})
+declarations[CONT] = obj('Continuation', 'continuation/' + S, 'coordination', {
+    'next_actions': [
+        'Obtain explicit release for the56legacy tranche; use a new retained generator revision with exact allowed outputs and pinned baseline bindings; preserve original unexecuted authoring source.',
+        'Retain and qualify a separate application incremental successor; require manifest/profile/oracle/custody applicability bridge; do not transfer public origins automatically.',
+        'Obtain exact NOE-MATH-WSC0.2.0 architecture text and matching source identity.',
+        'Obtain pinned central WSC schema/compiler/query and enforced finite-read capability before capsule reconstruction or first-cycle closure.',
+        'Only after separate reconciled human/native authorization may owners perform final current-source native qualification and whole-library/application replay.',
+    ],
+    'no_automatic_native_restart': True, 'old_process_resumption_authorized': False,
+    'automation_disposition': 'Pause this followup after scoped receipt and report external prerequisites; later continuation requires user or explicit coordinated release.',
+    'data_capsule_fixed_point': False, 'closed_outer_cycles': 0, 'git_mutations_performed': False})
+
+findings = {
+    'A': [],
+    'B': [{'id': 'WSC-ARCH-SOURCE', 'severity': 'blocker', 'rule': 'architecture coverage source', 'disposition': 'open-external-prerequisite', 'evidence': 'Retained bounded source-search observation does not locate exact0.2.0 text'},
+          {'id': 'WSC-LEGACY-MEMBERS', 'severity': 'blocker', 'rule': 'full legacy/member coverage', 'disposition': 'held-and-incomplete', 'evidence': '56reviewed container tranche not released; full member foliation remains incomplete'}],
+    'C': [{'id': 'WSC-CURRENT-NATIVE', 'severity': 'blocker', 'rule': 'source-specific evidence authority', 'disposition': 'pending-separate-qualification', 'evidence': 'Old72nativePASS plus five-file Python delta is not final74nativePASS'},
+          {'id': 'WSC-APP-CAPABILITY', 'severity': 'blocker', 'rule': 'consumer applicability', 'disposition': 'outside-adopted-capability', 'evidence': 'Application selected456/historical default439, no adopted qualified bridge'},
+          {'id': 'WSC-ORIGIN-RETENTION', 'severity': 'limitation', 'rule': 'durable per-command fixture evidence', 'disposition': 'unavailable-preserved', 'evidence': 'Fixture teardown removed origins/publication/census outputs'},
+          {'id': 'WSC-OLD-SOURCE-CUSTODY', 'severity': 'limitation', 'rule': 'prior-native literal source custody', 'disposition': 'unavailable-preserved', 'evidence': 'Five changed prior-native source variants not retained as raw bytes; hashes/receipts only'},
+          {'id': 'WSC-REPLAY-TEST-CUSTODY', 'severity': 'limitation', 'rule': 'test execution-time source closure', 'disposition': 'not-retroactively-established', 'evidence': '23 replay-guard test roots outside74freeze; current quotes do not prove historical execution-time bytes'}],
+    'D': [{'id': 'WSC-CENTRAL-ENGINE', 'severity': 'blocker', 'rule': 'pinned WSC compiler/query/reconstruction', 'disposition': 'open-external-prerequisite', 'evidence': 'Retained engine recheck leaves compiler/query/profile unavailable'},
+          {'id': 'WSC-READ-CONFINEMENT', 'severity': 'blocker', 'rule': 'enforced finite reads and expected-output exclusion', 'disposition': 'open-external-prerequisite', 'evidence': 'Static import closure and matching hashes do not enforce read confinement'}],
+}
+for lens in 'ABCD':
+    p = '.noeaaeue/records/reviews/incremental-validation/' + S + '/' + lens + '.json'
+    declarations[p] = obj('ReviewRecord', 'review/' + S + '/' + lens, 'records', {
+        'cycle': 'cycle000-remains-blocked', 'lens': lens, 'review_scope': 'New incremental declarative materialization plus preserved input custody',
+        'scoped_data_outcome': 'pending-local-checks', 'capsule_lens_outcome': 'blocked' if findings[lens] else 'pass-scoped',
+        'reviewed_paths': sorted(list(declarations) + [SOURCE, SCHEMA_PATH]),
+        'checker_identity': 'Retained one-shot authoring-source.txt; standard Python and jsonschema; no project imports/native',
+        'findings': findings[lens], 'external_independent_review': False}, attempt=True)
+
+# Closed schema for every emitted envelope and each explicitly authored data shape.
+def shape(v, key=''):
+    if v is None:
+        return {'type': 'null'}
+    if isinstance(v, bool):
+        return {'type': 'boolean', 'const': v}
+    if isinstance(v, int):
+        return {'type': 'integer', 'minimum': -9007199254740991 if key == 'exit_code' else 0, 'maximum': 9007199254740991}
+    if isinstance(v, str):
+        if key.endswith('sha256') or key == 'sha256':
+            return {'type': 'string', 'pattern': '^[0-9a-f]{64}$'}
+        if key in ('path', 'retained_path', 'manifest', 'selected_input_manifest'):
+            return {'type': 'string', 'pattern': '^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))(?!.*\\\\).+$'}
+        return {'type': 'string'}
+    if isinstance(v, list):
+        choices = []
+        for x in v:
+            z = shape(x, key)
+            if z not in choices:
+                choices.append(z)
+        return {'type': 'array', 'items': choices[0] if len(choices) == 1 else {'anyOf': choices} if choices else {'type': 'string'}}
+    if isinstance(v, dict):
+        return {'type': 'object', 'properties': {k: shape(x, k) for k, x in v.items()}, 'required': sorted(v), 'additionalProperties': False}
+    raise ValueError('noncanonical authoring type')
+
+# Receipt shape is fixed before validation so it does not make schema identity circular.
+receipt_data_template = {'outcome': '', 'requested_incremental_materialization_complete': True, 'legacy56_materialized': False,
+    'data_capsule_fixed_point': False, 'closed_outer_cycles': 0, 'native_jobs_started': 0, 'git_commands_or_mutations': 0,
+    'checks': [{'id': '', 'outcome': '', 'details': ''}], 'remaining_findings': [x for v in findings.values() for x in v],
+    'created_files': [{'path': '', 'sha256': '', 'size_bytes': 0}], 'receipt_self': {'path': '', 'sha256': None, 'reason': ''},
+    'input_asset_count': 0, 'local_profile_only': True, 'continuation': CONT}
+prototype = obj('Receipt', 'receipt/' + S, 'records', receipt_data_template, attempt=True)
+objects = list(declarations.values()) + bindings + [prototype]
+common = shape(prototype)
+common['properties']['kind'] = {'enum': sorted({x['kind'] for x in objects})}
+common['properties']['profile'] = {'const': PROFILE}
+common['properties']['api_version'] = {'const': API}
+common['properties']['snapshot_id'] = {'type': 'string', 'pattern': '^sha256-[0-9a-f]{64}$'}
+common['properties']['id'] = {'type': 'string', 'pattern': '^noe://grwtsk/math/'}
+common['properties']['retention']['properties']['class'] = {'const': 'durable_immutable'}
+common['properties']['retention']['properties']['write_plane'] = {'enum': ['spec', 'interfaces', 'records', 'coordination']}
+common['properties']['identities']['properties']['environment_id'] = {'type': ['string', 'null']}
+common['properties']['identities']['properties']['attempt_id'] = {'type': ['string', 'null']}
+common['properties']['data'] = {}
+branches = []
+seen_kind = set()
+for x in objects:
+    if x['kind'] in seen_kind:
+        continue
+    seen_kind.add(x['kind'])
+    variants = []
+    for y in objects:
+        if y['kind'] == x['kind']:
+            z = shape(y['data'])
+            if z not in variants: variants.append(z)
+    branches.append({'if': {'properties': {'kind': {'const': x['kind']}}}, 'then': {'properties': {'data': variants[0] if len(variants) == 1 else {'anyOf': variants}}}})
+schema = {'$schema': 'https://json-schema.org/draft/2020-12/schema', '$id': 'https://grwtsk.invalid/wsc/incremental-validation-data-v1.schema.json',
+    'title': 'Local inert source-bound incremental-validation declarations; no central registry adoption', **common, 'allOf': branches}
+jsonschema.Draft202012Validator.check_schema(schema)
+schema_bytes = canon(schema)
+declarations[LOCK]['data']['schema_sha256'] = sha(schema_bytes)
+validator = jsonschema.Draft202012Validator(schema)
+
+checks = []
+def stable_assets():
+    # The separately-owned unsupported application driver is quoted at capture, not frozen for that author's work.
+    return [a for a in selection['assets'] if a['original_path'] != '.noeaaeue/scripts/check_moebius_response.py']
+
+def check(name, fn, detail):
+    fn()
+    checks.append({'id': name, 'outcome': 'pass', 'details': detail})
+
+def require(c, message):
+    if not c:
+        raise ValueError(message)
+
+def controls():
+    sample = next(iter(declarations.values()))
+    for mutation in ('unknown-field', 'unknown-kind', 'bad-snapshot', 'wrong-profile', 'invalid-authority-promotion'):
+        bad = copy.deepcopy(sample)
+        if mutation == 'unknown-field': bad['data']['unexpected'] = True
+        if mutation == 'unknown-kind': bad['kind'] = 'Executor'
+        if mutation == 'bad-snapshot': bad['snapshot_id'] = '../escape'
+        if mutation == 'wrong-profile': bad['profile'] = 'runtime'
+        if mutation == 'invalid-authority-promotion': bad['data']['scope']['runtime_activation'] = True
+        require(not validator.is_valid(bad), 'hostile schema accepted: ' + mutation)
+    for value in ('../x', '/x', 'a/../x', 'a\\x'):
+        try: safe_label(value)
+        except ValueError: pass
+        else: raise ValueError('unsafe path accepted')
+    require(not allowed_output('.noeaaeue/cache/authoritative.json'), 'legacy cache write accepted')
+    require(not allowed_output('.noeaaeue/workspace.lock.json'), 'shared metadata write accepted')
+    # Explicitly test duplicate-key rejection without reading any generated artifact.
+    def unique_pairs(pairs):
+        d = {}
+        for k, v in pairs:
+            if k in d: raise ValueError('duplicate')
+            d[k] = v
+        return d
+    try: json.loads('{"id":1,"id":2}', object_pairs_hook=unique_pairs)
+    except ValueError: pass
+    else: raise ValueError('duplicate accepted')
+
+check('schema-negative-controls', controls, 'Unknown fields/kinds/profile/unsafe snapshot, duplicate JSON keys and traversal/backslash labels rejected; no native controls executed')
+def receipt_log_counts():
+    d = load(ROOT / '.noeaaeue/.local/incremental-validation-delta/20261016T150049Z-fdb893f9/receipt.json')
+    totals = {'normal': 0, 'optimized': 0}
+    require(len(d['commands']) == 14, 'delta command count')
+    for command in d['commands']:
+        log = command['log']
+        label = 'math/' + rel(Path(log['path']))
+        text = payloads[label].decode('utf-8')
+        counts = re.findall(r'^Ran ([0-9]+) tests? in ', text, re.MULTILINE)
+        require(counts == [str(command['tests'])] and command['exit_code'] == 0 and re.search(r'^OK\s*$', text, re.MULTILINE), 'delta log/receipt outcome mismatch')
+        totals['optimized' if '-O' in command['argv'] else 'normal'] += int(counts[0])
+    require(totals == {'normal': 176, 'optimized': 176}, 'delta totals')
+    p = ROOT / '.noeaaeue/.local/incremental-validation-qualification/20261016T145336Z-9c59abe8/qualification.log'
+    text = payloads['math/' + rel(p)].decode('utf-8')
+    require(re.search(r'^Ran 1 test in ', text, re.MULTILINE) and re.search(r'^OK\s*$', text, re.MULTILINE), 'prior native log count')
+
+check('retained-test-log-counts', receipt_log_counts, '14 delta logs each match receipt count/exit0/OK, totaling176normal+176optimized; prior native log reports1testOK. These data checks do not replay tests or close missing historical test-source custody')
+check('snapshot-order', lambda: require(canon(selection) == canon(dict(selection, assets=sorted(random.Random(17).sample(selection['assets'], len(selection['assets'])), key=lambda x:x['label']))), 'order drift'), 'Sorted selection independent of randomized input traversal')
+check('self-cycle-exclusion', lambda: require(all('/records/evidence/incremental-validation/' not in a['original_path'] and '/interfaces/locks/incremental-validation/' not in a['original_path'] for a in selection['assets']), 'self cycle'), 'Only input assets enter snapshot; generated outputs excluded')
+check('source-stability', lambda: [require(digest_file(ROOT / a['original_path']) == (a['sha256'], a['size_bytes']), 'source drift: ' + a['original_path']) for a in stable_assets()], 'All adopted implementation and bound evidence bytes stable before publication; unsupported application driver is only a captured source occurrence')
+check('protected-custody', lambda: [require(digest_file(ROOT / a['path']) == (a['sha256'], a['size_bytes']), 'protected drift: ' + a['path']) for a in protected], 'Every preexisting selected WSC file unchanged; originals preserved')
+ids = [x['id'] for x in objects]
+check('unique-identities', lambda: require(len(ids) == len(set(ids)), 'duplicate identity'), 'Unique authored logical identities; source occurrence bindings separate')
+for value in declarations.values():
+    if value['kind'] == 'ReviewRecord':
+        value['data']['scoped_data_outcome'] = 'pass-local-checks-with-open-global-obligations'
+check('schema-and-finite-reads', lambda: [validator.validate(x) for x in list(declarations.values()) + bindings], 'Every envelope validates local closed schema; every finite-read label resolves in retained input manifest')
+for x in list(declarations.values()) + bindings:
+    require(set(x['finite_read_set']['labels']).issubset(assets), 'dangling read label')
+for a in literal_rows:
+    require(planned[a['retained_path']] == payloads[a['label']], 'planned literal mismatch')
+checks.append({'id': 'literal-byte-reference-plan', 'outcome': 'pass', 'details': 'Every source binding resolves to planned exact SHA256/length literal; selected retained-local upstream references recursively verified, not all ambient/historical references'})
+
+write_new(SCHEMA_PATH, schema_bytes)
+write_new(SOURCE, b''.join(canon(x) for x in bindings))
+for p, value in declarations.items():
+    write_new(p, canon(value))
+publishing = True
+for path, b in planned.items():
+    p = ROOT / path
+    p.parent.mkdir(parents=True, exist_ok=True)
+    for parent in (p,) + tuple(p.parents):
+        if parent == ROOT.parent: break
+        if parent.is_symlink(): raise ValueError('symlink publication target')
+    with p.open('xb') as f: f.write(b)
+check('output-readback', lambda: [require(digest_file(ROOT / x['path']) == (x['sha256'], x['size_bytes']), 'output drift') for x in created], 'All created durable files read back exactly')
+check('final-source-and-custody-guard', lambda: [require(digest_file(ROOT / a['original_path']) == (a['sha256'], a['size_bytes']), 'final source drift') for a in stable_assets()] + [require(digest_file(ROOT / a['path']) == (a['sha256'], a['size_bytes']), 'final protected drift') for a in protected], 'Final adopted implementation, bound evidence and all preexisting selected WSC records remain unchanged; unsupported application source occurrence is captured literally')
+data = dict(receipt_data_template, outcome='scoped-incremental-data-materialized;outer-cycle-blocked', checks=checks,
+            created_files=sorted(created, key=lambda x:x['path']), input_asset_count=len(assets),
+            receipt_self={'path': RECEIPT, 'sha256': None, 'reason': 'No self-digest cycle; exact receipt digest is returned by external tool readback with all other file hashes embedded here'})
+receipt = obj('Receipt', 'receipt/' + S, 'records', data, attempt=True)
+validator.validate(receipt)
+write_new(RECEIPT, canon(receipt))
+print(json.dumps({'snapshot_id': S, 'receipt': hashrow(ROOT / RECEIPT), 'schema': hashrow(ROOT / SCHEMA_PATH),
+    'created_files': len(created), 'input_assets': len(assets), 'literal_files': len(written_literals),
+    'protected_preexisting_files': len(protected), 'checks': checks,
+    'fixed_paths': {k: hashrow(ROOT / v) for k,v in FIXED.items()}, 'evidence_manifest': hashrow(ROOT / (EVID + '/manifest.json'))}, sort_keys=True))

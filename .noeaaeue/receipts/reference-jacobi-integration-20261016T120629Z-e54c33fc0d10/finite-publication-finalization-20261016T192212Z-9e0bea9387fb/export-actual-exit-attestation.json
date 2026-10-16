@@ -1,0 +1,63 @@
+{
+  "actual_exit_code": 0,
+  "api_result": {
+    "completion": {
+      "bytes": 1354,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-raw-byte-custody-20261016T192212Z-9e0bea9387fb/completion.json",
+      "sha256": "4311911dc0baa05ced66eb91eb349ab0ee172a5b9dbeb398acee55692ccb9cfc"
+    },
+    "manifest": {
+      "bytes": 1515546,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-raw-byte-custody-20261016T192212Z-9e0bea9387fb/manifest.json",
+      "sha256": "c0003c4c4747710b74590191e766173f73f6f0c292c56bdb7d71085dc29183a8"
+    },
+    "mathematical_acceptance": false,
+    "native_jobs": 0,
+    "request": {
+      "bytes": 1089067,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-publication-finalization-20261016T192212Z-9e0bea9387fb/request.json",
+      "sha256": "0a9eddcc9cbcde26f16ec33611b8a2def0d19892ead26a3a1d6214d7d9d3ac7a"
+    },
+    "schema": "finite-byte-custody-export-result-v1",
+    "status": "RAW_BYTE_CUSTODY_API_RETURNED_SUCCESS"
+  },
+  "argv": [
+    "/Users/think/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+    "-I",
+    "-B",
+    "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/finite_byte_custody_export_v1.py",
+    "--execute",
+    "--request",
+    "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-publication-finalization-20261016T192212Z-9e0bea9387fb/request.json",
+    "--request-sha256",
+    "0a9eddcc9cbcde26f16ec33611b8a2def0d19892ead26a3a1d6214d7d9d3ac7a"
+  ],
+  "command": {
+    "bytes": 1764,
+    "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-publication-finalization-20261016T192212Z-9e0bea9387fb/export-command.json",
+    "sha256": "e4ae2575b191c6e10b741d8f887757753a66612044b0de2c473397a3e42f074d"
+  },
+  "coordinator_ack": {
+    "bytes": 1536,
+    "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/coordinator-exact-export-scope-review-20261016T192310Z-377f6066d52c.json",
+    "sha256": "0d8498986fd682632a6d32168aacc71ef840f3047f7417c0d28ad21846db784e"
+  },
+  "finished_at": "2026-10-16T19:24:29.112553+00:00",
+  "mapping_rows": 1692,
+  "mathematical_acceptance": false,
+  "native_jobs": 0,
+  "raw_terminal_log": {
+    "bytes": 1040,
+    "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-publication-finalization-20261016T192212Z-9e0bea9387fb/export-raw-terminal.log",
+    "sha256": "3d77c786eedc1d2ccc13a6d0396573a9fdda43eb475145caaa2d2652ab6fc339"
+  },
+  "request": {
+    "bytes": 1089067,
+    "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-publication-finalization-20261016T192212Z-9e0bea9387fb/request.json",
+    "sha256": "0a9eddcc9cbcde26f16ec33611b8a2def0d19892ead26a3a1d6214d7d9d3ac7a"
+  },
+  "schema": "source-bound-finite-export-actual-exit-v1",
+  "started_at": "2026-10-16T19:24:23.299497+00:00",
+  "status": "ACTUAL_CLI_EXIT_ZERO_AND_ALL_RAW_COPIES_READ_BACK",
+  "unique_new_objects": 555
+}

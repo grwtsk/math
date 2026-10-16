@@ -1,0 +1,62 @@
+{
+  "all906nested_origin_identities_equal_first70ee": true,
+  "compiler_runtime_sha256": "c48f0fb338d4947e55e4f3974e49b7d1d4a12ad0ac0a783355a135d7bda01f7d",
+  "created_at": "2026-10-16T18:38:50.952092+00:00",
+  "declaration_count": 12268,
+  "first_origin": {
+    "attempt_id": "math-trust:20261016T181528Z-d0981d5b01",
+    "bytes": 21933859,
+    "path": "/Users/think/Desktop/math/.noeaaeue/.local/math-trust/20261016T181528Z-d0981d5b01/proof-validation-origin.json",
+    "sha256": "70ee67f5a0eca795bced148b3368805a31272bcdd92bdd542dc85c0724e252b0"
+  },
+  "first_receipt": {
+    "bytes": 27226082,
+    "path": "/Users/think/Desktop/math/.noeaaeue/.local/math-trust/20261016T181528Z-d0981d5b01/receipt.json",
+    "sha256": "67c49e791653105507b2585eb57dc71397af372f6758d2ad7e0a71e5e4eb6cb4"
+  },
+  "full_owned_census_rows_equal_first": true,
+  "incremental": {
+    "audit_cache_hits": 453,
+    "audited_modules": 0,
+    "compilation_cache_hits": 453,
+    "compiled": 0,
+    "native_audit_commands": 0
+  },
+  "native_jobs_started_by_review": 0,
+  "origin": {
+    "attempt_id": "math-trust:20261016T183536Z-6c1ee7dfee",
+    "bytes": 22076845,
+    "path": "/Users/think/Desktop/math/.noeaaeue/.local/math-trust/20261016T183536Z-6c1ee7dfee/proof-validation-origin.json",
+    "sha256": "e30b73d26010e740fbf02b77e18ea79ab58ada160e62443f9c053d8ff22a8471"
+  },
+  "pending": "Caching owner typed-v3 retained artifact/provenance/full cache-object verification and coordinator pair acceptance remain separate; no APP native authority inferred.",
+  "phase_context": {
+    "bytes": 19070,
+    "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/serial-runtime-public-warm-20261016T181417Z-76fc63400da9/phase-context.json",
+    "sha256": "cbf3695e4d70868bc67978bddda886b10907260021d1e7d65816852a89e6e36f"
+  },
+  "protected_inputs_rechecked": 1761,
+  "receipt": {
+    "bytes": 27461807,
+    "path": "/Users/think/Desktop/math/.noeaaeue/.local/math-trust/20261016T183536Z-6c1ee7dfee/receipt.json",
+    "sha256": "7decbfd41f3284019ea9294ad6597216fa19c0e555fae5e8fee2f0d6c0175244"
+  },
+  "retained_failed_schema_assumptions": {
+    "bytes": 976,
+    "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/runtime-public-warm-adhoc-schema-assumptions-failed-20261016T183850Z-aa9cacd5f0d2.json",
+    "sha256": "c83957f51fee6736162521932d2edf4e88ceb6fe6eca47f887578cd6e7c34ded"
+  },
+  "rh_proved": false,
+  "schema": "runtime-public-warm-root-data-review-v2",
+  "sources_dependency_objects_runtime_stable": true,
+  "status": "ACTUAL_UNCHANGED_WARM_PASS_FULL_CACHE_OBJECT_VERIFICATION_PENDING",
+  "summary": {
+    "bytes": 4544,
+    "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/serial-runtime-public-warm-20261016T181417Z-76fc63400da9/summary.json",
+    "sha256": "2cf7c9958bfc63ba0931181cc12af6da979598211ac69cda0a6357e60c187227"
+  },
+  "warm_row_modes": {
+    "audit:cached": 453,
+    "compilation:cached": 453
+  }
+}

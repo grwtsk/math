@@ -1,0 +1,75 @@
+{
+  "schema": "pure-successor-control-receipt-v1",
+  "created_at": "2026-10-16T16:11:39.476067+00:00",
+  "results": [
+    {
+      "mode": "normal",
+      "argv": [
+        "/Users/think/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+        "-I",
+        "-B",
+        "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/test_serial_native_incremental_successor_v1.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "test_count": 25,
+      "logs": {
+        "stdout": {
+          "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/successor-pure-controls-da58c756a1db49699ae8ace64f34f2e0/normal.stdout.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "stderr": {
+          "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/successor-pure-controls-da58c756a1db49699ae8ace64f34f2e0/normal.stderr.log",
+          "sha256": "6c8e23ef7e16befb42693a48fff52214c5312aceeebe3b848264d16b7c4cfbd1",
+          "bytes": 2740
+        }
+      }
+    },
+    {
+      "mode": "optimized",
+      "argv": [
+        "/Users/think/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+        "-I",
+        "-B",
+        "-O",
+        "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/test_serial_native_incremental_successor_v1.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "test_count": 25,
+      "logs": {
+        "stdout": {
+          "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/successor-pure-controls-da58c756a1db49699ae8ace64f34f2e0/optimized.stdout.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "stderr": {
+          "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/successor-pure-controls-da58c756a1db49699ae8ace64f34f2e0/optimized.stderr.log",
+          "sha256": "29576fd87d9e89af7a3b0cf9b1cba934f93a02e6b2f4069d8f196774128ebb60",
+          "bytes": 2740
+        }
+      }
+    }
+  ],
+  "sources": {
+    "serial_native_incremental_successor_v1.py": {
+      "sha256": "123143671d0c4dee627a919db9ba689b5baf832984657fc3788973300bbc90f7",
+      "bytes": 12981
+    },
+    "test_serial_native_incremental_successor_v1.py": {
+      "sha256": "72236eb0f6d2246ffc6a0dfdf215cf32735b8b2ebf543997646b2b93d8824846",
+      "bytes": 15286
+    },
+    "serial_native.py": {
+      "sha256": "64000202b88d2d7c3fcd05aabd476164cf8b7aeea846fe714639aeea4162a15b",
+      "bytes": 15038
+    }
+  },
+  "sources_unchanged": true,
+  "native_jobs": 0,
+  "git_queries_or_mutations": 0,
+  "actual_coordinator_release_or_readset_created": false,
+  "fixtures": "Owned resolved external temp roots; injected HEAD/source-universe/lane/executor/receipt collectors. All unmocked subprocess/os exec/spawn/fork/signal and project runtime imports fail closed.",
+  "proof_acceptance": false
+}

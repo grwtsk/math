@@ -1,0 +1,137 @@
+{
+  "all_unmocked_children_and_signals": "blocked in harness",
+  "attempt_id": "app-runtime-mocks-0a55649265fd4562b4520db56d5424d9",
+  "coverage_claims": [
+    "Same executable with changed runtime library invalidates own and public compilations",
+    "Transient runtime edits and earlier resolution shadows fail terminal guards",
+    "Strict manifest and origin descriptor identity rejects missing values, False/0 confusion and nonfinite numbers",
+    "Exact actual child environment checked before and after all real mocked commands; late ambient loader overrides rejected",
+    "Explicit legacy manifests freeze the observed operational runtime and execute cold with no cache authority",
+    "453 public plus 3 app synthetic reuse retains fresh456owner census and all12profile hops plus10namespace controls",
+    "Warm cached modules defer final postchecks and avoid per-node full guards, runtime byte replays and receipt saves",
+    "Runtime drift during cache publication fails its separate transaction without rewriting the immutable passed proof subattempt"
+  ],
+  "finished_at": "2026-10-16T17:58:30.005558+00:00",
+  "harness": {
+    "bytes": 786,
+    "path": "/Users/think/Desktop/math/.noeaaeue/.local/moebius-incremental-verification/runtime-final-j7h_ay9e/mock_harness.py",
+    "sha256": "60cd00a5eaa81ec8a571d40bd0cfbd576ba0e59e2a4700d66f3a32ec470152b1"
+  },
+  "logs": {
+    "normal": {
+      "bytes": 5628,
+      "exit_code": 0,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/moebius-incremental-verification/runtime-final-j7h_ay9e/normal.log",
+      "seconds": 61.566,
+      "sha256": "be140434dd06b3050442f25eeeda2fef7d4c5e91c949b1ba45e86290d7579674",
+      "test_count": 46
+    },
+    "optimized": {
+      "bytes": 5628,
+      "exit_code": 0,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/moebius-incremental-verification/runtime-final-j7h_ay9e/optimized.log",
+      "seconds": 43.844,
+      "sha256": "74d292d0b1dc45f8c4ecb14bc4267e6f7c2a8b6d4b84cf0c2b5cbe2d86af10ae",
+      "test_count": 46
+    }
+  },
+  "native_processes_executed": 0,
+  "outcome": "passed",
+  "proof_or_kernel_admission_claim": false,
+  "python": "3.9.6 (default, Aug 17 2026, 12:07:42) \n[Clang 21.0.0 (clang-2100.3.34.1)]",
+  "schema": "application-runtime-mock-verification-v1",
+  "scope": "Python mock runtime-identity qualification only; no Lean or kernel claim",
+  "source_preimages_unchanged": true,
+  "sources": {
+    "/Users/think/Desktop/math/.noeaaeue/scripts/cache_math.py": {
+      "bytes": 36017,
+      "sha256": "d73bebfeca4ec709fdc68741cba13a09611ae49a0095b4140dd5d2f3e6bb1c06"
+    },
+    "/Users/think/Desktop/math/.noeaaeue/scripts/check_moebius_response.py": {
+      "bytes": 124950,
+      "sha256": "f6b6de407701af9c8cae3b26d7b14396c2d4836c7cd1497633dc8f7e46629e2d"
+    },
+    "/Users/think/Desktop/math/.noeaaeue/scripts/incremental_lean.py": {
+      "bytes": 60843,
+      "sha256": "089f5c980be2aa3b1606ae9ddf12a09ec5df2bf6d6544f52690447b640882f12"
+    },
+    "/Users/think/Desktop/math/.noeaaeue/scripts/moebius_incremental.py": {
+      "bytes": 25341,
+      "sha256": "fa191bd356830b7465c95a1022d03cad8441b7aa3b3036653f23ed9db48cfd7a"
+    },
+    "/Users/think/Desktop/math/.noeaaeue/scripts/moebius_owner_census.py": {
+      "bytes": 28542,
+      "sha256": "2d801d38c165c15aa539c7a0bb08a72e777b23fec813e8b98c1d184dcbd92b55"
+    },
+    "/Users/think/Desktop/math/.noeaaeue/scripts/moebius_response_inputs.py": {
+      "bytes": 16659,
+      "sha256": "5e1c92fccf7a7aaf4e46fedc5cfb54612bd246536f8681241fc9cc7d410115c6"
+    },
+    "/Users/think/Desktop/math/.noeaaeue/scripts/monitor_math.py": {
+      "bytes": 85340,
+      "sha256": "a757804707ffe811aa27d295aa82dcdaddf7b3c90f9c3bd6a47d27ec3b0890e3"
+    },
+    "/Users/think/Desktop/math/.noeaaeue/scripts/repository_paths.py": {
+      "bytes": 2343,
+      "sha256": "4bd02ac496dc2fbd141b19f23ba86291db1618a0ae298a76beab28701ff24d22"
+    },
+    "/Users/think/Desktop/math/.noeaaeue/scripts/test_moebius_incremental.py": {
+      "bytes": 66357,
+      "sha256": "2c9f1241085acf4b4a74d81e8c24a3e5a52bd6a21bd4706a49eca8bdfcf88a8e"
+    },
+    "/Users/think/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py": {
+      "bytes": 97268,
+      "sha256": "44515eb26fd0bf5edbb9aea30f45613f53a12a9521f31b3b82b8a5b1bd0f4cbd"
+    }
+  },
+  "started_at": "2026-10-16T17:55:48.615579+00:00",
+  "terminal": true,
+  "unittest_names": [
+    "test_warm_nodes_reused_but_census_and_controls_stay_fresh",
+    "test_changed_leaf_rebuilds_only_local_dependents",
+    "test_unqualified_application_does_not_publish",
+    "test_cold_rebuilds_all_nodes",
+    "test_run_specific_dependency_identity_does_not_defeat_reuse",
+    "test_explicit_public_candidates_compile_only_additional_app_nodes",
+    "test_all_cached_artifact_members_corrupt_or_missing_force_native_retry",
+    "test_missing_or_corrupt_application_origin_forces_fresh_commands",
+    "test_generic_same_key_origin_is_not_application_qualification",
+    "test_public_compiler_flags_and_current_policy_mismatches_are_misses",
+    "test_public_transitive_source_drift_keeps_independent_candidate",
+    "test_external_dependency_content_invalidates_application_cache",
+    "test_public_external_search_shadow_and_absent_member_are_misses",
+    "test_final_gate_failure_does_not_publish",
+    "test_final_artifact_drift_does_not_publish",
+    "test_warm_hits_do_not_rescan_the_whole_application",
+    "test_every_partial_output_family_collision_is_rejected",
+    "test_frozen_loader_ignores_poisoned_canonical_modules",
+    "test_frozen_loader_failure_restores_aliases_and_private_modules",
+    "test_loaded_private_parser_mutation_is_rejected",
+    "test_origin_without_exact_command_membership_cannot_authorize_reuse",
+    "test_cache_origin_replacement_after_preflight_fails_closed",
+    "test_warm_hits_do_not_serialize_whole_receipts_per_node",
+    "test_cached_postcheck_remains_deferred_until_terminal_full_guard",
+    "test_changed_timeout_requires_fresh_application_module_commands",
+    "test_dylib_only_change_rejects_prior_application_and_public_compilations",
+    "test_runtime_edit_and_restore_blocks_terminal_origin_and_cache_publication",
+    "test_warm_runtime_full_byte_checks_only_at_qualification_boundaries",
+    "test_runtime_drift_during_publication_preserves_origin_but_fails_transaction",
+    "test_runtime_earlier_resolution_shadow_blocks_origin_without_native",
+    "test_application_origin_missing_runtime_binding_cannot_authorize_same_key",
+    "test_public_origin_and_command_policy_require_runtime_binding",
+    "test_per_command_loader_override_is_rejected_before_cache_or_native",
+    "test_new_public_aggregate_can_reference_actual_retained_module_origins",
+    "test_public_453_plus_3_uses_fresh_full_census_and_all_controls",
+    "test_full_main_default_successor_cold_warm_and_poisoned_canonical_imports",
+    "test_full_main_explicit_manifest_overrides_absent_active_default",
+    "test_missing_active_default_rejects_before_children_with_producer_refresh_command",
+    "test_default_nonincremental_manifest_rejects_before_children_even_with_cold",
+    "test_default_incremental_contract_requires_exact_schema_types_and_assets",
+    "test_manifest_requires_complete_strict_runtime_identity_before_any_child",
+    "test_manifest_same_executable_runtime_change_rejects_before_any_child",
+    "test_loader_overrides_fail_before_every_real_child",
+    "test_late_ambient_loader_override_cannot_enter_prefix_helper_child",
+    "test_explicit_legacy_contract_freezes_observed_runtime_and_stays_fresh",
+    "test_external_origins_cannot_relabel_boolean_runtime_values_as_integers"
+  ]
+}

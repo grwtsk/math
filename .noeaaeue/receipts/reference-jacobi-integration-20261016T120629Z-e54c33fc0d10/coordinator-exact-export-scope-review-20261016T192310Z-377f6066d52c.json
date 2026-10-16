@@ -1,0 +1,25 @@
+{
+  "all887_formal_source_bytes_unchanged": true,
+  "compatibility_four_row_limit": "Raw diagnostic bytes observed now; original historical result receipts and provenance limits unchanged, no retroqualification.",
+  "foreign_exclusions_reconstructed": 13533,
+  "foreign_original_or_scope_intersection": 0,
+  "max_export_bytes": 38564576,
+  "native_runs": 0,
+  "next": "Sole RH may execute exact request with unchanged e602 exporter once, preserve actual exit/result/terminal map; then append explicit exported outputs to finite staging scope for final committed-byte review.",
+  "request": {
+    "bytes": 1089067,
+    "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-publication-finalization-20261016T192212Z-9e0bea9387fb/request.json",
+    "sha256": "0a9eddcc9cbcde26f16ec33611b8a2def0d19892ead26a3a1d6214d7d9d3ac7a"
+  },
+  "request_rows": 1692,
+  "schema": "coordinator-exact-export-and-source-scope-review-v1",
+  "source_scope": {
+    "bytes": 1179894,
+    "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/publication-scope-final-successor-20261016T192130Z-1f50a7701f6e417b8f3057a323776e7d.json",
+    "sha256": "49828561e4e4650aebdd555c4fa75033fbfce3a0e57bcd5b1ff1f1d77f45d8b3"
+  },
+  "source_scope_rows": 767,
+  "status": "EXACT_REQUEST_APPROVED_FOR_CREATE_ONLY_EXPORT_SOURCE_SCOPE_PASSED_FINAL_EXPORTED_OUTPUT_REVIEW_PENDING",
+  "taxonomy_or_receipt_rewrite": false,
+  "unique_raw_hashes": 555
+}

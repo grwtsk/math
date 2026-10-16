@@ -1,0 +1,24 @@
+{
+  "actual_observer_calls": 0,
+  "before": {
+    "bytes": 124071,
+    "path": "/Users/think/Desktop/math/.noeaaeue/scripts/check_moebius_response.py",
+    "sha256": "7db48596484b92b335c4e1d23dee4626b0e5b7e4d57c82c3d2da874f0db3e17a"
+  },
+  "completed_test_receipt": {
+    "bytes": 9089,
+    "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/producer-runtime-controls-20261016T175022Z-70ae34339d094e42b33fdb4515c235e5/receipt.json",
+    "sha256": "184c248494cec5a3339290d4813fea13e3ecd70b203a81b3a63fe33ef2770912"
+  },
+  "created_utc": "2026-10-16T17:51:56.591985+00:00",
+  "native_jobs": 0,
+  "observed": {
+    "bytes": 124261,
+    "path": "/Users/think/Desktop/math/.noeaaeue/scripts/check_moebius_response.py",
+    "sha256": "c6e4cd55ebfcea81251c3029a1b12ce9049ccf706c990cb1a17ff7ab130df213"
+  },
+  "own_sources_unchanged": true,
+  "result": "No handoff installed and no source restored; successor pure controls must bind the newly agreed driver bytes. Completed114+114 controls retain their prior exact source scope.",
+  "schema": "producer-runtime-handoff-guard-drift-v1",
+  "status": "HANDOFF_REFUSED_SOURCE_DRIFT"
+}

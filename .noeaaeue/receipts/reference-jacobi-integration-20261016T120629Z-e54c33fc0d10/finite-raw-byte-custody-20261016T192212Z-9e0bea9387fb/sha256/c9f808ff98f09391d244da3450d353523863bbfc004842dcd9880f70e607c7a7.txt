@@ -1,0 +1,77 @@
+{
+  "schema": "runtime-legacy-catalog-final-engine-rerun-v1",
+  "outcome": "passed",
+  "optimized": true,
+  "tests": 14,
+  "sources_before": [
+    {
+      "path": "/Users/think/Desktop/math/.noeaaeue/scripts/run_lean_validation.py",
+      "sha256": "e06da1fc297a17663dcd2522b1dbc04c5b1ab5d0944177c68036740e4d8f9096",
+      "bytes": 12973
+    },
+    {
+      "path": "/Users/think/Desktop/math/.noeaaeue/scripts/check.py",
+      "sha256": "e7d8a0178573523db5c77799d3fa944fe989947dabe587c2d8f89b3b43e46a28",
+      "bytes": 11673
+    },
+    {
+      "path": "/Users/think/Desktop/math/.noeaaeue/scripts/test_incremental_validation_drivers.py",
+      "sha256": "c0d453eec8f4b66abade254eed011ddf2fd621717c1e0e6c06afd03c551189d4",
+      "bytes": 22832
+    },
+    {
+      "path": "/Users/think/Desktop/math/.noeaaeue/scripts/incremental_lean.py",
+      "sha256": "089f5c980be2aa3b1606ae9ddf12a09ec5df2bf6d6544f52690447b640882f12",
+      "bytes": 60843
+    },
+    {
+      "path": "/Users/think/Desktop/math/.noeaaeue/scripts/cache_math.py",
+      "sha256": "d73bebfeca4ec709fdc68741cba13a09611ae49a0095b4140dd5d2f3e6bb1c06",
+      "bytes": 36017
+    },
+    {
+      "path": "/Users/think/Desktop/math/.noeaaeue/scripts/monitor_math.py",
+      "sha256": "a757804707ffe811aa27d295aa82dcdaddf7b3c90f9c3bd6a47d27ec3b0890e3",
+      "bytes": 85340
+    }
+  ],
+  "sources_after": [
+    {
+      "path": "/Users/think/Desktop/math/.noeaaeue/scripts/run_lean_validation.py",
+      "sha256": "e06da1fc297a17663dcd2522b1dbc04c5b1ab5d0944177c68036740e4d8f9096",
+      "bytes": 12973
+    },
+    {
+      "path": "/Users/think/Desktop/math/.noeaaeue/scripts/check.py",
+      "sha256": "e7d8a0178573523db5c77799d3fa944fe989947dabe587c2d8f89b3b43e46a28",
+      "bytes": 11673
+    },
+    {
+      "path": "/Users/think/Desktop/math/.noeaaeue/scripts/test_incremental_validation_drivers.py",
+      "sha256": "c0d453eec8f4b66abade254eed011ddf2fd621717c1e0e6c06afd03c551189d4",
+      "bytes": 22832
+    },
+    {
+      "path": "/Users/think/Desktop/math/.noeaaeue/scripts/incremental_lean.py",
+      "sha256": "089f5c980be2aa3b1606ae9ddf12a09ec5df2bf6d6544f52690447b640882f12",
+      "bytes": 60843
+    },
+    {
+      "path": "/Users/think/Desktop/math/.noeaaeue/scripts/cache_math.py",
+      "sha256": "d73bebfeca4ec709fdc68741cba13a09611ae49a0095b4140dd5d2f3e6bb1c06",
+      "bytes": 36017
+    },
+    {
+      "path": "/Users/think/Desktop/math/.noeaaeue/scripts/monitor_math.py",
+      "sha256": "a757804707ffe811aa27d295aa82dcdaddf7b3c90f9c3bd6a47d27ec3b0890e3",
+      "bytes": 85340
+    }
+  ],
+  "source_bytes_unchanged": true,
+  "all_unmocked_process_signal_routes_forbidden_by_fixture_setup": true,
+  "native_lean_executions": 0,
+  "native_lake_executions": 0,
+  "git_executions": 0,
+  "proof_acceptance_claim": false,
+  "reason_for_rerun": "Engine typed canonical descriptor semantics changed from00b8 to final089; no driver/test code changed."
+}

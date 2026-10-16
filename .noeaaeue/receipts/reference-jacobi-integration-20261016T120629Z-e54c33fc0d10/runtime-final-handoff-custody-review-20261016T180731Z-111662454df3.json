@@ -1,0 +1,340 @@
+{
+  "B8_readset": {
+    "bytes": 272206,
+    "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/held-public-metadata887-inputs-20261016T170028Z-8cc8b945aa11.json",
+    "sha256": "b8c9c0176802e2c97ec6562670c84c5244dd0407e35f4304b52bc5d583f063c5"
+  },
+  "append_only_addenda": [
+    {
+      "bytes": 2142,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/runtime-identity-repair/final-handoff-20261016T180014Z-ac9a41c0/public33-source-binding-addendum.json",
+      "sha256": "bc8e8f5f274bf11e978741da15a1b1ee59b75b9072df0cd645c866e94f02e6de"
+    },
+    {
+      "bytes": 935,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/runtime-identity-repair/final-handoff-20261016T180014Z-ac9a41c0/verifier-type-addendum.json",
+      "sha256": "201fc5d294fe86bcdcdf601263680426d72734ebdc9911fa056200bdeb629470"
+    }
+  ],
+  "at": "2026-10-16T18:07:31.589524+00:00",
+  "changed_manifest": {
+    "bytes": 94022,
+    "path": "/Users/think/Desktop/math/.noeaaeue/.local/runtime-identity-repair/final-handoff-20261016T180014Z-ac9a41c0/changed-source-manifest.json",
+    "sha256": "b3a856ec559ef81318206dbe19806799cd5e1d0003809cf9552d1ad55d9d4482"
+  },
+  "control_receipt_identities": [
+    {
+      "bytes": 1695,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/runtime-identity-repair/engine-final-normal.json",
+      "sha256": "fc4fb973beb71be0f186a71e9fa68cc7d737bd9ac7284f64d8a811f0c29ced4d"
+    },
+    {
+      "bytes": 1701,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/runtime-identity-repair/engine-final-optimized.json",
+      "sha256": "51af46ee932856756fdf9a27f1102492a3bfc0a25a97d46b816874aec5055e54"
+    },
+    {
+      "bytes": 132,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/runtime-identity-repair/public-only-normal-089f.txt",
+      "sha256": "9aadb8f27b2ffffe8316ec15704babf7bd6527ebdb9a7375f4ca2dc9f5aafcb0"
+    },
+    {
+      "bytes": 132,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/runtime-identity-repair/public-only-optimized-089f.txt",
+      "sha256": "8746f215a717a652dcf570fa1cadb77c7eb869c1b302d61cdad671b5fbae4f00"
+    },
+    {
+      "bytes": 1457,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/selected-runtime-repair-verification/20261016T175802Z-34d3259f1985/verification-receipt.json",
+      "sha256": "4070c697bee9639ab6154de1a9f0fe5f1da471cfb899f0e1aad9f8ea06184a04"
+    },
+    {
+      "bytes": 2246,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/runtime-driver-update/preimages-20261016T174821Z-c6345e10fba6/final-engine-089/verification-receipt.json",
+      "sha256": "61b5891cc1fbcbe3840d7afa2ac3a5c233ffb30cb3022ab4aad5fe613ef78032"
+    },
+    {
+      "bytes": 7643,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/moebius-incremental-verification/runtime-final-j7h_ay9e/verification-receipt.json",
+      "sha256": "4ad33beb989bfacc50b009384d69f583c3ddef26690c92ff79f4ffe38832393c"
+    },
+    {
+      "bytes": 3943,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/runtime-app-compatibility/preimages-20261016T175436Z-bef7e6bfb6b4/verification-receipt.json",
+      "sha256": "462ac468098a4fa97827fec379a7979a67127c95571632090325e0835bbc6531"
+    },
+    {
+      "bytes": 9313,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/producer-runtime-successor-controls-20261016T175627Z-bd4400b565ff4f43a49affedbc4ed721/receipt.json",
+      "sha256": "b36538f1e34c4d02a5ba317ebc01cce6ad7fee992555acaf9fc4a7249bf12caf"
+    }
+  ],
+  "control_schemas_checked": [
+    {
+      "schema": "source-bound-pure-engine-tests-v1",
+      "suite": "engine-normal"
+    },
+    {
+      "schema": "source-bound-pure-engine-tests-v1",
+      "suite": "engine-optimized"
+    },
+    {
+      "schema": "selected-runtime-repair-python-verification-v1",
+      "suite": "selected-normal-and-optimized"
+    },
+    {
+      "schema": "runtime-legacy-catalog-final-engine-verification-v1",
+      "suite": "catalog-legacy-normal-and-optimized"
+    },
+    {
+      "schema": "application-runtime-mock-verification-v1",
+      "suite": "application-normal-and-optimized"
+    },
+    {
+      "schema": "compiler-runtime-app-compatibility-verification-v1",
+      "suite": "application-compatibility-normal-and-optimized"
+    },
+    {
+      "schema": "producer-runtime-successor-controls-v1",
+      "suite": "producer-normal-and-optimized"
+    },
+    {
+      "schema": "source-bound-public33-pure-controls-v1",
+      "suite": "public33-new-normal"
+    },
+    {
+      "schema": "source-bound-public33-pure-controls-v1",
+      "suite": "public33-new-optimized"
+    }
+  ],
+  "errors": [],
+  "finite_readback": {
+    "bound_bytes_per_file": 100000000,
+    "errors": [],
+    "final_reread_count": 1759,
+    "identity_list_sha256": "7c291ed1c1d0b11a2a59882144f31676c92b6728c36efaad5085b10f4f633301",
+    "selection": "Explicit supplied manifests plus recorded source/log/receipt identities, not recursive .local or .lake copy/discovery.",
+    "unique_named_regular_files_hashed": 1759
+  },
+  "handoff": {
+    "bytes": 12591,
+    "path": "/Users/think/Desktop/math/.noeaaeue/.local/runtime-identity-repair/final-handoff-20261016T180014Z-ac9a41c0/handoff.json",
+    "sha256": "d8241dafd85cf64168904ffcad7305032a5757540dcb5cbd5e1922c9d7a7edd1"
+  },
+  "historical_limits": [
+    "All496normal+496optimized checks remain operational pure/mock source qualification, never Lean theorem or actual APP/public admission.",
+    "Native0 fields are exact supplied-record claims; this review launches none and makes no forensic claim about all host process history.",
+    "Old executable-only B8 first/warm and c8 source-only candidate remain historical/non-runtime-qualified; no hashes or origins refreshed.",
+    "CurrentB4/B778/cachecurrentcf31 preserved; native/source-only/default/readset release remains coordinator/root-owned.",
+    "Full repaired public first/warm and actual APP native qualification remain separate required gates."
+  ],
+  "mathematical_acceptance": false,
+  "matrix_normal_plus_optimized": 992,
+  "matrix_per_mode": 496,
+  "native_jobs": 0,
+  "operations": [
+    "Finite named byte hashing and JSON inspection",
+    "One new compact create-only receipt"
+  ],
+  "project_imports": 0,
+  "protected_metadata": {
+    "B4": {
+      "bytes": 229243,
+      "path": "/Users/think/Desktop/math/.noeaaeue/bindings/moebius-current-inputs-current.json",
+      "sha256": "b4ea709d3636c3432cf954d2b684240b5639434fde1244eee2f10058e0a37d62"
+    },
+    "B778": {
+      "bytes": 5026087,
+      "path": "/Users/think/Desktop/math/.noeaaeue/bindings/current-source-observations.json",
+      "sha256": "b7788ea609d810c4221cefb653e2ff0eb483f60034ff528edefdab9f220d59c3"
+    },
+    "cache_current": {
+      "bytes": 124,
+      "path": "/Users/think/Desktop/math/.noeaaeue/cache/refs/current.json",
+      "sha256": "d660ca18b7c136446eba569244e7498d321a500a067bfd59bae549abd4f1cfec"
+    }
+  },
+  "public33_seam": {
+    "counting": "Use source-bound33+33 rerun in496/mode matrix; original66 historical raw-log runs not double-counted as new coverage.",
+    "new_logs": [
+      {
+        "bytes": 3607,
+        "path": "/Users/think/Desktop/math/.noeaaeue/.local/runtime-identity-repair/final-public33-source-bound/normal.log",
+        "sha256": "b72a8aad0870a9bdd38965d9d167ab73d4f1b4761ce283b709deccee917e126e"
+      },
+      {
+        "bytes": 3607,
+        "path": "/Users/think/Desktop/math/.noeaaeue/.local/runtime-identity-repair/final-public33-source-bound/optimized.log",
+        "sha256": "66951d352b172289e0582cda33733149e71218d7c418d6f33a6440a82b5fbcaa"
+      }
+    ],
+    "new_result": "Each existing33 normal/optimized test rerun binds13 exact before/after sources and zero target/external attempts. Verified current hashes and counts.",
+    "new_source_bound_receipts": [
+      {
+        "bytes": 5373,
+        "path": "/Users/think/Desktop/math/.noeaaeue/.local/runtime-identity-repair/final-public33-source-bound/normal.json",
+        "sha256": "955caaf415eec2732422084793ee727fcde0ec02f116170dc4fbc96fb1fbf57d"
+      },
+      {
+        "bytes": 5379,
+        "path": "/Users/think/Desktop/math/.noeaaeue/.local/runtime-identity-repair/final-public33-source-bound/optimized.json",
+        "sha256": "f50d05d0545e5e15b0782bca0fe91dc305c4fb4a783d41ca6405be747c3cc853"
+      }
+    ],
+    "original_two132B_logs": "Preserved at original hashes; no retroactive source-binding claim."
+  },
+  "real_runtime_observation": false,
+  "reconciliation": {
+    "B8_inputs": 1488,
+    "archive_kinds": [
+      "old_archive_source",
+      "retained_preimage",
+      "frozen_postimage"
+    ],
+    "archive_occurrences_verified": 228,
+    "live_postimages_verified": 76,
+    "math_deltas": 0,
+    "named_Lean_sources_unchanged": 887,
+    "old_B8_to_new_process_test_deltas": 76,
+    "other_B8_inputs_unchanged": 1412,
+    "scope_limit": "Only finite named B8/manifest/control inputs checked; no global untracked file inventory or live HEAD/index Git probe."
+  },
+  "recorded_runtime_JSON_only": {
+    "actual_runtime_files_inspected": 0,
+    "canonical_descriptor_digest": "c48f0fb338d4947e55e4f3974e49b7d1d4a12ad0ac0a783355a135d7bda01f7d",
+    "matches_claimed": true,
+    "note": "Only JSON wrapper and inner descriptor digest checked; no compiler/dylib/system-runtime file opened.",
+    "raw": {
+      "bytes": 18475,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/runtime-identity-repair/static-current-runtime-089f.json",
+      "sha256": "794d87507632f08121882463e440d63ec5750417c03d11f8b7e1cda0af87a7a1"
+    }
+  },
+  "reviewer": "cache_adapter",
+  "schema": "runtime-identity-final-handoff-byte-custody-review-v1",
+  "scope": "Independent byte/hash and JSON-receipt consistency check only; correlated model review, no native/runtime/proof validation.",
+  "seven_pure_control_counts_per_mode": {
+    "application": 46,
+    "catalog_legacy": 14,
+    "compatibility": 211,
+    "engine": 55,
+    "producer": 114,
+    "public": 33,
+    "selected": 23
+  },
+  "source_identity_sets_checked": [
+    {
+      "label": "engine-normal:source_before",
+      "occurrences": 4
+    },
+    {
+      "label": "engine-normal:source_after",
+      "occurrences": 4
+    },
+    {
+      "label": "engine-optimized:source_before",
+      "occurrences": 4
+    },
+    {
+      "label": "engine-optimized:source_after",
+      "occurrences": 4
+    },
+    {
+      "label": "selected63manifest",
+      "occurrences": 63
+    },
+    {
+      "label": "catalog-legacy-normal-and-optimized:source_identities",
+      "occurrences": 6
+    },
+    {
+      "label": "catalog-legacy-normal-and-optimized:sub:sources_before",
+      "occurrences": 6
+    },
+    {
+      "label": "catalog-legacy-normal-and-optimized:sub:sources_after",
+      "occurrences": 6
+    },
+    {
+      "label": "catalog-legacy-normal-and-optimized:sub:sources_before",
+      "occurrences": 6
+    },
+    {
+      "label": "catalog-legacy-normal-and-optimized:sub:sources_after",
+      "occurrences": 6
+    },
+    {
+      "label": "application-normal-and-optimized:sources",
+      "occurrences": 10
+    },
+    {
+      "label": "application-compatibility-normal-and-optimized:fixture_source_identities",
+      "occurrences": 2
+    },
+    {
+      "label": "application-compatibility-normal-and-optimized:sub:sources_before",
+      "occurrences": 13
+    },
+    {
+      "label": "application-compatibility-normal-and-optimized:sub:sources_after",
+      "occurrences": 13
+    },
+    {
+      "label": "application-compatibility-normal-and-optimized:sub:sources_before",
+      "occurrences": 13
+    },
+    {
+      "label": "application-compatibility-normal-and-optimized:sub:sources_after",
+      "occurrences": 13
+    },
+    {
+      "label": "producer-normal-and-optimized:sources_before",
+      "occurrences": 7
+    },
+    {
+      "label": "producer-normal-and-optimized:sources_after",
+      "occurrences": 7
+    },
+    {
+      "label": "producer_summary_bindings",
+      "occurrences": 7
+    },
+    {
+      "label": "producer_summary_bindings",
+      "occurrences": 7
+    },
+    {
+      "label": "public33-new-normal:source_before",
+      "occurrences": 13
+    },
+    {
+      "label": "public33-new-normal:source_after",
+      "occurrences": 13
+    },
+    {
+      "label": "public33-new-optimized:source_before",
+      "occurrences": 13
+    },
+    {
+      "label": "public33-new-optimized:source_after",
+      "occurrences": 13
+    }
+  ],
+  "source_shared_metadata_ref_Git_mutations": false,
+  "status": "EXACT_FINITE_CUSTODY_RECONCILED",
+  "tests_run_by_reviewer": 0,
+  "verifier_addendum": {
+    "new_typed_source": {
+      "bytes": 19654,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/incremental-warm-verification/verify_runtime_pair_typed.py",
+      "sha256": "50e81ddb9b52ce4c64811610f81691a0ffe742ac182edd98c53a8e1048ae9698"
+    },
+    "note": "Both exact sources retained. No actual repaired pair ran here; source custody does not qualify a native pair.",
+    "old_unused_source": {
+      "bytes": 18995,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/incremental-warm-verification/verify_runtime_pair.py",
+      "sha256": "68bbccf358ae84c6656d49c516e23f47d860332a69bf235542e88dbf0b22628a"
+    },
+    "source_only": true
+  }
+}

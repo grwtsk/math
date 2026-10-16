@@ -1,0 +1,455 @@
+{
+  "schema": "static-runtime-observation-no-proof-acceptance-v1",
+  "compiler_runtime_identity": {
+    "schema": "lean-compiler-runtime-v1",
+    "executable": {
+      "path": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+      "sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+      "bytes": 49968
+    },
+    "format": "thin-64-bit-mach-o",
+    "cpu_type": 16777228,
+    "cpu_subtype": 0,
+    "objects": {
+      "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean": {
+        "sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+        "bytes": 49968
+      },
+      "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean/libInit_shared.dylib": {
+        "sha256": "cb203e0bc0e6ab3250b2804d3e5398ad3a91544b5e049674532f73b7a062ef7f",
+        "bytes": 16736
+      },
+      "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean/libLake_shared.dylib": {
+        "sha256": "d8bcae89d5913783b44a05c922f3f0bdd9175dab790fda8e292623a36d79e5a3",
+        "bytes": 9759056
+      },
+      "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean/libleanshared.dylib": {
+        "sha256": "2fc79202bfe36e7db7e2db0f3b8d3b9ede110d279cc9cf37d22327160c166ddf",
+        "bytes": 173473536
+      },
+      "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean/libleanshared_1.dylib": {
+        "sha256": "e44858e227323a23ce7416c5678415d2d022582b1627ad3690117ce73cd6345a",
+        "bytes": 16736
+      },
+      "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean/libleanshared_2.dylib": {
+        "sha256": "be68927a4f282b99383e82af4d481b4ffe59f2a243aea20dae0e60b39c2ae182",
+        "bytes": 16736
+      }
+    },
+    "resolutions": [
+      {
+        "loader": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "rpaths": [
+          "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib",
+          "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean"
+        ],
+        "command": 12,
+        "name": "@rpath/libInit_shared.dylib",
+        "weak": false,
+        "candidates": [
+          {
+            "path": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/libInit_shared.dylib",
+            "state": "absent"
+          },
+          {
+            "path": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean/libInit_shared.dylib",
+            "state": "present",
+            "sha256": "cb203e0bc0e6ab3250b2804d3e5398ad3a91544b5e049674532f73b7a062ef7f",
+            "bytes": 16736
+          }
+        ],
+        "selected": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean/libInit_shared.dylib"
+      },
+      {
+        "loader": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean/libInit_shared.dylib",
+        "rpaths": [
+          "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib",
+          "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean"
+        ],
+        "command": 12,
+        "name": "/usr/lib/libc++.dylib",
+        "weak": false,
+        "candidates": [
+          {
+            "path": "/usr/lib/libc++.dylib",
+            "state": "trusted-os-runtime-unfingerprinted"
+          }
+        ],
+        "selected": "/usr/lib/libc++.dylib"
+      },
+      {
+        "loader": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean/libInit_shared.dylib",
+        "rpaths": [
+          "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib",
+          "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean"
+        ],
+        "command": 12,
+        "name": "/usr/lib/libSystem.B.dylib",
+        "weak": false,
+        "candidates": [
+          {
+            "path": "/usr/lib/libSystem.B.dylib",
+            "state": "trusted-os-runtime-unfingerprinted"
+          }
+        ],
+        "selected": "/usr/lib/libSystem.B.dylib"
+      },
+      {
+        "loader": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "rpaths": [
+          "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib",
+          "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean"
+        ],
+        "command": 12,
+        "name": "@rpath/libleanshared_2.dylib",
+        "weak": false,
+        "candidates": [
+          {
+            "path": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/libleanshared_2.dylib",
+            "state": "absent"
+          },
+          {
+            "path": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean/libleanshared_2.dylib",
+            "state": "present",
+            "sha256": "be68927a4f282b99383e82af4d481b4ffe59f2a243aea20dae0e60b39c2ae182",
+            "bytes": 16736
+          }
+        ],
+        "selected": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean/libleanshared_2.dylib"
+      },
+      {
+        "loader": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean/libleanshared_2.dylib",
+        "rpaths": [
+          "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib",
+          "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean"
+        ],
+        "command": 12,
+        "name": "/usr/lib/libc++.dylib",
+        "weak": false,
+        "candidates": [
+          {
+            "path": "/usr/lib/libc++.dylib",
+            "state": "trusted-os-runtime-unfingerprinted"
+          }
+        ],
+        "selected": "/usr/lib/libc++.dylib"
+      },
+      {
+        "loader": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean/libleanshared_2.dylib",
+        "rpaths": [
+          "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib",
+          "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean"
+        ],
+        "command": 12,
+        "name": "/usr/lib/libSystem.B.dylib",
+        "weak": false,
+        "candidates": [
+          {
+            "path": "/usr/lib/libSystem.B.dylib",
+            "state": "trusted-os-runtime-unfingerprinted"
+          }
+        ],
+        "selected": "/usr/lib/libSystem.B.dylib"
+      },
+      {
+        "loader": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "rpaths": [
+          "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib",
+          "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean"
+        ],
+        "command": 12,
+        "name": "@rpath/libleanshared_1.dylib",
+        "weak": false,
+        "candidates": [
+          {
+            "path": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/libleanshared_1.dylib",
+            "state": "absent"
+          },
+          {
+            "path": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean/libleanshared_1.dylib",
+            "state": "present",
+            "sha256": "e44858e227323a23ce7416c5678415d2d022582b1627ad3690117ce73cd6345a",
+            "bytes": 16736
+          }
+        ],
+        "selected": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean/libleanshared_1.dylib"
+      },
+      {
+        "loader": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean/libleanshared_1.dylib",
+        "rpaths": [
+          "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib",
+          "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean"
+        ],
+        "command": 12,
+        "name": "/usr/lib/libc++.dylib",
+        "weak": false,
+        "candidates": [
+          {
+            "path": "/usr/lib/libc++.dylib",
+            "state": "trusted-os-runtime-unfingerprinted"
+          }
+        ],
+        "selected": "/usr/lib/libc++.dylib"
+      },
+      {
+        "loader": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean/libleanshared_1.dylib",
+        "rpaths": [
+          "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib",
+          "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean"
+        ],
+        "command": 12,
+        "name": "/usr/lib/libSystem.B.dylib",
+        "weak": false,
+        "candidates": [
+          {
+            "path": "/usr/lib/libSystem.B.dylib",
+            "state": "trusted-os-runtime-unfingerprinted"
+          }
+        ],
+        "selected": "/usr/lib/libSystem.B.dylib"
+      },
+      {
+        "loader": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "rpaths": [
+          "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib",
+          "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean"
+        ],
+        "command": 12,
+        "name": "@rpath/libleanshared.dylib",
+        "weak": false,
+        "candidates": [
+          {
+            "path": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/libleanshared.dylib",
+            "state": "absent"
+          },
+          {
+            "path": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean/libleanshared.dylib",
+            "state": "present",
+            "sha256": "2fc79202bfe36e7db7e2db0f3b8d3b9ede110d279cc9cf37d22327160c166ddf",
+            "bytes": 173473536
+          }
+        ],
+        "selected": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean/libleanshared.dylib"
+      },
+      {
+        "loader": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean/libleanshared.dylib",
+        "rpaths": [
+          "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib",
+          "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean"
+        ],
+        "command": 12,
+        "name": "/usr/lib/libc++.dylib",
+        "weak": false,
+        "candidates": [
+          {
+            "path": "/usr/lib/libc++.dylib",
+            "state": "trusted-os-runtime-unfingerprinted"
+          }
+        ],
+        "selected": "/usr/lib/libc++.dylib"
+      },
+      {
+        "loader": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean/libleanshared.dylib",
+        "rpaths": [
+          "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib",
+          "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean"
+        ],
+        "command": 12,
+        "name": "/usr/lib/libSystem.B.dylib",
+        "weak": false,
+        "candidates": [
+          {
+            "path": "/usr/lib/libSystem.B.dylib",
+            "state": "trusted-os-runtime-unfingerprinted"
+          }
+        ],
+        "selected": "/usr/lib/libSystem.B.dylib"
+      },
+      {
+        "loader": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "rpaths": [
+          "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib",
+          "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean"
+        ],
+        "command": 12,
+        "name": "/usr/lib/libSystem.B.dylib",
+        "weak": false,
+        "candidates": [
+          {
+            "path": "/usr/lib/libSystem.B.dylib",
+            "state": "trusted-os-runtime-unfingerprinted"
+          }
+        ],
+        "selected": "/usr/lib/libSystem.B.dylib"
+      },
+      {
+        "loader": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean/libLake_shared.dylib",
+        "rpaths": [
+          "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib",
+          "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean"
+        ],
+        "command": 12,
+        "name": "@rpath/libleanshared.dylib",
+        "weak": false,
+        "candidates": [
+          {
+            "path": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/libleanshared.dylib",
+            "state": "absent"
+          },
+          {
+            "path": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean/libleanshared.dylib",
+            "state": "present",
+            "sha256": "2fc79202bfe36e7db7e2db0f3b8d3b9ede110d279cc9cf37d22327160c166ddf",
+            "bytes": 173473536
+          }
+        ],
+        "selected": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean/libleanshared.dylib"
+      },
+      {
+        "loader": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean/libLake_shared.dylib",
+        "rpaths": [
+          "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib",
+          "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean"
+        ],
+        "command": 12,
+        "name": "@rpath/libleanshared_2.dylib",
+        "weak": false,
+        "candidates": [
+          {
+            "path": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/libleanshared_2.dylib",
+            "state": "absent"
+          },
+          {
+            "path": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean/libleanshared_2.dylib",
+            "state": "present",
+            "sha256": "be68927a4f282b99383e82af4d481b4ffe59f2a243aea20dae0e60b39c2ae182",
+            "bytes": 16736
+          }
+        ],
+        "selected": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean/libleanshared_2.dylib"
+      },
+      {
+        "loader": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean/libLake_shared.dylib",
+        "rpaths": [
+          "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib",
+          "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean"
+        ],
+        "command": 12,
+        "name": "@rpath/libleanshared_1.dylib",
+        "weak": false,
+        "candidates": [
+          {
+            "path": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/libleanshared_1.dylib",
+            "state": "absent"
+          },
+          {
+            "path": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean/libleanshared_1.dylib",
+            "state": "present",
+            "sha256": "e44858e227323a23ce7416c5678415d2d022582b1627ad3690117ce73cd6345a",
+            "bytes": 16736
+          }
+        ],
+        "selected": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean/libleanshared_1.dylib"
+      },
+      {
+        "loader": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean/libLake_shared.dylib",
+        "rpaths": [
+          "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib",
+          "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean"
+        ],
+        "command": 12,
+        "name": "@rpath/libInit_shared.dylib",
+        "weak": false,
+        "candidates": [
+          {
+            "path": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/libInit_shared.dylib",
+            "state": "absent"
+          },
+          {
+            "path": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean/libInit_shared.dylib",
+            "state": "present",
+            "sha256": "cb203e0bc0e6ab3250b2804d3e5398ad3a91544b5e049674532f73b7a062ef7f",
+            "bytes": 16736
+          }
+        ],
+        "selected": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean/libInit_shared.dylib"
+      },
+      {
+        "loader": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean/libLake_shared.dylib",
+        "rpaths": [
+          "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib",
+          "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean"
+        ],
+        "command": 12,
+        "name": "/usr/lib/libc++.dylib",
+        "weak": false,
+        "candidates": [
+          {
+            "path": "/usr/lib/libc++.dylib",
+            "state": "trusted-os-runtime-unfingerprinted"
+          }
+        ],
+        "selected": "/usr/lib/libc++.dylib"
+      },
+      {
+        "loader": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean/libLake_shared.dylib",
+        "rpaths": [
+          "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib",
+          "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean"
+        ],
+        "command": 12,
+        "name": "/usr/lib/libSystem.B.dylib",
+        "weak": false,
+        "candidates": [
+          {
+            "path": "/usr/lib/libSystem.B.dylib",
+            "state": "trusted-os-runtime-unfingerprinted"
+          }
+        ],
+        "selected": "/usr/lib/libSystem.B.dylib"
+      }
+    ],
+    "lean_library_inventory": {
+      "path": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean",
+      "present": true,
+      "files": [
+        {
+          "path": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean/libInit_shared.dylib",
+          "sha256": "cb203e0bc0e6ab3250b2804d3e5398ad3a91544b5e049674532f73b7a062ef7f",
+          "bytes": 16736
+        },
+        {
+          "path": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean/libLake_shared.dylib",
+          "sha256": "d8bcae89d5913783b44a05c922f3f0bdd9175dab790fda8e292623a36d79e5a3",
+          "bytes": 9759056
+        },
+        {
+          "path": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean/libleanshared.dylib",
+          "sha256": "2fc79202bfe36e7db7e2db0f3b8d3b9ede110d279cc9cf37d22327160c166ddf",
+          "bytes": 173473536
+        },
+        {
+          "path": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean/libleanshared_1.dylib",
+          "sha256": "e44858e227323a23ce7416c5678415d2d022582b1627ad3690117ce73cd6345a",
+          "bytes": 16736
+        },
+        {
+          "path": "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean/libleanshared_2.dylib",
+          "sha256": "be68927a4f282b99383e82af4d481b4ffe59f2a243aea20dae0e60b39c2ae182",
+          "bytes": 16736
+        }
+      ]
+    },
+    "loader_environment": {},
+    "scope": {
+      "loader_overrides": "reject-nonempty-DYLD_*-LD_*-and-LEAN_SYSROOT",
+      "system_runtime": "trusted-unfingerprinted-/usr/lib-and-/System/Library-and-/usr/lib/dyld",
+      "native_loading": "static-Mach-O-closure-plus-direct-lib/lean-dylib-inventory",
+      "resolution": "ordered-first-present-hint;all-present-private-candidate-closures-bound",
+      "hostile_loader_confinement": false
+    }
+  },
+  "compiler_runtime_sha256": "c48f0fb338d4947e55e4f3974e49b7d1d4a12ad0ac0a783355a135d7bda01f7d",
+  "target_executions": 0,
+  "scope": "Current static bytes only; prior executable-only proof receipts are preserved and are not retroactively qualified."
+}

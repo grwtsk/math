@@ -1,0 +1,24 @@
+{
+  "capture_controls": {
+    "bytes": 3647,
+    "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/runtime-bound-capture-pure-controls-20261016T181227Z-69ebdd37daa840ccbe5418a48a493fe5/receipt.json",
+    "sha256": "8dce829c9e5709fc2be10ffa0fed2d0d4c378eb698cd61c0b64bb919e6302740"
+  },
+  "capture_wrapper": {
+    "bytes": 12456,
+    "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/capture_runtime_bound_public_inputs_v1.py",
+    "sha256": "52d934a64df0b59aae0284a42696a3b34035bb0e690146457d76bbb9c4bf8df3"
+  },
+  "head": "d25ccee49a781e150e991f885cb00f8be8f6e453",
+  "metadata_result": {
+    "bytes": 4710,
+    "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/runtime-only-observation-20261016T181104Z-c2f7169865ce.json",
+    "sha256": "e68c67917cc06fcc06ae1a86b57278fe04ff2871436946527db54bbece01a708"
+  },
+  "outputs": {
+    "plan": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/held-public-runtime-bound-plan-20261016T181243Z-06a3f68d6d98.json",
+    "readset": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/held-public-runtime-bound-inputs-20261016T181243Z-06a3f68d6d98.json"
+  },
+  "root": "/Users/think/Desktop/math",
+  "schema": "runtime-bound-public-capture-request-v1"
+}

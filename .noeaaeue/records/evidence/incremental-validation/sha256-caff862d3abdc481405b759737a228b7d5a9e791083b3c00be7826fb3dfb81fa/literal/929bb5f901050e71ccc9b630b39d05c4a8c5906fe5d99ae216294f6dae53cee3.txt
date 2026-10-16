@@ -1,0 +1,43 @@
+{
+  "schema": "incremental-engine-finish-tests-v1",
+  "results": [
+    {
+      "mode": "normal",
+      "argv": [
+        "python3",
+        "-B",
+        ".noeaaeue/scripts/test_incremental_lean.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.5590699170000001,
+      "log": "/Users/think/Desktop/math/.noeaaeue/.local/incremental-engine-finish-20261016T144724Z/normal.log",
+      "sha256": "e023e907e55b37389397264bdd278459394a8345f9cd9d39826efd0ccfb3a5bf",
+      "bytes": 132
+    },
+    {
+      "mode": "optimized",
+      "argv": [
+        "python3",
+        "-O",
+        "-B",
+        ".noeaaeue/scripts/test_incremental_lean.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.5646568750000001,
+      "log": "/Users/think/Desktop/math/.noeaaeue/.local/incremental-engine-finish-20261016T144724Z/optimized.log",
+      "sha256": "efc8f766b49044cf30a5a7cf3c4ae0bc8afaec4f550787def52b8947fb9e997c",
+      "bytes": 132
+    }
+  ],
+  "files": {
+    "/Users/think/Desktop/math/.noeaaeue/scripts/incremental_lean.py": {
+      "sha256": "7b6e789ec6f3d8281f3d8d18148e9c9b22748157130e8ba10aa17ac87381e1c1",
+      "bytes": 37339
+    },
+    "/Users/think/Desktop/math/.noeaaeue/scripts/test_incremental_lean.py": {
+      "sha256": "7670c386b50870bf24e2e17b99ade57f8643563c99f3bc42e04cea3c7f19268e",
+      "bytes": 28018
+    }
+  },
+  "native_jobs_at_snapshot": []
+}

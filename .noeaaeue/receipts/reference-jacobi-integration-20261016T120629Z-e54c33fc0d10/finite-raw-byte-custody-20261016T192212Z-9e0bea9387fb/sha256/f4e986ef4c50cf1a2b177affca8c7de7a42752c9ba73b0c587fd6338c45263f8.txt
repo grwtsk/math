@@ -1,0 +1,181 @@
+{
+  "schema": "qualified-runtime-first-warm-result-v1",
+  "outcome": "PASS",
+  "scope": "Actual full-project incremental first and unchanged warm runs; all library proof checks retained. Warm reuses checked native censuses and rebuilds zero library modules; mandatory fresh proof controls remain. No claim of a full cold replay or hostile OS/loader confinement.",
+  "verification_report": {
+    "path": "/Users/think/Desktop/math/.noeaaeue/.local/runtime-identity-repair/actual-runtime-first-warm-pair/verification.json",
+    "sha256": "89da961dded074b569463b75769a7cee69709fa828b94b25a00bb06e856e2c86",
+    "bytes": 1483861
+  },
+  "verifier": {
+    "path": "/Users/think/Desktop/math/.noeaaeue/.local/incremental-warm-verification/verify_runtime_pair_typed.py",
+    "sha256": "50e81ddb9b52ce4c64811610f81691a0ffe742ac182edd98c53a8e1048ae9698",
+    "bytes": 19654
+  },
+  "first_receipt": {
+    "path": "/Users/think/Desktop/math/.noeaaeue/.local/math-trust/20261016T181528Z-d0981d5b01/receipt.json",
+    "sha256": "67c49e791653105507b2585eb57dc71397af372f6758d2ad7e0a71e5e4eb6cb4",
+    "bytes": 27226082
+  },
+  "warm_receipt": {
+    "path": "/Users/think/Desktop/math/.noeaaeue/.local/math-trust/20261016T183536Z-6c1ee7dfee/receipt.json",
+    "sha256": "7decbfd41f3284019ea9294ad6597216fa19c0e555fae5e8fee2f0d6c0175244",
+    "bytes": 27461807
+  },
+  "first_origin": {
+    "path": "/Users/think/Desktop/math/.noeaaeue/.local/math-trust/20261016T181528Z-d0981d5b01/proof-validation-origin.json",
+    "sha256": "70ee67f5a0eca795bced148b3368805a31272bcdd92bdd542dc85c0724e252b0",
+    "bytes": 21933859,
+    "attempt_id": "math-trust:20261016T181528Z-d0981d5b01"
+  },
+  "warm_origin": {
+    "path": "/Users/think/Desktop/math/.noeaaeue/.local/math-trust/20261016T183536Z-6c1ee7dfee/proof-validation-origin.json",
+    "sha256": "e30b73d26010e740fbf02b77e18ea79ab58ada160e62443f9c053d8ff22a8471",
+    "bytes": 22076845,
+    "attempt_id": "math-trust:20261016T183536Z-6c1ee7dfee"
+  },
+  "source_count": 453,
+  "declarations": 12268,
+  "compiler_runtime_sha256": "c48f0fb338d4947e55e4f3974e49b7d1d4a12ad0ac0a783355a135d7bda01f7d",
+  "runtime_objects": 6,
+  "first_counters": {
+    "audit_cache_hits": 0,
+    "audited_modules": 453,
+    "compilation_cache_hits": 0,
+    "compiled": 453,
+    "native_audit_commands": 1
+  },
+  "warm_counters": {
+    "audit_cache_hits": 453,
+    "audited_modules": 0,
+    "compilation_cache_hits": 453,
+    "compiled": 0,
+    "native_audit_commands": 0
+  },
+  "artifact_families_checked": 453,
+  "inputs_rechecked": 5125,
+  "origin_records_checked": 2,
+  "all_six_outer_stages_actual_exit_zero": true,
+  "stages": {
+    "first": [
+      {
+        "stage": "ordinary-build",
+        "seconds": 5.745100166008342,
+        "result": {
+          "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/serial-runtime-public-first-20261016T181417Z-76fc63400da9/01-ordinary-build-result.json",
+          "sha256": "7fb0e6b61eec6e064f4637c84d5ac34942758f910a8018c5a1250cb9f0257f75",
+          "bytes": 976
+        }
+      },
+      {
+        "stage": "native-self-test",
+        "seconds": 7.705600291956216,
+        "result": {
+          "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/serial-runtime-public-first-20261016T181417Z-76fc63400da9/02-native-self-test-result.json",
+          "sha256": "015a5e915749896c9c2d7bf9a0bdf06d783a4d9763fd0251b5f6c13898c7dd74",
+          "bytes": 1495
+        }
+      },
+      {
+        "stage": "public-replay",
+        "seconds": 986.1644492089981,
+        "result": {
+          "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/serial-runtime-public-first-20261016T181417Z-76fc63400da9/03-public-replay-result.json",
+          "sha256": "552af834b443a8fd7e8a9c9f4f96b358d9c5259e5e6dfa39a51ca22518ed3d84",
+          "bytes": 1510
+        }
+      }
+    ],
+    "warm": [
+      {
+        "stage": "ordinary-build",
+        "seconds": 3.957551917003002,
+        "result": {
+          "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/serial-runtime-public-warm-20261016T181417Z-76fc63400da9/01-ordinary-build-result.json",
+          "sha256": "b2891a6ad8fe6ab79105f9b586d60b2a49a81d49fc67fd14d50543cef72ca50d",
+          "bytes": 976
+        }
+      },
+      {
+        "stage": "native-self-test",
+        "seconds": 6.04165174998343,
+        "result": {
+          "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/serial-runtime-public-warm-20261016T181417Z-76fc63400da9/02-native-self-test-result.json",
+          "sha256": "d3a67572029ab8c58886dd26b04000e3abf82cb56c94045831eaa874c1fb35de",
+          "bytes": 1494
+        }
+      },
+      {
+        "stage": "public-replay",
+        "seconds": 80.04902966698864,
+        "result": {
+          "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/serial-runtime-public-warm-20261016T181417Z-76fc63400da9/03-public-replay-result.json",
+          "sha256": "7949a16d21e13cc6461eeab786b5dc41973e4dfbefdf957f50cd52ae050e2b52",
+          "bytes": 1510
+        }
+      }
+    ]
+  },
+  "outer_receipts": [
+    {
+      "phase": "first",
+      "summary": {
+        "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/serial-runtime-public-first-20261016T181417Z-76fc63400da9/summary.json",
+        "sha256": "33629628273d4ff9d0230d59f87a50a1c37caff8c48ad3fc61f695526ffdfcbf",
+        "bytes": 4545
+      },
+      "phase_context": {
+        "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/serial-runtime-public-first-20261016T181417Z-76fc63400da9/phase-context.json",
+        "sha256": "daf59ba06cc1090ae518e4c16fc56850db782727ad32c93df4eea422fb4d9449",
+        "bytes": 19073
+      }
+    },
+    {
+      "phase": "warm",
+      "summary": {
+        "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/serial-runtime-public-warm-20261016T181417Z-76fc63400da9/summary.json",
+        "sha256": "2cf7c9958bfc63ba0931181cc12af6da979598211ac69cda0a6357e60c187227",
+        "bytes": 4544
+      },
+      "phase_context": {
+        "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/serial-runtime-public-warm-20261016T181417Z-76fc63400da9/phase-context.json",
+        "sha256": "cbf3695e4d70868bc67978bddda886b10907260021d1e7d65816852a89e6e36f",
+        "bytes": 19070
+      }
+    }
+  ],
+  "native_control_runs": [
+    {
+      "receipt": {
+        "path": "/Users/think/Desktop/math/.noeaaeue/.local/math-trust/20261016T181519Z-75f59358bf/receipt.json",
+        "sha256": "e67467bd753578c854eaba3882fece3998ef180a5059de581ca46afb4518c0b1",
+        "bytes": 51072
+      },
+      "passed_controls": 9,
+      "diagnostics_and_trust_zero_verified": true,
+      "only_warning_disabled_control": "sorry-warning-disabled-source"
+    },
+    {
+      "receipt": {
+        "path": "/Users/think/Desktop/math/.noeaaeue/.local/math-trust/20261016T183529Z-eee2dacbd9/receipt.json",
+        "sha256": "88049b93f0589b6ea2fee89b91e2ef523eca0aefbc35f066c540dcec1f92c726",
+        "bytes": 51069
+      },
+      "passed_controls": 9,
+      "diagnostics_and_trust_zero_verified": true,
+      "only_warning_disabled_control": "sorry-warning-disabled-source"
+    }
+  ],
+  "first_replay_seconds": 986.1644492089981,
+  "warm_replay_seconds": 80.04902966698864,
+  "speedup": 12.319505349553058,
+  "compilation_default": "incremental",
+  "full_cold_replay_option": "--cold",
+  "product_source_handoff": {
+    "path": "/Users/think/Desktop/math/.noeaaeue/.local/runtime-identity-repair/final-handoff-20261016T180014Z-ac9a41c0/handoff.json",
+    "sha256": "d8241dafd85cf64168904ffcad7305032a5757540dcb5cbd5e1922c9d7a7edd1",
+    "bytes": 12591
+  },
+  "original_executable_only_pair": "Historical bytes preserved unchanged; not retroactively runtime qualified.",
+  "verifier_native_executions": 0
+}

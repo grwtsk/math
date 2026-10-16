@@ -1,0 +1,7 @@
+{"path":".noeaaeue/coordination/plans/NOE-MATH-WSC-CODEX-0.1.0.md","sha256":"4ad4cff7966c90f577ee5ec18e6a7945e15e825886439ca094b7a7bef701d34a","size_bytes":42243}
+{"path":".noeaaeue/interfaces/registry.lock.json","sha256":"f1d66abaa07a815bbe0d54c1d8d309ebd69f29aff9ca89c30b703fa89bf96857","size_bytes":12013}
+{"path":".noeaaeue/interfaces/schemas/wsc-boundary-v1alpha2.schema.json","sha256":"2d22928eb0f4a23d0d10915bd6500e8ade5a502c14673ecd21f6090d48ff9760","size_bytes":76101}
+{"path":".noeaaeue/records/observations/resume-001/engine-recheck.json","sha256":"107bcbdf49a98db42a5c8e91154e63accfc97685736af6355d22a7c4ff5b4917","size_bytes":9822}
+{"path":".noeaaeue/records/observations/resume-001/source-search/report.json","sha256":"ee7f6c02fa7bb1d3565d85a67e0cd62e54a066b4f8b0efbf194ca2c447981dcc","size_bytes":1761}
+{"path":".noeaaeue/records/receipts/cycle-000-blocked.json","sha256":"02cd7c8f3f56a4b8106d1e6da0882ab43d7f2269dff52c43f5377a8d073c25ac","size_bytes":63204}
+{"path":".noeaaeue/records/resolutions/resume-001/authoring-source.txt","sha256":"c2d6e3451d8f807474c8985c1a331e15e50b327024d53c4927166ccb5ff70a05","size_bytes":36585}

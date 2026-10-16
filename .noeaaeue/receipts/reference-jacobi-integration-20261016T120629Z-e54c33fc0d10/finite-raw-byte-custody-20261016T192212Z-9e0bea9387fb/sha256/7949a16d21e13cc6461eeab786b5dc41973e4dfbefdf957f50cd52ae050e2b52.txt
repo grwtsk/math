@@ -1,0 +1,36 @@
+{
+  "exit_code": 0,
+  "native_acceptance": "PENDING_ROOT_RECEIPT_REVIEW",
+  "native_receipt_candidates": [
+    {
+      "acceptance": "PENDING_ROOT_SOURCE_AND_SCOPE_REVIEW",
+      "bytes": 27461807,
+      "directory": ".noeaaeue/.local/math-trust/20261016T183536Z-6c1ee7dfee",
+      "directory_identity": [
+        16777231,
+        233269542
+      ],
+      "receipt": ".noeaaeue/.local/math-trust/20261016T183536Z-6c1ee7dfee/receipt.json",
+      "reported_kernel_checked": null,
+      "reported_status": "ALL_PROJECT_SOURCE_AND_AXIOM_CHECKS_PASSED",
+      "sha256": "7decbfd41f3284019ea9294ad6597216fa19c0e555fae5e8fee2f0d6c0175244"
+    }
+  ],
+  "pid": 14183,
+  "postflight": {
+    "compiler_runtime_sha256": "c48f0fb338d4947e55e4f3974e49b7d1d4a12ad0ac0a783355a135d7bda01f7d",
+    "contract": ".noeaaeue/bindings/moebius-current-inputs-runtime-observation-20261016T181104Z-c2f7169865ce.json",
+    "contract_sha256": "b37f947774bee8794d174718d06a4d7bd044924821c428c3296313cea705499e",
+    "frozen_inputs_sha256": "d883064612692cf287d50c52a0f255aeb9e7f078ec8ab67aa5c4639c171121b0",
+    "head": "d25ccee49a781e150e991f885cb00f8be8f6e453",
+    "input_count": 1761,
+    "orchestrator_sha256": "05601e37c03f870ed127a6b1e4a691aebb18c16b0acd68372b67dfe545485848",
+    "phase": "public",
+    "release_sha256": "a29630b967d3086ec26c5c46c437cbff692db125852300b7ef15d6684b172888",
+    "source_count": 887
+  },
+  "process_group": 14183,
+  "seconds": 80.04902966698864,
+  "stage": "public-replay",
+  "status": "completed"
+}

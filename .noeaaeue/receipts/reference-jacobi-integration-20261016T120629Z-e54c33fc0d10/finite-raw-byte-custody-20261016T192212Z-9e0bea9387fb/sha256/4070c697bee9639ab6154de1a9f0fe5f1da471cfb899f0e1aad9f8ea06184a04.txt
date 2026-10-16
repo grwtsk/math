@@ -1,0 +1,33 @@
+{
+  "logs": {
+    "normal": {
+      "bytes": 122,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/selected-runtime-repair-verification/20261016T175802Z-34d3259f1985/normal.log",
+      "sha256": "d22321373e2604e0a5b27a5fa32188b5046f617b07386576ec2fba7d3bc58e44"
+    },
+    "optimized": {
+      "bytes": 122,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/selected-runtime-repair-verification/20261016T175802Z-34d3259f1985/optimized.log",
+      "sha256": "789c422adb7b3ebb5e9cad127211b98db633b649620c1ec11cee1d9470a328a9"
+    }
+  },
+  "normal_tests": 23,
+  "optimized_tests": 23,
+  "outcome": "PASS",
+  "preimage_manifest": {
+    "bytes": 10714,
+    "path": "/Users/think/Desktop/math/.noeaaeue/.local/selected-runtime-repair-preimages/20261016T175336Z-cec26b3efc34/manifest.json",
+    "sha256": "309668fa478dd894bc5b8586d57a2f317156afbcf9099cc2aa2aeacb2699c25c"
+  },
+  "schema": "selected-runtime-repair-python-verification-v1",
+  "scope": "Pure mocked/static controls only; no native proof validation or mathematical acceptance",
+  "selected_validators": 59,
+  "source_drift": false,
+  "source_manifest": {
+    "bytes": 10136,
+    "path": "/Users/think/Desktop/math/.noeaaeue/.local/selected-runtime-repair-verification/20261016T175802Z-34d3259f1985/source-manifest.json",
+    "sha256": "f5333896b1ea2c38182bdc603afef162df4a2005f00aee1b76b20775136b3315"
+  },
+  "sources": 63,
+  "unmocked_process_routes": "blocked in each test setUp"
+}

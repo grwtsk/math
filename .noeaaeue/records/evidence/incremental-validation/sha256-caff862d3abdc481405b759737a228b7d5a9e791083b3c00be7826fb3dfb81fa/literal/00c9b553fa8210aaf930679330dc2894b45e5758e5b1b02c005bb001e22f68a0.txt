@@ -1,0 +1,6 @@
+test_warm_run_edit_dependents_and_empty_umbrella (__main__.NativeIncrementalReplay) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 52.208s
+
+OK

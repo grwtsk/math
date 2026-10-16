@@ -1,0 +1,60 @@
+{
+  "current": [
+    {
+      "bytes": 5795,
+      "path": "/Users/think/Desktop/math/docs/mathematics/Combinatorics/DirectedGraph/prefix-table-direct-lookup.md",
+      "sha256": "986ba02fca41f5e61ad1f279593e784ece843d46497d57fd5ebcd1f2240cd808"
+    },
+    {
+      "bytes": 6608,
+      "path": "/Users/think/Desktop/math/docs/mathematics/NumberTheory/Cyclotomic/third-cyclotomic-jacobi.md",
+      "sha256": "285cbac50595b0e0bf9c95d0e78a66288b320dfac64500cf0349ed0ae28398b1"
+    },
+    {
+      "bytes": 204831,
+      "path": "/Users/think/Desktop/math/.noeaaeue/documentation/reference/documentation-layout.json",
+      "sha256": "0b18ef277b29b69746fd88a923c86e0dcea0c84c99e82de965e6854a0075d53a"
+    }
+  ],
+  "prior_bytes": [
+    {
+      "original": {
+        "bytes": 5741,
+        "path": "/Users/think/Desktop/math/docs/mathematics/Combinatorics/DirectedGraph/prefix-table-direct-lookup.md",
+        "sha256": "d7c4a626d1b4c47084e730f85047d7fab1e18094d5639364b9a7a51fa6f459f7"
+      },
+      "raw_preimage": {
+        "bytes": 5741,
+        "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/prior-two-guide-evidence-20261016T190853Z-b8801ad2457f/1-prefix-table-direct-lookup.md.txt",
+        "sha256": "d7c4a626d1b4c47084e730f85047d7fab1e18094d5639364b9a7a51fa6f459f7"
+      }
+    },
+    {
+      "original": {
+        "bytes": 6562,
+        "path": "/Users/think/Desktop/math/docs/mathematics/NumberTheory/Cyclotomic/third-cyclotomic-jacobi.md",
+        "sha256": "ee2d3d9bd602c931d22e632306a2a835c4802b7adcbcfe47ad06009bcf18a703"
+      },
+      "raw_preimage": {
+        "bytes": 6562,
+        "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/prior-two-guide-evidence-20261016T190853Z-b8801ad2457f/2-third-cyclotomic-jacobi.md.txt",
+        "sha256": "ee2d3d9bd602c931d22e632306a2a835c4802b7adcbcfe47ad06009bcf18a703"
+      }
+    },
+    {
+      "original": {
+        "bytes": 204828,
+        "path": "/Users/think/Desktop/math/.noeaaeue/documentation/reference/documentation-layout.json",
+        "sha256": "d0e74b7774f96820f1b99b2fae88db9fbb137505cdd5dba28354e30893cf148b"
+      },
+      "raw_preimage": {
+        "bytes": 204828,
+        "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/prior-two-guide-evidence-20261016T190853Z-b8801ad2457f/3-documentation-layout.json.txt",
+        "sha256": "d0e74b7774f96820f1b99b2fae88db9fbb137505cdd5dba28354e30893cf148b"
+      }
+    }
+  ],
+  "schema": "two-guide-runtime-evidence-update-v1",
+  "scope": "Only two receipt links and corresponding recorded cold replay wording, and two registry evidence fields changed. Mathematical source/hypotheses/math-layout/B778/oldreceipts preserved. Documentation structural gates remain pending.",
+  "status": "EXACT_TWO_GUIDES_TWO_REGISTRY_FIELDS_UPDATED_DOCUMENTATION_GATES_PENDING"
+}

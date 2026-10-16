@@ -1,0 +1,14 @@
+[
+  {
+    "bytes": 22283,
+    "copy": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/attempt04-final/finite_byte_custody_export_v1.py.txt",
+    "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/finite_byte_custody_export_v1.py",
+    "sha256": "e6021da5e0dc6a56215b38f6ad569aa077ad4af39da490075e972f5e5d0ddbfe"
+  },
+  {
+    "bytes": 24098,
+    "copy": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/attempt04-final/test_finite_byte_custody_export_v1.py.txt",
+    "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/test_finite_byte_custody_export_v1.py",
+    "sha256": "2fdd6966e6025c7068be1329cd1ec0167e9ac216753d777826dc3d4ba64841c7"
+  }
+]

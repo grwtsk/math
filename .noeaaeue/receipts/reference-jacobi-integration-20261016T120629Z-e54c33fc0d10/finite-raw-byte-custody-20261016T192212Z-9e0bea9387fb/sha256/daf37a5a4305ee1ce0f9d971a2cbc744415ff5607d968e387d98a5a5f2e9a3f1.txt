@@ -1,0 +1,25 @@
+{
+  "argv": [
+    "/Users/think/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+    "-B",
+    "/Users/think/Desktop/math/.noeaaeue/scripts/check_math_trust.py",
+    "--memory-mib",
+    "12288"
+  ],
+  "name": "public-replay",
+  "parent_holds_lock": false,
+  "parent_lock": false,
+  "preflight": {
+    "compiler_runtime_sha256": "c48f0fb338d4947e55e4f3974e49b7d1d4a12ad0ac0a783355a135d7bda01f7d",
+    "contract": ".noeaaeue/bindings/moebius-current-inputs-runtime-observation-20261016T181104Z-c2f7169865ce.json",
+    "contract_sha256": "b37f947774bee8794d174718d06a4d7bd044924821c428c3296313cea705499e",
+    "frozen_inputs_sha256": "d883064612692cf287d50c52a0f255aeb9e7f078ec8ab67aa5c4639c171121b0",
+    "head": "d25ccee49a781e150e991f885cb00f8be8f6e453",
+    "input_count": 1761,
+    "orchestrator_sha256": "05601e37c03f870ed127a6b1e4a691aebb18c16b0acd68372b67dfe545485848",
+    "phase": "public",
+    "release_sha256": "1264ac2da2e724acd5bccfddee4d3bd1efe95dbd3233003d801331283d6f9457",
+    "source_count": 887
+  },
+  "timeout_seconds": 21600
+}

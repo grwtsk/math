@@ -1,0 +1,1 @@
+{"status": "ALL_PROJECT_SOURCE_AND_AXIOM_CHECKS_PASSED", "sources": 453, "compiled": 0, "compilation_cache_hits": 453, "audited_modules": 0, "audit_cache_hits": 453, "native_audit_commands": 0, "declarations": 12268, "receipt": "/Users/think/Desktop/math/.noeaaeue/.local/math-trust/20261016T183536Z-6c1ee7dfee/receipt.json"}

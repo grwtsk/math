@@ -1,0 +1,3182 @@
+{
+  "Git_operations": 0,
+  "actual_exports": 0,
+  "append_totals": {
+    "max_file_bytes": 8257460,
+    "raw_bytes_by_occurrence": 28772957,
+    "raw_bytes_by_unique_sha256": 28772755,
+    "rows": 128,
+    "unique_raw_sha256": 97
+  },
+  "at": "2026-10-16T19:20:57.115444+00:00",
+  "base_proposal": {
+    "bytes": 2178082,
+    "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-custody-allowlist-proposal-20261016T190721Z-6de4af86b238/allowlist-proposal.json",
+    "sha256": "91acb06741762ac5eb7db85599f222cf4a8a380c06b76c931c8253cece1d8662"
+  },
+  "builder": {
+    "bytes": 14613,
+    "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-custody-final-evidence-append-20261016T191853Z-1e4d5c5eed8f/build_append_data_only.py",
+    "sha256": "7f58468a5fc922595c0f3792189baf6bc8227146dfae5cf28b41ed7322b3acc7"
+  },
+  "closed_pending_scopes": [
+    "Two actual selected replays and strict native diagnostic/generated inputs now explicitly proposed.",
+    "Five actual structural documentation logs/commands/results now explicitly proposed.",
+    "Two guide/registry exact preimages/postimages retained, current active contract/history and named source-cache evidence proposed."
+  ],
+  "combined_foreign_intersection": [],
+  "combined_with_1564_totals": {
+    "max_file_bytes": 38564576,
+    "raw_bytes_by_occurrence": 313718833,
+    "raw_bytes_by_unique_sha256": 294017970,
+    "rows": 1692,
+    "unique_raw_sha256": 555
+  },
+  "combined_with_coordinator_1560_baseline_only_totals": {
+    "max_file_bytes": 38564576,
+    "raw_bytes_by_occurrence": 313660151,
+    "raw_bytes_by_unique_sha256": 293959288,
+    "rows": 1688,
+    "unique_raw_sha256": 551
+  },
+  "denied_foreign_set_cardinality_including_completion": 13533,
+  "denyset": {
+    "bytes": 2862013,
+    "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-custody-allowlist-proposal-20261016T190721Z-6de4af86b238/excluded-foreign-paths-data-only.json",
+    "sha256": "2dad4eb3e18642a9a5e0b83c020980d4d96d4e08f13538f2569eb65c8767c7d7"
+  },
+  "docs_preimages": 3,
+  "docs_selected_postimages": 3,
+  "documentation_log_count": 5,
+  "duplicates_preserved_by_reference_only": [
+    "/Users/think/Desktop/math/.noeaaeue/bindings/moebius-current-inputs-runtime-public-candidate-20261016T183948Z-ca50411e915e.json",
+    "/Users/think/Desktop/math/.noeaaeue/scripts/cache_math.py",
+    "/Users/think/Desktop/math/.noeaaeue/scripts/check_math_trust.py",
+    "/Users/think/Desktop/math/.noeaaeue/scripts/incremental_lean.py",
+    "/Users/think/Desktop/math/.noeaaeue/scripts/monitor_math.py",
+    "/Users/think/Desktop/math/.noeaaeue/scripts/owned_audit_protocol.py",
+    "/Users/think/Desktop/math/.noeaaeue/scripts/repository_paths.py",
+    "/Users/think/Desktop/math/.noeaaeue/scripts/selected_incremental.py",
+    "/Users/think/Desktop/math/.noeaaeue/scripts/source_observations.py",
+    "/Users/think/Desktop/math/lake-manifest.json",
+    "/Users/think/Desktop/math/lakefile.toml",
+    "/Users/think/Desktop/math/lean-toolchain"
+  ],
+  "files_to_append": [
+    {
+      "bytes": 0,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/0.log",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/0.log",
+      "retention": "new-exact-copy",
+      "role": "control-diagnostic",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/1.log",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/1.log",
+      "retention": "new-exact-copy",
+      "role": "control-diagnostic",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/10.log",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/10.log",
+      "retention": "new-exact-copy",
+      "role": "control-diagnostic",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/11.log",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/11.log",
+      "retention": "new-exact-copy",
+      "role": "control-diagnostic",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/12.log",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/12.log",
+      "retention": "new-exact-copy",
+      "role": "control-diagnostic",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/13.log",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/13.log",
+      "retention": "new-exact-copy",
+      "role": "control-diagnostic",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/14.log",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/14.log",
+      "retention": "new-exact-copy",
+      "role": "control-diagnostic",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/15.log",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/15.log",
+      "retention": "new-exact-copy",
+      "role": "control-diagnostic",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/16.log",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/16.log",
+      "retention": "new-exact-copy",
+      "role": "control-diagnostic",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/17.log",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/17.log",
+      "retention": "new-exact-copy",
+      "role": "control-diagnostic",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/18.log",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/18.log",
+      "retention": "new-exact-copy",
+      "role": "control-diagnostic",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/19.log",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/19.log",
+      "retention": "new-exact-copy",
+      "role": "control-diagnostic",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/2.log",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/2.log",
+      "retention": "new-exact-copy",
+      "role": "control-diagnostic",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/20.log",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/20.log",
+      "retention": "new-exact-copy",
+      "role": "control-diagnostic",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/21.log",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/21.log",
+      "retention": "new-exact-copy",
+      "role": "control-diagnostic",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/22.log",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/22.log",
+      "retention": "new-exact-copy",
+      "role": "control-diagnostic",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/23.log",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/23.log",
+      "retention": "new-exact-copy",
+      "role": "control-diagnostic",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1331044,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/24.log",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/24.log",
+      "retention": "new-exact-copy",
+      "role": "native-census",
+      "sha256": "6390dba49327420fae0c2e1a4bc061da494fe680d9d1b251af147e99571fd096"
+    },
+    {
+      "bytes": 508,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/25.log",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/25.log",
+      "retention": "new-exact-copy",
+      "role": "control-diagnostic",
+      "sha256": "dc0c0b8df48487140fc4d2356d9c9ba24722c30896fcb829f76901634464eb77"
+    },
+    {
+      "bytes": 0,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/3.log",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/3.log",
+      "retention": "new-exact-copy",
+      "role": "control-diagnostic",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/4.log",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/4.log",
+      "retention": "new-exact-copy",
+      "role": "control-diagnostic",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/5.log",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/5.log",
+      "retention": "new-exact-copy",
+      "role": "control-diagnostic",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/6.log",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/6.log",
+      "retention": "new-exact-copy",
+      "role": "control-diagnostic",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/7.log",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/7.log",
+      "retention": "new-exact-copy",
+      "role": "control-diagnostic",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/8.log",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/8.log",
+      "retention": "new-exact-copy",
+      "role": "control-diagnostic",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/9.log",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/9.log",
+      "retention": "new-exact-copy",
+      "role": "control-diagnostic",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 2335,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/cache-publication.json",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/cache-publication.json",
+      "retention": "new-exact-copy",
+      "role": "cache-publication",
+      "sha256": "7342ab3f7b5c4ee2d009f70c8fd8133adeba9ce47212c2d688ae8e64a962ac41"
+    },
+    {
+      "bytes": 6431535,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/proof-validation-origin.json",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/proof-validation-origin.json",
+      "retention": "new-exact-copy",
+      "role": "origin",
+      "sha256": "34e6d85a563ee67a79c4fe58232adae9183d93fa93d65bee72f60ed12d385ce7"
+    },
+    {
+      "bytes": 1157,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixDirectLookupMissingReference.lean",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixDirectLookupMissingReference.lean",
+      "retention": "new-exact-copy",
+      "role": "frozen-inputs",
+      "sha256": "28512178908cebac1e8b07e8c64ecfc53f964af231ee3cb35bbe227cb69e3b4a"
+    },
+    {
+      "bytes": 14966,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableDirectLookup.lean",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableDirectLookup.lean",
+      "retention": "new-exact-copy",
+      "role": "frozen-inputs",
+      "sha256": "55041326f1c9dd1e0235159fb06a0f8003fe8da0fa641bc91427dd7e05c1db4c"
+    },
+    {
+      "bytes": 8301,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/EdgeTrace.lean",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/EdgeTrace.lean",
+      "retention": "new-exact-copy",
+      "role": "frozen-inputs",
+      "sha256": "e1e5f2dd23b6c04a734af4bd95f3f19c15fe4f313d66c5bccff08b3312fb2a59"
+    },
+    {
+      "bytes": 18898,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/IncrementalPrefixTable.lean",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/IncrementalPrefixTable.lean",
+      "retention": "new-exact-copy",
+      "role": "frozen-inputs",
+      "sha256": "dc6e8066e3539897464cdfe3bf1d31797ca76baae11066a79c0d0f0c5c7ffa37"
+    },
+    {
+      "bytes": 6920,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/OccurrencePrefix.lean",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/OccurrencePrefix.lean",
+      "retention": "new-exact-copy",
+      "role": "frozen-inputs",
+      "sha256": "60737e2376594568f390e394417b77c9ea0cc5464693b3ef61502213e3afcee7"
+    },
+    {
+      "bytes": 14294,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/ParentTraceDictionary.lean",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/ParentTraceDictionary.lean",
+      "retention": "new-exact-copy",
+      "role": "frozen-inputs",
+      "sha256": "c388e127a08238f465873954f0b6982ddbe556d0f77b252d4b2d8f89bf32237a"
+    },
+    {
+      "bytes": 9344,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PathOccurrences.lean",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PathOccurrences.lean",
+      "retention": "new-exact-copy",
+      "role": "frozen-inputs",
+      "sha256": "b2b140e2f370d07ef866e81ebb93580ed706d64ad463377fcce82df37c4a39e5"
+    },
+    {
+      "bytes": 10317,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PathUnfolding.lean",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PathUnfolding.lean",
+      "retention": "new-exact-copy",
+      "role": "frozen-inputs",
+      "sha256": "8d5e2187d705ab49c52a41779b48b445d0baa223c3608ea6495e670ddac24757"
+    },
+    {
+      "bytes": 10259,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PrefixInventory.lean",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PrefixInventory.lean",
+      "retention": "new-exact-copy",
+      "role": "frozen-inputs",
+      "sha256": "fa7395f0c55943562274019d96e97e25deaea20defdf9d6f2d8a12d029e743c9"
+    },
+    {
+      "bytes": 10242,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PrefixTableBatch.lean",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PrefixTableBatch.lean",
+      "retention": "new-exact-copy",
+      "role": "frozen-inputs",
+      "sha256": "eaa986de6b17e60b545b1e603ae42f0f1a9678bcecea9379a7198097787ef63f"
+    },
+    {
+      "bytes": 5389,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PrefixTableCheckpoint.lean",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PrefixTableCheckpoint.lean",
+      "retention": "new-exact-copy",
+      "role": "frozen-inputs",
+      "sha256": "39347361377ee5f5e8f58091d72652e2458b3eda2c34b74b503d4d1f3b465e03"
+    },
+    {
+      "bytes": 15938,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PrefixTableCompaction.lean",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PrefixTableCompaction.lean",
+      "retention": "new-exact-copy",
+      "role": "frozen-inputs",
+      "sha256": "fe95a8c59bb0a1e1e9a2a4eba1e5405deb4bcabac3159e0aefcd3db364aad56f"
+    },
+    {
+      "bytes": 3521,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PrefixTableDirectLookup.lean",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PrefixTableDirectLookup.lean",
+      "retention": "new-exact-copy",
+      "role": "frozen-inputs",
+      "sha256": "5f099e606e01fec069843167202c0d4ea2e82cd17f0fac3d14fc83b6772bd12c"
+    },
+    {
+      "bytes": 10562,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PrefixTableReferenceTransport.lean",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PrefixTableReferenceTransport.lean",
+      "retention": "new-exact-copy",
+      "role": "frozen-inputs",
+      "sha256": "a7600c33972405a31f6495b03789f9473cd914eb428d9a5f94c734f528e71d0c"
+    },
+    {
+      "bytes": 16643,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PrefixTableReindex.lean",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PrefixTableReindex.lean",
+      "retention": "new-exact-copy",
+      "role": "frozen-inputs",
+      "sha256": "83fc343c02d16384124ce39ed4b3f996f7a7000ee4dbba05d2015b153a9aa53c"
+    },
+    {
+      "bytes": 5350,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PrefixTableSchedule.lean",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PrefixTableSchedule.lean",
+      "retention": "new-exact-copy",
+      "role": "frozen-inputs",
+      "sha256": "b1d8a0ea8bbdcc83f9453e35328bce854f8bddd857260527c601292f141c2c4f"
+    },
+    {
+      "bytes": 20849,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PrefixTableState.lean",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PrefixTableState.lean",
+      "retention": "new-exact-copy",
+      "role": "frozen-inputs",
+      "sha256": "bc2398f5aae427a813c22b6025b9ca41c99c6bbfb9b9228ce49d1326a9870c3a"
+    },
+    {
+      "bytes": 15988,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PrefixTableUpdateReindex.lean",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PrefixTableUpdateReindex.lean",
+      "retention": "new-exact-copy",
+      "role": "frozen-inputs",
+      "sha256": "65dfc39c95dfdad3f0349960a56c70f6bd8422687941068ba8943935343facd8"
+    },
+    {
+      "bytes": 14840,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/RoleRelationReindex.lean",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/RoleRelationReindex.lean",
+      "retention": "new-exact-copy",
+      "role": "frozen-inputs",
+      "sha256": "ffff5137b1c0837f0cd84416db993d5d81e3bf6476891eb50984652d0f88a4a9"
+    },
+    {
+      "bytes": 11087,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/RoleRelationTable.lean",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/RoleRelationTable.lean",
+      "retention": "new-exact-copy",
+      "role": "frozen-inputs",
+      "sha256": "52940e0c878e9d9329e74455da71dc829d643b629c8997332e8a70e458abb7b2"
+    },
+    {
+      "bytes": 9615,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/RootedTraceRevision.lean",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/RootedTraceRevision.lean",
+      "retention": "new-exact-copy",
+      "role": "frozen-inputs",
+      "sha256": "784594334cff23da4bc77f62c5cd66cf8006ad381223026f1b7383e519dfef17"
+    },
+    {
+      "bytes": 5762,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Logic/FiniteSequences/DecisionCertificate.lean",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Logic/FiniteSequences/DecisionCertificate.lean",
+      "retention": "new-exact-copy",
+      "role": "frozen-inputs",
+      "sha256": "d7ce67b4eacedb2d84a958636c55cd0ed75be869f552377163c0832449dc0990"
+    },
+    {
+      "bytes": 6357,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Logic/FiniteSequences/DictionaryRevision.lean",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Logic/FiniteSequences/DictionaryRevision.lean",
+      "retention": "new-exact-copy",
+      "role": "frozen-inputs",
+      "sha256": "6c7e6f170b1ea7ad746e4e99b0c15a680433c66d20b6d23538ef4a595bd796df"
+    },
+    {
+      "bytes": 8612,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Logic/FiniteSequences/IncrementalDictionary.lean",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Logic/FiniteSequences/IncrementalDictionary.lean",
+      "retention": "new-exact-copy",
+      "role": "frozen-inputs",
+      "sha256": "dc5874410f3f41a838757159de9f225c09572d0748fceda554e88314ae4b5177"
+    },
+    {
+      "bytes": 5972,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Logic/FiniteSequences/IndexedDictionary.lean",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Logic/FiniteSequences/IndexedDictionary.lean",
+      "retention": "new-exact-copy",
+      "role": "frozen-inputs",
+      "sha256": "c01e5ff8067d652cafb42260ae283786c8cb78710c73eb23079a54bd05fbedff"
+    },
+    {
+      "bytes": 17715,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/SelectedAudit.lean",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/SelectedAudit.lean",
+      "retention": "new-exact-copy",
+      "role": "generated-input",
+      "sha256": "16cbd8310a3d7d37b6f9574574acce7aa8d28823078ce61de038e26185433368"
+    },
+    {
+      "bytes": 0,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/0.log",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/0.log",
+      "retention": "new-exact-copy",
+      "role": "control-diagnostic",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/1.log",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/1.log",
+      "retention": "new-exact-copy",
+      "role": "control-diagnostic",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/2.log",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/2.log",
+      "retention": "new-exact-copy",
+      "role": "control-diagnostic",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/3.log",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/3.log",
+      "retention": "new-exact-copy",
+      "role": "control-diagnostic",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/4.log",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/4.log",
+      "retention": "new-exact-copy",
+      "role": "control-diagnostic",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/5.log",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/5.log",
+      "retention": "new-exact-copy",
+      "role": "control-diagnostic",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 468631,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/6.log",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/6.log",
+      "retention": "new-exact-copy",
+      "role": "native-census",
+      "sha256": "394607a1ba2f321bba0e871018cdeb8e850f1d46560055e7f750d99867b0f149"
+    },
+    {
+      "bytes": 431,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/7.log",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/7.log",
+      "retention": "new-exact-copy",
+      "role": "control-diagnostic",
+      "sha256": "513fd3469118b74dab06de8d2d7445a398cfe6a5774b21733422b2505b2b67af"
+    },
+    {
+      "bytes": 1041,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/cache-publication.json",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/cache-publication.json",
+      "retention": "new-exact-copy",
+      "role": "cache-publication",
+      "sha256": "c0401dd1447c2b79d6c5deb07a28c21377920ae4a61cdad606bd94fccf0fd767"
+    },
+    {
+      "bytes": 8257460,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/proof-validation-origin.json",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/proof-validation-origin.json",
+      "retention": "new-exact-copy",
+      "role": "origin",
+      "sha256": "cb572ee75e067aba37e6dd3d17fcf7de86ae3bc575ca89546267743829e8461f"
+    },
+    {
+      "bytes": 926,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/source/GRWTSK/NumberTheory/Cyclotomic/Checks/Negative/ThirdCyclotomicJacobiWrongSign.lean",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/source/GRWTSK/NumberTheory/Cyclotomic/Checks/Negative/ThirdCyclotomicJacobiWrongSign.lean",
+      "retention": "new-exact-copy",
+      "role": "frozen-inputs",
+      "sha256": "279161089d192e306cbb3d9a1055c99b23a44b7aaa3ef1c8b431d94021df5847"
+    },
+    {
+      "bytes": 3017,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/source/GRWTSK/NumberTheory/Cyclotomic/Checks/Positive/ThirdCyclotomicJacobi.lean",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/source/GRWTSK/NumberTheory/Cyclotomic/Checks/Positive/ThirdCyclotomicJacobi.lean",
+      "retention": "new-exact-copy",
+      "role": "frozen-inputs",
+      "sha256": "659186b454e7b588fd0ec36a9c4813f945db77f8dbb6b9e4abe45d7c61fb616f"
+    },
+    {
+      "bytes": 9264,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/source/GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicCharacters.lean",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/source/GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicCharacters.lean",
+      "retention": "new-exact-copy",
+      "role": "frozen-inputs",
+      "sha256": "c595e55f46838683758ea9c66379968ac75a6f86ddfb5dc099c302f9d497a051"
+    },
+    {
+      "bytes": 3465,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/source/GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicIdeals.lean",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/source/GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicIdeals.lean",
+      "retention": "new-exact-copy",
+      "role": "frozen-inputs",
+      "sha256": "be784982bbbdbfefdb5b1e2906d69e4d18f0ae0408cec7a4805605a6382cda87"
+    },
+    {
+      "bytes": 3571,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/source/GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicJacobi.lean",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/source/GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicJacobi.lean",
+      "retention": "new-exact-copy",
+      "role": "frozen-inputs",
+      "sha256": "2426a4fb0689cf6102e72cb174b9469641164450e656f3d9192357764f723623"
+    },
+    {
+      "bytes": 6337,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/source/GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicReduction.lean",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/source/GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicReduction.lean",
+      "retention": "new-exact-copy",
+      "role": "frozen-inputs",
+      "sha256": "05a44d8f4c4b254cf27e9df2a3b8f83081d9cb6288808e0be1d2694a81a2f3b6"
+    },
+    {
+      "bytes": 4571,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/source/GRWTSK/NumberTheory/Ideal/CompactNormSupport.lean",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/source/GRWTSK/NumberTheory/Ideal/CompactNormSupport.lean",
+      "retention": "new-exact-copy",
+      "role": "frozen-inputs",
+      "sha256": "8792ac4679bebdc78e0f466f4752501684c88c5e3ef58862121ccbabc64f3fb6"
+    },
+    {
+      "bytes": 14327,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/source/SelectedAudit.lean",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/source/SelectedAudit.lean",
+      "retention": "new-exact-copy",
+      "role": "generated-input",
+      "sha256": "e5e95b74eeaa90034aeba8dce60ae55675dc63a0b38b512d3d8de369e641597a"
+    },
+    {
+      "bytes": 248067,
+      "context": "application",
+      "origin_attempt_id": null,
+      "original": "/Users/think/Desktop/math/.noeaaeue/bindings/moebius-current-inputs-current.json",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/bindings/moebius-current-inputs-current.json",
+      "retention": "new-exact-copy",
+      "role": "source-policy",
+      "sha256": "7409f25df88e984ed1a78f74efcbff9e85a22b4d86fe07213f937b1794f85a8f"
+    },
+    {
+      "bytes": 247495,
+      "context": "historical-only",
+      "origin_attempt_id": null,
+      "original": "/Users/think/Desktop/math/.noeaaeue/bindings/moebius-current-inputs-history/prior-b37f947774bee8794d174718d06a4d7bd044924821c428c3296313cea705499e.json",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/bindings/moebius-current-inputs-history/prior-b37f947774bee8794d174718d06a4d7bd044924821c428c3296313cea705499e.json",
+      "retention": "new-exact-copy",
+      "role": "source-policy",
+      "sha256": "b37f947774bee8794d174718d06a4d7bd044924821c428c3296313cea705499e"
+    },
+    {
+      "bytes": 1810889,
+      "context": "historical-only",
+      "origin_attempt_id": null,
+      "original": "/Users/think/Desktop/math/.noeaaeue/cache/manifests/edfd5db62ced0900c89689a42123102bcb1a9c4c14fa5026073d8f9fe1953b65.json",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/cache/manifests/edfd5db62ced0900c89689a42123102bcb1a9c4c14fa5026073d8f9fe1953b65.json",
+      "retention": "new-exact-copy",
+      "role": "source-policy",
+      "sha256": "edfd5db62ced0900c89689a42123102bcb1a9c4c14fa5026073d8f9fe1953b65"
+    },
+    {
+      "bytes": 124,
+      "context": "historical-only",
+      "origin_attempt_id": null,
+      "original": "/Users/think/Desktop/math/.noeaaeue/cache/refs/current.json",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/cache/refs/current.json",
+      "retention": "new-exact-copy",
+      "role": "source-policy",
+      "sha256": "53ff10ea09d4ee7ce37f4398a8df4e6ad4ed9ff83147ae943ead6b2a6d6ba998"
+    },
+    {
+      "bytes": 204831,
+      "context": "documentation",
+      "origin_attempt_id": null,
+      "original": "/Users/think/Desktop/math/.noeaaeue/documentation/reference/documentation-layout.json",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/documentation/reference/documentation-layout.json",
+      "retention": "new-exact-copy",
+      "role": "selected-doc-evidence",
+      "sha256": "0b18ef277b29b69746fd88a923c86e0dcea0c84c99e82de965e6854a0075d53a"
+    },
+    {
+      "bytes": 3825943,
+      "context": "selected-math",
+      "origin_attempt_id": null,
+      "original": "/Users/think/Desktop/math/.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-direct-lookup-selected-runtime-20261016T190205Z-220551577cf8.json",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-direct-lookup-selected-runtime-20261016T190205Z-220551577cf8.json",
+      "retention": "new-exact-copy",
+      "role": "receipt",
+      "sha256": "89a8d00d7bf209f04e82beab550332ea795b7bc00ed566d3a83c317b565f14b1"
+    },
+    {
+      "bytes": 4985784,
+      "context": "selected-math",
+      "origin_attempt_id": null,
+      "original": "/Users/think/Desktop/math/.noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-jacobi-selected-runtime-20261016T190205Z-220551577cf8.json",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-jacobi-selected-runtime-20261016T190205Z-220551577cf8.json",
+      "retention": "new-exact-copy",
+      "role": "receipt",
+      "sha256": "e2cdc8269305411d726160a44932bd3173bc4d97a814d0ec4352c2e6e4905405"
+    },
+    {
+      "bytes": 1783,
+      "context": "application",
+      "origin_attempt_id": null,
+      "original": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/checked-runtime-default-activation-20261016T190809Z-3e2de72d4d1a.json",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/checked-runtime-default-activation-20261016T190809Z-3e2de72d4d1a.json",
+      "retention": "new-exact-copy",
+      "role": "source-policy",
+      "sha256": "cafe6a84852f444074f664b9a2875f935d9cc4b928b25cf1603326fe9259d4d4"
+    },
+    {
+      "bytes": 4279,
+      "context": "selected-math",
+      "origin_attempt_id": null,
+      "original": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/coordinator-final-validation-custody-approval-20261016T191737Z-30c780495baf.json",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/coordinator-final-validation-custody-approval-20261016T191737Z-30c780495baf.json",
+      "retention": "new-exact-copy",
+      "role": "source-policy",
+      "sha256": "d909239a1a2b32723d05615ca48bc7b2019077b3623bba28006e93b63a84375b"
+    },
+    {
+      "bytes": 3111,
+      "context": "selected-math",
+      "origin_attempt_id": null,
+      "original": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/coordinator-runtime-application-acceptance-20261016T190044Z-66c7b4e3a130.json",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/coordinator-runtime-application-acceptance-20261016T190044Z-66c7b4e3a130.json",
+      "retention": "new-exact-copy",
+      "role": "source-policy",
+      "sha256": "603eaf7ff7c3087ffc2d876360615a646b72e3b7693564fce451bd0871d35535"
+    },
+    {
+      "bytes": 548,
+      "context": "documentation",
+      "origin_attempt_id": null,
+      "original": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/01-render-command.json",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/01-render-command.json",
+      "retention": "new-exact-copy",
+      "role": "source-policy",
+      "sha256": "def4d1feeda9685fa9e49d8b6966260768de8d61e4a12c4a6358ac5cf26d7626"
+    },
+    {
+      "bytes": 477,
+      "context": "documentation",
+      "origin_attempt_id": null,
+      "original": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/01-render-result.json",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/01-render-result.json",
+      "retention": "new-exact-copy",
+      "role": "receipt",
+      "sha256": "76cc5bb0ffe7b4a9b818a57882d41a32f3bf311bdcb9d5b237c611294365d788"
+    },
+    {
+      "bytes": 101,
+      "context": "documentation",
+      "origin_attempt_id": null,
+      "original": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/01-render.log",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/01-render.log",
+      "retention": "new-exact-copy",
+      "role": "selected-doc-evidence",
+      "sha256": "e841ac8049f76c70db16eb221f553d90c234bfd489aa82cc734c91d216922118"
+    },
+    {
+      "bytes": 532,
+      "context": "documentation",
+      "origin_attempt_id": null,
+      "original": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/02-normal-command.json",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/02-normal-command.json",
+      "retention": "new-exact-copy",
+      "role": "source-policy",
+      "sha256": "427ac7c31d1a326982b59cadd50d53cf30ac5e063f7a5f967b18460f7b5d530d"
+    },
+    {
+      "bytes": 477,
+      "context": "documentation",
+      "origin_attempt_id": null,
+      "original": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/02-normal-result.json",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/02-normal-result.json",
+      "retention": "new-exact-copy",
+      "role": "receipt",
+      "sha256": "112c8f8c50f90ab7ed4056e0310236b1fbd7954f9d8b7a86f4805ed7724d43e3"
+    },
+    {
+      "bytes": 101,
+      "context": "documentation",
+      "origin_attempt_id": null,
+      "original": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/02-normal.log",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/02-normal.log",
+      "retention": "new-exact-copy",
+      "role": "selected-doc-evidence",
+      "sha256": "e841ac8049f76c70db16eb221f553d90c234bfd489aa82cc734c91d216922118"
+    },
+    {
+      "bytes": 542,
+      "context": "documentation",
+      "origin_attempt_id": null,
+      "original": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/03-optimized-command.json",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/03-optimized-command.json",
+      "retention": "new-exact-copy",
+      "role": "source-policy",
+      "sha256": "4f4a512ecef8b55ee2738f7797e655b59c2b4ea746c3d90c06d8caba3fd525e3"
+    },
+    {
+      "bytes": 483,
+      "context": "documentation",
+      "origin_attempt_id": null,
+      "original": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/03-optimized-result.json",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/03-optimized-result.json",
+      "retention": "new-exact-copy",
+      "role": "receipt",
+      "sha256": "82b9a55c36efe4f4f5d1f9b28806d8544dbfeb3ccd60cc82b4b0b3a8d7f045a9"
+    },
+    {
+      "bytes": 101,
+      "context": "documentation",
+      "origin_attempt_id": null,
+      "original": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/03-optimized.log",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/03-optimized.log",
+      "retention": "new-exact-copy",
+      "role": "selected-doc-evidence",
+      "sha256": "e841ac8049f76c70db16eb221f553d90c234bfd489aa82cc734c91d216922118"
+    },
+    {
+      "bytes": 550,
+      "context": "documentation",
+      "origin_attempt_id": null,
+      "original": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/04-tests-normal-command.json",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/04-tests-normal-command.json",
+      "retention": "new-exact-copy",
+      "role": "source-policy",
+      "sha256": "50cb8647b611ddd232a4b8c2bc770dc418c4642d04e726f4c5a8273d8d2a8137"
+    },
+    {
+      "bytes": 489,
+      "context": "documentation",
+      "origin_attempt_id": null,
+      "original": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/04-tests-normal-result.json",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/04-tests-normal-result.json",
+      "retention": "new-exact-copy",
+      "role": "receipt",
+      "sha256": "ae60b340f5a2374aa5c1e9aaf277976bb7bfc84f198c8c0f01d2241354941943"
+    },
+    {
+      "bytes": 209,
+      "context": "documentation",
+      "origin_attempt_id": null,
+      "original": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/04-tests-normal.log",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/04-tests-normal.log",
+      "retention": "new-exact-copy",
+      "role": "selected-doc-evidence",
+      "sha256": "f82137050b1ef8abceff6e115cf74d23b9ac68928b46cdb44c63fdc0a3f99d09"
+    },
+    {
+      "bytes": 560,
+      "context": "documentation",
+      "origin_attempt_id": null,
+      "original": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/05-tests-optimized-command.json",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/05-tests-optimized-command.json",
+      "retention": "new-exact-copy",
+      "role": "source-policy",
+      "sha256": "8a29ead2a9cfe8420d50cc76c5122fcc082d1e58d7aebb77ce12d492c2490209"
+    },
+    {
+      "bytes": 495,
+      "context": "documentation",
+      "origin_attempt_id": null,
+      "original": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/05-tests-optimized-result.json",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/05-tests-optimized-result.json",
+      "retention": "new-exact-copy",
+      "role": "receipt",
+      "sha256": "a6089ae8e208da1a1f0900764a98235780abc843efcb036c2015b8720fb52ddc"
+    },
+    {
+      "bytes": 209,
+      "context": "documentation",
+      "origin_attempt_id": null,
+      "original": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/05-tests-optimized.log",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/05-tests-optimized.log",
+      "retention": "new-exact-copy",
+      "role": "selected-doc-evidence",
+      "sha256": "011e65ce52d2382dc4959be5d6f74bd48aeb6e7bf1e4d24cb3bd9bb1510c1fab"
+    },
+    {
+      "bytes": 1481,
+      "context": "documentation",
+      "origin_attempt_id": null,
+      "original": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/plan.json",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/plan.json",
+      "retention": "new-exact-copy",
+      "role": "source-policy",
+      "sha256": "32a869e06670e030cac3cbc8cb3c9ec04f455c9a7e23c8198704e16a329fca9a"
+    },
+    {
+      "bytes": 2920,
+      "context": "documentation",
+      "origin_attempt_id": null,
+      "original": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/summary.json",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/summary.json",
+      "retention": "new-exact-copy",
+      "role": "receipt",
+      "sha256": "ff57aee01abe664fd76fcd4981f11a933a92f62c6063ec0d31e6463905410170"
+    },
+    {
+      "bytes": 5741,
+      "context": "historical-only",
+      "origin_attempt_id": null,
+      "original": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/prior-two-guide-evidence-20261016T190853Z-b8801ad2457f/1-prefix-table-direct-lookup.md.txt",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/prior-two-guide-evidence-20261016T190853Z-b8801ad2457f/1-prefix-table-direct-lookup.md.txt",
+      "retention": "new-exact-copy",
+      "role": "selected-doc-evidence",
+      "sha256": "d7c4a626d1b4c47084e730f85047d7fab1e18094d5639364b9a7a51fa6f459f7"
+    },
+    {
+      "bytes": 6562,
+      "context": "historical-only",
+      "origin_attempt_id": null,
+      "original": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/prior-two-guide-evidence-20261016T190853Z-b8801ad2457f/2-third-cyclotomic-jacobi.md.txt",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/prior-two-guide-evidence-20261016T190853Z-b8801ad2457f/2-third-cyclotomic-jacobi.md.txt",
+      "retention": "new-exact-copy",
+      "role": "selected-doc-evidence",
+      "sha256": "ee2d3d9bd602c931d22e632306a2a835c4802b7adcbcfe47ad06009bcf18a703"
+    },
+    {
+      "bytes": 204828,
+      "context": "historical-only",
+      "origin_attempt_id": null,
+      "original": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/prior-two-guide-evidence-20261016T190853Z-b8801ad2457f/3-documentation-layout.json.txt",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/prior-two-guide-evidence-20261016T190853Z-b8801ad2457f/3-documentation-layout.json.txt",
+      "retention": "new-exact-copy",
+      "role": "selected-doc-evidence",
+      "sha256": "d0e74b7774f96820f1b99b2fae88db9fbb137505cdd5dba28354e30893cf148b"
+    },
+    {
+      "bytes": 2962,
+      "context": "documentation",
+      "origin_attempt_id": null,
+      "original": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/prior-two-guide-evidence-20261016T190853Z-b8801ad2457f/manifest.json",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/prior-two-guide-evidence-20261016T190853Z-b8801ad2457f/manifest.json",
+      "retention": "new-exact-copy",
+      "role": "source-policy",
+      "sha256": "0cb0dd806f2226e5eab803fb7b5e0c9dd32d2b5f8e9fd34b87ff33725b1b5908"
+    },
+    {
+      "bytes": 3357,
+      "context": "selected-math",
+      "origin_attempt_id": null,
+      "original": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/reference-jacobi-runtime-selected-acceptance-20261016T190659Z-445975fb060d.json",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/reference-jacobi-runtime-selected-acceptance-20261016T190659Z-445975fb060d.json",
+      "retention": "new-exact-copy",
+      "role": "receipt",
+      "sha256": "aab964261d105015d25a63fbce16ee415a3263209b00fb16549deaac6d9084bb"
+    },
+    {
+      "bytes": 317,
+      "context": "historical-only",
+      "origin_attempt_id": null,
+      "original": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/source-cache-887-20261016T191202Z-340920da53f9/01-revise-command.json",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/source-cache-887-20261016T191202Z-340920da53f9/01-revise-command.json",
+      "retention": "new-exact-copy",
+      "role": "source-policy",
+      "sha256": "c01e45ac55d9630d29aaa6dc38ec3634ec63f14af7f70dc3491503252c6487fc"
+    },
+    {
+      "bytes": 1202,
+      "context": "historical-only",
+      "origin_attempt_id": null,
+      "original": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/source-cache-887-20261016T191202Z-340920da53f9/01-revise.json",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/source-cache-887-20261016T191202Z-340920da53f9/01-revise.json",
+      "retention": "new-exact-copy",
+      "role": "control-diagnostic",
+      "sha256": "59a033ac1b12756a9057af75f89b7528e98106dab41e6774ff39da6bfd13941a"
+    },
+    {
+      "bytes": 331,
+      "context": "historical-only",
+      "origin_attempt_id": null,
+      "original": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/source-cache-887-20261016T191202Z-340920da53f9/02-verify-live-command.json",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/source-cache-887-20261016T191202Z-340920da53f9/02-verify-live-command.json",
+      "retention": "new-exact-copy",
+      "role": "source-policy",
+      "sha256": "524fb7436e18497e05b6f518d36f888f1f722dc22ce7029002a74ff2dd72a6b2"
+    },
+    {
+      "bytes": 279,
+      "context": "historical-only",
+      "origin_attempt_id": null,
+      "original": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/source-cache-887-20261016T191202Z-340920da53f9/02-verify-live.json",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/source-cache-887-20261016T191202Z-340920da53f9/02-verify-live.json",
+      "retention": "new-exact-copy",
+      "role": "control-diagnostic",
+      "sha256": "d7f86b6eb437d652330ce929f1e0c5dc742d6df9f3ac1bc80f901b2c16c9e7bd"
+    },
+    {
+      "bytes": 395,
+      "context": "historical-only",
+      "origin_attempt_id": null,
+      "original": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/source-cache-887-20261016T191202Z-340920da53f9/03-expand-command.json",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/source-cache-887-20261016T191202Z-340920da53f9/03-expand-command.json",
+      "retention": "new-exact-copy",
+      "role": "source-policy",
+      "sha256": "bdacb0ce2365c9dd20632bf587738194c2a45c8b030ee9f54be5adab22f475b2"
+    },
+    {
+      "bytes": 211,
+      "context": "historical-only",
+      "origin_attempt_id": null,
+      "original": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/source-cache-887-20261016T191202Z-340920da53f9/03-expand.json",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/source-cache-887-20261016T191202Z-340920da53f9/03-expand.json",
+      "retention": "new-exact-copy",
+      "role": "control-diagnostic",
+      "sha256": "c41e4c79a08065655d13e9d2fbaf63ce8bce616a42db8d47b3e337e2da192745"
+    },
+    {
+      "bytes": 497,
+      "context": "historical-only",
+      "origin_attempt_id": null,
+      "original": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/source-cache-887-20261016T191202Z-340920da53f9/prior-current-ref.json",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/source-cache-887-20261016T191202Z-340920da53f9/prior-current-ref.json",
+      "retention": "new-exact-copy",
+      "role": "source-policy",
+      "sha256": "0ff7268fb6416a15e3c55a68bb98dead4aed37a927e463ef95363ba122ef8e1c"
+    },
+    {
+      "bytes": 2478,
+      "context": "historical-only",
+      "origin_attempt_id": null,
+      "original": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/source-cache-887-20261016T191202Z-340920da53f9/summary.json",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/source-cache-887-20261016T191202Z-340920da53f9/summary.json",
+      "retention": "new-exact-copy",
+      "role": "receipt",
+      "sha256": "4139c31db04f3eea6ff66dbb7d8d526466379386ceaa70c556c66791a647f355"
+    },
+    {
+      "bytes": 2020,
+      "context": "selected-math",
+      "origin_attempt_id": null,
+      "original": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/two-selected-runtime-plan-20261016T190205Z-220551577cf8.json",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/two-selected-runtime-plan-20261016T190205Z-220551577cf8.json",
+      "retention": "new-exact-copy",
+      "role": "source-policy",
+      "sha256": "9c4cf97d86d165ee8a50a5670e2f3ace2c4fbd1eca773843b61a2a053d0548f6"
+    },
+    {
+      "bytes": 36017,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/scripts/cache_math.py",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/scripts/cache_math.py",
+      "retention": "new-exact-copy",
+      "role": "source-policy",
+      "sha256": "d73bebfeca4ec709fdc68741cba13a09611ae49a0095b4140dd5d2f3e6bb1c06"
+    },
+    {
+      "bytes": 96482,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/scripts/check_math_trust.py",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/scripts/check_math_trust.py",
+      "retention": "new-exact-copy",
+      "role": "source-policy",
+      "sha256": "e499a582a71bc7b15708e59c401caf1bb0620635a49006d89ba37883d73fc592"
+    },
+    {
+      "bytes": 18026,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/scripts/check_prefix_direct_lookup.py",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/scripts/check_prefix_direct_lookup.py",
+      "retention": "new-exact-copy",
+      "role": "source-policy",
+      "sha256": "19ba2fbae26615adf3cb56daa8452921657b17d3cdf367ba0c5a822bad1d2b5c"
+    },
+    {
+      "bytes": 18039,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+      "original": "/Users/think/Desktop/math/.noeaaeue/scripts/check_third_cyclotomic_jacobi.py",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/scripts/check_third_cyclotomic_jacobi.py",
+      "retention": "new-exact-copy",
+      "role": "source-policy",
+      "sha256": "1e2a62635b980ef31082fe6d9db53d1e17e670f7e3a6228e38d417ed3f9a4f27"
+    },
+    {
+      "bytes": 60843,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/scripts/incremental_lean.py",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/scripts/incremental_lean.py",
+      "retention": "new-exact-copy",
+      "role": "source-policy",
+      "sha256": "089f5c980be2aa3b1606ae9ddf12a09ec5df2bf6d6544f52690447b640882f12"
+    },
+    {
+      "bytes": 85340,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/scripts/monitor_math.py",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/scripts/monitor_math.py",
+      "retention": "new-exact-copy",
+      "role": "source-policy",
+      "sha256": "a757804707ffe811aa27d295aa82dcdaddf7b3c90f9c3bd6a47d27ec3b0890e3"
+    },
+    {
+      "bytes": 17196,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/scripts/owned_audit_protocol.py",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/scripts/owned_audit_protocol.py",
+      "retention": "new-exact-copy",
+      "role": "source-policy",
+      "sha256": "56b62242a080f7327bd1a3eac1f234fa0d68a22dc68151693793b35c30e6f114"
+    },
+    {
+      "bytes": 2343,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/scripts/repository_paths.py",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/scripts/repository_paths.py",
+      "retention": "new-exact-copy",
+      "role": "source-policy",
+      "sha256": "4bd02ac496dc2fbd141b19f23ba86291db1618a0ae298a76beab28701ff24d22"
+    },
+    {
+      "bytes": 18078,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/scripts/selected_incremental.py",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/scripts/selected_incremental.py",
+      "retention": "new-exact-copy",
+      "role": "source-policy",
+      "sha256": "80eb1990c07dcced94a0bfc6cfd8de21f934ad8bf07b0e4fdab5f1d4858d2f8c"
+    },
+    {
+      "bytes": 13216,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/.noeaaeue/scripts/source_observations.py",
+      "original_absolute": "/Users/think/Desktop/math/.noeaaeue/scripts/source_observations.py",
+      "retention": "new-exact-copy",
+      "role": "source-policy",
+      "sha256": "a153565b7b3162470309f2fae9432110415b7934648a7f58f91f84821ab68125"
+    },
+    {
+      "bytes": 5795,
+      "context": "documentation",
+      "origin_attempt_id": null,
+      "original": "/Users/think/Desktop/math/docs/mathematics/Combinatorics/DirectedGraph/prefix-table-direct-lookup.md",
+      "original_absolute": "/Users/think/Desktop/math/docs/mathematics/Combinatorics/DirectedGraph/prefix-table-direct-lookup.md",
+      "retention": "new-exact-copy",
+      "role": "selected-doc-evidence",
+      "sha256": "986ba02fca41f5e61ad1f279593e784ece843d46497d57fd5ebcd1f2240cd808"
+    },
+    {
+      "bytes": 6608,
+      "context": "documentation",
+      "origin_attempt_id": null,
+      "original": "/Users/think/Desktop/math/docs/mathematics/NumberTheory/Cyclotomic/third-cyclotomic-jacobi.md",
+      "original_absolute": "/Users/think/Desktop/math/docs/mathematics/NumberTheory/Cyclotomic/third-cyclotomic-jacobi.md",
+      "retention": "new-exact-copy",
+      "role": "selected-doc-evidence",
+      "sha256": "285cbac50595b0e0bf9c95d0e78a66288b320dfac64500cf0349ed0ae28398b1"
+    },
+    {
+      "bytes": 3577,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/lake-manifest.json",
+      "original_absolute": "/Users/think/Desktop/math/lake-manifest.json",
+      "retention": "new-exact-copy",
+      "role": "source-policy",
+      "sha256": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec"
+    },
+    {
+      "bytes": 250,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/lakefile.toml",
+      "original_absolute": "/Users/think/Desktop/math/lakefile.toml",
+      "retention": "new-exact-copy",
+      "role": "source-policy",
+      "sha256": "a23f6d313f8458192328f09635ffef9078cb684374c2aac2743af541bf59b4e3"
+    },
+    {
+      "bytes": 25,
+      "context": "selected-math",
+      "origin_attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+      "original": "/Users/think/Desktop/math/lean-toolchain",
+      "original_absolute": "/Users/think/Desktop/math/lean-toolchain",
+      "retention": "new-exact-copy",
+      "role": "source-policy",
+      "sha256": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b"
+    }
+  ],
+  "limits": [
+    "All totals are byte-custody proposal observations, not new mathematical verification or theorem totals.",
+    "Cache edfd is source custody only, unknown-unreplayed/mathacceptancefalse; original cf31 and stale/raw evidence unchanged.",
+    "Prior1564 original rows remain byte-for-byte unchanged in original records; this append does not freshly hash all those originals.",
+    "All new rows default new-exact-copy; root may approve references only with separate retention evidence. No Git durability inferred.",
+    "No .lake/dependency/cache opaque object read or copied; source-cache manifest/ref metadata only.",
+    "Current active/ref rows intentionally capture exact present metadata bytes; future drift must reject, not silently refresh."
+  ],
+  "mathematical_acceptance": false,
+  "named_input_identities_rechecked": [
+    {
+      "bytes": 2178082,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-custody-allowlist-proposal-20261016T190721Z-6de4af86b238/allowlist-proposal.json",
+      "sha256": "91acb06741762ac5eb7db85599f222cf4a8a380c06b76c931c8253cece1d8662"
+    },
+    {
+      "bytes": 7260,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-custody-allowlist-proposal-20261016T190721Z-6de4af86b238/source-control-and-scope-append.json",
+      "sha256": "e90aba4bceb6db6f3fac3e1ac9bbeaf07664a8779247e6df1d7e34742e49ba5b"
+    },
+    {
+      "bytes": 2862013,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-custody-allowlist-proposal-20261016T190721Z-6de4af86b238/excluded-foreign-paths-data-only.json",
+      "sha256": "2dad4eb3e18642a9a5e0b83c020980d4d96d4e08f13538f2569eb65c8767c7d7"
+    },
+    {
+      "bytes": 4999477,
+      "path": "/Users/think/Desktop/math/.noeaaeue/records/receipts/incremental-validation/sha256-049c791645491dafdf560a19cd8447603c1ac5273e50e5bd6af1aa40995018ca.json",
+      "sha256": "d817f91c1e8e363005a2f0f5344e6d20f36a979b4e65f9759914227e8dfbce68"
+    },
+    {
+      "bytes": 15882,
+      "path": "/Users/think/Desktop/math/.noeaaeue/records/receipts/incremental-validation/sha256-93b6076d8cd6bad1052795462ffb51b36f1d93d6d62f4324cf92ce52e473815a.json",
+      "sha256": "57a3094eae6b8be0d881ab5b1f93cf0cf3325a5466bdebc38df43ab98057a9d3"
+    },
+    {
+      "bytes": 518246,
+      "path": "/Users/think/Desktop/math/.noeaaeue/records/receipts/incremental-validation-runtime-pair/sha256-de830f18eeffb5b9b8a8b2728e8105bc163819e277bec8b049050a1c883ce08f.json",
+      "sha256": "cee847d99ab5ded8e2c68f37c9435a43b22f97d4ae3c0e12de4c2586973d9f46"
+    },
+    {
+      "bytes": 2020,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/two-selected-runtime-plan-20261016T190205Z-220551577cf8.json",
+      "sha256": "9c4cf97d86d165ee8a50a5670e2f3ace2c4fbd1eca773843b61a2a053d0548f6"
+    },
+    {
+      "bytes": 3111,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/coordinator-runtime-application-acceptance-20261016T190044Z-66c7b4e3a130.json",
+      "sha256": "603eaf7ff7c3087ffc2d876360615a646b72e3b7693564fce451bd0871d35535"
+    },
+    {
+      "bytes": 3357,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/reference-jacobi-runtime-selected-acceptance-20261016T190659Z-445975fb060d.json",
+      "sha256": "aab964261d105015d25a63fbce16ee415a3263209b00fb16549deaac6d9084bb"
+    },
+    {
+      "bytes": 3825943,
+      "path": "/Users/think/Desktop/math/.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-direct-lookup-selected-runtime-20261016T190205Z-220551577cf8.json",
+      "sha256": "89a8d00d7bf209f04e82beab550332ea795b7bc00ed566d3a83c317b565f14b1"
+    },
+    {
+      "bytes": 6431535,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/proof-validation-origin.json",
+      "sha256": "34e6d85a563ee67a79c4fe58232adae9183d93fa93d65bee72f60ed12d385ce7"
+    },
+    {
+      "bytes": 2335,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/cache-publication.json",
+      "sha256": "7342ab3f7b5c4ee2d009f70c8fd8133adeba9ce47212c2d688ae8e64a962ac41"
+    },
+    {
+      "bytes": 0,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 10317,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PathUnfolding.lean",
+      "sha256": "8d5e2187d705ab49c52a41779b48b445d0baa223c3608ea6495e670ddac24757"
+    },
+    {
+      "bytes": 0,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/1.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 9344,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PathOccurrences.lean",
+      "sha256": "b2b140e2f370d07ef866e81ebb93580ed706d64ad463377fcce82df37c4a39e5"
+    },
+    {
+      "bytes": 0,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/2.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 8301,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/EdgeTrace.lean",
+      "sha256": "e1e5f2dd23b6c04a734af4bd95f3f19c15fe4f313d66c5bccff08b3312fb2a59"
+    },
+    {
+      "bytes": 0,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/3.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 6920,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/OccurrencePrefix.lean",
+      "sha256": "60737e2376594568f390e394417b77c9ea0cc5464693b3ef61502213e3afcee7"
+    },
+    {
+      "bytes": 0,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/4.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 5972,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Logic/FiniteSequences/IndexedDictionary.lean",
+      "sha256": "c01e5ff8067d652cafb42260ae283786c8cb78710c73eb23079a54bd05fbedff"
+    },
+    {
+      "bytes": 0,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/5.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 10259,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PrefixInventory.lean",
+      "sha256": "fa7395f0c55943562274019d96e97e25deaea20defdf9d6f2d8a12d029e743c9"
+    },
+    {
+      "bytes": 0,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/6.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 14294,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/ParentTraceDictionary.lean",
+      "sha256": "c388e127a08238f465873954f0b6982ddbe556d0f77b252d4b2d8f89bf32237a"
+    },
+    {
+      "bytes": 0,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/7.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 6357,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Logic/FiniteSequences/DictionaryRevision.lean",
+      "sha256": "6c7e6f170b1ea7ad746e4e99b0c15a680433c66d20b6d23538ef4a595bd796df"
+    },
+    {
+      "bytes": 0,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/8.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 5762,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Logic/FiniteSequences/DecisionCertificate.lean",
+      "sha256": "d7ce67b4eacedb2d84a958636c55cd0ed75be869f552377163c0832449dc0990"
+    },
+    {
+      "bytes": 0,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/9.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 9615,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/RootedTraceRevision.lean",
+      "sha256": "784594334cff23da4bc77f62c5cd66cf8006ad381223026f1b7383e519dfef17"
+    },
+    {
+      "bytes": 0,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/10.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 8612,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Logic/FiniteSequences/IncrementalDictionary.lean",
+      "sha256": "dc5874410f3f41a838757159de9f225c09572d0748fceda554e88314ae4b5177"
+    },
+    {
+      "bytes": 0,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/11.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 18898,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/IncrementalPrefixTable.lean",
+      "sha256": "dc6e8066e3539897464cdfe3bf1d31797ca76baae11066a79c0d0f0c5c7ffa37"
+    },
+    {
+      "bytes": 0,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/12.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 20849,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PrefixTableState.lean",
+      "sha256": "bc2398f5aae427a813c22b6025b9ca41c99c6bbfb9b9228ce49d1326a9870c3a"
+    },
+    {
+      "bytes": 0,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/13.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 15938,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PrefixTableCompaction.lean",
+      "sha256": "fe95a8c59bb0a1e1e9a2a4eba1e5405deb4bcabac3159e0aefcd3db364aad56f"
+    },
+    {
+      "bytes": 0,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/14.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 11087,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/RoleRelationTable.lean",
+      "sha256": "52940e0c878e9d9329e74455da71dc829d643b629c8997332e8a70e458abb7b2"
+    },
+    {
+      "bytes": 0,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/15.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 14840,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/RoleRelationReindex.lean",
+      "sha256": "ffff5137b1c0837f0cd84416db993d5d81e3bf6476891eb50984652d0f88a4a9"
+    },
+    {
+      "bytes": 0,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/16.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 16643,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PrefixTableReindex.lean",
+      "sha256": "83fc343c02d16384124ce39ed4b3f996f7a7000ee4dbba05d2015b153a9aa53c"
+    },
+    {
+      "bytes": 0,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/17.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 15988,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PrefixTableUpdateReindex.lean",
+      "sha256": "65dfc39c95dfdad3f0349960a56c70f6bd8422687941068ba8943935343facd8"
+    },
+    {
+      "bytes": 0,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/18.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 10242,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PrefixTableBatch.lean",
+      "sha256": "eaa986de6b17e60b545b1e603ae42f0f1a9678bcecea9379a7198097787ef63f"
+    },
+    {
+      "bytes": 0,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/19.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 5389,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PrefixTableCheckpoint.lean",
+      "sha256": "39347361377ee5f5e8f58091d72652e2458b3eda2c34b74b503d4d1f3b465e03"
+    },
+    {
+      "bytes": 0,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/20.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 5350,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PrefixTableSchedule.lean",
+      "sha256": "b1d8a0ea8bbdcc83f9453e35328bce854f8bddd857260527c601292f141c2c4f"
+    },
+    {
+      "bytes": 0,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/21.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 10562,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PrefixTableReferenceTransport.lean",
+      "sha256": "a7600c33972405a31f6495b03789f9473cd914eb428d9a5f94c734f528e71d0c"
+    },
+    {
+      "bytes": 0,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/22.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 3521,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PrefixTableDirectLookup.lean",
+      "sha256": "5f099e606e01fec069843167202c0d4ea2e82cd17f0fac3d14fc83b6772bd12c"
+    },
+    {
+      "bytes": 0,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/23.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 14966,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableDirectLookup.lean",
+      "sha256": "55041326f1c9dd1e0235159fb06a0f8003fe8da0fa641bc91427dd7e05c1db4c"
+    },
+    {
+      "bytes": 1331044,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/24.log",
+      "sha256": "6390dba49327420fae0c2e1a4bc061da494fe680d9d1b251af147e99571fd096"
+    },
+    {
+      "bytes": 17715,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/SelectedAudit.lean",
+      "sha256": "16cbd8310a3d7d37b6f9574574acce7aa8d28823078ce61de038e26185433368"
+    },
+    {
+      "bytes": 508,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/25.log",
+      "sha256": "dc0c0b8df48487140fc4d2356d9c9ba24722c30896fcb829f76901634464eb77"
+    },
+    {
+      "bytes": 1157,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixDirectLookupMissingReference.lean",
+      "sha256": "28512178908cebac1e8b07e8c64ecfc53f964af231ee3cb35bbe227cb69e3b4a"
+    },
+    {
+      "bytes": 96482,
+      "path": "/Users/think/Desktop/math/.noeaaeue/scripts/check_math_trust.py",
+      "sha256": "e499a582a71bc7b15708e59c401caf1bb0620635a49006d89ba37883d73fc592"
+    },
+    {
+      "bytes": 17196,
+      "path": "/Users/think/Desktop/math/.noeaaeue/scripts/owned_audit_protocol.py",
+      "sha256": "56b62242a080f7327bd1a3eac1f234fa0d68a22dc68151693793b35c30e6f114"
+    },
+    {
+      "bytes": 25,
+      "path": "/Users/think/Desktop/math/lean-toolchain",
+      "sha256": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b"
+    },
+    {
+      "bytes": 250,
+      "path": "/Users/think/Desktop/math/lakefile.toml",
+      "sha256": "a23f6d313f8458192328f09635ffef9078cb684374c2aac2743af541bf59b4e3"
+    },
+    {
+      "bytes": 3577,
+      "path": "/Users/think/Desktop/math/lake-manifest.json",
+      "sha256": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec"
+    },
+    {
+      "bytes": 60843,
+      "path": "/Users/think/Desktop/math/.noeaaeue/scripts/incremental_lean.py",
+      "sha256": "089f5c980be2aa3b1606ae9ddf12a09ec5df2bf6d6544f52690447b640882f12"
+    },
+    {
+      "bytes": 36017,
+      "path": "/Users/think/Desktop/math/.noeaaeue/scripts/cache_math.py",
+      "sha256": "d73bebfeca4ec709fdc68741cba13a09611ae49a0095b4140dd5d2f3e6bb1c06"
+    },
+    {
+      "bytes": 85340,
+      "path": "/Users/think/Desktop/math/.noeaaeue/scripts/monitor_math.py",
+      "sha256": "a757804707ffe811aa27d295aa82dcdaddf7b3c90f9c3bd6a47d27ec3b0890e3"
+    },
+    {
+      "bytes": 2343,
+      "path": "/Users/think/Desktop/math/.noeaaeue/scripts/repository_paths.py",
+      "sha256": "4bd02ac496dc2fbd141b19f23ba86291db1618a0ae298a76beab28701ff24d22"
+    },
+    {
+      "bytes": 18026,
+      "path": "/Users/think/Desktop/math/.noeaaeue/scripts/check_prefix_direct_lookup.py",
+      "sha256": "19ba2fbae26615adf3cb56daa8452921657b17d3cdf367ba0c5a822bad1d2b5c"
+    },
+    {
+      "bytes": 18078,
+      "path": "/Users/think/Desktop/math/.noeaaeue/scripts/selected_incremental.py",
+      "sha256": "80eb1990c07dcced94a0bfc6cfd8de21f934ad8bf07b0e4fdab5f1d4858d2f8c"
+    },
+    {
+      "bytes": 13216,
+      "path": "/Users/think/Desktop/math/.noeaaeue/scripts/source_observations.py",
+      "sha256": "a153565b7b3162470309f2fae9432110415b7934648a7f58f91f84821ab68125"
+    },
+    {
+      "bytes": 4985784,
+      "path": "/Users/think/Desktop/math/.noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-jacobi-selected-runtime-20261016T190205Z-220551577cf8.json",
+      "sha256": "e2cdc8269305411d726160a44932bd3173bc4d97a814d0ec4352c2e6e4905405"
+    },
+    {
+      "bytes": 8257460,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/proof-validation-origin.json",
+      "sha256": "cb572ee75e067aba37e6dd3d17fcf7de86ae3bc575ca89546267743829e8461f"
+    },
+    {
+      "bytes": 1041,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/cache-publication.json",
+      "sha256": "c0401dd1447c2b79d6c5deb07a28c21377920ae4a61cdad606bd94fccf0fd767"
+    },
+    {
+      "bytes": 0,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 4571,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/source/GRWTSK/NumberTheory/Ideal/CompactNormSupport.lean",
+      "sha256": "8792ac4679bebdc78e0f466f4752501684c88c5e3ef58862121ccbabc64f3fb6"
+    },
+    {
+      "bytes": 0,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/1.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 3465,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/source/GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicIdeals.lean",
+      "sha256": "be784982bbbdbfefdb5b1e2906d69e4d18f0ae0408cec7a4805605a6382cda87"
+    },
+    {
+      "bytes": 0,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/2.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 6337,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/source/GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicReduction.lean",
+      "sha256": "05a44d8f4c4b254cf27e9df2a3b8f83081d9cb6288808e0be1d2694a81a2f3b6"
+    },
+    {
+      "bytes": 0,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/3.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 9264,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/source/GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicCharacters.lean",
+      "sha256": "c595e55f46838683758ea9c66379968ac75a6f86ddfb5dc099c302f9d497a051"
+    },
+    {
+      "bytes": 0,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/4.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 3571,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/source/GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicJacobi.lean",
+      "sha256": "2426a4fb0689cf6102e72cb174b9469641164450e656f3d9192357764f723623"
+    },
+    {
+      "bytes": 0,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/5.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 3017,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/source/GRWTSK/NumberTheory/Cyclotomic/Checks/Positive/ThirdCyclotomicJacobi.lean",
+      "sha256": "659186b454e7b588fd0ec36a9c4813f945db77f8dbb6b9e4abe45d7c61fb616f"
+    },
+    {
+      "bytes": 468631,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/6.log",
+      "sha256": "394607a1ba2f321bba0e871018cdeb8e850f1d46560055e7f750d99867b0f149"
+    },
+    {
+      "bytes": 14327,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/source/SelectedAudit.lean",
+      "sha256": "e5e95b74eeaa90034aeba8dce60ae55675dc63a0b38b512d3d8de369e641597a"
+    },
+    {
+      "bytes": 431,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/7.log",
+      "sha256": "513fd3469118b74dab06de8d2d7445a398cfe6a5774b21733422b2505b2b67af"
+    },
+    {
+      "bytes": 926,
+      "path": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/source/GRWTSK/NumberTheory/Cyclotomic/Checks/Negative/ThirdCyclotomicJacobiWrongSign.lean",
+      "sha256": "279161089d192e306cbb3d9a1055c99b23a44b7aaa3ef1c8b431d94021df5847"
+    },
+    {
+      "bytes": 18039,
+      "path": "/Users/think/Desktop/math/.noeaaeue/scripts/check_third_cyclotomic_jacobi.py",
+      "sha256": "1e2a62635b980ef31082fe6d9db53d1e17e670f7e3a6228e38d417ed3f9a4f27"
+    },
+    {
+      "bytes": 1481,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/plan.json",
+      "sha256": "32a869e06670e030cac3cbc8cb3c9ec04f455c9a7e23c8198704e16a329fca9a"
+    },
+    {
+      "bytes": 2920,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/summary.json",
+      "sha256": "ff57aee01abe664fd76fcd4981f11a933a92f62c6063ec0d31e6463905410170"
+    },
+    {
+      "bytes": 101,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/01-render.log",
+      "sha256": "e841ac8049f76c70db16eb221f553d90c234bfd489aa82cc734c91d216922118"
+    },
+    {
+      "bytes": 548,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/01-render-command.json",
+      "sha256": "def4d1feeda9685fa9e49d8b6966260768de8d61e4a12c4a6358ac5cf26d7626"
+    },
+    {
+      "bytes": 477,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/01-render-result.json",
+      "sha256": "76cc5bb0ffe7b4a9b818a57882d41a32f3bf311bdcb9d5b237c611294365d788"
+    },
+    {
+      "bytes": 101,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/02-normal.log",
+      "sha256": "e841ac8049f76c70db16eb221f553d90c234bfd489aa82cc734c91d216922118"
+    },
+    {
+      "bytes": 532,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/02-normal-command.json",
+      "sha256": "427ac7c31d1a326982b59cadd50d53cf30ac5e063f7a5f967b18460f7b5d530d"
+    },
+    {
+      "bytes": 477,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/02-normal-result.json",
+      "sha256": "112c8f8c50f90ab7ed4056e0310236b1fbd7954f9d8b7a86f4805ed7724d43e3"
+    },
+    {
+      "bytes": 101,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/03-optimized.log",
+      "sha256": "e841ac8049f76c70db16eb221f553d90c234bfd489aa82cc734c91d216922118"
+    },
+    {
+      "bytes": 542,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/03-optimized-command.json",
+      "sha256": "4f4a512ecef8b55ee2738f7797e655b59c2b4ea746c3d90c06d8caba3fd525e3"
+    },
+    {
+      "bytes": 483,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/03-optimized-result.json",
+      "sha256": "82b9a55c36efe4f4f5d1f9b28806d8544dbfeb3ccd60cc82b4b0b3a8d7f045a9"
+    },
+    {
+      "bytes": 209,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/04-tests-normal.log",
+      "sha256": "f82137050b1ef8abceff6e115cf74d23b9ac68928b46cdb44c63fdc0a3f99d09"
+    },
+    {
+      "bytes": 550,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/04-tests-normal-command.json",
+      "sha256": "50cb8647b611ddd232a4b8c2bc770dc418c4642d04e726f4c5a8273d8d2a8137"
+    },
+    {
+      "bytes": 489,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/04-tests-normal-result.json",
+      "sha256": "ae60b340f5a2374aa5c1e9aaf277976bb7bfc84f198c8c0f01d2241354941943"
+    },
+    {
+      "bytes": 209,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/05-tests-optimized.log",
+      "sha256": "011e65ce52d2382dc4959be5d6f74bd48aeb6e7bf1e4d24cb3bd9bb1510c1fab"
+    },
+    {
+      "bytes": 560,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/05-tests-optimized-command.json",
+      "sha256": "8a29ead2a9cfe8420d50cc76c5122fcc082d1e58d7aebb77ce12d492c2490209"
+    },
+    {
+      "bytes": 495,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/05-tests-optimized-result.json",
+      "sha256": "a6089ae8e208da1a1f0900764a98235780abc843efcb036c2015b8720fb52ddc"
+    },
+    {
+      "bytes": 2962,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/prior-two-guide-evidence-20261016T190853Z-b8801ad2457f/manifest.json",
+      "sha256": "0cb0dd806f2226e5eab803fb7b5e0c9dd32d2b5f8e9fd34b87ff33725b1b5908"
+    },
+    {
+      "bytes": 5741,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/prior-two-guide-evidence-20261016T190853Z-b8801ad2457f/1-prefix-table-direct-lookup.md.txt",
+      "sha256": "d7c4a626d1b4c47084e730f85047d7fab1e18094d5639364b9a7a51fa6f459f7"
+    },
+    {
+      "bytes": 6562,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/prior-two-guide-evidence-20261016T190853Z-b8801ad2457f/2-third-cyclotomic-jacobi.md.txt",
+      "sha256": "ee2d3d9bd602c931d22e632306a2a835c4802b7adcbcfe47ad06009bcf18a703"
+    },
+    {
+      "bytes": 204828,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/prior-two-guide-evidence-20261016T190853Z-b8801ad2457f/3-documentation-layout.json.txt",
+      "sha256": "d0e74b7774f96820f1b99b2fae88db9fbb137505cdd5dba28354e30893cf148b"
+    },
+    {
+      "bytes": 5795,
+      "path": "/Users/think/Desktop/math/docs/mathematics/Combinatorics/DirectedGraph/prefix-table-direct-lookup.md",
+      "sha256": "986ba02fca41f5e61ad1f279593e784ece843d46497d57fd5ebcd1f2240cd808"
+    },
+    {
+      "bytes": 6608,
+      "path": "/Users/think/Desktop/math/docs/mathematics/NumberTheory/Cyclotomic/third-cyclotomic-jacobi.md",
+      "sha256": "285cbac50595b0e0bf9c95d0e78a66288b320dfac64500cf0349ed0ae28398b1"
+    },
+    {
+      "bytes": 204831,
+      "path": "/Users/think/Desktop/math/.noeaaeue/documentation/reference/documentation-layout.json",
+      "sha256": "0b18ef277b29b69746fd88a923c86e0dcea0c84c99e82de965e6854a0075d53a"
+    },
+    {
+      "bytes": 1783,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/checked-runtime-default-activation-20261016T190809Z-3e2de72d4d1a.json",
+      "sha256": "cafe6a84852f444074f664b9a2875f935d9cc4b928b25cf1603326fe9259d4d4"
+    },
+    {
+      "bytes": 248067,
+      "path": "/Users/think/Desktop/math/.noeaaeue/bindings/moebius-current-inputs-runtime-public-candidate-20261016T183948Z-ca50411e915e.json",
+      "sha256": "7409f25df88e984ed1a78f74efcbff9e85a22b4d86fe07213f937b1794f85a8f"
+    },
+    {
+      "bytes": 247495,
+      "path": "/Users/think/Desktop/math/.noeaaeue/bindings/moebius-current-inputs-history/prior-b37f947774bee8794d174718d06a4d7bd044924821c428c3296313cea705499e.json",
+      "sha256": "b37f947774bee8794d174718d06a4d7bd044924821c428c3296313cea705499e"
+    },
+    {
+      "bytes": 248067,
+      "path": "/Users/think/Desktop/math/.noeaaeue/bindings/moebius-current-inputs-current.json",
+      "sha256": "7409f25df88e984ed1a78f74efcbff9e85a22b4d86fe07213f937b1794f85a8f"
+    },
+    {
+      "bytes": 2478,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/source-cache-887-20261016T191202Z-340920da53f9/summary.json",
+      "sha256": "4139c31db04f3eea6ff66dbb7d8d526466379386ceaa70c556c66791a647f355"
+    },
+    {
+      "bytes": 1202,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/source-cache-887-20261016T191202Z-340920da53f9/01-revise.json",
+      "sha256": "59a033ac1b12756a9057af75f89b7528e98106dab41e6774ff39da6bfd13941a"
+    },
+    {
+      "bytes": 317,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/source-cache-887-20261016T191202Z-340920da53f9/01-revise-command.json",
+      "sha256": "c01e45ac55d9630d29aaa6dc38ec3634ec63f14af7f70dc3491503252c6487fc"
+    },
+    {
+      "bytes": 279,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/source-cache-887-20261016T191202Z-340920da53f9/02-verify-live.json",
+      "sha256": "d7f86b6eb437d652330ce929f1e0c5dc742d6df9f3ac1bc80f901b2c16c9e7bd"
+    },
+    {
+      "bytes": 331,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/source-cache-887-20261016T191202Z-340920da53f9/02-verify-live-command.json",
+      "sha256": "524fb7436e18497e05b6f518d36f888f1f722dc22ce7029002a74ff2dd72a6b2"
+    },
+    {
+      "bytes": 211,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/source-cache-887-20261016T191202Z-340920da53f9/03-expand.json",
+      "sha256": "c41e4c79a08065655d13e9d2fbaf63ce8bce616a42db8d47b3e337e2da192745"
+    },
+    {
+      "bytes": 395,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/source-cache-887-20261016T191202Z-340920da53f9/03-expand-command.json",
+      "sha256": "bdacb0ce2365c9dd20632bf587738194c2a45c8b030ee9f54be5adab22f475b2"
+    },
+    {
+      "bytes": 497,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/source-cache-887-20261016T191202Z-340920da53f9/prior-current-ref.json",
+      "sha256": "0ff7268fb6416a15e3c55a68bb98dead4aed37a927e463ef95363ba122ef8e1c"
+    },
+    {
+      "bytes": 1810889,
+      "path": "/Users/think/Desktop/math/.noeaaeue/cache/manifests/edfd5db62ced0900c89689a42123102bcb1a9c4c14fa5026073d8f9fe1953b65.json",
+      "sha256": "edfd5db62ced0900c89689a42123102bcb1a9c4c14fa5026073d8f9fe1953b65"
+    },
+    {
+      "bytes": 124,
+      "path": "/Users/think/Desktop/math/.noeaaeue/cache/refs/current.json",
+      "sha256": "53ff10ea09d4ee7ce37f4398a8df4e6ad4ed9ff83147ae943ead6b2a6d6ba998"
+    },
+    {
+      "bytes": 4279,
+      "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/coordinator-final-validation-custody-approval-20261016T191737Z-30c780495baf.json",
+      "sha256": "d909239a1a2b32723d05615ca48bc7b2019077b3623bba28006e93b63a84375b"
+    }
+  ],
+  "native_jobs": 0,
+  "new_cache_revision": "edfd5db62ced0900c89689a42123102bcb1a9c4c14fa5026073d8f9fe1953b65",
+  "original_1564_rows_rehashed_this_append": false,
+  "prior_four_row_append": {
+    "bytes": 7260,
+    "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-custody-allowlist-proposal-20261016T190721Z-6de4af86b238/source-control-and-scope-append.json",
+    "sha256": "e90aba4bceb6db6f3fac3e1ac9bbeaf07664a8779247e6df1d7e34742e49ba5b"
+  },
+  "remaining_gates": [
+    "Final root/coordinator exact row scope ACK and newly frozen request path/SHA/destination.",
+    "Coordinator d909 explicitly names baseline1560; prior additional4 compatibility rows remain separately proposed pending final ACK.",
+    "Rehash all approved combined sources and all three pinned denial index sources pre-export; require empty original/output/publication intersection. Repeat before staging.",
+    "No directory-wide export/stage; e602 exporter unchanged; no3rd denyset responsibility transferred to its original two hardpins."
+  ],
+  "request_approval_provenance": {
+    "bytes": 4279,
+    "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/coordinator-final-validation-custody-approval-20261016T191737Z-30c780495baf.json",
+    "sha256": "d909239a1a2b32723d05615ca48bc7b2019077b3623bba28006e93b63a84375b"
+  },
+  "schema": "finite-custody-selected-docs-cache-append-v1",
+  "selected_receipts": [
+    {
+      "actual_frozen_Lean_inputs": 26,
+      "diagnostic_logs": 26,
+      "native_results": 26,
+      "not_theorem_total": true,
+      "owned_declarations_as_reported": 928,
+      "receipt": {
+        "bytes": 3825943,
+        "path": "/Users/think/Desktop/math/.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-direct-lookup-selected-runtime-20261016T190205Z-220551577cf8.json",
+        "sha256": "89a8d00d7bf209f04e82beab550332ea795b7bc00ed566d3a83c317b565f14b1"
+      }
+    },
+    {
+      "actual_frozen_Lean_inputs": 8,
+      "diagnostic_logs": 8,
+      "native_results": 8,
+      "not_theorem_total": true,
+      "owned_declarations_as_reported": 95,
+      "receipt": {
+        "bytes": 4985784,
+        "path": "/Users/think/Desktop/math/.noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-jacobi-selected-runtime-20261016T190205Z-220551577cf8.json",
+        "sha256": "e2cdc8269305411d726160a44932bd3173bc4d97a814d0ec4352c2e6e4905405"
+      }
+    }
+  ],
+  "source_bindings": {
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/0.log": [
+      {
+        "anchor": "$.results[0].incremental_validation.diagnostic_log",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "control-diagnostic"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/1.log": [
+      {
+        "anchor": "$.results[1].incremental_validation.diagnostic_log",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "control-diagnostic"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/10.log": [
+      {
+        "anchor": "$.results[10].incremental_validation.diagnostic_log",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "control-diagnostic"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/11.log": [
+      {
+        "anchor": "$.results[11].incremental_validation.diagnostic_log",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "control-diagnostic"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/12.log": [
+      {
+        "anchor": "$.results[12].incremental_validation.diagnostic_log",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "control-diagnostic"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/13.log": [
+      {
+        "anchor": "$.results[13].incremental_validation.diagnostic_log",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "control-diagnostic"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/14.log": [
+      {
+        "anchor": "$.results[14].incremental_validation.diagnostic_log",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "control-diagnostic"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/15.log": [
+      {
+        "anchor": "$.results[15].incremental_validation.diagnostic_log",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "control-diagnostic"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/16.log": [
+      {
+        "anchor": "$.results[16].incremental_validation.diagnostic_log",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "control-diagnostic"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/17.log": [
+      {
+        "anchor": "$.results[17].incremental_validation.diagnostic_log",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "control-diagnostic"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/18.log": [
+      {
+        "anchor": "$.results[18].incremental_validation.diagnostic_log",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "control-diagnostic"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/19.log": [
+      {
+        "anchor": "$.results[19].incremental_validation.diagnostic_log",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "control-diagnostic"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/2.log": [
+      {
+        "anchor": "$.results[2].incremental_validation.diagnostic_log",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "control-diagnostic"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/20.log": [
+      {
+        "anchor": "$.results[20].incremental_validation.diagnostic_log",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "control-diagnostic"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/21.log": [
+      {
+        "anchor": "$.results[21].incremental_validation.diagnostic_log",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "control-diagnostic"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/22.log": [
+      {
+        "anchor": "$.results[22].incremental_validation.diagnostic_log",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "control-diagnostic"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/23.log": [
+      {
+        "anchor": "$.results[23].incremental_validation.diagnostic_log",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "control-diagnostic"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/24.log": [
+      {
+        "anchor": "$.results[24].incremental_validation.diagnostic_log",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "native-census"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/25.log": [
+      {
+        "anchor": "$.results[25].incremental_validation.diagnostic_log",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "control-diagnostic"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/3.log": [
+      {
+        "anchor": "$.results[3].incremental_validation.diagnostic_log",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "control-diagnostic"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/4.log": [
+      {
+        "anchor": "$.results[4].incremental_validation.diagnostic_log",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "control-diagnostic"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/5.log": [
+      {
+        "anchor": "$.results[5].incremental_validation.diagnostic_log",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "control-diagnostic"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/6.log": [
+      {
+        "anchor": "$.results[6].incremental_validation.diagnostic_log",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "control-diagnostic"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/7.log": [
+      {
+        "anchor": "$.results[7].incremental_validation.diagnostic_log",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "control-diagnostic"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/8.log": [
+      {
+        "anchor": "$.results[8].incremental_validation.diagnostic_log",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "control-diagnostic"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/9.log": [
+      {
+        "anchor": "$.results[9].incremental_validation.diagnostic_log",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "control-diagnostic"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/cache-publication.json": [
+      {
+        "anchor": "explicit sibling terminal publication",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "cache-publication"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/proof-validation-origin.json": [
+      {
+        "anchor": "$.proof_validation_origin",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "origin"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixDirectLookupMissingReference.lean": [
+      {
+        "anchor": "$.results[25].argv exact Lean input/source_hashes",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "frozen-inputs"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableDirectLookup.lean": [
+      {
+        "anchor": "$.results[23].argv exact Lean input/source_hashes",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "frozen-inputs"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/EdgeTrace.lean": [
+      {
+        "anchor": "$.results[2].argv exact Lean input/source_hashes",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "frozen-inputs"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/IncrementalPrefixTable.lean": [
+      {
+        "anchor": "$.results[11].argv exact Lean input/source_hashes",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "frozen-inputs"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/OccurrencePrefix.lean": [
+      {
+        "anchor": "$.results[3].argv exact Lean input/source_hashes",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "frozen-inputs"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/ParentTraceDictionary.lean": [
+      {
+        "anchor": "$.results[6].argv exact Lean input/source_hashes",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "frozen-inputs"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PathOccurrences.lean": [
+      {
+        "anchor": "$.results[1].argv exact Lean input/source_hashes",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "frozen-inputs"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PathUnfolding.lean": [
+      {
+        "anchor": "$.results[0].argv exact Lean input/source_hashes",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "frozen-inputs"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PrefixInventory.lean": [
+      {
+        "anchor": "$.results[5].argv exact Lean input/source_hashes",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "frozen-inputs"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PrefixTableBatch.lean": [
+      {
+        "anchor": "$.results[18].argv exact Lean input/source_hashes",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "frozen-inputs"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PrefixTableCheckpoint.lean": [
+      {
+        "anchor": "$.results[19].argv exact Lean input/source_hashes",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "frozen-inputs"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PrefixTableCompaction.lean": [
+      {
+        "anchor": "$.results[13].argv exact Lean input/source_hashes",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "frozen-inputs"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PrefixTableDirectLookup.lean": [
+      {
+        "anchor": "$.results[22].argv exact Lean input/source_hashes",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "frozen-inputs"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PrefixTableReferenceTransport.lean": [
+      {
+        "anchor": "$.results[21].argv exact Lean input/source_hashes",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "frozen-inputs"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PrefixTableReindex.lean": [
+      {
+        "anchor": "$.results[16].argv exact Lean input/source_hashes",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "frozen-inputs"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PrefixTableSchedule.lean": [
+      {
+        "anchor": "$.results[20].argv exact Lean input/source_hashes",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "frozen-inputs"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PrefixTableState.lean": [
+      {
+        "anchor": "$.results[12].argv exact Lean input/source_hashes",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "frozen-inputs"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/PrefixTableUpdateReindex.lean": [
+      {
+        "anchor": "$.results[17].argv exact Lean input/source_hashes",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "frozen-inputs"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/RoleRelationReindex.lean": [
+      {
+        "anchor": "$.results[15].argv exact Lean input/source_hashes",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "frozen-inputs"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/RoleRelationTable.lean": [
+      {
+        "anchor": "$.results[14].argv exact Lean input/source_hashes",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "frozen-inputs"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/RootedTraceRevision.lean": [
+      {
+        "anchor": "$.results[9].argv exact Lean input/source_hashes",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "frozen-inputs"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Logic/FiniteSequences/DecisionCertificate.lean": [
+      {
+        "anchor": "$.results[8].argv exact Lean input/source_hashes",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "frozen-inputs"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Logic/FiniteSequences/DictionaryRevision.lean": [
+      {
+        "anchor": "$.results[7].argv exact Lean input/source_hashes",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "frozen-inputs"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Logic/FiniteSequences/IncrementalDictionary.lean": [
+      {
+        "anchor": "$.results[10].argv exact Lean input/source_hashes",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "frozen-inputs"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Logic/FiniteSequences/IndexedDictionary.lean": [
+      {
+        "anchor": "$.results[4].argv exact Lean input/source_hashes",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "frozen-inputs"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/SelectedAudit.lean": [
+      {
+        "anchor": "$.results[24].argv exact Lean input/source_hashes",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "generated-input"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/0.log": [
+      {
+        "anchor": "$.results[0].incremental_validation.diagnostic_log",
+        "attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+        "context": "selected-math",
+        "role": "control-diagnostic"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/1.log": [
+      {
+        "anchor": "$.results[1].incremental_validation.diagnostic_log",
+        "attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+        "context": "selected-math",
+        "role": "control-diagnostic"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/2.log": [
+      {
+        "anchor": "$.results[2].incremental_validation.diagnostic_log",
+        "attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+        "context": "selected-math",
+        "role": "control-diagnostic"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/3.log": [
+      {
+        "anchor": "$.results[3].incremental_validation.diagnostic_log",
+        "attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+        "context": "selected-math",
+        "role": "control-diagnostic"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/4.log": [
+      {
+        "anchor": "$.results[4].incremental_validation.diagnostic_log",
+        "attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+        "context": "selected-math",
+        "role": "control-diagnostic"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/5.log": [
+      {
+        "anchor": "$.results[5].incremental_validation.diagnostic_log",
+        "attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+        "context": "selected-math",
+        "role": "control-diagnostic"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/6.log": [
+      {
+        "anchor": "$.results[6].incremental_validation.diagnostic_log",
+        "attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+        "context": "selected-math",
+        "role": "native-census"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/7.log": [
+      {
+        "anchor": "$.results[7].incremental_validation.diagnostic_log",
+        "attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+        "context": "selected-math",
+        "role": "control-diagnostic"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/cache-publication.json": [
+      {
+        "anchor": "explicit sibling terminal publication",
+        "attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+        "context": "selected-math",
+        "role": "cache-publication"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/proof-validation-origin.json": [
+      {
+        "anchor": "$.proof_validation_origin",
+        "attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+        "context": "selected-math",
+        "role": "origin"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/source/GRWTSK/NumberTheory/Cyclotomic/Checks/Negative/ThirdCyclotomicJacobiWrongSign.lean": [
+      {
+        "anchor": "$.results[7].argv exact Lean input/source_hashes",
+        "attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+        "context": "selected-math",
+        "role": "frozen-inputs"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/source/GRWTSK/NumberTheory/Cyclotomic/Checks/Positive/ThirdCyclotomicJacobi.lean": [
+      {
+        "anchor": "$.results[5].argv exact Lean input/source_hashes",
+        "attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+        "context": "selected-math",
+        "role": "frozen-inputs"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/source/GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicCharacters.lean": [
+      {
+        "anchor": "$.results[3].argv exact Lean input/source_hashes",
+        "attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+        "context": "selected-math",
+        "role": "frozen-inputs"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/source/GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicIdeals.lean": [
+      {
+        "anchor": "$.results[1].argv exact Lean input/source_hashes",
+        "attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+        "context": "selected-math",
+        "role": "frozen-inputs"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/source/GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicJacobi.lean": [
+      {
+        "anchor": "$.results[4].argv exact Lean input/source_hashes",
+        "attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+        "context": "selected-math",
+        "role": "frozen-inputs"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/source/GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicReduction.lean": [
+      {
+        "anchor": "$.results[2].argv exact Lean input/source_hashes",
+        "attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+        "context": "selected-math",
+        "role": "frozen-inputs"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/source/GRWTSK/NumberTheory/Ideal/CompactNormSupport.lean": [
+      {
+        "anchor": "$.results[0].argv exact Lean input/source_hashes",
+        "attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+        "context": "selected-math",
+        "role": "frozen-inputs"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/source/SelectedAudit.lean": [
+      {
+        "anchor": "$.results[6].argv exact Lean input/source_hashes",
+        "attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+        "context": "selected-math",
+        "role": "generated-input"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/bindings/moebius-current-inputs-current.json": [
+      {
+        "anchor": "$.active current exact whole contract copy",
+        "attempt_id": null,
+        "context": "application",
+        "role": "source-policy"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/bindings/moebius-current-inputs-history/prior-b37f947774bee8794d174718d06a4d7bd044924821c428c3296313cea705499e.json": [
+      {
+        "anchor": "$.active.previous_archive",
+        "attempt_id": null,
+        "context": "historical-only",
+        "role": "source-policy"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/bindings/moebius-current-inputs-runtime-public-candidate-20261016T183948Z-ca50411e915e.json": [
+      {
+        "anchor": "$.immutable",
+        "attempt_id": null,
+        "context": "application",
+        "role": "source-policy"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/cache/manifests/edfd5db62ced0900c89689a42123102bcb1a9c4c14fa5026073d8f9fe1953b65.json": [
+      {
+        "anchor": "$.new_manifest: identity metadata only; no opaque objects",
+        "attempt_id": null,
+        "context": "historical-only",
+        "role": "source-policy"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/cache/refs/current.json": [
+      {
+        "anchor": "$.current_ref: current observed source-only pointer",
+        "attempt_id": null,
+        "context": "historical-only",
+        "role": "source-policy"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/documentation/reference/documentation-layout.json": [
+      {
+        "anchor": "$.current[2] exact selected guide/registry postimage",
+        "attempt_id": null,
+        "context": "documentation",
+        "role": "selected-doc-evidence"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-direct-lookup-selected-runtime-20261016T190205Z-220551577cf8.json": [
+      {
+        "anchor": "$.selected[].receipt",
+        "attempt_id": null,
+        "context": "selected-math",
+        "role": "receipt"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-jacobi-selected-runtime-20261016T190205Z-220551577cf8.json": [
+      {
+        "anchor": "$.selected[].receipt",
+        "attempt_id": null,
+        "context": "selected-math",
+        "role": "receipt"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/checked-runtime-default-activation-20261016T190809Z-3e2de72d4d1a.json": [
+      {
+        "anchor": "root source-only active/default receipt",
+        "attempt_id": null,
+        "context": "application",
+        "role": "source-policy"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/coordinator-final-validation-custody-approval-20261016T191737Z-30c780495baf.json": [
+      {
+        "anchor": "root named custody scope approval; final exact scope ACK pending",
+        "attempt_id": null,
+        "context": "selected-math",
+        "role": "source-policy"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/coordinator-runtime-application-acceptance-20261016T190044Z-66c7b4e3a130.json": [
+      {
+        "anchor": "$.release",
+        "attempt_id": null,
+        "context": "selected-math",
+        "role": "source-policy"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/01-render-command.json": [
+      {
+        "anchor": "exact gate command/result naming",
+        "attempt_id": null,
+        "context": "documentation",
+        "role": "source-policy"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/01-render-result.json": [
+      {
+        "anchor": "exact gate command/result naming",
+        "attempt_id": null,
+        "context": "documentation",
+        "role": "receipt"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/01-render.log": [
+      {
+        "anchor": "$.results[0].log",
+        "attempt_id": null,
+        "context": "documentation",
+        "role": "selected-doc-evidence"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/02-normal-command.json": [
+      {
+        "anchor": "exact gate command/result naming",
+        "attempt_id": null,
+        "context": "documentation",
+        "role": "source-policy"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/02-normal-result.json": [
+      {
+        "anchor": "exact gate command/result naming",
+        "attempt_id": null,
+        "context": "documentation",
+        "role": "receipt"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/02-normal.log": [
+      {
+        "anchor": "$.results[1].log",
+        "attempt_id": null,
+        "context": "documentation",
+        "role": "selected-doc-evidence"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/03-optimized-command.json": [
+      {
+        "anchor": "exact gate command/result naming",
+        "attempt_id": null,
+        "context": "documentation",
+        "role": "source-policy"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/03-optimized-result.json": [
+      {
+        "anchor": "exact gate command/result naming",
+        "attempt_id": null,
+        "context": "documentation",
+        "role": "receipt"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/03-optimized.log": [
+      {
+        "anchor": "$.results[2].log",
+        "attempt_id": null,
+        "context": "documentation",
+        "role": "selected-doc-evidence"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/04-tests-normal-command.json": [
+      {
+        "anchor": "exact gate command/result naming",
+        "attempt_id": null,
+        "context": "documentation",
+        "role": "source-policy"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/04-tests-normal-result.json": [
+      {
+        "anchor": "exact gate command/result naming",
+        "attempt_id": null,
+        "context": "documentation",
+        "role": "receipt"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/04-tests-normal.log": [
+      {
+        "anchor": "$.results[3].log",
+        "attempt_id": null,
+        "context": "documentation",
+        "role": "selected-doc-evidence"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/05-tests-optimized-command.json": [
+      {
+        "anchor": "exact gate command/result naming",
+        "attempt_id": null,
+        "context": "documentation",
+        "role": "source-policy"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/05-tests-optimized-result.json": [
+      {
+        "anchor": "exact gate command/result naming",
+        "attempt_id": null,
+        "context": "documentation",
+        "role": "receipt"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/05-tests-optimized.log": [
+      {
+        "anchor": "$.results[4].log",
+        "attempt_id": null,
+        "context": "documentation",
+        "role": "selected-doc-evidence"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/plan.json": [
+      {
+        "anchor": "root exact five-gate plan",
+        "attempt_id": null,
+        "context": "documentation",
+        "role": "source-policy"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/summary.json": [
+      {
+        "anchor": "root exact five-gate summary",
+        "attempt_id": null,
+        "context": "documentation",
+        "role": "receipt"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/prior-two-guide-evidence-20261016T190853Z-b8801ad2457f/1-prefix-table-direct-lookup.md.txt": [
+      {
+        "anchor": "$.prior_bytes[0].raw_preimage",
+        "attempt_id": null,
+        "context": "historical-only",
+        "role": "selected-doc-evidence"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/prior-two-guide-evidence-20261016T190853Z-b8801ad2457f/2-third-cyclotomic-jacobi.md.txt": [
+      {
+        "anchor": "$.prior_bytes[1].raw_preimage",
+        "attempt_id": null,
+        "context": "historical-only",
+        "role": "selected-doc-evidence"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/prior-two-guide-evidence-20261016T190853Z-b8801ad2457f/3-documentation-layout.json.txt": [
+      {
+        "anchor": "$.prior_bytes[2].raw_preimage",
+        "attempt_id": null,
+        "context": "historical-only",
+        "role": "selected-doc-evidence"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/prior-two-guide-evidence-20261016T190853Z-b8801ad2457f/manifest.json": [
+      {
+        "anchor": "root exact preimages manifest",
+        "attempt_id": null,
+        "context": "documentation",
+        "role": "source-policy"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/reference-jacobi-runtime-selected-acceptance-20261016T190659Z-445975fb060d.json": [
+      {
+        "anchor": "root selected acceptance",
+        "attempt_id": null,
+        "context": "selected-math",
+        "role": "receipt"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/source-cache-887-20261016T191202Z-340920da53f9/01-revise-command.json": [
+      {
+        "anchor": "exact named cache command metadata",
+        "attempt_id": null,
+        "context": "historical-only",
+        "role": "source-policy"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/source-cache-887-20261016T191202Z-340920da53f9/01-revise.json": [
+      {
+        "anchor": "$.results[0].log",
+        "attempt_id": null,
+        "context": "historical-only",
+        "role": "control-diagnostic"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/source-cache-887-20261016T191202Z-340920da53f9/02-verify-live-command.json": [
+      {
+        "anchor": "exact named cache command metadata",
+        "attempt_id": null,
+        "context": "historical-only",
+        "role": "source-policy"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/source-cache-887-20261016T191202Z-340920da53f9/02-verify-live.json": [
+      {
+        "anchor": "$.results[1].log",
+        "attempt_id": null,
+        "context": "historical-only",
+        "role": "control-diagnostic"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/source-cache-887-20261016T191202Z-340920da53f9/03-expand-command.json": [
+      {
+        "anchor": "exact named cache command metadata",
+        "attempt_id": null,
+        "context": "historical-only",
+        "role": "source-policy"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/source-cache-887-20261016T191202Z-340920da53f9/03-expand.json": [
+      {
+        "anchor": "$.results[2].log",
+        "attempt_id": null,
+        "context": "historical-only",
+        "role": "control-diagnostic"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/source-cache-887-20261016T191202Z-340920da53f9/prior-current-ref.json": [
+      {
+        "anchor": "explicit prior cf31 ref raw preimage",
+        "attempt_id": null,
+        "context": "historical-only",
+        "role": "source-policy"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/source-cache-887-20261016T191202Z-340920da53f9/summary.json": [
+      {
+        "anchor": "root current source-only cache summary; no proof admission",
+        "attempt_id": null,
+        "context": "historical-only",
+        "role": "receipt"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/two-selected-runtime-plan-20261016T190205Z-220551577cf8.json": [
+      {
+        "anchor": "root named selected plan",
+        "attempt_id": null,
+        "context": "selected-math",
+        "role": "source-policy"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/scripts/cache_math.py": [
+      {
+        "anchor": "$.source_hashes operational inputs",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "source-policy"
+      },
+      {
+        "anchor": "$.source_hashes operational inputs",
+        "attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+        "context": "selected-math",
+        "role": "source-policy"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/scripts/check_math_trust.py": [
+      {
+        "anchor": "$.source_hashes operational inputs",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "source-policy"
+      },
+      {
+        "anchor": "$.source_hashes operational inputs",
+        "attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+        "context": "selected-math",
+        "role": "source-policy"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/scripts/check_prefix_direct_lookup.py": [
+      {
+        "anchor": "$.source_hashes operational inputs",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "source-policy"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/scripts/check_third_cyclotomic_jacobi.py": [
+      {
+        "anchor": "$.source_hashes operational inputs",
+        "attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+        "context": "selected-math",
+        "role": "source-policy"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/scripts/incremental_lean.py": [
+      {
+        "anchor": "$.source_hashes operational inputs",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "source-policy"
+      },
+      {
+        "anchor": "$.source_hashes operational inputs",
+        "attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+        "context": "selected-math",
+        "role": "source-policy"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/scripts/monitor_math.py": [
+      {
+        "anchor": "$.source_hashes operational inputs",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "source-policy"
+      },
+      {
+        "anchor": "$.source_hashes operational inputs",
+        "attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+        "context": "selected-math",
+        "role": "source-policy"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/scripts/owned_audit_protocol.py": [
+      {
+        "anchor": "$.source_hashes operational inputs",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "source-policy"
+      },
+      {
+        "anchor": "$.source_hashes operational inputs",
+        "attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+        "context": "selected-math",
+        "role": "source-policy"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/scripts/repository_paths.py": [
+      {
+        "anchor": "$.source_hashes operational inputs",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "source-policy"
+      },
+      {
+        "anchor": "$.source_hashes operational inputs",
+        "attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+        "context": "selected-math",
+        "role": "source-policy"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/scripts/selected_incremental.py": [
+      {
+        "anchor": "$.source_hashes operational inputs",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "source-policy"
+      },
+      {
+        "anchor": "$.source_hashes operational inputs",
+        "attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+        "context": "selected-math",
+        "role": "source-policy"
+      }
+    ],
+    "/Users/think/Desktop/math/.noeaaeue/scripts/source_observations.py": [
+      {
+        "anchor": "$.source_hashes operational inputs",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "source-policy"
+      },
+      {
+        "anchor": "$.source_hashes operational inputs",
+        "attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+        "context": "selected-math",
+        "role": "source-policy"
+      }
+    ],
+    "/Users/think/Desktop/math/docs/mathematics/Combinatorics/DirectedGraph/prefix-table-direct-lookup.md": [
+      {
+        "anchor": "$.current[0] exact selected guide/registry postimage",
+        "attempt_id": null,
+        "context": "documentation",
+        "role": "selected-doc-evidence"
+      }
+    ],
+    "/Users/think/Desktop/math/docs/mathematics/NumberTheory/Cyclotomic/third-cyclotomic-jacobi.md": [
+      {
+        "anchor": "$.current[1] exact selected guide/registry postimage",
+        "attempt_id": null,
+        "context": "documentation",
+        "role": "selected-doc-evidence"
+      }
+    ],
+    "/Users/think/Desktop/math/lake-manifest.json": [
+      {
+        "anchor": "$.source_hashes operational inputs",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "source-policy"
+      },
+      {
+        "anchor": "$.source_hashes operational inputs",
+        "attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+        "context": "selected-math",
+        "role": "source-policy"
+      }
+    ],
+    "/Users/think/Desktop/math/lakefile.toml": [
+      {
+        "anchor": "$.source_hashes operational inputs",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "source-policy"
+      },
+      {
+        "anchor": "$.source_hashes operational inputs",
+        "attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+        "context": "selected-math",
+        "role": "source-policy"
+      }
+    ],
+    "/Users/think/Desktop/math/lean-toolchain": [
+      {
+        "anchor": "$.source_hashes operational inputs",
+        "attempt_id": "selected-proof-validation-8d95cf3e31e5492aa257331d74f6c79e",
+        "context": "selected-math",
+        "role": "source-policy"
+      },
+      {
+        "anchor": "$.source_hashes operational inputs",
+        "attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a",
+        "context": "selected-math",
+        "role": "source-policy"
+      }
+    ]
+  },
+  "source_cache_mathematical_acceptance": false,
+  "source_cache_proof_status": "unknown-unreplayed",
+  "status": "IMMUTABLE_APPEND_PROPOSAL_ONLY_FINAL_COORDINATION_ACK_PENDING_NOT_EXPORTED"
+}

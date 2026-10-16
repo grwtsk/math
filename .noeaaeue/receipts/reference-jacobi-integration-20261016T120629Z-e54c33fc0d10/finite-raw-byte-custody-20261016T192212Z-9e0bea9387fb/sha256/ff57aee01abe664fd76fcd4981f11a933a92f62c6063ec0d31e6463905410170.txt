@@ -1,0 +1,63 @@
+{
+  "proof_acceptance": false,
+  "results": [
+    {
+      "compiler_runtime_sha256": "c48f0fb338d4947e55e4f3974e49b7d1d4a12ad0ac0a783355a135d7bda01f7d",
+      "exit_code": 0,
+      "log": {
+        "bytes": 101,
+        "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/01-render.log",
+        "sha256": "e841ac8049f76c70db16eb221f553d90c234bfd489aa82cc734c91d216922118"
+      },
+      "name": "01-render",
+      "seconds": 29.478223167010583
+    },
+    {
+      "compiler_runtime_sha256": "c48f0fb338d4947e55e4f3974e49b7d1d4a12ad0ac0a783355a135d7bda01f7d",
+      "exit_code": 0,
+      "log": {
+        "bytes": 101,
+        "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/02-normal.log",
+        "sha256": "e841ac8049f76c70db16eb221f553d90c234bfd489aa82cc734c91d216922118"
+      },
+      "name": "02-normal",
+      "seconds": 10.316501374996733
+    },
+    {
+      "compiler_runtime_sha256": "c48f0fb338d4947e55e4f3974e49b7d1d4a12ad0ac0a783355a135d7bda01f7d",
+      "exit_code": 0,
+      "log": {
+        "bytes": 101,
+        "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/03-optimized.log",
+        "sha256": "e841ac8049f76c70db16eb221f553d90c234bfd489aa82cc734c91d216922118"
+      },
+      "name": "03-optimized",
+      "seconds": 12.162891416985076
+    },
+    {
+      "compiler_runtime_sha256": "c48f0fb338d4947e55e4f3974e49b7d1d4a12ad0ac0a783355a135d7bda01f7d",
+      "exit_code": 0,
+      "log": {
+        "bytes": 209,
+        "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/04-tests-normal.log",
+        "sha256": "f82137050b1ef8abceff6e115cf74d23b9ac68928b46cdb44c63fdc0a3f99d09"
+      },
+      "name": "04-tests-normal",
+      "seconds": 0.9021450000000186
+    },
+    {
+      "compiler_runtime_sha256": "c48f0fb338d4947e55e4f3974e49b7d1d4a12ad0ac0a783355a135d7bda01f7d",
+      "exit_code": 0,
+      "log": {
+        "bytes": 209,
+        "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/05-tests-optimized.log",
+        "sha256": "011e65ce52d2382dc4959be5d6f74bd48aeb6e7bf1e4d24cb3bd9bb1510c1fab"
+      },
+      "name": "05-tests-optimized",
+      "seconds": 1.6436326669645496
+    }
+  ],
+  "schema": "documentation-five-gates-result-v1",
+  "scope": "Structural documentation andfixturecontrols only, nativecensusrecorded; no mathematicalacceptancebyanalogy.",
+  "status": "ALL_FIVE_DOCUMENTATION_GATES_PASSED"
+}

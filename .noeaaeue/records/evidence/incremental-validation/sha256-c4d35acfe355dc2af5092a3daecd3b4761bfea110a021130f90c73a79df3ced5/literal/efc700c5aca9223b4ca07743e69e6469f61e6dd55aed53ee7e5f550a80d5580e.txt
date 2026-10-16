@@ -1,0 +1,400 @@
+#!/usr/bin/env python3
+"""Exact-rational Xi quotient sections with an explicit analytic remainder.
+
+Human mathematical direction: R.A. Jacob Martone. Implementation: OpenAI ChatGPT.
+MIT. The analytic justification is in the accompanying derivation. Finite
+replays are not Lean admission, zero exclusion, or an all-depth norm estimate.
+No zero table, floating-point acceptance, or external numerical oracle is used.
+"""
+from __future__ import annotations
+from dataclasses import dataclass
+from fractions import Fraction as Q
+from functools import lru_cache
+from math import comb, factorial, isqrt
+import argparse
+import json
+
+
+def integer(n, name, lo, hi):
+    if type(n) is not int or not lo <= n <= hi:
+        raise ValueError(f'{name}: integer required in [{lo}, {hi}]')
+    return n
+
+
+def exact(x):
+    if type(x) not in (int, str, Q):
+        raise TypeError('exact integer, rational string, or Fraction required')
+    if isinstance(x, str) and len(x) > 16384:
+        raise ValueError('rational input too long')
+    return Q(x)
+
+
+@dataclass(frozen=True)
+class I:
+    lo: Q
+    hi: Q
+    bits: int = 256
+
+    def __post_init__(self):
+        integer(self.bits, 'bits', 96, 2048)
+        a, b = exact(self.lo), exact(self.hi)
+        if a > b:
+            raise ValueError('reversed interval')
+        object.__setattr__(self, 'lo', a)
+        object.__setattr__(self, 'hi', b)
+
+    @classmethod
+    def point(cls, x, bits=256):
+        return cls(exact(x), exact(x), bits)
+
+    @classmethod
+    def outward(cls, a, b, bits=256):
+        a, b = exact(a), exact(b)
+        if a > b:
+            raise ValueError('reversed interval before rounding')
+        integer(bits, 'bits', 96, 2048)
+        s = 1 << bits
+        af, bf = a*s, b*s
+        return cls(Q(af.numerator // af.denominator, s),
+                   Q(-((-bf.numerator) // bf.denominator), s), bits)
+
+    def coerce(self, x):
+        if not isinstance(x, I):
+            return I.point(x, self.bits)
+        if x.bits != self.bits:
+            raise ValueError('mixed interval precision')
+        return x
+
+    def __add__(self, x):
+        b = self.coerce(x)
+        return I.outward(self.lo+b.lo, self.hi+b.hi, self.bits)
+
+    __radd__ = __add__
+
+    def __neg__(self):
+        return I(-self.hi, -self.lo, self.bits)
+
+    def __sub__(self, x):
+        return self + (-self.coerce(x))
+
+    def __rsub__(self, x):
+        return self.coerce(x) - self
+
+    def __mul__(self, x):
+        b = self.coerce(x)
+        e = (self.lo*b.lo, self.lo*b.hi, self.hi*b.lo, self.hi*b.hi)
+        return I.outward(min(e), max(e), self.bits)
+
+    __rmul__ = __mul__
+
+    def reciprocal(self):
+        if self.lo <= 0 <= self.hi:
+            raise ZeroDivisionError('interval denominator contains zero')
+        return I.outward(1/self.hi, 1/self.lo, self.bits)
+
+    def __truediv__(self, x):
+        return self*self.coerce(x).reciprocal()
+
+    def square(self):
+        a = 0 if self.lo <= 0 <= self.hi else min(self.lo**2, self.hi**2)
+        return I.outward(a, max(self.lo**2, self.hi**2), self.bits)
+
+    def power(self, k):
+        integer(k, 'power', 0, 1024)
+        if k == 0:
+            return I.point(1, self.bits)
+        if k == 1:
+            return self
+        half = self.power(k//2).square()
+        return half*self if k % 2 else half
+
+    def abs_upper(self):
+        return max(abs(self.lo), abs(self.hi))
+
+    def widen(self, e):
+        e = exact(e)
+        if e < 0:
+            raise ValueError('negative error')
+        return I.outward(self.lo-e, self.hi+e, self.bits)
+
+    def sqrt(self):
+        if self.lo < 0:
+            raise ValueError('negative square root')
+        s = 1 << self.bits
+        a = isqrt((self.lo*s*s).numerator // (self.lo*s*s).denominator)
+        b = isqrt((self.hi*s*s).numerator // (self.hi*s*s).denominator)
+        if Q(b*b, s*s) < self.hi:
+            b += 1
+        return I(Q(a,s), Q(b,s), self.bits)
+
+    def record(self):
+        return {'lower': str(self.lo), 'upper': str(self.hi)}
+
+
+def zeros(n, bits):
+    return [I.point(0,bits) for _ in range(n)]
+
+
+def conv(a, b, n):
+    """Complete truncated convolution; never discards an in-range cross term."""
+    return [sum((a[j]*b[k-j] for j in range(k+1)
+                 if j < len(a) and k-j < len(b)), 0) for k in range(n)]
+
+
+def inverse(a, n):
+    if not a or len(a) < n:
+        raise ValueError('complete denominator prefix required')
+    b = [1/a[0] if not isinstance(a[0],I) else a[0].reciprocal()]
+    for k in range(1,n):
+        b.append(-sum((a[j]*b[k-j] for j in range(1,k+1)),0)*b[0])
+    return b
+
+
+@lru_cache(maxsize=4096)
+def log_q(x, bits=256):
+    x = exact(x)
+    integer(bits, 'bits', 96, 2048)
+    if x <= 0 or x.numerator.bit_length()+x.denominator.bit_length() > 32768:
+        raise ValueError('positive bounded rational logarithm required')
+    m = 0
+    while x >= 2:
+        x /= 2; m += 1
+    while x < 1:
+        x *= 2; m -= 1
+    def atanh(y):
+        z = (y-1)/(y+1); z2 = z*z; p = z; total = Q(0)
+        for j in range(4096):
+            total += 2*p/(2*j+1); p *= z2
+            tail = 2*p/((2*j+3)*(1-z2))
+            if tail <= Q(1,1 << (bits+16)):
+                return I.outward(total,total+tail,bits)
+        raise ArithmeticError('logarithm resource limit')
+    return atanh(x) + m*atanh(Q(2))
+
+
+@lru_cache(maxsize=16)
+def pi_box(bits=256):
+    integer(bits, 'bits', 96, 2048)
+    def atan(q):
+        z = Q(1,q); p = z; total = Q(0)
+        for k in range(4096):
+            total += (-1)**k*p/(2*k+1); p *= z*z
+            term = (-1)**(k+1)*p/(2*k+3)
+            if abs(term) < Q(1,1 << (bits+16)):
+                return I.outward(min(total,total+term),max(total,total+term),bits)
+        raise ArithmeticError('arctangent resource limit')
+    return 16*atan(5)-4*atan(239)
+
+
+@lru_cache(maxsize=16)
+def bernoulli(n):
+    integer(n, 'Bernoulli order', 0, 256)
+    out = [Q(1)]
+    for m in range(1,n+1):
+        out.append(-sum((Q(comb(m+1,k))*out[k] for k in range(m)),Q(0))/(m+1))
+    return tuple(out)
+
+
+def exp_linear(logarithm, n):
+    out = [I.point(1,logarithm.bits)]
+    for k in range(1,n):
+        out.append(out[-1]*logarithm/k)
+    return out
+
+
+def inverse_affine(x, slope, exponent, n, bits):
+    x, slope = exact(x), exact(slope)
+    return [I.point((-1)**k*comb(exponent+k-1,k)*slope**k/x**(exponent+k),bits)
+            for k in range(n)]
+
+
+def zeta_h_jet(n, cutoff=64, order=48, bits=256):
+    """Coefficients of zeta(3/2+h), including Cauchy-priced EM remainders."""
+    integer(n,'jet length',1,130); integer(cutoff,'cutoff',8,512)
+    integer(order,'EM order',4,128); integer(bits,'bits',96,2048)
+    out = zeros(n,bits)
+    for m in range(1,cutoff):
+        factor = I.point(Q(1,m),bits).sqrt()/m
+        e = exp_linear(-log_q(Q(m),bits),n)
+        out = [a+factor*b for a,b in zip(out,e)]
+    tail = inverse_affine(Q(1,2),1,1,n,bits)
+    tail[0] += Q(1,2*cutoff)
+    rising = [I.point(1,bits)]+zeros(n-1,bits)
+    bs = bernoulli(2*order)
+    for j in range(1,2*order):
+        # rising product s(s+1)...(s+j-1), at s=3/2+h
+        old = rising
+        rising = [old[k]*Q(2*j+1,2)+(old[k-1] if k else 0) for k in range(n)]
+        if j % 2:
+            r = (j+1)//2
+            scale = bs[2*r]/factorial(2*r)/cutoff**(2*r)
+            tail = [a+scale*b for a,b in zip(tail,rising)]
+    tail = conv(tail,exp_linear(-log_q(Q(cutoff),bits),n),n)
+    root = I.point(Q(1,cutoff),bits).sqrt()
+    rem = Q(4*factorial(2*order+1),2*order*(6*cutoff)**(2*order))
+    return [(a+root*b).widen(rem*4**k) for k,(a,b) in enumerate(zip(out,tail))], rem
+
+
+def psi_h_jet(n, cutoff=64, order=48, bits=256):
+    """Coefficients of psi(3/4+h/2); recurrence and complex EM remainder."""
+    integer(n,'jet length',1,130); integer(cutoff,'cutoff',8,512)
+    integer(order,'EM order',4,128); integer(bits,'bits',96,2048)
+    x = Q(cutoff)+Q(3,4)
+    out = [log_q(x,bits)] + [I.point((-1)**(k+1)/(Q(k)*(2*x)**k),bits) for k in range(1,n)]
+    tmp = inverse_affine(x,Q(1,2),1,n,bits)
+    out = [a-b/2 for a,b in zip(out,tmp)]
+    bs = bernoulli(2*order)
+    for r in range(1,order+1):
+        tmp = inverse_affine(x,Q(1,2),2*r,n,bits)
+        out = [a-bs[2*r]/(2*r)*b for a,b in zip(out,tmp)]
+    for j in range(cutoff):
+        tmp = inverse_affine(Q(j)+Q(3,4),Q(1,2),1,n,bits)
+        out = [a-b for a,b in zip(out,tmp)]
+    # On |h|<=1/4, Re(cutoff+3/4+h/2)>=cutoff+5/8.
+    rem = Q(4*factorial(2*order-1),6**(2*order))/(Q(cutoff)+Q(5,8))**(2*order)
+    return [a.widen(rem*4**k) for k,a in enumerate(out)],rem
+
+
+def logarithmic_xi_jet(n, cutoff=64, order=48, bits=256):
+    integer(n,'jet length',1,128)
+    z, zr = zeta_h_jet(n+1,cutoff,order,bits)
+    zp = [(k+1)*z[k+1] for k in range(n)]
+    quotient = conv(zp,inverse(z,n),n)
+    p, pr = psi_h_jet(n,cutoff,order,bits)
+    r1 = inverse_affine(Q(3,2),1,1,n,bits)
+    r2 = inverse_affine(Q(1,2),1,1,n,bits)
+    a = [r1[k]+r2[k]+p[k]/2+quotient[k] for k in range(n)]
+    pi = pi_box(bits)
+    logpi = I(log_q(pi.lo,bits).lo,log_q(pi.hi,bits).hi,bits)
+    a[0] -= logpi/2
+    # h=2w/(1-w). Complete composition, not a cutoff in prime powers.
+    aw = [a[0]]
+    for k in range(1,n):
+        aw.append(sum((2**j*comb(k-1,j-1)*a[j] for j in range(1,k+1)),I.point(0,bits)))
+    return aw, {'zeta_circle_remainder':str(zr),'digamma_circle_remainder':str(pr),
+                'circle_radius':'1/4','s_center':'3/2'}
+
+
+def certified_quotient(a, candidate=None):
+    """Certify (a-1)/(a+1) with the shared numerator/denominator retained.
+
+    For D=a+1 and midpoint inverse B, the error satisfies
+    (1+B deltaD)(c-chat)=cbar-chat+B(1-chat)deltaD mod w^n.
+    Triangular majorization requires only the nonzero constant coefficient.
+    """
+    if not a or len(a)>128 or not all(isinstance(x,I) for x in a):
+        raise ValueError('nonempty interval jet of length at most 128 required')
+    bits=a[0].bits
+    if any(x.bits!=bits for x in a):raise ValueError('mixed interval precision')
+    n=len(a); d=[x+(1 if k==0 else 0) for k,x in enumerate(a)]
+    if d[0].lo<=0<=d[0].hi:raise ZeroDivisionError('source constant denominator unresolved')
+    mid=[(x.lo+x.hi)/2 for x in d];rad=[(x.hi-x.lo)/2 for x in d]
+    b=inverse(mid,n)
+    cbar=[(1 if k==0 else 0)-2*b[k] for k in range(n)]
+    chat=cbar if candidate is None else [exact(x) for x in candidate]
+    if len(chat)!=n:raise ValueError('complete candidate prefix required')
+    one_minus=[(1 if k==0 else 0)-chat[k] for k in range(n)]
+    multiplier=conv(b,one_minus,n)
+    q=conv([abs(x) for x in b],rad,n)
+    rho=[abs(cbar[k]-chat[k])+x for k,x in enumerate(conv([abs(x) for x in multiplier],rad,n))]
+    if q[0]>=1:raise ArithmeticError('constant preconditioner not separated')
+    errors=[]
+    for k in range(n):
+        errors.append((rho[k]+sum((q[j]*errors[k-j] for j in range(1,k+1)),Q(0)))/(1-q[0]))
+    boxes=[I.outward(chat[k]-errors[k],chat[k]+errors[k],bits) for k in range(n)]
+    return boxes,{'q0':str(q[0]),'q_l1_upper':str(I.outward(0,sum(q),bits).hi),
+                  'coefficient_error_l1_upper':str(I.outward(0,sum(errors),bits).hi),
+                  'requires_global_neumann_norm_lt_one':False,
+                  'shared_numerator_denominator':True}
+
+
+def section_moments(c,n):
+    """Literal signed Toeplitz/Hankel Gram entries and retained cubic mean."""
+    integer(n,'matrix size',1,16)
+    if len(c)<2*n:raise ValueError('terminal coefficient c_(2N-1) required')
+    bits=c[0].bits;zero=I.point(0,bits)
+    t=[[c[i-j] if i>=j else zero for j in range(n)] for i in range(n)]
+    h=[[c[i+j+1] for j in range(n)] for i in range(n)]
+    def gram(m):
+        return [[sum((m[i][k]*m[j][k] for k in range(n)),zero)
+                 for j in range(n)] for i in range(n)]
+    gt,gh=gram(t),gram(h)
+    trace=sum((gh[i][i] for i in range(n)),zero)
+    cubic=sum((gh[i][j]*gh[j][k]*gh[k][i]
+               for i in range(n) for j in range(n) for k in range(n)),zero)
+    mean=trace/n
+    numerator=cubic-(n-1)*mean.power(3)
+    # ||T e0|| gives a lower norm bound. A Schur row sum gives an upper bound.
+    tl=max(Q(0),sum((x.square().lo for x in c[:n]),Q(0)))
+    tu=max(sum((x.abs_upper() for x in row),Q(0)) for row in gt)
+    norm=I(tl,tu,bits).sqrt(); den=(norm+1).power(6)
+    lower=max(Q(0),numerator.lo)/den.hi
+    upper=max(Q(0),numerator.hi)/den.lo
+    return {'size':n,'highest_coefficient_used':2*n-1,
+            'toeplitz_norm':norm.record(),'hankel_gram_trace':trace.record(),
+            'hankel_gram_cubic_trace':cubic.record(),
+            'retained_cubic_numerator':I(max(Q(0),numerator.lo),max(Q(0),numerator.hi),bits).record(),
+            'relative_cubic_J':I.outward(lower,upper,bits).record(),
+            'all_depth_bound':False}
+
+
+def prime_jet_polynomials(n):
+    """q_k=L_k^(-1), coefficients in increasing x degree, exact recurrence."""
+    integer(n,'polynomial count',1,128)
+    out=[[Q(1)]]
+    if n==1:return out
+    out.append([Q(0),Q(-1)])
+    for k in range(2,n):
+        prev=out[-1]; prev2=out[-2]
+        row=[Q(0)]*(k+1)
+        for j,x in enumerate(prev):row[j]+=(2*k-2)*x;row[j+1]-=x
+        for j,x in enumerate(prev2):row[j]-=(k-2)*x
+        out.append([x/k for x in row])
+    return out
+
+
+def density_bands():
+    """Finite exponent certificate conditional on the imported density/collar."""
+    rows=[]
+    for j in range(300):
+        a,b=Q(j,800),Q(j+1,800)
+        nu=min(Q(1),15*(Q(1,2)-a)/(Q(11,2)+5*a))
+        margin=Q(2,15)*(6-nu-Q(1,100))-2*b
+        if margin<=Q(1,100):raise ArithmeticError('density exponent margin failed')
+        rows.append({'lower':str(a),'upper':str(b),'count_exponent':str(nu),'decay_margin':str(margin)})
+    return {'rows':rows,'minimum_margin':str(min(Q(r['decay_margin']) for r in rows)),
+            'height_exponent':'2/15','tail_decay':'1/100','density_constant_evaluated':False,
+            'seven_eighths_dependency':'IMPORTED_NOT_REPLAYED',
+            'zero_density_dependency':'IMPORTED_NOT_REPROVED','all_height_zero_exclusion':False}
+
+
+def produce(n=16,cutoff=64,order=48,bits=256):
+    integer(n,'coefficient count',2,32)
+    a,analytic=logarithmic_xi_jet(n,cutoff,order,bits)
+    c,certificate=certified_quotient(a)
+    sizes=[k for k in (1,2,4,8,16) if 2*k<=n]
+    return {'schema':'arithmetic-quotient-sections-v1',
+            'source':'F(w)=(xi_prime(s(w))/xi(s(w))-1)/(xi_prime(s(w))/xi(s(w))+1); s(w)=3/2+2w/(1-w)',
+            'coefficient_count':n,'cutoff':cutoff,'em_order':order,'bits':bits,
+            'analytic_remainders':analytic,'quotient_reconstruction':certificate,
+            'logarithmic_derivative_coefficients':[x.record() for x in a],
+            'quotient_coefficients':[x.record() for x in c],
+            'sections':[section_moments(c,k) for k in sizes],
+            'verification_grade':'RATIONAL_COMPUTATION_WITH_WRITTEN_ANALYTIC_REMAINDER',
+            'RH_proved':False,'all_depth_bound':False,'native_Lean_admission':False}
+
+
+def main():
+    p=argparse.ArgumentParser(description=__doc__)
+    p.add_argument('--count',type=int,default=16)
+    p.add_argument('--cutoff',type=int,default=64)
+    p.add_argument('--order',type=int,default=48)
+    p.add_argument('--bits',type=int,default=256)
+    p.add_argument('--density-bands',action='store_true')
+    args=p.parse_args()
+    result=density_bands() if args.density_bands else produce(args.count,args.cutoff,args.order,args.bits)
+    print(json.dumps(result,indent=2))
+
+
+if __name__=='__main__':
+    main()

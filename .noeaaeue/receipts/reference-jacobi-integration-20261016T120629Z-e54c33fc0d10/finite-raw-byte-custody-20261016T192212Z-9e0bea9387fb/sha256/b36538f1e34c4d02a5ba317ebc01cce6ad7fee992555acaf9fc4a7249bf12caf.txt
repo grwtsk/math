@@ -1,0 +1,205 @@
+{
+  "actual_runtime_observations": 0,
+  "all_source_inputs_stable": true,
+  "native_jobs": 0,
+  "prior114_pair_receipt": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/producer-runtime-controls-20261016T175022Z-70ae34339d094e42b33fdb4515c235e5/receipt.json",
+  "real_producer_CLI_executions": 0,
+  "runs": [
+    {
+      "argv": [
+        "/opt/homebrew/opt/python@3.11/bin/python3.11",
+        "-B",
+        "/Users/think/Desktop/math/.noeaaeue/binding-repair/test_observe_current_moebius_inputs.py"
+      ],
+      "exit_code": 0,
+      "mode": "normal",
+      "stderr": {
+        "bytes": 16610,
+        "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/producer-runtime-successor-controls-20261016T175627Z-bd4400b565ff4f43a49affedbc4ed721/normal.stderr.log",
+        "sha256": "6cb1f1ba889d8dec4d3af6317b3e1b1eb914017080dff6149da2b51ac4d7082c"
+      },
+      "stdout": {
+        "bytes": 1472,
+        "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/producer-runtime-successor-controls-20261016T175627Z-bd4400b565ff4f43a49affedbc4ed721/normal.stdout.log",
+        "sha256": "9639f955f59b321e640dc254de34acf9b42a3fc2d9c3ad6222fb8d41b7ff8c25"
+      },
+      "summary": {
+        "errors": 0,
+        "external_attempts": [],
+        "failures": 0,
+        "optimized": false,
+        "schema": "isolated-observation-producer-controls-v1",
+        "scope": "Temporary fixture Python controls only; no native/math/application acceptance",
+        "source_bindings": {
+          "/Users/think/Desktop/math/.noeaaeue/binding-repair/observe_current_moebius_inputs.py": {
+            "bytes": 27724,
+            "sha256": "1caae3a7ff23fb9cd07b3780981db37881a1d2841d25ae5d8793fb004e6168a9"
+          },
+          "/Users/think/Desktop/math/.noeaaeue/binding-repair/test_observe_current_moebius_inputs.py": {
+            "bytes": 80668,
+            "sha256": "2b917dbea9d34183b6f235a00d70045fa32c01b451b681b7033ecc7acab75ce2"
+          },
+          "/Users/think/Desktop/math/.noeaaeue/scripts/cache_math.py": {
+            "bytes": 36017,
+            "sha256": "d73bebfeca4ec709fdc68741cba13a09611ae49a0095b4140dd5d2f3e6bb1c06"
+          },
+          "/Users/think/Desktop/math/.noeaaeue/scripts/check_moebius_response.py": {
+            "bytes": 124950,
+            "sha256": "f6b6de407701af9c8cae3b26d7b14396c2d4836c7cd1497633dc8f7e46629e2d"
+          },
+          "/Users/think/Desktop/math/.noeaaeue/scripts/incremental_lean.py": {
+            "bytes": 60843,
+            "sha256": "089f5c980be2aa3b1606ae9ddf12a09ec5df2bf6d6544f52690447b640882f12"
+          },
+          "/Users/think/Desktop/math/.noeaaeue/scripts/monitor_math.py": {
+            "bytes": 85340,
+            "sha256": "a757804707ffe811aa27d295aa82dcdaddf7b3c90f9c3bd6a47d27ec3b0890e3"
+          },
+          "/Users/think/Desktop/math/.noeaaeue/scripts/repository_paths.py": {
+            "bytes": 2343,
+            "sha256": "4bd02ac496dc2fbd141b19f23ba86291db1618a0ae298a76beab28701ff24d22"
+          }
+        },
+        "source_inputs_stable": true,
+        "tests_run": 114
+      }
+    },
+    {
+      "argv": [
+        "/opt/homebrew/opt/python@3.11/bin/python3.11",
+        "-O",
+        "-B",
+        "/Users/think/Desktop/math/.noeaaeue/binding-repair/test_observe_current_moebius_inputs.py"
+      ],
+      "exit_code": 0,
+      "mode": "optimized",
+      "stderr": {
+        "bytes": 16610,
+        "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/producer-runtime-successor-controls-20261016T175627Z-bd4400b565ff4f43a49affedbc4ed721/optimized.stderr.log",
+        "sha256": "baf7e32b61d157b3e2e2037c8aefa88930ee5f542e7b36e6bf0530bcdb5f71cf"
+      },
+      "stdout": {
+        "bytes": 1471,
+        "path": "/Users/think/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/producer-runtime-successor-controls-20261016T175627Z-bd4400b565ff4f43a49affedbc4ed721/optimized.stdout.log",
+        "sha256": "9bc4cad3e82480ff92b2b49bc8d0f797aff1837be1687e2212989056c5d6bd1e"
+      },
+      "summary": {
+        "errors": 0,
+        "external_attempts": [],
+        "failures": 0,
+        "optimized": true,
+        "schema": "isolated-observation-producer-controls-v1",
+        "scope": "Temporary fixture Python controls only; no native/math/application acceptance",
+        "source_bindings": {
+          "/Users/think/Desktop/math/.noeaaeue/binding-repair/observe_current_moebius_inputs.py": {
+            "bytes": 27724,
+            "sha256": "1caae3a7ff23fb9cd07b3780981db37881a1d2841d25ae5d8793fb004e6168a9"
+          },
+          "/Users/think/Desktop/math/.noeaaeue/binding-repair/test_observe_current_moebius_inputs.py": {
+            "bytes": 80668,
+            "sha256": "2b917dbea9d34183b6f235a00d70045fa32c01b451b681b7033ecc7acab75ce2"
+          },
+          "/Users/think/Desktop/math/.noeaaeue/scripts/cache_math.py": {
+            "bytes": 36017,
+            "sha256": "d73bebfeca4ec709fdc68741cba13a09611ae49a0095b4140dd5d2f3e6bb1c06"
+          },
+          "/Users/think/Desktop/math/.noeaaeue/scripts/check_moebius_response.py": {
+            "bytes": 124950,
+            "sha256": "f6b6de407701af9c8cae3b26d7b14396c2d4836c7cd1497633dc8f7e46629e2d"
+          },
+          "/Users/think/Desktop/math/.noeaaeue/scripts/incremental_lean.py": {
+            "bytes": 60843,
+            "sha256": "089f5c980be2aa3b1606ae9ddf12a09ec5df2bf6d6544f52690447b640882f12"
+          },
+          "/Users/think/Desktop/math/.noeaaeue/scripts/monitor_math.py": {
+            "bytes": 85340,
+            "sha256": "a757804707ffe811aa27d295aa82dcdaddf7b3c90f9c3bd6a47d27ec3b0890e3"
+          },
+          "/Users/think/Desktop/math/.noeaaeue/scripts/repository_paths.py": {
+            "bytes": 2343,
+            "sha256": "4bd02ac496dc2fbd141b19f23ba86291db1618a0ae298a76beab28701ff24d22"
+          }
+        },
+        "source_inputs_stable": true,
+        "tests_run": 114
+      }
+    }
+  ],
+  "schema": "producer-runtime-successor-controls-v1",
+  "scope": "Controlled pure injected temporary-fixture tests only; exact successor helper/parser sources bound. Actual Mach-O runtime observer is never invoked.",
+  "sources_after": [
+    {
+      "bytes": 27724,
+      "path": "/Users/think/Desktop/math/.noeaaeue/binding-repair/observe_current_moebius_inputs.py",
+      "sha256": "1caae3a7ff23fb9cd07b3780981db37881a1d2841d25ae5d8793fb004e6168a9"
+    },
+    {
+      "bytes": 80668,
+      "path": "/Users/think/Desktop/math/.noeaaeue/binding-repair/test_observe_current_moebius_inputs.py",
+      "sha256": "2b917dbea9d34183b6f235a00d70045fa32c01b451b681b7033ecc7acab75ce2"
+    },
+    {
+      "bytes": 60843,
+      "path": "/Users/think/Desktop/math/.noeaaeue/scripts/incremental_lean.py",
+      "sha256": "089f5c980be2aa3b1606ae9ddf12a09ec5df2bf6d6544f52690447b640882f12"
+    },
+    {
+      "bytes": 124950,
+      "path": "/Users/think/Desktop/math/.noeaaeue/scripts/check_moebius_response.py",
+      "sha256": "f6b6de407701af9c8cae3b26d7b14396c2d4836c7cd1497633dc8f7e46629e2d"
+    },
+    {
+      "bytes": 2343,
+      "path": "/Users/think/Desktop/math/.noeaaeue/scripts/repository_paths.py",
+      "sha256": "4bd02ac496dc2fbd141b19f23ba86291db1618a0ae298a76beab28701ff24d22"
+    },
+    {
+      "bytes": 85340,
+      "path": "/Users/think/Desktop/math/.noeaaeue/scripts/monitor_math.py",
+      "sha256": "a757804707ffe811aa27d295aa82dcdaddf7b3c90f9c3bd6a47d27ec3b0890e3"
+    },
+    {
+      "bytes": 36017,
+      "path": "/Users/think/Desktop/math/.noeaaeue/scripts/cache_math.py",
+      "sha256": "d73bebfeca4ec709fdc68741cba13a09611ae49a0095b4140dd5d2f3e6bb1c06"
+    }
+  ],
+  "sources_before": [
+    {
+      "bytes": 27724,
+      "path": "/Users/think/Desktop/math/.noeaaeue/binding-repair/observe_current_moebius_inputs.py",
+      "sha256": "1caae3a7ff23fb9cd07b3780981db37881a1d2841d25ae5d8793fb004e6168a9"
+    },
+    {
+      "bytes": 80668,
+      "path": "/Users/think/Desktop/math/.noeaaeue/binding-repair/test_observe_current_moebius_inputs.py",
+      "sha256": "2b917dbea9d34183b6f235a00d70045fa32c01b451b681b7033ecc7acab75ce2"
+    },
+    {
+      "bytes": 60843,
+      "path": "/Users/think/Desktop/math/.noeaaeue/scripts/incremental_lean.py",
+      "sha256": "089f5c980be2aa3b1606ae9ddf12a09ec5df2bf6d6544f52690447b640882f12"
+    },
+    {
+      "bytes": 124950,
+      "path": "/Users/think/Desktop/math/.noeaaeue/scripts/check_moebius_response.py",
+      "sha256": "f6b6de407701af9c8cae3b26d7b14396c2d4836c7cd1497633dc8f7e46629e2d"
+    },
+    {
+      "bytes": 2343,
+      "path": "/Users/think/Desktop/math/.noeaaeue/scripts/repository_paths.py",
+      "sha256": "4bd02ac496dc2fbd141b19f23ba86291db1618a0ae298a76beab28701ff24d22"
+    },
+    {
+      "bytes": 85340,
+      "path": "/Users/think/Desktop/math/.noeaaeue/scripts/monitor_math.py",
+      "sha256": "a757804707ffe811aa27d295aa82dcdaddf7b3c90f9c3bd6a47d27ec3b0890e3"
+    },
+    {
+      "bytes": 36017,
+      "path": "/Users/think/Desktop/math/.noeaaeue/scripts/cache_math.py",
+      "sha256": "d73bebfeca4ec709fdc68741cba13a09611ae49a0095b4140dd5d2f3e6bb1c06"
+    }
+  ],
+  "status": "PASS"
+}
