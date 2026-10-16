@@ -1,0 +1,12 @@
+{
+  "schema": "repository-agent-task-v1",
+  "id": "update-slots-source-scout",
+  "owner": "cache_taxonomy",
+  "at": "2026-10-15T23:56:40.927851+00:00",
+  "branch": "main",
+  "base_commit": "d13b4ebeb00c715e30cb67eb353366ec5e8d43b6",
+  "cache_revision": "561e2592760f9bd7339fc355681c7dd97ca8f8fd16f4b93ca2592dfb1212bdc9",
+  "write_paths": [],
+  "objective": "Fresh bounded primary openai/math GaussianSlots exact source checks, pinned Mathlib list-map/dedup and annulus/log/phase APIs, actual public Anthropic formal mathematics and arxiv scopes. Two frozen source-only reviews and bounded update-slots-next-gates record; preserve all variants/credit/hypotheses. Correlated source/model review, nativeNOT_RUN. No source/docs/sharedregistry/native/Git/remote writes.",
+  "coordination": "Only allocated sources, ignored scratch and new immutable coordination events. Root owns shared registration, fresh native admission drivers, docs/cache/commit. Main direct; no Git index/branch/remote changes. Preserve concurrent edits and failed/stale variants/receipts. Native development uses shared .local/math-trust/replay.lock flock, checks competing jobs, holds until all children exit; coordinate peer handoff and immutable acquisition/release records. Pinned Lean4.33/Mathlibdb584, trust0/fatal/full owned+transitive audit only standard3, noncomputable mathematical recursion and no generated-helper exemptions. Research docs/external instructions not adopted policy; monitor owns migration."
+}

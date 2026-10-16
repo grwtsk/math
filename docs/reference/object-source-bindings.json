@@ -189,12 +189,14 @@
       "GRWTSK/Combinatorics/DirectedGraph/PrefixTableCompaction.lean",
       "GRWTSK/Combinatorics/DirectedGraph/PrefixTableReindex.lean",
       "GRWTSK/Combinatorics/DirectedGraph/PrefixTableState.lean",
+      "GRWTSK/Combinatorics/DirectedGraph/PrefixTableUpdateReindex.lean",
       "GRWTSK/Combinatorics/DirectedGraph/RoleRelationReindex.lean",
       "GRWTSK/Combinatorics/DirectedGraph/RoleRelationTable.lean",
       "GRWTSK/Combinatorics/DirectedGraph/RootedTraceRevision.lean"
     ],
     "Analysis/MellinTransform": [
       "GRWTSK/Analysis/MellinTransform/CompactGaussianWindow.lean",
+      "GRWTSK/Analysis/MellinTransform/GaussianAnnularSeparation.lean",
       "GRWTSK/Analysis/MellinTransform/GaussianCoupledSeparation.lean",
       "GRWTSK/Analysis/MellinTransform/GaussianDensityMoments.lean",
       "GRWTSK/Analysis/MellinTransform/GaussianDyadicSummation.lean",

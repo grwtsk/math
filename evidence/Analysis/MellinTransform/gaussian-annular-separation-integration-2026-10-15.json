@@ -1,0 +1,130 @@
+{
+  "schema": "selected-mathematical-integration-v1",
+  "at": "2026-10-16T00:09:02.009167+00:00",
+  "source": {
+    "path": "GRWTSK/Analysis/MellinTransform/GaussianAnnularSeparation.lean",
+    "sha256": "f5484cd14ed516b463e8e1feb3022bb7c5e008addfcca6f66c155cb456b8232f"
+  },
+  "native_receipt": {
+    "path": "evidence/Analysis/MellinTransform/gaussian-annular-separation-checks-2026-10-15.json",
+    "sha256": "bd817853efe630c4a77fd49b88ff10cdd1533ea50d20f9b19e9baac76aea4689"
+  },
+  "source_review": {
+    "path": "evidence/Analysis/MellinTransform/gaussian-annular-separation-source-review-2026-10-15.json",
+    "sha256": "5cb16e8888f6dad41bbb5c362a54fae10eeaea9ef18bffcf9674c630fc1186ed"
+  },
+  "owned_declarations": 261,
+  "selected_library_owned_count": 30,
+  "owned_modules": [
+    {
+      "declarations": 13,
+      "module": "GRWTSK.Analysis.Calculus.CompactCutoff"
+    },
+    {
+      "declarations": 23,
+      "module": "GRWTSK.Analysis.MellinTransform.ReverseInversion"
+    },
+    {
+      "declarations": 20,
+      "module": "GRWTSK.Analysis.MellinTransform.LogarithmicGaussian"
+    },
+    {
+      "declarations": 22,
+      "module": "GRWTSK.Analysis.MellinTransform.NormalizedGaussian"
+    },
+    {
+      "declarations": 9,
+      "module": "GRWTSK.Analysis.MellinTransform.GaussianLogFlow"
+    },
+    {
+      "declarations": 13,
+      "module": "GRWTSK.Analysis.Fourier.SchwartzMoments"
+    },
+    {
+      "declarations": 21,
+      "module": "GRWTSK.Analysis.MellinTransform.GaussianLogWindow"
+    },
+    {
+      "declarations": 14,
+      "module": "GRWTSK.Analysis.MellinTransform.GaussianCoupledSeparation"
+    },
+    {
+      "declarations": 21,
+      "module": "GRWTSK.Analysis.PartitionOfUnity.DyadicAnnulus"
+    },
+    {
+      "declarations": 21,
+      "module": "GRWTSK.Analysis.MellinTransform.CompactGaussianWindow"
+    },
+    {
+      "declarations": 13,
+      "module": "GRWTSK.Analysis.MellinTransform.ScaledGaussianDerivatives"
+    },
+    {
+      "declarations": 19,
+      "module": "GRWTSK.Analysis.MellinTransform.GaussianWindowSeminorms"
+    },
+    {
+      "declarations": 30,
+      "module": "GRWTSK.Analysis.MellinTransform.GaussianAnnularSeparation"
+    },
+    {
+      "declarations": 22,
+      "module": "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianAnnularSeparation"
+    }
+  ],
+  "receipt_accounting": "Separate complete annular analytic closure, including prior actual suppliers countedonce.",
+  "operational_replay_guards": {
+    "path": "evidence/Combinatorics/DirectedGraph/update-slots-operational-controls-2026-10-15.json",
+    "sha256": "7998cf12cd86b10ba1b7f75333808a6227606f480deefb77597a4a7990c72a1f"
+  },
+  "exact_contracts": [
+    "Actual Optionι family: none is dyadicAnnulus(exp y), slope+1, pointlogx; somei is W_i(exp y), slope-1, pointlogq_i. No smoothness or integrability premise on individualW_i.",
+    "For finiteι,x>0 and everyq_i>0: exp(sum_o slope_o*point_o)=x/product_iq_i. Exact phase(t,-y)=phase(-t,y) and Option finite product normalization retain positive2pi inverse normalization and negativeq phases.",
+    "logPhaseTwist(W,t,x)=W(x)*logPhase(t,logx), a total real-line function. Any compactW remains compact after twisting for every realt. The actual admitted gaussianFixedWindow=A/sqrt has compact twist; forx>0 actual rootWeight=sqrt*window cancels to A(x)*logPhase(t,logx). No Schwartz/smoothness assertion for twistedW is made here.",
+    "The additional annulus log support is proved from actual A small/large and monotone log/exp: A(exp y)≠0 implies |y|≤|log(1/2)|+|log2|+1.",
+    "For every actual compact SchwartzV, every realR, positive x and everypositiveq_i, the actual annular frequency integrand rootWeight(logPhaseTwist(fixedWindow,t),x)*product_i[W_i(q_i)*logPhase(-t,logq_i)]*actualdensity(V,R,t) is Integrable. This consumes actual coupled integrability and proved product/root identities.",
+    "Given finiteι, W_i:real→complex, nonnegativeM_i and W_i(exp y)≠0→|y|≤M_i: produce an actual compact SchwartzV before all R>0,x>0,positiveq. For this sameV prove actual Integrable and A(x)*product_iW_i(q_i)*P(R*x/product_iq_i)=integral_t actual annular frequency integrand. No desired hsep, Fourier evaluation or arithmetic completed-sum formula is assumed.",
+    "For the same producedV, every realA and naturalJ admitC>0 chosen beforeeveryR>0 with actual weighted densitynorm Integrable and integral≤C*R^(-A). V depends on W,M; C may depend on V,A,J and not R,x,q."
+  ],
+  "accepted_controls": [
+    "multiplicativeWindow(i,x)=indicator{|logx|≤1}; actual log support proved using log(exp y)=y.",
+    "actual_positive_quotient: x3/4,qexp(1/2), exact positive quotient algebra.",
+    "actual_single_slot: x3/4,q=exp(1/2),R=exp(1/2), actually producedV supplies Integrable annular frequency expression, actual A(3/4)*P(3/4) inverse identity with negativehalf-logphase, and sameValluniform natural moments.",
+    "actual_empty_slots: auxiliaryιEmpty still has actual annulusNone slot; V chosen beforeR/x and actual Integrable+annulusweighted inverse for R>0,x>0.",
+    "actual_twist_root_normalization atx3/4 and actual_twist_compact everyt.",
+    "actual_positive_phase_quarter=I and actual_negative_phase_quarter=-I; actual_phase_sign_differs proves a changed scalar phase if the negative sign is omitted. This is not a full integral counterexample.",
+    "actual_zero_argument_false: x0 andemptyauxiliaryfamily gives exp(log0)=1 vs quotient0.",
+    "actual_zero_denominator_false: x1 andUnitq0 gives exp(log1-log0)=1 vs totalizedquotient1/0=0.",
+    "actual_zero_annulus_identity: for everyactual compactSchwartzV and everyrealR, full empty-family annulusweighted identity atx0 actuallyholds; A0=rootWeight(twist,0)=0. Thus auxiliaryfailure is not a fullannularcounterexample.",
+    "Strict negative imports accepted positive proofs and supplies le_refl0:0≤0 as required strict0<0. Exactlyone intended Application type mismatch."
+  ],
+  "open_obligations": [
+    "No literal upstream normTwistedSource definition correspondence is admitted by this module. Local logPhaseTwist is explicitly defined and its scalar/root identity proved; no arithmetic CompletedHeight object is imported.",
+    "No necessity/sharpness claim for every positivity premise of the full annulusidentity; x0example explicitlyshowsfullidentity canhold while loghelperfails.",
+    "No completed ideal sum, commonfinite arithmetic support, masks/corrections/column/cubeweights, Hecke/calibration, physical-row inversion, surroundingdetector orRHclaim. These original source obligations remain open.",
+    "No new density dyadic/remotesum theorem and no twistSchwartz/uniformfrequencyseminorm theorem asserted; accepted separate downstream suppliers remain usable.",
+    "Source/scout/author review is correlated; native acceptance uses root separatefresh selected-closure replay, not scratchsuccess alone; pinned cleanMathlibobjects reused not dependency-source rebuild."
+  ],
+  "contribution_roles": [
+    "R.A. Jacob Martone: human mathematical direction",
+    "OpenAI Codex: local formalization/adaptation/checking; correlated source/model review",
+    "Lean/Mathlib: named upstream authors, definitions/proofs and licensing retained"
+  ],
+  "limits": [
+    "Fresh immutable complete selected local import closure and actual positive controls; trust0/fatal/full owned+transitive-axiom audit, only propext/Classical.choice/Quot.sound.",
+    "Generated local object families frozen/rechecked; clean pinned dependency objects reused/fingerprinted, not cold rebuilt. Whole umbrella not replayed.",
+    "No independent model validation, novelty, runtime refinement, proof/permission authority, complete physical detector or RH acceptance."
+  ],
+  "primary_sources": [
+    {
+      "repository": "openai/math",
+      "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "path": "lean/OAI/NumberTheory/DirichletL/Detector/GaussianSlots.lean",
+      "sha256": "fcf0dc45845a9cde9f15d3277b659811a20223d23b6277a193a42efc1dca1a09",
+      "git_blob": "bf4e39205b30ae0e8a894b42b6aa4126aac26dbe",
+      "bytes": 4819
+    }
+  ],
+  "license": "Apache-2.0; OpenAI project and individual imported Mathlib credits retained."
+}

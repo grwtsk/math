@@ -248,6 +248,12 @@ typed relation tags. The [durable decision](../../cache/decisions/prefix-state-r
 requires derived decoding and common old rooted entries for certificate reuse.
 Parent slots and real references retain their numbers; relation tags translate.
 
+The [incremental reindex law](../mathematics/Combinatorics/DirectedGraph/prefix-update-reindex.md)
+and [durable decision](../../cache/decisions/incremental-state-reindex-v1.json)
+derive the actual stored update equation from full typed histories. Injectivity
+preserves distinct prefix identities; appending rows does not supply their
+criteria or permission evidence.
+
 See [cache operations](../how-to/cache.md), the
 [taxonomy](../../cache/taxonomy.json), and the
 [integration evidence](../../evidence/Logic/FiniteSequences/cache-integration-2026-10-15.json).

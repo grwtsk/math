@@ -4,16 +4,16 @@
 
 | Inventory | Count |
 |---|---:|
-| Object guides | 36 |
+| Object guides | 37 |
 | Documented object groups | 16 |
-| Distinct primary sources linked | 36 |
-| Lean source modules | 295 |
+| Distinct primary sources linked | 37 |
+| Lean source modules | 298 |
 | Archive intake records | 39 |
 | Selected catalog families | 1 |
 
 These counts measure documentation and source coverage. They do not count accepted theorems or establish that every source module is documented or checked. [Definitions and limits](../../reference/library-pages.md#count-definitions).
 
-At least 1676 source declaration commands, including 1370 theorem/lemma commands, across 244 parsed Lean source modules; 51 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
+At least 1702 source declaration commands, including 1391 theorem/lemma commands, across 247 parsed Lean source modules; 51 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
 
 ## Asymptotics
 
@@ -111,10 +111,11 @@ Linked primary-source scope: 1 source declaration commands, including 1 theorem/
 
 ## MellinTransform
 
-13 object guides · 13 distinct linked primary source files.
+14 object guides · 14 distinct linked primary source files.
 
-Linked primary-source scope: At least 102 source declaration commands, including 84 theorem/lemma commands, across 10 parsed Lean source modules; 3 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
+Linked primary-source scope: At least 115 source declaration commands, including 93 theorem/lemma commands, across 11 parsed Lean source modules; 3 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
 
+- [Annular logarithmic quotient Gaussian separation](MellinTransform/gaussian-annular-separation.md).
 - [Compact logarithmic Gaussian windows and Fourier density moments](MellinTransform/gaussian-log-window.md).
 - [Coupled Gaussian separation for finite window families](MellinTransform/gaussian-coupled-separation.md).
 - [Dyadic sums and remote moments of Gaussian Fourier densities](MellinTransform/gaussian-density-moments.md).

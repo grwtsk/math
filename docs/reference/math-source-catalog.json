@@ -5996,20 +5996,20 @@
     }
   ],
   "counts_by_operation": {
-    "add": 147,
+    "add": 153,
     "keep": 336,
     "move": 206
   },
   "counts_by_role": {
     "audit-driver": 35,
-    "library": 386,
-    "negative-control": 144,
-    "positive-check": 124
+    "library": 388,
+    "negative-control": 146,
+    "positive-check": 126
   },
   "counts_by_subject": {
     "Algebra": 19,
-    "Analysis": 252,
-    "Combinatorics": 50,
+    "Analysis": 255,
+    "Combinatorics": 53,
     "Data": 1,
     "DynamicalSystems": 16,
     "GroupTheory": 4,
@@ -6021,9 +6021,9 @@
     "Order": 6,
     "Spectral": 25
   },
-  "present_lean_source_count": 752,
+  "present_lean_source_count": 758,
   "schema": "grwtsk-math-source-catalog-v1",
-  "source_count": 689,
+  "source_count": 695,
   "sources": [
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -6161,6 +6161,7 @@
         "GRWTSK.Analysis.LaplaceTransform.PolynomialEnergy",
         "GRWTSK.Analysis.LaplaceTransform.PolynomialEnergyHolomorphy",
         "GRWTSK.Analysis.MellinTransform.CompactGaussianWindow",
+        "GRWTSK.Analysis.MellinTransform.GaussianAnnularSeparation",
         "GRWTSK.Analysis.MellinTransform.GaussianCoupledSeparation",
         "GRWTSK.Analysis.MellinTransform.GaussianDensityMoments",
         "GRWTSK.Analysis.MellinTransform.GaussianDyadicSummation",
@@ -6201,6 +6202,7 @@
         "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCompaction",
         "GRWTSK.Combinatorics.DirectedGraph.PrefixTableReindex",
         "GRWTSK.Combinatorics.DirectedGraph.PrefixTableState",
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableUpdateReindex",
         "GRWTSK.Combinatorics.DirectedGraph.RoleRelationReindex",
         "GRWTSK.Combinatorics.DirectedGraph.RoleRelationTable",
         "GRWTSK.Combinatorics.DirectedGraph.RootedTraceRevision",
@@ -6586,7 +6588,7 @@
         "GRWTSK/Logic/ProofChecking/Checks/OwnedDeclarationAudit.lean"
       ],
       "runner": "python3 -B scripts/check_ccc_energy.py",
-      "sha256": "112b8a498fba3ddce709fb4b9c34af89f36dbcd26ceec931992b4b361be7db70",
+      "sha256": "87b61c79da8f92051d87e3a13c957e3bf2994fa6e25d9ef9604d7c050d2b53df",
       "source_role": "library",
       "source_root": ".",
       "subject": "Library",
@@ -6595,7 +6597,7 @@
         "inventory": "observed-current-bytes",
         "layout": "repository baseline remains failed",
         "lean": "umbrella not replayed after selected import additions",
-        "source_sha256": "112b8a498fba3ddce709fb4b9c34af89f36dbcd26ceec931992b4b361be7db70"
+        "source_sha256": "87b61c79da8f92051d87e3a13c957e3bf2994fa6e25d9ef9604d7c050d2b53df"
       },
       "working_tree_state": "tracked-modified"
     },
@@ -22743,6 +22745,58 @@
         "OpenAI: exact GaussianCoupled/LogProfiles proof slices; named imported Mathlib smooth-transition/Fourier/Schwartz authors retain credit"
       ],
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/update-slots-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Actual Optionι family: none is dyadicAnnulus(exp y), slope+1, pointlogx; somei is W_i(exp y), slope-1, pointlogq_i. No smoothness or integrability premise on individualW_i.",
+        "For finiteι,x>0 and everyq_i>0: exp(sum_o slope_o*point_o)=x/product_iq_i. Exact phase(t,-y)=phase(-t,y) and Option finite product normalization retain positive2pi inverse normalization and negativeq phases.",
+        "logPhaseTwist(W,t,x)=W(x)*logPhase(t,logx), a total real-line function. Any compactW remains compact after twisting for every realt. The actual admitted gaussianFixedWindow=A/sqrt has compact twist; forx>0 actual rootWeight=sqrt*window cancels to A(x)*logPhase(t,logx). No Schwartz/smoothness assertion for twistedW is made here.",
+        "The additional annulus log support is proved from actual A small/large and monotone log/exp: A(exp y)≠0 implies |y|≤|log(1/2)|+|log2|+1.",
+        "For every actual compact SchwartzV, every realR, positive x and everypositiveq_i, the actual annular frequency integrand rootWeight(logPhaseTwist(fixedWindow,t),x)*product_i[W_i(q_i)*logPhase(-t,logq_i)]*actualdensity(V,R,t) is Integrable. This consumes actual coupled integrability and proved product/root identities.",
+        "Given finiteι, W_i:real→complex, nonnegativeM_i and W_i(exp y)≠0→|y|≤M_i: produce an actual compact SchwartzV before all R>0,x>0,positiveq. For this sameV prove actual Integrable and A(x)*product_iW_i(q_i)*P(R*x/product_iq_i)=integral_t actual annular frequency integrand. No desired hsep, Fourier evaluation or arithmetic completed-sum formula is assumed.",
+        "For the same producedV, every realA and naturalJ admitC>0 chosen beforeeveryR>0 with actual weighted densitynorm Integrable and integral≤C*R^(-A). V depends on W,M; C may depend on V,A,J and not R,x,q."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianAnnularSeparation"
+      ],
+      "license": "Apache-2.0",
+      "logical_status": "intended rejected control; no theorem admission",
+      "module": "GRWTSK.Analysis.MellinTransform.Checks.Negative.GaussianAnnularMissingPositivity",
+      "namespaces": [
+        "GRWTSK.Analysis.MellinTransform.GaussianAnnularSeparation.Checks"
+      ],
+      "object": "MellinTransform/Checks/Negative",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianAnnularMissingPositivity.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianAnnularMissingPositivity.lean",
+      "placement_rationale": "Actual annular logarithmic multiplicative quotient separation for the normalized Gaussian belongs to Analysis/MellinTransform.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B scripts/check_gaussian_annular_separation.py",
+      "sha256": "3bf498b6d0d47236bbe78347dbec4da6262340412690e51e76c37a85c93019bf",
+      "source_role": "negative-control",
+      "source_root": "GRWTSK",
+      "subject": "Analysis",
+      "target_path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianAnnularMissingPositivity.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Analysis/MellinTransform/gaussian-annular-separation-checks-2026-10-15.json",
+        "source_sha256": "3bf498b6d0d47236bbe78347dbec4da6262340412690e51e76c37a85c93019bf"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: exact GaussianCoupled/LogProfiles proof slices; named imported Mathlib smooth-transition/Fourier/Schwartz authors retain credit"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
       "design_reference": "cache/research/state-coupled-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
       "explicit_premises": [
         "logPhase(t,y)=exp(2*pi*i*t*y), the exact positive inverse-Fourier convention. Actual phase sum/product identity, including the empty index type.",
@@ -23470,6 +23524,126 @@
         "lean": "see immutable selected replay receipt",
         "replay_binding": "evidence/Analysis/MellinTransform/compact-gaussian-window-checks-2026-10-15.json",
         "source_sha256": "96ec310820e5d010bb0c67ff624456dba652703a731800aa195c65cd7f87ac0d"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: exact GaussianCoupled/LogProfiles proof slices; named imported Mathlib smooth-transition/Fourier/Schwartz authors retain credit"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/update-slots-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Actual Optionι family: none is dyadicAnnulus(exp y), slope+1, pointlogx; somei is W_i(exp y), slope-1, pointlogq_i. No smoothness or integrability premise on individualW_i.",
+        "For finiteι,x>0 and everyq_i>0: exp(sum_o slope_o*point_o)=x/product_iq_i. Exact phase(t,-y)=phase(-t,y) and Option finite product normalization retain positive2pi inverse normalization and negativeq phases.",
+        "logPhaseTwist(W,t,x)=W(x)*logPhase(t,logx), a total real-line function. Any compactW remains compact after twisting for every realt. The actual admitted gaussianFixedWindow=A/sqrt has compact twist; forx>0 actual rootWeight=sqrt*window cancels to A(x)*logPhase(t,logx). No Schwartz/smoothness assertion for twistedW is made here.",
+        "The additional annulus log support is proved from actual A small/large and monotone log/exp: A(exp y)≠0 implies |y|≤|log(1/2)|+|log2|+1.",
+        "For every actual compact SchwartzV, every realR, positive x and everypositiveq_i, the actual annular frequency integrand rootWeight(logPhaseTwist(fixedWindow,t),x)*product_i[W_i(q_i)*logPhase(-t,logq_i)]*actualdensity(V,R,t) is Integrable. This consumes actual coupled integrability and proved product/root identities.",
+        "Given finiteι, W_i:real→complex, nonnegativeM_i and W_i(exp y)≠0→|y|≤M_i: produce an actual compact SchwartzV before all R>0,x>0,positiveq. For this sameV prove actual Integrable and A(x)*product_iW_i(q_i)*P(R*x/product_iq_i)=integral_t actual annular frequency integrand. No desired hsep, Fourier evaluation or arithmetic completed-sum formula is assumed.",
+        "For the same producedV, every realA and naturalJ admitC>0 chosen beforeeveryR>0 with actual weighted densitynorm Integrable and integral≤C*R^(-A). V depends on W,M; C may depend on V,A,J and not R,x,q."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Analysis.MellinTransform.GaussianAnnularSeparation"
+      ],
+      "license": "Apache-2.0",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianAnnularSeparation",
+      "namespaces": [
+        "GRWTSK.Analysis.MellinTransform.GaussianAnnularSeparation.Checks"
+      ],
+      "object": "MellinTransform/Checks/Positive",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianAnnularSeparation.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianAnnularSeparation.lean",
+      "placement_rationale": "Actual annular logarithmic multiplicative quotient separation for the normalized Gaussian belongs to Analysis/MellinTransform.",
+      "public_declarations": [
+        {
+          "kind": "def",
+          "line": 14,
+          "name": "multiplicativeWindow"
+        },
+        {
+          "kind": "lemma",
+          "line": 17,
+          "name": "multiplicativeWindow_log_support"
+        },
+        {
+          "kind": "lemma",
+          "line": 22,
+          "name": "actual_positive_quotient"
+        },
+        {
+          "kind": "theorem",
+          "line": 29,
+          "name": "actual_single_slot"
+        },
+        {
+          "kind": "theorem",
+          "line": 50,
+          "name": "actual_empty_slots"
+        },
+        {
+          "kind": "lemma",
+          "line": 63,
+          "name": "actual_twist_root_normalization"
+        },
+        {
+          "kind": "lemma",
+          "line": 68,
+          "name": "actual_twist_compact"
+        },
+        {
+          "kind": "lemma",
+          "line": 71,
+          "name": "actual_positive_phase_quarter"
+        },
+        {
+          "kind": "lemma",
+          "line": 78,
+          "name": "actual_negative_phase_quarter"
+        },
+        {
+          "kind": "theorem",
+          "line": 85,
+          "name": "actual_phase_sign_differs"
+        },
+        {
+          "kind": "theorem",
+          "line": 92,
+          "name": "actual_zero_argument_false"
+        },
+        {
+          "kind": "theorem",
+          "line": 98,
+          "name": "actual_zero_denominator_false"
+        },
+        {
+          "kind": "theorem",
+          "line": 104,
+          "name": "actual_zero_annulus_identity"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK.Analysis.MellinTransform.Checks.Negative.GaussianAnnularMissingPositivity"
+      ],
+      "runner": "python3 -B scripts/check_gaussian_annular_separation.py",
+      "sha256": "40aa3728724a8c6582f3701e6f44c7e8fa5eaad042b42cdf16bad51c88481d36",
+      "source_role": "positive-check",
+      "source_root": "GRWTSK",
+      "subject": "Analysis",
+      "target_path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianAnnularSeparation.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Analysis/MellinTransform/gaussian-annular-separation-checks-2026-10-15.json",
+        "source_sha256": "40aa3728724a8c6582f3701e6f44c7e8fa5eaad042b42cdf16bad51c88481d36"
       },
       "working_tree_state": "untracked-at-selected-replay"
     },
@@ -24652,6 +24826,128 @@
         "OpenAI: exact GaussianCoupled/LogProfiles proof slices; named imported Mathlib smooth-transition/Fourier/Schwartz authors retain credit"
       ],
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/update-slots-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Actual Optionι family: none is dyadicAnnulus(exp y), slope+1, pointlogx; somei is W_i(exp y), slope-1, pointlogq_i. No smoothness or integrability premise on individualW_i.",
+        "For finiteι,x>0 and everyq_i>0: exp(sum_o slope_o*point_o)=x/product_iq_i. Exact phase(t,-y)=phase(-t,y) and Option finite product normalization retain positive2pi inverse normalization and negativeq phases.",
+        "logPhaseTwist(W,t,x)=W(x)*logPhase(t,logx), a total real-line function. Any compactW remains compact after twisting for every realt. The actual admitted gaussianFixedWindow=A/sqrt has compact twist; forx>0 actual rootWeight=sqrt*window cancels to A(x)*logPhase(t,logx). No Schwartz/smoothness assertion for twistedW is made here.",
+        "The additional annulus log support is proved from actual A small/large and monotone log/exp: A(exp y)≠0 implies |y|≤|log(1/2)|+|log2|+1.",
+        "For every actual compact SchwartzV, every realR, positive x and everypositiveq_i, the actual annular frequency integrand rootWeight(logPhaseTwist(fixedWindow,t),x)*product_i[W_i(q_i)*logPhase(-t,logq_i)]*actualdensity(V,R,t) is Integrable. This consumes actual coupled integrability and proved product/root identities.",
+        "Given finiteι, W_i:real→complex, nonnegativeM_i and W_i(exp y)≠0→|y|≤M_i: produce an actual compact SchwartzV before all R>0,x>0,positiveq. For this sameV prove actual Integrable and A(x)*product_iW_i(q_i)*P(R*x/product_iq_i)=integral_t actual annular frequency integrand. No desired hsep, Fourier evaluation or arithmetic completed-sum formula is assumed.",
+        "For the same producedV, every realA and naturalJ admitC>0 chosen beforeeveryR>0 with actual weighted densitynorm Integrable and integral≤C*R^(-A). V depends on W,M; C may depend on V,A,J and not R,x,q."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Analysis.MellinTransform.GaussianCoupledSeparation",
+        "GRWTSK.Analysis.MellinTransform.GaussianWindowSeminorms"
+      ],
+      "license": "Apache-2.0",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.Analysis.MellinTransform.GaussianAnnularSeparation",
+      "namespaces": [
+        "GRWTSK.Analysis.MellinTransform.GaussianAnnularSeparation"
+      ],
+      "object": "MellinTransform",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Analysis/MellinTransform/GaussianAnnularSeparation.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Analysis/MellinTransform/GaussianAnnularSeparation.lean",
+      "placement_rationale": "Actual annular logarithmic multiplicative quotient separation for the normalized Gaussian belongs to Analysis/MellinTransform.",
+      "public_declarations": [
+        {
+          "kind": "def",
+          "line": 30,
+          "name": "gaussianSlotWindow"
+        },
+        {
+          "kind": "def",
+          "line": 34,
+          "name": "gaussianSlotSlope"
+        },
+        {
+          "kind": "def",
+          "line": 37,
+          "name": "gaussianSlotPoint"
+        },
+        {
+          "kind": "lemma",
+          "line": 40,
+          "name": "gaussianSlot_argument"
+        },
+        {
+          "kind": "lemma",
+          "line": 50,
+          "name": "logPhase_neg_argument"
+        },
+        {
+          "kind": "lemma",
+          "line": 56,
+          "name": "gaussianSlot_product"
+        },
+        {
+          "kind": "def",
+          "line": 66,
+          "name": "logPhaseTwist"
+        },
+        {
+          "kind": "lemma",
+          "line": 69,
+          "name": "logPhaseTwist_compact"
+        },
+        {
+          "kind": "lemma",
+          "line": 72,
+          "name": "gaussianFixedWindow_rootWeight_twist"
+        },
+        {
+          "kind": "lemma",
+          "line": 80,
+          "name": "gaussianFixedWindow_twist_compact"
+        },
+        {
+          "kind": "lemma",
+          "line": 84,
+          "name": "dyadicAnnulus_log_support"
+        },
+        {
+          "kind": "lemma",
+          "line": 106,
+          "name": "gaussian_annular_integrable"
+        },
+        {
+          "kind": "theorem",
+          "line": 116,
+          "name": "gaussian_selected_slot_family"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianAnnularSeparation"
+      ],
+      "runner": "python3 -B scripts/check_gaussian_annular_separation.py",
+      "sha256": "f5484cd14ed516b463e8e1feb3022bb7c5e008addfcca6f66c155cb456b8232f",
+      "source_role": "library",
+      "source_root": "GRWTSK",
+      "subject": "Analysis",
+      "target_path": "GRWTSK/Analysis/MellinTransform/GaussianAnnularSeparation.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Analysis/MellinTransform/gaussian-annular-separation-checks-2026-10-15.json",
+        "source_sha256": "f5484cd14ed516b463e8e1feb3022bb7c5e008addfcca6f66c155cb456b8232f"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: exact GaussianCoupled/LogProfiles proof slices; named imported Mathlib smooth-transition/Fourier/Schwartz authors retain credit"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
       "design_reference": "cache/research/state-coupled-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
       "explicit_premises": [
         "logPhase(t,y)=exp(2*pi*i*t*y), the exact positive inverse-Fourier convention. Actual phase sum/product identity, including the empty index type.",
@@ -24723,7 +25019,8 @@
       ],
       "reverse_consumers": [
         "GRWTSK",
-        "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianCoupledSeparation"
+        "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianCoupledSeparation",
+        "GRWTSK.Analysis.MellinTransform.GaussianAnnularSeparation"
       ],
       "runner": "python3 -B scripts/check_gaussian_coupled_separation.py",
       "sha256": "904f3991a65106ee9c0a93f575ba536eec2645d64cff7ff3d9a16de8f389e6fc",
@@ -25481,6 +25778,7 @@
       "reverse_consumers": [
         "GRWTSK",
         "GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianWindowSeminorms",
+        "GRWTSK.Analysis.MellinTransform.GaussianAnnularSeparation",
         "GRWTSK.Analysis.MellinTransform.GaussianDyadicSummation",
         "GRWTSK.Analysis.MellinTransform.GaussianFourierMoments"
       ],
@@ -28598,6 +28896,53 @@
         "Lean and Mathlib: upstream APIs and proofs"
       ],
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/update-slots-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "mapOccurrence maps the existing Occurrence.history through actual RoleRelationReindex.mapStar; mapOccurrenceRows retains keys/order/repeats. encodePath_map and trace_mapOccurrence derive complete chronological full-tag mapping; traceRows_map derives actual row naturality. No synthetic path type or assumed serializer is introduced.",
+        "inventory_map proves exact ordered rightmost deduplication using pinned List.map_inits and dedup_map_of_injective. prefixEntries_map, missingPayloads_map and expandedDictionary_map derive actual ordered filtering/missing-prefix/extension laws; no missingPayloads equality is assumed.",
+        "extendedDictionary_map and extendedNodes_map derive exact new dictionary/node arrays using existing mapTrace_idxOf/map_cell. appendReferences_map and realReferences_map derive actual indexed new real references, retaining original real references; auxiliary prefix rows add no real references.",
+        "update_transport proves exact all-field actual State equality for arbitrary stored State under source/target/role-preserving injective relation reindex. It requires old/new full typed tag DecidableEq, not WellFormed, Key equality or V equality.",
+        "mapped_update_wellFormed and decode_update_transport additionally consume actual old WellFormed. two_updates_transport proves exact all-field naturality for two successive batches (not grouped raw representations), and decode_two_updates_transport derives actual checked ordered two-update decoder naturality under WellFormed."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableUpdateReindex"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "logical_status": "intended rejected control; no theorem admission",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.PrefixUpdateReindexMissingInjectivity",
+      "namespaces": [],
+      "object": "DirectedGraph/Checks/Negative",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixUpdateReindexMissingInjectivity.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixUpdateReindexMissingInjectivity.lean",
+      "placement_rationale": "Actual fieldwise stored-state update and relation reindex naturality belong to Combinatorics/DirectedGraph; generic certificates remain in Logic/FiniteSequences.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B scripts/check_prefix_update_reindex.py",
+      "sha256": "54592a6505969ce6e87c612b2a47cce5fa8f82021c740f524b187df53f9f8b7c",
+      "source_role": "negative-control",
+      "source_root": "GRWTSK",
+      "subject": "Combinatorics",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixUpdateReindexMissingInjectivity.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/prefix-update-reindex-checks-2026-10-15.json",
+        "source_sha256": "54592a6505969ce6e87c612b2a47cce5fa8f82021c740f524b187df53f9f8b7c"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
       "design_reference": "cache/research/reindex-density-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
       "explicit_premises": [
         "Actual fixed old/new finite relation tables and actual index map with source, target and role preservation witnesses; actual Quiver prefunctor and codec naturality.",
@@ -30425,6 +30770,343 @@
         "lean": "see immutable selected replay receipt",
         "replay_binding": "evidence/Combinatorics/DirectedGraph/prefix-table-state-checks-2026-10-15.json",
         "source_sha256": "9dde5e756db1c4aa1c7be3dcf00a58b98577c9c4731d3b789923fb9f35e8d1bb"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/update-slots-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "mapOccurrence maps the existing Occurrence.history through actual RoleRelationReindex.mapStar; mapOccurrenceRows retains keys/order/repeats. encodePath_map and trace_mapOccurrence derive complete chronological full-tag mapping; traceRows_map derives actual row naturality. No synthetic path type or assumed serializer is introduced.",
+        "inventory_map proves exact ordered rightmost deduplication using pinned List.map_inits and dedup_map_of_injective. prefixEntries_map, missingPayloads_map and expandedDictionary_map derive actual ordered filtering/missing-prefix/extension laws; no missingPayloads equality is assumed.",
+        "extendedDictionary_map and extendedNodes_map derive exact new dictionary/node arrays using existing mapTrace_idxOf/map_cell. appendReferences_map and realReferences_map derive actual indexed new real references, retaining original real references; auxiliary prefix rows add no real references.",
+        "update_transport proves exact all-field actual State equality for arbitrary stored State under source/target/role-preserving injective relation reindex. It requires old/new full typed tag DecidableEq, not WellFormed, Key equality or V equality.",
+        "mapped_update_wellFormed and decode_update_transport additionally consume actual old WellFormed. two_updates_transport proves exact all-field naturality for two successive batches (not grouped raw representations), and decode_two_updates_transport derives actual checked ordered two-update decoder naturality under WellFormed."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableUpdateReindex"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableUpdateReindex",
+      "namespaces": [
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableUpdateReindex.Checks.Positive"
+      ],
+      "object": "DirectedGraph/Checks/Positive",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableUpdateReindex.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableUpdateReindex.lean",
+      "placement_rationale": "Actual fieldwise stored-state update and relation reindex naturality belong to Combinatorics/DirectedGraph; generic certificates remain in Logic/FiniteSequences.",
+      "public_declarations": [
+        {
+          "kind": "def",
+          "line": 15,
+          "name": "original"
+        },
+        {
+          "kind": "def",
+          "line": 20,
+          "name": "swapIndex"
+        },
+        {
+          "kind": "def",
+          "line": 22,
+          "name": "updated"
+        },
+        {
+          "kind": "def",
+          "line": 27,
+          "name": "translation"
+        },
+        {
+          "kind": "theorem",
+          "line": 33,
+          "name": "translation_bijective"
+        },
+        {
+          "kind": "def",
+          "line": 35,
+          "name": "vertexA"
+        },
+        {
+          "kind": "def",
+          "line": 37,
+          "name": "vertexB"
+        },
+        {
+          "kind": "def",
+          "line": 38,
+          "name": "id0"
+        },
+        {
+          "kind": "def",
+          "line": 39,
+          "name": "id1"
+        },
+        {
+          "kind": "def",
+          "line": 40,
+          "name": "new0"
+        },
+        {
+          "kind": "def",
+          "line": 41,
+          "name": "new1"
+        },
+        {
+          "kind": "def",
+          "line": 42,
+          "name": "new2"
+        },
+        {
+          "kind": "def",
+          "line": 43,
+          "name": "oldTag0"
+        },
+        {
+          "kind": "def",
+          "line": 45,
+          "name": "oldTag1"
+        },
+        {
+          "kind": "def",
+          "line": 46,
+          "name": "newTag0"
+        },
+        {
+          "kind": "def",
+          "line": 47,
+          "name": "newTag1"
+        },
+        {
+          "kind": "def",
+          "line": 48,
+          "name": "newTag2"
+        },
+        {
+          "kind": "theorem",
+          "line": 55,
+          "name": "old_tags_distinct"
+        },
+        {
+          "kind": "def",
+          "line": 62,
+          "name": "arrow0"
+        },
+        {
+          "kind": "def",
+          "line": 64,
+          "name": "arrow1"
+        },
+        {
+          "kind": "def",
+          "line": 65,
+          "name": "single0"
+        },
+        {
+          "kind": "def",
+          "line": 66,
+          "name": "single1"
+        },
+        {
+          "kind": "def",
+          "line": 67,
+          "name": "seedRows"
+        },
+        {
+          "kind": "def",
+          "line": 70,
+          "name": "seed"
+        },
+        {
+          "kind": "def",
+          "line": 72,
+          "name": "before"
+        },
+        {
+          "kind": "theorem",
+          "line": 76,
+          "name": "seed_inventory"
+        },
+        {
+          "kind": "theorem",
+          "line": 81,
+          "name": "before_dictionary"
+        },
+        {
+          "kind": "theorem",
+          "line": 87,
+          "name": "before_wellFormed"
+        },
+        {
+          "kind": "theorem",
+          "line": 96,
+          "name": "before_nodes"
+        },
+        {
+          "kind": "theorem",
+          "line": 101,
+          "name": "before_actual_decode"
+        },
+        {
+          "kind": "def",
+          "line": 108,
+          "name": "id2"
+        },
+        {
+          "kind": "def",
+          "line": 110,
+          "name": "oldTag2"
+        },
+        {
+          "kind": "def",
+          "line": 111,
+          "name": "arrow2"
+        },
+        {
+          "kind": "def",
+          "line": 113,
+          "name": "returnPath"
+        },
+        {
+          "kind": "def",
+          "line": 114,
+          "name": "returnRows"
+        },
+        {
+          "kind": "def",
+          "line": 117,
+          "name": "parallelRows"
+        },
+        {
+          "kind": "def",
+          "line": 120,
+          "name": "firstState"
+        },
+        {
+          "kind": "def",
+          "line": 122,
+          "name": "secondState"
+        },
+        {
+          "kind": "theorem",
+          "line": 123,
+          "name": "return_trace"
+        },
+        {
+          "kind": "theorem",
+          "line": 128,
+          "name": "return_inventory"
+        },
+        {
+          "kind": "theorem",
+          "line": 134,
+          "name": "first_dictionary"
+        },
+        {
+          "kind": "theorem",
+          "line": 144,
+          "name": "first_wellFormed"
+        },
+        {
+          "kind": "theorem",
+          "line": 147,
+          "name": "second_wellFormed"
+        },
+        {
+          "kind": "theorem",
+          "line": 150,
+          "name": "first_nodes"
+        },
+        {
+          "kind": "theorem",
+          "line": 156,
+          "name": "first_references"
+        },
+        {
+          "kind": "theorem",
+          "line": 173,
+          "name": "first_actual_decode"
+        },
+        {
+          "kind": "theorem",
+          "line": 186,
+          "name": "second_actual_decode"
+        },
+        {
+          "kind": "theorem",
+          "line": 197,
+          "name": "actual_all_fields_commute"
+        },
+        {
+          "kind": "theorem",
+          "line": 204,
+          "name": "actual_new_decode"
+        },
+        {
+          "kind": "def",
+          "line": 233,
+          "name": "collapseIndex"
+        },
+        {
+          "kind": "def",
+          "line": 235,
+          "name": "collapse"
+        },
+        {
+          "kind": "theorem",
+          "line": 254,
+          "name": "collapse_not_injective"
+        },
+        {
+          "kind": "theorem",
+          "line": 259,
+          "name": "mapped_seed_dictionary"
+        },
+        {
+          "kind": "theorem",
+          "line": 267,
+          "name": "collapsed_inventory"
+        },
+        {
+          "kind": "theorem",
+          "line": 273,
+          "name": "collapsed_update_dictionary"
+        },
+        {
+          "kind": "theorem",
+          "line": 280,
+          "name": "actual_noninjective_update_failure"
+        },
+        {
+          "kind": "theorem",
+          "line": 292,
+          "name": "actual_noninjective_wellFormed_failure"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.PrefixUpdateReindexMissingInjectivity"
+      ],
+      "runner": "python3 -B scripts/check_prefix_update_reindex.py",
+      "sha256": "3c14abad8c428de236b71d5dc762dc8f24d0f78480253a2598e4bef1f0a409ff",
+      "source_role": "positive-check",
+      "source_root": "GRWTSK",
+      "subject": "Combinatorics",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableUpdateReindex.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/prefix-update-reindex-checks-2026-10-15.json",
+        "source_sha256": "3c14abad8c428de236b71d5dc762dc8f24d0f78480253a2598e4bef1f0a409ff"
       },
       "working_tree_state": "untracked-at-selected-replay"
     },
@@ -32774,7 +33456,8 @@
       ],
       "reverse_consumers": [
         "GRWTSK",
-        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableReindex"
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableReindex",
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableUpdateReindex"
       ],
       "runner": "python3 -B scripts/check_prefix_table_reindex.py",
       "sha256": "83fc343c02d16384124ce39ed4b3f996f7a7000ee4dbba05d2015b153a9aa53c",
@@ -33040,6 +33723,149 @@
         "lean": "see immutable selected replay receipt",
         "replay_binding": "evidence/Combinatorics/DirectedGraph/prefix-table-state-checks-2026-10-15.json",
         "source_sha256": "bc2398f5aae427a813c22b6025b9ca41c99c6bbfb9b9228ce49d1326a9870c3a"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "R.A. Jacob Martone: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/update-slots-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "mapOccurrence maps the existing Occurrence.history through actual RoleRelationReindex.mapStar; mapOccurrenceRows retains keys/order/repeats. encodePath_map and trace_mapOccurrence derive complete chronological full-tag mapping; traceRows_map derives actual row naturality. No synthetic path type or assumed serializer is introduced.",
+        "inventory_map proves exact ordered rightmost deduplication using pinned List.map_inits and dedup_map_of_injective. prefixEntries_map, missingPayloads_map and expandedDictionary_map derive actual ordered filtering/missing-prefix/extension laws; no missingPayloads equality is assumed.",
+        "extendedDictionary_map and extendedNodes_map derive exact new dictionary/node arrays using existing mapTrace_idxOf/map_cell. appendReferences_map and realReferences_map derive actual indexed new real references, retaining original real references; auxiliary prefix rows add no real references.",
+        "update_transport proves exact all-field actual State equality for arbitrary stored State under source/target/role-preserving injective relation reindex. It requires old/new full typed tag DecidableEq, not WellFormed, Key equality or V equality.",
+        "mapped_update_wellFormed and decode_update_transport additionally consume actual old WellFormed. two_updates_transport proves exact all-field naturality for two successive batches (not grouped raw representations), and decode_two_updates_transport derives actual checked ordered two-update decoder naturality under WellFormed."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableReindex"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableUpdateReindex",
+      "namespaces": [
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableUpdateReindex"
+      ],
+      "object": "DirectedGraph",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableUpdateReindex.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableUpdateReindex.lean",
+      "placement_rationale": "Actual fieldwise stored-state update and relation reindex naturality belong to Combinatorics/DirectedGraph; generic certificates remain in Logic/FiniteSequences.",
+      "public_declarations": [
+        {
+          "kind": "def",
+          "line": 32,
+          "name": "mapOccurrence"
+        },
+        {
+          "kind": "def",
+          "line": 36,
+          "name": "mapOccurrenceRows"
+        },
+        {
+          "kind": "theorem",
+          "line": 40,
+          "name": "encodePath_map"
+        },
+        {
+          "kind": "theorem",
+          "line": 53,
+          "name": "trace_mapOccurrence"
+        },
+        {
+          "kind": "theorem",
+          "line": 57,
+          "name": "traceRows_map"
+        },
+        {
+          "kind": "theorem",
+          "line": 66,
+          "name": "inventory_map"
+        },
+        {
+          "kind": "theorem",
+          "line": 79,
+          "name": "prefixEntries_map"
+        },
+        {
+          "kind": "theorem",
+          "line": 86,
+          "name": "missingPayloads_map"
+        },
+        {
+          "kind": "theorem",
+          "line": 111,
+          "name": "expandedDictionary_map"
+        },
+        {
+          "kind": "theorem",
+          "line": 121,
+          "name": "extendedDictionary_map"
+        },
+        {
+          "kind": "theorem",
+          "line": 132,
+          "name": "extendedNodes_map"
+        },
+        {
+          "kind": "theorem",
+          "line": 154,
+          "name": "appendReferences_map"
+        },
+        {
+          "kind": "theorem",
+          "line": 176,
+          "name": "realReferences_map"
+        },
+        {
+          "kind": "theorem",
+          "line": 189,
+          "name": "update_transport"
+        },
+        {
+          "kind": "theorem",
+          "line": 205,
+          "name": "mapped_update_wellFormed"
+        },
+        {
+          "kind": "theorem",
+          "line": 213,
+          "name": "decode_update_transport"
+        },
+        {
+          "kind": "theorem",
+          "line": 222,
+          "name": "two_updates_transport"
+        },
+        {
+          "kind": "theorem",
+          "line": 260,
+          "name": "decode_two_updates_transport"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableUpdateReindex"
+      ],
+      "runner": "python3 -B scripts/check_prefix_update_reindex.py",
+      "sha256": "65dfc39c95dfdad3f0349960a56c70f6bd8422687941068ba8943935343facd8",
+      "source_role": "library",
+      "source_root": "GRWTSK",
+      "subject": "Combinatorics",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableUpdateReindex.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/prefix-update-reindex-checks-2026-10-15.json",
+        "source_sha256": "65dfc39c95dfdad3f0349960a56c70f6bd8422687941068ba8943935343facd8"
       },
       "working_tree_state": "untracked-at-selected-replay"
     },

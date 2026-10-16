@@ -1,0 +1,36 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "gaussian-annular-separation-formal",
+  "event": "root-admission-consumed-final-author-handoff",
+  "at": "2026-10-16T00:05:08.398093+00:00",
+  "owner": "cache_adapter",
+  "source_hashes": {
+    "GRWTSK/Analysis/MellinTransform/GaussianAnnularSeparation.lean": "f5484cd14ed516b463e8e1feb3022bb7c5e008addfcca6f66c155cb456b8232f",
+    "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianAnnularSeparation.lean": "40aa3728724a8c6582f3701e6f44c7e8fa5eaad042b42cdf16bad51c88481d36",
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianAnnularMissingPositivity.lean": "3bf498b6d0d47236bbe78347dbec4da6262340412690e51e76c37a85c93019bf"
+  },
+  "root_native_receipt": {
+    "path": "evidence/Analysis/MellinTransform/gaussian-annular-separation-checks-2026-10-15.json",
+    "sha256": "bd817853efe630c4a77fd49b88ff10cdd1533ea50d20f9b19e9baac76aea4689",
+    "outcome": "passed",
+    "independent_review": false,
+    "dependency_sources_rebuilt": false,
+    "canonical_project_objects_excluded": true
+  },
+  "owned_counts": {
+    "status": "ROOT_FRESH_NATIVE_PASSED",
+    "joint_census_total": 261,
+    "new_library": 30,
+    "accepted_positive": 22,
+    "prior_closure": 209,
+    "scope": "Complete selected local closure and accepted positive controls, including all owned generated declarations; no helper exemptions; only propext/Classical.choice/Quot.sound. Count receipt once."
+  },
+  "contracts_file": ".local/update-slots/root/analysis-final-contract.json",
+  "contracts_sha256": "4e0e4b58f2a62e5b44ef15f09bdfec9a5be56c6baf5fad22ce0eae54200b9d46",
+  "negative_expected_substring": "0 < 0",
+  "draft_guide_consistency_review": "No actionable mathematical premise or quantifier overclaim found; correlated author consistency only.",
+  "all_children_exited": true,
+  "shared_lock_released": true,
+  "native_jobs_running": 0,
+  "no_further_native_planned": true
+}
