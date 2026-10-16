@@ -1,5 +1,6 @@
 # Finite-volume eigenvalue-count comparison
 
+
 ## Quantitative approach to zero
 
 The following comparison is an elementary consequence of the bounded binary potential, not an additional gap-opening theorem. Put $L=\min(V,0)$ and $U=\max(V,0)$. Each finite-volume perturbation lies between $L I$ and $U I$, so eigenvalue ordering gives, after taking the IDS limits,
@@ -42,7 +43,9 @@ at every energy. It also proves these inequalities after division by volume and 
 
 ## Source and verification scope
 
-[Source](../../../../GRWTSK/Spectral/MatrixCountComparison.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+[Source](../../../../GRWTSK/Spectral/MatrixCountComparison.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../../.noeaaeue/documentation/reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

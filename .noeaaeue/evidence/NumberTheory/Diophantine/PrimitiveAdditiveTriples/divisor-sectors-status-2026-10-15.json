@@ -1,0 +1,58 @@
+{
+  "schema": "finite-divisor-sector-independent-status-v1",
+  "observed_at": "2026-10-16T02:36:26.212333+00:00",
+  "selected_receipt": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/divisor-sectors-checks-2026-10-15.json",
+  "selected_receipt_sha256": "bd3208da017e4b8ad090682c86f02df7a79bac2085d08077083ea9f5262b1331",
+  "finite_sector": {
+    "status": "checked-at-selected-finite-scope",
+    "declaration": "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.commonDivisorWeightedMoment_eq_scaled_sum",
+    "positive_divisor": "0 < d",
+    "floor_cutoff": "1<=u,v<=N/d and u+v<=N/d",
+    "scaled_coordinates": [
+      "d*u",
+      "d*v",
+      "d*(u+v)"
+    ],
+    "ring": "arbitrary Ring R; multiplication need not commute",
+    "weights": "arbitrary joint ternary W; product specialization available",
+    "quotient_coprimality": "unrestricted; the outer signed Mobius filter enforces primitivity"
+  },
+  "checked_composition": "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.typedPrimitiveWeightedMoment_eq_moebius_scaled_sum",
+  "lean_elaboration": "passed",
+  "trust": 0,
+  "fatal_warnings": true,
+  "owned_declarations": 95,
+  "library_modules": 7,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "positive_consumer_files": 1,
+  "intended_negative_rejections": 5,
+  "dependency_scope": "Pinned cached dependency objects reused and fingerprinted; no cold Mathlib source rebuild or whole-library acceptance.",
+  "first_failed_receipt_preserved": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/divisor-sectors-failed-checks-2026-10-15.json",
+  "frozen_target_changed": false,
+  "abc_proved": false,
+  "abc_implications": "open: uniform radical estimates, test-weight uniformity and all-epsilon pointwise arithmetic bridge absent",
+  "repository_integration": "New source, six controls, public import, object-source binding and guide registered. Documentation render, normal/optimized checks and normal/optimized test suites passed. Whole source-layout/catalog admission remains blocked at the separately recorded shared scope.",
+  "overall_status": "OPEN_FRONTIER",
+  "integration_blockers": [
+    "Last measured global source layout has 169 findings, with zero at the seven new source/control paths.",
+    "Source-catalog generation is blocked by historical input/policy binding drift in the shared current source-observation snapshot; selected Lean proof and successful documentation checks remain separate."
+  ],
+  "current_audited_input_drift": [],
+  "positive_consumers": {
+    "generic": 5,
+    "finite_boundary_and_joint_weight_checks": 20
+  },
+  "documentation": {
+    "render": "passed",
+    "normal": "passed",
+    "optimized": "passed",
+    "normal_tests": 109,
+    "optimized_tests": 109,
+    "scope": "175 maintained pages, 608 historical dispositions, selected catalog and five hostile record controls; structural consistency only"
+  },
+  "integration_record": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/divisor-sectors-integration-2026-10-15.json"
+}

@@ -1,0 +1,7 @@
+/.lake/
+/.noeaaeue/.local/
+/.noeaaeue/root-cleanup/originals/
+*.olean
+*.ilean
+/.noeaaeue/binding-repair/originals/
+/.noeaaeue/binding-repair/native/**/build/

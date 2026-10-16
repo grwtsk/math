@@ -1,0 +1,22 @@
+{
+  "schema": "root-cleanup-historical-pin-observations-v1",
+  "records": [
+    {
+      "current_path": ".noeaaeue/scripts/zero_region_tracker.py",
+      "pinned_sha256": "957d3d9bb16a7616b47ec09434facd007221dc98d4e7be19e85b0cacb573815b",
+      "current_sha256": "7b6c46ee63ef38c5da6ab07b8af5ad2d1bcad806c727371003300a04904197bf",
+      "original_path": ".noeaaeue/root-cleanup/originals/scripts/zero_region_tracker.py",
+      "original_matches_pin": true,
+      "state": "Historical source pin intentionally unchanged; current process source path adaptation invalidates replay of current bytes"
+    },
+    {
+      "current_path": ".noeaaeue/scripts/zeta_region_atlas.py",
+      "pinned_sha256": "b04761ba005e1fababe00a4571b0a1d7ba3a00e04974098e69351ed4e33a0800",
+      "current_sha256": "ae5b67cd4df0fc5b2e3259d421508d582f2c384d5fcc50e17081d3722beaef4e",
+      "original_path": ".noeaaeue/root-cleanup/originals/scripts/zeta_region_atlas.py",
+      "original_matches_pin": true,
+      "state": "Historical source pin intentionally unchanged; current process source path adaptation invalidates replay of current bytes"
+    }
+  ],
+  "acceptance": "Historical pins retained; no rebinding or new mathematical acceptance"
+}

@@ -1,0 +1,57 @@
+{
+  "actual_local_content_download_attempts": 32,
+  "complete_literature_coverage": false,
+  "executed_search_queries": 24,
+  "generated_at": "2026-10-16T01:25:39.359337+00:00",
+  "journal_full_text_frozen": false,
+  "kernel_acceptance_from_sources": false,
+  "local_content_download_attempt_budget": 32,
+  "not_searched_or_not_completed": [
+    "No exhaustive Crossref/MathSciNet/zbMATH citation graph traversal",
+    "No independent Loogle/LeanSearch service calls",
+    "No external formal repository code port or consumer compilation by source worker",
+    "No exhaustive Isabelle/Coq/HOLLight/Mizar search beyond batched discovery",
+    "No full text of all IUT preparatory cited papers",
+    "No exact original 1985 Masser–Oesterle source occurrence located",
+    "No full statement/proof reconstruction of modified Szpiro/Belyi/global Vojta reductions",
+    "No full exact version chain for Arithmetic Teichmuller Spaces I–III and all criticisms",
+    "No independent erratum audit of every selected source",
+    "No exhaustive hypothesis deletion search (only explicit coprimality negative and derivative degeneracy source inspection)",
+    "No complete smooth/S-unit/moment bridge theorem located",
+    "No all-height proof of integer abc"
+  ],
+  "other_network_reads": "web opens/clicks and PDF rendering and read-only git ls-remote metadata are not counted as search queries or local-content downloads; initial urllib index inspections were read-only discovery",
+  "resume_cursor": {
+    "first_unavailable_retry": "official SS2018-05/08 access via authorized public source; never bypass HTTP 403",
+    "next_queries": [
+      "exact modified Szpiro statement plus Vojta/Belyi hypotheses",
+      "LANA equation (9-1) admissible S and cohomological reconstruction",
+      "current Dupuy–Hilado First Two Indeterminacies separate article version",
+      "Joshi 2025 Proposition 6.10.7 and current III Theorem 9.11.1 version comparison"
+    ],
+    "preserve_existing_digests": true
+  },
+  "schema": "bounded-source-coverage-v1",
+  "scope": "selected primary source regions with source-specific interpretation gaps retained",
+  "search_channels_used": [
+    "web search",
+    "official author pages",
+    "journal metadata",
+    "arXiv exact-version PDFs",
+    "selected source bibliographies",
+    "forward reports/critique discovery",
+    "pinned mathlib source inventory",
+    "external formal repository metadata"
+  ],
+  "search_engine_query_budget": 24,
+  "source_occurrences": 33,
+  "sources_are_not_premises": true,
+  "stop_reason": "declared source query and local-content download budgets reached",
+  "successful_download_attempts": 28,
+  "unavailable": [
+    "official RIMS SS2018-05 HTTP403",
+    "official RIMS SS2018-08 HTTP403",
+    "EMS original journal full text subscription redirect",
+    "Stewart–Yu institutional URL returned HTML"
+  ]
+}

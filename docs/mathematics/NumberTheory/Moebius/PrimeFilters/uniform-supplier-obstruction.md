@@ -64,7 +64,7 @@ This distinction also matters when consulting Euler-product literature. [Gonek, 
 
 ## Source and verification scope
 
-[Source](../../../../../GRWTSK/NumberTheory/Moebius/PrimePrefixGrowth.lean). Status: **written-argument**. [Credit and evidence limits](../../../../reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+[Source](../../../../../GRWTSK/NumberTheory/Moebius/PrimePrefixGrowth.lean). Status: **written-argument**. [Credit and evidence limits](../../../../../.noeaaeue/documentation/reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

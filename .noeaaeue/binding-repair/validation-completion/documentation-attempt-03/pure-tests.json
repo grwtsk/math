@@ -1,0 +1,28 @@
+{
+  "results": [
+    {
+      "command": [
+        ".noeaaeue/.local/root-cleanup/python-env/bin/python3",
+        "-B",
+        ".noeaaeue/scripts/test_documentation_layout.py"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 0.668,
+      "log": ".noeaaeue/binding-repair/validation-completion/documentation-attempt-03/check-05.log",
+      "log_sha256": "77df954cc5f6aa096e5c8b0730f577f149505954ad051900681cad63b28d7652"
+    },
+    {
+      "command": [
+        ".noeaaeue/.local/root-cleanup/python-env/bin/python3",
+        "-O",
+        "-B",
+        ".noeaaeue/scripts/test_documentation_layout.py"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 0.711,
+      "log": ".noeaaeue/binding-repair/validation-completion/documentation-attempt-03/check-06.log",
+      "log_sha256": "66ac9fbfb55a5e500aba555c02f29e92616b1c33be1ae135798dc76e657361d8"
+    }
+  ],
+  "passed": true
+}

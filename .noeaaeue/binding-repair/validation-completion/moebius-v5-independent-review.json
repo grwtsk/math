@@ -1,0 +1,161 @@
+{
+  "schema": "independent-moebius-v5-readonly-review-v1",
+  "created_utc": "2026-10-16T03:14:12.130863+00:00",
+  "outcome": "passed",
+  "scope": "Read-only byte/reference/scope review during separate native replay; no compiler invocation, source edit, acceptance promotion or bound metadata edit. The documentation validation record is checked separately from the narrower Moebius manifest.",
+  "checks": [
+    {
+      "check": "default manifest selects v5",
+      "passed": true
+    },
+    {
+      "check": "manifest/reference/status/receipt identities agree",
+      "passed": true
+    },
+    {
+      "check": "archived and original input receipts identical",
+      "passed": true
+    },
+    {
+      "check": "manifest records exactly match receipt",
+      "passed": true,
+      "detail": {
+        "modules": 439,
+        "assets": 24
+      }
+    },
+    {
+      "check": "all current manifested module bytes match",
+      "passed": true
+    },
+    {
+      "check": "all current manifested asset bytes match",
+      "passed": true
+    },
+    {
+      "check": "receipt checker and layout policy are current",
+      "passed": true
+    },
+    {
+      "check": "all archived input command logs retain exact bytes",
+      "passed": true,
+      "detail": {
+        "commands": 24
+      }
+    },
+    {
+      "check": "all immutable input snapshot copies retain exact bytes",
+      "passed": true,
+      "detail": {
+        "snapshots": 466
+      }
+    },
+    {
+      "check": "input validation claims no source replay",
+      "passed": true
+    },
+    {
+      "check": "source observation canonical identity is valid",
+      "passed": true
+    },
+    {
+      "check": "observation/gate/current-manifest identity agree",
+      "passed": true
+    },
+    {
+      "check": "full source membership and bytes current",
+      "passed": true,
+      "detail": {
+        "sources_including_entry": 860
+      }
+    },
+    {
+      "check": "observation historical input bindings remain current",
+      "passed": true
+    },
+    {
+      "check": "observation is engineering-only",
+      "passed": true
+    },
+    {
+      "check": "final documentation state remains exact",
+      "passed": true
+    },
+    {
+      "check": "documentation census equals source observation",
+      "passed": true
+    },
+    {
+      "check": "documentation summary metadata pins are current",
+      "passed": true
+    },
+    {
+      "check": "all retained manifest/profile/status identities preserved",
+      "passed": true,
+      "detail": [
+        {
+          "path": ".noeaaeue/evidence/moebius-response-sources.json",
+          "sha256": "1b27e56dcd0f4d3c84db54b6a4ffdda2594e4d59a4892d28f55c0bfda1b7f3df"
+        },
+        {
+          "path": ".noeaaeue/bindings/moebius-current-inputs-v2.json",
+          "sha256": "2cae520a955beb2f2a8f60a97a60a46cd4cf69b5131732230b038240002a4df2"
+        },
+        {
+          "path": ".noeaaeue/bindings/moebius-current-inputs-v3.json",
+          "sha256": "eb0e99f1d5a10aadcbf36f7b9f18fbdf42922ba103ba6184012a68914ebe2df1"
+        },
+        {
+          "path": ".noeaaeue/bindings/moebius-current-inputs-v4.json",
+          "sha256": "c511b72bb5f893372cec6b665b4d4e8d0d7a674c6d3096e549a805a26f09d75e"
+        },
+        {
+          "path": ".noeaaeue/bindings/moebius-historical-profile-v1.json",
+          "sha256": "162179715b8b117de650cc0a2e995361c0665d7978ddcd221f82008c20e12830"
+        },
+        {
+          "path": ".noeaaeue/binding-repair/moebius-binding-status.json",
+          "sha256": "431b5c9fb4d6ed89cd78139390656773f7566c58b3463a79ef1bf805f8ad201a"
+        }
+      ]
+    },
+    {
+      "check": "v2/v3/v4 remain unaccepted historical observations",
+      "passed": true
+    },
+    {
+      "check": "old expected pins explicitly retained",
+      "passed": true
+    },
+    {
+      "check": "legacy singleton fixture preserves old source identity",
+      "passed": true
+    },
+    {
+      "check": "current scoped qualification reference exact",
+      "passed": true
+    },
+    {
+      "check": "current scoped qualification source bytes match",
+      "passed": true
+    },
+    {
+      "check": "profile qualification remains narrow",
+      "passed": true
+    },
+    {
+      "check": "current default has no observed input drift",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "manifest_sha256": "1b97cf890556c282c22d344812d4ab072b80c27ca4254a3a611c8a451162dc05",
+  "source_observation_identity": "22e79fff1f6d121b9f42ce2a25cf8bdc0459c74c9a45e07081bc3f314e239971",
+  "source_observation_sha256": "79d9e73263a6790d60380d354fe472188045ebda3090f7ffdbd10d3e94e62614",
+  "documentation_final_state_sha256": "1ecf214484623728c0cec55afb87c1961d172f27889f1ad5ef6b11f73dfa80ab",
+  "notes": [
+    "The immutable current-profile-v2 metadata retains its prequalification observed-not-yet-qualified label. The separate exact current-qualification reference supplies the later five-module/six-control qualification; full-library admission is false.",
+    "Historical manifest/profile/singleton drift remains explicit; no historical expected source hash is refreshed.",
+    "This review does not claim the separate full current native replay has passed."
+  ]
+}

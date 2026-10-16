@@ -56,8 +56,8 @@ authorship and licenses.
 ## Source and verification scope
 
 [Source](../../../../GRWTSK/Analysis/Integration/ExponentialVolterraL2.lean).
-Status: **fresh-selected**. [Verification receipt](../../../../evidence/Analysis/Integration/exponential-volterra-l2-checks.json) ·
-[credit and evidence limits](../../../reference/documentation-history.md).
+Status: **fresh-selected**. [Verification receipt](../../../../.noeaaeue/evidence/Analysis/Integration/exponential-volterra-l2-checks.json) ·
+[credit and evidence limits](../../../../.noeaaeue/documentation/reference/documentation-history.md).
 The receipt covers the finite theorem and a separate consumer under the pinned
 compiler with trust zero, fatal warnings, and an owned-declaration axiom audit.
 

@@ -1,5 +1,6 @@
 # Rational shear counterexamples
 
+
 This local candidate carries three rational matrix units and four established counterexample theorems. Each shear separately obeys sign conjugation to inverse. The two shears do not commute, and their ordered two-edge product fails that inverse-product law. These witnesses make the commutativity premise explicit.
 
 GRWTSK added a canonical local interface and mechanically checked preservation. The source is locally maintained under grwtsk contributors's direction with OpenAI Codex assistance, under MIT. The historical human/machine authoring split is unknown; no originality or sole-authorship claim is made. Lean and mathlib retain upstream identities, named authors and licenses through pinned dependencies.
@@ -9,7 +10,9 @@ All seven source roots and eight generated proof/equation companions are checked
 
 ## Source and verification scope
 
-[Source](../../../../GRWTSK/LinearAlgebra/CommonJCounterexamples.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+[Source](../../../../GRWTSK/LinearAlgebra/CommonJCounterexamples.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../../.noeaaeue/documentation/reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

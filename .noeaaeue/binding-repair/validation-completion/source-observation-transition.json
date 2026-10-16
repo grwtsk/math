@@ -1,0 +1,41 @@
+{
+  "schema": "explicit-validation-completion-source-observation-v1",
+  "created_at": "2026-10-16T02:41:01.242330+00:00",
+  "previous": {
+    "identity": "d57979e56a8747affb4b6d0c492a3c2f0c2287e830ff5caf714ffdfe6dab0edd",
+    "sha256": "25ce8282b50242408ccc4b5b67c2d11c3c6adc9105b52b3d5d51a1456bf46ed1"
+  },
+  "current": {
+    "identity": "5b2dc4d57996bcf80aaba4c88fccadad362c9c3bc6705dbc060d6a00585c772d",
+    "sha256": "3485085ce597bccc5536ce6094dad03a5cd4e51a09e238c4a45cef5d542b0bd1"
+  },
+  "source_count": 848,
+  "added_paths": [
+    "GRWTSK/Analysis/Fourier/FiniteAdditiveProjector.lean"
+  ],
+  "source_bytes_changed": [
+    {
+      "path": "GRWTSK.lean",
+      "previous": "e93288cf55c77a5a76b88f57a78dc58ad9514c7ee9473ead994326d73cda6bc5",
+      "current": "d8bda509bc6f84a130b4747760134d1eabf3a565f3cbd3ac4c46ce16da35597e"
+    }
+  ],
+  "historical_input_changes": {
+    ".noeaaeue/documentation/math-layout.json": {
+      "previous": {
+        "sha256": "68181d710c6a953de6437b506d27921acbe4ac613fb91b4cba3b7a5e02ee9288",
+        "bytes": 3211904
+      },
+      "current": {
+        "sha256": "db630d2d28c32af4333c18c729e6cc414af916c87c75661c29b3c90d4eaae98d",
+        "bytes": 3233469
+      }
+    }
+  },
+  "docs_final_state": ".noeaaeue/binding-repair/validation-completion/documentation-final-state.json",
+  "mathematical_admission": false,
+  "acceptance_inherited": false,
+  "GRWTSK_edited_by_reconciliation": false,
+  "active_library_source_count": 436,
+  "candidate_source_count": 69
+}

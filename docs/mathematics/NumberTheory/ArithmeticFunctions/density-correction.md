@@ -1,5 +1,6 @@
 # Complete density Möbius correction
 
+
 Human mathematical direction, theorem selection and conceptual framing: grwtsk contributors. Formalization and verification assistance: OpenAI Codex. Local contributions are MIT; Mathlib retains upstream authorship and Apache-2.0 licensing.
 
 For every natural integer define
@@ -62,7 +63,7 @@ The excluded moment identification, complete excluded tail and actual real-cutof
 
 ## Sources and evidence
 
-The independently defined public sources are [DensityMoebius](../../../../GRWTSK/NumberTheory/ArithmeticFunctions/DensityMoebius.lean), [reciprocal mass](../../../../GRWTSK/NumberTheory/ArithmeticFunctions/DensityCorrectionReciprocalMass.lean), [half-moment](../../../../GRWTSK/NumberTheory/ArithmeticFunctions/DensityHalfMoment.lean), [real-cutoff tails](../../../../GRWTSK/NumberTheory/ArithmeticFunctions/DensityMomentTails.lean), and [excluded correction](../../../../GRWTSK/NumberTheory/ArithmeticFunctions/ExcludedDensityCorrection.lean). The [public scoped receipt](../../../../evidence/NumberTheory/ArithmeticFunctions/density-arithmetic-checks.json) binds the exact public bytes. It distinguishes source replay, literal contracts, bodies and transitive axioms from independent human acceptance and a full repository build. The excluded infinite moment formulas above are written arguments, not newly checked declarations.
+The independently defined public sources are [DensityMoebius](../../../../GRWTSK/NumberTheory/ArithmeticFunctions/DensityMoebius.lean), [reciprocal mass](../../../../GRWTSK/NumberTheory/ArithmeticFunctions/DensityCorrectionReciprocalMass.lean), [half-moment](../../../../GRWTSK/NumberTheory/ArithmeticFunctions/DensityHalfMoment.lean), [real-cutoff tails](../../../../GRWTSK/NumberTheory/ArithmeticFunctions/DensityMomentTails.lean), and [excluded correction](../../../../GRWTSK/NumberTheory/ArithmeticFunctions/ExcludedDensityCorrection.lean). The [public scoped receipt](../../../../.noeaaeue/evidence/NumberTheory/ArithmeticFunctions/density-arithmetic-checks.json) binds the exact public bytes. It distinguishes source replay, literal contracts, bodies and transitive axioms from independent human acceptance and a full repository build. The excluded infinite moment formulas above are written arguments, not newly checked declarations.
 
 The actual closed reciprocal prefixes have a checked exact finite return:
 \[
@@ -72,6 +73,8 @@ A_\nu(x)=\sum_{d\le\lfloor x\rfloor}\frac{\gamma(d)}d A_\mu(x/d),
 The Möbius bound includes all real cutoffs below one as the empty prefix. It uses the complete finite divisor regrouping and fractional-part identity, without an RH or PNT hypothesis. The closed coprime quadratic form also equals its complete signed common-divisor rows; it is indefinite and retains every ordered term. [Moebius reciprocal prefix](../../../../GRWTSK/NumberTheory/ArithmeticFunctions/MoebiusReciprocalPrefix.lean), [density prefix](../../../../GRWTSK/NumberTheory/ArithmeticFunctions/DensityReciprocalPrefix.lean), and [complete coprime form](../../../../GRWTSK/NumberTheory/ArithmeticFunctions/CoprimeReciprocalForm.lean) are included in the scoped public receipt. Boundedness is not a decay rate.
 
 The touching divisible prime row equals \(-1/(p+1)\); this rules out a uniform \(C/p^2\) row estimate over all primes. It does not refute a complete Möbius pickup budget. P04, P05, original absolute MB6 and RH remain open. These positive correction moments do not supply the required complete signed arithmetic cancellation.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

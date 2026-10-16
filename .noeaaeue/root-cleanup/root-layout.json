@@ -1,0 +1,30 @@
+{
+  "schema": "root-cleanup-final-layout-v1",
+  "root_entries": [
+    ".git",
+    ".gitattributes",
+    ".gitignore",
+    ".lake",
+    ".noeaaeue",
+    "AGENTS.md",
+    "GRWTSK",
+    "GRWTSK.lean",
+    "LICENSE",
+    "LICENSES",
+    "NOTICE",
+    "README.md",
+    "docs",
+    "lake-manifest.json",
+    "lakefile.toml",
+    "lean-toolchain"
+  ],
+  "unexpected_entries": [],
+  "source_taxonomy_changed_by_cleanup": false,
+  "protected_files": 830,
+  "protected_mismatches": [],
+  "root_agent_discovery": "minimal AGENTS.md pointer to .noeaaeue/AGENTS.md",
+  "generated_lean_state": ".lake/",
+  "ignored_process_state": ".noeaaeue/.local/",
+  "ignored_original_variants": ".noeaaeue/root-cleanup/originals/",
+  "acceptance": "Administrative relocation only; mathematical statuses unchanged"
+}

@@ -1,5 +1,6 @@
 # Sturmian potential, half-open coding and recurrence
 
+
 For Sturmian Hamiltonians, every irrational frequency and every real nonzero coupling give a Cantor spectrum of Lebesgue measure zero, with every permitted internal gap open. Zero coupling instead gives the interval spectrum of the free discrete Schrödinger operator. The almost Mathieu operator shares the Cantor conclusion, but its spectrum generally has positive measure. These statements concern different objects from the arithmetic convergence boundary in the CCC reduction of RH.
 
 Human mathematical direction: grwtsk contributors. Research synthesis and local formalization assistance: OpenAI Codex. Established results retain their named authors and source versions. The local Lean additions prove conditional transport, actual finite Dirichlet count comparison, the complete free eigenvalue list, the free IDS count limit with inverse cuts, the count error for splitting adjacent Dirichlet volumes, accumulated repeated-block and remainder bounds, and exact origin-to-phase/block-sampling adapters. The infinite Sturmian operator spectrum, tree, nonzero-coupling IDS construction and full Dry Ten Martini theorem remain separate formalization obligations.
@@ -20,7 +21,9 @@ The [Sturmian transfer source](../../../../GRWTSK/LinearAlgebra/Sturmian.lean) p
 
 ## Source and verification scope
 
-[Source](../../../../GRWTSK/LinearAlgebra/Sturmian.lean). Status: **literature-and-historical-source-description**. [Credit and evidence limits](../../../reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+[Source](../../../../GRWTSK/LinearAlgebra/Sturmian.lean). Status: **literature-and-historical-source-description**. [Credit and evidence limits](../../../../.noeaaeue/documentation/reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

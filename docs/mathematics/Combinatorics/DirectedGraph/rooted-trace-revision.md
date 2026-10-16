@@ -1,5 +1,6 @@
 # Certified revision of rooted trace dictionaries
 
+
 Fix actual before and after [parent dictionaries](parent-trace-dictionary.md),
 retaining the complete ordered references from before. Exact agreement of
 their expanded optional lookups at every old reference preserves the
@@ -69,8 +70,8 @@ slot-stability, byte-compression or permission-authority claim.
 
 The [source](../../../../GRWTSK/Combinatorics/DirectedGraph/RootedTraceRevision.lean),
 [positive controls](../../../../GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/RootedTraceRevision.lean),
-[native receipt](../../../../evidence/Combinatorics/DirectedGraph/rooted-trace-revision-checks-2026-10-15.json)
-and [integration record](../../../../evidence/Combinatorics/DirectedGraph/rooted-trace-revision-integration-2026-10-15.json)
+[native receipt](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/rooted-trace-revision-checks-2026-10-15.json)
+and [integration record](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/rooted-trace-revision-integration-2026-10-15.json)
 bind the exact selected closure. Lean 4.33.0 checks fresh local sources at
 trust zero with fatal warnings and a complete owned-declaration/transitive-
 axiom census permitting only `propext`, `Classical.choice` and `Quot.sound`.
@@ -81,6 +82,8 @@ Local source is MIT; imported Lean and Mathlib retain their named authors
 and Apache-2.0 terms. Human direction: grwtsk contributors; local
 formalization/checking: OpenAI Codex. No mathematical novelty,
 whole-library admission or RH result is claimed.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

@@ -1,0 +1,62 @@
+{
+  "schema": "moebius-binding-repair-validation-v1",
+  "scope": "Active process binding/profile repair. Historical receipts, manifests, profile permissions and Lean mathematical sources remain unchanged by this repair.",
+  "current_profile": {
+    "path": ".noeaaeue/bindings/moebius-current-profile-v2.json",
+    "profile_sha256": "53256c3d4956d2ef48909d4347d216c625e134fd5b51f7d906ccbe13e0bd3d0f",
+    "qualified_pairs": 5,
+    "qualified_owner_modules": 3,
+    "fresh_native_owned_declarations": 419,
+    "negative_controls": 6,
+    "qualification_reference": ".noeaaeue/binding-repair/moebius-current-qualification.json",
+    "library_wide_admission": false
+  },
+  "unit_controls": {
+    "checker": {
+      "count": 79,
+      "status": "passed",
+      "log": ".noeaaeue/binding-repair/moebius-checker-final.log"
+    },
+    "owner_input_path": {
+      "count": 88,
+      "status": "passed-normal-and-optimized",
+      "logs": [
+        ".noeaaeue/binding-repair/moebius-owner-input-path-controls-final.log",
+        ".noeaaeue/binding-repair/moebius-owner-input-path-controls-optimized-final.log"
+      ]
+    },
+    "final_default_path_only": {
+      "count": 10,
+      "status": "passed-normal-and-optimized"
+    }
+  },
+  "current_default": {
+    "path": ".noeaaeue/bindings/moebius-current-inputs-v4.json",
+    "kernel_acceptance_from_metadata": false,
+    "scope": "Exact current source/assets observation; validator must check current bytes and shared layout before any source replay.",
+    "sha256": "c511b72bb5f893372cec6b665b4d4e8d0d7a674c6d3096e549a805a26f09d75e",
+    "validation_status": "failed-closed-concurrent-source-drift",
+    "validation_receipt": ".noeaaeue/.local/checks/moebius-response-20261016T022810Z-143c92519f2d/receipt.json",
+    "validation_receipt_sha256": "55483158a288aa5ebd6ffb94579a5f35c9cddffa26ff6ada24612a818be4a7ea",
+    "validation_log": ".noeaaeue/binding-repair/moebius-current-default-validate-v4.log",
+    "error": "Manifest source hash mismatch: GRWTSK.Combinatorics.Sequences.CyclicSumsetGrowth",
+    "kernel_checked": false,
+    "native_commands_executed": 0
+  },
+  "observed_application_modules": 436,
+  "observed_assets": 24,
+  "drift_at_failure": {
+    "module": "GRWTSK.Combinatorics.Sequences.CyclicSumsetGrowth",
+    "path": "GRWTSK/Combinatorics/Sequences/CyclicSumsetGrowth.lean",
+    "expected_sha256": "afac487cb3f0e767754d2b7a6b625542db71eb70edfe573e55f4f462634a066e",
+    "later_observed_sha256": "86b8f712206e943ec593cd324180e20f68d12522dda47d28b5ebb5c0045b6d47",
+    "receipt_expected_hashes_rewritten": false
+  },
+  "commands": {
+    "current_inputs": "python3 -B .noeaaeue/scripts/check_moebius_response.py --validate-only",
+    "fresh_application_replay": "python3 -B .noeaaeue/scripts/check_moebius_response.py",
+    "historical_inputs": "python3 -B .noeaaeue/scripts/check_moebius_response.py --manifest .noeaaeue/evidence/moebius-response-sources.json --validate-only"
+  },
+  "historical_status_index": ".noeaaeue/binding-repair/moebius-binding-status.json",
+  "full_application_acceptance": false
+}

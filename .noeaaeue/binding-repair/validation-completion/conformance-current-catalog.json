@@ -1,0 +1,9 @@
+{
+  "schema": "validation-completion-catalog-conformance-v1",
+  "checked_utc": "2026-10-16T03:02:05.638510+00:00",
+  "path": "docs/reference/math-source-catalog.json",
+  "expected_sha256": "5c4eb372f2c910c1ae42e3b2168e5ae1672a7e9aeacc10d0a11916c17c4fbfcd",
+  "observed_sha256": "5c4eb372f2c910c1ae42e3b2168e5ae1672a7e9aeacc10d0a11916c17c4fbfcd",
+  "exact_bytes_match": true,
+  "mathematical_acceptance": false
+}

@@ -1,0 +1,784 @@
+.............................................................................................................................taxonomy check failed: individual method coverage is incomplete
+.taxonomy check failed: stale revision expected identity
+.taxonomy check failed: unknown taxonomy schema
+...................................................................................................................................................................................................................................................................................................................................................................................................................FF..FFFF...FFF..F.FF..FFFF.FFEFFFFFFF..FFFFFFFFFFFFFF.........................F...F...........................................................................................................................................................................F..............FFFFFFFF.................................................................F...............................................................................................................................................................
+======================================================================
+ERROR: test_profile_descriptor_exactness_and_all_nine_source_pins (test_moebius_response_checker.CheckerControls.test_profile_descriptor_exactness_and_all_nine_source_pins)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 812, in test_profile_descriptor_exactness_and_all_nine_source_pins
+    self.assertEqual(checker.resolve_runtime_policy(contract,vars(census),nodes),(True,"",table))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/check_moebius_response.py", line 580, in resolve_runtime_policy
+    raise ValueError("Generated-partial policy must declare the exact canonical fifteen-entry profile and SHA-256")
+ValueError: Generated-partial policy must declare the exact canonical fifteen-entry profile and SHA-256
+
+======================================================================
+FAIL: test_busy_job_appearing_after_cache_freeze_blocks_first_source (test_moebius_response_checker.CheckerControls.test_busy_job_appearing_after_cache_freeze_blocks_first_source)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 780, in test_busy_job_appearing_after_cache_freeze_blocks_first_source
+    self.orchestration("root-busy-after-freeze")
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 646, in orchestration
+    self.assertIn(reasons[variant], receipt.get("error", ""))
+AssertionError: 'BUSY: existing native Lean/Lake jobs' not found in "[Errno 2] No such file or directory: '/private/tmp/moebius-checker-controls-49f86fb869b94be8a0f3c64265641f61/test_busy_job_appearing_after_cache_freeze_blocks_first_source/.noeaaeue/.local/checks/moebius-response-20261016T014434Z-9c69e118e8e7/source/.noeaaeue/checks/MoebiusResponseOwnerAudit.lean'"
+
+======================================================================
+FAIL: test_custom_axiom_control_failure_is_primary (test_moebius_response_checker.CheckerControls.test_custom_axiom_control_failure_is_primary)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 754, in test_custom_axiom_control_failure_is_primary
+    self.orchestration("extra-control-error")
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 571, in orchestration
+    self.assertEqual(receipt["primary_failure"]["stage"],"custom-axiom-control")
+AssertionError: 'driver-exception' != 'custom-axiom-control'
+- driver-exception
++ custom-axiom-control
+
+
+======================================================================
+FAIL: test_dependency_prefix_helper_cannot_bypass_per_hop_native_scheduler (test_moebius_response_checker.CheckerControls.test_dependency_prefix_helper_cannot_bypass_per_hop_native_scheduler)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 783, in test_dependency_prefix_helper_cannot_bypass_per_hop_native_scheduler
+    self.orchestration("root-busy-inner-prefix")
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 646, in orchestration
+    self.assertIn(reasons[variant], receipt.get("error", ""))
+AssertionError: 'BUSY: existing native Lean/Lake jobs' not found in "[Errno 2] No such file or directory: '/private/tmp/moebius-checker-controls-49f86fb869b94be8a0f3c64265641f61/test_dependency_prefix_helper_cannot_bypass_per_hop_native_scheduler/.noeaaeue/.local/checks/moebius-response-20261016T014434Z-28ddf654f23f/source/.noeaaeue/checks/MoebiusResponseOwnerAudit.lean'"
+
+======================================================================
+FAIL: test_exact_root_umbrella_mocked_orchestration (test_moebius_response_checker.CheckerControls.test_exact_root_umbrella_mocked_orchestration)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 719, in test_exact_root_umbrella_mocked_orchestration
+    self.orchestration("root-clean")
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 550, in orchestration
+    self.assertEqual(outcome, expected)
+AssertionError: 1 != 0
+
+======================================================================
+FAIL: test_explicit_memory_limit_reaches_every_elaboration_hop_and_receipt (test_moebius_response_checker.CheckerControls.test_explicit_memory_limit_reaches_every_elaboration_hop_and_receipt)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 757, in test_explicit_memory_limit_reaches_every_elaboration_hop_and_receipt
+    self.orchestration("root-profile-memory-12288")
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 550, in orchestration
+    self.assertEqual(outcome, expected)
+AssertionError: 1 != 0
+
+======================================================================
+FAIL: test_explicit_pinned_runtime_mocked_orchestration (test_moebius_response_checker.CheckerControls.test_explicit_pinned_runtime_mocked_orchestration)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 739, in test_explicit_pinned_runtime_mocked_orchestration
+    self.orchestration("root-runtime-clean")
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 391, in orchestration
+    packages, lean, sources, manifest_path, manifest = self.integration_fixture(variant)
+                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 237, in integration_fixture
+    self.assertEqual(checker.digest(native_data), census.RUNTIME_SOURCE_SHA256)
+AssertionError: 'dee4c3dc356426d3fdce86b71aa3e5c93e58597fd688381c38d73d80cc23e300' != '97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d'
+- dee4c3dc356426d3fdce86b71aa3e5c93e58597fd688381c38d73d80cc23e300
++ 97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d
+
+
+======================================================================
+FAIL: test_generated_partial_profile_and_all_six_native_controls_mocked_pipeline (test_moebius_response_checker.CheckerControls.test_generated_partial_profile_and_all_six_native_controls_mocked_pipeline)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 742, in test_generated_partial_profile_and_all_six_native_controls_mocked_pipeline
+    self.orchestration("root-profile-clean")
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 550, in orchestration
+    self.assertEqual(outcome, expected)
+AssertionError: 1 != 0
+
+======================================================================
+FAIL: test_input_change_during_busy_wait_rejects_before_native_launch (test_moebius_response_checker.CheckerControls.test_input_change_during_busy_wait_rejects_before_native_launch)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 798, in test_input_change_during_busy_wait_rejects_before_native_launch
+    self.orchestration("root-wait-source-change")
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 668, in orchestration
+    self.assertEqual(len(waits),1)
+AssertionError: 0 != 1
+
+======================================================================
+FAIL: test_interrupted_busy_wait_preserves_nonacceptance_and_releases_leases (test_moebius_response_checker.CheckerControls.test_interrupted_busy_wait_preserves_nonacceptance_and_releases_leases)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 801, in test_interrupted_busy_wait_preserves_nonacceptance_and_releases_leases
+    self.orchestration("root-wait-interrupted")
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 550, in orchestration
+    self.assertEqual(outcome, expected)
+AssertionError: 1 != 130
+
+======================================================================
+FAIL: test_mocked_full_orchestration (test_moebius_response_checker.CheckerControls.test_mocked_full_orchestration)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 698, in test_mocked_full_orchestration
+    self.orchestration()
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 550, in orchestration
+    self.assertEqual(outcome, expected)
+AssertionError: 1 != 0
+
+======================================================================
+FAIL: test_mocked_orchestration_rejects_source_restore (test_moebius_response_checker.CheckerControls.test_mocked_orchestration_rejects_source_restore)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 704, in test_mocked_orchestration_rejects_source_restore
+    self.orchestration("source-edit-restore")
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 659, in orchestration
+    self.assertEqual(observed, [sources[OWNERS[0]]])
+AssertionError: Lists differ: [] != [b'import Mathlib\ntheorem a : 1 = 1 := rfl\n']
+
+Second list contains 1 additional elements.
+First extra element 0:
+b'import Mathlib\ntheorem a : 1 = 1 := rfl\n'
+
+- []
++ [b'import Mathlib\ntheorem a : 1 = 1 := rfl\n']
+
+======================================================================
+FAIL: test_mocked_orchestration_rejects_unrelated_error (test_moebius_response_checker.CheckerControls.test_mocked_orchestration_rejects_unrelated_error)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 701, in test_mocked_orchestration_rejects_unrelated_error
+    self.orchestration("extra-control-error")
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 571, in orchestration
+    self.assertEqual(receipt["primary_failure"]["stage"],"custom-axiom-control")
+AssertionError: 'driver-exception' != 'custom-axiom-control'
+- driver-exception
++ custom-axiom-control
+
+
+======================================================================
+FAIL: test_optional_busy_wait_applies_to_nested_dependency_prefix (test_moebius_response_checker.CheckerControls.test_optional_busy_wait_applies_to_nested_dependency_prefix)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 789, in test_optional_busy_wait_applies_to_nested_dependency_prefix
+    self.orchestration("root-wait-inner-prefix")
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 550, in orchestration
+    self.assertEqual(outcome, expected)
+AssertionError: 1 != 0
+
+======================================================================
+FAIL: test_optional_busy_wait_covers_initial_inspection_after_lease_acquisition (test_moebius_response_checker.CheckerControls.test_optional_busy_wait_covers_initial_inspection_after_lease_acquisition)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 792, in test_optional_busy_wait_covers_initial_inspection_after_lease_acquisition
+    self.orchestration("root-wait-initial")
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 550, in orchestration
+    self.assertEqual(outcome, expected)
+AssertionError: 1 != 0
+
+======================================================================
+FAIL: test_optional_busy_wait_does_not_retry_failed_process_inspection (test_moebius_response_checker.CheckerControls.test_optional_busy_wait_does_not_retry_failed_process_inspection)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 795, in test_optional_busy_wait_does_not_retry_failed_process_inspection
+    self.orchestration("root-wait-ps-failure")
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 662, in orchestration
+    self.assertEqual(receipt["native_schedule_checks"][-1]["status"],"blocked")
+AssertionError: 'clear' != 'blocked'
+- clear
++ blocked
+
+
+======================================================================
+FAIL: test_optional_busy_wait_retains_both_leases_and_resumes_after_cache_freeze (test_moebius_response_checker.CheckerControls.test_optional_busy_wait_retains_both_leases_and_resumes_after_cache_freeze)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 786, in test_optional_busy_wait_retains_both_leases_and_resumes_after_cache_freeze
+    self.orchestration("root-wait-after-freeze")
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 550, in orchestration
+    self.assertEqual(outcome, expected)
+AssertionError: 1 != 0
+
+======================================================================
+FAIL: test_profile_control_unrelated_failure_never_accepts (test_moebius_response_checker.CheckerControls.test_profile_control_unrelated_failure_never_accepts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 745, in test_profile_control_unrelated_failure_never_accepts
+    self.orchestration("root-profile-extra-control-error")
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 569, in orchestration
+    self.assertEqual(receipt["primary_failure"]["stage"],"profile-control-oracle")
+AssertionError: 'driver-exception' != 'profile-control-oracle'
+- driver-exception
++ profile-control-oracle
+
+
+======================================================================
+FAIL: test_profile_default_still_rejects_fifteen_partial_helpers (test_moebius_response_checker.CheckerControls.test_profile_default_still_rejects_fifteen_partial_helpers)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 777, in test_profile_default_still_rejects_fifteen_partial_helpers
+    self.orchestration("root-profile-disabled")
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 646, in orchestration
+    self.assertIn(reasons[variant], receipt.get("error", ""))
+AssertionError: 'unsafe, partial, or axiom declaration' not found in "[Errno 2] No such file or directory: '/private/tmp/moebius-checker-controls-49f86fb869b94be8a0f3c64265641f61/test_profile_default_still_rejects_fifteen_partial_helpers/.noeaaeue/.local/checks/moebius-response-20261016T014435Z-520c7565d6fc/source/.noeaaeue/checks/MoebiusResponseOwnerAudit.lean'"
+
+======================================================================
+FAIL: test_profile_fixture_abort_remains_primary (test_moebius_response_checker.CheckerControls.test_profile_fixture_abort_remains_primary)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 751, in test_profile_fixture_abort_remains_primary
+    self.orchestration("root-profile-fixture-memory-abort")
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 565, in orchestration
+    self.assertEqual(receipt["primary_failure"]["stage"],"profile-fixture-source")
+AssertionError: 'driver-exception' != 'profile-fixture-source'
+- driver-exception
++ profile-fixture-source
+
+
+======================================================================
+FAIL: test_resource_abort_remains_primary_despite_missing_later_gates (test_moebius_response_checker.CheckerControls.test_resource_abort_remains_primary_despite_missing_later_gates)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 748, in test_resource_abort_remains_primary_despite_missing_later_gates
+    self.orchestration("root-profile-source-memory-abort")
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 557, in orchestration
+    self.assertEqual(primary["stage"],"source-replay"); self.assertEqual(primary["exit_code"],-6)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'driver-exception' != 'source-replay'
+- driver-exception
++ source-replay
+
+
+======================================================================
+FAIL: test_root_asset_policy_preserves_pins_and_subject_asset_binding (test_moebius_response_checker.CheckerControls.test_root_asset_policy_preserves_pins_and_subject_asset_binding) (variant='root-missing-operational-asset')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 693, in orchestration_cases
+    self.orchestration(variant)
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 646, in orchestration
+    self.assertIn(reasons[variant], receipt.get("error", ""))
+AssertionError: 'Manifest must bind the canonical policy' not found in 'Manifest must bind one exact canonical policy, dependency pin or owner audit helper: lean-toolchain'
+
+======================================================================
+FAIL: test_root_manifest_and_assets_edit_restore_are_rejected (test_moebius_response_checker.CheckerControls.test_root_manifest_and_assets_edit_restore_are_rejected) (variant='root-manifest-edit-restore')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 693, in orchestration_cases
+    self.orchestration(variant)
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 653, in orchestration
+    self.assertEqual(len(changed), 1)
+AssertionError: 0 != 1
+
+======================================================================
+FAIL: test_root_manifest_and_assets_edit_restore_are_rejected (test_moebius_response_checker.CheckerControls.test_root_manifest_and_assets_edit_restore_are_rejected) (variant='root-asset-edit-restore')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 693, in orchestration_cases
+    self.orchestration(variant)
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 653, in orchestration
+    self.assertEqual(len(changed), 1)
+AssertionError: 0 != 1
+
+======================================================================
+FAIL: test_root_manifest_and_assets_edit_restore_are_rejected (test_moebius_response_checker.CheckerControls.test_root_manifest_and_assets_edit_restore_are_rejected) (variant='root-asset-added')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 693, in orchestration_cases
+    self.orchestration(variant)
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 653, in orchestration
+    self.assertEqual(len(changed), 1)
+AssertionError: 0 != 1
+
+======================================================================
+FAIL: test_root_manifest_is_frozen_without_self_hashing (test_moebius_response_checker.CheckerControls.test_root_manifest_is_frozen_without_self_hashing)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 722, in test_root_manifest_is_frozen_without_self_hashing
+    self.orchestration("root-manifest-self")
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 550, in orchestration
+    self.assertEqual(outcome, expected)
+AssertionError: 1 != 0
+
+======================================================================
+FAIL: test_runtime_boolean_alone_or_mismatched_actual_source_is_rejected (test_moebius_response_checker.CheckerControls.test_runtime_boolean_alone_or_mismatched_actual_source_is_rejected) (variant='root-runtime-source-drift')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 693, in orchestration_cases
+    self.orchestration(variant)
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 391, in orchestration
+    packages, lean, sources, manifest_path, manifest = self.integration_fixture(variant)
+                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 237, in integration_fixture
+    self.assertEqual(checker.digest(native_data), census.RUNTIME_SOURCE_SHA256)
+AssertionError: 'dee4c3dc356426d3fdce86b71aa3e5c93e58597fd688381c38d73d80cc23e300' != '97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d'
+- dee4c3dc356426d3fdce86b71aa3e5c93e58597fd688381c38d73d80cc23e300
++ 97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d
+
+
+======================================================================
+FAIL: test_runtime_boolean_alone_or_mismatched_actual_source_is_rejected (test_moebius_response_checker.CheckerControls.test_runtime_boolean_alone_or_mismatched_actual_source_is_rejected) (variant='root-runtime-missing-policy')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 693, in orchestration_cases
+    self.orchestration(variant)
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 391, in orchestration
+    packages, lean, sources, manifest_path, manifest = self.integration_fixture(variant)
+                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 237, in integration_fixture
+    self.assertEqual(checker.digest(native_data), census.RUNTIME_SOURCE_SHA256)
+AssertionError: 'dee4c3dc356426d3fdce86b71aa3e5c93e58597fd688381c38d73d80cc23e300' != '97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d'
+- dee4c3dc356426d3fdce86b71aa3e5c93e58597fd688381c38d73d80cc23e300
++ 97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d
+
+
+======================================================================
+FAIL: test_runtime_boolean_alone_or_mismatched_actual_source_is_rejected (test_moebius_response_checker.CheckerControls.test_runtime_boolean_alone_or_mismatched_actual_source_is_rejected) (variant='root-runtime-string-boolean')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 693, in orchestration_cases
+    self.orchestration(variant)
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 391, in orchestration
+    packages, lean, sources, manifest_path, manifest = self.integration_fixture(variant)
+                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 237, in integration_fixture
+    self.assertEqual(checker.digest(native_data), census.RUNTIME_SOURCE_SHA256)
+AssertionError: 'dee4c3dc356426d3fdce86b71aa3e5c93e58597fd688381c38d73d80cc23e300' != '97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d'
+- dee4c3dc356426d3fdce86b71aa3e5c93e58597fd688381c38d73d80cc23e300
++ 97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d
+
+
+======================================================================
+FAIL: test_runtime_boolean_alone_or_mismatched_actual_source_is_rejected (test_moebius_response_checker.CheckerControls.test_runtime_boolean_alone_or_mismatched_actual_source_is_rejected) (variant='root-runtime-false-descriptor')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 693, in orchestration_cases
+    self.orchestration(variant)
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 391, in orchestration
+    packages, lean, sources, manifest_path, manifest = self.integration_fixture(variant)
+                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 237, in integration_fixture
+    self.assertEqual(checker.digest(native_data), census.RUNTIME_SOURCE_SHA256)
+AssertionError: 'dee4c3dc356426d3fdce86b71aa3e5c93e58597fd688381c38d73d80cc23e300' != '97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d'
+- dee4c3dc356426d3fdce86b71aa3e5c93e58597fd688381c38d73d80cc23e300
++ 97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d
+
+
+======================================================================
+FAIL: test_runtime_descriptor_is_exact_and_closed (test_moebius_response_checker.CheckerControls.test_runtime_descriptor_is_exact_and_closed) (variant='root-runtime-wrong-declaration')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 693, in orchestration_cases
+    self.orchestration(variant)
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 391, in orchestration
+    packages, lean, sources, manifest_path, manifest = self.integration_fixture(variant)
+                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 237, in integration_fixture
+    self.assertEqual(checker.digest(native_data), census.RUNTIME_SOURCE_SHA256)
+AssertionError: 'dee4c3dc356426d3fdce86b71aa3e5c93e58597fd688381c38d73d80cc23e300' != '97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d'
+- dee4c3dc356426d3fdce86b71aa3e5c93e58597fd688381c38d73d80cc23e300
++ 97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d
+
+
+======================================================================
+FAIL: test_runtime_descriptor_is_exact_and_closed (test_moebius_response_checker.CheckerControls.test_runtime_descriptor_is_exact_and_closed) (variant='root-runtime-wrong-owner_module')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 693, in orchestration_cases
+    self.orchestration(variant)
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 391, in orchestration
+    packages, lean, sources, manifest_path, manifest = self.integration_fixture(variant)
+                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 237, in integration_fixture
+    self.assertEqual(checker.digest(native_data), census.RUNTIME_SOURCE_SHA256)
+AssertionError: 'dee4c3dc356426d3fdce86b71aa3e5c93e58597fd688381c38d73d80cc23e300' != '97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d'
+- dee4c3dc356426d3fdce86b71aa3e5c93e58597fd688381c38d73d80cc23e300
++ 97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d
+
+
+======================================================================
+FAIL: test_runtime_descriptor_is_exact_and_closed (test_moebius_response_checker.CheckerControls.test_runtime_descriptor_is_exact_and_closed) (variant='root-runtime-wrong-source_path')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 693, in orchestration_cases
+    self.orchestration(variant)
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 391, in orchestration
+    packages, lean, sources, manifest_path, manifest = self.integration_fixture(variant)
+                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 237, in integration_fixture
+    self.assertEqual(checker.digest(native_data), census.RUNTIME_SOURCE_SHA256)
+AssertionError: 'dee4c3dc356426d3fdce86b71aa3e5c93e58597fd688381c38d73d80cc23e300' != '97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d'
+- dee4c3dc356426d3fdce86b71aa3e5c93e58597fd688381c38d73d80cc23e300
++ 97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d
+
+
+======================================================================
+FAIL: test_runtime_descriptor_is_exact_and_closed (test_moebius_response_checker.CheckerControls.test_runtime_descriptor_is_exact_and_closed) (variant='root-runtime-wrong-source_sha256')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 693, in orchestration_cases
+    self.orchestration(variant)
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 391, in orchestration
+    packages, lean, sources, manifest_path, manifest = self.integration_fixture(variant)
+                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 237, in integration_fixture
+    self.assertEqual(checker.digest(native_data), census.RUNTIME_SOURCE_SHA256)
+AssertionError: 'dee4c3dc356426d3fdce86b71aa3e5c93e58597fd688381c38d73d80cc23e300' != '97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d'
+- dee4c3dc356426d3fdce86b71aa3e5c93e58597fd688381c38d73d80cc23e300
++ 97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d
+
+
+======================================================================
+FAIL: test_runtime_descriptor_is_exact_and_closed (test_moebius_response_checker.CheckerControls.test_runtime_descriptor_is_exact_and_closed) (variant='root-runtime-extra-policy')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 693, in orchestration_cases
+    self.orchestration(variant)
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 391, in orchestration
+    packages, lean, sources, manifest_path, manifest = self.integration_fixture(variant)
+                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 237, in integration_fixture
+    self.assertEqual(checker.digest(native_data), census.RUNTIME_SOURCE_SHA256)
+AssertionError: 'dee4c3dc356426d3fdce86b71aa3e5c93e58597fd688381c38d73d80cc23e300' != '97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d'
+- dee4c3dc356426d3fdce86b71aa3e5c93e58597fd688381c38d73d80cc23e300
++ 97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d
+
+
+======================================================================
+FAIL: test_runtime_opt_in_retains_axiom_partial_and_theorem_reference_guards (test_moebius_response_checker.CheckerControls.test_runtime_opt_in_retains_axiom_partial_and_theorem_reference_guards) (variant='root-runtime-disabled')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 693, in orchestration_cases
+    self.orchestration(variant)
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 391, in orchestration
+    packages, lean, sources, manifest_path, manifest = self.integration_fixture(variant)
+                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 237, in integration_fixture
+    self.assertEqual(checker.digest(native_data), census.RUNTIME_SOURCE_SHA256)
+AssertionError: 'dee4c3dc356426d3fdce86b71aa3e5c93e58597fd688381c38d73d80cc23e300' != '97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d'
+- dee4c3dc356426d3fdce86b71aa3e5c93e58597fd688381c38d73d80cc23e300
++ 97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d
+
+
+======================================================================
+FAIL: test_runtime_opt_in_retains_axiom_partial_and_theorem_reference_guards (test_moebius_response_checker.CheckerControls.test_runtime_opt_in_retains_axiom_partial_and_theorem_reference_guards) (variant='root-runtime-theorem-reference')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 693, in orchestration_cases
+    self.orchestration(variant)
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 391, in orchestration
+    packages, lean, sources, manifest_path, manifest = self.integration_fixture(variant)
+                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 237, in integration_fixture
+    self.assertEqual(checker.digest(native_data), census.RUNTIME_SOURCE_SHA256)
+AssertionError: 'dee4c3dc356426d3fdce86b71aa3e5c93e58597fd688381c38d73d80cc23e300' != '97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d'
+- dee4c3dc356426d3fdce86b71aa3e5c93e58597fd688381c38d73d80cc23e300
++ 97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d
+
+
+======================================================================
+FAIL: test_runtime_opt_in_retains_axiom_partial_and_theorem_reference_guards (test_moebius_response_checker.CheckerControls.test_runtime_opt_in_retains_axiom_partial_and_theorem_reference_guards) (variant='root-runtime-extra-unsafe')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 693, in orchestration_cases
+    self.orchestration(variant)
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 391, in orchestration
+    packages, lean, sources, manifest_path, manifest = self.integration_fixture(variant)
+                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 237, in integration_fixture
+    self.assertEqual(checker.digest(native_data), census.RUNTIME_SOURCE_SHA256)
+AssertionError: 'dee4c3dc356426d3fdce86b71aa3e5c93e58597fd688381c38d73d80cc23e300' != '97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d'
+- dee4c3dc356426d3fdce86b71aa3e5c93e58597fd688381c38d73d80cc23e300
++ 97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d
+
+
+======================================================================
+FAIL: test_runtime_opt_in_retains_axiom_partial_and_theorem_reference_guards (test_moebius_response_checker.CheckerControls.test_runtime_opt_in_retains_axiom_partial_and_theorem_reference_guards) (variant='root-runtime-partial')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 693, in orchestration_cases
+    self.orchestration(variant)
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 391, in orchestration
+    packages, lean, sources, manifest_path, manifest = self.integration_fixture(variant)
+                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 237, in integration_fixture
+    self.assertEqual(checker.digest(native_data), census.RUNTIME_SOURCE_SHA256)
+AssertionError: 'dee4c3dc356426d3fdce86b71aa3e5c93e58597fd688381c38d73d80cc23e300' != '97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d'
+- dee4c3dc356426d3fdce86b71aa3e5c93e58597fd688381c38d73d80cc23e300
++ 97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d
+
+
+======================================================================
+FAIL: test_runtime_opt_in_retains_axiom_partial_and_theorem_reference_guards (test_moebius_response_checker.CheckerControls.test_runtime_opt_in_retains_axiom_partial_and_theorem_reference_guards) (variant='root-runtime-custom-axiom')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 693, in orchestration_cases
+    self.orchestration(variant)
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 391, in orchestration
+    packages, lean, sources, manifest_path, manifest = self.integration_fixture(variant)
+                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 237, in integration_fixture
+    self.assertEqual(checker.digest(native_data), census.RUNTIME_SOURCE_SHA256)
+AssertionError: 'dee4c3dc356426d3fdce86b71aa3e5c93e58597fd688381c38d73d80cc23e300' != '97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d'
+- dee4c3dc356426d3fdce86b71aa3e5c93e58597fd688381c38d73d80cc23e300
++ 97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d
+
+
+======================================================================
+FAIL: test_custom_control_exact_diagnostic_with_crash_retains_primary_command_cause (test_moebius_response_checker.TerminalProfileControls.test_custom_control_exact_diagnostic_with_crash_retains_primary_command_cause)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 1245, in test_custom_control_exact_diagnostic_with_crash_retains_primary_command_cause
+    self.assertEqual(len(observations),1)
+AssertionError: 0 != 1
+
+======================================================================
+FAIL: test_input_drift_during_terminal_return_cannot_reach_acceptance (test_moebius_response_checker.TerminalProfileControls.test_input_drift_during_terminal_return_cannot_reach_acceptance)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py", line 1213, in test_input_drift_during_terminal_return_cannot_reach_acceptance
+    self.assertEqual(len(observations),1)
+AssertionError: 0 != 1
+
+======================================================================
+FAIL: test_pinned_sources (test_replay_quartic_source.Inputs.test_pinned_sources)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_replay_quartic_source.py", line 17, in test_pinned_sources
+    self.assertEqual(replay.digest((replay.ROOT/name).read_bytes()),sha)
+AssertionError: '7b6c46ee63ef38c5da6ab07b8af5ad2d1bcad806c727371003300a04904197bf' != '957d3d9bb16a7616b47ec09434facd007221dc98d4e7be19e85b0cacb573815b'
+- 7b6c46ee63ef38c5da6ab07b8af5ad2d1bcad806c727371003300a04904197bf
++ 957d3d9bb16a7616b47ec09434facd007221dc98d4e7be19e85b0cacb573815b
+
+
+======================================================================
+FAIL: test_driver_wiring_with_actual_message_semantics (test_rh_target_oracle.OracleTests.test_driver_wiring_with_actual_message_semantics) (source='checks/Logic/Counterexamples/PositivityIsNotVanishing.lean', exit_code=1, extra='', error='')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_rh_target_oracle.py", line 245, in test_driver_wiring_with_actual_message_semantics
+    namespace["run"](source, expected_failure=True)
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/check_rh_target.py", line 51, in run
+    process = subprocess.run(argv, cwd=ROOT, env=env, capture_output=True, text=True, timeout=600)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_rh_target_oracle.py", line 234, in fake_run
+    self.assertEqual(argv[:6], ["pinned-lean", "--trust=0", "--memory=4096", "--threads=1", "-DwarningAsError=true", "--json"])
+AssertionError: Lists differ: ['pin[77 chars]e', '/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0[90 chars]ean'] != ['pin[77 chars]e', '--json']
+
+First differing element 5:
+'/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0[89 chars]lean'
+'--json'
+
+  ['pinned-lean',
+   '--trust=0',
+   '--memory=4096',
+   '--threads=1',
+   '-DwarningAsError=true',
+-  '/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0000gn/T/rh-oracle-fixture-zxgpgo6h/checks/Logic/Counterexamples/PositivityIsNotVanishing.lean']
++  '--json']
+
+======================================================================
+FAIL: test_driver_wiring_with_actual_message_semantics (test_rh_target_oracle.OracleTests.test_driver_wiring_with_actual_message_semantics) (source='checks/Logic/Counterexamples/PositivityIsNotVanishing.lean', exit_code=-9, extra='', error='')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_rh_target_oracle.py", line 248, in test_driver_wiring_with_actual_message_semantics
+    with self.assertRaises(RuntimeError):namespace["run"](source, expected_failure=True)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/check_rh_target.py", line 51, in run
+    process = subprocess.run(argv, cwd=ROOT, env=env, capture_output=True, text=True, timeout=600)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_rh_target_oracle.py", line 234, in fake_run
+    self.assertEqual(argv[:6], ["pinned-lean", "--trust=0", "--memory=4096", "--threads=1", "-DwarningAsError=true", "--json"])
+AssertionError: Lists differ: ['pin[77 chars]e', '/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0[90 chars]ean'] != ['pin[77 chars]e', '--json']
+
+First differing element 5:
+'/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0[89 chars]lean'
+'--json'
+
+  ['pinned-lean',
+   '--trust=0',
+   '--memory=4096',
+   '--threads=1',
+   '-DwarningAsError=true',
+-  '/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0000gn/T/rh-oracle-fixture-qn1xwcls/checks/Logic/Counterexamples/PositivityIsNotVanishing.lean']
++  '--json']
+
+======================================================================
+FAIL: test_driver_wiring_with_actual_message_semantics (test_rh_target_oracle.OracleTests.test_driver_wiring_with_actual_message_semantics) (source='checks/Logic/Counterexamples/PositivityIsNotVanishing.lean', exit_code=1, extra='warning: wrong error\n', error='')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_rh_target_oracle.py", line 248, in test_driver_wiring_with_actual_message_semantics
+    with self.assertRaises(RuntimeError):namespace["run"](source, expected_failure=True)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/check_rh_target.py", line 51, in run
+    process = subprocess.run(argv, cwd=ROOT, env=env, capture_output=True, text=True, timeout=600)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_rh_target_oracle.py", line 234, in fake_run
+    self.assertEqual(argv[:6], ["pinned-lean", "--trust=0", "--memory=4096", "--threads=1", "-DwarningAsError=true", "--json"])
+AssertionError: Lists differ: ['pin[77 chars]e', '/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0[90 chars]ean'] != ['pin[77 chars]e', '--json']
+
+First differing element 5:
+'/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0[89 chars]lean'
+'--json'
+
+  ['pinned-lean',
+   '--trust=0',
+   '--memory=4096',
+   '--threads=1',
+   '-DwarningAsError=true',
+-  '/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0000gn/T/rh-oracle-fixture-tofdh1an/checks/Logic/Counterexamples/PositivityIsNotVanishing.lean']
++  '--json']
+
+======================================================================
+FAIL: test_driver_wiring_with_actual_message_semantics (test_rh_target_oracle.OracleTests.test_driver_wiring_with_actual_message_semantics) (source='checks/Logic/Counterexamples/PositivityIsNotVanishing.lean', exit_code=1, extra='', error='unexpected stderr')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_rh_target_oracle.py", line 248, in test_driver_wiring_with_actual_message_semantics
+    with self.assertRaises(RuntimeError):namespace["run"](source, expected_failure=True)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/check_rh_target.py", line 51, in run
+    process = subprocess.run(argv, cwd=ROOT, env=env, capture_output=True, text=True, timeout=600)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_rh_target_oracle.py", line 234, in fake_run
+    self.assertEqual(argv[:6], ["pinned-lean", "--trust=0", "--memory=4096", "--threads=1", "-DwarningAsError=true", "--json"])
+AssertionError: Lists differ: ['pin[77 chars]e', '/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0[90 chars]ean'] != ['pin[77 chars]e', '--json']
+
+First differing element 5:
+'/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0[89 chars]lean'
+'--json'
+
+  ['pinned-lean',
+   '--trust=0',
+   '--memory=4096',
+   '--threads=1',
+   '-DwarningAsError=true',
+-  '/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0000gn/T/rh-oracle-fixture-u0wsfr8p/checks/Logic/Counterexamples/PositivityIsNotVanishing.lean']
++  '--json']
+
+======================================================================
+FAIL: test_driver_wiring_with_actual_message_semantics (test_rh_target_oracle.OracleTests.test_driver_wiring_with_actual_message_semantics) (source='checks/NumberTheory/Zeta/Riemann/ExcludedTrivialZero.lean', exit_code=1, extra='', error='')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_rh_target_oracle.py", line 245, in test_driver_wiring_with_actual_message_semantics
+    namespace["run"](source, expected_failure=True)
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/check_rh_target.py", line 51, in run
+    process = subprocess.run(argv, cwd=ROOT, env=env, capture_output=True, text=True, timeout=600)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_rh_target_oracle.py", line 234, in fake_run
+    self.assertEqual(argv[:6], ["pinned-lean", "--trust=0", "--memory=4096", "--threads=1", "-DwarningAsError=true", "--json"])
+AssertionError: Lists differ: ['pin[77 chars]e', '/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0[89 chars]ean'] != ['pin[77 chars]e', '--json']
+
+First differing element 5:
+'/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0[88 chars]lean'
+'--json'
+
+  ['pinned-lean',
+   '--trust=0',
+   '--memory=4096',
+   '--threads=1',
+   '-DwarningAsError=true',
+-  '/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0000gn/T/rh-oracle-fixture-u0p12wtt/checks/NumberTheory/Zeta/Riemann/ExcludedTrivialZero.lean']
++  '--json']
+
+======================================================================
+FAIL: test_driver_wiring_with_actual_message_semantics (test_rh_target_oracle.OracleTests.test_driver_wiring_with_actual_message_semantics) (source='checks/NumberTheory/Zeta/Riemann/ExcludedTrivialZero.lean', exit_code=-9, extra='', error='')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_rh_target_oracle.py", line 248, in test_driver_wiring_with_actual_message_semantics
+    with self.assertRaises(RuntimeError):namespace["run"](source, expected_failure=True)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/check_rh_target.py", line 51, in run
+    process = subprocess.run(argv, cwd=ROOT, env=env, capture_output=True, text=True, timeout=600)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_rh_target_oracle.py", line 234, in fake_run
+    self.assertEqual(argv[:6], ["pinned-lean", "--trust=0", "--memory=4096", "--threads=1", "-DwarningAsError=true", "--json"])
+AssertionError: Lists differ: ['pin[77 chars]e', '/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0[89 chars]ean'] != ['pin[77 chars]e', '--json']
+
+First differing element 5:
+'/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0[88 chars]lean'
+'--json'
+
+  ['pinned-lean',
+   '--trust=0',
+   '--memory=4096',
+   '--threads=1',
+   '-DwarningAsError=true',
+-  '/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0000gn/T/rh-oracle-fixture-utjtkqoy/checks/NumberTheory/Zeta/Riemann/ExcludedTrivialZero.lean']
++  '--json']
+
+======================================================================
+FAIL: test_driver_wiring_with_actual_message_semantics (test_rh_target_oracle.OracleTests.test_driver_wiring_with_actual_message_semantics) (source='checks/NumberTheory/Zeta/Riemann/ExcludedTrivialZero.lean', exit_code=1, extra='warning: wrong error\n', error='')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_rh_target_oracle.py", line 248, in test_driver_wiring_with_actual_message_semantics
+    with self.assertRaises(RuntimeError):namespace["run"](source, expected_failure=True)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/check_rh_target.py", line 51, in run
+    process = subprocess.run(argv, cwd=ROOT, env=env, capture_output=True, text=True, timeout=600)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_rh_target_oracle.py", line 234, in fake_run
+    self.assertEqual(argv[:6], ["pinned-lean", "--trust=0", "--memory=4096", "--threads=1", "-DwarningAsError=true", "--json"])
+AssertionError: Lists differ: ['pin[77 chars]e', '/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0[89 chars]ean'] != ['pin[77 chars]e', '--json']
+
+First differing element 5:
+'/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0[88 chars]lean'
+'--json'
+
+  ['pinned-lean',
+   '--trust=0',
+   '--memory=4096',
+   '--threads=1',
+   '-DwarningAsError=true',
+-  '/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0000gn/T/rh-oracle-fixture-pi1yq0j8/checks/NumberTheory/Zeta/Riemann/ExcludedTrivialZero.lean']
++  '--json']
+
+======================================================================
+FAIL: test_driver_wiring_with_actual_message_semantics (test_rh_target_oracle.OracleTests.test_driver_wiring_with_actual_message_semantics) (source='checks/NumberTheory/Zeta/Riemann/ExcludedTrivialZero.lean', exit_code=1, extra='', error='unexpected stderr')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_rh_target_oracle.py", line 248, in test_driver_wiring_with_actual_message_semantics
+    with self.assertRaises(RuntimeError):namespace["run"](source, expected_failure=True)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/check_rh_target.py", line 51, in run
+    process = subprocess.run(argv, cwd=ROOT, env=env, capture_output=True, text=True, timeout=600)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_rh_target_oracle.py", line 234, in fake_run
+    self.assertEqual(argv[:6], ["pinned-lean", "--trust=0", "--memory=4096", "--threads=1", "-DwarningAsError=true", "--json"])
+AssertionError: Lists differ: ['pin[77 chars]e', '/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0[89 chars]ean'] != ['pin[77 chars]e', '--json']
+
+First differing element 5:
+'/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0[88 chars]lean'
+'--json'
+
+  ['pinned-lean',
+   '--trust=0',
+   '--memory=4096',
+   '--threads=1',
+   '-DwarningAsError=true',
+-  '/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0000gn/T/rh-oracle-fixture-o9egpqmr/checks/NumberTheory/Zeta/Riemann/ExcludedTrivialZero.lean']
++  '--json']
+
+======================================================================
+FAIL: test_dependency_hashes (test_source_hermite_bridge.ActualSource.test_dependency_hashes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/test_source_hermite_bridge.py", line 143, in test_dependency_hashes
+    for name,sha in expected.items():self.assertEqual(hashlib.sha256((Path(__file__).parent/name).read_bytes()).hexdigest(),sha)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '7b6c46ee63ef38c5da6ab07b8af5ad2d1bcad806c727371003300a04904197bf' != '957d3d9bb16a7616b47ec09434facd007221dc98d4e7be19e85b0cacb573815b'
+- 7b6c46ee63ef38c5da6ab07b8af5ad2d1bcad806c727371003300a04904197bf
++ 957d3d9bb16a7616b47ec09434facd007221dc98d4e7be19e85b0cacb573815b
+
+
+----------------------------------------------------------------------
+Ran 1012 tests in 48.919s
+
+FAILED (failures=51, errors=1)
+{
+  "actual_record_count": 0,
+  "declared_record_total": 215,
+  "family_count": 16,
+  "identity_coverage": {
+    "exact": false,
+    "missing": null,
+    "unexpected": null
+  },
+  "proof_acceptance": "not-established",
+  "revision": "554b2000eb0ddcaa5e38cc30812a1741c3c826b224ddf0e032eb7460229cc8fb",
+  "schema": "math-cache-taxonomy-v1",
+  "statistical_algorithms": "not-implemented"
+}

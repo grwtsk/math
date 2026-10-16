@@ -1,0 +1,66 @@
+{
+  "entries": [
+    {
+      "formal_statement": null,
+      "id": "IUT-III-3.11",
+      "journal_locator_reported_by_LANA": "2021 pp.573–580",
+      "prerequisites": [
+        "initial Theta-data",
+        "log-theta lattice",
+        "log-shells",
+        "pilot objects",
+        "Kummer isomorphisms",
+        "Ind1/Ind2/Ind3"
+      ],
+      "region": "PDF pp.153–160",
+      "source_id": "iut-3-author-manuscript",
+      "status": "located_not_fully_translated",
+      "title": "Multiradial Algorithms via LGP-Monoids/Frobenioids"
+    },
+    {
+      "formal_statement": "Source claims −|logTheta| is real and >=−|logq|, with |logq|>0; Theta uses holomorphic hull of union of possible images under Ind1/Ind2/Ind3 while q does not.",
+      "id": "IUT-III-3.12",
+      "journal_locator_reported_by_LANA": "2021 pp.597–598",
+      "prerequisites": [
+        "Theorem 3.11",
+        "Definition 3.8(i)",
+        "Remark 3.9.5(i)",
+        "normalizations in Remark 3.1.1/Proposition 3.9",
+        "Step (xi) comparison"
+      ],
+      "region": "PDF pp.173–174 statement; proof pp.175–186",
+      "source_id": "iut-3-author-manuscript",
+      "status": "selected_statement_located; source-correspondence_and_proof_open"
+    },
+    {
+      "formal_statement": null,
+      "id": "IUT-IV-1.10",
+      "prerequisites": [
+        "IUT III Corollary 3.12",
+        "initial Theta-data",
+        "specified good reduction",
+        "specified torsion extensions and field models",
+        "discriminant/conductor/Tate-degree normalizations"
+      ],
+      "region": "PDF pp.22–24statement, proof pp.24–31",
+      "source_id": "iut-4-author-manuscript",
+      "status": "hypotheses_selected; full_constants_and_quantifiers_open"
+    },
+    {
+      "formal_statement": null,
+      "id": "IUT-IV-to-abc",
+      "prerequisites": [
+        "Theorem 1.10",
+        "Belyi maps",
+        "Arithmetic elliptic curves in general position",
+        "uniform field degree and compact archimedean conditions",
+        "exceptional curve handling"
+      ],
+      "region": "Corollaries 2.2–2.3; source occurrence retained",
+      "source_id": "iut-4-author-manuscript",
+      "status": "unreconstructed"
+    }
+  ],
+  "journal_to_manuscript_identity": "not established; locators below explicitly refer to author manuscript snapshot unless stated otherwise",
+  "schema": "source-statement-map-v1"
+}

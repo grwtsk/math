@@ -36,8 +36,8 @@ intended negative use.
 
 The [source](../../../../GRWTSK/Analysis/MellinTransform/GaussianCoupledSeparation.lean),
 [positive controls](../../../../GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianCoupledSeparation.lean),
-[native receipt](../../../../evidence/Analysis/MellinTransform/gaussian-coupled-separation-checks-2026-10-15.json)
-and [integration record](../../../../evidence/Analysis/MellinTransform/gaussian-coupled-separation-integration-2026-10-15.json)
+[native receipt](../../../../.noeaaeue/evidence/Analysis/MellinTransform/gaussian-coupled-separation-checks-2026-10-15.json)
+and [integration record](../../../../.noeaaeue/evidence/Analysis/MellinTransform/gaussian-coupled-separation-integration-2026-10-15.json)
 bind exact fresh selected local sources and controls. The generic cutoff shares
 this analytic replay and its census is counted once. Pinned Lean 4.33.0 checks
 trust zero, fatal warnings and every owned declaration and transitive axiom,

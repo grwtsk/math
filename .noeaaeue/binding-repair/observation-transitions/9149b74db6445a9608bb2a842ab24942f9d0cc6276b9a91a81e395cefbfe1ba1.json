@@ -1,0 +1,40 @@
+{
+  "schema": "explicit-source-observation-transition-v1",
+  "created_at": "2026-10-16T02:24:10.778023+00:00",
+  "previous": {
+    "identity": "3807cff88aacc0b30b49d4e0013955352dc1e4b2e75ed0d9f5982093ab8b9e0b",
+    "sha256": "b0b46223da4aacd601fc69a7893faeb0cd86369da9a3ba2601b552a9d70e64ad"
+  },
+  "current": {
+    "identity": "9149b74db6445a9608bb2a842ab24942f9d0cc6276b9a91a81e395cefbfe1ba1",
+    "sha256": "c7db3451fdcf02e52a2a4a043937dd775463ae831522b509ab22cad5b2bf6df6"
+  },
+  "source_count": 839,
+  "added_paths": [
+    "GRWTSK/Analysis/Fourier/FiniteExponentialLayers.lean",
+    "GRWTSK/Analysis/Fourier/ZModBalancedPartition.lean",
+    "GRWTSK/Analysis/Fourier/ZModCharacterEnergy.lean",
+    "GRWTSK/Analysis/Fourier/ZModIndependentSelection.lean",
+    "GRWTSK/Analysis/Fourier/ZModPartitionEnergy.lean",
+    "GRWTSK/Analysis/Fourier/ZModSmallEnergySets.lean",
+    "GRWTSK/Analysis/Fourier/ZModSmallEnergySpectrum.lean",
+    "GRWTSK/Combinatorics/Sequences/BalancedPartitionSampling.lean",
+    "GRWTSK/Combinatorics/Sequences/CyclicSumsetGrowth.lean"
+  ],
+  "source_bytes_changed": [],
+  "historical_input_changes": {
+    ".noeaaeue/documentation/math-layout.json": {
+      "previous": {
+        "sha256": "f275221ee514db149d1aeaa79e8c57f9eef4dc5378f5200b4171914c6ba341fd",
+        "bytes": 3132916
+      },
+      "current": {
+        "sha256": "f389352e3b3250dafdf9911f0da204d0c5021692a39cc9d8b2e348b7cd5cdf4f",
+        "bytes": 3133555
+      }
+    }
+  },
+  "historical_acceptance_inherited": false,
+  "mathematical_admission": false,
+  "reason": "Explicit new observation of concurrent additions and historical metadata edits; previous observations preserved; no Lean or original receipt edits."
+}

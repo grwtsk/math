@@ -1,0 +1,10 @@
+{
+  "schema": "process-workflow-documentation-registration-v1",
+  "page": ".noeaaeue/documentation/current-validation-workflow.md",
+  "page_sha256": "d2460854121c6cc52796fff2543e1fb3a293d76ae83cb0626317f5f947363aa1",
+  "registration": {
+    "title": "Working with the current Lean repository",
+    "category": "how-to"
+  },
+  "scope": "Register the new current process how-to outside mathematical documentation; no source/proof/evidence status."
+}

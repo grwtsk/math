@@ -1,5 +1,6 @@
 # Finite chronological batches of stored prefix states
 
+
 Start with the existing stored `PrefixTableState.State`, and a finite
 chronological list of batches of actual rooted keyed occurrences. The runner
 uses `List.foldl` and the existing `State.update`. Its fixed-root subtype only
@@ -56,21 +57,23 @@ state's invariant is required.
 
 The [source](../../../../GRWTSK/Combinatorics/DirectedGraph/PrefixTableBatch.lean),
 [positive controls](../../../../GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableBatch.lean),
-[native receipt](../../../../evidence/Combinatorics/DirectedGraph/prefix-finite-batch-checks-2026-10-15.json)
-and [integration record](../../../../evidence/Combinatorics/DirectedGraph/prefix-finite-batch-integration-2026-10-15.json)
+[native receipt](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-finite-batch-checks-2026-10-15.json)
+and [integration record](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-finite-batch-integration-2026-10-15.json)
 bind fresh selected local sources and controls. Pinned Lean 4.33.0 checks trust
 zero, fatal warnings and every owned declaration and transitive axiom,
 allowing only `propext`, `Classical.choice` and `Quot.sound`. Clean pinned
 dependency objects are reused and fingerprinted; their sources and the whole
 umbrella are not rebuilt.
 
-The [durable decision](../../../../cache/decisions/finite-batch-prefix-state-v1.json)
+The [durable decision](../../../../.noeaaeue/cache/decisions/finite-batch-prefix-state-v1.json)
 records the mathematical choice and its boundaries. This result does not
 supply operational JSON, parser, hash, compression or filesystem refinement,
 automatic row criteria, or permission authority. Local source is MIT; named
 Lean/Mathlib contributors retain their terms and individual credit. Human
 direction: grwtsk contributors; formalization/checking: OpenAI Codex. Correlated
 model/source review is not independent validation.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

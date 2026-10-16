@@ -1,0 +1,44 @@
+{
+  "schema": "root-cleanup-moebius-path-validation-v1",
+  "recorded_at_utc": "2026-10-16T01:45:49.271797+00:00",
+  "scope": "Physical path and frozen process-input consistency only. Original receipt/log/manifest logical keys and hashes preserved. No mathematical admission or native proof acceptance.",
+  "results": [
+    {
+      "argv": [
+        "python3",
+        "-B",
+        ".noeaaeue/scripts/test_moebius_process_paths.py"
+      ],
+      "exit_code": 0,
+      "log": ".noeaaeue/root-cleanup/moebius-path-controls-1.log",
+      "log_sha256": "7a559f5f3b288fe7710f7d08453f712cd2e9ce60025f248acc51ca1c2ff5db00"
+    },
+    {
+      "argv": [
+        "python3",
+        "-O",
+        "-B",
+        ".noeaaeue/scripts/test_moebius_process_paths.py"
+      ],
+      "exit_code": 0,
+      "log": ".noeaaeue/root-cleanup/moebius-path-controls-2.log",
+      "log_sha256": "7a559f5f3b288fe7710f7d08453f712cd2e9ce60025f248acc51ca1c2ff5db00"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        ".noeaaeue/scripts/test_moebius_owner_census.py"
+      ],
+      "exit_code": 0,
+      "log": ".noeaaeue/root-cleanup/moebius-path-controls-3.log",
+      "log_sha256": "d0e68ef3f57cf28658fc80e874c6a10fc59f3b83098492df10d95eaae31a5339"
+    }
+  ],
+  "all_relocated_lean_driver_bytes_still_match_initial_manifest": true,
+  "known_preserved_baseline_limits": [
+    "Native all-library replay rejects exact LogarithmicGrowth candidate intake source drift.",
+    "Native audit self-test wrapper passes a historical raw source hash to the current JSON profile command.",
+    "Broader Moebius controls reference preexisting stale runtime source/profile hashes and a frozen helper source not included by their synthetic fixtures."
+  ]
+}

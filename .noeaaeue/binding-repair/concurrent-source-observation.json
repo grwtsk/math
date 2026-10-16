@@ -1,0 +1,59 @@
+{
+  "schema": "concurrent-mathematical-source-observation-v1",
+  "meaning": "Observed external source changes retained. The binding-repair team does not edit or reorganize GRWTSK/. Membership/byte drift is rejected by current gates.",
+  "changed_existing": [
+    {
+      "path": "GRWTSK/Combinatorics/Sequences/PartialSumCertificate.lean",
+      "initial_sha256": "5d5b183290c8c10ac726649961ee731f8766851372f2330b91aa30d840c0d0d9",
+      "observed_sha256": "dbeeb4bdc27d6e1d4bb1633f442343dcbc9c17dcc30969f9a076f3926f743d20",
+      "cause": "Concurrent mathematical worker; no writes by binding-repair team"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/Sequences/PrimeCyclicRearrangement.lean",
+      "initial_sha256": "9d6db397bd339232388e6758b6f852ac729a01eb2ab9b7bf9021eb26a69d4578",
+      "observed_sha256": "e6273e54a24c0ad7bd1da4fd9eb193f1d728479025099e22b70a5e3447d1dde5",
+      "cause": "Concurrent mathematical worker; no writes by binding-repair team"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystems/TransitionSystems/ModularCheckpoint.lean",
+      "initial_sha256": "0a20750b1facfa5a6f6220717ecfb9436b183ddd4804b0cb75e116c813d2ba09",
+      "observed_sha256": "7ef974d4d41d79dbc8ed0a121e2faf66e6a6cea610896b438d2db47e10d6cf99",
+      "cause": "Concurrent mathematical worker; no writes by binding-repair team"
+    },
+    {
+      "path": "GRWTSK.lean",
+      "initial_sha256": "8a211d7d749eefa07bf55ccc2170311acd380c8635bc761becdc2f11930fe303",
+      "observed_sha256": "e93288cf55c77a5a76b88f57a78dc58ad9514c7ee9473ead994326d73cda6bc5",
+      "cause": "Concurrent mathematical worker; no writes by binding-repair team"
+    }
+  ],
+  "added_paths": [
+    "GRWTSK/Analysis/Fourier/FiniteExponentialLayers.lean",
+    "GRWTSK/Analysis/Fourier/ZModBalancedPartition.lean",
+    "GRWTSK/Analysis/Fourier/ZModCharacterEnergy.lean",
+    "GRWTSK/Analysis/Fourier/ZModConcentratedFrequencies.lean",
+    "GRWTSK/Analysis/Fourier/ZModIndependentSelection.lean",
+    "GRWTSK/Analysis/Fourier/ZModPartitionEnergy.lean",
+    "GRWTSK/Analysis/Fourier/ZModSmallEnergySets.lean",
+    "GRWTSK/Analysis/Fourier/ZModSmallEnergySpectrum.lean",
+    "GRWTSK/Analysis/Fourier/ZModSubsetSumCompletion.lean",
+    "GRWTSK/Combinatorics/Sequences/BalancedPartitionSampling.lean",
+    "GRWTSK/Combinatorics/Sequences/CyclicSumsetGrowth.lean",
+    "GRWTSK/NumberTheory/ArithmeticFunctions/CoprimeDivisorFilter.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/MomentMissingCoprimality.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/MomentMissingCutoff.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/MomentToABC.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/MomentUnsignedMoebius.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/SectorMissingAdditiveCutoff.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/SectorMissingPositiveDivisor.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/SectorToABC.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/SectorUnscaledThirdCoordinate.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/SectorWrongFloorCutoff.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Positive/DivisorSectorReindexing.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Positive/Moments.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/DivisorSectorReindexing.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/MomentReindexing.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Moments.lean"
+  ],
+  "mathematical_acceptance": false
+}

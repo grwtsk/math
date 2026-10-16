@@ -1,0 +1,197 @@
+.........
+======================================================================
+FAIL: test_driver_wiring_with_actual_message_semantics (test_rh_target_oracle.OracleTests) (source='checks/Logic/Counterexamples/PositivityIsNotVanishing.lean', exit_code=1, extra='', error='')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/root-cleanup/originals/scripts/test_rh_target_oracle.py", line 245, in test_driver_wiring_with_actual_message_semantics
+    namespace["run"](source, expected_failure=True)
+  File "/Users/local/Desktop/math/.noeaaeue/root-cleanup/originals/scripts/check_rh_target.py", line 51, in run
+    process = subprocess.run(argv, cwd=ROOT, env=env, capture_output=True, text=True, timeout=600)
+  File "/Users/local/Desktop/math/.noeaaeue/root-cleanup/originals/scripts/test_rh_target_oracle.py", line 234, in fake_run
+    self.assertEqual(argv[:6], ["pinned-lean", "--trust=0", "--memory=4096", "--threads=1", "-DwarningAsError=true", "--json"])
+AssertionError: Lists differ: ['pin[77 chars]e', '/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0[90 chars]ean'] != ['pin[77 chars]e', '--json']
+
+First differing element 5:
+'/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0[89 chars]lean'
+'--json'
+
+  ['pinned-lean',
+   '--trust=0',
+   '--memory=4096',
+   '--threads=1',
+   '-DwarningAsError=true',
+-  '/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0000gn/T/rh-oracle-fixture-qybsb_eh/checks/Logic/Counterexamples/PositivityIsNotVanishing.lean']
++  '--json']
+
+======================================================================
+FAIL: test_driver_wiring_with_actual_message_semantics (test_rh_target_oracle.OracleTests) (source='checks/Logic/Counterexamples/PositivityIsNotVanishing.lean', exit_code=-9, extra='', error='')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/root-cleanup/originals/scripts/test_rh_target_oracle.py", line 248, in test_driver_wiring_with_actual_message_semantics
+    with self.assertRaises(RuntimeError):namespace["run"](source, expected_failure=True)
+  File "/Users/local/Desktop/math/.noeaaeue/root-cleanup/originals/scripts/check_rh_target.py", line 51, in run
+    process = subprocess.run(argv, cwd=ROOT, env=env, capture_output=True, text=True, timeout=600)
+  File "/Users/local/Desktop/math/.noeaaeue/root-cleanup/originals/scripts/test_rh_target_oracle.py", line 234, in fake_run
+    self.assertEqual(argv[:6], ["pinned-lean", "--trust=0", "--memory=4096", "--threads=1", "-DwarningAsError=true", "--json"])
+AssertionError: Lists differ: ['pin[77 chars]e', '/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0[90 chars]ean'] != ['pin[77 chars]e', '--json']
+
+First differing element 5:
+'/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0[89 chars]lean'
+'--json'
+
+  ['pinned-lean',
+   '--trust=0',
+   '--memory=4096',
+   '--threads=1',
+   '-DwarningAsError=true',
+-  '/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0000gn/T/rh-oracle-fixture-dh0cy59r/checks/Logic/Counterexamples/PositivityIsNotVanishing.lean']
++  '--json']
+
+======================================================================
+FAIL: test_driver_wiring_with_actual_message_semantics (test_rh_target_oracle.OracleTests) (source='checks/Logic/Counterexamples/PositivityIsNotVanishing.lean', exit_code=1, extra='warning: wrong error\n', error='')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/root-cleanup/originals/scripts/test_rh_target_oracle.py", line 248, in test_driver_wiring_with_actual_message_semantics
+    with self.assertRaises(RuntimeError):namespace["run"](source, expected_failure=True)
+  File "/Users/local/Desktop/math/.noeaaeue/root-cleanup/originals/scripts/check_rh_target.py", line 51, in run
+    process = subprocess.run(argv, cwd=ROOT, env=env, capture_output=True, text=True, timeout=600)
+  File "/Users/local/Desktop/math/.noeaaeue/root-cleanup/originals/scripts/test_rh_target_oracle.py", line 234, in fake_run
+    self.assertEqual(argv[:6], ["pinned-lean", "--trust=0", "--memory=4096", "--threads=1", "-DwarningAsError=true", "--json"])
+AssertionError: Lists differ: ['pin[77 chars]e', '/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0[90 chars]ean'] != ['pin[77 chars]e', '--json']
+
+First differing element 5:
+'/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0[89 chars]lean'
+'--json'
+
+  ['pinned-lean',
+   '--trust=0',
+   '--memory=4096',
+   '--threads=1',
+   '-DwarningAsError=true',
+-  '/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0000gn/T/rh-oracle-fixture-umq607if/checks/Logic/Counterexamples/PositivityIsNotVanishing.lean']
++  '--json']
+
+======================================================================
+FAIL: test_driver_wiring_with_actual_message_semantics (test_rh_target_oracle.OracleTests) (source='checks/Logic/Counterexamples/PositivityIsNotVanishing.lean', exit_code=1, extra='', error='unexpected stderr')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/root-cleanup/originals/scripts/test_rh_target_oracle.py", line 248, in test_driver_wiring_with_actual_message_semantics
+    with self.assertRaises(RuntimeError):namespace["run"](source, expected_failure=True)
+  File "/Users/local/Desktop/math/.noeaaeue/root-cleanup/originals/scripts/check_rh_target.py", line 51, in run
+    process = subprocess.run(argv, cwd=ROOT, env=env, capture_output=True, text=True, timeout=600)
+  File "/Users/local/Desktop/math/.noeaaeue/root-cleanup/originals/scripts/test_rh_target_oracle.py", line 234, in fake_run
+    self.assertEqual(argv[:6], ["pinned-lean", "--trust=0", "--memory=4096", "--threads=1", "-DwarningAsError=true", "--json"])
+AssertionError: Lists differ: ['pin[77 chars]e', '/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0[90 chars]ean'] != ['pin[77 chars]e', '--json']
+
+First differing element 5:
+'/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0[89 chars]lean'
+'--json'
+
+  ['pinned-lean',
+   '--trust=0',
+   '--memory=4096',
+   '--threads=1',
+   '-DwarningAsError=true',
+-  '/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0000gn/T/rh-oracle-fixture-vt7kdwww/checks/Logic/Counterexamples/PositivityIsNotVanishing.lean']
++  '--json']
+
+======================================================================
+FAIL: test_driver_wiring_with_actual_message_semantics (test_rh_target_oracle.OracleTests) (source='checks/NumberTheory/Zeta/Riemann/ExcludedTrivialZero.lean', exit_code=1, extra='', error='')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/root-cleanup/originals/scripts/test_rh_target_oracle.py", line 245, in test_driver_wiring_with_actual_message_semantics
+    namespace["run"](source, expected_failure=True)
+  File "/Users/local/Desktop/math/.noeaaeue/root-cleanup/originals/scripts/check_rh_target.py", line 51, in run
+    process = subprocess.run(argv, cwd=ROOT, env=env, capture_output=True, text=True, timeout=600)
+  File "/Users/local/Desktop/math/.noeaaeue/root-cleanup/originals/scripts/test_rh_target_oracle.py", line 234, in fake_run
+    self.assertEqual(argv[:6], ["pinned-lean", "--trust=0", "--memory=4096", "--threads=1", "-DwarningAsError=true", "--json"])
+AssertionError: Lists differ: ['pin[77 chars]e', '/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0[89 chars]ean'] != ['pin[77 chars]e', '--json']
+
+First differing element 5:
+'/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0[88 chars]lean'
+'--json'
+
+  ['pinned-lean',
+   '--trust=0',
+   '--memory=4096',
+   '--threads=1',
+   '-DwarningAsError=true',
+-  '/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0000gn/T/rh-oracle-fixture-br4xn1cp/checks/NumberTheory/Zeta/Riemann/ExcludedTrivialZero.lean']
++  '--json']
+
+======================================================================
+FAIL: test_driver_wiring_with_actual_message_semantics (test_rh_target_oracle.OracleTests) (source='checks/NumberTheory/Zeta/Riemann/ExcludedTrivialZero.lean', exit_code=-9, extra='', error='')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/root-cleanup/originals/scripts/test_rh_target_oracle.py", line 248, in test_driver_wiring_with_actual_message_semantics
+    with self.assertRaises(RuntimeError):namespace["run"](source, expected_failure=True)
+  File "/Users/local/Desktop/math/.noeaaeue/root-cleanup/originals/scripts/check_rh_target.py", line 51, in run
+    process = subprocess.run(argv, cwd=ROOT, env=env, capture_output=True, text=True, timeout=600)
+  File "/Users/local/Desktop/math/.noeaaeue/root-cleanup/originals/scripts/test_rh_target_oracle.py", line 234, in fake_run
+    self.assertEqual(argv[:6], ["pinned-lean", "--trust=0", "--memory=4096", "--threads=1", "-DwarningAsError=true", "--json"])
+AssertionError: Lists differ: ['pin[77 chars]e', '/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0[89 chars]ean'] != ['pin[77 chars]e', '--json']
+
+First differing element 5:
+'/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0[88 chars]lean'
+'--json'
+
+  ['pinned-lean',
+   '--trust=0',
+   '--memory=4096',
+   '--threads=1',
+   '-DwarningAsError=true',
+-  '/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0000gn/T/rh-oracle-fixture-ec4rjvl2/checks/NumberTheory/Zeta/Riemann/ExcludedTrivialZero.lean']
++  '--json']
+
+======================================================================
+FAIL: test_driver_wiring_with_actual_message_semantics (test_rh_target_oracle.OracleTests) (source='checks/NumberTheory/Zeta/Riemann/ExcludedTrivialZero.lean', exit_code=1, extra='warning: wrong error\n', error='')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/root-cleanup/originals/scripts/test_rh_target_oracle.py", line 248, in test_driver_wiring_with_actual_message_semantics
+    with self.assertRaises(RuntimeError):namespace["run"](source, expected_failure=True)
+  File "/Users/local/Desktop/math/.noeaaeue/root-cleanup/originals/scripts/check_rh_target.py", line 51, in run
+    process = subprocess.run(argv, cwd=ROOT, env=env, capture_output=True, text=True, timeout=600)
+  File "/Users/local/Desktop/math/.noeaaeue/root-cleanup/originals/scripts/test_rh_target_oracle.py", line 234, in fake_run
+    self.assertEqual(argv[:6], ["pinned-lean", "--trust=0", "--memory=4096", "--threads=1", "-DwarningAsError=true", "--json"])
+AssertionError: Lists differ: ['pin[77 chars]e', '/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0[89 chars]ean'] != ['pin[77 chars]e', '--json']
+
+First differing element 5:
+'/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0[88 chars]lean'
+'--json'
+
+  ['pinned-lean',
+   '--trust=0',
+   '--memory=4096',
+   '--threads=1',
+   '-DwarningAsError=true',
+-  '/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0000gn/T/rh-oracle-fixture-jhz9nn7r/checks/NumberTheory/Zeta/Riemann/ExcludedTrivialZero.lean']
++  '--json']
+
+======================================================================
+FAIL: test_driver_wiring_with_actual_message_semantics (test_rh_target_oracle.OracleTests) (source='checks/NumberTheory/Zeta/Riemann/ExcludedTrivialZero.lean', exit_code=1, extra='', error='unexpected stderr')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/root-cleanup/originals/scripts/test_rh_target_oracle.py", line 248, in test_driver_wiring_with_actual_message_semantics
+    with self.assertRaises(RuntimeError):namespace["run"](source, expected_failure=True)
+  File "/Users/local/Desktop/math/.noeaaeue/root-cleanup/originals/scripts/check_rh_target.py", line 51, in run
+    process = subprocess.run(argv, cwd=ROOT, env=env, capture_output=True, text=True, timeout=600)
+  File "/Users/local/Desktop/math/.noeaaeue/root-cleanup/originals/scripts/test_rh_target_oracle.py", line 234, in fake_run
+    self.assertEqual(argv[:6], ["pinned-lean", "--trust=0", "--memory=4096", "--threads=1", "-DwarningAsError=true", "--json"])
+AssertionError: Lists differ: ['pin[77 chars]e', '/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0[89 chars]ean'] != ['pin[77 chars]e', '--json']
+
+First differing element 5:
+'/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0[88 chars]lean'
+'--json'
+
+  ['pinned-lean',
+   '--trust=0',
+   '--memory=4096',
+   '--threads=1',
+   '-DwarningAsError=true',
+-  '/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0000gn/T/rh-oracle-fixture-yfmu0zwm/checks/NumberTheory/Zeta/Riemann/ExcludedTrivialZero.lean']
++  '--json']
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.016s
+
+FAILED (failures=8)

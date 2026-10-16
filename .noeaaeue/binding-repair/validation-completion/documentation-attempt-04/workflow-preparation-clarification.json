@@ -1,0 +1,23 @@
+{
+  "schema": "workflow-create-only-preparation-clarification-v1",
+  "created_utc": "2026-10-16T04:14:40.558189+00:00",
+  "status": "guide-edited-documentation-validation-pending-native-lane",
+  "page": ".noeaaeue/documentation/current-validation-workflow.md",
+  "before_sha256": "09f4ed747b7341b8bbca88b17ce8fe2e54d690ae9b6e60c758ac17963c9bbb8a",
+  "after_sha256": "a058aad62178eca8caa5fae1cffb80fcc016c151e22db2489f685e811a5fecdc",
+  "preserved_preimage": ".noeaaeue/binding-repair/originals/validation-completion/documentation-attempt-04/.noeaaeue/documentation/current-validation-workflow.md",
+  "reviewed_proposal": ".noeaaeue/binding-repair/validation-completion/workflow-owner-preparation-proposal.json",
+  "reviewed_proposal_sha256": "968426dca1dcfe0369b5c7490376f572ea605b95179913dbeeb033f52a6320ec",
+  "guide_absent_from_public_and_application_bound_readsets": true,
+  "replay_bound_inputs_checked": 517,
+  "replay_bound_input_drift": {},
+  "bound_inputs_changed": false,
+  "verification_constraint": "Unmodified documentation render/check/layout CLIs require Lake/Lean census calls. Parent directed deferral until application native lane is explicitly released; no custom census reuse runner. No native or Lake calls performed here.",
+  "pending_checks": [
+    "render",
+    "documentation normal/-O",
+    "layout normal/-O",
+    "109tests normal/-O"
+  ],
+  "prior_v3_and_preservation_audit_untouched": true
+}

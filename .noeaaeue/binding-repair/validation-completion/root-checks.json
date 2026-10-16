@@ -1,0 +1,52 @@
+{
+  "schema": "validation-completion-root-checks-v1",
+  "python": ".noeaaeue/.local/root-cleanup/python-env/bin/python3",
+  "checks": [
+    {
+      "name": "script-unit-tests-final",
+      "tests": 1059,
+      "exit_code": 0,
+      "log": ".noeaaeue/binding-repair/validation-completion/script-unit-tests-final.log",
+      "scope": "Final layout guard code and current process checker Python suite"
+    },
+    {
+      "name": "process-unit-tests",
+      "tests": 660,
+      "exit_code": 0,
+      "log": ".noeaaeue/binding-repair/validation-completion/process-unit-tests.log"
+    },
+    {
+      "name": "repository-conformance-self-test",
+      "exit_code": 0,
+      "normal_log": ".noeaaeue/binding-repair/validation-completion/conformance-self-test.log",
+      "optimized_log": ".noeaaeue/binding-repair/validation-completion/conformance-self-test-optimized.log"
+    },
+    {
+      "name": "current-conformance-binding-controls",
+      "tests": 4,
+      "exit_code": 0,
+      "normal_log": ".noeaaeue/binding-repair/validation-completion/current-binding-pin-controls.log",
+      "optimized_log": ".noeaaeue/binding-repair/validation-completion/current-binding-pin-controls-optimized.log"
+    },
+    {
+      "name": "historical-pin-controls",
+      "tests": 5,
+      "exit_code": 0,
+      "normal_log": ".noeaaeue/binding-repair/validation-completion/historical-pin-controls.log",
+      "optimized_log": ".noeaaeue/binding-repair/validation-completion/historical-pin-controls-optimized.log"
+    },
+    {
+      "name": "quartic-historical-pin-status",
+      "expected_exit_code": 2,
+      "actual_exit_code": 2,
+      "outcome": "stale-historical-pins-replay-refused",
+      "report": ".noeaaeue/binding-repair/validation-completion/quartic-pin-status.json"
+    },
+    {
+      "name": "Lean-repository-input-boundary",
+      "exit_code": 0,
+      "log": ".noeaaeue/binding-repair/validation-completion/lean-repository-inputs.log"
+    }
+  ],
+  "mathematical_acceptance": "These controls are separate from fresh native proof replay."
+}

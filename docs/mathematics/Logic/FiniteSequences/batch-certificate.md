@@ -1,5 +1,6 @@
 # Certificates for incrementally decoded batches
 
+
 Let `certificate : Certificate Key Payload` contain an actual proof of its
 predicate on its exact entries. With decidable payload equality, assume
 
@@ -41,14 +42,14 @@ attempt to use only the old proof for the new history.
 
 The [source](../../../../GRWTSK/Logic/FiniteSequences/BatchCertificate.lean),
 [positive consumers](../../../../GRWTSK/Logic/FiniteSequences/Checks/Positive/BatchCertificate.lean)
-and [native receipt](../../../../evidence/Logic/FiniteSequences/batch-certificate-checks-2026-10-15.json)
+and [native receipt](../../../../.noeaaeue/evidence/Logic/FiniteSequences/batch-certificate-checks-2026-10-15.json)
 bind exact bytes and the complete local import closure. Replay uses pinned
 Lean 4.33.0, trust zero, fatal warnings and a complete owned-declaration and
 transitive-axiom audit. Only `propext`, `Classical.choice` and `Quot.sound`
 are permitted. Pinned dependency objects are reused and fingerprinted.
 
-The [integration record](../../../../evidence/Logic/FiniteSequences/batch-certificate-integration-2026-10-15.json)
-and [source review](../../../../evidence/Logic/FiniteSequences/batch-certificate-source-review-2026-10-15.json)
+The [integration record](../../../../.noeaaeue/evidence/Logic/FiniteSequences/batch-certificate-integration-2026-10-15.json)
+and [source review](../../../../.noeaaeue/evidence/Logic/FiniteSequences/batch-certificate-source-review-2026-10-15.json)
 retain contribution roles, antecedents and correspondence limits. A refinement
 to Python, JSON, cryptographic hashes, byte serialization, compression or
 filesystem transactions remains open. No complexity bound, whole-library
@@ -57,6 +58,8 @@ acceptance or independent validation is claimed.
 Human mathematical direction: grwtsk contributors. Formalization and checking
 assistance: OpenAI Codex. Local source is MIT; Lean and Mathlib retain upstream
 authors and licenses. No mathematical novelty is claimed.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

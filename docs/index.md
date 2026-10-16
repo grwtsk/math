@@ -1,59 +1,58 @@
 # Mathematical documentation
 
-Browse by mathematical area, then by object. Start with [the least-prime example](start/least-prime.md), [verification](how-to/verify.md), or the [selected result catalog](reference/results.md).
+Browse by mathematical area, then by object. Start with [the least-prime example](start/least-prime.md) or the [selected result catalog](reference/results.md).
 
-12 areas · 125 object guides · 53 documented object groups · 780 Lean source modules.
+12 areas · 141 object guides · 59 documented object groups · 859 Lean source modules.
 
-At least 5923 source declaration commands, including 4243 theorem/lemma commands, across 669 parsed Lean source modules; 111 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
+At least 6710 source declaration commands, including 4791 theorem/lemma commands, across 748 parsed Lean source modules; 111 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
 
 | Area index | Object guides | Object groups | Lean modules | Intake records | Selected families |
 |---|---:|---:|---:|---:|---:|
 | [Algebra](mathematics/Algebra/index.md) | 4 | 2 | 20 | 1 | 0 |
-| [Analysis](mathematics/Analysis/index.md) | 37 | 16 | 298 | 39 | 1 |
-| [Combinatorics](mathematics/Combinatorics/index.md) | 19 | 2 | 59 | 0 | 1 |
+| [Analysis](mathematics/Analysis/index.md) | 41 | 18 | 314 | 39 | 1 |
+| [Combinatorics](mathematics/Combinatorics/index.md) | 22 | 2 | 72 | 0 | 1 |
 | [Data structures](mathematics/Data/index.md) | 0 | 0 | 1 | 0 | 0 |
-| [Dynamical systems](mathematics/DynamicalSystems/index.md) | 2 | 2 | 16 | 0 | 0 |
+| [Dynamical systems](mathematics/DynamicalSystems/index.md) | 3 | 2 | 17 | 0 | 0 |
 | [GroupTheory](mathematics/GroupTheory/index.md) | 0 | 0 | 4 | 0 | 0 |
-| [Linear algebra](mathematics/LinearAlgebra/index.md) | 13 | 9 | 57 | 3 | 0 |
+| [Linear algebra](mathematics/LinearAlgebra/index.md) | 14 | 10 | 63 | 3 | 0 |
 | [Logic](mathematics/Logic/index.md) | 10 | 3 | 65 | 3 | 0 |
 | [Measure theory](mathematics/MeasureTheory/index.md) | 0 | 0 | 6 | 1 | 0 |
-| [Number theory](mathematics/NumberTheory/index.md) | 32 | 14 | 221 | 19 | 1 |
+| [Number theory](mathematics/NumberTheory/index.md) | 39 | 17 | 264 | 19 | 1 |
 | [Order](mathematics/Order/index.md) | 1 | 1 | 8 | 2 | 0 |
 | [Spectral theory](mathematics/Spectral/index.md) | 7 | 4 | 25 | 0 | 0 |
-| **Total (12 areas)** | **125** | **53** | **780** | **68** | **3** |
+| **Total (12 areas)** | **141** | **59** | **859** | **68** | **3** |
 
 ## Lean source command totals
 
 | Area | Declaration commands | Theorem/lemma commands | Parsed modules | Unparsed modules |
 |---|---:|---:|---:|---:|
 | [Algebra](mathematics/Algebra/index.md) | ≥ 63 | ≥ 48 | 18 | 2 |
-| [Analysis](mathematics/Analysis/index.md) | ≥ 1702 | ≥ 1391 | 247 | 51 |
-| [Combinatorics](mathematics/Combinatorics/index.md) | 1005 | 599 | 59 | 0 |
+| [Analysis](mathematics/Analysis/index.md) | ≥ 1917 | ≥ 1571 | 263 | 51 |
+| [Combinatorics](mathematics/Combinatorics/index.md) | 1319 | 796 | 72 | 0 |
 | [Data structures](mathematics/Data/index.md) | 3 | 0 | 1 | 0 |
-| [Dynamical systems](mathematics/DynamicalSystems/index.md) | ≥ 382 | ≥ 230 | 15 | 1 |
+| [Dynamical systems](mathematics/DynamicalSystems/index.md) | ≥ 462 | ≥ 281 | 16 | 1 |
 | [GroupTheory](mathematics/GroupTheory/index.md) | 6 | 0 | 4 | 0 |
-| [Linear algebra](mathematics/LinearAlgebra/index.md) | ≥ 179 | ≥ 114 | 48 | 9 |
+| [Linear algebra](mathematics/LinearAlgebra/index.md) | ≥ 221 | ≥ 138 | 54 | 9 |
 | [Logic](mathematics/Logic/index.md) | ≥ 556 | ≥ 296 | 60 | 5 |
 | [Measure theory](mathematics/MeasureTheory/index.md) | 78 | 67 | 6 | 0 |
-| [Number theory](mathematics/NumberTheory/index.md) | ≥ 1767 | ≥ 1368 | 181 | 40 |
+| [Number theory](mathematics/NumberTheory/index.md) | ≥ 1903 | ≥ 1464 | 224 | 40 |
 | [Order](mathematics/Order/index.md) | 90 | 56 | 8 | 0 |
 | [Spectral theory](mathematics/Spectral/index.md) | ≥ 92 | ≥ 74 | 22 | 3 |
-| **Total** | **≥ 5923** | **≥ 4243** | **669** | **111** |
+| **Total** | **≥ 6710** | **≥ 4791** | **748** | **111** |
 
 `≥` marks a lower bound: unparsed files have unavailable counts. The theorem/lemma column is included in the declaration column.
 
 ## Inventory and evidence scope
 
-The maintained documentation contains 160 pages, including area indexes, guides and reference material. Object guides link 121 distinct primary sources. The archive intake records 68 sources; the selected catalog covers 3 families. These are separate inventories and must not be added together.
+The maintained documentation contains 178 pages, including area indexes, guides and reference material. Object guides link 137 distinct primary sources. The archive intake records 68 sources; the selected catalog covers 3 families. These are separate inventories and must not be added together.
 
 | Object-guide evidence label | Pages |
 |---|---:|
-| `fresh-selected` | 62 |
-| `historical` | 1 |
-| `historical-source-description` | 54 |
-| `literature-and-historical-source-description` | 3 |
-| `written-argument` | 5 |
-| **Total object guides** | **125** |
+| `fresh-selected` | 50 |
+| `historical-source-description` | 22 |
+| `source-relocated-unreplayed` | 66 |
+| `written-argument` | 3 |
+| **Total object guides** | **141** |
 
 Evidence labels describe the exact page/source scope. A fresh selected check is not whole-library acceptance; a written or historical description is not a new proof verdict. Source-module counts include audit interfaces and unverified candidates. No accepted-theorem, proof or originality total is inferred.
 
@@ -61,8 +60,8 @@ Pinned inputs: Lean `leanprover/lean4:v4.33.0`; Mathlib `db584cd6d46c92f209a44c0
 
 [Count definitions](reference/library-pages.md#count-definitions) · [Structured inventory](reference/library-summary.json) · [Archive source candidates](reference/source-intake.md).
 
-## Reading and verification
+## Reading mathematics
 
-[Evidence roles](explanation/evidence.md) · [Documentation standard](explanation/documentation.md) · [Source layout](reference/source-layout.md) · [Verification interfaces](reference/verification-interfaces.md) · [Provenance and historical limits](reference/documentation-history.md).
+[Least-prime tutorial](start/least-prime.md) · [Selected result catalog](reference/results.md) · [Mathematical terminology](reference/mathematical-terminology.md).
 
-Navigation and inventory checks establish structural consistency, not mathematical acceptance.
+Structural consistency does not establish theorem admission or complete library coverage.

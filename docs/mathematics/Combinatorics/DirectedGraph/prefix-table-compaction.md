@@ -1,5 +1,6 @@
 # Compaction and remapping of rooted prefix tables
 
+
 Start with an actual stored rooted prefix-table state satisfying its
 [structural invariant](prefix-table-state.md). Compaction derives successful
 real-row decoding and rooted validity, recovers the actual keyed rooted
@@ -52,8 +53,8 @@ input; equal raw trace words do not identify different root contexts.
 
 The [source](../../../../GRWTSK/Combinatorics/DirectedGraph/PrefixTableCompaction.lean),
 [positive controls](../../../../GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableCompaction.lean),
-[native receipt](../../../../evidence/Combinatorics/DirectedGraph/prefix-table-compaction-checks-2026-10-15.json)
-and [integration record](../../../../evidence/Combinatorics/DirectedGraph/prefix-table-compaction-integration-2026-10-15.json)
+[native receipt](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-table-compaction-checks-2026-10-15.json)
+and [integration record](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-table-compaction-integration-2026-10-15.json)
 bind exact fresh selected local sources and controls. Pinned Lean 4.33.0
 checks trust zero, fatal warnings and the complete owned-declaration/
 transitive-axiom census, allowing only `propext`, `Classical.choice` and
@@ -66,6 +67,8 @@ Correlated source/model review is not independent validation; no novelty,
 whole-library or RH claim is made. Local source is MIT; imported Lean and
 Mathlib retain their individual credits and Apache-2.0 terms. Human direction:
 grwtsk contributors; formalization/checking: OpenAI Codex.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

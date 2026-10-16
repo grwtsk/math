@@ -1,0 +1,23 @@
+{
+  "schema": "documentation-binding-repair-attempt-failures-v1",
+  "scope": "Retained failed current structural attempts; none is mathematical acceptance.",
+  "attempts": [
+    {
+      "operation": "check_documentation.py --render",
+      "outcome": "rejected before projection",
+      "reason": "navigation inventory input changed during render; first generic diagnostic did not enumerate paths"
+    },
+    {
+      "operation": "check_documentation.py --render after diagnostic refinement",
+      "outcome": "rejected before projection",
+      "reason": "navigation inventory input changed during render: GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Moments.lean"
+    },
+    {
+      "operation": "check_documentation.py --render after current link repair",
+      "outcome": "rejected before projection",
+      "reason": "path changed while read: GRWTSK/LinearAlgebra/SchrodingerTransfer.lean",
+      "subsequent_observation": "Current source SHA25f93a03bb8e1b5df2f73c782160ed9f356f592c6cca4e56c92cde7fd974969d still matched frozen readset; ancestor metadata race remains possible."
+    }
+  ],
+  "preservation": "Historical .noeaaeue/evidence and prior root-cleanup receipts were not rewritten."
+}

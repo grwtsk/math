@@ -1,5 +1,6 @@
 # Revision of indexed dictionaries
 
+
 Fix an ordered list of key–index references. Assume that the old and new
 dictionaries give exactly the same optional lookup at every referenced index:
 \[
@@ -39,7 +40,7 @@ theorem. Neither counterexample depends on a probabilistic test.
 The [source](../../../../GRWTSK/Logic/FiniteSequences/DictionaryRevision.lean)
 reuses the [exact codec](indexed-dictionary.md). Its
 [positive consumers](../../../../GRWTSK/Logic/FiniteSequences/Checks/Positive/DictionaryRevision.lean)
-and [fresh selected receipt](../../../../evidence/Logic/FiniteSequences/indexed-dictionary-checks-2026-10-15.json)
+and [fresh selected receipt](../../../../.noeaaeue/evidence/Logic/FiniteSequences/indexed-dictionary-checks-2026-10-15.json)
 bind the actual source, controls and owned-declaration audit. The pinned Lean
 4.33.0 replay uses trust zero and fatal warnings, allowing only `propext`,
 `Classical.choice` and `Quot.sound`. Dependency objects are reused and
@@ -47,12 +48,14 @@ fingerprinted. Whole-repository and independent-review acceptance are not
 claimed.
 
 The finite-list theorems supply exact mathematical revision conditions. The
-[operational cache](../../../reference/content-cache.md) separately tests its
+[operational cache](../../../../.noeaaeue/documentation/reference/content-cache.md) separately tests its
 hashes, serialization, compression and file operations; a verified refinement
 from that Python adapter to these definitions remains open.
 
 Human mathematical direction: grwtsk contributors. Formalization assistance:
 OpenAI Codex. Local source is MIT; Mathlib retains upstream credit and licensing.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

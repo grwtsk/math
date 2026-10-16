@@ -1,0 +1,20 @@
+{
+  "schema": "root-cleanup-concurrent-source-additions-v1",
+  "files": [
+    {
+      "path": "GRWTSK/Analysis/Fourier/ZModSubsetSum.lean",
+      "sha256": "b44dd4068c5f0b7012d40b010536fcbb90a2711b9c8c8caf6689bdcc125bf07f",
+      "state": "Concurrent addition after initial byte inventory; not created or edited by root cleanup workers; retained"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/Sequences/DisjointTranspositions.lean",
+      "sha256": "b5053ed826ac19979142b7c908b35cee2b7e97ba07d4a4bdaef26cf62a6f5409",
+      "state": "Concurrent addition after initial byte inventory; not created or edited by root cleanup workers; retained"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/Sequences/PartialSumOrdering.lean",
+      "sha256": "1dcfd5996bd3455f77a207a8d5cfdd06fb1f321bb680f7eb67365884d12d6168",
+      "state": "Concurrent addition after initial byte inventory; not created or edited by root cleanup workers; retained"
+    }
+  ]
+}

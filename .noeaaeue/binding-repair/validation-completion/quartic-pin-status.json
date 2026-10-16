@@ -1,0 +1,63 @@
+{
+  "schema": "historical-source-pin-observation-v1",
+  "status": "stale",
+  "mathematical_acceptance": false,
+  "pins": [
+    {
+      "logical_path": "evidence/algebra/polynomial/quartic/quartic-enclosure-audit-20261014.lean.txt",
+      "current_path": ".noeaaeue/evidence/algebra/polynomial/quartic/quartic-enclosure-audit-20261014.lean.txt",
+      "expected_sha256": "c700728b40a0ba21a9e4d076117e79644a886f353e7e0b44ed1b8e21c094385b",
+      "observed_sha256": "c700728b40a0ba21a9e4d076117e79644a886f353e7e0b44ed1b8e21c094385b",
+      "status": "matched",
+      "observation": "file"
+    },
+    {
+      "logical_path": "evidence/algebra/polynomial/quartic/quartic-enclosure-candidates-20261014.patch",
+      "current_path": ".noeaaeue/evidence/algebra/polynomial/quartic/quartic-enclosure-candidates-20261014.patch",
+      "expected_sha256": "7cf4b170496012d0d41cb76ebc5f061bd6bc73b6745b82decc54d4a50c7cb7c2",
+      "observed_sha256": "7cf4b170496012d0d41cb76ebc5f061bd6bc73b6745b82decc54d4a50c7cb7c2",
+      "status": "matched",
+      "observation": "file"
+    },
+    {
+      "logical_path": "evidence/algebra/polynomial/quartic/quartic-enclosure-verify-exact-20261014.py.txt",
+      "current_path": ".noeaaeue/evidence/algebra/polynomial/quartic/quartic-enclosure-verify-exact-20261014.py.txt",
+      "expected_sha256": "c98da7656b33898afaf7a3c41b0aede46f79471c6ec20c6cb55065930019538c",
+      "observed_sha256": "c98da7656b33898afaf7a3c41b0aede46f79471c6ec20c6cb55065930019538c",
+      "status": "matched",
+      "observation": "file"
+    },
+    {
+      "logical_path": "scripts/phase_aware_zeta_cover.py",
+      "current_path": ".noeaaeue/scripts/phase_aware_zeta_cover.py",
+      "expected_sha256": "7b55e9db8c6f143ad3351371685c4f4645323fa044dabe211f52b6c232cea15a",
+      "observed_sha256": "7b55e9db8c6f143ad3351371685c4f4645323fa044dabe211f52b6c232cea15a",
+      "status": "matched",
+      "observation": "file"
+    },
+    {
+      "logical_path": "scripts/reflected_zeta_cover.py",
+      "current_path": ".noeaaeue/scripts/reflected_zeta_cover.py",
+      "expected_sha256": "9811a697087482c64bb6341e84ae38ccc762480e34f863b003195892bfc4636c",
+      "observed_sha256": "9811a697087482c64bb6341e84ae38ccc762480e34f863b003195892bfc4636c",
+      "status": "matched",
+      "observation": "file"
+    },
+    {
+      "logical_path": "scripts/zero_region_tracker.py",
+      "current_path": ".noeaaeue/scripts/zero_region_tracker.py",
+      "expected_sha256": "957d3d9bb16a7616b47ec09434facd007221dc98d4e7be19e85b0cacb573815b",
+      "observed_sha256": "7b6c46ee63ef38c5da6ab07b8af5ad2d1bcad806c727371003300a04904197bf",
+      "status": "stale",
+      "observation": "file"
+    },
+    {
+      "logical_path": "scripts/zeta_region_atlas.py",
+      "current_path": ".noeaaeue/scripts/zeta_region_atlas.py",
+      "expected_sha256": "b04761ba005e1fababe00a4571b0a1d7ba3a00e04974098e69351ed4e33a0800",
+      "observed_sha256": "ae5b67cd4df0fc5b2e3259d421508d582f2c384d5fcc50e17081d3722beaef4e",
+      "status": "stale",
+      "observation": "file"
+    }
+  ]
+}

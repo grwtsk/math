@@ -1,0 +1,246 @@
+E.............................E....E.......................................EE..................................................................................E........................E......................................................expansion rejected: [Errno 17] File exists: '/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0000gn/T/tmp178f3s6d/out'
+...........................F.FF...................................E...E.....EEE
+======================================================================
+ERROR: test_arithmetic_quotient_sections (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_arithmetic_quotient_sections
+Traceback (most recent call last):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/Users/local/Desktop/math/.noeaaeue/tests/test_arithmetic_quotient_sections.py", line 8, in <module>
+    import sympy as S
+ModuleNotFoundError: No module named 'sympy'
+
+
+======================================================================
+ERROR: test_symbolic_lagrange_and_hankel (test_finite_hermite_isolation.IsolationTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/tests/test_finite_hermite_isolation.py", line 195, in test_symbolic_lagrange_and_hankel
+    import sympy as s
+ModuleNotFoundError: No module named 'sympy'
+
+======================================================================
+ERROR: test_gaussian_weil_compactification (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_gaussian_weil_compactification
+Traceback (most recent call last):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/Users/local/Desktop/math/.noeaaeue/tests/test_gaussian_weil_compactification.py", line 9, in <module>
+    import sympy as s
+ModuleNotFoundError: No module named 'sympy'
+
+
+======================================================================
+ERROR: test_laguerre_centered_atoms (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_laguerre_centered_atoms
+Traceback (most recent call last):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/Users/local/Desktop/math/.noeaaeue/tests/test_laguerre_centered_atoms.py", line 7, in <module>
+    import sympy as sp
+ModuleNotFoundError: No module named 'sympy'
+
+
+======================================================================
+ERROR: test_laguerre_dirichlet_bridge (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_laguerre_dirichlet_bridge
+Traceback (most recent call last):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/Users/local/Desktop/math/.noeaaeue/tests/test_laguerre_dirichlet_bridge.py", line 7, in <module>
+    import sympy as S
+ModuleNotFoundError: No module named 'sympy'
+
+
+======================================================================
+ERROR: test_log_cell_relaxation (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_log_cell_relaxation
+Traceback (most recent call last):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/Users/local/Desktop/math/.noeaaeue/tests/test_log_cell_relaxation.py", line 8, in <module>
+    import sympy as sp
+ModuleNotFoundError: No module named 'sympy'
+
+
+======================================================================
+ERROR: test_screw_hodge_transfer (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_screw_hodge_transfer
+Traceback (most recent call last):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/Users/local/Desktop/math/.noeaaeue/tests/test_screw_hodge_transfer.py", line 11, in <module>
+    import sympy as S
+ModuleNotFoundError: No module named 'sympy'
+
+
+======================================================================
+ERROR: test_archive_verified_without_extraction (test_verify_weil_power_source.ReplayControls)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/tests/test_verify_weil_power_source.py", line 40, in test_archive_verified_without_extraction
+    m=R.archive_members()
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/verify_weil_power_source.py", line 68, in archive_members
+    if (root/p).read_bytes()!=out[p]:raise ValueError('original active copy changed')
+KeyError: '.noeaaeue/scripts/weil_compact_power.py'
+
+======================================================================
+ERROR: test_exact_input (test_verify_weil_power_source.ReplayControls)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/tests/test_verify_weil_power_source.py", line 38, in test_exact_input
+    R.check_inputs({'x':{'bytes':7,'sha256':R.digest(b'correct')}},p)
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/verify_weil_power_source.py", line 44, in check_inputs
+    if not f.is_file() or any(q.is_symlink() for q in [f,*f.parents]):raise ValueError('missing or symlink input')
+ValueError: missing or symlink input
+
+======================================================================
+ERROR: test_weil_compact_power (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_weil_compact_power
+Traceback (most recent call last):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/Users/local/Desktop/math/.noeaaeue/tests/test_weil_compact_power.py", line 15, in <module>
+    import sympy as s
+ModuleNotFoundError: No module named 'sympy'
+
+
+======================================================================
+ERROR: test_weil_prime_discrepancy (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_weil_prime_discrepancy
+Traceback (most recent call last):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/Users/local/Desktop/math/.noeaaeue/tests/test_weil_prime_discrepancy.py", line 5, in <module>
+    import sympy as S
+ModuleNotFoundError: No module named 'sympy'
+
+
+======================================================================
+ERROR: test_weil_spectral_lower_bounds (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_weil_spectral_lower_bounds
+Traceback (most recent call last):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/Users/local/Desktop/math/.noeaaeue/tests/test_weil_spectral_lower_bounds.py", line 8, in <module>
+    import sympy as s
+ModuleNotFoundError: No module named 'sympy'
+
+
+======================================================================
+FAIL: test_concurrent_positive_and_negative_controls_preserve_candidate_scope (test_taxonomy_tree.TaxonomyTreeTests) (role='positive-check')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/tests/test_taxonomy_tree.py", line 201, in test_concurrent_positive_and_negative_controls_preserve_candidate_scope
+    self.assertEqual(findings, [])
+AssertionError: Lists differ: [{'code': 'invalid-overlay-candidate-provi[290 chars]le'}] != []
+
+First list contains 2 additional elements.
+First extra element 0:
+{'code': 'invalid-overlay-candidate-provider', 'path': 'GRWTSK/Algebra/Checks/Positive/Fixture.lean', 'message': 'source absent from working tree'}
+
++ []
+- [{'code': 'invalid-overlay-candidate-provider',
+-   'message': 'source absent from working tree',
+-   'path': 'GRWTSK/Algebra/Checks/Positive/Fixture.lean'},
+-  {'code': 'invalid-candidate-path',
+-   'message': 'Checks candidates require an exact isolated overlay occurrence '
+-              'with preserved role',
+-   'path': 'GRWTSK/Algebra/Checks/Positive/Fixture.lean'}]
+
+======================================================================
+FAIL: test_concurrent_positive_and_negative_controls_preserve_candidate_scope (test_taxonomy_tree.TaxonomyTreeTests) (role='negative-control')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/tests/test_taxonomy_tree.py", line 201, in test_concurrent_positive_and_negative_controls_preserve_candidate_scope
+    self.assertEqual(findings, [])
+AssertionError: Lists differ: [{'code': 'invalid-overlay-candidate-provi[290 chars]le'}] != []
+
+First list contains 2 additional elements.
+First extra element 0:
+{'code': 'invalid-overlay-candidate-provider', 'path': 'GRWTSK/Algebra/Checks/Negative/Fixture.lean', 'message': 'source absent from working tree'}
+
++ []
+- [{'code': 'invalid-overlay-candidate-provider',
+-   'message': 'source absent from working tree',
+-   'path': 'GRWTSK/Algebra/Checks/Negative/Fixture.lean'},
+-  {'code': 'invalid-candidate-path',
+-   'message': 'Checks candidates require an exact isolated overlay occurrence '
+-              'with preserved role',
+-   'path': 'GRWTSK/Algebra/Checks/Negative/Fixture.lean'}]
+
+======================================================================
+FAIL: test_dangling_policy_symlink_rejects (test_taxonomy_tree.TaxonomyTreeTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/tests/test_taxonomy_tree.py", line 132, in test_dangling_policy_symlink_rejects
+    self.assertTrue(M.taxonomy_tree_policy(self.root)[1])
+AssertionError: [] is not true
+
+======================================================================
+FAIL: test_exact_external_policy_loads (test_taxonomy_tree.TaxonomyTreeTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/tests/test_taxonomy_tree.py", line 101, in test_exact_external_policy_loads
+    self.assertEqual(M.taxonomy_tree_policy(self.root), (policy, []))
+AssertionError: Tuples differ: (None, []) != ({'required_directories': ['', 'Algebra', [574 chars], [])
+
+First differing element 0:
+None
+{'required_directories': ['', 'Algebra', [569 chars]5fd'}
+
+Diff is 680 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_exact_noe_negative_control_can_remain_isolated_candidate (test_taxonomy_tree.TaxonomyTreeTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/tests/test_taxonomy_tree.py", line 158, in test_exact_noe_negative_control_can_remain_isolated_candidate
+    self.assertEqual(findings, [])
+AssertionError: Lists differ: [{'code': 'invalid-overlay-candidate-provi[290 chars]le'}] != []
+
+First list contains 2 additional elements.
+First extra element 0:
+{'code': 'invalid-overlay-candidate-provider', 'path': 'GRWTSK/Algebra/Checks/Negative/Fixture.lean', 'message': 'source absent from working tree'}
+
++ []
+- [{'code': 'invalid-overlay-candidate-provider',
+-   'message': 'source absent from working tree',
+-   'path': 'GRWTSK/Algebra/Checks/Negative/Fixture.lean'},
+-  {'code': 'invalid-candidate-path',
+-   'message': 'Checks candidates require an exact isolated overlay occurrence '
+-              'with preserved role',
+-   'path': 'GRWTSK/Algebra/Checks/Negative/Fixture.lean'}]
+
+----------------------------------------------------------------------
+Ran 319 tests in 1.586s
+
+FAILED (failures=5, errors=12)
+{"profile": "TAXONOMY-APPEND-1", "status": "PROPOSAL_WRITTEN", "admission": "NOT_ESTABLISHED"}

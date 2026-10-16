@@ -48,4 +48,4 @@ Linked primary-source scope: 19 source declaration commands, including 6 theorem
 
 ## Sources and verification
 
-[Selected catalog](../../reference/results.md) · [Archive source candidates](../../reference/source-intake.md) · [Verification interfaces](../../reference/verification-interfaces.md).
+[Selected catalog](../../reference/results.md) · [Archive source candidates](../../reference/source-intake.md).
