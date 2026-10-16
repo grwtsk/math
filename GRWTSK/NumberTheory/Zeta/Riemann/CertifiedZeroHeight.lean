@@ -188,13 +188,16 @@ def certifiedCount
 end DisjointCertifiedFamily
 
 /-- A bounded total-zero count certificate, together with the fact that the certified
-critical-line family does not exceed that total. -/
+critical-line family does not exceed that total. The `ExactTotal` predicate carries the
+external Turing theorem or other exact zero-count proof. -/
 structure TuringCountCertificate
     {Index Source Jet Transport Residual : Type*}
     [Fintype Index]
-    (family : DisjointCertifiedFamily Index Source Jet Transport Residual) where
+    (family : DisjointCertifiedFamily Index Source Jet Transport Residual)
+    (ExactTotal : ℝ → ℕ → Prop) where
   height : ℝ
   totalCount : ℕ
+  exact_total : ExactTotal height totalCount
   certified_le_total : family.certifiedCount ≤ totalCount
 
 namespace TuringCountCertificate
@@ -202,21 +205,22 @@ namespace TuringCountCertificate
 variable {Index Source Jet Transport Residual : Type*}
   [Fintype Index]
   {family : DisjointCertifiedFamily Index Source Jet Transport Residual}
+  {ExactTotal : ℝ → ℕ → Prop}
 
 /-- The unresolved bounded count gap. -/
 def gap
-    (certificate : TuringCountCertificate family) : ℕ :=
+    (certificate : TuringCountCertificate family ExactTotal) : ℕ :=
   certificate.totalCount - family.certifiedCount
 
 /-- Completeness up to the certified height means exact equality of multiplicity counts. -/
 def Complete
-    (certificate : TuringCountCertificate family) : Prop :=
+    (certificate : TuringCountCertificate family ExactTotal) : Prop :=
   family.certifiedCount = certificate.totalCount
 
 /-- The unresolved gap vanishes exactly when the certified critical-line count equals the
 Turing total count. -/
 theorem gap_eq_zero_iff_complete
-    (certificate : TuringCountCertificate family) :
+    (certificate : TuringCountCertificate family ExactTotal) :
     certificate.gap = 0 ↔ certificate.Complete := by
   constructor
   · intro hgap
@@ -229,7 +233,7 @@ theorem gap_eq_zero_iff_complete
 
 /-- The natural-number gap is nonnegative. -/
 theorem gap_nonnegative
-    (certificate : TuringCountCertificate family) :
+    (certificate : TuringCountCertificate family ExactTotal) :
     0 ≤ certificate.gap :=
   Nat.zero_le _
 
