@@ -13,6 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Mathematical layout check
+        run: python3 -B .noeaaeue/scripts/check_math_layout.py
       - uses: leanprover/lean-action@v1
         with:
           build-args: "--wfail"
