@@ -1,0 +1,10 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "prefix-finite-batch-formal",
+  "owner": "indexed_dictionary",
+  "at": "2026-10-16T00:29:12.147517+00:00",
+  "kind": "native-lock-acquired",
+  "source": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableBatch.lean",
+  "source_sha256": "0ea2df761313eba5d470dad3b89e5644c4958aaadb00f537ef0f2bf6467d7afe",
+  "guard_competing_jobs": []
+}

@@ -413,3 +413,21 @@ prior local annulus, fixed-window and root-weight source credits. Human
 direction: grwtsk contributors; adaptation, formalization and checking: OpenAI
 Codex. Correlated model/source review is not independent validation. Actual
 completed physical rows, ideals/Hecke/calibration and RH suppliers remain open.
+
+Compact-window finite support for actual ideal absolute norms
+------------------------------------------------------------
+GRWTSK/NumberTheory/Ideal/CompactNormSupport.lean retains Apache-2.0.
+Proof slices adapt openai/math@1581d4cbdd69a0faf34b2089614fe2a814316a6a,
+lean/OAI/NumberTheory/DirichletL/Arithmetic/IdealMobius.lean, compact-window and norm-triple
+finite-support lemmas (raw SHA256
+dd0ae071b0bdb5746fa6362de83aa86a4ee4462810a7fdbc72f0af95b5887675,
+Git blob 6c1098ed3f3018397fd965d6a250db7092e86de7).
+OpenAI remains the upstream project author; no individual header author was
+observed. LICENSES/OpenAI-Apache-2.0.txt retains project terms. Mathlib's actual
+Ideal.Norm.AbsNorm authors Anne Baanen and Alex J. Best retain their individual
+Apache-2.0 credit; compact cutoff and imported topology/algebra credits remain.
+Human direction: grwtsk contributors; adaptation, formalization and checking:
+OpenAI Codex. The theorem retains all explicit algebraic instances and uses
+actual ideal norms, with a concrete integer-ideal consumer. Actual Eisenstein
+ring instantiation, completed sums and RH suppliers remain open. Correlated
+model/source review is not independent validation.
