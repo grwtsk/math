@@ -58,6 +58,12 @@ OpenAI project credit, individual imported Mathlib credits and Apache-2.0 terms
 remain retained. Human direction: grwtsk contributors; adaptation/formalization
 and checking: OpenAI Codex. Correlated review is not independent validation.
 
+The separate [ideal-norm support result](../../NumberTheory/Ideal/compact-norm-support.md)
+now proves compact-window finite support for actual ideals over an explicitly
+specified Dedekind ring finite and free over the integers. Its integer-ideal
+consumer does not instantiate the original Eisenstein ring or supply completed
+physical rows and their common support for every frequency.
+
 Completed physical rows and common finite support, row majorants,
 ideal/Hecke/calibration suppliers, the original detector and RH remain open.
 No arithmetic, whole-library or operational cache refinement acceptance follows

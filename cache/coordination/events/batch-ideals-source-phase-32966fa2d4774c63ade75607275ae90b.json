@@ -1,0 +1,31 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "batch-ideals-source-scout",
+  "owner": "cache_taxonomy",
+  "at": "2026-10-16T00:29:07.524065+00:00",
+  "kind": "exact-phase-source-comparison",
+  "original_context": {
+    "path": ".local/batch-ideals-source-scout/5ca3a08525d84de086556415c0d0b6a5/review-context.json",
+    "sha256": "abbddddacb8978e4936a147db962f5e3175e1d213406c04b70517038f97a6c5f",
+    "bytes": 15835
+  },
+  "current_context": {
+    "path": ".local/batch-ideals-source-scout/5ca3a08525d84de086556415c0d0b6a5/review-context-r2.json",
+    "sha256": "706a2b91293692637ecbc92fef3165708c2f308244130e597b02fc64c3432cdb",
+    "bytes": 18181
+  },
+  "native_status": "NOT_RUN",
+  "finding": {
+    "primary_declaration": "FourierBridge.logPhase",
+    "primary_raw_line": 1188,
+    "body": "Complex.exp (((2*Real.pi*t*y:real):complex)*I)",
+    "local_source": {
+      "path": "GRWTSK/Analysis/MellinTransform/GaussianCoupledSeparation.lean",
+      "sha256": "904f3991a65106ee9c0a93f575ba536eec2645d64cff7ff3d9a16de8f389e6fc",
+      "bytes": 6522
+    },
+    "local_raw_line": 32,
+    "comparison": "Actual positive2pi phase bodies agree by source read. Source normTwistedSource=phase*W and local logPhaseTwist=W*phase differ only by complex multiplication commutativity. A native literal upstream-object correspondence theorem remains NOT_RUN; full polynomial-frequency Schwartz theorem is not transferred."
+  },
+  "preservation": "Previous defining-source gaps and source manifests remain historical; located byte/source comparison is not native admission or blanket theorem import."
+}

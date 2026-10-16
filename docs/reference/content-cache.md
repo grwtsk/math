@@ -254,6 +254,12 @@ derive the actual stored update equation from full typed histories. Injectivity
 preserves distinct prefix identities; appending rows does not supply their
 criteria or permission evidence.
 
+The [finite-batch runner](../mathematics/Combinatorics/DirectedGraph/prefix-finite-batch.md)
+and [durable decision](../../cache/decisions/finite-batch-prefix-state-v1.json)
+now formalize chronological repeated updates of the actual stored state.
+Semantic decoding consumes the initial invariant; ordered rows and repetitions
+remain distinct, and appended rows still require their own criteria.
+
 See [cache operations](../how-to/cache.md), the
 [taxonomy](../../cache/taxonomy.json), and the
 [integration evidence](../../evidence/Logic/FiniteSequences/cache-integration-2026-10-15.json).

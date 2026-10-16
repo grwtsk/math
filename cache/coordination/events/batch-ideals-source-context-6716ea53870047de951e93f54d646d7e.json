@@ -1,0 +1,29 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "batch-ideals-source-scout",
+  "owner": "cache_taxonomy",
+  "at": "2026-10-16T00:28:09.530649+00:00",
+  "kind": "primary-source-identities-and-context-ready",
+  "source_context": {
+    "path": ".local/batch-ideals-source-scout/5ca3a08525d84de086556415c0d0b6a5/review-context.json",
+    "sha256": "abbddddacb8978e4936a147db962f5e3175e1d213406c04b70517038f97a6c5f",
+    "bytes": 15835
+  },
+  "native_status": "NOT_RUN",
+  "newly_located": {
+    "ActualEisensteinCubic.O": {
+      "source": "lean/OAI/NumberTheory/DirichletL/GaussSum/FiniteFourier.lean",
+      "sha256": "0e8e4184de91161a75802e3a26abfd19a322dffa6441968bf9caeb25800b5d7c",
+      "git_blob": "06304e1efc036727b3fa27e37dd6a06ce0bf5e56",
+      "raw_line": 488
+    },
+    "CompletedHeight.normTwistedSource": {
+      "source": "lean/OAI/NumberTheory/DirichletL/RowCompletion/PolynomialHeight.lean",
+      "sha256": "e225c890d9f8601b6358ca1158be947ff459a010480fd4f3fc13749c978bebdb",
+      "git_blob": "3a6f4e7903d2e832e562687bccf13a2fce551aed",
+      "raw_line": 199
+    }
+  },
+  "correction_scope": "Defining source identities only; preserve every prior UNPROVIDED record. No original ring instance/admitted object/marked-sum/native acceptance inferred.",
+  "final_frozen_review_pending": true
+}

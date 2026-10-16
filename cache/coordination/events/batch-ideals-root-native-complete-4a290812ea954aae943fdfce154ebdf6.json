@@ -1,0 +1,51 @@
+{
+  "schema": "repository-agent-event-v1",
+  "at": "2026-10-16T00:31:37.617043+00:00",
+  "task": "batch-ideals-round",
+  "event": "fresh-selected-native-replay-completed",
+  "selected": [
+    {
+      "path": "evidence/Combinatorics/DirectedGraph/prefix-finite-batch-checks-2026-10-15.json",
+      "sha256": "f14a333549bf12cea47bb75d40ba80e9f77a1b8ba15c32c0716d3dc0d2dc62ca",
+      "outcome": "passed",
+      "owned": 898,
+      "modules": [
+        {
+          "declarations": 19,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableUpdateReindex"
+        },
+        {
+          "declarations": 27,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableBatch"
+        },
+        {
+          "declarations": 95,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableBatch"
+        }
+      ]
+    },
+    {
+      "path": "evidence/NumberTheory/Ideal/compact-norm-support-checks-2026-10-15.json",
+      "sha256": "012040ea57f92a753db9a7ae1e31d459ec7b114d6c34d3590fdcaf64abe36ebc",
+      "outcome": "passed",
+      "owned": 37,
+      "modules": [
+        {
+          "declarations": 3,
+          "module": "GRWTSK.NumberTheory.Ideal.CompactNormSupport"
+        },
+        {
+          "declarations": 13,
+          "module": "GRWTSK.Analysis.Calculus.CompactCutoff"
+        },
+        {
+          "declarations": 21,
+          "module": "GRWTSK.NumberTheory.Ideal.Checks.Positive.CompactNormSupport"
+        }
+      ]
+    }
+  ],
+  "native_children": "all author/root children exited; driver flock contexts released; competing_jobs empty",
+  "scope": "Complete owned/generated declaration/transitive-axiom audit, only standard3. Actual positive/counterproof consumers pass and sole intended negative each rejected. Reused clean pinned dependency objects fingerprinted; not cold rebuilt.",
+  "remote_actions": []
+}

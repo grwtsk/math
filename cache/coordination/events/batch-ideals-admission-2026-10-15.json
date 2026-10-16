@@ -1,0 +1,155 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "batch-ideals-round",
+  "event": "selected-native-acceptance-and-source-bound-revision-consumers",
+  "at": "2026-10-16T00:36:41.247532+00:00",
+  "selected": [
+    {
+      "source": {
+        "path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableBatch.lean",
+        "sha256": "eaa986de6b17e60b545b1e603ae42f0f1a9678bcecea9379a7198097787ef63f"
+      },
+      "native_receipt": {
+        "path": "evidence/Combinatorics/DirectedGraph/prefix-finite-batch-checks-2026-10-15.json",
+        "sha256": "f14a333549bf12cea47bb75d40ba80e9f77a1b8ba15c32c0716d3dc0d2dc62ca"
+      },
+      "owned_declarations_in_selected_closure": 898,
+      "selected_library_owned_count": 27,
+      "owned_modules": [
+        {
+          "declarations": 52,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding"
+        },
+        {
+          "declarations": 18,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences"
+        },
+        {
+          "declarations": 46,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.EdgeTrace"
+        },
+        {
+          "declarations": 21,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix"
+        },
+        {
+          "declarations": 34,
+          "module": "GRWTSK.Logic.FiniteSequences.IndexedDictionary"
+        },
+        {
+          "declarations": 33,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixInventory"
+        },
+        {
+          "declarations": 78,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.ParentTraceDictionary"
+        },
+        {
+          "declarations": 32,
+          "module": "GRWTSK.Logic.FiniteSequences.DictionaryRevision"
+        },
+        {
+          "declarations": 27,
+          "module": "GRWTSK.Logic.FiniteSequences.DecisionCertificate"
+        },
+        {
+          "declarations": 26,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.RootedTraceRevision"
+        },
+        {
+          "declarations": 20,
+          "module": "GRWTSK.Logic.FiniteSequences.IncrementalDictionary"
+        },
+        {
+          "declarations": 58,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.IncrementalPrefixTable"
+        },
+        {
+          "declarations": 87,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableState"
+        },
+        {
+          "declarations": 36,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCompaction"
+        },
+        {
+          "declarations": 85,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.RoleRelationTable"
+        },
+        {
+          "declarations": 60,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.RoleRelationReindex"
+        },
+        {
+          "declarations": 44,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableReindex"
+        },
+        {
+          "declarations": 19,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableUpdateReindex"
+        },
+        {
+          "declarations": 27,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableBatch"
+        },
+        {
+          "declarations": 95,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableBatch"
+        }
+      ],
+      "integration": {
+        "path": "evidence/Combinatorics/DirectedGraph/prefix-finite-batch-integration-2026-10-15.json",
+        "sha256": "9f5c7f8a00e41cdef9c541f9ec7b29df551c95a8c431dd8a961540847b82d1ca"
+      }
+    },
+    {
+      "source": {
+        "path": "GRWTSK/NumberTheory/Ideal/CompactNormSupport.lean",
+        "sha256": "8792ac4679bebdc78e0f466f4752501684c88c5e3ef58862121ccbabc64f3fb6"
+      },
+      "native_receipt": {
+        "path": "evidence/NumberTheory/Ideal/compact-norm-support-checks-2026-10-15.json",
+        "sha256": "012040ea57f92a753db9a7ae1e31d459ec7b114d6c34d3590fdcaf64abe36ebc"
+      },
+      "owned_declarations_in_selected_closure": 37,
+      "selected_library_owned_count": 3,
+      "owned_modules": [
+        {
+          "declarations": 3,
+          "module": "GRWTSK.NumberTheory.Ideal.CompactNormSupport"
+        },
+        {
+          "declarations": 13,
+          "module": "GRWTSK.Analysis.Calculus.CompactCutoff"
+        },
+        {
+          "declarations": 21,
+          "module": "GRWTSK.NumberTheory.Ideal.Checks.Positive.CompactNormSupport"
+        }
+      ],
+      "integration": {
+        "path": "evidence/NumberTheory/Ideal/compact-norm-support-integration-2026-10-15.json",
+        "sha256": "ed8c5b17998eccb332283a186f878cb8ab1ec1713c643548ebf1e2e33ad5e7e4"
+      }
+    }
+  ],
+  "cache_revision": "f1e2b9e6b21a377278497faf53dbb38c735649b054ec3bcd81d2fb5a6d374f95",
+  "frontier": {
+    "path": "cache/research/batch-ideals-frontier-2026-10-15.json",
+    "sha256": "a39ccc276699cbd6e7913abd2b78f613c7f65a2badcb8286a53e2bc1c89c7655"
+  },
+  "continuation": {
+    "path": "cache/coordination/continuations/2026-10-15-batch-ideals.json",
+    "sha256": "81ab22188eb4cf9fa95565ba81387f2de34e0bf92052759e48a51628ddbf37da"
+  },
+  "decision": {
+    "path": "cache/decisions/finite-batch-prefix-state-v1.json",
+    "sha256": "e1ed4b124a899105641b420082d1a42adb987db198b93cd54c33fd2e1dce6cfc"
+  },
+  "operational_consumer": {
+    "path": "evidence/Combinatorics/DirectedGraph/batch-ideals-prefix-consumer-2026-10-15.json",
+    "sha256": "8c126569380b90fd72deca62851207a3f66c7654a31046f064ed3a0d6c72e1d3"
+  },
+  "limits": "Exact selected mathematical contracts and bounded operational source custody remain separate; actual-ideal census countedonce. No independent model validation, runtime refinement, complete physical/arithmetic/RH acceptance or remote effect.",
+  "remote_actions": []
+}

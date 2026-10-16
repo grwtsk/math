@@ -1,0 +1,56 @@
+{
+  "schema": "bounded-replay-operational-controls-v1",
+  "at": "2026-10-16T00:32:37.797599+00:00",
+  "sources": [
+    {
+      "path": "scripts/check_prefix_table_batch.py",
+      "sha256": "6effed0892bf539198d20f289f30643ec70381053699264ba95dbf5fd48a1096"
+    },
+    {
+      "path": "scripts/check_ideal_compact_norm_support.py",
+      "sha256": "c04579252e90c9166b1037458881a395a2106920a96ca149b2ce941ff459c975"
+    },
+    {
+      "path": "scripts/test_batch_ideals_replay_guards.py",
+      "sha256": "4969b8b86ee2d4be9879e9d5dd6879cdff41e6055287065543ff0a046d107479"
+    },
+    {
+      "path": "scripts/check_math_trust.py",
+      "sha256": "069ca265038960243890b1c4e028637723ddc440854864a61648eb2b2fd99c9d"
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "scripts/test_batch_ideals_replay_guards.py"
+      ],
+      "exit_code": 0,
+      "log": {
+        "path": ".local/batch-ideals/root/replay-guards-normal.log",
+        "sha256": "8c0c710a9cad36089f960746fc1afcfeb546ed537958a35e6fe4ae372d08815c"
+      },
+      "output": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.038s\n\nOK\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "-O",
+        "scripts/test_batch_ideals_replay_guards.py"
+      ],
+      "exit_code": 0,
+      "log": {
+        "path": ".local/batch-ideals/root/replay-guards-optimized.log",
+        "sha256": "de1e4dc395dd332191f4ae068c290036f41ed19925cd4f3442e0901c2bdad22e"
+      },
+      "output": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.044s\n\nOK\n"
+    }
+  ],
+  "controls": [
+    "Two drivers times9 exact generated-object-family scenarios: unchanged accepted; main replacement/truncation/deletion, private replacement/deletion, extra server and main/private symlinks rejected.",
+    "Plain/coded diagnostics counted; actual negative compiles require exactly one intended type mismatch."
+  ],
+  "limits": "Bounded Python operational tests only; no Lean proof of hashes/filesystem/diagnostic parser/runtime codec/JSON/zlib/IO refinement. Correlated review is not independent validation."
+}

@@ -4,27 +4,28 @@
 
 | Inventory | Count |
 |---|---:|
-| Object guides | 17 |
+| Object guides | 18 |
 | Documented object groups | 2 |
-| Distinct primary sources linked | 16 |
-| Lean source modules | 53 |
+| Distinct primary sources linked | 17 |
+| Lean source modules | 56 |
 | Archive intake records | 0 |
 | Selected catalog families | 1 |
 
 These counts measure documentation and source coverage. They do not count accepted theorems or establish that every source module is documented or checked. [Definitions and limits](../../reference/library-pages.md#count-definitions).
 
-849 source declaration commands, including 510 theorem/lemma commands, across 53 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+941 source declaration commands, including 556 theorem/lemma commands, across 56 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
 ## DirectedGraph
 
-15 object guides · 15 distinct linked primary source files.
+16 object guides · 16 distinct linked primary source files.
 
-Linked primary-source scope: 379 source declaration commands, including 259 theorem/lemma commands, across 15 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+Linked primary-source scope: 401 source declaration commands, including 276 theorem/lemma commands, across 16 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
 - [A finite inventory of complete history prefixes](DirectedGraph/prefix-inventory.md).
 - [Certified revision of rooted trace dictionaries](DirectedGraph/rooted-trace-revision.md).
 - [Compaction and remapping of rooted prefix tables](DirectedGraph/prefix-table-compaction.md).
 - [Endpoint sections and incomparable ancestors](DirectedGraph/endpoint-section.md).
+- [Finite chronological batches of stored prefix states](DirectedGraph/prefix-finite-batch.md).
 - [Incremental prefix-state updates and relation reindexing](DirectedGraph/prefix-update-reindex.md).
 - [Occurrence reachability and complete trace prefixes](DirectedGraph/occurrence-prefix.md).
 - [Ordered occurrences of directed paths](DirectedGraph/path-occurrences.md).

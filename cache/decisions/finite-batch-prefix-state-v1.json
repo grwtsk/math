@@ -1,0 +1,39 @@
+{
+  "schema": "repository-design-decision-v1",
+  "id": "finite-batch-prefix-state-v1",
+  "at": "2026-10-16T00:32:37.816406+00:00",
+  "previous_record": {
+    "path": "cache/decisions/incremental-state-reindex-v1.json",
+    "sha256": "bb6caf1b826d5d3c6011db06176afde1dfb8d1e10675536bab352ba849b7c79b"
+  },
+  "choice": "Run actual chronological finite batches through the existing stored State.update and prove exact decoded ordered-row accumulation, literal retention and relation-transport naturality. Retain the actual initial structural invariant for semantic decoding, including empty batches.",
+  "premises": [
+    "RootedState is only the fixed-root subtype {s:existing State // s.root=root}; no replacement State or path datatype. Explicit noncomputable step invokes actual State.update on actual occurrence rows transported through the retained root equality. runAt is actual List.foldl(step root); run exposes the resulting existing State.",
+    "run_root retains the actual initial root, including empty batches; run_nil and run_cons are exact equations for the actual runner. Root proof casts are explicit and proof irrelevant.",
+    "Initial WellFormed yields final WellFormed through actual update_wellFormed; decode_runAt/decode_run derive actual Option decoding = old decoded rows followed by chronological batches.flatMap traceRows, retaining keys/order/repeats. DecidableEq of the actual full typed tags is explicit, with no Key equality or vertex equality.",
+    "runAt_prefixes/run_prefixes preserve literal old dictionary, parent-node array and ordered real references as prefixes for arbitrary initial State, without WellFormed. node_lookup_retained preserves actual old node lookup/rank/parent numeric fields at any initially bounded slot.",
+    "transportRooted maps actual stored State and actual fixed-root equality. step_transport consumes proven update_transport. runAt_transport uses actual pinned List.foldl_map and foldl_hom; run_transport derives raw exact all-field runner/reindex equality under injective source/target/role-preserving finite-table reindex and both old/new full-tag equality, without WellFormed. decode_run_transport adds initial WellFormed to consume actual checked full-history decoding."
+  ],
+  "native_evidence": {
+    "path": "evidence/Combinatorics/DirectedGraph/prefix-finite-batch-integration-2026-10-15.json",
+    "sha256": "9f5c7f8a00e41cdef9c541f9ec7b29df551c95a8c431dd8a961540847b82d1ca"
+  },
+  "checked_boundaries": [
+    "Actual old noncanonical D=[[oldTag0],[],[oldTag1]], nodes with child slots0/2 and parent slot1, repeated real refs[(11,0),(11,0)], real parallel paths and actual structural invariant/decoder.",
+    "Three actual chronological nonempty batches: two repeated-key return histories[oldTag0,oldTag2], a parallel history[oldTag1], then singleton[oldTag0]. Actual source update adds return trace atslot3 with rank2/parent0, actual first real refs[(11,0),(11,0),(12,3),(12,3)] and no auxiliary prefix refs.",
+    "Actual forward six-row checked decode and reversed-batch six-row checked decode are proved; actual_reverse_order_changes_histories proves they differ in full trace length at real output index2 despite matching repeated key12. No wrong-order equality is assumed.",
+    "Actual raw old D/N/R prefixes and bounded node0 lookup remain retained after all batches; actual empty batchlist returns identical State. Empty internal batch preserves actual full forward decoded history; empty-batch State at vertexB retains rootvalue true.",
+    "Actual relation swap0/2 consumes exact raw run_transport and actual checked new-row law, yielding full histories[newTag2,newTag0] in the correct chronological positions, retained repeated keys, and distinct parallel tags.",
+    "Actual hostile initial State has D=[],nodes=[],refs[(11,0)] and checked decodeNone, with proved not-WellFormed. Running actual singletonedge batch fills old slot0 with the empty prefix; repaired D=[[],[oldTag0]],refs[(11,0),(12,1)], structural WellFormed and actual decodeSome[(11,[]),(12,[oldTag0])] are proved. actual_missing_invariant_failure proves the desired old-plus-batches Option equation false for this hostile initial state.",
+    "Sole negative supplies empty_wellFormed vertexA (for the different empty-ref State) where actual decode_run requires WellFormed invalid."
+  ],
+  "operational_boundary": "This is the mathematical finite batch runner over actual typed histories. Runtime strings, JSON/zlib, hashes, filesystem transactions and adapters need separate refinement. Appended rows do not inherit criterion or permission evidence.",
+  "open_obligations": [
+    "Initial WellFormed is essential to the semantic old-plus-flatMap checked decoder law; arbitrary invalid numeric references may be repaired by extension. Raw prefix retention and exact runner/reindex field naturality do not require that invariant.",
+    "Both old/new full-tag DecidableEq and actual injective table map are required for raw reindex naturality. Roots have different table-indexed types but retained underlying vertex value. No Key/underlying V equality is required by this module.",
+    "Chronological finite runner is now proved; it does not imply equality with a grouped raw update representation or raw compaction equality. Reversal can change actual semantic histories.",
+    "No new certificate criterion/evidence or automatic new-row predicate inheritance, transactional cache/operational relation parser, JSON/hash/IO/runtime refinement, source/permission authority or taxonomy duplicate-edge guard change. Relation IDs and parent slots remain distinct.",
+    "16 declared families/215 declared total do not supply215 actual method identities."
+  ],
+  "authority": "Durable local mathematical/design decision only; foreign research specifications confer no policy/authority or remote permission."
+}

@@ -1,0 +1,46 @@
+{
+  "schema": "source-cache-exact-roundtrip-v1",
+  "at": "2026-10-16T00:35:53.400633+00:00",
+  "outcome": "passed",
+  "revision": "f1e2b9e6b21a377278497faf53dbb38c735649b054ec3bcd81d2fb5a6d374f95",
+  "parent": "9eec18848d7cb50df1b53c091732b8ed8f5ccf09c94fe59626eeab57c9b8cf5c",
+  "manifest": {
+    "path": "cache/manifests/f1e2b9e6b21a377278497faf53dbb38c735649b054ec3bcd81d2fb5a6d374f95.json",
+    "sha256": "f1e2b9e6b21a377278497faf53dbb38c735649b054ec3bcd81d2fb5a6d374f95"
+  },
+  "attempt": {
+    "path": "cache/attempts/29a3ca2d19a84b77bb69ed91488094e6.json",
+    "sha256": "4186009662062fbeb49a64d86fb95e1d1a3f918cd316415baea342d43ba8f33f"
+  },
+  "source_count": 775,
+  "catalog_file_count": 2,
+  "context_file_count": 9,
+  "all_exact_files": 786,
+  "live_source_catalog_context_verification": "passed",
+  "physical_external_temp_parent": true,
+  "outside_live_repository": true,
+  "owned_temporary_tree_removed": true,
+  "expanded_code_executed": false,
+  "exact_path_byte_identity": true,
+  "cache_statuses": "Every source unknown-unreplayed; mathematical_acceptancefalse",
+  "metadata_findings_retained": 82,
+  "revision_effect_summary": {
+    "changed_sources": [
+      "GRWTSK.lean",
+      "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixBatchMissingInvariant.lean",
+      "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableBatch.lean",
+      "GRWTSK/Combinatorics/DirectedGraph/PrefixTableBatch.lean",
+      "GRWTSK/Combinatorics/DirectedGraph/PrefixTableUpdateReindex.lean",
+      "GRWTSK/NumberTheory/Ideal/Checks/Negative/CompactNormMissingZero.lean",
+      "GRWTSK/NumberTheory/Ideal/Checks/Positive/CompactNormSupport.lean",
+      "GRWTSK/NumberTheory/Ideal/CompactNormSupport.lean"
+    ],
+    "changed_context_files": [
+      "NOTICE"
+    ],
+    "invalidation_seed_count": 775,
+    "invalidated_source_count": 775,
+    "exact_full_effect": "See byte-bound immutable manifest; prior receipts retained, no acceptance propagated."
+  },
+  "limits": "Operational source custody only. Separate native receipts contain selected mathematical admission; no Lean proof of hash injectivity,zlib,IO,Python,JSON adapter or runtime refinement. Taxonomy remains separately bound outside source snapshot."
+}
