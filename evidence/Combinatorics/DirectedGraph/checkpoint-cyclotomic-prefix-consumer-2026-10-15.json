@@ -1,0 +1,291 @@
+{
+  "schema": "actual-operational-prefix-consumer-v1",
+  "at": "2026-10-16T00:53:39.974901+00:00",
+  "outcome": "passed",
+  "old_trace": {
+    "path": "cache/occurrences/communication-trace-2026-10-15-r15.json",
+    "sha256": "1d55acc51c7b009da96a0a546e2be6d9642f9d720c92655358edd8f3d90d15a6"
+  },
+  "fresh_trace": {
+    "path": "cache/occurrences/communication-trace-2026-10-15-r16.json",
+    "sha256": "4921e3e2bc604206ad64d4fbeac8af1e1fcf0df214960cd255e543bd3a6882a6"
+  },
+  "empty_trace": {
+    "path": "cache/occurrences/communication-empty-2026-10-15-r14.json",
+    "sha256": "f6e7ca91508196707669534f0db6d1c8fab31b3dd2d0164c78907377c98fae6a"
+  },
+  "prefix_adapter": {
+    "path": "scripts/cache_trace_prefix.py",
+    "sha256": "eedfb41b1c0ea550bcfbcbe586a473efbe224453be9ea5bfc0046a7f062d3a54"
+  },
+  "trace_adapter": {
+    "path": "scripts/cache_occurrences.py",
+    "sha256": "1ff39b1a99d8167f5ece162861cbcd8c04741edb92494ee8579df971df371868"
+  },
+  "bounded_prefix_controls": {
+    "path": "evidence/Combinatorics/DirectedGraph/trace-prefix-operational-controls-2026-10-15.json",
+    "sha256": "a633c4d97c91ce56485e5030e54457a86e03b2ef14a33bdd9c3450a080b20cb4"
+  },
+  "previous_snapshot": "f1e2b9e6b21a377278497faf53dbb38c735649b054ec3bcd81d2fb5a6d374f95",
+  "current_snapshot": "157a0a281700d47fcd2d583cca1a0005c25d80afd8afb3f314faa218f09d993d",
+  "taxonomy": {
+    "id": "taxonomy:method-families",
+    "revision": "554b2000eb0ddcaa5e38cc30812a1741c3c826b224ddf0e032eb7460229cc8fb",
+    "sha256": "072a431bca2c960488c7681d4fb316db2135a7f91d2e181f5664db610e0103fa"
+  },
+  "revision_commands": [
+    {
+      "name": "old-trace-current-rejected",
+      "argv": [
+        "python3",
+        "-B",
+        "scripts/cache_occurrences.py",
+        "cache/occurrences/communication-trace-2026-10-15-r15.json"
+      ],
+      "exit_code": 1,
+      "expected": "reject stale snapshot",
+      "log": {
+        "path": ".local/checkpoint-cyclotomic/root/old-trace-current-rejected.log",
+        "sha256": "123beab47834fed59f69a78bcc6bbdc22de85cd7774760a2edcc0da87ac78bce"
+      },
+      "output": "Traceback (most recent call last):\n  File \"/Users/think/Desktop/math/scripts/cache_occurrences.py\", line 149, in <module>\n    main()\n  File \"/Users/think/Desktop/math/scripts/cache_occurrences.py\", line 140, in main\n    result = validate_trace(document, taxonomy_raw, revision)\n  File \"/Users/think/Desktop/math/scripts/cache_occurrences.py\", line 83, in validate_trace\n    require(document[\"source_snapshot\"] == expected_snapshot, \"stale source snapshot\")\n  File \"/Users/think/Desktop/math/scripts/cache_occurrences.py\", line 29, in require\n    raise TraceError(message)\n__main__.TraceError: stale source snapshot\n"
+    },
+    {
+      "name": "old-trace-retained-snapshot",
+      "argv": [
+        "python3",
+        "-B",
+        "scripts/cache_occurrences.py",
+        "cache/occurrences/communication-trace-2026-10-15-r15.json",
+        "--revision",
+        "f1e2b9e6b21a377278497faf53dbb38c735649b054ec3bcd81d2fb5a6d374f95"
+      ],
+      "exit_code": 0,
+      "expected": "pass",
+      "log": {
+        "path": ".local/checkpoint-cyclotomic/root/old-trace-retained-snapshot.log",
+        "sha256": "cd73d027d86dc2fe518dddbfc335001d24d4e8dbaa7bcf6c9d60a9e4761b02ed"
+      },
+      "output": "{\"end\": \"task:cache-taxonomy\", \"id\": \"occurrence-trace:taxonomy-adapter-communication-2026-10-15-r15\", \"lean_runtime_refinement\": \"not-established\", \"occurrences\": [{\"index\": 0, \"relation_id\": \"relation:taxonomy-contribution-task\", \"relation_sha256\": \"9d2c11260d84c8c6c6560c625be57cc741e0f257f09e9602aa106dbc6521ab77\", \"source\": \"contribution:taxonomy-adapter-v1\", \"target\": \"task:cache-taxonomy\"}], \"proof_acceptance\": \"not-established\", \"relation_kind\": \"communication\", \"root\": \"contribution:taxonomy-adapter-v1\", \"schema\": \"math-cache-occurrence-trace-v1\", \"source_snapshot\": \"f1e2b9e6b21a377278497faf53dbb38c735649b054ec3bcd81d2fb5a6d374f95\", \"step_count\": 1, \"taxonomy_revision\": \"554b2000eb0ddcaa5e38cc30812a1741c3c826b224ddf0e032eb7460229cc8fb\"}\n",
+      "result": {
+        "end": "task:cache-taxonomy",
+        "id": "occurrence-trace:taxonomy-adapter-communication-2026-10-15-r15",
+        "lean_runtime_refinement": "not-established",
+        "occurrences": [
+          {
+            "index": 0,
+            "relation_id": "relation:taxonomy-contribution-task",
+            "relation_sha256": "9d2c11260d84c8c6c6560c625be57cc741e0f257f09e9602aa106dbc6521ab77",
+            "source": "contribution:taxonomy-adapter-v1",
+            "target": "task:cache-taxonomy"
+          }
+        ],
+        "proof_acceptance": "not-established",
+        "relation_kind": "communication",
+        "root": "contribution:taxonomy-adapter-v1",
+        "schema": "math-cache-occurrence-trace-v1",
+        "source_snapshot": "f1e2b9e6b21a377278497faf53dbb38c735649b054ec3bcd81d2fb5a6d374f95",
+        "step_count": 1,
+        "taxonomy_revision": "554b2000eb0ddcaa5e38cc30812a1741c3c826b224ddf0e032eb7460229cc8fb"
+      }
+    },
+    {
+      "name": "fresh-trace-current",
+      "argv": [
+        "python3",
+        "-B",
+        "scripts/cache_occurrences.py",
+        "cache/occurrences/communication-trace-2026-10-15-r16.json"
+      ],
+      "exit_code": 0,
+      "expected": "pass",
+      "log": {
+        "path": ".local/checkpoint-cyclotomic/root/fresh-trace-current.log",
+        "sha256": "4001eb7ca663c89a52bf96767b7730001bcd89d57853b89a7a11ef35e74ccd98"
+      },
+      "output": "{\"end\": \"task:cache-taxonomy\", \"id\": \"occurrence-trace:taxonomy-adapter-communication-2026-10-15-r16\", \"lean_runtime_refinement\": \"not-established\", \"occurrences\": [{\"index\": 0, \"relation_id\": \"relation:taxonomy-contribution-task\", \"relation_sha256\": \"9d2c11260d84c8c6c6560c625be57cc741e0f257f09e9602aa106dbc6521ab77\", \"source\": \"contribution:taxonomy-adapter-v1\", \"target\": \"task:cache-taxonomy\"}], \"proof_acceptance\": \"not-established\", \"relation_kind\": \"communication\", \"root\": \"contribution:taxonomy-adapter-v1\", \"schema\": \"math-cache-occurrence-trace-v1\", \"source_snapshot\": \"157a0a281700d47fcd2d583cca1a0005c25d80afd8afb3f314faa218f09d993d\", \"step_count\": 1, \"taxonomy_revision\": \"554b2000eb0ddcaa5e38cc30812a1741c3c826b224ddf0e032eb7460229cc8fb\"}\n",
+      "result": {
+        "end": "task:cache-taxonomy",
+        "id": "occurrence-trace:taxonomy-adapter-communication-2026-10-15-r16",
+        "lean_runtime_refinement": "not-established",
+        "occurrences": [
+          {
+            "index": 0,
+            "relation_id": "relation:taxonomy-contribution-task",
+            "relation_sha256": "9d2c11260d84c8c6c6560c625be57cc741e0f257f09e9602aa106dbc6521ab77",
+            "source": "contribution:taxonomy-adapter-v1",
+            "target": "task:cache-taxonomy"
+          }
+        ],
+        "proof_acceptance": "not-established",
+        "relation_kind": "communication",
+        "root": "contribution:taxonomy-adapter-v1",
+        "schema": "math-cache-occurrence-trace-v1",
+        "source_snapshot": "157a0a281700d47fcd2d583cca1a0005c25d80afd8afb3f314faa218f09d993d",
+        "step_count": 1,
+        "taxonomy_revision": "554b2000eb0ddcaa5e38cc30812a1741c3c826b224ddf0e032eb7460229cc8fb"
+      }
+    }
+  ],
+  "actual_prefix_comparisons": [
+    {
+      "name": "empty-prefix",
+      "argv": [
+        "python3",
+        "-B",
+        "scripts/cache_trace_prefix.py",
+        "cache/occurrences/communication-empty-2026-10-15-r14.json",
+        "cache/occurrences/communication-trace-2026-10-15-r16.json"
+      ],
+      "exit_code": 0,
+      "expected_prefix": true,
+      "log": {
+        "path": ".local/checkpoint-cyclotomic/root/empty-prefix.log",
+        "sha256": "0ff8dc6ec99e06a9ee9078661ac0a254d7fa8d19b68ce7f12e6b6067da4cce80"
+      },
+      "result": {
+        "inputs": [
+          {
+            "path": "cache/occurrences/communication-empty-2026-10-15-r14.json",
+            "sha256": "f6e7ca91508196707669534f0db6d1c8fab31b3dd2d0164c78907377c98fae6a"
+          },
+          {
+            "path": "cache/occurrences/communication-trace-2026-10-15-r16.json",
+            "sha256": "4921e3e2bc604206ad64d4fbeac8af1e1fcf0df214960cd255e543bd3a6882a6"
+          }
+        ],
+        "is_prefix": true,
+        "lean_runtime_refinement": "not-established",
+        "permission_implication": "not-established",
+        "prefix": {
+          "end": "contribution:taxonomy-adapter-v1",
+          "id": "occurrence-trace:taxonomy-adapter-empty-2026-10-15-r14",
+          "step_count": 0
+        },
+        "proof_acceptance": "not-established",
+        "relation_kind": "communication",
+        "root": "contribution:taxonomy-adapter-v1",
+        "schema": "math-cache-trace-prefix-v1",
+        "source_snapshot": "157a0a281700d47fcd2d583cca1a0005c25d80afd8afb3f314faa218f09d993d",
+        "target": {
+          "end": "task:cache-taxonomy",
+          "id": "occurrence-trace:taxonomy-adapter-communication-2026-10-15-r16",
+          "step_count": 1
+        },
+        "taxonomy": {
+          "id": "taxonomy:method-families",
+          "revision": "554b2000eb0ddcaa5e38cc30812a1741c3c826b224ddf0e032eb7460229cc8fb",
+          "sha256": "072a431bca2c960488c7681d4fb316db2135a7f91d2e181f5664db610e0103fa"
+        }
+      },
+      "output_sha256": "0ff8dc6ec99e06a9ee9078661ac0a254d7fa8d19b68ce7f12e6b6067da4cce80"
+    },
+    {
+      "name": "longer-not-prefix",
+      "argv": [
+        "python3",
+        "-B",
+        "scripts/cache_trace_prefix.py",
+        "cache/occurrences/communication-trace-2026-10-15-r16.json",
+        "cache/occurrences/communication-empty-2026-10-15-r14.json"
+      ],
+      "exit_code": 0,
+      "expected_prefix": false,
+      "log": {
+        "path": ".local/checkpoint-cyclotomic/root/longer-not-prefix.log",
+        "sha256": "1aa419321fe367d4efb9669bb63755e23e8698407ff6f4113a08135f3c157429"
+      },
+      "result": {
+        "inputs": [
+          {
+            "path": "cache/occurrences/communication-trace-2026-10-15-r16.json",
+            "sha256": "4921e3e2bc604206ad64d4fbeac8af1e1fcf0df214960cd255e543bd3a6882a6"
+          },
+          {
+            "path": "cache/occurrences/communication-empty-2026-10-15-r14.json",
+            "sha256": "f6e7ca91508196707669534f0db6d1c8fab31b3dd2d0164c78907377c98fae6a"
+          }
+        ],
+        "is_prefix": false,
+        "lean_runtime_refinement": "not-established",
+        "permission_implication": "not-established",
+        "prefix": {
+          "end": "task:cache-taxonomy",
+          "id": "occurrence-trace:taxonomy-adapter-communication-2026-10-15-r16",
+          "step_count": 1
+        },
+        "proof_acceptance": "not-established",
+        "relation_kind": "communication",
+        "root": "contribution:taxonomy-adapter-v1",
+        "schema": "math-cache-trace-prefix-v1",
+        "source_snapshot": "157a0a281700d47fcd2d583cca1a0005c25d80afd8afb3f314faa218f09d993d",
+        "target": {
+          "end": "contribution:taxonomy-adapter-v1",
+          "id": "occurrence-trace:taxonomy-adapter-empty-2026-10-15-r14",
+          "step_count": 0
+        },
+        "taxonomy": {
+          "id": "taxonomy:method-families",
+          "revision": "554b2000eb0ddcaa5e38cc30812a1741c3c826b224ddf0e032eb7460229cc8fb",
+          "sha256": "072a431bca2c960488c7681d4fb316db2135a7f91d2e181f5664db610e0103fa"
+        }
+      },
+      "output_sha256": "1aa419321fe367d4efb9669bb63755e23e8698407ff6f4113a08135f3c157429"
+    },
+    {
+      "name": "reflexive-prefix",
+      "argv": [
+        "python3",
+        "-B",
+        "scripts/cache_trace_prefix.py",
+        "cache/occurrences/communication-trace-2026-10-15-r16.json",
+        "cache/occurrences/communication-trace-2026-10-15-r16.json"
+      ],
+      "exit_code": 0,
+      "expected_prefix": true,
+      "log": {
+        "path": ".local/checkpoint-cyclotomic/root/reflexive-prefix.log",
+        "sha256": "bcfd65e9c3c11caa6398d30522544b4c85085e84f93da3cf6a29e7ba4238245e"
+      },
+      "result": {
+        "inputs": [
+          {
+            "path": "cache/occurrences/communication-trace-2026-10-15-r16.json",
+            "sha256": "4921e3e2bc604206ad64d4fbeac8af1e1fcf0df214960cd255e543bd3a6882a6"
+          },
+          {
+            "path": "cache/occurrences/communication-trace-2026-10-15-r16.json",
+            "sha256": "4921e3e2bc604206ad64d4fbeac8af1e1fcf0df214960cd255e543bd3a6882a6"
+          }
+        ],
+        "is_prefix": true,
+        "lean_runtime_refinement": "not-established",
+        "permission_implication": "not-established",
+        "prefix": {
+          "end": "task:cache-taxonomy",
+          "id": "occurrence-trace:taxonomy-adapter-communication-2026-10-15-r16",
+          "step_count": 1
+        },
+        "proof_acceptance": "not-established",
+        "relation_kind": "communication",
+        "root": "contribution:taxonomy-adapter-v1",
+        "schema": "math-cache-trace-prefix-v1",
+        "source_snapshot": "157a0a281700d47fcd2d583cca1a0005c25d80afd8afb3f314faa218f09d993d",
+        "target": {
+          "end": "task:cache-taxonomy",
+          "id": "occurrence-trace:taxonomy-adapter-communication-2026-10-15-r16",
+          "step_count": 1
+        },
+        "taxonomy": {
+          "id": "taxonomy:method-families",
+          "revision": "554b2000eb0ddcaa5e38cc30812a1741c3c826b224ddf0e032eb7460229cc8fb",
+          "sha256": "072a431bca2c960488c7681d4fb316db2135a7f91d2e181f5664db610e0103fa"
+        }
+      },
+      "output_sha256": "bcfd65e9c3c11caa6398d30522544b4c85085e84f93da3cf6a29e7ba4238245e"
+    }
+  ],
+  "old_trace_and_receipt_retained": true,
+  "snapshot_taxonomy_containment": false,
+  "limits": "Actual existing communication relation and empty rooted history; no taxonomy entities/relations/methods invented. Exact declared source snapshot and separately bound raw taxonomy. Bounded operational tests do not establish Lean/runtime relation-graph correspondence, hash injectivity, IO theorem, mathematical acceptance or permission implication."
+}

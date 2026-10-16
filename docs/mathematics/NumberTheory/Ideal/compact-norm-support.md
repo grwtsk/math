@@ -64,9 +64,11 @@ Codex. The [source review](../../../../evidence/NumberTheory/Ideal/compact-norm-
 records exact bytes and bounded external scopes. Correlated model/source
 review is not independent validation.
 
-The original `ActualEisensteinCubic.O`, the ring of integers of
-`CyclotomicField 3 ℚ`, has been located in upstream source. Its actual local
-instantiation and instances remain unadmitted. Actual completed ideal sums,
+The [third cyclotomic instantiation](../Cyclotomic/third-cyclotomic-ideals.md)
+now supplies the literal original ring of integers of `CyclotomicField 3 ℚ`,
+its actual algebraic instances, ideal-norm formula and finite-support consumer.
+The integer-ideal example above retains its own domain and norms. Original
+coefficient objects and actual completed ideal sums,
 masks, correction factors, a common finite support for every frequency and
 the original detector and RH suppliers remain open. The separate
 [annular separation theorem](../../Analysis/MellinTransform/gaussian-annular-separation.md)
