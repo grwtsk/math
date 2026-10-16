@@ -1,0 +1,190 @@
+{
+  "completed_utc": "2026-10-16T09:17:47.580017+00:00",
+  "input_drift": [],
+  "inputs_after": {
+    ".noeaaeue/scripts/cache_math.py": {
+      "bytes": 36017,
+      "sha256": "d73bebfeca4ec709fdc68741cba13a09611ae49a0095b4140dd5d2f3e6bb1c06"
+    },
+    ".noeaaeue/scripts/monitor_math.py": {
+      "bytes": 85340,
+      "sha256": "a757804707ffe811aa27d295aa82dcdaddf7b3c90f9c3bd6a47d27ec3b0890e3"
+    },
+    ".noeaaeue/scripts/repository_paths.py": {
+      "bytes": 2343,
+      "sha256": "4bd02ac496dc2fbd141b19f23ba86291db1618a0ae298a76beab28701ff24d22"
+    },
+    ".noeaaeue/scripts/test_cache_math.py": {
+      "bytes": 21270,
+      "sha256": "41c39d3b4dd332596b40f14eb73570a79296aa326944863414d52c4e3082b237"
+    }
+  },
+  "inputs_before": {
+    ".noeaaeue/scripts/cache_math.py": {
+      "bytes": 36017,
+      "sha256": "d73bebfeca4ec709fdc68741cba13a09611ae49a0095b4140dd5d2f3e6bb1c06"
+    },
+    ".noeaaeue/scripts/monitor_math.py": {
+      "bytes": 85340,
+      "sha256": "a757804707ffe811aa27d295aa82dcdaddf7b3c90f9c3bd6a47d27ec3b0890e3"
+    },
+    ".noeaaeue/scripts/repository_paths.py": {
+      "bytes": 2343,
+      "sha256": "4bd02ac496dc2fbd141b19f23ba86291db1618a0ae298a76beab28701ff24d22"
+    },
+    ".noeaaeue/scripts/test_cache_math.py": {
+      "bytes": 21270,
+      "sha256": "41c39d3b4dd332596b40f14eb73570a79296aa326944863414d52c4e3082b237"
+    }
+  },
+  "limits": [
+    "Operational engineering tests, not Lean verification or filesystem/hash/compression/transaction refinement.",
+    "No live snapshot, revise, capture, expansion or current custody acceptance.",
+    "Complete physical output-set/inverse-layout validation of the live cache remains a separate owner task after source writes finish."
+  ],
+  "live_cache_refs_manifests_events_mutated": false,
+  "live_repository_source_universe_read": false,
+  "mathematical_acceptance": false,
+  "native_lean_lake_compiler_jobs_executed": false,
+  "outcome": "passed",
+  "proof_status": "unknown-unreplayed",
+  "python": {
+    "actual_executable": "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+    "requested_path": "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+    "version": "3.11.16 (main, Aug 12 2026, 23:03:19) [Clang 21.0.0 (clang-2100.1.1.101)]"
+  },
+  "results": [
+    {
+      "argv": [
+        "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+        "-B",
+        ".noeaaeue/scripts/test_cache_math.py"
+      ],
+      "cwd": "/Users/local/Desktop/math",
+      "elapsed_seconds": 20.58668804098852,
+      "exit_code": 0,
+      "expected_test_count": 23,
+      "input_drift": [],
+      "inputs_after": {
+        ".noeaaeue/scripts/cache_math.py": {
+          "bytes": 36017,
+          "sha256": "d73bebfeca4ec709fdc68741cba13a09611ae49a0095b4140dd5d2f3e6bb1c06"
+        },
+        ".noeaaeue/scripts/monitor_math.py": {
+          "bytes": 85340,
+          "sha256": "a757804707ffe811aa27d295aa82dcdaddf7b3c90f9c3bd6a47d27ec3b0890e3"
+        },
+        ".noeaaeue/scripts/repository_paths.py": {
+          "bytes": 2343,
+          "sha256": "4bd02ac496dc2fbd141b19f23ba86291db1618a0ae298a76beab28701ff24d22"
+        },
+        ".noeaaeue/scripts/test_cache_math.py": {
+          "bytes": 21270,
+          "sha256": "41c39d3b4dd332596b40f14eb73570a79296aa326944863414d52c4e3082b237"
+        }
+      },
+      "inputs_before": {
+        ".noeaaeue/scripts/cache_math.py": {
+          "bytes": 36017,
+          "sha256": "d73bebfeca4ec709fdc68741cba13a09611ae49a0095b4140dd5d2f3e6bb1c06"
+        },
+        ".noeaaeue/scripts/monitor_math.py": {
+          "bytes": 85340,
+          "sha256": "a757804707ffe811aa27d295aa82dcdaddf7b3c90f9c3bd6a47d27ec3b0890e3"
+        },
+        ".noeaaeue/scripts/repository_paths.py": {
+          "bytes": 2343,
+          "sha256": "4bd02ac496dc2fbd141b19f23ba86291db1618a0ae298a76beab28701ff24d22"
+        },
+        ".noeaaeue/scripts/test_cache_math.py": {
+          "bytes": 21270,
+          "sha256": "41c39d3b4dd332596b40f14eb73570a79296aa326944863414d52c4e3082b237"
+        }
+      },
+      "mode": "normal",
+      "passed": true,
+      "started_after_utc": "2026-10-16T09:17:07.385533+00:00",
+      "stderr": {
+        "bytes": 3206,
+        "path": ".noeaaeue/.local/cache-custody-controls-ee8f73bf090740fda43bc0808a9ea7f0/normal.stderr.log",
+        "sha256": "2cc1ec795f2b769eb878f92108cc70f8c189fd6f326e1ced7ca0926850768ef5"
+      },
+      "stdout": {
+        "bytes": 0,
+        "path": ".noeaaeue/.local/cache-custody-controls-ee8f73bf090740fda43bc0808a9ea7f0/normal.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "test_count": 23,
+      "timeout": false
+    },
+    {
+      "argv": [
+        "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+        "-B",
+        "-O",
+        ".noeaaeue/scripts/test_cache_math.py"
+      ],
+      "cwd": "/Users/local/Desktop/math",
+      "elapsed_seconds": 19.604610749986023,
+      "exit_code": 0,
+      "expected_test_count": 23,
+      "input_drift": [],
+      "inputs_after": {
+        ".noeaaeue/scripts/cache_math.py": {
+          "bytes": 36017,
+          "sha256": "d73bebfeca4ec709fdc68741cba13a09611ae49a0095b4140dd5d2f3e6bb1c06"
+        },
+        ".noeaaeue/scripts/monitor_math.py": {
+          "bytes": 85340,
+          "sha256": "a757804707ffe811aa27d295aa82dcdaddf7b3c90f9c3bd6a47d27ec3b0890e3"
+        },
+        ".noeaaeue/scripts/repository_paths.py": {
+          "bytes": 2343,
+          "sha256": "4bd02ac496dc2fbd141b19f23ba86291db1618a0ae298a76beab28701ff24d22"
+        },
+        ".noeaaeue/scripts/test_cache_math.py": {
+          "bytes": 21270,
+          "sha256": "41c39d3b4dd332596b40f14eb73570a79296aa326944863414d52c4e3082b237"
+        }
+      },
+      "inputs_before": {
+        ".noeaaeue/scripts/cache_math.py": {
+          "bytes": 36017,
+          "sha256": "d73bebfeca4ec709fdc68741cba13a09611ae49a0095b4140dd5d2f3e6bb1c06"
+        },
+        ".noeaaeue/scripts/monitor_math.py": {
+          "bytes": 85340,
+          "sha256": "a757804707ffe811aa27d295aa82dcdaddf7b3c90f9c3bd6a47d27ec3b0890e3"
+        },
+        ".noeaaeue/scripts/repository_paths.py": {
+          "bytes": 2343,
+          "sha256": "4bd02ac496dc2fbd141b19f23ba86291db1618a0ae298a76beab28701ff24d22"
+        },
+        ".noeaaeue/scripts/test_cache_math.py": {
+          "bytes": 21270,
+          "sha256": "41c39d3b4dd332596b40f14eb73570a79296aa326944863414d52c4e3082b237"
+        }
+      },
+      "mode": "optimized",
+      "passed": true,
+      "started_after_utc": "2026-10-16T09:17:07.385533+00:00",
+      "stderr": {
+        "bytes": 3206,
+        "path": ".noeaaeue/.local/cache-custody-controls-ee8f73bf090740fda43bc0808a9ea7f0/optimized.stderr.log",
+        "sha256": "877ae62d0b113ed8cfecaa7ea2790e25ec221c4625655f4f890892526e1fbfe0"
+      },
+      "stdout": {
+        "bytes": 0,
+        "path": ".noeaaeue/.local/cache-custody-controls-ee8f73bf090740fda43bc0808a9ea7f0/optimized.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "test_count": 23,
+      "timeout": false
+    }
+  ],
+  "schema": "isolated-cache-custody-hostile-controls-v1",
+  "scope": "Only23 existing bounded cache hostile controls, normal and Python-O, using owned synthetic temporary Git repositories and expansion directories. Temporary fixture Git writes are part of the authorized suite; the live checkout is not a test root.",
+  "source_registry_or_live_git_mutation": false,
+  "started_utc": "2026-10-16T09:17:07.385533+00:00",
+  "test_executions": 46
+}

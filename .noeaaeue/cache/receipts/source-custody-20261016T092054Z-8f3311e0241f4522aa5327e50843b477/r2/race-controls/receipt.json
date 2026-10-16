@@ -1,0 +1,251 @@
+{
+  "cache_ref_source_registry_git_mutations": false,
+  "case_executions": 4,
+  "global_source_scan": false,
+  "inputs_after": [
+    {
+      "bytes": 20832,
+      "path": "/Users/local/Desktop/math/.noeaaeue/.local/physical-cache-comparison-r2-852c7caaca42447a9a10e9f42d7bdf1b/compare_expansion_bytes.py",
+      "sha256": "cffb66b6efd0615e58dd31d35d5d9228dcbef7bf4388baf7eba827d7c51142c2"
+    },
+    {
+      "bytes": 4893,
+      "path": "/Users/local/Desktop/math/.noeaaeue/.local/physical-cache-comparison-r2-852c7caaca42447a9a10e9f42d7bdf1b/comparison-helper-manifest.json",
+      "sha256": "c2944060acd787a6be18a61ddad1f1bc44a6ba0bacd52c6eabb43278c37cf7b2"
+    },
+    {
+      "bytes": 11791,
+      "path": "/Users/local/Desktop/math/.noeaaeue/.local/physical-cache-race-controls-4qu_rw2z/run_controls.py",
+      "sha256": "93e4121a34070ad9a0ad1144d60b65a718d9e1a7c3209bb4bf502e6adf2fe0e6"
+    }
+  ],
+  "inputs_before": [
+    {
+      "bytes": 20832,
+      "path": "/Users/local/Desktop/math/.noeaaeue/.local/physical-cache-comparison-r2-852c7caaca42447a9a10e9f42d7bdf1b/compare_expansion_bytes.py",
+      "sha256": "cffb66b6efd0615e58dd31d35d5d9228dcbef7bf4388baf7eba827d7c51142c2"
+    },
+    {
+      "bytes": 4893,
+      "path": "/Users/local/Desktop/math/.noeaaeue/.local/physical-cache-comparison-r2-852c7caaca42447a9a10e9f42d7bdf1b/comparison-helper-manifest.json",
+      "sha256": "c2944060acd787a6be18a61ddad1f1bc44a6ba0bacd52c6eabb43278c37cf7b2"
+    },
+    {
+      "bytes": 11791,
+      "path": "/Users/local/Desktop/math/.noeaaeue/.local/physical-cache-race-controls-4qu_rw2z/run_controls.py",
+      "sha256": "93e4121a34070ad9a0ad1144d60b65a718d9e1a7c3209bb4bf502e6adf2fe0e6"
+    }
+  ],
+  "inputs_stable": true,
+  "limits": [
+    "No complete cache expansion comparison performed by this harness.",
+    "Deterministic single-thread fixture replaces only the leaf between stat and open.",
+    "Four-entry enumeration with an imported-module-only MAX_ENTRIES=3 exercises the initial bound.",
+    "No claim of exhaustive races, global atomicity, arbitrary filesystem deadlines or absolute memory bounds.",
+    "No native/compiler execution, formal proof acceptance or parser/runtime refinement."
+  ],
+  "mathematical_acceptance": false,
+  "native_jobs": false,
+  "project_or_expanded_code_imported_or_executed": false,
+  "proof_status": "unknown-unreplayed",
+  "results": [
+    {
+      "argv": [
+        "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+        "-I",
+        "-B",
+        "/Users/local/Desktop/math/.noeaaeue/.local/physical-cache-race-controls-4qu_rw2z/run_controls.py",
+        "--worker",
+        "fifo"
+      ],
+      "elapsed_seconds": 0.029652791970875114,
+      "label": "normal-fifo",
+      "passed": true,
+      "result": {
+        "binding_sha256": "c2944060acd787a6be18a61ddad1f1bc44a6ba0bacd52c6eabb43278c37cf7b2",
+        "case": "fifo",
+        "helper_sha256": "cffb66b6efd0615e58dd31d35d5d9228dcbef7bf4388baf7eba827d7c51142c2",
+        "isolated": true,
+        "mathematical_acceptance": false,
+        "observations": {
+          "elapsed_seconds": 0.00010316696716472507,
+          "exception_message": "opened leaf is not regular: leaf",
+          "exception_type": "Rejected",
+          "flags": 260,
+          "hook_count": 1,
+          "o_nofollow": true,
+          "o_nonblock": true,
+          "opened_fifo": true,
+          "swap_completed": true,
+          "temporary_fixture_removed": true,
+          "temporary_fixture_was_external": true
+        },
+        "optimize": 0,
+        "proof_status": "unknown-unreplayed",
+        "status": "PASS_EXPECTED_REJECTION"
+      },
+      "returncode": 0,
+      "stderr": {
+        "bytes": 0,
+        "path": "/Users/local/Desktop/math/.noeaaeue/.local/physical-cache-race-controls-4qu_rw2z/normal-fifo.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdout": {
+        "bytes": 669,
+        "path": "/Users/local/Desktop/math/.noeaaeue/.local/physical-cache-race-controls-4qu_rw2z/normal-fifo.stdout.log",
+        "sha256": "2dc0f3df26c13bab2b39cc06aa405adf8d61db8179b9d52834da1d852f13a385"
+      },
+      "timed_out": false,
+      "timeout_seconds": 5
+    },
+    {
+      "argv": [
+        "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+        "-I",
+        "-B",
+        "/Users/local/Desktop/math/.noeaaeue/.local/physical-cache-race-controls-4qu_rw2z/run_controls.py",
+        "--worker",
+        "entry-bound"
+      ],
+      "elapsed_seconds": 0.027564041956793517,
+      "label": "normal-entry-bound",
+      "passed": true,
+      "result": {
+        "binding_sha256": "c2944060acd787a6be18a61ddad1f1bc44a6ba0bacd52c6eabb43278c37cf7b2",
+        "case": "entry-bound",
+        "helper_sha256": "cffb66b6efd0615e58dd31d35d5d9228dcbef7bf4388baf7eba827d7c51142c2",
+        "isolated": true,
+        "mathematical_acceptance": false,
+        "observations": {
+          "elapsed_seconds": 1.4082994312047958e-05,
+          "exception_message": "expansion exceeds entry bound",
+          "exception_type": "Rejected",
+          "fixture_entries": 4,
+          "module_limit_restored": true,
+          "original_max_entries": 100000,
+          "temporary_fixture_removed": true,
+          "temporary_fixture_was_external": true,
+          "temporary_max_entries": 3
+        },
+        "optimize": 0,
+        "proof_status": "unknown-unreplayed",
+        "status": "PASS_EXPECTED_REJECTION"
+      },
+      "returncode": 0,
+      "stderr": {
+        "bytes": 0,
+        "path": "/Users/local/Desktop/math/.noeaaeue/.local/physical-cache-race-controls-4qu_rw2z/normal-entry-bound.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdout": {
+        "bytes": 670,
+        "path": "/Users/local/Desktop/math/.noeaaeue/.local/physical-cache-race-controls-4qu_rw2z/normal-entry-bound.stdout.log",
+        "sha256": "e07221c9c205bc0c964d8c1bf164a768202b667095b3fc0f40041ff266ccb598"
+      },
+      "timed_out": false,
+      "timeout_seconds": 5
+    },
+    {
+      "argv": [
+        "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+        "-I",
+        "-B",
+        "-O",
+        "/Users/local/Desktop/math/.noeaaeue/.local/physical-cache-race-controls-4qu_rw2z/run_controls.py",
+        "--worker",
+        "fifo"
+      ],
+      "elapsed_seconds": 0.030705582990776747,
+      "label": "optimized-fifo",
+      "passed": true,
+      "result": {
+        "binding_sha256": "c2944060acd787a6be18a61ddad1f1bc44a6ba0bacd52c6eabb43278c37cf7b2",
+        "case": "fifo",
+        "helper_sha256": "cffb66b6efd0615e58dd31d35d5d9228dcbef7bf4388baf7eba827d7c51142c2",
+        "isolated": true,
+        "mathematical_acceptance": false,
+        "observations": {
+          "elapsed_seconds": 0.00010116701014339924,
+          "exception_message": "opened leaf is not regular: leaf",
+          "exception_type": "Rejected",
+          "flags": 260,
+          "hook_count": 1,
+          "o_nofollow": true,
+          "o_nonblock": true,
+          "opened_fifo": true,
+          "swap_completed": true,
+          "temporary_fixture_removed": true,
+          "temporary_fixture_was_external": true
+        },
+        "optimize": 1,
+        "proof_status": "unknown-unreplayed",
+        "status": "PASS_EXPECTED_REJECTION"
+      },
+      "returncode": 0,
+      "stderr": {
+        "bytes": 0,
+        "path": "/Users/local/Desktop/math/.noeaaeue/.local/physical-cache-race-controls-4qu_rw2z/optimized-fifo.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdout": {
+        "bytes": 669,
+        "path": "/Users/local/Desktop/math/.noeaaeue/.local/physical-cache-race-controls-4qu_rw2z/optimized-fifo.stdout.log",
+        "sha256": "ade42fe077234e7698e1025b3f1f70b7860ddeabe0c0480a9806fa757c2062e0"
+      },
+      "timed_out": false,
+      "timeout_seconds": 5
+    },
+    {
+      "argv": [
+        "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+        "-I",
+        "-B",
+        "-O",
+        "/Users/local/Desktop/math/.noeaaeue/.local/physical-cache-race-controls-4qu_rw2z/run_controls.py",
+        "--worker",
+        "entry-bound"
+      ],
+      "elapsed_seconds": 0.028329958964604884,
+      "label": "optimized-entry-bound",
+      "passed": true,
+      "result": {
+        "binding_sha256": "c2944060acd787a6be18a61ddad1f1bc44a6ba0bacd52c6eabb43278c37cf7b2",
+        "case": "entry-bound",
+        "helper_sha256": "cffb66b6efd0615e58dd31d35d5d9228dcbef7bf4388baf7eba827d7c51142c2",
+        "isolated": true,
+        "mathematical_acceptance": false,
+        "observations": {
+          "elapsed_seconds": 1.5291967429220676e-05,
+          "exception_message": "expansion exceeds entry bound",
+          "exception_type": "Rejected",
+          "fixture_entries": 4,
+          "module_limit_restored": true,
+          "original_max_entries": 100000,
+          "temporary_fixture_removed": true,
+          "temporary_fixture_was_external": true,
+          "temporary_max_entries": 3
+        },
+        "optimize": 1,
+        "proof_status": "unknown-unreplayed",
+        "status": "PASS_EXPECTED_REJECTION"
+      },
+      "returncode": 0,
+      "stderr": {
+        "bytes": 0,
+        "path": "/Users/local/Desktop/math/.noeaaeue/.local/physical-cache-race-controls-4qu_rw2z/optimized-entry-bound.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdout": {
+        "bytes": 670,
+        "path": "/Users/local/Desktop/math/.noeaaeue/.local/physical-cache-race-controls-4qu_rw2z/optimized-entry-bound.stdout.log",
+        "sha256": "323f66a9a27fa6455996953139f7fbb4cae1518c2d11966410f461e9347ae92d"
+      },
+      "timed_out": false,
+      "timeout_seconds": 5
+    }
+  ],
+  "schema": "r2-physical-comparison-bounded-fixture-controls-v1",
+  "scope": "Correlated operational model tests of two selected helper refusal branches only.",
+  "status": "PASS",
+  "writes": "Owned ignored controls directory and owned external temporary fixtures only."
+}

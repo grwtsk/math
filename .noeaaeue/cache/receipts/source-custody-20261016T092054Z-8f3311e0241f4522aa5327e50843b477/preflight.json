@@ -1,0 +1,19 @@
+{
+  "at_utc": "2026-10-16T09:20:54.200654+00:00",
+  "controls_receipt": ".noeaaeue/.local/cache-custody-controls-ee8f73bf090740fda43bc0808a9ea7f0/receipt.json",
+  "controls_receipt_sha256": "cd9e04ee3d25cf123943f58455532715dd191227c5d267edb3fee2094b8ab4e1",
+  "expected_parent": "55b3a4ef0c05b81558eb8e4a213b056458b043d8b3e2400e990e8c20e77dfad4",
+  "head": "b558869a97fcbc346ce5cc0f1a28119d26abd6ba",
+  "implementation_sha256": {
+    ".noeaaeue/scripts/cache_math.py": "d73bebfeca4ec709fdc68741cba13a09611ae49a0095b4140dd5d2f3e6bb1c06",
+    ".noeaaeue/scripts/monitor_math.py": "a757804707ffe811aa27d295aa82dcdaddf7b3c90f9c3bd6a47d27ec3b0890e3",
+    ".noeaaeue/scripts/repository_paths.py": "4bd02ac496dc2fbd141b19f23ba86291db1618a0ae298a76beab28701ff24d22",
+    ".noeaaeue/scripts/test_cache_math.py": "41c39d3b4dd332596b40f14eb73570a79296aa326944863414d52c4e3082b237"
+  },
+  "mathematical_acceptance": false,
+  "proof_status": "unknown-unreplayed",
+  "schema": "source-only-custody-preflight-v1",
+  "source_universe": "not-presumed; observed by guarded adapter",
+  "source_writer": "01a14261-105f-7fe2-857c-8c83e6ff109a",
+  "writer_ack": "All four initial source writes complete; holding source bytes/HEAD/refs for guarded read"
+}

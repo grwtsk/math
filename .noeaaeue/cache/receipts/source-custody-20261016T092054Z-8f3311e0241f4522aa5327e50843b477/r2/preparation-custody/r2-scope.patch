@@ -1,0 +1,73 @@
+--- r1/compare_expansion_bytes.py
++++ r2/compare_expansion_bytes.py
+@@ -154,11 +154,14 @@
+         require(stat.S_ISREG(before.st_mode), "nonregular/symlink file rejected: " + relative)
+         require(before.st_size <= MAX_BYTES, "file exceeds bounded read: " + relative)
+         require(expected_identity is None or identity(before) == expected_identity,
+                 "enumerated file changed: " + relative)
+-        fd = os.open(parts[-1], os.O_RDONLY | os.O_NOFOLLOW, dir_fd=parent)
++        # A special-file swap after stat must not block before fstat can reject
++        # it. In particular, O_RDONLY alone can wait forever on a new FIFO.
++        fd = os.open(parts[-1], os.O_RDONLY | os.O_NOFOLLOW | os.O_NONBLOCK, dir_fd=parent)
+         with os.fdopen(fd, "rb") as stream:
+             opened = os.fstat(stream.fileno())
++            require(stat.S_ISREG(opened.st_mode), "opened leaf is not regular: " + relative)
+             require(identity(opened) == identity(before), "file replaced during open")
+             raw = stream.read(MAX_BYTES + 1)
+             after_read = os.fstat(stream.fileno())
+         after = os.stat(parts[-1], dir_fd=parent, follow_symlinks=False)
+@@ -168,22 +171,38 @@
+     finally:
+         os.close(parent)
+ 
+ 
++def bounded_directory_names(fd, limit):
++    """Collect at most limit names; never allocate an unbounded listdir result.
++
++    The next excess DirEntry is observed but not appended. The caller reserves
++    all returned names in its global entry count before descending recursively,
++    so suspended ancestor collections consume that same finite budget.
++    """
++    require(type(limit) is int and 0 <= limit <= MAX_ENTRIES, "invalid directory entry budget")
++    names = []
++    with os.scandir(fd) as entries:
++        for entry in entries:
++            require(len(names) < limit, "expansion exceeds entry bound")
++            names.append(entry.name)
++    return sorted(names)
++
++
+ def enumerate_tree(root_fd):
+     files, directories = {}, {"": identity(os.fstat(root_fd))}
+     count = 0
+ 
+     def visit(fd, prefix, depth):
+         nonlocal count
+         require(depth <= MAX_DEPTH, "expansion exceeds directory depth bound")
+         start = identity(os.fstat(fd))
+-        names = sorted(os.listdir(fd))
++        names = bounded_directory_names(fd, MAX_ENTRIES - count)
++        # Reserve all names before recursion, including unvisited siblings.
++        count += len(names)
+         for name in names:
+             relative = prefix + name
+             require(safe_relative(relative), "unsafe expansion entry name")
+-            count += 1
+-            require(count <= MAX_ENTRIES, "expansion exceeds entry bound")
+             before = os.stat(name, dir_fd=fd, follow_symlinks=False)
+             if stat.S_ISREG(before.st_mode):
+                 files[relative] = identity(before)
+             elif stat.S_ISDIR(before.st_mode):
+@@ -197,9 +216,11 @@
+                 require(identity(before) == identity(os.stat(name, dir_fd=fd, follow_symlinks=False)),
+                         "enumerated directory replaced")
+             else:
+                 raise Rejected("symlink or special expansion entry: " + relative)
+-        require(names == sorted(os.listdir(fd)) and start == identity(os.fstat(fd)),
++        # The second collection is bounded by the exact original size, so an
++        # extra entry fails as soon as it is encountered, including size zero.
++        require(names == bounded_directory_names(fd, len(names)) and start == identity(os.fstat(fd)),
+                 "expansion directory changed during enumeration")
+     visit(root_fd, "", 0)
+     return files, directories
+ 
