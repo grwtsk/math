@@ -1,0 +1,278 @@
+{
+  "schema": "actual-relocated-cache-prefix-consumer-v1",
+  "at": "2026-10-16T02:36:17.573866+00:00",
+  "outcome": "passed",
+  "revision": "55b3a4ef0c05b81558eb8e4a213b056458b043d8b3e2400e990e8c20e77dfad4",
+  "old_explicit_revision": "ffc3e070cb7a67f8113ed46d3ec78ad76c1e4e464047034dd323c489240a0b75",
+  "old_trace": {
+    "path": ".noeaaeue/cache/occurrences/communication-trace-2026-10-15-r18.json",
+    "sha256": "3878ff33912e7f19856631b7318e8dd01f3498ddeafa0b7220e96d280a7063aa"
+  },
+  "fresh_trace": {
+    "path": ".noeaaeue/cache/occurrences/communication-trace-2026-10-15-r19.json",
+    "sha256": "5d0189c167e0c65eda89f2d39666a807f1b8b96f0469b9bfcbbfec8c34c9abdb"
+  },
+  "empty_trace": {
+    "path": ".noeaaeue/cache/occurrences/communication-empty-2026-10-15-r17.json",
+    "sha256": "51999c07d5ea71a95865c78ba8c43c306431a856607572267425e6d44984bbf9"
+  },
+  "taxonomy": {
+    "path": ".noeaaeue/cache/taxonomy.json",
+    "sha256": "072a431bca2c960488c7681d4fb316db2135a7f91d2e181f5664db610e0103fa"
+  },
+  "runtime_source_hashes": {
+    ".noeaaeue/scripts/cache_math.py": "d73bebfeca4ec709fdc68741cba13a09611ae49a0095b4140dd5d2f3e6bb1c06",
+    ".noeaaeue/scripts/cache_occurrences.py": "0c0c684b8ce270f1c716edbd9e034825a9728cf861952330ef0be6c8211dd13b",
+    ".noeaaeue/scripts/cache_trace_prefix.py": "3d80fded72db128788bb216f190262657e2fbf639f3bdb6f94bfadd60cc92885",
+    ".noeaaeue/scripts/cache_taxonomy.py": "08127b71c55d43b4de739e7f910d91cae80b27bf8992c2c15a50e539abfb10ca",
+    ".noeaaeue/scripts/monitor_math.py": "a757804707ffe811aa27d295aa82dcdaddf7b3c90f9c3bd6a47d27ec3b0890e3",
+    ".noeaaeue/scripts/repository_paths.py": "4bd02ac496dc2fbd141b19f23ba86291db1618a0ae298a76beab28701ff24d22"
+  },
+  "revision_controls": [
+    {
+      "name": "stale-current-rejected",
+      "argv": [
+        "python3",
+        "-B",
+        ".noeaaeue/scripts/cache_occurrences.py",
+        ".noeaaeue/cache/occurrences/communication-trace-2026-10-15-r18.json"
+      ],
+      "exit_code": 1,
+      "log": {
+        "path": ".noeaaeue/.local/relocated-replay-2026-10-15/r2-stale-current-rejected.log",
+        "sha256": "9c846458393e75345e345a8b39a422adbd8937882ddf89875499ba2b6073e1e9"
+      },
+      "output": "Traceback (most recent call last):\n  File \"/Users/think/Desktop/math/.noeaaeue/scripts/cache_occurrences.py\", line 149, in <module>\n    main()\n  File \"/Users/think/Desktop/math/.noeaaeue/scripts/cache_occurrences.py\", line 140, in main\n    result = validate_trace(document, taxonomy_raw, revision)\n  File \"/Users/think/Desktop/math/.noeaaeue/scripts/cache_occurrences.py\", line 83, in validate_trace\n    require(document[\"source_snapshot\"] == expected_snapshot, \"stale source snapshot\")\n  File \"/Users/think/Desktop/math/.noeaaeue/scripts/cache_occurrences.py\", line 29, in require\n    raise TraceError(message)\n__main__.TraceError: stale source snapshot\n"
+    },
+    {
+      "name": "old-explicit-revision",
+      "argv": [
+        "python3",
+        "-B",
+        ".noeaaeue/scripts/cache_occurrences.py",
+        ".noeaaeue/cache/occurrences/communication-trace-2026-10-15-r18.json",
+        "--revision",
+        "ffc3e070cb7a67f8113ed46d3ec78ad76c1e4e464047034dd323c489240a0b75"
+      ],
+      "exit_code": 0,
+      "log": {
+        "path": ".noeaaeue/.local/relocated-replay-2026-10-15/r2-old-explicit-revision.log",
+        "sha256": "4e0c1e2441115a5e8e719436361f89ab5462b8832ac764db0089de9fafb5bcb5"
+      },
+      "output": "{\"end\": \"task:cache-taxonomy\", \"id\": \"occurrence-trace:taxonomy-adapter-communication-2026-10-15-r18\", \"lean_runtime_refinement\": \"not-established\", \"occurrences\": [{\"index\": 0, \"relation_id\": \"relation:taxonomy-contribution-task\", \"relation_sha256\": \"9d2c11260d84c8c6c6560c625be57cc741e0f257f09e9602aa106dbc6521ab77\", \"source\": \"contribution:taxonomy-adapter-v1\", \"target\": \"task:cache-taxonomy\"}], \"proof_acceptance\": \"not-established\", \"relation_kind\": \"communication\", \"root\": \"contribution:taxonomy-adapter-v1\", \"schema\": \"math-cache-occurrence-trace-v1\", \"source_snapshot\": \"ffc3e070cb7a67f8113ed46d3ec78ad76c1e4e464047034dd323c489240a0b75\", \"step_count\": 1, \"taxonomy_revision\": \"554b2000eb0ddcaa5e38cc30812a1741c3c826b224ddf0e032eb7460229cc8fb\"}\n",
+      "result": {
+        "end": "task:cache-taxonomy",
+        "id": "occurrence-trace:taxonomy-adapter-communication-2026-10-15-r18",
+        "lean_runtime_refinement": "not-established",
+        "occurrences": [
+          {
+            "index": 0,
+            "relation_id": "relation:taxonomy-contribution-task",
+            "relation_sha256": "9d2c11260d84c8c6c6560c625be57cc741e0f257f09e9602aa106dbc6521ab77",
+            "source": "contribution:taxonomy-adapter-v1",
+            "target": "task:cache-taxonomy"
+          }
+        ],
+        "proof_acceptance": "not-established",
+        "relation_kind": "communication",
+        "root": "contribution:taxonomy-adapter-v1",
+        "schema": "math-cache-occurrence-trace-v1",
+        "source_snapshot": "ffc3e070cb7a67f8113ed46d3ec78ad76c1e4e464047034dd323c489240a0b75",
+        "step_count": 1,
+        "taxonomy_revision": "554b2000eb0ddcaa5e38cc30812a1741c3c826b224ddf0e032eb7460229cc8fb"
+      }
+    },
+    {
+      "name": "fresh-current-accepted",
+      "argv": [
+        "python3",
+        "-B",
+        ".noeaaeue/scripts/cache_occurrences.py",
+        ".noeaaeue/cache/occurrences/communication-trace-2026-10-15-r19.json"
+      ],
+      "exit_code": 0,
+      "log": {
+        "path": ".noeaaeue/.local/relocated-replay-2026-10-15/r2-fresh-current-accepted.log",
+        "sha256": "85ee20d59a000543e7b5ce10034b5312b03531e596e9c6e6134c9e72e74e0571"
+      },
+      "output": "{\"end\": \"task:cache-taxonomy\", \"id\": \"occurrence-trace:taxonomy-adapter-communication-2026-10-15-r19\", \"lean_runtime_refinement\": \"not-established\", \"occurrences\": [{\"index\": 0, \"relation_id\": \"relation:taxonomy-contribution-task\", \"relation_sha256\": \"9d2c11260d84c8c6c6560c625be57cc741e0f257f09e9602aa106dbc6521ab77\", \"source\": \"contribution:taxonomy-adapter-v1\", \"target\": \"task:cache-taxonomy\"}], \"proof_acceptance\": \"not-established\", \"relation_kind\": \"communication\", \"root\": \"contribution:taxonomy-adapter-v1\", \"schema\": \"math-cache-occurrence-trace-v1\", \"source_snapshot\": \"55b3a4ef0c05b81558eb8e4a213b056458b043d8b3e2400e990e8c20e77dfad4\", \"step_count\": 1, \"taxonomy_revision\": \"554b2000eb0ddcaa5e38cc30812a1741c3c826b224ddf0e032eb7460229cc8fb\"}\n",
+      "result": {
+        "end": "task:cache-taxonomy",
+        "id": "occurrence-trace:taxonomy-adapter-communication-2026-10-15-r19",
+        "lean_runtime_refinement": "not-established",
+        "occurrences": [
+          {
+            "index": 0,
+            "relation_id": "relation:taxonomy-contribution-task",
+            "relation_sha256": "9d2c11260d84c8c6c6560c625be57cc741e0f257f09e9602aa106dbc6521ab77",
+            "source": "contribution:taxonomy-adapter-v1",
+            "target": "task:cache-taxonomy"
+          }
+        ],
+        "proof_acceptance": "not-established",
+        "relation_kind": "communication",
+        "root": "contribution:taxonomy-adapter-v1",
+        "schema": "math-cache-occurrence-trace-v1",
+        "source_snapshot": "55b3a4ef0c05b81558eb8e4a213b056458b043d8b3e2400e990e8c20e77dfad4",
+        "step_count": 1,
+        "taxonomy_revision": "554b2000eb0ddcaa5e38cc30812a1741c3c826b224ddf0e032eb7460229cc8fb"
+      }
+    }
+  ],
+  "actual_prefix_comparisons": [
+    {
+      "name": "empty-prefix",
+      "argv": [
+        "python3",
+        "-B",
+        ".noeaaeue/scripts/cache_trace_prefix.py",
+        ".noeaaeue/cache/occurrences/communication-empty-2026-10-15-r17.json",
+        ".noeaaeue/cache/occurrences/communication-trace-2026-10-15-r19.json"
+      ],
+      "exit_code": 0,
+      "log": {
+        "path": ".noeaaeue/.local/relocated-replay-2026-10-15/r2-empty-prefix.log",
+        "sha256": "6b04204154fb873e93bd789cd0a5d5ff6625f971393fa120ed384e63bb116170"
+      },
+      "output": "{\"inputs\": [{\"path\": \".noeaaeue/cache/occurrences/communication-empty-2026-10-15-r17.json\", \"sha256\": \"51999c07d5ea71a95865c78ba8c43c306431a856607572267425e6d44984bbf9\"}, {\"path\": \".noeaaeue/cache/occurrences/communication-trace-2026-10-15-r19.json\", \"sha256\": \"5d0189c167e0c65eda89f2d39666a807f1b8b96f0469b9bfcbbfec8c34c9abdb\"}], \"is_prefix\": true, \"lean_runtime_refinement\": \"not-established\", \"permission_implication\": \"not-established\", \"prefix\": {\"end\": \"contribution:taxonomy-adapter-v1\", \"id\": \"occurrence-trace:taxonomy-adapter-empty-2026-10-15-r17\", \"step_count\": 0}, \"proof_acceptance\": \"not-established\", \"relation_kind\": \"communication\", \"root\": \"contribution:taxonomy-adapter-v1\", \"schema\": \"math-cache-trace-prefix-v1\", \"source_snapshot\": \"55b3a4ef0c05b81558eb8e4a213b056458b043d8b3e2400e990e8c20e77dfad4\", \"target\": {\"end\": \"task:cache-taxonomy\", \"id\": \"occurrence-trace:taxonomy-adapter-communication-2026-10-15-r19\", \"step_count\": 1}, \"taxonomy\": {\"id\": \"taxonomy:method-families\", \"revision\": \"554b2000eb0ddcaa5e38cc30812a1741c3c826b224ddf0e032eb7460229cc8fb\", \"sha256\": \"072a431bca2c960488c7681d4fb316db2135a7f91d2e181f5664db610e0103fa\"}}\n",
+      "result": {
+        "inputs": [
+          {
+            "path": ".noeaaeue/cache/occurrences/communication-empty-2026-10-15-r17.json",
+            "sha256": "51999c07d5ea71a95865c78ba8c43c306431a856607572267425e6d44984bbf9"
+          },
+          {
+            "path": ".noeaaeue/cache/occurrences/communication-trace-2026-10-15-r19.json",
+            "sha256": "5d0189c167e0c65eda89f2d39666a807f1b8b96f0469b9bfcbbfec8c34c9abdb"
+          }
+        ],
+        "is_prefix": true,
+        "lean_runtime_refinement": "not-established",
+        "permission_implication": "not-established",
+        "prefix": {
+          "end": "contribution:taxonomy-adapter-v1",
+          "id": "occurrence-trace:taxonomy-adapter-empty-2026-10-15-r17",
+          "step_count": 0
+        },
+        "proof_acceptance": "not-established",
+        "relation_kind": "communication",
+        "root": "contribution:taxonomy-adapter-v1",
+        "schema": "math-cache-trace-prefix-v1",
+        "source_snapshot": "55b3a4ef0c05b81558eb8e4a213b056458b043d8b3e2400e990e8c20e77dfad4",
+        "target": {
+          "end": "task:cache-taxonomy",
+          "id": "occurrence-trace:taxonomy-adapter-communication-2026-10-15-r19",
+          "step_count": 1
+        },
+        "taxonomy": {
+          "id": "taxonomy:method-families",
+          "revision": "554b2000eb0ddcaa5e38cc30812a1741c3c826b224ddf0e032eb7460229cc8fb",
+          "sha256": "072a431bca2c960488c7681d4fb316db2135a7f91d2e181f5664db610e0103fa"
+        }
+      }
+    },
+    {
+      "name": "longer-not-prefix",
+      "argv": [
+        "python3",
+        "-B",
+        ".noeaaeue/scripts/cache_trace_prefix.py",
+        ".noeaaeue/cache/occurrences/communication-trace-2026-10-15-r19.json",
+        ".noeaaeue/cache/occurrences/communication-empty-2026-10-15-r17.json"
+      ],
+      "exit_code": 0,
+      "log": {
+        "path": ".noeaaeue/.local/relocated-replay-2026-10-15/r2-longer-not-prefix.log",
+        "sha256": "001e8ef7d2b70dac30651e0d61fb179adc8925f347d27b7000e3c1955e6c32e2"
+      },
+      "output": "{\"inputs\": [{\"path\": \".noeaaeue/cache/occurrences/communication-trace-2026-10-15-r19.json\", \"sha256\": \"5d0189c167e0c65eda89f2d39666a807f1b8b96f0469b9bfcbbfec8c34c9abdb\"}, {\"path\": \".noeaaeue/cache/occurrences/communication-empty-2026-10-15-r17.json\", \"sha256\": \"51999c07d5ea71a95865c78ba8c43c306431a856607572267425e6d44984bbf9\"}], \"is_prefix\": false, \"lean_runtime_refinement\": \"not-established\", \"permission_implication\": \"not-established\", \"prefix\": {\"end\": \"task:cache-taxonomy\", \"id\": \"occurrence-trace:taxonomy-adapter-communication-2026-10-15-r19\", \"step_count\": 1}, \"proof_acceptance\": \"not-established\", \"relation_kind\": \"communication\", \"root\": \"contribution:taxonomy-adapter-v1\", \"schema\": \"math-cache-trace-prefix-v1\", \"source_snapshot\": \"55b3a4ef0c05b81558eb8e4a213b056458b043d8b3e2400e990e8c20e77dfad4\", \"target\": {\"end\": \"contribution:taxonomy-adapter-v1\", \"id\": \"occurrence-trace:taxonomy-adapter-empty-2026-10-15-r17\", \"step_count\": 0}, \"taxonomy\": {\"id\": \"taxonomy:method-families\", \"revision\": \"554b2000eb0ddcaa5e38cc30812a1741c3c826b224ddf0e032eb7460229cc8fb\", \"sha256\": \"072a431bca2c960488c7681d4fb316db2135a7f91d2e181f5664db610e0103fa\"}}\n",
+      "result": {
+        "inputs": [
+          {
+            "path": ".noeaaeue/cache/occurrences/communication-trace-2026-10-15-r19.json",
+            "sha256": "5d0189c167e0c65eda89f2d39666a807f1b8b96f0469b9bfcbbfec8c34c9abdb"
+          },
+          {
+            "path": ".noeaaeue/cache/occurrences/communication-empty-2026-10-15-r17.json",
+            "sha256": "51999c07d5ea71a95865c78ba8c43c306431a856607572267425e6d44984bbf9"
+          }
+        ],
+        "is_prefix": false,
+        "lean_runtime_refinement": "not-established",
+        "permission_implication": "not-established",
+        "prefix": {
+          "end": "task:cache-taxonomy",
+          "id": "occurrence-trace:taxonomy-adapter-communication-2026-10-15-r19",
+          "step_count": 1
+        },
+        "proof_acceptance": "not-established",
+        "relation_kind": "communication",
+        "root": "contribution:taxonomy-adapter-v1",
+        "schema": "math-cache-trace-prefix-v1",
+        "source_snapshot": "55b3a4ef0c05b81558eb8e4a213b056458b043d8b3e2400e990e8c20e77dfad4",
+        "target": {
+          "end": "contribution:taxonomy-adapter-v1",
+          "id": "occurrence-trace:taxonomy-adapter-empty-2026-10-15-r17",
+          "step_count": 0
+        },
+        "taxonomy": {
+          "id": "taxonomy:method-families",
+          "revision": "554b2000eb0ddcaa5e38cc30812a1741c3c826b224ddf0e032eb7460229cc8fb",
+          "sha256": "072a431bca2c960488c7681d4fb316db2135a7f91d2e181f5664db610e0103fa"
+        }
+      }
+    },
+    {
+      "name": "reflexive",
+      "argv": [
+        "python3",
+        "-B",
+        ".noeaaeue/scripts/cache_trace_prefix.py",
+        ".noeaaeue/cache/occurrences/communication-trace-2026-10-15-r19.json",
+        ".noeaaeue/cache/occurrences/communication-trace-2026-10-15-r19.json"
+      ],
+      "exit_code": 0,
+      "log": {
+        "path": ".noeaaeue/.local/relocated-replay-2026-10-15/r2-reflexive.log",
+        "sha256": "c0444c749b1c943cd52d6e9569a77a35e73dccbaad6efbab26ec9f493ec6e326"
+      },
+      "output": "{\"inputs\": [{\"path\": \".noeaaeue/cache/occurrences/communication-trace-2026-10-15-r19.json\", \"sha256\": \"5d0189c167e0c65eda89f2d39666a807f1b8b96f0469b9bfcbbfec8c34c9abdb\"}, {\"path\": \".noeaaeue/cache/occurrences/communication-trace-2026-10-15-r19.json\", \"sha256\": \"5d0189c167e0c65eda89f2d39666a807f1b8b96f0469b9bfcbbfec8c34c9abdb\"}], \"is_prefix\": true, \"lean_runtime_refinement\": \"not-established\", \"permission_implication\": \"not-established\", \"prefix\": {\"end\": \"task:cache-taxonomy\", \"id\": \"occurrence-trace:taxonomy-adapter-communication-2026-10-15-r19\", \"step_count\": 1}, \"proof_acceptance\": \"not-established\", \"relation_kind\": \"communication\", \"root\": \"contribution:taxonomy-adapter-v1\", \"schema\": \"math-cache-trace-prefix-v1\", \"source_snapshot\": \"55b3a4ef0c05b81558eb8e4a213b056458b043d8b3e2400e990e8c20e77dfad4\", \"target\": {\"end\": \"task:cache-taxonomy\", \"id\": \"occurrence-trace:taxonomy-adapter-communication-2026-10-15-r19\", \"step_count\": 1}, \"taxonomy\": {\"id\": \"taxonomy:method-families\", \"revision\": \"554b2000eb0ddcaa5e38cc30812a1741c3c826b224ddf0e032eb7460229cc8fb\", \"sha256\": \"072a431bca2c960488c7681d4fb316db2135a7f91d2e181f5664db610e0103fa\"}}\n",
+      "result": {
+        "inputs": [
+          {
+            "path": ".noeaaeue/cache/occurrences/communication-trace-2026-10-15-r19.json",
+            "sha256": "5d0189c167e0c65eda89f2d39666a807f1b8b96f0469b9bfcbbfec8c34c9abdb"
+          },
+          {
+            "path": ".noeaaeue/cache/occurrences/communication-trace-2026-10-15-r19.json",
+            "sha256": "5d0189c167e0c65eda89f2d39666a807f1b8b96f0469b9bfcbbfec8c34c9abdb"
+          }
+        ],
+        "is_prefix": true,
+        "lean_runtime_refinement": "not-established",
+        "permission_implication": "not-established",
+        "prefix": {
+          "end": "task:cache-taxonomy",
+          "id": "occurrence-trace:taxonomy-adapter-communication-2026-10-15-r19",
+          "step_count": 1
+        },
+        "proof_acceptance": "not-established",
+        "relation_kind": "communication",
+        "root": "contribution:taxonomy-adapter-v1",
+        "schema": "math-cache-trace-prefix-v1",
+        "source_snapshot": "55b3a4ef0c05b81558eb8e4a213b056458b043d8b3e2400e990e8c20e77dfad4",
+        "target": {
+          "end": "task:cache-taxonomy",
+          "id": "occurrence-trace:taxonomy-adapter-communication-2026-10-15-r19",
+          "step_count": 1
+        },
+        "taxonomy": {
+          "id": "taxonomy:method-families",
+          "revision": "554b2000eb0ddcaa5e38cc30812a1741c3c826b224ddf0e032eb7460229cc8fb",
+          "sha256": "072a431bca2c960488c7681d4fb316db2135a7f91d2e181f5664db610e0103fa"
+        }
+      }
+    }
+  ],
+  "limits": "Actual existing relation occurrence documents only; no method identities invented, no proof/permission authority or Lean/runtime correspondence. Prior traces/receipts unchanged."
+}

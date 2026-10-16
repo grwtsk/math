@@ -1,0 +1,60 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "historical-cache-readonly-migration-gate",
+  "event": "current-relocated-adapter-explicit-historical-verify-passed",
+  "owner": "cache_adapter",
+  "at": "2026-10-16T01:48:46.539863+00:00",
+  "revision": "ce89c2a26424ddbcce16a6c5140513f61510b17b196f72dd6bc2b0cfef85550d",
+  "command": [
+    "python3",
+    "-B",
+    ".noeaaeue/scripts/cache_math.py",
+    "--root",
+    "/Users/think/Desktop/math",
+    "verify",
+    "--revision",
+    "ce89c2a26424ddbcce16a6c5140513f61510b17b196f72dd6bc2b0cfef85550d"
+  ],
+  "exit_code": 0,
+  "result": {
+    "catalog_file_count": 2,
+    "context_file_count": 9,
+    "live": false,
+    "mathematical_acceptance": false,
+    "metadata_finding_count": 88,
+    "proof_status": "unknown-unreplayed",
+    "source_count": 814,
+    "status": "byte-custody-verified"
+  },
+  "verification_record": {
+    "path": ".noeaaeue/.local/historical-cache-readonly/3c68407c485643b6add80d2145a47749/verification.json",
+    "sha256": "ca72db47a7b8544ad643aa2838149e063584f5ebcbd942d7dc397cde0b83aa05"
+  },
+  "stdout_log": {
+    "path": ".noeaaeue/.local/historical-cache-readonly/3c68407c485643b6add80d2145a47749/stdout.log",
+    "sha256": "ab9cd73316cf34b7abd10fd86986be881b8956ef930c98dfd35454c96bea8e91"
+  },
+  "stderr_log": {
+    "path": ".noeaaeue/.local/historical-cache-readonly/3c68407c485643b6add80d2145a47749/stderr.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "findings": {
+    "path": ".noeaaeue/.local/historical-cache-readonly/3c68407c485643b6add80d2145a47749/findings.json",
+    "sha256": "ed2032237fbe9dc2e95969fb13d277602c5e468c58eed154f79690c3b4b1713f"
+  },
+  "observed_input_hashes": {
+    ".noeaaeue/scripts/cache_math.py": "d73bebfeca4ec709fdc68741cba13a09611ae49a0095b4140dd5d2f3e6bb1c06",
+    ".noeaaeue/scripts/monitor_math.py": "a757804707ffe811aa27d295aa82dcdaddf7b3c90f9c3bd6a47d27ec3b0890e3",
+    ".noeaaeue/scripts/repository_paths.py": "4bd02ac496dc2fbd141b19f23ba86291db1618a0ae298a76beab28701ff24d22",
+    ".noeaaeue/cache/refs/current.json": "07c2a22593f2836524b2ac11f9c6e657b816d81b8766ea3dfe93f3fb352455eb",
+    ".noeaaeue/cache/manifests/ce89c2a26424ddbcce16a6c5140513f61510b17b196f72dd6bc2b0cfef85550d.json": "ce89c2a26424ddbcce16a6c5140513f61510b17b196f72dd6bc2b0cfef85550d"
+  },
+  "input_hashes_unchanged": true,
+  "input_preimages": ".noeaaeue/.local/historical-cache-readonly/3c68407c485643b6add80d2145a47749/observed-inputs",
+  "historical_read_incompatibility_observed": false,
+  "remaining_gate": "Live/writer/CAS/current expansion semantics not tested; code-only external expansion path translation issue recorded separately.",
+  "no_source_or_adapter_edits": true,
+  "no_native_git_or_remote_actions": true,
+  "original_schema_expansion_repeated": false,
+  "mathematical_acceptance": false
+}

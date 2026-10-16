@@ -1,0 +1,23 @@
+{
+  "schema": "repository-agent-event-v1",
+  "at": "2026-10-16T02:41:14.666863+00:00",
+  "owner": "root",
+  "task": "schedule-reduction-relocated-context",
+  "status": "SELECTED_NATIVE_AND_ACTUAL_CONSUMER_CHECKED",
+  "frontier": {
+    "path": ".noeaaeue/cache/research/schedule-reduction-relocated-frontier-2026-10-15.json",
+    "sha256": "19dde4816877eaed80c0d6ba3db930d5351b0bbbb533d5b134f25ee6e79af81f",
+    "bytes": 10096
+  },
+  "shared_migration": "PENDING_MONITOR_CONSOLIDATION",
+  "branches_before": [
+    "main"
+  ],
+  "worktrees_before": [
+    "/Users/think/Desktop/math"
+  ],
+  "worktree_prune_dry_run": "empty",
+  "worktree_prune_result": "empty; no stale metadata",
+  "branches_deleted": [],
+  "remote_actions": []
+}
