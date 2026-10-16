@@ -1,0 +1,362 @@
+               COMMENTS ON THE MANUSCRIPT BY
+        SCHOLZE-STIX CONCERNING INTER-UNIVERSAL
+                   TEICHMÜLLER THEORY (IUTCH)
+
+
+
+                                Shinichi Mochizuki
+
+                                      July 2018
+
+
+
+     In the following, we make various Comments concerning the manuscript [SS2018-
+05] by Scholze-Stix (SS).
+
+
+(C1) Title, ﬁrst two paragraphs, and §1: It is interesting to note that here, explicit
+mention is made of the ABC Conjecture, but not of IUTch. Although very strong
+assertions are made in the title and ﬁrst two paragraphs concerning, in eﬀect, the
+validity of IUTch, the remainder of [SS2018-05] only discusses various doubts or
+questions by SS in a rather vague form without any rigorous proofs — or even
+sketches of the main ideas of such proofs — of the negative assertions that appear
+(cf. the remaining Comments below for more details). A related observation is
+that the discussion of [SS2018-05] is only very partially linked, at the level of nota-
+tion, terminology, or precise references, to the theory that is actually developed in
+[IUTchI], [IUTchII], [IUTchIII], [IUTchIV]. For instance, [SS2018-05] never men-
+tions (or even discusses in diﬀerent, but essentially equivalent, terminology) various
+key notions in IUTch such as “multiradial”, “log-shell”, “tensor-packet”, “proces-
+sion”, or the indeterminacies “(Ind1, 2, 3)”. In this context, it is worth noting that
+the main assertion of [SS2018-05] appears to be the assertion summarized at the
+end of §1, on the top of p. 4.
+
+
+(C2) §2.1, (2): With regard to the following text:
+
+    “Generally, the discussions in Kyoto were at a level only slightly more so-
+    phisticated than what is reﬂected in the simpliﬁcations below, and Mochizuki
+    agreed that this does not result in an essential obfuscation of the ideas.”
+I should point out that whether or not a speciﬁc simpliﬁcation results in “an es-
+sential obfuscation of the ideas” depends substantially on the aspect of those ideas
+that is under discussion. Given a speciﬁc aspect, it is quite possible that a certain
+speciﬁc simpliﬁcation does not result in “an essential obfuscation of the ideas”. On
+the other hand, the same speciﬁc simpliﬁcation may in fact result in “an essential
+obfuscation of the ideas” with regard to other aspects of those ideas. Also, it should
+be stated clearly that I did/do not at all concur (i.e., either during or subsequent
+
+                                                                   Typeset by AMS-TEX
+                                          1
+2                              SHINICHI MOCHIZUKI
+
+to the March discussions) with the latter portion (i.e., the portion following “and”)
+of the following assertion:
+
+    “We also discussed the deeper parts of the theory, and Mochizuki agreed
+    that we had a good understanding of the substantial mathematical con-
+    tent.”
+I agree that SS had a good understanding of certain limited portions of the substan-
+tive mathematical content of IUTch (i.e., “the deeper parts of the theory”). On
+the other hand, there are many quite substantial/central portions of IUTch which
+are completely misunderstood by SS. Put another way, SS have assimilated quite
+a number of the superﬁcial technical details of various constructions that appear
+in the theory, but, at least judging from many of the assertions that appear in
+[SS2018-05], still have only a very minimal understanding (cf. the discussion of
+[Rpt2018], as well as the various Comments given below) of why those construc-
+tions are introduced, or how those constructions are used in the theory to draw
+various nontrivial conclusions.
+
+(C3) §2.1, (3): With regard to the following text:
+
+    “When it comes to the more drastic simpliﬁcations indicated below, such
+    as merely identifying the choice of a Hodge theater with the choice of a
+    curve abstractly isomorphic to X, or simply identifying identical objects
+    of objects along the identity, these are inessential to the point we are
+    making, but Mochizuki was not able to explain during the week why such
+    a simpliﬁcation was not allowed.”
+It should be stated clearly that the assertion that “these are inessential to the point
+we are making” is completely false! I made numerous attempts to explain this
+during the March discussions, and it is most unfortunate that we were ultimately
+unable to communicate regarding this issue. At any rate, detailed explanations
+(which are somewhat more detailed and better organized than my “real time im-
+promptu” responses during the March discussions) are given in [Rpt2018].
+
+(C4) §2.1, (4): With regard to the following text:
+
+    “We are certain that even with all subtleties restored, the issue we are
+    pointing out will prevail, and it is easier to point to the key issue with
+    these surrounding subtleties removed.”
+It should be stated clearly that this assertion is completely false and reﬂects
+numerous fundamental misunderstandings, as discussed in [Rpt2018]. Moreover,
+this sort of “blanket statement” does not in any sense constitute a rigorous proof,
+or even a sketch of the main ideas of such a proof, of the validity of the central
+assertions of [SS2018-05].
+
+(C5) Remark 8: This Remark denies the necessity of applying anabelian geometry in
+IUTch. This denial is justiﬁed in this Remark by the existence of anabelian results
+that imply that isomorphisms of fundamental groups arise from isomorphisms of
+schemes. In fact, étale-like structures, i.e., such as Galois groups and arithmetic
+                   COMMENTS ON SCHOLZE-STIX MANUSCRIPT                             3
+
+fundamental groups, play a central role in IUTch, on account of the structural
+properties — such as symmetry properties (i.e., with respect to permuting the
+0- and 1-(vertical) columns of the log-theta-lattice; such symmetry properties form
+the basis for various multiradial algorithms) — that étale-like structures satisfy
+within the log-theta-lattice. Indeed, in this context, it seems natural to pose the
+following questions:
+(Q1) Do SS wish to deny that the log-theta-lattice fails to admit an auto-
+    morphism that permutes the 0- and 1-columns? We refer, for instance, to
+    [Rpt2018], (LbΘ), (Lblog), (LbMn), for more details. If SS wish to claim
+    the existence of such an automorphism, they should give the construction
+    of such an automorphism explicitly.
+(Q2) Do SS wish to deny that the étale-like (i.e., Galois group/arithmetic
+    fundamental group) portion of the log-theta-lattice does admit an auto-
+    morphism that permutes the étale-like portions of the 0- and 1-(vertical)
+    columns? We refer, for instance, to [Rpt2018], (EtΘ), (Etlog), (EtMn),
+    for more details. If SS wish to deny the existence of such an automor-
+    phism, they should give an explicit proof of the non-existence of such an
+    automorphism.
+
+
+(C6) §2.1.3: One central assertion of §2.1.3 is as follows:
+
+    No substantive problems occur in IUTch if one identiﬁes the domain and
+    codomain of the log-link.
+This point of view may be seen in the use of the term “endofunctor” in the ﬁrst
+paragraph of §2.1.3, as well as in the discussion of the ﬁnal paragraph of §2.1.3
+(i.e., to the eﬀect that distinguishing the domain and codomain of the log-link may
+have some vague philosophical signiﬁcance, but is completely devoid of any substan-
+tive mathematical signiﬁcance). It should be stated clearly that this assertion is
+completely false (cf., e.g., the discussion of [Rpt2018], (LbEx1), (DfLb), (LbLp);
+the discussion of the deﬁnition of the Θ-link in the latter portion of [Alien], §3.3,
+(ii)). That is to say, (as discussed in [Rpt2018], (LbLp)) identifying the domain
+and codomain of the log-link obligates one to identify the Θ-links emanating from
+the domain and codomain of a log-link. On the other hand, such identiﬁcations
+of Θ-links are fundamentally incompatible with the deﬁnition of the Θ-link,
+which depends, in an essential way, on ﬁxing the multiplicative structures of the
+rings involved (or, put another way, ﬁxing a basepoint with respect to the transla-
+tion action of Z on vertical columns of the log-theta-lattice — cf. the discussion of
+[Rpt2018], (LbEx1), (LbEx2), (LbLp)), i.e., is not invariant with respect to the
+“rotations/juggling” of the additive and multiplicative structures that occur as
+one executes various iterates of the log-link. This non-invariance, which is closely
+related to the non-commutativity of the log-theta-lattice, is a very substantive
+mathematical obstruction to identifying the domain and codomain of the log-link.
+In particular, in this context, it seems natural to pose the following question:
+(Q3) Can SS give a proof of the invariance of deﬁnition of the Θ-link with
+    respect to the operation of identifying Θ-links emanating from the domain
+    and codomain of a log-link?
+4                               SHINICHI MOCHIZUKI
+
+Such an assertion of invariance seems entirely absurd. Moreover, nowhere in [SS2018-
+05] can one ﬁnd a rigorous proof, or even a sketch of the main ideas of such a proof,
+of this assertion of invariance.
+
+
+(C7) Footnote 5: The central assertion of this footnote appears to be the following:
+
+    The arithmetic fundamental groups “Π” that appear in the local nonar-
+    chimedean portion of the log-links may be identiﬁed with one another by
+    means of ﬁxed rigidifying isomorphisms (as opposed to poly-isomorphisms,
+    as is done in IUTch) without aﬀecting the essential content of the theory.
+First of all, it should be stated clearly that this assertion is completely false. It
+is true (as was discussed during the March discussions) that, if one forgets about
+the Θ-links, as well as the log-links on the other side of the Θ-link, then these Π’s
+may be consistently identiﬁed with one another by applying the Π-equivariance of
+the nonarchimedean logarithm. On the other hand,
+
+    this sort of rigidiﬁcation of these Π’s in, say, the 0-(vertical) column of
+    the log-theta-lattice depends, in an essential way, on the data of the ac-
+    tion of the Π’s on various local rings/ﬁelds that are related to one another
+    by means of various iterates of the (nonarchimedean) logarithm — i.e.,
+    (0-column Frobenius-like) data that does not admit switching symme-
+    tries that permute the 0-, 1-columns (cf. (Q1) above; [Rpt2018], (SWE1),
+    (LbMn)).
+By contrast, if one forgets this 0-column Frobenius-like data on which these rigid-
+iﬁcations depend and regards the various Π’s in the 0- and 1-columns of the log-
+theta-lattice as abstract topological groups (i.e., that are not equipped with
+such rigidiﬁcations and hence can only be consistently to one another by means of
+full poly-isomorphisms), then one obtains, in both the 0- and 1-columns, collections
+of isomorphic topological groups, related to one another within a ﬁxed column by
+means of “some indeterminate isomorphism” and via the Θ-link to the opposite
+column by means of the surjections to an abstract topological group isomor-
+phic to “G” (i.e., the absolute Galois group of the local ﬁeld) — that is to say, data
+that does indeed admit switching symmetries that permute the 0-, 1-columns
+(cf. (Q2) above; [Rpt2018], (SWE1), (EtMn)).
+
+
+(C8) §2.1.4, “Rv ∼  = R · γv ”, “γcan ∈ R ”: If one is only given a global realiﬁed
+Frobenioid, then it is important to note that such elements γv , γcan exist, but are not
+uniquely/canonically determined. In fact, in the situations that one is interested in,
+one is given not only a global realiﬁed Frobenioid, but also an F ×μ -prime-strip.
+That is to say, if the global realiﬁed Frobenioid under consideration is regarded as
+the global realiﬁed Frobenioid that appears in some F ×μ -prime-strip, then such
+elements γv , γcan are indeed uniquely/canonically determined (cf. the discussion of
+the “factorization of the forgetful functor” in the ﬁnal sentence of §2.1.5).
+
+
+(C9) §2.1.5, “Frobenius element of Gv /Iv ∼   = Z”: There are two minor technical
+errors here. First of all, the local generators of the value group in this context are
+obtained by using the unique generator of the (Frobenius-like!) monoid o        ∼
+                                                                             kv (= N)
+                   COMMENTS ON SCHOLZE-STIX MANUSCRIPT                                5
+
+(in the notation of §2.1.5). That is to say, étale-like data such as Gv cannot be
+related, in the present context, to Frobenius-like value groups, since (in the present
+context) one cannot apply Kummer theory to these (non-divisible!) Frobenius-like
+value groups. Secondly, since Gv is (presumably!) the proﬁnite absolute Galois
+                                           
+group of kv , “Z” should be replaced by “Z”.
+
+(C10) §2.1.6, “(v(q ))v ”: There are two inessential technical errors here. First of
+                     v
+all, since v(q ) is an element of R (not of Rv !), it seems that “v(q )” should be
+              v                                                       v
+replaced by “v(q ) · γv ”. Secondly, in the deﬁnition of “pilot objects”, v should
+                  v
+range only over the bad primes (i.e., in the notation of [IUTchI], the elements of
+Vbad ), not over all primes of the number ﬁeld.
+
+(C11) §2.1.6, second display, “R  . . . ∈ R”: Here, it is important to note that
+this isomorphism “R ∼    = R” that maps γcan → 1 does not necessarily coincide
+with the “arithmetic degree” (in the usual sense). That is to say, it does indeed
+coincide, for instance, in the case of q-pilot objects (cf. (C12) below), but does not
+coincide in the case of Θ-pilot objects (cf. (C14) below).
+
+(C12) §2.1.7, “one chooses the natural isomorphism R,q ∼  = R”: Presumably, this
+is the isomorphism discussed in §2.1.6 that sends γcan → 1 (cf. (C11)). In the case
+of the q-pilot object, this isomorphism corresponds to taking the arithmetic degree
+in the usual sense.
+
+(C13) §2.1.8, “equals j 2 times”: Presumably, here (as well as in the ﬁnal sentence
+of §2.1.8) “j 2 ” in fact refers to the average of the j 2 , for j = 1, . . . , l .
+
+(C14) §2.1.8, “when the identiﬁcation R,Θ ∼   = R”: Presumably, this is the iso-
+morphism discussed in §2.1.6 that sends γcan → 1 (cf. (C11), (C12)). In the case of
+the Θ-pilot object, this isomorphism scaled by (the average of the) j 2 corresponds
+to taking the arithmetic degree in the usual sense.
+
+(C15) §2.1.9, “canonical choice for the Θ-link”: This “canonical choice” seems to
+be the “id-version” that was discussed in the ﬁnal day of the March discussions,
+or, alternatively, [Rpt2018], (SSId). As is discussed in detail in [Rpt2018], §10, the
+multiradial algorithms of IUTch cannot be applied to this “id-version” (cf.
+[Rpt2018], (SSIdFs)), i.e., this “id-version” fails to satisfy, in a very essential way,
+the conditions necessary to apply these algorithms.
+
+(C16) Footnote 7, “Mochizuki does not properly distinguish them, which is part of
+our main concern” (cf. also the ﬁrst phrase “As . . . work” in the third sentence
+of the second paragraph of §2.2): First of all, it should be stated clearly that this
+assertion is completely false. Indeed, the issue of distinguishing the abstract
+category-theoretic versions of pilot objects determined by the intrinsic structure
+of the F ×μ -prime-strips from their concrete (multiradial!) representations on
+tensor-packets of log-shells is one of the most central aspects of IUTch (cf., e.g.,
+6                              SHINICHI MOCHIZUKI
+
+[IUTchIII], Theorem 3.11; the proof of [IUTchIII], Corollary 3.12)! (In this context,
+it is of interest to note (cf. (C1)) that such key notions in IUTch as “tensor-packets”
+and “log-shells” do not appear in [SS2018-05]!) Rather, the confusion, on the part
+of SS, surrounding the proper treatment of abstract category-theoretic versions of
+pilot objects and their concrete (multiradial!) representations on tensor-packets of
+log-shells appears to be one of the most central aspects of the misunderstandings
+of SS discussed in (C17), (C18) below.
+
+
+(C17) §2.2, third sentence of second paragraph (cf. (C16)); §2.2, third paragraph,
+“requires careful identiﬁcations”; §2.2, fourth paragraph, “consistently identify”;
+§2.2, displayed diagram; §2.2, fourth paragraph, “Mochizuki wants to introduce
+scalars”: The discussion of §2.2 is a complete misrepresentation of the argument
+given in Step (xi) of the proof of [IUTchIII], Corollary 3.12. There is never any
+issue in the proof of [IUTchIII], Corollary 3.12,
+(N1) of “requiring careful identiﬁcations of copies of real numbers” (§2.2, third
+    paragraph);
+(N2) of “consistently identifying” these copies (§2.2, fourth paragraph);
+(N3) of identifying such objects as the “RΘ ” and “Rq ” in the bottom line of
+    the displayed diagram of §2.2;
+(N4) of considering a “loop” of the sort that appears in the displayed dia-
+    gram of §2.2, which is required to commute; or
+(N5) of “wanting to introduce scalars of j 2 somewhere” (§2.2, fourth para-
+    graph).
+That is to say, none of (N1), (N2), (N3), (N4), (N5) ever occurs in Step
+(xi) of the proof of [IUTchIII], Corollary 3.12. In particular,
+
+    the loop of (N4), which is central to the discussion of §2.2, never occurs
+    in the proof of [IUTchIII], Corollary 3.12.
+This loop corresponds precisely to the erroneous identiﬁcation of labels/ring
+structures discussed in [Rpt2018], (Smm), (GLR2), (AD), (SSAD), (SSADFs),
+(SSDLFs), (LbEx1), (LbEx4). That is to say,
+
+    it is precisely because of the erroneous introduction of such a loop in
+    various modiﬁed versions of IUTch considered by SS — i.e., versions ob-
+    tained by erroneously identifying various distinct labels/ring struc-
+    tures — that problems of the sort discussed in §2.2 occur.
+In the theory that is actually developed in the papers [IUTchI], [IUTchII], [IUTchIII],
+[IUTchIV], the ring structures on either side of the Θ-link are distinguished (cf.
+[Rpt2018], (IUAD)) — a situation that gives rise to the highly nontrivial problem
+of computing the relationship between these distinct ring structures (cf. [Rpt2018],
+(GIUT)). This relationship is computed by embedding, at the expense of intro-
+ducing certain indeterminacies, objects of interest (such as various versions of Θ-
+and q-pilot objects) on opposite sides of the Θ-link into a common container, by
+means of the multiradial representation of [IUTchIII], Theorem 3.11. Since this
+container is a single container, which, in particular, admits a single well-deﬁned
+log-volume function on a certain collection of its subsets, there is never any issue
+of “requiring that a loop” (as in the displayed diagram of §2.2) “commute”.
+                         COMMENTS ON SCHOLZE-STIX MANUSCRIPT                              7
+
+      (C18) §2.2: Thus, in summary, the argument discussed in §2.2 is a radically diﬀer-
+      ent argument from the argument that is actually given in the proof of [IUTchIII],
+      Corollary 3.12. The centerpiece of the argument that is actually given in the proof
+      of [IUTchIII], Corollary 3.12, is the multiradial representation of [IUTchIII],
+      Theorem 3.11, which allows one to compute the relationship between the distinct
+      ring structures on opposite sides of the Θ-link by embedding, at the expense of
+      introducing certain indeterminacies, objects of interest on opposite sides of the
+      Θ-link into a common container. On the other hand, this multiradial represen-
+      tation is never even discussed in [SS2018-05]. In particular, the argument discussed
+      in §2.2 is most accurately described (not as a description of a ﬂaw in the logical
+      structure of the theory that is actually developed in [IUTchI], [IUTchII], [IUTchIII],
+      [IUTchIV] (!), but rather) as
+
+           a superﬁcial internal contradiction in the deﬁnition of the modiﬁed
+           version of IUTch proposed by SS obtained by arbitrarily identify-
+           ing/confusing (distinct, from the point of view of IUTch) ring struc-
+           tures on opposite sides of the Θ-link
+      — cf. the discussion of [Rpt2018], (Smm), (GLR2), (AD), (SSAD), (SSADFs), (SS-
+      DLFs), (LbEx1), (LbEx4). As discussed in [Rpt2018], (Smm), (GLR2), in general,
+      given any mathematical argument, it is always very easy to obtain such superﬁcial
+      contradictions simply by arbitrarily identifying/confusing mathematical objects ap-
+      pearing in the argument that must be distinguished. On the other hand,
+
+           such superﬁcial contradictions arising from arbitrarily modiﬁed
+           versions of a mathematical argument constitute — both at a purely for-
+           mal, procedural level and at an abstract logical level — a fundamentally
+           qualitatively diﬀerent phenomenon from the phenomenon of a gap,
+           or ﬂaw, in the logical structure of the argument.
+
+
+
+                                        Bibliography
+
+
+
+ [IUTchI] S. Mochizuki, Inter-universal Teichmüller Theory I: Construction of Hodge
+          Theaters, RIMS Preprint 1756 (August 2012).
+[IUTchII] S. Mochizuki, Inter-universal Teichmüller Theory II: Hodge-Arakelov-theoretic
+          Evaluation, RIMS Preprint 1757 (August 2012).
+[IUTchIII] S. Mochizuki, Inter-universal Teichmüller Theory III: Canonical Splittings of
+           the Log-theta-lattice, RIMS Preprint 1758 (August 2012).
+[IUTchIV] S. Mochizuki, Inter-universal Teichmüller Theory IV: Log-volume Computa-
+          tions and Set-theoretic Foundations, RIMS Preprint 1759 (August 2012).
+   [Alien] S. Mochizuki, The Mathematics of Mutually Alien Copies: from Gaussian Inte-
+           grals to Inter-universal Teichmüller Theory, RIMS Preprint 1854 (July 2016).
+[Rpt2018] S. Mochizuki, Report on Discussions, Held During the Period March 15 –
+          20, 2018, Concerning Inter-universal Teichmüller Theory (IUTch), July 2018,
+          available at:
+       8                            SHINICHI MOCHIZUKI
+
+            http://www.kurims.kyoto-u.ac.jp/~motizuki/IUTch-discussions-2018-
+            03.html
+[SS2018-05] P. Scholze and J. Stix, Why abc is still a conjecture, manuscript, May 2018,
+            available at:
+            http://www.kurims.kyoto-u.ac.jp/~motizuki/IUTch-discussions-2018-
+            03.html
+
+       Updated versions of preprints are available at the following webpage:
+            http://www.kurims.kyoto-u.ac.jp/~motizuki/papers-english.html
+

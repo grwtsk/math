@@ -1,5 +1,6 @@
 # Hermitian trace-rank moment bounds
 
+
 Let $A$ be a complex matrix indexed by a finite type and assume $A^*=A$.
 The theorem `hermitian_trace_sq_le_rank_mul_trace_sq` states exactly
 \[
@@ -49,7 +50,7 @@ and [Datta, Howard and Cochran, Lemma 2.1](https://arxiv.org/abs/0909.0206v2).
 No historical novelty or equality-characterization formalization is claimed.
 
 The [consumer checks](../../../../GRWTSK/LinearAlgebra/Matrix/Checks/Positive/TraceRank.lean)
-and [fresh selected receipt](../../../../evidence/LinearAlgebra/Matrix/trace-rank-checks-2026-10-15.json)
+and [fresh selected receipt](../../../../.noeaaeue/evidence/LinearAlgebra/Matrix/trace-rank-checks-2026-10-15.json)
 bind the actual sources, imports, native commands and complete owned-declaration
 audit. The replay uses trust zero and fatal warnings, permits only `propext`,
 `Classical.choice`, and `Quot.sound`, and fingerprints reused pinned dependency
@@ -60,8 +61,10 @@ remain outside this selected result's native scope.
 Upstream formalization authorship: OpenAI, with Apache-2.0 retained on the
 adapted files. Human project direction: grwtsk contributors. Local adaptation
 and checking assistance: OpenAI Codex. Mathlib retains its source authorship
-and Apache-2.0 license. The [integration record](../../../../evidence/LinearAlgebra/Matrix/trace-rank-integration-2026-10-15.json)
+and Apache-2.0 license. The [integration record](../../../../.noeaaeue/evidence/LinearAlgebra/Matrix/trace-rank-integration-2026-10-15.json)
 records source pins, contribution roles, search coverage and remaining work.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

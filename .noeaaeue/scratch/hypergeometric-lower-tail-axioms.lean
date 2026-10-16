@@ -1,0 +1,15 @@
+import GRWTSK.Combinatorics.Sequences.HypergeometricLowerTail
+#print axioms GRWTSK.HypergeometricLowerTail.choose_mul_pow_le
+#print axioms GRWTSK.HypergeometricLowerTail.choose_ratio_le_pow
+#print axioms GRWTSK.HypergeometricLowerTail.log_two_lower
+#print axioms GRWTSK.HypergeometricLowerTail.log_seven_quarters_upper
+#print axioms GRWTSK.HypergeometricLowerTail.intersection_choose_sum
+#print axioms GRWTSK.HypergeometricLowerTail.sum_choose_eq_two_pow_of_le
+#print axioms GRWTSK.HypergeometricLowerTail.two_pow_intersection_sum
+#print axioms GRWTSK.HypergeometricLowerTail.two_pow_intersection_expect_le
+#print axioms GRWTSK.HypergeometricLowerTail.lowerTailProbability
+#print axioms GRWTSK.HypergeometricLowerTail.exp_log_two_mul_nat
+#print axioms GRWTSK.HypergeometricLowerTail.intersection_complement_card
+#print axioms GRWTSK.HypergeometricLowerTail.lowerTailProbability_le_exponential
+#print axioms GRWTSK.HypergeometricLowerTail.lowerTailProbability_quarter
+#print axioms GRWTSK.HypergeometricLowerTail.lowerTailProbability_threeQuarters

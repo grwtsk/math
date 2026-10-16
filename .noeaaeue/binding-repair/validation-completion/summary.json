@@ -1,0 +1,231 @@
+{
+  "application": {
+    "all_final_hashes_match": true,
+    "application_namespace_declarations": 2230,
+    "custody": {
+      "path": ".noeaaeue/binding-repair/validation-completion/moebius-v5-application-evidence-custody.json",
+      "sha256": "45932c5a50a8380831c61b244653644f6c7b05ce21debeecdf4571dd3d5b003c"
+    },
+    "custom_axiom_rejection_controls": 10,
+    "fatal_warnings": true,
+    "fresh_project_build": true,
+    "independent_review": {
+      "path": ".noeaaeue/binding-repair/validation-completion/moebius-v5-application-independent-review-v2.json",
+      "sha256": "51afdcd654ba226e46a9007183293164c4b23534c48365344d8083abc708efb8"
+    },
+    "independent_review_checks": 16,
+    "kernel_checked": true,
+    "memory_mib": 12288,
+    "native_invocations": 466,
+    "native_profile_rejection_controls": 6,
+    "owned_declarations": 11819,
+    "receipt": {
+      "path": ".noeaaeue/binding-repair/validation-completion/moebius-v5-application-replay/receipt.json",
+      "sha256": "39b4f854100a5c0d9938ee9ef949e1e4e8e5c825c75d60e9f713b6ffc42e193e"
+    },
+    "record": {
+      "path": ".noeaaeue/binding-repair/validation-completion/moebius-v5-application-validation.json",
+      "sha256": "8a0b68872f2e4795a8d2083ccaff9d7daf6ab2a13e46caf88c60419a38a899bc"
+    },
+    "runtime_helpers": "Five exact source-qualified nonlogical runtime helpers; no mathematical admission inferred from their qualification.",
+    "sources": 439,
+    "standard_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "trust": 0
+  },
+  "check_in_verification": {
+    "path": ".noeaaeue/binding-repair/validation-completion/check-in-byte-verification.json",
+    "sha256": "5a957a897a52fd3d572b797fa9d5777a7d2cd35554c94f80652fac38a627a3fe"
+  },
+  "checked_snapshot_utc": "2026-10-16T05:29:52.452158+00:00",
+  "coordination": {
+    "delivery_evidence": "Subsequent Codex app message results in this conversation record actual delivery after the checkpoint commit. New worker edits can stale this checked snapshot.",
+    "human_authorized_pause_and_resume": true,
+    "pause_record": {
+      "path": ".noeaaeue/binding-repair/validation-completion/writer-coordination.json",
+      "sha256": "eb5920f0e2abdde3be55295dd1274b0904a62ad865830c4345c1bda3b25f5d20"
+    },
+    "release_plan": {
+      "path": ".noeaaeue/binding-repair/validation-completion/writer-release-plan.json",
+      "sha256": "32ecc0a98cd1fb8a95074f9e0b4264b9ddfe12b9a2785f9c857349ad351b51f1"
+    },
+    "resume_after_successful_check_in": true
+  },
+  "current_inputs": {
+    "application_contract": {
+      "path": ".noeaaeue/bindings/moebius-current-inputs-v5.json",
+      "sha256": "1b97cf890556c282c22d344812d4ab072b80c27ca4254a3a611c8a451162dc05"
+    },
+    "catalog": {
+      "path": "docs/reference/math-source-catalog.json",
+      "sha256": "5c4eb372f2c910c1ae42e3b2168e5ae1672a7e9aeacc10d0a11916c17c4fbfcd"
+    },
+    "current_contract_acceptance": "The contract remains an input observation with kernel_checked:false. The separate actual native receipt records the successful source replay.",
+    "layout": {
+      "path": ".noeaaeue/documentation/math-layout.json",
+      "sha256": "db630d2d28c32af4333c18c729e6cc414af916c87c75661c29b3c90d4eaae98d"
+    },
+    "observation": {
+      "path": ".noeaaeue/bindings/current-source-observations.json",
+      "sha256": "79d9e73263a6790d60380d354fe472188045ebda3090f7ffdbd10d3e94e62614"
+    },
+    "observation_identity": "22e79fff1f6d121b9f42ce2a25cf8bdc0459c74c9a45e07081bc3f314e239971"
+  },
+  "dependency_provenance_limit": "Project sources were replayed from their exact frozen bytes. Pinned dependency HEADs and clean tracked source trees were checked, and the application privately sealed cached object families before elaboration. Cached terms are kernel-checked at trust zero; dependency sources were not replayed and no source-to-object provenance theorem is claimed.",
+  "documentation": {
+    "counts": {
+      "areas": 12,
+      "documented_objects": 59,
+      "intake_records": 68,
+      "lean_modules": 859,
+      "maintained_pages": 178,
+      "object_guides": 141,
+      "primary_sources": 137,
+      "selected_families": 3
+    },
+    "exact_current_source_observations": 860,
+    "guide_only_change_addendum": {
+      "path": ".noeaaeue/binding-repair/validation-completion/final-preservation-audit-workflow-v4-addendum.json",
+      "sha256": "d8bd92cddd741aa1b43b0ac86fd7d95d123f5c1de41706da453df060f2d1d0e0"
+    },
+    "hostile_controls_normal": 109,
+    "hostile_controls_optimized": 109,
+    "normal_and_optimized_documentation_and_layout_checks": "passed",
+    "record": {
+      "path": ".noeaaeue/binding-repair/validation-completion/documentation-final-state-v4.json",
+      "sha256": "a22a2eea49c592df52f29da9e42a37ed5bc6d689223fb8349c82f1fbed5582c1"
+    },
+    "render": "passed",
+    "replay_bound_hashes_unchanged": 517
+  },
+  "git": {
+    "branch": "main",
+    "commit_identity": "The subsequent checkpoint commit contains this report; its id is recorded in the conversation and writer resume messages.",
+    "diff_check": {
+      "full_staged_data": "Expected preserved-byte whitespace notices documented in check-in-byte-verification.json",
+      "pre_stage_tracked_changes": "passed"
+    },
+    "human_requested_all_checkpoint_work_checked_in": true,
+    "pre_check_in_head": "ac2a49a5e438375e289ec7a96fbe67bc18acbad3",
+    "remote_publication_requested": false,
+    "unmerged_paths": []
+  },
+  "historical_pins": {
+    "current_status": {
+      "path": ".noeaaeue/binding-repair/validation-completion/moebius-binding-status.json",
+      "sha256": "ba166c3a68487d282413fa54d753d591374b8f6d1ca1ab4de0167c397230da8c"
+    },
+    "pin_controls": {
+      "path": ".noeaaeue/binding-repair/validation-completion/root-checks.json",
+      "sha256": "ef57385b35772a23bbc570e7b685d3f3309d16a63eb95dea3f3dbc03afb874a7"
+    },
+    "policy": "All original expected hashes and historical receipts remain unchanged. Stale historical pins remain explicitly stale and their historical replay remains blocked. Expected stale-pin refusals are successful safety controls, not current admission.",
+    "quartic_status": {
+      "path": ".noeaaeue/binding-repair/validation-completion/quartic-pin-status.json",
+      "sha256": "82cfe45b9f73836463c3b79910c6a9c70f4f458fe489cc4111126e891a50c35c"
+    }
+  },
+  "other_checks": {
+    "current_catalog_conformance": {
+      "path": ".noeaaeue/binding-repair/validation-completion/conformance-current-catalog.json",
+      "sha256": "ea9d584baeb8b1ea5e77d2fb162bdcfd7b16bb58e8d33de784bb7e60e0811c49"
+    },
+    "layout_guard_controls": {
+      "path": ".noeaaeue/binding-repair/validation-completion/layout-guard-repair-v2.json",
+      "sha256": "7fbfbc3cfbab8f725a1bf4b9d3adf3670b91ac2987d04c4145936c803761e33f"
+    },
+    "process_tests": 660,
+    "record": {
+      "path": ".noeaaeue/binding-repair/validation-completion/root-checks.json",
+      "sha256": "ef57385b35772a23bbc570e7b685d3f3309d16a63eb95dea3f3dbc03afb874a7"
+    },
+    "script_tests": 1059,
+    "status": "passed"
+  },
+  "preservation": {
+    "checked_documentation_custody": {
+      "path": ".noeaaeue/binding-repair/validation-completion/documentation-v4-current-input-custody.json",
+      "sha256": "5dc2c88cd60ddfe2e61f24fd45a5f6fecb990ae845ad756323fb9b33d127e17a"
+    },
+    "checked_native_metadata_custody": {
+      "path": ".noeaaeue/binding-repair/validation-completion/checked-current-metadata/custody-index.json",
+      "sha256": "3f6a978bb548de6222ad2a694bb0cb605903dd9f34548b339d1194fdae6b073c"
+    },
+    "environment_legal_and_ignore_inputs_unchanged": 10,
+    "historical_immutable_files_unchanged": 5360,
+    "ignored_original_variants": ".noeaaeue/binding-repair/originals/validation-completion/",
+    "known_external_mutable_status_updates": 2,
+    "latest_baseline_formal_files_unchanged": 854,
+    "no_Lean_source_or_entrypoint_writes_by_this_team": true,
+    "pre_pause_external_new_formal_paths": 13,
+    "records": [
+      {
+        "path": ".noeaaeue/binding-repair/validation-completion/final-preservation-audit.json",
+        "sha256": "53bbc4f15e6bb89965f6268159e645e6d7a99f0736563e9390c9bd9893c37457"
+      },
+      {
+        "path": ".noeaaeue/binding-repair/validation-completion/pre-resume-preservation-v2.json",
+        "sha256": "362f1ec5441fd7b85e980ed8bea636015cfc272f611d1c1f3e5642d997497c3a"
+      },
+      {
+        "path": ".noeaaeue/binding-repair/validation-completion/final-preservation-audit-workflow-v4-addendum.json",
+        "sha256": "d8bd92cddd741aa1b43b0ac86fd7d95d123f5c1de41706da453df060f2d1d0e0"
+      }
+    ]
+  },
+  "public_library": {
+    "fatal_warnings": true,
+    "fresh_continuation_suffix": 245,
+    "memory_mib": 12288,
+    "original_failed_run": "Original 4096 MiB memory failure remains FAILED and unchanged. Its exact successful prefix, fresh suffix, independent lineage review and final native audit are separately recorded.",
+    "owned_declarations": 11817,
+    "producer_successful_prefix": 191,
+    "receipt": {
+      "path": ".noeaaeue/binding-repair/validation-completion/native/continuation-20261016T033238Z-b2e0ea8cdc/receipt.json",
+      "sha256": "c235a69007edac94eb56a966651e3736eb05349b2bfc5f40da29ea4b5658477a"
+    },
+    "record": {
+      "path": ".noeaaeue/binding-repair/validation-completion/boundary-validation-final.json",
+      "sha256": "06ce9470f06b947c42ac338f4aa19aa022f14b44e8624593ad725212fb093dda"
+    },
+    "sources": 436,
+    "status": "passed-by-explicit-source-bound-continuation",
+    "trust": 0
+  },
+  "result": [
+    "Current source and metadata bindings reconciled without source taxonomy changes.",
+    "divisor-sectors.md registration and exact source/receipt/contribution scope verified; new additive-character guides registered against actual selected evidence.",
+    "Pinned Lean source replay, owned-declaration axiom audits, runtime profile rejection controls, documentation checks and Python suites passed at this snapshot."
+  ],
+  "schema": "lean-repository-validation-completion-summary-v1",
+  "scope": {
+    "GRWTSK_modules": 859,
+    "GRWTSK_or_entrypoint_edits_by_this_work": false,
+    "candidate_only_source_scope": "81 candidate-only/unexported sources retain their individual selected or pending scopes outside the public-library replay; some have narrower successful selected receipts.",
+    "candidate_source_acceptance_from_observation": false,
+    "candidate_source_only_paths": 81,
+    "current_public_library_sources_including_entrypoint": 436,
+    "historical_receipt_rewrites": false,
+    "observed_Lean_inputs": 860,
+    "open_arithmetic_premises_filled": false,
+    "rh_proved": false,
+    "taxonomy_changes": false,
+    "whole_repository_admission": false
+  },
+  "status": "ALL_REQUIRED_CURRENT_BINDING_DOCUMENTATION_NATIVE_AND_PROFILE_GATES_PASSED",
+  "summary_pre_check_in_details_sha256": "e6deda011130a339141ae03fb51c07487c62f5284588764ddfa5f03084c1bb4d",
+  "workflow": {
+    "guide": {
+      "path": ".noeaaeue/documentation/current-validation-workflow.md",
+      "sha256": "a058aad62178eca8caa5fae1cffb80fcc016c151e22db2489f685e811a5fecdc"
+    },
+    "preparation_recipe": {
+      "path": ".noeaaeue/binding-repair/validation-completion/workflow-owner-preparation-proposal.json",
+      "sha256": "968426dca1dcfe0369b5c7490376f572ea605b95179913dbeeb033f52a6320ec"
+    },
+    "recommended_use": "Selected source-bound native checks during bounded development; one integration owner freezes and installs new current bindings at a quiet shared checkpoint. Run native checks serially and retain every historical result."
+  }
+}

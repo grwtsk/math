@@ -4,16 +4,16 @@
 
 | Inventory | Count |
 |---|---:|
-| Object guides | 13 |
-| Documented object groups | 9 |
-| Distinct primary sources linked | 13 |
-| Lean source modules | 57 |
+| Object guides | 14 |
+| Documented object groups | 10 |
+| Distinct primary sources linked | 14 |
+| Lean source modules | 63 |
 | Archive intake records | 3 |
 | Selected catalog families | 0 |
 
 These counts measure documentation and source coverage. They do not count accepted theorems or establish that every source module is documented or checked. [Definitions and limits](../../reference/library-pages.md#count-definitions).
 
-At least 179 source declaration commands, including 114 theorem/lemma commands, across 48 parsed Lean source modules; 9 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
+At least 221 source declaration commands, including 138 theorem/lemma commands, across 54 parsed Lean source modules; 9 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
 
 ## Cocycle
 
@@ -72,6 +72,14 @@ Linked primary-source scope: 2 source declaration commands, including 2 theorem/
 
 - [Determinant-one ordered products](OrderedProduct/determinant.md).
 
+## OrientedRealLine
+
+1 object guide · 1 distinct linked primary source file.
+
+Linked primary-source scope: 13 source declaration commands, including 10 theorem/lemma commands, across 1 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+
+- [Positive scales and coherent transport on real lines](OrientedRealLine/transport.md).
+
 ## Schrodinger
 
 4 object guides · 4 distinct linked primary source files.
@@ -93,4 +101,4 @@ Linked primary-source scope: 3 source declaration commands, including 2 theorem/
 
 ## Sources and verification
 
-[Selected catalog](../../reference/results.md) · [Archive source candidates](../../reference/source-intake.md) · [Verification interfaces](../../reference/verification-interfaces.md).
+[Selected catalog](../../reference/results.md) · [Archive source candidates](../../reference/source-intake.md).

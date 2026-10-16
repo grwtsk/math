@@ -1,5 +1,6 @@
 # Ordered transfer and state propagation
 
+
 The interface carries established finite ordered products and two-coordinate state propagation. `orderedTransfer A m n` is the product starting at `n` with length `m - n`, with each new factor on the left. Its definition needs only a monoid. The state theorems keep a commutative semiring and the exact hypothesis `∀ n, X (n+1) = (A n).mulVec (X n)`. The endpoint theorem additionally requires `n ≤ m`; natural subtraction cannot replace that premise.
 
 GRWTSK added canonical placement and checked reuse while preserving the complete supported formal contract. The original endpoint-state proof uses the canonical ordered transfer and iterated-product theorem. One definition, two source theorems and one stored equation helper are checked. No additional original external consumer was found in the selected source frontier. The retained module introduction discusses related gauge conventions; this slice supplies the three declarations above and makes no new gauge, spectral identification or RH claim.
@@ -8,7 +9,9 @@ Direction: grwtsk contributors. Formalization and verification assistance: OpenA
 
 ## Source and verification scope
 
-[Source](../../../../GRWTSK/LinearAlgebra/OrderedTransfer.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+[Source](../../../../GRWTSK/LinearAlgebra/OrderedTransfer.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../../.noeaaeue/documentation/reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

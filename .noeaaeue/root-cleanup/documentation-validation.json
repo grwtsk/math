@@ -1,0 +1,105 @@
+{
+  "schema": "documentation-root-cleanup-validation-v1",
+  "render": {
+    "chunk_id": "6e27f7",
+    "wall_time_seconds": 0.000006084,
+    "exit_code": 1,
+    "original_token_count": 303,
+    "output": "Traceback (most recent call last):\n  File \"/Users/local/Desktop/math/.noeaaeue/scripts/check_documentation_layout.py\", line 53, in read_safe\n    visible_before=os.stat(part,dir_fd=fd,follow_symlinks=False)\nFileNotFoundError: [Errno 2] No such file or directory: 'AsymptoticAnalysis'\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/Users/local/Desktop/math/.noeaaeue/scripts/check_documentation.py\", line 167, in <module>\n    if __name__=='__main__':main()\n  File \"/Users/local/Desktop/math/.noeaaeue/scripts/check_documentation.py\", line 118, in main\n    names=record_input_names(d);bound,observations=layout.observe_inputs(ROOT,names,{\n  File \"/Users/local/Desktop/math/.noeaaeue/scripts/check_documentation_layout.py\", line 286, in observe_inputs\n    raw,observation=read_safe(root,name,with_observation=True)\n  File \"/Users/local/Desktop/math/.noeaaeue/scripts/check_documentation_layout.py\", line 93, in read_safe\n    raise LayoutError('unreadable path: '+name+' ('+type(error).__name__+')') from error\ncheck_documentation_layout.LayoutError: unreadable path: GRWTSK/Analysis/AsymptoticAnalysis/PolynomialErrorBound.lean (FileNotFoundError)\n"
+  },
+  "required_commands": [
+    {
+      "command": "python3 -B .noeaaeue/scripts/check_documentation.py",
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "cde905",
+        "wall_time_seconds": 0.000009875,
+        "exit_code": 1,
+        "original_token_count": 303,
+        "output": "Traceback (most recent call last):\n  File \"/Users/local/Desktop/math/.noeaaeue/scripts/check_documentation_layout.py\", line 53, in read_safe\n    visible_before=os.stat(part,dir_fd=fd,follow_symlinks=False)\nFileNotFoundError: [Errno 2] No such file or directory: 'AsymptoticAnalysis'\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/Users/local/Desktop/math/.noeaaeue/scripts/check_documentation.py\", line 167, in <module>\n    if __name__=='__main__':main()\n  File \"/Users/local/Desktop/math/.noeaaeue/scripts/check_documentation.py\", line 118, in main\n    names=record_input_names(d);bound,observations=layout.observe_inputs(ROOT,names,{\n  File \"/Users/local/Desktop/math/.noeaaeue/scripts/check_documentation_layout.py\", line 286, in observe_inputs\n    raw,observation=read_safe(root,name,with_observation=True)\n  File \"/Users/local/Desktop/math/.noeaaeue/scripts/check_documentation_layout.py\", line 93, in read_safe\n    raise LayoutError('unreadable path: '+name+' ('+type(error).__name__+')') from error\ncheck_documentation_layout.LayoutError: unreadable path: GRWTSK/Analysis/AsymptoticAnalysis/PolynomialErrorBound.lean (FileNotFoundError)\n"
+      }
+    },
+    {
+      "command": "python3 -O -B .noeaaeue/scripts/check_documentation.py",
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "56419f",
+        "wall_time_seconds": 0.0000055,
+        "exit_code": 1,
+        "original_token_count": 303,
+        "output": "Traceback (most recent call last):\n  File \"/Users/local/Desktop/math/.noeaaeue/scripts/check_documentation_layout.py\", line 53, in read_safe\n    visible_before=os.stat(part,dir_fd=fd,follow_symlinks=False)\nFileNotFoundError: [Errno 2] No such file or directory: 'AsymptoticAnalysis'\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/Users/local/Desktop/math/.noeaaeue/scripts/check_documentation.py\", line 167, in <module>\n    if __name__=='__main__':main()\n  File \"/Users/local/Desktop/math/.noeaaeue/scripts/check_documentation.py\", line 118, in main\n    names=record_input_names(d);bound,observations=layout.observe_inputs(ROOT,names,{\n  File \"/Users/local/Desktop/math/.noeaaeue/scripts/check_documentation_layout.py\", line 286, in observe_inputs\n    raw,observation=read_safe(root,name,with_observation=True)\n  File \"/Users/local/Desktop/math/.noeaaeue/scripts/check_documentation_layout.py\", line 93, in read_safe\n    raise LayoutError('unreadable path: '+name+' ('+type(error).__name__+')') from error\ncheck_documentation_layout.LayoutError: unreadable path: GRWTSK/Analysis/AsymptoticAnalysis/PolynomialErrorBound.lean (FileNotFoundError)\n"
+      }
+    },
+    {
+      "command": "python3 -B .noeaaeue/scripts/check_documentation_layout.py",
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "42337b",
+        "wall_time_seconds": 0.000005167,
+        "exit_code": 1,
+        "original_token_count": 14,
+        "output": "blocked-on-documentation: noncanonical live input path\n"
+      }
+    },
+    {
+      "command": "python3 -O -B .noeaaeue/scripts/check_documentation_layout.py",
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "5fefce",
+        "wall_time_seconds": 0.000023083,
+        "exit_code": 1,
+        "original_token_count": 14,
+        "output": "blocked-on-documentation: noncanonical live input path\n"
+      }
+    },
+    {
+      "command": "python3 -B .noeaaeue/scripts/test_documentation_layout.py",
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "6d40ed",
+        "wall_time_seconds": 0.930568875,
+        "exit_code": 0,
+        "original_token_count": 50,
+        "output": "...................................................................................................\n----------------------------------------------------------------------\nRan 99 tests in 0.979s\n\nOK\n"
+      }
+    },
+    {
+      "command": "python3 -O -B .noeaaeue/scripts/test_documentation_layout.py",
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "d4e968",
+        "wall_time_seconds": 0.929784958,
+        "exit_code": 0,
+        "original_token_count": 50,
+        "output": "...................................................................................................\n----------------------------------------------------------------------\nRan 99 tests in 0.975s\n\nOK\n"
+      }
+    }
+  ],
+  "corrected_layout_commands": [
+    {
+      "command": "python3 -B .noeaaeue/scripts/check_documentation_layout.py",
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "ceb9b8",
+        "wall_time_seconds": 0.096039917,
+        "exit_code": 1,
+        "original_token_count": 28,
+        "output": "blocked-on-documentation: unreadable path: GRWTSK/Algebra/LinearAlgebra/AlmostMathieu.lean (FileNotFoundError)\n"
+      }
+    },
+    {
+      "command": "python3 -O -B .noeaaeue/scripts/check_documentation_layout.py",
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "e90512",
+        "wall_time_seconds": 0.096741,
+        "exit_code": 1,
+        "original_token_count": 28,
+        "output": "blocked-on-documentation: unreadable path: GRWTSK/Algebra/LinearAlgebra/AlmostMathieu.lean (FileNotFoundError)\n"
+      }
+    }
+  ],
+  "transient_failure": "The first layout run detected relocated semantic evidence field keys; corrected before final layout runs. Original failed outputs are retained here.",
+  "result": "99 hostile documentation controls pass normally and with -O. Current document check/render remain blocked on pre-existing missing proposed GRWTSK source paths; no source taxonomy or proof-status rebinding performed.",
+  "preservation": "All initial docs and README bytes retained under .noeaaeue/root-cleanup/originals."
+}

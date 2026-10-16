@@ -1,5 +1,6 @@
 # Obstructions to prefix representations of orders
 
+
 Let $R$ be a relation on a type $A$. Suppose $a,b,c\in A$ satisfy $R(a,c)$
 and $R(b,c)$, while neither $R(a,b)$ nor $R(b,a)$ holds. There is no map
 $f:A\to\operatorname{List}(B)$ that both preserves and reflects $R$ as
@@ -45,14 +46,14 @@ refinement is inferred.
 
 The [source](../../../../GRWTSK/Order/Embeddings/PrefixObstruction.lean),
 [positive consumers](../../../../GRWTSK/Order/Embeddings/Checks/Positive/PrefixObstruction.lean)
-and [native receipt](../../../../evidence/Order/Embeddings/prefix-obstruction-checks-2026-10-15.json)
+and [native receipt](../../../../.noeaaeue/evidence/Order/Embeddings/prefix-obstruction-checks-2026-10-15.json)
 bind exact bytes, controls and the complete local import closure. Replay uses
 pinned Lean 4.33.0, trust zero, fatal warnings and a complete owned-declaration
 and transitive-axiom audit, permitting only `propext`, `Classical.choice` and
 `Quot.sound`. Pinned dependency objects are reused and fingerprinted.
 
-The [integration evidence](../../../../evidence/Order/Embeddings/prefix-obstruction-integration-2026-10-15.json)
-and [bounded source review](../../../../evidence/Order/Embeddings/prefix-obstruction-source-review-2026-10-15.json)
+The [integration evidence](../../../../.noeaaeue/evidence/Order/Embeddings/prefix-obstruction-integration-2026-10-15.json)
+and [bounded source review](../../../../.noeaaeue/evidence/Order/Embeddings/prefix-obstruction-source-review-2026-10-15.json)
 preserve exact hypotheses, source identities, individual credit and limits.
 Source syntax counts and taxonomy counts confer no proof acceptance. The
 user's 16 declared method families and 215 declared records still lack supplied
@@ -62,6 +63,8 @@ whole-library acceptance or independent-validation claim is made.
 Human mathematical direction: grwtsk contributors. Formalization and checking
 assistance: OpenAI Codex. Local source is MIT; Lean and Mathlib retain upstream
 authors and licenses. No mathematical novelty is claimed.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

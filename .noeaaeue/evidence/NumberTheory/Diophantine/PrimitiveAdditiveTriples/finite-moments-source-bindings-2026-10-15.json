@@ -1,0 +1,53 @@
+{
+  "schema": "finite-moments-source-bindings-v1",
+  "repository_commit_observed": "8e35dcd5fb4f42640aaaaf68e682a2254736f4da",
+  "lean_toolchain": "leanprover/lean4:v4.33.0",
+  "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "sources": [
+    {
+      "path": ".lake/packages/mathlib/Mathlib/NumberTheory/ArithmeticFunction/Moebius.lean",
+      "sha256": "3d739a22865bed810b05ccdec05f16c18000d9c0737b4a12fee7494713d06e23",
+      "declaration_anchors": [
+        "ArithmeticFunction.moebius",
+        "ArithmeticFunction.coe_zeta_mul_coe_moebius"
+      ],
+      "role": "Pinned local source/declaration locator; proof acceptance from selected Lean receipt, not the source digest",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Definitions.lean",
+      "sha256": "585be0c9c3bda1333ddd442d230ad5701e87ef5163c10ec3c1225a5584bfe892",
+      "declaration_anchors": [
+        "PrimitiveAdditiveTriple",
+        "PrimitiveAdditiveTriple.coordinates_injective",
+        "PrimitiveAdditiveTriple.finite_height"
+      ],
+      "role": "Pinned local source/declaration locator; proof acceptance from selected Lean receipt, not the source digest",
+      "license": "MIT"
+    }
+  ],
+  "selected_local_closure": [
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Definitions.lean",
+    "GRWTSK/NumberTheory/ArithmeticFunctions/CoprimeDivisorFilter.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Moments.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/MomentReindexing.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Radical.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/ABCStatement.lean"
+  ],
+  "proof_receipt": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/finite-moments-checks-2026-10-15-replay-2.json",
+  "external_queries": 0,
+  "external_downloads": 0,
+  "source_digests_grant_mathematical_acceptance": false,
+  "axiom_scope": {
+    "owned_declarations": 81,
+    "unsafe_or_partial": [],
+    "transitive_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "previous_selected_receipts": [
+    ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/finite-moments-checks-2026-10-15.json"
+  ]
+}

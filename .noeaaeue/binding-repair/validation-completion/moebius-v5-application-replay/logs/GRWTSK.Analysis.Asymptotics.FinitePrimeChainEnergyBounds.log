@@ -1,0 +1,2 @@
+'PPNCP04.completion_energy_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PPNCP04.amortized_completion_implies_P04' depends on axioms: [propext, Classical.choice, Quot.sound]

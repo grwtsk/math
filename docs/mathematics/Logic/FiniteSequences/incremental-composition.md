@@ -1,5 +1,6 @@
 # Composition of incremental dictionary decoding
 
+
 Let `original : Packed Key Payload` have valid references and let `a` and `b`
 be finite lists of key–payload occurrences, with decidable payload equality.
 Applying the actual incremental encoder twice has the same decoded result as
@@ -39,15 +40,15 @@ The [source](../../../../GRWTSK/Logic/FiniteSequences/IncrementalComposition.lea
 uses the accepted [incremental encoder](incremental-dictionary.md), rather than
 an assumed serializer law. The
 [positive consumers](../../../../GRWTSK/Logic/FiniteSequences/Checks/Positive/IncrementalComposition.lean)
-and [native receipt](../../../../evidence/Logic/FiniteSequences/incremental-composition-checks-2026-10-15.json)
+and [native receipt](../../../../.noeaaeue/evidence/Logic/FiniteSequences/incremental-composition-checks-2026-10-15.json)
 bind exact source bytes and the complete local import closure. Replay uses
 pinned Lean 4.33.0, trust zero, fatal warnings and a complete owned-declaration
 and transitive-axiom audit. Only `propext`, `Classical.choice` and `Quot.sound`
 are permitted; pinned dependency objects are reused and fingerprinted.
 
-The [integration record](../../../../evidence/Logic/FiniteSequences/incremental-composition-integration-2026-10-15.json)
+The [integration record](../../../../.noeaaeue/evidence/Logic/FiniteSequences/incremental-composition-integration-2026-10-15.json)
 records contribution roles and the
-[source review](../../../../evidence/Logic/FiniteSequences/composition-source-review-2026-10-15.json)
+[source review](../../../../.noeaaeue/evidence/Logic/FiniteSequences/composition-source-review-2026-10-15.json)
 records bounded antecedents. These finite-list results do not establish a
 Python or JSON refinement, cryptographic authentication, byte serialization,
 compression, filesystem transactions, complexity bounds, whole-repository
@@ -56,6 +57,8 @@ acceptance or independent review.
 Human mathematical direction: grwtsk contributors. Formalization and checking
 assistance: OpenAI Codex. Local source is MIT; Lean and Mathlib retain upstream
 authors and licenses. No mathematical novelty is claimed.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

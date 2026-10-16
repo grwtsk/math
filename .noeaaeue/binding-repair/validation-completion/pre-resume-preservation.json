@@ -1,0 +1,63 @@
+{
+  "baseline_environment_and_legal_files": 9,
+  "baseline_formal_files": 854,
+  "bound_metadata_inputs": 29,
+  "branch": "main",
+  "checked_at": "2026-10-16T05:22:42.502720+00:00",
+  "checks": {
+    "baseline_environment_and_legal_unchanged": true,
+    "baseline_formal_tree_unchanged": true,
+    "checked_metadata_originals_and_copies_match": true,
+    "existing_main_checkout": true,
+    "git_diff_check": true,
+    "historical_immutable_records_unchanged": true,
+    "known_mutable_changes_only": true,
+    "minimal_root": true,
+    "no_unmerged_paths": true,
+    "pre_pause_new_formal_hashes_unchanged": true
+  },
+  "custody_errors": [],
+  "git_diff_check_output": "",
+  "git_head": "ac2a49a5e438375e289ec7a96fbe67bc18acbad3",
+  "git_status": ".noeaaeue/binding-repair/validation-completion/pre-resume-git-status.z",
+  "historical_immutable_records": 5360,
+  "known_external_mutable_changes": [
+    {
+      "expected_sha256": "fdad5a913a695b77ba4225f0b6391efaba6076137c7a051284b40e9f003469b6",
+      "observed_sha256": "7385316054953bb3874551c47a41d7d4a816d1adc5419f43fd81b8e98832bd98",
+      "path": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/abc-resume-divisor-sectors-2026-10-15.json"
+    },
+    {
+      "expected_sha256": "2127033cbbd95d38375804cb9f586ee64ea36faf99647e83919fa660c577efb3",
+      "observed_sha256": "4548b4edb06f51cd6168f200584b83da2489daccf0a641106becbdebbc03a7fe",
+      "path": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/divisor-sectors-status-2026-10-15.json"
+    }
+  ],
+  "latest_baseline_files": 6472,
+  "new_source_errors": [],
+  "outcome": "passed",
+  "pre_pause_new_formal_sources": 13,
+  "root_entries": [
+    ".git",
+    ".gitattributes",
+    ".gitignore",
+    ".lake",
+    ".noeaaeue",
+    "AGENTS.md",
+    "GRWTSK",
+    "GRWTSK.lean",
+    "LICENSE",
+    "LICENSES",
+    "NOTICE",
+    "README.md",
+    "docs",
+    "lake-manifest.json",
+    "lakefile.toml",
+    "lean-toolchain"
+  ],
+  "schema": "validation-completion-pre-resume-preservation-v1",
+  "scope": "Read-only pre-resume byte/membership and Git audit. Exact two mutable coordination states were external pre-pause updates, separately preserved. No new mathematical admission or historical receipt update.",
+  "status_snapshot_sha256": "0bff269b4c78b15024ad76be0a43f42d08bd9f5494e6ee56dc8f36aa537fd128",
+  "unchanged_latest_baseline_files": 6470,
+  "unmerged": []
+}

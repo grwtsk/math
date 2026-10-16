@@ -1,0 +1,9 @@
+{
+  "outcome": "passed",
+  "scope": "links and source/evidence bindings for three selected guides against the full registry; not repository-wide structural acceptance",
+  "pages": [
+    "docs/mathematics/Combinatorics/Sequences/balanced-partition-sampling.md",
+    "docs/mathematics/Analysis/Fourier/partition-character-energy.md",
+    "docs/mathematics/Analysis/Fourier/subset-sum-laws.md"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "schema": "paused-writers-current-source-observation-v1",
+  "created_at": "2026-10-16T03:01:25.771719+00:00",
+  "previous": {
+    "identity": "5b2dc4d57996bcf80aaba4c88fccadad362c9c3bc6705dbc060d6a00585c772d",
+    "sha256": "3485085ce597bccc5536ce6094dad03a5cd4e51a09e238c4a45cef5d542b0bd1"
+  },
+  "current": {
+    "identity": "22e79fff1f6d121b9f42ce2a25cf8bdc0459c74c9a45e07081bc3f314e239971",
+    "sha256": "79d9e73263a6790d60380d354fe472188045ebda3090f7ffdbd10d3e94e62614"
+  },
+  "source_count": 860,
+  "active_library_source_count": 436,
+  "candidate_source_count": 81,
+  "added_paths": [
+    "GRWTSK/Analysis/Fourier/ZModExpectedLayers.lean",
+    "GRWTSK/Analysis/Fourier/ZModPartitionConcentration.lean",
+    "GRWTSK/Combinatorics/Sequences/BalancedPartitionTails.lean",
+    "GRWTSK/Combinatorics/Sequences/ConditionalPartitionExposure.lean",
+    "GRWTSK/Combinatorics/Sequences/HypergeometricLowerTail.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/AdditiveCharacterMoments.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorMissingNoWrap.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorScaledCongruenceCancellation.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorToABC.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorUnscaledJointWeight.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorWrongNormalization.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Positive/AdditiveCharacterMoments.lean"
+  ],
+  "source_bytes_changed": [],
+  "historical_input_changes": {},
+  "mathematical_admission": false,
+  "acceptance_inherited": false,
+  "GRWTSK_or_entrypoint_edited_by_reconciliation": false,
+  "source_writers": "All three paused with explicit acknowledgment before this observation; docs metadata/navigation settled."
+}

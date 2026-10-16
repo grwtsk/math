@@ -4,16 +4,16 @@
 
 | Inventory | Count |
 |---|---:|
-| Object guides | 32 |
-| Documented object groups | 14 |
-| Distinct primary sources linked | 30 |
-| Lean source modules | 221 |
+| Object guides | 39 |
+| Documented object groups | 17 |
+| Distinct primary sources linked | 37 |
+| Lean source modules | 264 |
 | Archive intake records | 19 |
 | Selected catalog families | 1 |
 
 These counts measure documentation and source coverage. They do not count accepted theorems or establish that every source module is documented or checked. [Definitions and limits](../../reference/library-pages.md#count-definitions).
 
-At least 1767 source declaration commands, including 1368 theorem/lemma commands, across 181 parsed Lean source modules; 40 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
+At least 1903 source declaration commands, including 1464 theorem/lemma commands, across 224 parsed Lean source modules; 40 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
 
 ## ArithmeticFunctions
 
@@ -23,6 +23,14 @@ Linked primary-source scope: 10 source declaration commands, including 8 theorem
 
 - [Complete density Möbius correction](ArithmeticFunctions/density-correction.md).
 - [Signed Möbius cutoff decomposition](ArithmeticFunctions/signed-cutoffs.md).
+
+## ArithmeticGeometry / LogThetaComparison
+
+1 object guide · 1 distinct linked primary source file.
+
+Linked primary-source scope: 8 source declaration commands, including 1 theorem/lemma commands, across 1 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+
+- [Pilot comparisons and source correspondence obligations](ArithmeticGeometry/LogThetaComparison/abc-iut-objections.md).
 
 ## ContinuedFractions
 
@@ -35,11 +43,23 @@ Linked primary-source scope: 100 source declaration commands, including 79 theor
 
 ## Cyclotomic
 
-1 object guide · 1 distinct linked primary source file.
+2 object guides · 2 distinct linked primary source files.
 
-Linked primary-source scope: 13 source declaration commands, including 10 theorem/lemma commands, across 1 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+Linked primary-source scope: 34 source declaration commands, including 24 theorem/lemma commands, across 2 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
+- [Cubic-root reduction in the third cyclotomic integer ring](Cyclotomic/third-cyclotomic-reduction.md).
 - [Ideal norms in the third cyclotomic integer ring](Cyclotomic/third-cyclotomic-ideals.md).
+
+## Diophantine / PrimitiveAdditiveTriples
+
+4 object guides · 4 distinct linked primary source files.
+
+Linked primary-source scope: 24 source declaration commands, including 17 theorem/lemma commands, across 4 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+
+- [Additive-character moments of primitive triples](Diophantine/PrimitiveAdditiveTriples/additive-character-moments.md).
+- [Divisor sectors of additive moments](Diophantine/PrimitiveAdditiveTriples/divisor-sectors.md).
+- [Finite primitive additive moments](Diophantine/PrimitiveAdditiveTriples/moments.md).
+- [Primitive additive triples and the abc target](Diophantine/PrimitiveAdditiveTriples/abc-proof-frontier.md).
 
 ## Ideal
 
@@ -119,6 +139,14 @@ Linked primary-source scope: 42 source declaration commands, including 33 theore
 - [Finite causal prime filters and insertion energy](Moebius/PrimeFilters/cascade.md).
 - [Uniform finite-product suppliers: a written obstruction](Moebius/PrimeFilters/uniform-supplier-obstruction.md).
 
+## Polynomial
+
+1 object guide · 1 distinct linked primary source file.
+
+Linked primary-source scope: 1 source declaration commands, including 1 theorem/lemma commands, across 1 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+
+- [Polynomial derivative and radical degree bounds](Polynomial/derivative-radical-bound.md).
+
 ## Prime
 
 1 object guide · 1 distinct linked primary source file.
@@ -147,4 +175,4 @@ Linked primary-source scope: 13 source declaration commands, including 8 theorem
 
 ## Sources and verification
 
-[Selected catalog](../../reference/results.md) · [Archive source candidates](../../reference/source-intake.md) · [Verification interfaces](../../reference/verification-interfaces.md).
+[Selected catalog](../../reference/results.md) · [Archive source candidates](../../reference/source-intake.md).

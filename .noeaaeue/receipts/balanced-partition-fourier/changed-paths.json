@@ -1,0 +1,125 @@
+{
+  "scope": "new modules and explicit shared-file changes; generated projection preimages retained. Other Git changes are not attributed to this task.",
+  "files": {
+    ".noeaaeue/documentation/math-layout.json": "db630d2d28c32af4333c18c729e6cc414af916c87c75661c29b3c90d4eaae98d",
+    ".noeaaeue/documentation/reference/documentation-layout.json": "d71092945f8aa280d5d9f2b149010eada54f1cf95de734c29296a8e2a1af2d7e",
+    ".noeaaeue/scripts/check_balanced_partition_fourier.py": "3d5800f758ed4d3d0dd5f175381ec083134c658b89870ae24108d4387a5c883e",
+    "GRWTSK.lean": "d8bda509bc6f84a130b4747760134d1eabf3a565f3cbd3ac4c46ce16da35597e",
+    "GRWTSK/Analysis/Fourier/FiniteExponentialLayers.lean": "c26805fc06086ceadbb09ef1a5d781a3de6d824ca30947f576bd16118d9f0943",
+    "GRWTSK/Analysis/Fourier/ZModBalancedPartition.lean": "713091676046943a65970acf4c7e2761aa8b10a7d79946599de70624238d3c32",
+    "GRWTSK/Analysis/Fourier/ZModCharacterEnergy.lean": "0738ce7f3f01722a9d22debd2927564f46fe2ce34918385b0b36af8ed133ed92",
+    "GRWTSK/Analysis/Fourier/ZModConcentratedFrequencies.lean": "2a9a4a4cad5930af51a2fc0274cfde271c01f964399041ee6437248f6f5c2b12",
+    "GRWTSK/Analysis/Fourier/ZModIndependentSelection.lean": "7a45f532becf96acf98301a64c2eab4439e3923ad1e6434229860a0909074fb1",
+    "GRWTSK/Analysis/Fourier/ZModPartitionEnergy.lean": "0d8202957deed1ce1b660a0ab409a4b8e01e570e78b8285f69a1c8a7ee9223f1",
+    "GRWTSK/Analysis/Fourier/ZModSmallEnergySets.lean": "98cf9ea68fa5811befdc5c8b10e30c7d1148f94c4f04f1727578cf5a35886908",
+    "GRWTSK/Analysis/Fourier/ZModSmallEnergySpectrum.lean": "2cabfc6208a5ecf03981d6fd304de160d35ce8deb7427392db219c32ea94bbf8",
+    "GRWTSK/Combinatorics/Sequences/BalancedPartitionSampling.lean": "3339c1d1f47c02955f5401ec6eef45e993686e4a973d94b139d9d1cc66abcd93",
+    "GRWTSK/Combinatorics/Sequences/CyclicSumsetGrowth.lean": "86b8f712206e943ec593cd324180e20f68d12522dda47d28b5ebb5c0045b6d47",
+    "docs/index.md": "ec3843d319c66afac6afb82f74dbd33768dd9d814ca5081cb4c469e299f272d0",
+    "docs/mathematics/Analysis/Fourier/partition-character-energy.md": "aef397c0a5d6514010f363e880ec66e84bf2ce993e942520dfd1091724406c7c",
+    "docs/mathematics/Analysis/Fourier/subset-sum-laws.md": "bb1875c1fca806666f8ed2cdbb868042e4edba30ba3c5b312b84f68227f35a32",
+    "docs/mathematics/Analysis/index.md": "505f4f962ae7ca7f400bbe386486a7741e7df30a4e2ed35c2fc386797095cb83",
+    "docs/mathematics/Combinatorics/DirectedGraph/prefix-compaction-schedule.md": "9bc0fad728f9ff76bc5820116c842f3d393c7c91818433a12b61f742c3121028",
+    "docs/mathematics/Combinatorics/Sequences/balanced-partition-sampling.md": "a4cb2a10de8dcd9fadaf96814ea294a1b859a2a2cff725921484a22f39f545b1",
+    "docs/mathematics/Combinatorics/index.md": "e2e89eb3b431ccd71df2174cd193d24bdbc174542ad3626a0944ac9a41e1c127",
+    "docs/mathematics/NumberTheory/Cyclotomic/third-cyclotomic-reduction.md": "a41161d0a22c07be330fce2fbdcb6288ad77c34fbd8cca6ee859981c3a98403e",
+    "docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/divisor-sectors.md": "240283827b8246ade69c981c4b30ebc11bf74c57b9021cd7d5e53b091503e1ff",
+    "docs/mathematics/NumberTheory/index.md": "ddc78b34631ac0c911446988c5c88198dd2230c3241dc41369e7c8172845da4a",
+    "docs/reference/library-summary.json": "99fdce30882bcfdeaddc57f07ae20b161a12916f43522f5b915cac73ac256ab7",
+    "docs/reference/object-source-bindings.json": "24ff4bf595edbeff9d989a317878d2169f3dbe06085f9a5989b96e9b95b8e349"
+  },
+  "render_archives": [
+    {
+      "archive": ".noeaaeue/.local/documentation-index-render/20261016T023009374098Z",
+      "changed_preimages": [
+        {
+          "path": "docs/index.md",
+          "preimage_sha256": "744e76414fa10fcbca338c7add2b70649c241db10d3f8cc4b76e4f441dd43d67"
+        },
+        {
+          "path": "docs/mathematics/Analysis/index.md",
+          "preimage_sha256": "9f45b839992c96996c5b88185d816023247370198b08b689543e37e84bd3bab5"
+        },
+        {
+          "path": "docs/mathematics/NumberTheory/index.md",
+          "preimage_sha256": "158a44c520bc6a2ce681c87e704cce4b52ac50086cc404c4c67866a5ebcf73bf"
+        },
+        {
+          "path": "docs/mathematics/NumberTheory/Cyclotomic/third-cyclotomic-reduction.md",
+          "preimage_sha256": "427fdd3e84fc49c641b12178c504947828d1e798d97c35d32fb1d328f8eb376d"
+        },
+        {
+          "path": "docs/mathematics/Combinatorics/index.md",
+          "preimage_sha256": "1e13daebba744b7b54f0d2113bd7a70f2a5c07eae57379f08ebd8dae12dd8e26"
+        },
+        {
+          "path": "docs/mathematics/Combinatorics/DirectedGraph/prefix-compaction-schedule.md",
+          "preimage_sha256": "cf74f4f9a440620b4b3b2eeea1b8e8fa3a0b57a009f2eeb2586e005e86b3bb62"
+        },
+        {
+          "path": "docs/reference/library-summary.json",
+          "preimage_sha256": "03e71f3c421f8b86bc42dccfcdd2522e31ab52236cc260933f0854a49116876d"
+        }
+      ]
+    },
+    {
+      "archive": ".noeaaeue/.local/documentation-index-render/20261016T023510555942Z",
+      "changed_preimages": [
+        {
+          "path": "docs/reference/library-summary.json",
+          "preimage_sha256": "25e8929747e5d57611e30461973422a9504c1a59cfced0f39a1da9f75e87f3a7"
+        }
+      ]
+    },
+    {
+      "archive": ".noeaaeue/.local/documentation-index-render/20261016T023358731865Z",
+      "changed_preimages": [
+        {
+          "path": "docs/index.md",
+          "preimage_sha256": "012d7b3c012a8a54fafcbeae691334195d30de1d39f9bc9722b04f64b4d1208e"
+        },
+        {
+          "path": "docs/mathematics/NumberTheory/index.md",
+          "preimage_sha256": "4554f7071a840836449bf919d17d24bfa03b65417d754607b573684bfe20ab5d"
+        },
+        {
+          "path": "docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/divisor-sectors.md",
+          "preimage_sha256": "f8e52c21b0aa7e74eaae74885bff4eab0384f19051c8c16b940ddea0bc04a26a"
+        },
+        {
+          "path": "docs/reference/library-summary.json",
+          "preimage_sha256": "464fd110423e16443fee8e54a4747e00d47c5f7019d38b391abe9567a943d720"
+        }
+      ]
+    },
+    {
+      "archive": ".noeaaeue/.local/documentation-index-render/20261016T023046533478Z",
+      "changed_preimages": [
+        {
+          "path": "docs/index.md",
+          "preimage_sha256": "4d67ede30f4bf7653c69fb5b6dcdd3a40a8638e002bb26af0de24150068cfa06"
+        },
+        {
+          "path": "docs/mathematics/Analysis/index.md",
+          "preimage_sha256": "764959eda0621fbbeaddad8e8b9fbb8c1a66de34cfe4a1f22427982ba1c26edc"
+        },
+        {
+          "path": "docs/mathematics/Analysis/Fourier/partition-character-energy.md",
+          "preimage_sha256": "2870a66f9c080fafa8818ee822afca3da5290fc7ede62caa7465bc45a9e09825"
+        },
+        {
+          "path": "docs/mathematics/Combinatorics/index.md",
+          "preimage_sha256": "60cb0686db7ca3e21bcb6230c5ec64f9ced810a4cbb8e331d494b9f871e6160f"
+        },
+        {
+          "path": "docs/mathematics/Combinatorics/Sequences/balanced-partition-sampling.md",
+          "preimage_sha256": "94b6cd2cdb25cf704f6da590d614e4b34ab2e9a5d93f0c39281e49a68a22df48"
+        },
+        {
+          "path": "docs/reference/library-summary.json",
+          "preimage_sha256": "f9335da7f7effe4b39e169c5710cf95170a835fcc8426b1115e3ec63a76ba5ba"
+        }
+      ]
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 # Reindexing stored prefix-table states
 
+
 Fix old and new finite relation tables over the same vertex and role types.
 Let their actual relation-index map preserve source, target and selected role,
 and suppose it is injective. Start with an arbitrary structurally well-formed
@@ -51,8 +52,8 @@ the wrong root. The empty-reference state still retains its mapped root.
 
 The [source](../../../../GRWTSK/Combinatorics/DirectedGraph/PrefixTableReindex.lean),
 [positive controls](../../../../GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableReindex.lean),
-[native receipt](../../../../evidence/Combinatorics/DirectedGraph/prefix-table-reindex-checks-2026-10-15.json)
-and [integration record](../../../../evidence/Combinatorics/DirectedGraph/prefix-table-reindex-integration-2026-10-15.json)
+[native receipt](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-table-reindex-checks-2026-10-15.json)
+and [integration record](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-table-reindex-integration-2026-10-15.json)
 bind fresh selected local sources and actual controls. Pinned Lean 4.33.0
 checks trust zero, fatal warnings and every owned declaration and transitive
 axiom, allowing only `propext`, `Classical.choice` and `Quot.sound`.
@@ -66,6 +67,8 @@ criterion, mathematical-source acceptance or permission authority. Taxonomy
 similarity is not proof. Local code is MIT; imported Lean/Mathlib retain their
 individual credits and Apache-2.0 terms. Human direction: grwtsk contributors;
 formalization/checking: OpenAI Codex. Correlated review is not independent validation.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

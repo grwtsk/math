@@ -1,5 +1,6 @@
 # Free Dirichlet eigenvalues and sine basis
 
+
 The [free spectrum source](../../../../GRWTSK/Spectral/FreeDirichletSpectrum.lean) proves the entire finite eigenvalue list
 
 $$\lambda_{k,N}=2\cos\left(\frac{\pi(k+1)}{N+1}\right),\qquad 0\le k<N.$$
@@ -11,7 +12,9 @@ The [free Dirichlet spectrum source](../../../../GRWTSK/Spectral/FreeDirichletSp
 
 ## Source and verification scope
 
-[Source](../../../../GRWTSK/Spectral/FreeDirichletSpectrum.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+[Source](../../../../GRWTSK/Spectral/FreeDirichletSpectrum.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../../.noeaaeue/documentation/reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

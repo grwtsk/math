@@ -1,0 +1,39 @@
+Math layout: PASS (436 library modules, 0 findings).
+Deleted tracked regular sources (not enforced as present modules):
+  checks/Algebra/OrderedProduct/Audit.lean
+  checks/Algebra/OrderedProduct/Conjugation/Audit.lean
+  checks/Analysis/Asymptotics/PolynomialClosure/Controls/MissingReturn.lean
+  checks/Analysis/Energy/Controls/DeterminantPaysBudget.lean
+  checks/Analysis/Energy/Controls/DroppedResidual.lean
+  checks/Analysis/Energy/Controls/FiniteSamples.lean
+  checks/Analysis/Energy/Controls/MissingBudget.lean
+  checks/Analysis/Energy/Controls/SingleRate.lean
+  checks/Analysis/Fourier/WindowCertificates/Controls/WrongAngular.lean
+  checks/Analysis/InnerProductSpace/Polarization/Audit.lean
+  checks/Analysis/IntervalIntegral/Reflection/Audit.lean
+  checks/Analysis/TestFunctions/ExponentialMomentVariation/Audit.lean
+  checks/Combinatorics/GraphTheory/UnitDistanceGraph/Consumers.lean
+  checks/Combinatorics/GraphTheory/UnitDistanceGraph/Controls/WrongColor.lean
+  checks/Combinatorics/GraphTheory/UnitDistanceGraph/Declarations.lean
+  checks/Combinatorics/Sequences/QuotaDiscrepancy/Controls/FalseCoverage.lean
+  checks/GroupTheory/Actions/GaugeState/Audit.lean
+  checks/LinearAlgebra/CocycleProduct/Audit.lean
+  checks/LinearAlgebra/ComplexStructure/Audit.lean
+  checks/LinearAlgebra/ComplexStructure/CounterexampleAudit.lean
+  checks/LinearAlgebra/ComplexStructure/SignAudit.lean
+  checks/LinearAlgebra/Determinant/OrderedProduct/Audit.lean
+  checks/LinearAlgebra/JacobiTransfer/Audit.lean
+  checks/LinearAlgebra/OrderedTransfer/Audit.lean
+  checks/LinearAlgebra/Schrodinger/SampledPotential/Controls/FalseTraceBound.lean
+  checks/LinearAlgebra/Schrodinger/Sampling/Controls/FalseAlias.lean
+  checks/LinearAlgebra/SchrodingerTransfer/Audit.lean
+  checks/Logic/FiniteCoverage/Audit.lean
+  checks/Logic/Verification/Controls/Sorry.lean
+  checks/MoebiusResponseOwnerAudit.lean
+  checks/NumberTheory/ContinuedFractions/FrequencyRealization/Audit.lean
+  checks/NumberTheory/Prime/LeastPrime/Architecture.lean
+  checks/NumberTheory/Prime/LeastPrime/Audit.lean
+  checks/NumberTheory/Prime/LeastPrime/Controls/LowerBoundThree.lean
+  checks/NumberTheory/Prime/LeastPrime/Controls/OneIsPrime.lean
+  checks/Order/Floor/Controls/FalseRounding.lean
+Explicit path bans and subject-root checks are a structural lower bound; mathematical subject review is required.

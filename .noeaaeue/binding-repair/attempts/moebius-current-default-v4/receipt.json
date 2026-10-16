@@ -1,0 +1,5560 @@
+{
+  "status": "failed",
+  "kernel_checked": false,
+  "root": "/Users/local/Desktop/math",
+  "manifest": "/Users/local/Desktop/math/.noeaaeue/bindings/moebius-current-inputs-v4.json",
+  "manifest_sha256": "c511b72bb5f893372cec6b665b4d4e8d0d7a674c6d3096e549a805a26f09d75e",
+  "checker": "/Users/local/Desktop/math/.noeaaeue/scripts/check_moebius_response.py",
+  "checker_sha256": "55dccd5bc16c8b1e12b9e860e40336f9165200490428f53ad103e55b9d114d0f",
+  "source_records": {},
+  "snapshot_records": [
+    {
+      "logical_path": "VerificationInputs/manifest.json",
+      "sha256": "c511b72bb5f893372cec6b665b4d4e8d0d7a674c6d3096e549a805a26f09d75e",
+      "original_path": "/Users/local/Desktop/math/.noeaaeue/bindings/moebius-current-inputs-v4.json",
+      "original_identity": [
+        16777231,
+        230685759,
+        219811,
+        1792117686007378657,
+        1792117686007378657,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685822,
+        219811,
+        1792117690452808957,
+        1792117690452819332,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/VerificationInputs/manifest.json"
+    },
+    {
+      "logical_path": "VerificationInputs/check_moebius_response.py",
+      "sha256": "55dccd5bc16c8b1e12b9e860e40336f9165200490428f53ad103e55b9d114d0f",
+      "original_path": "/Users/local/Desktop/math/.noeaaeue/scripts/check_moebius_response.py",
+      "original_identity": [
+        16777231,
+        224738509,
+        105687,
+        1792117685436392872,
+        1792117685436392872,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685823,
+        105687,
+        1792117690453420877,
+        1792117690453429419,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/VerificationInputs/check_moebius_response.py"
+    },
+    {
+      "logical_path": ".gitignore",
+      "sha256": "11878005a765595183971a4f3cda78598026d5c7141f78c70c7aee451fd78cb1",
+      "original_path": "/Users/local/Desktop/math/.gitignore",
+      "original_identity": [
+        16777231,
+        199432608,
+        158,
+        1792117580736796461,
+        1792117580736796461,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685824,
+        158,
+        1792117690453831130,
+        1792117690453838421,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/.gitignore"
+    },
+    {
+      "logical_path": ".gitattributes",
+      "sha256": "ddc59a912d972f58f07e97019228d8bfe7e87d29931f5bf925cd805888ea3de9",
+      "original_path": "/Users/local/Desktop/math/.gitattributes",
+      "original_identity": [
+        16777231,
+        199432607,
+        152,
+        1792114331479221983,
+        1792114331479221983,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685825,
+        152,
+        1792117690454369925,
+        1792117690454379258,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/.gitattributes"
+    },
+    {
+      "logical_path": ".noeaaeue/bindings/current-source-observations.json",
+      "sha256": "7dac23206574f4bd3b8429acc1548df69c531678a67ff5ca60f52bdf82a64a19",
+      "original_path": "/Users/local/Desktop/math/.noeaaeue/bindings/current-source-observations.json",
+      "original_identity": [
+        16777231,
+        230684819,
+        4769370,
+        1792117621026121471,
+        1792117621035723291,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685828,
+        4769370,
+        1792117690457956446,
+        1792117690457975571,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/.noeaaeue/bindings/current-source-observations.json"
+    },
+    {
+      "logical_path": ".noeaaeue/bindings/moebius-current-profile-v2.json",
+      "sha256": "a3a139394cbb2b28ded498fa7be2b1251330b7b5c92299d180af154ae14d827a",
+      "original_path": "/Users/local/Desktop/math/.noeaaeue/bindings/moebius-current-profile-v2.json",
+      "original_identity": [
+        16777231,
+        230492700,
+        2561,
+        1792116042372345693,
+        1792116042372345693,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685829,
+        2561,
+        1792117690461354591,
+        1792117690461363799,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/.noeaaeue/bindings/moebius-current-profile-v2.json"
+    },
+    {
+      "logical_path": ".noeaaeue/scripts/check_math_layout.py",
+      "sha256": "618d847e9272dce96ec4da912287a704eef6e14bad273adbd55207a99eb3671b",
+      "original_path": "/Users/local/Desktop/math/.noeaaeue/scripts/check_math_layout.py",
+      "original_identity": [
+        16777231,
+        224738833,
+        77660,
+        1792116117795897079,
+        1792116117795897079,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685831,
+        77660,
+        1792117690462010011,
+        1792117690462018095,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/.noeaaeue/scripts/check_math_layout.py"
+    },
+    {
+      "logical_path": ".noeaaeue/scripts/check_moebius_response.py",
+      "sha256": "55dccd5bc16c8b1e12b9e860e40336f9165200490428f53ad103e55b9d114d0f",
+      "original_path": "/Users/local/Desktop/math/.noeaaeue/scripts/check_moebius_response.py",
+      "original_identity": [
+        16777231,
+        224738509,
+        105687,
+        1792117685436392872,
+        1792117685436392872,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685832,
+        105687,
+        1792117690462672640,
+        1792117690462681849,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/.noeaaeue/scripts/check_moebius_response.py"
+    },
+    {
+      "logical_path": ".noeaaeue/scripts/moebius_owner_census.py",
+      "sha256": "2d801d38c165c15aa539c7a0bb08a72e777b23fec813e8b98c1d184dcbd92b55",
+      "original_path": "/Users/local/Desktop/math/.noeaaeue/scripts/moebius_owner_census.py",
+      "original_identity": [
+        16777231,
+        224738863,
+        28542,
+        1792116195071172677,
+        1792116195071172677,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685833,
+        28542,
+        1792117690463390520,
+        1792117690463398561,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/.noeaaeue/scripts/moebius_owner_census.py"
+    },
+    {
+      "logical_path": ".noeaaeue/scripts/moebius_response_inputs.py",
+      "sha256": "5e1c92fccf7a7aaf4e46fedc5cfb54612bd246536f8681241fc9cc7d410115c6",
+      "original_path": "/Users/local/Desktop/math/.noeaaeue/scripts/moebius_response_inputs.py",
+      "original_identity": [
+        16777231,
+        211956879,
+        16659,
+        1792116547789621977,
+        1792116547789621977,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685834,
+        16659,
+        1792117690463935731,
+        1792117690463942856,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/.noeaaeue/scripts/moebius_response_inputs.py"
+    },
+    {
+      "logical_path": ".noeaaeue/scripts/repository_paths.py",
+      "sha256": "4bd02ac496dc2fbd141b19f23ba86291db1618a0ae298a76beab28701ff24d22",
+      "original_path": "/Users/local/Desktop/math/.noeaaeue/scripts/repository_paths.py",
+      "original_identity": [
+        16777231,
+        230310932,
+        2343,
+        1792114620110349053,
+        1792114620110349053,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685835,
+        2343,
+        1792117690464469609,
+        1792117690464475901,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/.noeaaeue/scripts/repository_paths.py"
+    },
+    {
+      "logical_path": ".noeaaeue/scripts/source_observations.py",
+      "sha256": "a153565b7b3162470309f2fae9432110415b7934648a7f58f91f84821ab68125",
+      "original_path": "/Users/local/Desktop/math/.noeaaeue/scripts/source_observations.py",
+      "original_identity": [
+        16777231,
+        230484248,
+        13216,
+        1792116508482928465,
+        1792116508482928465,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685836,
+        13216,
+        1792117690464969154,
+        1792117690464977154,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/.noeaaeue/scripts/source_observations.py"
+    },
+    {
+      "logical_path": "AGENTS.md",
+      "sha256": "bbf801a3b7f73c61c10c723abbe78313e53cbb8755b2ee3df9931552e5efbd6d",
+      "original_path": "/Users/local/Desktop/math/AGENTS.md",
+      "original_identity": [
+        16777231,
+        223520866,
+        196,
+        1792114331478470057,
+        1792114331478470057,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685837,
+        196,
+        1792117690465398990,
+        1792117690465405531,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/AGENTS.md"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Energy/Checks/result-contracts.json",
+      "sha256": "0c72fd1fb861b14cc580b166f1084ef65c000c4987e688ad3f3cc6998728f29b",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Energy/Checks/result-contracts.json",
+      "original_identity": [
+        16777231,
+        224738582,
+        114249,
+        1791988660551889480,
+        1791988660551889480,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685842,
+        114249,
+        1792117690466328412,
+        1792117690466337162,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Energy/Checks/result-contracts.json"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Energy/Checks/result-oracle-fixtures.json",
+      "sha256": "88bc2d08ee05442c4edb7a0a86b3f35eee160e6430a919b78e6d798b92c51bae",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Energy/Checks/result-oracle-fixtures.json",
+      "original_identity": [
+        16777231,
+        224738585,
+        266595,
+        1791988660623283313,
+        1791988660623283313,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685843,
+        266595,
+        1792117690467198542,
+        1792117690467208459,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Energy/Checks/result-oracle-fixtures.json"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/FiniteSums/Checks/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/FiniteSums/Checks/.gitkeep",
+      "original_identity": [
+        16777231,
+        230249715,
+        0,
+        1792114201736314199,
+        1792114201736329699,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685846,
+        0,
+        1792117690468088255,
+        1792117690468123464,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/FiniteSums/Checks/.gitkeep"
+    },
+    {
+      "logical_path": "GRWTSK/LinearAlgebra/OrientedRealLine/Checks/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/LinearAlgebra/OrientedRealLine/Checks/.gitkeep",
+      "original_identity": [
+        16777231,
+        230249712,
+        0,
+        1792114201736087654,
+        1792114201736123363,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685850,
+        0,
+        1792117690468779801,
+        1792117690468816427,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/LinearAlgebra/OrientedRealLine/Checks/.gitkeep"
+    },
+    {
+      "logical_path": "GRWTSK/NumberTheory/Diophantine/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/NumberTheory/Diophantine/.gitkeep",
+      "original_identity": [
+        16777231,
+        230249713,
+        0,
+        1792114201736184739,
+        1792114201736202406,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685853,
+        0,
+        1792117690469413180,
+        1792117690469445555,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/NumberTheory/Diophantine/.gitkeep"
+    },
+    {
+      "logical_path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/.gitkeep",
+      "original_identity": [
+        16777231,
+        230249714,
+        0,
+        1792114201736251823,
+        1792114201736268198,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685856,
+        0,
+        1792117690470027850,
+        1792117690470063600,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/.gitkeep"
+    },
+    {
+      "logical_path": "GRWTSK/NumberTheory/Polynomial/Checks/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/NumberTheory/Polynomial/Checks/.gitkeep",
+      "original_identity": [
+        16777231,
+        230249716,
+        0,
+        1792114201736377116,
+        1792114201736391616,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685859,
+        0,
+        1792117690470783730,
+        1792117690470816480,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/NumberTheory/Polynomial/Checks/.gitkeep"
+    },
+    {
+      "logical_path": "LICENSE",
+      "sha256": "a98fc92dab12d02b26bc51f1ac0d608871886b7e36de2170747fb0fcee946968",
+      "original_path": "/Users/local/Desktop/math/LICENSE",
+      "original_identity": [
+        16777231,
+        201165470,
+        1075,
+        1791646277317589596,
+        1791646277317589596,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685860,
+        1075,
+        1792117690471258983,
+        1792117690471266024,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/LICENSE"
+    },
+    {
+      "logical_path": "NOTICE",
+      "sha256": "d8db411ac4d890e72e8ed0665c7e83772868e9b8fd2bbe3eaf6d81761b162893",
+      "original_path": "/Users/local/Desktop/math/NOTICE",
+      "original_identity": [
+        16777231,
+        223419500,
+        35328,
+        1792111806913462285,
+        1792111806913462285,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685861,
+        35328,
+        1792117690471777694,
+        1792117690471793861,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/NOTICE"
+    },
+    {
+      "logical_path": "README.md",
+      "sha256": "c5b17fac3327498483da76fb8cbe40672cc3d86b970c336f9ebe49e4d877a8dc",
+      "original_path": "/Users/local/Desktop/math/README.md",
+      "original_identity": [
+        16777231,
+        224737712,
+        1083,
+        1792114385054347258,
+        1792114385054347258,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685862,
+        1083,
+        1792117690472325697,
+        1792117690472333156,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/README.md"
+    },
+    {
+      "logical_path": "lake-manifest.json",
+      "sha256": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
+      "original_path": "/Users/local/Desktop/math/lake-manifest.json",
+      "original_identity": [
+        16777231,
+        200074004,
+        3577,
+        1791615698931395862,
+        1791615698931395862,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685863,
+        3577,
+        1792117690472811367,
+        1792117690472818742,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/lake-manifest.json"
+    },
+    {
+      "logical_path": "lakefile.toml",
+      "sha256": "a23f6d313f8458192328f09635ffef9078cb684374c2aac2743af541bf59b4e3",
+      "original_path": "/Users/local/Desktop/math/lakefile.toml",
+      "original_identity": [
+        16777231,
+        199432643,
+        250,
+        1791602217411870558,
+        1791602217411870558,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685864,
+        250,
+        1792117690473227828,
+        1792117690473234244,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/lakefile.toml"
+    },
+    {
+      "logical_path": "lean-toolchain",
+      "sha256": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
+      "original_path": "/Users/local/Desktop/math/lean-toolchain",
+      "original_identity": [
+        16777231,
+        199432644,
+        25,
+        1791602217412114642,
+        1791602217412114642,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685865,
+        25,
+        1792117690473690414,
+        1792117690473696997,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/lean-toolchain"
+    },
+    {
+      "logical_path": ".noeaaeue/checks/MoebiusResponseOwnerAuditCurrent.lean",
+      "sha256": "899dd97fb86ad0dcd4e1a5688a250f083744591a6580daad3a381fa77f6cc0bc",
+      "original_path": "/Users/local/Desktop/math/.noeaaeue/checks/MoebiusResponseOwnerAuditCurrent.lean",
+      "original_identity": [
+        16777231,
+        230492701,
+        10140,
+        1792116042372488528,
+        1792116042372488528,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685867,
+        10140,
+        1792117690476542722,
+        1792117690476570389,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/.noeaaeue/checks/MoebiusResponseOwnerAuditCurrent.lean"
+    },
+    {
+      "logical_path": "GRWTSK.lean",
+      "sha256": "f2bef192f4241479df382058f01cea66c99ba58c4af87a43515bbaccdb52625a",
+      "original_path": "/Users/local/Desktop/math/GRWTSK.lean",
+      "original_identity": [
+        16777231,
+        230538196,
+        25737,
+        1792117582242000267,
+        1792117582242000267,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685868,
+        25737,
+        1792117690520713399,
+        1792117690520726191,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Algebra/BigOperators/OrderedSquare.lean",
+      "sha256": "4291db9cf5619fe2239e65b919d4da42e83fcfec03aa63706aa5867725f08395",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Algebra/BigOperators/OrderedSquare.lean",
+      "original_identity": [
+        16777231,
+        224578107,
+        1340,
+        1791955815421026335,
+        1791955815421336757,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685871,
+        1340,
+        1792117690521615404,
+        1792117690521623696,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Algebra/BigOperators/OrderedSquare.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Algebra/BigOperators/QuadraticCounterexample.lean",
+      "sha256": "ba3c0a4ddd3c137fdd803d4ba8aae2c1f42fb373a64e5e7bab797ab44b8dfbee",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Algebra/BigOperators/QuadraticCounterexample.lean",
+      "original_identity": [
+        16777231,
+        224594653,
+        940,
+        1791956376968938341,
+        1791956376969405765,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685872,
+        940,
+        1792117690522395909,
+        1792117690522404534,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Algebra/BigOperators/QuadraticCounterexample.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Algebra/MvPolynomial/SquarefreeEulerProduct.lean",
+      "sha256": "263d7cb13e397ca98287d9faae175b884afb07eeefd8ff3504980c18b93163ef",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Algebra/MvPolynomial/SquarefreeEulerProduct.lean",
+      "original_identity": [
+        16777231,
+        218134305,
+        4457,
+        1791751929978362427,
+        1791751929978362427,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685874,
+        4457,
+        1792117690523599499,
+        1792117690523607791,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Algebra/MvPolynomial/SquarefreeEulerProduct.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Algebra/OrderedProduct.lean",
+      "sha256": "dee4c3dc356426d3fdce86b71aa3e5c93e58597fd688381c38d73d80cc23e300",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Algebra/OrderedProduct.lean",
+      "original_identity": [
+        16777231,
+        201165469,
+        4224,
+        1791951899642786802,
+        1791951899642786802,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685875,
+        4224,
+        1792117690524835007,
+        1792117690524842090,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Algebra/OrderedProduct.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Algebra/OrderedProductGauge.lean",
+      "sha256": "d6ca049d4674503df5b175e7028c41c742af43ec7c42389a3fb3528c8f6ec5ae",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Algebra/OrderedProductGauge.lean",
+      "original_identity": [
+        16777231,
+        205321818,
+        3822,
+        1791663566153076553,
+        1791663566153076553,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685876,
+        3822,
+        1792117690525873721,
+        1792117690525881055,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Algebra/OrderedProductGauge.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Algebra/Polynomial/ConjugateInterpolation.lean",
+      "sha256": "6906e3f1c5d79fd1b28e96f0ac35cfbd8149544d5a12eb0d98c24ab509a079d4",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Algebra/Polynomial/ConjugateInterpolation.lean",
+      "original_identity": [
+        16777231,
+        225958344,
+        3976,
+        1792080660596482509,
+        1792080660596482509,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685878,
+        3976,
+        1792117690527088103,
+        1792117690527095228,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Algebra/Polynomial/ConjugateInterpolation.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Algebra/Polynomial/ConjugateQuartic.lean",
+      "sha256": "7ec04ba3204a196a01744d12cdb4f807c19387853d373e9f31d533ae03bd18fe",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Algebra/Polynomial/ConjugateQuartic.lean",
+      "original_identity": [
+        16777231,
+        225949750,
+        4924,
+        1792079318109787013,
+        1792079318109787013,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685879,
+        4924,
+        1792117690528335777,
+        1792117690528342486,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Algebra/Polynomial/ConjugateQuartic.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Algebra/Polynomial/SignedRootTrace.lean",
+      "sha256": "63697f423370348ef200a0d52326586d7b80c0f47d6fe8463b977d9ac5a4ef6a",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Algebra/Polynomial/SignedRootTrace.lean",
+      "original_identity": [
+        16777231,
+        225958368,
+        6569,
+        1792080919085778702,
+        1792080919085778702,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685880,
+        6569,
+        1792117690529770952,
+        1792117690529778369,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Algebra/Polynomial/SignedRootTrace.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Asymptotics/DisjointPrimeChainBounds.lean",
+      "sha256": "3f78dc1548f328c25d41de19e4c2409fdb4d90a3596484109ca770148df00e76",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Asymptotics/DisjointPrimeChainBounds.lean",
+      "original_identity": [
+        16777231,
+        224685183,
+        2926,
+        1791976260923532209,
+        1791976260923772956,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685882,
+        2926,
+        1792117690530764208,
+        1792117690530770708,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Asymptotics/DisjointPrimeChainBounds.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Asymptotics/ExponentialEnergyObstruction.lean",
+      "sha256": "07396ef4d33560d77759bb6f13e55490c7ef22b8e654c73800988626f47866cc",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Asymptotics/ExponentialEnergyObstruction.lean",
+      "original_identity": [
+        16777231,
+        218134307,
+        9030,
+        1791751929978646302,
+        1791751929978646302,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685883,
+        9030,
+        1792117690532496635,
+        1792117690532502927,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Asymptotics/ExponentialEnergyObstruction.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Asymptotics/ExponentialRecurrence.lean",
+      "sha256": "e8456ac773c17b124142797d8eb0c6c9ed83fe462606844ee3f603ab79b3327b",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Asymptotics/ExponentialRecurrence.lean",
+      "original_identity": [
+        16777231,
+        218134308,
+        5595,
+        1791950588968851090,
+        1791950588968851090,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685884,
+        5595,
+        1792117690533731017,
+        1792117690533738059,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Asymptotics/ExponentialRecurrence.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Asymptotics/FiniteConvolutionRecurrence.lean",
+      "sha256": "541a3810816fbffc2867cdc9c9c8bb395ab61d072e734b0e3a89472de8cdea7d",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Asymptotics/FiniteConvolutionRecurrence.lean",
+      "original_identity": [
+        16777231,
+        224737327,
+        5907,
+        1791988650627024370,
+        1791988650627024370,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685885,
+        5907,
+        1792117690535184026,
+        1792117690535191484,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Asymptotics/FiniteConvolutionRecurrence.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Asymptotics/FinitePowerSum.lean",
+      "sha256": "597bcbdd22d04e90389c7d34729979275591ef233ba3c7514e2bb54ff6d6c069",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Asymptotics/FinitePowerSum.lean",
+      "original_identity": [
+        16777231,
+        223516188,
+        2938,
+        1791944125795609246,
+        1791944125795609246,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685886,
+        2938,
+        1792117690536089573,
+        1792117690536096156,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Asymptotics/FinitePowerSum.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Asymptotics/FinitePrimeChainEnergyBounds.lean",
+      "sha256": "a97d31a26ac163937f815a4b6a7e2d95585639975b2b2e9f67894700bdce2c4e",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Asymptotics/FinitePrimeChainEnergyBounds.lean",
+      "original_identity": [
+        16777231,
+        218134309,
+        4578,
+        1791751929978811593,
+        1791751929978811593,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685887,
+        4578,
+        1792117690537244413,
+        1792117690537251496,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Asymptotics/FinitePrimeChainEnergyBounds.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Asymptotics/FixedWidthEnergyBoundEquivalence.lean",
+      "sha256": "7a689a4582ed22712d4c96e5dda26cb51ef3fe566c47e7a57cc7f305ac13835c",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Asymptotics/FixedWidthEnergyBoundEquivalence.lean",
+      "original_identity": [
+        16777231,
+        223916572,
+        2488,
+        1791945660669303090,
+        1791945660670250506,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685888,
+        2488,
+        1792117690538148752,
+        1792117690538156127,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Asymptotics/FixedWidthEnergyBoundEquivalence.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Asymptotics/MassWeightedRecurrence.lean",
+      "sha256": "7d4c98ea7a03d5a792c8fa1ad83e9f33c16233a5dcad548c18d11ae8d5dee3a6",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Asymptotics/MassWeightedRecurrence.lean",
+      "original_identity": [
+        16777231,
+        218134311,
+        4107,
+        1791950588968253839,
+        1791950588968253839,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685889,
+        4107,
+        1792117690539325842,
+        1792117690539333175,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Asymptotics/MassWeightedRecurrence.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Asymptotics/PolynomialClosure.lean",
+      "sha256": "5322a54c90dfc22dbf539de7744ef46c14351c3351269895617d06ea20182545",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Asymptotics/PolynomialClosure.lean",
+      "original_identity": [
+        16777231,
+        224609946,
+        863,
+        1791957167332769488,
+        1791957167332988700,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685890,
+        863,
+        1792117690539907429,
+        1792117690539914096,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Asymptotics/PolynomialClosure.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Asymptotics/PolynomialErrorBound.lean",
+      "sha256": "532d46ae618acc957bdb799be09f19e04f936d23b344dd0e0e0cf743c105372f",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Asymptotics/PolynomialErrorBound.lean",
+      "original_identity": [
+        16777231,
+        224609944,
+        1612,
+        1791957167331878266,
+        1791957167332141104,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685891,
+        1612,
+        1792117690540609808,
+        1792117690540615933,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Asymptotics/PolynomialErrorBound.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Asymptotics/PolynomialSubexponential.lean",
+      "sha256": "a0fd4a85568bcfdcd135b7f82c387dd5270192b2fbfd55a8c062748585212a72",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Asymptotics/PolynomialSubexponential.lean",
+      "original_identity": [
+        16777231,
+        220333263,
+        3801,
+        1791916304024654814,
+        1791916304024973308,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685892,
+        3801,
+        1792117690541641647,
+        1792117690541649731,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Asymptotics/PolynomialSubexponential.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Asymptotics/PowerWeightedSquareSummability.lean",
+      "sha256": "2aaac5a8c9ff2789aa849fc3f040a62469e43061542b78e20bcba5873f259deb",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Asymptotics/PowerWeightedSquareSummability.lean",
+      "original_identity": [
+        16777231,
+        223516189,
+        2401,
+        1791944125795713914,
+        1791944125795713914,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685893,
+        2401,
+        1792117690542520736,
+        1792117690542527861,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Asymptotics/PowerWeightedSquareSummability.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Asymptotics/PrimeMassPotentialBounds.lean",
+      "sha256": "02afc688f9ff363b87360414d8c86839f21107029a9718e0a9d9532cc6cc48bc",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Asymptotics/PrimeMassPotentialBounds.lean",
+      "original_identity": [
+        16777231,
+        224685185,
+        7457,
+        1791976260924413030,
+        1791976260924637444,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685894,
+        7457,
+        1792117690544040411,
+        1792117690544047828,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Asymptotics/PrimeMassPotentialBounds.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Asymptotics/PrimeSubsetPotentialBounds.lean",
+      "sha256": "9c3bfc9f59ae90c03003f6e72141b96cb25598715713a4330bae88c1e93099e6",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Asymptotics/PrimeSubsetPotentialBounds.lean",
+      "original_identity": [
+        16777231,
+        218134315,
+        10746,
+        1791751929979423009,
+        1791751929979423009,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685895,
+        10746,
+        1792117690546070007,
+        1792117690546078882,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Asymptotics/PrimeSubsetPotentialBounds.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Asymptotics/PrimeTranslationBoundContracts.lean",
+      "sha256": "3ec8f69d2bd102bba13adf1f4ce4ed55cdecff8147e80ff8a5e19fb0a26590e5",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Asymptotics/PrimeTranslationBoundContracts.lean",
+      "original_identity": [
+        16777231,
+        218134316,
+        5900,
+        1791751929979490425,
+        1791751929979490425,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685896,
+        5900,
+        1792117690547577474,
+        1792117690547585766,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Asymptotics/PrimeTranslationBoundContracts.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Asymptotics/QuadraticKernelEnergyEquivalence.lean",
+      "sha256": "45961d79e1fcd533cd9fe2ca7405508f86740a5af4e06b2cdf3130e87430a40f",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Asymptotics/QuadraticKernelEnergyEquivalence.lean",
+      "original_identity": [
+        16777231,
+        218134317,
+        2193,
+        1791751929979638259,
+        1791751929979638259,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685897,
+        2193,
+        1792117690548408979,
+        1792117690548415271,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Asymptotics/QuadraticKernelEnergyEquivalence.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Asymptotics/SelectedPrimeChainBounds.lean",
+      "sha256": "27d2c459a3f3ca5593ac0802559d87c267242b4e019ed5e4c03ee401ceaf233f",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Asymptotics/SelectedPrimeChainBounds.lean",
+      "original_identity": [
+        16777231,
+        223916574,
+        4201,
+        1791945660672813876,
+        1791945660673613625,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685898,
+        4201,
+        1792117690549499652,
+        1792117690549506819,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Asymptotics/SelectedPrimeChainBounds.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Asymptotics/SignedEnergyDecomposition.lean",
+      "sha256": "b704ea86c80c4e4ec02c6ba4b7d8d64579813806f748b2a6154641ac789ca188",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Asymptotics/SignedEnergyDecomposition.lean",
+      "original_identity": [
+        16777231,
+        224683514,
+        5596,
+        1791975299516149801,
+        1791975299516470049,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685899,
+        5596,
+        1792117690550834827,
+        1792117690550842868,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Asymptotics/SignedEnergyDecomposition.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Calculus/CompactCutoff.lean",
+      "sha256": "c6ff2d2f5346607bb62c7234a4bfe35a0e308cc427fa8c9c26ac6b06b7838172",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Calculus/CompactCutoff.lean",
+      "original_identity": [
+        16777231,
+        227922687,
+        4290,
+        1792107591728983564,
+        1792107591728983564,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685901,
+        4290,
+        1792117690552083751,
+        1792117690552092542,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Calculus/CompactCutoff.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Calculus/CompactPolynomialDerivatives.lean",
+      "sha256": "4abb0074bb8a66137768bbd25d59ab896b347654f4944383f6df1e9e9d9fa8e4",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Calculus/CompactPolynomialDerivatives.lean",
+      "original_identity": [
+        16777231,
+        211513338,
+        13297,
+        1791701938029157462,
+        1791701938029212587,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685902,
+        13297,
+        1792117690554618932,
+        1792117690554628057,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Calculus/CompactPolynomialDerivatives.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Calculus/CompactProfileBoundaryCounterexamples.lean",
+      "sha256": "15f107e78eddae829dbeb2d205520193155df4500a67fc4b3dbd91cee902ad07",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Calculus/CompactProfileBoundaryCounterexamples.lean",
+      "original_identity": [
+        16777231,
+        211513339,
+        4881,
+        1791701938029559003,
+        1791701938029613587,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685903,
+        4881,
+        1792117690556299067,
+        1792117690556308567,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Calculus/CompactProfileBoundaryCounterexamples.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Calculus/CompactProfileDerivativeEnergy.lean",
+      "sha256": "dc105862ecda0a65b5df3feef43539ce48e8ad5e2e288869be74df8345c5faa4",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Calculus/CompactProfileDerivativeEnergy.lean",
+      "original_identity": [
+        16777231,
+        211513394,
+        5607,
+        1791701938055953058,
+        1791701938056021808,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685904,
+        5607,
+        1792117690557712450,
+        1792117690557721575,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Calculus/CompactProfileDerivativeEnergy.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Calculus/CompactProfileNormalization.lean",
+      "sha256": "469dd45166d579a93c55fda6ae66a2f3f0bdad54d9761e59ab66fc9cfdd95564",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Calculus/CompactProfileNormalization.lean",
+      "original_identity": [
+        16777231,
+        211513395,
+        18716,
+        1791701938056577641,
+        1791701938056661766,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685905,
+        18716,
+        1792117690560895386,
+        1792117690560903719,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Calculus/CompactProfileNormalization.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Calculus/EvenLinearDefect.lean",
+      "sha256": "fd33f31e06dbab1fc8bb7fa5f65bbed4fad4e60bff11552d7ad01b3472dae462",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Calculus/EvenLinearDefect.lean",
+      "original_identity": [
+        16777231,
+        224737337,
+        2392,
+        1791988650627562365,
+        1791988650627562365,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685906,
+        2392,
+        1792117690561826350,
+        1792117690561833558,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Calculus/EvenLinearDefect.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Calculus/LogarithmicResponseDerivatives.lean",
+      "sha256": "e3498aaebc64e90fe4fb105bd1a9446966dea38e9fef76d2e53ab53c63e881aa",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Calculus/LogarithmicResponseDerivatives.lean",
+      "original_identity": [
+        16777231,
+        224696941,
+        3919,
+        1791984054251766277,
+        1791984054251999069,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685907,
+        3919,
+        1792117690562880398,
+        1792117690562887064,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Calculus/LogarithmicResponseDerivatives.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Calculus/LogarithmicShiftKernelRegularity.lean",
+      "sha256": "ffe598f53abfe75d7b1d7f6cf39272196ca9c7d4ec9b8d97b781d79cd56ba668",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Calculus/LogarithmicShiftKernelRegularity.lean",
+      "original_identity": [
+        16777231,
+        224737338,
+        6579,
+        1791988650627629781,
+        1791988650627629781,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685908,
+        6579,
+        1792117690564316114,
+        1792117690564323281,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Calculus/LogarithmicShiftKernelRegularity.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Calculus/PolynomialBumpDerivativeEnergy.lean",
+      "sha256": "9a4adaa8061a277138bdd1c3e9897b4348ab6517a0361a18a6f5654de438309d",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Calculus/PolynomialBumpDerivativeEnergy.lean",
+      "original_identity": [
+        16777231,
+        211513404,
+        8561,
+        1791701938060632470,
+        1791701938060688386,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685909,
+        8561,
+        1792117690566123125,
+        1792117690566131000,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Calculus/PolynomialBumpDerivativeEnergy.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Calculus/PolynomialBumpNormalization.lean",
+      "sha256": "c9327e4d91a040e78f9e1292f48e54f8d6f33ad0676d0b6ab1977199b1b65dc3",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Calculus/PolynomialBumpNormalization.lean",
+      "original_identity": [
+        16777231,
+        211513396,
+        10073,
+        1791701938057283890,
+        1791701938057411390,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685910,
+        10073,
+        1792117690568331263,
+        1792117690568338680,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Calculus/PolynomialBumpNormalization.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Calculus/SupportEdgeDifferentiability.lean",
+      "sha256": "fb5d4c73431721a1bcfc246367389163768c499594e5ff57a5161d35a4e52f04",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Calculus/SupportEdgeDifferentiability.lean",
+      "original_identity": [
+        16777231,
+        224737339,
+        3273,
+        1791988650627697156,
+        1791988650627697156,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685911,
+        3273,
+        1792117690569367727,
+        1792117690569374853,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Calculus/SupportEdgeDifferentiability.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/CausalTranslation/ExponentialResponse.lean",
+      "sha256": "d2b4b9eb949ec1ae4451d614aac79fb7d8691e36b3e17ee2077eb19c28b180ee",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/CausalTranslation/ExponentialResponse.lean",
+      "original_identity": [
+        16777231,
+        218134322,
+        2929,
+        1791751929980017758,
+        1791751929980017758,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685913,
+        2929,
+        1792117690570376734,
+        1792117690570384233,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/CausalTranslation/ExponentialResponse.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Complex/CriticalReflection.lean",
+      "sha256": "8c17e27406bc4508600cb9bb202a302a074720dcc01409167428487cdd72d065",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Complex/CriticalReflection.lean",
+      "original_identity": [
+        16777231,
+        219951556,
+        697,
+        1791906055943780443,
+        1791906055944330374,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685915,
+        697,
+        1792117690571033029,
+        1792117690571039821,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Complex/CriticalReflection.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Complex/PositiveHalfPlane.lean",
+      "sha256": "8f662f20b6cafbed588efabfa6c0a2f34b8ec5faabc33e1f9dc77dc31885d157",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Complex/PositiveHalfPlane.lean",
+      "original_identity": [
+        16777231,
+        223916577,
+        380,
+        1791945660676036038,
+        1791945660676661704,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685916,
+        380,
+        1792117690571602282,
+        1792117690571609157,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Complex/PositiveHalfPlane.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Complex/ReflectionCounterexamples.lean",
+      "sha256": "f6eb28aead9f961d1291cc3681d10dc14c4c48a4e783c40913a5eb968eed35d2",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Complex/ReflectionCounterexamples.lean",
+      "original_identity": [
+        16777231,
+        219951557,
+        1072,
+        1791906055944556131,
+        1791906055944647841,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685917,
+        1072,
+        1792117690572308745,
+        1792117690572316786,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Complex/ReflectionCounterexamples.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Complex/VerticalReflection.lean",
+      "sha256": "7d0a686fd76d22a20a30649a1debcd042623eea6abda044ca5a08481c860da5d",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Complex/VerticalReflection.lean",
+      "original_identity": [
+        16777231,
+        211513295,
+        3777,
+        1791701938010667149,
+        1791701938010723357,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685918,
+        3777,
+        1792117690573380626,
+        1792117690573388418,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Complex/VerticalReflection.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Convolution/AutocorrelationDerivativeEnergy.lean",
+      "sha256": "8a8d4a85d38b81db1bd37a0ae0698780791082f979d125d20ab3d928c7e7bb8e",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Convolution/AutocorrelationDerivativeEnergy.lean",
+      "original_identity": [
+        16777231,
+        211513402,
+        5967,
+        1791701938059497221,
+        1791701938059574721,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685920,
+        5967,
+        1792117690574812968,
+        1792117690574820801,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Convolution/AutocorrelationDerivativeEnergy.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Convolution/AutocorrelationSecondDerivative.lean",
+      "sha256": "decf56fc025da8133170d768dcc2c467508ee715050fc6e7633a42a1ed7060d3",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Convolution/AutocorrelationSecondDerivative.lean",
+      "original_identity": [
+        16777231,
+        211513401,
+        10138,
+        1791701938058995930,
+        1791701938059107555,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685921,
+        10138,
+        1792117690576791688,
+        1792117690576801021,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Convolution/AutocorrelationSecondDerivative.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Convolution/AutocorrelationTranslationEnergy.lean",
+      "sha256": "f7c03448d46152139090048c97031080e24b0bf25add6ae583a9a33c0e874ec3",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Convolution/AutocorrelationTranslationEnergy.lean",
+      "original_identity": [
+        16777231,
+        224737340,
+        3794,
+        1791988650627773988,
+        1791988650627773988,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685922,
+        3794,
+        1792117690577878319,
+        1792117690577885694,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Convolution/AutocorrelationTranslationEnergy.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Convolution/CompactProfileCorrelation.lean",
+      "sha256": "3c094738e9d200f5155bf2dfe6ffa914cae6f282e932a39400dc21412141fb9a",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Convolution/CompactProfileCorrelation.lean",
+      "original_identity": [
+        16777231,
+        211513336,
+        12217,
+        1791701938028331588,
+        1791701938028480713,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685923,
+        12217,
+        1792117690580253542,
+        1792117690580261125,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Convolution/CompactProfileCorrelation.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Convolution/CompactProfileDifferentialMoments.lean",
+      "sha256": "dc5e26a70f591f9ab3551b6a94b518d7c3b7cdb881512d081ed460e70e13993b",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Convolution/CompactProfileDifferentialMoments.lean",
+      "original_identity": [
+        16777231,
+        224737349,
+        2628,
+        1791988650628334692,
+        1791988650628334692,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685924,
+        2628,
+        1792117690581362382,
+        1792117690581372090,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Convolution/CompactProfileDifferentialMoments.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Convolution/CompactProfileFifthDerivativeObstruction.lean",
+      "sha256": "fe87538d3cc33db3cf97c4fe434bbd3b87f6c1e44eadeffdca11f9aa49abb341",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Convolution/CompactProfileFifthDerivativeObstruction.lean",
+      "original_identity": [
+        16777231,
+        224737350,
+        4795,
+        1791988650628412150,
+        1791988650628412150,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685925,
+        4795,
+        1792117690582722765,
+        1792117690582731223,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Convolution/CompactProfileFifthDerivativeObstruction.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Convolution/CompactProfileFirstPoleMoment.lean",
+      "sha256": "1e02ac2c25c2e1b2c713f2ffd80052f37db8e420e249cf2ef0d582adee54d722",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Convolution/CompactProfileFirstPoleMoment.lean",
+      "original_identity": [
+        16777231,
+        224737351,
+        5534,
+        1791988650628484941,
+        1791988650628484941,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685926,
+        5534,
+        1792117690584177523,
+        1792117690584184648,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Convolution/CompactProfileFirstPoleMoment.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Convolution/CompactProfileHigherDerivatives.lean",
+      "sha256": "616d623bd79563b690b557b8b4db797b946a0c43e48e5a5ac0cf87f69e4ae009",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Convolution/CompactProfileHigherDerivatives.lean",
+      "original_identity": [
+        16777231,
+        211513333,
+        7200,
+        1791701938026990756,
+        1791701938027039464,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685927,
+        7200,
+        1792117690585664824,
+        1792117690585672324,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Convolution/CompactProfileHigherDerivatives.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Convolution/CompactProfileSupportEdge.lean",
+      "sha256": "1de9022d6a752dd11a53aae45461a3c14c0e0b87b427ed27f76c5b87f926e2e6",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Convolution/CompactProfileSupportEdge.lean",
+      "original_identity": [
+        16777231,
+        224737352,
+        4275,
+        1791988650628554816,
+        1791988650628554816,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685928,
+        4275,
+        1792117690586722371,
+        1792117690586729122,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Convolution/CompactProfileSupportEdge.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Convolution/CompactProfileTailSigns.lean",
+      "sha256": "5873fcc9d3f4f5adb3f024cae522275933b692796ac37cac6f540809def1e873",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Convolution/CompactProfileTailSigns.lean",
+      "original_identity": [
+        16777231,
+        224737353,
+        5768,
+        1791988650628627273,
+        1791988650628627273,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685929,
+        5768,
+        1792117690588007796,
+        1792117690588014796,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Convolution/CompactProfileTailSigns.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Convolution/CompactSupportContact.lean",
+      "sha256": "170042438dc7809e0f8aa6abb3fb9a3e015c48ae22f917c350c8d05344a2dfde",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Convolution/CompactSupportContact.lean",
+      "original_identity": [
+        16777231,
+        224737354,
+        6703,
+        1791988650628700856,
+        1791988650628700856,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685930,
+        6703,
+        1792117690589611847,
+        1792117690589620347,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Convolution/CompactSupportContact.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Convolution/ExponentialMoments.lean",
+      "sha256": "a1f229a1860ed76fcc9a5ea19e75a30492e1b7aa4bea333c376b297599e991f0",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Convolution/ExponentialMoments.lean",
+      "original_identity": [
+        16777231,
+        211513417,
+        13381,
+        1791701938066240047,
+        1791701938066281338,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685931,
+        13381,
+        1792117690592057861,
+        1792117690592065903,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Convolution/ExponentialMoments.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Convolution/FiniteTranslateIndependence.lean",
+      "sha256": "b277e1865a0c5b0a1289725adb791779a52a012411c3dea11bb98a61a9f09d44",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Convolution/FiniteTranslateIndependence.lean",
+      "original_identity": [
+        16777231,
+        224737355,
+        6456,
+        1791988650628776939,
+        1791988650628776939,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685932,
+        6456,
+        1792117690593472120,
+        1792117690593479120,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Convolution/FiniteTranslateIndependence.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Convolution/FirstMomentConvolution.lean",
+      "sha256": "c6e2243a0ae9cba9a118351cd0a50cbe0bbe27a6e549df27c8675f56a7c5340c",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Convolution/FirstMomentConvolution.lean",
+      "original_identity": [
+        16777231,
+        224737356,
+        3845,
+        1791988650628841147,
+        1791988650628841147,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685933,
+        3845,
+        1792117690594443500,
+        1792117690594450250,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Convolution/FirstMomentConvolution.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Convolution/PolynomialBumpHigherDerivatives.lean",
+      "sha256": "a7dee347df5fb179c42be0b721712f1d5b23752dba21861f53a370b3300418cf",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Convolution/PolynomialBumpHigherDerivatives.lean",
+      "original_identity": [
+        16777231,
+        211513381,
+        27088,
+        1791701938049246690,
+        1791701938049312023,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685934,
+        27088,
+        1792117690598825776,
+        1792117690598836526,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Convolution/PolynomialBumpHigherDerivatives.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Convolution/PolynomialBumpRegularity.lean",
+      "sha256": "3696fbcf598d011426fedcbd8f0b3e9ee568412165191e1d5c76b202a83e159f",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Convolution/PolynomialBumpRegularity.lean",
+      "original_identity": [
+        16777231,
+        211513418,
+        14331,
+        1791701938066662380,
+        1791701938066703630,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685935,
+        14331,
+        1792117690601375333,
+        1792117690601383375,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Convolution/PolynomialBumpRegularity.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/DigammaSeries.lean",
+      "sha256": "8ed1593b5f8bed7443f94766d070eb3afdda19408cc14de210f250fc8a236acd",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/DigammaSeries.lean",
+      "original_identity": [
+        16777231,
+        211236134,
+        15179,
+        1791697173671722179,
+        1791697173672585772,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685936,
+        15179,
+        1792117690604196308,
+        1792117690604205391,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/DigammaSeries.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Distribution/CompactProfileDilation.lean",
+      "sha256": "bdda47c4b79cd1c9d78b0a770997dd1dabd2f3fa0608fa5137981609b54156e5",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Distribution/CompactProfileDilation.lean",
+      "original_identity": [
+        16777231,
+        211513330,
+        11208,
+        1791701938026185798,
+        1791701938026243340,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685938,
+        11208,
+        1792117690606821907,
+        1792117690606829823,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Distribution/CompactProfileDilation.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Distribution/WeakSecondDerivativeUniqueness.lean",
+      "sha256": "b482804625e6fcd4079aaf85d62c445269a076429c6b41ee37b2abda6e78aabc",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Distribution/WeakSecondDerivativeUniqueness.lean",
+      "original_identity": [
+        16777231,
+        211513341,
+        1854,
+        1791701938030347794,
+        1791701938030401877,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685939,
+        1854,
+        1792117690607675037,
+        1792117690607683412,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Distribution/WeakSecondDerivativeUniqueness.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/ErrorBounds/PartialMapComposition.lean",
+      "sha256": "b3e02f39f0198c87179b1a62bc4eb43de521ee841de57e2e2ff0be429b386838",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/ErrorBounds/PartialMapComposition.lean",
+      "original_identity": [
+        16777231,
+        211513312,
+        13844,
+        1791701938017295975,
+        1791701938017342933,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685941,
+        13844,
+        1792117690610268010,
+        1792117690610275552,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/ErrorBounds/PartialMapComposition.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/FiniteSums/WeightedDegreeComparison.lean",
+      "sha256": "783b03862d58e75e6138550039f8293536a606086fda232c1fd1375d985c9d0c",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/FiniteSums/WeightedDegreeComparison.lean",
+      "original_identity": [
+        16777231,
+        229877668,
+        4154,
+        1792113498489332980,
+        1792113498489332980,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685942,
+        4154,
+        1792117690611394684,
+        1792117690611402017,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/FiniteSums/WeightedDegreeComparison.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Fourier/AngularFrequencyParseval.lean",
+      "sha256": "92ed47d7c7e233958afed9bfbf11fc4209ccc82fbfe4983553299cf464fd114f",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Fourier/AngularFrequencyParseval.lean",
+      "original_identity": [
+        16777231,
+        218134323,
+        10570,
+        1791751929980098508,
+        1791751929980098508,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685944,
+        10570,
+        1792117690613455279,
+        1792117690613463071,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Fourier/AngularFrequencyParseval.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Fourier/DigammaMultiplier.lean",
+      "sha256": "36fe566a76070ce0f61315e71b9744374d87c0ff6cceb943294a73f3dc14b65a",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Fourier/DigammaMultiplier.lean",
+      "original_identity": [
+        16777231,
+        211513413,
+        4172,
+        1791701938064874048,
+        1791701938064933757,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685945,
+        4172,
+        1792117690614713078,
+        1792117690614720495,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Fourier/DigammaMultiplier.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Fourier/FiniteExponentialLayers.lean",
+      "sha256": "c26805fc06086ceadbb09ef1a5d781a3de6d824ca30947f576bd16118d9f0943",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Fourier/FiniteExponentialLayers.lean",
+      "original_identity": [
+        16777231,
+        230561201,
+        5646,
+        1792117663621194250,
+        1792117663621194250,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685946,
+        5646,
+        1792117690616107461,
+        1792117690616114920,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Fourier/FiniteExponentialLayers.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Fourier/FiniteTranslationMultipliers.lean",
+      "sha256": "92a8cd6bbc60bfd573d77c4d6ba49bdec0c0a43a569359a2b1b109cff5f9ece2",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Fourier/FiniteTranslationMultipliers.lean",
+      "original_identity": [
+        16777231,
+        218134324,
+        9268,
+        1791751929980182799,
+        1791751929980182799,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685947,
+        9268,
+        1792117690617912055,
+        1792117690617918472,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Fourier/FiniteTranslationMultipliers.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Fourier/IntegerSeries.lean",
+      "sha256": "f56a64af2b2992777785b2bef7d7130fe59d7393ef437d3a9e92733a19046d9f",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Fourier/IntegerSeries.lean",
+      "original_identity": [
+        16777231,
+        224627690,
+        8482,
+        1791960955977326375,
+        1791960955977558667,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685948,
+        8482,
+        1792117690619611024,
+        1792117690619617482,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Fourier/IntegerSeries.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Fourier/LogarithmicDomain.lean",
+      "sha256": "87c881d275b4d18fb6f8ca23ccc64dd859764e3fb1b6f17ebcde6e0de273e65c",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Fourier/LogarithmicDomain.lean",
+      "original_identity": [
+        16777231,
+        211513411,
+        7804,
+        1791701938063772591,
+        1791701938063834758,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685949,
+        7804,
+        1792117690621310742,
+        1792117690621317992,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Fourier/LogarithmicDomain.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Fourier/MoebiusQuadraticReturn.lean",
+      "sha256": "bb5f3b6f8176030c81c73a45209334d3bfad8a95625f0f0023163179f3224f19",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Fourier/MoebiusQuadraticReturn.lean",
+      "original_identity": [
+        16777231,
+        218134326,
+        12067,
+        1791751929980469799,
+        1791751929980469799,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685950,
+        12067,
+        1792117690623717173,
+        1792117690623725090,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Fourier/MoebiusQuadraticReturn.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Fourier/Parseval.lean",
+      "sha256": "03c1338056350b76df9ea5a306aa559dc59c8af63175cf39d88574e7363c9daf",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Fourier/Parseval.lean",
+      "original_identity": [
+        16777231,
+        224615515,
+        1081,
+        1791958129101103308,
+        1791958129101350433,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685951,
+        1081,
+        1792117690624458469,
+        1792117690624466094,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Fourier/Parseval.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Fourier/PolynomialBumpEstimates.lean",
+      "sha256": "90cf3b3c0c04c9624fa273349607c9511815630c75cc5431451caa4533f6233d",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Fourier/PolynomialBumpEstimates.lean",
+      "original_identity": [
+        16777231,
+        211513412,
+        10878,
+        1791701938064339049,
+        1791701938064454465,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685952,
+        10878,
+        1792117690626669149,
+        1792117690626677357,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Fourier/PolynomialBumpEstimates.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Fourier/PrimePhaseMultiplierBounds.lean",
+      "sha256": "6d7f8beec1453d84c21513dee4846911fd2e4afdcf3729c2be4ad212dc2380b4",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Fourier/PrimePhaseMultiplierBounds.lean",
+      "original_identity": [
+        16777231,
+        218134328,
+        8784,
+        1791751929980629799,
+        1791751929980629799,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685953,
+        8784,
+        1792117690628471909,
+        1792117690628479243,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Fourier/PrimePhaseMultiplierBounds.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Fourier/PrimePhasePacketCertificates.lean",
+      "sha256": "6c96ed2c7d25e531775dcf8c54380ddf1a94df633a5c75edea1c9b6d00c48da6",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Fourier/PrimePhasePacketCertificates.lean",
+      "original_identity": [
+        16777231,
+        218134329,
+        10111,
+        1791751929980710257,
+        1791751929980710257,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685954,
+        10111,
+        1792117690630336170,
+        1792117690630343254,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Fourier/PrimePhasePacketCertificates.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Fourier/QuadraticKernelTruncation.lean",
+      "sha256": "1e52c56a9a0132fa2e92f8a5f917ab8387a2ba3a018c29d8fa18e455fa6053dc",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Fourier/QuadraticKernelTruncation.lean",
+      "original_identity": [
+        16777231,
+        218134330,
+        15202,
+        1791751929980784632,
+        1791751929980784632,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685955,
+        15202,
+        1792117690633076228,
+        1792117690633084145,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Fourier/QuadraticKernelTruncation.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Fourier/ReciprocalZetaQuadraticKernel.lean",
+      "sha256": "7bd5419da80852ecb1dccc363af704e6babb6e6012597dd2bd41e0110af12d56",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Fourier/ReciprocalZetaQuadraticKernel.lean",
+      "original_identity": [
+        16777231,
+        218134331,
+        3608,
+        1791751929980849465,
+        1791751929980849465,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685956,
+        3608,
+        1792117690634188318,
+        1792117690634195110,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Fourier/ReciprocalZetaQuadraticKernel.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Fourier/SchwartzMoments.lean",
+      "sha256": "da6f1239a11ad8f70f24ec4eabc709e6c7e36002949236c7a73813db0fddb0cc",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Fourier/SchwartzMoments.lean",
+      "original_identity": [
+        16777231,
+        227585685,
+        12595,
+        1792103131317963709,
+        1792103131317963709,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685957,
+        12595,
+        1792117690636528832,
+        1792117690636536665,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Fourier/SchwartzMoments.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Fourier/SignedPrimePhaseExamples.lean",
+      "sha256": "fd87c4dfe2a4e2be2e471545952c24c59b53240b1941b5cd9ac08c8519aed703",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Fourier/SignedPrimePhaseExamples.lean",
+      "original_identity": [
+        16777231,
+        218134332,
+        8189,
+        1791751929980931048,
+        1791751929980931048,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685958,
+        8189,
+        1792117690638331426,
+        1792117690638338717,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Fourier/SignedPrimePhaseExamples.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Fourier/WindowCertificates.lean",
+      "sha256": "568586ca097a0fc94ec0866a627d9cb8c17a7a781ee7849d01c7229f5d44bbc8",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Fourier/WindowCertificates.lean",
+      "original_identity": [
+        16777231,
+        219738201,
+        1838,
+        1791902576959306035,
+        1791902576959420787,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685959,
+        1838,
+        1792117690639359307,
+        1792117690639367098,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Fourier/WindowCertificates.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Fourier/ZModBalancedPartition.lean",
+      "sha256": "713091676046943a65970acf4c7e2761aa8b10a7d79946599de70624238d3c32",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Fourier/ZModBalancedPartition.lean",
+      "original_identity": [
+        16777231,
+        230613031,
+        13088,
+        1792117265953449681,
+        1792117265953449681,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685960,
+        13088,
+        1792117690641950989,
+        1792117690641962655,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Fourier/ZModBalancedPartition.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Fourier/ZModCharacterEnergy.lean",
+      "sha256": "0738ce7f3f01722a9d22debd2927564f46fe2ce34918385b0b36af8ed133ed92",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Fourier/ZModCharacterEnergy.lean",
+      "original_identity": [
+        16777231,
+        230561125,
+        13994,
+        1792116974483805595,
+        1792116974483805595,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685961,
+        13994,
+        1792117690644485254,
+        1792117690644493379,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Fourier/ZModCharacterEnergy.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Fourier/ZModConcentratedFrequencies.lean",
+      "sha256": "2a9a4a4cad5930af51a2fc0274cfde271c01f964399041ee6437248f6f5c2b12",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Fourier/ZModConcentratedFrequencies.lean",
+      "original_identity": [
+        16777231,
+        230649211,
+        11461,
+        1792117599558058603,
+        1792117599558058603,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685962,
+        11461,
+        1792117690646652766,
+        1792117690646659475,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Fourier/ZModConcentratedFrequencies.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Fourier/ZModIndependentSelection.lean",
+      "sha256": "7a45f532becf96acf98301a64c2eab4439e3923ad1e6434229860a0909074fb1",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Fourier/ZModIndependentSelection.lean",
+      "original_identity": [
+        16777231,
+        230576541,
+        11463,
+        1792116920818628630,
+        1792116920818628630,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685963,
+        11463,
+        1792117690648790904,
+        1792117690648798112,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Fourier/ZModIndependentSelection.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Fourier/ZModPartitionEnergy.lean",
+      "sha256": "0d8202957deed1ce1b660a0ab409a4b8e01e570e78b8285f69a1c8a7ee9223f1",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Fourier/ZModPartitionEnergy.lean",
+      "original_identity": [
+        16777231,
+        230606598,
+        9879,
+        1792117407691072527,
+        1792117407691072527,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685964,
+        9879,
+        1792117690650668790,
+        1792117690650675665,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Fourier/ZModPartitionEnergy.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Fourier/ZModSmallEnergySets.lean",
+      "sha256": "98cf9ea68fa5811befdc5c8b10e30c7d1148f94c4f04f1727578cf5a35886908",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Fourier/ZModSmallEnergySets.lean",
+      "original_identity": [
+        16777231,
+        230613664,
+        12000,
+        1792117266537835534,
+        1792117266537835534,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685965,
+        12000,
+        1792117690652788428,
+        1792117690652795886,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Fourier/ZModSmallEnergySets.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Fourier/ZModSmallEnergySpectrum.lean",
+      "sha256": "2cabfc6208a5ecf03981d6fd304de160d35ce8deb7427392db219c32ea94bbf8",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Fourier/ZModSmallEnergySpectrum.lean",
+      "original_identity": [
+        16777231,
+        230641881,
+        8104,
+        1792117470032563090,
+        1792117470032563090,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685966,
+        8104,
+        1792117690654483604,
+        1792117690654491021,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Fourier/ZModSmallEnergySpectrum.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Fourier/ZModSubsetSum.lean",
+      "sha256": "60a0800b62f570782227e57e7ccedba38c1db2a343724ff0951a113c9ac09044",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Fourier/ZModSubsetSum.lean",
+      "original_identity": [
+        16777231,
+        230417294,
+        9116,
+        1792115377321819742,
+        1792115377321819742,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685967,
+        9116,
+        1792117690656383657,
+        1792117690656392532,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Fourier/ZModSubsetSum.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Fourier/ZModSubsetSumCompletion.lean",
+      "sha256": "1da1313c434e574a577fa224bad75f188c5c073455cf658f6191a9295185e70d",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Fourier/ZModSubsetSumCompletion.lean",
+      "original_identity": [
+        16777231,
+        230455319,
+        7685,
+        1792115696702029158,
+        1792115696702029158,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685968,
+        7685,
+        1792117690657983208,
+        1792117690657989667,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Fourier/ZModSubsetSumCompletion.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Inequalities/CompactProfileDifferentialBounds.lean",
+      "sha256": "d8981eeb5d3152a5930535a9c530c3b626ce8e5dc0b469d4a2396f37cbc43d85",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Inequalities/CompactProfileDifferentialBounds.lean",
+      "original_identity": [
+        16777231,
+        224737391,
+        3038,
+        1791988650631401084,
+        1791988650631401084,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685970,
+        3038,
+        1792117690658950506,
+        1792117690658956922,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Inequalities/CompactProfileDifferentialBounds.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Inequalities/DiscreteEnergyBalance.lean",
+      "sha256": "c2155e20dfcf4bbba921bde5673394af0f3e71de0366c8bcbd183578798c551d",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Inequalities/DiscreteEnergyBalance.lean",
+      "original_identity": [
+        16777231,
+        211513324,
+        9310,
+        1791701938024626467,
+        1791701938024671758,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685971,
+        9310,
+        1792117690661660147,
+        1792117690661678272,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Inequalities/DiscreteEnergyBalance.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Inequalities/ExponentialDiagonal.lean",
+      "sha256": "7e3c682ea3ccc9d1f5a65ab762e3edf617f0392379e13319b4a43b90f08df620",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Inequalities/ExponentialDiagonal.lean",
+      "original_identity": [
+        16777231,
+        220338338,
+        662,
+        1791917686365700616,
+        1791917686366034407,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685972,
+        662,
+        1792117690662380192,
+        1792117690662387818,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Inequalities/ExponentialDiagonal.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Inequalities/FiniteLogarithmicProfileBounds.lean",
+      "sha256": "c804f768fe8707acaefbf500f8d25f1b47d9c4e27a94da1aa8c706b35b98a91e",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Inequalities/FiniteLogarithmicProfileBounds.lean",
+      "original_identity": [
+        16777231,
+        224737392,
+        3431,
+        1791988650631474458,
+        1791988650631474458,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685973,
+        3431,
+        1792117690663442365,
+        1792117690663449240,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Inequalities/FiniteLogarithmicProfileBounds.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Inequalities/FiniteShiftedDerivativeBounds.lean",
+      "sha256": "deaf9c4af549226f4cf68d08487cf8d2d96e069de6c0c10cffa986c4a5353382",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Inequalities/FiniteShiftedDerivativeBounds.lean",
+      "original_identity": [
+        16777231,
+        211513310,
+        6853,
+        1791701938016823142,
+        1791701938016873600,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685974,
+        6853,
+        1792117690664874499,
+        1792117690664882124,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Inequalities/FiniteShiftedDerivativeBounds.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Inequalities/FiniteSquareSum.lean",
+      "sha256": "fc5253fb956da23dc8bd67257f233d7281e5afb28542b87af6831de047e246d0",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Inequalities/FiniteSquareSum.lean",
+      "original_identity": [
+        16777231,
+        225970952,
+        1486,
+        1792083079978463921,
+        1792083079978463921,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685975,
+        1486,
+        1792117690665597878,
+        1792117690665604420,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Inequalities/FiniteSquareSum.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Inequalities/LogarithmicProfileIntegralPrices.lean",
+      "sha256": "266f2fdb8139ced38bf32a7a5168470b56b89960eba991b54efc40f05f810cef",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Inequalities/LogarithmicProfileIntegralPrices.lean",
+      "original_identity": [
+        16777231,
+        224737393,
+        5676,
+        1791988650631543333,
+        1791988650631543333,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685976,
+        5676,
+        1792117690666841177,
+        1792117690666849427,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Inequalities/LogarithmicProfileIntegralPrices.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Inequalities/LogarithmicShiftKernelBounds.lean",
+      "sha256": "45130c2a967f4284279520a217a8574a5f0c28cb79e44b8c7ed922154d5be558",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Inequalities/LogarithmicShiftKernelBounds.lean",
+      "original_identity": [
+        16777231,
+        224737394,
+        3374,
+        1791988650631600999,
+        1791988650631600999,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685977,
+        3374,
+        1792117690667929433,
+        1792117690667938892,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Inequalities/LogarithmicShiftKernelBounds.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Inequalities/LogarithmicShiftKernelPositiveSector.lean",
+      "sha256": "aa23e99cfbac1d7fd6064c68a804eb92603a2f269ef8adab91a49df1e76605cb",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Inequalities/LogarithmicShiftKernelPositiveSector.lean",
+      "original_identity": [
+        16777231,
+        224737395,
+        4491,
+        1791988650631662332,
+        1791988650631662332,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685978,
+        4491,
+        1792117690669098399,
+        1792117690669106107,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Inequalities/LogarithmicShiftKernelPositiveSector.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Inequalities/PolynomialEnergyRatio.lean",
+      "sha256": "891c2f23592e3e788608498e78ac7f41f7363e755fcbc7bf5a8b25a99c3817d4",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Inequalities/PolynomialEnergyRatio.lean",
+      "original_identity": [
+        16777231,
+        211513403,
+        2454,
+        1791701938060117678,
+        1791701938060195762,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685979,
+        2454,
+        1792117690670005237,
+        1792117690670012196,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Inequalities/PolynomialEnergyRatio.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/InnerProductSpace/CausalContactHilbertSeparation.lean",
+      "sha256": "77bb7e821e6baf9af15c035fcb161e48a23133172f79b8cf2c4929b0ebf25fed",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/InnerProductSpace/CausalContactHilbertSeparation.lean",
+      "original_identity": [
+        16777231,
+        224737396,
+        4108,
+        1791988650631733290,
+        1791988650631733290,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685981,
+        4108,
+        1792117690671207661,
+        1792117690671214370,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/InnerProductSpace/CausalContactHilbertSeparation.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/InnerProductSpace/CausalContactOperatorCost.lean",
+      "sha256": "fc6817690b7314683c114d8899437c8d99f6d5831e32b0fcce841ec0372bfab8",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/InnerProductSpace/CausalContactOperatorCost.lean",
+      "original_identity": [
+        16777231,
+        224737397,
+        12788,
+        1791988650631835955,
+        1791988650631835955,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685982,
+        12788,
+        1792117690674016303,
+        1792117690674026261,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/InnerProductSpace/CausalContactOperatorCost.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/InnerProductSpace/CausalContactSeparation.lean",
+      "sha256": "76335917d6981fbb854ef88f203ed2fdb42155ac8439725cc40095382a120d12",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/InnerProductSpace/CausalContactSeparation.lean",
+      "original_identity": [
+        16777231,
+        224737398,
+        8003,
+        1791988650631904455,
+        1791988650631904455,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685984,
+        8003,
+        1792117690675719355,
+        1792117690675727521,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/InnerProductSpace/CausalContactSeparation.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/InnerProductSpace/CausalFiniteOperatorSeparation.lean",
+      "sha256": "f9d07fb136343ef0874237ea8c1f4cc63f21fc6ded4b2cc08a22b997f3a3e782",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/InnerProductSpace/CausalFiniteOperatorSeparation.lean",
+      "original_identity": [
+        16777231,
+        224737399,
+        9658,
+        1791988650631974621,
+        1791988650631974621,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685985,
+        9658,
+        1792117690677572240,
+        1792117690677580574,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/InnerProductSpace/CausalFiniteOperatorSeparation.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/InnerProductSpace/CausalGramCongruenceObstruction.lean",
+      "sha256": "c487e6426b671d2dd8f4c12ba8ce3d9e7a5b8b03dbd2506ad73a86c96ee0cfff",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/InnerProductSpace/CausalGramCongruenceObstruction.lean",
+      "original_identity": [
+        16777231,
+        224737400,
+        4726,
+        1791988650632037954,
+        1791988650632037954,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685986,
+        4726,
+        1792117690678766331,
+        1792117690678774873,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/InnerProductSpace/CausalGramCongruenceObstruction.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/InnerProductSpace/CausalIndividualRealization.lean",
+      "sha256": "c3225454b6d0d14df6d3ea68d9367e764de96d0ea0273c123ab274906d6a3f87",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/InnerProductSpace/CausalIndividualRealization.lean",
+      "original_identity": [
+        16777231,
+        224737401,
+        5742,
+        1791988650632102453,
+        1791988650632102453,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685987,
+        5742,
+        1792117690680168256,
+        1792117690680175589,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/InnerProductSpace/CausalIndividualRealization.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/InnerProductSpace/CausalLastLabelOperatorCost.lean",
+      "sha256": "4508307710ec2f1c7cf14d918ff9f34d37e0f98291d42ba96b9ef6e3a42f9e11",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/InnerProductSpace/CausalLastLabelOperatorCost.lean",
+      "original_identity": [
+        16777231,
+        224737402,
+        5419,
+        1791988650632167911,
+        1791988650632167911,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685988,
+        5419,
+        1792117690681467222,
+        1792117690681473888,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/InnerProductSpace/CausalLastLabelOperatorCost.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/InnerProductSpace/CausalRealizationPolynomialObstruction.lean",
+      "sha256": "26a7db34e1f2066ccd7ebadd1a46c08b3617726d991a2ec602b10cc203effd9d",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/InnerProductSpace/CausalRealizationPolynomialObstruction.lean",
+      "original_identity": [
+        16777231,
+        224737403,
+        6893,
+        1791988650632248619,
+        1791988650632248619,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685990,
+        6893,
+        1792117690682911813,
+        1792117690682918730,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/InnerProductSpace/CausalRealizationPolynomialObstruction.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/InnerProductSpace/CausalResponseGram.lean",
+      "sha256": "e563cca4c98955fea76d39fbbd64a5f7ad18688769b89636c52418d315a642db",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/InnerProductSpace/CausalResponseGram.lean",
+      "original_identity": [
+        16777231,
+        211513278,
+        6613,
+        1791701938001505617,
+        1791701938001553784,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685991,
+        6613,
+        1792117690684405614,
+        1792117690684413281,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/InnerProductSpace/CausalResponseGram.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/InnerProductSpace/ClosedComplexSolvability.lean",
+      "sha256": "4b43a6bd90cfdec303bfa073e151847c40103bcfc84b7b27696872cadeb4a94a",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/InnerProductSpace/ClosedComplexSolvability.lean",
+      "original_identity": [
+        16777231,
+        226089111,
+        4340,
+        1792088071373764198,
+        1792088071373764198,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685992,
+        4340,
+        1792117690685799122,
+        1792117690685807205,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/InnerProductSpace/ClosedComplexSolvability.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/InnerProductSpace/ClosedOperatorSolvability.lean",
+      "sha256": "0a46bd0dfb3a7ba86fde0a5331103e72a5263396bce7abcbf35137b48797df2c",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/InnerProductSpace/ClosedOperatorSolvability.lean",
+      "original_identity": [
+        16777231,
+        226069747,
+        5228,
+        1792087373603195254,
+        1792087373603195254,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685993,
+        5228,
+        1792117690687071838,
+        1792117690687079380,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/InnerProductSpace/ClosedOperatorSolvability.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/InnerProductSpace/CompactResidualNormalization.lean",
+      "sha256": "b2e41da84e528d6e5b6f85289a4c6123995d1bad00d7cf54a8d112fbf5b38b4d",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/InnerProductSpace/CompactResidualNormalization.lean",
+      "original_identity": [
+        16777231,
+        211513335,
+        5792,
+        1791701938027857713,
+        1791701938027903005,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685994,
+        5792,
+        1792117690688388804,
+        1792117690688396096,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/InnerProductSpace/CompactResidualNormalization.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/InnerProductSpace/CompactSourceGramPositiveDefinite.lean",
+      "sha256": "74a51c08f80359a56cae6669c6cf071cfa82af6ad6c068863eb955265f3a1abb",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/InnerProductSpace/CompactSourceGramPositiveDefinite.lean",
+      "original_identity": [
+        16777231,
+        224737416,
+        7377,
+        1791988650633050487,
+        1791988650633050487,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685995,
+        7377,
+        1792117690690341066,
+        1792117690690349232,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/InnerProductSpace/CompactSourceGramPositiveDefinite.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/InnerProductSpace/DilationGram.lean",
+      "sha256": "701395de80454619a0cc384543d42935b500a46ba1676e87e52cbb907dd479ab",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/InnerProductSpace/DilationGram.lean",
+      "original_identity": [
+        16777231,
+        211513331,
+        7460,
+        1791701938026551506,
+        1791701938026591340,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685996,
+        7460,
+        1792117690691877200,
+        1792117690691885366,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/InnerProductSpace/DilationGram.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/InnerProductSpace/DilationResponseSeparation.lean",
+      "sha256": "191a35b79935a6c65eed972463d5d24a9a90a2caac8c75108435fad274b81452",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/InnerProductSpace/DilationResponseSeparation.lean",
+      "original_identity": [
+        16777231,
+        211513334,
+        3296,
+        1791701938027465005,
+        1791701938027504630,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685997,
+        3296,
+        1792117690692890872,
+        1792117690692897831,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/InnerProductSpace/DilationResponseSeparation.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/InnerProductSpace/JointGraphSolvability.lean",
+      "sha256": "c5245e36d784b906ee455bde42596ebd0f18fcc2dabceb9993b3ac1e3e0470a0",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/InnerProductSpace/JointGraphSolvability.lean",
+      "original_identity": [
+        16777231,
+        226100454,
+        2823,
+        1792088850753289899,
+        1792088850753289899,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685998,
+        2823,
+        1792117690693874586,
+        1792117690693881795,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/InnerProductSpace/JointGraphSolvability.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/InnerProductSpace/LogarithmicCharacterGramBounds.lean",
+      "sha256": "f8ba7ca70373086bfa3546b7a9abe0f8c1cca819ed2a1caf1cf14d985e5afe1c",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/InnerProductSpace/LogarithmicCharacterGramBounds.lean",
+      "original_identity": [
+        16777231,
+        224707687,
+        13343,
+        1791986222515901575,
+        1791986222516191785,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230685999,
+        13343,
+        1792117690696310434,
+        1792117690696319184,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/InnerProductSpace/LogarithmicCharacterGramBounds.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/InnerProductSpace/MoebiusResponseGramExpansion.lean",
+      "sha256": "b665918a5932600719e42169b9248627dcad5b67e0bd43344e2ec416255f1f49",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/InnerProductSpace/MoebiusResponseGramExpansion.lean",
+      "original_identity": [
+        16777231,
+        218134335,
+        2719,
+        1791751929981163548,
+        1791751929981163548,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686000,
+        2719,
+        1792117690697348774,
+        1792117690697356565,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/InnerProductSpace/MoebiusResponseGramExpansion.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/InnerProductSpace/NonzeroVectorRealization.lean",
+      "sha256": "1b4a9f99d8138865117d24b2d038a327ebade0a7ab5a21b94fbd74c68cbee25f",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/InnerProductSpace/NonzeroVectorRealization.lean",
+      "original_identity": [
+        16777231,
+        224737417,
+        3104,
+        1791988650633118695,
+        1791988650633118695,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686001,
+        3104,
+        1792117690699174118,
+        1792117690699190409,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/InnerProductSpace/NonzeroVectorRealization.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/InnerProductSpace/SignedCorrelationBudgetEquivalence.lean",
+      "sha256": "8d7c0e00458c9fa0b20aa2e9a8b3e27fe67b4e7dc1670d526264700911824ef8",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/InnerProductSpace/SignedCorrelationBudgetEquivalence.lean",
+      "original_identity": [
+        16777231,
+        218134336,
+        2561,
+        1791751929981235923,
+        1791751929981235923,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686002,
+        2561,
+        1792117690700163624,
+        1792117690700171123,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/InnerProductSpace/SignedCorrelationBudgetEquivalence.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/InnerProductSpace/SignedSynthesisEnergyBounds.lean",
+      "sha256": "b6ad451ec85bf311d406c1941efb586ab1ec9569637bb9772766aa737734078d",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/InnerProductSpace/SignedSynthesisEnergyBounds.lean",
+      "original_identity": [
+        16777231,
+        218134337,
+        4656,
+        1791751929981327340,
+        1791751929981327340,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686003,
+        4656,
+        1792117690702769264,
+        1792117690702787597,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/InnerProductSpace/SignedSynthesisEnergyBounds.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/InnerProductSpace/SignedWindowGramIdentity.lean",
+      "sha256": "7fb835484e4360740855829f0870914efdce4417af0a9f164c9a70f4e22e1fdd",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/InnerProductSpace/SignedWindowGramIdentity.lean",
+      "original_identity": [
+        16777231,
+        218134338,
+        5206,
+        1791751929981407881,
+        1791751929981407881,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686004,
+        5206,
+        1792117690705142070,
+        1792117690705173028,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/InnerProductSpace/SignedWindowGramIdentity.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/InnerProductSpace/SignedWindowPacketCertificates.lean",
+      "sha256": "b6be5c79d76278d8e6d7de6344ca7d16295a3c98786eca85baf8c8a941b75244",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/InnerProductSpace/SignedWindowPacketCertificates.lean",
+      "original_identity": [
+        16777231,
+        224692928,
+        19476,
+        1791982263710887423,
+        1791982263711194295,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686005,
+        19476,
+        1792117690708865341,
+        1792117690708876217,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/InnerProductSpace/SignedWindowPacketCertificates.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/InnerProductSpace/WeightedSchurBounds.lean",
+      "sha256": "b776209c813143d71ca300861daa1479868cf04247e032c0365ba1f3be9664b1",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/InnerProductSpace/WeightedSchurBounds.lean",
+      "original_identity": [
+        16777231,
+        224683511,
+        7193,
+        1791975299514927354,
+        1791975299515556599,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686006,
+        7193,
+        1792117690710546851,
+        1792117690710555310,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/InnerProductSpace/WeightedSchurBounds.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/IntegralTransforms/CompactProfileLogarithmicDerivative.lean",
+      "sha256": "245fecbd8e99aa4dc35863aa8de1dc69f5132446018fc3ff0937b3ae0983734c",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/IntegralTransforms/CompactProfileLogarithmicDerivative.lean",
+      "original_identity": [
+        16777231,
+        224737431,
+        3033,
+        1791988650633808398,
+        1791988650633808398,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686008,
+        3033,
+        1792117690711539691,
+        1792117690711546899,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/IntegralTransforms/CompactProfileLogarithmicDerivative.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/IntegralTransforms/CompactProfileLogarithmicMoment.lean",
+      "sha256": "000b29ebda316c72bfad12f6f82b5af294b43f9041487b0f5d72e540c8e2e5bb",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/IntegralTransforms/CompactProfileLogarithmicMoment.lean",
+      "original_identity": [
+        16777231,
+        224737432,
+        1956,
+        1791988650633861064,
+        1791988650633861064,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686009,
+        1956,
+        1792117690712308445,
+        1792117690712315070,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/IntegralTransforms/CompactProfileLogarithmicMoment.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/IntegralTransforms/CompactProfileLogarithmicRegularity.lean",
+      "sha256": "bc7d455945e98f2374ad91a8c8d23e4d9f15d8f9f1df2bd073972ca2c692ee64",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/IntegralTransforms/CompactProfileLogarithmicRegularity.lean",
+      "original_identity": [
+        16777231,
+        224737433,
+        3606,
+        1791988650633915563,
+        1791988650633915563,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686010,
+        3606,
+        1792117690713382660,
+        1792117690713390576,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/IntegralTransforms/CompactProfileLogarithmicRegularity.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/IntegralTransforms/LogarithmicMomentSubstitution.lean",
+      "sha256": "8f09bfa02c86da0e30c8ee80f4887dd17d48d3e0e803b5b8a0631d1052cab4a7",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/IntegralTransforms/LogarithmicMomentSubstitution.lean",
+      "original_identity": [
+        16777231,
+        224737434,
+        5907,
+        1791988650633988771,
+        1791988650633988771,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686011,
+        5907,
+        1792117690714781085,
+        1792117690714788710,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/IntegralTransforms/LogarithmicMomentSubstitution.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/IntegralTransforms/LogarithmicProfileCutoff.lean",
+      "sha256": "09121b3ec38b61abae9563f1b6ecff0f0ba597f43637154394bcf1f0418dd1ac",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/IntegralTransforms/LogarithmicProfileCutoff.lean",
+      "original_identity": [
+        16777231,
+        224737435,
+        2660,
+        1791988650634058271,
+        1791988650634058271,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686012,
+        2660,
+        1792117690715635048,
+        1792117690715641757,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/IntegralTransforms/LogarithmicProfileCutoff.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/IntegralTransforms/LogarithmicProfileDerivative.lean",
+      "sha256": "bfc0908dc1f804b9c77f844b3c481abae104f6084ad9ad19118678b786ba65b3",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/IntegralTransforms/LogarithmicProfileDerivative.lean",
+      "original_identity": [
+        16777231,
+        224737436,
+        4127,
+        1791988650634127770,
+        1791988650634127770,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686013,
+        4127,
+        1792117690717470642,
+        1792117690717487642,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/IntegralTransforms/LogarithmicProfileDerivative.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/IntegralTransforms/LogarithmicProfileRegularity.lean",
+      "sha256": "093bef8246dab7871afda0418fb1d02cfd2dfa48c1fc389e1ff64ead67193ea4",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/IntegralTransforms/LogarithmicProfileRegularity.lean",
+      "original_identity": [
+        16777231,
+        224737437,
+        2717,
+        1791988650634187311,
+        1791988650634187311,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686014,
+        2717,
+        1792117690719283944,
+        1792117690719303278,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/IntegralTransforms/LogarithmicProfileRegularity.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/IntegralTransforms/LogarithmicProfileWeights.lean",
+      "sha256": "2da34cedc49ab014d2e1f3a9dc8b8c42d925f879cecd0503daa9bbb2bac2122c",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/IntegralTransforms/LogarithmicProfileWeights.lean",
+      "original_identity": [
+        16777231,
+        224737438,
+        7092,
+        1791988650634246019,
+        1791988650634246019,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686015,
+        7092,
+        1792117690721039830,
+        1792117690721048913,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/IntegralTransforms/LogarithmicProfileWeights.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Integration/CompactPolynomialMoments.lean",
+      "sha256": "3c6b04e8438292b9ac75badd78a21244d26bc10e0d3e5a9fd986114582955e77",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Integration/CompactPolynomialMoments.lean",
+      "original_identity": [
+        16777231,
+        211513328,
+        6149,
+        1791701938025595799,
+        1791701938025664174,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686017,
+        6149,
+        1792117690723460803,
+        1792117690723479011,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Integration/CompactPolynomialMoments.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Integration/CompactWeightedDerivativeMoments.lean",
+      "sha256": "09a62702c191806488014bdae2d00b3d2e694430e469753181963f01dd014804",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Integration/CompactWeightedDerivativeMoments.lean",
+      "original_identity": [
+        16777231,
+        224737444,
+        8457,
+        1791988650634621599,
+        1791988650634621599,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686018,
+        8457,
+        1792117690725518690,
+        1792117690725529106,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Integration/CompactWeightedDerivativeMoments.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Integration/ExponentialInterval.lean",
+      "sha256": "bb9dbcde90c2bea8f3bb77953626affb70752466ccc6fd3a43df2989e4e0ca39",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Integration/ExponentialInterval.lean",
+      "original_identity": [
+        16777231,
+        223516190,
+        2096,
+        1791944125796232626,
+        1791944125796232626,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686019,
+        2096,
+        1792117690726376695,
+        1792117690726384153,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Integration/ExponentialInterval.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Integration/ExponentialVolterraL2.lean",
+      "sha256": "963957d15eab9c20a0194656e8b0fcbee721bebabb9fedd8eef55968b54d12b0",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Integration/ExponentialVolterraL2.lean",
+      "original_identity": [
+        16777231,
+        224737445,
+        7374,
+        1791988650634702182,
+        1791988650634702182,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686020,
+        7374,
+        1792117690727925871,
+        1792117690727932495,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Integration/ExponentialVolterraL2.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Integration/FiniteUnitSumVariation.lean",
+      "sha256": "20ce18d7f9d2197b15bcb85f2bf6d534354202bdbc09f26a6436fcae5ca91b63",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Integration/FiniteUnitSumVariation.lean",
+      "original_identity": [
+        16777231,
+        224737446,
+        4088,
+        1791988650634778390,
+        1791988650634778390,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686021,
+        4088,
+        1792117690728960460,
+        1792117690728968460,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Integration/FiniteUnitSumVariation.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Integration/PositiveHalfLineCutoffBalance.lean",
+      "sha256": "34446d67fbae7e7adcac18b3eabda9e9246803aee12aff4a80b426c747996850",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Integration/PositiveHalfLineCutoffBalance.lean",
+      "original_identity": [
+        16777231,
+        224737447,
+        2495,
+        1791988650634846514,
+        1791988650634846514,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686022,
+        2495,
+        1792117690729861382,
+        1792117690729868715,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Integration/PositiveHalfLineCutoffBalance.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Integration/TranslationSeamLowerBound.lean",
+      "sha256": "8cb9f90f05e03aa1f8590004f3ff8fb93541f48211481123cc48a86cafcf5aca",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Integration/TranslationSeamLowerBound.lean",
+      "original_identity": [
+        16777231,
+        224737448,
+        3685,
+        1791988650634916305,
+        1791988650634916305,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686023,
+        3685,
+        1792117690730924888,
+        1792117690730931805,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Integration/TranslationSeamLowerBound.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/IntervalIntegral/Reflection.lean",
+      "sha256": "55325de763afe3f5c95efab07f1a452a77597cf9621fe124555b03a9ffbfffa3",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/IntervalIntegral/Reflection.lean",
+      "original_identity": [
+        16777231,
+        211513263,
+        5915,
+        1791701937996471872,
+        1791701937996543122,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686025,
+        5915,
+        1792117690734364534,
+        1792117690734375533,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/IntervalIntegral/Reflection.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/IntervalReflection.lean",
+      "sha256": "8daccbb547c6ea9e481182366f25bae913a4effbf59059becd9a40532541591d",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/IntervalReflection.lean",
+      "original_identity": [
+        16777231,
+        206720387,
+        6058,
+        1791668672239091856,
+        1791668672239091856,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686026,
+        6058,
+        1792117690735808792,
+        1792117690735816167,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/IntervalReflection.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/LaplaceTransform/Analytic.lean",
+      "sha256": "fabd0904a86cbd948af89cecb5c904653b15a32b6eabacf37ee9af6e91b5d1bb",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/LaplaceTransform/Analytic.lean",
+      "original_identity": [
+        16777231,
+        220292171,
+        1452,
+        1791912380393875282,
+        1791912380394222573,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686028,
+        1452,
+        1792117690736557713,
+        1792117690736565838,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/LaplaceTransform/Analytic.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/LaplaceTransform/CausalExponentialResponse.lean",
+      "sha256": "2a761ffcb29c2814ce6e65d7a1441ac63117ddbe6f9a79f8abef62054760958a",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/LaplaceTransform/CausalExponentialResponse.lean",
+      "original_identity": [
+        16777231,
+        211513281,
+        6960,
+        1791701938003061532,
+        1791701938003158365,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686029,
+        6960,
+        1792117690738125431,
+        1792117690738133222,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/LaplaceTransform/CausalExponentialResponse.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/LaplaceTransform/ExponentialEnergy.lean",
+      "sha256": "6a9b43308dcb2a373f5d131014ad8c3826829b96c2d6c700ee9fd35232f43083",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/LaplaceTransform/ExponentialEnergy.lean",
+      "original_identity": [
+        16777231,
+        223229939,
+        3844,
+        1791935727250495665,
+        1791935727250798918,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686030,
+        3844,
+        1792117690739498189,
+        1792117690739509064,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/LaplaceTransform/ExponentialEnergy.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/LaplaceTransform/ExponentialThreshold.lean",
+      "sha256": "1e8446ad9a20c41417d2b5c1aa91808a691d3f42958f0e7bf569d22ab5d47a71",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/LaplaceTransform/ExponentialThreshold.lean",
+      "original_identity": [
+        16777231,
+        221614134,
+        1681,
+        1791924786031917008,
+        1791924786032213719,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686031,
+        1681,
+        1792117690740278485,
+        1792117690740287277,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/LaplaceTransform/ExponentialThreshold.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/LaplaceTransform/MoebiusResponseFormula.lean",
+      "sha256": "ed818d7395c97ba17a75fae10695bbc7c729420eeeef60648f61b51df2d4f09d",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/LaplaceTransform/MoebiusResponseFormula.lean",
+      "original_identity": [
+        16777231,
+        218134341,
+        14616,
+        1791751929981670547,
+        1791751929981670547,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686032,
+        14616,
+        1792117690743095502,
+        1792117690743104793,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/LaplaceTransform/MoebiusResponseFormula.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/LaplaceTransform/PolynomialEnergy.lean",
+      "sha256": "eedad665d4fdf36fcdf48280b8b816a4edc09e11725ff17a422bd9e2b003457f",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/LaplaceTransform/PolynomialEnergy.lean",
+      "original_identity": [
+        16777231,
+        222979198,
+        6445,
+        1791932054436861397,
+        1791932054437209777,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686033,
+        6445,
+        1792117690744604469,
+        1792117690744611636,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/LaplaceTransform/PolynomialEnergy.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/LaplaceTransform/PolynomialEnergyHolomorphy.lean",
+      "sha256": "9231c577ddca9727b55979be4acc9e1f3dfcf2d599d4fa124f798090200bc20c",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/LaplaceTransform/PolynomialEnergyHolomorphy.lean",
+      "original_identity": [
+        16777231,
+        224378287,
+        12628,
+        1791949838912684750,
+        1791949838912975833,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686034,
+        12628,
+        1792117690746978358,
+        1792117690746985316,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/LaplaceTransform/PolynomialEnergyHolomorphy.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/MellinTransform/CompactGaussianWindow.lean",
+      "sha256": "db195580ca2f4e4a941f13c71d285af377d2bb29ed7250db0f0b13570984cec5",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/MellinTransform/CompactGaussianWindow.lean",
+      "original_identity": [
+        16777231,
+        226726499,
+        6130,
+        1792097384211686714,
+        1792097384211686714,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686036,
+        6130,
+        1792117690748536409,
+        1792117690748544409,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/MellinTransform/CompactGaussianWindow.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/MellinTransform/GaussianAnnularSeparation.lean",
+      "sha256": "f5484cd14ed516b463e8e1feb3022bb7c5e008addfcca6f66c155cb456b8232f",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/MellinTransform/GaussianAnnularSeparation.lean",
+      "original_identity": [
+        16777231,
+        228041586,
+        8093,
+        1792108968113157924,
+        1792108968113157924,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686037,
+        8093,
+        1792117690750303544,
+        1792117690750312169,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/MellinTransform/GaussianAnnularSeparation.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/MellinTransform/GaussianCoupledSeparation.lean",
+      "sha256": "904f3991a65106ee9c0a93f575ba536eec2645d64cff7ff3d9a16de8f389e6fc",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/MellinTransform/GaussianCoupledSeparation.lean",
+      "original_identity": [
+        16777231,
+        227922688,
+        6522,
+        1792107591729190311,
+        1792107591729190311,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686038,
+        6522,
+        1792117690751802136,
+        1792117690751810053,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/MellinTransform/GaussianCoupledSeparation.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/MellinTransform/GaussianDensityMoments.lean",
+      "sha256": "7bdf9b9141eaf1a5cdfb043265211dc067508f91edcc27c935d1c5c118f30f1b",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/MellinTransform/GaussianDensityMoments.lean",
+      "original_identity": [
+        16777231,
+        227818720,
+        15763,
+        1792105705157457426,
+        1792105705157457426,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686039,
+        15763,
+        1792117690756820166,
+        1792117690756832416,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/MellinTransform/GaussianDensityMoments.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/MellinTransform/GaussianDyadicSummation.lean",
+      "sha256": "1f0129ffe0408983f6b19be9ae8fb40998105ce3b88e1e7fcf1a2e625eb8ced0",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/MellinTransform/GaussianDyadicSummation.lean",
+      "original_identity": [
+        16777231,
+        227109235,
+        5464,
+        1792100683554853924,
+        1792100683554853924,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686040,
+        5464,
+        1792117690758239299,
+        1792117690758248424,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/MellinTransform/GaussianDyadicSummation.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/MellinTransform/GaussianFourierMoments.lean",
+      "sha256": "56f14b355aeb0b89e30457cc6b7f8be887fd288e2caf3643907481f32171d86a",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/MellinTransform/GaussianFourierMoments.lean",
+      "original_identity": [
+        16777231,
+        227585689,
+        5560,
+        1792103131318742372,
+        1792103131318742372,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686041,
+        5560,
+        1792117690759785058,
+        1792117690759793933,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/MellinTransform/GaussianFourierMoments.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/MellinTransform/GaussianLogFlow.lean",
+      "sha256": "eab5f54194b6eaf1589a902c0bfa38589c04de460c45cfb9405d31d458f81013",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/MellinTransform/GaussianLogFlow.lean",
+      "original_identity": [
+        16777231,
+        227698223,
+        5172,
+        1792104679245804689,
+        1792104679245804689,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686042,
+        5172,
+        1792117690761395776,
+        1792117690761405026,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/MellinTransform/GaussianLogFlow.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/MellinTransform/GaussianLogWindow.lean",
+      "sha256": "258fdbb7e3517ae4f30db165e9281ceb2c80d595d5a891523131c365c6ae1550",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/MellinTransform/GaussianLogWindow.lean",
+      "original_identity": [
+        16777231,
+        227698226,
+        12487,
+        1792104679246290145,
+        1792104679246290145,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686043,
+        12487,
+        1792117690763986541,
+        1792117690763999083,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/MellinTransform/GaussianLogWindow.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/MellinTransform/GaussianRemoteSeminorms.lean",
+      "sha256": "e50de8626a4418b547123c0f37d94b9f3caef08a9820639524e6bd61da2061a9",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/MellinTransform/GaussianRemoteSeminorms.lean",
+      "original_identity": [
+        16777231,
+        227265157,
+        11232,
+        1792101698658233676,
+        1792101698658233676,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686044,
+        11232,
+        1792117690766385264,
+        1792117690766394764,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/MellinTransform/GaussianRemoteSeminorms.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/MellinTransform/GaussianWindowSeminorms.lean",
+      "sha256": "dcfa87ebe43582e02c38b1cc820656fde9160d7d633a6a99e6a3ed6b1e3d93d0",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/MellinTransform/GaussianWindowSeminorms.lean",
+      "original_identity": [
+        16777231,
+        227076378,
+        9388,
+        1792099357752352227,
+        1792099357752352227,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686045,
+        9388,
+        1792117690768401859,
+        1792117690768410318,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/MellinTransform/GaussianWindowSeminorms.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/MellinTransform/LogarithmicGaussian.lean",
+      "sha256": "cd47e598796f4f901ddea56dd05bb9e719534e1aac5589c1be6ddfb8d9fea66d",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/MellinTransform/LogarithmicGaussian.lean",
+      "original_identity": [
+        16777231,
+        226235205,
+        5253,
+        1792092541240439687,
+        1792092541240439687,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686046,
+        5253,
+        1792117690769747075,
+        1792117690769754534,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/MellinTransform/LogarithmicGaussian.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/MellinTransform/NormalizedGaussian.lean",
+      "sha256": "a0ed0dbf644601887df128536951a9c3e17ecf42970069a13acdfcb93518e3bf",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/MellinTransform/NormalizedGaussian.lean",
+      "original_identity": [
+        16777231,
+        226394647,
+        6685,
+        1792093993819520910,
+        1792093993819520910,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686047,
+        6685,
+        1792117690771235709,
+        1792117690771243334,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/MellinTransform/NormalizedGaussian.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/MellinTransform/ReverseInversion.lean",
+      "sha256": "88d959d74d9d5e27772f57e847497b9a943167cc41ae6abb453c3932cbb84c57",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/MellinTransform/ReverseInversion.lean",
+      "original_identity": [
+        16777231,
+        226206533,
+        8017,
+        1792091245689011774,
+        1792091245689011774,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686048,
+        8017,
+        1792117690773132929,
+        1792117690773141137,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/MellinTransform/ReverseInversion.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/MellinTransform/ScaledGaussianDerivatives.lean",
+      "sha256": "2d1dbbcd5142807daa8a5b6719b0a7bf026aa90991fa030019ed2fc9c0178b0a",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/MellinTransform/ScaledGaussianDerivatives.lean",
+      "original_identity": [
+        16777231,
+        226911358,
+        7291,
+        1792098270491554572,
+        1792098270491554572,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686049,
+        7291,
+        1792117690774781938,
+        1792117690774790563,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/MellinTransform/ScaledGaussianDerivatives.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/NormedSpace/QuadraticError.lean",
+      "sha256": "f265b44001d2fb74859425c0e10002a8912f64906ce4437594206cd6de808816",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/NormedSpace/QuadraticError.lean",
+      "original_identity": [
+        16777231,
+        219738200,
+        1780,
+        1791902576959072699,
+        1791902576959171367,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686051,
+        1780,
+        1792117690775634193,
+        1792117690775641152,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/NormedSpace/QuadraticError.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/PartitionOfUnity/DyadicAnnulus.lean",
+      "sha256": "15637b705583781150ff8ba8b0f6aaa6ef969fe394f775e35124c5fa30f7aa67",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/PartitionOfUnity/DyadicAnnulus.lean",
+      "original_identity": [
+        16777231,
+        226598564,
+        6536,
+        1792096457062856790,
+        1792096457062856790,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686053,
+        6536,
+        1792117690777266620,
+        1792117690777274911,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/PartitionOfUnity/DyadicAnnulus.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Polarization.lean",
+      "sha256": "eca8d7c7426a9c4a329522472fffbc3c3de6f05c047cb328ddd1b2c2da59c2d5",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Polarization.lean",
+      "original_identity": [
+        16777231,
+        205732030,
+        1978,
+        1791666170261461989,
+        1791666170261461989,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686054,
+        1978,
+        1792117690778198583,
+        1792117690778206667,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Polarization.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/ReciprocalKernel.lean",
+      "sha256": "0a926ada5b98fa02e97f6a962160486e758f2716f6d870c375e61e84635282d2",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/ReciprocalKernel.lean",
+      "original_identity": [
+        16777231,
+        211236135,
+        8502,
+        1791697173674196082,
+        1791697173674269999,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686055,
+        8502,
+        1792117690779974469,
+        1792117690779981969,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/ReciprocalKernel.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/Series/DyadicKernel.lean",
+      "sha256": "c99ee7e558c21befc57822c87a0221b84d8e45254acf77e4f1ba2c2e1a4abbeb",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/Series/DyadicKernel.lean",
+      "original_identity": [
+        16777231,
+        227109229,
+        7625,
+        1792100683554251836,
+        1792100683554251836,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686057,
+        7625,
+        1792117690781587728,
+        1792117690781595020,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/Series/DyadicKernel.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/SpecialFunctions/DigammaFourierBound.lean",
+      "sha256": "ee1a6a655ef921b9e20f6eff0518f0d115c35eb8369c61811aaca52350ad547e",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/SpecialFunctions/DigammaFourierBound.lean",
+      "original_identity": [
+        16777231,
+        211513409,
+        4220,
+        1791701938063214925,
+        1791701938063272008,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686059,
+        4220,
+        1792117690782835319,
+        1792117690782842861,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/SpecialFunctions/DigammaFourierBound.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/SpecialFunctions/ExponentialFloorGap.lean",
+      "sha256": "34543ac708884a829a551b2c2a469d7046de8039a168aad83ae4e60598aa2851",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/SpecialFunctions/ExponentialFloorGap.lean",
+      "original_identity": [
+        16777231,
+        224737465,
+        6078,
+        1791988650635946922,
+        1791988650635946922,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686060,
+        6078,
+        1792117690784285828,
+        1792117690784293786,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/SpecialFunctions/ExponentialFloorGap.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/SpecialFunctions/ExponentialPolynomialDomination.lean",
+      "sha256": "c36daaa9cd6addc1802da35a661facb707ba919f37e60f0433ddf390a92275fc",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/SpecialFunctions/ExponentialPolynomialDomination.lean",
+      "original_identity": [
+        16777231,
+        224737466,
+        3530,
+        1791988650636018338,
+        1791988650636018338,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686061,
+        3530,
+        1792117690785394959,
+        1792117690785402251,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/SpecialFunctions/ExponentialPolynomialDomination.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/SpecialFunctions/PowerIntervalDrop.lean",
+      "sha256": "492348fdf35a1c49f0f612c1dda2372daa1fd658a4058ab9d4d473b9677c22c4",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/SpecialFunctions/PowerIntervalDrop.lean",
+      "original_identity": [
+        16777231,
+        223516191,
+        1994,
+        1791944125796310418,
+        1791944125796310418,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686062,
+        1994,
+        1792117690786263464,
+        1792117690786270256,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/SpecialFunctions/PowerIntervalDrop.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/SpecialFunctions/SquaredInverseBump.lean",
+      "sha256": "d8edd04841c7bab3c52e385bb74f5c23b6596e6e8f9453b59a24bb8e7421d48f",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/SpecialFunctions/SquaredInverseBump.lean",
+      "original_identity": [
+        16777231,
+        211513398,
+        7009,
+        1791701938057982097,
+        1791701938058062222,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686063,
+        7009,
+        1792117690787787432,
+        1792117690787794015,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/SpecialFunctions/SquaredInverseBump.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/SumIntegralComparison/ExponentialResponseSquareSum.lean",
+      "sha256": "98093db699d4d7ae1d99b7daaa8e4112dd3b740e1a4f7e8d9de7c0da7c252690",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/SumIntegralComparison/ExponentialResponseSquareSum.lean",
+      "original_identity": [
+        16777231,
+        218134345,
+        9579,
+        1791751929981991797,
+        1791751929981991797,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686065,
+        9579,
+        1792117690789748318,
+        1792117690789756068,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/SumIntegralComparison/ExponentialResponseSquareSum.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/TestFunctions/EvenSeparation.lean",
+      "sha256": "f585726322b9a27cf7757567345ee903f9c792c0b470494cb056a3ad926005f9",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/TestFunctions/EvenSeparation.lean",
+      "original_identity": [
+        16777231,
+        211513383,
+        4223,
+        1791701938049847398,
+        1791701938049914648,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686067,
+        4223,
+        1792117690790840741,
+        1792117690790847950,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/TestFunctions/EvenSeparation.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/TestFunctions/ExponentialMomentVariation.lean",
+      "sha256": "aab9afbee65b9b9111037f960771da2d571a585d735c4d86db4176a2034d8279",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/TestFunctions/ExponentialMomentVariation.lean",
+      "original_identity": [
+        16777231,
+        211513386,
+        5386,
+        1791701938051472688,
+        1791701938051548021,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686068,
+        5386,
+        1792117690792094165,
+        1792117690792100499,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/TestFunctions/ExponentialMomentVariation.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/TestFunctions/PolynomialBumpNormalization.lean",
+      "sha256": "8938ea1f677a595343229a06c00978d6380875e4faaf5118859eede54cf239f7",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/TestFunctions/PolynomialBumpNormalization.lean",
+      "original_identity": [
+        16777231,
+        211513414,
+        6746,
+        1791701938065308423,
+        1791701938065352381,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686069,
+        6746,
+        1792117690793498965,
+        1792117690793505424,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/TestFunctions/PolynomialBumpNormalization.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/TestFunctions/PolynomialBumpSecondEnergy.lean",
+      "sha256": "d4e956319671eb45319648ec4df2d778a1c596e2e5655638ae73550924b10412",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/TestFunctions/PolynomialBumpSecondEnergy.lean",
+      "original_identity": [
+        16777231,
+        211513387,
+        16531,
+        1791701938052226729,
+        1791701938052322562,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686070,
+        16531,
+        1792117690796347524,
+        1792117690796354482,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/TestFunctions/PolynomialBumpSecondEnergy.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/TestFunctions/PowerFourResidualSigns.lean",
+      "sha256": "c0808e0025edb85a05ee255aac5aa94e5110aa1c8141ce6a57d23b7b39ae05b5",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/TestFunctions/PowerFourResidualSigns.lean",
+      "original_identity": [
+        16777231,
+        224737470,
+        7467,
+        1791988650636276627,
+        1791988650636276627,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686071,
+        7467,
+        1792117690797854616,
+        1792117690797861241,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/TestFunctions/PowerFourResidualSigns.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/TestFunctions/Separation.lean",
+      "sha256": "8479d379d257b8bbbe606ad9627a0883a039a61acce7a0c114f5dea7a975a38f",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/TestFunctions/Separation.lean",
+      "original_identity": [
+        16777231,
+        211513391,
+        4898,
+        1791701938054269435,
+        1791701938054328310,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686072,
+        4898,
+        1792117690799048040,
+        1792117690799055790,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/TestFunctions/Separation.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Analysis/WeakDerivatives/PolynomialBump.lean",
+      "sha256": "1a9ff14af84efd81826a2b3c632cc2f617d2efc0fe4f10374800a5b54df30144",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Analysis/WeakDerivatives/PolynomialBump.lean",
+      "original_identity": [
+        16777231,
+        211513421,
+        10000,
+        1791701938067730504,
+        1791701938067781212,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686074,
+        10000,
+        1792117690801090677,
+        1792117690801097343,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Analysis/WeakDerivatives/PolynomialBump.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Combinatorics/DirectedGraph/EdgeTrace.lean",
+      "sha256": "e1e5f2dd23b6c04a734af4bd95f3f19c15fe4f313d66c5bccff08b3312fb2a59",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Combinatorics/DirectedGraph/EdgeTrace.lean",
+      "original_identity": [
+        16777231,
+        226234463,
+        8301,
+        1792092805919814402,
+        1792092805919814402,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686077,
+        8301,
+        1792117690802982396,
+        1792117690802990146,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Combinatorics/DirectedGraph/EdgeTrace.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Combinatorics/DirectedGraph/EndpointSection.lean",
+      "sha256": "5186e4848b7e30d5d6d18070d8948650652d0fc7ec9f004d1f5b451709c4c52f",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Combinatorics/DirectedGraph/EndpointSection.lean",
+      "original_identity": [
+        16777231,
+        226611963,
+        4039,
+        1792096502086890001,
+        1792096502086890001,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686078,
+        4039,
+        1792117690804096111,
+        1792117690804103278,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Combinatorics/DirectedGraph/EndpointSection.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Combinatorics/DirectedGraph/IncrementalPrefixTable.lean",
+      "sha256": "dc6e8066e3539897464cdfe3bf1d31797ca76baae11066a79c0d0f0c5c7ffa37",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Combinatorics/DirectedGraph/IncrementalPrefixTable.lean",
+      "original_identity": [
+        16777231,
+        227111045,
+        18898,
+        1792100773251032643,
+        1792100773251039310,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686079,
+        18898,
+        1792117690807450589,
+        1792117690807462006,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Combinatorics/DirectedGraph/IncrementalPrefixTable.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Combinatorics/DirectedGraph/OccurrencePrefix.lean",
+      "sha256": "60737e2376594568f390e394417b77c9ea0cc5464693b3ef61502213e3afcee7",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Combinatorics/DirectedGraph/OccurrencePrefix.lean",
+      "original_identity": [
+        16777231,
+        226557853,
+        6920,
+        1792095245483874321,
+        1792095245483874321,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686080,
+        6920,
+        1792117690809090474,
+        1792117690809097432,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Combinatorics/DirectedGraph/OccurrencePrefix.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Combinatorics/DirectedGraph/ParentTraceDictionary.lean",
+      "sha256": "c388e127a08238f465873954f0b6982ddbe556d0f77b252d4b2d8f89bf32237a",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Combinatorics/DirectedGraph/ParentTraceDictionary.lean",
+      "original_identity": [
+        16777231,
+        226914518,
+        14294,
+        1792098697274301954,
+        1792098697274308787,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686081,
+        14294,
+        1792117690811961116,
+        1792117690811967741,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Combinatorics/DirectedGraph/ParentTraceDictionary.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Combinatorics/DirectedGraph/PathOccurrences.lean",
+      "sha256": "b2b140e2f370d07ef866e81ebb93580ed706d64ad463377fcce82df37c4a39e5",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Combinatorics/DirectedGraph/PathOccurrences.lean",
+      "original_identity": [
+        16777231,
+        226206331,
+        9344,
+        1792091208823457147,
+        1792091208823457147,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686082,
+        9344,
+        1792117690813976544,
+        1792117690813983086,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Combinatorics/DirectedGraph/PathOccurrences.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Combinatorics/DirectedGraph/PathUnfolding.lean",
+      "sha256": "8d5e2187d705ab49c52a41779b48b445d0baa223c3608ea6495e670ddac24757",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Combinatorics/DirectedGraph/PathUnfolding.lean",
+      "original_identity": [
+        16777231,
+        226394962,
+        10317,
+        1792094019260029785,
+        1792094019260029785,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686083,
+        10317,
+        1792117690816014473,
+        1792117690816021807,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Combinatorics/DirectedGraph/PathUnfolding.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Combinatorics/DirectedGraph/PrefixInventory.lean",
+      "sha256": "fa7395f0c55943562274019d96e97e25deaea20defdf9d6f2d8a12d029e743c9",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Combinatorics/DirectedGraph/PrefixInventory.lean",
+      "original_identity": [
+        16777231,
+        226771740,
+        10259,
+        1792097630818371025,
+        1792097630818377817,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686084,
+        10259,
+        1792117690818012568,
+        1792117690818019068,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Combinatorics/DirectedGraph/PrefixInventory.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableBatch.lean",
+      "sha256": "eaa986de6b17e60b545b1e603ae42f0f1a9678bcecea9379a7198097787ef63f",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Combinatorics/DirectedGraph/PrefixTableBatch.lean",
+      "original_identity": [
+        16777231,
+        229244041,
+        10242,
+        1792110577829063130,
+        1792110577829063130,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686085,
+        10242,
+        1792117690819953913,
+        1792117690819960663,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Combinatorics/DirectedGraph/PrefixTableBatch.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableCheckpoint.lean",
+      "sha256": "39347361377ee5f5e8f58091d72652e2458b3eda2c34b74b503d4d1f3b465e03",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Combinatorics/DirectedGraph/PrefixTableCheckpoint.lean",
+      "original_identity": [
+        16777231,
+        229531704,
+        5389,
+        1792111579538423687,
+        1792111579538423687,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686086,
+        5389,
+        1792117690821204420,
+        1792117690821210795,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Combinatorics/DirectedGraph/PrefixTableCheckpoint.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableCompaction.lean",
+      "sha256": "fe95a8c59bb0a1e1e9a2a4eba1e5405deb4bcabac3159e0aefcd3db364aad56f",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Combinatorics/DirectedGraph/PrefixTableCompaction.lean",
+      "original_identity": [
+        16777231,
+        227610907,
+        15938,
+        1792103225019852815,
+        1792103225019859982,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686087,
+        15938,
+        1792117690824102604,
+        1792117690824110188,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Combinatorics/DirectedGraph/PrefixTableCompaction.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableReindex.lean",
+      "sha256": "83fc343c02d16384124ce39ed4b3f996f7a7000ee4dbba05d2015b153a9aa53c",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Combinatorics/DirectedGraph/PrefixTableReindex.lean",
+      "original_identity": [
+        16777231,
+        227927927,
+        16643,
+        1792107725420189108,
+        1792107725420189108,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686088,
+        16643,
+        1792117690827070247,
+        1792117690827077455,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Combinatorics/DirectedGraph/PrefixTableReindex.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableState.lean",
+      "sha256": "bc2398f5aae427a813c22b6025b9ca41c99c6bbfb9b9228ce49d1326a9870c3a",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Combinatorics/DirectedGraph/PrefixTableState.lean",
+      "original_identity": [
+        16777231,
+        227292985,
+        20849,
+        1792102049465938081,
+        1792102049465946164,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686089,
+        20849,
+        1792117690830541725,
+        1792117690830548892,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Combinatorics/DirectedGraph/PrefixTableState.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableUpdateReindex.lean",
+      "sha256": "65dfc39c95dfdad3f0349960a56c70f6bd8422687941068ba8943935343facd8",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Combinatorics/DirectedGraph/PrefixTableUpdateReindex.lean",
+      "original_identity": [
+        16777231,
+        228184881,
+        15988,
+        1792109162974555278,
+        1792109162974555278,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686090,
+        15988,
+        1792117690833354700,
+        1792117690833361742,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Combinatorics/DirectedGraph/PrefixTableUpdateReindex.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Combinatorics/DirectedGraph/RoleRelationReindex.lean",
+      "sha256": "ffff5137b1c0837f0cd84416db993d5d81e3bf6476891eb50984652d0f88a4a9",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Combinatorics/DirectedGraph/RoleRelationReindex.lean",
+      "original_identity": [
+        16777231,
+        227825638,
+        14840,
+        1792105893193515193,
+        1792105893193523193,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686091,
+        14840,
+        1792117690835983508,
+        1792117690835990591,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Combinatorics/DirectedGraph/RoleRelationReindex.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Combinatorics/DirectedGraph/RoleRelationTable.lean",
+      "sha256": "52940e0c878e9d9329e74455da71dc829d643b629c8997332e8a70e458abb7b2",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Combinatorics/DirectedGraph/RoleRelationTable.lean",
+      "original_identity": [
+        16777231,
+        227700545,
+        11087,
+        1792104786027756227,
+        1792104786027764602,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686092,
+        11087,
+        1792117690838115145,
+        1792117690838122437,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Combinatorics/DirectedGraph/RoleRelationTable.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Combinatorics/DirectedGraph/RootedTraceRevision.lean",
+      "sha256": "784594334cff23da4bc77f62c5cd66cf8006ad381223026f1b7383e519dfef17",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Combinatorics/DirectedGraph/RootedTraceRevision.lean",
+      "original_identity": [
+        16777231,
+        227077438,
+        9615,
+        1792099606148762936,
+        1792099606148769602,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686093,
+        9615,
+        1792117690840076865,
+        1792117690840084282,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Combinatorics/DirectedGraph/RootedTraceRevision.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Combinatorics/GraphTheory/UnitDistanceGraph/Moser.lean",
+      "sha256": "82dcabcd95c42921d1a49246db779259c5ef8a43c822db8109634cdffcfd7c6f",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Combinatorics/GraphTheory/UnitDistanceGraph/Moser.lean",
+      "original_identity": [
+        16777231,
+        211513259,
+        5855,
+        1791701937994581791,
+        1791701937994675833,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686096,
+        5855,
+        1792117690841584041,
+        1792117690841591207,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Combinatorics/GraphTheory/UnitDistanceGraph/Moser.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Combinatorics/GraphTheory/UnitDistanceGraph/MoserCoordinates.lean",
+      "sha256": "2b72eba295d456ef22b0a828e5257f219bf7f297cf570c377bd11448da51a8a2",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Combinatorics/GraphTheory/UnitDistanceGraph/MoserCoordinates.lean",
+      "original_identity": [
+        16777231,
+        211513260,
+        1641,
+        1791701937995246707,
+        1791701937995371707,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686097,
+        1641,
+        1792117690842307961,
+        1792117690842315420,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Combinatorics/GraphTheory/UnitDistanceGraph/MoserCoordinates.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Combinatorics/GraphTheory/UnitDistanceGraph/MoserSource.lean",
+      "sha256": "f41ba35bc8fa8d35b8249b1a86c3aa55b8f7ef22662270de862699e72efe93d2",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Combinatorics/GraphTheory/UnitDistanceGraph/MoserSource.lean",
+      "original_identity": [
+        16777231,
+        211513261,
+        3079,
+        1791701937995899248,
+        1791701937995971331,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686098,
+        3079,
+        1792117690843279134,
+        1792117690843286050,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Combinatorics/GraphTheory/UnitDistanceGraph/MoserSource.lean"
+    },
+    {
+      "logical_path": "GRWTSK/Combinatorics/Sequences/BalancedPartitionSampling.lean",
+      "sha256": "3339c1d1f47c02955f5401ec6eef45e993686e4a973d94b139d9d1cc66abcd93",
+      "original_path": "/Users/local/Desktop/math/GRWTSK/Combinatorics/Sequences/BalancedPartitionSampling.lean",
+      "original_identity": [
+        16777231,
+        230570181,
+        19092,
+        1792117072366854694,
+        1792117072366854694,
+        33188,
+        1
+      ],
+      "snapshot_identity": [
+        16777231,
+        230686100,
+        19092,
+        1792117690846480528,
+        1792117690846488028,
+        33024,
+        1
+      ],
+      "snapshot_relative_path": "source/GRWTSK/Combinatorics/Sequences/BalancedPartitionSampling.lean"
+    }
+  ],
+  "checked_modules": [],
+  "custom_axiom_negative_controls": [],
+  "commands": [],
+  "native_jobs": 1,
+  "command_timeout_seconds": 600,
+  "kernel_trust_level": 0,
+  "warnings_as_errors": true,
+  "native_memory_limit_megabytes": 4096,
+  "native_threads": 1,
+  "native_busy_policy": "fail-closed",
+  "native_busy_wait_seconds": 0,
+  "fresh_project_build": true,
+  "immutable_project_source_copies": true,
+  "snapshot_mode": "0400 exclusive regular files; no-follow logical paths",
+  "scope": "Manifested project replay only. No open arithmetic obligation is supplied.",
+  "dependency_provenance_scope": "Declared package anchors and direct cached dependency objects are identified. No transitive artifact census, dependency checkout pin/cleanliness claim, source replay, or object-to-source provenance is asserted by this driver.",
+  "relocation_path_adapter": {
+    "logical_path": ".noeaaeue/scripts/repository_paths.py",
+    "sha256": "4bd02ac496dc2fbd141b19f23ba86291db1618a0ae298a76beab28701ff24d22",
+    "snapshot_relative_path": "source/.noeaaeue/scripts/repository_paths.py",
+    "scope": "Physical process locations only; preserved manifest and receipt identities remain exact."
+  },
+  "operational_owner_census_contract": {
+    "helper_module": "MoebiusResponseOwnerAudit",
+    "parser_asset": ".noeaaeue/scripts/moebius_owner_census.py",
+    "runtime_exceptions_allowed": true,
+    "helper": {
+      "path": ".noeaaeue/checks/MoebiusResponseOwnerAuditCurrent.lean",
+      "sha256": "899dd97fb86ad0dcd4e1a5688a250f083744591a6580daad3a381fa77f6cc0bc",
+      "imports": [
+        "Lean"
+      ]
+    },
+    "runtime_exception_policy": {
+      "kind": "pinned-lean-generated-partial-recursor-profile",
+      "profile_sha256": "53256c3d4956d2ef48909d4347d216c625e134fd5b51f7d906ccbe13e0bd3d0f",
+      "entries": [
+        {
+          "helper": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator._unsafe_rec",
+          "original": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator",
+          "owner": "GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators",
+          "owner_source_sha256": "7ee299eed00ef1cf731e1e1b1ea7a507ae8e83d5ea0ed63f0861cf63f0e42f2c"
+        },
+        {
+          "helper": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator._unsafe_rec",
+          "original": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator",
+          "owner": "GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators",
+          "owner_source_sha256": "7ee299eed00ef1cf731e1e1b1ea7a507ae8e83d5ea0ed63f0861cf63f0e42f2c"
+        },
+        {
+          "helper": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.numerator._unsafe_rec",
+          "original": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.numerator",
+          "owner": "GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators",
+          "owner_source_sha256": "7ee299eed00ef1cf731e1e1b1ea7a507ae8e83d5ea0ed63f0861cf63f0e42f2c"
+        },
+        {
+          "helper": "GRWTSK.ProofHorizon.CorkscrewChamberCap.affectedClosure._unsafe_rec",
+          "original": "GRWTSK.ProofHorizon.CorkscrewChamberCap.affectedClosure",
+          "owner": "GRWTSK.Order.Closure.FiniteDependencyClosure",
+          "owner_source_sha256": "e78778c5b623abadfc23a668517cb4b1652ef6365962263b8440f8a156af5dec"
+        },
+        {
+          "helper": "GRWTSK.ProofHorizon.CorkscrewChamberCap.routeClosureFrom._unsafe_rec",
+          "original": "GRWTSK.ProofHorizon.CorkscrewChamberCap.routeClosureFrom",
+          "owner": "GRWTSK.Logic.Inference.FiniteRuleSystems",
+          "owner_source_sha256": "f54cb4c2f050a02fc2f3e66de3952ff10ddb0582ca096326bf11aef822b8fd02"
+        }
+      ]
+    }
+  },
+  "current_source_observation_inputs": [
+    {
+      "path": ".noeaaeue/scripts/source_observations.py",
+      "sha256": "a153565b7b3162470309f2fae9432110415b7934648a7f58f91f84821ab68125"
+    },
+    {
+      "path": ".noeaaeue/bindings/current-source-observations.json",
+      "sha256": "7dac23206574f4bd3b8429acc1548df69c531678a67ff5ca60f52bdf82a64a19"
+    }
+  ],
+  "current_runtime_profile_binding": {
+    "path": ".noeaaeue/bindings/moebius-current-profile-v2.json",
+    "sha256": "a3a139394cbb2b28ded498fa7be2b1251330b7b5c92299d180af154ae14d827a",
+    "profile_sha256": "53256c3d4956d2ef48909d4347d216c625e134fd5b51f7d906ccbe13e0bd3d0f",
+    "scope": "Current source observation/permission; fresh native qualification is required separately."
+  },
+  "shared_layout_policy_sha256": "618d847e9272dce96ec4da912287a704eef6e14bad273adbd55207a99eb3671b",
+  "failures": [
+    {
+      "stage": "driver-exception",
+      "error": "Manifest source hash mismatch: GRWTSK.Combinatorics.Sequences.CyclicSumsetGrowth",
+      "exception_type": "ValueError"
+    }
+  ],
+  "primary_failure": {
+    "stage": "driver-exception",
+    "error": "Manifest source hash mismatch: GRWTSK.Combinatorics.Sequences.CyclicSumsetGrowth",
+    "exception_type": "ValueError"
+  },
+  "error": "Manifest source hash mismatch: GRWTSK.Combinatorics.Sequences.CyclicSumsetGrowth"
+}

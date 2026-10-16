@@ -1,5 +1,6 @@
 # Repeated blocks, true remainders and phase shifts
 
+
 Fix real frequency $\alpha$, phase $\xi$, coupling $V$ and energy $E$, integer origin $o$, and natural volumes $N,L,q,r$. Counts retain multiplicity and Dirichlet boundary conditions. Positivity is imposed only where stated below.
 
 The [block-count source](../../../../GRWTSK/Spectral/SturmianBlockCounts.lean) proves the actual count is at most the volume. For $L>0$, let
@@ -29,7 +30,9 @@ $$\left|\frac{n_{V,N}^{o}(E)}N-\frac{B_{\lfloor N/L\rfloor,L}^{o}(E)}N\right|\le
 
 ## Source and verification scope
 
-[Source](../../../../GRWTSK/Spectral/SturmianBlockCounts.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+[Source](../../../../GRWTSK/Spectral/SturmianBlockCounts.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../../.noeaaeue/documentation/reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

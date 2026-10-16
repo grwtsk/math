@@ -1,0 +1,18 @@
+import GRWTSK.Analysis.Fourier.ZModSmallEnergySets
+#print axioms GRWTSK.ZModSmallEnergySets.smallEnergyFrequencies
+#print axioms GRWTSK.ZModSmallEnergySets.smallEnergyPoints
+#print axioms GRWTSK.ZModSmallEnergySets.mem_smallEnergyFrequencies
+#print axioms GRWTSK.ZModSmallEnergySets.mem_smallEnergyPoints
+#print axioms GRWTSK.ZModSmallEnergySets.zero_mem_smallEnergyFrequencies
+#print axioms GRWTSK.ZModSmallEnergySets.smallEnergyFrequencies_nonempty
+#print axioms GRWTSK.ZModSmallEnergySets.smallEnergyPoints_mono
+#print axioms GRWTSK.ZModSmallEnergySets.sum_mem_smallEnergyPoints
+#print axioms GRWTSK.ZModSmallEnergySets.character_orthogonality
+#print axioms GRWTSK.ZModSmallEnergySets.character_orthogonality_re
+#print axioms GRWTSK.ZModSmallEnergySets.character_sum_parseval
+#print axioms GRWTSK.ZModSmallEnergySets.character_sum_norm_sq_lower
+#print axioms GRWTSK.ZModSmallEnergySets.smallEnergyPoints_card_le
+#print axioms GRWTSK.ZModSmallEnergySets.sum_pair_frequency_energy
+#print axioms GRWTSK.ZModSmallEnergySets.filter_card_mul_le_sum
+#print axioms GRWTSK.ZModSmallEnergySets.smallEnergyPoints_card_lower_of_pairEnergy
+#print axioms GRWTSK.ZModSmallEnergySets.smallEnergyPoints_card_lower

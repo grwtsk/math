@@ -1,0 +1,246 @@
+{
+  "complete": false,
+  "edge_semantics": "bibliographic/source relations only; no graph reachability implies mathematical entailment",
+  "edges": [
+    {
+      "from": "discussion-2018",
+      "locator": "page report/comment links",
+      "to": "ss-2018-05",
+      "type": "official_host_link"
+    },
+    {
+      "from": "discussion-2018",
+      "locator": "page report/comment links",
+      "to": "ss-2018-08",
+      "type": "official_host_link"
+    },
+    {
+      "from": "discussion-2018",
+      "locator": "page report/comment links",
+      "to": "mochizuki-rpt2018",
+      "type": "official_host_link"
+    },
+    {
+      "from": "discussion-2018",
+      "locator": "page report/comment links",
+      "to": "mochizuki-cmt2018-05",
+      "type": "official_host_link"
+    },
+    {
+      "from": "discussion-2018",
+      "locator": "page report/comment links",
+      "to": "mochizuki-cmt2018-08",
+      "type": "official_host_link"
+    },
+    {
+      "from": "ss-bonn",
+      "locator": "p.10 references; not a proof edge",
+      "to": "iut-3-author-manuscript",
+      "type": "backward_citation"
+    },
+    {
+      "from": "ss-bonn",
+      "locator": "p.10 references; not a proof edge",
+      "to": "iut-4-author-manuscript",
+      "type": "backward_citation"
+    },
+    {
+      "from": "dupuy-hilado-2004.13108v2",
+      "locator": "DH20b; p.35bibliography",
+      "to": "dupuy-hilado-2004.13228v1",
+      "type": "backward_citation"
+    },
+    {
+      "from": "lana-2026-report",
+      "locator": "pp.46–49§10; ref15",
+      "to": "ss-bonn",
+      "type": "forward_discussion"
+    },
+    {
+      "from": "lana-2026-report",
+      "locator": "reference 12 and  §9–10; original 2021 theorem pagination distinguished",
+      "to": "iut-3-journal-metadata",
+      "type": "backward_citation"
+    },
+    {
+      "from": "mochizuki-joshi-2024",
+      "locator": "p.1 lists March 10, 2024 version; current v2 not identified",
+      "to": "joshi-2403.10430v2",
+      "type": "critique_of_earlier_version"
+    },
+    {
+      "from": "joshi-final-report",
+      "locator": "pp.1–7",
+      "to": "ss-bonn",
+      "type": "dissenting_response"
+    }
+  ],
+  "nodes": [
+    {
+      "content_digest": "sha256:83641880b702bb2cf6499243d93f04675738d3a9c6cb3ffe2c6dd9a23a380f5b",
+      "id": "discussion-2018",
+      "identity_kind": "source_occurrence"
+    },
+    {
+      "content_digest": "sha256:27261f793ef9ca57a54fe78b0400c1a17aee2f7487fa001d9b434c39625f4a0b",
+      "id": "ems-2021-issue",
+      "identity_kind": "source_occurrence"
+    },
+    {
+      "content_digest": "sha256:4ff587d8efa31b747d9deb11dacb0023411f9d0c86e19dc12d86216ecc5a3dc9",
+      "id": "iut-1-journal-metadata",
+      "identity_kind": "source_occurrence"
+    },
+    {
+      "content_digest": "sha256:7360e3ed27c235b5497a0743d3ed1646fbb97688547d16b7c784fc7f127f1f03",
+      "id": "iut-1-author-manuscript",
+      "identity_kind": "source_occurrence"
+    },
+    {
+      "content_digest": "sha256:91f8f42bad315d518ca5d970d17f24b61b3e5367f2c03dd60dedba0992888685",
+      "id": "iut-2-journal-metadata",
+      "identity_kind": "source_occurrence"
+    },
+    {
+      "content_digest": "sha256:180bfa6aaddc4ae37af37acaad51f61e0a47b33b8255ad3169e28a970ae39b7c",
+      "id": "iut-2-author-manuscript",
+      "identity_kind": "source_occurrence"
+    },
+    {
+      "content_digest": "sha256:14d1d6484e15604fb7f789123a748ba449c624ee8dacce6041dc219b92b0315d",
+      "id": "iut-3-journal-metadata",
+      "identity_kind": "source_occurrence"
+    },
+    {
+      "content_digest": "sha256:9a7ee3c77b1c7717210c0613eb39b6844649d0040dc3d9e1be7d544f8f91a0b9",
+      "id": "iut-3-author-manuscript",
+      "identity_kind": "source_occurrence"
+    },
+    {
+      "content_digest": "sha256:e887df366fb5ca65a2a0981ed2a75cf215a2e191f461c499e78a863f4a4a768b",
+      "id": "iut-4-journal-metadata",
+      "identity_kind": "source_occurrence"
+    },
+    {
+      "content_digest": "sha256:5bf4b1e0a8c2686562a6859e5009d301335044cfb5efec5d3a9edf764e4af87f",
+      "id": "iut-4-author-manuscript",
+      "identity_kind": "source_occurrence"
+    },
+    {
+      "content_digest": "sha256:4ec276246a2a92d2e211a0dae5afd073b5eae7e2b37e9bbabe3cb82c7e0b34a0",
+      "id": "ss-bonn",
+      "identity_kind": "source_occurrence"
+    },
+    {
+      "content_digest": null,
+      "id": "ss-2018-05",
+      "identity_kind": "source_occurrence"
+    },
+    {
+      "content_digest": null,
+      "id": "ss-2018-08",
+      "identity_kind": "source_occurrence"
+    },
+    {
+      "content_digest": "sha256:582e3f60e9461c127617844d92440dd60720ee9291da3a693270bcf195221882",
+      "id": "mochizuki-rpt2018",
+      "identity_kind": "source_occurrence"
+    },
+    {
+      "content_digest": "sha256:9243a398b51216103f05d2af74452de5331f8a3bd9a455b81fd2588e398f4f2c",
+      "id": "mochizuki-rpt2018-revisions",
+      "identity_kind": "source_occurrence"
+    },
+    {
+      "content_digest": "sha256:d71c38308322bdb403b11c6f450f8f67797600c5c9ac7c28505c8d1c43c1f53b",
+      "id": "mochizuki-cmt2018-05",
+      "identity_kind": "source_occurrence"
+    },
+    {
+      "content_digest": "sha256:2fbd8deb2ca54c728191970bd5a06b81fe12bb68e656a8c684ad6bda86d83e6d",
+      "id": "mochizuki-cmt2018-08",
+      "identity_kind": "source_occurrence"
+    },
+    {
+      "content_digest": "sha256:c0e63b629aa174aa065e93d08defe3e5d0837c8778aab527383798baf8ca6e32",
+      "id": "mochizuki-essential-structure",
+      "identity_kind": "source_occurrence"
+    },
+    {
+      "content_digest": "sha256:4f4b9ff1d8bef7fcc539971f01257250e1e3c6d12689b54dd07583fd95d3fa7d",
+      "id": "pasten-2106.16165v3",
+      "identity_kind": "source_occurrence"
+    },
+    {
+      "content_digest": "sha256:28623224fd73a8ea25256c9a7650ec0b3422d841e136b67be94fbac1018586b5",
+      "id": "ellenberg-math9909098v1",
+      "identity_kind": "source_occurrence"
+    },
+    {
+      "content_digest": "sha256:d2196b557d5c5d4afe2520db26df880585416c1218d939962b3a479d7ff341dc",
+      "id": "dupuy-hilado-2004.13228v1",
+      "identity_kind": "source_occurrence"
+    },
+    {
+      "content_digest": "sha256:e6ba06b458ea633764093618c3312926ab585bb4f092e43416f2eff386bb0ce2",
+      "id": "dupuy-hilado-2004.13228v2",
+      "identity_kind": "source_occurrence"
+    },
+    {
+      "content_digest": "sha256:6f7fa882fb0cae2c5a0f74a45069d18680012431ba7ea4318a468236e9f78a41",
+      "id": "dupuy-hilado-2004.13108v2",
+      "identity_kind": "source_occurrence"
+    },
+    {
+      "content_digest": "sha256:ef8851fe656c705f7e9881778b4dd0c592c9f35a2980be6a335412a15542547a",
+      "id": "joshi-2403.10430v2",
+      "identity_kind": "source_occurrence"
+    },
+    {
+      "content_digest": "sha256:ee57b904398692ffecd0ccf8ccdcb0641f8e63ba6b971d6c9343bbac60d53470",
+      "id": "exceptional-2410.12234v2",
+      "identity_kind": "source_occurrence"
+    },
+    {
+      "content_digest": "sha256:dce10ed9a78968e405cf0f986a389ca37348849439f468b0f3902c361e01d0c6",
+      "id": "joshi-author-index",
+      "identity_kind": "source_occurrence"
+    },
+    {
+      "content_digest": "sha256:65a55e714b6798bae65d876ec73b58c5fa3507e5484aca3b2208e89470a1827a",
+      "id": "stewart-yu-2001",
+      "identity_kind": "source_occurrence"
+    },
+    {
+      "content_digest": "sha256:7a81764bb598f59c8205da04e1bd0c548ba1560750bd3da8f7ac42f24e45b1db",
+      "id": "vojta-cime",
+      "identity_kind": "source_occurrence"
+    },
+    {
+      "content_digest": "sha256:aa53093aa8d69dbce5f8fb4f541069a418650260dee1ef532917aa8db89606c7",
+      "id": "lana-2026-report",
+      "identity_kind": "source_occurrence"
+    },
+    {
+      "content_digest": "sha256:7a6d933d781d098e3392b0ce27dbdf2b0749368cf8c27422092038d70712f48f",
+      "id": "joshi-final-report",
+      "identity_kind": "source_occurrence"
+    },
+    {
+      "content_digest": "sha256:f6636e2c6b48745be95eaab5435416c88445ff963afc27ebe2470fe9c80db9f7",
+      "id": "mochizuki-joshi-2024",
+      "identity_kind": "source_occurrence"
+    },
+    {
+      "content_digest": "sha256:4989943d864adead8f60f9d5d5b5f24edd895146ec70f66b1393f9498a79017e",
+      "id": "mathlib-MasonStothers-pinned",
+      "identity_kind": "source_occurrence"
+    },
+    {
+      "content_digest": null,
+      "id": "Scholze-MO-468079",
+      "identity_kind": "source_occurrence"
+    }
+  ],
+  "snowball_depth": 1
+}

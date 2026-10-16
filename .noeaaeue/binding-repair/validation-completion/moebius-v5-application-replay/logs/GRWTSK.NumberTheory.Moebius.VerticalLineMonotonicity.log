@@ -1,0 +1,9 @@
+'GRWTSK.NumberTheory.Moebius.VerticalLineMonotonicity.verticalLineMass_antitone' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.NumberTheory.Moebius.VerticalLineMonotonicity.criticalReciprocal_iff_completedVerticalLineUniform' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.NumberTheory.Moebius.VerticalLineMonotonicity.riemannHypothesis_of_criticalReciprocal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
