@@ -1,0 +1,13 @@
+{
+  "controls": [
+    {"expected": "reject because beta < sigma+1/2 has no positive margin", "fixture": "B=7/8, sigma=3/8", "id": "baseline_endpoint_rejected"},
+    {"expected": "external theorem does not assert nonvanishing", "fixture": "Re(s)=B", "id": "strict_boundary_retained"},
+    {"expected": "Pintz power family is only for epsilon>0", "fixture": "epsilon=0", "id": "zero_epsilon_rejected"},
+    {"expected": "unavailable from selected theorem statement", "fixture": "request numerical C_eta", "id": "constant_not_invented"},
+    {"expected": "not classified as local kernel replay", "fixture": "external theorem at Lean 4.34.1", "id": "pin_transport_not_assumed"},
+    {"expected": "reject because B>5/6", "fixture": "sigma=1/3", "id": "one_third_not_reached"},
+    {"expected": "does not close RH", "fixture": "uniform mass at sigma=3/8", "id": "rh_not_inferred"},
+    {"expected": "reject", "fixture": "positive surrogate for Mertens source", "id": "source_not_replaced"}
+  ],
+  "schema": "three-eighths-mertens-transfer-negative-controls-v1"
+}
