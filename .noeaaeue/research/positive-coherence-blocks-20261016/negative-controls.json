@@ -1,0 +1,32 @@
+{
+  "schema": "positive-coherence-blocks-negative-controls-v1",
+  "controls": [
+    {
+      "id": "NO_PAIRWISE_POSITIVE_PARTS",
+      "fixture": "x=(1,-2,1)",
+      "required": "take max(0,2*sum_{j<k}x_j*x_k) only after complete aggregation",
+      "rejected": "sum_{j<k} max(0,2*x_j*x_k)"
+    },
+    {
+      "id": "NO_ABSOLUTE_VALUE_SOURCE",
+      "fixture": "x=(2,1,-1)",
+      "required": "signed coherence (sum x)^2-sum x^2",
+      "rejected": "replace x by abs(x)"
+    },
+    {
+      "id": "NO_EXCESS_ENERGY_CONFUSION",
+      "required": "retain H_N=P_N+R_N",
+      "rejected": "assert H_N=P_N"
+    },
+    {
+      "id": "NO_FINITE_PREFIX_TO_ASYMPTOTIC",
+      "required": "diagnostic profile remains finite evidence",
+      "rejected": "infer eventual positivity or subpower growth from N<=2000000"
+    },
+    {
+      "id": "NO_ACTIVE_LEAN_CLAIM",
+      "required": "candidate .lean.txt files remain inactive",
+      "rejected": "report exact Python checks as kernel acceptance"
+    }
+  ]
+}
