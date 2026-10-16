@@ -3,6 +3,7 @@ Human mathematical direction: R.A. Jacob Martone. Formalization assistance: Open
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.LinearAlgebra.LinearMap.ReedSolomonRefinement
 import Mathlib.Analysis.Complex.Basic
+import Mathlib.Analysis.Complex.Exponential
 import Mathlib.Data.Fin.VecNotation
 import Mathlib.Tactic.FinCases
 import Mathlib.Topology.Algebra.Module.ContinuousLinearMap.PiProd
@@ -18,6 +19,10 @@ The source payload has exactly the three entries used by the screw kernel.  Four
 quadratic Reed--Solomon observations may use unrelated node sets at different bins, while
 transport always decodes to this source before re-encoding.  The theorem below returns all
 certified observation errors through the signed screw functional.
+
+The literal finite zero-bin source is recorded using analytic multiplicities and the
+rotated coordinate `-Im ρ + i (Re ρ - 1/2)`.  Root certification and enclosure errors remain
+separate source premises; this file does not replace them with an encoding identity.
 
 The audit record is heterogeneous: its syndrome and comparison types need not have the
 same dimension or scale as either the three source signals or the four code symbols.
@@ -36,9 +41,28 @@ abbrev SourcePayload := Fin 3 → ℂ
 /-- Four Reed--Solomon evaluation symbols. -/
 abbrev Symbols := Fin 4 → ℂ
 
+/-- The rotated coordinate `z_ρ = -Im ρ + i (Re ρ - 1/2)` attached to a complex zero. -/
+def zeroCoordinate (ρ : ℂ) : ℂ :=
+  -(ρ.im : ℂ) + Complex.I * ((ρ.re - (1 / 2 : ℝ) : ℝ) : ℂ)
+
+/-- The literal source function supplied by a finite zero bin, retaining multiplicities.
+
+External root enclosures and zero certificates are intentionally not inferred from this
+formula; their errors enter the reconstruction theorem through the observation premises. -/
+def zeroBinFunction {α : Type*} (B : Finset α) (root : α → ℂ)
+    (multiplicity : α → ℕ) (v : ℝ) : ℂ :=
+  ∑ ρ ∈ B, (multiplicity ρ : ℂ) *
+    (Complex.exp (Complex.I * zeroCoordinate (root ρ) * (v : ℂ)) - 1) /
+      zeroCoordinate (root ρ) ^ 2
+
 /-- The actual three-coordinate source payload `(g(t-u), g(t), g(-u))`. -/
 def sourcePayload (g : ℝ → ℂ) (t u : ℝ) : SourcePayload :=
   ![g (t - u), g t, g (-u)]
+
+/-- The exact three-coordinate payload of a finite zero bin. -/
+def zeroBinSourcePayload {α : Type*} (B : Finset α) (root : α → ℂ)
+    (multiplicity : α → ℕ) (t u : ℝ) : SourcePayload :=
+  sourcePayload (zeroBinFunction B root multiplicity) t u
 
 @[simp]
 theorem sourcePayload_apply_zero (g : ℝ → ℂ) (t u : ℝ) :
@@ -75,6 +99,16 @@ theorem screwContribution_eq (g : ℝ → ℂ) (t u : ℝ) :
     screwContribution g t u = g (t - u) - g t - g (-u) := by
   simp [screwContribution]
 
+/-- The finite zero-bin source returns to the literal signed screw-kernel expression. -/
+@[simp]
+theorem zeroBinScrewContribution_eq {α : Type*} (B : Finset α) (root : α → ℂ)
+    (multiplicity : α → ℕ) (t u : ℝ) :
+    screwContribution (zeroBinFunction B root multiplicity) t u =
+      zeroBinFunction B root multiplicity (t - u) -
+        zeroBinFunction B root multiplicity t -
+          zeroBinFunction B root multiplicity (-u) := by
+  simp
+
 /-- Pointwise additivity of refined bin functions gives exact source coverage. -/
 theorem sourcePayload_refines {ι : Type*} (s : Finset ι)
     (g : ℝ → ℂ) (childFunction : ι → ℝ → ℂ) (t u : ℝ)
@@ -104,7 +138,8 @@ actual screw-kernel functional.
 The parent audit error is the aggregate comparison seam `δ_B`; each child audit error is
 its independent source enclosure `ε_j`.  The coverage proof is stored in the parent audit
 record.  Syndrome and comparison data remain available for separate falsification and
-positivity checks but do not silently strengthen this analytic estimate. -/
+positivity checks but do not silently strengthen this analytic estimate.  Instantiating
+`g` with `zeroBinFunction B root multiplicity` gives the stated finite-zero-bin theorem. -/
 theorem screwKernel_source_preserving_refinement_error
     {ι ParentSyndrome ParentComparison ChildSyndrome ChildComparison : Type*}
     {ChildCoverage : Prop} (s : Finset ι)
