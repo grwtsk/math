@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-16",
+  "exact_check_count": 20,
+  "external_theorem_replayed_locally": false,
+  "native_lean": false,
+  "notes": [
+    "generic fixtures contribute strict-gap and denominator-identity checks",
+    "no network access occurs in the producer or tests"
+  ],
+  "producer_outputs_identical": true,
+  "producer_sha256": "76975dd5818bf3636631e7617d25c731a1ecb40a28b516c9f4a39508c1415931",
+  "python_normal": {"passed": 8, "tests": 8},
+  "python_optimized": {"passed": 8, "tests": 8},
+  "schema": "three-eighths-mertens-transfer-replay-v1",
+  "status": "passed"
+}

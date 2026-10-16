@@ -1,0 +1,75 @@
+/-
+Human mathematical direction: R.A. Jacob Martone.
+Candidate formalization assistance: OpenAI ChatGPT. MIT.
+CANDIDATE_SOURCE_ONLY. Not elaborated or axiom-audited.
+-/
+import GRWTSK.NumberTheory.Moebius.LogarithmicMertensBoundary
+import Mathlib.Tactic.FieldSimp
+import Mathlib.Tactic.Linarith
+import Mathlib.Tactic.NormNum
+
+set_option autoImplicit false
+noncomputable section
+
+namespace GRWTSK.NumberTheory.Moebius.QuasiBoundaryMertensTransfer
+
+open GRWTSK.RiemannHypothesis.CCC
+open GRWTSK.NumberTheory.Moebius.VerticalLineCriterion
+open GRWTSK.NumberTheory.Moebius.LogarithmicMertensBoundary
+
+def quasiBoundary : ℝ := 4374785349 / 5000000000
+
+/-- The local interface supplied in written mathematics by a zero-free boundary
+together with Pintz's Perron-contour transfer. This candidate does not assert
+that external theorem in the local kernel. -/
+def MertensPowerFamilyAt (B : ℝ) : Prop :=
+  ∀ ε : ℝ, 0 < ε → ∃ C : ℝ, 0 ≤ C ∧
+    ∀ x : ℝ, 1 ≤ x → |mertensPrefix x| ≤ C * x ^ (B + ε)
+
+/-- Every damping strictly above `B - 1/2` receives one constant, uniform in
+the finite horizon. -/
+theorem verticalLineMass_uniform_above_boundary
+    {B σ : ℝ} (hσ : B - 1 / 2 < σ) (hM : MertensPowerFamilyAt B) :
+    ∃ C : ℝ, 0 ≤ C ∧ ∀ T : ℝ, 0 ≤ T →
+      verticalLineMass σ T ≤
+        C ^ 2 / (σ ^ 2 * (σ + 1 / 2 - B)) := by
+  let ε : ℝ := (σ + 1 / 2 - B) / 2
+  have hε : 0 < ε := by dsimp [ε]; linarith
+  obtain ⟨C, hC, hpow⟩ := hM ε hε
+  refine ⟨C, hC, ?_⟩
+  intro T hT
+  have hσ0 : 0 < σ := by linarith
+  have hgap : B + ε < σ + 1 / 2 := by
+    dsimp [ε]
+    linarith
+  have h := verticalLineMass_le_of_real_mertens_power_bound
+    hC hσ0 hgap hpow hT
+  calc
+    verticalLineMass σ T ≤
+        C ^ 2 / (2 * σ ^ 2 * (σ + 1 / 2 - (B + ε))) := h
+    _ = C ^ 2 / (σ ^ 2 * (σ + 1 / 2 - B)) := by
+      dsimp [ε]
+      ring_nf
+
+/-- The refined rational boundary reaches the exact damping `3/8`. -/
+theorem threeEighthsVerticalLineUniform
+    (hM : MertensPowerFamilyAt quasiBoundary) :
+    ∃ C : ℝ, 0 ≤ C ∧ ∀ T : ℝ, 0 ≤ T →
+      verticalLineMass (3 / 8) T ≤
+        (320000000000 / 1931859 : ℝ) * C ^ 2 := by
+  have hboundary : quasiBoundary - 1 / 2 < (3 / 8 : ℝ) := by
+    norm_num [quasiBoundary]
+  obtain ⟨C, hC, hbound⟩ :=
+    verticalLineMass_uniform_above_boundary hboundary hM
+  refine ⟨C, hC, ?_⟩
+  intro T hT
+  have h := hbound T hT
+  calc
+    verticalLineMass (3 / 8) T ≤
+        C ^ 2 /
+          ((3 / 8 : ℝ) ^ 2 * ((3 / 8 : ℝ) + 1 / 2 - quasiBoundary)) := h
+    _ = (320000000000 / 1931859 : ℝ) * C ^ 2 := by
+      norm_num [quasiBoundary]
+      ring
+
+end GRWTSK.NumberTheory.Moebius.QuasiBoundaryMertensTransfer
