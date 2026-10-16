@@ -9,5 +9,10 @@ import GRWTSK.NumberTheory.Zeta.Riemann.ScrewQuarticPathControl
 import GRWTSK.NumberTheory.Zeta.Riemann.LinearMomentComponents
 import GRWTSK.Spectral.Sheaf.SymmetryResolvedQuadraticDescent
 import GRWTSK.Analysis.ErrorBounds.ScrewSpectralReconstruction
+import GRWTSK.LinearAlgebra.Matrix.SchurFeshbachJet
+import GRWTSK.Spectral.Sheaf.SynchronizedSchurJet
+import GRWTSK.NumberTheory.Zeta.Riemann.CertifiedZeroHeight
+import GRWTSK.LinearAlgebra.Matrix.QuantumReadiness
+import GRWTSK.Analysis.ErrorBounds.SchurJetScrewReconstruction
 
 /-! Exact target, reformulation and zero symmetries; RH remains an open proposition. -/
