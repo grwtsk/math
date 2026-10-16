@@ -1,0 +1,31 @@
+{
+  "schema": "one-third-mertens-mean-square-replay-receipt-v2",
+  "date": "2026-10-16",
+  "commands": [
+    "python3 -B scripts/one_third_mertens_mean_square.py --certificate certificates.json --output /tmp/one-third-replay.json",
+    "python3 -B -m unittest discover -s tests -p test_one_third_mertens_mean_square.py",
+    "python3 -O -B -m unittest discover -s tests -p test_one_third_mertens_mean_square.py"
+  ],
+  "results": {
+    "published_verifier_tests_normal": 3,
+    "published_verifier_tests_optimized": 3,
+    "replayed_output_matches_certificate": true,
+    "source_certificate_check_count": 161,
+    "source_certificate_status": "passed"
+  },
+  "full_generator_bundle_evidence": {
+    "exact_and_symbolic_checks": 161,
+    "unit_tests_normal": 13,
+    "unit_tests_optimized": 13,
+    "normal_optimized_outputs_identical": true,
+    "logs_retained_in_downloadable_bundle": true
+  },
+  "git_writes_performed_by_execution": false,
+  "lean_run": false,
+  "network_used_by_execution": false,
+  "sha256": {
+    "certificates.json": "8d6f708b8981b08bc9c60bb810f5cccd84f291d196cbd25b71c02cb12554dd32",
+    "published_verifier": "47717b972f31bd3da2b73b588ef6758a87f4e21f54fee90dada5a76b741274a6",
+    "published_tests": "c0ce8a4aab55c35322be2cbc72dae27aa18ddbfaf11cda9910053db5d53f4851"
+  }
+}

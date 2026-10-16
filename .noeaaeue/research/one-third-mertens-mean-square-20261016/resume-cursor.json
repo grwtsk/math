@@ -1,0 +1,14 @@
+{
+  "schema": "one-third-mertens-mean-square-resume-cursor-v1",
+  "status": "OPEN_FRONTIER",
+  "smallest_unresolved_theorem": "OneThirdDyadicMertensMeanSquare",
+  "exact_statement": "sum_{j>=0} 2^(-8j/3) * sum_{2^j<=n<2^(j+1)} M(n)^2 < infinity",
+  "terminal_effect": "uniform completed vertical-line mass at sigma=1/3 and zero-free half-plane Re(s)>5/6",
+  "nonterminal_reason": "The reciprocal lines sigma=1/4,1/5,... and the all-positive-damping RH consumer remain open",
+  "next_research_actions": [
+    "Search for a source-specific signed or mean-square estimate on the complete max-kernel blocks",
+    "Formalize the exact logarithmic-cell decomposition and discrete Abel/Mellin bridge",
+    "Do not replace the block by diagonal or absolute pair bounds",
+    "Retain source cutoffs, endpoint terms, pole regularization, and pin identities"
+  ]
+}

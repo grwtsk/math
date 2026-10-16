@@ -1,0 +1,90 @@
+{
+  "schema": "one-third-mertens-mean-square-source-ledger-v1",
+  "selected_repository": "grwtsk/math",
+  "selected_revision": "6e0d4b2bf7944994c399ae298a8d7d25bddcdb43",
+  "sources": [
+    {
+      "source_id": "local:LogarithmicMertensBoundary",
+      "path": "GRWTSK/NumberTheory/Moebius/LogarithmicMertensBoundary.lean",
+      "revision": "6e0d4b2bf7944994c399ae298a8d7d25bddcdb43",
+      "git_blob": "5cf91262ed912e477f2d6b19c94b9791402e801d",
+      "role": "literal damped Mertens source, Volterra identification, and power-bound-to-line theorem",
+      "coverage": "inspected"
+    },
+    {
+      "source_id": "local:VerticalLineCriterion",
+      "path": "GRWTSK/NumberTheory/Moebius/VerticalLineCriterion.lean",
+      "revision": "6e0d4b2bf7944994c399ae298a8d7d25bddcdb43",
+      "git_blob": "c2ce1e3e1b919d1bccd30bb42177c57d718914b9",
+      "role": "exact completed vertical-line mass and conditional RH return",
+      "coverage": "inspected"
+    },
+    {
+      "source_id": "local:EnergyAbscissa",
+      "path": "GRWTSK/NumberTheory/Moebius/EnergyAbscissa.lean",
+      "revision": "6e0d4b2bf7944994c399ae298a8d7d25bddcdb43",
+      "git_blob": "f5ed8915ec03933a15b0b3685294942d4959a24a",
+      "role": "all-positive-damping energy criterion and exact RH consumer",
+      "coverage": "inspected"
+    },
+    {
+      "source_id": "local:CriticalWeightedMertensSquare",
+      "path": "GRWTSK/NumberTheory/Moebius/CriticalWeightedMertensSquare.lean",
+      "revision": "6e0d4b2bf7944994c399ae298a8d7d25bddcdb43",
+      "git_blob": "07f131eb969d773d205b636ef157be87daa6e021",
+      "role": "existing critical-boundary weighted Mertens-square comparison",
+      "coverage": "inspected"
+    },
+    {
+      "source_id": "local:SquareVariationCoherenceReceipt",
+      "path": ".noeaaeue/research/square-variation-coherence-20261016/publication-receipt.json",
+      "revision": "6e0d4b2bf7944994c399ae298a8d7d25bddcdb43",
+      "git_blob": "cf1abfee594540da13715c453342cce7954a1547",
+      "role": "prior written bound on endpoint square variation and its verification boundary",
+      "coverage": "inspected"
+    },
+    {
+      "source_id": "external:quasi-riemann-improved",
+      "repository": "LW56e2/quasi-riemann-improved",
+      "revision": "b83dbbd914c5751acf9bc3389cde58970437278f",
+      "path": "lean/Transport/Nonvanishing.lean",
+      "git_blob": "915738a7234ee7a930e12836ac8ef57b132e8688",
+      "role": "formal nonvanishing boundary 4374785349/5000000000",
+      "coverage": "inspected_not_replayed_at_local_pin"
+    },
+    {
+      "source_id": "external:Guo-zero-free-beyond-seven-eighths",
+      "repository": "aster2024/openai-math-followups",
+      "revision": "a371d874a63222dd662a2ce4ce0562df0c210eb2",
+      "path": "zero-free-beyond-7-8/README.md",
+      "git_blob": "a4b6d51ac1fe6bab08afc61fb86d12b3cf45652c",
+      "role": "written rational boundary 43747851/50000000 and cubic endpoint description",
+      "coverage": "inspected_not_formalized_locally"
+    },
+    {
+      "source_id": "external:Pintz-rightmost-zero-Mertens-transfer",
+      "location": "arXiv:2608.24878",
+      "role": "written zero-supremum-to-Mertens power-family transfer",
+      "coverage": "cited_not_formalized_locally"
+    },
+    {
+      "source_id": "attached:GRL-CAS3-0.1.0",
+      "location": "conversation attachment",
+      "role": "triadic source-preservation, signed moment, and reconstruction-defect constraints",
+      "coverage": "read_in_conversation; byte digest unavailable in repository package"
+    },
+    {
+      "source_id": "attached:quartic-enclosure-review",
+      "location": "conversation attachment",
+      "role": "quartic-role separation and source-positive Hermite nonclaim",
+      "coverage": "read_in_conversation; byte digest unavailable in repository package"
+    }
+  ],
+  "explicit_exclusions": [
+    "No account-history retrieval",
+    "No claim that the external Lean theorem was replayed under Lean 4.33.0",
+    "No claim that the Guo written boundary is a Lean theorem",
+    "No claim that Pintz's contour argument is admitted locally",
+    "No inference from finite diagnostics to infinite summability"
+  ]
+}
