@@ -37,7 +37,7 @@ The formulas include `N = 0` and positive `d > N`, when the quotient region is e
 
 ## Open arithmetic implications
 
-These are finite algebraic identities. They provide no radical-height estimate, bound uniform in `N`, additive Fourier projector, infinite transform, or implication of integer abc. The [frozen abc target](abc-proof-frontier.md) keeps every positive real epsilon and its globally uniform constant. An exact transform identity, any required analytic estimate, and the arithmetic implication remain separate open obligations.
+These are finite algebraic identities. The [complex additive-character formula](additive-character-moments.md) adds an exact normalized projector and finite frequency expansion under explicit no-wrap bounds. No radical-height estimate, bound uniform in `N`, infinite transform, or implication of integer abc is supplied. The [frozen abc target](abc-proof-frontier.md) keeps every positive real epsilon and its globally uniform constant. Product-weight transform factorization, analytic estimates, and the arithmetic implication remain separate obligations.
 
 ## Source and verification scope
 
