@@ -1,0 +1,71 @@
+/-
+Human mathematical direction: R.A. Jacob Martone.
+Candidate formalization assistance: OpenAI ChatGPT. MIT.
+CANDIDATE_SOURCE_ONLY. Not elaborated or axiom-audited.
+-/
+import GRWTSK.NumberTheory.Moebius.CriticalEndpointDefectRecurrence
+import GRWTSK.NumberTheory.Moebius.VerticalLineMonotonicity
+
+set_option autoImplicit false
+noncomputable section
+open scoped BigOperators
+
+namespace GRWTSK.NumberTheory.Moebius.ClosedDampedTriadicFlux
+
+open GRWTSK.RiemannHypothesis.CCC
+open GRTSK.NumberTheory.Moebius.CriticalEndpointDefect
+open GRWTSK.NumberTheory.Moebius.CriticalEndpointDefectRecurrence
+open GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks
+open GRWTSK.NumberTheory.Moebius.VerticalLineCriterion
+open GRWTSK.NumberTheory.Moebius.VerticalLineMonotonicity
+
+/-- The signed interior triadic work at damping `σ`. -/
+def openTriadicFlux (σ : ℝ) (N : ℕ) : ℝ :=
+  ∑ n ∈ Finset.Icc 1 (N - 1),
+    (((n + 1 : ℕ) : ℝ) ^ (-2 * σ) / σ *
+      criticalEndpointDefect n * pickupMertensPrefix n * criticalEndpointGap n
+
+/-- The terminal seed retained with its exact sign. -/
+def terminalEndpointCharge (σ : ℝ) (N : ℕ) : ℝ :=
+  criticalEndpointDefect N ^ 2 *
+    ((N + 1 : ℕ) : ℝ) ^ (-2 * σ) / (2 * σ)
+
+/-- Closed signed flux: interior work minus the terminal endpoint charge. -/
+def closedTriadicFlux (σ : ℝ) (N : ℕ) : ℝ :=
+  openTriadicFlux σ N - terminalEndpointCharge σ N
+
+/-- One constant bounds every terminally compensated partial flux. -/
+def ClosedDampedTriadicFluxUpper (σ : ℝ) : Prop :=
+  0 < σ ∧ ∃ C : ℝ, 0 ≤ C ∧ ∀ N : ℕ, 1 ≤ N →
+    closedTriadicFlux σ N ≤ C
+
+/-- The exact countable reciprocal family. -/
+def ReciprocalClosedTriadicFluxUpper : Prop :=
+  ∀ n : ℕ, 1 ≤ n →
+    ClosedDampedTriadicFluxUpper (1 / ((n + 1 : ℕ) : ℝ))
+
+/-- Written analytic bridge frontier.  The contribution's derivation proves
+this equivalence, but this candidate has not been admitted in Lean. -/
+def ClosedFluxVerticalLineBridge : Prop :=
+  ∀ σ : ℝ, 0 < σ →
+    (ClosedDampedTriadicFluxUpper σ ↔
+      ∃ C : ℝ, 0 ≤ C ∧ ∀ T : ℝ, 0 ≤ T → verticalLineMass σ T ≤ C)
+
+/-- Conditional composition with the existing reciprocal-line consumer. -/
+theorem criticalReciprocal_of_closedTriadicFlux
+    (hBridge : ClosedFluxVerticalLineBridge)
+    (hFlux : ReciprocalClosedTriadicFluxUpper) :
+    CriticalReciprocalVerticalLineUniform := by
+  intro n hn
+  have hσ : 0 < 1 / ((n + 1 : ℕ) : ℝ) := by positivity
+  exact (hBridge _ hσ).mp (hFlux n hn)
+
+/-- Conditional terminal return to the original Mathlib target. -/
+theorem riemannHypothesis_of_closedTriadicFlux
+    (hBridge : ClosedFluxVerticalLineBridge)
+    (hFlux : ReciprocalClosedTriadicFluxUpper) :
+    _root_.RiemannHypothesis :=
+  riemannHypothesis_of_criticalReciprocal
+    (criticalReciprocal_of_closedTriadicFlux hBridge hFlux)
+
+end GRWTSK.NumberTheory.Moebius.ClosedDampedTriadicFlux
