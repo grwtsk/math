@@ -1,0 +1,10 @@
+import GRWTSK.Analysis.Sequences.PositiveCoherenceExcess
+import GRWTSK.NumberTheory.Moebius.MertensCoherenceCriterion
+
+#print axioms GRWTSK.Analysis.Sequences.PositiveCoherenceExcess.sq_eq_excess_add_residual
+#print axioms GRWTSK.Analysis.Sequences.PositiveCoherenceExcess.negative_part_le_variation
+#print axioms GRWTSK.Analysis.Sequences.PositiveCoherenceExcess.energy_eq_excess_add_residual
+#print axioms GRWTSK.Analysis.Sequences.PositiveCoherenceExcess.residualEnergy_le_diagonalEnergy
+#print axioms GRWTSK.NumberTheory.Moebius.MertensCoherenceCriterion.riemannHypothesis_of_positiveCoherenceExcessSubpower
+#print axioms GRWTSK.NumberTheory.Moebius.MertensCoherenceCriterion.riemannHypothesis_of_dyadicPositiveCoherenceBlockSubpower
+#print axioms GRWTSK.NumberTheory.Moebius.MertensCoherenceCriterion.riemannHypothesis_of_positiveCoherenceExcessPolylog
