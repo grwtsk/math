@@ -1,0 +1,80 @@
+/-
+Human mathematical direction: R.A. Jacob Martone.
+Candidate formalization assistance: OpenAI ChatGPT. MIT.
+CANDIDATE_SOURCE_ONLY. Not elaborated or axiom-audited.
+-/
+import GRWTSK.NumberTheory.Moebius.LogarithmicMertensBoundary
+import GRWTSK.NumberTheory.Moebius.VerticalLineCriterion
+
+set_option autoImplicit false
+noncomputable section
+
+open MeasureTheory Set
+
+namespace GRWTSK.NumberTheory.Moebius.OneThirdMertensMeanSquare
+
+open GRWTSK.RiemannHypothesis.CCC
+open GRWTSK.NumberTheory.Moebius.LogarithmicMertensBoundary
+open GRWTSK.NumberTheory.Moebius.VerticalLineCriterion
+open GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks
+
+/-- The direct arithmetic square premise for the completed line `σ = 1/3`.
+The zero index is suppressed so that no convention for `0 ^ (-8/3)` enters. -/
+def OneThirdMertensSquare : Prop :=
+  Summable (fun n : ℕ =>
+    if n = 0 then 0 else
+      pickupMertensPrefix n ^ 2 * (n : ℝ) ^ (-(8 / 3 : ℝ)))
+
+/-- A finite-horizon source bound, stated at exactly the source consumed by the
+repository's Volterra theorem. -/
+def OneThirdExactSourceBound : Prop :=
+  ∃ S : ℝ, 0 ≤ S ∧
+    ∀ T : ℝ, 0 ≤ T →
+      IntervalIntegrable
+        (fun u : ℝ => dampedMertensSource (1 / 3) u ^ 2) volume 0 T ∧
+      (∫ u in (0 : ℝ)..T, dampedMertensSource (1 / 3) u ^ 2) ≤ S
+
+/-- The exact exponent bookkeeping for the one-third line. -/
+theorem oneThird_parameter_identities :
+    (2 * (1 / 3 : ℝ) + 1 = 5 / 3) ∧
+    (2 * (1 / 3 : ℝ) + 2 = 8 / 3) ∧
+    (((8 / 3 : ℝ) - 1) / 2 = 5 / 6) ∧
+    ((1 / 3 : ℝ) ^ 2 = 1 / 9) := by
+  norm_num
+
+/-- The exact source bound pays the literal completed vertical line with the
+full Volterra constant `9`. -/
+theorem verticalLineMass_oneThird_le_of_exactSourceBound
+    (h : OneThirdExactSourceBound) :
+    ∃ C : ℝ, 0 ≤ C ∧
+      ∀ T : ℝ, 0 ≤ T → verticalLineMass (1 / 3) T ≤ C := by
+  obtain ⟨S, hS, hsource⟩ := h
+  refine ⟨9 * S, mul_nonneg (by norm_num) hS, ?_⟩
+  intro T hT
+  have hV := verticalLineMass_le_dampedSource
+    (σ := (1 / 3 : ℝ)) (by norm_num) hT (hsource T hT).1
+  calc
+    verticalLineMass (1 / 3) T ≤
+        (∫ u in (0 : ℝ)..T,
+          dampedMertensSource (1 / 3) u ^ 2) / (1 / 3 : ℝ) ^ 2 := hV
+    _ ≤ S / (1 / 3 : ℝ) ^ 2 :=
+      div_le_div_of_nonneg_right (hsource T hT).2 (sq_nonneg _)
+    _ = 9 * S := by norm_num; ring
+
+/-- The exact cell decomposition still requires formal admission.  It is named
+as a bridge rather than hidden inside the consumer. -/
+def OneThirdMertensCellBridge : Prop :=
+  OneThirdMertensSquare → OneThirdExactSourceBound
+
+theorem verticalLineMass_oneThird_of_mertensSquare
+    (hbridge : OneThirdMertensCellBridge)
+    (h : OneThirdMertensSquare) :
+    ∃ C : ℝ, 0 ≤ C ∧
+      ∀ T : ℝ, 0 ≤ T → verticalLineMass (1 / 3) T ≤ C :=
+  verticalLineMass_oneThird_le_of_exactSourceBound (hbridge h)
+
+end GRWTSK.NumberTheory.Moebius.OneThirdMertensMeanSquare
+
+#print axioms GRWTSK.NumberTheory.Moebius.OneThirdMertensMeanSquare.oneThird_parameter_identities
+#print axioms GRWTSK.NumberTheory.Moebius.OneThirdMertensMeanSquare.verticalLineMass_oneThird_le_of_exactSourceBound
+#print axioms GRWTSK.NumberTheory.Moebius.OneThirdMertensMeanSquare.verticalLineMass_oneThird_of_mertensSquare

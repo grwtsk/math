@@ -1,0 +1,54 @@
+/-
+Human mathematical direction: R.A. Jacob Martone.
+Candidate formalization assistance: OpenAI ChatGPT. MIT.
+CANDIDATE_SOURCE_ONLY. Not elaborated or axiom-audited.
+-/
+import GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks
+
+set_option autoImplicit false
+noncomputable section
+
+open scoped BigOperators
+
+namespace GRWTSK.NumberTheory.Moebius.DyadicMertensMeanSquare
+
+open GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks
+
+/-- Complete Mertens square after all signed Möbius pairs have been aggregated. -/
+def dyadicMertensSquareBlock (j : ℕ) : ℝ :=
+  ∑ n ∈ Finset.Ico (2 ^ j) (2 ^ (j + 1)), pickupMertensPrefix n ^ 2
+
+/-- The exact dyadic supplier for the completed line `σ = 1/3`. -/
+def OneThirdDyadicMertensMeanSquare : Prop :=
+  Summable (fun j : ℕ =>
+    (2 : ℝ) ^ (-(8 / 3 : ℝ) * j) * dyadicMertensSquareBlock j)
+
+/-- A convenient stronger power-saving supplier. -/
+def OneThirdDyadicMertensPowerSaving : Prop :=
+  ∃ C δ : ℝ, 0 ≤ C ∧ 0 < δ ∧
+    ∀ j : ℕ,
+      dyadicMertensSquareBlock j ≤
+        C * (2 : ℝ) ^ ((8 / 3 - δ) * j)
+
+theorem dyadicMertensSquareBlock_nonneg (j : ℕ) :
+    0 ≤ dyadicMertensSquareBlock j := by
+  unfold dyadicMertensSquareBlock
+  positivity
+
+/-- The complete signed max-kernel whose value is the dyadic square block. -/
+def dyadicPrefixKernel (j a b : ℕ) : ℕ :=
+  ((Finset.Ico (2 ^ j) (2 ^ (j + 1))).filter
+    (fun n => a ≤ n ∧ b ≤ n)).card
+
+/-- This proposition records the exact signed-kernel identity as a formal target.
+It must be proved by finite sum interchange; it is not replaced by the diagonal. -/
+def DyadicSignedKernelIdentity : Prop :=
+  ∀ j : ℕ,
+    dyadicMertensSquareBlock j =
+      ∑ a ∈ Finset.Ico 1 (2 ^ (j + 1)),
+        ∑ b ∈ Finset.Ico 1 (2 ^ (j + 1)),
+          (GRWTSK.RiemannHypothesis.CCC.moebiusReal a) *
+          (GRWTSK.RiemannHypothesis.CCC.moebiusReal b) *
+          (dyadicPrefixKernel j a b : ℝ)
+
+end GRWTSK.NumberTheory.Moebius.DyadicMertensMeanSquare
