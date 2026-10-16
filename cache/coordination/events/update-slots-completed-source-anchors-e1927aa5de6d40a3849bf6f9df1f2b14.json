@@ -1,0 +1,20 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "update-slots-source-scout",
+  "owner": "cache_taxonomy",
+  "at": "2026-10-16T00:05:53.972805+00:00",
+  "kind": "exact-raw-anchor-correction",
+  "original_context": {
+    "path": ".local/update-slots-source-scout/c2ae010a8cce4d169e702d9c95b64a3b/completed-finite-support-next-context.json",
+    "sha256": "d35d8b68b31cdd80929c6a78330f2d00bf374cc29a3bcdc3eca523c2fec5c4ed",
+    "bytes": 5546
+  },
+  "corrected_context": {
+    "path": ".local/update-slots-source-scout/c2ae010a8cce4d169e702d9c95b64a3b/completed-finite-support-next-context-r2.json",
+    "sha256": "b6b48bc4c23c10810f625b115b940ebc0f416000c1e0e2adeada53405590ba0b",
+    "bytes": 5785
+  },
+  "native_status": "NOT_RUN",
+  "correction": "Automated exact raw declaration read corrects provisional expandedTerm80/finite_support_expandedTerm86/expandedTerm_one107 to78/84/106. Prior context preserved; raw source bytes unchanged.",
+  "control_correction": "Proposed generic dropped-zero-ideal control retains positive X1; it is future NOT_RUN and requires actual ideal-infinity witness. No actual corrected-sum failure claimed."
+}

@@ -398,3 +398,18 @@ credits remain retained. Human direction: grwtsk contributors; adaptation,
 formalization and checking: OpenAI Codex. Correlated model/source review is not
 independent validation. Physical/common-support, row-majorant, ideal/Hecke/
 calibration, original detector and RH suppliers remain separate and open.
+
+Actual annular logarithmic quotient Gaussian separation
+------------------------------------------------------
+GRWTSK/Analysis/MellinTransform/GaussianAnnularSeparation.lean retains Apache-2.0.
+Proof slices adapt openai/math@1581d4cbdd69a0faf34b2089614fe2a814316a6a,
+lean/OAI/NumberTheory/DirichletL/Detector/GaussianSlots.lean
+(raw SHA256 fcf0dc45845a9cde9f15d3277b659811a20223d23b6277a193a42efc1dca1a09,
+Git blob bf4e39205b30ae0e8a894b42b6aa4126aac26dbe).
+OpenAI remains the upstream project author; no individual header author was
+observed. LICENSES/OpenAI-Apache-2.0.txt retains project terms. Individual
+Mathlib Option/product/log/exp/Fourier/Schwartz credits remain retained, as do
+prior local annulus, fixed-window and root-weight source credits. Human
+direction: grwtsk contributors; adaptation, formalization and checking: OpenAI
+Codex. Correlated model/source review is not independent validation. Actual
+completed physical rows, ideals/Hecke/calibration and RH suppliers remain open.

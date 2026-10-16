@@ -52,6 +52,11 @@ Apache-2.0 terms, OpenAI project credit and individual Mathlib author credits
 remain retained. Human direction: grwtsk contributors; adaptation/formalization/checking:
 OpenAI Codex. Correlated review is not independent validation.
 
+The [annular quotient separation](gaussian-annular-separation.md) now consumes
+this actual family on Option slots, with one annulus factor and negatively
+weighted logarithmic quotient factors. It retains the exact Fourier sign,
+positive-variable hypotheses and square-root normalization.
+
 Actual physical rows and their common finite support, row majorants,
 ideal/Hecke/calibration suppliers, the original detector and RH remain open.
 No unconditional arithmetic, whole-library or operational cache refinement

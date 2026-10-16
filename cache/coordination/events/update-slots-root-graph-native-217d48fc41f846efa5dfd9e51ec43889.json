@@ -1,0 +1,13 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "update-slots-round",
+  "event": "root-fresh-graph-native-complete-lock-released",
+  "at": "2026-10-16T00:08:34.407227+00:00",
+  "receipt": {
+    "path": "evidence/Combinatorics/DirectedGraph/prefix-update-reindex-checks-2026-10-15.json",
+    "sha256": "5b161e1a1cfa234e01ef1ebef53e4ada383a47d3ec123480f80979903b9fd2d3"
+  },
+  "owned_declarations": 861,
+  "native_children": "all exited; shared flock released; no more native jobs planned",
+  "limits": "Selected actual native contracts only; no cold dependency rebuild, whole umbrella, independent validation, runtime refinement or arithmetic/RH acceptance."
+}

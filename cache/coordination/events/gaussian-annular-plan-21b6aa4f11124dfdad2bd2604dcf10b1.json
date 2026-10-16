@@ -1,0 +1,14 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "gaussian-annular-separation-formal",
+  "event": "plan",
+  "owner": "cache_adapter",
+  "at": "2026-10-15T23:58:29.648967+00:00",
+  "scratch": ".local/gaussian-annular-separation/324f3c150d74464b8eb7b78a5a7075cf",
+  "planned_imports": [
+    "GRWTSK.Analysis.MellinTransform.GaussianCoupledSeparation",
+    "GRWTSK.Analysis.MellinTransform.GaussianWindowSeminorms"
+  ],
+  "native_jobs_running": 0,
+  "scope": "Actual Option-slot quotient/log/phase/rootWeight algebra, actual cutoff-produced finite family and actual frequency Integrable+uniform moments; no ideal/completed-row suppliers. Auxiliary positivity controls do not refute full annulus identity."
+}
