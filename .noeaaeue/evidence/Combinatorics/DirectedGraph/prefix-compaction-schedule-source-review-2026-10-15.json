@@ -1,0 +1,290 @@
+{
+  "schema": "grwtsk.source-review.v1",
+  "task": "schedule-reduction-source-scout",
+  "reviewer": "cache_taxonomy",
+  "created_utc": "2026-10-16T01:17:10.814267+00:00",
+  "subject": "Combinatorics/DirectedGraph actual finite batch-and-compaction schedule",
+  "review_scope": "Bounded full actual final library/positive/negative source premise/control/credit comparison. Correlated same-team model/source review, not independent validation, proof admission, policy or source authority.",
+  "native_validation": {
+    "status": "NOT_RUN",
+    "owner": "root",
+    "scope": "No Lean jobs launched by this scout. Author development and root fresh owned/transitive/generated audit remain separately scoped receipts, not rerun or transferred here."
+  },
+  "source_context": {
+    "path": ".local/schedule-reduction-source-scout/b3041caba0af462da6eb9a5e40fc8267/review-context.json",
+    "sha256": "48c2340472bcc2626e9f357fbc5463adb98f8e7cb0d77161450e9304b6d0fa59",
+    "bytes": 13770
+  },
+  "author_completion": {
+    "path": "cache/coordination/events/20261016T011544Z-prefix-schedule-complete-b6b1478b.json",
+    "sha256": "0a6418d8b7675975fcc2cd2ca30c0425020765ccfd608c4e01ff526def4c048e",
+    "bytes": 11052
+  },
+  "local_sources": [
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableSchedule.lean",
+      "sha256": "b1d8a0ea8bbdcc83f9453e35328bce854f8bddd857260527c601292f141c2c4f",
+      "bytes": 5350,
+      "archive": ".local/schedule-reduction-source-scout/b3041caba0af462da6eb9a5e40fc8267/frozen-GRWTSK__Combinatorics__DirectedGraph__PrefixTableSchedule.lean",
+      "anchors": {
+        "Action": 27,
+        "ValidRootedState": 32,
+        "applyAction": 36,
+        "executeAt": 42,
+        "execute": 46,
+        "projectBatches": 50,
+        "execute_root": 54,
+        "execute_wellFormed": 58,
+        "execute_nil": 62,
+        "decode_executeAt": 66,
+        "decode_execute": 92,
+        "execute_histories": 100
+      }
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableSchedule.lean",
+      "sha256": "0e66aa61abd4c3a911b3119555cb39c24354b319e2da3e3b7226f8907affab95",
+      "bytes": 17936,
+      "archive": ".local/schedule-reduction-source-scout/b3041caba0af462da6eb9a5e40fc8267/frozen-GRWTSK__Combinatorics__DirectedGraph__Checks__Positive__PrefixTableSchedule.lean",
+      "anchors": {
+        "falseTag": 23,
+        "trueTag": 26,
+        "tags_distinct": 29,
+        "falseOccurrence": 35,
+        "trueOccurrence": 38,
+        "seedRows": 41,
+        "seed": 44,
+        "before": 47,
+        "retainedRows": 50,
+        "seed_inventory": 53,
+        "before_dictionary": 58,
+        "before_wellFormed": 64,
+        "before_nodes": 73,
+        "before_actual_decode": 78,
+        "before_realEntries": 84,
+        "before_realRows": 88,
+        "after": 91,
+        "retained_inventory": 93,
+        "after_wellFormed": 98,
+        "after_dictionary": 100,
+        "after_nodes": 103,
+        "after_references": 107,
+        "after_actual_decode": 114,
+        "actual_unused_branch_removed": 117,
+        "actual_old_false_slot_remapped": 123,
+        "actual_parent_slot_remapped": 132,
+        "actual_old_true_slot_removed": 141,
+        "stale": 159,
+        "stale_wellFormed": 162,
+        "stale_actual_decode": 173,
+        "stale_histories_changed": 179,
+        "parallelRows": 186,
+        "post": 189,
+        "direct": 190,
+        "stalePost": 191,
+        "post_actual_update": 193,
+        "post_wellFormed": 195,
+        "post_dictionary": 197,
+        "post_references": 207,
+        "post_actual_decode": 219,
+        "direct_dictionary": 226,
+        "direct_references": 237,
+        "actual_checkpoint_histories": 249,
+        "actual_arrays_differ": 254,
+        "stalePost_wellFormed": 260,
+        "stalePost_bounds": 263,
+        "stalePost_actual_decode": 265,
+        "stale_slots_change_histories": 274,
+        "actions": 282,
+        "scheduled": 285,
+        "finalRows": 286,
+        "scheduled_actual_producer": 289,
+        "post_realRows": 291,
+        "final_inventory": 294,
+        "scheduled_dictionary": 299,
+        "scheduled_references": 302,
+        "scheduled_wellFormed": 310,
+        "scheduled_actual_decode": 312,
+        "actual_erased_schedule": 317,
+        "after_slots_preserved_to_post": 322,
+        "composedLookup": 326,
+        "directLookup": 330,
+        "composed_lookup_none": 335,
+        "direct_lookup_some": 339,
+        "matching_endpoint_dictionaries": 345,
+        "actual_partial_remap_composition_failure": 349
+      }
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixScheduleRemapComposition.lean",
+      "sha256": "fcd49a2a74a27cb9bee4b441f17e5ddecc6e3a0b944e3b12fd11df5809764c5f",
+      "bytes": 567,
+      "archive": ".local/schedule-reduction-source-scout/b3041caba0af462da6eb9a5e40fc8267/frozen-GRWTSK__Combinatorics__DirectedGraph__Checks__Negative__PrefixScheduleRemapComposition.lean",
+      "anchors": {}
+    }
+  ],
+  "local_credit": {
+    "copyright": "2026 grwtsk contributors",
+    "license": "MIT",
+    "human_mathematical_direction": "grwtsk contributors",
+    "formalization_assistance": "OpenAI Codex",
+    "prior_imports": "Preserve all prior State/batch/compaction/trace/dictionary credits; imported Lean/Mathlib retain individual Apache2 credits. Full core source-header author list in source_context includes Kim Morrison."
+  },
+  "pinned_core_fold_source": {
+    "path": ".local/schedule-reduction-source-scout/b3041caba0af462da6eb9a5e40fc8267/Lean-List-Lemmas.lean",
+    "sha256": "0724ebc7c72c87ad6d480dba407c43cc60393e7a0facfbaa6670045f66f636ac",
+    "bytes": 152635,
+    "toolchain": "Lean4.33.0",
+    "original_path": "/Users/local/.elan/toolchains/leanprover--lean4---v4.33.0/src/lean/Init/Data/List/Lemmas.lean",
+    "anchors": {
+      "List.foldl_append": 2723,
+      "List.foldl_hom": 2812
+    },
+    "authors": [
+      "Parikshit Khanna",
+      "Jeremy Avigad",
+      "Leonardo de Moura",
+      "Floris van Doorn",
+      "Mario Carneiro",
+      "Kim Morrison"
+    ],
+    "license": "Apache-2.0",
+    "scope": "Existing fold composition and mapped fold API; not a new cache schedule semantics or runtime theorem."
+  },
+  "core_API_scope": "Actual List.foldl interpreter over actual WF state fiber is locally constructed. Existing foldl_append/hom are prior APIs; current decode_executeAt proof itself inducts over actual schedule and invokes actual decode_step/decode_compactAt, without assuming the desired serialization/history equation. No new generic fold API novelty claim.",
+  "actual_Anthropic_primary": {
+    "repository": "anthropics/formal-math",
+    "pin": "e1a4e6508154ea59f030480661590a9fe3018011",
+    "path": "3sum-apsp/ThreeSumApsp/Lang/Logic.lean",
+    "url": "https://raw.githubusercontent.com/anthropics/formal-math/e1a4e6508154ea59f030480661590a9fe3018011/3sum-apsp/ThreeSumApsp/Lang/Logic.lean",
+    "archive": ".local/schedule-reduction-source-scout/b3041caba0af462da6eb9a5e40fc8267/anthropics-Logic.lean",
+    "sha256": "859a2842fc684b359d819d0181e0143e8d6576c70f4be725f3a830947bdeb4ee",
+    "git_blob": "508e2040014eeadd11b6a8e1dd68463a9db8fe44",
+    "bytes": 13979
+  },
+  "Anthropic_comparison": {
+    "source_anchors": {
+      "Exec.append": 62,
+      "Ends": 78,
+      "Ends.mono": 83,
+      "Ends.append": 89,
+      "Ends.seq": 107
+    },
+    "actual_statement_scope": "Exec/Ends use their actual program/state/limits/call-depth/time-cost semantics. Ends.seq composes actual executions with T1+T2<=T. Ends.append extends procedure lists.",
+    "limits": "No actual prefix dictionary/checkpoint/slot-remap/ideal reduction/cyclotomic coefficient theorem in inspected source; no program-language-to-our-codec or IO refinement inferred.",
+    "bounded_filename_search": {
+      "tree": ".local/external-math/anthropic/e1a4e6508154ea59f030480661590a9fe3018011/formal-math-tree.json",
+      "sha256": "01c7743b24df9d0dd6c165d47751b7ece26cd203f241736a0840deabd34acdb5",
+      "truncated": false,
+      "query": "case-insensitive ideal|cyclotomic|numberfield|eisenstein in .lean PATHS only",
+      "matches": [],
+      "absence_limit": "Zero filename matches is not a corpus-body absence or novelty assertion."
+    }
+  },
+  "arxiv_context": {
+    "authors": [
+      "Bruno Courcelle"
+    ],
+    "title": "Unfoldings and Coverings of Weighted Graphs",
+    "version": "2212.07205v3",
+    "submitted_version_utc": "2023-06-13T12:23:51Z",
+    "url": "https://arxiv.org/html/2212.07205v3",
+    "license": "arXiv perpetual non-exclusive license; citation/paraphrase only",
+    "archive": {
+      "path": ".local/endpoint-dyadic-source-scout/c84ff313d7694097b4d2d5925551ed37/courcelle-2212.07205v3.html",
+      "sha256": "c7bac0f90422a8d891b8333e9ee434aec2f93b733e9d872f893189d22efc03cf",
+      "bytes": 1196648
+    },
+    "fresh_primary_web_read_utc": "2026-10-16T01:13:36.145210+00:00",
+    "bounded_sections": [
+      "2.2",
+      "3.1 construction of complete unfolding, walk parent by last-arc removal"
+    ],
+    "comparison": "Directed walks keep arc identity/order and root for empty words; local schedule acts on finite dictionaries of those histories. Paper assumes finite/countable sets and rooted reachability; arbitrary local quiver is broader. No finite cache schedule, numeric compaction/remap composition or runtime claim transfers."
+  },
+  "OpenAI_scope": {
+    "primary_source": {
+      "repository": "openai/math",
+      "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "path": "lean/OAI/NumberTheory/DirichletL/GaussSum/FiniteFourier.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/GaussSum/FiniteFourier.lean",
+      "archive": ".local/schedule-reduction-source-scout/b3041caba0af462da6eb9a5e40fc8267/openai-FiniteFourier.lean",
+      "sha256": "0e8e4184de91161a75802e3a26abfd19a322dffa6441968bf9caeb25800b5d7c",
+      "git_blob": "06304e1efc036727b3fa27e37dd6a06ce0bf5e56",
+      "bytes": 59918
+    },
+    "relation": "Fresh requested primary source lane; FiniteFourier is relevant to separate cyclotomic reduction subject, not a supplier for Schedule, State, numeric remaps or execution refinement. No arithmetic/RH implication from this graph result.",
+    "license": {
+      "repository": "openai/math",
+      "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/LICENSE",
+      "license": "Apache-2.0",
+      "git_blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "path": ".local/schedule-reduction-source-scout/b3041caba0af462da6eb9a5e40fc8267/openai-LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357
+    }
+  },
+  "exact_scope": [
+    {
+      "anchors": "Action27,ValidRootedState32,applyAction36",
+      "statement": "Action is Sum(List(Key×actual Occurrence root))Unit; ValidRootedState adds actual structural WellFormed to existing RootedState. DecidableEq only full typed TotalEdge tags; no separate Key equality/vertex equality/finiteness/countability assumption.",
+      "proof_boundary": "Batch invokes actual step with step_wellFormed; compact invokes actual compactAt with compactAt_wellFormed. WF is required initial data and preserved by actual producers, not an assumed desired decode invariant."
+    },
+    {
+      "anchors": "executeAt42,execute46,projectBatches50,execute_root54,execute_wellFormed58,execute_nil62",
+      "statement": "executeAt is actual chronological List.foldl; execute exposes actual existing State. projectBatches filterMap removes compact actions while preserving exact original order and internal empty batches. Root equality and structural WF are actual output proofs; [] is exact State identity."
+    },
+    {
+      "anchors": "decode_executeAt66,decode_execute92,execute_histories100",
+      "statement": "Actual checked Option rows equal initial checked rows mapped by append of chronological projected batches.flatMap traceRows; decode_execute identifies exact checked rows with actual Batch.run on projected batches. Full typed tags/keys/order/multiplicity remain, with explicit retained outer root even empty.",
+      "proof_boundary": "Induction invokes actual decode_step for inl and actual decode_compactAt for inr. This is equality of successful checked rows, not raw dictionary/node/reference arrays, direct old-slot lookup, or automatic criterion transport."
+    }
+  ],
+  "controls": [
+    {
+      "anchors": "positive53-141,173-179",
+      "actual_producers": "Actual parallel Bool loop arrows F/P differ as full tags with same endpoint. BeforeD=[F,[],P],literal old references[(11,0),(11,0)], actual cells/WF/decoding proved. First actual compact yields[[],F],refs1twice,parent index0; unusedP old2 removed, remapNone; F old0→1 and parentold1→0 are actual remap equations.",
+      "boundary": "Even replacing references by old refs0 leaves the stale actual state WF but decodes empty histories, not F. Structural checks alone do not retain intended full-history identity."
+    },
+    {
+      "anchors": "positive197-274",
+      "actual_producers": "Actual Pbatch after compaction yields postD=[[],F,P] andrefs[(11,1),(11,1),(12,2)]; direct without checkpoint givesD=[F,[],P],refs[(11,0),(11,0),(12,2)]. Actual checked rows coincide though arrays differ; actual stalePost is WF with bounded refs but wrong old histories."
+    },
+    {
+      "anchors": "positive282-349",
+      "actual_producers": "Actual actions=[compact,batch P,compact]; second actual compact derives finalrealRows[F,F,P],scheduledD=[F,[],P] andrefs[(11,0),(11,0),(12,2)]. Same initial/final dictionary proven. Append-prefix equation carries retained slots across intermediate batch. composedLookup binds actual compact-before remap then actual compact-post remap; firstNone forces composedNone. directLookup actually reads oldD[2]?, checks exact final-membership and idxOf; actualSome2.",
+      "boundary": "Proved composed≠direct before intended negative. This is a concrete actual intermediate-state obstruction, not merely abstract Option functions or insufficient endpoint/length comparison."
+    },
+    {
+      "anchors": "positive final examples after349",
+      "actual_producers": "Empty schedule identity; compact-only repeated schedule; mixed empty batch/repeated checkpoints/repeated keyed histories; distinct outer Bool roots even with compact-only no-row schedules. No root loss on empty data."
+    },
+    {
+      "anchors": "negative11",
+      "intended_failure": "Attempts goal composedLookup=some2 from direct_lookup_some:directLookup=some2. Complete actual inequivalence is in accepted positive source; this review does not infer mathematical counterexample merely from a failed negative file."
+    }
+  ],
+  "finding": {
+    "actionable_omission_observed": false,
+    "scope": "Bounded actual frozen-source reading. No exhaustive defect absence or independent proof validation claimed. Source statements/quantifiers and controls fit allocated contract.",
+    "next_nonduplicate": "Cumulative actual remap with totality only on original REAL-reference support, preserving actual ordered original reference prefix across schedule; current generic schedule does not implement this lineage theorem.",
+    "historical_failed_variant": "Author event preserves initial default-heartbeat action inference timeout and fixed explicit action list. No weakening of thresholds or audit inferred; current source-only review binds final bytes."
+  },
+  "limits": [
+    "No new path/State/codec or assumed serializer; no generic raw schedule reindex naturality theorem or cumulative map/totality theorem in current source.",
+    "No raw dictionary/node/slot equality after checkpoints, global unchanged slots, total old-slot retention, direct/composed remap equality, byte/optimal compression, runtime/parser/JSON/hash/IO/transaction correspondence.",
+    "No new certificate evidence/criterion or automatic inheritance for appended rows; exact common rooted payload and own Certificate.packed obligations remain separate.",
+    "Anthropic/arxiv citations establish context only; sources do not supply actual local schedule/interpreter/compaction or proof authority. Source snapshots/toolchains/labels do not imply native admission.",
+    "Concurrent author layout finding changed globally to9062, including8803 missing taxonomy directories and74 placeholders, with own pending registration. Preserve root/monitor current checks; do not restate historical175 as current unaffected acceptance."
+  ],
+  "preservation": {
+    "incoming_custody": {
+      "path": "cache/coordination/events/checkpoint-cyclotomic-concurrent-integration-2026-10-15.json",
+      "sha256": "d44b490d39d1503f8c13bb48cd789082cd57808c2a3b0347e53ee7b6bab87474",
+      "bytes": 10380
+    },
+    "state": "13 incoming archive files; stale candidate177a62837b0e451aa8f0d3622930e05714efb7d4d299f658d18903dc16a805fa vs receipt/inventoryc96f37de10091a243679c3f86d9cbf6a8312347a7278c6157221e94e9e2f20b4;8 absentrefs;3 inert candidates nativeNOT_RUN. Original ReciprocalClosedTriadicFluxUpper/RH OPEN; no rebind/admission.",
+    "prior_source_context": "All failed/stale/source-gap/source-path/anchor records immutable; no source status transfer, incoming candidate admission or shared source/docs/registry/native/Git/remote writes."
+  }
+}
