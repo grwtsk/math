@@ -1,0 +1,173 @@
+"""One append-only raw-source custody correction. No project/native/Git execution."""
+from pathlib import Path, PurePosixPath
+import copy
+import hashlib
+import json
+import re
+import stat
+import jsonschema
+
+ROOT=Path('/Users/local/Desktop/math')
+STAGE=Path(__file__).parent
+S1='sha256-caff862d3abdc481405b759737a228b7d5a9e791083b3c00be7826fb3dfb81fa'
+S2='sha256-c4d35acfe355dc2af5092a3daecd3b4761bfea110a021130f90c73a79df3ced5'
+ARCH=ROOT/'.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/incremental-final-handoff-custody-20261016T145245Z-e3e01dbf'
+SCHEMA='.noeaaeue/interfaces/schemas/incremental-validation-data-v1.schema.json'
+PROFILE='grwtsk.math.incremental-validation-data/1.0.0'
+FIVE={'check_math_trust.py','incremental_lean.py','incremental_math_trust.py','test_incremental_lean.py','test_incremental_math_trust.py'}
+def canon(x):return (json.dumps(x,sort_keys=True,separators=(',',':'),ensure_ascii=False,allow_nan=False)+'\n').encode()
+def sha(b):return hashlib.sha256(b).hexdigest()
+def require(c,m):
+    if not c:raise ValueError(m)
+def read(p):
+    if not p.is_absolute():p=ROOT/p
+    p.relative_to(ROOT)
+    for x in (p,)+tuple(p.parents):
+        if x==ROOT.parent:break
+        require(not x.is_symlink(),'symlink: '+str(x))
+    require(stat.S_ISREG(p.stat().st_mode),'not regular')
+    return p.read_bytes()
+def load(p):
+    def pairs(xs):
+        d={}
+        for k,v in xs:
+            require(k not in d,'duplicate JSON key');d[k]=v
+        return d
+    return json.loads(read(p),object_pairs_hook=pairs)
+assets={};payloads={}
+def asset(p,role,h=None,n=None):
+    if not p.is_absolute():p=ROOT/p
+    b=read(p);r=str(p.relative_to(ROOT));label='math/'+r
+    require('..' not in PurePosixPath(label).parts and '\\' not in label,'unsafe label')
+    require(h is None or sha(b)==h,'SHA mismatch: '+r)
+    require(n is None or len(b)==n,'size mismatch: '+r)
+    require(label not in assets or assets[label]['sha256']==sha(b),'capture drift')
+    if label not in assets:
+        assets[label]={'label':label,'original_path':r,'sha256':sha(b),'size_bytes':len(b),'role':role};payloads[label]=b
+    return assets[label]
+
+archive_row=asset(ARCH/'readback.json','historical-archive-custody-map','9e5d26b48ffa75dc7fbdeb24ec70cef3f37f7940e7cb09cea5bcdab26a8ee195',41818)
+archive=load(ARCH/'readback.json')
+require(archive['retained_count']==95 and len(archive['records'])==95,'archive census')
+require(len({r['archive'] for r in archive['records']})==95,'duplicate archive path')
+by_source={r['source_path']:r for r in archive['records']}
+oldmanifestpath=by_source['.noeaaeue/.local/incremental-validation-handoff/20261016T145130Z-b3056f7b/files.json']['archive']
+manifest=load(Path(oldmanifestpath))
+old_by_path={r['path']:r for r in manifest['files']}
+require(len(old_by_path)==72,'old manifest census')
+qualification_path=ROOT/'.noeaaeue/.local/incremental-validation-qualification/20261016T145336Z-9c59abe8/receipt.json'
+qualification=load(qualification_path)
+native_map=qualification['implementation_files']
+require(qualification['exit_code']==0 and qualification['outcome']=='passed','isolated receipt outcome')
+recovered=[];refs=[]
+for r in archive['records']:
+    # Exact finite archive map; all95 are inert copies, not discovery of executables.
+    a=asset(Path(r['archive']),'historical-inert-archive-copy',r['sha256'],r['bytes'])
+    refs.append({'source':archive_row['original_path'],'target':a['original_path'],'sha256':a['sha256'],'size_bytes':a['size_bytes']})
+    if r['source_path'] in old_by_path:
+        old=old_by_path[r['source_path']]
+        require((r['sha256'],r['bytes'])==(old['sha256'],old['bytes']),'old manifest copy mismatch')
+        native=native_map[r['source_path']]
+        expected=native['sha256'] if isinstance(native,dict) else native
+        require(r['sha256']==expected,'native source identity mismatch')
+        if Path(r['source_path']).name in FIVE:recovered.append(dict(r))
+require(len(recovered)==5 and {Path(r['source_path']).name for r in recovered}==FIVE,'not exact five recovered variants')
+final_manifest_path=ROOT/'.noeaaeue/.local/incremental-validation-handoff/20261016T150209Z-67c1ab03/files.json'
+final_manifest=load(final_manifest_path)
+final_by_path={r['path']:r for r in final_manifest['files']}
+require({p for p,r in old_by_path.items() if r['sha256']!=final_by_path[p]['sha256']}=={r['source_path'] for r in recovered},'five-file variant relationship')
+asset(qualification_path,'isolated-old72-native-receipt','0e421cf680ea3e3ed50c9f3a0bc6da3256de42f1adb44f33977c23c3a7621cde',13483)
+asset(final_manifest_path,'final-variant-manifest','204d64667e089a4fc2650e9dd5812e2a6b8c08e668b62879fa94007075c29413',30884)
+asset(ROOT/'.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/wsc-five-preimage-custody-correction-bc8cae7db9f148d886748fa952b5b52e.json','integration-owner-source-custody-correction','6154600a78e2b9681614e7d244bc6bd79c437af42f3d2b82c5970064f96ab47b',9474)
+
+prior_files=[];old_literal={};receipts={}
+for s,expected in [(S1,'c5be3d7ebe8e0da83450398e5638e4b4811810f1b141a321ead1eadcb7557fe9'),(S2,'4d9616b8db9aa9e94c962fbb2167a08035db013fb9e41b9de53317489ebe4d5e')]:
+    p=Path('.noeaaeue/records/receipts/incremental-validation/'+s+'.json')
+    a=asset(p,'preserved-prior-receipt',expected);r=load(p);receipts[s]=r
+    rows=r['data']['created_files']+[{'path':str(p),'sha256':a['sha256'],'size_bytes':a['size_bytes']}]
+    for x in rows:
+        asset(Path(x['path']),'preserved-prior410-output',x['sha256'],x['size_bytes'])
+    prior_files.extend(rows)
+    em=load(Path('.noeaaeue/records/evidence/incremental-validation/'+s+'/manifest.json'))
+    for x in em['data']['assets']:old_literal[x['sha256']]=x['retained_path']
+require(len(prior_files)==410 and len({r['path'] for r in prior_files})==410,'prior410 manifest')
+for p in [Path(__file__),STAGE/'availability-release.json',Path('.git/HEAD'),Path('.git/refs/heads/main')]:asset(p,'literal-authoring-or-main-metadata')
+require(payloads['math/.git/HEAD'].decode().strip()=='ref: refs/heads/main','main checkout required')
+revision=payloads['math/.git/refs/heads/main'].decode().strip();require(re.fullmatch('[0-9a-f]{40}',revision),'invalid revision')
+old_inputs=load(Path('.noeaaeue/records/history/baselines/'+S2+'/inputs.json'))
+selection={'profile':PROFILE,'canonicalization':'wsc-incremental-inputs-json-v1','base_repository_revision_observed':revision,'environment':old_inputs['environment'],'assets':sorted(assets.values(),key=lambda x:x['label'])}
+S='sha256-'+sha(canon(selection));BASE='.noeaaeue/records/history/baselines/'+S;EVID='.noeaaeue/records/evidence/incremental-validation/'+S
+SOURCE='.noeaaeue/records/source-bindings/incremental-validation/'+S+'.jsonl';LOCK='.noeaaeue/interfaces/locks/incremental-validation/'+S+'.json'
+CORR='.noeaaeue/records/corrections/incremental-validation/'+S+'.json';RECEIPT='.noeaaeue/records/receipts/incremental-validation/'+S+'.json';CONT='.noeaaeue/coordination/continuations/incremental-validation/'+S+'.json'
+pending={}
+def allowed(p):
+    if p in [SOURCE,LOCK,CORR,RECEIPT,CONT,EVID+'/manifest.json',BASE+'/inputs.json',BASE+'/authoring-source.txt',BASE+'/preexisting-wsc-paths.jsonl']:return True
+    if p in ['.noeaaeue/records/reviews/incremental-validation/'+S+'/'+x+'.json' for x in 'ABCD']:return True
+    prefix=EVID+'/literal/'
+    return p.startswith(prefix) and p.endswith('.txt') and re.fullmatch('[0-9a-f]{64}',p[len(prefix):-4]) is not None
+def plan(p,b):
+    require(allowed(p) and not (ROOT/p).exists() and p not in pending,'scope/collision: '+p);pending[p]=b
+plan(BASE+'/inputs.json',canon(selection));plan(BASE+'/authoring-source.txt',read(Path(__file__)));plan(BASE+'/preexisting-wsc-paths.jsonl',b''.join(canon(x) for x in sorted(prior_files,key=lambda x:x['path'])))
+literal_rows=[]
+for a in selection['assets']:
+    target=old_literal.get(a['sha256'],EVID+'/literal/'+a['sha256']+'.txt')
+    if target.startswith(EVID) and target not in pending:plan(target,payloads[a['label']])
+    elif not target.startswith(EVID):require(sha(read(Path(target)))==a['sha256'],'old literal mismatch')
+    literal_rows.append(dict(a,retained_path=target))
+template=receipts[S2]
+def obj(kind,suffix,plane,data,labels=None):
+    z=copy.deepcopy(template);logical='noe://grwtsk/math/incremental-validation/'+suffix
+    z.update(kind=kind,id=logical,snapshot_id=S,data=data);z['identities'].update(logical_id=logical,attempt_id='noe://grwtsk/math/attempt/wsc-data-adoption/'+S)
+    z['retention']['write_plane']=plane;z['finite_read_set']={'manifest':BASE+'/inputs.json','labels':labels if labels is not None else [a['label'] for a in selection['assets']]}
+    z['nonclaims'].append('Prior five source-variant availability claim is corrected by exact archive custody; no native fixture/output reconstruction, new native qualification or full closure follows.')
+    return z
+bindings=[obj('SourceBinding','source/'+S+'/'+sha(a['label'].encode()),'records',a,[a['label']]) for a in literal_rows]
+recovered_text='; '.join(r['source_path']+' => '+r['archive']+' SHA256 '+r['sha256']+' bytes '+str(r['bytes']) for r in sorted(recovered,key=lambda x:x['source_path']))
+correction={'append_only':True,'rewritten_original_records':[],'corrections':[
+ {'id':'WSC-OLD-SOURCE-CUSTODY','original':'Prior snapshot observations/remaining_findings said the five raw prior-native variants were unavailable',
+  'clarification':'That statement was too broad: the earlier search omitted the preserved integration-owner archive. All95 mapped inert copies are now byte-verified; all72 implementation copies match old manifest7265f17484afd5e581ae9094ae7a5f394fa0c46d96a0fbc24087e090e04b3273 and isolated-native receipt0e421cf680ea3e3ed50c9f3a0bc6da3256de42f1adb44f33977c23c3a7621cde source hashes. All five changed prior variants are literally retained in this snapshot. Previous observations remain immutable as corrected historical records. '+recovered_text},
+ {'id':'source-recovery-does-not-restore-native-execution','original':'Recovered old source bytes are associated with an isolated passing native receipt',
+  'clarification':'Source availability/custody only: no Lean/Lake/native job was run here; no fixture objects, per-command origins, publication/census outputs or execution environment were reconstructed. Cold1native-audit remains implementation expectation, not directly asserted trace. No qualification is transferred to the changed finalfive source bytes. Earlier failed/interrupted suite and later isolatedPASS remain separate original evidence.'},
+ {'id':'scope-remains-held','original':'Archive readback contains historical pending-native command and acceptance fields',
+  'clarification':'Historical literal scheduling/acceptance fields confer no current release. The56legacy tranche, native activity, Git/currentbindings and application capability remain held/outside this correction. Architecture/central compiler/query/read-confinement/fixed-point gaps remain open.'}
+]}
+lock=load(Path('.noeaaeue/interfaces/locks/incremental-validation/'+S2+'.json'))['data'];lock.update(selected_input_manifest=BASE+'/inputs.json',manifest_sha256=sha(canon(selection)),base_revision=revision)
+manifest_data={'assets':literal_rows,'asset_count':len(literal_rows),'unique_literal_count':len({x['retained_path'] for x in literal_rows}),'upstream_bound_reference_count':len(refs),'upstream_references':refs,
+ 'binding_scope':'Exact95inert archive custody, five recovered prior-native raw source variants, and preserved410previous WSC artifacts. Source custody and receipt identity comparison only; no native execution or proof acceptance.', 'raw_operational_json_is_not_canonical_identity':True}
+continuation=load(Path('.noeaaeue/coordination/continuations/incremental-validation/'+S2+'.json'))['data'];continuation['next_actions'].insert(0,'Use this latest source-custody correction: all five prior variants are recovered. Do not repeat the incomplete unavailability claim; retain distinct missing native fixture origins/outputs and pending current-source/application qualification.')
+objects={LOCK:obj('SnapshotLock','lock/'+S,'interfaces',lock),CORR:obj('Correction','correction/'+S,'records',correction),EVID+'/manifest.json':obj('EvidenceManifest','evidence/'+S,'records',manifest_data),CONT:obj('Continuation','continuation/'+S,'coordination',continuation)}
+for lens in 'ABCD':
+    data=load(Path('.noeaaeue/records/reviews/incremental-validation/'+S2+'/'+lens+'.json'))['data']
+    data['review_scope']='Append-only prior-source availability correction; all410prior artifacts preserved'
+    data['reviewed_paths']=sorted(objects)+[SOURCE,SCHEMA];data['checker_identity']='Retained availability correction source; standard Python/jsonschema hash/length/manifest checks only'
+    for f in data['findings']:
+        if f['id']=='WSC-OLD-SOURCE-CUSTODY':f.update(disposition='resolved-by-exact-inert-archive-custody',evidence='All five prior variants literally recovered and all72 old source identities match; native execution outputs still absent')
+    objects['.noeaaeue/records/reviews/incremental-validation/'+S+'/'+lens+'.json']=obj('ReviewRecord','review/'+S+'/'+lens,'records',data)
+validator=jsonschema.Draft202012Validator(load(Path(SCHEMA)))
+for x in list(objects.values())+bindings:validator.validate(x)
+require(len({x['id'] for x in list(objects.values())+bindings})==len(objects)+len(bindings),'duplicate identities')
+plan(SOURCE,b''.join(canon(x) for x in bindings))
+for p,x in objects.items():plan(p,canon(x))
+for a in selection['assets']:
+    b=read(Path(a['original_path']));require((sha(b),len(b))==(a['sha256'],a['size_bytes']),'final source drift')
+for p,b in pending.items():
+    target=ROOT/p;target.parent.mkdir(parents=True,exist_ok=True)
+    for x in (target,)+tuple(target.parents):
+        if x==ROOT.parent:break
+        require(not x.is_symlink(),'symlink output')
+    with target.open('xb') as f:f.write(b)
+created=[{'path':p,'sha256':sha(b),'size_bytes':len(b)} for p,b in pending.items()]
+for r in created+prior_files:
+    b=read(Path(r['path']));require((sha(b),len(b))==(r['sha256'],r['size_bytes']),'publication/readback mismatch')
+checks=[{'id':'archive95-custody','outcome':'pass','details':'All95 finite mapped inert copies match exact SHA256/length; all72 implementation copies match old manifest and isolated-native receipt source hashes'},
+ {'id':'exact-five-variants','outcome':'pass','details':'Exactly five differing old variants recovered literally; current implementation was not overwritten or adopted'},
+ {'id':'prior410-preservation','outcome':'pass','details':'All410prior WSC artifacts including receipts unchanged by exact pre/post hash/length checks'},
+ {'id':'local-schema-reference-custody','outcome':'pass','details':'New envelopes validate unchanged closed local schema, finite source labels resolve, all planned literals bound and all new outputs read back exactly'},
+ {'id':'nonpromotion-and-release-scope','outcome':'pass','details':'Correction distinguishes source availability from native output recovery or qualification; no56/native/Git/currentbindings/full-capsule release inferred'}]
+data=copy.deepcopy(template['data']);data.update(outcome='prior-native-source-availability-corrected;outer-cycle-blocked',checks=checks,created_files=sorted(created,key=lambda x:x['path']),input_asset_count=len(assets),continuation=CONT,
+ receipt_self={'path':RECEIPT,'sha256':None,'reason':'No self-digest cycle; exact correction receipt SHA256 is returned by external tool readback'})
+for f in data['remaining_findings']:
+    if f['id']=='WSC-OLD-SOURCE-CUSTODY':f.update(disposition='resolved-by-exact-inert-archive-custody',evidence='Five prior source variants recovered; distinct native fixture/output and current-source qualification gaps remain')
+receipt=obj('Receipt','receipt/'+S,'records',data);validator.validate(receipt)
+with (ROOT/RECEIPT).open('xb') as f:f.write(canon(receipt))
+print(json.dumps({'snapshot_id':S,'receipt':{'path':RECEIPT,'sha256':sha(read(Path(RECEIPT))),'size_bytes':len(read(Path(RECEIPT)))},'correction_manifest':{'path':EVID+'/manifest.json','sha256':sha(read(Path(EVID+'/manifest.json'))),'size_bytes':len(read(Path(EVID+'/manifest.json')))},'correction':{'path':CORR,'sha256':sha(read(Path(CORR)))},'new_durable_files':len(created)+1,'prior_files_preserved':410,'recovered_variants':[{'source_path':r['source_path'],'sha256':r['sha256'],'size_bytes':r['bytes']} for r in recovered],'input_assets':len(assets),'native_jobs_started':0,'git_mutations':0},sort_keys=True))

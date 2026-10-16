@@ -1,0 +1,9 @@
+import json,os,subprocess,sys,unittest
+from pathlib import Path
+root=Path(sys.argv[1]);sys.path.insert(0,str(root/".noeaaeue/scripts"))
+def forbid(*args,**kwargs):raise AssertionError("Unmocked process execution or signal forbidden")
+subprocess.Popen=forbid;os.killpg=forbid
+s=unittest.TestLoader().discover(str(root/".noeaaeue/scripts"),pattern="test_*replay*.py")
+r=unittest.TextTestRunner(verbosity=2).run(s)
+print(json.dumps({"tests_run":r.testsRun,"failures":len(r.failures),"errors":len(r.errors),"native_children_permitted":False,"proof_acceptance":False}))
+sys.exit(0 if r.wasSuccessful() else 1)

@@ -1,0 +1,55 @@
+{
+  "active": {
+    "bytes": 247495,
+    "path": "/Users/local/Desktop/math/.noeaaeue/bindings/moebius-current-inputs-current.json",
+    "sha256": "b37f947774bee8794d174718d06a4d7bd044924821c428c3296313cea705499e"
+  },
+  "baseline_input_count": 1488,
+  "caller": {
+    "bytes": 21234,
+    "path": "/Users/local/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/serial_native_runtime_successor_v1.py",
+    "sha256": "05601e37c03f870ed127a6b1e4a691aebb18c16b0acd68372b67dfe545485848"
+  },
+  "capture": {
+    "bytes": 12456,
+    "path": "/Users/local/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/capture_runtime_bound_public_inputs_v1.py",
+    "sha256": "52d934a64df0b59aae0284a42696a3b34035bb0e690146457d76bbb9c4bf8df3"
+  },
+  "compiler_runtime_sha256": "c48f0fb338d4947e55e4f3974e49b7d1d4a12ad0ac0a783355a135d7bda01f7d",
+  "contract": {
+    "bytes": 247495,
+    "path": "/Users/local/Desktop/math/.noeaaeue/bindings/moebius-current-inputs-runtime-observation-20261016T181104Z-c2f7169865ce.json",
+    "sha256": "b37f947774bee8794d174718d06a4d7bd044924821c428c3296313cea705499e"
+  },
+  "head": "d25ccee49a781e150e991f885cb00f8be8f6e453",
+  "input_count": 1761,
+  "kernel_checked": false,
+  "logical_index_sha256": "4f9059ed63298a96990f1fabe31ece963a240a433051008f36e71bef75008bea",
+  "metadata_result": {
+    "bytes": 4710,
+    "path": "/Users/local/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/runtime-only-observation-20261016T181104Z-c2f7169865ce.json",
+    "sha256": "e68c67917cc06fcc06ae1a86b57278fe04ff2871436946527db54bbece01a708"
+  },
+  "native_jobs": 0,
+  "old_helper": {
+    "bytes": 15038,
+    "path": "/Users/local/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/serial_native.py",
+    "sha256": "64000202b88d2d7c3fcd05aabd476164cf8b7aeea846fe714639aeea4162a15b"
+  },
+  "only_other_changed_old_input": ".noeaaeue/bindings/moebius-current-inputs-current.json",
+  "readset": {
+    "bytes": 328695,
+    "path": "/Users/local/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/held-public-runtime-bound-inputs-20261016T181243Z-06a3f68d6d98.json",
+    "sha256": "d883064612692cf287d50c52a0f255aeb9e7f078ec8ab67aa5c4639c171121b0"
+  },
+  "release_created": false,
+  "reviewed_code_changes": 76,
+  "schema": "runtime-bound-public-source-capture-plan-v1",
+  "scope": "Finite source-only public readset capture. No prior input omitted, no proof/native authority. Runtime objects outsideROOT are bound by contract descriptor and new caller actual runtime guard, not copied through this128MiB reader.",
+  "source_count": 887,
+  "source_origin": {
+    "kind": "frozen-source-input-set",
+    "sha256": "78792bdcb1004316623d3af2c1062e48abc12b56a58a963ccc3beb27db51bdb7"
+  },
+  "status": "CAPTURE_ONLY_NO_NATIVE_RELEASE"
+}

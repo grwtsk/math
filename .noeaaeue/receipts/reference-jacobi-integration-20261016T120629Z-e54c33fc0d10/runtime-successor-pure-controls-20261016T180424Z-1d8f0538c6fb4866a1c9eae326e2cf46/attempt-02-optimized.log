@@ -1,0 +1,14 @@
+........................usage: test_serial_native_runtime_successor_v1.py [-h] --phase
+                                                  {public,application}
+                                                  --frozen-inputs
+                                                  FROZEN_INPUTS
+                                                  [--release RELEASE]
+                                                  [--release-sha256 RELEASE_SHA256]
+                                                  [--execute] [--cold]
+                                                  [--timeout-seconds TIMEOUT_SECONDS]
+test_serial_native_runtime_successor_v1.py: error: the following arguments are required: --phase, --frozen-inputs
+..........................
+----------------------------------------------------------------------
+Ran 50 tests in 0.513s
+
+OK

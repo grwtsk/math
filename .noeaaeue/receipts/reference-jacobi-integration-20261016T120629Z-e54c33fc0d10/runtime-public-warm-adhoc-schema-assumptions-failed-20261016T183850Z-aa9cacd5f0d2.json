@@ -1,0 +1,27 @@
+{
+  "attempts": [
+    {
+      "actual": "execution == cached, origin.origin_receipt on cache hits",
+      "assumption": "execution == cache and direct origin_receipt field",
+      "exit_code": 1,
+      "line": 19,
+      "tool_chunk_id": "c559f5"
+    },
+    {
+      "actual": "cached rows use nested origin object",
+      "assumption": "origin_receipt exists directly on cached row",
+      "exit_code": 1,
+      "line": 4,
+      "tool_chunk_id": "cc5a03"
+    }
+  ],
+  "native_jobs": 0,
+  "receipt": {
+    "bytes": 27461807,
+    "path": "/Users/local/Desktop/math/.noeaaeue/.local/math-trust/20261016T183536Z-6c1ee7dfee/receipt.json",
+    "sha256": "7decbfd41f3284019ea9294ad6597216fa19c0e555fae5e8fee2f0d6c0175244"
+  },
+  "schema": "ad-hoc-root-data-check-failed-attempt-v1",
+  "scope": "Root ad-hoc data review corrected against actual retained schema; no native receipt or source was changed.",
+  "status": "FAILED_READ_ONLY_SCHEMA_ASSUMPTIONS_RETAINED_NOT_NATIVE_FAILURE"
+}

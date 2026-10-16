@@ -1,6 +1,7 @@
-"""Fresh trust-zero replay and native census of every active GRWTSK library module.
+"""Incremental trust-zero compilation and native census of every active library module.
 
 Run: python3 -B .noeaaeue/scripts/check_math_trust.py
+Full cold replay: python3 -B .noeaaeue/scripts/check_math_trust.py --cold
 Fixtures only, without invoking Lean: python3 -B .noeaaeue/scripts/check_math_trust.py --self-test
 Native audit controls, after BUSY clears: python3 -B .noeaaeue/scripts/check_math_trust.py --lean-self-test
 Receipts and objects stay below .noeaaeue/.local/math-trust; public evidence is never rewritten.
@@ -25,6 +26,8 @@ from unittest import mock
 import uuid
 import owned_audit_protocol
 import source_observations
+from incremental_lean import (RuntimeIdentityGuard, validate_runtime_environment,
+                              verify_loaded_parser_sources)
 
 ROOT = Path(__file__).resolve().parents[2]
 AUDIT = "GRWTSK/Logic/ProofChecking/Checks/OwnedDeclarationAudit.lean"
@@ -32,8 +35,16 @@ CHECKER = ".noeaaeue/scripts/check_math_trust.py"
 LAYOUT_CHECKER = ".noeaaeue/scripts/check_math_layout.py"
 SOURCE_INTAKE = ".noeaaeue/evidence/source-intake.json"
 PROTOCOL = ".noeaaeue/scripts/owned_audit_protocol.py"
-EXTRAS = [AUDIT, CHECKER, PROTOCOL, "lean-toolchain", "lakefile.toml", "lake-manifest.json"]
+RUNTIME_INPUTS = [".noeaaeue/scripts/incremental_lean.py",
+                  ".noeaaeue/scripts/cache_math.py", ".noeaaeue/scripts/monitor_math.py",
+                  ".noeaaeue/scripts/repository_paths.py"]
+EXTRAS = [AUDIT, CHECKER, PROTOCOL, "lean-toolchain", "lakefile.toml", "lake-manifest.json"] + RUNTIME_INPUTS
 FULL_EXTRAS = EXTRAS + [LAYOUT_CHECKER, SOURCE_INTAKE, ".noeaaeue/scripts/repository_paths.py"]
+INCREMENTAL_INPUTS = [".noeaaeue/scripts/incremental_math_trust.py",
+                      ".noeaaeue/scripts/incremental_lean.py",
+                      ".noeaaeue/scripts/incremental_audit.py",
+                      ".noeaaeue/scripts/cache_math.py",
+                      ".noeaaeue/scripts/monitor_math.py"]
 LEAN_VERSION = "4.33.0"
 LEAN_COMMIT = "d8b18978322de05a8f3dba51ef03cf5461676c17"
 MATHLIB_REV = "db584cd6d46c92f209a44c0f1c829460d327499d"
@@ -45,8 +56,8 @@ RUNTIME_SOURCE_SHA256 = "97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4a
 CANDIDATE_STATUS = "CANDIDATE_SOURCE_ONLY"
 
 
-def output(argv, root=ROOT):
-    return subprocess.check_output(argv, cwd=root, text=True).strip()
+def output(argv, root=ROOT, *, env=None):
+    return subprocess.check_output(argv, cwd=root, text=True, env=env).strip()
 
 
 def directory_descriptor(path, create=False):
@@ -695,6 +706,9 @@ def validate_current_native_fixture_output(case, stage, text, returncode, module
 
 def run_lean_self_test(run, state, results):
     """Called only after replay() owns the lock and its BUSY guard clears."""
+    compiler_env = dict(os.environ)
+    compiler_env.pop("LEAN_SRC_PATH", None)
+    validate_runtime_environment(compiler_env)
     frozen = run / "source"
     make_directory(frozen, exclusive=True)
     snapshot = source_snapshot(ROOT, [], output(["git", "rev-parse", "HEAD"]), destination=frozen)
@@ -709,12 +723,18 @@ def run_lean_self_test(run, state, results):
     if pins.get("mathlib") != MATHLIB_REV:
         raise RuntimeError("unexpected mathlib pin")
     lean = str(Path(output(["elan", "which", "lean"])).resolve())
-    version = output([lean, "--version"])
+    verify_loaded_parser_sources({Path(relative).name: read_source(frozen, relative)
+                                  for relative in RUNTIME_INPUTS[1:3]})
+    runtime_guard = RuntimeIdentityGuard(lean, env=compiler_env)
+    version = output([lean, "--version"], env=compiler_env)
+    runtime_guard.assert_stable()
     if LEAN_VERSION not in version or LEAN_COMMIT not in version:
         raise RuntimeError("unexpected Lean compiler identity: " + version)
     binary_hash = digest(Path(lean))
     standard_library = Path(lean).parent.parent / "lib/lean"
     state.update({"lean_version": version, "lean_binary_sha256": binary_hash,
+                  "compiler_runtime_identity": runtime_guard.identity,
+                  "compiler_runtime_sha256": runtime_guard.sha256,
                   "dependency_revisions_from_lock": pins,
                   "standard_library_search_path": str(standard_library)})
     audit_source = read_source(frozen, AUDIT)
@@ -742,6 +762,7 @@ def run_lean_self_test(run, state, results):
     write_json(run / "fixture-freeze.json", fixture_inputs)
 
     def stable():
+        runtime_guard.assert_stable()
         verify_snapshot(ROOT, snapshot, sources=[])
         verify_frozen(frozen, snapshot)
         if digest(Path(lean)) != binary_hash:
@@ -761,9 +782,8 @@ def run_lean_self_test(run, state, results):
                 raise RuntimeError("refusing existing native fixture object: " + str(destination))
             argv += ["-o", str(destination)]
         argv.append(str(source))
-        env = dict(os.environ, LEAN_PATH=os.pathsep.join([str(case["build"]), str(standard_library)]))
-        env.pop("LEAN_SRC_PATH", None)
-        env.pop("LEAN_SYSROOT", None)
+        env = dict(compiler_env, LEAN_PATH=os.pathsep.join([str(case["build"]), str(standard_library)]))
+        runtime_guard.assert_stable(env=env)
         label = name + "-" + stage
         state.update({"status": "RUNNING_NATIVE_SELF_TEST", "active": label, "results": results})
         write_json(run / "progress.json", state)
@@ -815,6 +835,7 @@ def run_lean_self_test(run, state, results):
             invoke(name, "source", case["source"], case["build"] / relative)
         invoke(name, "audit", case["wrapper"])
     stable()
+    runtime_guard.assert_unchanged()
     state.update({"status": "LEAN_AUDIT_SELF_TEST_PASSED", "active": None, "results": results,
                   "fixture_cases": list(cases), "command_count": len(results)})
     write_json(run / "receipt.json", state)
@@ -824,9 +845,10 @@ def run_lean_self_test(run, state, results):
     return 0
 
 
-def replay(lean_self_test=False, memory_mib=4096):
+def replay(lean_self_test=False, memory_mib=4096, cold=False):
     base = ROOT / ".noeaaeue/.local/math-trust"
     try:
+        validate_runtime_environment()
         ignored = subprocess.run(["git", "check-ignore", "-q", "--", ".noeaaeue/.local/math-trust/"], cwd=ROOT)
         if ignored.returncode != 0:
             raise RuntimeError("trust output must be Git-ignored: .noeaaeue/.local/math-trust/")
@@ -839,6 +861,7 @@ def replay(lean_self_test=False, memory_mib=4096):
     results, snapshot = [], None
     state = {"status": "INITIALIZING", "run_directory": str(run),
              "mode": "lean-self-test" if lean_self_test else "all-project-replay",
+             "compilation_mode": "cold" if cold else "incremental",
              "generated_runtime_helper_exception": {"name": RUNTIME_NAME, "module": RUNTIME_OWNER,
                  "status": "HISTORICAL_SINGLETON_POLICY_NOT_CURRENT_PERMISSION",
                  "kind": "definition", "unsafe": True, "partial": False,
@@ -891,7 +914,7 @@ def replay(lean_self_test=False, memory_mib=4096):
             ROOT, read_source, observed_owner_hashes)
         state["qualified_current_runtime_profile"] = qualification_binding
         snapshot = source_snapshot(ROOT, sources, output(["git", "rev-parse", "HEAD"]),
-                                   extras=FULL_EXTRAS + current_extras + list(qualification_inputs), destination=frozen,
+                                   extras=FULL_EXTRAS + INCREMENTAL_INPUTS + current_extras + list(qualification_inputs), destination=frozen,
                                    deleted_sources=inventory["deleted_library_paths"])
         if snapshot["sha256"][LAYOUT_CHECKER] != state["math_layout_gate"]["checker_sha256_after"]:
             raise RuntimeError("mathematical layout checker changed before source freeze")
@@ -923,17 +946,23 @@ def replay(lean_self_test=False, memory_mib=4096):
             if dirty:
                 raise RuntimeError("dirty tracked dependency sources: " + name)
         lean = str(Path(output(["elan", "which", "lean"])).resolve())
-        version = output([lean, "--version"])
+        env = dict(os.environ)
+        env.pop("LEAN_SRC_PATH", None)
+        verify_loaded_parser_sources({Path(relative).name: read_source(frozen, relative)
+                                      for relative in RUNTIME_INPUTS[1:3]})
+        runtime_guard = RuntimeIdentityGuard(lean, env=env)
+        version = output([lean, "--version"], env=env)
+        runtime_guard.assert_stable()
         if LEAN_VERSION not in version or LEAN_COMMIT not in version:
             raise RuntimeError("unexpected Lean compiler identity: " + version)
         binary_hash = digest(Path(lean))
-        paths, removed = dependency_search_path(output(["lake", "env", "printenv", "LEAN_PATH"]), ROOT, lean)
+        paths, removed = dependency_search_path(output(["lake", "env", "printenv", "LEAN_PATH"], env=env), ROOT, lean)
+        runtime_guard.assert_stable()
         if not paths:
             raise RuntimeError("missing pinned dependency search path")
         build = run / "build"
         make_directory(build, exclusive=True)
-        env = dict(os.environ, LEAN_PATH=os.pathsep.join([str(build)] + paths))
-        env.pop("LEAN_SRC_PATH", None)
+        env["LEAN_PATH"] = os.pathsep.join([str(build)] + paths)
         wrapper = frozen / "AllProjectAudit.lean"
         audit_template = read_source(frozen, AUDIT)
         owner_hashes = {name: snapshot["sha256"][relative] for name, relative in modules.items()}
@@ -957,6 +986,8 @@ def replay(lean_self_test=False, memory_mib=4096):
             "generated_source_sha256": wrapper_hash, "GRWTSK_source_modified": False,
             "scope": "Operational wrapper only; all native owner/Expr/universe/axiom/reference gates retained. No acceptance inherited."}
         state.update({"lean_version": version, "lean_binary_sha256": binary_hash,
+                      "compiler_runtime_identity": runtime_guard.identity,
+                      "compiler_runtime_sha256": runtime_guard.sha256,
                       "dependency_revisions": pins, "removed_search_paths": removed,
                       "dependency_search_path": paths, "wrapper_sha256": wrapper_hash})
         state["dependency_provenance_scope"] = (
@@ -965,7 +996,18 @@ def replay(lean_self_test=False, memory_mib=4096):
             "Search-path-resolved imported dependency object families are fingerprinted after the successful audit; "
             "those fingerprints do not establish object-to-source provenance or bind earlier import times.")
 
+        if not cold:
+            import incremental_math_trust
+            return incremental_math_trust.replay(
+                sys.modules[__name__], run=run, state=state, results=results,
+                snapshot=snapshot, modules=modules, order=order, lean=lean,
+                binary_hash=binary_hash, env=env, paths=paths, pins=pins,
+                frozen=frozen, build=build, audit_source=audit_source,
+                native_profiles=native_profiles, memory_mib=memory_mib,
+                runtime_guard=runtime_guard)
+
         def stable():
+            runtime_guard.assert_stable()
             verify_snapshot(ROOT, snapshot)
             verify_frozen(frozen, snapshot)
             if digest(Path(lean)) != binary_hash or digest(wrapper) != wrapper_hash:
@@ -1020,6 +1062,7 @@ def replay(lean_self_test=False, memory_mib=4096):
             audit_output, modules, owner_hashes, native_profiles, census_records)
         state["dependency_object_identities"] = dependency_object_identities(audit_output, paths, lean)
         stable()
+        runtime_guard.assert_unchanged()
         state.update({"status": "ALL_PROJECT_SOURCE_AND_AXIOM_CHECKS_PASSED", "active": None,
                       "declaration_count": len(declarations), "declarations": declarations,
                       "modules": audited_modules, "results": results,
@@ -1222,8 +1265,20 @@ class ReplayFixtures(unittest.TestCase):
                 self.assertRaises(subprocess.CalledProcessError):
             runpy.run_path(str(script))
         lean.assert_not_called()
-        launch.assert_called_once_with([sys.executable, "-B", str(ROOT / LAYOUT_CHECKER)],
-                                       cwd=ROOT, check=True)
+        self.assertEqual(launch.call_count, 1)
+        self.assertEqual(launch.call_args.args, ([sys.executable, "-B", str(ROOT / LAYOUT_CHECKER)],))
+        self.assertEqual(launch.call_args.kwargs["cwd"], ROOT)
+        self.assertIs(launch.call_args.kwargs["check"], True)
+
+    def test_public_loader_override_rejected_before_any_child(self):
+        for name in ("DYLD_LIBRARY_PATH", "LD_PRELOAD", "LEAN_SYSROOT"):
+            with self.subTest(name=name), mock.patch.dict(os.environ, {name: "/unbound"}), \
+                    mock.patch.object(subprocess, "run") as launch, \
+                    mock.patch.object(subprocess, "check_output") as output, \
+                    contextlib.redirect_stdout(io.StringIO()):
+                self.assertEqual(replay(), 1)
+                launch.assert_not_called()
+                output.assert_not_called()
 
     def test_unimported_module_replayed_after_dependency(self):
         modules, order = project_modules(self.root, self.sources)
@@ -1421,7 +1476,7 @@ class ReplayFixtures(unittest.TestCase):
             parse_census(text, [RUNTIME_OWNER], {RUNTIME_SOURCE: RUNTIME_SOURCE_SHA256})
 
     def native_mock_repository(self):
-        for relative in (AUDIT, CHECKER, PROTOCOL):
+        for relative in (AUDIT, CHECKER, PROTOCOL, *RUNTIME_INPUTS):
             target = self.root / relative
             target.parent.mkdir(parents=True, exist_ok=True)
             target.write_bytes(read_source(ROOT, relative))
@@ -1430,11 +1485,12 @@ class ReplayFixtures(unittest.TestCase):
         (self.root / "lake-manifest.json").write_text(json.dumps({"packages": [{"name": "mathlib", "rev": MATHLIB_REV}]}))
         binary = self.root / "toolchain/bin/lean"
         binary.parent.mkdir(parents=True)
-        binary.write_bytes(b"mock-only Lean binary; never executed")
+        import struct
+        binary.write_bytes(struct.pack("<8I", 0xfeedfacf, 0x100000c, 0, 2, 0, 0, 0, 0))
         run = self.root / "mock-native-run"
         run.mkdir()
 
-        def fixture_output(argv, root=ROOT):
+        def fixture_output(argv, root=ROOT, *, env=None):
             if argv == ["git", "rev-parse", "HEAD"]:
                 return "fixture-head"
             if argv == ["elan", "which", "lean"]:
@@ -1614,8 +1670,10 @@ if __name__ == "__main__":
     modes.add_argument("--lean-self-test", action="store_true", help="validate the native audit on frozen positive and hostile Lean fixtures after BUSY clears")
     parser.add_argument("--memory-mib", type=int, default=4096,
                         help="Lean memory ceiling for full source replay (default: 4096; recorded in the receipt)")
+    parser.add_argument("--cold", action="store_true",
+                        help="freshly compile and audit every active module without reusing project validation results")
     args = parser.parse_args()
     if args.self_test:
         result = unittest.TextTestRunner(verbosity=2).run(unittest.defaultTestLoader.loadTestsFromTestCase(ReplayFixtures))
         raise SystemExit(0 if result.wasSuccessful() else 1)
-    raise SystemExit(replay(lean_self_test=args.lean_self_test, memory_mib=args.memory_mib))
+    raise SystemExit(replay(lean_self_test=args.lean_self_test, memory_mib=args.memory_mib, cold=args.cold))

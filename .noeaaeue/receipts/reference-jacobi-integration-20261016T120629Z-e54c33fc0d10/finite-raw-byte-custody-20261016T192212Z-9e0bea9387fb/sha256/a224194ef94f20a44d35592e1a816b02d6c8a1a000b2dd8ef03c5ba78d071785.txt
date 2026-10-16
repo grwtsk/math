@@ -1,0 +1,3 @@
+'GRWTSK.Analysis.SpecialFunctions.PowerIntervalDrop.rpow_sub_rpow_add_one_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

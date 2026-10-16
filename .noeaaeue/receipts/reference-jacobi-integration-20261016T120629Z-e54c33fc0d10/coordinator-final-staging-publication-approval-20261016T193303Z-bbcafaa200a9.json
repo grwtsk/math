@@ -1,0 +1,99 @@
+{
+  "all_proposed_commit_bytes_rehashed": true,
+  "authorized_operations": [
+    "Stage ONLY1357 manifest rows plus successor manifest,parent manifest and this ACK; use exact custody commit_source for two index-only overrides without writing either worktreefile",
+    "Verify staged exact path scope and raw blob hashes; preserve all unrelated unstaged work and receipt identities",
+    "Commit existing main; read back every approved committed raw blob; ordinary non-force push origin/main and verify remote identity/containment",
+    "Append actual publication record as separate scoped commit; read back, ordinary push and verify",
+    "Then resume authorized workers/RH heartbeat under Noe source/native coordination and automatic validated-batch main commit/push"
+  ],
+  "base_head": "d25ccee49a781e150e991f885cb00f8be8f6e453",
+  "commit_or_push_performed_by_this_record": false,
+  "coordinator_native_runs": 0,
+  "current_worktree_exceptions": [
+    {
+      "bytes": 3017,
+      "commit_source": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-raw-byte-custody-20261016T192212Z-9e0bea9387fb/sha256/659186b454e7b588fd0ec36a9c4813f945db77f8dbb6b9e4abe45d7c61fb616f.txt",
+      "path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Positive/ThirdCyclotomicJacobi.lean",
+      "publication_method": "INDEX_ONLY_PRESERVE_CONCURRENT_WORKTREE",
+      "roles": [
+        "reviewed_finite_source_scope"
+      ],
+      "sha256": "659186b454e7b588fd0ec36a9c4813f945db77f8dbb6b9e4abe45d7c61fb616f",
+      "worktree_observation": {
+        "bytes": 3918,
+        "path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Positive/ThirdCyclotomicJacobi.lean",
+        "sha256": "4e086c435e4befb386b91ebfdf172e646ee6e7a2822af3f1c5b30950111e481f"
+      }
+    },
+    {
+      "bytes": 3571,
+      "commit_source": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-raw-byte-custody-20261016T192212Z-9e0bea9387fb/sha256/2426a4fb0689cf6102e72cb174b9469641164450e656f3d9192357764f723623.txt",
+      "path": "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicJacobi.lean",
+      "publication_method": "INDEX_ONLY_PRESERVE_CONCURRENT_WORKTREE",
+      "roles": [
+        "reviewed_finite_source_scope"
+      ],
+      "sha256": "2426a4fb0689cf6102e72cb174b9469641164450e656f3d9192357764f723623",
+      "worktree_observation": {
+        "bytes": 5830,
+        "path": "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicJacobi.lean",
+        "sha256": "6e00993f591bd867efb762990d8e6fa1db9b966751a838bcf14227b4b602148c"
+      }
+    }
+  ],
+  "forbidden": [
+    "reset/stash/overwrite/hide concurrent work",
+    "rewrite historical receipts",
+    "admitnewJacobiWIPor3sourceonlycandidates",
+    "forcepush",
+    "wholeprojectcoldreplay"
+  ],
+  "foreign_intersection": 0,
+  "foreign_set_reconstructed": 13533,
+  "historical_scope": "Accepted receipts/sourcecache/metadata bind proposed committed versions. Newer two live Jacobi variants remain uncommitted, owner-controlled and unadmitted by this batch; affected live bindings stale pending successor validation. Original receipts/raw pins unchanged. Source-cache earlier live-verify equality expired after those concurrent edits.",
+  "manifest": {
+    "bytes": 515797,
+    "path": "/Users/local/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-publication-finalization-20261016T192212Z-9e0bea9387fb/publication-manifest-complete-source-closure-20261016T193303Z-bbcafaa200a9.json",
+    "sha256": "02f6c8a72958a0b145b832a35ce1ff74ca3b8f117a2bb8dca23311d3a7f9ef83"
+  },
+  "manifest_rows": 1357,
+  "raw_export": {
+    "actual_exit": {
+      "bytes": 3461,
+      "path": "/Users/local/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-publication-finalization-20261016T192212Z-9e0bea9387fb/export-actual-exit-attestation.json",
+      "sha256": "c01a0c71cbb5437110309e325a1fd2abaa47dc256f51723fbf4d7d5b3e5a7346"
+    },
+    "immutable_objects": 555,
+    "manifest": {
+      "bytes": 1515546,
+      "path": "/Users/local/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-raw-byte-custody-20261016T192212Z-9e0bea9387fb/manifest.json",
+      "sha256": "c0003c4c4747710b74590191e766173f73f6f0c292c56bdb7d71085dc29183a8"
+    },
+    "root_mapping_readback": 1692
+  },
+  "schema": "coordinator-final-staging-publication-approval-v1",
+  "secondary_exact_paths": [
+    {
+      "bytes": 515797,
+      "path": "/Users/local/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-publication-finalization-20261016T192212Z-9e0bea9387fb/publication-manifest-complete-source-closure-20261016T193303Z-bbcafaa200a9.json",
+      "sha256": "02f6c8a72958a0b145b832a35ce1ff74ca3b8f117a2bb8dca23311d3a7f9ef83"
+    },
+    {
+      "bytes": 514569,
+      "path": "/Users/local/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-publication-finalization-20261016T192212Z-9e0bea9387fb/publication-manifest.json",
+      "sha256": "6185c0b75be77213c22bc1b8fb684990af6b2c8eee4c31f16e50d040dbd0f1ce"
+    }
+  ],
+  "source_cache_additions": {
+    "attempts": 1,
+    "history_refs": 2,
+    "manifests": 2,
+    "modified_current_ref": 1,
+    "objects": 19
+  },
+  "status": "APPROVED_EXACT_FINITE_MAIN_COMMIT_AND_NORMAL_UPSTREAM_PUSH",
+  "this_ack_secondary_path": "/Users/local/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/coordinator-final-staging-publication-approval-20261016T193303Z-bbcafaa200a9.json",
+  "upstream": "origin/main",
+  "validated_formal_commit_view_count": 887
+}

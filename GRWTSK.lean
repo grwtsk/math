@@ -440,3 +440,5 @@ import GRWTSK.Analysis.Fourier.FiniteAdditiveProjector
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.AdditiveCharacterMoments
 import GRWTSK.Combinatorics.DirectedGraph.PrefixTableReferenceTransport
 import GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicCharacters
+import GRWTSK.Combinatorics.DirectedGraph.PrefixTableDirectLookup
+import GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicJacobi

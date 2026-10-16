@@ -1,0 +1,87 @@
+{
+  "schema": "incremental-validation-driver-mock-tests-v1",
+  "outcome": "passed",
+  "native_commands_launched": 0,
+  "commands": [
+    {
+      "label": "validation-drivers-normal",
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        ".noeaaeue/scripts/test_incremental_validation_drivers.py"
+      ],
+      "exit_code": 0,
+      "log": "validation-drivers-normal.log",
+      "log_sha256": "c8b493b546174129d707c4122f9937eab251b3d398e61d7bfbcf28f70e6cc38a"
+    },
+    {
+      "label": "full-checker-self-test-normal",
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        ".noeaaeue/scripts/check_math_trust.py",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "log": "full-checker-self-test-normal.log",
+      "log_sha256": "7cb12ae9f790db18dba7364a34ddb070c8ef356964d29b1e6d4ed2716c18d9a0"
+    },
+    {
+      "label": "scoped-audit-normal",
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        ".noeaaeue/scripts/test_incremental_audit.py"
+      ],
+      "exit_code": 0,
+      "log": "scoped-audit-normal.log",
+      "log_sha256": "62cfbeb2911bb226088bfb0918eb4b05008ea70b20bce854ee2ca8a564bd37a5"
+    },
+    {
+      "label": "validation-drivers-optimized",
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "-O",
+        ".noeaaeue/scripts/test_incremental_validation_drivers.py"
+      ],
+      "exit_code": 0,
+      "log": "validation-drivers-optimized.log",
+      "log_sha256": "e575f612a8f543538d1fa66a5fcf4afe1ef89a03f5fecde30101eb358227a803"
+    },
+    {
+      "label": "full-checker-self-test-optimized",
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "-O",
+        ".noeaaeue/scripts/check_math_trust.py",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "log": "full-checker-self-test-optimized.log",
+      "log_sha256": "9fc8c388be5839f23ec60f8e11dd68b875a31cf57f751344a8e61873cd709fec"
+    },
+    {
+      "label": "scoped-audit-optimized",
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "-O",
+        ".noeaaeue/scripts/test_incremental_audit.py"
+      ],
+      "exit_code": 0,
+      "log": "scoped-audit-optimized.log",
+      "log_sha256": "62cfbeb2911bb226088bfb0918eb4b05008ea70b20bce854ee2ca8a564bd37a5"
+    }
+  ],
+  "files": {
+    ".noeaaeue/scripts/check.py": "c1c92b07ba1dbf6d038368f7883549d0a9f335b9915d9f50b65b3d38835a5922",
+    ".noeaaeue/scripts/run_lean_validation.py": "c76ee3bbeaabe9a74bd10ef6524edd1c656e30129a36ef7f9f4fccf3ef4e757e",
+    ".noeaaeue/scripts/test_incremental_validation_drivers.py": "77fc3041c78bbee5055919d8166de1b6881197c80d90ca8895468176baad3184",
+    ".noeaaeue/scripts/incremental_audit.py": "bb727b3ca3affd6116d4edf69c25a8ddd78d937b5c05977c89f6854f03619b3d",
+    ".noeaaeue/scripts/test_incremental_audit.py": "e0f56e60be788fece92b0d3783b24d40a7230b9ea65289fab39c4952971a9e47",
+    ".noeaaeue/scripts/incremental_lean.py": "7b6e789ec6f3d8281f3d8d18148e9c9b22748157130e8ba10aa17ac87381e1c1"
+  },
+  "files_unchanged_during_tests": true
+}

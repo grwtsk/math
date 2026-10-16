@@ -1,0 +1,268 @@
+{
+  "schema": "finite-publication-reconciliation-historical-copy-clarification-v1",
+  "at": "2026-10-16T19:10:16.468837+00:00",
+  "status": "PROPOSAL_ONLY_NO_STAGING",
+  "parent_reconciliation": {
+    "path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/publication-scope-reconciliation-20261016T190926Z-af2ae0ddd6454a639e2f08ad29e07bad.json",
+    "bytes": 4666380,
+    "sha256": "a33d45b52db738980852413064c3eb6bc2892401d6ba0dd0704177d58c0e0484"
+  },
+  "correction": "The parent proposal mechanically compared source_variants[].path (current live source) against the historical sha even when the row has an explicit immutable copy field. These12 references are preserved history, not12 current source failures. Their exact archive occurrences were read and verified here; the parent record remains unchanged.",
+  "counts": {
+    "historical_references_corrected": 12,
+    "unique_verified_archived_copies": 6,
+    "unresolved_bound_reference_failures": 0,
+    "final_root_changed_paths_excluded_in_parent": 4
+  },
+  "verified_historical_copy_rows": [
+    {
+      "original_live_path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/finite_byte_custody_export_v1.py",
+      "historical_identity": {
+        "sha256": "564a20600e48157f9ffd3d2283b7cef91945bc2db4591b686bf0c2197efded4f",
+        "bytes": 19215
+      },
+      "archived_copy": {
+        "path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/attempt01/finite_byte_custody_export_v1.py.txt",
+        "bytes": 19215,
+        "sha256": "564a20600e48157f9ffd3d2283b7cef91945bc2db4591b686bf0c2197efded4f"
+      },
+      "original_basis": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/pure-controls-receipt.json $.attempts[0].source_variants[0]",
+      "disposition": "HISTORICAL_VARIANT_COPY_VERIFIED; live path legitimately has final successor bytes; not current-source drift or hash refresh"
+    },
+    {
+      "original_live_path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/test_finite_byte_custody_export_v1.py",
+      "historical_identity": {
+        "sha256": "7a2080da4459db4b96e05c4a78ab050eaa76884f9bb89c332d339b3993569ed3",
+        "bytes": 21002
+      },
+      "archived_copy": {
+        "path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/attempt01/test_finite_byte_custody_export_v1.py.txt",
+        "bytes": 21002,
+        "sha256": "7a2080da4459db4b96e05c4a78ab050eaa76884f9bb89c332d339b3993569ed3"
+      },
+      "original_basis": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/pure-controls-receipt.json $.attempts[0].source_variants[1]",
+      "disposition": "HISTORICAL_VARIANT_COPY_VERIFIED; live path legitimately has final successor bytes; not current-source drift or hash refresh"
+    },
+    {
+      "original_live_path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/finite_byte_custody_export_v1.py",
+      "historical_identity": {
+        "sha256": "ca342ade070d008be56ee487b63b73b5c669587bbe7185fa22a3ffd8cdf31181",
+        "bytes": 20147
+      },
+      "archived_copy": {
+        "path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/attempt02/finite_byte_custody_export_v1.py.txt",
+        "bytes": 20147,
+        "sha256": "ca342ade070d008be56ee487b63b73b5c669587bbe7185fa22a3ffd8cdf31181"
+      },
+      "original_basis": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/pure-controls-receipt.json $.attempts[1].source_variants[0]",
+      "disposition": "HISTORICAL_VARIANT_COPY_VERIFIED; live path legitimately has final successor bytes; not current-source drift or hash refresh"
+    },
+    {
+      "original_live_path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/test_finite_byte_custody_export_v1.py",
+      "historical_identity": {
+        "sha256": "48cecfd27582d96a7db256e09d24334adb3d4f3988a486591f174ca5f8359fba",
+        "bytes": 21441
+      },
+      "archived_copy": {
+        "path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/attempt02/test_finite_byte_custody_export_v1.py.txt",
+        "bytes": 21441,
+        "sha256": "48cecfd27582d96a7db256e09d24334adb3d4f3988a486591f174ca5f8359fba"
+      },
+      "original_basis": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/pure-controls-receipt.json $.attempts[1].source_variants[1]",
+      "disposition": "HISTORICAL_VARIANT_COPY_VERIFIED; live path legitimately has final successor bytes; not current-source drift or hash refresh"
+    },
+    {
+      "original_live_path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/finite_byte_custody_export_v1.py",
+      "historical_identity": {
+        "sha256": "a0eb974ebc6873d9283e11cc1cc127a5ace157c970728db38e026c7ca5d0f86d",
+        "bytes": 22056
+      },
+      "archived_copy": {
+        "path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/attempt03/finite_byte_custody_export_v1.py.txt",
+        "bytes": 22056,
+        "sha256": "a0eb974ebc6873d9283e11cc1cc127a5ace157c970728db38e026c7ca5d0f86d"
+      },
+      "original_basis": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/pure-controls-receipt.json $.attempts[2].source_variants[0]",
+      "disposition": "HISTORICAL_VARIANT_COPY_VERIFIED; live path legitimately has final successor bytes; not current-source drift or hash refresh"
+    },
+    {
+      "original_live_path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/test_finite_byte_custody_export_v1.py",
+      "historical_identity": {
+        "sha256": "024d5b1bbfa9b798aa9d4ad5782882ecb734c849767cbd419d7002299603a6f8",
+        "bytes": 24024
+      },
+      "archived_copy": {
+        "path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/attempt03/test_finite_byte_custody_export_v1.py.txt",
+        "bytes": 24024,
+        "sha256": "024d5b1bbfa9b798aa9d4ad5782882ecb734c849767cbd419d7002299603a6f8"
+      },
+      "original_basis": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/pure-controls-receipt.json $.attempts[2].source_variants[1]",
+      "disposition": "HISTORICAL_VARIANT_COPY_VERIFIED; live path legitimately has final successor bytes; not current-source drift or hash refresh"
+    },
+    {
+      "original_live_path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/finite_byte_custody_export_v1.py",
+      "historical_identity": {
+        "sha256": "564a20600e48157f9ffd3d2283b7cef91945bc2db4591b686bf0c2197efded4f",
+        "bytes": 19215
+      },
+      "archived_copy": {
+        "path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/attempt01/finite_byte_custody_export_v1.py.txt",
+        "bytes": 19215,
+        "sha256": "564a20600e48157f9ffd3d2283b7cef91945bc2db4591b686bf0c2197efded4f"
+      },
+      "original_basis": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/attempt01/source-manifest.json $[0]",
+      "disposition": "HISTORICAL_VARIANT_COPY_VERIFIED; live path legitimately has final successor bytes; not current-source drift or hash refresh"
+    },
+    {
+      "original_live_path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/test_finite_byte_custody_export_v1.py",
+      "historical_identity": {
+        "sha256": "7a2080da4459db4b96e05c4a78ab050eaa76884f9bb89c332d339b3993569ed3",
+        "bytes": 21002
+      },
+      "archived_copy": {
+        "path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/attempt01/test_finite_byte_custody_export_v1.py.txt",
+        "bytes": 21002,
+        "sha256": "7a2080da4459db4b96e05c4a78ab050eaa76884f9bb89c332d339b3993569ed3"
+      },
+      "original_basis": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/attempt01/source-manifest.json $[1]",
+      "disposition": "HISTORICAL_VARIANT_COPY_VERIFIED; live path legitimately has final successor bytes; not current-source drift or hash refresh"
+    },
+    {
+      "original_live_path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/finite_byte_custody_export_v1.py",
+      "historical_identity": {
+        "sha256": "ca342ade070d008be56ee487b63b73b5c669587bbe7185fa22a3ffd8cdf31181",
+        "bytes": 20147
+      },
+      "archived_copy": {
+        "path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/attempt02/finite_byte_custody_export_v1.py.txt",
+        "bytes": 20147,
+        "sha256": "ca342ade070d008be56ee487b63b73b5c669587bbe7185fa22a3ffd8cdf31181"
+      },
+      "original_basis": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/attempt02/source-manifest.json $[0]",
+      "disposition": "HISTORICAL_VARIANT_COPY_VERIFIED; live path legitimately has final successor bytes; not current-source drift or hash refresh"
+    },
+    {
+      "original_live_path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/test_finite_byte_custody_export_v1.py",
+      "historical_identity": {
+        "sha256": "48cecfd27582d96a7db256e09d24334adb3d4f3988a486591f174ca5f8359fba",
+        "bytes": 21441
+      },
+      "archived_copy": {
+        "path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/attempt02/test_finite_byte_custody_export_v1.py.txt",
+        "bytes": 21441,
+        "sha256": "48cecfd27582d96a7db256e09d24334adb3d4f3988a486591f174ca5f8359fba"
+      },
+      "original_basis": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/attempt02/source-manifest.json $[1]",
+      "disposition": "HISTORICAL_VARIANT_COPY_VERIFIED; live path legitimately has final successor bytes; not current-source drift or hash refresh"
+    },
+    {
+      "original_live_path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/finite_byte_custody_export_v1.py",
+      "historical_identity": {
+        "sha256": "a0eb974ebc6873d9283e11cc1cc127a5ace157c970728db38e026c7ca5d0f86d",
+        "bytes": 22056
+      },
+      "archived_copy": {
+        "path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/attempt03/finite_byte_custody_export_v1.py.txt",
+        "bytes": 22056,
+        "sha256": "a0eb974ebc6873d9283e11cc1cc127a5ace157c970728db38e026c7ca5d0f86d"
+      },
+      "original_basis": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/attempt03/source-manifest.json $[0]",
+      "disposition": "HISTORICAL_VARIANT_COPY_VERIFIED; live path legitimately has final successor bytes; not current-source drift or hash refresh"
+    },
+    {
+      "original_live_path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/test_finite_byte_custody_export_v1.py",
+      "historical_identity": {
+        "sha256": "024d5b1bbfa9b798aa9d4ad5782882ecb734c849767cbd419d7002299603a6f8",
+        "bytes": 24024
+      },
+      "archived_copy": {
+        "path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/attempt03/test_finite_byte_custody_export_v1.py.txt",
+        "bytes": 24024,
+        "sha256": "024d5b1bbfa9b798aa9d4ad5782882ecb734c849767cbd419d7002299603a6f8"
+      },
+      "original_basis": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/attempt03/source-manifest.json $[1]",
+      "disposition": "HISTORICAL_VARIANT_COPY_VERIFIED; live path legitimately has final successor bytes; not current-source drift or hash refresh"
+    }
+  ],
+  "additional_finite_owned_archive_paths": [
+    {
+      "path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/attempt01/finite_byte_custody_export_v1.py.txt",
+      "bytes": 19215,
+      "sha256": "564a20600e48157f9ffd3d2283b7cef91945bc2db4591b686bf0c2197efded4f"
+    },
+    {
+      "path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/attempt01/test_finite_byte_custody_export_v1.py.txt",
+      "bytes": 21002,
+      "sha256": "7a2080da4459db4b96e05c4a78ab050eaa76884f9bb89c332d339b3993569ed3"
+    },
+    {
+      "path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/attempt02/finite_byte_custody_export_v1.py.txt",
+      "bytes": 20147,
+      "sha256": "ca342ade070d008be56ee487b63b73b5c669587bbe7185fa22a3ffd8cdf31181"
+    },
+    {
+      "path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/attempt02/test_finite_byte_custody_export_v1.py.txt",
+      "bytes": 21441,
+      "sha256": "48cecfd27582d96a7db256e09d24334adb3d4f3988a486591f174ca5f8359fba"
+    },
+    {
+      "path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/attempt03/finite_byte_custody_export_v1.py.txt",
+      "bytes": 22056,
+      "sha256": "a0eb974ebc6873d9283e11cc1cc127a5ace157c970728db38e026c7ca5d0f86d"
+    },
+    {
+      "path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-byte-custody-preparation-20261016T181632Z-6476c0a4b4d3/attempt03/test_finite_byte_custody_export_v1.py.txt",
+      "bytes": 24024,
+      "sha256": "024d5b1bbfa9b798aa9d4ad5782882ecb734c849767cbd419d7002299603a6f8"
+    }
+  ],
+  "unresolved_references": [],
+  "final_root_delta_paths": [
+    {
+      "path": ".noeaaeue/bindings/moebius-current-inputs-current.json",
+      "observed_in_parent_proposal": {
+        "path": ".noeaaeue/bindings/moebius-current-inputs-current.json",
+        "bytes": 248067,
+        "sha256": "7409f25df88e984ed1a78f74efcbff9e85a22b4d86fe07213f937b1794f85a8f"
+      },
+      "disposition": "FINAL_ROOT_DELTA_REQUIRED; no acceptance inferred"
+    },
+    {
+      "path": ".noeaaeue/documentation/reference/documentation-layout.json",
+      "observed_in_parent_proposal": {
+        "path": ".noeaaeue/documentation/reference/documentation-layout.json",
+        "bytes": 204831,
+        "sha256": "0b18ef277b29b69746fd88a923c86e0dcea0c84c99e82de965e6854a0075d53a"
+      },
+      "disposition": "FINAL_ROOT_DELTA_REQUIRED; no acceptance inferred"
+    },
+    {
+      "path": "docs/mathematics/Combinatorics/DirectedGraph/prefix-table-direct-lookup.md",
+      "observed_in_parent_proposal": {
+        "path": "docs/mathematics/Combinatorics/DirectedGraph/prefix-table-direct-lookup.md",
+        "bytes": 5795,
+        "sha256": "986ba02fca41f5e61ad1f279593e784ece843d46497d57fd5ebcd1f2240cd808"
+      },
+      "disposition": "FINAL_ROOT_DELTA_REQUIRED; no acceptance inferred"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/Cyclotomic/third-cyclotomic-jacobi.md",
+      "observed_in_parent_proposal": {
+        "path": "docs/mathematics/NumberTheory/Cyclotomic/third-cyclotomic-jacobi.md",
+        "bytes": 6608,
+        "sha256": "285cbac50595b0e0bf9c95d0e78a66288b320dfac64500cf0349ed0ae28398b1"
+      },
+      "disposition": "FINAL_ROOT_DELTA_REQUIRED; no acceptance inferred"
+    }
+  ],
+  "pending_scope": "Final selected2/docs5/source-cache887/default-activation records and changed canonical bytes remain root-owned final-delta obligations. This clarification neither approves those changes nor reruns gates.",
+  "operations": [
+    "Exact named archived text copy reads and SHA/length comparison",
+    "One new create-only BASE clarification"
+  ],
+  "native_jobs": 0,
+  "Git_operations": 0,
+  "source_or_shared_edits": false,
+  "actual_export": false,
+  "mathematical_acceptance": false
+}

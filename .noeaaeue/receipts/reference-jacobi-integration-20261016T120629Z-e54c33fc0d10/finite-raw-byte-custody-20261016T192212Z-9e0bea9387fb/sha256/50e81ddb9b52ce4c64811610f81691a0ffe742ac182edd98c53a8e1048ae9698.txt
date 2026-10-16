@@ -1,0 +1,308 @@
+"""Read-only, stdlib-only audit of two actual public validation receipts.
+
+This checks recorded execution/custody and retained cache evidence. It launches
+no compiler, imports no project modules, and grants no mathematical authority.
+"""
+import argparse
+import hashlib
+import json
+import os
+from pathlib import Path
+import stat
+
+
+def require(value, message):
+    if not value:
+        raise ValueError(message)
+
+
+def sha(raw):
+    return hashlib.sha256(raw).hexdigest()
+
+
+def canonical(value):
+    return json.dumps(value, sort_keys=True, separators=(",", ":"), allow_nan=False).encode()
+
+
+def unique(pairs):
+    result = {}
+    for key, value in pairs:
+        require(key not in result, "duplicate JSON key")
+        result[key] = value
+    return result
+
+
+def aggregate(rows_by_module):
+    lines, total = [], 0
+    for module, rows in sorted(rows_by_module.items()):
+        lines.append("MATH_TRUST_MODULE::" + json.dumps(
+            {"module": module, "declarations": len(rows)}, separators=(",", ":")))
+        for row in rows:
+            lines.append("MATH_TRUST_DECL::" + canonical(row).decode())
+        total += len(rows)
+    lines += ["MATH_TRUST_COUNT::" + str(total),
+              "MATH_TRUST_MODULE_COUNT::" + str(len(rows_by_module))]
+    return ("\n".join(lines) + "\n").encode()
+
+
+class Audit:
+    def __init__(self):
+        self.inputs = {}
+        self.origins = {}
+        self.origin_commands = {}
+
+    def read(self, path):
+        path = Path(path).absolute()
+        fd = os.open(path, os.O_RDONLY | os.O_NOFOLLOW)
+        try:
+            before = os.fstat(fd)
+            require(stat.S_ISREG(before.st_mode), "nonregular input")
+            parts = []
+            while True:
+                part = os.read(fd, 1024 * 1024)
+                if not part:
+                    break
+                parts.append(part)
+            after = os.fstat(fd)
+            fields = ("st_dev", "st_ino", "st_mode", "st_size", "st_mtime_ns", "st_ctime_ns")
+            require(all(getattr(before, key) == getattr(after, key) for key in fields),
+                    "input changed during read")
+        finally:
+            os.close(fd)
+        raw = b"".join(parts)
+        identity = {"path": str(path), "sha256": sha(raw), "bytes": len(raw)}
+        prior = self.inputs.setdefault(str(path), identity)
+        require(prior == identity, "input byte drift: " + str(path))
+        return raw
+
+    def json(self, path):
+        return json.loads(self.read(path), object_pairs_hook=unique)
+
+    def origin(self, identity):
+        require(set(identity) == {"path", "sha256", "bytes", "attempt_id"}, "origin identity schema")
+        token = canonical(identity)
+        if token not in self.origins:
+            raw = self.read(identity["path"])
+            require((sha(raw), len(raw)) == (identity["sha256"], identity["bytes"]), "origin bytes")
+            value = json.loads(raw, object_pairs_hook=unique)
+            require(set(value) == {"schema", "attempt_id", "outcome", "terminal", "evidence"}, "origin schema")
+            require(value["schema"] == "proof-validation-origin-v1" and value["terminal"] is True
+                    and value["outcome"] == "passed" and value["attempt_id"] == identity["attempt_id"], "origin terminal")
+            records = value["evidence"]["commands"]
+            index = {row["cache_key"]: row for row in records}
+            require(len(index) == len(records), "duplicate origin commands")
+            self.origins[token] = value
+            self.origin_commands[token] = index
+        return self.origins[token], self.origin_commands[token]
+
+
+def verify(first_dir, warm_dir, root, output):
+    audit = Audit()
+    runs = [Path(first_dir).absolute(), Path(warm_dir).absolute()]
+    require(runs[0] != runs[1], "distinct actual attempts required")
+    receipts = [audit.json(run / "receipt.json") for run in runs]
+    first, warm = receipts
+    n = first["source_count"]
+    require(type(n) is int and n > 0, "actual public source count")
+    stable_fields = ["snapshot", "source_count", "module_order", "deleted_library_paths",
+                     "candidate_source_only_paths", "lean_memory_limit_mib", "lean_version",
+                     "lean_binary_sha256", "compiler_runtime_identity", "compiler_runtime_sha256", "dependency_revisions", "dependency_checkout_states",
+                     "dependency_search_path", "removed_search_paths", "dependency_object_identities",
+                     "qualified_current_runtime_profile", "generated_runtime_helper_exception",
+                     "owned_audit_protocol", "owned_audit_source_profile", "operational_audit_wrapper",
+                     "wrapper_sha256", "declarations", "modules", "declaration_count"]
+    for key in stable_fields:
+        require(key in first and key in warm and first[key] == warm[key], "first/warm identity differs: " + key)
+    # These bytes are checked against both recorded runs and their immutable
+    # terminal origins. Current-byte checks corroborate the descriptor; they do
+    # not relabel older executable-only evidence as runtime-qualified.
+    runtime = first["compiler_runtime_identity"]
+    runtime_bytes = [canonical(receipt["compiler_runtime_identity"]) for receipt in receipts]
+    require(runtime_bytes[0] == runtime_bytes[1], "typed first/warm runtime identity differs")
+    for receipt, raw in zip(receipts, runtime_bytes):
+        require(sha(raw + b"\n") == receipt["compiler_runtime_sha256"],
+                "each runtime descriptor must match its own digest")
+    runtime_digest = sha(runtime_bytes[0] + b"\n")
+    require(first["compiler_runtime_sha256"] == warm["compiler_runtime_sha256"] == runtime_digest,
+            "runtime descriptor/digest differs")
+    require(runtime["schema"] == "lean-compiler-runtime-v1"
+            and runtime["format"] == "thin-64-bit-mach-o"
+            and runtime["scope"]["hostile_loader_confinement"] is False,
+            "runtime descriptor scope")
+    required_libraries = {"libInit_shared.dylib", "libleanshared_2.dylib",
+                          "libleanshared_1.dylib", "libleanshared.dylib"}
+    require(required_libraries <= {Path(path).name for path in runtime["objects"]},
+            "four actual Lean startup libraries missing")
+    for path, identity in runtime["objects"].items():
+        raw = audit.read(path)
+        require(identity == {"sha256": sha(raw), "bytes": len(raw)}, "current runtime object differs")
+    executable = runtime["executable"]
+    require(executable["sha256"] == first["lean_binary_sha256"]
+            and runtime["objects"][executable["path"]] == {
+                "sha256": executable["sha256"], "bytes": executable["bytes"]}, "runtime executable binding")
+    for resolution in runtime["resolutions"]:
+        require(type(resolution["weak"]) is bool, "runtime load flag type")
+        for candidate in resolution["candidates"]:
+            if candidate["state"] == "absent":
+                require(not Path(candidate["path"]).exists() and not Path(candidate["path"]).is_symlink(),
+                        "current runtime shadow absence differs")
+            elif candidate["state"] == "present":
+                require(candidate["path"] in runtime["objects"] and
+                        {key: candidate[key] for key in ("sha256", "bytes")} == runtime["objects"][candidate["path"]],
+                        "runtime candidate not object bound")
+            else:
+                require(candidate["state"] == "trusted-os-runtime-unfingerprinted"
+                        and candidate["path"].startswith(("/usr/lib/", "/System/Library/")), "runtime boundary")
+    inventory = runtime["lean_library_inventory"]
+    require(inventory["present"] is True, "actual Lean runtime inventory missing")
+    require(sorted(str(path) for path in Path(inventory["path"]).iterdir() if path.name.endswith(".dylib"))
+            == sorted(row["path"] for row in inventory["files"]), "current runtime inventory differs")
+    expected_warm = {"compiled": 0, "compilation_cache_hits": n, "audited_modules": 0,
+                     "audit_cache_hits": n, "native_audit_commands": 0}
+    require(warm["incremental"] == expected_warm, "warm rebuilt or reaudited library modules")
+    for run, receipt in zip(runs, receipts):
+        require(receipt["run_directory"] == str(run) and receipt["mode"] == "all-project-replay"
+                and receipt["compilation_mode"] == "incremental"
+                and receipt["status"] == "ALL_PROJECT_SOURCE_AND_AXIOM_CHECKS_PASSED"
+                and receipt["active"] is None and receipt["rh_proved"] is False, "unsuccessful public receipt")
+        require(audit.json(run / "source-freeze.json") == receipt["snapshot"], "source-freeze mismatch")
+        for relative, expected in receipt["snapshot"]["sha256"].items():
+            require(not Path(relative).is_absolute() and ".." not in Path(relative).parts,
+                    "unsafe frozen source path")
+            require(sha(audit.read(run / "source" / relative)) == expected,
+                    "retained frozen source bytes differ: " + relative)
+        counters = receipt["incremental"]
+        require(counters["compiled"] + counters["compilation_cache_hits"] == n
+                and counters["audited_modules"] + counters["audit_cache_hits"] == n
+                and counters["native_audit_commands"] == int(counters["audited_modules"] > 0), "incomplete module counters")
+        order = receipt["module_order"]
+        require(len(order) == len(set(order)) == n and set(order) == set(receipt["module_validation"]), "module coverage")
+        require(set(receipt["snapshot"]["sources"]) == {name.replace(".", "/") + ".lean" for name in order}, "source coverage")
+        require({row["module"] for row in receipt["modules"]} == set(order)
+                and len(receipt["modules"]) == n, "census module coverage")
+        declarations = receipt["declarations"]
+        require(len(declarations) == receipt["declaration_count"] == len({row["name"] for row in declarations}), "declaration count")
+        counts = {name: 0 for name in order}
+        groups = {name: [] for name in order}
+        for row in declarations:
+            require(row["module"] in counts and set(row["axioms"]) <= {"propext", "Classical.choice", "Quot.sound"}, "declaration owner/axioms")
+            require(row["runtime_helper_owner_source_sha256"] == receipt["snapshot"]["sha256"][
+                row["module"].replace(".", "/") + ".lean"], "declaration owner-source hash")
+            counts[row["module"]] += 1
+            groups[row["module"]].append(row)
+        require(all(counts[row["module"]] == row["declarations"] for row in receipt["modules"]), "per-module declaration counts")
+        origin, commands = audit.origin(receipt["proof_validation_origin"])
+        require(origin["attempt_id"] == "math-trust:" + run.name, "attempt linkage")
+        published = audit.json(run / "cache-publication.json")
+        require(published["outcome"] == "passed" and published["origin_receipt"] == receipt["proof_validation_origin"], "cache publication did not pass")
+        fresh = counters["compiled"] + counters["audited_modules"]
+        fresh_keys = set()
+        for kind, fresh_count, cached_count in [
+                ("compilation", counters["compiled"], counters["compilation_cache_hits"]),
+                ("audit", counters["audited_modules"], counters["audit_cache_hits"])]:
+            records = receipt["module_validation"]
+            require(all(records[name]["module"] == name for name in order), "module identity label")
+            require(sum(records[name][kind]["execution"] == "fresh" for name in order) == fresh_count
+                    and sum(records[name][kind]["execution"] == "cached" for name in order) == cached_count,
+                    "execution counters differ from per-module records")
+            fresh_keys.update(records[name][kind]["cache_key"] for name in order
+                              if records[name][kind]["execution"] == "fresh")
+        require(len(commands) == fresh == len(published["published"])
+                and set(commands) == set(published["published"]) == fresh_keys, "published command coverage")
+        bound = origin["evidence"]["validation"]
+        require(canonical(bound["compiler_runtime_identity"]) == canonical(receipt["compiler_runtime_identity"])
+                and bound["compiler_runtime_sha256"] == receipt["compiler_runtime_sha256"],
+                "typed terminal origin runtime identity differs")
+        require(bound["results"] == receipt["results"], "terminal results differ")
+        normalized = json.loads(json.dumps(receipt["module_validation"]))
+        for record in normalized.values():
+            for kind in ("compilation", "audit"):
+                if record[kind]["execution"] == "fresh":
+                    require(record[kind].pop("origin_receipt") == receipt["proof_validation_origin"],
+                            "publication origin pointer differs")
+        require(bound["module_validation"] == normalized, "origin-bound module validation differs")
+        require(sha(aggregate(groups)) == origin["evidence"]["aggregate_census_sha256"],
+                "aggregate census not bound to terminal origin")
+        for key in stable_fields + ["incremental", "status", "module_validation"]:
+            if key == "module_validation":
+                continue  # publication adds top-level origin pointers after immutable finalization
+            require(bound[key] == receipt[key], "terminal origin validation differs: " + key)
+    origins = [audit.origin(receipt["proof_validation_origin"])[0] for receipt in receipts]
+    require(origins[0]["evidence"]["aggregate_census_sha256"] == origins[1]["evidence"]["aggregate_census_sha256"], "aggregate census differs")
+    require(origins[1]["evidence"]["commands"] == [], "warm published fresh commands")
+    require(len(warm["results"]) == n and {row["name"] for row in warm["results"]} == set(warm["module_order"])
+            and all(row["name"] in warm["module_order"]
+            and row["outcome"] == "passed" and row["exit_code"] == 0 and row["cache_hit"] is True
+            for row in warm["results"]), "warm results include fresh library execution")
+    engine_policy = {name: first["snapshot"]["sha256"][".noeaaeue/scripts/" + name]
+                     for name in ("incremental_lean.py", "cache_math.py", "monitor_math.py")}
+    families_checked = 0
+    warm_groups = {name: [row for row in warm["declarations"] if row["module"] == name]
+                   for name in warm["module_order"]}
+    for module in warm["module_order"]:
+        a, b = first["module_validation"][module], warm["module_validation"][module]
+        require(a["source_sha256"] == b["source_sha256"] == warm["snapshot"]["sha256"][module.replace(".", "/") + ".lean"], "module source identity")
+        require(b["audit"]["revalidated"] is True and a["audit"]["partition_sha256"] == b["audit"]["partition_sha256"], "audit partition mismatch")
+        for kind, namespace in [("compilation", "math-trust-compile-v1"), ("audit", "math-trust-audit-v1")]:
+            require(b[kind]["execution"] == "cached" and a[kind]["cache_key"] == b[kind]["cache_key"], "module cache identity")
+            key = b[kind]["cache_key"]
+            entry = Path(root) / ".noeaaeue/.local/incremental-lean" / namespace / key
+            metadata_raw = audit.read(entry / "metadata.json")
+            require(audit.read(entry / "metadata.sha256").decode().strip() == sha(metadata_raw), "metadata hash")
+            metadata = json.loads(metadata_raw, object_pairs_hook=unique)
+            require(metadata["schema"] == "verified-lean-command-v1" and metadata["key"] == key
+                    and sha(canonical({"schema": metadata["schema"], "implementation": engine_policy,
+                                       "material": metadata["key_material"]}) + b"\n") == key,
+                    "metadata key binding")
+            policy = metadata["key_material"]["policy"]
+            if kind == "audit":
+                policy = policy["compile_policy"]
+            require(policy["compiler_runtime_sha256"] == runtime_digest, "command runtime policy binding")
+            stdout, stderr = audit.read(entry / "stdout"), audit.read(entry / "stderr")
+            require(metadata["returncode"] == 0 and sha(stdout) == metadata["stdout_sha256"]
+                    and sha(stderr) == metadata["stderr_sha256"], "cached diagnostics")
+            if kind == "audit":
+                require(sha(stdout + stderr) == b["audit"]["partition_sha256"]
+                        and stdout == aggregate({module: warm_groups[module]}) and stderr == b"",
+                        "cached audit partition differs from actual terminal census")
+            provenance = metadata["provenance"]
+            require(b[kind]["origin"] == provenance, "warm recorded provenance differs")
+            _, command_index = audit.origin(provenance["origin_receipt"])
+            command = {"cache_key": key, "stdout_sha256": sha(stdout), "stderr_sha256": sha(stderr),
+                       "returncode": 0, "artifacts": metadata["artifacts"]}
+            require(command_index.get(key) == command, "genuine origin command membership")
+            for suffix in (".olean", ".olean.server", ".olean.private", ".ir.sig", ".ir"):
+                path = entry / ("object" + suffix)
+                identity = metadata["artifacts"].get(suffix)
+                if identity is None:
+                    require(not path.exists() and not path.is_symlink(), "unexpected artifact family member")
+                else:
+                    content = audit.read(path)
+                    require(identity == {"sha256": sha(content), "bytes": len(content)}, "artifact family mismatch")
+            families_checked += kind == "compilation"
+    manifest = [audit.inputs[key] for key in sorted(audit.inputs)]
+    for row in manifest:
+        audit.read(row["path"])
+    report = {"schema": "typed-runtime-bound-public-incremental-warm-pair-verification-v3", "outcome": "PASS",
+              "first_receipt": audit.inputs[str(runs[0] / "receipt.json")],
+              "warm_receipt": audit.inputs[str(runs[1] / "receipt.json")],
+              "compiler_runtime_sha256": runtime_digest, "runtime_object_count": len(runtime["objects"]),
+              "sources": n, "first_counters": first["incremental"], "warm_counters": warm["incremental"],
+              "declarations": first["declaration_count"], "artifact_families_checked": families_checked,
+              "genuine_origins_checked": len(audit.origins), "inputs_rechecked": len(manifest),
+              "input_manifest_sha256": sha(canonical(manifest)), "input_manifest": manifest,
+              "verifier_sha256": sha(Path(__file__).read_bytes()), "compiler_jobs_launched_by_verifier": 0,
+              "scope": "Actual paired public receipts and retained bytes; zero rebuilt library modules, not zero total native processes or fresh native census; mandatory controls remain separate."}
+    with Path(output).open("xb") as stream:
+        stream.write(json.dumps(report, sort_keys=True, indent=2).encode() + b"\n")
+    print(json.dumps({key: value for key, value in report.items() if key != "input_manifest"}, sort_keys=True))
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--first", required=True)
+    parser.add_argument("--warm", required=True)
+    parser.add_argument("--root", required=True)
+    parser.add_argument("--output", required=True)
+    options = parser.parse_args()
+    verify(options.first, options.warm, options.root, options.output)

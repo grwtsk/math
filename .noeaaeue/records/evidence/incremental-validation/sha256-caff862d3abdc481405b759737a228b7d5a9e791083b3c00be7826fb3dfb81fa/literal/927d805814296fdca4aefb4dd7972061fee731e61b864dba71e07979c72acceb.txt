@@ -1,0 +1,56 @@
+"""Reuse bounded guard fixtures with the actual DirectLookup driver; no Lean jobs."""
+from pathlib import Path
+import tempfile
+import unittest
+
+import test_third_cyclotomic_jacobi_replay_guards as shared
+
+
+class DirectLookupReplayGuards(shared.JacobiReplayGuards):
+    @classmethod
+    def setUpClass(cls):
+        cls.driver = shared.module('check_prefix_direct_lookup')
+        cls.guard = shared.module('check_math_trust')
+
+    def test_namespace_absence_and_symlink_receipt_guards(self):
+        name = '.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-direct-lookup-test.json'
+        with tempfile.TemporaryDirectory(prefix='direct-lookup-receipt-',
+                                          dir=shared.ROOT / '.noeaaeue/.local') as raw:
+            root = Path(raw)
+            path = self.driver.receipt_destination(root, name)
+            path.parent.mkdir(parents=True)
+            path.write_bytes(b'preserved receipt')
+            with self.assertRaises(RuntimeError):
+                self.driver.receipt_destination(root, name)
+            path.unlink()
+            path.symlink_to(root / 'absent')
+            with self.assertRaises(RuntimeError):
+                self.driver.receipt_destination(root, name)
+            path.unlink()
+            for bad in ('/absolute.json', '../escape.json',
+                        name.replace('direct-lookup-', 'reference-transport-'),
+                        name.replace('/evidence/', '//evidence/')):
+                with self.subTest(path=bad), self.assertRaises(RuntimeError):
+                    self.driver.receipt_destination(root, bad)
+            path.parent.rmdir()
+            path.parent.symlink_to(root)
+            with self.assertRaises(RuntimeError):
+                self.driver.receipt_destination(root, name)
+
+    def test_actual_missing_reference_oracle_contract(self):
+        expected = self.driver.NEGATIVE[0][1]
+        text = ('Bad.lean:12:2: error: Application type mismatch: The argument\n'
+                '  unused_slot_bound\nhas type\n  2 < initial.dictionary.length\n'
+                'but is expected to have type\n  (11, 2) ∈ initial.references\n'
+                'in application\n  transportSlotAt_eq_directLookup_of_reference root initial actions '
+                '(11, 2) unused_slot_bound\n')
+        self.driver.validate_intended_rejection(self.guard, 1, text, expected)
+        for changed in (text.replace('(11, 2) ∈', '(11, 0) ∈'),
+                        text.replace('2 <', '3 <'),
+                        text + 'Bad.lean:14:1: error(lean.unknownIdentifier): broken\n'):
+            with self.subTest(text=changed), self.assertRaises(RuntimeError):
+                self.driver.validate_intended_rejection(self.guard, 1, changed, expected)
+
+
+if __name__ == '__main__':
+    unittest.main()

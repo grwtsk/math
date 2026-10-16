@@ -1,0 +1,56 @@
+{
+  "active_contract": {
+    "bytes": 229243,
+    "path": "/Users/local/Desktop/math/.noeaaeue/bindings/moebius-current-inputs-current.json",
+    "sha256": "b4ea709d3636c3432cf954d2b684240b5639434fde1244eee2f10058e0a37d62"
+  },
+  "contract_activation_receipt": {
+    "bytes": 4855,
+    "path": "/Users/local/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/three-candidate-source-only-reconciliation-20261016T165941Z-00a42dcfd1a4/receipt.json",
+    "sha256": "ef46df69a1d95a87acac842da7699cbad4416b4a9758faa53e460892c318db57"
+  },
+  "contract_activation_wrapper": {
+    "bytes": 12405,
+    "path": "/Users/local/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/reconcile_three_candidate_inputs_source_only_20261016.py",
+    "sha256": "204550de842f630aa5260705b65963bcb7dff41c95a57be8acf647beb72634a6"
+  },
+  "expected_old_current_observation_sha256": "85f3536a338fbd358fb371e6be6153dc0c2de53daaa568d86b1350588e1894b3",
+  "extra_approved_metadata_changes": {},
+  "head": "d25ccee49a781e150e991f885cb00f8be8f6e453",
+  "metadata_activation_receipt": {
+    "bytes": 4855,
+    "path": "/Users/local/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/three-candidate-source-only-reconciliation-20261016T165941Z-00a42dcfd1a4/receipt.json",
+    "sha256": "ef46df69a1d95a87acac842da7699cbad4416b4a9758faa53e460892c318db57"
+  },
+  "new_contract_immutable": {
+    "bytes": 229243,
+    "path": "/Users/local/Desktop/math/.noeaaeue/bindings/moebius-current-inputs-observation-20261016T165943Z-531bc57865164cc5a9188ef2e9ed0db4.json",
+    "sha256": "b4ea709d3636c3432cf954d2b684240b5639434fde1244eee2f10058e0a37d62"
+  },
+  "new_observation_current": {
+    "bytes": 5026087,
+    "path": "/Users/local/Desktop/math/.noeaaeue/bindings/current-source-observations.json",
+    "sha256": "b7788ea609d810c4221cefb653e2ff0eb483f60034ff528edefdab9f220d59c3"
+  },
+  "new_observation_immutable": {
+    "bytes": 5026087,
+    "path": "/Users/local/Desktop/math/.noeaaeue/bindings/current-source-observations-observation-20261016T165941Z-00a42dcfd1a4.json",
+    "sha256": "b7788ea609d810c4221cefb653e2ff0eb483f60034ff528edefdab9f220d59c3"
+  },
+  "new_source_hashes": {
+    "GRWTSK/Combinatorics/FiniteVoting/QuorumMajority.lean": "93ed23cd6f113e4bb6f0ef5749cd9f33f1760e4e0abb75aff11e09789d2c88be",
+    "GRWTSK/Combinatorics/Sequences/FibonacciLayers.lean": "9a1521d73db0d390397e9a1a99d4aedf18e9c931c74e75f246b49910f38b113c",
+    "GRWTSK/Order/Interval/BoundedQuantizer.lean": "9d8435cfd3721d6632182082f65537164789dcd54257f91a2c557f991c7e1f0c"
+  },
+  "old_raw_observation_archive": {
+    "bytes": 5023469,
+    "path": "/Users/local/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/three-candidate-source-only-reconciliation-20261016T165941Z-00a42dcfd1a4/current-source-observations.before.json.txt",
+    "sha256": "85f3536a338fbd358fb371e6be6153dc0c2de53daaa568d86b1350588e1894b3"
+  },
+  "prior_contract_history": {
+    "bytes": 229243,
+    "path": "/Users/local/Desktop/math/.noeaaeue/bindings/moebius-current-inputs-history/prior-62a71043d8145e3fe2da8efc447c65f94015ee8649b5163ffae5f9f27b966ca2.json",
+    "sha256": "62a71043d8145e3fe2da8efc447c65f94015ee8649b5163ffae5f9f27b966ca2"
+  },
+  "schema": "887-metadata-public-readset-capture-tuple-v1"
+}

@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+    "-B",
+    ".noeaaeue/scripts/test_documentation_layout.py"
+  ],
+  "cwd": "/Users/local/Desktop/math",
+  "native_executor": "root only",
+  "source_before": {
+    "/Users/local/Desktop/math/.noeaaeue/scripts/test_documentation_layout.py": {
+      "bytes": 45210,
+      "path": "/Users/local/Desktop/math/.noeaaeue/scripts/test_documentation_layout.py",
+      "sha256": "d58d2d6b60f62130fa95a747bdeb24900abf129e51a61571cb448f44531017d1"
+    }
+  }
+}
