@@ -1,0 +1,41 @@
+{
+  "schema": "repository-agent-event-v1",
+  "at": "2026-10-16T05:43:18.925555+00:00",
+  "owner": "indexed_dictionary",
+  "task": "reference-transport-source-review",
+  "event": "read-only-mathematical-review-and-pending-documentation-candidate-recorded",
+  "review": {
+    "path": ".noeaaeue/cache/research/prefix-reference-transport-source-review-2026-10-15-87edd6ce1c3f44f986867dec13155fb7.json",
+    "sha256": "4e4d42cb771ef10f13e3e8df4a2e964e0e01b772914c4d9f3b1dabdd4f7f5ed3",
+    "bytes": 8131
+  },
+  "documentation_candidate": {
+    "path": ".noeaaeue/cache/research/prefix-reference-transport-documentation-candidate-2026-10-15-87edd6ce1c3f44f986867dec13155fb7.json",
+    "sha256": "14385fafbfbe99db69cde9c80293b8f13026d2c3e06a33a9f082abaa0994ea70",
+    "bytes": 11561
+  },
+  "source_bindings": [
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableReferenceTransport.lean",
+      "sha256": "2302b34fbc79f1030846c2d0aa2eca77ebcf724cad08b76975727557af660cf5",
+      "bytes": 10540,
+      "reviewed_snapshot": ".noeaaeue/.local/reference-transport-source-review/87edd6ce1c3f44f986867dec13155fb7/PrefixTableReferenceTransport.lean"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableReferenceTransport.lean",
+      "sha256": "31de9aff2b78391f72de8e8d06455318858185b798f8baabf7148a68c3b0e36e",
+      "bytes": 7766,
+      "reviewed_snapshot": ".noeaaeue/.local/reference-transport-source-review/87edd6ce1c3f44f986867dec13155fb7/PrefixTableReferenceTransport.lean"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixReferenceMissingSupport.lean",
+      "sha256": "a81f4b50114fcd35951a8ed8ee1ccf0a706bc26b3a73d6935d83f8867b826f2c",
+      "bytes": 530,
+      "reviewed_snapshot": ".noeaaeue/.local/reference-transport-source-review/87edd6ce1c3f44f986867dec13155fb7/PrefixReferenceMissingSupport.lean"
+    }
+  ],
+  "findings_summary": "No mathematical premise overclaim found; recommend distinct original-row order fixture. Prior schedule positive is a positive-only dependency requiring fresh closure/audit.",
+  "native_status": "NOT_RUN; exact receipt pending, no independent validation",
+  "writes_complete": true,
+  "no_further_writes": "No source/shared metadata/Git writes; root owns compiling and integration."
+}

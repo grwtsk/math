@@ -1,0 +1,34 @@
+{
+  "schema": "repository-agent-task-v1",
+  "id": "scheduled-original-reference-transport",
+  "owner": "root",
+  "status": "CLAIMED",
+  "at": "2026-10-16T05:35:44.084641+00:00",
+  "base_main": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+  "previous_frontier": {
+    "path": ".noeaaeue/cache/research/schedule-reduction-relocated-frontier-2026-10-15.json",
+    "sha256": "19dde4816877eaed80c0d6ba3db930d5351b0bbbb533d5b134f25ee6e79af81f",
+    "bytes": 10096
+  },
+  "workflow": {
+    "path": ".noeaaeue/documentation/current-validation-workflow.md",
+    "sha256": "a058aad62178eca8caa5fae1cffb80fcc016c151e22db2489f685e811a5fecdc",
+    "bytes": 6470
+  },
+  "checkpoint": {
+    "path": ".noeaaeue/binding-repair/validation-completion/summary.json",
+    "sha256": "36adb9eedcbbccce9e370c9da4db32df72b29311c9b46fbf49c2e6c0fc5a4643",
+    "bytes": 11613
+  },
+  "objective": "Derive actual cumulative partial remap transport for original real references under actual batches/compactions, preserving key, original dictionary payload, bounds and membership. No all-old-slot totality or dropped-payload revival.",
+  "write_paths": [
+    "GRWTSK/Combinatorics/DirectedGraph/PrefixTableReferenceTransport.lean",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableReferenceTransport.lean",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixReferenceMissingSupport.lean",
+    ".noeaaeue/scripts/check_prefix_reference_transport.py"
+  ],
+  "integration_owner": "root for own bounded selected batch; shared current bindings/entrypoint/registries are left for an agreed quiet checkpoint",
+  "native_policy": "Shared lock; trust0,fatalwarnings,complete selected local dependency closure and positive-owned audit; zero helper exemptions. No shared guard/protocol edits.",
+  "source_taxonomy": "existing Combinatorics/DirectedGraph only",
+  "remote_actions": []
+}

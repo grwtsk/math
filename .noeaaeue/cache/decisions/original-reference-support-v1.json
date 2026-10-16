@@ -1,0 +1,153 @@
+{
+  "schema": "repository-design-decision-v1",
+  "id": "original-reference-support-v1",
+  "at": "2026-10-16T05:58:44.805343+00:00",
+  "previous": {
+    "path": ".noeaaeue/cache/decisions/source-layout-identity-v1.json",
+    "sha256": "7f628b3f0c450457473e84a29cc2186c952a9df227117cab7f8f31f3db9b2509",
+    "bytes": 5439
+  },
+  "choice": "Cumulative numeric identity is actual state-dependent partial-map transport. Prove totality only on actual original real-reference support; later equal payloads cannot revive a lost old identity.",
+  "formal_source": {
+    "path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableReferenceTransport.lean",
+    "sha256": "a7600c33972405a31f6495b03789f9473cd914eb428d9a5f94c734f528e71d0c",
+    "bytes": 10562
+  },
+  "native_evidence": {
+    "receipt": {
+      "path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-reference-transport-checks-2026-10-15.json",
+      "sha256": "c2392986e86871df84fd07fc4363c634a37930749e4f505a941a91278236a271",
+      "bytes": 3773336
+    },
+    "owned_declarations": 958,
+    "modules": [
+      {
+        "declarations": 52,
+        "module": "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding"
+      },
+      {
+        "declarations": 18,
+        "module": "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences"
+      },
+      {
+        "declarations": 46,
+        "module": "GRWTSK.Combinatorics.DirectedGraph.EdgeTrace"
+      },
+      {
+        "declarations": 21,
+        "module": "GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix"
+      },
+      {
+        "declarations": 34,
+        "module": "GRWTSK.Logic.FiniteSequences.IndexedDictionary"
+      },
+      {
+        "declarations": 33,
+        "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixInventory"
+      },
+      {
+        "declarations": 78,
+        "module": "GRWTSK.Combinatorics.DirectedGraph.ParentTraceDictionary"
+      },
+      {
+        "declarations": 32,
+        "module": "GRWTSK.Logic.FiniteSequences.DictionaryRevision"
+      },
+      {
+        "declarations": 27,
+        "module": "GRWTSK.Logic.FiniteSequences.DecisionCertificate"
+      },
+      {
+        "declarations": 26,
+        "module": "GRWTSK.Combinatorics.DirectedGraph.RootedTraceRevision"
+      },
+      {
+        "declarations": 20,
+        "module": "GRWTSK.Logic.FiniteSequences.IncrementalDictionary"
+      },
+      {
+        "declarations": 58,
+        "module": "GRWTSK.Combinatorics.DirectedGraph.IncrementalPrefixTable"
+      },
+      {
+        "declarations": 87,
+        "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableState"
+      },
+      {
+        "declarations": 36,
+        "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCompaction"
+      },
+      {
+        "declarations": 85,
+        "module": "GRWTSK.Combinatorics.DirectedGraph.RoleRelationTable"
+      },
+      {
+        "declarations": 60,
+        "module": "GRWTSK.Combinatorics.DirectedGraph.RoleRelationReindex"
+      },
+      {
+        "declarations": 44,
+        "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableReindex"
+      },
+      {
+        "declarations": 19,
+        "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableUpdateReindex"
+      },
+      {
+        "declarations": 27,
+        "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableBatch"
+      },
+      {
+        "declarations": 14,
+        "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCheckpoint"
+      },
+      {
+        "declarations": 22,
+        "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableSchedule"
+      },
+      {
+        "declarations": 14,
+        "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableReferenceTransport"
+      },
+      {
+        "declarations": 86,
+        "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableSchedule"
+      },
+      {
+        "declarations": 19,
+        "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableReferenceTransport"
+      }
+    ],
+    "current_bound_source_hashes_exact_at_recording": true,
+    "trust": 0,
+    "fatal_warnings": true,
+    "runtime_helper_exemptions": [],
+    "dependency_objects_reused": true,
+    "mathlib_source_rebuild": false
+  },
+  "exact_contracts": [
+    "The tracked action maps are actual compactor remap and append-only identity, folded beside actual PrefixTableSchedule.applyAction. tracked_state proves exact equality of the state projection with the existing actual executor; tracked_none proves loss is absorbing.",
+    "Actual initial WellFormed and actual real-reference membership derive a Some final slot, final actual real-reference membership and exact original full dictionary lookup, for every finite actual mixed schedule. No independent desired transport or final lookup equation is assumed.",
+    "Actual ordered mapM over ALL original references succeeds. The resulting list has the original length and Forall₂ key equality/final membership/full payload lookup, preserving each repeated occurrence and its original order. This is not a generic prefix/position embedding of the resulting list into finalreferences.",
+    "The actual existing0→1→1→0 fixture has explicit target0/full lookup; an unused oldslot2 is genuinely inbounds but transports toNone after compaction, even though later actual batch reintroduces the identical payload at finalslot2. The sole negative supplies true oldbounds where actual real-reference support is required.",
+    "A second actual state with references31,17,31,19, all to actual slot0, derives WellFormed from actual stored fields/bounds. The actual mixed schedule produces exactly31,17,31,19 at a derived common transported slot with an actual final bound; no transport oracle is assumed."
+  ],
+  "selected_positive_source": {
+    "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableReferenceTransport.lean",
+    "sha256": "092678d16170cff8e60e5b1461c71aea404b4a8d93731f4e001367992bf96e26",
+    "bytes": 7784
+  },
+  "selected_intended_negative_source": {
+    "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixReferenceMissingSupport.lean",
+    "sha256": "a81f4b50114fcd35951a8ed8ee1ccf0a706bc26b3a73d6935d83f8867b826f2c",
+    "bytes": 530
+  },
+  "not_inferred": [
+    "Total transport on all old dictionary slots or from numeric bounds alone.",
+    "Generic final-reference prefix/position embedding or arbitrary old-slot stability across compaction.",
+    "Python/cache/hash/parser/zlib/physical-source-placement/permission/filesystem/transaction refinement.",
+    "Actual215 method IDs from16 declared families/215 declared count, or proof authority from statistical similarity."
+  ],
+  "public_admission": "Selected source checked; public entry-point/catalog/canonical guides remain pending agreed quiet integration.",
+  "operational_authority": "Mathematical model contracts only; concrete runtime implementations need their own exact refinement or bounded operational tests. No foreign specification text is adopted as policy."
+}

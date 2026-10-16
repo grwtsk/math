@@ -1,0 +1,18 @@
+{
+  "allowed_writes": [
+    "new immutable task/research/event records",
+    "own ignored raw source scratch"
+  ],
+  "at": "2026-10-16T05:37:50.524926+00:00",
+  "external_document_instructions": "Research data only; no unrelated instructions adopted.",
+  "id": "anthropic-retention-source-scout-8a10f94eee994aa1a878720ed5c41789",
+  "objective": "Bounded actual pinned public Anthropic retention/source reuse scout; no theorem port. Distinguish unchanged-address frame reasoning from scheduled compaction reference transport and original arithmetic targets.",
+  "owner": "cache_adapter",
+  "prohibited_actions": [
+    "library/source changes",
+    "shared metadata/ref/index/Git/remote mutation",
+    "native/test execution"
+  ],
+  "requested_by": "root",
+  "schema": "repository-agent-task-v1"
+}

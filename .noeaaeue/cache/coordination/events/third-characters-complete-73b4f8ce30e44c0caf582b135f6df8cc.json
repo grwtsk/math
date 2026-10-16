@@ -1,0 +1,207 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "third-cyclotomic-characters-formal",
+  "owner": "cache_taxonomy",
+  "at": "2026-10-16T05:44:19.721682+00:00",
+  "event": "actual-character-construction-frozen-development-complete",
+  "source_files": [
+    {
+      "path": "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicCharacters.lean",
+      "sha256": "c595e55f46838683758ea9c66379968ac75a6f86ddfb5dc099c302f9d497a051",
+      "bytes": 9264
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Positive/ThirdCyclotomicCharacters.lean",
+      "sha256": "4832da80997b32be46ceb8ba498e86bb873a7e6111d9f2e70ee137211f0c4eb0",
+      "bytes": 3936
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Negative/ThirdCyclotomicCharacterZeroCube.lean",
+      "sha256": "7e423a5a2cb5a9f6c78740f357fc1a41b832c01545e4a6e87ada20f8ccfb8242",
+      "bytes": 796
+    },
+    {
+      "path": ".noeaaeue/scripts/check_third_cyclotomic_characters.py",
+      "sha256": "c0c12ef5c17a7c5e9c1c894e48189b642b816be03e99070daae23739da85e2f4",
+      "bytes": 13434
+    }
+  ],
+  "development_receipt": {
+    "path": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-characters-development-checks-2026-10-15-a7b1f5cb.json",
+    "sha256": "528b3c85272c20e55ae66668fd942bde430b10635bc68b44c304b3796a10f286",
+    "bytes": 4928030
+  },
+  "native_development": {
+    "outcome": "passed",
+    "trust": 0,
+    "fatal_warnings": true,
+    "owned_total": 92,
+    "module_counts": {
+      "GRWTSK.NumberTheory.Ideal.CompactNormSupport": 3,
+      "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicIdeals": 13,
+      "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicReduction": 28,
+      "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicCharacters": 35,
+      "GRWTSK.NumberTheory.Cyclotomic.Checks.Positive.ThirdCyclotomicCharacters": 13
+    },
+    "all_owned_mathematical": true,
+    "allowed_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "runtime_helper_exemptions": [],
+    "sole_intended_negative": {
+      "path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Negative/ThirdCyclotomicCharacterZeroCube.lean",
+      "argv": [
+        "/Users/local/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "-j1",
+        "--trust=0",
+        "--memory=4096",
+        "-DwarningAsError=true",
+        "--root=/Users/local/Desktop/math/.noeaaeue/.local/third-cyclotomic-characters-replay/replay-9siq5xbj/source",
+        "/Users/local/Desktop/math/.noeaaeue/.local/third-cyclotomic-characters-replay/replay-9siq5xbj/source/GRWTSK/NumberTheory/Cyclotomic/Checks/Negative/ThirdCyclotomicCharacterZeroCube.lean"
+      ],
+      "exit_code": 1,
+      "seconds": 1.7346369170118123,
+      "output_sha256": "57941d25747e8513ef5a08ade12cbaf2b793656b9a4dc6d8ff68ea4c5585a12a",
+      "expected_rejection": true
+    },
+    "root_fresh_acceptance": "PENDING_ROOT; development result not an independent review/whole-library admission."
+  },
+  "primary_source": {
+    "repository": "openai/math",
+    "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+    "path": "lean/OAI/NumberTheory/DirichletL/GaussSum/FiniteFourier.lean",
+    "sha256": "0e8e4184de91161a75802e3a26abfd19a322dffa6441968bf9caeb25800b5d7c",
+    "git_blob": "06304e1efc036727b3fa27e37dd6a06ce0bf5e56",
+    "adapted_lines": "377-402,429-477,553-654; actual O/P specialization",
+    "license": "Apache-2.0",
+    "credit": "OpenAI project author; no individual selected-file header author invented."
+  },
+  "mathlib_suppliers": [
+    {
+      "path": "Mathlib/NumberTheory/MulChar/Basic.lean",
+      "pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "sha256": "67fcb540ce7bc5fd9bfafe1b6fc92ee5e4c6c96404e7baf9edbe1a24b030b9be",
+      "git_blob": "dc3c465d304326784909c686d278edfa30a75385",
+      "bytes": 24092,
+      "license": "Apache-2.0",
+      "header": [
+        "/-",
+        "Copyright (c) 2022 Michael Stoll. All rights reserved.",
+        "Released under Apache 2.0 license as described in the file LICENSE.",
+        "Authors: Michael Stoll",
+        "-/"
+      ]
+    },
+    {
+      "path": "Mathlib/RingTheory/RootsOfUnity/Basic.lean",
+      "pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "sha256": "6c5e4fe6b0390435bdb3d54eda8cc33eaff1505ebcc8794afbbe512f688ef2c0",
+      "git_blob": "73a14ab422640dc6578b850e6683433319859d2c",
+      "bytes": 13295,
+      "license": "Apache-2.0",
+      "header": [
+        "/-",
+        "Copyright (c) 2020 Johan Commelin. All rights reserved.",
+        "Released under Apache 2.0 license as described in the file LICENSE.",
+        "Authors: Johan Commelin",
+        "-/"
+      ]
+    },
+    {
+      "path": "Mathlib/FieldTheory/Finite/Basic.lean",
+      "pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "sha256": "536872e588f1ed90ea0bc359ae5997a84e777eff71c5bdf04517156b5861628f",
+      "git_blob": "b05c1f86b3d8c4f9d7fbbe93d1dd0992fd1ad937",
+      "bytes": 36222,
+      "license": "Apache-2.0",
+      "header": [
+        "/-",
+        "Copyright (c) 2018 Chris Hughes. All rights reserved.",
+        "Released under Apache 2.0 license as described in the file LICENSE.",
+        "Authors: Chris Hughes, Joey van Langen, Casper Putz",
+        "-/"
+      ]
+    },
+    {
+      "path": "Mathlib/NumberTheory/NumberField/Ideal/Basic.lean",
+      "pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "sha256": "4cdfc8641a871a85e46b31fdf85768a3fa521ee163a434c2f585a0b9671ed34b",
+      "git_blob": "f7da87a7b6c8eb89a924e12b00fe64b25b4f8e45",
+      "bytes": 5170,
+      "license": "Apache-2.0",
+      "header": [
+        "/-",
+        "Copyright (c) 2025 Xavier Roblot. All rights reserved.",
+        "Released under Apache 2.0 license as described in the file LICENSE.",
+        "Authors: Xavier Roblot",
+        "-/"
+      ]
+    }
+  ],
+  "exact_contracts": [
+    "Actual fixed O=RingOfIntegers(CyclotomicField3Q), actual source omega/lambda inherited from accepted reduction. For actual maximalP ANDlambda∉P, prove actual restrictRootsOfUnity quotient map surjective and construct actual restricted multiplicative equivalence by actual primitive-root counts; no whole-ring equivalence or root-inverse oracle.",
+    "Derive actual3 divides card(O/P)-1 and strictlypositive cubicExponent=(Nat.card(O/P)-1)/3. Actual quotientFinite instance comes from pinned NumberField/Ideal/Basic maximal-quotient instance, not an assumption.",
+    "Construct actual Euler unit exponent hom into quotient cube roots, inverse through proved restrictedRootsEquiv and subtype to O.units, then actual MulChar.ofUnitHom zero extension. Public cubicChar has actual reduction for ALLx, positive-exponent zero branch, power3=trivialCHARACTER, nontriviality and order3. No assumed desired character/equations."
+  ],
+  "controls": [
+    "Actual roots inverse/uniqueness through quotient map, χ0=0/χ1=1 and actual cube1 on units; trivialcharacter0=0 and actualχ0³≠1. Thus power3=1 must stay character equality.",
+    "Actual exists_good_maximal_above_two supplies nonvacuous actual P/character with0/1 values/nontrivial/order3; no arbitrary good-prime fixture.",
+    "Actual ramified ideal has quotientcard3 and exponent0. Proved no ANY MulChar in that actual quotient can satisfy proposed ALLx reduction formula, since at0 it forces0=0^0=1. No claim every weaker residue-character statement fails.",
+    "Sole negative attempts pointwiseχ0³=1 using actual character-power theorem; positive source proves actual contrary fact before rejected type mismatch."
+  ],
+  "limits": [
+    "This closes actual cubic-character unit-extension/reduction/order prerequisite only. Actual Jacobi_sum primary/generates_prime/three-part normalized generator, sextic/trace Gauss coefficients, ideal weights/corrections/common support ALLt/infinite reassembly/RH remain OPEN.",
+    "Reuse Mathlib existing restriction/finite-field/character APIs and OpenAI source argument; no generic API originality, independent review or operational Lean/Python/JSON/hash/path/refinement authority.",
+    "No shared source/catalog/entrypoint/registry/guard/protocol/docs edits; root owns integration checkpoint and any Git/remote actions."
+  ],
+  "layout": {
+    "outcome": "FAIL_PENDING_INTEGRATION",
+    "log": {
+      "path": ".noeaaeue/.local/third-cyclotomic-characters/1662033b4597440dbe1f33861d76d327/layout.log",
+      "sha256": "88c7fa83670e9f05ba032513919b45fb6bf7ab7841f163bb237eb1576f2af6ea",
+      "bytes": 28635
+    },
+    "observed_modules": 447,
+    "global_findings": 199,
+    "own_findings": "Four pending catalog/public-closure registrations; no own naming/path violation observed. Shared baseline/intake/tree-policy/hash drift preserved; root owns final updated checks."
+  },
+  "preserved_failed_receipts": [
+    {
+      "path": ".noeaaeue/.local/third-cyclotomic-characters-replay/replay-3c12dgsm/receipt.json",
+      "sha256": "5111f859a08c75fe642bd226d179e46ee9f1be2bc3e4c06e1aedbd789c3a2e2b",
+      "bytes": 11397
+    },
+    {
+      "path": ".noeaaeue/.local/third-cyclotomic-characters-replay/replay-3hiu9jf2/receipt.json",
+      "sha256": "b4b9f47cd13c189b15c0c0d7d0cdfa1cb24320d9ccf60c34854d3588b2dee790",
+      "bytes": 12960
+    }
+  ],
+  "busy_deferrals": [
+    ".noeaaeue/cache/coordination/events/third-characters-native-busy-f2423a39d5b8481dbd22f85c0163a052.json",
+    ".noeaaeue/cache/coordination/events/third-characters-lock-deferred-965e812794f04a61bbcc5fb40ad05f30.json"
+  ],
+  "owned_native_children_exited": true,
+  "shared_flock_released": true,
+  "native_lane": "EXPLICITLY_RELEASED_TO_ROOT; no more compiler jobs/source or driver edits planned.",
+  "source_whitespace": {
+    "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicCharacters.lean": {
+      "tabs": 0,
+      "trailing_whitespace_lines": 0
+    },
+    "GRWTSK/NumberTheory/Cyclotomic/Checks/Positive/ThirdCyclotomicCharacters.lean": {
+      "tabs": 0,
+      "trailing_whitespace_lines": 0
+    },
+    "GRWTSK/NumberTheory/Cyclotomic/Checks/Negative/ThirdCyclotomicCharacterZeroCube.lean": {
+      "tabs": 0,
+      "trailing_whitespace_lines": 0
+    },
+    ".noeaaeue/scripts/check_third_cyclotomic_characters.py": {
+      "tabs": 0,
+      "trailing_whitespace_lines": 0
+    }
+  }
+}

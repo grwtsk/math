@@ -1,0 +1,402 @@
+{
+  "schema": "scoped-local-commit-readset-v1",
+  "at": "2026-10-16T06:01:10.330344+00:00",
+  "head_before": "442042b1ab7e0669bb733db89f0695cdb4505c67",
+  "branch": "main",
+  "artifacts": [
+    {
+      "path": ".noeaaeue/cache/coordination/continuations/2026-10-15-reference-characters.json",
+      "sha256": "50a41db50bc600101554a5579e41853b36a2a30177ea29e4eb9d0210873dfdbd",
+      "bytes": 1784
+    },
+    {
+      "path": ".noeaaeue/cache/coordination/events/20261016T053904Z-arxiv-cubic-source-scout-0bb4084d20054184b0b8bc26e6c40b75.json",
+      "sha256": "03f3bec07300322337f10e6fcf8a4245ed0fcfd82ea1fcacf2a9ffb9cbe671c7",
+      "bytes": 1811
+    },
+    {
+      "path": ".noeaaeue/cache/coordination/events/20261016T054318Z-reference-transport-review-87edd6ce1c3f44f986867dec13155fb7.json",
+      "sha256": "bc717d34fca7932db07a853248a456d17691a088235aeaf55970e711d887319e",
+      "bytes": 2307
+    },
+    {
+      "path": ".noeaaeue/cache/coordination/events/20261016T054433Z-reference-transport-review-r2-8d4bee60cd3e4252ac77146e6d665545.json",
+      "sha256": "62bb04b8e2565ec4d9764a4d8a430356509988f92801d6ec7f05fc139989e548",
+      "bytes": 3633
+    },
+    {
+      "path": ".noeaaeue/cache/coordination/events/20261016T055349Z-reference-character-integration-queued-4ea0a99660684f5abd69834e9b553643.json",
+      "sha256": "51c7ca70f45f2abfb729af15412c2d610d618da1c0c2f207c5dd3d5cb137cff5",
+      "bytes": 2361
+    },
+    {
+      "path": ".noeaaeue/cache/coordination/events/anthropic-retention-source-scout-8975fbaf32f94bfaaf04349e51851263.json",
+      "sha256": "80cca29f1bb2a0dd7207f81fc31e4ddea99f394aa733c23f7eef7ec94ca1fb93",
+      "bytes": 1075
+    },
+    {
+      "path": ".noeaaeue/cache/coordination/events/reference-characters-selected-complete-2026-10-15.json",
+      "sha256": "7f2dc8c1240cad34913bc35f6c6cd7954cb96fb6f610bb9a3772d6a87aab37f7",
+      "bytes": 969
+    },
+    {
+      "path": ".noeaaeue/cache/coordination/events/third-characters-complete-73b4f8ce30e44c0caf582b135f6df8cc.json",
+      "sha256": "ac884a50d0a3d4a09dc6ccb521011df2ebebe4bcf0f6a4f1ca174b7a2b04a13d",
+      "bytes": 10179
+    },
+    {
+      "path": ".noeaaeue/cache/coordination/events/third-characters-draft-ed3acda4e02346838990f7a6cdd4430f.json",
+      "sha256": "fb1c63d5ea2de85db72f57738602b52d29976ccd3a94f09ecc5bc569389caaed",
+      "bytes": 2064
+    },
+    {
+      "path": ".noeaaeue/cache/coordination/events/third-characters-lock-deferred-965e812794f04a61bbcc5fb40ad05f30.json",
+      "sha256": "c5be42979482fd3c39486e8d98c4eb558f2242d7ef5590aa985ab40571002865",
+      "bytes": 748
+    },
+    {
+      "path": ".noeaaeue/cache/coordination/events/third-characters-native-busy-f2423a39d5b8481dbd22f85c0163a052.json",
+      "sha256": "a32c9ac694ebca9a9a70f4c3f7401b99fd4a48ea8a8fc2ec56f596db73d61e95",
+      "bytes": 986
+    },
+    {
+      "path": ".noeaaeue/cache/coordination/tasks/anthropic-retention-source-scout-8a10f94eee994aa1a878720ed5c41789.json",
+      "sha256": "141c714084bab4b743b3636cdc2c73f5b2ce216ad544ecccf4f43627c97cb981",
+      "bytes": 796
+    },
+    {
+      "path": ".noeaaeue/cache/coordination/tasks/arxiv-cubic-source-scout-2026-10-15-0bb4084d20054184b0b8bc26e6c40b75.json",
+      "sha256": "a0e299ca882062d7924fe576ea38b33cec9d7eb6998b62f40a2bb5511a09ead2",
+      "bytes": 739
+    },
+    {
+      "path": ".noeaaeue/cache/coordination/tasks/reference-character-quiet-integration-request-2026-10-15-4ea0a99660684f5abd69834e9b553643.json",
+      "sha256": "d72b4b1baf7f76c7724164de4597146a48eb9dc9137f663d71d2b5c0e5da6398",
+      "bytes": 67882
+    },
+    {
+      "path": ".noeaaeue/cache/coordination/tasks/scheduled-original-reference-transport.json",
+      "sha256": "d1b889996c6a73b62de80e21a4d56847e2a3c77c176c70bba0827e8ecd5c6d0b",
+      "bytes": 1871
+    },
+    {
+      "path": ".noeaaeue/cache/decisions/original-reference-support-v1.json",
+      "sha256": "481f6b7d8fcee77e165f8ebd4e2b3c5ee6006539c5ac828574244249c178b84f",
+      "bytes": 6981
+    },
+    {
+      "path": ".noeaaeue/cache/objects/09/092678d16170cff8e60e5b1461c71aea404b4a8d93731f4e001367992bf96e26.zlib",
+      "sha256": "f6664893057edd107636b648356b3ffd54a377dbe433be1f90f3ddcb6e6fdf6a",
+      "bytes": 2235
+    },
+    {
+      "path": ".noeaaeue/cache/objects/09/09b9f41599d079ebc2c96a212616cf9db178013a3faf7c61a0f81c686614d95d.zlib",
+      "sha256": "96217e8193e203e2c74f09fe6921dd6a66158d717ae48d1de391ccfe11a8f1a2",
+      "bytes": 4315
+    },
+    {
+      "path": ".noeaaeue/cache/objects/23/2302b34fbc79f1030846c2d0aa2eca77ebcf724cad08b76975727557af660cf5.zlib",
+      "sha256": "ed115fa6c46fa5bf233896e537711af65713b77e348c25e6b1cff3ad360225c9",
+      "bytes": 2918
+    },
+    {
+      "path": ".noeaaeue/cache/objects/25/25f77a40668e5dcba21788b9cfc8d07d94929420c001a6c5692e2c0c371d2856.zlib",
+      "sha256": "2040113c6b49118d22d84f7eb29b634c647404e5ae7fdbe2c4dc4ee0622681c8",
+      "bytes": 2986
+    },
+    {
+      "path": ".noeaaeue/cache/objects/28/2885f984f7b7e9d40db78b082087af9808a87140b90876b114533743306b9e64.zlib",
+      "sha256": "f8b5b9e641c49c90f40a883d27f21be7faeaec3965f44400336a70034aa31212",
+      "bytes": 42
+    },
+    {
+      "path": ".noeaaeue/cache/objects/2c/2c608ba97e0f49ffb90b55a5809e18163d4d2321bd13d254061e7f45c9569b52.zlib",
+      "sha256": "9900024b6d787873acf0a0c1a1b05a05261b3e8f1b4f2ff345fcec09b973a6aa",
+      "bytes": 4569
+    },
+    {
+      "path": ".noeaaeue/cache/objects/31/31de9aff2b78391f72de8e8d06455318858185b798f8baabf7148a68c3b0e36e.zlib",
+      "sha256": "7ddc4fde02e156892acfb9dd62cbdb14b01af8053be24cba0e9f6e3d7dafdce4",
+      "bytes": 2222
+    },
+    {
+      "path": ".noeaaeue/cache/objects/36/36aa95d22fbc1b5eb8999a9778059dfd192a6dc6118f1f0deea307410527fa1a.zlib",
+      "sha256": "b0380b70a68cfbab939160ea411557d26ec795642f9b3b741a46f01081630b34",
+      "bytes": 5793
+    },
+    {
+      "path": ".noeaaeue/cache/objects/42/42968a4b945c9d840d96776a39b265564561f4fa16d5043765bd01bd5311e17e.zlib",
+      "sha256": "37fdb162d3ffb675d51498dc66e06c134ad09014768be2039bff7695ed738008",
+      "bytes": 5393
+    },
+    {
+      "path": ".noeaaeue/cache/objects/48/4832da80997b32be46ceb8ba498e86bb873a7e6111d9f2e70ee137211f0c4eb0.zlib",
+      "sha256": "d37b3ecdb404d25c401ae2e48d68bd557a766c391a6b3963a5e29ff7ab4200e4",
+      "bytes": 1312
+    },
+    {
+      "path": ".noeaaeue/cache/objects/4e/4e59ced07efc30b3f31b75fea6639c12b6ab4122ac70c95808e29f1712550fa1.zlib",
+      "sha256": "35d6e1318c6c311e0ac2a287e2cd3c537fe855324b17d3faa8fd64ae58a809e7",
+      "bytes": 45
+    },
+    {
+      "path": ".noeaaeue/cache/objects/51/5111f859a08c75fe642bd226d179e46ee9f1be2bc3e4c06e1aedbd789c3a2e2b.zlib",
+      "sha256": "b820d3af95eefac2199b05e681b673ea64490fa30911efdf0123bc7ffa90ef05",
+      "bytes": 3066
+    },
+    {
+      "path": ".noeaaeue/cache/objects/56/56b62242a080f7327bd1a3eac1f234fa0d68a22dc68151693793b35c30e6f114.zlib",
+      "sha256": "c610b7c07d1ccb5beaf9d9005a8a834fc5e750dae12177079dd73800838f208e",
+      "bytes": 4854
+    },
+    {
+      "path": ".noeaaeue/cache/objects/57/57941d25747e8513ef5a08ade12cbaf2b793656b9a4dc6d8ff68ea4c5585a12a.zlib",
+      "sha256": "7849c4be9358ba79c40d74653ff18144339196cd6250eb32218e44eb65cf676c",
+      "bytes": 233
+    },
+    {
+      "path": ".noeaaeue/cache/objects/5e/5eaf8e3c944205a527c387d183effada246ea9f837f93b0f2e6a8966f3915840.zlib",
+      "sha256": "9bbb26f69a22e5e9140fe939f092229f5f37a22687dee3df8d46688977c99df4",
+      "bytes": 2690
+    },
+    {
+      "path": ".noeaaeue/cache/objects/63/63868afa743ec95d7a550300eee2170a76a92febcb0fd7b664fa01782e4c3a3e.zlib",
+      "sha256": "4f7dc095397fe4d346bdeb0c89999065192fafcbb9ad41126200741b4ce0db6b",
+      "bytes": 354
+    },
+    {
+      "path": ".noeaaeue/cache/objects/65/6580cdffbae383915947d04cb91688908d49d84a8792ad17931c0474f46f31d6.zlib",
+      "sha256": "daab9813f0765d50f76b855161237be64a9962b118a40d23602ce9a132e569a2",
+      "bytes": 206
+    },
+    {
+      "path": ".noeaaeue/cache/objects/67/67145d6e1203ff813bcd0d1a1736389a82cb556c379c003f4127770f2db73e2a.zlib",
+      "sha256": "aeb4d98f6a8414f140dffb71ba05c25fca96966858cb1eabf31a2731f8321afa",
+      "bytes": 42
+    },
+    {
+      "path": ".noeaaeue/cache/objects/67/67d712d4fb9f67c338e7a883e4686eedc03e35e671ce47cef39db518b03cc862.zlib",
+      "sha256": "fbfafad4491bd5a688f3d9cd5132d98c337f3e83bd161985ef8a58e97d68e1ee",
+      "bytes": 2233
+    },
+    {
+      "path": ".noeaaeue/cache/objects/7e/7e423a5a2cb5a9f6c78740f357fc1a41b832c01545e4a6e87ada20f8ccfb8242.zlib",
+      "sha256": "1c1840cd2c0a0b558e2fa01bb2a310228b4e4a253deafc54af135eb23e68a1fd",
+      "bytes": 398
+    },
+    {
+      "path": ".noeaaeue/cache/objects/83/83ef015656e7dad330f4a0a30f36ee840d7496b3b06ca9d3803c3bc37d81caff.zlib",
+      "sha256": "3d3566e824d6689728d4d6ef2b9b68c342c9e5265aabd21c678742061172798e",
+      "bytes": 636
+    },
+    {
+      "path": ".noeaaeue/cache/objects/94/94d42608e33f56232fde7c828b00e4036c5e764af2a867abdb8341b9a18a2774.zlib",
+      "sha256": "fdc3684776ca33a3f0c7c10fd4fd58d0f14a88f281a2d952951bf1e62c9091c6",
+      "bytes": 342
+    },
+    {
+      "path": ".noeaaeue/cache/objects/9b/9bf6c6766b1177c9778889df1edc3361f6e820e153b00574d25fe8d5245cc9ab.zlib",
+      "sha256": "aaabbfa1502e77d484b0bd4d8164f74ab887d141ff65681e0bf6c8988cef7a18",
+      "bytes": 534
+    },
+    {
+      "path": ".noeaaeue/cache/objects/a7/a7600c33972405a31f6495b03789f9473cd914eb428d9a5f94c734f528e71d0c.zlib",
+      "sha256": "261be037ccb0d1f56d5ab1fd12924ce7997eb8a11e63088b7e827d4e04cf146a",
+      "bytes": 2927
+    },
+    {
+      "path": ".noeaaeue/cache/objects/a8/a81f4b50114fcd35951a8ed8ee1ccf0a706bc26b3a73d6935d83f8867b826f2c.zlib",
+      "sha256": "ac685aec4517c6b62cc59952f92e2d2cc7f5273b82bc59ccf4bf061da60bf63e",
+      "bytes": 302
+    },
+    {
+      "path": ".noeaaeue/cache/objects/aa/aa003bb208c5131a0e82a8585f6099e09e12d0b5acaef0a007b80203de58ddc2.zlib",
+      "sha256": "d8396a11739450762a5e00ca13138c836e26aa0ae91fc66176d66166857a742c",
+      "bytes": 45
+    },
+    {
+      "path": ".noeaaeue/cache/objects/aa/aadf97c1ad76dec138f3bcb0ab6817121359787e7d38955144f6a0a84340a87f.zlib",
+      "sha256": "e111e9053706c485d066f7e79328fd55241199059bbb08887d03d7ba62843c9b",
+      "bytes": 65926
+    },
+    {
+      "path": ".noeaaeue/cache/objects/b2/b21059eb01eb252de8aba7060f4ee08999e4a554a86d2ed78f2e2ec20d19c9c2.zlib",
+      "sha256": "d03060ab9873f92c892f50e2b0d8e1a65bab2a8f3a4f27c3a61871d9b0ae954f",
+      "bytes": 873
+    },
+    {
+      "path": ".noeaaeue/cache/objects/b4/b4b9f47cd13c189b15c0c0d7d0cdfa1cb24320d9ccf60c34854d3588b2dee790.zlib",
+      "sha256": "10407b522071eb597c49b8c84214013bf377266690ea97be22cab62c38f0d704",
+      "bytes": 3165
+    },
+    {
+      "path": ".noeaaeue/cache/objects/c0/c0c12ef5c17a7c5e9c1c894e48189b642b816be03e99070daae23739da85e2f4.zlib",
+      "sha256": "462b0a0dbd614817efb6f1a37b8a11ed7cc6b367ab7e47e72f51807d1bc51864",
+      "bytes": 4551
+    },
+    {
+      "path": ".noeaaeue/cache/objects/c5/c595e55f46838683758ea9c66379968ac75a6f86ddfb5dc099c302f9d497a051.zlib",
+      "sha256": "360a0594fb1df770862f8eda1594688ab6e3a412891f6deab55febbb5b73cc11",
+      "bytes": 2721
+    },
+    {
+      "path": ".noeaaeue/cache/objects/ca/cafe884662e839cc6d3a4dbd8c66193273e5c5929ea23545a827ecea0af8c28f.zlib",
+      "sha256": "a52ee99d1c1f3c548c94b1525b089fb3a79f99882e95a9dadb6b51570c0a131e",
+      "bytes": 1316
+    },
+    {
+      "path": ".noeaaeue/cache/objects/e0/e0ec45fe81886b2ebffabac98d85f8d052e658a32e831286a7a7bdb8a6e55367.zlib",
+      "sha256": "30b8babe5bba6753d6e01456b6e466629bb3a9a2954dc80a6af7ef5e1e9518ff",
+      "bytes": 6431
+    },
+    {
+      "path": ".noeaaeue/cache/objects/e3/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.zlib",
+      "sha256": "b171e283c6145acf2b923098dbbc40ffc39b4f1db0212928f9869747376c4ac8",
+      "bytes": 8
+    },
+    {
+      "path": ".noeaaeue/cache/objects/e7/e7cb3ffd363156116d1e712b9acb931d87dbdaa3f02d097bf9c28a3ac2c6b433.zlib",
+      "sha256": "4456fa6c6db55e89cdbd95479602d84008bf7fc7ae684205ed562386cd8913d5",
+      "bytes": 388
+    },
+    {
+      "path": ".noeaaeue/cache/objects/f0/f0cc1a6d8a2cb4ea098c3f34c6e1e31d5bf984514d9fab2e9110b23c528d0a12.zlib",
+      "sha256": "54cd575ae2af3fb9bd215ae8cfdc4c3a3dff73cfccf45885e66407764d3d6ffc",
+      "bytes": 21149
+    },
+    {
+      "path": ".noeaaeue/cache/objects/f7/f740389f50019170d7db73bf8f12e52936988c107d8f0772498816883e2cd52e.zlib",
+      "sha256": "672bf68890bcc53f598a1b932ef74ac046da5796a2876fec9c4c8c72931a9930",
+      "bytes": 42031
+    },
+    {
+      "path": ".noeaaeue/cache/objects/fa/fa55be59e4320e9c55c62de3ed803f51ccb2d35e42dca8ff8dca8e4e66b27ec6.zlib",
+      "sha256": "3da59713083b788ef280790e332094507eabf2663bfae29d42866cda6c70f08e",
+      "bytes": 1736
+    },
+    {
+      "path": ".noeaaeue/cache/objects/fe/fec263839e2c5b25f841b72d106cd90a725c86390ebc79be559e621d58d5638a.zlib",
+      "sha256": "97fd5a9d67eaf90f25561b15e0d691bff9b3045aeea9cf206729762b74705ebc",
+      "bytes": 359
+    },
+    {
+      "path": ".noeaaeue/cache/research/anthropic-retention-source-review-2026-10-15-8a10f94eee994aa1a878720ed5c41789.json",
+      "sha256": "fd289133be5f3c9a3503091761d25e3717357cd4c4b9b5702f1a971c68cf9c2e",
+      "bytes": 14573
+    },
+    {
+      "path": ".noeaaeue/cache/research/arxiv-cubic-suppliers-2026-10-15-0bb4084d20054184b0b8bc26e6c40b75/source-manifest.json",
+      "sha256": "acf70da78fdf88bcbe78568b27f1f4d8de8de04bd45d8e0e3b2ce74446a96788",
+      "bytes": 5994
+    },
+    {
+      "path": ".noeaaeue/cache/research/arxiv-cubic-suppliers-2026-10-15-0bb4084d20054184b0b8bc26e6c40b75/source-review.json",
+      "sha256": "ead467ea25937534a546db880a843a6799804c6673c668d3bfc32f95e8ad9895",
+      "bytes": 8457
+    },
+    {
+      "path": ".noeaaeue/cache/research/prefix-reference-transport-documentation-candidate-2026-10-15-87edd6ce1c3f44f986867dec13155fb7.json",
+      "sha256": "14385fafbfbe99db69cde9c80293b8f13026d2c3e06a33a9f082abaa0994ea70",
+      "bytes": 11561
+    },
+    {
+      "path": ".noeaaeue/cache/research/prefix-reference-transport-documentation-candidate-2026-10-15-r2-8d4bee60cd3e4252ac77146e6d665545.json",
+      "sha256": "dc8cdffc449194208fbe29722e668994c74f92776f20f0fc13b1632ff846b941",
+      "bytes": 13349
+    },
+    {
+      "path": ".noeaaeue/cache/research/prefix-reference-transport-source-review-2026-10-15-87edd6ce1c3f44f986867dec13155fb7.json",
+      "sha256": "4e4d42cb771ef10f13e3e8df4a2e964e0e01b772914c4d9f3b1dabdd4f7f5ed3",
+      "bytes": 8131
+    },
+    {
+      "path": ".noeaaeue/cache/research/prefix-reference-transport-source-review-2026-10-15-r2-8d4bee60cd3e4252ac77146e6d665545.json",
+      "sha256": "b45bcba56ab4b5481792c49b418eb84d292ecc735ddbb1bdb9422f0f573d8d66",
+      "bytes": 9070
+    },
+    {
+      "path": ".noeaaeue/cache/research/reference-characters-check-context-2026-10-15.json",
+      "sha256": "1ae7a2ae37ff3369f7902297ec71cb65080a1b287c6ab6f15735260fa218fd3a",
+      "bytes": 2342
+    },
+    {
+      "path": ".noeaaeue/cache/research/reference-characters-custody-2026-10-15.json",
+      "sha256": "26cde8f4abb19296697f4284f9eb2d0ae7ec128dfb2f9a2ca3b210114f2c9924",
+      "bytes": 181930
+    },
+    {
+      "path": ".noeaaeue/cache/research/reference-characters-frontier-2026-10-15.json",
+      "sha256": "b94ba3353f63becb98ac56be39c25679cc8730a1d2381aba3c44b2bf9e53f8eb",
+      "bytes": 15476
+    },
+    {
+      "path": ".noeaaeue/cache/research/third-cyclotomic-characters-documentation-candidate-2026-10-15-8a677fcb12e444e88a8c8a8325bbd30e.json",
+      "sha256": "9da4b88d4b7535d982b8cb47807fc32dad81f17dd0cd6bfe0cd29b9e235a8125",
+      "bytes": 15605
+    },
+    {
+      "path": ".noeaaeue/cache/research/third-cyclotomic-characters-integration-intent-2026-10-15-8a677fcb12e444e88a8c8a8325bbd30e.json",
+      "sha256": "182dae08fef84a60835b9cfbda36bfacbb386479458b029aa67140e63257a033",
+      "bytes": 13887
+    },
+    {
+      "path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-reference-transport-checks-2026-10-15.json",
+      "sha256": "c2392986e86871df84fd07fc4363c634a37930749e4f505a941a91278236a271",
+      "bytes": 3773336
+    },
+    {
+      "path": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-characters-development-checks-2026-10-15-a7b1f5cb.json",
+      "sha256": "528b3c85272c20e55ae66668fd942bde430b10635bc68b44c304b3796a10f286",
+      "bytes": 4928030
+    },
+    {
+      "path": ".noeaaeue/scripts/check_prefix_reference_transport.py",
+      "sha256": "2c608ba97e0f49ffb90b55a5809e18163d4d2321bd13d254061e7f45c9569b52",
+      "bytes": 13489
+    },
+    {
+      "path": ".noeaaeue/scripts/check_third_cyclotomic_characters.py",
+      "sha256": "c0c12ef5c17a7c5e9c1c894e48189b642b816be03e99070daae23739da85e2f4",
+      "bytes": 13434
+    },
+    {
+      "path": ".noeaaeue/scripts/test_schedule_reduction_replay_guards.py",
+      "sha256": "5aa117aba4c8a463013cab3ecfc34858398e410cd261a3f90311fbd0558b0ad8",
+      "bytes": 6234
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixReferenceMissingSupport.lean",
+      "sha256": "a81f4b50114fcd35951a8ed8ee1ccf0a706bc26b3a73d6935d83f8867b826f2c",
+      "bytes": 530
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableReferenceTransport.lean",
+      "sha256": "092678d16170cff8e60e5b1461c71aea404b4a8d93731f4e001367992bf96e26",
+      "bytes": 7784
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableReferenceTransport.lean",
+      "sha256": "a7600c33972405a31f6495b03789f9473cd914eb428d9a5f94c734f528e71d0c",
+      "bytes": 10562
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Negative/ThirdCyclotomicCharacterZeroCube.lean",
+      "sha256": "7e423a5a2cb5a9f6c78740f357fc1a41b832c01545e4a6e87ada20f8ccfb8242",
+      "bytes": 796
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Positive/ThirdCyclotomicCharacters.lean",
+      "sha256": "4832da80997b32be46ceb8ba498e86bb873a7e6111d9f2e70ee137211f0c4eb0",
+      "bytes": 3936
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicCharacters.lean",
+      "sha256": "c595e55f46838683758ea9c66379968ac75a6f86ddfb5dc099c302f9d497a051",
+      "bytes": 9264
+    }
+  ],
+  "scope": "Two complete selected-unexported mathematical results, six exact formal source/control files, two native drivers, hostile guard additions, source/guide/contribution/open-status and quiet integration intents, immutable decisions/cursor and exact compressed historical variants.",
+  "public_canonical_integration": "Pending next agreed quiet checkpoint; no shared source/catalog/observation/entrypoint/guide/navigation files staged from concurrent workers.",
+  "global_checks": "Selected native958/92 pass. Global docs/layout stale during concurrent development; explicit failed logs retained;109 doccontrols normal/O pass.",
+  "publication": "Standing human authorization for routine nonforce upstream push; verify remote contains this completed selected batch."
+}
