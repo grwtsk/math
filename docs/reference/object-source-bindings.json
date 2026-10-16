@@ -101,6 +101,7 @@
     "Combinatorics/Sequences": [
       "GRWTSK/Combinatorics/Sequences/BalancedPartitionSampling.lean",
       "GRWTSK/Combinatorics/Sequences/ConditionalPartitionExposure.lean",
+      "GRWTSK/Combinatorics/Sequences/FixedSizeSubsetExposure.lean",
       "GRWTSK/Combinatorics/Sequences/QuotaDiscrepancy.lean",
       "GRWTSK/Combinatorics/Sequences/ZeroSumIntervalRepair.lean"
     ],
@@ -228,6 +229,7 @@
       "GRWTSK/Analysis/Fourier/SchwartzMoments.lean",
       "GRWTSK/Analysis/Fourier/ZModBalancedExpectedLayers.lean",
       "GRWTSK/Analysis/Fourier/ZModBalancedPartition.lean",
+      "GRWTSK/Analysis/Fourier/ZModLargerSlice.lean",
       "GRWTSK/Analysis/Fourier/ZModSubsetSum.lean"
     ],
     "Analysis/Calculus": [
@@ -404,6 +406,8 @@
     "GRWTSK/Analysis/Fourier/ZModBalancedExpectedLayers.lean": "Analysis",
     "GRWTSK/Combinatorics/Sequences/ConditionalPartitionExposure.lean": "Combinatorics",
     "GRWTSK/Combinatorics/DirectedGraph/PrefixTableReferenceTransport.lean": "Combinatorics",
-    "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicCharacters.lean": "NumberTheory"
+    "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicCharacters.lean": "NumberTheory",
+    "GRWTSK/Combinatorics/Sequences/FixedSizeSubsetExposure.lean": "Combinatorics",
+    "GRWTSK/Analysis/Fourier/ZModLargerSlice.lean": "Analysis"
   }
 }

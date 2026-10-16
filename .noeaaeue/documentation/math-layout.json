@@ -81691,5 +81691,27 @@
     ],
     "replay": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json",
     "scope": "Exact finite Complex character projector and joint-weight primitive moment identities now registered/exported from their selected replay; all coefficient transfers, estimates and abc implications remain open. Global current-observation metadata is retained unchanged."
+  },
+  "larger_slice_additions": {
+    "date": "2026-10-16",
+    "status": "fresh-selected-kernel-checked",
+    "paths": [
+      "GRWTSK/Combinatorics/Sequences/FixedSizeSubsetExposure.lean",
+      "GRWTSK/Analysis/Fourier/ZModLargerSliceParameters.lean",
+      "GRWTSK/Analysis/Fourier/ZModLargerSliceBounds.lean",
+      "GRWTSK/Analysis/Fourier/ZModLargerSlice.lean",
+      "GRWTSK/Analysis/Fourier/Checks/Positive/LargerSliceAntiConcentration.lean",
+      "GRWTSK/Analysis/Fourier/Checks/Negative/LargerSliceMissingMargin.lean",
+      "GRWTSK/Analysis/Fourier/Checks/Negative/LargerSliceMissingPositiveSample.lean"
+    ],
+    "receipt": ".noeaaeue/evidence/Analysis/fourier/larger-slice-checks-2026-10-16.json",
+    "receipt_sha256": "57684bb8c5a03f552ee6a1942461046fd20b46a0709ffcf47c76fb0c7dd26654",
+    "owned_declarations": 761,
+    "new_owned_declarations": 117,
+    "library_closure_modules": 22,
+    "positive_controls": 1,
+    "intended_type_rejections": 2,
+    "contribution_record": ".noeaaeue/receipts/larger-slice-anticoncentration/contribution-status.json",
+    "scope": "Actual finite conditional disjoint-subset exposure and source Corollary1.4 checked from frozen sources; complete local project closure and owned census audited with standard-three axioms only. Controls separately compile/reject. Historical intake/catalog/receipt identities unchanged. New current observation and whole-library integration replay recorded separately."
   }
 }
