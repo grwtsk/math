@@ -78,7 +78,7 @@ theorem screwContribution_eq (g : ℝ → ℂ) (t u : ℝ) :
 /-- Pointwise additivity of refined bin functions gives exact source coverage. -/
 theorem sourcePayload_refines {ι : Type*} (s : Finset ι)
     (g : ℝ → ℂ) (childFunction : ι → ℝ → ℂ) (t u : ℝ)
-    (refines : ∀ v, g v = ∑ i in s, childFunction i v) :
+    (refines : ∀ v, g v = ∑ i ∈ s, childFunction i v) :
     CoverageCertificate s (sourcePayload g t u)
       (fun i => sourcePayload (childFunction i) t u) := by
   unfold CoverageCertificate
@@ -90,9 +90,9 @@ theorem encoded_source_refines {ι : Type*} (s : Finset ι)
     (parent : QuadraticEvaluationCode ℂ)
     (child : ι → QuadraticEvaluationCode ℂ)
     (g : ℝ → ℂ) (childFunction : ι → ℝ → ℂ) (t u : ℝ)
-    (refines : ∀ v, g v = ∑ i in s, childFunction i v) :
+    (refines : ∀ v, g v = ∑ i ∈ s, childFunction i v) :
     parent.encode (sourcePayload g t u) =
-      ∑ i in s, transport parent.toCode (child i).toCode
+      ∑ i ∈ s, transport parent.toCode (child i).toCode
         ((child i).encode (sourcePayload (childFunction i) t u)) := by
   exact encode_aggregate s parent.toCode (fun i => (child i).toCode)
     (sourcePayload g t u) (fun i => sourcePayload (childFunction i) t u)
@@ -119,7 +119,7 @@ theorem screwKernel_source_preserving_refinement_error
       ι → Observation Symbols ChildSyndrome ChildComparison ChildCoverage)
     (aggregateError :
       ‖parentObservation.symbols -
-        ∑ i in s, transport parent.toCode (child i).toCode
+        ∑ i ∈ s, transport parent.toCode (child i).toCode
           (childObservation i).symbols‖ ≤
         parentObservation.audit.interpolationError)
     (sourceError : ∀ i ∈ s,
@@ -130,7 +130,7 @@ theorem screwKernel_source_preserving_refinement_error
         screwContribution g t u‖ ≤
       ‖screwFunctional.comp parent.decode‖ *
           parentObservation.audit.interpolationError +
-        ∑ i in s, ‖screwFunctional.comp (child i).decode‖ *
+        ∑ i ∈ s, ‖screwFunctional.comp (child i).decode‖ *
           (childObservation i).audit.interpolationError := by
   simpa [screwContribution, QuadraticEvaluationCode.toCode] using
     source_error_bound s parent.toCode (fun i => (child i).toCode)
