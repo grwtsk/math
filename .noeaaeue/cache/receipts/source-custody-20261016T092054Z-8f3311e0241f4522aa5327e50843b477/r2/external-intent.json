@@ -1,0 +1,13 @@
+{
+  "at_utc": "2026-10-16T09:30:18.221895+00:00",
+  "destination": "/private/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0000gn/T/grwtsk-cache-roundtrip-83re8pzd/expanded",
+  "expanded_code_execution": false,
+  "mathematical_acceptance": false,
+  "proof_status": "unknown-unreplayed",
+  "revision": "ecefbe78491e1bc142a3e80aa8cf68202a2ae9bf60837942a113b4eafc6bc728",
+  "temporary_parent": "/private/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0000gn/T/grwtsk-cache-roundtrip-83re8pzd",
+  "temporary_parent_identity": [
+    16777231,
+    231949722
+  ]
+}

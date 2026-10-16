@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+    "-B",
+    ".noeaaeue/scripts/cache_math.py",
+    "--root",
+    "/Users/local/Desktop/math",
+    "expand",
+    "/private/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0000gn/T/grwtsk-cache-roundtrip-83re8pzd/expanded",
+    "--revision",
+    "ecefbe78491e1bc142a3e80aa8cf68202a2ae9bf60837942a113b4eafc6bc728"
+  ],
+  "exit_code": 0,
+  "expected_error_fragment": null,
+  "expected_exit_code": 0,
+  "finished_utc": "2026-10-16T09:30:33.883052+00:00",
+  "stage": "expand",
+  "started_utc": "2026-10-16T09:30:18.222119+00:00",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_sha256": "beac9d58ea141ecdfd9f7fbfadbd38efaa8cba1350fbbda43824861f18344649"
+}
