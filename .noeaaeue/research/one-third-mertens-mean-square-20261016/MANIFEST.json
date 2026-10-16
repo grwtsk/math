@@ -31,9 +31,9 @@
       "sha256": "8acfb5b8f27c6b8267330bfeb6838b8d5e2be210a387d28e598b9af4ecea640d"
     },
     {
-      "bytes": 8732,
+      "bytes": 2071,
       "path": "certificates.json",
-      "sha256": "8d6f708b8981b08bc9c60bb810f5cccd84f291d196cbd25b71c02cb12554dd32"
+      "sha256": "36e75c96c2bfd1bd215b6c6cf6dee1f5b9ef152c502cac989d12f3041dd2f587"
     },
     {
       "bytes": 11946,
@@ -53,12 +53,12 @@
     {
       "bytes": 1569,
       "path": "receipt.json",
-      "sha256": "46f9648a5eca458d29450cb812b6a39ca14c6d824e83bc2b491970468c18419c"
+      "sha256": "47eb42d77737b3c1d705fb1c1a1a446bd5ac27923c41ec7f86fda6d8fdbcb448"
     },
     {
       "bytes": 1299,
       "path": "replay-receipt.json",
-      "sha256": "163da48f8a88c6f67982d805f297a0026bf336908d99c46ce8d1145f1e7b8c76"
+      "sha256": "38ccfd7d11e06f47ad6ec9895f78c43fd11cf312205e1dd9ab4e7d3f4d8a9a68"
     },
     {
       "bytes": 854,
@@ -66,9 +66,9 @@
       "sha256": "83088508e425674f1882efefff5d3082837cf9da05d00793795f281c94308450"
     },
     {
-      "bytes": 1111,
+      "bytes": 2259,
       "path": "scripts/one_third_mertens_mean_square.py",
-      "sha256": "47717b972f31bd3da2b73b588ef6758a87f4e21f54fee90dada5a76b741274a6"
+      "sha256": "ca4c8245370c32b9fa0ba2deb9cdbfc17dbfac0c3bb20d0ecfb78364e9dda162"
     },
     {
       "bytes": 4142,
@@ -81,5 +81,5 @@
       "sha256": "c0ce8a4aab55c35322be2cbc72dae27aa18ddbfaf11cda9910053db5d53f4851"
     }
   ],
-  "schema": "one-third-mertens-mean-square-published-manifest-v2"
+  "schema": "one-third-mertens-mean-square-published-manifest-v3"
 }
