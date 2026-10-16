@@ -1,0 +1,47 @@
+{
+  "branch": "main",
+  "concurrent_base": "a85c94740e45dfadcf5087db8c8c2ecd307093dc",
+  "date": "2026-10-15",
+  "evidence_grade": "written mathematics plus exact finite computation",
+  "execution": {
+    "exact_checks": 2200,
+    "post_publication_replay": false,
+    "producer_outputs_identical": true,
+    "profile_limit": 500000,
+    "unit_tests_normal": 11,
+    "unit_tests_optimized": 11
+  },
+  "native_stages_not_run": [
+    "Lean elaboration",
+    "intended-type comparison",
+    "owned/transitive axiom audit",
+    "full repository replay",
+    "independent validation"
+  ],
+  "nonclaims": [
+    "No uniform closed-flux witness",
+    "No new zero-free region",
+    "No proof of RH",
+    "No native Lean acceptance"
+  ],
+  "package_commit": "870bb197102bde9199f84e277f410c039692ff78",
+  "package_tree": "53511d0c86ab82ede803352bdc2ad4e730f82c4e",
+  "published_blobs": {
+    "ClosedDampedTriadicFlux.lean.txt": "2247ec9fd4fef55521eb02f1a6f3668cb9e4533b",
+    "ClosedWeightedAbelFlux.lean.txt": "2352615587525c586bd25b117f56d2a94df04b38",
+    "README.txt": "b58d0f6ded19c027ae98fd7aef1d255a51974cf3",
+    "audit.lean.txt": "264f39680cc2c3c4e3e5f494ba0eed14705d3302",
+    "candidate-inventory.json": "10bbfb2fe86a026085b6d951c05f43f5fccabcb0",
+    "certificates.json": "c4f367ef6b120d5402fd3f50e0619b1eea0559bc",
+    "derivation.md": "4b4cb294fd973bacc28fee58ed6885f2279cc2a4",
+    "negative-controls.json": "6fde1914351d53c6dea868a0e11ee9d8d73027bf",
+    "proof-hypergraph.json": "e60e6d637e3b70f84edd11909f0181b0b9b16c3d",
+    "receipt.json": "1152b7c32207a23b33eba2f10a041c3d19e07d55",
+    "resume-cursor.json": "885ea1b328786db632f3dc86bf04ecca162f46fb",
+    "source-ledger.json": "01692fee5c7f90892ab99db80f72a4d24fd88185"
+  },
+  "repository": "grwtsk/math",
+  "resume_theorem": "ReciprocalClosedTriadicFluxUpper",
+  "schema": "closed-triadic-flux-publication-receipt-v1",
+  "selected_mathematical_source": "f114d16ac390e06923e5895eaa14ac58699391c3"
+}
