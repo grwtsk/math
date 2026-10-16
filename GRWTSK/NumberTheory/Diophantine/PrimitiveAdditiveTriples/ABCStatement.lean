@@ -2,7 +2,7 @@
 Uses Mathlib real powers and canonical radical (Apache-2.0).
 OpenAI Codex formalization assistance.
 This module freezes a target proposition; it supplies no proof of that target. -/
-import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Radical
+import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.RadicalMultiplicativeInterface
 import Mathlib.Analysis.SpecialFunctions.Pow.Real
 
 namespace GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples
