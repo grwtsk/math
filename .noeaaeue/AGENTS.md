@@ -61,10 +61,12 @@ This rule applies to all existing and incoming code and all workers.
 - If the checkout is not on main, move work to main with safe, history-preserving
   Git operations. If uncommitted or conflicting work makes that unsafe, keep it
   intact and report the condition instead of forcing the switch.
-- Do not push, force-push, or modify remote branches unless the user explicitly
-  requests it. This organization instruction grants no remote publication,
-  merge, spending, protection-change, or automation-change authority in other
-  chats.
+- Push completed commits to the configured upstream by default. The owner has
+  given standing authorization for routine non-force pushes, including requests
+  to check work in; do not ask for separate push confirmation.
+- Force-pushes and remote branch deletion still require an explicit request.
+  This standing push authorization grants no merge, spending, protection-change,
+  or automation-change authority.
 
 ## Mathematical documentation
 
