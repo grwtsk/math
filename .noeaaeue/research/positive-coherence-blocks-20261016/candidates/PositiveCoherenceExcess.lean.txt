@@ -1,0 +1,85 @@
+/-
+Human mathematical direction: R.A. Jacob Martone.
+Candidate formalization assistance: OpenAI ChatGPT. MIT.
+CANDIDATE_SOURCE_ONLY. Not elaborated or axiom-audited.
+-/
+import Mathlib.Algebra.Order.BigOperators.Group.Finset
+import Mathlib.Tactic.Linarith
+
+set_option autoImplicit false
+noncomputable section
+open scoped BigOperators
+
+namespace GRWTSK.Analysis.Sequences.PositiveCoherenceExcess
+
+variable (x w : ℕ → ℝ)
+
+def prefix (n : ℕ) : ℝ := ∑ j ∈ Finset.range n, x j
+
+def squareVariation (n : ℕ) : ℝ := ∑ j ∈ Finset.range n, x j ^ 2
+
+def coherence (n : ℕ) : ℝ := prefix x n ^ 2 - squareVariation x n
+
+def excess (n : ℕ) : ℝ := max 0 (coherence x n)
+
+def residual (n : ℕ) : ℝ := min (prefix x n ^ 2) (squareVariation x n)
+
+def energy (N : ℕ) : ℝ := ∑ n ∈ Finset.range N, w n * prefix x n ^ 2
+
+def signedEnergy (N : ℕ) : ℝ := ∑ n ∈ Finset.range N, w n * coherence x n
+
+def diagonalEnergy (N : ℕ) : ℝ := ∑ n ∈ Finset.range N, w n * squareVariation x n
+
+def excessEnergy (N : ℕ) : ℝ := ∑ n ∈ Finset.range N, w n * excess x n
+
+def residualEnergy (N : ℕ) : ℝ := ∑ n ∈ Finset.range N, w n * residual x n
+
+def negativeEnergy (N : ℕ) : ℝ := ∑ n ∈ Finset.range N, w n * max 0 (-coherence x n)
+
+lemma sq_eq_excess_add_residual (n : ℕ) :
+    prefix x n ^ 2 = excess x n + residual x n := by
+  have hq : 0 ≤ prefix x n ^ 2 := sq_nonneg _
+  have hv : 0 ≤ squareVariation x n := by
+    unfold squareVariation
+    exact Finset.sum_nonneg (fun _ _ => sq_nonneg _)
+  rcases le_total (squareVariation x n) (prefix x n ^ 2) with h | h
+  · rw [excess, coherence, max_eq_right (sub_nonneg.mpr h), residual, min_eq_right h]
+    ring
+  · rw [excess, coherence, max_eq_left (sub_nonpos.mpr h), residual, min_eq_left h]
+    simp
+
+lemma negative_part_le_variation (n : ℕ) :
+    max 0 (-coherence x n) ≤ squareVariation x n := by
+  have hq : 0 ≤ prefix x n ^ 2 := sq_nonneg _
+  unfold coherence
+  rcases le_total (squareVariation x n) (prefix x n ^ 2) with h | h
+  · rw [max_eq_left]
+    · exact Finset.sum_nonneg (fun _ _ => sq_nonneg _)
+    · linarith
+  · rw [max_eq_right]
+    · linarith
+    · linarith
+
+lemma residual_le_variation (n : ℕ) :
+    residual x n ≤ squareVariation x n := min_le_right _ _
+
+lemma energy_eq_excess_add_residual {N : ℕ}
+    (hw : ∀ n < N, 0 ≤ w n) :
+    energy x w N = excessEnergy x w N + residualEnergy x w N := by
+  unfold energy excessEnergy residualEnergy
+  rw [← Finset.sum_add_distrib]
+  apply Finset.sum_congr rfl
+  intro n hn
+  have := sq_eq_excess_add_residual x n
+  ring_nf at this ⊢
+  nlinarith
+
+lemma residualEnergy_le_diagonalEnergy {N : ℕ}
+    (hw : ∀ n < N, 0 ≤ w n) :
+    residualEnergy x w N ≤ diagonalEnergy x w N := by
+  unfold residualEnergy diagonalEnergy
+  apply Finset.sum_le_sum
+  intro n hn
+  exact mul_le_mul_of_nonneg_left (residual_le_variation x n) (hw n (Finset.mem_range.mp hn))
+
+end GRWTSK.Analysis.Sequences.PositiveCoherenceExcess

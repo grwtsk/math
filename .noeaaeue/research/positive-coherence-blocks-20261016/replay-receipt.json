@@ -1,0 +1,13 @@
+{
+  "certificate_sha256": "fbc14d9934bb0a8cd9df2dbcac295570be6de37a4134cff29d4fec2154be9c26",
+  "committed_certificate_matches": true,
+  "exact_check_count": 32124,
+  "limit": 2000000,
+  "native_lean_run": false,
+  "network_or_git_effects": false,
+  "normal_optimized_identical": true,
+  "python": "3.13.5",
+  "schema": "positive-coherence-blocks-replay-v1",
+  "selected_test_methods_per_mode": 15,
+  "status": "passed"
+}
