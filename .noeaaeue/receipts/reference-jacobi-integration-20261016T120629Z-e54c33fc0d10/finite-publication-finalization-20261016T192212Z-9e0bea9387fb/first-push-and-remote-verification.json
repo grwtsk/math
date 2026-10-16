@@ -1,0 +1,55 @@
+{
+  "actual_exit_code": 0,
+  "argv": [
+    "/Applications/Xcode.app/Contents/Developer/usr/bin/git",
+    "--no-optional-locks",
+    "-c",
+    "core.fsmonitor=false",
+    "-c",
+    "core.hooksPath=/dev/null",
+    "push",
+    "origin",
+    "refs/heads/main:refs/heads/main"
+  ],
+  "commit": "8ab21d550818492e4ed1d41c4c77c090c7584637",
+  "containment_exit_code": 0,
+  "fetch_exit_code": 0,
+  "finished_at": "2026-10-16T19:35:39.478913+00:00",
+  "force": false,
+  "raw_log": {
+    "bytes": 74,
+    "path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-publication-finalization-20261016T192212Z-9e0bea9387fb/first-push-raw.log",
+    "sha256": "e1eb015808d34dcf287316a03220c24b518ee6196bb0a7a5ea1f0667f53313af"
+  },
+  "remote_heads_raw": {
+    "bytes": 57,
+    "path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-publication-finalization-20261016T192212Z-9e0bea9387fb/first-remote-heads-raw.log",
+    "sha256": "6d706f672eeace17b1b3820df3b2af5b94e1b0e5df8dea345c7a49a79dada92f"
+  },
+  "remote_main": "8ab21d550818492e4ed1d41c4c77c090c7584637",
+  "retained_exact_execution_receipts": [
+    {
+      "bytes": 2598,
+      "path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-publication-finalization-20261016T192212Z-9e0bea9387fb/actual-pre-stage-exact-review.json",
+      "sha256": "9af00601299b4af907232a16982829edb2ab1786df1cde018bbc1e2d5611c1da"
+    },
+    {
+      "bytes": 251551,
+      "path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-publication-finalization-20261016T192212Z-9e0bea9387fb/actual-actual-stage-result.json",
+      "sha256": "2f853e9b88829bb16793768ea2682368e918a6704479bf929ac61c104a3fc257"
+    },
+    {
+      "bytes": 1001609,
+      "path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-publication-finalization-20261016T192212Z-9e0bea9387fb/actual-committed-object-readback.json",
+      "sha256": "803ac6a92522934ab802a9a6c6061d79588babe12a632c6c3cef8f8ce9eb0d33"
+    },
+    {
+      "bytes": 493,
+      "path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-publication-finalization-20261016T192212Z-9e0bea9387fb/actual-commit-message.txt",
+      "sha256": "a7ffd1ee48c615c8add618fd07397fdae6f484ff666f21aec036db74c4b74e1c"
+    }
+  ],
+  "schema": "actual-normal-main-push-v1",
+  "started_at": "2026-10-16T19:35:13.959426+00:00",
+  "status": "PUSH_EXIT_ZERO_REMOTE_CONTAINS_COMMIT"
+}

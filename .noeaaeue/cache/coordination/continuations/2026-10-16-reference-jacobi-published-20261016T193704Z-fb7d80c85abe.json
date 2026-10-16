@@ -1,0 +1,39 @@
+{
+  "created_at": "2026-10-16T19:37:04.824845+00:00",
+  "missing_targets": [
+    "Separate qualified validation/admission of current Jacobi product frontier under coordinated native window",
+    "Three source-custody-only candidates remain unadmitted",
+    "RH and missing arithmetic suppliers remain open"
+  ],
+  "native_restart_authority": "Heartbeat arrivals do not release native compilation. Obtain the next explicit coordinated window under the validated cache handoff.",
+  "next_actions": [
+    "Finish separate scoped record commit and verify remote; update heartbeat with both actual commit identities",
+    "Coordinate with Noe and Jacobi frontier owner before native work; no duplicate cold/public replay",
+    "Use existing actual cubic character product edits as next source-bound frontier; review hypotheses and exact pinned APIs, then complete owned audit and positive/negative controls only in released window",
+    "Source scouts: pinned Mathlib, actual public Anthropic formal mathematics, arxiv; openai/math remains primary source",
+    "Keep all concurrent WSC payloads unpublished; preserve source occurrences, provenance, roles, premise boundaries and historical receipts"
+  ],
+  "preserved_unvalidated_next_round_sources": [
+    {
+      "bytes": 3918,
+      "path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Positive/ThirdCyclotomicJacobi.lean",
+      "sha256": "4e086c435e4befb386b91ebfdf172e646ee6e7a2822af3f1c5b30950111e481f"
+    },
+    {
+      "bytes": 5830,
+      "path": "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicJacobi.lean",
+      "sha256": "6e00993f591bd867efb762990d8e6fa1db9b966751a838bcf14227b4b602148c"
+    }
+  ],
+  "publication_record": {
+    "bytes": 6442,
+    "path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-publication-finalization-20261016T192212Z-9e0bea9387fb/actual-main-publication.json",
+    "sha256": "1d4d70e2ba357f67b82dea131243577e4c4f8d709cacd9196748452bdfeaf63f"
+  },
+  "published_commit": "8ab21d550818492e4ed1d41c4c77c090c7584637",
+  "quiet_policy": "Notify only on a checked result/counterexample, material failure, or required user action; stop request pauses heartbeat.",
+  "remote_main": "8ab21d550818492e4ed1d41c4c77c090c7584637",
+  "schema": "published-reference-jacobi-continuation-v1",
+  "source_cache_revision": "edfd5db62ced0900c89689a42123102bcb1a9c4c14fa5026073d8f9fe1953b65",
+  "status": "CHECKPOINT_REMOTE_VERIFIED_PUBLICATION_RECORD_COMMIT_PENDING"
+}
