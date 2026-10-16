@@ -1,0 +1,3 @@
+'PPNCP04.Cutoff.cutoff_block_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PPNCP04.Cutoff.windowed_block_square_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PPNCP04.Cutoff.actual_cutoff_complex_energy_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

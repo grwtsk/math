@@ -19,4 +19,4 @@ Object guides have not yet been written for this area. The source folder remains
 
 ## Sources and verification
 
-[Selected catalog](../../reference/results.md) · [Archive source candidates](../../reference/source-intake.md) · [Verification interfaces](../../reference/verification-interfaces.md).
+[Selected catalog](../../reference/results.md) · [Archive source candidates](../../reference/source-intake.md).

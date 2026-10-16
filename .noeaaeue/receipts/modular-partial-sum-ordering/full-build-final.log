@@ -1,0 +1,857 @@
+ℹ [3410/3523] Replayed GRWTSK.Analysis.Asymptotics.FinitePowerSum
+info: GRWTSK/Analysis/Asymptotics/FinitePowerSum.lean:71:0: 'GRWTSK.Analysis.Asymptotics.FinitePowerSum.sum_Icc_rpow_sub_one_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3629/4013] Replayed GRWTSK.Analysis.Integration.ExponentialVolterraL2
+info: GRWTSK/Analysis/Integration/ExponentialVolterraL2.lean:145:6: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: GRWTSK/Analysis/Integration/ExponentialVolterraL2.lean:167:0: 'GRWTSK.Analysis.Integration.ExponentialVolterraL2.exponentialVolterra_sq_integral_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3987/4013] Replayed GRWTSK.NumberTheory.Moebius.FiniteLaplaceTransform
+info: GRWTSK/NumberTheory/Moebius/FiniteLaplaceTransform.lean:203:2: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+ℹ [3989/4013] Replayed GRWTSK.NumberTheory.Moebius.FiniteTranslationProduct
+info: GRWTSK/NumberTheory/Moebius/FiniteTranslationProduct.lean:453:0: 'ASBNP04.FiniteProduct.cascade_eq_signedExpansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/FiniteTranslationProduct.lean:454:0: 'ASBNP04.FiniteProduct.cascade_order_independent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/FiniteTranslationProduct.lean:455:0: 'ASBNP04.FiniteProduct.moebius_primeProduct' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/FiniteTranslationProduct.lean:456:0: 'ASBNP04.FiniteProduct.completed_pickup_identification' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/FiniteTranslationProduct.lean:457:0: 'ASBNP04.FiniteProduct.restrict_cascade' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/FiniteTranslationProduct.lean:458:0: 'ASBNP04.FiniteProduct.primeState_block_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/FiniteTranslationProduct.lean:459:0: 'ASBNP04.FiniteProduct.block_energy_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [4002/4433] Replayed GRWTSK.NumberTheory.Moebius.FinitePrimeProductDebt
+info: GRWTSK/NumberTheory/Moebius/FinitePrimeProductDebt.lean:236:0: 'GRWTSK.NumberTheory.Moebius.PrimeProductDebt.rawPrimeProduct_eq_prefix_add_debt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/FinitePrimeProductDebt.lean:237:0: 'GRWTSK.NumberTheory.Moebius.PrimeProductDebt.rawPrimeProduct_eq_pickupPrefix_add_debt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/FinitePrimeProductDebt.lean:238:0: 'GRWTSK.NumberTheory.Moebius.PrimeProductDebt.unbornDebt_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/FinitePrimeProductDebt.lean:239:0: 'GRWTSK.NumberTheory.Moebius.PrimeProductDebt.wholePickup_cutoff_laplace_prime_product' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/FinitePrimeProductDebt.lean:240:0: 'GRWTSK.NumberTheory.Moebius.PrimeProductDebt.unborn_atom_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [4020/4433] Replayed GRWTSK.NumberTheory.Moebius.LogarithmicResponse
+info: GRWTSK/NumberTheory/Moebius/LogarithmicResponse.lean:166:0: 'PPNCP04.atom_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/LogarithmicResponse.lean:167:0: 'PPNCP04.restrict_primeNote_restrict' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [4021/4433] Replayed GRWTSK.NumberTheory.Moebius.FiniteProductResponseIdentification
+info: GRWTSK/NumberTheory/Moebius/FiniteProductResponseIdentification.lean:82:0: 'PPNCP04.completed_pickup_identification' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/FiniteProductResponseIdentification.lean:83:0: 'PPNCP04.sourceEnergy_completed' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [4022/4433] Replayed GRWTSK.NumberTheory.Moebius.MoebiusEulerProduct
+info: GRWTSK/NumberTheory/Moebius/MoebiusEulerProduct.lean:127:0: 'EulerP04RH.FEMI.integerCoefficient_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/MoebiusEulerProduct.lean:128:0: 'EulerP04RH.FEMI.divisor_moebius_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/MoebiusEulerProduct.lean:129:0: 'EulerP04RH.FEMI.moebiusDirichlet_eq_inv_zeta' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/MoebiusEulerProduct.lean:130:0: 'EulerP04RH.FEMI.reciprocal_zeta_hasProd' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/MoebiusEulerProduct.lean:131:0: 'EulerP04RH.FEMI.finite_causal_pickup' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [4023/4433] Replayed GRWTSK.Algebra.MvPolynomial.SquarefreeEulerProduct
+info: GRWTSK/Algebra/MvPolynomial/SquarefreeEulerProduct.lean:114:0: 'EulerP04RH.FEMI.finiteEulerPolynomial_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Algebra/MvPolynomial/SquarefreeEulerProduct.lean:115:0: 'EulerP04RH.FEMI.finiteEulerPolynomial_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Algebra/MvPolynomial/SquarefreeEulerProduct.lean:116:0: 'EulerP04RH.FEMI.polynomial_integer_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [4024/4433] Replayed GRWTSK.Analysis.Fourier.PrimePhaseMultiplierBounds
+info: GRWTSK/Analysis/Fourier/PrimePhaseMultiplierBounds.lean:189:0: 'PPNC.block_multiplier_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Fourier/PrimePhaseMultiplierBounds.lean:190:0: 'PPNC.rawFourier_translate' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Fourier/PrimePhaseMultiplierBounds.lean:191:0: 'PPNC.rawFourier_eq_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Fourier/PrimePhaseMultiplierBounds.lean:192:0: 'PPNC.broad_multiplier_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Fourier/PrimePhaseMultiplierBounds.lean:193:0: 'PPNC.blockMultiplier_signed_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Fourier/PrimePhaseMultiplierBounds.lean:194:0: 'PPNC.zero_frequency_contractive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Fourier/PrimePhaseMultiplierBounds.lean:195:0: 'PPNC.antiphase_singleton_amplifies' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [4025/4433] Replayed GRWTSK.Analysis.Fourier.PrimePhasePacketCertificates
+info: GRWTSK/Analysis/Fourier/PrimePhasePacketCertificates.lean:197:0: 'PPNCP04.Charts.spectral_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Fourier/PrimePhasePacketCertificates.lean:198:0: 'PPNCP04.Charts.broad_narrow_integral_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Fourier/PrimePhasePacketCertificates.lean:199:0: 'PPNCP04.Charts.childRelation_wellFounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Fourier/PrimePhasePacketCertificates.lean:200:0: 'PPNCP04.Charts.nondecreasing_child_rejected' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Fourier/PrimePhasePacketCertificates.lean:201:0: 'PPNCP04.Charts.paid_extraction_implies_NC' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Fourier/PrimePhasePacketCertificates.lean:202:0: 'PPNCP04.Charts.paid_spectral_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [4026/4433] Replayed GRWTSK.Analysis.InnerProductSpace.MoebiusResponseGramExpansion
+info: GRWTSK/Analysis/InnerProductSpace/MoebiusResponseGramExpansion.lean:78:0: 'PPNCP04.energy_eq_diagonal_add_cross' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/InnerProductSpace/MoebiusResponseGramExpansion.lean:79:0: 'PPNCP04.energy_polynomial_implies_P04' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8896/9126] Replayed GRWTSK.NumberTheory.Moebius.DiagonalEnergyBound
+info: GRWTSK/NumberTheory/Moebius/DiagonalEnergyBound.lean:109:0: 'PPNCP04.diagonal_quadratic_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/DiagonalEnergyBound.lean:110:0: 'PPNCP04.P04_iff_energy_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8897/9126] Replayed GRWTSK.MeasureTheory.Integral.MoebiusCumulativeEnergy
+info: GRWTSK/MeasureTheory/Integral/MoebiusCumulativeEnergy.lean:138:0: 'EulerP04RH.NativeWindow.pickup_cutoff_consistent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/MeasureTheory/Integral/MoebiusCumulativeEnergy.lean:139:0: 'EulerP04RH.NativeWindow.fixed_window_implies_literal_P04' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8898/9126] Replayed GRWTSK.MeasureTheory.Integral.FixedWidthEnergyTelescope
+info: GRWTSK/MeasureTheory/Integral/FixedWidthEnergyTelescope.lean:162:0: 'HSSCP04.LocalEnergyTelescope.energy_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/MeasureTheory/Integral/FixedWidthEnergyTelescope.lean:163:0: 'HSSCP04.LocalEnergyTelescope.floor_telescope' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/MeasureTheory/Integral/FixedWidthEnergyTelescope.lean:164:0: 'HSSCP04.LocalEnergyTelescope.grid_telescope' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/MeasureTheory/Integral/FixedWidthEnergyTelescope.lean:165:0: 'HSSCP04.LocalEnergyTelescope.window_bound_implies_energy_polynomial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8901/9126] Replayed GRWTSK.NumberTheory.Zeta.ReciprocalHolomorphyZeroSymmetry
+info: GRWTSK/NumberTheory/Zeta/ReciprocalHolomorphyZeroSymmetry.lean:207:0: 'EulerP04RH.RHTerminal.regularized_identity_of_initial_and_holomorphic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Zeta/ReciprocalHolomorphyZeroSymmetry.lean:208:0: 'EulerP04RH.RHTerminal.literal_RH_of_regularized_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/NumberTheory/Zeta/ReciprocalHolomorphyZeroSymmetry.lean:210:0: 'EulerP04RH.RHTerminal.literal_RH_of_pickup_Laplace_inputs' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/NumberTheory/Zeta/ReciprocalHolomorphyZeroSymmetry.lean:211:0: 'EulerP04RH.RHTerminal.literal_RH_of_P04_and_explicit_analytic_inputs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8902/9126] Replayed GRWTSK.Analysis.LaplaceTransform.MoebiusResponseFormula
+info: GRWTSK/Analysis/LaplaceTransform/MoebiusResponseFormula.lean:310:0: 'EulerP04RH.FEMI.completedPickup_eq_tsum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/LaplaceTransform/MoebiusResponseFormula.lean:311:0: 'EulerP04RH.FEMI.completedPickup_energy' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/LaplaceTransform/MoebiusResponseFormula.lean:312:0: 'EulerP04RH.FEMI.atomKernel_laplace' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/LaplaceTransform/MoebiusResponseFormula.lean:313:0: 'EulerP04RH.FEMI.laplaceTerm_norm_summable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/LaplaceTransform/MoebiusResponseFormula.lean:314:0: 'EulerP04RH.FEMI.pickupLaplace_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/LaplaceTransform/MoebiusResponseFormula.lean:315:0: 'EulerP04RH.FEMI.pickupLaplace_eq_reciprocal' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8903/9126] Replayed GRWTSK.NumberTheory.Moebius.PolynomialEnergyHolomorphy
+info: GRWTSK/NumberTheory/Moebius/PolynomialEnergyHolomorphy.lean:39:0: 'EulerP04RH.LaplaceEnergy.polynomial_energy_laplace_return' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/PolynomialEnergyHolomorphy.lean:40:0: 'EulerP04RH.LaplaceEnergy.literal_RH_of_P04' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8904/9126] Replayed GRWTSK.Analysis.Asymptotics.FixedWidthEnergyBoundEquivalence
+info: GRWTSK/Analysis/Asymptotics/FixedWidthEnergyBoundEquivalence.lean:54:0: 'HSSCP04.HSS_implies_energy_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Asymptotics/FixedWidthEnergyBoundEquivalence.lean:55:0: 'HSSCP04.HSS_iff_P04' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Asymptotics/FixedWidthEnergyBoundEquivalence.lean:56:0: 'HSSCP04.HSS_implies_literal_RH' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8905/9126] Replayed GRWTSK.Analysis.Asymptotics.MassWeightedRecurrence
+info: GRWTSK/Analysis/Asymptotics/MassWeightedRecurrence.lean:107:0: 'ASBNP04.amortized_iteration' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Asymptotics/MassWeightedRecurrence.lean:108:0: 'ASBNP04.terminal_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Asymptotics/MassWeightedRecurrence.lean:109:0: 'ASBNP04.shifted_homogeneous_iteration' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8906/9126] Replayed GRWTSK.Analysis.Asymptotics.SignedEnergyDecomposition
+info: GRWTSK/Analysis/Asymptotics/SignedEnergyDecomposition.lean:123:0: 'EulerP04RH.assembly_implies_literal_P04' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Asymptotics/SignedEnergyDecomposition.lean:124:0: 'EulerP04RH.right_tail_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Asymptotics/SignedEnergyDecomposition.lean:125:0: 'EulerP04RH.assembled_route_implies_literal_RH' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8907/9126] Replayed GRWTSK.Analysis.InnerProductSpace.WeightedSchurBounds
+info: GRWTSK/Analysis/InnerProductSpace/WeightedSchurBounds.lean:171:0: 'EulerP04RH.WeightedGram.weighted_symmetric_schur' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/InnerProductSpace/WeightedSchurBounds.lean:172:0: 'EulerP04RH.WeightedGram.synthesis_of_weighted_gram_rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/InnerProductSpace/WeightedSchurBounds.lean:173:0: 'EulerP04RH.WeightedGram.bessel_of_weighted_gram_rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8908/9126] Replayed GRWTSK.Analysis.InnerProductSpace.SignedSynthesisEnergyBounds
+info: GRWTSK/Analysis/InnerProductSpace/SignedSynthesisEnergyBounds.lean:86:0: 'EulerP04RH.PacketClosure.polynomial_packet_budgets_imply_settlement' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/Analysis/InnerProductSpace/SignedSynthesisEnergyBounds.lean:87:0: 'EulerP04RH.PacketClosure.packet_route_implies_literal_P04' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8909/9126] Replayed GRWTSK.Analysis.SumIntegralComparison.ExponentialResponseSquareSum
+info: GRWTSK/Analysis/SumIntegralComparison/ExponentialResponseSquareSum.lean:214:0: 'EulerP04RH.SharpDiagonal.profile_integer_sum_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/SumIntegralComparison/ExponentialResponseSquareSum.lean:215:0: 'EulerP04RH.SharpDiagonal.atom_inventory_square_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/SumIntegralComparison/ExponentialResponseSquareSum.lean:216:0: 'EulerP04RH.SharpDiagonal.diagonal_le_two_mul_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8910/9126] Replayed GRWTSK.NumberTheory.Zeta.ReciprocalDecayBounds
+info: GRWTSK/NumberTheory/Zeta/ReciprocalDecayBounds.lean:102:0: 'EulerP04RH.RightLine.reciprocal_zeta_uniform_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/NumberTheory/Zeta/ReciprocalDecayBounds.lean:103:0: 'EulerP04RH.RightLine.pickupKernel_norm_decay' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8911/9126] Replayed GRWTSK.Analysis.Calculus.LogarithmicResponseDerivatives
+info: GRWTSK/Analysis/Calculus/LogarithmicResponseDerivatives.lean:82:0: 'PPNCP04.atom_right_derivative_at_entry' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Calculus/LogarithmicResponseDerivatives.lean:83:0: 'PPNCP04.atom_left_derivative_at_entry' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Calculus/LogarithmicResponseDerivatives.lean:84:0: 'PPNCP04.atom_derivative_jump' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Calculus/LogarithmicResponseDerivatives.lean:85:0: 'PPNCP04.signed_atom_derivative_jump' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Calculus/LogarithmicResponseDerivatives.lean:86:0: 'PPNCP04.atom_not_differentiable_at_entry' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8912/9126] Replayed GRWTSK.Analysis.CausalTranslation.ExponentialResponse
+info: GRWTSK/Analysis/CausalTranslation/ExponentialResponse.lean:77:0: 'ASBNP04.causalShift_comm' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/CausalTranslation/ExponentialResponse.lean:78:0: 'ASBNP04.atom_eq_scaled_shift' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/CausalTranslation/ExponentialResponse.lean:79:0: 'ASBNP04.signed_quadratic_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8913/9126] Replayed GRWTSK.Analysis.Fourier.FiniteTranslationMultipliers
+info: GRWTSK/Analysis/Fourier/FiniteTranslationMultipliers.lean:184:0: 'PPNCP04.FourierBlock.rawFourier_ordinaryBlock' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Fourier/FiniteTranslationMultipliers.lean:185:0: 'PPNCP04.FourierBlock.rawFourier_causal_primeBlock' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Fourier/FiniteTranslationMultipliers.lean:186:0: 'PPNCP04.FourierBlock.windowedState_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Fourier/FiniteTranslationMultipliers.lean:187:0: 'PPNCP04.FourierBlock.rawFourier_windowed_primeBlock' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8914/9126] Replayed GRWTSK.MeasureTheory.Integral.FinitePrimeTranslationEnergy
+info: GRWTSK/MeasureTheory/Integral/FinitePrimeTranslationEnergy.lean:159:0: 'ASBNP04.FiniteProduct.primeState_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/MeasureTheory/Integral/FinitePrimeTranslationEnergy.lean:160:0: 'ASBNP04.FiniteProduct.source_correlations_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/MeasureTheory/Integral/FinitePrimeTranslationEnergy.lean:161:0: 'ASBNP04.FiniteProduct.source_block_energy_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/MeasureTheory/Integral/FinitePrimeTranslationEnergy.lean:162:0: 'ASBNP04.FiniteProduct.restricted_source_memLp_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/MeasureTheory/Integral/FinitePrimeTranslationEnergy.lean:163:0: 'ASBNP04.FiniteProduct.sourceEnergy_eq_l2_norm_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8915/9126] Replayed GRWTSK.MeasureTheory.Function.Lp.CausalRestrictionBounds
+info: GRWTSK/MeasureTheory/Function/Lp/CausalRestrictionBounds.lean:94:0: 'PPNCP04.Cutoff.cutoff_block_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/MeasureTheory/Function/Lp/CausalRestrictionBounds.lean:95:0: 'PPNCP04.Cutoff.windowed_block_square_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/MeasureTheory/Function/Lp/CausalRestrictionBounds.lean:96:0: 'PPNCP04.Cutoff.actual_cutoff_complex_energy_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8916/9126] Replayed GRWTSK.Analysis.Integration.ExponentialInterval
+info: GRWTSK/Analysis/Integration/ExponentialInterval.lean:52:0: 'GRWTSK.Analysis.Integration.ExponentialInterval.integral_exp_neg_mul' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/Analysis/Integration/ExponentialInterval.lean:53:0: 'GRWTSK.Analysis.Integration.ExponentialInterval.integral_exp_mul' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8917/9126] Replayed GRWTSK.Analysis.SpecialFunctions.PowerIntervalDrop
+info: GRWTSK/Analysis/SpecialFunctions/PowerIntervalDrop.lean:52:0: 'GRWTSK.Analysis.SpecialFunctions.PowerIntervalDrop.rpow_sub_rpow_add_one_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8918/9126] Replayed GRWTSK.Analysis.Asymptotics.PowerWeightedSquareSummability
+info: GRWTSK/Analysis/Asymptotics/PowerWeightedSquareSummability.lean:60:0: 'GRWTSK.Analysis.Asymptotics.PowerWeightedSquareSummability.summable_sq_mul_rpow_of_abs_le_rpow' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8941/9126] Replayed GRWTSK.Analysis.InnerProductSpace.LogarithmicCharacterGramBounds
+info: GRWTSK/Analysis/InnerProductSpace/LogarithmicCharacterGramBounds.lean:265:0: 'EulerP04RH.ResearchObstructions.dense_rows_force_cardinality' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/Analysis/InnerProductSpace/LogarithmicCharacterGramBounds.lean:266:0: 'EulerP04RH.ResearchObstructions.unit_phase_preserves_absolute_gram' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/Analysis/InnerProductSpace/LogarithmicCharacterGramBounds.lean:267:0: 'EulerP04RH.ResearchObstructions.normalized_identical_packet_fixture' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/Analysis/InnerProductSpace/LogarithmicCharacterGramBounds.lean:268:0: 'EulerP04RH.ResearchObstructions.two_prime_orbit_gram_positive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/Analysis/InnerProductSpace/LogarithmicCharacterGramBounds.lean:269:0: 'EulerP04RH.ResearchObstructions.complex_orbit_gram_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/InnerProductSpace/LogarithmicCharacterGramBounds.lean:270:0: 'EulerP04RH.ResearchObstructions.complex_logarithmic_band_rows_force_cardinality' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/Analysis/InnerProductSpace/LogarithmicCharacterGramBounds.lean:271:0: 'EulerP04RH.ResearchObstructions.consecutive_log_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/InnerProductSpace/LogarithmicCharacterGramBounds.lean:272:0: 'EulerP04RH.ResearchObstructions.upper_bessel_does_not_imply_reconstruction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8942/9126] Replayed GRWTSK.NumberTheory.Moebius.PrimeShellDecomposition
+info: GRWTSK/NumberTheory/Moebius/PrimeShellDecomposition.lean:328:0: 'HSSCP04.HorizonShell.pickup_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/PrimeShellDecomposition.lean:329:0: 'HSSCP04.HorizonShell.matureState_eq_old_pickup_add_echo' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/PrimeShellDecomposition.lean:330:0: 'HSSCP04.HorizonShell.horizonWave_memLp_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8943/9126] Replayed GRWTSK.Analysis.InnerProductSpace.SignedWindowGramIdentity
+info: GRWTSK/Analysis/InnerProductSpace/SignedWindowGramIdentity.lean:105:0: 'HSSCP04.Settlement.settlement_ledger' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/InnerProductSpace/SignedWindowGramIdentity.lean:106:0: 'HSSCP04.Settlement.shell_requires_mature_energy' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8944/9126] Replayed GRWTSK.Logic.ProofEvidence.ProvenanceCertificates
+info: GRWTSK/Logic/ProofEvidence/ProvenanceCertificates.lean:203:0: 'EulerP04RH.Research.finite_fixture_cannot_be_consumed' does not depend on any axioms
+info: GRWTSK/Logic/ProofEvidence/ProvenanceCertificates.lean:204:0: 'EulerP04RH.Research.consumption_supplies_native_proof' does not depend on any axioms
+info: GRWTSK/Logic/ProofEvidence/ProvenanceCertificates.lean:205:0: 'EulerP04RH.Research.invalidation_preserves_evidence_grade' does not depend on any axioms
+ℹ [8945/9126] Replayed GRWTSK.Logic.ProofEvidence.EnergyInterfaceEquivalence
+info: GRWTSK/Logic/ProofEvidence/EnergyInterfaceEquivalence.lean:77:0: 'EulerP04RH.InterfaceAudit.literal_P04_implies_transform_route' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/Logic/ProofEvidence/EnergyInterfaceEquivalence.lean:78:0: 'EulerP04RH.InterfaceAudit.transform_route_iff_literal_P04' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Logic/ProofEvidence/EnergyInterfaceEquivalence.lean:80:0: 'EulerP04RH.InterfaceAudit.empty_packet_signed_return' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Logic/ProofEvidence/EnergyInterfaceEquivalence.lean:81:0: 'EulerP04RH.InterfaceAudit.empty_packet_error_budget_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8946/9126] Replayed GRWTSK.NumberTheory.Moebius.ResponseBudgetIdentification
+info: GRWTSK/NumberTheory/Moebius/ResponseBudgetIdentification.lean:66:0: 'HSSCP04.CCCAdapter.cross_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/ResponseBudgetIdentification.lean:67:0: 'HSSCP04.CCCAdapter.native_P04_eq_literal_P04' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/ResponseBudgetIdentification.lean:68:0: 'HSSCP04.CCCAdapter.HSS_iff_native_P04' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8991/9126] Replayed GRWTSK.Analysis.Inequalities.LogarithmicShiftKernelPositiveSector
+info: GRWTSK/Analysis/Inequalities/LogarithmicShiftKernelPositiveSector.lean:58:52: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+ℹ [9063/9126] Replayed GRWTSK.Analysis.Asymptotics.ExponentialRecurrence
+info: GRWTSK/Analysis/Asymptotics/ExponentialRecurrence.lean:131:0: 'PPNCP04.Cost.generalized_iteration' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Asymptotics/ExponentialRecurrence.lean:132:0: 'PPNCP04.Cost.sum_cost_with_remainder' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Asymptotics/ExponentialRecurrence.lean:133:0: 'PPNCP04.Cost.exp_cost_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9064/9126] Replayed GRWTSK.Analysis.Asymptotics.FinitePrimeChainEnergyBounds
+info: GRWTSK/Analysis/Asymptotics/FinitePrimeChainEnergyBounds.lean:97:0: 'PPNCP04.completion_energy_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Asymptotics/FinitePrimeChainEnergyBounds.lean:98:0: 'PPNCP04.amortized_completion_implies_P04' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9065/9126] Replayed GRWTSK.Analysis.Asymptotics.ExponentialEnergyObstruction
+info: GRWTSK/Analysis/Asymptotics/ExponentialEnergyObstruction.lean:211:0: 'PPNCP04.Obstruction.finite_nc_contradiction' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Asymptotics/ExponentialEnergyObstruction.lean:212:0: 'PPNCP04.Obstruction.exponential_input_not_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Asymptotics/ExponentialEnergyObstruction.lean:213:0: 'PPNCP04.Obstruction.eventual_nc_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Asymptotics/ExponentialEnergyObstruction.lean:214:0: 'PPNCP04.Obstruction.crude_inventory_reserve_nc' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9066/9126] Replayed GRWTSK.Analysis.Asymptotics.PrimeTranslationBoundContracts
+info: GRWTSK/Analysis/Asymptotics/PrimeTranslationBoundContracts.lean:131:0: 'PPNCP04.fourier_reduction_broad_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Asymptotics/PrimeTranslationBoundContracts.lean:132:0: 'PPNCP04.narrow_contract_returns_amortized_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Asymptotics/PrimeTranslationBoundContracts.lean:133:0: 'PPNCP04.chainConstruction_implies_P04' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9067/9126] Replayed GRWTSK.Analysis.Asymptotics.PrimeMassPotentialBounds
+info: GRWTSK/Analysis/Asymptotics/PrimeMassPotentialBounds.lean:151:0: 'PPNCP04.ASClosure.initial_potential_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Asymptotics/PrimeMassPotentialBounds.lean:152:0: 'PPNCP04.ASClosure.completionFromAS' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Asymptotics/PrimeMassPotentialBounds.lean:153:0: 'PPNCP04.ASClosure.AS_implies_literal_P04' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9068/9126] Replayed GRWTSK.NumberTheory.PrimeCounting.ReciprocalPrimeIntervalBounds
+info: GRWTSK/NumberTheory/PrimeCounting/ReciprocalPrimeIntervalBounds.lean:106:0: 'PPNCP04.PrimeHarmonic.prime_interval_harmonic_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/NumberTheory/PrimeCounting/ReciprocalPrimeIntervalBounds.lean:107:0: 'PPNCP04.PrimeHarmonic.fixed_ratio_horizon_mass_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/NumberTheory/PrimeCounting/ReciprocalPrimeIntervalBounds.lean:108:0: 'PPNCP04.PrimeHarmonic.inventory_harmonic_linear_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9069/9126] Replayed GRWTSK.NumberTheory.PrimeCounting.ReciprocalPrimeLogBound
+info: GRWTSK/NumberTheory/PrimeCounting/ReciprocalPrimeLogBound.lean:261:0: 'PPNCP04.PrimeHarmonicLog.prime_count_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/NumberTheory/PrimeCounting/ReciprocalPrimeLogBound.lean:262:0: 'PPNCP04.PrimeHarmonicLog.prime_reciprocal_abel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/NumberTheory/PrimeCounting/ReciprocalPrimeLogBound.lean:263:0: 'PPNCP04.PrimeHarmonicLog.prime_harmonic_bound_at_x' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/NumberTheory/PrimeCounting/ReciprocalPrimeLogBound.lean:264:0: 'PPNCP04.PrimeHarmonicLog.prime_harmonic_logarithmic_estimate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [9070/9126] Replayed GRWTSK.Analysis.Asymptotics.DisjointPrimeChainBounds
+info: GRWTSK/Analysis/Asymptotics/DisjointPrimeChainBounds.lean:62:0: 'PPNCP04.OriginalClosure.completion_prefix_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Asymptotics/DisjointPrimeChainBounds.lean:63:0: 'PPNCP04.OriginalClosure.completion_total_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Asymptotics/DisjointPrimeChainBounds.lean:64:0: 'PPNCP04.OriginalClosure.AS_with_complete_admissible_chains_implies_P04' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [9071/9126] Replayed GRWTSK.Analysis.Asymptotics.PrimeSubsetPotentialBounds
+info: GRWTSK/Analysis/Asymptotics/PrimeSubsetPotentialBounds.lean:220:0: 'EulerP04RH.ASSubsetClosure.subset_potential_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Asymptotics/PrimeSubsetPotentialBounds.lean:221:0: 'EulerP04RH.ASSubsetClosure.AS_implies_uniform_subset_polynomial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/Analysis/Asymptotics/PrimeSubsetPotentialBounds.lean:223:0: 'EulerP04RH.ASSubsetClosure.threeQuarterBand_eventually_eligible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/Analysis/Asymptotics/PrimeSubsetPotentialBounds.lean:224:0: 'EulerP04RH.ASSubsetClosure.AS_implies_threeQuarterBand_eventual_polynomial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [9072/9126] Replayed GRWTSK.NumberTheory.Zeta.ResponseBoundZeroConversions
+info: GRWTSK/NumberTheory/Zeta/ResponseBoundZeroConversions.lean:67:0: 'EulerP04RH.CompleteReturn.analyticClosure' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/NumberTheory/Zeta/ResponseBoundZeroConversions.lean:68:0: 'EulerP04RH.CompleteReturn.transform_route_implies_literal_RH' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Zeta/ResponseBoundZeroConversions.lean:69:0: 'EulerP04RH.CompleteReturn.original_AS_implies_literal_RH' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/NumberTheory/Zeta/ResponseBoundZeroConversions.lean:70:0: 'EulerP04RH.CompleteReturn.packet_route_implies_literal_RH' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9073/9126] Replayed GRWTSK.Analysis.Fourier.ReciprocalZetaQuadraticKernel
+info: GRWTSK/Analysis/Fourier/ReciprocalZetaQuadraticKernel.lean:80:0: 'EulerP04RH.ConcreteRightLine.concrete_route_implies_literal_P04' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/Analysis/Fourier/ReciprocalZetaQuadraticKernel.lean:81:0: 'EulerP04RH.ConcreteRightLine.concrete_route_implies_literal_RH' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [9074/9126] Replayed GRWTSK.Analysis.Asymptotics.QuadraticKernelEnergyEquivalence
+info: GRWTSK/Analysis/Asymptotics/QuadraticKernelEnergyEquivalence.lean:47:0: 'EulerP04RH.ConcreteSettlement.signed_settlement_iff_literal_P04' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [9075/9126] Replayed GRWTSK.Analysis.Asymptotics.SelectedPrimeChainBounds
+info: GRWTSK/Analysis/Asymptotics/SelectedPrimeChainBounds.lean:84:0: 'EulerP04RH.ChainOnlyAS.construction_implies_literal_P04' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Asymptotics/SelectedPrimeChainBounds.lean:85:0: 'EulerP04RH.ChainOnlyAS.construction_implies_literal_RH' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9076/9126] Replayed GRWTSK.Analysis.Fourier.AngularFrequencyParseval
+info: GRWTSK/Analysis/Fourier/AngularFrequencyParseval.lean:227:0: 'PPNCP04.Plancherel.integralFourier_eq_l2_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Fourier/AngularFrequencyParseval.lean:228:0: 'PPNCP04.Plancherel.rawFourier_parseval' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Fourier/AngularFrequencyParseval.lean:229:0: 'PPNCP04.Plancherel.actualFourierReductionObligation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Fourier/AngularFrequencyParseval.lean:231:0: 'PPNCP04.Plancherel.actual_broad_narrow_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Fourier/AngularFrequencyParseval.lean:232:0: 'PPNCP04.Plancherel.actual_narrow_return' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9077/9126] Replayed GRWTSK.NumberTheory.Moebius.DampedRecordingParseval
+info: GRWTSK/NumberTheory/Moebius/DampedRecordingParseval.lean:193:0: 'GRWTSK.NumberTheory.Moebius.DampedRecording.rawFourier_window' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/DampedRecordingParseval.lean:194:0: 'GRWTSK.NumberTheory.Moebius.DampedRecording.verticalLine_parseval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/DampedRecordingParseval.lean:195:0: 'GRWTSK.NumberTheory.Moebius.DampedRecording.verticalLine_completed_formula' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/DampedRecordingParseval.lean:196:0: 'GRWTSK.NumberTheory.Moebius.DampedRecording.completedNumerator_verticalLine_parseval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [9078/9126] Replayed GRWTSK.NumberTheory.Moebius.VerticalLineCriterion
+info: GRWTSK/NumberTheory/Moebius/VerticalLineCriterion.lean:157:0: 'GRWTSK.NumberTheory.Moebius.VerticalLineCriterion.verticalLineMass_eq_completed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/VerticalLineCriterion.lean:158:0: 'GRWTSK.NumberTheory.Moebius.VerticalLineCriterion.verticalLineMass_uniform_above_half' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/VerticalLineCriterion.lean:159:0: 'GRWTSK.NumberTheory.Moebius.VerticalLineCriterion.pickupEnergySubexp_of_completedVerticalLineUniform' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/VerticalLineCriterion.lean:160:0: 'GRWTSK.NumberTheory.Moebius.VerticalLineCriterion.completedVerticalLineUniform_iff_weightedEnergyAll' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/VerticalLineCriterion.lean:161:0: 'GRWTSK.NumberTheory.Moebius.VerticalLineCriterion.riemannHypothesis_of_completedVerticalLineUniform' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [9079/9126] Replayed GRWTSK.NumberTheory.Moebius.VerticalLineMonotonicity
+info: GRWTSK/NumberTheory/Moebius/VerticalLineMonotonicity.lean:100:0: 'GRWTSK.NumberTheory.Moebius.VerticalLineMonotonicity.verticalLineMass_antitone' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/VerticalLineMonotonicity.lean:101:0: 'GRWTSK.NumberTheory.Moebius.VerticalLineMonotonicity.criticalReciprocal_iff_completedVerticalLineUniform' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/VerticalLineMonotonicity.lean:102:0: 'GRWTSK.NumberTheory.Moebius.VerticalLineMonotonicity.riemannHypothesis_of_criticalReciprocal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [9080/9126] Replayed GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks
+info: GRWTSK/NumberTheory/Moebius/CriticalIntervalBlocks.lean:343:14: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: GRWTSK/NumberTheory/Moebius/CriticalIntervalBlocks.lean:343:14: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: GRWTSK/NumberTheory/Moebius/CriticalIntervalBlocks.lean:758:0: 'GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.wholePickup_eq_prefix_flux_on_log_cell' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/CriticalIntervalBlocks.lean:759:0: 'GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.pickupWeightedPrefix_eq_mertens_add_integral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/CriticalIntervalBlocks.lean:760:0: 'GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.mertensPrefix_exp_le_of_powerBound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/CriticalIntervalBlocks.lean:761:0: 'GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.abelIntegral_abs_le_of_mertensPowerBound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/CriticalIntervalBlocks.lean:762:0: 'GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.pickupWeightedPrefix_le_of_mertensPowerBound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/CriticalIntervalBlocks.lean:763:0: 'GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalIntervalBlock_eq_pickup' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/CriticalIntervalBlocks.lean:764:0: 'GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalIntervalBlock_closedForm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/CriticalIntervalBlocks.lean:765:0: 'GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalIntervalBlockUniform_of_majorantSummable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/CriticalIntervalBlocks.lean:766:0: 'GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalIntervalMajorantSummable_of_prefixPowerSummable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/CriticalIntervalBlocks.lean:767:0: 'GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalBoundary_of_prefixSquareComponents' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/CriticalIntervalBlocks.lean:768:0: 'GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalBoundary_of_prefixPowerBounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/CriticalIntervalBlocks.lean:769:0: 'GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalBoundary_of_mertensPowerSaving' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/CriticalIntervalBlocks.lean:770:0: 'GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalBoundary_of_nonnegative_mertensPowerSaving' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/CriticalIntervalBlocks.lean:771:0: 'GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalIntervalBlockSum_eq_verticalLineMass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/CriticalIntervalBlocks.lean:772:0: 'GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.criticalBoundary_iff_intervalBlockUniform' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [9081/9126] Replayed GRWTSK.NumberTheory.Moebius.LogarithmicMertensBoundary
+info: GRWTSK/NumberTheory/Moebius/LogarithmicMertensBoundary.lean:47:2: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: GRWTSK/NumberTheory/Moebius/LogarithmicMertensBoundary.lean:75:4: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: GRWTSK/NumberTheory/Moebius/LogarithmicMertensBoundary.lean:85:2: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: GRWTSK/NumberTheory/Moebius/LogarithmicMertensBoundary.lean:98:6: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: GRWTSK/NumberTheory/Moebius/LogarithmicMertensBoundary.lean:124:8: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: GRWTSK/NumberTheory/Moebius/LogarithmicMertensBoundary.lean:288:10: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: GRWTSK/NumberTheory/Moebius/LogarithmicMertensBoundary.lean:319:10: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: GRWTSK/NumberTheory/Moebius/LogarithmicMertensBoundary.lean:360:10: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: GRWTSK/NumberTheory/Moebius/LogarithmicMertensBoundary.lean:468:0: 'GRWTSK.NumberTheory.Moebius.LogarithmicMertensBoundary.verticalLineMass_half_le_of_mertens_log_sq_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/LogarithmicMertensBoundary.lean:469:0: 'GRWTSK.NumberTheory.Moebius.LogarithmicMertensBoundary.criticalBoundaryVerticalLineUniform_of_mertens_log_sq_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/LogarithmicMertensBoundary.lean:470:0: 'GRWTSK.NumberTheory.Moebius.LogarithmicMertensBoundary.verticalLineMass_le_of_source_exp_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/LogarithmicMertensBoundary.lean:471:0: 'GRWTSK.NumberTheory.Moebius.LogarithmicMertensBoundary.verticalLineMass_le_of_nat_mertens_power_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [9082/9126] Replayed GRWTSK.NumberTheory.Moebius.ReciprocalPrefix
+info: GRWTSK/NumberTheory/Moebius/ReciprocalPrefix.lean:172:0: 'GRWTSK.NumberTheory.Moebius.ReciprocalPrefix.pickupMertensPrefix_eq_reciprocalPartialSummation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/ReciprocalPrefix.lean:173:0: 'GRWTSK.NumberTheory.Moebius.ReciprocalPrefix.pickupMertensPrefix_abs_le_reciprocalPartialSummation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/ReciprocalPrefix.lean:174:0: 'GRWTSK.NumberTheory.Moebius.ReciprocalPrefix.pickupMertensPrefix_le_of_reciprocalPrefixDecay' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/ReciprocalPrefix.lean:175:0: 'GRWTSK.NumberTheory.Moebius.ReciprocalPrefix.criticalBoundary_of_reciprocalPrefixDecay' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [9083/9126] Replayed GRWTSK.NumberTheory.Moebius.ReciprocalPrefixDensityAdapter
+info: GRWTSK/NumberTheory/Moebius/ReciprocalPrefixDensityAdapter.lean:42:0: 'GRWTSK.NumberTheory.Moebius.ReciprocalPrefixDensityAdapter.pickupReciprocalPrefix_eq_densityMobiusReciprocalPrefix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/ReciprocalPrefixDensityAdapter.lean:43:0: 'GRWTSK.NumberTheory.Moebius.ReciprocalPrefixDensityAdapter.pickupReciprocalPrefix_abs_le_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [9084/9126] Replayed GRWTSK.NumberTheory.Moebius.ReciprocalPrefixKernel
+info: GRWTSK/NumberTheory/Moebius/ReciprocalPrefixKernel.lean:209:0: 'GRWTSK.NumberTheory.Moebius.ReciprocalPrefixKernel.pickupWeightedPrefix_eq_reciprocalPartialSummation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/ReciprocalPrefixKernel.lean:210:0: 'GRWTSK.NumberTheory.Moebius.ReciprocalPrefixKernel.reciprocalFluxWeight_sum_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/ReciprocalPrefixKernel.lean:211:0: 'GRWTSK.NumberTheory.Moebius.ReciprocalPrefixKernel.pickupFlux_eq_reciprocalKernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/ReciprocalPrefixKernel.lean:212:0: 'GRWTSK.NumberTheory.Moebius.ReciprocalPrefixKernel.pickupFlux_eq_reciprocalVariationKernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/ReciprocalPrefixKernel.lean:213:0: 'GRWTSK.NumberTheory.Moebius.ReciprocalPrefixKernel.wholePickup_eq_reciprocalVariationKernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/ReciprocalPrefixKernel.lean:214:0: 'GRWTSK.NumberTheory.Moebius.ReciprocalPrefixKernel.criticalIntervalBlock_eq_reciprocalVariationKernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/ReciprocalPrefixKernel.lean:215:0: 'GRWTSK.NumberTheory.Moebius.ReciprocalPrefixKernel.criticalIntervalBlockUniform_iff_reciprocalVariationBlockUniform' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/ReciprocalPrefixKernel.lean:216:0: 'GRWTSK.NumberTheory.Moebius.ReciprocalPrefixKernel.criticalBoundary_iff_reciprocalVariationBlockUniform' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [9085/9126] Replayed GRWTSK.NumberTheory.Moebius.CriticalIntervalBlockGrowth
+info: GRWTSK/NumberTheory/Moebius/CriticalIntervalBlockGrowth.lean:134:0: 'GRWTSK.NumberTheory.Moebius.CriticalIntervalBlockGrowth.pickupMertensPrefix_abs_le_natCast' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/CriticalIntervalBlockGrowth.lean:135:0: 'GRWTSK.NumberTheory.Moebius.CriticalIntervalBlockGrowth.pickupWeightedPrefix_abs_le_two_sqrt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/CriticalIntervalBlockGrowth.lean:136:0: 'GRWTSK.NumberTheory.Moebius.CriticalIntervalBlockGrowth.criticalIntervalBlock_le_harmonic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/CriticalIntervalBlockGrowth.lean:137:0: 'GRWTSK.NumberTheory.Moebius.CriticalIntervalBlockGrowth.criticalIntervalBlockSum_le_harmonic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/CriticalIntervalBlockGrowth.lean:138:0: 'GRWTSK.NumberTheory.Moebius.CriticalIntervalBlockGrowth.criticalIntervalBlockSum_le_log' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [9086/9126] Replayed GRWTSK.NumberTheory.Moebius.CriticalEndpointDefect
+info: GRWTSK/NumberTheory/Moebius/CriticalEndpointDefect.lean:594:0: 'GRWTSK.NumberTheory.Moebius.CriticalEndpointDefect.criticalEndpointDefect_eq_half_wholePickup' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/CriticalEndpointDefect.lean:595:0: 'GRWTSK.NumberTheory.Moebius.CriticalEndpointDefect.prefixFlux_eq_endpointDefect_add_drift' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/CriticalEndpointDefect.lean:596:0: 'GRWTSK.NumberTheory.Moebius.CriticalEndpointDefect.criticalEndpointDrift_nonneg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/CriticalEndpointDefect.lean:597:0: 'GRWTSK.NumberTheory.Moebius.CriticalEndpointDefect.criticalIntervalBlock_le_endpointDefect_add_drift' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/CriticalEndpointDefect.lean:598:0: 'GRWTSK.NumberTheory.Moebius.CriticalEndpointDefect.summable_mertens_drift_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/CriticalEndpointDefect.lean:599:0: 'GRWTSK.NumberTheory.Moebius.CriticalEndpointDefect.criticalBoundary_iff_endpointDefectSummable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [9087/9126] Replayed GRWTSK.NumberTheory.Moebius.CriticalEndpointDefectRecurrence
+info: GRWTSK/NumberTheory/Moebius/CriticalEndpointDefectRecurrence.lean:89:0: 'GRWTSK.NumberTheory.Moebius.CriticalEndpointDefectRecurrence.pickupWeightedPrefix_succ' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/CriticalEndpointDefectRecurrence.lean:90:0: 'GRWTSK.NumberTheory.Moebius.CriticalEndpointDefectRecurrence.criticalEndpointDefect_succ' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/CriticalEndpointDefectRecurrence.lean:91:0: 'GRWTSK.NumberTheory.Moebius.CriticalEndpointDefectRecurrence.criticalEndpointDefect_eq_mertensTransform' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/CriticalEndpointDefectRecurrence.lean:92:0: 'GRWTSK.NumberTheory.Moebius.CriticalEndpointDefectRecurrence.criticalBoundary_iff_mertensTransformSummable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [9088/9126] Replayed GRWTSK.NumberTheory.Moebius.CriticalMertensTransformMeanSquare
+info: GRWTSK/NumberTheory/Moebius/CriticalMertensTransformMeanSquare.lean:216:0: 'GRWTSK.NumberTheory.Moebius.CriticalMertensTransformMeanSquare.criticalMertensTransform_sq_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/CriticalMertensTransformMeanSquare.lean:217:0: 'GRWTSK.NumberTheory.Moebius.CriticalMertensTransformMeanSquare.sum_range_succ_rpow_sub_one_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/CriticalMertensTransformMeanSquare.lean:218:0: 'GRWTSK.NumberTheory.Moebius.CriticalMertensTransformMeanSquare.criticalMertensTransform_sq_le_meanSquare' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/CriticalMertensTransformMeanSquare.lean:219:0: 'GRWTSK.NumberTheory.Moebius.CriticalMertensTransformMeanSquare.mertensTransformSummable_of_incrementMeanSquare' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/CriticalMertensTransformMeanSquare.lean:220:0: 'GRWTSK.NumberTheory.Moebius.CriticalMertensTransformMeanSquare.criticalBoundary_of_incrementMeanSquare' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [9089/9126] Replayed GRWTSK.NumberTheory.Moebius.CriticalWeightedMertensSquare
+info: GRWTSK/NumberTheory/Moebius/CriticalWeightedMertensSquare.lean:154:0: 'GRWTSK.NumberTheory.Moebius.CriticalWeightedMertensSquare.criticalEndpointGap_le_inv_sqrt_mul_succ' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/CriticalWeightedMertensSquare.lean:155:0: 'GRWTSK.NumberTheory.Moebius.CriticalWeightedMertensSquare.criticalEndpointGap_sq_le_inv_mul_succ_sq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/CriticalWeightedMertensSquare.lean:156:0: 'GRWTSK.NumberTheory.Moebius.CriticalWeightedMertensSquare.incrementMeanSquare_of_weightedMertensSquare' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/CriticalWeightedMertensSquare.lean:157:0: 'GRWTSK.NumberTheory.Moebius.CriticalWeightedMertensSquare.criticalBoundary_of_weightedMertensSquare' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [9090/9126] Replayed GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationEnergy
+info: GRWTSK/NumberTheory/Moebius/ReciprocalPrefixVariationEnergy.lean:119:0: 'GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationEnergy.reciprocalVariationBlock_le_cauchyBlock' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/ReciprocalPrefixVariationEnergy.lean:120:0: 'GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationEnergy.reciprocalVariationBlockUniform_of_cauchyBlockUniform' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/ReciprocalPrefixVariationEnergy.lean:121:0: 'GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationEnergy.criticalBoundary_of_reciprocalCauchyBlockUniform' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [9091/9126] Replayed GRWTSK.NumberTheory.Moebius.ReciprocalFluxKernelBounds
+info: GRWTSK/NumberTheory/Moebius/ReciprocalFluxKernelBounds.lean:112:0: 'GRWTSK.NumberTheory.Moebius.ReciprocalFluxKernelBounds.sqrt_increment_sq_le_reciprocal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/ReciprocalFluxKernelBounds.lean:113:0: 'GRWTSK.NumberTheory.Moebius.ReciprocalFluxKernelBounds.reciprocalFluxWeightSquareMass_le_log' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [9092/9126] Replayed GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationSummability
+info: GRWTSK/NumberTheory/Moebius/ReciprocalPrefixVariationSummability.lean:126:0: 'GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationSummability.reciprocalCauchyBlock_le_logVariationMajorant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/ReciprocalPrefixVariationSummability.lean:127:0: 'GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationSummability.criticalBoundary_of_reciprocalLogVariationSummable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [9093/9126] Replayed GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationPowerSaving
+info: GRWTSK/NumberTheory/Moebius/ReciprocalPrefixVariationPowerSaving.lean:145:0: 'GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationPowerSaving.reciprocalPrefixVariationSquare_le_four_mul' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/ReciprocalPrefixVariationPowerSaving.lean:146:0: 'GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationPowerSaving.reciprocalLogVariationMajorant_le_of_powerSaving' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/ReciprocalPrefixVariationPowerSaving.lean:147:0: 'GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationPowerSaving.reciprocalLogVariationSummable_of_powerSaving' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/ReciprocalPrefixVariationPowerSaving.lean:148:0: 'GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationPowerSaving.criticalBoundary_of_reciprocalPrefixVariationPowerSaving' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [9094/9126] Replayed GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationRecurrence
+info: GRWTSK/NumberTheory/Moebius/ReciprocalPrefixVariationRecurrence.lean:180:0: 'GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationRecurrence.reciprocalPrefixVariationSquare_succ' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/ReciprocalPrefixVariationRecurrence.lean:181:0: 'GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationRecurrence.reciprocalPrefixVariationSquare_eq_correlation_add_diagonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/ReciprocalPrefixVariationRecurrence.lean:182:0: 'GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationRecurrence.reciprocalVariationDiagonal_le_harmonic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/ReciprocalPrefixVariationRecurrence.lean:183:0: 'GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationRecurrence.reciprocalVariationDiagonal_le_log' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/ReciprocalPrefixVariationRecurrence.lean:184:0: 'GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationRecurrence.reciprocalVariationPowerSaving_of_mertensCorrelationPowerSaving' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/ReciprocalPrefixVariationRecurrence.lean:185:0: 'GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationRecurrence.criticalBoundary_of_reciprocalMertensCorrelationPowerSaving' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [9095/9126] Replayed GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationMertensEnergy
+info: GRWTSK/NumberTheory/Moebius/ReciprocalPrefixVariationMertensEnergy.lean:125:0: 'GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationMertensEnergy.reciprocalPrefixVariationSquare_succ_eq_mertensSquareIncrement' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/ReciprocalPrefixVariationMertensEnergy.lean:126:0: 'GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationMertensEnergy.reciprocalPrefixVariationSquare_eq_mertensSquareEnergy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/ReciprocalPrefixVariationMertensEnergy.lean:127:0: 'GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationMertensEnergy.mertensSquareEnergy_nonneg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/ReciprocalPrefixVariationMertensEnergy.lean:128:0: 'GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationMertensEnergy.pickupMertensPrefix_sq_le_mul_variation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/ReciprocalPrefixVariationMertensEnergy.lean:129:0: 'GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationMertensEnergy.reciprocalVariationPowerSaving_iff_mertensSquareEnergyPowerSaving' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/ReciprocalPrefixVariationMertensEnergy.lean:130:0: 'GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationMertensEnergy.criticalBoundary_of_mertensSquareEnergyPowerSaving' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [9096/9126] Replayed GRWTSK.NumberTheory.Moebius.MertensSquareEnergyPowerBound
+info: GRWTSK/NumberTheory/Moebius/MertensSquareEnergyPowerBound.lean:58:24: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: GRWTSK/NumberTheory/Moebius/MertensSquareEnergyPowerBound.lean:81:24: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: GRWTSK/NumberTheory/Moebius/MertensSquareEnergyPowerBound.lean:91:12: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: GRWTSK/NumberTheory/Moebius/MertensSquareEnergyPowerBound.lean:171:2: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: GRWTSK/NumberTheory/Moebius/MertensSquareEnergyPowerBound.lean:185:0: 'GRWTSK.NumberTheory.Moebius.MertensSquareEnergyPowerBound.mertensSquareEnergy_le_of_powerBound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/MertensSquareEnergyPowerBound.lean:186:0: 'GRWTSK.NumberTheory.Moebius.MertensSquareEnergyPowerBound.mertensSquareEnergyPowerSaving_of_mertensPowerBound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/MertensSquareEnergyPowerBound.lean:187:0: 'GRWTSK.NumberTheory.Moebius.MertensSquareEnergyPowerBound.criticalBoundary_of_mertensPowerBound_viaSquareEnergy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [9097/9126] Replayed GRWTSK.NumberTheory.Moebius.MertensSquareEnergyEquivalence
+info: GRWTSK/NumberTheory/Moebius/MertensSquareEnergyEquivalence.lean:82:42: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: GRWTSK/NumberTheory/Moebius/MertensSquareEnergyEquivalence.lean:98:18: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: GRWTSK/NumberTheory/Moebius/MertensSquareEnergyEquivalence.lean:125:0: 'GRWTSK.NumberTheory.Moebius.MertensSquareEnergyEquivalence.mertensPointwisePowerSaving_of_squareEnergyPowerSaving' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/MertensSquareEnergyEquivalence.lean:126:0: 'GRWTSK.NumberTheory.Moebius.MertensSquareEnergyEquivalence.squareEnergyPowerSaving_of_mertensPointwisePowerSaving' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/MertensSquareEnergyEquivalence.lean:127:0: 'GRWTSK.NumberTheory.Moebius.MertensSquareEnergyEquivalence.mertensSquareEnergyPowerSaving_iff_pointwisePowerSaving' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/MertensSquareEnergyEquivalence.lean:128:0: 'GRWTSK.NumberTheory.Moebius.MertensSquareEnergyEquivalence.criticalBoundary_of_mertensPointwisePowerSaving' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [9098/9126] Replayed GRWTSK.NumberTheory.Moebius.WeightedMertensSquareCorrelation
+info: GRWTSK/NumberTheory/Moebius/WeightedMertensSquareCorrelation.lean:140:0: 'GRWTSK.NumberTheory.Moebius.WeightedMertensSquareCorrelation.mertensSquareIncrement_eq_sub' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/WeightedMertensSquareCorrelation.lean:141:0: 'GRWTSK.NumberTheory.Moebius.WeightedMertensSquareCorrelation.weightedMertensSquarePartial_eq_incrementTail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/WeightedMertensSquareCorrelation.lean:142:0: 'GRWTSK.NumberTheory.Moebius.WeightedMertensSquareCorrelation.weightedMertensSquarePartial_eq_correlation_add_diagonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [9099/9126] Replayed GRWTSK.NumberTheory.Moebius.WeightedMertensSquareCorrelationBound
+info: GRWTSK/NumberTheory/Moebius/WeightedMertensSquareCorrelationBound.lean:250:0: 'GRWTSK.NumberTheory.Moebius.WeightedMertensSquareCorrelationBound.weightedMertensDiagonal_le_majorant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/WeightedMertensSquareCorrelationBound.lean:251:0: 'GRWTSK.NumberTheory.Moebius.WeightedMertensSquareCorrelationBound.weightedMertensSquareSummable_of_correlationUniform' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/WeightedMertensSquareCorrelationBound.lean:252:0: 'GRWTSK.NumberTheory.Moebius.WeightedMertensSquareCorrelationBound.correlationUniform_iff_weightedMertensSquareSummable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/WeightedMertensSquareCorrelationBound.lean:253:0: 'GRWTSK.NumberTheory.Moebius.WeightedMertensSquareCorrelationBound.criticalBoundary_of_weightedMertensCorrelationUniform' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [9100/9126] Replayed GRWTSK.Analysis.Fourier.QuadraticKernelTruncation
+info: GRWTSK/Analysis/Fourier/QuadraticKernelTruncation.lean:290:0: 'EulerP04RH.ConcreteTail.pickupKernel_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Fourier/QuadraticKernelTruncation.lean:291:0: 'EulerP04RH.ConcreteTail.timeKernel_norm_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Fourier/QuadraticKernelTruncation.lean:292:0: 'EulerP04RH.ConcreteTail.density_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Fourier/QuadraticKernelTruncation.lean:293:0: 'EulerP04RH.ConcreteTail.tail_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Fourier/QuadraticKernelTruncation.lean:294:0: 'EulerP04RH.ConcreteTail.polynomial_tail_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9101/9126] Replayed GRWTSK.MeasureTheory.Integral.QuadraticFourierFubini
+info: GRWTSK/MeasureTheory/Integral/QuadraticFourierFubini.lean:148:0: 'EulerP04RH.ConcreteFubini.triple_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/MeasureTheory/Integral/QuadraticFourierFubini.lean:149:0: 'EulerP04RH.ConcreteFubini.density_double_return' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/MeasureTheory/Integral/QuadraticFourierFubini.lean:151:0: 'EulerP04RH.ConcreteFubini.density_section_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/MeasureTheory/Integral/QuadraticFourierFubini.lean:152:0: 'EulerP04RH.ConcreteFubini.density_outer_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9102/9126] Replayed GRWTSK.Analysis.Fourier.MoebiusQuadraticReturn
+info: GRWTSK/Analysis/Fourier/MoebiusQuadraticReturn.lean:244:0: 'EulerP04RH.ConcreteIdentification.weightedSource_rawFourier' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Fourier/MoebiusQuadraticReturn.lean:245:0: 'EulerP04RH.ConcreteIdentification.weightedSource_inversion' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Fourier/MoebiusQuadraticReturn.lean:247:0: 'EulerP04RH.ConcreteIdentification.actual_identification' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Fourier/MoebiusQuadraticReturn.lean:249:0: 'EulerP04RH.ConcreteIdentification.literal_P04_of_concrete_budgets' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/Analysis/Fourier/MoebiusQuadraticReturn.lean:250:0: 'EulerP04RH.ConcreteIdentification.literal_RH_of_concrete_budgets' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [9103/9126] Replayed GRWTSK.Analysis.Fourier.SignedPrimePhaseExamples
+info: GRWTSK/Analysis/Fourier/SignedPrimePhaseExamples.lean:205:0: 'PPNCP04.Diagnostics.zero_phase_absolute_test_fails' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Fourier/SignedPrimePhaseExamples.lean:206:0: 'PPNCP04.Diagnostics.literal_moebius_composite_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Fourier/SignedPrimePhaseExamples.lean:207:0: 'PPNCP04.Diagnostics.covered_prime_two_small_cutoff_rejected' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Fourier/SignedPrimePhaseExamples.lean:208:0: 'PPNCP04.Diagnostics.abstract_growth_then_cancellation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/Fourier/SignedPrimePhaseExamples.lean:209:0: 'PPNCP04.Diagnostics.nondecreasing_natural_rank_rejected' depends on axioms: [propext, Quot.sound]
+info: GRWTSK/Analysis/Fourier/SignedPrimePhaseExamples.lean:210:0: 'PPNCP04.Diagnostics.geometric_exponential_loss_not_polynomial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [9104/9126] Replayed GRWTSK.NumberTheory.PrimeCounting.PrimeIntervalResponseEnergyGrowth
+info: GRWTSK/NumberTheory/PrimeCounting/PrimeIntervalResponseEnergyGrowth.lean:152:0: 'EulerP04RH.BandSource.primeState_first_order' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/NumberTheory/PrimeCounting/PrimeIntervalResponseEnergyGrowth.lean:153:0: 'EulerP04RH.BandSource.sourceEnergy_lower_on_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/NumberTheory/PrimeCounting/PrimeIntervalResponseEnergyGrowth.lean:455:0: 'PPNCP04.BandGrowth.wideBand_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/NumberTheory/PrimeCounting/PrimeIntervalResponseEnergyGrowth.lean:456:0: 'PPNCP04.BandGrowth.atom_tail_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/NumberTheory/PrimeCounting/PrimeIntervalResponseEnergyGrowth.lean:457:0: 'PPNCP04.BandGrowth.growthConstant_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/NumberTheory/PrimeCounting/PrimeIntervalResponseEnergyGrowth.lean:458:0: 'PPNCP04.BandGrowth.actual_band_energy_exponential' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9105/9126] Replayed GRWTSK.NumberTheory.PrimeCounting.PrimeShellEnergyGrowth
+info: GRWTSK/NumberTheory/PrimeCounting/PrimeShellEnergyGrowth.lean:346:0: 'HSSCP04.ShellObstruction.heavy_bin_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/NumberTheory/PrimeCounting/PrimeShellEnergyGrowth.lean:347:0: 'HSSCP04.ShellObstruction.actual_horizon_shell_energy_growth' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/NumberTheory/PrimeCounting/PrimeShellEnergyGrowth.lean:348:0: 'HSSCP04.ShellObstruction.horizon_shell_energy_not_polynomial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [9106/9126] Replayed GRWTSK.Analysis.InnerProductSpace.SignedCorrelationBudgetEquivalence
+info: GRWTSK/Analysis/InnerProductSpace/SignedCorrelationBudgetEquivalence.lean:51:0: 'HSSCP04.Settlement.signedCorrelationBudget_iff_HSS' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/InnerProductSpace/SignedCorrelationBudgetEquivalence.lean:52:0: 'HSSCP04.Settlement.unsigned_settlement_budget_refuted' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/InnerProductSpace/SignedCorrelationBudgetEquivalence.lean:53:0: 'HSSCP04.Settlement.HSS_requires_mature_matching' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9107/9126] Replayed GRWTSK.Order.WellFounded.AdditiveNaturalRank
+info: GRWTSK/Order/WellFounded/AdditiveNaturalRank.lean:51:0: 'HSSCP04.lowerRank_wellFounded' does not depend on any axioms
+info: GRWTSK/Order/WellFounded/AdditiveNaturalRank.lean:52:0: 'HSSCP04.descent_chain_length' depends on axioms: [propext, Quot.sound]
+ℹ [9108/9126] Replayed GRWTSK.Analysis.InnerProductSpace.SignedWindowPacketCertificates
+info: GRWTSK/Analysis/InnerProductSpace/SignedWindowPacketCertificates.lean:388:0: 'HSSCP04.SignedCharts.packet_signed_ledger' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/InnerProductSpace/SignedWindowPacketCertificates.lean:389:0: 'HSSCP04.SignedCharts.finite_coverage_returns_energy' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/InnerProductSpace/SignedWindowPacketCertificates.lean:390:0: 'HSSCP04.SignedCharts.narrow_certificate_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/InnerProductSpace/SignedWindowPacketCertificates.lean:392:0: 'HSSCP04.SignedCharts.SignedBudgetDerivation.sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/InnerProductSpace/SignedWindowPacketCertificates.lean:393:0: 'HSSCP04.SignedCharts.SignedBudgetDerivation.depth_le_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Analysis/InnerProductSpace/SignedWindowPacketCertificates.lean:395:0: 'HSSCP04.SignedCharts.uniform_certified_charts_imply_HSS' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9109/9126] Replayed GRWTSK.NumberTheory.Moebius.PrimeProductPrefixEnergy
+info: GRWTSK/NumberTheory/Moebius/PrimeProductPrefixEnergy.lean:210:0: 'PPNCP04.ActualDiagnostics.orderEnergy_completed' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/PrimeProductPrefixEnergy.lean:211:0: 'PPNCP04.ActualDiagnostics.EnergyEnclosure.contains_literal_integral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/PrimeProductPrefixEnergy.lean:212:0: 'PPNCP04.ActualDiagnostics.orderEnergy_le_max' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/PrimeProductPrefixEnergy.lean:213:0: 'PPNCP04.ActualDiagnostics.all_minus_baseline_energy_is_actual' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/PrimeProductPrefixEnergy.lean:214:0: 'PPNCP04.ActualDiagnostics.AdmissibleController.exactly_once' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/PrimeProductPrefixEnergy.lean:215:0: 'PPNCP04.ActualDiagnostics.AdmissibleController.union_complete' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/PrimeProductPrefixEnergy.lean:216:0: 'PPNCP04.ActualDiagnostics.AdmissibleController.total_mass_is_inventory_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/PrimeProductPrefixEnergy.lean:217:0: 'PPNCP04.ActualDiagnostics.no_small_eta_controller' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9110/9126] Replayed GRWTSK.NumberTheory.PrimeCounting.ReciprocalPrimeBlockCost
+info: GRWTSK/NumberTheory/PrimeCounting/ReciprocalPrimeBlockCost.lean:77:0: 'PPNCP04.controller_square_root_cost_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/NumberTheory/PrimeCounting/ReciprocalPrimeBlockCost.lean:78:0: 'PPNCP04.controller_cost_log_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/NumberTheory/PrimeCounting/ReciprocalPrimeBlockCost.lean:79:0: 'PPNCP04.controller_costs_have_log_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9111/9126] Replayed GRWTSK.NumberTheory.Moebius.SubsetPotentialObstruction
+info: GRWTSK/NumberTheory/Moebius/SubsetPotentialObstruction.lean:49:0: 'EulerP04RH.ASRefutation.universal_AS_refuted' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/SubsetPotentialObstruction.lean:50:0: 'EulerP04RH.ASRefutation.exists_actual_failed_AS_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9112/9126] Replayed GRWTSK.Logic.ProofEvidence.MoebiusResponseStatus
+info: GRWTSK/Logic/ProofEvidence/MoebiusResponseStatus.lean:121:0: 'PPNCP04.Ledger.pickupIdentification' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Logic/ProofEvidence/MoebiusResponseStatus.lean:122:0: 'PPNCP04.Ledger.orderedEnergyIdentity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Logic/ProofEvidence/MoebiusResponseStatus.lean:123:0: 'PPNCP04.Ledger.broadMultiplier' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Logic/ProofEvidence/MoebiusResponseStatus.lean:124:0: 'PPNCP04.Ledger.closure' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Logic/ProofEvidence/MoebiusResponseStatus.lean:125:0: 'PPNCP04.Ledger.logarithmicPrimeMass' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Logic/ProofEvidence/MoebiusResponseStatus.lean:126:0: 'PPNCP04.Ledger.originalASClosure' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Logic/ProofEvidence/MoebiusResponseStatus.lean:127:0: 'PPNCP04.Ledger.rawIntegralReturnBridge' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Logic/ProofEvidence/MoebiusResponseStatus.lean:128:0: 'PPNCP04.Ledger.terminalP04' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9113/9126] Replayed GRWTSK.NumberTheory.Moebius.QuadraticTransformBoundConversion
+info: GRWTSK/NumberTheory/Moebius/QuadraticTransformBoundConversion.lean:48:0: 'EulerP04RH.ConcreteCompletion.exact_signed_decomposition' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/QuadraticTransformBoundConversion.lean:49:0: 'EulerP04RH.ConcreteCompletion.literal_RH_of_fixed_signed_settlement' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/QuadraticTransformBoundConversion.lean:50:0: 'EulerP04RH.ConcreteCompletion.signed_settlement_iff_literal_P04' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [9114/9126] Replayed GRWTSK.Logic.ProofEvidence.DirichletResponseStatus
+info: GRWTSK/Logic/ProofEvidence/DirichletResponseStatus.lean:262:0: 'EulerP04RH.ProgramLedger.eulerRightLine' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Logic/ProofEvidence/DirichletResponseStatus.lean:263:0: 'EulerP04RH.ProgramLedger.nativeWindowRoute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Logic/ProofEvidence/DirichletResponseStatus.lean:264:0: 'EulerP04RH.ProgramLedger.conditionalTerminal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/Logic/ProofEvidence/DirichletResponseStatus.lean:265:0: 'EulerP04RH.ProgramLedger.HaarOrbitTransferRefuted' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9115/9126] Replayed GRWTSK.NumberTheory.Moebius.CompositeActivationExamples
+info: GRWTSK/NumberTheory/Moebius/CompositeActivationExamples.lean:125:0: 'HSSCP04.Diagnostics.fixture_echo' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GRWTSK/NumberTheory/Moebius/CompositeActivationExamples.lean:126:0: 'HSSCP04.Diagnostics.missing_composite_bridge_rejected' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [9117/9126] Built GRWTSK.Combinatorics.Sequences.PartialSumOrdering (1.5s)
+✔ [9118/9126] Built GRWTSK.Combinatorics.Sequences.DisjointTranspositions (2.0s)
+✔ [9119/9126] Built GRWTSK.Analysis.Fourier.ZModSubsetSum (2.3s)
+✔ [9120/9126] Built GRWTSK.Analysis.Fourier.ZModSubsetSumCompletion (2.2s)
+✔ [9121/9126] Built GRWTSK.Combinatorics.Sequences.ZeroSumIntervalRepair (2.5s)
+✔ [9122/9126] Built GRWTSK.Combinatorics.Sequences.PartialSumCertificate (2.6s)
+✔ [9123/9126] Built GRWTSK.Combinatorics.Sequences.PrimeCyclicRearrangement (3.2s)
+✔ [9124/9126] Built GRWTSK.DynamicalSystems.TransitionSystems.ModularCheckpoint (2.6s)
+✔ [9125/9126] Built GRWTSK (3.3s)
+Build completed successfully (9126 jobs).

@@ -1,0 +1,74 @@
+{
+  "scope": "Pre-repair active tooling; no historical receipt changed",
+  "files": [
+    {
+      "path": ".noeaaeue/scripts/check_moebius_response.py",
+      "preimage": ".noeaaeue/binding-repair/originals/.noeaaeue/scripts/check_moebius_response.py",
+      "sha256": "dd4bbe904825877c85d927c4df1a7b3d022d6f50853704a47519370f59d576b7",
+      "bytes": 103379,
+      "current_sha256": "55dccd5bc16c8b1e12b9e860e40336f9165200490428f53ad103e55b9d114d0f",
+      "current_bytes": 105687
+    },
+    {
+      "path": ".noeaaeue/scripts/moebius_response_inputs.py",
+      "preimage": ".noeaaeue/binding-repair/originals/.noeaaeue/scripts/moebius_response_inputs.py",
+      "sha256": "8c2b1409a99acf50baaf18171ae949d5ffd70f802b0c99a70a89450e9fdf00ec",
+      "bytes": 14886,
+      "current_sha256": "5e1c92fccf7a7aaf4e46fedc5cfb54612bd246536f8681241fc9cc7d410115c6",
+      "current_bytes": 16659
+    },
+    {
+      "path": ".noeaaeue/scripts/moebius_owner_census.py",
+      "preimage": ".noeaaeue/binding-repair/originals/.noeaaeue/scripts/moebius_owner_census.py",
+      "sha256": "9da237450fd7650876ea951286de5541138e61cc2294aeba170d39a1ffda6be1",
+      "bytes": 31592,
+      "current_sha256": "2d801d38c165c15aa539c7a0bb08a72e777b23fec813e8b98c1d184dcbd92b55",
+      "current_bytes": 28542
+    },
+    {
+      "path": ".noeaaeue/scripts/test_moebius_response_checker.py",
+      "preimage": ".noeaaeue/binding-repair/originals/.noeaaeue/scripts/test_moebius_response_checker.py",
+      "sha256": "f2da81c415ced6807065e7d48337049c46454dad2a1ffa16635d95810d10f2e5",
+      "bytes": 96010,
+      "current_sha256": "d395527d89ea49d899e0ff380dea6ab8a0ed6ed7633ad569043a3e6a363f7ba4",
+      "current_bytes": 96088
+    },
+    {
+      "path": ".noeaaeue/scripts/test_moebius_response_inputs.py",
+      "preimage": ".noeaaeue/binding-repair/originals/.noeaaeue/scripts/test_moebius_response_inputs.py",
+      "sha256": "22470d5044de2ff59f0a34b7f4202dfd3d796f59738d3c1a166829cabac73e5e",
+      "bytes": 7206,
+      "current_sha256": "22470d5044de2ff59f0a34b7f4202dfd3d796f59738d3c1a166829cabac73e5e",
+      "current_bytes": 7206
+    },
+    {
+      "path": ".noeaaeue/scripts/test_moebius_owner_census.py",
+      "preimage": ".noeaaeue/binding-repair/originals/.noeaaeue/scripts/test_moebius_owner_census.py",
+      "sha256": "ae1399dd2334cd09f5d2230273881e9d8e81d43d12d4454614456d904cf9c906",
+      "bytes": 30323,
+      "current_sha256": "ae1399dd2334cd09f5d2230273881e9d8e81d43d12d4454614456d904cf9c906",
+      "current_bytes": 30323
+    },
+    {
+      "path": ".noeaaeue/scripts/test_moebius_process_paths.py",
+      "preimage": ".noeaaeue/binding-repair/originals/.noeaaeue/scripts/test_moebius_process_paths.py",
+      "sha256": "fb8b54ef12cbb3bf8eee5012c5cec13d49395f4263421ddc0472864736ef4a77",
+      "bytes": 3931,
+      "current_sha256": "fa96366e457124464ead67d854a5b5cf3ef412ce2c0a14b0778960cdc48e3405",
+      "current_bytes": 7526
+    }
+  ],
+  "new_reviewable_artifacts": [
+    ".noeaaeue/bindings/moebius-historical-profile-v1.json",
+    ".noeaaeue/bindings/moebius-current-profile-v2.json",
+    ".noeaaeue/bindings/moebius-current-inputs-v2.json",
+    ".noeaaeue/bindings/moebius-current-inputs-v3.json",
+    ".noeaaeue/checks/MoebiusResponseOwnerAuditCurrent.lean",
+    ".noeaaeue/tests/fixtures/moebius/legacy-ordered-product.lean.txt",
+    ".noeaaeue/tests/fixtures/moebius/legacy-runtime-source.json",
+    ".noeaaeue/binding-repair/moebius-current-qualification.json",
+    ".noeaaeue/bindings/moebius-current-inputs-v4.json"
+  ],
+  "historical_observer_sha256": "138a5599d054dc03da34220df05e404a656a6c6716239c243484131d9d356209",
+  "historical_observer_unchanged": true
+}

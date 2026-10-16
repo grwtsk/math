@@ -1,0 +1,10 @@
+{
+  "schema": "documentation-replay-resource-guidance-final-v1",
+  "previous_edit_record": ".noeaaeue/binding-repair/validation-completion/documentation-attempt-03/workflow-resource-guidance.json",
+  "intermediate_preimage": ".noeaaeue/binding-repair/originals/validation-completion/documentation-attempt-03/intermediate-workflow.md",
+  "intermediate_sha256": "569552b5bdfef00d2e1c1ceca81347a75750d21d68942b7babeab7badf7fa0a6",
+  "final_page": ".noeaaeue/documentation/current-validation-workflow.md",
+  "final_page_sha256": "09f4ed747b7341b8bbca88b17ce8fe2e54d690ae9b6e60c758ac17963c9bbb8a",
+  "reason": "Explicitly name the proven small-fixture4GiB default and memory-intensive source imports; full commands retain explicit12288MiB limits.",
+  "mathematical_statement_changes": false
+}

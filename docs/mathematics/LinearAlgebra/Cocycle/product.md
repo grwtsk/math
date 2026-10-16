@@ -1,5 +1,6 @@
 # Cocycle products and endpoint gauges
 
+
 The product applies the newest factor on the left along an iterated base map. It retains independent base/carrier universes and a general `Monoid` assumption. The representation theorem uses the canonical ordered product with start zero and length n; the addition theorem retains the orbit shift `T^[n]` and factor order.
 
 Under the original `Group` assumption, gauge transfer has the exact form `B(T x)⁻¹ * A x * B x`. Its product telescopes to `B(T^[n] x)⁻¹ * product * B x`. Wrong multiplication order, omitted orbit shift and an incorrect final gauge endpoint are rejected by rational fixtures.
@@ -12,7 +13,9 @@ Direction: grwtsk contributors. Formalization and verification assistance: OpenA
 
 ## Source and verification scope
 
-[Source](../../../../GRWTSK/LinearAlgebra/CocycleProduct.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+[Source](../../../../GRWTSK/LinearAlgebra/CocycleProduct.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../../.noeaaeue/documentation/reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

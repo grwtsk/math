@@ -1,0 +1,13 @@
+{
+  "schema": "moebius-validation-completion-current-input-hashes-v1",
+  "sha256": {
+    ".noeaaeue/scripts/check_moebius_response.py": "72c42bcc265e76e8ea45480f3ee7e3c23f0e13d35f96a72497a789c1aea052a2",
+    ".noeaaeue/scripts/test_moebius_process_paths.py": "787c8f2514bfcc37e413984617946ab11cf4556460861fbd4302d39b77977f0c",
+    ".noeaaeue/scripts/moebius_response_inputs.py": "5e1c92fccf7a7aaf4e46fedc5cfb54612bd246536f8681241fc9cc7d410115c6",
+    ".noeaaeue/scripts/moebius_owner_census.py": "2d801d38c165c15aa539c7a0bb08a72e777b23fec813e8b98c1d184dcbd92b55",
+    ".noeaaeue/scripts/check_math_layout.py": "28340d93733f3551606b293e522b0a7775354d9d55753186b2521859be2a5cb6",
+    ".noeaaeue/scripts/source_observations.py": "a153565b7b3162470309f2fae9432110415b7934648a7f58f91f84821ab68125",
+    ".noeaaeue/bindings/current-source-observations.json": "79d9e73263a6790d60380d354fe472188045ebda3090f7ffdbd10d3e94e62614",
+    ".noeaaeue/bindings/moebius-current-inputs-v5.json": "1b97cf890556c282c22d344812d4ab072b80c27ca4254a3a611c8a451162dc05"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "schema": "moebius-historical-runtime-profile-v1",
+  "kind": "pinned-lean-generated-partial-recursor-profile",
+  "profile_sha256": "f782a16a10fdea61ae3e8a2d3e4f3bc48865dc6129c442f8f0e575378fbc3b85",
+  "entries": [
+    {
+      "helper": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator._unsafe_rec",
+      "original": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator",
+      "owner": "GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators",
+      "owner_source_sha256": "7ee299eed00ef1cf731e1e1b1ea7a507ae8e83d5ea0ed63f0861cf63f0e42f2c"
+    },
+    {
+      "helper": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator._unsafe_rec",
+      "original": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator",
+      "owner": "GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators",
+      "owner_source_sha256": "7ee299eed00ef1cf731e1e1b1ea7a507ae8e83d5ea0ed63f0861cf63f0e42f2c"
+    },
+    {
+      "helper": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.numerator._unsafe_rec",
+      "original": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.numerator",
+      "owner": "GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators",
+      "owner_source_sha256": "7ee299eed00ef1cf731e1e1b1ea7a507ae8e83d5ea0ed63f0861cf63f0e42f2c"
+    },
+    {
+      "helper": "GRWTSK.ProofHorizon.CorkscrewChamberCap.affectedClosure._unsafe_rec",
+      "original": "GRWTSK.ProofHorizon.CorkscrewChamberCap.affectedClosure",
+      "owner": "GRWTSK.Order.Closure.FiniteDependencyClosure",
+      "owner_source_sha256": "e78778c5b623abadfc23a668517cb4b1652ef6365962263b8440f8a156af5dec"
+    },
+    {
+      "helper": "GRWTSK.ProofHorizon.CorkscrewChamberCap.routeClosureFrom._unsafe_rec",
+      "original": "GRWTSK.ProofHorizon.CorkscrewChamberCap.routeClosureFrom",
+      "owner": "GRWTSK.Logic.Inference.FiniteRuleSystems",
+      "owner_source_sha256": "6bbe978cc4ba18d4bfefbadab3a7b256cdec7dffb6b7de9da18a688d9c4fa986"
+    }
+  ],
+  "helper_path": ".noeaaeue/checks/MoebiusResponseOwnerAudit.lean",
+  "helper_sha256": "138a5599d054dc03da34220df05e404a656a6c6716239c243484131d9d356209",
+  "scope": "Preserved prior five-pair/three-owner source generation. FiniteRuleSystems source pin is stale relative to current source; no current acceptance is asserted.",
+  "legacy_singleton": {
+    "source": "GRWTSK/Algebra/OrderedProduct.lean",
+    "source_sha256": "97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d",
+    "status": "historical; current source differs and does not inherit the runtime exception"
+  }
+}

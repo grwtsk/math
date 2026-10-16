@@ -1,0 +1,20 @@
+{
+  "route": "D",
+  "mathematical_object": "Arithmetic derivatives",
+  "strongest_checked_theorem": null,
+  "verification": "checked-prerequisites-2026-10-15.json covers named prerequisites; open edges unproved",
+  "remaining_premises": [
+    "derivative_identity",
+    "derivative_size",
+    "derivative_to_abc"
+  ],
+  "next_smallest_obligation": "Prove a finite arithmetic Wronskian identity and isolate a global nonvanishing size theorem with all-epsilon strength",
+  "refuted_lemmas": [],
+  "source_occurrences": [
+    "pasten-2106.16165v3"
+  ],
+  "source_coverage": "Sources/abc-source-coverage.json",
+  "formal_coverage": "selected prerequisite declarations only; no closed route to abc",
+  "target_closure": false,
+  "status": "OPEN_FRONTIER"
+}

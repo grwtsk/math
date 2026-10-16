@@ -4,16 +4,16 @@
 
 | Inventory | Count |
 |---|---:|
-| Object guides | 37 |
-| Documented object groups | 16 |
-| Distinct primary sources linked | 37 |
-| Lean source modules | 298 |
+| Object guides | 41 |
+| Documented object groups | 18 |
+| Distinct primary sources linked | 41 |
+| Lean source modules | 314 |
 | Archive intake records | 39 |
 | Selected catalog families | 1 |
 
 These counts measure documentation and source coverage. They do not count accepted theorems or establish that every source module is documented or checked. [Definitions and limits](../../reference/library-pages.md#count-definitions).
 
-At least 1702 source declaration commands, including 1391 theorem/lemma commands, across 247 parsed Lean source modules; 51 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
+At least 1917 source declaration commands, including 1571 theorem/lemma commands, across 263 parsed Lean source modules; 51 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
 
 ## Asymptotics
 
@@ -48,13 +48,31 @@ Linked primary-source scope: 25 source declaration commands, including 25 theore
 - [Autocorrelation derivatives and unsigned mass bounds](Convolution/derivative-energy.md).
 - [Compact autocorrelation regularity](Convolution/compact-correlation.md).
 
-## Fourier
+## FiniteSums
 
 1 object guide · 1 distinct linked primary source file.
 
-Linked primary-source scope: At least 0 source declaration commands, including 0 theorem/lemma commands, across 0 parsed Lean source modules; 1 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
+Linked primary-source scope: 11 source declaration commands, including 9 theorem/lemma commands, across 1 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
+- [Weighted and unweighted finite degree expressions](FiniteSums/weighted-degree-comparison.md).
+
+## Fourier
+
+3 object guides · 3 distinct linked primary source files.
+
+Linked primary-source scope: At least 39 source declaration commands, including 30 theorem/lemma commands, across 2 parsed Lean source modules; 1 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
+
+- [Character energy of balanced random partitions](Fourier/partition-character-energy.md).
+- [Finite subset sum laws and Fourier inversion](Fourier/subset-sum-laws.md).
 - [Fourier moments from Schwartz derivative seminorms](Fourier/schwartz-moments.md).
+
+## Fourier / FiniteAdditiveProjector
+
+1 object guide · 1 distinct linked primary source file.
+
+Linked primary-source scope: 8 source declaration commands, including 6 theorem/lemma commands, across 1 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+
+- [Finite additive-character projector](Fourier/FiniteAdditiveProjector/projector.md).
 
 ## Fourier / IntegerSeries
 
@@ -166,4 +184,4 @@ Linked primary-source scope: At least 11 source declaration commands, including 
 
 ## Sources and verification
 
-[Selected catalog](../../reference/results.md) · [Archive source candidates](../../reference/source-intake.md) · [Verification interfaces](../../reference/verification-interfaces.md).
+[Selected catalog](../../reference/results.md) · [Archive source candidates](../../reference/source-intake.md).

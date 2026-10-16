@@ -1,0 +1,4 @@
+'PPNCP04.Obstruction.finite_nc_contradiction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PPNCP04.Obstruction.exponential_input_not_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PPNCP04.Obstruction.eventual_nc_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PPNCP04.Obstruction.crude_inventory_reserve_nc' depends on axioms: [propext, Classical.choice, Quot.sound]

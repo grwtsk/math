@@ -449,3 +449,26 @@ attribution. Human direction: grwtsk contributors; local adaptation,
 formalization and checking: OpenAI Codex. Original primary generators,
 Gauss/character weights, marked completed sums and RH suppliers remain open.
 Correlated model/source review is not independent validation.
+
+Finite rooted prefix schedules
+-----------------------------
+GRWTSK/Combinatorics/DirectedGraph/PrefixTableSchedule.lean uses the existing
+State/batch/compaction/trace objects. Local formalization is MIT under
+grwtsk contributors direction with OpenAI Codex assistance. Imported Lean List
+source retains Apache-2.0 and named authors Parikshit Khanna, Jeremy Avigad,
+Leonardo de Moura, Floris van Doorn, Mario Carneiro and Kim Morrison.
+
+Third cyclotomic root reduction
+------------------------------
+GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicReduction.lean retains Apache-2.0
+and adapts openai/math@1581d4cbdd69a0faf34b2089614fe2a814316a6a,
+lean/OAI/NumberTheory/DirichletL/GaussSum/FiniteFourier.lean, omega/lambda/primitive
+proof lines493-505 and good reduction lines529-551 (raw SHA256
+0e8e4184de91161a75802e3a26abfd19a322dffa6441968bf9caeb25800b5d7c,
+Git blob06304e1efc036727b3fa27e37dd6a06ce0bf5e56). OpenAI project authorship
+and LICENSES/OpenAI-Apache-2.0.txt are retained. Mathlib Cyclotomic/Ideal retains
+Xavier Roblot2025, and named imported cyclotomic/number-field/norm/primitive-root
+source credits and Apache-2.0 remain. Human direction: grwtsk contributors;
+adaptation and formalization: OpenAI Codex. Original character/Jacobi/
+coefficient/common-support/RH suppliers remain open; correlated review is not
+independent validation.

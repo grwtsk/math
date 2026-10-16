@@ -1,0 +1,13 @@
+{
+  "schema": "binding-repair-preservation-observation-v1",
+  "checked_files": 8274,
+  "changed": [
+    "GRWTSK/Combinatorics/Sequences/PartialSumCertificate.lean",
+    "GRWTSK/Combinatorics/Sequences/PrimeCyclicRearrangement.lean",
+    "GRWTSK/DynamicalSystems/TransitionSystems/ModularCheckpoint.lean",
+    "GRWTSK.lean",
+    ".noeaaeue/cache/refs/current.json"
+  ],
+  "missing": [],
+  "meaning": "Current comparison; any concurrent change must be attributed and retained, never overwritten."
+}

@@ -1,0 +1,48 @@
+{
+  "schema": "abc-independent-status-v1",
+  "source_retrieval": {
+    "status": "partial; bounded generation complete",
+    "occurrences": 33,
+    "executed_queries": 24,
+    "download_attempts": 32,
+    "successful_downloads": 28,
+    "journal_fulltext_frozen": false
+  },
+  "statement_fidelity": {
+    "formal_target_forms": "checked at frozen definition scope",
+    "historical_source_correspondence": "open; independent source claims preserved"
+  },
+  "lean_elaboration": {
+    "status": "passed",
+    "library_modules": 14
+  },
+  "kernel_acceptance": {
+    "status": "passed selected exact scope",
+    "trust": 0,
+    "fatal_warnings": true,
+    "dependency_objects": "pinned cached objects reused; not a cold source rebuild"
+  },
+  "axiom_audit": {
+    "status": "passed",
+    "owned_declarations": 452,
+    "allowed_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "consumer_compilation": {
+    "status": "passed",
+    "positive_consumers": 4,
+    "intended_lean_rejections": 9
+  },
+  "objection_model_validity": "checked abstract model scope only",
+  "application_to_iut_validity": "open",
+  "repair_instantiation": "open; no source-specific inhabitant supplied",
+  "abc_target_closure": false,
+  "external_review": "not performed; internal model review is separate",
+  "repository_integration": "owned sources registered and imports added; admission and documentation rendering blocked by shared migration",
+  "publication_authorization": false,
+  "selected_receipt": "checked-prerequisites-2026-10-15.json",
+  "overall_status": "OPEN_FRONTIER"
+}

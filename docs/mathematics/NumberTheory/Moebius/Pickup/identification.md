@@ -39,7 +39,7 @@ witness is assumed or claimed.
 
 ## Source and verification scope
 
-[Source](../../../../../GRWTSK/NumberTheory/Moebius/PrimitiveIdentification.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../../reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+[Source](../../../../../GRWTSK/NumberTheory/Moebius/PrimitiveIdentification.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../../../.noeaaeue/documentation/reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

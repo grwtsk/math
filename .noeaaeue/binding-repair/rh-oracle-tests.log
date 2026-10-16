@@ -1,0 +1,6 @@
+..........
+----------------------------------------------------------------------
+Ran 10 tests in 0.019s
+
+OK
+{"schema": "actual-rh-oracle-adversarial-fixtures-v1", "tests_run": 10, "fixtures": 125, "python_optimized": false, "passed": true, "native_executed": false, "fixture_origin": "Two actual frozen native diagnostic observations; filename only normalized for isolated integration."}

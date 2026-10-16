@@ -1,0 +1,29 @@
+{
+  "schema": "concurrent-observation-drift-v1",
+  "created_at": "2026-10-16T02:28:36.886748+00:00",
+  "recorded_identity": "c4a27e10475e50491311723bf22245eed54a11376d748168ce84f535237da543",
+  "recorded_sha256": "7dac23206574f4bd3b8429acc1548df69c531678a67ff5ca60f52bdf82a64a19",
+  "observed_identity": "9cd0cd6d6b52683b29876dfcb275ef55a4f489eb90567329bf6a690361d7dc50",
+  "recorded_count": 847,
+  "observed_count": 847,
+  "added": [],
+  "source_bytes_changed": [
+    {
+      "path": "GRWTSK/Analysis/Fourier/FiniteExponentialLayers.lean",
+      "recorded_sha256": "44245d07a799b37c370572a43f768bff3c5f80d055f670e68d48686475454687",
+      "current_sha256": "c26805fc06086ceadbb09ef1a5d781a3de6d824ca30947f576bd16118d9f0943"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/Sequences/CyclicSumsetGrowth.lean",
+      "recorded_sha256": "afac487cb3f0e767754d2b7a6b625542db71eb70edfe573e55f4f462634a066e",
+      "current_sha256": "86b8f712206e943ec593cd324180e20f68d12522dda47d28b5ebb5c0045b6d47"
+    }
+  ],
+  "entry_changed": false,
+  "historical_inputs_changed": false,
+  "mathematical_admission": false,
+  "loader_status": "REFUSED",
+  "error": "current source bytes/role/classification drift: GRWTSK/Analysis/Fourier/FiniteExponentialLayers.lean",
+  "active_observation_updated": false,
+  "reason": "Bounded final check preserves the last successful observation; no refresh against continuously changing sources."
+}

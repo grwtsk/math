@@ -1,0 +1,13 @@
+{
+  "schema": "documentation-completion-render-v1",
+  "argv": [
+    ".noeaaeue/.local/root-cleanup/python-env/bin/python3",
+    "-B",
+    ".noeaaeue/scripts/check_documentation.py",
+    "--render"
+  ],
+  "exit_code": 0,
+  "seconds": 15.397,
+  "output": "175 maintained pages; 608 legacy dispositions; selected catalog and 5 hostile record controls passed\n",
+  "scope": "Current structural documentation projection only; no source edit, proof replay promotion or historical receipt rewrite."
+}

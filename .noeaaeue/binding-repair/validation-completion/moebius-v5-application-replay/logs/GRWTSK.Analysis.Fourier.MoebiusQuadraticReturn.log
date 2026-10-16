@@ -1,0 +1,9 @@
+'EulerP04RH.ConcreteIdentification.weightedSource_rawFourier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EulerP04RH.ConcreteIdentification.weightedSource_inversion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EulerP04RH.ConcreteIdentification.actual_identification' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EulerP04RH.ConcreteIdentification.literal_P04_of_concrete_budgets' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EulerP04RH.ConcreteIdentification.literal_RH_of_concrete_budgets' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

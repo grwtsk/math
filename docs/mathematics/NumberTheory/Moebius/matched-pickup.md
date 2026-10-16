@@ -438,13 +438,13 @@ rate-uniform constant.
 
 ### Implementation and evidence boundary
 
-[`dyadic_pickup_localization.py`](../../../../scripts/dyadic_pickup_localization.py)
+[`dyadic_pickup_localization.py`](../../../../.noeaaeue/scripts/dyadic_pickup_localization.py)
 implements the local atoms, independent literal filter, finite inverse,
 finite-horizon Gram, and integer-cell energies. Its optional ordered-pair
 check retains both orders. The unchanged rational root and Mobius sieve
 implementation comes from `one_third_energy.py` and is separately hash-bound.
 
-[`test_dyadic_pickup_localization.py`](../../../../scripts/test_dyadic_pickup_localization.py)
+[`test_dyadic_pickup_localization.py`](../../../../.noeaaeue/scripts/test_dyadic_pickup_localization.py)
 checks causal inversion in exact rational algebra, both finite norm bounds,
 actual root identities, startup, local-support independence, the positive
 actual off-diagonal counterexample, finite-versus-complete Gram entries,
@@ -453,12 +453,12 @@ inputs under optimized Python. Precision is checked before entering the
 cached root routine, including numerically equal inputs with wrong types.
 
 ```sh
-python3 -B scripts/test_dyadic_pickup_localization.py
-python3 -O -B scripts/test_dyadic_pickup_localization.py
-python3 -B scripts/dyadic_pickup_localization.py --cutoff 17/2 --pair-check
+python3 -B .noeaaeue/scripts/test_dyadic_pickup_localization.py
+python3 -O -B .noeaaeue/scripts/test_dyadic_pickup_localization.py
+python3 -B .noeaaeue/scripts/dyadic_pickup_localization.py --cutoff 17/2 --pair-check
 ```
 
-The [new source-bound receipt](../../../../evidence/number-theory/moebius/dyadic-pickup-localization-20261014.json)
+The [new source-bound receipt](../../../../.noeaaeue/evidence/number-theory/moebius/dyadic-pickup-localization-20261014.json)
 records actual runs, the initial failed validation control and its repair,
 and finite enclosures. Overlap of intervals is a consistency test, not a
 proof of a general identity. The analytic statements above are written proofs,
@@ -730,7 +730,7 @@ to the surviving core must therefore supply uniform aggregate control for
 growing differences and growing primitive parameters, with the actual
 finite-horizon kernel. No such bound is obtained from that theorem here.
 
-[`localized_mobius_pair_sectors.py`](../../../../scripts/localized_mobius_pair_sectors.py)
+[`localized_mobius_pair_sectors.py`](../../../../.noeaaeue/scripts/localized_mobius_pair_sectors.py)
 uses the unchanged finite localized Gram. It independently compares direct
 pairs, gcd regrouping with the shifted recording cutoff, and the integrated
 localized source. It reports every sector, including zeros and both signs;
@@ -739,11 +739,11 @@ sequences are labeled and do not inherit the Möbius ray-sign theorem.
 The prime certificates use independent trial division and exact integer
 counts. Rational enclosures are finite executable evidence, not Lean proofs.
 
-[`test_localized_mobius_pair_sectors.py`](../../../../scripts/test_localized_mobius_pair_sectors.py)
+[`test_localized_mobius_pair_sectors.py`](../../../../.noeaaeue/scripts/test_localized_mobius_pair_sectors.py)
 checks primitive gates, boundary equality, both orders, scaled cutoffs,
 actual and comparison signs, finite sector budgets, independent sieve
 values, and explicit prime-kernel lower constants. The
-[source-bound receipt](../../../../evidence/number-theory/moebius/localized-mobius-pair-sectors-20261014.json)
+[source-bound receipt](../../../../.noeaaeue/evidence/number-theory/moebius/localized-mobius-pair-sectors-20261014.json)
 records the normal and optimized runs and their exact source hashes.
 
 No source library, compiler pin, workflow, permission, or historical receipt

@@ -1,0 +1,1756 @@
+                                               THE STATEMENT OF MOCHIZUKI’S COROLLARY 3.12, INITIAL
+                                                 THETA DATA, AND THE FIRST TWO INDETERMINACIES
+
+                                                                         TAYLOR DUPUY AND ANTON HILADO
+
+
+
+
+arXiv:2004.13228v1 [math.NT] 28 Apr 2020
+                                                  Abstract. This paper does not give a proof of Mochizuki’s Corollary 3.12. It is the first
+                                                  in a series of three papers concerning Mochizuki’s Inequalities. The present paper concerns
+                                                  the setup of Corollary 3.12 and the first two indeterminacies, the second [DH20a] concerns
+                                                  log-Kummer correspondences and ind3, and the third [DH20b] concerns applications to
+                                                  Diophantine inequalities (in the style of IUT4). These manuscripts are designed to provide
+                                                  enough definitions and background to give readers the ability to apply Mochizuki’s state-
+                                                  ments in their own investigations. Along the way, we have faithfully simplified a number
+                                                  of definitions, given new auxillary definitions, and phrased the material in a way to maxi-
+                                                  mize the differences between Theorem 1.10 of IUT4 and Corollary 3.12 of IUT3. It is our
+                                                  hope that doing so will enable creative readers to derive interesting and perhaps unforeseen
+                                                  consequences of Mochizuki’s inequality.
+
+
+
+
+                                                                                         Contents
+                                             1. Introduction                                                                                      1
+                                             2. Background and Notation                                                                           5
+                                             3. Fake Adeles, Random Measurable Sets, and Pilot Objects                                            8
+                                             4. Indeterminacies and UΘ                                                                           17
+                                             5. Global Multiplicative Subspaces, Initial Theta Data, and E11a1                                   24
+                                             References                                                                                          34
+
+
+
+                                                                                    1. Introduction
+                                             It has been almost seven years since Mochizuki first released his manuscripts online and the
+                                           content of his inequality remains poorly understood today. In fact, at the time of the Oxford
+                                           workshop in December 2015, things were so opaque that Brian Conrad famously asked during
+                                           one of the sessions whether Mochizuki’s inequality even represented an inequality of two real
+                                           numbers. We have come a long way since then. (Let us begin by stating unambiguously
+                                           that Mochizuki’s inequality is an inequality of real numbers.)
+                                             The purpose of this paper and its sequels [DH20b] and [DH20a] is to put Mochizuki’s
+                                           inequality in a user friendly context for working mathematicians. While these manuscripts
+                                           do indicate in some places how certain parts of Mochizuki’s constructions work, they do not
+                                           attempt to give a proof of [Moc15c, Corollary 3.12]. Moreover we black-box and suppress
+
+                                             Date: April 29, 2020.
+                                                                                               1
+the anabelian geometry as much as possible (at some junctures this is simply not possible).1
+By the end of [DH20b] we will rigorously derive a variant of Theorem 1.10 of [Moc15d], (an
+effective version of Szpiro’s inequality for elliptic curves in “initial theta data”). In this, all
+of the assumptions will be made transparent — including the statement of Corollary 3.12
+and how to apply it.
+   Now about the black-boxes. Traditionally, Mochizuki’s work has been very difficult to
+discuss because of our inability to black-box his constructions. We have found a way to do this
+using model theory. In this manuscript (and its sequels) we work under the hypothesis that
+all of Mochizuki’s “functorial algorithms” can be expressed in terms of interpretations in the
+sense of model theory. We refer the reader to [Hod97, §4.3] for the basics of interpretations
+(the more topos-minded readers might be inclined to read [Car18, Definition 6.12] which
+provides a more categorical framework). We just mention in passing that for this to work we
+need to abandon classical finitary logic and allow for countable conjunctions of formulas and
+countably many sorts (this is by default done in the topos theory literature but is atypical
+of classical first order model theory literature). A development of “hard” model theory in
+this setting can be found, for example, in [Mar14]. For readers wanting a glimpse of how
+seriously Mochizuki’s theory is interconnected with model theory we point them to the large
+number of interpretation tables in the appendix of [DH20a] which document his handiwork.
+These tables (of ≈ 100 interpretations) account for about half of the interpretations occuring
+in IUT. 2
+   In order to begin the black-boxing process, one needs to develop the structures (in the sense
+of model theory) that are then to be interpreted in developments towards [Moc15c, Corollary
+3.12]. This manuscript does just that. We have broken down many of the definitions in IUT3
+which provide a sort of skeleton that require anabelian fuel to run. While unfortunately we
+do not give complete accounts of these interpretations (and how they interact), we give
+many remarks often labeled “connections to IUT papers” indicating where our definitions
+are coming from and where the reader can read more. For readers seeking a more qualitative
+understanding of how outer automorphisms of absolute galois groups of p-adic fields can
+affect invariants of elliptic curves related to Szpiro’s conjecture we refer them to [Jos20].
+   We begin by stating Mochizuki’s inequality unambiguously. Mochizuki’s Inequality ([Moc15c,
+Corollary 3.12]) states that for an elliptic curve E over a number field F sitting in initial
+theta data
+                                                              bad
+                                      (F /F, EF , l, M , V , Vmod , ǫ)
+
+the following inequality holds
+                                    d q ) ≤ −deg
+                                   −deg(P    d (Phull (U ) ).                                         (1.1)
+                                                 lgp    Θ
+
+
+
+
+  1Unlike many papers, here, the black-boxing is a feature and not a bug!
+  2 This appendix has been extracted and put on the first author’s webpage in the “Notes” section. This
+
+footnote will be removed once [DH20a] is put on the arxiv. Also, for the experts, we remark that we consider
+it an open problem to determine the minimal signatures for these interpretations.
+                                                     2
+   In §3 we set up definitions and notation necessary to make (1.1) precise. In particular we
+set up an “adelic” abelian group L which is abstractly isomorphic to a space that appears in
+[Moc15c, Proposition 3.9]. In Mochizuki’s notation L ∼
+                                                                ±
+                                                        = I Q (S F (n,◦D≻ ))VQ ). 3 The group
+L contains two very important regions UΘ and hull(UΘ ) involved in (1.1). The region UΘ is
+explictly given by
+                                UΘ = Ind2 ·(Ind1 ·(OL (−PΘ ))Ind3 ) ⊂ L                                    (1.2)
+The symbols Ind1, Ind2, and Ind3 are Mochizuki’s infamous indeterminacies. Here Ind1, Ind2
+are (factor-wise) Qp -vector space automorphisms (possibly p = ∞) and Ind3, which is the
+most complicated of the indeterminacies, is the subject of our second paper, and is a map
+on power sets. The order of operations in (1.2) is intentional and correct. We note that
+Mochizuki prefers to consider Ind1 and Ind2 as operating “at the same time” omiting this
+composition. We also note that Mochizuki’s definition of Ind3, is in terms of a containment
+of a particular region in a “log-shell” and omits any derivation of the kind we provide in
+[DH20a]. As stated before, the meaning of the symbol (OL (−PΘ ))Ind3 is a bit nuanced and
+is not just the application of the function Ind3 on a set OL (−PΘ ). The region OL (−PΘ )
+is built from (“Gaussian”) monoid actions and the operation Ind3 also uses these module
+structure in its definition in addition to a process Mochzuki calls log-linking.
+   To make the relation between the degrees appearing in (1.1) and “log-volumes” on L precise
+we state that L is equipped with a collection of subsets N (L) and a map ln ν : N (L) → R
+such that
+                                                    d (Phull(U ) ).
+                              ln ν L (hull(UΘ )) = −deg        lgp        Θ
+
+
+As there has been some confusion regarding this matter in the past, we would like to state un-
+equivocally that the “log-volumes” in [Moc15c] and [Moc15d] are not actually logarithms of
+volumes but rather averages of weighted sums of logs of normalized p-adic and archimedean
+Haar measures. To streamline the presentation we have found it convenient to think proba-
+bilistically in terms of random measure spaces and random measurable sets. This is new. In
+                       Q                                               P
+our formulation L = Lp (as abelian groups) and ln ν L (hull(UΘ )) := p ln ν Lp (hull(UΘ )p ).
+                                                                             Q          Q
+For p 6= ∞, a random measurable set Ap ∈ N (Lp ) can be viewed as Ap = ~v A~v ⊂ ~v L~v
+where each L~v is a finite dimensional p-adic vector space with a (normalized) Haar measure
+µ~v and ~v runs over sets of tuples of places of Q(jE ). Once the set indices ~v is given the
+
+  3There are actually 4 interpretations of this structure in [Moc15c] and various comparisons of these
+
+interpretations (and their expansions) are central to Mochizuki’s claims. There is
+      • the “holomorphic/frobenius” (hol/fr) interpretation [Moc15c, c.f. Theorem 3.11.ii.a (left terms)],
+      • the “holomorphic/etale” (hol/et) interpretation [Moc15c, c.f. Theorem 3.10.ii (forth display)],
+      • the “mono-analytic/frobenius” (ma/fr) interpretation [Moc15c, c.f. Thm 3.11.ii.a, (middle terms)],
+      • the “mono-analytic/etale” (ma/et) interpretation [Moc15c, Theorem 3.11.i.a].
+These interpretations have been listed in decreasing strength. We say that a structure S is stronger than
+another structure S ′ if and only if S interprets S ′ . We say that an interpretation I : [T1 ] → [S] is stronger
+than an interpretation I′ : [T2 ] → [S] if T1 interprets T2 as structures. Here we, for a structure S we are
+letting [S] denote a small connected groupoid of structures isomorphic to S.
+                                                       3
+structure of a probability space we define
+                                                            X
+           ln ν Lp (Ap ) := E(ln µ~v (A~v )/ dim(L~v )) =    (ln µ~v (A~v )/ dim(L~v )) Pr(~v).
+                                                             ~v
+
+In other words ln ν Lp (Ap ) the expectation of the random variable
+                                     ~v 7→ ln µ~v (A~v )/ dim(L~v ),
+as ~v varies over our sample space. These spaces, the conversion between degrees of divisors,
+and “measures” are exposited in detail in the sections surrounding §3.6. See Theorem 3.10.1
+for a proof of how these divisor/region conversions work. In the sequel this formalism
+allows us to state a probabilistic version of Szpiro’s inequality [DH20b, Theorem 1.0.3]. This
+inequality provides a nice milestone between [Moc15d, Theorem 1.10] (Mochizuki’s version
+of Szpiro’s conjecture under the initial theta data hypotheses) and [Moc15c, Corollary 3.12].
+   In [Moc15a, Definition 3.1, pg 61—63] Mochizuki introduces a notion of initial theta data
+(using several pages):
+                                                            bad
+                                  (F /F, EF , l, C K , V , Vmod , ǫ).
+In §5 we demystify this definition breaking it into digestable pieces. In this section we relate
+the definition of initial theta data to the theory of the classical modular curve X0 (l) and its
+Fricke involution. After giving the definitions we prove an existence theorem which uses the
+classical theory of transvections. Finally, once general existence is established, we construct
+an explicit tuple of initial theta data for the elliptic curve E/Q with Cremona label E11a1.
+We note that the methods here could, in principle, be used to generate databases of initial
+theta data, although it is unclear at the time of writing this if division field computations
+make it prohibitively expensive to run experiments.
+
+Acknowledgements. This article is very much indebted to many previous expositions of
+IUT including (but not limited to) [Fes15, Hos18, Ked15, Hos15, Sti15, Mok15, Moc17,
+Yam17, Hos17, Tan18, SS17]. The first author also greatly benefitted from conversations
+with many other mathematicians and would especially like to thank Yuichiro Hoshi and
+Arata Minamide for helpful discussions regarding Kummer theory and his patience during
+discussions of the theta link and Mochizuki’s comparison (also in places we borrow from
+their notation); Kirti Joshi for discussions on deformation theory in the context of IUT; Ki-
+ran Kedlaya for productive discussions on Frobenioids, tempered fundamental groups, and
+global aspects of IUT; Emmanuel Lepage for helpful discussions on the p-adic logarithm,
+initial theta data, aut holomorphic spaces, the log-kummer correspondence, theta functions
+and their functional equations, tempered fundamental groups, log-structures, cyclotomic syn-
+chronization, reconstruction of fundamental groups, reconstruction of decomposition groups,
+the ”multiradial representation of the theta pilot object”, the third indeterminacy, the sec-
+ond indeterminacy, discussions on Hodge Theaters, labels, and kappa coric functions, and
+discussions on local class field theory; Shinichi Mochizuki for his patience in clarifying many
+aspects of his theory — these include discussions regarding the relationship between IUT
+and Hodge Arakelov theory especially the role of ”global multiplicative subspaces” in IUT,
+                                                    4
+discussions on technical hypotheses in initial theta data; discussions on Theorem 3.11 and
+”(abc)-modules”, discussions on mono-theta environments and the interior and exterior cy-
+clotomes, discussions of the behavior of various objects with respect to automorphisms and
+providing comments on treatment of log-links and the use of polyisomorphisms, discussions
+on indeterminacies and the multiradial representation, discussions of the theta link, discus-
+sions on various incarnations of Arakelov Divisors, discussions on cyclotomic synchronization;
+Chung Pang Mok for productive discussions on the p-adic logarithm, anabelian evaluation,
+indeterminacies, the theta link, and hodge theaters; Thomas Scanlon for discussions re-
+garding interpretations and infinitary logic as applied to IUT and anabelian geometry. We
+apologize if we have forgotten anybody.
+   The authors also benefitted from the existence of the following workshops: the 2015 Ox-
+ford workshop funded by the Clay Mathematics Institute and the EPSRC programme grant
+Symmetries and Correspondences; the 2017 Kyoto IUT Summit workshop funded by RIMS
+and EPSRC; the Vermont workshop in 2017 funded by the NSF DMS-1519977 and Sym-
+metries and Correspondences entitled Kummer Classes and Anabelian Geometry; the 2018
+Vermont Workshop on Witt Vectors, Deformations and Absolute Geometry funded by NSF
+DMS-1801012.
+   The first author was partially supported by the European Research Council under the
+European Unions Seventh Framework Programme (FP7/2007-2013) / ERC Grant agreement
+no. 291111/ MODAG while working on this project.
+   The research discussed in the present paper profited enormously from the generous support
+of the International Joint Usage/Research Center (iJU/RC) located at Kyoto Universities
+Research Institute for Mathematical Sciences (RIMS) as well as the Preparatory Center for
+Research in Next-Generation Geometry located at RIMS.
+
+
+                             2. Background and Notation
+2.1. General Notation.
+
+
+2.1.1. p will always denote a prime.
+
+
+2.1.2. Sets denotes the category of sets, Ab denotes the category of abelian groups, Grp
+denotes the category of groups, Mon denotes the category of monoids, and VectF the category
+of F -vector spaces for some field F . Given a category C and objects a, b we let C(a, b) denote
+the hom set of those two objects in that category.
+
+
+2.1.3. If C is a category and C ∈ C we will let [C] denote the connected groupoid consisting
+of the subcategory of C of all objects isomorphic to C where the morphisms are isomorphisms.
+
+
+2.1.4. If A is an abelian group we will let AQ := Q ⊗Z A.
+                                               5
+2.1.5. We now define M pf for a commutative monoid M with unit. Let J is the divisibility
+category whose object are natural numbers and whose morphisms keep track of divisibility:
+n → m if m = dn; call this morphism d. We let M pf := colim D where D : J → Mon where
+D(n) = M for every n and the image of each morphism d is m 7→ md .
+  In the case that M is an abelian group M pf ∼
+                                              = M ⊗Z Q.
+
+2.2. Finite Probability Spaces. By a finite probability space we mean a pair (S, PrS )
+                                                                     P
+where S is a finite set and PrS : S → [0, 1] is a function satisfying s∈S PrS (s) = 1. When
+the context is clear we will use the notation S = (S, PrS ) and just refer to all probability
+functions as Pr rather than PrS . We may also use the notation (S, {ws }s∈S ) for (S, Pr) where
+we have let ws = Pr(s).
+  If f (x) is a vector valued function on S we define the expectation to be
+                                                   X
+                               E(f (x) : x ∈ S) :=    f (s) Pr(s).
+                                                    s∈S
+
+When the space over which the expectation being taken is clear we may also just write
+E(f (x)).
+   Given two such space (S1 , Pr1 ) and (S2 , Pr2 ) we form the independent product (S1 ×
+S2 , Pr1 × Pr2 ) by declaring Pr(s1 , s2 ) = Pr(s1 ) Pr(s2 ).
+
+2.3. Varieties and Galois Theory.
+
+2.3.1. If L is a field then L ⊃ L will denote an algebraic closure. Also GL = G(L/L) will
+denote its absolute Galois group.
+
+2.3.2. For an abelian variety A and an integer m we let A[m] denote its group-scheme of
+m-torsion points. Suppose now that A is defined over a field L. We may abusively write
+A[m] for the GL -module A[m](L). We will let ρm : GL → Aut(A[m]) denote the natural
+GL -representation. For m coprime to the characteristic of L we refer to ρm as the mod m
+Galois representation and we have A[m] ∼
+                                       = (Z/m)2g as abelian groups.
+
+2.3.3. If Z is a hyperbolic curve with compactification Z we will let Z c = Z \ Z denote
+the collection of cusps. We will also let π1alg (Z, z̄) denote the étale fundamental group of Z.
+When confusion doesn’t arise we may just write π1 instead of π1alg .
+
+2.4. Local Fields.
+
+2.4.1. We will let Cp denote the p-adic completion of Qp .
+
+2.4.2. Let K/Qp be a finite extension. Let π be a uniformizer of K. By the normalized
+valuation on K we mean the valuation ordK satisfying ordK (π) = 1. If L/K is a finite
+extension the we will let e(L/K) denote the ramification degree of the extension. Note that
+normalized valuations satisfy ordL = e(L/K) ordK . We will let |x|K = p− ordK (x) .
+
+2.4.3. If L/Qp is a finite extension then IL/L will denote the inertia group of L.
+                                                6
+2.4.4. Also we let rp = p−1/(p−1) ∈ R. This is the radius at which the p-adic logarithm and
+p-adic exponential become mutually inverse to each other.
+
+2.4.5. Let K1 , . . . Km be finite extensions of another field K0 all of which are discretely
+valued. Let L = K1 ⊗K0 · · · ⊗K0 Km . Let T = OK1 ⊗OK0 · · · ⊗OK0 OKm . We will let OL
+denote the integral closure/normalization of T in the total ring of fractions (which turns out
+                                                                                 L
+to be L). If we decompose L using the Chinese Remainder Theorem then L = rj=1 Lj and
+                                               L
+after a bit of work, one can check that OL =      OLj (see [Eis13, pg60; Exercises 3.14, 3,15;
+pg 251]).
+   Haar measures on tensor products are normalized so that µL (OL ) = 1.4
+
+2.4.6. Let L be a finite extension of Qp . We give L two norms. The first norm is |x|p :=
+p− ordp (x) where ordp is the valuation normalized so that ordp (p) = 1. The second norm is
+                            [K:Q ]
+kxkL = | NL/Qp (x)|p = |x|p p .
+  The field L has a Haar measure µL which we normalize to give OL measure 1. Since a ∈ L
+acts Qp -linearly by scalar multiplication we have µL (aU) = | det(a)|p µL (U) = kakL µL (U) for
+every measurable set U.
+
+2.4.7. If L is a complete archimedean field (∼
+                                             = R or C). We give L two norms (the second
+of which is actually a semi-norm in the complex case). We first let |x|∞ denote its usual
+                                    [L:R]
+absolute value and we let kxkL = |x|∞ .
+   We again note that L admits a Haar measure µL and for every a ∈ L× and every U ⊂ L
+measurable we have µL (aU) = kakL µL (U). This follows from the change of variables formula
+for integration, for example.
+
+2.5. Global Fields. In this section L will be a number field. We will let V (L) denote the
+collection of places of L. We let V (L)0 denote the finite places an V (L)∞ denote the infinite
+places. If f ∗ : L0 → L is an inclusion of fields there is a natural map f : V (L) → V (L0 ). If
+v0 ∈ V (L0 ) and f ∗ as above we will use the notation V (L)v0 = {v ∈ V (L) : f (v) = v0 }.
+
+2.5.1. For w ∈ V (L) we let Lw denote the completion of L with respect to this place. We
+will let Gw = GLw and often make a choices of embeddings L ⊂ Lw so that Gw ⊂ GL .
+
+2.5.2. If Z is a scheme over a number field L and w ∈ V (L) we will use the notation
+Zw = Z ×Spec L Spec Lw = Z ⊗L Lw = ZLw
+
+2.5.3. If v ∈ V (L)0 we let kxkv = kxkLv for x ∈ L or Lv . We will also let Ov = OLv denote
+the ring of integers and κ(v) denote the residue field.
+
+  4Mochizuki makes different choices for this normalization in IUT3 and IUT4. We will fix this convention
+
+once and for all.
+                                                   7
+                                  P
+                                                    d
+2.5.4. For an Arakelov divisor D = v∈V (L) av [v] ∈ Div(L)  then the Arakelov degree is
+given by
+                                   X                 X
+                          d (D) =
+                          deg        nv ln |κ(v)| +     nv ,
+                                     L
+                                                    v∤∞                v|∞
+
+                                        d (D) = deg
+and the normalized Arakelov degree is deg          d (D)/[F : Q]. If L ⊂ L′ is a field
+                                           L          L
+                      ′                                             d (D). We will
+                                                         d (φ∗ D) = deg
+extension and φ : V (L ) → V (L) is the induced map then deg                 L′            L
+    d 0 denote the divisors supported on V (L)0 .
+let Div(L)
+   If f ∈ L× then
+                               X                 X
+                   div(f ) =        ordv (f ) −    ln kf kv [v].
+                                         v∈V (L)0             v∈V (L)∞
+
+  If a = (av )v∈V (L) ∈ AL , the ring of adeles, then
+                                       X                   X
+                          div((av )) =     ordv (av )[v] −   ln kav kv [v].
+                                            v∤∞                  v|∞
+
+
+2.5.5. For all D ∈ d Div(L)0 there always exists some t = (tv ) ∈ AL such that D = div(t).
+Such a t is unique up to OA×L , and locally, we have the following conversion between Arakelov
+degrees and log volumes:
+                                                           d
+                            ln µLv (tv Ov ) = ln ktv kv = −deg(ordv (tv )[v]).                         (2.1)
+
+
+          3. Fake Adeles, Random Measurable Sets, and Pilot Objects
+  Mochizuki’s inequality is stated in terms of averages of degrees of tuples of Arakelov
+divisors (or equivalently averages of log volumes of tuples of adelic regions).5 In what follows
+                                                          ±
+we define the “measure spaces” L isomorphic to I Q (S F (n,◦D≻ ))VQ ) from [Moc15c, Prop
+3.9].6 These spaces and their “measures” are necessary for defining the right hand side of
+(1.1). As an abstract structure, the space L depends only on an extension of number fields
+F0 ⊂ K and a section V ⊂ V (K) of the natural map V (K) → V (F0 ). In what follows for
+v ∈ V (F0 ) we will use the notation v for its lift to V . The data (F0 , V ) is a fragment of
+“initial theta data”, a definition which will be given in full in §5.
+
+3.1. lgp Divisors. Two relevant objects for us will be the q and Theta pilot divisors as-
+sociated to an elliptic curve. The q-pilot divisor is an Arakelov divisor and the theta pilot
+divisor is an “lgp-divisor”, something we now define.
+
+  5 The reason for this is an artifact of the anabelian interpretations of 1) the Kummer class of (a root of)
+
+the Jacobi Theta function and 2) a collection of “evaluation points”. We suppress these details and refer the
+reader to the notes [Mor17] and the slides [Hos15] for an introduction to these ideas.
+   6 Again there are actually 4 interpretations of these spaces in his theory which we suppress. A large part
+
+of the anabelian theory is about passing between these interpretations with various module structures.
+                                                          8
+Definition 3.1.1. Let r be a natural number. An lgp-divisor 7 for a number field L is a tuple
+                     d Q . The degree of an lgp-divisor is simply the uniform average of
+(Pj )rj=1 where Pj ∈ Div(L)
+the degrees of its components:
+                                     r
+                    d             1 Xd                 dL (Pj ) : 1 ≤ j ≤ r).
+                    deglgp (P ) =       degL (Pj ) = E(deg
+                                  r j=1
+
+  To define the theta and q-pilot divisors we need to recall some basic facts about Tate
+uniformization.
+
+3.2. Tate Uniformizations. Recall that for all elliptic curves A over a field L, a finite
+extension of Qp , with |jA |L > 1 we have an isomorphism A(L) ∼ = Eq (L) where Eq is the Tate
+curve for some unique q ∈ L called the Tate parameter (a geometric invariant which can
+be written as a formal power series in 1/jE with integer coefficients). These parameters are
+important to us because of their relation to the minimal disriminant: ordL (q) = ordL (∆Eq )
+and each Eq is a minimal Weierstrass model. All of this is in [Sil13, Ch V], and some proofs
+are given in [DH20b, §3.5]. Later in §5 will we make use of the rigid analytic uniformizations
+     ×
+φ : L /q Z → Eq (L) to study torsion points.
+
+3.3. q-Pilot and Theta-Pilot. Let E be an elliptic curve over a number field F and let
+S ⊂ V (Q(jE )) be a non-empty collection of places of bad multiplicative reduction (for any
+model of E over the field of moduli). Since the places are multiplicative, E has a Tate
+uniformization with Tate parameter qv at all places v ∈ S. After fixing l a prime number we
+         1/2l
+let q = qv be a choice of 2lth root. The q-pilot divisor associated to (E, S, l) is then
+    v
+                                      X
+                              Pq :=                        d
+                                            ordv (q )[v] ∈ Div(Q(jE ))Q .
+                                                  v
+                                      v∈S
+
+
+The degree of this divisor is related to the minimal discriminant (see [DH20b, §3.8]) which
+plays a roll in the Diophantine applications.
+                                                         (l−1)/2
+  The theta pilot divisor is the lgp-divisor PΘ = (PΘ,j )j=1 ∈ Divlgp (Q(jE ))Q , where
+                                                X             2
+                                      PΘ,j =          ordv (q j )[v].
+                                                             v
+                                                v∈S
+
+Remark 3.3.1. Using Theorem 3.10.1 below we define the theta pilot region to be the region
+associated to this lgp-divisor OL (−PΘ ) ⊂ L; a “messed-up” version of this region play a role
+in the right hand side of (1.1).
+
+  The discussion of the space L begins with a discussion of log-volumes.
+
+  7lgp stands for Log Gaussian Procession
+                                                      9
+3.4. Normalizations of Log Measures. Let W be a finite dimensional Qp -vector space.
+Let µW denote a Haar measure and M(W ) its measurable sets. We define the normalized
+log-measure ln µW : M(W ) → R by
+                             ln µW (Ω) := log µW (Ω)/ dimQp (W ).                        (3.1)
+  As we will make use of conversions between regions and divisors it is convenient to restate
+(2.1) in normalized log-volume notation: Let F0 be a number field and v a non-archimedean
+place of F0 . Let av ∈ F0,v . We have
+                                                          d
+                                                         −deg(ord  v (av )[v])
+                       ln µF0,v (av Ov ) = ln |av |p =                         .         (3.2)
+                                                            [F0,v : Qp ]
+This is will be used often in our conversions, and we include it because the normalizations
+are easy to mess up.
+3.5. Random Measurable Sets. The right hand side of (1.1) is the expection of a random
+measurable set. We give the necessary definitions to make sense of this presently.
+Definition 3.5.1. Let S be a finite probability space. A random measure space over S is a
+tuple X = (Xs )s∈S where for each s ∈ S, Xs = (Xs , µXs ) is a measure space. A random mea-
+                                    Q                                    Q
+surable set is a set U = (Us )s∈S ∈ s∈S M(Xs ). We will let N (X) = s∈S M(Xs ) denote
+the collection of random measurable sets. The expected measure of a random measurable set
+is
+                                  ν(U) = E(µXs (Us ) : s ∈ S).
+The expected normalized log measure of a random measurable set is
+                                ln ν(U) = E(ln µ(Us ) : s ∈ S).
+Remark 3.5.2. In our applications, the components of our random measure spaces will be
+vector spaces or modules and it will be convenient to abusively use a symbol X for both
+                                               Q
+the tuple X = (Xs )s∈S and the product X = s∈S Xs . Similarly since there is a bijec-
+tion between random measurable sets and subsets of the product X which are products of
+measurable sets. In notation:
+                                  Y        Y
+                        N (X) ↔ { Us ⊂        Xs : Us ∈ M(Xs )},
+                                     s∈S        s∈S
+                                                      Y
+                                       (Us )s∈S ↔         Us .
+                                                  s∈S
+                                                                Q
+Because of this bijection we will conflate (Us )s∈S ∈ N (X) with s∈S Us ⊂ X when conve-
+                                                                        Q
+nient. In this same vein if (Ys )s∈S a random measure space then for X = s∈S Ys we write
+         Q
+N (X) = s∈S N (Ys ) and ln ν(U) = E(ln ν(Us ) : s ∈ S) for U ∈ N (X).
+Example 3.5.3. Suppose W is finite dimensional vector space over a complete local field
+                                                   L
+L which admits a direct sum decomposition W = m       i=1 Wi . Define a probability measure
+Pr : {1, . . . , m} → R by Pr(i) = wi := dim(Wi )/ dim(W ) so that ({1, . . . , m}, {wi }m
+                                                                                         i=1 )
+becomes a discrete probability space. One can define a collection of random measurable sets
+                                                 10
+                             L
+N (W ) on W of the form U = i Ui ⊂ W by asking Ui ∈ M(Wi ). That is the collection of
+                                       L
+random measurable sets on W is N (W ) = m   M(Wi ).
+                                       Li=1
+                                         m
+  A p-adic Mochizuki log-measure on W = i=1 Wi is a function ln ν : N (W ) → R defined
+        L
+on U = m  i=1 Ui by
+                                                                       m
+                                                                       X
+                ln ν W (U) = E(ln µWi (Ui ) : i ∈ {1, . . . , m}) :=         wi ln µWi (Ui ).        (3.3)
+                                                                       i=1
+
+In effect this is just expected measure of a random measurable set. We will call the tuple
+             L
+W = (W = m      i=1 Wi , Pr : {1, . . . , m} → R, ln ν W : M(W ) → R) a p-adic Mochizuki measure
+space.
+                                                                      L
+Remark 3.5.4. Let L over Qp be a finite extension. If W =               Wi is a p-adic Mochizuki
+measure space and each Wi is a L-vector space then we say Pr : {1, . . . , m} → R is Mochizuki
+                                                     L
+normalized if for every x ∈ L and every U = m           i=1 Ui ∈ M(W ) we have
+
+                                   ln ν(xU) = log |x|p + ln ν(U).                                    (3.4)
+All of our expected log measures of p-adic vector space will be Mochizuki normalized. The
+property of being Mochizuki normalized does not uniquely specify the weights of our expec-
+tations. This is a common misconception.
+
+  It turns out that for every direct sum decomposition of a p-adic vector space the normalized
+log-measure has an interpretation as a probability measure after choosing the appropriate
+weights. This will play a roll in our construction of “fake adeles”.
+                                                                                 L
+Lemma 3.5.5. If W is a Qp -vector space which admits a decomposition W = m          i=1 Wi then
+
+                                       ln µW (U) = ln ν W (U),                                       (3.5)
+where we define Pr : {1, . . . , m} → R by Pr(i) = dim(Wi )/ dim(W ).
+
+   In what follows, the “fake adeles” will be a construction where we replace the normal-
+ized log-measure in the expectations E(ln µWi (Ui )) with normalized log-measures of larger
+vector spaces W                                                                 ei )) where
+                   fi ⊃ Wi and then consider expectations of the form E(ln µ f (U
+                                                                            Wi
+Pr : {1, . . . , m} → R is still defined as Pr(i) = dim(Wi )/ dim(W ).
+
+3.6. Fake Adeles. Mochizuki’s inequality is stated in terms of “log measures” on tensor
+powers of rings of “fake adeles”. We define these presently.
+
+Definition 3.6.1. Fix an extension of number fields F0 ⊂ K and a section V ⊂ V (K)
+of the map V (K) → V (F0 ). The ring of fake adeles is the additive topological group
+      Q
+AV = v∈V (F0 ) Kv with the restricted product topology. At times we view this simply as a
+topological abelian group (forgetting the ring structure).8
+  8The only purpose of the topology is to induce topologies on the factors.        We make no use of local
+compactness and only consider “measures” of products of open sets.
+                                                   11
+  We will make use of two modifications of the fake adele construction. The first variant is
+the tensor power construction where for a non-negative integer r we define
+                                             Y
+                                   AV⊗r+1 :=    AV⊗r+1
+                                                   ,p
+                                                            p
+                 L
+where AV⊗r+1
+         ,p =     (v0 ,...,vr )∈V (F0 )r+1 Kv0 ⊗· · ·⊗Kv r and the product over p is given the restricted
+product topology. Here the tensor products are taken over Qp (observe that this definition
+works even for p = ∞). The second variant uses algebraic closures. We define the ind
+                  ⊗r+1
+topological ring AV         containing AV⊗r+1 by the formula
+                                   ⊗r+1      Y Y
+                                 AV        =                K v 0 ⊗ · · · ⊗ K vr
+                                          p v∈V (F0 )r+1
+                                                     p
+
+where again for the product over p we use the restricted product topology.
+  In each of these constructions we have a ring of integers. The ring of fake adeles is defined
+to be the ring                                 Y
+                               OV = OAV :=           Ov ⊂ AV ,
+                                                       v∈V (F0 )
+
+and for tensor powers the ring of integers is
+                                                        Y
+                                      OA⊗r+1 :=                 OA⊗r+1 .
+                                          V                        V ,p
+                                                      p∈V (Q)
+
+To expand OA⊗r+1 as a direct sum of domains we apply the discussion from §2.4.5 (which we
+             V ,p
+pursue in more detail in [DH20b, §3]). We will make use of the notation
+                                              O~v = O(v0 ,...,vr ) .
+to denote the ring of integers in K~v := Kv0 ⊗ · · · ⊗ Kvr for ~v ∈ V r+1   p . We will also let
+ln µ(v0 ,...,vr ) = ln µKv0 ⊗···⊗Kvr be the unique normalized log Haar measure on the tensor prod-
+uct of fields Kv0 ⊗ · · · ⊗ Kvr satisfying
+                                              ln µ~v (O~v ) = 0.                                   (3.6)
+Remark 3.6.2 (Connections to IUT papers). In [Moc15c, Proposition 3.9.i] normalizations
+of measures in tensor products rely on definability of O~v which requires knowledge of K~v
+as a ring and not merely as an additive topological group. In the case of a fixed non-
+archimedean prime p the main difference between interpretations of AV⊗r+1
+                                                                      ,p using fundamental
+groups ([DH20a, Corollary 1.10 Appendix]) and interpretations using absolute Galois groups
+of p-adic fields ([DH20a, Interpretations in G Appendix]) is that the fundamental group
+interpretations give the ring structure while the interpretations in absolute Galois groups
+only give topological groups. This makes OA⊗r+1 not definable in interpretations in absolute
+                                              V ,p
+Galois groups of p-adic fields. Remarkably, although one can only interpret the multiplica-
+tive monoid of a p-adic field using class field theory9 the additive Haar measures are still
+  9Jarden-Ritter gives examples of non-isomorphic p-adic fields whose absolute Galois groups are the
+
+isomorphic.
+                                                       12
+interpretable ([DH20a, Interpretations in G Appendix]). Also [Moc15c, Proposition 3.9] says
+that we can still enforce condition (3.6) on our Haar measure in the situation of [DH20a,
+Interpretations in G Appendix] since in the tensor product of p-adic fields K1 ⊗ · · · ⊗ Km
+(viewed as a just a finite dimensional p-adic vector space) by imposing a volume of any
+                                                      ×                    ×
+of the sets OK1 ⊗···⊗Km , OK1 ⊗ · · · ⊗ OKm , or log(OK 1
+                                                          ) ⊗ · · · ⊗ log(OK m
+                                                                               ) consistent with
+µK1 ⊗···⊗Km (OK1 ⊗···⊗Km ) = 1.
+
+  Finally, in order to define random measurable sets, we need to give the index sets V (F0 )r+1  p
+the structure of a probability space. First, the set (V (F0 )p , Pr : V (F0 )p → R) defines a finite
+probability space with
+                                            Pr(v) = [F0,v : Qp ]/[F0 : Q].
+Since products of probability spaces are probability spaces the sets V (F0 )r+1
+                                                                              p    also have the
+natural structure of a probability space. This gives AV⊗r+1
+                                                        ,p  the structure of a random   measure
+                ⊗r+1     Q                                        L
+space with N (AV ,p ) = ~v∈V (F0 )r+1 M(K~v ). Explicitly if U = ~v∈V (F0 )r+1 U~v we have
+
+                             ln ν A⊗r+1 (U) = E(ln µ~v (U~v ) : ~v ∈ V (F0 )r+1 ).
+                                     V ,p
+
+
+  We can now define L, which was one of the aims of this section.
+
+Definition 3.6.3. The space L and its Mochizuki measure ln ν L : N (L) → R are character-
+ized by the following formulas:
+                 Y                                                   X
+           L=       Lp ,                               ln ν L (B) =     ln ν Lp (Bp ),
+                   p                                                                    p
+                 (l−1)/2
+                   M                                                                           
+                                                                                            l−1
+          Lp =             AV⊗j+1
+                              ,p ,
+                                                                            (j+1)
+                                               ln ν Lp (B) = E ln ν A⊗j+1 (Bp     )|1 ≤ j ≤       ,
+                   j=1
+                                                                     V ,p                    2
+                   M
+       AV⊗j+1
+          ,p = (         Kv )⊗j+1,                   log ν A⊗j+1 (B) = E(log µ~v (B~v )|~v ∈ V (F0 )j+1
+                                                                                                    p ).
+                                                           V ,p
+                   v|p
+
+           Q                      Q (j+1)           (j+1)   Q
+Here B = p Bp ⊂ L where Bp = Bp            where Bp       = ~v B~v and in terms of random
+                                   Q                               Q
+measurable sets we have N (Lp ) = j N (AV⊗j+1             ⊗j+1
+                                            ,p ) and N (AV ,p ) =   ~v ∈V (F0 )j+1
+                                                                               p
+                                                                                   M(K~v ). We
+will abusively write N (L) for the products of sets from N (Lp ) and refer to ln ν L as the
+expectation of a random measurable set.
+
+   It remains to define interesting regions in L. These will be defined via an action of AV
+given in the next sections.
+
+3.7. Action through a Tensor Factor. Let K1 , . . . , Kr be finite extensions of Qp con-
+tained in a common algebraic closure. Let K0 denote their common intersection. The action
+                                      Q
+of a ∈ Kr−1 on K1 ⊗ · · · ⊗ Kr−1 = sj=1 Lj through the rth tensor factor is a semi-linear
+diagonal action in the Lj coordinates (see [DH20b, §3.3]). This means that Kr−1 ֒→ Lj for
+each j and that a acts via scaling by σj (a) for some automorphism σj of Lj on the jth factor.
+                                                          13
+ In our application we will let Ki = Kvi and take avr−1 ∈ Kvr−1 and U ∈ M(Kv0 ⊗ · · · ⊗
+Kvr−1 ) and get
+                                ln µ(v0 ,...,vr−1 ) (avr−1 · U) = ln |avr−1 |p + ln µ(U),                                            (3.7)
+where the action of avr−1 on Kv0 ⊗ · · · ⊗ Kvr−1 is through the rth tensor factor.
+
+3.8. Peel Decomposition. For each i ∈ {0, . . . , r} we can decompose AV⊗r+1
+                                                                         ,p in the following
+way:
+                  M
+      AV⊗r+1
+          ,p =             K (v0 ,...,vr )
+                     (v0 ,...,vr )∈V (F0 )r+1
+                                          p
+                                                                                                                            
+                        M                             M
+                 =                                                               K (v 0 ,...,vi−1 ) ⊗ K v ⊗ K (vi+1 ,...,vr )  .
+                     v∈V (F0 )p     ((v0 ,...,vi−1 ),(vi+1 ,...,vr ))∈V (F0 )rp
+
+Here we have “peeled off” all the summands of AV⊗r+1 ,p   where the ith tensor factor is equal
+to v ∈ V p . We call these summands Peelv AV ,p . When convient we will just write Peeliv
+                                             i ⊗r+1
+
+for Peeliv AV⊗r+1
+              ,p . We also will dispose of decompositions by the same name on AV
+                                                                                   ⊗r+1
+                                                                                        . Also
+observe that for each 0 ≤ i ≤ r we have
+                                               M
+                                    AV⊗r+1
+                                       ,p  =        Peeliv .                              (3.8)
+                                                                  v∈V (F0 )p
+
+We call the decomposition (3.8) the peel decomposition.
+  We remark that the peel decomposition allows us to define a AV -algebra structure on
+peeliv : AV × AV⊗r+1 → AV⊗r+1 for each r ∈ Z≥0 and each i with 0 ≤ i ≤ r. The map
+peeliv : K v → Peeliv is defined by (extending linearly)
+ peeliv (av ) · (bv0 ⊗ · · · ⊗ bvi−1 ⊗ bv i ⊗ bv i+1 ⊗ bvr ) = (bv 0 ⊗ · · · ⊗ bv i−1 ⊗ av bvi ⊗ bv i+1 ⊗ bv r ). (3.9)
+Here av just acts on each summand of Peeliv through the same tensor index.
+Remark 3.8.1 (Connections to IUT papers).      (1) The “peel map” and “peel decomposi-
+      tion” describe the situation of [Moc15c, Proposition 3.1]. In terms of Mochizuki’s
+      notation when α = i and A = S±   j+1 then we have a commutative diagram between
+      his notation and ours
+                                                log(α Fv )                  / log(A,α Fv )       .
+                                                          ∼                               ∼
+                                                                       i
+                                                                                      
+                                                                 peel
+                                                    Kv                  / Peeli A⊗j+1
+                                                                                  v       V ,p
+
+    (2) Mochizuki has good reason to work with finite sets A and elements α ∈ A rather
+        than standard integers. In IUT3 A is a set of conjugacy classes of decomposition
+        groups and α ∈ A is a particular class. From the theory of Kummer classes, these
+        classes index “evaluation points”. When restricting our Kummer class of (a root
+        of) the Jacobi theta function to these group we are anabelianly evaluating the theta
+                                                                    14
+       function at certain special points which return powers of the Tate parameter. See
+       [Mor17], [Sti12].
+   (3) The difference between the 4th display of [Moc15c, Proposition 3.2] and the mor-
+       phism log(α Fv ) → log(A,α Fv ) above (as in [Moc15c, Proposition 3.1]) is again the
+       interpreting structure. The structures log(A,α Dv⊢) ⊂ log(A Dv⊢Q ), for example, have a
+       similar commutative diagram relating to Peeliv ⊂ Aj+1V   but morphisms in that dia-
+       gram are only morphisms of ind-topological abelian groups with a random measure
+       structure and not ind-topological rings. This echos Remark 3.6.2
+3.9. Divisor/Modules Conversion. Let D ∈ d       Div(F0 )0,Q = ( d
+                                                                Div(F0 )0 )Q and let a =
+(av )v∈V ∈ AV be such that D = div(a). Fix some index i where 0 ≤ i ≤ r and define
+                                            M
+                              OL(r)
+                                 p
+                                    (−D)  =    OL(r)
+                                                  p
+                                                     (−D)
+                                                          p
+
+where                                  M
+                    OL(r)
+                      p
+                          (−D) =                   peeliv ((av )v∈V (F0 ) ) · OPeeli L(r)
+                                                                                      p
+                                                                                          .
+                                                                                        v
+                                   v ∈V (F0 )r+1
+                                   ~         p
+
+We make the following variant for lgp divisors: If D = (Dj ) ∈ Div(F0 )0,lgp then
+                                                    r
+                                                    M
+                                 OL (−D) :=                   OL(j) (−Dj ).
+                                                    j=1
+
+Finally, for the next section, in the special case that F0 = K, we use the notation OA⊗r+1 (−D) :=
+                                                                                      F0
+OL(r) (−D). In the very special case r = 0 we will just write OAF0 (−D).
+Remark 3.9.1 (Connections to IUT papers). The definition of the regions OL (−D) differ
+slightly from Mochizuki’s treatment as he uses certain monoid actions on the ind topological
+           ⊗r+1
+groups AV       rather than an action of AV . In [Moc15c, Proposition 3.4] he describes an
+action
+                               Y           ±                  Y        ±
+           ΨFLGP ((0,0) H )v ×       I Q (Sj+1 ,j;(0,1)Fv ) →    I Q (Sj+1 ,j;(0,1) Fv ).
+                            j∈S±
+                               j+1 \{0}                                  j∈S±
+                                                                            j+1 \{0}
+
+
+where in our terminology
+                                     ±
+                               I Q (Sj+1 ,j;(0,1) Fv ) ∼         ⊗j+1
+                                                       = Peeljv AV ,
+                           ΨFLGP ((0,0) H )v ∼
+                                                              2   (l−1)/2 N
+                                             = ((q j )j=1                    ×
+                                                                        ) · OK v ,∆
+                                                                                    ,
+                                                          v
+
+Where OK  ×      ∼                       (l−1)/2
+                 = {(a, a, . . . , a) ∈ Kv              ×
+                                                 : a ∈ OK   }. We observe that while the interpre-
+            v ,∆                                          v
+tation in [Moc15c, Proposition 3.4] has a ring structure (given by the construction in our
+appendix of the sequel [DH20a, Corollary 1.10 Appendix]) later, he passes on to reducts
+which are not rings (these use the interpretations here: [DH20a, Interpretations in G Ap-
+pendix])
+  In [Moc15c, Proposition 3.5.i, 3.5.ii] Mochizuki furnishes interpretations (kmod )α ⊂ (kmod )A ⊂
+                                   ⊛
+log(A FVQ ) here (kmod ) = Mmod ∼      = F0 = Q(jE ). The interpretation of these structures pass
+                                                     15
+through the theory of so-called “kappa coric functions” which are the global analog of the
+more familiar etale theta functions; these interpretations are developed in [Moc15a, §5].
+3.10. Degree/Volume Conversion. The following Theorem records conversions between
+divisors and regions. The normalizations are tedious so we wanted to record them here.
+Theorem 3.10.1. Let F0 ⊂ K be an extension of number fields. Let V ⊂ V (K) be a section
+of the natural map V (K) → V (F0 ). Let d = [K : F0 ]. In what follows all divisors will be
+supported only at finite places.
+    (1) (Conversion for Adeles) If D ∈ d
+                                       Div(F0 ) then for every r ≥ 1 we have
+                      d (D) = ln µ (OA (−D)) = ln µ ⊗r (O ⊗r (−D)).
+                     −deg F       AF
+                                  0
+                                      F0       0   A     A                 F0      F0
+
+
+   (2) (Conversion for Fake Adeles) If D ∈ d
+                                           Div(F0 )Z[1/d] then for every r ≥ 1 we have
+                    d (D) = ln ν A (OA (−D)) = ln ν L(r−1) (OL(r−1) (−D)).
+                   −deg F         V   V
+                              0
+
+
+   (3) (Conversion for lgp Divisors) If D = (Dj ) ∈ d
+                                                    Div(F0 )lgp,Z[1/d] then
+                                       d
+                                      −deg       (D) = ln ν L (OL (−D)).
+                                           lgp,F   0
+
+
+Proof.       (1) We give a proof of the first equality in (1). Let t = (tv )v∈V (F0 ) ∈ AF0 be such
+         that ordv (tv ) = ordv (D). It suffices to prove this equality for divisors supported over
+         a finite place p and hence consider the analogous statements for AF0 ,p . We have
+               ln µAF ,p (OAF0 ,p (−D)) = E(ln µF0,v (tv Ov ) : v ∈ V (F0 )p )
+                          0
+
+                                                    d
+                                            = E(−deg(ord  v (tv )[v])/[F0,v : Qp ])
+                                                −1     X
+                                            =            d
+                                                         deg(ord                    d
+                                                                    v (D)[v]) = −deg(D).
+                                              [F0 , Q]
+                                                               v|p
+
+       The second equality follows from (2.1).
+   (2) Let t ∈ AF0 be such that div(t) = D. Then without loss of generality we can suppose
+       that OLp(r−1) (−D) is defined via the rth peel map:
+                                        M
+                      OLp(r−1) (−D) =         peelvr−1
+                                                    r−1
+                                                        (tvr−1 ) · O(v0 ,...,vr−1 ) .
+                                            (v0 ,...,vr−1 )
+
+         This means
+            ln µA⊗r−1 (OLp(r−1) (−D)) = E(ln µ(v0 ,...,vr−1 ) (peelvr−1
+                                                                     r−1
+                                                                         (tvr−1 ) · O(v0 ,...,vr−1 ) ))
+                  F0 ,p
+
+                                           = E(ln |tvr−1 |p : (v0 , . . . , vr−1 ) ∈ V (F0 )rp )
+                                           = E(ln |tv |p : v ∈ V (F0 )p )
+                                                       d
+                                                       deg(ord  v (tv )[v])
+                                           = E(−                                 d
+                                                                            ) = −deg(D).
+                                                          [F0,v : Qp ]
+         The second line follows from (3.7), the last line follows from (2.1), and the last
+         equality follows exactly the same reasoning as the proof in item 1 for r = 1.
+                                                              16
+    (3) We will now prove the first equality of the second assertion. Fix t = (tv ) ∈ AV such
+         that ordv (tv ) = ordv (D). We have the following equalities
+                                       M
+       ln ν AV ,p (OV ,p (−D)) = ln ν(   tv Ov )
+                                       v|p
+
+                              = E(ln µv (tv Ov ) : v ∈ V (F0 )p ) = E(ln |tv |p : v ∈ V (F0 )p )
+                                   d
+                              = E(−deg(ord                                             d
+                                          v (tv )[v])/[F0,v : Qp ] : v ∈ V (F0 )p ) = −deg(D).
+
+
+        Note that the second equality is exactly the reason we defined ln ν in this “fake adelic”
+        way.
+    (4) Again, fix (tv ) ∈ AV so that ordv (tv ) = ordv (D). The proof here follows exactly as in
+        2 only starting with ln ν A⊗r (OLp(r−1) (−D)) and replacing all the v’s in the argument
+                                   V ,p
+        of the expectations with v’s.
+                                                                       L
+    (5) We now prove the the assertion in (3). We have OL (−D) = (l−1)/2  j=1    OL(j)
+                                                                                    p
+                                                                                       (−Dj ) and
+
+                                                                                 d
+           ln ν L (OL (−D)) = E(ln ν L(j) (OL(j) (−Dj )) : 1 ≤ j ≤ (l − 1)/2) = −deg(D)
+
+        where the second equality follows from assertion (2).
+                                                                                                          
+
+
+                                    4. Indeterminacies and UΘ
+   In this section we discuss the indeterminacies Ind1 and Ind2 appearing in (1.1). Readers
+who just want a formulas are referred to §4.6 and §4.8. Unpacking the definition of Ind1
+from [Moc15a, Proposition 6.9] for the purpose of explicit computations is laborious. At
+               (j)
+the level of Lp := AV⊗j+1
+                       ,p  elements of Ind1 are just automorphisms of the finite dimensional
+                      (j)                                                                  (j)
+Qp -vector spaces Lp induced by automorphisms of the Zp -lattice IV⊗j+1
+                                                                    ,p  ⊂ Lp defined by
+                                            M
+                                 IV⊗j+1
+                                    ,p  :=        I~v ,
+                                                    v ∈V (F0 )j+1
+                                                    ~         p
+
+
+where if ~v = (v 0 , . . . , v j ), then I~v = Iv0 ⊗ · · · ⊗ Ivj and for v ∈ V we define Iv = 2p1v log(Ov× ).
+The Iv are Mochizuki’s so-called log-shells. We will also see that the Ind2 indetermina-
+cies also preserve this lattice. Finally, we give a formula for an upper bound on the Ind3
+indeterminacies punting to [DH20a].
+
+4.1. Isomorphisms vs Automorphisms; trivializations. For a connected groupoid C it
+will be convenient to select a particular object C ∈ C and an isomorphism ϕX : X → C for
+each X ∈ C. Doing this will allow us to switch between the viewpoint of considering objects
+up to isomorphism and objects up to automorphism: if ψ : X1 → X2 then γ ∈ Aut(C) is
+given by γ := ϕX2 ψϕ−1 X1 . Conversely, given γ ∈ Aut(C) we isomorphism between X1 and X2
+is ψ := ϕ−1
+          X2 γϕ X1 . We will often call a fixed isomorphism like this a trivialization.
+                                                     17
+4.2. Polymorphisms. If C is a category we let Cpoly denote the poly-category where objects
+are the same as C but morphisms are now subsets of morphisms Cpoly (X, Y ) = 2C(X,Y ) .
+Composition of morphisms are done element-wise. Mochizuki uses these constructions to
+identify objects. In our construction we will identify objects.
+
+4.3. Capsules. The following notions are introduced in [Moc15a, §0, pg33].
+
+4.3.1. Let C be a category (usually a connected groupoid). A capsule is a collection of
+objects {Ai }i∈I indexed by a finite set I. We will sometimes just write A = {Ai }i∈I and
+view A : I → C as a diagram. A morphism of capsules
+
+                                    A = {Ai }i∈I → B = {Bj }j∈J
+
+is a pair (f, (Fi )i∈I ) consisting of an injective map of finite sets f : I → J and a collection of
+morphisms Fi : Ai → Bf (i) . We will sometimes just denote these by (f, F ). The category of
+capsules will be denoted by Cap(C). An n-capsule is a capsule with index set of cardinality
+n + 1.
+
+Remark 4.3.1. David Roberts (the Australian one) has pointed out to us that capsules are
+a special case of what SGA4 calls a semirepresentable objects. See [Aut19, Tag0DBB] for a
+modern treatment.
+
+4.3.2. A morphism A → B is a capsule-full poly-morphism if for all i ∈ I the map Fi :
+Ai → Bf (i) is a full polymorphism.10
+
+4.3.3. A morphism (f, F ) : A → B is a capsule-full poly-isomorphism if is capsule full
+polymorphisms and f is a bijection.
+
+4.4. Processions. This definition comes from [Moc15a, Definition 4.10]. Let C connected
+groupoid. Let J be a finite index set. Given a capsule XJ we will define a procession Prc(XJ )
+for an object X.
+
+4.4.1. A procession is a diagram D : (1 → 2 → · · · → n) → Cap(C) where D (j) is an
+(j + 1)-capsule and D (j) → D (j+1) is a capsule-full polymorphism for 1 ≤ j < n.
+
+4.4.2. A morphism of processions (D (1) → D (2) → · · · → D (n) ) → (E (1) → E (2) → · · · →
+E (m) ) is a pair (g, G) consisting of an order preserving map
+
+                                     g : {1, . . . , n} → {1, . . . , m}
+
+with a a collection G(j) : D (j) → E (g(j)) of capsule-full poly-morphisms.
+
+  10Equivalently this is a polymorphisms in the category of capsule morphisms which is full over the map
+
+of index sets f : I → J. This is how Mochizuki does it.
+                                                     18
+4.5. Local Frobenioids = Representations of Topological Groups On Monoids.
+This section is used to replace Mochizuki’s Frobenioids by simpler objects. See [Mor17,
+Obus’s section] for a brief introduction to Frobenioids. In the non-archimedean case the
+Frobenioids Fv⊢ are bi-interpretable11 with pairs of topological groups acting on ind-topological
+                              ∗                                    ∗
+monoids (Gv , M v ) ∈ [GKv , OK v
+                                  ]. We will use the notation (G, O ) for the interpretation from
+Frobenioids to ind-topological monoid representations. See [Tan18, Appendix] for details.
+4.5.1. Prime Strips. When reading this section keep in mind that all Frobenioids we will be
+considering are bi-interpretable with a topological group acting on an ind-topological monoid
+as in §4.5.
+   A prime strip F ⊢ (for this subsection they will be “mono-analytic/frobenius-like” in the
+language of Mochizuki) is a collection of local Frobenioids F ⊢ = (Fv⊢)v∈V . Following what
+is set out in [Moc15a, Definition 4.1.1.v] a morphism of prime strips F1⊢ = (Fv,1   ⊢
+                                                                                       )v∈V →
+   ⊢      ⊢                                                         ⊢       ⊢
+F2 = (Fv,2 )v∈V are just collections of morphisms of Frobenioids F1,v → F2,v for each v ∈ V .
+                                   ⊢
+Following §4.5 we replace each Fi,v   with its associated ind-topological monoid with group
+action.
+                                                                                                         ⊢
+4.6. Computation of Ind1. We will now determine the effect of Aut(Prc(FT⊢ )) on L :=
+L(Prc(FT⊢ )).12 Let T = {0, . . . , n}. Fix embeddings
+                                        f0              f1                fn−1
+                                  {0}        / {0, 1}         / ···           / {0, 1, . . . , n}
+
+of the index sets of a procession as required by 4.4 (note that Mochizuki uses the notation
+S±j+1 = {0, . . . , j}). Without loss of generality we will suppose they are order preserving.
+                                                   ⊢       ∗  ⊢
+   In what follows we let (Gi,v , M i,v ) = (G(Fv,i    ), O (Fv,i )) We will assume in this section that
+                                                     ′
+for all v ∈ V , Gi,v = Gi′ ,v for all indices i and i . In [Moc15c], Mochizuki considers these up to
+                                                                             ∗
+full polyisomorphism. Also for each i and v we fix ϕi,v : M i,v → OK           v
+                                                                                 (as in §4.1 for the pur-
+pose of exchanging automorphisms and isomorphisms) (we will also abusively use the same
+symbol for induced trivializations). Let K i,v = klog,+ (Gi,v , M i,v ) := O× (M i,v )/(torsion). We
+have the ind-topological group
+                                                        
+               (j)       M                       M                 M
+            Lp :=           K 0,v  ⊗ · · · ⊗      K j,v  =          K 0,v0 ⊗ · · · ⊗ K j,vj .
+                           v|p                          v|p                   (v 0 ,...,v j )
+
+The induced trivialization ϕi,v : K i,v → Kv of additive ind topological abelian groups induces
+trivializations      M                                 M
+                           K v0 ,0 ⊗ · · · ⊗ K vj ,j →     K v0 ⊗ · · · ⊗ K v j .          (4.1)
+                       (v 0 ,...,vj )                              (v 0 ,...,vj )
+
+By §4.4 and §4.5.1 an automorphism γ ∈ Aut(Prc(FT⊢ )) then is a collection of maps
+                                             (j)
+                                         Gi : (M j,i,v ) → (M j,g(i),v) )
+  11This just means from the point of view an interpretation as a functor, it is also equivalence of categories
+  12In [Moc15c] Mochizuki considers Aut(Prc(D ⊢ )) — i.e. embeddings of sets in structures interpreted from
+
+collections of absolute Galois groups of p-adic fields.
+                                                              19
+where 1 ≤ j ≤ n and 0 ≤ i ≤ j.
+  In what follows we will abusively conflate the automorphism γ with the isomorphism G
+                                                                               (j)
+using §4.1. At the level of the single tensor factor K v0 ⊗K v1 · · ·⊗K vj of Lp the capsule auto-
+                           (j)
+morphism γ (j) = (γi,v ), which we abusively write as γ = (γi,v ) can be described as (extending
+linearly) a permutation of tensor factors followed by a tensor product of automorphisms
+   x0,v0 ⊗ x1,v1 ⊗ · · · ⊗ xj,vj
+7→γg−1 (0),vg−1 (0) (xg−1 (0),v g−1 (0) ) ⊗ γg−1 (1),v g−1 (1) (xg−1 (1),g−1 (1) ) ⊗ · · · ⊗ γg−1 (j),vg−1 (j) (xg−1 (j),vg−1 (j) ).
+We observe that the codomain of this map is K v0 ⊗ · · · ⊗ K vj → K vg−1 (0) ⊗ · · · ⊗ K vg−1 (j) , and
+unfortunately, the multiple subscripts are necessary. If confusion arises the material around
+(4.2) should help.
+4.7. Procession Automorphism for n = 3. We will form an automorphism of Prc(X{0,1,2,3} )
+for some object X in an unspecified category under the convention that whenever a permuta-
+tion choice needs to be made, we select the permutation to be the standard cyclic permutation
+which increases indices by one. This is pictured in Figure 4.7.
+   Under this convention: a 3-procession consists of 2 + 3 + 4 object isomorphic to X,
+                                                             X1,0 , X1,1
+                                                       X2,0 , X2,1 , X2,2
+                                                   X3,0 , X3,1 , X3,2 , X3,3
+together with maps 2 + 3 maps between objects (again consult Figure 4.7)
+                                                       (1)
+                                                    F0       : X1,0 → X2,1 ,
+                                                       (1)
+                                                    F1   : X1,1 → X2,2 ,
+                                                     (2)
+                                                    F0 : X2,0 → X3,1 ,
+                                                     (2)
+                                                    F1 : X2,1 → X3,2 ,
+                                                     (2)
+                                                    F2 : X2,2 → X3,3 .
+The 3-procession Prc(X{0,1,2,3} ) actually consists three capsules indexed by j = 1, 2, 3 where
+                                                                                      (j)  (j)          (j)
+the jth capsule is the collection (Xj,i ) where 0 ≤ i ≤ j. For each j the collection F0 , F1 , . . . , Fj−1
+are the capsule morphisms constituting the procession (again we chose a fixed permutation
+for exposition).
+   We now consider the automorphism G. The simplest morphism of processions is pictured
+in Figure 4.7 and it has 2+3+4 maps:
+                                                       (1)
+                                                    G0 : X1,0 → X1,1 ,
+                                                       (1)
+                                                    G1 : X1,1 → X1,0 ,
+                                                       (2)
+                                                    G0 : X2,0 → X2,1 ,
+                                                       (2)
+                                                    G1 : X2,1 → X2,2 ,
+                                                       (2)
+                                                    G2 : X2,2 → X2,3 ,
+                                                                 20
+                                              (3)
+                                           G0 : X3,0 → X3,1 ,
+                                              (3)
+                                           G1 : X3,1 → X3,2 ,
+                                              (3)
+                                           G2 : X3,2 → X3,3 ,
+                                              (3)
+                                           G3 : X3,3 → X3,0 .
+                                                                                           (1)
+These morphisms are clumped into three morphisms of capsules. The morphisms Gi are
+                                                    (2)
+morphisms from the first capsule, the morphisms Gi make up a morphisms from the second
+             (3)
+capsule and Gi make up a morphism from the third capsule.
+  We now look at the special case when X is a split prime strip F ⊢ = (Fv⊢). Since the
+Frobenioids Fv⊢ are equivalent to objects (Gv , M v ) ∈ (Gv , OK
+                                                               ∗
+                                                                 v
+                                                                   ) we will view these mono-
+analytic prime strips are an infinite collection of monoids (M v )v∈V with groups and group
+                                                              ′
+actions understood. Any morphism of strips (M v ) → (M v ) is just a collection of morphisms
+of monoids (with Galois actions) for each v. In what follows the roman M’s without the
+                                               Gv
+bars will denote Galois invariants: Mv = M v . Now, for each object Xj,i in our procession
+Prc(X{0,1,2,3} ) gives a collection of monoids M j,i,v . Using the interpretations klog,+ (Mv ) :=
+Mv×µ := Mv× /(torsion) (∼  = Kv as an additive group topological group) we introduce
+                                          Kj,i,v := klog,+ (Mv ),
+
+which we are only viewing as additive topological groups.
+  If we suppose (for simplicity of exposition) that V p = {u, v, w, x}, so that there are only
+four places above p and will consider j = 2. The fragment
+                                     M
+                             L(2)
+                               p =       K2,0,a ⊗ K2,1,b ⊗ K2,2,c
+                                          (a,b,c)
+
+then has 64 = 4 · 4 · 4 direct summands, and on each factor we will have induced maps
+                                            (2)
+                                          G0,a : K2,0,a → K2,1,a ,
+
+                                            (2)
+                                          G1,b : K2,1,b → K2,2,b ,
+                                            (2)
+                                          G2,c : K2,2,c → K2,0,c ,
+which further induce maps
+              (2)     (2)     (2)
+             G0,a ⊗ G1,b ⊗ G2,c : K2,0,a ⊗ K2,1,b ⊗ K2,2,c → K2,0,c ⊗ K2,0,a ⊗ K2,2,b
+
+given by (extending linearly) the map
+                                                    (2)        (2)   (2)
+                            α ⊗ β ⊗ γ 7→ G2,c (γ) ⊗ G0,a (α) ⊗ G1,b (β).                     (4.2)
+                                    (2)      (2)
+To get the full maps G(2) : Lp → Lp , we just take the direct sum of the 64 = 4 · 4 · 4
+component morphisms described above. That is the simplest procession we can write down.
+                                                          21
+                                            Procession Morph
+
+
+
+
+                                                                        1-capsule
+
+            Capsule Maps
+           (order preserving)
+
+
+
+                                                                        2-capsule
+
+
+
+                         (2)                    Capsule Maps
+             0 ≤ i ≤ 2 Fi
+                                             (not order preserving)
+
+
+
+                                                                        3-capsule
+
+                                                        (3)
+                                                     Gi
+                                                    0≤i≤3
+
+
+                                Target Procession             Domain Procession
+
+Figure 1. A diagram containing the morphisms involved in a general au-
+tomorphism of Prc(X{0,1,2,3} ) for some object X of a category. Each bullet
+represents an object isomorphic to X (an object of some category). Each
+arrow represents an isomorphism of object. The inner square boxes repre-
+sent a capsule. The outer square boxes represent the collection of capsules
+constituting a procession. Arrows coming out of a capsule constitute a cap-
+sule morphisms. Note that there are two types in this definition: ones that
+are inter-procession and ones that are intra-procession. The inner-procession
+morphisms are part of the definition of a procession and are necessarily or-
+der preserving. The intra-processions morphisms are the collection of capsule
+morphisms that constitute a morphism of processions. Note that for the do-
+main procession we have omitted the inter-processions morphisms involved in
+the definition of the procession; they are the same as the ones on the right if
+the map is an automorphism and they can be another collection of order pre-
+serving capsule morphisms if we want our procession morphism to be between
+distinct processions (really, all inter-precession morphisms are the same up to
+a permutation of the index set so it doesn’t matter so much).
+
+
+
+                                                22
+4.8. p-adic Ind2. The theory of the second indeterminacy is well-documented in [Hos18,
+Theorem 7.6].
+  These indeterminacies are referred to as “isometries” in [Moc15b].13 They act through the
+group
+                  AutQp (K~v : I~v ) = {ϕ ∈ VectQp (K~v , K~v ) : ϕ(I~v ) ⊂ I~v ).
+Another way to see these are as Qp -vector space automorphisms which arise as Zp -lattice
+isomorphisms of Iv . Abusively, we will let Ind2 denote the collection of automorphisms
+                                      (j)
+induced by these automorphisms on Lp , Lp , and L (which are given as products of the
+automorphisms on each of the summands).
+                                                         ×µ
+   This means that there exists automorphisms of (Gv , M v ) ∈ [GKv , (K v , +)] which do not
+come from automorphisms of Gv . It turns out [Moc15b]
+Remark 4.8.1. The second indeterminacy is local and arises (at non-archimedean primes)
+from the fact that the functor
+                                         ×µ
+                                 [GKv , OK  ] → [GKv ]
+                                                    v
+
+is not faithful. This is relevant in the passage from ma/fr interpretations to ma/et interpre-
+tations.
+4.9. p-adic Ind3. This is covered in detail [DH20a]. This is a map Ind3 : 2L → 2L where 2L
+denotes the power set. Implicit in this indeterminacy are certain monoid actions on (factors
+of) L. Also, we assume a bound on OL (−PΘ )Ind3 which is given locally on the p-part in Peeljv
+component by
+                                        2
+                                    (q j /2l )N · Peeljv IV⊗j+1                         (4.3)
+                                           v
+
+4.10. The (Coarse) Multiradial Representation of the Theta Pilot Region. The
+multiradial representation of the theta pilot region is the region
+                              UΘ := Ind2(Ind1((OL (−PΘ ))Ind3 )) ⊂ L.                               (4.4)
+Remark 4.10.1. The notation UΘ follows [Tan18] who was the first to give this very important
+object notation. We remark that the order of operations and formulas for the indeterminacies
+do not appear in [Tan18] or [Moc15c, Moc15d].
+                                                                       Q
+4.11. Hulls. In this section we define hull(Ω) for Ω ⊂ L. As L = p Lp as abelian groups
+and each Lp is the direct sum of finitely many local fields it suffices to define hulls locally—
+              Q
+that is if Ω = p Ωp then
+                                              Y
+                                   hull(Ω) :=    hull(Ωp ).
+                                                        p
+Now fix p ∈ V (Q). Let L = L1 ⊕ · · · ⊕ Ls be a product of local fields. The hull of Ω ⊂ L is
+then defined to be the smallest polydisc containing Ω. That is,
+                     \
+           hull(Ω) := {DL1 (r1 ) ∩ · · · ∩ DLs (rs ) : DL1 (r1 ) ⊕ · · · ⊕ DLs (rs ) ⊃ Ω}.
+  13Invertible linear maps on finite dimensional Q -vector spaces have determinant one.     This means the
+                                                   p
+distortion factor (the determinant) is 1 and the measure of sets are preserved under these maps.
+                                                   23
+Remark 4.11.1. The idea here is that regions like the local factors of UΘ do not have module
+structures. The hull construction repairs this by taking the smallest possible module con-
+taining this regions. This construction is allegedly needed in order to relate the multiradial
+representation to a gluing of (intrepreted) realified q and theta pilots encountered in the
+so-called Theta link14. The purpose of doing this is to encode our region futher into another
+interpretation of Arakelov divisors suitable for comparison to another construction.
+
+      5. Global Multiplicative Subspaces, Initial Theta Data, and E11a1
+  In this section we explain the meaning of the “Initial Theta Data” parameters
+                                          (F, l, E, S, V , M , ǫ),
+appearing in Mochizuki’s theory. At a 0th order approximation, these are just constants
+satisfying enough hypotheses so that a zoo of anabelian interpretations apply simultaneously.
+Our exposition breaks the tuple (F, l, E, S, V , M , ǫ) into two parts: (F, l, E, S) and (V , M , ǫ).
+   The first chunk, (F, l, E, S), which we call “pre theta data” consists of an elliptic curve E
+over a field F together with a rational prime l and a collection of places of bad multiplicative
+reduction S. These parameters are then asked to satisfy some conditions related to the
+l-torsion that allow Mochizuki’s anabelian machine to run. These should be thought of
+“non-isotriviality conditions over the field with one element”.
+   The second part of the tuple, (V , M , ǫ), serves as a simulation for a “global multiplicative
+subspace” and “global canonical generator” (the precise definitions are given in §5.4). For
+Mochizuki, these serve as a fix to a failure of his approach to the ABC conjecture in his
+Hodge-Arakelov paper [Moc99]. There, his inequalities suffered from so-called “Gaussian
+poles” rendering them useless.
+   Finally, after the definition of initial theta data is given, we construct an explicit tuple
+(F, l, E, S, V , M, ǫ) where E is a base change of the elliptic curve over Q with Cremona label
+E11a1.
+Remark 5.0.1. We would like to acknowledge the notes [Mok15], which were an initial attempt
+to simplify Mochizuki’s three page definition of initial theta data in [Moc15a]. The authors
+found these notes useful when first learning the theory. Also, we would like to state that
+much of our understanding of the second part of the tuple, (V , M, ǫ), benefitted greatly from
+conversations with Mochizuki.
+5.1. Fricke Involutions. In the process of demystifying Mochizuki’s “initial theta data”
+we make use of the classical theory of the Fricke involution, which we now recall. Let Y0 (l)
+be the moduli stack15of elliptic curves with l-torsion subgroups isomorphic to the constant
+  14There are three versions of the theta links appearing in IUT: one in [Moc15a], one in [Moc15b], and one
+
+in [Moc15c]. The one that is relevant in the LGP×µ theta link of [Moc15c]. The construction in [Moc15c]
+depends critically on the auxillary constructions surrounding [Moc15b] so much of material can’t be skipped.
+   15 We note that pairs (E, M ) consisting of an elliptic curve together with an l-torsion subgroup have an
+
+involution which implies the moduli problem is not fine. One can define a course space as a quotient of
+Y1 (N ) which is fine. See for example [Par03, §7.1].
+                                                    24
+group scheme Z/lZ. For each field L, the L-rational points have the form [(E, C)] ∈ Y0 (l)(L)
+where [(E, C)] is an isomorphism classes of an elliptic curve E over L together with an order
+l cyclic subgroup C(L) ⊂ E[l](L) stable under G(L/L).
+
+Definition 5.1.1. The Fricke involution is the endomorphism Y0 (l) → Y0 (l) is given by
+
+                            (E, M) 7→ (E, M) := (E/M, E[l]/M).
+
+  We note that E and E are connected by an isogeny
+
+                                     f : E → E := E/M
+
+given by modding out by the cyclic subgroup M ⊂ E. We will call this isogeny the Fricke
+isogeny or Fricke cover. Note that E/M = (E/M)/(E[l]/M) = E/E[l] = E as the cokernel
+of multiplication by l is E; one can also see that E[l]/M ∼= M under these identifications.
+This show that the Fricke involution is indeed an involution.
+   Finally, we remark that in the stable compactification X0 (l) of Y0 (l) there are exactly two
+cusps. One which is a nodal cubic and the other which is a chain of l copies of P1 ’s in a
+loop. It in the extension of the Fricke involution to the compactification, these two curves
+in involution.
+
+5.2. Shimura Curves. For two subgroups Γ1 and Γ2 of PSL2 (R) we say Γ1 ∼ Γ2 if and
+only if [Γ1 : Γ1 ∩ Γ2 ] < ∞ and [Γ2 : Γ1 ∩ Γ2 ] < ∞. Also for a subgroup Γ0 we write
+Comm(Γ0 ) = {γ ∈ PSL2 (R) : γΓ0 γ −1 ∼ Γ0 }.
+  Let Y be a pointed hyperbolic curve over C. Let Ye = H be its universal cover and let ΓY
+be the image of π1 (Y ) → Aut(H) = PSL2 (R).
+
+Definition 5.2.1 ([Moc98, Definition 2.3]). We say that Y is a Shimura Curve if and only
+if there exists some O ⊂ Q an order in a quaternion algebra over a totally real field (which
+we regard as embedded in M2 (R)) such that
+
+                                      O ∩ SL2 (R) ∼ ΓY .
+
+Here the overline denotes the image of this group in PSL2 (R).
+
+  Shimura curves are rare. A result of Take cited at the end of §2 of [Moc98] states that for
+each (g, r) there are only finitely many hyperbolic Shimura curves of type (g, r).
+
+Remark 5.2.2. The avoidance of Shimura curves is important for anabelian reasons. Mochizuki
+needs algebraic curves Z over a number fields K which admits a so-called K-cores (terminal
+objects in a category LocK (Z)). This is used (say) in the reconstructions at the beginning
+of [Moc15b] and later applied in Mochizuki’s theta evaluation procedure. The existence of a
+K-core for ZK is implied by ZC being non-Shimura.
+   For an excellent exposition of the category LocK (Z) we refer the reader to [Sza15]. See
+also [Moc02, Remark 2.1.2].
+                                               25
+5.3. Initial Theta Data (Long Form Part 1). Initial Theta Data will consist of a large
+tuple
+                                            (F, l, E, S, V , M , ǫ).
+We will break this tuple into two parts. First, fix the following.
+      • Let F be a number field with algebraic closure F , and l a rational prime.
+      • Let E be an elliptic curve over F .16
+      • Let K = F (E[l]).17
+      • Fix (E, M) ∈ Y0 (l)(F ) and {ǫ, −ǫ} ∈ E[l](K)/ ± 1.
+   We now give conditions of the first part of the theta data.
+
+Definition 5.3.1. We say that (F, l, E, S) is pre theta data if and only if
+    (1) (Non-Shimura) EC \ o is not a Shimura curve.
+    (2) (Non-isotrivial) F/Q(jE ) is Galois and ρl (GF ) ⊂ Aut(E[l](F )) contains a subgroup
+        isomorphic to SL2 (Fl ).
+                                √
+    (3) (Torsion Conditions) −1 ∈ F and E(F ) ⊃ E(F )[30]
+    (4) (Places of Multiplicative Reduction) S ⊂ V (Q(jE ))0 is a non-empty set of places
+        such that every v ∈ S has odd residue characteristic and every model EQ(jE ) of E
+        over Q(jE ) has multiplicative reduction at v.
+    (5) (Congruence Conditions) Let EQ(jE ) be a model over the field of moduli. Let S ⊂
+        V (Q(jE )) be an admissible collection of bad places as above. For l the prime above,
+        and all v ∈ S we require
+         (a) l ∤ char(v) for all v ∈ S,
+         (b) l ∤ ordv (qv ),
+         (c) l ≥ 5,
+         (d) l ∤ [F : Q(jE )].
+
+   We give a couple remarks to aid the reader.
+
+Remark 5.3.2.     (1) If we follow [Moc15a, Definition 3.1] directly, condition 3 should use
+      6-torsion rather than 30-torsion. Since [Moc15d] later imposes a condition on 30-
+      torsion, we have decided to impose this condition presently.
+  (2) Condition 2 precludes elliptic curves having CM geometrically (as Galois representa-
+      tions of such curves have abelian image).
+  (3) This data is free of conditions on V . This means at this point we are free to choose
+      V to be whatever.
+
+  In order to formulate the conditions on the remaining part of the tuple (V , M, ǫ) we need
+to recall some fact about torsion in the Tate uniformization.
+   16Mochizuki uses X
+                        F = X = E \ o the punctured elliptic curve. Since elliptic curves have identities this
+data is implicit in E.
+  17Which is also ∼ F ker(ρl ) .
+                    =
+                                                      26
+5.4. Multiplicative Subspaces and Canonical Generators. The following “canonical
+splitting” of the torsion representation for Tate curves is needed both to make definitions
+and for explicit computations of initial theta data in §5.7.
+
+Lemma 5.4.1 ([Sil13, Chapter V]). Let L/Qp be a p-adic field. Let ordL be its normalized
+valuation. Let E/L be an elliptic curve with ordL (jE ) < 0 (so that it does not have potentially
+good reduction). Let l ≥ 3 be a prime not dividing ordL (jE ). There exists some σ ∈ IL/L
+and generators P1 , P2 ∈ E[l](L) such that
+
+                                               σ(P1 ) = P1 ,
+
+                                            σ(P2 ) = P1 + P2 .
+
+Proof. The basic strategy is to 1) show we can reduce to the case where we have split
+multiplicative reduction and ζl ∈ L, and 2) prove the split case. The proof of the split case
+goes as follows: Let q be the Tate parameter of E/L and let Q = q 1/l ∈ L be an lth root.
+Then L(Q, ζl )/L(ζl ) is a Kummer extension and G(L(Q, ζl )/L(ζl )) = hσi with
+
+                                               σ(Q) = ζl Q.
+                                                                                ×
+We will make use of the fact that the Tate uniformization φ : L /q Z → E(L) is an iso-
+morphism of GL -modules (using this isomorphism we have explicit description of torsion via
+         φ
+        − (ζlZQZ )/q Z ). We set
+E(L)[l] ←
+
+                                         P1 = φ(ζl ), P2 = φ(Q),
+
+and compute:
+                               σ(P1 ) = σ(φ(ζl )) = φ(σ(ζl )) = σ(ζl ) = P1 ,
+
+                     σ(P2 ) = σ(φ(Q)) = φ(σ(Q)) = φ(ζl Q) = φ(ζ) + φ(Q) = P1 + P2 .
+This completes the split multiplicative reduction case.
+   The reduction step says the following: If L′ /L is a finite extension with l ∤ [L′ : L] and
+there exists some σ ∈ IL/L′ and P1 , P2 ∈ E[l](L) such that σ(P1 ) = P1 and σ(P2 ) = P1 + P2
+whenever l ∤ ordL′ (jE ) then the same holds for L.
+   We give a proof of the reduction step. If l ∤ ordL′ (q) then there exists some σ ∈ IL/L′ with
+P1 and P2 giving a transvection. Suppose now l ∤ ordL (q). Since ordL′ (q) = e(L′ /L) ordL (q)
+we get that l ∤ ordL′ (q) unless l|e(L′ /L). By hypothesis, there exists some σ ∈ IL/L′ and
+P1 , P2 ∈ E(L) giving a transvection. Since IL/L′ ⊂ IL/L this gives the result.
+                                                    √
+   General case: suppose l ∤ ordL (q). Let L′ = L( γ, ζl ) so that EL′ has split multiplicative
+reduction and a root of unity (as in case (1)).18 We have that [L′ : L]|2(l − 1) and hence
+l ∤ [L′ : L]. The general result now follows from the reduction step.                         
+
+  18γ = −c /c
+             4   6
+                                                     27
+  The point here is we can find a unipotent matrix in the representation. That is there
+exists some P1 , P2 and σ such that
+                                                 
+                                              1 1
+                                    ρl (σ) =     ,
+                                              0 1
+
+with respect to the basis
+                                                      
+                                             1          0
+                                       P1 ↔   , P2 ↔   .
+                                             0          1
+
+Definition 5.4.2. An element σ together with a choice of basis P1 and P2 is called a
+transvection.
+
+   This now brings us to the main point of this subsection, the “local canonical splitting”
+(which Mochizuki attempts to globalize): If L/Qp is a finite extension, and E/L is an elliptic
+                                                                                    can
+curve with multiplicative reduction then there exists a canonical inclusion µl (L) −−→ E(L)[l]
+of GL -modules given by the following diagram.
+
+                    1       / µl (L)       / E(L)[l]             / Z/l         /1.        (5.1)
+                             ∼                  φ ∼              ∼
+                                                                  
+                    1        / ζZ         / ζ Z QZ /q Z    / ζ Z QZ /ζ Z q Z   /1
+                                 l          l                l           l
+
+We make two important remarks. First, the sequence (5.1) does not depend on the choices
+of Q and ζl . Second, the generator of the quotient is
+
+                                       Q ≡ q 1/l mod hζl , qi                             (5.2)
+
+and this class is uniquely determined. We record this situation using the following definition.
+
+Definition 5.4.3. Let L be a finite extension of Qp and E an elliptic curve over L with
+multiplicative reduction.
+   (1) We call the GL -submodule isomorphic to Fl (1) := µl (L) in (5.1) the (local) multi-
+       plicative subspace.
+   (2) We call the generator of the quotient of the GL -module E[l] isomorphic to Z/l (as
+       a GL -module) given in (5.2) the (local) canonical generator. (In terms of the Tate
+       uniformization, this is just the image of an lth root of the Tate parameter.)
+
+  Mochizuki wishes to globalize this situation. Consider the situation now an elliptic curve
+E over a number field F and let K = F (E[l]) be the l-division field of F associated to E.
+Fix M ⊂ E[l](K) isomorphic to Z/l as a subgroup, which we may or may not view it as a
+G(K/F )-module (most of the time it will be a subgroup which is not preserved by G(K/F )).
+   Let w ∈ V (K)0 and let v denote the place in V (F ) below w. Completing K at the place w
+gives the field Kw determines which naturally contains the completion of F at v; this gives
+                                                      28
+a diagram of inclusions
+                                         F          /K     .
+
+                                                      
+                                         Fv         / Kw
+
+We will let G(w/v) = G(Kw /Fv ) and also recognize it as the stabilizer of w ∈ V (K)v under
+the natural action of G(K/F ). In this way G(w/v) ⊂ G(K/F ) naturally. All of this gives
+E(K) ⊂ E(Kw ) = Ev (Kw ) (as groups) which allows us to view M as a subgroup of Ev (Kw ).
+We will let Mw denote this same group now viewed with a G(w/v)-action coming from the
+action of G(w/v) on Ev (Kw ). Note that most of the time this is not a G(w/v)-submodule
+— if M started as a G(K/F )-submodule then the restriction of the G(K/F )-action to a
+G(w/v)-action would give Mw the structure of a G(w/v)-submodule of Ev [l] but these the
+G(K/F )-submodules never exist. For future reference, for P ∈ E(K) we will let Pw denote
+the same element now viewed as an element in Ev (Kw ) (viewed as a G(w/v)-module). A
+final piece of notation: for each w ∈ V (K) we let
+                                      µl (w) ⊂ Ev (Kw )[l]
+be G(w/v)-sub module isomorphic to Z/l(1). We call this the local multiplicative subspace
+of E at w.
+
+Remark 5.4.4 (WARNING!). Note that Mw is not a base change of a group scheme to Kw or
+an object where we consider automorphisms on it which fix Kw . If you think in these terms
+you might confuse Mw with a module that has a trivial Galois action which is not what we
+want.
+
+   We can now state the globalizability question: is it possible to find some M ⊂ E(K) such
+that Mw = µl (w) for each w ∈ V (K) where E has multiplicative reduction? The answer is
+no, and this is stated in Mochizuki’s first paper on Hodge-Arakelov theory [Moc99, Chapter
+III]. Heuristically, there are (l + 1)-subgroups of E[l](K) isomorphic to Z/l as groups and if
+we think of M ⊂ EF [l] as random variable selecting some “random” Mw uniformly, then the
+canonical multiplicative subspace should be selected with probability 1/(l + 1).
+   Although such a choice of M can’t be achieved at all places, the purpose of (V , M , ǫ) is to
+simulate a “global multiplicative subspace” and “global canonical generator” by “rigging”
+V so that for each v ∈ V , we have Mv = µl (v). This is achieved in §5.5. We now give some
+definitions.
+Definition 5.4.5. Let w ∈ V (K) be a place of multiplicative reduction for EK sitting over
+v ∈ V (F ).
+   (1) Let M ⊂ E[l](K) be a sub G(K/F )-module isomorphic to Z/l as an abelian group.
+       We say that M is a global multiplicative subspace for w if
+                                         Mw = µl (w)
+       as a G(w/v)-module.
+                                               29
+    (2) Let ǫ ∈ M . We say that ǫ is a (spin) global canonical generator for w if the image of
+        ǫw in the M w (∼
+                       = Z/l by the first part) is ± the local canonical canonical generator
+        at w.
+If S ⊂ V (K) we will say that say that M is a global multiplicative subspace for S if it is for
+each w ∈ S. Similarly, we will say ǫ is a global canonical generator for S if it is for each
+w ∈ S.
+5.5. Initial Theta Data: “Fake” Global Multiplicative Subspaces and Canonical
+Generators. Let E be an elliptic curve over a number field F . Fix l a prime. Let K =
+             ker(ρl )
+F (E[l]) = F          be the field obtained by adjoining the l-torsion. Consider now the tuple
+                                          (V , M, ǫ).
+where
+    • V ⊂ V (K) is a lift of V (Q(jE )).
+    • M ⊂ E[l](K) is a subgroup. (↔ M ⊂ E[l](K) by Fricke)
+    • ǫ ∈ M (which we only care about up to ±1)
+  We can now state the definition of initial theta data.
+Definition 5.5.1. Fix (F, l, E, S) is a tuple of pre theta data. Let K = F (E[l]). Initial
+theta data is a tuple
+                                    (F, l, E, S, V , M, ǫ)
+where M is the Fricke involute of M a global multiplicative subspace (with respect to V ∩
+V (K)S ) and ǫ ∈ M(F ) is a global canonical generator (with respect to V ∩ V (K)S ).
+  If E is a member of a tuple of initial theta data we say E sits in initial theta data.
+5.6. Existence of Initial Theta Data. We now prove existence of initial theta data. We
+begin by giving initial theta data over a single place of bad reduction.
+Lemma 5.6.1 (Simple Initial Theta Data). Let F be a number field. Let E/F be an elliptic
+curve. Suppose that jE ∈/ OF . Let K = F (E[l]) for some rational prime l. For all but finitely
+many choices of l, there exists some P1 , P2 ∈ E[l](K) and some σ ∈ GF with such that
+                                                    
+                                                 1 1
+                                      ρl (σ) =      
+                                                 0 1
+with respect to this basis.
+Proof. Compare what follows to [Sil13, V.6.2]. Let w ∈ V (F )0 with |jE |w > 1. Fix an
+inclusions F ⊂ Fw so that we have Gw ⊂ GF . By the existence of local transvections there
+exists some σ ∈ Gw and Pw,1, Pw,2 ∈ E[l](Kw ) so that ρl (σ) is unipotent. We need now some
+M ⊂ E[l](K) and some ǫ ∈ M (K) (up to sign) such that after base change they identify
+with the q 1/l . The identifications of Gw ⊂ GK and E[l](F ) ⊂ E(Fw ) give the result letting
+S = {w}.
+                                                                                           
+                                              30
+  One claim of [Moc15d, Proposition 2.2] is that there exists a global multiplicative subspace
+M ⊂ E[l] relative to some V ⊂ V (K) a section of V (F0 ) (in the case when we have more
+than one bad prime). The lemma below verifies this assertion.
+Lemma 5.6.2 (Existence of Global Multiplicative Subspaces). For all M ⊂ E(F )[l] and
+all v ∈ V (F0 ) there exists some v ∈ V (K)v such that Mv ∼= µl (v). Performing this oper-
+ations allows us to construct a collection V for a given subspace M so that M is a global
+multiplicative subspace with respect to V .
+Proof. Call a pair (w, M) consisting of a place w ∈ V (K)v and a subspace M ⊂ E[l] good if
+M = µ(w). Note that if a pair (w, M) is good and σ ∈ GF then (σ(w), σ(M)) is good. This
+is because if σ(w) = w ′ then σG(w/v)σ −1 = G(w ′ /v) and we can write τ ′ = στ σ −1 for each
+τ ′ ∈ G(w ′/v). This then shows that the action of τ ′ on σ(M) performs as advertized since
+for each m ∈ M
+              τ ′ · σ(m) = στ σ −1 σm = στ (m) = σ(χl (τ )m) = σ(χl (m))σ(m).
+This proves σ(µ(w)) ∼ = µ(σ(w)).19
+  We will now apply the above to show that a collection of V exists. First let v 7→ ve be
+any set theoretic section V (F ) → V (K) of the natural projection V (K) → V (F ). Consider
+good pairs (ev, µ(e            v ) ⊂ E[l](K) is the unique subspace which is cyclotomic for
+                  v )) where µ(e
+G(ev /v) ⊂ G(K/F ). Note that GF acts transitively on both V (K)v and the subspaces of
+E[l](K) ∼= F2l by the hypothesis that ρl (GF ) ⊂ SL2 (Fl ). For each ve select some σv ∈ G(K/F )
+such that σv (µ(v)) = M. Defining a section V ⊂ V (K) by
+                                             v := σv (e
+                                                      v ),
+completes the proof. To define a section V (F0 ) → V (K) take any section V (F0 ) → V (F )
+and compose it with a section of the type described above.                              
+Remark 5.6.3. In [Moc15a, Definition 3.1] Mochizuki uses C K instead of M and defines ǫ as
+a cusp of C K rather that as an element of M (K). Here C K is a hyperbolic orbicurve defined
+over K (a stack), defined to be the quotient of X K by the elliptic involution. We claim that
+these are equivalent.
+   First suppose we are given the data of C K together with a cusp ǫ ∈ C cK . Since we have the
+maps C K → CK and XK → CK we can form the fiber product X K := C K ×CK XK which
+has the isogeny X K → XK . The kernel of the compactification of this map is M .
+   Conversely, suppose that we have M as (a quotient of E[l]) and ǫ. This determines the
+cover E as in the second part of §5.1, via the Galois correspondence.
+Remark 5.6.4. We parrot [Moc15a, Remark 3.1.3].
+  (1) (F, E, l, S, V , M , ǫ) is completely determined by (F, E, S, V , M).
+  (2) C K is determined up to K-isomorphism by (F, E, l, V ).
+  (3) Given choices of (E, l, S) the choices of V don’t affect the theory.
+  19Although the cyclotomic character might be modified slightly. The reader may wish to consult Chapter
+
+2, Lemma 1.3 of Mochizuki’s Hodge Arakelov Theory paper for a criteria for determining when a subspace
+is multiplicative.
+                                                  31
+5.7. Example: Initial Theta Data for E11a1. We now product initial theta data for the
+elliptic curve E/Q with Cremona label E11a1 (see http://www.lmfdb.org/EllipticCurve/Q/11/a/2).
+This elliptic curve is given by
+                              E : y 2 + y = x3 − x2 − 7820x − 263580,
+and its basic invariants are
+                                      c4 (E) = 496 = 24 · 31,
+                                      c6 (E) = 20008 = 23 · 41 · 61,
+                                          jE = −1 · 212 · 11−5 · 313 .
+We now go through the “Simple Initial Theta Data” computation (Lemma 5.6.1) for this
+curve explicitly.
+                                                              bad
+5.7.1. Non-empty Collection of Places of Bad Reduction S = Vmod   . There is only one place
+of bad reduction. That is at p = 11 and E has split multiplicative reduction at this place.
+This means S = {11} ⊂ V (Q).
+
+5.7.2. Minimal Weierstrass Model at p = 11. The local Weierstrass minimal model at p = 11
+of E is
+                            min
+                           E11  : y 2 + y = x3 − x2 − 10x − 20.
+As E is defined over Q which has class number 1 we have that this is a global minimal model.
+We record its invariants:
+                         Minimal discriminant valuation : 5
+                         Conductor exponent : 1
+                         Kodaira Symbol: I5
+                         Tamagawa Number:|E/E 0| = |Z/q| = ord(q) = 5
+
+5.7.3. The Tate Uniformization at p = 11. The Tate model of this curve is
+                              Eq11 : y 2 + xy = x3 + s4 (q11 )x + s6 (q11 ),
+where q11 is the Tate parameter. We have computed these out to O(1125 ) using Sage20:
+            q = q11 = 0.0, 0, 0, 0, 10, 2, 6, 6, 5, 4, 4, 1, 4, 1, 0, 5, 9, 9, 3, 3, 1, 3, 4, . . .
+                  s4 = 0.0, 0, 0, 0, 5, 7, 1, 0, 5, 9, 1, 9, 2, 10, 2, 0, 1, 6, 2, 6, 4, 10, 10, . . .
+                  s6 = 0.0, 0, 0, 0, 1, 8, 4, 4, 5, 5, 10, 2, 1, 8, 2, 7, 10, 9, 6, 3, 3, 8, 5, . . .
+Here the decimal is the beginning of the integral digits and commas separate 11-adic digits.
+We will make use of the the uniformization map
+                                              ×   Z    ϕ
+                                            Q11 /q11 −
+                                                     → E(Q11 ).
+  20 See http://doc.sagemath.org/html/en/reference/padics/sage/rings/padics/padic_extension_generic.html
+
+and http://sporadic.stanford.edu/reference/curves/sage/schemes/elliptic_curves/ell_tate_curve.html.
+                                                       32
+In particular for each n if we let ζn be a primitive nth root of unity and Qn = q 1/n be a
+choice of nth root we have
+
+                                 P1,n = ϕ(ζn ), P2,n = ϕ(Qn ) ∈ E[n](Q).
+
+                                   √
+5.7.4. Field F . We will let F = Q( −1, E(Q)[30]). To obtain E(Q)[30] “numerically” (the
+method we describe seems not practically computable) in Q we fix an embedding Q ⊂ Q11 .
+We than take the coordinates of the Tate uniformization and map them to our model over
+Q. Observe that ϕ = f ◦ φ where f : Eq → E is the morphism defined over Q11 (since
+E has split multiplicative reduction over Q11 — with a global minimal Weierstrass model
+defined over Q and φ the Tate uniformization of Eq ). This give Eq (Q11 )[30] ∼
+                                                                              = ζ Z QZ /q11
+                                                                                         Z
+             1/30
+where Q = q11 is some choice of 30th root of q and ζ is a primitive lth root of unity and
+taking the image of these points under f gives Q-points.
+
+5.7.5. Condition on l. The prime l = 13 satisfies the divisibility hypotheses of initial theta
+data. We have seen that ord(q) = 5, the only bad place is p = 11, and that the order of
+[F : Q(jE )] (here Q(jE ) = Q) can be computed by viewing F as a succession of prime torsion
+extensions. The order of the r-torsion extension divides | GL2 (Fr )| for a given prime r. The
+relevant orders for 30-torsion are given below:
+
+                             r |GL2 (Fr )| = (r 2 − 1)(r 2 − 1 − (r − 1))
+                             2                    6=2·3
+                             3                  48 = 24 · 3
+                             5                480 = 25 · 3 · 5
+
+
+5.7.6. Surjectivity of ρl . We require that ρl : GF → Aut(E[l]) contains a copy of SL2 (Fl )
+relative to some basis. It can be checked, for example, using Sage that the mod l Galois
+representation for l > 5 is surjective. We did this for l = 13.21
+
+5.7.7. Computation of the Field K. We have K = F (EK [l](F )) for l = 13; There are
+two approaches to explicit computations. One may use the Weierstrass uniformization (at
+archimedean places) and the Tate uniformization (at both archimedean and non-archimedean
+places).
+
+5.7.8. The generator ǫ. We use (the image of) q 1/l where q is the Tate parameter at p = 11
+                                                                                          ×
+and l = 13. These values can be gleaned from the Tate uniformization: (Q11 /q Z )[13] =
+          1/13                                                                                  1/13 1/6
+(ζ13 )Z (q11 )Z /q11
+                  Z
+                     . So the torsion field at a local place has the form Kv = Q11 (ζ6 , ζ13 , q11 , q11 ).
+
+  21We note that l = 7 also works.
+                                                   33
+5.7.9.
+
+Remark 5.7.1. One could hope to generate simple example of initial theta data where K is
+small by looking for some E over Q with many Q-rational torsion points. This approach
+is hopeless. Recall that Mazur’s Theorem says that if E is an elliptic curve defined over Q
+then the torsion then the possible torsion subgroups of E(Q) are C1 , C2 , . . . , C10 , C12 , C2 ⊕
+C4 , C2 ⊕ C4 , C2 ⊕ C6 , C2 ⊕ C8 . Here Cn denotes the cyclic group of order n.
+   We would also like to point out that Szpiro’s inequality implies a uniform computable
+bound on the number of torsion points in a field F [Sil13, Exercise 5.16].
+
+                                               References
+[Aut19]  Stacks Project Authors, Stacks project, 2019. 4.3.1
+[Car18]  Olivia Caramello, Theories, sites, toposes: Relating and studying mathematical theories through
+         topos-theoretic’bridges’, Oxford University Press, 2018. 1
+[DH20a] Taylor Dupuy and Anton Hilado, Log-Kummer Correspondences and Mochizuki’s Third Indeter-
+         minacy, pre-print (2020). (document), 1, 2, 1, 3.6.2, 3.9.1, 4, 4.9
+[DH20b]          , Probabilistic Szpiro, Baby Szpiro, and Explicit Szpiro from Mochizuki’s Corollary 3.12,
+         pre-print (2020). (document), 1, 1, 3.2, 3.3, 3.6, 3.7
+[Eis13]  David Eisenbud, Commutative algebra: with a view toward algebraic geometry, vol. 150, Springer
+         Science & Business Media, 2013. 2.4.5
+[Fes15]  Ivan Fesenko, Arithmetic deformation theory via arithmetic fundamental groups and nonar-
+         chimedean theta-functions, notes on the work of Shinichi Mochizuki, Eur. J. Math. 1 (2015),
+         no. 3, 405–440. MR 3401899 1
+[Hod97] Wilfrid Hodges, A shorter model theory, Cambridge University Press, Cambridge, 1997.
+         MR 1462612 1
+[Hos15] Yuichiro Hoshi, IUT Hodge-Arakelov-theoretic evalutation, 2015. 1, 5
+[Hos17]          , [IUTchIII-IV] from the point of view of mono-anabelian transport, 2017. 1
+[Hos18]          , Introduction to mono-anabelian geometry, 2018. 1, 4.8
+[Jos20]  Kirti Joshi, On Mochizuki’s idea of Anabelomorphy and its applications, arXiv:2003.01890 (2020).
+         1
+[Ked15] Kiran Kedlaya, Etale theta function, 2015. 1
+[Mar14] David Marker, Note on infinitary logic, Course Notes from UIC, 2014. 1
+[Moc98] Shinichi Mochizuki, Correspondences on hyperbolic curves, Journal of Pure and Applied Algebra
+         131 (1998), no. 3, 227–244. 5.2.1, 5.2
+[Moc99]          , The Hodge-Arakelov theory of elliptic curves: Global discretization of local Hodge theories,
+         RIMS Preprint (1999). 5, 5.4
+[Moc02]          , The absolute anabelian geometry of canonical curves, RIMS pre-print, 2002. 5.2.2
+[Moc15a]         , Inter-universal Teichmüller theory I: Construction of Hodge theaters, RIMS Preprint
+         (2015). 1, 3.9.1, 4, 4.3, 4.4, 4.5.1, 5.0.1, 14, 1, 5.6.3, 5.6.4
+[Moc15b]         , Inter-universal Teichmüller theory II: Hodge-arakelov-theoretic evaluation, RIMS preprint
+         (2015). 4.8, 14, 5.2.2
+[Moc15c]         , Inter-universal Teichmüller theory III: Canonical splittings of the log-theta-lattice, RIMS
+         preprint (2015). 1, 1, 1, 3, 3, 3.6.2, 1, 3, 3.9.1, 4.6, 12, 4.10.1, 14
+[Moc15d]         , Inter-universal Teichmüller theory IV: log-volume computations and set-theoretic founda-
+         tions, RIMS preprint 1 (2015). 1, 1, 4.10.1, 1, 5.6
+[Moc17] Shinichi Mochizuki, The mathematics of mutually alien copies: From Gaussian integrals to inter-
+         universal Teichmuller theory, 2017. 1
+                                                      34
+[Mok15] Chung Pang Mok, Notes on Hodge theaters (for the 2015 Oxford workshop)., Handwritten Notes,
+        2015. 1, 5.0.1
+[Mor17] Jackson Morrow, Note on Kummer classes and anabelian geometry, 2017. 5, 2, 4.5
+[Par03] James Parson, Moduli of elliptic curves, 2003. 15
+[Sil13] Joseph H Silverman, Advanced topics in the arithmetic of elliptic curves, vol. 151, Springer Science
+        & Business Media, 2013. 3.2, 5.4.1, 5.6, 5.7.1
+[SS17]  Peter Scholze and Jakob Stix, Why abc is still a conjecture., 2017. 1
+[Sti12] Jakob Stix, Rational points and arithmetic of fundamental groups: Evidence for the section con-
+        jecture, vol. 2054, Springer, 2012. 2
+[Sti15] Jakob Stix, Reconstruction of fields using Belyi cuspidalization, 2015. 1
+[Sza15] Tamás Szamuely, Note on lecture on Mochizuki’s anabeloids, 2015. 5.2.2
+[Tan18] Fucheng Tan, Note on IUT, 2018. 1, 4.5, 4.10.1
+[Yam17] Go Yamashita, A proof of the ABC conjecture after Mochizuki, RIMS preprint (2017). 1
+
+
+
+
+                                                    35
+

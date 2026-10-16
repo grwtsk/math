@@ -1,0 +1,10 @@
+import GRWTSK.Analysis.Fourier.ZModBalancedPartition
+#check Finset.filter_map
+#check Finset.mapEmbedding
+#check Finset.sum_map
+#check Finset.map_univ
+#check Finset.univ_map_subtype_val
+#check Finset.powersetCard_map
+#check GRWTSK.ZModPartitionEnergy.part_mass_le_log_layers
+#check GRWTSK.FiniteExponentialLayers.sum_exp_neg_le_log_layers
+#check GRWTSK.BalancedPartitionSampling.balancedSizes

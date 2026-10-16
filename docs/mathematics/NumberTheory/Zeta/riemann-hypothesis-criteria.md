@@ -115,8 +115,8 @@ acceptance. Source text and an import graph are not proof-term dependency audits
 
 See the [detailed pickup-energy discussion](../Moebius/Energy/growth.md),
 [recording-scale discussion](../Moebius/Energy/recording-blocks.md),
-[evidence roles](../../../explanation/evidence.md) and
-[verification instructions](../../../how-to/verify.md).
+[evidence roles](../../../../.noeaaeue/documentation/explanation/evidence.md) and
+[verification instructions](../../../../.noeaaeue/documentation/how-to/verify.md).
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

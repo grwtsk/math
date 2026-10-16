@@ -1,0 +1,86 @@
+{
+  "schema": "documentation-completion-checks-v1",
+  "checks": [
+    {
+      "argv": [
+        ".noeaaeue/.local/root-cleanup/python-env/bin/python3",
+        "-B",
+        ".noeaaeue/scripts/check_documentation.py"
+      ],
+      "exit_code": 0,
+      "seconds": 14.293,
+      "log": ".noeaaeue/binding-repair/validation-completion/documentation-attempt-01/check-01.log",
+      "output": "175 maintained pages; 608 legacy dispositions; selected catalog and 5 hostile record controls passed\n"
+    },
+    {
+      "argv": [
+        ".noeaaeue/.local/root-cleanup/python-env/bin/python3",
+        "-O",
+        "-B",
+        ".noeaaeue/scripts/check_documentation.py"
+      ],
+      "exit_code": 0,
+      "seconds": 13.129,
+      "log": ".noeaaeue/binding-repair/validation-completion/documentation-attempt-01/check-02.log",
+      "output": "175 maintained pages; 608 legacy dispositions; selected catalog and 5 hostile record controls passed\n"
+    },
+    {
+      "argv": [
+        ".noeaaeue/.local/root-cleanup/python-env/bin/python3",
+        "-B",
+        ".noeaaeue/scripts/check_documentation_layout.py"
+      ],
+      "exit_code": 0,
+      "seconds": 11.529,
+      "log": ".noeaaeue/binding-repair/validation-completion/documentation-attempt-01/check-03.log",
+      "output": "175 pages; 608 exact legacy section dispositions; source, navigation, link and disclosure checks passed\n"
+    },
+    {
+      "argv": [
+        ".noeaaeue/.local/root-cleanup/python-env/bin/python3",
+        "-O",
+        "-B",
+        ".noeaaeue/scripts/check_documentation_layout.py"
+      ],
+      "exit_code": 0,
+      "seconds": 9.392,
+      "log": ".noeaaeue/binding-repair/validation-completion/documentation-attempt-01/check-04.log",
+      "output": "175 pages; 608 exact legacy section dispositions; source, navigation, link and disclosure checks passed\n"
+    },
+    {
+      "argv": [
+        ".noeaaeue/.local/root-cleanup/python-env/bin/python3",
+        "-B",
+        ".noeaaeue/scripts/test_documentation_layout.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.641,
+      "log": ".noeaaeue/binding-repair/validation-completion/documentation-attempt-01/check-05.log",
+      "output": ".............................................................................................................\n----------------------------------------------------------------------\nRan 109 tests in 0.589s\n\nOK\n"
+    },
+    {
+      "argv": [
+        ".noeaaeue/.local/root-cleanup/python-env/bin/python3",
+        "-O",
+        "-B",
+        ".noeaaeue/scripts/test_documentation_layout.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.742,
+      "log": ".noeaaeue/binding-repair/validation-completion/documentation-attempt-01/check-06.log",
+      "output": ".............................................................................................................\n----------------------------------------------------------------------\nRan 109 tests in 0.632s\n\nOK\n"
+    }
+  ],
+  "outcome": "passed",
+  "inventory": {
+    "areas": 12,
+    "object_guides": 139,
+    "documented_objects": 58,
+    "primary_sources": 135,
+    "lean_modules": 846,
+    "intake_records": 68,
+    "selected_families": 3,
+    "maintained_pages": 175
+  },
+  "scope": "Current documentation structure/source bindings/counts/links and hostile controls; no new mathematical proof acceptance."
+}

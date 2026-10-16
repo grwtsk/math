@@ -1,0 +1,9 @@
+{
+  "schema": "historical-runtime-source-fixture-v1",
+  "source_path": "GRWTSK/Algebra/OrderedProduct.lean",
+  "origin_commit": "fe7dd223e668561a873e4ff22bd0ff5ea49e3256",
+  "sha256": "97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d",
+  "fixture": ".noeaaeue/tests/fixtures/moebius/legacy-ordered-product.lean.txt",
+  "scope": "Exact historical source generation for pure mocked legacy-policy controls; current source/proof acceptance is not inherited",
+  "current_mathematical_acceptance": "not-established-by-this-fixture"
+}

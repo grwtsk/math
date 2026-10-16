@@ -1,0 +1,53 @@
+{
+  "no_consensus_flag": true,
+  "no_source_claim_is_formal_acceptance": true,
+  "objections": [
+    {
+      "application_to_iut_status": "uninstantiated source-correspondence; disputed factorization",
+      "counterevidence": [],
+      "current_assessment": "supported-at-model-scope; historical application remains unresolved",
+      "exact_proposition": "If the demanded pilot-degree comparisons factor through the described commuting positive-scale cycle, a single j\u00b2 defect requires j\u00b2 = 1; removing the weight changes the finite inequality.",
+      "formal_model": [
+        "GRWTSK.LinearAlgebra.OrientedRealLine.square_scaled_routes_ne",
+        "GRWTSK.NumberTheory.ArithmeticGeometry.LogThetaComparison.PilotDiagram.square_normalization_obstruction",
+        "GRWTSK.Analysis.FiniteSums.WeightedDegreeComparison.weighted_upper_bound",
+        "GRWTSK.Analysis.FiniteSums.WeightedDegreeComparison.unweighted_no_upper_bound"
+      ],
+      "model_theorem_status": "checked selected abstract scope; receipt binds source bytes and owned audit",
+      "objection_id": "SS-scale-j2",
+      "repair_obligations": [
+        "explicit object and arrow correspondence",
+        "admissible S region and indeterminacy constraints",
+        "native and reconstructed q-comparison equality",
+        "retained j\u00b2 weight or proved aggregate",
+        "order and log-volume distortion control",
+        "all n-ary comparison cocycles and descent witnesses"
+      ],
+      "responses": [
+        {
+          "claim": "Usual degree uses averaged j\u00b2; the claimed loop does not occur; a single container with a log-volume function is asserted.",
+          "region": "p5C11\u2013C14,p6C17",
+          "source": "mochizuki-cmt2018-05"
+        },
+        {
+          "claim": "One pilot with j-indexed components; indeterminacy geometry is nonlinear and is not merely a scalar comparison.",
+          "region": "p3C10,p4C14",
+          "source": "mochizuki-cmt2018-08"
+        },
+        {
+          "claim": "The Scholze\u2013Stix hexagon does not commute; the proposed reconstruction instead requires eta_q = eta_anab_S, whose proof has not been reconstructed.",
+          "region": "p46(9-1),pp48\u201349\u00a710",
+          "source": "lana-2026-report"
+        }
+      ],
+      "source_regions": [
+        "ss-bonn:p4(1.5)/(1.6)",
+        "ss-bonn:pp9\u201310\u00a72.2"
+      ]
+    }
+  ],
+  "schema": "independent-objection-coordinates-v1",
+  "source_claim_ledger": "Sources/abc-iut-objections.json",
+  "source_claim_ledger_sha256": "b684b6618fef479cf099b04f94bc937f95cc6b7ae228d906e763949fae14d524",
+  "formal_model_receipt": "checked-prerequisites-2026-10-15.json"
+}

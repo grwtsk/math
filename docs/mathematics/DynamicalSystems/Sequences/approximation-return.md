@@ -1,5 +1,6 @@
 # Approximation readouts and conditional error return
 
+
 - [Polynomial return](../../../../GRWTSK/DynamicalSystems/Sequences/ApproximationReturn.lean)
   requires an all-real target/readout identification, a polynomial readout budget,
   and a polynomial complete correction budget. Constants add and exponents take
@@ -23,7 +24,9 @@ conclusion is imported automatically.
 
 ## Source and verification scope
 
-[Source](../../../../GRWTSK/DynamicalSystems/Sequences/ApproximationReturn.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+[Source](../../../../GRWTSK/DynamicalSystems/Sequences/ApproximationReturn.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../../.noeaaeue/documentation/reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

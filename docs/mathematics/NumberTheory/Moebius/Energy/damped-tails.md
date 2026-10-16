@@ -263,7 +263,7 @@ This refutes the generalized supplier, not the actual Mobius target.
 
 ### Executable finite diagnostics and evidence limits
 
-[`scripts/one_third_energy.py`](../../../../../scripts/one_third_energy.py)
+[`.noeaaeue/scripts/one_third_energy.py`](../../../../../.noeaaeue/scripts/one_third_energy.py)
 evaluates (1), (4), the individual logarithmic cells, and the completed tail
 square using rational interval arithmetic. Sixth roots are bracketed by
 integer sixth-power inequalities, and intermediate rounding is outwards.
@@ -271,20 +271,20 @@ A rational cutoff such as `7/2` exercises the actual floor and partial last
 cell. All coefficients through that floor are retained. Arbitrary test
 coefficients are explicitly distinguished from the exact Mobius sieve.
 
-[`scripts/test_one_third_energy.py`](../../../../../scripts/test_one_third_energy.py)
+[`.noeaaeue/scripts/test_one_third_energy.py`](../../../../../.noeaaeue/scripts/test_one_third_energy.py)
 includes independent trial division for the sieve, exact rational-grid
 identities for 363 finite sign assignments, integer and noninteger cutoffs,
 the zero horizon, and controls detecting a deleted tail, mixed endpoint,
 ordered-pair factor, Mertens cutoff compensation, or Mobius sign.
 The 21 test methods passed in normal and optimized Python for the bytes bound
-in the [finite diagnostic receipt](../../../../../evidence/number-theory/moebius/one-third-energy-20261014.json).
+in the [finite diagnostic receipt](../../../../../.noeaaeue/evidence/number-theory/moebius/one-third-energy-20261014.json).
 
 Reproduce with:
 
 ```sh
-python3 -B scripts/test_one_third_energy.py
-python3 -O -B scripts/test_one_third_energy.py
-python3 -B scripts/one_third_energy.py --cutoff 7/2 --cutoff 1024 --bits 64
+python3 -B .noeaaeue/scripts/test_one_third_energy.py
+python3 -O -B .noeaaeue/scripts/test_one_third_energy.py
+python3 -B .noeaaeue/scripts/one_third_energy.py --cutoff 7/2 --cutoff 1024 --bits 64
 ```
 
 Finite enclosures are not a uniform bound. Overlapping residual enclosures
@@ -299,7 +299,7 @@ for this one damping would still not be an all-positive-damping or RH proof.
 
 ## Source and verification scope
 
-[Source](../../../../../GRWTSK/NumberTheory/Moebius/WeightedIntegralEnergy.lean). Status: **written-argument**. [Credit and evidence limits](../../../../reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+[Source](../../../../../GRWTSK/NumberTheory/Moebius/WeightedIntegralEnergy.lean). Status: **written-argument**. [Credit and evidence limits](../../../../../.noeaaeue/documentation/reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
 
 ---
 
@@ -488,7 +488,7 @@ condition (SR8). No P04 premise, Mertens exponent, or RH premise is used.
 
 ### Finite implementation and admission boundary
 
-[`square_root_pickup.py`](../../../../../scripts/square_root_pickup.py)
+[`square_root_pickup.py`](../../../../../.noeaaeue/scripts/square_root_pickup.py)
 implements (SR1) and moving-cutoff finite energies. Its Mobius sieve is called
 only through the square-root cutoff. It retains all ordered pairs and neutral
 multipliers, uses the existing rational interval arithmetic, and reports
@@ -496,18 +496,18 @@ which identities are interval-consistency checks rather than exact symbolic
 proofs. The actual prefix recovered from (SR1) is compared with an independent
 trial-division Mobius implementation in the tests, not defined by that check.
 
-[`test_square_root_pickup.py`](../../../../../scripts/test_square_root_pickup.py)
+[`test_square_root_pickup.py`](../../../../../.noeaaeue/scripts/test_square_root_pickup.py)
 checks the strict support gate, every small closed cutoff, all coefficients
 through $4096$ from values through $64$, noninteger horizons, square crossings,
 independent direct-kernel expansion, missing mixed terms, and the indefinite
 kernel control. The 19 test methods passed in both normal and optimized
 Python. The tested bytes, finite output and exact scope are bound in the
-[new receipt](../../../../../evidence/number-theory/moebius/square-root-pickup-20261014.json).
+[new receipt](../../../../../.noeaaeue/evidence/number-theory/moebius/square-root-pickup-20261014.json).
 
 ```sh
-python3 -B scripts/test_square_root_pickup.py
-python3 -O -B scripts/test_square_root_pickup.py
-python3 -B scripts/square_root_pickup.py --cutoff 17/2 --cutoff 1024
+python3 -B .noeaaeue/scripts/test_square_root_pickup.py
+python3 -O -B .noeaaeue/scripts/test_square_root_pickup.py
+python3 -B .noeaaeue/scripts/square_root_pickup.py --cutoff 17/2 --cutoff 1024
 ```
 
 No Lean source, compiler pin, old receipt, permission, or workflow is changed.
@@ -704,7 +704,7 @@ comparison source $e_1$ has divergent full quadratic energy; a paid
 approximation error cannot make its retained energy uniformly bounded.
 These controls do not refute the actual Mobius arithmetic target.
 
-[`reciprocal_phase_kernel.py`](../../../../../scripts/reciprocal_phase_kernel.py)
+[`reciprocal_phase_kernel.py`](../../../../../.noeaaeue/scripts/reciprocal_phase_kernel.py)
 uses exact rational arithmetic. Machin's identity and alternating arctangent
 remainders enclose $\pi$; range-reduced cosine polynomials carry Taylor
 remainders and enough guard precision before Horner amplification. Finite
@@ -721,19 +721,19 @@ $\ell^2/4$. The exact periodic kernel is separately integrated on integer
 cells using the primitive
 $-\sqrt v-(2j+1)v^{-1/2}+j(j+1)v^{-3/2}/3$ on $[j,j+1]$.
 
-[`test_reciprocal_phase_kernel.py`](../../../../../scripts/test_reciprocal_phase_kernel.py)
+[`test_reciprocal_phase_kernel.py`](../../../../../.noeaaeue/scripts/test_reciprocal_phase_kernel.py)
 contains 20 tests, passed normally and with optimized Python. They cover
 normalization, phase symmetries, root/phase precision, exact finite-cell
 identities, Fourier tails, quadrature errors, missing endpoint/history terms,
 square and fourth-power crossings, full ordered signed pairs, and the
 indefinite-error control. The finite batch covers rational physical cutoffs
 through $x=16$, not a horizon $T=16$. Source hashes, runs, and limitations are
-recorded in the [receipt](../../../../../evidence/number-theory/moebius/reciprocal-phase-kernel-20261014.json).
+recorded in the [receipt](../../../../../.noeaaeue/evidence/number-theory/moebius/reciprocal-phase-kernel-20261014.json).
 
 ```sh
-python3 -B scripts/test_reciprocal_phase_kernel.py
-python3 -O -B scripts/test_reciprocal_phase_kernel.py
-python3 -B scripts/reciprocal_phase_kernel.py --cutoff 17/2 --cutoff 16
+python3 -B .noeaaeue/scripts/test_reciprocal_phase_kernel.py
+python3 -O -B .noeaaeue/scripts/test_reciprocal_phase_kernel.py
+python3 -B .noeaaeue/scripts/reciprocal_phase_kernel.py --cutoff 17/2 --cutoff 16
 ```
 
 The infinite Fourier identity and analytic inequalities have written proofs;
@@ -1015,7 +1015,7 @@ is introduced.
 
 ### Implementation and verification scope
 
-[`weighted_pickup_projection.py`](../../../../../scripts/weighted_pickup_projection.py)
+[`weighted_pickup_projection.py`](../../../../../.noeaaeue/scripts/weighted_pickup_projection.py)
 implements the rank-two projection, and a rank-one comparison using
 $m_j=2^{\lceil j/4\rceil}$ with error bound
 $1/[12(1-2^{-1/6})]<1$. It reuses the unchanged rational interval arithmetic
@@ -1024,7 +1024,7 @@ energy, both projected channels, the residual, and the normal equations
 independently. The moment Gram must have strictly separated positive
 Schur denominators. No interval is clamped to force an equality or a sign.
 
-[`test_weighted_pickup_projection.py`](../../../../../scripts/test_weighted_pickup_projection.py)
+[`test_weighted_pickup_projection.py`](../../../../../.noeaaeue/scripts/test_weighted_pickup_projection.py)
 contains 29 test methods. Normal and optimized runs passed. They cover
 integer and partial horizons, pre-block source carry, touching atoms, actual
 Mobius sign changes, bounded test sequences, independent atom moments,
@@ -1034,12 +1034,12 @@ Finite interval consistency is not an equality proof or an infinite-range
 arithmetic witness. The general estimates above have written proofs only.
 
 ```sh
-python3 -B scripts/test_weighted_pickup_projection.py
-python3 -O -B scripts/test_weighted_pickup_projection.py
-python3 -B scripts/weighted_pickup_projection.py --rank 2 --cutoff 17/2 --cutoff 1024
+python3 -B .noeaaeue/scripts/test_weighted_pickup_projection.py
+python3 -O -B .noeaaeue/scripts/test_weighted_pickup_projection.py
+python3 -B .noeaaeue/scripts/weighted_pickup_projection.py --rank 2 --cutoff 17/2 --cutoff 1024
 ```
 
-The [source-bound receipt](../../../../../evidence/number-theory/moebius/weighted-pickup-projection-20261014.json)
+The [source-bound receipt](../../../../../.noeaaeue/evidence/number-theory/moebius/weighted-pickup-projection-20261014.json)
 records the precise source bytes and actual runs. No Lean source, old receipt,
 compiler pin, workflow or permission is changed. Pinned Lean replay and
 owned-declaration auditing were not run because no Lean/Lake executable is

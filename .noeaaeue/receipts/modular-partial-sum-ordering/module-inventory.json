@@ -1,0 +1,34 @@
+{
+  "GRWTSK/Combinatorics/Sequences/PartialSumOrdering.lean": {
+    "declarations": 82,
+    "theorems_including_generated": 68
+  },
+  "GRWTSK/Combinatorics/Sequences/DisjointTranspositions.lean": {
+    "declarations": 71,
+    "theorems_including_generated": 36
+  },
+  "GRWTSK/Combinatorics/Sequences/ZeroSumIntervalRepair.lean": {
+    "declarations": 64,
+    "theorems_including_generated": 50
+  },
+  "GRWTSK/Combinatorics/Sequences/PartialSumCertificate.lean": {
+    "declarations": 99,
+    "theorems_including_generated": 39
+  },
+  "GRWTSK/DynamicalSystems/TransitionSystems/ModularCheckpoint.lean": {
+    "declarations": 274,
+    "theorems_including_generated": 124
+  },
+  "GRWTSK/Analysis/Fourier/ZModSubsetSum.lean": {
+    "declarations": 42,
+    "theorems_including_generated": 37
+  },
+  "GRWTSK/Analysis/Fourier/ZModSubsetSumCompletion.lean": {
+    "declarations": 11,
+    "theorems_including_generated": 11
+  },
+  "GRWTSK/Combinatorics/Sequences/PrimeCyclicRearrangement.lean": {
+    "declarations": 33,
+    "theorems_including_generated": 27
+  }
+}

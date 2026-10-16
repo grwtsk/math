@@ -1,0 +1,8 @@
+{
+  "schema": "root-cleanup-final-byte-check-v1",
+  "protected_files_checked": 830,
+  "protected_mismatches": [],
+  "process_files_checked": 6118,
+  "process_mismatches": [],
+  "acceptance": "Byte preservation only; no theorem admission"
+}

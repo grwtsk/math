@@ -1,0 +1,129 @@
+{
+  "schema": "hostile-control-coverage-v1",
+  "coverage_complete": false,
+  "checked_lean_negative_controls": 9,
+  "neighboring_positive_consumers": 4,
+  "controls": [
+    {
+      "id": 1,
+      "threat": "fixed epsilon",
+      "evidence": "Lean negative FixedEpsilon",
+      "status": "checked"
+    },
+    {
+      "id": 2,
+      "threat": "existential epsilon",
+      "evidence": "Lean negative ExistentialEpsilon",
+      "status": "checked"
+    },
+    {
+      "id": 3,
+      "threat": "constant dependence",
+      "evidence": "target type and scheduler signature sensitivity",
+      "status": "structural-only; no separate Lean hostile"
+    },
+    {
+      "id": 4,
+      "threat": "missing coprimality",
+      "evidence": "no_uniform_bound_without_coprimality",
+      "status": "kernel-checked counterexample"
+    },
+    {
+      "id": 5,
+      "threat": "product replacing radical",
+      "evidence": "Lean negative ProductForRadical",
+      "status": "checked"
+    },
+    {
+      "id": 6,
+      "threat": "finite-height promotion",
+      "evidence": "Lean negative FiniteHeight",
+      "status": "checked"
+    },
+    {
+      "id": 7,
+      "threat": "conditional Szpiro promotion",
+      "evidence": "unapproved-axiom audit; route-I premises explicit",
+      "status": "dedicated hostile not implemented"
+    },
+    {
+      "id": 8,
+      "threat": "assuming disputed Corollary3.12",
+      "evidence": "unapproved-axiom audit; no imported disputed axiom",
+      "status": "dedicated hostile not implemented"
+    },
+    {
+      "id": 9,
+      "threat": "silent identification of copies",
+      "evidence": "typed actual comparison maps",
+      "status": "dedicated hostile not implemented"
+    },
+    {
+      "id": 10,
+      "threat": "untracked square scale",
+      "evidence": "square_scaled_routes_ne and missing-commutativity negative",
+      "status": "checked"
+    },
+    {
+      "id": 11,
+      "threat": "deleted square weight",
+      "evidence": "Lean negative DeletedSquareWeight",
+      "status": "checked"
+    },
+    {
+      "id": 12,
+      "threat": "some poly-isomorphism to all",
+      "evidence": "Lean negative SomeNormalizationToAll",
+      "status": "checked"
+    },
+    {
+      "id": 13,
+      "threat": "pairwise compatibility to descent",
+      "evidence": "reversible_edges_need_not_descend",
+      "status": "kernel-checked counterexample"
+    },
+    {
+      "id": 14,
+      "threat": "publication as proof",
+      "evidence": "search controller has no admission output; unknown-feature hostile",
+      "status": "research-controller-only"
+    },
+    {
+      "id": 15,
+      "threat": "preprint as proof",
+      "evidence": "source ledger acceptance fields remain false and integrity-checked",
+      "status": "source-integrity-only"
+    },
+    {
+      "id": 16,
+      "threat": "uncompiled external Lean",
+      "evidence": "only pinned Mathlib reused; actual selected consumers compile",
+      "status": "dedicated incompatible-port hostile not implemented"
+    },
+    {
+      "id": 17,
+      "threat": "polynomial to integer transfer",
+      "evidence": "Lean negative IntegerTransfer",
+      "status": "checked"
+    },
+    {
+      "id": 18,
+      "threat": "exception count to full abc",
+      "evidence": "route-G finiteness obligation explicit",
+      "status": "dedicated hostile not implemented"
+    },
+    {
+      "id": 19,
+      "threat": "numeric evidence to all heights",
+      "evidence": "Lean finite-height rejection; no numerical closure supplied",
+      "status": "checked at finite-height contract boundary"
+    },
+    {
+      "id": 20,
+      "threat": "cache or digest to kernel acceptance",
+      "evidence": "source integrity acceptance guard and scheduler review-only output",
+      "status": "source-integrity and controller-only"
+    }
+  ],
+  "unimplemented_controls_remain_open": true
+}

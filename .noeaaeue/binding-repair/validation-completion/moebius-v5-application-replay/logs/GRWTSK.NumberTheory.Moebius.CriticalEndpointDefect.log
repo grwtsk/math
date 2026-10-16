@@ -1,0 +1,18 @@
+'GRWTSK.NumberTheory.Moebius.CriticalEndpointDefect.criticalEndpointDefect_eq_half_wholePickup' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.NumberTheory.Moebius.CriticalEndpointDefect.prefixFlux_eq_endpointDefect_add_drift' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.NumberTheory.Moebius.CriticalEndpointDefect.criticalEndpointDrift_nonneg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.NumberTheory.Moebius.CriticalEndpointDefect.criticalIntervalBlock_le_endpointDefect_add_drift' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.NumberTheory.Moebius.CriticalEndpointDefect.summable_mertens_drift_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.NumberTheory.Moebius.CriticalEndpointDefect.criticalBoundary_iff_endpointDefectSummable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

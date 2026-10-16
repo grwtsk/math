@@ -1,0 +1,19 @@
+{
+  "route": "G",
+  "mathematical_object": "Exceptional sets",
+  "strongest_checked_theorem": "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.abcConjecture_iff_finite_exceptions",
+  "verification": "checked-prerequisites-2026-10-15.json covers named prerequisites; open edges unproved",
+  "remaining_premises": [
+    "exception_count",
+    "exception_finiteness"
+  ],
+  "next_smallest_obligation": "Translate the current counting estimate and keep the still-missing all-height finiteness implication explicit",
+  "refuted_lemmas": [],
+  "source_occurrences": [
+    "exceptional-2410.12234v2"
+  ],
+  "source_coverage": "Sources/abc-source-coverage.json",
+  "formal_coverage": "selected prerequisite declarations only; no closed route to abc",
+  "target_closure": false,
+  "status": "OPEN_FRONTIER"
+}

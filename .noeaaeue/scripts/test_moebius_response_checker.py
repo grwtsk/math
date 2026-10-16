@@ -1,0 +1,1407 @@
+#!/usr/bin/env python3
+"""Pure controls for immutable source binding and scoped-checker orchestration.
+
+No Lean, Git, ps, or Python child is executed: every child process is mocked.
+Integration fixtures use synthetic proof/cache bytes and a stub layout policy;
+they establish rejection/orchestration behavior, never canonical policy or
+kernel acceptance. Private fixtures and failure receipts are retained.
+"""
+from __future__ import annotations
+
+import contextlib
+import copy
+import hashlib
+import io
+import json
+import os
+from pathlib import Path
+import stat
+import subprocess
+import sys
+import tempfile
+from types import SimpleNamespace
+import unittest
+from unittest.mock import patch
+
+sys.dont_write_bytecode = True
+import check_moebius_response as checker
+import moebius_owner_census as census
+
+REPO = Path(__file__).resolve().parents[2]
+TEMP_ROOT = Path("/private/tmp") if Path("/private/tmp").is_dir() else Path(tempfile.gettempdir()).resolve()
+REVISION = "1" * 40
+OWNERS = ["GRWTSK.Analysis.Exact", "GRWTSK.Logic.KernelAudit", "GRWTSK.Logic.Aggregate"]
+MOCK_POLICY = b"SUBJECT_ROOTS = frozenset({'Algebra', 'Analysis', 'Logic'})\nLEGACY_SEGMENTS = frozenset({'Legacy'})\n"
+
+
+def pinned_runtime_descriptor():
+    return {"declaration": census.RUNTIME_NAME, "owner_module": census.RUNTIME_OWNER,
+            "source_path": census.RUNTIME_SOURCE, "source_sha256": census.RUNTIME_SOURCE_SHA256}
+
+
+def generated_partial_descriptor():
+    return census.generated_partial_profile_descriptor()
+
+
+class CheckerControls(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.base = TEMP_ROOT / ("moebius-checker-controls-" + checker.uuid.uuid4().hex)
+        checker.make_directory(cls.base, exclusive=True)
+        cls.records = []
+
+    def setUp(self):
+        self.root = self.base / self._testMethodName
+        checker.make_directory(self.root, exclusive=True)
+        self.no_children = patch.object(checker.subprocess, "Popen",
+            side_effect=AssertionError("Unmocked child process is forbidden in a pure control"))
+        self.no_children.start()
+        self.addCleanup(self.no_children.stop)
+        self.no_signals = patch.object(checker.os, "killpg",
+            side_effect=AssertionError("Unmocked process-group signal is forbidden in a pure control"))
+        self.no_signals.start()
+        self.addCleanup(self.no_signals.stop)
+
+    def test_source_and_parent_symlinks_rejected(self):
+        checker.write_exclusive(self.root / "real.lean", b"import Lean\n")
+        (self.root / "alias.lean").symlink_to("real.lean")
+        for reader in (lambda: checker.stable_read(self.root / "alias.lean"),
+                       lambda: checker.relative_file(self.root, "alias.lean")):
+            with self.assertRaises(ValueError):
+                reader()
+        checker.write_exclusive(self.root / "real_dir/child.lean", b"import Lean\n")
+        (self.root / "parent_alias").symlink_to("real_dir", target_is_directory=True)
+        with self.assertRaises(ValueError):
+            checker.stable_read(self.root / "parent_alias/child.lean")
+
+    def test_linked_output_ancestry_and_receipt_rejected(self):
+        checker.make_directory(self.root / "actual")
+        (self.root / '.noeaaeue').mkdir(exist_ok=True)
+        (self.root / '.noeaaeue/.local').symlink_to("../actual", target_is_directory=True)
+        for writer in (lambda: checker.make_directory(self.root / ".noeaaeue/.local/checks"),
+                       lambda: checker.write_exclusive(self.root / ".noeaaeue/.local/injected", b"bad")):
+            with self.assertRaises(ValueError):
+                writer()
+        checker.write_exclusive(self.root / "original", b"unchanged")
+        (self.root / "receipt.json").symlink_to("original")
+        with self.assertRaises(ValueError):
+            checker.atomic_json(self.root / "receipt.json", {"wrong": True})
+        self.assertEqual((self.root / "original").read_bytes(), b"unchanged")
+
+    def test_file_replaced_during_anchored_read_rejected(self):
+        source = self.root / "source.lean"
+        checker.write_exclusive(source, b"import Lean\n")
+        actual_read, replaced = checker.os.read, False
+        def replacing_read(descriptor, count):
+            nonlocal replaced
+            data = actual_read(descriptor, count)
+            if data and not replaced:
+                replaced = True
+                checker.write_exclusive(self.root / "replacement", b"import Mathlib\n")
+                os.replace(self.root / "replacement", source)
+            return data
+        with patch.object(checker.os, "read", replacing_read):
+            with self.assertRaises(ValueError):
+                checker.stable_read(source)
+
+    def input_fixture(self):
+        original = b"theorem a : 1 = 1 := rfl\n"
+        source = self.root / "original.lean"
+        checker.write_exclusive(source, original)
+        frozen = self.root / "run/source"
+        checker.make_directory(frozen)
+        checker.make_directory(self.root / "run/logs")
+        record = checker.freeze_input(checker.stable_read(source), frozen, "GRWTSK/Analysis/Exact.lean")
+        return source, frozen, record
+
+    def test_live_edit_restore_compiles_original_snapshot_and_rejects(self):
+        source, frozen, record = self.input_fixture()
+        receipt, observed = {"status": "running", "kernel_checked": False}, []
+        runner = checker.CommandRunner(self.root / "run", frozen, receipt,
+                                      lambda: checker.verify_input(record), {}, 10)
+        control = self
+        class FakeProcess:
+            returncode, pid = 0, 999999
+            def __init__(self, argv, **options):
+                self.argv, self.options = argv, options
+                initial = json.loads((control.root / "run/receipt.json").read_text())
+                control.assertEqual(initial["commands"][-1]["status"], "running")
+            def communicate(self, timeout=None):
+                source.write_bytes(b"theorem a : 2 = 2 := rfl\n")
+                observed.append((self.options["cwd"] / self.argv[-1]).read_bytes())
+                source.write_bytes(record.original.data)
+                return "", ""
+            def wait(self, timeout=None):
+                return self.returncode
+        with patch.object(checker.subprocess, "Popen", FakeProcess):
+            result = runner.run("edit-restore", ["mock-lean", record.logical_path],
+                                {record.logical_path: checker.digest(record.original.data)})
+        self.assertEqual(observed, [record.original.data])
+        self.assertEqual(result["status"], "input-changed")
+        self.assertFalse(result["postcheck_passed"])
+        final = json.loads((self.root / "run/receipt.json").read_text())
+        self.assertFalse(final["kernel_checked"])
+        self.assertEqual(final["commands"][-1]["command_sha256"], result["command_sha256"])
+        self.assertEqual(stat.S_IMODE(record.snapshot.path.stat().st_mode), 0o400)
+
+    def test_snapshot_edit_restore_rejected(self):
+        _, _, record = self.input_fixture()
+        os.chmod(record.snapshot.path, 0o600)
+        record.snapshot.path.write_bytes(b"transient changed statement")
+        record.snapshot.path.write_bytes(record.original.data)
+        os.chmod(record.snapshot.path, 0o400)
+        with self.assertRaises(ValueError):
+            checker.verify_input(record)
+
+    def test_sealed_directory_swap_restore_rejected(self):
+        _, frozen, record = self.input_fixture()
+        sealed = checker.seal_frozen_source(frozen)
+        replacement = frozen.parent / "replacement"
+        checker.make_directory(replacement)
+        checker.write_exclusive(replacement / record.logical_path,
+                                b"theorem a : 2 = 2 := rfl\n", readonly=True)
+        checker.seal_frozen_source(replacement)
+        stored = frozen.parent / "stored"
+        os.rename(frozen, stored)
+        os.rename(replacement, frozen)
+        observed = (frozen / record.logical_path).read_bytes()
+        os.rename(frozen, replacement)
+        os.rename(stored, frozen)
+        self.assertNotEqual(observed, record.original.data)
+        checker.verify_input(record)  # Final file/inode bytes were restored.
+        with self.assertRaises(ValueError):
+            checker.verify_sealed_source(frozen, sealed)
+
+    def test_negative_oracle_requires_exact_single_source_error(self):
+        relative = "MoebiusControls/ASBNP04_private.lean"
+        name = "_private.MoebiusControls.ASBNP04_private.0.ASBNP04.hostileCustomAxiom"
+        intended = f"{relative}:5:0: error: Unapproved axiom {name} in {name}\n"
+        self.assertTrue(checker.strict_custom_axiom_diagnostic(intended, relative, "ASBNP04")[0])
+        unrelated = [intended + "other.lean:7:0: error: unknown constant bad\n",
+                     intended + "error: unrelated unknown constant\n",
+                     intended + "other.lean:2:0: warning: deprecated command\n",
+                     intended + "other.lean:2:0: error(lean.invalidField): Invalid field\n",
+                     intended.replace(":5:0:", ":6:0:"),
+                     intended.replace(relative, "other.lean"),
+                     intended.replace("in " + name, "in ASBNP04.unrelated"),
+                     "error: Unapproved axiom hostileCustomAxiom\nerror: unknown constant\n",
+                     intended + "  error: failed to import module\n"]
+        for text in unrelated:
+            with self.subTest(text=text):
+                self.assertFalse(checker.strict_custom_axiom_diagnostic(text, relative, "ASBNP04")[0])
+
+    def test_timeout_stops_child_and_preserves_progress(self):
+        frozen = self.root / "source"
+        checker.make_directory(frozen)
+        checker.make_directory(self.root / "logs")
+        receipt = {"status": "running", "kernel_checked": False}
+        runner = checker.CommandRunner(self.root, frozen, receipt, lambda: None, {}, 1)
+        class FakeProcess:
+            returncode, pid, calls = -9, 999999, 0
+            def __init__(self, *args, **options):
+                pass
+            def communicate(self, timeout=None):
+                self.calls += 1
+                if self.calls == 1:
+                    raise checker.subprocess.TimeoutExpired("mock", timeout)
+                return "partial stdout\n", "partial stderr\n"
+            def poll(self):
+                return None if self.calls == 1 else self.returncode
+            def wait(self, timeout=None):
+                return self.returncode
+        with patch.object(checker.subprocess, "Popen", FakeProcess), patch.object(checker.os, "killpg") as kill:
+            result = runner.run("bounded-timeout", ["mock"], {})
+            kill.assert_called_once()
+        self.assertEqual(result["status"], "timed-out")
+        self.assertIn("partial stdout", result["text"])
+        final = json.loads((self.root / "receipt.json").read_text())
+        self.assertEqual(final["status"], "timed-out")
+        self.assertFalse(final["kernel_checked"])
+
+    def integration_fixture(self, variant="clean"):
+        sources = {OWNERS[0]: b"import Mathlib\ntheorem a : 1 = 1 := rfl\n",
+                   OWNERS[1]: b"import GRWTSK.Analysis.Exact\n",
+                   OWNERS[2]: b"import GRWTSK.Logic.KernelAudit\n"}
+        has_root = variant.startswith("root-")
+        has_runtime = "runtime" in variant and variant != "root-runtime-no-owner"
+        has_profile = variant.startswith("root-profile-")
+        if has_root and variant != "root-unmanifested-root":
+            sources["GRWTSK"] = b"import GRWTSK.Analysis.Exact\n"
+            sources[OWNERS[1]] = b"import GRWTSK\n"
+        if variant == "root-unmanifested-root":
+            sources[OWNERS[1]] = b"import GRWTSK\n"
+        if variant == "root-unmanifested-transitive-import":
+            sources["GRWTSK"] += b"import GRWTSK.Logic.Unowned\n"
+        if has_runtime:
+            native_data = (REPO / ".noeaaeue/tests/fixtures/moebius/legacy-ordered-product.lean.txt").read_bytes()
+            self.assertEqual(checker.digest(native_data), census.RUNTIME_SOURCE_SHA256)
+            if variant == "root-runtime-source-drift":
+                native_data += b"\n-- altered source cannot enable the native runtime exception\n"
+            sources[census.RUNTIME_OWNER] = native_data
+            sources["GRWTSK"] += ("import " + census.RUNTIME_OWNER + "\n").encode()
+        if variant == "root-subjectless-other":
+            sources["GRWTSK.Unclassified"] = b"import Mathlib\n"
+            sources[OWNERS[1]] += b"import GRWTSK.Unclassified\n"
+        if has_profile:
+            pending=list(census.GENERATED_PARTIAL_OWNER_SHA256)
+            while pending:
+                name=pending.pop()
+                if name in sources:continue
+                data=(REPO/(name.replace(".","/")+".lean")).read_bytes(); sources[name]=data
+                pending.extend(i for i in checker.imports(data.decode())
+                               if (i=="GRWTSK" or i.startswith("GRWTSK.")) and i not in sources)
+            sources["GRWTSK"] += "".join("import "+name+"\n" for name in sorted(census.GENERATED_PARTIAL_OWNER_SHA256)).encode()
+        if variant == "root-legacy-subject":
+            sources["GRWTSK.Analysis.Legacy"] = b"import Mathlib\n"
+            sources[OWNERS[1]] += b"import GRWTSK.Analysis.Legacy\n"
+        if variant == "root-unreachable":
+            sources["GRWTSK.Analysis.Orphan"] = b"import Mathlib\n"
+        if variant == "root-aggregator-open":
+            sources[OWNERS[2]] += b"import GRWTSK\n"
+        for name, data in sources.items():
+            checker.write_exclusive(self.root / (name.replace(".", "/") + ".lean"), data)
+        fixture_bytes = {".gitignore": b".noeaaeue/.local/\n", "lean-toolchain": b"leanprover/lean4:v4.33.0\n",
+                         "lakefile.toml": f'rev = "{REVISION}"\n'.encode(),
+                         "lake-manifest.json": json.dumps({"packages": [{"name": "mathlib", "rev": REVISION, "type": "git"}]}).encode(),
+                         ".noeaaeue/scripts/check_math_layout.py": MOCK_POLICY}
+        if has_profile:
+            subjects=sorted({name.split(".")[1] for name in sources if name!="GRWTSK"})
+            fixture_bytes[".noeaaeue/scripts/check_math_layout.py"]=("SUBJECT_ROOTS = frozenset("+repr(subjects)+")\nLEGACY_SEGMENTS = frozenset({'Legacy'})\n").encode()
+        for relative in (".noeaaeue/scripts/moebius_response_inputs.py", ".noeaaeue/scripts/moebius_owner_census.py",
+                         ".noeaaeue/scripts/check_moebius_response.py", census.CURRENT_PROFILE_RELATIVE, ".noeaaeue/checks/MoebiusResponseOwnerAuditCurrent.lean"):
+            fixture_bytes[relative] = (REPO / relative).read_bytes()
+        for relative, data in fixture_bytes.items():
+            checker.write_exclusive(self.root / relative, data)
+        if has_root:
+            fixture_bytes["README.md"] = b"Synthetic root-adjacent asset; no kernel admission.\n"
+            checker.write_exclusive(self.root / "README.md", fixture_bytes["README.md"])
+        if variant == "subject-extra-asset":
+            checker.write_exclusive(self.root / "GRWTSK/Analysis/unbound.json", b"{}\n")
+        if variant == "root-linked-adjacent":
+            (self.root / "root-link").symlink_to("README.md")
+        packages, lean = self.root / '.noeaaeue/cache', self.root / "toolchain/bin/lean"
+        checker.write_exclusive(packages / "mathlib/.lake/build/lib/lean/Mathlib.olean", b"mock object")
+        for dependency in sorted({i for data in sources.values() for i in checker.imports(data.decode())}
+                                 - set(sources) - {"Mathlib"}):
+            if not (dependency == "GRWTSK" or dependency.startswith("GRWTSK.")):
+                checker.write_exclusive(packages / "mathlib/.lake/build/lib/lean" /
+                                        (dependency.replace(".", "/") + ".olean"), b"mock imported object")
+        checker.write_exclusive(self.root / "toolchain/lib/lean/Lean.olean", b"mock core object")
+        checker.write_exclusive(lean, b"not an executable compiler; never invoked")
+        os.chmod(lean, 0o700)
+        assets = {relative: checker.digest(data) for relative, data in fixture_bytes.items()
+                  if relative != ".gitignore" and not relative.endswith(".lean")}
+        if variant == "root-extra-adjacent-asset":
+            del assets["README.md"]
+        if variant == "root-missing-operational-asset":
+            del assets["lean-toolchain"]
+        manifest = {"schema_version": 1,
+            "modules": {name: {"path": name.replace(".", "/") + ".lean", "sha256": checker.digest(data),
+                               "imports": checker.imports(data.decode())} for name, data in sources.items()},
+            "audit_module": OWNERS[1], "aggregator_module": OWNERS[2],
+            "lean_version": "Mock Lean 4.33.0", "lean_sha256": checker.digest(lean.read_bytes()),
+            "package_anchors": [{"path": "mathlib/.lake/build/lib/lean/Mathlib.olean",
+                                 "sha256": checker.digest(b"mock object")}],
+            "assets": assets, "dependency_revisions": {"mathlib": REVISION},
+            "dependency_lock_sha256": checker.digest(fixture_bytes["lake-manifest.json"]),
+            "owner_census": {"helper_module": "MoebiusResponseOwnerAudit", "parser_asset": ".noeaaeue/scripts/moebius_owner_census.py",
+                "runtime_exceptions_allowed": False, "helper": {"path": ".noeaaeue/checks/MoebiusResponseOwnerAuditCurrent.lean",
+                    "sha256": checker.digest(fixture_bytes[".noeaaeue/checks/MoebiusResponseOwnerAuditCurrent.lean"]), "imports": ["Lean"]}}}
+        if "runtime" in variant and variant != "root-runtime-disabled":
+            manifest["owner_census"].update(runtime_exceptions_allowed=True,
+                                           runtime_exception_policy=pinned_runtime_descriptor())
+        if variant.startswith("root-runtime-wrong-"):
+            key = variant.removeprefix("root-runtime-wrong-")
+            manifest["owner_census"]["runtime_exception_policy"][key] += "x"
+        if has_profile and variant!="root-profile-disabled":
+            manifest["owner_census"].update(runtime_exceptions_allowed=True,
+                                           runtime_exception_policy=generated_partial_descriptor())
+        if variant == "root-runtime-extra-policy":
+            manifest["owner_census"]["runtime_exception_policy"]["extra"] = "not allowed"
+        if variant == "root-runtime-missing-policy":
+            del manifest["owner_census"]["runtime_exception_policy"]
+        if variant == "root-runtime-string-boolean":
+            manifest["owner_census"]["runtime_exceptions_allowed"] = "true"
+        if variant == "root-runtime-false-descriptor":
+            manifest["owner_census"]["runtime_exceptions_allowed"] = False
+        if variant == "lock-pin-drift":
+            manifest["dependency_lock_sha256"] = "0" * 64
+        manifest_path = self.root / ("scope-manifest.json" if variant == "root-manifest-self" else
+                                     checker.DEFAULT_CURRENT_MANIFEST)
+        checker.write_exclusive(manifest_path, json.dumps(manifest).encode())
+        return packages, lean, sources, manifest_path, manifest
+
+    @staticmethod
+    def mock_census(owners=None, variant="clean", runtime_enabled=False):
+        owners = OWNERS if owners is None else owners
+        declaration = {"module": OWNERS[0], "name": "a", "kind": "theorem", "type": "1 = 1", "unsafe": False,
+            "partial": False, "known_generated_runtime_helper": False, "runtime_helper_owner_source_sha256": "",
+            "direct_value_reference_to_runtime_helper": False, "axioms": []}
+        declarations = [declaration]
+        if census.RUNTIME_OWNER in owners:
+            runtime = {**declaration, "module": census.RUNTIME_OWNER, "name": census.RUNTIME_NAME,
+                "kind": "definition", "unsafe": True, "known_generated_runtime_helper": runtime_enabled,
+                "runtime_helper_owner_source_sha256": census.RUNTIME_SOURCE_SHA256 if runtime_enabled else ""}
+            declarations.append(runtime)
+        if variant == "root-runtime-theorem-reference":
+            declaration["direct_value_reference_to_runtime_helper"] = True
+        if variant == "root-runtime-extra-unsafe":
+            declarations.append({**declaration, "name": "Other.unsafe", "kind": "definition", "unsafe": True})
+        if variant == "root-runtime-partial":
+            declarations[-1]["partial"] = True
+        if variant == "root-runtime-custom-axiom":
+            declaration["axioms"] = ["Custom.unproved"]
+        lines = ["MATH_TRUST_DECL::" + json.dumps(d) for d in declarations]
+        lines += ["MATH_TRUST_MODULE::" + json.dumps({"module": owner,
+                    "declarations": sum(d["module"] == owner for d in declarations)}) for owner in owners]
+        return "\n".join(lines) + f"\nMATH_TRUST_COUNT::{len(declarations)}\nMATH_TRUST_MODULE_COUNT::{len(owners)}\n"
+
+    @staticmethod
+    def mock_profile_census(owners,enabled=True,case=None,fixture_module=None):
+        def row(owner,name,kind="definition",**options):
+            return {"module":owner,"name":name,"kind":kind,"type":"Nat","unsafe":False,
+                "partial":False,"known_generated_runtime_helper":False,
+                "runtime_helper_owner_source_sha256":census.GENERATED_PARTIAL_OWNER_SHA256.get(owner,"") if enabled else "",
+                "direct_value_reference_to_runtime_helper":False,"axioms":[],**options}
+        declarations=[row(OWNERS[0],"a",kind="theorem",type="1 = 1")]
+        for entry in census.GENERATED_PARTIAL_PROFILE:
+            declarations.extend([row(entry["owner"],entry["original"]),
+                row(entry["owner"],entry["helper"],partial=True,known_generated_runtime_helper=enabled)])
+        violations=[]
+        if case=="default-disabled":violations=["partial declaration: "+entry["helper"] for entry in census.GENERATED_PARTIAL_PROFILE]
+        if fixture_module:
+            if case in {"unpaired-partial","fake-paired-suffix"}:
+                original=fixture_module+".hostilePartial"; helper=original+"._unsafe_rec"
+                if case=="fake-paired-suffix":declarations.append(row(fixture_module,original))
+                declarations.append(row(fixture_module,helper,partial=True)); violations=["partial declaration: "+helper]
+            elif case=="unrelated-unsafe":
+                name=fixture_module+".hostileUnsafe"; declarations.append(row(fixture_module,name,unsafe=True)); violations=["unsafe declaration: "+name]
+            elif case=="owner-custom-axiom":
+                name=fixture_module+".hostileAxiom"; theorem=fixture_module+".consumesHostileAxiom"
+                declarations.extend([row(fixture_module,name,kind="axiom",type="False",axioms=[name]),
+                    row(fixture_module,theorem,kind="theorem",type="False",axioms=[name])])
+                violations=["new axiom: "+name,"unapproved axiom "+name+" in "+name,"unapproved axiom "+name+" in "+theorem]
+            else:declarations.append(row(fixture_module,fixture_module+".safeWitness"))
+        lines=["MATH_TRUST_DECL::"+json.dumps(d) for d in declarations]
+        lines += ["MATH_TRUST_MODULE::"+json.dumps({"module":owner,"declarations":sum(d["module"]==owner for d in declarations)}) for owner in owners]
+        text="\n".join(lines)+f"\nMATH_TRUST_COUNT::{len(declarations)}\nMATH_TRUST_MODULE_COUNT::{len(owners)}\n"
+        return text,violations
+
+    def orchestration(self, variant="clean"):
+        packages, lean, sources, manifest_path, manifest = self.integration_fixture(variant)
+        observed, control = [], self
+        wait_observed, busy_emitted = [], []
+        class FakeProcess:
+            pid, returncode = 999999, 0
+            def __init__(self, argv, **options):
+                self.argv, self.options = argv, options
+            def wait(self, timeout=None):
+                return self.returncode
+            def communicate(self, timeout=None):
+                argv, stdout = self.argv, ""
+                if argv[0] == "git":
+                    if argv[1:] == ["rev-parse", "HEAD"]:
+                        stdout = REVISION + "\n"
+                    elif argv[1:] != ["status", "--porcelain=v1", "--untracked-files=no"]:
+                        raise AssertionError("Unexpected mocked Git input: " + repr(argv))
+                elif argv[0] == "ps":
+                    control.assertEqual(argv, ["ps", "-axo", "pid=,args="])
+                    if variant=="root-busy-after-freeze" and any((control.root/".noeaaeue/.local/checks").glob("*/dependency-objects")):
+                        stdout="424242 /synthetic/lean external-job.lean\n"
+                    if variant=="root-busy-inner-prefix":
+                        progress=json.loads((self.options["cwd"].parent/"receipt.json").read_bytes())
+                        checks=progress.get("native_schedule_checks",[])
+                        if checks and checks[-1]["native_command"].startswith("input-command-"):
+                            stdout="424242 /synthetic/lean external-job.lean\n"
+                    if variant.startswith("root-wait-"):
+                        progress=json.loads((self.options["cwd"].parent/"receipt.json").read_bytes())
+                        checks=progress.get("native_schedule_checks",[])
+                        after_freeze=any((control.root/".noeaaeue/.local/checks").glob("*/dependency-objects"))
+                        inner_prefix=checks and checks[-1]["native_command"].startswith("input-command-")
+                        initial=checks and checks[-1]["native_command"]=="initial-readiness"
+                        selected=(initial if variant=="root-wait-initial" else
+                                  inner_prefix if variant=="root-wait-inner-prefix" else after_freeze)
+                        if variant=="root-wait-ps-failure" and after_freeze:
+                            self.returncode=3
+                        elif selected and len(busy_emitted)<2:
+                            busy_emitted.append(True)
+                            stdout="424242 /synthetic/lean external-job.lean\n"
+                elif "--json" in argv:
+                    control.assertEqual(argv[0], sys.executable)
+                    control.assertEqual(argv[1], "-B")
+                    control.assertTrue(Path(argv[2]).is_relative_to(control.root / ".noeaaeue/.local/checks"))
+                    control.assertEqual(argv[-3:], ["--root", str(control.root), "--json"])
+                    layout_failed = variant in {"layout-failure", "root-layout-failure"}
+                    stdout = json.dumps({"status": "FAIL" if layout_failed else "PASS", "report_only": False})
+                    self.returncode = int(layout_failed)
+                elif "--version" in argv:
+                    control.assertEqual(argv, [str(lean), "--version"])
+                    stdout = "Mock Lean 4.33.0\n"
+                elif "--print-prefix" in argv:
+                    control.assertEqual(argv, [str(lean), "--print-prefix"])
+                    stdout = str(control.root / "toolchain") + "\n"
+                elif argv[-1].endswith(".lean"):
+                    control.assertEqual(argv[0], str(lean))
+                    expected_memory=12288 if variant=="root-profile-memory-12288" else 4096
+                    for required in ("--trust=0", f"--memory={expected_memory}", "--threads=1", "-DwarningAsError=true"):
+                        control.assertIn(required, argv)
+                    snapshot = self.options["cwd"] / argv[-1]
+                    control.assertTrue(snapshot.is_relative_to(control.root / ".noeaaeue/.local/checks"))
+                    control.assertEqual(self.options["cwd"].stat().st_mode & 0o777, 0o500)
+                    control.assertEqual(snapshot.stat().st_mode & 0o777, 0o400)
+                    data = snapshot.read_bytes()
+                    if argv[-1] == "GRWTSK/Analysis/Exact.lean":
+                        if variant=="root-profile-source-memory-abort":
+                            self.returncode=-6
+                            stdout="lean::memory_exception: excessive memory consumption detected at interpreter\n"
+                        original = control.root / "GRWTSK/Analysis/Exact.lean"
+                        if variant == "source-edit-restore":
+                            original.write_bytes(b"import Mathlib\ntheorem a : 2 = 2 := rfl\n")
+                        observed.append(snapshot.read_bytes())
+                        if variant == "source-edit-restore":
+                            original.write_bytes(sources[OWNERS[0]])
+                        if variant == "root-manifest-edit-restore":
+                            original_manifest = manifest_path.read_bytes()
+                            manifest_path.write_bytes(original_manifest + b" ")
+                            manifest_path.write_bytes(original_manifest)
+                        if variant == "root-asset-edit-restore":
+                            asset = control.root / "README.md"
+                            original_asset = asset.read_bytes()
+                            asset.write_bytes(b"temporarily replaced")
+                            asset.write_bytes(original_asset)
+                        if variant == "root-asset-added":
+                            checker.write_exclusive(control.root / "new-root-asset.json", b"{}\n")
+                    if variant=="root-profile-fixture-memory-abort" and "Logic/Verification/Controls/GeneratedPartial" in argv[-1]:
+                        self.returncode=-6
+                        stdout="lean::memory_exception: excessive memory consumption detected at interpreter\n"
+                    if "-o" in argv:
+                        artifact = Path(argv[argv.index("-o") + 1])
+                        checker.write_exclusive(artifact, b"mock object " + checker.digest(data).encode())
+                        checker.write_exclusive(Path(str(artifact) + ".private"), b"mock private object")
+                    if argv[-1] == "GRWTSK/Logic/KernelAudit.lean":
+                        stdout = "Kernel axiom audit passed for 1 declarations.\n"
+                    elif argv[-1] == "MoebiusResponseOwnerCensus.lean":
+                        enabled = manifest["owner_census"]["runtime_exceptions_allowed"] is True
+                        if variant.startswith("root-profile-"):
+                            final=f'#audit_math_trust "" "{census.GENERATED_PARTIAL_PROFILE_SHA256}"\n' if enabled else '#audit_math_trust ""\n'
+                            control.assertTrue(data.decode().endswith(final))
+                            stdout,_=control.mock_profile_census(list(sources),enabled)
+                        else:
+                            runtime_hash = census.RUNTIME_SOURCE_SHA256 if enabled else ""
+                            control.assertTrue(data.decode().endswith('#audit_math_trust "' + runtime_hash + '"\n'))
+                            stdout = control.mock_census(list(sources), variant, enabled)
+                        for owner in sources:
+                            control.assertIn("import " + owner + "\n", data.decode())
+                    elif argv[-1].startswith("MoebiusProfileControls/"):
+                        case=next(case for case in checker.PROFILE_CONTROL_CASES if Path(argv[-1]).stem=="".join(part.title() for part in case.split("-"))+"Audit")
+                        module="GRWTSK.Logic.Verification.Controls.GeneratedPartial"+"".join(part.title() for part in case.split("-"))
+                        for owner in sources:control.assertIn("import "+owner+"\n",data.decode())
+                        control.assertIn("import "+module+"\n",data.decode())
+                        if case=="wrong-profile-sha":
+                            stdout=f"{argv[-1]}:{len(data.decode().splitlines())}:0: error: unapproved generated-partial profile permission\n"
+                        else:
+                            stdout,violations=control.mock_profile_census(sorted([*sources,module]),case!="default-disabled",case,module)
+                            stdout+=f"{argv[-1]}:{len(data.decode().splitlines())}:0: error: project trust audit failed: ["+",\n ".join(violations)+"]\n"
+                        self.returncode=1
+                        if variant=="root-profile-extra-control-error" and case=="unpaired-partial":
+                            stdout+="other.lean:2:0: error: unintended control failure\n"
+                    elif argv[-1].startswith("MoebiusControls/"):
+                        stem = Path(argv[-1]).stem
+                        namespace, visibility = stem.rsplit("_", 1)
+                        name = (f"_private.MoebiusControls.{stem}.0." if visibility == "private" else "") + namespace + ".hostileCustomAxiom"
+                        stdout = f"{argv[-1]}:5:0: error: Unapproved axiom {name} in {name}\n"
+                        self.returncode = 1
+                        if variant == "extra-control-error":
+                            stdout += "other.lean:2:0: error(lean.invalidField): unrelated failure\n"
+                else:
+                    raise AssertionError("Unexpected child command: " + repr(argv))
+                return stdout, ""
+        args = ["checker", "--root", str(self.root), "--lean", str(lean), "--packages", str(packages)]
+        if variant == "root-manifest-self":
+            args.extend(["--manifest", str(manifest_path)])
+        if variant=="root-validate-only":
+            shared=self.root/".noeaaeue/.local/shared-native.lock"; checker.write_exclusive(shared,b"")
+            args.extend(["--validate-only","--native-lease",str(shared)])
+        if variant=="root-profile-memory-12288":
+            args.extend(["--memory-mb","12288"])
+        if variant.startswith("root-wait-"):
+            shared=self.root/".noeaaeue/.local/shared-native.lock"; checker.write_exclusive(shared,b"")
+            args.extend(["--wait-for-native-slot","--native-lease",str(shared)])
+        def fake_sleep(seconds):
+            if not variant.startswith("root-wait-"):
+                raise AssertionError("Unexpected scheduler wait in the default fail-closed mode")
+            self.assertEqual(seconds,30)
+            wait_observed.append(seconds)
+            import fcntl
+            for lock in [self.root/".noeaaeue/.local/math-trust/replay.lock",shared]:
+                with lock.open("rb") as handle:
+                    with self.assertRaises(BlockingIOError):
+                        fcntl.flock(handle.fileno(),fcntl.LOCK_EX|fcntl.LOCK_NB)
+            if variant=="root-wait-source-change":
+                (self.root/"GRWTSK/Analysis/Exact.lean").write_bytes(b"import Mathlib\ntheorem a : 2 = 2 := rfl\n")
+            if variant=="root-wait-interrupted":
+                raise KeyboardInterrupt
+        with patch.object(checker.subprocess, "Popen", FakeProcess), patch.object(sys, "argv", args),\
+             patch.object(checker.time,"sleep",side_effect=fake_sleep),\
+             contextlib.redirect_stdout(io.StringIO()), contextlib.redirect_stderr(io.StringIO()):
+            outcome = checker.main()
+        successful = variant in {"clean", "root-clean", "root-runtime-clean", "root-manifest-self","root-profile-clean","root-validate-only","root-wait-after-freeze","root-wait-inner-prefix","root-wait-initial","root-profile-memory-12288"}
+        expected = 130 if variant=="root-wait-interrupted" else int(not successful)
+        self.assertEqual(outcome, expected)
+        receipts = list((self.root / ".noeaaeue/.local/checks").glob("*/receipt.json"))
+        self.assertEqual(len(receipts), 1)
+        receipt_path, receipt = receipts[0], json.loads(receipts[0].read_text())
+        self.assertEqual(receipt["native_memory_limit_megabytes"],12288 if variant=="root-profile-memory-12288" else 4096)
+        if variant=="root-profile-source-memory-abort":
+            primary=receipt["primary_failure"]
+            self.assertEqual(primary["stage"],"source-replay"); self.assertEqual(primary["exit_code"],-6)
+            self.assertEqual(primary["module"],"GRWTSK.Analysis.Exact")
+            self.assertEqual(receipt["error"],primary["error"])
+            self.assertEqual([row["stage"] for row in receipt["failures"]],
+                             ["source-replay","application-axiom-audit","owner-census","generated-partial-controls"])
+            self.assertFalse(receipt["kernel_checked"])
+            self.assertEqual(receipt["runtime_profile_negative_controls"][0]["status"],"prepared")
+        if variant=="root-profile-fixture-memory-abort":
+            self.assertEqual(receipt["primary_failure"]["stage"],"profile-fixture-source")
+            self.assertEqual(receipt["primary_failure"]["exit_code"],-6)
+            self.assertEqual(receipt["error"],"Hostile fixture source failed strict compilation")
+        if variant=="root-profile-extra-control-error":
+            self.assertEqual(receipt["primary_failure"]["stage"],"profile-control-oracle")
+        if variant=="extra-control-error":
+            self.assertEqual(receipt["primary_failure"]["stage"],"custom-axiom-control")
+        if variant=="root-validate-only":
+            self.assertFalse(receipt["kernel_checked"]); self.assertEqual(receipt["status"],"inputs-validated")
+            self.assertEqual(len(receipt["shared_native_locks"]),2)
+            self.assertEqual([row["native_command"] for row in receipt["native_schedule_checks"]],["compiler-version","compiler-prefix"])
+            self.assertFalse(any(row["label"]=="owner-census-helper" for row in receipt["commands"]))
+        elif successful:
+            self.assertTrue(receipt["kernel_checked"])  # Classifier behavior under mocked processes only.
+            self.assertIn("complete_owner_census", receipt)
+            self.assertEqual(len(receipt["custom_axiom_negative_controls"]), 10)
+            for module in receipt["checked_modules"]:
+                self.assertEqual(set(module["artifact_families"]), {".olean", ".olean.private"})
+            self.assertEqual(set(receipt["complete_owner_census"]["verdict"]["source_sha256_by_owner"]), set(sources))
+            if "GRWTSK" in sources:
+                root_node = next(row for row in receipt["checked_modules"] if row["module"] == OWNERS[1])
+                self.assertIn("GRWTSK", root_node["dependencies"])
+                self.assertEqual(receipt["source_adjacent_asset_policy"]["umbrella_module"], "GRWTSK")
+                self.assertTrue(receipt["source_adjacent_asset_policy"]["complete_layout_gate_required"])
+                self.assertNotIn(str(manifest_path.relative_to(self.root)), receipt["asset_records"])
+                command_labels = [row["label"] for row in receipt["commands"]]
+                self.assertLess(command_labels.index("GRWTSK"), command_labels.index(OWNERS[1]))
+                self.assertFalse(any(Path(row["path"]).name == "GRWTSK.olean"
+                                     for row in receipt["direct_cached_dependencies"]))
+            self.assertEqual(receipt["complete_owner_census"]["runtime_exceptions_allowed"], variant in {"root-runtime-clean","root-profile-clean","root-profile-memory-12288"})
+            if variant == "root-runtime-clean":
+                self.assertEqual(receipt["complete_owner_census"]["runtime_exception_policy"], pinned_runtime_descriptor())
+                self.assertTrue(receipt["complete_owner_census"]["verdict"]["runtime_exception_enabled"])
+                self.assertIn("except the explicitly pinned native generated runtime helper", receipt["complete_owner_census"]["scope"])
+            if variant in {"root-profile-clean","root-profile-memory-12288"}:
+                self.assertEqual(receipt["complete_owner_census"]["runtime_exception_policy"],generated_partial_descriptor())
+                self.assertTrue(receipt["complete_owner_census"]["verdict"]["generated_partial_profile_enabled"])
+                controls=receipt["runtime_profile_negative_controls"]
+                self.assertEqual({row["case"] for row in controls},set(checker.PROFILE_CONTROL_CASES))
+                self.assertTrue(all(row["rejected"] and not row["unsafe_control_accepted"] for row in controls))
+                self.assertTrue(all(set(row["fixture_artifact_families"])=={".olean",".olean.private"} for row in controls))
+                self.assertTrue(all(row["source_command"]["child_pid"]==999999 and row["audit_command"]["child_pid"]==999999 for row in controls))
+            receipt.update(mocked_pipeline_reported_kernel_checked=True, kernel_checked=False,
+                           status="pure-python-mocked-completion-no-kernel-claim", native_processes_mocked=True)
+            checker.atomic_json(receipt_path, receipt)
+        elif variant=="root-wait-interrupted":
+            self.assertFalse(receipt["kernel_checked"])
+            self.assertEqual(receipt["status"],"interrupted")
+            self.assertEqual(receipt["error"],"KeyboardInterrupt")
+        else:
+            self.assertFalse(receipt["kernel_checked"])
+            self.assertEqual(receipt["status"], "failed")
+            reasons = {"root-unmanifested-root":"Unmanifested project imports",
+                "root-unmanifested-transitive-import":"Unmanifested project imports",
+                "root-subjectless-other":"Expected a mathematical subject/object module",
+                "root-legacy-subject":"Expected a mathematical subject/object module",
+                "root-unreachable":"Sources unreachable from application kernel audit",
+                "root-aggregator-open":"Aggregator must import exactly",
+                "root-extra-adjacent-asset":"Unmanifested assets beside mathematical sources",
+                "root-linked-adjacent":"Linked umbrella inventory entry",
+                "subject-extra-asset":"Unmanifested assets beside mathematical sources",
+                "root-missing-operational-asset":"Manifest must bind the canonical policy",
+                "root-layout-failure":"Fatal shared mathematical layout gate failed",
+                "root-runtime-no-owner":"Runtime exception owner is absent",
+                "root-runtime-source-drift":"Runtime exception owner is absent",
+                "root-runtime-missing-policy":"Runtime exception must declare the exact",
+                "root-runtime-extra-policy":"Runtime exception must declare the exact",
+                "root-runtime-string-boolean":"explicit Boolean runtime policy",
+                "root-runtime-false-descriptor":"Disabled runtime policy",
+                "root-runtime-disabled":"unsafe, partial, or axiom declaration",
+                "root-runtime-theorem-reference":"theorem references unsafe runtime helper",
+                "root-runtime-extra-unsafe":"unsafe, partial, or axiom declaration",
+                "root-runtime-partial":"invalid generated runtime helper classification",
+                "root-runtime-custom-axiom":"unapproved transitive axiom"}
+            reasons.update({"root-profile-disabled":"unsafe, partial, or axiom declaration",
+                "root-profile-extra-control-error":"Generated-partial control must fail only at its exact frozen audit command",
+                "root-busy-after-freeze":"BUSY: existing native Lean/Lake jobs",
+                "root-busy-inner-prefix":"BUSY: existing native Lean/Lake jobs"})
+            if variant.startswith("root-runtime-wrong-"):
+                reasons[variant] = "Runtime exception must declare the exact"
+            if variant in reasons:
+                self.assertIn(reasons[variant], receipt.get("error", ""))
+            if variant in {"root-busy-after-freeze","root-busy-inner-prefix"}:
+                self.assertEqual(receipt["checked_modules"],[])
+                self.assertFalse(any(row["label"]=="owner-census-helper" for row in receipt["commands"]))
+                self.assertEqual(receipt["native_schedule_checks"][-1]["status"],"blocked")
+            if variant in {"root-manifest-edit-restore", "root-asset-edit-restore", "root-asset-added"}:
+                changed = [row for row in receipt["commands"] if row["status"] == "input-changed"]
+                self.assertEqual(len(changed), 1)
+                self.assertEqual(changed[0]["label"], OWNERS[0])
+                self.assertFalse(changed[0]["postcheck_passed"])
+                if variant == "root-asset-added":
+                    self.assertIn("Source-adjacent asset membership changed", changed[0]["error"])
+        if variant == "source-edit-restore":
+            self.assertEqual(observed, [sources[OWNERS[0]]])
+        if variant=="root-wait-ps-failure":
+            self.assertEqual(wait_observed,[])
+            self.assertEqual(receipt["native_schedule_checks"][-1]["status"],"blocked")
+            self.assertEqual(receipt["checked_modules"],[])
+        elif variant.startswith("root-wait-"):
+            self.assertEqual(receipt["native_busy_policy"],"wait-with-frozen-input-guards")
+            self.assertEqual(len(receipt["shared_native_locks"]),2)
+            waits=[row for row in receipt["native_schedule_checks"] if row.get("wait_count")]
+            self.assertEqual(len(waits),1)
+            self.assertEqual(len(wait_observed),2 if successful else 1)
+            self.assertEqual(waits[0]["wait_count"],len(wait_observed))
+            if successful:
+                self.assertEqual(waits[0]["status"],"clear")
+            else:
+                self.assertEqual(waits[0]["status"],"waiting")
+                self.assertFalse(any(row["label"]==waits[0]["native_command"] for row in receipt["commands"]))
+                if variant=="root-wait-source-change":
+                    self.assertIn("changed",receipt["error"].lower())
+        if variant.startswith("root-wait-"):
+            import fcntl
+            for lock in receipt["shared_native_locks"]:
+                with Path(lock).open("rb") as handle:
+                    fcntl.flock(handle.fileno(),fcntl.LOCK_EX|fcntl.LOCK_NB)
+                    fcntl.flock(handle.fileno(),fcntl.LOCK_UN)
+        self.records.append({"control": variant, "receipt": str(receipt_path), "native_invocations": 0, "git_invocations": 0})
+
+    def orchestration_cases(self, variants):
+        parent = self.root
+        try:
+            for variant in variants:
+                with self.subTest(variant=variant):
+                    self.root = parent / variant
+                    checker.make_directory(self.root, exclusive=True)
+                    self.orchestration(variant)
+        finally:
+            self.root = parent
+
+    def test_mocked_full_orchestration(self):
+        self.orchestration()
+
+    def test_mocked_orchestration_rejects_unrelated_error(self):
+        self.orchestration("extra-control-error")
+
+    def test_mocked_orchestration_rejects_source_restore(self):
+        self.orchestration("source-edit-restore")
+
+    def test_mocked_orchestration_requires_fatal_layout(self):
+        self.orchestration("layout-failure")
+
+    def test_mocked_orchestration_rejects_lock_pin_and_absent_manifest(self):
+        self.orchestration("lock-pin-drift")
+        missing = self.root / "absent-manifest"
+        checker.make_directory(missing)
+        args = ["checker", "--root", str(missing), "--validate-only"]
+        with patch.object(sys, "argv", args), contextlib.redirect_stderr(io.StringIO()):
+            self.assertEqual(checker.main(), 1)
+        self.assertFalse(list(missing.rglob("*.olean")))
+
+    def test_exact_root_umbrella_mocked_orchestration(self):
+        self.orchestration("root-clean")
+
+    def test_root_manifest_is_frozen_without_self_hashing(self):
+        self.orchestration("root-manifest-self")
+
+    def test_root_special_case_preserves_closed_subject_import_and_audit_scope(self):
+        self.orchestration_cases(["root-unmanifested-root", "root-subjectless-other", "root-legacy-subject",
+                                  "root-unmanifested-transitive-import", "root-unreachable", "root-aggregator-open"])
+
+    def test_root_asset_policy_preserves_pins_and_subject_asset_binding(self):
+        self.orchestration_cases(["root-extra-adjacent-asset", "root-linked-adjacent", "subject-extra-asset",
+                                  "root-missing-operational-asset"])
+
+    def test_root_manifest_and_assets_edit_restore_are_rejected(self):
+        self.orchestration_cases(["root-manifest-edit-restore", "root-asset-edit-restore", "root-asset-added"])
+
+    def test_root_support_does_not_bypass_fatal_layout(self):
+        self.orchestration("root-layout-failure")
+
+    def test_explicit_pinned_runtime_mocked_orchestration(self):
+        self.orchestration("root-runtime-clean")
+
+    def test_generated_partial_profile_and_all_six_native_controls_mocked_pipeline(self):
+        self.orchestration("root-profile-clean")
+
+    def test_profile_control_unrelated_failure_never_accepts(self):
+        self.orchestration("root-profile-extra-control-error")
+
+    def test_resource_abort_remains_primary_despite_missing_later_gates(self):
+        self.orchestration("root-profile-source-memory-abort")
+
+    def test_profile_fixture_abort_remains_primary(self):
+        self.orchestration("root-profile-fixture-memory-abort")
+
+    def test_custom_axiom_control_failure_is_primary(self):
+        self.orchestration("extra-control-error")
+
+    def test_explicit_memory_limit_reaches_every_elaboration_hop_and_receipt(self):
+        self.orchestration("root-profile-memory-12288")
+
+    def test_bounded_memory_rejects_zero_negative_unbounded_and_noninteger_values_before_work(self):
+        for value in ("0","-1","1023","16385","999999999","1.5","not-an-int"):
+            with self.subTest(value=value), patch.object(sys,"argv",["checker","--memory-mb",value]), contextlib.redirect_stderr(io.StringIO()):
+                with self.assertRaises(SystemExit) as raised:
+                    checker.main()
+                self.assertEqual(raised.exception.code,2)
+        self.assertFalse((self.root/".noeaaeue/.local/checks").exists())
+
+    def test_failure_ledger_preserves_first_cause_and_retains_second(self):
+        receipt={"kernel_checked":True}
+        checker.record_failure(receipt,"source-replay","actual abort",exit_code=-6)
+        checker.record_failure(receipt,"owner-census","not reached")
+        self.assertEqual(receipt["error"],"actual abort")
+        self.assertEqual(receipt["primary_failure"]["exit_code"],-6)
+        self.assertEqual(len(receipt["failures"]),2)
+        self.assertFalse(receipt["kernel_checked"])
+
+    def test_profile_default_still_rejects_all_five_partial_helpers(self):
+        self.orchestration("root-profile-disabled")
+
+    def test_busy_job_appearing_after_cache_freeze_blocks_first_source(self):
+        self.orchestration("root-busy-after-freeze")
+
+    def test_dependency_prefix_helper_cannot_bypass_per_hop_native_scheduler(self):
+        self.orchestration("root-busy-inner-prefix")
+
+    def test_optional_busy_wait_retains_both_leases_and_resumes_after_cache_freeze(self):
+        self.orchestration("root-wait-after-freeze")
+
+    def test_optional_busy_wait_applies_to_nested_dependency_prefix(self):
+        self.orchestration("root-wait-inner-prefix")
+
+    def test_optional_busy_wait_covers_initial_inspection_after_lease_acquisition(self):
+        self.orchestration("root-wait-initial")
+
+    def test_optional_busy_wait_does_not_retry_failed_process_inspection(self):
+        self.orchestration("root-wait-ps-failure")
+
+    def test_input_change_during_busy_wait_rejects_before_native_launch(self):
+        self.orchestration("root-wait-source-change")
+
+    def test_interrupted_busy_wait_preserves_nonacceptance_and_releases_leases(self):
+        self.orchestration("root-wait-interrupted")
+
+    def test_validate_only_identity_commands_retain_root_and_shared_leases(self):
+        self.orchestration("root-validate-only")
+
+    def test_profile_descriptor_exactness_and_all_canonical_source_pins(self):
+        import copy
+        table=generated_partial_descriptor()
+        nodes={owner:SimpleNamespace(relative=owner.replace(".","/")+".lean",source_hash=sha)
+               for owner,sha in census.GENERATED_PARTIAL_OWNER_SHA256.items()}
+        contract={"runtime_exceptions_allowed":True,"runtime_exception_policy":table}
+        self.assertEqual(checker.resolve_runtime_policy(contract,vars(census),nodes),(True,"",table))
+        for field in ("kind","profile_sha256","entries"):
+            malformed=copy.deepcopy(contract)
+            if field=="entries":malformed["runtime_exception_policy"][field].pop()
+            else:malformed["runtime_exception_policy"][field]+="changed"
+            with self.assertRaises(ValueError):checker.resolve_runtime_policy(malformed,vars(census),nodes)
+        for owner in nodes:
+            changed=dict(nodes); changed[owner]=SimpleNamespace(relative=nodes[owner].relative,source_hash="0"*64)
+            with self.assertRaisesRegex(ValueError,"owner is absent or differs"):
+                checker.resolve_runtime_policy(contract,vars(census),changed)
+        extra=copy.deepcopy(contract); extra["runtime_exception_policy"]["unlisted_permission"]=True
+        with self.assertRaises(ValueError):checker.resolve_runtime_policy(extra,vars(census),nodes)
+
+    def profile_oracle_probe(self,case,mutate=lambda rows,module:None):
+        owners=sorted([*census.GENERATED_PARTIAL_OWNER_SHA256,*OWNERS])
+        control=next(row for row in checker.generated_partial_control_plan(owners,vars(census),census.GENERATED_PARTIAL_PROFILE_SHA256) if row["case"]==case)
+        module=control["fixture_module"]; owners=control["expected_owners"]
+        text,violations=self.mock_profile_census(owners,case!="default-disabled",case,module)
+        rows,_=census.census_records(text,owners); mutate(rows,module)
+        lines=["MATH_TRUST_DECL::"+json.dumps(row) for row in rows]
+        lines += ["MATH_TRUST_MODULE::"+json.dumps({"module":owner,"declarations":sum(row["module"]==owner for row in rows)}) for owner in owners]
+        text="\n".join(lines)+f"\nMATH_TRUST_COUNT::{len(rows)}\nMATH_TRUST_MODULE_COUNT::{len(owners)}\n"
+        relative=control["wrapper_relative"]; wrapper=control["wrapper_source"]
+        text+=f"{relative}:{len(wrapper.decode().splitlines())}:0: error: project trust audit failed: ["+",\n ".join(violations)+"]\n"
+        hashes={owner:census.GENERATED_PARTIAL_OWNER_SHA256.get(owner,"1"*64) for owner in owners}
+        command={"status":"completed","exit_code":1,"postcheck_passed":True,"text":text}
+        return checker.generated_partial_control_oracle(case,command,wrapper,relative,module,owners,hashes,vars(census))
+
+    def test_fake_pair_original_opaque_spoof_is_rejected(self):
+        def spoof(rows,module):
+            next(row for row in rows if row["name"]==module+".hostilePartial")["kind"]="opaque"
+        with self.assertRaisesRegex(ValueError,"intended same-owner/type safe original"):
+            self.profile_oracle_probe("fake-paired-suffix",spoof)
+
+    def test_custom_axiom_rows_cannot_spoof_other_owner_with_consistent_counts(self):
+        for suffix in (".hostileAxiom",".consumesHostileAxiom"):
+            def spoof(rows,module,suffix=suffix):
+                row=next(row for row in rows if row["name"]==module+suffix)
+                owner=next(iter(census.GENERATED_PARTIAL_OWNER_SHA256))
+                row.update(module=owner,runtime_helper_owner_source_sha256=census.GENERATED_PARTIAL_OWNER_SHA256[owner])
+            with self.subTest(row=suffix),self.assertRaisesRegex(ValueError,"actual consuming theorem"):
+                self.profile_oracle_probe("owner-custom-axiom",spoof)
+
+    def test_custom_axiom_fixture_type_and_trust_flags_are_exact(self):
+        for suffix in (".hostileAxiom",".consumesHostileAxiom"):
+            for field,value in [("type","True"),("unsafe",True),("partial",True),
+                                ("known_generated_runtime_helper",True),("direct_value_reference_to_runtime_helper",True),
+                                ("axioms",["extra.unapprovedAxiom"])]:
+                def spoof(rows,module,suffix=suffix,field=field,value=value):
+                    next(row for row in rows if row["name"]==module+suffix)[field]=value
+                with self.subTest(row=suffix,field=field),self.assertRaisesRegex(ValueError,"actual consuming theorem"):
+                    self.profile_oracle_probe("owner-custom-axiom",spoof)
+
+    def test_partial_and_unsafe_fixture_kind_and_flags_are_exact(self):
+        for case,suffix in [("fake-paired-suffix",".hostilePartial"),("unpaired-partial",".hostilePartial._unsafe_rec"),
+                            ("unrelated-unsafe",".hostileUnsafe")]:
+            for field,value in [("kind","opaque"),("known_generated_runtime_helper",True),
+                                ("direct_value_reference_to_runtime_helper",True),("axioms",["propext"])]:
+                def spoof(rows,module,suffix=suffix,field=field,value=value):
+                    next(row for row in rows if row["name"]==module+suffix)[field]=value
+                with self.subTest(case=case,field=field),self.assertRaises(ValueError):
+                    self.profile_oracle_probe(case,spoof)
+
+    def test_runtime_boolean_alone_or_mismatched_actual_source_is_rejected(self):
+        self.orchestration_cases(["root-runtime-no-owner", "root-runtime-source-drift", "root-runtime-missing-policy",
+                                  "root-runtime-string-boolean", "root-runtime-false-descriptor"])
+
+    def test_runtime_descriptor_is_exact_and_closed(self):
+        self.orchestration_cases(["root-runtime-wrong-" + key for key in pinned_runtime_descriptor()] +
+                                  ["root-runtime-extra-policy"])
+
+    def test_runtime_opt_in_retains_axiom_partial_and_theorem_reference_guards(self):
+        self.orchestration_cases(["root-runtime-disabled", "root-runtime-theorem-reference", "root-runtime-extra-unsafe",
+                                  "root-runtime-partial", "root-runtime-custom-axiom"])
+
+    def test_runtime_policy_no_implicit_or_coerced_opt_in(self):
+        frozen_census = vars(census)
+        for value in (None, 0, 1, "true", "false", [], {}):
+            with self.subTest(value=value), self.assertRaises(ValueError):
+                checker.resolve_runtime_policy({"runtime_exceptions_allowed": value}, frozen_census, {})
+        self.assertEqual(checker.resolve_runtime_policy({"runtime_exceptions_allowed": False}, frozen_census, {}),
+                         (False, "", None))
+        nodes = {census.RUNTIME_OWNER: SimpleNamespace(relative=census.RUNTIME_SOURCE, source_hash=census.RUNTIME_SOURCE_SHA256)}
+        self.assertEqual(checker.resolve_runtime_policy({"runtime_exceptions_allowed": False}, frozen_census, nodes),
+                         (False, "", None))
+
+
+class LifecycleControls(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.base = TEMP_ROOT / ("moebius-lifecycle-controls-" + checker.uuid.uuid4().hex)
+        checker.make_directory(cls.base, exclusive=True)
+        cls.records = []
+
+    def setUp(self):
+        self.root = self.base / self._testMethodName
+        checker.make_directory(self.root, exclusive=True)
+        self.no_children = patch.object(checker.subprocess, "Popen",
+            side_effect=AssertionError("Unmocked child process is forbidden in a pure control"))
+        self.no_children.start()
+        self.addCleanup(self.no_children.stop)
+        self.no_signals = patch.object(checker.os, "killpg",
+            side_effect=AssertionError("Unmocked process-group signal is forbidden in a pure control"))
+        self.no_signals.start()
+        self.addCleanup(self.no_signals.stop)
+
+    def run_recipe(self, recipe):
+        state = self.root / recipe
+        checker.make_directory(state / "source", exclusive=True)
+        checker.make_directory(state / "logs", exclusive=True)
+        receipt, events, control = {}, [], self
+        class FakeChild:
+            pid, returncode, calls = 987654, None, 0
+            def __init__(self, argv, **options):
+                events.append("spawn")
+                if recipe == "spawn-failure":
+                    raise OSError("original spawn failure")
+            def communicate(self, timeout=None):
+                self.calls += 1
+                events.append("communicate")
+                durable = json.loads((state / "receipt.json").read_text())
+                control.assertEqual(durable["commands"][-1]["child_pid"], self.pid)
+                if self.calls == 1:
+                    if recipe == "normal":
+                        self.returncode = 0
+                        return "normal stdout\n", ""
+                    if recipe in {"timeout", "timeout-parent-exited-group-alive"}:
+                        if recipe == "timeout-parent-exited-group-alive":
+                            self.returncode = 0
+                        raise checker.subprocess.TimeoutExpired("mock", timeout)
+                    if recipe == "interrupt":
+                        raise KeyboardInterrupt
+                    if recipe == "already-exited":
+                        self.returncode = 0
+                    raise OSError("original pipe failure")
+                if recipe == "pipe-failure":
+                    raise OSError("persistent pipe failure during cleanup")
+                return "partial stdout\n", "partial stderr\n"
+            def poll(self):
+                events.append("poll")
+                if recipe == "already-exited":
+                    self.returncode = 0
+                elif recipe == "exit-race":
+                    self.returncode = 0
+                    return None  # Exit occurs immediately after the observed running state.
+                return self.returncode
+            def wait(self, timeout=None):
+                events.append("wait")
+                control.assertLessEqual(timeout, 30)
+                control.assertIsNotNone(self.returncode)
+                return self.returncode
+        child = []
+        def spawn(argv, **options):
+            process = FakeChild(argv, **options)
+            child.append(process)
+            return process
+        def kill_group(pid, signal):
+            events.append("killpg")
+            control.assertEqual(pid, child[0].pid)
+            if recipe in {"vanished-group", "exit-race", "already-exited"}:
+                child[0].returncode = 0
+                raise ProcessLookupError("mock process group already gone")
+            if recipe != "timeout-parent-exited-group-alive":
+                child[0].returncode = -9
+        runner = checker.CommandRunner(state, state / "source", receipt, lambda: None, {}, 1)
+        with patch.object(checker.subprocess, "Popen", spawn), patch.object(checker.os, "killpg", kill_group):
+            if recipe == "interrupt":
+                with self.assertRaises(KeyboardInterrupt):
+                    runner.run(recipe, ["mock-lean"], {})
+                result = receipt["commands"][-1]
+                result["text"] = (state / result["log"]).read_text()
+            else:
+                result = runner.run(recipe, ["mock-lean"], {})
+        durable = json.loads((state / "receipt.json").read_text())
+        self.assertFalse(durable["kernel_checked"])
+        if recipe == "spawn-failure":
+            self.assertNotIn("child_pid", result)
+            self.assertEqual(events, ["spawn"])
+        else:
+            self.assertTrue(result["child_reaped"])
+            self.assertEqual(result["child_exit_code"], child[0].returncode)
+            self.assertEqual(durable["commands"][-1]["child_pid"], child[0].pid)
+            self.assertIn("wait", events)
+            self.assertNotIn("cleanup_error", result)
+        self.records.append({"control": recipe, "events": events, "receipt": str(state / "receipt.json"),
+                             "native_invocations": 0, "git_invocations": 0})
+        return result, events
+
+    def test_pid_is_durable_before_communication(self):
+        result, events = self.run_recipe("normal")
+        self.assertEqual(result["status"], "completed")
+        self.assertNotIn("killpg", events)
+
+    def test_spawn_failure_does_not_signal_or_reap_uncreated_child(self):
+        result, events = self.run_recipe("spawn-failure")
+        self.assertEqual(result["status"], "failed")
+        self.assertIn("original spawn failure", result["text"])
+
+    def test_generic_pipe_failure_terminates_reaps_and_retains_original_error(self):
+        result, events = self.run_recipe("pipe-failure")
+        self.assertEqual(result["status"], "failed")
+        self.assertIn("original pipe failure", result["text"])
+        self.assertIn("persistent pipe failure", result["cleanup_output_error"])
+        self.assertLess(events.index("killpg"), events.index("wait"))
+
+    def test_timeout_terminates_reaps_and_preserves_partial_diagnostics(self):
+        result, events = self.run_recipe("timeout")
+        self.assertEqual(result["status"], "timed-out")
+        self.assertIn("partial stdout", result["text"])
+        self.assertIn("partial stderr", result["text"])
+        self.assertIn("timed out", result["text"])
+        self.assertEqual(events.count("killpg"), 1)
+
+    def test_vanished_process_group_is_tolerated_and_child_is_reaped(self):
+        result, events = self.run_recipe("vanished-group")
+        self.assertEqual(result["status"], "failed")
+        self.assertIn("original pipe failure", result["text"])
+        self.assertEqual(result["child_exit_code"], 0)
+
+    def test_exited_parent_does_not_skip_termination_of_live_group(self):
+        result, events = self.run_recipe("timeout-parent-exited-group-alive")
+        self.assertEqual(result["status"], "timed-out")
+        self.assertEqual(result["child_exit_code"], 0)
+        self.assertEqual(events.count("killpg"), 1)
+        self.assertLess(events.index("killpg"), events.index("wait"))
+
+    def test_interruption_is_reraised_after_child_cleanup_and_receipt(self):
+        result, events = self.run_recipe("interrupt")
+        self.assertEqual(result["status"], "interrupted")
+        self.assertIn("Checker interrupted", result["text"])
+        self.assertEqual(events.count("killpg"), 1)
+
+    def test_child_exit_before_or_during_cleanup_is_reaped(self):
+        for recipe in ("already-exited", "exit-race"):
+            with self.subTest(recipe=recipe):
+                result, events = self.run_recipe(recipe)
+                self.assertEqual(result["status"], "failed")
+                self.assertIn("original pipe failure", result["text"])
+                self.assertEqual(result["child_exit_code"], 0)
+                self.assertEqual(events.count("killpg"), 1)
+
+
+
+# Terminal receipt consistency controls use only synthetic command/object/log evidence.
+# No successful classification of these fixtures asserts a native kernel run.
+PROJECTION=('label','status','child_pid','exit_code','command_sha256','log','log_sha256','postcheck_passed')
+
+class TerminalProfileControls(unittest.TestCase):
+    records=[]
+    def setUp(self):
+        self.tmp=tempfile.TemporaryDirectory(prefix='terminal-profile-pure-',dir=str(TEMP_ROOT))
+        self.state=Path(self.tmp.name);self.frozen=self.state/'source';self.build=self.state/'build'
+        self.frozen.mkdir();self.build.mkdir();(self.state/'logs').mkdir()
+        self.addCleanup(self.cleanup)
+        self.no_children=patch.object(subprocess,'Popen',side_effect=AssertionError('Native children forbidden in this pure control'))
+        self.no_children.start();self.addCleanup(self.no_children.stop)
+        self.no_signals=patch.object(os,'killpg',side_effect=AssertionError('Native signals forbidden in this pure control'))
+        self.no_signals.start();self.addCleanup(self.no_signals.stop)
+        self.owners=sorted([*census.GENERATED_PARTIAL_OWNER_SHA256,*OWNERS])
+        self.hashes={owner:census.GENERATED_PARTIAL_OWNER_SHA256.get(owner,'1'*64)for owner in self.owners}
+        self.profile=census.GENERATED_PARTIAL_PROFILE_SHA256
+        self.plan=checker.generated_partial_control_plan(self.owners,vars(census),self.profile)
+        self.lean=self.state/'synthetic-installed-lean'
+        self.lean_path=os.pathsep.join(map(str,[self.build,self.state/'synthetic-immutable-cache']))
+        self.receipt={'native_memory_limit_megabytes':12288,'native_jobs':1,'native_threads':1,
+            'kernel_trust_level':0,'command_timeout_seconds':600,'warnings_as_errors':True,
+            'runtime_profile_negative_controls':[],'commands':[]}
+        for i,control in enumerate(self.plan):
+            case=control['case']
+            for rel,data in [(control['fixture_relative'],control['fixture_source']),(control['wrapper_relative'],control['wrapper_source'])]:
+                checker.write_exclusive(self.frozen/rel,data,readonly=True)
+            artifact=self.build/(control['fixture_module'].replace('.','/')+'.olean')
+            checker.write_exclusive(artifact,b'synthetic compiler object '+case.encode())
+            families=checker.freeze_native_artifacts(artifact,[])
+            if case=='wrong-profile-sha':
+                audit_text=f"{control['wrapper_relative']}:{len(control['wrapper_source'].decode().splitlines())}:0: error: unapproved generated-partial profile permission\n"
+            else:
+                text,violations=CheckerControls.mock_profile_census(control['expected_owners'],case!='default-disabled',case,control['fixture_module'])
+                audit_text=text+f"{control['wrapper_relative']}:{len(control['wrapper_source'].decode().splitlines())}:0: error: project trust audit failed: ["+',\n '.join(violations)+']\n'
+            row={'case':case,'status':'intended-native-rejection','fixture_module':control['fixture_module'],
+                'fixture_source_sha256':checker.digest(control['fixture_source']),
+                'wrapper_source_sha256':checker.digest(control['wrapper_source']),
+                'expected_owners':control['expected_owners'],'rejected':True,'unsafe_control_accepted':False,
+                'fixture_artifact_families':families}
+            for hop in ['source','audit']:
+                rel=control['fixture_relative'] if hop=='source' else control['wrapper_relative']
+                data=control['fixture_source'] if hop=='source' else control['wrapper_source']
+                argv=[str(self.lean),'--trust=0','--memory=12288','--threads=1','-DwarningAsError=true']
+                argv+=['-o',str(artifact),rel]if hop=='source'else[rel]
+                contract={'argv':argv,'cwd':str(self.frozen),'source_sha256':{rel:checker.digest(data)},
+                          'LEAN_PATH':self.lean_path,'timeout_seconds':600}
+                label='profile-control-'+case+'-'+hop;log='logs/'+label+'.log';text=''if hop=='source'else audit_text
+                checker.write_exclusive(self.state/log,text.encode())
+                code=0 if hop=='source' else 1
+                command={'label':label,**contract,'command_sha256':self.contract_hash(contract),'status':'completed',
+                    'exit_code':code,'child_pid':100+i,'child_reaped':True,'child_exit_code':code,'postcheck_passed':True,
+                    'log':log,'log_sha256':checker.digest(text.encode()),'diagnostics':checker.diagnostic_records(text)}
+                self.receipt['commands'].append(command)
+                row[hop+'_command']={k:command[k]for k in PROJECTION}
+            command=self.receipt['commands'][-1]
+            row['verdict']=checker.generated_partial_control_oracle(case,{**command,'text':audit_text},
+                control['wrapper_source'],control['wrapper_relative'],control['fixture_module'],
+                control['expected_owners'],{**self.hashes,control['fixture_module']:checker.digest(control['fixture_source'])},vars(census))
+            self.receipt['runtime_profile_negative_controls'].append(row)
+        self.receipt['sealed_source_directory_records']=checker.seal_frozen_source(self.frozen)
+    def cleanup(self):
+        for directory,subdirs,files in os.walk(self.state):
+            os.chmod(directory,0o700)
+        self.tmp.cleanup()
+    @staticmethod
+    def contract_hash(contract):return checker.digest(json.dumps(contract,sort_keys=True,separators=(',',':')).encode())
+    def validate(self,receipt=None,plan=None):
+        return checker.validate_terminal_profile_controls(self.receipt if receipt is None else receipt,self.state,vars(census),
+            self.hashes,self.profile,expected_lean=self.lean,expected_memory_mb=12288,expected_timeout=600,
+            expected_lean_path=self.lean_path,expected_controls=self.plan if plan is None else plan)
+    def rejected(self,case,mutate,pattern):
+        self.assertEqual(self.validate()['control_count'],6)
+        receipt=copy.deepcopy(self.receipt);mutate(receipt)
+        with self.assertRaisesRegex((ValueError,RuntimeError),pattern)as raised:self.validate(receipt)
+        self.records.append({'case':case,'rejected':True,'reason':str(raised.exception)})
+    def edit_log(self,receipt,index,text):
+        command=receipt['commands'][index];(self.state/command['log']).write_text(text)
+        command['log_sha256']=checker.digest(text.encode());command['diagnostics']=checker.diagnostic_records(text)
+        row=receipt['runtime_profile_negative_controls'][index//2]
+        row[('source'if index%2==0 else'audit')+'_command']={k:command[k]for k in PROJECTION}
+    def test_complete_synthetic_evidence_recomputes_all_six_strict_oracles(self):
+        verdict=self.validate();self.assertTrue(verdict['strict_oracles_recomputed'])
+        self.assertEqual([r['case']for r in verdict['controls']],list(checker.PROFILE_CONTROL_CASES))
+        self.records.append({'case':'synthetic-complete-baseline','accepted_classification_only':True,'kernel_checked':False})
+    def test_rejected_true_without_completed_result_is_rejected(self):
+        for field,value in [('status','prepared'),('status','failed'),('rejected',1),('rejected','true'),('unsafe_control_accepted',0),('unsafe_control_accepted',True)]:
+            self.rejected(str((field,value)),lambda r,field=field,value=value:r['runtime_profile_negative_controls'][0].update({field:value}),'actual intended rejection')
+    def test_missing_records_and_duplicate_or_extra_labels_are_rejected(self):
+        mutations=[('missing-source-record',lambda r:r['runtime_profile_negative_controls'][0].pop('source_command'),'case/source/owner'),
+                   ('missing-source-command',lambda r:r['commands'].pop(0),'exact twelve'),
+                   ('duplicate-label',lambda r:r['commands'].append(copy.deepcopy(r['commands'][0])),'duplicate labels'),
+                   ('extra-control-label',lambda r:r['commands'].append({**r['commands'][0],'label':'profile-control-extra-source'}),'exact twelve'),
+                   ('missing-case',lambda r:r['runtime_profile_negative_controls'].pop(),'prepared six'),
+                   ('duplicate-case',lambda r:r['runtime_profile_negative_controls'][1].update(case=r['runtime_profile_negative_controls'][0]['case']),'prepared six')]
+        for case,mutate,pattern in mutations:self.rejected(case,mutate,pattern)
+    def test_source_exit_false_and_audit_crash_cannot_be_intended_rejections(self):
+        for index,field,value in [(0,'exit_code',1),(0,'exit_code',False),(1,'exit_code',-6),(1,'exit_code',0),(1,'exit_code',True),
+                                  (0,'status','input-changed'),(1,'status','timed-out'),(1,'child_reaped',False),
+                                  (0,'postcheck_passed',1),(1,'postcheck_passed',False),(1,'child_pid',True),(1,'child_exit_code',-6)]:
+            self.rejected(str((index,field,value)),lambda r,index=index,field=field,value=value:r['commands'][index].update({field:value}),'completed lifecycle')
+    def test_exact_contract_labels_argv_and_hash_bindings_are_required(self):
+        for field,value in [('argv',['unrelated-lean']),('cwd',str(self.state/'unrelated-cwd')),('source_sha256',{}),('LEAN_PATH','unrelated'),('timeout_seconds',True),('command_sha256','0'*64)]:
+            self.rejected('contract-'+field,lambda r,field=field,value=value:r['commands'][0].update({field:value}),'contract/hash drift')
+        self.rejected('projection-status-spoof',lambda r:r['runtime_profile_negative_controls'][0]['source_command'].update(status='failed'),'result/commands-ledger')
+        self.rejected('projection-bool-spoof',lambda r:r['runtime_profile_negative_controls'][0]['source_command'].update(postcheck_passed=1),'result/commands-ledger')
+    def test_stored_log_hash_or_cached_diagnostics_drift_is_rejected(self):
+        self.rejected('wrong-log-hash',lambda r:r['commands'][1].update(log_sha256='0'*64),'log hash or diagnostic')
+        self.rejected('wrong-cached-diagnostics',lambda r:r['commands'][1].update(diagnostics=[]),'log hash or diagnostic')
+        self.rejected('wrong-log-path',lambda r:r['commands'][1].update(log='../outside.log'),'log label binding')
+    def test_unrelated_audit_error_is_rejected_even_after_all_log_hashes_are_rebound(self):
+        receipt=copy.deepcopy(self.receipt);command=receipt['commands'][1]
+        text=(self.state/command['log']).read_text()+'other.lean:2:0: error: unrelated failure\n'
+        self.edit_log(receipt,1,text)
+        with self.assertRaisesRegex(ValueError,'exact frozen audit command'):self.validate(receipt)
+        self.records.append({'case':'extra-audit-error-with-rebound-hashes','rejected':True})
+    def test_source_warning_with_exit_zero_and_rebound_hashes_is_rejected(self):
+        receipt=copy.deepcopy(self.receipt);self.edit_log(receipt,0,'source.lean:1:0: warning: hostile warning\n')
+        with self.assertRaisesRegex(ValueError,'strict successful compile'):self.validate(receipt)
+        self.records.append({'case':'source-warning-with-zero-exit','rejected':True})
+    def test_verdict_truth_and_case_metadata_are_not_trusted(self):
+        self.rejected('stored-verdict-truth-spoof',lambda r:r['runtime_profile_negative_controls'][0]['verdict'].update(rejected=1),'recomputed strict oracle')
+        self.rejected('stored-verdict-extra',lambda r:r['runtime_profile_negative_controls'][0]['verdict'].update(extra=True),'recomputed strict oracle')
+        self.rejected('wrong-fixture-hash',lambda r:r['runtime_profile_negative_controls'][0].update(fixture_source_sha256='0'*64),'case/source/owner')
+        self.rejected('wrong-wrapper-hash',lambda r:r['runtime_profile_negative_controls'][0].update(wrapper_source_sha256='0'*64),'case/source/owner')
+        self.rejected('wrong-owner-list',lambda r:r['runtime_profile_negative_controls'][0].update(expected_owners=[]),'case/source/owner')
+    def test_frozen_source_and_compiled_object_drift_are_rejected(self):
+        source=self.frozen/self.plan[0]['fixture_relative'];source.chmod(0o600);source.write_bytes(source.read_bytes()+b'\n-- drift\n');source.chmod(0o400)
+        with self.assertRaisesRegex(ValueError,'immutable source binding drift'):self.validate()
+        self.records.append({'case':'actual-frozen-source-byte-drift','rejected':True})
+    def test_object_hash_and_family_membership_are_exact(self):
+        self.rejected('object-hash-drift',lambda r:r['runtime_profile_negative_controls'][0]['fixture_artifact_families']['.olean'].update(sha256='0'*64),'object hash/identity')
+        artifact=self.build/(self.plan[0]['fixture_module'].replace('.','/')+'.olean.private');artifact.write_bytes(b'unrecorded object')
+        with self.assertRaisesRegex(ValueError,'object-family membership'):self.validate()
+        self.records.append({'case':'unrecorded-object-family','rejected':True})
+    def test_different_prepared_plan_or_resource_envelope_is_rejected(self):
+        for key,value in [('native_jobs',True),('native_threads',2),('kernel_trust_level',False),('native_memory_limit_megabytes',4096),('warnings_as_errors',1)]:
+            self.rejected('envelope-'+key,lambda r,key=key,value=value:r.update({key:value}),'replay envelope|literal fatal warnings')
+        plan=copy.deepcopy(self.plan);plan[0]['fixture_source']+=b'\n-- different planned source\n'
+        with self.assertRaisesRegex(ValueError,'prepared control plan differs'):self.validate(plan=plan)
+        self.records.append({'case':'different-prepared-plan','rejected':True})
+    def test_input_drift_during_terminal_return_cannot_reach_acceptance(self):
+        control=CheckerControls('test_mocked_full_orchestration')
+        control.root=TEMP_ROOT/('terminal-postguard-control-'+checker.uuid.uuid4().hex)
+        checker.make_directory(control.root,exclusive=True)
+        control.records=[]
+        original=checker.validate_terminal_custom_axiom_controls
+        observations=[]
+        def drifting_return(*args,**kwargs):
+            result=original(*args,**kwargs)
+            source=control.root/'GRWTSK/Analysis/Exact.lean'
+            source.write_bytes(source.read_bytes()+b'\n-- input changes after terminal validator\n')
+            observations.append(result)
+            return result
+        with patch.object(checker,'validate_terminal_custom_axiom_controls',side_effect=drifting_return):
+            with self.assertRaisesRegex(AssertionError,'1 != 0'):
+                control.orchestration('root-profile-clean')
+        self.assertEqual(len(observations),1)
+        receipts=list((control.root/'.noeaaeue/.local/checks').glob('*/receipt.json'))
+        self.assertEqual(len(receipts),1)
+        receipt=json.loads(receipts[0].read_bytes())
+        self.assertFalse(receipt['kernel_checked'])
+        self.assertEqual(receipt['status'],'failed')
+        self.assertEqual(receipt['primary_failure']['stage'],'driver-exception')
+        self.assertIn('Original replay input changed',receipt['error'])
+        self.assertTrue(receipt['terminal_profile_control_validation']['strict_oracles_recomputed'])
+        self.assertTrue(receipt['terminal_custom_axiom_control_validation']['strict_oracles_recomputed'])
+        self.records.append({'case':'input-drift-during-terminal-return','rejected':True,
+            'receipt':str(receipts[0]),'kernel_checked':False,'native_invocations':0})
+    def test_custom_control_exact_diagnostic_with_crash_retains_primary_command_cause(self):
+        control=CheckerControls('test_mocked_full_orchestration')
+        control.root=Path('/private/tmp')/('terminal-crash-cause-control-'+checker.uuid.uuid4().hex)
+        checker.make_directory(control.root,exclusive=True)
+        control.records=[]
+        original=checker.CommandRunner.run
+        selected='control_'+checker.NAMESPACES[0]+'_public'
+        observations=[]
+        def crashing_command(runner,label,*args,**kwargs):
+            result=original(runner,label,*args,**kwargs)
+            if label==selected:
+                result.update(exit_code=-6,child_exit_code=-6)
+                entry=next(row for row in runner.receipt['commands']if row['label']==label)
+                entry.update(exit_code=-6,child_exit_code=-6)
+                runner.save()
+                observations.append(result)
+            return result
+        with patch.object(checker.CommandRunner,'run',crashing_command):
+            with self.assertRaisesRegex(AssertionError,'1 != 0'):
+                control.orchestration('root-profile-clean')
+        self.assertEqual(len(observations),1)
+        receipts=list((control.root/'.noeaaeue/.local/checks').glob('*/receipt.json'))
+        self.assertEqual(len(receipts),1)
+        receipt=json.loads(receipts[0].read_bytes())
+        self.assertFalse(receipt['kernel_checked'])
+        self.assertEqual(receipt['status'],'failed')
+        primary=receipt['primary_failure']
+        self.assertEqual(primary['stage'],'custom-axiom-control')
+        self.assertEqual(primary['exit_code'],-6)
+        self.assertEqual(receipt['error'],primary['error'])
+        command=next(row for row in receipt['commands']if row['label']==selected)
+        for field in ['exit_code','command_sha256','log','log_sha256']:
+            self.assertEqual(primary[field],command[field])
+        self.assertFalse(receipt['custom_axiom_negative_controls'][0]['rejected'])
+        self.assertIn('positive-exit rejection',receipt['custom_axiom_negative_controls'][0]['oracle_reason'])
+        relative=next(iter(command['source_sha256']))
+        text=(receipts[0].parent/command['log']).read_text()
+        self.assertTrue(checker.strict_custom_axiom_diagnostic(text,relative,checker.NAMESPACES[0])[0])
+        self.records.append({'case':'exact-custom-diagnostic-with-crash-retains-first-cause','rejected':True,
+            'receipt':str(receipts[0]),'exit_code':-6,'kernel_checked':False,'native_invocations':0})
+
+
+class TerminalCustomControls(unittest.TestCase):
+    records=[]
+    def setUp(self):
+        self.tmp=tempfile.TemporaryDirectory(prefix='terminal-custom-pure-',dir=str(TEMP_ROOT))
+        self.state=Path(self.tmp.name);self.frozen=self.state/'source'
+        self.frozen.mkdir();(self.state/'logs').mkdir()
+        self.addCleanup(self.cleanup)
+        for obj,name in [(subprocess,'Popen'),(os,'killpg')]:
+            mock=patch.object(obj,name,side_effect=AssertionError('No native process or signal allowed'))
+            mock.start();self.addCleanup(mock.stop)
+        self.audit='NumberTheory.ArithmeticFunction.MoebiusResponse.AllProjectAudit'
+        self.lean=self.state/'synthetic-installed-lean'
+        self.lean_path=os.pathsep.join(map(str,[self.state/'build',self.state/'synthetic-cache']))
+        self.receipt={'native_memory_limit_megabytes':12288,'native_jobs':1,'native_threads':1,
+            'kernel_trust_level':0,'command_timeout_seconds':600,'warnings_as_errors':True,
+            'custom_axiom_negative_controls':[],'commands':[]}
+        for i,(namespace,visibility) in enumerate((n,v)for n in checker.NAMESPACES for v in ['public','private']):
+            relative=f'MoebiusControls/{namespace}_{visibility}.lean'
+            modifier='private 'if visibility=='private'else''
+            source=(f'import {self.audit}\nnamespace {namespace}\n{modifier}axiom hostileCustomAxiom : False\n'
+                    f'end {namespace}\nrun_cmd P04Audit.check\n').encode()
+            checker.write_exclusive(self.frozen/relative,source,readonly=True)
+            label=f'control_{namespace}_{visibility}'
+            name=namespace+'.hostileCustomAxiom'
+            if visibility=='private':name='_private.MoebiusControls.'+namespace+'_private.0.'+name
+            text=f'{relative}:5:0: error: Unapproved axiom {name} in {name}\n'
+            log='logs/'+label+'.log';checker.write_exclusive(self.state/log,text.encode())
+            contract={'argv':[str(self.lean),'--trust=0','--memory=12288','--threads=1','-DwarningAsError=true',relative],
+                'cwd':str(self.frozen),'source_sha256':{relative:checker.digest(source)},
+                'LEAN_PATH':self.lean_path,'timeout_seconds':600}
+            sha=checker.digest(json.dumps(contract,sort_keys=True,separators=(',',':')).encode())
+            command={'label':label,**contract,'command_sha256':sha,'status':'completed','exit_code':1,
+                'child_pid':100+i,'child_reaped':True,'child_exit_code':1,'postcheck_passed':True,
+                'log':log,'log_sha256':checker.digest(text.encode()),'diagnostics':checker.diagnostic_records(text)}
+            exact,reason=checker.strict_custom_axiom_diagnostic(text,relative,namespace)
+            self.assertTrue(exact)
+            self.receipt['commands'].append(command)
+            self.receipt['custom_axiom_negative_controls'].append({'namespace':namespace,'visibility':visibility,
+                'rejected':True,'exit_code':1,'source_sha256':checker.digest(source),'oracle_reason':reason,
+                'command_sha256':sha,'log':log,'log_sha256':checker.digest(text.encode())})
+        self.receipt['sealed_source_directory_records']=checker.seal_frozen_source(self.frozen)
+    def cleanup(self):
+        for directory,_,_ in os.walk(self.state):os.chmod(directory,0o700)
+        self.tmp.cleanup()
+    def validate(self,receipt=None):
+        return checker.validate_terminal_custom_axiom_controls(self.receipt if receipt is None else receipt,self.state,
+            expected_audit_module=self.audit,expected_lean=self.lean,expected_memory_mb=12288,
+            expected_timeout=600,expected_lean_path=self.lean_path)
+    def reject(self,case,mutate,pattern):
+        self.assertEqual(self.validate()['control_count'],10)
+        receipt=copy.deepcopy(self.receipt);mutate(receipt)
+        with self.assertRaisesRegex(ValueError,pattern)as failure:self.validate(receipt)
+        self.records.append({'case':case,'rejected':True,'reason':str(failure.exception)})
+    def rebind_log(self,receipt,text,index=0):
+        command=receipt['commands'][index];(self.state/command['log']).write_text(text)
+        command.update(log_sha256=checker.digest(text.encode()),diagnostics=checker.diagnostic_records(text))
+        receipt['custom_axiom_negative_controls'][index]['log_sha256']=command['log_sha256']
+    def test_complete_synthetic_ten_controls(self):
+        result=self.validate();self.assertTrue(result['strict_oracles_recomputed']);self.assertEqual(result['audit_command_count'],10)
+        self.records.append({'case':'synthetic-ten-baseline','accepted_classification_only':True,'kernel_checked':False})
+    def test_missing_duplicate_extra_rows_and_labels(self):
+        cases=[('missing-row',lambda r:r['custom_axiom_negative_controls'].pop(),'prepared ten'),
+            ('duplicate-row',lambda r:r['custom_axiom_negative_controls'].__setitem__(1,copy.deepcopy(r['custom_axiom_negative_controls'][0])),'prepared ten'),
+            ('missing-command',lambda r:r['commands'].pop(),'ten native hops'),
+            ('duplicate-label',lambda r:r['commands'].append(copy.deepcopy(r['commands'][0])),'duplicate labels'),
+            ('extra-label',lambda r:r['commands'].append({**r['commands'][0],'label':'control_extra_public'}),'ten native hops')]
+        for case,change,pattern in cases:self.reject(case,change,pattern)
+    def test_crash_bool_status_and_lifecycle_spoofs(self):
+        for field,value in [('exit_code',-6),('exit_code',0),('exit_code',True),('status','prepared'),
+            ('status','timed-out'),('child_pid',True),('child_pid',0),('child_reaped',1),('child_reaped',False),
+            ('child_exit_code',True),('child_exit_code',-6),('postcheck_passed',1),('postcheck_passed',False),('cleanup_error','failure')]:
+            self.reject(str((field,value)),lambda r,field=field,value=value:r['commands'][0].update({field:value}),'completed lifecycle')
+    def test_row_summary_spoofs_are_rejected(self):
+        for field,value in [('rejected',1),('exit_code',True),('source_sha256','0'*64),('command_sha256','0'*64),
+            ('log_sha256','0'*64),('log','logs/unrelated.log'),('oracle_reason','claimed pass'),('extra','unrecognized')]:
+            self.reject('row-'+field,lambda r,field=field,value=value:r['custom_axiom_negative_controls'][0].update({field:value}),'exact intended rejection|binding drift')
+    def test_contract_and_log_binding_drift(self):
+        for field,value in [('argv',['unrelated-lean']),('cwd',str(self.state/'unrelated-cwd')),('source_sha256',{}),
+            ('LEAN_PATH','other'),('timeout_seconds',True),('command_sha256','0'*64)]:
+            self.reject('contract-'+field,lambda r,field=field,value=value:r['commands'][0].update({field:value}),'contract/hash drift')
+        for field,value in [('log','../unrelated.log'),('log_sha256','0'*64),('diagnostics',[])]:
+            self.reject('log-'+field,lambda r,field=field,value=value:r['commands'][0].update({field:value}),'log label|log hash or diagnostic')
+    def test_extra_or_unrelated_error_rejected_even_with_rebound_log(self):
+        receipt=copy.deepcopy(self.receipt);text=(self.state/receipt['commands'][0]['log']).read_text()
+        self.rebind_log(receipt,text+'other.lean:2:0: error: unrelated failure\n')
+        with self.assertRaisesRegex(ValueError,'strict oracle rejected'):self.validate(receipt)
+        self.records.append({'case':'extra-error-with-rebound-hashes','rejected':True})
+    def test_unrelated_single_error_rejected(self):
+        receipt=copy.deepcopy(self.receipt);relative=next(iter(receipt['commands'][0]['source_sha256']))
+        self.rebind_log(receipt,f'{relative}:5:0: error: unknown constant hostileCustomAxiom\n')
+        with self.assertRaisesRegex(ValueError,'strict oracle rejected'):self.validate(receipt)
+        self.records.append({'case':'unrelated-single-error-with-rebound-hashes','rejected':True})
+    def test_actual_source_drift_rejected(self):
+        source=self.frozen/next(iter(self.receipt['commands'][0]['source_sha256']))
+        source.chmod(0o600);source.write_bytes(source.read_bytes()+b'\n-- drift\n');source.chmod(0o400)
+        with self.assertRaisesRegex(ValueError,'immutable source binding drift'):self.validate()
+        self.records.append({'case':'actual-frozen-custom-source-drift','rejected':True})
+    def test_cross_visibility_or_wrong_private_module_name_is_rejected(self):
+        namespace=checker.NAMESPACES[0]
+        plain=namespace+'.hostileCustomAxiom'
+        private='_private.MoebiusControls.'+namespace+'_private.0.'+plain
+        cases=[('public-reporting-private-name',0,private),('private-reporting-public-name',1,plain),
+            ('private-wrong-module',1,'_private.UnrelatedModule.0.'+plain),
+            ('private-wrong-counter',1,'_private.MoebiusControls.'+namespace+'_private.1.'+plain)]
+        for case,index,name in cases:
+            self.assertEqual(self.validate()['control_count'],10)
+            receipt=copy.deepcopy(self.receipt);command=receipt['commands'][index]
+            original=(self.state/command['log']).read_text()
+            relative=next(iter(command['source_sha256']))
+            self.rebind_log(receipt,f'{relative}:5:0: error: Unapproved axiom {name} in {name}\n',index)
+            try:
+                with self.assertRaisesRegex(ValueError,'exact visibility/module/name'):self.validate(receipt)
+                self.records.append({'case':case,'rejected':True})
+            finally:(self.state/command['log']).write_text(original)
+    def test_envelope_bool_and_wrong_memory_rejected(self):
+        for key,value in [('native_jobs',True),('kernel_trust_level',False),('native_memory_limit_megabytes',4096),('warnings_as_errors',1)]:
+            self.reject('envelope-'+key,lambda r,key=key,value=value:r.update({key:value}),'replay envelope|literal fatal warnings')
+
+
+def main():
+    suite = unittest.TestSuite([unittest.defaultTestLoader.loadTestsFromTestCase(CheckerControls),
+                               unittest.defaultTestLoader.loadTestsFromTestCase(LifecycleControls),
+                               unittest.defaultTestLoader.loadTestsFromTestCase(TerminalProfileControls),
+                               unittest.defaultTestLoader.loadTestsFromTestCase(TerminalCustomControls)])
+    result = unittest.TextTestRunner(verbosity=2).run(suite)
+    report = {"status": "pure-python-controls-passed" if result.wasSuccessful() else "pure-python-controls-failed",
+        "tests_run": result.testsRun, "failures": len(result.failures), "errors": len(result.errors),
+        "checker_sha256": hashlib.sha256((REPO / ".noeaaeue/scripts/check_moebius_response.py").read_bytes()).hexdigest(),
+        "harness_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+        "kernel_checked": False, "native_invocations": 0, "git_invocations": 0,
+        "scope": "Source-binding/oracle/mock-orchestration controls; synthetic sources/cache and stub policy supply no Lean or canonical admission evidence.",
+        "preserved_receipts": CheckerControls.records + LifecycleControls.records + TerminalProfileControls.records + TerminalCustomControls.records,
+        "failure_details": [{"test": str(test), "traceback": text} for test, text in result.failures + result.errors]}
+    receipt = CheckerControls.base / "regressions.json"
+    checker.atomic_json(receipt, report)
+    print("Receipt:", receipt)
+    return int(not result.wasSuccessful())
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

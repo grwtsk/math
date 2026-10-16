@@ -1,0 +1,28 @@
+{
+  "status": "BUSY",
+  "run_directory": "/Users/local/Desktop/math/.noeaaeue/.local/math-trust/20261016T023036Z-a7b66ad879",
+  "mode": "lean-self-test",
+  "generated_runtime_helper_exception": {
+    "name": "GRWTSK.Algebra.orderedProduct._unsafe_rec",
+    "module": "GRWTSK.Algebra.OrderedProduct",
+    "status": "HISTORICAL_SINGLETON_POLICY_NOT_CURRENT_PERMISSION",
+    "kind": "definition",
+    "unsafe": true,
+    "partial": false,
+    "owner_source_sha256_required": "97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d",
+    "axiom_gate": "unchanged; standard axioms only",
+    "dependency_impact": "direct value references reported; direct theorem references rejected"
+  },
+  "competing_jobs": [
+    {
+      "pid": 67883,
+      "argv": "/opt/homebrew/Cellar/python@3.11/3.11.16/Frameworks/Python.framework/Versions/3.11/Resources/Python.app/Contents/MacOS/Python -O -B .noeaaeue/scripts/check_documentation_layout.py"
+    },
+    {
+      "pid": 68616,
+      "argv": "/Users/local/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lake env lean --trust=0 --memory=12288 --threads=1 -DwarningAsError=true --run /Users/local/Desktop/math/.noeaaeue/.local/documentation-census/20261016T023034996401Z-e434800c8c81/SourceDeclarationCensus.lean /Users/local/Desktop/math/.noeaaeue/.local/documentation-census/20261016T023034996401Z-e434800c8c81/manifest.json"
+    }
+  ],
+  "error": "BUSY: existing project Lean or verification job",
+  "results": []
+}

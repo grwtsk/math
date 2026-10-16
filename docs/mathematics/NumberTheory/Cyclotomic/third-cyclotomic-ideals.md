@@ -40,8 +40,8 @@ inequality proof.
 
 The [source](../../../../GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicIdeals.lean),
 [positive controls](../../../../GRWTSK/NumberTheory/Cyclotomic/Checks/Positive/ThirdCyclotomicIdeals.lean),
-[native receipt](../../../../evidence/NumberTheory/Cyclotomic/third-cyclotomic-ideals-checks-2026-10-15.json)
-and [integration record](../../../../evidence/NumberTheory/Cyclotomic/third-cyclotomic-ideals-integration-2026-10-15.json)
+[native receipt](../../../../.noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-ideals-checks-2026-10-15.json)
+and [integration record](../../../../.noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-ideals-integration-2026-10-15.json)
 bind the fresh selected closure and actual controls. Pinned Lean 4.33.0 checks
 trust zero, fatal warnings and every owned declaration and transitive axiom,
 allowing only `propext`, `Classical.choice` and `Quot.sound`. Clean pinned
@@ -54,7 +54,7 @@ Apache-2.0 terms from
 [FiniteFourier](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/GaussSum/FiniteFourier.lean).
 Mathlib number-field, cyclotomic and ideal-norm authors include Ashvni
 Narayanan, Anne Baanen, Riccardo Brasca and Alex J. Best; individual imported
-credits are retained. The [source review](../../../../evidence/NumberTheory/Cyclotomic/third-cyclotomic-ideals-source-review-2026-10-15.json)
+credits are retained. The [source review](../../../../.noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-ideals-source-review-2026-10-15.json)
 records exact source identities and bounded comparison scopes. Human direction:
 grwtsk contributors; adaptation, formalization and checking: OpenAI Codex.
 Correlated model/source review is not independent validation.
@@ -64,6 +64,8 @@ and Möbius weights, corrected masks and completed ideal sums remain open.
 This ring consumer does not supply their zero/window proofs, a common finite
 set for every frequency, finite integral interchange, later global bounds,
 the original detector or RH. It does not prove an operational cache refinement.
+
+The [cubic-root reduction result](third-cyclotomic-reduction.md) uses this actual integer ring to prove primitive order-three reduction under the explicit good-prime exclusion, with the ramified ideal and a genuine good maximal ideal as controls. Original character and global-sum suppliers remain separate.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

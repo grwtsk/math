@@ -1,5 +1,6 @@
 # Gap labels, tree coding and faithful transport
 
+
 ## Gap labels and the Dry problem
 
 Define the IDS by the normalized finite-volume eigenvalue count, with Dirichlet restrictions and multiplicities retained. It is continuous and nondecreasing. A real energy lies outside the spectrum exactly when the IDS is constant on some open neighborhood of that energy; this second property is essential.
@@ -62,7 +63,9 @@ Appendix I of the attached Sturmian paper obtains its IDS from the uniquely ergo
 
 ## Source and verification scope
 
-[Source](../../../../GRWTSK/Spectral/GapTransport.lean). Status: **literature-and-historical-source-description**. [Credit and evidence limits](../../../reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+[Source](../../../../GRWTSK/Spectral/GapTransport.lean). Status: **literature-and-historical-source-description**. [Credit and evidence limits](../../../../.noeaaeue/documentation/reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

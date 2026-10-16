@@ -1,0 +1,744 @@
+                                          BOUNDS ON THE EXCEPTIONAL SET IN THE abc CONJECTURE
+
+                                                     C. BERNERT, T. BROWNING, J. D. LICHTMAN, AND J. TERÄVÄINEN
+
+
+                                                 Abstract. We study solutions to the equation a + b = c, where a, b, c form a triple
+                                                 of coprime natural numbers. The abc conjecture asserts that, for any ε > 0, such
+                                                 triples satisfy rad(abc) ⩾ c1−ε with finitely many exceptions. In this article we obtain
+                                                 a power-saving bound on the size of the exceptional set of triples. The proof is
+                                                 based on a combination of upper bounds for the density of integer points on certain
+
+
+
+
+arXiv:2410.12234v2 [math.NT] 9 May 2026
+                                                 high-dimensional varieties, coming from the geometry of numbers and from Fourier
+                                                 analysis.
+
+
+
+
+                                                                                      Contents
+                                            1. Introduction                                                                                  1
+                                            2. An anatomic reduction                                                                         3
+                                            3. Fourier analysis                                                                              5
+                                            4. Geometry of numbers                                                                           6
+                                            5. The simplest non-trivial bound                                                                7
+                                            6. A stronger result for λ < 1                                                                   8
+                                            Appendix A. Python code for the linear program                                                   9
+                                            References                                                                                      12
+
+
+
+                                                                                 1. Introduction
+                                             In this paper, we use tools from analytic number theory to estimate the number of
+                                          triples of a given height satisfying the abc conjecture. Associated to any non-zero integer
+                                          n is its radical
+                                                                                           Y
+                                                                                 rad(n) =      p.
+                                                                                                p|n
+
+                                          We say that a triple (a, b, c) ∈ N3 with gcd(a, b, c) = 1 is an abc triple of exponent λ if
+                                                                            a + b = c,     rad(abc) < cλ .
+                                          The well-known abc conjecture of Masser and Oesterlé asserts that, for any λ < 1, there
+                                          are only finitely many abc triples of exponent λ. See also the work of Robert, Stewart
+                                          and Tenenbaum [10] for a refinement of the abc conjecture. The best unconditional
+                                          result is due to Stewart and Yu [9], who have shown that only finitely many abc triples
+                                          satisfy rad(abc) < (log c)3−ε . Recently, Pasten [8] has proved a new subexponential
+                                          bound, assuming that a < c1−ε , via a connection to Shimura curves. In this paper we
+                                          shall focus on counting the number Nλ (X) of abc triples of exponent λ in a box [1, X]3 ,
+                                          as X → ∞.
+                                             Given λ > 0, an old result of de Bruijn [3] implies that
+                                                                     n                     o
+                                                                   # n ⩽ x : rad(n) ⩽ xλ = Oε (xλ+ε ),                       (1.1)
+
+                                            Date: May 12, 2026.
+                                            2020 Mathematics Subject Classification. 11D45 (11D41, 11D72).
+                                                                                            1
+2              C. BERNERT, T. BROWNING, J. D. LICHTMAN, AND J. TERÄVÄINEN
+
+for any ε > 0. Any triple (a, b, c) counted by Nλ (X) must satisfy rad(abc) < X λ , and so
+we must have min{rad(a) rad(b), rad(b) rad(c), rad(c) rad(a)} < X 2λ/3 , since a, b, c are
+pairwise coprime. An application of (1.1) now leads to the following “trivial bound”.
+
+Proposition 1.1. Let λ > 0. Then Nλ (X) = Oε (X 2λ/3+ε ), for any ε > 0.
+
+   Note that for λ ⩾ 3 the counting function Nλ (X) is asymptotic to a constant multiple
+of X 2 , as X → ∞, and so it is only worth studying when λ < 3. The primary goal
+of this paper is to give the first power-saving improvement over the simple bound in
+Proposition 1.1 for values of λ ∈ (0, 2). In 2000, it was asked by Mazur [7] whether
+Nλ (X) has exact order X λ−1 , for a fixed λ > 1. This was answered positively by
+Kane [6] when λ ⩾ 2, who used the determinant method to prove that
+
+                               X λ−1+ε ≪ Nλ (X) ≪ε X λ−1+ε ,
+
+for any ε > 0. (In fact, the lower bound is valid for any λ > 1 and is originally due to
+unpublished work of Granville.) We assume henceforth that λ ∈ (0, 2]. The following is
+our main result.
+
+Theorem 1.2. Let λ ∈ (0, 2]. For any ε > 0, we have
+                                                  23λ+3
+                                                        +ε
+                                    Nλ (X) ≪ε X     40       .
+
+In particular, we have Nλ (X) ≪λ X 0.65 , if λ ∈ (0, 1).
+
+    Our result is non-trivial for a relatively large range of λ, since it follows that
+
+                                     Nλ (X) = o(X 2λ/3 ),
+
+for all λ ∈ (9/11, 2]. Given the relationship to the abc conjecture, the case λ ∈ (0, 1)
+is of special interest. For such λ, a more refined combination of our bounds leads to a
+rather complicated optimisation problem, which will yield the following improvement.
+
+Theorem 1.3. Let λ ∈ (0, 1). Then Nλ (X) ≪ε,λ X 0.6+ε , for any ε > 0.
+
+   This result is non-trivial for λ ∈ (9/10, 1). The present paper merges an earlier article
+of the last three authors [2], in which additional bounds coming from the determinant
+method and the theory of Thue equations were used to produce a worse bound, together
+with its subsequent improvement and simplification by the first author [1]. Since our
+bounds do not use the determinant method, it is plausible that further improvements
+are available, but we expect that a serious numerical improvement will be likely to
+require new ideas.
+   Besides our work, we are not aware of any general estimates for Nλ (X) when λ < 1,
+beyond Proposition 1.1. Nonetheless, there do exist specific Diophantine equations
+which are covered by the abc conjecture and where bounds have been given for the
+number of solutions. For example, it follows from work of Darmon and Granville [4]
+that there are only finitely many coprime integer solutions to the Diophantine equation
+xp + y q = z r , when p, q, r ∈ N are given and satisfy 1/p + 1/q + 1/r < 1.
+
+Notation. We shall use x ∼ X to denote x ∈ (X, 2X]. All statements involving a
+number ε are meant to hold for all sufficiently small constants ε > 0. In particular, we
+will frequently use the “divisor bound” by which we mean the fact that the number of
+divisors of a positive integer n is Oε (nε ). For a real number α we write e(α) = e2πiα for
+the corresponding complex number on the unit circle.
+                 BOUNDS ON THE EXCEPTIONAL SET IN THE abc CONJECTURE                                  3
+
+Acknowledgements. We are grateful to Bhavik Mehta for his assistance with using
+Lean to verify parts of an earlier version of this article. While working on this paper
+the third author was supported by an NSF Postdoctoral Fellowship. The fourth author
+was supported by the European Union’s Horizon Europe research and innovation pro-
+gramme under Marie Sklodowska-Curie grant agreement no. 101058904, by ERC grant
+agreement no. 101162746, and by Academy of Finland grant no. 362303. This material
+is based upon work supported by a grant from the Institute for Advanced Study School
+of Mathematics.
+
+                                   2. An anatomic reduction
+   Let us denote by Nλ∗ (X) the number of tuples (a, b, c) counted by Nλ (X) satisfy-
+ing additionally c ⩾ X/2 and rad(abc) ⩾ cλ /2. By a dyadic decomposition and the
+pigeonhole principle, we clearly have
+                              Nλ (X) ≪ (log X)2 max max Nµ∗ (Y ).
+                                                       1⩽Y ⩽X µ⩽λ
+
+Thus it will suffice to bound Nλ∗ (X).
+   The main goal of this section is to bound Nλ∗ (X) in terms of the number of solutions
+to certain monomial Diophantine equations. In order to state it, we need to introduce
+the quantity
+                                                                                                    
+                                                ai ∼ A i ,  b i ∼   B i , c i  ∼  Ci ,              
+                                                   Qd        i+b
+                                                                       Qd i                Qd     i,
+                                                                                                     
+                                             3d
+Bd (a0 , b0 , c0 , A, B, C) = # (a, b, c) ∈ N :  a0  i=1   a i      0     i=1 i b  =   c0      c
+                                                                                              i=1 i    ,
+                                                       Qd            Qd            Qd
+                                                 gcd             a ,           b ,         c   = 1
+                                                                                                    
+                                                          i=0 i         i=0 i        i=0 i
+                                                                                                    
+
+for d ∈ N, a vector (a0 , b0 , c0 ) ∈ N3 and parameters
+                A = (A1 , . . . , Ad ), B = (B1 , . . . , Bd ), C = (C1 , . . . , Cd ) ∈ Nd .
+Bearing this notation in mind, we shall prove the following bound.
+Proposition 2.1. For any ε0 > 0, there exists a positive integer d = d(ε0 ) such that
+                           Nλ∗ (X) ≪ε0 X ε0 · max Bd (a0 , b0 , c0 , A, B, C),
+where the maximum runs over pairwise coprime 1 ⩽ a0 , b0 , c0 ⩽ X ε0 and dyadic param-
+eters Ai , Bi , Ci ∈ [1, X] with
+                                               d
+                                  1      λ
+                                               Y
+                                        X ⩽          Aj Bj Cj ⩽ X λ+3ε0 /4
+                                 2d+1
+                                               j=1
+
+and
+                     d                  d                                d
+                           Ajj ⩽ X,           Bjj ⩽ X,                         Cjj ⩽ X.
+                     Y                  Y                                Y
+                                                           X 1−ε0 /2 ⩽
+                     j=1                j=1                              j=1
+
+   This anatomic decomposition of the abc equation is based on the following lemma,
+which provides such a decomposition for a single variable and which can easily be used
+to recover the bound (1.1).
+Lemma 2.2. For any ε0 > 0, there exists a positive integer d = d(ε0 ) ⩾ 6 such that
+any positive integer n has a factorization
+                                                         d
+                                                               njj
+                                                         Y
+                                               n = n0
+                                                         j=1
+4              C. BERNERT, T. BROWNING, J. D. LICHTMAN, AND J. TERÄVÄINEN
+
+with positive integers n0 , n1 , . . . , nd such that n1 , . . . , nd are pairwise coprime, and sat-
+isfying n0 ⩽ nε0 and
+                                       Y d                         Yd
+                             n−ε0          nj ⩽ rad(n) ⩽ nε0           nj .
+                                      j=1                                  j=1
+
+Proof. We may assume that ε0 < 1 for otherwise the claim is trivial with d = 6. Fix
+d = 6⌈ε−2            −1
+       0 ⌉ and k = ⌈ε0 ⌉. For a given n, we consider
+                                          Y
+                                    mj :=     p,
+                                                         pj ∥n
+
+as naive candidates for nj . We need to modify this construction to be able to truncate
+our products at j ⩽ d. To this end, for 1 ⩽ j ⩽ d, we define
+                                   (
+                                    mj               j ̸= k
+                             nj :=     Q       ⌊i/k⌋
+                                    mj i>d mi        j=k
+as well as
+                                                          j−k⌊j/k⌋
+                                                  Y
+                                        n0 :=           mj             .
+                                                  j>d
+Clearly, we have
+                                                                 d
+                                                  mjj = n0             njj
+                                             Y                   Y
+                                        n=
+                                              j                  j=1
+and, since the mi are pairwise coprime, so are n1 , . . . , nd . Moreover,
+                                    Y
+                              n0 ⩽     mkj ⩽ nk/d ⩽ nε0 ,
+                                            j>d
+                j/d
+since mkj ⩽ (mj )k = (mjj )k/d . Moving on to the radical, we have
+                                                  d
+                                                  Y                               d
+                                                                                  Y
+                                                                             ε0
+                          rad(n) ⩽ rad(n0 )              rad(nj ) ⩽ n                   nj .
+                                                  j=1                             j=1
+
+On the other hand, in view of
+                                                                  1/k
+                                    ⌊j/k⌋
+                                                                 mjj 
+                              Y                           Y
+                   nk = mk         mj        ⩽ mkk                           ⩽ n1/k ⩽ nε0 ,
+                             j>d                          j>d
+
+we find that
+                                    Y                   Y                         d
+                                                                                  Y
+                         rad(n) =           mj ⩾                 nj ⩾ n−ε0              nj ,
+                                    j⩾1               j⩽d,j̸=k                    j=1
+as required.                                                                                     □
+Proof of Proposition 2.1. We may assume that X is sufficiently large, for otherwise the
+claim is trivially true. We will choose d = d(ε0 ) = 6⌈(ε0 /4)−2 ⌉.
+   Suppose that (a, b, c) is a triple counted by Nλ∗ (X). By Lemma 2.2 we obtain factor-
+izations
+                                 d              d              d
+                                   ajj , b = b0   bjj , c = c0    cjj ,
+                                Y               Y              Y
+                        a = a0
+                                j=1                      j=1                       j=1
+
+                ⩽ X ε0 /4 . By assumption, a + b = c and gcd(a, b, c) = 1, so that a, b, c are
+with a0 , b0 , c0
+pairwise coprime and hence also di=0 ai , di=0 bi and di=0 ci are pairwise coprime.
+                               Q         Q           Q
+                  BOUNDS ON THE EXCEPTIONAL SET IN THE abc CONJECTURE                                                    5
+
+  Choosing Ai , Bi , Ci to be the unique powers of two such that ai ∼ Ai , bi ∼ Bi , ci ∼ Ci ,
+we find that
+                                     d                    d
+        1     λrad(abc) Y               Y
+           X ⩽         ⩽  A j B j C j ⩽   aj bj cj ⩽ rad(abc)X 3ε0 /4 ⩽ X λ+3ε0 /4
+      2d+1        2d
+                                    j=1                  j=1
+
+and
+                                           d             d
+                                                 Ajj ⩽         ajj ⩽ X,
+                                           Y             Y
+
+                                           j=1           j=1
+
+together with similar upper bounds for j=1 Bjj and dj=1 Cjj . For the lower bound, we
+                                                   Qd
+                                                    Q
+note that
+                             d           d
+                               Cjj ⩾ 2−d   cjj ⩾ X 1−ε0 /2 ,
+                            Y            Y
+
+                                    j=1              j=1
+provided that X is sufficiently large.
+   This shows that (a, b, c) is counted by Bd (a0 , b0 , c0 , A, B, C) for a suitable choice
+of Ai , Bi , Ci as powers of two. Since there are O(X 3ε0 /4 ) choices for a0 , b0 , c0 and at
+most (log X)3d ≪ε0 X ε0 /4 choices for Ai , Bi , Ci , the claim follows from the pigeonhole
+principle.                                                                                  □
+  In the following two sections, we will study bounds for Bd (a0 , b0 , c0 , A, B, C) for given
+parameters a0 , b0 , c0 , Ai , Bi , Ci satisfying the conditions in Proposition 2.1, for a given
+value of ε0 and the corresponding value of d = d(ε0 ), as well as for a sufficiently large
+parameter X. To simplify notation, let us write
+                                    d
+                                    Y                    d
+                                                         Y                  d
+                                                                            Y
+                            A=            Ai ,    B=           Bi ,   C=           Ci .
+                                    i=1                  i=1                i=1
+  Note that by fixing two of the three sets of variables in the defining equation of
+Bd (a0 , b0 , c0 , A, B, C), the remaining ones are determined up to a divisor function. We
+may thus record our first estimate, which recovers Proposition 1.1, since ABC ⩽ X λ+3ε0 .
+Proposition 2.3. We have
+                       Bd (a0 , b0 , c0 , A, B, C) ≪ε X ε min(AB, AC, BC).
+
+                                          3. Fourier analysis
+  In this section, we bound Bd (a0 , b0 , c0 , A, B, C) using Fourier analysis. (Note that
+our bound also recovers Proposition 1.1.)
+Proposition 3.1. For 2 ⩽ j, k, ℓ ⩽ d, we have
+                                                                   X 2λ/3+3ε0
+                   Bd (a0 , b0 , c0 , A, B, C) ≪ε0                                  1/6 .
+                                                          Q        Q        Q
+                                                            j|i Ai   k|i Bi   ℓ|i Ci
+
+Proof. By orthogonality of characters and Hölder’s inequality, we have
+                                    Z 1                                            3 Z 1
+                                                                                                              !1/3
+                                                                                   Y
+                                                                                                        3
+    Bd (a0 , b0 , c0 , A, B, C) ⩽         |S1 (α)S2 (α)S3 (−α)| dα ⩽                          |Si (α)| dα            ,
+                                     0                                             i=1    0
+
+with the exponential sums
+                     X                                                    X
+           S1 (α) =     e(αa0 a1 a22 · · · add ),              S2 (α) =            e(αb0 b1 b22 · · · bdd )
+                        ai ∼Ai                                            bi ∼Bi
+6             C. BERNERT, T. BROWNING, J. D. LICHTMAN, AND J. TERÄVÄINEN
+
+and                                            X
+                                 S3 (α) =              e(αc0 c1 c22 · · · cdd ).
+                                              ci ∼Ci
+We claim that                         Z 1
+                                            |S1 (α)|2 dα ≪d,ε X ε A                               (3.1)
+                                       0
+and                             Z 1
+                                                          A3
+                                   |S1 (α)|4 dα ≪d,ε X ε Q        .                               (3.2)
+                                 0                         j|i Ai
+Combined with an application of Cauchy-Schwarz and the analogous inequalities for S2
+and S3 , this will suffice to deduce the result.
+    For the proof of the second moment bound (3.1), we note that, by orthogonality,
+the second moment counts the number of solutions to a1 a22 · · · add = a′1 a′2         ′d
+                                                                              2 · · · ad with
+      ′                                        ′                         ε
+ai , ai ∼ Ai . But on fixing all the ai , the ai are determined up to O(X ) many choices
+by the divisor bound. This proves (3.1).
+    Turning to the fourth moment bound (3.2), we begin by applying Cauchy-Schwarz
+to the sum over ai for j ∤ i in S1 (α) to obtain
+                                                                           
+                         Y     X X                     Y      Y        Y
+             |S1 (α)|2 ⩽    Ai               e αa0  aii − (a′i )i      aii  .
+                        j∤i     ai ∼Ai a′i ∼Ai ,j|i                 j|i            j|i     j∤i
+
+Inserting this bound into our fourth momentQand using orthogonality of characters, we
+find that the fourth moment is bounded by j∤i Ai times the number of solutions to
+                                      
+                       Y       Y         Y       Y           Y
+                      aii −      a′ii    aii =  (a′′i )i −   (a′′′
+                                                                 i )
+                                                                     i
+
+                          j|i         j|i        j∤i            i                  i
+
+with ai , a′′i , a′′′                           ′
+                   i ∼ Ai and, for j | i, also ai ∼ Ai . It therefore suffices to show that the
+number of such solutions is bounded by O(X ε A2 ). This is certainly true for the cases
+where both sides are equal to zero, since we can choose the ai and a′′i freely and then
+the a′i and a′′′  i are determined up to a divisor function.
+  In the remaining cases, we have at most A2 many choices for the a′′i and a′′′         i . But
+then the left-hand side is fixed. In particular, the ai for j ∤ i are determined up to a
+divisor function. We now recall the well-known fact that, for a fixed non-zero integer
+n ∈ Z, the Diophantine equation xj − y j = n has Oε (|nX|ε ) integer solutions in the
+box [1, X]2 . (This can be proved using the divisor bound.) Thus it follows that ai
+and a′i are determined up to a divisor function. This proves (3.2) and therefore the
+proposition.                                                                                 □
+
+                                  4. Geometry of numbers
+   In this section, we bound Bd (a0 , b0 , c0 , A, B, C) by fixing some of the variables and
+treating the remaining equation as a linear equation via the geometry of numbers. This
+leads to the following bound.
+Proposition 4.1. For any sets I, I ′ , I ′′ ⊂ {1, 2, . . . , d} we have
+                                                       X λ+4ε0
+           Bd (a0 , b0 , c0 , A, B, C) ≪ε0 Q           Q          Q
+                                                i∈I Ai   i∈I ′ Bi   i∈I ′′ Ci
+                                                           Y          Y           Y
+                                                                  i−1
+                                               +X  λ−1+6ε0
+                                                                Ai          Bii−1   Cii−1 .
+                                                                    i∈I        i∈I ′     i∈I ′′
+                   BOUNDS ON THE EXCEPTIONAL SET IN THE abc CONJECTURE                                            7
+
+Proof. Let (a1 , . . . , ad , b1 , . . . , bd , c1 , . . . , cd ) be a tuple counted by Bd (a0 , b0 , c0 , A, B, C).
+Define
+                                        Y                          Y                Y
+                          a′ = a0            aii , b′ = b0            bii , c′ = c0    cii ,
+                                         i̸∈I                     i̸∈I ′                        i̸∈I ′′
+                                   Y                          Y                             Y
+                           x=            aii ,          y=            bii ,        z=                cii ,
+                                   i∈I                        i∈I ′                         i∈I ′′
+                                   Y                           Y                             Y
+                           X=              Aii ,        Y =            Bii ,       Z=                 Cii .
+                                   i∈I                         i∈I ′                        i∈I ′′
+
+Then gcd(a′ , b′ , c′ ) = 1 and gcd(x, y, z) = 1 and we have
+                                                       a′ x + b′ y = c′ z.
+By a classical bound from the geometry of numbers, as proved by Heath-Brown [5,
+Lemma 3], for example, for fixed a′ , b′ , c′ , the number of primitive solutions (x, y, z) is
+bounded by
+                                                  XY Z
+                           ≪1+                                .
+                                  max{|a |X, |b′ |Y, |c′ |Z}
+                                                ′
+
+Any such solution fixes ai for i ∈ I, bi for i ∈ I ′ and ci for i ∈ I ′′ up to O(X ε ) many
+choices. Summing over the choices of the remaining variables, the O(1)-term contributes
+                     Y Y            Y                       ABC
+             ≪ε X ε     Ai       Bi     Ci = X ε Q         Q          Q
+                               ′
+                            i̸∈I     ′′  i̸∈I       i∈I Ai
+                                                     i̸∈I    i∈I ′ Bi   i∈I ′′ Ci
+
+                                                                                     X λ+4ε0
+                                                              ≪ε0 Q                  Q          Q           ,
+                                                                              i∈I Ai   i∈I ′ Bi   i∈I ′′ Ci
+
+since ABC ⩽ X λ+3ε0 , which is satisfactory. Similarly, the remaining term contributes
+                               i          i           i Y
+                        Q        Q          Q
+                          i∈I Ai   i∈I ′ Bi   i∈I ′′ Ci
+                                                                   Y          Y
+                      ε
+               ≪ε X                                      ·      Ai        Bi         Ci
+                                  X 1−2ε
+                                                           i̸∈I    i̸∈I ′    i̸∈I ′′
+                                     Y         Y              Y
+               ≪ε0 X −1+3ε0 ABC           Ai−1
+                                            i        B i
+                                                        i−1
+                                                                  Cii−1 ,
+                                                       i∈I            i∈I ′        i∈I ′′
+
+which is also satisfactory.                                                                                      □
+
+                               5. The simplest non-trivial bound
+   In this section we prove Theorem 1.2. For convenience let us write Pi = Ai Bi Ci .
+
+Proof of Theorem 1.2. Let λ ∈ (0, 2] and suppose that the theorem is false. By Propo-
+sition 2.1, we can then find δ0 < 11λ−9
+                                   120 such that for any sufficiently small ε0 > 0, and
+for the corresponding value of d, there exist a0 , b0 , c0 , A, B, C with
+                                    Bd (a0 , b0 , c0 , A, B, C) ⩾ X 2λ/3−δ0 ,
+for arbitrarily large X. Fix δ ∈ (δ0 , 11λ−9
+                                         120 ). For sufficiently small ε0 > 0, it follows
+                                 ′      ′′
+from Proposition 4.1 with I = I = I = {1} that we must have P1 ≪ X λ/3+δ . By
+Proposition 3.1 with j = k = ℓ, we must have Pj ≪ X 6δ for all j ⩾ 2. However,
+                              Y
+                     X 5λ−3 ≪    Pi5−i ≪ P14 P23 P32 P4 ≪ X 4λ/3+40δ ,
+                                                 i
+
+which contradicts our upper bound for δ.                                                                         □
+8                C. BERNERT, T. BROWNING, J. D. LICHTMAN, AND J. TERÄVÄINEN
+
+                                 6. A stronger result for λ < 1
+   In this section we describe how to prove Theorem 1.3. To begin with, the following
+result is obtained by solving a mixed-integer linear program; the corresponding Python
+code is given in Section A.
+Proposition 6.1. Let a, a1 , . . . , a6 , b, b1 , . . . , b6 , c, c1 , . . . , c6 , D ∈ R⩾0 . Let
+                                   pi = ai + bi + ci ,      L = a + b + c.
+Then D ⩽ 0.6 if the following list of 22 inequalities hold:
+                                                    L ⩽ 1,                                           (6.1)
+
+                                  
+                                  a1 + a2 + a3 + a4 + a5 + a6 ⩽ a,
+                                  
+                                    b1 + b2 + b3 + b4 + b5 + b6 ⩽ b,                                 (6.2)
+                                  
+                                   c + c + c + c + c + c ⩽ c,
+                                     1    2    3    4    5    6
+
+                           
+                           7a − 1 ⩽ 6a1 + 5a2 + 4a3 + 3a4 + 2a5 + a6 ,
+                           
+                             7b − 1 ⩽ 6b1 + 5b2 + 4b3 + 3b4 + 2b5 + b6 ,                             (6.3)
+                           
+                            7c − 1 ⩽ 6c + 5c + 4c + 3c + 2c + c ,
+                                        1     2     3     4     5    6
+
+
+
+                                      D ⩽ min(a + b, a + c, b + c),                                  (6.4)
+
+
+                              min(p1 + p2 + p4 , 1 − p2 − 3p4 ) ⩽ L − D,                             (6.5)
+
+                            
+                            min(p1 + p2 + a3 , 1 − p2 − 2a3 ) ⩽ L − D,
+                            
+                              min(p1 + p2 + b3 , 1 − p2 − 2b3 ) ⩽ L − D,                             (6.6)
+                            
+                              min(p1 + p2 + c3 , 1 − p2 − 2c3 ) ⩽ L − D,
+                            
+
+                     
+                     min(p1 + p2 + a3 + b3 , 1 − p2 − 2a3 − 2b3 ) ⩽ L − D,
+                     
+                       min(p1 + p2 + b3 + c3 , 1 − p2 − 2b3 − 2c3 ) ⩽ L − D,                         (6.7)
+                     
+                      min(p1 + p2 + c3 + a3 , 1 − p2 − 2c3 − 2a3 ) ⩽ L − D,
+                     
+
+                      
+                      min(p1 + a3 + b2 + c2 , 1 − 2a3 − b2 − c2 ) ⩽ L − D,
+                      
+                       min(p1 + a2 + b3 + c2 , 1 − a2 − 2b3 − c2 ) ⩽ L − D,                          (6.8)
+                      
+                       min(p1 + a2 + b2 + c3 , 1 − a2 − b2 − 2c3 ) ⩽ L − D,
+                      
+
+                     
+                     min(p1 + a2 + b3 + c3 , 1 − a2 − 2b3 − 2c3 ) ⩽ L − D,
+                     
+                      min(p1 + a3 + b2 + c3 , 1 − 2a3 − b2 − 2c3 ) ⩽ L − D,                          (6.9)
+                     
+                      min(p1 + a3 + b3 + c2 , 1 − 2a3 − 2b3 − c2 ) ⩽ L − D,
+                     
+
+
+     max(a2 + a4 + a6 , a3 + a6 , a5 ) + max(b2 + b4 + b6 , b3 + b6 , b5 )
+                                                                                                    (6.10)
+                                            + max(c2 + c4 + c6 , c3 + c6 , c5 ) ⩽ 4L − 6D.
+                     BOUNDS ON THE EXCEPTIONAL SET IN THE abc CONJECTURE                               9
+
+     Proof of Theorem 1.3. We fix a choice of λ ∈ (0, 1). Suppose that Theorem 1.3 is
+     false. Then, by Proposition 2.1, we can find δ0 > 0.6 such that for any ε0 and the
+     corresponding d, there are a0 , b0 , c0 , A, B, C with
+                                      Bd (a0 , b0 , c0 , A, B, C) ⩾ X δ0
+     for arbitrarily large X. Fix D ∈ (0.6, δ0 ).
+        Write A = X a , B = X b , C = X c as well as Ai = X ai , Bi = X bi , Ci = X ci . Then,
+     as we will see below, for sufficiently small ε0 > 0, the variables ai , bi , ci , a, b, c, D satisfy
+     the hypotheses of Proposition 6.1 contradicting the fact that D > 0.6.
+        Assuming that ε0 is sufficiently small, it follows that ABC ⩽ X λ+3ε0 ⩽ X. This
+     establishes (6.1). The inequalities in (6.2) follow immediately from the definitions. The
+     inequalities in (6.3) also follow from the definitions and the observation that
+                              X               X               X
+                                   iai ⩽ 1,       ibi ⩽ 1,        ici ⩽ 1,
+                             1⩽i⩽6              1⩽i⩽6             1⩽i⩽6
+     so that                          X
+                    7a − 1 ⩽ 7a −            iai ⩽ 6a1 + 5a2 + 4a3 + 3a4 + 2a5 + a6 .
+                                     1⩽i⩽6
+     Similarly for the remaining two inequalities in (6.3). The inequality (6.4) is just the
+     trivial bound from Proposition 2.3.
+        The next set of inequalities originate from the geometry bound in Proposition 4.1
+     with various choices of I, I ′ , I ′′ . More precisely, (6.5) follows on taking
+                                         I = I ′ = I ′′ = {1, 2, 4};
+     the inequalities (6.6) correspond to taking
+                                      I = I ′ = {1, 2}, I ′′ = {1, 2, 3}
+     and its permutations; the inequalities (6.7) correspond to taking
+                                      I = {1, 2}, I ′ = I ′′ = {1, 2, 3}
+     and its permutations; the inequalities (6.8) correspond to taking
+                                       I = I ′ = {1, 2}, I ′′ = {1, 3}
+     and its permutations; and finally the inequalities (6.9) correspond to taking
+                                       I = {1, 2}, I ′ = I ′′ = {1, 3}
+     and its permutations. The final inequality (6.10) is the Fourier bound from Proposi-
+     tion 3.1.                                                                         □
+
+                     Appendix A. Python code for the linear program
+
+1    import pulp
+2
+3    # define problem
+4    prob = pulp.LpProblem("LP_with_OR_constraints", pulp.LpMaximize)
+5
+6    # Variables
+7    p1 = pulp.LpVariable("p1", lowBound=0)
+ 8   a1 = pulp.LpVariable("a1", lowBound=0)
+ 9   b1 = pulp.LpVariable("b1", lowBound=0)
+10   c1 = pulp.LpVariable("c1", lowBound=0)
+11   p2 = pulp.LpVariable("p2", lowBound=0)
+12   a2 = pulp.LpVariable("a2", lowBound=0)
+13   b2 = pulp.LpVariable("b2", lowBound=0)
+     10          C. BERNERT, T. BROWNING, J. D. LICHTMAN, AND J. TERÄVÄINEN
+
+14   c2 = pulp.LpVariable("c2", lowBound=0)
+15   p3 = pulp.LpVariable("p3", lowBound=0)
+16   a3 = pulp.LpVariable("a3", lowBound=0)
+17   b3 = pulp.LpVariable("b3", lowBound=0)
+18   c3 = pulp.LpVariable("c3", lowBound=0)
+19   p4 = pulp.LpVariable("p4", lowBound=0)
+20   a4 = pulp.LpVariable("a4", lowBound=0)
+21   b4 = pulp.LpVariable("b4", lowBound=0)
+22   c4 = pulp.LpVariable("c4", lowBound=0)
+23   p5 = pulp.LpVariable("p5", lowBound=0)
+24   a5 = pulp.LpVariable("a5", lowBound=0)
+25   b5 = pulp.LpVariable("b5", lowBound=0)
+26   c5 = pulp.LpVariable("c5", lowBound=0)
+27   p6 = pulp.LpVariable("p6", lowBound=0)
+28   a6 = pulp.LpVariable("a6", lowBound=0)
+29   b6 = pulp.LpVariable("b6", lowBound=0)
+30   c6 = pulp.LpVariable("c6", lowBound=0)
+31   a = pulp.LpVariable("a", lowBound=0)
+32   b = pulp.LpVariable("b", lowBound=0)
+33   c = pulp.LpVariable("c", lowBound=0)
+34   A = pulp.LpVariable("A", lowBound=0)
+35   B = pulp.LpVariable("B", lowBound=0)
+36   C = pulp.LpVariable("C", lowBound=0)
+37   D = pulp.LpVariable("D")
+38   L = pulp.LpVariable("L", lowBound=0)
+39
+40   # binary variables for OR conditions
+41   z1 = pulp.LpVariable("z1", cat="Binary")
+42   z2 = pulp.LpVariable("z2", cat="Binary")
+43   z3 = pulp.LpVariable("z3", cat="Binary")
+44   z4 = pulp.LpVariable("z4", cat="Binary")
+45   z5 = pulp.LpVariable("z5", cat="Binary")
+46   z6 = pulp.LpVariable("z6", cat="Binary")
+47   z7 = pulp.LpVariable("z7", cat="Binary")
+48   z8 = pulp.LpVariable("z8", cat="Binary")
+49   z9 = pulp.LpVariable("z9", cat="Binary")
+50   z10 = pulp.LpVariable("z10", cat="Binary")
+51   z11 = pulp.LpVariable("z11", cat="Binary")
+52   z12 = pulp.LpVariable("z12", cat="Binary")
+53   z13 = pulp.LpVariable("z13", cat="Binary")
+54   M = 100 # Big-M
+55
+56   # Goal function: Maximal exponent
+57   prob += D
+58
+59   # Setup
+60   prob += p1 == a1+b1+c1
+61   prob += p2 == a2+b2+c2
+62   prob += p3 == a3+b3+c3
+63   prob += p4 == a4+b4+c4
+64   prob += p5 == a5+b5+c5
+65   prob += p6 == a6+b6+c6
+66   prob += L == a + b + c
+67
+68   prob += L <= 1
+                   BOUNDS ON THE EXCEPTIONAL SET IN THE abc CONJECTURE   11
+
+69    prob += a1 + a2 + a3 + a4 + a5 + a6 <= a
+70    prob += b1 + b2 + b3 + b4 + b5 + b6 <= b
+71    prob += c1 + c2 + c3 + c4 + c5 + c6 <= c
+72    prob += 7*a - 1 <= 6*a1 + 5*a2 + 4*a3 + 3*a4 + 2*a5 + a6
+73    prob += 7*b - 1 <= 6*b1 + 5*b2 + 4*b3 + 3*b4 + 2*b5 + b6
+74    prob += 7*c - 1 <= 6*c1 + 5*c2 + 4*c3 + 3*c4 + 2*c5 + c6
+75
+76    # Trivial bounds
+77    prob += D <= b + c
+78    prob += D <= a + c
+79    prob += D <= a + b
+80
+81    # Geometry bounds
+82
+83    # 124, 124, 124
+84    prob += p1 + p2 + p4 <= L - D + M*z1
+85    prob += 1 - p2 - 3*p4 <= L - D + M*(1 - z1)
+86
+87    # 12, 12, 123
+88    prob += p1 + p2 + a3 <= L - D + M*z2
+89    prob += 1 - p2 - 2*a3 <= L - D + M*(1 - z2)
+90    prob += p1 + p2 + b3 <= L - D + M*z3
+91    prob += 1 - p2 - 2*b3 <= L - D + M*(1 - z3)
+92    prob += p1 + p2 + c3 <= L - D + M*z4
+93    prob += 1 - p2 - 2*c3 <= L - D + M*(1 - z4)
+94
+95  # 12, 123, 123
+96  prob += p1 + p2 + a3 + b3 <= L - D + M*z5
+97  prob += 1 - p2 - 2*a3 - 2*b3 <= L - D + M*(1 - z5)
+98  prob += p1 + p2 + b3 + c3 <= L - D + M*z6
+99  prob += 1 - p2 - 2*b3 - 2*c3 <= L - D + M*(1 - z6)
+100 prob += p1 + p2 + c3 + a3 <= L - D + M*z7
+101 prob += 1 - p2 - 2*c3 - 2*a3 <= L - D + M*(1 - z7)
+102
+103   # 12,12,13
+104   prob += p1 + a2 + b3 + c2 <= L - D + M*z8
+105   prob += 1 - a2 - 2*b3 - c2 <= L - D + M*(1 - z8)
+106   prob += p1 + a2 + c3 + b2 <= L - D + M*z9
+107   prob += 1 - a2 - 2*c3 - b2 <= L - D + M*(1 - z9)
+108   prob += p1 + b2 + a3 + c2 <= L - D + M*z10
+109   prob += 1 - b2 - 2*a3 - c2 <= L - D + M*(1 - z10)
+110
+111 # 12,13,13
+112 prob += p1 + b2 + c3 + a3 <= L - D + M*z11
+113 prob += 1 - b2 - 2*c3 - 2*a3 <= L - D + M*(1 - z11)
+114 prob += p1 + c2 + a3 + b3 <= L - D + M*z12
+115 prob += 1 - c2 - 2*a3 - 2*b3 <= L - D + M*(1 - z12)
+116 prob += p1 + a2 + b3 + a3 <= L - D + M*z13
+117 prob += 1 - a2 - 2*b3 - 2*c3 <= L - D + M*(1 - z13)
+118
+119 # auxiliary variables for Fourier bound: A=max(a2+a4+a6,a3+a6,a5)
+120 prob += a2 + a4 + a6 <= A
+121 prob += a3 + a6 <= A
+122 prob += a5 <= A
+123 prob += b2 + b4 + b6 <= B
+      12              C. BERNERT, T. BROWNING, J. D. LICHTMAN, AND J. TERÄVÄINEN
+
+124   prob += b3 + b6 <= B
+125   prob += b5 <= B
+126   prob += c2 + c4 + c6 <= C
+127   prob += c3 + c6 <= C
+128   prob += c5 <= C
+129
+130   # Fourier bound
+131   prob += A + B + C <= 4*L - 6*D
+132
+133   # Solve
+134   prob.solve(pulp.PULP_CBC_CMD(msg=False))
+135
+136   # Output
+137   print("Status:", pulp.LpStatus[prob.status])
+138   for v in [a1,b1,c1,a2,b2,c2,a3,b3,c3,a4,b4,c4,a5,b5,c5,a6,b6,c6,D]:
+139       print(f"{v.name} = {v.value()}")
+140
+141   print("Maximal value of D:", pulp.value(prob.objective))
+
+                                                  References
+       [1] C. Bernert, The exceptional set in the abc conjecture. Preprint, 2025. (arXiv:2506.13364v1) 2
+       [2] T. Browning, J. D. Lichtman and J. Teräväinen, The exceptional set in the abc conjecture. Preprint,
+           2024. (arXiv:2410.12234) 2
+       [3] N.G. de Bruijn, On the number of integers ⩽ x whose prime factors divide n. Illinois J. Math. 6
+           (1962), 137–141. 1
+       [4] H. Darmon and A. Granville, On the equations z m = F (x, y) and Axp + By q = Cz r . Bull. London
+           Math. Soc. 27 (1995), 513–543. 2
+       [5] D.R. Heath-Brown, Diophantine approximation with square-free numbers. Math. Zeit. 187 (1984),
+           335–344. 7
+       [6] D. Kane, On the number of ABC solutions with restricted radical sizes. J. Number Theory 154
+           (2015), 32–43. 2
+       [7] B. Mazur, Questions about powers of numbers. Notices Amer. Math. Soc. 47 (2000), 195–202. 2
+       [8] H. Pasten, The largest prime factor of n2 + 1 and improvements on subexponential ABC. Invent.
+           Math. 236 (2024), 373–385. 1
+       [9] C.L. Stewart and K.R. Yu, On the abc conjecture. II. Duke Math. J. 108 (2001), 169–181. 1
+      [10] O. Robert, C.L. Stewart and G. Tenenbaum, A refinement of the abc conjecture. Bull. London
+           Math. Soc. 46 (2014), 1156–1166. 1
+
+        Institute for Science and Technology Austria, Am Campus 1, 3400 Klosterneuburg,
+      Austria
+        Email address: christian.bernert@ist.ac.at, tdb@ist.ac.at
+
+        Department of Mathematics, Stanford University, 450 Jane Stanford Way, Stanford,
+      CA 94305-2125, USA
+        Email address: jdlichtman@stanford.edu
+
+         Department of Pure Mathematics and Mathematical Statistics, University of Cam-
+      bridge, Cambridge CB3 0WB, UK
+         Email address: joni.p.teravainen@gmail.com
+

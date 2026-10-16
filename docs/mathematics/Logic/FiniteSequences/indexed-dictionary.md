@@ -1,5 +1,6 @@
 # Exact indexed dictionaries
 
+
 For any finite list of key–payload pairs and decidable equality on payloads,
 `unpack_pack` proves the exact equation
 \[
@@ -28,7 +29,7 @@ hash-injectivity hypothesis or assumed serializer law.
 
 The [source](../../../../GRWTSK/Logic/FiniteSequences/IndexedDictionary.lean),
 [consumer controls](../../../../GRWTSK/Logic/FiniteSequences/Checks/Positive/IndexedDictionary.lean),
-and [selected native receipt](../../../../evidence/Logic/FiniteSequences/indexed-dictionary-checks-2026-10-15.json)
+and [selected native receipt](../../../../.noeaaeue/evidence/Logic/FiniteSequences/indexed-dictionary-checks-2026-10-15.json)
 bind the exact definitions and theorem types. The missing-reference negative
 control is rejected at its intended type. Replay uses pinned Lean 4.33.0,
 trust zero, fatal warnings and the complete owned-declaration/transitive-axiom
@@ -37,7 +38,7 @@ and `Quot.sound` are allowed. Pinned dependency objects are fingerprinted and
 reused, without whole-repository or independent-review acceptance.
 
 The [revision theorems](dictionary-revision.md) state the premises needed when
-the dictionary changes. The [repository cache](../../../reference/content-cache.md)
+the dictionary changes. The [repository cache](../../../../.noeaaeue/documentation/reference/content-cache.md)
 uses content-addressed compressed byte objects and separately tested adapters;
 the list codec does not prove SHA-256 injectivity, zlib correctness, filesystem
 transactions, semantic equivalence of different theorem statements, or the
@@ -47,6 +48,8 @@ Human mathematical direction: grwtsk contributors. Formalization assistance:
 OpenAI Codex. Local source is MIT. Mathlib retains its authorship and license.
 The result formalizes a finite representation technique; no mathematical
 novelty, independent validation or RH consequence is claimed.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

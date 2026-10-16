@@ -44,8 +44,8 @@ negative use omits a positivity premise only after this actual failure is proved
 
 The [source](../../../../GRWTSK/Analysis/MellinTransform/GaussianAnnularSeparation.lean),
 [positive controls](../../../../GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianAnnularSeparation.lean),
-[native receipt](../../../../evidence/Analysis/MellinTransform/gaussian-annular-separation-checks-2026-10-15.json)
-and [integration record](../../../../evidence/Analysis/MellinTransform/gaussian-annular-separation-integration-2026-10-15.json)
+[native receipt](../../../../.noeaaeue/evidence/Analysis/MellinTransform/gaussian-annular-separation-checks-2026-10-15.json)
+and [integration record](../../../../.noeaaeue/evidence/Analysis/MellinTransform/gaussian-annular-separation-integration-2026-10-15.json)
 bind exact fresh selected local sources and controls. Pinned Lean 4.33.0 checks
 trust zero, fatal warnings and every owned declaration and transitive axiom,
 allowing only `propext`, `Classical.choice` and `Quot.sound`. Clean pinned

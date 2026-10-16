@@ -1,0 +1,26 @@
+{
+  "schema": "root-cleanup-lean-verification-summary-v1",
+  "relocated_checks": 36,
+  "source_bytes_preserved": true,
+  "positive_drivers_compiled": 20,
+  "negative_controls_rejected_for_intended_mathematical_or_sorry_diagnostics": 16,
+  "negative_controls_initially_blocked_by_missing_cached_objects": 3,
+  "private_missing_dependency_source_modules_rebuilt": 6,
+  "private_closure_owned_audit": "passed",
+  "private_closure_owned_module_count": 6,
+  "private_closure_owned_declaration_count": 92,
+  "native_audit_self_test": "failed-existing-source-profile-json-contract-mismatch",
+  "all_library_acceptance": "not_established",
+  "receipts": [
+    ".noeaaeue/root-cleanup/checks-moves.json",
+    ".noeaaeue/root-cleanup/operational-lean-checks.json",
+    ".noeaaeue/root-cleanup/operational-lean-checks-diagnostics.json",
+    ".noeaaeue/root-cleanup/private-closure-replay.json",
+    ".noeaaeue/root-cleanup/private-closure-parseval-supplement.json",
+    ".noeaaeue/.local/math-trust/20261016T013442Z-ff6c576049/failure.json",
+    ".noeaaeue/.local/math-trust/20261016T013829Z-1e17e52e06/failure.json"
+  ],
+  "scope": "Operational relocation validation only. The initial missing-import failures remain preserved and are resolved only by the separately recorded immutable private source replay. Public receipts and mathematical acceptance statuses are unchanged.",
+  "all_library_replay": "failed_closed_on_existing_exact_candidate_source_byte_drift",
+  "all_library_replay_error": "candidate source differs from exact intake bytes: GRWTSK/Analysis/Asymptotics/LogarithmicGrowth.lean"
+}

@@ -1,5 +1,6 @@
 # Semantic certificates for finite premises
 
+
 Let `entries : List (Key × Payload)` and let `predicate` be a proposition about
 that exact list. A `Certificate` stores `entries`, `predicate`, and an actual
 proof `predicate entries`. With decidable payload equality, its packed form
@@ -37,7 +38,7 @@ seven and reuses the proof under actual lookup agreement.
 
 The [source](../../../../GRWTSK/Logic/FiniteSequences/DecisionCertificate.lean),
 [positive consumers](../../../../GRWTSK/Logic/FiniteSequences/Checks/Positive/DecisionCertificate.lean)
-and [selected native receipt](../../../../evidence/Logic/FiniteSequences/decision-certificate-checks-2026-10-15.json)
+and [selected native receipt](../../../../.noeaaeue/evidence/Logic/FiniteSequences/decision-certificate-checks-2026-10-15.json)
 bind the complete local three-module closure. The pinned Lean 4.33.0 replay
 uses trust zero, fatal warnings and the complete owned-declaration/transitive-axiom
 audit. Only `propext`, `Classical.choice` and `Quot.sound` are allowed. Pinned
@@ -50,10 +51,12 @@ proof field. The theorem establishes conditional finite-list reasoning; it
 does not verify the repository JSON decision schema, Python adapter, byte
 serialization, compression, filesystem persistence or arbitrary decision policy.
 Those operational records remain separate, source-bound evidence with explicit
-refinement obligations in the [cache reference](../../../reference/content-cache.md).
+refinement obligations in the [cache reference](../../../../.noeaaeue/documentation/reference/content-cache.md).
 
 Human mathematical direction: grwtsk contributors. Formalization assistance:
 OpenAI Codex. Local source is MIT; Mathlib retains upstream credit and licensing.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

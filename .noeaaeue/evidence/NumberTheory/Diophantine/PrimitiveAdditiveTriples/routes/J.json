@@ -1,0 +1,18 @@
+{
+  "route": "J",
+  "mathematical_object": "Primitive additive moments",
+  "strongest_checked_theorem": null,
+  "verification": "checked-prerequisites-2026-10-15.json covers named prerequisites; open edges unproved",
+  "remaining_premises": [
+    "moment_identity",
+    "moment_radical_estimate",
+    "moment_uniformity"
+  ],
+  "next_smallest_obligation": "Prove the cutoff-explicit Mobius-filtered ternary moment identity and a literal uniform radical-height estimate",
+  "refuted_lemmas": [],
+  "source_occurrences": [],
+  "source_coverage": "Sources/abc-source-coverage.json",
+  "formal_coverage": "selected prerequisite declarations only; no closed route to abc",
+  "target_closure": false,
+  "status": "OPEN_FRONTIER"
+}

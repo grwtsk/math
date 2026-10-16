@@ -1,0 +1,15 @@
+'GRWTSK.NumberTheory.Moebius.PrimeProductDebt.rawPrimeProduct_eq_prefix_add_debt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.NumberTheory.Moebius.PrimeProductDebt.rawPrimeProduct_eq_pickupPrefix_add_debt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.NumberTheory.Moebius.PrimeProductDebt.unbornDebt_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.NumberTheory.Moebius.PrimeProductDebt.wholePickup_cutoff_laplace_prime_product' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.NumberTheory.Moebius.PrimeProductDebt.unborn_atom_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

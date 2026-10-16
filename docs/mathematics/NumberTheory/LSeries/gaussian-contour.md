@@ -56,8 +56,8 @@ convergent-half-plane interchange.
 
 The [source](../../../../GRWTSK/NumberTheory/LSeries/GaussianContour.lean),
 [positive controls](../../../../GRWTSK/NumberTheory/LSeries/Checks/Positive/GaussianContour.lean),
-[native receipt](../../../../evidence/NumberTheory/LSeries/gaussian-contour-checks-2026-10-15.json)
-and [integration evidence](../../../../evidence/NumberTheory/LSeries/gaussian-contour-integration-2026-10-15.json)
+[native receipt](../../../../.noeaaeue/evidence/NumberTheory/LSeries/gaussian-contour-checks-2026-10-15.json)
+and [integration evidence](../../../../.noeaaeue/evidence/NumberTheory/LSeries/gaussian-contour-integration-2026-10-15.json)
 retain exact statements, bytes and verification scope. Pinned Lean 4.33.0
 checks fresh selected local objects at trust zero with fatal warnings and a
 complete owned-declaration/transitive-axiom census permitting only `propext`,

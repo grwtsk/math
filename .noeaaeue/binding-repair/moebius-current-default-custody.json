@@ -1,0 +1,12 @@
+{
+  "schema": "native-receipt-byte-custody-v1",
+  "copies": [
+    {
+      "original": ".noeaaeue/.local/checks/moebius-response-20261016T022810Z-143c92519f2d/receipt.json",
+      "copy": ".noeaaeue/binding-repair/attempts/moebius-current-default-v4/receipt.json",
+      "sha256": "55483158a288aa5ebd6ffb94579a5f35c9cddffa26ff6ada24612a818be4a7ea",
+      "bytes": 170318
+    }
+  ],
+  "meaning": "Exact copy of new failed-closed current validation receipt; original identity retained and no mathematical acceptance."
+}

@@ -48,14 +48,14 @@ The result imports the previously checked full-domain estimate rather than
 editing or replacing its source.
 
 The [positive consumers](../../../../GRWTSK/Analysis/InnerProductSpace/Checks/Positive/JointGraphSolvability.lean)
-and [native receipt](../../../../evidence/Analysis/InnerProductSpace/joint-graph-checks-2026-10-15.json)
+and [native receipt](../../../../.noeaaeue/evidence/Analysis/InnerProductSpace/joint-graph-checks-2026-10-15.json)
 bind exact source bytes, controls and the complete local import closure.
 Replay uses pinned Lean 4.33.0, trust zero, fatal warnings and a complete
 owned-declaration/transitive-axiom audit, permitting only `propext`,
 `Classical.choice` and `Quot.sound`. Pinned dependency objects are reused and
 fingerprinted; no cold dependency rebuild or independent validation is claimed.
 
-The [integration record](../../../../evidence/Analysis/InnerProductSpace/joint-graph-integration-2026-10-15.json)
+The [integration record](../../../../.noeaaeue/evidence/Analysis/InnerProductSpace/joint-graph-integration-2026-10-15.json)
 retains exact assumptions, source identity and credit. Human direction:
 grwtsk contributors. Local adaptation and checking assistance: OpenAI Codex.
 Lean and Mathlib retain upstream authorship and licensing. A concrete analytic

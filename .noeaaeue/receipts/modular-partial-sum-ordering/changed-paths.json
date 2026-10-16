@@ -1,0 +1,157 @@
+{
+  "scope": "mathematical additions, explicit shared-file edits, and documented projection writes with preserved preimages; unrelated current Git status is separate",
+  "files": {
+    ".noeaaeue/documentation/math-layout.json": "f275221ee514db149d1aeaa79e8c57f9eef4dc5378f5200b4171914c6ba341fd",
+    ".noeaaeue/documentation/reference/documentation-layout.json": "b5d97bb113bda4a5977e9f20ec3f56b24910566382cfb6de31b1509a9f7e88a1",
+    ".noeaaeue/scripts/check_modular_partial_sums.py": "629a8f613244933a12ddf2fbabbed622d43559610f48fd85fe651475f2d9e6ef",
+    "GRWTSK.lean": "26791e87fd5594d5e99db5f95837536160c257d75cde7f1cd7d0ddc779d9a008",
+    "GRWTSK/Analysis/Fourier/ZModSubsetSum.lean": "60a0800b62f570782227e57e7ccedba38c1db2a343724ff0951a113c9ac09044",
+    "GRWTSK/Analysis/Fourier/ZModSubsetSumCompletion.lean": "1da1313c434e574a577fa224bad75f188c5c073455cf658f6191a9295185e70d",
+    "GRWTSK/Combinatorics/Sequences/DisjointTranspositions.lean": "b5053ed826ac19979142b7c908b35cee2b7e97ba07d4a4bdaef26cf62a6f5409",
+    "GRWTSK/Combinatorics/Sequences/PartialSumCertificate.lean": "dbeeb4bdc27d6e1d4bb1633f442343dcbc9c17dcc30969f9a076f3926f743d20",
+    "GRWTSK/Combinatorics/Sequences/PartialSumOrdering.lean": "a9a4c484455c947e258e6e57f5a7654d7f22682cc27b7fed1476d7c19811f0fb",
+    "GRWTSK/Combinatorics/Sequences/PrimeCyclicRearrangement.lean": "e6273e54a24c0ad7bd1da4fd9eb193f1d728479025099e22b70a5e3447d1dde5",
+    "GRWTSK/Combinatorics/Sequences/ZeroSumIntervalRepair.lean": "49512a5357198be0e0e9154cad5487284035315b3f5f82a72aa12ab891551bb2",
+    "GRWTSK/DynamicalSystems/TransitionSystems/ModularCheckpoint.lean": "7ef974d4d41d79dbc8ed0a121e2faf66e6a6cea610896b438d2db47e10d6cf99",
+    "docs/index.md": "08462a5709171a0548985d868e4ab4baa70d52d18f4699cf26fcad3c392fc468",
+    "docs/mathematics/Algebra/index.md": "41fc1550de6a5f19936db9e738008b2e8ef5eda51d4b18e21eb7fee15a0e8b50",
+    "docs/mathematics/Analysis/FiniteSums/weighted-degree-comparison.md": "fe777a6b263bf8d4636286ed3c04849e277c583a6b9c3887d85622aefb3c05dc",
+    "docs/mathematics/Analysis/Fourier/subset-sum-laws.md": "9165d15865b4ba9da09aeeeb2bc4aaa47c85db207fb90e67ec909f5b28506837",
+    "docs/mathematics/Analysis/index.md": "9f45b839992c96996c5b88185d816023247370198b08b689543e37e84bd3bab5",
+    "docs/mathematics/Combinatorics/Sequences/partial-sum-ordering.md": "4d515306cfb61b6ccefa3c5c9dc36815343fa1828288d4aa1153d1e8a9b82019",
+    "docs/mathematics/Combinatorics/index.md": "1e13daebba744b7b54f0d2113bd7a70f2a5c07eae57379f08ebd8dae12dd8e26",
+    "docs/mathematics/Data/index.md": "2024d61bff16b717d67607535050e9d6539ec0e7ac53387f902f071b56e63152",
+    "docs/mathematics/DynamicalSystems/TransitionSystems/modular-checkpoints.md": "d29498de5e71b681b2aab612051f0a0bf49a5bc703f357fbc34015038295c942",
+    "docs/mathematics/DynamicalSystems/index.md": "d81ed56076eec49625e9d018bd3e9f6988b098b7c836998882be9ea4685626c4",
+    "docs/mathematics/GroupTheory/index.md": "ab158c91eed5c136b87acbd835ce5aced94504d4b5eef9ff9b660c9a043dc7bc",
+    "docs/mathematics/LinearAlgebra/OrientedRealLine/transport.md": "6713ac7903d5c8d9c2ccc5833dafce6f97d5da33e26333cd53c2274dd3511435",
+    "docs/mathematics/LinearAlgebra/index.md": "325c579f84ebe40da81cf74b3f3392f7b2162b9989ed9f5fcaa2e9cbd8e48e0c",
+    "docs/mathematics/Logic/index.md": "67ea490b38a2d957a49bbb9711ba5a178adea00fe21355e06940cf94b8a2ddb5",
+    "docs/mathematics/MeasureTheory/index.md": "b0f6dd941e0338cdbe562bf6389581f025679d097863e4b2fc329f1d83e3c7e2",
+    "docs/mathematics/NumberTheory/ArithmeticGeometry/LogThetaComparison/abc-iut-objections.md": "ff46b910829a1e16797de29d3bc85b1e9889f380dc80df853c7dda7cea121bc2",
+    "docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/abc-proof-frontier.md": "8baef56951931f8af8c1a14206c8e924039201a214bc2ef2bd08060583c50adb",
+    "docs/mathematics/NumberTheory/Polynomial/derivative-radical-bound.md": "25935e770edf22e398062f9b1554c483997febf54d43c9f4c5e224aa8ff696ab",
+    "docs/mathematics/NumberTheory/index.md": "ca8cdfe1044295a245132c831a7340b2db83a0cb072ea153377a2624db79545b",
+    "docs/mathematics/Order/index.md": "fd9f5cb343090a43bedc2e8a97481332eb79ba7601b2945a73c55f77706113c2",
+    "docs/mathematics/Spectral/index.md": "0e285e864819f4c171cbf7719c66335afee077e1a99fd327ca48c4d62329eb48",
+    "docs/reference/library-summary.json": "dab0db05fb59226d1845c2e1dcb85c090a88140ee095c85c0f82b4175da2cb8e",
+    "docs/reference/object-source-bindings.json": "f5de63b2d1e39ea09f57760f61e11a3bb193d770f73a584e5d503b79003f61e1",
+    "docs/reference/results.md": "ca7661062cf4d56f1185a16dc7d7ca055c59a53cc115e2a218325f2e2001283c"
+  },
+  "render_archives": [
+    {
+      "archive": ".noeaaeue/.local/documentation-index-render/20261016T020355767214Z",
+      "changed_preimages": [
+        {
+          "path": "docs/index.md",
+          "preimage_sha256": "2f57d0c127626b01af82a74fd591f7ec18d867b9601be9aa338b6ee18ff0b35f"
+        },
+        {
+          "path": "docs/mathematics/NumberTheory/index.md",
+          "preimage_sha256": "9defab17f835dc05e49181343f555bf569578c95dad389e095879b1c180824b3"
+        },
+        {
+          "path": "docs/reference/library-summary.json",
+          "preimage_sha256": "8741690aa9e2046e113fe74ee8112fb1db4414ef112af3da72d390f8a74ed04e"
+        }
+      ]
+    },
+    {
+      "archive": ".noeaaeue/.local/documentation-index-render/20261016T015726513211Z",
+      "changed_preimages": [
+        {
+          "path": "docs/index.md",
+          "preimage_sha256": "ab6a1b180db00ed3753efb63537f63bc097b3911f608e1b8655a3445641d35c7"
+        },
+        {
+          "path": "docs/mathematics/Order/index.md",
+          "preimage_sha256": "4b07884ad057de8dc1d296759450a0ccfbcbb98603eb770e7c9baa0652365238"
+        },
+        {
+          "path": "docs/mathematics/Analysis/index.md",
+          "preimage_sha256": "56ed3254c7cca5f1e2fe04d2dd400f1066143b7951ad34f136ab7cde74fa7e4c"
+        },
+        {
+          "path": "docs/mathematics/Analysis/Fourier/subset-sum-laws.md",
+          "preimage_sha256": "7abf4673178b4fc8af3cc98926ae2bf87c1c3f236340134d3bc7c724daf2d6af"
+        },
+        {
+          "path": "docs/mathematics/Analysis/FiniteSums/weighted-degree-comparison.md",
+          "preimage_sha256": "e24910fd3515faa35c2843f79be245a8658f8b526a1f7c90f0738cc84403103a"
+        },
+        {
+          "path": "docs/mathematics/NumberTheory/index.md",
+          "preimage_sha256": "0d3405e54538a0a93c5cfd21ad946bb885e9d902b950903232c00c936b282cde"
+        },
+        {
+          "path": "docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/abc-proof-frontier.md",
+          "preimage_sha256": "03d49cd3178a9f2df5a6e01401f612011e7e5ec5b3ac8e194aa6ce829877b963"
+        },
+        {
+          "path": "docs/mathematics/NumberTheory/ArithmeticGeometry/LogThetaComparison/abc-iut-objections.md",
+          "preimage_sha256": "612568740375b9053b576c01d8027d493153c1e1592e99abe6db6e9964ff3ae6"
+        },
+        {
+          "path": "docs/mathematics/NumberTheory/Polynomial/derivative-radical-bound.md",
+          "preimage_sha256": "d5b36f96134a51f2e941f1e72170656bb0ccb44f6e126876391ae02de2f77333"
+        },
+        {
+          "path": "docs/mathematics/Logic/index.md",
+          "preimage_sha256": "18a256f577e3b2ce4dc9b572d4f7fa952acc730e35dd8de432daae7b397a9196"
+        },
+        {
+          "path": "docs/mathematics/Spectral/index.md",
+          "preimage_sha256": "c6400da13d7f15daaf389cc01d3c009b9027042cfa98065e01ca05a7157317fe"
+        },
+        {
+          "path": "docs/mathematics/GroupTheory/index.md",
+          "preimage_sha256": "8887c7a0a100ccf708d416c52ee08b54b486b59336de7bc13b5257dbe72ee27e"
+        },
+        {
+          "path": "docs/mathematics/DynamicalSystems/index.md",
+          "preimage_sha256": "723fbb1f51022dc4d1df9b8e635121d2c7500d4d4fb26dc0798aa2d81aa60490"
+        },
+        {
+          "path": "docs/mathematics/DynamicalSystems/TransitionSystems/modular-checkpoints.md",
+          "preimage_sha256": "f413d2c484bfc6decba58b125ffc3eb3a0d899c2505761762f43b2b84d73c266"
+        },
+        {
+          "path": "docs/mathematics/MeasureTheory/index.md",
+          "preimage_sha256": "0657dc2625cc701fcb5b04b373976b71e36620b1f625d9d941521a1aed7992fc"
+        },
+        {
+          "path": "docs/mathematics/Combinatorics/index.md",
+          "preimage_sha256": "0663fbc13723cf33b8d7efd149e339188a6a6d5673ca487d46729a1817c842b1"
+        },
+        {
+          "path": "docs/mathematics/Combinatorics/Sequences/partial-sum-ordering.md",
+          "preimage_sha256": "21c08cc2d6541ad39492b6ab1bfd259d3e04f81a7f969442441d8750ed5d6153"
+        },
+        {
+          "path": "docs/mathematics/LinearAlgebra/index.md",
+          "preimage_sha256": "a915681172e2090c90478e335c10fe7fbfd6b305bc8df031115b761939b96ccc"
+        },
+        {
+          "path": "docs/mathematics/LinearAlgebra/OrientedRealLine/transport.md",
+          "preimage_sha256": "c2db4f7a12cf52a82bece0f42e13c17083de010f7f81f1344f255b528a4a705a"
+        },
+        {
+          "path": "docs/mathematics/Data/index.md",
+          "preimage_sha256": "e648d40b7f0828e984cf3187f2b4e892b38ccc342258d81de9e8fd93f56c55ca"
+        },
+        {
+          "path": "docs/mathematics/Algebra/index.md",
+          "preimage_sha256": "e7d3ed2dba1f0b2a46d90113c02b3297ab0e35f078368a355282c5176cfa29eb"
+        },
+        {
+          "path": "docs/reference/results.md",
+          "preimage_sha256": "25496ebc439c86245fcfbe8043da175781c70c5b096bbaa088103e4af1df498e"
+        },
+        {
+          "path": "docs/reference/library-summary.json",
+          "preimage_sha256": "90236c82007413dc5c8441634a96be16754561fae4172c7df2d2dd674101d14e"
+        }
+      ]
+    }
+  ]
+}

@@ -62,8 +62,8 @@ mass-one identity or probability-density normalization.
 
 The [source](../../../../GRWTSK/Analysis/PartitionOfUnity/DyadicAnnulus.lean)
 has its own mathematical placement, independent of an arithmetic detector.
-The [joint native receipt](../../../../evidence/NumberTheory/LSeries/gaussian-dyadic-checks-2026-10-15.json)
-and [integration record](../../../../evidence/Analysis/PartitionOfUnity/dyadic-annulus-integration-2026-10-15.json)
+The [joint native receipt](../../../../.noeaaeue/evidence/NumberTheory/LSeries/gaussian-dyadic-checks-2026-10-15.json)
+and [integration record](../../../../.noeaaeue/evidence/Analysis/PartitionOfUnity/dyadic-annulus-integration-2026-10-15.json)
 bind its exact bytes and actual consumer closure. Pinned Lean 4.33.0 checks
 fresh local objects at trust zero with fatal warnings and a complete
 owned-declaration/transitive-axiom census permitting only `propext`,

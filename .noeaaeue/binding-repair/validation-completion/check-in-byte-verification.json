@@ -1,0 +1,50 @@
+{
+  "bytes_checked": 727371007,
+  "checked_utc": "2026-10-16T05:33:30.205703+00:00",
+  "git_rename_identity": "Git records snapshots; all three corresponding current process paths exist and original variants/history remain preserved.",
+  "ignored_material": "Build products, local dependency snapshots and original-variant convenience archives remain ignored by the existing policy; prior tracked history and explicit current evidence remain available.",
+  "indexed_regular_or_symlink_files_checked": 9951,
+  "missing_indexed_files": [],
+  "post_staging_current_catalog": "passed: 860 observed sources,81candidate-only, no inherited acceptance",
+  "post_staging_math_layout": "passed: 436 public library sources, zero findings",
+  "removed_root_entries_without_automatic_git_rename_pairing": {
+    "cache/refs/current.json": ".noeaaeue/cache/refs/current.json",
+    "docs/how-to/density-arithmetic-replay.md": ".noeaaeue/documentation/how-to/density-arithmetic-replay.md",
+    "scripts/verify-ccc.sh": ".noeaaeue/scripts/verify-ccc.sh"
+  },
+  "schema": "checkpoint-check-in-byte-verification-v1",
+  "staged_blob_worktree_byte_mismatches": [],
+  "staged_full_diff_whitespace_check": {
+    "affected_paths": [
+      ".noeaaeue/binding-repair/validation-completion/moebius-v5-application-replay/logs/GRWTSK.Analysis.Inequalities.LogarithmicShiftKernelPositiveSector.log",
+      ".noeaaeue/binding-repair/validation-completion/moebius-v5-application-replay/logs/GRWTSK.Analysis.Integration.ExponentialVolterraL2.log",
+      ".noeaaeue/binding-repair/validation-completion/moebius-v5-application-replay/logs/GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks.log",
+      ".noeaaeue/binding-repair/validation-completion/moebius-v5-application-replay/logs/GRWTSK.NumberTheory.Moebius.FiniteLaplaceTransform.log",
+      ".noeaaeue/binding-repair/validation-completion/moebius-v5-application-replay/logs/GRWTSK.NumberTheory.Moebius.LogarithmicMertensBoundary.log",
+      ".noeaaeue/binding-repair/validation-completion/moebius-v5-application-replay/logs/GRWTSK.NumberTheory.Moebius.MertensSquareEnergyEquivalence.log",
+      ".noeaaeue/binding-repair/validation-completion/moebius-v5-application-replay/logs/GRWTSK.NumberTheory.Moebius.MertensSquareEnergyPowerBound.log",
+      ".noeaaeue/binding-repair/validation-completion/native/continuation-20261016T033238Z-b2e0ea8cdc/GRWTSK-Analysis-Inequalities-LogarithmicShiftKernelPositiveSector.log",
+      ".noeaaeue/binding-repair/validation-completion/native/continuation-20261016T033238Z-b2e0ea8cdc/GRWTSK-NumberTheory-Moebius-CriticalIntervalBlocks.log",
+      ".noeaaeue/binding-repair/validation-completion/native/continuation-20261016T033238Z-b2e0ea8cdc/GRWTSK-NumberTheory-Moebius-LogarithmicMertensBoundary.log",
+      ".noeaaeue/binding-repair/validation-completion/native/continuation-20261016T033238Z-b2e0ea8cdc/GRWTSK-NumberTheory-Moebius-MertensSquareEnergyEquivalence.log",
+      ".noeaaeue/binding-repair/validation-completion/native/continuation-20261016T033238Z-b2e0ea8cdc/GRWTSK-NumberTheory-Moebius-MertensSquareEnergyPowerBound.log",
+      ".noeaaeue/binding-repair/validation-completion/native/producer-20261016T030237Z-fb4f17b572/GRWTSK-Analysis-Integration-ExponentialVolterraL2.log",
+      ".noeaaeue/binding-repair/validation-completion/native/producer-20261016T030237Z-fb4f17b572/GRWTSK-NumberTheory-Moebius-FiniteLaplaceTransform.log",
+      ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Sources/snapshots/joshi-author-index.html",
+      ".noeaaeue/receipts/balanced-partition-fourier/full-build-final.log",
+      ".noeaaeue/receipts/balanced-partition-fourier/full-build.log",
+      ".noeaaeue/receipts/modular-partial-sum-ordering/full-build-final.log",
+      ".noeaaeue/receipts/modular-partial-sum-ordering/full-build.log",
+      ".noeaaeue/receipts/modular-partial-sum-ordering/paper-v1.html",
+      ".noeaaeue/receipts/modular-partial-sum-ordering/quanta.html",
+      ".noeaaeue/root-cleanup/moebius-current-after-diagnostic.log",
+      ".noeaaeue/root-cleanup/moebius-original-baseline.log",
+      ".noeaaeue/tools/lean/fragments/LeanExpressionAvailability.lean.inc"
+    ],
+    "exit_code": 2,
+    "output_lines": 655,
+    "output_sha256": "6efd21d6fd69d6d3b672d50e3092c3d0c0a63f66349b7d692399ada654754daf",
+    "treatment": "Preserved exact bytes. Notices are confined to verbatim native/build logs, historical HTML source captures and a preserved Lean template fragment. No .lean, .py, maintained .md, TOML, YAML or shell file findings. This cosmetic full-data check is distinct from the passed mathematical/native/documentation gates."
+  },
+  "unmerged_entries": []
+}

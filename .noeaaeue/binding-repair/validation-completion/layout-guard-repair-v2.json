@@ -1,0 +1,25 @@
+{
+  "schema": "layout-inspection-guard-repair-v1",
+  "created_at": "2026-10-16T02:54:07.217491+00:00",
+  "checker_sha256": "28340d93733f3551606b293e522b0a7775354d9d55753186b2521859be2a5cb6",
+  "problem": "The old CLI compared every repository filename, so creating unrelated process receipts/logs falsely invalidated a mathematical source inspection.",
+  "new_boundary": "Compare every actually inspected Lean path and tracked-regular classification; bind all actual source-discovery, policy, role, readset, and checker input hashes including absence; reread every inspected source after graph/catalog inspection. Process-only files excluded by the established check_paths boundary do not expand the mathematical readset.",
+  "still_fatal": [
+    "new/deleted/ignored/newly exposed inspected Lean source",
+    "tracked regular classification drift",
+    "same-name source bytes drift",
+    "symlink or nonregular source substitution",
+    "bound policy/role/catalog/observation/tool input appearance, disappearance, or byte drift",
+    "deleted tracked source reappearance even when Git path inventory is unchanged"
+  ],
+  "controls": {
+    "real_git_cli_guard_tests": 6,
+    "legacy_layout_fixtures": 47,
+    "legacy_trust_fixtures": 27,
+    "current_observation_controls": 8,
+    "normal_and_optimized": true
+  },
+  "GRWTSK_or_entrypoint_modified": false,
+  "mathematical_acceptance_implied": false,
+  "supersedes_attempt_record": ".noeaaeue/binding-repair/validation-completion/layout-guard-repair.json"
+}

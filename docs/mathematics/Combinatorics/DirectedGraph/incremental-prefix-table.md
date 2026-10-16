@@ -1,5 +1,6 @@
 # Stable incremental tables of rooted history prefixes
 
+
 Fix a quiver, a root, and finite old and new lists of keyed actual rooted
 occurrences. The stable extension retains the complete old prefix dictionary,
 old parent cells and old real-row references as literal ordered prefixes.
@@ -69,8 +70,8 @@ permission authority, or unconditional inherited predicate.
 
 The [source](../../../../GRWTSK/Combinatorics/DirectedGraph/IncrementalPrefixTable.lean),
 [positive controls](../../../../GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/IncrementalPrefixTable.lean),
-[native receipt](../../../../evidence/Combinatorics/DirectedGraph/incremental-prefix-table-checks-2026-10-15.json)
-and [integration record](../../../../evidence/Combinatorics/DirectedGraph/incremental-prefix-table-integration-2026-10-15.json)
+[native receipt](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/incremental-prefix-table-checks-2026-10-15.json)
+and [integration record](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/incremental-prefix-table-integration-2026-10-15.json)
 bind the exact selected closure. Pinned Lean 4.33.0 checks fresh local
 sources at trust zero with fatal warnings and a complete owned-declaration/
 transitive-axiom census allowing only `propext`, `Classical.choice` and
@@ -82,6 +83,8 @@ Apache-2.0 terms, including the list and actual indexed-lookup APIs.
 Human direction: grwtsk contributors; formalization/checking: OpenAI Codex.
 No novelty, whole-library or RH admission, or Python/JSON/hash/zlib/IO
 refinement is claimed.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

@@ -1,0 +1,10 @@
+{
+  "schema": "current-catalog-conformance-v1",
+  "path": "docs/reference/math-source-catalog.json",
+  "mathematical_acceptance": false,
+  "time_utc": "2026-10-16T02:28:29.680249+00:00",
+  "status": "refused-current-readset-drift",
+  "exception": "RuntimeError",
+  "reason": "current source bytes/role/classification drift: GRWTSK/Analysis/Fourier/FiniteExponentialLayers.lean",
+  "traceback": "Traceback (most recent call last):\n  File \"<stdin>\", line 8, in <module>\n  File \"/Users/local/Desktop/math/.noeaaeue/scripts/check_repository_conformance.py\", line 1312, in generated_expected_bytes\n    current = helpers.current_observations(ROOT)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/local/Desktop/math/.noeaaeue/scripts/generate_math_source_catalog.py\", line 100, in current_observations\n    return source_observations.load(root, layout.read_regular, layout.git_inventory(root)[\"paths\"],\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/local/Desktop/math/.noeaaeue/scripts/source_observations.py\", line 212, in load\n    raise RuntimeError(\"current source bytes/role/classification drift: \" + name)\nRuntimeError: current source bytes/role/classification drift: GRWTSK/Analysis/Fourier/FiniteExponentialLayers.lean\n"
+}

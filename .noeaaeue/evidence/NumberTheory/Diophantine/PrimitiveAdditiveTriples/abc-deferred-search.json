@@ -1,0 +1,12 @@
+{
+  "queries": [],
+  "coverage": {
+    "budget": 0,
+    "generated": 194,
+    "scheduled": 0,
+    "executed": 0,
+    "deferred": 194,
+    "exhaustive": false,
+    "mathematical_admission": false
+  }
+}

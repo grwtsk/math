@@ -1,5 +1,6 @@
 # Schrödinger transfer matrices
 
+
 This interface carries established two-coordinate transfer mathematics. The state is `(current, previous)` and the next state is `(next, current)`. Over any commutative ring, the exact scalar recurrence is equivalent to multiplication by `!![E - V, -1; 1, 0]`. Its determinant is one and it packages as an `SL₂` element. An explicit rational example distinguishes the elements at energies zero and one.
 
 The selected interface contains three definitions and three source theorems, with three stored equation helpers preserved. The original module's broader Jacobi description is retained as source context; division-based Jacobi normalization and spectral conclusions are outside this interface.
@@ -10,7 +11,9 @@ Direction: grwtsk contributors. Formalization and verification assistance: OpenA
 
 ## Source and verification scope
 
-[Source](../../../../GRWTSK/LinearAlgebra/SchrodingerTransfer.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+[Source](../../../../GRWTSK/LinearAlgebra/SchrodingerTransfer.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../../.noeaaeue/documentation/reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

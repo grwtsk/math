@@ -1,5 +1,6 @@
 # Ordered occurrences of directed paths
 
+
 For actual typed quiver paths $p:a\to b$ and $q:b\to c$, chronological vertex
 occurrences include both endpoints and satisfy
 
@@ -59,15 +60,15 @@ lack supplied individual method identities.
 
 The [source](../../../../GRWTSK/Combinatorics/DirectedGraph/PathOccurrences.lean),
 [positive consumers](../../../../GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PathOccurrences.lean)
-and [native receipt](../../../../evidence/Combinatorics/DirectedGraph/path-occurrences-checks-2026-10-15-r2.json)
+and [native receipt](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/path-occurrences-checks-2026-10-15-r2.json)
 bind the exact selected source and controls. Pinned Lean 4.33.0 checks fresh
 project objects at trust zero with fatal warnings and a complete owned-declaration
 and transitive-axiom census. Only `propext`, `Classical.choice` and `Quot.sound`
 are permitted. Pinned dependency objects are reused and fingerprinted, rather
 than rebuilt from source.
 
-The [integration record](../../../../evidence/Combinatorics/DirectedGraph/path-occurrences-integration-2026-10-15.json)
-and [source review](../../../../evidence/Combinatorics/DirectedGraph/path-occurrences-source-review-2026-10-15.json)
+The [integration record](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/path-occurrences-integration-2026-10-15.json)
+and [source review](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/path-occurrences-source-review-2026-10-15.json)
 preserve exact upstream API identities and the limits of transfer from
 Anthropic's optional-weight-per-vertex-pair model. Source review is correlated
 model review; it is not independent validation. No whole-library or operational
@@ -78,6 +79,8 @@ OpenAI Codex. Local source is MIT. Mathlib credits David Wärn, Kim Morrison,
 Matteo Cipollina and Runtian Zhou for Path, Matteo Cipollina for Path.Vertices,
 and Antoine Labelle for SingleObj; upstream Apache-2.0 terms remain retained.
 No mathematical novelty is claimed.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

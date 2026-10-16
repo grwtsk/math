@@ -1,5 +1,6 @@
 # A finite inventory of complete history prefixes
 
+
 Fix a quiver and root $r$. Let `rows` be a finite list of keys paired with
 actual rooted path occurrences. Write $t(p)$ for the complete typed edge
 trace of an occurrence and form
@@ -64,8 +65,8 @@ rank; rightmost numeric positions need not decrease.
 
 The [source](../../../../GRWTSK/Combinatorics/DirectedGraph/PrefixInventory.lean),
 [positive controls](../../../../GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixInventory.lean),
-[native receipt](../../../../evidence/Combinatorics/DirectedGraph/prefix-inventory-checks-2026-10-15.json)
-and [integration record](../../../../evidence/Combinatorics/DirectedGraph/prefix-inventory-integration-2026-10-15.json)
+[native receipt](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-inventory-checks-2026-10-15.json)
+and [integration record](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-inventory-integration-2026-10-15.json)
 bind the exact selected closure. Pinned Lean 4.33.0 checks fresh selected
 local objects at trust zero with fatal warnings and a complete
 owned-declaration/transitive-axiom census permitting only `propext`,
@@ -77,6 +78,8 @@ Local source is MIT. Lean and Mathlib retain named author credit and
 Apache-2.0 terms, including Mario Carneiro's list-prefix APIs. Human
 direction: grwtsk contributors; formalization/checking: OpenAI Codex.
 No Python/JSON/hash/zlib/IO refinement or mathematical novelty is claimed.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

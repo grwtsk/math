@@ -1,0 +1,108 @@
+{
+  "schema": "native-receipt-byte-custody-v1",
+  "scope": "Exact copies of fresh scoped RH target check source and receipt. Original receipt bytes and identities retained. No whole-library acceptance.",
+  "copies": [
+    {
+      "original": ".noeaaeue/.local/rh-target-t5cl42fj/receipt.json",
+      "copy": ".noeaaeue/binding-repair/native/rh-target-t5cl42fj/receipt.json",
+      "sha256": "2bf9f7fd51c7f502712dca78bfb3dda33ce418dd622cc92bb706610a3bb1e6d7",
+      "bytes": 37919
+    },
+    {
+      "original": ".noeaaeue/.local/rh-target-t5cl42fj/source/.noeaaeue/scripts/check_rh_target.py",
+      "copy": ".noeaaeue/binding-repair/native/rh-target-t5cl42fj/source/.noeaaeue/scripts/check_rh_target.py",
+      "sha256": "6586f02c784eb618c7e97fced961b7244ba0dd81b25e6aa6e415e4a2728e3720",
+      "bytes": 6761
+    },
+    {
+      "original": ".noeaaeue/.local/rh-target-t5cl42fj/source/.noeaaeue/scripts/rh_target_oracle.py",
+      "copy": ".noeaaeue/binding-repair/native/rh-target-t5cl42fj/source/.noeaaeue/scripts/rh_target_oracle.py",
+      "sha256": "497829aace9ee64b170606535612c37c4537154b2e067111a40d601bf6b5ef9b",
+      "bytes": 15909
+    },
+    {
+      "original": ".noeaaeue/.local/rh-target-t5cl42fj/source/GRWTSK/Analysis/Complex/CriticalReflection.lean",
+      "copy": ".noeaaeue/binding-repair/native/rh-target-t5cl42fj/source/GRWTSK/Analysis/Complex/CriticalReflection.lean",
+      "sha256": "8c17e27406bc4508600cb9bb202a302a074720dcc01409167428487cdd72d065",
+      "bytes": 697
+    },
+    {
+      "original": ".noeaaeue/.local/rh-target-t5cl42fj/source/GRWTSK/Logic/Counterexamples/Checks/Positive/PositivityIsNotVanishing.lean",
+      "copy": ".noeaaeue/binding-repair/native/rh-target-t5cl42fj/source/GRWTSK/Logic/Counterexamples/Checks/Positive/PositivityIsNotVanishing.lean",
+      "sha256": "747a51d3c83e2ba94808f76c2b35b2130b4f23cb84f8f4722351c24003e0a219",
+      "bytes": 236
+    },
+    {
+      "original": ".noeaaeue/.local/rh-target-t5cl42fj/source/GRWTSK/NumberTheory/Zeta/Riemann/Checks/Declarations.lean",
+      "copy": ".noeaaeue/binding-repair/native/rh-target-t5cl42fj/source/GRWTSK/NumberTheory/Zeta/Riemann/Checks/Declarations.lean",
+      "sha256": "c3add3432f78da936e5122b04f23734f780909513d235f7a7b47a49221bd4afc",
+      "bytes": 3762
+    },
+    {
+      "original": ".noeaaeue/.local/rh-target-t5cl42fj/source/GRWTSK/NumberTheory/Zeta/Riemann/Checks/Positive/ExcludedTrivialZero.lean",
+      "copy": ".noeaaeue/binding-repair/native/rh-target-t5cl42fj/source/GRWTSK/NumberTheory/Zeta/Riemann/Checks/Positive/ExcludedTrivialZero.lean",
+      "sha256": "6e54ec9ddb515e9a2a428c0fb61ba050d64b53a895c74cd34c4fb1260f97b2ae",
+      "bytes": 287
+    },
+    {
+      "original": ".noeaaeue/.local/rh-target-t5cl42fj/source/GRWTSK/NumberTheory/Zeta/Riemann/CriticalLineDefect.lean",
+      "copy": ".noeaaeue/binding-repair/native/rh-target-t5cl42fj/source/GRWTSK/NumberTheory/Zeta/Riemann/CriticalLineDefect.lean",
+      "sha256": "d915e1e7d7555eb6efa7ee72786a7ad044dc9e7c4b4e178153d356088472efc8",
+      "bytes": 2286
+    },
+    {
+      "original": ".noeaaeue/.local/rh-target-t5cl42fj/source/GRWTSK/NumberTheory/Zeta/Riemann/DefectCriterion.lean",
+      "copy": ".noeaaeue/binding-repair/native/rh-target-t5cl42fj/source/GRWTSK/NumberTheory/Zeta/Riemann/DefectCriterion.lean",
+      "sha256": "c387ba899e159bde5274009c792630553f1de8f52e83031a3f7123daf4b3766f",
+      "bytes": 832
+    },
+    {
+      "original": ".noeaaeue/.local/rh-target-t5cl42fj/source/GRWTSK/NumberTheory/Zeta/Riemann/Hypothesis.lean",
+      "copy": ".noeaaeue/binding-repair/native/rh-target-t5cl42fj/source/GRWTSK/NumberTheory/Zeta/Riemann/Hypothesis.lean",
+      "sha256": "26de9b9d99b5e04103c8095c3b466ce301fab1d52dd40155703a160aac44f1f6",
+      "bytes": 1002
+    },
+    {
+      "original": ".noeaaeue/.local/rh-target-t5cl42fj/source/GRWTSK/NumberTheory/Zeta/Riemann/ZeroDefinitions.lean",
+      "copy": ".noeaaeue/binding-repair/native/rh-target-t5cl42fj/source/GRWTSK/NumberTheory/Zeta/Riemann/ZeroDefinitions.lean",
+      "sha256": "79f45d7a61819fce066baa26094d480aaf40ce6c46cfd2526b8107f3bf62a8a4",
+      "bytes": 1213
+    },
+    {
+      "original": ".noeaaeue/.local/rh-target-t5cl42fj/source/GRWTSK/NumberTheory/Zeta/Riemann/ZeroExclusions.lean",
+      "copy": ".noeaaeue/binding-repair/native/rh-target-t5cl42fj/source/GRWTSK/NumberTheory/Zeta/Riemann/ZeroExclusions.lean",
+      "sha256": "d461e95a7aca50e3c9040fcd10e0aef54eb6f05f2e484baef4090928b7789097",
+      "bytes": 1232
+    },
+    {
+      "original": ".noeaaeue/.local/rh-target-t5cl42fj/source/GRWTSK/NumberTheory/Zeta/Riemann/ZeroSymmetry.lean",
+      "copy": ".noeaaeue/binding-repair/native/rh-target-t5cl42fj/source/GRWTSK/NumberTheory/Zeta/Riemann/ZeroSymmetry.lean",
+      "sha256": "44e1e3452c5e94077ac11fe9397dc420503d5c7c005bc1c1105685b015471076",
+      "bytes": 5034
+    },
+    {
+      "original": ".noeaaeue/.local/rh-target-t5cl42fj/source/GRWTSK/NumberTheory/Zeta/Riemann.lean",
+      "copy": ".noeaaeue/binding-repair/native/rh-target-t5cl42fj/source/GRWTSK/NumberTheory/Zeta/Riemann.lean",
+      "sha256": "78c427485ac57b60975ecfd6b7f04b54d5caf5bde174e8d1abeb4f8174925633",
+      "bytes": 419
+    },
+    {
+      "original": ".noeaaeue/.local/rh-target-t5cl42fj/source/lake-manifest.json",
+      "copy": ".noeaaeue/binding-repair/native/rh-target-t5cl42fj/source/lake-manifest.json",
+      "sha256": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
+      "bytes": 3577
+    },
+    {
+      "original": ".noeaaeue/.local/rh-target-t5cl42fj/source/lakefile.toml",
+      "copy": ".noeaaeue/binding-repair/native/rh-target-t5cl42fj/source/lakefile.toml",
+      "sha256": "a23f6d313f8458192328f09635ffef9078cb684374c2aac2743af541bf59b4e3",
+      "bytes": 250
+    },
+    {
+      "original": ".noeaaeue/.local/rh-target-t5cl42fj/source/lean-toolchain",
+      "copy": ".noeaaeue/binding-repair/native/rh-target-t5cl42fj/source/lean-toolchain",
+      "sha256": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
+      "bytes": 25
+    }
+  ]
+}

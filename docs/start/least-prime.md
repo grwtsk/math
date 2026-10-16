@@ -1,13 +1,14 @@
-# From an observation to a checked result
+# Least-prime proof and reuse
 
-We want a precise answer to “What is the least natural prime?” The answer is two. The architecture must preserve why that answer is justified and what each artifact contributes.
+The least prime natural number is two:
 
-1. **Observe:** inspect the pinned Mathlib declarations `Nat.prime_two` and `Nat.Prime.two_le`. Inspection identifies useful facts; it does not create a new proof or give permission to act.
-2. **Record a receipt:** bind the inspected source and actual checker run to source digests, dependency revisions, compiler, command, outcome and axioms. A receipt reports an observation and makes it inspectable. It is not a mathematical premise.
-3. **Formalize the exact target:** `Nat.Prime 2 ∧ ∀ p : ℕ, Nat.Prime p → 2 ≤ p`. The domain is natural numbers; the second conjunct quantifies over every prime.
-4. **Construct the proof:** the existing GRWTSK conjunction imports the two Mathlib facts. It does not infer primality from a receipt or numerical sample.
-5. **Check and reuse:** Lean checks the proof under the pinned environment. A downstream consumer proves that any natural prime with the stated leastness property equals two, using antisymmetry of `≤`.
-6. **Leave evidence:** retain source, exact types, consumers, axiom audit, negative controls, attribution and failures. Changed inputs require the affected checks to be repeated.
+```lean
+Nat.Prime 2 ∧ ∀ p : ℕ, Nat.Prime p → 2 ≤ p
+```
+
+Mathlib supplies primality as `Nat.prime_two` and the lower bound as `Nat.Prime.two_le`. The library combines them in `GRWTSK.NumberTheory.two_is_first_prime`.
+
+To prove uniqueness, let `q` be prime and assume it is at most every natural prime. Applying this assumption to two gives `q ≤ 2`; primality gives `2 ≤ q`. Antisymmetry proves `q = 2`.
 
 ```lean
 import GRWTSK.NumberTheory.Prime.LeastPrime
@@ -17,8 +18,6 @@ example (q : ℕ) (hq : Nat.Prime q)
   GRWTSK.NumberTheory.Prime.least_prime_eq_two hq hmin
 ```
 
-Both `hq` and `hmin` are needed. “Every prime is at least three” is false, witnessed by two. “One is prime” is false. The checking fixtures retain these rejections; a failed checker assumption about an empty axiom list is also retained separately.
+Both hypotheses matter: zero satisfies the stated lower-bound property without being prime, while three is prime without being least. Two also refutes the claim that every prime is at least three; one is not prime.
 
-A scoped certificate identifies the checked proposition and assumptions. It is neither operational authorization nor a publication decision. Here the proof term and checked exact type supply mathematical evidence; the run receipt records the check. General automated certificate issuance and orchestration are separate integration work.
-
-See the [exact result](../mathematics/NumberTheory/Prime/least-prime.md), [verification instructions](../how-to/verify.md) and [evidence roles](../explanation/evidence.md).
+The [object guide](../mathematics/NumberTheory/Prime/least-prime.md) retains the exact sources, selected verification scope and author credit. Its source-bound receipt records a check of those inputs; it does not strengthen the theorem's hypotheses or establish whole-library acceptance.

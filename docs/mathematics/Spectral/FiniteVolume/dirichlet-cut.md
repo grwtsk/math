@@ -1,5 +1,6 @@
 # Dirichlet joining edge and boundary count error
 
+
 The [Dirichlet cut source](../../../../GRWTSK/Spectral/DirichletCut.lean) constructs the symmetric joining edge and factors its actual linear action through its two endpoint coordinates. This proves rank at most two. The general count proof records both the lower spectral projection and the full finite-dimensional defect; a vector in their common kernel would again contradict the low/high quadratic cuts. Thus a signed perturbation is controlled without assuming positive semidefiniteness.
 
 Removing the edge at sites $N-1,N$ and reindexing proves the literal block matrix consisting of the first $N$ sites and the next $M$ sites. The second restriction starts at $o+N$, with the same phase and potential formula. Characteristic polynomial multiplication, followed by the root-multiset count, pays additivity for the cut matrix. For $N>0$ and $M\ge0$, this gives
@@ -19,7 +20,9 @@ The normalized error is at most $2/(N+M)$, uniformly over energy, phase, origin 
 
 ## Source and verification scope
 
-[Source](../../../../GRWTSK/Spectral/DirichletCut.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+[Source](../../../../GRWTSK/Spectral/DirichletCut.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../../.noeaaeue/documentation/reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

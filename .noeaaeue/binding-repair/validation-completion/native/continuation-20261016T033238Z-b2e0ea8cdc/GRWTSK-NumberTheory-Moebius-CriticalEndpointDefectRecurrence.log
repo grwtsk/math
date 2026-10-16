@@ -1,0 +1,12 @@
+'GRWTSK.NumberTheory.Moebius.CriticalEndpointDefectRecurrence.pickupWeightedPrefix_succ' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.NumberTheory.Moebius.CriticalEndpointDefectRecurrence.criticalEndpointDefect_succ' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.NumberTheory.Moebius.CriticalEndpointDefectRecurrence.criticalEndpointDefect_eq_mertensTransform' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.NumberTheory.Moebius.CriticalEndpointDefectRecurrence.criticalBoundary_iff_mertensTransformSummable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

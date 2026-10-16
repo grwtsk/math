@@ -877,7 +877,7 @@ limit premise and cannot replace it.
 
 ## Source and verification scope
 
-[Source](../../../../../GRWTSK/NumberTheory/Moebius/FiniteLaplaceSums.lean). Status: **written-argument**. [Credit and evidence limits](../../../../reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+[Source](../../../../../GRWTSK/NumberTheory/Moebius/FiniteLaplaceSums.lean). Status: **written-argument**. [Credit and evidence limits](../../../../../.noeaaeue/documentation/reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
 
 
 

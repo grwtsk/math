@@ -1,5 +1,6 @@
 # Almost Mathieu potential and spectral hypotheses
 
+
 ## The almost Mathieu operator needs an arithmetic identification
 
 [Avila, Last, Shamis and Zhou, arXiv:2110.07974v2](https://arxiv.org/abs/2110.07974v2), equation (1.1), defines
@@ -42,9 +43,11 @@ Zero coupling removes the potential; zero spectral measure, a collapsed gap, a v
 
 ## Source and verification scope
 
-[Source](../../../../GRWTSK/LinearAlgebra/AlmostMathieu.lean). Status: **literature-and-historical-source-description**. [Credit and evidence limits](../../../reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+[Source](../../../../GRWTSK/LinearAlgebra/AlmostMathieu.lean). Status: **literature-and-historical-source-description**. [Credit and evidence limits](../../../../.noeaaeue/documentation/reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
 
 A scoped frozen Lean check binds the local source SHA `ed4a3641f340c856b6e0d98cbeb99c18f06cc86c64d3d84f306adc1b35849643`. Removing only the tactic umbrella preserves all eight owned declarations, including generated declarations, with exact raw types and proof values. The accepted standard profile checks 25 owned source modules and 278 mathematical declarations with no runtime exclusions; the actual Energy consumer supplies 243 exact declaration contracts, and all six intended rejection controls were freshly checked. Qualification SHA `568fd68c0aec6bbbf1f0af13074dfb77c42c52b67f49cd079bb68684e9666740`. These checks qualify the local potential, transfer recurrence, determinant and trace counterexample. The cited spectral regularity, measure estimates and Cantor-spectrum claims retain their literature evidence and hypotheses; the local source does not prove them. Whole-project, standalone checker, complete consumer and unconditional RH acceptance remain open. Dependency source pins and imported-object provenance are recorded separately; no Mathlib source rebuild is claimed.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

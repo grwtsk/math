@@ -1,0 +1,9 @@
+{
+  "outcome": "passed",
+  "scope": "all links in exactly three selected guides, with target registration checked against full documentation registry; no repository-wide structural acceptance",
+  "pages": [
+    "docs/mathematics/Combinatorics/Sequences/partial-sum-ordering.md",
+    "docs/mathematics/Analysis/Fourier/subset-sum-laws.md",
+    "docs/mathematics/DynamicalSystems/TransitionSystems/modular-checkpoints.md"
+  ]
+}

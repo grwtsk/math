@@ -1,0 +1,586 @@
+ The status of the Scholze-Stix Report and an analysis
+     of the Mochizuki-Scholze-Stix Controversy
+                                          Kirti Joshi
+                                        June 28, 2024
+
+
+§ 1.1 The need for this document After Mochizuki’s [Mochizuki, 2021a,b,c,d] preprints were
+released in 2012, there was tremendous excitement in the math community, and a serious effort
+was made to understand his work. Unfortunately, neither Mochizuki, nor any of his ‘experts’
+could provide satisfactory answers or examples to explain his theory. So the Scholze-Stix Report
+([Scholze and Stix, 2018]) which talked about the flaws in Mochizuki’s work ([Mochizuki,
+2021a,b,c,d]) was widely accepted as a valid conclusion.
+    However, I have always believed that if Mochizuki’s proof has to be rejected, then it must
+be based on a complete understanding of its ideas and present correct mathematical arguments,
+precisely identifying the issue(s) with its claimed strategy.
+    Despite having discussed the flaws in [Scholze and Stix, 2018], [Scholze, 2021] in my papers
+and the clarity and precision that my work has brought to Mochizuki’s work, [Scholze and Stix,
+2018], [Scholze, 2021] are still considered by many as definitive conclusions on [Mochizuki,
+2021a,b,c,d]. Hence the need for this document.
+    This document provides quantitative evidence (§ 1.2, § 1.3) that due to the lack of clarity in
+Mochizuki’s work, [Scholze and Stix, 2018] understanding of Mochizuki’s work is flawed at a
+fundamental level, leading to an inaccurate analysis of [Mochizuki, 2021a,b,c,d]. My works
+on this subject provide far more accurate critiques of [Mochizuki, 2021a,b,c,d] and how the
+highlighted issues can be circumvented.
+    I have tried my best to be fair in my critiques of [Mochizuki, 2021a,b,c,d] and [Scholze and
+Stix, 2018]. However, both have been reticent in publicly acknowledging my work. Taking on
+the claims of two powerful mathematicians, I completely understand that the professional fallout
+for me is substantial and academically debilitating (this has already played out as may be evident
+from Mochizuki’s colorful language and analogies in rejecting my work while many arithmetic
+geometers have simply distanced themselves from the conversation). I believe that more voices
+should participate in the discussion of the abc-conjecture because the public comments by
+both Mochizuki and Scholze (and some others who have echoed Scholze) make it clear that
+they simply do not wish to be second-guessed on this matter. This has emboldened some
+mathematicians to publicly dismiss my work even though it brings many new ideas to the table.
+    The conclusion of this document is independent of the proof of the abc-conjecture.
+
+
+
+
+                                                1
+      § 1.2 Debunking some popular myths surrounding Mochizuki’s Theory I want to debunk
+      some of the popular myths about Mochizuki’s Theory.
+          Let me set out some notation for this discussion. Let E be a p-adic field and let X/E be a
+      geometrically connected, smooth, hyperbolic curve over E and assume that X is definable over
+      some number field. Mochizuki’s theory works with tempered fundamental groups [André, 2003],
+      [Lepage, 2010]. This requires some additional notation. Let K ⊃ E be an algebraically closed,
+      complete (rank one) valued field containing E isometrically [such a field is an algebraically
+      closed, perfectoid field [Scholze, 2012]]. Let XEan be the Berkovich analytic space of X/E
+      and let ∗ : M (K) → XEan be a K-valued point of the analytic space XEan . Such a point is a
+      geometric base-point and allows one to compute the tempered fundamental group
+
+                                 Πtemp      temp
+                                  X/E;K := π1    (XEan , ∗K : M (K) → XEan )
+
+      using the K-geometric base-point ∗K : M (K) → XEan . The isomorphism class of this group is
+      independent of the chosen geometric base-point, so often one writes Πtemp            temp
+                                                                           X/E instead of ΠX/E;K .
+
+      § 1.2.1 Myth Mochizuki’s [Mochizuki, 2021a,b,c,d] is about étale fundamental group of X/E.
+      Sources For This Myth May date back to Mochizuki’s preprints in 2012, but also see [Fesenko,
+      2015], [Scholze and Stix, 2018], the discussion on Peter Woit’s Blog [Scholze et al., April 2020].
+      This Myth is False Mochizuki’s IUTT is about tempered fundamental groups and Mochizuki’s
+      Key Principle of Inter-Universality [Mochizuki, 2021a, § I3, Pages 25–26] requires us to remem-
+      ber the geometric base-points for tempered fundamental groups i.e. one works with ΠtempX/E;K and
+            temp
+      not ΠX/E . [Note that Mochizuki does not use perfectoid fields and that is why I have objected to
+      his papers. Once this information is thrown in, I show that there is a valid theory satisfying all
+      the claimed properties.] [The table given below is taken from [Joshi, 2024b].]
+
+Comparison of geometric base-points for étale and tempered fundamental groups
+
+                    étale fund. group                             tempered fund. group
+ Input datum
+                           (X/Qp , ∗K : Spec(K) → X)                       (XQanp , ∗K : M (K) → XQanp )
+                    where X/Qp is a scheme, K ⊃ Qp is an alg. where XQanp is an analytic space over Qp , K ⊃
+                    closed field, and ∗K : Spec(K) → X is a Qp an alg. closed, perfectoid field, and ∗K :
+                    K-geom. base point of X                     M (K) → XQanp is a K-geom. base point of
+                                                                XQanp .
+                    isom. class of alg. closed fields K ⊃ Qp is isom. class of alg. closed, perfectoid fields
+                    determined by the cardinality of K          K ⊃ Qp is not determined by cardinality of
+                                                                K.
+
+Caution For important reasons, one works with an alg. closed perfectoid field K, together with tilting data i.e.
+one works with untilts rather than K. So readers should not walk away with the impression that working with
+perfectoid fields is adequate. See [Joshi, 2022, Definition 5.1] for the precise datum required.
+
+
+
+
+                                                        2
+    Let me also remark that Mochizuki’s Anabelian Reconstruction Theory methods of [Mochizuki,
+2012, 2013, 2015], cannot provide reconstruction of the perfectoid field in the geometric base-
+point datum. For example, the algebraically closed perfectoid field Cp , cannot be reconstructed
+from the topological absolute Galois group GQp as was shown in [Mochizuki, 1997]. Hence
+dealing with the geometric base-point datum (as required by Mochizuki’s Key Principle of Inter-
+Universality) would necessarily require taking the approach I have followed in my theory (and
+by doing so I obtain a canonical theory in which all of Mochizuki’s ideas have intrinsic meaning).
+The failure of [Mochizuki, 2021a,b,c,d] to treat its own principle clearly and accurately forms
+the core of my mathematical objections to [Mochizuki, 2021a,b,c,d].
+§ 1.2.2 Myth Validity of the Absolute Grothendieck Conjecture for hyperbolic curves implies
+Mochizuki’s proof [Mochizuki, 2021a,b,c,d] is impossible.
+Sources For This Myth Advertisement by Mochizuki (and others) about anabelian aspects of
+[Mochizuki, 2021a,b,c,d] (and use of [Mochizuki, 2015]), are a possible source of this myth
+(and in my opinion, Mochizuki failed to bring clarity on this point). But it may have taken strong
+roots because of [Scholze and Stix, 2018] Footnote 8.
+This Myth is False Scholze-Stix conflated Teichmuller Theory and Moduli theory because of
+this belief. Existence of Teichmuller Theory of the sort Mochizuki claims (and established in
+my work) is independent of the validity of the Absolute Grothendieck Conjecture over number
+fields and p-adic fields. From my point of view the non-validity of the Absolute Grothendieck
+Conjecture over algebraically closed, perfectoid fields (or over C) is a better way of establishing
+Mochizuki’s Teichmuller Theory claim. Also see [Joshi, 2021b], [Joshi, 2023c].
+§ 1.2.3 Myth Mochizuki’s anabelian reconstruction theorem [Mochizuki, 2015, Theorem 1.9],
+Πtemp
+  X/E;K determines the isomorphism class of X/E. Hence [Mochizuki, 2021a,b,c,d] is a
+problematic theory.
+Sources For This Myth [Scholze and Stix, 2018], Discussions on Peter Woit’s Blog [Scholze
+et al., April 2020].
+This Myth is False Using ΠtempX/E;K , Mochizuki’s reconstruction theorem [Mochizuki, 2015,
+Theorem 1.9] determines the isomorphism class of X/E but it does not determine K. [Remember
+Mochizuki’s Key Principle of Inter-Universality requires us to remember geometric base-points.]
+§ 1.2.4 Myth [Scholze and Stix, 2018, Remark 9] is correct and hence there is no valid theory
+in [Mochizuki, 2021a,b,c,d].
+Sources For This Myth [Scholze and Stix, 2018], Scholze’s comments to my work on Math-
+OverFlow; where Will Sawin backs this assertion by Scholze.
+This Myth is False While [Scholze and Stix, 2018, Remark 9] is the central thesis of the Scholze-
+Stix Report, this remark is completely false. [Mochizuki’s discussion of this remark appears
+in [Mochizuki, 2018, (C5)] (Mochizuki refers to Remark 9 as Remark 8) and my discussion
+here should be read with his comments and with § 1.2.4.1.] Unfortunately, despite having
+pointed this out explicitly in my response (on David Robert’s blog), this incorrect argument
+has been repeated by Scholze and few others in defending [Scholze and Stix, 2018, Remark 9].
+
+                                                3
+The said remark is based on an incorrect understanding of what [Mochizuki, 2015, Theorem
+1.9] provides and what is actually needed in [Mochizuki, 2021a,b,c,d]. Let me explain this
+point. The important difference is this: using the group Πtemp
+                                                          X/E;K , the said theorem ([Mochizuki,
+2015, Theorem 1.9]) provides the isomorphism class of the curve X/E as asserted but it does
+not provide the geometric base-point information (given by the alg. closed perfectoid field
+K). However, Mochizuki’s Key Principle of Inter-Universality requires one to remember the
+geometric base-point information. One clear way of saying this, via the main theorem of [Joshi,
+2021a], [Joshi, 2022], is this: [Mochizuki, 2015, Theorem 1.9] does not determine the arithmetic
+holomorphic structure at all; however such structures are central to [Mochizuki, 2021a,b,c,d].
+This is the sense in which Mochizuki uses the cited theorem in the context of [Mochizuki,
+2021a,b,c,d]. This is an important point and Mochizuki should have alerted Scholze-Stix and
+other readers (myself included) to this point with complete clarity and adequate emphasis (this
+would require dealing with geometric base-points the way my work does). At any rate, the
+conclusion of the said theorem cannot be used to arrive at the conclusion [Scholze and Stix,
+2018, Remark 9] in the context of [Mochizuki, 2021a,b,c,d]. [Also see § 1.2.1.]
+Note § 1.2.4.1 : This document was sent to Scholze for an early read and his comments. After
+detailed conversations with Scholze (June 2024), I can say that [Scholze and Stix, 2018, Remark
+9] arose because of Mochizuki’s emphasis, and advertisement by him and others, of the primacy
+of group theory (anabelian) as the raison d’etre of [Mochizuki, 2021a,b,c,d]. On the other hand,
+Scholze and I are now in agreement (June 2024) that Mochizuki’s emphasis should have been on
+the primacy of geometric and arithmetic objects of the theory (with an adequate demonstration
+of the existence of such objects). As an algebraic geometer, well-versed in classical Teichmuller
+Theory, I have always recognized that Teichmuller Theory (of any sort: classical, p-adic,
+arithmetic) is about geometric objects and in my work, I have emphasized the primacy of
+geometric and arithmetic objects from the very beginning, with relevant groups arising as
+symmetries of such objects, and my reading and criticism of both [Mochizuki, 2021a,b,c,d] and
+[Scholze and Stix, 2018, Scholze, 2021] has been based on this viewpoint.
+Note § 1.2.4.2 : This document has also been sent to Mochizuki for an early read and his
+comments. I am currently awaiting his response.
+§ 1.2.5 Myth All Hodge-Theaters in [Mochizuki, 2021a,b,c,d] are isomorphic, hence there is
+no theory in [Mochizuki, 2021a,b,c,d].
+Sources For This Myth [Scholze, 2021], Comments by Scholze and others on Peter Woit’s
+blog [Scholze et al., April 2020].
+This Myth is False Collection of distinct Hodge-Theaters (with a fixed decoration) is a proxy
+for a variation of (p-adic) Hodge Structures (at all primes p simultaneously) [Mochizuki, 2021a,
+Page 25] and in particular Hodge-Theaters arise from distinct geometric and arithmetic data.
+It is certainly true that all Hodge-Theaters (with a fixed decoration) are all isomorphic, but
+such an isomorphism comes at the expense of forgetting the arithmetic and geometric data the
+Hodge-Theaters arise from and doing this is analogous to asserting that all Riemann surfaces
+of a fixed genus are homeomorphic–a statement which is true but not the goal in the study
+of Riemann surfaces. So the identification of Hodge-Theaters asserted in [Scholze, 2021]
+
+                                               4
+serves no useful mathematical purpose as we are averaging over contributions of distinct
+arithmetic geometric data in [Mochizuki, 2021a,b,c,d]. [Mochizuki does not provide an adequate
+justification for the existence of distinct Hodge-Theaters, but my work provides the most natural
+way of understanding how p-adic Hodge Theory enters the picture and demonstrates clearly how
+distinct Hodge-Theaters arise from distinct geometric data (see [Joshi, 2024b]).]
+§ 1.2.6 Myth There is no purpose to Mochizuki’s weird definitions and formalism in [Mochizuki,
+2021a,b,c,d].
+Sources For This Myth [Scholze and Stix, 2018], Discussion on Peter Woit’s blog [Scholze
+et al., April 2020].
+This Myth is False In hindsight gained from my work, Mochizuki’s formalism is an approximate
+proxy for modern p-adic Hodge Theory (at all primes simultaneously). This is an important
+point many p-adic Hodge Theorists have missed. Notably, Mochizuki’s use of perfect Frobe-
+nioids (together with their realifications) in [Mochizuki, 2021a,b,c,d] is to placate the absence
+of machinery of p-adic Hodge theory such as tilting which was not available to Mochizuki.
+[Mochizuki’s group theoretic approach does make this aspect extremely difficult to see but my
+work makes this completely transparent (see [Joshi, 2021a, 2022, 2023a]) and [Joshi, 2024b]
+contains a comparison of these perfect Frobenioids and perfectoids in one of the appendices.]
+§ 1.2.7 Myth The theory of [Joshi, 2021a, 2022, 2023a] adds on information which serves no
+purpose in this discussion related to [Mochizuki, 2021a,b,c,d].
+Sources For This Myth This myth may have its origins in conversations (2023) about my work
+on MathOverFlow and on Peter Woit’s Blog.
+This Myth is False As pointed out in [Joshi, 2021a, 2022, Remark 4.3], the local Arithmetic
+Teichmuller Space constructed in [Joshi, 2022, Definition 5.1] bears a formal similarity to the
+diamond XL♢v associated to the analytic adic space XLadv given in [Scholze, 2017, Definition
+15.5]. I had already pointed out (as far back as 2022) this similarity on a number of social media
+sites. [Note For precise mathematical assertion see [Joshi, 2022, Remark 4.3 and Definition
+5.1]. [Strictly speaking, [Joshi, 2022, Def. 5.1] deals with a slightly more general object than
+XL♢v –but this technical point may be ignored for simplicity.]
+    To put it clearly: in dimension one and genus one, the theory developed in [Joshi, 2021a,
+2022, 2023a] so closely intertwines the theories of [Scholze, 2012, 2017], [Fargues and Fontaine,
+2018], [Mochizuki, 2021a,b,c,d] that any attempt at separation based on this myth has no factual
+mathematical foundation.
+
+
+
+
+                                                5
+     § 1.3 Mochizuki, Scholze-Stix claims compared The following table provides a comparison
+     of hypotheses of Mochizuki and Joshi and the omissions of these hypothesis by Scholze-Stix
+     leading to incorrect mathematical conclusions.
+
+Comparison of claims of Mochizuki, Scholze-Stix and Joshi
+
+ object            Mochizuki                          Scholze-Stix                   Joshi
+ geom.     base    Central role of arbitrary geo-     ignored                        included (in the data of an arith-
+ point             metric base-points as a proxy      (see § 1.2.1, § 1.2.3)         meticoid) as arbitrary alg. closed
+                   for deformations of arithmetic                                    perfectoid fields [Joshi, 2021a,
+                   [Mochizuki, 2021a, § I3, Page                                     2022]
+                   25]
+ how is     this   domain and codomain of all         incorrectly identify the       naturally show Mochizuki’s re-
+ used?             key operations refer to distinct   domains and codomains          quirements [Joshi, 2024b]
+                   geom. base-points [Mochizuki,      leading to incorrect con-
+                   2021a, § I3, Page 25]              clusions
+ Valuation data    encoded in realified Frobenioids   no mention of distinct         works with valuation data instead
+                   [Mochizuki, 2021a]                 valuation data                 of Frobenioids [Joshi, 2021a,
+                                                                                     2022, 2023a]
+ Why needed?     for computing local and global       ignored                        as in Mochizuki but without using
+                 arith. degrees                                                      Frobenioids [Joshi, 2023a, 2022]
+ log-Links       log-Links aka Mochizuki’s            ignored (see § 1.2.5)          works with the Frobenius mor-
+                 proxy for Frobenius (at each                                        phism instead of a proxy [Joshi,
+                 prime) [Mochizuki, 2021c]                                           2023b,a].
+ Theta-Links     Central role of Theta-Links          argue that such objects        demonstrates the existence both
+                 Claimed via theory of Frobe-         cannot exist (see § 1.2.5)     at local and global level. [Joshi,
+                 nioids [Mochizuki, 2021a]                                           2023b,a, 2024b]
+ distinct Arith. Asserted in [Mochizuki, 2021a]       declare that these cannot      Demonstrates the existence and
+ Holomorphic     but existence is not clearly es-     exist (see § 1.2.1, § 1.2.4)   deformation property via arbi-
+ Structures      tablished                                                           trary alg. closed perfectoid fields
+                                                                                     or equivalently by using arbitrary
+                                                                                     geom. base-points [Joshi, 2021a,
+                                                                                     2022, 2023a]
+
+NOTE
+
+  (1) Despite the fact that Mochizuki asserts his Key Principle of Inter-Universality, there is no mention of the
+      required input data (see the table accompanying § 1.2.1) in [Mochizuki, 2021a,b,c,d], and on two separate
+      occasions, Mochizuki denied the relevance of alg. closed perfectoid fields to [Mochizuki, 2021a,b,c,d].
+
+  (2) One cannot build a valid theory, as [Mochizuki, 2021a,b,c,d] claims to do, by requiring arbitrary geometric
+      base-points for tempered fundamental groups but work solely over Q̄p . This is the reason for my mathemati-
+      cal objections to [Mochizuki, 2021a,b,c,d]. My work fixes this central issue and builds a robust (and even
+      more general) theory with all properties claimed by Mochizuki for his IUTT.
+
+
+
+
+                                                          6
+§ 1.4 Conclusion
+
+ (1) The conclusion of this report is independent of the proof of the abc-conjecture.
+
+ (2) As § 1.2, § 1.3 shows, the reports [Scholze and Stix, 2018], [Scholze, 2021] omit most
+     key mathematical assumptions and aspects of Mochizuki’s Theory (see Note § 1.2.4.1).
+     Mochizuki’s report on [Scholze and Stix, 2018] is here. My work and this document shows
+     that arguments and claims of [Scholze and Stix, 2018], [Scholze, 2021] and [Mochizuki,
+     2018], [Mochizuki, 2022] have no mathematical importance except as a matter of historical
+     record.
+
+ (3) I think that Mochizuki has mounted an incredibly weak defense of his work, but it would
+     be a travesty of mathematics to not acknowledge that the assessment of Mochizuki’s
+     claims was based on a poor and unsound understanding, by many, of the mathematical
+     principles which have guided his claims. [This is independent of whether or not the
+     abc-conjecture has been proven in his works.]
+
+ (4) However, let me make this absolutely clear: Mochizuki’s unwillingness to have mathe-
+     matical conversations or to recognize my work, which bring mathematical clarity to his
+     work, continues to be a vexing issue (anabelian geometers around Mochizuki have also
+     followed his suit on this). Moreover, I strongly protest the unprofessional behavior (e.g.
+     name-calling and personal insults) that he has resorted to in this matter.
+
+ (5) Notably, there exists a valid Teichmuller Theory of Number Fields as Mochizuki has
+     claimed (this is fully demonstrated in [Joshi, 2023a]).
+
+ (6) I demonstrate that Mochizuki’s formalism in [Mochizuki, 2021a,b,c,d] is a proxy for
+     modern p-adic Hodge Theory (at all primes simultaneously) and my work provides a
+     mathematically precise way of arriving at his claims by circumventing his formalism.
+
+ (7) The ideas espoused by Mochizuki in [Mochizuki, 2021a,b,c,d] are highly non-trivial even
+     though, he and all his ‘experts,’ have been less than lucid about what is it that his theory
+     claims. [While Mochizuki may be unaware, I have heard that some of the ‘experts’ have
+     studied my work to better understand his claims.]
+
+ (8) My position on whether or not Mochizuki has proved the abc-conjecture is still open
+     (as my preprint [Joshi, 2024a] still remains under consideration). In other words, I’m
+     currently neutral on the matter of the abc-conjecture. However, I continue to work on
+     [Joshi, 2024b,a] to tie up all the loose ends. Updates of [Joshi, 2023a, 2019, 2024b]
+     posted.
+
+
+
+
+                                               7
+§ 1.5 Time-line of events Here is a brief time-line of events as I have witnessed them:
+
+March 2012 Mochizuki’s papers are released online and published as RIMS (Kyoto) Preprints.
+
+Oct 2012 Vesselin Dimitrov posts his counter examples to Mochizuki’s stated estimate in the
+     March 2012 (and RIMS Preprint) version of [Mochizuki, 2021d]. Mochizuki points out
+     corrections in this response and Dimitrov withdraws his objections in his MO post (and
+     Mochizuki’s corrections appear in [Mochizuki, 2021d]).
+
+2015 [Fesenko, 2015] is published (see § 1.2.1).
+
+2015 First IUTT Workshop.
+
+2015 Brian Conrad’s Report on the above conference.
+
+2016 Second IUTT Workshop.
+
+2016 [Mochizuki, 2016] is published and it provides insights into his proof by means of proofs
+     of [Amorós et al., 2000, Zhang, 2001] of geometric case of Szpiro inequality. [On the
+     other hand [Scholze and Stix, 2018], perhaps unaware of this, ignore the geometric case
+     and miss the most important of all clues to the claims of [Mochizuki, 2021a,b,c,d].]
+
+2016 In the context of [Mochizuki, 2016], Taylor Dupuy posts a two part video explaining the
+     Bogomolov Zhang Proofs. [I was not aware of Taylor’s videos, however I learned of the
+     geometric case from Mochizuki, see the next point.]
+
+Spring 2018 I visit Mochizuki for my sabbatical. Scholze and Stix visit Mochizuki in April.
+     Mochizuki lectures to me on the Bogomolov Zhang Proofs (discussed in entry 2016 above)
+     based on [Mochizuki, 2016] and I came to further understand the geometric case from
+     this point of view through Mochizuki’s lectures (and my independent reading of [Amorós
+     et al., 2000, Zhang, 2001]). Because of my prior understanding of Mochizuki’s work on
+     Teichmuller Theory ([Mochizuki, 1996], [Mochizuki, 1999]), I recognized that he may be
+     onto something highly non-trivial.
+
+May 2018 [Scholze and Stix, 2018] is put into circulation; Mochizuki posts his report.
+
+2019 [Joshi, 2019] (first version is posted on the arxiv).
+
+April 2020 [Joshi, 2020a] is posted on the arxiv. [The March 2020 version had some errors
+      in one section which were fixed in this release.] Scholze asserts that anabelomorphy
+      (introduced in [Joshi, 2020a]) has nothing to do with Mochizuki’s work; I invite Mochizuki
+      to explain the relationship and he does by contributing to [Joshi, 2020a, 1.7], and it clearly
+      contradicts Scholze’s assertion.
+
+April 2020 Discussion on Peter Woit’s blog. Taylor Dupuy argues that Scholze-Stix have
+      missed some key points of [Mochizuki, 2021a,b,c,d]. [Also see § 1.2.1.]
+
+
+
+                                                 8
+July 2020 Early versions of [Joshi, October 2020] are sent to Mochizuki and Scholze. [Scholze
+      kindly verifies the proof, but denies its role in Mochizuki’s work; perfectoid fields don’t
+      sit well with Anabelian minded Mochizuki and Hoshi and they dismiss it, contradicting
+      Mochizuki’s Key Principle of Inter-Universality [Mochizuki, 2021a, § I3, Pages 25–26]
+      even though my results provide the clearest evidence that there is an arithmetic Teichmuller
+      Theory of the sort Mochizuki claims. Such a theory is detailed by me in [Joshi, 2021a].]
+
+July 2020 Early version of a ‘Rosetta Stone’ fragment arising in my work and establishing
+      the connection between Mochizuki’s log-Links and Fargues-Fontaine Theory was sent
+      to Mochizuki. Mochizuki denies its relevance. [The relevant mathematics is detailed in
+      [Joshi, 2023b] and [Joshi, 2023a].]
+
+August 2020 I posted [Joshi, 2020b] on the arxiv.
+
+Oct 2020 Early version of the first of my arithmetic Teichmuller Theory papers [Joshi, 2021a]
+     is posted on the arxiv.
+
+March 2021 Cancellation (by the organizers) of my invited talk in this June 2021 IUTT meeting.
+
+March 2021 Mochizuki’s papers [Mochizuki, 2021a,b,c,d] are published. On the eve of the
+    publication Mochizuki posts [Mochizuki, 2022] arguing ‘change of logic.’ [Mochizuki
+    does not recognize my approach ([Joshi, October 2020], [Joshi, 2022]), which provides a
+    better way of demonstrating that his theory has many distinct objects (for natural reasons).]
+
+Summer 2021 I give several Zoom lectures to Taylor Dupuy on my approach to Mochizuki’s
+    work.
+
+June 2021 During this meeting, Mochizuki and Hoshi (on Zoom/Slack) deny the role of
+     algebraically closed perfectoid fields (i.e of geometric base-point datum) contradicting
+     Mochizuki’s Key Principle of Inter-Universality.
+
+July 2021 [Scholze, 2021] is published.
+
+Nov 2021 [Joshi, 2021b] is posted on the arxiv.
+
+Nov 2021 David Roberts’ blogpost. [I agree with this article: Mochizuki has repeatedly cited
+     the analogy with P1 in the context [Mochizuki, 2021a,b,c,d]. But using this example is
+     completely misleading (as David also notes) and does not even remotely represent the Θ-
+     Link in [Mochizuki, 2021a,b,c,d]. See [Joshi, 2023b, 2024b] for the precise construction.]
+
+2022 [Saı̈di, 2022] is published (contains no discussion of [Scholze and Stix, 2018, Scholze,
+     2021]).
+
+Spring 2022 I give several lectures on Zoom to Minhyong Kim and Dinesh Thakur. [First draft
+     of [Joshi, 2024b] is readied.]
+
+Oct 2022 I post a new version of [Joshi, 2022] and discuss relationship between my results,
+     [Mochizuki, 2021a,b,c,d], and [Scholze and Stix, 2018].
+
+                                                9
+Nov 2022 Correspondence with Will Sawin (Nov 11–Nov 18) explaining my work. [It was
+     clear that he had a limited understanding of the relevant mathematics.] Scholze (Nov
+     22–) argues on MathOverFlow that [Scholze and Stix, 2018, Remark 9] is still valid (see
+     § 1.2.4). Subsequently, Will Sawin backs Scholze’s assertion and dismisses my work.
+
+Nov 2022 I respond with this mathematical explanation on David Roberts’ blog and in it I
+     clearly point out the issue of geometric base-points (which is missing in [Scholze and Stix,
+     2018]). No response is received from Scholze or Sawin.
+
+March 2023 [Joshi, 2023b] is posted on the arxiv.
+
+April 2023 In response to the [Scholze and Stix, 2018] claims about Mochizuki’s Corollary
+      3.12, I post this essay based on [Joshi, 2023b] outlining my ideas.
+
+May 2023 [Joshi, 2023a] is posted on the arxiv. This describes an arithmetic Teichmuller
+    Theory of Number Fields (whose existence is asserted by Mochizuki) and I also establish
+     the geometric case of Mochizuki’s Corollary 3.12.
+
+June 2023 I post this response to “Grouchy Expert’s” comments on David Roberts’ blogpost
+     regarding my work.
+
+July 2023 Peter Woit declares victory for Scholze-Stix in this blogpost. I post a number of
+      comments to his blogpost to remind Woit’s readers of the flaws in the Scholze-Stix report.
+      Concerning Will Sawin’s posted comments see § 1.2.4.
+
+Jan 2024 [Joshi, 2024b] is posted on the arxiv.
+
+March 2024 [Joshi, 2024a] is posted on the arxiv. Mochizuki posts his comments on my work.
+    Neither Mochizuki nor Scholze publicly recognize any of my work done so far but both
+    argue that [Joshi, 2024a] must be incorrect.
+      [Work in Progress: My work (in dimension one and genus one) so closely mirrors
+      Mochizuki’s Theory that if there are any counter examples, to [Joshi, 2024a], as Mochizuki
+      claims in his comments, then they will also apply to [Mochizuki, 2021d]. Since Mochizuki
+      is asserting these counter examples, it is clear to me that either he has a poor understanding
+      of my work [Joshi, 2021a, 2023b,a, 2024b,a] or the main constructions of [Joshi, 2024b]
+      needs some minor corrections. Unfortunately, so far, Mochizuki has not shown willingness
+      to engage in any mathematical conversations with me, and hence it will take me some
+      time to tie up any remaining issues.]
+
+May-June 2024 Work in Progress: Updated several preprints ([Joshi, 2019], [Joshi, 2020a],
+    [Joshi, 2023a], [Joshi, 2024b]) on the arxiv. In updates to [Joshi, 2023a] and [Joshi, 2024b]
+    I provide additional clarifications about how I deal with local and global phenomena.
+      Meanwhile, Scholze and I are having a respectful and professional conversation (on going)
+      as I work to clarify his questions; while I continue to wait for Mochizuki’s response to my
+      emails.
+
+
+                                                10
+References
+J. Amorós, F. Bogomolov, L. Katzarkov, and T. Pantev. Symplectic Lefschetz fibrations
+   with arbitrary fundamental groups. J. Differential Geom., 54(3):489–545, 2000. URL
+   http://projecteuclid.org/euclid.jdg/1214339791. With an appendix by
+   Ivan Smith.
+
+Yves André. On a geometric description of Gal(Q̄p /Qp ) and a p-adic avatar of GT
+                                                                                d. Duke Math.
+ Journal, 119(1):1–39, 2003.
+
+Laurent Fargues and Jean-Marc Fontaine. Courbes et fibrés vectoriels en théorie de Hodge
+  p-adique. Astérisque, (406):xiii+382, 2018. ISSN 0303-1179. With a preface by Pierre
+  Colmez.
+
+Ivan Fesenko. Arithmetic deformation theory via arithmetic fundamental groups and nonar-
+  chimedean theta-functions, notes on the work of Shinichi Mochizuki. Eur. J. Math., 1(3):
+  405–440, 2015. URL https://doi.org/10.1007/s40879-015-0066-0.
+
+Kirti Joshi. Mochizuki’s anabelian variation of ring structures and formal groups. 2019. URL
+  https://arxiv.org/abs/1906.06840.
+
+Kirti Joshi. On Mochizuki’s idea of anabelomorphy and applications. 2020a. URL https:
+  //arxiv.org/abs/2003.01890.
+
+Kirti Joshi. The absolute Grothendieck conjecture is false for Fargues-Fontaine curves. 2020b.
+  URL https://arxiv.org/abs/2008.01228. Preprint.
+
+Kirti Joshi. Construction of Arithmetic Teichmuller Spaces I. 2021a. URL https://arxiv.
+  org/abs/2106.11452.
+
+Kirti Joshi. Comments on Arithmetic Teichmuller Theory. 2021b. URL https://arxiv.
+  org/abs/2111.06771.
+
+Kirti Joshi. Untilts of fundamental groups: construction of labeled isomorphs of fundamental
+  groups (Arithmetic Holomorphic Structures). 2022. URL https://arxiv.org/abs/
+  2210.11635.
+
+Kirti Joshi. Construction of Arithmetic Teichmuller Spaces II( 12 ): Deformations of Number
+  Fields. 2023a. URL https://arxiv.org/abs/2305.10398.
+
+Kirti Joshi. Construction of Arithmetic Teichmuller Spaces II: Proof a local prototype of
+  Mochizuki’s Corollary 3.12. 2023b. URL https://arxiv.org/abs/2303.01662.
+
+Kirti Joshi. Mochizuki’s Corollary 3.12 and my quest for its proof. 2023c. URL https:
+  //www.math.arizona.edu/˜kirti/joshi-teich-quest.pdf.
+
+Kirti Joshi. Construction of Arithmetic Teichmuller Spaces IV: Proof of the abc-conjecture.
+  Preprint, 2024a. URL https://www.arxiv.org.
+
+                                             11
+Kirti Joshi. Construction of Arithmetic Teichmuller Spaces III: A proof of Mochizuki’s corollary
+  3.12 and a Rosetta Stone. 2024b. URL https://arxiv.org/pdf/2401.13508.
+  pdf.
+Kirti Joshi. Untilts of fundamental groups: construction of labeled isomorphs of fundamental
+  groups (2020 version). October 2020. URL https://arxiv.org/abs/2010.05748.
+Emmanuel Lepage. Géométrie anabélienne tempérée (PhD. Thesis), 2010. URL https:
+ //arxiv.org/abs/1004.2150.
+Shinichi Mochizuki. A theory of ordinary p-adic curves. Publ. Res. Inst. Math. Sci., 32(6):
+  957–1152, 1996. doi: 10.2977/prims/1195145686.
+Shinichi Mochizuki. A version of the Grothendieck conjecture for p-adic local fields. Inter-
+  national Journal of Math., 8:499–506, 1997. URL http://www.kurims.kyoto-u.
+  ac.jp/˜motizuki/A%20Version%20of%20the%20Grothendieck%
+  20Conjecture%20for%20p-adic%20Local%20Fields.pdf.
+Shinichi Mochizuki. Foundations of p-adic Teichmüller theory, volume 11 of AMS/IP Studies in
+  Advanced Mathematics. American Mathematical Society, Providence, RI; International Press,
+  Cambridge, MA, 1999.
+Shinichi Mochizuki. Topics in absolute anabelian geometry I: generalities. J. Math. Sci. Univ.
+  Tokyo, 19(2):139–242, 2012.
+Shinichi Mochizuki. Topics in absolute anabelian geometry II: decomposition groups and
+  endomorphisms. J. Math. Sci. Univ. Tokyo, 20(2):171–269, 2013.
+Shinichi Mochizuki. Topics in absolute anabelian geometry III: global reconstruction algorithms.
+  J. Math. Sci. Univ. Tokyo, 22(4):939–1156, 2015.
+Shinichi Mochizuki. Bogomolov’s proof of the geometric version of the Szpiro conjecture from
+  the point of view of Inter-Universal Teichmuller Theory. 2016.
+Shinichi Mochizuki. Comments on the manuscript by Scholze-Stix concerning Inter-Universal
+  Teichmuller Theory (IUTCH). 2018. URL https://www.kurims.kyoto-u.ac.jp/
+  ˜motizuki/Cmt2018-05.pdf.
+Shinichi Mochizuki. Inter-Universal Teichmuller theory I: construction of Hodge Theaters. Publ.
+  Res. Inst. Math. Sci., 57(1/2):3–207, 2021a. URL https://ems.press/journals/
+  prims/articles/201525.
+Shinichi Mochizuki. Inter-Universal Teichmuller Theory II: Hodge-Arakelov Theoretic Evalua-
+  tions. Publ. Res. Inst. Math. Sci., 57(1/2):209–401, 2021b. URL https://ems.press/
+  journals/prims/articles/201526.
+Shinichi Mochizuki. Inter-Universal Teichmuller Theory III: canonical splittings of the log-theta
+  lattice. Publ. Res. Inst. Math. Sci., 57(1/2):403–626, 2021c. URL https://ems.press/
+  journals/prims/articles/201527.
+
+                                               12
+Shinichi Mochizuki. Inter-Universal Teichmuller Theory IV: Log-volume computations and set
+  theoretic foundations. Publ. Res. Inst. Math. Sci., 57(1/2):627–723, 2021d. URL https:
+  //ems.press/journals/prims/articles/201528.
+
+Shinichi Mochizuki. On the essential logical structure of Inter-Universal Teichmuller
+  Theory in terms of logical and “∧”/logical or “∨” relations: Report on the occasion
+  of the publication of the four main papers on Inter-Universal Teichmuller Theory.
+  2022. URL https://www.kurims.kyoto-u.ac.jp/˜motizuki/Essential%
+  20Logical%20Structure%20of%20Inter-universal%20Teichmuller%
+  20Theory.pdf.
+
+Mohammed Saı̈di. Mathscinet Reviews MR4225473, MR4225474, MR4225475, MR4225476
+ of Shinchi Mochizuki’s Inter-Universal Teichmuller Theory I–IV, 2022.
+
+Peter Scholze. Perfectoid spaces. Publ. Math. Inst. Hautes Études Sci., 116:245–313, 2012.
+  URL https://doi.org/10.1007/s10240-012-0042-x.
+
+Peter Scholze. Étale cohomology of Diamonds. 2017. URL https://arxiv.org/abs/
+  1709.07343.
+
+Peter Scholze. Review of Mochizuki’s paper: Inter-Universal Teichmüller Theory. I,II,III,IV.
+  zbMath Open (formerly Zentralblatt Math), 2021. URL https://zbmath.org/pdf/
+  07317908.pdf.
+
+Peter Scholze and Jakob Stix. Why abc is still a conjecture. 2018. URL https://www.
+  math.uni-bonn.de/people/scholze/WhyABCisStillaConjecture.pdf.
+
+Peter Scholze et al. Discussion on Peter Woit’s Blog of the Scholze-Stix article “Why Szpiro is
+  still a conjecture?”. April 2020. URL https://www.math.columbia.edu/˜woit/
+  szpirostillaconjecture.pdf.
+
+Shouwu Zhang. Geometry of algebraic points. In First International Congress of Chi-
+  nese Mathematicians (Beijing, 1998), volume 20 of AMS/IP Stud. Adv. Math., pages 185–
+  198. Amer. Math. Soc., Providence, RI, 2001. URL https://doi.org/10.2298/
+  pim140921001z.
+M ATH . DEPARTMENT, U NIVERSITY OF A RIZONA , 617 N S ANTA R ITA , T UCSON 85721-0089, USA.
+Email: kirti@math.arizona.edu
+
+
+
+
+                                               13
+

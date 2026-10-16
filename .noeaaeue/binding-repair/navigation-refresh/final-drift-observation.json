@@ -1,0 +1,14 @@
+{
+  "schema": "final-documentation-drift-observation-v1",
+  "unregistered": [
+    {
+      "path": "docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/divisor-sectors.md",
+      "sha256": "f8e52c21b0aa7e74eaae74885bff4eab0384f19051c8c16b940ddea0bc04a26a",
+      "bytes": 3812,
+      "state": "Git-visible Markdown page absent from maintained registration"
+    }
+  ],
+  "registered_absent": [],
+  "current_ledger_sha256": "df2ddbfab5c32e46b81e7e6b9d4ba555afc821462d1524154f01372fe2b31464",
+  "scope": "Observed concurrent state after bounded failures; no registration, source, proof status, or historical pin changed."
+}

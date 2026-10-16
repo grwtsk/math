@@ -55,8 +55,8 @@ consumer attempts to supply $1\le1$ where $1<1$ is required.
 
 The [source](../../../../GRWTSK/Analysis/Series/DyadicKernel.lean),
 [positive controls](../../../../GRWTSK/Analysis/Series/Checks/Positive/DyadicKernel.lean),
-[joint native receipt](../../../../evidence/Analysis/MellinTransform/gaussian-dyadic-summation-checks-2026-10-15.json)
-and [integration record](../../../../evidence/Analysis/Series/dyadic-kernel-integration-2026-10-15.json)
+[joint native receipt](../../../../.noeaaeue/evidence/Analysis/MellinTransform/gaussian-dyadic-summation-checks-2026-10-15.json)
+and [integration record](../../../../.noeaaeue/evidence/Analysis/Series/dyadic-kernel-integration-2026-10-15.json)
 bind the exact source and controls. The joint receipt freshly checks this
 supplier, its actual Gaussian consumer and their complete selected local
 closure at trust zero with fatal warnings and an owned-declaration/

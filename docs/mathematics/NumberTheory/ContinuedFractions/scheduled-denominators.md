@@ -1,5 +1,10 @@
 # Scheduled digits and continued-fraction denominators
 
+The maintained source links use the current PMD placement. Earlier verification
+receipts retain their recorded source paths, bytes and tool context. Fresh
+proof replay of the relocated context remains pending; see the
+[source relocation scope](../../../../.noeaaeue/documentation/reference/source-layout.md#pmd-source-tree).
+
 - [Scheduling and arithmetic](../../../../GRWTSK/NumberTheory/ContinuedFractions/ScheduledDenominators.lean)
   turns arbitrary signed integer drivers into positive, budgeted batch increments.
   The strictly increasing clock covers every obligation index exactly once.
@@ -12,7 +17,7 @@
 
 ## Source and verification scope
 
-[Source](../../../../GRWTSK/NumberTheory/ContinuedFractions/ScheduledDenominators.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+[Source](../../../../GRWTSK/NumberTheory/ContinuedFractions/ScheduledDenominators.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../../.noeaaeue/documentation/reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

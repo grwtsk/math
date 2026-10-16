@@ -1,0 +1,61 @@
+{
+  "schema": "abc-resume-finite-moments-v2",
+  "observed_at": "2026-10-16T02:20:38.232077+00:00",
+  "repository_commit": "8e35dcd5fb4f42640aaaaf68e682a2254736f4da",
+  "repository_tree": "957f629906a52860734d9628a17fee3612974df6",
+  "expected_git_ref": "refs/heads/main",
+  "target": {
+    "declaration": "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ABCConjecture",
+    "source": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/ABCStatement.lean",
+    "freeze_state": "frozen",
+    "source_sha256": "f8ddc2bbe7ea1371418118ae26b1ed00200e1a3d19843fd0dfaf34fd29039ef2",
+    "local_definition_closure_sha256": {
+      "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Definitions.lean": "585be0c9c3bda1333ddd442d230ad5701e87ef5163c10ec3c1225a5584bfe892",
+      "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Radical.lean": "f13e0f8fb20c37f3257a95d30c020a9dce2a364844d815fa86bd7dc9518898ea",
+      "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/ABCStatement.lean": "f8ddc2bbe7ea1371418118ae26b1ed00200e1a3d19843fd0dfaf34fd29039ef2"
+    },
+    "quantifiers": "forall epsilon : Real, 0 < epsilon -> exists K : Real, 0 < K and forall primitive positive additive t, c <= K * rpow(radical(a*b*c),1+epsilon)",
+    "axiomatized": false
+  },
+  "source_frontier": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Sources/abc-source-coverage.json",
+  "proof_frontier": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/abc-proof-hypergraph-finite-moments-2026-10-15.json",
+  "selected_receipt": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/finite-moments-checks-2026-10-15-replay-2.json",
+  "remaining_route_edges": 10,
+  "remaining_search_query_budget": 0,
+  "remaining_local_download_budget": 0,
+  "next_obligation": "divisor_sector_reindexing",
+  "next_action": "Prove the finite common-divisor sector reindexing a=d*u,b=d*v with d>0, exact floor cutoffs and the additive constraint retained. Keep all uniform radical-height estimates, Fourier/projector transfers and moment-to-abc arithmetic implications open.",
+  "new_generation_required_for": [
+    "changed canonical target",
+    "changed toolchain or dependency pin",
+    "changed trust policy",
+    "expanded source universe/search budget"
+  ],
+  "integration_blockers": [
+    "Last measured global layout: 185 findings; zero findings at the eight owned source/control paths.",
+    "Global source observation membership drift: four concurrent Fourier/combinatorics additions omitted from the earlier 830-source snapshot.",
+    "Documentation render detects concurrent source edits; latest collision: GRWTSK/Analysis/Fourier/ZModBalancedPartition.lean. Normal and optimized documentation checks report stale inventory."
+  ],
+  "stop_boundary": "Requested finite Mobius-filtered primitive additive moment identity, generic joint weight and typed triple bijection are checked; missing abc implications remain open.",
+  "status": "OPEN_FRONTIER",
+  "original_resume_preserved": "abc-resume.json",
+  "current_state": "finite-moments-status-2026-10-15.json",
+  "process_boundary": ".noeaaeue/",
+  "resume_commands": [
+    "python3 -B .noeaaeue/scripts/check_primitive_additive_moments.py",
+    "python3 -B .noeaaeue/scripts/check_additive_triple_transport.py",
+    "python3 -B .noeaaeue/scripts/test_abc_source_search.py",
+    "python3 -B .noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Sources/check_source_freeze.py"
+  ],
+  "previous_cursor": {
+    "path": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/abc-resume-current.json",
+    "sha256": "29a08dea794a586896826edee278558b658f76d5204554cf716368ba49eeaf6e",
+    "modified": false
+  },
+  "completed_obligation": "finite_moebius_primitive_moment_identity",
+  "checked_declaration": "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.typedPrimitiveWeightedMoment_eq_moebius_sum",
+  "previous_selected_receipts": [
+    ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/finite-moments-checks-2026-10-15.json"
+  ],
+  "selected_replay_command": "python3 -B .noeaaeue/scripts/check_primitive_additive_moments.py --receipt .noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/finite-moments-checks-NEXT-ABSENT-DESTINATION.json"
+}

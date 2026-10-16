@@ -1,0 +1,4 @@
+'PPNCP04.FourierBlock.rawFourier_ordinaryBlock' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PPNCP04.FourierBlock.rawFourier_causal_primeBlock' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PPNCP04.FourierBlock.windowedState_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PPNCP04.FourierBlock.rawFourier_windowed_primeBlock' depends on axioms: [propext, Classical.choice, Quot.sound]

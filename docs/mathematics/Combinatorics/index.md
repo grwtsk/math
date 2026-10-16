@@ -4,22 +4,22 @@
 
 | Inventory | Count |
 |---|---:|
-| Object guides | 19 |
+| Object guides | 22 |
 | Documented object groups | 2 |
-| Distinct primary sources linked | 18 |
-| Lean source modules | 59 |
+| Distinct primary sources linked | 21 |
+| Lean source modules | 72 |
 | Archive intake records | 0 |
 | Selected catalog families | 1 |
 
 These counts measure documentation and source coverage. They do not count accepted theorems or establish that every source module is documented or checked. [Definitions and limits](../../reference/library-pages.md#count-definitions).
 
-1005 source declaration commands, including 599 theorem/lemma commands, across 59 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+1319 source declaration commands, including 796 theorem/lemma commands, across 72 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
 ## DirectedGraph
 
-17 object guides · 17 distinct linked primary source files.
+18 object guides · 18 distinct linked primary source files.
 
-Linked primary-source scope: 413 source declaration commands, including 285 theorem/lemma commands, across 17 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+Linked primary-source scope: 425 source declaration commands, including 291 theorem/lemma commands, across 18 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
 - [A finite inventory of complete history prefixes](DirectedGraph/prefix-inventory.md).
 - [Certified revision of rooted trace dictionaries](DirectedGraph/rooted-trace-revision.md).
@@ -27,6 +27,7 @@ Linked primary-source scope: 413 source declaration commands, including 285 theo
 - [Compaction checkpoints between finite prefix batches](DirectedGraph/prefix-compaction-checkpoint.md).
 - [Endpoint sections and incomparable ancestors](DirectedGraph/endpoint-section.md).
 - [Finite chronological batches of stored prefix states](DirectedGraph/prefix-finite-batch.md).
+- [Finite schedules of batches and compaction](DirectedGraph/prefix-compaction-schedule.md).
 - [Incremental prefix-state updates and relation reindexing](DirectedGraph/prefix-update-reindex.md).
 - [Occurrence reachability and complete trace prefixes](DirectedGraph/occurrence-prefix.md).
 - [Ordered occurrences of directed paths](DirectedGraph/path-occurrences.md).
@@ -41,13 +42,15 @@ Linked primary-source scope: 413 source declaration commands, including 285 theo
 
 ## Sequences
 
-2 object guides · 1 distinct linked primary source file.
+4 object guides · 3 distinct linked primary source files.
 
-Linked primary-source scope: 22 source declaration commands, including 17 theorem/lemma commands, across 1 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+Linked primary-source scope: 91 source declaration commands, including 58 theorem/lemma commands, across 3 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
+- [Balanced partitions and uniform subset sampling](Sequences/balanced-partition-sampling.md).
 - [Coverage and discrete quotas](Sequences/coverage-and-quotas.md).
 - [Integer quota allocation and discrepancy](Sequences/quotas.md).
+- [Partial sum ordering and bounded interval repair](Sequences/partial-sum-ordering.md).
 
 ## Sources and verification
 
-[Selected catalog](../../reference/results.md) · [Archive source candidates](../../reference/source-intake.md) · [Verification interfaces](../../reference/verification-interfaces.md).
+[Selected catalog](../../reference/results.md) · [Archive source candidates](../../reference/source-intake.md).

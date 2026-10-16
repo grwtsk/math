@@ -1,0 +1,35 @@
+{
+  "schema": "validation-completion-writer-coordination-v1",
+  "authorization": "User explicitly instructed: Issue a message to them to pause. Then when you are done introduce the most effective way to use the new system and have them continue.",
+  "writers": [
+    {
+      "threadId": "01a14242-34e7-7e31-afad-b90b9ca68e15",
+      "title": "Formalize the abc proof program",
+      "hostId": "local",
+      "pause_message_sent": true,
+      "resume_message_sent": false,
+      "pause_acknowledged": true
+    },
+    {
+      "threadId": "01a14261-105f-7fe2-857c-8c83e6ff109a",
+      "title": "Formalize modular clock rearranging",
+      "hostId": "local",
+      "pause_message_sent": true,
+      "resume_message_sent": false,
+      "pause_acknowledged": true
+    },
+    {
+      "threadId": "01a1404e-cad5-7ff3-9796-b219224111b8",
+      "title": "Formalize RH results in Lean",
+      "hostId": "local",
+      "pause_message_sent": true,
+      "resume_message_sent": false,
+      "pause_acknowledged": true,
+      "heartbeat_paused_by_its_owner": true
+    }
+  ],
+  "pause_message": "The human owner has explicitly asked this coordination chat to pause the other math writers so it can finish current binding reconciliation and whole-library validation, then explain the validated workflow and have you continue. Pause writes and native verification work in /Users/local/Desktop/math now, including your subagents. Preserve every existing edit, draft, receipt and failure; do not reset, stash, move source taxonomy, commit or push. Let an already-running command stop safely, but do not start more source/metadata edits or compiler jobs. Report in your own next response that you are paused, with any current command or incomplete source/guide/evidence state that validation must treat as pending, then wait for the explicit resume message from this chat. We will send the new workflow and continuation instruction when validation finishes.",
+  "state": "all-writers-paused-for-validation",
+  "pause_acknowledged_utc": "2026-10-16T02:57:35.891018+00:00",
+  "scope": "Pause and later resume authorized by human. Existing edits and pending drafts preserved; no resetting, stashing or source taxonomy changes."
+}

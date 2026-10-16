@@ -1,0 +1,85 @@
+{
+  "schema": "lean-boundary-binding-repair-summary-v1",
+  "created_at": "2026-10-16T02:33:10.331113+00:00",
+  "status": "BINDING_AND_PROTOCOL_REPAIR_IMPLEMENTED_CURRENT_LIBRARY_GATES_REFUSE_CONCURRENT_DRIFT",
+  "library_wide_admission": false,
+  "GRWTSK_or_entrypoint_edited_by_this_worker": false,
+  "historical_intake_receipts_rewritten": false,
+  "repairs": {
+    "current_source_observations": {
+      "path": ".noeaaeue/bindings/current-source-observations.json",
+      "identity": "d57979e56a8747affb4b6d0c492a3c2f0c2287e830ff5caf714ffdfe6dab0edd",
+      "source_count": 847,
+      "scope": "Exact observed bytes/roles; historical membership preserved; no inherited acceptance; explicit unexported pending sources cannot enter actual public closure."
+    },
+    "layout": "Current source roles, bans, import closure and cycles checked against exact observation; historical future taxonomy remains pinned pending proposal, never current admission or role override.",
+    "native_audit_protocol": "Actual JSON source profiles, current census schema, strict source/owner/Expr/universe/axiom/reference checks; historical parser unchanged.",
+    "runtime_table": "Only generated operational wrapper receives exact newly qualified five helper descriptor; original formal Lean audit source/table unchanged. Exact48 qualification inputs frozen, present, hash-matching, and unignored.",
+    "catalog": "Historical source records retained verbatim; current847-source observation projected separately with no acceptance inheritance."
+  },
+  "verification": {
+    "python_controls": {
+      "source_observations": 8,
+      "current_owned_audit_protocol": 6,
+      "legacy_layout": 47,
+      "legacy_trust": 27,
+      "normal_and_optimized": true
+    },
+    "native_fixture_earlier": {
+      "status": "LEAN_AUDIT_SELF_TEST_PASSED",
+      "commands": 9,
+      "receipt": ".noeaaeue/binding-repair/native/owned-native-fixtures-20261016T020247Z-0171cd5ef3/receipt.json",
+      "scope": "Earlier exact frozen code snapshot; fixture branch unchanged by later project-wrapper injection. Current-code rerun was BUSY and is not claimed passed."
+    },
+    "current_owned_wrapper": {
+      "status": "CURRENT_OPERATIONAL_OWNED_AUDIT_PASSED",
+      "declarations": 419,
+      "modules": 5,
+      "qualified_helpers": 5,
+      "trust": 0,
+      "fatal_warnings": true,
+      "report": ".noeaaeue/binding-repair/current-owned-wrapper-validation.json",
+      "scope": "Current generated audit wrapper and Python census parser against exact freshly qualified five-module objects; no whole-library claim."
+    },
+    "last_successful_layout": {
+      "status": "PASS",
+      "source_count": 847,
+      "identity": "d57979e56a8747affb4b6d0c492a3c2f0c2287e830ff5caf714ffdfe6dab0edd",
+      "report": ".noeaaeue/binding-repair/current-layout.json"
+    },
+    "catalog_render": {
+      "status": "PASS_AT_RECORDED_847_SOURCE_OBSERVATION",
+      "historical_active_records": 750,
+      "historical_candidate_records": 63,
+      "current_observed_sources": 847,
+      "current_candidate_only": 81
+    },
+    "full_replay": {
+      "status": "FAILED_BEFORE_NATIVE",
+      "receipt": ".noeaaeue/binding-repair/attempts/20261016T022903Z-9aa0b8a597/failure.json",
+      "error": "historical input/policy binding drift in current source observations",
+      "native_commands": 0
+    },
+    "current_fixture_retry": {
+      "status": "BUSY_BEFORE_NATIVE",
+      "last_receipt": ".noeaaeue/binding-repair/attempts/20261016T023216Z-c68cfc684d/failure.json",
+      "reason": "External divisor-sector verifier holds shared replay lock. Bounded retries stopped; no interference."
+    }
+  },
+  "current_limitations": {
+    "source_observation": "Last successful847-source input intentionally preserved; later concurrent FiniteExponentialLayers and CyclicSumsetGrowth byte changes and further math-layout input edits now cause exact refusal. No silent refresh.",
+    "detailed_refusal": ".noeaaeue/binding-repair/observation-transitions/final-refusal-c4a27e10475e50491311723bf22245eed54a11376d748168ce84f535237da543.json",
+    "concurrent_root_input": "Parent independently recorded external NOTICE append. This worker did not change licensing or formal sources."
+  },
+  "custody_index": ".noeaaeue/binding-repair/native-evidence-custody.json",
+  "custody_files": 36,
+  "commands": {
+    "layout": "python3 -B .noeaaeue/scripts/check_math_layout.py",
+    "catalog_check": "python3 -B .noeaaeue/scripts/generate_math_source_catalog.py",
+    "catalog_render": "python3 -B .noeaaeue/scripts/generate_math_source_catalog.py --render",
+    "pure_trust_controls": "python3 -B .noeaaeue/scripts/check_math_trust.py --self-test",
+    "native_fixture_controls": "python3 -B .noeaaeue/scripts/check_math_trust.py --lean-self-test",
+    "full_library_replay": "python3 -B .noeaaeue/scripts/check_math_trust.py"
+  },
+  "rerun_policy": "After independently coordinating a stable source and metadata interval, create a new explicit source observation preserving all prior versions, render current catalog, validate bindings, then replay. Validation itself never updates inputs. No taxonomy or Lean source edits are part of this repair."
+}

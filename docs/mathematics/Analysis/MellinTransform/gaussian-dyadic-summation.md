@@ -53,8 +53,8 @@ necessary for every stronger Gaussian estimate is inferred.
 
 The [source](../../../../GRWTSK/Analysis/MellinTransform/GaussianDyadicSummation.lean),
 [positive controls](../../../../GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianDyadicSummation.lean),
-[joint native receipt](../../../../evidence/Analysis/MellinTransform/gaussian-dyadic-summation-checks-2026-10-15.json)
-and [integration record](../../../../evidence/Analysis/MellinTransform/gaussian-dyadic-summation-integration-2026-10-15.json)
+[joint native receipt](../../../../.noeaaeue/evidence/Analysis/MellinTransform/gaussian-dyadic-summation-checks-2026-10-15.json)
+and [integration record](../../../../.noeaaeue/evidence/Analysis/MellinTransform/gaussian-dyadic-summation-integration-2026-10-15.json)
 bind the exact selected closure, including the scalar kernel and both sets
 of controls. Pinned Lean 4.33.0 checks fresh local sources at trust zero
 with fatal warnings and a complete owned-declaration/transitive-axiom

@@ -1,0 +1,162 @@
+{
+  "schema": "binding-and-profile-repair-summary-v1",
+  "created_utc": "2026-10-16T02:33:26.939937+00:00",
+  "status": "repairs-implemented-and-scoped-verified; latest-global-checks-refuse-concurrent-work",
+  "scope": "Repair process bindings and audit profiles after root cleanup. No mathematical source/tree/entrypoint edits by this team and no historical receipt rewrite or inherited mathematical acceptance.",
+  "repairs": [
+    {
+      "area": "documentation bindings",
+      "change": "Reconciled 58 current guide source bindings and two selected catalog pointers against exact source observations; preserves original historical records, hashes, labels and preimages. Strict reconciliation and navigation checks retained.",
+      "record": ".noeaaeue/binding-repair/documentation-repair-summary.json",
+      "validation": ".noeaaeue/binding-repair/documentation-validation.json"
+    },
+    {
+      "area": "current source observations",
+      "change": "Distinct pinned current-byte projection for layout/trust/catalog gates. Historical intake, verdicts and future taxonomy proposal remain separate. Membership, source, entrypoint, policy and candidate-import drift remains fatal.",
+      "record": ".noeaaeue/bindings/current-source-observations.json",
+      "validation": ".noeaaeue/binding-repair/boundary-validation.json"
+    },
+    {
+      "area": "generated helper profile and owned audit protocol",
+      "change": "Separate freshly qualified current five-pair profile across three owners; corrected exact JSON source-hash protocol and independent operational wrapper. Historical formal template and observer remain unchanged.",
+      "record": ".noeaaeue/binding-repair/moebius-validation.json",
+      "native_wrapper": ".noeaaeue/binding-repair/current-owned-wrapper-validation.json"
+    },
+    {
+      "area": "RH target checker",
+      "change": "Uses complete eight-module fresh closure, immutable run inputs, strict 39-declaration audit and source-hash-bound current aliases of the two historical rejection controls.",
+      "record": ".noeaaeue/binding-repair/rh-target-current-receipt.json",
+      "custody": ".noeaaeue/binding-repair/rh-target-native-custody.json"
+    },
+    {
+      "area": "conformance reconstruction",
+      "change": "Explicit current recipe/path/dependency projection preserves historical recipes; generated current catalog comparison uses strict current observation API.",
+      "record": ".noeaaeue/binding-repair/conformance-recipe-projection.json",
+      "hostile_controls": ".noeaaeue/binding-repair/conformance-current-binding-tests.log"
+    },
+    {
+      "area": "Lean inputs and source custody",
+      "change": "Exact .noeaaeue process PDF custody boundary retained while mathematical-source/root document-asset violations still reject; required new native qualification sources available in a clean checkout.",
+      "required_qualification_inputs": ".noeaaeue/binding-repair/required-qualification-inputs.json"
+    }
+  ],
+  "historical_pins": {
+    "policy": "Expected historical hashes and receipts retained verbatim. Stale means stale; no hash refresh implies replay.",
+    "quartic_and_hermite": {
+      "status": "stale",
+      "replay": "blocked",
+      "record": ".noeaaeue/binding-repair/historical-pin-status.json"
+    },
+    "moebius": {
+      "historical_manifest_status": "stale-historical-binding",
+      "historical_profile_status": "retained-separately-from-current-profile",
+      "record": ".noeaaeue/binding-repair/moebius-binding-status.json"
+    }
+  },
+  "verification": {
+    "script_suite": {
+      "tests": 1053,
+      "outcome": "passed-at-recorded-snapshot",
+      "log": ".noeaaeue/binding-repair/script-unit-tests.log"
+    },
+    "process_suite": {
+      "tests": 660,
+      "outcome": "passed-at-recorded-snapshot",
+      "log": ".noeaaeue/binding-repair/process-unit-tests.log"
+    },
+    "final_tooling_controls": {
+      "tests": 167,
+      "outcome": "passed",
+      "details": ".noeaaeue/binding-repair/moebius-validation.json"
+    },
+    "documentation_hostile_controls": {
+      "tests": 109,
+      "outcome": "passed-normal-and-optimized",
+      "details": ".noeaaeue/binding-repair/navigation-refresh/validation.json"
+    },
+    "moebius_native": {
+      "outcome": "passed",
+      "declarations": 419,
+      "closure_modules": 5,
+      "qualified_runtime_pairs": 5,
+      "negative_controls": 6,
+      "trust_level": 0,
+      "fatal_warnings": true,
+      "scope": "Exact frozen five-module closure only; no application/library-wide admission.",
+      "details": ".noeaaeue/binding-repair/moebius-current-qualification.json"
+    },
+    "rh_native": {
+      "outcome": "passed",
+      "native_commands": 11,
+      "audited_declarations": 39,
+      "trust_level": 0,
+      "fatal_warnings": true,
+      "rh_proved": false,
+      "details": ".noeaaeue/binding-repair/rh-target-current-receipt.json"
+    },
+    "layout_and_catalog": {
+      "outcome": "passed-at-847-source-observation-before-concurrent-drift",
+      "current_global_verification": false,
+      "details": ".noeaaeue/binding-repair/boundary-validation.json"
+    }
+  },
+  "latest_global_limitations": [
+    {
+      "check": "Moebius current default --validate-only",
+      "status": "refused-before-native-execution",
+      "reason": "Concurrent CyclicSumsetGrowth.lean byte drift after explicit v4 contract observation.",
+      "details": ".noeaaeue/binding-repair/moebius-validation.json",
+      "receipt_custody": ".noeaaeue/binding-repair/moebius-current-default-custody.json"
+    },
+    {
+      "check": "generated current source catalog exact comparison",
+      "status": "refused",
+      "reason": "Concurrent FiniteExponentialLayers.lean byte drift against current observed readset.",
+      "details": ".noeaaeue/binding-repair/conformance-attempts/a57875321926e47a.json"
+    },
+    {
+      "check": "whole-library trust replay",
+      "status": "refused-before-native-execution",
+      "reason": "Concurrent mathematical-layout policy/input byte drift against current observation.",
+      "details": ".noeaaeue/binding-repair/boundary-validation.json"
+    },
+    {
+      "check": "final current documentation inventory",
+      "status": "refused",
+      "reason": "Concurrent unregistered docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/divisor-sectors.md.",
+      "details": ".noeaaeue/binding-repair/navigation-refresh/validation.json",
+      "exact_drift": ".noeaaeue/binding-repair/navigation-refresh/page-inventory-drift.json"
+    },
+    {
+      "check": "final-code native fixture rerun",
+      "status": "busy-no-compiler-invoked",
+      "reason": "External divisor-sector verifier holds shared replay lock. Prior nine-command native fixture success and fresh current project-wrapper success remain separately scoped.",
+      "details": ".noeaaeue/binding-repair/boundary-validation.json"
+    }
+  ],
+  "preservation": {
+    "historical_records": {
+      "checked": 5360,
+      "changed": 0,
+      "missing": 0,
+      "details": ".noeaaeue/binding-repair/historical-preservation-check.json"
+    },
+    "pinned_lean_environment": "unchanged",
+    "environment_and_legal_observations": ".noeaaeue/binding-repair/pinned-environment-preservation.json",
+    "concurrent_formal_source_edits": "preserved; no GRWTSK/ or GRWTSK.lean writes by this repair team",
+    "concurrent_source_observations": ".noeaaeue/binding-repair/concurrent-source-observation.json",
+    "new_evidence_custody": [
+      ".noeaaeue/binding-repair/native-evidence-custody.json",
+      ".noeaaeue/binding-repair/rh-target-native-custody.json",
+      ".noeaaeue/binding-repair/moebius-current-default-custody.json"
+    ],
+    "original_preimages": ".noeaaeue/binding-repair/originals",
+    "git": "Existing main checkout; no branch/worktree/reset/stash/commit/push by this team."
+  },
+  "mathematical_acceptance": {
+    "library_wide": false,
+    "rh_proved": false,
+    "historical_receipts_rewritten": false,
+    "taxonomy_changed_by_this_team": false
+  }
+}

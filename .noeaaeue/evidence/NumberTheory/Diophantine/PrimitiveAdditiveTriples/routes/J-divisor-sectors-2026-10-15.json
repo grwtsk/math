@@ -1,0 +1,22 @@
+{
+  "schema": "primitive-moment-route-v3",
+  "route": "J",
+  "checked_sector": "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.commonDivisorWeightedMoment_eq_scaled_sum",
+  "strongest_checked_theorem": "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.typedPrimitiveWeightedMoment_eq_moebius_scaled_sum",
+  "receipt": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/divisor-sectors-checks-2026-10-15.json",
+  "remaining_premises": [
+    "finite_additive_character_projector",
+    "uniform_radical_weighted_moment_estimate",
+    "moment_uniformity",
+    "moment_to_pointwise_arithmetic_bridge"
+  ],
+  "abc_target_closed": false,
+  "next_smallest_obligation": "finite_additive_character_projector",
+  "previous_route": {
+    "path": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/routes/J-finite-moments-2026-10-15.json",
+    "sha256": "23e3a838a6328d45701b47356c01342e708a69ec3d42dd9c971dd206dc152630",
+    "modified": false
+  },
+  "scope": "Finite exact identities only; positive divisor and closed floor/additive constraints retained.",
+  "overall_status": "OPEN_FRONTIER"
+}

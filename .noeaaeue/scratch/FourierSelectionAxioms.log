@@ -1,0 +1,70 @@
+'GRWTSK.ZModIndependentSelection.character_orthogonality' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GRWTSK.ZModIndependentSelection.equality_indicator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GRWTSK.ZModIndependentSelection.valueProbability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GRWTSK.ZModIndependentSelection.valueProbability_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GRWTSK.ZModIndependentSelection.valueProbability_eq_indicator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.ZModIndependentSelection.valueProbability_fourier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GRWTSK.ZModIndependentSelection.valueProbability_total' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GRWTSK.ZModIndependentSelection.eventProbability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GRWTSK.ZModIndependentSelection.Selection' does not depend on any axioms
+'GRWTSK.ZModIndependentSelection.selectionSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GRWTSK.ZModIndependentSelection.coordinateCharacterAverage' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GRWTSK.ZModIndependentSelection.uniform_product_factorization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.ZModIndependentSelection.independent_cylinder_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.ZModIndependentSelection.character_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GRWTSK.ZModIndependentSelection.selection_character_factorization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.ZModIndependentSelection.independent_fourier_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GRWTSK.ZModIndependentSelection.independent_mass_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GRWTSK.ZModIndependentSelection.coordinateCharacterAverage_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.ZModIndependentSelection.independent_nontrivial_mass_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.ZModIndependentSelection.PartSelection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GRWTSK.ZModIndependentSelection.characterAverage' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GRWTSK.ZModIndependentSelection.coordinateCharacterAverage_part' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.ZModIndependentSelection.part_mass_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GRWTSK.ZModBalancedPartition.partValues' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GRWTSK.ZModBalancedPartition.partValues_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GRWTSK.ZModBalancedPartition.partValues_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GRWTSK.ZModBalancedPartition.coordinate_average_eq_partValues' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.ZModBalancedPartition.sum_output' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GRWTSK.ZModBalancedPartition.jointSumProbability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GRWTSK.ZModBalancedPartition.jointSumProbability_eq_average' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GRWTSK.ZModBalancedPartition.jointSumProbability_eq_fixedSize' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.ZModBalancedPartition.fixedSize_mass_le_average_exponential' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.ZModBalancedPartition.residueEmbedding' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GRWTSK.ZModBalancedPartition.subtype_fixedSize_eq_subsetSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GRWTSK.ZModBalancedPartition.BalancedPartitions' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GRWTSK.ZModBalancedPartition.subsetSumProbability_eq_balanced_average' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.ZModBalancedPartition.subsetSumProbability_le_balanced_exponential' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.ZModBalancedPartition.balanced_partition_energy_lower_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.ZModBalancedPartition.subsetSumProbability_le_balanced_layers' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.ZModBalancedPartition.source_slice_mass_le_balanced_layers' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

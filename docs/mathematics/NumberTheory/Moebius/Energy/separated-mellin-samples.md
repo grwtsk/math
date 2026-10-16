@@ -311,12 +311,12 @@ Parseval identity, not numerical quadrature over an infinite frequency list.
 
 ## 11. Source and verification boundary
 
-The maintained [finite implementation](../../../../../scripts/number_theory/moebius/vaughan_type_ii/sampled_source.py),
-[tests](../../../../../scripts/number_theory/moebius/vaughan_type_ii/tests/test_sampling.py),
-and [versioned input verifier](../../../../../scripts/number_theory/moebius/vaughan_type_ii/check_sampled_return.py)
+The maintained [finite implementation](../../../../../.noeaaeue/scripts/number_theory/moebius/vaughan_type_ii/sampled_source.py),
+[tests](../../../../../.noeaaeue/scripts/number_theory/moebius/vaughan_type_ii/tests/test_sampling.py),
+and [versioned input verifier](../../../../../.noeaaeue/scripts/number_theory/moebius/vaughan_type_ii/check_sampled_return.py)
 use Python's standard library and directed integer intervals. The required
-prior-center fixture is [source-bound separately](../../../../../evidence/NumberTheory/Moebius/VaughanTypeII/previous-centers.json).
-The additive [complete-packet diagnostic](../../../../../scripts/number_theory/moebius/vaughan_type_ii/analyze_complete_packet.py)
+prior-center fixture is [source-bound separately](../../../../../.noeaaeue/evidence/NumberTheory/Moebius/VaughanTypeII/previous-centers.json).
+The additive [complete-packet diagnostic](../../../../../.noeaaeue/scripts/number_theory/moebius/vaughan_type_ii/analyze_complete_packet.py)
 first verifies that immutable input closure, then checks the center identities,
 the lattice remainders, the six-term signed reconstruction, the zero sample,
 and the unweighted frequency bands without changing the baseline report.

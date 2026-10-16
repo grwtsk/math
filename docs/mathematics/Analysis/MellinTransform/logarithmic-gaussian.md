@@ -52,7 +52,7 @@ values assigned to nonintegrable Bochner integrals.
 
 The [source](../../../../GRWTSK/Analysis/MellinTransform/LogarithmicGaussian.lean),
 [positive consumers](../../../../GRWTSK/Analysis/MellinTransform/Checks/Positive/LogarithmicGaussian.lean)
-and [native receipt](../../../../evidence/Analysis/MellinTransform/logarithmic-gaussian-checks-2026-10-15.json)
+and [native receipt](../../../../.noeaaeue/evidence/Analysis/MellinTransform/logarithmic-gaussian-checks-2026-10-15.json)
 bind exact hypotheses and bytes. The complete local closure and accepted
 controls are compiled from fresh project objects with pinned Lean 4.33.0,
 trust zero, fatal warnings and the complete owned-declaration/transitive-axiom
@@ -60,8 +60,8 @@ census. Only `propext`, `Classical.choice` and `Quot.sound` are permitted.
 Generated project objects and reused pinned dependency objects are fingerprinted
 and rechecked; dependency sources are not rebuilt.
 
-The [integration record](../../../../evidence/Analysis/MellinTransform/logarithmic-gaussian-integration-2026-10-15.json)
-and [source review](../../../../evidence/Analysis/MellinTransform/logarithmic-gaussian-source-review-2026-10-15.json)
+The [integration record](../../../../.noeaaeue/evidence/Analysis/MellinTransform/logarithmic-gaussian-integration-2026-10-15.json)
+and [source review](../../../../.noeaaeue/evidence/Analysis/MellinTransform/logarithmic-gaussian-source-review-2026-10-15.json)
 retain precise source identities and normalization differences. OpenAI's selected
 inverse-Gaussian sources and the lognormal-moment reference are related context;
 they are not asserted to have this identical formula or to supply its inputs.

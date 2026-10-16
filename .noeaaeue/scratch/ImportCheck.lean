@@ -1,0 +1,4 @@
+import GRWTSK.Analysis.Fourier.ZModPartitionEnergy
+#check GRWTSK.ZModPartitionEnergy.partitionEnergy
+#check GRWTSK.ZModIndependentSelection.valueProbability
+#check GRWTSK.ZModCharacterEnergy.characterAverage

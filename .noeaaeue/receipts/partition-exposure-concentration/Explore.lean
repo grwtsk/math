@@ -1,0 +1,12 @@
+import GRWTSK.Analysis.Fourier.ZModBalancedPartition
+#check Finset.sum_fiberwise
+#check Finset.sum_fiberwise_of_maps_to
+#check Finset.sum_fiberwise_eq_sum_filter
+#check Finset.sum_filter
+#check Finset.sum_bij
+#check Finset.sum_subtype
+#check Finset.sum_map
+#check Finset.sum_comm
+#check Finset.sum_eq_sum_fiberwise
+#check Finset.card_eq_sum_ones
+#check Finset.sum_fiberwise_eq_sum_filter

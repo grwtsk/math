@@ -1,5 +1,6 @@
 # Common-reading row costs
 
+
 Human mathematical direction, theorem selection and conceptual framing: grwtsk contributors. Written recovery: OpenAI Codex assistance. This page contains written reductions with explicit pending formal adapters, not an arithmetic cancellation witness.
 
 Let \(A_\mu(x)=\sum_{1\le n\le x}\mu(n)/n\) use the real closed cutoff, and independently define \(B_\mu(Y)=\sup_{x\ge Y}|A_\mu(x)|\). The elementary bound \(0\le B_\mu(Y)\le1\) supplies no decay rate. With \(\nu(n)=\mu(n)\rho(n)\) and the complete positive \(h_d\) described in the [density correction](../../ArithmeticFunctions/density-correction.md), the written exact closed row is
@@ -40,6 +41,8 @@ Then \(Q>C(1+T)^b\) for every \(T\ge T_*\) and every admissible \(U,Y\). This fo
 ## Source and remaining arithmetic
 
 The [signed cutoff source](../../../../../GRWTSK/NumberTheory/ArithmeticFunctions/MoebiusTruncation.lean) retains the exact compensation that the written transport uses. Its source replay does not formalize this entire written aggregate argument. The [literal pickup registry](../pickup-problem-registry.json) preserves the original targets. The complete signed main, high-output channel and discrepancy must be controlled together, or an independent original P04, P05 or absolute MB6 witness must be supplied. All remain open. Positive moments, finite sign diagnostics and cost reparametrization do not discharge them.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 
