@@ -1,0 +1,230 @@
+{
+  "schema": "source-and-operational-preimage-custody-v1",
+  "at": "2026-10-16T01:39:41.924686+00:00",
+  "original_operational_preimages": [
+    {
+      "original_path": "scripts/check_prefix_table_schedule.py",
+      "original_sha256": "a159f07748fd1cf537901aa0ea2be4c3cefeb0e012e0a715a02da64d2fbe8e59",
+      "retained_preimage_path": ".noeaaeue/root-cleanup/originals/scripts/check_prefix_table_schedule.py",
+      "current_tool_path": ".noeaaeue/scripts/check_prefix_table_schedule.py",
+      "current_tool_sha256": "855e13bca3cf3c7681038aae7af1283f7013427248e6140050ebbf52291ae282",
+      "current_context_status": "NOT_RUN; migration adapter replay pending; original tests/receipts do not transfer acceptance"
+    },
+    {
+      "original_path": "scripts/check_third_cyclotomic_reduction.py",
+      "original_sha256": "2d91f2242c90dc174de54622f9088fc6861378cb4ce6eab03a75f04b42128c59",
+      "retained_preimage_path": ".noeaaeue/root-cleanup/originals/scripts/check_third_cyclotomic_reduction.py",
+      "current_tool_path": ".noeaaeue/scripts/check_third_cyclotomic_reduction.py",
+      "current_tool_sha256": "3f889b1e60e2b520e48fdf145c0ffb948dc30a575839d8df5da608be3f9417db",
+      "current_context_status": "NOT_RUN; migration adapter replay pending; original tests/receipts do not transfer acceptance"
+    },
+    {
+      "original_path": "scripts/test_schedule_reduction_replay_guards.py",
+      "original_sha256": "1945549c2ebb1d3402a8106ab5822ed97a6853b6c66290471bb7cde56732b69e",
+      "retained_preimage_path": ".noeaaeue/root-cleanup/originals/scripts/test_schedule_reduction_replay_guards.py",
+      "current_tool_path": ".noeaaeue/scripts/test_schedule_reduction_replay_guards.py",
+      "current_tool_sha256": "e9f365b82c6456dd416918f3aa1f15dd6b8823c5b9ead8f0a4619e536e1ede80",
+      "current_context_status": "NOT_RUN; migration adapter replay pending; original tests/receipts do not transfer acceptance"
+    }
+  ],
+  "selected_code_staging": "six exact Lean mathematical/check artifacts and their original-context evidence only; rewritten current maintained tooling remains with monitor-owned migration, not admitted by old checks.",
+  "current_cursor": {
+    "path": ".noeaaeue/cache/coordination/continuations/2026-10-15-schedule-reduction.json",
+    "sha256": "6ac44b76c758763f70d2a82b531ce2aa9130e1520aad242716fbe90f5c486299"
+  },
+  "historical_cache_revision": "ce89c2a26424ddbcce16a6c5140513f61510b17b196f72dd6bc2b0cfef85550d",
+  "other_new_source_occurrences": [
+    {
+      "path": "GRWTSK/Analysis/FiniteSums/Checks/Negative/DeletedSquareWeight.lean",
+      "id": "source:GRWTSK/Analysis/FiniteSums/Checks/Negative/DeletedSquareWeight.lean",
+      "sha256": "d982996f99f905bcc3211d5d6bca3e9ec8083ab22fb859b777704c1246453f91",
+      "source_role": "negative-control",
+      "state": "cached exact raw occurrence only; mathematical_acceptancefalse; origin/author not inferred"
+    },
+    {
+      "path": "GRWTSK/Analysis/FiniteSums/Checks/Positive/WeightedDegreeComparison.lean",
+      "id": "source:GRWTSK/Analysis/FiniteSums/Checks/Positive/WeightedDegreeComparison.lean",
+      "sha256": "074866f76830bb617096cf46d00b73809dd69fd1830ff381cf807fd28ad080cc",
+      "source_role": "positive-check",
+      "state": "cached exact raw occurrence only; mathematical_acceptancefalse; origin/author not inferred"
+    },
+    {
+      "path": "GRWTSK/Analysis/FiniteSums/WeightedDegreeComparison.lean",
+      "id": "source:GRWTSK/Analysis/FiniteSums/WeightedDegreeComparison.lean",
+      "sha256": "783b03862d58e75e6138550039f8293536a606086fda232c1fd1375d985c9d0c",
+      "source_role": "library",
+      "state": "cached exact raw occurrence only; mathematical_acceptancefalse; origin/author not inferred"
+    },
+    {
+      "path": "GRWTSK/LinearAlgebra/OrientedRealLine/Checks/Negative/MissingCycleCommutativity.lean",
+      "id": "source:GRWTSK/LinearAlgebra/OrientedRealLine/Checks/Negative/MissingCycleCommutativity.lean",
+      "sha256": "a4fcd01e04307ced1e90d006f30f80d6e1e2f3dab75a57eb2dd4f96f03c570dc",
+      "source_role": "negative-control",
+      "state": "cached exact raw occurrence only; mathematical_acceptancefalse; origin/author not inferred"
+    },
+    {
+      "path": "GRWTSK/LinearAlgebra/OrientedRealLine/Checks/Negative/SomeNormalizationToAll.lean",
+      "id": "source:GRWTSK/LinearAlgebra/OrientedRealLine/Checks/Negative/SomeNormalizationToAll.lean",
+      "sha256": "e9642dc4ab8404fd9a76281ea6ffe76a797fff6ef04e2fa981603637dce57e91",
+      "source_role": "negative-control",
+      "state": "cached exact raw occurrence only; mathematical_acceptancefalse; origin/author not inferred"
+    },
+    {
+      "path": "GRWTSK/LinearAlgebra/OrientedRealLine/Checks/Positive/Transport.lean",
+      "id": "source:GRWTSK/LinearAlgebra/OrientedRealLine/Checks/Positive/Transport.lean",
+      "sha256": "1d8db45c31f650dee15e968c4370ec9763c662f1f49472de7a0e3a68ea41c1a0",
+      "source_role": "positive-check",
+      "state": "cached exact raw occurrence only; mathematical_acceptancefalse; origin/author not inferred"
+    },
+    {
+      "path": "GRWTSK/LinearAlgebra/OrientedRealLine/Coherence.lean",
+      "id": "source:GRWTSK/LinearAlgebra/OrientedRealLine/Coherence.lean",
+      "sha256": "d07b9c01284cecb051530b8632c5091f5baa03fe2351ef22b6449f8988c6e11b",
+      "source_role": "library",
+      "state": "cached exact raw occurrence only; mathematical_acceptancefalse; origin/author not inferred"
+    },
+    {
+      "path": "GRWTSK/LinearAlgebra/OrientedRealLine/FiniteComparison.lean",
+      "id": "source:GRWTSK/LinearAlgebra/OrientedRealLine/FiniteComparison.lean",
+      "sha256": "dea9a49d0840a508e06617f12d9e53884c4943da3acd6f50a1df744a37926c38",
+      "source_role": "library",
+      "state": "cached exact raw occurrence only; mathematical_acceptancefalse; origin/author not inferred"
+    },
+    {
+      "path": "GRWTSK/LinearAlgebra/OrientedRealLine/PositiveScale.lean",
+      "id": "source:GRWTSK/LinearAlgebra/OrientedRealLine/PositiveScale.lean",
+      "sha256": "3ef4cca94344171e1fb2807e0c38dc75ca2415bd448401ca5c922d9575548a32",
+      "source_role": "library",
+      "state": "cached exact raw occurrence only; mathematical_acceptancefalse; origin/author not inferred"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ArithmeticGeometry/LogThetaComparison.lean",
+      "id": "source:GRWTSK/NumberTheory/ArithmeticGeometry/LogThetaComparison.lean",
+      "sha256": "4b7ceeefb823bd4447f6c17bc7d0e5ca19b5e6d1d5370f61f77e3780745cbd64",
+      "source_role": "library",
+      "state": "cached exact raw occurrence only; mathematical_acceptancefalse; origin/author not inferred"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/ABCStatement.lean",
+      "id": "source:GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/ABCStatement.lean",
+      "sha256": "f8ddc2bbe7ea1371418118ae26b1ed00200e1a3d19843fd0dfaf34fd29039ef2",
+      "source_role": "library",
+      "state": "cached exact raw occurrence only; mathematical_acceptancefalse; origin/author not inferred"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ExistentialEpsilon.lean",
+      "id": "source:GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ExistentialEpsilon.lean",
+      "sha256": "5e4cd5adda311d5c35591dbce38d5cab4fbdeb241206ea8228b6850d133ccc84",
+      "source_role": "negative-control",
+      "state": "cached exact raw occurrence only; mathematical_acceptancefalse; origin/author not inferred"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/FiniteHeight.lean",
+      "id": "source:GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/FiniteHeight.lean",
+      "sha256": "2f98fb071c35091362cf608a5bc650668bc35d634a01c37a1857fcf3bbddb1ab",
+      "source_role": "negative-control",
+      "state": "cached exact raw occurrence only; mathematical_acceptancefalse; origin/author not inferred"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/FixedEpsilon.lean",
+      "id": "source:GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/FixedEpsilon.lean",
+      "sha256": "afb991f27f806f62785e563a3ba68695306a59ff5f537959ccd9ebabf1e36c3f",
+      "source_role": "negative-control",
+      "state": "cached exact raw occurrence only; mathematical_acceptancefalse; origin/author not inferred"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/MissingSquarefree.lean",
+      "id": "source:GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/MissingSquarefree.lean",
+      "sha256": "1ef6246830c92f69ecad07e3fe7ceaf0aaaf8a087ffacf780b15b4f0f9596569",
+      "source_role": "negative-control",
+      "state": "cached exact raw occurrence only; mathematical_acceptancefalse; origin/author not inferred"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProductForRadical.lean",
+      "id": "source:GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProductForRadical.lean",
+      "sha256": "56dcf14fc866aebc093ce23bef5cc61844a51106f90a3e997706bfaca1fe0c15",
+      "source_role": "negative-control",
+      "state": "cached exact raw occurrence only; mathematical_acceptancefalse; origin/author not inferred"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Positive/TargetPackage.lean",
+      "id": "source:GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Positive/TargetPackage.lean",
+      "sha256": "8ff9ea3fe044f11fba65bc39fcd35327ba7f73c00eba1460c47cb07b4a20ff54",
+      "source_role": "positive-check",
+      "state": "cached exact raw occurrence only; mathematical_acceptancefalse; origin/author not inferred"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Definitions.lean",
+      "id": "source:GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Definitions.lean",
+      "sha256": "585be0c9c3bda1333ddd442d230ad5701e87ef5163c10ec3c1225a5584bfe892",
+      "source_role": "library",
+      "state": "cached exact raw occurrence only; mathematical_acceptancefalse; origin/author not inferred"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/EquivalentForms.lean",
+      "id": "source:GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/EquivalentForms.lean",
+      "sha256": "c090c50d93261d32dca188a9f9d5e448e5143e8460ac4ca82e76f60d85d60293",
+      "source_role": "library",
+      "state": "cached exact raw occurrence only; mathematical_acceptancefalse; origin/author not inferred"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/ExceptionalSet.lean",
+      "id": "source:GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/ExceptionalSet.lean",
+      "sha256": "0783e6ccf1cde3a695a191f41e62087e538105cf2d960950515b36ef38d66af5",
+      "source_role": "library",
+      "state": "cached exact raw occurrence only; mathematical_acceptancefalse; origin/author not inferred"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/NonprimitiveObstruction.lean",
+      "id": "source:GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/NonprimitiveObstruction.lean",
+      "sha256": "4c3b82cc2d5e10d54796281ee54ce09a3a99c50976bf90ada984431b994d2e69",
+      "source_role": "library",
+      "state": "cached exact raw occurrence only; mathematical_acceptancefalse; origin/author not inferred"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/PartialBounds.lean",
+      "id": "source:GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/PartialBounds.lean",
+      "sha256": "048450c9a188c29498524f514417571952a33c5dc4f31cf4c66588b463ae09d7",
+      "source_role": "library",
+      "state": "cached exact raw occurrence only; mathematical_acceptancefalse; origin/author not inferred"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Radical.lean",
+      "id": "source:GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Radical.lean",
+      "sha256": "f13e0f8fb20c37f3257a95d30c020a9dce2a364844d815fa86bd7dc9518898ea",
+      "source_role": "library",
+      "state": "cached exact raw occurrence only; mathematical_acceptancefalse; origin/author not inferred"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Signed.lean",
+      "id": "source:GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Signed.lean",
+      "sha256": "68c3594c3651ae42746c6188c698e737f63e3da241e3f4c0011dc7cfa3750bc4",
+      "source_role": "library",
+      "state": "cached exact raw occurrence only; mathematical_acceptancefalse; origin/author not inferred"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Polynomial/Checks/Negative/IntegerTransfer.lean",
+      "id": "source:GRWTSK/NumberTheory/Polynomial/Checks/Negative/IntegerTransfer.lean",
+      "sha256": "50213fdfbf0ef92cb0aa7e4c4f920fe195fa77e7ce0a5c8424a91a8544038971",
+      "source_role": "negative-control",
+      "state": "cached exact raw occurrence only; mathematical_acceptancefalse; origin/author not inferred"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Polynomial/Checks/Positive/DerivativeRadicalBound.lean",
+      "id": "source:GRWTSK/NumberTheory/Polynomial/Checks/Positive/DerivativeRadicalBound.lean",
+      "sha256": "d6cd9261534e006b9937af416016d61716f262fa54834f8ad139c0a818fa8e87",
+      "source_role": "positive-check",
+      "state": "cached exact raw occurrence only; mathematical_acceptancefalse; origin/author not inferred"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Polynomial/DerivativeRadicalBound.lean",
+      "id": "source:GRWTSK/NumberTheory/Polynomial/DerivativeRadicalBound.lean",
+      "sha256": "d64986ebd31dbde798daa311de4cb296f0d8f7186fe0113070804e8f00815ad1",
+      "source_role": "library",
+      "state": "cached exact raw occurrence only; mathematical_acceptancefalse; origin/author not inferred"
+    }
+  ],
+  "other_source_count": 27,
+  "all_cache_source_authority": "unknown-unreplayed; mathematical_acceptancefalse",
+  "root_cleanup_scope": "All old6k+ relocations and shared checker/documentation changes preserved; no root/evidence/cache/scripts/.local recreation by this worker."
+}

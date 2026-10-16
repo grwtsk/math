@@ -1,0 +1,373 @@
+{
+  "schema": "grwtsk.source-review.v1",
+  "task": "schedule-reduction-source-scout",
+  "reviewer": "cache_taxonomy",
+  "subject": "NumberTheory/Cyclotomic actual omega/lambda reduction and ramified ideal in third cyclotomic integers",
+  "review_scope": "Bounded full final library/positive/negative source premise/control/credit comparison. Correlated same-team model/source review only, not independent validation, proof admission or policy authority.",
+  "native_validation": {
+    "status": "NOT_RUN",
+    "owner": "root",
+    "scope": "No scout native jobs. Author development and root fresh full owned/transitive/generated admission are separate receipts; no transfer from a citation, snapshot, namespace or toolchain."
+  },
+  "source_context": {
+    "path": ".local/schedule-reduction-source-scout/b3041caba0af462da6eb9a5e40fc8267/review-context.json",
+    "sha256": "48c2340472bcc2626e9f357fbc5463adb98f8e7cb0d77161450e9304b6d0fa59"
+  },
+  "OpenAI_primary_sources": [
+    {
+      "repository": "openai/math",
+      "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "path": "lean/OAI/NumberTheory/DirichletL/GaussSum/FiniteFourier.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/GaussSum/FiniteFourier.lean",
+      "archive": ".local/schedule-reduction-source-scout/b3041caba0af462da6eb9a5e40fc8267/openai-FiniteFourier.lean",
+      "sha256": "0e8e4184de91161a75802e3a26abfd19a322dffa6441968bf9caeb25800b5d7c",
+      "git_blob": "06304e1efc036727b3fa27e37dd6a06ce0bf5e56",
+      "bytes": 59918
+    },
+    {
+      "repository": "openai/math",
+      "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "path": "lean/OAI/NumberTheory/DirichletL/Arithmetic/IdealMobius.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/Arithmetic/IdealMobius.lean",
+      "archive": ".local/schedule-reduction-source-scout/b3041caba0af462da6eb9a5e40fc8267/openai-IdealMobius.lean",
+      "sha256": "dd0ae071b0bdb5746fa6362de83aa86a4ee4462810a7fdbc72f0af95b5887675",
+      "git_blob": "6c1098ed3f3018397fd965d6a250db7092e86de7",
+      "bytes": 27207
+    }
+  ],
+  "OpenAI_license": {
+    "repository": "openai/math",
+    "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+    "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/LICENSE",
+    "license": "Apache-2.0",
+    "git_blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+    "path": ".local/schedule-reduction-source-scout/b3041caba0af462da6eb9a5e40fc8267/openai-LICENSE",
+    "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "bytes": 11357
+  },
+  "OpenAI_actual_comparison": {
+    "source_anchors": {
+      "ActualCubicChar.cubic_roots_surjective": 377,
+      "ActualCubicChar.cubic_roots_equiv": 391,
+      "ActualCubicChar.euler_jacobi_sum_zero": 406,
+      "ActualCubicChar.euler_to_roots": 429,
+      "ActualCubicChar.cubicResidueChar": 441,
+      "ActualCubicChar.cubicResidueChar_reduce_unit": 449,
+      "ActualCubicChar.cubicResidueChar_pow_three": 465,
+      "ActualEisensteinCubic.K": 487,
+      "O": 488,
+      "omega": 493,
+      "lambda": 496,
+      "omega_primitive": 504,
+      "omega_reduced_primitive": 529,
+      "card_sub_one_div_three": 553,
+      "cubicChar": 566,
+      "cubicChar_reduce": 578,
+      "cubicChar_pow_three": 608,
+      "cubicChar_ne_one": 623,
+      "cubicChar_order": 648,
+      "cubicJacobi_primary": 656,
+      "cubicJacobi_mem_prime": 670,
+      "cubicJacobi_generates_prime": 1061,
+      "cubicJacobi_exists_primary_generator": 1092,
+      "CompletedGauss.primaryPrime_in_Arithmetic_IdealMobius": 205
+    },
+    "premises": "Actual O=RingOfIntegers(CyclotomicField3 Q); omega actual zeta_spec.toInteger; lambda=omega-1; actual maximal P AND lambda notinP are required. Field/Fintype quotient and order3 reduction are actual suppliers to the original cubicChar.",
+    "next_original_supplier": "Construct actual rootsOfUnity equivalence through quotient, exponent map of unit u to u^((cardF-1)/3), inverse root lift, MulChar.ofUnitHom; prove actual reduction/pow/order. Original private helpers441 etc are source bytes, not local declarations/admission. Jacobi primary/generation/three-part primary-generator witness and original coefficients remain separate OPEN.",
+    "normalization": "Actual chosen primitive cube root from zeta_spec; no selected complex embedding orientation or total field equivalence asserted. lambda sign and original Jacobi=-p/lambda² divisibility retained.",
+    "toolchains": "Upstream Lean4.34.1 vs local Lean4.33.0/Mathlibdb584; source identity gives no toolchain or proof acceptance transfer."
+  },
+  "pinned_Mathlib_sources": [
+    {
+      "repository": "leanprover-community/mathlib4",
+      "pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "path": "Mathlib/NumberTheory/NumberField/Cyclotomic/Ideal.lean",
+      "archive": ".local/schedule-reduction-source-scout/b3041caba0af462da6eb9a5e40fc8267/Mathlib__NumberTheory__NumberField__Cyclotomic__Ideal.lean",
+      "sha256": "46ac69c6ea3635f12ff5b8fc8e1ff393e2b270cd0726acf8b02d53ff2ff568c6",
+      "git_blob": "ed1f884df164bea0eadc723ece2ef8b5553e95cf",
+      "bytes": 20653,
+      "header": [
+        "/-",
+        "Copyright (c) 2025 Xavier Roblot. All rights reserved.",
+        "Released under Apache 2.0 license as described in the file LICENSE.",
+        "Authors: Xavier Roblot",
+        "-/",
+        "module",
+        "",
+        "public import Mathlib.NumberTheory.NumberField.Cyclotomic.Basic",
+        "public import Mathlib.NumberTheory.NumberField.Ideal.KummerDedekind",
+        "public import Mathlib.RingTheory.Polynomial.Cyclotomic.Factorization",
+        "public import Mathlib.RingTheory.RootsOfUnity.CyclotomicUnits",
+        "",
+        "/-!",
+        "# Ideals in cyclotomic fields"
+      ]
+    },
+    {
+      "repository": "leanprover-community/mathlib4",
+      "pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "path": "Mathlib/RingTheory/RootsOfUnity/PrimitiveRoots.lean",
+      "archive": ".local/schedule-reduction-source-scout/b3041caba0af462da6eb9a5e40fc8267/Mathlib__RingTheory__RootsOfUnity__PrimitiveRoots.lean",
+      "sha256": "d9e1f834ca3dbaa0dbce303d2e4216d9bfb8dff45860e7fe3a6fcff9418bc328",
+      "git_blob": "dbe8ecc7c6226a752b541d520b9631ab7cd89095",
+      "bytes": 40326,
+      "header": [
+        "/-",
+        "Copyright (c) 2024 Michael Stoll. All rights reserved.",
+        "Released under Apache 2.0 license as described in the file LICENSE.",
+        "Authors: Johan Commelin",
+        "-/",
+        "module",
+        "",
+        "public import Mathlib.Data.Nat.Factorization.LCM",
+        "public import Mathlib.Algebra.Group.TypeTags.Finite",
+        "public import Mathlib.RingTheory.RootsOfUnity.Basic",
+        "",
+        "/-!",
+        "# Primitive roots of unity",
+        ""
+      ]
+    }
+  ],
+  "Mathlib_actual_comparison": {
+    "Cyclotomic_Ideal": {
+      "isPrime_span_zeta_sub_one": 59,
+      "associated_norm_zeta_sub_one": 64,
+      "absNorm_span_zeta_sub_one": 83,
+      "span_zeta_sub_one_ne_bot": 91,
+      "premises": "Actual NumberField K, p prime, IsCyclotomicExtension {p^(k+1)} Q K, hζ primitive p^(k+1); new local p3,k0 application supplies these; no new generic ramification theorem claimed."
+    },
+    "PrimitiveRoots": {
+      "mk_of_lt": 107,
+      "ne_one": 135,
+      "eq_orderOf": 215,
+      "limit": "Existing API reused. Source read alone is not native replay of new quotient theorem."
+    }
+  },
+  "individual_credits": {
+    "OpenAI": "No individual author header in selected original files. Credit exact pinned openai/math source and existing declaration names; do not invent personal authorship. Original definitions/proof adaptation preserve Apache2 terms.",
+    "Mathlib": "Xavier Roblot, Cyclotomic/Ideal; Michael Stoll copyright and Johan Commelin Authors in PrimitiveRoots. Prior actual number-field/cyclotomic/norm imports retain Riccardo Brasca, Ashvni Narayanan, Anne Baanen, Alex J. Best and all original contributors; Apache2.",
+    "local": "Human mathematical direction R.A. Jacob Martone; OpenAI Codex formalization/adaptation assistance, exact source/header terms retained."
+  },
+  "actual_Anthropic_primary": {
+    "repository": "anthropics/formal-math",
+    "pin": "e1a4e6508154ea59f030480661590a9fe3018011",
+    "path": "3sum-apsp/ThreeSumApsp/Lang/Logic.lean",
+    "url": "https://raw.githubusercontent.com/anthropics/formal-math/e1a4e6508154ea59f030480661590a9fe3018011/3sum-apsp/ThreeSumApsp/Lang/Logic.lean",
+    "archive": ".local/schedule-reduction-source-scout/b3041caba0af462da6eb9a5e40fc8267/anthropics-Logic.lean",
+    "sha256": "859a2842fc684b359d819d0181e0143e8d6576c70f4be725f3a830947bdeb4ee",
+    "git_blob": "508e2040014eeadd11b6a8e1dd68463a9db8fe44",
+    "bytes": 13979
+  },
+  "Anthropic_comparison": {
+    "source_anchors": {
+      "Exec.append": 62,
+      "Ends": 78,
+      "Ends.mono": 83,
+      "Ends.append": 89,
+      "Ends.seq": 107
+    },
+    "actual_statement_scope": "Exec/Ends use their actual program/state/limits/call-depth/time-cost semantics. Ends.seq composes actual executions with T1+T2<=T. Ends.append extends procedure lists.",
+    "limits": "No actual prefix dictionary/checkpoint/slot-remap/ideal reduction/cyclotomic coefficient theorem in inspected source; no program-language-to-our-codec or IO refinement inferred.",
+    "bounded_filename_search": {
+      "tree": ".local/external-math/anthropic/e1a4e6508154ea59f030480661590a9fe3018011/formal-math-tree.json",
+      "sha256": "01c7743b24df9d0dd6c165d47751b7ece26cd203f241736a0840deabd34acdb5",
+      "truncated": false,
+      "query": "case-insensitive ideal|cyclotomic|numberfield|eisenstein in .lean PATHS only",
+      "matches": [],
+      "absence_limit": "Zero filename matches is not a corpus-body absence or novelty assertion."
+    }
+  },
+  "arxiv_context": {
+    "authors": [
+      "Johann Christian Stumpenhusen"
+    ],
+    "title": "Perfect Eisenstein integers",
+    "version": "2208.06617v1",
+    "submitted_version_utc": "2022-08-13T10:23:17Z",
+    "url": "https://arxiv.org/pdf/2208.06617v1",
+    "license": "CC-BY-NC-SA-4.0; citation/paraphrase only, no code copy",
+    "archive": {
+      "path": ".local/batch-ideals-source-scout/5ca3a08525d84de086556415c0d0b6a5/stumpenhusen-2208.06617v1.pdf",
+      "sha256": "93f0b6c4dd902f78f63b19a34f1a48793169e5a9f8cb4d84eda09a302d01edd3",
+      "bytes": 279606
+    },
+    "fresh_primary_web_read_utc": "2026-10-16T01:13:36.145210+00:00",
+    "bounded_sections": [
+      "3.2 Definition3.9 and following norm/quotient paragraph, PDFpages9-11"
+    ],
+    "comparison": "Paper uses embedded omega=exp(2pi i/3), Z[omega] with norm a²-ab+b², minimal-prime associate1-omega² and quotient Z/3Z. This is literature context for ramified prime, not literal Lean alias/quotient/norm identification or original cubic Jacobi theorem. Element norm vs ideal absNorm remain distinguished."
+  },
+  "normalization_and_limits": [
+    "Original omega is actual zeta_spec3QK.toInteger and lambda=omega-1. No arbitrary root/ideal/lambda fixture substitutes for actual source objects. Chosen complex embedding orientation is not asserted from this abstract root construction.",
+    "Maximality is retained together with good-prime exclusion for order3 reduction; ramified maximal ideal shows why maximality alone cannot discharge exclusion. Quotient primitive order3 is not merely cube=1.",
+    "Mathlib already supplies actual prime/norm facts for primitive prime-power root minus1. Local concrete p3,k0 consumer is not a new general cyclotomic ramification theorem. Element algebraic norm, ideal absNorm and quotient cardinal are not interchangeable without actual bridge.",
+    "Arxiv uses complex omega and minimal-prime associate1-omega², not literally the Lean lambda name/quotient/ring. Its norm and Z/3Z context gives no proof of local quotient or Jacobi theorem. No whole-paper perfect-number results transferred.",
+    "No actual cubic/sextic character/Jacobi/three-part primary generator/coefficient/Gauss or common finite completed support admission from this reduction slice. Original good-prime cubicChar566 depends on actual roots-of-unity inverse-lift construction441, not an assumed character.",
+    "Original Arithmetic/IdealMobius.lean path retained; current reduction alone does not close original primaryPrime205/normalizedFactors generator/weights/correction/mask/commonS ALLt/interchange, stronger twist Schwartz/polynomial-frequency estimates, global bounds/Hecke/calibration/detector/RH.",
+    "Preserve upstream Lean4.34.1 versus localLean4.33.0/Mathlibdb584; exact source provenance/author credit does not imply same proof objects or native admission."
+  ],
+  "custody_preserved": {
+    "path": "cache/coordination/events/checkpoint-cyclotomic-concurrent-integration-2026-10-15.json",
+    "sha256": "d44b490d39d1503f8c13bb48cd789082cd57808c2a3b0347e53ee7b6bab87474",
+    "bytes": 10380
+  },
+  "custody_summary": "13 incoming archive files; stale candidate177a62837b0e451aa8f0d3622930e05714efb7d4d299f658d18903dc16a805fa vs receipt/inventoryc96f37de10091a243679c3f86d9cbf6a8312347a7278c6157221e94e9e2f20b4;8 absentrefs;3 inert candidates nativeNOT_RUN. Original ReciprocalClosedTriadicFluxUpper/RH OPEN; no rebind/admission.",
+  "created_utc": "2026-10-16T01:21:49.251966+00:00",
+  "author_freeze": {
+    "path": "cache/coordination/events/third-reduction-source-freeze-376ad312300f44e6b62266593fcc919f.json",
+    "sha256": "0faf158c0caa3174afa95e73d19f22ad6848a4827a396510b748e543994c9660",
+    "bytes": 1725
+  },
+  "local_sources": [
+    {
+      "path": "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicReduction.lean",
+      "sha256": "05a44d8f4c4b254cf27e9df2a3b8f83081d9cb6288808e0be1d2694a81a2f3b6",
+      "bytes": 6337,
+      "archive": ".local/schedule-reduction-source-scout/b3041caba0af462da6eb9a5e40fc8267/frozen-GRWTSK__NumberTheory__Cyclotomic__ThirdCyclotomicReduction.lean",
+      "anchors": {
+        "omega": 26,
+        "lambda": 27,
+        "omega_primitive": 29,
+        "lambda_ne_zero": 32,
+        "omega_reduced_primitive": 35,
+        "ramifiedIdeal": 58,
+        "lambda_prime": 60,
+        "ramifiedIdeal_absNorm": 63,
+        "ramifiedIdeal_isPrime": 71,
+        "ramifiedIdeal_ne_zero": 75,
+        "ramifiedIdeal_isMaximal": 81,
+        "ramifiedIdeal_proper": 84,
+        "lambda_mem_ramifiedIdeal": 86,
+        "three_mem_ramifiedIdeal": 88,
+        "two_not_mem_ramifiedIdeal": 92,
+        "omega_ramified_eq_one": 98,
+        "omega_ramified_not_primitive": 103,
+        "exists_good_maximal_above_two": 108,
+        "ramified_primary_generator_obstruction": 126
+      }
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Positive/ThirdCyclotomicReduction.lean",
+      "sha256": "68f8f43dcc5c166774ae4abcf6d75e527ac9a79dccb8d574caef7c390ffcf95b",
+      "bytes": 3020,
+      "archive": ".local/schedule-reduction-source-scout/b3041caba0af462da6eb9a5e40fc8267/frozen-GRWTSK__NumberTheory__Cyclotomic__Checks__Positive__ThirdCyclotomicReduction.lean",
+      "anchors": {
+        "actual_omega_cube": 8,
+        "actual_omega_not_one": 9,
+        "actual_lambda_nonzero": 10,
+        "actual_ramified_norm": 11,
+        "actual_ramified_good_condition_counter": 14,
+        "actual_ramified_quotient_card": 21,
+        "actual_three_reduces_zero": 24,
+        "actual_two_not_ramified": 27,
+        "actual_good_reduction_nonvacuous": 30,
+        "actual_good_order_nonvacuous": 38,
+        "actual_ramified_not_good": 44,
+        "actual_lambda_generator_not_primary": 49,
+        "actual_no_ramified_primary_generator": 53
+      }
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Negative/ThirdCyclotomicMissingGoodPrime.lean",
+      "sha256": "14527265f71696aa97da8f12239422816bb8ada7f8add5343613dee8426cfb06",
+      "bytes": 647,
+      "archive": ".local/schedule-reduction-source-scout/b3041caba0af462da6eb9a5e40fc8267/frozen-GRWTSK__NumberTheory__Cyclotomic__Checks__Negative__ThirdCyclotomicMissingGoodPrime.lean",
+      "anchors": {}
+    }
+  ],
+  "additional_pinned_Mathlib_supplier": {
+    "repository": "leanprover-community/mathlib4",
+    "pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "path": "Mathlib/NumberTheory/NumberField/Cyclotomic/Basic.lean",
+    "archive": {
+      "path": ".local/schedule-reduction-source-scout/b3041caba0af462da6eb9a5e40fc8267/Mathlib__NumberTheory__NumberField__Cyclotomic__Basic.lean",
+      "sha256": "18abf3d6096a8a2497eeaeb55ea605371076496805dc528f34c0bc66c149ef2b",
+      "bytes": 51122
+    },
+    "git_blob": "782aa0ba644efb520bc7ae619489ae574ece2aa8",
+    "header": [
+      "/-",
+      "Copyright (c) 2022 Riccardo Brasca. All rights reserved.",
+      "Released under Apache 2.0 license as described in the file LICENSE.",
+      "Authors: Riccardo Brasca",
+      "-/",
+      "module",
+      ""
+    ],
+    "anchors": {
+      "IsPrimitiveRoot.zeta_sub_one_prime_prime_variant": 310,
+      "toInteger_sub_one_not_dvd_two": 536
+    },
+    "scope": "Actual prime specialization and nondivisibility API; prior generic mathlib suppliers reused, not newly claimed general results."
+  },
+  "source_API_anchor_additions": {
+    "Cyclotomic_Ideal_same_hash_as_context": {
+      "isPrime_span_zeta_sub_one_prime_variant": 187,
+      "two_not_mem_span_zeta_sub_one_prime_variant": 193
+    },
+    "comment": "Source context recorded existing generic prime-power59/norm83 and prime-sourceBasic310; actual local current source consumes primed prime3 instance187 and not-two193. Exact same bytes; raw line anchors recorded explicitly, no source-status rebind."
+  },
+  "exact_scope": [
+    {
+      "local_anchors": "omega26/lambda27/omega_primitive29/lambda_ne_zero32",
+      "statement": "Actual previous K=CyclotomicField3Q and O=RingOfIntegersK; omega literal zeta_spec3QK.toInteger, lambda=omega-1. Primitive order3 and lambda!=0 are actual proofs.",
+      "source_match": "OpenAI FiniteFourier493-505 exact definitions and primitive theorem; imported ThirdCyclotomicIdeals provides actual ring/instance context. No arbitrary stand-in constants."
+    },
+    {
+      "local_anchors": "omega_reduced_primitive35-56",
+      "statement": "For actual maximal P and lambda∉P, actual Ideal.Quotient.mk P omega is primitive3 in O/P.",
+      "source_match": "Actual upstream529-551 proof adapted with same quotient field/ring hom, cube map equation, non-one from excluded lambda, and l=1/2 check. Domain/codomain/premises preserved. No claim maximality alone or mere cube relation supplies order3."
+    },
+    {
+      "local_anchors": "ramifiedIdeal58/lambda_prime60/absNorm63/isPrime71/ne_zero75/isMaximal81/proper84/membership86-92",
+      "statement": "Actual ideal span{lambda}, actual Prime lambda, ideal absNorm3, prime/nonzero/maximal/proper, lambda and3 membership and2 nonmembership.",
+      "source_match": "Actual pinned Mathlib prime-power root norm theorem with p3,k0 and concrete actual cyclotomic instance; primed3 ideal primality and nondivisibility APIs. No new general ramification theorem or unrelated integer ideal substitution."
+    },
+    {
+      "local_anchors": "omega_ramified_eq_one98/not_primitive103",
+      "statement": "Actual quotient root collapses to1 and is not primitive3. Maximality/fieldhood do not discharge missing good-prime exclusion.",
+      "proof_boundary": "Derives quotient equation from actual lambda membership; applies primitive.ne_one to actual equals1. Counter proof is actual positive/library theorem, not mere negative compiler failure."
+    },
+    {
+      "local_anchors": "exists_good_maximal_above_two108-123",
+      "statement": "Genuine actual maximal P exists with2∈P andlambda∉P.",
+      "proof_boundary": "Actual principal2 absNorm4 proves its ideal proper; take actual maximal ideal above it. lambda membership would put3 inP; subtract2 gives1 and contradicts properness. This proves nonvacuity without an assumed good-prime oracle. Does not identify a canonical prime/factorization or quotient cardinal at2."
+    },
+    {
+      "local_anchors": "ramified_primary_generator_obstruction126-141",
+      "statement": "No actual p:O with ramifiedIdeal=span{p} andlambda²∣p-1.",
+      "proof_boundary": "p∈P andlambda²∈P givep-1∈P, hence1∈P contradicting actual properness. Actual ramified ideal is used. This obstruction does not deny existence of an unnormalized principal generator or replace the original good-prime Jacobi witness."
+    }
+  ],
+  "controls": [
+    {
+      "anchors": "positive8-27",
+      "actual_statements": "Actual source rootcube1/non-one/lambda-nonzero; actual ramified norm3 and maximal/nonzero/proper/lambda-membership/rootcollapse/nonprimitive conjunction. actual_ramified_quotient_card21 derives Nat.card(O/P)=3 from actual absNorm/quotient-card bridge;3 reduces0,2 outside actual ramified ideal.",
+      "boundary": "This actual quotient-card producer is a control declaration, not assumed as arbitrary finite field/cardinality fixture."
+    },
+    {
+      "anchors": "positive30-42",
+      "actual_statements": "Actual exists_good_maximal_above_two witness followed by actual omega_reduced_primitive; actual nonvacuous quotient root order3 viaeq_orderOf. No arbitrary good-prime hypothesis inserted as fixture."
+    },
+    {
+      "anchors": "positive44-56",
+      "actual_statements": "Actual ramified good-exclusion false, lambda generator fails lambda² divisibility, and full no-normalized-generator theorem consumed."
+    },
+    {
+      "anchors": "negative8-9",
+      "intended_failure": "Passes actual ramifiedIdeal_isMaximal where omega_reduced_primitive requires lambda∉ramifiedIdeal. Complete actual ramified root=1/nonprimitive proof is in library and accepted positive source before this sole intended type mismatch. No acceptance derived from source-only compiler outcome."
+    }
+  ],
+  "finding": {
+    "actionable_omission_observed": false,
+    "scope": "Bounded full current final3 source reading, source-to-primary proof/premise comparison and controls. Correlated source review, no independent validation or exhaustive defect absence.",
+    "future_gate": "Actual original good-prime cubic residue character construction and actual reduction/pow/order, source377-477/553-654; Jacobi/primary-generator/weights/common support remain separate OPEN."
+  },
+  "prior_exact_review": {
+    "path": "evidence/NumberTheory/Cyclotomic/third-cyclotomic-ideals-source-review-2026-10-15.json",
+    "sha256": "0f21b2241dab5eb7199f5099fac8fd78a9bcdb6513451799272160872893dbdd",
+    "bytes": 14269
+  },
+  "preservation": "No source/registry/docs/native/Git/remote edits. Preserve failed/stale oldsourcevariants/receipts/paths/anchors, source-gap contexts and exact incoming custody. Current author freeze claims only own development; root fresh admission remains separate."
+}

@@ -1,0 +1,242 @@
+{
+  "schema": "repository-agent-event-v1",
+  "at": "2026-10-16T01:38:17.875246+00:00",
+  "event": "original-native-checked-migrated-integration-pending",
+  "selected": [
+    {
+      "source": {
+        "path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableSchedule.lean",
+        "sha256": "b1d8a0ea8bbdcc83f9453e35328bce854f8bddd857260527c601292f141c2c4f"
+      },
+      "original_receipt_path": "evidence/Combinatorics/DirectedGraph/prefix-compaction-schedule-checks-2026-10-15.json",
+      "native_receipt_current_location": {
+        "path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-compaction-schedule-checks-2026-10-15.json",
+        "sha256": "9c92d39a63c2b084b26044a801f39f4fd2d14d1bdea12c5f8c1927821e3ff256"
+      },
+      "integration_current_location": {
+        "path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-compaction-schedule-integration-2026-10-15.json",
+        "sha256": "d64ef1864fcd5ed9819a77c79c50ce063271f4b7acff878b70ca86d61188466d"
+      },
+      "owned_declarations_in_selected_closure": 925,
+      "selected_library_owned_count": 22,
+      "owned_modules": [
+        {
+          "declarations": 52,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding"
+        },
+        {
+          "declarations": 18,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences"
+        },
+        {
+          "declarations": 46,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.EdgeTrace"
+        },
+        {
+          "declarations": 21,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix"
+        },
+        {
+          "declarations": 34,
+          "module": "GRWTSK.Logic.FiniteSequences.IndexedDictionary"
+        },
+        {
+          "declarations": 33,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixInventory"
+        },
+        {
+          "declarations": 78,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.ParentTraceDictionary"
+        },
+        {
+          "declarations": 32,
+          "module": "GRWTSK.Logic.FiniteSequences.DictionaryRevision"
+        },
+        {
+          "declarations": 27,
+          "module": "GRWTSK.Logic.FiniteSequences.DecisionCertificate"
+        },
+        {
+          "declarations": 26,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.RootedTraceRevision"
+        },
+        {
+          "declarations": 20,
+          "module": "GRWTSK.Logic.FiniteSequences.IncrementalDictionary"
+        },
+        {
+          "declarations": 58,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.IncrementalPrefixTable"
+        },
+        {
+          "declarations": 87,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableState"
+        },
+        {
+          "declarations": 36,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCompaction"
+        },
+        {
+          "declarations": 85,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.RoleRelationTable"
+        },
+        {
+          "declarations": 60,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.RoleRelationReindex"
+        },
+        {
+          "declarations": 44,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableReindex"
+        },
+        {
+          "declarations": 19,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableUpdateReindex"
+        },
+        {
+          "declarations": 27,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableBatch"
+        },
+        {
+          "declarations": 14,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCheckpoint"
+        },
+        {
+          "declarations": 22,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableSchedule"
+        },
+        {
+          "declarations": 86,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableSchedule"
+        }
+      ],
+      "original_native_outcome": "PASS",
+      "all_mathematical_source_hashes_still_exact": true,
+      "relocated_or_changed_operational_inputs": [
+        {
+          "original_path": "scripts/check_prefix_table_schedule.py",
+          "original_sha256": "a159f07748fd1cf537901aa0ea2be4c3cefeb0e012e0a715a02da64d2fbe8e59",
+          "physical_path_observed": ".noeaaeue/scripts/check_prefix_table_schedule.py",
+          "current_sha256": "855e13bca3cf3c7681038aae7af1283f7013427248e6140050ebbf52291ae282"
+        },
+        {
+          "original_path": "scripts/check_math_trust.py",
+          "original_sha256": "069ca265038960243890b1c4e028637723ddc440854864a61648eb2b2fd99c9d",
+          "physical_path_observed": ".noeaaeue/scripts/check_math_trust.py",
+          "current_sha256": "579b8608ae7cdfa9244d4b46d1e3f87903a84b7166eae62d7a9c831c6010b123"
+        }
+      ],
+      "current_migrated_context_replay": "NOT_RUN",
+      "canonical_public_library_integration": "PENDING_SHARED_MIGRATION",
+      "exact_contracts": [
+        "Action is standard Sum(actual keyed rooted occurrence batch)Unit; ValidRootedState only adds actual structural WellFormed proof to existing RootedState fiber. No replacement State/path or desired decoding equation is introduced.",
+        "Noncomputable applyAction invokes actual PrefixTableBatch.step or PrefixTableCheckpoint.compactAt with their proved invariant. executeAt is the actual chronological List.foldl; execute exposes the existing State. execute_root and execute_wellFormed derive actual retained root and invariant, and execute_nil is exact identity.",
+        "projectBatches actually erases compact actions with List.filterMap, keeping batch order and empty batches. decode_executeAt derives actual Option decoded full rows = original decoded rows ++ chronological flatMap traceRows of projected batches. decode_execute identifies actual checked histories with existing Batch.run(projectedBatches); execute_histories exposes that exact old-plus-new law.",
+        "The actual producers and proofs require initial WellFormed and DecidableEq of full typed tags; no independent Key/vertex equality, finite vertex assumption or generic cache authority. Root is retained separately even with no actual rows."
+      ],
+      "accepted_original_controls": [
+        "Independent actual Bool parallel-loop fixture has beforeD=[[falseTag],[],[trueTag]], old real refs[(11,0),(11,0)], valid exact cells/old actual paths. First actual compact gives afterD=[[],[falseTag]],refs1twice, and actual oldtrue slot2 partialremapNone.",
+        "Actual parallel batch reintroduces trueTag at postslot2, giving postD=[[],[falseTag],[trueTag]], refs[(11,1),(11,1),(12,2)]. Actual after.dictionary prefix of actual post.dictionary proves old retained numeric slots are stable across this append-only hop.",
+        "Actual schedule actions=[compact,batch parallelRows,compact] has scheduled actual producer=compact post postWF. Its recovered actual rows are false,false,true. Final inventory/D=[[falseTag],[],[trueTag]], actual finalrefs[(11,0),(11,0),(12,2)], invariant and exact checked histories are proved; original/final D lists actually match.",
+        "Concrete composedLookup uses actual remap before beforeWF 2 then actual remap post postWF at the retained intermediate slot. First mapping is None, so compositionNone. directLookup actually reads before.D[2]?, checks full payload membership in actual scheduled.D and actual idxOf; direct_lookup_some provesSome2. actual_partial_remap_composition_failure proves inequality before the negative, despite matching old/final dictionaries.",
+        "Empty schedule exact State identity; repeated compact-only schedule retains old actual decode. Mixed repeated checkpoints, internal empty batch, repeated keyed rows and chronological batch order yield exact full histories. Actual distinct Bool roots remain distinct even after compact-only schedules.",
+        "Sole intended negative supplies direct_lookup_some:directLookup=Some2 to goal composedLookup=Some2, rejecting unjustified direct/composed partial-remap substitution."
+      ],
+      "remaining_mathematical_limits": [
+        "Initial structural WellFormed and full-tag DecidableEq are required. Erased-batch equality concerns actual rooted checked histories, not raw dictionaries/nodes/realrefs or numeric slots across compact actions.",
+        "Matching original/final dictionaries and a reintroduced matching full payload do not imply composition of prior partial remaps. No generic cumulative map/totality, tracked old-reference transport or raw reindex/compaction commutation is proved.",
+        "No new own-pack certificate criterion/evidence, automatic appended-row predicate inheritance, byte optimality, runtime parser/JSON/hash/IO/refinement, source/permission authority or taxonomy duplicate-edge guard change."
+      ]
+    },
+    {
+      "source": {
+        "path": "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicReduction.lean",
+        "sha256": "05a44d8f4c4b254cf27e9df2a3b8f83081d9cb6288808e0be1d2694a81a2f3b6"
+      },
+      "original_receipt_path": "evidence/NumberTheory/Cyclotomic/third-cyclotomic-reduction-checks-2026-10-15.json",
+      "native_receipt_current_location": {
+        "path": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-reduction-checks-2026-10-15.json",
+        "sha256": "b8513f9b4fcf1ca19a59f893e72787e1e59c3b7eceae800b73df4fa8115658b2"
+      },
+      "integration_current_location": {
+        "path": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-reduction-integration-2026-10-15.json",
+        "sha256": "72e559b2a288c286f5c7139afc731640d34eca1bae04884567925ce167723be6"
+      },
+      "owned_declarations_in_selected_closure": 57,
+      "selected_library_owned_count": 28,
+      "owned_modules": [
+        {
+          "declarations": 3,
+          "module": "GRWTSK.NumberTheory.Ideal.CompactNormSupport"
+        },
+        {
+          "declarations": 13,
+          "module": "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicIdeals"
+        },
+        {
+          "declarations": 28,
+          "module": "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicReduction"
+        },
+        {
+          "declarations": 13,
+          "module": "GRWTSK.NumberTheory.Cyclotomic.Checks.Positive.ThirdCyclotomicReduction"
+        }
+      ],
+      "original_native_outcome": "PASS",
+      "all_mathematical_source_hashes_still_exact": true,
+      "relocated_or_changed_operational_inputs": [
+        {
+          "original_path": "scripts/check_third_cyclotomic_reduction.py",
+          "original_sha256": "2d91f2242c90dc174de54622f9088fc6861378cb4ce6eab03a75f04b42128c59",
+          "physical_path_observed": ".noeaaeue/scripts/check_third_cyclotomic_reduction.py",
+          "current_sha256": "3f889b1e60e2b520e48fdf145c0ffb948dc30a575839d8df5da608be3f9417db"
+        },
+        {
+          "original_path": "scripts/check_math_trust.py",
+          "original_sha256": "069ca265038960243890b1c4e028637723ddc440854864a61648eb2b2fd99c9d",
+          "physical_path_observed": ".noeaaeue/scripts/check_math_trust.py",
+          "current_sha256": "579b8608ae7cdfa9244d4b46d1e3f87903a84b7166eae62d7a9c831c6010b123"
+        }
+      ],
+      "current_migrated_context_replay": "NOT_RUN",
+      "canonical_public_library_integration": "PENDING_SHARED_MIGRATION",
+      "exact_contracts": [
+        "Use exact admitted K=CyclotomicField3ℚ and O=NumberField.RingOfIntegers K. Actual omega=(IsCyclotomicExtension.zeta_spec3ℚK).toInteger and lambda=omega-1; actual omega is primitive order3 and lambda is nonzero.",
+        "Exact good reduction: for every actual ideal P of O with P.IsMaximal and lambda∉P, Ideal.Quotient.mk P omega is primitive order3. Actual local quotient field, cube equation and nonidentity are proved; no desired quotient primitive-root supplier is assumed.",
+        "Actual ramifiedIdeal=Ideal.span{lambda}. The actual lambda element is prime; the actual ideal is prime, nonzero, maximal, proper and has actual Ideal.absNorm3, by pinned Mathlib cyclotomic norm/prime suppliers and actual number-ring instances.",
+        "lambda belongs to this ideal,3 belongs and2 does not. The actual quotient image of omega is1; it is not primitive3. Thus actual maximality alone cannot replace the good-prime exclusion.",
+        "Actual good maximal nonvacuity: ideal(2) is proper because its admitted norm is4. Choose an actual maximal P containing it. If lambda∈P, actual3∈span{lambda}⊆P and actual2∈P imply1∈P, contradicting properness. Therefore an actual maximal P above(2) with lambda∉P is produced.",
+        "Actual primary-normalization obstruction: no p:O satisfies ramifiedIdeal=span{p} AND lambda² divides p-1. The proof is local to this actual ideal: p and p-1 would both belong to it, forcing1 in a proper ideal. No general lemma is misplaced under this cyclotomic subject."
+      ],
+      "accepted_original_controls": [
+        "Actual omega³=1, omega≠1, lambda≠0 and actual ramified ideal norm3.",
+        "actual_ramified_good_condition_counter bundles actual maximality/nonzero/properness, lambda membership, quotientomega=1 and its actual failure of primitiveorder3.",
+        "actual_ramified_quotient_card proves actual Nat.card(O/ramifiedIdeal)=3 from actual norm definition; actual_three_reduces_zero and actual_two_not_ramified check genuine residue data.",
+        "actual_good_reduction_nonvacuous produces actual maximal P containing2, with lambda outside, and applies the actual good-reduction theorem. actual_good_order_nonvacuous proves actual quotient root order3 there. No goodP or desired primitive/evaluation oracle is assumed.",
+        "actual_lambda_generator_not_primary proves the literal generator lambda fails lambda²|(lambda-1). actual_no_ramified_primary_generator retains the full all-generator obstruction.",
+        "Strict negative imports accepted positive counterproofs and supplies true actual ramifiedIdeal.IsMaximal as evidence for false lambda∉ramifiedIdeal. Exactly one intended Application type mismatch."
+      ],
+      "remaining_mathematical_limits": [
+        "No actual cubic/sextic MulChar, Jacobi sum, generator for good primes, primary normalization existence, trace/sextic character, coefficient bounds/weights, CompletedExpansion/corrections or common finite ideal support for all frequency twists is inferred.",
+        "The good ideal is produced as a maximal ideal containing(2); this round does not prove(2) itself maximal, explicitly identify its quotient with F4 or assert a new ramification-index formula.",
+        "The ramified normalization obstruction is about the actual ideal span{lambda}; no universal nonexistence of primary generators at good primes is claimed.",
+        "Actual root and ideal properties are separate from the complete upstream module, original detector, Hecke/calibration/physical/global ideal-dyadic interchange/RH and operational cache/JSON/parser/hashIO refinement, all remaining OPEN."
+      ]
+    }
+  ],
+  "frontier": {
+    "path": ".noeaaeue/cache/research/schedule-reduction-frontier-2026-10-15.json",
+    "sha256": "f032f5df787df915e3204e68fe9f883fd25de2b58199e7cdf6ad270031556212"
+  },
+  "continuation": {
+    "path": ".noeaaeue/cache/coordination/continuations/2026-10-15-schedule-reduction.json",
+    "sha256": "6ac44b76c758763f70d2a82b531ce2aa9130e1520aad242716fbe90f5c486299"
+  },
+  "historical_cache_roundtrip": {
+    "path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/schedule-reduction-relocated-historical-roundtrip-2026-10-15.json",
+    "sha256": "40ece73d72f27b8460d6c1fb3ea67921c5dac2518f618181cc2e2b9dcd8ccfc2"
+  },
+  "canonical_public_library_admission": "PENDING_SHARED_MIGRATION",
+  "original_receipts_unchanged": true,
+  "remote_actions": [],
+  "limits": "925/57 exact original selected checks are retained; relocated operational/documentation/live cache acceptance and public integration remain pending. No migrated replay, independent review, runtime correctness or RH claim."
+}
