@@ -1,0 +1,132 @@
+{
+  "state": "/Users/think/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0",
+  "files": [
+    {
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0/receipt.json",
+      "retained": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/native-audit-self-test-receipt.json",
+      "sha256": "9221fc0f9f44a5971fabaf892d3d20c9e0b1a1762154f3ff15bae9d9add684c5",
+      "bytes": 32330
+    },
+    {
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0/custom-axiom-audit.log",
+      "retained": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/native-audit-self-test-artifacts/custom-axiom-audit.log",
+      "sha256": "95d5eafcf0fa0ebe9b95f2bf3478c95875fb34c8a332ab6b90e41486842e0345",
+      "bytes": 138369
+    },
+    {
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0/custom-axiom-source.log",
+      "retained": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/native-audit-self-test-artifacts/custom-axiom-source.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0/fixture-freeze.json",
+      "retained": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/native-audit-self-test-artifacts/fixture-freeze.json",
+      "sha256": "d80a1e558cb1eeb6d3ffc8c327f44fcd2d0f85c6f03fa69cbcfd712cd8d1ee7d",
+      "bytes": 1011
+    },
+    {
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0/positive-audit.log",
+      "retained": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/native-audit-self-test-artifacts/positive-audit.log",
+      "sha256": "c40254f3837b7e6bdb6265f85b5e89241c3baea1f84be57165fd8ffbfea48a87",
+      "bytes": 145433
+    },
+    {
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0/positive-source.log",
+      "retained": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/native-audit-self-test-artifacts/positive-source.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0/progress.json",
+      "retained": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/native-audit-self-test-artifacts/progress.json",
+      "sha256": "9221fc0f9f44a5971fabaf892d3d20c9e0b1a1762154f3ff15bae9d9add684c5",
+      "bytes": 32330
+    },
+    {
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0/sorry-audit.log",
+      "retained": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/native-audit-self-test-artifacts/sorry-audit.log",
+      "sha256": "af5840f5e58050cc29e87ca549471f64a6b30b23eb221246ba813c41f59dd9b2",
+      "bytes": 137223
+    },
+    {
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0/sorry-strict-source.log",
+      "retained": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/native-audit-self-test-artifacts/sorry-strict-source.log",
+      "sha256": "ca0ff8758f92196af0749ff76159c44ffdfb5ca1b2508880681210f7e30aed61",
+      "bytes": 172
+    },
+    {
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0/sorry-warning-disabled-source.log",
+      "retained": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/native-audit-self-test-artifacts/sorry-warning-disabled-source.log",
+      "sha256": "06898d5875d411ac4c2b12407f8b2e4e4679e77c2d158084fe54110843a528a7",
+      "bytes": 174
+    },
+    {
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0/source-freeze.json",
+      "retained": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/native-audit-self-test-artifacts/source-freeze.json",
+      "sha256": "953cd91a6f3c1770e5a1c39a5407d9e30c2b97bcd834fea9c536f5bd73d13f33",
+      "bytes": 762
+    },
+    {
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0/unsafe-audit.log",
+      "retained": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/native-audit-self-test-artifacts/unsafe-audit.log",
+      "sha256": "9dc75818e2ee23f6f8cf3a30428ee1e7d650f3673b06a15a13e5cfe8729465ed",
+      "bytes": 137219
+    },
+    {
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0/unsafe-source.log",
+      "retained": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/native-audit-self-test-artifacts/unsafe-source.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0/lean-fixtures/positive/source/FixtureAudit.lean",
+      "retained": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/native-audit-self-test-artifacts/lean-fixtures/positive/source/FixtureAudit.lean",
+      "sha256": "e76b32826f1d697f9f0b8d320e9a3fe506d26cb3f92c0e248d90cca561219c4c",
+      "bytes": 13317
+    },
+    {
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0/lean-fixtures/positive/source/GRWTSK/Fixture/Positive.lean",
+      "retained": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/native-audit-self-test-artifacts/lean-fixtures/positive/source/GRWTSK/Fixture/Positive.lean",
+      "sha256": "ea837839f32a8852a503eb8cc18f29ef1854d8211d47bd4f80762ec3f565e1b8",
+      "bytes": 408
+    },
+    {
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0/lean-fixtures/custom-axiom/source/FixtureAudit.lean",
+      "retained": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/native-audit-self-test-artifacts/lean-fixtures/custom-axiom/source/FixtureAudit.lean",
+      "sha256": "40b93856143aa5709be9cc2b7b2aff91db806179110fbf2483d7421f5ae98431",
+      "bytes": 13323
+    },
+    {
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0/lean-fixtures/custom-axiom/source/GRWTSK/Fixture/CustomAxiom.lean",
+      "retained": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/native-audit-self-test-artifacts/lean-fixtures/custom-axiom/source/GRWTSK/Fixture/CustomAxiom.lean",
+      "sha256": "df1daa7b42e34a2a8a9203af5011f9d819d0e1d3aa657345cb88fe32b8fef825",
+      "bytes": 133
+    },
+    {
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0/lean-fixtures/unsafe/source/FixtureAudit.lean",
+      "retained": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/native-audit-self-test-artifacts/lean-fixtures/unsafe/source/FixtureAudit.lean",
+      "sha256": "a6f1f0f47e673a56a9f5c1c52cd1d89a99ad58397c1b7fba735e26a39c90b249",
+      "bytes": 13313
+    },
+    {
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0/lean-fixtures/unsafe/source/GRWTSK/Fixture/Unsafe.lean",
+      "retained": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/native-audit-self-test-artifacts/lean-fixtures/unsafe/source/GRWTSK/Fixture/Unsafe.lean",
+      "sha256": "47faa78ebe9f505eeb6c1d7d10fc6f42b637102040dd64d2d4dccb086c50fc60",
+      "bytes": 83
+    },
+    {
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0/lean-fixtures/sorry/source/FixtureAudit.lean",
+      "retained": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/native-audit-self-test-artifacts/lean-fixtures/sorry/source/FixtureAudit.lean",
+      "sha256": "30be61fa82166d83ea6a2f163cef2517572a6c794fe0b5e7ba3ae6d8686212ce",
+      "bytes": 13311
+    },
+    {
+      "original": "/Users/think/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0/lean-fixtures/sorry/source/GRWTSK/Fixture/Sorry.lean",
+      "retained": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/native-audit-self-test-artifacts/lean-fixtures/sorry/source/GRWTSK/Fixture/Sorry.lean",
+      "sha256": "20fce24b9a16cb3d9920bbbb37bed029f23b66f676f80848f9b3b1aa3f668342",
+      "bytes": 83
+    }
+  ],
+  "excluded": "compiled objects, build/dependency trees, canonical source/GRWTSK (receipt-listed generated profile fixtures retained); generated Lean limited to 1 MiB each"
+}

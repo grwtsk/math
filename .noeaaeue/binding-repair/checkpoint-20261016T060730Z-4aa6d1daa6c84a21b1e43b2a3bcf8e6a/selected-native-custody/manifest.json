@@ -1,0 +1,608 @@
+{
+  "schema": "byte-identical-selected-native-log-custody-v1",
+  "utc": "2026-10-16T06:22:24.811415+00:00",
+  "selected_batches": [
+    {
+      "label": "projector",
+      "selected_receipt": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json",
+      "receipt_sha256": "4ac00cdc45b0fcf7bff4c8650bad3b5ae05f1cc4ed015accefdd96b0863b4a00",
+      "native_logs": [
+        {
+          "source": "GRWTSK/Analysis/Fourier/FiniteAdditiveProjector.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/additive-character-moments-replay/20261016T055402Z-1b47ac0b6a/0.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/projector/0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Definitions.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/additive-character-moments-replay/20261016T055402Z-1b47ac0b6a/1.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/projector/1.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/NumberTheory/ArithmeticFunctions/CoprimeDivisorFilter.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/additive-character-moments-replay/20261016T055402Z-1b47ac0b6a/2.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/projector/2.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Moments.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/additive-character-moments-replay/20261016T055402Z-1b47ac0b6a/3.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/projector/3.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/MomentReindexing.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/additive-character-moments-replay/20261016T055402Z-1b47ac0b6a/4.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/projector/4.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/DivisorSectorReindexing.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/additive-character-moments-replay/20261016T055402Z-1b47ac0b6a/5.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/projector/5.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/AdditiveCharacterMoments.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/additive-character-moments-replay/20261016T055402Z-1b47ac0b6a/6.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/projector/6.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Radical.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/additive-character-moments-replay/20261016T055402Z-1b47ac0b6a/7.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/projector/7.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/ABCStatement.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/additive-character-moments-replay/20261016T055402Z-1b47ac0b6a/8.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/projector/8.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Positive/AdditiveCharacterMoments.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/additive-character-moments-replay/20261016T055402Z-1b47ac0b6a/9.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/projector/9.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "SelectedAudit.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/additive-character-moments-replay/20261016T055402Z-1b47ac0b6a/10.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/projector/10.log",
+          "sha256": "e2cae8092f9465cfd08420677d06e831435d2cb000153d5f2a4ff2d09c4b9573",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorMissingNoWrap.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/additive-character-moments-replay/20261016T055402Z-1b47ac0b6a/11.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/projector/11.log",
+          "sha256": "92bb5e9da69e3c9555b653f1aad964e0328df04ea91f1cbc6a8cb471a17e6531",
+          "exit_code": 1,
+          "expected_rejection": true
+        },
+        {
+          "source": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorWrongNormalization.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/additive-character-moments-replay/20261016T055402Z-1b47ac0b6a/12.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/projector/12.log",
+          "sha256": "30450dad4774ceb4f505b1ca8cd2c65b934f757500b2b14dfabcb83397bc67f0",
+          "exit_code": 1,
+          "expected_rejection": true
+        },
+        {
+          "source": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorScaledCongruenceCancellation.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/additive-character-moments-replay/20261016T055402Z-1b47ac0b6a/13.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/projector/13.log",
+          "sha256": "905d69b69449d97978f2545d41ade9e697ca3c8ceb137816b856dd74fa16237b",
+          "exit_code": 1,
+          "expected_rejection": true
+        },
+        {
+          "source": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorUnscaledJointWeight.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/additive-character-moments-replay/20261016T055402Z-1b47ac0b6a/14.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/projector/14.log",
+          "sha256": "b10fa068123e580b165fa027e9c37d9839bd5f47662fb71d17e86033bd7f5186",
+          "exit_code": 1,
+          "expected_rejection": true
+        },
+        {
+          "source": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorToABC.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/additive-character-moments-replay/20261016T055402Z-1b47ac0b6a/15.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/projector/15.log",
+          "sha256": "8635bae24139427e12309a293612d9e4c1f406aea3029a89ec1a3b1561aaa21d",
+          "exit_code": 1,
+          "expected_rejection": true
+        }
+      ],
+      "mathematical_scope": "Unchanged exact selected receipt only; no global or conjecture promotion."
+    },
+    {
+      "label": "partition",
+      "selected_receipt": ".noeaaeue/evidence/Analysis/fourier/partition-concentration-checks-2026-10-15.json",
+      "receipt_sha256": "1885cf8f4563a235e3a446b77e6683e7d7290e82150d6643dfa461ca5d22bb51",
+      "native_logs": [
+        {
+          "source": "GRWTSK/Combinatorics/Sequences/BalancedPartitionSampling.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/partition-concentration-replay/20261016T054901Z-b3334f990d/0.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/partition/0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/Analysis/Fourier/ZModSubsetSum.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/partition-concentration-replay/20261016T054901Z-b3334f990d/1.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/partition/1.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/Analysis/Fourier/ZModCharacterEnergy.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/partition-concentration-replay/20261016T054901Z-b3334f990d/2.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/partition/2.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/Analysis/Fourier/ZModIndependentSelection.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/partition-concentration-replay/20261016T054901Z-b3334f990d/3.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/partition/3.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/Analysis/Fourier/FiniteExponentialLayers.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/partition-concentration-replay/20261016T054901Z-b3334f990d/4.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/partition/4.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/Analysis/Fourier/ZModPartitionEnergy.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/partition-concentration-replay/20261016T054901Z-b3334f990d/5.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/partition/5.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/Analysis/Fourier/ZModBalancedPartition.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/partition-concentration-replay/20261016T054901Z-b3334f990d/6.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/partition/6.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/Analysis/Fourier/ZModSmallEnergySets.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/partition-concentration-replay/20261016T054901Z-b3334f990d/7.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/partition/7.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/Combinatorics/Sequences/CyclicSumsetGrowth.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/partition-concentration-replay/20261016T054901Z-b3334f990d/8.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/partition/8.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/Analysis/Fourier/ZModSmallEnergySpectrum.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/partition-concentration-replay/20261016T054901Z-b3334f990d/9.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/partition/9.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/Analysis/Fourier/ZModExpectedLayers.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/partition-concentration-replay/20261016T054901Z-b3334f990d/10.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/partition/10.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/Analysis/Fourier/ZModConcentratedFrequencies.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/partition-concentration-replay/20261016T054901Z-b3334f990d/11.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/partition/11.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/Combinatorics/Sequences/ConditionalPartitionExposure.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/partition-concentration-replay/20261016T054901Z-b3334f990d/12.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/partition/12.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/Combinatorics/Sequences/HypergeometricLowerTail.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/partition-concentration-replay/20261016T054901Z-b3334f990d/13.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/partition/13.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/Combinatorics/Sequences/BalancedPartitionTails.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/partition-concentration-replay/20261016T054901Z-b3334f990d/14.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/partition/14.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/Analysis/Fourier/ZModPartitionConcentration.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/partition-concentration-replay/20261016T054901Z-b3334f990d/15.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/partition/15.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/Analysis/Fourier/ZModBalancedExpectedLayers.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/partition-concentration-replay/20261016T054901Z-b3334f990d/16.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/partition/16.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/Combinatorics/Sequences/PartitionExposureChecks.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/partition-concentration-replay/20261016T054901Z-b3334f990d/17.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/partition/17.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/Analysis/Fourier/Checks/Positive/SubsetAntiConcentration.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/partition-concentration-replay/20261016T054901Z-b3334f990d/18.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/partition/18.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "SelectedAudit.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/partition-concentration-replay/20261016T054901Z-b3334f990d/19.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/partition/19.log",
+          "sha256": "d671421672d225774ade88244b6a861e649171df775ab70d6d68371b4d05f40b",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/Analysis/Fourier/Checks/Negative/SubsetAntiConcentrationMissingRange.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/partition-concentration-replay/20261016T054901Z-b3334f990d/20.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/partition/20.log",
+          "sha256": "6de6c4bd10e83cd8956fb1dcac8e8d747853000bf4d5ced15d7134f4fb83ef54",
+          "exit_code": 1,
+          "expected_rejection": true
+        },
+        {
+          "source": "GRWTSK/Analysis/Fourier/Checks/Negative/SubsetAntiConcentrationMissingPrime.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/partition-concentration-replay/20261016T054901Z-b3334f990d/21.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/partition/21.log",
+          "sha256": "69952bb945cb2685c8e45fa81a2a9ec4571ee49c6ee93f0be15551322590a8c5",
+          "exit_code": 1,
+          "expected_rejection": true
+        }
+      ],
+      "mathematical_scope": "Unchanged exact selected receipt only; no global or conjecture promotion."
+    },
+    {
+      "label": "reference",
+      "selected_receipt": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-reference-transport-checks-2026-10-15.json",
+      "receipt_sha256": "c2392986e86871df84fd07fc4363c634a37930749e4f505a941a91278236a271",
+      "native_logs": [
+        {
+          "source": "GRWTSK/Combinatorics/DirectedGraph/PathUnfolding.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-reference-transport-replay/replay-niohrv54/0.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/reference/0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/Combinatorics/DirectedGraph/PathOccurrences.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-reference-transport-replay/replay-niohrv54/1.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/reference/1.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/Combinatorics/DirectedGraph/EdgeTrace.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-reference-transport-replay/replay-niohrv54/2.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/reference/2.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/Combinatorics/DirectedGraph/OccurrencePrefix.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-reference-transport-replay/replay-niohrv54/3.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/reference/3.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/Logic/FiniteSequences/IndexedDictionary.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-reference-transport-replay/replay-niohrv54/4.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/reference/4.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/Combinatorics/DirectedGraph/PrefixInventory.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-reference-transport-replay/replay-niohrv54/5.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/reference/5.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/Combinatorics/DirectedGraph/ParentTraceDictionary.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-reference-transport-replay/replay-niohrv54/6.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/reference/6.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/Logic/FiniteSequences/DictionaryRevision.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-reference-transport-replay/replay-niohrv54/7.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/reference/7.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/Logic/FiniteSequences/DecisionCertificate.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-reference-transport-replay/replay-niohrv54/8.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/reference/8.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/Combinatorics/DirectedGraph/RootedTraceRevision.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-reference-transport-replay/replay-niohrv54/9.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/reference/9.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/Logic/FiniteSequences/IncrementalDictionary.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-reference-transport-replay/replay-niohrv54/10.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/reference/10.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/Combinatorics/DirectedGraph/IncrementalPrefixTable.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-reference-transport-replay/replay-niohrv54/11.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/reference/11.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableState.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-reference-transport-replay/replay-niohrv54/12.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/reference/12.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableCompaction.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-reference-transport-replay/replay-niohrv54/13.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/reference/13.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/Combinatorics/DirectedGraph/RoleRelationTable.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-reference-transport-replay/replay-niohrv54/14.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/reference/14.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/Combinatorics/DirectedGraph/RoleRelationReindex.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-reference-transport-replay/replay-niohrv54/15.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/reference/15.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableReindex.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-reference-transport-replay/replay-niohrv54/16.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/reference/16.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableUpdateReindex.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-reference-transport-replay/replay-niohrv54/17.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/reference/17.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableBatch.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-reference-transport-replay/replay-niohrv54/18.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/reference/18.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableCheckpoint.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-reference-transport-replay/replay-niohrv54/19.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/reference/19.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableSchedule.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-reference-transport-replay/replay-niohrv54/20.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/reference/20.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableReferenceTransport.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-reference-transport-replay/replay-niohrv54/21.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/reference/21.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableSchedule.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-reference-transport-replay/replay-niohrv54/22.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/reference/22.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableReferenceTransport.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-reference-transport-replay/replay-niohrv54/23.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/reference/23.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "SelectedAudit.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-reference-transport-replay/replay-niohrv54/24.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/reference/24.log",
+          "sha256": "aadf97c1ad76dec138f3bcb0ab6817121359787e7d38955144f6a0a84340a87f",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixReferenceMissingSupport.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/prefix-reference-transport-replay/replay-niohrv54/25.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/reference/25.log",
+          "sha256": "94d42608e33f56232fde7c828b00e4036c5e764af2a867abdb8341b9a18a2774",
+          "exit_code": 1,
+          "expected_rejection": true
+        }
+      ],
+      "mathematical_scope": "Unchanged exact selected receipt only; no global or conjecture promotion."
+    },
+    {
+      "label": "cubic-character",
+      "selected_receipt": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-characters-development-checks-2026-10-15-a7b1f5cb.json",
+      "receipt_sha256": "528b3c85272c20e55ae66668fd942bde430b10635bc68b44c304b3796a10f286",
+      "native_logs": [
+        {
+          "source": "GRWTSK/NumberTheory/Ideal/CompactNormSupport.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-characters-replay/replay-9siq5xbj/0.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/cubic-character/0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicIdeals.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-characters-replay/replay-9siq5xbj/1.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/cubic-character/1.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicReduction.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-characters-replay/replay-9siq5xbj/2.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/cubic-character/2.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicCharacters.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-characters-replay/replay-9siq5xbj/3.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/cubic-character/3.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/NumberTheory/Cyclotomic/Checks/Positive/ThirdCyclotomicCharacters.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-characters-replay/replay-9siq5xbj/4.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/cubic-character/4.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "SelectedAudit.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-characters-replay/replay-9siq5xbj/5.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/cubic-character/5.log",
+          "sha256": "f740389f50019170d7db73bf8f12e52936988c107d8f0772498816883e2cd52e",
+          "exit_code": 0,
+          "expected_rejection": false
+        },
+        {
+          "source": "GRWTSK/NumberTheory/Cyclotomic/Checks/Negative/ThirdCyclotomicCharacterZeroCube.lean",
+          "original_log": "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-characters-replay/replay-9siq5xbj/6.log",
+          "retained_log": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/selected-native-custody/cubic-character/6.log",
+          "sha256": "57941d25747e8513ef5a08ade12cbaf2b793656b9a4dc6d8ff68ea4c5585a12a",
+          "exit_code": 1,
+          "expected_rejection": true
+        }
+      ],
+      "mathematical_scope": "Unchanged exact selected receipt only; no global or conjecture promotion."
+    }
+  ],
+  "native_log_count": 71,
+  "original_receipts_unchanged": true
+}

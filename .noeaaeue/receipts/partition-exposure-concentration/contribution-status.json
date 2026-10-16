@@ -1,0 +1,54 @@
+{
+  "schema": "source-bound-mathematical-contribution-v1",
+  "status": "fresh-selected-kernel-checked",
+  "mathematical_source": "Huy Tuan Pham and Lisa Sauermann, arXiv:2602.15797v1 (2026-02-17), Section3 and Theorem1.3",
+  "human_mathematical_direction": "R.A. Jacob Martone",
+  "lean_implementation": "OpenAI Codex",
+  "novelty_claim": false,
+  "receipt": ".noeaaeue/evidence/Analysis/Fourier/partition-concentration-checks-2026-10-15.json",
+  "receipt_sha256": "1885cf8f4563a235e3a446b77e6683e7d7290e82150d6643dfa461ca5d22bb51",
+  "source_hashes": {
+    "GRWTSK/Analysis/Fourier/ZModBalancedExpectedLayers.lean": "6317a8b54aa66498b4d6565c581ca98edda7a08fec1f8a872dd5bfa70fded391",
+    "GRWTSK/Analysis/Fourier/ZModExpectedLayers.lean": "b7464aa2d019f349cc8ce39cadec258f883afe66468963e31bbeacb93ab419f3",
+    "GRWTSK/Analysis/Fourier/ZModBalancedPartition.lean": "713091676046943a65970acf4c7e2761aa8b10a7d79946599de70624238d3c32",
+    "GRWTSK/Combinatorics/Sequences/BalancedPartitionSampling.lean": "3339c1d1f47c02955f5401ec6eef45e993686e4a973d94b139d9d1cc66abcd93",
+    "GRWTSK/Analysis/Fourier/ZModIndependentSelection.lean": "7a45f532becf96acf98301a64c2eab4439e3923ad1e6434229860a0909074fb1",
+    "GRWTSK/Analysis/Fourier/ZModSubsetSum.lean": "60a0800b62f570782227e57e7ccedba38c1db2a343724ff0951a113c9ac09044",
+    "GRWTSK/Analysis/Fourier/ZModCharacterEnergy.lean": "0738ce7f3f01722a9d22debd2927564f46fe2ce34918385b0b36af8ed133ed92",
+    "GRWTSK/Analysis/Fourier/ZModPartitionEnergy.lean": "0d8202957deed1ce1b660a0ab409a4b8e01e570e78b8285f69a1c8a7ee9223f1",
+    "GRWTSK/Analysis/Fourier/FiniteExponentialLayers.lean": "c26805fc06086ceadbb09ef1a5d781a3de6d824ca30947f576bd16118d9f0943",
+    "GRWTSK/Analysis/Fourier/ZModSmallEnergySpectrum.lean": "2cabfc6208a5ecf03981d6fd304de160d35ce8deb7427392db219c32ea94bbf8",
+    "GRWTSK/Analysis/Fourier/ZModSmallEnergySets.lean": "98cf9ea68fa5811befdc5c8b10e30c7d1148f94c4f04f1727578cf5a35886908",
+    "GRWTSK/Combinatorics/Sequences/CyclicSumsetGrowth.lean": "86b8f712206e943ec593cd324180e20f68d12522dda47d28b5ebb5c0045b6d47",
+    "GRWTSK/Analysis/Fourier/ZModPartitionConcentration.lean": "cadb696bc288dbc51703deb6d55e9620a428c48f3c5cefee1eba26267636ce6a",
+    "GRWTSK/Analysis/Fourier/ZModConcentratedFrequencies.lean": "2a9a4a4cad5930af51a2fc0274cfde271c01f964399041ee6437248f6f5c2b12",
+    "GRWTSK/Combinatorics/Sequences/BalancedPartitionTails.lean": "f4d0196c2e367d1a0f741b25f6a0eb33003dce26769fd3311e2f8cd9f0bb4699",
+    "GRWTSK/Combinatorics/Sequences/ConditionalPartitionExposure.lean": "9ee487095c5298b2e1d20963abad6106575df5b1c2a4a866b87b758a10af8787",
+    "GRWTSK/Combinatorics/Sequences/HypergeometricLowerTail.lean": "10e74485fcb37598160521c6514a6e7c1a08e0fda189fde0a0c03178f40af438",
+    "GRWTSK/Combinatorics/Sequences/PartitionExposureChecks.lean": "b8df18c852c64aa10ede56f41fe454f420377f5f5a201050b3e0ded7ce34cab8",
+    "GRWTSK/Analysis/Fourier/Checks/Positive/SubsetAntiConcentration.lean": "1f2583a4be8fa66b0864510a10c5f73401d0705d5f23eaee02f831fcd1d4490b",
+    "GRWTSK/Analysis/Fourier/Checks/Negative/SubsetAntiConcentrationMissingRange.lean": "2d77d8515c63684ff034050a771182a81eaa8a95a65ee41bf983f29d5d160c0d",
+    "GRWTSK/Analysis/Fourier/Checks/Negative/SubsetAntiConcentrationMissingPrime.lean": "0bfff98d1999db0462c213bd4bfd07556b65b141d701c83df40622cd97994c2b",
+    "GRWTSK/Logic/ProofChecking/Checks/OwnedDeclarationAudit.lean": "94eb4533f7b97b38b5165b015a16149f01b98fd110978292b0e2e3dbdc2773c3"
+  },
+  "completed": [
+    "conditional part-exposure uniform law",
+    "finite hypergeometric lower tails exp(-k/32) and exp(-k/24)",
+    "source Lemmas3.1 and3.3 actual partition failure bounds",
+    "actual expected Fourier-layer estimates",
+    "source Theorem1.3 with C=2^24, via stronger30022 constant"
+  ],
+  "owned_scope_declarations": 269,
+  "axiom_policy": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "open": [
+    "Corollary1.4 larger-slice bound",
+    "conditional nested-chain estimates in Section4",
+    "Section5 local collision and admissible-permutation counting bounds",
+    "source Lemmas5.1\u20135.3 failure probabilities and Theorem1.2"
+  ],
+  "repository_scope": "New selected acceptance and public import integration only; global current-input contracts and historical receipts are not rebound."
+}

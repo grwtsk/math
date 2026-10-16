@@ -1,0 +1,225 @@
+{
+  "schema": "source-bound-independent-mathematical-review-v1",
+  "status": "review-complete-no-actionable-mathematical-discrepancy-found",
+  "reviewer": {
+    "agent": "balanced_law",
+    "relationship": "Independent read-through of the root-authored concentration integration; reviewer previously implemented exposure and partition-tail dependencies, disclosed here."
+  },
+  "target": {
+    "path": "GRWTSK/Analysis/Fourier/ZModPartitionConcentration.lean",
+    "sha256": "cadb696bc288dbc51703deb6d55e9620a428c48f3c5cefee1eba26267636ce6a",
+    "bytes": 26330,
+    "namespace": "GRWTSK.ZModPartitionConcentration",
+    "source_freeze": "Root reported concentration source frozen and GREEN with trust=0 and fatal warnings before this review; the identical source hash was checked again before receipt creation."
+  },
+  "source": {
+    "authors": [
+      "Huy Tuan Pham",
+      "Lisa Sauermann"
+    ],
+    "title": "On Graham's rearrangement conjecture",
+    "arxiv": "2602.15797v1",
+    "version_date": "2026-02-17",
+    "url": "https://arxiv.org/html/2602.15797v1",
+    "primary_targets": [
+      "Section 3 equation (3.3)",
+      "Lemma 3.1",
+      "Lemma 3.3"
+    ],
+    "retained_html": ".noeaaeue/receipts/modular-partial-sum-ordering/paper-v1.html"
+  },
+  "reviewed_dependency_snapshots": [
+    {
+      "path": ".noeaaeue/receipts/modular-partial-sum-ordering/paper-v1.html",
+      "sha256": "f2cb2cf8d155cf8940aaa7443db223b43419413bc9cbc5c25f25e453cd33a74b"
+    },
+    {
+      "path": "GRWTSK/Analysis/Fourier/ZModConcentratedFrequencies.lean",
+      "sha256": "2a9a4a4cad5930af51a2fc0274cfde271c01f964399041ee6437248f6f5c2b12"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/Sequences/BalancedPartitionTails.lean",
+      "sha256": "f4d0196c2e367d1a0f741b25f6a0eb33003dce26769fd3311e2f8cd9f0bb4699"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/Sequences/ConditionalPartitionExposure.lean",
+      "sha256": "9ee487095c5298b2e1d20963abad6106575df5b1c2a4a866b87b758a10af8787"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/Sequences/HypergeometricLowerTail.lean",
+      "sha256": "10e74485fcb37598160521c6514a6e7c1a08e0fda189fde0a0c03178f40af438"
+    }
+  ],
+  "declarations": [
+    {
+      "declaration": "GRWTSK.ZModPartitionConcentration.sum_parts_pairs",
+      "line": 26,
+      "explicit_statement": "theorem sum_parts_pairs (label : A ↪ ZMod p) {sizes : Fin m → ℕ}\n    (P : Partition (A := A) sizes) (χ : ZMod p) :\n    (∑ i, ∑ x ∈ partValues label P i, ∑ y ∈ partValues label P i,\n      modularDistance (χ * (x - y)) ^ 2) =\n    ∑ a : A, ∑ b ∈ part P (P.val a), modularDistance (χ * (label a - label b)) ^ 2"
+    },
+    {
+      "declaration": "GRWTSK.ZModPartitionConcentration.balanced_remainder_size_lower",
+      "line": 46,
+      "explicit_statement": "theorem balanced_remainder_size_lower (n m : ℕ) (hm : 0 < m)\n    (hfour : 4 * m ≤ n) (i : Fin m) :\n    (n : ℝ) / (2 * m) ≤ ((balancedSizes n m i - 1 : ℕ) : ℝ)"
+    },
+    {
+      "declaration": "GRWTSK.ZModPartitionConcentration.row_sum_lower",
+      "line": 64,
+      "explicit_statement": "theorem row_sum_lower (label : A ↪ ZMod p) {sizes : Fin m → ℕ}\n    (P : Partition (A := A) sizes) (χ : ZMod p) (a : A)\n    (neighbors : Finset A) (hsub : neighbors ⊆ part P (P.val a))\n    (q w : ℝ) (hw : 0 ≤ w) (hq : q ≤ neighbors.card)\n    (hpoint : ∀ b ∈ neighbors, w ≤ modularDistance (χ * (label a - label b)) ^ 2) :\n    q * w ≤ ∑ b ∈ part P (P.val a), modularDistance (χ * (label a - label b)) ^ 2"
+    },
+    {
+      "declaration": "GRWTSK.ZModPartitionConcentration.far_labels_card",
+      "line": 79,
+      "explicit_statement": "theorem far_labels_card (S : Finset (ZMod p)) (m t : ℝ) (χ : ZMod p)\n    (hχ : χ ≠ 0) (hD : χ ∉ concentratedFrequencies S m t) (a : S) :\n    (S.card : ℝ) / 4 ≤\n      ((Finset.univ : Finset S).filter (fun b =>\n        8 * Real.sqrt (t / m) < modularDistance (χ * (a.val - b.val)))).card"
+    },
+    {
+      "declaration": "GRWTSK.ZModPartitionConcentration.balanced_energy_ge_rows",
+      "line": 118,
+      "explicit_statement": "theorem balanced_energy_ge_rows (S : Finset (ZMod p)) (hm : 0 < m)\n    (hfour : 4 * m ≤ S.card) (P : BalancedPartitions S m) (χ : ZMod p)\n    (L : ℝ) (hrows : ∀ a : S, L ≤ ∑ b ∈ part P (P.val a),\n      modularDistance (χ * (a.val - b.val)) ^ 2) :\n    (m : ℝ) ^ 2 / (2 * (S.card : ℝ) ^ 2) * (S.card * L) ≤\n      partitionEnergy (partValues (residueEmbedding S) P) χ"
+    },
+    {
+      "declaration": "GRWTSK.ZModPartitionConcentration.energy_ge_two_of_far_counts",
+      "line": 136,
+      "explicit_statement": "theorem energy_ge_two_of_far_counts (S : Finset (ZMod p)) (hm : 0 < m)\n    (hfour : 4 * m ≤ S.card) (P : BalancedPartitions S m) (χ : ZMod p)\n    (t : ℝ) (ht : 0 ≤ t)\n    (hcounts : ∀ a : S, (S.card : ℝ) / (16 * m) ≤\n      ((part P (P.val a)).filter (fun b =>\n        8 * Real.sqrt (t / m) < modularDistance (χ * (a.val - b.val)))).card) :\n    2 * t ≤ partitionEnergy (partValues (residueEmbedding S) P) χ"
+    },
+    {
+      "declaration": "GRWTSK.ZModPartitionConcentration.energy_ge_two_of_near_counts",
+      "line": 163,
+      "explicit_statement": "theorem energy_ge_two_of_near_counts (S : Finset (ZMod p)) (hm : 0 < m)\n    (hfour : 4 * m ≤ S.card) (P : BalancedPartitions S m) (χ center : ZMod p)\n    (t : ℝ) (ht : 0 ≤ t) (hE : 2000 * t ≤ (m : ℝ) * pairEnergy S χ)\n    (hcounts : ∀ a : S,\n      a.val ∉ phaseInterval χ center (16 * Real.sqrt (t / m)) →\n      (S.card : ℝ) / (4 * m) ≤\n        ((part P (P.val a)).filter (fun b =>\n          b.val ∈ phaseInterval χ center (8 * Real.sqrt (t / m)))).card) :\n    2 * t ≤ partitionEnergy (partValues (residueEmbedding S) P) χ"
+    },
+    {
+      "declaration": "GRWTSK.ZModPartitionConcentration.source_union_exp_le",
+      "line": 231,
+      "explicit_statement": "theorem source_union_exp_le (n m : ℕ) (hn : 2 ≤ n) (hm : 0 < m)\n    (hu : (m : ℝ) ≤ (1 / 1000 : ℝ) * n / Real.log n)\n    (c : ℝ) (hc : 0 < c) (hcrate : 10 * c ≤ 1000) :\n    (n : ℝ) * Real.exp (-(n : ℝ) / (c * m)) ≤ 1 / (n : ℝ) ^ 9"
+    },
+    {
+      "declaration": "GRWTSK.ZModPartitionConcentration.eventProbability_exists_le",
+      "line": 256,
+      "explicit_statement": "theorem eventProbability_exists_le {Ω ι : Type*} [Fintype Ω] [Fintype ι]\n    (E : ι → Ω → Prop) :\n    eventProbability (fun x => ∃ i, E i x) ≤ ∑ i, eventProbability (E i)"
+    },
+    {
+      "declaration": "GRWTSK.ZModPartitionConcentration.eventProbability_mono",
+      "line": 272,
+      "explicit_statement": "theorem eventProbability_mono {Ω : Type*} [Fintype Ω]\n    (E F : Ω → Prop) (h : ∀ x, E x → F x) : eventProbability E ≤ eventProbability F"
+    },
+    {
+      "declaration": "GRWTSK.ZModPartitionConcentration.partitionProbabilityReal_eq_event",
+      "line": 286,
+      "explicit_statement": "theorem partitionProbabilityReal_eq_event {sizes : Fin m → ℕ}\n    (E : Partition (A := A) sizes → Prop) :\n    partitionProbabilityReal sizes E = eventProbability E"
+    },
+    {
+      "declaration": "GRWTSK.ZModPartitionConcentration.far_count_bad_probability_le",
+      "line": 292,
+      "explicit_statement": "theorem far_count_bad_probability_le (S : Finset (ZMod p)) (hm : 0 < m)\n    (hfour : 4 * m ≤ S.card) (χ : ZMod p) (hχ : χ ≠ 0) (t : ℝ)\n    (hD : χ ∉ concentratedFrequencies S m t) (a : S) :\n    eventProbability (fun P : BalancedPartitions S m =>\n      (((part P (P.val a)).filter (fun b =>\n        8 * Real.sqrt (t / m) < modularDistance (χ * (a.val - b.val)))).card : ℝ) <\n        (S.card : ℝ) / (16 * m)) ≤ Real.exp (-(S.card : ℝ) / (64 * m))"
+    },
+    {
+      "declaration": "GRWTSK.ZModPartitionConcentration.nonconcentrated_probability_le",
+      "line": 340,
+      "explicit_statement": "theorem nonconcentrated_probability_le (S : Finset (ZMod p))\n    (hn : 2 ≤ S.card) (hm : 0 < m)\n    (hu : (m : ℝ) ≤ (1 / 1000 : ℝ) * S.card / Real.log S.card)\n    (t : ℝ) (ht : 0 ≤ t) (χ : ZMod p) (hχ : χ ≠ 0)\n    (hD : χ ∉ concentratedFrequencies S m t) :\n    eventProbability (fun P : BalancedPartitions S m =>\n      partitionEnergy (partValues (residueEmbedding S) P) χ < 2 * t) ≤\n      1 / (S.card : ℝ) ^ 9"
+    },
+    {
+      "declaration": "GRWTSK.ZModPartitionConcentration.near_labels_card",
+      "line": 372,
+      "explicit_statement": "theorem near_labels_card (S : Finset (ZMod p)) (χ center : ZMod p) (m t : ℝ)\n    (hc : (3 / 4 : ℝ) * S.card ≤\n      (S ∩ phaseInterval χ center (8 * Real.sqrt (t / m))).card) :\n    (3 / 4 : ℝ) * ((Fintype.card S - 1 : ℕ) : ℝ) ≤\n      ((Finset.univ : Finset S).filter (fun b =>\n        b.val ∈ phaseInterval χ center (8 * Real.sqrt (t / m)))).card"
+    },
+    {
+      "declaration": "GRWTSK.ZModPartitionConcentration.near_count_bad_probability_le",
+      "line": 393,
+      "explicit_statement": "theorem near_count_bad_probability_le (S : Finset (ZMod p)) (hm : 0 < m)\n    (hfour : 4 * m ≤ S.card) (χ center : ZMod p) (t : ℝ)\n    (hc : (3 / 4 : ℝ) * S.card ≤\n      (S ∩ phaseInterval χ center (8 * Real.sqrt (t / m))).card) (a : S)\n    (ha : a.val ∉ phaseInterval χ center (16 * Real.sqrt (t / m))) :\n    eventProbability (fun P : BalancedPartitions S m =>\n      (((part P (P.val a)).filter (fun b =>\n        b.val ∈ phaseInterval χ center (8 * Real.sqrt (t / m)))).card : ℝ) <\n        (S.card : ℝ) / (4 * m)) ≤ Real.exp (-(S.card : ℝ) / (48 * m))"
+    },
+    {
+      "declaration": "GRWTSK.ZModPartitionConcentration.concentrated_probability_le",
+      "line": 439,
+      "explicit_statement": "theorem concentrated_probability_le (S : Finset (ZMod p))\n    (hn : 2 ≤ S.card) (hm : 0 < m)\n    (hu : (m : ℝ) ≤ (1 / 1000 : ℝ) * S.card / Real.log S.card)\n    (t : ℝ) (ht : 0 ≤ t) (χ : ZMod p)\n    (hχ : χ ∈ concentratedFrequencies S m t \\ smallEnergyFrequencies S m (2000 * t)) :\n    eventProbability (fun P : BalancedPartitions S m =>\n      partitionEnergy (partValues (residueEmbedding S) P) χ < 2 * t) ≤\n      1 / (S.card : ℝ) ^ 9"
+    },
+    {
+      "declaration": "GRWTSK.ZModPartitionConcentration.outside_smallEnergy_probability_le",
+      "line": 491,
+      "explicit_statement": "theorem outside_smallEnergy_probability_le (S : Finset (ZMod p))\n    (hn : 2 ≤ S.card)\n    (hl : (2 : ℝ) ^ 24 * Real.log S.card ≤ m)\n    (hu : (m : ℝ) ≤ (1 / 1000 : ℝ) * S.card / Real.log S.card)\n    (t : ℝ) (ht : 0 < t) (χ : ZMod p) (hχ : χ ≠ 0)\n    (hB : χ ∉ smallEnergyFrequencies S m (2000 * t)) :\n    eventProbability (fun P : BalancedPartitions S m =>\n      partitionEnergy (partValues (residueEmbedding S) P) χ < 2 * t) ≤\n      1 / (S.card : ℝ) ^ 9"
+    }
+  ],
+  "implicit_context": {
+    "modulus": "p : Nat; [NeZero p] where not explicitly omitted; no primality premise is needed for these concentration estimates. Primality remains required downstream for the spectral sumset estimate.",
+    "ambient": "Finite residue set S represented by its finite subtype; m : Nat. Generic finite counting lemmas carry only the displayed Fintype contexts.",
+    "probability": "Actual normalized finite event counts over all ordered balanced prescribed-size partitions; not an assumed law field."
+  },
+  "precise_main_statements": [
+    {
+      "declaration": "GRWTSK.ZModPartitionConcentration.nonconcentrated_probability_le",
+      "hypotheses": [
+        "2 <= |S|",
+        "0 < m",
+        "m <= |S|/(1000 log |S|)",
+        "0 <= t (real)",
+        "chi != 0",
+        "chi not in D_t"
+      ],
+      "conclusion": "Pr_P[partitionEnergy(P,chi) < 2t] <= |S|^(-9)",
+      "source_relation": "Contains the source positive-integer-t instance; formal nonnegative real t is a stronger valid statement."
+    },
+    {
+      "declaration": "GRWTSK.ZModPartitionConcentration.concentrated_probability_le",
+      "hypotheses": [
+        "2 <= |S|",
+        "0 < m",
+        "m <= |S|/(1000 log |S|)",
+        "0 <= t (real)",
+        "chi in D_t \\ B_(2000t)"
+      ],
+      "conclusion": "Pr_P[partitionEnergy(P,chi) < 2t] <= |S|^(-9)",
+      "source_relation": "Matches source Lemma 3.3; outside B is strict because B uses energy <= threshold. The proof weakens the resulting >2000t to >=2000t only when invoking a deterministic estimate."
+    },
+    {
+      "declaration": "GRWTSK.ZModPartitionConcentration.outside_smallEnergy_probability_le",
+      "hypotheses": [
+        "2 <= |S|",
+        "2^24 log |S| <= m",
+        "m <= |S|/(1000 log |S|)",
+        "0 < t (real)",
+        "chi != 0",
+        "chi not in B_(2000t)"
+      ],
+      "conclusion": "Pr_P[partitionEnergy(P,chi) < 2t] <= |S|^(-9)",
+      "source_relation": "Splits actual membership in D_t. Positivity and 4m <= |S| are proved from the original slice restrictions, not added analytic premises."
+    }
+  ],
+  "analysis": {
+    "sample_space": "The parts have sizes floor(n/m) or floor(n/m)+1, with the larger parts assigned the first indices. All functions with these fiber sizes are included. The independent-selection/product sampling is in prior proved modules; concentration averages the actual partition space.",
+    "conditional_exposure": "For retained a and exposed i=P(a), the other members form the uniform k-subset of S\\{a}, k=partSize(i)-1. The integration uses the proved exact conditional law and the proved finite mixture bound; it does not use the unconditional distribution of the containing-part index.",
+    "deletion_and_density": "The population has n-1 elements. Far G excludes a because its self-distance is 0 and the radius is nonnegative. Near G excludes every retained a outside the doubled-radius interval. Thus intersection with the full part equals intersection with its erased remainder. The n/4 and 3n/4 original cardinal bounds imply the required (n-1)/4 and 3(n-1)/4 density bounds.",
+    "indexing_and_sizes": "Balanced part size is used through Nat subtraction size-1. Under m>0 and 4m<=n, the code proves every remainder size is at least n/(2m), so neither an off-by-one nor a positivity assumption is hidden.",
+    "strict_thresholds": "The checked hypergeometric events use strict real inequalities count<k/8 and count<k/2. Their complements are count>=k/8 and count>=k/2, so passing to thresholds n/(16m) and n/(4m) causes no rounding loss.",
+    "local_rates": "The quarter-density conditional estimate is exp(-k/32), hence exp(-n/(64m)). The three-quarter-density estimate is exp(-k/24), hence exp(-n/(48m)).",
+    "deterministic_energy": "The within-part pair sum is reindexed by each retained element exactly once. Normalization is m^2/(2n^2). Far counts n/(16m) and squared separation at least 64t/m yield energy>=2t. Near counts n/(4m), squared separation at least one quarter of the center-distance square, and the proved normalized tail >=200t yield energy>=200t/32>=2t.",
+    "union_bound_and_finiteness": "Failure is included in a union over the finite subtype S. The actual finite event union bound gives n exp(-n/(64m)) or n exp(-n/(48m)); no independence among rows or parts is asserted.",
+    "logarithmic_absorption": "With n>=2, log n>0. For c=64 or 48, 10c<=1000 and m<=n/(1000logn) imply n/(cm)>=10logn, so n exp(-n/(cm))<=n^-9. All rates and denominators match the displayed source bounds.",
+    "center_choice": "An actual center witnessing D_t is retained for the fixed frequency and threshold. A center simultaneously independent of all t is unnecessary for these pointwise concentration estimates.",
+    "analytical_assumptions": "The acceptance-level concentration theorems take no Fourier, anti-concentration, concentration-probability, constant-fiber, or independence hypothesis. Explicit counting and deterministic geometry supply those steps."
+  },
+  "source_discrepancies": [
+    {
+      "location": "v1 proof of Lemma 3.2, paragraph S3.p15",
+      "printed": "265t/m twice, followed by 1024t/m",
+      "correction": "The radius is 16 sqrt(t/m), whose square is 256t/m; 4*256=1024 and (2000-1024)/4=244>=200. The formal dependency uses 256 and proves 244 before weakening to the stated 200.",
+      "effect": "Preserves the stated source lemma; no unsupported 4*265<=1024 step is used."
+    },
+    {
+      "location": "v1 prose S3.p11 and S3.p14",
+      "printed": "B_(32t)",
+      "authoritative_statement": "Lemma 3.3 and its proof use B_(2000t).",
+      "effect": "The formal statement follows the theorem and actual 2000-threshold argument, not the stale prose."
+    }
+  ],
+  "verification_scope": {
+    "kind": "Manual mathematical/source correspondence review",
+    "native_compilation_run_by_reviewer_for_this_review": false,
+    "owned_declaration_axiom_audit_run_by_reviewer_for_this_review": false,
+    "root_reported_native_status": "GREEN under --trust=0 and fatal warnings before the source freeze",
+    "acceptance_boundary": "This JSON does not establish kernel proof acceptance, axiom-audit success, or repository-wide validation. Those are separate, source-bound checks run and recorded by the root integration owner.",
+    "final_expected_layer_wrapper": "Not included in this frozen concentration receipt. The independently requested final expected-layer wrapper must be reviewed against its own frozen bytes."
+  },
+  "findings": [],
+  "limitations": [
+    "The review concerns only the exact target hash and the source correspondences stated here.",
+    "No native job was started; no global metadata, aggregate imports, historical receipts, or Git state was changed."
+  ]
+}

@@ -1,0 +1,6 @@
+'HSSCP04.SignedCharts.packet_signed_ledger' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HSSCP04.SignedCharts.finite_coverage_returns_energy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HSSCP04.SignedCharts.narrow_certificate_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HSSCP04.SignedCharts.SignedBudgetDerivation.sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HSSCP04.SignedCharts.SignedBudgetDerivation.depth_le_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HSSCP04.SignedCharts.uniform_certified_charts_imply_HSS' depends on axioms: [propext, Classical.choice, Quot.sound]

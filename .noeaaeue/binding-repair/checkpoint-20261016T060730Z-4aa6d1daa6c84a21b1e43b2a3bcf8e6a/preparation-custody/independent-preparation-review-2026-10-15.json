@@ -1,0 +1,55 @@
+{
+  "schema": "additive-character-integration-read-only-review-v1",
+  "scope": "Read-only checks of exact retained bytes, source roles, exports, guide bindings and documentation receipts. No native verification, source edit, shared metadata edit or proof admission performed.",
+  "checkpoint": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a",
+  "previous_archives_match_manifest": true,
+  "v5_contract_unchanged": true,
+  "installed_observation_matches_reviewed_proposal": true,
+  "observation_identity": "daa292754c42105febb7dc614d8c9861863d29f8dd608d1b7aead9270d988d39",
+  "observed_sources": 871,
+  "public_library_sources": 445,
+  "candidate_sources": 74,
+  "observation_inputs_and_all_source_hashes_current": true,
+  "catalog_current_projection_matches_observation": true,
+  "catalog_projection_mathematical_admission": false,
+  "catalog_projection_public_release_eligible": false,
+  "owned_source_roles": {"library": 2, "positive-check": 1, "negative-control": 5},
+  "root_delta_from_registration_preimage": {
+    "added": [
+      "import GRWTSK.Analysis.Fourier.FiniteAdditiveProjector",
+      "import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.AdditiveCharacterMoments"
+    ],
+    "removed": []
+  },
+  "other_pending_six_remain_candidate_only": [
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixReferenceMissingSupport.lean",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableReferenceTransport.lean",
+    "GRWTSK/Combinatorics/DirectedGraph/PrefixTableReferenceTransport.lean",
+    "GRWTSK/NumberTheory/Cyclotomic/Checks/Negative/ThirdCyclotomicCharacterZeroCube.lean",
+    "GRWTSK/NumberTheory/Cyclotomic/Checks/Positive/ThirdCyclotomicCharacters.lean",
+    "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicCharacters.lean"
+  ],
+  "current_contract": {
+    "path": ".noeaaeue/bindings/moebius-current-inputs-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a.json",
+    "sha256": "0791c32404dc105093dee2a1f06cc51d84ccc74b2f6a85e0bc7a00a0afa46ef5",
+    "modules": 448,
+    "assets": 24,
+    "kernel_checked": false
+  },
+  "final_guide_sha256": {
+    "docs/mathematics/Analysis/Fourier/FiniteAdditiveProjector/projector.md": "1a76f7f9abd8f3a532a4a279f034b854ae7b3a9680dd5c158181a584741b9cb4",
+    "docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-moments.md": "ba693bf12cfdaac465eb2bdbedbafb1479468f17fd8b74bf6b19c163c40d52d9"
+  },
+  "guide_source_bindings_current": true,
+  "guide_selected_receipt_sha256": "4ac00cdc45b0fcf7bff4c8650bad3b5ae05f1cc4ed015accefdd96b0863b4a00",
+  "final_documentation_receipts": {
+    "directory": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-documentation-final-2026-10-15",
+    "five_exit_codes": [0, 0, 0, 0, 0],
+    "all_log_hashes_match": true,
+    "all_recorded_scripts_stable": true
+  },
+  "defects_found": [],
+  "native_pipeline_outcome": "Not certified by this read-only review; retain and inspect the separate actual native receipts.",
+  "abc_proved": false,
+  "mathematical_acceptance_granted_by_this_record": false
+}

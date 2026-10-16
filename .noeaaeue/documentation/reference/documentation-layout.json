@@ -2695,7 +2695,7 @@
       "binding_reconciliation": "docs/mathematics/NumberTheory/Zeta/Riemann/inference-guards.md"
     },
     "docs/mathematics/LinearAlgebra/Schrodinger/transfer.md": {
-      "title": "Schrödinger transfer matrices",
+      "title": "Schr\u00f6dinger transfer matrices",
       "subject": "LinearAlgebra",
       "object": "Schrodinger",
       "primary_source": "GRWTSK/LinearAlgebra/SchrodingerTransfer.lean",
@@ -3208,7 +3208,7 @@
       "binding_reconciliation": "docs/mathematics/Analysis/Asymptotics/polynomial-error.md"
     },
     "docs/mathematics/NumberTheory/Moebius/matched-pickup.md": {
-      "title": "Matched averaging for the closed Möbius pickup",
+      "title": "Matched averaging for the closed M\u00f6bius pickup",
       "subject": "NumberTheory",
       "object": "Moebius",
       "primary_source": "GRWTSK/NumberTheory/Moebius/PrimitiveIdentification.lean",
@@ -3308,7 +3308,7 @@
       "category": "reference"
     },
     "docs/mathematics/NumberTheory/ArithmeticFunctions/density-correction.md": {
-      "title": "Complete density Möbius correction",
+      "title": "Complete density M\u00f6bius correction",
       "subject": "NumberTheory",
       "object": "ArithmeticFunctions",
       "primary_source": "GRWTSK/NumberTheory/ArithmeticFunctions/DensityMomentTails.lean",
@@ -3325,7 +3325,7 @@
       "binding_reconciliation": "docs/mathematics/NumberTheory/ArithmeticFunctions/density-correction.md"
     },
     "docs/mathematics/NumberTheory/ArithmeticFunctions/signed-cutoffs.md": {
-      "title": "Signed Möbius cutoff decomposition",
+      "title": "Signed M\u00f6bius cutoff decomposition",
       "subject": "NumberTheory",
       "object": "ArithmeticFunctions",
       "primary_source": "GRWTSK/NumberTheory/ArithmeticFunctions/SquarefreeMoebiusSum.lean",
@@ -3361,7 +3361,7 @@
       "category": "how-to"
     },
     "docs/mathematics/NumberTheory/LSeries/closed-moebius.md": {
-      "title": "Closed Möbius Dirichlet polynomials",
+      "title": "Closed M\u00f6bius Dirichlet polynomials",
       "subject": "NumberTheory",
       "object": "LSeries",
       "primary_source": "GRWTSK/NumberTheory/LSeries/ClosedMoebiusPolynomial.lean",
@@ -4355,7 +4355,7 @@
       "contribution": {
         "direction": "R.A. Jacob Martone",
         "formalization": "OpenAI Codex",
-        "scope": "Finite joint and product weighted moment identities and exact typed triple reindexing; classical Möbius inversion reused; no arithmetic bound or abc closure."
+        "scope": "Finite joint and product weighted moment identities and exact typed triple reindexing; classical M\u00f6bius inversion reused; no arithmetic bound or abc closure."
       }
     },
     "docs/mathematics/Combinatorics/DirectedGraph/prefix-compaction-schedule.md": {
@@ -4427,12 +4427,12 @@
       "primary_source": "GRWTSK/Analysis/Fourier/FiniteAdditiveProjector.lean",
       "source_sha256": "24a8c41508bdf2a7558d20b19434362e2656ac45b4141e01604c0ec16ddd413f",
       "status": "fresh-selected",
-      "evidence": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-checks-2026-10-15.json",
-      "verification_scope": "Exact finite selected local closure and controls in the retained receipt; no whole-library acceptance, cold dependency rebuild, arithmetic estimate or abc implication.",
+      "evidence": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json",
+      "verification_scope": "Exact finite selected local dependency closure and controls in the fresh integration receipt; exports do not imply whole-entrypoint replay, cold dependency rebuild, arithmetic estimate or abc implication.",
       "contribution": {
         "direction": "R.A. Jacob Martone",
         "formalization": "OpenAI Codex",
-        "scope": "Exact normalized finite character average and no-wrap integer-equality projector; no primality assumption, arithmetic estimate or conjecture implication.",
+        "scope": "Exact finite Complex-valued additive-character projector with explicit modulus, normalization and no-wrap bounds; no arithmetic estimate.",
         "upstream": "Mathlib and Lean authors and licenses retained; canonical character/orthogonality credits appear in the guide."
       }
     },
@@ -4443,22 +4443,60 @@
       "primary_source": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/AdditiveCharacterMoments.lean",
       "source_sha256": "c5064cd633443ae851924599b07d1aaeff56e7ab792783cd5e408e5a078e3113",
       "status": "fresh-selected",
-      "evidence": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-checks-2026-10-15.json",
-      "verification_scope": "Exact finite selected local closure and controls in the retained receipt; no whole-library acceptance, cold dependency rebuild, arithmetic estimate or abc implication.",
+      "evidence": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json",
+      "verification_scope": "Exact finite selected local dependency closure and controls in the fresh integration receipt; exports do not imply whole-entrypoint replay, cold dependency rebuild, arithmetic estimate or abc implication.",
       "contribution": {
         "direction": "R.A. Jacob Martone",
         "formalization": "OpenAI Codex",
-        "scope": "Exact finite Complex-valued joint-weight character moments with scaled coordinates and signed Mobius composition; radical-height estimates and integer abc remain open.",
+        "scope": "Complex-valued joint-weight primitive moments composed with the exact character projector and scaled divisor sectors; no coefficient transfer, estimate or abc implication.",
         "upstream": "Mathlib and Lean authors and licenses retained; canonical character/orthogonality credits appear in the guide."
       }
     },
     ".noeaaeue/documentation/current-validation-workflow.md": {
       "title": "Working with the current Lean repository",
       "category": "how-to"
+    },
+    "docs/mathematics/Analysis/Fourier/subset-sum-anticoncentration.md": {
+      "title": "Fixed-size subset sum anti-concentration",
+      "subject": "Analysis",
+      "object": "Fourier",
+      "primary_source": "GRWTSK/Analysis/Fourier/ZModBalancedExpectedLayers.lean",
+      "source_sha256": "6317a8b54aa66498b4d6565c581ca98edda7a08fec1f8a872dd5bfa70fded391",
+      "status": "fresh-selected",
+      "evidence": ".noeaaeue/evidence/Analysis/fourier/partition-concentration-checks-2026-10-15.json",
+      "contribution_record": ".noeaaeue/receipts/partition-exposure-concentration/contribution-status.json"
+    },
+    "docs/mathematics/Combinatorics/Sequences/conditional-partition-exposure.md": {
+      "title": "Conditional part exposure and finite sampling tails",
+      "subject": "Combinatorics",
+      "object": "Sequences",
+      "primary_source": "GRWTSK/Combinatorics/Sequences/ConditionalPartitionExposure.lean",
+      "source_sha256": "9ee487095c5298b2e1d20963abad6106575df5b1c2a4a866b87b758a10af8787",
+      "status": "fresh-selected",
+      "evidence": ".noeaaeue/evidence/Analysis/fourier/partition-concentration-checks-2026-10-15.json",
+      "contribution_record": ".noeaaeue/receipts/partition-exposure-concentration/contribution-status.json"
+    },
+    "docs/mathematics/Combinatorics/DirectedGraph/prefix-reference-transport.md": {
+      "title": "Transport of original references through finite prefix-table schedules",
+      "subject": "Combinatorics",
+      "object": "DirectedGraph",
+      "primary_source": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableReferenceTransport.lean",
+      "source_sha256": "a7600c33972405a31f6495b03789f9473cd914eb428d9a5f94c734f528e71d0c",
+      "status": "fresh-selected",
+      "evidence": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-reference-transport-checks-2026-10-15.json"
+    },
+    "docs/mathematics/NumberTheory/Cyclotomic/third-cyclotomic-characters.md": {
+      "title": "Cubic characters on good third-cyclotomic quotients",
+      "subject": "NumberTheory",
+      "object": "Cyclotomic",
+      "primary_source": "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicCharacters.lean",
+      "source_sha256": "c595e55f46838683758ea9c66379968ac75a6f86ddfb5dc099c302f9d497a051",
+      "status": "fresh-selected",
+      "evidence": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-characters-development-checks-2026-10-15-a7b1f5cb.json"
     }
   },
   "object_binding_registry": "docs/reference/object-source-bindings.json",
-  "object_binding_registry_sha256": "b3d34b9b504bf7199c15205132d962342c71cb2b1f51692b218e68346431fe12",
+  "object_binding_registry_sha256": "a77c12b75856f4d2b23f953d3ca362187f9b715523b74e864558498c966baf40",
   "navigation": {
     "schema": "subject-index-navigation-v1",
     "summary": "docs/reference/library-summary.json"

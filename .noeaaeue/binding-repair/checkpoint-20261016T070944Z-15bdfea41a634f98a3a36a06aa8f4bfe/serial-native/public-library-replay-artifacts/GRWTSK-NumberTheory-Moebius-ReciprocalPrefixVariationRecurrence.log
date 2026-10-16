@@ -1,0 +1,18 @@
+'GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationRecurrence.reciprocalPrefixVariationSquare_succ' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationRecurrence.reciprocalPrefixVariationSquare_eq_correlation_add_diagonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationRecurrence.reciprocalVariationDiagonal_le_harmonic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationRecurrence.reciprocalVariationDiagonal_le_log' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationRecurrence.reciprocalVariationPowerSaving_of_mertensCorrelationPowerSaving' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationRecurrence.criticalBoundary_of_reciprocalMertensCorrelationPowerSaving' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

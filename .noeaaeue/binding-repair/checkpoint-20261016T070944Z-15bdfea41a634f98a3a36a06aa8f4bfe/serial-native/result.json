@@ -1,0 +1,11 @@
+{
+  "status": "ALL_FOUR_STAGES_PASSED",
+  "finished_utc": "2026-10-16T08:58:30.992097+00:00",
+  "signals": [],
+  "stop_marker_present": false,
+  "records": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/records.json",
+  "records_sha256": "64d3a2128c62bfbdcc33070b69338f91dafcb3c1609da0db565e858bb4738b03",
+  "completed_stages": 4,
+  "not_run": [],
+  "scope": "Actual orchestration outcomes only; no broader mathematical acceptance."
+}

@@ -1,0 +1,533 @@
+{
+  "schema": "scoped-moebius-current-profile-qualified-v2",
+  "status": "CURRENT_SCOPED_PROFILE_QUALIFIED",
+  "scope": "Exact current five runtime pairs across three owners and five freshly compiled project-closure modules; not library-wide admission. Native Expr/universe equality, exact whitelist, safe originals, partial flags, ownership, source bytes, theorem type/value references, and six negative controls are required. Cached dependency sources are not replayed.",
+  "kernel_trust_level": 0,
+  "warnings_as_errors": true,
+  "native_threads": 1,
+  "sources": {
+    "GRWTSK/Logic/Certificates/ProofCoverage.lean": "9920ca52119c98e59e6fe42442e42f593975a1e29c8a5d5d5e6aaf05bfda0c97",
+    "GRWTSK/Logic/Locality/RevisionCertificates.lean": "c126cca40f7ad1a35ac06b5d1502647ce3c826edda79a2a6db2310035da0f2e4",
+    "GRWTSK/Order/Closure/FiniteDependencyClosure.lean": "e78778c5b623abadfc23a668517cb4b1652ef6365962263b8440f8a156af5dec",
+    "GRWTSK/Logic/Inference/FiniteRuleSystems.lean": "f54cb4c2f050a02fc2f3e66de3952ff10ddb0582ca096326bf11aef822b8fd02",
+    "GRWTSK/NumberTheory/ContinuedFractions/ScheduledDenominators.lean": "7ee299eed00ef1cf731e1e1b1ea7a507ae8e83d5ea0ed63f0861cf63f0e42f2c"
+  },
+  "configs": {
+    "lean-toolchain": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
+    "lakefile.toml": "a23f6d313f8458192328f09635ffef9078cb684374c2aac2743af541bf59b4e3",
+    "lake-manifest.json": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
+    ".noeaaeue/scripts/check_moebius_response.py": "ec5db25ef40104cff2c98f6f65801bfdd50e5b7b41856bcdd0b704743b644936",
+    ".noeaaeue/scripts/moebius_owner_census.py": "2d801d38c165c15aa539c7a0bb08a72e777b23fec813e8b98c1d184dcbd92b55",
+    ".noeaaeue/scripts/repository_paths.py": "4bd02ac496dc2fbd141b19f23ba86291db1618a0ae298a76beab28701ff24d22",
+    ".noeaaeue/bindings/moebius-current-profile-v2.json": "a3a139394cbb2b28ded498fa7be2b1251330b7b5c92299d180af154ae14d827a",
+    ".noeaaeue/checks/MoebiusResponseOwnerAuditCurrent.lean": "899dd97fb86ad0dcd4e1a5688a250f083744591a6580daad3a381fa77f6cc0bc",
+    ".noeaaeue/binding-repair/qualify_moebius_current_final.py": "c31aa1830c7b635bf7c0a39894b770e219846218a96d926437ac38710d1e5aa7"
+  },
+  "commands": [
+    {
+      "label": "current-observer",
+      "argv": [
+        "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "--trust=0",
+        "--threads=1",
+        "--memory=4096",
+        "-DwarningAsError=true",
+        "-o",
+        "/Users/think/Desktop/math/.noeaaeue/binding-repair/native/moebius-qualified-20261016T020450Z-943c5342/build/MoebiusResponseOwnerAudit.olean",
+        "MoebiusResponseOwnerAudit.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.7970349169918336,
+      "status": "completed",
+      "postcheck_passed": true,
+      "log": "logs/current-observer.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "current-qualified-owner-census",
+      "argv": [
+        "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "--trust=0",
+        "--threads=1",
+        "--memory=4096",
+        "-DwarningAsError=true",
+        "CurrentQualifiedAudit.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.7254453750210814,
+      "status": "completed",
+      "postcheck_passed": true,
+      "log": "logs/current-qualified-owner-census.log",
+      "log_sha256": "f74b9d335fea04b47fa2968c0b24e97831f04eb98787897c43fef3685793df96"
+    },
+    {
+      "label": "control-default-disabled-source",
+      "argv": [
+        "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "--trust=0",
+        "--threads=1",
+        "--memory=4096",
+        "-DwarningAsError=true",
+        "-o",
+        "/Users/think/Desktop/math/.noeaaeue/binding-repair/native/moebius-qualified-20261016T020450Z-943c5342/build/GRWTSK/Logic/Verification/Controls/GeneratedPartialDefaultDisabled.olean",
+        "GRWTSK/Logic/Verification/Controls/GeneratedPartialDefaultDisabled.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.1181142500136048,
+      "status": "completed",
+      "postcheck_passed": true,
+      "log": "logs/control-default-disabled-source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "control-default-disabled-audit",
+      "argv": [
+        "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "--trust=0",
+        "--threads=1",
+        "--memory=4096",
+        "-DwarningAsError=true",
+        "MoebiusProfileControls/DefaultDisabledAudit.lean"
+      ],
+      "exit_code": 1,
+      "seconds": 2.542669999995269,
+      "status": "completed",
+      "postcheck_passed": true,
+      "log": "logs/control-default-disabled-audit.log",
+      "log_sha256": "9c5de28910253dd40ce1a2637d014b6d8c38068bfd1f8bec3756ce1fc732558b"
+    },
+    {
+      "label": "control-unpaired-partial-source",
+      "argv": [
+        "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "--trust=0",
+        "--threads=1",
+        "--memory=4096",
+        "-DwarningAsError=true",
+        "-o",
+        "/Users/think/Desktop/math/.noeaaeue/binding-repair/native/moebius-qualified-20261016T020450Z-943c5342/build/GRWTSK/Logic/Verification/Controls/GeneratedPartialUnpairedPartial.olean",
+        "GRWTSK/Logic/Verification/Controls/GeneratedPartialUnpairedPartial.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.7459621669840999,
+      "status": "completed",
+      "postcheck_passed": true,
+      "log": "logs/control-unpaired-partial-source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "control-unpaired-partial-audit",
+      "argv": [
+        "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "--trust=0",
+        "--threads=1",
+        "--memory=4096",
+        "-DwarningAsError=true",
+        "MoebiusProfileControls/UnpairedPartialAudit.lean"
+      ],
+      "exit_code": 1,
+      "seconds": 1.9666142500354908,
+      "status": "completed",
+      "postcheck_passed": true,
+      "log": "logs/control-unpaired-partial-audit.log",
+      "log_sha256": "03def1208a84a720feeff85821b64148775b369d8722b8cae4f7186300ec39a1"
+    },
+    {
+      "label": "control-fake-paired-suffix-source",
+      "argv": [
+        "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "--trust=0",
+        "--threads=1",
+        "--memory=4096",
+        "-DwarningAsError=true",
+        "-o",
+        "/Users/think/Desktop/math/.noeaaeue/binding-repair/native/moebius-qualified-20261016T020450Z-943c5342/build/GRWTSK/Logic/Verification/Controls/GeneratedPartialFakePairedSuffix.olean",
+        "GRWTSK/Logic/Verification/Controls/GeneratedPartialFakePairedSuffix.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.7900759159820154,
+      "status": "completed",
+      "postcheck_passed": true,
+      "log": "logs/control-fake-paired-suffix-source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "control-fake-paired-suffix-audit",
+      "argv": [
+        "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "--trust=0",
+        "--threads=1",
+        "--memory=4096",
+        "-DwarningAsError=true",
+        "MoebiusProfileControls/FakePairedSuffixAudit.lean"
+      ],
+      "exit_code": 1,
+      "seconds": 2.3283729999675415,
+      "status": "completed",
+      "postcheck_passed": true,
+      "log": "logs/control-fake-paired-suffix-audit.log",
+      "log_sha256": "bca5857ff5a3d8197be60055e8ed82c07476a84409e78833bbe51cbc7349a1a2"
+    },
+    {
+      "label": "control-unrelated-unsafe-source",
+      "argv": [
+        "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "--trust=0",
+        "--threads=1",
+        "--memory=4096",
+        "-DwarningAsError=true",
+        "-o",
+        "/Users/think/Desktop/math/.noeaaeue/binding-repair/native/moebius-qualified-20261016T020450Z-943c5342/build/GRWTSK/Logic/Verification/Controls/GeneratedPartialUnrelatedUnsafe.olean",
+        "GRWTSK/Logic/Verification/Controls/GeneratedPartialUnrelatedUnsafe.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.7053163749515079,
+      "status": "completed",
+      "postcheck_passed": true,
+      "log": "logs/control-unrelated-unsafe-source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "control-unrelated-unsafe-audit",
+      "argv": [
+        "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "--trust=0",
+        "--threads=1",
+        "--memory=4096",
+        "-DwarningAsError=true",
+        "MoebiusProfileControls/UnrelatedUnsafeAudit.lean"
+      ],
+      "exit_code": 1,
+      "seconds": 1.9227196669671685,
+      "status": "completed",
+      "postcheck_passed": true,
+      "log": "logs/control-unrelated-unsafe-audit.log",
+      "log_sha256": "be6f3cdeac8083b83c694d08a28267182b5a078012e76158146ca0d7c6cb76b7"
+    },
+    {
+      "label": "control-owner-custom-axiom-source",
+      "argv": [
+        "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "--trust=0",
+        "--threads=1",
+        "--memory=4096",
+        "-DwarningAsError=true",
+        "-o",
+        "/Users/think/Desktop/math/.noeaaeue/binding-repair/native/moebius-qualified-20261016T020450Z-943c5342/build/GRWTSK/Logic/Verification/Controls/GeneratedPartialOwnerCustomAxiom.olean",
+        "GRWTSK/Logic/Verification/Controls/GeneratedPartialOwnerCustomAxiom.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.6872512919944711,
+      "status": "completed",
+      "postcheck_passed": true,
+      "log": "logs/control-owner-custom-axiom-source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "control-owner-custom-axiom-audit",
+      "argv": [
+        "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "--trust=0",
+        "--threads=1",
+        "--memory=4096",
+        "-DwarningAsError=true",
+        "MoebiusProfileControls/OwnerCustomAxiomAudit.lean"
+      ],
+      "exit_code": 1,
+      "seconds": 1.6675314579624683,
+      "status": "completed",
+      "postcheck_passed": true,
+      "log": "logs/control-owner-custom-axiom-audit.log",
+      "log_sha256": "b27fac5287bbc770c420730be66aa3939b1734795bd77813df64375a374fa52d"
+    },
+    {
+      "label": "control-wrong-profile-sha-source",
+      "argv": [
+        "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "--trust=0",
+        "--threads=1",
+        "--memory=4096",
+        "-DwarningAsError=true",
+        "-o",
+        "/Users/think/Desktop/math/.noeaaeue/binding-repair/native/moebius-qualified-20261016T020450Z-943c5342/build/GRWTSK/Logic/Verification/Controls/GeneratedPartialWrongProfileSha.olean",
+        "GRWTSK/Logic/Verification/Controls/GeneratedPartialWrongProfileSha.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.5935752500081435,
+      "status": "completed",
+      "postcheck_passed": true,
+      "log": "logs/control-wrong-profile-sha-source.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "control-wrong-profile-sha-audit",
+      "argv": [
+        "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "--trust=0",
+        "--threads=1",
+        "--memory=4096",
+        "-DwarningAsError=true",
+        "MoebiusProfileControls/WrongProfileShaAudit.lean"
+      ],
+      "exit_code": 1,
+      "seconds": 1.4946901249932125,
+      "status": "completed",
+      "postcheck_passed": true,
+      "log": "logs/control-wrong-profile-sha-audit.log",
+      "log_sha256": "a7e05bb654ec5627115bc4e9d2eac789761b5fa0c23804b2a1e0f91c8f2aa8ee"
+    }
+  ],
+  "generated_objects": {
+    "/Users/think/Desktop/math/.noeaaeue/binding-repair/native/moebius-qualified-20261016T020450Z-943c5342/build/GRWTSK/Order/Closure/FiniteDependencyClosure.olean": "4cb044ffc3e07b83e316bae0ec8ce8454ed4ec763ed52380a467ae75f392a6c0",
+    "/Users/think/Desktop/math/.noeaaeue/binding-repair/native/moebius-qualified-20261016T020450Z-943c5342/build/GRWTSK/NumberTheory/ContinuedFractions/ScheduledDenominators.olean": "23e2ad7cd9115f94ac111643f837be012c9bf7bc044f8f6880ca91096bff4e10",
+    "/Users/think/Desktop/math/.noeaaeue/binding-repair/native/moebius-qualified-20261016T020450Z-943c5342/build/GRWTSK/Logic/Certificates/ProofCoverage.olean": "759c9951509046eb4e039a4c672b2a527f421f816fb7044cdd9b59ae2766c242",
+    "/Users/think/Desktop/math/.noeaaeue/binding-repair/native/moebius-qualified-20261016T020450Z-943c5342/build/GRWTSK/Logic/Inference/FiniteRuleSystems.olean": "c6a6285bd9b5f598cf5d5ee57574f59d9b8703d5feb6ca06c97b4ccc2c411af5",
+    "/Users/think/Desktop/math/.noeaaeue/binding-repair/native/moebius-qualified-20261016T020450Z-943c5342/build/GRWTSK/Logic/Locality/RevisionCertificates.olean": "28fe9c601d68daf188de725810371dd904dc61bfdcd69b532f5666d0706a7ff3",
+    "/Users/think/Desktop/math/.noeaaeue/binding-repair/native/moebius-qualified-20261016T020450Z-943c5342/build/MoebiusResponseOwnerAudit.olean": "3b28e3259ea8231b8f276cb5b2cb7cd5604703102ddf123b53d24392e96ccec3",
+    "/Users/think/Desktop/math/.noeaaeue/binding-repair/native/moebius-qualified-20261016T020450Z-943c5342/build/GRWTSK/Logic/Verification/Controls/GeneratedPartialDefaultDisabled.olean": "e6f796a361c6064c8ed0dd62ca6b7f24e070cbd5856adb7f509f89bcc8e6cd91",
+    "/Users/think/Desktop/math/.noeaaeue/binding-repair/native/moebius-qualified-20261016T020450Z-943c5342/build/GRWTSK/Logic/Verification/Controls/GeneratedPartialUnpairedPartial.olean": "8a95515635b2a09aff4facb80aac67a6e46965b3774a9e41f4bb68377c46fce4",
+    "/Users/think/Desktop/math/.noeaaeue/binding-repair/native/moebius-qualified-20261016T020450Z-943c5342/build/GRWTSK/Logic/Verification/Controls/GeneratedPartialFakePairedSuffix.olean": "00020f5c1cc6b4967ad359596f730c05844edd0a480a33f085eceb03de29193d",
+    "/Users/think/Desktop/math/.noeaaeue/binding-repair/native/moebius-qualified-20261016T020450Z-943c5342/build/GRWTSK/Logic/Verification/Controls/GeneratedPartialUnrelatedUnsafe.olean": "ff0ef3cdd5ff3d8c76b8efc45a83ef80d180cfb5f822e61843e056e5e67ff26c",
+    "/Users/think/Desktop/math/.noeaaeue/binding-repair/native/moebius-qualified-20261016T020450Z-943c5342/build/GRWTSK/Logic/Verification/Controls/GeneratedPartialOwnerCustomAxiom.olean": "3fcfea8246d8917043fc6a82718cc797457728923daf7cfc9360e62405f2385d",
+    "/Users/think/Desktop/math/.noeaaeue/binding-repair/native/moebius-qualified-20261016T020450Z-943c5342/build/GRWTSK/Logic/Verification/Controls/GeneratedPartialWrongProfileSha.olean": "e713b855de188a52ddb57f51482e1973cab6ec8c494b1b3b49cfe7fd68cf5d9c"
+  },
+  "prior_fresh_source_replay": {
+    "receipt": ".noeaaeue/binding-repair/native/moebius-current-20261016T020032Z-b0c20a0b/receipt.json",
+    "sha256": "d37e9076f93a41dde5b3c1e2bcab456e3bd04ceca14252037c5975ce5357987e",
+    "source_command_labels": [
+      "source-0",
+      "source-1",
+      "source-2",
+      "source-3",
+      "source-4"
+    ]
+  },
+  "profile_sha256": "53256c3d4956d2ef48909d4347d216c625e134fd5b51f7d906ccbe13e0bd3d0f",
+  "profile_metadata_sha256": "a3a139394cbb2b28ded498fa7be2b1251330b7b5c92299d180af154ae14d827a",
+  "helper_sha256": "899dd97fb86ad0dcd4e1a5688a250f083744591a6580daad3a381fa77f6cc0bc",
+  "negative_controls": [
+    {
+      "case": "default-disabled",
+      "fixture_source_sha256": "be60f4e9cbd0df93a1c9c272c083102c71d15ddcabecba1ffaf299f435f06c84",
+      "wrapper_source_sha256": "a73efee6f314a164fa6614a47aab86151e7ab1d6116dc8033550b7bfe6a0578c",
+      "oracle": {
+        "rejected": true,
+        "permission_gate": false,
+        "complete_census_required": true,
+        "declaration_count": 420,
+        "owner_count": 6,
+        "matched_errors": [
+          "project trust audit failed: [partial declaration: GRWTSK.ProofHorizon.CorkscrewChamberCap.affectedClosure._unsafe_rec, partial declaration: GRWTSK.ProofHorizon.CorkscrewChamberCap.routeClosureFrom._unsafe_rec, partial declaration: GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator._unsafe_rec, partial declaration: GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator._unsafe_rec, partial declaration: GRWTSK.RiemannHypothesis.BranchSequenceRealization.numerator._unsafe_rec]"
+        ],
+        "expected_violations": [
+          "partial declaration: GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator._unsafe_rec",
+          "partial declaration: GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator._unsafe_rec",
+          "partial declaration: GRWTSK.RiemannHypothesis.BranchSequenceRealization.numerator._unsafe_rec",
+          "partial declaration: GRWTSK.ProofHorizon.CorkscrewChamberCap.affectedClosure._unsafe_rec",
+          "partial declaration: GRWTSK.ProofHorizon.CorkscrewChamberCap.routeClosureFrom._unsafe_rec"
+        ],
+        "independent_parser_reason": "unsafe, partial, or axiom declaration: GRWTSK.ProofHorizon.CorkscrewChamberCap.affectedClosure._unsafe_rec"
+      }
+    },
+    {
+      "case": "unpaired-partial",
+      "fixture_source_sha256": "e3a6510cdff0cd1db31d0619f70ade3532a41c78f35842458dcfb8423039ed08",
+      "wrapper_source_sha256": "c371b90af57c93ef91bf13f491964a2eb45124295b20d0ef7a77719a1e699a49",
+      "oracle": {
+        "rejected": true,
+        "permission_gate": false,
+        "complete_census_required": true,
+        "declaration_count": 420,
+        "owner_count": 6,
+        "matched_errors": [
+          "project trust audit failed: [partial declaration: GRWTSK.Logic.Verification.Controls.GeneratedPartialUnpairedPartial.hostilePartial._unsafe_rec]"
+        ],
+        "expected_violations": [
+          "partial declaration: GRWTSK.Logic.Verification.Controls.GeneratedPartialUnpairedPartial.hostilePartial._unsafe_rec"
+        ],
+        "independent_parser_reason": "unsafe, unpaired partial, or axiom declaration: GRWTSK.Logic.Verification.Controls.GeneratedPartialUnpairedPartial.hostilePartial._unsafe_rec"
+      }
+    },
+    {
+      "case": "fake-paired-suffix",
+      "fixture_source_sha256": "0801fb87389845e05561fc4e6bc85f198ed47404eeda27efb5458b7026ddca70",
+      "wrapper_source_sha256": "f28f283964fecd000ee213d4078b63f8188efb95d3f1bc3c55945e1bacd4e434",
+      "oracle": {
+        "rejected": true,
+        "permission_gate": false,
+        "complete_census_required": true,
+        "declaration_count": 421,
+        "owner_count": 6,
+        "matched_errors": [
+          "project trust audit failed: [partial declaration: GRWTSK.Logic.Verification.Controls.GeneratedPartialFakePairedSuffix.hostilePartial._unsafe_rec]"
+        ],
+        "expected_violations": [
+          "partial declaration: GRWTSK.Logic.Verification.Controls.GeneratedPartialFakePairedSuffix.hostilePartial._unsafe_rec"
+        ],
+        "independent_parser_reason": "unsafe, unpaired partial, or axiom declaration: GRWTSK.Logic.Verification.Controls.GeneratedPartialFakePairedSuffix.hostilePartial._unsafe_rec"
+      }
+    },
+    {
+      "case": "unrelated-unsafe",
+      "fixture_source_sha256": "632be11228abfa152ccf0b92f5fe89c37e043d7ae446997366a8d4408f9c3de5",
+      "wrapper_source_sha256": "86904729dbad9c75cec5683caffd0b2f3dc9953bae2749409967ad7568c85de5",
+      "oracle": {
+        "rejected": true,
+        "permission_gate": false,
+        "complete_census_required": true,
+        "declaration_count": 420,
+        "owner_count": 6,
+        "matched_errors": [
+          "project trust audit failed: [unsafe declaration: GRWTSK.Logic.Verification.Controls.GeneratedPartialUnrelatedUnsafe.hostileUnsafe]"
+        ],
+        "expected_violations": [
+          "unsafe declaration: GRWTSK.Logic.Verification.Controls.GeneratedPartialUnrelatedUnsafe.hostileUnsafe"
+        ],
+        "independent_parser_reason": "unsafe, unpaired partial, or axiom declaration: GRWTSK.Logic.Verification.Controls.GeneratedPartialUnrelatedUnsafe.hostileUnsafe"
+      }
+    },
+    {
+      "case": "owner-custom-axiom",
+      "fixture_source_sha256": "d14aeee7a24492b4a0f651850e0046c4301dcc864066f04a449aa0498dfb850e",
+      "wrapper_source_sha256": "06cca14df2961eb11fc431dd98469fbc95c5706f147aebe6517a3ea241f00afa",
+      "oracle": {
+        "rejected": true,
+        "permission_gate": false,
+        "complete_census_required": true,
+        "declaration_count": 421,
+        "owner_count": 6,
+        "matched_errors": [
+          "project trust audit failed: [new axiom: GRWTSK.Logic.Verification.Controls.GeneratedPartialOwnerCustomAxiom.hostileAxiom, unapproved axiom GRWTSK.Logic.Verification.Controls.GeneratedPartialOwnerCustomAxiom.hostileAxiom in GRWTSK.Logic.Verification.Controls.GeneratedPartialOwnerCustomAxiom.hostileAxiom, unapproved axiom GRWTSK.Logic.Verification.Controls.GeneratedPartialOwnerCustomAxiom.hostileAxiom in GRWTSK.Logic.Verification.Controls.GeneratedPartialOwnerCustomAxiom.consumesHostileAxiom]"
+        ],
+        "expected_violations": [
+          "new axiom: GRWTSK.Logic.Verification.Controls.GeneratedPartialOwnerCustomAxiom.hostileAxiom",
+          "unapproved axiom GRWTSK.Logic.Verification.Controls.GeneratedPartialOwnerCustomAxiom.hostileAxiom in GRWTSK.Logic.Verification.Controls.GeneratedPartialOwnerCustomAxiom.hostileAxiom",
+          "unapproved axiom GRWTSK.Logic.Verification.Controls.GeneratedPartialOwnerCustomAxiom.hostileAxiom in GRWTSK.Logic.Verification.Controls.GeneratedPartialOwnerCustomAxiom.consumesHostileAxiom"
+        ],
+        "independent_parser_reason": "unsafe, unpaired partial, or axiom declaration: GRWTSK.Logic.Verification.Controls.GeneratedPartialOwnerCustomAxiom.hostileAxiom"
+      }
+    },
+    {
+      "case": "wrong-profile-sha",
+      "fixture_source_sha256": "69c9f6ddfc5c91b6f78c1e2c5fcb294aaec4cccb163e3f3ca6fe6ebe4799b9ce",
+      "wrapper_source_sha256": "75ada0ef686dfdbd228648a8e907e6c96c6b66443934bcf07306a258c4b689de",
+      "oracle": {
+        "rejected": true,
+        "permission_gate": true,
+        "complete_census_required": false,
+        "matched_errors": [
+          "unapproved generated-partial profile permission"
+        ]
+      }
+    }
+  ],
+  "lean_binary_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "dependency_mode": "Pinned cached package objects checked by Lean at trust=0; package source files not freshly replayed.",
+  "package_object_roots": [
+    "/Users/think/Desktop/math/.lake/packages/Cli/.lake/build/lib/lean",
+    "/Users/think/Desktop/math/.lake/packages/batteries/.lake/build/lib/lean",
+    "/Users/think/Desktop/math/.lake/packages/Qq/.lake/build/lib/lean",
+    "/Users/think/Desktop/math/.lake/packages/aesop/.lake/build/lib/lean",
+    "/Users/think/Desktop/math/.lake/packages/proofwidgets/.lake/build/lib/lean",
+    "/Users/think/Desktop/math/.lake/packages/importGraph/.lake/build/lib/lean",
+    "/Users/think/Desktop/math/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+    "/Users/think/Desktop/math/.lake/packages/plausible/.lake/build/lib/lean",
+    "/Users/think/Desktop/math/.lake/packages/mathlib/.lake/build/lib/lean"
+  ],
+  "frozen_inputs": {
+    "GRWTSK/Logic/Certificates/ProofCoverage.lean": "9920ca52119c98e59e6fe42442e42f593975a1e29c8a5d5d5e6aaf05bfda0c97",
+    "GRWTSK/Logic/Locality/RevisionCertificates.lean": "c126cca40f7ad1a35ac06b5d1502647ce3c826edda79a2a6db2310035da0f2e4",
+    "GRWTSK/Order/Closure/FiniteDependencyClosure.lean": "e78778c5b623abadfc23a668517cb4b1652ef6365962263b8440f8a156af5dec",
+    "GRWTSK/Logic/Inference/FiniteRuleSystems.lean": "f54cb4c2f050a02fc2f3e66de3952ff10ddb0582ca096326bf11aef822b8fd02",
+    "GRWTSK/NumberTheory/ContinuedFractions/ScheduledDenominators.lean": "7ee299eed00ef1cf731e1e1b1ea7a507ae8e83d5ea0ed63f0861cf63f0e42f2c",
+    "MoebiusResponseOwnerAudit.lean": "899dd97fb86ad0dcd4e1a5688a250f083744591a6580daad3a381fa77f6cc0bc",
+    "CurrentQualifiedAudit.lean": "498dee89395ac20260c4f5daeaacd5661de72e47f75bb47131669a2fb21fd50d",
+    "GRWTSK/Logic/Verification/Controls/GeneratedPartialDefaultDisabled.lean": "be60f4e9cbd0df93a1c9c272c083102c71d15ddcabecba1ffaf299f435f06c84",
+    "MoebiusProfileControls/DefaultDisabledAudit.lean": "a73efee6f314a164fa6614a47aab86151e7ab1d6116dc8033550b7bfe6a0578c",
+    "GRWTSK/Logic/Verification/Controls/GeneratedPartialUnpairedPartial.lean": "e3a6510cdff0cd1db31d0619f70ade3532a41c78f35842458dcfb8423039ed08",
+    "MoebiusProfileControls/UnpairedPartialAudit.lean": "c371b90af57c93ef91bf13f491964a2eb45124295b20d0ef7a77719a1e699a49",
+    "GRWTSK/Logic/Verification/Controls/GeneratedPartialFakePairedSuffix.lean": "0801fb87389845e05561fc4e6bc85f198ed47404eeda27efb5458b7026ddca70",
+    "MoebiusProfileControls/FakePairedSuffixAudit.lean": "f28f283964fecd000ee213d4078b63f8188efb95d3f1bc3c55945e1bacd4e434",
+    "GRWTSK/Logic/Verification/Controls/GeneratedPartialUnrelatedUnsafe.lean": "632be11228abfa152ccf0b92f5fe89c37e043d7ae446997366a8d4408f9c3de5",
+    "MoebiusProfileControls/UnrelatedUnsafeAudit.lean": "86904729dbad9c75cec5683caffd0b2f3dc9953bae2749409967ad7568c85de5",
+    "GRWTSK/Logic/Verification/Controls/GeneratedPartialOwnerCustomAxiom.lean": "d14aeee7a24492b4a0f651850e0046c4301dcc864066f04a449aa0498dfb850e",
+    "MoebiusProfileControls/OwnerCustomAxiomAudit.lean": "06cca14df2961eb11fc431dd98469fbc95c5706f147aebe6517a3ea241f00afa",
+    "GRWTSK/Logic/Verification/Controls/GeneratedPartialWrongProfileSha.lean": "69c9f6ddfc5c91b6f78c1e2c5fcb294aaec4cccb163e3f3ca6fe6ebe4799b9ce",
+    "MoebiusProfileControls/WrongProfileShaAudit.lean": "75ada0ef686dfdbd228648a8e907e6c96c6b66443934bcf07306a258c4b689de"
+  },
+  "qualified_census": {
+    "status": "OWNER_CENSUS_PARSED",
+    "owned_module_count": 5,
+    "declaration_count": 419,
+    "source_sha256_by_owner": {
+      "GRWTSK.Logic.Certificates.ProofCoverage": "9920ca52119c98e59e6fe42442e42f593975a1e29c8a5d5d5e6aaf05bfda0c97",
+      "GRWTSK.Logic.Inference.FiniteRuleSystems": "f54cb4c2f050a02fc2f3e66de3952ff10ddb0582ca096326bf11aef822b8fd02",
+      "GRWTSK.Logic.Locality.RevisionCertificates": "c126cca40f7ad1a35ac06b5d1502647ce3c826edda79a2a6db2310035da0f2e4",
+      "GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators": "7ee299eed00ef1cf731e1e1b1ea7a507ae8e83d5ea0ed63f0861cf63f0e42f2c",
+      "GRWTSK.Order.Closure.FiniteDependencyClosure": "e78778c5b623abadfc23a668517cb4b1652ef6365962263b8440f8a156af5dec"
+    },
+    "zero_declaration_modules": [],
+    "allowed_transitive_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "runtime_exception_enabled": true,
+    "generated_partial_profile_enabled": true,
+    "generated_partial_profile_sha256": "53256c3d4956d2ef48909d4347d216c625e134fd5b51f7d906ccbe13e0bd3d0f",
+    "generated_partial_profile": {
+      "kind": "pinned-lean-generated-partial-recursor-profile",
+      "profile_sha256": "53256c3d4956d2ef48909d4347d216c625e134fd5b51f7d906ccbe13e0bd3d0f",
+      "entries": [
+        {
+          "helper": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator._unsafe_rec",
+          "original": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator",
+          "owner": "GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators",
+          "owner_source_sha256": "7ee299eed00ef1cf731e1e1b1ea7a507ae8e83d5ea0ed63f0861cf63f0e42f2c"
+        },
+        {
+          "helper": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator._unsafe_rec",
+          "original": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator",
+          "owner": "GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators",
+          "owner_source_sha256": "7ee299eed00ef1cf731e1e1b1ea7a507ae8e83d5ea0ed63f0861cf63f0e42f2c"
+        },
+        {
+          "helper": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.numerator._unsafe_rec",
+          "original": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.numerator",
+          "owner": "GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators",
+          "owner_source_sha256": "7ee299eed00ef1cf731e1e1b1ea7a507ae8e83d5ea0ed63f0861cf63f0e42f2c"
+        },
+        {
+          "helper": "GRWTSK.ProofHorizon.CorkscrewChamberCap.affectedClosure._unsafe_rec",
+          "original": "GRWTSK.ProofHorizon.CorkscrewChamberCap.affectedClosure",
+          "owner": "GRWTSK.Order.Closure.FiniteDependencyClosure",
+          "owner_source_sha256": "e78778c5b623abadfc23a668517cb4b1652ef6365962263b8440f8a156af5dec"
+        },
+        {
+          "helper": "GRWTSK.ProofHorizon.CorkscrewChamberCap.routeClosureFrom._unsafe_rec",
+          "original": "GRWTSK.ProofHorizon.CorkscrewChamberCap.routeClosureFrom",
+          "owner": "GRWTSK.Logic.Inference.FiniteRuleSystems",
+          "owner_source_sha256": "f54cb4c2f050a02fc2f3e66de3952ff10ddb0582ca096326bf11aef822b8fd02"
+        }
+      ]
+    },
+    "observer_source_sha256": "899dd97fb86ad0dcd4e1a5688a250f083744591a6580daad3a381fa77f6cc0bc",
+    "observer_native_reference_sha256": "2ef82eba00df6982ba9f693896d77eff68d9cf39e9def13a29cc9c2eb4e26c74",
+    "parser_native_reference_sha256": "fa91959ff3d27586222b7bf600597a6c7acafaec6e21a36751dfcb2dfb83b747",
+    "unsafe_partial_reference_scope": "owned declaration flags and direct theorem TYPE OR VALUE references to the exact 5 profile helpers; not an arbitrary transitive reference graph",
+    "fresh_kernel_check": "caller must link this parse result to its actual immutable trust=0/Werr run"
+  },
+  "declaration_count": 419,
+  "owner_count": 5,
+  "known_generated_helpers": [
+    "GRWTSK.ProofHorizon.CorkscrewChamberCap.affectedClosure._unsafe_rec",
+    "GRWTSK.ProofHorizon.CorkscrewChamberCap.routeClosureFrom._unsafe_rec",
+    "GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator._unsafe_rec",
+    "GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator._unsafe_rec",
+    "GRWTSK.RiemannHypothesis.BranchSequenceRealization.numerator._unsafe_rec"
+  ],
+  "kernel_checked": true,
+  "library_wide_admission": false,
+  "stale_historical_profiles_rebound": false
+}

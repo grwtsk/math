@@ -1,0 +1,6 @@
+'PPNCP04.Charts.spectral_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PPNCP04.Charts.broad_narrow_integral_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PPNCP04.Charts.childRelation_wellFounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PPNCP04.Charts.nondecreasing_child_rejected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PPNCP04.Charts.paid_extraction_implies_NC' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PPNCP04.Charts.paid_spectral_step' depends on axioms: [propext, Classical.choice, Quot.sound]

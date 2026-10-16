@@ -1,0 +1,13 @@
+{
+  "argv": [
+    ".noeaaeue/.local/additive-character-integration-finish/prepare_checkpoint.py",
+    "--writers-paused",
+    "--install",
+    ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a"
+  ],
+  "at_utc": "2026-10-16T06:07:57.921587+00:00",
+  "new_sha256": "0b1f9ee559b1a4663698d34b09fa44dba46be9f130f9b4a6083d389020c00765",
+  "observation_identity": "daa292754c42105febb7dc614d8c9861863d29f8dd608d1b7aead9270d988d39",
+  "previous_sha256": "79d9e73263a6790d60380d354fe472188045ebda3090f7ffdbd10d3e94e62614",
+  "status": "EXPLICIT_INSTALL_REQUEST_NOT_ACCEPTANCE"
+}

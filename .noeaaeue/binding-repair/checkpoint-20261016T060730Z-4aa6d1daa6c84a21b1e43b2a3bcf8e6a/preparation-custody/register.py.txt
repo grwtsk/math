@@ -1,0 +1,313 @@
+"""Apply the reviewed additive-character source/export integration after fresh replay.
+
+Preparation is inert. Invoke with --apply only after inspecting the generated
+sources, successful receipt, and two mathematical articles. Shared preimages
+are archived and every observed input is compared again before any shared write.
+"""
+import argparse
+import copy
+import hashlib
+import json
+import os
+from pathlib import Path
+import re
+import subprocess
+import sys
+import uuid
+from collections import Counter
+
+
+ROOT = Path('/Users/think/Desktop/math')
+sys.path.insert(0, str(ROOT / '.noeaaeue/scripts'))
+import check_math_trust as guard
+
+BASE = '.noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/'
+RECEIPT = BASE + 'additive-character-integration-checks-2026-10-15.json'
+CONTRIBUTION = BASE + 'additive-character-integration-contribution-2026-10-15.json'
+RUNNER = '.noeaaeue/scripts/check_additive_character_moments.py'
+HELPER = '.noeaaeue/.local/additive-character-integration-finish/register.py'
+PREVIOUS_STAGE = [BASE + name for name in [
+    'additive-character-checks-2026-10-15.json',
+    'additive-character-contribution-2026-10-15.json',
+    'additive-character-source-bindings-2026-10-15.json',
+    'additive-character-integration-2026-10-15.json',
+    'additive-character-status-2026-10-15.json',
+    'abc-resume-additive-character-2026-10-15.json',
+    'abc-proof-hypergraph-additive-character-2026-10-15.json']]
+GENERIC = 'GRWTSK/Analysis/Fourier/FiniteAdditiveProjector.lean'
+INTEGRATION = 'GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/AdditiveCharacterMoments.lean'
+CHECKS = 'GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/'
+OWNED = [GENERIC, INTEGRATION, CHECKS + 'Positive/AdditiveCharacterMoments.lean',
+    *[CHECKS + 'Negative/' + name + '.lean' for name in [
+        'ProjectorMissingNoWrap', 'ProjectorWrongNormalization',
+        'ProjectorScaledCongruenceCancellation', 'ProjectorUnscaledJointWeight', 'ProjectorToABC']]]
+PAGES = {
+    'docs/mathematics/Analysis/Fourier/FiniteAdditiveProjector/projector.md': {
+        'title': 'Finite additive-character projector', 'subject': 'Analysis',
+        'object': 'Fourier/FiniteAdditiveProjector', 'primary_source': GENERIC,
+        'scope': 'Exact finite Complex-valued additive-character projector with explicit modulus, normalization and no-wrap bounds; no arithmetic estimate.'},
+    'docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-moments.md': {
+        'title': 'Additive-character moments of primitive triples', 'subject': 'NumberTheory',
+        'object': 'Diophantine/PrimitiveAdditiveTriples', 'primary_source': INTEGRATION,
+        'scope': 'Complex-valued joint-weight primitive moments composed with the exact character projector and scaled divisor sectors; no coefficient transfer, estimate or abc implication.'},
+}
+SHARED = ['GRWTSK.lean', '.noeaaeue/documentation/math-layout.json',
+    'docs/reference/math-source-catalog.json',
+    '.noeaaeue/documentation/reference/documentation-layout.json',
+    'docs/reference/object-source-bindings.json']
+STANDARD_AXIOMS = {'propext', 'Classical.choice', 'Quot.sound'}
+
+
+def require(value, message):
+    if not value:
+        raise RuntimeError(message)
+
+
+def sha(raw):
+    return hashlib.sha256(raw).hexdigest()
+
+
+def encode(value):
+    return (json.dumps(value, indent=2) + '\n').encode()
+
+
+def git(*args, data=None):
+    return subprocess.check_output(['git', *args], cwd=ROOT, input=data).decode().strip()
+
+
+def source_inventory():
+    return sorted({'GRWTSK.lean'} | {
+        path.relative_to(ROOT).as_posix() for path in (ROOT / 'GRWTSK').rglob('*.lean')
+        if path.is_file() or path.is_symlink()})
+
+
+def module_imports(text):
+    return [module for match in re.finditer(r'^\s*(?:public\s+)?import\s+([^\n]+)',
+        guard.without_comments(text), re.M) for module in match[1].split()]
+
+
+def apply_registration():
+    observed = {}
+
+    def read(rel):
+        raw = guard.read_source(ROOT, rel)
+        require(rel not in observed or observed[rel] == raw, 'Readset collision: ' + rel)
+        observed[rel] = raw
+        return raw
+
+    receipt = json.loads(read(RECEIPT))
+    read(HELPER)
+    for rel in PREVIOUS_STAGE:
+        read(rel)
+    require(receipt['outcome'] == 'passed' and receipt['abc_proved'] is False,
+            'A passed selected replay with no abc proof claim is required')
+    require(receipt['trust'] == 0 and receipt['fatal_warnings'] is True
+            and set(receipt['allowed_axioms']) == STANDARD_AXIOMS, 'Replay policy differs')
+    require(receipt['intended_negative_rejections_passed'] == 5
+            and receipt['positive_consumers_passed'] == 1, 'Selected control count differs')
+    require(receipt['positive_consumer_paths'] == [CHECKS + 'Positive/AdditiveCharacterMoments.lean']
+            and set(receipt['negative_control_paths']) == set(OWNED[3:]), 'Selected control identity differs')
+    for rel, expected in receipt['source_hashes'].items():
+        require(sha(read(rel)) == expected, 'Audited input drift: ' + rel)
+    require(all(rel in receipt['source_hashes'] and receipt['selected_checks'].get(rel) == 'passed'
+                for rel in OWNED), 'Owned source missing from successful replay')
+    require(receipt['source_hashes'].get(RUNNER) == sha(read(RUNNER)), 'Runner identity differs')
+    for page, meta in PAGES.items():
+        require(read(page).decode().splitlines()[0] == '# ' + meta['title'],
+                'Article title differs: ' + page)
+    require(not os.path.lexists(ROOT / CONTRIBUTION), 'Contribution already exists; inspect collision')
+
+    before = {rel: read(rel) for rel in SHARED}
+    values = {rel: json.loads(raw) for rel, raw in before.items() if rel.endswith('.json')}
+    public_imports = ['import ' + rel[:-5].replace('/', '.') for rel in [GENERIC, INTEGRATION]]
+    root_text = before['GRWTSK.lean'].decode()
+    require(not ({rel[:-5].replace('/', '.') for rel in [GENERIC, INTEGRATION]}
+                & set(module_imports(root_text))),
+            'Public import already exists; inspect collision')
+    separator = b'' if before['GRWTSK.lean'].endswith(b'\n') else b'\n'
+    root_bytes = before['GRWTSK.lean'] + separator + ('\n'.join(public_imports) + '\n').encode()
+    require(root_bytes.startswith(before['GRWTSK.lean']), 'Existing root bytes must remain an exact prefix')
+
+    inventory = source_inventory()
+    imports_by_path = {rel: module_imports(
+        (root_bytes if rel == 'GRWTSK.lean' else read(rel)).decode()) for rel in inventory}
+    records = []
+    for rel in OWNED:
+        raw = read(rel)
+        text = raw.decode()
+        role = 'negative-control' if '/Negative/' in rel else 'positive-check' if '/Positive/' in rel else 'library'
+        module = rel[:-5].replace('/', '.')
+        subject = 'Analysis' if rel == GENERIC else 'NumberTheory'
+        obj = 'Fourier/FiniteAdditiveProjector' if rel == GENERIC else 'Diophantine/PrimitiveAdditiveTriples'
+        page = next(name for name, meta in PAGES.items() if meta['primary_source'] ==
+                    (GENERIC if rel == GENERIC else INTEGRATION))
+        declarations = [{'kind': match.group(1), 'name': match.group(2),
+            'line': text[:match.start()].count('\n') + 1}
+            for match in re.finditer(r'^(?:noncomputable\s+)?(theorem|lemma|def|structure|abbrev)\s+([\w.]+)', text, re.M)]
+        records.append({
+            'path': rel, 'original_path': rel, 'sha256': sha(raw),
+            'git_blob': git('hash-object', '--stdin', data=raw),
+            'working_tree_state': 'untracked-preserved' if not git('ls-files', '--', rel) else 'tracked-current',
+            'source_root': 'GRWTSK', 'module': module,
+            'namespaces': re.findall(r'^namespace\s+([\w.]+)', text, re.M),
+            'public_declarations': declarations,
+            'declaration_inventory_method': 'source syntax declaration commands, excluding anonymous examples and generated declarations; not a theorem total or native census; exact owned-declaration native census is authoritative',
+            'imports': imports_by_path[rel],
+            'reverse_consumers': sorted(path for path, imports in imports_by_path.items() if module in imports),
+            'subject': subject, 'object': obj, 'source_role': role, 'target_path': rel,
+            'placement_rationale': ('Finite additive-character projection belongs to Fourier analysis.'
+                if rel == GENERIC else 'Complex character projection of primitive additive moments belongs with primitive additive triples; generic Ring prerequisites retain their original subjects.'),
+            'operation': 'add',
+            'logical_status': ('Intended type rejection of an unsupported projector claim; no theorem is admitted from this control.'
+                if role == 'negative-control' else 'Exact finite Complex-valued character identities or their positive consumer; modulus, normalization, no-wrap bounds and joint scaled weight explicit. No coefficient transfer, arithmetic estimate or abc implication.'),
+            'open_premises': [],
+            'verification': {
+                'inventory': 'observed-current-bytes', 'source_sha256': sha(raw),
+                'lean': ('intended single type rejection matched at trust zero with fatal warnings'
+                    if role == 'negative-control' else 'fresh positive consumer elaboration at trust zero with fatal warnings'
+                    if role == 'positive-check' else 'fresh selected library elaboration at trust zero with fatal warnings'),
+                'owned_declaration_audit': 'complete selected local library closure; standard3 only; controls checked separately',
+                'replay_binding': RECEIPT,
+                'replay_binding_schema': receipt['schema'],
+                'replay_binding_sha256': sha(observed[RECEIPT]),
+            },
+            'runner': 'python3 -B ' + RUNNER,
+            'other_consumers': [page, 'docs/reference/math-source-catalog.json'],
+            'attribution': 'Direction R.A. Jacob Martone; formalization assistance OpenAI Codex; Mathlib authors retained.',
+            'license': 'Original additions MIT; imported Mathlib Apache-2.0',
+        })
+
+    layout = values['.noeaaeue/documentation/math-layout.json']
+    catalog = values['docs/reference/math-source-catalog.json']
+    previous_root_records = {}
+    for container, key in [(layout, 'active_sources'), (catalog, 'sources')]:
+        original_paths = [entry['path'] for entry in container[key]]
+        require(len(set(original_paths)) == len(original_paths), 'Duplicate existing source identities')
+        existing = {entry['path']: entry for entry in container[key]}
+        require(not set(OWNED) & set(existing), 'New source path already registered; inspect collision')
+        historical_candidates = {entry['path'] for entry in container.get('candidate_sources', [])}
+        require(not set(OWNED) & historical_candidates,
+                'Owned source occurs in historical candidate array; reconcile without deleting it')
+        container[key].extend(copy.deepcopy(records))
+        container[key].sort(key=lambda entry: entry['path'])
+        root = existing['GRWTSK.lean']
+        previous_root_records[key] = copy.deepcopy(root)
+        historical_key = 'historical_verification_before_additive_character_integration'
+        require(historical_key not in root, 'Root registration marker already exists')
+        root[historical_key] = copy.deepcopy(root['verification'])
+        root.update({'sha256': sha(root_bytes), 'git_blob': git('hash-object', '--stdin', data=root_bytes),
+                     'imports': imports_by_path['GRWTSK.lean']})
+        root['verification'] = {
+            'inventory': 'observed-current-bytes', 'source_sha256': sha(root_bytes),
+            'lean': 'public root not replayed; selected ' + str(len(receipt['modules'])) + '-module closure replayed separately',
+            'selected_new_module_receipt': RECEIPT,
+            'owned_declaration_audit': 'selected closure only; no whole-entrypoint admission',
+        }
+        # Extend only direct consumers introduced by the eight owned inputs.
+        for dependency, entry in existing.items():
+            module = dependency[:-5].replace('/', '.')
+            added = {path for path in OWNED if module in imports_by_path[path]}
+            if added:
+                entry['reverse_consumers'] = sorted(set(entry.get('reverse_consumers', [])) | added)
+    require('additive_character_integration_additions' not in layout, 'Addition marker already exists')
+    layout['additive_character_integration_additions'] = {
+        'paths': OWNED, 'replay': RECEIPT,
+        'scope': 'Exact finite Complex character projector and joint-weight primitive moment identities now registered/exported from their selected replay; all coefficient transfers, estimates and abc implications remain open. Global current-observation metadata is retained unchanged.'}
+    for name, field in [('counts_by_subject', 'subject'), ('counts_by_role', 'source_role'), ('counts_by_operation', 'operation')]:
+        catalog[name] = dict(sorted(Counter(entry.get(field, 'unrecorded-historical')
+            for entry in catalog['sources']).items()))
+    catalog['source_count'] = len(catalog['sources'])
+    catalog['present_lean_source_count'] = len(catalog['sources']) + len(catalog['candidate_sources'])
+
+    bindings = values['docs/reference/object-source-bindings.json']
+    for module, subject, obj in [(GENERIC, 'Analysis', 'Fourier/FiniteAdditiveProjector'),
+                                  (INTEGRATION, 'NumberTheory', 'Diophantine/PrimitiveAdditiveTriples')]:
+        key = subject + '/' + obj
+        bound = bindings['bindings'].get(key)
+        require(isinstance(bound, list) and bound.count(module) == 1
+                and bound == sorted(set(bound)), 'Existing sorted object binding differs: ' + module)
+        require(bindings['subject_placements'].get(module) == subject,
+                'Existing source subject placement differs: ' + module)
+    doc_layout = values['.noeaaeue/documentation/reference/documentation-layout.json']
+    previous_article_records = {}
+    for page, meta in PAGES.items():
+        require(page in doc_layout['pages'], 'Previously registered article is missing: ' + page)
+        entry = doc_layout['pages'][page]
+        previous_article_records[page] = copy.deepcopy(entry)
+        require(all(entry.get(key) == meta[key]
+                    for key in ['title', 'subject', 'object', 'primary_source']),
+                'Existing article identity differs: ' + page)
+        require(entry['source_sha256'] == receipt['source_hashes'][meta['primary_source']],
+                'Existing article source bytes differ; do not rebind without review: ' + page)
+        entry.update({'source_sha256': receipt['source_hashes'][meta['primary_source']],
+            'status': 'fresh-selected', 'evidence': RECEIPT,
+            'verification_scope': 'Exact finite selected local dependency closure and controls in the fresh integration receipt; exports do not imply whole-entrypoint replay, cold dependency rebuild, arithmetic estimate or abc implication.'})
+        require(isinstance(entry.get('contribution'), dict), 'Existing article contribution is missing')
+        require(entry['contribution'].get('direction') == 'R.A. Jacob Martone'
+                and entry['contribution'].get('formalization') == 'OpenAI Codex',
+                'Existing contribution credit differs; inspect rather than overwrite')
+        entry['contribution']['scope'] = meta['scope']
+    binding_path = 'docs/reference/object-source-bindings.json'
+    require(bindings == json.loads(before[binding_path]),
+            'Bindings must remain unchanged; no repair is authorized')
+    require(doc_layout['object_binding_registry_sha256'] == sha(before[binding_path]),
+            'Existing structural registry digest differs')
+    outputs = {rel: encode(value) for rel, value in values.items() if rel != binding_path}
+    outputs['GRWTSK.lean'] = root_bytes
+    outputs = {rel: raw for rel, raw in outputs.items() if raw != before[rel]}
+
+    archive = ROOT / '.noeaaeue/.local/additive-character-integration-finish/registration-preimages' / uuid.uuid4().hex
+    guard.make_directory(archive, exclusive=True)
+    custody_paths = set(SHARED) | set(OWNED) | set(PAGES) | set(PREVIOUS_STAGE) | {
+        HELPER, RECEIPT, RUNNER, *receipt['source_hashes']}
+    for rel in sorted(custody_paths):
+        guard.write_bytes(archive / rel, observed[rel], exclusive=True)
+    manifest = {'shared_preimages': {rel: sha(raw) for rel, raw in before.items()},
+        'proposed_shared_outputs': {rel: sha(raw) for rel, raw in outputs.items()},
+        'observed_readset': {rel: sha(raw) for rel, raw in observed.items()},
+        'source_inventory': inventory, 'receipt': RECEIPT,
+        'custody_preimages': {rel: sha(observed[rel]) for rel in sorted(custody_paths)}}
+    guard.write_bytes(archive / 'manifest.json', encode(manifest), exclusive=True)
+    require(source_inventory() == inventory, 'Concurrent Lean source membership collision; no shared writes performed')
+    for rel, raw in observed.items():
+        require(guard.read_source(ROOT, rel) == raw, 'Concurrent readset collision; no shared writes performed: ' + rel)
+    require(not os.path.lexists(ROOT / CONTRIBUTION), 'Contribution appeared concurrently; no shared writes performed')
+    for rel, body in outputs.items():
+        require(guard.read_source(ROOT, rel) == before[rel], 'Concurrent shared metadata collision: ' + rel)
+        guard.write_bytes(ROOT / rel, body)
+
+    contribution = {
+        'schema': 'finite-additive-character-integration-contribution-v1', 'sources': OWNED,
+        'source_hashes': {rel: receipt['source_hashes'][rel] for rel in OWNED},
+        'proof_receipt': RECEIPT, 'proof_receipt_sha256': sha(observed[RECEIPT]),
+        'public_imports_added': public_imports, 'whole_entrypoint_checked': False,
+        'primary_articles': list(PAGES),
+        'article_sha256': {rel: sha(observed[rel]) for rel in PAGES},
+        'previous_article_records': previous_article_records,
+        'previous_root_records': previous_root_records,
+        'previous_stage': {rel: sha(observed[rel]) for rel in PREVIOUS_STAGE},
+        'direction': 'R.A. Jacob Martone', 'formalization': 'OpenAI Codex',
+        'license': 'Original additions MIT; imported Mathlib Apache-2.0',
+        'upstream': 'Mathlib finite additive-character orthogonality, finite sums, natural-number division and canonical Mobius implementation; upstream authors retained.',
+        'scope': 'Exact finite Complex-valued additive-character projector and joint-weight primitive moments; generic Ring prerequisites retain their own scope. No coefficient transfer, arithmetic estimate or abc implication.',
+        'abc_proved': False, 'remote_mutations': [], 'git_commit_created_by_task': False,
+        'global_observation_installed': False,
+        'retained_catalog_observation_scope': 'The catalog current-source observation projection retains its previous exact snapshot and cannot grant current proof acceptance or current root-closure membership.',
+        'shared_preimage_archive': archive.relative_to(ROOT).as_posix(), 'shared_edits': list(outputs),
+        'reversal_scope': 'Identify only this task exact field changes from preimages; never restore shared files wholesale over concurrent edits.',
+    }
+    guard.write_bytes(ROOT / CONTRIBUTION, encode(contribution), exclusive=True)
+    print(json.dumps({'sources_registered': len(OWNED), 'guides_registered': list(PAGES),
+                      'public_imports_added': public_imports, 'contribution': CONTRIBUTION}))
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--apply', action='store_true', help='Apply only after the root has inspected the fresh replay and articles')
+    args = parser.parse_args()
+    require(args.apply, 'Prepared helper is inert without --apply')
+    apply_registration()
+
+
+if __name__ == '__main__':
+    main()

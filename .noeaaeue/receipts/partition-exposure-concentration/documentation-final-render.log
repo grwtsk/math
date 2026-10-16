@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/think/Desktop/math/.noeaaeue/scripts/check_documentation.py", line 189, in <module>
+    if __name__=='__main__':main()
+  File "/Users/think/Desktop/math/.noeaaeue/scripts/check_documentation.py", line 172, in main
+    outputs,preimages=render_indexes();outputs['docs/reference/results.md']=expected.encode()
+  File "/Users/think/Desktop/math/.noeaaeue/scripts/check_documentation.py", line 132, in render_indexes
+    if expected is not None:layout.require(layout.read_safe(ROOT,n)==expected,'generated output changed during render: '+n)
+  File "/Users/think/Desktop/math/.noeaaeue/scripts/check_documentation_layout.py", line 21, in require
+    if not condition: raise LayoutError(message)
+check_documentation_layout.LayoutError: generated output changed during render: docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-moments.md

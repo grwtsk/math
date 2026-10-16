@@ -73,5 +73,77 @@ theorem conditional_currentPart_probability_eq (sizes : Fin m → ℕ)
   exact conditional_event_probability_real sizes hsum a i hi
     (fun R => ((R ∩ G).card : ℝ) < q * ((sizes i - 1 : ℕ) : ℝ))
 
+
+/-- The conditional law in the normalization used by the proved
+hypergeometric estimates. -/
+theorem conditional_currentPart_probability_eq_lowerTail (sizes : Fin m → ℕ)
+    (hsum : ∑ j, sizes j = Fintype.card A) (a : A) (i : Fin m) (hi : 0 < sizes i)
+    (G : Finset A) (ha : a ∉ G) (q : ℝ) :
+    conditionedEventProbabilityReal sizes a i (currentPartCountBad sizes a G q) =
+      lowerTailProbability ((Finset.univ : Finset A).erase a) G (sizes i - 1) q := by
+  rw [conditional_currentPart_probability_eq sizes hsum a i hi G ha q]
+  simp only [lowerTailProbability, Finset.card_powersetCard]
+
+omit [Fintype A] in
+/-- With no ambient elements the strict lower-tail event is empty, including
+sample size zero. This handles the degenerate population without a new
+nonemptiness assumption in the partition theorems. -/
+theorem lowerTailProbability_empty (G : Finset A) (k : ℕ) (q : ℝ) :
+    lowerTailProbability (∅ : Finset A) G k q = 0 := by
+  by_cases hk : k = 0
+  · subst k
+    simp [lowerTailProbability]
+  · have hspace : (∅ : Finset A).powersetCard k = ∅ :=
+      Finset.powersetCard_eq_empty.mpr (by simp; omega)
+    simp [lowerTailProbability, hspace]
+
+/-- A quarter-density set is underrepresented in the part containing a fixed
+retained element with probability at most `exp(-K/32)`, where every part
+retains at least `K` other members. The statement concerns the actual uniform
+space of all prescribed-size ordered partitions. -/
+theorem partition_currentPart_quarter_lowerTail (sizes : Fin m → ℕ)
+    (hsum : ∑ j, sizes j = Fintype.card A) (hpos : ∀ j, 0 < sizes j)
+    (a : A) (G : Finset A) (hG : G ⊆ (Finset.univ : Finset A).erase a)
+    (hdensity : (((Fintype.card A - 1 : ℕ) : ℝ) / 4) ≤ G.card)
+    (K : ℝ) (hK : ∀ j, K ≤ ((sizes j - 1 : ℕ) : ℝ)) :
+    partitionProbabilityReal sizes (currentPartCountBad sizes a G (1 / 8)) ≤
+      Real.exp (-K / 32) := by
+  apply partition_event_le_of_conditional sizes hsum hpos a
+  intro i
+  have ha : a ∉ G := fun h => Finset.notMem_erase a Finset.univ (hG h)
+  rw [conditional_currentPart_probability_eq_lowerTail sizes hsum a i (hpos i) G ha]
+  by_cases hpopulation : ((Finset.univ : Finset A).erase a).Nonempty
+  · have hdensity' : ((((Finset.univ : Finset A).erase a).card : ℝ) / 4) ≤ G.card := by
+      simpa only [Finset.card_erase_of_mem (Finset.mem_univ a), Finset.card_univ] using hdensity
+    have htail := lowerTailProbability_quarter ((Finset.univ : Finset A).erase a) G hG
+      hpopulation (sizes i - 1) (remainder_size_le_population sizes hsum a i (hpos i)) hdensity'
+    exact htail.trans (Real.exp_le_exp.mpr (by linarith [hK i]))
+  · have hempty := Finset.not_nonempty_iff_eq_empty.mp hpopulation
+    rw [hempty, lowerTailProbability_empty]
+    exact (Real.exp_pos _).le
+
+/-- The corresponding three-quarter-density estimate, with the source's
+one-half threshold and the proved rate `exp(-K/24)`. -/
+theorem partition_currentPart_threeQuarters_lowerTail (sizes : Fin m → ℕ)
+    (hsum : ∑ j, sizes j = Fintype.card A) (hpos : ∀ j, 0 < sizes j)
+    (a : A) (G : Finset A) (hG : G ⊆ (Finset.univ : Finset A).erase a)
+    (hdensity : (3 / 4 : ℝ) * ((Fintype.card A - 1 : ℕ) : ℝ) ≤ G.card)
+    (K : ℝ) (hK : ∀ j, K ≤ ((sizes j - 1 : ℕ) : ℝ)) :
+    partitionProbabilityReal sizes (currentPartCountBad sizes a G (1 / 2)) ≤
+      Real.exp (-K / 24) := by
+  apply partition_event_le_of_conditional sizes hsum hpos a
+  intro i
+  have ha : a ∉ G := fun h => Finset.notMem_erase a Finset.univ (hG h)
+  rw [conditional_currentPart_probability_eq_lowerTail sizes hsum a i (hpos i) G ha]
+  by_cases hpopulation : ((Finset.univ : Finset A).erase a).Nonempty
+  · have hdensity' : (3 / 4 : ℝ) * (((Finset.univ : Finset A).erase a).card : ℝ) ≤ G.card := by
+      simpa only [Finset.card_erase_of_mem (Finset.mem_univ a), Finset.card_univ] using hdensity
+    have htail := lowerTailProbability_threeQuarters ((Finset.univ : Finset A).erase a) G hG
+      hpopulation (sizes i - 1) (remainder_size_le_population sizes hsum a i (hpos i)) hdensity'
+    exact htail.trans (Real.exp_le_exp.mpr (by linarith [hK i]))
+  · have hempty := Finset.not_nonempty_iff_eq_empty.mp hpopulation
+    rw [hempty, lowerTailProbability_empty]
+    exact (Real.exp_pos _).le
+
 end
 end GRWTSK.BalancedPartitionTails

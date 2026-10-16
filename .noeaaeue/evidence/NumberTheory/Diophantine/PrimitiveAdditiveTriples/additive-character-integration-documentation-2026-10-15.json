@@ -1,0 +1,59 @@
+{
+  "schema": "additive-character-integration-documentation-custody-v1",
+  "observed_at": "2026-10-16T06:03:35.623594+00:00",
+  "checks": [
+    {
+      "name": "render",
+      "exit": 0
+    },
+    {
+      "name": "normal",
+      "exit": 0
+    },
+    {
+      "name": "optimized",
+      "exit": 0
+    },
+    {
+      "name": "tests",
+      "exit": 0
+    },
+    {
+      "name": "tests-optimized",
+      "exit": 0
+    }
+  ],
+  "artifacts": [
+    {
+      "path": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-documentation-2026-10-15/normal.log",
+      "sha256": "55d297b5a1c6f9a6d666578fe9dd9936fb7389b3e22c45d6fca24a3d87cb69a6",
+      "bytes": 101
+    },
+    {
+      "path": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-documentation-2026-10-15/optimized.log",
+      "sha256": "55d297b5a1c6f9a6d666578fe9dd9936fb7389b3e22c45d6fca24a3d87cb69a6",
+      "bytes": 101
+    },
+    {
+      "path": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-documentation-2026-10-15/records.json",
+      "sha256": "0814ca27f35eb32d6f935d465ee17fcc5063b6bd81328c4850a1e9f353aeb5cb",
+      "bytes": 3289
+    },
+    {
+      "path": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-documentation-2026-10-15/render.log",
+      "sha256": "55d297b5a1c6f9a6d666578fe9dd9936fb7389b3e22c45d6fca24a3d87cb69a6",
+      "bytes": 101
+    },
+    {
+      "path": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-documentation-2026-10-15/tests-optimized.log",
+      "sha256": "afe303d100f2634045a9b67716bd40f19c0831550a257e1713b0549ea5ceb03c",
+      "bytes": 209
+    },
+    {
+      "path": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-documentation-2026-10-15/tests.log",
+      "sha256": "fdeaa5c2fba8951c69a2912ff1cb3dda256d5d2ba9a4364ae99890fb6497dd63",
+      "bytes": 209
+    }
+  ],
+  "scope": "Structural documentation checks only; source-bound Lean proof acceptance remains in separate selected and public replay receipts."
+}

@@ -474,3 +474,21 @@ source credits and Apache-2.0 remain. Human direction: R.A. Jacob Martone;
 adaptation and formalization: OpenAI Codex. Original character/Jacobi/
 coefficient/common-support/RH suppliers remain open; correlated review is not
 independent validation.
+
+Original-reference transport and good quotient cubic characters
+-------------------------------------------------------------
+PrefixTableReferenceTransport.lean is local MIT formalization under R.A. Jacob
+Martone direction with OpenAI Codex assistance. Imported state/path/compaction
+credits remain; Lean List/Option retains Leonardo de Moura, Jeremy Avigad,
+Mario Carneiro, Parikshit Khanna and Floris van Doorn, Apache-2.0.
+ThirdCyclotomicCharacters.lean retains Apache-2.0 and adapts OpenAI's
+openai/math@1581d4cbdd69a0faf34b2089614fe2a814316a6a,
+lean/OAI/NumberTheory/DirichletL/GaussSum/FiniteFourier.lean, lines377-402,
+429-477 and553-654. See LICENSES/OpenAI-Apache-2.0.txt and exact source headers.
+Mathlib credits include Michael Stoll, Johan Commelin, Xavier Roblot,
+Chris Hughes, Joey van Langen and Casper Putz, Apache-2.0. Human direction:
+R.A. Jacob Martone; adaptation/formalization/checking assistance: OpenAI Codex.
+The scoped good-maximal-quotient cubic character is supplied with its explicit
+good-prime exclusion; sextic/Jacobi/primary-generator, completed/common-support,
+global and RH suppliers remain open. No novelty, independent validation or
+operational runtime refinement is claimed.

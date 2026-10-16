@@ -5996,20 +5996,20 @@
     }
   ],
   "counts_by_operation": {
-    "add": 231,
+    "add": 245,
     "keep": 336,
     "move": 206
   },
   "counts_by_role": {
     "audit-driver": 35,
-    "library": 430,
-    "negative-control": 170,
-    "positive-check": 138
+    "library": 434,
+    "negative-control": 177,
+    "positive-check": 141
   },
   "counts_by_subject": {
     "Algebra": 19,
-    "Analysis": 268,
-    "Combinatorics": 69,
+    "Analysis": 269,
+    "Combinatorics": 72,
     "Data": 1,
     "DynamicalSystems": 17,
     "GroupTheory": 4,
@@ -6017,7 +6017,7 @@
     "LinearAlgebra": 59,
     "Logic": 63,
     "MeasureTheory": 5,
-    "NumberTheory": 236,
+    "NumberTheory": 246,
     "Order": 6,
     "Spectral": 25
   },
@@ -6371,7 +6371,17 @@
       {
         "acceptance_inherited": false,
         "code": "absent-from-historical-source-catalog",
-        "path": "GRWTSK/Analysis/Fourier/FiniteAdditiveProjector.lean"
+        "path": "GRWTSK/Analysis/Fourier/Checks/Negative/SubsetAntiConcentrationMissingPrime.lean"
+      },
+      {
+        "acceptance_inherited": false,
+        "code": "absent-from-historical-source-catalog",
+        "path": "GRWTSK/Analysis/Fourier/Checks/Negative/SubsetAntiConcentrationMissingRange.lean"
+      },
+      {
+        "acceptance_inherited": false,
+        "code": "absent-from-historical-source-catalog",
+        "path": "GRWTSK/Analysis/Fourier/Checks/Positive/SubsetAntiConcentration.lean"
       },
       {
         "acceptance_inherited": false,
@@ -6393,6 +6403,11 @@
         "historical_sha256": "acf0f90e233095c8e4949a4c22e1f67fa68f4d85e0be5cb99bf9fcfbbea671db",
         "observed_sha256": "568586ca097a0fc94ec0866a627d9cb8c17a7a781ee7849d01c7229f5d44bbc8",
         "path": "GRWTSK/Analysis/Fourier/WindowCertificates.lean"
+      },
+      {
+        "acceptance_inherited": false,
+        "code": "absent-from-historical-source-catalog",
+        "path": "GRWTSK/Analysis/Fourier/ZModBalancedExpectedLayers.lean"
       },
       {
         "acceptance_inherited": false,
@@ -6559,6 +6574,11 @@
       },
       {
         "acceptance_inherited": false,
+        "code": "absent-from-historical-source-catalog",
+        "path": "GRWTSK/Combinatorics/Sequences/PartitionExposureChecks.lean"
+      },
+      {
+        "acceptance_inherited": false,
         "code": "historical-catalog-source-hash-stale",
         "historical_sha256": "851cb36b5b9db3a4e2695e4c4164dbca4af83dcc913caebd41160fd4db8f882f",
         "observed_sha256": "8d07146fa509e71b3e8d70e33714d121c08460ee3519f5aa1f18f1746f11183a",
@@ -6712,41 +6732,6 @@
       },
       {
         "acceptance_inherited": false,
-        "code": "absent-from-historical-source-catalog",
-        "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/AdditiveCharacterMoments.lean"
-      },
-      {
-        "acceptance_inherited": false,
-        "code": "absent-from-historical-source-catalog",
-        "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorMissingNoWrap.lean"
-      },
-      {
-        "acceptance_inherited": false,
-        "code": "absent-from-historical-source-catalog",
-        "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorScaledCongruenceCancellation.lean"
-      },
-      {
-        "acceptance_inherited": false,
-        "code": "absent-from-historical-source-catalog",
-        "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorToABC.lean"
-      },
-      {
-        "acceptance_inherited": false,
-        "code": "absent-from-historical-source-catalog",
-        "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorUnscaledJointWeight.lean"
-      },
-      {
-        "acceptance_inherited": false,
-        "code": "absent-from-historical-source-catalog",
-        "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorWrongNormalization.lean"
-      },
-      {
-        "acceptance_inherited": false,
-        "code": "absent-from-historical-source-catalog",
-        "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Positive/AdditiveCharacterMoments.lean"
-      },
-      {
-        "acceptance_inherited": false,
         "code": "historical-catalog-source-hash-stale",
         "historical_sha256": "23330ce4bd519083f9fe8e09ecb9aaf6724a614d6b4a576afef395351e27c549",
         "observed_sha256": "9d753528696a5334da5579167260de117e5dd29582f9834592a037152fc04abb",
@@ -6862,7 +6847,7 @@
         "path": "GRWTSK/Logic/Counterexamples/ComplexSymmetryAndPositivity.lean"
       }
     ],
-    "identity": "22e79fff1f6d121b9f42ce2a25cf8bdc0459c74c9a45e07081bc3f314e239971",
+    "identity": "61df5292d39da000be4d97d49b47bce428cbdfd8b7b6e5ff89e60a093783e7b4",
     "mathematical_admission": false,
     "path": ".noeaaeue/bindings/current-source-observations.json",
     "public_entrypoint_closure": [
@@ -6932,6 +6917,7 @@
       "GRWTSK.Analysis.FiniteSums.WeightedDegreeComparison",
       "GRWTSK.Analysis.Fourier.AngularFrequencyParseval",
       "GRWTSK.Analysis.Fourier.DigammaMultiplier",
+      "GRWTSK.Analysis.Fourier.FiniteAdditiveProjector",
       "GRWTSK.Analysis.Fourier.FiniteExponentialLayers",
       "GRWTSK.Analysis.Fourier.FiniteTranslationMultipliers",
       "GRWTSK.Analysis.Fourier.IntegerSeries",
@@ -6946,10 +6932,13 @@
       "GRWTSK.Analysis.Fourier.SchwartzMoments",
       "GRWTSK.Analysis.Fourier.SignedPrimePhaseExamples",
       "GRWTSK.Analysis.Fourier.WindowCertificates",
+      "GRWTSK.Analysis.Fourier.ZModBalancedExpectedLayers",
       "GRWTSK.Analysis.Fourier.ZModBalancedPartition",
       "GRWTSK.Analysis.Fourier.ZModCharacterEnergy",
       "GRWTSK.Analysis.Fourier.ZModConcentratedFrequencies",
+      "GRWTSK.Analysis.Fourier.ZModExpectedLayers",
       "GRWTSK.Analysis.Fourier.ZModIndependentSelection",
+      "GRWTSK.Analysis.Fourier.ZModPartitionConcentration",
       "GRWTSK.Analysis.Fourier.ZModPartitionEnergy",
       "GRWTSK.Analysis.Fourier.ZModSmallEnergySets",
       "GRWTSK.Analysis.Fourier.ZModSmallEnergySpectrum",
@@ -7056,6 +7045,7 @@
       "GRWTSK.Combinatorics.DirectedGraph.PrefixTableBatch",
       "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCheckpoint",
       "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCompaction",
+      "GRWTSK.Combinatorics.DirectedGraph.PrefixTableReferenceTransport",
       "GRWTSK.Combinatorics.DirectedGraph.PrefixTableReindex",
       "GRWTSK.Combinatorics.DirectedGraph.PrefixTableSchedule",
       "GRWTSK.Combinatorics.DirectedGraph.PrefixTableState",
@@ -7067,10 +7057,14 @@
       "GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.MoserCoordinates",
       "GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.MoserSource",
       "GRWTSK.Combinatorics.Sequences.BalancedPartitionSampling",
+      "GRWTSK.Combinatorics.Sequences.BalancedPartitionTails",
+      "GRWTSK.Combinatorics.Sequences.ConditionalPartitionExposure",
       "GRWTSK.Combinatorics.Sequences.CyclicSumsetGrowth",
       "GRWTSK.Combinatorics.Sequences.DisjointTranspositions",
+      "GRWTSK.Combinatorics.Sequences.HypergeometricLowerTail",
       "GRWTSK.Combinatorics.Sequences.PartialSumCertificate",
       "GRWTSK.Combinatorics.Sequences.PartialSumOrdering",
+      "GRWTSK.Combinatorics.Sequences.PartitionExposureChecks",
       "GRWTSK.Combinatorics.Sequences.PrimeCyclicRearrangement",
       "GRWTSK.Combinatorics.Sequences.QuotaDiscrepancy",
       "GRWTSK.Combinatorics.Sequences.ZeroSumIntervalRepair",
@@ -7173,9 +7167,11 @@
       "GRWTSK.NumberTheory.Chebyshev.FiniteIntegrationByParts",
       "GRWTSK.NumberTheory.ContinuedFractions.FrequencyRealization",
       "GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators",
+      "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicCharacters",
       "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicIdeals",
       "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicReduction",
       "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ABCStatement",
+      "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.AdditiveCharacterMoments",
       "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Definitions",
       "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.DivisorSectorReindexing",
       "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.EquivalentForms",
@@ -7304,10 +7300,10 @@
       "GRWTSK.Spectral.SturmianFiniteVolume"
     ],
     "public_release_eligible": false,
-    "source_count": 860,
+    "source_count": 871,
     "sources": [
       {
-        "bytes": 25950,
+        "bytes": 26350,
         "classification_reason": "entrypoint-library-source",
         "mathematical_admission": false,
         "path": "GRWTSK.lean",
@@ -7315,7 +7311,7 @@
         "proof_status": "not-replayed",
         "public_release_eligible": false,
         "qualified_role_alias": null,
-        "sha256": "d8bda509bc6f84a130b4747760134d1eabf3a565f3cbd3ac4c46ce16da35597e",
+        "sha256": "44e183a171c933e0635d85b0316dd37f88667640c1b4acdde90fd759b506a106",
         "source_role": "library",
         "source_set": "active"
       },
@@ -8789,6 +8785,32 @@
         "source_set": "active"
       },
       {
+        "bytes": 685,
+        "classification_reason": "subject-local-validation-source",
+        "mathematical_admission": false,
+        "path": "GRWTSK/Analysis/Fourier/Checks/Negative/SubsetAntiConcentrationMissingPrime.lean",
+        "physical_role": "negative-control",
+        "proof_status": "not-replayed",
+        "public_release_eligible": false,
+        "qualified_role_alias": null,
+        "sha256": "0bfff98d1999db0462c213bd4bfd07556b65b141d701c83df40622cd97994c2b",
+        "source_role": "negative-control",
+        "source_set": "active"
+      },
+      {
+        "bytes": 576,
+        "classification_reason": "subject-local-validation-source",
+        "mathematical_admission": false,
+        "path": "GRWTSK/Analysis/Fourier/Checks/Negative/SubsetAntiConcentrationMissingRange.lean",
+        "physical_role": "negative-control",
+        "proof_status": "not-replayed",
+        "public_release_eligible": false,
+        "qualified_role_alias": null,
+        "sha256": "2d77d8515c63684ff034050a771182a81eaa8a95a65ee41bf983f29d5d160c0d",
+        "source_role": "negative-control",
+        "source_set": "active"
+      },
+      {
         "bytes": 427,
         "classification_reason": "subject-local-validation-source",
         "mathematical_admission": false,
@@ -8815,6 +8837,19 @@
         "source_set": "active"
       },
       {
+        "bytes": 1577,
+        "classification_reason": "subject-local-validation-source",
+        "mathematical_admission": false,
+        "path": "GRWTSK/Analysis/Fourier/Checks/Positive/SubsetAntiConcentration.lean",
+        "physical_role": "positive-check",
+        "proof_status": "not-replayed",
+        "public_release_eligible": false,
+        "qualified_role_alias": null,
+        "sha256": "1f2583a4be8fa66b0864510a10c5f73401d0705d5f23eaee02f831fcd1d4490b",
+        "source_role": "positive-check",
+        "source_set": "active"
+      },
+      {
         "bytes": 4172,
         "classification_reason": "entrypoint-library-source",
         "mathematical_admission": false,
@@ -8829,7 +8864,7 @@
       },
       {
         "bytes": 4026,
-        "classification_reason": "pending-library-source-outside-public-entrypoint-closure",
+        "classification_reason": "entrypoint-library-source",
         "mathematical_admission": false,
         "path": "GRWTSK/Analysis/Fourier/FiniteAdditiveProjector.lean",
         "physical_role": "library",
@@ -8838,7 +8873,7 @@
         "qualified_role_alias": null,
         "sha256": "24a8c41508bdf2a7558d20b19434362e2656ac45b4141e01604c0ec16ddd413f",
         "source_role": "library",
-        "source_set": "candidate-evidence"
+        "source_set": "active"
       },
       {
         "bytes": 5646,
@@ -9062,6 +9097,19 @@
         "source_set": "active"
       },
       {
+        "bytes": 13524,
+        "classification_reason": "entrypoint-library-source",
+        "mathematical_admission": false,
+        "path": "GRWTSK/Analysis/Fourier/ZModBalancedExpectedLayers.lean",
+        "physical_role": "library",
+        "proof_status": "not-replayed",
+        "public_release_eligible": false,
+        "qualified_role_alias": null,
+        "sha256": "6317a8b54aa66498b4d6565c581ca98edda7a08fec1f8a872dd5bfa70fded391",
+        "source_role": "library",
+        "source_set": "active"
+      },
+      {
         "bytes": 13088,
         "classification_reason": "entrypoint-library-source",
         "mathematical_admission": false,
@@ -9102,7 +9150,7 @@
       },
       {
         "bytes": 19978,
-        "classification_reason": "pending-library-source-outside-public-entrypoint-closure",
+        "classification_reason": "entrypoint-library-source",
         "mathematical_admission": false,
         "path": "GRWTSK/Analysis/Fourier/ZModExpectedLayers.lean",
         "physical_role": "library",
@@ -9111,7 +9159,7 @@
         "qualified_role_alias": null,
         "sha256": "b7464aa2d019f349cc8ce39cadec258f883afe66468963e31bbeacb93ab419f3",
         "source_role": "library",
-        "source_set": "candidate-evidence"
+        "source_set": "active"
       },
       {
         "bytes": 11463,
@@ -9127,17 +9175,17 @@
         "source_set": "active"
       },
       {
-        "bytes": 14159,
-        "classification_reason": "pending-library-source-outside-public-entrypoint-closure",
+        "bytes": 26330,
+        "classification_reason": "entrypoint-library-source",
         "mathematical_admission": false,
         "path": "GRWTSK/Analysis/Fourier/ZModPartitionConcentration.lean",
         "physical_role": "library",
         "proof_status": "not-replayed",
         "public_release_eligible": false,
         "qualified_role_alias": null,
-        "sha256": "983db9dde6466458a463c04c521bb46d26457f3f947daf55907e032770731dc4",
+        "sha256": "cadb696bc288dbc51703deb6d55e9620a428c48f3c5cefee1eba26267636ce6a",
         "source_role": "library",
-        "source_set": "candidate-evidence"
+        "source_set": "active"
       },
       {
         "bytes": 9879,
@@ -11792,6 +11840,19 @@
         "source_set": "active"
       },
       {
+        "bytes": 530,
+        "classification_reason": "subject-local-validation-source",
+        "mathematical_admission": false,
+        "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixReferenceMissingSupport.lean",
+        "physical_role": "negative-control",
+        "proof_status": "not-replayed",
+        "public_release_eligible": false,
+        "qualified_role_alias": null,
+        "sha256": "a81f4b50114fcd35951a8ed8ee1ccf0a706bc26b3a73d6935d83f8867b826f2c",
+        "source_role": "negative-control",
+        "source_set": "active"
+      },
+      {
         "bytes": 590,
         "classification_reason": "subject-local-validation-source",
         "mathematical_admission": false,
@@ -12039,6 +12100,19 @@
         "source_set": "active"
       },
       {
+        "bytes": 7784,
+        "classification_reason": "subject-local-validation-source",
+        "mathematical_admission": false,
+        "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableReferenceTransport.lean",
+        "physical_role": "positive-check",
+        "proof_status": "not-replayed",
+        "public_release_eligible": false,
+        "qualified_role_alias": null,
+        "sha256": "092678d16170cff8e60e5b1461c71aea404b4a8d93731f4e001367992bf96e26",
+        "source_role": "positive-check",
+        "source_set": "active"
+      },
+      {
         "bytes": 10559,
         "classification_reason": "subject-local-validation-source",
         "mathematical_admission": false,
@@ -12273,6 +12347,19 @@
         "source_set": "active"
       },
       {
+        "bytes": 10562,
+        "classification_reason": "entrypoint-library-source",
+        "mathematical_admission": false,
+        "path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableReferenceTransport.lean",
+        "physical_role": "library",
+        "proof_status": "not-replayed",
+        "public_release_eligible": false,
+        "qualified_role_alias": null,
+        "sha256": "a7600c33972405a31f6495b03789f9473cd914eb428d9a5f94c734f528e71d0c",
+        "source_role": "library",
+        "source_set": "active"
+      },
+      {
         "bytes": 16643,
         "classification_reason": "entrypoint-library-source",
         "mathematical_admission": false,
@@ -12455,21 +12542,21 @@
         "source_set": "active"
       },
       {
-        "bytes": 3681,
-        "classification_reason": "pending-library-source-outside-public-entrypoint-closure",
+        "bytes": 7983,
+        "classification_reason": "entrypoint-library-source",
         "mathematical_admission": false,
         "path": "GRWTSK/Combinatorics/Sequences/BalancedPartitionTails.lean",
         "physical_role": "library",
         "proof_status": "not-replayed",
         "public_release_eligible": false,
         "qualified_role_alias": null,
-        "sha256": "38b6c55c0aa81f6321ec8d5bbe3f6395b8aaf2af9900c428dd115c4e9108ead0",
+        "sha256": "f4d0196c2e367d1a0f741b25f6a0eb33003dce26769fd3311e2f8cd9f0bb4699",
         "source_role": "library",
-        "source_set": "candidate-evidence"
+        "source_set": "active"
       },
       {
         "bytes": 15265,
-        "classification_reason": "pending-library-source-outside-public-entrypoint-closure",
+        "classification_reason": "entrypoint-library-source",
         "mathematical_admission": false,
         "path": "GRWTSK/Combinatorics/Sequences/ConditionalPartitionExposure.lean",
         "physical_role": "library",
@@ -12478,7 +12565,7 @@
         "qualified_role_alias": null,
         "sha256": "9ee487095c5298b2e1d20963abad6106575df5b1c2a4a866b87b758a10af8787",
         "source_role": "library",
-        "source_set": "candidate-evidence"
+        "source_set": "active"
       },
       {
         "bytes": 4623,
@@ -12508,7 +12595,7 @@
       },
       {
         "bytes": 14167,
-        "classification_reason": "pending-library-source-outside-public-entrypoint-closure",
+        "classification_reason": "entrypoint-library-source",
         "mathematical_admission": false,
         "path": "GRWTSK/Combinatorics/Sequences/HypergeometricLowerTail.lean",
         "physical_role": "library",
@@ -12517,7 +12604,7 @@
         "qualified_role_alias": null,
         "sha256": "10e74485fcb37598160521c6514a6e7c1a08e0fda189fde0a0c03178f40af438",
         "source_role": "library",
-        "source_set": "candidate-evidence"
+        "source_set": "active"
       },
       {
         "bytes": 7979,
@@ -12542,6 +12629,19 @@
         "public_release_eligible": false,
         "qualified_role_alias": null,
         "sha256": "a9a4c484455c947e258e6e57f5a7654d7f22682cc27b7fed1476d7c19811f0fb",
+        "source_role": "library",
+        "source_set": "active"
+      },
+      {
+        "bytes": 7619,
+        "classification_reason": "entrypoint-library-source",
+        "mathematical_admission": false,
+        "path": "GRWTSK/Combinatorics/Sequences/PartitionExposureChecks.lean",
+        "physical_role": "library",
+        "proof_status": "not-replayed",
+        "public_release_eligible": false,
+        "qualified_role_alias": null,
+        "sha256": "b8df18c852c64aa10ede56f41fe454f420377f5f5a201050b3e0ded7ce34cab8",
         "source_role": "library",
         "source_set": "active"
       },
@@ -15008,6 +15108,19 @@
         "source_set": "active"
       },
       {
+        "bytes": 796,
+        "classification_reason": "subject-local-validation-source",
+        "mathematical_admission": false,
+        "path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Negative/ThirdCyclotomicCharacterZeroCube.lean",
+        "physical_role": "negative-control",
+        "proof_status": "not-replayed",
+        "public_release_eligible": false,
+        "qualified_role_alias": null,
+        "sha256": "7e423a5a2cb5a9f6c78740f357fc1a41b832c01545e4a6e87ada20f8ccfb8242",
+        "source_role": "negative-control",
+        "source_set": "active"
+      },
+      {
         "bytes": 579,
         "classification_reason": "subject-local-validation-source",
         "mathematical_admission": false,
@@ -15034,6 +15147,19 @@
         "source_set": "active"
       },
       {
+        "bytes": 3936,
+        "classification_reason": "subject-local-validation-source",
+        "mathematical_admission": false,
+        "path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Positive/ThirdCyclotomicCharacters.lean",
+        "physical_role": "positive-check",
+        "proof_status": "not-replayed",
+        "public_release_eligible": false,
+        "qualified_role_alias": null,
+        "sha256": "4832da80997b32be46ceb8ba498e86bb873a7e6111d9f2e70ee137211f0c4eb0",
+        "source_role": "positive-check",
+        "source_set": "active"
+      },
+      {
         "bytes": 3454,
         "classification_reason": "subject-local-validation-source",
         "mathematical_admission": false,
@@ -15057,6 +15183,19 @@
         "qualified_role_alias": null,
         "sha256": "68f8f43dcc5c166774ae4abcf6d75e527ac9a79dccb8d574caef7c390ffcf95b",
         "source_role": "positive-check",
+        "source_set": "active"
+      },
+      {
+        "bytes": 9264,
+        "classification_reason": "entrypoint-library-source",
+        "mathematical_admission": false,
+        "path": "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicCharacters.lean",
+        "physical_role": "library",
+        "proof_status": "not-replayed",
+        "public_release_eligible": false,
+        "qualified_role_alias": null,
+        "sha256": "c595e55f46838683758ea9c66379968ac75a6f86ddfb5dc099c302f9d497a051",
+        "source_role": "library",
         "source_set": "active"
       },
       {
@@ -15100,7 +15239,7 @@
       },
       {
         "bytes": 5477,
-        "classification_reason": "pending-library-source-outside-public-entrypoint-closure",
+        "classification_reason": "entrypoint-library-source",
         "mathematical_admission": false,
         "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/AdditiveCharacterMoments.lean",
         "physical_role": "library",
@@ -15109,7 +15248,7 @@
         "qualified_role_alias": null,
         "sha256": "c5064cd633443ae851924599b07d1aaeff56e7ab792783cd5e408e5a078e3113",
         "source_role": "library",
-        "source_set": "candidate-evidence"
+        "source_set": "active"
       },
       {
         "bytes": 306,
@@ -15230,7 +15369,7 @@
       },
       {
         "bytes": 465,
-        "classification_reason": "pending-validation-consumer-of-candidate-source",
+        "classification_reason": "subject-local-validation-source",
         "mathematical_admission": false,
         "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorMissingNoWrap.lean",
         "physical_role": "negative-control",
@@ -15239,11 +15378,11 @@
         "qualified_role_alias": null,
         "sha256": "62e56cdb987638afc411ced5e11ad6d2433d1e7b4f8db1bb8de890e48e45ec42",
         "source_role": "negative-control",
-        "source_set": "candidate-evidence"
+        "source_set": "active"
       },
       {
         "bytes": 603,
-        "classification_reason": "pending-validation-consumer-of-candidate-source",
+        "classification_reason": "subject-local-validation-source",
         "mathematical_admission": false,
         "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorScaledCongruenceCancellation.lean",
         "physical_role": "negative-control",
@@ -15252,11 +15391,11 @@
         "qualified_role_alias": null,
         "sha256": "e53db71a114f0e6f8ea0126663f12e4f1eec6ddd96a06a5bcc2c2deb8848cf14",
         "source_role": "negative-control",
-        "source_set": "candidate-evidence"
+        "source_set": "active"
       },
       {
         "bytes": 509,
-        "classification_reason": "pending-validation-consumer-of-candidate-source",
+        "classification_reason": "subject-local-validation-source",
         "mathematical_admission": false,
         "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorToABC.lean",
         "physical_role": "negative-control",
@@ -15265,11 +15404,11 @@
         "qualified_role_alias": null,
         "sha256": "bb05fba2b0d11b032a370e16cd575eca0d08267bd2acb466315c6fcb47f52522",
         "source_role": "negative-control",
-        "source_set": "candidate-evidence"
+        "source_set": "active"
       },
       {
         "bytes": 758,
-        "classification_reason": "pending-validation-consumer-of-candidate-source",
+        "classification_reason": "subject-local-validation-source",
         "mathematical_admission": false,
         "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorUnscaledJointWeight.lean",
         "physical_role": "negative-control",
@@ -15278,11 +15417,11 @@
         "qualified_role_alias": null,
         "sha256": "753995797c6e3555cf76ab4ddbde96bc9a3a27d150fa09f3b8bc5e024d8f2dbc",
         "source_role": "negative-control",
-        "source_set": "candidate-evidence"
+        "source_set": "active"
       },
       {
         "bytes": 481,
-        "classification_reason": "pending-validation-consumer-of-candidate-source",
+        "classification_reason": "subject-local-validation-source",
         "mathematical_admission": false,
         "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorWrongNormalization.lean",
         "physical_role": "negative-control",
@@ -15291,7 +15430,7 @@
         "qualified_role_alias": null,
         "sha256": "06166379962c09fb4ea2e9f5eb59edd5dc35191e9122866f8529f51260862b14",
         "source_role": "negative-control",
-        "source_set": "candidate-evidence"
+        "source_set": "active"
       },
       {
         "bytes": 583,
@@ -15360,7 +15499,7 @@
       },
       {
         "bytes": 4173,
-        "classification_reason": "pending-validation-consumer-of-candidate-source",
+        "classification_reason": "subject-local-validation-source",
         "mathematical_admission": false,
         "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Positive/AdditiveCharacterMoments.lean",
         "physical_role": "positive-check",
@@ -15369,7 +15508,7 @@
         "qualified_role_alias": null,
         "sha256": "af9ac1d1982587daba14b6f170bc78f35f47b519192b65d02e253610537750bf",
         "source_role": "positive-check",
-        "source_set": "candidate-evidence"
+        "source_set": "active"
       },
       {
         "bytes": 4001,
@@ -18500,16 +18639,682 @@
     "status": "OBSERVED_CURRENT_SOURCES_NOT_THEOREM_ACCEPTANCE"
   },
   "historical_catalog_scope": "Retained historical bindings and verdicts; current bytes do not inherit mathematical acceptance.",
-  "present_lean_source_count": 836,
+  "present_lean_source_count": 850,
   "schema": "grwtsk-math-source-catalog-v1",
-  "source_count": 773,
+  "source_count": 787,
   "sources": [
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "git_blob": "6225a52ce3ec8c46790726156ffbe9691e63bc02",
+      "git_blob": "6654486250b19d342f3d037eb8587d7a706df31b",
       "historical_git_blob_before_additive_triple_imports": "27e45b3448f78dc6499f2fb0698eb51cac5d1904",
       "historical_git_blob_before_schedule_reduction": "918df9bd7d5dec1c2eb0f4d263a53f487507c84d",
+      "historical_inventory_before_reference_character_checkpoint": {
+        "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+        "git_blob": "741a5ed2b3bfd984fb8802aeae66ea4e2b2dfccd",
+        "historical_git_blob_before_additive_triple_imports": "27e45b3448f78dc6499f2fb0698eb51cac5d1904",
+        "historical_git_blob_before_schedule_reduction": "918df9bd7d5dec1c2eb0f4d263a53f487507c84d",
+        "historical_sha256_before_schedule_reduction": "26791e87fd5594d5e99db5f95837536160c257d75cde7f1cd7d0ddc779d9a008",
+        "historical_verification_before_additive_character_integration": {
+          "inventory": "observed-current-bytes",
+          "lean": "public root not replayed; selected seven-module closure replayed separately",
+          "owned_declaration_audit": "selected closure only; no whole-entrypoint admission",
+          "selected_new_module_receipt": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/divisor-sectors-checks-2026-10-15.json",
+          "source_sha256": "d8bda509bc6f84a130b4747760134d1eabf3a565f3cbd3ac4c46ce16da35597e"
+        },
+        "historical_verification_before_additive_triple_imports": {
+          "inventory": "observed-current-bytes",
+          "layout": "repository baseline remains failed",
+          "lean": "umbrella not replayed after selected import additions",
+          "source_sha256": "47e1e96b4572ddd92ceff25d16c3a68045557ccf0dae90215ed32e0f54e46d61"
+        },
+        "historical_verification_before_divisor_sectors": {
+          "inventory": "observed-current-bytes; public import inventory only",
+          "lean": "public umbrella NOT_REPLAYED after these imports; selected library closures have separate immutable receipts",
+          "owned_declaration_audit": "public umbrella NOT_RUN; no full-library admission",
+          "source_sha256": "e93288cf55c77a5a76b88f57a78dc58ad9514c7ee9473ead994326d73cda6bc5"
+        },
+        "historical_verification_before_finite_moments": {
+          "inventory": "observed-current-bytes",
+          "lean": "public root not replayed in this selected check",
+          "owned_declaration_audit": "complete public root not audited; selected new modules audited separately",
+          "selected_new_module_receipt": "evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/checked-prerequisites-2026-10-15.json",
+          "source_sha256": "8a211d7d749eefa07bf55ccc2170311acd380c8635bc761becdc2f11930fe303"
+        },
+        "historical_verification_before_schedule_reduction": {
+          "inventory": "observed-current-bytes",
+          "lean": "public root not replayed; new module closure replayed separately",
+          "owned_declaration_audit": "passed only for selected six-module scope; no public-root admission",
+          "selected_new_module_receipt": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/finite-moments-checks-2026-10-15-replay-2.json",
+          "source_sha256": "26791e87fd5594d5e99db5f95837536160c257d75cde7f1cd7d0ddc779d9a008"
+        },
+        "imports": [
+          "GRWTSK.Algebra.BigOperators.OrderedSquare",
+          "GRWTSK.Algebra.BigOperators.QuadraticCounterexample",
+          "GRWTSK.Algebra.OrderedProduct",
+          "GRWTSK.Algebra.OrderedProductGauge",
+          "GRWTSK.Algebra.Polynomial.ConjugateInterpolation",
+          "GRWTSK.Algebra.Polynomial.SignedRootTrace",
+          "GRWTSK.Analysis.Asymptotics.PolynomialErrorBound",
+          "GRWTSK.Analysis.Asymptotics.FiniteConvolutionRecurrence",
+          "GRWTSK.Analysis.Asymptotics.PolynomialClosure",
+          "GRWTSK.Analysis.Asymptotics.FinitePowerSum",
+          "GRWTSK.NumberTheory.Moebius.MertensPrimitive",
+          "GRWTSK.Analysis.LaplaceTransform.PolynomialEnergy",
+          "GRWTSK.Analysis.Asymptotics.PolynomialSubexponential",
+          "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
+          "GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy",
+          "GRWTSK.NumberTheory.Moebius.WeightedIntegralGrowth",
+          "GRWTSK.NumberTheory.Moebius.SignedIntegralSectorBounds",
+          "GRWTSK.Analysis.Calculus.CompactPolynomialDerivatives",
+          "GRWTSK.Analysis.SpecialFunctions.SquaredInverseBump",
+          "GRWTSK.Analysis.Calculus.CompactProfileNormalization",
+          "GRWTSK.Analysis.Calculus.CompactProfileDerivativeEnergy",
+          "GRWTSK.Analysis.IntervalIntegral.Reflection",
+          "GRWTSK.NumberTheory.Chebyshev.CorrelationPairing",
+          "GRWTSK.Analysis.WeakDerivatives.PolynomialBump",
+          "GRWTSK.Analysis.Convolution.PolynomialBumpRegularity",
+          "GRWTSK.Analysis.TestFunctions.PolynomialBumpNormalization",
+          "GRWTSK.Analysis.Calculus.PolynomialBumpNormalization",
+          "GRWTSK.Analysis.Inequalities.PolynomialEnergyRatio",
+          "GRWTSK.Analysis.Calculus.PolynomialBumpDerivativeEnergy",
+          "GRWTSK.Analysis.Convolution.AutocorrelationDerivativeEnergy",
+          "GRWTSK.Analysis.Convolution.AutocorrelationSecondDerivative",
+          "GRWTSK.Analysis.TestFunctions.PolynomialBumpSecondEnergy",
+          "GRWTSK.Analysis.Convolution.PolynomialBumpHigherDerivatives",
+          "GRWTSK.Analysis.InnerProductSpace.CompactResidualNormalization",
+          "GRWTSK.Analysis.InnerProductSpace.DilationGram",
+          "GRWTSK.Analysis.Convolution.CompactProfileCorrelation",
+          "GRWTSK.Analysis.Integration.CompactPolynomialMoments",
+          "GRWTSK.Analysis.Integration.ExponentialVolterraL2",
+          "GRWTSK.NumberTheory.Chebyshev.CompactProfilePairingIntegrability",
+          "GRWTSK.Analysis.Distribution.CompactProfileDilation",
+          "GRWTSK.Analysis.DigammaSeries",
+          "GRWTSK.Analysis.Fourier.PolynomialBumpEstimates",
+          "GRWTSK.Analysis.Convolution.ExponentialMoments",
+          "GRWTSK.NumberTheory.Chebyshev.FiniteIntegrationByParts",
+          "GRWTSK.NumberTheory.ExplicitFormula.CorrelationPairing",
+          "GRWTSK.Analysis.Fourier.LogarithmicDomain",
+          "GRWTSK.Analysis.Fourier.DigammaMultiplier",
+          "GRWTSK.Analysis.ReciprocalKernel",
+          "GRWTSK.Analysis.SpecialFunctions.DigammaFourierBound",
+          "GRWTSK.NumberTheory.Chebyshev.CompactProfileExplicitFormula",
+          "GRWTSK.Analysis.Convolution.CompactProfileHigherDerivatives",
+          "GRWTSK.Analysis.Calculus.CompactProfileBoundaryCounterexamples",
+          "GRWTSK.Analysis.Complex.VerticalReflection",
+          "GRWTSK.Analysis.Distribution.WeakSecondDerivativeUniqueness",
+          "GRWTSK.Analysis.ErrorBounds.PartialMapComposition",
+          "GRWTSK.Analysis.Fourier.IntegerSeries",
+          "GRWTSK.Analysis.Fourier.Parseval",
+          "GRWTSK.Analysis.Fourier.WindowCertificates",
+          "GRWTSK.Analysis.Inequalities.DiscreteEnergyBalance",
+          "GRWTSK.Analysis.Inequalities.ExponentialDiagonal",
+          "GRWTSK.Analysis.Inequalities.FiniteShiftedDerivativeBounds",
+          "GRWTSK.Analysis.InnerProductSpace.CausalResponseGram",
+          "GRWTSK.Analysis.InnerProductSpace.DilationResponseSeparation",
+          "GRWTSK.Analysis.IntervalReflection",
+          "GRWTSK.Analysis.LaplaceTransform.Analytic",
+          "GRWTSK.Analysis.LaplaceTransform.CausalExponentialResponse",
+          "GRWTSK.NumberTheory.Moebius.LaplaceTransform",
+          "GRWTSK.NumberTheory.Moebius.PrimitiveRegularity",
+          "GRWTSK.NumberTheory.Moebius.DirichletLaplaceIdentity",
+          "GRWTSK.NumberTheory.Moebius.FiniteResponseSum",
+          "GRWTSK.NumberTheory.Moebius.GramDiagonalBound",
+          "GRWTSK.NumberTheory.Moebius.LaplaceHolomorphy",
+          "GRWTSK.NumberTheory.Zeta.Riemann.Regularized",
+          "GRWTSK.NumberTheory.Zeta.Riemann.ZeroDefinitions",
+          "GRWTSK.NumberTheory.Zeta.Riemann.ZeroSymmetry",
+          "GRWTSK.NumberTheory.Zeta.Riemann.LaplaceCriterion",
+          "GRWTSK.NumberTheory.Zeta.Riemann.PolynomialEnergyCriterion",
+          "GRWTSK.NumberTheory.Moebius.UnsignedEnergyBound",
+          "GRWTSK.NumberTheory.Moebius.EnergyAbscissa",
+          "GRWTSK.Analysis.LaplaceTransform.ExponentialThreshold",
+          "GRWTSK.Analysis.NormedSpace.QuadraticError",
+          "GRWTSK.Analysis.Polarization",
+          "GRWTSK.Analysis.TestFunctions.Separation",
+          "GRWTSK.Analysis.TestFunctions.EvenSeparation",
+          "GRWTSK.Analysis.TestFunctions.ExponentialMomentVariation",
+          "GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.MoserSource",
+          "GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.Moser",
+          "GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.MoserCoordinates",
+          "GRWTSK.Combinatorics.Sequences.QuotaDiscrepancy",
+          "GRWTSK.Data.Sampling.Descriptions",
+          "GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators",
+          "GRWTSK.DynamicalSystems.Sequences.ApproximationReturn",
+          "GRWTSK.DynamicalSystems.TransitionSystems.GuardedFiniteBudget",
+          "GRWTSK.Logic.Certificates.ProofCoverage",
+          "GRWTSK.Logic.Locality.RevisionCertificates",
+          "GRWTSK.Order.Closure.FiniteDependencyClosure",
+          "GRWTSK.Logic.Certificates.DependencyRevision",
+          "GRWTSK.DynamicalSystems.TransitionSystems.StateReinitialization",
+          "GRWTSK.Logic.Certificates.BatchVerification",
+          "GRWTSK.Logic.Inference.FiniteRuleSystems",
+          "GRWTSK.Logic.Inference.RuleSoundness",
+          "GRWTSK.Logic.Certificates.ArtifactDerivation",
+          "GRWTSK.Logic.ProofChecking.RepositoryConformance",
+          "GRWTSK.Logic.Locality.FiniteRuleTransport",
+          "GRWTSK.Logic.Locality.AnchoredCertificates",
+          "GRWTSK.Logic.Certificates.AnchoredBatchVerification",
+          "GRWTSK.DynamicalSystems.TransitionSystems.AnchoredReinitialization",
+          "GRWTSK.DynamicalSystems.TransitionSystems.RevisionReachability",
+          "GRWTSK.Logic.Certificates.AnchoredDependencyRevision",
+          "GRWTSK.DynamicalSystems.TransitionSystems.AnchoredVerificationExamples",
+          "GRWTSK.DynamicalSystems.TransitionSystems.AnchoredVerificationReachability",
+          "GRWTSK.Order.Closure.FiniteDependencyExamples",
+          "GRWTSK.Logic.Certificates.DependencyRevisionExamples",
+          "GRWTSK.DynamicalSystems.TransitionSystems.StateReinitializationExamples",
+          "GRWTSK.DynamicalSystems.TransitionSystems.BudgetResetCounterexamples",
+          "GRWTSK.DynamicalSystems.TransitionSystems.CertifiedPartialMaps",
+          "GRWTSK.DynamicalSystems.TransitionSystems.VerificationReachability",
+          "GRWTSK.Logic.Certificates.BatchVerificationExamples",
+          "GRWTSK.DynamicalSystems.TransitionSystems.VerificationReachabilityExamples",
+          "GRWTSK.LinearAlgebra.SchrodingerTransfer",
+          "GRWTSK.LinearAlgebra.AlmostMathieu",
+          "GRWTSK.LinearAlgebra.JacobiTransfer",
+          "GRWTSK.LinearAlgebra.OrderedTransfer",
+          "GRWTSK.LinearAlgebra.OrderedProductDeterminant",
+          "GRWTSK.LinearAlgebra.CocycleProduct",
+          "GRWTSK.LinearAlgebra.CommonJ",
+          "GRWTSK.LinearAlgebra.CommonJCounterexamples",
+          "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm",
+          "GRWTSK.LinearAlgebra.QuadraticCertificates",
+          "GRWTSK.LinearAlgebra.GaugeState",
+          "GRWTSK.LinearAlgebra.Schrodinger.SampledPotential",
+          "GRWTSK.LinearAlgebra.Schrodinger.Sampling",
+          "GRWTSK.LinearAlgebra.Sturmian",
+          "GRWTSK.Logic.Certificates.ModelExamples",
+          "GRWTSK.Analysis.Complex.CriticalReflection",
+          "GRWTSK.Analysis.Complex.ReflectionCounterexamples",
+          "GRWTSK.LinearAlgebra.Matrix.HermitianCounterexamples",
+          "GRWTSK.NumberTheory.Zeta.Riemann.ZeroExclusions",
+          "GRWTSK.Logic.FiniteCoverage",
+          "GRWTSK.Logic.FiniteSequences.PrefixCoverage",
+          "GRWTSK.Logic.Inference.FiniteRuleExamples",
+          "GRWTSK.NumberTheory.ContinuedFractions.FrequencyRealization",
+          "GRWTSK.NumberTheory.FirstPrime",
+          "GRWTSK.NumberTheory.Prime.LeastPrime",
+          "GRWTSK.NumberTheory.Moebius.ComparisonEnergy",
+          "GRWTSK.NumberTheory.Moebius.DiagonalEnergyBounds",
+          "GRWTSK.NumberTheory.Moebius.PrimeFactorFilters",
+          "GRWTSK.NumberTheory.Moebius.PrimeFilterEnergy",
+          "GRWTSK.NumberTheory.Moebius.PrimeBlockEnergy",
+          "GRWTSK.NumberTheory.Prime.ReciprocalMass",
+          "GRWTSK.NumberTheory.Moebius.PrimeFilterGrowth",
+          "GRWTSK.NumberTheory.Moebius.DyadicEnergy",
+          "GRWTSK.NumberTheory.Moebius.EnergyGrowthEquivalences",
+          "GRWTSK.NumberTheory.Moebius.FiniteLaplaceSums",
+          "GRWTSK.NumberTheory.Moebius.PrimeFilterLaplace",
+          "GRWTSK.NumberTheory.Moebius.FiniteLaplaceTransform",
+          "GRWTSK.NumberTheory.Moebius.FiniteEulerProduct",
+          "GRWTSK.NumberTheory.Moebius.FinitePrimeProductDebt",
+          "GRWTSK.NumberTheory.Moebius.IntegerSampleGrowth",
+          "GRWTSK.NumberTheory.Moebius.LaplaceDirichletSeries",
+          "GRWTSK.NumberTheory.Moebius.MeanSquareGrowth",
+          "GRWTSK.NumberTheory.Moebius.WeightedIntegralContinuity",
+          "GRWTSK.NumberTheory.Moebius.PolynomialLaplaceHolomorphy",
+          "GRWTSK.NumberTheory.Moebius.MeanSquareLaplaceHolomorphy",
+          "GRWTSK.NumberTheory.Moebius.PrimePrefixGrowth",
+          "GRWTSK.NumberTheory.Moebius.NegativePrimeCorrelation",
+          "GRWTSK.NumberTheory.Moebius.PrimitiveIdentification",
+          "GRWTSK.NumberTheory.Moebius.SectorEssentialSuprema",
+          "GRWTSK.NumberTheory.Zeta.PoleRegularization",
+          "GRWTSK.NumberTheory.Zeta.ZeroFreeHalfPlaneCriteria",
+          "GRWTSK.NumberTheory.Zeta.HolomorphicFilteredReciprocal",
+          "GRWTSK.NumberTheory.Zeta.Riemann.CriticalLineDefect",
+          "GRWTSK.NumberTheory.Zeta.Riemann.Hypothesis",
+          "GRWTSK.NumberTheory.Zeta.Riemann.DefectCriterion",
+          "GRWTSK.NumberTheory.Zeta.Riemann",
+          "GRWTSK.Spectral.GapTransport",
+          "GRWTSK.Spectral.MatrixCountComparison",
+          "GRWTSK.Spectral.SturmianFiniteVolume",
+          "GRWTSK.Spectral.DirichletCut",
+          "GRWTSK.Spectral.FreeDirichletSpectrum",
+          "GRWTSK.Spectral.FreeIDS",
+          "GRWTSK.Spectral.SturmianBlockCounts",
+          "GRWTSK.Algebra.MvPolynomial.SquarefreeEulerProduct",
+          "GRWTSK.Analysis.Asymptotics.DisjointPrimeChainBounds",
+          "GRWTSK.Analysis.Asymptotics.ExponentialEnergyObstruction",
+          "GRWTSK.Analysis.Asymptotics.ExponentialRecurrence",
+          "GRWTSK.Analysis.Asymptotics.FinitePrimeChainEnergyBounds",
+          "GRWTSK.Analysis.Asymptotics.FixedWidthEnergyBoundEquivalence",
+          "GRWTSK.Analysis.Asymptotics.MassWeightedRecurrence",
+          "GRWTSK.Analysis.Asymptotics.PrimeMassPotentialBounds",
+          "GRWTSK.Analysis.Asymptotics.PrimeSubsetPotentialBounds",
+          "GRWTSK.Analysis.Asymptotics.PrimeTranslationBoundContracts",
+          "GRWTSK.Analysis.Asymptotics.QuadraticKernelEnergyEquivalence",
+          "GRWTSK.Analysis.Asymptotics.SelectedPrimeChainBounds",
+          "GRWTSK.Analysis.Asymptotics.SignedEnergyDecomposition",
+          "GRWTSK.Analysis.Calculus.LogarithmicResponseDerivatives",
+          "GRWTSK.Analysis.CausalTranslation.ExponentialResponse",
+          "GRWTSK.Analysis.Fourier.AngularFrequencyParseval",
+          "GRWTSK.NumberTheory.Moebius.DampedRecordingParseval",
+          "GRWTSK.NumberTheory.Moebius.VerticalLineCriterion",
+          "GRWTSK.NumberTheory.Moebius.VerticalLineMonotonicity",
+          "GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks",
+          "GRWTSK.NumberTheory.Moebius.LogarithmicMertensBoundary",
+          "GRWTSK.NumberTheory.Moebius.ReciprocalPrefix",
+          "GRWTSK.DynamicalSystems.TransitionSystems.FinitePhraseProcess",
+          "GRWTSK.NumberTheory.ArithmeticFunctions.DensityMoebius",
+          "GRWTSK.NumberTheory.ArithmeticFunctions.DensityFiniteSums",
+          "GRWTSK.NumberTheory.ArithmeticFunctions.CoprimeReciprocalForm",
+          "GRWTSK.NumberTheory.ArithmeticFunctions.DensityMoebiusCorrection",
+          "GRWTSK.NumberTheory.ArithmeticFunctions.DivisibleDensityRow",
+          "GRWTSK.NumberTheory.ArithmeticFunctions.MoebiusReciprocalPrefix",
+          "GRWTSK.NumberTheory.ArithmeticFunctions.MoebiusTruncation",
+          "GRWTSK.NumberTheory.ArithmeticFunctions.PositiveDensityCorrection",
+          "GRWTSK.NumberTheory.ArithmeticFunctions.DensityCorrectionPrimeSeries",
+          "GRWTSK.NumberTheory.ArithmeticFunctions.DensityCorrectionReciprocalMass",
+          "GRWTSK.NumberTheory.ArithmeticFunctions.DensityHalfPrimeFactor",
+          "GRWTSK.NumberTheory.ArithmeticFunctions.DensityHalfMoment",
+          "GRWTSK.NumberTheory.ArithmeticFunctions.DensityMomentTails",
+          "GRWTSK.NumberTheory.ArithmeticFunctions.DensityReciprocalPrefix",
+          "GRWTSK.NumberTheory.ArithmeticFunctions.ExcludedDensityCorrection",
+          "GRWTSK.NumberTheory.ArithmeticFunctions.TruncatedMoebiusCoefficients",
+          "GRWTSK.NumberTheory.ArithmeticFunctions.ComplexMoebiusCast",
+          "GRWTSK.NumberTheory.ArithmeticFunctions.SquarefulMoebiusReturn",
+          "GRWTSK.NumberTheory.ArithmeticFunctions.SquarefreeMoebiusSum",
+          "GRWTSK.NumberTheory.LSeries.TruncatedMoebiusSeries",
+          "GRWTSK.NumberTheory.LSeries.ClosedMoebiusPolynomial",
+          "GRWTSK.NumberTheory.Moebius.ReciprocalPrefixDensityAdapter",
+          "GRWTSK.NumberTheory.Moebius.ReciprocalPrefixKernel",
+          "GRWTSK.NumberTheory.Moebius.CriticalIntervalBlockGrowth",
+          "GRWTSK.NumberTheory.Moebius.CriticalEndpointDefect",
+          "GRWTSK.NumberTheory.Moebius.CriticalEndpointDefectRecurrence",
+          "GRWTSK.NumberTheory.Moebius.CriticalMertensTransformMeanSquare",
+          "GRWTSK.NumberTheory.Moebius.CriticalWeightedMertensSquare",
+          "GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationEnergy",
+          "GRWTSK.NumberTheory.Moebius.ReciprocalFluxKernelBounds",
+          "GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationSummability",
+          "GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationPowerSaving",
+          "GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationRecurrence",
+          "GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationMertensEnergy",
+          "GRWTSK.NumberTheory.Moebius.MertensSquareEnergyPowerBound",
+          "GRWTSK.NumberTheory.Moebius.MertensSquareEnergyEquivalence",
+          "GRWTSK.NumberTheory.Moebius.WeightedMertensSquareCorrelation",
+          "GRWTSK.NumberTheory.Moebius.WeightedMertensSquareCorrelationBound",
+          "GRWTSK.Analysis.Fourier.FiniteTranslationMultipliers",
+          "GRWTSK.Analysis.Fourier.MoebiusQuadraticReturn",
+          "GRWTSK.Analysis.Fourier.PrimePhaseMultiplierBounds",
+          "GRWTSK.Analysis.Fourier.PrimePhasePacketCertificates",
+          "GRWTSK.Analysis.Fourier.QuadraticKernelTruncation",
+          "GRWTSK.Analysis.Fourier.ReciprocalZetaQuadraticKernel",
+          "GRWTSK.Analysis.Fourier.SignedPrimePhaseExamples",
+          "GRWTSK.Analysis.InnerProductSpace.LogarithmicCharacterGramBounds",
+          "GRWTSK.Analysis.InnerProductSpace.MoebiusResponseGramExpansion",
+          "GRWTSK.Analysis.InnerProductSpace.SignedCorrelationBudgetEquivalence",
+          "GRWTSK.Analysis.InnerProductSpace.SignedSynthesisEnergyBounds",
+          "GRWTSK.Analysis.InnerProductSpace.SignedWindowGramIdentity",
+          "GRWTSK.Analysis.InnerProductSpace.SignedWindowPacketCertificates",
+          "GRWTSK.Analysis.InnerProductSpace.WeightedSchurBounds",
+          "GRWTSK.Analysis.LaplaceTransform.MoebiusResponseFormula",
+          "GRWTSK.Analysis.LaplaceTransform.PolynomialEnergyHolomorphy",
+          "GRWTSK.Analysis.SumIntegralComparison.ExponentialResponseSquareSum",
+          "GRWTSK.Logic.ProofEvidence.DirichletResponseStatus",
+          "GRWTSK.Logic.ProofEvidence.EnergyInterfaceEquivalence",
+          "GRWTSK.Logic.ProofEvidence.MoebiusPrimeShellStatus",
+          "GRWTSK.Logic.ProofEvidence.MoebiusResponseStatus",
+          "GRWTSK.Logic.ProofEvidence.ProvenanceCertificates",
+          "GRWTSK.MeasureTheory.Function.Lp.CausalRestrictionBounds",
+          "GRWTSK.MeasureTheory.Integral.FinitePrimeTranslationEnergy",
+          "GRWTSK.MeasureTheory.Integral.FixedWidthEnergyTelescope",
+          "GRWTSK.MeasureTheory.Integral.MoebiusCumulativeEnergy",
+          "GRWTSK.MeasureTheory.Integral.QuadraticFourierFubini",
+          "GRWTSK.NumberTheory.Moebius.CompositeActivationExamples",
+          "GRWTSK.NumberTheory.Moebius.DiagonalEnergyBound",
+          "GRWTSK.NumberTheory.Moebius.FiniteProductResponseIdentification",
+          "GRWTSK.NumberTheory.Moebius.FiniteTranslationProduct",
+          "GRWTSK.NumberTheory.Moebius.LogarithmicResponse",
+          "GRWTSK.NumberTheory.Moebius.MoebiusEulerProduct",
+          "GRWTSK.NumberTheory.Moebius.PolynomialEnergyHolomorphy",
+          "GRWTSK.NumberTheory.Moebius.PrimeProductPrefixEnergy",
+          "GRWTSK.NumberTheory.Moebius.PrimeShellDecomposition",
+          "GRWTSK.NumberTheory.Moebius.QuadraticTransformBoundConversion",
+          "GRWTSK.NumberTheory.Moebius.ResponseBudgetIdentification",
+          "GRWTSK.NumberTheory.Moebius.SubsetPotentialObstruction",
+          "GRWTSK.NumberTheory.PrimeCounting.PrimeIntervalResponseEnergyGrowth",
+          "GRWTSK.NumberTheory.PrimeCounting.PrimeShellEnergyGrowth",
+          "GRWTSK.NumberTheory.PrimeCounting.ReciprocalPrimeBlockCost",
+          "GRWTSK.NumberTheory.PrimeCounting.ReciprocalPrimeIntervalBounds",
+          "GRWTSK.NumberTheory.PrimeCounting.ReciprocalPrimeLogBound",
+          "GRWTSK.NumberTheory.Zeta.ReciprocalDecayBounds",
+          "GRWTSK.NumberTheory.Zeta.ReciprocalHolomorphyZeroSymmetry",
+          "GRWTSK.NumberTheory.Zeta.ResponseBoundZeroConversions",
+          "GRWTSK.Order.WellFounded.AdditiveNaturalRank",
+          "GRWTSK.Analysis.Convolution.CompactProfileDifferentialMoments",
+          "GRWTSK.Analysis.Convolution.CompactProfileFirstPoleMoment",
+          "GRWTSK.Analysis.Convolution.FiniteTranslateIndependence",
+          "GRWTSK.Analysis.Convolution.FirstMomentConvolution",
+          "GRWTSK.Analysis.Inequalities.CompactProfileDifferentialBounds",
+          "GRWTSK.Analysis.Inequalities.FiniteLogarithmicProfileBounds",
+          "GRWTSK.Analysis.Inequalities.LogarithmicProfileIntegralPrices",
+          "GRWTSK.Analysis.InnerProductSpace.CausalContactHilbertSeparation",
+          "GRWTSK.Analysis.InnerProductSpace.CausalContactOperatorCost",
+          "GRWTSK.Analysis.InnerProductSpace.CausalContactSeparation",
+          "GRWTSK.Analysis.InnerProductSpace.CausalFiniteOperatorSeparation",
+          "GRWTSK.Analysis.InnerProductSpace.CausalGramCongruenceObstruction",
+          "GRWTSK.Analysis.InnerProductSpace.CausalIndividualRealization",
+          "GRWTSK.Analysis.InnerProductSpace.CausalLastLabelOperatorCost",
+          "GRWTSK.Analysis.InnerProductSpace.CausalRealizationPolynomialObstruction",
+          "GRWTSK.Analysis.InnerProductSpace.CompactSourceGramPositiveDefinite",
+          "GRWTSK.Analysis.InnerProductSpace.NonzeroVectorRealization",
+          "GRWTSK.Analysis.IntegralTransforms.CompactProfileLogarithmicMoment",
+          "GRWTSK.Analysis.IntegralTransforms.CompactProfileLogarithmicRegularity",
+          "GRWTSK.Analysis.IntegralTransforms.LogarithmicMomentSubstitution",
+          "GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileCutoff",
+          "GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileDerivative",
+          "GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileRegularity",
+          "GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileWeights",
+          "GRWTSK.Analysis.Integration.CompactWeightedDerivativeMoments",
+          "GRWTSK.Analysis.Integration.FiniteUnitSumVariation",
+          "GRWTSK.Analysis.Integration.PositiveHalfLineCutoffBalance",
+          "GRWTSK.Analysis.SpecialFunctions.ExponentialFloorGap",
+          "GRWTSK.Analysis.SpecialFunctions.ExponentialPolynomialDomination",
+          "GRWTSK.LinearAlgebra.BilinearForm.ZeroCoordinateObstruction",
+          "GRWTSK.LinearAlgebra.LinearMap.FiniteMixingObstruction",
+          "GRWTSK.LinearAlgebra.Matrix.SingularCongruenceObstruction",
+          "GRWTSK.Analysis.Inequalities.LogarithmicShiftKernelBounds",
+          "GRWTSK.Analysis.Calculus.EvenLinearDefect",
+          "GRWTSK.Analysis.Calculus.SupportEdgeDifferentiability",
+          "GRWTSK.Analysis.Convolution.AutocorrelationTranslationEnergy",
+          "GRWTSK.Analysis.Convolution.CompactProfileFifthDerivativeObstruction",
+          "GRWTSK.Analysis.Convolution.CompactProfileSupportEdge",
+          "GRWTSK.Analysis.Convolution.CompactSupportContact",
+          "GRWTSK.Analysis.IntegralTransforms.CompactProfileLogarithmicDerivative",
+          "GRWTSK.Analysis.Integration.TranslationSeamLowerBound",
+          "GRWTSK.Analysis.Calculus.LogarithmicShiftKernelRegularity",
+          "GRWTSK.Analysis.Convolution.CompactProfileTailSigns",
+          "GRWTSK.Analysis.TestFunctions.PowerFourResidualSigns",
+          "GRWTSK.Analysis.Inequalities.LogarithmicShiftKernelPositiveSector",
+          "GRWTSK.Algebra.Polynomial.ConjugateQuartic",
+          "GRWTSK.NumberTheory.Zeta.Riemann.BoundedHeightCriterion",
+          "GRWTSK.NumberTheory.Zeta.Riemann.QuadraticTraceCriterion",
+          "GRWTSK.NumberTheory.Zeta.Riemann.ZeroOrbitQuartic",
+          "GRWTSK.Analysis.Inequalities.FiniteSquareSum",
+          "GRWTSK.LinearAlgebra.Matrix.TraceRank",
+          "GRWTSK.Logic.FiniteSequences.IndexedDictionary",
+          "GRWTSK.Logic.FiniteSequences.DictionaryRevision",
+          "GRWTSK.Logic.FiniteSequences.DecisionCertificate",
+          "GRWTSK.Logic.FiniteSequences.AppendOnlyHistory",
+          "GRWTSK.Logic.FiniteSequences.IncrementalDictionary",
+          "GRWTSK.Analysis.InnerProductSpace.ClosedOperatorSolvability",
+          "GRWTSK.Logic.FiniteSequences.IncrementalComposition",
+          "GRWTSK.Analysis.InnerProductSpace.ClosedComplexSolvability",
+          "GRWTSK.Logic.FiniteSequences.BatchCertificate",
+          "GRWTSK.Analysis.InnerProductSpace.JointGraphSolvability",
+          "GRWTSK.Order.Embeddings.PrefixObstruction",
+          "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences",
+          "GRWTSK.Analysis.MellinTransform.ReverseInversion",
+          "GRWTSK.Combinatorics.DirectedGraph.EdgeTrace",
+          "GRWTSK.Analysis.MellinTransform.LogarithmicGaussian",
+          "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding",
+          "GRWTSK.Analysis.MellinTransform.NormalizedGaussian",
+          "GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix",
+          "GRWTSK.NumberTheory.LSeries.GaussianContour",
+          "GRWTSK.Combinatorics.DirectedGraph.EndpointSection",
+          "GRWTSK.Analysis.PartitionOfUnity.DyadicAnnulus",
+          "GRWTSK.NumberTheory.LSeries.GaussianDyadic",
+          "GRWTSK.Combinatorics.DirectedGraph.PrefixInventory",
+          "GRWTSK.Analysis.MellinTransform.CompactGaussianWindow",
+          "GRWTSK.Combinatorics.DirectedGraph.ParentTraceDictionary",
+          "GRWTSK.Analysis.MellinTransform.ScaledGaussianDerivatives",
+          "GRWTSK.Combinatorics.DirectedGraph.RootedTraceRevision",
+          "GRWTSK.Analysis.MellinTransform.GaussianWindowSeminorms",
+          "GRWTSK.Combinatorics.DirectedGraph.IncrementalPrefixTable",
+          "GRWTSK.Analysis.Series.DyadicKernel",
+          "GRWTSK.Analysis.MellinTransform.GaussianDyadicSummation",
+          "GRWTSK.Combinatorics.DirectedGraph.PrefixTableState",
+          "GRWTSK.Analysis.MellinTransform.GaussianRemoteSeminorms",
+          "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCompaction",
+          "GRWTSK.Analysis.Fourier.SchwartzMoments",
+          "GRWTSK.Analysis.MellinTransform.GaussianFourierMoments",
+          "GRWTSK.Combinatorics.DirectedGraph.RoleRelationTable",
+          "GRWTSK.Analysis.MellinTransform.GaussianLogFlow",
+          "GRWTSK.Analysis.MellinTransform.GaussianLogWindow",
+          "GRWTSK.Combinatorics.DirectedGraph.RoleRelationReindex",
+          "GRWTSK.Analysis.MellinTransform.GaussianDensityMoments",
+          "GRWTSK.Combinatorics.DirectedGraph.PrefixTableReindex",
+          "GRWTSK.Analysis.Calculus.CompactCutoff",
+          "GRWTSK.Analysis.MellinTransform.GaussianCoupledSeparation",
+          "GRWTSK.Combinatorics.DirectedGraph.PrefixTableUpdateReindex",
+          "GRWTSK.Analysis.MellinTransform.GaussianAnnularSeparation",
+          "GRWTSK.Combinatorics.DirectedGraph.PrefixTableBatch",
+          "GRWTSK.NumberTheory.Ideal.CompactNormSupport",
+          "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCheckpoint",
+          "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicIdeals",
+          "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Definitions",
+          "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Radical",
+          "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ABCStatement",
+          "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.EquivalentForms",
+          "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExceptionalSet",
+          "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Signed",
+          "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.PartialBounds",
+          "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.NonprimitiveObstruction",
+          "GRWTSK.LinearAlgebra.OrientedRealLine.PositiveScale",
+          "GRWTSK.LinearAlgebra.OrientedRealLine.Coherence",
+          "GRWTSK.LinearAlgebra.OrientedRealLine.FiniteComparison",
+          "GRWTSK.NumberTheory.ArithmeticGeometry.LogThetaComparison",
+          "GRWTSK.Analysis.FiniteSums.WeightedDegreeComparison",
+          "GRWTSK.NumberTheory.Polynomial.DerivativeRadicalBound",
+          "GRWTSK.Combinatorics.Sequences.PartialSumOrdering",
+          "GRWTSK.Combinatorics.Sequences.DisjointTranspositions",
+          "GRWTSK.Combinatorics.Sequences.ZeroSumIntervalRepair",
+          "GRWTSK.Combinatorics.Sequences.PartialSumCertificate",
+          "GRWTSK.DynamicalSystems.TransitionSystems.ModularCheckpoint",
+          "GRWTSK.Analysis.Fourier.ZModSubsetSum",
+          "GRWTSK.Analysis.Fourier.ZModSubsetSumCompletion",
+          "GRWTSK.Combinatorics.Sequences.PrimeCyclicRearrangement",
+          "GRWTSK.NumberTheory.ArithmeticFunctions.CoprimeDivisorFilter",
+          "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Moments",
+          "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.MomentReindexing",
+          "GRWTSK.Combinatorics.Sequences.BalancedPartitionSampling",
+          "GRWTSK.Combinatorics.Sequences.CyclicSumsetGrowth",
+          "GRWTSK.Analysis.Fourier.ZModCharacterEnergy",
+          "GRWTSK.Analysis.Fourier.ZModIndependentSelection",
+          "GRWTSK.Analysis.Fourier.FiniteExponentialLayers",
+          "GRWTSK.Analysis.Fourier.ZModPartitionEnergy",
+          "GRWTSK.Analysis.Fourier.ZModBalancedPartition",
+          "GRWTSK.Analysis.Fourier.ZModSmallEnergySets",
+          "GRWTSK.Analysis.Fourier.ZModSmallEnergySpectrum",
+          "GRWTSK.Analysis.Fourier.ZModConcentratedFrequencies",
+          "GRWTSK.Combinatorics.DirectedGraph.PrefixTableSchedule",
+          "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicReduction",
+          "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.DivisorSectorReindexing",
+          "GRWTSK.Analysis.Fourier.ZModBalancedExpectedLayers",
+          "GRWTSK.Combinatorics.Sequences.PartitionExposureChecks",
+          "GRWTSK.Analysis.Fourier.FiniteAdditiveProjector",
+          "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.AdditiveCharacterMoments"
+        ],
+        "logical_status": "statements and proof bodies preserved; relocation makes no new acceptance claim",
+        "module": "GRWTSK",
+        "namespaces": [],
+        "object": "EntryPoint",
+        "open_premises": [],
+        "operation": "keep",
+        "original_path": "GRWTSK.lean",
+        "other_consumers": [
+          "README.md",
+          "docs/how-to/verify.md",
+          "docs/mathematics/Algebra/OrderedProduct/gauge.md",
+          "docs/mathematics/Algebra/OrderedProduct/intervals.md",
+          "docs/mathematics/Algebra/index.md",
+          "docs/mathematics/Analysis/Asymptotics/polynomial-error.md",
+          "docs/mathematics/Analysis/Convolution/compact-correlation.md",
+          "docs/mathematics/Analysis/Convolution/derivative-energy.md",
+          "docs/mathematics/Analysis/Fourier/IntegerSeries/encoding.md",
+          "docs/mathematics/Analysis/Fourier/WindowCertificates/angular.md",
+          "docs/mathematics/Analysis/InnerProductSpace/causal-response-gram.md",
+          "docs/mathematics/Analysis/InnerProductSpace/polarization.md",
+          "docs/mathematics/Analysis/Integration/exponential-volterra-l2.md",
+          "docs/mathematics/Analysis/Integration/interval-reflection.md",
+          "docs/mathematics/Analysis/NormedSpace/reconstruction.md",
+          "docs/mathematics/Analysis/TestFunctions/exponential-moments.md",
+          "docs/mathematics/Analysis/TestFunctions/polynomial-profile.md",
+          "docs/mathematics/Analysis/TestFunctions/separation.md",
+          "docs/mathematics/Analysis/index.md",
+          "docs/mathematics/Combinatorics/Sequences/coverage-and-quotas.md",
+          "docs/mathematics/Combinatorics/Sequences/quotas.md",
+          "docs/mathematics/Combinatorics/index.md",
+          "docs/mathematics/Data/index.md",
+          "docs/mathematics/DynamicalSystems/Sequences/approximation-return.md",
+          "docs/mathematics/DynamicalSystems/TransitionSystems/guarded-reachability.md",
+          "docs/mathematics/DynamicalSystems/index.md",
+          "docs/mathematics/GroupTheory/index.md",
+          "docs/mathematics/LinearAlgebra/Cocycle/product.md",
+          "docs/mathematics/LinearAlgebra/CommonGenerator/counterexamples.md",
+          "docs/mathematics/LinearAlgebra/CommonGenerator/rotations.md",
+          "docs/mathematics/LinearAlgebra/Gauge/state.md",
+          "docs/mathematics/LinearAlgebra/Jacobi/transfer.md",
+          "docs/mathematics/LinearAlgebra/OrderedProduct/determinant.md",
+          "docs/mathematics/LinearAlgebra/Schrodinger/almost-mathieu.md",
+          "docs/mathematics/LinearAlgebra/Schrodinger/sampled-potential.md",
+          "docs/mathematics/LinearAlgebra/Schrodinger/sturmian.md",
+          "docs/mathematics/LinearAlgebra/Schrodinger/transfer.md",
+          "docs/mathematics/LinearAlgebra/Transfer/ordered.md",
+          "docs/mathematics/LinearAlgebra/index.md",
+          "docs/mathematics/Logic/FiniteCoverage/scope.md",
+          "docs/mathematics/Logic/FiniteSequences/prefix-coverage.md",
+          "docs/mathematics/Logic/ProofChecking/source-roles.md",
+          "docs/mathematics/Logic/index.md",
+          "docs/mathematics/MeasureTheory/index.md",
+          "docs/mathematics/NumberTheory/ArithmeticFunctions/density-correction.md",
+          "docs/mathematics/NumberTheory/ArithmeticFunctions/signed-cutoffs.md",
+          "docs/mathematics/NumberTheory/ContinuedFractions/frequency-realization.md",
+          "docs/mathematics/NumberTheory/ContinuedFractions/scheduled-denominators.md",
+          "docs/mathematics/NumberTheory/LSeries/closed-moebius.md",
+          "docs/mathematics/NumberTheory/Moebius/Energy/damped-tails.md",
+          "docs/mathematics/NumberTheory/Moebius/Energy/determinant.md",
+          "docs/mathematics/NumberTheory/Moebius/Energy/gram.md",
+          "docs/mathematics/NumberTheory/Moebius/Energy/growth.md",
+          "docs/mathematics/NumberTheory/Moebius/Energy/recording-blocks.md",
+          "docs/mathematics/NumberTheory/Moebius/Laplace/cutoff.md",
+          "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md",
+          "docs/mathematics/NumberTheory/Moebius/Laplace/finite-window.md",
+          "docs/mathematics/NumberTheory/Moebius/LocalCancellation/common-reading.md",
+          "docs/mathematics/NumberTheory/Moebius/Pickup/identification.md",
+          "docs/mathematics/NumberTheory/Moebius/PrimeFilters/cascade.md",
+          "docs/mathematics/NumberTheory/Moebius/PrimeFilters/conditional-growth.md",
+          "docs/mathematics/NumberTheory/Moebius/PrimeFilters/negative-correlation.md",
+          "docs/mathematics/NumberTheory/Moebius/PrimeFilters/uniform-supplier-obstruction.md",
+          "docs/mathematics/NumberTheory/Moebius/finite-euler-product.md",
+          "docs/mathematics/NumberTheory/Moebius/logarithmic-mertens-boundary.md",
+          "docs/mathematics/NumberTheory/Moebius/matched-pickup.md",
+          "docs/mathematics/NumberTheory/Moebius/pickup-problem-registry.json",
+          "docs/mathematics/NumberTheory/Prime/least-prime.md",
+          "docs/mathematics/NumberTheory/Zeta/Riemann/criteria.md",
+          "docs/mathematics/NumberTheory/Zeta/Riemann/inference-guards.md",
+          "docs/mathematics/NumberTheory/Zeta/riemann-hypothesis-criteria.md",
+          "docs/mathematics/NumberTheory/index.md",
+          "docs/mathematics/Order/index.md",
+          "docs/mathematics/Spectral/FiniteVolume/count-comparison.md",
+          "docs/mathematics/Spectral/FiniteVolume/dirichlet-cut.md",
+          "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md",
+          "docs/mathematics/Spectral/FiniteVolume/repeated-blocks.md",
+          "docs/mathematics/Spectral/FreeDirichletSpectrum/eigenvalues.md",
+          "docs/mathematics/Spectral/GapTransport/labels-and-coding.md",
+          "docs/mathematics/Spectral/IntegratedDensityOfStates/free.md",
+          "docs/mathematics/Spectral/index.md",
+          "docs/reference/documentation-layout.json",
+          "docs/reference/lean-consolidation-report.md",
+          "docs/reference/library-pages.md",
+          "docs/reference/library-summary.json",
+          "docs/reference/object-source-bindings.json",
+          "docs/reference/reconstruction-recipes.json",
+          "docs/reference/results.json",
+          "docs/reference/rigor-and-reconstruction-report.md",
+          "docs/reference/rules/registry.json",
+          "docs/reference/rules/rule-soundness.md",
+          "docs/reference/source-intake.md",
+          "docs/reference/source-layout.md",
+          "docs/reference/source-verification.md",
+          "docs/reference/trust-boundary.md",
+          "docs/reference/verification-interfaces.md",
+          "docs/start/least-prime.md",
+          "evidence/Analysis/InnerProductSpace/CausalRealization/formalization-admission.json",
+          "evidence/ccc-control-soundness-source-manifest.json",
+          "evidence/moebius-response-sources.json",
+          "evidence/source-manifest.json",
+          "lakefile.toml",
+          "scripts/check.py",
+          "scripts/check_ccc_energy.py",
+          "scripts/check_cocycle_product.py",
+          "scripts/check_common_j.py",
+          "scripts/check_common_j_counterexamples.py",
+          "scripts/check_common_j_signs.py",
+          "scripts/check_density_arithmetic.py",
+          "scripts/check_documentation_layout.py",
+          "scripts/check_finite_coverage.py",
+          "scripts/check_finite_euler_product.py",
+          "scripts/check_fourier_controls.py",
+          "scripts/check_gauge_state.py",
+          "scripts/check_interval_reflection.py",
+          "scripts/check_jacobi_transfer.py",
+          "scripts/check_math_layout.py",
+          "scripts/check_math_trust.py",
+          "scripts/check_moebius_response.py",
+          "scripts/check_moser.py",
+          "scripts/check_ordered_product.py",
+          "scripts/check_ordered_product_determinant.py",
+          "scripts/check_ordered_product_gauge.py",
+          "scripts/check_ordered_transfer.py",
+          "scripts/check_original_pickup.py",
+          "scripts/check_pickup_cutoff_laplace.py",
+          "scripts/check_polarization.py",
+          "scripts/check_prime_cascade.py",
+          "scripts/check_prime_window_laplace.py",
+          "scripts/check_recording_scale.py",
+          "scripts/check_repository_conformance.py",
+          "scripts/check_rh_inference_guards.py",
+          "scripts/check_rh_target.py",
+          "scripts/check_schrodinger_transfer.py",
+          "scripts/check_sequence_realization.py",
+          "scripts/check_smooth_test_separation.py",
+          "scripts/check_ten_martini.py",
+          "scripts/documentation_indexes.py",
+          "scripts/export_math_bundle.py",
+          "scripts/generate_moebius_response_manifest.py",
+          "scripts/math_bundle_subjects.json",
+          "scripts/math_bundle_subjects_interim.json",
+          "scripts/moebius_owner_census.py",
+          "scripts/monitor_math.py",
+          "scripts/project_replay.py",
+          "scripts/replay_causal_realization.py",
+          "scripts/test_documentation_layout.py",
+          "scripts/test_generate_moebius_response_manifest.py",
+          "scripts/test_moebius_owner_census.py",
+          "scripts/test_moebius_response_checker.py",
+          "scripts/update_math_source_inventory.py",
+          "scripts/verify_ccc_control_soundness.py"
+        ],
+        "path": "GRWTSK.lean",
+        "placement_rationale": "Conventional public entry point.",
+        "public_declarations": [],
+        "reverse_consumers": [
+          "GRWTSK/Combinatorics/GraphTheory/UnitDistanceGraph/Moser/Checks/DeclarationAudit.lean",
+          "GRWTSK/Logic/ProofChecking/Checks/FullAnalyticArithmeticKernel.lean",
+          "GRWTSK/Logic/ProofChecking/Checks/OwnedDeclarationAudit.lean"
+        ],
+        "runner": "python3 -B scripts/check_ccc_energy.py",
+        "sha256": "781a2e57e7856dcad358955086c1acfdaefa865835f3f1c364ac4ce49ca6ff33",
+        "source_role": "library",
+        "source_root": ".",
+        "subject": "Library",
+        "target_path": "GRWTSK.lean",
+        "verification": {
+          "inventory": "observed-current-bytes",
+          "lean": "public root not replayed; selected 9-module closure replayed separately",
+          "owned_declaration_audit": "selected closure only; no whole-entrypoint admission",
+          "selected_new_module_receipt": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json",
+          "source_sha256": "781a2e57e7856dcad358955086c1acfdaefa865835f3f1c364ac4ce49ca6ff33"
+        },
+        "working_tree_state": "tracked-modified"
+      },
       "historical_sha256_before_schedule_reduction": "26791e87fd5594d5e99db5f95837536160c257d75cde7f1cd7d0ddc779d9a008",
+      "historical_verification_before_additive_character_integration": {
+        "inventory": "observed-current-bytes",
+        "lean": "public root not replayed; selected seven-module closure replayed separately",
+        "owned_declaration_audit": "selected closure only; no whole-entrypoint admission",
+        "selected_new_module_receipt": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/divisor-sectors-checks-2026-10-15.json",
+        "source_sha256": "d8bda509bc6f84a130b4747760134d1eabf3a565f3cbd3ac4c46ce16da35597e"
+      },
       "historical_verification_before_additive_triple_imports": {
         "inventory": "observed-current-bytes",
         "layout": "repository baseline remains failed",
@@ -18966,9 +19771,15 @@
         "GRWTSK.Analysis.Fourier.ZModConcentratedFrequencies",
         "GRWTSK.Combinatorics.DirectedGraph.PrefixTableSchedule",
         "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicReduction",
-        "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.DivisorSectorReindexing"
+        "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.DivisorSectorReindexing",
+        "GRWTSK.Analysis.Fourier.ZModBalancedExpectedLayers",
+        "GRWTSK.Combinatorics.Sequences.PartitionExposureChecks",
+        "GRWTSK.Analysis.Fourier.FiniteAdditiveProjector",
+        "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.AdditiveCharacterMoments",
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableReferenceTransport",
+        "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicCharacters"
       ],
-      "logical_status": "statements and proof bodies preserved; relocation makes no new acceptance claim",
+      "logical_status": "Public import inventory only; selected receipts do not replay the whole umbrella",
       "module": "GRWTSK",
       "namespaces": [],
       "object": "EntryPoint",
@@ -19138,17 +19949,28 @@
         "GRWTSK/Logic/ProofChecking/Checks/OwnedDeclarationAudit.lean"
       ],
       "runner": "python3 -B scripts/check_ccc_energy.py",
-      "sha256": "d8bda509bc6f84a130b4747760134d1eabf3a565f3cbd3ac4c46ce16da35597e",
+      "sha256": "44e183a171c933e0635d85b0316dd37f88667640c1b4acdde90fd759b506a106",
       "source_role": "library",
       "source_root": ".",
       "subject": "Library",
       "target_path": "GRWTSK.lean",
       "verification": {
-        "inventory": "observed-current-bytes",
-        "lean": "public root not replayed; selected seven-module closure replayed separately",
-        "owned_declaration_audit": "selected closure only; no whole-entrypoint admission",
-        "selected_new_module_receipt": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/divisor-sectors-checks-2026-10-15.json",
-        "source_sha256": "d8bda509bc6f84a130b4747760134d1eabf3a565f3cbd3ac4c46ce16da35597e"
+        "inventory": "observed-proposed-bytes; public import inventory only",
+        "lean": "selected receipts do not replay the whole public umbrella; any public acceptance requires separately bound checkpoint evidence",
+        "owned_declaration_audit": "selected receipts audit their recorded source closures only; any full-entrypoint admission requires separate checkpoint evidence",
+        "selected_module_receipts": [
+          {
+            "bytes": 3773336,
+            "path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-reference-transport-checks-2026-10-15.json",
+            "sha256": "c2392986e86871df84fd07fc4363c634a37930749e4f505a941a91278236a271"
+          },
+          {
+            "bytes": 4928030,
+            "path": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-characters-development-checks-2026-10-15-a7b1f5cb.json",
+            "sha256": "528b3c85272c20e55ae66668fd942bde430b10635bc68b44c304b3796a10f286"
+          }
+        ],
+        "source_sha256": "44e183a171c933e0635d85b0316dd37f88667640c1b4acdde90fd759b506a106"
       },
       "working_tree_state": "tracked-modified"
     },
@@ -27162,6 +27984,92 @@
         "source_sha256": "36fe566a76070ce0f61315e71b9744374d87c0ff6cceb943294a73f3dc14b65a"
       },
       "working_tree_state": "tracked-clean"
+    },
+    {
+      "attribution": "Direction R.A. Jacob Martone; formalization assistance OpenAI Codex; Mathlib authors retained.",
+      "declaration_inventory_method": "source syntax declaration commands, excluding anonymous examples and generated declarations; not a theorem total or native census; exact owned-declaration native census is authoritative",
+      "git_blob": "1240c817d6340d73cd292de809d923eafbfd2520",
+      "imports": [
+        "Mathlib.Analysis.SpecialFunctions.Complex.CircleAddChar"
+      ],
+      "license": "Original additions MIT; imported Mathlib Apache-2.0",
+      "logical_status": "Exact finite Complex-valued character identities or their positive consumer; modulus, normalization, no-wrap bounds and joint scaled weight explicit. No coefficient transfer, arithmetic estimate or abc implication.",
+      "module": "GRWTSK.Analysis.Fourier.FiniteAdditiveProjector",
+      "namespaces": [
+        "GRWTSK.Analysis.Fourier.FiniteAdditiveProjector"
+      ],
+      "object": "Fourier/FiniteAdditiveProjector",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Analysis/Fourier/FiniteAdditiveProjector.lean",
+      "other_consumers": [
+        "docs/mathematics/Analysis/Fourier/FiniteAdditiveProjector/projector.md",
+        "docs/reference/math-source-catalog.json"
+      ],
+      "path": "GRWTSK/Analysis/Fourier/FiniteAdditiveProjector.lean",
+      "placement_rationale": "Finite additive-character projection belongs to Fourier analysis.",
+      "public_declarations": [
+        {
+          "kind": "def",
+          "line": 15,
+          "name": "characterAverage"
+        },
+        {
+          "kind": "theorem",
+          "line": 20,
+          "name": "characterAverage_eq_indicator"
+        },
+        {
+          "kind": "def",
+          "line": 33,
+          "name": "characterProjector"
+        },
+        {
+          "kind": "theorem",
+          "line": 37,
+          "name": "characterProjector_eq_average"
+        },
+        {
+          "kind": "theorem",
+          "line": 45,
+          "name": "characterProjector_eq_modular_indicator"
+        },
+        {
+          "kind": "theorem",
+          "line": 53,
+          "name": "nat_add_sub_eq_zero_iff_of_lt"
+        },
+        {
+          "kind": "theorem",
+          "line": 61,
+          "name": "nat_add_sub_eq_zero_iff_of_noWrap"
+        },
+        {
+          "kind": "theorem",
+          "line": 72,
+          "name": "characterProjector_eq_indicator_of_noWrap"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK.lean",
+        "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/AdditiveCharacterMoments.lean"
+      ],
+      "runner": "python3 -B .noeaaeue/scripts/check_additive_character_moments.py",
+      "sha256": "24a8c41508bdf2a7558d20b19434362e2656ac45b4141e01604c0ec16ddd413f",
+      "source_role": "library",
+      "source_root": "GRWTSK",
+      "subject": "Analysis",
+      "target_path": "GRWTSK/Analysis/Fourier/FiniteAdditiveProjector.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "lean": "fresh selected library elaboration at trust zero with fatal warnings",
+        "owned_declaration_audit": "complete selected local library closure; standard3 only; controls checked separately",
+        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json",
+        "replay_binding_schema": "additive-character-moments-selected-replay-v1",
+        "replay_binding_sha256": "4ac00cdc45b0fcf7bff4c8650bad3b5ae05f1cc4ed015accefdd96b0863b4a00",
+        "source_sha256": "24a8c41508bdf2a7558d20b19434362e2656ac45b4141e01604c0ec16ddd413f"
+      },
+      "working_tree_state": "tracked-current"
     },
     {
       "declaration_inventory_method": "source syntax; exact owning-module kernel census in the selected receipt is authoritative",
@@ -45557,7 +46465,8 @@
         }
       ],
       "reverse_consumers": [
-        "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.PrefixScheduleRemapComposition"
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.PrefixScheduleRemapComposition",
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableReferenceTransport"
       ],
       "runner": "python3 -B .noeaaeue/scripts/check_prefix_table_schedule.py",
       "sha256": "0e66aa61abd4c3a911b3119555cb39c24354b319e2da3e3b7226f8907affab95",
@@ -48873,7 +49782,8 @@
       ],
       "reverse_consumers": [
         "GRWTSK",
-        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableSchedule"
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableSchedule",
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableReferenceTransport"
       ],
       "runner": "python3 -B .noeaaeue/scripts/check_prefix_table_schedule.py",
       "sha256": "b1d8a0ea8bbdcc83f9453e35328bce854f8bddd857260527c601292f141c2c4f",
@@ -68141,7 +69051,8 @@
       ],
       "reverse_consumers": [
         "GRWTSK",
-        "GRWTSK.NumberTheory.Cyclotomic.Checks.Positive.ThirdCyclotomicReduction"
+        "GRWTSK.NumberTheory.Cyclotomic.Checks.Positive.ThirdCyclotomicReduction",
+        "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicCharacters"
       ],
       "runner": "python3 -B .noeaaeue/scripts/check_third_cyclotomic_reduction.py",
       "sha256": "05a44d8f4c4b254cf27e9df2a3b8f83081d9cb6288808e0be1d2694a81a2f3b6",
@@ -68202,7 +69113,9 @@
           "name": "ABCConjecture"
         }
       ],
-      "reverse_consumers": [],
+      "reverse_consumers": [
+        "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorToABC.lean"
+      ],
       "runner": "python3 -B .noeaaeue/scripts/check_additive_triple_transport.py",
       "sha256": "f8ddc2bbe7ea1371418118ae26b1ed00200e1a3d19843fd0dfaf34fd29039ef2",
       "source_role": "library",
@@ -68217,6 +69130,93 @@
         "source_sha256": "f8ddc2bbe7ea1371418118ae26b1ed00200e1a3d19843fd0dfaf34fd29039ef2"
       },
       "working_tree_state": "untracked-preserved"
+    },
+    {
+      "attribution": "Direction R.A. Jacob Martone; formalization assistance OpenAI Codex; Mathlib authors retained.",
+      "declaration_inventory_method": "source syntax declaration commands, excluding anonymous examples and generated declarations; not a theorem total or native census; exact owned-declaration native census is authoritative",
+      "git_blob": "f8e35ba6a5095abf398fac5a3d1b2cfab5001ed6",
+      "imports": [
+        "GRWTSK.Analysis.Fourier.FiniteAdditiveProjector",
+        "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.DivisorSectorReindexing"
+      ],
+      "license": "Original additions MIT; imported Mathlib Apache-2.0",
+      "logical_status": "Exact finite Complex-valued character identities or their positive consumer; modulus, normalization, no-wrap bounds and joint scaled weight explicit. No coefficient transfer, arithmetic estimate or abc implication.",
+      "module": "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.AdditiveCharacterMoments",
+      "namespaces": [
+        "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples"
+      ],
+      "object": "Diophantine/PrimitiveAdditiveTriples",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/AdditiveCharacterMoments.lean",
+      "other_consumers": [
+        "docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-moments.md",
+        "docs/reference/math-source-catalog.json"
+      ],
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/AdditiveCharacterMoments.lean",
+      "placement_rationale": "Complex character projection of primitive additive moments belongs with primitive additive triples; generic Ring prerequisites retain their original subjects.",
+      "public_declarations": [
+        {
+          "kind": "def",
+          "line": 17,
+          "name": "projectedJointMoment"
+        },
+        {
+          "kind": "def",
+          "line": 24,
+          "name": "frequencyJointMoment"
+        },
+        {
+          "kind": "theorem",
+          "line": 33,
+          "name": "projectedJointMoment_eq_frequencyJointMoment"
+        },
+        {
+          "kind": "theorem",
+          "line": 51,
+          "name": "scaled_additive_sum_eq_character_cube"
+        },
+        {
+          "kind": "theorem",
+          "line": 91,
+          "name": "commonDivisorWeightedMoment_eq_character_cube"
+        },
+        {
+          "kind": "theorem",
+          "line": 99,
+          "name": "typedPrimitiveWeightedMoment_eq_moebius_character_cube"
+        },
+        {
+          "kind": "theorem",
+          "line": 111,
+          "name": "typedPrimitiveWeightedMoment_eq_moebius_frequency_sum"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK.lean",
+        "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorMissingNoWrap.lean",
+        "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorScaledCongruenceCancellation.lean",
+        "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorToABC.lean",
+        "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorUnscaledJointWeight.lean",
+        "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorWrongNormalization.lean",
+        "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Positive/AdditiveCharacterMoments.lean"
+      ],
+      "runner": "python3 -B .noeaaeue/scripts/check_additive_character_moments.py",
+      "sha256": "c5064cd633443ae851924599b07d1aaeff56e7ab792783cd5e408e5a078e3113",
+      "source_role": "library",
+      "source_root": "GRWTSK",
+      "subject": "NumberTheory",
+      "target_path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/AdditiveCharacterMoments.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "lean": "fresh selected library elaboration at trust zero with fatal warnings",
+        "owned_declaration_audit": "complete selected local library closure; standard3 only; controls checked separately",
+        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json",
+        "replay_binding_schema": "additive-character-moments-selected-replay-v1",
+        "replay_binding_sha256": "4ac00cdc45b0fcf7bff4c8650bad3b5ae05f1cc4ed015accefdd96b0863b4a00",
+        "source_sha256": "c5064cd633443ae851924599b07d1aaeff56e7ab792783cd5e408e5a078e3113"
+      },
+      "working_tree_state": "tracked-current"
     },
     {
       "attribution": "Direction R.A. Jacob Martone; formalization assistance OpenAI Codex; upstream Mathlib attribution retained",
@@ -68573,6 +69573,207 @@
     },
     {
       "attribution": "Direction R.A. Jacob Martone; formalization assistance OpenAI Codex; Mathlib authors retained.",
+      "declaration_inventory_method": "source syntax declaration commands, excluding anonymous examples and generated declarations; not a theorem total or native census; exact owned-declaration native census is authoritative",
+      "git_blob": "d2336c11fdcf634c0d0e68b6e758c0bd432c5a06",
+      "imports": [
+        "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.AdditiveCharacterMoments"
+      ],
+      "license": "Original additions MIT; imported Mathlib Apache-2.0",
+      "logical_status": "Intended type rejection of an unsupported projector claim; no theorem is admitted from this control.",
+      "module": "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Checks.Negative.ProjectorMissingNoWrap",
+      "namespaces": [],
+      "object": "Diophantine/PrimitiveAdditiveTriples",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorMissingNoWrap.lean",
+      "other_consumers": [
+        "docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-moments.md",
+        "docs/reference/math-source-catalog.json"
+      ],
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorMissingNoWrap.lean",
+      "placement_rationale": "Complex character projection of primitive additive moments belongs with primitive additive triples; generic Ring prerequisites retain their original subjects.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B .noeaaeue/scripts/check_additive_character_moments.py",
+      "sha256": "62e56cdb987638afc411ced5e11ad6d2433d1e7b4f8db1bb8de890e48e45ec42",
+      "source_role": "negative-control",
+      "source_root": "GRWTSK",
+      "subject": "NumberTheory",
+      "target_path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorMissingNoWrap.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "lean": "intended single type rejection matched at trust zero with fatal warnings",
+        "owned_declaration_audit": "complete selected local library closure; standard3 only; controls checked separately",
+        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json",
+        "replay_binding_schema": "additive-character-moments-selected-replay-v1",
+        "replay_binding_sha256": "4ac00cdc45b0fcf7bff4c8650bad3b5ae05f1cc4ed015accefdd96b0863b4a00",
+        "source_sha256": "62e56cdb987638afc411ced5e11ad6d2433d1e7b4f8db1bb8de890e48e45ec42"
+      },
+      "working_tree_state": "tracked-current"
+    },
+    {
+      "attribution": "Direction R.A. Jacob Martone; formalization assistance OpenAI Codex; Mathlib authors retained.",
+      "declaration_inventory_method": "source syntax declaration commands, excluding anonymous examples and generated declarations; not a theorem total or native census; exact owned-declaration native census is authoritative",
+      "git_blob": "961112cca99943a7b764da62a783897f35f16f95",
+      "imports": [
+        "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.AdditiveCharacterMoments"
+      ],
+      "license": "Original additions MIT; imported Mathlib Apache-2.0",
+      "logical_status": "Intended type rejection of an unsupported projector claim; no theorem is admitted from this control.",
+      "module": "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Checks.Negative.ProjectorScaledCongruenceCancellation",
+      "namespaces": [],
+      "object": "Diophantine/PrimitiveAdditiveTriples",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorScaledCongruenceCancellation.lean",
+      "other_consumers": [
+        "docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-moments.md",
+        "docs/reference/math-source-catalog.json"
+      ],
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorScaledCongruenceCancellation.lean",
+      "placement_rationale": "Complex character projection of primitive additive moments belongs with primitive additive triples; generic Ring prerequisites retain their original subjects.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B .noeaaeue/scripts/check_additive_character_moments.py",
+      "sha256": "e53db71a114f0e6f8ea0126663f12e4f1eec6ddd96a06a5bcc2c2deb8848cf14",
+      "source_role": "negative-control",
+      "source_root": "GRWTSK",
+      "subject": "NumberTheory",
+      "target_path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorScaledCongruenceCancellation.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "lean": "intended single type rejection matched at trust zero with fatal warnings",
+        "owned_declaration_audit": "complete selected local library closure; standard3 only; controls checked separately",
+        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json",
+        "replay_binding_schema": "additive-character-moments-selected-replay-v1",
+        "replay_binding_sha256": "4ac00cdc45b0fcf7bff4c8650bad3b5ae05f1cc4ed015accefdd96b0863b4a00",
+        "source_sha256": "e53db71a114f0e6f8ea0126663f12e4f1eec6ddd96a06a5bcc2c2deb8848cf14"
+      },
+      "working_tree_state": "tracked-current"
+    },
+    {
+      "attribution": "Direction R.A. Jacob Martone; formalization assistance OpenAI Codex; Mathlib authors retained.",
+      "declaration_inventory_method": "source syntax declaration commands, excluding anonymous examples and generated declarations; not a theorem total or native census; exact owned-declaration native census is authoritative",
+      "git_blob": "09bc5afd3f8a16eef78176c1e167a12e27913563",
+      "imports": [
+        "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.AdditiveCharacterMoments",
+        "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ABCStatement"
+      ],
+      "license": "Original additions MIT; imported Mathlib Apache-2.0",
+      "logical_status": "Intended type rejection of an unsupported projector claim; no theorem is admitted from this control.",
+      "module": "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Checks.Negative.ProjectorToABC",
+      "namespaces": [],
+      "object": "Diophantine/PrimitiveAdditiveTriples",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorToABC.lean",
+      "other_consumers": [
+        "docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-moments.md",
+        "docs/reference/math-source-catalog.json"
+      ],
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorToABC.lean",
+      "placement_rationale": "Complex character projection of primitive additive moments belongs with primitive additive triples; generic Ring prerequisites retain their original subjects.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B .noeaaeue/scripts/check_additive_character_moments.py",
+      "sha256": "bb05fba2b0d11b032a370e16cd575eca0d08267bd2acb466315c6fcb47f52522",
+      "source_role": "negative-control",
+      "source_root": "GRWTSK",
+      "subject": "NumberTheory",
+      "target_path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorToABC.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "lean": "intended single type rejection matched at trust zero with fatal warnings",
+        "owned_declaration_audit": "complete selected local library closure; standard3 only; controls checked separately",
+        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json",
+        "replay_binding_schema": "additive-character-moments-selected-replay-v1",
+        "replay_binding_sha256": "4ac00cdc45b0fcf7bff4c8650bad3b5ae05f1cc4ed015accefdd96b0863b4a00",
+        "source_sha256": "bb05fba2b0d11b032a370e16cd575eca0d08267bd2acb466315c6fcb47f52522"
+      },
+      "working_tree_state": "tracked-current"
+    },
+    {
+      "attribution": "Direction R.A. Jacob Martone; formalization assistance OpenAI Codex; Mathlib authors retained.",
+      "declaration_inventory_method": "source syntax declaration commands, excluding anonymous examples and generated declarations; not a theorem total or native census; exact owned-declaration native census is authoritative",
+      "git_blob": "eb7648ccdf9e6a915c4045e994fe7c6ebe34d210",
+      "imports": [
+        "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.AdditiveCharacterMoments"
+      ],
+      "license": "Original additions MIT; imported Mathlib Apache-2.0",
+      "logical_status": "Intended type rejection of an unsupported projector claim; no theorem is admitted from this control.",
+      "module": "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Checks.Negative.ProjectorUnscaledJointWeight",
+      "namespaces": [],
+      "object": "Diophantine/PrimitiveAdditiveTriples",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorUnscaledJointWeight.lean",
+      "other_consumers": [
+        "docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-moments.md",
+        "docs/reference/math-source-catalog.json"
+      ],
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorUnscaledJointWeight.lean",
+      "placement_rationale": "Complex character projection of primitive additive moments belongs with primitive additive triples; generic Ring prerequisites retain their original subjects.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B .noeaaeue/scripts/check_additive_character_moments.py",
+      "sha256": "753995797c6e3555cf76ab4ddbde96bc9a3a27d150fa09f3b8bc5e024d8f2dbc",
+      "source_role": "negative-control",
+      "source_root": "GRWTSK",
+      "subject": "NumberTheory",
+      "target_path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorUnscaledJointWeight.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "lean": "intended single type rejection matched at trust zero with fatal warnings",
+        "owned_declaration_audit": "complete selected local library closure; standard3 only; controls checked separately",
+        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json",
+        "replay_binding_schema": "additive-character-moments-selected-replay-v1",
+        "replay_binding_sha256": "4ac00cdc45b0fcf7bff4c8650bad3b5ae05f1cc4ed015accefdd96b0863b4a00",
+        "source_sha256": "753995797c6e3555cf76ab4ddbde96bc9a3a27d150fa09f3b8bc5e024d8f2dbc"
+      },
+      "working_tree_state": "tracked-current"
+    },
+    {
+      "attribution": "Direction R.A. Jacob Martone; formalization assistance OpenAI Codex; Mathlib authors retained.",
+      "declaration_inventory_method": "source syntax declaration commands, excluding anonymous examples and generated declarations; not a theorem total or native census; exact owned-declaration native census is authoritative",
+      "git_blob": "249ae3f358d10aeed1c4311cc3858a26746ec60f",
+      "imports": [
+        "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.AdditiveCharacterMoments"
+      ],
+      "license": "Original additions MIT; imported Mathlib Apache-2.0",
+      "logical_status": "Intended type rejection of an unsupported projector claim; no theorem is admitted from this control.",
+      "module": "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Checks.Negative.ProjectorWrongNormalization",
+      "namespaces": [],
+      "object": "Diophantine/PrimitiveAdditiveTriples",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorWrongNormalization.lean",
+      "other_consumers": [
+        "docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-moments.md",
+        "docs/reference/math-source-catalog.json"
+      ],
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorWrongNormalization.lean",
+      "placement_rationale": "Complex character projection of primitive additive moments belongs with primitive additive triples; generic Ring prerequisites retain their original subjects.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B .noeaaeue/scripts/check_additive_character_moments.py",
+      "sha256": "06166379962c09fb4ea2e9f5eb59edd5dc35191e9122866f8529f51260862b14",
+      "source_role": "negative-control",
+      "source_root": "GRWTSK",
+      "subject": "NumberTheory",
+      "target_path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorWrongNormalization.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "lean": "intended single type rejection matched at trust zero with fatal warnings",
+        "owned_declaration_audit": "complete selected local library closure; standard3 only; controls checked separately",
+        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json",
+        "replay_binding_schema": "additive-character-moments-selected-replay-v1",
+        "replay_binding_sha256": "4ac00cdc45b0fcf7bff4c8650bad3b5ae05f1cc4ed015accefdd96b0863b4a00",
+        "source_sha256": "06166379962c09fb4ea2e9f5eb59edd5dc35191e9122866f8529f51260862b14"
+      },
+      "working_tree_state": "tracked-current"
+    },
+    {
+      "attribution": "Direction R.A. Jacob Martone; formalization assistance OpenAI Codex; Mathlib authors retained.",
       "declaration_inventory_method": "source syntax; exact owned-declaration native census is authoritative",
       "git_blob": "7ea27eb31ca75db8604efbbe57a8a7f92d3002e8",
       "imports": [
@@ -68761,6 +69962,46 @@
         "source_sha256": "343290bc9b6b0eb15a260b9258d18ab1b40a9a23f6cc9abcfbfbc543f720dc95"
       },
       "working_tree_state": "untracked-preserved"
+    },
+    {
+      "attribution": "Direction R.A. Jacob Martone; formalization assistance OpenAI Codex; Mathlib authors retained.",
+      "declaration_inventory_method": "source syntax declaration commands, excluding anonymous examples and generated declarations; not a theorem total or native census; exact owned-declaration native census is authoritative",
+      "git_blob": "56392398d5125a9ea08c141487db42b3cca9ebeb",
+      "imports": [
+        "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.AdditiveCharacterMoments"
+      ],
+      "license": "Original additions MIT; imported Mathlib Apache-2.0",
+      "logical_status": "Exact finite Complex-valued character identities or their positive consumer; modulus, normalization, no-wrap bounds and joint scaled weight explicit. No coefficient transfer, arithmetic estimate or abc implication.",
+      "module": "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Checks.Positive.AdditiveCharacterMoments",
+      "namespaces": [],
+      "object": "Diophantine/PrimitiveAdditiveTriples",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Positive/AdditiveCharacterMoments.lean",
+      "other_consumers": [
+        "docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-moments.md",
+        "docs/reference/math-source-catalog.json"
+      ],
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Positive/AdditiveCharacterMoments.lean",
+      "placement_rationale": "Complex character projection of primitive additive moments belongs with primitive additive triples; generic Ring prerequisites retain their original subjects.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B .noeaaeue/scripts/check_additive_character_moments.py",
+      "sha256": "af9ac1d1982587daba14b6f170bc78f35f47b519192b65d02e253610537750bf",
+      "source_role": "positive-check",
+      "source_root": "GRWTSK",
+      "subject": "NumberTheory",
+      "target_path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Positive/AdditiveCharacterMoments.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "lean": "fresh positive consumer elaboration at trust zero with fatal warnings",
+        "owned_declaration_audit": "complete selected local library closure; standard3 only; controls checked separately",
+        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json",
+        "replay_binding_schema": "additive-character-moments-selected-replay-v1",
+        "replay_binding_sha256": "4ac00cdc45b0fcf7bff4c8650bad3b5ae05f1cc4ed015accefdd96b0863b4a00",
+        "source_sha256": "af9ac1d1982587daba14b6f170bc78f35f47b519192b65d02e253610537750bf"
+      },
+      "working_tree_state": "tracked-current"
     },
     {
       "attribution": "Direction R.A. Jacob Martone; formalization assistance OpenAI Codex; Mathlib authors retained.",
@@ -69030,6 +70271,7 @@
       ],
       "reverse_consumers": [
         "GRWTSK.lean",
+        "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/AdditiveCharacterMoments.lean",
         "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/SectorMissingAdditiveCutoff.lean",
         "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/SectorMissingPositiveDivisor.lean",
         "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/SectorToABC.lean",
@@ -85965,6 +87207,779 @@
         "source_sha256": "3b072a5c92f83d8fe20dea794ebc3b185d2166c5c55a8355ca1210049776a45d"
       },
       "working_tree_state": "tracked-clean"
+    },
+    {
+      "bytes": 10562,
+      "contribution": {
+        "formalization": "OpenAI Codex",
+        "human_direction": "R.A. Jacob Martone",
+        "individual_credits": [
+          "Leonardo de Moura",
+          "Jeremy Avigad",
+          "Mario Carneiro",
+          "Parikshit Khanna",
+          "Floris van Doorn"
+        ],
+        "license": "MIT; imported Apache-2.0 retained",
+        "scope": "Imported state/path/schedule/compaction and Lean/Mathlib source credits retained."
+      },
+      "declaration_inventory_method": "source commands only; receipt owned census authoritative",
+      "explicit_premises": [
+        "V/Key arbitrary, actual Quiver V and DecidableEq full EdgeTrace.TotalEdge V. Existing ValidRootedState fixes root and carries actual structural WellFormed; no assumed serialization/transport oracle.",
+        "actionSlot is actual compactor remap at compaction and numeric identity at batch. trackedStep pairs actual applyAction state with Option.bind. transportSlotAt is chronological List.foldl; tracked_state forgets exactly to actual executeAt; tracked_none is absorbing.",
+        "compact_reference/action_reference/transport_reference derive Some target, final real-reference membership and exact old full dictionary lookup from actual ORIGINAL reference membership and structural invariant. No success/validity result for arbitrary bounds-only or unused slots.",
+        "transportReferences actually mapMs original reference rows. transportReferences_success derives successful list, same length and positional Forall2 of same key/final membership/exact payload. It does not assert a generic prefix embedding/subsequence in final references.",
+        "Actual Bool parallel-loop actions retain original slot0 through0\u21921\u21921\u21920; unused bounded slot2 is dropped and staysNone after actual reintroduction despite later directSome2. Distinct31,17,31,19 keys plus repeated31 make original order/multiplicity observable, with derived actual WF and finaltargetbound."
+      ],
+      "git_blob": "41f14666be6d6e3a62ced2d642fe028f9c64b7ed",
+      "git_blob_content_identity": "41f14666be6d6e3a62ced2d642fe028f9c64b7ed",
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableSchedule"
+      ],
+      "license": "MIT; imported Apache-2.0 retained",
+      "logical_status": "selected source-qualified native result; registered at explicit integration checkpoint; selected receipt covers its recorded closure",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableReferenceTransport",
+      "namespaces": [
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableReferenceTransport"
+      ],
+      "object": "DirectedGraph",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableReferenceTransport.lean",
+      "other_consumers": [
+        "docs/mathematics/Combinatorics/DirectedGraph/prefix-reference-transport.md"
+      ],
+      "path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableReferenceTransport.lean",
+      "placement_rationale": "Actual stored rooted path references and state-dependent compaction transport belong to Combinatorics/DirectedGraph.",
+      "public_declarations": [
+        {
+          "kind": "def",
+          "line": 29,
+          "name": "actionSlot"
+        },
+        {
+          "kind": "def",
+          "line": 36,
+          "name": "trackedStep"
+        },
+        {
+          "kind": "def",
+          "line": 40,
+          "name": "transportSlotAt"
+        },
+        {
+          "kind": "theorem",
+          "line": 46,
+          "name": "tracked_state"
+        },
+        {
+          "kind": "theorem",
+          "line": 54,
+          "name": "tracked_none"
+        },
+        {
+          "kind": "theorem",
+          "line": 60,
+          "name": "transportSlotAt_nil"
+        },
+        {
+          "kind": "theorem",
+          "line": 65,
+          "name": "transportSlotAt_cons"
+        },
+        {
+          "kind": "theorem",
+          "line": 83,
+          "name": "compact_reference"
+        },
+        {
+          "kind": "theorem",
+          "line": 116,
+          "name": "action_reference"
+        },
+        {
+          "kind": "theorem",
+          "line": 134,
+          "name": "transport_reference"
+        },
+        {
+          "kind": "def",
+          "line": 153,
+          "name": "transportReferences"
+        },
+        {
+          "kind": "theorem",
+          "line": 159,
+          "name": "transportReferences_success"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableReferenceTransport",
+        "GRWTSK"
+      ],
+      "runner": "python3 -B .noeaaeue/scripts/check_prefix_reference_transport.py",
+      "sha256": "a7600c33972405a31f6495b03789f9473cd914eb428d9a5f94c734f528e71d0c",
+      "source_role": "library",
+      "source_root": "GRWTSK",
+      "subject": "Combinatorics",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableReferenceTransport.lean",
+      "verification": {
+        "canonical_public_integration": "INSTALLED_SELECTED_SCOPE",
+        "inventory": "observed-current-bytes",
+        "lean": "Exact selected receipt context only",
+        "replay_binding": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-reference-transport-checks-2026-10-15.json",
+        "replay_sha256": "c2392986e86871df84fd07fc4363c634a37930749e4f505a941a91278236a271",
+        "source_sha256": "a7600c33972405a31f6495b03789f9473cd914eb428d9a5f94c734f528e71d0c",
+        "whole_umbrella": "NOT_REPLAYED_BY_SELECTED_RECEIPT"
+      },
+      "working_tree_state": "Exact current bytes observed; index/ref state not inspected"
+    },
+    {
+      "bytes": 7784,
+      "contribution": {
+        "formalization": "OpenAI Codex",
+        "human_direction": "R.A. Jacob Martone",
+        "individual_credits": [
+          "Leonardo de Moura",
+          "Jeremy Avigad",
+          "Mario Carneiro",
+          "Parikshit Khanna",
+          "Floris van Doorn"
+        ],
+        "license": "MIT; imported Apache-2.0 retained",
+        "scope": "Imported state/path/schedule/compaction and Lean/Mathlib source credits retained."
+      },
+      "declaration_inventory_method": "source commands only; receipt owned census authoritative",
+      "explicit_premises": [
+        "V/Key arbitrary, actual Quiver V and DecidableEq full EdgeTrace.TotalEdge V. Existing ValidRootedState fixes root and carries actual structural WellFormed; no assumed serialization/transport oracle.",
+        "actionSlot is actual compactor remap at compaction and numeric identity at batch. trackedStep pairs actual applyAction state with Option.bind. transportSlotAt is chronological List.foldl; tracked_state forgets exactly to actual executeAt; tracked_none is absorbing.",
+        "compact_reference/action_reference/transport_reference derive Some target, final real-reference membership and exact old full dictionary lookup from actual ORIGINAL reference membership and structural invariant. No success/validity result for arbitrary bounds-only or unused slots.",
+        "transportReferences actually mapMs original reference rows. transportReferences_success derives successful list, same length and positional Forall2 of same key/final membership/exact payload. It does not assert a generic prefix embedding/subsequence in final references.",
+        "Actual Bool parallel-loop actions retain original slot0 through0\u21921\u21921\u21920; unused bounded slot2 is dropped and staysNone after actual reintroduction despite later directSome2. Distinct31,17,31,19 keys plus repeated31 make original order/multiplicity observable, with derived actual WF and finaltargetbound."
+      ],
+      "git_blob": "4622169451c414b0f5c1c73259a4a2557c8c55cb",
+      "git_blob_content_identity": "4622169451c414b0f5c1c73259a4a2557c8c55cb",
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableReferenceTransport",
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableSchedule"
+      ],
+      "license": "MIT; imported Apache-2.0 retained",
+      "logical_status": "selected source-qualified native result; registered at explicit integration checkpoint; selected receipt covers its recorded closure",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableReferenceTransport",
+      "namespaces": [
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableReferenceTransport.Checks.Positive"
+      ],
+      "object": "DirectedGraph/Checks/Positive",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableReferenceTransport.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableReferenceTransport.lean",
+      "placement_rationale": "Actual stored rooted path references and state-dependent compaction transport belong to Combinatorics/DirectedGraph.",
+      "public_declarations": [
+        {
+          "kind": "def",
+          "line": 17,
+          "name": "initial"
+        },
+        {
+          "kind": "theorem",
+          "line": 20,
+          "name": "original_real_reference"
+        },
+        {
+          "kind": "theorem",
+          "line": 26,
+          "name": "unused_slot_bound"
+        },
+        {
+          "kind": "theorem",
+          "line": 30,
+          "name": "unused_slot_not_referenced"
+        },
+        {
+          "kind": "theorem",
+          "line": 34,
+          "name": "actual_first_compaction"
+        },
+        {
+          "kind": "theorem",
+          "line": 38,
+          "name": "post_false_remap"
+        },
+        {
+          "kind": "theorem",
+          "line": 53,
+          "name": "actual_retained_transport"
+        },
+        {
+          "kind": "theorem",
+          "line": 61,
+          "name": "actual_dropped_transport"
+        },
+        {
+          "kind": "theorem",
+          "line": 69,
+          "name": "actual_retained_payload"
+        },
+        {
+          "kind": "theorem",
+          "line": 74,
+          "name": "actual_retained_final_reference"
+        },
+        {
+          "kind": "theorem",
+          "line": 82,
+          "name": "actual_ordered_old_references"
+        },
+        {
+          "kind": "theorem",
+          "line": 100,
+          "name": "actual_bounded_totality_counter"
+        },
+        {
+          "kind": "def",
+          "line": 130,
+          "name": "ordered"
+        },
+        {
+          "kind": "theorem",
+          "line": 132,
+          "name": "ordered_wellFormed"
+        },
+        {
+          "kind": "def",
+          "line": 144,
+          "name": "orderedInitial"
+        },
+        {
+          "kind": "theorem",
+          "line": 149,
+          "name": "actual_distinct_key_order"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.PrefixReferenceMissingSupport"
+      ],
+      "runner": "python3 -B .noeaaeue/scripts/check_prefix_reference_transport.py",
+      "sha256": "092678d16170cff8e60e5b1461c71aea404b4a8d93731f4e001367992bf96e26",
+      "source_role": "positive-check",
+      "source_root": "GRWTSK",
+      "subject": "Combinatorics",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableReferenceTransport.lean",
+      "verification": {
+        "canonical_public_integration": "INSTALLED_SELECTED_SCOPE",
+        "inventory": "observed-current-bytes",
+        "lean": "Exact selected receipt context only",
+        "replay_binding": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-reference-transport-checks-2026-10-15.json",
+        "replay_sha256": "c2392986e86871df84fd07fc4363c634a37930749e4f505a941a91278236a271",
+        "source_sha256": "092678d16170cff8e60e5b1461c71aea404b4a8d93731f4e001367992bf96e26",
+        "whole_umbrella": "NOT_REPLAYED_BY_SELECTED_RECEIPT"
+      },
+      "working_tree_state": "Exact current bytes observed; index/ref state not inspected"
+    },
+    {
+      "bytes": 530,
+      "contribution": {
+        "formalization": "OpenAI Codex",
+        "human_direction": "R.A. Jacob Martone",
+        "individual_credits": [
+          "Leonardo de Moura",
+          "Jeremy Avigad",
+          "Mario Carneiro",
+          "Parikshit Khanna",
+          "Floris van Doorn"
+        ],
+        "license": "MIT; imported Apache-2.0 retained",
+        "scope": "Imported state/path/schedule/compaction and Lean/Mathlib source credits retained."
+      },
+      "declaration_inventory_method": "source commands only; receipt owned census authoritative",
+      "explicit_premises": [
+        "V/Key arbitrary, actual Quiver V and DecidableEq full EdgeTrace.TotalEdge V. Existing ValidRootedState fixes root and carries actual structural WellFormed; no assumed serialization/transport oracle.",
+        "actionSlot is actual compactor remap at compaction and numeric identity at batch. trackedStep pairs actual applyAction state with Option.bind. transportSlotAt is chronological List.foldl; tracked_state forgets exactly to actual executeAt; tracked_none is absorbing.",
+        "compact_reference/action_reference/transport_reference derive Some target, final real-reference membership and exact old full dictionary lookup from actual ORIGINAL reference membership and structural invariant. No success/validity result for arbitrary bounds-only or unused slots.",
+        "transportReferences actually mapMs original reference rows. transportReferences_success derives successful list, same length and positional Forall2 of same key/final membership/exact payload. It does not assert a generic prefix embedding/subsequence in final references.",
+        "Actual Bool parallel-loop actions retain original slot0 through0\u21921\u21921\u21920; unused bounded slot2 is dropped and staysNone after actual reintroduction despite later directSome2. Distinct31,17,31,19 keys plus repeated31 make original order/multiplicity observable, with derived actual WF and finaltargetbound."
+      ],
+      "git_blob": "2df0d6c0133a591db87bc5efe9b2c5c91cbb7738",
+      "git_blob_content_identity": "2df0d6c0133a591db87bc5efe9b2c5c91cbb7738",
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableReferenceTransport"
+      ],
+      "license": "MIT; imported Apache-2.0 retained",
+      "logical_status": "intended rejected control; no theorem admission",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.PrefixReferenceMissingSupport",
+      "namespaces": [],
+      "object": "DirectedGraph/Checks/Negative",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixReferenceMissingSupport.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixReferenceMissingSupport.lean",
+      "placement_rationale": "Actual stored rooted path references and state-dependent compaction transport belong to Combinatorics/DirectedGraph.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B .noeaaeue/scripts/check_prefix_reference_transport.py",
+      "sha256": "a81f4b50114fcd35951a8ed8ee1ccf0a706bc26b3a73d6935d83f8867b826f2c",
+      "source_role": "negative-control",
+      "source_root": "GRWTSK",
+      "subject": "Combinatorics",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixReferenceMissingSupport.lean",
+      "verification": {
+        "canonical_public_integration": "INSTALLED_SELECTED_SCOPE",
+        "inventory": "observed-current-bytes",
+        "lean": "Exact selected receipt context only",
+        "replay_binding": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-reference-transport-checks-2026-10-15.json",
+        "replay_sha256": "c2392986e86871df84fd07fc4363c634a37930749e4f505a941a91278236a271",
+        "source_sha256": "a81f4b50114fcd35951a8ed8ee1ccf0a706bc26b3a73d6935d83f8867b826f2c",
+        "whole_umbrella": "NOT_REPLAYED_BY_SELECTED_RECEIPT"
+      },
+      "working_tree_state": "Exact current bytes observed; index/ref state not inspected"
+    },
+    {
+      "bytes": 9264,
+      "contribution": {
+        "Mathlib_individual_credits": [
+          {
+            "authors": [
+              "Michael Stoll"
+            ],
+            "copyright_year": 2022,
+            "path": "Mathlib/NumberTheory/MulChar/Basic.lean"
+          },
+          {
+            "authors": [
+              "Johan Commelin"
+            ],
+            "copyright_year": 2020,
+            "path": "Mathlib/RingTheory/RootsOfUnity/Basic.lean"
+          },
+          {
+            "authors": [
+              "Xavier Roblot"
+            ],
+            "copyright_year": 2025,
+            "path": "Mathlib/NumberTheory/NumberField/Ideal/Basic.lean"
+          },
+          {
+            "authors": [
+              "Chris Hughes",
+              "Joey van Langen",
+              "Casper Putz"
+            ],
+            "copyright_year": 2018,
+            "path": "Mathlib/FieldTheory/Finite/Basic.lean"
+          }
+        ],
+        "OpenAI_primary": {
+          "git_blob": "06304e1efc036727b3fa27e37dd6a06ce0bf5e56",
+          "individual_author_boundary": "No individual source-header author invented.",
+          "line_ranges_one_based": [
+            [
+              377,
+              402
+            ],
+            [
+              429,
+              477
+            ],
+            [
+              553,
+              654
+            ]
+          ],
+          "path": "lean/OAI/NumberTheory/DirichletL/GaussSum/FiniteFourier.lean",
+          "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+          "project_author": "OpenAI",
+          "repository": "openai/math",
+          "sha256": "0e8e4184de91161a75802e3a26abfd19a322dffa6441968bf9caeb25800b5d7c"
+        },
+        "human_direction": "R.A. Jacob Martone",
+        "license": "Apache-2.0",
+        "local_contribution": "OpenAI Codex: adaptation, formalization/checking and source-bound documentation candidate; no novelty claim."
+      },
+      "declaration_inventory_method": "source commands only; receipt owned census authoritative",
+      "explicit_premises": [
+        "The actual restricted quotient reduction rootsOfUnity3O\u2192rootsOfUnity3(O/P) is surjective and defines a multiplicative equivalence. This is not a whole-ring quotient equivalence.",
+        "Under the same good maximal hypotheses, actual q=Nat.card(O/P) satisfies3|(q-1), and m=(q-1)/3 is strictly positive.",
+        "An actual quotient units homomorphism u\u21a6u^m into quotient cube roots is lifted through the actual restricted inverse to O, then zero-extended using MulChar.ofUnitHom. For every x:O/P, including0, \u03c0P(cubicChar(P,hgood)(x))=x^m.",
+        "The actual multiplicative character has cube equal to the trivial multiplicative character, is nontrivial and has order3. On units its value has cube1; its value at0 is0, so pointwise cube1 at0 is false."
+      ],
+      "git_blob": "205dc4afdc86d4be060642526fcceef3be32ac51",
+      "git_blob_content_identity": "205dc4afdc86d4be060642526fcceef3be32ac51",
+      "imports": [
+        "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicReduction",
+        "Mathlib.NumberTheory.MulChar.Basic",
+        "Mathlib.FieldTheory.Finite.Basic",
+        "Mathlib.NumberTheory.NumberField.Ideal.Basic"
+      ],
+      "license": "Apache-2.0",
+      "logical_status": "selected source-qualified native result; registered at explicit integration checkpoint; selected receipt covers its recorded closure",
+      "module": "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicCharacters",
+      "namespaces": [
+        "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicCharacters"
+      ],
+      "object": "Cyclotomic",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicCharacters.lean",
+      "other_consumers": [
+        "docs/mathematics/NumberTheory/Cyclotomic/third-cyclotomic-characters.md"
+      ],
+      "path": "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicCharacters.lean",
+      "placement_rationale": "Actual cubic roots and multiplicative characters on maximal quotients of the third cyclotomic integer ring belong to NumberTheory/Cyclotomic.",
+      "public_declarations": [
+        {
+          "kind": "theorem",
+          "line": 36,
+          "name": "restrictedRoots_surjective"
+        },
+        {
+          "kind": "def",
+          "line": 50,
+          "name": "restrictedRootsEquiv"
+        },
+        {
+          "kind": "theorem",
+          "line": 61,
+          "name": "card_sub_one_div_three"
+        },
+        {
+          "kind": "def",
+          "line": 70,
+          "name": "cubicExponent"
+        },
+        {
+          "kind": "theorem",
+          "line": 72,
+          "name": "cubicExponent_pos"
+        },
+        {
+          "kind": "def",
+          "line": 127,
+          "name": "cubicChar"
+        },
+        {
+          "kind": "theorem",
+          "line": 135,
+          "name": "cubicChar_reduce"
+        },
+        {
+          "kind": "theorem",
+          "line": 155,
+          "name": "cubicChar_pow_three"
+        },
+        {
+          "kind": "theorem",
+          "line": 162,
+          "name": "cubicChar_ne_one"
+        },
+        {
+          "kind": "theorem",
+          "line": 183,
+          "name": "cubicChar_order"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK.NumberTheory.Cyclotomic.Checks.Positive.ThirdCyclotomicCharacters",
+        "GRWTSK"
+      ],
+      "runner": "python3 -B .noeaaeue/scripts/check_third_cyclotomic_characters.py",
+      "sha256": "c595e55f46838683758ea9c66379968ac75a6f86ddfb5dc099c302f9d497a051",
+      "source_role": "library",
+      "source_root": "GRWTSK",
+      "subject": "NumberTheory",
+      "target_path": "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicCharacters.lean",
+      "verification": {
+        "canonical_public_integration": "INSTALLED_SELECTED_SCOPE",
+        "inventory": "observed-current-bytes",
+        "lean": "Exact selected receipt context only",
+        "replay_binding": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-characters-development-checks-2026-10-15-a7b1f5cb.json",
+        "replay_sha256": "528b3c85272c20e55ae66668fd942bde430b10635bc68b44c304b3796a10f286",
+        "source_sha256": "c595e55f46838683758ea9c66379968ac75a6f86ddfb5dc099c302f9d497a051",
+        "whole_umbrella": "NOT_REPLAYED_BY_SELECTED_RECEIPT"
+      },
+      "working_tree_state": "Exact current bytes observed; index/ref state not inspected"
+    },
+    {
+      "bytes": 3936,
+      "contribution": {
+        "Mathlib_individual_credits": [
+          {
+            "authors": [
+              "Michael Stoll"
+            ],
+            "copyright_year": 2022,
+            "path": "Mathlib/NumberTheory/MulChar/Basic.lean"
+          },
+          {
+            "authors": [
+              "Johan Commelin"
+            ],
+            "copyright_year": 2020,
+            "path": "Mathlib/RingTheory/RootsOfUnity/Basic.lean"
+          },
+          {
+            "authors": [
+              "Xavier Roblot"
+            ],
+            "copyright_year": 2025,
+            "path": "Mathlib/NumberTheory/NumberField/Ideal/Basic.lean"
+          },
+          {
+            "authors": [
+              "Chris Hughes",
+              "Joey van Langen",
+              "Casper Putz"
+            ],
+            "copyright_year": 2018,
+            "path": "Mathlib/FieldTheory/Finite/Basic.lean"
+          }
+        ],
+        "OpenAI_primary": {
+          "git_blob": "06304e1efc036727b3fa27e37dd6a06ce0bf5e56",
+          "individual_author_boundary": "No individual source-header author invented.",
+          "line_ranges_one_based": [
+            [
+              377,
+              402
+            ],
+            [
+              429,
+              477
+            ],
+            [
+              553,
+              654
+            ]
+          ],
+          "path": "lean/OAI/NumberTheory/DirichletL/GaussSum/FiniteFourier.lean",
+          "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+          "project_author": "OpenAI",
+          "repository": "openai/math",
+          "sha256": "0e8e4184de91161a75802e3a26abfd19a322dffa6441968bf9caeb25800b5d7c"
+        },
+        "human_direction": "R.A. Jacob Martone",
+        "license": "Apache-2.0",
+        "local_contribution": "OpenAI Codex: adaptation, formalization/checking and source-bound documentation candidate; no novelty claim."
+      },
+      "declaration_inventory_method": "source commands only; receipt owned census authoritative",
+      "explicit_premises": [
+        "The actual restricted quotient reduction rootsOfUnity3O\u2192rootsOfUnity3(O/P) is surjective and defines a multiplicative equivalence. This is not a whole-ring quotient equivalence.",
+        "Under the same good maximal hypotheses, actual q=Nat.card(O/P) satisfies3|(q-1), and m=(q-1)/3 is strictly positive.",
+        "An actual quotient units homomorphism u\u21a6u^m into quotient cube roots is lifted through the actual restricted inverse to O, then zero-extended using MulChar.ofUnitHom. For every x:O/P, including0, \u03c0P(cubicChar(P,hgood)(x))=x^m.",
+        "The actual multiplicative character has cube equal to the trivial multiplicative character, is nontrivial and has order3. On units its value has cube1; its value at0 is0, so pointwise cube1 at0 is false."
+      ],
+      "git_blob": "be1dd19ddcc1dd3914154dc0a991307444a02c08",
+      "git_blob_content_identity": "be1dd19ddcc1dd3914154dc0a991307444a02c08",
+      "imports": [
+        "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicCharacters"
+      ],
+      "license": "Apache-2.0",
+      "logical_status": "selected source-qualified native result; registered at explicit integration checkpoint; selected receipt covers its recorded closure",
+      "module": "GRWTSK.NumberTheory.Cyclotomic.Checks.Positive.ThirdCyclotomicCharacters",
+      "namespaces": [
+        "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicCharacters.Checks.Positive"
+      ],
+      "object": "Cyclotomic/Checks/Positive",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Positive/ThirdCyclotomicCharacters.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Positive/ThirdCyclotomicCharacters.lean",
+      "placement_rationale": "Actual cubic roots and multiplicative characters on maximal quotients of the third cyclotomic integer ring belong to NumberTheory/Cyclotomic.",
+      "public_declarations": [
+        {
+          "kind": "theorem",
+          "line": 15,
+          "name": "actual_root_inverse"
+        },
+        {
+          "kind": "theorem",
+          "line": 21,
+          "name": "actual_root_lift_unique"
+        },
+        {
+          "kind": "theorem",
+          "line": 27,
+          "name": "actual_zero_value"
+        },
+        {
+          "kind": "theorem",
+          "line": 31,
+          "name": "actual_one_value"
+        },
+        {
+          "kind": "theorem",
+          "line": 35,
+          "name": "actual_character_cube"
+        },
+        {
+          "kind": "theorem",
+          "line": 38,
+          "name": "actual_unit_cube"
+        },
+        {
+          "kind": "theorem",
+          "line": 44,
+          "name": "actual_trivial_character_zero"
+        },
+        {
+          "kind": "theorem",
+          "line": 50,
+          "name": "actual_zero_cube_not_one"
+        },
+        {
+          "kind": "theorem",
+          "line": 54,
+          "name": "actual_all_x_reduction"
+        },
+        {
+          "kind": "theorem",
+          "line": 60,
+          "name": "actual_good_character_nonvacuous"
+        },
+        {
+          "kind": "theorem",
+          "line": 68,
+          "name": "actual_ramified_card"
+        },
+        {
+          "kind": "theorem",
+          "line": 71,
+          "name": "actual_ramified_exponent_zero"
+        },
+        {
+          "kind": "theorem",
+          "line": 76,
+          "name": "actual_ramified_reduction_impossible"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK.NumberTheory.Cyclotomic.Checks.Negative.ThirdCyclotomicCharacterZeroCube"
+      ],
+      "runner": "python3 -B .noeaaeue/scripts/check_third_cyclotomic_characters.py",
+      "sha256": "4832da80997b32be46ceb8ba498e86bb873a7e6111d9f2e70ee137211f0c4eb0",
+      "source_role": "positive-check",
+      "source_root": "GRWTSK",
+      "subject": "NumberTheory",
+      "target_path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Positive/ThirdCyclotomicCharacters.lean",
+      "verification": {
+        "canonical_public_integration": "INSTALLED_SELECTED_SCOPE",
+        "inventory": "observed-current-bytes",
+        "lean": "Exact selected receipt context only",
+        "replay_binding": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-characters-development-checks-2026-10-15-a7b1f5cb.json",
+        "replay_sha256": "528b3c85272c20e55ae66668fd942bde430b10635bc68b44c304b3796a10f286",
+        "source_sha256": "4832da80997b32be46ceb8ba498e86bb873a7e6111d9f2e70ee137211f0c4eb0",
+        "whole_umbrella": "NOT_REPLAYED_BY_SELECTED_RECEIPT"
+      },
+      "working_tree_state": "Exact current bytes observed; index/ref state not inspected"
+    },
+    {
+      "bytes": 796,
+      "contribution": {
+        "Mathlib_individual_credits": [
+          {
+            "authors": [
+              "Michael Stoll"
+            ],
+            "copyright_year": 2022,
+            "path": "Mathlib/NumberTheory/MulChar/Basic.lean"
+          },
+          {
+            "authors": [
+              "Johan Commelin"
+            ],
+            "copyright_year": 2020,
+            "path": "Mathlib/RingTheory/RootsOfUnity/Basic.lean"
+          },
+          {
+            "authors": [
+              "Xavier Roblot"
+            ],
+            "copyright_year": 2025,
+            "path": "Mathlib/NumberTheory/NumberField/Ideal/Basic.lean"
+          },
+          {
+            "authors": [
+              "Chris Hughes",
+              "Joey van Langen",
+              "Casper Putz"
+            ],
+            "copyright_year": 2018,
+            "path": "Mathlib/FieldTheory/Finite/Basic.lean"
+          }
+        ],
+        "OpenAI_primary": {
+          "git_blob": "06304e1efc036727b3fa27e37dd6a06ce0bf5e56",
+          "individual_author_boundary": "No individual source-header author invented.",
+          "line_ranges_one_based": [
+            [
+              377,
+              402
+            ],
+            [
+              429,
+              477
+            ],
+            [
+              553,
+              654
+            ]
+          ],
+          "path": "lean/OAI/NumberTheory/DirichletL/GaussSum/FiniteFourier.lean",
+          "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+          "project_author": "OpenAI",
+          "repository": "openai/math",
+          "sha256": "0e8e4184de91161a75802e3a26abfd19a322dffa6441968bf9caeb25800b5d7c"
+        },
+        "human_direction": "R.A. Jacob Martone",
+        "license": "Apache-2.0",
+        "local_contribution": "OpenAI Codex: adaptation, formalization/checking and source-bound documentation candidate; no novelty claim."
+      },
+      "declaration_inventory_method": "source commands only; receipt owned census authoritative",
+      "explicit_premises": [
+        "The actual restricted quotient reduction rootsOfUnity3O\u2192rootsOfUnity3(O/P) is surjective and defines a multiplicative equivalence. This is not a whole-ring quotient equivalence.",
+        "Under the same good maximal hypotheses, actual q=Nat.card(O/P) satisfies3|(q-1), and m=(q-1)/3 is strictly positive.",
+        "An actual quotient units homomorphism u\u21a6u^m into quotient cube roots is lifted through the actual restricted inverse to O, then zero-extended using MulChar.ofUnitHom. For every x:O/P, including0, \u03c0P(cubicChar(P,hgood)(x))=x^m.",
+        "The actual multiplicative character has cube equal to the trivial multiplicative character, is nontrivial and has order3. On units its value has cube1; its value at0 is0, so pointwise cube1 at0 is false."
+      ],
+      "git_blob": "600d6ed7b10a4d866fc7225ef52df024b136ab5f",
+      "git_blob_content_identity": "600d6ed7b10a4d866fc7225ef52df024b136ab5f",
+      "imports": [
+        "GRWTSK.NumberTheory.Cyclotomic.Checks.Positive.ThirdCyclotomicCharacters"
+      ],
+      "license": "Apache-2.0",
+      "logical_status": "intended rejected control; no theorem admission",
+      "module": "GRWTSK.NumberTheory.Cyclotomic.Checks.Negative.ThirdCyclotomicCharacterZeroCube",
+      "namespaces": [
+        "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicCharacters.Checks.Negative"
+      ],
+      "object": "Cyclotomic/Checks/Negative",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Negative/ThirdCyclotomicCharacterZeroCube.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Negative/ThirdCyclotomicCharacterZeroCube.lean",
+      "placement_rationale": "Actual cubic roots and multiplicative characters on maximal quotients of the third cyclotomic integer ring belong to NumberTheory/Cyclotomic.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B .noeaaeue/scripts/check_third_cyclotomic_characters.py",
+      "sha256": "7e423a5a2cb5a9f6c78740f357fc1a41b832c01545e4a6e87ada20f8ccfb8242",
+      "source_role": "negative-control",
+      "source_root": "GRWTSK",
+      "subject": "NumberTheory",
+      "target_path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Negative/ThirdCyclotomicCharacterZeroCube.lean",
+      "verification": {
+        "canonical_public_integration": "INSTALLED_SELECTED_SCOPE",
+        "inventory": "observed-current-bytes",
+        "lean": "Exact selected receipt context only",
+        "replay_binding": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-characters-development-checks-2026-10-15-a7b1f5cb.json",
+        "replay_sha256": "528b3c85272c20e55ae66668fd942bde430b10635bc68b44c304b3796a10f286",
+        "source_sha256": "7e423a5a2cb5a9f6c78740f357fc1a41b832c01545e4a6e87ada20f8ccfb8242",
+        "whole_umbrella": "NOT_REPLAYED_BY_SELECTED_RECEIPT"
+      },
+      "working_tree_state": "Exact current bytes observed; index/ref state not inspected"
     }
   ]
 }

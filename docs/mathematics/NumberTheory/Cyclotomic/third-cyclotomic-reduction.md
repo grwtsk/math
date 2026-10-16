@@ -54,9 +54,12 @@ records exact identities and bounded source comparisons. Human direction:
 R.A. Jacob Martone; adaptation, formalization and checking: OpenAI Codex.
 Correlated model/source review is not independent validation.
 
-Original cubic/sextic characters, Jacobi and normalized primary-generator
-witnesses, Gauss coefficients, cube/column and Möbius weights, corrected masks,
-completed ideal sums and common support for every frequency remain open.
+The [good-quotient cubic-character result](third-cyclotomic-characters.md)
+supplies actual maximal-quotient cubic characters with the explicit good-prime
+exclusion, including their zero, unit, reduction and exact-order laws.
+Sextic/trace laws, Jacobi and normalized primary-generator witnesses, Gauss
+coefficients, cube/column and Möbius weights, corrected masks, completed ideal
+sums and common support for every frequency remain open.
 These local root-reduction results do not close finite completed-sum
 interchange, global bounds, the original detector or RH. They establish no
 operational cache refinement.

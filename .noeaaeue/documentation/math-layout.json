@@ -14,12 +14,12 @@
       "MertensLogSquareBound (supplied only as an explicit hypothesis in the positive interface examples)"
     ],
     "GRWTSK/Analysis/Fourier/ZModSubsetSum.lean": [
-      "Theorem 1.3 quantitative random-partition lower-tail concentration estimates (source Lemmas 3.1 and 3.3), expected layer bounds and parameter-dependent final summation; deterministic partition law, character estimates and global low-energy cardinality bound are now proved."
+      "Corollary 1.4 larger-slice anti-concentration, conditional Section 4 chain estimates, Section 5 local collision/admissible-permutation estimates and source Lemmas 5.1–5.3; source Theorem 1.3 is separately closed by the new selected receipt."
     ],
     "GRWTSK/Combinatorics/Sequences/PrimeCyclicRearrangement.lean": [
-      "tailFailure probability \u2264 1/100 under the source parameter regime",
-      "densityFailure probability \u2264 3/100 under the source parameter regime",
-      "compatibilityFailure probability \u2264 1/25 under the source parameter regime",
+      "tailFailure probability ≤ 1/100 under the source parameter regime",
+      "densityFailure probability ≤ 3/100 under the source parameter regime",
+      "compatibilityFailure probability ≤ 1/25 under the source parameter regime",
       "Source Theorem 1.2 asymptotic source-range proposition PhamSauermannSourceRange; no inhabitant supplied"
     ]
   },
@@ -1814,7 +1814,7 @@
           "sha256": "dc105862ecda0a65b5df3feef43539ce48e8ad5e2e288869be74df8345c5faa4"
         }
       ],
-      "rationale": "Exact derivative L\u00b2 energy for a normalized C\u00b3 compact profile, retaining inverse-scale factors and the positive integration-by-parts mixed contribution."
+      "rationale": "Exact derivative L² energy for a normalized C³ compact profile, retaining inverse-scale factors and the positive integration-by-parts mixed contribution."
     },
     {
       "previous_path": "GRWTSK/RiemannHypothesis/GevreyNormalization.lean",
@@ -1826,7 +1826,7 @@
           "sha256": "469dd45166d579a93c55fda6ae66a2f3f0bdad54d9761e59ab66fc9cfdd95564"
         }
       ],
-      "rationale": "General C\u00b2 compact-profile dilation, integration by parts and normalized differential-operator square integrals; the concrete smooth profile is a specialization."
+      "rationale": "General C² compact-profile dilation, integration by parts and normalized differential-operator square integrals; the concrete smooth profile is a specialization."
     },
     {
       "previous_path": "GRWTSK/RiemannHypothesis/GevreyPolynomial.lean",
@@ -1850,7 +1850,7 @@
           "sha256": "d8edd04841c7bab3c52e385bb74f5c23b6596e6e8f9453b59a24bb8e7421d48f"
         }
       ],
-      "rationale": "Smoothness, exact support and nontriviality of the zero extension of exp(-(1-y\u00b2)^(-2)); no quantitative Gevrey estimate is proved."
+      "rationale": "Smoothness, exact support and nontriviality of the zero extension of exp(-(1-y²)^(-2)); no quantitative Gevrey estimate is proved."
     },
     {
       "previous_path": "GRWTSK/RiemannHypothesis/SourceCorrelationCurvature.lean",
@@ -1862,7 +1862,7 @@
           "sha256": "decf56fc025da8133170d768dcc2c467508ee715050fc6e7633a42a1ed7060d3"
         }
       ],
-      "rationale": "Autocorrelation curvature equals negative first-derivative autocorrelation, with C\u00b2 correlation regularity, energy bounds and a Taylor remainder."
+      "rationale": "Autocorrelation curvature equals negative first-derivative autocorrelation, with C² correlation regularity, energy bounds and a Taylor remainder."
     },
     {
       "previous_path": "GRWTSK/RiemannHypothesis/SourceCorrelationEnergy.lean",
@@ -1874,7 +1874,7 @@
           "sha256": "8a8d4a85d38b81db1bd37a0ae0698780791082f979d125d20ab3d928c7e7bb8e"
         }
       ],
-      "rationale": "Differentiate a compact C\u00b9 autocorrelation under the integral and bound its first derivative by the derivative energy using unit normalization and Cauchy\u2013Schwarz."
+      "rationale": "Differentiate a compact C¹ autocorrelation under the integral and bound its first derivative by the derivative energy using unit normalization and Cauchy–Schwarz."
     },
     {
       "previous_path": "GRWTSK/RiemannHypothesis/SourceDerivativeCoefficientBound.lean",
@@ -1898,7 +1898,7 @@
           "sha256": "9a4adaa8061a277138bdd1c3e9897b4348ab6517a0361a18a6f5654de438309d"
         }
       ],
-      "rationale": "C\u00b3 regularity and third-derivative energy of the unchanged polynomial bump, transported to its actual normalized differential operator and bounded by exact coefficients."
+      "rationale": "C³ regularity and third-derivative energy of the unchanged polynomial bump, transported to its actual normalized differential operator and bounded by exact coefficients."
     },
     {
       "previous_path": "GRWTSK/RiemannHypothesis/SourcePairing.lean",
@@ -5274,7 +5274,11 @@
     "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableSchedule.lean": "0e66aa61abd4c3a911b3119555cb39c24354b319e2da3e3b7226f8907affab95",
     "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixScheduleRemapComposition.lean": "fcd49a2a74a27cb9bee4b441f17e5ddecc6e3a0b944e3b12fd11df5809764c5f",
     "GRWTSK/NumberTheory/Cyclotomic/Checks/Positive/ThirdCyclotomicReduction.lean": "68f8f43dcc5c166774ae4abcf6d75e527ac9a79dccb8d574caef7c390ffcf95b",
-    "GRWTSK/NumberTheory/Cyclotomic/Checks/Negative/ThirdCyclotomicMissingGoodPrime.lean": "14527265f71696aa97da8f12239422816bb8ada7f8add5343613dee8426cfb06"
+    "GRWTSK/NumberTheory/Cyclotomic/Checks/Negative/ThirdCyclotomicMissingGoodPrime.lean": "14527265f71696aa97da8f12239422816bb8ada7f8add5343613dee8426cfb06",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableReferenceTransport.lean": "092678d16170cff8e60e5b1461c71aea404b4a8d93731f4e001367992bf96e26",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixReferenceMissingSupport.lean": "a81f4b50114fcd35951a8ed8ee1ccf0a706bc26b3a73d6935d83f8867b826f2c",
+    "GRWTSK/NumberTheory/Cyclotomic/Checks/Positive/ThirdCyclotomicCharacters.lean": "4832da80997b32be46ceb8ba498e86bb873a7e6111d9f2e70ee137211f0c4eb0",
+    "GRWTSK/NumberTheory/Cyclotomic/Checks/Negative/ThirdCyclotomicCharacterZeroCube.lean": "7e423a5a2cb5a9f6c78740f357fc1a41b832c01545e4a6e87ada20f8ccfb8242"
   },
   "schema_version": 3,
   "repository_conformance": {
@@ -5306,8 +5310,8 @@
     {
       "path": "GRWTSK.lean",
       "original_path": "GRWTSK.lean",
-      "sha256": "d8bda509bc6f84a130b4747760134d1eabf3a565f3cbd3ac4c46ce16da35597e",
-      "git_blob": "6225a52ce3ec8c46790726156ffbe9691e63bc02",
+      "sha256": "44e183a171c933e0635d85b0316dd37f88667640c1b4acdde90fd759b506a106",
+      "git_blob": "6654486250b19d342f3d037eb8587d7a706df31b",
       "working_tree_state": "tracked-modified",
       "source_root": ".",
       "module": "GRWTSK",
@@ -5744,7 +5748,13 @@
         "GRWTSK.Analysis.Fourier.ZModConcentratedFrequencies",
         "GRWTSK.Combinatorics.DirectedGraph.PrefixTableSchedule",
         "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicReduction",
-        "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.DivisorSectorReindexing"
+        "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.DivisorSectorReindexing",
+        "GRWTSK.Analysis.Fourier.ZModBalancedExpectedLayers",
+        "GRWTSK.Combinatorics.Sequences.PartitionExposureChecks",
+        "GRWTSK.Analysis.Fourier.FiniteAdditiveProjector",
+        "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.AdditiveCharacterMoments",
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableReferenceTransport",
+        "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicCharacters"
       ],
       "reverse_consumers": [
         "GRWTSK/Combinatorics/GraphTheory/UnitDistanceGraph/Moser/Checks/DeclarationAudit.lean",
@@ -5757,14 +5767,25 @@
       "target_path": "GRWTSK.lean",
       "placement_rationale": "Conventional public entry point.",
       "operation": "keep",
-      "logical_status": "statements and proof bodies preserved; relocation makes no new acceptance claim",
+      "logical_status": "Public import inventory only; selected receipts do not replay the whole umbrella",
       "open_premises": [],
       "verification": {
-        "inventory": "observed-current-bytes",
-        "source_sha256": "d8bda509bc6f84a130b4747760134d1eabf3a565f3cbd3ac4c46ce16da35597e",
-        "lean": "public root not replayed; selected seven-module closure replayed separately",
-        "selected_new_module_receipt": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/divisor-sectors-checks-2026-10-15.json",
-        "owned_declaration_audit": "selected closure only; no whole-entrypoint admission"
+        "inventory": "observed-proposed-bytes; public import inventory only",
+        "source_sha256": "44e183a171c933e0635d85b0316dd37f88667640c1b4acdde90fd759b506a106",
+        "lean": "selected receipts do not replay the whole public umbrella; any public acceptance requires separately bound checkpoint evidence",
+        "owned_declaration_audit": "selected receipts audit their recorded source closures only; any full-entrypoint admission requires separate checkpoint evidence",
+        "selected_module_receipts": [
+          {
+            "path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-reference-transport-checks-2026-10-15.json",
+            "sha256": "c2392986e86871df84fd07fc4363c634a37930749e4f505a941a91278236a271",
+            "bytes": 3773336
+          },
+          {
+            "path": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-characters-development-checks-2026-10-15-a7b1f5cb.json",
+            "sha256": "528b3c85272c20e55ae66668fd942bde430b10635bc68b44c304b3796a10f286",
+            "bytes": 4928030
+          }
+        ]
       },
       "runner": "python3 -B scripts/check_ccc_energy.py",
       "other_consumers": [
@@ -5949,6 +5970,672 @@
         "source_sha256": "e93288cf55c77a5a76b88f57a78dc58ad9514c7ee9473ead994326d73cda6bc5",
         "lean": "public umbrella NOT_REPLAYED after these imports; selected library closures have separate immutable receipts",
         "owned_declaration_audit": "public umbrella NOT_RUN; no full-library admission"
+      },
+      "historical_verification_before_additive_character_integration": {
+        "inventory": "observed-current-bytes",
+        "source_sha256": "d8bda509bc6f84a130b4747760134d1eabf3a565f3cbd3ac4c46ce16da35597e",
+        "lean": "public root not replayed; selected seven-module closure replayed separately",
+        "selected_new_module_receipt": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/divisor-sectors-checks-2026-10-15.json",
+        "owned_declaration_audit": "selected closure only; no whole-entrypoint admission"
+      },
+      "historical_inventory_before_reference_character_checkpoint": {
+        "path": "GRWTSK.lean",
+        "original_path": "GRWTSK.lean",
+        "sha256": "781a2e57e7856dcad358955086c1acfdaefa865835f3f1c364ac4ce49ca6ff33",
+        "git_blob": "741a5ed2b3bfd984fb8802aeae66ea4e2b2dfccd",
+        "working_tree_state": "tracked-modified",
+        "source_root": ".",
+        "module": "GRWTSK",
+        "namespaces": [],
+        "public_declarations": [],
+        "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+        "imports": [
+          "GRWTSK.Algebra.BigOperators.OrderedSquare",
+          "GRWTSK.Algebra.BigOperators.QuadraticCounterexample",
+          "GRWTSK.Algebra.OrderedProduct",
+          "GRWTSK.Algebra.OrderedProductGauge",
+          "GRWTSK.Algebra.Polynomial.ConjugateInterpolation",
+          "GRWTSK.Algebra.Polynomial.SignedRootTrace",
+          "GRWTSK.Analysis.Asymptotics.PolynomialErrorBound",
+          "GRWTSK.Analysis.Asymptotics.FiniteConvolutionRecurrence",
+          "GRWTSK.Analysis.Asymptotics.PolynomialClosure",
+          "GRWTSK.Analysis.Asymptotics.FinitePowerSum",
+          "GRWTSK.NumberTheory.Moebius.MertensPrimitive",
+          "GRWTSK.Analysis.LaplaceTransform.PolynomialEnergy",
+          "GRWTSK.Analysis.Asymptotics.PolynomialSubexponential",
+          "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
+          "GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy",
+          "GRWTSK.NumberTheory.Moebius.WeightedIntegralGrowth",
+          "GRWTSK.NumberTheory.Moebius.SignedIntegralSectorBounds",
+          "GRWTSK.Analysis.Calculus.CompactPolynomialDerivatives",
+          "GRWTSK.Analysis.SpecialFunctions.SquaredInverseBump",
+          "GRWTSK.Analysis.Calculus.CompactProfileNormalization",
+          "GRWTSK.Analysis.Calculus.CompactProfileDerivativeEnergy",
+          "GRWTSK.Analysis.IntervalIntegral.Reflection",
+          "GRWTSK.NumberTheory.Chebyshev.CorrelationPairing",
+          "GRWTSK.Analysis.WeakDerivatives.PolynomialBump",
+          "GRWTSK.Analysis.Convolution.PolynomialBumpRegularity",
+          "GRWTSK.Analysis.TestFunctions.PolynomialBumpNormalization",
+          "GRWTSK.Analysis.Calculus.PolynomialBumpNormalization",
+          "GRWTSK.Analysis.Inequalities.PolynomialEnergyRatio",
+          "GRWTSK.Analysis.Calculus.PolynomialBumpDerivativeEnergy",
+          "GRWTSK.Analysis.Convolution.AutocorrelationDerivativeEnergy",
+          "GRWTSK.Analysis.Convolution.AutocorrelationSecondDerivative",
+          "GRWTSK.Analysis.TestFunctions.PolynomialBumpSecondEnergy",
+          "GRWTSK.Analysis.Convolution.PolynomialBumpHigherDerivatives",
+          "GRWTSK.Analysis.InnerProductSpace.CompactResidualNormalization",
+          "GRWTSK.Analysis.InnerProductSpace.DilationGram",
+          "GRWTSK.Analysis.Convolution.CompactProfileCorrelation",
+          "GRWTSK.Analysis.Integration.CompactPolynomialMoments",
+          "GRWTSK.Analysis.Integration.ExponentialVolterraL2",
+          "GRWTSK.NumberTheory.Chebyshev.CompactProfilePairingIntegrability",
+          "GRWTSK.Analysis.Distribution.CompactProfileDilation",
+          "GRWTSK.Analysis.DigammaSeries",
+          "GRWTSK.Analysis.Fourier.PolynomialBumpEstimates",
+          "GRWTSK.Analysis.Convolution.ExponentialMoments",
+          "GRWTSK.NumberTheory.Chebyshev.FiniteIntegrationByParts",
+          "GRWTSK.NumberTheory.ExplicitFormula.CorrelationPairing",
+          "GRWTSK.Analysis.Fourier.LogarithmicDomain",
+          "GRWTSK.Analysis.Fourier.DigammaMultiplier",
+          "GRWTSK.Analysis.ReciprocalKernel",
+          "GRWTSK.Analysis.SpecialFunctions.DigammaFourierBound",
+          "GRWTSK.NumberTheory.Chebyshev.CompactProfileExplicitFormula",
+          "GRWTSK.Analysis.Convolution.CompactProfileHigherDerivatives",
+          "GRWTSK.Analysis.Calculus.CompactProfileBoundaryCounterexamples",
+          "GRWTSK.Analysis.Complex.VerticalReflection",
+          "GRWTSK.Analysis.Distribution.WeakSecondDerivativeUniqueness",
+          "GRWTSK.Analysis.ErrorBounds.PartialMapComposition",
+          "GRWTSK.Analysis.Fourier.IntegerSeries",
+          "GRWTSK.Analysis.Fourier.Parseval",
+          "GRWTSK.Analysis.Fourier.WindowCertificates",
+          "GRWTSK.Analysis.Inequalities.DiscreteEnergyBalance",
+          "GRWTSK.Analysis.Inequalities.ExponentialDiagonal",
+          "GRWTSK.Analysis.Inequalities.FiniteShiftedDerivativeBounds",
+          "GRWTSK.Analysis.InnerProductSpace.CausalResponseGram",
+          "GRWTSK.Analysis.InnerProductSpace.DilationResponseSeparation",
+          "GRWTSK.Analysis.IntervalReflection",
+          "GRWTSK.Analysis.LaplaceTransform.Analytic",
+          "GRWTSK.Analysis.LaplaceTransform.CausalExponentialResponse",
+          "GRWTSK.NumberTheory.Moebius.LaplaceTransform",
+          "GRWTSK.NumberTheory.Moebius.PrimitiveRegularity",
+          "GRWTSK.NumberTheory.Moebius.DirichletLaplaceIdentity",
+          "GRWTSK.NumberTheory.Moebius.FiniteResponseSum",
+          "GRWTSK.NumberTheory.Moebius.GramDiagonalBound",
+          "GRWTSK.NumberTheory.Moebius.LaplaceHolomorphy",
+          "GRWTSK.NumberTheory.Zeta.Riemann.Regularized",
+          "GRWTSK.NumberTheory.Zeta.Riemann.ZeroDefinitions",
+          "GRWTSK.NumberTheory.Zeta.Riemann.ZeroSymmetry",
+          "GRWTSK.NumberTheory.Zeta.Riemann.LaplaceCriterion",
+          "GRWTSK.NumberTheory.Zeta.Riemann.PolynomialEnergyCriterion",
+          "GRWTSK.NumberTheory.Moebius.UnsignedEnergyBound",
+          "GRWTSK.NumberTheory.Moebius.EnergyAbscissa",
+          "GRWTSK.Analysis.LaplaceTransform.ExponentialThreshold",
+          "GRWTSK.Analysis.NormedSpace.QuadraticError",
+          "GRWTSK.Analysis.Polarization",
+          "GRWTSK.Analysis.TestFunctions.Separation",
+          "GRWTSK.Analysis.TestFunctions.EvenSeparation",
+          "GRWTSK.Analysis.TestFunctions.ExponentialMomentVariation",
+          "GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.MoserSource",
+          "GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.Moser",
+          "GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.MoserCoordinates",
+          "GRWTSK.Combinatorics.Sequences.QuotaDiscrepancy",
+          "GRWTSK.Data.Sampling.Descriptions",
+          "GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators",
+          "GRWTSK.DynamicalSystems.Sequences.ApproximationReturn",
+          "GRWTSK.DynamicalSystems.TransitionSystems.GuardedFiniteBudget",
+          "GRWTSK.Logic.Certificates.ProofCoverage",
+          "GRWTSK.Logic.Locality.RevisionCertificates",
+          "GRWTSK.Order.Closure.FiniteDependencyClosure",
+          "GRWTSK.Logic.Certificates.DependencyRevision",
+          "GRWTSK.DynamicalSystems.TransitionSystems.StateReinitialization",
+          "GRWTSK.Logic.Certificates.BatchVerification",
+          "GRWTSK.Logic.Inference.FiniteRuleSystems",
+          "GRWTSK.Logic.Inference.RuleSoundness",
+          "GRWTSK.Logic.Certificates.ArtifactDerivation",
+          "GRWTSK.Logic.ProofChecking.RepositoryConformance",
+          "GRWTSK.Logic.Locality.FiniteRuleTransport",
+          "GRWTSK.Logic.Locality.AnchoredCertificates",
+          "GRWTSK.Logic.Certificates.AnchoredBatchVerification",
+          "GRWTSK.DynamicalSystems.TransitionSystems.AnchoredReinitialization",
+          "GRWTSK.DynamicalSystems.TransitionSystems.RevisionReachability",
+          "GRWTSK.Logic.Certificates.AnchoredDependencyRevision",
+          "GRWTSK.DynamicalSystems.TransitionSystems.AnchoredVerificationExamples",
+          "GRWTSK.DynamicalSystems.TransitionSystems.AnchoredVerificationReachability",
+          "GRWTSK.Order.Closure.FiniteDependencyExamples",
+          "GRWTSK.Logic.Certificates.DependencyRevisionExamples",
+          "GRWTSK.DynamicalSystems.TransitionSystems.StateReinitializationExamples",
+          "GRWTSK.DynamicalSystems.TransitionSystems.BudgetResetCounterexamples",
+          "GRWTSK.DynamicalSystems.TransitionSystems.CertifiedPartialMaps",
+          "GRWTSK.DynamicalSystems.TransitionSystems.VerificationReachability",
+          "GRWTSK.Logic.Certificates.BatchVerificationExamples",
+          "GRWTSK.DynamicalSystems.TransitionSystems.VerificationReachabilityExamples",
+          "GRWTSK.LinearAlgebra.SchrodingerTransfer",
+          "GRWTSK.LinearAlgebra.AlmostMathieu",
+          "GRWTSK.LinearAlgebra.JacobiTransfer",
+          "GRWTSK.LinearAlgebra.OrderedTransfer",
+          "GRWTSK.LinearAlgebra.OrderedProductDeterminant",
+          "GRWTSK.LinearAlgebra.CocycleProduct",
+          "GRWTSK.LinearAlgebra.CommonJ",
+          "GRWTSK.LinearAlgebra.CommonJCounterexamples",
+          "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm",
+          "GRWTSK.LinearAlgebra.QuadraticCertificates",
+          "GRWTSK.LinearAlgebra.GaugeState",
+          "GRWTSK.LinearAlgebra.Schrodinger.SampledPotential",
+          "GRWTSK.LinearAlgebra.Schrodinger.Sampling",
+          "GRWTSK.LinearAlgebra.Sturmian",
+          "GRWTSK.Logic.Certificates.ModelExamples",
+          "GRWTSK.Analysis.Complex.CriticalReflection",
+          "GRWTSK.Analysis.Complex.ReflectionCounterexamples",
+          "GRWTSK.LinearAlgebra.Matrix.HermitianCounterexamples",
+          "GRWTSK.NumberTheory.Zeta.Riemann.ZeroExclusions",
+          "GRWTSK.Logic.FiniteCoverage",
+          "GRWTSK.Logic.FiniteSequences.PrefixCoverage",
+          "GRWTSK.Logic.Inference.FiniteRuleExamples",
+          "GRWTSK.NumberTheory.ContinuedFractions.FrequencyRealization",
+          "GRWTSK.NumberTheory.FirstPrime",
+          "GRWTSK.NumberTheory.Prime.LeastPrime",
+          "GRWTSK.NumberTheory.Moebius.ComparisonEnergy",
+          "GRWTSK.NumberTheory.Moebius.DiagonalEnergyBounds",
+          "GRWTSK.NumberTheory.Moebius.PrimeFactorFilters",
+          "GRWTSK.NumberTheory.Moebius.PrimeFilterEnergy",
+          "GRWTSK.NumberTheory.Moebius.PrimeBlockEnergy",
+          "GRWTSK.NumberTheory.Prime.ReciprocalMass",
+          "GRWTSK.NumberTheory.Moebius.PrimeFilterGrowth",
+          "GRWTSK.NumberTheory.Moebius.DyadicEnergy",
+          "GRWTSK.NumberTheory.Moebius.EnergyGrowthEquivalences",
+          "GRWTSK.NumberTheory.Moebius.FiniteLaplaceSums",
+          "GRWTSK.NumberTheory.Moebius.PrimeFilterLaplace",
+          "GRWTSK.NumberTheory.Moebius.FiniteLaplaceTransform",
+          "GRWTSK.NumberTheory.Moebius.FiniteEulerProduct",
+          "GRWTSK.NumberTheory.Moebius.FinitePrimeProductDebt",
+          "GRWTSK.NumberTheory.Moebius.IntegerSampleGrowth",
+          "GRWTSK.NumberTheory.Moebius.LaplaceDirichletSeries",
+          "GRWTSK.NumberTheory.Moebius.MeanSquareGrowth",
+          "GRWTSK.NumberTheory.Moebius.WeightedIntegralContinuity",
+          "GRWTSK.NumberTheory.Moebius.PolynomialLaplaceHolomorphy",
+          "GRWTSK.NumberTheory.Moebius.MeanSquareLaplaceHolomorphy",
+          "GRWTSK.NumberTheory.Moebius.PrimePrefixGrowth",
+          "GRWTSK.NumberTheory.Moebius.NegativePrimeCorrelation",
+          "GRWTSK.NumberTheory.Moebius.PrimitiveIdentification",
+          "GRWTSK.NumberTheory.Moebius.SectorEssentialSuprema",
+          "GRWTSK.NumberTheory.Zeta.PoleRegularization",
+          "GRWTSK.NumberTheory.Zeta.ZeroFreeHalfPlaneCriteria",
+          "GRWTSK.NumberTheory.Zeta.HolomorphicFilteredReciprocal",
+          "GRWTSK.NumberTheory.Zeta.Riemann.CriticalLineDefect",
+          "GRWTSK.NumberTheory.Zeta.Riemann.Hypothesis",
+          "GRWTSK.NumberTheory.Zeta.Riemann.DefectCriterion",
+          "GRWTSK.NumberTheory.Zeta.Riemann",
+          "GRWTSK.Spectral.GapTransport",
+          "GRWTSK.Spectral.MatrixCountComparison",
+          "GRWTSK.Spectral.SturmianFiniteVolume",
+          "GRWTSK.Spectral.DirichletCut",
+          "GRWTSK.Spectral.FreeDirichletSpectrum",
+          "GRWTSK.Spectral.FreeIDS",
+          "GRWTSK.Spectral.SturmianBlockCounts",
+          "GRWTSK.Algebra.MvPolynomial.SquarefreeEulerProduct",
+          "GRWTSK.Analysis.Asymptotics.DisjointPrimeChainBounds",
+          "GRWTSK.Analysis.Asymptotics.ExponentialEnergyObstruction",
+          "GRWTSK.Analysis.Asymptotics.ExponentialRecurrence",
+          "GRWTSK.Analysis.Asymptotics.FinitePrimeChainEnergyBounds",
+          "GRWTSK.Analysis.Asymptotics.FixedWidthEnergyBoundEquivalence",
+          "GRWTSK.Analysis.Asymptotics.MassWeightedRecurrence",
+          "GRWTSK.Analysis.Asymptotics.PrimeMassPotentialBounds",
+          "GRWTSK.Analysis.Asymptotics.PrimeSubsetPotentialBounds",
+          "GRWTSK.Analysis.Asymptotics.PrimeTranslationBoundContracts",
+          "GRWTSK.Analysis.Asymptotics.QuadraticKernelEnergyEquivalence",
+          "GRWTSK.Analysis.Asymptotics.SelectedPrimeChainBounds",
+          "GRWTSK.Analysis.Asymptotics.SignedEnergyDecomposition",
+          "GRWTSK.Analysis.Calculus.LogarithmicResponseDerivatives",
+          "GRWTSK.Analysis.CausalTranslation.ExponentialResponse",
+          "GRWTSK.Analysis.Fourier.AngularFrequencyParseval",
+          "GRWTSK.NumberTheory.Moebius.DampedRecordingParseval",
+          "GRWTSK.NumberTheory.Moebius.VerticalLineCriterion",
+          "GRWTSK.NumberTheory.Moebius.VerticalLineMonotonicity",
+          "GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks",
+          "GRWTSK.NumberTheory.Moebius.LogarithmicMertensBoundary",
+          "GRWTSK.NumberTheory.Moebius.ReciprocalPrefix",
+          "GRWTSK.DynamicalSystems.TransitionSystems.FinitePhraseProcess",
+          "GRWTSK.NumberTheory.ArithmeticFunctions.DensityMoebius",
+          "GRWTSK.NumberTheory.ArithmeticFunctions.DensityFiniteSums",
+          "GRWTSK.NumberTheory.ArithmeticFunctions.CoprimeReciprocalForm",
+          "GRWTSK.NumberTheory.ArithmeticFunctions.DensityMoebiusCorrection",
+          "GRWTSK.NumberTheory.ArithmeticFunctions.DivisibleDensityRow",
+          "GRWTSK.NumberTheory.ArithmeticFunctions.MoebiusReciprocalPrefix",
+          "GRWTSK.NumberTheory.ArithmeticFunctions.MoebiusTruncation",
+          "GRWTSK.NumberTheory.ArithmeticFunctions.PositiveDensityCorrection",
+          "GRWTSK.NumberTheory.ArithmeticFunctions.DensityCorrectionPrimeSeries",
+          "GRWTSK.NumberTheory.ArithmeticFunctions.DensityCorrectionReciprocalMass",
+          "GRWTSK.NumberTheory.ArithmeticFunctions.DensityHalfPrimeFactor",
+          "GRWTSK.NumberTheory.ArithmeticFunctions.DensityHalfMoment",
+          "GRWTSK.NumberTheory.ArithmeticFunctions.DensityMomentTails",
+          "GRWTSK.NumberTheory.ArithmeticFunctions.DensityReciprocalPrefix",
+          "GRWTSK.NumberTheory.ArithmeticFunctions.ExcludedDensityCorrection",
+          "GRWTSK.NumberTheory.ArithmeticFunctions.TruncatedMoebiusCoefficients",
+          "GRWTSK.NumberTheory.ArithmeticFunctions.ComplexMoebiusCast",
+          "GRWTSK.NumberTheory.ArithmeticFunctions.SquarefulMoebiusReturn",
+          "GRWTSK.NumberTheory.ArithmeticFunctions.SquarefreeMoebiusSum",
+          "GRWTSK.NumberTheory.LSeries.TruncatedMoebiusSeries",
+          "GRWTSK.NumberTheory.LSeries.ClosedMoebiusPolynomial",
+          "GRWTSK.NumberTheory.Moebius.ReciprocalPrefixDensityAdapter",
+          "GRWTSK.NumberTheory.Moebius.ReciprocalPrefixKernel",
+          "GRWTSK.NumberTheory.Moebius.CriticalIntervalBlockGrowth",
+          "GRWTSK.NumberTheory.Moebius.CriticalEndpointDefect",
+          "GRWTSK.NumberTheory.Moebius.CriticalEndpointDefectRecurrence",
+          "GRWTSK.NumberTheory.Moebius.CriticalMertensTransformMeanSquare",
+          "GRWTSK.NumberTheory.Moebius.CriticalWeightedMertensSquare",
+          "GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationEnergy",
+          "GRWTSK.NumberTheory.Moebius.ReciprocalFluxKernelBounds",
+          "GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationSummability",
+          "GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationPowerSaving",
+          "GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationRecurrence",
+          "GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationMertensEnergy",
+          "GRWTSK.NumberTheory.Moebius.MertensSquareEnergyPowerBound",
+          "GRWTSK.NumberTheory.Moebius.MertensSquareEnergyEquivalence",
+          "GRWTSK.NumberTheory.Moebius.WeightedMertensSquareCorrelation",
+          "GRWTSK.NumberTheory.Moebius.WeightedMertensSquareCorrelationBound",
+          "GRWTSK.Analysis.Fourier.FiniteTranslationMultipliers",
+          "GRWTSK.Analysis.Fourier.MoebiusQuadraticReturn",
+          "GRWTSK.Analysis.Fourier.PrimePhaseMultiplierBounds",
+          "GRWTSK.Analysis.Fourier.PrimePhasePacketCertificates",
+          "GRWTSK.Analysis.Fourier.QuadraticKernelTruncation",
+          "GRWTSK.Analysis.Fourier.ReciprocalZetaQuadraticKernel",
+          "GRWTSK.Analysis.Fourier.SignedPrimePhaseExamples",
+          "GRWTSK.Analysis.InnerProductSpace.LogarithmicCharacterGramBounds",
+          "GRWTSK.Analysis.InnerProductSpace.MoebiusResponseGramExpansion",
+          "GRWTSK.Analysis.InnerProductSpace.SignedCorrelationBudgetEquivalence",
+          "GRWTSK.Analysis.InnerProductSpace.SignedSynthesisEnergyBounds",
+          "GRWTSK.Analysis.InnerProductSpace.SignedWindowGramIdentity",
+          "GRWTSK.Analysis.InnerProductSpace.SignedWindowPacketCertificates",
+          "GRWTSK.Analysis.InnerProductSpace.WeightedSchurBounds",
+          "GRWTSK.Analysis.LaplaceTransform.MoebiusResponseFormula",
+          "GRWTSK.Analysis.LaplaceTransform.PolynomialEnergyHolomorphy",
+          "GRWTSK.Analysis.SumIntegralComparison.ExponentialResponseSquareSum",
+          "GRWTSK.Logic.ProofEvidence.DirichletResponseStatus",
+          "GRWTSK.Logic.ProofEvidence.EnergyInterfaceEquivalence",
+          "GRWTSK.Logic.ProofEvidence.MoebiusPrimeShellStatus",
+          "GRWTSK.Logic.ProofEvidence.MoebiusResponseStatus",
+          "GRWTSK.Logic.ProofEvidence.ProvenanceCertificates",
+          "GRWTSK.MeasureTheory.Function.Lp.CausalRestrictionBounds",
+          "GRWTSK.MeasureTheory.Integral.FinitePrimeTranslationEnergy",
+          "GRWTSK.MeasureTheory.Integral.FixedWidthEnergyTelescope",
+          "GRWTSK.MeasureTheory.Integral.MoebiusCumulativeEnergy",
+          "GRWTSK.MeasureTheory.Integral.QuadraticFourierFubini",
+          "GRWTSK.NumberTheory.Moebius.CompositeActivationExamples",
+          "GRWTSK.NumberTheory.Moebius.DiagonalEnergyBound",
+          "GRWTSK.NumberTheory.Moebius.FiniteProductResponseIdentification",
+          "GRWTSK.NumberTheory.Moebius.FiniteTranslationProduct",
+          "GRWTSK.NumberTheory.Moebius.LogarithmicResponse",
+          "GRWTSK.NumberTheory.Moebius.MoebiusEulerProduct",
+          "GRWTSK.NumberTheory.Moebius.PolynomialEnergyHolomorphy",
+          "GRWTSK.NumberTheory.Moebius.PrimeProductPrefixEnergy",
+          "GRWTSK.NumberTheory.Moebius.PrimeShellDecomposition",
+          "GRWTSK.NumberTheory.Moebius.QuadraticTransformBoundConversion",
+          "GRWTSK.NumberTheory.Moebius.ResponseBudgetIdentification",
+          "GRWTSK.NumberTheory.Moebius.SubsetPotentialObstruction",
+          "GRWTSK.NumberTheory.PrimeCounting.PrimeIntervalResponseEnergyGrowth",
+          "GRWTSK.NumberTheory.PrimeCounting.PrimeShellEnergyGrowth",
+          "GRWTSK.NumberTheory.PrimeCounting.ReciprocalPrimeBlockCost",
+          "GRWTSK.NumberTheory.PrimeCounting.ReciprocalPrimeIntervalBounds",
+          "GRWTSK.NumberTheory.PrimeCounting.ReciprocalPrimeLogBound",
+          "GRWTSK.NumberTheory.Zeta.ReciprocalDecayBounds",
+          "GRWTSK.NumberTheory.Zeta.ReciprocalHolomorphyZeroSymmetry",
+          "GRWTSK.NumberTheory.Zeta.ResponseBoundZeroConversions",
+          "GRWTSK.Order.WellFounded.AdditiveNaturalRank",
+          "GRWTSK.Analysis.Convolution.CompactProfileDifferentialMoments",
+          "GRWTSK.Analysis.Convolution.CompactProfileFirstPoleMoment",
+          "GRWTSK.Analysis.Convolution.FiniteTranslateIndependence",
+          "GRWTSK.Analysis.Convolution.FirstMomentConvolution",
+          "GRWTSK.Analysis.Inequalities.CompactProfileDifferentialBounds",
+          "GRWTSK.Analysis.Inequalities.FiniteLogarithmicProfileBounds",
+          "GRWTSK.Analysis.Inequalities.LogarithmicProfileIntegralPrices",
+          "GRWTSK.Analysis.InnerProductSpace.CausalContactHilbertSeparation",
+          "GRWTSK.Analysis.InnerProductSpace.CausalContactOperatorCost",
+          "GRWTSK.Analysis.InnerProductSpace.CausalContactSeparation",
+          "GRWTSK.Analysis.InnerProductSpace.CausalFiniteOperatorSeparation",
+          "GRWTSK.Analysis.InnerProductSpace.CausalGramCongruenceObstruction",
+          "GRWTSK.Analysis.InnerProductSpace.CausalIndividualRealization",
+          "GRWTSK.Analysis.InnerProductSpace.CausalLastLabelOperatorCost",
+          "GRWTSK.Analysis.InnerProductSpace.CausalRealizationPolynomialObstruction",
+          "GRWTSK.Analysis.InnerProductSpace.CompactSourceGramPositiveDefinite",
+          "GRWTSK.Analysis.InnerProductSpace.NonzeroVectorRealization",
+          "GRWTSK.Analysis.IntegralTransforms.CompactProfileLogarithmicMoment",
+          "GRWTSK.Analysis.IntegralTransforms.CompactProfileLogarithmicRegularity",
+          "GRWTSK.Analysis.IntegralTransforms.LogarithmicMomentSubstitution",
+          "GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileCutoff",
+          "GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileDerivative",
+          "GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileRegularity",
+          "GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileWeights",
+          "GRWTSK.Analysis.Integration.CompactWeightedDerivativeMoments",
+          "GRWTSK.Analysis.Integration.FiniteUnitSumVariation",
+          "GRWTSK.Analysis.Integration.PositiveHalfLineCutoffBalance",
+          "GRWTSK.Analysis.SpecialFunctions.ExponentialFloorGap",
+          "GRWTSK.Analysis.SpecialFunctions.ExponentialPolynomialDomination",
+          "GRWTSK.LinearAlgebra.BilinearForm.ZeroCoordinateObstruction",
+          "GRWTSK.LinearAlgebra.LinearMap.FiniteMixingObstruction",
+          "GRWTSK.LinearAlgebra.Matrix.SingularCongruenceObstruction",
+          "GRWTSK.Analysis.Inequalities.LogarithmicShiftKernelBounds",
+          "GRWTSK.Analysis.Calculus.EvenLinearDefect",
+          "GRWTSK.Analysis.Calculus.SupportEdgeDifferentiability",
+          "GRWTSK.Analysis.Convolution.AutocorrelationTranslationEnergy",
+          "GRWTSK.Analysis.Convolution.CompactProfileFifthDerivativeObstruction",
+          "GRWTSK.Analysis.Convolution.CompactProfileSupportEdge",
+          "GRWTSK.Analysis.Convolution.CompactSupportContact",
+          "GRWTSK.Analysis.IntegralTransforms.CompactProfileLogarithmicDerivative",
+          "GRWTSK.Analysis.Integration.TranslationSeamLowerBound",
+          "GRWTSK.Analysis.Calculus.LogarithmicShiftKernelRegularity",
+          "GRWTSK.Analysis.Convolution.CompactProfileTailSigns",
+          "GRWTSK.Analysis.TestFunctions.PowerFourResidualSigns",
+          "GRWTSK.Analysis.Inequalities.LogarithmicShiftKernelPositiveSector",
+          "GRWTSK.Algebra.Polynomial.ConjugateQuartic",
+          "GRWTSK.NumberTheory.Zeta.Riemann.BoundedHeightCriterion",
+          "GRWTSK.NumberTheory.Zeta.Riemann.QuadraticTraceCriterion",
+          "GRWTSK.NumberTheory.Zeta.Riemann.ZeroOrbitQuartic",
+          "GRWTSK.Analysis.Inequalities.FiniteSquareSum",
+          "GRWTSK.LinearAlgebra.Matrix.TraceRank",
+          "GRWTSK.Logic.FiniteSequences.IndexedDictionary",
+          "GRWTSK.Logic.FiniteSequences.DictionaryRevision",
+          "GRWTSK.Logic.FiniteSequences.DecisionCertificate",
+          "GRWTSK.Logic.FiniteSequences.AppendOnlyHistory",
+          "GRWTSK.Logic.FiniteSequences.IncrementalDictionary",
+          "GRWTSK.Analysis.InnerProductSpace.ClosedOperatorSolvability",
+          "GRWTSK.Logic.FiniteSequences.IncrementalComposition",
+          "GRWTSK.Analysis.InnerProductSpace.ClosedComplexSolvability",
+          "GRWTSK.Logic.FiniteSequences.BatchCertificate",
+          "GRWTSK.Analysis.InnerProductSpace.JointGraphSolvability",
+          "GRWTSK.Order.Embeddings.PrefixObstruction",
+          "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences",
+          "GRWTSK.Analysis.MellinTransform.ReverseInversion",
+          "GRWTSK.Combinatorics.DirectedGraph.EdgeTrace",
+          "GRWTSK.Analysis.MellinTransform.LogarithmicGaussian",
+          "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding",
+          "GRWTSK.Analysis.MellinTransform.NormalizedGaussian",
+          "GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix",
+          "GRWTSK.NumberTheory.LSeries.GaussianContour",
+          "GRWTSK.Combinatorics.DirectedGraph.EndpointSection",
+          "GRWTSK.Analysis.PartitionOfUnity.DyadicAnnulus",
+          "GRWTSK.NumberTheory.LSeries.GaussianDyadic",
+          "GRWTSK.Combinatorics.DirectedGraph.PrefixInventory",
+          "GRWTSK.Analysis.MellinTransform.CompactGaussianWindow",
+          "GRWTSK.Combinatorics.DirectedGraph.ParentTraceDictionary",
+          "GRWTSK.Analysis.MellinTransform.ScaledGaussianDerivatives",
+          "GRWTSK.Combinatorics.DirectedGraph.RootedTraceRevision",
+          "GRWTSK.Analysis.MellinTransform.GaussianWindowSeminorms",
+          "GRWTSK.Combinatorics.DirectedGraph.IncrementalPrefixTable",
+          "GRWTSK.Analysis.Series.DyadicKernel",
+          "GRWTSK.Analysis.MellinTransform.GaussianDyadicSummation",
+          "GRWTSK.Combinatorics.DirectedGraph.PrefixTableState",
+          "GRWTSK.Analysis.MellinTransform.GaussianRemoteSeminorms",
+          "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCompaction",
+          "GRWTSK.Analysis.Fourier.SchwartzMoments",
+          "GRWTSK.Analysis.MellinTransform.GaussianFourierMoments",
+          "GRWTSK.Combinatorics.DirectedGraph.RoleRelationTable",
+          "GRWTSK.Analysis.MellinTransform.GaussianLogFlow",
+          "GRWTSK.Analysis.MellinTransform.GaussianLogWindow",
+          "GRWTSK.Combinatorics.DirectedGraph.RoleRelationReindex",
+          "GRWTSK.Analysis.MellinTransform.GaussianDensityMoments",
+          "GRWTSK.Combinatorics.DirectedGraph.PrefixTableReindex",
+          "GRWTSK.Analysis.Calculus.CompactCutoff",
+          "GRWTSK.Analysis.MellinTransform.GaussianCoupledSeparation",
+          "GRWTSK.Combinatorics.DirectedGraph.PrefixTableUpdateReindex",
+          "GRWTSK.Analysis.MellinTransform.GaussianAnnularSeparation",
+          "GRWTSK.Combinatorics.DirectedGraph.PrefixTableBatch",
+          "GRWTSK.NumberTheory.Ideal.CompactNormSupport",
+          "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCheckpoint",
+          "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicIdeals",
+          "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Definitions",
+          "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Radical",
+          "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ABCStatement",
+          "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.EquivalentForms",
+          "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExceptionalSet",
+          "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Signed",
+          "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.PartialBounds",
+          "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.NonprimitiveObstruction",
+          "GRWTSK.LinearAlgebra.OrientedRealLine.PositiveScale",
+          "GRWTSK.LinearAlgebra.OrientedRealLine.Coherence",
+          "GRWTSK.LinearAlgebra.OrientedRealLine.FiniteComparison",
+          "GRWTSK.NumberTheory.ArithmeticGeometry.LogThetaComparison",
+          "GRWTSK.Analysis.FiniteSums.WeightedDegreeComparison",
+          "GRWTSK.NumberTheory.Polynomial.DerivativeRadicalBound",
+          "GRWTSK.Combinatorics.Sequences.PartialSumOrdering",
+          "GRWTSK.Combinatorics.Sequences.DisjointTranspositions",
+          "GRWTSK.Combinatorics.Sequences.ZeroSumIntervalRepair",
+          "GRWTSK.Combinatorics.Sequences.PartialSumCertificate",
+          "GRWTSK.DynamicalSystems.TransitionSystems.ModularCheckpoint",
+          "GRWTSK.Analysis.Fourier.ZModSubsetSum",
+          "GRWTSK.Analysis.Fourier.ZModSubsetSumCompletion",
+          "GRWTSK.Combinatorics.Sequences.PrimeCyclicRearrangement",
+          "GRWTSK.NumberTheory.ArithmeticFunctions.CoprimeDivisorFilter",
+          "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Moments",
+          "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.MomentReindexing",
+          "GRWTSK.Combinatorics.Sequences.BalancedPartitionSampling",
+          "GRWTSK.Combinatorics.Sequences.CyclicSumsetGrowth",
+          "GRWTSK.Analysis.Fourier.ZModCharacterEnergy",
+          "GRWTSK.Analysis.Fourier.ZModIndependentSelection",
+          "GRWTSK.Analysis.Fourier.FiniteExponentialLayers",
+          "GRWTSK.Analysis.Fourier.ZModPartitionEnergy",
+          "GRWTSK.Analysis.Fourier.ZModBalancedPartition",
+          "GRWTSK.Analysis.Fourier.ZModSmallEnergySets",
+          "GRWTSK.Analysis.Fourier.ZModSmallEnergySpectrum",
+          "GRWTSK.Analysis.Fourier.ZModConcentratedFrequencies",
+          "GRWTSK.Combinatorics.DirectedGraph.PrefixTableSchedule",
+          "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicReduction",
+          "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.DivisorSectorReindexing",
+          "GRWTSK.Analysis.Fourier.ZModBalancedExpectedLayers",
+          "GRWTSK.Combinatorics.Sequences.PartitionExposureChecks",
+          "GRWTSK.Analysis.Fourier.FiniteAdditiveProjector",
+          "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.AdditiveCharacterMoments"
+        ],
+        "reverse_consumers": [
+          "GRWTSK/Combinatorics/GraphTheory/UnitDistanceGraph/Moser/Checks/DeclarationAudit.lean",
+          "GRWTSK/Logic/ProofChecking/Checks/FullAnalyticArithmeticKernel.lean",
+          "GRWTSK/Logic/ProofChecking/Checks/OwnedDeclarationAudit.lean"
+        ],
+        "subject": "Library",
+        "object": "EntryPoint",
+        "source_role": "library",
+        "target_path": "GRWTSK.lean",
+        "placement_rationale": "Conventional public entry point.",
+        "operation": "keep",
+        "logical_status": "statements and proof bodies preserved; relocation makes no new acceptance claim",
+        "open_premises": [],
+        "verification": {
+          "inventory": "observed-current-bytes",
+          "source_sha256": "781a2e57e7856dcad358955086c1acfdaefa865835f3f1c364ac4ce49ca6ff33",
+          "lean": "public root not replayed; selected 9-module closure replayed separately",
+          "selected_new_module_receipt": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json",
+          "owned_declaration_audit": "selected closure only; no whole-entrypoint admission"
+        },
+        "runner": "python3 -B scripts/check_ccc_energy.py",
+        "other_consumers": [
+          "README.md",
+          "docs/how-to/verify.md",
+          "docs/mathematics/Algebra/OrderedProduct/gauge.md",
+          "docs/mathematics/Algebra/OrderedProduct/intervals.md",
+          "docs/mathematics/Algebra/index.md",
+          "docs/mathematics/Analysis/Asymptotics/polynomial-error.md",
+          "docs/mathematics/Analysis/Convolution/compact-correlation.md",
+          "docs/mathematics/Analysis/Convolution/derivative-energy.md",
+          "docs/mathematics/Analysis/Fourier/IntegerSeries/encoding.md",
+          "docs/mathematics/Analysis/Fourier/WindowCertificates/angular.md",
+          "docs/mathematics/Analysis/InnerProductSpace/causal-response-gram.md",
+          "docs/mathematics/Analysis/InnerProductSpace/polarization.md",
+          "docs/mathematics/Analysis/Integration/exponential-volterra-l2.md",
+          "docs/mathematics/Analysis/Integration/interval-reflection.md",
+          "docs/mathematics/Analysis/NormedSpace/reconstruction.md",
+          "docs/mathematics/Analysis/TestFunctions/exponential-moments.md",
+          "docs/mathematics/Analysis/TestFunctions/polynomial-profile.md",
+          "docs/mathematics/Analysis/TestFunctions/separation.md",
+          "docs/mathematics/Analysis/index.md",
+          "docs/mathematics/Combinatorics/Sequences/coverage-and-quotas.md",
+          "docs/mathematics/Combinatorics/Sequences/quotas.md",
+          "docs/mathematics/Combinatorics/index.md",
+          "docs/mathematics/Data/index.md",
+          "docs/mathematics/DynamicalSystems/Sequences/approximation-return.md",
+          "docs/mathematics/DynamicalSystems/TransitionSystems/guarded-reachability.md",
+          "docs/mathematics/DynamicalSystems/index.md",
+          "docs/mathematics/GroupTheory/index.md",
+          "docs/mathematics/LinearAlgebra/Cocycle/product.md",
+          "docs/mathematics/LinearAlgebra/CommonGenerator/counterexamples.md",
+          "docs/mathematics/LinearAlgebra/CommonGenerator/rotations.md",
+          "docs/mathematics/LinearAlgebra/Gauge/state.md",
+          "docs/mathematics/LinearAlgebra/Jacobi/transfer.md",
+          "docs/mathematics/LinearAlgebra/OrderedProduct/determinant.md",
+          "docs/mathematics/LinearAlgebra/Schrodinger/almost-mathieu.md",
+          "docs/mathematics/LinearAlgebra/Schrodinger/sampled-potential.md",
+          "docs/mathematics/LinearAlgebra/Schrodinger/sturmian.md",
+          "docs/mathematics/LinearAlgebra/Schrodinger/transfer.md",
+          "docs/mathematics/LinearAlgebra/Transfer/ordered.md",
+          "docs/mathematics/LinearAlgebra/index.md",
+          "docs/mathematics/Logic/FiniteCoverage/scope.md",
+          "docs/mathematics/Logic/FiniteSequences/prefix-coverage.md",
+          "docs/mathematics/Logic/ProofChecking/source-roles.md",
+          "docs/mathematics/Logic/index.md",
+          "docs/mathematics/MeasureTheory/index.md",
+          "docs/mathematics/NumberTheory/ArithmeticFunctions/density-correction.md",
+          "docs/mathematics/NumberTheory/ArithmeticFunctions/signed-cutoffs.md",
+          "docs/mathematics/NumberTheory/ContinuedFractions/frequency-realization.md",
+          "docs/mathematics/NumberTheory/ContinuedFractions/scheduled-denominators.md",
+          "docs/mathematics/NumberTheory/LSeries/closed-moebius.md",
+          "docs/mathematics/NumberTheory/Moebius/Energy/damped-tails.md",
+          "docs/mathematics/NumberTheory/Moebius/Energy/determinant.md",
+          "docs/mathematics/NumberTheory/Moebius/Energy/gram.md",
+          "docs/mathematics/NumberTheory/Moebius/Energy/growth.md",
+          "docs/mathematics/NumberTheory/Moebius/Energy/recording-blocks.md",
+          "docs/mathematics/NumberTheory/Moebius/Laplace/cutoff.md",
+          "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md",
+          "docs/mathematics/NumberTheory/Moebius/Laplace/finite-window.md",
+          "docs/mathematics/NumberTheory/Moebius/LocalCancellation/common-reading.md",
+          "docs/mathematics/NumberTheory/Moebius/Pickup/identification.md",
+          "docs/mathematics/NumberTheory/Moebius/PrimeFilters/cascade.md",
+          "docs/mathematics/NumberTheory/Moebius/PrimeFilters/conditional-growth.md",
+          "docs/mathematics/NumberTheory/Moebius/PrimeFilters/negative-correlation.md",
+          "docs/mathematics/NumberTheory/Moebius/PrimeFilters/uniform-supplier-obstruction.md",
+          "docs/mathematics/NumberTheory/Moebius/finite-euler-product.md",
+          "docs/mathematics/NumberTheory/Moebius/logarithmic-mertens-boundary.md",
+          "docs/mathematics/NumberTheory/Moebius/matched-pickup.md",
+          "docs/mathematics/NumberTheory/Moebius/pickup-problem-registry.json",
+          "docs/mathematics/NumberTheory/Prime/least-prime.md",
+          "docs/mathematics/NumberTheory/Zeta/Riemann/criteria.md",
+          "docs/mathematics/NumberTheory/Zeta/Riemann/inference-guards.md",
+          "docs/mathematics/NumberTheory/Zeta/riemann-hypothesis-criteria.md",
+          "docs/mathematics/NumberTheory/index.md",
+          "docs/mathematics/Order/index.md",
+          "docs/mathematics/Spectral/FiniteVolume/count-comparison.md",
+          "docs/mathematics/Spectral/FiniteVolume/dirichlet-cut.md",
+          "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md",
+          "docs/mathematics/Spectral/FiniteVolume/repeated-blocks.md",
+          "docs/mathematics/Spectral/FreeDirichletSpectrum/eigenvalues.md",
+          "docs/mathematics/Spectral/GapTransport/labels-and-coding.md",
+          "docs/mathematics/Spectral/IntegratedDensityOfStates/free.md",
+          "docs/mathematics/Spectral/index.md",
+          "docs/reference/documentation-layout.json",
+          "docs/reference/lean-consolidation-report.md",
+          "docs/reference/library-pages.md",
+          "docs/reference/library-summary.json",
+          "docs/reference/object-source-bindings.json",
+          "docs/reference/reconstruction-recipes.json",
+          "docs/reference/results.json",
+          "docs/reference/rigor-and-reconstruction-report.md",
+          "docs/reference/rules/registry.json",
+          "docs/reference/rules/rule-soundness.md",
+          "docs/reference/source-intake.md",
+          "docs/reference/source-layout.md",
+          "docs/reference/source-verification.md",
+          "docs/reference/trust-boundary.md",
+          "docs/reference/verification-interfaces.md",
+          "docs/start/least-prime.md",
+          "evidence/Analysis/InnerProductSpace/CausalRealization/formalization-admission.json",
+          "evidence/ccc-control-soundness-source-manifest.json",
+          "evidence/moebius-response-sources.json",
+          "evidence/source-manifest.json",
+          "lakefile.toml",
+          "scripts/check.py",
+          "scripts/check_ccc_energy.py",
+          "scripts/check_cocycle_product.py",
+          "scripts/check_common_j.py",
+          "scripts/check_common_j_counterexamples.py",
+          "scripts/check_common_j_signs.py",
+          "scripts/check_density_arithmetic.py",
+          "scripts/check_documentation_layout.py",
+          "scripts/check_finite_coverage.py",
+          "scripts/check_finite_euler_product.py",
+          "scripts/check_fourier_controls.py",
+          "scripts/check_gauge_state.py",
+          "scripts/check_interval_reflection.py",
+          "scripts/check_jacobi_transfer.py",
+          "scripts/check_math_layout.py",
+          "scripts/check_math_trust.py",
+          "scripts/check_moebius_response.py",
+          "scripts/check_moser.py",
+          "scripts/check_ordered_product.py",
+          "scripts/check_ordered_product_determinant.py",
+          "scripts/check_ordered_product_gauge.py",
+          "scripts/check_ordered_transfer.py",
+          "scripts/check_original_pickup.py",
+          "scripts/check_pickup_cutoff_laplace.py",
+          "scripts/check_polarization.py",
+          "scripts/check_prime_cascade.py",
+          "scripts/check_prime_window_laplace.py",
+          "scripts/check_recording_scale.py",
+          "scripts/check_repository_conformance.py",
+          "scripts/check_rh_inference_guards.py",
+          "scripts/check_rh_target.py",
+          "scripts/check_schrodinger_transfer.py",
+          "scripts/check_sequence_realization.py",
+          "scripts/check_smooth_test_separation.py",
+          "scripts/check_ten_martini.py",
+          "scripts/documentation_indexes.py",
+          "scripts/export_math_bundle.py",
+          "scripts/generate_moebius_response_manifest.py",
+          "scripts/math_bundle_subjects.json",
+          "scripts/math_bundle_subjects_interim.json",
+          "scripts/moebius_owner_census.py",
+          "scripts/monitor_math.py",
+          "scripts/project_replay.py",
+          "scripts/replay_causal_realization.py",
+          "scripts/test_documentation_layout.py",
+          "scripts/test_generate_moebius_response_manifest.py",
+          "scripts/test_moebius_owner_census.py",
+          "scripts/test_moebius_response_checker.py",
+          "scripts/update_math_source_inventory.py",
+          "scripts/verify_ccc_control_soundness.py"
+        ],
+        "historical_verification_before_additive_triple_imports": {
+          "inventory": "observed-current-bytes",
+          "layout": "repository baseline remains failed",
+          "lean": "umbrella not replayed after selected import additions",
+          "source_sha256": "47e1e96b4572ddd92ceff25d16c3a68045557ccf0dae90215ed32e0f54e46d61"
+        },
+        "historical_git_blob_before_additive_triple_imports": "27e45b3448f78dc6499f2fb0698eb51cac5d1904",
+        "historical_verification_before_finite_moments": {
+          "inventory": "observed-current-bytes",
+          "source_sha256": "8a211d7d749eefa07bf55ccc2170311acd380c8635bc761becdc2f11930fe303",
+          "lean": "public root not replayed in this selected check",
+          "owned_declaration_audit": "complete public root not audited; selected new modules audited separately",
+          "selected_new_module_receipt": "evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/checked-prerequisites-2026-10-15.json"
+        },
+        "historical_verification_before_schedule_reduction": {
+          "inventory": "observed-current-bytes",
+          "source_sha256": "26791e87fd5594d5e99db5f95837536160c257d75cde7f1cd7d0ddc779d9a008",
+          "lean": "public root not replayed; new module closure replayed separately",
+          "selected_new_module_receipt": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/finite-moments-checks-2026-10-15-replay-2.json",
+          "owned_declaration_audit": "passed only for selected six-module scope; no public-root admission"
+        },
+        "historical_sha256_before_schedule_reduction": "26791e87fd5594d5e99db5f95837536160c257d75cde7f1cd7d0ddc779d9a008",
+        "historical_git_blob_before_schedule_reduction": "918df9bd7d5dec1c2eb0f4d263a53f487507c84d",
+        "historical_verification_before_divisor_sectors": {
+          "inventory": "observed-current-bytes; public import inventory only",
+          "source_sha256": "e93288cf55c77a5a76b88f57a78dc58ad9514c7ee9473ead994326d73cda6bc5",
+          "lean": "public umbrella NOT_REPLAYED after these imports; selected library closures have separate immutable receipts",
+          "owned_declaration_audit": "public umbrella NOT_RUN; no full-library admission"
+        },
+        "historical_verification_before_additive_character_integration": {
+          "inventory": "observed-current-bytes",
+          "source_sha256": "d8bda509bc6f84a130b4747760134d1eabf3a565f3cbd3ac4c46ce16da35597e",
+          "lean": "public root not replayed; selected seven-module closure replayed separately",
+          "selected_new_module_receipt": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/divisor-sectors-checks-2026-10-15.json",
+          "owned_declaration_audit": "selected closure only; no whole-entrypoint admission"
+        }
       }
     },
     {
@@ -8945,9 +9632,9 @@
       "other_consumers": [],
       "explicit_premises": [
         "compactCutoff T s = complex-coerced smoothTransition(T+1-s)*smoothTransition(T+1+s).",
-        "For every realT: ContDiff \u211d \u221e, HasCompactSupport and tsupport contained in [-(T+1),T+1].",
-        "For T\u22650 and |s|\u2264T: value1. The actual function is packaged as schwartzCutoff T.",
-        "For any finite index type, arbitrary complex-valued W, real weights a and evaluation y, support bounds W_j(z)\u22600\u2192|z|\u2264M_j and cutoff one on |s|\u2264sum_j|a_j|M_j activate V at sum_j a_jy_j whenever the W product is nonzero."
+        "For every realT: ContDiff ℝ ∞, HasCompactSupport and tsupport contained in [-(T+1),T+1].",
+        "For T≥0 and |s|≤T: value1. The actual function is packaged as schwartzCutoff T.",
+        "For any finite index type, arbitrary complex-valued W, real weights a and evaluation y, support bounds W_j(z)≠0→|z|≤M_j and cutoff one on |s|≤sum_j|a_j|M_j activate V at sum_j a_jy_j whenever the W product is nonzero."
       ],
       "contribution_roles": [
         "R.A. Jacob Martone: human direction",
@@ -13961,6 +14648,92 @@
         "evidence/moebius-response-sources.json",
         "evidence/source-manifest.json"
       ]
+    },
+    {
+      "path": "GRWTSK/Analysis/Fourier/FiniteAdditiveProjector.lean",
+      "original_path": "GRWTSK/Analysis/Fourier/FiniteAdditiveProjector.lean",
+      "sha256": "24a8c41508bdf2a7558d20b19434362e2656ac45b4141e01604c0ec16ddd413f",
+      "git_blob": "1240c817d6340d73cd292de809d923eafbfd2520",
+      "working_tree_state": "tracked-current",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Analysis.Fourier.FiniteAdditiveProjector",
+      "namespaces": [
+        "GRWTSK.Analysis.Fourier.FiniteAdditiveProjector"
+      ],
+      "public_declarations": [
+        {
+          "kind": "def",
+          "name": "characterAverage",
+          "line": 15
+        },
+        {
+          "kind": "theorem",
+          "name": "characterAverage_eq_indicator",
+          "line": 20
+        },
+        {
+          "kind": "def",
+          "name": "characterProjector",
+          "line": 33
+        },
+        {
+          "kind": "theorem",
+          "name": "characterProjector_eq_average",
+          "line": 37
+        },
+        {
+          "kind": "theorem",
+          "name": "characterProjector_eq_modular_indicator",
+          "line": 45
+        },
+        {
+          "kind": "theorem",
+          "name": "nat_add_sub_eq_zero_iff_of_lt",
+          "line": 53
+        },
+        {
+          "kind": "theorem",
+          "name": "nat_add_sub_eq_zero_iff_of_noWrap",
+          "line": 61
+        },
+        {
+          "kind": "theorem",
+          "name": "characterProjector_eq_indicator_of_noWrap",
+          "line": 72
+        }
+      ],
+      "declaration_inventory_method": "source syntax declaration commands, excluding anonymous examples and generated declarations; not a theorem total or native census; exact owned-declaration native census is authoritative",
+      "imports": [
+        "Mathlib.Analysis.SpecialFunctions.Complex.CircleAddChar"
+      ],
+      "reverse_consumers": [
+        "GRWTSK.lean",
+        "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/AdditiveCharacterMoments.lean"
+      ],
+      "subject": "Analysis",
+      "object": "Fourier/FiniteAdditiveProjector",
+      "source_role": "library",
+      "target_path": "GRWTSK/Analysis/Fourier/FiniteAdditiveProjector.lean",
+      "placement_rationale": "Finite additive-character projection belongs to Fourier analysis.",
+      "operation": "add",
+      "logical_status": "Exact finite Complex-valued character identities or their positive consumer; modulus, normalization, no-wrap bounds and joint scaled weight explicit. No coefficient transfer, arithmetic estimate or abc implication.",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "source_sha256": "24a8c41508bdf2a7558d20b19434362e2656ac45b4141e01604c0ec16ddd413f",
+        "lean": "fresh selected library elaboration at trust zero with fatal warnings",
+        "owned_declaration_audit": "complete selected local library closure; standard3 only; controls checked separately",
+        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json",
+        "replay_binding_schema": "additive-character-moments-selected-replay-v1",
+        "replay_binding_sha256": "4ac00cdc45b0fcf7bff4c8650bad3b5ae05f1cc4ed015accefdd96b0863b4a00"
+      },
+      "runner": "python3 -B .noeaaeue/scripts/check_additive_character_moments.py",
+      "other_consumers": [
+        "docs/mathematics/Analysis/Fourier/FiniteAdditiveProjector/projector.md",
+        "docs/reference/math-source-catalog.json"
+      ],
+      "attribution": "Direction R.A. Jacob Martone; formalization assistance OpenAI Codex; Mathlib authors retained.",
+      "license": "Original additions MIT; imported Mathlib Apache-2.0"
     },
     {
       "path": "GRWTSK/Analysis/Fourier/FiniteExponentialLayers.lean",
@@ -23374,13 +24147,13 @@
       "runner": "python3 -B scripts/check_gaussian_annular_separation.py",
       "other_consumers": [],
       "explicit_premises": [
-        "Actual Option\u03b9 family: none is dyadicAnnulus(exp y), slope+1, pointlogx; somei is W_i(exp y), slope-1, pointlogq_i. No smoothness or integrability premise on individualW_i.",
-        "For finite\u03b9,x>0 and everyq_i>0: exp(sum_o slope_o*point_o)=x/product_iq_i. Exact phase(t,-y)=phase(-t,y) and Option finite product normalization retain positive2pi inverse normalization and negativeq phases.",
+        "Actual Optionι family: none is dyadicAnnulus(exp y), slope+1, pointlogx; somei is W_i(exp y), slope-1, pointlogq_i. No smoothness or integrability premise on individualW_i.",
+        "For finiteι,x>0 and everyq_i>0: exp(sum_o slope_o*point_o)=x/product_iq_i. Exact phase(t,-y)=phase(-t,y) and Option finite product normalization retain positive2pi inverse normalization and negativeq phases.",
         "logPhaseTwist(W,t,x)=W(x)*logPhase(t,logx), a total real-line function. Any compactW remains compact after twisting for every realt. The actual admitted gaussianFixedWindow=A/sqrt has compact twist; forx>0 actual rootWeight=sqrt*window cancels to A(x)*logPhase(t,logx). No Schwartz/smoothness assertion for twistedW is made here.",
-        "The additional annulus log support is proved from actual A small/large and monotone log/exp: A(exp y)\u22600 implies |y|\u2264|log(1/2)|+|log2|+1.",
+        "The additional annulus log support is proved from actual A small/large and monotone log/exp: A(exp y)≠0 implies |y|≤|log(1/2)|+|log2|+1.",
         "For every actual compact SchwartzV, every realR, positive x and everypositiveq_i, the actual annular frequency integrand rootWeight(logPhaseTwist(fixedWindow,t),x)*product_i[W_i(q_i)*logPhase(-t,logq_i)]*actualdensity(V,R,t) is Integrable. This consumes actual coupled integrability and proved product/root identities.",
-        "Given finite\u03b9, W_i:real\u2192complex, nonnegativeM_i and W_i(exp y)\u22600\u2192|y|\u2264M_i: produce an actual compact SchwartzV before all R>0,x>0,positiveq. For this sameV prove actual Integrable and A(x)*product_iW_i(q_i)*P(R*x/product_iq_i)=integral_t actual annular frequency integrand. No desired hsep, Fourier evaluation or arithmetic completed-sum formula is assumed.",
-        "For the same producedV, every realA and naturalJ admitC>0 chosen beforeeveryR>0 with actual weighted densitynorm Integrable and integral\u2264C*R^(-A). V depends on W,M; C may depend on V,A,J and not R,x,q."
+        "Given finiteι, W_i:real→complex, nonnegativeM_i and W_i(exp y)≠0→|y|≤M_i: produce an actual compact SchwartzV before all R>0,x>0,positiveq. For this sameV prove actual Integrable and A(x)*product_iW_i(q_i)*P(R*x/product_iq_i)=integral_t actual annular frequency integrand. No desired hsep, Fourier evaluation or arithmetic completed-sum formula is assumed.",
+        "For the same producedV, every realA and naturalJ admitC>0 chosen beforeeveryR>0 with actual weighted densitynorm Integrable and integral≤C*R^(-A). V depends on W,M; C may depend on V,A,J and not R,x,q."
       ],
       "contribution_roles": [
         "R.A. Jacob Martone: human direction",
@@ -23428,10 +24201,10 @@
       "explicit_premises": [
         "logPhase(t,y)=exp(2*pi*i*t*y), the exact positive inverse-Fourier convention. Actual phase sum/product identity, including the empty index type.",
         "For every realR, every actual compact Schwartz V, finite arbitrary W and real a,y: the exact separation frequency integrand is Integrable.",
-        "For R>0 and active premise (product_i W_i(y_i)\u22600\u2192V(sum_i a_i*y_i)=1): product_i W_i(y_i)*P(R*exp(sum_i a_i*y_i)) equals integral_t product_i[W_i(y_i)*logPhase(t,a_i*y_i)]*actual gaussianJointDensity(V,R,t).",
+        "For R>0 and active premise (product_i W_i(y_i)≠0→V(sum_i a_i*y_i)=1): product_i W_i(y_i)*P(R*exp(sum_i a_i*y_i)) equals integral_t product_i[W_i(y_i)*logPhase(t,a_i*y_i)]*actual gaussianJointDensity(V,R,t).",
         "The inverse evaluation is proved using the actual Schwartz Fourier inverse and the existing positive-profile equality; the nonzero and zero-product cases are proved separately.",
-        "If each M_i\u22650 and W_i(z)\u22600\u2192|z|\u2264M_i, choose the actual common Schwartz cutoff V=schwartzCutoff(sum_i|a_i|M_i) before everyR and every evaluation tupley. This V supplies separation plus actual integrand Integrable for allR>0. No smoothness ofW is assumed.",
-        "For the same V: for every realA and naturalJ there exists C>0, chosen before R>0, such that the actual density norm weighted by (1+normt)^J is Integrable and its integral\u2264C*R^(-A). This calls the admitted GaussianLogWindow moment theorem with its actual suppliers."
+        "If each M_i≥0 and W_i(z)≠0→|z|≤M_i, choose the actual common Schwartz cutoff V=schwartzCutoff(sum_i|a_i|M_i) before everyR and every evaluation tupley. This V supplies separation plus actual integrand Integrable for allR>0. No smoothness ofW is assumed.",
+        "For the same V: for every realA and naturalJ there exists C>0, chosen before R>0, such that the actual density norm weighted by (1+normt)^J is Integrable and its integral≤C*R^(-A). This calls the admitted GaussianLogWindow moment theorem with its actual suppliers."
       ],
       "contribution_roles": [
         "R.A. Jacob Martone: human direction",
@@ -24232,13 +25005,13 @@
       "runner": "python3 -B scripts/check_gaussian_annular_separation.py",
       "other_consumers": [],
       "explicit_premises": [
-        "Actual Option\u03b9 family: none is dyadicAnnulus(exp y), slope+1, pointlogx; somei is W_i(exp y), slope-1, pointlogq_i. No smoothness or integrability premise on individualW_i.",
-        "For finite\u03b9,x>0 and everyq_i>0: exp(sum_o slope_o*point_o)=x/product_iq_i. Exact phase(t,-y)=phase(-t,y) and Option finite product normalization retain positive2pi inverse normalization and negativeq phases.",
+        "Actual Optionι family: none is dyadicAnnulus(exp y), slope+1, pointlogx; somei is W_i(exp y), slope-1, pointlogq_i. No smoothness or integrability premise on individualW_i.",
+        "For finiteι,x>0 and everyq_i>0: exp(sum_o slope_o*point_o)=x/product_iq_i. Exact phase(t,-y)=phase(-t,y) and Option finite product normalization retain positive2pi inverse normalization and negativeq phases.",
         "logPhaseTwist(W,t,x)=W(x)*logPhase(t,logx), a total real-line function. Any compactW remains compact after twisting for every realt. The actual admitted gaussianFixedWindow=A/sqrt has compact twist; forx>0 actual rootWeight=sqrt*window cancels to A(x)*logPhase(t,logx). No Schwartz/smoothness assertion for twistedW is made here.",
-        "The additional annulus log support is proved from actual A small/large and monotone log/exp: A(exp y)\u22600 implies |y|\u2264|log(1/2)|+|log2|+1.",
+        "The additional annulus log support is proved from actual A small/large and monotone log/exp: A(exp y)≠0 implies |y|≤|log(1/2)|+|log2|+1.",
         "For every actual compact SchwartzV, every realR, positive x and everypositiveq_i, the actual annular frequency integrand rootWeight(logPhaseTwist(fixedWindow,t),x)*product_i[W_i(q_i)*logPhase(-t,logq_i)]*actualdensity(V,R,t) is Integrable. This consumes actual coupled integrability and proved product/root identities.",
-        "Given finite\u03b9, W_i:real\u2192complex, nonnegativeM_i and W_i(exp y)\u22600\u2192|y|\u2264M_i: produce an actual compact SchwartzV before all R>0,x>0,positiveq. For this sameV prove actual Integrable and A(x)*product_iW_i(q_i)*P(R*x/product_iq_i)=integral_t actual annular frequency integrand. No desired hsep, Fourier evaluation or arithmetic completed-sum formula is assumed.",
-        "For the same producedV, every realA and naturalJ admitC>0 chosen beforeeveryR>0 with actual weighted densitynorm Integrable and integral\u2264C*R^(-A). V depends on W,M; C may depend on V,A,J and not R,x,q."
+        "Given finiteι, W_i:real→complex, nonnegativeM_i and W_i(exp y)≠0→|y|≤M_i: produce an actual compact SchwartzV before all R>0,x>0,positiveq. For this sameV prove actual Integrable and A(x)*product_iW_i(q_i)*P(R*x/product_iq_i)=integral_t actual annular frequency integrand. No desired hsep, Fourier evaluation or arithmetic completed-sum formula is assumed.",
+        "For the same producedV, every realA and naturalJ admitC>0 chosen beforeeveryR>0 with actual weighted densitynorm Integrable and integral≤C*R^(-A). V depends on W,M; C may depend on V,A,J and not R,x,q."
       ],
       "contribution_roles": [
         "R.A. Jacob Martone: human direction",
@@ -24374,10 +25147,10 @@
       "explicit_premises": [
         "logPhase(t,y)=exp(2*pi*i*t*y), the exact positive inverse-Fourier convention. Actual phase sum/product identity, including the empty index type.",
         "For every realR, every actual compact Schwartz V, finite arbitrary W and real a,y: the exact separation frequency integrand is Integrable.",
-        "For R>0 and active premise (product_i W_i(y_i)\u22600\u2192V(sum_i a_i*y_i)=1): product_i W_i(y_i)*P(R*exp(sum_i a_i*y_i)) equals integral_t product_i[W_i(y_i)*logPhase(t,a_i*y_i)]*actual gaussianJointDensity(V,R,t).",
+        "For R>0 and active premise (product_i W_i(y_i)≠0→V(sum_i a_i*y_i)=1): product_i W_i(y_i)*P(R*exp(sum_i a_i*y_i)) equals integral_t product_i[W_i(y_i)*logPhase(t,a_i*y_i)]*actual gaussianJointDensity(V,R,t).",
         "The inverse evaluation is proved using the actual Schwartz Fourier inverse and the existing positive-profile equality; the nonzero and zero-product cases are proved separately.",
-        "If each M_i\u22650 and W_i(z)\u22600\u2192|z|\u2264M_i, choose the actual common Schwartz cutoff V=schwartzCutoff(sum_i|a_i|M_i) before everyR and every evaluation tupley. This V supplies separation plus actual integrand Integrable for allR>0. No smoothness ofW is assumed.",
-        "For the same V: for every realA and naturalJ there exists C>0, chosen before R>0, such that the actual density norm weighted by (1+normt)^J is Integrable and its integral\u2264C*R^(-A). This calls the admitted GaussianLogWindow moment theorem with its actual suppliers."
+        "If each M_i≥0 and W_i(z)≠0→|z|≤M_i, choose the actual common Schwartz cutoff V=schwartzCutoff(sum_i|a_i|M_i) before everyR and every evaluation tupley. This V supplies separation plus actual integrand Integrable for allR>0. No smoothness ofW is assumed.",
+        "For the same V: for every realA and naturalJ there exists C>0, chosen before R>0, such that the actual density norm weighted by (1+normt)^J is Integrable and its integral≤C*R^(-A). This calls the admitted GaussianLogWindow moment theorem with its actual suppliers."
       ],
       "contribution_roles": [
         "R.A. Jacob Martone: human direction",
@@ -25525,13 +26298,13 @@
       "runner": "python3 -B scripts/check_gaussian_annular_separation.py",
       "other_consumers": [],
       "explicit_premises": [
-        "Actual Option\u03b9 family: none is dyadicAnnulus(exp y), slope+1, pointlogx; somei is W_i(exp y), slope-1, pointlogq_i. No smoothness or integrability premise on individualW_i.",
-        "For finite\u03b9,x>0 and everyq_i>0: exp(sum_o slope_o*point_o)=x/product_iq_i. Exact phase(t,-y)=phase(-t,y) and Option finite product normalization retain positive2pi inverse normalization and negativeq phases.",
+        "Actual Optionι family: none is dyadicAnnulus(exp y), slope+1, pointlogx; somei is W_i(exp y), slope-1, pointlogq_i. No smoothness or integrability premise on individualW_i.",
+        "For finiteι,x>0 and everyq_i>0: exp(sum_o slope_o*point_o)=x/product_iq_i. Exact phase(t,-y)=phase(-t,y) and Option finite product normalization retain positive2pi inverse normalization and negativeq phases.",
         "logPhaseTwist(W,t,x)=W(x)*logPhase(t,logx), a total real-line function. Any compactW remains compact after twisting for every realt. The actual admitted gaussianFixedWindow=A/sqrt has compact twist; forx>0 actual rootWeight=sqrt*window cancels to A(x)*logPhase(t,logx). No Schwartz/smoothness assertion for twistedW is made here.",
-        "The additional annulus log support is proved from actual A small/large and monotone log/exp: A(exp y)\u22600 implies |y|\u2264|log(1/2)|+|log2|+1.",
+        "The additional annulus log support is proved from actual A small/large and monotone log/exp: A(exp y)≠0 implies |y|≤|log(1/2)|+|log2|+1.",
         "For every actual compact SchwartzV, every realR, positive x and everypositiveq_i, the actual annular frequency integrand rootWeight(logPhaseTwist(fixedWindow,t),x)*product_i[W_i(q_i)*logPhase(-t,logq_i)]*actualdensity(V,R,t) is Integrable. This consumes actual coupled integrability and proved product/root identities.",
-        "Given finite\u03b9, W_i:real\u2192complex, nonnegativeM_i and W_i(exp y)\u22600\u2192|y|\u2264M_i: produce an actual compact SchwartzV before all R>0,x>0,positiveq. For this sameV prove actual Integrable and A(x)*product_iW_i(q_i)*P(R*x/product_iq_i)=integral_t actual annular frequency integrand. No desired hsep, Fourier evaluation or arithmetic completed-sum formula is assumed.",
-        "For the same producedV, every realA and naturalJ admitC>0 chosen beforeeveryR>0 with actual weighted densitynorm Integrable and integral\u2264C*R^(-A). V depends on W,M; C may depend on V,A,J and not R,x,q."
+        "Given finiteι, W_i:real→complex, nonnegativeM_i and W_i(exp y)≠0→|y|≤M_i: produce an actual compact SchwartzV before all R>0,x>0,positiveq. For this sameV prove actual Integrable and A(x)*product_iW_i(q_i)*P(R*x/product_iq_i)=integral_t actual annular frequency integrand. No desired hsep, Fourier evaluation or arithmetic completed-sum formula is assumed.",
+        "For the same producedV, every realA and naturalJ admitC>0 chosen beforeeveryR>0 with actual weighted densitynorm Integrable and integral≤C*R^(-A). V depends on W,M; C may depend on V,A,J and not R,x,q."
       ],
       "contribution_roles": [
         "R.A. Jacob Martone: human direction",
@@ -25625,10 +26398,10 @@
       "explicit_premises": [
         "logPhase(t,y)=exp(2*pi*i*t*y), the exact positive inverse-Fourier convention. Actual phase sum/product identity, including the empty index type.",
         "For every realR, every actual compact Schwartz V, finite arbitrary W and real a,y: the exact separation frequency integrand is Integrable.",
-        "For R>0 and active premise (product_i W_i(y_i)\u22600\u2192V(sum_i a_i*y_i)=1): product_i W_i(y_i)*P(R*exp(sum_i a_i*y_i)) equals integral_t product_i[W_i(y_i)*logPhase(t,a_i*y_i)]*actual gaussianJointDensity(V,R,t).",
+        "For R>0 and active premise (product_i W_i(y_i)≠0→V(sum_i a_i*y_i)=1): product_i W_i(y_i)*P(R*exp(sum_i a_i*y_i)) equals integral_t product_i[W_i(y_i)*logPhase(t,a_i*y_i)]*actual gaussianJointDensity(V,R,t).",
         "The inverse evaluation is proved using the actual Schwartz Fourier inverse and the existing positive-profile equality; the nonzero and zero-product cases are proved separately.",
-        "If each M_i\u22650 and W_i(z)\u22600\u2192|z|\u2264M_i, choose the actual common Schwartz cutoff V=schwartzCutoff(sum_i|a_i|M_i) before everyR and every evaluation tupley. This V supplies separation plus actual integrand Integrable for allR>0. No smoothness ofW is assumed.",
-        "For the same V: for every realA and naturalJ there exists C>0, chosen before R>0, such that the actual density norm weighted by (1+normt)^J is Integrable and its integral\u2264C*R^(-A). This calls the admitted GaussianLogWindow moment theorem with its actual suppliers."
+        "If each M_i≥0 and W_i(z)≠0→|z|≤M_i, choose the actual common Schwartz cutoff V=schwartzCutoff(sum_i|a_i|M_i) before everyR and every evaluation tupley. This V supplies separation plus actual integrand Integrable for allR>0. No smoothness ofW is assumed.",
+        "For the same V: for every realA and naturalJ there exists C>0, chosen before R>0, such that the actual density norm weighted by (1+normt)^J is Integrable and its integral≤C*R^(-A). This calls the admitted GaussianLogWindow moment theorem with its actual suppliers."
       ],
       "contribution_roles": [
         "R.A. Jacob Martone: human direction",
@@ -32340,7 +33113,8 @@
         "GRWTSK.Combinatorics.DirectedGraph.PrefixTableSchedule"
       ],
       "reverse_consumers": [
-        "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.PrefixScheduleRemapComposition"
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.PrefixScheduleRemapComposition",
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableReferenceTransport"
       ],
       "subject": "Combinatorics",
       "object": "DirectedGraph/Checks/Positive",
@@ -35654,7 +36428,8 @@
       ],
       "reverse_consumers": [
         "GRWTSK",
-        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableSchedule"
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableSchedule",
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableReferenceTransport"
       ],
       "subject": "Combinatorics",
       "object": "DirectedGraph",
@@ -51555,7 +52330,7 @@
       "object": "ArithmeticFunctions",
       "source_role": "library",
       "target_path": "GRWTSK/NumberTheory/ArithmeticFunctions/CoprimeDivisorFilter.lean",
-      "placement_rationale": "Generic arithmetic M\u00f6bius filter under ArithmeticFunctions; finite additive moments and typed triple reindexing under the established PrimitiveAdditiveTriples object.",
+      "placement_rationale": "Generic arithmetic Möbius filter under ArithmeticFunctions; finite additive moments and typed triple reindexing under the established PrimitiveAdditiveTriples object.",
       "operation": "add",
       "logical_status": "Exact finite identities or their typed controls; no uniform radical-height estimate or abc implication.",
       "open_premises": [],
@@ -51571,7 +52346,7 @@
         "docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/moments.md",
         "docs/reference/math-source-catalog.json"
       ],
-      "attribution": "Direction R.A. Jacob Martone; formalization assistance OpenAI Codex; canonical M\u00f6bius implementation Mathlib/Aaron Anderson retains upstream attribution.",
+      "attribution": "Direction R.A. Jacob Martone; formalization assistance OpenAI Codex; canonical Möbius implementation Mathlib/Aaron Anderson retains upstream attribution.",
       "license": "MIT; imported Mathlib Apache-2.0"
     },
     {
@@ -54378,11 +55153,11 @@
       "runner": "python3 -B scripts/check_third_cyclotomic_ideals.py",
       "other_consumers": [],
       "explicit_premises": [
-        "Literal aliases K=CyclotomicField 3 \u211a and O=NumberField.RingOfIntegers K, exactly the primary source definitions, under this mathematical namespace. field_identity/ring_identity preserve actual type identity; no arbitrary ring or integer-ideal replacement.",
-        "Actual private IsCyclotomicExtension {3} \u211a K instance from CyclotomicField.isCyclotomicExtension 3 \u211a, matching the original source supplied instance. Actual NumberField K and actual IsDedekindDomain O, Module.Free \u2124 O, Module.Finite \u2124 O and CharZero O are synthesized natively; CommRing O is the actual ring-of-integers structure used throughout.",
-        "Actual Module.finrank \u211a K=2 from the cyclotomic finrank theorem and totient3=2; actual Module.finrank \u2124 O=2 from RingOfIntegers.rank.",
-        "For every natural n (including0), actual Ideal.absNorm(Ideal.span{(n:O)})=n\u00b2. In particular the actual principal ideal generated by2 has absolute norm4.",
-        "For actual O ideals, compact W:\u211d\u2192\u2102, X>0 and F:Ideal O\u00b3\u2192\u2102 with actual zero-ideal and window-vanishing cancellation: Function.support F is finite. The admitted generic norm-support theorem supplies the proof; this concrete ring and all actual required instances now pay the previously open ring specialization."
+        "Literal aliases K=CyclotomicField 3 ℚ and O=NumberField.RingOfIntegers K, exactly the primary source definitions, under this mathematical namespace. field_identity/ring_identity preserve actual type identity; no arbitrary ring or integer-ideal replacement.",
+        "Actual private IsCyclotomicExtension {3} ℚ K instance from CyclotomicField.isCyclotomicExtension 3 ℚ, matching the original source supplied instance. Actual NumberField K and actual IsDedekindDomain O, Module.Free ℤ O, Module.Finite ℤ O and CharZero O are synthesized natively; CommRing O is the actual ring-of-integers structure used throughout.",
+        "Actual Module.finrank ℚ K=2 from the cyclotomic finrank theorem and totient3=2; actual Module.finrank ℤ O=2 from RingOfIntegers.rank.",
+        "For every natural n (including0), actual Ideal.absNorm(Ideal.span{(n:O)})=n². In particular the actual principal ideal generated by2 has absolute norm4.",
+        "For actual O ideals, compact W:ℝ→ℂ, X>0 and F:Ideal O³→ℂ with actual zero-ideal and window-vanishing cancellation: Function.support F is finite. The admitted generic norm-support theorem supplies the proof; this concrete ring and all actual required instances now pay the previously open ring specialization."
       ],
       "contribution_roles": [
         "R.A. Jacob Martone: human direction",
@@ -54419,12 +55194,12 @@
       "logical_status": "intended rejected control; no theorem admission",
       "open_premises": [],
       "explicit_premises": [
-        "Use exact admitted K=CyclotomicField3\u211a and O=NumberField.RingOfIntegers K. Actual omega=(IsCyclotomicExtension.zeta_spec3\u211aK).toInteger and lambda=omega-1; actual omega is primitive order3 and lambda is nonzero.",
-        "Exact good reduction: for every actual ideal P of O with P.IsMaximal and lambda\u2209P, Ideal.Quotient.mk P omega is primitive order3. Actual local quotient field, cube equation and nonidentity are proved; no desired quotient primitive-root supplier is assumed.",
+        "Use exact admitted K=CyclotomicField3ℚ and O=NumberField.RingOfIntegers K. Actual omega=(IsCyclotomicExtension.zeta_spec3ℚK).toInteger and lambda=omega-1; actual omega is primitive order3 and lambda is nonzero.",
+        "Exact good reduction: for every actual ideal P of O with P.IsMaximal and lambda∉P, Ideal.Quotient.mk P omega is primitive order3. Actual local quotient field, cube equation and nonidentity are proved; no desired quotient primitive-root supplier is assumed.",
         "Actual ramifiedIdeal=Ideal.span{lambda}. The actual lambda element is prime; the actual ideal is prime, nonzero, maximal, proper and has actual Ideal.absNorm3, by pinned Mathlib cyclotomic norm/prime suppliers and actual number-ring instances.",
         "lambda belongs to this ideal,3 belongs and2 does not. The actual quotient image of omega is1; it is not primitive3. Thus actual maximality alone cannot replace the good-prime exclusion.",
-        "Actual good maximal nonvacuity: ideal(2) is proper because its admitted norm is4. Choose an actual maximal P containing it. If lambda\u2208P, actual3\u2208span{lambda}\u2286P and actual2\u2208P imply1\u2208P, contradicting properness. Therefore an actual maximal P above(2) with lambda\u2209P is produced.",
-        "Actual primary-normalization obstruction: no p:O satisfies ramifiedIdeal=span{p} AND lambda\u00b2 divides p-1. The proof is local to this actual ideal: p and p-1 would both belong to it, forcing1 in a proper ideal. No general lemma is misplaced under this cyclotomic subject."
+        "Actual good maximal nonvacuity: ideal(2) is proper because its admitted norm is4. Choose an actual maximal P containing it. If lambda∈P, actual3∈span{lambda}⊆P and actual2∈P imply1∈P, contradicting properness. Therefore an actual maximal P above(2) with lambda∉P is produced.",
+        "Actual primary-normalization obstruction: no p:O satisfies ramifiedIdeal=span{p} AND lambda² divides p-1. The proof is local to this actual ideal: p and p-1 would both belong to it, forcing1 in a proper ideal. No general lemma is misplaced under this cyclotomic subject."
       ],
       "verification": {
         "inventory": "observed-current-bytes",
@@ -54556,11 +55331,11 @@
       "runner": "python3 -B scripts/check_third_cyclotomic_ideals.py",
       "other_consumers": [],
       "explicit_premises": [
-        "Literal aliases K=CyclotomicField 3 \u211a and O=NumberField.RingOfIntegers K, exactly the primary source definitions, under this mathematical namespace. field_identity/ring_identity preserve actual type identity; no arbitrary ring or integer-ideal replacement.",
-        "Actual private IsCyclotomicExtension {3} \u211a K instance from CyclotomicField.isCyclotomicExtension 3 \u211a, matching the original source supplied instance. Actual NumberField K and actual IsDedekindDomain O, Module.Free \u2124 O, Module.Finite \u2124 O and CharZero O are synthesized natively; CommRing O is the actual ring-of-integers structure used throughout.",
-        "Actual Module.finrank \u211a K=2 from the cyclotomic finrank theorem and totient3=2; actual Module.finrank \u2124 O=2 from RingOfIntegers.rank.",
-        "For every natural n (including0), actual Ideal.absNorm(Ideal.span{(n:O)})=n\u00b2. In particular the actual principal ideal generated by2 has absolute norm4.",
-        "For actual O ideals, compact W:\u211d\u2192\u2102, X>0 and F:Ideal O\u00b3\u2192\u2102 with actual zero-ideal and window-vanishing cancellation: Function.support F is finite. The admitted generic norm-support theorem supplies the proof; this concrete ring and all actual required instances now pay the previously open ring specialization."
+        "Literal aliases K=CyclotomicField 3 ℚ and O=NumberField.RingOfIntegers K, exactly the primary source definitions, under this mathematical namespace. field_identity/ring_identity preserve actual type identity; no arbitrary ring or integer-ideal replacement.",
+        "Actual private IsCyclotomicExtension {3} ℚ K instance from CyclotomicField.isCyclotomicExtension 3 ℚ, matching the original source supplied instance. Actual NumberField K and actual IsDedekindDomain O, Module.Free ℤ O, Module.Finite ℤ O and CharZero O are synthesized natively; CommRing O is the actual ring-of-integers structure used throughout.",
+        "Actual Module.finrank ℚ K=2 from the cyclotomic finrank theorem and totient3=2; actual Module.finrank ℤ O=2 from RingOfIntegers.rank.",
+        "For every natural n (including0), actual Ideal.absNorm(Ideal.span{(n:O)})=n². In particular the actual principal ideal generated by2 has absolute norm4.",
+        "For actual O ideals, compact W:ℝ→ℂ, X>0 and F:Ideal O³→ℂ with actual zero-ideal and window-vanishing cancellation: Function.support F is finite. The admitted generic norm-support theorem supplies the proof; this concrete ring and all actual required instances now pay the previously open ring specialization."
       ],
       "contribution_roles": [
         "R.A. Jacob Martone: human direction",
@@ -54665,12 +55440,12 @@
       "logical_status": "selected native checked result at exact immutable receipt context; hypotheses retained",
       "open_premises": [],
       "explicit_premises": [
-        "Use exact admitted K=CyclotomicField3\u211a and O=NumberField.RingOfIntegers K. Actual omega=(IsCyclotomicExtension.zeta_spec3\u211aK).toInteger and lambda=omega-1; actual omega is primitive order3 and lambda is nonzero.",
-        "Exact good reduction: for every actual ideal P of O with P.IsMaximal and lambda\u2209P, Ideal.Quotient.mk P omega is primitive order3. Actual local quotient field, cube equation and nonidentity are proved; no desired quotient primitive-root supplier is assumed.",
+        "Use exact admitted K=CyclotomicField3ℚ and O=NumberField.RingOfIntegers K. Actual omega=(IsCyclotomicExtension.zeta_spec3ℚK).toInteger and lambda=omega-1; actual omega is primitive order3 and lambda is nonzero.",
+        "Exact good reduction: for every actual ideal P of O with P.IsMaximal and lambda∉P, Ideal.Quotient.mk P omega is primitive order3. Actual local quotient field, cube equation and nonidentity are proved; no desired quotient primitive-root supplier is assumed.",
         "Actual ramifiedIdeal=Ideal.span{lambda}. The actual lambda element is prime; the actual ideal is prime, nonzero, maximal, proper and has actual Ideal.absNorm3, by pinned Mathlib cyclotomic norm/prime suppliers and actual number-ring instances.",
         "lambda belongs to this ideal,3 belongs and2 does not. The actual quotient image of omega is1; it is not primitive3. Thus actual maximality alone cannot replace the good-prime exclusion.",
-        "Actual good maximal nonvacuity: ideal(2) is proper because its admitted norm is4. Choose an actual maximal P containing it. If lambda\u2208P, actual3\u2208span{lambda}\u2286P and actual2\u2208P imply1\u2208P, contradicting properness. Therefore an actual maximal P above(2) with lambda\u2209P is produced.",
-        "Actual primary-normalization obstruction: no p:O satisfies ramifiedIdeal=span{p} AND lambda\u00b2 divides p-1. The proof is local to this actual ideal: p and p-1 would both belong to it, forcing1 in a proper ideal. No general lemma is misplaced under this cyclotomic subject."
+        "Actual good maximal nonvacuity: ideal(2) is proper because its admitted norm is4. Choose an actual maximal P containing it. If lambda∈P, actual3∈span{lambda}⊆P and actual2∈P imply1∈P, contradicting properness. Therefore an actual maximal P above(2) with lambda∉P is produced.",
+        "Actual primary-normalization obstruction: no p:O satisfies ramifiedIdeal=span{p} AND lambda² divides p-1. The proof is local to this actual ideal: p and p-1 would both belong to it, forcing1 in a proper ideal. No general lemma is misplaced under this cyclotomic subject."
       ],
       "verification": {
         "inventory": "observed-current-bytes",
@@ -54799,11 +55574,11 @@
       "runner": "python3 -B scripts/check_third_cyclotomic_ideals.py",
       "other_consumers": [],
       "explicit_premises": [
-        "Literal aliases K=CyclotomicField 3 \u211a and O=NumberField.RingOfIntegers K, exactly the primary source definitions, under this mathematical namespace. field_identity/ring_identity preserve actual type identity; no arbitrary ring or integer-ideal replacement.",
-        "Actual private IsCyclotomicExtension {3} \u211a K instance from CyclotomicField.isCyclotomicExtension 3 \u211a, matching the original source supplied instance. Actual NumberField K and actual IsDedekindDomain O, Module.Free \u2124 O, Module.Finite \u2124 O and CharZero O are synthesized natively; CommRing O is the actual ring-of-integers structure used throughout.",
-        "Actual Module.finrank \u211a K=2 from the cyclotomic finrank theorem and totient3=2; actual Module.finrank \u2124 O=2 from RingOfIntegers.rank.",
-        "For every natural n (including0), actual Ideal.absNorm(Ideal.span{(n:O)})=n\u00b2. In particular the actual principal ideal generated by2 has absolute norm4.",
-        "For actual O ideals, compact W:\u211d\u2192\u2102, X>0 and F:Ideal O\u00b3\u2192\u2102 with actual zero-ideal and window-vanishing cancellation: Function.support F is finite. The admitted generic norm-support theorem supplies the proof; this concrete ring and all actual required instances now pay the previously open ring specialization."
+        "Literal aliases K=CyclotomicField 3 ℚ and O=NumberField.RingOfIntegers K, exactly the primary source definitions, under this mathematical namespace. field_identity/ring_identity preserve actual type identity; no arbitrary ring or integer-ideal replacement.",
+        "Actual private IsCyclotomicExtension {3} ℚ K instance from CyclotomicField.isCyclotomicExtension 3 ℚ, matching the original source supplied instance. Actual NumberField K and actual IsDedekindDomain O, Module.Free ℤ O, Module.Finite ℤ O and CharZero O are synthesized natively; CommRing O is the actual ring-of-integers structure used throughout.",
+        "Actual Module.finrank ℚ K=2 from the cyclotomic finrank theorem and totient3=2; actual Module.finrank ℤ O=2 from RingOfIntegers.rank.",
+        "For every natural n (including0), actual Ideal.absNorm(Ideal.span{(n:O)})=n². In particular the actual principal ideal generated by2 has absolute norm4.",
+        "For actual O ideals, compact W:ℝ→ℂ, X>0 and F:Ideal O³→ℂ with actual zero-ideal and window-vanishing cancellation: Function.support F is finite. The admitted generic norm-support theorem supplies the proof; this concrete ring and all actual required instances now pay the previously open ring specialization."
       ],
       "contribution_roles": [
         "R.A. Jacob Martone: human direction",
@@ -54919,7 +55694,8 @@
       ],
       "reverse_consumers": [
         "GRWTSK",
-        "GRWTSK.NumberTheory.Cyclotomic.Checks.Positive.ThirdCyclotomicReduction"
+        "GRWTSK.NumberTheory.Cyclotomic.Checks.Positive.ThirdCyclotomicReduction",
+        "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicCharacters"
       ],
       "subject": "NumberTheory",
       "object": "Cyclotomic",
@@ -54930,12 +55706,12 @@
       "logical_status": "selected native checked result at exact immutable receipt context; hypotheses retained",
       "open_premises": [],
       "explicit_premises": [
-        "Use exact admitted K=CyclotomicField3\u211a and O=NumberField.RingOfIntegers K. Actual omega=(IsCyclotomicExtension.zeta_spec3\u211aK).toInteger and lambda=omega-1; actual omega is primitive order3 and lambda is nonzero.",
-        "Exact good reduction: for every actual ideal P of O with P.IsMaximal and lambda\u2209P, Ideal.Quotient.mk P omega is primitive order3. Actual local quotient field, cube equation and nonidentity are proved; no desired quotient primitive-root supplier is assumed.",
+        "Use exact admitted K=CyclotomicField3ℚ and O=NumberField.RingOfIntegers K. Actual omega=(IsCyclotomicExtension.zeta_spec3ℚK).toInteger and lambda=omega-1; actual omega is primitive order3 and lambda is nonzero.",
+        "Exact good reduction: for every actual ideal P of O with P.IsMaximal and lambda∉P, Ideal.Quotient.mk P omega is primitive order3. Actual local quotient field, cube equation and nonidentity are proved; no desired quotient primitive-root supplier is assumed.",
         "Actual ramifiedIdeal=Ideal.span{lambda}. The actual lambda element is prime; the actual ideal is prime, nonzero, maximal, proper and has actual Ideal.absNorm3, by pinned Mathlib cyclotomic norm/prime suppliers and actual number-ring instances.",
         "lambda belongs to this ideal,3 belongs and2 does not. The actual quotient image of omega is1; it is not primitive3. Thus actual maximality alone cannot replace the good-prime exclusion.",
-        "Actual good maximal nonvacuity: ideal(2) is proper because its admitted norm is4. Choose an actual maximal P containing it. If lambda\u2208P, actual3\u2208span{lambda}\u2286P and actual2\u2208P imply1\u2208P, contradicting properness. Therefore an actual maximal P above(2) with lambda\u2209P is produced.",
-        "Actual primary-normalization obstruction: no p:O satisfies ramifiedIdeal=span{p} AND lambda\u00b2 divides p-1. The proof is local to this actual ideal: p and p-1 would both belong to it, forcing1 in a proper ideal. No general lemma is misplaced under this cyclotomic subject."
+        "Actual good maximal nonvacuity: ideal(2) is proper because its admitted norm is4. Choose an actual maximal P containing it. If lambda∈P, actual3∈span{lambda}⊆P and actual2∈P imply1∈P, contradicting properness. Therefore an actual maximal P above(2) with lambda∉P is produced.",
+        "Actual primary-normalization obstruction: no p:O satisfies ramifiedIdeal=span{p} AND lambda² divides p-1. The proof is local to this actual ideal: p and p-1 would both belong to it, forcing1 in a proper ideal. No general lemma is misplaced under this cyclotomic subject."
       ],
       "verification": {
         "inventory": "observed-current-bytes",
@@ -54991,7 +55767,9 @@
         "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Radical",
         "Mathlib.Analysis.SpecialFunctions.Pow.Real"
       ],
-      "reverse_consumers": [],
+      "reverse_consumers": [
+        "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorToABC.lean"
+      ],
       "subject": "NumberTheory",
       "object": "Diophantine/PrimitiveAdditiveTriples",
       "source_role": "library",
@@ -55016,6 +55794,93 @@
       "other_consumers": [
         "docs/reference/math-source-catalog.json"
       ]
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/AdditiveCharacterMoments.lean",
+      "original_path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/AdditiveCharacterMoments.lean",
+      "sha256": "c5064cd633443ae851924599b07d1aaeff56e7ab792783cd5e408e5a078e3113",
+      "git_blob": "f8e35ba6a5095abf398fac5a3d1b2cfab5001ed6",
+      "working_tree_state": "tracked-current",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.AdditiveCharacterMoments",
+      "namespaces": [
+        "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples"
+      ],
+      "public_declarations": [
+        {
+          "kind": "def",
+          "name": "projectedJointMoment",
+          "line": 17
+        },
+        {
+          "kind": "def",
+          "name": "frequencyJointMoment",
+          "line": 24
+        },
+        {
+          "kind": "theorem",
+          "name": "projectedJointMoment_eq_frequencyJointMoment",
+          "line": 33
+        },
+        {
+          "kind": "theorem",
+          "name": "scaled_additive_sum_eq_character_cube",
+          "line": 51
+        },
+        {
+          "kind": "theorem",
+          "name": "commonDivisorWeightedMoment_eq_character_cube",
+          "line": 91
+        },
+        {
+          "kind": "theorem",
+          "name": "typedPrimitiveWeightedMoment_eq_moebius_character_cube",
+          "line": 99
+        },
+        {
+          "kind": "theorem",
+          "name": "typedPrimitiveWeightedMoment_eq_moebius_frequency_sum",
+          "line": 111
+        }
+      ],
+      "declaration_inventory_method": "source syntax declaration commands, excluding anonymous examples and generated declarations; not a theorem total or native census; exact owned-declaration native census is authoritative",
+      "imports": [
+        "GRWTSK.Analysis.Fourier.FiniteAdditiveProjector",
+        "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.DivisorSectorReindexing"
+      ],
+      "reverse_consumers": [
+        "GRWTSK.lean",
+        "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorMissingNoWrap.lean",
+        "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorScaledCongruenceCancellation.lean",
+        "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorToABC.lean",
+        "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorUnscaledJointWeight.lean",
+        "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorWrongNormalization.lean",
+        "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Positive/AdditiveCharacterMoments.lean"
+      ],
+      "subject": "NumberTheory",
+      "object": "Diophantine/PrimitiveAdditiveTriples",
+      "source_role": "library",
+      "target_path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/AdditiveCharacterMoments.lean",
+      "placement_rationale": "Complex character projection of primitive additive moments belongs with primitive additive triples; generic Ring prerequisites retain their original subjects.",
+      "operation": "add",
+      "logical_status": "Exact finite Complex-valued character identities or their positive consumer; modulus, normalization, no-wrap bounds and joint scaled weight explicit. No coefficient transfer, arithmetic estimate or abc implication.",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "source_sha256": "c5064cd633443ae851924599b07d1aaeff56e7ab792783cd5e408e5a078e3113",
+        "lean": "fresh selected library elaboration at trust zero with fatal warnings",
+        "owned_declaration_audit": "complete selected local library closure; standard3 only; controls checked separately",
+        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json",
+        "replay_binding_schema": "additive-character-moments-selected-replay-v1",
+        "replay_binding_sha256": "4ac00cdc45b0fcf7bff4c8650bad3b5ae05f1cc4ed015accefdd96b0863b4a00"
+      },
+      "runner": "python3 -B .noeaaeue/scripts/check_additive_character_moments.py",
+      "other_consumers": [
+        "docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-moments.md",
+        "docs/reference/math-source-catalog.json"
+      ],
+      "attribution": "Direction R.A. Jacob Martone; formalization assistance OpenAI Codex; Mathlib authors retained.",
+      "license": "Original additions MIT; imported Mathlib Apache-2.0"
     },
     {
       "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ExistentialEpsilon.lean",
@@ -55196,7 +56061,7 @@
       "object": "Diophantine/PrimitiveAdditiveTriples",
       "source_role": "negative-control",
       "target_path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/MomentMissingCoprimality.lean",
-      "placement_rationale": "Generic arithmetic M\u00f6bius filter under ArithmeticFunctions; finite additive moments and typed triple reindexing under the established PrimitiveAdditiveTriples object.",
+      "placement_rationale": "Generic arithmetic Möbius filter under ArithmeticFunctions; finite additive moments and typed triple reindexing under the established PrimitiveAdditiveTriples object.",
       "operation": "add",
       "logical_status": "Exact finite identities or their typed controls; no uniform radical-height estimate or abc implication.",
       "open_premises": [],
@@ -55212,7 +56077,7 @@
         "docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/moments.md",
         "docs/reference/math-source-catalog.json"
       ],
-      "attribution": "Direction R.A. Jacob Martone; formalization assistance OpenAI Codex; canonical M\u00f6bius implementation Mathlib/Aaron Anderson retains upstream attribution.",
+      "attribution": "Direction R.A. Jacob Martone; formalization assistance OpenAI Codex; canonical Möbius implementation Mathlib/Aaron Anderson retains upstream attribution.",
       "license": "MIT; imported Mathlib Apache-2.0"
     },
     {
@@ -55234,7 +56099,7 @@
       "object": "Diophantine/PrimitiveAdditiveTriples",
       "source_role": "negative-control",
       "target_path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/MomentMissingCutoff.lean",
-      "placement_rationale": "Generic arithmetic M\u00f6bius filter under ArithmeticFunctions; finite additive moments and typed triple reindexing under the established PrimitiveAdditiveTriples object.",
+      "placement_rationale": "Generic arithmetic Möbius filter under ArithmeticFunctions; finite additive moments and typed triple reindexing under the established PrimitiveAdditiveTriples object.",
       "operation": "add",
       "logical_status": "Exact finite identities or their typed controls; no uniform radical-height estimate or abc implication.",
       "open_premises": [],
@@ -55250,7 +56115,7 @@
         "docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/moments.md",
         "docs/reference/math-source-catalog.json"
       ],
-      "attribution": "Direction R.A. Jacob Martone; formalization assistance OpenAI Codex; canonical M\u00f6bius implementation Mathlib/Aaron Anderson retains upstream attribution.",
+      "attribution": "Direction R.A. Jacob Martone; formalization assistance OpenAI Codex; canonical Möbius implementation Mathlib/Aaron Anderson retains upstream attribution.",
       "license": "MIT; imported Mathlib Apache-2.0"
     },
     {
@@ -55273,7 +56138,7 @@
       "object": "Diophantine/PrimitiveAdditiveTriples",
       "source_role": "negative-control",
       "target_path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/MomentToABC.lean",
-      "placement_rationale": "Generic arithmetic M\u00f6bius filter under ArithmeticFunctions; finite additive moments and typed triple reindexing under the established PrimitiveAdditiveTriples object.",
+      "placement_rationale": "Generic arithmetic Möbius filter under ArithmeticFunctions; finite additive moments and typed triple reindexing under the established PrimitiveAdditiveTriples object.",
       "operation": "add",
       "logical_status": "Exact finite identities or their typed controls; no uniform radical-height estimate or abc implication.",
       "open_premises": [],
@@ -55289,7 +56154,7 @@
         "docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/moments.md",
         "docs/reference/math-source-catalog.json"
       ],
-      "attribution": "Direction R.A. Jacob Martone; formalization assistance OpenAI Codex; canonical M\u00f6bius implementation Mathlib/Aaron Anderson retains upstream attribution.",
+      "attribution": "Direction R.A. Jacob Martone; formalization assistance OpenAI Codex; canonical Möbius implementation Mathlib/Aaron Anderson retains upstream attribution.",
       "license": "MIT; imported Mathlib Apache-2.0"
     },
     {
@@ -55311,7 +56176,7 @@
       "object": "Diophantine/PrimitiveAdditiveTriples",
       "source_role": "negative-control",
       "target_path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/MomentUnsignedMoebius.lean",
-      "placement_rationale": "Generic arithmetic M\u00f6bius filter under ArithmeticFunctions; finite additive moments and typed triple reindexing under the established PrimitiveAdditiveTriples object.",
+      "placement_rationale": "Generic arithmetic Möbius filter under ArithmeticFunctions; finite additive moments and typed triple reindexing under the established PrimitiveAdditiveTriples object.",
       "operation": "add",
       "logical_status": "Exact finite identities or their typed controls; no uniform radical-height estimate or abc implication.",
       "open_premises": [],
@@ -55327,7 +56192,7 @@
         "docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/moments.md",
         "docs/reference/math-source-catalog.json"
       ],
-      "attribution": "Direction R.A. Jacob Martone; formalization assistance OpenAI Codex; canonical M\u00f6bius implementation Mathlib/Aaron Anderson retains upstream attribution.",
+      "attribution": "Direction R.A. Jacob Martone; formalization assistance OpenAI Codex; canonical Möbius implementation Mathlib/Aaron Anderson retains upstream attribution.",
       "license": "MIT; imported Mathlib Apache-2.0"
     },
     {
@@ -55369,6 +56234,207 @@
       "other_consumers": [
         "docs/reference/math-source-catalog.json"
       ]
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorMissingNoWrap.lean",
+      "original_path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorMissingNoWrap.lean",
+      "sha256": "62e56cdb987638afc411ced5e11ad6d2433d1e7b4f8db1bb8de890e48e45ec42",
+      "git_blob": "d2336c11fdcf634c0d0e68b6e758c0bd432c5a06",
+      "working_tree_state": "tracked-current",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Checks.Negative.ProjectorMissingNoWrap",
+      "namespaces": [],
+      "public_declarations": [],
+      "declaration_inventory_method": "source syntax declaration commands, excluding anonymous examples and generated declarations; not a theorem total or native census; exact owned-declaration native census is authoritative",
+      "imports": [
+        "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.AdditiveCharacterMoments"
+      ],
+      "reverse_consumers": [],
+      "subject": "NumberTheory",
+      "object": "Diophantine/PrimitiveAdditiveTriples",
+      "source_role": "negative-control",
+      "target_path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorMissingNoWrap.lean",
+      "placement_rationale": "Complex character projection of primitive additive moments belongs with primitive additive triples; generic Ring prerequisites retain their original subjects.",
+      "operation": "add",
+      "logical_status": "Intended type rejection of an unsupported projector claim; no theorem is admitted from this control.",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "source_sha256": "62e56cdb987638afc411ced5e11ad6d2433d1e7b4f8db1bb8de890e48e45ec42",
+        "lean": "intended single type rejection matched at trust zero with fatal warnings",
+        "owned_declaration_audit": "complete selected local library closure; standard3 only; controls checked separately",
+        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json",
+        "replay_binding_schema": "additive-character-moments-selected-replay-v1",
+        "replay_binding_sha256": "4ac00cdc45b0fcf7bff4c8650bad3b5ae05f1cc4ed015accefdd96b0863b4a00"
+      },
+      "runner": "python3 -B .noeaaeue/scripts/check_additive_character_moments.py",
+      "other_consumers": [
+        "docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-moments.md",
+        "docs/reference/math-source-catalog.json"
+      ],
+      "attribution": "Direction R.A. Jacob Martone; formalization assistance OpenAI Codex; Mathlib authors retained.",
+      "license": "Original additions MIT; imported Mathlib Apache-2.0"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorScaledCongruenceCancellation.lean",
+      "original_path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorScaledCongruenceCancellation.lean",
+      "sha256": "e53db71a114f0e6f8ea0126663f12e4f1eec6ddd96a06a5bcc2c2deb8848cf14",
+      "git_blob": "961112cca99943a7b764da62a783897f35f16f95",
+      "working_tree_state": "tracked-current",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Checks.Negative.ProjectorScaledCongruenceCancellation",
+      "namespaces": [],
+      "public_declarations": [],
+      "declaration_inventory_method": "source syntax declaration commands, excluding anonymous examples and generated declarations; not a theorem total or native census; exact owned-declaration native census is authoritative",
+      "imports": [
+        "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.AdditiveCharacterMoments"
+      ],
+      "reverse_consumers": [],
+      "subject": "NumberTheory",
+      "object": "Diophantine/PrimitiveAdditiveTriples",
+      "source_role": "negative-control",
+      "target_path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorScaledCongruenceCancellation.lean",
+      "placement_rationale": "Complex character projection of primitive additive moments belongs with primitive additive triples; generic Ring prerequisites retain their original subjects.",
+      "operation": "add",
+      "logical_status": "Intended type rejection of an unsupported projector claim; no theorem is admitted from this control.",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "source_sha256": "e53db71a114f0e6f8ea0126663f12e4f1eec6ddd96a06a5bcc2c2deb8848cf14",
+        "lean": "intended single type rejection matched at trust zero with fatal warnings",
+        "owned_declaration_audit": "complete selected local library closure; standard3 only; controls checked separately",
+        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json",
+        "replay_binding_schema": "additive-character-moments-selected-replay-v1",
+        "replay_binding_sha256": "4ac00cdc45b0fcf7bff4c8650bad3b5ae05f1cc4ed015accefdd96b0863b4a00"
+      },
+      "runner": "python3 -B .noeaaeue/scripts/check_additive_character_moments.py",
+      "other_consumers": [
+        "docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-moments.md",
+        "docs/reference/math-source-catalog.json"
+      ],
+      "attribution": "Direction R.A. Jacob Martone; formalization assistance OpenAI Codex; Mathlib authors retained.",
+      "license": "Original additions MIT; imported Mathlib Apache-2.0"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorToABC.lean",
+      "original_path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorToABC.lean",
+      "sha256": "bb05fba2b0d11b032a370e16cd575eca0d08267bd2acb466315c6fcb47f52522",
+      "git_blob": "09bc5afd3f8a16eef78176c1e167a12e27913563",
+      "working_tree_state": "tracked-current",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Checks.Negative.ProjectorToABC",
+      "namespaces": [],
+      "public_declarations": [],
+      "declaration_inventory_method": "source syntax declaration commands, excluding anonymous examples and generated declarations; not a theorem total or native census; exact owned-declaration native census is authoritative",
+      "imports": [
+        "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.AdditiveCharacterMoments",
+        "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ABCStatement"
+      ],
+      "reverse_consumers": [],
+      "subject": "NumberTheory",
+      "object": "Diophantine/PrimitiveAdditiveTriples",
+      "source_role": "negative-control",
+      "target_path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorToABC.lean",
+      "placement_rationale": "Complex character projection of primitive additive moments belongs with primitive additive triples; generic Ring prerequisites retain their original subjects.",
+      "operation": "add",
+      "logical_status": "Intended type rejection of an unsupported projector claim; no theorem is admitted from this control.",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "source_sha256": "bb05fba2b0d11b032a370e16cd575eca0d08267bd2acb466315c6fcb47f52522",
+        "lean": "intended single type rejection matched at trust zero with fatal warnings",
+        "owned_declaration_audit": "complete selected local library closure; standard3 only; controls checked separately",
+        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json",
+        "replay_binding_schema": "additive-character-moments-selected-replay-v1",
+        "replay_binding_sha256": "4ac00cdc45b0fcf7bff4c8650bad3b5ae05f1cc4ed015accefdd96b0863b4a00"
+      },
+      "runner": "python3 -B .noeaaeue/scripts/check_additive_character_moments.py",
+      "other_consumers": [
+        "docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-moments.md",
+        "docs/reference/math-source-catalog.json"
+      ],
+      "attribution": "Direction R.A. Jacob Martone; formalization assistance OpenAI Codex; Mathlib authors retained.",
+      "license": "Original additions MIT; imported Mathlib Apache-2.0"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorUnscaledJointWeight.lean",
+      "original_path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorUnscaledJointWeight.lean",
+      "sha256": "753995797c6e3555cf76ab4ddbde96bc9a3a27d150fa09f3b8bc5e024d8f2dbc",
+      "git_blob": "eb7648ccdf9e6a915c4045e994fe7c6ebe34d210",
+      "working_tree_state": "tracked-current",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Checks.Negative.ProjectorUnscaledJointWeight",
+      "namespaces": [],
+      "public_declarations": [],
+      "declaration_inventory_method": "source syntax declaration commands, excluding anonymous examples and generated declarations; not a theorem total or native census; exact owned-declaration native census is authoritative",
+      "imports": [
+        "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.AdditiveCharacterMoments"
+      ],
+      "reverse_consumers": [],
+      "subject": "NumberTheory",
+      "object": "Diophantine/PrimitiveAdditiveTriples",
+      "source_role": "negative-control",
+      "target_path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorUnscaledJointWeight.lean",
+      "placement_rationale": "Complex character projection of primitive additive moments belongs with primitive additive triples; generic Ring prerequisites retain their original subjects.",
+      "operation": "add",
+      "logical_status": "Intended type rejection of an unsupported projector claim; no theorem is admitted from this control.",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "source_sha256": "753995797c6e3555cf76ab4ddbde96bc9a3a27d150fa09f3b8bc5e024d8f2dbc",
+        "lean": "intended single type rejection matched at trust zero with fatal warnings",
+        "owned_declaration_audit": "complete selected local library closure; standard3 only; controls checked separately",
+        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json",
+        "replay_binding_schema": "additive-character-moments-selected-replay-v1",
+        "replay_binding_sha256": "4ac00cdc45b0fcf7bff4c8650bad3b5ae05f1cc4ed015accefdd96b0863b4a00"
+      },
+      "runner": "python3 -B .noeaaeue/scripts/check_additive_character_moments.py",
+      "other_consumers": [
+        "docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-moments.md",
+        "docs/reference/math-source-catalog.json"
+      ],
+      "attribution": "Direction R.A. Jacob Martone; formalization assistance OpenAI Codex; Mathlib authors retained.",
+      "license": "Original additions MIT; imported Mathlib Apache-2.0"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorWrongNormalization.lean",
+      "original_path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorWrongNormalization.lean",
+      "sha256": "06166379962c09fb4ea2e9f5eb59edd5dc35191e9122866f8529f51260862b14",
+      "git_blob": "249ae3f358d10aeed1c4311cc3858a26746ec60f",
+      "working_tree_state": "tracked-current",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Checks.Negative.ProjectorWrongNormalization",
+      "namespaces": [],
+      "public_declarations": [],
+      "declaration_inventory_method": "source syntax declaration commands, excluding anonymous examples and generated declarations; not a theorem total or native census; exact owned-declaration native census is authoritative",
+      "imports": [
+        "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.AdditiveCharacterMoments"
+      ],
+      "reverse_consumers": [],
+      "subject": "NumberTheory",
+      "object": "Diophantine/PrimitiveAdditiveTriples",
+      "source_role": "negative-control",
+      "target_path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorWrongNormalization.lean",
+      "placement_rationale": "Complex character projection of primitive additive moments belongs with primitive additive triples; generic Ring prerequisites retain their original subjects.",
+      "operation": "add",
+      "logical_status": "Intended type rejection of an unsupported projector claim; no theorem is admitted from this control.",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "source_sha256": "06166379962c09fb4ea2e9f5eb59edd5dc35191e9122866f8529f51260862b14",
+        "lean": "intended single type rejection matched at trust zero with fatal warnings",
+        "owned_declaration_audit": "complete selected local library closure; standard3 only; controls checked separately",
+        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json",
+        "replay_binding_schema": "additive-character-moments-selected-replay-v1",
+        "replay_binding_sha256": "4ac00cdc45b0fcf7bff4c8650bad3b5ae05f1cc4ed015accefdd96b0863b4a00"
+      },
+      "runner": "python3 -B .noeaaeue/scripts/check_additive_character_moments.py",
+      "other_consumers": [
+        "docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-moments.md",
+        "docs/reference/math-source-catalog.json"
+      ],
+      "attribution": "Direction R.A. Jacob Martone; formalization assistance OpenAI Codex; Mathlib authors retained.",
+      "license": "Original additions MIT; imported Mathlib Apache-2.0"
     },
     {
       "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/SectorMissingAdditiveCutoff.lean",
@@ -55562,6 +56628,46 @@
       "license": "Original additions MIT; imported Mathlib Apache-2.0"
     },
     {
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Positive/AdditiveCharacterMoments.lean",
+      "original_path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Positive/AdditiveCharacterMoments.lean",
+      "sha256": "af9ac1d1982587daba14b6f170bc78f35f47b519192b65d02e253610537750bf",
+      "git_blob": "56392398d5125a9ea08c141487db42b3cca9ebeb",
+      "working_tree_state": "tracked-current",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Checks.Positive.AdditiveCharacterMoments",
+      "namespaces": [],
+      "public_declarations": [],
+      "declaration_inventory_method": "source syntax declaration commands, excluding anonymous examples and generated declarations; not a theorem total or native census; exact owned-declaration native census is authoritative",
+      "imports": [
+        "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.AdditiveCharacterMoments"
+      ],
+      "reverse_consumers": [],
+      "subject": "NumberTheory",
+      "object": "Diophantine/PrimitiveAdditiveTriples",
+      "source_role": "positive-check",
+      "target_path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Positive/AdditiveCharacterMoments.lean",
+      "placement_rationale": "Complex character projection of primitive additive moments belongs with primitive additive triples; generic Ring prerequisites retain their original subjects.",
+      "operation": "add",
+      "logical_status": "Exact finite Complex-valued character identities or their positive consumer; modulus, normalization, no-wrap bounds and joint scaled weight explicit. No coefficient transfer, arithmetic estimate or abc implication.",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "source_sha256": "af9ac1d1982587daba14b6f170bc78f35f47b519192b65d02e253610537750bf",
+        "lean": "fresh positive consumer elaboration at trust zero with fatal warnings",
+        "owned_declaration_audit": "complete selected local library closure; standard3 only; controls checked separately",
+        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json",
+        "replay_binding_schema": "additive-character-moments-selected-replay-v1",
+        "replay_binding_sha256": "4ac00cdc45b0fcf7bff4c8650bad3b5ae05f1cc4ed015accefdd96b0863b4a00"
+      },
+      "runner": "python3 -B .noeaaeue/scripts/check_additive_character_moments.py",
+      "other_consumers": [
+        "docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-moments.md",
+        "docs/reference/math-source-catalog.json"
+      ],
+      "attribution": "Direction R.A. Jacob Martone; formalization assistance OpenAI Codex; Mathlib authors retained.",
+      "license": "Original additions MIT; imported Mathlib Apache-2.0"
+    },
+    {
       "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Positive/DivisorSectorReindexing.lean",
       "original_path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Positive/DivisorSectorReindexing.lean",
       "sha256": "a29552e3e9d8153094d73a3fadf330ac2f19c39e257eb2969a074e084b3136ee",
@@ -55618,7 +56724,7 @@
       "object": "Diophantine/PrimitiveAdditiveTriples",
       "source_role": "positive-check",
       "target_path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Positive/Moments.lean",
-      "placement_rationale": "Generic arithmetic M\u00f6bius filter under ArithmeticFunctions; finite additive moments and typed triple reindexing under the established PrimitiveAdditiveTriples object.",
+      "placement_rationale": "Generic arithmetic Möbius filter under ArithmeticFunctions; finite additive moments and typed triple reindexing under the established PrimitiveAdditiveTriples object.",
       "operation": "add",
       "logical_status": "Exact finite identities or their typed controls; no uniform radical-height estimate or abc implication.",
       "open_premises": [],
@@ -55634,7 +56740,7 @@
         "docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/moments.md",
         "docs/reference/math-source-catalog.json"
       ],
-      "attribution": "Direction R.A. Jacob Martone; formalization assistance OpenAI Codex; canonical M\u00f6bius implementation Mathlib/Aaron Anderson retains upstream attribution.",
+      "attribution": "Direction R.A. Jacob Martone; formalization assistance OpenAI Codex; canonical Möbius implementation Mathlib/Aaron Anderson retains upstream attribution.",
       "license": "MIT; imported Mathlib Apache-2.0"
     },
     {
@@ -55821,6 +56927,7 @@
       ],
       "reverse_consumers": [
         "GRWTSK.lean",
+        "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/AdditiveCharacterMoments.lean",
         "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/SectorMissingAdditiveCutoff.lean",
         "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/SectorMissingPositiveDivisor.lean",
         "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/SectorToABC.lean",
@@ -56095,7 +57202,7 @@
       "object": "Diophantine/PrimitiveAdditiveTriples",
       "source_role": "library",
       "target_path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/MomentReindexing.lean",
-      "placement_rationale": "Generic arithmetic M\u00f6bius filter under ArithmeticFunctions; finite additive moments and typed triple reindexing under the established PrimitiveAdditiveTriples object.",
+      "placement_rationale": "Generic arithmetic Möbius filter under ArithmeticFunctions; finite additive moments and typed triple reindexing under the established PrimitiveAdditiveTriples object.",
       "operation": "add",
       "logical_status": "Exact finite identities or their typed controls; no uniform radical-height estimate or abc implication.",
       "open_premises": [],
@@ -56111,7 +57218,7 @@
         "docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/moments.md",
         "docs/reference/math-source-catalog.json"
       ],
-      "attribution": "Direction R.A. Jacob Martone; formalization assistance OpenAI Codex; canonical M\u00f6bius implementation Mathlib/Aaron Anderson retains upstream attribution.",
+      "attribution": "Direction R.A. Jacob Martone; formalization assistance OpenAI Codex; canonical Möbius implementation Mathlib/Aaron Anderson retains upstream attribution.",
       "license": "MIT; imported Mathlib Apache-2.0"
     },
     {
@@ -56184,7 +57291,7 @@
       "object": "Diophantine/PrimitiveAdditiveTriples",
       "source_role": "library",
       "target_path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Moments.lean",
-      "placement_rationale": "Generic arithmetic M\u00f6bius filter under ArithmeticFunctions; finite additive moments and typed triple reindexing under the established PrimitiveAdditiveTriples object.",
+      "placement_rationale": "Generic arithmetic Möbius filter under ArithmeticFunctions; finite additive moments and typed triple reindexing under the established PrimitiveAdditiveTriples object.",
       "operation": "add",
       "logical_status": "Exact finite identities or their typed controls; no uniform radical-height estimate or abc implication.",
       "open_premises": [],
@@ -56200,7 +57307,7 @@
         "docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/moments.md",
         "docs/reference/math-source-catalog.json"
       ],
-      "attribution": "Direction R.A. Jacob Martone; formalization assistance OpenAI Codex; canonical M\u00f6bius implementation Mathlib/Aaron Anderson retains upstream attribution.",
+      "attribution": "Direction R.A. Jacob Martone; formalization assistance OpenAI Codex; canonical Möbius implementation Mathlib/Aaron Anderson retains upstream attribution.",
       "license": "MIT; imported Mathlib Apache-2.0"
     },
     {
@@ -56630,10 +57737,10 @@
       "runner": "python3 -B scripts/check_ideal_compact_norm_support.py",
       "other_consumers": [],
       "explicit_premises": [
-        "Generalized actual ring S with explicit [CommRing S], [IsDedekindDomain S], [Module.Free \u2124 S], [Module.Finite \u2124 S], [CharZero S]. The full finite-support theorem retains all of these; its norm\u22651 and actual ideal-triple scale helpers omit unneeded CharZero.",
-        "For each actual nonzero ideal I, (1:\u211d)\u2264Ideal.absNorm I. For actual nonzero I,J,H, each real-cast ideal norm is bounded by absNorm(I)*absNorm(J)^3*absNorm(H)^3.",
-        "For W:\u211d\u2192\u2102 with HasCompactSupport W, X>0, F:Ideal S\u00d7Ideal S\u00d7Ideal S\u2192\u2102, actual zero-ideal cancellation (any I,J,H zero implies F triple0) and actual window cancellation (W(normI*normJ^3*normH^3/X)=0 implies F triple0), Function.support F is finite.",
-        "The proof locally derives a real upper support bound from compactness, chooses a natural M above bound*X, proves all three actual norms\u2264M for every nonzero F value, and uses actual Ideal.finite_setOfPred_absNorm_le M. No finiteness oracle, arbitrary norm or desired result premise.",
+        "Generalized actual ring S with explicit [CommRing S], [IsDedekindDomain S], [Module.Free ℤ S], [Module.Finite ℤ S], [CharZero S]. The full finite-support theorem retains all of these; its norm≥1 and actual ideal-triple scale helpers omit unneeded CharZero.",
+        "For each actual nonzero ideal I, (1:ℝ)≤Ideal.absNorm I. For actual nonzero I,J,H, each real-cast ideal norm is bounded by absNorm(I)*absNorm(J)^3*absNorm(H)^3.",
+        "For W:ℝ→ℂ with HasCompactSupport W, X>0, F:Ideal S×Ideal S×Ideal S→ℂ, actual zero-ideal cancellation (any I,J,H zero implies F triple0) and actual window cancellation (W(normI*normJ^3*normH^3/X)=0 implies F triple0), Function.support F is finite.",
+        "The proof locally derives a real upper support bound from compactness, chooses a natural M above bound*X, proves all three actual norms≤M for every nonzero F value, and uses actual Ideal.finite_setOfPred_absNorm_le M. No finiteness oracle, arbitrary norm or desired result premise.",
         "Public helpers concern actual ideal norms. Generic scalar compact-bound steps remain local inside the finite-support theorem; no unrelated public Analysis API is placed under NumberTheory."
       ],
       "contribution_roles": [
@@ -56764,10 +57871,10 @@
       "runner": "python3 -B scripts/check_ideal_compact_norm_support.py",
       "other_consumers": [],
       "explicit_premises": [
-        "Generalized actual ring S with explicit [CommRing S], [IsDedekindDomain S], [Module.Free \u2124 S], [Module.Finite \u2124 S], [CharZero S]. The full finite-support theorem retains all of these; its norm\u22651 and actual ideal-triple scale helpers omit unneeded CharZero.",
-        "For each actual nonzero ideal I, (1:\u211d)\u2264Ideal.absNorm I. For actual nonzero I,J,H, each real-cast ideal norm is bounded by absNorm(I)*absNorm(J)^3*absNorm(H)^3.",
-        "For W:\u211d\u2192\u2102 with HasCompactSupport W, X>0, F:Ideal S\u00d7Ideal S\u00d7Ideal S\u2192\u2102, actual zero-ideal cancellation (any I,J,H zero implies F triple0) and actual window cancellation (W(normI*normJ^3*normH^3/X)=0 implies F triple0), Function.support F is finite.",
-        "The proof locally derives a real upper support bound from compactness, chooses a natural M above bound*X, proves all three actual norms\u2264M for every nonzero F value, and uses actual Ideal.finite_setOfPred_absNorm_le M. No finiteness oracle, arbitrary norm or desired result premise.",
+        "Generalized actual ring S with explicit [CommRing S], [IsDedekindDomain S], [Module.Free ℤ S], [Module.Finite ℤ S], [CharZero S]. The full finite-support theorem retains all of these; its norm≥1 and actual ideal-triple scale helpers omit unneeded CharZero.",
+        "For each actual nonzero ideal I, (1:ℝ)≤Ideal.absNorm I. For actual nonzero I,J,H, each real-cast ideal norm is bounded by absNorm(I)*absNorm(J)^3*absNorm(H)^3.",
+        "For W:ℝ→ℂ with HasCompactSupport W, X>0, F:Ideal S×Ideal S×Ideal S→ℂ, actual zero-ideal cancellation (any I,J,H zero implies F triple0) and actual window cancellation (W(normI*normJ^3*normH^3/X)=0 implies F triple0), Function.support F is finite.",
+        "The proof locally derives a real upper support bound from compactness, chooses a natural M above bound*X, proves all three actual norms≤M for every nonzero F value, and uses actual Ideal.finite_setOfPred_absNorm_le M. No finiteness oracle, arbitrary norm or desired result premise.",
         "Public helpers concern actual ideal norms. Generic scalar compact-bound steps remain local inside the finite-support theorem; no unrelated public Analysis API is placed under NumberTheory."
       ],
       "contribution_roles": [
@@ -56838,10 +57945,10 @@
       "runner": "python3 -B scripts/check_ideal_compact_norm_support.py",
       "other_consumers": [],
       "explicit_premises": [
-        "Generalized actual ring S with explicit [CommRing S], [IsDedekindDomain S], [Module.Free \u2124 S], [Module.Finite \u2124 S], [CharZero S]. The full finite-support theorem retains all of these; its norm\u22651 and actual ideal-triple scale helpers omit unneeded CharZero.",
-        "For each actual nonzero ideal I, (1:\u211d)\u2264Ideal.absNorm I. For actual nonzero I,J,H, each real-cast ideal norm is bounded by absNorm(I)*absNorm(J)^3*absNorm(H)^3.",
-        "For W:\u211d\u2192\u2102 with HasCompactSupport W, X>0, F:Ideal S\u00d7Ideal S\u00d7Ideal S\u2192\u2102, actual zero-ideal cancellation (any I,J,H zero implies F triple0) and actual window cancellation (W(normI*normJ^3*normH^3/X)=0 implies F triple0), Function.support F is finite.",
-        "The proof locally derives a real upper support bound from compactness, chooses a natural M above bound*X, proves all three actual norms\u2264M for every nonzero F value, and uses actual Ideal.finite_setOfPred_absNorm_le M. No finiteness oracle, arbitrary norm or desired result premise.",
+        "Generalized actual ring S with explicit [CommRing S], [IsDedekindDomain S], [Module.Free ℤ S], [Module.Finite ℤ S], [CharZero S]. The full finite-support theorem retains all of these; its norm≥1 and actual ideal-triple scale helpers omit unneeded CharZero.",
+        "For each actual nonzero ideal I, (1:ℝ)≤Ideal.absNorm I. For actual nonzero I,J,H, each real-cast ideal norm is bounded by absNorm(I)*absNorm(J)^3*absNorm(H)^3.",
+        "For W:ℝ→ℂ with HasCompactSupport W, X>0, F:Ideal S×Ideal S×Ideal S→ℂ, actual zero-ideal cancellation (any I,J,H zero implies F triple0) and actual window cancellation (W(normI*normJ^3*normH^3/X)=0 implies F triple0), Function.support F is finite.",
+        "The proof locally derives a real upper support bound from compactness, chooses a natural M above bound*X, proves all three actual norms≤M for every nonzero F value, and uses actual Ideal.finite_setOfPred_absNorm_le M. No finiteness oracle, arbitrary norm or desired result premise.",
         "Public helpers concern actual ideal norms. Generic scalar compact-bound steps remain local inside the finite-support theorem; no unrelated public Analysis API is placed under NumberTheory."
       ],
       "contribution_roles": [
@@ -72764,6 +73871,779 @@
         "evidence/source-manifest.json",
         "scripts/check_ten_martini.py"
       ]
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableReferenceTransport.lean",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableReferenceTransport.lean",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableReferenceTransport.lean",
+      "sha256": "a7600c33972405a31f6495b03789f9473cd914eb428d9a5f94c734f528e71d0c",
+      "bytes": 10562,
+      "git_blob_content_identity": "41f14666be6d6e3a62ced2d642fe028f9c64b7ed",
+      "working_tree_state": "Exact current bytes observed; index/ref state not inspected",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableReferenceTransport",
+      "subject": "Combinatorics",
+      "object": "DirectedGraph",
+      "source_role": "library",
+      "operation": "add",
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableSchedule"
+      ],
+      "namespaces": [
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableReferenceTransport"
+      ],
+      "public_declarations": [
+        {
+          "kind": "def",
+          "name": "actionSlot",
+          "line": 29
+        },
+        {
+          "kind": "def",
+          "name": "trackedStep",
+          "line": 36
+        },
+        {
+          "kind": "def",
+          "name": "transportSlotAt",
+          "line": 40
+        },
+        {
+          "kind": "theorem",
+          "name": "tracked_state",
+          "line": 46
+        },
+        {
+          "kind": "theorem",
+          "name": "tracked_none",
+          "line": 54
+        },
+        {
+          "kind": "theorem",
+          "name": "transportSlotAt_nil",
+          "line": 60
+        },
+        {
+          "kind": "theorem",
+          "name": "transportSlotAt_cons",
+          "line": 65
+        },
+        {
+          "kind": "theorem",
+          "name": "compact_reference",
+          "line": 83
+        },
+        {
+          "kind": "theorem",
+          "name": "action_reference",
+          "line": 116
+        },
+        {
+          "kind": "theorem",
+          "name": "transport_reference",
+          "line": 134
+        },
+        {
+          "kind": "def",
+          "name": "transportReferences",
+          "line": 153
+        },
+        {
+          "kind": "theorem",
+          "name": "transportReferences_success",
+          "line": 159
+        }
+      ],
+      "declaration_inventory_method": "source commands only; receipt owned census authoritative",
+      "reverse_consumers": [
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableReferenceTransport",
+        "GRWTSK"
+      ],
+      "other_consumers": [
+        "docs/mathematics/Combinatorics/DirectedGraph/prefix-reference-transport.md"
+      ],
+      "logical_status": "selected source-qualified native result; registered at explicit integration checkpoint; selected receipt covers its recorded closure",
+      "open_premises": [],
+      "explicit_premises": [
+        "V/Key arbitrary, actual Quiver V and DecidableEq full EdgeTrace.TotalEdge V. Existing ValidRootedState fixes root and carries actual structural WellFormed; no assumed serialization/transport oracle.",
+        "actionSlot is actual compactor remap at compaction and numeric identity at batch. trackedStep pairs actual applyAction state with Option.bind. transportSlotAt is chronological List.foldl; tracked_state forgets exactly to actual executeAt; tracked_none is absorbing.",
+        "compact_reference/action_reference/transport_reference derive Some target, final real-reference membership and exact old full dictionary lookup from actual ORIGINAL reference membership and structural invariant. No success/validity result for arbitrary bounds-only or unused slots.",
+        "transportReferences actually mapMs original reference rows. transportReferences_success derives successful list, same length and positional Forall2 of same key/final membership/exact payload. It does not assert a generic prefix embedding/subsequence in final references.",
+        "Actual Bool parallel-loop actions retain original slot0 through0→1→1→0; unused bounded slot2 is dropped and staysNone after actual reintroduction despite later directSome2. Distinct31,17,31,19 keys plus repeated31 make original order/multiplicity observable, with derived actual WF and finaltargetbound."
+      ],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "source_sha256": "a7600c33972405a31f6495b03789f9473cd914eb428d9a5f94c734f528e71d0c",
+        "lean": "Exact selected receipt context only",
+        "replay_binding": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-reference-transport-checks-2026-10-15.json",
+        "replay_sha256": "c2392986e86871df84fd07fc4363c634a37930749e4f505a941a91278236a271",
+        "canonical_public_integration": "INSTALLED_SELECTED_SCOPE",
+        "whole_umbrella": "NOT_REPLAYED_BY_SELECTED_RECEIPT"
+      },
+      "runner": "python3 -B .noeaaeue/scripts/check_prefix_reference_transport.py",
+      "contribution": {
+        "license": "MIT; imported Apache-2.0 retained",
+        "human_direction": "R.A. Jacob Martone",
+        "formalization": "OpenAI Codex",
+        "individual_credits": [
+          "Leonardo de Moura",
+          "Jeremy Avigad",
+          "Mario Carneiro",
+          "Parikshit Khanna",
+          "Floris van Doorn"
+        ],
+        "scope": "Imported state/path/schedule/compaction and Lean/Mathlib source credits retained."
+      },
+      "license": "MIT; imported Apache-2.0 retained",
+      "placement_rationale": "Actual stored rooted path references and state-dependent compaction transport belong to Combinatorics/DirectedGraph.",
+      "git_blob": "41f14666be6d6e3a62ced2d642fe028f9c64b7ed"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableReferenceTransport.lean",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableReferenceTransport.lean",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableReferenceTransport.lean",
+      "sha256": "092678d16170cff8e60e5b1461c71aea404b4a8d93731f4e001367992bf96e26",
+      "bytes": 7784,
+      "git_blob_content_identity": "4622169451c414b0f5c1c73259a4a2557c8c55cb",
+      "working_tree_state": "Exact current bytes observed; index/ref state not inspected",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableReferenceTransport",
+      "subject": "Combinatorics",
+      "object": "DirectedGraph/Checks/Positive",
+      "source_role": "positive-check",
+      "operation": "add",
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableReferenceTransport",
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableSchedule"
+      ],
+      "namespaces": [
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableReferenceTransport.Checks.Positive"
+      ],
+      "public_declarations": [
+        {
+          "kind": "def",
+          "name": "initial",
+          "line": 17
+        },
+        {
+          "kind": "theorem",
+          "name": "original_real_reference",
+          "line": 20
+        },
+        {
+          "kind": "theorem",
+          "name": "unused_slot_bound",
+          "line": 26
+        },
+        {
+          "kind": "theorem",
+          "name": "unused_slot_not_referenced",
+          "line": 30
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_first_compaction",
+          "line": 34
+        },
+        {
+          "kind": "theorem",
+          "name": "post_false_remap",
+          "line": 38
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_retained_transport",
+          "line": 53
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_dropped_transport",
+          "line": 61
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_retained_payload",
+          "line": 69
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_retained_final_reference",
+          "line": 74
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_ordered_old_references",
+          "line": 82
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_bounded_totality_counter",
+          "line": 100
+        },
+        {
+          "kind": "def",
+          "name": "ordered",
+          "line": 130
+        },
+        {
+          "kind": "theorem",
+          "name": "ordered_wellFormed",
+          "line": 132
+        },
+        {
+          "kind": "def",
+          "name": "orderedInitial",
+          "line": 144
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_distinct_key_order",
+          "line": 149
+        }
+      ],
+      "declaration_inventory_method": "source commands only; receipt owned census authoritative",
+      "reverse_consumers": [
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.PrefixReferenceMissingSupport"
+      ],
+      "other_consumers": [],
+      "logical_status": "selected source-qualified native result; registered at explicit integration checkpoint; selected receipt covers its recorded closure",
+      "open_premises": [],
+      "explicit_premises": [
+        "V/Key arbitrary, actual Quiver V and DecidableEq full EdgeTrace.TotalEdge V. Existing ValidRootedState fixes root and carries actual structural WellFormed; no assumed serialization/transport oracle.",
+        "actionSlot is actual compactor remap at compaction and numeric identity at batch. trackedStep pairs actual applyAction state with Option.bind. transportSlotAt is chronological List.foldl; tracked_state forgets exactly to actual executeAt; tracked_none is absorbing.",
+        "compact_reference/action_reference/transport_reference derive Some target, final real-reference membership and exact old full dictionary lookup from actual ORIGINAL reference membership and structural invariant. No success/validity result for arbitrary bounds-only or unused slots.",
+        "transportReferences actually mapMs original reference rows. transportReferences_success derives successful list, same length and positional Forall2 of same key/final membership/exact payload. It does not assert a generic prefix embedding/subsequence in final references.",
+        "Actual Bool parallel-loop actions retain original slot0 through0→1→1→0; unused bounded slot2 is dropped and staysNone after actual reintroduction despite later directSome2. Distinct31,17,31,19 keys plus repeated31 make original order/multiplicity observable, with derived actual WF and finaltargetbound."
+      ],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "source_sha256": "092678d16170cff8e60e5b1461c71aea404b4a8d93731f4e001367992bf96e26",
+        "lean": "Exact selected receipt context only",
+        "replay_binding": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-reference-transport-checks-2026-10-15.json",
+        "replay_sha256": "c2392986e86871df84fd07fc4363c634a37930749e4f505a941a91278236a271",
+        "canonical_public_integration": "INSTALLED_SELECTED_SCOPE",
+        "whole_umbrella": "NOT_REPLAYED_BY_SELECTED_RECEIPT"
+      },
+      "runner": "python3 -B .noeaaeue/scripts/check_prefix_reference_transport.py",
+      "contribution": {
+        "license": "MIT; imported Apache-2.0 retained",
+        "human_direction": "R.A. Jacob Martone",
+        "formalization": "OpenAI Codex",
+        "individual_credits": [
+          "Leonardo de Moura",
+          "Jeremy Avigad",
+          "Mario Carneiro",
+          "Parikshit Khanna",
+          "Floris van Doorn"
+        ],
+        "scope": "Imported state/path/schedule/compaction and Lean/Mathlib source credits retained."
+      },
+      "license": "MIT; imported Apache-2.0 retained",
+      "placement_rationale": "Actual stored rooted path references and state-dependent compaction transport belong to Combinatorics/DirectedGraph.",
+      "git_blob": "4622169451c414b0f5c1c73259a4a2557c8c55cb"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixReferenceMissingSupport.lean",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixReferenceMissingSupport.lean",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixReferenceMissingSupport.lean",
+      "sha256": "a81f4b50114fcd35951a8ed8ee1ccf0a706bc26b3a73d6935d83f8867b826f2c",
+      "bytes": 530,
+      "git_blob_content_identity": "2df0d6c0133a591db87bc5efe9b2c5c91cbb7738",
+      "working_tree_state": "Exact current bytes observed; index/ref state not inspected",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.PrefixReferenceMissingSupport",
+      "subject": "Combinatorics",
+      "object": "DirectedGraph/Checks/Negative",
+      "source_role": "negative-control",
+      "operation": "add",
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableReferenceTransport"
+      ],
+      "namespaces": [],
+      "public_declarations": [],
+      "declaration_inventory_method": "source commands only; receipt owned census authoritative",
+      "reverse_consumers": [],
+      "other_consumers": [],
+      "logical_status": "intended rejected control; no theorem admission",
+      "open_premises": [],
+      "explicit_premises": [
+        "V/Key arbitrary, actual Quiver V and DecidableEq full EdgeTrace.TotalEdge V. Existing ValidRootedState fixes root and carries actual structural WellFormed; no assumed serialization/transport oracle.",
+        "actionSlot is actual compactor remap at compaction and numeric identity at batch. trackedStep pairs actual applyAction state with Option.bind. transportSlotAt is chronological List.foldl; tracked_state forgets exactly to actual executeAt; tracked_none is absorbing.",
+        "compact_reference/action_reference/transport_reference derive Some target, final real-reference membership and exact old full dictionary lookup from actual ORIGINAL reference membership and structural invariant. No success/validity result for arbitrary bounds-only or unused slots.",
+        "transportReferences actually mapMs original reference rows. transportReferences_success derives successful list, same length and positional Forall2 of same key/final membership/exact payload. It does not assert a generic prefix embedding/subsequence in final references.",
+        "Actual Bool parallel-loop actions retain original slot0 through0→1→1→0; unused bounded slot2 is dropped and staysNone after actual reintroduction despite later directSome2. Distinct31,17,31,19 keys plus repeated31 make original order/multiplicity observable, with derived actual WF and finaltargetbound."
+      ],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "source_sha256": "a81f4b50114fcd35951a8ed8ee1ccf0a706bc26b3a73d6935d83f8867b826f2c",
+        "lean": "Exact selected receipt context only",
+        "replay_binding": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-reference-transport-checks-2026-10-15.json",
+        "replay_sha256": "c2392986e86871df84fd07fc4363c634a37930749e4f505a941a91278236a271",
+        "canonical_public_integration": "INSTALLED_SELECTED_SCOPE",
+        "whole_umbrella": "NOT_REPLAYED_BY_SELECTED_RECEIPT"
+      },
+      "runner": "python3 -B .noeaaeue/scripts/check_prefix_reference_transport.py",
+      "contribution": {
+        "license": "MIT; imported Apache-2.0 retained",
+        "human_direction": "R.A. Jacob Martone",
+        "formalization": "OpenAI Codex",
+        "individual_credits": [
+          "Leonardo de Moura",
+          "Jeremy Avigad",
+          "Mario Carneiro",
+          "Parikshit Khanna",
+          "Floris van Doorn"
+        ],
+        "scope": "Imported state/path/schedule/compaction and Lean/Mathlib source credits retained."
+      },
+      "license": "MIT; imported Apache-2.0 retained",
+      "placement_rationale": "Actual stored rooted path references and state-dependent compaction transport belong to Combinatorics/DirectedGraph.",
+      "git_blob": "2df0d6c0133a591db87bc5efe9b2c5c91cbb7738"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicCharacters.lean",
+      "original_path": "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicCharacters.lean",
+      "target_path": "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicCharacters.lean",
+      "sha256": "c595e55f46838683758ea9c66379968ac75a6f86ddfb5dc099c302f9d497a051",
+      "bytes": 9264,
+      "git_blob_content_identity": "205dc4afdc86d4be060642526fcceef3be32ac51",
+      "working_tree_state": "Exact current bytes observed; index/ref state not inspected",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicCharacters",
+      "subject": "NumberTheory",
+      "object": "Cyclotomic",
+      "source_role": "library",
+      "operation": "add",
+      "imports": [
+        "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicReduction",
+        "Mathlib.NumberTheory.MulChar.Basic",
+        "Mathlib.FieldTheory.Finite.Basic",
+        "Mathlib.NumberTheory.NumberField.Ideal.Basic"
+      ],
+      "namespaces": [
+        "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicCharacters"
+      ],
+      "public_declarations": [
+        {
+          "kind": "theorem",
+          "name": "restrictedRoots_surjective",
+          "line": 36
+        },
+        {
+          "kind": "def",
+          "name": "restrictedRootsEquiv",
+          "line": 50
+        },
+        {
+          "kind": "theorem",
+          "name": "card_sub_one_div_three",
+          "line": 61
+        },
+        {
+          "kind": "def",
+          "name": "cubicExponent",
+          "line": 70
+        },
+        {
+          "kind": "theorem",
+          "name": "cubicExponent_pos",
+          "line": 72
+        },
+        {
+          "kind": "def",
+          "name": "cubicChar",
+          "line": 127
+        },
+        {
+          "kind": "theorem",
+          "name": "cubicChar_reduce",
+          "line": 135
+        },
+        {
+          "kind": "theorem",
+          "name": "cubicChar_pow_three",
+          "line": 155
+        },
+        {
+          "kind": "theorem",
+          "name": "cubicChar_ne_one",
+          "line": 162
+        },
+        {
+          "kind": "theorem",
+          "name": "cubicChar_order",
+          "line": 183
+        }
+      ],
+      "declaration_inventory_method": "source commands only; receipt owned census authoritative",
+      "reverse_consumers": [
+        "GRWTSK.NumberTheory.Cyclotomic.Checks.Positive.ThirdCyclotomicCharacters",
+        "GRWTSK"
+      ],
+      "other_consumers": [
+        "docs/mathematics/NumberTheory/Cyclotomic/third-cyclotomic-characters.md"
+      ],
+      "logical_status": "selected source-qualified native result; registered at explicit integration checkpoint; selected receipt covers its recorded closure",
+      "open_premises": [],
+      "explicit_premises": [
+        "The actual restricted quotient reduction rootsOfUnity3O→rootsOfUnity3(O/P) is surjective and defines a multiplicative equivalence. This is not a whole-ring quotient equivalence.",
+        "Under the same good maximal hypotheses, actual q=Nat.card(O/P) satisfies3|(q-1), and m=(q-1)/3 is strictly positive.",
+        "An actual quotient units homomorphism u↦u^m into quotient cube roots is lifted through the actual restricted inverse to O, then zero-extended using MulChar.ofUnitHom. For every x:O/P, including0, πP(cubicChar(P,hgood)(x))=x^m.",
+        "The actual multiplicative character has cube equal to the trivial multiplicative character, is nontrivial and has order3. On units its value has cube1; its value at0 is0, so pointwise cube1 at0 is false."
+      ],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "source_sha256": "c595e55f46838683758ea9c66379968ac75a6f86ddfb5dc099c302f9d497a051",
+        "lean": "Exact selected receipt context only",
+        "replay_binding": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-characters-development-checks-2026-10-15-a7b1f5cb.json",
+        "replay_sha256": "528b3c85272c20e55ae66668fd942bde430b10635bc68b44c304b3796a10f286",
+        "canonical_public_integration": "INSTALLED_SELECTED_SCOPE",
+        "whole_umbrella": "NOT_REPLAYED_BY_SELECTED_RECEIPT"
+      },
+      "runner": "python3 -B .noeaaeue/scripts/check_third_cyclotomic_characters.py",
+      "contribution": {
+        "Mathlib_individual_credits": [
+          {
+            "authors": [
+              "Michael Stoll"
+            ],
+            "copyright_year": 2022,
+            "path": "Mathlib/NumberTheory/MulChar/Basic.lean"
+          },
+          {
+            "authors": [
+              "Johan Commelin"
+            ],
+            "copyright_year": 2020,
+            "path": "Mathlib/RingTheory/RootsOfUnity/Basic.lean"
+          },
+          {
+            "authors": [
+              "Xavier Roblot"
+            ],
+            "copyright_year": 2025,
+            "path": "Mathlib/NumberTheory/NumberField/Ideal/Basic.lean"
+          },
+          {
+            "authors": [
+              "Chris Hughes",
+              "Joey van Langen",
+              "Casper Putz"
+            ],
+            "copyright_year": 2018,
+            "path": "Mathlib/FieldTheory/Finite/Basic.lean"
+          }
+        ],
+        "OpenAI_primary": {
+          "git_blob": "06304e1efc036727b3fa27e37dd6a06ce0bf5e56",
+          "individual_author_boundary": "No individual source-header author invented.",
+          "line_ranges_one_based": [
+            [
+              377,
+              402
+            ],
+            [
+              429,
+              477
+            ],
+            [
+              553,
+              654
+            ]
+          ],
+          "path": "lean/OAI/NumberTheory/DirichletL/GaussSum/FiniteFourier.lean",
+          "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+          "project_author": "OpenAI",
+          "repository": "openai/math",
+          "sha256": "0e8e4184de91161a75802e3a26abfd19a322dffa6441968bf9caeb25800b5d7c"
+        },
+        "human_direction": "R.A. Jacob Martone",
+        "license": "Apache-2.0",
+        "local_contribution": "OpenAI Codex: adaptation, formalization/checking and source-bound documentation candidate; no novelty claim."
+      },
+      "license": "Apache-2.0",
+      "placement_rationale": "Actual cubic roots and multiplicative characters on maximal quotients of the third cyclotomic integer ring belong to NumberTheory/Cyclotomic.",
+      "git_blob": "205dc4afdc86d4be060642526fcceef3be32ac51"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Positive/ThirdCyclotomicCharacters.lean",
+      "original_path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Positive/ThirdCyclotomicCharacters.lean",
+      "target_path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Positive/ThirdCyclotomicCharacters.lean",
+      "sha256": "4832da80997b32be46ceb8ba498e86bb873a7e6111d9f2e70ee137211f0c4eb0",
+      "bytes": 3936,
+      "git_blob_content_identity": "be1dd19ddcc1dd3914154dc0a991307444a02c08",
+      "working_tree_state": "Exact current bytes observed; index/ref state not inspected",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.NumberTheory.Cyclotomic.Checks.Positive.ThirdCyclotomicCharacters",
+      "subject": "NumberTheory",
+      "object": "Cyclotomic/Checks/Positive",
+      "source_role": "positive-check",
+      "operation": "add",
+      "imports": [
+        "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicCharacters"
+      ],
+      "namespaces": [
+        "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicCharacters.Checks.Positive"
+      ],
+      "public_declarations": [
+        {
+          "kind": "theorem",
+          "name": "actual_root_inverse",
+          "line": 15
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_root_lift_unique",
+          "line": 21
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_zero_value",
+          "line": 27
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_one_value",
+          "line": 31
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_character_cube",
+          "line": 35
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_unit_cube",
+          "line": 38
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_trivial_character_zero",
+          "line": 44
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_zero_cube_not_one",
+          "line": 50
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_all_x_reduction",
+          "line": 54
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_good_character_nonvacuous",
+          "line": 60
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_ramified_card",
+          "line": 68
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_ramified_exponent_zero",
+          "line": 71
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_ramified_reduction_impossible",
+          "line": 76
+        }
+      ],
+      "declaration_inventory_method": "source commands only; receipt owned census authoritative",
+      "reverse_consumers": [
+        "GRWTSK.NumberTheory.Cyclotomic.Checks.Negative.ThirdCyclotomicCharacterZeroCube"
+      ],
+      "other_consumers": [],
+      "logical_status": "selected source-qualified native result; registered at explicit integration checkpoint; selected receipt covers its recorded closure",
+      "open_premises": [],
+      "explicit_premises": [
+        "The actual restricted quotient reduction rootsOfUnity3O→rootsOfUnity3(O/P) is surjective and defines a multiplicative equivalence. This is not a whole-ring quotient equivalence.",
+        "Under the same good maximal hypotheses, actual q=Nat.card(O/P) satisfies3|(q-1), and m=(q-1)/3 is strictly positive.",
+        "An actual quotient units homomorphism u↦u^m into quotient cube roots is lifted through the actual restricted inverse to O, then zero-extended using MulChar.ofUnitHom. For every x:O/P, including0, πP(cubicChar(P,hgood)(x))=x^m.",
+        "The actual multiplicative character has cube equal to the trivial multiplicative character, is nontrivial and has order3. On units its value has cube1; its value at0 is0, so pointwise cube1 at0 is false."
+      ],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "source_sha256": "4832da80997b32be46ceb8ba498e86bb873a7e6111d9f2e70ee137211f0c4eb0",
+        "lean": "Exact selected receipt context only",
+        "replay_binding": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-characters-development-checks-2026-10-15-a7b1f5cb.json",
+        "replay_sha256": "528b3c85272c20e55ae66668fd942bde430b10635bc68b44c304b3796a10f286",
+        "canonical_public_integration": "INSTALLED_SELECTED_SCOPE",
+        "whole_umbrella": "NOT_REPLAYED_BY_SELECTED_RECEIPT"
+      },
+      "runner": "python3 -B .noeaaeue/scripts/check_third_cyclotomic_characters.py",
+      "contribution": {
+        "Mathlib_individual_credits": [
+          {
+            "authors": [
+              "Michael Stoll"
+            ],
+            "copyright_year": 2022,
+            "path": "Mathlib/NumberTheory/MulChar/Basic.lean"
+          },
+          {
+            "authors": [
+              "Johan Commelin"
+            ],
+            "copyright_year": 2020,
+            "path": "Mathlib/RingTheory/RootsOfUnity/Basic.lean"
+          },
+          {
+            "authors": [
+              "Xavier Roblot"
+            ],
+            "copyright_year": 2025,
+            "path": "Mathlib/NumberTheory/NumberField/Ideal/Basic.lean"
+          },
+          {
+            "authors": [
+              "Chris Hughes",
+              "Joey van Langen",
+              "Casper Putz"
+            ],
+            "copyright_year": 2018,
+            "path": "Mathlib/FieldTheory/Finite/Basic.lean"
+          }
+        ],
+        "OpenAI_primary": {
+          "git_blob": "06304e1efc036727b3fa27e37dd6a06ce0bf5e56",
+          "individual_author_boundary": "No individual source-header author invented.",
+          "line_ranges_one_based": [
+            [
+              377,
+              402
+            ],
+            [
+              429,
+              477
+            ],
+            [
+              553,
+              654
+            ]
+          ],
+          "path": "lean/OAI/NumberTheory/DirichletL/GaussSum/FiniteFourier.lean",
+          "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+          "project_author": "OpenAI",
+          "repository": "openai/math",
+          "sha256": "0e8e4184de91161a75802e3a26abfd19a322dffa6441968bf9caeb25800b5d7c"
+        },
+        "human_direction": "R.A. Jacob Martone",
+        "license": "Apache-2.0",
+        "local_contribution": "OpenAI Codex: adaptation, formalization/checking and source-bound documentation candidate; no novelty claim."
+      },
+      "license": "Apache-2.0",
+      "placement_rationale": "Actual cubic roots and multiplicative characters on maximal quotients of the third cyclotomic integer ring belong to NumberTheory/Cyclotomic.",
+      "git_blob": "be1dd19ddcc1dd3914154dc0a991307444a02c08"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Negative/ThirdCyclotomicCharacterZeroCube.lean",
+      "original_path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Negative/ThirdCyclotomicCharacterZeroCube.lean",
+      "target_path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Negative/ThirdCyclotomicCharacterZeroCube.lean",
+      "sha256": "7e423a5a2cb5a9f6c78740f357fc1a41b832c01545e4a6e87ada20f8ccfb8242",
+      "bytes": 796,
+      "git_blob_content_identity": "600d6ed7b10a4d866fc7225ef52df024b136ab5f",
+      "working_tree_state": "Exact current bytes observed; index/ref state not inspected",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.NumberTheory.Cyclotomic.Checks.Negative.ThirdCyclotomicCharacterZeroCube",
+      "subject": "NumberTheory",
+      "object": "Cyclotomic/Checks/Negative",
+      "source_role": "negative-control",
+      "operation": "add",
+      "imports": [
+        "GRWTSK.NumberTheory.Cyclotomic.Checks.Positive.ThirdCyclotomicCharacters"
+      ],
+      "namespaces": [
+        "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicCharacters.Checks.Negative"
+      ],
+      "public_declarations": [],
+      "declaration_inventory_method": "source commands only; receipt owned census authoritative",
+      "reverse_consumers": [],
+      "other_consumers": [],
+      "logical_status": "intended rejected control; no theorem admission",
+      "open_premises": [],
+      "explicit_premises": [
+        "The actual restricted quotient reduction rootsOfUnity3O→rootsOfUnity3(O/P) is surjective and defines a multiplicative equivalence. This is not a whole-ring quotient equivalence.",
+        "Under the same good maximal hypotheses, actual q=Nat.card(O/P) satisfies3|(q-1), and m=(q-1)/3 is strictly positive.",
+        "An actual quotient units homomorphism u↦u^m into quotient cube roots is lifted through the actual restricted inverse to O, then zero-extended using MulChar.ofUnitHom. For every x:O/P, including0, πP(cubicChar(P,hgood)(x))=x^m.",
+        "The actual multiplicative character has cube equal to the trivial multiplicative character, is nontrivial and has order3. On units its value has cube1; its value at0 is0, so pointwise cube1 at0 is false."
+      ],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "source_sha256": "7e423a5a2cb5a9f6c78740f357fc1a41b832c01545e4a6e87ada20f8ccfb8242",
+        "lean": "Exact selected receipt context only",
+        "replay_binding": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-characters-development-checks-2026-10-15-a7b1f5cb.json",
+        "replay_sha256": "528b3c85272c20e55ae66668fd942bde430b10635bc68b44c304b3796a10f286",
+        "canonical_public_integration": "INSTALLED_SELECTED_SCOPE",
+        "whole_umbrella": "NOT_REPLAYED_BY_SELECTED_RECEIPT"
+      },
+      "runner": "python3 -B .noeaaeue/scripts/check_third_cyclotomic_characters.py",
+      "contribution": {
+        "Mathlib_individual_credits": [
+          {
+            "authors": [
+              "Michael Stoll"
+            ],
+            "copyright_year": 2022,
+            "path": "Mathlib/NumberTheory/MulChar/Basic.lean"
+          },
+          {
+            "authors": [
+              "Johan Commelin"
+            ],
+            "copyright_year": 2020,
+            "path": "Mathlib/RingTheory/RootsOfUnity/Basic.lean"
+          },
+          {
+            "authors": [
+              "Xavier Roblot"
+            ],
+            "copyright_year": 2025,
+            "path": "Mathlib/NumberTheory/NumberField/Ideal/Basic.lean"
+          },
+          {
+            "authors": [
+              "Chris Hughes",
+              "Joey van Langen",
+              "Casper Putz"
+            ],
+            "copyright_year": 2018,
+            "path": "Mathlib/FieldTheory/Finite/Basic.lean"
+          }
+        ],
+        "OpenAI_primary": {
+          "git_blob": "06304e1efc036727b3fa27e37dd6a06ce0bf5e56",
+          "individual_author_boundary": "No individual source-header author invented.",
+          "line_ranges_one_based": [
+            [
+              377,
+              402
+            ],
+            [
+              429,
+              477
+            ],
+            [
+              553,
+              654
+            ]
+          ],
+          "path": "lean/OAI/NumberTheory/DirichletL/GaussSum/FiniteFourier.lean",
+          "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+          "project_author": "OpenAI",
+          "repository": "openai/math",
+          "sha256": "0e8e4184de91161a75802e3a26abfd19a322dffa6441968bf9caeb25800b5d7c"
+        },
+        "human_direction": "R.A. Jacob Martone",
+        "license": "Apache-2.0",
+        "local_contribution": "OpenAI Codex: adaptation, formalization/checking and source-bound documentation candidate; no novelty claim."
+      },
+      "license": "Apache-2.0",
+      "placement_rationale": "Actual cubic roots and multiplicative characters on maximal quotients of the third cyclotomic integer ring belong to NumberTheory/Cyclotomic.",
+      "git_blob": "600d6ed7b10a4d866fc7225ef52df024b136ab5f"
     }
   ],
   "current_inventory": {
@@ -79685,7 +81565,7 @@
       "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/MomentToABC.lean"
     ],
     "replay": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/finite-moments-checks-2026-10-15-replay-2.json",
-    "scope": "Finite signed M\u00f6bius identity, explicit cutoffs, actual primitive triples, arbitrary joint weights; no abc estimate; shared migration untouched.",
+    "scope": "Finite signed Möbius identity, explicit cutoffs, actual primitive triples, arbitrary joint weights; no abc estimate; shared migration untouched.",
     "previous_owned_records_schema_only_fixed": [
       "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/PartialBounds.lean",
       "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Radical.lean",
@@ -79755,7 +81635,11 @@
     "remaining": [
       "source Lemmas 3.1 and 3.3 random-partition lower-tail concentration",
       "expected layer bounds and remaining parameter-dependent summation for Theorem 1.3"
-    ]
+    ],
+    "subsequent_discharge": {
+      "receipt": ".noeaaeue/evidence/Analysis/fourier/partition-concentration-checks-2026-10-15.json",
+      "scope": "Previously recorded Lemmas3.1/3.3, expected layer and final Theorem1.3 obligations discharged by a new selected replay; prior receipt bytes remain historical and unchanged."
+    }
   },
   "divisor_sector_reindexing_additions": {
     "paths": [
@@ -79769,5 +81653,43 @@
     ],
     "replay": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/divisor-sectors-checks-2026-10-15.json",
     "scope": "Exact finite sector bijection and scaled primitive Mobius identity; all radical/abc implications open."
+  },
+  "partition_concentration_additions": {
+    "date": "2026-10-15",
+    "status": "fresh-selected-kernel-checked",
+    "paths": [
+      "GRWTSK/Combinatorics/Sequences/ConditionalPartitionExposure.lean",
+      "GRWTSK/Combinatorics/Sequences/HypergeometricLowerTail.lean",
+      "GRWTSK/Combinatorics/Sequences/BalancedPartitionTails.lean",
+      "GRWTSK/Analysis/Fourier/ZModPartitionConcentration.lean",
+      "GRWTSK/Analysis/Fourier/ZModExpectedLayers.lean",
+      "GRWTSK/Analysis/Fourier/ZModBalancedExpectedLayers.lean",
+      "GRWTSK/Combinatorics/Sequences/PartitionExposureChecks.lean",
+      "GRWTSK/Analysis/Fourier/Checks/Positive/SubsetAntiConcentration.lean",
+      "GRWTSK/Analysis/Fourier/Checks/Negative/SubsetAntiConcentrationMissingRange.lean",
+      "GRWTSK/Analysis/Fourier/Checks/Negative/SubsetAntiConcentrationMissingPrime.lean"
+    ],
+    "receipt": ".noeaaeue/evidence/Analysis/fourier/partition-concentration-checks-2026-10-15.json",
+    "scope": "Conditional exposure, finite hypergeometric tails, actual partition concentration, expected Fourier layers and source Theorem1.3 are selected-kernel-checked. Aggregate imports expose the completed theorem and finite counterexamples. Global current-source observations, catalogs, frozen contracts and historical evidence retain their prior identities; shared whole-library integration remains pending.",
+    "receipt_sha256": "1885cf8f4563a235e3a446b77e6683e7d7290e82150d6643dfa461ca5d22bb51",
+    "owned_declarations": 660,
+    "library_closure_modules": 17,
+    "positive_controls": 2,
+    "intended_type_rejections": 2,
+    "contribution_record": ".noeaaeue/receipts/partition-exposure-concentration/contribution-status.json"
+  },
+  "additive_character_integration_additions": {
+    "paths": [
+      "GRWTSK/Analysis/Fourier/FiniteAdditiveProjector.lean",
+      "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/AdditiveCharacterMoments.lean",
+      "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Positive/AdditiveCharacterMoments.lean",
+      "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorMissingNoWrap.lean",
+      "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorWrongNormalization.lean",
+      "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorScaledCongruenceCancellation.lean",
+      "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorUnscaledJointWeight.lean",
+      "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorToABC.lean"
+    ],
+    "replay": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json",
+    "scope": "Exact finite Complex character projector and joint-weight primitive moment identities now registered/exported from their selected replay; all coefficient transfers, estimates and abc implications remain open. Global current-observation metadata is retained unchanged."
   }
 }

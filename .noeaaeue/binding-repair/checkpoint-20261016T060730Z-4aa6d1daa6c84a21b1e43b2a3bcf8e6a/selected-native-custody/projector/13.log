@@ -1,0 +1,6 @@
+/Users/think/Desktop/math/.noeaaeue/.local/additive-character-moments-replay/20261016T055402Z-1b47ac0b6a/source/GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorScaledCongruenceCancellation.lean:12:2: error: Type mismatch
+  h
+has type
+  characterProjector 8 (2 * 3) (2 * 3) (2 * 2) = 1
+but is expected to have type
+  characterProjector 8 (2 * 3) (2 * 3) (2 * 2) = characterProjector 8 3 3 2

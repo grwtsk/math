@@ -1,0 +1,7 @@
+/Users/think/Desktop/math/.noeaaeue/.local/additive-character-moments-replay/20261016T055402Z-1b47ac0b6a/source/GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorUnscaledJointWeight.lean:16:2: error: Type mismatch
+  h
+has type
+  (projectedJointMoment 2 2 5 fun a b c => ↑a * ↑b * ↑c) = 16
+but is expected to have type
+  (projectedJointMoment 2 2 5 fun a b c => ↑a * ↑b * ↑c) =
+    projectedJointMoment 2 1 5 fun a b c => ↑(2 * a) * ↑(2 * b) * ↑c
