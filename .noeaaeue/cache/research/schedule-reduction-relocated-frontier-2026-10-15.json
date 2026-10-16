@@ -1,0 +1,176 @@
+{
+  "schema": "source-qualified-relocated-context-frontier-v1",
+  "at": "2026-10-16T02:41:14.663788+00:00",
+  "branch": "main",
+  "head_observed": "8e35dcd5fb4f42640aaaaf68e682a2254736f4da",
+  "previous_frontier": {
+    "path": ".noeaaeue/cache/research/schedule-reduction-frontier-2026-10-15.json",
+    "sha256": "f032f5df787df915e3204e68fe9f883fd25de2b58199e7cdf6ad270031556212",
+    "bytes": 22139
+  },
+  "substantive_round": "Actual relocated cache consumers and complete reconstruction; source-qualified selected native replays after shared verifier drift; canonical working integration. No duplicate theorem or new RH claim.",
+  "native_selected_results": [
+    {
+      "receipt": {
+        "path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-compaction-schedule-relocated-context-r2-checks-2026-10-15.json",
+        "sha256": "013058efd194bb60ea9f13b41488cdff73c97bc73aa92c86b81399947fd23c3e",
+        "bytes": 3721363
+      },
+      "owned_declarations": 925,
+      "trust": 0,
+      "fatal_warnings": true,
+      "runtime_helper_exemptions": [],
+      "bound_source_control_and_pin_bytes_exact_at_recording": true,
+      "original_results_are_not_new_theorems": true
+    },
+    {
+      "receipt": {
+        "path": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-reduction-relocated-context-r2-checks-2026-10-15.json",
+        "sha256": "5e8fbb008e49654124344aaa05eea917d85aeb704881f54ea7a5daad3f3db6fc",
+        "bytes": 4876038
+      },
+      "owned_declarations": 57,
+      "trust": 0,
+      "fatal_warnings": true,
+      "runtime_helper_exemptions": [],
+      "bound_source_control_and_pin_bytes_exact_at_recording": true,
+      "original_results_are_not_new_theorems": true
+    }
+  ],
+  "historical_receipts": "Original and first relocated receipts retained byte-exact. Shared guard/protocol changes after the first relocated checks required separate r2 native receipts, never a hash rebind.",
+  "passive_native_contexts": {
+    "path": ".noeaaeue/cache/research/selected-replay-contexts/contexts-b07e97dd7a604d049106acd781439fac/manifest-r2.json",
+    "sha256": "f3172be5bc89e803c22cb9307604849ca29327a3f766d25f4fe4cf20c0c5aa4c",
+    "bytes": 121934
+  },
+  "decision": {
+    "path": ".noeaaeue/cache/decisions/source-layout-identity-v1.json",
+    "sha256": "7f628b3f0c450457473e84a29cc2186c952a9df227117cab7f8f31f3db9b2509",
+    "bytes": 5439
+  },
+  "canonical_integration": {
+    "path": ".noeaaeue/cache/research/schedule-reduction-canonical-integration-intent-2026-10-15-8f079ba3ca4d4fa7b81940a8a925c54f.json",
+    "sha256": "19b563f516ab2223457d02279f6ab435b2afc5d6d092d9e65bc02962c8f46dde",
+    "bytes": 82560
+  },
+  "working_structure": {
+    "registered_selected_sources": 6,
+    "new_canonical_guides": 2,
+    "inventory_only_umbrella_imports": 2,
+    "layout": "PASS in separately retained current report;435 library modules",
+    "historical334_sources": "retained, no acceptance refresh",
+    "canonical_publication": "Own two guide bodies can be committed. Shared migration/catalog/import/navigation consolidation remains monitor-owned and uncommitted; exact authored intent/preimages retained."
+  },
+  "documentation": {
+    "final_checks": {
+      "path": ".noeaaeue/cache/research/relocated-replay-operational-controls-2026-10-15/documentation-final-checks.json",
+      "sha256": "8ba7348defcceb2dbd83cbe14746c22ad943f56d6bde4d6932a13acea2e647b2",
+      "bytes": 2023
+    },
+    "normal": "PASS;175 maintained pages,608 legacy dispositions,5 hostile record controls",
+    "optimized": "PASS; same counts",
+    "tests_normal": 109,
+    "tests_optimized": 109,
+    "test_source_sha256": "d58d2d6b60f62130fa95a747bdeb24900abf129e51a61571cb448f44531017d1",
+    "earlier_failed_checks": "Retained separately; missing page registration gate changed through concurrent worker progress. Later pass does not rewrite them.",
+    "mathematical_acceptance": false
+  },
+  "operational_cache": {
+    "revision": "55b3a4ef0c05b81558eb8e4a213b056458b043d8b3e2400e990e8c20e77dfad4",
+    "parent": "ffc3e070cb7a67f8113ed46d3ec78ad76c1e4e464047034dd323c489240a0b75",
+    "roundtrip": {
+      "path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/relocated-cache-layout-roundtrip-r2-2026-10-15.json",
+      "sha256": "9dabc89d6fb3bc7efd212cb48b50df64b46f04c913e317efb7467d7608714034",
+      "bytes": 2863
+    },
+    "consumer": {
+      "path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/relocated-cache-prefix-consumer-r2-2026-10-15.json",
+      "sha256": "6fef3f05925ca995f7b9a722a4a1c9e8f28c4aab71666197d35fbdc15d145519",
+      "bytes": 17603
+    },
+    "lean_sources": 847,
+    "catalogs": 2,
+    "context_files": 9,
+    "exact_total": 858,
+    "metadata_findings": 82,
+    "layout_policy": "relocated-physical-v1",
+    "full_finite_mapped_path_set_and_bytes": "PASS",
+    "full_inverse_logical_path_set_and_bytes": "PASS",
+    "live_before_and_after_at_observed_head": "PASS",
+    "post_own_commit_live_HEAD": "Expected drift because the snapshot observes the pre-commit HEAD; next round must check actual current state rather than rebind this receipt.",
+    "source_proof_status": "unknown-unreplayed",
+    "all_source_mathematical_acceptance": false,
+    "old_failed_CAS": {
+      "path": ".noeaaeue/cache/attempts/939cce80639d446c9b1bc40008270de9.json",
+      "sha256": "f0b562564361321e9058bae2421bccb473091585155d8643034a50919e6c9cb9",
+      "bytes": 365
+    },
+    "old_retained_current_rejection": {
+      "path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/relocated-cache-layout-roundtrip-2026-10-15.json",
+      "sha256": "5fe7e64ebba5bcd015582eb9c2804939122037fc0409ec503c7c70db6bde1f9c",
+      "bytes": 4006
+    }
+  },
+  "source_scout": {
+    "retained_sources": {
+      "path": ".noeaaeue/cache/research/cubic-unit-suppliers-2026-10-15/preservation.json",
+      "sha256": "d8d2a37522e8fccbc189567eafa40712d66b221106ce6e9b790a3aa4b0292877",
+      "bytes": 2227
+    },
+    "openai_pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+    "mathlib_pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "actual_anthropic_pin": "e1a4e6508154ea59f030480661590a9fe3018011",
+    "arxiv": "1902.03483v2; contextual source only",
+    "new_constraints": [
+      "MulChar.ofUnitHom extends an actual units homomorphism by zero. Character power equality to the trivial character means nonunit zero; pointwise cube=1 at zero is false. Positive-exponent reduction must discharge the zero case.",
+      "restrictRootsOfUnity is a monoid homomorphism; an inverse on quotient roots requires a proved restricted bijection, not an invented whole-ring equivalence."
+    ],
+    "status": "SOURCE_INSPECTED; no new supplier theorem or native character/Jacobi acceptance"
+  },
+  "concurrent_progress": {
+    "incoming_main": "8e35dcd5fb4f42640aaaaf68e682a2254736f4da",
+    "incoming_review": {
+      "path": ".noeaaeue/cache/coordination/events/20261016T020147Z-incoming-horizon-history-c092ee35efc54b3e9df2b0dd2bc72760.json",
+      "sha256": "2e82806a9f9652df705bd829a489b2006ea58453fa22d5722023a271427c4e6c",
+      "bytes": 7637
+    },
+    "incoming_files": 12,
+    "exact_git_payloads": "All12 working files match committed merge blobs;11 publication package identities and5 active source identities checked.",
+    "limits": [
+      "Two HorizonWeightedAbelFlux/HorizonTriadicFluxCriterion Lean candidates are inert .lean.txt files; active suppliers absent.",
+      "HorizonTriadicFluxSubpower supplier OPEN; active wrappers still require explicit growth bridge and flux bound.",
+      "Native stages NOT_RUN;5 print-axioms commands are not complete owned-declaration audit. No producer recipe for opaque bundle hash or rerun of finite package claims.",
+      "Earlier tool/critical/closed-flux archives, stale hashes, missing references and explicit suppliers remain unchanged. Fixed exponent-zero bounds and every-positive-exponent subpower bounds are distinct."
+    ]
+  },
+  "next_tasks": [
+    {
+      "id": "scheduled-original-reference-transport",
+      "status": "OPEN_NOT_RUN",
+      "objective": "Derive cumulative partial remap totality only on actual original real-reference support across chronological actual batches/checkpoints, with exact retained occurrence/slot hypotheses and a genuine independently produced fixture. Preserve dropped-unused-prefix None versus later equal payload Some counterexample.",
+      "do_not_duplicate": "Existing schedule history erasure and direct/composed lookup counterexample already checked."
+    },
+    {
+      "id": "actual-cubic-character-unit-extension",
+      "status": "OPEN_NOT_RUN",
+      "objective": "Construct an actual cubic root-valued units homomorphism in a good finite quotient from checked primitive-root/restricted root bijection suppliers; extend via MulChar.ofUnitHom, then derive exponent/order facts with zero and unit cases explicit.",
+      "missing": "Actual special restricted root inverse/bijection; do not assume an arbitrary order3 character or desired Jacobi identity."
+    },
+    {
+      "id": "shared-consolidation",
+      "status": "PENDING_MONITOR",
+      "objective": "Integrate exact own6 source rows/two imports/new2guide bindings/links/credits/navigation while preserving all foreign current metadata variants. Never auto-apply archived ownpatch to nonmatching preimages or independently take over shared migration."
+    }
+  ],
+  "open_original_suppliers": [
+    "Actual cubic/sextic character/Jacobi primary-generator construction for good primes; exact coefficients/weights and completed corrections.",
+    "Common finite ideal support for all frequency twists, arithmetic analytic suppliers and original RH target.",
+    "Lean/Python/JSON/parser/hash/zlib/physical-path/filesystem/transaction refinement; no proof or permission authority from taxonomy/model review."
+  ],
+  "taxonomy": {
+    "declared_families": 16,
+    "declared_method_record_total": 215,
+    "actual_215_method_identities": "not supplied"
+  },
+  "review_independence": "Model/source reviews correlated; native kernel checking and bounded hostile operational controls are separately identified."
+}

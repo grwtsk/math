@@ -1,0 +1,40 @@
+{
+  "schema": "post-concurrent-registration-documentation-checks-v1",
+  "at": "2026-10-16T02:37:18.606780+00:00",
+  "sources": {
+    ".noeaaeue/scripts/check_documentation.py": "ea1192e8861533c6c8025b2c387d3620a6de2c97a67e2b2a62c0646d36d3a68a",
+    ".noeaaeue/scripts/check_documentation_layout.py": "ae785eb89062244113d01df31e659bf9b2df089da9ca42f359b6ea392ca43d73",
+    ".noeaaeue/scripts/test_documentation_layout.py": "d58d2d6b60f62130fa95a747bdeb24900abf129e51a61571cb448f44531017d1",
+    ".noeaaeue/documentation/reference/documentation-layout.json": "d71092945f8aa280d5d9f2b149010eada54f1cf95de734c29296a8e2a1af2d7e",
+    "docs/reference/object-source-bindings.json": "24ff4bf595edbeff9d989a317878d2169f3dbe06085f9a5989b96e9b95b8e349",
+    "docs/reference/math-source-catalog.json": "39e6b762ca238b48fcad64fb9bb32e4e624fd3c9e0a7aa4f26c75cb5d34f44d1"
+  },
+  "input_stable": true,
+  "reason": "Unrelated missing page registrations changed after captured integration failures; rerun checker against new actual shared metadata. Prior failures preserved.",
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "-B",
+        ".noeaaeue/scripts/check_documentation.py"
+      ],
+      "exit_code": 0,
+      "log": ".noeaaeue/.local/relocated-replay-2026-10-15/documentation-final-normal.log",
+      "log_sha256": "e3065e1a085f667bf72a53eb32b0a38ceb22bf7c8e18e225a75c43bfd609b39d",
+      "output": "175 maintained pages; 608 legacy dispositions; selected catalog and 5 hostile record controls passed\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "-O",
+        ".noeaaeue/scripts/check_documentation.py"
+      ],
+      "exit_code": 0,
+      "log": ".noeaaeue/.local/relocated-replay-2026-10-15/documentation-final-optimized.log",
+      "log_sha256": "e3065e1a085f667bf72a53eb32b0a38ceb22bf7c8e18e225a75c43bfd609b39d",
+      "output": "175 maintained pages; 608 legacy dispositions; selected catalog and 5 hostile record controls passed\n"
+    }
+  ],
+  "mathematical_acceptance": false
+}

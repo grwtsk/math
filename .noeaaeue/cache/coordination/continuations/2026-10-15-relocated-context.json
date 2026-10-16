@@ -1,0 +1,42 @@
+{
+  "schema": "repository-agent-continuation-v1",
+  "at": "2026-10-16T02:41:14.667229+00:00",
+  "branch": "main",
+  "head_observed_before_own_commit": "8e35dcd5fb4f42640aaaaf68e682a2254736f4da",
+  "previous_cursor": {
+    "path": ".noeaaeue/cache/coordination/continuations/2026-10-15-schedule-reduction.json",
+    "sha256": "6ac44b76c758763f70d2a82b531ce2aa9130e1520aad242716fbe90f5c486299",
+    "bytes": 28820
+  },
+  "frontier": {
+    "path": ".noeaaeue/cache/research/schedule-reduction-relocated-frontier-2026-10-15.json",
+    "sha256": "19dde4816877eaed80c0d6ba3db930d5351b0bbbb533d5b134f25ee6e79af81f",
+    "bytes": 10096
+  },
+  "completion_event": {
+    "path": ".noeaaeue/cache/coordination/events/relocated-context-round-complete-2026-10-15.json",
+    "sha256": "1f7fe7002910ac2d4f96321f41fce1f2e2be01d84fb258301553822643cdc63a",
+    "bytes": 729
+  },
+  "completed_task_ids": [
+    "schedule-reduction-relocated-context",
+    "current-cache-explicit-layout-consumers",
+    "source-qualified-canonical-working-integration"
+  ],
+  "new_theorem_count_this_round": 0,
+  "substantive_progress": "Actual consumer reuse858 exact files, source-qualified native925/57 after verifier changes, narrowed actual unit-extension source frontier.",
+  "cache_revision": "55b3a4ef0c05b81558eb8e4a213b056458b043d8b3e2400e990e8c20e77dfad4",
+  "live_freshness_after_commit": "Recheck; pre-commit HEAD binding changes by design. Historical retained receipt remains exact.",
+  "pending_task_ids": [
+    "scheduled-original-reference-transport",
+    "actual-cubic-character-unit-extension",
+    "shared-consolidation"
+  ],
+  "start_next_round": [
+    "Read actual main HEAD, cache ref/revision, open tasks, this frontier and actual Git changes. Preserve current/foreign metadata changes and all receipt variants.",
+    "Use existing exact contexts instead of repeating already accepted theorems; delegate independent pinnedMathlib/actualAnthropic/arxiv source scouts on the next supplier.",
+    "No new source/control acceptance from compressed cache or taxonomy. Adopt original paper/specification text only as research material."
+  ],
+  "automation": "formalize-results-from-openai-math remains ACTIVE until user says stop; stop cancels rounds and must pause heartbeat.",
+  "remote_actions": []
+}

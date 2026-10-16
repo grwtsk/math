@@ -1,0 +1,36 @@
+{
+  "schema": "exact-passive-observation-variants-v1",
+  "variants": [
+    {
+      "original_variant": {
+        "path": ".noeaaeue/cache/research/source-observation-variants/25ce8282b50242408ccc4b5b67c2d11c3c6adc9105b52b3d5d51a1456bf46ed1.json",
+        "sha256": "25ce8282b50242408ccc4b5b67c2d11c3c6adc9105b52b3d5d51a1456bf46ed1",
+        "bytes": 4849800
+      },
+      "blob": {
+        "raw_sha256": "25ce8282b50242408ccc4b5b67c2d11c3c6adc9105b52b3d5d51a1456bf46ed1",
+        "raw_bytes": 4849800,
+        "compressed_sha256": "a5ee80b190dad5bf798399348e6b5c1d114d05b9041971acfd2100f13f59594d",
+        "compressed_bytes": 420626,
+        "compression": "zlib"
+      },
+      "object_path": ".noeaaeue/cache/objects/25/25ce8282b50242408ccc4b5b67c2d11c3c6adc9105b52b3d5d51a1456bf46ed1.zlib"
+    },
+    {
+      "original_variant": {
+        "path": ".noeaaeue/cache/research/source-observation-variants/7dac23206574f4bd3b8429acc1548df69c531678a67ff5ca60f52bdf82a64a19.json",
+        "sha256": "7dac23206574f4bd3b8429acc1548df69c531678a67ff5ca60f52bdf82a64a19",
+        "bytes": 4769370
+      },
+      "blob": {
+        "raw_sha256": "7dac23206574f4bd3b8429acc1548df69c531678a67ff5ca60f52bdf82a64a19",
+        "raw_bytes": 4769370,
+        "compressed_sha256": "4c5e37781e654e9af157fcf5758dc2f110c0b3635e4121980ed9725f57a1db19",
+        "compressed_bytes": 412844,
+        "compression": "zlib"
+      },
+      "object_path": ".noeaaeue/cache/objects/7d/7dac23206574f4bd3b8429acc1548df69c531678a67ff5ca60f52bdf82a64a19.zlib"
+    }
+  ],
+  "limits": "Engineering observations only; no source-role hash or historical receipt rebinding. Complete prior/current raw JSON bytes retained and independently decoded; raw working copies untouched."
+}
