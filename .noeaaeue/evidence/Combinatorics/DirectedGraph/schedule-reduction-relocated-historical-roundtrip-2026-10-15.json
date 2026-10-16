@@ -1,0 +1,41 @@
+{
+  "schema": "relocated-historical-source-cache-roundtrip-v1",
+  "at": "2026-10-16T01:36:04.421994+00:00",
+  "outcome": "passed",
+  "revision": "ce89c2a26424ddbcce16a6c5140513f61510b17b196f72dd6bc2b0cfef85550d",
+  "parent": "e7f9a83e5b0286a524838e4eece8bd47e2adf4722f4a8e81978ffbcbcad6e14a",
+  "physical_cache_root": ".noeaaeue/cache",
+  "schema_logical_paths_retained": true,
+  "exact_original_readers": [
+    {
+      "original_path": "scripts/cache_math.py",
+      "base_commit": "b2b5449e846cdd48a20c24828636c35c139c829c",
+      "sha256": "81f7d48a575ee212d8fac9bad812cc93c3c4ace3eae031ae82acabac2c44d424",
+      "bytes": 35863
+    },
+    {
+      "original_path": "scripts/monitor_math.py",
+      "base_commit": "b2b5449e846cdd48a20c24828636c35c139c829c",
+      "sha256": "c704231abfee6917eaf83fac321504029937e5267500cb4d92cf60272c7f9d33",
+      "bytes": 84706
+    }
+  ],
+  "entire_parent_chain": "PASS: original schema and retained exact bytes at observed relocated physical root",
+  "source_count": 814,
+  "catalog_file_count": 2,
+  "context_file_count": 9,
+  "all_exact_files": 825,
+  "exact_path_byte_identity": true,
+  "physical_external_temp": true,
+  "owned_temporary_tree_removed": true,
+  "expanded_code_executed": false,
+  "all_cache_sources": "unknown-unreplayed; mathematical_acceptancefalse",
+  "metadata_findings_retained": 88,
+  "live_source_catalog_context_verification": "NOT_ACCEPTED: root cleanup moved operational paths; old adapters and historical schema are distinct. R1 live drift and R2 no-current collision preserved.",
+  "actual_consumer_reuse": "Original r17 successful revision-bound consumer/empty-prefix/reflexive/longer controls retained for parent e7f9...; child r18 not created because original-root current ref preflight rejected relocation.",
+  "failed_reader_preparations_retained": [
+    "Attempt1 missing monitor_math import dependency; no cache mutation.",
+    "Attempt2 froze concurrently adapted new schema, then rejected duplicated physical .noeaaeue prefix; no cache mutation. Third attempt uses exact original Git blobs, not rewritten schema."
+  ],
+  "limits": "Operational historical custody only; no migrated runtime/live/cache acceptance or Lean proof of filesystem/hash/compression/parser/JSON/IO refinement."
+}
