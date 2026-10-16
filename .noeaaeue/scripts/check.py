@@ -1,46 +1,93 @@
 from repository_paths import repository_path
 """Pinned Lean source replay and audits. Run after: lake update; lake exe cache get <selected imports>."""
-import hashlib,json,os,pathlib,re,subprocess,sys,tempfile,time
+import argparse,hashlib,json,os,pathlib,re,subprocess,sys,tempfile,time
 root=pathlib.Path(__file__).resolve().parents[2]
 from project_replay import compile_project_closure
+from incremental_lean import CommandCache,DependencyGraph,RuntimeIdentityGuard,artifact_family,regular_bytes,create_origin,validate_runtime_environment
+from check_math_trust import dependency_search_path
 def require(condition,message):
  if not condition:raise RuntimeError(message)
 # Structural completeness is the first fail-closed boundary for a real replay.
 # Hostile manifest fixtures copy the complete current Lean inventory so they
 # reach the subsequent, path-specific source-and-environment binding gate.
-subprocess.run([sys.executable,"-B",str(root/".noeaaeue/scripts/check_math_layout.py")],cwd=root,check=True)
+env=dict(os.environ)
+env.pop("LEAN_SRC_PATH",None)
+validate_runtime_environment(env)
+subprocess.run([sys.executable,"-B",str(root/".noeaaeue/scripts/check_math_layout.py")],cwd=root,env=env,check=True)
 manifest=json.loads((root/".noeaaeue/evidence/source-manifest.json").read_text())
 input_manifest_sha256=hashlib.sha256((root/".noeaaeue/evidence/source-manifest.json").read_bytes()).hexdigest()
 for rel,expected in manifest["files"].items():
  p=repository_path(root, rel)
  require(p.is_file() and not p.is_symlink() and hashlib.sha256(p.read_bytes()).hexdigest()==expected,"invalidated: "+rel)
-lean=subprocess.check_output(["elan","which","lean"],cwd=root,text=True).strip()
-version=subprocess.check_output([lean,"--version"],text=True)
+parser=argparse.ArgumentParser(description=__doc__)
+parser.add_argument("--cold",action="store_true",help="Replay every manifested source and validation command without cache reuse")
+args=parser.parse_args()
+lean=str(pathlib.Path(subprocess.check_output(["elan","which","lean"],cwd=root,env=env,text=True).strip()).resolve())
+runtime=RuntimeIdentityGuard(pathlib.Path(lean),env=env)
+runtime.assert_stable(env=env)
+version=subprocess.check_output([lean,"--version"],cwd=root,env=env,text=True)
+runtime.assert_stable(env=env)
 require("4.33.0" in version and "d8b18978322de05a8f3dba51ef03cf5461676c17" in version,"invalidated: Lean toolchain identity")
-cache=os.environ.get("LEAN_PATH")
+cache=env.get("LEAN_PATH")
 if not cache:
- cache=subprocess.check_output(["lake","env","printenv","LEAN_PATH"],cwd=root,text=True).strip()
+ cache=subprocess.check_output(["lake","env","printenv","LEAN_PATH"],cwd=root,env=env,text=True).strip()
+runtime.assert_stable(env=env)
+paths,removed_paths=dependency_search_path(cache,root,lean)
+paths=list(dict.fromkeys([*paths,str(pathlib.Path(lean).resolve().parent.parent/"lib/lean")]))
 (root/'.noeaaeue/.local').mkdir(parents=True, exist_ok=True)
 run_directory=pathlib.Path(tempfile.mkdtemp(prefix="source-check-",dir=root/'.noeaaeue/.local'))
 build=run_directory/"build";build.mkdir()
-env=dict(os.environ,LEAN_PATH=str(build)+":"+cache)
+env["LEAN_PATH"]=os.pathsep.join([str(build),*paths])
+command_cache=CommandCache(root/".noeaaeue/.local/incremental-lean",cold=args.cold,namespace="legacy-validation-v1",require_origin=True)
+graph=DependencyGraph({rel[:-5].replace("/","."):repository_path(root,rel)
+                       for rel in manifest["files"] if rel.endswith(".lean")},paths,pathlib.Path(lean),cache_root=command_cache.root,compiler_env=env)
+runtime.assert_stable(env=env)
+require(graph.compiler_runtime_identity==runtime.identity,"compiler runtime changed before validation graph")
+policy_paths=[pathlib.Path(__file__),root/".noeaaeue/scripts/project_replay.py",root/".noeaaeue/scripts/repository_paths.py",
+              root/".noeaaeue/evidence/expected-declarations.json",
+              *(root/".noeaaeue/scripts"/name for name in ("check_math_trust.py","incremental_lean.py","cache_math.py","monitor_math.py"))]
+policy={str(p):hashlib.sha256(regular_bytes(p)).hexdigest() for p in policy_paths}
+pending=[];compiled_objects={};compiled_commands={};origin=None;command_evidence=[]
+cache_publication={"attempt_id":run_directory.name+":cache-publication","outcome":"not-attempted","terminal":True}
 results=[]
 def run(label,rel,expected=0,oracle=None):
+ runtime.assert_stable(env=env)
+ for path,family in compiled_objects.items():
+  require(artifact_family(path)==family,"compiled object changed: "+str(path))
  source=repository_path(root, rel)
  require(source.is_file() and not source.is_symlink(),"source-unavailable: "+rel)
  source_hash=hashlib.sha256(source.read_bytes()).hexdigest();argv=[lean,"--trust=0","--memory=4096","--threads=1"]
  require(source_hash==manifest["files"][rel],"invalidated: "+rel)
+ target=None
  if label.startswith("compile-"):
   target=build/pathlib.Path(rel).with_suffix(".olean");target.parent.mkdir(parents=True,exist_ok=True);argv+=["-DwarningAsError=true","-o",str(target)]
  argv.append(str(source));t=time.monotonic()
+ dependencies=graph.dependencies(regular_bytes(source));local_objects=[]
+ for dependency in dependencies:
+  name=dependency["module"]
+  if name in graph.local_sources:
+   require(name in compiled_commands,"import has no validated command object: "+name)
+   local_objects.append({"module":name,**compiled_commands[name]})
+ material={"source":rel,"source_sha256":source_hash,"dependencies":dependencies,"local_imported_objects":local_objects,
+           "argv":[str(a).replace(str(build),"<build>") for a in argv],"policy":policy,
+           "compiler_runtime_sha256":runtime.sha256,
+           "profile":manifest["profile"],"expected_exit_policy":expected,"label":label,"search_paths":paths}
  try:
-  p=subprocess.run(argv,cwd=root,env=env,capture_output=True,text=True,timeout=600)
+  reused=command_cache.lookup(material,destination=target)
+  p=reused.process if reused is not None else subprocess.run(argv,cwd=root,env=env,capture_output=True,text=True,timeout=600)
+  runtime.assert_stable(env=env)
   output=(p.stdout+p.stderr).replace(str(root)+"/","")
   ok=(p.returncode==0 if expected==0 else p.returncode!=0) and (oracle is None or oracle(output))
   ok=ok and source.is_file() and not source.is_symlink() and hashlib.sha256(source.read_bytes()).hexdigest()==source_hash
-  results.append(dict(name=label,outcome="passed" if ok else "failed",exit_code=p.returncode,seconds=time.monotonic()-t,source_sha256=source_hash,output=output))
+  results.append(dict(name=label,outcome="passed" if ok else "failed",exit_code=p.returncode,seconds=time.monotonic()-t,source_sha256=source_hash,output=output,cache_hit=reused is not None,cache_key=reused.key if reused else command_cache.key(material)))
+  if reused is not None:results[-1]["origin_receipt"]=reused.provenance["origin_receipt"]
   print(label,p.returncode,flush=True)
   require(ok,repr(results[-1]))
+  if target is not None:
+   compiled_objects[target]=artifact_family(target)
+   compiled_commands[rel[:-5].replace("/",".")]={"command_key":command_cache.key(material),"artifacts":compiled_objects[target]}
+  command_evidence.append(command_cache.command_evidence(material,process=p,artifacts=compiled_objects[target] if target else {}))
+  if reused is None:pending.append((material,p,target))
   return output
  except subprocess.TimeoutExpired:
   results.append(dict(name=label,outcome="timed-out",seconds=time.monotonic()-t));raise
@@ -68,8 +115,36 @@ try:
   run("reject-wrong-four-color","GRWTSK/Combinatorics/GraphTheory/UnitDistanceGraph/Moser/Checks/Negative/WrongColor.lean",1,lambda s:"is false" in s)
   sorry=run("sorry-compiles-but-audit-rejects","GRWTSK/Logic/ProofChecking/Checks/Negative/SorryControl.lean",oracle=lambda s:"sorryAx" in s)
   results[-1]["audit_outcome"]="refuted-or-limited"
+ for rel,expected in manifest["files"].items():
+  require(hashlib.sha256(regular_bytes(repository_path(root,rel))).hexdigest()==expected,"invalidated at final validation: "+rel)
+ require(hashlib.sha256(regular_bytes(root/".noeaaeue/evidence/source-manifest.json")).hexdigest()==input_manifest_sha256,"manifest changed during validation")
+ require(all(hashlib.sha256(regular_bytes(pathlib.Path(p))).hexdigest()==expected for p,expected in policy.items()),"validation policy changed")
+ graph.assert_unchanged()
+ for path,family in compiled_objects.items():require(artifact_family(path)==family,"compiled object changed: "+str(path))
+ command_cache.assert_origins_unchanged()
+ runtime.assert_unchanged(env=env)
+ origin=create_origin(run_directory/"proof-validation-origin.json",{
+  "attempt_id":run_directory.name+":proof-validation","outcome":"passed","terminal":True,
+  "evidence":{"driver":"legacy-validation","manifest_sha256":input_manifest_sha256,
+              "validation_mode":"cold" if args.cold else "incremental","commands":command_evidence,"command_results":results,
+              "compiler_sha256":graph.compiler_hash,"source_sha256":manifest["files"],
+              "compiler_runtime_identity":runtime.identity,"compiler_runtime_sha256":runtime.sha256,
+              "policy":policy,"project_objects":{str(path):family for path,family in compiled_objects.items()}}})
+ cache_publication.update(outcome="publishing",terminal=False,proof_validation_origin=origin)
+ try:
+  for material,process,target in pending:
+   runtime.assert_stable(env=env)
+   command_cache.publish(material,process=process,destination=target,provenance={"origin_receipt":origin})
+  command_cache.assert_origins_unchanged()
+  runtime.assert_unchanged(env=env)
+ except Exception as error:
+  cache_publication.update(outcome="failed",terminal=True,error=str(error));raise
+ else:cache_publication.update(outcome="passed",terminal=True)
 finally:
+ graph.close()
+ with (run_directory/"cache-publication.json").open("x",encoding="utf-8") as output:
+  output.write(json.dumps(cache_publication,indent=2)+"\n")
  receipt=run_directory/"receipt.json"
  with receipt.open("x",encoding="utf-8") as output:
-  output.write(json.dumps(dict(schema_version=1,input_manifest_sha256=input_manifest_sha256,lean_binary_sha256=hashlib.sha256(pathlib.Path(lean).read_bytes()).hexdigest(),toolchain_commit="d8b18978322de05a8f3dba51ef03cf5461676c17",dependency_revisions={p["name"]:p["rev"] for p in json.loads((root/"lake-manifest.json").read_text())["packages"]},dependency_mode="pinned dependency objects kernel-checked; selected source modules freshly elaborated",results=results),indent=2)+"\n")
+  output.write(json.dumps(dict(schema_version=1,input_manifest_sha256=input_manifest_sha256,lean_binary_sha256=graph.compiler_hash,compiler_runtime_identity=runtime.identity,compiler_runtime_sha256=runtime.sha256,toolchain_commit="d8b18978322de05a8f3dba51ef03cf5461676c17",dependency_revisions={p["name"]:p["rev"] for p in json.loads((root/"lake-manifest.json").read_text())["packages"]},dependency_mode="exact source and dependency object bindings; current or retained prior successful source elaboration and validation",validation_mode="cold" if args.cold else "incremental",removed_search_paths=removed_paths,proof_validation_origin=origin,cache_publication=cache_publication,results=results),indent=2)+"\n")
 print(json.dumps({"outcomes":{r["name"]:r["outcome"] for r in results},"receipt":str(receipt.relative_to(root))}))

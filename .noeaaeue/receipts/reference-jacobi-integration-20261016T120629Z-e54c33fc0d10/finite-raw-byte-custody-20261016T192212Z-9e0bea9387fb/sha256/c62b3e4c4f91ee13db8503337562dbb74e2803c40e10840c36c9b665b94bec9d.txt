@@ -1,0 +1,10 @@
+'EulerP04RH.ASSubsetClosure.subset_potential_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EulerP04RH.ASSubsetClosure.AS_implies_uniform_subset_polynomial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EulerP04RH.ASSubsetClosure.threeQuarterBand_eventually_eligible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EulerP04RH.ASSubsetClosure.AS_implies_threeQuarterBand_eventual_polynomial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,51 @@
+test_all_cached_artifact_members_corrupt_or_missing_force_native_retry (test_moebius_incremental.ApplicationIncremental) ... ok
+test_application_origin_missing_runtime_binding_cannot_authorize_same_key (test_moebius_incremental.ApplicationIncremental) ... ok
+test_cache_origin_replacement_after_preflight_fails_closed (test_moebius_incremental.ApplicationIncremental) ... ok
+test_cached_postcheck_remains_deferred_until_terminal_full_guard (test_moebius_incremental.ApplicationIncremental) ... ok
+test_changed_leaf_rebuilds_only_local_dependents (test_moebius_incremental.ApplicationIncremental) ... ok
+test_changed_timeout_requires_fresh_application_module_commands (test_moebius_incremental.ApplicationIncremental) ... ok
+test_cold_rebuilds_all_nodes (test_moebius_incremental.ApplicationIncremental) ... ok
+test_default_incremental_contract_requires_exact_schema_types_and_assets (test_moebius_incremental.ApplicationIncremental) ... ok
+test_default_nonincremental_manifest_rejects_before_children_even_with_cold (test_moebius_incremental.ApplicationIncremental) ... ok
+test_dylib_only_change_rejects_prior_application_and_public_compilations (test_moebius_incremental.ApplicationIncremental) ... ok
+test_every_partial_output_family_collision_is_rejected (test_moebius_incremental.ApplicationIncremental) ... ok
+test_explicit_legacy_contract_freezes_observed_runtime_and_stays_fresh (test_moebius_incremental.ApplicationIncremental) ... ok
+test_explicit_public_candidates_compile_only_additional_app_nodes (test_moebius_incremental.ApplicationIncremental) ... ok
+test_external_dependency_content_invalidates_application_cache (test_moebius_incremental.ApplicationIncremental) ... ok
+test_external_origins_cannot_relabel_boolean_runtime_values_as_integers (test_moebius_incremental.ApplicationIncremental) ... ok
+test_final_artifact_drift_does_not_publish (test_moebius_incremental.ApplicationIncremental) ... ok
+test_final_gate_failure_does_not_publish (test_moebius_incremental.ApplicationIncremental) ... ok
+test_frozen_loader_failure_restores_aliases_and_private_modules (test_moebius_incremental.ApplicationIncremental) ... ok
+test_frozen_loader_ignores_poisoned_canonical_modules (test_moebius_incremental.ApplicationIncremental) ... ok
+test_full_main_default_successor_cold_warm_and_poisoned_canonical_imports (test_moebius_incremental.ApplicationIncremental) ... ok
+test_full_main_explicit_manifest_overrides_absent_active_default (test_moebius_incremental.ApplicationIncremental) ... ok
+test_generic_same_key_origin_is_not_application_qualification (test_moebius_incremental.ApplicationIncremental) ... ok
+test_late_ambient_loader_override_cannot_enter_prefix_helper_child (test_moebius_incremental.ApplicationIncremental) ... ok
+test_loaded_private_parser_mutation_is_rejected (test_moebius_incremental.ApplicationIncremental) ... ok
+test_loader_overrides_fail_before_every_real_child (test_moebius_incremental.ApplicationIncremental) ... ok
+test_manifest_requires_complete_strict_runtime_identity_before_any_child (test_moebius_incremental.ApplicationIncremental) ... ok
+test_manifest_same_executable_runtime_change_rejects_before_any_child (test_moebius_incremental.ApplicationIncremental) ... ok
+test_missing_active_default_rejects_before_children_with_producer_refresh_command (test_moebius_incremental.ApplicationIncremental) ... ok
+test_missing_or_corrupt_application_origin_forces_fresh_commands (test_moebius_incremental.ApplicationIncremental) ... ok
+test_new_public_aggregate_can_reference_actual_retained_module_origins (test_moebius_incremental.ApplicationIncremental) ... ok
+test_origin_without_exact_command_membership_cannot_authorize_reuse (test_moebius_incremental.ApplicationIncremental) ... ok
+test_per_command_loader_override_is_rejected_before_cache_or_native (test_moebius_incremental.ApplicationIncremental) ... ok
+test_public_453_plus_3_uses_fresh_full_census_and_all_controls (test_moebius_incremental.ApplicationIncremental) ... ok
+test_public_compiler_flags_and_current_policy_mismatches_are_misses (test_moebius_incremental.ApplicationIncremental) ... ok
+test_public_external_search_shadow_and_absent_member_are_misses (test_moebius_incremental.ApplicationIncremental) ... ok
+test_public_origin_and_command_policy_require_runtime_binding (test_moebius_incremental.ApplicationIncremental) ... ok
+test_public_transitive_source_drift_keeps_independent_candidate (test_moebius_incremental.ApplicationIncremental) ... ok
+test_run_specific_dependency_identity_does_not_defeat_reuse (test_moebius_incremental.ApplicationIncremental) ... ok
+test_runtime_drift_during_publication_preserves_origin_but_fails_transaction (test_moebius_incremental.ApplicationIncremental) ... ok
+test_runtime_earlier_resolution_shadow_blocks_origin_without_native (test_moebius_incremental.ApplicationIncremental) ... ok
+test_runtime_edit_and_restore_blocks_terminal_origin_and_cache_publication (test_moebius_incremental.ApplicationIncremental) ... ok
+test_unqualified_application_does_not_publish (test_moebius_incremental.ApplicationIncremental) ... ok
+test_warm_hits_do_not_rescan_the_whole_application (test_moebius_incremental.ApplicationIncremental) ... ok
+test_warm_hits_do_not_serialize_whole_receipts_per_node (test_moebius_incremental.ApplicationIncremental) ... ok
+test_warm_nodes_reused_but_census_and_controls_stay_fresh (test_moebius_incremental.ApplicationIncremental) ... ok
+test_warm_runtime_full_byte_checks_only_at_qualification_boundaries (test_moebius_incremental.ApplicationIncremental) ... ok
+
+----------------------------------------------------------------------
+Ran 46 tests in 43.844s
+
+OK

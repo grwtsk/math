@@ -1,0 +1,50 @@
+{
+  "active": {
+    "bytes": 247495,
+    "path": "/Users/local/Desktop/math/.noeaaeue/bindings/moebius-current-inputs-current.json",
+    "sha256": "b37f947774bee8794d174718d06a4d7bd044924821c428c3296313cea705499e"
+  },
+  "all_other_old_inputs_unchanged": 1411,
+  "assets": 28,
+  "b4_archives": [
+    {
+      "bytes": 229243,
+      "path": "/Users/local/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/runtime-only-B4-prior-20261016T181104Z-c2f7169865ce.json",
+      "sha256": "b4ea709d3636c3432cf954d2b684240b5639434fde1244eee2f10058e0a37d62"
+    },
+    {
+      "bytes": 229243,
+      "path": "/Users/local/Desktop/math/.noeaaeue/bindings/moebius-current-inputs-history/prior-b4ea709d3636c3432cf954d2b684240b5639434fde1244eee2f10058e0a37d62.json",
+      "sha256": "b4ea709d3636c3432cf954d2b684240b5639434fde1244eee2f10058e0a37d62"
+    }
+  ],
+  "compiler_runtime_sha256": "c48f0fb338d4947e55e4f3974e49b7d1d4a12ad0ac0a783355a135d7bda01f7d",
+  "contract": {
+    "bytes": 247495,
+    "path": "/Users/local/Desktop/math/.noeaaeue/bindings/moebius-current-inputs-runtime-observation-20261016T181104Z-c2f7169865ce.json",
+    "sha256": "b37f947774bee8794d174718d06a4d7bd044924821c428c3296313cea705499e"
+  },
+  "designated_active_contract_deltas": 1,
+  "exact_process_code_deltas": 76,
+  "maintained_math_source_bytes_unchanged": 887,
+  "modules": 456,
+  "native_jobs": 0,
+  "new_mathematical_acceptance": false,
+  "next": "NEW public source capture with caller05601 then exact first release; unchanged warm comparison required before APP",
+  "observed_at": "2026-10-16T18:12:21.894508+00:00",
+  "old_contract": {
+    "bytes": 229243,
+    "path": "/Users/local/Desktop/math/.noeaaeue/bindings/moebius-current-inputs-observation-20261016T165943Z-531bc57865164cc5a9188ef2e9ed0db4.json",
+    "sha256": "b4ea709d3636c3432cf954d2b684240b5639434fde1244eee2f10058e0a37d62"
+  },
+  "old_readset_input_count": 1488,
+  "receipt": {
+    "bytes": 4710,
+    "path": "/Users/local/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/runtime-only-observation-20261016T181104Z-c2f7169865ce.json",
+    "sha256": "e68c67917cc06fcc06ae1a86b57278fe04ff2871436946527db54bbece01a708"
+  },
+  "schema": "coordinator-runtime-only-metadata-review-v1",
+  "source_cache_cf31_unchanged": true,
+  "source_observation_B778_unchanged": true,
+  "status": "PASS_SOURCE_OBSERVATION_NOT_NATIVE_ACCEPTANCE"
+}

@@ -5996,20 +5996,20 @@
     }
   ],
   "counts_by_operation": {
-    "add": 245,
+    "add": 247,
     "keep": 336,
     "move": 206
   },
   "counts_by_role": {
     "audit-driver": 35,
-    "library": 434,
+    "library": 436,
     "negative-control": 177,
     "positive-check": 141
   },
   "counts_by_subject": {
     "Algebra": 19,
     "Analysis": 269,
-    "Combinatorics": 72,
+    "Combinatorics": 73,
     "Data": 1,
     "DynamicalSystems": 17,
     "GroupTheory": 4,
@@ -6017,7 +6017,7 @@
     "LinearAlgebra": 59,
     "Logic": 63,
     "MeasureTheory": 5,
-    "NumberTheory": 246,
+    "NumberTheory": 247,
     "Order": 6,
     "Spectral": 25
   },
@@ -6217,7 +6217,7 @@
         "acceptance_inherited": false,
         "code": "historical-catalog-source-hash-stale",
         "historical_sha256": "44e183a171c933e0635d85b0316dd37f88667640c1b4acdde90fd759b506a106",
-        "observed_sha256": "79b42ec3fc844aee565bc901d2221974f097c73fde2070342eda110c3f46e205",
+        "observed_sha256": "59f2d6d0f3b2277a04808ca19aed4e3459644fee90409b5e31f9f0384542ee05",
         "path": "GRWTSK.lean"
       },
       {
@@ -6597,6 +6597,16 @@
       {
         "acceptance_inherited": false,
         "code": "absent-from-historical-source-catalog",
+        "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixDirectLookupMissingReference.lean"
+      },
+      {
+        "acceptance_inherited": false,
+        "code": "absent-from-historical-source-catalog",
+        "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableDirectLookup.lean"
+      },
+      {
+        "acceptance_inherited": false,
+        "code": "absent-from-historical-source-catalog",
         "path": "GRWTSK/Combinatorics/Sequences/BalancedPartitionTails.lean"
       },
       {
@@ -6774,6 +6784,16 @@
       },
       {
         "acceptance_inherited": false,
+        "code": "absent-from-historical-source-catalog",
+        "path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Negative/ThirdCyclotomicJacobiWrongSign.lean"
+      },
+      {
+        "acceptance_inherited": false,
+        "code": "absent-from-historical-source-catalog",
+        "path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Positive/ThirdCyclotomicJacobi.lean"
+      },
+      {
+        "acceptance_inherited": false,
         "code": "historical-catalog-source-hash-stale",
         "historical_sha256": "23330ce4bd519083f9fe8e09ecb9aaf6724a614d6b4a576afef395351e27c549",
         "observed_sha256": "9d753528696a5334da5579167260de117e5dd29582f9834592a037152fc04abb",
@@ -6889,7 +6909,7 @@
         "path": "GRWTSK/Logic/Counterexamples/ComplexSymmetryAndPositivity.lean"
       }
     ],
-    "identity": "20d22365fdcecde85ba5b67460cfc79153aa6d6c3dd8a6ac8e253f79a12939cf",
+    "identity": "042015b7bf0acc7360e4a2d455423fbb127a45801ddac6e93f2bbd5729189c9b",
     "mathematical_admission": false,
     "path": ".noeaaeue/bindings/current-source-observations.json",
     "public_entrypoint_closure": [
@@ -7090,6 +7110,7 @@
       "GRWTSK.Combinatorics.DirectedGraph.PrefixTableBatch",
       "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCheckpoint",
       "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCompaction",
+      "GRWTSK.Combinatorics.DirectedGraph.PrefixTableDirectLookup",
       "GRWTSK.Combinatorics.DirectedGraph.PrefixTableReferenceTransport",
       "GRWTSK.Combinatorics.DirectedGraph.PrefixTableReindex",
       "GRWTSK.Combinatorics.DirectedGraph.PrefixTableSchedule",
@@ -7215,6 +7236,7 @@
       "GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators",
       "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicCharacters",
       "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicIdeals",
+      "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicJacobi",
       "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicReduction",
       "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ABCStatement",
       "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.AdditiveCharacterMoments",
@@ -7346,10 +7368,10 @@
       "GRWTSK.Spectral.SturmianFiniteVolume"
     ],
     "public_release_eligible": false,
-    "source_count": 878,
+    "source_count": 884,
     "sources": [
       {
-        "bytes": 26397,
+        "bytes": 26523,
         "classification_reason": "entrypoint-library-source",
         "mathematical_admission": false,
         "path": "GRWTSK.lean",
@@ -7357,7 +7379,7 @@
         "proof_status": "not-replayed",
         "public_release_eligible": false,
         "qualified_role_alias": null,
-        "sha256": "79b42ec3fc844aee565bc901d2221974f097c73fde2070342eda110c3f46e205",
+        "sha256": "59f2d6d0f3b2277a04808ca19aed4e3459644fee90409b5e31f9f0384542ee05",
         "source_role": "library",
         "source_set": "active"
       },
@@ -11951,6 +11973,19 @@
         "source_set": "active"
       },
       {
+        "bytes": 1157,
+        "classification_reason": "subject-local-validation-source",
+        "mathematical_admission": false,
+        "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixDirectLookupMissingReference.lean",
+        "physical_role": "negative-control",
+        "proof_status": "not-replayed",
+        "public_release_eligible": false,
+        "qualified_role_alias": null,
+        "sha256": "28512178908cebac1e8b07e8c64ecfc53f964af231ee3cb35bbe227cb69e3b4a",
+        "source_role": "negative-control",
+        "source_set": "active"
+      },
+      {
         "bytes": 553,
         "classification_reason": "subject-local-validation-source",
         "mathematical_admission": false,
@@ -12224,6 +12259,19 @@
         "source_set": "active"
       },
       {
+        "bytes": 14966,
+        "classification_reason": "subject-local-validation-source",
+        "mathematical_admission": false,
+        "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableDirectLookup.lean",
+        "physical_role": "positive-check",
+        "proof_status": "not-replayed",
+        "public_release_eligible": false,
+        "qualified_role_alias": null,
+        "sha256": "55041326f1c9dd1e0235159fb06a0f8003fe8da0fa641bc91427dd7e05c1db4c",
+        "source_role": "positive-check",
+        "source_set": "active"
+      },
+      {
         "bytes": 7784,
         "classification_reason": "subject-local-validation-source",
         "mathematical_admission": false,
@@ -12467,6 +12515,19 @@
         "public_release_eligible": false,
         "qualified_role_alias": null,
         "sha256": "fe95a8c59bb0a1e1e9a2a4eba1e5405deb4bcabac3159e0aefcd3db364aad56f",
+        "source_role": "library",
+        "source_set": "active"
+      },
+      {
+        "bytes": 3521,
+        "classification_reason": "entrypoint-library-source",
+        "mathematical_admission": false,
+        "path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableDirectLookup.lean",
+        "physical_role": "library",
+        "proof_status": "not-replayed",
+        "public_release_eligible": false,
+        "qualified_role_alias": null,
+        "sha256": "5f099e606e01fec069843167202c0d4ea2e82cd17f0fac3d14fc83b6772bd12c",
         "source_role": "library",
         "source_set": "active"
       },
@@ -15271,6 +15332,19 @@
         "source_set": "active"
       },
       {
+        "bytes": 926,
+        "classification_reason": "subject-local-validation-source",
+        "mathematical_admission": false,
+        "path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Negative/ThirdCyclotomicJacobiWrongSign.lean",
+        "physical_role": "negative-control",
+        "proof_status": "not-replayed",
+        "public_release_eligible": false,
+        "qualified_role_alias": null,
+        "sha256": "279161089d192e306cbb3d9a1055c99b23a44b7aaa3ef1c8b431d94021df5847",
+        "source_role": "negative-control",
+        "source_set": "active"
+      },
+      {
         "bytes": 647,
         "classification_reason": "subject-local-validation-source",
         "mathematical_admission": false,
@@ -15310,6 +15384,19 @@
         "source_set": "active"
       },
       {
+        "bytes": 3017,
+        "classification_reason": "subject-local-validation-source",
+        "mathematical_admission": false,
+        "path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Positive/ThirdCyclotomicJacobi.lean",
+        "physical_role": "positive-check",
+        "proof_status": "not-replayed",
+        "public_release_eligible": false,
+        "qualified_role_alias": null,
+        "sha256": "659186b454e7b588fd0ec36a9c4813f945db77f8dbb6b9e4abe45d7c61fb616f",
+        "source_role": "positive-check",
+        "source_set": "active"
+      },
+      {
         "bytes": 3020,
         "classification_reason": "subject-local-validation-source",
         "mathematical_admission": false,
@@ -15345,6 +15432,19 @@
         "public_release_eligible": false,
         "qualified_role_alias": null,
         "sha256": "be784982bbbdbfefdb5b1e2906d69e4d18f0ae0408cec7a4805605a6382cda87",
+        "source_role": "library",
+        "source_set": "active"
+      },
+      {
+        "bytes": 3571,
+        "classification_reason": "entrypoint-library-source",
+        "mathematical_admission": false,
+        "path": "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicJacobi.lean",
+        "physical_role": "library",
+        "proof_status": "not-replayed",
+        "public_release_eligible": false,
+        "qualified_role_alias": null,
+        "sha256": "2426a4fb0689cf6102e72cb174b9469641164450e656f3d9192357764f723623",
         "source_role": "library",
         "source_set": "active"
       },
@@ -18776,9 +18876,9 @@
     "status": "OBSERVED_CURRENT_SOURCES_NOT_THEOREM_ACCEPTANCE"
   },
   "historical_catalog_scope": "Retained historical bindings and verdicts; current bytes do not inherit mathematical acceptance.",
-  "present_lean_source_count": 850,
+  "present_lean_source_count": 852,
   "schema": "grwtsk-math-source-catalog-v1",
-  "source_count": 787,
+  "source_count": 789,
   "sources": [
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -88117,6 +88217,188 @@
         "whole_umbrella": "NOT_REPLAYED_BY_SELECTED_RECEIPT"
       },
       "working_tree_state": "Exact current bytes observed; index/ref state not inspected"
+    },
+    {
+      "bytes": 3521,
+      "contribution": {
+        "Lean_individual_credits": [
+          {
+            "authors": [
+              "Mario Carneiro",
+              "James Gallicchio"
+            ],
+            "license": "Apache-2.0",
+            "path": "Init/Data/List/Nat/Pairwise.lean"
+          }
+        ],
+        "human_direction": "grwtsk contributors",
+        "license": "MIT",
+        "local_contribution": "OpenAI Codex adaptation/formalization/checking; no novelty or independent-validation claim",
+        "prior_fixture_credits": "Existing owner MIT schedule/reference positive fixtures retained in self-contained control."
+      },
+      "declaration_inventory_method": "source commands only; complete owned native census in selected receipt is authoritative",
+      "explicit_premises": [
+        "Quiver V; decidable equality on complete typed total edges",
+        "root : V; actual ValidRootedState root Key",
+        "actual finite List(Action root Key)",
+        "Original (key,slot) belongs to the actual initial real-reference list. Bounds alone are insufficient."
+      ],
+      "git_blob": "d515a8e8136ed725403e229d50d69f8ba298f061",
+      "git_blob_content_identity": "d515a8e8136ed725403e229d50d69f8ba298f061",
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableReferenceTransport"
+      ],
+      "license": "MIT",
+      "logical_status": "selected native result; new public integration pending separate frozen full replay",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableDirectLookup",
+      "namespaces": [
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableDirectLookup"
+      ],
+      "object": "DirectedGraph",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableDirectLookup.lean",
+      "other_consumers": [
+        "docs/mathematics/Combinatorics/DirectedGraph/prefix-table-direct-lookup.md"
+      ],
+      "path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableDirectLookup.lean",
+      "placement_rationale": "Combinatorics/DirectedGraph matches the actual mathematical object; no taxonomy evolution.",
+      "public_declarations": [
+        {
+          "kind": "def",
+          "line": 31,
+          "name": "directLookupAt"
+        },
+        {
+          "kind": "theorem",
+          "line": 42,
+          "name": "transportSlotAt_eq_directLookup_of_reference"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableDirectLookup"
+      ],
+      "runner": "python3 -B .noeaaeue/scripts/check_prefix_direct_lookup.py",
+      "sha256": "5f099e606e01fec069843167202c0d4ea2e82cd17f0fac3d14fc83b6772bd12c",
+      "source_role": "library",
+      "source_root": "GRWTSK",
+      "subject": "Combinatorics",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableDirectLookup.lean",
+      "verification": {
+        "canonical_public_integration": "SELECTED_EXPORT_PREPARED_GLOBAL_CHECKPOINT_PENDING",
+        "inventory": "observed-current-bytes",
+        "lean": "Exact selected receipt context only",
+        "replay_binding": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-direct-lookup-selected-2026-10-16-3d871160-r4.json",
+        "replay_sha256": "73280a1c057172c7f20bca526e4d5ec6e6d490644301099bc4203e9375b9ac31",
+        "source_sha256": "5f099e606e01fec069843167202c0d4ea2e82cd17f0fac3d14fc83b6772bd12c",
+        "whole_umbrella": "NOT_REPLAYED_BY_SELECTED_RECEIPT"
+      },
+      "working_tree_state": "Exact current bytes observed; Git inclusion is separate"
+    },
+    {
+      "bytes": 3571,
+      "contribution": {
+        "Mathlib_individual_credits": [
+          {
+            "additional_acknowledgment": "Alexander Spahl bachelor-thesis code",
+            "authors": [
+              "Michael Stoll"
+            ],
+            "license": "Apache-2.0",
+            "path": "Mathlib/NumberTheory/JacobiSum/Basic.lean"
+          }
+        ],
+        "OpenAI_primary": {
+          "lines": [
+            656,
+            668
+          ],
+          "path": "lean/OAI/NumberTheory/DirichletL/GaussSum/FiniteFourier.lean",
+          "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+          "repository": "openai/math",
+          "sha256": "0e8e4184de91161a75802e3a26abfd19a322dffa6441968bf9caeb25800b5d7c"
+        },
+        "human_direction": "grwtsk contributors",
+        "license": "Apache-2.0",
+        "local_contribution": "OpenAI Codex adaptation/formalization/checking; no novelty or independent-validation claim",
+        "source_evidence": ".noeaaeue/cache/research/third-cyclotomic-jacobi-source-682f4eb84b5d4b3f8ff38aec9054e90a/record.json"
+      },
+      "declaration_inventory_method": "source commands only; complete owned native census in selected receipt is authoritative",
+      "explicit_premises": [
+        "Actual O=integers(CyclotomicField 3 Q), specified omega and lambda=omega-1",
+        "P : Ideal O, P.IsMaximal, lambda notin P",
+        "Actual constructed zero-extended cubicChar P hgood; no extra nontriviality premise is needed by the pinned primary-congruence lemma."
+      ],
+      "git_blob": "359ef903db9780c21c4f2fa5c50f1400de515a3c",
+      "git_blob_content_identity": "359ef903db9780c21c4f2fa5c50f1400de515a3c",
+      "imports": [
+        "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicCharacters",
+        "Mathlib.NumberTheory.JacobiSum.Basic",
+        "Mathlib.Tactic.Ring"
+      ],
+      "license": "Apache-2.0",
+      "logical_status": "selected native result; new public integration pending separate frozen full replay",
+      "module": "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicJacobi",
+      "namespaces": [
+        "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicJacobi"
+      ],
+      "object": "Cyclotomic",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicJacobi.lean",
+      "other_consumers": [
+        "docs/mathematics/NumberTheory/Cyclotomic/third-cyclotomic-jacobi.md"
+      ],
+      "path": "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicJacobi.lean",
+      "placement_rationale": "NumberTheory/Cyclotomic matches the actual mathematical object; no taxonomy evolution.",
+      "public_declarations": [
+        {
+          "kind": "theorem",
+          "line": 38,
+          "name": "cubicJacobi_primary"
+        },
+        {
+          "kind": "theorem",
+          "line": 49,
+          "name": "lambda_sq_dvd_cubicJacobi_add_one"
+        },
+        {
+          "kind": "theorem",
+          "line": 58,
+          "name": "lambda_sq_dvd_neg_cubicJacobi_sub_one"
+        },
+        {
+          "kind": "theorem",
+          "line": 67,
+          "name": "lambda_not_dvd_two"
+        },
+        {
+          "kind": "theorem",
+          "line": 74,
+          "name": "lambda_sq_not_dvd_cubicJacobi_sub_one"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.NumberTheory.Cyclotomic.Checks.Positive.ThirdCyclotomicJacobi"
+      ],
+      "runner": "python3 -B .noeaaeue/scripts/check_third_cyclotomic_jacobi.py",
+      "sha256": "2426a4fb0689cf6102e72cb174b9469641164450e656f3d9192357764f723623",
+      "source_role": "library",
+      "source_root": "GRWTSK",
+      "subject": "NumberTheory",
+      "target_path": "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicJacobi.lean",
+      "verification": {
+        "canonical_public_integration": "SELECTED_EXPORT_PREPARED_GLOBAL_CHECKPOINT_PENDING",
+        "inventory": "observed-current-bytes",
+        "lean": "Exact selected receipt context only",
+        "replay_binding": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-jacobi-development-2026-10-16-8dcc930e-a3.json",
+        "replay_sha256": "32ae3f58ceafb23f40d1ca0319a052b2ad1e2374a8af60deee001005aaf27d8b",
+        "source_sha256": "2426a4fb0689cf6102e72cb174b9469641164450e656f3d9192357764f723623",
+        "whole_umbrella": "NOT_REPLAYED_BY_SELECTED_RECEIPT"
+      },
+      "working_tree_state": "Exact current bytes observed; Git inclusion is separate"
     }
   ]
 }

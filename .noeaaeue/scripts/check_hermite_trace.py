@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Replay finite signed-root traces from fresh selected project objects.
+"""Replay finite signed-root traces from verified selected project objects.
 
 Pinned dependency objects are reused; this is not a Mathlib source rebuild,
 whole-repository admission, independent review, or unconditional RH proof.
@@ -16,6 +16,9 @@ import re
 import subprocess
 import tempfile
 import time
+
+from selected_incremental import (SelectedReplayCache, SelectedCompilerDiscovery,
+                                  freeze_incremental_policy)
 
 ROOT = Path(__file__).resolve().parents[2]
 LIBRARY = [
@@ -43,13 +46,19 @@ def sha(data):
     return hashlib.sha256(data).hexdigest()
 
 
+_compiler_discovery = SelectedCompilerDiscovery()
+
+
 def command(*args):
-    return subprocess.check_output(args, cwd=ROOT, text=True).strip()
+    return _compiler_discovery.command(args, cwd=ROOT)
 
 
 def main():
+    _compiler_discovery.reset()
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--receipt", help="absent repository-relative durable JSON destination")
+    parser.add_argument("--cold", action="store_true",
+                        help="recompile and revalidate every selected module without cache reuse")
     args = parser.parse_args()
     destination = None
     if args.receipt:
@@ -71,10 +80,11 @@ def main():
             print("DEFERRED: another native replay holds the shared lock", flush=True)
             return 2
         require(not guard.competing_jobs(ROOT), "native replay busy")
-        return replay(guard, destination)
+        return replay(guard, destination, cold=args.cold)
 
 
-def replay(guard, destination):
+def replay(guard, destination, cold=False):
+    _compiler_discovery.reset()
     require((ROOT / "lean-toolchain").read_text().strip() == "leanprover/lean4:v4.33.0",
             "Lean pin mismatch")
     pins = {p["name"]: p["rev"] for p in json.loads((ROOT / "lake-manifest.json").read_text())["packages"]}
@@ -109,6 +119,7 @@ def replay(guard, destination):
     source, build = run / "source", run / "build"
     source.mkdir()
     build.mkdir()
+    freeze_incremental_policy(guard, ROOT, frozen_bytes)
     for rel, body in frozen_bytes.items():
         path = source / rel
         path.parent.mkdir(parents=True, exist_ok=True)
@@ -138,7 +149,7 @@ def replay(guard, destination):
             "and checked again before acceptance; dependency sources are not rebuilt."),
         "scope": (
             "Only the selected signed-root-trace modules and their complete local import "
-            "closure are freshly elaborated from immutable source copies. Positive "
+            "closure are validated from immutable source copies with explicit fresh or cached compilation provenance. Positive "
             "consumers and intended type-rejection controls are checked separately; "
             "all owned declarations and transitive axioms in that library closure are "
             "audited. The unchanged pinned Mathlib RH target source is fingerprinted "
@@ -173,6 +184,10 @@ def replay(guard, destination):
             require(sha((source / "SelectedAudit.lean").read_bytes())
                     == receipt["audit_wrapper_sha256"], "audit wrapper drift")
 
+    incremental = SelectedReplayCache(
+        ROOT, guard, source, build, frozen_bytes, paths, lean, receipt, cold=cold,
+        runtime_guard=_compiler_discovery.require_guard(lean))
+
     def compile_source(rel, output=False, expected=None):
         stable()
         argv = [lean, "-j1", "--trust=0", "--memory=4096", "-DwarningAsError=true", "--root=" + str(source)]
@@ -182,12 +197,13 @@ def replay(guard, destination):
             argv += ["-o", str(obj)]
         argv.append(str(source / rel))
         started = time.monotonic()
-        process = subprocess.run(argv, cwd=source, env=env, capture_output=True, text=True, timeout=600)
+        process = incremental.run(rel, argv=argv, cwd=source, env=env, output=output, expected=expected, timeout=600)
         diagnostic = process.stdout + process.stderr
         (run / (str(len(receipt["results"])) + ".log")).write_text(diagnostic)
         receipt["results"].append({"path": rel, "argv": argv, "exit_code": process.returncode,
                                   "seconds": time.monotonic() - started,
                                   "output_sha256": sha(diagnostic.encode()), "expected_rejection": expected is not None})
+        incremental.annotate_result(receipt["results"][-1])
         save()
         if expected is None:
             require(process.returncode == 0, "Lean rejection: " + rel + "\n" +
@@ -227,6 +243,7 @@ def replay(guard, destination):
         for rel, expected in NEGATIVE:
             compile_source(rel, expected=expected)
         stable()
+        incremental.accept()
         receipt["outcome"] = "passed"
         receipt["mathematical_outcomes"] = ["PARTIAL_RESULT_CHECKED"]
         save()
@@ -238,6 +255,8 @@ def replay(guard, destination):
                           "receipt": str(destination or run / "receipt.json")}), flush=True)
         return 0
     except Exception as error:
+        if "incremental" in locals():
+            incremental.close()
         receipt["outcome"], receipt["failure"] = "failed", str(error)
         save()
         raise

@@ -1,0 +1,42 @@
+{
+  "schema": "moebius-current-runtime-profile-v2",
+  "kind": "pinned-lean-generated-partial-recursor-profile",
+  "profile_sha256": "53256c3d4956d2ef48909d4347d216c625e134fd5b51f7d906ccbe13e0bd3d0f",
+  "entries": [
+    {
+      "helper": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator._unsafe_rec",
+      "original": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator",
+      "owner": "GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators",
+      "owner_source_sha256": "7ee299eed00ef1cf731e1e1b1ea7a507ae8e83d5ea0ed63f0861cf63f0e42f2c"
+    },
+    {
+      "helper": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator._unsafe_rec",
+      "original": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.spikeDenominator",
+      "owner": "GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators",
+      "owner_source_sha256": "7ee299eed00ef1cf731e1e1b1ea7a507ae8e83d5ea0ed63f0861cf63f0e42f2c"
+    },
+    {
+      "helper": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.numerator._unsafe_rec",
+      "original": "GRWTSK.RiemannHypothesis.BranchSequenceRealization.numerator",
+      "owner": "GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators",
+      "owner_source_sha256": "7ee299eed00ef1cf731e1e1b1ea7a507ae8e83d5ea0ed63f0861cf63f0e42f2c"
+    },
+    {
+      "helper": "GRWTSK.ProofHorizon.CorkscrewChamberCap.affectedClosure._unsafe_rec",
+      "original": "GRWTSK.ProofHorizon.CorkscrewChamberCap.affectedClosure",
+      "owner": "GRWTSK.Order.Closure.FiniteDependencyClosure",
+      "owner_source_sha256": "e78778c5b623abadfc23a668517cb4b1652ef6365962263b8440f8a156af5dec"
+    },
+    {
+      "helper": "GRWTSK.ProofHorizon.CorkscrewChamberCap.routeClosureFrom._unsafe_rec",
+      "original": "GRWTSK.ProofHorizon.CorkscrewChamberCap.routeClosureFrom",
+      "owner": "GRWTSK.Logic.Inference.FiniteRuleSystems",
+      "owner_source_sha256": "f54cb4c2f050a02fc2f3e66de3952ff10ddb0582ca096326bf11aef822b8fd02"
+    }
+  ],
+  "source_observation": "Fresh current owner closure compiled with trust=0 and fatal warnings; default native census observed all five partial pairs. Exact Expr/universe qualification is pending below.",
+  "status": "observed-not-yet-qualified",
+  "historical_profile_sha256": "f782a16a10fdea61ae3e8a2d3e4f3bc48865dc6129c442f8f0e575378fbc3b85",
+  "historical_profile_scope": "Preserved old source qualification; not rebound to current owner bytes.",
+  "qualification_receipt": ".noeaaeue/binding-repair/native/moebius-current-20261016T020032Z-b0c20a0b/receipt.json"
+}

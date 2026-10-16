@@ -45,7 +45,7 @@ Use the pinned Lean and Mathlib toolchain. Run the package build and the relevan
 
 The scoped entry points include the CCC energy checker, the Ten Martini checker and `.noeaaeue/scripts/check_original_pickup.py`. Refresh current source manifests after changed bytes, preserving unrelated scopes. Never attach an old receipt to changed source as current verification. Temporary extraction and replay output belongs in ignored local storage.
 
-Run `python3 .noeaaeue/checks/Analysis/Fourier/Controls/check.py --output <absent-directory>` in the pinned checkout with dependencies already installed. It compiles selected sources into fresh objects, checks consumers/axioms, and requires six unsupported inferences to fail. Its receipt records exact input hashes. It grants no effect authority and uses no independent human reviewer.
+Run `python3 .noeaaeue/scripts/check_fourier_controls.py --output <absent-directory>` in the pinned checkout with dependencies already installed. It compiles selected sources into fresh objects, checks consumers/axioms, and requires six unsupported inferences to fail. Its receipt records exact input hashes. It grants no effect authority and uses no independent human reviewer.
 
 Run the independent public replay with:
 

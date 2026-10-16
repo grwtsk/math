@@ -1,0 +1,124 @@
+{
+  "schema": "source-bound-public33-pure-controls-v1",
+  "tests": 33,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "mode": "optimized",
+  "source_before": {
+    "/Users/local/Desktop/math/.noeaaeue/scripts/check_math_trust.py": {
+      "sha256": "e499a582a71bc7b15708e59c401caf1bb0620635a49006d89ba37883d73fc592",
+      "bytes": 96482
+    },
+    "/Users/local/Desktop/math/.noeaaeue/scripts/incremental_math_trust.py": {
+      "sha256": "3eb3aa384e424d7131097c70dba4377e11345d719246fee1e6645a3227042dd1",
+      "bytes": 17191
+    },
+    "/Users/local/Desktop/math/.noeaaeue/scripts/test_incremental_math_trust.py": {
+      "sha256": "07de1837f114e86d4d68813d79cade58614b7e66544a979cb2ade675ad7c1e83",
+      "bytes": 13786
+    },
+    "/Users/local/Desktop/math/.noeaaeue/scripts/incremental_lean.py": {
+      "sha256": "089f5c980be2aa3b1606ae9ddf12a09ec5df2bf6d6544f52690447b640882f12",
+      "bytes": 60843
+    },
+    "/Users/local/Desktop/math/.noeaaeue/scripts/cache_math.py": {
+      "sha256": "d73bebfeca4ec709fdc68741cba13a09611ae49a0095b4140dd5d2f3e6bb1c06",
+      "bytes": 36017
+    },
+    "/Users/local/Desktop/math/.noeaaeue/scripts/monitor_math.py": {
+      "sha256": "a757804707ffe811aa27d295aa82dcdaddf7b3c90f9c3bd6a47d27ec3b0890e3",
+      "bytes": 85340
+    },
+    "/Users/local/Desktop/math/.noeaaeue/scripts/repository_paths.py": {
+      "sha256": "4bd02ac496dc2fbd141b19f23ba86291db1618a0ae298a76beab28701ff24d22",
+      "bytes": 2343
+    },
+    "/Users/local/Desktop/math/.noeaaeue/scripts/owned_audit_protocol.py": {
+      "sha256": "56b62242a080f7327bd1a3eac1f234fa0d68a22dc68151693793b35c30e6f114",
+      "bytes": 17196
+    },
+    "/Users/local/Desktop/math/.noeaaeue/scripts/source_observations.py": {
+      "sha256": "a153565b7b3162470309f2fae9432110415b7934648a7f58f91f84821ab68125",
+      "bytes": 13216
+    },
+    "/Users/local/Desktop/math/.noeaaeue/scripts/check.py": {
+      "sha256": "e7d8a0178573523db5c77799d3fa944fe989947dabe587c2d8f89b3b43e46a28",
+      "bytes": 11673
+    },
+    "/Users/local/Desktop/math/.noeaaeue/scripts/project_replay.py": {
+      "sha256": "99e70e8534e2d8c1e22fc359f17cd9775e597daa794093600d1faba5fab1d5bf",
+      "bytes": 1151
+    },
+    "/Users/local/Desktop/math/.noeaaeue/scripts/check_math_layout.py": {
+      "sha256": "28340d93733f3551606b293e522b0a7775354d9d55753186b2521859be2a5cb6",
+      "bytes": 80719
+    },
+    "/Users/local/Desktop/math/GRWTSK/Logic/ProofChecking/Checks/OwnedDeclarationAudit.lean": {
+      "sha256": "94eb4533f7b97b38b5165b015a16149f01b98fd110978292b0e2e3dbdc2773c3",
+      "bytes": 13158
+    }
+  },
+  "source_after": {
+    "/Users/local/Desktop/math/.noeaaeue/scripts/check_math_trust.py": {
+      "sha256": "e499a582a71bc7b15708e59c401caf1bb0620635a49006d89ba37883d73fc592",
+      "bytes": 96482
+    },
+    "/Users/local/Desktop/math/.noeaaeue/scripts/incremental_math_trust.py": {
+      "sha256": "3eb3aa384e424d7131097c70dba4377e11345d719246fee1e6645a3227042dd1",
+      "bytes": 17191
+    },
+    "/Users/local/Desktop/math/.noeaaeue/scripts/test_incremental_math_trust.py": {
+      "sha256": "07de1837f114e86d4d68813d79cade58614b7e66544a979cb2ade675ad7c1e83",
+      "bytes": 13786
+    },
+    "/Users/local/Desktop/math/.noeaaeue/scripts/incremental_lean.py": {
+      "sha256": "089f5c980be2aa3b1606ae9ddf12a09ec5df2bf6d6544f52690447b640882f12",
+      "bytes": 60843
+    },
+    "/Users/local/Desktop/math/.noeaaeue/scripts/cache_math.py": {
+      "sha256": "d73bebfeca4ec709fdc68741cba13a09611ae49a0095b4140dd5d2f3e6bb1c06",
+      "bytes": 36017
+    },
+    "/Users/local/Desktop/math/.noeaaeue/scripts/monitor_math.py": {
+      "sha256": "a757804707ffe811aa27d295aa82dcdaddf7b3c90f9c3bd6a47d27ec3b0890e3",
+      "bytes": 85340
+    },
+    "/Users/local/Desktop/math/.noeaaeue/scripts/repository_paths.py": {
+      "sha256": "4bd02ac496dc2fbd141b19f23ba86291db1618a0ae298a76beab28701ff24d22",
+      "bytes": 2343
+    },
+    "/Users/local/Desktop/math/.noeaaeue/scripts/owned_audit_protocol.py": {
+      "sha256": "56b62242a080f7327bd1a3eac1f234fa0d68a22dc68151693793b35c30e6f114",
+      "bytes": 17196
+    },
+    "/Users/local/Desktop/math/.noeaaeue/scripts/source_observations.py": {
+      "sha256": "a153565b7b3162470309f2fae9432110415b7934648a7f58f91f84821ab68125",
+      "bytes": 13216
+    },
+    "/Users/local/Desktop/math/.noeaaeue/scripts/check.py": {
+      "sha256": "e7d8a0178573523db5c77799d3fa944fe989947dabe587c2d8f89b3b43e46a28",
+      "bytes": 11673
+    },
+    "/Users/local/Desktop/math/.noeaaeue/scripts/project_replay.py": {
+      "sha256": "99e70e8534e2d8c1e22fc359f17cd9775e597daa794093600d1faba5fab1d5bf",
+      "bytes": 1151
+    },
+    "/Users/local/Desktop/math/.noeaaeue/scripts/check_math_layout.py": {
+      "sha256": "28340d93733f3551606b293e522b0a7775354d9d55753186b2521859be2a5cb6",
+      "bytes": 80719
+    },
+    "/Users/local/Desktop/math/GRWTSK/Logic/ProofChecking/Checks/OwnedDeclarationAudit.lean": {
+      "sha256": "94eb4533f7b97b38b5165b015a16149f01b98fd110978292b0e2e3dbdc2773c3",
+      "bytes": 13158
+    }
+  },
+  "source_unchanged": true,
+  "target_executions": 0,
+  "unmocked_external_attempts": 0,
+  "log": {
+    "path": "/Users/local/Desktop/math/.noeaaeue/.local/runtime-identity-repair/final-public33-source-bound/optimized.log",
+    "sha256": "66951d352b172289e0582cda33733149e71218d7c418d6f33a6440a82b5fbcaa",
+    "bytes": 3607
+  }
+}

@@ -1,0 +1,1 @@
+MoebiusControls/HSSCP04_private.lean:5:0: error: Unapproved axiom _private.MoebiusControls.HSSCP04_private.0.HSSCP04.hostileCustomAxiom in _private.MoebiusControls.HSSCP04_private.0.HSSCP04.hostileCustomAxiom

@@ -1,0 +1,288 @@
+{
+  "Git_mutations": false,
+  "actual_export": false,
+  "at": "2026-10-16T17:47:22.091066+00:00",
+  "existing_helper_identities_and_function_scopes": [
+    {
+      "executed": false,
+      "functions": [
+        {
+          "end_line": 70,
+          "name": "read",
+          "source_segment_bytes": 715,
+          "source_segment_sha256": "5fae8bc4320e8ab09deb730c6360c0babd9f451086757261d3409c72b0986a99",
+          "start_line": 56
+        },
+        {
+          "end_line": 79,
+          "name": "write_new",
+          "source_segment_bytes": 217,
+          "source_segment_sha256": "b6cef064315bac84fb51310054a13f9a0595f7267ac8b126aeb0357fb8a2754f",
+          "start_line": 73
+        },
+        {
+          "end_line": 117,
+          "name": "copy_file",
+          "source_segment_bytes": 300,
+          "source_segment_sha256": "894e99208112f8dee044627b2843c1e12ed873ab29b62b77e04a012b966a0158",
+          "start_line": 112
+        },
+        {
+          "end_line": 152,
+          "name": "retain_state",
+          "source_segment_bytes": 2109,
+          "source_segment_sha256": "52e7ac2c6e7578955f75c77e8154db6273c49b1818911afd0ae2943b18ff1603",
+          "start_line": 120
+        }
+      ],
+      "source": {
+        "bytes": 13799,
+        "path": "/Users/local/Desktop/math/.noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/controller.py",
+        "sha256": "5b2244e7d6fce5f21cb62b25d77980b503134705127f4e44f5d6c1ed6831244a"
+      }
+    },
+    {
+      "executed": false,
+      "functions": [
+        {
+          "end_line": 76,
+          "name": "safe_read",
+          "source_segment_bytes": 1124,
+          "source_segment_sha256": "2bf014acba8fe4f56a687e198f958f8cdb537c00337ae7b143739363f6a42e02",
+          "start_line": 54
+        },
+        {
+          "end_line": 156,
+          "name": "write_raw_new",
+          "source_segment_bytes": 154,
+          "source_segment_sha256": "d5d01840116caecb889fa1ec13a0728e22df54d34323610c88e147cca33245ad",
+          "start_line": 152
+        },
+        {
+          "end_line": 243,
+          "name": "receipt_directories",
+          "source_segment_bytes": 661,
+          "source_segment_sha256": "9c0579d3967a5fc6c07c53a5cf102e7586bcd6a825f8de84ced7d504272799d4",
+          "start_line": 230
+        },
+        {
+          "end_line": 262,
+          "name": "new_receipts",
+          "source_segment_bytes": 858,
+          "source_segment_sha256": "b61a5d1c1e6b272f19e30c99d937333daf48976b518177ff83562541482df3d3",
+          "start_line": 246
+        }
+      ],
+      "source": {
+        "bytes": 15038,
+        "path": "/Users/local/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/serial_native.py",
+        "sha256": "64000202b88d2d7c3fcd05aabd476164cf8b7aeea846fe714639aeea4162a15b"
+      }
+    }
+  ],
+  "existing_patterns": [
+    {
+      "actual_copies_reverified_this_task": false,
+      "declared_mapping_count": 1,
+      "largest_declared_bytes": 170318,
+      "manifest": {
+        "bytes": 517,
+        "path": "/Users/local/Desktop/math/.noeaaeue/binding-repair/moebius-current-default-custody.json",
+        "sha256": "0a4f313c8c16b2fc0c47f4fea05e117b01e377999db34f1ceb38abbc10bfedd2"
+      },
+      "mapping_fields": [
+        "bytes",
+        "copy",
+        "original",
+        "sha256"
+      ],
+      "meaning": "Existing historical custody schema/example only, not current source/native acceptance",
+      "schema": "native-receipt-byte-custody-v1"
+    },
+    {
+      "actual_copies_reverified_this_task": false,
+      "declared_mapping_count": 17,
+      "largest_declared_bytes": 37919,
+      "manifest": {
+        "bytes": 6049,
+        "path": "/Users/local/Desktop/math/.noeaaeue/binding-repair/rh-target-native-custody.json",
+        "sha256": "95b91e9c7a03e5568a5eb0cbd7d37943bd180b985ab13d939bbeb381818b30ea"
+      },
+      "mapping_fields": [
+        "bytes",
+        "copy",
+        "original",
+        "sha256"
+      ],
+      "meaning": "Existing historical custody schema/example only, not current source/native acceptance",
+      "schema": "native-receipt-byte-custody-v1"
+    },
+    {
+      "actual_copies_reverified_this_task": false,
+      "declared_mapping_count": 1027,
+      "largest_declared_bytes": 37488842,
+      "manifest": {
+        "bytes": 629876,
+        "path": "/Users/local/Desktop/math/.noeaaeue/binding-repair/validation-completion/moebius-v5-application-evidence-custody.json",
+        "sha256": "45932c5a50a8380831c61b244653644f6c7b05ce21debeecdf4571dd3d5b003c"
+      },
+      "mapping_fields": [
+        "archive",
+        "bytes",
+        "original",
+        "original_identity",
+        "sha256"
+      ],
+      "meaning": "Existing historical custody schema/example only, not current source/native acceptance",
+      "schema": "moebius-v5-application-evidence-custody-v1"
+    }
+  ],
+  "file_size_policy": {
+    "existing_example_manifest_declared_maxima": [
+      {
+        "largest_declared_bytes": 170318,
+        "path": "/Users/local/Desktop/math/.noeaaeue/binding-repair/moebius-current-default-custody.json"
+      },
+      {
+        "largest_declared_bytes": 37919,
+        "path": "/Users/local/Desktop/math/.noeaaeue/binding-repair/rh-target-native-custody.json"
+      },
+      {
+        "largest_declared_bytes": 37488842,
+        "path": "/Users/local/Desktop/math/.noeaaeue/binding-repair/validation-completion/moebius-v5-application-evidence-custody.json"
+      }
+    ],
+    "future_repaired_file_sizes": "UNKNOWN_UNTIL_FUTURE_TERMINAL_ALLOWLIST; not claimed checked by this plan.",
+    "max_bytes_per_source_and_copy": 100000000,
+    "preflight": "Check each named actual file size before reading/copying and exact raw length afterwards. Reject>limit; never silently truncate."
+  },
+  "finite_allowlist_recipe": [
+    {
+      "limit": "Select explicit paths from exact approved phase records, not all files beneath BASE or .local.",
+      "role": "phase authority/source context",
+      "selection": "Exact new public/application readsets, source-only contracts and reports, coordinator releases, serial phase context/frozen-inputs-copy/summary/stage-command/stage-result/log files, and accepted source-bound reviews named by those exact new runs."
+    },
+    {
+      "identity": "Bind original origin attempt_id,path,sha256,bytes and terminal success without rewriting any raw path, ID or receipt content.",
+      "limit": "Both repaired runs must remain distinct; earlier pre-runtime-repair pair is optional historical custody only.",
+      "role": "repaired public first and warm terminal evidence",
+      "selection": "For each of the two approved actual run directories: receipt.json, proof-validation-origin.json, cache-publication.json and exact terminal source/policy/census inventories referenced by the receipt."
+    },
+    {
+      "limit": "Follow only known schema fields for actual selected receipt, not arbitrary recursive JSON paths or filesystem traversal.",
+      "role": "native census and generated audit input",
+      "selection": "Exact generated audit/inspector/helper Lean files and native aggregate/partition census text/JSON/diagnostics named by receipt results,module_validation,audit wrapper/formal-template fields and their recorded source/hash bindings."
+    },
+    {
+      "limit": "Fresh control outputs cannot be replaced by cached library census metadata or source-only mock results.",
+      "role": "fresh native-control evidence",
+      "selection": "All actual self-test, runtime-profile, namespace/custom-axiom and other required control result logs and their exact generated fixture/wrapper/source inputs, identified by approved receipts; keep failed controls/variants as separately scoped history if selected."
+    },
+    {
+      "limit": "Canonical exact mathematical sources already retained durably can be referenced by path/hash/bytes instead of redundantly duplicating every source/GRWTSK tree; do not copy frozen library or packages wholesale.",
+      "role": "frozen source and policy custody",
+      "selection": "Frozen operational verifier/parser/profile/template bytes whose hashes are declared by selected receipts, plus any exact frozen mathematical source variant no longer identically retained in canonical source/Git custody. Preserve the source readset itself."
+    },
+    {
+      "limit": "Existing durable canonical selected receipts/custody manifests need identity references only; do not duplicate their JSON blobs. APP selected scope and documentation structural scope remain separate from full public scope.",
+      "role": "manifested application and selected mathematical/doc evidence",
+      "selection": "Actual approved APP terminal receipt/origin/cache-publication, complete actual census+control diagnostics/generated inputs as above; exact current Jacobi/DirectLookup selected receipts and source/guide/NOTICE/source-binding identities; current normal/-O documentation structural-check and hostile-test logs/receipts."
+    }
+  ],
+  "finite_export_algorithm": [
+    "Resolve each explicitly approved original occurrence under its allowed exact run/root. Reject symlink or nonregular components, traversal, unknown paths, duplicate conflicting logical mappings, missing/stale originals and any file larger than100000000 bytes.",
+    "Record pre-copy regular-file identity/hash/bytes; read only named raw files with bounded descriptor-safe reader. Check raw length <=100000000 and same source identity/hash after read. Do not decode/normalize/reindent receipts, origins, logs or generated inputs for copying.",
+    "Create absent destination files only (no replace), preferably content-addressed sha256/<digest>.txt with exact byte identity. Deduplicate equal bytes after hash AND raw-byte equality, retaining one mapping row for EVERY distinct original occurrence. Leave all originals unchanged.",
+    "If exact bytes already have an immutable durable canonical evidence path, bind that retained path instead of making a second receipt blob. Preserve the original embedded .local absolute paths and attempt IDs in raw records.",
+    "Reread each original and copy, require identical SHA256+byte size and exact raw bytes. Recheck the finite allowlist and all recorded source identities after copying. Preserve any partial copy/failure evidence; do not silently fall through or delete old history.",
+    "Create one new immutable native-receipt-byte-custody-v1 manifest only after complete readback. Include finite allowlist identity and explicit exclusions/omissions; hash and reread the manifest. No update to original receipt status, origin ID or source pin."
+  ],
+  "future_destination": "A NEW unique durable .noeaaeue/receipts/<chosen-export>/ tree; files stored as inert exact raw .txt objects, outside Lean source/import paths. No destination exists or is created by this plan.",
+  "hard_exclusions": [
+    "No recursive .noeaaeue/.local archive or entire BASE export.",
+    "No .lake/packages/build/private build snapshots, .olean/.ilean/.c/.o or other binary object families; artifact hashes remain in original receipt/origin only. This source-only custody does not preserve reusable native cache artifacts.",
+    "No bulk .local/incremental-lean cache/artifact directories. Only explicit terminal origin/publication records and specifically required named source/census text evidence.",
+    "ENTIRE new APP-WSC primary049c791645491dafdf560a19cd8447603c1ac5273e50e5bd6af1aa40995018ca and corrected93b6076d8cd6bad1052795462ffb51b36f1d93d6d62f4324cf92ce52e473815a receipt-declared output sets and receipt files.",
+    "Four fixed application-WSC declarations: .noeaaeue/interfaces/adapters/lean-incremental-application-v1.json; .noeaaeue/interfaces/schemas/incremental-validation-application-v1.schema.json; .noeaaeue/spec/formal/verification/incremental-validation-application-v1.json; .noeaaeue/spec/governance/retention/incremental-validation-application-v1.json.",
+    "No56legacy data-profile outputs, large inherited inventories/raw maps, failed private clone trees, or foreign worker data. Default deny any path outside the finite native/source/doc allowlist.",
+    "Prior453 public/selected WSC custody is already separately inventoried; do not automatically include/re-export that whole set as current native evidence."
+  ],
+  "historical_context": "Any earlier B8 public first/warm/c8 source-only candidate export must be labeled pre-runtime-policy-repair historical only, with original evidence/qualifications unchanged. It cannot become current repaired/native application acceptance.",
+  "inspected_identity_drift": [],
+  "manifest_proposal": {
+    "copies": [
+      {
+        "bytes": "Nonnegative literal integer, <=100000000",
+        "context": "repaired-public-first|repaired-public-warm|application|selected-math|documentation|historical-only",
+        "copy": "New durable inert object path OR existing exact canonical retained path",
+        "origin_attempt_id": "Original ID if applicable, not regenerated",
+        "original": "Original recorded path retained verbatim",
+        "original_absolute": "Resolved original absolute occurrence for custody",
+        "retention": "new-exact-copy|already-durable-reference",
+        "role": "receipt|origin|cache-publication|frozen-inputs|native-census|control-diagnostic|generated-input|source-policy|selected-doc-evidence",
+        "sha256": "Exact raw-byte SHA256"
+      }
+    ],
+    "omissions": "Explicit finite skipped original path+hash+size+reason; any required missing/oversized proof-evidence file blocks claiming complete selected custody.",
+    "schema": "native-receipt-byte-custody-v1",
+    "scope": "Exact byte custody only; mathematical acceptance and current applicability are exclusively those of separately bound approved receipts.",
+    "source_context": "Exact new repaired readset and accepted review identities, no mutable latest pointer"
+  },
+  "mathematical_acceptance": false,
+  "native_jobs": 0,
+  "operations_this_task": [
+    "bounded text/AST/hash inspection of existing custody manifests/helper source",
+    "one create-only plan JSON under BASE"
+  ],
+  "owner": "cache_adapter",
+  "pending_prerequisites": [
+    "Runtime-policy repair and any parser/producer/caller/helper successor inputs must be exactly frozen and source-bound under a NEW readset/qualification context. Current historical B8 pair/c8 candidate cannot be silently relabeled as repaired.",
+    "Root/coordinator review actual repaired public first AND unchanged warm terminal receipts/origins, complete audit/counters and fresh native controls, then approve their exact identities.",
+    "Application receives its own newly candidate-bound manifest/readset/release and complete actual owner census/profile/namespace controls; no exported metadata supplies that native result.",
+    "Documentation structural controls and selected math bindings must be current and separately scoped; all old failed/stale variants remain unchanged.",
+    "All source/evidence writers and native children for the selected runs exit; a finite export allowlist is frozen and reviewed before copying.",
+    "Coordinator separately decides publication paths; exporting bytes is neither staging nor publication approval."
+  ],
+  "preferred_reuse": {
+    "copy_pattern_functions": [
+      "copy_file"
+    ],
+    "decision": "Reuse exact byte-copy/readback pattern and existing descriptor-safe reader/raw-create-only writer primitives in an explicitly reviewed owner-only finite export invocation; no new general exporter is needed for this planning task.",
+    "do_not_execute": [
+      "controller.main or controller CLI (also launches four native stages)",
+      "serial_native.main or run_plan/execute/build_lane (native/Git routes)",
+      "retain_state blindly as a recursive discovery substitute",
+      "export_math_bundle.py (invokes Lean; explicitly excluded)"
+    ],
+    "historical_copy_pattern_source": {
+      "bytes": 13799,
+      "path": "/Users/local/Desktop/math/.noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/controller.py",
+      "sha256": "5b2244e7d6fce5f21cb62b25d77980b503134705127f4e44f5d6c1ed6831244a"
+    },
+    "limits": [
+      "The historical controller read() is unbounded and uses path-stat/read checks, so it alone does not implement required100MB/resource guards.",
+      "Its ROOT is inferred from __file__.resolve().parents[3]; at the retained deeper physical path this is .noeaaeue, so a future caller must bind the actual repository/destination root explicitly, never infer new logical paths from that stale location.",
+      "serial_native.safe_read has a128MiB limit; a future finite copy invocation must independently reject every source and resulting raw byte string above100000000 bytes before any destination copy.",
+      "No existing standalone source-only export CLI was identified in the bounded inspected directories; reuse only pure selected functions after exact source verification, never import/run a whole native controller as a shortcut."
+    ],
+    "safe_reader_functions": [
+      "safe_read",
+      "write_raw_new"
+    ],
+    "safe_reader_source": {
+      "bytes": 15038,
+      "path": "/Users/local/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/serial_native.py",
+      "sha256": "64000202b88d2d7c3fcd05aabd476164cf8b7aeea846fe714639aeea4162a15b"
+    }
+  },
+  "project_imports": 0,
+  "proof_and_publication_limits": [
+    "Custody is operational raw-byte preservation, not new Lean verification, mathematical authority, host-wide atomic snapshot, native artifact-to-source certification, or WSC fixed-point closure.",
+    "No proof/native/doc/Git/source/metadata/ref changes or actual export occurred; original .local source paths/IDs stay embedded unchanged.",
+    "New actual receipts and their raw self-bindings must not be refreshed merely to make current docs or filenames appear accepted."
+  ],
+  "purpose": "Preserve future repaired public first/warm and manifested application/documentation evidence as exact inert bytes, with finite original-to-copy hash mappings.",
+  "schema": "proposed-finite-native-receipt-byte-custody-export-v1",
+  "shared_edits": false,
+  "status": "PLAN_ONLY_NOT_AUTHORIZED_EXPORT_NOT_EXECUTED"
+}

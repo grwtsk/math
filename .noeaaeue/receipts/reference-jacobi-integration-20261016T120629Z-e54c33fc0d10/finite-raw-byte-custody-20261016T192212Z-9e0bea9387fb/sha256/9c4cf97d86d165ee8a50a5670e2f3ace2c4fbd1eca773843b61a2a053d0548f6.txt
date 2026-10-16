@@ -1,0 +1,43 @@
+{
+  "release": {
+    "bytes": 3111,
+    "path": "/Users/local/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/coordinator-runtime-application-acceptance-20261016T190044Z-66c7b4e3a130.json",
+    "sha256": "603eaf7ff7c3087ffc2d876360615a646b72e3b7693564fce451bd0871d35535"
+  },
+  "root_sole_native_executor": true,
+  "schema": "two-runtime-selected-replays-plan-v1",
+  "serial": true,
+  "status": "PLANNED_UNEXECUTED",
+  "steps": [
+    {
+      "argv": [
+        "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+        "-B",
+        "/Users/local/Desktop/math/.noeaaeue/scripts/check_prefix_direct_lookup.py",
+        "--cold",
+        "--memory-mib",
+        "12288",
+        "--receipt",
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-direct-lookup-selected-runtime-20261016T190205Z-220551577cf8.json"
+      ],
+      "driver": "/Users/local/Desktop/math/.noeaaeue/scripts/check_prefix_direct_lookup.py",
+      "driver_sha256": "19ba2fbae26615adf3cb56daa8452921657b17d3cdf367ba0c5a822bad1d2b5c",
+      "receipt_relative": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-direct-lookup-selected-runtime-20261016T190205Z-220551577cf8.json"
+    },
+    {
+      "argv": [
+        "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+        "-B",
+        "/Users/local/Desktop/math/.noeaaeue/scripts/check_third_cyclotomic_jacobi.py",
+        "--cold",
+        "--memory-mib",
+        "12288",
+        "--receipt",
+        ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-jacobi-selected-runtime-20261016T190205Z-220551577cf8.json"
+      ],
+      "driver": "/Users/local/Desktop/math/.noeaaeue/scripts/check_third_cyclotomic_jacobi.py",
+      "driver_sha256": "1e2a62635b980ef31082fe6d9db53d1e17e670f7e3a6228e38d417ed3f9a4f27",
+      "receipt_relative": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-jacobi-selected-runtime-20261016T190205Z-220551577cf8.json"
+    }
+  ]
+}

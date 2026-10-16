@@ -1,0 +1,12 @@
+'GRWTSK.NumberTheory.Moebius.CriticalWeightedMertensSquare.criticalEndpointGap_le_inv_sqrt_mul_succ' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.NumberTheory.Moebius.CriticalWeightedMertensSquare.criticalEndpointGap_sq_le_inv_mul_succ_sq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.NumberTheory.Moebius.CriticalWeightedMertensSquare.incrementMeanSquare_of_weightedMertensSquare' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.NumberTheory.Moebius.CriticalWeightedMertensSquare.criticalBoundary_of_weightedMertensSquare' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

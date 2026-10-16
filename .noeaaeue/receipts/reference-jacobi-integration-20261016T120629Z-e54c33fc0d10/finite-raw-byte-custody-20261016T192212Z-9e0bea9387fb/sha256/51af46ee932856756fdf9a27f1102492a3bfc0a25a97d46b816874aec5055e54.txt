@@ -1,0 +1,50 @@
+{
+  "schema": "source-bound-pure-engine-tests-v1",
+  "tests": 55,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "mode": "optimized",
+  "source_before": {
+    ".noeaaeue/scripts/incremental_lean.py": {
+      "sha256": "089f5c980be2aa3b1606ae9ddf12a09ec5df2bf6d6544f52690447b640882f12",
+      "bytes": 60843
+    },
+    ".noeaaeue/scripts/test_incremental_lean.py": {
+      "sha256": "bbe00796ebb209fc8cbba8e3c76f05d5a22da66bdff7c6c247481145194a38d6",
+      "bytes": 49525
+    },
+    ".noeaaeue/scripts/cache_math.py": {
+      "sha256": "d73bebfeca4ec709fdc68741cba13a09611ae49a0095b4140dd5d2f3e6bb1c06",
+      "bytes": 36017
+    },
+    ".noeaaeue/scripts/monitor_math.py": {
+      "sha256": "a757804707ffe811aa27d295aa82dcdaddf7b3c90f9c3bd6a47d27ec3b0890e3",
+      "bytes": 85340
+    }
+  },
+  "source_after": {
+    ".noeaaeue/scripts/incremental_lean.py": {
+      "sha256": "089f5c980be2aa3b1606ae9ddf12a09ec5df2bf6d6544f52690447b640882f12",
+      "bytes": 60843
+    },
+    ".noeaaeue/scripts/test_incremental_lean.py": {
+      "sha256": "bbe00796ebb209fc8cbba8e3c76f05d5a22da66bdff7c6c247481145194a38d6",
+      "bytes": 49525
+    },
+    ".noeaaeue/scripts/cache_math.py": {
+      "sha256": "d73bebfeca4ec709fdc68741cba13a09611ae49a0095b4140dd5d2f3e6bb1c06",
+      "bytes": 36017
+    },
+    ".noeaaeue/scripts/monitor_math.py": {
+      "sha256": "a757804707ffe811aa27d295aa82dcdaddf7b3c90f9c3bd6a47d27ec3b0890e3",
+      "bytes": 85340
+    }
+  },
+  "target_executions": 0,
+  "log": {
+    "path": "/Users/local/Desktop/math/.noeaaeue/.local/runtime-identity-repair/engine-final-optimized.log",
+    "sha256": "c1b63fb61701b44123f88e2d4b6668a311054df0f73b3eecbbd48e5751912062",
+    "bytes": 154
+  }
+}

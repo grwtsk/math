@@ -1,8 +1,11 @@
 """Relocation controls; no Lean process or acceptance record is created."""
 import hashlib
+import contextlib
+import io
 import json
 from pathlib import Path
 import tempfile
+import subprocess
 import unittest
 import sys
 import types
@@ -63,7 +66,21 @@ class ProcessPathControls(unittest.TestCase):
         for name, data in ((logical, policy), ("scripts/repository_paths.py", adapter)):
             checker.write_exclusive(self.root / relocated_name(name), data)
             checker.freeze_input(checker.read_regular(self.root, name), frozen, name)
-        record = inputs.require_layout(self.root, frozen, self.reader)
+        def run_frozen_policy(argv, **options):
+            self.assertEqual(argv, [sys.executable, "-B", str(frozen / relocated_name(logical)),
+                                    "--root", str(self.root), "--json"])
+            self.assertEqual(options, {"capture_output": True, "text": True, "timeout": 60})
+            private = types.ModuleType("fixture_frozen_repository_paths")
+            private.__file__ = str(frozen / relocated_name("scripts/repository_paths.py"))
+            exec(compile(Path(private.__file__).read_bytes(), private.__file__, "exec"), vars(private))
+            output = io.StringIO()
+            namespace = {"__name__": "__main__", "__file__": argv[2]}
+            with patch.dict(sys.modules, {"repository_paths": private}), contextlib.redirect_stdout(output):
+                exec(compile(Path(argv[2]).read_bytes(), argv[2], "exec"), namespace)
+            return subprocess.CompletedProcess(argv, 0, output.getvalue(), "")
+        with patch.object(inputs.subprocess, "run", side_effect=run_frozen_policy) as child:
+            record = inputs.require_layout(self.root, frozen, self.reader)
+        self.assertEqual(child.call_count, 1)
         self.assertEqual(record["exit_code"], 0)
         self.assertEqual(record["relocation_adapter_sha256"], hashlib.sha256(adapter).hexdigest())
         self.assertEqual(record["report"]["mapped"], ".noeaaeue/scripts/x.py")
@@ -103,7 +120,9 @@ class ProcessPathControls(unittest.TestCase):
 
     def test_default_current_contract_does_not_select_historical_manifest(self):
         self.assertEqual(checker.DEFAULT_CURRENT_MANIFEST,
-                         ".noeaaeue/bindings/moebius-current-inputs-v5.json")
+                         ".noeaaeue/bindings/moebius-current-inputs-current.json")
+        self.assertNotEqual(checker.DEFAULT_CURRENT_MANIFEST,
+                            ".noeaaeue/bindings/moebius-current-inputs-v5.json")
         self.assertNotEqual(checker.DEFAULT_CURRENT_MANIFEST,
                             ".noeaaeue/evidence/moebius-response-sources.json")
 

@@ -7,13 +7,13 @@
 | Object guides | 1 |
 | Documented object groups | 1 |
 | Distinct primary sources linked | 1 |
-| Lean source modules | 8 |
+| Lean source modules | 9 |
 | Archive intake records | 2 |
 | Selected catalog families | 0 |
 
 These counts measure documentation and source coverage. They do not count accepted theorems or establish that every source module is documented or checked. [Definitions and limits](../../reference/library-pages.md#count-definitions).
 
-90 source declaration commands, including 56 theorem/lemma commands, across 8 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+97 source declaration commands, including 62 theorem/lemma commands, across 9 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
 ## Embeddings
 

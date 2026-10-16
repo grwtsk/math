@@ -1,0 +1,15 @@
+'GRWTSK.NumberTheory.Moebius.CriticalMertensTransformMeanSquare.criticalMertensTransform_sq_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.NumberTheory.Moebius.CriticalMertensTransformMeanSquare.sum_range_succ_rpow_sub_one_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.NumberTheory.Moebius.CriticalMertensTransformMeanSquare.criticalMertensTransform_sq_le_meanSquare' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.NumberTheory.Moebius.CriticalMertensTransformMeanSquare.mertensTransformSummable_of_incrementMeanSquare' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.NumberTheory.Moebius.CriticalMertensTransformMeanSquare.criticalBoundary_of_incrementMeanSquare' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

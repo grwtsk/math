@@ -1,0 +1,317 @@
+"""Selected validators reuse only commands from complete accepted replays."""
+import hashlib
+import json
+from pathlib import Path
+import subprocess
+import tempfile
+from types import SimpleNamespace
+import unittest
+from unittest.mock import patch
+
+from incremental_lean import CacheError, DependencyGraph, create_origin
+from selected_incremental import SelectedReplayCache
+
+
+class SelectedIncremental(unittest.TestCase):
+    def setUp(self):
+        self.temporary = tempfile.TemporaryDirectory()
+        self.addCleanup(self.temporary.cleanup)
+        self.root = Path(self.temporary.name).resolve()
+        self.compiler = self.root / "lean"
+        self.compiler.write_bytes(b"pinned compiler")
+        self.dependency = self.root / "dependencies"
+        self.dependency.mkdir()
+        self.init = self.dependency / "Init.olean"
+        self.init.write_bytes(b"pinned Init")
+        self.bodies = {
+            "GRWTSK/A.lean": b"def a := 1\n",
+            "GRWTSK/B.lean": b"import GRWTSK.A\ndef b := a\n",
+            "GRWTSK/C.lean": b"def c := 3\n",
+            "SelectedAudit.lean": b"import GRWTSK.B GRWTSK.C\n#check b\n",
+            "Negative.lean": b"import GRWTSK.B\nexample : b = 0 := rfl\n",
+            "validator.py": b"complete audit and exact negative oracle version 1",
+        }
+        self.calls = []
+        self.counter = 0
+        self.flags = {}
+        self.object_prefix = b"checked object\n"
+
+    def replay(self, *, cold=False):
+        self.counter += 1
+        run = self.root / ("run-" + str(self.counter))
+        source, build = run / "source", run / "build"
+        source.mkdir(parents=True)
+        build.mkdir()
+        for relative, body in self.bodies.items():
+            path = source / relative
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_bytes(body)
+        guard = SimpleNamespace(
+            read_source=lambda root, relative: (root / relative).read_bytes(),
+            write_bytes=lambda path, raw: path.write_bytes(raw),
+            ALLOWED_AXIOMS={"propext", "Classical.choice", "Quot.sound"})
+        receipt = {
+            "schema": "fixture-selected-replay-v1", "outcome": "running",
+            "compiler_sha256": hashlib.sha256(self.compiler.read_bytes()).hexdigest(),
+            "allowed_axioms": sorted(guard.ALLOWED_AXIOMS), "trust": 0, "fatal_warnings": True,
+            "library_order": ["GRWTSK/A.lean", "GRWTSK/B.lean", "GRWTSK/C.lean"],
+            "declarations": [], "modules": [], "results": [],
+        }
+        adapter = SelectedReplayCache(
+            self.root, guard, source, build, dict(self.bodies),
+            [str(self.dependency)], self.compiler, receipt, cold=cold)
+        local = {path.relative_to(source).with_suffix("").as_posix().replace("/", "."): path
+                 for path in source.rglob("*.lean")}
+        adapter.graph = DependencyGraph(
+            local, [str(self.dependency)], self.compiler,
+            cache_root=self.root / "graph", external_imports={self.init: []})
+        self.addCleanup(adapter.close)
+        return adapter, source, build, receipt
+
+    def native(self, argv, **_):
+        source = Path(argv[-1])
+        self.calls.append(source.name)
+        if "-o" in argv:
+            output = Path(argv[argv.index("-o") + 1])
+            output.parent.mkdir(parents=True, exist_ok=True)
+            output.write_bytes(self.object_prefix + source.read_bytes())
+        rejected = source.name == "Negative.lean"
+        return subprocess.CompletedProcess(
+            argv, 1 if rejected else 0,
+            "error: type mismatch intended bound" if rejected else "native audit passed", "")
+
+    def commands(self, adapter, source, build):
+        for relative in self.bodies:
+            if not relative.endswith(".lean"):
+                continue
+            output = relative.startswith("GRWTSK/")
+            expected = ("intended", "bound") if relative == "Negative.lean" else None
+            argv = [str(self.compiler), "--trust=0", "-DwarningAsError=true", "--root=" + str(source)]
+            argv += self.flags.get(relative, [])
+            if output:
+                argv += ["-o", str(build / Path(relative).with_suffix(".olean"))]
+            argv.append(str(source / relative))
+            process = adapter.run(
+                relative, argv=argv, cwd=source, env={}, output=output, expected=expected)
+            # This stands for each caller's unchanged audit/rejection oracle.
+            self.assertEqual(process.returncode, 1 if expected else 0)
+            if expected:
+                self.assertTrue(all(fragment in process.stdout for fragment in expected))
+            log = source.parent / (str(len(adapter.records) - 1) + ".log")
+            log.write_text(process.stdout + process.stderr)
+            result = {"path": relative, "exit_code": process.returncode,
+                      "output_sha256": hashlib.sha256(log.read_bytes()).hexdigest()}
+            adapter.receipt["results"].append(result)
+            adapter.annotate_result(result)
+            self.assertIn("freshly_elaborated_this_run", result["incremental_validation"])
+            self.assertEqual(result["incremental_validation"]["freshly_elaborated_this_run"],
+                             result["incremental_validation"]["fresh_execution_this_run"]
+                             and process.returncode == 0)
+
+    def test_warm_replay_then_affected_dependents_only(self):
+        with patch("selected_incremental.subprocess.run", side_effect=self.native):
+            adapter, source, build, _ = self.replay()
+            self.commands(adapter, source, build)
+            adapter.accept()
+            self.assertEqual(len(self.calls), 5)
+            self.calls.clear()
+            adapter, source, build, receipt = self.replay()
+            self.commands(adapter, source, build)
+            adapter.accept()
+            self.assertEqual(self.calls, [])
+            self.assertEqual(receipt["incremental_validation"]["cached_commands"], 5)
+            for record in adapter.records:
+                origin = record["origin_receipt"]
+                raw = Path(origin["path"]).read_bytes()
+                self.assertEqual(hashlib.sha256(raw).hexdigest(), origin["sha256"])
+                self.assertTrue(any(command["cache_key"] == record["cache_key"]
+                                    for command in json.loads(raw)["evidence"]["commands"]))
+                self.assertIn("audit_digest", record)
+                self.assertIn("partition_digest", record)
+            self.bodies["GRWTSK/A.lean"] = b"def a := 2\n"
+            adapter, source, build, receipt = self.replay()
+            self.commands(adapter, source, build)
+            adapter.accept()
+            self.assertEqual(self.calls, ["A.lean", "B.lean", "SelectedAudit.lean", "Negative.lean"])
+            self.assertEqual(receipt["incremental_validation"]["cached_commands"], 1)
+
+    def test_unaccepted_replay_does_not_publish_any_command(self):
+        with patch("selected_incremental.subprocess.run", side_effect=self.native):
+            adapter, source, build, _ = self.replay()
+            self.commands(adapter, source, build)
+            # The caller's final native census or exact oracle fails: no accept().
+            adapter.close()
+            self.calls.clear()
+            adapter, source, build, _ = self.replay()
+            self.commands(adapter, source, build)
+            self.assertEqual(len(self.calls), 5)
+
+    def test_explicit_cold_recompiles_every_command(self):
+        with patch("selected_incremental.subprocess.run", side_effect=self.native):
+            adapter, source, build, _ = self.replay()
+            self.commands(adapter, source, build)
+            adapter.accept()
+            self.calls.clear()
+            adapter, source, build, receipt = self.replay(cold=True)
+            self.commands(adapter, source, build)
+            adapter.accept()
+            self.assertEqual(len(self.calls), 5)
+            self.assertEqual(receipt["validation_mode"], "cold")
+
+    def test_policy_change_invalidates_commands(self):
+        with patch("selected_incremental.subprocess.run", side_effect=self.native):
+            adapter, source, build, _ = self.replay()
+            self.commands(adapter, source, build)
+            adapter.accept()
+            self.calls.clear()
+            self.bodies["validator.py"] += b" changed exact oracle"
+            adapter, source, build, _ = self.replay()
+            self.commands(adapter, source, build)
+            adapter.accept()
+            self.assertEqual(len(self.calls), 5)
+
+    def test_child_compiler_flags_invalidate_importers(self):
+        with patch("selected_incremental.subprocess.run", side_effect=self.native):
+            adapter, source, build, _ = self.replay()
+            self.commands(adapter, source, build)
+            adapter.accept()
+            self.calls.clear()
+            self.flags["GRWTSK/A.lean"] = ["--memory=8192"]
+            adapter, source, build, _ = self.replay()
+            self.commands(adapter, source, build)
+            adapter.accept()
+            self.assertEqual(self.calls, ["A.lean", "B.lean", "SelectedAudit.lean", "Negative.lean"])
+
+    def test_regenerated_child_object_bytes_invalidate_importers(self):
+        with patch("selected_incremental.subprocess.run", side_effect=self.native):
+            adapter, source, build, _ = self.replay()
+            self.commands(adapter, source, build)
+            adapter.accept()
+            self.calls.clear()
+            self.object_prefix = b"regenerated checked object\n"
+            adapter, source, build, _ = self.replay()
+            lookup = adapter.cache.lookup
+            with patch.object(adapter.cache, "lookup", side_effect=lambda material, **kw:
+                              None if material["source"] == "GRWTSK/A.lean" else lookup(material, **kw)):
+                self.commands(adapter, source, build)
+            adapter.accept()
+            self.assertEqual(self.calls, ["A.lean", "B.lean", "SelectedAudit.lean", "Negative.lean"])
+
+    def test_added_loadable_artifact_blocks_acceptance(self):
+        with patch("selected_incremental.subprocess.run", side_effect=self.native):
+            adapter, source, build, _ = self.replay()
+            self.commands(adapter, source, build)
+            (build / "GRWTSK/A.ir").write_bytes(b"unexpected IR")
+            with self.assertRaises(RuntimeError):
+                adapter.accept()
+
+    def test_dependency_drift_blocks_acceptance(self):
+        with patch("selected_incremental.subprocess.run", side_effect=self.native):
+            adapter, source, build, _ = self.replay()
+            self.commands(adapter, source, build)
+            self.init.write_bytes(b"changed imported object")
+            with self.assertRaises(CacheError):
+                adapter.accept()
+
+    def test_origin_is_terminal_and_bound_to_exact_command_evidence(self):
+        with patch("selected_incremental.subprocess.run", side_effect=self.native):
+            adapter, source, build, receipt = self.replay()
+            self.commands(adapter, source, build)
+            adapter.accept()
+            identity = receipt["proof_validation_origin"]
+            raw = Path(identity["path"]).read_bytes()
+            origin = json.loads(raw)
+            self.assertEqual(identity["sha256"], hashlib.sha256(raw).hexdigest())
+            self.assertEqual(identity["bytes"], len(raw))
+            self.assertEqual(origin["attempt_id"], identity["attempt_id"])
+            self.assertEqual(origin["outcome"], "passed")
+            self.assertIs(origin["terminal"], True)
+            for execution in adapter.executions:
+                evidence = adapter.cache.command_evidence(
+                    execution["material"], process=execution["process"], artifacts=execution["artifacts"])
+                self.assertIn(evidence, origin["evidence"]["commands"])
+            self.assertEqual(len(origin["evidence"]["command_diagnostic_logs"]), 5)
+
+    def test_missing_or_corrupt_origin_causes_fresh_execution(self):
+        with patch("selected_incremental.subprocess.run", side_effect=self.native):
+            for mutation in ("delete", "corrupt", "nonterminal"):
+                with self.subTest(mutation=mutation):
+                    adapter, source, build, receipt = self.replay()
+                    self.commands(adapter, source, build)
+                    adapter.accept()
+                    origin = Path(receipt["proof_validation_origin"]["path"])
+                    if mutation == "delete":
+                        origin.unlink()
+                    elif mutation == "corrupt":
+                        origin.chmod(0o600)
+                        origin.write_bytes(b"truncated origin")
+                    else:
+                        payload = json.loads(origin.read_bytes())
+                        payload["terminal"] = False
+                        origin.chmod(0o600)
+                        origin.write_text(json.dumps(payload))
+                    self.calls.clear()
+                    adapter, source, build, _ = self.replay()
+                    self.commands(adapter, source, build)
+                    self.assertEqual(len(self.calls), 5)
+
+    def test_failed_cache_publication_preserves_terminal_proof_origin(self):
+        with patch("selected_incremental.subprocess.run", side_effect=self.native):
+            adapter, source, build, receipt = self.replay()
+            self.commands(adapter, source, build)
+            with patch.object(adapter.cache, "publish", side_effect=RuntimeError("publication failed")):
+                with self.assertRaisesRegex(RuntimeError, "publication failed"):
+                    adapter.accept()
+            origin = json.loads(Path(receipt["proof_validation_origin"]["path"]).read_bytes())
+            publication = json.loads((source.parent / "cache-publication.json").read_bytes())
+            self.assertEqual(origin["outcome"], "passed")
+            self.assertEqual(publication["outcome"], "failed")
+            self.assertEqual(receipt["proof_validation_outcome"], "passed")
+            self.assertFalse(receipt["incremental_validation"][
+                "cache_entries_published_after_complete_acceptance"])
+
+    def test_artifact_mutation_after_origin_cannot_be_published(self):
+        with patch("selected_incremental.subprocess.run", side_effect=self.native):
+            adapter, source, build, receipt = self.replay()
+            self.commands(adapter, source, build)
+
+            def finalize_then_mutate(path, payload):
+                identity = create_origin(path, payload)
+                (build / "GRWTSK/A.olean").write_bytes(b"mutated after final byte guard")
+                return identity
+
+            with patch("selected_incremental.create_origin", side_effect=finalize_then_mutate):
+                with self.assertRaises(CacheError):
+                    adapter.accept()
+            self.assertEqual(json.loads(Path(receipt["proof_validation_origin"]["path"]).read_bytes())[
+                "outcome"], "passed")
+            self.assertEqual(json.loads((source.parent / "cache-publication.json").read_bytes())[
+                "outcome"], "failed")
+
+    def test_log_drift_prevents_terminal_origin(self):
+        with patch("selected_incremental.subprocess.run", side_effect=self.native):
+            adapter, source, build, _ = self.replay()
+            self.commands(adapter, source, build)
+            (source.parent / "0.log").write_bytes(b"changed diagnostic")
+            with self.assertRaisesRegex(RuntimeError, "diagnostic log drift"):
+                adapter.accept()
+            self.assertFalse((source.parent / "proof-validation-origin.json").exists())
+
+    def test_reused_origin_drift_at_admission_prevents_new_origin(self):
+        with patch("selected_incremental.subprocess.run", side_effect=self.native):
+            adapter, source, build, receipt = self.replay()
+            self.commands(adapter, source, build)
+            adapter.accept()
+            old_origin = Path(receipt["proof_validation_origin"]["path"])
+            adapter, source, build, _ = self.replay()
+            self.commands(adapter, source, build)
+            self.assertTrue(all(record["status"] == "cached" for record in adapter.records))
+            old_origin.chmod(0o600)
+            old_origin.write_bytes(b"changed after cached command checks")
+            with self.assertRaises(CacheError):
+                adapter.accept()
+            self.assertFalse((source.parent / "proof-validation-origin.json").exists())
+
+
+if __name__ == "__main__":
+    unittest.main()

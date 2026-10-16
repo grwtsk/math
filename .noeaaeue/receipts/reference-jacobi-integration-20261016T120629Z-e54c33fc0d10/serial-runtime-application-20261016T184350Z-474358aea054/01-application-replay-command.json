@@ -1,0 +1,27 @@
+{
+  "argv": [
+    "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+    "-B",
+    "/Users/local/Desktop/math/.noeaaeue/scripts/check_moebius_response.py",
+    "--manifest",
+    "/Users/local/Desktop/math/.noeaaeue/bindings/moebius-current-inputs-runtime-public-candidate-20261016T183948Z-ca50411e915e.json",
+    "--memory-mb",
+    "12288"
+  ],
+  "name": "application-replay",
+  "parent_holds_lock": false,
+  "parent_lock": false,
+  "preflight": {
+    "compiler_runtime_sha256": "c48f0fb338d4947e55e4f3974e49b7d1d4a12ad0ac0a783355a135d7bda01f7d",
+    "contract": ".noeaaeue/bindings/moebius-current-inputs-runtime-public-candidate-20261016T183948Z-ca50411e915e.json",
+    "contract_sha256": "7409f25df88e984ed1a78f74efcbff9e85a22b4d86fe07213f937b1794f85a8f",
+    "frozen_inputs_sha256": "f275d3b49d1feafd64d78b34726a8b2d09b11b32590d822b4edbe07564df25c3",
+    "head": "d25ccee49a781e150e991f885cb00f8be8f6e453",
+    "input_count": 1777,
+    "orchestrator_sha256": "05601e37c03f870ed127a6b1e4a691aebb18c16b0acd68372b67dfe545485848",
+    "phase": "application",
+    "release_sha256": "4e71ad44f3e7e1a1cffc37bbf429d4f3b003ce48ba8d2072cb635b8a72d942c3",
+    "source_count": 887
+  },
+  "timeout_seconds": 21600
+}

@@ -1,0 +1,84 @@
+{
+  "all_unmocked_process_and_signal_routes_forbidden": true,
+  "at": "2026-10-16T17:57:12.210086+00:00",
+  "checks": [
+    "All201 preexisting orchestration/census/input/export controls plus10process relocation controls pass normally and optimized.",
+    "Legacy fixture supplies exact five private runtime helper source bytes and handcrafted thin64 compiler+dylib data; actual RuntimeIdentityGuard checks execute on fixture bytes.",
+    "Only intended layout subprocess is replaced by in-process fixture execution of exact frozen policy+adapter bytes; argv/options are verified and no production checks are bypassed.",
+    "All existing proof/control/oracle methods remain byte-identical except fixture integration setup and the one formerly child-launching process fixture."
+  ],
+  "definition_changes": {
+    "test_moebius_process_paths.py": {
+      "added_definitions": [
+        "ProcessPathControls.test_frozen_layout_subprocess_uses_bound_sibling_adapter.run_frozen_policy"
+      ],
+      "changed_existing_definitions": [
+        "ProcessPathControls",
+        "ProcessPathControls.test_frozen_layout_subprocess_uses_bound_sibling_adapter"
+      ]
+    },
+    "test_moebius_response_checker.py": {
+      "added_definitions": [
+        "fixture_runtime_image"
+      ],
+      "changed_existing_definitions": [
+        "CheckerControls",
+        "CheckerControls.integration_fixture"
+      ]
+    }
+  },
+  "fixture_source_identities": [
+    {
+      "bytes": 97268,
+      "path": "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_response_checker.py",
+      "postimage": "/Users/local/Desktop/math/.noeaaeue/.local/runtime-app-compatibility/preimages-20261016T175436Z-bef7e6bfb6b4/postimage-test_moebius_response_checker.py",
+      "sha256": "44515eb26fd0bf5edbb9aea30f45613f53a12a9521f31b3b82b8a5b1bd0f4cbd"
+    },
+    {
+      "bytes": 8822,
+      "path": "/Users/local/Desktop/math/.noeaaeue/scripts/test_moebius_process_paths.py",
+      "postimage": "/Users/local/Desktop/math/.noeaaeue/.local/runtime-app-compatibility/preimages-20261016T175436Z-bef7e6bfb6b4/postimage-test_moebius_process_paths.py",
+      "sha256": "64f78bd1a8e4352c5fee0cc68b3c9a31f1185684a3802c78278585ed669f78d6"
+    }
+  ],
+  "git_executions": 0,
+  "limitations": "Pure/mock compatibility only; no native proof acceptance and no retroactive runtime qualification of earlier native receipts.",
+  "native_lake_executions": 0,
+  "native_lean_executions": 0,
+  "outcome": "passed",
+  "preimages": "/Users/local/Desktop/math/.noeaaeue/.local/runtime-app-compatibility/preimages-20261016T175436Z-bef7e6bfb6b4/preimages.json",
+  "proof_acceptance_claim": false,
+  "results": [
+    {
+      "bytes": 6248,
+      "optimized": false,
+      "path": "/Users/local/Desktop/math/.noeaaeue/.local/runtime-app-compatibility/preimages-20261016T175436Z-bef7e6bfb6b4/normal-result.json",
+      "sha256": "01017af8cc21db77efe42a3530343d7f002803c8bf9dd03d0f939dd5a396f720",
+      "test_sets": {
+        "test_generate_moebius_response_manifest": 44,
+        "test_moebius_owner_census": 63,
+        "test_moebius_process_paths": 10,
+        "test_moebius_response_checker": 79,
+        "test_moebius_response_inputs": 15
+      },
+      "tests_run": 211
+    },
+    {
+      "bytes": 6250,
+      "optimized": true,
+      "path": "/Users/local/Desktop/math/.noeaaeue/.local/runtime-app-compatibility/preimages-20261016T175436Z-bef7e6bfb6b4/optimized-result.json",
+      "sha256": "0b4ce60bf874abcf4fc88816dde9a20b2e93d9d3bde847c508cfda1842d39aea",
+      "test_sets": {
+        "test_generate_moebius_response_manifest": 44,
+        "test_moebius_owner_census": 63,
+        "test_moebius_process_paths": 10,
+        "test_moebius_response_checker": 79,
+        "test_moebius_response_inputs": 15
+      },
+      "tests_run": 211
+    }
+  ],
+  "schema": "compiler-runtime-app-compatibility-verification-v1",
+  "source_bytes_unchanged_before_after_both_modes": true,
+  "terminal": true
+}

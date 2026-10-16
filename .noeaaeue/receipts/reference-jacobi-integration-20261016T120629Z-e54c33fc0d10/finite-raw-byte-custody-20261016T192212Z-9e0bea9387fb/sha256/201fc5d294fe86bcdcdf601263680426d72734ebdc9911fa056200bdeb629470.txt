@@ -1,0 +1,16 @@
+{
+  "schema": "runtime-pair-verifier-strict-type-successor-v1",
+  "outcome": "SOURCE_ONLY",
+  "prior_verifier": {
+    "path": "/Users/local/Desktop/math/.noeaaeue/.local/incremental-warm-verification/verify_runtime_pair.py",
+    "sha256": "68bbccf358ae84c6656d49c516e23f47d860332a69bf235542e88dbf0b22628a",
+    "bytes": 18995
+  },
+  "successor_verifier": {
+    "path": "/Users/local/Desktop/math/.noeaaeue/.local/incremental-warm-verification/verify_runtime_pair_typed.py",
+    "sha256": "50e81ddb9b52ce4c64811610f81691a0ffe742ac182edd98c53a8e1048ae9698",
+    "bytes": 19654
+  },
+  "reason": "Independent review found Python False/0 descriptor equality in local verifier. Successor compares canonical bytes for first, warm, each own runtime digest and immutable terminal-origin descriptor. Product76-source handoff remains frozen and unchanged. No actual pair has been verified by the superseded verifier.",
+  "native_executions": 0
+}

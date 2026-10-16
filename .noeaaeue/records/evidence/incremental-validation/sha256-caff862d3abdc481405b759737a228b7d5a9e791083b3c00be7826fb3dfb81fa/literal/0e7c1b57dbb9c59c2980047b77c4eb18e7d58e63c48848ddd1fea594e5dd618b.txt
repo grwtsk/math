@@ -1,0 +1,14 @@
+{
+  "schema": "incremental-validation-scope-clarification-v1",
+  "observed_at": "2026-10-16T15:14:44.536769+00:00",
+  "handoff": "handoff.json",
+  "covered": "Public full-library,59 maintained selected validators,legacy manifest-bound source runner,cataloged single-source runner; exact72-file overlay.",
+  "application_validator": {
+    "path": ".noeaaeue/scripts/check_moebius_response.py",
+    "status": "Separate bespoke application compilation still cold in this72-file handoff; three-file successor bridge under construction and not yet qualified.",
+    "manifest_scope": "456 in current integration contract; default historicalv5 scope439; never inferred from public453.",
+    "planned_boundary": "Qualified compile-artifact reuse only; full application-owned census,six runtime controls,ten axiom controls remain freshly executed; no public-to-application admission inheritance."
+  },
+  "historical_receipts_unchanged": true,
+  "native_hold_active": true
+}

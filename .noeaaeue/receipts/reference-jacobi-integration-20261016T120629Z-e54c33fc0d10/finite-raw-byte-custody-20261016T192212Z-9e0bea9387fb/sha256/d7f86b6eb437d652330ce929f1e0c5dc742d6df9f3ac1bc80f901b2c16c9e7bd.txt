@@ -1,0 +1,11 @@
+{
+  "catalog_file_count": 2,
+  "context_file_count": 9,
+  "head_observation_changed": false,
+  "live": true,
+  "mathematical_acceptance": false,
+  "metadata_finding_count": 107,
+  "proof_status": "unknown-unreplayed",
+  "source_count": 887,
+  "status": "byte-custody-verified"
+}

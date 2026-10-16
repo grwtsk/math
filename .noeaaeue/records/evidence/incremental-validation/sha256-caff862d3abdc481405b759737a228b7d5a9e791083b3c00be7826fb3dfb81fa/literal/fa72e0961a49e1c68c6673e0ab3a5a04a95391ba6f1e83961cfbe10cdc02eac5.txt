@@ -1,0 +1,275 @@
+"""Incremental command adapter for the selected trust-zero Lean validators.
+
+The callers retain their source-custody checks, native declaration audits and
+exact rejection oracles. Entries are published only after that complete replay
+has passed, and cached diagnostics still pass through every caller-side check.
+"""
+from __future__ import annotations
+
+import hashlib
+import json
+from pathlib import Path
+import subprocess
+import uuid
+
+from incremental_lean import (
+    CommandCache, DependencyGraph, artifact_family, create_origin, regular_bytes,
+)
+
+
+POLICY_SOURCES = (
+    ".noeaaeue/scripts/incremental_lean.py",
+    ".noeaaeue/scripts/selected_incremental.py",
+    ".noeaaeue/scripts/cache_math.py",
+    ".noeaaeue/scripts/monitor_math.py",
+    ".noeaaeue/scripts/repository_paths.py",
+    ".noeaaeue/scripts/owned_audit_protocol.py",
+    ".noeaaeue/scripts/source_observations.py",
+)
+
+
+def _sha(raw):
+    return hashlib.sha256(raw).hexdigest()
+
+
+def freeze_incremental_policy(guard, root, frozen):
+    """Make cache policy subject to the validator's existing byte-drift checks."""
+    for relative in POLICY_SOURCES:
+        frozen[relative] = guard.read_source(root, relative)
+
+
+class SelectedReplayCache:
+    """Keep reusable commands separate from acceptance of the selected replay."""
+
+    def __init__(self, root, guard, source, build, frozen, paths, lean, receipt, *, cold=False):
+        self.root, self.guard = Path(root), guard
+        self.source, self.build = Path(source), Path(build)
+        self.frozen, self.paths, self.lean = frozen, paths, Path(lean)
+        self.receipt, self.cold = receipt, cold
+        self.cache = CommandCache(
+            self.root / ".noeaaeue/.local/math-trust/incremental", cold=cold,
+            namespace="selected-validation-v1", require_origin=True)
+        self.graph = None
+        self.pending, self.objects, self.records, self.compiled = [], {}, [], {}
+        self.executions = []
+        self.last = None
+        self.last_execution = None
+        self.policy = {
+            relative: _sha(raw) for relative, raw in frozen.items()
+            if not relative.endswith(".lean") or relative.endswith("/OwnedDeclarationAudit.lean")
+        }
+        self.receipt["validation_mode"] = "cold" if cold else "incremental"
+        self.receipt["incremental_validation"] = {
+            "schema": "selected-incremental-validation-v1",
+            "cold_requested": cold,
+            "cache_root": str(self.cache.root),
+            "commands": self.records,
+            "fresh_commands": 0, "cached_commands": 0,
+            "cache_entries_published_after_complete_acceptance": False,
+            "policy": (
+                "Each command binds its exact source bytes, transitive local source and "
+                "resolved imported-object identities, compiler and flags, validator policy "
+                "and rejection oracle. Cached objects and diagnostics come from a prior "
+                "successful complete selected replay. Existing native audits and rejection "
+                "oracles are reapplied to cached diagnostics. Cold mode bypasses reuse."),
+        }
+
+    def _dependencies(self, raw):
+        if self.graph is None:
+            # Generated positive controls exist by the first command. The audit
+            # wrapper is created later and its imports are resolved on demand.
+            local = {
+                path.relative_to(self.source).with_suffix("").as_posix().replace("/", "."): path
+                for path in self.source.rglob("*.lean")
+            }
+            self.graph = DependencyGraph(
+                local, self.paths, self.lean, cache_root=self.cache.root / "graph")
+        return self.graph.dependencies(raw)
+
+    def _verify_objects(self):
+        for path, expected in self.objects.items():
+            if artifact_family(path) != expected:
+                raise RuntimeError("incremental selected project object drift: " + str(path))
+
+    def run(self, relative, *, argv, cwd, env, output=False, expected=None, timeout=600):
+        """Return the normal process result; caller validates it before acceptance."""
+        self._verify_objects()
+        raw = self.guard.read_source(self.source, relative)
+        destination = self.build / Path(relative).with_suffix(".olean") if output else None
+        normalized = [str(arg).replace(str(self.source), "<source>")
+                      .replace(str(self.build), "<build>") for arg in argv]
+        dependencies = self._dependencies(raw)
+        local_objects = []
+        for dependency in dependencies:
+            module = dependency["module"]
+            if module in self.graph.local_sources:
+                if module not in self.compiled:
+                    raise RuntimeError("selected import has no validated command object: " + module)
+                # Child command keys recursively include their own imports and
+                # compiler flags. Actual generated bytes are a distinct input.
+                local_objects.append({"module": module, **self.compiled[module]})
+        material = {
+            "schema": "selected-command-v1", "source": relative,
+            "source_sha256": _sha(raw), "dependencies": dependencies,
+            "local_imported_objects": local_objects,
+            "compiler_sha256": self.receipt["compiler_sha256"], "argv": normalized,
+            "search_paths": self.paths, "policy_sources": self.policy,
+            "allowed_axioms": sorted(self.guard.ALLOWED_AXIOMS),
+            "role": (
+                "expected-rejection" if expected is not None else
+                "owned-declaration-audit" if relative == "SelectedAudit.lean" else
+                "positive-control" if "/Checks/Positive/" in relative else
+                "library" if output else "positive-check"),
+            "expected_rejection": json.loads(json.dumps(expected)),
+        }
+        cached = self.cache.lookup(material, destination=destination)
+        provenance = {
+            "path": relative, "status": "cached" if cached is not None else "fresh",
+            "role": material["role"],
+            "input_fingerprint": _sha(json.dumps(material, sort_keys=True).encode()),
+            "cache_key": self.cache.key(material),
+            "fresh_execution_this_run": cached is None,
+            "freshly_elaborated_this_run": False,
+            "cold_requested": self.cold,
+        }
+        if cached is not None:
+            provenance["origin"] = cached.provenance
+            for name in ("origin_receipt", "audit_digest", "partition_digest"):
+                provenance[name] = cached.provenance[name]
+        self.records.append(provenance)
+        self.last = provenance
+        self.last_execution = None
+        self.receipt["incremental_validation"][
+            "cached_commands" if cached is not None else "fresh_commands"] += 1
+        if cached is None:
+            process = subprocess.run(argv, cwd=cwd, env=env, capture_output=True,
+                                     text=True, timeout=timeout)
+            self.pending.append((material, process, destination, provenance))
+        else:
+            process = subprocess.CompletedProcess(
+                argv, cached.process.returncode, cached.process.stdout, cached.process.stderr)
+        if output and process.returncode == 0:
+            family = artifact_family(destination)
+            self.objects[destination] = family
+            module = Path(relative).with_suffix("").as_posix().replace("/", ".")
+            self.compiled[module] = {"command_key": self.cache.key(material), "artifacts": family}
+        provenance["freshly_elaborated_this_run"] = cached is None and process.returncode == 0
+        self.last_execution = {
+            "material": material, "process": process, "destination": destination,
+            "artifacts": self.objects[destination] if destination is not None and process.returncode == 0 else {},
+            "provenance": provenance,
+        }
+        self.executions.append(self.last_execution)
+        return process
+
+    def annotate_result(self, result):
+        # Share the record so the eventual publication key is also in results.
+        result["incremental_validation"] = self.last
+        log = self.source.parent / (str(len(self.records) - 1) + ".log")
+        raw = regular_bytes(log)
+        if self.last_execution is not None:
+            process = self.last_execution["process"]
+            if raw != (process.stdout + process.stderr).encode():
+                raise RuntimeError("selected command diagnostic/log mismatch: " + str(log))
+        self.last["diagnostic_log"] = {"path": str(log), "sha256": _sha(raw), "bytes": len(raw)}
+
+    def _audit_and_partition(self):
+        audit = {name: self.receipt.get(name) for name in (
+            "declarations", "modules", "audit_wrapper_sha256", "audit_source_profile",
+            "allowed_axioms", "positive_control_modules_audited")}
+        partition = {
+            "validator_schema": self.receipt.get("schema"),
+            "source_roles": [{
+                "path": item["material"]["source"], "role": item["material"]["role"],
+                "source_sha256": item["material"]["source_sha256"],
+                "expected_rejection": item["material"]["expected_rejection"],
+            } for item in self.executions],
+            "library_order": self.receipt.get("library_order"),
+            "accepted_control_order": self.receipt.get("accepted_control_order"),
+        }
+        digest = lambda value: _sha(json.dumps(value, sort_keys=True, separators=(",", ":")).encode())
+        return audit, partition, digest(audit), digest(partition)
+
+    def _publication_report(self, report):
+        self.guard.write_bytes(
+            self.source.parent / "cache-publication.json",
+            (json.dumps(report, indent=2) + "\n").encode())
+
+    def accept(self):
+        """Called after native census, exact negative oracles and final stable()."""
+        self._verify_objects()
+        if self.graph is not None:
+            self.graph.assert_stable()
+        self.cache.assert_origins_unchanged()
+        if len(self.executions) != len(self.records):
+            raise RuntimeError("incomplete native command cannot acquire a validation origin")
+        for record in self.records:
+            log = record["diagnostic_log"]
+            raw = regular_bytes(log["path"])
+            if len(raw) != log["bytes"] or _sha(raw) != log["sha256"]:
+                raise RuntimeError("selected command diagnostic log drift: " + log["path"])
+        audit, partition, audit_digest, partition_digest = self._audit_and_partition()
+        commands_by_key = {}
+        for item in self.executions:
+            command = self.cache.command_evidence(
+                item["material"], process=item["process"], artifacts=item["artifacts"])
+            previous = commands_by_key.setdefault(command["cache_key"], command)
+            if previous != command:
+                raise RuntimeError("same selected command key produced inconsistent proof evidence")
+        commands = list(commands_by_key.values())
+        snapshot = json.loads(json.dumps(self.receipt))
+        snapshot["outcome"] = "passed"
+        snapshot["acceptance_phase"] = "proof-validation-only"
+        origin = create_origin(self.source.parent / "proof-validation-origin.json", {
+            "attempt_id": "selected-proof-validation-" + uuid.uuid4().hex,
+            "outcome": "passed", "terminal": True,
+            "evidence": {
+                "commands": commands,
+                "selected_proof_validation": snapshot,
+                "subject_source_hashes": {relative: _sha(raw) for relative, raw in self.frozen.items()},
+                "frozen_source_directory": str(self.source),
+                "policy_sources": self.policy,
+                "command_materials": [item["material"] for item in self.executions],
+                "command_diagnostic_logs": [record["diagnostic_log"] for record in self.records],
+                "generated_project_objects": {str(path): family for path, family in self.objects.items()},
+                "resolved_import_closure": self.graph.identities() if self.graph is not None else {},
+                "audit": audit, "partition": partition,
+                "audit_digest": audit_digest, "partition_digest": partition_digest,
+                "trust": 0, "fatal_warnings": True,
+                "later_cache_publication_or_receipt_export_is_separate": True,
+            },
+        })
+        self.receipt["proof_validation_origin"] = origin
+        self.receipt["proof_validation_outcome"] = "passed"
+        self.receipt["incremental_validation"].update({
+            "audit_digest": audit_digest, "partition_digest": partition_digest,
+            "cache_publication_report": str(self.source.parent / "cache-publication.json"),
+        })
+        report = {"schema": "selected-cache-publication-v1", "outcome": "running",
+                  "origin_receipt": origin, "planned_entries": len(self.pending), "published_keys": []}
+        try:
+            self._publication_report(report)
+            for material, process, destination, provenance in self.pending:
+                published = self.cache.publish(
+                    material, process=process, destination=destination,
+                    provenance={"origin_receipt": origin, "audit_digest": audit_digest,
+                                "partition_digest": partition_digest})
+                provenance.update({"cache_key": published.key, "origin_receipt": origin,
+                                   "audit_digest": audit_digest, "partition_digest": partition_digest})
+                report["published_keys"].append(published.key)
+                self._publication_report(report)
+            self.cache.assert_origins_unchanged()
+            report["outcome"] = "passed"
+            self._publication_report(report)
+            self.receipt["incremental_validation"][
+                "cache_entries_published_after_complete_acceptance"] = True
+        except Exception as error:
+            report["outcome"], report["failure"] = "failed", str(error)
+            self._publication_report(report)
+            raise
+        finally:
+            self.close()
+
+    def close(self):
+        if self.graph is not None:
+            self.graph.close()

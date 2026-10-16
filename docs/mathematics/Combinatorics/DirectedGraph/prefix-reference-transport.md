@@ -30,6 +30,12 @@ full-history lookup. It preserves each repeated original row. This statement
 does not assert that the transported list is a prefix or subsequence of all
 final references, nor that any arbitrary old dictionary slot survives.
 
+The [direct-lookup consumer](prefix-table-direct-lookup.md) uses this support
+theorem and the final dictionary's duplicate-free invariant to identify the
+transported slot with an actual final search for the complete original word.
+Its separately checked counterexample shows why original reference membership
+cannot be replaced by bounds, even when the endpoint dictionaries are equal.
+
 ## Actual retained and dropped slots
 
 The positive fixture uses an actual well-formed dictionary `[[F], [], [P]]`

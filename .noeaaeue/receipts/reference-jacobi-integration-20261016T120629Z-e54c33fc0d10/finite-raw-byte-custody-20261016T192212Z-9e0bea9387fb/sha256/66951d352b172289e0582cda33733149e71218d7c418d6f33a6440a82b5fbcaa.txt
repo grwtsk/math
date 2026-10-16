@@ -1,0 +1,38 @@
+test_candidate_drift_missing_bytes_and_admission_changes_fail_closed (check_math_trust.ReplayFixtures) ... ok
+test_census_custom_axiom_and_missing_module_rejected (check_math_trust.ReplayFixtures) ... ok
+test_census_owner_totals_and_integer_counts_preserve_empty_umbrellas (check_math_trust.ReplayFixtures) ... ok
+test_coded_errors_reject_positive_source_and_strict_sorry_controls (check_math_trust.ReplayFixtures) ... ok
+test_complete_negative_census_with_coded_infrastructure_error_is_rejected (check_math_trust.ReplayFixtures) ... ok
+test_deleted_path_reappearance_and_deleted_set_drift_are_rejected (check_math_trust.ReplayFixtures) ... ok
+test_exact_candidates_are_excluded_and_reported_without_admission (check_math_trust.ReplayFixtures) ... ok
+test_existing_symlink_output_locations_are_rejected (check_math_trust.ReplayFixtures) ... ok
+test_generated_runtime_exception_requires_exact_unchanged_owner_source (check_math_trust.ReplayFixtures) ... ok
+test_historical_driver_without_children_remains_busy (check_math_trust.ReplayFixtures) ... ok
+test_inventory_keeps_broken_links_directories_and_broken_parent_paths_fatal (check_math_trust.ReplayFixtures) ... ok
+test_layout_gate_rejects_legacy_paths_before_full_replay_native_commands (check_math_trust.ReplayFixtures) ... ok
+test_live_file_edits_cannot_change_frozen_compiler_inputs (check_math_trust.ReplayFixtures) ... ok
+test_missing_import_and_cycle_rejected (check_math_trust.ReplayFixtures) ... ok
+test_mocked_native_orchestration_freezes_and_checks_all_controls (check_math_trust.ReplayFixtures) ... ok
+test_mocked_native_unrelated_failure_is_not_a_successful_control (check_math_trust.ReplayFixtures) ... ok
+test_native_self_test_busy_guard_preserves_receipt_without_native_invocation (check_math_trust.ReplayFixtures) ... ok
+test_nested_comments_and_strings_do_not_invent_imports (check_math_trust.ReplayFixtures) ... ok
+test_positive_native_fixture_requires_generated_private_and_configured_source_hash_coverage (check_math_trust.ReplayFixtures) ... ok
+test_project_verify_drivers_without_children_remain_busy (check_math_trust.ReplayFixtures) ... ok
+test_public_loader_override_rejected_before_any_child (check_math_trust.ReplayFixtures) ... ok
+test_source_gate_runs_fatal_default_layout_check_before_manifest_or_lean (check_math_trust.ReplayFixtures) ... ok
+test_source_hash_head_and_source_set_drift_rejected (check_math_trust.ReplayFixtures) ... ok
+test_stale_project_objects_and_foreign_cache_removed (check_math_trust.ReplayFixtures) ... ok
+test_strict_sorry_mixed_with_other_errors_does_not_pass (check_math_trust.ReplayFixtures) ... ok
+test_symlink_source_and_symlink_directory_rejected (check_math_trust.ReplayFixtures) ... ok
+test_unimported_module_replayed_after_dependency (check_math_trust.ReplayFixtures) ... ok
+test_working_tree_inventory_records_deleted_tracked_and_includes_new_untracked (check_math_trust.ReplayFixtures) ... ok
+test_frozen_loaded_parser_guard_precedes_any_dependency_graph (test_incremental_math_trust.PublicParserCustody) ... ok
+test_parser_sources_are_in_the_full_frozen_input_contract (test_incremental_math_trust.PublicParserCustody) ... ok
+test_public_preflight_runtime_guard_precedes_graph_identity_adoption (test_incremental_math_trust.PublicParserCustody) ... ok
+test_public_receipt_runtime_mismatch_blocks_cache_and_execution (test_incremental_math_trust.PublicParserCustody) ... ok
+test_public_snapshot_rejects_live_and_frozen_parser_drift (test_incremental_math_trust.PublicParserCustody) ... ok
+
+----------------------------------------------------------------------
+Ran 33 tests in 0.416s
+
+OK

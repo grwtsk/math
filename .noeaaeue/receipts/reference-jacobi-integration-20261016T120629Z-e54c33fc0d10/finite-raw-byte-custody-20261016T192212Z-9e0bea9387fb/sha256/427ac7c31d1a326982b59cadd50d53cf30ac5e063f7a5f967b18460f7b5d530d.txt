@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+    "-B",
+    ".noeaaeue/scripts/check_documentation.py"
+  ],
+  "cwd": "/Users/local/Desktop/math",
+  "native_executor": "root only",
+  "source_before": {
+    "/Users/local/Desktop/math/.noeaaeue/scripts/check_documentation.py": {
+      "bytes": 13595,
+      "path": "/Users/local/Desktop/math/.noeaaeue/scripts/check_documentation.py",
+      "sha256": "ea1192e8861533c6c8025b2c387d3620a6de2c97a67e2b2a62c0646d36d3a68a"
+    }
+  }
+}

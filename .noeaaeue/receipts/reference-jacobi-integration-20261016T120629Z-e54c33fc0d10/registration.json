@@ -1,0 +1,78 @@
+{
+  "schema": "selected-mathematical-registration-v1",
+  "at": "2026-10-16T12:10:25.946107+00:00",
+  "head": "2dfd6218fc5b6d1c77591c9b03dc1381d35710f0",
+  "changes": [
+    {
+      "path": ".noeaaeue/documentation/math-layout.json",
+      "before_sha256": "0815d036b3cdbeb591794dcb9e210d038ad7f147609116bb709e4b521cf05e17",
+      "after_sha256": "ee0d41dc8346789593b64c44301262a5242fec1d25cb44f46b755ccbb66fe459",
+      "archive": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/metadata-previous/.noeaaeue/documentation/math-layout.json"
+    },
+    {
+      "path": ".noeaaeue/documentation/reference/documentation-layout.json",
+      "before_sha256": "e03af9d40fcdf10406fb832e1fe9c420688847303b3445f6bb431e7020a009d5",
+      "after_sha256": "e880941f5940de0a28bbaac88f97966a8bc3c634dcc131aa80160fb27b0def67",
+      "archive": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/metadata-previous/.noeaaeue/documentation/reference/documentation-layout.json"
+    },
+    {
+      "path": "docs/reference/object-source-bindings.json",
+      "before_sha256": "f5cb64354e82581c3d4e545b75be570e0cd29e34f83f996a00fa16fe4a2dbd9f",
+      "after_sha256": "509d047c5f815dd5d93f69e3367a167195667f1c6b03bf2eafe97cd5bcf02753",
+      "archive": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/metadata-previous/docs/reference/object-source-bindings.json"
+    },
+    {
+      "path": "GRWTSK.lean",
+      "before_sha256": "79b42ec3fc844aee565bc901d2221974f097c73fde2070342eda110c3f46e205",
+      "after_sha256": "59f2d6d0f3b2277a04808ca19aed4e3459644fee90409b5e31f9f0384542ee05",
+      "archive": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/metadata-previous/GRWTSK.lean"
+    }
+  ],
+  "selected_results": [
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableDirectLookup.lean",
+      "positive": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableDirectLookup.lean",
+      "negative": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixDirectLookupMissingReference.lean",
+      "receipt": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-direct-lookup-selected-2026-10-16-3d871160-r4.json",
+      "page": "docs/mathematics/Combinatorics/DirectedGraph/prefix-table-direct-lookup.md",
+      "title": "Direct lookup after a finite rooted prefix schedule",
+      "subject": "Combinatorics",
+      "object": "DirectedGraph",
+      "license": "MIT",
+      "runner": ".noeaaeue/scripts/check_prefix_direct_lookup.py",
+      "owned": 928,
+      "new_library_owned": 3,
+      "positive_owned": 72,
+      "premises": [
+        "Quiver V; decidable equality on complete typed total edges",
+        "root : V; actual ValidRootedState root Key",
+        "actual finite List(Action root Key)",
+        "Original (key,slot) belongs to the actual initial real-reference list. Bounds alone are insufficient."
+      ],
+      "boundary": "Dropped occurrences remain None even after equal payload reintroduction; equality holds on actual original reference support. No file-IO/hash/compression/runtime refinement."
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicJacobi.lean",
+      "positive": "GRWTSK/NumberTheory/Cyclotomic/Checks/Positive/ThirdCyclotomicJacobi.lean",
+      "negative": "GRWTSK/NumberTheory/Cyclotomic/Checks/Negative/ThirdCyclotomicJacobiWrongSign.lean",
+      "receipt": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-jacobi-development-2026-10-16-8dcc930e-a3.json",
+      "page": "docs/mathematics/NumberTheory/Cyclotomic/third-cyclotomic-jacobi.md",
+      "title": "Cubic Jacobi congruence in the third cyclotomic integer ring",
+      "subject": "NumberTheory",
+      "object": "Cyclotomic",
+      "license": "Apache-2.0",
+      "runner": ".noeaaeue/scripts/check_third_cyclotomic_jacobi.py",
+      "owned": 95,
+      "new_library_owned": 8,
+      "positive_owned": 8,
+      "premises": [
+        "Actual O=integers(CyclotomicField 3 Q), specified omega and lambda=omega-1",
+        "P : Ideal O, P.IsMaximal, lambda notin P",
+        "Actual constructed zero-extended cubicChar P hgood; no extra nontriviality premise is needed by the pinned primary-congruence lemma."
+      ],
+      "boundary": "Retain z in Algebra.adjoin Z {omega} and J=-1+z*lambda^2. Opposite J-1 congruence refuted using lambda notdivides2. No prime-generation/norm/product/conjugation/stronger-modulus closure."
+    }
+  ],
+  "historical_bindings": "all existing entry records retained, no rehashing into new acceptance",
+  "whole_library_native_acceptance": "PENDING_FRESH_OBSERVATION_EXPLICIT_CONTRACT_AND_SERIAL_REPLAY"
+}

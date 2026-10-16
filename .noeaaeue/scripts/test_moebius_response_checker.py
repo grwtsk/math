@@ -16,6 +16,7 @@ import json
 import os
 from pathlib import Path
 import stat
+import struct
 import subprocess
 import sys
 import tempfile
@@ -32,6 +33,23 @@ TEMP_ROOT = Path("/private/tmp") if Path("/private/tmp").is_dir() else Path(temp
 REVISION = "1" * 40
 OWNERS = ["GRWTSK.Analysis.Exact", "GRWTSK.Logic.KernelAudit", "GRWTSK.Logic.Aggregate"]
 MOCK_POLICY = b"SUBJECT_ROOTS = frozenset({'Algebra', 'Analysis', 'Logic'})\nLEGACY_SEGMENTS = frozenset({'Legacy'})\n"
+
+
+def fixture_runtime_image(*, executable=False):
+    """Static thin64 Mach-O bytes for loader identity; no real program runs."""
+    paths = ([(0x8000001c, "@executable_path/../lib", 12),
+              (0x8000001c, "@executable_path/../lib/lean", 12),
+              (0xc, "@rpath/libMockLeanRuntime.dylib", 24)] if executable else
+             [(0xc, "/usr/lib/libSystem.B.dylib", 24)])
+    commands = []
+    for command, name, offset in paths:
+        value = name.encode() + b"\0"
+        length = (offset + len(value) + 7) // 8 * 8
+        commands.append(struct.pack("<III", command, length, offset)
+                        + bytes(offset - 12) + value + bytes(length - offset - len(value)))
+    body = b"".join(commands)
+    return struct.pack("<8I", 0xfeedfacf, 0x100000c, 0, 2 if executable else 6,
+                       len(commands), len(body), 0, 0) + body + b"mock runtime identity; never executed"
 
 
 def pinned_runtime_descriptor():
@@ -268,7 +286,9 @@ class CheckerControls(unittest.TestCase):
             subjects=sorted({name.split(".")[1] for name in sources if name!="GRWTSK"})
             fixture_bytes[".noeaaeue/scripts/check_math_layout.py"]=("SUBJECT_ROOTS = frozenset("+repr(subjects)+")\nLEGACY_SEGMENTS = frozenset({'Legacy'})\n").encode()
         for relative in (".noeaaeue/scripts/moebius_response_inputs.py", ".noeaaeue/scripts/moebius_owner_census.py",
-                         ".noeaaeue/scripts/check_moebius_response.py", census.CURRENT_PROFILE_RELATIVE, ".noeaaeue/checks/MoebiusResponseOwnerAuditCurrent.lean"):
+                         ".noeaaeue/scripts/check_moebius_response.py", census.CURRENT_PROFILE_RELATIVE, ".noeaaeue/checks/MoebiusResponseOwnerAuditCurrent.lean",
+                         *(".noeaaeue/scripts/" + name + ".py" for name in
+                           ("repository_paths", "monitor_math", "cache_math", "incremental_lean", "moebius_incremental"))):
             fixture_bytes[relative] = (REPO / relative).read_bytes()
         for relative, data in fixture_bytes.items():
             checker.write_exclusive(self.root / relative, data)
@@ -287,7 +307,8 @@ class CheckerControls(unittest.TestCase):
                 checker.write_exclusive(packages / "mathlib/.lake/build/lib/lean" /
                                         (dependency.replace(".", "/") + ".olean"), b"mock imported object")
         checker.write_exclusive(self.root / "toolchain/lib/lean/Lean.olean", b"mock core object")
-        checker.write_exclusive(lean, b"not an executable compiler; never invoked")
+        checker.write_exclusive(lean, fixture_runtime_image(executable=True))
+        checker.write_exclusive(self.root / "toolchain/lib/lean/libMockLeanRuntime.dylib", fixture_runtime_image())
         os.chmod(lean, 0o700)
         assets = {relative: checker.digest(data) for relative, data in fixture_bytes.items()
                   if relative != ".gitignore" and not relative.endswith(".lean")}
@@ -516,9 +537,8 @@ class CheckerControls(unittest.TestCase):
                 else:
                     raise AssertionError("Unexpected child command: " + repr(argv))
                 return stdout, ""
-        args = ["checker", "--root", str(self.root), "--lean", str(lean), "--packages", str(packages)]
-        if variant == "root-manifest-self":
-            args.extend(["--manifest", str(manifest_path)])
+        args = ["checker", "--root", str(self.root), "--lean", str(lean), "--packages", str(packages),
+                "--manifest", str(manifest_path)]
         if variant=="root-validate-only":
             shared=self.root/".noeaaeue/.local/shared-native.lock"; checker.write_exclusive(shared,b"")
             args.extend(["--validate-only","--native-lease",str(shared)])

@@ -1,0 +1,21 @@
+{
+  "schema": "selected-cache-publication-v1",
+  "outcome": "passed",
+  "origin_receipt": {
+    "path": "/Users/local/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/proof-validation-origin.json",
+    "sha256": "cb572ee75e067aba37e6dd3d17fcf7de86ae3bc575ca89546267743829e8461f",
+    "bytes": 8257460,
+    "attempt_id": "selected-proof-validation-a1dd031362194f70930fe2f9c8ad3c6a"
+  },
+  "planned_entries": 8,
+  "published_keys": [
+    "7697d6ae587df89d6d4fc33698dea7f918f4867171e1b4d5bc3a4d39d8499342",
+    "c5c9ddda14cfee1109823e4566c2149bdb64b35eb39491565bfe16d9300dd47a",
+    "3c0645340fba9c744d986c80a68e161f14bbd6a87b2d0197f2d83ef3ef695c68",
+    "af61008e1e072ee709843c0727429f1768d82c22db9fc93a05ae7390d5a846ac",
+    "ff469de448988127fc68314a35a5c7db3c2cedba0721cec4b4cd9a34a279523e",
+    "3a1e8ed4c93f564f3c2e7f168a41460677d83849744d1e111f7f239d637d00a9",
+    "8c84069e5bcf719cd23a5e2cf25bf28319c8935d52787e80a2481df8ea168fe0",
+    "58dd9bccc485e5d840d2774104d37b4c80d58ffd35fc498bc87a55668f59cd17"
+  ]
+}

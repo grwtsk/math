@@ -2695,7 +2695,7 @@
       "binding_reconciliation": "docs/mathematics/NumberTheory/Zeta/Riemann/inference-guards.md"
     },
     "docs/mathematics/LinearAlgebra/Schrodinger/transfer.md": {
-      "title": "Schr\u00f6dinger transfer matrices",
+      "title": "Schrödinger transfer matrices",
       "subject": "LinearAlgebra",
       "object": "Schrodinger",
       "primary_source": "GRWTSK/LinearAlgebra/SchrodingerTransfer.lean",
@@ -3208,7 +3208,7 @@
       "binding_reconciliation": "docs/mathematics/Analysis/Asymptotics/polynomial-error.md"
     },
     "docs/mathematics/NumberTheory/Moebius/matched-pickup.md": {
-      "title": "Matched averaging for the closed M\u00f6bius pickup",
+      "title": "Matched averaging for the closed Möbius pickup",
       "subject": "NumberTheory",
       "object": "Moebius",
       "primary_source": "GRWTSK/NumberTheory/Moebius/PrimitiveIdentification.lean",
@@ -3308,7 +3308,7 @@
       "category": "reference"
     },
     "docs/mathematics/NumberTheory/ArithmeticFunctions/density-correction.md": {
-      "title": "Complete density M\u00f6bius correction",
+      "title": "Complete density Möbius correction",
       "subject": "NumberTheory",
       "object": "ArithmeticFunctions",
       "primary_source": "GRWTSK/NumberTheory/ArithmeticFunctions/DensityMomentTails.lean",
@@ -3325,7 +3325,7 @@
       "binding_reconciliation": "docs/mathematics/NumberTheory/ArithmeticFunctions/density-correction.md"
     },
     "docs/mathematics/NumberTheory/ArithmeticFunctions/signed-cutoffs.md": {
-      "title": "Signed M\u00f6bius cutoff decomposition",
+      "title": "Signed Möbius cutoff decomposition",
       "subject": "NumberTheory",
       "object": "ArithmeticFunctions",
       "primary_source": "GRWTSK/NumberTheory/ArithmeticFunctions/SquarefreeMoebiusSum.lean",
@@ -3361,7 +3361,7 @@
       "category": "how-to"
     },
     "docs/mathematics/NumberTheory/LSeries/closed-moebius.md": {
-      "title": "Closed M\u00f6bius Dirichlet polynomials",
+      "title": "Closed Möbius Dirichlet polynomials",
       "subject": "NumberTheory",
       "object": "LSeries",
       "primary_source": "GRWTSK/NumberTheory/LSeries/ClosedMoebiusPolynomial.lean",
@@ -4355,7 +4355,7 @@
       "contribution": {
         "direction": "grwtsk contributors",
         "formalization": "OpenAI Codex",
-        "scope": "Finite joint and product weighted moment identities and exact typed triple reindexing; classical M\u00f6bius inversion reused; no arithmetic bound or abc closure."
+        "scope": "Finite joint and product weighted moment identities and exact typed triple reindexing; classical Möbius inversion reused; no arithmetic bound or abc closure."
       }
     },
     "docs/mathematics/Combinatorics/DirectedGraph/prefix-compaction-schedule.md": {
@@ -4513,10 +4513,28 @@
       "status": "fresh-selected",
       "evidence": ".noeaaeue/evidence/Analysis/fourier/larger-slice-checks-2026-10-16.json",
       "contribution_record": ".noeaaeue/receipts/larger-slice-anticoncentration/contribution-status.json"
+    },
+    "docs/mathematics/Combinatorics/DirectedGraph/prefix-table-direct-lookup.md": {
+      "title": "Direct lookup after a finite rooted prefix schedule",
+      "subject": "Combinatorics",
+      "object": "DirectedGraph",
+      "primary_source": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableDirectLookup.lean",
+      "source_sha256": "5f099e606e01fec069843167202c0d4ea2e82cd17f0fac3d14fc83b6772bd12c",
+      "status": "fresh-selected",
+      "evidence": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-direct-lookup-selected-runtime-20261016T190205Z-220551577cf8.json"
+    },
+    "docs/mathematics/NumberTheory/Cyclotomic/third-cyclotomic-jacobi.md": {
+      "title": "Cubic Jacobi congruence in the third cyclotomic integer ring",
+      "subject": "NumberTheory",
+      "object": "Cyclotomic",
+      "primary_source": "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicJacobi.lean",
+      "source_sha256": "2426a4fb0689cf6102e72cb174b9469641164450e656f3d9192357764f723623",
+      "status": "fresh-selected",
+      "evidence": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-jacobi-selected-runtime-20261016T190205Z-220551577cf8.json"
     }
   },
   "object_binding_registry": "docs/reference/object-source-bindings.json",
-  "object_binding_registry_sha256": "f5cb64354e82581c3d4e545b75be570e0cd29e34f83f996a00fa16fe4a2dbd9f",
+  "object_binding_registry_sha256": "dea449625f78dc8c9446efa60ea0d35af5f6bcd059f4df1f3db9d231caa7c0f7",
   "navigation": {
     "schema": "subject-index-navigation-v1",
     "summary": "docs/reference/library-summary.json"

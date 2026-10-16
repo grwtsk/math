@@ -13,7 +13,7 @@ ROOT=Path(__file__).resolve().parents[2]
 STATUSES={'historical-source-description','written-argument','literature-and-historical-source-description','literature-only','historical','fresh-selected','source-relocated-unreplayed'}
 FORBIDDEN={'ccc','conversation','proofhorizon','corkscrewchambercap','hadwigernelson','waveform','spectralunification','campaign'}
 GIT=Path('/Applications/Xcode.app/Contents/Developer/usr/bin/git')
-GIT_SHA256='9a1c8fc68dc75e1b3c0cd8e5ad9d13ac9bc92cb53c9578b3cff4beaf2e9b1e70'
+GIT_SHA256='acf0f202ebd6ecf78a731d900673b8a5f923f3b3c2783da599f1762ad4862dc0'
 GIT_TIMEOUT_SECONDS=30
 
 class LayoutError(ValueError): pass

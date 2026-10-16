@@ -1,0 +1,135 @@
+{
+  "application": {
+    "fresh_complete_owned_declarations": 12270,
+    "fresh_modules": 3,
+    "modules": 456,
+    "namespace_controls": 10,
+    "profile_negative_controls": 6,
+    "verified_cache_reuse": 453
+  },
+  "bindings": {
+    "active_contract": {
+      "bytes": 248067,
+      "path": ".noeaaeue/bindings/moebius-current-inputs-current.json",
+      "sha256": "7409f25df88e984ed1a78f74efcbff9e85a22b4d86fe07213f937b1794f85a8f"
+    },
+    "application_acceptance": {
+      "bytes": 3111,
+      "path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/coordinator-runtime-application-acceptance-20261016T190044Z-66c7b4e3a130.json",
+      "sha256": "603eaf7ff7c3087ffc2d876360615a646b72e3b7693564fce451bd0871d35535"
+    },
+    "cache_current": {
+      "bytes": 124,
+      "path": ".noeaaeue/cache/refs/current.json",
+      "sha256": "53ff10ea09d4ee7ce37f4398a8df4e6ad4ed9ff83147ae943ead6b2a6d6ba998"
+    },
+    "coordinator_custody_approval": {
+      "bytes": 4279,
+      "path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/coordinator-final-validation-custody-approval-20261016T191737Z-30c780495baf.json",
+      "sha256": "d909239a1a2b32723d05615ca48bc7b2019077b3623bba28006e93b63a84375b"
+    },
+    "default_activation": {
+      "bytes": 1783,
+      "path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/checked-runtime-default-activation-20261016T190809Z-3e2de72d4d1a.json",
+      "sha256": "cafe6a84852f444074f664b9a2875f935d9cc4b928b25cf1603326fe9259d4d4"
+    },
+    "denyset": {
+      "bytes": 2862013,
+      "path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-custody-allowlist-proposal-20261016T190721Z-6de4af86b238/excluded-foreign-paths-data-only.json",
+      "sha256": "2dad4eb3e18642a9a5e0b83c020980d4d96d4e08f13538f2569eb65c8767c7d7"
+    },
+    "documentation_gates": {
+      "bytes": 2920,
+      "path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/summary.json",
+      "sha256": "ff57aee01abe664fd76fcd4981f11a933a92f62c6063ec0d31e6463905410170"
+    },
+    "public_pair_acceptance": {
+      "bytes": 3168,
+      "path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/coordinator-runtime-first-warm-acceptance-20261016T183948Z-ca50411e915e.json",
+      "sha256": "1d26b66650be97e640c34b837e85ef0025636ff091c8d29b3b563ee10175eaea"
+    },
+    "selected_pair_acceptance": {
+      "bytes": 3357,
+      "path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/reference-jacobi-runtime-selected-acceptance-20261016T190659Z-445975fb060d.json",
+      "sha256": "aab964261d105015d25a63fbce16ee415a3263209b00fb16549deaac6d9084bb"
+    },
+    "source_cache_roundtrip": {
+      "bytes": 2478,
+      "path": ".noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/source-cache-887-20261016T191202Z-340920da53f9/summary.json",
+      "sha256": "4139c31db04f3eea6ff66dbb7d8d526466379386ceaa70c556c66791a647f355"
+    },
+    "source_observations": {
+      "bytes": 5026087,
+      "path": ".noeaaeue/bindings/current-source-observations.json",
+      "sha256": "b7788ea609d810c4221cefb653e2ff0eb483f60034ff528edefdab9f220d59c3"
+    }
+  },
+  "cache": {
+    "new_candidates_admitted": false,
+    "proof_status": "unknown-unreplayed",
+    "revision": "edfd5db62ced0900c89689a42123102bcb1a9c4c14fa5026073d8f9fe1953b65",
+    "sources": 887
+  },
+  "continuation": {
+    "next_mathematical_target": "Actual cubic character Jacobi product over O/P: jacobiSum chi chi * jacobiSum chi^-1 chi^-1 = (Nat.card (O / P) : O), under existing maximality and lambda-not-in-P hypotheses",
+    "next_window": "Only after this finite checkpoint is published; coordinated resource/cache architecture remains separate.",
+    "source_api_frontier": "Map through algebraMap O K, apply pinned jacobiSum_mul_jacobiSum_inv with explicit nontriviality and characteristic hypotheses, then descend by injectivity and ringHomComp identities. Source-only chain, not compiled or accepted.",
+    "suppliers_still_open": [
+      "Original RH target",
+      "Cubic Jacobi product implementation and selected proof audit",
+      "Norm/conjugation/ideal-generation not implied by the normalization result"
+    ]
+  },
+  "created_at": "2026-10-16T19:18:14.981275+00:00",
+  "preservation": [
+    "Historical, failed and interrupted receipts remain unchanged and keep original acceptance state.",
+    "All three new Lean candidates are source-custody-only.",
+    "New WSC foreign output paths and completion metadata remain unpublished; no architecture adoption.",
+    "Taxonomy unchanged. Source cache and observation kernel_checked false do not confer proof authority.",
+    "Correlated model review is not independent mathematical validation.",
+    "No more native proof run is required for this checkpoint."
+  ],
+  "public_first": {
+    "audited": 453,
+    "compiled": 453,
+    "native_aggregate_census": 1,
+    "owned_declarations": 12268
+  },
+  "publication": {
+    "remaining": [
+      "Finish exact selected/docs custody append; source-bound three-index denyset guards",
+      "Exact final finite export request and publication manifest coordinator review",
+      "Execute approved finite byte export and retain actual terminal success",
+      "Scoped main staging, committed-object readback, normal push and remote containment verification",
+      "Append actual publication record, commit/push/readback; update heartbeat; safe cleanup assessment"
+    ],
+    "stage_commit_push_done": false
+  },
+  "runtime_digest": "c48f0fb338d4947e55e4f3974e49b7d1d4a12ad0ac0a783355a135d7bda01f7d",
+  "schema": "reference-jacobi-validated-publication-frontier-v1",
+  "selected": {
+    "DirectLookup": {
+      "fresh_commands": 26,
+      "owned_declarations": 928,
+      "owners": 24
+    },
+    "Jacobi": {
+      "fresh_commands": 8,
+      "owned_declarations": 95,
+      "owners": 6
+    },
+    "fatal_warnings": true,
+    "partial": 0,
+    "trust_zero": true,
+    "unexpected_axioms": 0,
+    "unsafe": 0
+  },
+  "status": "ALL_NATIVE_DOCUMENTATION_AND_SOURCE_CUSTODY_GATES_COMPLETE_FINITE_PUBLICATION_PENDING",
+  "unchanged_warm": {
+    "audit_cache_hits": 453,
+    "audited": 0,
+    "compilation_cache_hits": 453,
+    "compiled": 0,
+    "native_aggregate_census": 0
+  }
+}

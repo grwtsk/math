@@ -1,0 +1,7 @@
+{
+  "catalog_file_count": 2,
+  "context_file_count": 9,
+  "destination": "/private/tmp/math-source-cache-roundtrip-20261016T191202Z-340920da53f9",
+  "proof_status": "unknown-unreplayed",
+  "source_count": 887
+}
