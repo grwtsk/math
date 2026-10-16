@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - codex/source-preserving-rs-refinement-check
+  pull_request:
+    branches:
+      - main
 
 jobs:
   verify:
