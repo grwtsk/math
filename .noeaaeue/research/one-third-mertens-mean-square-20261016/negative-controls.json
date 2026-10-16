@@ -1,0 +1,55 @@
+{
+  "schema": "one-third-mertens-mean-square-negative-controls-v1",
+  "controls": [
+    {
+      "id": "finite-prefix-not-summability",
+      "reject": "A finite sum or plot is promoted to OneThirdMertensSquare",
+      "positive_fixture": "The open premise is an infinite Summable statement"
+    },
+    {
+      "id": "no-pointwise-backfill",
+      "reject": "The square premise is reported as a pointwise beta<5/6 theorem",
+      "positive_fixture": "The sparse triangular-pulse fixture has unit increments, square summability, and no such pointwise exponent"
+    },
+    {
+      "id": "keep-signed-cross-terms",
+      "reject": "The block square is replaced by sum mu(n)^2 or absolute pair terms",
+      "positive_fixture": "The exact max-kernel expansion retains mu(a)mu(b) for every pair"
+    },
+    {
+      "id": "one-line-not-rh",
+      "reject": "Uniform sigma=1/3 control is promoted to RH",
+      "positive_fixture": "It gives only Re(rho)<=5/6; the remaining reciprocal lines stay open"
+    },
+    {
+      "id": "strict-pointwise-gap",
+      "reject": "A pointwise exponent beta=5/6 is passed to the strict local power theorem",
+      "positive_fixture": "The direct square route avoids asserting beta<5/6"
+    },
+    {
+      "id": "external-pin",
+      "reject": "The external Lean boundary is described as replayed under the local pin",
+      "positive_fixture": "Source ledger marks it inspected_not_replayed_at_local_pin"
+    },
+    {
+      "id": "written-boundary",
+      "reject": "The later written rational boundary is described as a locally checked theorem",
+      "positive_fixture": "It is used only for a comparison calculation"
+    },
+    {
+      "id": "pole-regularization",
+      "reject": "The reciprocal-zeta identity is continued through s=1 without the regularized factor",
+      "positive_fixture": "Use F(s)=(s-1)zeta(s) and F(s)G(s)=s-1"
+    },
+    {
+      "id": "triadic-role",
+      "reject": "The dyadic two-channel Gram block is called the CAS3 ternary face moment",
+      "positive_fixture": "The derivation keeps those objects separate"
+    },
+    {
+      "id": "quartic-role",
+      "reject": "The weighted square norm is relabeled as an orbit, Taylor, Jensen, or Frobenius quartic",
+      "positive_fixture": "No quartic identity is used in this package"
+    }
+  ]
+}

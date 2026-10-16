@@ -1,0 +1,85 @@
+{
+  "entries": [
+    {
+      "bytes": 938,
+      "path": "README.txt",
+      "sha256": "ccef34604d2892ecc8973ab4cff42c8eb62932148c7fdb6b4912a2e72986a41b"
+    },
+    {
+      "bytes": 936,
+      "path": "candidate-inventory.json",
+      "sha256": "b5de4b6fc4499ac14af0168b63b3afd119cd68cb6de34aa2226d92158505b3d2"
+    },
+    {
+      "bytes": 1992,
+      "path": "candidates/DyadicMertensMeanSquare.lean.txt",
+      "sha256": "a67984dc88b682668dd68d4016a32f9fbedddb7a0271460fbc8ecf634390df6d"
+    },
+    {
+      "bytes": 1764,
+      "path": "candidates/MertensSquareMellin.lean.txt",
+      "sha256": "0b2559cd4674bc70e1def8767e906ea4211f90687be661a664d1368f1c07d5c7"
+    },
+    {
+      "bytes": 3288,
+      "path": "candidates/OneThirdMertensMeanSquare.lean.txt",
+      "sha256": "d9d38522d8b0dc8e59a01af6cada9793ff17f3927ec84c508d192d7e86b6be8f"
+    },
+    {
+      "bytes": 683,
+      "path": "candidates/audit.lean.txt",
+      "sha256": "8acfb5b8f27c6b8267330bfeb6838b8d5e2be210a387d28e598b9af4ecea640d"
+    },
+    {
+      "bytes": 8732,
+      "path": "certificates.json",
+      "sha256": "8d6f708b8981b08bc9c60bb810f5cccd84f291d196cbd25b71c02cb12554dd32"
+    },
+    {
+      "bytes": 11946,
+      "path": "derivation.md",
+      "sha256": "262086e89d7d3909384082ef44ab06563d6ce365828498fdb85381daa1872ac8"
+    },
+    {
+      "bytes": 2304,
+      "path": "negative-controls.json",
+      "sha256": "6e9ced06a4858e363a3504b74ead98f2646aaaedc30dc762f209aadc24e7844a"
+    },
+    {
+      "bytes": 1766,
+      "path": "proof-hypergraph.json",
+      "sha256": "0e98093a2ff4a4b4f49f04e6e271206d2238d99bba68313eb7f3c467bcd1fca7"
+    },
+    {
+      "bytes": 1569,
+      "path": "receipt.json",
+      "sha256": "46f9648a5eca458d29450cb812b6a39ca14c6d824e83bc2b491970468c18419c"
+    },
+    {
+      "bytes": 1299,
+      "path": "replay-receipt.json",
+      "sha256": "163da48f8a88c6f67982d805f297a0026bf336908d99c46ce8d1145f1e7b8c76"
+    },
+    {
+      "bytes": 854,
+      "path": "resume-cursor.json",
+      "sha256": "83088508e425674f1882efefff5d3082837cf9da05d00793795f281c94308450"
+    },
+    {
+      "bytes": 1111,
+      "path": "scripts/one_third_mertens_mean_square.py",
+      "sha256": "47717b972f31bd3da2b73b588ef6758a87f4e21f54fee90dada5a76b741274a6"
+    },
+    {
+      "bytes": 4142,
+      "path": "source-ledger.json",
+      "sha256": "c71dfdec4bff438b587ae171cbaa2da6c19d9f6779b81bd841ef824f2053092d"
+    },
+    {
+      "bytes": 700,
+      "path": "tests/test_one_third_mertens_mean_square.py",
+      "sha256": "c0ce8a4aab55c35322be2cbc72dae27aa18ddbfaf11cda9910053db5d53f4851"
+    }
+  ],
+  "schema": "one-third-mertens-mean-square-published-manifest-v2"
+}
