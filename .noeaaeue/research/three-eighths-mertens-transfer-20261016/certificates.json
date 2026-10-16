@@ -1,0 +1,71 @@
+{
+  "checks": {
+    "baseline_seven_eighths_has_zero_endpoint_margin": true,
+    "boundary_below_seven_eighths": true,
+    "coherence_exponent_below_three_quarters": true,
+    "coherence_exponent_exact": true,
+    "generic_fixtures_all_pass": true,
+    "midpoint_epsilon_positive": true,
+    "midpoint_exponent_below_seven_eighths": true,
+    "multiplier_exact": true,
+    "one_third_not_reached": true,
+    "strict_margin_positive": true,
+    "three_eighths_above_boundary_shift": true,
+    "transfer_gap_equals_half_margin": true
+  },
+  "exact_arithmetic": {
+    "B": "4374785349/5000000000",
+    "boundary_shift": "1874785349/5000000000",
+    "coherence_exponent": "1874785349/2500000000",
+    "coherence_gain_below_three_quarters": "214651/2500000000",
+    "delta_to_seven_eighths": "214651/5000000000",
+    "gap_to_five_sixths": "624356047/15000000000",
+    "midpoint_beta": "8749785349/10000000000",
+    "midpoint_epsilon": "214651/10000000000",
+    "three_eighths_multiplier": "320000000000/1931859"
+  },
+  "external_dependencies": {
+    "local_transfer_blob": "5cf91262ed912e477f2d6b19c94b9791402e801d",
+    "pintz_arxiv": "2608.24878",
+    "quasi_riemann_formal_revision": "b83dbbd914c5751acf9bc3389cde58970437278f"
+  },
+  "generic_fixtures": [
+    {
+      "beta": "4399785349/5000000000",
+      "denominator_identity": true,
+      "epsilon": "1/200",
+      "sigma": "1924785349/5000000000",
+      "strict_gap": true
+    },
+    {
+      "beta": "4413847849/5000000000",
+      "denominator_identity": true,
+      "epsilon": "1/128",
+      "sigma": "1952910349/5000000000",
+      "strict_gap": true
+    },
+    {
+      "beta": "4624785349/5000000000",
+      "denominator_identity": true,
+      "epsilon": "1/20",
+      "sigma": "2374785349/5000000000",
+      "strict_gap": true
+    },
+    {
+      "beta": "4999785349/5000000000",
+      "denominator_identity": true,
+      "epsilon": "1/8",
+      "sigma": "3124785349/5000000000",
+      "strict_gap": true
+    }
+  ],
+  "limitations": [
+    "external Lean theorem not replayed at local pin",
+    "Pintz transfer not formalized locally",
+    "Mertens constant existential, not explicit",
+    "no one-third-line estimate",
+    "no RH proof"
+  ],
+  "schema": "three-eighths-mertens-transfer-certificate-v1",
+  "status": "passed"
+}
