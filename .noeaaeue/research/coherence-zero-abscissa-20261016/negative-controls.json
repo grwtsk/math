@@ -1,0 +1,13 @@
+{
+  "schema": "coherence-zero-abscissa-negative-controls-v1",
+  "controls": [
+    {"id":"finite_prefix_not_limsup","expected":"reject","fixture":"zero blocks through J followed by 4^j"},
+    {"id":"signed_log_invalid","expected":"reject","fixture":"signed block -2 makes log(1+S) undefined"},
+    {"id":"pairwise_positive_parts_change_source","expected":"reject","fixture":[1,-2,1]},
+    {"id":"external_theorem_not_native","expected":"reject","fixture":"Pintz theorem recorded as Lean theorem without proof"},
+    {"id":"pole_only_not_upper","expected":"reject","fixture":"pole obstruction supplies lower exponent only"},
+    {"id":"mertens_only_not_lower","expected":"reject","fixture":"pointwise upper estimate supplies no pole obstruction"},
+    {"id":"supremum_not_attained","expected":"reject","fixture":"sequence of zero real parts increasing to theta"},
+    {"id":"python_not_lean","expected":"reject","fixture":"exact symbolic checks with lean_compiled=false"}
+  ]
+}

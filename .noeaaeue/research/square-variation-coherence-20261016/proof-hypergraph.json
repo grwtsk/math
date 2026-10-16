@@ -1,0 +1,13 @@
+{
+  "schema": "square-variation-coherence-proof-hypergraph-v1",
+  "nodes": [
+    {"id": "RZA-MERTENS", "status": "published_external_theorem", "type": "forall X >= 1798118, abs(M(X)) <= 0.006688 X/log X"},
+    {"id": "FINITE-PREFIX", "status": "exact_computation", "type": "sum_{n<1798118} (M_n g_n)^2 < 55867/500000"},
+    {"id": "SQUARE-VARIATION", "status": "written_result", "type": "sum_n (M_n g_n)^2 < 14/125", "premises": ["RZA-MERTENS", "FINITE-PREFIX"]},
+    {"id": "DYADIC-NEGATIVE-CAP", "status": "written_result", "type": "forall j, sum_{I_j} ell_n C_n^- < 49/625", "premises": ["SQUARE-VARIATION"]},
+    {"id": "SIGNED-POSITIVE-EQUIV", "status": "written_result", "type": "signed and positive dyadic block subpower/polylog classes are equivalent", "premises": ["DYADIC-NEGATIVE-CAP"]},
+    {"id": "SIGNED-BLOCK-SUBPOWER", "status": "open", "type": "forall eps>0 exists A forall j, S_j <= A 2^(eps j)"},
+    {"id": "PICKUP-ENERGY-SUBEXP", "status": "checked_repository_consumer", "premises": ["SIGNED-POSITIVE-EQUIV", "SIGNED-BLOCK-SUBPOWER"]},
+    {"id": "RH", "status": "checked_repository_consumer", "premises": ["PICKUP-ENERGY-SUBEXP"]}
+  ]
+}

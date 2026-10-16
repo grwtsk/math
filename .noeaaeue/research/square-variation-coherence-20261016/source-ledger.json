@@ -1,0 +1,32 @@
+{
+  "schema": "square-variation-coherence-source-ledger-v1",
+  "sources": [
+    {
+      "source_id": "grwtsk-math-positive-coherence",
+      "repository_or_attachment": "grwtsk/math",
+      "path_or_location": ".noeaaeue/research/positive-coherence-blocks-20261016",
+      "revision": "e82336f0936b15413a4a8f184fc22af1d01af459",
+      "source_role": "immediate mathematical predecessor",
+      "coverage_status": "selected files inspected",
+      "explicit_exclusions": ["no native replay in this package"]
+    },
+    {
+      "source_id": "ramare-zuniga-alterman-2024",
+      "repository_or_attachment": "arXiv",
+      "path_or_location": "arXiv:2408.05969, Theorem 1.1 / abstract statement",
+      "revision": "public version observed 2026-10-16",
+      "source_role": "explicit Mertens tail theorem",
+      "coverage_status": "statement retrieved",
+      "explicit_exclusions": ["proof not formalized in Lean here"]
+    },
+    {
+      "source_id": "grl-cas3-attached",
+      "repository_or_attachment": "conversation attachment",
+      "path_or_location": "GRL-CAS3 / 0.1.0",
+      "revision": "attached source",
+      "source_role": "signed triadic aggregation discipline",
+      "coverage_status": "relevant moment and hostile-control sections inspected",
+      "explicit_exclusions": ["forbidden-pair matching is not used as positive transport"]
+    }
+  ]
+}

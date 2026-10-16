@@ -1,0 +1,30 @@
+/-
+Human mathematical direction: grwtsk contributors.
+Candidate formalization assistance: OpenAI ChatGPT. MIT.
+CANDIDATE_SOURCE_ONLY. Not elaborated or axiom-audited.
+-/
+import GRWTSK.NumberTheory.Moebius.CriticalEndpointDefectRecurrence
+
+set_option autoImplicit false
+noncomputable section
+
+namespace GRWTSK.NumberTheory.Moebius.SquareVariationBounds
+
+/-- Generic complete coherence for a finite increment prefix. -/
+def coherence (x : ℕ → ℝ) (n : ℕ) : ℝ :=
+  (∑ k ∈ Finset.range n, x k) ^ 2 - ∑ k ∈ Finset.range n, x k ^ 2
+
+/-- The negative part of complete coherence is bounded by the diagonal square variation. -/
+theorem negPart_coherence_le_variation (x : ℕ → ℝ) (n : ℕ) :
+    max (-coherence x n) 0 ≤ ∑ k ∈ Finset.range n, x k ^ 2 := by
+  unfold coherence
+  have hq : 0 ≤ (∑ k ∈ Finset.range n, x k) ^ 2 := sq_nonneg _
+  have hv : 0 ≤ ∑ k ∈ Finset.range n, x k ^ 2 :=
+    Finset.sum_nonneg (fun _ _ => sq_nonneg _)
+  by_cases h : 0 ≤ -((∑ k ∈ Finset.range n, x k) ^ 2 - ∑ k ∈ Finset.range n, x k ^ 2)
+  · rw [max_eq_left h]
+    linarith
+  · rw [max_eq_right (le_of_not_ge h)]
+    exact hv
+
+end GRWTSK.NumberTheory.Moebius.SquareVariationBounds

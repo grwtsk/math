@@ -1,0 +1,30 @@
+{
+  "schema": "square-variation-coherence-negative-controls-v1",
+  "controls": [
+    {
+      "id": "external-theorem-not-computation",
+      "rejected": "Treating the published Mertens tail as proved by the Python producer",
+      "positive_fixture": "The certificate marks the theorem as external and computes only the finite prefix"
+    },
+    {
+      "id": "threshold-retained",
+      "rejected": "Applying the 0.006688 X/log X bound below X=1798118",
+      "positive_fixture": "The finite prefix includes every n below the published threshold"
+    },
+    {
+      "id": "signed-source-retained",
+      "rejected": "Replacing M_n by abs(M_n) in endpoint increments",
+      "positive_fixture": "Only the diagonal square variation uses M_n^2; signed block coherence keeps M_n M_k"
+    },
+    {
+      "id": "positive-part-order",
+      "rejected": "Summing positive parts of individual pair interactions",
+      "positive_fixture": "The complete scalar C_n is aggregated before C_n^+ is formed"
+    },
+    {
+      "id": "finite-profile-not-asymptotic",
+      "rejected": "Promoting the finite prefix or diagnostics to a signed-block growth theorem",
+      "positive_fixture": "The resume theorem remains DyadicSignedCoherenceBlockSubpower"
+    }
+  ]
+}
