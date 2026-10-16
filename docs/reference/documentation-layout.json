@@ -3706,10 +3706,28 @@
       "source_sha256": "904f3991a65106ee9c0a93f575ba536eec2645d64cff7ff3d9a16de8f389e6fc",
       "status": "fresh-selected",
       "evidence": "evidence/Analysis/MellinTransform/gaussian-coupled-separation-checks-2026-10-15.json"
+    },
+    "docs/mathematics/Combinatorics/DirectedGraph/prefix-update-reindex.md": {
+      "title": "Incremental prefix-state updates and relation reindexing",
+      "subject": "Combinatorics",
+      "object": "DirectedGraph",
+      "primary_source": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableUpdateReindex.lean",
+      "source_sha256": "65dfc39c95dfdad3f0349960a56c70f6bd8422687941068ba8943935343facd8",
+      "status": "fresh-selected",
+      "evidence": "evidence/Combinatorics/DirectedGraph/prefix-update-reindex-checks-2026-10-15.json"
+    },
+    "docs/mathematics/Analysis/MellinTransform/gaussian-annular-separation.md": {
+      "title": "Annular logarithmic quotient Gaussian separation",
+      "subject": "Analysis",
+      "object": "MellinTransform",
+      "primary_source": "GRWTSK/Analysis/MellinTransform/GaussianAnnularSeparation.lean",
+      "source_sha256": "f5484cd14ed516b463e8e1feb3022bb7c5e008addfcca6f66c155cb456b8232f",
+      "status": "fresh-selected",
+      "evidence": "evidence/Analysis/MellinTransform/gaussian-annular-separation-checks-2026-10-15.json"
     }
   },
   "object_binding_registry": "docs/reference/object-source-bindings.json",
-  "object_binding_registry_sha256": "5f0448aa1b49394c90ad3badad704745ed8897a5b2b9c80be9398c60d0567931",
+  "object_binding_registry_sha256": "c69e37ff2f9c5f5b774e6a6ad156f8fdb8ffe19c47aba1003cb88f5f2a10e387",
   "navigation": {
     "schema": "subject-index-navigation-v1",
     "summary": "docs/reference/library-summary.json"

@@ -33,6 +33,12 @@ compares their underlying vertex values. Restoration reads the actual new
 state root, and certificate transport separately preserves its outer root
 equality even when there are no rows.
 
+The [incremental update law](prefix-update-reindex.md) now proves that actual
+stored-state update commutes with injective relation translation, field by field.
+The proof derives inventories, missing prefixes, cells and real references from
+the actual mapped occurrences. Successive update consumers retain full rooted
+histories; criteria for newly appended rows remain separate evidence obligations.
+
 ## Checked boundaries
 
 The controls use a noncanonical dictionary with children stored before their

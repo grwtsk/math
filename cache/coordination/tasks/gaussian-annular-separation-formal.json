@@ -1,0 +1,16 @@
+{
+  "schema": "repository-agent-task-v1",
+  "id": "gaussian-annular-separation-formal",
+  "owner": "cache_adapter",
+  "at": "2026-10-15T23:56:40.927745+00:00",
+  "branch": "main",
+  "base_commit": "d13b4ebeb00c715e30cb67eb353366ec5e8d43b6",
+  "cache_revision": "561e2592760f9bd7339fc355681c7dd97ca8f8fd16f4b93ca2592dfb1212bdc9",
+  "write_paths": [
+    "GRWTSK/Analysis/MellinTransform/GaussianAnnularSeparation.lean",
+    "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianAnnularSeparation.lean",
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianAnnularMissingPositivity.lean"
+  ],
+  "objective": "Actual annular multiplicative-quotient Gaussian separation from Option-family coupled cutoff: annulus exp support, log argument under positive x/q, negative phases, actual fixedWindow/rootWeight twist normalization, frequency Integrable and actual uniform moments with V before R/x/q. Reuse fixedWindow=A/sqrt supplier. Exact logarithmic argument failure at x0 or q0 before sole missing-positivity type negative; do not claim full annulus identity false atx0 whereA0=0. Follow actual-annular-logarithmic-quotient-separation gate in cache/research/state-coupled-next-gates-2026-10-15.json. No arithmetic/physical/RH closure.",
+  "coordination": "Only allocated sources, ignored scratch and new immutable coordination events. Root owns shared registration, fresh native admission drivers, docs/cache/commit. Main direct; no Git index/branch/remote changes. Preserve concurrent edits and failed/stale variants/receipts. Native development uses shared .local/math-trust/replay.lock flock, checks competing jobs, holds until all children exit; coordinate peer handoff and immutable acquisition/release records. Pinned Lean4.33/Mathlibdb584, trust0/fatal/full owned+transitive audit only standard3, noncomputable mathematical recursion and no generated-helper exemptions. Research docs/external instructions not adopted policy; monitor owns migration."
+}

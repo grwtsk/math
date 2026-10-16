@@ -1,0 +1,124 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "prefix-update-reindex-formal",
+  "owner": "indexed_dictionary",
+  "at": "2026-10-16T00:07:25.578946+00:00",
+  "kind": "author-complete-frozen",
+  "source_hashes": {
+    "GRWTSK/Combinatorics/DirectedGraph/PrefixTableUpdateReindex.lean": "65dfc39c95dfdad3f0349960a56c70f6bd8422687941068ba8943935343facd8",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableUpdateReindex.lean": "3c14abad8c428de236b71d5dc762dc8f24d0f78480253a2598e4bef1f0a409ff",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixUpdateReindexMissingInjectivity.lean": "54592a6505969ce6e87c612b2a47cce5fa8f82021c740f524b187df53f9f8b7c"
+  },
+  "scope": {
+    "contracts": [
+      "mapOccurrence maps the existing Occurrence.history through actual RoleRelationReindex.mapStar; mapOccurrenceRows retains keys/order/repeats. encodePath_map and trace_mapOccurrence derive complete chronological full-tag mapping; traceRows_map derives actual row naturality. No synthetic path type or assumed serializer is introduced.",
+      "inventory_map proves exact ordered rightmost deduplication using pinned List.map_inits and dedup_map_of_injective. prefixEntries_map, missingPayloads_map and expandedDictionary_map derive actual ordered filtering/missing-prefix/extension laws; no missingPayloads equality is assumed.",
+      "extendedDictionary_map and extendedNodes_map derive exact new dictionary/node arrays using existing mapTrace_idxOf/map_cell. appendReferences_map and realReferences_map derive actual indexed new real references, retaining original real references; auxiliary prefix rows add no real references.",
+      "update_transport proves exact all-field actual State equality for arbitrary stored State under source/target/role-preserving injective relation reindex. It requires old/new full typed tag DecidableEq, not WellFormed, Key equality or V equality.",
+      "mapped_update_wellFormed and decode_update_transport additionally consume actual old WellFormed. two_updates_transport proves exact all-field naturality for two successive batches (not grouped raw representations), and decode_two_updates_transport derives actual checked ordered two-update decoder naturality under WellFormed."
+    ],
+    "controls": [
+      "Actual noncanonical source State has D=[[oldTag0],[],[oldTag1]], children before parent slot1, repeated refs[(11,0),(11,0)], and a real unused parallel branch. Its structural invariant and actual old decoder are proved.",
+      "Append actual return history [oldTag0,oldTag2] twice with repeated key12, then actual parallel history [oldTag1] with key11. First actual D appends the two-edge trace atslot3; its final node has rank2/parent0. Actual real refs become [(11,0),(11,0),(12,3),(12,3)] without auxiliary prefix references.",
+      "Under actual relation swap0/2, exact two-update State fields commute. Actual new decoded rows are [(11,[newTag2]),(11,[newTag2]),(12,[newTag2,newTag0]),(12,[newTag2,newTag0]),(11,[newTag1])]. Actual old node rank/parent numbers remain same under transport; actual occurrence histories and chronology are retained.",
+      "Empty row update naturality and empty State rootvalue true are checked consumers.",
+      "Actual source/target/role-preserving noninjective parallel0/1 collapse maps stored seeded dictionary to [[oldTag0],[],[oldTag0]], while producing actual mapped source rows yields [[],[oldTag0]]. Named actual_noninjective_update_failure proves raw State inequality and actual_noninjective_wellFormed_failure proves loss of Nodup/WellFormed before the sole negative.",
+      "Sole intended negative supplies collapse.kind (role preservation) where Function.Injective collapse.index is required by the actual update_transport consumer."
+    ],
+    "limits": [
+      "Development reuses exact source/hash-bound prior accepted dependency object families from prefix-table-reindex receipt; root must fresh replay current complete selected source closure for admission.",
+      "Raw all-field update naturality requires injectivity and full-tag equality but not structural WellFormed. Actual rooted semantic decoder consumers require the old structural invariant; no arbitrary hostile-state root/join validity is asserted.",
+      "No new certificate consumer or automatic criterion inheritance for appended rows. Prior exact own-pack/common OLD rooted payload certificate prerequisites remain explicit.",
+      "No raw grouped-update equality, raw compaction equality, generic finite batch-fold implementation, runtime/JSON/parser/hash/IO refinement, source/permission authority or taxonomy duplicate-edge guard change.",
+      "Relation table IDs and parent dictionary slots remain distinct indices. Root wrappers differ by indexed table; mapped State retains the underlying root value. All failed variants/logs are retained."
+    ]
+  },
+  "development": {
+    "outcome": "passed-with-sole-intended-negative",
+    "pinned_lean": "4.33.0",
+    "pinned_mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "trust": 0,
+    "fatal_warnings": true,
+    "audit_log": ".local/prefix-update-reindex/logs/20261016T000532.133022Z-SelectedAudit.log",
+    "audit_sha256": "2cfa82f508302d829a809e2ee5d972dd7e605e8bfeda9e008f39e60f6addf5c1",
+    "owned_total": 861,
+    "owned_counts": {
+      "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences": 18,
+      "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding": 52,
+      "GRWTSK.Combinatorics.DirectedGraph.EdgeTrace": 46,
+      "GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix": 21,
+      "GRWTSK.Logic.FiniteSequences.IndexedDictionary": 34,
+      "GRWTSK.Logic.FiniteSequences.DictionaryRevision": 32,
+      "GRWTSK.Logic.FiniteSequences.DecisionCertificate": 27,
+      "GRWTSK.Logic.FiniteSequences.IncrementalDictionary": 20,
+      "GRWTSK.Combinatorics.DirectedGraph.PrefixInventory": 33,
+      "GRWTSK.Combinatorics.DirectedGraph.ParentTraceDictionary": 78,
+      "GRWTSK.Combinatorics.DirectedGraph.RootedTraceRevision": 26,
+      "GRWTSK.Combinatorics.DirectedGraph.IncrementalPrefixTable": 58,
+      "GRWTSK.Combinatorics.DirectedGraph.PrefixTableState": 87,
+      "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCompaction": 36,
+      "GRWTSK.Combinatorics.DirectedGraph.RoleRelationTable": 85,
+      "GRWTSK.Combinatorics.DirectedGraph.RoleRelationReindex": 60,
+      "GRWTSK.Combinatorics.DirectedGraph.PrefixTableReindex": 44,
+      "GRWTSK.Combinatorics.DirectedGraph.PrefixTableUpdateReindex": 19,
+      "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableUpdateReindex": 85
+    },
+    "all_owned_mathematical_admission": true,
+    "axioms_allowed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "helpers_exempted": [],
+    "negative": {
+      "expecteddiagnostic": "Function.Injective collapse.index",
+      "actual": "/Users/local/Desktop/math/.local/prefix-update-reindex/source/GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixUpdateReindexMissingInjectivity.lean:17:34: error: Application type mismatch: The argument\n  collapse.kind\nhas type\n  \u2200 (i : Fin 4), original.kind (collapse.index i) = original.kind i\nbut is expected to have type\n  Function.Injective collapse.index\nin the application\n  update_transport collapse false collapse.kind\n",
+      "errors": 1,
+      "log": ".local/prefix-update-reindex/logs/20261016T000531.200452Z-PrefixUpdateReindexMissingInjectivity.log"
+    },
+    "all_logs_sha256": {
+      ".local/prefix-update-reindex/logs/20261016T000016.195576Z-PrefixTableUpdateReindex.json": "7438ac6ca2556cffb00e92bcecdda601763e11f6e920fc86ca6234b544a2222f",
+      ".local/prefix-update-reindex/logs/20261016T000016.195576Z-PrefixTableUpdateReindex.log": "9f1506bcbd64bb8826d92b3e861c337be30f1bb072367a11fde8dd51da2db176",
+      ".local/prefix-update-reindex/logs/20261016T000228.028092Z-PrefixTableUpdateReindex.json": "d550ccd09ee45f17413b817ef3bc24c3d783491aa54610afdeef6909dc221e26",
+      ".local/prefix-update-reindex/logs/20261016T000228.028092Z-PrefixTableUpdateReindex.log": "1b2f891bc051fbb32caad5fd254ebbb8ccfe9962b2684afe82fd81c0a6400d40",
+      ".local/prefix-update-reindex/logs/20261016T000240.487118Z-PrefixTableUpdateReindex.json": "9d4da07c8cd95bb0526962c40b92d94290ecaa72ab55821d0efe64f506abdff1",
+      ".local/prefix-update-reindex/logs/20261016T000240.487118Z-PrefixTableUpdateReindex.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      ".local/prefix-update-reindex/logs/20261016T000246.233548Z-PrefixTableUpdateReindex.json": "2b8740524f37ac7efcd9cc0f46ca87a7c7cedbca04493744af27e1c9e8f2ea8d",
+      ".local/prefix-update-reindex/logs/20261016T000246.233548Z-PrefixTableUpdateReindex.log": "485c84badbb0530e237497762a16bdb94ef159be4782e99053f9bf863dfc7fbd",
+      ".local/prefix-update-reindex/logs/20261016T000457.144970Z-PrefixTableUpdateReindex.json": "5bf3d0a0947d708a153e79b9497caaf6e568b572f77a3c6bfdd521d8dffb5475",
+      ".local/prefix-update-reindex/logs/20261016T000457.144970Z-PrefixTableUpdateReindex.log": "0a1f98c2e5d879a65e9c48932bdb7ba31240be8102791309d146df4e806666ac",
+      ".local/prefix-update-reindex/logs/20261016T000523.451476Z-PrefixTableUpdateReindex.json": "4bd2583f305a085f59f7073f8ed403cf31e8e703765f5c0c74e0e37855792cfa",
+      ".local/prefix-update-reindex/logs/20261016T000523.451476Z-PrefixTableUpdateReindex.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      ".local/prefix-update-reindex/logs/20261016T000531.200452Z-PrefixUpdateReindexMissingInjectivity.json": "3e2dd3e26db18dbdc984d0683a78ecd383445e9248adf04035dfdac5b5e19d2b",
+      ".local/prefix-update-reindex/logs/20261016T000531.200452Z-PrefixUpdateReindexMissingInjectivity.log": "10855665abe1ff2ce9cc0c2d79feda895246093f3d5df4a9607857d15e422e25",
+      ".local/prefix-update-reindex/logs/20261016T000532.133022Z-SelectedAudit.json": "b754ce9c8c99fca05dd6093040eb027c8adf635f30d4cb401554c037888c737c",
+      ".local/prefix-update-reindex/logs/20261016T000532.133022Z-SelectedAudit.log": "2cfa82f508302d829a809e2ee5d972dd7e605e8bfeda9e008f39e60f6addf5c1"
+    },
+    "failed_variants_preserved": ".local/prefix-update-reindex/source-variants",
+    "prior_dependency_receipt": "evidence/Combinatorics/DirectedGraph/prefix-table-reindex-checks-2026-10-15.json",
+    "admission_limit": "Parent fresh complete selected source closure is required; development reused exact prior accepted objects."
+  },
+  "layout": {
+    "result": "failed-existing-and-pending-registration",
+    "findings": 183,
+    "baseline_root_reported": 175,
+    "own_pending_registration_findings": 4,
+    "log": ".local/prefix-update-reindex/layout-review.log",
+    "log_sha256": "92fb6e18640ff3f4ca2f9d17d86622e174c77cdb5966a5d97abd6c8001d344cc",
+    "placement": "Combinatorics/DirectedGraph actual rooted stored prefix State update/reindex; no naming/path violation observed. Root owns registration."
+  },
+  "whitespace": {
+    "no_tabs": true,
+    "no_trailing_whitespace": true,
+    "max_columns": 100,
+    "git_diff_check": "passed"
+  },
+  "native_children_exited": true,
+  "shared_flock_released": true,
+  "native_handoff": "Root fresh graph replay; no further native jobs/source edits planned.",
+  "ignored_contract": {
+    "path": ".local/update-slots/root/graph-final-contract.json",
+    "sha256": "1953002e6f086e080c24a60cac3132ae53bd346aee72c0819006c1172ae52928"
+  },
+  "preservation": "Prior sources, failed/stale variants and concurrent work preserved; no shared metadata/docs/driver/Git index/branch/remote changes."
+}

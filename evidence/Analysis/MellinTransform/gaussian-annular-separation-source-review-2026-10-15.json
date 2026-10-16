@@ -1,0 +1,208 @@
+{
+  "schema": "grwtsk.source-review.v1",
+  "task": "update-slots-source-scout",
+  "reviewer": "cache_taxonomy",
+  "review_scope": "Correlated same-team bounded exact-source/premise/control/credit review; not independent validation. No source acceptance transferred from citation.",
+  "native_validation": {
+    "status": "NOT_RUN",
+    "owner": "root",
+    "limit": "Root trust0/fatal complete owned+transitive audits and strict negative receipts remain separate."
+  },
+  "source_context": {
+    "path": ".local/update-slots-source-scout/c2ae010a8cce4d169e702d9c95b64a3b/review-context.json",
+    "sha256": "2c11140f5e28fe529c17174eb9dce8d9a131caff93b3fcecdca0b9c9c4f40b54",
+    "bytes": 14902
+  },
+  "source_manifest": {
+    "path": ".local/update-slots-source-scout/c2ae010a8cce4d169e702d9c95b64a3b/source-manifest.json",
+    "sha256": "9ab378bc99bebb6bf0703a01974c7be3e201315afe70569afabec2f4b650d52a",
+    "bytes": 3019
+  },
+  "prior_next_gates": {
+    "path": "cache/research/state-coupled-next-gates-2026-10-15.json",
+    "sha256": "300b9157be2f00a8f44949f3894f8ba72da2c0cba001955242bf67263046212e",
+    "bytes": 8113
+  },
+  "preservation": "Preserve every historical failed/stale receipt, source variant, anchor correction and incoming inert source custody/NOT_RUN. No source/docs/sharedregistry/native/Git/remote changes.",
+  "created_utc": "2026-10-16T00:03:38.300885+00:00",
+  "subject": "Analysis/MellinTransform/GaussianAnnularSeparation",
+  "author_freeze": {
+    "path": "cache/coordination/events/gaussian-annular-source-freeze-e20c714d56674e419cefc101e6b5f311.json",
+    "sha256": "7a18a079f9ea660b3e1bfea0c14e1913472318ffcc214875a12930a617a0f9f5",
+    "bytes": 1430
+  },
+  "local_sources": [
+    {
+      "path": "GRWTSK/Analysis/MellinTransform/GaussianAnnularSeparation.lean",
+      "sha256": "f5484cd14ed516b463e8e1feb3022bb7c5e008addfcca6f66c155cb456b8232f",
+      "bytes": 8093,
+      "archive": ".local/update-slots-source-scout/c2ae010a8cce4d169e702d9c95b64a3b/frozen-local/GRWTSK/Analysis/MellinTransform/GaussianAnnularSeparation.lean",
+      "declarations": {
+        "gaussianSlotWindow": 31,
+        "gaussianSlotSlope": 34,
+        "gaussianSlotPoint": 37,
+        "gaussianSlot_argument": 42,
+        "logPhase_neg_argument": 51,
+        "gaussianSlot_product": 57,
+        "logPhaseTwist": 68,
+        "logPhaseTwist_compact": 70,
+        "gaussianFixedWindow_rootWeight_twist": 74,
+        "gaussianFixedWindow_twist_compact": 81,
+        "dyadicAnnulus_log_support": 86,
+        "gaussian_annular_integrable": 108,
+        "gaussian_selected_slot_family": 119
+      }
+    },
+    {
+      "path": "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianAnnularSeparation.lean",
+      "sha256": "40aa3728724a8c6582f3701e6f44c7e8fa5eaad042b42cdf16bad51c88481d36",
+      "bytes": 5750,
+      "archive": ".local/update-slots-source-scout/c2ae010a8cce4d169e702d9c95b64a3b/frozen-local/GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianAnnularSeparation.lean",
+      "declarations": {
+        "multiplicativeWindow": 15,
+        "multiplicativeWindow_log_support": 18,
+        "actual_positive_quotient": 23,
+        "actual_single_slot": 32,
+        "actual_empty_slots": 52,
+        "actual_twist_root_normalization": 64,
+        "actual_twist_compact": 69,
+        "actual_positive_phase_quarter": 72,
+        "actual_negative_phase_quarter": 79,
+        "actual_phase_sign_differs": 87,
+        "actual_zero_argument_false": 94,
+        "actual_zero_denominator_false": 100,
+        "actual_zero_annulus_identity": 106
+      }
+    },
+    {
+      "path": "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianAnnularMissingPositivity.lean",
+      "sha256": "3bf498b6d0d47236bbe78347dbec4da6262340412690e51e76c37a85c93019bf",
+      "bytes": 762,
+      "archive": ".local/update-slots-source-scout/c2ae010a8cce4d169e702d9c95b64a3b/frozen-local/GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianAnnularMissingPositivity.lean",
+      "declarations": {}
+    }
+  ],
+  "primary_OpenAI": [
+    {
+      "repository": "openai/math",
+      "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "path": "lean/OAI/NumberTheory/DirichletL/Detector/GaussianSlots.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/Detector/GaussianSlots.lean",
+      "archive": ".local/update-slots-source-scout/c2ae010a8cce4d169e702d9c95b64a3b/GaussianSlots.lean",
+      "sha256": "fcf0dc45845a9cde9f15d3277b659811a20223d23b6277a193a42efc1dca1a09",
+      "git_blob": "bf4e39205b30ae0e8a894b42b6aa4126aac26dbe",
+      "bytes": 4819,
+      "native_status": "NOT_RUN",
+      "declarations": {
+        "gaussianSlotWindow": 10,
+        "gaussianSlotSlope": 13,
+        "gaussianSlotPoint": 16,
+        "gaussianSlot_argument": 20,
+        "logPhase_neg_argument": 28,
+        "gaussianSlot_product": 34,
+        "gaussianFixedWindow_Vstar_twist": 44,
+        "gaussianAnnulus_log_support": 51,
+        "gaussian_selected_slot_family": 64
+      },
+      "retrieved_utc": "2026-10-15T23:57:22.215114+00:00"
+    }
+  ],
+  "primary_credit": "Project OpenAI,Apache-2.0,no individual header author observed; LICENSE rawSHA c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4.",
+  "toolchain_boundary": "Exact upstream source at1581d4 uses Lean4.34.1; local pinned Lean4.33.0/Mathlibdb584. No upstream admission/toolchain transfer.",
+  "actual_Anthropic_primary": [
+    {
+      "repository": "anthropics/formal-math",
+      "pin": "e1a4e6508154ea59f030480661590a9fe3018011",
+      "path": "zeta23/Zeta23/FromPNTPlus/Fourier.lean",
+      "url": "https://raw.githubusercontent.com/anthropics/formal-math/e1a4e6508154ea59f030480661590a9fe3018011/zeta23/Zeta23/FromPNTPlus/Fourier.lean",
+      "archive": ".local/update-slots-source-scout/c2ae010a8cce4d169e702d9c95b64a3b/Fourier.lean",
+      "sha256": "8d53e47135861fd5afaa2ff273737e09353dc9ae0ba8b6875baa16f3a167b1bc",
+      "git_blob": "4e3f24af43b78dfe109a344c5517956c1cd4fbfe",
+      "bytes": 9623,
+      "retrieved_utc": "2026-10-15T23:57:22.224762+00:00",
+      "declarations": {
+        "nnnorm_eq_of_mem_circle": 29,
+        "nnnorm_circle_smul": 32,
+        "e": 35,
+        "hasDerivAt_e": 42,
+        "fourierIntegral_deriv_aux2": 49,
+        "fourierIntegral_self_add_deriv_deriv": 72,
+        "tendsto_intervalIntegral_zero_of_uniform_norm_bound": 87,
+        "tendsto_const_mul_log_add_two_div_add_two_atTop": 98,
+        "norm_fourier_le_integral_deriv_div": 111,
+        "norm_oscillatory_integral_le_integral_deriv_div": 140,
+        "norm_oscillatory_integral_le_integral_deriv_div_abs": 172
+      },
+      "native_status": "NOT_RUN"
+    }
+  ],
+  "Anthropic_credit": "PrimeNumberTheoremAnd contributors/Apache-2.0; original upstream6a380f0c4658c04a420a9eb00b1ed62a1e3fde01 tagv4.32.2 filePrimeNumberTheoremAnd/Fourier.lean; Anthropic2026 port modifications. Actual header credits preserved, no sole Anthropic authorship claim.",
+  "Anthropic_comparison": "Actual integrable differentiable function with integrable derivative and nonzero frequency yields pointwise Fourier/oscillatory decay. This is not the actual Option-slot quotient identity, constructed common cutoff or Gaussian density moment theorem.",
+  "pinned_mathlib": [
+    {
+      "repository": "leanprover-community/mathlib4",
+      "pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "path": "Mathlib/Analysis/SpecialFunctions/Log/Basic.lean",
+      "archive": ".local/update-slots-source-scout/c2ae010a8cce4d169e702d9c95b64a3b/mathlib/Mathlib/Analysis/SpecialFunctions/Log/Basic.lean",
+      "sha256": "1f36a9802233e878953d809b16e020beaf0ace5afd4c8279d47b52af6ee186bf",
+      "git_blob": "2776daac653ac8de9603408765b37a02d63f3e55",
+      "bytes": 28230,
+      "header_credit": "/-\nCopyright (c) 2018 Chris Hughes. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: Chris Hughes, Abhimanyu Pallavi Sudhir, Jean Lo, Calle Sönne\n-/\nmodule\n",
+      "native_status": "NOT_RUN",
+      "selected_declarations": {
+        "exp_log": 59,
+        "log_div": 138,
+        "log_le_log": 151,
+        "log_prod": 407
+      }
+    }
+  ],
+  "inherited_phase_Fourier_sources": {
+    "path": "evidence/Analysis/MellinTransform/gaussian-coupled-separation-source-review-2026-10-15.json",
+    "sha256": "5efb5e9e92e5ebe38c4fd672a88d3cde090e1217b3ed33166ffa23cfe3da218e",
+    "bytes": 14564
+  },
+  "arxiv_context": {
+    "title": "Wavelet Filtering with the Mellin Transform",
+    "author": "Gerald Kaiser",
+    "id": "math-ph/0108013v1",
+    "version_utc": "2001-08-20T18:33:27Z",
+    "published_context": "PDF states December1995 and Applied Mathematics Letters9#5,1996; arxiv version2001 distinct.",
+    "url": "https://arxiv.org/pdf/math-ph/0108013v1",
+    "snapshot": {
+      "url": "https://arxiv.org/pdf/math-ph/0108013v1",
+      "archive": ".local/revision-seminorm-source-scout/5f2ef1061af54c86a8c93c16fdb334ed/kaiser-math-ph0108013v1.pdf",
+      "sha256": "c20738e4cf5dc3f1c4d03bea90b971a1fda5f43fb630f308fe147986f53d89a2",
+      "git_blob": null,
+      "bytes": 85113
+    },
+    "selected_scope": "Fresh primary abstract/version and §1 pp1–5: scale convention/convergence discussion, Mellin eq10/11 and admissibility eq24. Section2 is Applications and is not the source of those equations. No full paper theorem transferred.",
+    "comparison": "Wavelet scale sigma≠0, scaling-invariant dσ/|σ|, conditional integral convergence and explicit transform convention. Its wavelet dilation amplitude convention differs from the y^-1/2 factor in the actual local G. It provides no exact normalized G seminorm bound, zero-scale value claim, arithmetic closure or RH continuation.",
+    "license": "arXiv assumed non-exclusive distribution license for1991-2003, checked from abstract license link https://arxiv.org/licenses/assumed-1991-2003/license.html. Citation/paraphrase context only, not code reuse license.",
+    "fresh_scope": "Fresh exactv1 abstract metadata open; prior Section1 scale/Mellin/admissibility context reused. It is not the exact seminorm remote-cutoff or density integral theorem.",
+    "fresh_selected_scope": "Fresh primaryPDFv1 Section1pp1-3 eq3/4/9 (cycles-frequency2pi Fourier), plus priorMellin/admissibility10/11/24 context.",
+    "limits": "Fourier exponential2pi agrees at convention level, but wavelet dilation amplitude and Mellin sign/scale conventions differ. No exact integrated Schwartzsource-pair/Gaussian moment theorem, actualLogWindowdensity,convergenceorRH result transferred."
+  },
+  "arxiv_fresh_scope": "Fresh primary Kaiser math-ph/0108013v1 §1 eq10/11 positive-variable Mellin, explicit dσ/σ and inversion contour convention. Sign and wavelet amplitude conventions differ from present positive2pi inverse/log-phase/rootWeight; no exact annulus quotient theorem or integral interchange transferred.",
+  "finding": "No actionable premise omission or normalization discrepancy observed in bounded full frozen-source review. Correlated source-only review/native NOT_RUN, not independent validation.",
+  "exact_scope": [
+    "Actual Option-indexed windows, slopes and points are defined. Positive x and each q_i supply every exp(log) conversion in gaussianSlot_argument; the product identity retains positive x phase and negative quotient phases.",
+    "Actual dyadicAnnulus_log_support is proved from annulus small/large and real-log monotonicity, not an assumed support oracle. Main theorem assumes M_i>=0 and actual W_i(exp y) nonzero log-support bounds. Individual W_i need no smoothness/integrability for this pointwise parameter formula.",
+    "Local logPhaseTwist W t x=W x*logPhase t(log x) is an explicit total scalar object. Compactness follows from support containment for any compact W. Existing rootWeight multiplies sqrt(x), existing fixedWindow is A(x)/sqrt(x); positive-x nonzero sqrt is used for exact cancellation. No arithmetic CompletedHeight namespace or source identity inferred.",
+    "gaussian_annular_integrable supplies actual full frequency-integrand Integrable for every real R, with x>0 and all q_i>0, any actual compact Schwartz V. It consumes existing actual coupled integrability and exact scalar phase/rootWeight identities.",
+    "gaussian_selected_slot_family constructs one actual compact Schwartz V before ALL positive R,x,q from the actual Option family, supplies actual frequency Integrable and equality, plus all-real exponent A/natural J uniform moments with C>0 chosen before positive R. It consumes previously proved actual coupled family, not assumed desired hsep/Fourier evaluation/Fubini or arithmetic row identity."
+  ],
+  "controls": [
+    "Actual indicator-like multiplicativeWindow(Unit,x) selected by |log x|<=1 supplies real log-support premise. Concrete x3/4,q=exp(1/2),R=exp(1/2) yields actual positive quotient/profile, exact integrability, one common cutoff and moments.",
+    "Empty auxiliary family retains actual annulus slot; actual constructed cutoff yields integral identity and Integrable for all positive R,x. Actual fixed-window twist/rootWeight and compactness consumers are included.",
+    "Actual positive/negative quarter-frequency phases at argument1 equal +I/-I and are proved unequal. This checks the scalar sign; no unsupported conclusion about a different full integral is inferred.",
+    "Actual exp/log quotient fails at x0 with empty auxiliary family and at x1/q0 with Unit family. Separately, actual full annulus-weighted x0 identity is proved true for every real R/compact Schwartz V because annulus/rootWeight vanish. Thus auxiliary failure is not mislabeled a whole-formula counterexample.",
+    "Negative imports the complete positive module and supplies le_refl0 where strict positivity0<0 is required in gaussianSlot_argument. Expected intended failure is source-bound; this reviewer did not run native validation."
+  ],
+  "limits": [
+    "Current proof is pure analysis. No corrected ideal sum, common finite ideal support, completed physical row, masks/corrections/column/cube-weight, Hecke/calibration, detector or RH supplier is provided.",
+    "Fresh primary exact scalar usage confirms orientation; defining upstream normTwistedSource file remains unlocated after bounded candidates and no claim that it was supplied/replayed is made. Local explicit scalar object needs no such arithmetic import.",
+    "Fourier forward density convention remains negative2pi and inverse/logPhase positive2pi; rootWeight sqrt factor remains explicit. Mellin Haar normalization is not ordinary dx probability.",
+    "No source/native admission, independent validation, runtime/parser/JSON/hashIO refinement, policy authority, optimal cache/compression or novelty claim. Parent separately owns fresh native admission/negative/audit receipts."
+  ]
+}

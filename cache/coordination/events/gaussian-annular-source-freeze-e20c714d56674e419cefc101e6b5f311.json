@@ -1,0 +1,31 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "gaussian-annular-separation-formal",
+  "event": "complete-source-freeze-author-native-released",
+  "owner": "cache_adapter",
+  "at": "2026-10-16T00:02:48.113659+00:00",
+  "source_hashes": {
+    "GRWTSK/Analysis/MellinTransform/GaussianAnnularSeparation.lean": "f5484cd14ed516b463e8e1feb3022bb7c5e008addfcca6f66c155cb456b8232f",
+    "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianAnnularSeparation.lean": "40aa3728724a8c6582f3701e6f44c7e8fa5eaad042b42cdf16bad51c88481d36",
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianAnnularMissingPositivity.lean": "3bf498b6d0d47236bbe78347dbec4da6262340412690e51e76c37a85c93019bf"
+  },
+  "negative_expected_substring": "0 < 0",
+  "positive_extra_local_imports": [],
+  "development": {
+    "library": "PASS",
+    "positive": "PASS",
+    "negative": "sole intended Application type mismatch",
+    "trust": 0,
+    "fatal_warnings": true,
+    "full_census": "NOT_RUN author at root request; root fresh authoritative complete-closure replay pending"
+  },
+  "scratch": ".local/gaussian-annular-separation/324f3c150d74464b8eb7b78a5a7075cf",
+  "all_children_exited": true,
+  "shared_lock_released": true,
+  "native_jobs_running": 0,
+  "source_whitespace_checked": true,
+  "main_imports": [
+    "GRWTSK.Analysis.MellinTransform.GaussianCoupledSeparation",
+    "GRWTSK.Analysis.MellinTransform.GaussianWindowSeminorms"
+  ]
+}

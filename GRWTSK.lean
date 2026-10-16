@@ -387,3 +387,5 @@ import GRWTSK.Analysis.MellinTransform.GaussianDensityMoments
 import GRWTSK.Combinatorics.DirectedGraph.PrefixTableReindex
 import GRWTSK.Analysis.Calculus.CompactCutoff
 import GRWTSK.Analysis.MellinTransform.GaussianCoupledSeparation
+import GRWTSK.Combinatorics.DirectedGraph.PrefixTableUpdateReindex
+import GRWTSK.Analysis.MellinTransform.GaussianAnnularSeparation
