@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    ".noeaaeue/scripts/check_documentation.py",
+    "--render"
+  ],
+  "utc": "2026-10-16T05:55:47.932022+00:00",
+  "exit_code": 0,
+  "outcome": "passed",
+  "previous_failure": "documentation-render.json; unregistered process-report Markdown link corrected to JSON manifest"
+}

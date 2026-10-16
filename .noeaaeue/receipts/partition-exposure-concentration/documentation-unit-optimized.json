@@ -1,0 +1,11 @@
+{
+  "command": [
+    "python3",
+    "-O",
+    "-B",
+    ".noeaaeue/scripts/test_documentation_layout.py"
+  ],
+  "utc": "2026-10-16T05:53:49.918960+00:00",
+  "exit_code": 0,
+  "outcome": "passed"
+}

@@ -1,0 +1,712 @@
+{
+  "status": "LEAN_AUDIT_SELF_TEST_PASSED",
+  "run_directory": "/Users/local/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0",
+  "mode": "lean-self-test",
+  "generated_runtime_helper_exception": {
+    "name": "GRWTSK.Algebra.orderedProduct._unsafe_rec",
+    "module": "GRWTSK.Algebra.OrderedProduct",
+    "status": "HISTORICAL_SINGLETON_POLICY_NOT_CURRENT_PERMISSION",
+    "kind": "definition",
+    "unsafe": true,
+    "partial": false,
+    "owner_source_sha256_required": "97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d",
+    "axiom_gate": "unchanged; standard axioms only",
+    "dependency_impact": "direct value references reported; direct theorem references rejected"
+  },
+  "lean_memory_limit_mib": 4096,
+  "snapshot": {
+    "head": "51f3c3044e2554d6ba3f10d7306bfde1155534a4",
+    "sources": [],
+    "sha256": {
+      ".noeaaeue/scripts/check_math_trust.py": "f0cc1a6d8a2cb4ea098c3f34c6e1e31d5bf984514d9fab2e9110b23c528d0a12",
+      ".noeaaeue/scripts/owned_audit_protocol.py": "56b62242a080f7327bd1a3eac1f234fa0d68a22dc68151693793b35c30e6f114",
+      "GRWTSK/Logic/ProofChecking/Checks/OwnedDeclarationAudit.lean": "94eb4533f7b97b38b5165b015a16149f01b98fd110978292b0e2e3dbdc2773c3",
+      "lake-manifest.json": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
+      "lakefile.toml": "a23f6d313f8458192328f09635ffef9078cb684374c2aac2743af541bf59b4e3",
+      "lean-toolchain": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b"
+    },
+    "deleted_library_paths": []
+  },
+  "scope": "Small generated fixture modules and the frozen native audit; no project theorem verdict",
+  "mathlib_imported": false,
+  "rh_proved": false,
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "lean_binary_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "dependency_revisions_from_lock": {
+    "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "plausible": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+    "LeanSearchClient": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+    "importGraph": "16f02aa7642864af59f1ff0e384a015994db9118",
+    "proofwidgets": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957",
+    "aesop": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+    "Qq": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+    "batteries": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+    "Cli": "6130a47896ce867c6a4a55373441e59e565bad0f"
+  },
+  "standard_library_search_path": "/Users/local/.elan/toolchains/leanprover--lean4---v4.33.0/lib/lean",
+  "fixture_input_sha256": {
+    "lean-fixtures/positive/source/GRWTSK/Fixture/Positive.lean": "ea837839f32a8852a503eb8cc18f29ef1854d8211d47bd4f80762ec3f565e1b8",
+    "lean-fixtures/positive/source/FixtureAudit.lean": "e76b32826f1d697f9f0b8d320e9a3fe506d26cb3f92c0e248d90cca561219c4c",
+    "lean-fixtures/sorry/source/GRWTSK/Fixture/Sorry.lean": "20fce24b9a16cb3d9920bbbb37bed029f23b66f676f80848f9b3b1aa3f668342",
+    "lean-fixtures/sorry/source/FixtureAudit.lean": "30be61fa82166d83ea6a2f163cef2517572a6c794fe0b5e7ba3ae6d8686212ce",
+    "lean-fixtures/custom-axiom/source/GRWTSK/Fixture/CustomAxiom.lean": "df1daa7b42e34a2a8a9203af5011f9d819d0e1d3aa657345cb88fe32b8fef825",
+    "lean-fixtures/custom-axiom/source/FixtureAudit.lean": "40b93856143aa5709be9cc2b7b2aff91db806179110fbf2483d7421f5ae98431",
+    "lean-fixtures/unsafe/source/GRWTSK/Fixture/Unsafe.lean": "47faa78ebe9f505eeb6c1d7d10fc6f42b637102040dd64d2d4dccb086c50fc60",
+    "lean-fixtures/unsafe/source/FixtureAudit.lean": "a6f1f0f47e673a56a9f5c1c52cd1d89a99ad58397c1b7fba735e26a39c90b249"
+  },
+  "owned_audit_protocol": "current-json-source-profiles-v1",
+  "fixture_source_profiles": {
+    "positive": {
+      "scope": "native-fixtures",
+      "sources": {
+        "GRWTSK.Fixture.Positive": "ea837839f32a8852a503eb8cc18f29ef1854d8211d47bd4f80762ec3f565e1b8"
+      }
+    },
+    "sorry": {
+      "scope": "native-fixtures",
+      "sources": {
+        "GRWTSK.Fixture.Sorry": "20fce24b9a16cb3d9920bbbb37bed029f23b66f676f80848f9b3b1aa3f668342"
+      }
+    },
+    "custom-axiom": {
+      "scope": "native-fixtures",
+      "sources": {
+        "GRWTSK.Fixture.CustomAxiom": "df1daa7b42e34a2a8a9203af5011f9d819d0e1d3aa657345cb88fe32b8fef825"
+      }
+    },
+    "unsafe": {
+      "scope": "native-fixtures",
+      "sources": {
+        "GRWTSK.Fixture.Unsafe": "47faa78ebe9f505eeb6c1d7d10fc6f42b637102040dd64d2d4dccb086c50fc60"
+      }
+    }
+  },
+  "active": null,
+  "results": [
+    {
+      "name": "positive-source",
+      "case": "positive",
+      "stage": "source",
+      "source_sha256": "ea837839f32a8852a503eb8cc18f29ef1854d8211d47bd4f80762ec3f565e1b8",
+      "argv": [
+        "/Users/local/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "--trust=0",
+        "--memory=4096",
+        "--threads=1",
+        "-DwarningAsError=true",
+        "-o",
+        "/Users/local/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0/lean-fixtures/positive/build/GRWTSK/Fixture/Positive.olean",
+        "/Users/local/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0/lean-fixtures/positive/source/GRWTSK/Fixture/Positive.lean"
+      ],
+      "warning_as_error": true,
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 0.14512966701295227,
+      "diagnostic_log": "/Users/local/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0/positive-source.log",
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "validation": {
+        "expected": "source compilation",
+        "matched_errors": []
+      },
+      "compiled_object_sha256": "281516521c7ec44846562a1db22020d4e9310f85870a1bb26105216c804836f3"
+    },
+    {
+      "name": "positive-audit",
+      "case": "positive",
+      "stage": "audit",
+      "source_sha256": "e76b32826f1d697f9f0b8d320e9a3fe506d26cb3f92c0e248d90cca561219c4c",
+      "argv": [
+        "/Users/local/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "--trust=0",
+        "--memory=4096",
+        "--threads=1",
+        "-DwarningAsError=true",
+        "/Users/local/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0/lean-fixtures/positive/source/FixtureAudit.lean"
+      ],
+      "warning_as_error": true,
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 0.7001558330375701,
+      "diagnostic_log": "/Users/local/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0/positive-audit.log",
+      "output_sha256": "c40254f3837b7e6bdb6265f85b5e89241c3baea1f84be57165fd8ffbfea48a87",
+      "validation": {
+        "expected": "positive complete current native census",
+        "declarations": [
+          {
+            "axioms": [],
+            "direct_type_references_to_runtime_helpers": [],
+            "direct_value_reference_to_runtime_helper": false,
+            "direct_value_references_to_runtime_helpers": [],
+            "kind": "theorem",
+            "known_generated_runtime_helper": false,
+            "level_params": [],
+            "mathematical_admission": true,
+            "module": "GRWTSK.Fixture.Positive",
+            "name": "GRWTSK.Fixture.fixtureValue_eq_one",
+            "partial": false,
+            "runtime_helper_level_params_equal": false,
+            "runtime_helper_owner_source_sha256": "ea837839f32a8852a503eb8cc18f29ef1854d8211d47bd4f80762ec3f565e1b8",
+            "runtime_helper_parent": null,
+            "runtime_helper_profile_source_sha256": "",
+            "runtime_helper_same_owner": false,
+            "runtime_helper_type_equal": false,
+            "type": "GRWTSK.Fixture.fixtureValue = 1",
+            "unsafe": false
+          },
+          {
+            "axioms": [],
+            "direct_type_references_to_runtime_helpers": [],
+            "direct_value_reference_to_runtime_helper": false,
+            "direct_value_references_to_runtime_helpers": [],
+            "kind": "theorem",
+            "known_generated_runtime_helper": false,
+            "level_params": [],
+            "mathematical_admission": true,
+            "module": "GRWTSK.Fixture.Positive",
+            "name": "_private.GRWTSK.Fixture.Positive.0.GRWTSK.Fixture.privateTruth",
+            "partial": false,
+            "runtime_helper_level_params_equal": false,
+            "runtime_helper_owner_source_sha256": "ea837839f32a8852a503eb8cc18f29ef1854d8211d47bd4f80762ec3f565e1b8",
+            "runtime_helper_parent": null,
+            "runtime_helper_profile_source_sha256": "",
+            "runtime_helper_same_owner": false,
+            "runtime_helper_type_equal": false,
+            "type": "True",
+            "unsafe": false
+          },
+          {
+            "axioms": [],
+            "direct_type_references_to_runtime_helpers": [],
+            "direct_value_reference_to_runtime_helper": false,
+            "direct_value_references_to_runtime_helpers": [],
+            "kind": "theorem",
+            "known_generated_runtime_helper": false,
+            "level_params": [],
+            "mathematical_admission": true,
+            "module": "GRWTSK.Fixture.Positive",
+            "name": "GRWTSK.Fixture.patternedValue_succ",
+            "partial": false,
+            "runtime_helper_level_params_equal": false,
+            "runtime_helper_owner_source_sha256": "ea837839f32a8852a503eb8cc18f29ef1854d8211d47bd4f80762ec3f565e1b8",
+            "runtime_helper_parent": null,
+            "runtime_helper_profile_source_sha256": "",
+            "runtime_helper_same_owner": false,
+            "runtime_helper_type_equal": false,
+            "type": "\u2200 (n : Nat), GRWTSK.Fixture.patternedValue n.succ = n",
+            "unsafe": false
+          },
+          {
+            "axioms": [],
+            "direct_type_references_to_runtime_helpers": [],
+            "direct_value_reference_to_runtime_helper": false,
+            "direct_value_references_to_runtime_helpers": [],
+            "kind": "definition",
+            "known_generated_runtime_helper": false,
+            "level_params": [
+              "u_1"
+            ],
+            "mathematical_admission": true,
+            "module": "GRWTSK.Fixture.Positive",
+            "name": "GRWTSK.Fixture.patternedValue.match_1",
+            "partial": false,
+            "runtime_helper_level_params_equal": false,
+            "runtime_helper_owner_source_sha256": "ea837839f32a8852a503eb8cc18f29ef1854d8211d47bd4f80762ec3f565e1b8",
+            "runtime_helper_parent": null,
+            "runtime_helper_profile_source_sha256": "",
+            "runtime_helper_same_owner": false,
+            "runtime_helper_type_equal": false,
+            "type": "(motive : Nat \u2192 Sort u_1) \u2192 (x : Nat) \u2192 (Unit \u2192 motive 0) \u2192 ((n : Nat) \u2192 motive n.succ) \u2192 motive x",
+            "unsafe": false
+          },
+          {
+            "axioms": [],
+            "direct_type_references_to_runtime_helpers": [],
+            "direct_value_reference_to_runtime_helper": false,
+            "direct_value_references_to_runtime_helpers": [],
+            "kind": "theorem",
+            "known_generated_runtime_helper": false,
+            "level_params": [],
+            "mathematical_admission": true,
+            "module": "GRWTSK.Fixture.Positive",
+            "name": "GRWTSK.Fixture.patternedValue.eq_1",
+            "partial": false,
+            "runtime_helper_level_params_equal": false,
+            "runtime_helper_owner_source_sha256": "ea837839f32a8852a503eb8cc18f29ef1854d8211d47bd4f80762ec3f565e1b8",
+            "runtime_helper_parent": null,
+            "runtime_helper_profile_source_sha256": "",
+            "runtime_helper_same_owner": false,
+            "runtime_helper_type_equal": false,
+            "type": "GRWTSK.Fixture.patternedValue 0 = 0",
+            "unsafe": false
+          },
+          {
+            "axioms": [],
+            "direct_type_references_to_runtime_helpers": [],
+            "direct_value_reference_to_runtime_helper": false,
+            "direct_value_references_to_runtime_helpers": [],
+            "kind": "theorem",
+            "known_generated_runtime_helper": false,
+            "level_params": [],
+            "mathematical_admission": true,
+            "module": "GRWTSK.Fixture.Positive",
+            "name": "GRWTSK.Fixture.patternedValue_zero",
+            "partial": false,
+            "runtime_helper_level_params_equal": false,
+            "runtime_helper_owner_source_sha256": "ea837839f32a8852a503eb8cc18f29ef1854d8211d47bd4f80762ec3f565e1b8",
+            "runtime_helper_parent": null,
+            "runtime_helper_profile_source_sha256": "",
+            "runtime_helper_same_owner": false,
+            "runtime_helper_type_equal": false,
+            "type": "GRWTSK.Fixture.patternedValue 0 = 0",
+            "unsafe": false
+          },
+          {
+            "axioms": [],
+            "direct_type_references_to_runtime_helpers": [],
+            "direct_value_reference_to_runtime_helper": false,
+            "direct_value_references_to_runtime_helpers": [],
+            "kind": "definition",
+            "known_generated_runtime_helper": false,
+            "level_params": [],
+            "mathematical_admission": true,
+            "module": "GRWTSK.Fixture.Positive",
+            "name": "GRWTSK.Fixture.patternedValue",
+            "partial": false,
+            "runtime_helper_level_params_equal": false,
+            "runtime_helper_owner_source_sha256": "ea837839f32a8852a503eb8cc18f29ef1854d8211d47bd4f80762ec3f565e1b8",
+            "runtime_helper_parent": null,
+            "runtime_helper_profile_source_sha256": "",
+            "runtime_helper_same_owner": false,
+            "runtime_helper_type_equal": false,
+            "type": "Nat \u2192 Nat",
+            "unsafe": false
+          },
+          {
+            "axioms": [],
+            "direct_type_references_to_runtime_helpers": [],
+            "direct_value_reference_to_runtime_helper": false,
+            "direct_value_references_to_runtime_helpers": [],
+            "kind": "definition",
+            "known_generated_runtime_helper": false,
+            "level_params": [],
+            "mathematical_admission": true,
+            "module": "GRWTSK.Fixture.Positive",
+            "name": "GRWTSK.Fixture.fixtureValue",
+            "partial": false,
+            "runtime_helper_level_params_equal": false,
+            "runtime_helper_owner_source_sha256": "ea837839f32a8852a503eb8cc18f29ef1854d8211d47bd4f80762ec3f565e1b8",
+            "runtime_helper_parent": null,
+            "runtime_helper_profile_source_sha256": "",
+            "runtime_helper_same_owner": false,
+            "runtime_helper_type_equal": false,
+            "type": "Nat",
+            "unsafe": false
+          },
+          {
+            "axioms": [],
+            "direct_type_references_to_runtime_helpers": [],
+            "direct_value_reference_to_runtime_helper": false,
+            "direct_value_references_to_runtime_helpers": [],
+            "kind": "theorem",
+            "known_generated_runtime_helper": false,
+            "level_params": [],
+            "mathematical_admission": true,
+            "module": "GRWTSK.Fixture.Positive",
+            "name": "GRWTSK.Fixture.patternedValue.eq_2",
+            "partial": false,
+            "runtime_helper_level_params_equal": false,
+            "runtime_helper_owner_source_sha256": "ea837839f32a8852a503eb8cc18f29ef1854d8211d47bd4f80762ec3f565e1b8",
+            "runtime_helper_parent": null,
+            "runtime_helper_profile_source_sha256": "",
+            "runtime_helper_same_owner": false,
+            "runtime_helper_type_equal": false,
+            "type": "\u2200 (n : Nat), GRWTSK.Fixture.patternedValue n.succ = n",
+            "unsafe": false
+          },
+          {
+            "axioms": [],
+            "direct_type_references_to_runtime_helpers": [],
+            "direct_value_reference_to_runtime_helper": false,
+            "direct_value_references_to_runtime_helpers": [],
+            "kind": "theorem",
+            "known_generated_runtime_helper": false,
+            "level_params": [
+              "u_1"
+            ],
+            "mathematical_admission": true,
+            "module": "GRWTSK.Fixture.Positive",
+            "name": "_private.GRWTSK.Fixture.Positive.0.GRWTSK.Fixture.patternedValue.match_1.eq_1",
+            "partial": false,
+            "runtime_helper_level_params_equal": false,
+            "runtime_helper_owner_source_sha256": "ea837839f32a8852a503eb8cc18f29ef1854d8211d47bd4f80762ec3f565e1b8",
+            "runtime_helper_parent": null,
+            "runtime_helper_profile_source_sha256": "",
+            "runtime_helper_same_owner": false,
+            "runtime_helper_type_equal": false,
+            "type": "\u2200 (motive : Nat \u2192 Sort u_1) (h_1 : Unit \u2192 motive 0) (h_2 : (n : Nat) \u2192 motive n.succ),\n  (match 0 with\n    | 0 => h_1 ()\n    | n.succ => h_2 n) =\n    h_1 ()",
+            "unsafe": false
+          },
+          {
+            "axioms": [],
+            "direct_type_references_to_runtime_helpers": [],
+            "direct_value_reference_to_runtime_helper": false,
+            "direct_value_references_to_runtime_helpers": [],
+            "kind": "theorem",
+            "known_generated_runtime_helper": false,
+            "level_params": [
+              "u_1"
+            ],
+            "mathematical_admission": true,
+            "module": "GRWTSK.Fixture.Positive",
+            "name": "_private.GRWTSK.Fixture.Positive.0.GRWTSK.Fixture.patternedValue.match_1.eq_2",
+            "partial": false,
+            "runtime_helper_level_params_equal": false,
+            "runtime_helper_owner_source_sha256": "ea837839f32a8852a503eb8cc18f29ef1854d8211d47bd4f80762ec3f565e1b8",
+            "runtime_helper_parent": null,
+            "runtime_helper_profile_source_sha256": "",
+            "runtime_helper_same_owner": false,
+            "runtime_helper_type_equal": false,
+            "type": "\u2200 (motive : Nat \u2192 Sort u_1) (n : Nat) (h_1 : Unit \u2192 motive 0) (h_2 : (n : Nat) \u2192 motive n.succ),\n  (match n.succ with\n    | 0 => h_1 ()\n    | n.succ => h_2 n) =\n    h_2 n",
+            "unsafe": false
+          },
+          {
+            "axioms": [],
+            "direct_type_references_to_runtime_helpers": [],
+            "direct_value_reference_to_runtime_helper": false,
+            "direct_value_references_to_runtime_helpers": [],
+            "kind": "definition",
+            "known_generated_runtime_helper": false,
+            "level_params": [
+              "u_1"
+            ],
+            "mathematical_admission": true,
+            "module": "GRWTSK.Fixture.Positive",
+            "name": "_private.GRWTSK.Fixture.Positive.0.GRWTSK.Fixture.patternedValue.match_1.splitter",
+            "partial": false,
+            "runtime_helper_level_params_equal": false,
+            "runtime_helper_owner_source_sha256": "ea837839f32a8852a503eb8cc18f29ef1854d8211d47bd4f80762ec3f565e1b8",
+            "runtime_helper_parent": null,
+            "runtime_helper_profile_source_sha256": "",
+            "runtime_helper_same_owner": false,
+            "runtime_helper_type_equal": false,
+            "type": "(motive : Nat \u2192 Sort u_1) \u2192 (x : Nat) \u2192 (Unit \u2192 motive 0) \u2192 ((n : Nat) \u2192 motive n.succ) \u2192 motive x",
+            "unsafe": false
+          }
+        ],
+        "modules": [
+          {
+            "declarations": 12,
+            "module": "GRWTSK.Fixture.Positive"
+          }
+        ],
+        "matched_errors": []
+      }
+    },
+    {
+      "name": "sorry-strict-source",
+      "case": "sorry",
+      "stage": "strict-source",
+      "source_sha256": "20fce24b9a16cb3d9920bbbb37bed029f23b66f676f80848f9b3b1aa3f668342",
+      "argv": [
+        "/Users/local/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "--trust=0",
+        "--memory=4096",
+        "--threads=1",
+        "-DwarningAsError=true",
+        "/Users/local/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0/lean-fixtures/sorry/source/GRWTSK/Fixture/Sorry.lean"
+      ],
+      "warning_as_error": true,
+      "outcome": "passed",
+      "exit_code": 1,
+      "seconds": 0.135804166959133,
+      "diagnostic_log": "/Users/local/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0/sorry-strict-source.log",
+      "output_sha256": "ca0ff8758f92196af0749ff76159c44ffdfb5ca1b2508880681210f7e30aed61",
+      "validation": {
+        "expected": "strict sorry rejection",
+        "matched_errors": [
+          "declaration uses `sorry`"
+        ]
+      }
+    },
+    {
+      "name": "sorry-warning-disabled-source",
+      "case": "sorry",
+      "stage": "warning-disabled-source",
+      "source_sha256": "20fce24b9a16cb3d9920bbbb37bed029f23b66f676f80848f9b3b1aa3f668342",
+      "argv": [
+        "/Users/local/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "--trust=0",
+        "--memory=4096",
+        "--threads=1",
+        "-DwarningAsError=false",
+        "-o",
+        "/Users/local/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0/lean-fixtures/sorry/build/GRWTSK/Fixture/Sorry.olean",
+        "/Users/local/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0/lean-fixtures/sorry/source/GRWTSK/Fixture/Sorry.lean"
+      ],
+      "warning_as_error": false,
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 0.1300494159804657,
+      "diagnostic_log": "/Users/local/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0/sorry-warning-disabled-source.log",
+      "output_sha256": "06898d5875d411ac4c2b12407f8b2e4e4679e77c2d158084fe54110843a528a7",
+      "validation": {
+        "expected": "source compilation",
+        "matched_errors": []
+      },
+      "compiled_object_sha256": "09828135a0e4fa4e63957d6401f6f0e32068498b9de56cad809de0fb9871d225"
+    },
+    {
+      "name": "sorry-audit",
+      "case": "sorry",
+      "stage": "audit",
+      "source_sha256": "30be61fa82166d83ea6a2f163cef2517572a6c794fe0b5e7ba3ae6d8686212ce",
+      "argv": [
+        "/Users/local/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "--trust=0",
+        "--memory=4096",
+        "--threads=1",
+        "-DwarningAsError=true",
+        "/Users/local/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0/lean-fixtures/sorry/source/FixtureAudit.lean"
+      ],
+      "warning_as_error": true,
+      "outcome": "passed",
+      "exit_code": 1,
+      "seconds": 0.6939692919841036,
+      "diagnostic_log": "/Users/local/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0/sorry-audit.log",
+      "output_sha256": "af5840f5e58050cc29e87ca549471f64a6b30b23eb221246ba813c41f59dd9b2",
+      "validation": {
+        "expected": "unapproved axiom sorryAx in GRWTSK.Fixture.sorryFalse",
+        "declarations": [
+          {
+            "axioms": [
+              "sorryAx"
+            ],
+            "direct_type_references_to_runtime_helpers": [],
+            "direct_value_reference_to_runtime_helper": false,
+            "direct_value_references_to_runtime_helpers": [],
+            "kind": "theorem",
+            "known_generated_runtime_helper": false,
+            "level_params": [],
+            "mathematical_admission": false,
+            "module": "GRWTSK.Fixture.Sorry",
+            "name": "GRWTSK.Fixture.sorryFalse",
+            "partial": false,
+            "runtime_helper_level_params_equal": false,
+            "runtime_helper_owner_source_sha256": "20fce24b9a16cb3d9920bbbb37bed029f23b66f676f80848f9b3b1aa3f668342",
+            "runtime_helper_parent": null,
+            "runtime_helper_profile_source_sha256": "",
+            "runtime_helper_same_owner": false,
+            "runtime_helper_type_equal": false,
+            "type": "False",
+            "unsafe": false
+          }
+        ],
+        "modules": [
+          {
+            "declarations": 1,
+            "module": "GRWTSK.Fixture.Sorry"
+          }
+        ],
+        "matched_errors": [
+          "project trust audit failed: [unapproved axiom sorryAx in GRWTSK.Fixture.sorryFalse]"
+        ]
+      }
+    },
+    {
+      "name": "custom-axiom-source",
+      "case": "custom-axiom",
+      "stage": "source",
+      "source_sha256": "df1daa7b42e34a2a8a9203af5011f9d819d0e1d3aa657345cb88fe32b8fef825",
+      "argv": [
+        "/Users/local/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "--trust=0",
+        "--memory=4096",
+        "--threads=1",
+        "-DwarningAsError=true",
+        "-o",
+        "/Users/local/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0/lean-fixtures/custom-axiom/build/GRWTSK/Fixture/CustomAxiom.olean",
+        "/Users/local/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0/lean-fixtures/custom-axiom/source/GRWTSK/Fixture/CustomAxiom.lean"
+      ],
+      "warning_as_error": true,
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 0.1365349999978207,
+      "diagnostic_log": "/Users/local/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0/custom-axiom-source.log",
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "validation": {
+        "expected": "source compilation",
+        "matched_errors": []
+      },
+      "compiled_object_sha256": "19aa8a4c7c29a7247471ba09d543b97c7489985c7b4269eea77ea5c2587d0497"
+    },
+    {
+      "name": "custom-axiom-audit",
+      "case": "custom-axiom",
+      "stage": "audit",
+      "source_sha256": "40b93856143aa5709be9cc2b7b2aff91db806179110fbf2483d7421f5ae98431",
+      "argv": [
+        "/Users/local/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "--trust=0",
+        "--memory=4096",
+        "--threads=1",
+        "-DwarningAsError=true",
+        "/Users/local/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0/lean-fixtures/custom-axiom/source/FixtureAudit.lean"
+      ],
+      "warning_as_error": true,
+      "outcome": "passed",
+      "exit_code": 1,
+      "seconds": 0.6863749580224976,
+      "diagnostic_log": "/Users/local/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0/custom-axiom-audit.log",
+      "output_sha256": "95d5eafcf0fa0ebe9b95f2bf3478c95875fb34c8a332ab6b90e41486842e0345",
+      "validation": {
+        "expected": "new axiom: GRWTSK.Fixture.fabricatedFalse",
+        "declarations": [
+          {
+            "axioms": [
+              "GRWTSK.Fixture.fabricatedFalse"
+            ],
+            "direct_type_references_to_runtime_helpers": [],
+            "direct_value_reference_to_runtime_helper": false,
+            "direct_value_references_to_runtime_helpers": [],
+            "kind": "axiom",
+            "known_generated_runtime_helper": false,
+            "level_params": [],
+            "mathematical_admission": false,
+            "module": "GRWTSK.Fixture.CustomAxiom",
+            "name": "GRWTSK.Fixture.fabricatedFalse",
+            "partial": false,
+            "runtime_helper_level_params_equal": false,
+            "runtime_helper_owner_source_sha256": "df1daa7b42e34a2a8a9203af5011f9d819d0e1d3aa657345cb88fe32b8fef825",
+            "runtime_helper_parent": null,
+            "runtime_helper_profile_source_sha256": "",
+            "runtime_helper_same_owner": false,
+            "runtime_helper_type_equal": false,
+            "type": "False",
+            "unsafe": false
+          },
+          {
+            "axioms": [
+              "GRWTSK.Fixture.fabricatedFalse"
+            ],
+            "direct_type_references_to_runtime_helpers": [],
+            "direct_value_reference_to_runtime_helper": false,
+            "direct_value_references_to_runtime_helpers": [],
+            "kind": "theorem",
+            "known_generated_runtime_helper": false,
+            "level_params": [],
+            "mathematical_admission": false,
+            "module": "GRWTSK.Fixture.CustomAxiom",
+            "name": "GRWTSK.Fixture.consumesFabricatedFalse",
+            "partial": false,
+            "runtime_helper_level_params_equal": false,
+            "runtime_helper_owner_source_sha256": "df1daa7b42e34a2a8a9203af5011f9d819d0e1d3aa657345cb88fe32b8fef825",
+            "runtime_helper_parent": null,
+            "runtime_helper_profile_source_sha256": "",
+            "runtime_helper_same_owner": false,
+            "runtime_helper_type_equal": false,
+            "type": "False",
+            "unsafe": false
+          }
+        ],
+        "modules": [
+          {
+            "declarations": 2,
+            "module": "GRWTSK.Fixture.CustomAxiom"
+          }
+        ],
+        "matched_errors": [
+          "project trust audit failed: [new axiom: GRWTSK.Fixture.fabricatedFalse,"
+        ]
+      }
+    },
+    {
+      "name": "unsafe-source",
+      "case": "unsafe",
+      "stage": "source",
+      "source_sha256": "47faa78ebe9f505eeb6c1d7d10fc6f42b637102040dd64d2d4dccb086c50fc60",
+      "argv": [
+        "/Users/local/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "--trust=0",
+        "--memory=4096",
+        "--threads=1",
+        "-DwarningAsError=true",
+        "-o",
+        "/Users/local/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0/lean-fixtures/unsafe/build/GRWTSK/Fixture/Unsafe.olean",
+        "/Users/local/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0/lean-fixtures/unsafe/source/GRWTSK/Fixture/Unsafe.lean"
+      ],
+      "warning_as_error": true,
+      "outcome": "passed",
+      "exit_code": 0,
+      "seconds": 0.12996925000334159,
+      "diagnostic_log": "/Users/local/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0/unsafe-source.log",
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "validation": {
+        "expected": "source compilation",
+        "matched_errors": []
+      },
+      "compiled_object_sha256": "07591b04ba968ba1b82fafb4a69d52253a5be9bb643ff43a9b2050fcd51afd87"
+    },
+    {
+      "name": "unsafe-audit",
+      "case": "unsafe",
+      "stage": "audit",
+      "source_sha256": "a6f1f0f47e673a56a9f5c1c52cd1d89a99ad58397c1b7fba735e26a39c90b249",
+      "argv": [
+        "/Users/local/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "--trust=0",
+        "--memory=4096",
+        "--threads=1",
+        "-DwarningAsError=true",
+        "/Users/local/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0/lean-fixtures/unsafe/source/FixtureAudit.lean"
+      ],
+      "warning_as_error": true,
+      "outcome": "passed",
+      "exit_code": 1,
+      "seconds": 0.6934868339449167,
+      "diagnostic_log": "/Users/local/Desktop/math/.noeaaeue/.local/math-trust/20261016T071212Z-69096153a0/unsafe-audit.log",
+      "output_sha256": "9dc75818e2ee23f6f8cf3a30428ee1e7d650f3673b06a15a13e5cfe8729465ed",
+      "validation": {
+        "expected": "unsafe declaration: GRWTSK.Fixture.uncheckedNatural",
+        "declarations": [
+          {
+            "axioms": [],
+            "direct_type_references_to_runtime_helpers": [],
+            "direct_value_reference_to_runtime_helper": false,
+            "direct_value_references_to_runtime_helpers": [],
+            "kind": "definition",
+            "known_generated_runtime_helper": false,
+            "level_params": [],
+            "mathematical_admission": false,
+            "module": "GRWTSK.Fixture.Unsafe",
+            "name": "GRWTSK.Fixture.uncheckedNatural",
+            "partial": false,
+            "runtime_helper_level_params_equal": false,
+            "runtime_helper_owner_source_sha256": "47faa78ebe9f505eeb6c1d7d10fc6f42b637102040dd64d2d4dccb086c50fc60",
+            "runtime_helper_parent": null,
+            "runtime_helper_profile_source_sha256": "",
+            "runtime_helper_same_owner": false,
+            "runtime_helper_type_equal": false,
+            "type": "Nat",
+            "unsafe": true
+          }
+        ],
+        "modules": [
+          {
+            "declarations": 1,
+            "module": "GRWTSK.Fixture.Unsafe"
+          }
+        ],
+        "matched_errors": [
+          "project trust audit failed: [unsafe declaration: GRWTSK.Fixture.uncheckedNatural]"
+        ]
+      }
+    }
+  ],
+  "fixture_cases": [
+    "positive",
+    "sorry",
+    "custom-axiom",
+    "unsafe"
+  ],
+  "command_count": 9
+}

@@ -3,6 +3,7 @@ Human mathematical direction: grwtsk contributors; Lean implementation: OpenAI C
 Mathlib authorship and licensing retained. -/
 import GRWTSK.Analysis.Fourier.ZModBalancedPartition
 import GRWTSK.Analysis.Fourier.ZModConcentratedFrequencies
+import GRWTSK.Combinatorics.Sequences.BalancedPartitionTails
 
 /-!
 # Concentration of balanced-partition character energy
@@ -255,15 +256,18 @@ open GRWTSK.ZModIndependentSelection
 theorem eventProbability_exists_le {Ω ι : Type*} [Fintype Ω] [Fintype ι]
     (E : ι → Ω → Prop) :
     eventProbability (fun x => ∃ i, E i x) ≤ ∑ i, eventProbability (E i) := by
-  classical
-  have heq : (Finset.univ.filter (fun x : Ω => ∃ i, E i x)) =
-      Finset.univ.biUnion (fun i : ι => Finset.univ.filter (E i)) := by ext x; simp
+  have hc : ((Finset.univ : Finset Ω).filter (fun x => ∃ i, E i x)).card ≤
+      ∑ i : ι, ((Finset.univ : Finset Ω).filter (E i)).card := by
+    calc
+      _ = (Finset.univ.biUnion (fun i : ι => Finset.univ.filter (E i))).card := by
+        congr 1; ext x; simp
+      _ ≤ _ := Finset.card_biUnion_le
   unfold eventProbability
-  change ((Finset.univ.filter (fun x : Ω => ∃ i, E i x)).card : ℝ) /
-    Fintype.card Ω ≤ ∑ i, ((Finset.univ.filter (E i)).card : ℝ) / Fintype.card Ω
-  rw [heq, ← Finset.sum_div]
+  rw [← Finset.sum_div]
   apply div_le_div_of_nonneg_right _ (by positivity)
-  exact_mod_cast Finset.card_biUnion_le
+  norm_cast
+  convert hc using 1
+  congr 1; ext x; simp
 
 theorem eventProbability_mono {Ω : Type*} [Fintype Ω]
     (E F : Ω → Prop) (h : ∀ x, E x → F x) : eventProbability E ≤ eventProbability F := by
@@ -273,6 +277,230 @@ theorem eventProbability_mono {Ω : Type*} [Fintype Ω]
   apply Finset.card_le_card
   intro x hx
   exact Finset.mem_filter.mpr ⟨Finset.mem_univ _, h x (Finset.mem_filter.mp hx).2⟩
+
+open GRWTSK.ConditionalPartitionExposure GRWTSK.BalancedPartitionTails
+open GRWTSK.ZModSmallEnergySets
+
+/-- The conditional-exposure normalization is the same actual finite law used
+by the Fourier expectation lemmas. -/
+theorem partitionProbabilityReal_eq_event {sizes : Fin m → ℕ}
+    (E : Partition (A := A) sizes → Prop) :
+    partitionProbabilityReal sizes E = eventProbability E := by
+  simp only [partitionProbabilityReal, eventProbability, Fintype.card_subtype]
+
+/-- The single-element failure estimate used in source Lemma 3.1. -/
+theorem far_count_bad_probability_le (S : Finset (ZMod p)) (hm : 0 < m)
+    (hfour : 4 * m ≤ S.card) (χ : ZMod p) (hχ : χ ≠ 0) (t : ℝ)
+    (hD : χ ∉ concentratedFrequencies S m t) (a : S) :
+    eventProbability (fun P : BalancedPartitions S m =>
+      (((part P (P.val a)).filter (fun b =>
+        8 * Real.sqrt (t / m) < modularDistance (χ * (a.val - b.val)))).card : ℝ) <
+        (S.card : ℝ) / (16 * m)) ≤ Real.exp (-(S.card : ℝ) / (64 * m)) := by
+  let G : Finset S := Finset.univ.filter (fun b =>
+    8 * Real.sqrt (t / m) < modularDistance (χ * (a.val - b.val)))
+  have ha : a ∉ G := by
+    simp only [G, Finset.mem_filter, Finset.mem_univ, true_and, sub_self, mul_zero,
+      modularDistance_zero]
+    nlinarith [Real.sqrt_nonneg (t / m)]
+  have hcard := far_labels_card S m t χ hχ hD a
+  have hpred : (((Fintype.card S - 1 : ℕ) : ℝ) / 4) ≤ G.card := by
+    have hc : ((Fintype.card S - 1 : ℕ) : ℝ) ≤ S.card := by
+      exact_mod_cast (show Fintype.card S - 1 ≤ S.card by simp)
+    change (S.card : ℝ) / 4 ≤ (G.card : ℝ) at hcard
+    linarith
+  have hsize : ∀ i : Fin m, (S.card : ℝ) / (2 * m) ≤
+      ((balancedSizes S.card m i - 1 : ℕ) : ℝ) :=
+    balanced_remainder_size_lower S.card m hm hfour
+  have htail := partition_currentPart_quarter_lowerTail (balancedSizes S.card m)
+    (by simpa using balancedSizes_sum S.card m hm)
+    (balancedSizes_pos S.card m hm (by omega)) a G (by
+      intro b hb
+      simp only [Finset.mem_erase, Finset.mem_univ, and_true]
+      intro h; exact ha (h ▸ hb)) hpred _ hsize
+  rw [partitionProbabilityReal_eq_event] at htail
+  have heq : -((S.card : ℝ) / (2 * m)) / 32 = -(S.card : ℝ) / (64 * m) := by ring
+  rw [heq] at htail
+  apply (eventProbability_mono _ _ (fun P hP => ?_)).trans htail
+  have hbound : (((part P (P.val a)).filter (fun b =>
+      8 * Real.sqrt (t / m) < modularDistance (χ * (a.val - b.val)))).card : ℝ) <
+      (1 / 8 : ℝ) * ((balancedSizes S.card m (P.val a) - 1 : ℕ) : ℝ) := by
+    calc
+      _ < (S.card : ℝ) / (16 * m) := hP
+      _ = (1 / 8 : ℝ) * ((S.card : ℝ) / (2 * m)) := by ring
+      _ ≤ _ := mul_le_mul_of_nonneg_left (hsize (P.val a)) (by norm_num)
+  unfold currentPartCountBad
+  convert hbound using 1
+  congr 2
+  ext b
+  simp [G]
+
+/-- Source Lemma 3.1: for a nonconcentrated nonzero frequency, the actual
+balanced-partition lower-tail probability is at most `|S|⁻⁹`. No Fourier or
+probability estimate is an input hypothesis. -/
+theorem nonconcentrated_probability_le (S : Finset (ZMod p))
+    (hn : 2 ≤ S.card) (hm : 0 < m)
+    (hu : (m : ℝ) ≤ (1 / 1000 : ℝ) * S.card / Real.log S.card)
+    (t : ℝ) (ht : 0 ≤ t) (χ : ZMod p) (hχ : χ ≠ 0)
+    (hD : χ ∉ concentratedFrequencies S m t) :
+    eventProbability (fun P : BalancedPartitions S m =>
+      partitionEnergy (partValues (residueEmbedding S) P) χ < 2 * t) ≤
+      1 / (S.card : ℝ) ^ 9 := by
+  have hfour := source_upper_range_gives_quarter S.card m hn hu
+  let E (a : S) (P : BalancedPartitions S m) : Prop :=
+    (((part P (P.val a)).filter (fun b =>
+      8 * Real.sqrt (t / m) < modularDistance (χ * (a.val - b.val)))).card : ℝ) <
+        (S.card : ℝ) / (16 * m)
+  have hfail (P : BalancedPartitions S m)
+      (hP : partitionEnergy (partValues (residueEmbedding S) P) χ < 2 * t) :
+      ∃ a : S, E a P := by
+    by_contra h
+    have hc : ∀ a : S, (S.card : ℝ) / (16 * m) ≤
+        (((part P (P.val a)).filter (fun b =>
+          8 * Real.sqrt (t / m) < modularDistance (χ * (a.val - b.val)))).card : ℝ) :=
+      fun a => le_of_not_gt (fun ha => h ⟨a, ha⟩)
+    exact (not_lt_of_ge (energy_ge_two_of_far_counts S hm hfour P χ t ht hc)) hP
+  calc
+    _ ≤ eventProbability (fun P => ∃ a : S, E a P) := eventProbability_mono _ _ hfail
+    _ ≤ ∑ a : S, eventProbability (E a) := eventProbability_exists_le E
+    _ ≤ ∑ _a : S, Real.exp (-(S.card : ℝ) / (64 * m)) :=
+      Finset.sum_le_sum (fun a _ => far_count_bad_probability_le S hm hfour χ hχ t hD a)
+    _ = (S.card : ℝ) * Real.exp (-(S.card : ℝ) / (64 * m)) := by simp
+    _ ≤ _ := source_union_exp_le S.card m hn hm hu 64 (by norm_num) (by norm_num)
+
+/-- A concentrated near-center set retains its full three-quarter density in
+the population remaining after deleting any far element. -/
+theorem near_labels_card (S : Finset (ZMod p)) (χ center : ZMod p) (m t : ℝ)
+    (hc : (3 / 4 : ℝ) * S.card ≤
+      (S ∩ phaseInterval χ center (8 * Real.sqrt (t / m))).card) :
+    (3 / 4 : ℝ) * ((Fintype.card S - 1 : ℕ) : ℝ) ≤
+      ((Finset.univ : Finset S).filter (fun b =>
+        b.val ∈ phaseInterval χ center (8 * Real.sqrt (t / m)))).card := by
+  have heq : (((Finset.univ : Finset S).filter (fun b =>
+      b.val ∈ phaseInterval χ center (8 * Real.sqrt (t / m)))).map
+      (residueEmbedding S)) = S ∩ phaseInterval χ center (8 * Real.sqrt (t / m)) := by
+    ext x
+    simp [residueEmbedding, and_comm]
+  have hcard : (((Finset.univ : Finset S).filter (fun b =>
+      b.val ∈ phaseInterval χ center (8 * Real.sqrt (t / m)))).card : ℝ) =
+      (S ∩ phaseInterval χ center (8 * Real.sqrt (t / m))).card := by
+    rw [← heq, Finset.card_map]
+  rw [hcard]
+  have hle : ((Fintype.card S - 1 : ℕ) : ℝ) ≤ S.card := by
+    exact_mod_cast (show Fintype.card S - 1 ≤ S.card by simp)
+  linarith
+
+/-- The single-far-element failure estimate used in source Lemma 3.3. -/
+theorem near_count_bad_probability_le (S : Finset (ZMod p)) (hm : 0 < m)
+    (hfour : 4 * m ≤ S.card) (χ center : ZMod p) (t : ℝ)
+    (hc : (3 / 4 : ℝ) * S.card ≤
+      (S ∩ phaseInterval χ center (8 * Real.sqrt (t / m))).card) (a : S)
+    (ha : a.val ∉ phaseInterval χ center (16 * Real.sqrt (t / m))) :
+    eventProbability (fun P : BalancedPartitions S m =>
+      (((part P (P.val a)).filter (fun b =>
+        b.val ∈ phaseInterval χ center (8 * Real.sqrt (t / m)))).card : ℝ) <
+        (S.card : ℝ) / (4 * m)) ≤ Real.exp (-(S.card : ℝ) / (48 * m)) := by
+  let G : Finset S := Finset.univ.filter (fun b =>
+    b.val ∈ phaseInterval χ center (8 * Real.sqrt (t / m)))
+  have haG : a ∉ G := by
+    intro h
+    have hnear := (mem_phaseInterval _ _ _ _).mp (Finset.mem_filter.mp h).2
+    have hfar : 16 * Real.sqrt (t / m) < modularDistance (χ * a.val - center) :=
+      lt_of_not_ge (by simpa only [mem_phaseInterval] using ha)
+    nlinarith [Real.sqrt_nonneg (t / m)]
+  have hd := near_labels_card S χ center m t hc
+  have hsize : ∀ i : Fin m, (S.card : ℝ) / (2 * m) ≤
+      ((balancedSizes S.card m i - 1 : ℕ) : ℝ) :=
+    balanced_remainder_size_lower S.card m hm hfour
+  have htail := partition_currentPart_threeQuarters_lowerTail (balancedSizes S.card m)
+    (by simpa using balancedSizes_sum S.card m hm)
+    (balancedSizes_pos S.card m hm (by omega)) a G (by
+      intro b hb
+      simp only [Finset.mem_erase, Finset.mem_univ, and_true]
+      intro h; exact haG (h ▸ hb)) hd _ hsize
+  rw [partitionProbabilityReal_eq_event] at htail
+  have heq : -((S.card : ℝ) / (2 * m)) / 24 = -(S.card : ℝ) / (48 * m) := by ring
+  rw [heq] at htail
+  apply (eventProbability_mono _ _ (fun P hP => ?_)).trans htail
+  have hbound : (((part P (P.val a)).filter (fun b =>
+      b.val ∈ phaseInterval χ center (8 * Real.sqrt (t / m)))).card : ℝ) <
+      (1 / 2 : ℝ) * ((balancedSizes S.card m (P.val a) - 1 : ℕ) : ℝ) := by
+    calc
+      _ < (S.card : ℝ) / (4 * m) := hP
+      _ = (1 / 2 : ℝ) * ((S.card : ℝ) / (2 * m)) := by ring
+      _ ≤ _ := mul_le_mul_of_nonneg_left (hsize (P.val a)) (by norm_num)
+  unfold currentPartCountBad
+  convert hbound using 1
+  congr 2
+  ext b
+  simp [G]
+
+/-- Source Lemma 3.3, retaining the actual center witness and the strict
+outside-`B_(2000t)` premise. -/
+theorem concentrated_probability_le (S : Finset (ZMod p))
+    (hn : 2 ≤ S.card) (hm : 0 < m)
+    (hu : (m : ℝ) ≤ (1 / 1000 : ℝ) * S.card / Real.log S.card)
+    (t : ℝ) (ht : 0 ≤ t) (χ : ZMod p)
+    (hχ : χ ∈ concentratedFrequencies S m t \ smallEnergyFrequencies S m (2000 * t)) :
+    eventProbability (fun P : BalancedPartitions S m =>
+      partitionEnergy (partValues (residueEmbedding S) P) χ < 2 * t) ≤
+      1 / (S.card : ℝ) ^ 9 := by
+  have hfour := source_upper_range_gives_quarter S.card m hn hu
+  have hmR : (0 : ℝ) < m := by exact_mod_cast hm
+  have hS : S.Nonempty := Finset.card_pos.mp (by omega)
+  obtain ⟨center, hc, _htail⟩ := exists_concentrated_center_tail S hS m t hmR ht χ hχ
+  have hE : 2000 * t ≤ (m : ℝ) * pairEnergy S χ := by
+    exact le_of_lt (lt_of_not_ge (by simpa only [mem_smallEnergyFrequencies] using
+      (Finset.mem_sdiff.mp hχ).2))
+  let E (a : S) (P : BalancedPartitions S m) : Prop :=
+    a.val ∉ phaseInterval χ center (16 * Real.sqrt (t / m)) ∧
+      (((part P (P.val a)).filter (fun b =>
+        b.val ∈ phaseInterval χ center (8 * Real.sqrt (t / m)))).card : ℝ) <
+          (S.card : ℝ) / (4 * m)
+  have hfail (P : BalancedPartitions S m)
+      (hP : partitionEnergy (partValues (residueEmbedding S) P) χ < 2 * t) :
+      ∃ a : S, E a P := by
+    by_contra h
+    have hc' : ∀ a : S,
+        a.val ∉ phaseInterval χ center (16 * Real.sqrt (t / m)) →
+        (S.card : ℝ) / (4 * m) ≤
+          (((part P (P.val a)).filter (fun b =>
+            b.val ∈ phaseInterval χ center (8 * Real.sqrt (t / m)))).card : ℝ) :=
+      fun a ha => le_of_not_gt (fun hb => h ⟨a, ha, hb⟩)
+    exact (not_lt_of_ge (energy_ge_two_of_near_counts S hm hfour P χ center t ht hE hc')) hP
+  have hlocal (a : S) : eventProbability (E a) ≤ Real.exp (-(S.card : ℝ) / (48 * m)) := by
+    by_cases ha : a.val ∈ phaseInterval χ center (16 * Real.sqrt (t / m))
+    · calc
+        _ ≤ eventProbability (fun _P : BalancedPartitions S m => False) :=
+          eventProbability_mono _ _ (fun _ h => h.1 ha)
+        _ ≤ _ := by
+          simp only [eventProbability, Finset.filter_false, Finset.card_empty,
+            Nat.cast_zero, zero_div]
+          exact (Real.exp_pos _).le
+    · exact (eventProbability_mono _ _ (fun _ h => h.2)).trans
+        (near_count_bad_probability_le S hm hfour χ center t hc a ha)
+  calc
+    _ ≤ eventProbability (fun P => ∃ a : S, E a P) := eventProbability_mono _ _ hfail
+    _ ≤ ∑ a : S, eventProbability (E a) := eventProbability_exists_le E
+    _ ≤ ∑ _a : S, Real.exp (-(S.card : ℝ) / (48 * m)) :=
+      Finset.sum_le_sum (fun a _ => hlocal a)
+    _ = (S.card : ℝ) * Real.exp (-(S.card : ℝ) / (48 * m)) := by simp
+    _ ≤ _ := source_union_exp_le S.card m hn hm hu 48 (by norm_num) (by norm_num)
+
+/-- Both source concentration cases combined, with positivity and balanced
+feasibility derived from the original Section 3 numerical restrictions. -/
+theorem outside_smallEnergy_probability_le (S : Finset (ZMod p))
+    (hn : 2 ≤ S.card)
+    (hl : (2 : ℝ) ^ 24 * Real.log S.card ≤ m)
+    (hu : (m : ℝ) ≤ (1 / 1000 : ℝ) * S.card / Real.log S.card)
+    (t : ℝ) (ht : 0 < t) (χ : ZMod p) (hχ : χ ≠ 0)
+    (hB : χ ∉ smallEnergyFrequencies S m (2000 * t)) :
+    eventProbability (fun P : BalancedPartitions S m =>
+      partitionEnergy (partValues (residueEmbedding S) P) χ < 2 * t) ≤
+      1 / (S.card : ℝ) ^ 9 := by
+  obtain ⟨hm, _hfour⟩ := source_range_size_bounds S.card m hn hl hu
+  by_cases hD : χ ∈ concentratedFrequencies S m t
+  · exact concentrated_probability_le S hn hm hu t ht.le χ (Finset.mem_sdiff.mpr ⟨hD, hB⟩)
+  · exact nonconcentrated_probability_le S hn hm hu t ht.le χ hχ hD
 
 end
 end GRWTSK.ZModPartitionConcentration

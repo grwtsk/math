@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-16T07:00:52.477671+00:00",
+  "tool_session": 32665,
+  "controller_pid": 80448,
+  "observed_controller_exit_code": 137,
+  "whole_pipeline_passed": false,
+  "native_child_exit_code": null,
+  "native_child_terminal_receipt": "serial-native/public-library-replay-receipt.json",
+  "queued_448_application": "NOT_RUN",
+  "reason": "Idle suspended nonnative controller retired after completed native child and released lease; running native job was not interrupted."
+}

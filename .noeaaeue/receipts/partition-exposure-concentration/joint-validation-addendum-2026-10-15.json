@@ -1,0 +1,109 @@
+{
+  "schema": "partition-concentration-joint-validation-addendum-v1",
+  "at_utc": "2026-10-16T09:02:39.894556+00:00",
+  "selected_receipt": {
+    "path": ".noeaaeue/evidence/Analysis/fourier/partition-concentration-checks-2026-10-15.json",
+    "sha256": "1885cf8f4563a235e3a446b77e6683e7d7290e82150d6643dfa461ca5d22bb51",
+    "bytes": 5524064,
+    "library_modules": 17,
+    "accepted_control_modules": 2,
+    "owned_declarations": 660,
+    "positive_consumers": 2,
+    "intended_rejections": 2
+  },
+  "joint_checkpoint": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe",
+  "global_stages": {
+    "contract-validate-retry": {
+      "path": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/contract-validate-retry-receipt.json",
+      "sha256": "cdec2e91f9cfb19c59e617873c80172d71b678019fe1d6c11b41dad5d3ea3dd8",
+      "bytes": 1979381,
+      "argv": [
+        "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+        "-B",
+        ".noeaaeue/scripts/check_moebius_response.py",
+        "--manifest",
+        ".noeaaeue/bindings/moebius-current-inputs-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe.json",
+        "--validate-only"
+      ],
+      "status": "inputs-validated"
+    },
+    "native-audit-self-test": {
+      "path": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/native-audit-self-test-receipt.json",
+      "sha256": "9221fc0f9f44a5971fabaf892d3d20c9e0b1a1762154f3ff15bae9d9add684c5",
+      "bytes": 32330,
+      "argv": [
+        "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+        "-B",
+        ".noeaaeue/scripts/check_math_trust.py",
+        "--lean-self-test"
+      ],
+      "status": "LEAN_AUDIT_SELF_TEST_PASSED"
+    },
+    "public-library-replay": {
+      "path": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/public-library-replay-receipt.json",
+      "sha256": "2109996fa0f6de687fa407b1c8d33550cb97bb96ea032a4bb0ffd91708cca6b4",
+      "bytes": 25238132,
+      "argv": [
+        "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+        "-B",
+        ".noeaaeue/scripts/check_math_trust.py",
+        "--memory-mib",
+        "12288"
+      ],
+      "status": "ALL_PROJECT_SOURCE_AND_AXIOM_CHECKS_PASSED"
+    },
+    "application-replay": {
+      "path": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/application-replay-receipt.json",
+      "sha256": "b9e4d5141c5110230bc87e68c19ce3bb8ac4922f1cc0cc660e44ff4b23545faf",
+      "bytes": 37810990,
+      "argv": [
+        "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+        "-B",
+        ".noeaaeue/scripts/check_moebius_response.py",
+        "--manifest",
+        ".noeaaeue/bindings/moebius-current-inputs-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe.json",
+        "--memory-mb",
+        "12288"
+      ],
+      "status": "kernel-checked"
+    }
+  },
+  "public_sources": 447,
+  "ordinary_lake_build": {
+    "path": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/ordinary-lake-build/record.json",
+    "sha256": "59575479b14e7498c78eed2f2f6a581e147b0fc2ed40fa84b153931b4efc33a5",
+    "bytes": 225115,
+    "command": [
+      "lake",
+      "build",
+      "GRWTSK"
+    ],
+    "exit_code": 0,
+    "log": {
+      "path": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/ordinary-lake-build/output.log",
+      "sha256": "6c2e6ce87821a1c1f4d5a520a706af99e2f287e8460f1c33102be018011cfe04",
+      "bytes": 83817
+    },
+    "status": "ORDINARY_LAKE_BUILD_PASSED_AT_EXACT_CURRENT_SCOPE",
+    "proof_acceptance": false,
+    "scope": "Supplementary ordinary build of the exact checked root; the separate trust-zero owned audits supply proof acceptance."
+  },
+  "application_sources": 450,
+  "documentation_gates": {
+    "path": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-documentation-combined-retry-2026-10-16/records.json",
+    "sha256": "e7f117043b14362168f67c48c3027350e1447cb6e4293712415fd13ce170f6b4",
+    "bytes": 3514
+  },
+  "case_custody": {
+    "path": ".noeaaeue/receipts/partition-exposure-concentration/case-locator-custody.json",
+    "sha256": "11fe12aca502ee5966c26b6e8b7a1cef01c631d6d435edf035b4a5bbaa80a04e",
+    "bytes": 2236
+  },
+  "earlier_worker_results_preserved": {
+    "path": ".noeaaeue/receipts/partition-exposure-concentration/final-verification.json",
+    "sha256": "3d1e86767d973fa2cf08cc5c42b6db70c3786f11e0055b50aeccecf5dc260f8f",
+    "bytes": 792
+  },
+  "open_results": "Corollary 1.4 and later nested-chain, local-collision, admissible-permutation and rearrangement obligations retain their separate open statuses.",
+  "scope": "Records actual joint source/application checks separately from the 17+2-module selected partition result; no broader mathematical result is supplied."
+}

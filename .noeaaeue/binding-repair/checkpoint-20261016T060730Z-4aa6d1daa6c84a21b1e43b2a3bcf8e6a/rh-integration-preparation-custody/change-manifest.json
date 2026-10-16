@@ -1,0 +1,735 @@
+{
+  "schema": "inert-paired-selected-cas-proposal-v1",
+  "prepared_at_utc": "20261016T062434Z",
+  "repository": "/Users/local/Desktop/math",
+  "status": "INERT_NOT_EXECUTED",
+  "request": {
+    "path": ".noeaaeue/cache/coordination/tasks/reference-character-quiet-integration-request-2026-10-15-4ea0a99660684f5abd69834e9b553643.json",
+    "sha256": "d72b4b1baf7f76c7724164de4597146a48eb9dc9137f663d71d2b5c0e5da6398"
+  },
+  "installer": {
+    "path": "install_paired_selected.py",
+    "snapshot": {
+      "state": "regular",
+      "sha256": "3015ecbc894d164de8a50905aaa3dd77add1bc753d15898667084c9207ba8b53",
+      "bytes": 12661,
+      "mode": 420
+    }
+  },
+  "preparation_source": {
+    "path": "prepare_r2.py",
+    "snapshot": {
+      "state": "regular",
+      "sha256": "2f428412d4f82ffe713e7368b4e8fb36cefcc915e17cbb1b56565b07d8c55e2c",
+      "bytes": 9524,
+      "mode": 420
+    }
+  },
+  "targets": [
+    {
+      "path": "docs/mathematics/Combinatorics/DirectedGraph/prefix-reference-transport.md",
+      "before": {
+        "state": "absent"
+      },
+      "proposal": "proposals/docs/mathematics/Combinatorics/DirectedGraph/prefix-reference-transport.md",
+      "after": {
+        "state": "regular",
+        "sha256": "4707a746703da76973d724d45e1c2e971dd0aa1c0c4a89f7fbf558b9e8ec757b",
+        "bytes": 5485,
+        "mode": 420
+      },
+      "scope": "per-file compare-and-swap; no multi-file atomicity or proof-status inference"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/Cyclotomic/third-cyclotomic-characters.md",
+      "before": {
+        "state": "absent"
+      },
+      "proposal": "proposals/docs/mathematics/NumberTheory/Cyclotomic/third-cyclotomic-characters.md",
+      "after": {
+        "state": "regular",
+        "sha256": "b6aa02a7052c48306d52e6f2c3c3bd600c6f90f7a5eee81dfececb5f1cd5a720",
+        "bytes": 5552,
+        "mode": 420
+      },
+      "scope": "per-file compare-and-swap; no multi-file atomicity or proof-status inference"
+    },
+    {
+      "path": "docs/mathematics/Combinatorics/DirectedGraph/prefix-compaction-schedule.md",
+      "before": {
+        "state": "regular",
+        "sha256": "9bc0fad728f9ff76bc5820116c842f3d393c7c91818433a12b61f742c3121028",
+        "bytes": 4430,
+        "mode": 420
+      },
+      "proposal": "proposals/docs/mathematics/Combinatorics/DirectedGraph/prefix-compaction-schedule.md",
+      "after": {
+        "state": "regular",
+        "sha256": "e88da733a205f175ee405bde2e53d2a14d0a3791c7b6118c8889ddc8528befa0",
+        "bytes": 4542,
+        "mode": 420
+      },
+      "scope": "per-file compare-and-swap; no multi-file atomicity or proof-status inference",
+      "preimage": "preimages/docs/mathematics/Combinatorics/DirectedGraph/prefix-compaction-schedule.md"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/Cyclotomic/third-cyclotomic-reduction.md",
+      "before": {
+        "state": "regular",
+        "sha256": "a41161d0a22c07be330fce2fbdcb6288ad77c34fbd8cca6ee859981c3a98403e",
+        "bytes": 4918,
+        "mode": 420
+      },
+      "proposal": "proposals/docs/mathematics/NumberTheory/Cyclotomic/third-cyclotomic-reduction.md",
+      "after": {
+        "state": "regular",
+        "sha256": "0cff37fa3607101833c6ddfdb9ae5572b4f328bbdbffa9e3aea5328936db28cd",
+        "bytes": 5128,
+        "mode": 420
+      },
+      "scope": "per-file compare-and-swap; no multi-file atomicity or proof-status inference",
+      "preimage": "preimages/docs/mathematics/NumberTheory/Cyclotomic/third-cyclotomic-reduction.md"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/Cyclotomic/third-cyclotomic-ideals.md",
+      "before": {
+        "state": "regular",
+        "sha256": "940ce4146c4c35344f146773483e4dab5a8bb62d5581760451ed32a20bed72a3",
+        "bytes": 5291,
+        "mode": 420
+      },
+      "proposal": "proposals/docs/mathematics/NumberTheory/Cyclotomic/third-cyclotomic-ideals.md",
+      "after": {
+        "state": "regular",
+        "sha256": "17420b077a45745cdd6f2244f66dc47b3fc6127f75a412ce4aee485666448381",
+        "bytes": 5481,
+        "mode": 420
+      },
+      "scope": "per-file compare-and-swap; no multi-file atomicity or proof-status inference",
+      "preimage": "preimages/docs/mathematics/NumberTheory/Cyclotomic/third-cyclotomic-ideals.md"
+    },
+    {
+      "path": "NOTICE",
+      "before": {
+        "state": "regular",
+        "sha256": "7ced5502ca6f79c9953501d212478f93bfcc7cc18cdbbbf4df234f7fbbf604d5",
+        "bytes": 36676,
+        "mode": 420
+      },
+      "proposal": "proposals/NOTICE",
+      "after": {
+        "state": "regular",
+        "sha256": "226effef305cf308774242031ed2680f696dd6ef431c0b65bcad122135b148a1",
+        "bytes": 37888,
+        "mode": 420
+      },
+      "scope": "per-file compare-and-swap; no multi-file atomicity or proof-status inference",
+      "preimage": "preimages/NOTICE"
+    },
+    {
+      "path": "GRWTSK.lean",
+      "before": {
+        "state": "regular",
+        "sha256": "781a2e57e7856dcad358955086c1acfdaefa865835f3f1c364ac4ce49ca6ff33",
+        "bytes": 26214,
+        "mode": 420
+      },
+      "proposal": "proposals/GRWTSK.lean",
+      "after": {
+        "state": "regular",
+        "sha256": "44e183a171c933e0635d85b0316dd37f88667640c1b4acdde90fd759b506a106",
+        "bytes": 26350,
+        "mode": 420
+      },
+      "scope": "per-file compare-and-swap; no multi-file atomicity or proof-status inference",
+      "preimage": "preimages/GRWTSK.lean"
+    },
+    {
+      "path": ".noeaaeue/documentation/math-layout.json",
+      "before": {
+        "state": "regular",
+        "sha256": "d7f24058bd1212e1e7f3ea04c1e509a67a3a58cbbabd0c25d2017a1d53f1bb03",
+        "bytes": 3263676,
+        "mode": 420
+      },
+      "proposal": "proposals/.noeaaeue/documentation/math-layout.json",
+      "after": {
+        "state": "regular",
+        "sha256": "b3e64b55f4c16cc92842813373da01b341f103d39e262c691ba0ae9d077ccf3a",
+        "bytes": 3341484,
+        "mode": 420
+      },
+      "scope": "per-file compare-and-swap; no multi-file atomicity or proof-status inference",
+      "preimage": "preimages/.noeaaeue/documentation/math-layout.json"
+    },
+    {
+      "path": "docs/reference/object-source-bindings.json",
+      "before": {
+        "state": "regular",
+        "sha256": "55260721e64ae72a2d255c788a051856c36fce62ea0ab3f8602f5cf546378126",
+        "bytes": 21966,
+        "mode": 420
+      },
+      "proposal": "proposals/docs/reference/object-source-bindings.json",
+      "after": {
+        "state": "regular",
+        "sha256": "0c83600eaecf3882986730d6f853ac3bcdd47aa51fdbe66db4d3346e7058c746",
+        "bytes": 22295,
+        "mode": 420
+      },
+      "scope": "per-file compare-and-swap; no multi-file atomicity or proof-status inference",
+      "preimage": "preimages/docs/reference/object-source-bindings.json"
+    },
+    {
+      "path": ".noeaaeue/documentation/reference/documentation-layout.json",
+      "before": {
+        "state": "regular",
+        "sha256": "cb4c8d6a9602ccf1a89d42788c3794ce4dddbdc74e74a676a143b3dab65185be",
+        "bytes": 201321,
+        "mode": 420
+      },
+      "proposal": "proposals/.noeaaeue/documentation/reference/documentation-layout.json",
+      "after": {
+        "state": "regular",
+        "sha256": "7f5c97f80e76865c3ece7c3e5ff8c39ad41b42101673f1b6a88cc38df19e0247",
+        "bytes": 202453,
+        "mode": 420
+      },
+      "scope": "per-file compare-and-swap; no multi-file atomicity or proof-status inference",
+      "preimage": "preimages/.noeaaeue/documentation/reference/documentation-layout.json"
+    }
+  ],
+  "bound_inputs": [
+    {
+      "path": ".noeaaeue/AGENTS.md",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "49ece1eb15c7d2099a24719d6ae477e5022dd8b132708abddf039cf481e5a20d",
+        "bytes": 6624,
+        "mode": 420
+      },
+      "archive": "bound-inputs/.noeaaeue/AGENTS.md"
+    },
+    {
+      "path": ".noeaaeue/cache/coordination/tasks/reference-character-quiet-integration-request-2026-10-15-4ea0a99660684f5abd69834e9b553643.json",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "d72b4b1baf7f76c7724164de4597146a48eb9dc9137f663d71d2b5c0e5da6398",
+        "bytes": 67882,
+        "mode": 420
+      },
+      "archive": "bound-inputs/.noeaaeue/cache/coordination/tasks/reference-character-quiet-integration-request-2026-10-15-4ea0a99660684f5abd69834e9b553643.json"
+    },
+    {
+      "path": ".noeaaeue/documentation/current-validation-workflow.md",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "a058aad62178eca8caa5fae1cffb80fcc016c151e22db2489f685e811a5fecdc",
+        "bytes": 6470,
+        "mode": 420
+      },
+      "archive": "bound-inputs/.noeaaeue/documentation/current-validation-workflow.md"
+    },
+    {
+      "path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-reference-transport-checks-2026-10-15.json",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "c2392986e86871df84fd07fc4363c634a37930749e4f505a941a91278236a271",
+        "bytes": 3773336,
+        "mode": 420
+      },
+      "archive": "bound-inputs/.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-reference-transport-checks-2026-10-15.json"
+    },
+    {
+      "path": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-characters-development-checks-2026-10-15-a7b1f5cb.json",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "528b3c85272c20e55ae66668fd942bde430b10635bc68b44c304b3796a10f286",
+        "bytes": 4928030,
+        "mode": 420
+      },
+      "archive": "bound-inputs/.noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-characters-development-checks-2026-10-15-a7b1f5cb.json"
+    },
+    {
+      "path": ".noeaaeue/scripts/check_documentation.py",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "ea1192e8861533c6c8025b2c387d3620a6de2c97a67e2b2a62c0646d36d3a68a",
+        "bytes": 13595,
+        "mode": 420
+      },
+      "archive": "bound-inputs/.noeaaeue/scripts/check_documentation.py"
+    },
+    {
+      "path": ".noeaaeue/scripts/check_math_trust.py",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "f0cc1a6d8a2cb4ea098c3f34c6e1e31d5bf984514d9fab2e9110b23c528d0a12",
+        "bytes": 92919,
+        "mode": 420
+      },
+      "archive": "bound-inputs/.noeaaeue/scripts/check_math_trust.py"
+    },
+    {
+      "path": ".noeaaeue/scripts/check_prefix_reference_transport.py",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "2c608ba97e0f49ffb90b55a5809e18163d4d2321bd13d254061e7f45c9569b52",
+        "bytes": 13489,
+        "mode": 420
+      },
+      "archive": "bound-inputs/.noeaaeue/scripts/check_prefix_reference_transport.py"
+    },
+    {
+      "path": ".noeaaeue/scripts/check_third_cyclotomic_characters.py",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "c0c12ef5c17a7c5e9c1c894e48189b642b816be03e99070daae23739da85e2f4",
+        "bytes": 13434,
+        "mode": 420
+      },
+      "archive": "bound-inputs/.noeaaeue/scripts/check_third_cyclotomic_characters.py"
+    },
+    {
+      "path": ".noeaaeue/scripts/generate_math_source_catalog.py",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "eecaf925205d60c6794e1c8b40b080ca481fc4358e7d23f0db8d417c2cdb3de2",
+        "bytes": 6694,
+        "mode": 420
+      },
+      "archive": "bound-inputs/.noeaaeue/scripts/generate_math_source_catalog.py"
+    },
+    {
+      "path": ".noeaaeue/scripts/owned_audit_protocol.py",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "56b62242a080f7327bd1a3eac1f234fa0d68a22dc68151693793b35c30e6f114",
+        "bytes": 17196,
+        "mode": 420
+      },
+      "archive": "bound-inputs/.noeaaeue/scripts/owned_audit_protocol.py"
+    },
+    {
+      "path": "AGENTS.md",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "bbf801a3b7f73c61c10c723abbe78313e53cbb8755b2ee3df9931552e5efbd6d",
+        "bytes": 196,
+        "mode": 420
+      },
+      "archive": "bound-inputs/AGENTS.md"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixReferenceMissingSupport.lean",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "a81f4b50114fcd35951a8ed8ee1ccf0a706bc26b3a73d6935d83f8867b826f2c",
+        "bytes": 530,
+        "mode": 420
+      },
+      "archive": "bound-inputs/GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixReferenceMissingSupport.lean"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableReferenceTransport.lean",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "092678d16170cff8e60e5b1461c71aea404b4a8d93731f4e001367992bf96e26",
+        "bytes": 7784,
+        "mode": 420
+      },
+      "archive": "bound-inputs/GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableReferenceTransport.lean"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableSchedule.lean",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "0e66aa61abd4c3a911b3119555cb39c24354b319e2da3e3b7226f8907affab95",
+        "bytes": 17936,
+        "mode": 420
+      },
+      "archive": "bound-inputs/GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableSchedule.lean"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/EdgeTrace.lean",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "e1e5f2dd23b6c04a734af4bd95f3f19c15fe4f313d66c5bccff08b3312fb2a59",
+        "bytes": 8301,
+        "mode": 420
+      },
+      "archive": "bound-inputs/GRWTSK/Combinatorics/DirectedGraph/EdgeTrace.lean"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/IncrementalPrefixTable.lean",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "dc6e8066e3539897464cdfe3bf1d31797ca76baae11066a79c0d0f0c5c7ffa37",
+        "bytes": 18898,
+        "mode": 420
+      },
+      "archive": "bound-inputs/GRWTSK/Combinatorics/DirectedGraph/IncrementalPrefixTable.lean"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/OccurrencePrefix.lean",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "60737e2376594568f390e394417b77c9ea0cc5464693b3ef61502213e3afcee7",
+        "bytes": 6920,
+        "mode": 420
+      },
+      "archive": "bound-inputs/GRWTSK/Combinatorics/DirectedGraph/OccurrencePrefix.lean"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/ParentTraceDictionary.lean",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "c388e127a08238f465873954f0b6982ddbe556d0f77b252d4b2d8f89bf32237a",
+        "bytes": 14294,
+        "mode": 420
+      },
+      "archive": "bound-inputs/GRWTSK/Combinatorics/DirectedGraph/ParentTraceDictionary.lean"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/PathOccurrences.lean",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "b2b140e2f370d07ef866e81ebb93580ed706d64ad463377fcce82df37c4a39e5",
+        "bytes": 9344,
+        "mode": 420
+      },
+      "archive": "bound-inputs/GRWTSK/Combinatorics/DirectedGraph/PathOccurrences.lean"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/PathUnfolding.lean",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "8d5e2187d705ab49c52a41779b48b445d0baa223c3608ea6495e670ddac24757",
+        "bytes": 10317,
+        "mode": 420
+      },
+      "archive": "bound-inputs/GRWTSK/Combinatorics/DirectedGraph/PathUnfolding.lean"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/PrefixInventory.lean",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "fa7395f0c55943562274019d96e97e25deaea20defdf9d6f2d8a12d029e743c9",
+        "bytes": 10259,
+        "mode": 420
+      },
+      "archive": "bound-inputs/GRWTSK/Combinatorics/DirectedGraph/PrefixInventory.lean"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableBatch.lean",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "eaa986de6b17e60b545b1e603ae42f0f1a9678bcecea9379a7198097787ef63f",
+        "bytes": 10242,
+        "mode": 420
+      },
+      "archive": "bound-inputs/GRWTSK/Combinatorics/DirectedGraph/PrefixTableBatch.lean"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableCheckpoint.lean",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "39347361377ee5f5e8f58091d72652e2458b3eda2c34b74b503d4d1f3b465e03",
+        "bytes": 5389,
+        "mode": 420
+      },
+      "archive": "bound-inputs/GRWTSK/Combinatorics/DirectedGraph/PrefixTableCheckpoint.lean"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableCompaction.lean",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "fe95a8c59bb0a1e1e9a2a4eba1e5405deb4bcabac3159e0aefcd3db364aad56f",
+        "bytes": 15938,
+        "mode": 420
+      },
+      "archive": "bound-inputs/GRWTSK/Combinatorics/DirectedGraph/PrefixTableCompaction.lean"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableReferenceTransport.lean",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "a7600c33972405a31f6495b03789f9473cd914eb428d9a5f94c734f528e71d0c",
+        "bytes": 10562,
+        "mode": 420
+      },
+      "archive": "bound-inputs/GRWTSK/Combinatorics/DirectedGraph/PrefixTableReferenceTransport.lean"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableReindex.lean",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "83fc343c02d16384124ce39ed4b3f996f7a7000ee4dbba05d2015b153a9aa53c",
+        "bytes": 16643,
+        "mode": 420
+      },
+      "archive": "bound-inputs/GRWTSK/Combinatorics/DirectedGraph/PrefixTableReindex.lean"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableSchedule.lean",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "b1d8a0ea8bbdcc83f9453e35328bce854f8bddd857260527c601292f141c2c4f",
+        "bytes": 5350,
+        "mode": 420
+      },
+      "archive": "bound-inputs/GRWTSK/Combinatorics/DirectedGraph/PrefixTableSchedule.lean"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableState.lean",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "bc2398f5aae427a813c22b6025b9ca41c99c6bbfb9b9228ce49d1326a9870c3a",
+        "bytes": 20849,
+        "mode": 420
+      },
+      "archive": "bound-inputs/GRWTSK/Combinatorics/DirectedGraph/PrefixTableState.lean"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableUpdateReindex.lean",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "65dfc39c95dfdad3f0349960a56c70f6bd8422687941068ba8943935343facd8",
+        "bytes": 15988,
+        "mode": 420
+      },
+      "archive": "bound-inputs/GRWTSK/Combinatorics/DirectedGraph/PrefixTableUpdateReindex.lean"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/RoleRelationReindex.lean",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "ffff5137b1c0837f0cd84416db993d5d81e3bf6476891eb50984652d0f88a4a9",
+        "bytes": 14840,
+        "mode": 420
+      },
+      "archive": "bound-inputs/GRWTSK/Combinatorics/DirectedGraph/RoleRelationReindex.lean"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/RoleRelationTable.lean",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "52940e0c878e9d9329e74455da71dc829d643b629c8997332e8a70e458abb7b2",
+        "bytes": 11087,
+        "mode": 420
+      },
+      "archive": "bound-inputs/GRWTSK/Combinatorics/DirectedGraph/RoleRelationTable.lean"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/RootedTraceRevision.lean",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "784594334cff23da4bc77f62c5cd66cf8006ad381223026f1b7383e519dfef17",
+        "bytes": 9615,
+        "mode": 420
+      },
+      "archive": "bound-inputs/GRWTSK/Combinatorics/DirectedGraph/RootedTraceRevision.lean"
+    },
+    {
+      "path": "GRWTSK/Logic/FiniteSequences/DecisionCertificate.lean",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "d7ce67b4eacedb2d84a958636c55cd0ed75be869f552377163c0832449dc0990",
+        "bytes": 5762,
+        "mode": 420
+      },
+      "archive": "bound-inputs/GRWTSK/Logic/FiniteSequences/DecisionCertificate.lean"
+    },
+    {
+      "path": "GRWTSK/Logic/FiniteSequences/DictionaryRevision.lean",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "6c7e6f170b1ea7ad746e4e99b0c15a680433c66d20b6d23538ef4a595bd796df",
+        "bytes": 6357,
+        "mode": 420
+      },
+      "archive": "bound-inputs/GRWTSK/Logic/FiniteSequences/DictionaryRevision.lean"
+    },
+    {
+      "path": "GRWTSK/Logic/FiniteSequences/IncrementalDictionary.lean",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "dc5874410f3f41a838757159de9f225c09572d0748fceda554e88314ae4b5177",
+        "bytes": 8612,
+        "mode": 420
+      },
+      "archive": "bound-inputs/GRWTSK/Logic/FiniteSequences/IncrementalDictionary.lean"
+    },
+    {
+      "path": "GRWTSK/Logic/FiniteSequences/IndexedDictionary.lean",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "c01e5ff8067d652cafb42260ae283786c8cb78710c73eb23079a54bd05fbedff",
+        "bytes": 5972,
+        "mode": 420
+      },
+      "archive": "bound-inputs/GRWTSK/Logic/FiniteSequences/IndexedDictionary.lean"
+    },
+    {
+      "path": "GRWTSK/Logic/ProofChecking/Checks/OwnedDeclarationAudit.lean",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "94eb4533f7b97b38b5165b015a16149f01b98fd110978292b0e2e3dbdc2773c3",
+        "bytes": 13158,
+        "mode": 420
+      },
+      "archive": "bound-inputs/GRWTSK/Logic/ProofChecking/Checks/OwnedDeclarationAudit.lean"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Negative/ThirdCyclotomicCharacterZeroCube.lean",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "7e423a5a2cb5a9f6c78740f357fc1a41b832c01545e4a6e87ada20f8ccfb8242",
+        "bytes": 796,
+        "mode": 420
+      },
+      "archive": "bound-inputs/GRWTSK/NumberTheory/Cyclotomic/Checks/Negative/ThirdCyclotomicCharacterZeroCube.lean"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Positive/ThirdCyclotomicCharacters.lean",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "4832da80997b32be46ceb8ba498e86bb873a7e6111d9f2e70ee137211f0c4eb0",
+        "bytes": 3936,
+        "mode": 420
+      },
+      "archive": "bound-inputs/GRWTSK/NumberTheory/Cyclotomic/Checks/Positive/ThirdCyclotomicCharacters.lean"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicCharacters.lean",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "c595e55f46838683758ea9c66379968ac75a6f86ddfb5dc099c302f9d497a051",
+        "bytes": 9264,
+        "mode": 420
+      },
+      "archive": "bound-inputs/GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicCharacters.lean"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicIdeals.lean",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "be784982bbbdbfefdb5b1e2906d69e4d18f0ae0408cec7a4805605a6382cda87",
+        "bytes": 3465,
+        "mode": 420
+      },
+      "archive": "bound-inputs/GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicIdeals.lean"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicReduction.lean",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "05a44d8f4c4b254cf27e9df2a3b8f83081d9cb6288808e0be1d2694a81a2f3b6",
+        "bytes": 6337,
+        "mode": 420
+      },
+      "archive": "bound-inputs/GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicReduction.lean"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Ideal/CompactNormSupport.lean",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "8792ac4679bebdc78e0f466f4752501684c88c5e3ef58862121ccbabc64f3fb6",
+        "bytes": 4571,
+        "mode": 420
+      },
+      "archive": "bound-inputs/GRWTSK/NumberTheory/Ideal/CompactNormSupport.lean"
+    },
+    {
+      "path": "LICENSES/OpenAI-Apache-2.0.txt",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "bytes": 11357,
+        "mode": 420
+      },
+      "archive": "bound-inputs/LICENSES/OpenAI-Apache-2.0.txt"
+    },
+    {
+      "path": "lake-manifest.json",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
+        "bytes": 3577,
+        "mode": 420
+      },
+      "archive": "bound-inputs/lake-manifest.json"
+    },
+    {
+      "path": "lakefile.toml",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "a23f6d313f8458192328f09635ffef9078cb684374c2aac2743af541bf59b4e3",
+        "bytes": 250,
+        "mode": 420
+      },
+      "archive": "bound-inputs/lakefile.toml"
+    },
+    {
+      "path": "lean-toolchain",
+      "snapshot": {
+        "state": "regular",
+        "sha256": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
+        "bytes": 25,
+        "mode": 420
+      },
+      "archive": "bound-inputs/lean-toolchain"
+    }
+  ],
+  "preservation_audit": {
+    "historical_top_level_source_count_unchanged": 334,
+    "all_layout_fields_except_active_sources_and_controls_identical": true,
+    "old_active_rows_retained": 781,
+    "added_active_rows": 6,
+    "old_active_rows_changed_only_umbrella_and_three_reverse_consumer_unions": true,
+    "entire_old_umbrella_row_retained_under": "historical_inventory_before_reference_character_checkpoint",
+    "all_old_control_hashes_unchanged": true,
+    "added_controls": 4,
+    "all_old_object_lists_are_literal_prefixes": true,
+    "added_primary_bindings": 2,
+    "old_placements_unchanged_and_exact_coverage_retained": true,
+    "added_placements": 2,
+    "all_existing_documentation_page_bindings_unchanged": true,
+    "added_pages": 2,
+    "all_other_documentation_fields_identical_except_object_registry_hash": true,
+    "predecessor_scope_changes_are_exact_single_substring_replacements": true,
+    "all_original_public_imports_preserved_by_literal_append": true,
+    "notice_append_only": true
+  },
+  "explicit_exclusions": [
+    "generated source catalog",
+    "current observation",
+    "current contract",
+    "rendered navigation",
+    "source theorem bodies",
+    "native jobs",
+    "Git/index/branch/remote operations",
+    "historical cursor rewrites"
+  ],
+  "limits": [
+    "Per-file atomic replacement only; not a multi-file atomic transaction.",
+    "Owner must pause writers and preserve/resolve any exact CAS refusal.",
+    "Installer journals partial state and archives observed variants without rollback.",
+    "Metadata installation does not pay the queued request or prove full public acceptance."
+  ],
+  "post_validation_event_intent": "post-validation-event.intent.json",
+  "shared_mutations_during_preparation": 0,
+  "installer_executed_even_dry_run": false,
+  "r2_scope_correction": {
+    "r1_preserved": {
+      "path": "/Users/local/Desktop/math/.noeaaeue/.local/reference-character-preparation-d66c26f1e6364e8a8a14e8fc8c7ba79e/change-manifest.json",
+      "sha256": "a5d54d3e5a3927b3148b398709f8eb295b3181396ca0de8c717d1e7f32a234db"
+    },
+    "changed_proposals_only": [
+      "docs/mathematics/Combinatorics/DirectedGraph/prefix-reference-transport.md",
+      "docs/mathematics/NumberTheory/Cyclotomic/third-cyclotomic-characters.md",
+      ".noeaaeue/documentation/math-layout.json"
+    ],
+    "scope": "Timeless selected-receipt scope and installed registration wording only; all inputs/preimages and other proposals unchanged."
+  }
+}

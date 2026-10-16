@@ -1,0 +1,11 @@
+/Users/local/Desktop/math/.noeaaeue/.local/partition-concentration-replay/20261016T054901Z-b3334f990d/source/GRWTSK/Analysis/Fourier/Checks/Negative/SubsetAntiConcentrationMissingPrime.lean:12:2: error: Type mismatch
+  source_bound
+has type
+  Nat.Prime p →
+    ∀ (S : Finset (ZMod p)),
+      2 ≤ S.card →
+        2 ^ 24 * Real.log ↑S.card ≤ ↑m →
+          ↑m ≤ 1 / 1000 * ↑S.card / Real.log ↑S.card →
+            ∀ (z : ZMod p), ↑(GRWTSK.ZModSubsetSum.subsetSumProbability S m z) ≤ 1 / ↑p + 2 ^ 24 / (↑S.card * √↑m)
+but is expected to have type
+  ↑(GRWTSK.ZModSubsetSum.subsetSumProbability S m z) ≤ 1 / ↑p + 2 ^ 24 / (↑S.card * √↑m)

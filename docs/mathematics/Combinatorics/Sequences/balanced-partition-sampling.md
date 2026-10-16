@@ -12,6 +12,8 @@ Every partition has exactly `∏ i, sizes i` selections. `partition_probability`
 
 Selected elements from different fibers are distinct, so the output has cardinality `m`. Relabeling `A` by a permutation induces an explicit bijection of sample spaces. Every two `m`-element output sets have equally large fibers. Counting the fibers then proves `output_probability` for individual subsets and `output_event_probability` for arbitrary events. Feasible partitions and samples are constructed rather than assumed.
 
+The [conditional part-exposure law](conditional-partition-exposure.md) separately proves that, after fixing a retained element’s part index, its other part members form a uniform fixed-size subset of the other population elements. This is the sampling law used for partition concentration.
+
 ## Scope and evidence
 
 This closes the uniform-sampling assertion at the start of Section 3 of Pham and Sauermann, [arXiv:2602.15797v1](https://arxiv.org/html/2602.15797v1), February 17, 2026. The balanced sizes are specified by the proved quotient/remainder formula, with the larger parts first. No primality, group operation, Fourier estimate or random-search termination premise is needed.

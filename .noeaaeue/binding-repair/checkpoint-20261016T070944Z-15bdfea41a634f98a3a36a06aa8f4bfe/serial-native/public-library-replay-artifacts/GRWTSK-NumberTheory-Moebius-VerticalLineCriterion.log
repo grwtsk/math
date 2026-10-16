@@ -1,0 +1,15 @@
+'GRWTSK.NumberTheory.Moebius.VerticalLineCriterion.verticalLineMass_eq_completed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.NumberTheory.Moebius.VerticalLineCriterion.verticalLineMass_uniform_above_half' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.NumberTheory.Moebius.VerticalLineCriterion.pickupEnergySubexp_of_completedVerticalLineUniform' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.NumberTheory.Moebius.VerticalLineCriterion.completedVerticalLineUniform_iff_weightedEnergyAll' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.NumberTheory.Moebius.VerticalLineCriterion.riemannHypothesis_of_completedVerticalLineUniform' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

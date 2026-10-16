@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/check_documentation.py", line 189, in <module>
+    if __name__=='__main__':main()
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/check_documentation.py", line 185, in main
+    n,s=layout.check(source_census=source_census)
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/check_documentation_layout.py", line 572, in check
+    validate(root,layout,inventory,historical,visible,bound,source_names,source_census)
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/check_documentation_layout.py", line 546, in validate
+    check_links(root,pages,bound)
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/check_documentation_layout.py", line 374, in check_links
+    if target.suffix=='.md':require(target_name in pages,'unregistered Markdown target: '+name+' -> '+link)
+  File "/Users/local/Desktop/math/.noeaaeue/scripts/check_documentation_layout.py", line 21, in require
+    if not condition: raise LayoutError(message)
+check_documentation_layout.LayoutError: unregistered Markdown target: docs/mathematics/Analysis/Fourier/subset-sum-anticoncentration.md -> ../../../../.noeaaeue/receipts/partition-exposure-concentration/implementation-report.md

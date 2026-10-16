@@ -1,0 +1,499 @@
+{
+  "schema": "source-bound-independent-mathematical-review-v1",
+  "status": "review-complete-no-actionable-mathematical-discrepancy-found",
+  "reviewer": {
+    "agent": "balanced_law",
+    "relationship": "Independent read-through of the frozen final averaging integration and scalar estimates; reviewer previously contributed uniform sampling, sumset/spectrum, exposure, and partition-tail dependencies, disclosed here."
+  },
+  "targets": [
+    {
+      "path": "GRWTSK/Analysis/Fourier/ZModExpectedLayers.lean",
+      "sha256": "b7464aa2d019f349cc8ce39cadec258f883afe66468963e31bbeacb93ab419f3",
+      "bytes": 19978,
+      "namespace": "GRWTSK.ZModExpectedLayers",
+      "declarations": [
+        {
+          "source_name": "mean",
+          "declaration": "GRWTSK.ZModExpectedLayers.mean",
+          "visibility": "public",
+          "kind": "def",
+          "line": 27,
+          "explicit_statement": "def mean (f : Ω → ℝ) : ℝ"
+        },
+        {
+          "source_name": "mean_mono",
+          "declaration": "GRWTSK.ZModExpectedLayers.mean_mono",
+          "visibility": "public",
+          "kind": "theorem",
+          "line": 29,
+          "explicit_statement": "theorem mean_mono {f g : Ω → ℝ} (h : ∀ ω, f ω ≤ g ω) : mean f ≤ mean g"
+        },
+        {
+          "source_name": "mean_const",
+          "declaration": "GRWTSK.ZModExpectedLayers.mean_const",
+          "visibility": "public",
+          "kind": "theorem",
+          "line": 32,
+          "explicit_statement": "theorem mean_const [Nonempty Ω] (c : ℝ) : mean (fun _ : Ω => c) = c"
+        },
+        {
+          "source_name": "mean_add",
+          "declaration": "GRWTSK.ZModExpectedLayers.mean_add",
+          "visibility": "public",
+          "kind": "theorem",
+          "line": 35,
+          "explicit_statement": "theorem mean_add (f g : Ω → ℝ) : mean (fun ω => f ω + g ω) = mean f + mean g"
+        },
+        {
+          "source_name": "eventProbability_nonneg",
+          "declaration": "GRWTSK.ZModExpectedLayers.eventProbability_nonneg",
+          "visibility": "public",
+          "kind": "theorem",
+          "line": 39,
+          "explicit_statement": "theorem eventProbability_nonneg (E : Ω → Prop) : 0 ≤ eventProbability E"
+        },
+        {
+          "source_name": "eventProbability_le_one",
+          "declaration": "GRWTSK.ZModExpectedLayers.eventProbability_le_one",
+          "visibility": "public",
+          "kind": "theorem",
+          "line": 43,
+          "explicit_statement": "theorem eventProbability_le_one (E : Ω → Prop) : eventProbability E ≤ 1"
+        },
+        {
+          "source_name": "mean_filter_card",
+          "declaration": "GRWTSK.ZModExpectedLayers.mean_filter_card",
+          "visibility": "public",
+          "kind": "theorem",
+          "line": 50,
+          "explicit_statement": "theorem mean_filter_card (F : Finset Λ) (E : Ω → Λ → Prop) :\n    mean (fun ω => ((F.filter (E ω)).card : ℝ)) =\n      ∑ χ ∈ F, eventProbability (fun ω => E ω χ)"
+        },
+        {
+          "source_name": "mean_filter_card_le_exceptional",
+          "declaration": "GRWTSK.ZModExpectedLayers.mean_filter_card_le_exceptional",
+          "visibility": "public",
+          "kind": "theorem",
+          "line": 65,
+          "explicit_statement": "theorem mean_filter_card_le_exceptional [DecidableEq Λ]\n    (F B : Finset Λ) (E : Ω → Λ → Prop) (ε : ℝ) (hε : 0 ≤ ε)\n    (hsmall : ∀ χ ∈ F, χ ∉ B → eventProbability (fun ω => E ω χ) ≤ ε) :\n    mean (fun ω => ((F.filter (E ω)).card : ℝ)) ≤\n      (F.card : ℝ) * ε + (F ∩ B).card"
+        },
+        {
+          "source_name": "nonzeroLowEnergy",
+          "declaration": "GRWTSK.ZModExpectedLayers.nonzeroLowEnergy",
+          "visibility": "public",
+          "kind": "def",
+          "line": 87,
+          "explicit_statement": "def nonzeroLowEnergy (energy : Ω → ZMod p → ℝ) (t : ℝ) (ω : Ω) : Finset (ZMod p)"
+        },
+        {
+          "source_name": "mean_nonzeroLowEnergy_le",
+          "declaration": "GRWTSK.ZModExpectedLayers.mean_nonzeroLowEnergy_le",
+          "visibility": "public",
+          "kind": "theorem",
+          "line": 92,
+          "explicit_statement": "theorem mean_nonzeroLowEnergy_le (S : Finset (ZMod p)) (energy : Ω → ZMod p → ℝ)\n    (m t : ℝ) (hsmall : ∀ χ : ZMod p, χ ≠ 0 →\n      χ ∉ smallEnergyFrequencies S m (2000 * t) →\n        eventProbability (fun ω => energy ω χ < 2 * t) ≤ 1 / (S.card : ℝ) ^ 9) :\n    mean (fun ω => ((nonzeroLowEnergy energy t ω).card : ℝ)) ≤\n      (p : ℝ) / (S.card : ℝ) ^ 9 +\n        ((smallEnergyFrequencies S m (2000 * t)).erase 0).card"
+        },
+        {
+          "source_name": "smallEnergyFrequencies_erase_zero_card_le",
+          "declaration": "GRWTSK.ZModExpectedLayers.smallEnergyFrequencies_erase_zero_card_le",
+          "visibility": "public",
+          "kind": "theorem",
+          "line": 119,
+          "explicit_statement": "theorem smallEnergyFrequencies_erase_zero_card_le (hp : p.Prime)\n    (S : Finset (ZMod p)) (hn : 10 ≤ S.card) (m t : ℝ)\n    (hm : 0 < m) (ht : 0 < t) (htm : t ≤ m / 2000) :\n    (((smallEnergyFrequencies S m t).erase 0).card : ℝ) ≤\n      200 * p * Real.sqrt t / ((S.card : ℝ) * Real.sqrt m)"
+        },
+        {
+          "source_name": "absorb_spectral_error",
+          "declaration": "GRWTSK.ZModExpectedLayers.absorb_spectral_error",
+          "visibility": "public",
+          "kind": "theorem",
+          "line": 133,
+          "explicit_statement": "theorem absorb_spectral_error (n m t q : ℝ) (hn : 1 ≤ n) (hm : 1 ≤ m)\n    (hmn : m ≤ n) (ht : 1 ≤ t) (hq : 0 ≤ q) :\n    q / n ^ 9 + 200 * q * Real.sqrt (2000 * t) / (n * Real.sqrt m) ≤\n      10000 * q * Real.sqrt t / (n * Real.sqrt m)"
+        },
+        {
+          "source_name": "mean_nonzeroLowEnergy_le_10000",
+          "declaration": "GRWTSK.ZModExpectedLayers.mean_nonzeroLowEnergy_le_10000",
+          "visibility": "public",
+          "kind": "theorem",
+          "line": 176,
+          "explicit_statement": "theorem mean_nonzeroLowEnergy_le_10000 (hp : p.Prime)\n    (S : Finset (ZMod p)) (hn : 10 ≤ S.card) (energy : Ω → ZMod p → ℝ)\n    (m t : ℝ) (hm : 1 ≤ m) (hmn : m ≤ S.card) (ht : 1 ≤ t)\n    (htm : t ≤ m / 2000 ^ 2)\n    (hsmall : ∀ χ : ZMod p, χ ≠ 0 →\n      χ ∉ smallEnergyFrequencies S m (2000 * t) →\n        eventProbability (fun ω => energy ω χ < 2 * t) ≤ 1 / (S.card : ℝ) ^ 9) :\n    mean (fun ω => ((nonzeroLowEnergy energy t ω).card : ℝ)) ≤\n      10000 * p * Real.sqrt t / ((S.card : ℝ) * Real.sqrt m)"
+        },
+        {
+          "source_name": "mean_card_le_of_subset",
+          "declaration": "GRWTSK.ZModExpectedLayers.mean_card_le_of_subset",
+          "visibility": "public",
+          "kind": "theorem",
+          "line": 194,
+          "explicit_statement": "theorem mean_card_le_of_subset [DecidableEq Λ] (F G : Ω → Finset Λ)\n    (h : ∀ ω, F ω ⊆ G ω) : mean (fun ω => ((F ω).card : ℝ)) ≤\n      mean (fun ω => ((G ω).card : ℝ))"
+        },
+        {
+          "source_name": "mean_lowBand_le_one_add",
+          "declaration": "GRWTSK.ZModExpectedLayers.mean_lowBand_le_one_add",
+          "visibility": "public",
+          "kind": "theorem",
+          "line": 201,
+          "explicit_statement": "theorem mean_lowBand_le_one_add [Nonempty Ω] (energy : Ω → ZMod p → ℝ) :\n    mean (fun ω => ((lowBand (energy ω)).card : ℝ)) ≤\n      1 + mean (fun ω => ((nonzeroLowEnergy energy 1 ω).card : ℝ))"
+        },
+        {
+          "source_name": "mean_dyadicBand_le_nonzeroLowEnergy",
+          "declaration": "GRWTSK.ZModExpectedLayers.mean_dyadicBand_le_nonzeroLowEnergy",
+          "visibility": "public",
+          "kind": "theorem",
+          "line": 227,
+          "explicit_statement": "theorem mean_dyadicBand_le_nonzeroLowEnergy (energy : Ω → ZMod p → ℝ)\n    (hzero : ∀ ω, energy ω 0 = 0) (k : ℕ) :\n    mean (fun ω => ((dyadicBand (energy ω) k).card : ℝ)) ≤\n      mean (fun ω => ((nonzeroLowEnergy energy ((2 : ℝ) ^ k) ω).card : ℝ))"
+        },
+        {
+          "source_name": "mean_lowBand_le_10000",
+          "declaration": "GRWTSK.ZModExpectedLayers.mean_lowBand_le_10000",
+          "visibility": "public",
+          "kind": "theorem",
+          "line": 246,
+          "explicit_statement": "theorem mean_lowBand_le_10000 [Nonempty Ω] (hp : p.Prime)\n    (S : Finset (ZMod p)) (hn : 10 ≤ S.card) (energy : Ω → ZMod p → ℝ)\n    (m : ℝ) (hm : (2000 : ℝ) ^ 2 ≤ m) (hmn : m ≤ S.card)\n    (hsmall : ∀ χ : ZMod p, χ ≠ 0 →\n      χ ∉ smallEnergyFrequencies S m 2000 →\n        eventProbability (fun ω => energy ω χ < 2) ≤ 1 / (S.card : ℝ) ^ 9) :\n    mean (fun ω => ((lowBand (energy ω)).card : ℝ)) ≤\n      1 + 10000 * p / ((S.card : ℝ) * Real.sqrt m)"
+        },
+        {
+          "source_name": "mean_dyadicBand_le_10000",
+          "declaration": "GRWTSK.ZModExpectedLayers.mean_dyadicBand_le_10000",
+          "visibility": "public",
+          "kind": "theorem",
+          "line": 262,
+          "explicit_statement": "theorem mean_dyadicBand_le_10000 (hp : p.Prime)\n    (S : Finset (ZMod p)) (hn : 10 ≤ S.card) (energy : Ω → ZMod p → ℝ)\n    (hzero : ∀ ω, energy ω 0 = 0) (m : ℝ) (hm : 1 ≤ m) (hmn : m ≤ S.card)\n    (k : ℕ) (htm : (2 : ℝ) ^ k ≤ m / 2000 ^ 2)\n    (hsmall : ∀ χ : ZMod p, χ ≠ 0 →\n      χ ∉ smallEnergyFrequencies S m (2000 * (2 : ℝ) ^ k) →\n        eventProbability (fun ω => energy ω χ < 2 * (2 : ℝ) ^ k) ≤\n          1 / (S.card : ℝ) ^ 9) :\n    mean (fun ω => ((dyadicBand (energy ω) k).card : ℝ)) ≤\n      10000 * p * Real.sqrt ((2 : ℝ) ^ k) / ((S.card : ℝ) * Real.sqrt m)"
+        },
+        {
+          "source_name": "sqrt_dyadic_exp_term_le",
+          "declaration": "GRWTSK.ZModExpectedLayers.sqrt_dyadic_exp_term_le",
+          "visibility": "public",
+          "kind": "theorem",
+          "line": 278,
+          "explicit_statement": "theorem sqrt_dyadic_exp_term_le (k : ℕ) :\n    Real.sqrt ((2 : ℝ) ^ k) * Real.exp (-(2 : ℝ) ^ k) ≤\n      Real.exp ((k : ℝ) / 2 - (2 : ℝ) ^ k)"
+        },
+        {
+          "source_name": "sum_sqrt_dyadic_exp_le_two",
+          "declaration": "GRWTSK.ZModExpectedLayers.sum_sqrt_dyadic_exp_le_two",
+          "visibility": "public",
+          "kind": "theorem",
+          "line": 302,
+          "explicit_statement": "theorem sum_sqrt_dyadic_exp_le_two (N : ℕ) :\n    (∑ k ∈ Finset.range N, Real.sqrt ((2 : ℝ) ^ k) * Real.exp (-(2 : ℝ) ^ k)) ≤ 2"
+        },
+        {
+          "source_name": "high_layers_sum_le",
+          "declaration": "GRWTSK.ZModExpectedLayers.high_layers_sum_le",
+          "visibility": "public",
+          "kind": "theorem",
+          "line": 308,
+          "explicit_statement": "theorem high_layers_sum_le (I : Finset ℕ) (m : ℝ) (hcard : I.card ≤ 22)\n    (hlarge : ∀ k ∈ I, m / (2 : ℝ) ^ 22 ≤ (2 : ℝ) ^ k) :\n    ∑ k ∈ I, Real.exp (-(2 : ℝ) ^ k) ≤ 22 * Real.exp (-m / (2 : ℝ) ^ 22)"
+        },
+        {
+          "source_name": "source_tail_exp_le",
+          "declaration": "GRWTSK.ZModExpectedLayers.source_tail_exp_le",
+          "visibility": "public",
+          "kind": "theorem",
+          "line": 323,
+          "explicit_statement": "theorem source_tail_exp_le (n m : ℝ) (hn : 0 < n)\n    (hl : (2 : ℝ) ^ 24 * Real.log n ≤ m) :\n    Real.exp (-m / (2 : ℝ) ^ 22) ≤ 1 / n ^ 4"
+        },
+        {
+          "source_name": "reciprocal_tail_le",
+          "declaration": "GRWTSK.ZModExpectedLayers.reciprocal_tail_le",
+          "visibility": "public",
+          "kind": "theorem",
+          "line": 335,
+          "explicit_statement": "theorem reciprocal_tail_le (n m : ℝ) (hn : 1 ≤ n) (hm : 1 ≤ m) (hmn : m ≤ n) :\n    22 / n ^ 4 ≤ 22 / (n * Real.sqrt m)"
+        },
+        {
+          "source_name": "smallLayerRange",
+          "declaration": "GRWTSK.ZModExpectedLayers.smallLayerRange",
+          "visibility": "public",
+          "kind": "def",
+          "line": 349,
+          "explicit_statement": "def smallLayerRange (m : ℕ) : Finset ℕ"
+        },
+        {
+          "source_name": "largeLayerRange",
+          "declaration": "GRWTSK.ZModExpectedLayers.largeLayerRange",
+          "visibility": "public",
+          "kind": "def",
+          "line": 352,
+          "explicit_statement": "def largeLayerRange (m : ℕ) : Finset ℕ"
+        },
+        {
+          "source_name": "smallLayerRange_subset",
+          "declaration": "GRWTSK.ZModExpectedLayers.smallLayerRange_subset",
+          "visibility": "public",
+          "kind": "theorem",
+          "line": 355,
+          "explicit_statement": "theorem smallLayerRange_subset (m : ℕ) :\n    smallLayerRange m ⊆ Finset.range (Nat.log 2 m + 1)"
+        },
+        {
+          "source_name": "largeLayerRange_card_le",
+          "declaration": "GRWTSK.ZModExpectedLayers.largeLayerRange_card_le",
+          "visibility": "public",
+          "kind": "theorem",
+          "line": 359,
+          "explicit_statement": "theorem largeLayerRange_card_le (m : ℕ) : (largeLayerRange m).card ≤ 22"
+        },
+        {
+          "source_name": "smallLayerRange_size_le",
+          "declaration": "GRWTSK.ZModExpectedLayers.smallLayerRange_size_le",
+          "visibility": "public",
+          "kind": "theorem",
+          "line": 366,
+          "explicit_statement": "theorem smallLayerRange_size_le (m : ℕ) (hm : 2 ^ 22 ≤ m)\n    (k : ℕ) (hk : k ∈ smallLayerRange m) :\n    (2 : ℝ) ^ k ≤ (m : ℝ) / 2000 ^ 2"
+        },
+        {
+          "source_name": "largeLayerRange_size_ge",
+          "declaration": "GRWTSK.ZModExpectedLayers.largeLayerRange_size_ge",
+          "visibility": "public",
+          "kind": "theorem",
+          "line": 384,
+          "explicit_statement": "theorem largeLayerRange_size_ge (m k : ℕ) (hk : k ∈ largeLayerRange m) :\n    (m : ℝ) / (2 : ℝ) ^ 22 ≤ (2 : ℝ) ^ k"
+        },
+        {
+          "source_name": "largeLayerRange_exp_sum_le",
+          "declaration": "GRWTSK.ZModExpectedLayers.largeLayerRange_exp_sum_le",
+          "visibility": "public",
+          "kind": "theorem",
+          "line": 401,
+          "explicit_statement": "theorem largeLayerRange_exp_sum_le (m : ℕ) :\n    (∑ k ∈ largeLayerRange m, Real.exp (-(2 : ℝ) ^ k)) ≤\n      22 * Real.exp (-(m : ℝ) / (2 : ℝ) ^ 22)"
+        }
+      ]
+    },
+    {
+      "path": "GRWTSK/Analysis/Fourier/ZModBalancedExpectedLayers.lean",
+      "sha256": "6317a8b54aa66498b4d6565c581ca98edda7a08fec1f8a872dd5bfa70fded391",
+      "bytes": 13524,
+      "namespace": "GRWTSK.ZModBalancedExpectedLayers",
+      "declarations": [
+        {
+          "source_name": "balancedEnergy",
+          "declaration": "GRWTSK.ZModBalancedExpectedLayers.balancedEnergy",
+          "visibility": "public",
+          "kind": "def",
+          "line": 27,
+          "explicit_statement": "def balancedEnergy (S : Finset (ZMod p)) (m : ℕ)\n    (P : BalancedPartitions S m) (χ : ZMod p) : ℝ"
+        },
+        {
+          "source_name": "expectedLowCard",
+          "declaration": "GRWTSK.ZModBalancedExpectedLayers.expectedLowCard",
+          "visibility": "public",
+          "kind": "def",
+          "line": 32,
+          "explicit_statement": "def expectedLowCard (S : Finset (ZMod p)) (m : ℕ) : ℝ"
+        },
+        {
+          "source_name": "expectedLayerCard",
+          "declaration": "GRWTSK.ZModBalancedExpectedLayers.expectedLayerCard",
+          "visibility": "public",
+          "kind": "def",
+          "line": 36,
+          "explicit_statement": "def expectedLayerCard (S : Finset (ZMod p)) (m k : ℕ) : ℝ"
+        },
+        {
+          "source_name": "balancedPartitions_nonempty",
+          "declaration": null,
+          "visibility": "private-source-helper",
+          "kind": "theorem",
+          "line": 40,
+          "explicit_statement": "private theorem balancedPartitions_nonempty (S : Finset (ZMod p)) (hm : 0 < m) :\n    Nonempty (BalancedPartitions S m)"
+        },
+        {
+          "source_name": "expectedLowCard_le",
+          "declaration": "GRWTSK.ZModBalancedExpectedLayers.expectedLowCard_le",
+          "visibility": "public",
+          "kind": "theorem",
+          "line": 47,
+          "explicit_statement": "theorem expectedLowCard_le (hp : p.Prime) (S : Finset (ZMod p))\n    (hn : 2 ≤ S.card) (hl : (2 : ℝ) ^ 24 * Real.log S.card ≤ m)\n    (hu : (m : ℝ) ≤ (1 / 1000 : ℝ) * S.card / Real.log S.card) :\n    expectedLowCard S m ≤ 1 + 10000 * p / ((S.card : ℝ) * Real.sqrt m)"
+        },
+        {
+          "source_name": "expectedLayerCard_le_small",
+          "declaration": "GRWTSK.ZModBalancedExpectedLayers.expectedLayerCard_le_small",
+          "visibility": "public",
+          "kind": "theorem",
+          "line": 62,
+          "explicit_statement": "theorem expectedLayerCard_le_small (hp : p.Prime) (S : Finset (ZMod p))\n    (hn : 2 ≤ S.card) (hl : (2 : ℝ) ^ 24 * Real.log S.card ≤ m)\n    (hu : (m : ℝ) ≤ (1 / 1000 : ℝ) * S.card / Real.log S.card)\n    (k : ℕ) (hk : k ∈ smallLayerRange m) :\n    expectedLayerCard S m k ≤\n      10000 * p * Real.sqrt ((2 : ℝ) ^ k) / ((S.card : ℝ) * Real.sqrt m)"
+        },
+        {
+          "source_name": "expectedLayerCard_le_card",
+          "declaration": "GRWTSK.ZModBalancedExpectedLayers.expectedLayerCard_le_card",
+          "visibility": "public",
+          "kind": "theorem",
+          "line": 78,
+          "explicit_statement": "theorem expectedLayerCard_le_card (S : Finset (ZMod p)) (hm : 0 < m) (k : ℕ) :\n    expectedLayerCard S m k ≤ p"
+        },
+        {
+          "source_name": "mean_const_mul",
+          "declaration": null,
+          "visibility": "private-source-helper",
+          "kind": "theorem",
+          "line": 93,
+          "explicit_statement": "private theorem mean_const_mul {Ω : Type*} [Fintype Ω] (c : ℝ) (f : Ω → ℝ) :\n    mean (fun ω => c * f ω) = c * mean f"
+        },
+        {
+          "source_name": "mean_mul_const",
+          "declaration": null,
+          "visibility": "private-source-helper",
+          "kind": "theorem",
+          "line": 99,
+          "explicit_statement": "private theorem mean_mul_const {Ω : Type*} [Fintype Ω] (f : Ω → ℝ) (c : ℝ) :\n    mean (fun ω => f ω * c) = mean f * c"
+        },
+        {
+          "source_name": "mean_finset_sum",
+          "declaration": null,
+          "visibility": "private-source-helper",
+          "kind": "theorem",
+          "line": 105,
+          "explicit_statement": "private theorem mean_finset_sum {Ω ι : Type*} [Fintype Ω] (I : Finset ι)\n    (f : Ω → ι → ℝ) : mean (fun ω => ∑ i ∈ I, f ω i) = ∑ i ∈ I, mean (fun ω => f ω i)"
+        },
+        {
+          "source_name": "subsetSumProbability_le_expectedLayers",
+          "declaration": "GRWTSK.ZModBalancedExpectedLayers.subsetSumProbability_le_expectedLayers",
+          "visibility": "public",
+          "kind": "theorem",
+          "line": 112,
+          "explicit_statement": "theorem subsetSumProbability_le_expectedLayers (S : Finset (ZMod p))\n    (hm : 0 < m) (hmn : m ≤ S.card) (z : ZMod p) :\n    (GRWTSK.ZModSubsetSum.subsetSumProbability S m z : ℝ) ≤\n      (p : ℝ)⁻¹ * (expectedLowCard S m +\n        ∑ k ∈ Finset.range (Nat.log 2 m + 1),\n          expectedLayerCard S m k * Real.exp (-(2 : ℝ) ^ k))"
+        },
+        {
+          "source_name": "smallLayer_sum_le",
+          "declaration": "GRWTSK.ZModBalancedExpectedLayers.smallLayer_sum_le",
+          "visibility": "public",
+          "kind": "theorem",
+          "line": 128,
+          "explicit_statement": "theorem smallLayer_sum_le (hp : p.Prime) (S : Finset (ZMod p))\n    (hn : 2 ≤ S.card) (hl : (2 : ℝ) ^ 24 * Real.log S.card ≤ m)\n    (hu : (m : ℝ) ≤ (1 / 1000 : ℝ) * S.card / Real.log S.card) :\n    (∑ k ∈ smallLayerRange m, expectedLayerCard S m k * Real.exp (-(2 : ℝ) ^ k)) ≤\n      20000 * p / ((S.card : ℝ) * Real.sqrt m)"
+        },
+        {
+          "source_name": "largeLayer_sum_le",
+          "declaration": "GRWTSK.ZModBalancedExpectedLayers.largeLayer_sum_le",
+          "visibility": "public",
+          "kind": "theorem",
+          "line": 154,
+          "explicit_statement": "theorem largeLayer_sum_le (S : Finset (ZMod p))\n    (hn : 2 ≤ S.card) (hl : (2 : ℝ) ^ 24 * Real.log S.card ≤ m)\n    (hu : (m : ℝ) ≤ (1 / 1000 : ℝ) * S.card / Real.log S.card) :\n    (∑ k ∈ largeLayerRange m, expectedLayerCard S m k * Real.exp (-(2 : ℝ) ^ k)) ≤\n      22 * p / (S.card : ℝ) ^ 4"
+        },
+        {
+          "source_name": "subsetSumProbability_le_30022",
+          "declaration": "GRWTSK.ZModBalancedExpectedLayers.subsetSumProbability_le_30022",
+          "visibility": "public",
+          "kind": "theorem",
+          "line": 179,
+          "explicit_statement": "theorem subsetSumProbability_le_30022 (hp : p.Prime) (S : Finset (ZMod p))\n    (hn : 2 ≤ S.card) (hl : (2 : ℝ) ^ 24 * Real.log S.card ≤ m)\n    (hu : (m : ℝ) ≤ (1 / 1000 : ℝ) * S.card / Real.log S.card) (z : ZMod p) :\n    (GRWTSK.ZModSubsetSum.subsetSumProbability S m z : ℝ) ≤\n      1 / p + 30022 / ((S.card : ℝ) * Real.sqrt m)"
+        },
+        {
+          "source_name": "subsetSumProbability_le_source_constant",
+          "declaration": "GRWTSK.ZModBalancedExpectedLayers.subsetSumProbability_le_source_constant",
+          "visibility": "public",
+          "kind": "theorem",
+          "line": 221,
+          "explicit_statement": "theorem subsetSumProbability_le_source_constant (hp : p.Prime) (S : Finset (ZMod p))\n    (hn : 2 ≤ S.card) (hl : (2 : ℝ) ^ 24 * Real.log S.card ≤ m)\n    (hu : (m : ℝ) ≤ (1 / 1000 : ℝ) * S.card / Real.log S.card) (z : ZMod p) :\n    (GRWTSK.ZModSubsetSum.subsetSumProbability S m z : ℝ) ≤\n      1 / p + (2 : ℝ) ^ 24 / ((S.card : ℝ) * Real.sqrt m)"
+        },
+        {
+          "source_name": "prime_subsetSumProbability_le_source_constant",
+          "declaration": "GRWTSK.ZModBalancedExpectedLayers.prime_subsetSumProbability_le_source_constant",
+          "visibility": "public",
+          "kind": "theorem",
+          "line": 233,
+          "explicit_statement": "theorem prime_subsetSumProbability_le_source_constant (hp : p.Prime)\n    (S : Finset (ZMod p)) (hn : 2 ≤ S.card)\n    (hl : (2 : ℝ) ^ 24 * Real.log S.card ≤ m)\n    (hu : (m : ℝ) ≤ (1 / 1000 : ℝ) * S.card / Real.log S.card) (z : ZMod p) :\n    (@GRWTSK.ZModSubsetSum.subsetSumProbability p ⟨hp.ne_zero⟩ S m z : ℝ) ≤\n      1 / p + (2 : ℝ) ^ 24 / ((S.card : ℝ) * Real.sqrt m)"
+        },
+        {
+          "source_name": "exists_anticoncentration_constant",
+          "declaration": "GRWTSK.ZModBalancedExpectedLayers.exists_anticoncentration_constant",
+          "visibility": "public",
+          "kind": "theorem",
+          "line": 244,
+          "explicit_statement": "theorem exists_anticoncentration_constant :\n    ∃ C : ℝ, 0 < C ∧ ∀ (q : ℕ) (hq : q.Prime),\n      ∀ (S : Finset (ZMod q)) (k : ℕ), 2 ≤ S.card →\n        C * Real.log S.card ≤ k →\n        (k : ℝ) ≤ (1 / 1000 : ℝ) * S.card / Real.log S.card →\n        ∀ z : ZMod q,\n          (@GRWTSK.ZModSubsetSum.subsetSumProbability q ⟨hq.ne_zero⟩ S k z : ℝ) ≤\n            1 / q + C / ((S.card : ℝ) * Real.sqrt k)"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "authors": [
+      "Huy Tuan Pham",
+      "Lisa Sauermann"
+    ],
+    "title": "On Graham's rearrangement conjecture",
+    "arxiv": "2602.15797v1",
+    "version_date": "2026-02-17",
+    "url": "https://arxiv.org/html/2602.15797v1",
+    "targets": [
+      "Theorem 1.3",
+      "Section 3 equations (3.1)-(3.4)",
+      "Section 3 paragraphs S3.p32-S3.p34"
+    ],
+    "retained_html": ".noeaaeue/receipts/modular-partial-sum-ordering/paper-v1.html",
+    "sha256": "f2cb2cf8d155cf8940aaa7443db223b43419413bc9cbc5c25f25e453cd33a74b"
+  },
+  "prior_concentration_review": {
+    "path": ".noeaaeue/receipts/partition-exposure-concentration/independent-review.json",
+    "sha256": "40b9da4cf934575607142a087e8d4c9287513eee77fa93ced042dce0d9539af6",
+    "preserved_without_modification": true,
+    "target_path": "GRWTSK/Analysis/Fourier/ZModPartitionConcentration.lean",
+    "target_sha256": "cadb696bc288dbc51703deb6d55e9620a428c48f3c5cefee1eba26267636ce6a"
+  },
+  "final_acceptance_targets": [
+    {
+      "declaration": "GRWTSK.ZModBalancedExpectedLayers.subsetSumProbability_le_30022",
+      "modulus_context": "p : Nat, [NeZero p], hp : p.Prime",
+      "other_hypotheses": [
+        "S : Finset (ZMod p)",
+        "2 <= S.card",
+        "m : Nat",
+        "2^24 * log(S.card) <= m",
+        "m <= (1/1000)*S.card/log(S.card)",
+        "z : ZMod p"
+      ],
+      "conclusion": "Pr[sum(R)=z] <= 1/p + 30022/(S.card*sqrt(m)), where R is the actual uniform m-subset of S."
+    },
+    {
+      "declaration": "GRWTSK.ZModBalancedExpectedLayers.subsetSumProbability_le_source_constant",
+      "hypotheses": "Same explicit source range and prime-modulus hypotheses as subsetSumProbability_le_30022.",
+      "conclusion": "The same law is <= 1/p + 2^24/(S.card*sqrt(m))."
+    },
+    {
+      "declaration": "GRWTSK.ZModBalancedExpectedLayers.prime_subsetSumProbability_le_source_constant",
+      "modulus_context": "Only p : Nat and hp : p.Prime; the [NeZero p] section variable is explicitly omitted.",
+      "other_hypotheses": "Exactly the preceding finite-set, sample-size, logarithmic-range, and z hypotheses.",
+      "instance_handling": "The probability expression explicitly uses the instance constructed from hp.ne_zero, and the proof constructs that instance locally. No caller-provided NeZero premise remains."
+    },
+    {
+      "declaration": "GRWTSK.ZModBalancedExpectedLayers.exists_anticoncentration_constant",
+      "quantifiers": "There exists one real C>0 such that for every q : Nat, hq : q.Prime, finite S subset ZMod q, k : Nat, and z : ZMod q, the stated implication holds. No NeZero typeclass is quantified or requested.",
+      "hypotheses": [
+        "2 <= S.card",
+        "C*log(S.card) <= k",
+        "k <= (1/1000)*S.card/log(S.card)"
+      ],
+      "conclusion": "Pr[sum(R)=z] <= 1/q + C/(S.card*sqrt(k)) for the actual uniform fixed-size law.",
+      "witness": "C = 2^24 = 16777216",
+      "source_relation": "The pointwise all-z statement is the finite maximum-z inequality of Theorem 1.3. Source uses integer m; its positive lower bound forces m>0, so the natural cardinal-size formulation covers that mathematical range."
+    }
+  ],
+  "analysis": {
+    "sample_and_mean": "The actual probability originates in uniform fixed-size subset counts, transported by the proved balanced-partition sampling law. A mean is exactly reciprocal finite sample cardinality times a finite sum. Empty means are defined as zero, and Nonempty is required where mean_const is used. The final actual partition space is proved nonempty from feasible balanced sizes.",
+    "conditional_reductions_remain_conditional": "ZModExpectedLayers explicitly labels the generic hsmall event-bound lemmas as conditional. ZModBalancedExpectedLayers instantiates each hsmall with outside_smallEnergy_probability_le from the independently reviewed actual partition-concentration module. No generic hypothesis is elevated into an assumed unconditional theorem.",
+    "original_range_discharges_auxiliary_hypotheses": "With n>=2 and 2^24 log n <= m <= n/(1000 log n), the imported numerical theorems prove m>0, 4m<=n, m<=n, m>=2^24, and n>=2^26. The n>=10, m>=2000^2, and m>=2^22 side conditions are therefore consequences, not extra restrictions in the final theorem.",
+    "mass_error": "Finite Fubini and an exceptional-frequency split give p/n^9 + |B_(2000t)\\{0}|. The factor p safely bounds the actual number p-1 of nontrivial frequencies. This is a union/mean bound with no independence assertion.",
+    "trivial_frequency": "Zero belongs to B_s for s>0 and has zero partition energy. Removing zero subtracts exactly one from the spectral cardinal bound. The low band contributes at most one separately. Every positive dyadic band excludes zero, so the trivial frequency is not counted a second time.",
+    "spectral_range_and_coefficient": "Applying Lemma 3.4 at s=2000t requires 2000t<=m/2000, hence t<=m/2000^2. Its nontrivial-frequency term is at most 200p sqrt(2000t)/(n sqrt m). The code proves sqrt(2000)<=45, bounding the coefficient by 9000; p/n^9 contributes at most one more unit for 1<=t, 1<=m<=n. Thus 9001 is safely weakened to 10000.",
+    "bands_and_finite_upper_cutoff": "lowBand is energy<1. dyadicBand k is 2^k<=energy<2^(k+1). Actual energy is nonnegative and at most m, while m<2^(Nat.log 2 m+1); hence the finite range k=0,...,floor(log2 m) covers every non-low energy without a dropped endpoint.",
+    "low_expected_card": "At t=1, the nontrivial low band is included in energy<2, giving expectedLowCard<=1+10000p/(n sqrt m). The source range implies m>=2000^2, so the required spectral cutoff is valid.",
+    "small_range": "smallLayerRange m is range(Nat.log 2 m - 22 + 1). In the actual source range Nat.log 2 m>=22, so its final index is floor(log2 m)-22, inclusive. Every such 2^k<=m/2^22<=m/2000^2 because 2^22=4194304>4000000=2000^2.",
+    "small_sum": "The weighted term sqrt(2^k)exp(-2^k) is bounded by exp(k/2-2^k), using 2<=exp(1). The proved universal finite series is <=2. Multiplication by the expected-layer coefficient 10000p/(n sqrt m) gives 20000p/(n sqrt m).",
+    "large_range": "largeLayerRange is the exact finite complement of smallLayerRange in range(Nat.log 2 m+1), not an assumed count of terms. Its cardinality is at most 22; in the source regime the first high index is floor(log2 m)-21. From m<2^(floor(log2 m)+1), each high 2^k>=m/2^22. Thus the sum of high exponential weights is <=22exp(-m/2^22).",
+    "high_mass_and_error": "Every expected layer cardinality is <=p. The original lower restriction m>=2^24logn gives exp(-m/2^22)<=exp(-4logn)=n^-4. High expected contribution is therefore <=22p/n^4, and the outer Fourier factor1/p leaves22/n^4.",
+    "tail_absorption": "From n>=1 and 1<=m<=n, sqrt(m)<=m<=n, so n sqrt(m)<=n^2<=n^4. Hence22/n^4<=22/(n sqrt m).",
+    "final_scalar_accounting": "The outer factor1/p multiplies 1+10000p/(n sqrt m)+20000p/(n sqrt m)+22p/n^4. Since primality supplies p!=0, this is1/p+30000/(n sqrt m)+22/n^4, then <=1/p+30022/(n sqrt m). Finally30022<=2^24. All denominators used for cancellation or monotonicity are proved positive/nonzero in their actual range.",
+    "absolute_constant_and_facade": "The single constant C=2^24 is used simultaneously in the lower sample restriction and the resulting error term. It is quantified before q, S, k, z. The prime-only facade eliminates the formerly redundant caller-provided NeZero instance; no analytical premise, probability-law field, or concentration assumption occurs in the final existential theorem.",
+    "no_global_rearrangement_claim": "This closes the source-range subset-sum anti-concentration statement of Theorem1.3 in the reviewed mathematical construction, subject to the separate root proof acceptance checks. It does not itself close Corollary1.4, nested-chain estimates, Section5 failure probabilities, or the rearrangement theorem."
+  },
+  "source_typo_context": {
+    "prior_record": ".noeaaeue/receipts/partition-exposure-concentration/independent-review.json",
+    "summary": "The earlier concentration review retains the independent analysis of265 versus256 in Lemma3.2 and stale B_(32t) prose versus the stated B_(2000t) argument. Neither issue changes these final-layer constants."
+  },
+  "verification_scope": {
+    "kind": "Manual mathematical/source-correspondence review of the exact frozen files",
+    "native_compilation_run_by_reviewer_for_this_review": false,
+    "owned_declaration_axiom_audit_run_by_reviewer_for_this_review": false,
+    "root_reported_native_status": "Both final wrapper sources were reported frozen and green before this review.",
+    "acceptance_boundary": "This review JSON supplies no kernel certificate or axiom-audit result. Root independently runs and source-binds fresh dependency-closure trust=0/fatal-warning and owned-declaration audit checks. Those receipts, not this prose, establish proof acceptance."
+  },
+  "findings": [],
+  "limitations": [
+    "Valid only for the exact two target hashes; changed bytes require a new review or explicit reconciliation.",
+    "The earlier concentration review was not rewritten.",
+    "No source, aggregate import, global metadata, Git state, or native job was changed or started by this review."
+  ]
+}

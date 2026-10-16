@@ -1,0 +1,1730 @@
+{
+  "active_public_library_count": 445,
+  "candidate_sources": [
+    {
+      "bytes": 2148,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Algebra/Ring/FourTermDecomposition.lean",
+      "sha256": "e69853907b8b7b59e636a276350d1aaa32fda04d861cfee72ed537b7260994fa",
+      "source_role": "library"
+    },
+    {
+      "bytes": 2520,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Analysis/Asymptotics/DyadicNormBudget.lean",
+      "sha256": "1519cb3a91b1b2dbeca864df8aabeeab97391f5f009695c9fe94660850db1d70",
+      "source_role": "library"
+    },
+    {
+      "bytes": 4849,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Analysis/Asymptotics/LogarithmicGrowth.lean",
+      "sha256": "53a83b8fd673e27010efc1ae4b424cdc57c905928807f7838bd83ebc1339b951",
+      "source_role": "library"
+    },
+    {
+      "bytes": 2216,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Analysis/Asymptotics/SquareRootResidualIteration.lean",
+      "sha256": "a253a15a623f68929c5ee35fa49a345f5d9567d5c070672bfd55634a0085c339",
+      "source_role": "library"
+    },
+    {
+      "bytes": 7803,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Analysis/Asymptotics/SublinearDyadic.lean",
+      "sha256": "691d520273705124e162a7531ced5f64d7fc820e392531af2d9c89b3c0f483e1",
+      "source_role": "library"
+    },
+    {
+      "bytes": 3585,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Analysis/Complex/AnalyticLinearODE.lean",
+      "sha256": "eddc8024adb64523cc82d4b2ca3faeda5df307a2773be46e2a3b3c14f6f095e1",
+      "source_role": "library"
+    },
+    {
+      "bytes": 3424,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Analysis/FiniteSum/DyadicVariance.lean",
+      "sha256": "808e83bbf7c2e59761ce7d33a8e7590bb55ea1eac904d6592ebd52cc9a6b908d",
+      "source_role": "library"
+    },
+    {
+      "bytes": 6099,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Analysis/FiniteSum/TentReadout.lean",
+      "sha256": "64a994d255a61c066668617cc5fe8eab537fafc8020ed670903a849224db0cc8",
+      "source_role": "library"
+    },
+    {
+      "bytes": 2199,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Analysis/FiniteSum/ThresholdEnergy.lean",
+      "sha256": "adb69ebd667b39325b56466cae3ab95f0ad7d1e85ada727563ca0f084925baa0",
+      "source_role": "library"
+    },
+    {
+      "bytes": 2096,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Analysis/FiniteSum/WeightedCellRefinement.lean",
+      "sha256": "07050954f0596fd584507403dc63ca4dc720621a7568c1afe98d2d1ae9c1e8d5",
+      "source_role": "library"
+    },
+    {
+      "bytes": 2948,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Analysis/Fourier/PrimePhaseLargeValueAdapter.lean",
+      "sha256": "a6065f60c26c53dfe8272160e458a23175e37254955f4520fd772d102491db04",
+      "source_role": "library"
+    },
+    {
+      "bytes": 6063,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Analysis/GreenKernel/TailAugmentation.lean",
+      "sha256": "77e9302d6a480d5fc1ca8b296cb1cdf723dd48ab3f350df8b13c7a19fe886758",
+      "source_role": "library"
+    },
+    {
+      "bytes": 6232,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Analysis/GreenKernel/UnitInterval.lean",
+      "sha256": "a350819dd8061b5e0074d64a65c74f58e8a53eca6e3886473f6f9ce1d32a1b47",
+      "source_role": "library"
+    },
+    {
+      "bytes": 4021,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Analysis/Inequalities/AdaptiveResidualBudget.lean",
+      "sha256": "e21b6c72ba4b0126e766fc8020d8e94808163169801a1bfe3a96694d8b5d62c8",
+      "source_role": "library"
+    },
+    {
+      "bytes": 3321,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Analysis/Inequalities/CenteredCubicMoment.lean",
+      "sha256": "195753a942478d224f52fdaa7db3788ce3c1967bb6bca904deccd092c47b069b",
+      "source_role": "library"
+    },
+    {
+      "bytes": 3517,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Analysis/Inequalities/ResidualEnclosure.lean",
+      "sha256": "09575536679365a2794ed4ef91b343b2ada6e4422ecf776af446b39f3ea5c1cb",
+      "source_role": "library"
+    },
+    {
+      "bytes": 3576,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Analysis/Inequalities/ResidualGrowthComparison.lean",
+      "sha256": "fc3a8cf0752f06279a8c50eb99ac57ef4927d671c74f8a327743eb4bc918b093",
+      "source_role": "library"
+    },
+    {
+      "bytes": 1807,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Analysis/Inequalities/SquaredNormBudget.lean",
+      "sha256": "c3c8fb5dba0d454a8dfbefef0ac1150d6d6386f74133c29df3c7c55807f943c5",
+      "source_role": "library"
+    },
+    {
+      "bytes": 2272,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Analysis/Inequalities/SquaredNormErrorBounds.lean",
+      "sha256": "ea51c377624d1b0da96614afba1daeab04bfec93dba1e431d9008fd4c2adebb0",
+      "source_role": "library"
+    },
+    {
+      "bytes": 1751,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Analysis/Inequalities/SquaredSumBounds.lean",
+      "sha256": "4ed5ec1a5413cbc1c6ca3c18dd4dac4d0e6f6b5e2de64d9eb108f6931c0ad2b1",
+      "source_role": "library"
+    },
+    {
+      "bytes": 3737,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Analysis/Inequalities/TriangularBlock.lean",
+      "sha256": "fe4492db02f30138e1c1a3749bd14871cb8921170002d7cd064ac868fe3faaab",
+      "source_role": "library"
+    },
+    {
+      "bytes": 1632,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Analysis/Inequalities/TwoHeightEnclosures.lean",
+      "sha256": "6c7c40166071a4605851b57099c8a309255de07c4fe9cdda9be2909921d6e11a",
+      "source_role": "library"
+    },
+    {
+      "bytes": 1267,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Analysis/InnerProductSpace/HankelGramBounds.lean",
+      "sha256": "ce7f35b71eb36e8ca6ff4716eeb180b8f18b7e9910027f25b7ad3045d6b6ed2a",
+      "source_role": "library"
+    },
+    {
+      "bytes": 5104,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Analysis/InnerProductSpace/SignedWindowRootBounds.lean",
+      "sha256": "39113694cd9cdce637b560a185dd8b668a29183eca4c256ecb7e80fe0d53f773",
+      "source_role": "library"
+    },
+    {
+      "bytes": 4419,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Analysis/InnerProductSpace/VariationalResidual.lean",
+      "sha256": "e76398f8db180452181bf7ba9bce09d119a283f77e0b7d66498dedc3734ee4da",
+      "source_role": "library"
+    },
+    {
+      "bytes": 6003,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Analysis/Integration/AffineWeightedTransport.lean",
+      "sha256": "ff742b59f72507c69699982a49d7c7054e1b5cda3026c634880b6b0ee2c75505",
+      "source_role": "library"
+    },
+    {
+      "bytes": 3061,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Analysis/Integration/QuadraticReadoutBound.lean",
+      "sha256": "bfb5a21fb819cf7910a3ab20813de65f2c94aa18db572c69bd5ea6982d8a49b9",
+      "source_role": "library"
+    },
+    {
+      "bytes": 4146,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Analysis/Integration/QuadraticRootTransport.lean",
+      "sha256": "25978172fcf7574cd9e243862f2f9d15a4d7a199d6dcdfae96b53816af2e5ff3",
+      "source_role": "library"
+    },
+    {
+      "bytes": 3335,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Analysis/Integration/UnitIntervalPrimitives.lean",
+      "sha256": "d81b4b8bacf39180223da4c3bb088218b452fd63661918f4388ad495e0fd6ef0",
+      "source_role": "library"
+    },
+    {
+      "bytes": 3078,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Analysis/MellinTransform/DyadicBounds.lean",
+      "sha256": "67b1b0c7cdb014f0c4d5ed7b92d301f754c59b1afa815e139defd11a0121d576",
+      "source_role": "library"
+    },
+    {
+      "bytes": 6046,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Analysis/MellinTransform/DyadicIntegralSeries.lean",
+      "sha256": "94f0aa0a2ecaa8a0d4e2cb8969bf61affa72ecd0e13bb5be158f992f51f8ca9c",
+      "source_role": "library"
+    },
+    {
+      "bytes": 4912,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Analysis/MellinTransform/PositiveCoordinates.lean",
+      "sha256": "2a71d3ea3025e83e37926372363f217fa3f28388a9faec80fbed48f89953f9e9",
+      "source_role": "library"
+    },
+    {
+      "bytes": 4878,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Analysis/NormedSpace/IntertwiningResidual.lean",
+      "sha256": "c5f38a7d49418521ea9dd1dd69bd2a3745d6567fdab028918f38a828159471f5",
+      "source_role": "library"
+    },
+    {
+      "bytes": 2838,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Analysis/NormedSpace/NormTransport.lean",
+      "sha256": "365c9cab254696f5d45c61ac9de36bffa59a09e7e8a5b35bba407b119890d43b",
+      "source_role": "library"
+    },
+    {
+      "bytes": 3371,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Analysis/NormedSpace/SimilarityReconstruction.lean",
+      "sha256": "aaca478b1641a7bb91cff493392c4c89373a972229f08fff77e6542670a7be8a",
+      "source_role": "library"
+    },
+    {
+      "bytes": 1326,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Analysis/Resolvent/ScreenAlgebra.lean",
+      "sha256": "293f37a0b458b2e3d251ba5f9fa32efa6aa86be34eea9d582557dde5d2e40a34",
+      "source_role": "library"
+    },
+    {
+      "bytes": 2271,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Analysis/Resolvent/ScreenBudget.lean",
+      "sha256": "65200686628615712003cf8080096fde8eff270e44388b1c5bd709cfe6c0b941",
+      "source_role": "library"
+    },
+    {
+      "bytes": 6094,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Analysis/Series/DyadicPartition.lean",
+      "sha256": "13f0a2cffb9ec0097901b0d2d53a2d068312f5f81fb6465c9b36929b368aca98",
+      "source_role": "library"
+    },
+    {
+      "bytes": 1618,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Analysis/Spectral/LowMassSpecifications.lean",
+      "sha256": "bbda346e2dc144feb2cba6ad8c10bb21df37f660796c0a67bdd153ad9d45120f",
+      "source_role": "library"
+    },
+    {
+      "bytes": 3547,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Analysis/Spectral/TwoHeightMoments.lean",
+      "sha256": "efcf061ab6c72cae3050b5161162e29eafb7785586c25d08af1f10880e74251d",
+      "source_role": "library"
+    },
+    {
+      "bytes": 530,
+      "classification_reason": "pending-validation-consumer-of-candidate-source",
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixReferenceMissingSupport.lean",
+      "sha256": "a81f4b50114fcd35951a8ed8ee1ccf0a706bc26b3a73d6935d83f8867b826f2c",
+      "source_role": "negative-control"
+    },
+    {
+      "bytes": 7784,
+      "classification_reason": "pending-validation-consumer-of-candidate-source",
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableReferenceTransport.lean",
+      "sha256": "092678d16170cff8e60e5b1461c71aea404b4a8d93731f4e001367992bf96e26",
+      "source_role": "positive-check"
+    },
+    {
+      "bytes": 10562,
+      "classification_reason": "pending-library-source-outside-public-entrypoint-closure",
+      "path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableReferenceTransport.lean",
+      "sha256": "a7600c33972405a31f6495b03789f9473cd914eb428d9a5f94c734f528e71d0c",
+      "source_role": "library"
+    },
+    {
+      "bytes": 4246,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/LinearAlgebra/Matrix/ToeplitzHankel.lean",
+      "sha256": "dc13cd01f4030709cff26fe42a8952e417036ca231de8f12278063ecbeb7b608",
+      "source_role": "library"
+    },
+    {
+      "bytes": 2445,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/LinearAlgebra/QuadraticForm/BinaryFormIdentities.lean",
+      "sha256": "58755ef410386de60b0802c2e9de33325431c80c0e13ce99f54a84cf2671b350",
+      "source_role": "library"
+    },
+    {
+      "bytes": 3209,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/LinearAlgebra/QuadraticForm/OrderedTransport.lean",
+      "sha256": "b646f1c136ee045af1f8e7967922252be019d76299c2a70a0cdb9f93819f1770",
+      "source_role": "library"
+    },
+    {
+      "bytes": 2740,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Logic/Classification/Catalogue.lean",
+      "sha256": "f9ff182c00c1f337f984fe925fe52b1fd226bbb925eb52e2fa2c546f481db7a9",
+      "source_role": "library"
+    },
+    {
+      "bytes": 2828,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Logic/Classification/Provenance.lean",
+      "sha256": "b2720293dfce970de023adf3508ab915210dae37a02359d2b62c82c5a2813028",
+      "source_role": "library"
+    },
+    {
+      "bytes": 4876,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Logic/Classification/Types.lean",
+      "sha256": "3024e899ffee5956c713f8931780ef87e4c2c010d87bf8c291588e01e447f203",
+      "source_role": "library"
+    },
+    {
+      "bytes": 3411,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/MeasureTheory/Integral/Centering.lean",
+      "sha256": "3f1730d3662a3bfe760f1444e78a4708e2658c0e0ca8dc2c143d8e346f62d1b7",
+      "source_role": "library"
+    },
+    {
+      "bytes": 3428,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/NumberTheory/BinaryDigits/Carry.lean",
+      "sha256": "04b026b3c2a9e39240e699394836881b1b4c9207f808413706bf0ec619e4873d",
+      "source_role": "library"
+    },
+    {
+      "bytes": 796,
+      "classification_reason": "pending-validation-consumer-of-candidate-source",
+      "path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Negative/ThirdCyclotomicCharacterZeroCube.lean",
+      "sha256": "7e423a5a2cb5a9f6c78740f357fc1a41b832c01545e4a6e87ada20f8ccfb8242",
+      "source_role": "negative-control"
+    },
+    {
+      "bytes": 3936,
+      "classification_reason": "pending-validation-consumer-of-candidate-source",
+      "path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Positive/ThirdCyclotomicCharacters.lean",
+      "sha256": "4832da80997b32be46ceb8ba498e86bb873a7e6111d9f2e70ee137211f0c4eb0",
+      "source_role": "positive-check"
+    },
+    {
+      "bytes": 9264,
+      "classification_reason": "pending-library-source-outside-public-entrypoint-closure",
+      "path": "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicCharacters.lean",
+      "sha256": "c595e55f46838683758ea9c66379968ac75a6f86ddfb5dc099c302f9d497a051",
+      "source_role": "library"
+    },
+    {
+      "bytes": 1931,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/NumberTheory/Powers/OctaveSeparation.lean",
+      "sha256": "a6a837dc54098ab652658d315940a92791f59e3de00a8569c2f5c3d3e9ce0eec",
+      "source_role": "library"
+    },
+    {
+      "bytes": 8407,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/NumberTheory/VonMangoldt/CenteredReadout.lean",
+      "sha256": "c897e7cc0f50fdbc845268d3dd8f4477c9f0853c77049070dc9136897080ed16",
+      "source_role": "library"
+    },
+    {
+      "bytes": 7882,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/NumberTheory/VonMangoldt/ComplexReadout.lean",
+      "sha256": "f53e4cf13fcd6055e4b52f3dee6489a554f94a41bb198a94702ff169f3d48a41",
+      "source_role": "library"
+    },
+    {
+      "bytes": 9140,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/NumberTheory/VonMangoldt/DyadicDiscrepancy.lean",
+      "sha256": "3d0bc4e610a569df0974994387d3bb2735d6228c5ad7208101011d0a58f30d4a",
+      "source_role": "library"
+    },
+    {
+      "bytes": 6324,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/NumberTheory/VonMangoldt/DyadicEulerIdentification.lean",
+      "sha256": "e5c2d5418af1160ca57f8eefa08208e5858670a9c5e027f314bfea85bb00a97e",
+      "source_role": "library"
+    },
+    {
+      "bytes": 8354,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/NumberTheory/VonMangoldt/DyadicMellinConvergence.lean",
+      "sha256": "b3a3b57b67110946d7ab659576941c25476f3cad9b79d6fbb95fe73e1f601569",
+      "source_role": "library"
+    },
+    {
+      "bytes": 7916,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/NumberTheory/VonMangoldt/GreenEnergyFormula.lean",
+      "sha256": "4419ce2bf000598812fca4bd80fe13c5c6ef1669aa6f42544d1b45d4eb13cb89",
+      "source_role": "library"
+    },
+    {
+      "bytes": 6901,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/NumberTheory/VonMangoldt/LatticeCellSource.lean",
+      "sha256": "0675f40528c05dc80d17e2b6c83e6d70d477498bd2664f81319121d27a36514c",
+      "source_role": "library"
+    },
+    {
+      "bytes": 4576,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/NumberTheory/VonMangoldt/LatticeGreenReconstruction.lean",
+      "sha256": "3f3b6c743ba63dfdae3df3c232b674fb3129e4a8e90e8184eeecb7c9af506800",
+      "source_role": "library"
+    },
+    {
+      "bytes": 5126,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/NumberTheory/VonMangoldt/MellinBlockHolomorphy.lean",
+      "sha256": "c6c6edbd96f07955ce2645a6de04dc8a1f85bd7d4dc6c0ed138df2c64a891e13",
+      "source_role": "library"
+    },
+    {
+      "bytes": 9437,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/NumberTheory/VonMangoldt/MellinReadout.lean",
+      "sha256": "b50e900b5967725cbf95b2ecf1383fae76d7d2324ea95461c82cdbf9985de767",
+      "source_role": "library"
+    },
+    {
+      "bytes": 9933,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/NumberTheory/VonMangoldt/PrimeTailReturn.lean",
+      "sha256": "62fc0000ad7048e10498ba326b08bb26218cf1cac9a5d20ffceb2bb4f2e1897e",
+      "source_role": "library"
+    },
+    {
+      "bytes": 5164,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/NumberTheory/Zeta/CompletedQuotientSource.lean",
+      "sha256": "1224285c3acef62e31b25549ab5797182b7206b5dbb647f4997707a3a3e8d0be",
+      "source_role": "library"
+    },
+    {
+      "bytes": 2004,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/NumberTheory/Zeta/DyadicGreenReturn.lean",
+      "sha256": "5db21792bc773ef43c201bce6ae57d327e198bd222f4cb12d7406b42348ec002",
+      "source_role": "library"
+    },
+    {
+      "bytes": 2772,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/NumberTheory/Zeta/DyadicGreenSpecifications.lean",
+      "sha256": "2f27cfa95efbd56bdc757a17f78bc42c0691f2b7e04fc4a5611f1ceffae6d359",
+      "source_role": "library"
+    },
+    {
+      "bytes": 2610,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/NumberTheory/Zeta/GreenMellinContinuation.lean",
+      "sha256": "bd4bfd6be906b7ed36601ac806639edddc9ce465dada76be39f8dae1ec1af30a",
+      "source_role": "library"
+    },
+    {
+      "bytes": 5168,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/NumberTheory/Zeta/LogDerivativeZeroExclusion.lean",
+      "sha256": "3708bc8982a4ce18b3b9886f730c2f7fdbf3cfab6e63e8b74772e48de314c79a",
+      "source_role": "library"
+    },
+    {
+      "bytes": 7444,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/NumberTheory/Zeta/PoleRemovedSource.lean",
+      "sha256": "11b5064089b0dcb8782903f4108a0452b28208fafecbc26e35e1f800471ae38a",
+      "source_role": "library"
+    },
+    {
+      "bytes": 5724,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Order/Taxonomy/Address.lean",
+      "sha256": "aae54480d327193e1d68676baa351623373861257fed59accf0ad328a8c2ad2b",
+      "source_role": "library"
+    },
+    {
+      "bytes": 5322,
+      "classification_reason": "historical-candidate-membership-retained",
+      "path": "GRWTSK/Order/Taxonomy/Core.lean",
+      "sha256": "2de1811f8f126307216df30e5e3578b117acd305ca3039725f18f8bcce696497",
+      "source_role": "library"
+    }
+  ],
+  "deleted_tracked_paths": [],
+  "entrypoint": {
+    "bytes": 26214,
+    "path": "GRWTSK.lean",
+    "physical_role": "library",
+    "qualified_role_alias": null,
+    "sha256": "781a2e57e7856dcad358955086c1acfdaefa865835f3f1c364ac4ce49ca6ff33",
+    "source_role": "library"
+  },
+  "historical_findings": [
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "8484616dda2d4290a16aa53d1515a87ace9a4891f70006a4885069e81308e883",
+      "observed_sha256": "4291db9cf5619fe2239e65b919d4da42e83fcfec03aa63706aa5867725f08395",
+      "path": "GRWTSK/Algebra/BigOperators/OrderedSquare.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "6e51c5d0f986b389b5acdf8cca035840e227756ddc11d874b9faa41270d9a519",
+      "observed_sha256": "ba3c0a4ddd3c137fdd803d4ba8aae2c1f42fb373a64e5e7bab797ab44b8dfbee",
+      "path": "GRWTSK/Algebra/BigOperators/QuadraticCounterexample.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "97997c1246d32731c34a6decf10d3cb4a90d0c28281e174ab28fd4abe4c6574d",
+      "observed_sha256": "dee4c3dc356426d3fdce86b71aa3e5c93e58597fd688381c38d73d80cc23e300",
+      "path": "GRWTSK/Algebra/OrderedProduct.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "ea88cdfe52c5a11bf5f1e4a49e34988e2e735dd5b2718352d1187fe3677c8657",
+      "observed_sha256": "bf10243268eb6ff07cefac867558b9c6df81ae9bdb856ba28e1bdf7cb3049421",
+      "path": "GRWTSK/Algebra/OrderedProduct/Conjugation/Checks/Negative/StrongerGroup.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "0b5714603784925a53154ae865dd3fc67ad6371420d06de4a3d9197241ba49f9",
+      "observed_sha256": "3f78dc1548f328c25d41de19e4c2409fdb4d90a3596484109ca770148df00e76",
+      "path": "GRWTSK/Analysis/Asymptotics/DisjointPrimeChainBounds.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "eabe820130ad0d2208a3ba0bc29b4db99d2d674da9333730b10e2d74b092dd94",
+      "observed_sha256": "e8456ac773c17b124142797d8eb0c6c9ed83fe462606844ee3f603ab79b3327b",
+      "path": "GRWTSK/Analysis/Asymptotics/ExponentialRecurrence.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "25a91df9c806c829cee4baf82958ec93608529e3262dab3a5d384c3a62e656ff",
+      "observed_sha256": "7a689a4582ed22712d4c96e5dda26cb51ef3fe566c47e7a57cc7f305ac13835c",
+      "path": "GRWTSK/Analysis/Asymptotics/FixedWidthEnergyBoundEquivalence.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-intake-source-hash-stale",
+      "historical_sha256": "ac47628f813be05ae73bb1d7dae782deb5189c73f6609de3c089c9e794464b1d",
+      "observed_sha256": "53a83b8fd673e27010efc1ae4b424cdc57c905928807f7838bd83ebc1339b951",
+      "path": "GRWTSK/Analysis/Asymptotics/LogarithmicGrowth.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "ac47628f813be05ae73bb1d7dae782deb5189c73f6609de3c089c9e794464b1d",
+      "observed_sha256": "53a83b8fd673e27010efc1ae4b424cdc57c905928807f7838bd83ebc1339b951",
+      "path": "GRWTSK/Analysis/Asymptotics/LogarithmicGrowth.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "a51c1fdc9d749d14ead707a7e309eea2fe4dcdc1f06ef1b1169ceb4c3c001c07",
+      "observed_sha256": "7d4c98ea7a03d5a792c8fa1ad83e9f33c16233a5dcad548c18d11ae8d5dee3a6",
+      "path": "GRWTSK/Analysis/Asymptotics/MassWeightedRecurrence.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "815688411098d0d3f43e3f49c4fdd3614521f4399dc2729fbec2d447cdc8eed5",
+      "observed_sha256": "5322a54c90dfc22dbf539de7744ef46c14351c3351269895617d06ea20182545",
+      "path": "GRWTSK/Analysis/Asymptotics/PolynomialClosure.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "7f04746894b0774969d506fde6c8287056361051f29196c8dc23c2f38932b6e6",
+      "observed_sha256": "532d46ae618acc957bdb799be09f19e04f936d23b344dd0e0e0cf743c105372f",
+      "path": "GRWTSK/Analysis/Asymptotics/PolynomialErrorBound.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "88096887fa741b898bdb12e1f563e166376a3301847098db6c9f4d10065edec2",
+      "observed_sha256": "a0fd4a85568bcfdcd135b7f82c387dd5270192b2fbfd55a8c062748585212a72",
+      "path": "GRWTSK/Analysis/Asymptotics/PolynomialSubexponential.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "a46ec99c950a5ee5b28665559da67a75cc5c0012cf8321b4e68e8d93f13e34b2",
+      "observed_sha256": "02afc688f9ff363b87360414d8c86839f21107029a9718e0a9d9532cc6cc48bc",
+      "path": "GRWTSK/Analysis/Asymptotics/PrimeMassPotentialBounds.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "8106668841df8e93d47ccd14db6be61bef876c25b5c13120c5f81e6a01e7616e",
+      "observed_sha256": "27d2c459a3f3ca5593ac0802559d87c267242b4e019ed5e4c03ee401ceaf233f",
+      "path": "GRWTSK/Analysis/Asymptotics/SelectedPrimeChainBounds.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "3c61d2cd7fced2420d6d912a88a1e5d399c2f033aa997a6ae5edf710fea40180",
+      "observed_sha256": "b704ea86c80c4e4ec02c6ba4b7d8d64579813806f748b2a6154641ac789ca188",
+      "path": "GRWTSK/Analysis/Asymptotics/SignedEnergyDecomposition.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-intake-source-hash-stale",
+      "historical_sha256": "edc74a7402e265fce12c127acfee33549f24f0b17f7733957227da7e12b4a5b5",
+      "observed_sha256": "691d520273705124e162a7531ced5f64d7fc820e392531af2d9c89b3c0f483e1",
+      "path": "GRWTSK/Analysis/Asymptotics/SublinearDyadic.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "edc74a7402e265fce12c127acfee33549f24f0b17f7733957227da7e12b4a5b5",
+      "observed_sha256": "691d520273705124e162a7531ced5f64d7fc820e392531af2d9c89b3c0f483e1",
+      "path": "GRWTSK/Analysis/Asymptotics/SublinearDyadic.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "9ea34ceb8d8921f68357f4856d4e5af86ee7b57e9f537466f48f473c66a6a617",
+      "observed_sha256": "e3498aaebc64e90fe4fb105bd1a9446966dea38e9fef76d2e53ab53c63e881aa",
+      "path": "GRWTSK/Analysis/Calculus/LogarithmicResponseDerivatives.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "absent-from-historical-source-catalog",
+      "path": "GRWTSK/Analysis/Complex/CriticalReflection.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "absent-from-historical-source-catalog",
+      "path": "GRWTSK/Analysis/Complex/PositiveHalfPlane.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "absent-from-historical-source-catalog",
+      "path": "GRWTSK/Analysis/Complex/ReflectionCounterexamples.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "f4a132fe1e3cd1c88be8cf3af8ff815303b413488f30e7e4c641b63d1966ef67",
+      "observed_sha256": "28809c1aba0124e3da4b6fd8171cf98f941083492f3f6046bdacab78860154e5",
+      "path": "GRWTSK/Analysis/Energy/Checks/Declarations.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "absent-from-historical-source-catalog",
+      "path": "GRWTSK/Analysis/Fourier/Checks/Negative/SubsetAntiConcentrationMissingPrime.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "absent-from-historical-source-catalog",
+      "path": "GRWTSK/Analysis/Fourier/Checks/Negative/SubsetAntiConcentrationMissingRange.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "absent-from-historical-source-catalog",
+      "path": "GRWTSK/Analysis/Fourier/Checks/Positive/SubsetAntiConcentration.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "bd741ea9dd1e4efbc8eab2f77574a73c0cd82d85f2a76d604b14f05cd2f09789",
+      "observed_sha256": "f56a64af2b2992777785b2bef7d7130fe59d7393ef437d3a9e92733a19046d9f",
+      "path": "GRWTSK/Analysis/Fourier/IntegerSeries.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "c44554efb9aa02eeb51428f51d11a9205011e4ca0ab7831421433d23096073dc",
+      "observed_sha256": "03c1338056350b76df9ea5a306aa559dc59c8af63175cf39d88574e7363c9daf",
+      "path": "GRWTSK/Analysis/Fourier/Parseval.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "acf0f90e233095c8e4949a4c22e1f67fa68f4d85e0be5cb99bf9fcfbbea671db",
+      "observed_sha256": "568586ca097a0fc94ec0866a627d9cb8c17a7a781ee7849d01c7229f5d44bbc8",
+      "path": "GRWTSK/Analysis/Fourier/WindowCertificates.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "absent-from-historical-source-catalog",
+      "path": "GRWTSK/Analysis/Fourier/ZModBalancedExpectedLayers.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "absent-from-historical-source-catalog",
+      "path": "GRWTSK/Analysis/Fourier/ZModExpectedLayers.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "absent-from-historical-source-catalog",
+      "path": "GRWTSK/Analysis/Fourier/ZModPartitionConcentration.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-intake-source-hash-stale",
+      "historical_sha256": "4985aaaf713d9f57e8300c11d9949be53c1481ece1fc1372340eefc8d9576f39",
+      "observed_sha256": "195753a942478d224f52fdaa7db3788ce3c1967bb6bca904deccd092c47b069b",
+      "path": "GRWTSK/Analysis/Inequalities/CenteredCubicMoment.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "4985aaaf713d9f57e8300c11d9949be53c1481ece1fc1372340eefc8d9576f39",
+      "observed_sha256": "195753a942478d224f52fdaa7db3788ce3c1967bb6bca904deccd092c47b069b",
+      "path": "GRWTSK/Analysis/Inequalities/CenteredCubicMoment.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "748100ebb0ba4440335668ecb96a079d869de82bb7ac2fb7ecb09ca089469a3c",
+      "observed_sha256": "7e3c682ea3ccc9d1f5a65ab762e3edf617f0392379e13319b4a43b90f08df620",
+      "path": "GRWTSK/Analysis/Inequalities/ExponentialDiagonal.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-intake-source-hash-stale",
+      "historical_sha256": "b4903cdec477aa7b55aedd71a94ef691c8532eb56c4abbfa64876b13299343f9",
+      "observed_sha256": "fc3a8cf0752f06279a8c50eb99ac57ef4927d671c74f8a327743eb4bc918b093",
+      "path": "GRWTSK/Analysis/Inequalities/ResidualGrowthComparison.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "b4903cdec477aa7b55aedd71a94ef691c8532eb56c4abbfa64876b13299343f9",
+      "observed_sha256": "fc3a8cf0752f06279a8c50eb99ac57ef4927d671c74f8a327743eb4bc918b093",
+      "path": "GRWTSK/Analysis/Inequalities/ResidualGrowthComparison.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-intake-source-hash-stale",
+      "historical_sha256": "fc912b1408924b2086ad7fbafcf2ddb825d679ac6b41ab7d636250e439bc9331",
+      "observed_sha256": "ce7f35b71eb36e8ca6ff4716eeb180b8f18b7e9910027f25b7ad3045d6b6ed2a",
+      "path": "GRWTSK/Analysis/InnerProductSpace/HankelGramBounds.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "fc912b1408924b2086ad7fbafcf2ddb825d679ac6b41ab7d636250e439bc9331",
+      "observed_sha256": "ce7f35b71eb36e8ca6ff4716eeb180b8f18b7e9910027f25b7ad3045d6b6ed2a",
+      "path": "GRWTSK/Analysis/InnerProductSpace/HankelGramBounds.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "75e3199e58e14248e7fe0a27fef7f5d7bd937bb87810f335ba9ccd91d51289f7",
+      "observed_sha256": "f8ba7ca70373086bfa3546b7a9abe0f8c1cca819ed2a1caf1cf14d985e5afe1c",
+      "path": "GRWTSK/Analysis/InnerProductSpace/LogarithmicCharacterGramBounds.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "c6dc68d94073927ebdd5fc40a56cb413a2f64d23f98cca0509e7e0f694de8e02",
+      "observed_sha256": "b6be5c79d76278d8e6d7de6344ca7d16295a3c98786eca85baf8c8a941b75244",
+      "path": "GRWTSK/Analysis/InnerProductSpace/SignedWindowPacketCertificates.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "489684266026c916754518b2adb3b38223e84c0d7fe4fac36a88d63da5d63031",
+      "observed_sha256": "b776209c813143d71ca300861daa1479868cf04247e032c0365ba1f3be9664b1",
+      "path": "GRWTSK/Analysis/InnerProductSpace/WeightedSchurBounds.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-intake-source-hash-stale",
+      "historical_sha256": "7b8860507ab99bd3d587b7dcbd2e363c3ae9d71beeb2984396f16584c5a20190",
+      "observed_sha256": "25978172fcf7574cd9e243862f2f9d15a4d7a199d6dcdfae96b53816af2e5ff3",
+      "path": "GRWTSK/Analysis/Integration/QuadraticRootTransport.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "7b8860507ab99bd3d587b7dcbd2e363c3ae9d71beeb2984396f16584c5a20190",
+      "observed_sha256": "25978172fcf7574cd9e243862f2f9d15a4d7a199d6dcdfae96b53816af2e5ff3",
+      "path": "GRWTSK/Analysis/Integration/QuadraticRootTransport.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "9b36cbd99be50262b982974d665a0b226495665a5e509f7355ce66a2e08e2f10",
+      "observed_sha256": "fabd0904a86cbd948af89cecb5c904653b15a32b6eabacf37ee9af6e91b5d1bb",
+      "path": "GRWTSK/Analysis/LaplaceTransform/Analytic.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "absent-from-historical-source-catalog",
+      "path": "GRWTSK/Analysis/LaplaceTransform/ExponentialEnergy.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "734530d5f777f1da2c2ad43186afb50db8752c6a0b9a4a4dc756eb0a30d90768",
+      "observed_sha256": "1e8446ad9a20c41417d2b5c1aa91808a691d3f42958f0e7bf569d22ab5d47a71",
+      "path": "GRWTSK/Analysis/LaplaceTransform/ExponentialThreshold.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "cc49938c45c940d7049afdf2aed8f5dde3393da4e9ff301d4bc7ccfaaabc0fe5",
+      "observed_sha256": "eedad665d4fdf36fcdf48280b8b816a4edc09e11725ff17a422bd9e2b003457f",
+      "path": "GRWTSK/Analysis/LaplaceTransform/PolynomialEnergy.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "c4c565cc6f3abf479d904dcac7a337a67f31c3c269445f13b69a0fcf72f7c8a6",
+      "observed_sha256": "9231c577ddca9727b55979be4acc9e1f3dfcf2d599d4fa124f798090200bc20c",
+      "path": "GRWTSK/Analysis/LaplaceTransform/PolynomialEnergyHolomorphy.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "79581bb3cf4ce27f646aa513375e0c51912c0ce57f379f1380114e225f0f5980",
+      "observed_sha256": "f265b44001d2fb74859425c0e10002a8912f64906ce4437594206cd6de808816",
+      "path": "GRWTSK/Analysis/NormedSpace/QuadraticError.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-intake-source-hash-stale",
+      "historical_sha256": "d96af62cc7e58940a0102456fe25fab1fc0e5f8e53998c62a4dc3b608adb603a",
+      "observed_sha256": "aaca478b1641a7bb91cff493392c4c89373a972229f08fff77e6542670a7be8a",
+      "path": "GRWTSK/Analysis/NormedSpace/SimilarityReconstruction.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "d96af62cc7e58940a0102456fe25fab1fc0e5f8e53998c62a4dc3b608adb603a",
+      "observed_sha256": "aaca478b1641a7bb91cff493392c4c89373a972229f08fff77e6542670a7be8a",
+      "path": "GRWTSK/Analysis/NormedSpace/SimilarityReconstruction.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "absent-from-historical-source-catalog",
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixReferenceMissingSupport.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "absent-from-historical-source-catalog",
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableReferenceTransport.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "absent-from-historical-source-catalog",
+      "path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableReferenceTransport.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "absent-from-historical-source-catalog",
+      "path": "GRWTSK/Combinatorics/Sequences/BalancedPartitionTails.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "absent-from-historical-source-catalog",
+      "path": "GRWTSK/Combinatorics/Sequences/ConditionalPartitionExposure.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "absent-from-historical-source-catalog",
+      "path": "GRWTSK/Combinatorics/Sequences/HypergeometricLowerTail.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "absent-from-historical-source-catalog",
+      "path": "GRWTSK/Combinatorics/Sequences/PartitionExposureChecks.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "851cb36b5b9db3a4e2695e4c4164dbca4af83dcc913caebd41160fd4db8f882f",
+      "observed_sha256": "8d07146fa509e71b3e8d70e33714d121c08460ee3519f5aa1f18f1746f11183a",
+      "path": "GRWTSK/Combinatorics/Sequences/QuotaDiscrepancy.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "155e4fd202fb590cbdbdf4cb26100c17e72452418be0497ba37b301f662b3e42",
+      "observed_sha256": "f860b7510a666ff1eda5e091f7a454259bc2f50e05d77a40ce6f4dc7a8bdda0e",
+      "path": "GRWTSK/DynamicalSystems/TransitionSystems/BudgetResetCounterexamples.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "8e33555ed354415b1604c4a7fc192d065fcd87ec4c765f6200faafd633c74d5c",
+      "observed_sha256": "ed4a3641f340c856b6e0d98cbeb99c18f06cc86c64d3d84f306adc1b35849643",
+      "path": "GRWTSK/LinearAlgebra/AlmostMathieu.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "64ebbd43849bfffee9f92d74f271c55a1ffcba28c1b7debcf491a901ddfff67b",
+      "observed_sha256": "cb6e4e4e9d8f1c8c2fd54a906f2274a2eb329a6b9c54499c941ed7378a49e77e",
+      "path": "GRWTSK/LinearAlgebra/CocycleProduct.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "c4fb5fef172e3855ba2d9ed1811246022e07813fbce00ee5341d393fcdb62767",
+      "observed_sha256": "4f411bdb393848c79f0aaa8f48af69f4a7d8b0f620ddcc03991c25eae055b5d5",
+      "path": "GRWTSK/LinearAlgebra/CommonJ.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "absent-from-historical-source-catalog",
+      "path": "GRWTSK/LinearAlgebra/Matrix/HermitianCounterexamples.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-intake-source-hash-stale",
+      "historical_sha256": "e105856287121c529da638f358e523740da965d0c2d5f310a0f115ca3dec2a3a",
+      "observed_sha256": "dc13cd01f4030709cff26fe42a8952e417036ca231de8f12278063ecbeb7b608",
+      "path": "GRWTSK/LinearAlgebra/Matrix/ToeplitzHankel.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "e105856287121c529da638f358e523740da965d0c2d5f310a0f115ca3dec2a3a",
+      "observed_sha256": "dc13cd01f4030709cff26fe42a8952e417036ca231de8f12278063ecbeb7b608",
+      "path": "GRWTSK/LinearAlgebra/Matrix/ToeplitzHankel.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "412246f06dbbe474c57fa268af5751faf5a8315a41d6569d476101b6914aa3f1",
+      "observed_sha256": "60c9febe94a5f6bbd8748983eb9d7e01d74afcc0a0018f6e40a0afa71ab1d21c",
+      "path": "GRWTSK/LinearAlgebra/Schrodinger/SampledPotential.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "4c7935b16a5d47ab1bd6e3184cd06cbb53e504df60531220f475faeaa29c274c",
+      "observed_sha256": "143bb1ba8f29b62fd9ca316ffba17c2848b2cd4c2df55495a4e44b0d99943ff8",
+      "path": "GRWTSK/LinearAlgebra/Schrodinger/Sampling.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "absent-from-historical-source-catalog",
+      "path": "GRWTSK/Logic/Classification/Catalogue.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "absent-from-historical-source-catalog",
+      "path": "GRWTSK/Logic/Classification/Provenance.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "absent-from-historical-source-catalog",
+      "path": "GRWTSK/Logic/Classification/Types.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "6303fc21d6a6642370541d10aa876b9c99db7090e73dc6a28d1ebd2ea4542109",
+      "observed_sha256": "f1963beaae12cbb75bc61c0424a8360612d3fff24257d8e2e0c664896856e045",
+      "path": "GRWTSK/Logic/Counterexamples/Checks/Positive/ComplexSymmetryAndPositivity.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "a6ee772e91591f1e51ad01a4a0ff68df9f2455d4c0c168a660159fb0fd55485f",
+      "observed_sha256": "b3a18d904fddadd6d32f938796b01dcac292d89f639546fa01f4a06006225ac1",
+      "path": "GRWTSK/Logic/FiniteSequences/PrefixCoverage.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "e0237acdafc120a1b4987eac0151b3203b3afe875f95f98b1b6e8236c5ed5f99",
+      "observed_sha256": "31e9b96d15c693779cd07824e154a0fc103c2393a83c196d9d345a5b0b761a06",
+      "path": "GRWTSK/Logic/ProofChecking/Checks/FullAnalyticArithmeticKernel.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "6755adf530da86bdd362fe22a66baf81a088523c1b28bd1da0a49a6eeb41d960",
+      "observed_sha256": "c064193b37039939cee08c887d63f7f1038828dcf9d221a1236777313388f0ad",
+      "path": "GRWTSK/Logic/ProofChecking/Checks/LibraryDeclarations.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "2ef82eba00df6982ba9f693896d77eff68d9cf39e9def13a29cc9c2eb4e26c74",
+      "observed_sha256": "94eb4533f7b97b38b5165b015a16149f01b98fd110978292b0e2e3dbdc2773c3",
+      "path": "GRWTSK/Logic/ProofChecking/Checks/OwnedDeclarationAudit.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "94d601ec9cd8847f098981188362c884cbb09859100636afcd16fc8d5a94c036",
+      "observed_sha256": "67f89567867e679c71048f4d65b2cf971a1ebdf46fa2dfcaebfd7af2c5decc81",
+      "path": "GRWTSK/Logic/ProofEvidence/DirichletResponseStatus.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "0541e9d38715f481c552a5ba764b185a6cba6e70aa1dd9a7dd6df995868d4c26",
+      "observed_sha256": "71dc3cf7eebd7aaaa0e5e9ce31e903943a0f8a4b79cfc6aedbb43ae39eb978cc",
+      "path": "GRWTSK/Logic/ProofEvidence/ProvenanceCertificates.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "d545bfce75731ed2515db0b683d4f3f71ff7e02654f441a182d22313fdfb33ce",
+      "observed_sha256": "f6c5e323ebc3ff7d31a41a4726c974319e42a78739317a043930ae9c9e30dd25",
+      "path": "GRWTSK/MeasureTheory/Integral/FinitePrimeTranslationEnergy.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "fe53414320a78931bf2add8a168544df853ce7bd10b82b2cf257082ceb77e4be",
+      "observed_sha256": "70b9bdd17943fc63ba329431a71a5c9d40bd7bea62726dfb6dcc1e2ac54a1e80",
+      "path": "GRWTSK/NumberTheory/ContinuedFractions/FrequencyRealization.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "3f18269367c2ef839a97591d1d5d36198c6c4c6faff132120f45659c19e94a03",
+      "observed_sha256": "7ee299eed00ef1cf731e1e1b1ea7a507ae8e83d5ea0ed63f0861cf63f0e42f2c",
+      "path": "GRWTSK/NumberTheory/ContinuedFractions/ScheduledDenominators.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "absent-from-historical-source-catalog",
+      "path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Negative/ThirdCyclotomicCharacterZeroCube.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "absent-from-historical-source-catalog",
+      "path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Positive/ThirdCyclotomicCharacters.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "absent-from-historical-source-catalog",
+      "path": "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicCharacters.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "23330ce4bd519083f9fe8e09ecb9aaf6724a614d6b4a576afef395351e27c549",
+      "observed_sha256": "9d753528696a5334da5579167260de117e5dd29582f9834592a037152fc04abb",
+      "path": "GRWTSK/NumberTheory/Moebius/EnergyAbscissa.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "6ca3df98da7021f2a7b0cc7abfaf13ac3e3b72d307b4b592190832991259f145",
+      "observed_sha256": "dbd135701b5915b144681f3c13dea020be6af9a291452abb2e7b63b9cbbe5b68",
+      "path": "GRWTSK/NumberTheory/Moebius/FiniteTranslationProduct.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "c65e5184b9e4354aaa2ddd27a7d61afe5fa69ad8b833436e9269b00eac2bf807",
+      "observed_sha256": "ccfb2193b7f2a101cc751157962427804d3f6cad4692450714ff4115cdb9ad3d",
+      "path": "GRWTSK/NumberTheory/Moebius/LaplaceHolomorphy.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "9799845781d7ee3099471eb974c08c59caddba83dc2f484cedfec7acbc592c44",
+      "observed_sha256": "d5e6f63cb0be0664a10b8ed7b998d38042a200e557cdd5d1e2773aeb50be68aa",
+      "path": "GRWTSK/NumberTheory/Moebius/LogarithmicResponse.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "020042e6753763a9894a6ef63256f9583f72dbc5d114a9fa45c495f7650e716d",
+      "observed_sha256": "f658aa8536cb22225e3995a0250a36933ec6a4bd820ba0908f8650b2463b134c",
+      "path": "GRWTSK/NumberTheory/Moebius/NegativePrimeCorrelation.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "absent-from-historical-source-catalog",
+      "path": "GRWTSK/NumberTheory/Moebius/PolynomialEnergyHolomorphy.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "be96c983badedf9c3bde3787a273165be81163efc130b52d451ae2b51addea1b",
+      "observed_sha256": "f76be07a02a9cae45f5d22fca86fa534d2f31f295858238c0124222ca03e460b",
+      "path": "GRWTSK/NumberTheory/Moebius/PrimeFilterLaplace.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "7059a50c47f5995d13226ebb9d7a198857ca40ce040730f253124cc1d239ae88",
+      "observed_sha256": "1e7d3a2a466f8e13a5de90905fa9ea777e6be60a3ca71d785926e874ccf262d5",
+      "path": "GRWTSK/NumberTheory/Zeta/ReciprocalHolomorphyZeroSymmetry.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "b010585e165a672e7d7c585673dd680cd53f3f6d49fee047804c44e4b075cb99",
+      "observed_sha256": "7e91e4f61bb53b0eb56f68e5c013f2e445628ab536328ac7d42b283e4e4c1b17",
+      "path": "GRWTSK/NumberTheory/Zeta/ResponseBoundZeroConversions.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "0a0a3808d45bfb087b397f85b08a4135cce705cc1f7ad5e51251e4e6abbbd73f",
+      "observed_sha256": "78c427485ac57b60975ecfd6b7f04b54d5caf5bde174e8d1abeb4f8174925633",
+      "path": "GRWTSK/NumberTheory/Zeta/Riemann.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "566d841feede8c779cae5f2cd5d37f7d068468feef2c9f54df588aa9ead31f29",
+      "observed_sha256": "c3add3432f78da936e5122b04f23734f780909513d235f7a7b47a49221bd4afc",
+      "path": "GRWTSK/NumberTheory/Zeta/Riemann/Checks/Declarations.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "084fe442c91faee379c83ad8a7a6af1f4500bd5eb66bbc5f999b160106627af7",
+      "observed_sha256": "46392af85c7bccf563ab162671ebe23edc876748d66c46e93373edeffbfbadf1",
+      "path": "GRWTSK/NumberTheory/Zeta/Riemann/Regularized.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "107f357b8c04afc16e25b8fded6922782d2756959b42f080af839f4db58e9aa0",
+      "observed_sha256": "79f45d7a61819fce066baa26094d480aaf40ce6c46cfd2526b8107f3bf62a8a4",
+      "path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroDefinitions.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "absent-from-historical-source-catalog",
+      "path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroExclusions.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-hash-stale",
+      "historical_sha256": "6f3b74c08ed6538482ce19e90de96784b65a0d54209f65987a4e7ad45f5150ec",
+      "observed_sha256": "44e1e3452c5e94077ac11fe9397dc420503d5c7c005bc1c1105685b015471076",
+      "path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroSymmetry.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "absent-from-historical-source-catalog",
+      "path": "GRWTSK/Order/Taxonomy/Address.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "absent-from-historical-source-catalog",
+      "path": "GRWTSK/Order/Taxonomy/Core.lean"
+    },
+    {
+      "acceptance_inherited": false,
+      "code": "historical-catalog-source-not-present",
+      "path": "GRWTSK/Logic/Counterexamples/ComplexSymmetryAndPositivity.lean"
+    }
+  ],
+  "mathematical_admission": false,
+  "observation_identity": "daa292754c42105febb7dc614d8c9861863d29f8dd608d1b7aead9270d988d39",
+  "public_entrypoint_closure": [
+    "GRWTSK",
+    "GRWTSK.Algebra.BigOperators.OrderedSquare",
+    "GRWTSK.Algebra.BigOperators.QuadraticCounterexample",
+    "GRWTSK.Algebra.MvPolynomial.SquarefreeEulerProduct",
+    "GRWTSK.Algebra.OrderedProduct",
+    "GRWTSK.Algebra.OrderedProductGauge",
+    "GRWTSK.Algebra.Polynomial.ConjugateInterpolation",
+    "GRWTSK.Algebra.Polynomial.ConjugateQuartic",
+    "GRWTSK.Algebra.Polynomial.SignedRootTrace",
+    "GRWTSK.Analysis.Asymptotics.DisjointPrimeChainBounds",
+    "GRWTSK.Analysis.Asymptotics.ExponentialEnergyObstruction",
+    "GRWTSK.Analysis.Asymptotics.ExponentialRecurrence",
+    "GRWTSK.Analysis.Asymptotics.FiniteConvolutionRecurrence",
+    "GRWTSK.Analysis.Asymptotics.FinitePowerSum",
+    "GRWTSK.Analysis.Asymptotics.FinitePrimeChainEnergyBounds",
+    "GRWTSK.Analysis.Asymptotics.FixedWidthEnergyBoundEquivalence",
+    "GRWTSK.Analysis.Asymptotics.MassWeightedRecurrence",
+    "GRWTSK.Analysis.Asymptotics.PolynomialClosure",
+    "GRWTSK.Analysis.Asymptotics.PolynomialErrorBound",
+    "GRWTSK.Analysis.Asymptotics.PolynomialSubexponential",
+    "GRWTSK.Analysis.Asymptotics.PowerWeightedSquareSummability",
+    "GRWTSK.Analysis.Asymptotics.PrimeMassPotentialBounds",
+    "GRWTSK.Analysis.Asymptotics.PrimeSubsetPotentialBounds",
+    "GRWTSK.Analysis.Asymptotics.PrimeTranslationBoundContracts",
+    "GRWTSK.Analysis.Asymptotics.QuadraticKernelEnergyEquivalence",
+    "GRWTSK.Analysis.Asymptotics.SelectedPrimeChainBounds",
+    "GRWTSK.Analysis.Asymptotics.SignedEnergyDecomposition",
+    "GRWTSK.Analysis.Calculus.CompactCutoff",
+    "GRWTSK.Analysis.Calculus.CompactPolynomialDerivatives",
+    "GRWTSK.Analysis.Calculus.CompactProfileBoundaryCounterexamples",
+    "GRWTSK.Analysis.Calculus.CompactProfileDerivativeEnergy",
+    "GRWTSK.Analysis.Calculus.CompactProfileNormalization",
+    "GRWTSK.Analysis.Calculus.EvenLinearDefect",
+    "GRWTSK.Analysis.Calculus.LogarithmicResponseDerivatives",
+    "GRWTSK.Analysis.Calculus.LogarithmicShiftKernelRegularity",
+    "GRWTSK.Analysis.Calculus.PolynomialBumpDerivativeEnergy",
+    "GRWTSK.Analysis.Calculus.PolynomialBumpNormalization",
+    "GRWTSK.Analysis.Calculus.SupportEdgeDifferentiability",
+    "GRWTSK.Analysis.CausalTranslation.ExponentialResponse",
+    "GRWTSK.Analysis.Complex.CriticalReflection",
+    "GRWTSK.Analysis.Complex.PositiveHalfPlane",
+    "GRWTSK.Analysis.Complex.ReflectionCounterexamples",
+    "GRWTSK.Analysis.Complex.VerticalReflection",
+    "GRWTSK.Analysis.Convolution.AutocorrelationDerivativeEnergy",
+    "GRWTSK.Analysis.Convolution.AutocorrelationSecondDerivative",
+    "GRWTSK.Analysis.Convolution.AutocorrelationTranslationEnergy",
+    "GRWTSK.Analysis.Convolution.CompactProfileCorrelation",
+    "GRWTSK.Analysis.Convolution.CompactProfileDifferentialMoments",
+    "GRWTSK.Analysis.Convolution.CompactProfileFifthDerivativeObstruction",
+    "GRWTSK.Analysis.Convolution.CompactProfileFirstPoleMoment",
+    "GRWTSK.Analysis.Convolution.CompactProfileHigherDerivatives",
+    "GRWTSK.Analysis.Convolution.CompactProfileSupportEdge",
+    "GRWTSK.Analysis.Convolution.CompactProfileTailSigns",
+    "GRWTSK.Analysis.Convolution.CompactSupportContact",
+    "GRWTSK.Analysis.Convolution.ExponentialMoments",
+    "GRWTSK.Analysis.Convolution.FiniteTranslateIndependence",
+    "GRWTSK.Analysis.Convolution.FirstMomentConvolution",
+    "GRWTSK.Analysis.Convolution.PolynomialBumpHigherDerivatives",
+    "GRWTSK.Analysis.Convolution.PolynomialBumpRegularity",
+    "GRWTSK.Analysis.DigammaSeries",
+    "GRWTSK.Analysis.Distribution.CompactProfileDilation",
+    "GRWTSK.Analysis.Distribution.WeakSecondDerivativeUniqueness",
+    "GRWTSK.Analysis.ErrorBounds.PartialMapComposition",
+    "GRWTSK.Analysis.FiniteSums.WeightedDegreeComparison",
+    "GRWTSK.Analysis.Fourier.AngularFrequencyParseval",
+    "GRWTSK.Analysis.Fourier.DigammaMultiplier",
+    "GRWTSK.Analysis.Fourier.FiniteAdditiveProjector",
+    "GRWTSK.Analysis.Fourier.FiniteExponentialLayers",
+    "GRWTSK.Analysis.Fourier.FiniteTranslationMultipliers",
+    "GRWTSK.Analysis.Fourier.IntegerSeries",
+    "GRWTSK.Analysis.Fourier.LogarithmicDomain",
+    "GRWTSK.Analysis.Fourier.MoebiusQuadraticReturn",
+    "GRWTSK.Analysis.Fourier.Parseval",
+    "GRWTSK.Analysis.Fourier.PolynomialBumpEstimates",
+    "GRWTSK.Analysis.Fourier.PrimePhaseMultiplierBounds",
+    "GRWTSK.Analysis.Fourier.PrimePhasePacketCertificates",
+    "GRWTSK.Analysis.Fourier.QuadraticKernelTruncation",
+    "GRWTSK.Analysis.Fourier.ReciprocalZetaQuadraticKernel",
+    "GRWTSK.Analysis.Fourier.SchwartzMoments",
+    "GRWTSK.Analysis.Fourier.SignedPrimePhaseExamples",
+    "GRWTSK.Analysis.Fourier.WindowCertificates",
+    "GRWTSK.Analysis.Fourier.ZModBalancedExpectedLayers",
+    "GRWTSK.Analysis.Fourier.ZModBalancedPartition",
+    "GRWTSK.Analysis.Fourier.ZModCharacterEnergy",
+    "GRWTSK.Analysis.Fourier.ZModConcentratedFrequencies",
+    "GRWTSK.Analysis.Fourier.ZModExpectedLayers",
+    "GRWTSK.Analysis.Fourier.ZModIndependentSelection",
+    "GRWTSK.Analysis.Fourier.ZModPartitionConcentration",
+    "GRWTSK.Analysis.Fourier.ZModPartitionEnergy",
+    "GRWTSK.Analysis.Fourier.ZModSmallEnergySets",
+    "GRWTSK.Analysis.Fourier.ZModSmallEnergySpectrum",
+    "GRWTSK.Analysis.Fourier.ZModSubsetSum",
+    "GRWTSK.Analysis.Fourier.ZModSubsetSumCompletion",
+    "GRWTSK.Analysis.Inequalities.CompactProfileDifferentialBounds",
+    "GRWTSK.Analysis.Inequalities.DiscreteEnergyBalance",
+    "GRWTSK.Analysis.Inequalities.ExponentialDiagonal",
+    "GRWTSK.Analysis.Inequalities.FiniteLogarithmicProfileBounds",
+    "GRWTSK.Analysis.Inequalities.FiniteShiftedDerivativeBounds",
+    "GRWTSK.Analysis.Inequalities.FiniteSquareSum",
+    "GRWTSK.Analysis.Inequalities.LogarithmicProfileIntegralPrices",
+    "GRWTSK.Analysis.Inequalities.LogarithmicShiftKernelBounds",
+    "GRWTSK.Analysis.Inequalities.LogarithmicShiftKernelPositiveSector",
+    "GRWTSK.Analysis.Inequalities.PolynomialEnergyRatio",
+    "GRWTSK.Analysis.InnerProductSpace.CausalContactHilbertSeparation",
+    "GRWTSK.Analysis.InnerProductSpace.CausalContactOperatorCost",
+    "GRWTSK.Analysis.InnerProductSpace.CausalContactSeparation",
+    "GRWTSK.Analysis.InnerProductSpace.CausalFiniteOperatorSeparation",
+    "GRWTSK.Analysis.InnerProductSpace.CausalGramCongruenceObstruction",
+    "GRWTSK.Analysis.InnerProductSpace.CausalIndividualRealization",
+    "GRWTSK.Analysis.InnerProductSpace.CausalLastLabelOperatorCost",
+    "GRWTSK.Analysis.InnerProductSpace.CausalRealizationPolynomialObstruction",
+    "GRWTSK.Analysis.InnerProductSpace.CausalResponseGram",
+    "GRWTSK.Analysis.InnerProductSpace.ClosedComplexSolvability",
+    "GRWTSK.Analysis.InnerProductSpace.ClosedOperatorSolvability",
+    "GRWTSK.Analysis.InnerProductSpace.CompactResidualNormalization",
+    "GRWTSK.Analysis.InnerProductSpace.CompactSourceGramPositiveDefinite",
+    "GRWTSK.Analysis.InnerProductSpace.DilationGram",
+    "GRWTSK.Analysis.InnerProductSpace.DilationResponseSeparation",
+    "GRWTSK.Analysis.InnerProductSpace.JointGraphSolvability",
+    "GRWTSK.Analysis.InnerProductSpace.LogarithmicCharacterGramBounds",
+    "GRWTSK.Analysis.InnerProductSpace.MoebiusResponseGramExpansion",
+    "GRWTSK.Analysis.InnerProductSpace.NonzeroVectorRealization",
+    "GRWTSK.Analysis.InnerProductSpace.SignedCorrelationBudgetEquivalence",
+    "GRWTSK.Analysis.InnerProductSpace.SignedSynthesisEnergyBounds",
+    "GRWTSK.Analysis.InnerProductSpace.SignedWindowGramIdentity",
+    "GRWTSK.Analysis.InnerProductSpace.SignedWindowPacketCertificates",
+    "GRWTSK.Analysis.InnerProductSpace.WeightedSchurBounds",
+    "GRWTSK.Analysis.IntegralTransforms.CompactProfileLogarithmicDerivative",
+    "GRWTSK.Analysis.IntegralTransforms.CompactProfileLogarithmicMoment",
+    "GRWTSK.Analysis.IntegralTransforms.CompactProfileLogarithmicRegularity",
+    "GRWTSK.Analysis.IntegralTransforms.LogarithmicMomentSubstitution",
+    "GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileCutoff",
+    "GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileDerivative",
+    "GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileRegularity",
+    "GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileWeights",
+    "GRWTSK.Analysis.Integration.CompactPolynomialMoments",
+    "GRWTSK.Analysis.Integration.CompactWeightedDerivativeMoments",
+    "GRWTSK.Analysis.Integration.ExponentialInterval",
+    "GRWTSK.Analysis.Integration.ExponentialVolterraL2",
+    "GRWTSK.Analysis.Integration.FiniteUnitSumVariation",
+    "GRWTSK.Analysis.Integration.PositiveHalfLineCutoffBalance",
+    "GRWTSK.Analysis.Integration.TranslationSeamLowerBound",
+    "GRWTSK.Analysis.IntervalIntegral.Reflection",
+    "GRWTSK.Analysis.IntervalReflection",
+    "GRWTSK.Analysis.LaplaceTransform.Analytic",
+    "GRWTSK.Analysis.LaplaceTransform.CausalExponentialResponse",
+    "GRWTSK.Analysis.LaplaceTransform.ExponentialEnergy",
+    "GRWTSK.Analysis.LaplaceTransform.ExponentialThreshold",
+    "GRWTSK.Analysis.LaplaceTransform.MoebiusResponseFormula",
+    "GRWTSK.Analysis.LaplaceTransform.PolynomialEnergy",
+    "GRWTSK.Analysis.LaplaceTransform.PolynomialEnergyHolomorphy",
+    "GRWTSK.Analysis.MellinTransform.CompactGaussianWindow",
+    "GRWTSK.Analysis.MellinTransform.GaussianAnnularSeparation",
+    "GRWTSK.Analysis.MellinTransform.GaussianCoupledSeparation",
+    "GRWTSK.Analysis.MellinTransform.GaussianDensityMoments",
+    "GRWTSK.Analysis.MellinTransform.GaussianDyadicSummation",
+    "GRWTSK.Analysis.MellinTransform.GaussianFourierMoments",
+    "GRWTSK.Analysis.MellinTransform.GaussianLogFlow",
+    "GRWTSK.Analysis.MellinTransform.GaussianLogWindow",
+    "GRWTSK.Analysis.MellinTransform.GaussianRemoteSeminorms",
+    "GRWTSK.Analysis.MellinTransform.GaussianWindowSeminorms",
+    "GRWTSK.Analysis.MellinTransform.LogarithmicGaussian",
+    "GRWTSK.Analysis.MellinTransform.NormalizedGaussian",
+    "GRWTSK.Analysis.MellinTransform.ReverseInversion",
+    "GRWTSK.Analysis.MellinTransform.ScaledGaussianDerivatives",
+    "GRWTSK.Analysis.NormedSpace.QuadraticError",
+    "GRWTSK.Analysis.PartitionOfUnity.DyadicAnnulus",
+    "GRWTSK.Analysis.Polarization",
+    "GRWTSK.Analysis.ReciprocalKernel",
+    "GRWTSK.Analysis.Series.DyadicKernel",
+    "GRWTSK.Analysis.SpecialFunctions.DigammaFourierBound",
+    "GRWTSK.Analysis.SpecialFunctions.ExponentialFloorGap",
+    "GRWTSK.Analysis.SpecialFunctions.ExponentialPolynomialDomination",
+    "GRWTSK.Analysis.SpecialFunctions.PowerIntervalDrop",
+    "GRWTSK.Analysis.SpecialFunctions.SquaredInverseBump",
+    "GRWTSK.Analysis.SumIntegralComparison.ExponentialResponseSquareSum",
+    "GRWTSK.Analysis.TestFunctions.EvenSeparation",
+    "GRWTSK.Analysis.TestFunctions.ExponentialMomentVariation",
+    "GRWTSK.Analysis.TestFunctions.PolynomialBumpNormalization",
+    "GRWTSK.Analysis.TestFunctions.PolynomialBumpSecondEnergy",
+    "GRWTSK.Analysis.TestFunctions.PowerFourResidualSigns",
+    "GRWTSK.Analysis.TestFunctions.Separation",
+    "GRWTSK.Analysis.WeakDerivatives.PolynomialBump",
+    "GRWTSK.Combinatorics.DirectedGraph.EdgeTrace",
+    "GRWTSK.Combinatorics.DirectedGraph.EndpointSection",
+    "GRWTSK.Combinatorics.DirectedGraph.IncrementalPrefixTable",
+    "GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix",
+    "GRWTSK.Combinatorics.DirectedGraph.ParentTraceDictionary",
+    "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences",
+    "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding",
+    "GRWTSK.Combinatorics.DirectedGraph.PrefixInventory",
+    "GRWTSK.Combinatorics.DirectedGraph.PrefixTableBatch",
+    "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCheckpoint",
+    "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCompaction",
+    "GRWTSK.Combinatorics.DirectedGraph.PrefixTableReindex",
+    "GRWTSK.Combinatorics.DirectedGraph.PrefixTableSchedule",
+    "GRWTSK.Combinatorics.DirectedGraph.PrefixTableState",
+    "GRWTSK.Combinatorics.DirectedGraph.PrefixTableUpdateReindex",
+    "GRWTSK.Combinatorics.DirectedGraph.RoleRelationReindex",
+    "GRWTSK.Combinatorics.DirectedGraph.RoleRelationTable",
+    "GRWTSK.Combinatorics.DirectedGraph.RootedTraceRevision",
+    "GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.Moser",
+    "GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.MoserCoordinates",
+    "GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.MoserSource",
+    "GRWTSK.Combinatorics.Sequences.BalancedPartitionSampling",
+    "GRWTSK.Combinatorics.Sequences.BalancedPartitionTails",
+    "GRWTSK.Combinatorics.Sequences.ConditionalPartitionExposure",
+    "GRWTSK.Combinatorics.Sequences.CyclicSumsetGrowth",
+    "GRWTSK.Combinatorics.Sequences.DisjointTranspositions",
+    "GRWTSK.Combinatorics.Sequences.HypergeometricLowerTail",
+    "GRWTSK.Combinatorics.Sequences.PartialSumCertificate",
+    "GRWTSK.Combinatorics.Sequences.PartialSumOrdering",
+    "GRWTSK.Combinatorics.Sequences.PartitionExposureChecks",
+    "GRWTSK.Combinatorics.Sequences.PrimeCyclicRearrangement",
+    "GRWTSK.Combinatorics.Sequences.QuotaDiscrepancy",
+    "GRWTSK.Combinatorics.Sequences.ZeroSumIntervalRepair",
+    "GRWTSK.Data.Sampling.Descriptions",
+    "GRWTSK.DynamicalSystems.Sequences.ApproximationReturn",
+    "GRWTSK.DynamicalSystems.TransitionSystems.AnchoredReinitialization",
+    "GRWTSK.DynamicalSystems.TransitionSystems.AnchoredVerificationExamples",
+    "GRWTSK.DynamicalSystems.TransitionSystems.AnchoredVerificationReachability",
+    "GRWTSK.DynamicalSystems.TransitionSystems.BudgetResetCounterexamples",
+    "GRWTSK.DynamicalSystems.TransitionSystems.CertifiedPartialMaps",
+    "GRWTSK.DynamicalSystems.TransitionSystems.FinitePhraseProcess",
+    "GRWTSK.DynamicalSystems.TransitionSystems.GuardedFiniteBudget",
+    "GRWTSK.DynamicalSystems.TransitionSystems.ModularCheckpoint",
+    "GRWTSK.DynamicalSystems.TransitionSystems.RevisionReachability",
+    "GRWTSK.DynamicalSystems.TransitionSystems.StateReinitialization",
+    "GRWTSK.DynamicalSystems.TransitionSystems.StateReinitializationExamples",
+    "GRWTSK.DynamicalSystems.TransitionSystems.VerificationReachability",
+    "GRWTSK.DynamicalSystems.TransitionSystems.VerificationReachabilityExamples",
+    "GRWTSK.LinearAlgebra.AlmostMathieu",
+    "GRWTSK.LinearAlgebra.BilinearForm.ZeroCoordinateObstruction",
+    "GRWTSK.LinearAlgebra.CocycleProduct",
+    "GRWTSK.LinearAlgebra.CommonJ",
+    "GRWTSK.LinearAlgebra.CommonJCounterexamples",
+    "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm",
+    "GRWTSK.LinearAlgebra.GaugeState",
+    "GRWTSK.LinearAlgebra.JacobiTransfer",
+    "GRWTSK.LinearAlgebra.LinearMap.FiniteMixingObstruction",
+    "GRWTSK.LinearAlgebra.Matrix.HermitianCounterexamples",
+    "GRWTSK.LinearAlgebra.Matrix.SingularCongruenceObstruction",
+    "GRWTSK.LinearAlgebra.Matrix.TraceRank",
+    "GRWTSK.LinearAlgebra.OrderedProductDeterminant",
+    "GRWTSK.LinearAlgebra.OrderedTransfer",
+    "GRWTSK.LinearAlgebra.OrientedRealLine.Coherence",
+    "GRWTSK.LinearAlgebra.OrientedRealLine.FiniteComparison",
+    "GRWTSK.LinearAlgebra.OrientedRealLine.PositiveScale",
+    "GRWTSK.LinearAlgebra.QuadraticCertificates",
+    "GRWTSK.LinearAlgebra.Schrodinger.SampledPotential",
+    "GRWTSK.LinearAlgebra.Schrodinger.Sampling",
+    "GRWTSK.LinearAlgebra.SchrodingerTransfer",
+    "GRWTSK.LinearAlgebra.Sturmian",
+    "GRWTSK.Logic.Certificates.AnchoredBatchVerification",
+    "GRWTSK.Logic.Certificates.AnchoredDependencyRevision",
+    "GRWTSK.Logic.Certificates.ArtifactDerivation",
+    "GRWTSK.Logic.Certificates.BatchVerification",
+    "GRWTSK.Logic.Certificates.BatchVerificationExamples",
+    "GRWTSK.Logic.Certificates.DependencyRevision",
+    "GRWTSK.Logic.Certificates.DependencyRevisionExamples",
+    "GRWTSK.Logic.Certificates.ModelExamples",
+    "GRWTSK.Logic.Certificates.ProofCoverage",
+    "GRWTSK.Logic.FiniteCoverage",
+    "GRWTSK.Logic.FiniteSequences.AppendOnlyHistory",
+    "GRWTSK.Logic.FiniteSequences.BatchCertificate",
+    "GRWTSK.Logic.FiniteSequences.DecisionCertificate",
+    "GRWTSK.Logic.FiniteSequences.DictionaryRevision",
+    "GRWTSK.Logic.FiniteSequences.IncrementalComposition",
+    "GRWTSK.Logic.FiniteSequences.IncrementalDictionary",
+    "GRWTSK.Logic.FiniteSequences.IndexedDictionary",
+    "GRWTSK.Logic.FiniteSequences.PrefixCoverage",
+    "GRWTSK.Logic.Inference.FiniteRuleExamples",
+    "GRWTSK.Logic.Inference.FiniteRuleSystems",
+    "GRWTSK.Logic.Inference.RuleSoundness",
+    "GRWTSK.Logic.Locality.AnchoredCertificates",
+    "GRWTSK.Logic.Locality.FiniteRuleTransport",
+    "GRWTSK.Logic.Locality.RevisionCertificates",
+    "GRWTSK.Logic.ProofChecking.RepositoryConformance",
+    "GRWTSK.Logic.ProofEvidence.DirichletResponseStatus",
+    "GRWTSK.Logic.ProofEvidence.EnergyInterfaceEquivalence",
+    "GRWTSK.Logic.ProofEvidence.MoebiusPrimeShellStatus",
+    "GRWTSK.Logic.ProofEvidence.MoebiusResponseStatus",
+    "GRWTSK.Logic.ProofEvidence.ProvenanceCertificates",
+    "GRWTSK.MeasureTheory.Function.Lp.CausalRestrictionBounds",
+    "GRWTSK.MeasureTheory.Integral.FinitePrimeTranslationEnergy",
+    "GRWTSK.MeasureTheory.Integral.FixedWidthEnergyTelescope",
+    "GRWTSK.MeasureTheory.Integral.MoebiusCumulativeEnergy",
+    "GRWTSK.MeasureTheory.Integral.QuadraticFourierFubini",
+    "GRWTSK.NumberTheory.ArithmeticFunctions.ComplexMoebiusCast",
+    "GRWTSK.NumberTheory.ArithmeticFunctions.CoprimeDivisorFilter",
+    "GRWTSK.NumberTheory.ArithmeticFunctions.CoprimeReciprocalForm",
+    "GRWTSK.NumberTheory.ArithmeticFunctions.DensityCorrectionPrimeSeries",
+    "GRWTSK.NumberTheory.ArithmeticFunctions.DensityCorrectionReciprocalMass",
+    "GRWTSK.NumberTheory.ArithmeticFunctions.DensityFiniteSums",
+    "GRWTSK.NumberTheory.ArithmeticFunctions.DensityHalfMoment",
+    "GRWTSK.NumberTheory.ArithmeticFunctions.DensityHalfPrimeFactor",
+    "GRWTSK.NumberTheory.ArithmeticFunctions.DensityMoebius",
+    "GRWTSK.NumberTheory.ArithmeticFunctions.DensityMoebiusCorrection",
+    "GRWTSK.NumberTheory.ArithmeticFunctions.DensityMomentTails",
+    "GRWTSK.NumberTheory.ArithmeticFunctions.DensityReciprocalPrefix",
+    "GRWTSK.NumberTheory.ArithmeticFunctions.DivisibleDensityRow",
+    "GRWTSK.NumberTheory.ArithmeticFunctions.ExcludedDensityCorrection",
+    "GRWTSK.NumberTheory.ArithmeticFunctions.MoebiusReciprocalPrefix",
+    "GRWTSK.NumberTheory.ArithmeticFunctions.MoebiusTruncation",
+    "GRWTSK.NumberTheory.ArithmeticFunctions.PositiveDensityCorrection",
+    "GRWTSK.NumberTheory.ArithmeticFunctions.SquarefreeMoebiusSum",
+    "GRWTSK.NumberTheory.ArithmeticFunctions.SquarefulMoebiusReturn",
+    "GRWTSK.NumberTheory.ArithmeticFunctions.TruncatedMoebiusCoefficients",
+    "GRWTSK.NumberTheory.ArithmeticGeometry.LogThetaComparison",
+    "GRWTSK.NumberTheory.Chebyshev.CompactProfileExplicitFormula",
+    "GRWTSK.NumberTheory.Chebyshev.CompactProfilePairingIntegrability",
+    "GRWTSK.NumberTheory.Chebyshev.CorrelationPairing",
+    "GRWTSK.NumberTheory.Chebyshev.FiniteIntegrationByParts",
+    "GRWTSK.NumberTheory.ContinuedFractions.FrequencyRealization",
+    "GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators",
+    "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicIdeals",
+    "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicReduction",
+    "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ABCStatement",
+    "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.AdditiveCharacterMoments",
+    "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Definitions",
+    "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.DivisorSectorReindexing",
+    "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.EquivalentForms",
+    "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExceptionalSet",
+    "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.MomentReindexing",
+    "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Moments",
+    "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.NonprimitiveObstruction",
+    "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.PartialBounds",
+    "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Radical",
+    "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Signed",
+    "GRWTSK.NumberTheory.ExplicitFormula.CorrelationPairing",
+    "GRWTSK.NumberTheory.FirstPrime",
+    "GRWTSK.NumberTheory.Ideal.CompactNormSupport",
+    "GRWTSK.NumberTheory.LSeries.ClosedMoebiusPolynomial",
+    "GRWTSK.NumberTheory.LSeries.GaussianContour",
+    "GRWTSK.NumberTheory.LSeries.GaussianDyadic",
+    "GRWTSK.NumberTheory.LSeries.TruncatedMoebiusSeries",
+    "GRWTSK.NumberTheory.Moebius.ComparisonEnergy",
+    "GRWTSK.NumberTheory.Moebius.CompositeActivationExamples",
+    "GRWTSK.NumberTheory.Moebius.CriticalEndpointDefect",
+    "GRWTSK.NumberTheory.Moebius.CriticalEndpointDefectRecurrence",
+    "GRWTSK.NumberTheory.Moebius.CriticalIntervalBlockGrowth",
+    "GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks",
+    "GRWTSK.NumberTheory.Moebius.CriticalMertensTransformMeanSquare",
+    "GRWTSK.NumberTheory.Moebius.CriticalWeightedMertensSquare",
+    "GRWTSK.NumberTheory.Moebius.DampedRecordingParseval",
+    "GRWTSK.NumberTheory.Moebius.DiagonalEnergyBound",
+    "GRWTSK.NumberTheory.Moebius.DiagonalEnergyBounds",
+    "GRWTSK.NumberTheory.Moebius.DirichletLaplaceIdentity",
+    "GRWTSK.NumberTheory.Moebius.DyadicEnergy",
+    "GRWTSK.NumberTheory.Moebius.EnergyAbscissa",
+    "GRWTSK.NumberTheory.Moebius.EnergyGrowthEquivalences",
+    "GRWTSK.NumberTheory.Moebius.FiniteEulerProduct",
+    "GRWTSK.NumberTheory.Moebius.FiniteLaplaceSums",
+    "GRWTSK.NumberTheory.Moebius.FiniteLaplaceTransform",
+    "GRWTSK.NumberTheory.Moebius.FinitePrimeProductDebt",
+    "GRWTSK.NumberTheory.Moebius.FiniteProductResponseIdentification",
+    "GRWTSK.NumberTheory.Moebius.FiniteResponseSum",
+    "GRWTSK.NumberTheory.Moebius.FiniteTranslationProduct",
+    "GRWTSK.NumberTheory.Moebius.GramDiagonalBound",
+    "GRWTSK.NumberTheory.Moebius.IntegerSampleGrowth",
+    "GRWTSK.NumberTheory.Moebius.LaplaceDirichletSeries",
+    "GRWTSK.NumberTheory.Moebius.LaplaceHolomorphy",
+    "GRWTSK.NumberTheory.Moebius.LaplaceTransform",
+    "GRWTSK.NumberTheory.Moebius.LogarithmicMertensBoundary",
+    "GRWTSK.NumberTheory.Moebius.LogarithmicResponse",
+    "GRWTSK.NumberTheory.Moebius.MeanSquareGrowth",
+    "GRWTSK.NumberTheory.Moebius.MeanSquareLaplaceHolomorphy",
+    "GRWTSK.NumberTheory.Moebius.MertensPrimitive",
+    "GRWTSK.NumberTheory.Moebius.MertensSquareEnergyEquivalence",
+    "GRWTSK.NumberTheory.Moebius.MertensSquareEnergyPowerBound",
+    "GRWTSK.NumberTheory.Moebius.MoebiusEulerProduct",
+    "GRWTSK.NumberTheory.Moebius.NegativePrimeCorrelation",
+    "GRWTSK.NumberTheory.Moebius.PolynomialEnergyHolomorphy",
+    "GRWTSK.NumberTheory.Moebius.PolynomialLaplaceHolomorphy",
+    "GRWTSK.NumberTheory.Moebius.PrimeBlockEnergy",
+    "GRWTSK.NumberTheory.Moebius.PrimeFactorFilters",
+    "GRWTSK.NumberTheory.Moebius.PrimeFilterEnergy",
+    "GRWTSK.NumberTheory.Moebius.PrimeFilterGrowth",
+    "GRWTSK.NumberTheory.Moebius.PrimeFilterLaplace",
+    "GRWTSK.NumberTheory.Moebius.PrimePrefixGrowth",
+    "GRWTSK.NumberTheory.Moebius.PrimeProductPrefixEnergy",
+    "GRWTSK.NumberTheory.Moebius.PrimeShellDecomposition",
+    "GRWTSK.NumberTheory.Moebius.PrimitiveIdentification",
+    "GRWTSK.NumberTheory.Moebius.PrimitiveRegularity",
+    "GRWTSK.NumberTheory.Moebius.QuadraticTransformBoundConversion",
+    "GRWTSK.NumberTheory.Moebius.ReciprocalFluxKernelBounds",
+    "GRWTSK.NumberTheory.Moebius.ReciprocalPrefix",
+    "GRWTSK.NumberTheory.Moebius.ReciprocalPrefixDensityAdapter",
+    "GRWTSK.NumberTheory.Moebius.ReciprocalPrefixKernel",
+    "GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationEnergy",
+    "GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationMertensEnergy",
+    "GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationPowerSaving",
+    "GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationRecurrence",
+    "GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationSummability",
+    "GRWTSK.NumberTheory.Moebius.ResponseBudgetIdentification",
+    "GRWTSK.NumberTheory.Moebius.SectorEssentialSuprema",
+    "GRWTSK.NumberTheory.Moebius.SignedIntegralSectorBounds",
+    "GRWTSK.NumberTheory.Moebius.SubsetPotentialObstruction",
+    "GRWTSK.NumberTheory.Moebius.UnsignedEnergyBound",
+    "GRWTSK.NumberTheory.Moebius.VerticalLineCriterion",
+    "GRWTSK.NumberTheory.Moebius.VerticalLineMonotonicity",
+    "GRWTSK.NumberTheory.Moebius.WeightedIntegralContinuity",
+    "GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy",
+    "GRWTSK.NumberTheory.Moebius.WeightedIntegralGrowth",
+    "GRWTSK.NumberTheory.Moebius.WeightedMertensSquareCorrelation",
+    "GRWTSK.NumberTheory.Moebius.WeightedMertensSquareCorrelationBound",
+    "GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral",
+    "GRWTSK.NumberTheory.Polynomial.DerivativeRadicalBound",
+    "GRWTSK.NumberTheory.Prime.LeastPrime",
+    "GRWTSK.NumberTheory.Prime.ReciprocalMass",
+    "GRWTSK.NumberTheory.PrimeCounting.PrimeIntervalResponseEnergyGrowth",
+    "GRWTSK.NumberTheory.PrimeCounting.PrimeShellEnergyGrowth",
+    "GRWTSK.NumberTheory.PrimeCounting.ReciprocalPrimeBlockCost",
+    "GRWTSK.NumberTheory.PrimeCounting.ReciprocalPrimeIntervalBounds",
+    "GRWTSK.NumberTheory.PrimeCounting.ReciprocalPrimeLogBound",
+    "GRWTSK.NumberTheory.Zeta.HolomorphicFilteredReciprocal",
+    "GRWTSK.NumberTheory.Zeta.PoleRegularization",
+    "GRWTSK.NumberTheory.Zeta.ReciprocalDecayBounds",
+    "GRWTSK.NumberTheory.Zeta.ReciprocalHolomorphyZeroSymmetry",
+    "GRWTSK.NumberTheory.Zeta.ResponseBoundZeroConversions",
+    "GRWTSK.NumberTheory.Zeta.Riemann",
+    "GRWTSK.NumberTheory.Zeta.Riemann.BoundedHeightCriterion",
+    "GRWTSK.NumberTheory.Zeta.Riemann.CriticalLineDefect",
+    "GRWTSK.NumberTheory.Zeta.Riemann.DefectCriterion",
+    "GRWTSK.NumberTheory.Zeta.Riemann.Hypothesis",
+    "GRWTSK.NumberTheory.Zeta.Riemann.LaplaceCriterion",
+    "GRWTSK.NumberTheory.Zeta.Riemann.PolynomialEnergyCriterion",
+    "GRWTSK.NumberTheory.Zeta.Riemann.QuadraticTraceCriterion",
+    "GRWTSK.NumberTheory.Zeta.Riemann.Regularized",
+    "GRWTSK.NumberTheory.Zeta.Riemann.ZeroDefinitions",
+    "GRWTSK.NumberTheory.Zeta.Riemann.ZeroExclusions",
+    "GRWTSK.NumberTheory.Zeta.Riemann.ZeroOrbitQuartic",
+    "GRWTSK.NumberTheory.Zeta.Riemann.ZeroSymmetry",
+    "GRWTSK.NumberTheory.Zeta.ZeroFreeHalfPlaneCriteria",
+    "GRWTSK.Order.Closure.FiniteDependencyClosure",
+    "GRWTSK.Order.Closure.FiniteDependencyExamples",
+    "GRWTSK.Order.Embeddings.PrefixObstruction",
+    "GRWTSK.Order.WellFounded.AdditiveNaturalRank",
+    "GRWTSK.Spectral.DirichletCut",
+    "GRWTSK.Spectral.FreeDirichletSpectrum",
+    "GRWTSK.Spectral.FreeIDS",
+    "GRWTSK.Spectral.GapTransport",
+    "GRWTSK.Spectral.MatrixCountComparison",
+    "GRWTSK.Spectral.SturmianBlockCounts",
+    "GRWTSK.Spectral.SturmianFiniteVolume"
+  ],
+  "public_release_eligible": false,
+  "source_count": 871,
+  "source_role_counts": {
+    "audit-driver": 35,
+    "library": 515,
+    "negative-control": 181,
+    "positive-check": 140
+  },
+  "source_set_counts": {
+    "active": 797,
+    "candidate-evidence": 74
+  },
+  "status": "REVIEW_REQUIRED_NOT_ACCEPTANCE",
+  "task_active_path_count": 8,
+  "task_active_paths": [
+    {
+      "bytes": 4026,
+      "classification_reason": "entrypoint-library-source",
+      "path": "GRWTSK/Analysis/Fourier/FiniteAdditiveProjector.lean",
+      "sha256": "24a8c41508bdf2a7558d20b19434362e2656ac45b4141e01604c0ec16ddd413f",
+      "source_role": "library",
+      "source_set": "active"
+    },
+    {
+      "bytes": 5477,
+      "classification_reason": "entrypoint-library-source",
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/AdditiveCharacterMoments.lean",
+      "sha256": "c5064cd633443ae851924599b07d1aaeff56e7ab792783cd5e408e5a078e3113",
+      "source_role": "library",
+      "source_set": "active"
+    },
+    {
+      "bytes": 4173,
+      "classification_reason": "subject-local-validation-source",
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Positive/AdditiveCharacterMoments.lean",
+      "sha256": "af9ac1d1982587daba14b6f170bc78f35f47b519192b65d02e253610537750bf",
+      "source_role": "positive-check",
+      "source_set": "active"
+    },
+    {
+      "bytes": 465,
+      "classification_reason": "subject-local-validation-source",
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorMissingNoWrap.lean",
+      "sha256": "62e56cdb987638afc411ced5e11ad6d2433d1e7b4f8db1bb8de890e48e45ec42",
+      "source_role": "negative-control",
+      "source_set": "active"
+    },
+    {
+      "bytes": 481,
+      "classification_reason": "subject-local-validation-source",
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorWrongNormalization.lean",
+      "sha256": "06166379962c09fb4ea2e9f5eb59edd5dc35191e9122866f8529f51260862b14",
+      "source_role": "negative-control",
+      "source_set": "active"
+    },
+    {
+      "bytes": 603,
+      "classification_reason": "subject-local-validation-source",
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorScaledCongruenceCancellation.lean",
+      "sha256": "e53db71a114f0e6f8ea0126663f12e4f1eec6ddd96a06a5bcc2c2deb8848cf14",
+      "source_role": "negative-control",
+      "source_set": "active"
+    },
+    {
+      "bytes": 758,
+      "classification_reason": "subject-local-validation-source",
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorUnscaledJointWeight.lean",
+      "sha256": "753995797c6e3555cf76ab4ddbde96bc9a3a27d150fa09f3b8bc5e024d8f2dbc",
+      "source_role": "negative-control",
+      "source_set": "active"
+    },
+    {
+      "bytes": 509,
+      "classification_reason": "subject-local-validation-source",
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorToABC.lean",
+      "sha256": "bb05fba2b0d11b032a370e16cd575eca0d08267bd2acb466315c6fcb47f52522",
+      "source_role": "negative-control",
+      "source_set": "active"
+    }
+  ],
+  "task_root_exports": {
+    "GRWTSK.Analysis.Fourier.FiniteAdditiveProjector": 1,
+    "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.AdditiveCharacterMoments": 1
+  }
+}

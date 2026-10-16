@@ -1,0 +1,16 @@
+'PPNCP04.ActualDiagnostics.orderEnergy_completed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PPNCP04.ActualDiagnostics.EnergyEnclosure.contains_literal_integral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PPNCP04.ActualDiagnostics.orderEnergy_le_max' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PPNCP04.ActualDiagnostics.all_minus_baseline_energy_is_actual' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PPNCP04.ActualDiagnostics.AdmissibleController.exactly_once' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PPNCP04.ActualDiagnostics.AdmissibleController.union_complete' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PPNCP04.ActualDiagnostics.AdmissibleController.total_mass_is_inventory_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PPNCP04.ActualDiagnostics.no_small_eta_controller' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,4 @@
+'EulerP04RH.ProgramLedger.eulerRightLine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EulerP04RH.ProgramLedger.nativeWindowRoute' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EulerP04RH.ProgramLedger.conditionalTerminal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EulerP04RH.ProgramLedger.HaarOrbitTransferRefuted' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,3 @@
+'EulerP04RH.FEMI.finiteEulerPolynomial_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EulerP04RH.FEMI.finiteEulerPolynomial_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EulerP04RH.FEMI.polynomial_integer_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]

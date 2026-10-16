@@ -1,0 +1,10 @@
+{
+  "lean-fixtures/positive/source/GRWTSK/Fixture/Positive.lean": "ea837839f32a8852a503eb8cc18f29ef1854d8211d47bd4f80762ec3f565e1b8",
+  "lean-fixtures/positive/source/FixtureAudit.lean": "e76b32826f1d697f9f0b8d320e9a3fe506d26cb3f92c0e248d90cca561219c4c",
+  "lean-fixtures/sorry/source/GRWTSK/Fixture/Sorry.lean": "20fce24b9a16cb3d9920bbbb37bed029f23b66f676f80848f9b3b1aa3f668342",
+  "lean-fixtures/sorry/source/FixtureAudit.lean": "30be61fa82166d83ea6a2f163cef2517572a6c794fe0b5e7ba3ae6d8686212ce",
+  "lean-fixtures/custom-axiom/source/GRWTSK/Fixture/CustomAxiom.lean": "df1daa7b42e34a2a8a9203af5011f9d819d0e1d3aa657345cb88fe32b8fef825",
+  "lean-fixtures/custom-axiom/source/FixtureAudit.lean": "40b93856143aa5709be9cc2b7b2aff91db806179110fbf2483d7421f5ae98431",
+  "lean-fixtures/unsafe/source/GRWTSK/Fixture/Unsafe.lean": "47faa78ebe9f505eeb6c1d7d10fc6f42b637102040dd64d2d4dccb086c50fc60",
+  "lean-fixtures/unsafe/source/FixtureAudit.lean": "a6f1f0f47e673a56a9f5c1c52cd1d89a99ad58397c1b7fba735e26a39c90b249"
+}

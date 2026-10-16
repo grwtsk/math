@@ -1,0 +1,8 @@
+'PPNCP04.Diagnostics.zero_phase_absolute_test_fails' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PPNCP04.Diagnostics.literal_moebius_composite_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PPNCP04.Diagnostics.covered_prime_two_small_cutoff_rejected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PPNCP04.Diagnostics.abstract_growth_then_cancellation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PPNCP04.Diagnostics.nondecreasing_natural_rank_rejected' depends on axioms: [propext, Quot.sound]
+'PPNCP04.Diagnostics.geometric_exponential_loss_not_polynomial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

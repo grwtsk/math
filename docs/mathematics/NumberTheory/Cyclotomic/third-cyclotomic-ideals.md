@@ -65,7 +65,10 @@ This ring consumer does not supply their zero/window proofs, a common finite
 set for every frequency, finite integral interchange, later global bounds,
 the original detector or RH. It does not prove an operational cache refinement.
 
-The [cubic-root reduction result](third-cyclotomic-reduction.md) uses this actual integer ring to prove primitive order-three reduction under the explicit good-prime exclusion, with the ramified ideal and a genuine good maximal ideal as controls. Original character and global-sum suppliers remain separate.
+The [cubic-root reduction result](third-cyclotomic-reduction.md) uses this actual integer ring to prove primitive order-three reduction under the explicit good-prime exclusion, with the ramified ideal and a genuine good maximal ideal as controls. The [good-quotient cubic-character result](third-cyclotomic-characters.md) now
+supplies actual maximal-quotient cubic characters under the explicit good-prime
+exclusion. Sextic/trace, Jacobi/primary-generator and global-sum suppliers
+remain separate.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

@@ -1,0 +1,11 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    ".noeaaeue/scripts/check_documentation.py",
+    "--render"
+  ],
+  "utc": "2026-10-16T05:59:55.322262+00:00",
+  "exit_code": 1,
+  "outcome": "failed"
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "static-inert-integration-helper-review-v1",
+  "installer": ".noeaaeue/.local/reference-character-preparation-r2-befbd13d56dc486e8178f074c8872ba7/install_paired_selected.py",
+  "installer_sha256": "3015ecbc894d164de8a50905aaa3dd77add1bc753d15898667084c9207ba8b53",
+  "manifest": ".noeaaeue/.local/reference-character-preparation-r2-befbd13d56dc486e8178f074c8872ba7/change-manifest.json",
+  "manifest_sha256": "bbb1770184cb154f92df8022b044e992f5d11fb2176f78cff7102c2126d8c98e",
+  "targets": 10,
+  "bound_inputs": 48,
+  "current_preimage_or_input_drift": [],
+  "installer_executed_including_dry_run": false,
+  "native_jobs": false,
+  "active_shared_mutations": false,
+  "review_scope": "AST parsing, exact proposal/readset hashes and manual scope/preservation inspection; correlated review, no runtime or Lean acceptance",
+  "operational_premise": "One exclusive quiet integration owner; all other writers paused. Existing-target hash check then os.replace is NOT an atomic conditional compare-and-swap against uncooperative concurrent writers. Whole multi-file operation is not atomic. New-page no-clobber link, per-file replacement and partial-state journal are bounded implementation mechanisms, not Lean-proved refinements.",
+  "remaining_owner_work": "Review helper; wait native child exit, retire old queued application stage; owner alone installs, renders, generates current observation/contract and validates final combined snapshot; preserve all old receipts and failures."
+}

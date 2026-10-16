@@ -1,0 +1,174 @@
+{
+  "archives": {
+    ".noeaaeue/bindings/current-source-observations.json": {
+      "archive": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/current-source-observations.previous.json",
+      "bytes": 4919764,
+      "sha256": "0b1f9ee559b1a4663698d34b09fa44dba46be9f130f9b4a6083d389020c00765"
+    },
+    ".noeaaeue/bindings/moebius-current-inputs-v5.json": {
+      "archive": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/moebius-current-inputs.previous.json",
+      "bytes": 221142,
+      "sha256": "1b97cf890556c282c22d344812d4ab072b80c27ca4254a3a611c8a451162dc05"
+    },
+    "docs/reference/math-source-catalog.json": {
+      "archive": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/math-source-catalog.previous.json",
+      "bytes": 3426285,
+      "sha256": "0fe249a576c0aa5bf40a1cf726bd9c899c52b6c560072d22faefabd92ed6c337"
+    }
+  },
+  "artifacts": {
+    ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/current-source-observations.new.json": {
+      "bytes": 5002036,
+      "sha256": "e318f3661a592f775b564a8b347d772707e4d4719970ab54ca9078c7a673da08"
+    },
+    ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/current-source-observations.previous.json": {
+      "bytes": 4919764,
+      "sha256": "0b1f9ee559b1a4663698d34b09fa44dba46be9f130f9b4a6083d389020c00765"
+    },
+    ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/math-source-catalog.previous.json": {
+      "bytes": 3426285,
+      "sha256": "0fe249a576c0aa5bf40a1cf726bd9c899c52b6c560072d22faefabd92ed6c337"
+    },
+    ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/moebius-current-inputs.previous.json": {
+      "bytes": 221142,
+      "sha256": "1b97cf890556c282c22d344812d4ab072b80c27ca4254a3a611c8a451162dc05"
+    },
+    ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/proposal-command.json": {
+      "bytes": 347,
+      "sha256": "707e155f5ff51f78117e6e40a20ac6305d88084842bf5f0342e66dc3b9233200"
+    },
+    ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/proposal-result.json": {
+      "bytes": 21,
+      "sha256": "81868a6e94ffc0178bf833deb1c9013d9fab4ee95ddb876a5e8ec4f1d26376d2"
+    },
+    ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/proposal.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/proposal.stdout.log": {
+      "bytes": 269,
+      "sha256": "b265c478b425c30bb1341bf41bab6cab6484d57a87d65ee4a9ad7d392cd71a4e"
+    },
+    ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/review.json": {
+      "bytes": 81615,
+      "sha256": "1c806a2f609489e4d32e2128b6e423d8fce5fd60f8e30620ff80bca0e87ab9af"
+    }
+  },
+  "checkpoint": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe",
+  "created_utc": "2026-10-16T07:09:46.504602+00:00",
+  "future_contract": ".noeaaeue/bindings/moebius-current-inputs-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe.json",
+  "install_command": [
+    "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+    "-B",
+    ".noeaaeue/.local/additive-character-integration-finish/prepare_checkpoint.py",
+    "--writers-paused",
+    "--install",
+    ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe"
+  ],
+  "kernel_checked": false,
+  "limits": "Only byte/role bookkeeping. Preserve every historical/current receipt and binding; no acceptance is inherited.",
+  "mathematical_admission": false,
+  "post_install_commands_not_executed": [
+    [
+      "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+      "-B",
+      ".noeaaeue/scripts/generate_math_source_catalog.py",
+      "--render"
+    ],
+    [
+      "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+      "-B",
+      ".noeaaeue/scripts/generate_math_source_catalog.py"
+    ],
+    [
+      "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+      "-B",
+      ".noeaaeue/scripts/check_math_layout.py"
+    ],
+    [
+      "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+      "-B",
+      ".noeaaeue/binding-repair/observe_current_moebius_inputs.py",
+      "--output",
+      ".noeaaeue/bindings/moebius-current-inputs-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe.json"
+    ],
+    [
+      "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+      "-B",
+      ".noeaaeue/scripts/check_moebius_response.py",
+      "--manifest",
+      ".noeaaeue/bindings/moebius-current-inputs-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe.json",
+      "--validate-only"
+    ],
+    [
+      "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+      "-B",
+      ".noeaaeue/scripts/check_math_trust.py",
+      "--lean-self-test"
+    ],
+    [
+      "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+      "-B",
+      ".noeaaeue/scripts/check_math_trust.py",
+      "--memory-mib",
+      "12288"
+    ],
+    [
+      "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+      "-B",
+      ".noeaaeue/scripts/check_moebius_response.py",
+      "--manifest",
+      ".noeaaeue/bindings/moebius-current-inputs-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe.json",
+      "--memory-mb",
+      "12288"
+    ]
+  ],
+  "procedure_inputs": {
+    ".noeaaeue/.local/additive-character-integration-finish/prepare_checkpoint.py": {
+      "bytes": 15541,
+      "sha256": "4a5382ae67fc78e8615b1fb816d2ee9b9b03a1b985739818b12a8616953cf643"
+    },
+    ".noeaaeue/binding-repair/validation-completion/workflow-owner-preparation-proposal.json": {
+      "bytes": 7265,
+      "sha256": "968426dca1dcfe0369b5c7490376f572ea605b95179913dbeeb033f52a6320ec"
+    },
+    ".noeaaeue/documentation/current-validation-workflow.md": {
+      "bytes": 6470,
+      "sha256": "a058aad62178eca8caa5fae1cffb80fcc016c151e22db2489f685e811a5fecdc"
+    },
+    ".noeaaeue/documentation/math-layout.json": {
+      "bytes": 3341484,
+      "sha256": "b3e64b55f4c16cc92842813373da01b341f103d39e262c691ba0ae9d077ccf3a"
+    },
+    ".noeaaeue/evidence/source-intake.json": {
+      "bytes": 77783,
+      "sha256": "ef9f4145cfe681bc5553cf59c8f389d4d0c58fcca7d784cca9399f08fba803c3"
+    },
+    ".noeaaeue/scripts/check_math_layout.py": {
+      "bytes": 80719,
+      "sha256": "28340d93733f3551606b293e522b0a7775354d9d55753186b2521859be2a5cb6"
+    },
+    ".noeaaeue/scripts/check_moebius_response.py": {
+      "bytes": 105687,
+      "sha256": "72c42bcc265e76e8ea45480f3ee7e3c23f0e13d35f96a72497a789c1aea052a2"
+    },
+    ".noeaaeue/scripts/repository_paths.py": {
+      "bytes": 2343,
+      "sha256": "4bd02ac496dc2fbd141b19f23ba86291db1618a0ae298a76beab28701ff24d22"
+    },
+    ".noeaaeue/scripts/source_observations.py": {
+      "bytes": 13216,
+      "sha256": "a153565b7b3162470309f2fae9432110415b7934648a7f58f91f84821ab68125"
+    }
+  },
+  "proposal_command": [
+    "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+    "-B",
+    ".noeaaeue/scripts/source_observations.py",
+    "--output",
+    ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/current-source-observations.new.json"
+  ],
+  "schema": "additive-character-integration-preparation-v1",
+  "status": "PREPARED_REQUIRES_REVIEW_AND_EXPLICIT_INSTALL_NOT_ACCEPTANCE",
+  "writers_paused_attested": true
+}

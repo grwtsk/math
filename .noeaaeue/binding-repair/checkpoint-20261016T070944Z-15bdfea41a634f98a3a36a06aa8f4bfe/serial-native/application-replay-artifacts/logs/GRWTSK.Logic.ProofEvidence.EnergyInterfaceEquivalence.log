@@ -1,0 +1,6 @@
+'EulerP04RH.InterfaceAudit.literal_P04_implies_transform_route' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EulerP04RH.InterfaceAudit.transform_route_iff_literal_P04' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EulerP04RH.InterfaceAudit.empty_packet_signed_return' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EulerP04RH.InterfaceAudit.empty_packet_error_budget_iff' depends on axioms: [propext, Classical.choice, Quot.sound]

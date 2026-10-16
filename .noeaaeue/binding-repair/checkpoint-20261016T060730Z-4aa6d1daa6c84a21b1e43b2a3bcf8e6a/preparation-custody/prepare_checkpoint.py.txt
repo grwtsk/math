@@ -1,0 +1,279 @@
+#!/usr/bin/env python3
+"""Prepare a reviewable integration checkpoint; install only by explicit flag.
+
+Run with Python 3.11+ from the repository root, after writers acknowledge pause:
+  python3.11 -B <this-file> --writers-paused
+  python3.11 -B <this-file> --writers-paused --install <printed-checkpoint>
+
+The default invocation creates new process artifacts only. Neither mode invokes
+Lean, Lake, catalog rendering, a contract producer, or a proof verifier. The
+installation mode changes only the active source-observation pointer after
+preserving and checking its exact previous bytes. No proof acceptance is created.
+"""
+from __future__ import annotations
+
+import argparse
+from collections import Counter
+from datetime import datetime, timezone
+import hashlib
+import json
+import os
+from pathlib import Path
+import re
+import subprocess
+import sys
+import uuid
+
+sys.dont_write_bytecode = True
+ROOT = Path(__file__).resolve().parents[3]
+CURRENT = ".noeaaeue/bindings/current-source-observations.json"
+CATALOG = "docs/reference/math-source-catalog.json"
+DEFAULT_CONTRACT = ".noeaaeue/bindings/moebius-current-inputs-v5.json"
+WORKFLOW = ".noeaaeue/documentation/current-validation-workflow.md"
+RECIPE = ".noeaaeue/binding-repair/validation-completion/workflow-owner-preparation-proposal.json"
+EXPORTS = (
+    "GRWTSK.Analysis.Fourier.FiniteAdditiveProjector",
+    "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.AdditiveCharacterMoments",
+)
+OWN_PATHS = {
+    "GRWTSK/Analysis/Fourier/FiniteAdditiveProjector.lean": "library",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/AdditiveCharacterMoments.lean": "library",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Positive/AdditiveCharacterMoments.lean": "positive-check",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorMissingNoWrap.lean": "negative-control",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorWrongNormalization.lean": "negative-control",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorScaledCongruenceCancellation.lean": "negative-control",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorUnscaledJointWeight.lean": "negative-control",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorToABC.lean": "negative-control",
+}
+ARCHIVES = {
+    CURRENT: "current-source-observations.previous.json",
+    CATALOG: "math-source-catalog.previous.json",
+    DEFAULT_CONTRACT: "moebius-current-inputs.previous.json",
+}
+PROCEDURE_INPUTS = (
+    WORKFLOW, RECIPE, ".noeaaeue/scripts/source_observations.py",
+    ".noeaaeue/scripts/check_math_layout.py", ".noeaaeue/scripts/check_moebius_response.py",
+    ".noeaaeue/scripts/repository_paths.py", ".noeaaeue/documentation/math-layout.json",
+    ".noeaaeue/evidence/source-intake.json",
+)
+
+
+def require(value, message):
+    if not value:
+        raise RuntimeError(message)
+
+
+def encoded(value):
+    return (json.dumps(value, indent=2, sort_keys=True) + "\n").encode()
+
+
+def sha(raw):
+    return hashlib.sha256(raw).hexdigest()
+
+
+def relative(path):
+    return path.relative_to(ROOT).as_posix()
+
+
+def write_new(path, raw):
+    """Every generated artifact is exclusive and immutable after creation."""
+    with path.open("xb") as stream:
+        stream.write(raw)
+        stream.flush()
+        os.fsync(stream.fileno())
+    path.chmod(0o444)
+
+
+def modules():
+    sys.path.insert(0, str(ROOT / ".noeaaeue/scripts"))
+    import check_math_layout as layout
+    import source_observations as observations
+    return layout, observations
+
+
+def reread(layout, name):
+    return layout.read_regular(ROOT, name)
+
+
+def absent(path):
+    require(not path.exists() and not path.is_symlink(), "destination already exists: " + str(path))
+
+
+def derive(layout, observations):
+    return observations.create(ROOT, layout.read_regular, layout.git_inventory(ROOT)["paths"],
+                               layout.source_role, layout.imports)
+
+
+def review(document, root_raw, layout):
+    observed = document["observation"]
+    rows = observed["sources"]
+    indexed = {row["path"]: row for row in rows}
+    require(len(indexed) == len(rows), "duplicate observed source paths")
+    imports = Counter(name for name, _ in layout.imports(root_raw.decode()))
+    own = []
+    for name, role in OWN_PATHS.items():
+        require(name in indexed, "task path absent from observation: " + name)
+        row = indexed[name]
+        require(row["source_set"] == "active" and row["source_role"] == role,
+                "task path is not active in its expected role: " + name)
+        own.append({key: row[key] for key in
+                    ("path", "sha256", "bytes", "source_role", "source_set", "classification_reason")})
+    for module in EXPORTS:
+        require(imports[module] == 1, "task root export must occur exactly once: " + module)
+        require(module in observed["public_entrypoint_closure"], "task module absent from public closure")
+    return {
+        "status": "REVIEW_REQUIRED_NOT_ACCEPTANCE", "mathematical_admission": False,
+        "public_release_eligible": False, "observation_identity": document["identity"],
+        "source_count": observed["source_count"],
+        "source_set_counts": dict(Counter(row["source_set"] for row in rows)),
+        "source_role_counts": dict(Counter(row["source_role"] for row in rows)),
+        "active_public_library_count": sum(row["source_set"] == "active" and
+                                             row["physical_role"] == "library" for row in rows),
+        "public_entrypoint_closure": observed["public_entrypoint_closure"],
+        "entrypoint": observed["entrypoint"],
+        "task_root_exports": {module: imports[module] for module in EXPORTS},
+        "task_active_paths": own, "task_active_path_count": len(own),
+        "candidate_sources": [{key: row[key] for key in
+                               ("path", "source_role", "classification_reason", "sha256", "bytes")}
+                              for row in rows if row["source_set"] == "candidate-evidence"],
+        "historical_findings": observed["historical_findings"],
+        "deleted_tracked_paths": observed["deleted_tracked_paths"],
+    }
+
+
+def next_commands(contract):
+    return [
+        [sys.executable, "-B", ".noeaaeue/scripts/generate_math_source_catalog.py", "--render"],
+        [sys.executable, "-B", ".noeaaeue/scripts/generate_math_source_catalog.py"],
+        [sys.executable, "-B", ".noeaaeue/scripts/check_math_layout.py"],
+        [sys.executable, "-B", ".noeaaeue/binding-repair/observe_current_moebius_inputs.py", "--output", contract],
+        [sys.executable, "-B", ".noeaaeue/scripts/check_moebius_response.py", "--manifest", contract, "--validate-only"],
+        [sys.executable, "-B", ".noeaaeue/scripts/check_math_trust.py", "--lean-self-test"],
+        [sys.executable, "-B", ".noeaaeue/scripts/check_math_trust.py", "--memory-mib", "12288"],
+        [sys.executable, "-B", ".noeaaeue/scripts/check_moebius_response.py", "--manifest", contract, "--memory-mb", "12288"],
+    ]
+
+
+def prepare(layout, observations):
+    stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ") + "-" + uuid.uuid4().hex
+    checkpoint = ROOT / (".noeaaeue/binding-repair/checkpoint-" + stamp)
+    contract = ROOT / (".noeaaeue/bindings/moebius-current-inputs-" + stamp + ".json")
+    absent(checkpoint)
+    absent(contract)
+    checkpoint.mkdir(mode=0o700)
+    print("CHECKPOINT " + relative(checkpoint), flush=True)
+    print("FUTURE_CONTRACT " + relative(contract), flush=True)
+    old = {name: reread(layout, name) for name in ARCHIVES}
+    inputs = {name: reread(layout, name) for name in PROCEDURE_INPUTS}
+    helper_name = relative(Path(__file__).resolve())
+    inputs[helper_name] = reread(layout, helper_name)
+    default_match = re.search(r'^DEFAULT_CURRENT_MANIFEST = "([^"]+)"$',
+                              inputs[".noeaaeue/scripts/check_moebius_response.py"].decode(), re.M)
+    require(default_match and default_match[1] == DEFAULT_CONTRACT,
+            "current verifier default differs; select the exact prior checked contract explicitly")
+    for name, raw in old.items():
+        write_new(checkpoint / ARCHIVES[name], raw)
+    command = [sys.executable, "-B", ".noeaaeue/scripts/source_observations.py", "--output",
+               relative(checkpoint / "current-source-observations.new.json")]
+    write_new(checkpoint / "proposal-command.json", encoded({"argv": command, "cwd": str(ROOT)}))
+    process = subprocess.run(command, cwd=ROOT, capture_output=True)
+    write_new(checkpoint / "proposal.stdout.log", process.stdout)
+    write_new(checkpoint / "proposal.stderr.log", process.stderr)
+    write_new(checkpoint / "proposal-result.json", encoded({"exit_code": process.returncode}))
+    require(process.returncode == 0, "proposal failed; logs and archived variants retained at " + str(checkpoint))
+    proposed = checkpoint / "current-source-observations.new.json"
+    proposal_raw = reread(layout, relative(proposed))
+    proposed.chmod(0o444)
+    document = json.loads(proposal_raw)
+    require(document == derive(layout, observations), "proposal drifted; retain checkpoint and prepare a fresh one")
+    summary = review(document, reread(layout, "GRWTSK.lean"), layout)
+    write_new(checkpoint / "review.json", encoded(summary))
+    for name, raw in {**old, **inputs}.items():
+        require(reread(layout, name) == raw, "preparation input changed; retain checkpoint: " + name)
+    absent(contract)
+    artifacts = {relative(p): {"sha256": sha(p.read_bytes()), "bytes": p.stat().st_size}
+                 for p in checkpoint.iterdir() if p.is_file()}
+    manifest = {
+        "schema": "additive-character-integration-preparation-v1",
+        "status": "PREPARED_REQUIRES_REVIEW_AND_EXPLICIT_INSTALL_NOT_ACCEPTANCE",
+        "created_utc": datetime.now(timezone.utc).isoformat(), "writers_paused_attested": True,
+        "checkpoint": relative(checkpoint), "future_contract": relative(contract),
+        "mathematical_admission": False, "kernel_checked": False,
+        "archives": {name: {"archive": relative(checkpoint / ARCHIVES[name]),
+                             "sha256": sha(raw), "bytes": len(raw)} for name, raw in old.items()},
+        "procedure_inputs": {name: {"sha256": sha(raw), "bytes": len(raw)} for name, raw in inputs.items()},
+        "artifacts": artifacts, "proposal_command": command,
+        "install_command": [sys.executable, "-B", helper_name, "--writers-paused", "--install", relative(checkpoint)],
+        "post_install_commands_not_executed": next_commands(relative(contract)),
+        "limits": "Only byte/role bookkeeping. Preserve every historical/current receipt and binding; no acceptance is inherited.",
+    }
+    write_new(checkpoint / "preparation-manifest.json", encoded(manifest))
+    print(json.dumps(summary, indent=2, sort_keys=True), flush=True)
+    print(json.dumps({"manifest": relative(checkpoint / "preparation-manifest.json"),
+                      "manifest_sha256": sha(encoded(manifest)), "install_command": manifest["install_command"],
+                      "post_install_commands_not_executed": manifest["post_install_commands_not_executed"]}, indent=2), flush=True)
+
+
+def install(checkpoint_name, layout, observations):
+    checkpoint = ROOT / checkpoint_name
+    require(not Path(checkpoint_name).is_absolute() and ".." not in Path(checkpoint_name).parts and
+            checkpoint.parent == ROOT / ".noeaaeue/binding-repair" and checkpoint.name.startswith("checkpoint-"),
+            "install requires the exact repository-relative prepared checkpoint")
+    manifest = json.loads(reread(layout, relative(checkpoint / "preparation-manifest.json")))
+    require(manifest["schema"] == "additive-character-integration-preparation-v1" and
+            manifest["checkpoint"] == checkpoint_name and manifest["writers_paused_attested"] is True,
+            "preparation manifest identity differs")
+    absent(ROOT / manifest["future_contract"])
+    for name, identity in {**manifest["artifacts"], **manifest["procedure_inputs"]}.items():
+        raw = reread(layout, name)
+        require(sha(raw) == identity["sha256"] and len(raw) == identity["bytes"], "prepared artifact/input drift: " + name)
+    previous = {}
+    for name, identity in manifest["archives"].items():
+        raw = reread(layout, identity["archive"])
+        require(sha(raw) == identity["sha256"] and len(raw) == identity["bytes"], "archive drift: " + name)
+        previous[name] = raw
+    proposal_raw = reread(layout, relative(checkpoint / "current-source-observations.new.json"))
+    proposal = json.loads(proposal_raw)
+    require(proposal == derive(layout, observations), "proposal/current inputs drifted; preserve and prepare another checkpoint")
+    require(review(proposal, reread(layout, "GRWTSK.lean"), layout) ==
+            json.loads(reread(layout, relative(checkpoint / "review.json"))), "review no longer describes exact current inputs")
+    for name, raw in previous.items():
+        require(reread(layout, name) == raw, "current pointer/catalog/default changed; preserve both and reconcile: " + name)
+    intent = {"status": "EXPLICIT_INSTALL_REQUEST_NOT_ACCEPTANCE", "argv": sys.argv,
+              "at_utc": datetime.now(timezone.utc).isoformat(), "previous_sha256": sha(previous[CURRENT]),
+              "new_sha256": sha(proposal_raw), "observation_identity": proposal["identity"]}
+    write_new(checkpoint / "installation-intent.json", encoded(intent))
+    current = ROOT / CURRENT
+    temporary = current.with_name("current-source-observations." + checkpoint.name + ".new")
+    write_new(temporary, proposal_raw)
+    # Repeat the collision check immediately before replacement. Any failure
+    # retains the temporary, proposal, previous bytes, and intent without reset.
+    require(proposal == derive(layout, observations), "source drift before installation; temporary retained")
+    for name, raw in previous.items():
+        require(reread(layout, name) == raw, "current input changed before installation; temporary retained: " + name)
+    os.replace(temporary, current)
+    require(reread(layout, CURRENT) == proposal_raw, "active observation changed immediately after installation")
+    result = dict(intent, status="OBSERVATION_INSTALLED_NOT_PROOF_ACCEPTANCE",
+                  active_path=CURRENT, checkpoint=checkpoint_name,
+                  post_install_commands_not_executed=manifest["post_install_commands_not_executed"])
+    write_new(checkpoint / "installation.json", encoded(result))
+    print(json.dumps(result, indent=2, sort_keys=True), flush=True)
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--writers-paused", action="store_true", help="integration owner attests writer pause acknowledgments")
+    parser.add_argument("--install", metavar="CHECKPOINT", help="explicit separate installation after reviewing preparation output")
+    args = parser.parse_args()
+    require(sys.version_info >= (3, 11), "use Python 3.11+ as required by the reviewed workflow")
+    require(Path.cwd().resolve() == ROOT, "run from the repository root")
+    require(args.writers_paused, "the integration owner must first obtain writer pause acknowledgments")
+    layout, observations = modules()
+    if args.install:
+        install(args.install, layout, observations)
+    else:
+        prepare(layout, observations)
+
+
+if __name__ == "__main__":
+    main()

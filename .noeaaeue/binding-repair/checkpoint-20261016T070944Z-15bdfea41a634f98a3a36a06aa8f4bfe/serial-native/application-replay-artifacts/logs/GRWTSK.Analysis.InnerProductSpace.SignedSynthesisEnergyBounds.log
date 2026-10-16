@@ -1,0 +1,4 @@
+'EulerP04RH.PacketClosure.polynomial_packet_budgets_imply_settlement' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EulerP04RH.PacketClosure.packet_route_implies_literal_P04' depends on axioms: [propext, Classical.choice, Quot.sound]

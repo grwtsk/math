@@ -1,0 +1,5 @@
+'EulerP04RH.FEMI.integerCoefficient_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EulerP04RH.FEMI.divisor_moebius_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EulerP04RH.FEMI.moebiusDirichlet_eq_inv_zeta' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EulerP04RH.FEMI.reciprocal_zeta_hasProd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EulerP04RH.FEMI.finite_causal_pickup' depends on axioms: [propext, Classical.choice, Quot.sound]

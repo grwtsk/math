@@ -1,0 +1,2836 @@
+{
+  "authority": {
+    "historical_profile_intent": {
+      "contract_sha256": "33ed248caa24fba4c2b43969a7df6bf9e7ec7a6cb52ae90200a0a41c8f205419",
+      "qualified_receipt_sha256": "93ceb4846bd2d5e97d091196961a4ae39e4829e9107aa883002c06abb72193d6"
+    },
+    "observations": {
+      "repository_relative_path": ".local/math-monitor/owned-edits/exponential-energy-followup-heartbeat-20261014T001058Z-d4c5f1175f/prepared-energy-abscissa-eleven-v1/native-execution-v1.json",
+      "sha256": "44928c9ca7fbd092397f67c3d02adbe9ec6b81784ea02cde4126102bc0840c3b"
+    },
+    "preparation": {
+      "repository_relative_path": ".local/math-monitor/owned-edits/exponential-energy-followup-heartbeat-20261014T001058Z-d4c5f1175f/prepared-energy-abscissa-eleven-v1/preparation.json",
+      "sha256": "6820bdf829f400c37da955c6a7664e66f536979e952d7e275717707c4b22d8b5"
+    },
+    "qualified_receipt": {
+      "repository_relative_path": ".local/math-monitor/owned-edits/exponential-energy-followup-heartbeat-20261014T001058Z-d4c5f1175f/energy-abscissa-independent-review-20261014T002613Z-e7f3d5af7f/qualified-current26-energy-v1.json",
+      "sha256": "1e11c69ba3c6823be79b9c1579da1b5d75e151fbac9707cdbf7b3649ee80a1e0"
+    },
+    "wrong_phase_exact_unchanged_ancestry_reuse": {
+      "ancestry_source_sha256": {
+        "GRWTSK/LinearAlgebra/AlmostMathieu.lean": "ed4a3641f340c856b6e0d98cbeb99c18f06cc86c64d3d84f306adc1b35849643",
+        "GRWTSK/LinearAlgebra/SchrodingerTransfer.lean": "25f93a03bb8e1b5df2f73c782160ed9f356f592c6cca4e56c92cde7fd974969d"
+      },
+      "observations_sha256": "7a08626d32fac883943f0dc9d23f377494e9cc4df8fe7ef595ff6955196a8f02",
+      "qualified_receipt_sha256": "568fd68c0aec6bbbf1f0af13074dfb77c42c52b67f49cd079bb68684e9666740",
+      "source_sha256": "bf13ad1ddc0561fca9b54c9b4a34a129dac97ba1f6d0f7c403fdcf51a736c6f7"
+    }
+  },
+  "consumer": {
+    "count": 243,
+    "owners": 22,
+    "rows": [
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.LinearAlgebra.AlmostMathieu",
+        "name": "GRWTSK.LinearAlgebra.AlmostMathieu.transfer.eq_1",
+        "type": "\u2200 (E \u03b1 coupling \u03b8 : \u211d) (n : \u2124),\n  GRWTSK.LinearAlgebra.AlmostMathieu.transfer E \u03b1 coupling \u03b8 n =\n    GRWTSK.LinearAlgebra.SchrodingerTransfer.schrodingerTransfer E\n      (GRWTSK.LinearAlgebra.AlmostMathieu.potential \u03b1 coupling \u03b8 n)"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.LinearAlgebra.AlmostMathieu",
+        "name": "GRWTSK.LinearAlgebra.AlmostMathieu.det_transfer",
+        "type": "\u2200 (E \u03b1 coupling \u03b8 : \u211d) (n : \u2124), (GRWTSK.LinearAlgebra.AlmostMathieu.transfer E \u03b1 coupling \u03b8 n).det = 1"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.LinearAlgebra.AlmostMathieu",
+        "name": "GRWTSK.LinearAlgebra.AlmostMathieu.det_one_does_not_bound_trace",
+        "type": "(GRWTSK.LinearAlgebra.AlmostMathieu.transfer 3 0 0 0 0).det = 1 \u2227\n  2 < |(GRWTSK.LinearAlgebra.AlmostMathieu.transfer 3 0 0 0 0).trace|"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "definition",
+        "module": "GRWTSK.LinearAlgebra.AlmostMathieu",
+        "name": "GRWTSK.LinearAlgebra.AlmostMathieu.transfer",
+        "type": "\u211d \u2192 \u211d \u2192 \u211d \u2192 \u211d \u2192 \u2124 \u2192 Matrix (Fin 2) (Fin 2) \u211d"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.LinearAlgebra.AlmostMathieu",
+        "name": "GRWTSK.LinearAlgebra.AlmostMathieu.potential._proof_1",
+        "type": "(1 + 1).AtLeastTwo"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.LinearAlgebra.AlmostMathieu",
+        "name": "GRWTSK.LinearAlgebra.AlmostMathieu.recurrence_iff_transfer",
+        "type": "\u2200 (E \u03b1 coupling \u03b8 : \u211d) (n : \u2124) (previous current next : \u211d),\n  next + previous + GRWTSK.LinearAlgebra.AlmostMathieu.potential \u03b1 coupling \u03b8 n * current = E * current \u2194\n    GRWTSK.LinearAlgebra.SchrodingerTransfer.rawState next current =\n      (GRWTSK.LinearAlgebra.AlmostMathieu.transfer E \u03b1 coupling \u03b8 n).mulVec\n        (GRWTSK.LinearAlgebra.SchrodingerTransfer.rawState current previous)"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.LinearAlgebra.AlmostMathieu",
+        "name": "GRWTSK.LinearAlgebra.AlmostMathieu.potential.eq_1",
+        "type": "\u2200 (\u03b1 coupling \u03b8 : \u211d) (n : \u2124),\n  GRWTSK.LinearAlgebra.AlmostMathieu.potential \u03b1 coupling \u03b8 n = 2 * coupling * Real.cos (2 * Real.pi * \u03b1 * \u2191n + \u03b8)"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "definition",
+        "module": "GRWTSK.LinearAlgebra.AlmostMathieu",
+        "name": "GRWTSK.LinearAlgebra.AlmostMathieu.potential",
+        "type": "\u211d \u2192 \u211d \u2192 \u211d \u2192 \u2124 \u2192 \u211d"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.Analysis.LaplaceTransform.ExponentialThreshold",
+        "name": "GRWTSK.RiemannHypothesis.CCC.exponential_boundary_control",
+        "type": "(Continuous fun u => Real.exp (u / 2)) \u2227\n  MeasureTheory.IntegrableOn (fun u => Real.exp (-2 * u) * Real.exp (u / 2) ^ 2) (Set.Ici 0) MeasureTheory.volume \u2227\n    \u00acMeasureTheory.IntegrableOn (fun u => Real.exp (-u) * Real.exp (u / 2) ^ 2) (Set.Ici 0) MeasureTheory.volume"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.Analysis.LaplaceTransform.ExponentialThreshold",
+        "name": "GRWTSK.RiemannHypothesis.CCC.exponential_boundary_control._simp_1_2",
+        "type": "\u2200 {\u03b1 : Type u_1} {\u03b5' : Type u_4} {m\u03b1 : MeasurableSpace \u03b1} {s : Set \u03b1} {\u03bc : MeasureTheory.Measure \u03b1}\n  [inst : TopologicalSpace \u03b5'] [inst_1 : ESeminormedAddMonoid \u03b5'] {C : \u03b5'},\n  autoParam (\u2016C\u2016\u2091 \u2260 \u22a4) MeasureTheory.integrableOn_const_iff._auto_1 \u2192\n    MeasureTheory.IntegrableOn (fun x => C) s \u03bc = (\u2016C\u2016\u2091 = 0 \u2228 \u03bc s < \u22a4)"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "definition",
+        "module": "GRWTSK.NumberTheory.Moebius.MertensPrimitive",
+        "name": "GRWTSK.RiemannHypothesis.CCC.WholePickupPoly",
+        "type": "Prop"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "definition",
+        "module": "GRWTSK.NumberTheory.Moebius.MertensPrimitive",
+        "name": "GRWTSK.RiemannHypothesis.CCC.PickupEnergyPoly",
+        "type": "Prop"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "definition",
+        "module": "GRWTSK.NumberTheory.Moebius.MertensPrimitive",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupResponseGram",
+        "type": "\u211d \u2192 \u2115 \u2192 \u2115 \u2192 \u211d"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "definition",
+        "module": "GRWTSK.NumberTheory.Moebius.MertensPrimitive",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupLocalEnergy",
+        "type": "\u211d \u2192 \u211d"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.MertensPrimitive",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickup_full_gram_split",
+        "type": "\u2200 (T : \u211d), pickupFullGram T = pickupDiagonal T + pickupCross T"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "definition",
+        "module": "GRWTSK.NumberTheory.Moebius.MertensPrimitive",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupVelocity",
+        "type": "\u211d \u2192 \u211d"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "definition",
+        "module": "GRWTSK.NumberTheory.Moebius.MertensPrimitive",
+        "name": "GRWTSK.RiemannHypothesis.CCC.wholePickup",
+        "type": "\u211d \u2192 \u211d"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "definition",
+        "module": "GRWTSK.NumberTheory.Moebius.MertensPrimitive",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupCross",
+        "type": "\u211d \u2192 \u211d"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "definition",
+        "module": "GRWTSK.NumberTheory.Moebius.MertensPrimitive",
+        "name": "GRWTSK.RiemannHypothesis.CCC.moebiusReal",
+        "type": "\u2115 \u2192 \u211d"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.MertensPrimitive",
+        "name": "GRWTSK.RiemannHypothesis.CCC.complete_gram_split",
+        "type": "\u2200 {\u03b9 : Type u_1} [inst : DecidableEq \u03b9] (S : Finset \u03b9) (c : \u03b9 \u2192 \u211d) (H : \u03b9 \u2192 \u03b9 \u2192 \u211d),\n  \u2211 m \u2208 S, \u2211 n \u2208 S, c m * c n * H m n =\n    \u2211 m \u2208 S, c m ^ 2 * H m m + \u2211 m \u2208 S, \u2211 n \u2208 S, if m \u2260 n then c m * c n * H m n else 0"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.MertensPrimitive",
+        "name": "GRWTSK.RiemannHypothesis.CCC.cross_poly_iff_energy_poly",
+        "type": "(\u2200 (T : \u211d), 0 \u2264 T \u2192 pickupEnergy T = pickupDiagonal T + pickupCross T) \u2192\n  (\u2200 (T : \u211d), 0 \u2264 T \u2192 0 \u2264 pickupDiagonal T \u2227 pickupDiagonal T \u2264 2 * T ^ 2) \u2192 (PickupCrossPoly \u2194 PickupEnergyPoly)"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "definition",
+        "module": "GRWTSK.NumberTheory.Moebius.MertensPrimitive",
+        "name": "GRWTSK.RiemannHypothesis.CCC.PickupCrossPoly",
+        "type": "Prop"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "definition",
+        "module": "GRWTSK.NumberTheory.Moebius.MertensPrimitive",
+        "name": "GRWTSK.RiemannHypothesis.CCC.PickupReturnPoly",
+        "type": "Prop"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "definition",
+        "module": "GRWTSK.NumberTheory.Moebius.MertensPrimitive",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupDiagonal",
+        "type": "\u211d \u2192 \u211d"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "definition",
+        "module": "GRWTSK.NumberTheory.Moebius.MertensPrimitive",
+        "name": "GRWTSK.RiemannHypothesis.CCC.mertensPrefix",
+        "type": "\u211d \u2192 \u211d"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.MertensPrimitive",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupVelocity._proof_1",
+        "type": "(1 + 1).AtLeastTwo"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "definition",
+        "module": "GRWTSK.NumberTheory.Moebius.MertensPrimitive",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupResponse",
+        "type": "\u2115 \u2192 \u211d \u2192 \u211d"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "definition",
+        "module": "GRWTSK.NumberTheory.Moebius.MertensPrimitive",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergy",
+        "type": "\u211d \u2192 \u211d"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "definition",
+        "module": "GRWTSK.NumberTheory.Moebius.MertensPrimitive",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupFullGram",
+        "type": "\u211d \u2192 \u211d"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.PrimitiveRegularity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupVelocity.eq_1",
+        "type": "\u2200 (u : \u211d), pickupVelocity u = Real.exp (-u / 2) * mertensPrefix (Real.exp u)"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.PrimitiveRegularity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.wholePickup_intervalIntegrable",
+        "type": "\u2200 (a b : \u211d), IntervalIntegrable wholePickup MeasureTheory.volume a b"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.PrimitiveRegularity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.wholePickup.eq_1",
+        "type": "\u2200 (T : \u211d), wholePickup T = \u222b (u : \u211d) in 0..T, pickupVelocity u"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.PrimitiveRegularity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupLocalEnergy_eq_sub",
+        "type": "\u2200 (T : \u211d), pickupLocalEnergy T = pickupEnergy T - pickupEnergy (max 0 (T - 1))"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.PrimitiveRegularity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupLocalEnergy_le_energy",
+        "type": "\u2200 {T : \u211d}, 0 \u2264 T \u2192 pickupLocalEnergy T \u2264 pickupEnergy T"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.PrimitiveRegularity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergy_nonneg",
+        "type": "\u2200 {T : \u211d}, 0 \u2264 T \u2192 0 \u2264 pickupEnergy T"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.PrimitiveRegularity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupResponseGram_self_nonneg",
+        "type": "\u2200 {T : \u211d}, 0 \u2264 T \u2192 \u2200 (n : \u2115), 0 \u2264 pickupResponseGram T n n"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.PrimitiveRegularity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergy.eq_1",
+        "type": "\u2200 (T : \u211d), pickupEnergy T = \u222b (u : \u211d) in 0..T, wholePickup u ^ 2"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.PrimitiveRegularity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergy_continuous",
+        "type": "Continuous pickupEnergy"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.PrimitiveRegularity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.mertensPrefix_measurable",
+        "type": "Measurable mertensPrefix"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.PrimitiveRegularity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.wholePickup_continuous",
+        "type": "Continuous wholePickup"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.PrimitiveRegularity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.moebiusReal_abs_le_one",
+        "type": "\u2200 (n : \u2115), |moebiusReal n| \u2264 1"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.PrimitiveRegularity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergy_mono",
+        "type": "\u2200 {S T : \u211d}, 0 \u2264 S \u2192 S \u2264 T \u2192 pickupEnergy S \u2264 pickupEnergy T"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.PrimitiveRegularity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.wholePickup_sq_intervalIntegrable",
+        "type": "\u2200 (a b : \u211d), IntervalIntegrable (fun u => wholePickup u ^ 2) MeasureTheory.volume a b"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.PrimitiveRegularity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupDiagonal_nonneg",
+        "type": "\u2200 {T : \u211d}, 0 \u2264 T \u2192 0 \u2264 pickupDiagonal T"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.PrimitiveRegularity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.wholePickup_ae_hasDerivAt",
+        "type": "\u2200 (T : \u211d), \u2200\u1d50 (u : \u211d), u \u2208 Set.uIcc 0 T \u2192 HasDerivAt wholePickup (pickupVelocity u) u"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.PrimitiveRegularity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupLocalEnergy_nonneg",
+        "type": "\u2200 {T : \u211d}, 0 \u2264 T \u2192 0 \u2264 pickupLocalEnergy T"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.PrimitiveRegularity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergy_zero",
+        "type": "pickupEnergy 0 = 0"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.PrimitiveRegularity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupVelocity_abs_le",
+        "type": "\u2200 (u : \u211d), |pickupVelocity u| \u2264 Real.exp (u / 2)"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.PrimitiveRegularity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.wholePickup_measurable",
+        "type": "Measurable wholePickup"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.PrimitiveRegularity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.mertensPrefix_abs_le",
+        "type": "\u2200 {x : \u211d}, 0 \u2264 x \u2192 |mertensPrefix x| \u2264 x"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.PrimitiveRegularity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupVelocity_measurable",
+        "type": "Measurable pickupVelocity"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.PrimitiveRegularity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupVelocity_intervalIntegrable",
+        "type": "\u2200 (a b : \u211d), IntervalIntegrable pickupVelocity MeasureTheory.volume a b"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.PrimitiveRegularity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.wholePickup_zero",
+        "type": "wholePickup 0 = 0"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.PrimitiveRegularity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.wholePickup_absolutelyContinuousOnInterval",
+        "type": "\u2200 (T : \u211d), AbsolutelyContinuousOnInterval wholePickup 0 T"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.FiniteResponseSum",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupAtomVelocity_intervalIntegrable",
+        "type": "\u2200 (n : \u2115) (a b : \u211d), IntervalIntegrable (pickupAtomVelocity n) MeasureTheory.volume a b"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.FiniteResponseSum",
+        "name": "GRWTSK.RiemannHypothesis.CCC.wholePickup_finite_atom_integrals",
+        "type": "\u2200 {T : \u211d},\n  0 \u2264 T \u2192 wholePickup T = \u2211 n \u2208 Finset.Icc 1 \u230aReal.exp T\u230b\u208a, moebiusReal n * \u222b (u : \u211d) in 0..T, pickupAtomVelocity n u"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.FiniteResponseSum",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickup_exp_negative_log_half",
+        "type": "\u2200 {n : \u2115}, 1 \u2264 n \u2192 Real.exp (-Real.log \u2191n / 2) = (\u221a\u2191n)\u207b\u00b9"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.FiniteResponseSum",
+        "name": "GRWTSK.RiemannHypothesis.CCC.wholePickup_closed_prefix_rpow",
+        "type": "\u2200 {T : \u211d},\n  0 \u2264 T \u2192 wholePickup T = 2 * \u2211 n \u2208 Finset.Icc 1 \u230aReal.exp T\u230b\u208a, moebiusReal n * (\u2191n ^ (-(1 / 2)) - Real.exp (-T / 2))"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.FiniteResponseSum",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergy_eq_diagonal_add_cross",
+        "type": "\u2200 {T : \u211d}, 0 \u2264 T \u2192 pickupEnergy T = pickupDiagonal T + pickupCross T"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.FiniteResponseSum",
+        "name": "GRWTSK.RiemannHypothesis.CCC.wholePickup_closed_prefix",
+        "type": "\u2200 {T : \u211d}, 0 \u2264 T \u2192 wholePickup T = 2 * \u2211 n \u2208 Finset.Icc 1 \u230aReal.exp T\u230b\u208a, moebiusReal n * ((\u221a\u2191n)\u207b\u00b9 - Real.exp (-T / 2))"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.FiniteResponseSum",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupResponse.eq_1",
+        "type": "\u2200 (n : \u2115) (u : \u211d), pickupResponse n u = if Real.log \u2191n \u2264 u then 2 * ((\u221a\u2191n)\u207b\u00b9 - Real.exp (-u / 2)) else 0"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.FiniteResponseSum",
+        "name": "GRWTSK.RiemannHypothesis.CCC.mertensPrefix_fixed_inventory",
+        "type": "\u2200 {u T : \u211d},\n  u \u2264 T \u2192 mertensPrefix (Real.exp u) = \u2211 n \u2208 Finset.Icc 1 \u230aReal.exp T\u230b\u208a, if Real.log \u2191n \u2264 u then moebiusReal n else 0"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.FiniteResponseSum",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickup_inverse_sqrt_eq_negative_half",
+        "type": "\u2200 (n : \u2115), (\u221a\u2191n)\u207b\u00b9 = \u2191n ^ (-(1 / 2))"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.FiniteResponseSum",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergy_eq_full_gram",
+        "type": "\u2200 {T : \u211d}, 0 \u2264 T \u2192 pickupEnergy T = pickupFullGram T"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.FiniteResponseSum",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupResponse_at_event",
+        "type": "\u2200 {n : \u2115}, 1 \u2264 n \u2192 pickupResponse n (Real.log \u2191n) = 0"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.FiniteResponseSum",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickup_log_le_iff_closed_cutoff",
+        "type": "\u2200 {n : \u2115}, 1 \u2264 n \u2192 \u2200 (u : \u211d), Real.log \u2191n \u2264 u \u2194 n \u2264 \u230aReal.exp u\u230b\u208a"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "definition",
+        "module": "GRWTSK.NumberTheory.Moebius.FiniteResponseSum",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupAtomVelocity",
+        "type": "\u2115 \u2192 \u211d \u2192 \u211d"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.FiniteResponseSum",
+        "name": "GRWTSK.RiemannHypothesis.CCC.wholePickup_fixed_inventory",
+        "type": "\u2200 {u T : \u211d}, 0 \u2264 u \u2192 u \u2264 T \u2192 wholePickup u = \u2211 n \u2208 Finset.Icc 1 \u230aReal.exp T\u230b\u208a, moebiusReal n * pickupResponse n u"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.FiniteResponseSum",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupResponse_continuous",
+        "type": "\u2200 {n : \u2115}, 1 \u2264 n \u2192 Continuous (pickupResponse n)"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.FiniteResponseSum",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickup_negative_half_integral",
+        "type": "\u2200 (a b : \u211d), \u222b (u : \u211d) in a..b, Real.exp (-u / 2) = 2 * (Real.exp (-a / 2) - Real.exp (-b / 2))"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.FiniteResponseSum",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupAtomVelocity_integral",
+        "type": "\u2200 {n : \u2115},\n  1 \u2264 n \u2192 \u2200 {T : \u211d}, Real.log \u2191n \u2264 T \u2192 \u222b (u : \u211d) in 0..T, pickupAtomVelocity n u = 2 * ((\u221a\u2191n)\u207b\u00b9 - Real.exp (-T / 2))"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.FiniteResponseSum",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupResponse_product_intervalIntegrable",
+        "type": "\u2200 {m n : \u2115},\n  1 \u2264 m \u2192\n    1 \u2264 n \u2192 \u2200 (a b : \u211d), IntervalIntegrable (fun u => pickupResponse m u * pickupResponse n u) MeasureTheory.volume a b"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.FiniteResponseSum",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupAtomVelocity_measurable",
+        "type": "\u2200 (n : \u2115), Measurable (pickupAtomVelocity n)"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.FiniteResponseSum",
+        "name": "GRWTSK.RiemannHypothesis.CCC.wholePickup_closed_prefix_flux",
+        "type": "\u2200 {T : \u211d},\n  0 \u2264 T \u2192\n    wholePickup T =\n      2 * \u2211 n \u2208 Finset.Icc 1 \u230aReal.exp T\u230b\u208a, moebiusReal n * (\u221a\u2191n)\u207b\u00b9 - 2 * Real.exp (-T / 2) * mertensPrefix (Real.exp T)"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.FiniteResponseSum",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupAtomVelocity.eq_1",
+        "type": "\u2200 (n : \u2115) (u : \u211d), pickupAtomVelocity n u = if Real.log \u2191n \u2264 u then Real.exp (-u / 2) else 0"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.FiniteResponseSum",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupAtomVelocity._proof_1",
+        "type": "(1 + 1).AtLeastTwo"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.FiniteResponseSum",
+        "name": "GRWTSK.RiemannHypothesis.CCC.wholePickup_response_sum",
+        "type": "\u2200 {T : \u211d}, 0 \u2264 T \u2192 wholePickup T = \u2211 n \u2208 Finset.Icc 1 \u230aReal.exp T\u230b\u208a, moebiusReal n * pickupResponse n T"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.FiniteResponseSum",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupVelocity_fixed_inventory",
+        "type": "\u2200 {u T : \u211d}, u \u2264 T \u2192 pickupVelocity u = \u2211 n \u2208 Finset.Icc 1 \u230aReal.exp T\u230b\u208a, moebiusReal n * pickupAtomVelocity n u"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.FiniteResponseSum",
+        "name": "GRWTSK.RiemannHypothesis.CCC.mertensPrefix.eq_1",
+        "type": "\u2200 (x : \u211d), mertensPrefix x = \u2211 n \u2208 Finset.Icc 1 \u230ax\u230b\u208a, moebiusReal n"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.FiniteResponseSum",
+        "name": "GRWTSK.RiemannHypothesis.CCC.wholePickup_closed_prefix_flux._simp_1_1",
+        "type": "\u2200 {\u03b9 : Type u_1} {R : Type u_4} [inst : NonUnitalNonAssocSemiring R] (s : Finset \u03b9) (f : \u03b9 \u2192 R) (a : R),\n  \u2211 i \u2208 s, f i * a = (\u2211 i \u2208 s, f i) * a"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.Analysis.Inequalities.ExponentialDiagonal",
+        "name": "GRWTSK.RiemannHypothesis.CCC.DiagonalAffineAlgebra.sharp_diagonal_le_quadratic",
+        "type": "\u2200 (T : \u211d), 2 * T ^ 2 - 8 * T + 16 * (1 - Real.exp (-T / 2)) \u2264 2 * T ^ 2"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "definition",
+        "module": "GRWTSK.NumberTheory.Moebius.GramDiagonalBound",
+        "name": "GRWTSK.RiemannHypothesis.CCC.diagonalComparison",
+        "type": "\u211d \u2192 \u211d \u2192 \u211d"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.GramDiagonalBound",
+        "name": "GRWTSK.RiemannHypothesis.CCC.diagonal_sum_Icc_eq_range._proof_1_4",
+        "type": "\u2200 (N k : \u2115), \u00ac1 \u2264 k + 1 \u2192 False"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.GramDiagonalBound",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickup_diagonal_density_le",
+        "type": "\u2200 {u T : \u211d},\n  0 \u2264 u \u2192\n    u \u2264 T \u2192\n      \u2211 n \u2208 Finset.Icc 1 \u230aReal.exp T\u230b\u208a, moebiusReal n ^ 2 * pickupResponse n u ^ 2 \u2264 4 * u - 8 + 8 * Real.exp (-u / 2)"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.GramDiagonalBound",
+        "name": "GRWTSK.RiemannHypothesis.CCC.diagonalComparison._proof_2",
+        "type": "(1 + 1).AtLeastTwo"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.GramDiagonalBound",
+        "name": "GRWTSK.RiemannHypothesis.CCC.diagonal_sum_Icc_eq_range._proof_1_5",
+        "type": "\u2200 (N k : \u2115), k < N \u2192 \u00ack + 1 \u2264 N \u2192 False"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.GramDiagonalBound",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupDiagonal_quadratic_bound",
+        "type": "\u2200 {T : \u211d}, 0 \u2264 T \u2192 0 \u2264 pickupDiagonal T \u2227 pickupDiagonal T \u2264 2 * T ^ 2"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.GramDiagonalBound",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickup_response_square_sum_cutoff",
+        "type": "\u2200 {u T : \u211d},\n  u \u2264 T \u2192\n    \u2211 n \u2208 Finset.Icc 1 \u230aReal.exp T\u230b\u208a, pickupResponse n u ^ 2 = \u2211 n \u2208 Finset.Icc 1 \u230aReal.exp u\u230b\u208a, pickupResponse n u ^ 2"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.GramDiagonalBound",
+        "name": "GRWTSK.RiemannHypothesis.CCC.diagonalComparison_atom",
+        "type": "\u2200 {u : \u211d} {n : \u2115}, 1 \u2264 n \u2192 n \u2264 \u230aReal.exp u\u230b\u208a \u2192 pickupResponse n u ^ 2 = diagonalComparison u \u2191n"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.GramDiagonalBound",
+        "name": "GRWTSK.RiemannHypothesis.CCC.diagonal_sum_Icc_eq_range._simp_1_1",
+        "type": "\u2200 {n m : \u2115}, (m \u2208 Finset.range n) = (m < n)"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.GramDiagonalBound",
+        "name": "GRWTSK.RiemannHypothesis.CCC.diagonalComparison_eq_below_one",
+        "type": "\u2200 {u x : \u211d}, x \u2264 1 \u2192 diagonalComparison u x = 4 * (1 - Real.exp (-u / 2)) ^ 2"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.GramDiagonalBound",
+        "name": "GRWTSK.RiemannHypothesis.CCC.diagonal_time_integral",
+        "type": "\u2200 (T : \u211d), \u222b (u : \u211d) in 0..T, 4 * u - 8 + 8 * Real.exp (-u / 2) = 2 * T ^ 2 - 8 * T + 16 * (1 - Real.exp (-T / 2))"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.GramDiagonalBound",
+        "name": "GRWTSK.RiemannHypothesis.CCC.diagonal_sqrt_exp",
+        "type": "\u2200 (u : \u211d), \u221a(Real.exp u) = Real.exp (u / 2)"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.GramDiagonalBound",
+        "name": "GRWTSK.RiemannHypothesis.CCC.diagonal_sum_Icc_eq_range._proof_1_6",
+        "type": "\u2200 (N k : \u2115), \u00ack + 1 - 1 = k \u2192 False"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.GramDiagonalBound",
+        "name": "GRWTSK.RiemannHypothesis.CCC.diagonalComparison.eq_1",
+        "type": "\u2200 (u x : \u211d), diagonalComparison u x = 4 * ((\u221a(max 1 x))\u207b\u00b9 - Real.exp (-u / 2)) ^ 2"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.GramDiagonalBound",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupDiagonal_eq_integral_density",
+        "type": "\u2200 (T : \u211d),\n  pickupDiagonal T = \u222b (u : \u211d) in 0..T, \u2211 n \u2208 Finset.Icc 1 \u230aReal.exp T\u230b\u208a, moebiusReal n ^ 2 * pickupResponse n u ^ 2"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.GramDiagonalBound",
+        "name": "GRWTSK.RiemannHypothesis.CCC.diagonalComparison_nonneg",
+        "type": "\u2200 (u x : \u211d), 0 \u2264 diagonalComparison u x"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.GramDiagonalBound",
+        "name": "GRWTSK.RiemannHypothesis.CCC.diagonalComparison_sum_le_integral",
+        "type": "\u2200 {u : \u211d},\n  0 \u2264 u \u2192 \u2211 n \u2208 Finset.Icc 1 \u230aReal.exp u\u230b\u208a, diagonalComparison u \u2191n \u2264 \u222b (x : \u211d) in 0..Real.exp u, diagonalComparison u x"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.GramDiagonalBound",
+        "name": "GRWTSK.RiemannHypothesis.CCC.moebiusReal_sq_le_one",
+        "type": "\u2200 (n : \u2115), moebiusReal n ^ 2 \u2264 1"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.GramDiagonalBound",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupDiagonal_sharp_bound",
+        "type": "\u2200 {T : \u211d},\n  0 \u2264 T \u2192\n    0 \u2264 pickupDiagonal T \u2227\n      pickupDiagonal T \u2264 2 * T ^ 2 - 8 * T + 16 * (1 - Real.exp (-T / 2)) \u2227\n        2 * T ^ 2 - 8 * T + 16 * (1 - Real.exp (-T / 2)) \u2264 2 * T ^ 2"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.GramDiagonalBound",
+        "name": "GRWTSK.RiemannHypothesis.CCC.diagonal_negative_half_sqrt",
+        "type": "\u2200 (u : \u211d), Real.exp (-u / 2) = (\u221a(Real.exp u))\u207b\u00b9"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.GramDiagonalBound",
+        "name": "GRWTSK.RiemannHypothesis.CCC.diagonalComparison_antitone",
+        "type": "\u2200 {u : \u211d}, 0 \u2264 u \u2192 AntitoneOn (diagonalComparison u) (Set.Icc 0 (Real.exp u))"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.GramDiagonalBound",
+        "name": "GRWTSK.RiemannHypothesis.CCC.diagonalComparison_eq_above_one",
+        "type": "\u2200 {u x : \u211d}, 1 \u2264 x \u2192 diagonalComparison u x = 4 * ((\u221ax)\u207b\u00b9 - Real.exp (-u / 2)) ^ 2"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.GramDiagonalBound",
+        "name": "GRWTSK.RiemannHypothesis.CCC.diagonal_sum_Icc_eq_range",
+        "type": "\u2200 (N : \u2115) (f : \u2115 \u2192 \u211d), \u2211 n \u2208 Finset.Icc 1 N, f n = \u2211 k \u2208 Finset.range N, f (k + 1)"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.GramDiagonalBound",
+        "name": "GRWTSK.RiemannHypothesis.CCC.diagonal_time_integral._simp_1_1",
+        "type": "\u2200 {R : Type u_1} [inst : AddMonoidWithOne R] [CharZero R] (n : \u2115) [inst_2 : n.AtLeastTwo], (OfNat.ofNat n = 0) = False"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.GramDiagonalBound",
+        "name": "GRWTSK.RiemannHypothesis.CCC.diagonalComparison._proof_1",
+        "type": "(3 + 1).AtLeastTwo"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.GramDiagonalBound",
+        "name": "GRWTSK.RiemannHypothesis.CCC.diagonal_sum_Icc_eq_range._proof_1_2",
+        "type": "\u2200 (N n : \u2115), 1 \u2264 n \u2227 n \u2264 N \u2192 \u00acn - 1 < N \u2192 False"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.GramDiagonalBound",
+        "name": "GRWTSK.RiemannHypothesis.CCC.diagonal_sum_Icc_eq_range._proof_1_3",
+        "type": "\u2200 (n m : \u2115), n - 1 = m - 1 \u2192 1 \u2264 n \u2192 1 \u2264 m \u2192 \u00acn = m \u2192 False"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.GramDiagonalBound",
+        "name": "GRWTSK.RiemannHypothesis.CCC.diagonal_inverse_sqrt_integral",
+        "type": "\u2200 {u : \u211d}, 0 \u2264 u \u2192 \u222b (x : \u211d) in 1..Real.exp u, (\u221ax)\u207b\u00b9 = 2 * (Real.exp (u / 2) - 1)"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.GramDiagonalBound",
+        "name": "GRWTSK.RiemannHypothesis.CCC.diagonalComparison_continuous",
+        "type": "\u2200 (u : \u211d), Continuous (diagonalComparison u)"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.GramDiagonalBound",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupDiagonal_le_sharp",
+        "type": "\u2200 {T : \u211d}, 0 \u2264 T \u2192 pickupDiagonal T \u2264 2 * T ^ 2 - 8 * T + 16 * (1 - Real.exp (-T / 2))"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.GramDiagonalBound",
+        "name": "GRWTSK.RiemannHypothesis.CCC.diagonalComparison_integral",
+        "type": "\u2200 {u : \u211d}, 0 \u2264 u \u2192 \u222b (x : \u211d) in 0..Real.exp u, diagonalComparison u x = 4 * u - 8 + 8 * Real.exp (-u / 2)"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "definition",
+        "module": "GRWTSK.NumberTheory.Moebius.LaplaceTransform",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupLaplaceDomain",
+        "type": "Set \u2102"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "definition",
+        "module": "GRWTSK.NumberTheory.Moebius.LaplaceTransform",
+        "name": "GRWTSK.RiemannHypothesis.CCC.signedPickupLaplace",
+        "type": "\u2102 \u2192 \u2102"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.DirichletLaplaceIdentity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform.pickupTriangle_time_integral",
+        "type": "\u2200 (z : \u2102) (t : \u211d),\n  0 < t \u2192\n    \u222b (u : \u211d) in Set.Ioi 0, PickupInitialTransform.pickupTriangle z (t, u) = Complex.exp (-z * \u2191t) * \u2191(wholePickup t)"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.DirichletLaplaceIdentity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform.mertensPrefix_laplace",
+        "type": "\u2200 {s : \u2102},\n  1 < s.re \u2192 \u222b (u : \u211d) in Set.Ioi 0, Complex.exp (-s * \u2191u) * \u2191(mertensPrefix (Real.exp u)) = 1 / (s * riemannZeta s)"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.DirichletLaplaceIdentity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform.wholePickup_laplace",
+        "type": "\u2200 {z : \u2102},\n  1 / 2 < z.re \u2192\n    \u222b (t : \u211d) in Set.Ioi 0, Complex.exp (-z * \u2191t) * \u2191(wholePickup t) = 1 / (z * (z + 1 / 2) * riemannZeta (z + 1 / 2))"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.DirichletLaplaceIdentity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform.complexMoebius.eq_1",
+        "type": "\u2200 (n : \u2115), PickupInitialTransform.complexMoebius n = \u2191(moebiusReal n)"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.DirichletLaplaceIdentity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform.complexMoebius_summable",
+        "type": "\u2200 {s : \u2102}, 1 < s.re \u2192 LSeriesSummable PickupInitialTransform.complexMoebius s"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.DirichletLaplaceIdentity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform.pickupTriangle_density_integral",
+        "type": "\u2200 {z : \u2102},\n  1 / 2 < z.re \u2192\n    \u2200 (u : \u211d),\n      0 < u \u2192\n        \u222b (t : \u211d) in Set.Ioi 0, PickupInitialTransform.pickupTriangle z (t, u) =\n          z\u207b\u00b9 * (Complex.exp (-z * \u2191u) * \u2191(pickupVelocity u))"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "definition",
+        "module": "GRWTSK.NumberTheory.Moebius.DirichletLaplaceIdentity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform.pickupTriangle",
+        "type": "\u2102 \u2192 \u211d \u00d7 \u211d \u2192 \u2102"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.DirichletLaplaceIdentity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.moebiusReal.eq_1",
+        "type": "\u2200 (n : \u2115), moebiusReal n = \u2191(ArithmeticFunction.moebius n)"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.DirichletLaplaceIdentity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform.mertensPrefix_mellin",
+        "type": "\u2200 {s : \u2102}, 1 < s.re \u2192 \u222b (x : \u211d) in Set.Ioi 1, \u2191(mertensPrefix x) * \u2191x ^ (-(s + 1)) = 1 / (s * riemannZeta s)"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.DirichletLaplaceIdentity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform.pickupTriangle_measurable",
+        "type": "\u2200 (z : \u2102), Measurable (PickupInitialTransform.pickupTriangle z)"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.DirichletLaplaceIdentity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform.pickupTriangle_integrable",
+        "type": "\u2200 {z : \u2102},\n  1 / 2 < z.re \u2192\n    MeasureTheory.Integrable (PickupInitialTransform.pickupTriangle z)\n      ((MeasureTheory.volume.restrict (Set.Ioi 0)).prod (MeasureTheory.volume.restrict (Set.Ioi 0)))"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.DirichletLaplaceIdentity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform.complexMoebius_eq",
+        "type": "\u2200 (n : \u2115), PickupInitialTransform.complexMoebius n = \u2191(ArithmeticFunction.moebius n)"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.DirichletLaplaceIdentity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform.complexMoebius_LSeries",
+        "type": "\u2200 {s : \u2102}, 1 < s.re \u2192 LSeries PickupInitialTransform.complexMoebius s = 1 / riemannZeta s"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.DirichletLaplaceIdentity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform.initial_transform",
+        "type": "\u2200 {z : \u2102}, 1 / 2 < z.re \u2192 signedPickupLaplace z = 1 / (z * (z + 1 / 2) * riemannZeta (z + 1 / 2))"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.DirichletLaplaceIdentity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform.pickupTriangle.eq_1",
+        "type": "\u2200 (z : \u2102) (p : \u211d \u00d7 \u211d),\n  PickupInitialTransform.pickupTriangle z p =\n    {p | p.2 \u2264 p.1}.indicator (fun p => Complex.exp (-z * \u2191p.1) * \u2191(pickupVelocity p.2)) p"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "definition",
+        "module": "GRWTSK.NumberTheory.Moebius.DirichletLaplaceIdentity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform.complexMoebius",
+        "type": "\u2115 \u2192 \u2102"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.DirichletLaplaceIdentity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform.complexMoebius_prefix_bigO",
+        "type": "(fun n => \u2211 k \u2208 Finset.Icc 1 n, PickupInitialTransform.complexMoebius k) =O[Filter.atTop] fun n => \u2191n ^ 1"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.DirichletLaplaceIdentity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.signedPickupLaplace.eq_1",
+        "type": "\u2200 (z : \u2102), signedPickupLaplace z = \u222b (t : \u211d) in Set.Ioi 0, Complex.exp (-z * \u2191t) * \u2191(wholePickup t)"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.DirichletLaplaceIdentity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform.complexMoebius_prefix",
+        "type": "\u2200 (x : \u211d), \u2211 n \u2208 Finset.Icc 1 \u230ax\u230b\u208a, PickupInitialTransform.complexMoebius n = \u2191(mertensPrefix x)"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.DirichletLaplaceIdentity",
+        "name": "GRWTSK.RiemannHypothesis.CCC.PickupInitialTransform.pickupVelocity_laplace",
+        "type": "\u2200 {z : \u2102},\n  1 / 2 < z.re \u2192\n    \u222b (u : \u211d) in Set.Ioi 0, Complex.exp (-z * \u2191u) * \u2191(pickupVelocity u) = 1 / ((z + 1 / 2) * riemannZeta (z + 1 / 2))"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.Analysis.LaplaceTransform.PolynomialEnergy",
+        "name": "GRWTSK.RiemannHypothesis.CCC.integrableOn_tilt_of_polynomial_energy",
+        "type": "\u2200 {f : \u211d \u2192 \u211d},\n  Continuous f \u2192\n    \u2200 {C q : \u211d},\n      0 \u2264 C \u2192\n        (\u2200 (T : \u211d), 0 \u2264 T \u2192 \u222b (u : \u211d) in 0..T, f u ^ 2 \u2264 C * (1 + T) ^ q) \u2192\n          \u2200 {\u03c3 : \u211d},\n            0 < \u03c3 \u2192 MeasureTheory.IntegrableOn (fun u => Real.exp (-\u03c3 * u) * f u) (Set.Ioi 0) MeasureTheory.volume"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.Analysis.LaplaceTransform.PolynomialEnergy",
+        "name": "GRWTSK.RiemannHypothesis.CCC.summable_exp_neg_mul_nat_add_rpow",
+        "type": "\u2200 (\u03c3 q : \u211d), 0 < \u03c3 \u2192 Summable fun n => Real.exp (-\u03c3 * \u2191n) * (\u2191n + 2) ^ q"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.Analysis.LaplaceTransform.PolynomialEnergy",
+        "name": "GRWTSK.RiemannHypothesis.CCC.tilted_block_norm_bound",
+        "type": "\u2200 {f : \u211d \u2192 \u211d},\n  Continuous f \u2192\n    \u2200 {C q \u03c3 : \u211d},\n      0 < \u03c3 \u2192\n        (\u2200 (T : \u211d), 0 \u2264 T \u2192 \u222b (u : \u211d) in 0..T, f u ^ 2 \u2264 C * (1 + T) ^ q) \u2192\n          \u2200 (n : \u2115),\n            \u222b (u : \u211d) in Set.Icc (\u2191n) (\u2191n + 1), \u2016Real.exp (-\u03c3 * u) * f u\u2016 \u2264 Real.exp (-\u03c3 * \u2191n) * (1 + C * (\u2191n + 2) ^ q)"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.Analysis.LaplaceTransform.Analytic",
+        "name": "GRWTSK.RiemannHypothesis.CCC.Laplace.transform_analytic",
+        "type": "\u2200 {\u03a9 : Type u_1} [inst : MeasurableSpace \u03a9] {X : \u03a9 \u2192 \u211d} {\u03bc : MeasureTheory.Measure \u03a9} (a : \u211d),\n  (\u2200 (t : \u211d), a < t \u2192 MeasureTheory.Integrable (fun \u03c9 => Real.exp (-t * X \u03c9)) \u03bc) \u2192\n    \u2200 (s : \u2102), a < s.re \u2192 AnalyticAt \u2102 (Laplace.transform X \u03bc) s"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "definition",
+        "module": "GRWTSK.Analysis.LaplaceTransform.Analytic",
+        "name": "GRWTSK.RiemannHypothesis.CCC.Laplace.transform",
+        "type": "{\u03a9 : Type u_1} \u2192 [inst : MeasurableSpace \u03a9] \u2192 (\u03a9 \u2192 \u211d) \u2192 MeasureTheory.Measure \u03a9 \u2192 \u2102 \u2192 \u2102"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "definition",
+        "module": "GRWTSK.NumberTheory.Moebius.LaplaceHolomorphy",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupPartMeasure",
+        "type": "\u211d \u2192 MeasureTheory.Measure \u211d"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.LaplaceHolomorphy",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickup_part_complex_integrable",
+        "type": "Continuous wholePickup \u2192\n  (\u2200 (\u03c3 : \u211d),\n      0 < \u03c3 \u2192\n        MeasureTheory.IntegrableOn (fun u => Real.exp (-\u03c3 * u) * wholePickup u) (Set.Ioi 0) MeasureTheory.volume) \u2192\n    \u2200 {\u03b5 : \u211d},\n      |\u03b5| \u2264 1 \u2192\n        \u2200 {z : \u2102},\n          0 < z.re \u2192\n            MeasureTheory.Integrable (fun u => \u2191(pickupPartDensity \u03b5 u) \u2022 Complex.exp (-z * \u2191u))\n              (MeasureTheory.volume.restrict (Set.Ioi 0))"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.LaplaceHolomorphy",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupPartDensity.eq_1",
+        "type": "\u2200 (\u03b5 u : \u211d), pickupPartDensity \u03b5 u = (\u03b5 * wholePickup u).toNNReal"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.LaplaceHolomorphy",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupPartMeasure.eq_1",
+        "type": "\u2200 (\u03b5 : \u211d),\n  pickupPartMeasure \u03b5 = (MeasureTheory.volume.restrict (Set.Ioi 0)).withDensity fun u => \u2191(pickupPartDensity \u03b5 u)"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.LaplaceHolomorphy",
+        "name": "GRWTSK.RiemannHypothesis.CCC.differentiableOn_signedPickupLaplace_of_energy_poly",
+        "type": "Continuous wholePickup \u2192 PickupEnergyPoly \u2192 DifferentiableOn \u2102 signedPickupLaplace pickupLaplaceDomain"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "definition",
+        "module": "GRWTSK.NumberTheory.Moebius.LaplaceHolomorphy",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupPartDensity",
+        "type": "\u211d \u2192 \u211d \u2192 NNReal"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.LaplaceHolomorphy",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupPartDensity_continuous",
+        "type": "Continuous wholePickup \u2192 \u2200 (\u03b5 : \u211d), Continuous (pickupPartDensity \u03b5)"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.LaplaceHolomorphy",
+        "name": "GRWTSK.RiemannHypothesis.CCC.analyticAt_signedPickupLaplace_of_tilts",
+        "type": "Continuous wholePickup \u2192\n  (\u2200 (\u03c3 : \u211d),\n      0 < \u03c3 \u2192\n        MeasureTheory.IntegrableOn (fun u => Real.exp (-\u03c3 * u) * wholePickup u) (Set.Ioi 0) MeasureTheory.volume) \u2192\n    \u2200 {z : \u2102}, 0 < z.re \u2192 AnalyticAt \u2102 signedPickupLaplace z"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.LaplaceHolomorphy",
+        "name": "GRWTSK.RiemannHypothesis.CCC.signedPickupLaplace_eq_part_difference",
+        "type": "Continuous wholePickup \u2192\n  (\u2200 (\u03c3 : \u211d),\n      0 < \u03c3 \u2192\n        MeasureTheory.IntegrableOn (fun u => Real.exp (-\u03c3 * u) * wholePickup u) (Set.Ioi 0) MeasureTheory.volume) \u2192\n    \u2200 {z : \u2102},\n      0 < z.re \u2192\n        Laplace.transform id (pickupPartMeasure 1) z - Laplace.transform id (pickupPartMeasure (-1)) z =\n          signedPickupLaplace z"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.LaplaceHolomorphy",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickup_part_real_integrable",
+        "type": "Continuous wholePickup \u2192\n  (\u2200 (\u03c3 : \u211d),\n      0 < \u03c3 \u2192\n        MeasureTheory.IntegrableOn (fun u => Real.exp (-\u03c3 * u) * wholePickup u) (Set.Ioi 0) MeasureTheory.volume) \u2192\n    \u2200 {\u03b5 \u03c3 : \u211d}, |\u03b5| \u2264 1 \u2192 0 < \u03c3 \u2192 MeasureTheory.Integrable (fun u => Real.exp (-\u03c3 * u)) (pickupPartMeasure \u03b5)"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.LaplaceHolomorphy",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickup_tilt_integrable_of_energy_poly",
+        "type": "Continuous wholePickup \u2192\n  PickupEnergyPoly \u2192\n    \u2200 {\u03c3 : \u211d},\n      0 < \u03c3 \u2192 MeasureTheory.IntegrableOn (fun u => Real.exp (-\u03c3 * u) * wholePickup u) (Set.Ioi 0) MeasureTheory.volume"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Zeta.Riemann.Regularized",
+        "name": "GRWTSK.RiemannHypothesis.CCC.regularizedZeta_eq._simp_1_3",
+        "type": "\u2200 {\u03b1 : Type u_2} [inst : Zero \u03b1] [inst_1 : OfNat \u03b1 4] [NeZero 4], (4 = 0) = False"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Zeta.Riemann.Regularized",
+        "name": "GRWTSK.RiemannHypothesis.CCC.regularizedZeta_eq._simp_1_5",
+        "type": "\u2200 {M\u2080 : Type u_1} [inst : MonoidWithZero M\u2080] {a : M\u2080} [IsReduced M\u2080] (n : \u2115), a \u2260 0 \u2192 (a ^ n = 0) = False"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "definition",
+        "module": "GRWTSK.NumberTheory.Zeta.Riemann.Regularized",
+        "name": "GRWTSK.RiemannHypothesis.CCC.regularizedZeta",
+        "type": "\u2102 \u2192 \u2102"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Zeta.Riemann.Regularized",
+        "name": "GRWTSK.RiemannHypothesis.CCC.regularizedZeta_eq",
+        "type": "\u2200 {z : \u2102}, z \u2260 0 \u2192 z \u2260 1 \u2192 regularizedZeta z = z * (z - 1) * riemannZeta z"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Zeta.Riemann.Regularized",
+        "name": "GRWTSK.RiemannHypothesis.CCC.regularizedZeta_eq._simp_1_2",
+        "type": "\u2200 {\u03b1 : Type u_2} [inst : Zero \u03b1] [inst_1 : OfNat \u03b1 3] [NeZero 3], (3 = 0) = False"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Zeta.Riemann.Regularized",
+        "name": "GRWTSK.RiemannHypothesis.CCC.regularizedZeta_eq._simp_1_4",
+        "type": "\u2200 {M\u2080 : Type u_1} [inst : Mul M\u2080] [inst_1 : Zero M\u2080] [NoZeroDivisors M\u2080] {a b : M\u2080}, a \u2260 0 \u2192 b \u2260 0 \u2192 (a * b = 0) = False"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Zeta.Riemann.Regularized",
+        "name": "GRWTSK.RiemannHypothesis.CCC.regularizedZeta_eq._simp_1_7",
+        "type": "\u2200 {R : Type u_1} [inst : AddMonoidWithOne R] [CharZero R] (n : \u2115), (\u2191n + 1 = 0) = False"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Zeta.Riemann.Regularized",
+        "name": "GRWTSK.RiemannHypothesis.CCC.regularizedZeta_eq._simp_1_6",
+        "type": "\u2200 {G\u2080 : Type u_3} [inst : GroupWithZero G\u2080] {a : G\u2080} (n : \u2124), a \u2260 0 \u2192 (a ^ n = 0) = False"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Zeta.Riemann.Regularized",
+        "name": "GRWTSK.RiemannHypothesis.CCC.differentiable_regularizedZeta",
+        "type": "Differentiable \u2102 regularizedZeta"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Zeta.Riemann.Regularized",
+        "name": "GRWTSK.RiemannHypothesis.CCC.regularizedZeta_eq._simp_1_1",
+        "type": "\u2200 {\u03b1 : Type u_2} [inst : Zero \u03b1] [inst_1 : OfNat \u03b1 2] [NeZero 2], (2 = 0) = False"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Zeta.Riemann.LaplaceCriterion",
+        "name": "GRWTSK.RiemannHypothesis.CCC.riemannHypothesis_of_holomorphic_signedPickupLaplace",
+        "type": "DifferentiableOn \u2102 signedPickupLaplace pickupLaplaceDomain \u2192\n  (\u2200 (z : \u2102), 1 / 2 < z.re \u2192 signedPickupLaplace z = 1 / (z * (z + 1 / 2) * riemannZeta (z + 1 / 2))) \u2192\n    RiemannHypothesis"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Zeta.Riemann.LaplaceCriterion",
+        "name": "GRWTSK.RiemannHypothesis.CCC.regularized_initial_identity_of_inverse",
+        "type": "\u2200 (L : \u2102 \u2192 \u2102),\n  (\u2200 (z : \u2102), 1 / 2 < z.re \u2192 L z = 1 / (z * (z + 1 / 2) * riemannZeta (z + 1 / 2))) \u2192\n    \u2200 (z : \u2102), 1 / 2 < z.re \u2192 z * regularizedZeta (z + 1 / 2) * L z = z - 1 / 2"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Zeta.Riemann.LaplaceCriterion",
+        "name": "GRWTSK.RiemannHypothesis.CCC.riemannHypothesis_of_holomorphic_laplace",
+        "type": "\u2200 (L : \u2102 \u2192 \u2102),\n  DifferentiableOn \u2102 L pickupLaplaceDomain \u2192\n    (\u2200 (z : \u2102), 1 / 2 < z.re \u2192 z * regularizedZeta (z + 1 / 2) * L z = z - 1 / 2) \u2192 RiemannHypothesis"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Zeta.Riemann.LaplaceCriterion",
+        "name": "GRWTSK.RiemannHypothesis.CCC.zeta_ne_zero_of_holomorphic_laplace",
+        "type": "\u2200 (L : \u2102 \u2192 \u2102),\n  DifferentiableOn \u2102 L pickupLaplaceDomain \u2192\n    (\u2200 (z : \u2102), 1 / 2 < z.re \u2192 z * regularizedZeta (z + 1 / 2) * L z = z - 1 / 2) \u2192\n      \u2200 (s : \u2102), 1 / 2 < s.re \u2192 s \u2260 1 \u2192 riemannZeta s \u2260 0"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Zeta.Riemann.LaplaceCriterion",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupLaplaceDomain.eq_1",
+        "type": "pickupLaplaceDomain = {z | 0 < z.re}"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Zeta.Riemann.LaplaceCriterion",
+        "name": "GRWTSK.RiemannHypothesis.CCC.regularized_laplace_identity",
+        "type": "\u2200 (L : \u2102 \u2192 \u2102),\n  DifferentiableOn \u2102 L pickupLaplaceDomain \u2192\n    (\u2200 (z : \u2102), 1 / 2 < z.re \u2192 z * regularizedZeta (z + 1 / 2) * L z = z - 1 / 2) \u2192\n      \u2200 (z : \u2102), 0 < z.re \u2192 z * regularizedZeta (z + 1 / 2) * L z = z - 1 / 2"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Zeta.Riemann.PolynomialEnergyCriterion",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupCrossPoly_iff_pickupEnergyPoly",
+        "type": "PickupCrossPoly \u2194 PickupEnergyPoly"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Zeta.Riemann.PolynomialEnergyCriterion",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupCross_lower",
+        "type": "\u2200 {T : \u211d}, 0 \u2264 T \u2192 -(2 * T ^ 2) \u2264 pickupCross T"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Zeta.Riemann.PolynomialEnergyCriterion",
+        "name": "GRWTSK.RiemannHypothesis.CCC.riemannHypothesis_of_pickupCrossPoly",
+        "type": "PickupCrossPoly \u2192 RiemannHypothesis"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Zeta.Riemann.PolynomialEnergyCriterion",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickup_energy_poly_signed_laplace_holomorphic",
+        "type": "PickupEnergyPoly \u2192 DifferentiableOn \u2102 signedPickupLaplace pickupLaplaceDomain"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Zeta.Riemann.PolynomialEnergyCriterion",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickup_initial_transform_identity",
+        "type": "\u2200 (z : \u2102), 1 / 2 < z.re \u2192 signedPickupLaplace z = 1 / (z * (z + 1 / 2) * riemannZeta (z + 1 / 2))"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Zeta.Riemann.PolynomialEnergyCriterion",
+        "name": "GRWTSK.RiemannHypothesis.CCC.riemannHypothesis_of_pickupEnergyPoly",
+        "type": "PickupEnergyPoly \u2192 RiemannHypothesis"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupDeterminant.eq_1",
+        "type": "\u2200 (T : \u211d),\n  pickupDeterminant T = (1 + Matrix.vecMulVec ((responseMatrix T).mulVec (coefficientRow T)) (coefficientRow T)).det"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm",
+        "name": "GRWTSK.RiemannHypothesis.CCC.responseMatrix.eq_1",
+        "type": "\u2200 (T : \u211d) (m n : PickupIndex T), responseMatrix T m n = pickupResponseGram T \u2191m \u2191n"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "definition",
+        "module": "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm",
+        "name": "GRWTSK.RiemannHypothesis.CCC.responseMatrix",
+        "type": "(T : \u211d) \u2192 Matrix (PickupIndex T) (PickupIndex T) \u211d"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupDeterminant_eq_energy",
+        "type": "\u2200 {T : \u211d}, 0 \u2264 T \u2192 pickupDeterminant T = 1 + pickupEnergy T"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "definition",
+        "module": "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm",
+        "name": "GRWTSK.RiemannHypothesis.CCC.PickupIndex",
+        "type": "\u211d \u2192 Type"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "definition",
+        "module": "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupDeterminant",
+        "type": "\u211d \u2192 \u211d"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm",
+        "name": "GRWTSK.RiemannHypothesis.CCC.determinant_encoding",
+        "type": "\u2200 {\u03b9 : Type u_1} [inst : Fintype \u03b9] [inst_1 : DecidableEq \u03b9] (H : Matrix \u03b9 \u03b9 \u211d) (c : \u03b9 \u2192 \u211d),\n  (1 + Matrix.vecMulVec (H.mulVec c) c).det = 1 + \u2211 m, \u2211 n, c m * c n * H m n"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupFullGram.eq_1",
+        "type": "\u2200 (T : \u211d),\n  pickupFullGram T =\n    \u2211 m \u2208 Finset.Icc 1 \u230aReal.exp T\u230b\u208a,\n      \u2211 n \u2208 Finset.Icc 1 \u230aReal.exp T\u230b\u208a, moebiusReal m * moebiusReal n * pickupResponseGram T m n"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm",
+        "name": "GRWTSK.RiemannHypothesis.CCC.coefficientRow.eq_1",
+        "type": "\u2200 (T : \u211d) (n : PickupIndex T), coefficientRow T n = moebiusReal \u2191n"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupDeterminant_bound_iff",
+        "type": "\u2200 {T B : \u211d}, 0 \u2264 T \u2192 (pickupDeterminant T \u2264 1 + B \u2194 pickupEnergy T \u2264 B)"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "definition",
+        "module": "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm",
+        "name": "GRWTSK.RiemannHypothesis.CCC.coefficientRow",
+        "type": "(T : \u211d) \u2192 PickupIndex T \u2192 \u211d"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupDeterminant_poly_iff",
+        "type": "(\u2203 C q, 0 \u2264 C \u2227 0 \u2264 q \u2227 \u2200 (T : \u211d), 0 \u2264 T \u2192 pickupDeterminant T \u2264 1 + C * (1 + T) ^ q) \u2194 PickupEnergyPoly"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.Analysis.Asymptotics.PolynomialSubexponential",
+        "name": "GRWTSK.RiemannHypothesis.CCC.SubexponentialUpper.add",
+        "type": "\u2200 {f g : \u211d \u2192 \u211d}, SubexponentialUpper f \u2192 SubexponentialUpper g \u2192 SubexponentialUpper fun T => f T + g T"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.Analysis.Asymptotics.PolynomialSubexponential",
+        "name": "GRWTSK.RiemannHypothesis.CCC.subexponentialUpper_of_polynomial",
+        "type": "\u2200 {f : \u211d \u2192 \u211d} {C q : \u211d}, 0 \u2264 C \u2192 (\u2200 (T : \u211d), 0 \u2264 T \u2192 f T \u2264 C * (1 + T) ^ q) \u2192 SubexponentialUpper f"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.Analysis.Asymptotics.PolynomialSubexponential",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pow_le_factorial_mul_exp._simp_1_1",
+        "type": "\u2200 {\u03b1 : Type u_2} [inst : Zero \u03b1] [inst_1 : OfNat \u03b1 2] [NeZero 2], (2 = 0) = False"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.Analysis.Asymptotics.PolynomialSubexponential",
+        "name": "GRWTSK.RiemannHypothesis.CCC.SubexponentialUpper.mono",
+        "type": "\u2200 {f g : \u211d \u2192 \u211d}, SubexponentialUpper g \u2192 (\u2200 (T : \u211d), 0 \u2264 T \u2192 f T \u2264 g T) \u2192 SubexponentialUpper f"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.Analysis.Asymptotics.PolynomialSubexponential",
+        "name": "GRWTSK.RiemannHypothesis.CCC.SubexponentialUpper.const_mul",
+        "type": "\u2200 {f : \u211d \u2192 \u211d}, SubexponentialUpper f \u2192 \u2200 {a : \u211d}, 0 \u2264 a \u2192 SubexponentialUpper fun T => a * f T"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.Analysis.Asymptotics.PolynomialSubexponential",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pow_le_factorial_mul_exp._simp_1_3",
+        "type": "\u2200 {\u03b1 : Type u_2} [inst : Zero \u03b1] [inst_1 : OfNat \u03b1 4] [NeZero 4], (4 = 0) = False"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "definition",
+        "module": "GRWTSK.Analysis.Asymptotics.PolynomialSubexponential",
+        "name": "GRWTSK.RiemannHypothesis.CCC.SubexponentialUpper",
+        "type": "(\u211d \u2192 \u211d) \u2192 Prop"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.Analysis.Asymptotics.PolynomialSubexponential",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pow_le_factorial_mul_exp",
+        "type": "\u2200 {\u03b5 T : \u211d}, 0 < \u03b5 \u2192 0 \u2264 T \u2192 \u2200 (k : \u2115), T ^ k \u2264 \u2191k.factorial / \u03b5 ^ k * Real.exp (\u03b5 * T)"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.Analysis.Asymptotics.PolynomialSubexponential",
+        "name": "GRWTSK.RiemannHypothesis.CCC.shifted_rpow_le_exponential",
+        "type": "\u2200 (q : \u211d) {\u03b5 T : \u211d}, 0 < \u03b5 \u2192 0 \u2264 T \u2192 (1 + T) ^ q \u2264 \u2191\u2308q\u2309\u208a.factorial / \u03b5 ^ \u2308q\u2309\u208a * Real.exp \u03b5 * Real.exp (\u03b5 * T)"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.Analysis.Asymptotics.PolynomialSubexponential",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pow_le_factorial_mul_exp._simp_1_5",
+        "type": "\u2200 {M\u2080 : Type u_1} [inst : MonoidWithZero M\u2080] {a : M\u2080} [IsReduced M\u2080] (n : \u2115), a \u2260 0 \u2192 (a ^ n = 0) = False"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.Analysis.Asymptotics.PolynomialSubexponential",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pow_le_factorial_mul_exp._simp_1_6",
+        "type": "\u2200 {G\u2080 : Type u_3} [inst : GroupWithZero G\u2080] {a : G\u2080} (n : \u2124), a \u2260 0 \u2192 (a ^ n = 0) = False"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.Analysis.Asymptotics.PolynomialSubexponential",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pow_le_factorial_mul_exp._simp_1_4",
+        "type": "\u2200 {M\u2080 : Type u_1} [inst : Mul M\u2080] [inst_1 : Zero M\u2080] [NoZeroDivisors M\u2080] {a b : M\u2080}, a \u2260 0 \u2192 b \u2260 0 \u2192 (a * b = 0) = False"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.Analysis.Asymptotics.PolynomialSubexponential",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pow_le_factorial_mul_exp._simp_1_7",
+        "type": "\u2200 {R : Type u_1} [inst : AddMonoidWithOne R] [CharZero R] (n : \u2115), (\u2191n + 1 = 0) = False"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.Analysis.Asymptotics.PolynomialSubexponential",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pow_le_factorial_mul_exp._simp_1_2",
+        "type": "\u2200 {\u03b1 : Type u_2} [inst : Zero \u03b1] [inst_1 : OfNat \u03b1 3] [NeZero 3], (3 = 0) = False"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.Analysis.LaplaceTransform.ExponentialEnergy",
+        "name": "GRWTSK.RiemannHypothesis.CCC.integrableOn_sq_tilt_of_energy_exponential",
+        "type": "\u2200 {f : \u211d \u2192 \u211d},\n  Continuous f \u2192\n    \u2200 {C \u03b4 \u03c3 : \u211d},\n      0 < \u03c3 \u2192\n        \u03b4 < \u03c3 \u2192\n          (\u2200 (T : \u211d), 0 \u2264 T \u2192 \u222b (u : \u211d) in 0..T, f u ^ 2 \u2264 C * Real.exp (\u03b4 * T)) \u2192\n            MeasureTheory.IntegrableOn (fun u => Real.exp (-\u03c3 * u) * f u ^ 2) (Set.Ici 0) MeasureTheory.volume"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.UnsignedEnergyBound",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergy_exponential_allowance",
+        "type": "\u2200 {T : \u211d}, 0 \u2264 T \u2192 pickupEnergy T \u2264 2 * Real.exp T * T ^ 2"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.UnsignedEnergyBound",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergy_le_count_mul_diagonal",
+        "type": "\u2200 {T : \u211d}, 0 \u2264 T \u2192 pickupEnergy T \u2264 \u2191\u230aReal.exp T\u230b\u208a * pickupDiagonal T"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "definition",
+        "module": "GRWTSK.NumberTheory.Moebius.EnergyAbscissa",
+        "name": "GRWTSK.RiemannHypothesis.CCC.PickupWeightedEnergyAll",
+        "type": "Prop"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.EnergyAbscissa",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupCrossPoly_subexp",
+        "type": "PickupCrossPoly \u2192 PickupCrossSubexp"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.EnergyAbscissa",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupCrossSubexp_iff_pickupEnergySubexp",
+        "type": "PickupCrossSubexp \u2194 PickupEnergySubexp"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.EnergyAbscissa",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickup_weighted_energy_integrable_mono",
+        "type": "\u2200 {\u03c3 \u03c4 : \u211d},\n  \u03c3 \u2264 \u03c4 \u2192\n    MeasureTheory.IntegrableOn (fun u => Real.exp (-\u03c3 * u) * wholePickup u ^ 2) (Set.Ici 0) MeasureTheory.volume \u2192\n      MeasureTheory.IntegrableOn (fun u => Real.exp (-\u03c4 * u) * wholePickup u ^ 2) (Set.Ici 0) MeasureTheory.volume"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.EnergyAbscissa",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergyConvergenceSet_bddBelow",
+        "type": "BddBelow pickupEnergyConvergenceSet"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.EnergyAbscissa",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergyAbscissa_nonneg",
+        "type": "0 \u2264 pickupEnergyAbscissa"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.EnergyAbscissa",
+        "name": "GRWTSK.RiemannHypothesis.CCC.riemannHypothesis_of_pickupEnergyAbscissa_zero",
+        "type": "pickupEnergyAbscissa = 0 \u2192 RiemannHypothesis"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.EnergyAbscissa",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergyAbscissa_le_one",
+        "type": "pickupEnergyAbscissa \u2264 1"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.EnergyAbscissa",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergyAbscissa_zero_iff_weightedEnergyAll",
+        "type": "pickupEnergyAbscissa = 0 \u2194 PickupWeightedEnergyAll"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.EnergyAbscissa",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergyAbscissa_le_of_integrable",
+        "type": "\u2200 {\u03c3 : \u211d},\n  0 < \u03c3 \u2192\n    MeasureTheory.IntegrableOn (fun u => Real.exp (-\u03c3 * u) * wholePickup u ^ 2) (Set.Ici 0) MeasureTheory.volume \u2192\n      pickupEnergyAbscissa \u2264 \u03c3"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.EnergyAbscissa",
+        "name": "GRWTSK.RiemannHypothesis.CCC.riemannHypothesis_of_pickupEnergySubexp",
+        "type": "PickupEnergySubexp \u2192 RiemannHypothesis"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.EnergyAbscissa",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergyConvergenceSet_nonempty",
+        "type": "pickupEnergyConvergenceSet.Nonempty"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "definition",
+        "module": "GRWTSK.NumberTheory.Moebius.EnergyAbscissa",
+        "name": "GRWTSK.RiemannHypothesis.CCC.PickupCrossSubexp",
+        "type": "Prop"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.EnergyAbscissa",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergyPoly_subexp",
+        "type": "PickupEnergyPoly \u2192 PickupEnergySubexp"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "definition",
+        "module": "GRWTSK.NumberTheory.Moebius.EnergyAbscissa",
+        "name": "GRWTSK.RiemannHypothesis.CCC.PickupEnergySubexp",
+        "type": "Prop"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.EnergyAbscissa",
+        "name": "GRWTSK.RiemannHypothesis.CCC.riemannHypothesis_of_pickupWeightedEnergyAll",
+        "type": "PickupWeightedEnergyAll \u2192 RiemannHypothesis"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.EnergyAbscissa",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickup_weighted_energy_integrable_above_abscissa",
+        "type": "\u2200 {\u03c3 : \u211d},\n  pickupEnergyAbscissa < \u03c3 \u2192\n    MeasureTheory.IntegrableOn (fun u => Real.exp (-\u03c3 * u) * wholePickup u ^ 2) (Set.Ici 0) MeasureTheory.volume"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.EnergyAbscissa",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergyAbscissa_zero_iff_crossSubexp",
+        "type": "pickupEnergyAbscissa = 0 \u2194 PickupCrossSubexp"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.EnergyAbscissa",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupWeightedEnergyAll_of_subexp",
+        "type": "PickupEnergySubexp \u2192 PickupWeightedEnergyAll"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.EnergyAbscissa",
+        "name": "GRWTSK.RiemannHypothesis.CCC.riemannHypothesis_of_pickupCrossSubexp",
+        "type": "PickupCrossSubexp \u2192 RiemannHypothesis"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.EnergyAbscissa",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergy_le_weighted_integral",
+        "type": "\u2200 {\u03c3 T : \u211d},\n  0 < \u03c3 \u2192\n    0 \u2264 T \u2192\n      MeasureTheory.IntegrableOn (fun u => Real.exp (-\u03c3 * u) * wholePickup u ^ 2) (Set.Ici 0) MeasureTheory.volume \u2192\n        pickupEnergy T \u2264 (\u222b (u : \u211d) in Set.Ici 0, Real.exp (-\u03c3 * u) * wholePickup u ^ 2) * Real.exp (\u03c3 * T)"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.EnergyAbscissa",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickup_weighted_energy_integrable_initial",
+        "type": "\u2200 {\u03c3 : \u211d},\n  1 < \u03c3 \u2192 MeasureTheory.IntegrableOn (fun u => Real.exp (-\u03c3 * u) * wholePickup u ^ 2) (Set.Ici 0) MeasureTheory.volume"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "definition",
+        "module": "GRWTSK.NumberTheory.Moebius.EnergyAbscissa",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergyAbscissa",
+        "type": "\u211d"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "definition",
+        "module": "GRWTSK.NumberTheory.Moebius.EnergyAbscissa",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergyConvergenceSet",
+        "type": "Set \u211d"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.EnergyAbscissa",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickup_tilt_integrable_of_weightedEnergyAll",
+        "type": "PickupWeightedEnergyAll \u2192\n  \u2200 {\u03c3 : \u211d},\n    0 < \u03c3 \u2192 MeasureTheory.IntegrableOn (fun u => Real.exp (-\u03c3 * u) * wholePickup u) (Set.Ioi 0) MeasureTheory.volume"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.EnergyAbscissa",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickup_weighted_energy_integral_antitone",
+        "type": "\u2200 {\u03c3 \u03c4 : \u211d},\n  \u03c3 \u2264 \u03c4 \u2192\n    MeasureTheory.IntegrableOn (fun u => Real.exp (-\u03c3 * u) * wholePickup u ^ 2) (Set.Ici 0) MeasureTheory.volume \u2192\n      \u222b (u : \u211d) in Set.Ici 0, Real.exp (-\u03c4 * u) * wholePickup u ^ 2 \u2264\n        \u222b (u : \u211d) in Set.Ici 0, Real.exp (-\u03c3 * u) * wholePickup u ^ 2"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.EnergyAbscissa",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergySubexp_iff_weightedEnergyAll",
+        "type": "PickupEnergySubexp \u2194 PickupWeightedEnergyAll"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.ComparisonEnergy",
+        "name": "GRWTSK.RiemannHypothesis.CCC.riemannHypothesis_of_pickup_comparison",
+        "type": "\u2200 {g : \u211d \u2192 \u211d},\n  Continuous g \u2192\n    (SubexponentialUpper fun T => \u222b (u : \u211d) in 0..T, g u ^ 2) \u2192\n      (SubexponentialUpper fun T => \u222b (u : \u211d) in 0..T, (wholePickup u - g u) ^ 2) \u2192 RiemannHypothesis"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.ComparisonEnergy",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergySubexp_of_comparison",
+        "type": "\u2200 {g : \u211d \u2192 \u211d},\n  Continuous g \u2192\n    (SubexponentialUpper fun T => \u222b (u : \u211d) in 0..T, g u ^ 2) \u2192\n      (SubexponentialUpper fun T => \u222b (u : \u211d) in 0..T, (wholePickup u - g u) ^ 2) \u2192 PickupEnergySubexp"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.ComparisonEnergy",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergy_comparison_le",
+        "type": "\u2200 {g : \u211d \u2192 \u211d},\n  Continuous g \u2192\n    \u2200 {T : \u211d},\n      0 \u2264 T \u2192 pickupEnergy T \u2264 (2 * \u222b (u : \u211d) in 0..T, g u ^ 2) + 2 * \u222b (u : \u211d) in 0..T, (wholePickup u - g u) ^ 2"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.IntegerSampleGrowth",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergySubexp_iff_nat",
+        "type": "PickupEnergySubexp \u2194 NatSubexponentialUpper pickupEnergy"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "definition",
+        "module": "GRWTSK.NumberTheory.Moebius.IntegerSampleGrowth",
+        "name": "GRWTSK.RiemannHypothesis.CCC.NatSubexponentialUpper",
+        "type": "(\u211d \u2192 \u211d) \u2192 Prop"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.IntegerSampleGrowth",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupCross_poly_of_nat_bound",
+        "type": "\u2200 {C r : \u211d},\n  0 \u2264 C \u2192\n    0 \u2264 r \u2192\n      (\u2200 (n : \u2115), pickupCross \u2191n \u2264 C * (1 + \u2191n) ^ r) \u2192\n        \u2200 (T : \u211d), 0 \u2264 T \u2192 pickupCross T \u2264 (C * 2 ^ r + 2) * (1 + T) ^ max r 2"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.IntegerSampleGrowth",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupCrossNatPoly_iff_crossPoly",
+        "type": "PickupCrossNatPoly \u2194 PickupCrossPoly"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.IntegerSampleGrowth",
+        "name": "GRWTSK.RiemannHypothesis.CCC.riemannHypothesis_of_pickupCrossNatSubexp",
+        "type": "PickupCrossNatSubexp \u2192 RiemannHypothesis"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.IntegerSampleGrowth",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupDeterminant_subexp_iff",
+        "type": "(\u2200 (\u03b5 : \u211d), 0 < \u03b5 \u2192 \u2203 C, 0 \u2264 C \u2227 \u2200 (T : \u211d), 0 \u2264 T \u2192 pickupDeterminant T \u2264 1 + C * Real.exp (\u03b5 * T)) \u2194 PickupEnergySubexp"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.IntegerSampleGrowth",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupEnergy_le_of_nat_exponential",
+        "type": "\u2200 {C \u03b5 T : \u211d},\n  0 \u2264 C \u2192\n    0 \u2264 \u03b5 \u2192\n      0 \u2264 T \u2192 (\u2200 (n : \u2115), pickupEnergy \u2191n \u2264 C * Real.exp (\u03b5 * \u2191n)) \u2192 pickupEnergy T \u2264 C * Real.exp \u03b5 * Real.exp (\u03b5 * T)"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.IntegerSampleGrowth",
+        "name": "GRWTSK.RiemannHypothesis.CCC.riemannHypothesis_of_pickupCrossNatPoly",
+        "type": "PickupCrossNatPoly \u2192 RiemannHypothesis"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.IntegerSampleGrowth",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupCross_le_next_sample",
+        "type": "\u2200 {T : \u211d}, 0 \u2264 T \u2192 pickupCross T \u2264 pickupCross \u2191\u2308T\u2309\u208a + 2 * (1 + T) ^ 2"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "theorem",
+        "module": "GRWTSK.NumberTheory.Moebius.IntegerSampleGrowth",
+        "name": "GRWTSK.RiemannHypothesis.CCC.pickupCrossNatSubexp_iff_crossSubexp",
+        "type": "PickupCrossNatSubexp \u2194 PickupCrossSubexp"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "definition",
+        "module": "GRWTSK.NumberTheory.Moebius.IntegerSampleGrowth",
+        "name": "GRWTSK.RiemannHypothesis.CCC.PickupCrossNatPoly",
+        "type": "Prop"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "kind": "definition",
+        "module": "GRWTSK.NumberTheory.Moebius.IntegerSampleGrowth",
+        "name": "GRWTSK.RiemannHypothesis.CCC.PickupCrossNatSubexp",
+        "type": "Prop"
+      }
+    ],
+    "source": "checks/Analysis/Energy/Declarations.lean",
+    "source_sha256": "28809c1aba0124e3da4b6fd8171cf98f941083492f3f6046bdacab78860154e5"
+  },
+  "negative_profiles": {
+    "checks/Analysis/Energy/Controls/DeterminantPaysBudget.lean": {
+      "diagnostic": {
+        "caption": "",
+        "data": "Type mismatch\n  pickupDeterminant_eq_energy\nhas type\n  0 \u2264 ?m.1 \u2192 pickupDeterminant ?m.1 = 1 + pickupEnergy ?m.1\nbut is expected to have type\n  PickupEnergyPoly",
+        "endPos": {
+          "column": 57,
+          "line": 11
+        },
+        "isSilent": false,
+        "keepFullRange": false,
+        "kind": "[anonymous]",
+        "pos": {
+          "column": 30,
+          "line": 11
+        },
+        "severity": "error"
+      },
+      "source_sha256": "987d693985aa2c6fb3838baaa586d7170a3f2288fb7533f29afdf7985d202d66",
+      "source_span": "pickupDeterminant_eq_energy"
+    },
+    "checks/Analysis/Energy/Controls/DroppedResidual.lean": {
+      "diagnostic": {
+        "caption": "",
+        "data": "Type mismatch\n  riemannHypothesis_of_pickup_comparison hg hmain\nhas type\n  (SubexponentialUpper fun T => \u222b (u : \u211d) in 0..T, (wholePickup u - g u) ^ 2) \u2192 RiemannHypothesis\nbut is expected to have type\n  RiemannHypothesis",
+        "endPos": {
+          "column": 49,
+          "line": 14
+        },
+        "isSilent": false,
+        "keepFullRange": false,
+        "kind": "[anonymous]",
+        "pos": {
+          "column": 2,
+          "line": 14
+        },
+        "severity": "error"
+      },
+      "source_sha256": "340861a9ab734d68b26c48200d4eaa30cfc540641ba57fa809c7fc265ab86b5d",
+      "source_span": "riemannHypothesis_of_pickup_comparison hg hmain"
+    },
+    "checks/Analysis/Energy/Controls/FiniteSamples.lean": {
+      "diagnostic": {
+        "caption": "",
+        "data": "Application type mismatch: The argument\n  h\nhas type\n  \u2200 n \u2264 100, pickupCross \u2191n \u2264 C * (1 + \u2191n) ^ r\nbut is expected to have type\n  \u2200 (n : \u2115), pickupCross \u2191n \u2264 C * (1 + \u2191n) ^ r\nin the application\n  \u27e8hr, h\u27e9",
+        "endPos": {
+          "column": 58,
+          "line": 14
+        },
+        "isSilent": false,
+        "keepFullRange": false,
+        "kind": "[anonymous]",
+        "pos": {
+          "column": 57,
+          "line": 14
+        },
+        "severity": "error"
+      },
+      "source_sha256": "154a84bc8494bda116616878060fa9445942e4198f2b76356fcaf1d9a7c0076a",
+      "source_span": "h"
+    },
+    "checks/Analysis/Energy/Controls/MissingBudget.lean": {
+      "diagnostic": {
+        "caption": "",
+        "data": "Type mismatch\n  riemannHypothesis_of_pickupCrossPoly\nhas type\n  PickupCrossPoly \u2192 RiemannHypothesis\nbut is expected to have type\n  RiemannHypothesis",
+        "endPos": {
+          "column": 74,
+          "line": 11
+        },
+        "isSilent": false,
+        "keepFullRange": false,
+        "kind": "[anonymous]",
+        "pos": {
+          "column": 38,
+          "line": 11
+        },
+        "severity": "error"
+      },
+      "source_sha256": "c45843b3e4b9789537c1ec78dab070630df4014ed29742e8ccc1d6f4defa7c90",
+      "source_span": "riemannHypothesis_of_pickupCrossPoly"
+    },
+    "checks/Analysis/Energy/Controls/SingleRate.lean": {
+      "diagnostic": {
+        "caption": "",
+        "data": "Application type mismatch: The argument\n  h\nhas type\n  IntegrableOn (fun u => Real.exp (-u) * wholePickup u ^ 2) (Ici 0) volume\nbut is expected to have type\n  PickupWeightedEnergyAll\nin the application\n  riemannHypothesis_of_pickupWeightedEnergyAll h",
+        "endPos": {
+          "column": 48,
+          "line": 14
+        },
+        "isSilent": false,
+        "keepFullRange": false,
+        "kind": "[anonymous]",
+        "pos": {
+          "column": 47,
+          "line": 14
+        },
+        "severity": "error"
+      },
+      "source_sha256": "25a94810150ea7a4176ffde2573304846b30236bff0e91e2483de3698adaff84",
+      "source_span": "h"
+    },
+    "checks/Analysis/Energy/Controls/WrongPhase.lean": {
+      "diagnostic": {
+        "caption": "",
+        "data": "Type mismatch\n  rfl\nhas type\n  ?m.31 = ?m.31\nbut is expected to have type\n  potential \u03b1 coupling \u03b8 n = 2 * coupling * Real.cos (2 * Real.pi * (\u03b1 * \u2191n + \u03b8))",
+        "endPos": {
+          "column": 64,
+          "line": 7
+        },
+        "isSilent": false,
+        "keepFullRange": false,
+        "kind": "[anonymous]",
+        "pos": {
+          "column": 61,
+          "line": 7
+        },
+        "severity": "error"
+      },
+      "source_sha256": "bf13ad1ddc0561fca9b54c9b4a34a129dac97ba1f6d0f7c403fdcf51a736c6f7",
+      "source_span": "rfl"
+    }
+  },
+  "pins": {
+    "lean_commit": "d8b18978322de05a8f3dba51ef03cf5461676c17",
+    "lean_version": "4.33.0",
+    "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d"
+  },
+  "schema": "energy-result-contracts-v1",
+  "scope": {
+    "arithmetic_premises": "OPEN",
+    "consumer_complete_project_census": false,
+    "consumer_records_report_unsafe_or_partial": false,
+    "full_checker_entrypoint_qualified": false,
+    "mathlib_source_rebuilt": false,
+    "qualified_owned_declarations": 278,
+    "qualified_runtime_exclusions": 0,
+    "qualified_source_count": 26,
+    "rh_proved": false,
+    "whole_current_project_acceptance": false
+  },
+  "source_sha256": {
+    "GRWTSK/Analysis/Asymptotics/PolynomialSubexponential.lean": "a0fd4a85568bcfdcd135b7f82c387dd5270192b2fbfd55a8c062748585212a72",
+    "GRWTSK/Analysis/Complex/CriticalReflection.lean": "8c17e27406bc4508600cb9bb202a302a074720dcc01409167428487cdd72d065",
+    "GRWTSK/Analysis/Inequalities/ExponentialDiagonal.lean": "7e3c682ea3ccc9d1f5a65ab762e3edf617f0392379e13319b4a43b90f08df620",
+    "GRWTSK/Analysis/LaplaceTransform/Analytic.lean": "fabd0904a86cbd948af89cecb5c904653b15a32b6eabacf37ee9af6e91b5d1bb",
+    "GRWTSK/Analysis/LaplaceTransform/ExponentialEnergy.lean": "6a9b43308dcb2a373f5d131014ad8c3826829b96c2d6c700ee9fd35232f43083",
+    "GRWTSK/Analysis/LaplaceTransform/ExponentialThreshold.lean": "1e8446ad9a20c41417d2b5c1aa91808a691d3f42958f0e7bf569d22ab5d47a71",
+    "GRWTSK/Analysis/LaplaceTransform/PolynomialEnergy.lean": "eedad665d4fdf36fcdf48280b8b816a4edc09e11725ff17a422bd9e2b003457f",
+    "GRWTSK/LinearAlgebra/AlmostMathieu.lean": "ed4a3641f340c856b6e0d98cbeb99c18f06cc86c64d3d84f306adc1b35849643",
+    "GRWTSK/LinearAlgebra/Determinant/RankOneQuadraticForm.lean": "c794442a18ee20b17d7a9de85d12e1450f5856c152dd9fec159e2c41c9dec34e",
+    "GRWTSK/LinearAlgebra/SchrodingerTransfer.lean": "25f93a03bb8e1b5df2f73c782160ed9f356f592c6cca4e56c92cde7fd974969d",
+    "GRWTSK/NumberTheory/Moebius/ComparisonEnergy.lean": "0850bfd508693468bbeb7aef7df1d57aae58e42053ea436169eb18d4020a203d",
+    "GRWTSK/NumberTheory/Moebius/DirichletLaplaceIdentity.lean": "062ba923dbe090e8f1271ce4ffaf90332eaf5e20dc925f9d4b824dea48407cce",
+    "GRWTSK/NumberTheory/Moebius/EnergyAbscissa.lean": "9d753528696a5334da5579167260de117e5dd29582f9834592a037152fc04abb",
+    "GRWTSK/NumberTheory/Moebius/FiniteResponseSum.lean": "9358b6a2bbd51c10140c6fb595383355c54b072154965a06eb4651c3bc2c8bb8",
+    "GRWTSK/NumberTheory/Moebius/GramDiagonalBound.lean": "72172eb41fbc701bb53d3fe3d31f6a9d2cf5117c18769f85d5ed2e2986cb2b73",
+    "GRWTSK/NumberTheory/Moebius/IntegerSampleGrowth.lean": "42864197db6df82ea13df156e9590ed77e5c2099619e4532a6918d5cef9a23de",
+    "GRWTSK/NumberTheory/Moebius/LaplaceHolomorphy.lean": "ccfb2193b7f2a101cc751157962427804d3f6cad4692450714ff4115cdb9ad3d",
+    "GRWTSK/NumberTheory/Moebius/LaplaceTransform.lean": "308954ccc5537fc6dc46377c72a3f18c118c87bafb72b01746ab5368b156dd05",
+    "GRWTSK/NumberTheory/Moebius/MertensPrimitive.lean": "a0735d6120754b4921c55346a5fb0203cb3586bd6f312289f83b0a76218cffbb",
+    "GRWTSK/NumberTheory/Moebius/PrimitiveRegularity.lean": "6cb747756c582d9f4f5872e164b091672f044bbbb0bb1478d6c47c31b565c720",
+    "GRWTSK/NumberTheory/Moebius/UnsignedEnergyBound.lean": "4900917f41e019d2348d3d0b26321e36cf077e86adb409e9c546840a39d43481",
+    "GRWTSK/NumberTheory/Zeta/Riemann/LaplaceCriterion.lean": "be129acd7f3abe84fe8d87227d256e8c3e9318c739b4fa7c04096f2c70a9f8b0",
+    "GRWTSK/NumberTheory/Zeta/Riemann/PolynomialEnergyCriterion.lean": "b4b7949d198e478ac369d8455284cd5b0505f5b97a0323d47eb5cf59da1f11b1",
+    "GRWTSK/NumberTheory/Zeta/Riemann/Regularized.lean": "46392af85c7bccf563ab162671ebe23edc876748d66c46e93373edeffbfbadf1",
+    "GRWTSK/NumberTheory/Zeta/Riemann/ZeroDefinitions.lean": "79f45d7a61819fce066baa26094d480aaf40ce6c46cfd2526b8107f3bf62a8a4",
+    "GRWTSK/NumberTheory/Zeta/Riemann/ZeroSymmetry.lean": "44e1e3452c5e94077ac11fe9397dc420503d5c7c005bc1c1105685b015471076"
+  }
+}

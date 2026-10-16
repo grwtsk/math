@@ -29,8 +29,10 @@ The positive module proves these actual producer and lookup equations before
 the negative control rejects direct lookup as composed-remap evidence.
 Empty schedules, repeated compactions, internal empty batches, repeated keys,
 chronological histories and distinct retained roots have positive controls.
-A general cumulative numeric transport theorem for old real references remains
-open; these semantic schedule results do not assert total remaps on unused slots.
+The [original-reference transport result](prefix-reference-transport.md) now
+derives successful cumulative partial transport only on actual original
+real-reference support, retaining key and full payload. No total map on
+unused slots or revival after dropping is inferred.
 
 ## Verification and limits
 

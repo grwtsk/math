@@ -1,0 +1,36 @@
+{
+  "schema": "exact-case-receipt-locator-custody-v1",
+  "utc": "2026-10-16T06:06:20.801939+00:00",
+  "historical_occurrence": ".noeaaeue/evidence/Analysis/Fourier/partition-concentration-checks-2026-10-15.json",
+  "actual_git_portable_path": ".noeaaeue/evidence/Analysis/fourier/partition-concentration-checks-2026-10-15.json",
+  "receipt_sha256": "1885cf8f4563a235e3a446b77e6683e7d7290e82150d6643dfa461ca5d22bb51",
+  "receipt_bytes_unchanged": true,
+  "historical_manifests_unchanged": true,
+  "current_locator_changes": [
+    {
+      "path": ".noeaaeue/documentation/math-layout.json",
+      "previous": ".noeaaeue/receipts/partition-exposure-concentration/case-locator-preimages/0-math-layout.json",
+      "previous_sha256": "e70b807c412d94960aa67ae8016094dfc4852ef71d9b23def6f5fd697d76f42f",
+      "new_sha256": "d7f24058bd1212e1e7f3ea04c1e509a67a3a58cbbabd0c25d2017a1d53f1bb03"
+    },
+    {
+      "path": ".noeaaeue/documentation/reference/documentation-layout.json",
+      "previous": ".noeaaeue/receipts/partition-exposure-concentration/case-locator-preimages/1-documentation-layout.json",
+      "previous_sha256": "19f76832318ab82e44dd85228fc612825345ece5716f8490b8da00c0076f3e6f",
+      "new_sha256": "cb4c8d6a9602ccf1a89d42788c3794ce4dddbdc74e74a676a143b3dab65185be"
+    },
+    {
+      "path": "docs/mathematics/Combinatorics/Sequences/conditional-partition-exposure.md",
+      "previous": ".noeaaeue/receipts/partition-exposure-concentration/case-locator-preimages/2-conditional-partition-exposure.md",
+      "previous_sha256": "8f0c831c6189b5da3c8010c239e2219e4ff4b83079855dda147457691c1d1320",
+      "new_sha256": "8e56f4dcaf6aa743924744aa84a93356f298591231d782d41a0eb37611f38006"
+    },
+    {
+      "path": "docs/mathematics/Analysis/Fourier/subset-sum-anticoncentration.md",
+      "previous": ".noeaaeue/receipts/partition-exposure-concentration/case-locator-preimages/3-subset-sum-anticoncentration.md",
+      "previous_sha256": "8cbad62bc0957cef733af81f34599f706d2206ce646692954d50580f0d16dbd9",
+      "new_sha256": "b4bad92dea71c9bb353745e9c9c6f05f0bddee755066294bd3b6e9a3e4cc8054"
+    }
+  ],
+  "scope": "Exact current locator correction only. No source or native receipt rewritten, no proof acceptance inherited."
+}

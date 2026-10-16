@@ -1,0 +1,6 @@
+'EulerP04RH.CompleteReturn.analyticClosure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EulerP04RH.CompleteReturn.transform_route_implies_literal_RH' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EulerP04RH.CompleteReturn.original_AS_implies_literal_RH' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EulerP04RH.CompleteReturn.packet_route_implies_literal_RH' depends on axioms: [propext, Classical.choice, Quot.sound]

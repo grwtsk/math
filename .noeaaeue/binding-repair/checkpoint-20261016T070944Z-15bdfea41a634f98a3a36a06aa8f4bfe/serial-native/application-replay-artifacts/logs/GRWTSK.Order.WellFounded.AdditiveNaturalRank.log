@@ -1,0 +1,2 @@
+'HSSCP04.lowerRank_wellFounded' does not depend on any axioms
+'HSSCP04.descent_chain_length' depends on axioms: [propext, Quot.sound]

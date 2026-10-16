@@ -1,0 +1,11 @@
+{
+  "command": [
+    "python3",
+    "-O",
+    "-B",
+    ".noeaaeue/scripts/check_documentation.py"
+  ],
+  "utc": "2026-10-16T05:57:01.657804+00:00",
+  "exit_code": 1,
+  "outcome": "failed"
+}
