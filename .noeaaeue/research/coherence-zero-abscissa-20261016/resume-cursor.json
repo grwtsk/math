@@ -1,0 +1,13 @@
+{
+  "schema": "coherence-zero-abscissa-resume-v1",
+  "status": "OPEN_FRONTIER",
+  "smallest_unresolved_theorem": "DyadicSignedCoherenceBlockSubpower",
+  "exact_form": "for every eps>0 there exists A_eps>=0 such that every dyadic signed coherence block S_j is <= A_eps*2^(eps*j)",
+  "new_sharp_interpretation": "the infimal block exponent equals 2*vartheta-1",
+  "next_actions": [
+    "formalize generic nonnegative block/cumulative exponent equivalence",
+    "formalize energy exponent versus weighted-energy abscissa",
+    "formalize or independently replace the Mertens upper theorem",
+    "seek a source-specific signed-block estimate rather than a diagonal surrogate"
+  ]
+}
