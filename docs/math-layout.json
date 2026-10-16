@@ -5253,7 +5253,11 @@
     "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableUpdateReindex.lean": "3c14abad8c428de236b71d5dc762dc8f24d0f78480253a2598e4bef1f0a409ff",
     "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixUpdateReindexMissingInjectivity.lean": "54592a6505969ce6e87c612b2a47cce5fa8f82021c740f524b187df53f9f8b7c",
     "GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianAnnularSeparation.lean": "40aa3728724a8c6582f3701e6f44c7e8fa5eaad042b42cdf16bad51c88481d36",
-    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianAnnularMissingPositivity.lean": "3bf498b6d0d47236bbe78347dbec4da6262340412690e51e76c37a85c93019bf"
+    "GRWTSK/Analysis/MellinTransform/Checks/Negative/GaussianAnnularMissingPositivity.lean": "3bf498b6d0d47236bbe78347dbec4da6262340412690e51e76c37a85c93019bf",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableBatch.lean": "0ea2df761313eba5d470dad3b89e5644c4958aaadb00f537ef0f2bf6467d7afe",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixBatchMissingInvariant.lean": "101484ad7ab6ffef9450bcd1435b511a1c318fe938bbdc85ba4a55cc447be447",
+    "GRWTSK/NumberTheory/Ideal/Checks/Positive/CompactNormSupport.lean": "f5a0bf03037b133b004dfd0e19a788158773cadf6bd6d7ff21a848ab782f9e0a",
+    "GRWTSK/NumberTheory/Ideal/Checks/Negative/CompactNormMissingZero.lean": "b8449700ee581fd5f2f927c9ce7397bff590d56ed504c0fd3cdc1c16f92d02ec"
   },
   "schema_version": 3,
   "repository_conformance": {
@@ -5285,7 +5289,7 @@
     {
       "path": "GRWTSK.lean",
       "original_path": "GRWTSK.lean",
-      "sha256": "87b61c79da8f92051d87e3a13c957e3bf2994fa6e25d9ef9604d7c050d2b53df",
+      "sha256": "db2fde8e7c3d7e6f682b6c9aa43bba6f088f5f0ea3c3ceee2173de76ea6e5733",
       "git_blob": "27e45b3448f78dc6499f2fb0698eb51cac5d1904",
       "working_tree_state": "tracked-modified",
       "source_root": ".",
@@ -5464,6 +5468,7 @@
         "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences",
         "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding",
         "GRWTSK.Combinatorics.DirectedGraph.PrefixInventory",
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableBatch",
         "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCompaction",
         "GRWTSK.Combinatorics.DirectedGraph.PrefixTableReindex",
         "GRWTSK.Combinatorics.DirectedGraph.PrefixTableState",
@@ -5570,6 +5575,7 @@
         "GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators",
         "GRWTSK.NumberTheory.ExplicitFormula.CorrelationPairing",
         "GRWTSK.NumberTheory.FirstPrime",
+        "GRWTSK.NumberTheory.Ideal.CompactNormSupport",
         "GRWTSK.NumberTheory.LSeries.ClosedMoebiusPolynomial",
         "GRWTSK.NumberTheory.LSeries.GaussianContour",
         "GRWTSK.NumberTheory.LSeries.GaussianDyadic",
@@ -5700,7 +5706,7 @@
         "inventory": "observed-current-bytes",
         "layout": "repository baseline remains failed",
         "lean": "umbrella not replayed after selected import additions",
-        "source_sha256": "87b61c79da8f92051d87e3a13c957e3bf2994fa6e25d9ef9604d7c050d2b53df"
+        "source_sha256": "db2fde8e7c3d7e6f682b6c9aa43bba6f088f5f0ea3c3ceee2173de76ea6e5733"
       },
       "runner": "python3 -B scripts/check_ccc_energy.py",
       "other_consumers": [
@@ -27961,6 +27967,53 @@
       "design_reference": "cache/research/path-mellin-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
     },
     {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixBatchMissingInvariant.lean",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixBatchMissingInvariant.lean",
+      "sha256": "101484ad7ab6ffef9450bcd1435b511a1c318fe938bbdc85ba4a55cc447be447",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.PrefixBatchMissingInvariant",
+      "namespaces": [],
+      "public_declarations": [],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableBatch"
+      ],
+      "reverse_consumers": [],
+      "subject": "Combinatorics",
+      "object": "DirectedGraph/Checks/Negative",
+      "source_role": "negative-control",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixBatchMissingInvariant.lean",
+      "placement_rationale": "The actual chronological finite-batch runner for prefix state updates belongs to Combinatorics/DirectedGraph; generic finite-sequence certificates remain in Logic/FiniteSequences.",
+      "operation": "add",
+      "logical_status": "intended rejected control; no theorem admission",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "101484ad7ab6ffef9450bcd1435b511a1c318fe938bbdc85ba4a55cc447be447",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/prefix-finite-batch-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_prefix_table_batch.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "RootedState is only the fixed-root subtype {s:existing State // s.root=root}; no replacement State or path datatype. Explicit noncomputable step invokes actual State.update on actual occurrence rows transported through the retained root equality. runAt is actual List.foldl(step root); run exposes the resulting existing State.",
+        "run_root retains the actual initial root, including empty batches; run_nil and run_cons are exact equations for the actual runner. Root proof casts are explicit and proof irrelevant.",
+        "Initial WellFormed yields final WellFormed through actual update_wellFormed; decode_runAt/decode_run derive actual Option decoding = old decoded rows followed by chronological batches.flatMap traceRows, retaining keys/order/repeats. DecidableEq of the actual full typed tags is explicit, with no Key equality or vertex equality.",
+        "runAt_prefixes/run_prefixes preserve literal old dictionary, parent-node array and ordered real references as prefixes for arbitrary initial State, without WellFormed. node_lookup_retained preserves actual old node lookup/rank/parent numeric fields at any initially bounded slot.",
+        "transportRooted maps actual stored State and actual fixed-root equality. step_transport consumes proven update_transport. runAt_transport uses actual pinned List.foldl_map and foldl_hom; run_transport derives raw exact all-field runner/reindex equality under injective source/target/role-preserving finite-table reindex and both old/new full-tag equality, without WellFormed. decode_run_transport adds initial WellFormed to consume actual checked full-history decoding."
+      ],
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "design_reference": "cache/research/batch-ideals-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
       "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixCompactionStaleReferences.lean",
       "original_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixCompactionStaleReferences.lean",
       "sha256": "33f02ca25b49c6ec8acde6f622d2a7d09f38cb42966079abfd812855c59632a1",
@@ -29302,6 +29355,398 @@
       ],
       "license": "MIT; upstream imported Apache-2.0 retained",
       "design_reference": "cache/research/prefix-window-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableBatch.lean",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableBatch.lean",
+      "sha256": "0ea2df761313eba5d470dad3b89e5644c4958aaadb00f537ef0f2bf6467d7afe",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableBatch",
+      "namespaces": [
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableBatch.Checks.Positive"
+      ],
+      "public_declarations": [
+        {
+          "kind": "def",
+          "name": "original",
+          "line": 16
+        },
+        {
+          "kind": "def",
+          "name": "swapIndex",
+          "line": 21
+        },
+        {
+          "kind": "def",
+          "name": "updated",
+          "line": 23
+        },
+        {
+          "kind": "def",
+          "name": "translation",
+          "line": 28
+        },
+        {
+          "kind": "theorem",
+          "name": "translation_bijective",
+          "line": 34
+        },
+        {
+          "kind": "def",
+          "name": "vertexA",
+          "line": 36
+        },
+        {
+          "kind": "def",
+          "name": "vertexB",
+          "line": 38
+        },
+        {
+          "kind": "def",
+          "name": "id0",
+          "line": 39
+        },
+        {
+          "kind": "def",
+          "name": "id1",
+          "line": 40
+        },
+        {
+          "kind": "def",
+          "name": "new0",
+          "line": 41
+        },
+        {
+          "kind": "def",
+          "name": "new1",
+          "line": 42
+        },
+        {
+          "kind": "def",
+          "name": "new2",
+          "line": 43
+        },
+        {
+          "kind": "def",
+          "name": "oldTag0",
+          "line": 44
+        },
+        {
+          "kind": "def",
+          "name": "oldTag1",
+          "line": 46
+        },
+        {
+          "kind": "def",
+          "name": "newTag0",
+          "line": 47
+        },
+        {
+          "kind": "def",
+          "name": "newTag1",
+          "line": 48
+        },
+        {
+          "kind": "def",
+          "name": "newTag2",
+          "line": 49
+        },
+        {
+          "kind": "theorem",
+          "name": "old_tags_distinct",
+          "line": 56
+        },
+        {
+          "kind": "def",
+          "name": "arrow0",
+          "line": 63
+        },
+        {
+          "kind": "def",
+          "name": "arrow1",
+          "line": 65
+        },
+        {
+          "kind": "def",
+          "name": "single0",
+          "line": 66
+        },
+        {
+          "kind": "def",
+          "name": "single1",
+          "line": 67
+        },
+        {
+          "kind": "def",
+          "name": "seedRows",
+          "line": 68
+        },
+        {
+          "kind": "def",
+          "name": "seed",
+          "line": 71
+        },
+        {
+          "kind": "def",
+          "name": "before",
+          "line": 73
+        },
+        {
+          "kind": "theorem",
+          "name": "seed_inventory",
+          "line": 77
+        },
+        {
+          "kind": "theorem",
+          "name": "before_dictionary",
+          "line": 82
+        },
+        {
+          "kind": "theorem",
+          "name": "before_wellFormed",
+          "line": 88
+        },
+        {
+          "kind": "theorem",
+          "name": "before_nodes",
+          "line": 97
+        },
+        {
+          "kind": "theorem",
+          "name": "before_actual_decode",
+          "line": 102
+        },
+        {
+          "kind": "def",
+          "name": "id2",
+          "line": 109
+        },
+        {
+          "kind": "def",
+          "name": "oldTag2",
+          "line": 111
+        },
+        {
+          "kind": "def",
+          "name": "arrow2",
+          "line": 112
+        },
+        {
+          "kind": "def",
+          "name": "returnPath",
+          "line": 114
+        },
+        {
+          "kind": "def",
+          "name": "returnRows",
+          "line": 115
+        },
+        {
+          "kind": "def",
+          "name": "parallelRows",
+          "line": 118
+        },
+        {
+          "kind": "def",
+          "name": "firstState",
+          "line": 121
+        },
+        {
+          "kind": "def",
+          "name": "secondState",
+          "line": 123
+        },
+        {
+          "kind": "theorem",
+          "name": "return_trace",
+          "line": 124
+        },
+        {
+          "kind": "theorem",
+          "name": "return_inventory",
+          "line": 129
+        },
+        {
+          "kind": "theorem",
+          "name": "first_dictionary",
+          "line": 135
+        },
+        {
+          "kind": "theorem",
+          "name": "first_wellFormed",
+          "line": 145
+        },
+        {
+          "kind": "theorem",
+          "name": "second_wellFormed",
+          "line": 148
+        },
+        {
+          "kind": "theorem",
+          "name": "first_nodes",
+          "line": 151
+        },
+        {
+          "kind": "theorem",
+          "name": "first_references",
+          "line": 157
+        },
+        {
+          "kind": "theorem",
+          "name": "first_actual_decode",
+          "line": 174
+        },
+        {
+          "kind": "theorem",
+          "name": "second_actual_decode",
+          "line": 187
+        },
+        {
+          "kind": "def",
+          "name": "thirdRows",
+          "line": 198
+        },
+        {
+          "kind": "def",
+          "name": "threeBatches",
+          "line": 200
+        },
+        {
+          "kind": "def",
+          "name": "forward",
+          "line": 203
+        },
+        {
+          "kind": "def",
+          "name": "backward",
+          "line": 205
+        },
+        {
+          "kind": "theorem",
+          "name": "forward_as_updates",
+          "line": 206
+        },
+        {
+          "kind": "theorem",
+          "name": "forward_wellFormed",
+          "line": 208
+        },
+        {
+          "kind": "theorem",
+          "name": "forward_actual_decode",
+          "line": 210
+        },
+        {
+          "kind": "theorem",
+          "name": "backward_actual_decode",
+          "line": 220
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_reverse_order_changes_histories",
+          "line": 233
+        },
+        {
+          "kind": "def",
+          "name": "singletonRows",
+          "line": 284
+        },
+        {
+          "kind": "def",
+          "name": "invalid",
+          "line": 286
+        },
+        {
+          "kind": "def",
+          "name": "repaired",
+          "line": 290
+        },
+        {
+          "kind": "def",
+          "name": "good",
+          "line": 292
+        },
+        {
+          "kind": "theorem",
+          "name": "invalid_actual_decode",
+          "line": 293
+        },
+        {
+          "kind": "theorem",
+          "name": "invalid_not_wellFormed",
+          "line": 295
+        },
+        {
+          "kind": "theorem",
+          "name": "repaired_dictionary",
+          "line": 301
+        },
+        {
+          "kind": "theorem",
+          "name": "good_wellFormed",
+          "line": 309
+        },
+        {
+          "kind": "theorem",
+          "name": "repaired_references",
+          "line": 311
+        },
+        {
+          "kind": "theorem",
+          "name": "repaired_wellFormed",
+          "line": 322
+        },
+        {
+          "kind": "theorem",
+          "name": "repaired_actual_decode",
+          "line": 338
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_missing_invariant_failure",
+          "line": 347
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableBatch"
+      ],
+      "reverse_consumers": [
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.PrefixBatchMissingInvariant"
+      ],
+      "subject": "Combinatorics",
+      "object": "DirectedGraph/Checks/Positive",
+      "source_role": "positive-check",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableBatch.lean",
+      "placement_rationale": "The actual chronological finite-batch runner for prefix state updates belongs to Combinatorics/DirectedGraph; generic finite-sequence certificates remain in Logic/FiniteSequences.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "0ea2df761313eba5d470dad3b89e5644c4958aaadb00f537ef0f2bf6467d7afe",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/prefix-finite-batch-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_prefix_table_batch.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "RootedState is only the fixed-root subtype {s:existing State // s.root=root}; no replacement State or path datatype. Explicit noncomputable step invokes actual State.update on actual occurrence rows transported through the retained root equality. runAt is actual List.foldl(step root); run exposes the resulting existing State.",
+        "run_root retains the actual initial root, including empty batches; run_nil and run_cons are exact equations for the actual runner. Root proof casts are explicit and proof irrelevant.",
+        "Initial WellFormed yields final WellFormed through actual update_wellFormed; decode_runAt/decode_run derive actual Option decoding = old decoded rows followed by chronological batches.flatMap traceRows, retaining keys/order/repeats. DecidableEq of the actual full typed tags is explicit, with no Key equality or vertex equality.",
+        "runAt_prefixes/run_prefixes preserve literal old dictionary, parent-node array and ordered real references as prefixes for arbitrary initial State, without WellFormed. node_lookup_retained preserves actual old node lookup/rank/parent numeric fields at any initially bounded slot.",
+        "transportRooted maps actual stored State and actual fixed-root equality. step_transport consumes proven update_transport. runAt_transport uses actual pinned List.foldl_map and foldl_hom; run_transport derives raw exact all-field runner/reindex equality under injective source/target/role-preserving finite-table reindex and both old/new full-tag equality, without WellFormed. decode_run_transport adds initial WellFormed to consume actual checked full-history decoding."
+      ],
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "design_reference": "cache/research/batch-ideals-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
     },
     {
       "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableCompaction.lean",
@@ -32351,6 +32796,169 @@
       "design_reference": "cache/research/prefix-window-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
     },
     {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableBatch.lean",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableBatch.lean",
+      "sha256": "eaa986de6b17e60b545b1e603ae42f0f1a9678bcecea9379a7198097787ef63f",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableBatch",
+      "namespaces": [
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableBatch"
+      ],
+      "public_declarations": [
+        {
+          "kind": "abbrev",
+          "name": "RootedState",
+          "line": 31
+        },
+        {
+          "kind": "def",
+          "name": "step",
+          "line": 36
+        },
+        {
+          "kind": "def",
+          "name": "runAt",
+          "line": 41
+        },
+        {
+          "kind": "def",
+          "name": "run",
+          "line": 46
+        },
+        {
+          "kind": "theorem",
+          "name": "run_root",
+          "line": 50
+        },
+        {
+          "kind": "theorem",
+          "name": "run_nil",
+          "line": 54
+        },
+        {
+          "kind": "theorem",
+          "name": "run_cons",
+          "line": 56
+        },
+        {
+          "kind": "theorem",
+          "name": "step_wellFormed",
+          "line": 60
+        },
+        {
+          "kind": "theorem",
+          "name": "runAt_wellFormed",
+          "line": 67
+        },
+        {
+          "kind": "theorem",
+          "name": "run_wellFormed",
+          "line": 75
+        },
+        {
+          "kind": "theorem",
+          "name": "decode_step",
+          "line": 79
+        },
+        {
+          "kind": "theorem",
+          "name": "decode_runAt",
+          "line": 87
+        },
+        {
+          "kind": "theorem",
+          "name": "decode_run",
+          "line": 103
+        },
+        {
+          "kind": "theorem",
+          "name": "step_prefixes",
+          "line": 109
+        },
+        {
+          "kind": "theorem",
+          "name": "runAt_prefixes",
+          "line": 118
+        },
+        {
+          "kind": "theorem",
+          "name": "run_prefixes",
+          "line": 131
+        },
+        {
+          "kind": "theorem",
+          "name": "node_lookup_retained",
+          "line": 138
+        },
+        {
+          "kind": "def",
+          "name": "transportRooted",
+          "line": 156
+        },
+        {
+          "kind": "theorem",
+          "name": "step_transport",
+          "line": 161
+        },
+        {
+          "kind": "theorem",
+          "name": "runAt_transport",
+          "line": 172
+        },
+        {
+          "kind": "theorem",
+          "name": "run_transport",
+          "line": 184
+        },
+        {
+          "kind": "theorem",
+          "name": "decode_run_transport",
+          "line": 192
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableUpdateReindex"
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableBatch"
+      ],
+      "subject": "Combinatorics",
+      "object": "DirectedGraph",
+      "source_role": "library",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableBatch.lean",
+      "placement_rationale": "The actual chronological finite-batch runner for prefix state updates belongs to Combinatorics/DirectedGraph; generic finite-sequence certificates remain in Logic/FiniteSequences.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "eaa986de6b17e60b545b1e603ae42f0f1a9678bcecea9379a7198097787ef63f",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/prefix-finite-batch-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_prefix_table_batch.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "RootedState is only the fixed-root subtype {s:existing State // s.root=root}; no replacement State or path datatype. Explicit noncomputable step invokes actual State.update on actual occurrence rows transported through the retained root equality. runAt is actual List.foldl(step root); run exposes the resulting existing State.",
+        "run_root retains the actual initial root, including empty batches; run_nil and run_cons are exact equations for the actual runner. Root proof casts are explicit and proof irrelevant.",
+        "Initial WellFormed yields final WellFormed through actual update_wellFormed; decode_runAt/decode_run derive actual Option decoding = old decoded rows followed by chronological batches.flatMap traceRows, retaining keys/order/repeats. DecidableEq of the actual full typed tags is explicit, with no Key equality or vertex equality.",
+        "runAt_prefixes/run_prefixes preserve literal old dictionary, parent-node array and ordered real references as prefixes for arbitrary initial State, without WellFormed. node_lookup_retained preserves actual old node lookup/rank/parent numeric fields at any initially bounded slot.",
+        "transportRooted maps actual stored State and actual fixed-root equality. step_transport consumes proven update_transport. runAt_transport uses actual pinned List.foldl_map and foldl_hom; run_transport derives raw exact all-field runner/reindex equality under injective source/target/role-preserving finite-table reindex and both old/new full-tag equality, without WellFormed. decode_run_transport adds initial WellFormed to consume actual checked full-history decoding."
+      ],
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "design_reference": "cache/research/batch-ideals-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
       "path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableCompaction.lean",
       "original_path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableCompaction.lean",
       "sha256": "fe95a8c59bb0a1e1e9a2a4eba1e5405deb4bcabac3159e0aefcd3db364aad56f",
@@ -33092,7 +33700,8 @@
       ],
       "reverse_consumers": [
         "GRWTSK",
-        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableUpdateReindex"
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableUpdateReindex",
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableBatch"
       ],
       "subject": "Combinatorics",
       "object": "DirectedGraph",
@@ -49417,6 +50026,263 @@
       ]
     },
     {
+      "path": "GRWTSK/NumberTheory/Ideal/Checks/Negative/CompactNormMissingZero.lean",
+      "original_path": "GRWTSK/NumberTheory/Ideal/Checks/Negative/CompactNormMissingZero.lean",
+      "sha256": "b8449700ee581fd5f2f927c9ce7397bff590d56ed504c0fd3cdc1c16f92d02ec",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.NumberTheory.Ideal.Checks.Negative.CompactNormMissingZero",
+      "namespaces": [
+        "GRWTSK.NumberTheory.Ideal.CompactNormSupport.Checks"
+      ],
+      "public_declarations": [],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.NumberTheory.Ideal.Checks.Positive.CompactNormSupport"
+      ],
+      "reverse_consumers": [],
+      "subject": "NumberTheory",
+      "object": "Ideal/Checks/Negative",
+      "source_role": "negative-control",
+      "target_path": "GRWTSK/NumberTheory/Ideal/Checks/Negative/CompactNormMissingZero.lean",
+      "placement_rationale": "Compact-window finite support for actual ideal absolute norms belongs to NumberTheory/Ideal.",
+      "operation": "add",
+      "logical_status": "intended rejected control; no theorem admission",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "b8449700ee581fd5f2f927c9ce7397bff590d56ed504c0fd3cdc1c16f92d02ec",
+        "replay_binding": "evidence/NumberTheory/Ideal/compact-norm-support-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_ideal_compact_norm_support.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Generalized actual ring S with explicit [CommRing S], [IsDedekindDomain S], [Module.Free ℤ S], [Module.Finite ℤ S], [CharZero S]. The full finite-support theorem retains all of these; its norm≥1 and actual ideal-triple scale helpers omit unneeded CharZero.",
+        "For each actual nonzero ideal I, (1:ℝ)≤Ideal.absNorm I. For actual nonzero I,J,H, each real-cast ideal norm is bounded by absNorm(I)*absNorm(J)^3*absNorm(H)^3.",
+        "For W:ℝ→ℂ with HasCompactSupport W, X>0, F:Ideal S×Ideal S×Ideal S→ℂ, actual zero-ideal cancellation (any I,J,H zero implies F triple0) and actual window cancellation (W(normI*normJ^3*normH^3/X)=0 implies F triple0), Function.support F is finite.",
+        "The proof locally derives a real upper support bound from compactness, chooses a natural M above bound*X, proves all three actual norms≤M for every nonzero F value, and uses actual Ideal.finite_setOfPred_absNorm_le M. No finiteness oracle, arbitrary norm or desired result premise.",
+        "Public helpers concern actual ideal norms. Generic scalar compact-bound steps remain local inside the finite-support theorem; no unrelated public Analysis API is placed under NumberTheory."
+      ],
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: exact IdealMobius compact-window norm-triple proof slice; imported Mathlib ideal-norm authors Anne Baanen and Alex J. Best retain credit"
+      ],
+      "license": "Apache-2.0",
+      "design_reference": "cache/research/batch-ideals-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Ideal/Checks/Positive/CompactNormSupport.lean",
+      "original_path": "GRWTSK/NumberTheory/Ideal/Checks/Positive/CompactNormSupport.lean",
+      "sha256": "f5a0bf03037b133b004dfd0e19a788158773cadf6bd6d7ff21a848ab782f9e0a",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.NumberTheory.Ideal.Checks.Positive.CompactNormSupport",
+      "namespaces": [
+        "GRWTSK.NumberTheory.Ideal.CompactNormSupport.Checks"
+      ],
+      "public_declarations": [
+        {
+          "kind": "def",
+          "name": "integerWindow",
+          "line": 9
+        },
+        {
+          "kind": "lemma",
+          "name": "integerWindow_compact",
+          "line": 11
+        },
+        {
+          "kind": "lemma",
+          "name": "integerWindow_zero",
+          "line": 12
+        },
+        {
+          "kind": "lemma",
+          "name": "integerWindow_one",
+          "line": 13
+        },
+        {
+          "kind": "def",
+          "name": "integerTriple",
+          "line": 14
+        },
+        {
+          "kind": "lemma",
+          "name": "integerTriple_zero",
+          "line": 19
+        },
+        {
+          "kind": "lemma",
+          "name": "integerTriple_window",
+          "line": 23
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_integer_finite_support",
+          "line": 30
+        },
+        {
+          "kind": "lemma",
+          "name": "actual_unit_triple_nonzero",
+          "line": 35
+        },
+        {
+          "kind": "lemma",
+          "name": "integer_span_nat_injective",
+          "line": 38
+        },
+        {
+          "kind": "def",
+          "name": "zeroFiber",
+          "line": 44
+        },
+        {
+          "kind": "lemma",
+          "name": "zeroFiber_window",
+          "line": 47
+        },
+        {
+          "kind": "lemma",
+          "name": "zeroFiber_zero_nonzero",
+          "line": 57
+        },
+        {
+          "kind": "lemma",
+          "name": "zeroFiber_zero_cancellation_false",
+          "line": 59
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_zeroFiber_support_infinite",
+          "line": 66
+        },
+        {
+          "kind": "theorem",
+          "name": "actual_missing_zero_counterexample",
+          "line": 77
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "GRWTSK.Analysis.Calculus.CompactCutoff",
+        "GRWTSK.NumberTheory.Ideal.CompactNormSupport"
+      ],
+      "reverse_consumers": [
+        "GRWTSK.NumberTheory.Ideal.Checks.Negative.CompactNormMissingZero"
+      ],
+      "subject": "NumberTheory",
+      "object": "Ideal/Checks/Positive",
+      "source_role": "positive-check",
+      "target_path": "GRWTSK/NumberTheory/Ideal/Checks/Positive/CompactNormSupport.lean",
+      "placement_rationale": "Compact-window finite support for actual ideal absolute norms belongs to NumberTheory/Ideal.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "f5a0bf03037b133b004dfd0e19a788158773cadf6bd6d7ff21a848ab782f9e0a",
+        "replay_binding": "evidence/NumberTheory/Ideal/compact-norm-support-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_ideal_compact_norm_support.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Generalized actual ring S with explicit [CommRing S], [IsDedekindDomain S], [Module.Free ℤ S], [Module.Finite ℤ S], [CharZero S]. The full finite-support theorem retains all of these; its norm≥1 and actual ideal-triple scale helpers omit unneeded CharZero.",
+        "For each actual nonzero ideal I, (1:ℝ)≤Ideal.absNorm I. For actual nonzero I,J,H, each real-cast ideal norm is bounded by absNorm(I)*absNorm(J)^3*absNorm(H)^3.",
+        "For W:ℝ→ℂ with HasCompactSupport W, X>0, F:Ideal S×Ideal S×Ideal S→ℂ, actual zero-ideal cancellation (any I,J,H zero implies F triple0) and actual window cancellation (W(normI*normJ^3*normH^3/X)=0 implies F triple0), Function.support F is finite.",
+        "The proof locally derives a real upper support bound from compactness, chooses a natural M above bound*X, proves all three actual norms≤M for every nonzero F value, and uses actual Ideal.finite_setOfPred_absNorm_le M. No finiteness oracle, arbitrary norm or desired result premise.",
+        "Public helpers concern actual ideal norms. Generic scalar compact-bound steps remain local inside the finite-support theorem; no unrelated public Analysis API is placed under NumberTheory."
+      ],
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: exact IdealMobius compact-window norm-triple proof slice; imported Mathlib ideal-norm authors Anne Baanen and Alex J. Best retain credit"
+      ],
+      "license": "Apache-2.0",
+      "design_reference": "cache/research/batch-ideals-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Ideal/CompactNormSupport.lean",
+      "original_path": "GRWTSK/NumberTheory/Ideal/CompactNormSupport.lean",
+      "sha256": "8792ac4679bebdc78e0f466f4752501684c88c5e3ef58862121ccbabc64f3fb6",
+      "git_blob": null,
+      "working_tree_state": "untracked-at-selected-replay",
+      "source_root": "GRWTSK",
+      "module": "GRWTSK.NumberTheory.Ideal.CompactNormSupport",
+      "namespaces": [
+        "GRWTSK.NumberTheory.Ideal.CompactNormSupport"
+      ],
+      "public_declarations": [
+        {
+          "kind": "lemma",
+          "name": "norm_at_least_one",
+          "line": 31
+        },
+        {
+          "kind": "lemma",
+          "name": "ideal_triple_scale_bounds",
+          "line": 35
+        },
+        {
+          "kind": "theorem",
+          "name": "finite_support_norm_triple",
+          "line": 58
+        }
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "imports": [
+        "Mathlib.Analysis.Complex.Basic",
+        "Mathlib.RingTheory.Ideal.Norm.AbsNorm",
+        "Mathlib.Tactic.GCongr",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Topology.Order.Compact"
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.NumberTheory.Ideal.Checks.Positive.CompactNormSupport"
+      ],
+      "subject": "NumberTheory",
+      "object": "Ideal",
+      "source_role": "library",
+      "target_path": "GRWTSK/NumberTheory/Ideal/CompactNormSupport.lean",
+      "placement_rationale": "Compact-window finite support for actual ideal absolute norms belongs to NumberTheory/Ideal.",
+      "operation": "add",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "open_premises": [],
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "source_sha256": "8792ac4679bebdc78e0f466f4752501684c88c5e3ef58862121ccbabc64f3fb6",
+        "replay_binding": "evidence/NumberTheory/Ideal/compact-norm-support-checks-2026-10-15.json"
+      },
+      "runner": "python3 -B scripts/check_ideal_compact_norm_support.py",
+      "other_consumers": [],
+      "explicit_premises": [
+        "Generalized actual ring S with explicit [CommRing S], [IsDedekindDomain S], [Module.Free ℤ S], [Module.Finite ℤ S], [CharZero S]. The full finite-support theorem retains all of these; its norm≥1 and actual ideal-triple scale helpers omit unneeded CharZero.",
+        "For each actual nonzero ideal I, (1:ℝ)≤Ideal.absNorm I. For actual nonzero I,J,H, each real-cast ideal norm is bounded by absNorm(I)*absNorm(J)^3*absNorm(H)^3.",
+        "For W:ℝ→ℂ with HasCompactSupport W, X>0, F:Ideal S×Ideal S×Ideal S→ℂ, actual zero-ideal cancellation (any I,J,H zero implies F triple0) and actual window cancellation (W(normI*normJ^3*normH^3/X)=0 implies F triple0), Function.support F is finite.",
+        "The proof locally derives a real upper support bound from compactness, chooses a natural M above bound*X, proves all three actual norms≤M for every nonzero F value, and uses actual Ideal.finite_setOfPred_absNorm_le M. No finiteness oracle, arbitrary norm or desired result premise.",
+        "Public helpers concern actual ideal norms. Generic scalar compact-bound steps remain local inside the finite-support theorem; no unrelated public Analysis API is placed under NumberTheory."
+      ],
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: exact IdealMobius compact-window norm-triple proof slice; imported Mathlib ideal-norm authors Anne Baanen and Alex J. Best retain credit"
+      ],
+      "license": "Apache-2.0",
+      "design_reference": "cache/research/batch-ideals-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported."
+    },
+    {
       "path": "GRWTSK/NumberTheory/LSeries/Checks/Negative/DyadicMissingCoverage.lean",
       "original_path": "GRWTSK/NumberTheory/LSeries/Checks/Negative/DyadicMissingCoverage.lean",
       "sha256": "f9f98dfdbbac48fac2e3a696c65c7af0f1daefdc2d344fb6a5b7534d457b11c3",
@@ -65203,19 +66069,19 @@
   ],
   "current_inventory": {
     "head": "854e04dc182c36b00479b642e6301f47acc81e5f",
-    "lean_source_count": 758,
-    "active_source_count": 695,
+    "lean_source_count": 764,
+    "active_source_count": 701,
     "candidate_source_count": 63,
     "counts_by_role": {
       "audit-driver": 35,
-      "library": 388,
-      "negative-control": 146,
-      "positive-check": 126
+      "library": 390,
+      "negative-control": 148,
+      "positive-check": 128
     },
     "counts_by_subject": {
       "Algebra": 19,
       "Analysis": 255,
-      "Combinatorics": 53,
+      "Combinatorics": 56,
       "Data": 1,
       "DynamicalSystems": 16,
       "GroupTheory": 4,
@@ -65223,7 +66089,7 @@
       "LinearAlgebra": 53,
       "Logic": 63,
       "MeasureTheory": 5,
-      "NumberTheory": 194,
+      "NumberTheory": 197,
       "Order": 6,
       "Spectral": 25
     },
@@ -72025,6 +72891,22 @@
     "replays": [
       "evidence/Analysis/MellinTransform/gaussian-annular-separation-checks-2026-10-15.json",
       "evidence/Combinatorics/DirectedGraph/prefix-update-reindex-checks-2026-10-15.json"
+    ],
+    "scope": "Incremental selected registration; no historical full-replay hashes or failed receipts refreshed."
+  },
+  "batch_ideals_additions": {
+    "date": "2026-10-15",
+    "paths": [
+      "GRWTSK/Combinatorics/DirectedGraph/PrefixTableBatch.lean",
+      "GRWTSK/NumberTheory/Ideal/CompactNormSupport.lean",
+      "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableBatch.lean",
+      "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixBatchMissingInvariant.lean",
+      "GRWTSK/NumberTheory/Ideal/Checks/Positive/CompactNormSupport.lean",
+      "GRWTSK/NumberTheory/Ideal/Checks/Negative/CompactNormMissingZero.lean"
+    ],
+    "replays": [
+      "evidence/Combinatorics/DirectedGraph/prefix-finite-batch-checks-2026-10-15.json",
+      "evidence/NumberTheory/Ideal/compact-norm-support-checks-2026-10-15.json"
     ],
     "scope": "Incremental selected registration; no historical full-replay hashes or failed receipts refreshed."
   }

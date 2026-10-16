@@ -1,0 +1,18 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "ideal-compact-norm-support-formal",
+  "event": "plan",
+  "at": "2026-10-16T00:25:03.744767+00:00",
+  "owner": "cache_adapter",
+  "scratch": ".local/ideal-compact-norm-support/10033acf63fa41b0a1c574689c7b8f47",
+  "scope": "Actual Ideal.absNorm compact triple support with explicit CommRing/Dedekind/free/finite/CharZero instances and zero/window cancellation; integer ideals consumer and actual zero-cancellation infinite support obstruction. Original O/completed expansion/common twist set remain OPEN.",
+  "library_imports": [
+    "Mathlib.RingTheory.Ideal.Norm.AbsNorm",
+    "Mathlib.Topology.Algebra.Support"
+  ],
+  "positive_extra_local_imports": [
+    "GRWTSK.Analysis.Calculus.CompactCutoff"
+  ],
+  "mathematical_placement": "Public helpers concern actual ideal norms/triples only; scalar compact-window bound remains inside finite-support proof, no misplaced general Analysis API.",
+  "native_jobs_running": 0
+}

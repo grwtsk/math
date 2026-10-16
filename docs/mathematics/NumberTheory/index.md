@@ -4,16 +4,16 @@
 
 | Inventory | Count |
 |---|---:|
-| Object guides | 30 |
-| Documented object groups | 12 |
-| Distinct primary sources linked | 28 |
-| Lean source modules | 215 |
+| Object guides | 31 |
+| Documented object groups | 13 |
+| Distinct primary sources linked | 29 |
+| Lean source modules | 218 |
 | Archive intake records | 19 |
 | Selected catalog families | 1 |
 
 These counts measure documentation and source coverage. They do not count accepted theorems or establish that every source module is documented or checked. [Definitions and limits](../../reference/library-pages.md#count-definitions).
 
-At least 1722 source declaration commands, including 1331 theorem/lemma commands, across 175 parsed Lean source modules; 40 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
+At least 1741 source declaration commands, including 1347 theorem/lemma commands, across 178 parsed Lean source modules; 40 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
 
 ## ArithmeticFunctions
 
@@ -32,6 +32,14 @@ Linked primary-source scope: 100 source declaration commands, including 79 theor
 
 - [Irrational frequency realization and native readback](ContinuedFractions/frequency-realization.md).
 - [Scheduled digits and continued-fraction denominators](ContinuedFractions/scheduled-denominators.md).
+
+## Ideal
+
+1 object guide · 1 distinct linked primary source file.
+
+Linked primary-source scope: 3 source declaration commands, including 3 theorem/lemma commands, across 1 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+
+- [Compact-window finite support of ideal-norm triples](Ideal/compact-norm-support.md).
 
 ## LSeries
 

@@ -1,0 +1,8 @@
+{
+  "schema": "repository-agent-event-v1",
+  "at": "2026-10-16T00:29:56.541140+00:00",
+  "task": "batch-ideals-round",
+  "event": "fresh-selected-native-replay-dispatched",
+  "author_handoff": "Graph author reports all children exited and shared lock released; ideal author reports frozen controls and no further native jobs. Driver acquires actual shared flock and guards competing jobs.",
+  "scope": "Root serializes both fresh selected complete import closures, trust0/fatal/all-owned-transitive-axiom audit; actual positive controls and one intended type rejection each. No old or scratch receipt accepted as current."
+}
