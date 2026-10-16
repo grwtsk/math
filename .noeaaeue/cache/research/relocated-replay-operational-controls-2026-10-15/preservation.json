@@ -1,0 +1,84 @@
+{
+  "schema": "passive-round-operational-records-v1",
+  "artifacts": [
+    {
+      "original_path": ".noeaaeue/.local/relocated-replay-2026-10-15/initial.json",
+      "passive_artifact": ".noeaaeue/cache/research/relocated-replay-operational-controls-2026-10-15/initial.json",
+      "bytes": 1137,
+      "sha256": "fc9865079a7d86fc12cc73298602a720f030584cdfad4602d5c6ab30e4797543"
+    },
+    {
+      "original_path": ".noeaaeue/.local/relocated-replay-2026-10-15/current-documentation-checks.json",
+      "passive_artifact": ".noeaaeue/cache/research/relocated-replay-operational-controls-2026-10-15/current-documentation-checks.json",
+      "bytes": 4871,
+      "sha256": "1c9334553260e93819dbcedf5c4a21ceb4a31d461fb38eab8571e8e1949db99d"
+    },
+    {
+      "original_path": ".noeaaeue/.local/relocated-replay-2026-10-15/busy-preflight.json",
+      "passive_artifact": ".noeaaeue/cache/research/relocated-replay-operational-controls-2026-10-15/busy-preflight.json",
+      "bytes": 1033,
+      "sha256": "a5d9d6c48b5263cbfc0217291bb020f20b0a31e9b03cde51a095c64d36a2f902"
+    },
+    {
+      "original_path": ".noeaaeue/.local/relocated-replay-2026-10-15/profile-native-deferred.json",
+      "passive_artifact": ".noeaaeue/cache/research/relocated-replay-operational-controls-2026-10-15/profile-native-deferred.json",
+      "bytes": 969,
+      "sha256": "62941939fe56fc6d4018dcba07e02e168fb1d408bceef2ab4a780e3f5312a99d"
+    },
+    {
+      "original_path": ".noeaaeue/.local/relocated-replay-2026-10-15/failed-cas-attempt.json",
+      "passive_artifact": ".noeaaeue/cache/research/relocated-replay-operational-controls-2026-10-15/failed-cas-attempt.json",
+      "bytes": 582,
+      "sha256": "7c27f804d63af1e54d58a36476e560548accd04270686a88c2961c6213990ef2"
+    },
+    {
+      "original_path": ".noeaaeue/.local/relocated-replay-2026-10-15/post-consumer-live-drift.json",
+      "passive_artifact": ".noeaaeue/cache/research/relocated-replay-operational-controls-2026-10-15/post-consumer-live-drift.json",
+      "bytes": 2005,
+      "sha256": "41b6fdf3f1a013d169eabad4eaaeee84f4df644dcb80d756f543bae583fcf537"
+    },
+    {
+      "original_path": ".noeaaeue/.local/relocated-replay-2026-10-15/profile-guards.json",
+      "passive_artifact": ".noeaaeue/cache/research/relocated-replay-operational-controls-2026-10-15/profile-guards.json",
+      "bytes": 2007,
+      "sha256": "620964a20f1af43320170025b908ac1ab7e0c32fc67342ef870e9c0c82986f27"
+    },
+    {
+      "original_path": ".noeaaeue/.local/relocated-replay-2026-10-15/profile-guards-r2.json",
+      "passive_artifact": ".noeaaeue/cache/research/relocated-replay-operational-controls-2026-10-15/profile-guards-r2.json",
+      "bytes": 2208,
+      "sha256": "56a136ed41dcc4ec89037dbcda48ce564bae22f801c11242f4b70fe7b740a145"
+    },
+    {
+      "original_path": ".noeaaeue/.local/relocated-replay-2026-10-15/documentation-final-checks.json",
+      "passive_artifact": ".noeaaeue/cache/research/relocated-replay-operational-controls-2026-10-15/documentation-final-checks.json",
+      "bytes": 2023,
+      "sha256": "8ba7348defcceb2dbd83cbe14746c22ad943f56d6bde4d6932a13acea2e647b2"
+    },
+    {
+      "original_path": ".noeaaeue/.local/relocated-replay-2026-10-15/snapshot.json",
+      "passive_artifact": ".noeaaeue/cache/research/relocated-replay-operational-controls-2026-10-15/snapshot.json",
+      "bytes": 10184,
+      "sha256": "639388a215bb198e0c7e4bf85f50ad7f821eea8fc0d5a7868e518b6e219c2ed1"
+    },
+    {
+      "original_path": ".noeaaeue/.local/relocated-replay-2026-10-15/snapshot-r2.json",
+      "passive_artifact": ".noeaaeue/cache/research/relocated-replay-operational-controls-2026-10-15/snapshot-r2.json",
+      "bytes": 131005,
+      "sha256": "f39ac97a817acf0a28a54ac4cafa6a8319adb4741cad972e8eeaee729abcb0f8"
+    },
+    {
+      "original_path": ".noeaaeue/.local/relocated-replay-2026-10-15/consume_current.py",
+      "passive_artifact": ".noeaaeue/cache/research/relocated-replay-operational-controls-2026-10-15/consume_current.py.txt",
+      "bytes": 7096,
+      "sha256": "a393fc931c235829bca1a5fab1bc9d4c2116559682c92257a3120d90b10185c4"
+    },
+    {
+      "original_path": ".noeaaeue/.local/relocated-replay-2026-10-15/consume_current_r2.py",
+      "passive_artifact": ".noeaaeue/cache/research/relocated-replay-operational-controls-2026-10-15/consume_current_r2.py.txt",
+      "bytes": 7113,
+      "sha256": "b6a76f2ce6aae5eea301194254ac8d9557ce6ff0c172b408c674f8b8d8e46f30"
+    }
+  ],
+  "limits": "Historical and failed records retained unchanged. The passive consumer script is a recipe, not new execution evidence. Current checks remain qualified by exact readsets; mathematical claims have separate native receipts."
+}

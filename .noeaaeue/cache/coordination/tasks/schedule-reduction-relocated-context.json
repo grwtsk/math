@@ -1,0 +1,15 @@
+{
+  "schema": "repository-agent-task-v1",
+  "id": "schedule-reduction-relocated-context",
+  "owner": "root",
+  "at": "2026-10-16T01:47:38.620016+00:00",
+  "branch": "main",
+  "base_commit": "e3b0e3a0a8084cb4931f41b2df2f7a4153a22113",
+  "previous_cursor": ".noeaaeue/cache/coordination/continuations/2026-10-15-schedule-reduction.json",
+  "objective": "Close only selected current relocated replay-driver context gate by fresh exact immutable complete native source closures and meaningful strict controls, without new theorem duplication or prior receipt rebinding. Narrow historical cache current-adapter incompatibility and documentation migration gate read-only.",
+  "write_paths": [
+    ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-compaction-schedule-relocated-context-checks-2026-10-15.json",
+    ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-reduction-relocated-context-checks-2026-10-15.json"
+  ],
+  "coordination": "Existing mathematical taxonomy/source6 unchanged. Monitor owns shared migration/catalogs/current adapters; root stages only scoped owned proof/replay evidence and reviewed own3drivers if current checks pass, no shared guard or unrelated relocations. New operational paths only; no legacy recreation, remote actions, isolation or helper exemptions. Serialize native jobs on observed relocated shared replay flock; keep every failed/stale source/receipt unchanged."
+}

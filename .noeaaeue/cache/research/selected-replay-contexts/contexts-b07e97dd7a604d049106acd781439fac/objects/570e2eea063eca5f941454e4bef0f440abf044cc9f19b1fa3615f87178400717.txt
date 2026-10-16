@@ -1,0 +1,8 @@
+/Users/local/Desktop/math/.noeaaeue/.local/third-cyclotomic-reduction-replay/replay-iugitde6/source/GRWTSK/NumberTheory/Cyclotomic/Checks/Negative/ThirdCyclotomicMissingGoodPrime.lean:9:40: error: Application type mismatch: The argument
+  ramifiedIdeal_isMaximal
+has type
+  ramifiedIdeal.IsMaximal
+but is expected to have type
+  lambda ∉ ramifiedIdeal
+in the application
+  omega_reduced_primitive ramifiedIdeal ramifiedIdeal_isMaximal

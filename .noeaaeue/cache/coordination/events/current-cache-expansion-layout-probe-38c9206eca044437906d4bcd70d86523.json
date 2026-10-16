@@ -1,0 +1,44 @@
+{
+  "adapter_returned": true,
+  "agent": "cache_adapter",
+  "at": "2026-10-16T01:53:28.986115+00:00",
+  "current_cache_mutation_executed": false,
+  "expanded_code_executed": false,
+  "input_drift": [],
+  "kind": "current-cache-expansion-layout-probe-complete",
+  "limits": [
+    "No live cache verification, writer transaction, CAS/ref advancement, native replay or current-repository Git operation.",
+    "The prior original-schema historical 825-file exact expansion was not rerun.",
+    "Operational byte/path observations only; no formal filesystem/hash/compression/JSON refinement."
+  ],
+  "mathematical_acceptance": false,
+  "original_logical_comparison": {
+    "actual_count": 825,
+    "added": [
+      ".noeaaeue/documentation/math-layout.json",
+      ".noeaaeue/evidence/source-intake.json"
+    ],
+    "byte_mismatches": [],
+    "exact_path_and_bytes": false,
+    "expected_count": 825,
+    "missing": [
+      "docs/math-layout.json",
+      "evidence/source-intake.json"
+    ]
+  },
+  "owned_external_temp_removed": true,
+  "relocated_physical_comparison": {
+    "actual_count": 825,
+    "added": [],
+    "byte_mismatches": [],
+    "exact_path_and_bytes": true,
+    "expected_count": 825,
+    "missing": []
+  },
+  "report": {
+    "path": ".noeaaeue/.local/current-cache-expansion-probe/68534a560ff34ebcbaf003b600c0cb7a/verification.json",
+    "sha256": "69df9263577d123c42601c5163279a3e8c72f9074729dec6d69e4e568f8782de"
+  },
+  "revision": "ce89c2a26424ddbcce16a6c5140513f61510b17b196f72dd6bc2b0cfef85550d",
+  "schema": "repository-agent-event-v1"
+}

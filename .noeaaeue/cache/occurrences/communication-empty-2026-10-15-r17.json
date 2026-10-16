@@ -1,0 +1,16 @@
+{
+  "schema": "math-cache-occurrence-trace-v1",
+  "id": "occurrence-trace:taxonomy-adapter-empty-2026-10-15-r17",
+  "source_snapshot": "55b3a4ef0c05b81558eb8e4a213b056458b043d8b3e2400e990e8c20e77dfad4",
+  "taxonomy": {
+    "id": "taxonomy:method-families",
+    "revision": "554b2000eb0ddcaa5e38cc30812a1741c3c826b224ddf0e032eb7460229cc8fb",
+    "sha256": "072a431bca2c960488c7681d4fb316db2135a7f91d2e181f5664db610e0103fa"
+  },
+  "relation_kind": "communication",
+  "direction": "source-to-target",
+  "root": "contribution:taxonomy-adapter-v1",
+  "steps": [],
+  "end": "contribution:taxonomy-adapter-v1",
+  "proof_acceptance": "not-established"
+}

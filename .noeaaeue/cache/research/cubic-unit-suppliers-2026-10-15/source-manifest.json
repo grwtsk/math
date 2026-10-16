@@ -1,0 +1,92 @@
+{
+  "schema": "grwtsk.research.source-context.v1",
+  "task": "heartbeat-cubic-suppliers-source-scout",
+  "owner": "cache_taxonomy",
+  "at": "2026-10-16T01:48:03.249901+00:00",
+  "status": "SOURCE_INSPECTED_NATIVE_NOT_RUN",
+  "sources": [
+    {
+      "repository": "openai/math",
+      "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "path": "lean/OAI/NumberTheory/DirichletL/GaussSum/FiniteFourier.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/GaussSum/FiniteFourier.lean",
+      "archive": ".noeaaeue/.local/heartbeat-cubic-suppliers/9283452f97a04ba49016910177cb36a4/OpenAI-FiniteFourier.lean",
+      "sha256": "0e8e4184de91161a75802e3a26abfd19a322dffa6441968bf9caeb25800b5d7c",
+      "git_blob": "06304e1efc036727b3fa27e37dd6a06ce0bf5e56",
+      "bytes": 59918
+    },
+    {
+      "repository": "anthropics/formal-math",
+      "pin": "e1a4e6508154ea59f030480661590a9fe3018011",
+      "path": "3sum-apsp/ThreeSumApsp/Lang/Logic.lean",
+      "url": "https://raw.githubusercontent.com/anthropics/formal-math/e1a4e6508154ea59f030480661590a9fe3018011/3sum-apsp/ThreeSumApsp/Lang/Logic.lean",
+      "archive": ".noeaaeue/.local/heartbeat-cubic-suppliers/9283452f97a04ba49016910177cb36a4/Anthropic-Logic.lean",
+      "sha256": "859a2842fc684b359d819d0181e0143e8d6576c70f4be725f3a830947bdeb4ee",
+      "git_blob": "508e2040014eeadd11b6a8e1dd68463a9db8fe44",
+      "bytes": 13979
+    },
+    {
+      "repository": "leanprover-community/mathlib4",
+      "pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "path": "Mathlib/NumberTheory/MulChar/Basic.lean",
+      "archive": ".noeaaeue/.local/heartbeat-cubic-suppliers/9283452f97a04ba49016910177cb36a4/Mathlib__NumberTheory__MulChar__Basic.lean",
+      "sha256": "67fcb540ce7bc5fd9bfafe1b6fc92ee5e4c6c96404e7baf9edbe1a24b030b9be",
+      "git_blob": "dc3c465d304326784909c686d278edfa30a75385",
+      "bytes": 24092,
+      "header": [
+        "/-",
+        "Copyright (c) 2022 Michael Stoll. All rights reserved.",
+        "Released under Apache 2.0 license as described in the file LICENSE.",
+        "Authors: Michael Stoll",
+        "-/"
+      ],
+      "anchors": {
+        "trivial": 104,
+        "ext": 134,
+        "ofUnitHom": 157,
+        "ofUnitHom_coe": 178,
+        "equivToUnitHom": 181,
+        "apply_eq_zero_iff": 217,
+        "map_zero": 232,
+        "one_apply_coe": 257,
+        "pow_apply_coe": 348
+      }
+    },
+    {
+      "repository": "leanprover-community/mathlib4",
+      "pin": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "path": "Mathlib/RingTheory/RootsOfUnity/Basic.lean",
+      "archive": ".noeaaeue/.local/heartbeat-cubic-suppliers/9283452f97a04ba49016910177cb36a4/Mathlib__RingTheory__RootsOfUnity__Basic.lean",
+      "sha256": "6c5e4fe6b0390435bdb3d54eda8cc33eaff1505ebcc8794afbbe512f688ef2c0",
+      "git_blob": "73a14ab422640dc6578b850e6683433319859d2c",
+      "bytes": 13295,
+      "header": [
+        "/-",
+        "Copyright (c) 2020 Johan Commelin. All rights reserved.",
+        "Released under Apache 2.0 license as described in the file LICENSE.",
+        "Authors: Johan Commelin",
+        "-/"
+      ],
+      "anchors": {
+        "restrictRootsOfUnity": 144,
+        "restrictRootsOfUnity_coe_apply": 154
+      }
+    },
+    {
+      "repository": "arxiv",
+      "version": "1902.03483v2",
+      "url": "https://arxiv.org/pdf/1902.03483v2",
+      "archive": ".noeaaeue/.local/heartbeat-cubic-suppliers/9283452f97a04ba49016910177cb36a4/gullerud-mbirika-1902.03483v2.pdf",
+      "sha256": "d8c8508b18ffde34afd95ae98a3d0a4050b243abf52aab7a89be98e58c821816",
+      "bytes": 281430,
+      "authors": [
+        "Emily Gullerud",
+        "Aba Mbirika"
+      ],
+      "title": "An Euler phi function for the Eisenstein integers and some applications",
+      "submission_utc": "2020-01-06T21:53:53Z",
+      "license": "arXiv perpetual non-exclusive distribution license; citation/paraphrase only",
+      "selected_section": "5.2 Theorem5.5, PDFpage22zero-based: nonzero theta,eta,gcd1 for Euler-Fermat modulo eta; unit/coprimality context only, not actual root lift/MulChar construction or Lean ring identification"
+    }
+  ]
+}

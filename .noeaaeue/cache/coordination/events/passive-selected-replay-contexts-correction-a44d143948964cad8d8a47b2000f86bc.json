@@ -1,0 +1,73 @@
+{
+  "acceptance_created_by_archive": false,
+  "agent": "cache_adapter",
+  "artifact_reference_count": 70,
+  "at": "2026-10-16T02:32:58.387610+00:00",
+  "canonical_raw_receipts_retained_exact": true,
+  "context_count": 4,
+  "input_drift": [],
+  "kind": "passive-selected-replay-contexts-corrected",
+  "manifest": {
+    "bytes": 121934,
+    "path": ".noeaaeue/cache/research/selected-replay-contexts/contexts-b07e97dd7a604d049106acd781439fac/manifest-r2.json",
+    "sha256": "f3172be5bc89e803c22cb9307604849ca29327a3f766d25f4fe4cf20c0c5aa4c"
+  },
+  "native_or_tests_executed": false,
+  "prior_event": {
+    "path": ".noeaaeue/cache/coordination/events/passive-selected-replay-contexts-90cbaab5c6b34eafbf7f9320f5a86adc.json",
+    "sha256": "32a36c0059f3a2e79d9f10434ccbf3861b83dabca98a3c6ac619e9aa3ab22dd4",
+    "status": "historical construction event; use corrected manifest"
+  },
+  "removed_only_new_exact_duplicate_receipt_objects": [
+    {
+      "newly_created_duplicate_object": {
+        "bytes": 3721359,
+        "passive_text_container": true,
+        "path": ".noeaaeue/cache/research/selected-replay-contexts/contexts-b07e97dd7a604d049106acd781439fac/objects/4740a382c09089090427166ec58a6190bfebfdf970c7980818f86af4adc956c1.txt",
+        "sha256": "4740a382c09089090427166ec58a6190bfebfdf970c7980818f86af4adc956c1"
+      },
+      "retained_canonical_receipt": {
+        "bytes": 3721359,
+        "path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-compaction-schedule-relocated-context-checks-2026-10-15.json",
+        "sha256": "4740a382c09089090427166ec58a6190bfebfdf970c7980818f86af4adc956c1"
+      }
+    },
+    {
+      "newly_created_duplicate_object": {
+        "bytes": 3721363,
+        "passive_text_container": true,
+        "path": ".noeaaeue/cache/research/selected-replay-contexts/contexts-b07e97dd7a604d049106acd781439fac/objects/013058efd194bb60ea9f13b41488cdff73c97bc73aa92c86b81399947fd23c3e.txt",
+        "sha256": "013058efd194bb60ea9f13b41488cdff73c97bc73aa92c86b81399947fd23c3e"
+      },
+      "retained_canonical_receipt": {
+        "bytes": 3721363,
+        "path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-compaction-schedule-relocated-context-r2-checks-2026-10-15.json",
+        "sha256": "013058efd194bb60ea9f13b41488cdff73c97bc73aa92c86b81399947fd23c3e"
+      }
+    },
+    {
+      "newly_created_duplicate_object": {
+        "bytes": 4876038,
+        "passive_text_container": true,
+        "path": ".noeaaeue/cache/research/selected-replay-contexts/contexts-b07e97dd7a604d049106acd781439fac/objects/5e8fbb008e49654124344aaa05eea917d85aeb704881f54ea7a5daad3f3db6fc.txt",
+        "sha256": "5e8fbb008e49654124344aaa05eea917d85aeb704881f54ea7a5daad3f3db6fc"
+      },
+      "retained_canonical_receipt": {
+        "bytes": 4876038,
+        "path": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-reduction-relocated-context-r2-checks-2026-10-15.json",
+        "sha256": "5e8fbb008e49654124344aaa05eea917d85aeb704881f54ea7a5daad3f3db6fc"
+      }
+    }
+  ],
+  "schema": "repository-agent-event-v1",
+  "scope": "Passive content-addressed preservation of completed selected replay operational scripts, formal audit template, generated audit wrapper and bounded diagnostics. Canonical raw receipts are retained unchanged at their durable evidence paths and bound by exact hash/bytes, not copied into content objects.",
+  "source_controls_wrappers_logs_retained": true,
+  "superseded_manifest": {
+    "path": ".noeaaeue/cache/research/selected-replay-contexts/contexts-b07e97dd7a604d049106acd781439fac/manifest.json",
+    "reason": "It described three redundant receipt copies created before the no-receipt-duplication refinement; only those newly created exact duplicate objects were then removed. This corrected manifest binds canonical raw receipts directly.",
+    "sha256": "fe10bbda745eff01a62bc3c2bfe4c33cd9039cd948544d74bde344280daefefc",
+    "status": "HISTORICAL_CONSTRUCTION_RECIPE_NOT_COMPLETE_RETAINED_ARCHIVE"
+  },
+  "unique_content_bytes": 2022991,
+  "unique_content_object_count": 15
+}

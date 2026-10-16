@@ -1,0 +1,27 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "schedule-reduction-relocated-context",
+  "at": "2026-10-16T02:43:27.684247+00:00",
+  "status": "EXACT_PASSIVE_CONTEXTS_RETAINED",
+  "cursor": {
+    "path": ".noeaaeue/cache/coordination/continuations/2026-10-15-relocated-context.json",
+    "sha256": "e5bf8cc117fee1a3535251d8e3cef0a00a4d297140e1040878ffc3e0a203db1d",
+    "bytes": 2284
+  },
+  "authored_integration_intent": {
+    "path": ".noeaaeue/cache/research/schedule-reduction-canonical-integration-intent-2026-10-15-8f079ba3ca4d4fa7b81940a8a925c54f.json",
+    "sha256": "19b563f516ab2223457d02279f6ab435b2afc5d6d092d9e65bc02962c8f46dde",
+    "bytes": 82560
+  },
+  "compressed_integration_context": {
+    "path": ".noeaaeue/cache/research/integration-passive-context-2026-10-15.json",
+    "sha256": "c0b448f3d0707cf79c132ea8184424ab0b5ae394b4eff741f92c052d124dd286",
+    "bytes": 419979
+  },
+  "compact_observation_variants": {
+    "path": ".noeaaeue/cache/research/relocated-source-observation-compact-variants-2026-10-15.json",
+    "sha256": "33316ff7a2d575c1b468062c311caca41a9b8e50d6eb15c0a5f413e8fd788484",
+    "bytes": 1741
+  },
+  "shared_consolidation": "Monitor-owned. Own exact CAS patch is a recipe only; never apply against nonmatching preimages. Concurrent foreign current metadata remains separate."
+}

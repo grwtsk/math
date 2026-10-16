@@ -1,0 +1,73 @@
+{
+  "schema": "explicit-finite-retained-cache-layout-roundtrip-v1",
+  "at": "2026-10-16T02:11:32.331010+00:00",
+  "outcome": "passed",
+  "revision": "ffc3e070cb7a67f8113ed46d3ec78ad76c1e4e464047034dd323c489240a0b75",
+  "parent": "ce89c2a26424ddbcce16a6c5140513f61510b17b196f72dd6bc2b0cfef85550d",
+  "layout_policy": "relocated-physical-v1",
+  "path_mapper": {
+    "path": ".noeaaeue/scripts/repository_paths.py",
+    "sha256": "4bd02ac496dc2fbd141b19f23ba86291db1618a0ae298a76beab28701ff24d22"
+  },
+  "source_count": 825,
+  "catalog_file_count": 2,
+  "context_file_count": 9,
+  "all_exact_files": 836,
+  "finite_path_map_injective": true,
+  "complete_actual_physical_path_set_and_bytes_equal": true,
+  "inverse_recovers_complete_logical_path_set_and_bytes": true,
+  "original_logical_layout_is_output_layout": false,
+  "nonidentity_placements": [
+    {
+      "logical_id": "docs/math-layout.json",
+      "physical_path": ".noeaaeue/documentation/math-layout.json",
+      "sha256": "962f814700cf08a454909c96a6b64e31064a2112b249728fe7a0169d2cbd5c4c"
+    },
+    {
+      "logical_id": "evidence/source-intake.json",
+      "physical_path": ".noeaaeue/evidence/source-intake.json",
+      "sha256": "ef9f4145cfe681bc5553cf59c8f389d4d0c58fcca7d784cca9399f08fba803c3"
+    }
+  ],
+  "entire_retained_parent_chain": "passed",
+  "live_verification": "FAIL retained: later unrelated primitive-additive-moment source/catalog updates; snapshot not rebound to newer live bytes",
+  "live_drift": {
+    "revision": "ffc3e070cb7a67f8113ed46d3ec78ad76c1e4e464047034dd323c489240a0b75",
+    "source_count": 825,
+    "changed_sources": [
+      "GRWTSK.lean",
+      "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/MomentMissingCoprimality.lean",
+      "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/MomentMissingCutoff.lean",
+      "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/MomentToABC.lean",
+      "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/MomentUnsignedMoebius.lean",
+      "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Positive/Moments.lean",
+      "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/MomentReindexing.lean",
+      "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Moments.lean"
+    ],
+    "invalidated_sources": [
+      "GRWTSK.lean",
+      "GRWTSK/Combinatorics/GraphTheory/UnitDistanceGraph/Moser/Checks/DeclarationAudit.lean",
+      "GRWTSK/Logic/ProofChecking/Checks/FullAnalyticArithmeticKernel.lean",
+      "GRWTSK/Logic/ProofChecking/Checks/MoebiusResponseLibrary.lean",
+      "GRWTSK/Logic/ProofChecking/Checks/OwnedDeclarationAudit.lean",
+      "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/MomentMissingCoprimality.lean",
+      "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/MomentMissingCutoff.lean",
+      "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/MomentToABC.lean",
+      "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/MomentUnsignedMoebius.lean",
+      "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Positive/Moments.lean",
+      "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/MomentReindexing.lean",
+      "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Moments.lean"
+    ],
+    "metadata_finding_count": 91,
+    "catalog_drift": true,
+    "context_drift": false,
+    "head_drift": false,
+    "proof_status": "unknown-unreplayed"
+  },
+  "physical_external_temp": true,
+  "owned_temporary_tree_removed": true,
+  "expanded_code_executed": false,
+  "all_source_proof_status": "unknown-unreplayed; mathematical_acceptancefalse",
+  "metadata_findings_retained": 91,
+  "limits": "Bounded exact retained revision and mapper only; original-layout output differs at two catalogs. No live freshness, universal map/hash injectivity, Lean/Python/filesystem/IO refinement or proof/permission authority."
+}

@@ -1,0 +1,6 @@
+/Users/local/Desktop/math/.noeaaeue/.local/prefix-compaction-schedule-replay/replay-rbnueh25/source/GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixScheduleRemapComposition.lean:11:37: error: Type mismatch
+  direct_lookup_some
+has type
+  directLookup = some 2
+but is expected to have type
+  composedLookup = some 2

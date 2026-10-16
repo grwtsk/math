@@ -1,0 +1,13 @@
+{
+  "schema": "explicit-current-source-observation-refresh-v1",
+  "at": "2026-10-16T02:31:30.190418+00:00",
+  "path": ".noeaaeue/bindings/current-source-observations.json",
+  "prior_sha256": "7dac23206574f4bd3b8429acc1548df69c531678a67ff5ca60f52bdf82a64a19",
+  "preserved_prior": ".noeaaeue/cache/research/source-observation-variants/7dac23206574f4bd3b8429acc1548df69c531678a67ff5ca60f52bdf82a64a19.json",
+  "new_sha256": "25ce8282b50242408ccc4b5b67c2d11c3c6adc9105b52b3d5d51a1456bf46ed1",
+  "new_identity": "d57979e56a8747affb4b6d0c492a3c2f0c2287e830ff5caf714ffdfe6dab0edd",
+  "actual_source_count": 847,
+  "candidate_equal_current_before_after": true,
+  "acceptance_inherited": false,
+  "scope": "Only explicit engineering observation input; prior historical/current-source observation retained unchanged. No theorem verification or historical intake rebinding."
+}
