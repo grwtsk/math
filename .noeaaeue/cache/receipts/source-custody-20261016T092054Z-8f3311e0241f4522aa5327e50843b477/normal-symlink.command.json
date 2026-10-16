@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+    "-I",
+    "-B",
+    "/Users/local/Desktop/math/.noeaaeue/cache/receipts/source-custody-20261016T092054Z-8f3311e0241f4522aa5327e50843b477/compare_expansion_bytes.py",
+    "--repository",
+    "/Users/local/Desktop/math",
+    "--revision",
+    "ecefbe78491e1bc142a3e80aa8cf68202a2ae9bf60837942a113b4eafc6bc728",
+    "--destination",
+    "/private/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0000gn/T/grwtsk-cache-roundtrip-lc95lh5i/expanded"
+  ],
+  "exit_code": 1,
+  "expected_error_fragment": "symlink or special expansion entry",
+  "expected_exit_code": 1,
+  "finished_utc": "2026-10-16T09:25:56.180319+00:00",
+  "stage": "normal-symlink",
+  "started_utc": "2026-10-16T09:25:56.116763+00:00",
+  "stderr_sha256": "fb967102be0eefd6babe22db20ee57bb5637ac026143a9d1fdc65cac218349de",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

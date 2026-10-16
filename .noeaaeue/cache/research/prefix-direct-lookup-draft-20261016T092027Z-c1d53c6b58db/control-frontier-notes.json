@@ -1,0 +1,77 @@
+{
+  "schema": "uncompiled-formal-consumer-preparation-v1",
+  "status": "UNCOMPILED_UNCHECKED",
+  "native_execution": "NOT_RUN",
+  "proof_acceptance": "not-established",
+  "lean_runtime_refinement": "not-established",
+  "scope": "Exact message-only draft preserved for later root custody; a prospective separate mathematical module, not an installed GRWTSK source.",
+  "proposed_future_library_path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableDirectLookup.lean",
+  "new_consumer": "transportSlotAt_eq_directLookup_of_reference",
+  "existing_results_reused": [
+    "PrefixTableReferenceTransport.transport_reference supplies actual successful cumulative target, final real-reference membership and exact full-payload lookup.",
+    "PrefixTableState.WellFormed.references supplies original real-reference bounds; actual schedule output WellFormed.nodup supplies uniqueness.",
+    "Single-compaction direct lookup is already covered by compact_reference, remap_retained, remap_lookup and reindexReferences_eq; do not duplicate it."
+  ],
+  "proof_plan_unverified": [
+    "Obtain actual target via transport_reference.",
+    "Use original reference bounds to obtain the actual old full trace.",
+    "Use final lookup equality and final dictionary Nodup to identify target with direct full-trace idxOf.",
+    "The local BEq explicitly matches instBEqOfDecidableEq used by actual directLookupAt."
+  ],
+  "hypotheses": [
+    "V and Key arbitrary types; Quiver V.",
+    "DecidableEq (EdgeTrace.TotalEdge V), hence exact equality of complete typed edge words.",
+    "Actual ValidRootedState root Key and actual finite schedule actions.",
+    "The complete original keyed reference belongs to the actual initial real-reference list."
+  ],
+  "not_added_as_assumptions": [
+    "finite V",
+    "DecidableEq V",
+    "DecidableEq Key",
+    "desired decoding equality",
+    "desired final lookup equality",
+    "final compaction"
+  ],
+  "future_controls_all_NOT_RUN": [
+    {
+      "id": "referenced-false-history-direct-index",
+      "contract": "Reuse actual original_real_reference and actual_retained_transport to prove new direct lookup is some 0 for the actual referenced false history."
+    },
+    {
+      "id": "unused-reintroduced-slot-boundary",
+      "contract": "Prove new direct lookup on actual unused old slot 2 is some 2; combine with existing actual_dropped_transport = none to prove inequality. Keep existing reintroduction negative unchanged."
+    },
+    {
+      "id": "empty-schedule",
+      "contract": "Consume the new theorem on actual original real-reference support for an empty schedule."
+    },
+    {
+      "id": "ordered-repeats",
+      "contract": "Reuse actual distinct-key/repeated-reference fixtures. Any new full mapM equality must be proved; do not infer equality with final.references.take oldLength."
+    },
+    {
+      "id": "empty-references-root",
+      "contract": "Empty original real-reference list makes support obligation vacuous; retain explicit outer root and claim no root recovery from empty payloads."
+    },
+    {
+      "id": "missing-support-rejection",
+      "contract": "A new negative consumer may incorrectly supply unused_slot_bound where real-reference membership is required, after accepted positives prove actual false direct/cumulative equality. This proposed negative is uncompiled and no diagnostic is claimed."
+    }
+  ],
+  "preserve_existing_boundary_controls": [
+    "Checks/Positive/PrefixTableReferenceTransport.actual_dropped_transport",
+    "Checks/Positive/PrefixTableReferenceTransport.actual_bounded_totality_counter",
+    "Checks/Positive/PrefixTableSchedule.actual_partial_remap_composition_failure",
+    "Checks/Negative/PrefixReferenceMissingSupport.lean",
+    "Checks/Negative/PrefixScheduleRemapComposition.lean"
+  ],
+  "limits": [
+    "No all-old-slot equality or totality: unused old payloads may be dropped and later reintroduced.",
+    "No final.references.take oldLength equality theorem is proposed or claimed checked.",
+    "No new-row predicate inheritance, permission or policy authority.",
+    "No Python/cache/JSON/IO/hash runtime correspondence.",
+    "No edits to existing proved modules, taxonomy, exports, registries, cache or events.",
+    "No Lean/Lake/native/checker run; correlated source inspection is not independent validation."
+  ],
+  "attribution_plan": "Any future installed module must retain project grwtsk contributors/MIT direction and imported Lean/Mathlib individual credits and licenses. This preparation creates no attribution or license transfer from source comparison."
+}
