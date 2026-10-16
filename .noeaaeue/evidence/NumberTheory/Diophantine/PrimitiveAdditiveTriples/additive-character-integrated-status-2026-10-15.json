@@ -1,0 +1,133 @@
+{
+  "schema": "finite-additive-character-integration-status-v2",
+  "observed_at": "2026-10-16T05:59:47.992330+00:00",
+  "selected_receipt": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json",
+  "selected_receipt_sha256": "4ac00cdc45b0fcf7bff4c8650bad3b5ae05f1cc4ed015accefdd96b0863b4a00",
+  "selected_kernel_check": "passed",
+  "library_modules": 9,
+  "owned_declarations": 120,
+  "negative_rejections": 5,
+  "source_registration": true,
+  "root_exports_added": [
+    "GRWTSK.Analysis.Fourier.FiniteAdditiveProjector",
+    "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.AdditiveCharacterMoments"
+  ],
+  "public_root_replay": "passed-exact-current-public-source-scope",
+  "documentation_checks": "passed:182 pages; five gates;109 tests normal and optimized",
+  "integration_in_progress": false,
+  "frozen_target_changed": false,
+  "abc_proved": false,
+  "abc_implications": "open: uniform radical estimates, test-weight uniformity, pointwise arithmetic bridge",
+  "overall_status": "OPEN_FRONTIER",
+  "documentation_receipt": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-documentation-combined-retry-2026-10-16/records.json",
+  "status_observed_at": "2026-10-16T09:02:39.894556+00:00",
+  "integration_complete": true,
+  "final_checkpoint": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe",
+  "expected_final_public_sources": 447,
+  "expected_final_application_sources": 450,
+  "precursor_public_native_completion": ".noeaaeue/binding-repair/checkpoint-20261016T060730Z-4aa6d1daa6c84a21b1e43b2a3bcf8e6a/public-native-completion.json",
+  "operational_integration_cursor": {
+    "status": "NATIVE_INTEGRATION_COMPLETE_PUBLICATION_PENDING",
+    "completed_pipeline_records": {
+      "path": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/records.json",
+      "sha256": "64d3a2128c62bfbdcc33070b69338f91dafcb3c1609da0db565e858bb4738b03",
+      "bytes": 6467
+    },
+    "completed_stages": {
+      "contract-validate-retry": {
+        "path": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/contract-validate-retry-receipt.json",
+        "sha256": "cdec2e91f9cfb19c59e617873c80172d71b678019fe1d6c11b41dad5d3ea3dd8",
+        "bytes": 1979381,
+        "argv": [
+          "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+          "-B",
+          ".noeaaeue/scripts/check_moebius_response.py",
+          "--manifest",
+          ".noeaaeue/bindings/moebius-current-inputs-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe.json",
+          "--validate-only"
+        ],
+        "status": "inputs-validated"
+      },
+      "native-audit-self-test": {
+        "path": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/native-audit-self-test-receipt.json",
+        "sha256": "9221fc0f9f44a5971fabaf892d3d20c9e0b1a1762154f3ff15bae9d9add684c5",
+        "bytes": 32330,
+        "argv": [
+          "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+          "-B",
+          ".noeaaeue/scripts/check_math_trust.py",
+          "--lean-self-test"
+        ],
+        "status": "LEAN_AUDIT_SELF_TEST_PASSED"
+      },
+      "public-library-replay": {
+        "path": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/public-library-replay-receipt.json",
+        "sha256": "2109996fa0f6de687fa407b1c8d33550cb97bb96ea032a4bb0ffd91708cca6b4",
+        "bytes": 25238132,
+        "argv": [
+          "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+          "-B",
+          ".noeaaeue/scripts/check_math_trust.py",
+          "--memory-mib",
+          "12288"
+        ],
+        "status": "ALL_PROJECT_SOURCE_AND_AXIOM_CHECKS_PASSED"
+      },
+      "application-replay": {
+        "path": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/application-replay-receipt.json",
+        "sha256": "b9e4d5141c5110230bc87e68c19ce3bb8ac4922f1cc0cc660e44ff4b23545faf",
+        "bytes": 37810990,
+        "argv": [
+          "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+          "-B",
+          ".noeaaeue/scripts/check_moebius_response.py",
+          "--manifest",
+          ".noeaaeue/bindings/moebius-current-inputs-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe.json",
+          "--memory-mb",
+          "12288"
+        ],
+        "status": "kernel-checked"
+      }
+    },
+    "finish_record": {
+      "path": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-finish-2026-10-15.json",
+      "scope": "Created exclusively by this finalization from the completed actual receipts; its final byte hash belongs in the separate publication/completion event."
+    },
+    "next_obligation": "finite_product_weight_character_factorization",
+    "publication": {
+      "status": "pending-separate-completion-event",
+      "expected_append_only_event": ".noeaaeue/cache/coordination/events/reference-characters-integration-complete-2026-10-16.json",
+      "publication_evidence_path": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/publication-completion.json",
+      "commit": null,
+      "push": null,
+      "scope": "No completed commit, push or publication is inferred from native integration. Record those actual outcomes separately when they exist."
+    },
+    "scope": "The recorded native integration stages are complete; no running PID, tool session or instruction to wait on the retired pipeline remains current. The next finite mathematical obligation and publication are separate."
+  },
+  "historical_precompletion_operational_integration_cursor": {
+    "records": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/records.json",
+    "current_native_progress": ".noeaaeue/.local/math-trust/20261016T071217Z-106794a779/progress.json",
+    "tool_session": 65746,
+    "native_child_pid": 94775,
+    "scope": "Wait for existing final serial pipeline; do not launch duplicate native checks. After actual four stages pass, review/apply finalizer, append RH completion event, commit exact validated allowlist and nonforcepush. Mathematical next obligation remains separate and open.",
+    "obsolete_448_application": "NOT_RUN"
+  },
+  "public_root_receipt": {
+    "path": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/public-library-replay-receipt.json",
+    "sha256": "2109996fa0f6de687fa407b1c8d33550cb97bb96ea032a4bb0ffd91708cca6b4",
+    "bytes": 25238132,
+    "argv": [
+      "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+      "-B",
+      ".noeaaeue/scripts/check_math_trust.py",
+      "--memory-mib",
+      "12288"
+    ],
+    "status": "ALL_PROJECT_SOURCE_AND_AXIOM_CHECKS_PASSED"
+  },
+  "library_wide_source_count": 447,
+  "public_owned_declarations": 12157,
+  "application_source_count": 450,
+  "application_owned_declarations": 12159,
+  "integration_record": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-finish-2026-10-15.json"
+}

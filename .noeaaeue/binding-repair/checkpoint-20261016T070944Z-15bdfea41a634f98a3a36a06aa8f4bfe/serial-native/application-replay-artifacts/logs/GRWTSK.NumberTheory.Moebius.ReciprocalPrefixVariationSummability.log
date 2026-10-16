@@ -1,0 +1,6 @@
+'GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationSummability.reciprocalCauchyBlock_le_logVariationMajorant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationSummability.criticalBoundary_of_reciprocalLogVariationSummable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

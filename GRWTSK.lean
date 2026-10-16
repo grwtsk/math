@@ -433,3 +433,9 @@ import GRWTSK.Analysis.Fourier.ZModConcentratedFrequencies
 import GRWTSK.Combinatorics.DirectedGraph.PrefixTableSchedule
 import GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicReduction
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.DivisorSectorReindexing
+import GRWTSK.Analysis.Fourier.ZModBalancedExpectedLayers
+import GRWTSK.Combinatorics.Sequences.PartitionExposureChecks
+import GRWTSK.Analysis.Fourier.FiniteAdditiveProjector
+import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.AdditiveCharacterMoments
+import GRWTSK.Combinatorics.DirectedGraph.PrefixTableReferenceTransport
+import GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicCharacters

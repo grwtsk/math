@@ -1,0 +1,53 @@
+{
+  "schema": "source-bound-open-obligations-v1",
+  "theorem_13": {
+    "status": "closed-selected-kernel-checked",
+    "constant": "2^24",
+    "stronger_constant": 30022,
+    "receipt": ".noeaaeue/evidence/Analysis/Fourier/partition-concentration-checks-2026-10-15.json",
+    "receipt_sha256": "1885cf8f4563a235e3a446b77e6683e7d7290e82150d6643dfa461ca5d22bb51",
+    "unproved_analytical_premises": []
+  },
+  "subsequent_open_mathematics": [
+    {
+      "id": "source-corollary-1.4",
+      "target": "For each real0<epsilon<1, existC_epsilon>0 such that for primep, finiteS⊆ZModp, n=|S|≥2 and1≤m≤(1−epsilon)n, every fixed-size subset-sum pointmass is at most1/p+C_epsilon*sqrt(log n)/(n*sqrt m).",
+      "smallest_next_problem": "Disintegrate a uniform larger slice into a smaller uniformly exposed slice in the source Theorem1.3 range, preserving the exact conditional fixed-size law and constants."
+    },
+    {
+      "id": "source-corollary-4.2",
+      "target": "For k≥1 and1≤m1<...<mk<n, uniform nested chainR1⊆...⊆Rk⊆S, bound the joint sum probability by Σj=0..k Πi∈{0..k}\\{j}(1/p+C_k*sqrt(log n)/(n*sqrt(m_(i+1)−m_i))), withm0=0 andm_(k+1)=n.",
+      "smallest_next_problem": "Prove exact conditional law of successive disjoint exposed increments of a uniform chain; apply the larger-slice estimate conditionally, without nested-set independence."
+    },
+    {
+      "id": "source-section-5-auxiliaries",
+      "target": "Local subset-sum collision and admissible-permutation counting estimates at the source parametersD,epsilon,alpha.",
+      "smallest_next_problem": "Encode and count the bounded disjoint admissible transposition families entering the actual compatibilityFailure event, retaining all conditional exposure constraints."
+    },
+    {
+      "id": "source-lemmas-5.1-5.3",
+      "target": "Under the source prime/set/parameter regime, probability(tailFailure)≤1/100, probability(densityFailure)≤3/100, probability(compatibilityFailure)≤1/25.",
+      "lean_targets": [
+        "GRWTSK.PrimeCyclicRearrangement.tailFailure",
+        "GRWTSK.PrimeCyclicRearrangement.densityFailure",
+        "GRWTSK.PrimeCyclicRearrangement.compatibilityFailure"
+      ],
+      "smallest_next_problem": "Supply the actual three event bounds to GRWTSK.PrimeCyclicRearrangement.conditional_rearrangement_from_failure_bounds after closing the source chain estimates."
+    },
+    {
+      "id": "source-theorem-1.2",
+      "target": "GRWTSK.PrimeCyclicRearrangement.PhamSauermannSourceRange",
+      "smallest_next_problem": "Derive the source-parameter choices and three failure-event bounds, then apply the existing deterministic repair reduction.",
+      "full_graham_conjecture_claimed": false
+    }
+  ],
+  "repository_integration": {
+    "status": "pending-separate-shared-checkpoint",
+    "targets": [
+      "reconcile current-source observations without rewriting historical pins",
+      "regenerate global source catalog and explicit new current contract",
+      "fresh whole-library trust replay under the integration owner"
+    ],
+    "mathematical_acceptance_from_bookkeeping": false
+  }
+}

@@ -100,6 +100,7 @@
     ],
     "Combinatorics/Sequences": [
       "GRWTSK/Combinatorics/Sequences/BalancedPartitionSampling.lean",
+      "GRWTSK/Combinatorics/Sequences/ConditionalPartitionExposure.lean",
       "GRWTSK/Combinatorics/Sequences/QuotaDiscrepancy.lean",
       "GRWTSK/Combinatorics/Sequences/ZeroSumIntervalRepair.lean"
     ],
@@ -192,6 +193,7 @@
       "GRWTSK/Combinatorics/DirectedGraph/PrefixTableBatch.lean",
       "GRWTSK/Combinatorics/DirectedGraph/PrefixTableCheckpoint.lean",
       "GRWTSK/Combinatorics/DirectedGraph/PrefixTableCompaction.lean",
+      "GRWTSK/Combinatorics/DirectedGraph/PrefixTableReferenceTransport.lean",
       "GRWTSK/Combinatorics/DirectedGraph/PrefixTableReindex.lean",
       "GRWTSK/Combinatorics/DirectedGraph/PrefixTableSchedule.lean",
       "GRWTSK/Combinatorics/DirectedGraph/PrefixTableState.lean",
@@ -224,6 +226,7 @@
     ],
     "Analysis/Fourier": [
       "GRWTSK/Analysis/Fourier/SchwartzMoments.lean",
+      "GRWTSK/Analysis/Fourier/ZModBalancedExpectedLayers.lean",
       "GRWTSK/Analysis/Fourier/ZModBalancedPartition.lean",
       "GRWTSK/Analysis/Fourier/ZModSubsetSum.lean"
     ],
@@ -234,6 +237,7 @@
       "GRWTSK/NumberTheory/Ideal/CompactNormSupport.lean"
     ],
     "NumberTheory/Cyclotomic": [
+      "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicCharacters.lean",
       "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicIdeals.lean",
       "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicReduction.lean"
     ],
@@ -396,6 +400,10 @@
     "GRWTSK/Analysis/Fourier/ZModBalancedPartition.lean": "Analysis",
     "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/DivisorSectorReindexing.lean": "NumberTheory",
     "GRWTSK/Analysis/Fourier/FiniteAdditiveProjector.lean": "Analysis",
-    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/AdditiveCharacterMoments.lean": "NumberTheory"
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/AdditiveCharacterMoments.lean": "NumberTheory",
+    "GRWTSK/Analysis/Fourier/ZModBalancedExpectedLayers.lean": "Analysis",
+    "GRWTSK/Combinatorics/Sequences/ConditionalPartitionExposure.lean": "Combinatorics",
+    "GRWTSK/Combinatorics/DirectedGraph/PrefixTableReferenceTransport.lean": "Combinatorics",
+    "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicCharacters.lean": "NumberTheory"
   }
 }

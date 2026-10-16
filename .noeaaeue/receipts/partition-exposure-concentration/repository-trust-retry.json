@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    ".noeaaeue/scripts/check_math_trust.py",
+    "--memory-mib",
+    "12288"
+  ],
+  "utc": "2026-10-16T06:00:51.279115+00:00",
+  "exit_code": 2,
+  "outcome": "failed-or-busy"
+}

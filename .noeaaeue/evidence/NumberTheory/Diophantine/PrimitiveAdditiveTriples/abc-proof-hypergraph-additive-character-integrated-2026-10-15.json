@@ -1,0 +1,1287 @@
+{
+  "schema": "typed-research-hypergraph-additive-character-integrated-v5",
+  "target": "abc",
+  "target_binding": "abc-campaign.json",
+  "identity_note": "Node IDs are research references, declaration names are compiler identities, and signatures are syntactic review keys; no digest establishes semantic equivalence. Source occurrences and execution receipts are separate records.",
+  "metadata_is_not_a_mathematical_premise": true,
+  "nodes": [
+    {
+      "id": "abc",
+      "declaration_identity": "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ABCConjecture",
+      "statement": "For every positive real epsilon there is one positive constant uniform over all primitive positive additive triples",
+      "status": "open",
+      "source_statements": [],
+      "mathematical_acceptance": false
+    },
+    {
+      "id": "target_forms",
+      "declaration_identity": "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.abcConjecture_iff_finite_exceptions",
+      "statement": "Canonical target formulations",
+      "status": "checked-at-selected-model-scope",
+      "proof_dependencies": "exact imported closure in selected receipt",
+      "mathematical_acceptance": "exact named declaration only; no open-route inference",
+      "execution_identity": "checked-prerequisites-2026-10-15.json"
+    },
+    {
+      "id": "squarefree_partial",
+      "declaration_identity": "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.PrimitiveAdditiveTriple.bound_of_squarefree",
+      "statement": "Squarefree-product coefficient-one subfamily bound",
+      "status": "checked-at-selected-model-scope",
+      "proof_dependencies": "exact imported closure in selected receipt",
+      "mathematical_acceptance": "exact named declaration only; no open-route inference",
+      "execution_identity": "checked-prerequisites-2026-10-15.json"
+    },
+    {
+      "id": "coprime_necessity",
+      "declaration_identity": "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.no_uniform_bound_without_coprimality",
+      "statement": "All-epsilon nonprimitive powers-of-two obstruction",
+      "status": "checked-at-selected-model-scope",
+      "proof_dependencies": "exact imported closure in selected receipt",
+      "mathematical_acceptance": "exact named declaration only; no open-route inference",
+      "execution_identity": "checked-prerequisites-2026-10-15.json"
+    },
+    {
+      "id": "cycle_model",
+      "declaration_identity": "GRWTSK.LinearAlgebra.OrientedRealLine.Chain.cycle_scale",
+      "statement": "All edges of a commuting finite positive-scale cycle",
+      "status": "checked-at-selected-model-scope",
+      "proof_dependencies": "exact imported closure in selected receipt",
+      "mathematical_acceptance": "exact named declaration only; no open-route inference",
+      "execution_identity": "checked-prerequisites-2026-10-15.json"
+    },
+    {
+      "id": "finite_repair",
+      "declaration_identity": "GRWTSK.LinearAlgebra.OrientedRealLine.FiniteComparisonRepair.weighted_degree_le",
+      "statement": "Conditional finite common-line bound",
+      "status": "checked-at-selected-model-scope",
+      "proof_dependencies": "exact imported closure in selected receipt",
+      "mathematical_acceptance": "exact named declaration only; no open-route inference",
+      "execution_identity": "checked-prerequisites-2026-10-15.json"
+    },
+    {
+      "id": "finite_expressions",
+      "declaration_identity": "GRWTSK.Analysis.FiniteSums.WeightedDegreeComparison.weighted_upper_bound",
+      "statement": "Exact weighted finite upper bound with retained error",
+      "status": "checked-at-selected-model-scope",
+      "proof_dependencies": "exact imported closure in selected receipt",
+      "mathematical_acceptance": "exact named declaration only; no open-route inference",
+      "execution_identity": "checked-prerequisites-2026-10-15.json"
+    },
+    {
+      "id": "mason_control",
+      "declaration_identity": "GRWTSK.NumberTheory.Polynomial.degree_bounds_of_derivative_ne_zero",
+      "statement": "Polynomial radical bound with nonzero derivative",
+      "status": "checked-at-selected-model-scope",
+      "proof_dependencies": "exact imported closure in selected receipt",
+      "mathematical_acceptance": "exact named declaration only; no open-route inference",
+      "execution_identity": "checked-prerequisites-2026-10-15.json"
+    },
+    {
+      "id": "iut_statement",
+      "declaration_identity": null,
+      "statement": "Reconstruct IUT III 3.11 and 3.12 with source-specific arithmetic comparison, then IV 1.10 and global reductions",
+      "status": "open",
+      "source_statements": [
+        "iut-3-author-manuscript",
+        "iut-4-author-manuscript",
+        "lana-2026-report"
+      ],
+      "route_membership": [
+        "A"
+      ],
+      "trust_requirements": [
+        "exact statement translation",
+        "closed Lean proof of this obligation",
+        "owned axiom audit",
+        "compiled intended consumer"
+      ],
+      "counterexamples": []
+    },
+    {
+      "id": "iut_comparison",
+      "declaration_identity": null,
+      "statement": "Reconstruct IUT III 3.11 and 3.12 with source-specific arithmetic comparison, then IV 1.10 and global reductions",
+      "status": "open",
+      "source_statements": [
+        "iut-3-author-manuscript",
+        "iut-4-author-manuscript",
+        "lana-2026-report"
+      ],
+      "route_membership": [
+        "A"
+      ],
+      "trust_requirements": [
+        "exact statement translation",
+        "closed Lean proof of this obligation",
+        "owned axiom audit",
+        "compiled intended consumer"
+      ],
+      "counterexamples": []
+    },
+    {
+      "id": "iut_global_reduction",
+      "declaration_identity": null,
+      "statement": "Reconstruct IUT III 3.11 and 3.12 with source-specific arithmetic comparison, then IV 1.10 and global reductions",
+      "status": "open",
+      "source_statements": [
+        "iut-3-author-manuscript",
+        "iut-4-author-manuscript",
+        "lana-2026-report"
+      ],
+      "route_membership": [
+        "A"
+      ],
+      "trust_requirements": [
+        "exact statement translation",
+        "closed Lean proof of this obligation",
+        "owned axiom audit",
+        "compiled intended consumer"
+      ],
+      "counterexamples": []
+    },
+    {
+      "id": "repair_instantiation",
+      "declaration_identity": null,
+      "statement": "Construct actual comparison objects and verify every scale or nonlinear region normalization and error bound",
+      "status": "open",
+      "source_statements": [
+        "mochizuki-cmt2018-05",
+        "mochizuki-cmt2018-08",
+        "lana-2026-report"
+      ],
+      "route_membership": [
+        "B"
+      ],
+      "trust_requirements": [
+        "exact statement translation",
+        "closed Lean proof of this obligation",
+        "owned axiom audit",
+        "compiled intended consumer"
+      ],
+      "counterexamples": []
+    },
+    {
+      "id": "source_correspondence",
+      "declaration_identity": null,
+      "statement": "Construct actual comparison objects and verify every scale or nonlinear region normalization and error bound",
+      "status": "open",
+      "source_statements": [
+        "mochizuki-cmt2018-05",
+        "mochizuki-cmt2018-08",
+        "lana-2026-report"
+      ],
+      "route_membership": [
+        "B"
+      ],
+      "trust_requirements": [
+        "exact statement translation",
+        "closed Lean proof of this obligation",
+        "owned axiom audit",
+        "compiled intended consumer"
+      ],
+      "counterexamples": []
+    },
+    {
+      "id": "repair_arithmetic_bridge",
+      "declaration_identity": null,
+      "statement": "Construct actual comparison objects and verify every scale or nonlinear region normalization and error bound",
+      "status": "open",
+      "source_statements": [
+        "mochizuki-cmt2018-05",
+        "mochizuki-cmt2018-08",
+        "lana-2026-report"
+      ],
+      "route_membership": [
+        "B"
+      ],
+      "trust_requirements": [
+        "exact statement translation",
+        "closed Lean proof of this obligation",
+        "owned axiom audit",
+        "compiled intended consumer"
+      ],
+      "counterexamples": []
+    },
+    {
+      "id": "later_repair_statement",
+      "declaration_identity": null,
+      "statement": "Translate the decisive candidate inequalities at their exact versions and check local-to-global and quantifier hypotheses",
+      "status": "open",
+      "source_statements": [
+        "joshi-2403.10430v2",
+        "joshi-final-report",
+        "mochizuki-joshi-2024"
+      ],
+      "route_membership": [
+        "C"
+      ],
+      "trust_requirements": [
+        "exact statement translation",
+        "closed Lean proof of this obligation",
+        "owned axiom audit",
+        "compiled intended consumer"
+      ],
+      "counterexamples": []
+    },
+    {
+      "id": "later_repair_coherence",
+      "declaration_identity": null,
+      "statement": "Translate the decisive candidate inequalities at their exact versions and check local-to-global and quantifier hypotheses",
+      "status": "open",
+      "source_statements": [
+        "joshi-2403.10430v2",
+        "joshi-final-report",
+        "mochizuki-joshi-2024"
+      ],
+      "route_membership": [
+        "C"
+      ],
+      "trust_requirements": [
+        "exact statement translation",
+        "closed Lean proof of this obligation",
+        "owned axiom audit",
+        "compiled intended consumer"
+      ],
+      "counterexamples": []
+    },
+    {
+      "id": "later_repair_arithmetic_bridge",
+      "declaration_identity": null,
+      "statement": "Translate the decisive candidate inequalities at their exact versions and check local-to-global and quantifier hypotheses",
+      "status": "open",
+      "source_statements": [
+        "joshi-2403.10430v2",
+        "joshi-final-report",
+        "mochizuki-joshi-2024"
+      ],
+      "route_membership": [
+        "C"
+      ],
+      "trust_requirements": [
+        "exact statement translation",
+        "closed Lean proof of this obligation",
+        "owned axiom audit",
+        "compiled intended consumer"
+      ],
+      "counterexamples": []
+    },
+    {
+      "id": "derivative_identity",
+      "declaration_identity": null,
+      "statement": "Prove a finite arithmetic Wronskian identity and isolate a global nonvanishing size theorem with all-epsilon strength",
+      "status": "open",
+      "source_statements": [
+        "pasten-2106.16165v3"
+      ],
+      "route_membership": [
+        "D"
+      ],
+      "trust_requirements": [
+        "exact statement translation",
+        "closed Lean proof of this obligation",
+        "owned axiom audit",
+        "compiled intended consumer"
+      ],
+      "counterexamples": []
+    },
+    {
+      "id": "derivative_size",
+      "declaration_identity": null,
+      "statement": "Prove a finite arithmetic Wronskian identity and isolate a global nonvanishing size theorem with all-epsilon strength",
+      "status": "open",
+      "source_statements": [
+        "pasten-2106.16165v3"
+      ],
+      "route_membership": [
+        "D"
+      ],
+      "trust_requirements": [
+        "exact statement translation",
+        "closed Lean proof of this obligation",
+        "owned axiom audit",
+        "compiled intended consumer"
+      ],
+      "counterexamples": []
+    },
+    {
+      "id": "derivative_to_abc",
+      "declaration_identity": null,
+      "statement": "Prove a finite arithmetic Wronskian identity and isolate a global nonvanishing size theorem with all-epsilon strength",
+      "status": "open",
+      "source_statements": [
+        "pasten-2106.16165v3"
+      ],
+      "route_membership": [
+        "D"
+      ],
+      "trust_requirements": [
+        "exact statement translation",
+        "closed Lean proof of this obligation",
+        "owned axiom audit",
+        "compiled intended consumer"
+      ],
+      "counterexamples": []
+    },
+    {
+      "id": "lattice_identity",
+      "declaration_identity": null,
+      "statement": "Formalize the cited lattice bound and identify the additional radical-height power saving",
+      "status": "open",
+      "source_statements": [
+        "pasten-2106.16165v3"
+      ],
+      "route_membership": [
+        "E"
+      ],
+      "trust_requirements": [
+        "exact statement translation",
+        "closed Lean proof of this obligation",
+        "owned axiom audit",
+        "compiled intended consumer"
+      ],
+      "counterexamples": []
+    },
+    {
+      "id": "lattice_power_saving",
+      "declaration_identity": null,
+      "statement": "Formalize the cited lattice bound and identify the additional radical-height power saving",
+      "status": "open",
+      "source_statements": [
+        "pasten-2106.16165v3"
+      ],
+      "route_membership": [
+        "E"
+      ],
+      "trust_requirements": [
+        "exact statement translation",
+        "closed Lean proof of this obligation",
+        "owned axiom audit",
+        "compiled intended consumer"
+      ],
+      "counterexamples": []
+    },
+    {
+      "id": "lattice_to_abc",
+      "declaration_identity": null,
+      "statement": "Formalize the cited lattice bound and identify the additional radical-height power saving",
+      "status": "open",
+      "source_statements": [
+        "pasten-2106.16165v3"
+      ],
+      "route_membership": [
+        "E"
+      ],
+      "trust_requirements": [
+        "exact statement translation",
+        "closed Lean proof of this obligation",
+        "owned axiom audit",
+        "compiled intended consumer"
+      ],
+      "counterexamples": []
+    },
+    {
+      "id": "congruence_map",
+      "declaration_identity": null,
+      "statement": "Port the exact primitive substitution with epsilon-dependent constants and prove abc on its restricted family",
+      "status": "open",
+      "source_statements": [
+        "ellenberg-math9909098v1"
+      ],
+      "route_membership": [
+        "F"
+      ],
+      "trust_requirements": [
+        "exact statement translation",
+        "closed Lean proof of this obligation",
+        "owned axiom audit",
+        "compiled intended consumer"
+      ],
+      "counterexamples": []
+    },
+    {
+      "id": "restricted_abc",
+      "declaration_identity": null,
+      "statement": "Port the exact primitive substitution with epsilon-dependent constants and prove abc on its restricted family",
+      "status": "open",
+      "source_statements": [
+        "ellenberg-math9909098v1"
+      ],
+      "route_membership": [
+        "F"
+      ],
+      "trust_requirements": [
+        "exact statement translation",
+        "closed Lean proof of this obligation",
+        "owned axiom audit",
+        "compiled intended consumer"
+      ],
+      "counterexamples": []
+    },
+    {
+      "id": "congruence_constants",
+      "declaration_identity": null,
+      "statement": "Port the exact primitive substitution with epsilon-dependent constants and prove abc on its restricted family",
+      "status": "open",
+      "source_statements": [
+        "ellenberg-math9909098v1"
+      ],
+      "route_membership": [
+        "F"
+      ],
+      "trust_requirements": [
+        "exact statement translation",
+        "closed Lean proof of this obligation",
+        "owned axiom audit",
+        "compiled intended consumer"
+      ],
+      "counterexamples": []
+    },
+    {
+      "id": "exception_count",
+      "declaration_identity": null,
+      "statement": "Translate the current counting estimate and keep the still-missing all-height finiteness implication explicit",
+      "status": "open",
+      "source_statements": [
+        "exceptional-2410.12234v2"
+      ],
+      "route_membership": [
+        "G"
+      ],
+      "trust_requirements": [
+        "exact statement translation",
+        "closed Lean proof of this obligation",
+        "owned axiom audit",
+        "compiled intended consumer"
+      ],
+      "counterexamples": []
+    },
+    {
+      "id": "exception_finiteness",
+      "declaration_identity": null,
+      "statement": "Translate the current counting estimate and keep the still-missing all-height finiteness implication explicit",
+      "status": "open",
+      "source_statements": [
+        "exceptional-2410.12234v2"
+      ],
+      "route_membership": [
+        "G"
+      ],
+      "trust_requirements": [
+        "exact statement translation",
+        "closed Lean proof of this obligation",
+        "owned axiom audit",
+        "compiled intended consumer"
+      ],
+      "counterexamples": []
+    },
+    {
+      "id": "integer_transfer",
+      "declaration_identity": null,
+      "statement": "Retain the checked field-polynomial result and supply an independent arithmetic bridge if one is proposed",
+      "status": "open",
+      "source_statements": [
+        "mathlib-MasonStothers-pinned"
+      ],
+      "route_membership": [
+        "H"
+      ],
+      "trust_requirements": [
+        "exact statement translation",
+        "closed Lean proof of this obligation",
+        "owned axiom audit",
+        "compiled intended consumer"
+      ],
+      "counterexamples": []
+    },
+    {
+      "id": "elliptic_invariants",
+      "declaration_identity": null,
+      "statement": "Define exact conductor, minimal discriminant, height and reduction data, then prove the specified uniform arithmetic implication",
+      "status": "open",
+      "source_statements": [
+        "vojta-cime",
+        "iut-4-author-manuscript"
+      ],
+      "route_membership": [
+        "I"
+      ],
+      "trust_requirements": [
+        "exact statement translation",
+        "closed Lean proof of this obligation",
+        "owned axiom audit",
+        "compiled intended consumer"
+      ],
+      "counterexamples": []
+    },
+    {
+      "id": "modified_szpiro",
+      "declaration_identity": null,
+      "statement": "Define exact conductor, minimal discriminant, height and reduction data, then prove the specified uniform arithmetic implication",
+      "status": "open",
+      "source_statements": [
+        "vojta-cime",
+        "iut-4-author-manuscript"
+      ],
+      "route_membership": [
+        "I"
+      ],
+      "trust_requirements": [
+        "exact statement translation",
+        "closed Lean proof of this obligation",
+        "owned axiom audit",
+        "compiled intended consumer"
+      ],
+      "counterexamples": []
+    },
+    {
+      "id": "szpiro_vojta_bridge",
+      "declaration_identity": null,
+      "statement": "Define exact conductor, minimal discriminant, height and reduction data, then prove the specified uniform arithmetic implication",
+      "status": "open",
+      "source_statements": [
+        "vojta-cime",
+        "iut-4-author-manuscript"
+      ],
+      "route_membership": [
+        "I"
+      ],
+      "trust_requirements": [
+        "exact statement translation",
+        "closed Lean proof of this obligation",
+        "owned axiom audit",
+        "compiled intended consumer"
+      ],
+      "counterexamples": []
+    },
+    {
+      "id": "moment_identity",
+      "declaration_identity": null,
+      "statement": "Prove the cutoff-explicit Mobius-filtered ternary moment identity and a literal uniform radical-height estimate",
+      "status": "open",
+      "source_statements": [],
+      "route_membership": [
+        "J"
+      ],
+      "trust_requirements": [
+        "exact statement translation",
+        "closed Lean proof of this obligation",
+        "owned axiom audit",
+        "compiled intended consumer"
+      ],
+      "counterexamples": [],
+      "historical_scope_note": "Original combined identity-and-radical-estimate goal retained verbatim; it has not been marked checked. The finite part has a distinct statement node and exact Lean declaration."
+    },
+    {
+      "id": "moment_radical_estimate",
+      "declaration_identity": null,
+      "statement": "Prove the cutoff-explicit Mobius-filtered ternary moment identity and a literal uniform radical-height estimate",
+      "status": "open",
+      "source_statements": [],
+      "route_membership": [
+        "J"
+      ],
+      "trust_requirements": [
+        "exact statement translation",
+        "closed Lean proof of this obligation",
+        "owned axiom audit",
+        "compiled intended consumer"
+      ],
+      "counterexamples": [],
+      "historical_scope_note": "Original combined identity-and-radical-estimate goal retained verbatim; it has not been marked checked. The finite part has a distinct statement node and exact Lean declaration."
+    },
+    {
+      "id": "moment_uniformity",
+      "declaration_identity": null,
+      "statement": "Prove the cutoff-explicit Mobius-filtered ternary moment identity and a literal uniform radical-height estimate",
+      "status": "open",
+      "source_statements": [],
+      "route_membership": [
+        "J"
+      ],
+      "trust_requirements": [
+        "exact statement translation",
+        "closed Lean proof of this obligation",
+        "owned axiom audit",
+        "compiled intended consumer"
+      ],
+      "counterexamples": []
+    },
+    {
+      "id": "finite_moebius_primitive_moment_identity",
+      "declaration_identity": "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.typedPrimitiveWeightedMoment_eq_moebius_sum",
+      "statement": "For every natural N, every ring R, and every W : Nat -> Nat -> Nat -> R, the sum of W over PrimitiveAdditiveTriple t with t.c <= N equals sum d in Icc 1 N of signed mu(d) times sum over 1<=a,b<=N, a+b<=N, d|a and d|b of W(a,b,a+b).",
+      "quantifiers": "forall R [Ring R], forall N : Nat, forall W",
+      "hypotheses": "Positivity, additive relation and coprimality are carried by PrimitiveAdditiveTriple; right-hand positivity and additive cutoff are explicit.",
+      "normalization": "Canonical integer ArithmeticFunction.moebius cast with signs into R; coefficient multiplies sector on the left.",
+      "status": "checked-at-selected-finite-scope",
+      "execution_identity": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/finite-moments-checks-2026-10-15-replay-2.json",
+      "source_statement": "Mathlib canonical Mobius divisor cancellation plus fresh finite sum proofs and exact typed bijection.",
+      "route_membership": [
+        "J"
+      ],
+      "mathematical_acceptance": "Exactly the named finite identity; no radical-height or target implication."
+    },
+    {
+      "id": "uniform_radical_weighted_moment_estimate",
+      "declaration_identity": null,
+      "statement": "Supply and prove a literal radical-height comparison with constants depending only on epsilon, uniformly in every finite cutoff and the necessary test weights; finite divisor cancellation alone supplies no such bound.",
+      "status": "open",
+      "route_membership": [
+        "J"
+      ],
+      "mathematical_acceptance": false
+    },
+    {
+      "id": "moment_to_pointwise_arithmetic_bridge",
+      "declaration_identity": null,
+      "statement": "Prove the exact implication from a supplied cutoff-uniform radical-weighted moment estimate to the frozen all-epsilon pointwise ABCBound; retain test-weight admissibility and every constant.",
+      "status": "open",
+      "route_membership": [
+        "J"
+      ],
+      "mathematical_acceptance": false
+    },
+    {
+      "id": "divisor_sector_reindexing",
+      "declaration_identity": null,
+      "statement": "Reindex d|a,d|b sectors by a=d*u,b=d*v with exact positive floor cutoffs and d*(u+v)<=N; then separately construct an additive Fourier projector if needed.",
+      "status": "open",
+      "route_membership": [
+        "J"
+      ],
+      "mathematical_acceptance": false,
+      "historical_scope_note": "Original combined sector-and-projector goal retained verbatim and open. The exact finite sector identity has its own checked node; no Fourier projector has been proved here."
+    },
+    {
+      "id": "finite_divisor_sector_reindexing",
+      "declaration_identity": "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.commonDivisorWeightedMoment_eq_scaled_sum",
+      "statement": "For every Ring R, N,d : Nat, arbitrary joint W, and hd:0<d, the common d-divisor sector on positive a,b with a+b<=N equals sum over 1<=u,v<=N/d and u+v<=N/d of W(d*u,d*v,d*(u+v)).",
+      "hypotheses": [
+        "0 < d",
+        "1 <= a,b; a+b<=N; d|a and d|b on the source sector",
+        "1<=u,v<=N/d and u+v<=N/d on the quotient region"
+      ],
+      "normalization": "Natural-number floor division, positive scaling, full joint weight and exact third coordinate; quotient pairs have no coprimality restriction.",
+      "status": "checked-at-selected-finite-scope",
+      "source_identity": {
+        "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/DivisorSectorReindexing.lean",
+        "sha256": "d74f5363926558dc39f0ff7ee0538830336059e21b4f078868e3576fd46968b1"
+      },
+      "execution_identity": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/divisor-sectors-checks-2026-10-15.json",
+      "route_membership": [
+        "J"
+      ],
+      "mathematical_acceptance": "Exactly the named finite identity and its declared hypotheses; no arithmetic estimate or abc implication."
+    },
+    {
+      "id": "finite_scaled_primitive_moment_identity",
+      "declaration_identity": "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.typedPrimitiveWeightedMoment_eq_moebius_scaled_sum",
+      "statement": "For every Ring R, N:Nat and arbitrary joint W, the typed primitive positive additive moment at c<=N equals sum d in Icc1N of signed mu(d) times the quotient-region sum W(d*u,d*v,d*(u+v)), with u+v<=N/d.",
+      "hypotheses": "The primitive triple type retains positivity, a+b=c and Nat.Coprime a b; each outer d lies in Icc1N and is positive.",
+      "normalization": "Canonical signed integer Mobius cast into R on the left; no independent-weight premise and no commutativity of multiplication required.",
+      "status": "checked-at-selected-finite-scope",
+      "source_identity": {
+        "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/DivisorSectorReindexing.lean",
+        "sha256": "d74f5363926558dc39f0ff7ee0538830336059e21b4f078868e3576fd46968b1"
+      },
+      "execution_identity": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/divisor-sectors-checks-2026-10-15.json",
+      "route_membership": [
+        "J"
+      ],
+      "mathematical_acceptance": "Finite exact composition only; uniform estimates and pointwise arithmetic implications remain open."
+    },
+    {
+      "id": "finite_additive_character_projector",
+      "declaration_identity": "GRWTSK.Analysis.Fourier.FiniteAdditiveProjector.characterProjector_eq_indicator_of_noWrap",
+      "statement": "Prove an exact finite character-orthogonality projector for the unscaled equation u+v=w, with a stated positive modulus q>2*M when u,v,w lie in [1,M], then justify every finite-sum interchange for W(d*u,d*v,d*w). A congruence projector alone must not be promoted to integer equality, and multiplying a congruence by d must not silently cancel d without its own hypotheses.",
+      "status": "checked-at-selected-finite-scope",
+      "route_membership": [
+        "J"
+      ],
+      "mathematical_acceptance": "Exactly the named finite projector and supporting finite complex identities. No arithmetic estimate or abc implication.",
+      "supporting_declarations": [
+        "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.scaled_additive_sum_eq_character_cube",
+        "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.projectedJointMoment_eq_frequencyJointMoment",
+        "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.typedPrimitiveWeightedMoment_eq_moebius_frequency_sum"
+      ],
+      "checked_scope": "Canonical complex character; all u,v,w in Icc1M; 2*M<q; normalized full frequency set; joint W(d*u,d*v,d*w); literal finite interchange. Complex coefficients only, with no transfer of the character formula to arbitrary rings.",
+      "execution_identity": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json",
+      "source_identities": {
+        "GRWTSK/Analysis/Fourier/FiniteAdditiveProjector.lean": "24a8c41508bdf2a7558d20b19434362e2656ac45b4141e01604c0ec16ddd413f",
+        "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/AdditiveCharacterMoments.lean": "c5064cd633443ae851924599b07d1aaeff56e7ab792783cd5e408e5a078e3113"
+      },
+      "verification_scope": "Exact finite declarations from the selected replay, now included in the completed current public source audit; no ABC edge or estimate is proved.",
+      "repository_admission": true,
+      "public_release_eligible": true,
+      "previous_execution_identity": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-checks-2026-10-15.json",
+      "source_registration": true,
+      "public_entrypoint_inclusion": true,
+      "public_root_replay": "passed",
+      "historical_preintegration_admission": {
+        "repository_admission": false,
+        "public_release_eligible": false,
+        "verification_scope": "fresh selected local closure; source registration and root exports installed; full-root replay pending",
+        "public_root_replay": "pending"
+      },
+      "integration_complete": true,
+      "public_root_receipt": {
+        "path": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/public-library-replay-receipt.json",
+        "sha256": "2109996fa0f6de687fa407b1c8d33550cb97bb96ea032a4bb0ffd91708cca6b4",
+        "bytes": 25238132,
+        "argv": [
+          "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+          "-B",
+          ".noeaaeue/scripts/check_math_trust.py",
+          "--memory-mib",
+          "12288"
+        ],
+        "status": "ALL_PROJECT_SOURCE_AND_AXIOM_CHECKS_PASSED"
+      },
+      "admission_scope": "Only this node's exact finite declarations at its recorded source identities and exact hypotheses, checked by the selected receipt and the completed current public/application receipts. Metadata supplies no mathematical premise, arithmetic estimate or ABC entailment.",
+      "admission_receipts": {
+        "selected": {
+          "path": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json",
+          "sha256": "4ac00cdc45b0fcf7bff4c8650bad3b5ae05f1cc4ed015accefdd96b0863b4a00",
+          "bytes": 4730784
+        },
+        "public_library": {
+          "path": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/public-library-replay-receipt.json",
+          "sha256": "2109996fa0f6de687fa407b1c8d33550cb97bb96ea032a4bb0ffd91708cca6b4",
+          "bytes": 25238132,
+          "argv": [
+            "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+            "-B",
+            ".noeaaeue/scripts/check_math_trust.py",
+            "--memory-mib",
+            "12288"
+          ],
+          "status": "ALL_PROJECT_SOURCE_AND_AXIOM_CHECKS_PASSED"
+        },
+        "application": {
+          "path": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/application-replay-receipt.json",
+          "sha256": "b9e4d5141c5110230bc87e68c19ce3bb8ac4922f1cc0cc660e44ff4b23545faf",
+          "bytes": 37810990,
+          "argv": [
+            "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+            "-B",
+            ".noeaaeue/scripts/check_moebius_response.py",
+            "--manifest",
+            ".noeaaeue/bindings/moebius-current-inputs-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe.json",
+            "--memory-mb",
+            "12288"
+          ],
+          "status": "kernel-checked"
+        }
+      }
+    },
+    {
+      "id": "finite_scaled_joint_character_cube",
+      "declaration_identity": "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.scaled_additive_sum_eq_character_cube",
+      "statement": "The sum over positive u,v with u+v<=M of W(d*u,d*v,d*(u+v)) equals the closed Icc1M cube sum P_q(u,v,w)*W(d*u,d*v,d*w).",
+      "hypotheses": "Natural M,d,q; NeZero q; arbitrary W:Nat->Nat->Nat->Complex; 2*M<q.",
+      "status": "checked-at-selected-finite-scope",
+      "source_identity": {
+        "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/AdditiveCharacterMoments.lean",
+        "sha256": "c5064cd633443ae851924599b07d1aaeff56e7ab792783cd5e408e5a078e3113"
+      },
+      "execution_identity": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json",
+      "route_membership": [
+        "J"
+      ],
+      "verification_scope": "Exact finite declarations from the selected replay, now included in the completed current public source audit; no ABC edge or estimate is proved.",
+      "repository_admission": true,
+      "public_release_eligible": true,
+      "mathematical_acceptance": "Finite exact complex identity only; no analytic estimate or arithmetic implication.",
+      "previous_execution_identity": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-checks-2026-10-15.json",
+      "source_registration": true,
+      "public_entrypoint_inclusion": true,
+      "public_root_replay": "passed",
+      "historical_preintegration_admission": {
+        "repository_admission": false,
+        "public_release_eligible": false,
+        "verification_scope": "fresh selected local closure; source registration and root exports installed; full-root replay pending",
+        "public_root_replay": "pending"
+      },
+      "integration_complete": true,
+      "public_root_receipt": {
+        "path": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/public-library-replay-receipt.json",
+        "sha256": "2109996fa0f6de687fa407b1c8d33550cb97bb96ea032a4bb0ffd91708cca6b4",
+        "bytes": 25238132,
+        "argv": [
+          "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+          "-B",
+          ".noeaaeue/scripts/check_math_trust.py",
+          "--memory-mib",
+          "12288"
+        ],
+        "status": "ALL_PROJECT_SOURCE_AND_AXIOM_CHECKS_PASSED"
+      },
+      "admission_scope": "Only this node's exact finite declarations at its recorded source identities and exact hypotheses, checked by the selected receipt and the completed current public/application receipts. Metadata supplies no mathematical premise, arithmetic estimate or ABC entailment.",
+      "admission_receipts": {
+        "selected": {
+          "path": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json",
+          "sha256": "4ac00cdc45b0fcf7bff4c8650bad3b5ae05f1cc4ed015accefdd96b0863b4a00",
+          "bytes": 4730784
+        },
+        "public_library": {
+          "path": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/public-library-replay-receipt.json",
+          "sha256": "2109996fa0f6de687fa407b1c8d33550cb97bb96ea032a4bb0ffd91708cca6b4",
+          "bytes": 25238132,
+          "argv": [
+            "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+            "-B",
+            ".noeaaeue/scripts/check_math_trust.py",
+            "--memory-mib",
+            "12288"
+          ],
+          "status": "ALL_PROJECT_SOURCE_AND_AXIOM_CHECKS_PASSED"
+        },
+        "application": {
+          "path": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/application-replay-receipt.json",
+          "sha256": "b9e4d5141c5110230bc87e68c19ce3bb8ac4922f1cc0cc660e44ff4b23545faf",
+          "bytes": 37810990,
+          "argv": [
+            "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+            "-B",
+            ".noeaaeue/scripts/check_moebius_response.py",
+            "--manifest",
+            ".noeaaeue/bindings/moebius-current-inputs-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe.json",
+            "--memory-mb",
+            "12288"
+          ],
+          "status": "kernel-checked"
+        }
+      }
+    },
+    {
+      "id": "finite_character_frequency_interchange",
+      "declaration_identity": "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.projectedJointMoment_eq_frequencyJointMoment",
+      "statement": "The projected cube equals (q:Complex)^-1 times the full k:ZMod q sum followed by all three Icc1M coordinate sums of stdAddChar(k*(u+v-w))*W(d*u,d*v,d*w). All subtraction in the phase occurs after casting each coordinate to ZMod q.",
+      "hypotheses": "Natural M,d,q; NeZero q; arbitrary joint complex W. The finite interchange itself does not require no-wrap.",
+      "status": "checked-at-selected-finite-scope",
+      "source_identity": {
+        "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/AdditiveCharacterMoments.lean",
+        "sha256": "c5064cd633443ae851924599b07d1aaeff56e7ab792783cd5e408e5a078e3113"
+      },
+      "execution_identity": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json",
+      "route_membership": [
+        "J"
+      ],
+      "verification_scope": "Exact finite declarations from the selected replay, now included in the completed current public source audit; no ABC edge or estimate is proved.",
+      "repository_admission": true,
+      "public_release_eligible": true,
+      "mathematical_acceptance": "Finite exact complex identity only; no analytic estimate or arithmetic implication.",
+      "previous_execution_identity": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-checks-2026-10-15.json",
+      "source_registration": true,
+      "public_entrypoint_inclusion": true,
+      "public_root_replay": "passed",
+      "historical_preintegration_admission": {
+        "repository_admission": false,
+        "public_release_eligible": false,
+        "verification_scope": "fresh selected local closure; source registration and root exports installed; full-root replay pending",
+        "public_root_replay": "pending"
+      },
+      "integration_complete": true,
+      "public_root_receipt": {
+        "path": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/public-library-replay-receipt.json",
+        "sha256": "2109996fa0f6de687fa407b1c8d33550cb97bb96ea032a4bb0ffd91708cca6b4",
+        "bytes": 25238132,
+        "argv": [
+          "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+          "-B",
+          ".noeaaeue/scripts/check_math_trust.py",
+          "--memory-mib",
+          "12288"
+        ],
+        "status": "ALL_PROJECT_SOURCE_AND_AXIOM_CHECKS_PASSED"
+      },
+      "admission_scope": "Only this node's exact finite declarations at its recorded source identities and exact hypotheses, checked by the selected receipt and the completed current public/application receipts. Metadata supplies no mathematical premise, arithmetic estimate or ABC entailment.",
+      "admission_receipts": {
+        "selected": {
+          "path": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json",
+          "sha256": "4ac00cdc45b0fcf7bff4c8650bad3b5ae05f1cc4ed015accefdd96b0863b4a00",
+          "bytes": 4730784
+        },
+        "public_library": {
+          "path": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/public-library-replay-receipt.json",
+          "sha256": "2109996fa0f6de687fa407b1c8d33550cb97bb96ea032a4bb0ffd91708cca6b4",
+          "bytes": 25238132,
+          "argv": [
+            "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+            "-B",
+            ".noeaaeue/scripts/check_math_trust.py",
+            "--memory-mib",
+            "12288"
+          ],
+          "status": "ALL_PROJECT_SOURCE_AND_AXIOM_CHECKS_PASSED"
+        },
+        "application": {
+          "path": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/application-replay-receipt.json",
+          "sha256": "b9e4d5141c5110230bc87e68c19ce3bb8ac4922f1cc0cc660e44ff4b23545faf",
+          "bytes": 37810990,
+          "argv": [
+            "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+            "-B",
+            ".noeaaeue/scripts/check_moebius_response.py",
+            "--manifest",
+            ".noeaaeue/bindings/moebius-current-inputs-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe.json",
+            "--memory-mb",
+            "12288"
+          ],
+          "status": "kernel-checked"
+        }
+      }
+    },
+    {
+      "id": "finite_primitive_character_frequency_identity",
+      "declaration_identity": "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.typedPrimitiveWeightedMoment_eq_moebius_frequency_sum",
+      "statement": "The typed primitive positive additive moment at c<=N equals sum d in Icc1N of signed mu(d) times frequencyJointMoment(N/d,d,q,W), retaining the exact quotient cube and every scaled weight coordinate.",
+      "hypotheses": "Natural N,q; NeZero q; arbitrary joint complex W; 2*N<q. Each outer d is positive and N/d is exact natural floor division.",
+      "status": "checked-at-selected-finite-scope",
+      "source_identity": {
+        "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/AdditiveCharacterMoments.lean",
+        "sha256": "c5064cd633443ae851924599b07d1aaeff56e7ab792783cd5e408e5a078e3113"
+      },
+      "execution_identity": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json",
+      "route_membership": [
+        "J"
+      ],
+      "verification_scope": "Exact finite declarations from the selected replay, now included in the completed current public source audit; no ABC edge or estimate is proved.",
+      "repository_admission": true,
+      "public_release_eligible": true,
+      "mathematical_acceptance": "Finite exact complex identity only; no analytic estimate or arithmetic implication.",
+      "previous_execution_identity": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-checks-2026-10-15.json",
+      "source_registration": true,
+      "public_entrypoint_inclusion": true,
+      "public_root_replay": "passed",
+      "historical_preintegration_admission": {
+        "repository_admission": false,
+        "public_release_eligible": false,
+        "verification_scope": "fresh selected local closure; source registration and root exports installed; full-root replay pending",
+        "public_root_replay": "pending"
+      },
+      "integration_complete": true,
+      "public_root_receipt": {
+        "path": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/public-library-replay-receipt.json",
+        "sha256": "2109996fa0f6de687fa407b1c8d33550cb97bb96ea032a4bb0ffd91708cca6b4",
+        "bytes": 25238132,
+        "argv": [
+          "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+          "-B",
+          ".noeaaeue/scripts/check_math_trust.py",
+          "--memory-mib",
+          "12288"
+        ],
+        "status": "ALL_PROJECT_SOURCE_AND_AXIOM_CHECKS_PASSED"
+      },
+      "admission_scope": "Only this node's exact finite declarations at its recorded source identities and exact hypotheses, checked by the selected receipt and the completed current public/application receipts. Metadata supplies no mathematical premise, arithmetic estimate or ABC entailment.",
+      "admission_receipts": {
+        "selected": {
+          "path": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json",
+          "sha256": "4ac00cdc45b0fcf7bff4c8650bad3b5ae05f1cc4ed015accefdd96b0863b4a00",
+          "bytes": 4730784
+        },
+        "public_library": {
+          "path": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/public-library-replay-receipt.json",
+          "sha256": "2109996fa0f6de687fa407b1c8d33550cb97bb96ea032a4bb0ffd91708cca6b4",
+          "bytes": 25238132,
+          "argv": [
+            "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+            "-B",
+            ".noeaaeue/scripts/check_math_trust.py",
+            "--memory-mib",
+            "12288"
+          ],
+          "status": "ALL_PROJECT_SOURCE_AND_AXIOM_CHECKS_PASSED"
+        },
+        "application": {
+          "path": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/serial-native/application-replay-receipt.json",
+          "sha256": "b9e4d5141c5110230bc87e68c19ce3bb8ac4922f1cc0cc660e44ff4b23545faf",
+          "bytes": 37810990,
+          "argv": [
+            "/Users/local/Desktop/math/.noeaaeue/.local/root-cleanup/python-env/bin/python3",
+            "-B",
+            ".noeaaeue/scripts/check_moebius_response.py",
+            "--manifest",
+            ".noeaaeue/bindings/moebius-current-inputs-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe.json",
+            "--memory-mb",
+            "12288"
+          ],
+          "status": "kernel-checked"
+        }
+      }
+    },
+    {
+      "id": "finite_product_weight_character_factorization",
+      "declaration_identity": null,
+      "statement": "For explicitly supplied complex coordinate weights A,B,C, prove the literal frequencyJointMoment factorization into the three finite sums with phases chi(k*u), chi(k*v), chi(-k*w) and weights A(d*u),B(d*v),C(d*w), retaining q^-1 and the full frequency set. General joint weights must not be factorized without such a product hypothesis.",
+      "status": "open",
+      "route_membership": [
+        "J"
+      ],
+      "mathematical_acceptance": false
+    }
+  ],
+  "edges": [
+    {
+      "id": "route-A",
+      "premises": [
+        "iut_statement",
+        "iut_comparison",
+        "iut_global_reduction"
+      ],
+      "required_premises": [
+        "iut_statement",
+        "iut_comparison",
+        "iut_global_reduction"
+      ],
+      "conclusion": "abc",
+      "kind": "proposed-AND-research-edge",
+      "status": "open",
+      "checked_entailment_declaration": null,
+      "exact_missing_interface": "Reconstruct IUT III 3.11 and 3.12 with source-specific arithmetic comparison, then IV 1.10 and global reductions"
+    },
+    {
+      "id": "route-B",
+      "premises": [
+        "repair_instantiation",
+        "source_correspondence",
+        "repair_arithmetic_bridge"
+      ],
+      "required_premises": [
+        "repair_instantiation",
+        "source_correspondence",
+        "repair_arithmetic_bridge"
+      ],
+      "conclusion": "abc",
+      "kind": "proposed-AND-research-edge",
+      "status": "open",
+      "checked_entailment_declaration": null,
+      "exact_missing_interface": "Construct actual comparison objects and verify every scale or nonlinear region normalization and error bound"
+    },
+    {
+      "id": "route-C",
+      "premises": [
+        "later_repair_statement",
+        "later_repair_coherence",
+        "later_repair_arithmetic_bridge"
+      ],
+      "required_premises": [
+        "later_repair_statement",
+        "later_repair_coherence",
+        "later_repair_arithmetic_bridge"
+      ],
+      "conclusion": "abc",
+      "kind": "proposed-AND-research-edge",
+      "status": "open",
+      "checked_entailment_declaration": null,
+      "exact_missing_interface": "Translate the decisive candidate inequalities at their exact versions and check local-to-global and quantifier hypotheses"
+    },
+    {
+      "id": "route-D",
+      "premises": [
+        "derivative_identity",
+        "derivative_size",
+        "derivative_to_abc"
+      ],
+      "required_premises": [
+        "derivative_identity",
+        "derivative_size",
+        "derivative_to_abc"
+      ],
+      "conclusion": "abc",
+      "kind": "proposed-AND-research-edge",
+      "status": "open",
+      "checked_entailment_declaration": null,
+      "exact_missing_interface": "Prove a finite arithmetic Wronskian identity and isolate a global nonvanishing size theorem with all-epsilon strength"
+    },
+    {
+      "id": "route-E",
+      "premises": [
+        "lattice_identity",
+        "lattice_power_saving",
+        "lattice_to_abc"
+      ],
+      "required_premises": [
+        "lattice_identity",
+        "lattice_power_saving",
+        "lattice_to_abc"
+      ],
+      "conclusion": "abc",
+      "kind": "proposed-AND-research-edge",
+      "status": "open",
+      "checked_entailment_declaration": null,
+      "exact_missing_interface": "Formalize the cited lattice bound and identify the additional radical-height power saving"
+    },
+    {
+      "id": "route-F",
+      "premises": [
+        "congruence_map",
+        "restricted_abc",
+        "congruence_constants"
+      ],
+      "required_premises": [
+        "congruence_map",
+        "restricted_abc",
+        "congruence_constants"
+      ],
+      "conclusion": "abc",
+      "kind": "proposed-AND-research-edge",
+      "status": "open",
+      "checked_entailment_declaration": null,
+      "exact_missing_interface": "Port the exact primitive substitution with epsilon-dependent constants and prove abc on its restricted family"
+    },
+    {
+      "id": "route-G",
+      "premises": [
+        "exception_count",
+        "exception_finiteness"
+      ],
+      "required_premises": [
+        "exception_count",
+        "exception_finiteness"
+      ],
+      "conclusion": "abc",
+      "kind": "proposed-AND-research-edge",
+      "status": "open",
+      "checked_entailment_declaration": null,
+      "exact_missing_interface": "Translate the current counting estimate and keep the still-missing all-height finiteness implication explicit"
+    },
+    {
+      "id": "route-H",
+      "premises": [
+        "mason_control",
+        "integer_transfer"
+      ],
+      "required_premises": [
+        "mason_control",
+        "integer_transfer"
+      ],
+      "conclusion": "abc",
+      "kind": "proposed-AND-research-edge",
+      "status": "open",
+      "checked_entailment_declaration": null,
+      "exact_missing_interface": "Retain the checked field-polynomial result and supply an independent arithmetic bridge if one is proposed"
+    },
+    {
+      "id": "route-I",
+      "premises": [
+        "elliptic_invariants",
+        "modified_szpiro",
+        "szpiro_vojta_bridge"
+      ],
+      "required_premises": [
+        "elliptic_invariants",
+        "modified_szpiro",
+        "szpiro_vojta_bridge"
+      ],
+      "conclusion": "abc",
+      "kind": "proposed-AND-research-edge",
+      "status": "open",
+      "checked_entailment_declaration": null,
+      "exact_missing_interface": "Define exact conductor, minimal discriminant, height and reduction data, then prove the specified uniform arithmetic implication"
+    },
+    {
+      "id": "route-J",
+      "premises": [
+        "finite_primitive_character_frequency_identity",
+        "uniform_radical_weighted_moment_estimate",
+        "moment_uniformity",
+        "moment_to_pointwise_arithmetic_bridge"
+      ],
+      "required_premises": [
+        "finite_primitive_character_frequency_identity",
+        "uniform_radical_weighted_moment_estimate",
+        "moment_uniformity",
+        "moment_to_pointwise_arithmetic_bridge"
+      ],
+      "conclusion": "abc",
+      "kind": "proposed-AND-research-edge",
+      "status": "open",
+      "checked_entailment_declaration": null,
+      "exact_missing_interface": "Exact finite complex character filtering and frequency expansion are checked. Uniform radical-weighted estimates, test-weight uniformity and the all-epsilon pointwise arithmetic implication remain open."
+    }
+  ],
+  "overall_status": "OPEN_FRONTIER",
+  "previous_hypergraph": {
+    "path": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/abc-proof-hypergraph.json",
+    "sha256": "2e7a2618c87532598d7d2cdbfc5efca8c5f9e3323da8d18555907b014ba7bfce",
+    "modified": false
+  },
+  "route_J_previous_edge": {
+    "id": "route-J",
+    "premises": [
+      "moment_identity",
+      "moment_radical_estimate",
+      "moment_uniformity"
+    ],
+    "required_premises": [
+      "moment_identity",
+      "moment_radical_estimate",
+      "moment_uniformity"
+    ],
+    "conclusion": "abc",
+    "kind": "proposed-AND-research-edge",
+    "status": "open",
+    "checked_entailment_declaration": null,
+    "exact_missing_interface": "Prove the cutoff-explicit Mobius-filtered ternary moment identity and a literal uniform radical-height estimate"
+  },
+  "source_search_budget_used_this_stage": 0,
+  "previous_finite_moments_hypergraph": {
+    "path": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/abc-proof-hypergraph-finite-moments-2026-10-15.json",
+    "sha256": "454664210aef75db4e2f3b6d21ac833fcdeebea5ec1e2eb135bbe89b20c47453",
+    "modified": false
+  },
+  "route_J_before_divisor_sectors": {
+    "id": "route-J",
+    "premises": [
+      "finite_moebius_primitive_moment_identity",
+      "uniform_radical_weighted_moment_estimate",
+      "moment_uniformity",
+      "moment_to_pointwise_arithmetic_bridge"
+    ],
+    "required_premises": [
+      "finite_moebius_primitive_moment_identity",
+      "uniform_radical_weighted_moment_estimate",
+      "moment_uniformity",
+      "moment_to_pointwise_arithmetic_bridge"
+    ],
+    "conclusion": "abc",
+    "kind": "proposed-AND-research-edge",
+    "status": "open",
+    "checked_entailment_declaration": null,
+    "exact_missing_interface": "The finite Mobius identity is checked. A literal uniform radical-weighted estimate, uniformity data and the pointwise arithmetic implication remain open."
+  },
+  "previous_divisor_sectors_hypergraph": {
+    "path": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/abc-proof-hypergraph-divisor-sectors-2026-10-15.json",
+    "sha256": "fa00347d747bbce09609343ce088fc07c55c2304f094b127f921c59a31b145dc",
+    "modified": false
+  },
+  "route_J_before_additive_characters": {
+    "id": "route-J",
+    "premises": [
+      "finite_scaled_primitive_moment_identity",
+      "uniform_radical_weighted_moment_estimate",
+      "moment_uniformity",
+      "moment_to_pointwise_arithmetic_bridge"
+    ],
+    "required_premises": [
+      "finite_scaled_primitive_moment_identity",
+      "uniform_radical_weighted_moment_estimate",
+      "moment_uniformity",
+      "moment_to_pointwise_arithmetic_bridge"
+    ],
+    "conclusion": "abc",
+    "kind": "proposed-AND-research-edge",
+    "status": "open",
+    "checked_entailment_declaration": null,
+    "exact_missing_interface": "Exact finite Mobius filtering and sector reindexing are checked. Literal cutoff-uniform radical-weighted estimates, admissible test-weight uniformity and the all-epsilon arithmetic implication remain open."
+  },
+  "previous_additive_character_hypergraph": {
+    "path": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/abc-proof-hypergraph-additive-character-2026-10-15.json",
+    "sha256": "094629f92eeab4ff788417721a76ef7dde7490d49204e5aa65f01dceda5a8b4e",
+    "modified": false
+  },
+  "integration_complete": true,
+  "integration_record": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-finish-2026-10-15.json"
+}

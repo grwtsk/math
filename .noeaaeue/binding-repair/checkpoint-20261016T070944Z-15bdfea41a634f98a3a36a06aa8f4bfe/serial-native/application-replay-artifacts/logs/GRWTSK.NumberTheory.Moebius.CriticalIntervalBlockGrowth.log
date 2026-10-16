@@ -1,0 +1,15 @@
+'GRWTSK.NumberTheory.Moebius.CriticalIntervalBlockGrowth.pickupMertensPrefix_abs_le_natCast' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.NumberTheory.Moebius.CriticalIntervalBlockGrowth.pickupWeightedPrefix_abs_le_two_sqrt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.NumberTheory.Moebius.CriticalIntervalBlockGrowth.criticalIntervalBlock_le_harmonic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.NumberTheory.Moebius.CriticalIntervalBlockGrowth.criticalIntervalBlockSum_le_harmonic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GRWTSK.NumberTheory.Moebius.CriticalIntervalBlockGrowth.criticalIntervalBlockSum_le_log' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -8,11 +8,11 @@ The [source module](../../../../GRWTSK/Analysis/Fourier/ZModSubsetSum.lean) uses
 
 ## Quantitative proof status
 
-[Pham–Sauermann v1](https://arxiv.org/html/2602.15797v1) Theorem 1.3 requires an absolute positive `C`, `|S| ≥ 2`, and `C log |S| ≤ m ≤ 10⁻³ |S| / log |S|`. Its target bound is `1/p + C/(|S| √m)`; Section 3 takes `C = 2²⁴`. This analytical estimate remains unproved here. Fourier inversion alone supplies none of its nontrivial-frequency bounds.
+[Pham–Sauermann v1](https://arxiv.org/html/2602.15797v1) Theorem 1.3 requires an absolute positive `C`, `|S| ≥ 2`, and `C log |S| ≤ m ≤ 10⁻³ |S| / log |S|`. Its target bound is `1/p + C/(|S| √m)`; Section 3 takes `C = 2²⁴`. The [fixed-size anti-concentration module](subset-sum-anticoncentration.md) now proves this estimate with `C = 2²⁴`, including the conditional exposure, hypergeometric tails, random-partition concentration and expected Fourier layers. Fourier inversion alone remains a separate elementary result.
 
 Corollary 1.4, the nested-chain bound of Corollary 4.2 and the three Section 5 failure probability bounds also remain open. The formal finite union bound and explicit failure events in `PrimeCyclicRearrangement` prove good mass at least `23/25` from three explicit event bounds `1/100`, `3/100` and `1/25`. Its hypotheses must still be discharged for the actual source events. Positive finite mass then supplies a witness and the [deterministic repair theorem](../../Combinatorics/Sequences/partial-sum-ordering.md) applies.
 
-The [balanced partition sampling law](../../Combinatorics/Sequences/balanced-partition-sampling.md) and [finite Fourier estimates](partition-character-energy.md) now close the exact fixed-size marginal reconstruction, independent product-selection formulas and exponential character decay. Remaining analytical work includes concentration for random partitions, quantitative expected-layer estimates, chain exposure and admissible-permutation counting. No structure with unproved estimate fields is declared as a supplying theorem.
+The [balanced partition sampling law](../../Combinatorics/Sequences/balanced-partition-sampling.md) and [finite Fourier estimates](partition-character-energy.md) now close the exact fixed-size marginal reconstruction, independent product-selection formulas and exponential character decay. Remaining analytical work includes the larger-slice corollary, conditional chain exposure and admissible-permutation counting. No structure with unproved estimate fields is declared as a supplying theorem.
 
 ## Evidence and credit
 

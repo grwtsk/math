@@ -1,0 +1,51 @@
+{
+  "schema": "completion-procedure-text-custody-v1",
+  "at_utc": "2026-10-16T09:00:04.500024+00:00",
+  "files": [
+    {
+      "original": ".noeaaeue/.local/additive-character-integration-finish/finalize.py",
+      "retained": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/completion-preparation-custody/finalize.py",
+      "sha256": "ea5d97eafd50d3907c1fac6c93923e47f139da27e9b48a3b754443cde591553e",
+      "bytes": 48472
+    },
+    {
+      "original": ".noeaaeue/.local/additive-character-integration-finish/complete_reference_characters.py",
+      "retained": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/completion-preparation-custody/complete_reference_characters.py",
+      "sha256": "47be5a24f8dd55a54e0e7014822fe56c7da36e508bd60597d2a9c57c5c974326",
+      "bytes": 17933
+    },
+    {
+      "original": ".noeaaeue/.local/additive-character-integration-finish/ordinary_lake_build.py",
+      "retained": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/completion-preparation-custody/ordinary_lake_build.py",
+      "sha256": "e1a4bfe48d4f1c5142ce67d542effbf19553e09357495f24d882d92974836412",
+      "bytes": 14417
+    },
+    {
+      "original": ".noeaaeue/.local/additive-character-integration-finish/run_serial.py",
+      "retained": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/completion-preparation-custody/run_serial.py",
+      "sha256": "5b2244e7d6fce5f21cb62b25d77980b503134705127f4e44f5d6c1ed6831244a",
+      "bytes": 13799
+    },
+    {
+      "original": ".noeaaeue/.local/additive-character-integration-finish/finalizer-independent-review-2026-10-16.json",
+      "retained": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/completion-preparation-custody/finalizer-independent-review-2026-10-16.json",
+      "sha256": "22f04616ed091e1c9bbde07f70917ce3d2c4ff95f045d4aacb96e82450598f48",
+      "bytes": 10461
+    },
+    {
+      "original": ".noeaaeue/.local/additive-character-integration-finish/ordinary-build-helper-independent-review-2026-10-16.json",
+      "retained": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/completion-preparation-custody/ordinary-build-helper-independent-review-2026-10-16.json",
+      "sha256": "efacb7bd3987d44178fadc7b8aafbb4e5f97b57eaabaa067d0a473abdb0e952b",
+      "bytes": 4026
+    },
+    {
+      "original": ".noeaaeue/.local/additive-character-integration-finish/public-native-independent-review-2026-10-16.json",
+      "retained": ".noeaaeue/binding-repair/checkpoint-20261016T070944Z-15bdfea41a634f98a3a36a06aa8f4bfe/completion-preparation-custody/public-native-independent-review-2026-10-16.json",
+      "sha256": "2d4f6733f4ca8f3a26594732a3e2f68078e83768ee5c8a31d315d95cf6704c57",
+      "bytes": 571745
+    }
+  ],
+  "scope": "Exact procedure text and static/read-only reviews; no verifier launched by this custody copy and no mathematical acceptance inferred. Earlier review hashes retain their historical reviewed scope; the supplementary review binds the current finalizer gate. Original locators are provenance only.",
+  "mathematical_acceptance": false,
+  "abc_proved": false
+}

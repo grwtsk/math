@@ -1,0 +1,5 @@
+'EulerP04RH.ConcreteTail.pickupKernel_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EulerP04RH.ConcreteTail.timeKernel_norm_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EulerP04RH.ConcreteTail.density_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EulerP04RH.ConcreteTail.tail_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EulerP04RH.ConcreteTail.polynomial_tail_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
