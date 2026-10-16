@@ -57,9 +57,9 @@ theorem sourcePayload_apply_two (g : ℝ → ℂ) (t u : ℝ) :
 
 /-- The signed source functional `L x = x₀ - x₁ - x₂`. -/
 def screwFunctional : SourcePayload →L[ℂ] ℂ :=
-  (ContinuousLinearMap.proj (R := ℂ) (0 : Fin 3)) -
-    (ContinuousLinearMap.proj (R := ℂ) (1 : Fin 3)) -
-      (ContinuousLinearMap.proj (R := ℂ) (2 : Fin 3))
+  (ContinuousLinearMap.proj (R := ℂ) (φ := fun _ : Fin 3 => ℂ) (0 : Fin 3)) -
+    (ContinuousLinearMap.proj (R := ℂ) (φ := fun _ : Fin 3 => ℂ) (1 : Fin 3)) -
+      (ContinuousLinearMap.proj (R := ℂ) (φ := fun _ : Fin 3 => ℂ) (2 : Fin 3))
 
 @[simp]
 theorem screwFunctional_apply (x : SourcePayload) :
