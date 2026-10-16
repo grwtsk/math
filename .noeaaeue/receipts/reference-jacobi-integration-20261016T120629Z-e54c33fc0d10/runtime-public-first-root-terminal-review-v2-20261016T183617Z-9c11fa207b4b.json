@@ -1,0 +1,60 @@
+{
+  "all_stages_exit_zero": true,
+  "comparison_rule": "All453 fresh module rows equal sealed origin rows after verifying and removing ONLY the two final exact self origin_receipt fields; all census/runtime/counter rows exact. No raw receipt was modified.",
+  "compiler_runtime_sha256": "c48f0fb338d4947e55e4f3974e49b7d1d4a12ad0ac0a783355a135d7bda01f7d",
+  "created_at": "2026-10-16T18:36:17.390611+00:00",
+  "declaration_count": 12268,
+  "declaration_kinds": {
+    "constructor": 331,
+    "definition": 3861,
+    "inductive": 183,
+    "recursor": 183,
+    "theorem": 7710
+  },
+  "extra_axioms": [],
+  "held_lean_universe": 887,
+  "incremental": {
+    "audit_cache_hits": 0,
+    "audited_modules": 453,
+    "compilation_cache_hits": 0,
+    "compiled": 453,
+    "native_audit_commands": 1
+  },
+  "origin": {
+    "attempt_id": "math-trust:20261016T181528Z-d0981d5b01",
+    "bytes": 21933859,
+    "path": "/Users/local/Desktop/math/.noeaaeue/.local/math-trust/20261016T181528Z-d0981d5b01/proof-validation-origin.json",
+    "sha256": "70ee67f5a0eca795bced148b3368805a31272bcdd92bdd542dc85c0724e252b0"
+  },
+  "phase_context": {
+    "bytes": 19073,
+    "path": "/Users/local/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/serial-runtime-public-first-20261016T181417Z-76fc63400da9/phase-context.json",
+    "sha256": "daf59ba06cc1090ae518e4c16fc56850db782727ad32c93df4eea422fb4d9449"
+  },
+  "protected_inputs_rechecked": 1761,
+  "qualified_partial_runtime_helpers_excluded": 5,
+  "receipt": {
+    "bytes": 27226082,
+    "path": "/Users/local/Desktop/math/.noeaaeue/.local/math-trust/20261016T181528Z-d0981d5b01/receipt.json",
+    "sha256": "67c49e791653105507b2585eb57dc71397af372f6758d2ad7e0a71e5e4eb6cb4"
+  },
+  "retained_failed_overstrong_assumption": {
+    "bytes": 1244,
+    "path": "/Users/local/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/runtime-public-first-adhoc-equality-assumption-failed-20261016T183617Z-1b29cd7d0a60.json",
+    "sha256": "cc9539bc62357cf9f63d5f6487c497c9d934061632c5e0fad3bb69eabfc29845"
+  },
+  "rh_proved": false,
+  "runtime_helper_references_from_mathematical_admission": 0,
+  "safe_nonpartial_mathematical_admission": 12263,
+  "schema": "runtime-public-first-root-terminal-review-v2",
+  "scope": "Data and source/receipt custody checks on actual root-run native first evidence; no new compiler invocation or independent-model-validation claim. Exact unchanged warm qualification and separate APP acceptance remain pending.",
+  "source_count": 453,
+  "status": "ACTUAL_RUNTIME_BOUND_FIRST_TERMINAL_PASS_WARM_PENDING",
+  "summary": {
+    "bytes": 4545,
+    "path": "/Users/local/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/serial-runtime-public-first-20261016T181417Z-76fc63400da9/summary.json",
+    "sha256": "33629628273d4ff9d0230d59f87a50a1c37caff8c48ad3fc61f695526ffdfcbf"
+  },
+  "terminal_full_runtime_guard_passed": true,
+  "unsafe": 0
+}

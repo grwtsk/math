@@ -1,0 +1,2 @@
+Math layout: PASS (453 library modules, 0 findings).
+Explicit path bans and subject-root checks are a structural lower bound; mathematical subject review is required.

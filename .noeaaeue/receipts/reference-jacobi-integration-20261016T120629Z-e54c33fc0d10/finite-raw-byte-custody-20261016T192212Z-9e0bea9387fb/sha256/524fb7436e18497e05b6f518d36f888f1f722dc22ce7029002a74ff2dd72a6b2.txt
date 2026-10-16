@@ -1,0 +1,12 @@
+{
+  "adapter": "Only existing git argv is replaced by pinned read-only Git; no product source change/native command permitted",
+  "argv": [
+    "cache_math.py",
+    "--root",
+    "/Users/local/Desktop/math",
+    "verify",
+    "--revision",
+    "edfd5db62ced0900c89689a42123102bcb1a9c4c14fa5026073d8f9fe1953b65",
+    "--live"
+  ]
+}

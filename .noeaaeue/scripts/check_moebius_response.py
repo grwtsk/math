@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
-"""Fresh scoped kernel replay of manifested immutable mathematical source bytes.
+"""Scoped kernel validation of manifested immutable mathematical source bytes.
 
 Compile only private 0400 copies preserving the original logical module paths.
+Successor manifests may reuse source compilations under exact input bindings;
+the complete owner census and all hostile controls remain fresh native checks.
 Receipts, snapshots and logs stay under ignored .noeaaeue/.local/checks. The checker does
 not install dependencies, mutate Git, or replay dependency source files.
 """
@@ -21,6 +23,7 @@ import subprocess
 import sys
 import threading
 import time
+from types import ModuleType
 import uuid
 
 from repository_paths import relocated_name
@@ -28,6 +31,81 @@ from repository_paths import relocated_name
 NAMESPACES = ("ASBNP04", "PPNC", "PPNCP04", "EulerP04RH", "HSSCP04")
 FORBIDDEN_ASSETS = {".pdf", ".tex"}
 MODULE_PATTERN = re.compile(r"GRWTSK(?:\.[A-Za-z_][A-Za-z0-9_]*)*")
+INCREMENTAL_CONTRACT = {
+    "schema": "qualified-application-compilation-v1", "source_module_cache": True,
+    "retained_evidence_scope": "compilation-only", "complete_owner_census": "fresh-native",
+    "runtime_profile_controls": "fresh-native", "namespace_axiom_controls": "fresh-native",
+    "terminal_origin_schema": "proof-validation-origin-v1"}
+INCREMENTAL_ASSETS = (
+    ".noeaaeue/scripts/check_moebius_response.py", ".noeaaeue/scripts/moebius_incremental.py",
+    ".noeaaeue/scripts/incremental_lean.py", ".noeaaeue/scripts/cache_math.py",
+    ".noeaaeue/scripts/monitor_math.py", ".noeaaeue/scripts/repository_paths.py")
+PUBLIC_COMPILATION_ASSETS = (
+    ".noeaaeue/scripts/check_math_trust.py", ".noeaaeue/scripts/incremental_math_trust.py")
+
+
+def incremental_asset_keys(assets, contract):
+    """Authorize cache reuse only through an explicit source-bound successor."""
+    if contract is None:
+        return {}
+    if (type(contract) is not dict or set(contract) - {"public_compilation_origin"} != set(INCREMENTAL_CONTRACT)
+            or any(type(contract.get(key)) is not type(value) or contract[key] != value
+                   for key, value in INCREMENTAL_CONTRACT.items())):
+        raise ValueError("Unsupported incremental source compilation contract")
+    origin = contract.get("public_compilation_origin")
+    if origin is not None and (
+            type(origin) is not dict or set(origin) != {"path", "sha256", "bytes", "attempt_id"}
+            or any(type(origin.get(key)) is not str or not origin[key] for key in ("path", "sha256", "attempt_id"))
+            or not re.fullmatch(r"[0-9a-f]{64}", origin["sha256"])
+            or type(origin.get("bytes")) is not int or origin["bytes"] < 1):
+        raise ValueError("Public compilation candidate needs an exact terminal origin identity")
+    required = INCREMENTAL_ASSETS + (PUBLIC_COMPILATION_ASSETS if origin is not None else ())
+    keys = {}
+    for canonical in required:
+        matches = [name for name in assets if relocated_name(name) == canonical]
+        if len(matches) != 1:
+            raise ValueError("Incremental replay must bind each operational asset exactly once: " + canonical)
+        keys[canonical] = matches[0]
+    return keys
+
+
+def load_incremental_bridge(frozen_by_logical, incremental_keys):
+    """Execute the exact frozen runtime closure, isolated from stale imports."""
+    order = ("repository_paths", "monitor_math", "cache_math", "incremental_lean", "moebius_incremental")
+    missing = object()
+    previous = {name:sys.modules.get(name,missing) for name in order}
+    modules, private_names = {}, []
+    try:
+        for name in order:
+            canonical = ".noeaaeue/scripts/" + name + ".py"
+            bound = frozen_by_logical[incremental_keys[canonical]]
+            private_name = "moebius_frozen_" + name + "_" + uuid.uuid4().hex
+            module = ModuleType(private_name)
+            module.__file__ = str(bound.snapshot.path)
+            module.__package__ = ""
+            # Dataclass definitions inspect their declaring module during exec.
+            sys.modules[private_name] = module
+            private_names.append(private_name)
+            sys.modules[name] = module
+            exec(compile(bound.original.data,str(bound.snapshot.path),"exec",
+                         dont_inherit=True,optimize=sys.flags.optimize),vars(module))
+            modules[name] = module
+            if name == "incremental_lean":
+                module.verify_loaded_parser_sources({
+                    parser + ".py": frozen_by_logical[
+                        incremental_keys[".noeaaeue/scripts/" + parser + ".py"]].original.data
+                    for parser in ("cache_math", "monitor_math")})
+        return modules["moebius_incremental"].__dict__, private_names
+    except BaseException:
+        for name in private_names:
+            sys.modules.pop(name,None)
+        raise
+    finally:
+        for name, module in previous.items():
+            if module is missing:
+                sys.modules.pop(name,None)
+            else:
+                sys.modules[name] = module
 
 
 def required_asset_keys(assets):
@@ -415,9 +493,10 @@ class Node:
 class CommandRunner:
     """Persist exact command/source identities before and after every child."""
     def __init__(self, state: Path, frozen: Path, receipt: dict, guard,
-                 environment: dict, timeout: int = 600):
+                 environment: dict, timeout: int = 600, environment_guard=None):
         self.state, self.frozen, self.receipt = state, frozen, receipt
         self.guard, self.environment, self.timeout = guard, environment, timeout
+        self.environment_guard = environment_guard
         self.mutex = threading.RLock()
         self.receipt.setdefault("commands", [])
 
@@ -444,6 +523,8 @@ class CommandRunner:
         started, text, stdout, stderr, process, interrupted = time.monotonic(), "", "", "", None, False
         try:
             self.guard()
+            if self.environment_guard is not None:
+                self.environment_guard(command_environment)
             entry["status"] = "running"
             self.save()
             process = subprocess.Popen(argv, cwd=command_root, env=command_environment,
@@ -487,6 +568,8 @@ class CommandRunner:
                     text += "\nChild termination/reap failure: " + str(error) + "\n"
             try:
                 self.guard()
+                if self.environment_guard is not None:
+                    self.environment_guard(command_environment)
                 entry["postcheck_passed"] = True
             except (OSError, ValueError) as error:
                 entry.update(status="input-changed", postcheck_passed=False, error=str(error))
@@ -503,6 +586,16 @@ class CommandRunner:
             raise KeyboardInterrupt
         return {**entry, "text":text, "stdout":stdout, "stderr":stderr}
 
+
+
+def require_empty_native_artifact_family(artifact: Path) -> None:
+    if artifact.suffix != ".olean":
+        raise ValueError("Native module output must end in .olean")
+    stem = str(artifact)[:-len(".olean")]
+    for suffix in (".olean", ".olean.private", ".olean.server", ".ir", ".ir.sig"):
+        member = Path(stem + suffix)
+        if member.exists() or member.is_symlink():
+            raise ValueError(f"Refusing preexisting native output family member: {member}")
 
 
 def freeze_native_artifacts(artifact: Path, compiled_reads: list[StableRead]) -> dict:
@@ -1008,7 +1101,21 @@ def record_failure(receipt: dict, stage: str, error: str, **details) -> None:
     receipt["kernel_checked"] = False
 
 
-DEFAULT_CURRENT_MANIFEST = ".noeaaeue/bindings/moebius-current-inputs-v5.json"
+def defer_cached_postchecks(receipt: dict) -> None:
+    """An interrupted or drifting proof attempt has no terminal input claim."""
+    if receipt.get("proof_validation_origin") is not None:
+        return
+    for command in receipt.get("commands",[]):
+        if command.get("execution_kind") == "verified-cache-reuse":
+            command.update(postcheck_passed=None,postcheck_deferred=True,
+                           postcheck_scope="terminal-full-application-input-guard-pending")
+    for row in receipt.get("checked_modules",[]):
+        if row.get("execution_kind") == "verified-cache-reuse":
+            row.update(source_unchanged=None,
+                       source_stability_check="terminal-full-application-input-guard-pending")
+
+
+DEFAULT_CURRENT_MANIFEST = ".noeaaeue/bindings/moebius-current-inputs-current.json"
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
@@ -1021,6 +1128,8 @@ def main() -> int:
     parser.add_argument("--memory-mb", type=int, default=4096,
                         help="Per-native-command memory limit in MiB,1024..16384; default4096")
     parser.add_argument("--validate-only", action="store_true", help="No Lean source replay or kernel acceptance claim")
+    parser.add_argument("--cold", action="store_true",
+                        help="Bypass source compilation reuse and replay every manifested module")
     parser.add_argument("--native-lease", type=Path, action="append", default=[],
                         help="Additional existing shared native replay lock; no directory is created there")
     parser.add_argument("--wait-for-native-slot", action="store_true",
@@ -1034,10 +1143,31 @@ def main() -> int:
     if not 1024 <= args.memory_mb <= 16384:
         parser.error("Use a bounded --memory-mb of1024..16384 MiB")
     state, receipt, runner, lease_context, lease_held = None, None, None, None, False
+    private_runtime_modules = []
     try:
         descriptor = directory_descriptor(root)
         os.close(descriptor)
-        manifest_read = stable_read(manifest_path)
+        refresh_current = ("Create and activate a successor incremental input contract with "
+                           "python3 -B .noeaaeue/binding-repair/observe_current_moebius_inputs.py; "
+                           "use --manifest only to select an explicit historical contract.")
+        try:
+            manifest_read = stable_read(manifest_path)
+        except (OSError,ValueError) as error:
+            if args.manifest is None:
+                raise ValueError(f"Current incremental input contract is missing or unavailable: {manifest_path}: {error}. "
+                                 + refresh_current) from error
+            raise
+        if args.manifest is None:
+            try:
+                current_manifest = json.loads(manifest_read.data)
+                if type(current_manifest) is not dict or current_manifest.get("incremental_validation") is None:
+                    raise ValueError("The active contract has no incremental_validation binding")
+                if type(current_manifest.get("assets")) is not dict:
+                    raise ValueError("The active contract has no operational asset map")
+                incremental_asset_keys(current_manifest["assets"],current_manifest["incremental_validation"])
+            except (ValueError,TypeError,KeyError) as error:
+                raise ValueError(f"Current default contract requires the exact supported incremental binding: "
+                                 f"{manifest_path}: {error}. " + refresh_current) from error
         checker_read = stable_read(Path(__file__).absolute())
         ignore_read = read_regular(root,".gitignore")
         if not {"/.noeaaeue/.local/", ".noeaaeue/.local/", "/.local", ".local"}.intersection(ignore_read.data.decode().splitlines()):
@@ -1059,6 +1189,7 @@ def main() -> int:
                    "native_busy_policy":"wait-with-frozen-input-guards" if args.wait_for_native_slot else "fail-closed",
                    "native_busy_wait_seconds":30 if args.wait_for_native_slot else 0,
                    "fresh_project_build":True, "immutable_project_source_copies":True,
+                   "validation_mode":"cold" if args.cold else "incremental",
                    "snapshot_mode":"0400 exclusive regular files; no-follow logical paths",
                    "scope":"Manifested project replay only. No open arithmetic obligation is supplied.",
                    "dependency_provenance_scope":"Declared package anchors and direct cached dependency objects are identified. No transitive artifact census, dependency checkout pin/cleanliness claim, source replay, or object-to-source provenance is asserted by this driver."}
@@ -1094,6 +1225,13 @@ def main() -> int:
         if not isinstance(assets,dict):
             raise ValueError("Assets must map relative file paths to SHA-256 strings")
         asset_keys = required_asset_keys(assets)
+        incremental_contract = manifest.get("incremental_validation")
+        incremental_keys = incremental_asset_keys(assets, incremental_contract)
+        if incremental_contract is None:
+            receipt.update(validation_mode="cold" if args.cold else "legacy-cold",
+                           incremental_compilation_disabled_reason="Manifest has no source-bound incremental contract")
+        else:
+            receipt["incremental_validation_contract"] = incremental_contract
         asset_paths = {}
         for relative, expected in assets.items():
             read=read_regular(root,relative)
@@ -1103,6 +1241,17 @@ def main() -> int:
                 raise ValueError(f"Manifest asset hash mismatch: {relative}")
             asset_paths[read.path]=expected
             freeze(read,relative)
+        # Every new runtime implementation is bound before import and remains
+        # covered by the existing original/frozen byte guards. Historical
+        # manifests retain their fresh-only behavior and gain no cache authority.
+        for canonical, logical in incremental_keys.items():
+            if canonical == ".noeaaeue/scripts/check_moebius_response.py":
+                runtime = checker_read
+            else:
+                runtime = stable_read(Path(__file__).absolute().with_name(Path(canonical).name))
+            if runtime.data != frozen_by_logical[logical].original.data:
+                raise ValueError("Incremental runtime differs from its frozen manifest asset: " + canonical)
+            runtime_reads.append(runtime)
         # The relocation adapter is an operational checker input, like this
         # driver itself. Bind its exact bytes without rewriting historical
         # manifest keys or hashes. Frozen policy subprocesses import this copy.
@@ -1122,6 +1271,27 @@ def main() -> int:
             "sha256": digest(adapter.original.data),
             "snapshot_relative_path": "source/" + str(adapter.snapshot.path.relative_to(frozen)),
             "scope": "Physical process locations only; preserved manifest and receipt identities remain exact."}
+        # Runtime discovery itself executes no compiler. Import its complete
+        # operational implementation from frozen bytes before any native hop.
+        # Explicit legacy contracts remain cold and acquire no cache authority;
+        # their observed operational inputs are recorded without rewriting them.
+        runtime_keys = {}
+        for name in ("repository_paths", "monitor_math", "cache_math", "incremental_lean", "moebius_incremental"):
+            canonical = ".noeaaeue/scripts/" + name + ".py"
+            matches = [logical for logical in frozen_by_logical if relocated_name(logical) == canonical]
+            if len(matches) > 1:
+                raise ValueError("Ambiguous operational runtime binding: " + canonical)
+            runtime = stable_read(Path(__file__).absolute().with_name(name + ".py"))
+            logical = matches[0] if matches else canonical
+            bound = frozen_by_logical.get(logical) or freeze(runtime, logical)
+            if bound.original.data != runtime.data:
+                raise ValueError("Operational runtime differs from the invoked checker's frozen input: " + canonical)
+            runtime_reads.append(runtime)
+            runtime_keys[canonical] = logical
+        receipt["compiler_runtime_operational_assets"] = {
+            canonical: digest(frozen_by_logical[logical].original.data)
+            for canonical, logical in runtime_keys.items()}
+        bridge_namespace, private_runtime_modules = load_incremental_bridge(frozen_by_logical, runtime_keys)
         def load_bound_helper(relative):
             bound=frozen_by_logical[asset_keys.get(relative, relative)]
             namespace={"__name__":"moebius_frozen_"+Path(relative).stem,
@@ -1274,7 +1444,32 @@ def main() -> int:
         environment=dict(os.environ)
         environment.pop("LEAN_SRC_PATH",None)
         environment["LEAN_PATH"]=os.pathsep.join(map(str,[build,*roots]))
+        compiler_runtime_guard = bridge_namespace["RuntimeIdentityGuard"](lean, env=environment)
+        runtime_identity, runtime_sha256 = compiler_runtime_guard.identity, compiler_runtime_guard.sha256
+        if runtime_identity["executable"]["sha256"] != digest(lean_read.data):
+            raise ValueError("Compiler executable changed during runtime discovery")
+        if (incremental_keys or "compiler_runtime_identity" in manifest or "compiler_runtime_sha256" in manifest):
+            try:
+                runtime_matches = (
+                    json.dumps(manifest.get("compiler_runtime_identity"),sort_keys=True,separators=(",", ":"),allow_nan=False)
+                    == json.dumps(runtime_identity,sort_keys=True,separators=(",", ":"),allow_nan=False)
+                    and bridge_namespace["compiler_runtime_digest"](manifest.get("compiler_runtime_identity")) == runtime_sha256
+                    and manifest.get("compiler_runtime_sha256") == runtime_sha256)
+            except (ValueError,TypeError,RuntimeError):
+                runtime_matches = False
+            if not runtime_matches:
+                raise ValueError("Manifest requires the exact current compiler_runtime_identity and "
+                                 "compiler_runtime_sha256 before native execution. " + refresh_current)
+        receipt.update(compiler_runtime_identity=runtime_identity, compiler_runtime_sha256=runtime_sha256,
+                       compiler_runtime_binding_scope=("manifest-bound" if incremental_keys else
+                           "observed-current-operational-runtime; legacy cold execution only"))
+        def assert_runtime_stable(actual_environment=None):
+            try:
+                compiler_runtime_guard.assert_stable(env=actual_environment)
+            except RuntimeError as error:
+                raise ValueError(str(error)) from error
         def guard():
+            assert_runtime_stable()
             if sealed_directories:
                 verify_sealed_source(frozen,sealed_directories)
             for record in frozen_inputs:
@@ -1286,7 +1481,8 @@ def main() -> int:
             if source_assets(source_dirs,umbrella_root=umbrella_root)!=actual_assets:
                 raise ValueError("Source-adjacent asset membership changed during replay")
             reject_document_assets(root)
-        runner=CommandRunner(state,frozen,receipt,guard,environment,args.timeout)
+        runner=CommandRunner(state,frozen,receipt,guard,environment,args.timeout,
+                             environment_guard=assert_runtime_stable)
         receipt.update(source_records=records,asset_records=assets,package_anchors=anchors,
                        audit_module=audit,aggregator_module=aggregator,
                        lean_executable=str(lean),lean_sha256=digest(lean_read.data),packages=str(packages),
@@ -1317,6 +1513,7 @@ def main() -> int:
                     raise ValueError("Input helper command did not complete: "+entry["status"])
                 return subprocess.CompletedProcess(argv,entry["exit_code"],entry["stdout"],entry["stderr"])
         inputs["subprocess"]=LoggedSubprocess
+        incremental_bridge = None
         def inspect_native_slot(inspection):
             if not lease_held:
                 raise ValueError("Native scheduling inspection requires the held replay leases")
@@ -1344,6 +1541,11 @@ def main() -> int:
                     raise
             runner.save()
         def native_run(label,argv,bindings,**options):
+            assert_runtime_stable(options.get("environment") or environment)
+            if incremental_bridge is not None:
+                retained = incremental_bridge.try_cached_module(label,argv,bindings,**options)
+                if retained is not None:
+                    return retained
             # Process inspection is intentionally outside the generic integrity
             # guard: the inspector itself uses LoggedSubprocess/runner.run.
             # Recheck immediately before every real compiler invocation, after
@@ -1352,7 +1554,10 @@ def main() -> int:
             receipt.setdefault("native_schedule_checks",[]).append(inspection)
             runner.save()
             inspect_native_slot(inspection)
-            return runner.run(label,argv,bindings,**options)
+            command = runner.run(label,argv,bindings,**options)
+            if incremental_bridge is not None:
+                incremental_bridge.record_module_result(label,command)
+            return command
         # Input validation still asks the actual compiler for its identity and
         # prefix. Those native identity calls require the same leases as source
         # replay; --validate-only never bypasses the native scheduler.
@@ -1414,6 +1619,7 @@ def main() -> int:
         runner.save()
         guard()
         if args.validate_only:
+            compiler_runtime_guard.assert_unchanged()
             receipt.update(status="inputs-validated",kernel_checked=False)
             runner.save()
             print(f"Inputs and immutable snapshots validated; no kernel claim. Receipt: {state/'receipt.json'}",flush=True)
@@ -1471,6 +1677,37 @@ def main() -> int:
                        dependency_guard_cadence="Object membership/identity before and after every command; all object hashes before source elaboration and at final return.")
         runner.save()
         guard()
+        if incremental_keys:
+            operational_assets = {relocated_name(relative): digest(frozen_by_logical[relative].original.data)
+                                  for relative in assets if relative.endswith(".py")}
+            operational_assets.update({row["path"]:row["sha256"] for row in support_records
+                                       if row["path"].endswith(".py")})
+            policy_contract = {key:value for key,value in incremental_contract.items()
+                               if key != "public_compilation_origin"}
+            adjacent_assets = {path.relative_to(root).as_posix(): asset_paths[path]
+                               for path in sorted(actual_assets) if path in asset_paths and path != manifest_read.path}
+            adjacent_assets[".gitignore"] = digest(ignore_read.data)
+            validator_contract = {
+                "scope":"qualified-manifested-application-compilations-only",
+                "operational_asset_sha256":operational_assets,
+                "toolchain_sha256":digest(frozen_by_logical[asset_keys["lean-toolchain"]].original.data),
+                "lakefile_sha256":digest(frozen_by_logical[asset_keys["lakefile.toml"]].original.data),
+                "lake_manifest_sha256":digest(frozen_by_logical[asset_keys["lake-manifest.json"]].original.data),
+                "dependency_pins":pins, "owner_census":owner_contract,
+                "compiler_runtime_sha256":runtime_sha256,
+                "runtime_profile":receipt["current_runtime_profile_binding"],
+                "incremental_validation":policy_contract,
+                "source_adjacent_asset_sha256":adjacent_assets}
+            incremental_bridge = bridge_namespace["QualifiedApplicationCompilationBridge"](
+                sys.modules[__name__],runner,nodes,build,dependency_record,digest(lean_read.data),
+                validator_contract,root/".noeaaeue/.local/incremental-lean",cold=args.cold,
+                public_origin=incremental_contract.get("public_compilation_origin"),
+                compiler_runtime_identity=runtime_identity, compiler_runtime_guard=compiler_runtime_guard)
+            receipt["incremental_compilation_scope"] = (
+                "Manifested source module compilations only. Complete owner census, profile fixture/audit hops "
+                "and namespace custom-axiom controls remain current native commands. "
+                "Public compilation candidates confer no application admission.")
+            runner.save()
         started, completed, pending, failed=time.monotonic(),set(),set(nodes),False
         def native_argv(relative: str, artifact: Path | None = None) -> list[str]:
             if not sealed_directories:
@@ -1478,8 +1715,7 @@ def main() -> int:
             argv=[str(lean),"--trust=0",f"--memory={args.memory_mb}","--threads=1","-DwarningAsError=true"]
             if artifact is not None:
                 make_directory(artifact.parent)
-                if artifact.exists() or artifact.is_symlink():
-                    raise ValueError(f"Refusing preexisting native output: {artifact}")
+                require_empty_native_artifact_family(artifact)
                 argv.extend(["-o",str(artifact)])
             return [*argv,relative]
         # Fail early on the controlled observer's syntax/API before spending
@@ -1508,10 +1744,22 @@ def main() -> int:
                     "compiled_snapshot_path":node.relative,"source_unchanged":command.get("postcheck_passed",False),
                     "exit_code":command["exit_code"],"passed":passed,"command_sha256":command["command_sha256"],
                     "log":"logs/"+name+".log","log_sha256":command["log_sha256"],"artifact_sha256":artifact_hash,
-                    "artifact_families":artifact_families}
+                    "artifact_families":artifact_families,
+                    "execution_kind":command.get("execution_kind","fresh-native"),
+                    "freshly_elaborated_this_run":command.get("freshly_elaborated_this_run",True)}
+            if command.get("execution_kind") == "verified-cache-reuse":
+                result["origin_receipt"] = command["origin_receipt"]
+                result["cache_key"] = command["cache_key"]
+                result["source_stability_check"] = "terminal-full-application-input-guard-pending"
             receipt["checked_modules"].append(result)
-            runner.save()
-            print(f"{name}: {'kernel-checked' if passed else 'FAILED'}",flush=True)
+            # Retained compilations launch no child. Their logs and rows are
+            # checkpointed together by the next fresh command, final return or
+            # exception handler, avoiding whole-receipt writes for every hit.
+            if not passed or command.get("execution_kind") != "verified-cache-reuse":
+                runner.save()
+            label = ("reused verified compilation" if command.get("execution_kind") == "verified-cache-reuse"
+                     else "kernel-checked") if passed else "FAILED"
+            print(f"{name}: {label}",flush=True)
             pending.remove(name)
             if not passed:
                 failed=True
@@ -1539,8 +1787,8 @@ def main() -> int:
                 "parser_sha256":digest(frozen_by_logical[asset_keys["scripts/moebius_owner_census.py"]].original.data),
                 "command_sha256":owner_command["command_sha256"],"runtime_exceptions_allowed":runtime_allowed,
                 "runtime_exception_policy":runtime_policy,
-                "scope":("Every declared fresh project owner, including private/generated declarations and zero-declaration modules; standard transitive axioms only. Custom axioms and unsafe declarations remain rejected. Partial declarations are rejected except the exact five source-bound generated helpers paired to same-owner, same-type safe originals; theorem references in types or values to those helpers remain rejected. Six fresh native profile rejection controls are mandatory before acceptance." if generated_profile_sha else
-                    "Every declared fresh project owner, including private/generated declarations and zero-declaration modules; standard transitive axioms only. Owned partial/custom-axiom declarations remain rejected. Owned unsafe declarations remain rejected except the explicitly pinned native generated runtime helper when enabled. Direct theorem references to that helper remain rejected; no arbitrary transitive unsafe-reference graph is asserted.")}
+                "scope":("Every declared project owner, including private/generated declarations and zero-declaration modules, checked by the current native census; source compilations may be fresh or verified retained. Standard transitive axioms only. Custom axioms and unsafe declarations remain rejected. Partial declarations are rejected except the exact five source-bound generated helpers paired to same-owner, same-type safe originals; theorem references in types or values to those helpers remain rejected. Six fresh native profile rejection controls are mandatory before acceptance." if generated_profile_sha else
+                    "Every declared project owner, including private/generated declarations and zero-declaration modules, checked by the current native census; source compilations may be fresh or verified retained. Standard transitive axioms only. Owned partial/custom-axiom declarations remain rejected. Owned unsafe declarations remain rejected except the explicitly pinned native generated runtime helper when enabled. Direct theorem references to that helper remain rejected; no arbitrary transitive unsafe-reference graph is asserted.")}
             runner.save()
         if not failed and generated_profile_sha:
             for control,result in zip(profile_controls,receipt["runtime_profile_negative_controls"]):
@@ -1644,27 +1892,68 @@ def main() -> int:
                 record_failure(receipt,"custom-axiom-controls",
                     "The exact namespace audit lacks all ten fresh intended native custom-axiom rejection controls: "+str(error))
         guard()
+        compiler_runtime_guard.assert_unchanged()
+        for command in receipt["commands"]:
+            if command.get("execution_kind") == "verified-cache-reuse":
+                command.update(postcheck_passed=True,postcheck_deferred=False,
+                               postcheck_scope="terminal-full-application-input-guard")
+        for row in receipt["checked_modules"]:
+            if row.get("execution_kind") == "verified-cache-reuse":
+                row.update(source_unchanged=True,
+                           source_stability_check="terminal-full-application-input-guard")
         receipt.update(all_final_hashes_match=True,audited_declaration_count=int(counts[0]) if len(counts)==1 else None,
                        compiled_module_count=len(completed),elapsed_seconds=time.monotonic()-started,
                        status="kernel-checked" if not failed else "failed",kernel_checked=not failed)
         receipt["checked_modules"].sort(key=lambda row:row["module"])
+        reused_count = sum(row.get("freshly_elaborated_this_run") is False for row in receipt["checked_modules"])
+        receipt.update(fresh_project_build=reused_count == 0,
+                       fresh_compilation_count=len(completed)-reused_count,
+                       reused_compilation_count=reused_count)
         runner.save()
+        if not failed and incremental_bridge is not None:
+            def final_application_gate():
+                if (receipt.get("status") != "kernel-checked" or receipt.get("kernel_checked") is not True
+                        or receipt.get("all_final_hashes_match") is not True
+                        or set(completed) != set(nodes)
+                        or "complete_owner_census" not in receipt
+                        or "terminal_custom_axiom_control_validation" not in receipt
+                        or generated_profile_sha and "terminal_profile_control_validation" not in receipt):
+                    raise ValueError("Incremental compilation cannot be qualified by an incomplete application replay")
+                guard()
+                return {"scope":"exact-manifested-application-only", "manifest_sha256":digest(manifest_read.data),
+                        "source_module_count":len(nodes), "source_records":records,
+                        "complete_owner_census":receipt["complete_owner_census"],
+                        "application_axiom_audit_declaration_count":receipt["audited_declaration_count"],
+                        "terminal_custom_axiom_controls":receipt["terminal_custom_axiom_control_validation"],
+                        "terminal_profile_controls":receipt.get("terminal_profile_control_validation"),
+                        "final_layout_gate":receipt["shared_math_layout_gate_final"],
+                        "dependency_lock_sha256":final_lock_hash,
+                        "compiler_runtime_identity":runtime_identity,
+                        "compiler_runtime_sha256":runtime_sha256,
+                        "all_final_hashes_match":True,
+                        "public_compilation_does_not_confer_application_admission":True}
+            incremental_bridge.qualify(final_application_gate)
+            runner.save()
         print(f"Receipt: {state/'receipt.json'}",flush=True)
         return int(failed)
     except KeyboardInterrupt:
         if receipt is not None:
+            defer_cached_postchecks(receipt)
             receipt.update(status="interrupted",kernel_checked=False,error="KeyboardInterrupt")
             atomic_json(state/"receipt.json",receipt)
         print(f"Interrupted; durable receipt: {state/'receipt.json' if state else 'not initialized'}",file=sys.stderr)
         return 130
     except (OSError,ValueError,RuntimeError,KeyError,TypeError,subprocess.SubprocessError) as error:
         if receipt is not None:
+            defer_cached_postchecks(receipt)
             receipt.update(status="failed",kernel_checked=False)
             record_failure(receipt,"driver-exception",str(error),exception_type=type(error).__name__)
             atomic_json(state/"receipt.json",receipt)
         print(f"REJECTED: {error}; receipt: {state/'receipt.json' if state else 'not initialized'}",file=sys.stderr)
         return 1
     finally:
+        for name in private_runtime_modules:
+            sys.modules.pop(name,None)
         if lease_held:
             lease_context.__exit__(None,None,None)
 

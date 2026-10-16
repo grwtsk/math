@@ -1,0 +1,90 @@
+{
+  "active_default": {
+    "bytes": 229243,
+    "path": "/Users/local/Desktop/math/.noeaaeue/bindings/moebius-current-inputs-current.json",
+    "sha256": "b4ea709d3636c3432cf954d2b684240b5639434fde1244eee2f10058e0a37d62"
+  },
+  "asset_count": 28,
+  "candidate_count": 71,
+  "current_observation": {
+    "bytes": 5026087,
+    "path": "/Users/local/Desktop/math/.noeaaeue/bindings/current-source-observations.json",
+    "sha256": "b7788ea609d810c4221cefb653e2ff0eb483f60034ff528edefdab9f220d59c3"
+  },
+  "external_or_native_attempts": [],
+  "git_mutations": 0,
+  "head": "d25ccee49a781e150e991f885cb00f8be8f6e453",
+  "known_readonly_git_calls": 20,
+  "logical_index_and_HEAD_preserved": true,
+  "mathematical_admission": false,
+  "module_count": 456,
+  "native_Lean_Lake_inspector_jobs": 0,
+  "new_contract": {
+    "bytes": 229243,
+    "path": "/Users/local/Desktop/math/.noeaaeue/bindings/moebius-current-inputs-observation-20261016T165943Z-531bc57865164cc5a9188ef2e9ed0db4.json",
+    "sha256": "b4ea709d3636c3432cf954d2b684240b5639434fde1244eee2f10058e0a37d62"
+  },
+  "new_observation": {
+    "bytes": 5026087,
+    "path": "/Users/local/Desktop/math/.noeaaeue/bindings/current-source-observations-observation-20261016T165941Z-00a42dcfd1a4.json",
+    "sha256": "b7788ea609d810c4221cefb653e2ff0eb483f60034ff528edefdab9f220d59c3"
+  },
+  "new_three_candidate_paths": {
+    "GRWTSK/Combinatorics/FiniteVoting/QuorumMajority.lean": "93ed23cd6f113e4bb6f0ef5749cd9f33f1760e4e0abb75aff11e09789d2c88be",
+    "GRWTSK/Combinatorics/Sequences/FibonacciLayers.lean": "9a1521d73db0d390397e9a1a99d4aedf18e9c931c74e75f246b49910f38b113c",
+    "GRWTSK/Order/Interval/BoundedQuantizer.lean": "9d8435cfd3721d6632182082f65537164789dcd54257f91a2c557f991c7e1f0c"
+  },
+  "observation_identity": "c1a92cbc5001a0408b7a023cbf7db96a7211b1d724ef1cc2481efc956e6a100d",
+  "old884_source_rows_exact": true,
+  "old_observation_archive": {
+    "bytes": 5023469,
+    "path": "/Users/local/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/three-candidate-source-only-reconciliation-20261016T165941Z-00a42dcfd1a4/current-source-observations.before.json.txt",
+    "sha256": "85f3536a338fbd358fb371e6be6153dc0c2de53daaa568d86b1350588e1894b3"
+  },
+  "old_readset": {
+    "bytes": 269769,
+    "path": "/Users/local/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/held-public-phase-inputs-20261016T162606Z-bcc7a2c0e602.json",
+    "sha256": "a57a8d6dbe650e0ae20d08a943d922c313437cd9e94c62cf1ee92a29ae4110d3"
+  },
+  "only_old_input_changes": [
+    ".noeaaeue/bindings/current-source-observations.json",
+    ".noeaaeue/bindings/moebius-current-inputs-current.json"
+  ],
+  "prior62_history": {
+    "bytes": 229243,
+    "path": "/Users/local/Desktop/math/.noeaaeue/bindings/moebius-current-inputs-history/prior-62a71043d8145e3fe2da8efc447c65f94015ee8649b5163ffae5f9f27b966ca2.json",
+    "sha256": "62a71043d8145e3fe2da8efc447c65f94015ee8649b5163ffae5f9f27b966ca2"
+  },
+  "producer_report": {
+    "active_default": {
+      "path": ".noeaaeue/bindings/moebius-current-inputs-current.json",
+      "previous_archive": {
+        "bytes": 229243,
+        "path": "/Users/local/Desktop/math/.noeaaeue/bindings/moebius-current-inputs-history/prior-62a71043d8145e3fe2da8efc447c65f94015ee8649b5163ffae5f9f27b966ca2.json",
+        "sha256": "62a71043d8145e3fe2da8efc447c65f94015ee8649b5163ffae5f9f27b966ca2"
+      },
+      "previous_sha256": "62a71043d8145e3fe2da8efc447c65f94015ee8649b5163ffae5f9f27b966ca2",
+      "sha256": "b4ea709d3636c3432cf954d2b684240b5639434fde1244eee2f10058e0a37d62",
+      "status": "ACTIVE_INPUT_OBSERVATION_NOT_PROOF_ACCEPTANCE"
+    },
+    "asset_count": 28,
+    "kernel_checked": false,
+    "module_count": 456,
+    "path": ".noeaaeue/bindings/moebius-current-inputs-observation-20261016T165943Z-531bc57865164cc5a9188ef2e9ed0db4.json",
+    "schema": "current-moebius-contract-observation-v3",
+    "sha256": "b4ea709d3636c3432cf954d2b684240b5639434fde1244eee2f10058e0a37d62",
+    "status": "CURRENT_INPUT_OBSERVATION_NOT_FULL_REPLAY_ACCEPTANCE"
+  },
+  "protected_prior_inputs": 1476,
+  "public_or_warm_validation": "NOT_RUN",
+  "schema": "three-candidate-source-observation-contract-reconciliation-v1",
+  "scope": "Bounded cooperative quiet-freeze source/hash/role observation only; no proof acceptance or hostile-host atomicity claim",
+  "source_count": 887,
+  "status": "NEW887_SOURCE_OBSERVATION_AND_SOURCE_ONLY_DEFAULT_ACTIVE; NATIVE_NOT_RUN",
+  "whole887_membership_and_quiet_reads_exact": true,
+  "wrapper": {
+    "bytes": 12405,
+    "path": "/Users/local/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/reconcile_three_candidate_inputs_source_only_20261016.py",
+    "sha256": "204550de842f630aa5260705b65963bcb7dff41c95a57be8acf647beb72634a6"
+  }
+}

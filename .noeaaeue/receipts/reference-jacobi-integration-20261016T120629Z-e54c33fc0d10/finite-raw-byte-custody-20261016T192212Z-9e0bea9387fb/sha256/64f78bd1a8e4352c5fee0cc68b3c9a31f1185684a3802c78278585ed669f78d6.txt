@@ -1,0 +1,154 @@
+"""Relocation controls; no Lean process or acceptance record is created."""
+import hashlib
+import contextlib
+import io
+import json
+from pathlib import Path
+import tempfile
+import subprocess
+import unittest
+import sys
+import types
+from unittest.mock import patch
+
+import check_moebius_response as checker
+import moebius_response_inputs as inputs
+from repository_paths import relocated_name
+
+
+class ProcessPathControls(unittest.TestCase):
+    def setUp(self):
+        self.temporary = tempfile.TemporaryDirectory(prefix="moebius-process-paths-", dir="/private/tmp")
+        self.addCleanup(self.temporary.cleanup)
+        self.root = Path(self.temporary.name)
+
+    @staticmethod
+    def reader(root, relative):
+        return checker.read_regular(root, relative).data
+
+    def test_historical_manifest_keys_remain_exact_and_aliases_cannot_collide(self):
+        assets = {name: "recorded-hash" for name in (
+            "scripts/moebius_response_inputs.py", "scripts/moebius_owner_census.py",
+            "scripts/check_math_layout.py", "lake-manifest.json", "lakefile.toml", "lean-toolchain")}
+        self.assertEqual(checker.required_asset_keys(assets), {name: name for name in assets})
+        moved = {relocated_name(name): value for name, value in assets.items()}
+        self.assertEqual(checker.required_asset_keys(moved), {name: relocated_name(name) for name in assets})
+        assets[".noeaaeue/scripts/check_math_layout.py"] = "different-binding"
+        with self.assertRaises(ValueError):
+            checker.required_asset_keys(assets)
+
+    def test_logical_read_and_frozen_location_preserve_bytes_and_identity(self):
+        logical = "scripts/policy.py"
+        physical = self.root / relocated_name(logical)
+        checker.write_exclusive(physical, b"historical process bytes\n")
+        read = checker.read_regular(self.root, logical)
+        frozen = checker.freeze_input(read, self.root / "frozen", logical)
+        self.assertEqual(frozen.logical_path, logical)
+        self.assertEqual(frozen.snapshot.path, self.root / "frozen" / relocated_name(logical))
+        self.assertEqual(self.reader(self.root / "frozen", logical), read.data)
+        checker.verify_input(frozen)
+        self.assertFalse((self.root / "scripts").exists())
+
+    def test_physical_mapping_keeps_parent_symlinks_rejected(self):
+        checker.make_directory(self.root / ".noeaaeue")
+        checker.make_directory(self.root / "outside")
+        (self.root / ".noeaaeue/scripts").symlink_to(self.root / "outside", target_is_directory=True)
+        with self.assertRaises(ValueError):
+            checker.read_regular(self.root, "scripts/policy.py")
+
+    def test_frozen_layout_subprocess_uses_bound_sibling_adapter(self):
+        logical = "scripts/check_math_layout.py"
+        policy = (b"from repository_paths import relocated_name\n"
+                  b"import json\n"
+                  b"print(json.dumps({'status':'PASS','report_only':False,'mapped':relocated_name('scripts/x.py')}))\n")
+        adapter = Path(__file__).with_name("repository_paths.py").read_bytes()
+        frozen = self.root / "frozen"
+        for name, data in ((logical, policy), ("scripts/repository_paths.py", adapter)):
+            checker.write_exclusive(self.root / relocated_name(name), data)
+            checker.freeze_input(checker.read_regular(self.root, name), frozen, name)
+        def run_frozen_policy(argv, **options):
+            self.assertEqual(argv, [sys.executable, "-B", str(frozen / relocated_name(logical)),
+                                    "--root", str(self.root), "--json"])
+            self.assertEqual(options, {"capture_output": True, "text": True, "timeout": 60})
+            private = types.ModuleType("fixture_frozen_repository_paths")
+            private.__file__ = str(frozen / relocated_name("scripts/repository_paths.py"))
+            exec(compile(Path(private.__file__).read_bytes(), private.__file__, "exec"), vars(private))
+            output = io.StringIO()
+            namespace = {"__name__": "__main__", "__file__": argv[2]}
+            with patch.dict(sys.modules, {"repository_paths": private}), contextlib.redirect_stdout(output):
+                exec(compile(Path(argv[2]).read_bytes(), argv[2], "exec"), namespace)
+            return subprocess.CompletedProcess(argv, 0, output.getvalue(), "")
+        with patch.object(inputs.subprocess, "run", side_effect=run_frozen_policy) as child:
+            record = inputs.require_layout(self.root, frozen, self.reader)
+        self.assertEqual(child.call_count, 1)
+        self.assertEqual(record["exit_code"], 0)
+        self.assertEqual(record["relocation_adapter_sha256"], hashlib.sha256(adapter).hexdigest())
+        self.assertEqual(record["report"]["mapped"], ".noeaaeue/scripts/x.py")
+        adapter_path = frozen / relocated_name("scripts/repository_paths.py")
+        adapter_path.chmod(0o600)
+        adapter_path.write_bytes(adapter + b"\n# changed frozen adapter\n")
+        with self.assertRaisesRegex(ValueError, "adapter changed before"):
+            inputs.require_layout(self.root, frozen, self.reader)
+
+
+    def test_policy_imports_use_frozen_support_instead_of_cached_live_modules(self):
+        policy=(b"import source_observations\nfrom repository_paths import relocated_name\n"
+                b"OBSERVED=source_observations.FLAG\nMAPPED=relocated_name('scripts/x.py')\n")
+        adapter=Path(__file__).with_name("repository_paths.py").read_bytes()
+        files={".noeaaeue/scripts/check_math_layout.py":policy,
+               ".noeaaeue/scripts/source_observations.py":b"FLAG='frozen'\n",
+               ".noeaaeue/scripts/repository_paths.py":adapter}
+        for name,data in files.items():checker.write_exclusive(self.root/name,data)
+        fake_source=types.SimpleNamespace(FLAG="live-unbound")
+        fake_paths=types.SimpleNamespace(relocated_name=lambda value:"live-unbound")
+        with patch.dict(sys.modules,{"source_observations":fake_source,"repository_paths":fake_paths}):
+            namespace,_=inputs.policy_module(self.root,self.reader)
+        self.assertEqual(namespace["OBSERVED"],"frozen")
+        self.assertEqual(namespace["MAPPED"],".noeaaeue/scripts/x.py")
+
+    def test_changed_frozen_source_support_blocks_layout_subprocess(self):
+        logical="scripts/check_math_layout.py"
+        policy=b"import source_observations\n"
+        frozen=self.root/"frozen"
+        for name,data in ((logical,policy),("scripts/source_observations.py",b"FLAG='frozen'\n")):
+            checker.write_exclusive(self.root/relocated_name(name),data)
+            checker.freeze_input(checker.read_regular(self.root,name),frozen,name)
+        changed=frozen/relocated_name("scripts/source_observations.py")
+        changed.chmod(0o600);changed.write_bytes(b"FLAG='changed'\n")
+        with self.assertRaisesRegex(ValueError,"source-observation helper changed before"):
+            inputs.require_layout(self.root,frozen,self.reader)
+
+    def test_default_current_contract_does_not_select_historical_manifest(self):
+        self.assertEqual(checker.DEFAULT_CURRENT_MANIFEST,
+                         ".noeaaeue/bindings/moebius-current-inputs-current.json")
+        self.assertNotEqual(checker.DEFAULT_CURRENT_MANIFEST,
+                            ".noeaaeue/bindings/moebius-current-inputs-v5.json")
+        self.assertNotEqual(checker.DEFAULT_CURRENT_MANIFEST,
+                            ".noeaaeue/evidence/moebius-response-sources.json")
+
+
+    def test_process_custody_documents_are_separate_from_mathematical_inputs(self):
+        custody=self.root/".noeaaeue/evidence/source.pdf"
+        custody.parent.mkdir(parents=True);custody.write_bytes(b"preserved process source")
+        checker.reject_document_assets(self.root)
+        mathematical=self.root/"GRWTSK/Analysis/source.pdf"
+        mathematical.parent.mkdir(parents=True);mathematical.write_bytes(b"unapproved mathematical input")
+        with self.assertRaisesRegex(ValueError,"Forbidden mathematical repository asset"):
+            checker.reject_document_assets(self.root)
+
+
+    def test_similar_process_prefix_does_not_exempt_mathematical_documents(self):
+        target=self.root/".noeaaeuex/source.tex"
+        target.parent.mkdir();target.write_bytes(b"not process custody")
+        with self.assertRaisesRegex(ValueError,"Forbidden mathematical repository asset"):
+            checker.reject_document_assets(self.root)
+
+    def test_nested_process_name_does_not_exempt_source_adjacent_documents(self):
+        target=self.root/"GRWTSK/Analysis/.noeaaeue/source.pdf"
+        target.parent.mkdir(parents=True);target.write_bytes(b"inside mathematical tree")
+        with self.assertRaisesRegex(ValueError,"Forbidden mathematical repository asset"):
+            checker.reject_document_assets(self.root)
+
+
+if __name__ == "__main__":
+    unittest.main()

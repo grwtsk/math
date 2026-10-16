@@ -4,16 +4,16 @@
 
 | Inventory | Count |
 |---|---:|
-| Object guides | 40 |
+| Object guides | 41 |
 | Documented object groups | 17 |
-| Distinct primary sources linked | 38 |
-| Lean source modules | 267 |
+| Distinct primary sources linked | 39 |
+| Lean source modules | 270 |
 | Archive intake records | 19 |
 | Selected catalog families | 1 |
 
 These counts measure documentation and source coverage. They do not count accepted theorems or establish that every source module is documented or checked. [Definitions and limits](../../reference/library-pages.md#count-definitions).
 
-At least 1932 source declaration commands, including 1486 theorem/lemma commands, across 227 parsed Lean source modules; 40 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
+At least 1946 source declaration commands, including 1495 theorem/lemma commands, across 230 parsed Lean source modules; 40 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
 
 ## ArithmeticFunctions
 
@@ -43,10 +43,11 @@ Linked primary-source scope: 100 source declaration commands, including 79 theor
 
 ## Cyclotomic
 
-3 object guides · 3 distinct linked primary source files.
+4 object guides · 4 distinct linked primary source files.
 
-Linked primary-source scope: 50 source declaration commands, including 33 theorem/lemma commands, across 3 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+Linked primary-source scope: 57 source declaration commands, including 38 theorem/lemma commands, across 4 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
+- [Cubic Jacobi congruence in the third cyclotomic integer ring](Cyclotomic/third-cyclotomic-jacobi.md).
 - [Cubic characters on good third-cyclotomic quotients](Cyclotomic/third-cyclotomic-characters.md).
 - [Cubic-root reduction in the third cyclotomic integer ring](Cyclotomic/third-cyclotomic-reduction.md).
 - [Ideal norms in the third cyclotomic integer ring](Cyclotomic/third-cyclotomic-ideals.md).

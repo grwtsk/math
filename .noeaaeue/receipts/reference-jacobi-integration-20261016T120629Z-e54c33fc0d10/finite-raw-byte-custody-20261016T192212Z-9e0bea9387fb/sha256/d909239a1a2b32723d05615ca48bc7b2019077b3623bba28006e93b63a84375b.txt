@@ -1,0 +1,58 @@
+{
+  "commit_or_push_performed_by_this_record": false,
+  "compiler_runtime_sha256": "c48f0fb338d4947e55e4f3974e49b7d1d4a12ad0ac0a783355a135d7bda01f7d",
+  "coordinator_native_execution": false,
+  "created_at": "2026-10-16T19:17:37.716820+00:00",
+  "custody_scope": "Exact baseline1560 occurrences plus separately named actual two-selected and five-documentation terminal receipts/origins/generated inputs/command results/logs and old two-guide/registry byte preimages; finite explicit rows only. Root independent baseline1560 hash/classification/foreign-exclusion review passed. Exporter e6021da5 remains unchanged. Final exact request must be rehashed and intersected with all three foreign sets before execution.",
+  "gates": {
+    "application": {
+      "bytes": 3111,
+      "path": "/Users/local/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/coordinator-runtime-application-acceptance-20261016T190044Z-66c7b4e3a130.json",
+      "sha256": "603eaf7ff7c3087ffc2d876360615a646b72e3b7693564fce451bd0871d35535"
+    },
+    "custody_baseline": {
+      "bytes": 2178082,
+      "path": "/Users/local/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/finite-custody-allowlist-proposal-20261016T190721Z-6de4af86b238/allowlist-proposal.json",
+      "sha256": "91acb06741762ac5eb7db85599f222cf4a8a380c06b76c931c8253cece1d8662"
+    },
+    "default_installation": {
+      "bytes": 1783,
+      "path": "/Users/local/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/checked-runtime-default-activation-20261016T190809Z-3e2de72d4d1a.json",
+      "sha256": "cafe6a84852f444074f664b9a2875f935d9cc4b928b25cf1603326fe9259d4d4"
+    },
+    "documentation": {
+      "bytes": 2920,
+      "path": "/Users/local/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/summary.json",
+      "sha256": "ff57aee01abe664fd76fcd4981f11a933a92f62c6063ec0d31e6463905410170"
+    },
+    "public_pair": {
+      "bytes": 3168,
+      "path": "/Users/local/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/coordinator-runtime-first-warm-acceptance-20261016T183948Z-ca50411e915e.json",
+      "sha256": "1d26b66650be97e640c34b837e85ef0025636ff091c8d29b3b563ee10175eaea"
+    },
+    "selected": {
+      "bytes": 3357,
+      "path": "/Users/local/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/reference-jacobi-runtime-selected-acceptance-20261016T190659Z-445975fb060d.json",
+      "sha256": "aab964261d105015d25a63fbce16ee415a3263209b00fb16549deaac6d9084bb"
+    },
+    "source_cache": {
+      "bytes": 2478,
+      "path": "/Users/local/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/source-cache-887-20261016T191202Z-340920da53f9/summary.json",
+      "sha256": "4139c31db04f3eea6ff66dbb7d8d526466379386ceaa70c556c66791a647f355"
+    }
+  },
+  "git_scope": "Final finite publication manifest and empty foreign-set intersection must be reviewed before staging. Existing603 proposal is historical planning only. No blanket directory staging.",
+  "native_runs_remaining": 0,
+  "preservation": {
+    "GRWTSK_taxonomy": "UNCHANGED; all887 formal input bytes match frozen validation source set",
+    "WSC": "All049c/93b/de830 created files and receipts, four fixed declarations and completion record excluded; no central adoption/global fixed-point claim",
+    "historical_receipts": "Original bytes/identities retained; new receipts appended",
+    "source_cache": "edfd successor source custody only; cf31 historical884 retained",
+    "stale_pins": "Explicitly stale; executable-only earlier pair remains STALE_FOR_RUNTIME_QUALIFICATION",
+    "three_new_sources": "SOURCE_CUSTODY_ONLY; candidate-source-only, unknown-unreplayed, mathematical_acceptance=false"
+  },
+  "schema": "coordinator-final-validation-custody-approval-v1",
+  "status": "VALIDATION_GATES_PASSED_FINITE_CUSTODY_AUTHORIZED_GIT_SCOPE_REVIEW_PENDING",
+  "whole_project_cold_authorized": false,
+  "worker_resume": "Only after actual scoped commits and upstream readback; Noe coordinates next source/resource window."
+}

@@ -1,0 +1,2 @@
+'EulerP04RH.RightLine.reciprocal_zeta_uniform_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EulerP04RH.RightLine.pickupKernel_norm_decay' depends on axioms: [propext, Classical.choice, Quot.sound]

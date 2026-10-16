@@ -1,47 +1,515 @@
-"""Write a new exact current input observation; never rewrite historical evidence."""
+"""Create an exact input observation; this never grants proof acceptance.
+
+Importing this module runs no observer, helper import, location query or writer.
+Only an explicitly invoked CLI observes the repository. Historical contracts
+remain unchanged; incremental reuse requires a new, source-bound output.
+"""
 from pathlib import Path
-import argparse,hashlib,json,subprocess,sys
-ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(ROOT/'.noeaaeue/scripts'))
-import check_moebius_response as checker
-import moebius_owner_census as census
-sha=lambda raw:hashlib.sha256(raw).hexdigest()
-p=argparse.ArgumentParser(description=__doc__);p.add_argument('--output',type=Path,default=ROOT/checker.DEFAULT_CURRENT_MANIFEST);args=p.parse_args();output=args.output.absolute()
-if output.exists() or output.is_symlink():raise RuntimeError('Refusing existing input contract; choose a new versioned --output path')
-audit='GRWTSK.Logic.ProofChecking.Checks.FullAnalyticArithmeticKernel';aggregator='GRWTSK.Logic.ProofChecking.Checks.MoebiusResponseLibrary'
-reads={};modules={};active=set()
-def read(name):
- data=checker.read_regular(ROOT,name).data
- if name in reads and reads[name]!=data:raise RuntimeError('concurrent input changed during observation: '+name)
- reads[name]=data;return data
-def visit(module):
- if module in modules:return
- if module in active:raise RuntimeError('project import cycle: '+module)
- active.add(module);relative=module.replace('.','/')+'.lean';data=read(relative);imports=checker.imports(data.decode())
- for name in imports:
-  if name=='GRWTSK' or name.startswith('GRWTSK.'):visit(name)
- active.remove(module);modules[module]={'path':relative,'sha256':sha(data),'imports':imports}
-visit(audit);visit(aggregator)
-source_dirs={ROOT/Path(row['path']).parent for row in modules.values()}
-assets={p.relative_to(ROOT).as_posix() for p in checker.source_assets(source_dirs,umbrella_root=ROOT if 'GRWTSK' in modules else None)}
-assets.update({'.noeaaeue/scripts/check_moebius_response.py','.noeaaeue/scripts/moebius_owner_census.py','.noeaaeue/scripts/moebius_response_inputs.py','.noeaaeue/scripts/check_math_layout.py','.noeaaeue/scripts/repository_paths.py','.noeaaeue/scripts/source_observations.py','.noeaaeue/bindings/current-source-observations.json',census.CURRENT_PROFILE_RELATIVE,'lean-toolchain','lakefile.toml','lake-manifest.json'})
-assets={name:sha(read(name)) for name in sorted(assets)}
-helper=read(census.HELPER_RELATIVE)
-if sha(helper)!=census.HELPER_SHA256:raise RuntimeError('current operational observer pin differs')
-lock=json.loads(read('lake-manifest.json'));packages=ROOT/'.lake/packages';pins={row['name']:row['rev'] for row in lock['packages']}
-anchor='mathlib/.lake/build/lib/lean/Mathlib.olean';anchor_read=checker.stable_read(packages/anchor).data
-qualification_path=ROOT/'.noeaaeue/binding-repair/moebius-current-qualification.json';qualification_raw=qualification_path.read_bytes();qualification=json.loads(qualification_raw)
-if qualification['status']!='CURRENT_SCOPED_PROFILE_QUALIFIED' or qualification['profile_sha256']!=census.GENERATED_PARTIAL_PROFILE_SHA256 or qualification['helper_sha256']!=census.HELPER_SHA256:raise RuntimeError('current scoped profile qualification is absent or different')
-for owner,h in qualification['source_hashes'].items():
- if sha(read(owner.replace('.','/')+'.lean'))!=h:raise RuntimeError('profile source changed after qualification: '+owner)
-lean=subprocess.check_output(['elan','which','lean'],cwd=ROOT,text=True).strip();binary=checker.stable_read(Path(lean)).data
-# Reuse the explicitly recorded freshly checked compiler identity only after
-# verifying its actual binary bytes; this observation does not invoke Lean.
-qualified_receipt=json.loads((ROOT/qualification['receipt']).read_bytes())
-if sha(binary)!=qualified_receipt['lean_binary_sha256']:raise RuntimeError('compiler bytes differ from scoped current qualification')
-contract={'schema_version':1,'modules':dict(sorted(modules.items())),'audit_module':audit,'aggregator_module':aggregator,'assets':assets,'lean_version':qualified_receipt['lean_version'],'lean_sha256':sha(binary),'package_anchors':[{'path':anchor,'sha256':sha(anchor_read)}],'owner_census':{'helper_module':census.HELPER_MODULE,'parser_asset':'.noeaaeue/scripts/moebius_owner_census.py','runtime_exceptions_allowed':True,'helper':{'path':census.HELPER_RELATIVE,'sha256':census.HELPER_SHA256,'imports':['Lean']},'runtime_exception_policy':census.generated_partial_profile_descriptor()},'dependency_revisions':pins,'dependency_lock_sha256':sha(read('lake-manifest.json')),'generation_status':'CURRENT_INPUT_OBSERVATION_NOT_FULL_REPLAY_ACCEPTANCE','kernel_checked':False,'generation_scope':'Exact current input/source graph observation. Only the separately referenced five-module runtime-profile scope is freshly qualified. This complete manifested application/library closure has not been freshly replayed by this metadata record.','historical_manifest':{'path':'.noeaaeue/evidence/moebius-response-sources.json','sha256':sha(read('.noeaaeue/evidence/moebius-response-sources.json')),'status':'historical-stale-preserved; no hashes or acceptance rewritten'},'current_scoped_profile_qualification':{'path':str(qualification_path.relative_to(ROOT)),'sha256':sha(qualification_raw),'scope':qualification['scope'],'library_wide_admission':False}}
-for name,data in reads.items():
- if checker.read_regular(ROOT,name).data!=data:raise RuntimeError('concurrent observation collision: '+name)
-output.parent.mkdir(parents=True,exist_ok=True)
-with output.open('xb') as stream:stream.write((json.dumps(contract,indent=2)+'\n').encode())
-report={'schema':'current-moebius-contract-observation-v2','path':str(output.relative_to(ROOT)),'sha256':sha(output.read_bytes()),'module_count':len(modules),'asset_count':len(assets),'status':contract['generation_status'],'kernel_checked':False}
-print(json.dumps(report))
+from datetime import datetime, timezone
+import argparse
+import hashlib
+import json
+import os
+import re
+import stat
+import subprocess
+import sys
+from types import ModuleType
+import uuid
+
+ROOT = Path(__file__).resolve().parents[2]
+AUDIT = "GRWTSK.Logic.ProofChecking.Checks.FullAnalyticArithmeticKernel"
+AGGREGATOR = "GRWTSK.Logic.ProofChecking.Checks.MoebiusResponseLibrary"
+QUALIFICATION = ".noeaaeue/binding-repair/moebius-current-qualification.json"
+ACTIVE_DEFAULT = ".noeaaeue/bindings/moebius-current-inputs-current.json"
+RUNTIME_SOURCE_NAMES = ("repository_paths", "monitor_math", "cache_math", "incremental_lean")
+RUNTIME_SOURCES = tuple(".noeaaeue/scripts/" + name + ".py" for name in RUNTIME_SOURCE_NAMES)
+EXPECTED_INCREMENTAL_CONTRACT = {
+    "schema": "qualified-application-compilation-v1",
+    "source_module_cache": True,
+    "retained_evidence_scope": "compilation-only",
+    "complete_owner_census": "fresh-native",
+    "runtime_profile_controls": "fresh-native",
+    "namespace_axiom_controls": "fresh-native",
+    "terminal_origin_schema": "proof-validation-origin-v1",
+}
+
+
+def sha(raw):
+    return hashlib.sha256(raw).hexdigest()
+
+
+def decoded(raw):
+    def unique(pairs):
+        result = {}
+        for key, value in pairs:
+            if key in result:
+                raise ValueError("Duplicate observation key: " + key)
+            result[key] = value
+        return result
+    return json.loads(raw, object_pairs_hook=unique)
+
+
+def _public_identity(identity):
+    if (type(identity) is not dict
+            or set(identity) != {"path", "sha256", "bytes", "attempt_id"}
+            or any(type(identity.get(key)) is not str or not identity[key]
+                   for key in ("path", "sha256", "attempt_id"))
+            or not Path(identity["path"]).is_absolute()
+            or ".." in Path(identity["path"]).parts
+            or not re.fullmatch(r"[0-9a-f]{64}", identity["sha256"])
+            or type(identity.get("bytes")) is not int or identity["bytes"] < 1):
+        raise ValueError("A public candidate needs an exact explicit terminal origin identity")
+    return dict(identity)
+
+
+def build_incremental_binding(checker, assets, *, enabled=True, public_origin=None,
+                              origin_bytes=None, origin_payload_validator=None,
+                              compiler_runtime_identity=None, compiler_runtime_sha256=None):
+    """Pure data construction using explicitly supplied source-bound helpers.
+
+    An explicitly selected public origin is a candidate identity, not application
+    admission. The application bridge must qualify its artifacts and execute the
+    fresh native census and controls; this builder does neither.
+    """
+    if type(enabled) is not bool:
+        raise ValueError("Incremental selection must be a literal Boolean")
+    if not enabled:
+        if public_origin is not None or origin_bytes is not None:
+            raise ValueError("A public candidate requires explicit incremental mode")
+        return None
+    template = checker.INCREMENTAL_CONTRACT
+    if (type(template) is not dict or set(template) != set(EXPECTED_INCREMENTAL_CONTRACT)
+            or any(type(template[key]) is not type(value) or template[key] != value
+                   for key, value in EXPECTED_INCREMENTAL_CONTRACT.items())):
+        raise ValueError("The reviewed incremental API has changed")
+    if (type(assets) is not dict or any(type(name) is not str or type(value) is not str
+            or not re.fullmatch(r"[0-9a-f]{64}", value) for name, value in assets.items())):
+        raise ValueError("Operational assets require exact SHA256 digests")
+    contract = dict(template)
+    if public_origin is not None:
+        identity = _public_identity(public_origin)
+        if type(origin_bytes) is not bytes or not callable(origin_payload_validator):
+            raise ValueError("Public origin needs exact bytes and the bound origin parser")
+        if sha(origin_bytes) != identity["sha256"] or len(origin_bytes) != identity["bytes"]:
+            raise ValueError("Public candidate origin bytes differ")
+        payload = origin_payload_validator(decoded(origin_bytes))
+        if type(payload) is not dict or type(payload.get("evidence")) is not dict:
+            raise ValueError("Public origin parser returned malformed data")
+        state = payload["evidence"].get("validation")
+        if (payload.get("attempt_id") != identity["attempt_id"] or type(state) is not dict
+                or state.get("mode") != "all-project-replay"
+                or state.get("status") != "ALL_PROJECT_SOURCE_AND_AXIOM_CHECKS_PASSED"):
+            raise ValueError("Public candidate is not the selected successful public attempt")
+        origin_runtime = state.get("compiler_runtime_identity")
+        if (type(compiler_runtime_identity) is not dict or type(origin_runtime) is not dict
+                or type(compiler_runtime_sha256) is not str
+                or not re.fullmatch(r"[0-9a-f]{64}", compiler_runtime_sha256)):
+            raise ValueError("Public origin compiler runtime identity is absent or different")
+        try:
+            current_runtime_raw = (json.dumps(compiler_runtime_identity, sort_keys=True,
+                separators=(",", ":"), ensure_ascii=True, allow_nan=False) + "\n").encode()
+            origin_runtime_raw = (json.dumps(origin_runtime, sort_keys=True,
+                separators=(",", ":"), ensure_ascii=True, allow_nan=False) + "\n").encode()
+        except (TypeError, ValueError) as error:
+            raise ValueError("Public origin compiler runtime identity is absent or different") from error
+        if (origin_runtime_raw != current_runtime_raw
+                or sha(current_runtime_raw) != compiler_runtime_sha256
+                or state.get("compiler_runtime_sha256") != compiler_runtime_sha256):
+            raise ValueError("Public origin compiler runtime identity is absent or different")
+        contract["public_compilation_origin"] = identity
+    elif origin_bytes is not None:
+        raise ValueError("Origin bytes have no selected identity")
+    checker.incremental_asset_keys(assets, contract)
+    return contract
+
+
+def _load_runtime_helpers(root, sources):
+    """Execute only exact stable-read helper bytes, never ambient project modules.
+
+    The four modules' canonical bindings exist only during their imports. Their
+    private globals retain the exact closure after the ambient bindings return.
+    No compiler image is executed by these static runtime observation APIs.
+    """
+    if (set(sources) != set(RUNTIME_SOURCES)
+            or any(type(raw) is not bytes for raw in sources.values())):
+        raise ValueError("Runtime helper closure is incomplete")
+    missing = object()
+    previous = {name: sys.modules.get(name, missing) for name in RUNTIME_SOURCE_NAMES}
+    private_names, modules = [], {}
+    try:
+        for name in RUNTIME_SOURCE_NAMES:
+            relative = ".noeaaeue/scripts/" + name + ".py"
+            private = "observation_frozen_" + name + "_" + uuid.uuid4().hex
+            module = ModuleType(private)
+            module.__file__, module.__package__ = str(Path(root) / relative), ""
+            sys.modules[private] = module
+            private_names.append(private)
+            sys.modules[name] = module
+            exec(compile(sources[relative], module.__file__, "exec", dont_inherit=True,
+                         optimize=sys.flags.optimize), vars(module))
+            modules[name] = module
+        engine = modules["incremental_lean"]
+        engine.verify_loaded_parser_sources({name + ".py": sources[
+            ".noeaaeue/scripts/" + name + ".py"] for name in ("cache_math", "monitor_math")})
+        for name in ("compiler_runtime_identity", "compiler_runtime_digest",
+                     "assert_compiler_runtime_unchanged", "_origin_payload"):
+            if not callable(getattr(engine, name, None)):
+                raise ValueError("Static compiler runtime API is absent: " + name)
+        return engine
+    finally:
+        for name in private_names:
+            sys.modules.pop(name, None)
+        for name, module in previous.items():
+            if module is missing:
+                sys.modules.pop(name, None)
+            else:
+                sys.modules[name] = module
+
+
+def _locate_lean(root):
+    # Location only, never --version or compilation. Tests must supply a stub.
+    return Path(subprocess.check_output(["elan", "which", "lean"], cwd=root, text=True).strip())
+
+
+class CurrentDefaultActivation:
+    """Serialize cooperating producers and replace only the designated copy.
+
+    The source freeze and final rereads bound this operation. This cooperative
+    lease is not exclusion of arbitrary host writers or a filesystem-wide CAS.
+    Existing versioned contracts and unrelated destinations are never replaced.
+    """
+    def __init__(self, root, checker):
+        self.path, self.checker = Path(root) / ACTIVE_DEFAULT, checker
+        self.parent = self.lease = None
+        self.previous = None
+        self.lease_name = ".moebius-current-inputs-current.activation-lease"
+
+    def __enter__(self):
+        try:
+            self.parent = self.checker.directory_descriptor(self.path.parent, create=True)
+            self.lease = os.open(self.lease_name, os.O_WRONLY | os.O_CREAT | os.O_EXCL | os.O_NOFOLLOW,
+                                 0o600, dir_fd=self.parent)
+            self.lease_identity = os.fstat(self.lease)
+            os.write(self.lease, (uuid.uuid4().hex + "\n").encode())
+            try:
+                current = os.stat(self.path.name, dir_fd=self.parent, follow_symlinks=False)
+            except FileNotFoundError:
+                current = None
+            if current is not None:
+                if not stat.S_ISREG(current.st_mode) or current.st_nlink != 1:
+                    raise ValueError("Active default must be one regular, unlinked copy")
+                self.previous = self.checker.stable_read(self.path)
+            return self
+        except BaseException:
+            self._close()
+            raise
+
+    def _close(self):
+        try:
+            if self.lease is not None:
+                current = os.stat(self.lease_name, dir_fd=self.parent, follow_symlinks=False)
+                if (current.st_dev, current.st_ino) != (
+                        self.lease_identity.st_dev, self.lease_identity.st_ino):
+                    raise ValueError("Activation lease changed; preserving the replacement")
+                os.unlink(self.lease_name, dir_fd=self.parent)
+        finally:
+            if self.lease is not None:
+                os.close(self.lease)
+                self.lease = None
+            if self.parent is not None:
+                os.close(self.parent)
+                self.parent = None
+
+    def __exit__(self, *_):
+        self._close()
+
+    def _assert_lease_and_parent(self):
+        current = os.stat(self.lease_name, dir_fd=self.parent, follow_symlinks=False)
+        if (not stat.S_ISREG(current.st_mode) or current.st_nlink != 1
+                or (current.st_dev, current.st_ino) != (
+                    self.lease_identity.st_dev, self.lease_identity.st_ino)):
+            raise ValueError("Activation lease changed before publication")
+        reopened = self.checker.directory_descriptor(self.path.parent)
+        try:
+            held, live = os.fstat(self.parent), os.fstat(reopened)
+            if (held.st_dev, held.st_ino) != (live.st_dev, live.st_ino):
+                raise ValueError("Active default parent changed before publication")
+        finally:
+            os.close(reopened)
+
+    def _assert_previous(self):
+        try:
+            current = os.stat(self.path.name, dir_fd=self.parent, follow_symlinks=False)
+        except FileNotFoundError:
+            current = None
+        if self.previous is None:
+            if current is not None:
+                raise ValueError("Concurrent active default appeared; preserving it")
+        elif (current is None or not stat.S_ISREG(current.st_mode) or current.st_nlink != 1
+                or self.checker.stable_read(self.path) != self.previous):
+            raise ValueError("Concurrent active default changed; preserving it")
+
+    def _archive_previous(self):
+        if self.previous is None:
+            return None
+        path = self.path.parent / "moebius-current-inputs-history" / (
+            "prior-" + sha(self.previous.data) + ".json")
+        if not path.exists() and not path.is_symlink():
+            self.checker.write_exclusive(path, self.previous.data, readonly=True)
+        observed = self.checker.stable_read(path)
+        current = os.stat(path, follow_symlinks=False)
+        if (not stat.S_ISREG(current.st_mode) or current.st_nlink != 1
+                or stat.S_IMODE(current.st_mode) != 0o400
+                or observed.data != self.previous.data):
+            raise ValueError("Prior active archive differs; preserving the active default")
+        return observed
+
+    def publish(self, contract, encoded, recheck):
+        recheck()
+        self._assert_lease_and_parent()
+        self._assert_previous()
+        archived = self._archive_previous()
+        recheck()
+        self._assert_lease_and_parent()
+        self._assert_previous()
+        if archived is not None and self.checker.stable_read(archived.path) != archived:
+            raise ValueError("Prior active archive changed before publication")
+        # The existing anchored writer checks regular destinations and performs
+        # whole-file replacement. It serializes identically to the versioned copy.
+        self.checker.atomic_json(self.path, contract)
+        if self.checker.stable_read(self.path).data != encoded:
+            raise ValueError("Active and immutable versioned observations differ")
+        return {"path": ACTIVE_DEFAULT, "sha256": sha(encoded),
+                "previous_sha256": None if self.previous is None else sha(self.previous.data),
+                "previous_archive": None if archived is None else {
+                    "path": str(archived.path), "sha256": sha(archived.data), "bytes": len(archived.data)},
+                "status": "ACTIVE_INPUT_OBSERVATION_NOT_PROOF_ACCEPTANCE"}
+
+
+def observe_current_inputs(root, output, *, checker, census, incremental=True,
+                           public_origin_descriptor=None, lean_locator=None,
+                           origin_payload_validator=None, activate_default=False,
+                           activation_factory=None, runtime_loader=None):
+    """Create an immutable observation and optionally install its active copy."""
+    if type(activate_default) is not bool:
+        raise ValueError("Activation selection must be a literal Boolean")
+    options = dict(checker=checker, census=census, incremental=incremental,
+                   public_origin_descriptor=public_origin_descriptor, lean_locator=lean_locator,
+                   origin_payload_validator=origin_payload_validator, runtime_loader=runtime_loader)
+    if activate_default:
+        with (activation_factory or CurrentDefaultActivation)(Path(root).absolute(), checker) as activation:
+            return _observe_current_inputs(root, output, activation=activation, **options)
+    return _observe_current_inputs(root, output, activation=None, **options)
+
+
+def _observe_current_inputs(root, output, *, checker, census, incremental,
+                            public_origin_descriptor, lean_locator,
+                            origin_payload_validator, activation, runtime_loader):
+    """Recheck every stable read before creating one observation-only output.
+
+    This is a bounded before/after observation, not filesystem confinement or an
+    atomic snapshot of a hostile host. Actual CLI invocation awaits coordinated
+    freeze. Tests replace process/location and write-to-real-state routes.
+    """
+    root, output = Path(root).absolute(), Path(output).absolute()
+    output_relative = output.relative_to(root).as_posix()
+    if output == root / ACTIVE_DEFAULT:
+        raise ValueError("Versioned output cannot be the mutable active default")
+    if output.exists() or output.is_symlink():
+        raise ValueError("Refusing existing input contract; choose a new versioned --output path")
+    observations = {}
+
+    def remember(observed):
+        previous = observations.get(observed.path)
+        if previous is not None and observed != previous:
+            raise ValueError("Concurrent input changed during observation: " + str(observed.path))
+        observations[observed.path] = observed
+        return observed.data
+
+    def read(name):
+        return remember(checker.read_regular(root, name))
+
+    def read_absolute(path):
+        return remember(checker.stable_read(Path(path)))
+
+    modules, active = {}, set()
+
+    def visit(module):
+        if module in modules:
+            return
+        if module in active:
+            raise ValueError("Project import cycle: " + module)
+        active.add(module)
+        relative = module.replace(".", "/") + ".lean"
+        data = read(relative)
+        imports = checker.imports(data.decode())
+        for name in imports:
+            if name == "GRWTSK" or name.startswith("GRWTSK."):
+                visit(name)
+        active.remove(module)
+        modules[module] = {"path": relative, "sha256": sha(data), "imports": imports}
+
+    visit(AUDIT)
+    visit(AGGREGATOR)
+    source_dirs = {root / Path(row["path"]).parent for row in modules.values()}
+    names = {path.relative_to(root).as_posix() for path in checker.source_assets(
+        source_dirs, umbrella_root=root if "GRWTSK" in modules else None)}
+    names.update({
+        ".noeaaeue/scripts/check_moebius_response.py", ".noeaaeue/scripts/moebius_owner_census.py",
+        ".noeaaeue/scripts/moebius_response_inputs.py", ".noeaaeue/scripts/check_math_layout.py",
+        ".noeaaeue/scripts/repository_paths.py", ".noeaaeue/scripts/source_observations.py",
+        ".noeaaeue/bindings/current-source-observations.json", census.CURRENT_PROFILE_RELATIVE,
+        "lean-toolchain", "lakefile.toml", "lake-manifest.json",
+    })
+    # Required in legacy mode too: these bytes determine the observed runtime.
+    names.update(RUNTIME_SOURCES)
+    public_origin, origin_raw = None, None
+    if public_origin_descriptor is not None:
+        if incremental is not True:
+            raise ValueError("A public candidate requires explicit incremental mode")
+        public_origin = _public_identity(decoded(read_absolute(public_origin_descriptor)))
+        origin_raw = read_absolute(Path(public_origin["path"]))
+    if incremental is True:
+        names.update(checker.INCREMENTAL_ASSETS)
+        if public_origin is not None:
+            names.update(checker.PUBLIC_COMPILATION_ASSETS)
+    assets = {name: sha(read(name)) for name in sorted(names)}
+    runtime = (runtime_loader or _load_runtime_helpers)(
+        root, {name: read(name) for name in RUNTIME_SOURCES})
+    if sha(read(census.HELPER_RELATIVE)) != census.HELPER_SHA256:
+        raise ValueError("Current operational observer pin differs")
+    lock = decoded(read("lake-manifest.json"))
+    pins = {row["name"]: row["rev"] for row in lock["packages"]}
+    anchor = "mathlib/.lake/build/lib/lean/Mathlib.olean"
+    anchor_raw = read_absolute(root / ".lake/packages" / anchor)
+    qualification_raw = read(QUALIFICATION)
+    qualification = decoded(qualification_raw)
+    if (qualification["status"] != "CURRENT_SCOPED_PROFILE_QUALIFIED"
+            or qualification["profile_sha256"] != census.GENERATED_PARTIAL_PROFILE_SHA256
+            or qualification["helper_sha256"] != census.HELPER_SHA256):
+        raise ValueError("Current scoped profile qualification is absent or different")
+    if sha(read(census.CURRENT_PROFILE_RELATIVE)) != qualification["profile_metadata_sha256"]:
+        raise ValueError("Qualified profile metadata bytes differ")
+    for owner, expected in qualification["source_hashes"].items():
+        if sha(read(owner.replace(".", "/") + ".lean")) != expected:
+            raise ValueError("Profile source changed after qualification: " + owner)
+    qualified_raw = read(qualification["receipt"])
+    if sha(qualified_raw) != qualification["receipt_sha256"]:
+        raise ValueError("Scoped qualification receipt bytes differ")
+    qualified = decoded(qualified_raw)
+    lean = (lean_locator or _locate_lean)(root)
+    binary = read_absolute(lean)
+    if sha(binary) != qualified["lean_binary_sha256"]:
+        raise ValueError("Compiler bytes differ from scoped current qualification")
+    runtime_identity = runtime.compiler_runtime_identity(lean)
+    runtime_digest = runtime.compiler_runtime_digest(runtime_identity)
+    if (type(runtime_identity) is not dict or type(runtime_digest) is not str
+            or not re.fullmatch(r"[0-9a-f]{64}", runtime_digest)
+            or runtime_identity.get("schema") != "lean-compiler-runtime-v1"
+            or runtime_digest != sha((json.dumps(runtime_identity, sort_keys=True,
+                separators=(",", ":"), ensure_ascii=True, allow_nan=False) + "\n").encode())
+            or runtime_identity.get("executable") != {
+                "path": str(Path(lean).absolute()), "sha256": sha(binary), "bytes": len(binary)}
+            or type(runtime_identity.get("objects")) is not dict
+            or runtime_identity["objects"].get(str(Path(lean).absolute())) != {
+                "sha256": sha(binary), "bytes": len(binary)}):
+        raise ValueError("Static compiler runtime identity is malformed")
+    for path, expected in runtime_identity["objects"].items():
+        if (type(path) is not str or not Path(path).is_absolute() or ".." in Path(path).parts
+                or type(expected) is not dict or set(expected) != {"sha256", "bytes"}
+                or type(expected["bytes"]) is not int or expected["bytes"] < 1):
+            raise ValueError("Static compiler runtime object identity is malformed")
+        data = read_absolute(Path(path))
+        if {"sha256": sha(data), "bytes": len(data)} != expected:
+            raise ValueError("Compiler runtime object differs: " + path)
+    binding = build_incremental_binding(
+        checker, assets, enabled=incremental, public_origin=public_origin,
+        origin_bytes=origin_raw,
+        origin_payload_validator=origin_payload_validator or runtime._origin_payload,
+        compiler_runtime_identity=runtime_identity, compiler_runtime_sha256=runtime_digest)
+    historical = ".noeaaeue/evidence/moebius-response-sources.json"
+    contract = {
+        "schema_version": 1, "modules": dict(sorted(modules.items())),
+        "audit_module": AUDIT, "aggregator_module": AGGREGATOR, "assets": assets,
+        "lean_version": qualified["lean_version"], "lean_sha256": sha(binary),
+        "compiler_runtime_identity": runtime_identity,
+        "compiler_runtime_sha256": runtime_digest,
+        "package_anchors": [{"path": anchor, "sha256": sha(anchor_raw)}],
+        "owner_census": {
+            "helper_module": census.HELPER_MODULE,
+            "parser_asset": ".noeaaeue/scripts/moebius_owner_census.py",
+            "runtime_exceptions_allowed": True,
+            "helper": {"path": census.HELPER_RELATIVE, "sha256": census.HELPER_SHA256,
+                       "imports": ["Lean"]},
+            "runtime_exception_policy": census.generated_partial_profile_descriptor(),
+        },
+        "dependency_revisions": pins, "dependency_lock_sha256": sha(read("lake-manifest.json")),
+        "generation_status": "CURRENT_INPUT_OBSERVATION_NOT_FULL_REPLAY_ACCEPTANCE",
+        "kernel_checked": False,
+        "generation_scope": "Exact current input/source graph observation. Only the separately referenced five-module runtime-profile scope is freshly qualified. This complete manifested application/library closure has not been freshly replayed by this metadata record.",
+        "historical_manifest": {"path": historical, "sha256": sha(read(historical)),
+                                "status": "historical-stale-preserved; no hashes or acceptance rewritten"},
+        "current_scoped_profile_qualification": {
+            "path": QUALIFICATION, "sha256": sha(qualification_raw),
+            "scope": qualification["scope"], "library_wide_admission": False,
+        },
+    }
+    if binding is not None:
+        contract["incremental_validation"] = binding
+    encoded = (json.dumps(contract, indent=2) + "\n").encode()
+    # Includes exact helper closure, linked runtime bytes, qualification+receipt,
+    # anchor, compiler, and optional descriptor/origin. Static resolution reruns
+    # also bind absent/shadow candidates, inventory and loader environment.
+    def recheck():
+        runtime.assert_compiler_runtime_unchanged(lean, runtime_identity)
+        for previous in observations.values():
+            if checker.stable_read(previous.path) != previous:
+                raise ValueError("Concurrent observation collision: " + str(previous.path))
+
+    recheck()
+    checker.write_exclusive(output, encoded, readonly=True)
+    created = checker.stable_read(output)
+    if created.data != encoded:
+        raise ValueError("Created observation differs from the exact output bytes")
+    remember(created)
+    recheck()
+    report = {"schema": "current-moebius-contract-observation-v3", "path": output_relative,
+              "sha256": sha(encoded), "module_count": len(modules), "asset_count": len(assets),
+              "status": contract["generation_status"], "kernel_checked": False}
+    if activation is not None:
+        report["active_default"] = activation.publish(contract, encoded, recheck)
+    return report
+
+
+def main(argv=None):
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--output", type=Path)
+    parser.add_argument("--incremental", action="store_true", default=True,
+                        help="Successor observations enable incremental validation by default; replay --cold explicitly in the validator")
+    parser.add_argument("--public-compilation-origin", type=Path,
+                        help="Explicit root-approved four-key terminal origin descriptor")
+    parser.add_argument("--activate-default", action="store_true",
+                        help="Also activate an explicit --output; ordinary invocation activates its new version")
+    parser.add_argument("--lean-binary", type=Path,
+                        help="Read this already qualified compiler's bytes without any location/version process")
+    args = parser.parse_args(argv)
+    # Production imports and the external location query never run at import.
+    sys.path.insert(0, str(ROOT / ".noeaaeue/scripts"))
+    import check_moebius_response as checker
+    import moebius_owner_census as census
+    if checker.DEFAULT_CURRENT_MANIFEST != ACTIVE_DEFAULT:
+        raise ValueError("Driver default differs from the coordinated active full-contract path")
+    output = args.output or ROOT / ".noeaaeue/bindings" / (
+        "moebius-current-inputs-observation-" + datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+        + "-" + uuid.uuid4().hex + ".json")
+    report = observe_current_inputs(
+        ROOT, output, checker=checker, census=census, incremental=args.incremental,
+        public_origin_descriptor=args.public_compilation_origin,
+        lean_locator=None if args.lean_binary is None else lambda _: args.lean_binary,
+        activate_default=args.activate_default or args.output is None)
+    print(json.dumps(report))
+
+
+if __name__ == "__main__":
+    main()

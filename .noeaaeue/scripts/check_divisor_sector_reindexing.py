@@ -19,6 +19,9 @@ import time
 import uuid
 
 
+from selected_incremental import (SelectedReplayCache, SelectedCompilerDiscovery,
+                                  freeze_incremental_policy)
+
 ROOT = Path(__file__).resolve().parents[2]
 STANDARD_AXIOMS = {"propext", "Classical.choice", "Quot.sound"}
 CHECKER = ".noeaaeue/scripts/check_divisor_sector_reindexing.py"
@@ -59,13 +62,19 @@ def sha(data):
     return hashlib.sha256(data).hexdigest()
 
 
+_compiler_discovery = SelectedCompilerDiscovery()
+
+
 def command(*args):
-    return subprocess.check_output(args, cwd=ROOT, text=True).strip()
+    return _compiler_discovery.command(args, cwd=ROOT)
 
 
 def main():
+    _compiler_discovery.reset()
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--receipt", help="absent repository-relative durable JSON destination")
+    parser.add_argument("--cold", action="store_true",
+                        help="recompile and revalidate every selected module without cache reuse")
     args = parser.parse_args()
     destination = None
     if args.receipt:
@@ -98,10 +107,11 @@ def main():
         if jobs:
             print(json.dumps({"outcome": "deferred", "competing_jobs": jobs}), flush=True)
             return 2
-        return replay(guard, destination)
+        return replay(guard, destination, cold=args.cold)
 
 
-def replay(guard, destination):
+def replay(guard, destination, cold=False):
+    _compiler_discovery.reset()
     require(guard.ALLOWED_AXIOMS == STANDARD_AXIOMS, "standard-three axiom policy mismatch")
     base = ROOT / ".noeaaeue/.local/divisor-sector-reindexing-replay"
     require(subprocess.run(["git", "check-ignore", "-q", "--", str(base)],
@@ -122,7 +132,7 @@ def replay(guard, destination):
         "scope": (
             "Only the exact finite divisor-sector reindexing modules, frozen abc target definitions, "
             "and complete local import closure required by the selected roots and controls are "
-            "freshly elaborated from immutable source copies. Positive consumers and intended "
+            "validated from immutable source copies with explicit fresh or cached compilation provenance. Positive consumers and intended "
             "type-rejection controls are checked separately. Every owned library declaration "
             "and transitive axiom in that closure is audited. Positive divisors, the floor "
             "cutoff N / d, the additive cutoff x + y, all scaled weight coordinates and "
@@ -199,6 +209,7 @@ def replay(guard, destination):
         source, build = run / "source", run / "build"
         guard.make_directory(source, exclusive=True)
         guard.make_directory(build, exclusive=True)
+        freeze_incremental_policy(guard, ROOT, frozen_bytes)
         for rel, body in frozen_bytes.items():
             guard.write_bytes(source / rel, body, exclusive=True, readonly=True)
         paths, removed = guard.dependency_search_path(
@@ -241,6 +252,10 @@ def replay(guard, destination):
                 require(sha(guard.read_source(source, "SelectedAudit.lean"))
                         == receipt["audit_wrapper_sha256"], "audit wrapper drift")
 
+        incremental = SelectedReplayCache(
+            ROOT, guard, source, build, frozen_bytes, paths, lean, receipt, cold=cold,
+        runtime_guard=_compiler_discovery.require_guard(lean))
+
         def compile_source(rel, output=False, expected=None):
             stable()
             argv = [lean, "-j1", "--trust=0", "--memory=4096", "-DwarningAsError=true",
@@ -254,8 +269,7 @@ def replay(guard, destination):
             argv.append(str(source / rel))
             started = time.monotonic()
             try:
-                process = subprocess.run(argv, cwd=source, env=env, capture_output=True,
-                                         text=True, timeout=600)
+                process = incremental.run(rel, argv=argv, cwd=source, env=env, output=output, expected=expected, timeout=600)
                 diagnostic = process.stdout + process.stderr
                 exit_code = process.returncode
             except subprocess.TimeoutExpired as error:
@@ -269,6 +283,7 @@ def replay(guard, destination):
                 "seconds": time.monotonic() - started, "output_sha256": sha(diagnostic.encode()),
                 "expected_rejection": expected is not None,
             })
+            incremental.annotate_result(receipt["results"][-1])
             save()
             errors = guard.error_messages(diagnostic)
             if expected is None:
@@ -321,6 +336,7 @@ def replay(guard, destination):
         for rel, expected in NEGATIVE:
             compile_source(rel, expected=expected)
         stable()
+        incremental.accept()
         receipt["outcome"] = "passed"
         receipt["mathematical_outcomes"] = ["PARTIAL_ABC_RESULT_CHECKED"]
         receipt["positive_consumers_passed"] = len(POSITIVE)
@@ -332,6 +348,8 @@ def replay(guard, destination):
                           "receipt": str(destination or run / "receipt.json")}), flush=True)
         return 0
     except Exception as error:
+        if "incremental" in locals():
+            incremental.close()
         receipt["outcome"], receipt["failure"] = "failed", str(error)
         save()
         raise

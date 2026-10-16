@@ -1,0 +1,11 @@
+{
+  "compiler_runtime_sha256": "c48f0fb338d4947e55e4f3974e49b7d1d4a12ad0ac0a783355a135d7bda01f7d",
+  "exit_code": 0,
+  "log": {
+    "bytes": 209,
+    "path": "/Users/local/Desktop/math/.noeaaeue/receipts/reference-jacobi-integration-20261016T120629Z-e54c33fc0d10/documentation-five-gates-20261016T190938Z-2809477b628e/05-tests-optimized.log",
+    "sha256": "011e65ce52d2382dc4959be5d6f74bd48aeb6e7bf1e4d24cb3bd9bb1510c1fab"
+  },
+  "name": "05-tests-optimized",
+  "seconds": 1.6436326669645496
+}
