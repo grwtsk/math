@@ -1,0 +1,142 @@
+{
+  "schema": "primary-source-snapshot-manifest-v1",
+  "at": "2026-10-16T05:39:04.804002+00:00",
+  "sources": [
+    {
+      "url": "https://arxiv.org/abs/2012.05675v2",
+      "final_url": "https://arxiv.org/abs/2012.05675v2",
+      "path": ".noeaaeue/.local/arxiv-cubic-source-scout/da510209451440cb9bd3c34fb87360ac/2012.05675v2-abs.html",
+      "sha256": "c5e8d5d9a32e78ada9fe7675fac8fb8ec1aece1a683d4767c97f619a4ff7a619",
+      "bytes": 40212,
+      "content_type": null,
+      "status": "retrieved"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2012.05675v2",
+      "final_url": "https://arxiv.org/pdf/2012.05675v2",
+      "path": ".noeaaeue/.local/arxiv-cubic-source-scout/da510209451440cb9bd3c34fb87360ac/2012.05675v2.pdf",
+      "sha256": "b16deab4b1d3aff9f9de0d7e7e8330cdd1d94707ef388df823de2983355bd6b2",
+      "bytes": 316572,
+      "content_type": null,
+      "status": "retrieved"
+    },
+    {
+      "url": "https://arxiv.org/src/2012.05675v2",
+      "final_url": "https://arxiv.org/src/2012.05675v2",
+      "path": ".noeaaeue/.local/arxiv-cubic-source-scout/da510209451440cb9bd3c34fb87360ac/2012.05675v2-source.bin",
+      "sha256": "78988bb36c32809bc443babc2162a22d783183a262414f432e8cdb935f61c4b4",
+      "bytes": 26484,
+      "content_type": null,
+      "status": "retrieved"
+    },
+    {
+      "url": "https://arxiv.org/abs/2407.03559v3",
+      "final_url": "https://arxiv.org/abs/2407.03559v3",
+      "path": ".noeaaeue/.local/arxiv-cubic-source-scout/da510209451440cb9bd3c34fb87360ac/2407.03559v3-abs.html",
+      "sha256": "2e6524a3f73585baba1a0f87b7c09c17f363f832d2661f25157de81c0f1bb0a0",
+      "bytes": 42014,
+      "content_type": null,
+      "status": "retrieved"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2407.03559v3",
+      "final_url": "https://arxiv.org/pdf/2407.03559v3",
+      "path": ".noeaaeue/.local/arxiv-cubic-source-scout/da510209451440cb9bd3c34fb87360ac/2407.03559v3.pdf",
+      "sha256": "16340a3a74b207e75e40db338ad9df35ef71d5f9088b4c2d9d824cd4f72e5847",
+      "bytes": 519801,
+      "content_type": null,
+      "status": "retrieved"
+    },
+    {
+      "url": "https://arxiv.org/src/2407.03559v3",
+      "final_url": "https://arxiv.org/src/2407.03559v3",
+      "path": ".noeaaeue/.local/arxiv-cubic-source-scout/da510209451440cb9bd3c34fb87360ac/2407.03559v3-source.bin",
+      "sha256": "d54f0b72b36bb872f605af7ebcabe1f7405e839b28f4f693a7c51dde3cba971c",
+      "bytes": 52873,
+      "content_type": null,
+      "status": "retrieved"
+    },
+    {
+      "url": "https://arxiv.org/abs/1412.6894v5",
+      "final_url": "https://arxiv.org/abs/1412.6894v5",
+      "path": ".noeaaeue/.local/arxiv-cubic-source-scout/da510209451440cb9bd3c34fb87360ac/1412.6894v5-abs.html",
+      "sha256": "ba30bd048d57bbbc31d69b307a13781d6c500d43e4231400a9c6fa1c9d27a8e1",
+      "bytes": 41209,
+      "content_type": null,
+      "status": "retrieved"
+    },
+    {
+      "url": "https://arxiv.org/pdf/1412.6894v5",
+      "final_url": "https://arxiv.org/pdf/1412.6894v5",
+      "path": ".noeaaeue/.local/arxiv-cubic-source-scout/da510209451440cb9bd3c34fb87360ac/1412.6894v5.pdf",
+      "sha256": "99d447dc3dffa5abeb788604f59f94a728e449f833028024bd130bbfc25d3dc0",
+      "bytes": 342857,
+      "content_type": null,
+      "status": "retrieved"
+    },
+    {
+      "url": "https://arxiv.org/src/1412.6894v5",
+      "final_url": "https://arxiv.org/src/1412.6894v5",
+      "path": ".noeaaeue/.local/arxiv-cubic-source-scout/da510209451440cb9bd3c34fb87360ac/1412.6894v5-source.bin",
+      "sha256": "dcdfc05117a0a4847d06461161c12b454eafe4899ad1fc1206d7e0049331a67b",
+      "bytes": 31234,
+      "content_type": null,
+      "status": "retrieved"
+    }
+  ],
+  "selected_tex_members": {
+    "2012.05675v2": {
+      "path": ".noeaaeue/.local/arxiv-cubic-source-scout/da510209451440cb9bd3c34fb87360ac/2012.05675v2-source--cubicspin7.tex",
+      "sha256": "ea44196ba79053b57372d7218d7879088ecb6db45cc9506ab0d62c9fc6742250",
+      "bytes": 81351
+    },
+    "2407.03559v3": {
+      "path": ".noeaaeue/.local/arxiv-cubic-source-scout/da510209451440cb9bd3c34fb87360ac/2407.03559v3-source--main.tex",
+      "sha256": "12420611ce0ce105e7ba6a0aaf816f492aa1cf06aa92c3abe79799b7af16936a",
+      "bytes": 205828
+    },
+    "1412.6894v5": {
+      "path": ".noeaaeue/.local/arxiv-cubic-source-scout/da510209451440cb9bd3c34fb87360ac/1412.6894v5-source.tex",
+      "sha256": "86c49fb8c367f6a46d1d1f71d63b8f7cc6ac9467d8b9af8171ecf042c32363cb",
+      "bytes": 119941
+    }
+  },
+  "repository_inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "bbf801a3b7f73c61c10c723abbe78313e53cbb8755b2ee3df9931552e5efbd6d",
+      "bytes": 196
+    },
+    {
+      "path": ".noeaaeue/AGENTS.md",
+      "sha256": "49ece1eb15c7d2099a24719d6ae477e5022dd8b132708abddf039cf481e5a20d",
+      "bytes": 6624
+    },
+    {
+      "path": ".noeaaeue/documentation/current-validation-workflow.md",
+      "sha256": "a058aad62178eca8caa5fae1cffb80fcc016c151e22db2489f685e811a5fecdc",
+      "bytes": 6470
+    },
+    {
+      "path": ".noeaaeue/cache/research/schedule-reduction-relocated-frontier-2026-10-15.json",
+      "sha256": "19dde4816877eaed80c0d6ba3db930d5351b0bbbb533d5b134f25ee6e79af81f",
+      "bytes": 10096
+    },
+    {
+      "path": ".noeaaeue/cache/research/cubic-unit-suppliers-2026-10-15/supplier-review.json",
+      "sha256": "aaa5784657b2c935a39c2623bc073d218260418de464f6b863bfe70ddfd67df4",
+      "bytes": 10763
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicReduction.lean",
+      "sha256": "05a44d8f4c4b254cf27e9df2a3b8f83081d9cb6288808e0be1d2694a81a2f3b6",
+      "bytes": 6337
+    },
+    {
+      "path": ".noeaaeue/.local/heartbeat-cubic-suppliers/9283452f97a04ba49016910177cb36a4/OpenAI-FiniteFourier.lean",
+      "sha256": "0e8e4184de91161a75802e3a26abfd19a322dffa6441968bf9caeb25800b5d7c",
+      "bytes": 59918
+    }
+  ],
+  "scope": "Exact downloaded primary version bytes. Source snapshots are ignored research input, not proof admission or code-license transfer."
+}

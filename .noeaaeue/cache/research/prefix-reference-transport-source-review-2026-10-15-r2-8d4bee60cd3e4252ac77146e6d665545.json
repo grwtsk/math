@@ -1,0 +1,144 @@
+{
+  "schema": "bounded-mathematical-source-review-v1",
+  "at": "2026-10-16T05:44:33.984273+00:00",
+  "owner": "indexed_dictionary",
+  "source_bindings": [
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableReferenceTransport.lean",
+      "sha256": "2302b34fbc79f1030846c2d0aa2eca77ebcf724cad08b76975727557af660cf5",
+      "bytes": 10540,
+      "reviewed_snapshot": ".noeaaeue/.local/reference-transport-source-review/8d4bee60cd3e4252ac77146e6d665545/GRWTSK/Combinatorics/DirectedGraph/PrefixTableReferenceTransport.lean"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableReferenceTransport.lean",
+      "sha256": "31de9aff2b78391f72de8e8d06455318858185b798f8baabf7148a68c3b0e36e",
+      "bytes": 7766,
+      "reviewed_snapshot": ".noeaaeue/.local/reference-transport-source-review/8d4bee60cd3e4252ac77146e6d665545/GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableReferenceTransport.lean"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixReferenceMissingSupport.lean",
+      "sha256": "a81f4b50114fcd35951a8ed8ee1ccf0a706bc26b3a73d6935d83f8867b826f2c",
+      "bytes": 530,
+      "reviewed_snapshot": ".noeaaeue/.local/reference-transport-source-review/8d4bee60cd3e4252ac77146e6d665545/GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixReferenceMissingSupport.lean"
+    }
+  ],
+  "status": "CORRELATED_READ_ONLY_SOURCE_REVIEW_NATIVE_PENDING",
+  "correction": {
+    "superseded_documentation_candidate": {
+      "path": ".noeaaeue/cache/research/prefix-reference-transport-documentation-candidate-2026-10-15-87edd6ce1c3f44f986867dec13155fb7.json",
+      "sha256": "14385fafbfbe99db69cde9c80293b8f13026d2c3e06a33a9f082abaa0994ea70",
+      "bytes": 11561
+    },
+    "superseded_source_review": {
+      "path": ".noeaaeue/cache/research/prefix-reference-transport-source-review-2026-10-15-87edd6ce1c3f44f986867dec13155fb7.json",
+      "sha256": "4e4d42cb771ef10f13e3e8df4a2e964e0e01b772914c4d9f3b1dabdd4f7f5ed3",
+      "bytes": 8131
+    },
+    "superseded_event": {
+      "path": ".noeaaeue/cache/coordination/events/20261016T054318Z-reference-transport-review-87edd6ce1c3f44f986867dec13155fb7.json",
+      "sha256": "bc717d34fca7932db07a853248a456d17691a088235aeaf55970e711d887319e",
+      "bytes": 2307
+    },
+    "reason": "The first record retained the earlier order-control recommendation after root had added the distinct-key fixture, and used a same-basename ignored snapshot destination for library/positive. No formal source or native receipt was changed. Preserve all prior artifacts as superseded; this record binds re-read controls and separate full-relative-path snapshots."
+  },
+  "findings": [],
+  "resolved_review_recommendations": [
+    {
+      "id": "observable-original-order-control",
+      "resolution": "Read actual ordered/ordered_wellFormed/orderedInitial/actual_distinct_key_order. The31,17,31,19 fixture now makes positional order and repeated-key multiplicity observable, deriving actual WF and target bounds rather than assuming transport success."
+    },
+    {
+      "id": "positive-only-selected-dependency",
+      "resolution": "Read prepared driver source: after visiting library, it recursively visits POSITIVE project imports and appends positive_order. Actual native compilation/full owned census remains pending."
+    }
+  ],
+  "proof_statement_review": "No concrete mathematical statement or premise overclaim found. Actual state-dependent Option-bind fold gives None absorption; original support derives Some, final reference membership and full dictionary lookup. Actual mapM and Forall₂ preserve original positional rows and repeats without a claimed generic prefix embedding. Read-only correlated review cannot establish elaboration or axiom status.",
+  "registration_proposal": {
+    "status": "PROPOSED_ONLY_NO_INSTALL",
+    "registry_preimages": [
+      {
+        "path": ".noeaaeue/documentation/math-layout.json",
+        "sha256": "db630d2d28c32af4333c18c729e6cc414af916c87c75661c29b3c90d4eaae98d",
+        "bytes": 3233469
+      },
+      {
+        "path": "docs/reference/math-source-catalog.json",
+        "sha256": "5c4eb372f2c910c1ae42e3b2168e5ae1672a7e9aeacc10d0a11916c17c4fbfcd",
+        "bytes": 3392546
+      },
+      {
+        "path": ".noeaaeue/documentation/reference/documentation-layout.json",
+        "sha256": "5d30c725d28d9a5ea877407ac36a62f7594c5193de4af2dc7dad6415ee36f1ff",
+        "bytes": 199941
+      },
+      {
+        "path": "docs/reference/object-source-bindings.json",
+        "sha256": "b3d34b9b504bf7199c15205132d962342c71cb2b1f51692b218e68346431fe12",
+        "bytes": 21663
+      }
+    ],
+    "current_counts": {
+      "active_source_rows": 773,
+      "catalog_source_rows": 773,
+      "guide_page_rows": 178,
+      "binding_primary_sources": 138
+    },
+    "add_source_paths": [
+      "GRWTSK/Combinatorics/DirectedGraph/PrefixTableReferenceTransport.lean",
+      "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableReferenceTransport.lean",
+      "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixReferenceMissingSupport.lean"
+    ],
+    "add_control_sources": {
+      "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableReferenceTransport.lean": "31de9aff2b78391f72de8e8d06455318858185b798f8baabf7148a68c3b0e36e",
+      "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixReferenceMissingSupport.lean": "a81f4b50114fcd35951a8ed8ee1ccf0a706bc26b3a73d6935d83f8867b826f2c"
+    },
+    "public_inventory_import": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableReferenceTransport",
+    "umbrella_native_status": "NOT_REPLAYED by inventory addition; preserve existing verification and source history",
+    "reverse_consumer_unions": {
+      "GRWTSK.Combinatorics.DirectedGraph.PrefixTableSchedule": [
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableReferenceTransport"
+      ],
+      "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableSchedule": [
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableReferenceTransport"
+      ],
+      "GRWTSK.Combinatorics.DirectedGraph.PrefixTableReferenceTransport": [
+        "GRWTSK",
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableReferenceTransport"
+      ],
+      "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableReferenceTransport": [
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.PrefixReferenceMissingSupport"
+      ]
+    },
+    "object_binding_union": {
+      "Combinatorics/DirectedGraph": [
+        "GRWTSK/Combinatorics/DirectedGraph/PrefixTableReferenceTransport.lean"
+      ]
+    },
+    "subject_placement_additions": {
+      "GRWTSK/Combinatorics/DirectedGraph/PrefixTableReferenceTransport.lean": "Combinatorics"
+    },
+    "new_page_binding": {
+      "path": "docs/mathematics/Combinatorics/DirectedGraph/prefix-reference-transport.md",
+      "title": "Transport of original references through finite prefix-table schedules",
+      "subject": "Combinatorics",
+      "object": "DirectedGraph",
+      "primary_source": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableReferenceTransport.lean",
+      "source_sha256": "2302b34fbc79f1030846c2d0aa2eca77ebcf724cad08b76975727557af660cf5",
+      "status": "PENDING_NATIVE_SUCCESS_DO_NOT_INSTALL_AS_FRESH",
+      "evidence": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-reference-transport-checks-2026-10-15.json"
+    },
+    "new_page_absent_at_review": true,
+    "selected_sources_absent_from_active_rows": true,
+    "source_placement": "Existing Combinatorics/DirectedGraph namespace; no new path/state type or campaign umbrella. Generic sequence APIs remain imported, not duplicated as a new helper library.",
+    "checkpoint_rule": "Re-read current registries under agreed quiet checkpoint, archive exact preimages and CAS every write; union only new consumers/rows. Preserve historical source_count/source_hashes, prior source statuses, all receipts/reconciliation, unrelated observations and all foreign additions. Current counts are observations, not write constants.",
+    "status_rule": "Keep written/source-only documentation while native evidence pending; after supplied success, require receipt.source_hashes for all3 and complete positive dependency closure/audit, then bind exact verified bytes. A new source/import/catalog state requires the current workflow checkpoint, not a historical hash refresh."
+  },
+  "source_placement_and_credit": "Combinatorics/DirectedGraph on existing State/path/schedule objects; local MIT and named imported Lean/Mathlib Apache-2.0 credits retained. No new generic wrapper library or taxonomy change.",
+  "driver_snapshot": {
+    "path": ".noeaaeue/scripts/check_prefix_reference_transport.py",
+    "sha256": "2c608ba97e0f49ffb90b55a5809e18163d4d2321bd13d254061e7f45c9569b52",
+    "bytes": 13489
+  },
+  "native_jobs": "NOT_RUN",
+  "effects": "Only own new create-only source-review/documentation-candidate/event and ignored full-relative-path snapshots. No formal source/shared registry/entrypoint/Git changes."
+}

@@ -1,0 +1,46 @@
+{
+  "schema": "exact-bounded-check-context-v1",
+  "at": "2026-10-16T05:58:44.804987+00:00",
+  "artifacts": [
+    {
+      "original_path": ".noeaaeue/.local/reference-characters-round-2026-10-15/e1888ec405564ff897d51423bb35e786/checks.json",
+      "sha256": "fa55be59e4320e9c55c62de3ed803f51ccb2d35e42dca8ff8dca8e4e66b27ec6",
+      "bytes": 7799,
+      "blob": {
+        "raw_sha256": "fa55be59e4320e9c55c62de3ed803f51ccb2d35e42dca8ff8dca8e4e66b27ec6",
+        "raw_bytes": 7799,
+        "compressed_sha256": "3da59713083b788ef280790e332094507eabf2663bfae29d42866cda6c70f08e",
+        "compressed_bytes": 1736,
+        "compression": "zlib"
+      },
+      "object_path": ".noeaaeue/cache/objects/fa/fa55be59e4320e9c55c62de3ed803f51ccb2d35e42dca8ff8dca8e4e66b27ec6.zlib"
+    },
+    {
+      "original_path": ".noeaaeue/.local/reference-characters-round-2026-10-15/e1888ec405564ff897d51423bb35e786/owned-layout-findings.json",
+      "sha256": "9bf6c6766b1177c9778889df1edc3361f6e820e153b00574d25fe8d5245cc9ab",
+      "bytes": 1915,
+      "blob": {
+        "raw_sha256": "9bf6c6766b1177c9778889df1edc3361f6e820e153b00574d25fe8d5245cc9ab",
+        "raw_bytes": 1915,
+        "compressed_sha256": "aaabbfa1502e77d484b0bd4d8164f74ab887d141ff65681e0bf6c8988cef7a18",
+        "compressed_bytes": 534,
+        "compression": "zlib"
+      },
+      "object_path": ".noeaaeue/cache/objects/9b/9bf6c6766b1177c9778889df1edc3361f6e820e153b00574d25fe8d5245cc9ab.zlib"
+    },
+    {
+      "original_path": ".noeaaeue/.local/reference-characters-round-2026-10-15/e1888ec405564ff897d51423bb35e786/retained-cache-read.json",
+      "sha256": "b21059eb01eb252de8aba7060f4ee08999e4a554a86d2ed78f2e2ec20d19c9c2",
+      "bytes": 2799,
+      "blob": {
+        "raw_sha256": "b21059eb01eb252de8aba7060f4ee08999e4a554a86d2ed78f2e2ec20d19c9c2",
+        "raw_bytes": 2799,
+        "compressed_sha256": "d03060ab9873f92c892f50e2b0d8e1a65bab2a8f3a4f27c3a61871d9b0ae954f",
+        "compressed_bytes": 873,
+        "compression": "zlib"
+      },
+      "object_path": ".noeaaeue/cache/objects/b2/b21059eb01eb252de8aba7060f4ee08999e4a554a86d2ed78f2e2ec20d19c9c2.zlib"
+    }
+  ],
+  "scope": "Native proof evidence separate. Global documentation/layout failures preserved and canonical integration pending; normal/O109 documentation controls and operational driver guards passed."
+}
