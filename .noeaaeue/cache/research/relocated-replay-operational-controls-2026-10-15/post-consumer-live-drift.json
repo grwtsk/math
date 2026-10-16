@@ -1,0 +1,33 @@
+{
+  "revision": "ffc3e070cb7a67f8113ed46d3ec78ad76c1e4e464047034dd323c489240a0b75",
+  "source_count": 825,
+  "changed_sources": [
+    "GRWTSK.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/MomentMissingCoprimality.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/MomentMissingCutoff.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/MomentToABC.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/MomentUnsignedMoebius.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Positive/Moments.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/MomentReindexing.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Moments.lean"
+  ],
+  "invalidated_sources": [
+    "GRWTSK.lean",
+    "GRWTSK/Combinatorics/GraphTheory/UnitDistanceGraph/Moser/Checks/DeclarationAudit.lean",
+    "GRWTSK/Logic/ProofChecking/Checks/FullAnalyticArithmeticKernel.lean",
+    "GRWTSK/Logic/ProofChecking/Checks/MoebiusResponseLibrary.lean",
+    "GRWTSK/Logic/ProofChecking/Checks/OwnedDeclarationAudit.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/MomentMissingCoprimality.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/MomentMissingCutoff.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/MomentToABC.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/MomentUnsignedMoebius.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Positive/Moments.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/MomentReindexing.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Moments.lean"
+  ],
+  "metadata_finding_count": 91,
+  "catalog_drift": true,
+  "context_drift": false,
+  "head_drift": false,
+  "proof_status": "unknown-unreplayed"
+}

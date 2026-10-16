@@ -1,0 +1,54 @@
+{
+  "agent": "cache_adapter",
+  "at": "2026-10-16T01:52:04.348991+00:00",
+  "current_cache_mutation_executed": false,
+  "input_drift": [],
+  "kind": "migrated-cache-isolated-tests-complete",
+  "limits": [
+    "Operational hostile controls only, not Lean/runtime refinement.",
+    "Passing temporary-fixture writer tests does not execute or accept a live writer transaction.",
+    "Original historical manifests and evidence are preserved."
+  ],
+  "mathematical_acceptance": false,
+  "outcome": "PASS",
+  "report": {
+    "path": ".noeaaeue/.local/migrated-cache-tests/962883ca963544e3b6b8960cf897bdc5/verification.json",
+    "sha256": "b2bdc38e7d93a603e14ac4db7e9aeca7f73692910f32a87488bba689c17ce147"
+  },
+  "schema": "repository-agent-event-v1",
+  "scope": "Isolated temporary cache/Git fixture tests and read-only actual taxonomy inputs. No snapshot, CAS, ref advancement or expansion of the current repository cache. No native Lean or Git/index/remote action against the current repository.",
+  "source_changes_executed": false,
+  "tests": [
+    {
+      "count": 23,
+      "exit_code": 0,
+      "script": "test_cache_math-normal"
+    },
+    {
+      "count": 23,
+      "exit_code": 0,
+      "script": "test_cache_math-optimized"
+    },
+    {
+      "count": 21,
+      "exit_code": 0,
+      "script": "test_cache_occurrences-normal"
+    },
+    {
+      "count": 21,
+      "exit_code": 0,
+      "script": "test_cache_occurrences-optimized"
+    },
+    {
+      "count": 19,
+      "exit_code": 0,
+      "script": "test_cache_trace_prefix-normal"
+    },
+    {
+      "count": 19,
+      "exit_code": 0,
+      "script": "test_cache_trace_prefix-optimized"
+    }
+  ],
+  "total_test_executions": 126
+}
