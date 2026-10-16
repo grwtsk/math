@@ -1,0 +1,34 @@
+{
+  "schema": "repository-agent-continuation-v1",
+  "at": "2026-10-16T05:58:44.840883+00:00",
+  "branch": "main",
+  "previous_cursor": {
+    "path": ".noeaaeue/cache/coordination/continuations/2026-10-15-relocated-context.json",
+    "sha256": "e5bf8cc117fee1a3535251d8e3cef0a00a4d297140e1040878ffc3e0a203db1d",
+    "bytes": 2284
+  },
+  "frontier": {
+    "path": ".noeaaeue/cache/research/reference-characters-frontier-2026-10-15.json",
+    "sha256": "b94ba3353f63becb98ac56be39c25679cc8730a1d2381aba3c44b2bf9e53f8eb",
+    "bytes": 15476
+  },
+  "checked_selected_tasks": [
+    "scheduled-original-reference-transport",
+    "actual-cubic-character-unit-extension"
+  ],
+  "pending_integration": {
+    "path": ".noeaaeue/cache/coordination/tasks/reference-character-quiet-integration-request-2026-10-15-4ea0a99660684f5abd69834e9b553643.json",
+    "sha256": "d72b4b1baf7f76c7724164de4597146a48eb9dc9137f663d71d2b5c0e5da6398",
+    "bytes": 67882
+  },
+  "next_task_order": [
+    "quiet-reference-character-integration",
+    "direct-lookup-on-real-support",
+    "actual-cubic-jacobi-primary"
+  ],
+  "current_cache_ref": "55b3a4ef0c05b81558eb8e4a213b056458b043d8b3e2400e990e8c20e77dfad4 retained/stale; no new active source binding inferred",
+  "workflow": "Selected checks during bounded development; one agreed quiet integration owner installs current observations/catalogs/contracts. Never auto-apply prepared metadata against nonmatching preimages.",
+  "heartbeat": "formalize-results-from-openai-math ACTIVE; original15-minute schedule preserved. Stop request pauses it.",
+  "publishing": "Routine nonforce push completed commits and verify remote containment under standing human authorization; never force/delete/protection changes without explicit request.",
+  "original_RH": "OPEN"
+}

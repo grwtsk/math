@@ -1,0 +1,11 @@
+{
+  "schema": "repository-agent-task-v1",
+  "at": "2026-10-16T05:39:04.804002+00:00",
+  "owner": "indexed_dictionary",
+  "authorized_by": "parent root current arithmetic/retention research round",
+  "objective": "Fresh primary arXiv source scout on actual quotient cubic characters, root reduction and sign/modulus-sensitive Jacobi primary normalization; avoid duplicating1902.03483v2",
+  "owned_outputs": "Only uniquely named create-only task/source-review/event metadata and ignored raw snapshots",
+  "forbidden_effects": "No native, formal-source/shared registry/guard/index/ref/remote modifications",
+  "initial_main_head_reported_by_parent": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+  "status": "SOURCE_INSPECTED_NATIVE_NOT_RUN"
+}

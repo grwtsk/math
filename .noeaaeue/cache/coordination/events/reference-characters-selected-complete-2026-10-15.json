@@ -1,0 +1,27 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "reference-characters-bounded-round",
+  "at": "2026-10-16T05:58:44.841270+00:00",
+  "status": "SELECTED_NATIVE_CHECKED_PUBLIC_INTEGRATION_PENDING",
+  "frontier": {
+    "path": ".noeaaeue/cache/research/reference-characters-frontier-2026-10-15.json",
+    "sha256": "b94ba3353f63becb98ac56be39c25679cc8730a1d2381aba3c44b2bf9e53f8eb",
+    "bytes": 15476
+  },
+  "cursor": {
+    "path": ".noeaaeue/cache/coordination/continuations/2026-10-15-reference-characters.json",
+    "sha256": "50a41db50bc600101554a5579e41853b36a2a30177ea29e4eb9d0210873dfdbd",
+    "bytes": 1784
+  },
+  "native_counts": [
+    958,
+    92
+  ],
+  "all_owned_inputs_current_exact_at_recording": true,
+  "shared_source_or_registry_writes_by_root": false,
+  "worktree_prune": "Dryrun and actual stale-metadata prune empty; only live primary checkout/main retained",
+  "local_branches": [
+    "main"
+  ],
+  "remote_branch_delete_or_force_actions": []
+}
