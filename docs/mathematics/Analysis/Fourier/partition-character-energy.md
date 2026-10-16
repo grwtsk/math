@@ -22,11 +22,11 @@ For each nonempty part, the exact norm-square identity sums character difference
 
 `ZModConcentratedFrequencies` closes source Lemma 3.2. For positive `m,t` and nonempty `S`, a global energy of at least `2000t` forces a tail outside the radius `16√(t/m)` interval at every center. Its stronger constant `244` implies the source's constant `200`. The actual concentrated-frequency event retains the source's center witness. No random lower-tail estimate follows just from this deterministic result.
 
-## Dyadic decomposition and remaining concentration
+## Dyadic decomposition and concentration
 
-`FiniteExponentialLayers.sum_exp_neg_le_layers` bounds a finite exponential sum by its low-energy layer and dyadic layer cardinalities. The coverage proof is finite and deterministic. `part_mass_le_log_layers` derives the source cutoff `Nat.log 2 m`; no sufficiently large cutoff is assumed. These results expose the precise expected layer cardinalities that the remaining concentration argument must control. `sum_exp_dyadic_le_two` also proves the universal finite exponential-series bound `2` used in the final summation.
+`FiniteExponentialLayers.sum_exp_neg_le_layers` bounds a finite exponential sum by its low-energy layer and dyadic layer cardinalities. `part_mass_le_log_layers` derives the exact cutoff `Nat.log 2 m`. `sum_exp_dyadic_le_two` supplies the universal finite exponential-series bound `2`.
 
-Theorem 1.3's estimate `1/p + C/(|S|√m)` remains open. Its outstanding inputs are the random-partition lower-tail bounds in source Lemmas 3.1 and 3.3, their conversion to expected layer cardinalities, and the remaining parameter-dependent summation and tail estimates. The deterministic global spectral-cardinality estimate is proved; the random partition layer estimates are still open. No conditional anti-concentration interface is asserted as an unconditional theorem. The [finite subset law guide](subset-sum-laws.md) records the preceding elementary results.
+The [fixed-size anti-concentration theorem](subset-sum-anticoncentration.md) now completes the conditional exposure law, finite hypergeometric tails, source Lemmas 3.1 and 3.3, actual expected layer bounds, and parameter-dependent summation. Its final bound is `1/p + 2²⁴/(|S|√m)` under the original Theorem 1.3 hypotheses. All analytical inputs are proved. Corollary 1.4, nested-chain estimates and the Section 5 event bounds remain open; the [finite subset law guide](subset-sum-laws.md) records these boundaries.
 
 ## Evidence and credit
 

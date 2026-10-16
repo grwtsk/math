@@ -1,0 +1,7 @@
+'PPNC.block_multiplier_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PPNC.rawFourier_translate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PPNC.rawFourier_eq_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PPNC.broad_multiplier_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PPNC.blockMultiplier_signed_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PPNC.zero_frequency_contractive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PPNC.antiphase_singleton_amplifies' depends on axioms: [propext, Classical.choice, Quot.sound]

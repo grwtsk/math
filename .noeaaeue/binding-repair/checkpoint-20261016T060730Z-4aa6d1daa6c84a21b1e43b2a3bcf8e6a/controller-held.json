@@ -1,0 +1,14 @@
+{
+  "schema": "verified-nonnative-controller-boundary-hold-v1",
+  "utc": "2026-10-16T06:14:49.262491+00:00",
+  "parent_pid": 80448,
+  "parent_command": "/opt/homebrew/Cellar/python@3.11/3.11.16/Frameworks/Python.framework/Versions/3.11/Resources/Python.app/Contents/MacOS/Python -B -",
+  "native_child_pid": 82877,
+  "child_command": "/opt/homebrew/Cellar/python@3.11/3.11.16/Frameworks/Python.framework/Versions/3.11/Resources/Python.app/Contents/MacOS/Python -B .noeaaeue/scripts/check_math_trust.py --memory-mib 12288",
+  "action": "SIGSTOP exact non-native parent only; child and descendants unsignaled",
+  "reason": "Hold after current public replay for explicitly requested additional integration before application replay.",
+  "queued_application": "NOT_RUN",
+  "top_level_native_exit_status": null,
+  "observed_parent_state": "Ts",
+  "observed_child_state": "S"
+}

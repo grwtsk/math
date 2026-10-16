@@ -1,0 +1,6 @@
+'PPNCP04.PrimeHarmonicLog.prime_count_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PPNCP04.PrimeHarmonicLog.prime_reciprocal_abel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PPNCP04.PrimeHarmonicLog.prime_harmonic_bound_at_x' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PPNCP04.PrimeHarmonicLog.prime_harmonic_logarithmic_estimate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

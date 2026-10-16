@@ -4,22 +4,22 @@
 
 | Inventory | Count |
 |---|---:|
-| Object guides | 22 |
+| Object guides | 24 |
 | Documented object groups | 2 |
-| Distinct primary sources linked | 21 |
-| Lean source modules | 72 |
+| Distinct primary sources linked | 23 |
+| Lean source modules | 76 |
 | Archive intake records | 0 |
 | Selected catalog families | 1 |
 
 These counts measure documentation and source coverage. They do not count accepted theorems or establish that every source module is documented or checked. [Definitions and limits](../../reference/library-pages.md#count-definitions).
 
-1319 source declaration commands, including 796 theorem/lemma commands, across 72 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+1368 source declaration commands, including 836 theorem/lemma commands, across 76 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
 ## DirectedGraph
 
-18 object guides · 18 distinct linked primary source files.
+19 object guides · 19 distinct linked primary source files.
 
-Linked primary-source scope: 425 source declaration commands, including 291 theorem/lemma commands, across 18 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+Linked primary-source scope: 437 source declaration commands, including 299 theorem/lemma commands, across 19 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
 - [A finite inventory of complete history prefixes](DirectedGraph/prefix-inventory.md).
 - [Certified revision of rooted trace dictionaries](DirectedGraph/rooted-trace-revision.md).
@@ -37,16 +37,18 @@ Linked primary-source scope: 425 source declaration commands, including 291 theo
 - [Role-qualified finite relation tables and typed histories](DirectedGraph/role-relation-table.md).
 - [Stable incremental tables of rooted history prefixes](DirectedGraph/incremental-prefix-table.md).
 - [Stable updates of stored rooted prefix tables](DirectedGraph/prefix-table-state.md).
+- [Transport of original references through finite prefix-table schedules](DirectedGraph/prefix-reference-transport.md).
 - [Typed edge traces of directed paths](DirectedGraph/edge-trace.md).
 - [Unfolding all rooted path occurrences](DirectedGraph/path-unfolding.md).
 
 ## Sequences
 
-4 object guides · 3 distinct linked primary source files.
+5 object guides · 4 distinct linked primary source files.
 
-Linked primary-source scope: 91 source declaration commands, including 58 theorem/lemma commands, across 3 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+Linked primary-source scope: 118 source declaration commands, including 71 theorem/lemma commands, across 4 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
 - [Balanced partitions and uniform subset sampling](Sequences/balanced-partition-sampling.md).
+- [Conditional part exposure and finite sampling tails](Sequences/conditional-partition-exposure.md).
 - [Coverage and discrete quotas](Sequences/coverage-and-quotas.md).
 - [Integer quota allocation and discrepancy](Sequences/quotas.md).
 - [Partial sum ordering and bounded interval repair](Sequences/partial-sum-ordering.md).
