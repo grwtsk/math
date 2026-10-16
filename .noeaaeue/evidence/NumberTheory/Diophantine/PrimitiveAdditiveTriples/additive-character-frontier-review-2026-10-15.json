@@ -1,0 +1,101 @@
+{
+  "schema": "selected-additive-character-frontier-review-v1",
+  "observed_at": "2026-10-16T05:42:14.245467+00:00",
+  "checks": [
+    {
+      "check": "All selected proof/driver input digests remain current",
+      "passed": true
+    },
+    {
+      "check": "Canonical abc source and definition closure unchanged",
+      "passed": true
+    },
+    {
+      "check": "Every route-to-abc edge remains open with no checked entailment",
+      "passed": true
+    },
+    {
+      "check": "Original cursor preserved",
+      "passed": true
+    },
+    {
+      "check": "Original graph preserved",
+      "passed": true
+    },
+    {
+      "check": "Audited declaration exists: GRWTSK.Analysis.Fourier.FiniteAdditiveProjector.characterProjector_eq_indicator_of_noWrap",
+      "passed": true
+    },
+    {
+      "check": "Audited declaration exists: GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.scaled_additive_sum_eq_character_cube",
+      "passed": true
+    },
+    {
+      "check": "Audited declaration exists: GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.projectedJointMoment_eq_frequencyJointMoment",
+      "passed": true
+    },
+    {
+      "check": "Audited declaration exists: GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.typedPrimitiveWeightedMoment_eq_moebius_frequency_sum",
+      "passed": true
+    },
+    {
+      "check": "Audited declaration exists: GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.scaled_additive_sum_eq_character_cube",
+      "passed": true
+    },
+    {
+      "check": "Audited declaration exists: GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.projectedJointMoment_eq_frequencyJointMoment",
+      "passed": true
+    },
+    {
+      "check": "Audited declaration exists: GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.typedPrimitiveWeightedMoment_eq_moebius_frequency_sum",
+      "passed": true
+    },
+    {
+      "check": "No public root imports added for the new selected candidates",
+      "passed": true
+    },
+    {
+      "check": "Registered title and primary source binding: docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/moments.md",
+      "passed": true
+    },
+    {
+      "check": "Local evidence/source links exist: docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/moments.md",
+      "passed": true
+    },
+    {
+      "check": "Registered title and primary source binding: docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/divisor-sectors.md",
+      "passed": true
+    },
+    {
+      "check": "Local evidence/source links exist: docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/divisor-sectors.md",
+      "passed": true
+    },
+    {
+      "check": "Registered title and primary source binding: docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/abc-proof-frontier.md",
+      "passed": true
+    },
+    {
+      "check": "Local evidence/source links exist: docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/abc-proof-frontier.md",
+      "passed": true
+    },
+    {
+      "check": "Registered title and primary source binding: docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-moments.md",
+      "passed": true
+    },
+    {
+      "check": "Local evidence/source links exist: docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-moments.md",
+      "passed": true
+    },
+    {
+      "check": "Scoped prose diff has no whitespace errors",
+      "passed": true
+    }
+  ],
+  "source_receipt": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-checks-2026-10-15.json",
+  "source_receipt_sha256": "265d1eb7bd8ad2adf8fe0d6932f4c2931df5a38f4f7c7bebdfd62de66929574e",
+  "scope": "Bounded frontier/source/guide-link consistency. These checks do not replace Lean proof or global documentation/layout admission.",
+  "global_documentation_admission": false,
+  "repository_admission": false,
+  "abc_proved": false,
+  "overall_status": "OPEN_FRONTIER"
+}
