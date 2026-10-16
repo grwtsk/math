@@ -187,6 +187,7 @@
       "GRWTSK/Combinatorics/DirectedGraph/PathUnfolding.lean",
       "GRWTSK/Combinatorics/DirectedGraph/PrefixInventory.lean",
       "GRWTSK/Combinatorics/DirectedGraph/PrefixTableBatch.lean",
+      "GRWTSK/Combinatorics/DirectedGraph/PrefixTableCheckpoint.lean",
       "GRWTSK/Combinatorics/DirectedGraph/PrefixTableCompaction.lean",
       "GRWTSK/Combinatorics/DirectedGraph/PrefixTableReindex.lean",
       "GRWTSK/Combinatorics/DirectedGraph/PrefixTableState.lean",
@@ -225,6 +226,9 @@
     ],
     "NumberTheory/Ideal": [
       "GRWTSK/NumberTheory/Ideal/CompactNormSupport.lean"
+    ],
+    "NumberTheory/Cyclotomic": [
+      "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicIdeals.lean"
     ]
   }
 }

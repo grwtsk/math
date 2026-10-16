@@ -1,0 +1,163 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "checkpoint-cyclotomic-round",
+  "event": "selected-native-acceptance-and-source-bound-revision-consumers",
+  "at": "2026-10-16T00:55:41.219725+00:00",
+  "selected": [
+    {
+      "source": {
+        "path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableCheckpoint.lean",
+        "sha256": "39347361377ee5f5e8f58091d72652e2458b3eda2c34b74b503d4d1f3b465e03"
+      },
+      "native_receipt": {
+        "path": "evidence/Combinatorics/DirectedGraph/prefix-compaction-checkpoint-checks-2026-10-15.json",
+        "sha256": "e32c92083d46c8c33d562153a854591472a937c3e8b5752c41e9d2ee7e11f6f2"
+      },
+      "owned_declarations_in_selected_closure": 879,
+      "selected_library_owned_count": 14,
+      "owned_modules": [
+        {
+          "declarations": 52,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding"
+        },
+        {
+          "declarations": 18,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences"
+        },
+        {
+          "declarations": 46,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.EdgeTrace"
+        },
+        {
+          "declarations": 21,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix"
+        },
+        {
+          "declarations": 34,
+          "module": "GRWTSK.Logic.FiniteSequences.IndexedDictionary"
+        },
+        {
+          "declarations": 33,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixInventory"
+        },
+        {
+          "declarations": 78,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.ParentTraceDictionary"
+        },
+        {
+          "declarations": 32,
+          "module": "GRWTSK.Logic.FiniteSequences.DictionaryRevision"
+        },
+        {
+          "declarations": 27,
+          "module": "GRWTSK.Logic.FiniteSequences.DecisionCertificate"
+        },
+        {
+          "declarations": 26,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.RootedTraceRevision"
+        },
+        {
+          "declarations": 20,
+          "module": "GRWTSK.Logic.FiniteSequences.IncrementalDictionary"
+        },
+        {
+          "declarations": 58,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.IncrementalPrefixTable"
+        },
+        {
+          "declarations": 87,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableState"
+        },
+        {
+          "declarations": 36,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCompaction"
+        },
+        {
+          "declarations": 85,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.RoleRelationTable"
+        },
+        {
+          "declarations": 60,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.RoleRelationReindex"
+        },
+        {
+          "declarations": 44,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableReindex"
+        },
+        {
+          "declarations": 19,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableUpdateReindex"
+        },
+        {
+          "declarations": 27,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableBatch"
+        },
+        {
+          "declarations": 14,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCheckpoint"
+        },
+        {
+          "declarations": 62,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableCheckpoint"
+        }
+      ],
+      "integration": {
+        "path": "evidence/Combinatorics/DirectedGraph/prefix-compaction-checkpoint-integration-2026-10-15.json",
+        "sha256": "7b106bfe62bbc31148754da70fdef1bee739d0db3cf8017049ab5565a0935dc3"
+      }
+    },
+    {
+      "source": {
+        "path": "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicIdeals.lean",
+        "sha256": "be784982bbbdbfefdb5b1e2906d69e4d18f0ae0408cec7a4805605a6382cda87"
+      },
+      "native_receipt": {
+        "path": "evidence/NumberTheory/Cyclotomic/third-cyclotomic-ideals-checks-2026-10-15.json",
+        "sha256": "0f0c80dc56332b7b869892af65a348fa64fdfa7860d0f6ba6d6a965ecfe81b46"
+      },
+      "owned_declarations_in_selected_closure": 46,
+      "selected_library_owned_count": 13,
+      "owned_modules": [
+        {
+          "declarations": 3,
+          "module": "GRWTSK.NumberTheory.Ideal.CompactNormSupport"
+        },
+        {
+          "declarations": 13,
+          "module": "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicIdeals"
+        },
+        {
+          "declarations": 13,
+          "module": "GRWTSK.Analysis.Calculus.CompactCutoff"
+        },
+        {
+          "declarations": 17,
+          "module": "GRWTSK.NumberTheory.Cyclotomic.Checks.Positive.ThirdCyclotomicIdeals"
+        }
+      ],
+      "integration": {
+        "path": "evidence/NumberTheory/Cyclotomic/third-cyclotomic-ideals-integration-2026-10-15.json",
+        "sha256": "291325d30d0903b6a60e55f69087c5e532951ba9b3c51c2c5796586d9b403f2c"
+      }
+    }
+  ],
+  "cache_revision": "157a0a281700d47fcd2d583cca1a0005c25d80afd8afb3f314faa218f09d993d",
+  "frontier": {
+    "path": "cache/research/checkpoint-cyclotomic-frontier-2026-10-15.json",
+    "sha256": "b20a65cb6f347f7cc61242e922daf6d944d3a3b48a5f7060f44ee52abbe3924e"
+  },
+  "continuation": {
+    "path": "cache/coordination/continuations/2026-10-15-checkpoint-cyclotomic.json",
+    "sha256": "eb8aef53f0f9c1addea0ffc5d92619a9d2f11887331f126210fcaa95d01396e9"
+  },
+  "decision": {
+    "path": "cache/decisions/compaction-checkpoint-state-v1.json",
+    "sha256": "c2623f27d7d236bca5da2271516e8e88818e893aaac91020e1f4946bd8d92629"
+  },
+  "operational_consumer": {
+    "path": "evidence/Combinatorics/DirectedGraph/checkpoint-cyclotomic-prefix-consumer-2026-10-15.json",
+    "sha256": "08251bb79d288963a2dded49b1aadfda3aad447d4f172a96ed32c51a57492347"
+  },
+  "limits": "Exact selected mathematical contracts and bounded operational source custody remain separate; actual-ideal census countedonce. No independent model validation, runtime refinement, complete physical/arithmetic/RH acceptance or remote effect.",
+  "remote_actions": []
+}

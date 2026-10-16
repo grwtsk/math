@@ -27,6 +27,12 @@ and new full typed edge tags. The raw equation does not need the
 initial structural invariant. Semantic decoding adds that invariant. Criteria
 for appended rows remain separate evidence obligations.
 
+The [actual compaction checkpoint](prefix-compaction-checkpoint.md) now inserts
+the existing compactor between two finite batch segments. It preserves the
+retained root and decoded chronological histories. Compaction remaps parent
+and reference slots; old numeric references cannot be carried across as if
+they were stable history identities.
+
 ## Checked boundaries
 
 An actual noncanonical state has children before their parent, repeated real

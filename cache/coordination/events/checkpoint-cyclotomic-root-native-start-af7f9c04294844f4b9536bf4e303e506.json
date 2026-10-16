@@ -1,0 +1,9 @@
+{
+  "schema": "repository-agent-event-v1",
+  "at": "2026-10-16T00:47:03.453512+00:00",
+  "task": "checkpoint-cyclotomic-round",
+  "event": "fresh-selected-native-replay-dispatched",
+  "author_handoff": "Both authors report frozen3, all children exited/shared flock released; no further source/native writes.",
+  "scope": "Root serializes complete selected native import closures and actual positive/counterproof controls, trust0/fatal/all-owned-generated and transitive audit only standard3. Drivers acquire shared flock and check competing jobs. Source reviews and author checks do not substitute acceptance.",
+  "remote_actions": []
+}

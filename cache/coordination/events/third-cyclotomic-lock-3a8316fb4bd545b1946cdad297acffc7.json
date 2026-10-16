@@ -1,0 +1,10 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "third-cyclotomic-ideal-formal",
+  "event": "dev-lock-acquired",
+  "at": "2026-10-16T00:45:30.274775+00:00",
+  "owner": "cache_adapter",
+  "attempt": ".local/third-cyclotomic-ideals/b389d49233c4414babf5ac0e68e04c5a/attempts/Negative-attempt06",
+  "source_sha256": "6105897fcc9ded53261611b0892a941936f0bf86745f1d06343d27c1a045bc74",
+  "competing_jobs": []
+}

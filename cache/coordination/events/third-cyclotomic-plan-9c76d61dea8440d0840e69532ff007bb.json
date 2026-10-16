@@ -1,0 +1,17 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "third-cyclotomic-ideal-formal",
+  "event": "plan",
+  "owner": "cache_adapter",
+  "at": "2026-10-16T00:42:09.788771+00:00",
+  "scratch": ".local/third-cyclotomic-ideals/b389d49233c4414babf5ac0e68e04c5a",
+  "library_imports": [
+    "GRWTSK.NumberTheory.Ideal.CompactNormSupport",
+    "Mathlib.NumberTheory.NumberField.Cyclotomic.Basic"
+  ],
+  "positive_extra_local_imports": [
+    "GRWTSK.Analysis.Calculus.CompactCutoff"
+  ],
+  "scope": "Literal actual K=CyclotomicField3\u211a/O=RingOfIntegersK, actual instances/rank2/norm(span n)=n\u00b2, support specialization and concrete nonzero O ideal consumer; actual norm(span2)=4 vs integer2 counter. Original completed sums/common all-frequency support remain OPEN.",
+  "native_jobs_running": 0
+}

@@ -391,3 +391,5 @@ import GRWTSK.Combinatorics.DirectedGraph.PrefixTableUpdateReindex
 import GRWTSK.Analysis.MellinTransform.GaussianAnnularSeparation
 import GRWTSK.Combinatorics.DirectedGraph.PrefixTableBatch
 import GRWTSK.NumberTheory.Ideal.CompactNormSupport
+import GRWTSK.Combinatorics.DirectedGraph.PrefixTableCheckpoint
+import GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicIdeals

@@ -431,3 +431,21 @@ OpenAI Codex. The theorem retains all explicit algebraic instances and uses
 actual ideal norms, with a concrete integer-ideal consumer. Actual Eisenstein
 ring instantiation, completed sums and RH suppliers remain open. Correlated
 model/source review is not independent validation.
+
+Third cyclotomic field and integer-ring ideal norms
+--------------------------------------------------
+GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicIdeals.lean retains Apache-2.0.
+The literal K=CyclotomicField3ℚ and O=NumberField.RingOfIntegersK aliases adapt
+openai/math@1581d4cbdd69a0faf34b2089614fe2a814316a6a,
+lean/OAI/NumberTheory/DirichletL/GaussSum/FiniteFourier.lean, lines487-491,
+raw SHA256 0e8e4184de91161a75802e3a26abfd19a322dffa6441968bf9caeb25800b5d7c,
+Git blob 06304e1efc036727b3fa27e37dd6a06ce0bf5e56.
+OpenAI project authorship and LICENSES/OpenAI-Apache-2.0.txt are retained.
+Actual ideal-norm, number-field and cyclotomic-field Mathlib proofs retain
+named upstream authors and Apache-2.0 terms: Anne Baanen, Alex J. Best,
+Ashvni Narayanan and Riccardo Brasca, with other imported source credits.
+The existing actual compact norm-support supplier retains its IdealMobius
+attribution. Human direction: grwtsk contributors; local adaptation,
+formalization and checking: OpenAI Codex. Original primary generators,
+Gauss/character weights, marked completed sums and RH suppliers remain open.
+Correlated model/source review is not independent validation.

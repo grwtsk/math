@@ -1,0 +1,56 @@
+{
+  "schema": "bounded-replay-operational-controls-v1",
+  "at": "2026-10-16T00:50:06.853705+00:00",
+  "sources": [
+    {
+      "path": "scripts/check_prefix_table_checkpoint.py",
+      "sha256": "056cc628621e8c89a6f0b7d088d947bca8bd979ad648d58947cb099d81bb7ed9"
+    },
+    {
+      "path": "scripts/check_third_cyclotomic_ideals.py",
+      "sha256": "06d8bdf786699bdebd32afc04b4cb586587760c477e75d6cb51de557b0d27b25"
+    },
+    {
+      "path": "scripts/test_checkpoint_cyclotomic_replay_guards.py",
+      "sha256": "65a9195f0a52463eb15336c478738e22991c90104dfdc9d9c7f2f1f38138a1da"
+    },
+    {
+      "path": "scripts/check_math_trust.py",
+      "sha256": "069ca265038960243890b1c4e028637723ddc440854864a61648eb2b2fd99c9d"
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "scripts/test_checkpoint_cyclotomic_replay_guards.py"
+      ],
+      "exit_code": 0,
+      "log": {
+        "path": ".local/checkpoint-cyclotomic/root/replay-guards-normal.log",
+        "sha256": "f2f7f20b09268ff1a5a9edf399b32bb047568b9780fc65a6c38dee4a6be91892"
+      },
+      "output": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.029s\n\nOK\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "-O",
+        "scripts/test_checkpoint_cyclotomic_replay_guards.py"
+      ],
+      "exit_code": 0,
+      "log": {
+        "path": ".local/checkpoint-cyclotomic/root/replay-guards-optimized.log",
+        "sha256": "6abe9da26c1cd37fc617ec8a2f159fb9e60113988a7640866262fc12246b302b"
+      },
+      "output": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.043s\n\nOK\n"
+    }
+  ],
+  "controls": [
+    "Two drivers times9 exact generated-object-family scenarios: unchanged accepted; main replacement/truncation/deletion, private replacement/deletion, extra server and main/private symlinks rejected.",
+    "Plain/coded diagnostics counted; actual negative compiles require exactly one intended type mismatch."
+  ],
+  "limits": "Bounded Python operational tests only; no Lean proof of hashes/filesystem/diagnostic parser/runtime codec/JSON/zlib/IO refinement. Correlated review is not independent validation."
+}
