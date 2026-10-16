@@ -1,0 +1,65 @@
+{
+  "schema": "horizon-triadic-flux-proof-hypergraph-v1",
+  "root": "_root_.RiemannHypothesis",
+  "nodes": [
+    {
+      "id": "HTF-ALG",
+      "type": "H_N = J_N + K_N",
+      "state": "written proof plus exact finite computation",
+      "premises": ["Q_{n+1}=Q_n+M_n g_n", "terminal horizon weight vanishes"]
+    },
+    {
+      "id": "HTF-CORRECTION",
+      "type": "0 <= K_N <= (1/2) log(N+1)^2",
+      "state": "written proof",
+      "premises": ["|M_n| <= n", "g_n <= 1/(sqrt(n)(n+1))"]
+    },
+    {
+      "id": "HTF-CELL",
+      "type": "pickupEnergy(log(N+1)) and H_N bound one another up to explicit constants",
+      "state": "written proof",
+      "premises": ["literal cell source identity", "summable within-cell drift"]
+    },
+    {
+      "id": "HTF-SUBPOWER-BRIDGE",
+      "type": "HorizonTriadicFluxSubpower <-> PickupEnergySubexp",
+      "state": "written candidate; native replay not run",
+      "premises": ["HTF-ALG", "HTF-CORRECTION", "HTF-CELL"]
+    },
+    {
+      "id": "HTF-POLYLOG-BRIDGE",
+      "type": "HorizonTriadicFluxPolylog <-> PickupCrossPoly",
+      "state": "written candidate; native replay not run",
+      "premises": ["HTF-ALG", "HTF-CORRECTION", "HTF-CELL", "checked pickupCrossPoly_iff_pickupEnergyPoly"]
+    },
+    {
+      "id": "HTF-SUBPOWER-SUPPLIER",
+      "type": "HorizonTriadicFluxSubpower",
+      "state": "open mathematical premise",
+      "premises": []
+    },
+    {
+      "id": "HTF-POLYLOG-SUPPLIER",
+      "type": "HorizonTriadicFluxPolylog",
+      "state": "open stronger mathematical premise",
+      "premises": []
+    },
+    {
+      "id": "RH-FROM-SUBEXP",
+      "type": "PickupEnergySubexp -> _root_.RiemannHypothesis",
+      "state": "existing checked repository theorem",
+      "premises": ["PickupEnergySubexp"]
+    },
+    {
+      "id": "RH-FROM-P04",
+      "type": "PickupCrossPoly -> _root_.RiemannHypothesis",
+      "state": "existing checked repository theorem",
+      "premises": ["PickupCrossPoly"]
+    }
+  ],
+  "or_routes_to_root": [
+    ["HTF-SUBPOWER-SUPPLIER", "HTF-SUBPOWER-BRIDGE", "RH-FROM-SUBEXP"],
+    ["HTF-POLYLOG-SUPPLIER", "HTF-POLYLOG-BRIDGE", "RH-FROM-P04"]
+  ],
+  "closed_root_proof_present": false
+}

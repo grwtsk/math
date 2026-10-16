@@ -1,0 +1,77 @@
+/-
+Human mathematical direction: grwtsk contributors.
+Candidate formalization assistance: OpenAI ChatGPT. MIT.
+CANDIDATE_SOURCE_ONLY. Not elaborated or axiom-audited.
+-/
+import GRWTSK.NumberTheory.Moebius.CriticalEndpointDefectRecurrence
+import GRWTSK.NumberTheory.Moebius.EnergyAbscissa
+import GRWTSK.NumberTheory.Zeta.Riemann.PolynomialEnergyCriterion
+
+set_option autoImplicit false
+noncomputable section
+open scoped BigOperators
+
+namespace GRWTSK.NumberTheory.Moebius.HorizonTriadicFluxCriterion
+
+open GRWTSK.RiemannHypothesis.CCC
+open GRWTSK.NumberTheory.Moebius.CriticalEndpointDefect
+open GRWTSK.NumberTheory.Moebius.CriticalEndpointDefectRecurrence
+
+/-- Backward logarithmic potential from `n+1` to the declared horizon `N+1`. -/
+def horizonLogWeight (N n : ℕ) : ℝ :=
+  Real.log (((N + 1 : ℕ) : ℝ) / ((n + 1 : ℕ) : ℝ))
+
+/-- Zero-damping endpoint energy on the first `N` logarithmic cells. -/
+def horizonEndpointEnergy (N : ℕ) : ℝ :=
+  ∑ n ∈ Finset.Icc 1 N,
+    criticalEndpointDefect n ^ 2 *
+      Real.log (((n + 1 : ℕ) : ℝ) / (n : ℝ))
+
+/-- Complete signed horizon-matched triadic flux. -/
+def horizonTriadicFlux (N : ℕ) : ℝ :=
+  ∑ n ∈ Finset.Icc 1 (N - 1),
+    2 * horizonLogWeight N n * criticalEndpointDefect n *
+      pickupMertensPrefix n * criticalEndpointGap n
+
+/-- Diagonal quadratic variation accompanying the signed flux. -/
+def horizonTriadicCorrection (N : ℕ) : ℝ :=
+  ∑ n ∈ Finset.Icc 1 (N - 1),
+    horizonLogWeight N n *
+      (pickupMertensPrefix n * criticalEndpointGap n) ^ 2
+
+/-- Natural-cutoff subpower upper growth. -/
+def NatSubpowerUpper (f : ℕ → ℝ) : Prop :=
+  ∀ ε : ℝ, 0 < ε → ∃ C : ℝ, 0 ≤ C ∧
+    ∀ N : ℕ, 1 ≤ N → f N ≤ C * ((N + 1 : ℕ) : ℝ) ^ ε
+
+/-- Natural-cutoff polylogarithmic upper growth. -/
+def NatPolylogUpper (f : ℕ → ℝ) : Prop :=
+  ∃ C r : ℝ, 0 ≤ C ∧ 0 ≤ r ∧
+    ∀ N : ℕ, 1 ≤ N →
+      f N ≤ C * (1 + Real.log ((N + 1 : ℕ) : ℝ)) ^ r
+
+def HorizonTriadicFluxSubpower : Prop := NatSubpowerUpper horizonTriadicFlux
+
+def HorizonTriadicFluxPolylog : Prop := NatPolylogUpper horizonTriadicFlux
+
+/-- Written bridge frontier. The accompanying derivation proves these growth
+class equivalences; this source remains inactive until native admission. -/
+def HorizonTriadicFluxGrowthBridge : Prop :=
+  (HorizonTriadicFluxSubpower ↔ PickupEnergySubexp) ∧
+  (HorizonTriadicFluxPolylog ↔ PickupCrossPoly)
+
+/-- Conditional return through the checked subexponential consumer. -/
+theorem riemannHypothesis_of_horizonTriadicFluxSubpower
+    (hBridge : HorizonTriadicFluxGrowthBridge)
+    (hFlux : HorizonTriadicFluxSubpower) :
+    _root_.RiemannHypothesis := by
+  exact riemannHypothesis_of_pickupEnergySubexp (hBridge.1.mp hFlux)
+
+/-- Conditional return through the checked P04 consumer. -/
+theorem riemannHypothesis_of_horizonTriadicFluxPolylog
+    (hBridge : HorizonTriadicFluxGrowthBridge)
+    (hFlux : HorizonTriadicFluxPolylog) :
+    _root_.RiemannHypothesis := by
+  exact riemannHypothesis_of_pickupCrossPoly (hBridge.2.mp hFlux)
+
+end GRWTSK.NumberTheory.Moebius.HorizonTriadicFluxCriterion

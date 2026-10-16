@@ -1,0 +1,45 @@
+{
+  "schema": "horizon-triadic-flux-negative-controls-v1",
+  "controls": [
+    {
+      "id": "delete-diagonal-correction",
+      "rejected": true,
+      "reason": "H_N equals J_N plus K_N, and exact fixtures have K_N != 0"
+    },
+    {
+      "id": "absolute-value-substitution",
+      "rejected": true,
+      "reason": "sum Q_n x_n L_{N,n} differs from sum |Q_n x_n| L_{N,n}"
+    },
+    {
+      "id": "hermitian-face-substitution",
+      "rejected": true,
+      "reason": "the (+,+,-) triadic projector is signed and is not a squared modulus"
+    },
+    {
+      "id": "reuse-wrong-horizon",
+      "rejected": true,
+      "reason": "L_{N,n}=log((N+1)/(n+1)) is part of the theorem and changes with N"
+    },
+    {
+      "id": "psd-implies-offdiagonal-bound",
+      "rejected": true,
+      "reason": "positive semidefiniteness of the full Volterra Gram form does not bound its signed off-diagonal part independently"
+    },
+    {
+      "id": "finite-prefix-promoted-to-growth",
+      "rejected": true,
+      "reason": "the profile through N=2000000 is diagnostic only"
+    },
+    {
+      "id": "additive-face-implies-euler-product",
+      "rejected": true,
+      "reason": "a+b=c couples prime factorizations additively"
+    },
+    {
+      "id": "python-promoted-to-lean",
+      "rejected": true,
+      "reason": "candidate Lean sources were not elaborated or axiom audited"
+    }
+  ]
+}
