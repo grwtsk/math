@@ -1,0 +1,50 @@
+{
+  "schema": "larger-slice-structural-checks-v1",
+  "scope": "Current observation/catalog structural consistency; not mathematical acceptance",
+  "checks": [
+    {
+      "argv": [
+        "python3",
+        "-B",
+        ".noeaaeue/scripts/generate_math_source_catalog.py",
+        "--render"
+      ],
+      "exit_code": 0,
+      "output": "787 retained historical active records, 63 retained historical candidate records; 878 current observed sources (68 candidate-only), no acceptance inherited"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        ".noeaaeue/scripts/generate_math_source_catalog.py"
+      ],
+      "exit_code": 0,
+      "output": "Exact generated catalog bytes match"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        ".noeaaeue/scripts/check_math_layout.py"
+      ],
+      "exit_code": 0,
+      "output": "Math layout: PASS (451 library modules, 0 findings)."
+    }
+  ],
+  "current_observation": {
+    "path": ".noeaaeue/bindings/current-source-observations.json",
+    "sha256": "37487d7990eda344b13a5d2e18f599eedf95c4baa143bdc29893a047a7a05e68",
+    "identity": "20d22365fdcecde85ba5b67460cfc79153aa6d6c3dd8a6ac8e253f79a12939cf"
+  },
+  "generated_catalog_sha256": "849535f1d74aafc58568db3f396708d4d3f16b70131c9e406f1c7dab68ea05cd",
+  "fresh_contract": {
+    "path": ".noeaaeue/bindings/moebius-current-inputs-larger-slice-20261016T094026Z-300cce31ab.json",
+    "sha256": "e60cc296162a8291d840aad93a50c2c5a625117b7d74b4b836e803e86d6d6c73",
+    "modules": 454,
+    "assets": 24,
+    "kernel_checked": false
+  },
+  "input_validation_receipt": ".noeaaeue/.local/checks/moebius-response-20261016T094235Z-5387209c7d21/receipt.json",
+  "previous_failure_retained": ".noeaaeue/receipts/larger-slice-anticoncentration/initial-layout.log",
+  "historical_pins_rebound": false
+}

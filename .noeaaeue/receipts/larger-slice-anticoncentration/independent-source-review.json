@@ -1,0 +1,17 @@
+{
+  "schema": "larger-slice-independent-source-review-v1",
+  "reviewer": "independent fourier_product agent",
+  "scope": "Read-only mathematical/source review; not kernel verification",
+  "paper": "arXiv:2602.15797v1 S1.Thmthm4 and S4.p6",
+  "findings": [],
+  "conclusion": "The final prime-only and existential forms match source Corollary1.4. Zero is allowed in S. All log/cardinality and residual restrictions are proved internally. Three cases are exhaustive including equalities, m=1 and k=m with zero initial exposure. Actual finite fiber counting supplies residual laws; nested-subset independence is not assumed.",
+  "constants_review": "64000C/\u03b5 =16*(4000C/\u03b5); floor/min give \u03b5m/(2000log n)\u2264k; \u03b5n\u2264r\u2264n and Clog r\u2264k\u226410^-3 r/log r; C\u03b5 \u03b5\u00b2=128000C and \u03b5\u00b2\u2264\u03b5 imply the loose square-root comparison.",
+  "source_typo": "The opening reference to Theorem1.2 for C in S4.p6 is read as Theorem1.3, the actual anti-concentration theorem invoked.",
+  "source_hashes_at_review": {
+    "GRWTSK/Combinatorics/Sequences/FixedSizeSubsetExposure.lean": "f23c62d8129b4458caf159eb2f0936bfc593de3dc658669d3ac5d79d21769f9b",
+    "GRWTSK/Analysis/Fourier/ZModLargerSliceParameters.lean": "e420c03572f3214d7438834d4eaeac69ca3b56d803014d861819e5f2b7fb090e",
+    "GRWTSK/Analysis/Fourier/ZModLargerSliceBounds.lean": "b2a19420111290d3897cf53b8493a6ec3e998c3b78f016fce8b855d238d4f380",
+    "GRWTSK/Analysis/Fourier/ZModLargerSlice.lean": "d622f6c41de0c4dc5bea4025fb9ca3eb2c39feac7265880d8ce4c0b6088e635e"
+  },
+  "limitation": "Later elaboration repairs require final source/axiom replay; no current proof acceptance inferred from this review."
+}

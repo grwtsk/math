@@ -1,0 +1,69 @@
+{
+  "schema": "larger-slice-final-documentation-checks-v1",
+  "scope": "Final editorial prose and generated navigation; mathematical acceptance remains in separate native receipts",
+  "outcome": "passed",
+  "checks": [
+    {
+      "argv": [
+        "python3",
+        "-B",
+        ".noeaaeue/scripts/check_documentation.py",
+        "--render"
+      ],
+      "exit_code": 0,
+      "seconds": 10.021612541,
+      "log": ".noeaaeue/receipts/larger-slice-anticoncentration/documentation-final-repaired-checks/0.log",
+      "sha256": "02f2ed6e00e36c1b72897c3aaa40eb95ca4cc6ee19f60840fb91d96f5524c11b"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        ".noeaaeue/scripts/check_documentation.py"
+      ],
+      "exit_code": 0,
+      "seconds": 9.309456749999999,
+      "log": ".noeaaeue/receipts/larger-slice-anticoncentration/documentation-final-repaired-checks/1.log",
+      "sha256": "02f2ed6e00e36c1b72897c3aaa40eb95ca4cc6ee19f60840fb91d96f5524c11b"
+    },
+    {
+      "argv": [
+        "python3",
+        "-O",
+        "-B",
+        ".noeaaeue/scripts/check_documentation.py"
+      ],
+      "exit_code": 0,
+      "seconds": 9.479860457999997,
+      "log": ".noeaaeue/receipts/larger-slice-anticoncentration/documentation-final-repaired-checks/2.log",
+      "sha256": "02f2ed6e00e36c1b72897c3aaa40eb95ca4cc6ee19f60840fb91d96f5524c11b"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        ".noeaaeue/scripts/test_documentation_layout.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.8778872909999968,
+      "log": ".noeaaeue/receipts/larger-slice-anticoncentration/documentation-final-repaired-checks/3.log",
+      "sha256": "b7d23b558a0998fdcf1fbd85dd7a68db0798123b802d07414ccd95ba3f71aa3c"
+    },
+    {
+      "argv": [
+        "python3",
+        "-O",
+        "-B",
+        ".noeaaeue/scripts/test_documentation_layout.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.9031864999999968,
+      "log": ".noeaaeue/receipts/larger-slice-anticoncentration/documentation-final-repaired-checks/4.log",
+      "sha256": "cc174591ade7989e117d40bc8cb10caa3b8978c73608a0704ad05de95263506b"
+    }
+  ],
+  "formal_source_bindings_checked_before_and_after_each_command": 878,
+  "application_assets_checked_before_and_after_each_command": 24,
+  "head_unchanged": "8913a0a303962e0d202f9d69ce1fe5eedf70ff34",
+  "retained_failed_predecessor": ".noeaaeue/receipts/larger-slice-anticoncentration/documentation-final-checks/receipt.json"
+}
