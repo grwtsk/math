@@ -1,0 +1,64 @@
+{
+  "schema": "one-third-mertens-mean-square-proof-hypergraph-v1",
+  "root_context": "completed vertical line sigma=1/3; not the RH root",
+  "nodes": [
+    {
+      "id": "OT-MS",
+      "type": "sum_{n>=1} M_n^2 n^(-8/3) < infinity",
+      "status": "open"
+    },
+    {
+      "id": "OT-CELL",
+      "type": "exact logarithmic-cell source integral at sigma=1/3",
+      "status": "written_result"
+    },
+    {
+      "id": "OT-LINE",
+      "type": "exists C forall T>=0, verticalLineMass(1/3,T)<=C",
+      "status": "conditional_written_result"
+    },
+    {
+      "id": "OT-ZFR",
+      "type": "forall nontrivial zeta zero rho, Re(rho)<=5/6",
+      "status": "conditional_written_result"
+    },
+    {
+      "id": "OT-DYADIC",
+      "type": "sum_j 2^(-8j/3) sum_{2^j<=n<2^(j+1)} M_n^2 < infinity",
+      "status": "open_equivalent_supplier"
+    },
+    {
+      "id": "RH",
+      "type": "_root_.RiemannHypothesis",
+      "status": "not_reached"
+    }
+  ],
+  "edges": [
+    {
+      "premises": ["OT-MS"],
+      "conclusion": "OT-CELL",
+      "status": "written_not_lean_admitted"
+    },
+    {
+      "premises": ["OT-CELL"],
+      "conclusion": "OT-LINE",
+      "status": "local_consumer_exists; specialization_candidate_uncompiled"
+    },
+    {
+      "premises": ["OT-MS"],
+      "conclusion": "OT-ZFR",
+      "status": "written_Abel_Mellin_argument_not_lean_admitted"
+    },
+    {
+      "premises": ["OT-DYADIC"],
+      "conclusion": "OT-MS",
+      "status": "written_dyadic_comparison_not_lean_admitted"
+    },
+    {
+      "premises": ["OT-LINE"],
+      "conclusion": "RH",
+      "status": "insufficient; one line is not all positive dampings"
+    }
+  ],
+  "and_or_semantics": "Every edge requires all listed premises. No taxonomy or analogy edge has proof authority."
+}
