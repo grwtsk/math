@@ -1,0 +1,14 @@
+{
+  "schema": "closed-triadic-flux-resume-v1",
+  "smallest_unresolved_theorem": "ReciprocalClosedTriadicFluxUpper",
+  "statement": "For every k>=1, the terminally compensated signed primitive-radial triadic flux at sigma=1/(k+1) is uniformly bounded above over all natural horizons.",
+  "must_retain": [
+    "all Mobius signs",
+    "the terminal endpoint charge",
+    "the nonnegative recurrence correction",
+    "natural cutoffs and floors",
+    "the (+,+,-) triadic face moment",
+    "the full reciprocal family"
+  ],
+  "rejected_restart": "Do not revert to the stronger uncompensated open-flux supplier without an independent boundary theorem."
+}

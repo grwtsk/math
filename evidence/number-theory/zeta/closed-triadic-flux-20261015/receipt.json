@@ -1,0 +1,122 @@
+{
+  "date": "2026-10-15",
+  "execution": {
+    "exact_checks": 2200,
+    "producer_outputs_identical": true,
+    "profile_limit": 500000,
+    "unit_tests_normal": 11,
+    "unit_tests_optimized": 11
+  },
+  "files": [
+    {
+      "bytes": 474,
+      "path": "evidence/number-theory/zeta/closed-triadic-flux-20261015/README.txt",
+      "sha256": "57ef5fabfc0a99ffa6d621a37e5d6e23aa437f7454449975c961534228e3a03a"
+    },
+    {
+      "bytes": 993,
+      "path": "evidence/number-theory/zeta/closed-triadic-flux-20261015/candidate-inventory.json",
+      "sha256": "ec5650e946782f8f9b220f03d4422d8383d89c4e278b831512bedf045dfa3d54"
+    },
+    {
+      "bytes": 2934,
+      "path": "evidence/number-theory/zeta/closed-triadic-flux-20261015/candidates/ClosedDampedTriadicFlux.lean.txt",
+      "sha256": "c96f37de10091a243679c3f86d9cbf6a8312347a7278c6157221e94e9e2f20b4"
+    },
+    {
+      "bytes": 2690,
+      "path": "evidence/number-theory/zeta/closed-triadic-flux-20261015/candidates/ClosedWeightedAbelFlux.lean.txt",
+      "sha256": "5b546f007a970cd88c369e4a77b555bf7581c9d84a63bc1b1963dbe9f8861477"
+    },
+    {
+      "bytes": 624,
+      "path": "evidence/number-theory/zeta/closed-triadic-flux-20261015/candidates/audit.lean.txt",
+      "sha256": "87ae2aaedbfe98e73266ba0cc50c0e44a98849509c5ad66276c11d73eead938e"
+    },
+    {
+      "bytes": 7799,
+      "path": "evidence/number-theory/zeta/closed-triadic-flux-20261015/certificates-normal.json",
+      "sha256": "555c0b8c3f20a5ee51430cf8d3da186bfb174ad3dabe3b8b028b0ac4efa58e59"
+    },
+    {
+      "bytes": 7799,
+      "path": "evidence/number-theory/zeta/closed-triadic-flux-20261015/certificates-optimized.json",
+      "sha256": "555c0b8c3f20a5ee51430cf8d3da186bfb174ad3dabe3b8b028b0ac4efa58e59"
+    },
+    {
+      "bytes": 7799,
+      "path": "evidence/number-theory/zeta/closed-triadic-flux-20261015/certificates.json",
+      "sha256": "555c0b8c3f20a5ee51430cf8d3da186bfb174ad3dabe3b8b028b0ac4efa58e59"
+    },
+    {
+      "bytes": 9365,
+      "path": "evidence/number-theory/zeta/closed-triadic-flux-20261015/derivation.md",
+      "sha256": "ae120a935c05ff5025a1a158425ecfefb6c56fc4a3074507488410c03aeedcda"
+    },
+    {
+      "bytes": 228,
+      "path": "evidence/number-theory/zeta/closed-triadic-flux-20261015/logs/producer-normal.log",
+      "sha256": "3fa95201f87ddf04f0b8caeb7f48a90860e27095f7a38c8118edd5a6b9058f48"
+    },
+    {
+      "bytes": 231,
+      "path": "evidence/number-theory/zeta/closed-triadic-flux-20261015/logs/producer-optimized.log",
+      "sha256": "c5f180c7a088f4695bb4cd500c77e3946dd84f9d2366137ce87601bdaf579ceb"
+    },
+    {
+      "bytes": 110,
+      "path": "evidence/number-theory/zeta/closed-triadic-flux-20261015/logs/tests-normal.log",
+      "sha256": "31136b43cb7dc85a415c100857020a40d4f374a05c9b71bfb079d8e99fc63b49"
+    },
+    {
+      "bytes": 110,
+      "path": "evidence/number-theory/zeta/closed-triadic-flux-20261015/logs/tests-optimized.log",
+      "sha256": "37475421829a3b73541b5a4e18b817376cf66d208811260a6d4618f52ef8f4dc"
+    },
+    {
+      "bytes": 1102,
+      "path": "evidence/number-theory/zeta/closed-triadic-flux-20261015/negative-controls.json",
+      "sha256": "12800e972794ae77718d902fcc64c31fcf7c5e09b2d19b5c1efbb0ec859ba613"
+    },
+    {
+      "bytes": 1297,
+      "path": "evidence/number-theory/zeta/closed-triadic-flux-20261015/proof-hypergraph.json",
+      "sha256": "bfe257e24c612c7215c57f3db9875a630bae1020d1f71737ac3cbd0a9bdc4d8d"
+    },
+    {
+      "bytes": 650,
+      "path": "evidence/number-theory/zeta/closed-triadic-flux-20261015/resume-cursor.json",
+      "sha256": "e8831cae2720a33522d969a5e8502fb3f638d0a2ef6f4862a8f3d5d7ff94cfd9"
+    },
+    {
+      "bytes": 1625,
+      "path": "evidence/number-theory/zeta/closed-triadic-flux-20261015/source-ledger.json",
+      "sha256": "8e126d0bea7deafee7c6ebfe6af6af43af3694d287accbef3e9bd323e5440859"
+    },
+    {
+      "bytes": 13179,
+      "path": "scripts/closed_triadic_flux.py",
+      "sha256": "1eaeed761d4fdf004ccaf43221c60c13136ae2b0ec12083d57ffe8857ba6fd8a"
+    },
+    {
+      "bytes": 3323,
+      "path": "tests/test_closed_triadic_flux.py",
+      "sha256": "3efdbdd1ee394b6f459d9f22add4c9d19022888dcd5b33ac8d7d0736379178ef"
+    }
+  ],
+  "mathematical_status": "OPEN_FRONTIER",
+  "native_stages": {
+    "full_repository_replay": false,
+    "independent_validation": false,
+    "lean_compiled": false,
+    "owned_axiom_audit": false
+  },
+  "nonclaims": [
+    "No uniform closed-flux witness.",
+    "No new zero-free region.",
+    "No proof of RH.",
+    "No native Lean acceptance."
+  ],
+  "schema": "closed-triadic-flux-receipt-v1",
+  "selected_source_commit": "f114d16ac390e06923e5895eaa14ac58699391c3"
+}

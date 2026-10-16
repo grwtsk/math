@@ -1,0 +1,28 @@
+{
+  "axiom_audit_run": false,
+  "files": [
+    {
+      "bytes": 2934,
+      "contains_admit": true,
+      "contains_sorry": false,
+      "path": "evidence/number-theory/zeta/closed-triadic-flux-20261015/candidates/ClosedDampedTriadicFlux.lean.txt",
+      "sha256": "c96f37de10091a243679c3f86d9cbf6a8312347a7278c6157221e94e9e2f20b4"
+    },
+    {
+      "bytes": 2690,
+      "contains_admit": false,
+      "contains_sorry": false,
+      "path": "evidence/number-theory/zeta/closed-triadic-flux-20261015/candidates/ClosedWeightedAbelFlux.lean.txt",
+      "sha256": "5b546f007a970cd88c369e4a77b555bf7581c9d84a63bc1b1963dbe9f8861477"
+    },
+    {
+      "bytes": 624,
+      "contains_admit": false,
+      "contains_sorry": false,
+      "path": "evidence/number-theory/zeta/closed-triadic-flux-20261015/candidates/audit.lean.txt",
+      "sha256": "87ae2aaedbfe98e73266ba0cc50c0e44a98849509c5ad66276c11d73eead938e"
+    }
+  ],
+  "lean_compiled": false,
+  "schema": "closed-triadic-flux-candidates-v1"
+}

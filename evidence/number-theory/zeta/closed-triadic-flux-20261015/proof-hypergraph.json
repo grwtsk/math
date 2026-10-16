@@ -1,0 +1,41 @@
+{
+  "schema": "closed-triadic-flux-proof-hypergraph-v1",
+  "root": "_root_.RiemannHypothesis",
+  "nodes": [
+    {
+      "id": "closed-abel-identity",
+      "status": "exact-computation-and-written-proof",
+      "type": "E_sigma_N = ClosedFlux_sigma_N + Correction_sigma_N"
+    },
+    {
+      "id": "correction-uniform",
+      "status": "written-proof",
+      "type": "Correction_sigma_N <= 1/(4 sigma^2)"
+    },
+    {
+      "id": "closed-flux-endpoint-equivalence",
+      "status": "written-proof",
+      "depends_on": ["closed-abel-identity", "correction-uniform"]
+    },
+    {
+      "id": "endpoint-vertical-equivalence",
+      "status": "written-proof",
+      "depends_on": ["log-cell-source-identity", "within-cell-drift-summable"]
+    },
+    {
+      "id": "reciprocal-closed-flux-upper",
+      "status": "open-frontier",
+      "type": "forall k>=1, uniform upper bound on compensated signed flux"
+    },
+    {
+      "id": "critical-reciprocal-vertical-line-uniform",
+      "status": "checked-existing-consumer",
+      "depends_on": ["reciprocal-closed-flux-upper", "closed-flux-endpoint-equivalence", "endpoint-vertical-equivalence"]
+    },
+    {
+      "id": "rh",
+      "status": "conditional-existing-consumer",
+      "depends_on": ["critical-reciprocal-vertical-line-uniform"]
+    }
+  ]
+}
