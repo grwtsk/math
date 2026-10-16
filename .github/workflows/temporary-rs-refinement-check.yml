@@ -17,16 +17,18 @@ jobs:
         with:
           build: false
           test: false
-      - name: Build exact target modules with fatal warnings
+      - name: Build exact targets and public root with fatal warnings
         run: |
           lake build GRWTSK.LinearAlgebra.LinearMap.ReedSolomonRefinement --wfail
           lake build GRWTSK.NumberTheory.Zeta.Riemann.ScrewKernelRefinement --wfail
           lake build GRWTSK.NumberTheory.Zeta.Riemann --wfail
+          lake build GRWTSK --wfail
       - name: Trust-zero source checks
         run: |
           lake env lean --trust=0 GRWTSK/LinearAlgebra/LinearMap/ReedSolomonRefinement.lean
           lake env lean --trust=0 GRWTSK/NumberTheory/Zeta/Riemann/ScrewKernelRefinement.lean
           lake env lean --trust=0 GRWTSK/NumberTheory/Zeta/Riemann.lean
+          lake env lean --trust=0 GRWTSK.lean
       - name: Target declaration axiom audit
         run: |
           cat > /tmp/RSRefinementAxiomAudit.lean <<'EOF'
@@ -34,6 +36,7 @@ jobs:
           #print axioms GRWTSK.LinearAlgebra.LinearMap.ReedSolomonRefinement.transport_comp
           #print axioms GRWTSK.LinearAlgebra.LinearMap.ReedSolomonRefinement.codeword_error_invisible
           #print axioms GRWTSK.LinearAlgebra.LinearMap.ReedSolomonRefinement.source_error_bound
+          #print axioms GRWTSK.NumberTheory.Zeta.Riemann.ScrewKernelRefinement.zeroBinScrewContribution_eq
           #print axioms GRWTSK.NumberTheory.Zeta.Riemann.ScrewKernelRefinement.encoded_source_refines
           #print axioms GRWTSK.NumberTheory.Zeta.Riemann.ScrewKernelRefinement.screwKernel_source_preserving_refinement_error
           EOF
