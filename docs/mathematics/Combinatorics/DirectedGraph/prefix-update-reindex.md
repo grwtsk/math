@@ -24,6 +24,11 @@ Criteria for appended rows remain explicit evidence obligations. Existing
 certificate reuse still requires its own exact old rooted entries and the
 proved inverse transport; it does not certify newly added rows automatically.
 
+The [finite-batch runner](prefix-finite-batch.md) consumes this actual update
+law for an arbitrary finite chronological list of batches. It derives exact
+ordered-row accumulation from the initial structural invariant and retains
+the literal old storage prefixes. Empty batches retain their actual root.
+
 ## Checked boundaries
 
 The controls update an actual noncanonical state with children before their

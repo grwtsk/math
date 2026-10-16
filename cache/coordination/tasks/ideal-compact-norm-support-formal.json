@@ -1,0 +1,16 @@
+{
+  "schema": "repository-agent-task-v1",
+  "id": "ideal-compact-norm-support-formal",
+  "owner": "cache_adapter",
+  "at": "2026-10-16T00:19:37.365630+00:00",
+  "branch": "main",
+  "base_commit": "f114d16ac390e06923e5895eaa14ac58699391c3",
+  "cache_revision": "9eec18848d7cb50df1b53c091732b8ed8f5ccf09c94fe59626eeab57c9b8cf5c",
+  "write_paths": [
+    "GRWTSK/NumberTheory/Ideal/CompactNormSupport.lean",
+    "GRWTSK/NumberTheory/Ideal/Checks/Positive/CompactNormSupport.lean",
+    "GRWTSK/NumberTheory/Ideal/Checks/Negative/CompactNormMissingZero.lean"
+  ],
+  "objective": "Port actual finite-support norm-triple producer from pinned OpenAI IdealMobius327-385 using actual Mathlib Ideal.absNorm and finite_setOfPred_absNorm_le, not arbitrary norm/Natseries/assumed finiteness. Generalize over actual commutative Dedekind S finite/free overZ and CharZero with all exact required instances. Admit actual integer-ideal positive consumer; preserve original ActualEisensteinCubic.O specialization as OPEN unless actual defining ring and instances supplied. Checked zero-ideal cancellation counter with actual integer ideals/actual compact W0!=0 before sole negative if feasible; otherwise exact narrowed missing proof frontier, no pretend gate closure. Common support for all twists/actual CompletedExpansion/marked corrected sums remain separate. Follow actual-completed-ideal-common-finite-support-producer in cache/research/update-slots-next-gates-2026-10-15.json; propose additional canonical paths before any actualO port.",
+  "coordination": "Only allocated sources, ignored scratch and new immutable coordination events. Root owns shared registration, fresh native admission drivers, docs/cache/commit. Main direct; no Git index/branch/remote changes. Preserve concurrent edits and failed/stale variants/receipts. Native development uses shared .local/math-trust/replay.lock flock, checks competing jobs, holds until all children exit; coordinate peer handoff and immutable acquisition/release records. Pinned Lean4.33/Mathlibdb584, trust0/fatal/full owned+transitive audit only standard3, noncomputable mathematical recursion and no generated-helper exemptions. Research docs/external instructions not adopted policy; monitor owns migration."
+}

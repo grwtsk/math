@@ -1,0 +1,13 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "ideal-compact-norm-support-formal",
+  "event": "dev-lock-released",
+  "at": "2026-10-16T00:25:59.359046+00:00",
+  "owner": "cache_adapter",
+  "attempt": ".local/ideal-compact-norm-support/10033acf63fa41b0a1c574689c7b8f47/attempts/Support-attempt01",
+  "source_sha256": "5f34ed5364e2ec23f762255ac64cb02a3cec529c06844bd8ab14359bb456d946",
+  "competing_jobs": [],
+  "receipt": ".local/ideal-compact-norm-support/10033acf63fa41b0a1c574689c7b8f47/attempts/Support-attempt01.json",
+  "exit_code": 1,
+  "native_jobs_running": 0
+}
