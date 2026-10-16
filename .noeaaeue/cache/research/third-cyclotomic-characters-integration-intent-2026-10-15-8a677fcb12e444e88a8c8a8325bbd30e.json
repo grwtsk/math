@@ -1,0 +1,308 @@
+{
+  "at": "2026-10-16T05:48:24.896928+00:00",
+  "candidate": {
+    "bytes": 15605,
+    "path": ".noeaaeue/cache/research/third-cyclotomic-characters-documentation-candidate-2026-10-15-8a677fcb12e444e88a8c8a8325bbd30e.json",
+    "sha256": "9da4b88d4b7535d982b8cb47807fc32dad81f17dd0cd6bfe0cd29b9e235a8125"
+  },
+  "contribution": {
+    "Mathlib_individual_credits": [
+      {
+        "authors": [
+          "Michael Stoll"
+        ],
+        "copyright_year": 2022,
+        "path": "Mathlib/NumberTheory/MulChar/Basic.lean"
+      },
+      {
+        "authors": [
+          "Johan Commelin"
+        ],
+        "copyright_year": 2020,
+        "path": "Mathlib/RingTheory/RootsOfUnity/Basic.lean"
+      },
+      {
+        "authors": [
+          "Xavier Roblot"
+        ],
+        "copyright_year": 2025,
+        "path": "Mathlib/NumberTheory/NumberField/Ideal/Basic.lean"
+      },
+      {
+        "authors": [
+          "Chris Hughes",
+          "Joey van Langen",
+          "Casper Putz"
+        ],
+        "copyright_year": 2018,
+        "path": "Mathlib/FieldTheory/Finite/Basic.lean"
+      }
+    ],
+    "OpenAI_primary": {
+      "git_blob": "06304e1efc036727b3fa27e37dd6a06ce0bf5e56",
+      "individual_author_boundary": "No individual source-header author invented.",
+      "line_ranges_one_based": [
+        [
+          377,
+          402
+        ],
+        [
+          429,
+          477
+        ],
+        [
+          553,
+          654
+        ]
+      ],
+      "path": "lean/OAI/NumberTheory/DirichletL/GaussSum/FiniteFourier.lean",
+      "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "project_author": "OpenAI",
+      "repository": "openai/math",
+      "sha256": "0e8e4184de91161a75802e3a26abfd19a322dffa6441968bf9caeb25800b5d7c"
+    },
+    "human_direction": "R.A. Jacob Martone",
+    "license": "Apache-2.0",
+    "local_contribution": "OpenAI Codex: adaptation, formalization/checking and source-bound documentation candidate; no novelty claim."
+  },
+  "controls": [
+    {
+      "claim": "Actual restricted inverse and root-lift uniqueness.",
+      "declarations": [
+        "actual_root_inverse",
+        "actual_root_lift_unique"
+      ]
+    },
+    {
+      "claim": "Actual zero/one/unit/all-element laws, preserving character-level versus value-level cube distinction.",
+      "declarations": [
+        "actual_zero_value",
+        "actual_one_value",
+        "actual_character_cube",
+        "actual_unit_cube",
+        "actual_trivial_character_zero",
+        "actual_zero_cube_not_one",
+        "actual_all_x_reduction"
+      ]
+    },
+    {
+      "claim": "Produce an actual maximal ideal containing2 with lambda outside; its actual character has0/1 values, is nontrivial and has exact order3. No goodP/evaluation oracle.",
+      "declarations": [
+        "actual_good_character_nonvacuous"
+      ]
+    },
+    {
+      "claim": "Actual ramified quotientcard3 gives exponent0. No MulChar on this quotient can satisfy the all-element exponent reduction formula: evaluating0 forces0=0^0=1. This does not deny existence of all characters on that quotient.",
+      "declarations": [
+        "actual_ramified_card",
+        "actual_ramified_exponent_zero",
+        "actual_ramified_reduction_impossible"
+      ]
+    },
+    {
+      "claim": "The intended negative supplies cubicChar_pow_three as evidence for false pointwise equality cubicChar P hgood 0 ^ 3 = 1; it receives the sole intended type mismatch. Negative source is not theorem admission.",
+      "receipt_result": {
+        "argv": [
+          "/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+          "-j1",
+          "--trust=0",
+          "--memory=4096",
+          "-DwarningAsError=true",
+          "--root=/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-characters-replay/replay-9siq5xbj/source",
+          "/Users/think/Desktop/math/.noeaaeue/.local/third-cyclotomic-characters-replay/replay-9siq5xbj/source/GRWTSK/NumberTheory/Cyclotomic/Checks/Negative/ThirdCyclotomicCharacterZeroCube.lean"
+        ],
+        "exit_code": 1,
+        "expected_rejection": true,
+        "output_sha256": "57941d25747e8513ef5a08ade12cbaf2b793656b9a4dc6d8ff68ea4c5585a12a",
+        "path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Negative/ThirdCyclotomicCharacterZeroCube.lean",
+        "seconds": 1.7346369170118123
+      },
+      "source": "GRWTSK/NumberTheory/Cyclotomic/Checks/Negative/ThirdCyclotomicCharacterZeroCube.lean"
+    }
+  ],
+  "current_public_state": {
+    "maintained_page_created": false,
+    "shared_source_registration_installed": false,
+    "umbrella_import_present": false
+  },
+  "exact_contracts": [
+    {
+      "declarations": [
+        "restrictedRoots_surjective",
+        "restrictedRootsEquiv"
+      ],
+      "premises": [
+        "actual K=CyclotomicField3ℚ and O=NumberField.RingOfIntegers K",
+        "P:Ideal O with P.IsMaximal",
+        "hgood:lambda∉P"
+      ],
+      "statement": "The actual restricted quotient reduction rootsOfUnity3O→rootsOfUnity3(O/P) is surjective and defines a multiplicative equivalence. This is not a whole-ring quotient equivalence."
+    },
+    {
+      "declarations": [
+        "card_sub_one_div_three",
+        "cubicExponent",
+        "cubicExponent_pos"
+      ],
+      "statement": "Under the same good maximal hypotheses, actual q=Nat.card(O/P) satisfies3|(q-1), and m=(q-1)/3 is strictly positive."
+    },
+    {
+      "declarations": [
+        "cubicChar",
+        "cubicChar_reduce"
+      ],
+      "statement": "An actual quotient units homomorphism u↦u^m into quotient cube roots is lifted through the actual restricted inverse to O, then zero-extended using MulChar.ofUnitHom. For every x:O/P, including0, πP(cubicChar(P,hgood)(x))=x^m."
+    },
+    {
+      "declarations": [
+        "cubicChar_pow_three",
+        "cubicChar_ne_one",
+        "cubicChar_order"
+      ],
+      "statement": "The actual multiplicative character has cube equal to the trivial multiplicative character, is nontrivial and has order3. On units its value has cube1; its value at0 is0, so pointwise cube1 at0 is false."
+    }
+  ],
+  "native_owned_counts_not_theorem_counts": {
+    "accepted_positive": 13,
+    "new_library": 35,
+    "prior": 44,
+    "selected_total": 92
+  },
+  "observed_shared_inputs": [
+    {
+      "bytes": 3233996,
+      "path": ".noeaaeue/documentation/math-layout.json",
+      "sha256": "5a0c22f388f8aab06b812c9bf0e45f7985691c85e27cef6682ae64c53f355f29"
+    },
+    {
+      "bytes": 3392546,
+      "path": "docs/reference/math-source-catalog.json",
+      "sha256": "5c4eb372f2c910c1ae42e3b2168e5ae1672a7e9aeacc10d0a11916c17c4fbfcd"
+    },
+    {
+      "bytes": 21966,
+      "path": "docs/reference/object-source-bindings.json",
+      "sha256": "55260721e64ae72a2d255c788a051856c36fce62ea0ab3f8602f5cf546378126"
+    },
+    {
+      "bytes": 200789,
+      "path": ".noeaaeue/documentation/reference/documentation-layout.json",
+      "sha256": "b4b4ff78ac551f366d5f9706ef26bf4b25d22c6f15e71a684b89802803b8da96"
+    },
+    {
+      "bytes": 25950,
+      "path": "GRWTSK.lean",
+      "sha256": "d8bda509bc6f84a130b4747760134d1eabf3a565f3cbd3ac4c46ce16da35597e"
+    }
+  ],
+  "predecessor_open_status_correction": {
+    "applied": false,
+    "currently_overbroad_open_phrase": "Original cubic/sextic characters",
+    "guide": "docs/mathematics/NumberTheory/Cyclotomic/third-cyclotomic-reduction.md",
+    "precise_replacement_intent": "Actual good maximal quotient cubic character and exact laws are supplied at explicit lambda exclusion; sextic/trace and listed Jacobi/primary/weights/completed/common-support/global targets remain open."
+  },
+  "proposed_actions_at_quiet_checkpoint": [
+    "Recheck exact source/receipt bindings. Later source/verifier edits require separate replay, not acceptance hash refresh.",
+    "Register the3 new source/control rows with exact subject/roles, preserving all prior historical records/statuses.",
+    "Add only the library source to NumberTheory/Cyclotomic object bindings and matching subject_placements; controls remain in source/control registries.",
+    "Publish the candidate guide and exact page/source/receipt/contribution registration only through root at the quiet checkpoint.",
+    "If root authorizes public export, add only the library umbrella import and update its inventory hash/imports without claiming full-root replay.",
+    "Record actual reverse-consumer edge ThirdCyclotomicReduction→ThirdCyclotomicCharacters, library→positive, positive→negative, and guide consumption.",
+    "Correct predecessor guide open-status wording: actual good-quotient cubic character is now supplied; sextic/Jacobi/primary/coefficients/weights/completed/common-support/global targets remain open. Add direct guide link.",
+    "One integration owner preserves concurrent variants, regenerates navigation/current observations/catalog/contracts and runs required documentation/structural checks; historical334 source inventory and historical receipts retain identities."
+  ],
+  "proposed_documentation_registration": {
+    "boundary": "Proposed entry only; selected status binds this exact receipt/bytes. Public integration remains pending.",
+    "evidence": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-characters-development-checks-2026-10-15-a7b1f5cb.json",
+    "object": "Cyclotomic",
+    "primary_source": "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicCharacters.lean",
+    "source_sha256": "c595e55f46838683758ea9c66379968ac75a6f86ddfb5dc099c302f9d497a051",
+    "status": "fresh-selected",
+    "subject": "NumberTheory",
+    "title": "Cubic characters on good third-cyclotomic quotients"
+  },
+  "proposed_page": "docs/mathematics/NumberTheory/Cyclotomic/third-cyclotomic-characters.md",
+  "remaining_open": [
+    "P.IsMaximal and lambda∉P remain explicit; no arbitrary prime/quotient/root-lift oracle.",
+    "The inverse is on actual roots of unity, not the whole quotient ring.",
+    "χ³=1 denotes the trivial character; both sides vanish at0, and unit-value cube1 must not be asserted at0.",
+    "The ramified obstruction refutes the exact all-element exponent reduction formula, not existence of every multiplicative character.",
+    "The above2 consumer does not prove(2) itself maximal or identify its quotient with F4.",
+    "Actual good-quotient cubic construction is supplied. Sextic/trace laws, Jacobi sums, normalized primary generators at good primes, Gauss coefficients/cube-column-Möbius weights, completed corrections/common support for every frequency, original detector/global/RH remain open.",
+    "No new native replay, full umbrella or dependency source rebuild, independent validation or operational parser/cache/hash/IO refinement."
+  ],
+  "root_owns_all_installation": true,
+  "schema": "source-bound-mathematical-integration-intent-v1",
+  "selected_verification": {
+    "allowed_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "complete_owned_census": {
+      "accepted_positive": 13,
+      "new_library": 35,
+      "not_a_theorem_count": true,
+      "prior_closure": 44,
+      "selected_total": 92
+    },
+    "complete_owned_records_admitted_in_receipt": true,
+    "dependency_cache_policy": "Existing objects from pinned clean dependency checkouts are reused and kernel-checked by Lean at trust zero. Every imported dependency object's resolved .olean family is fingerprinted after the owned-declaration audit and checked again before acceptance; dependency sources are not rebuilt.",
+    "exact_source_bindings_match_at_creation": true,
+    "fatal_warnings": true,
+    "full_public_umbrella": "NOT_REPLAYED",
+    "new_replay_by_documentation_worker": false,
+    "outcome": "passed",
+    "receipt": {
+      "bytes": 4928030,
+      "path": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-characters-development-checks-2026-10-15-a7b1f5cb.json",
+      "sha256": "528b3c85272c20e55ae66668fd942bde430b10635bc68b44c304b3796a10f286"
+    },
+    "review_independence": "Correlated source/receipt consistency only; no independent validation.",
+    "runtime_helper_exemptions": [],
+    "trust": 0
+  },
+  "source_bindings": [
+    {
+      "bytes": 9264,
+      "imports": [
+        "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicReduction",
+        "Mathlib.NumberTheory.MulChar.Basic",
+        "Mathlib.FieldTheory.Finite.Basic",
+        "Mathlib.NumberTheory.NumberField.Ideal.Basic"
+      ],
+      "module": "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicCharacters",
+      "object": "Cyclotomic",
+      "path": "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicCharacters.lean",
+      "sha256": "c595e55f46838683758ea9c66379968ac75a6f86ddfb5dc099c302f9d497a051",
+      "source_role": "library",
+      "subject": "NumberTheory"
+    },
+    {
+      "bytes": 3936,
+      "imports": [
+        "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicCharacters"
+      ],
+      "module": "GRWTSK.NumberTheory.Cyclotomic.Checks.Positive.ThirdCyclotomicCharacters",
+      "object": "Cyclotomic",
+      "path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Positive/ThirdCyclotomicCharacters.lean",
+      "sha256": "4832da80997b32be46ceb8ba498e86bb873a7e6111d9f2e70ee137211f0c4eb0",
+      "source_role": "positive-check",
+      "subject": "NumberTheory"
+    },
+    {
+      "bytes": 796,
+      "imports": [
+        "GRWTSK.NumberTheory.Cyclotomic.Checks.Positive.ThirdCyclotomicCharacters"
+      ],
+      "module": "GRWTSK.NumberTheory.Cyclotomic.Checks.Negative.ThirdCyclotomicCharacterZeroCube",
+      "object": "Cyclotomic",
+      "path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Negative/ThirdCyclotomicCharacterZeroCube.lean",
+      "sha256": "7e423a5a2cb5a9f6c78740f357fc1a41b832c01545e4a6e87ada20f8ccfb8242",
+      "source_role": "negative-control",
+      "subject": "NumberTheory"
+    }
+  ],
+  "source_guard_native_Git_shared_metadata_changes": false,
+  "status": "CREATE_ONLY_INTENT_NO_CURRENT_INSTALLATION"
+}

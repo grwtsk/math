@@ -67,7 +67,8 @@ class SelectedReplayGuards(unittest.TestCase):
             validate(row, {})
 
     def test_generated_object_families(self):
-        for name in ('check_prefix_table_schedule', 'check_third_cyclotomic_reduction'):
+        for name in ('check_prefix_table_schedule', 'check_third_cyclotomic_reduction',
+                     'check_prefix_reference_transport', 'check_third_cyclotomic_characters'):
             driver = module(name)
             for change in ('unchanged', 'replace', 'truncate', 'delete-main', 'replace-private',
                            'delete-private', 'add-server', 'link-main', 'link-private'):
@@ -112,7 +113,8 @@ class SelectedReplayGuards(unittest.TestCase):
         self.assertEqual(len(guard.error_messages(coded)), 1)
         self.assertEqual(guard.error_messages('x: warning: error-like prose\n'), [])
         # Both real drivers must call the structured parser and custody check.
-        for name in ('check_prefix_table_schedule', 'check_third_cyclotomic_reduction'):
+        for name in ('check_prefix_table_schedule', 'check_third_cyclotomic_reduction',
+                     'check_prefix_reference_transport', 'check_third_cyclotomic_characters'):
             source = (ROOT / '.noeaaeue/scripts' / (name + '.py')).read_text()
             self.assertIn('len(guard.error_messages(diagnostic)) == 1', source)
             self.assertIn('verify_project_objects(receipt["generated_project_objects"])', source)

@@ -1,0 +1,34 @@
+{
+  "schema": "repository-agent-event-v1",
+  "at": "2026-10-16T05:39:04.804002+00:00",
+  "owner": "indexed_dictionary",
+  "task": "arxiv-cubic-source-scout",
+  "event": "fresh-versioned-primary-sources-and-sign-modulus-boundaries-recorded",
+  "task_record": {
+    "path": ".noeaaeue/cache/coordination/tasks/arxiv-cubic-source-scout-2026-10-15-0bb4084d20054184b0b8bc26e6c40b75.json",
+    "sha256": "a0e299ca882062d7924fe576ea38b33cec9d7eb6998b62f40a2bb5511a09ead2",
+    "bytes": 739
+  },
+  "source_manifest": {
+    "path": ".noeaaeue/cache/research/arxiv-cubic-suppliers-2026-10-15-0bb4084d20054184b0b8bc26e6c40b75/source-manifest.json",
+    "sha256": "acf70da78fdf88bcbe78568b27f1f4d8de8de04bd45d8e0e3b2ce74446a96788",
+    "bytes": 5994
+  },
+  "source_review": {
+    "path": ".noeaaeue/cache/research/arxiv-cubic-suppliers-2026-10-15-0bb4084d20054184b0b8bc26e6c40b75/source-review.json",
+    "sha256": "ead467ea25937534a546db880a843a6799804c6673c668d3bfc32f95e8ad9895",
+    "bytes": 8457
+  },
+  "versions": [
+    "2012.05675v2",
+    "2407.03559v3",
+    "1412.6894v5"
+  ],
+  "actionable_supplier": "Actual restrictedμ3 quotient reduction inverse→units power hom→zero extension; no primary generator needed first. Later p=−JacobiSum normalization retains sign and actual ideal-generation obligations.",
+  "narrowed_obstruction": "Stronger generator≡1mod3sqrt(−3) requires norm≡1mod9; not all good primes. Problem-specific inert symbol conventions and printed exposition identities are not accepted proof suppliers.",
+  "native_status": "NOT_RUN",
+  "proof_acceptance": false,
+  "review": "Correlated source/model only; original arithmetic/RH suppliers remain OPEN",
+  "writes_complete": true,
+  "no_further_writes": "No additional maintained writes until a new assignment; root owns integration."
+}
