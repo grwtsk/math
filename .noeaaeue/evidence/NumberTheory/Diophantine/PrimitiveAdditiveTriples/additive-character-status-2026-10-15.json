@@ -1,0 +1,110 @@
+{
+  "schema": "finite-additive-character-independent-status-v1",
+  "observed_at": "2026-10-16T05:39:57.984128+00:00",
+  "selected_receipt": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-checks-2026-10-15.json",
+  "selected_receipt_sha256": "265d1eb7bd8ad2adf8fe0d6932f4c2931df5a38f4f7c7bebdfd62de66929574e",
+  "checked_projector": "GRWTSK.Analysis.Fourier.FiniteAdditiveProjector.characterProjector_eq_indicator_of_noWrap",
+  "checked_composition": "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.typedPrimitiveWeightedMoment_eq_moebius_frequency_sum",
+  "coefficient_scope": "Complex-valued joint weights. Earlier Ring-valued identities retain their own distinct scope; no character coefficient transfer proved.",
+  "constraints": {
+    "cube": "u,v,w in Icc1M",
+    "no_wrap": "2*M<q",
+    "phase": "(u:ZMod q)+(v:ZMod q)-(w:ZMod q)",
+    "weight": "W(d*u,d*v,d*w)",
+    "normalization": "(q:Complex)^-1",
+    "frequency_set": "all k:ZMod q",
+    "sector": "0<d and M=N/d",
+    "primitive": "2*N<q uniformly for d in Icc1N; original positivity, additive relation and coprimality retained"
+  },
+  "trust": 0,
+  "fatal_warnings": true,
+  "lean_elaboration": "passed",
+  "owned_declarations": 120,
+  "library_modules": 9,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "positive_consumer_files": 1,
+  "positive_examples": 20,
+  "intended_negative_rejections": 5,
+  "dependency_cache_policy": "Pinned clean dependency checkout HEADs are checked and existing dependency objects are kernel-checked by Lean at trust zero. Search-path-resolved imported dependency object families are fingerprinted after the audit and rechecked thereafter. These fingerprints do not establish cached object-to-source provenance or bind object bytes at earlier import times; dependency sources are not rebuilt.",
+  "frozen_target_changed": false,
+  "abc_proved": false,
+  "abc_implications": "open: uniform radical estimates, test-weight uniformity and pointwise arithmetic bridge absent",
+  "repository_integration": "Both guides remain registered against the genuine selected receipt. Frontier, cursor, contribution and source-binding records are complete. Sources retain their candidate-only/publicly unexported coordinates.",
+  "repository_admission": false,
+  "public_release_eligible": false,
+  "documentation_checks": {
+    "post_resume_render": "blocked by concurrent source inventory drift",
+    "normal": "stale inventory; failed",
+    "optimized": "stale inventory; failed",
+    "normal_layout_tests": 109,
+    "optimized_layout_tests": 109,
+    "documentation_admission_at_current_bytes": false
+  },
+  "overall_status": "OPEN_FRONTIER",
+  "integration_blockers": [
+    "New modules remain candidate-evidence outside public-entrypoint replay; public export awaits the next coordinated integration checkpoint.",
+    "Post-resume global layout/catalog and documentation checks are stale after concurrent Lean source additions/edits; first measured layout had 193 findings. Latest render collision: GRWTSK/NumberTheory/Cyclotomic/Checks/Positive/ThirdCyclotomicCharacters.lean."
+  ],
+  "source_layout_observed_findings": 193,
+  "source_layout_owned_findings": [
+    {
+      "code": "library-module-outside-public-closure",
+      "message": "library module is not reachable from GRWTSK.lean",
+      "module": "GRWTSK.Analysis.Fourier.FiniteAdditiveProjector",
+      "path": "GRWTSK/Analysis/Fourier/FiniteAdditiveProjector.lean"
+    },
+    {
+      "code": "uncataloged-maintained-source",
+      "message": "present maintained Lean source is absent from active_sources",
+      "path": "GRWTSK/Analysis/Fourier/FiniteAdditiveProjector.lean"
+    },
+    {
+      "code": "library-module-outside-public-closure",
+      "message": "library module is not reachable from GRWTSK.lean",
+      "module": "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.AdditiveCharacterMoments",
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/AdditiveCharacterMoments.lean"
+    },
+    {
+      "code": "uncataloged-maintained-source",
+      "message": "present maintained Lean source is absent from active_sources",
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/AdditiveCharacterMoments.lean"
+    },
+    {
+      "code": "uncataloged-maintained-source",
+      "message": "present maintained Lean source is absent from active_sources",
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorMissingNoWrap.lean"
+    },
+    {
+      "code": "uncataloged-maintained-source",
+      "message": "present maintained Lean source is absent from active_sources",
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorScaledCongruenceCancellation.lean"
+    },
+    {
+      "code": "uncataloged-maintained-source",
+      "message": "present maintained Lean source is absent from active_sources",
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorToABC.lean"
+    },
+    {
+      "code": "uncataloged-maintained-source",
+      "message": "present maintained Lean source is absent from active_sources",
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorUnscaledJointWeight.lean"
+    },
+    {
+      "code": "uncataloged-maintained-source",
+      "message": "present maintained Lean source is absent from active_sources",
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorWrongNormalization.lean"
+    },
+    {
+      "code": "uncataloged-maintained-source",
+      "message": "present maintained Lean source is absent from active_sources",
+      "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Positive/AdditiveCharacterMoments.lean"
+    }
+  ],
+  "current_selected_input_drift": [],
+  "integration_record": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-2026-10-15.json",
+  "coordination_checkpoint": "e361b62dd6e136af59f861102ce3ae736e7c664a"
+}

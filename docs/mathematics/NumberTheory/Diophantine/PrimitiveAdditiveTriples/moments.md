@@ -21,7 +21,7 @@ At `N = 4`, constant integer weights give five primitive triples. Dropping copri
 
 ## Open arithmetic implications
 
-The identity supplies no radical-height estimate, bound uniform in `N`, infinite Euler product, Fourier projector, or implication of integer abc. The [positive-divisor sector reindexing](divisor-sectors.md) is checked with the exact floor cutoff and all three weight coordinates scaled. A literal radical-weighted estimate and the arithmetic implication remain open. The [abc target](abc-proof-frontier.md) retains its original quantifiers and source identity.
+The identity supplies no radical-height estimate, bound uniform in `N`, infinite Euler product, or implication of integer abc. The separate [complex additive-character formula](additive-character-moments.md) is checked with explicit no-wrap bounds and all three joint-weight coordinates retained. The [positive-divisor sector reindexing](divisor-sectors.md) is checked with the exact floor cutoff and all three weight coordinates scaled. A literal radical-weighted estimate and the arithmetic implication remain open. The [abc target](abc-proof-frontier.md) retains its original quantifiers and source identity.
 
 ## Source and verification scope
 
