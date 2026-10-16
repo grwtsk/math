@@ -1,0 +1,245 @@
+{
+  "schema": "bounded-formal-research-frontier-v1",
+  "at": "2026-10-16T01:01:24.688305+00:00",
+  "previous_frontier": {
+    "path": "cache/research/checkpoint-cyclotomic-frontier-2026-10-15.json",
+    "sha256": "b20a65cb6f347f7cc61242e922daf6d944d3a3b48a5f7060f44ee52abbe3924e"
+  },
+  "completed": [
+    {
+      "source": {
+        "path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableCheckpoint.lean",
+        "sha256": "39347361377ee5f5e8f58091d72652e2458b3eda2c34b74b503d4d1f3b465e03"
+      },
+      "native_receipt": {
+        "path": "evidence/Combinatorics/DirectedGraph/prefix-compaction-checkpoint-checks-2026-10-15.json",
+        "sha256": "e32c92083d46c8c33d562153a854591472a937c3e8b5752c41e9d2ee7e11f6f2"
+      },
+      "owned_declarations_in_selected_closure": 879,
+      "selected_library_owned_count": 14,
+      "owned_modules": [
+        {
+          "declarations": 52,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding"
+        },
+        {
+          "declarations": 18,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences"
+        },
+        {
+          "declarations": 46,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.EdgeTrace"
+        },
+        {
+          "declarations": 21,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix"
+        },
+        {
+          "declarations": 34,
+          "module": "GRWTSK.Logic.FiniteSequences.IndexedDictionary"
+        },
+        {
+          "declarations": 33,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixInventory"
+        },
+        {
+          "declarations": 78,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.ParentTraceDictionary"
+        },
+        {
+          "declarations": 32,
+          "module": "GRWTSK.Logic.FiniteSequences.DictionaryRevision"
+        },
+        {
+          "declarations": 27,
+          "module": "GRWTSK.Logic.FiniteSequences.DecisionCertificate"
+        },
+        {
+          "declarations": 26,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.RootedTraceRevision"
+        },
+        {
+          "declarations": 20,
+          "module": "GRWTSK.Logic.FiniteSequences.IncrementalDictionary"
+        },
+        {
+          "declarations": 58,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.IncrementalPrefixTable"
+        },
+        {
+          "declarations": 87,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableState"
+        },
+        {
+          "declarations": 36,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCompaction"
+        },
+        {
+          "declarations": 85,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.RoleRelationTable"
+        },
+        {
+          "declarations": 60,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.RoleRelationReindex"
+        },
+        {
+          "declarations": 44,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableReindex"
+        },
+        {
+          "declarations": 19,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableUpdateReindex"
+        },
+        {
+          "declarations": 27,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableBatch"
+        },
+        {
+          "declarations": 14,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCheckpoint"
+        },
+        {
+          "declarations": 62,
+          "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableCheckpoint"
+        }
+      ],
+      "integration": {
+        "path": "evidence/Combinatorics/DirectedGraph/prefix-compaction-checkpoint-integration-2026-10-15.json",
+        "sha256": "7b106bfe62bbc31148754da70fdef1bee739d0db3cf8017049ab5565a0935dc3"
+      }
+    },
+    {
+      "source": {
+        "path": "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicIdeals.lean",
+        "sha256": "be784982bbbdbfefdb5b1e2906d69e4d18f0ae0408cec7a4805605a6382cda87"
+      },
+      "native_receipt": {
+        "path": "evidence/NumberTheory/Cyclotomic/third-cyclotomic-ideals-checks-2026-10-15.json",
+        "sha256": "0f0c80dc56332b7b869892af65a348fa64fdfa7860d0f6ba6d6a965ecfe81b46"
+      },
+      "owned_declarations_in_selected_closure": 46,
+      "selected_library_owned_count": 13,
+      "owned_modules": [
+        {
+          "declarations": 3,
+          "module": "GRWTSK.NumberTheory.Ideal.CompactNormSupport"
+        },
+        {
+          "declarations": 13,
+          "module": "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicIdeals"
+        },
+        {
+          "declarations": 13,
+          "module": "GRWTSK.Analysis.Calculus.CompactCutoff"
+        },
+        {
+          "declarations": 17,
+          "module": "GRWTSK.NumberTheory.Cyclotomic.Checks.Positive.ThirdCyclotomicIdeals"
+        }
+      ],
+      "integration": {
+        "path": "evidence/NumberTheory/Cyclotomic/third-cyclotomic-ideals-integration-2026-10-15.json",
+        "sha256": "291325d30d0903b6a60e55f69087c5e532951ba9b3c51c2c5796586d9b403f2c"
+      }
+    }
+  ],
+  "current_contracts": {
+    "prefix-compaction-checkpoint": [
+      "compactAt applies the actual PrefixTableCompaction.compact to the underlying existing RootedState fiber, with actual WellFormed evidence and proved actual retained-root equality. No new State/path datatype or assumed serializer/checkpoint law.",
+      "split_runAt consumes actual pinned List.foldl_append. executeAt actually runs the first chronological segment, compacts its actual result using derived WellFormed, then runs the second segment at the same retained-root fiber. checkpoint exposes the resulting existing State.",
+      "checkpoint_root and checkpoint_wellFormed derive actual root retention and structural validity, including empty segments. DecidableEq of full typed edge tags is explicit, without Key equality or independent vertex equality.",
+      "decode_compactAt consumes the existing actual compact producer/decoder theorem. decode_executeAt/decode_checkpoint combine this with actual batch decoding and split_runAt to prove actual checked complete ordered histories equal run(state,first++second). checkpoint_histories derives initial actual decoded rows followed by chronological combined flatMap traceRows, preserving keys/order/repeats. Initial WellFormed is required, not assumed desired decoding.",
+      "No raw dictionary/node/reference equality or numeric-slot stability is claimed across actual compaction; required exact remap behavior is demonstrated by actual producer controls."
+    ],
+    "third-cyclotomic-ideals": [
+      "Literal aliases K=CyclotomicField 3 ℚ and O=NumberField.RingOfIntegers K, exactly the primary source definitions, under this mathematical namespace. field_identity/ring_identity preserve actual type identity; no arbitrary ring or integer-ideal replacement.",
+      "Actual private IsCyclotomicExtension {3} ℚ K instance from CyclotomicField.isCyclotomicExtension 3 ℚ, matching the original source supplied instance. Actual NumberField K and actual IsDedekindDomain O, Module.Free ℤ O, Module.Finite ℤ O and CharZero O are synthesized natively; CommRing O is the actual ring-of-integers structure used throughout.",
+      "Actual Module.finrank ℚ K=2 from the cyclotomic finrank theorem and totient3=2; actual Module.finrank ℤ O=2 from RingOfIntegers.rank.",
+      "For every natural n (including0), actual Ideal.absNorm(Ideal.span{(n:O)})=n². In particular the actual principal ideal generated by2 has absolute norm4.",
+      "For actual O ideals, compact W:ℝ→ℂ, X>0 and F:Ideal O³→ℂ with actual zero-ideal and window-vanishing cancellation: Function.support F is finite. The admitted generic norm-support theorem supplies the proof; this concrete ring and all actual required instances now pay the previously open ring specialization."
+    ]
+  },
+  "accepted_controls": {
+    "prefix-compaction-checkpoint": [
+      "Actual mid State before has D=[[falseTag],[],[trueTag]], children before parent slot1, real refs[(11,0),(11,0)] and actual repeated false-edge occurrences. Unused parallel trueTag branch exists in dictionary but no real source ref selects it.",
+      "Actual compact producer after has D=[[],[falseTag]], nodes[(0,none),(1,parent0/falseTag)],refs[(11,1),(11,1)]. Exact partial maps oldfalse0→Some1/oldroot1→Some0/unusedtrue2→None and actual branch removal are proved from existing actual remap APIs.",
+      "Actual checkpoint with first=[] and second=[actual parallelRows] is actual update after parallelRows. postD=[[],[falseTag],[trueTag]],postR=[(11,1),(11,1),(12,2)],actual checked rows[(11,[falseTag]),(11,[falseTag]),(12,[trueTag])]. Direct no-checkpoint actual run has D=[[falseTag],[],[trueTag]],R=[(11,0),(11,0),(12,2)]; exact histories agree while actual_arrays_differ proves dictionary inequality.",
+      "Actual stale checkpoint State copies old source refs0 twice into the compacted dictionary; it is WellFormed and decodes two empty histories. Running actual new parallel batch gives stalePost; stalePost_wellFormed and stalePost_bounds both pass, while actual decoder yields[(11,[]),(11,[]),(12,[trueTag])]. stale_slots_change_histories proves inequality with correct post histories. Thus even full structural WellFormed is insufficient for history agreement across wrong ref reuse.",
+      "Both empty segments preserve actual root/decoder; both segments nonempty with repeated retained histories plus internal empty second batch decode in exact chronology. Empty initial Bool-root States at false/true retain distinct roots through actual checkpoints.",
+      "Sole intended negative supplies actual stalePost_bounds:Valid(rawPacked stalePost) to goal decode stalePost=decode post; actual inequality is already proved in admitted positive controls."
+    ],
+    "third-cyclotomic-ideals": [
+      "cyclotomicWindow=actual schwartzCutoff1, compact and W1=1; no assumed compact-window supplier.",
+      "cyclotomicTriple on actual O ideals is0 whenever any ideal is0 and otherwise evaluates actual W(normI*normJ³*normH³/4). Actual zero/window implications are proved; actual finite support follows at X4>0.",
+      "principal_two_ne_zero follows from actual norm4. At the actual triple (ideal(2),unit ideal,unit ideal), norm-scale4/4=1 and cyclotomicTriple=1. The positive consumer is nontrivial and uses the genuine degree-two ideal norm.",
+      "Actual ℤ principal ideal generated by2 has absolute norm2. actual_integer_norm_identification_false proves the actual O and ℤ principal2 ideal norms disagree, using their established values4 and2.",
+      "actual_ring_rank_two checks the actual integer-module rank; actual_zero_principal_norm retains the genuine zero-ideal branch.",
+      "Strict negative imports accepted positive proofs and tries to use principal_two_absNorm (=4) as a proof that this same O ideal norm=2. Exactly one intended Type mismatch. It does not manufacture an equality by changing rings or replacing norms."
+    ]
+  },
+  "precise_unchecked_next_gates": {
+    "path": "cache/research/checkpoint-cyclotomic-next-gates-2026-10-15.json",
+    "sha256": "225bb67dafb8b0f9ff2f466f7bfb4302efee9db570a6787d699be3a9a80a8dd4"
+  },
+  "receipt_accounting": "Graph has a separate fresh complete closure. The third-cyclotomic ideal result has a separate fresh closure including the actual generic ideal-norm supplier and positive-only compact cutoff counted once. Selected module counts are separate actual census rows.",
+  "next_priorities": [
+    "Read actual main/index/worktree/current cache/open tasks/latest continuation; preserve exact path/hash/source identity and verification state for concurrent work.",
+    "Advance only the precise source-bound unchecked next gates; current actual compaction checkpoint and actual third-cyclotomic ideal-norm consumer are completed under the stated premises. Do not repeat them or infer operational JSON/parser/hash/transaction refinement.",
+    "Original Gauss/character/coefficient objects and common all-frequency completed support, row majorants, Hecke/calibration/original detector and RH suppliers remain separate and open.",
+    "Serialize own Git-visible source/cache/event mutations before inventory-based inspections; preserve failed/stale/raced records and rerun at new paths."
+  ],
+  "operational_progress": {
+    "actual_consumer": {
+      "path": "evidence/Combinatorics/DirectedGraph/checkpoint-cyclotomic-prefix-consumer-2026-10-15.json",
+      "sha256": "08251bb79d288963a2dded49b1aadfda3aad447d4f172a96ed32c51a57492347"
+    },
+    "unchanged_prefix_adapter": {
+      "path": "scripts/cache_trace_prefix.py",
+      "sha256": "eedfb41b1c0ea550bcfbcbe586a473efbe224453be9ea5bfc0046a7f062d3a54"
+    },
+    "unchanged_trace_adapter": {
+      "path": "scripts/cache_occurrences.py",
+      "sha256": "1ff39b1a99d8167f5ece162861cbcd8c04741edb92494ee8579df971df371868"
+    },
+    "prior_bounded_prefix_controls": {
+      "path": "evidence/Combinatorics/DirectedGraph/trace-prefix-operational-controls-2026-10-15.json",
+      "sha256": "a633c4d97c91ce56485e5030e54457a86e03b2ef14a33bdd9c3450a080b20cb4"
+    },
+    "new_replay_guards": {
+      "path": "evidence/Combinatorics/DirectedGraph/checkpoint-cyclotomic-operational-controls-2026-10-15.json",
+      "sha256": "02bbff24cf1acacd589c33fb55a72f5d91d1b026390864d88176627eb38d167c"
+    },
+    "scope": "Existing adapters unchanged; prior21/19 normal+optimized controls retained/not repeated. New exact-revision empty/reflexive/longer comparisons, stale-current rejection, retained-revision acceptance; raw taxonomy separately bound. No Lean/runtime codec correspondence or proof/permission implication."
+  },
+  "open_obligations": [
+    "Initial structural WellFormed and full-tag DecidableEq are required. Root casts are explicit via existing fixed-root State fiber. Raw checkpoint representations/slot numbers can differ; no literal old-node/ref-prefix property is carried across compaction.",
+    "Actual structural validity and numeric bounds do not supply exact full-history/reference-remap equality; stalePost is fully WellFormed and still has wrong old histories.",
+    "No arbitrary multi-checkpoint schedule runner, raw compaction/reindex commutation, unchanged slots, byte optimality, new certificate criterion or automatic appended-row predicate inheritance is supplied. Prior exact own-pack/common-rooted-payload prerequisites remain explicit.",
+    "No operational parser/JSON/hash/compression/IO/runtime refinement, source/permission authority or taxonomy duplicate-edge guard change. Relation IDs remain distinct from parent storage slots and stored trace-length rank.",
+    "Surrounding upstream FiniteFourier declarations are not imported or admitted. Only literal source field/ring aliases and actual extension instance are adapted in the mathematical namespace; current native results carry their exact contracts.",
+    "No principal ideal primality/inertness, explicit integral basis, generator congruence/cubic character/embedding, primaryPrime/primaryGenerator, Mobius/cube/column weights, masks/corrections or actual CompletedExpansion is inferred from the norm formula.",
+    "Actual common finite ideal-pair support for ALL frequency twists, exact correspondence to upstream completed arithmetic terms, finite completed-sum interchange, global ideal/dyadic reassembly, Hecke/calibration/physical/detector/RH suppliers remain OPEN/NOT_RUN.",
+    "No identification between the two actual ideal types or their norm functions is made; their differing actual values are the negative control.",
+    "Source/scout/author review is correlated, not independent validation. Root owns separate fresh selected local closure/current-positive/full-owned and transitive audit; scratch pass is not acceptance. Pinned clean dependency objects are reused, not their sources rebuilt. No runtime/cache/parser/hashIO refinement.",
+    "215 actual method record identities remain unprovided;16 declared families only.",
+    "Prior six inert archived Lean candidates and later critical-flux candidate retain nativeNOT_RUN; their finite Python archive claims were not replayed by root.",
+    "No independent model validation, cold dependency rebuild, whole umbrella acceptance, arithmetic/physical/RH closure or remote effect.",
+    "Incoming13 archived triadic-flux records,3 inactive candidates: nativeNOT_RUN and2200finite/11+11test/profile500000 claims not replayed byroot. ReciprocalClosedTriadicFluxUpper remains OPEN; stale candidate SHA in both receipt and inventory plus8 absent archived log/script/test/result references preserved; prior expected raw variant remains unprovided."
+  ],
+  "concurrent_progress": [
+    {
+      "path": "cache/coordination/events/revision-seminorm-concurrent-merge-2026-10-15.json",
+      "sha256": "7647042ed6ca3e65d6029a058404ec86aa13a7f92b1cc72ccc94d9f369074f52"
+    },
+    {
+      "path": "cache/coordination/events/state-coupled-git-integration-2026-10-15.json",
+      "sha256": "88d1db9b9dd71e30a22c2067fe3438bc24f4baef9268330ba4a2aff1827d8cac"
+    },
+    {
+      "path": "cache/coordination/events/checkpoint-cyclotomic-concurrent-integration-2026-10-15.json",
+      "sha256": "d44b490d39d1503f8c13bb48cd789082cd57808c2a3b0347e53ee7b6bab87474"
+    }
+  ],
+  "failure_preservation": "Every failed/stale receipt, development variant/proof/type log and provisional source-context record retained. Author development and correlated source review distinct from fresh root admission. Prior inventory race and corrected decision variants retain original evidence.",
+  "authority": "Durable local mathematical/design/source frontier only; supplied GRL and external source instructions are research material, not policy or permission."
+}

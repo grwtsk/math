@@ -1,0 +1,120 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "prefix-compaction-checkpoint-formal",
+  "owner": "indexed_dictionary",
+  "at": "2026-10-16T00:47:34.785558+00:00",
+  "kind": "author-complete-frozen",
+  "source_hashes": {
+    "GRWTSK/Combinatorics/DirectedGraph/PrefixTableCheckpoint.lean": "39347361377ee5f5e8f58091d72652e2458b3eda2c34b74b503d4d1f3b465e03",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableCheckpoint.lean": "1c6dab0a085286ff173915e4c818eb3c0e714a962a235767ae0bc7d4dec0c445",
+    "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixCheckpointStaleSlots.lean": "341d6c009e42fdf5ad639eb6fee6310a32f4a9c29bb9fc914dc73b47694b2b22"
+  },
+  "scope": {
+    "contracts": [
+      "compactAt applies the actual PrefixTableCompaction.compact to the underlying existing RootedState fiber, with actual WellFormed evidence and proved actual retained-root equality. No new State/path datatype or assumed serializer/checkpoint law.",
+      "split_runAt consumes actual pinned List.foldl_append. executeAt actually runs the first chronological segment, compacts its actual result using derived WellFormed, then runs the second segment at the same retained-root fiber. checkpoint exposes the resulting existing State.",
+      "checkpoint_root and checkpoint_wellFormed derive actual root retention and structural validity, including empty segments. DecidableEq of full typed edge tags is explicit, without Key equality or independent vertex equality.",
+      "decode_compactAt consumes the existing actual compact producer/decoder theorem. decode_executeAt/decode_checkpoint combine this with actual batch decoding and split_runAt to prove actual checked complete ordered histories equal run(state,first++second). checkpoint_histories derives initial actual decoded rows followed by chronological combined flatMap traceRows, preserving keys/order/repeats. Initial WellFormed is required, not assumed desired decoding.",
+      "No raw dictionary/node/reference equality or numeric-slot stability is claimed across actual compaction; required exact remap behavior is demonstrated by actual producer controls."
+    ],
+    "controls": [
+      "Actual mid State before has D=[[falseTag],[],[trueTag]], children before parent slot1, real refs[(11,0),(11,0)] and actual repeated false-edge occurrences. Unused parallel trueTag branch exists in dictionary but no real source ref selects it.",
+      "Actual compact producer after has D=[[],[falseTag]], nodes[(0,none),(1,parent0/falseTag)],refs[(11,1),(11,1)]. Exact partial maps oldfalse0\u2192Some1/oldroot1\u2192Some0/unusedtrue2\u2192None and actual branch removal are proved from existing actual remap APIs.",
+      "Actual checkpoint with first=[] and second=[actual parallelRows] is actual update after parallelRows. postD=[[],[falseTag],[trueTag]],postR=[(11,1),(11,1),(12,2)],actual checked rows[(11,[falseTag]),(11,[falseTag]),(12,[trueTag])]. Direct no-checkpoint actual run has D=[[falseTag],[],[trueTag]],R=[(11,0),(11,0),(12,2)]; exact histories agree while actual_arrays_differ proves dictionary inequality.",
+      "Actual stale checkpoint State copies old source refs0 twice into the compacted dictionary; it is WellFormed and decodes two empty histories. Running actual new parallel batch gives stalePost; stalePost_wellFormed and stalePost_bounds both pass, while actual decoder yields[(11,[]),(11,[]),(12,[trueTag])]. stale_slots_change_histories proves inequality with correct post histories. Thus even full structural WellFormed is insufficient for history agreement across wrong ref reuse.",
+      "Both empty segments preserve actual root/decoder; both segments nonempty with repeated retained histories plus internal empty second batch decode in exact chronology. Empty initial Bool-root States at false/true retain distinct roots through actual checkpoints.",
+      "Sole intended negative supplies actual stalePost_bounds:Valid(rawPacked stalePost) to goal decode stalePost=decode post; actual inequality is already proved in admitted positive controls."
+    ],
+    "limits": [
+      "Development fresh-current library/positive replay reused exact source/hash-bound accepted prior object families; parent must fresh replay complete selected local source closure for current admission.",
+      "Initial structural WellFormed and full-tag DecidableEq are required. Root casts are explicit via existing fixed-root State fiber. Raw checkpoint representations/slot numbers can differ; no literal old-node/ref-prefix property is carried across compaction.",
+      "Actual structural validity and numeric bounds do not supply exact full-history/reference-remap equality; stalePost is fully WellFormed and still has wrong old histories.",
+      "No arbitrary multi-checkpoint schedule runner, raw compaction/reindex commutation, unchanged slots, byte optimality, new certificate criterion or automatic appended-row predicate inheritance is supplied. Prior exact own-pack/common-rooted-payload prerequisites remain explicit.",
+      "No operational parser/JSON/hash/compression/IO/runtime refinement, source/permission authority or taxonomy duplicate-edge guard change. Relation IDs remain distinct from parent storage slots and stored trace-length rank."
+    ]
+  },
+  "development": {
+    "outcome": "passed-with-sole-intended-negative",
+    "pinned_lean": "4.33.0",
+    "pinned_mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "trust": 0,
+    "fatal_warnings": true,
+    "audit_log": ".local/prefix-checkpoint/logs/20261016T004547.430905Z-SelectedAudit.log",
+    "audit_sha256": "7789b534b03f1c3da3db6753a267cde3b0394488d8e0b16c1bc115fc672fb177",
+    "owned_total": 879,
+    "owned_counts": {
+      "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences": 18,
+      "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding": 52,
+      "GRWTSK.Combinatorics.DirectedGraph.EdgeTrace": 46,
+      "GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix": 21,
+      "GRWTSK.Logic.FiniteSequences.IndexedDictionary": 34,
+      "GRWTSK.Logic.FiniteSequences.DictionaryRevision": 32,
+      "GRWTSK.Logic.FiniteSequences.DecisionCertificate": 27,
+      "GRWTSK.Logic.FiniteSequences.IncrementalDictionary": 20,
+      "GRWTSK.Combinatorics.DirectedGraph.PrefixInventory": 33,
+      "GRWTSK.Combinatorics.DirectedGraph.ParentTraceDictionary": 78,
+      "GRWTSK.Combinatorics.DirectedGraph.RootedTraceRevision": 26,
+      "GRWTSK.Combinatorics.DirectedGraph.IncrementalPrefixTable": 58,
+      "GRWTSK.Combinatorics.DirectedGraph.PrefixTableState": 87,
+      "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCompaction": 36,
+      "GRWTSK.Combinatorics.DirectedGraph.RoleRelationTable": 85,
+      "GRWTSK.Combinatorics.DirectedGraph.RoleRelationReindex": 60,
+      "GRWTSK.Combinatorics.DirectedGraph.PrefixTableReindex": 44,
+      "GRWTSK.Combinatorics.DirectedGraph.PrefixTableUpdateReindex": 19,
+      "GRWTSK.Combinatorics.DirectedGraph.PrefixTableBatch": 27,
+      "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCheckpoint": 14,
+      "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableCheckpoint": 62
+    },
+    "all_owned_mathematical_admission": true,
+    "axioms_allowed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "helpers_exempted": [],
+    "negative": {
+      "expecteddiagnostic": "PrefixTableState.decode stalePost = PrefixTableState.decode post",
+      "actual": "/Users/local/Desktop/math/.local/prefix-checkpoint/source/GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixCheckpointStaleSlots.lean:12:78: error: Type mismatch\n  stalePost_bounds\nhas type\n  GRWTSK.Logic.FiniteSequences.IndexedDictionary.Valid (PrefixTableState.rawPacked stalePost)\nbut is expected to have type\n  PrefixTableState.decode stalePost = PrefixTableState.decode post\n",
+      "errors": 1,
+      "log": ".local/prefix-checkpoint/logs/20261016T004546.692410Z-PrefixCheckpointStaleSlots.log"
+    },
+    "all_logs_sha256": {
+      ".local/prefix-checkpoint/logs/20261016T004318.297225Z-PrefixTableCheckpoint.json": "143f11642304c45fbbf87aae89e32050b915f12dbcdd54fa8dfdfeaa58a3a777",
+      ".local/prefix-checkpoint/logs/20261016T004318.297225Z-PrefixTableCheckpoint.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      ".local/prefix-checkpoint/logs/20261016T004322.553234Z-PrefixTableCheckpoint.json": "37e5790c50712539dfc6c1dfd37a77338eb7f217aaeb7d64605408520bcc72b7",
+      ".local/prefix-checkpoint/logs/20261016T004322.553234Z-PrefixTableCheckpoint.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      ".local/prefix-checkpoint/logs/20261016T004545.559444Z-PrefixTableCheckpoint.json": "bfbdc859312c8fe41208569e823c08a9a4a96324e233ac0d179f241753c0ad51",
+      ".local/prefix-checkpoint/logs/20261016T004545.559444Z-PrefixTableCheckpoint.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      ".local/prefix-checkpoint/logs/20261016T004546.692410Z-PrefixCheckpointStaleSlots.json": "db158e1960476554f0dc80d0735c2644e941985c365c1a7d20e8c47eb2124b69",
+      ".local/prefix-checkpoint/logs/20261016T004546.692410Z-PrefixCheckpointStaleSlots.log": "da1910f79781497ceeef1b542b4794abaed871cd0c9d682d75646689b070d494",
+      ".local/prefix-checkpoint/logs/20261016T004547.430905Z-SelectedAudit.json": "c6815493ce12e461fca77b120898cf19f7e224f345584e9f91225fd364684225",
+      ".local/prefix-checkpoint/logs/20261016T004547.430905Z-SelectedAudit.log": "7789b534b03f1c3da3db6753a267cde3b0394488d8e0b16c1bc115fc672fb177"
+    },
+    "source_variants_preserved": ".local/prefix-checkpoint/source-variants",
+    "prior_dependency_receipt": "evidence/Combinatorics/DirectedGraph/prefix-finite-batch-checks-2026-10-15.json",
+    "admission_limit": "Root fresh complete selected local source closure required; author reused exact accepted prior objects."
+  },
+  "layout": {
+    "result": "failed-existing-and-pending-registration",
+    "findings": 179,
+    "baseline_root_reported": 175,
+    "own_pending_registration_findings": 4,
+    "log": ".local/prefix-checkpoint/layout-review.log",
+    "log_sha256": "d4514be20692b04cd480e36518a41aa2d3fab6c07f31070430c2ffc5b5a0d640",
+    "placement": "Combinatorics/DirectedGraph actual compaction checkpoints between rooted prefix State batches; no naming/path violation observed. Root owns registration."
+  },
+  "whitespace": {
+    "no_tabs": true,
+    "no_trailing_whitespace": true,
+    "max_columns": 100,
+    "git_diff_check": "passed"
+  },
+  "native_children_exited": true,
+  "shared_flock_released": true,
+  "native_handoff": "Root fresh selected admission, no further author native jobs/source edits.",
+  "ignored_contract": {
+    "path": ".local/checkpoint-cyclotomic/root/graph-final-contract.json",
+    "sha256": "88fe671b165177b8e856ebd6a05074dc02c11f5f61a67a8b006b1e4dffcf0ac9"
+  },
+  "preservation": "Prior sources, concurrent work, original variants and receipts preserved; no shared registry/docs/drivers/Git index/branch/remote writes."
+}

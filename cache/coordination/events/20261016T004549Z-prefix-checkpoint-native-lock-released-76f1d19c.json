@@ -1,0 +1,11 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "prefix-compaction-checkpoint-formal",
+  "owner": "indexed_dictionary",
+  "at": "2026-10-16T00:45:49.112828+00:00",
+  "kind": "native-lock-released",
+  "source": "SelectedAudit.lean",
+  "exit_code": 0,
+  "all_native_children_exited": true,
+  "log": ".local/prefix-checkpoint/logs/20261016T004547.430905Z-SelectedAudit.log"
+}

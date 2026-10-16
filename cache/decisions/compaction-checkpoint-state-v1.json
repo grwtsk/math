@@ -1,0 +1,38 @@
+{
+  "schema": "repository-design-decision-v1",
+  "id": "compaction-checkpoint-state-v1",
+  "at": "2026-10-16T00:50:06.873674+00:00",
+  "previous_record": {
+    "path": "cache/decisions/finite-batch-prefix-state-v1.json",
+    "sha256": "e1ed4b124a899105641b420082d1a42adb987db198b93cd54c33fd2e1dce6cfc"
+  },
+  "choice": "Insert the actual compactor between two actual finite batch runs, retaining the root and exact chronological decoded histories through the actual reference remapping. Do not preserve stale numeric slot identities across compaction.",
+  "premises": [
+    "compactAt applies the actual PrefixTableCompaction.compact to the underlying existing RootedState fiber, with actual WellFormed evidence and proved actual retained-root equality. No new State/path datatype or assumed serializer/checkpoint law.",
+    "split_runAt consumes actual pinned List.foldl_append. executeAt actually runs the first chronological segment, compacts its actual result using derived WellFormed, then runs the second segment at the same retained-root fiber. checkpoint exposes the resulting existing State.",
+    "checkpoint_root and checkpoint_wellFormed derive actual root retention and structural validity, including empty segments. DecidableEq of full typed edge tags is explicit, without Key equality or independent vertex equality.",
+    "decode_compactAt consumes the existing actual compact producer/decoder theorem. decode_executeAt/decode_checkpoint combine this with actual batch decoding and split_runAt to prove actual checked complete ordered histories equal run(state,first++second). checkpoint_histories derives initial actual decoded rows followed by chronological combined flatMap traceRows, preserving keys/order/repeats. Initial WellFormed is required, not assumed desired decoding.",
+    "No raw dictionary/node/reference equality or numeric-slot stability is claimed across actual compaction; required exact remap behavior is demonstrated by actual producer controls."
+  ],
+  "native_evidence": {
+    "path": "evidence/Combinatorics/DirectedGraph/prefix-compaction-checkpoint-integration-2026-10-15.json",
+    "sha256": "7b106bfe62bbc31148754da70fdef1bee739d0db3cf8017049ab5565a0935dc3"
+  },
+  "checked_boundaries": [
+    "Actual mid State before has D=[[falseTag],[],[trueTag]], children before parent slot1, real refs[(11,0),(11,0)] and actual repeated false-edge occurrences. Unused parallel trueTag branch exists in dictionary but no real source ref selects it.",
+    "Actual compact producer after has D=[[],[falseTag]], nodes[(0,none),(1,parent0/falseTag)],refs[(11,1),(11,1)]. Exact partial maps oldfalse0→Some1/oldroot1→Some0/unusedtrue2→None and actual branch removal are proved from existing actual remap APIs.",
+    "Actual checkpoint with first=[] and second=[actual parallelRows] is actual update after parallelRows. postD=[[],[falseTag],[trueTag]],postR=[(11,1),(11,1),(12,2)],actual checked rows[(11,[falseTag]),(11,[falseTag]),(12,[trueTag])]. Direct no-checkpoint actual run has D=[[falseTag],[],[trueTag]],R=[(11,0),(11,0),(12,2)]; exact histories agree while actual_arrays_differ proves dictionary inequality.",
+    "Actual stale checkpoint State copies old source refs0 twice into the compacted dictionary; it is WellFormed and decodes two empty histories. Running actual new parallel batch gives stalePost; stalePost_wellFormed and stalePost_bounds both pass, while actual decoder yields[(11,[]),(11,[]),(12,[trueTag])]. stale_slots_change_histories proves inequality with correct post histories. Thus even full structural WellFormed is insufficient for history agreement across wrong ref reuse.",
+    "Both empty segments preserve actual root/decoder; both segments nonempty with repeated retained histories plus internal empty second batch decode in exact chronology. Empty initial Bool-root States at false/true retain distinct roots through actual checkpoints.",
+    "Sole intended negative supplies actual stalePost_bounds:Valid(rawPacked stalePost) to goal decode stalePost=decode post; actual inequality is already proved in admitted positive controls."
+  ],
+  "operational_boundary": "The mathematical checkpoint consumes structural validity and actual compaction/remapping definitions. Bounds and rooted validity alone do not certify that stale references retain the original histories. Runtime JSON/zlib/hash/filesystem/transaction refinement and new-row criteria remain separate.",
+  "open_obligations": [
+    "Initial structural WellFormed and full-tag DecidableEq are required. Root casts are explicit via existing fixed-root State fiber. Raw checkpoint representations/slot numbers can differ; no literal old-node/ref-prefix property is carried across compaction.",
+    "Actual structural validity and numeric bounds do not supply exact full-history/reference-remap equality; stalePost is fully WellFormed and still has wrong old histories.",
+    "No arbitrary multi-checkpoint schedule runner, raw compaction/reindex commutation, unchanged slots, byte optimality, new certificate criterion or automatic appended-row predicate inheritance is supplied. Prior exact own-pack/common-rooted-payload prerequisites remain explicit.",
+    "No operational parser/JSON/hash/compression/IO/runtime refinement, source/permission authority or taxonomy duplicate-edge guard change. Relation IDs remain distinct from parent storage slots and stored trace-length rank.",
+    "16 declared families/215 declared total do not supply215 actual method identities."
+  ],
+  "authority": "Durable local mathematical/design decision only; external specifications and taxonomy confer no proof or permission authority."
+}

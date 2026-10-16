@@ -1,0 +1,10 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "prefix-compaction-checkpoint-formal",
+  "owner": "indexed_dictionary",
+  "at": "2026-10-16T00:45:46.685264+00:00",
+  "kind": "native-lock-acquired",
+  "source": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixCheckpointStaleSlots.lean",
+  "source_sha256": "341d6c009e42fdf5ad639eb6fee6310a32f4a9c29bb9fc914dc73b47694b2b22",
+  "guard_competing_jobs": []
+}
