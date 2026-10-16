@@ -47,8 +47,8 @@ cutoff and does not assert that $A\ge1$ is sharp.
 
 The [source](../../../../GRWTSK/Analysis/MellinTransform/GaussianRemoteSeminorms.lean),
 [positive controls](../../../../GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianRemoteSeminorms.lean),
-[native receipt](../../../../evidence/Analysis/MellinTransform/gaussian-remote-seminorms-checks-2026-10-15.json)
-and [integration record](../../../../evidence/Analysis/MellinTransform/gaussian-remote-seminorms-integration-2026-10-15.json)
+[native receipt](../../../../.noeaaeue/evidence/Analysis/MellinTransform/gaussian-remote-seminorms-checks-2026-10-15.json)
+and [integration record](../../../../.noeaaeue/evidence/Analysis/MellinTransform/gaussian-remote-seminorms-integration-2026-10-15.json)
 bind fresh selected local sources and controls. Pinned Lean 4.33.0 checks
 at trust zero with fatal warnings and a complete owned-declaration/
 transitive-axiom census permitting only `propext`, `Classical.choice` and

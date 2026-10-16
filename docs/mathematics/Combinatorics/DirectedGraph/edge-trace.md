@@ -1,5 +1,6 @@
 # Typed edge traces of directed paths
 
+
 Fix a root $r$ in any quiver $V$. A tagged edge is an actual dependent triple
 $(a,b,e)$ with $e:a\to b$. A chronological edge list is valid from $r$ when
 its first source equals $r$ and every later source equals the previous target.
@@ -48,7 +49,7 @@ edges. It does not construct an unfolding tree of all paths, assert a relation
 between graph reachability and proof implication, or make a shortest-path
 subtree cover every occurrence.
 
-The separate [operational occurrence validator](../../../reference/content-cache.md)
+The separate [operational occurrence validator](../../../../.noeaaeue/documentation/reference/content-cache.md)
 binds relation-ID traces to exact taxonomy bytes and a source snapshot. Its
 bounded tests are separate from this theorem. A correspondence from those
 JSON rows to this Lean equivalence remains open. Taxonomy/classification
@@ -64,7 +65,7 @@ the valid-list equivalence or its binding on this page.
 
 The [source](../../../../GRWTSK/Combinatorics/DirectedGraph/EdgeTrace.lean),
 [positive consumers](../../../../GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/EdgeTrace.lean)
-and [native receipt](../../../../evidence/Combinatorics/DirectedGraph/edge-trace-checks-2026-10-15.json)
+and [native receipt](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/edge-trace-checks-2026-10-15.json)
 bind exact bytes and controls. The complete local source closure and accepted
 controls use fresh project objects, pinned Lean 4.33.0, trust zero, fatal warnings
 and an owned-declaration/transitive-axiom census permitting only `propext`,
@@ -72,13 +73,15 @@ and an owned-declaration/transitive-axiom census permitting only `propext`,
 and rechecked. Pinned dependency objects are reused and fingerprinted rather
 than rebuilt from source.
 
-The [integration evidence](../../../../evidence/Combinatorics/DirectedGraph/edge-trace-integration-2026-10-15.json)
-and [bounded source review](../../../../evidence/Combinatorics/DirectedGraph/edge-trace-source-review-2026-10-15-r2.json)
+The [integration evidence](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/edge-trace-integration-2026-10-15.json)
+and [bounded source review](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/edge-trace-source-review-2026-10-15-r2.json)
 preserve upstream API identities, credit, controls and transfer limits.
 Model review is correlated, not independent validation. Local source is MIT;
 Mathlib and Lean authorship and Apache-2.0 terms remain upstream. Human direction:
 R.A. Jacob Martone. Formalization/checking assistance: OpenAI Codex. No
 mathematical novelty or whole-repository acceptance is claimed.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

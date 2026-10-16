@@ -1,5 +1,6 @@
 # Occurrence reachability and complete trace prefixes
 
+
 Fix any quiver and a root $r$. For actual path occurrences $p,q$ in the
 [path unfolding](path-unfolding.md), reachability by a finite unfolding path
 is equivalent to prefix inclusion of their complete typed edge traces:
@@ -64,8 +65,8 @@ shared endpoint labels and numeric dictionary positions do not replace them.
 
 The [source](../../../../GRWTSK/Combinatorics/DirectedGraph/OccurrencePrefix.lean),
 [positive controls](../../../../GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/OccurrencePrefix.lean),
-[native receipt](../../../../evidence/Combinatorics/DirectedGraph/occurrence-prefix-checks-2026-10-15.json)
-and [integration record](../../../../evidence/Combinatorics/DirectedGraph/occurrence-prefix-integration-2026-10-15.json)
+[native receipt](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/occurrence-prefix-checks-2026-10-15.json)
+and [integration record](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/occurrence-prefix-integration-2026-10-15.json)
 bind the exact selected closure and counterexamples. Pinned Lean 4.33.0 checks
 fresh selected local objects at trust zero with fatal warnings and a complete
 owned-declaration/transitive-axiom census permitting only `propext`,
@@ -78,6 +79,8 @@ Apache-2.0 terms. Human mathematical direction: R.A. Jacob Martone;
 formalization/checking assistance: OpenAI Codex. The operational relation-ID
 prefix comparator has separate bounded tests. No Lean/Python/JSON refinement,
 permission implication or proof authority follows from a prefix relation.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

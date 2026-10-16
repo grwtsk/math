@@ -1,0 +1,23 @@
+{
+  "human_mathematical_direction": "R.A. Jacob Martone",
+  "formalization_assistance": "OpenAI Codex",
+  "mathematical_source": [
+    "Huy Tuan Pham",
+    "Lisa Sauermann"
+  ],
+  "source_version": "arXiv:2602.15797v1, 17 February 2026",
+  "upstream": "Lean and Mathlib authorship/licenses retained",
+  "originality_claim": false,
+  "source_bindings": {
+    "GRWTSK/Combinatorics/Sequences/PartialSumOrdering.lean": "a9a4c484455c947e258e6e57f5a7654d7f22682cc27b7fed1476d7c19811f0fb",
+    "GRWTSK/Combinatorics/Sequences/DisjointTranspositions.lean": "b5053ed826ac19979142b7c908b35cee2b7e97ba07d4a4bdaef26cf62a6f5409",
+    "GRWTSK/Combinatorics/Sequences/ZeroSumIntervalRepair.lean": "49512a5357198be0e0e9154cad5487284035315b3f5f82a72aa12ab891551bb2",
+    "GRWTSK/Combinatorics/Sequences/PartialSumCertificate.lean": "dbeeb4bdc27d6e1d4bb1633f442343dcbc9c17dcc30969f9a076f3926f743d20",
+    "GRWTSK/DynamicalSystems/TransitionSystems/ModularCheckpoint.lean": "7ef974d4d41d79dbc8ed0a121e2faf66e6a6cea610896b438d2db47e10d6cf99",
+    "GRWTSK/Analysis/Fourier/ZModSubsetSum.lean": "60a0800b62f570782227e57e7ccedba38c1db2a343724ff0951a113c9ac09044",
+    "GRWTSK/Analysis/Fourier/ZModSubsetSumCompletion.lean": "1da1313c434e574a577fa224bad75f188c5c073455cf658f6191a9295185e70d",
+    "GRWTSK/Combinatorics/Sequences/PrimeCyclicRearrangement.lean": "e6273e54a24c0ad7bd1da4fd9eb193f1d728479025099e22b70a5e3447d1dde5"
+  },
+  "kernel_receipt": "selected-replay.json",
+  "scope": "Generic partial sums, bounded deterministic repair, checker, clock adapter, finite counting and Fourier reductions; asymptotic source theorem not closed"
+}

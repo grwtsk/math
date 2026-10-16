@@ -1,0 +1,3 @@
+'GRWTSK.Analysis.Asymptotics.FinitePowerSum.sum_Icc_rpow_sub_one_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

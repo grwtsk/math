@@ -1,5 +1,6 @@
 # Parent dictionaries for complete rooted path traces
 
+
 Fix a quiver, a root and a finite ordered list of keyed actual path
 occurrences. Let $D$ be the proved [complete prefix inventory](prefix-inventory.md).
 The parent representation stores the root, original ordered references,
@@ -60,8 +61,8 @@ indices alone do not establish that agreement.
 
 The [source](../../../../GRWTSK/Combinatorics/DirectedGraph/ParentTraceDictionary.lean),
 [positive controls](../../../../GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/ParentTraceDictionary.lean),
-[native receipt](../../../../evidence/Combinatorics/DirectedGraph/parent-trace-dictionary-checks-2026-10-15.json)
-and [integration record](../../../../evidence/Combinatorics/DirectedGraph/parent-trace-dictionary-integration-2026-10-15.json)
+[native receipt](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/parent-trace-dictionary-checks-2026-10-15.json)
+and [integration record](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/parent-trace-dictionary-integration-2026-10-15.json)
 bind the exact selected closure. Lean 4.33.0 checks fresh local sources at
 trust zero with fatal warnings and a complete owned-declaration/transitive-
 axiom census permitting only `propext`, `Classical.choice` and `Quot.sound`.
@@ -73,6 +74,8 @@ retain their named authors and Apache-2.0 terms, including Mario Carneiro's
 list APIs. Human direction: R.A. Jacob Martone; formalization/checking:
 OpenAI Codex. No mathematical novelty, Python/JSON/hash/zlib/IO refinement,
 whole-library admission or RH result is claimed.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

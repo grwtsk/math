@@ -14,7 +14,7 @@ compatible with the proved C4 correlation; no C5 correlation assertion follows.
 
 ## Source and verification scope
 
-[Source](../../../../GRWTSK/Analysis/Convolution/CompactProfileHigherDerivatives.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+[Source](../../../../GRWTSK/Analysis/Convolution/CompactProfileHigherDerivatives.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../../.noeaaeue/documentation/reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

@@ -108,7 +108,7 @@ filter premises. No unconditional RH result or converse is established.
 
 ## Source and verification scope
 
-[Source](../../../../../GRWTSK/NumberTheory/Moebius/EnergyGrowthEquivalences.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../../reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+[Source](../../../../../GRWTSK/NumberTheory/Moebius/EnergyGrowthEquivalences.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../../../.noeaaeue/documentation/reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
 
 The mathematical residual is an unconditional actual arithmetic supplier: polynomial P04 would suffice, as would the broader every-rate subexponential condition or, equivalently in this formalization, $\alpha_W=0$. All remain open.
 

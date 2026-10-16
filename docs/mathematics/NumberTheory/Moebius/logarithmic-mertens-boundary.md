@@ -165,8 +165,8 @@ authorship and licenses.
 ## Source and verification scope
 
 [Source](../../../../GRWTSK/NumberTheory/Moebius/LogarithmicMertensBoundary.lean).
-Status: **fresh-selected**. [Verification receipt](../../../../evidence/NumberTheory/Moebius/logarithmic-mertens-boundary-checks.json) ·
-[credit and evidence limits](../../../reference/documentation-history.md).
+Status: **fresh-selected**. [Verification receipt](../../../../.noeaaeue/evidence/NumberTheory/Moebius/logarithmic-mertens-boundary-checks.json) ·
+[credit and evidence limits](../../../../.noeaaeue/documentation/reference/documentation-history.md).
 The receipt covers the conditional theorem and its separate consumer under the
 pinned compiler with trust zero, fatal warnings, and an owned-declaration axiom
 audit. The displayed Mertens premise remains explicitly unproved here.
@@ -487,13 +487,13 @@ This is a counterexample to an inference rule, not to the Mobius target.
 
 ### Verification boundary and remaining arithmetic
 
-[`zero_free_pickup_transfer.py`](../../../../scripts/zero_free_pickup_transfer.py)
+[`zero_free_pickup_transfer.py`](../../../../.noeaaeue/scripts/zero_free_pickup_transfer.py)
 checks exact rational radii, Borel--Caratheodory coefficients, the integer
 ceiling in $L$, the prefactor in (8), and the crossed-pole model.
 It leaves exponentials symbolic and rejects $\sigma\le3/8$, including $1/3$.
-[`test_zero_free_pickup_transfer.py`](../../../../scripts/test_zero_free_pickup_transfer.py)
+[`test_zero_free_pickup_transfer.py`](../../../../.noeaaeue/scripts/test_zero_free_pickup_transfer.py)
 contains finite controls and tests rejection under optimized Python.
-The [source-bound receipt](../../../../evidence/number-theory/moebius/zero-free-pickup-transfer-20261014.json)
+The [source-bound receipt](../../../../.noeaaeue/evidence/number-theory/moebius/zero-free-pickup-transfer-20261014.json)
 records the actual runs and distinguishes them from the analytic proof.
 
 This continuation supplies a written route from the reported external

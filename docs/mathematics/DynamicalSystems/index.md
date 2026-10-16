@@ -4,16 +4,16 @@
 
 | Inventory | Count |
 |---|---:|
-| Object guides | 2 |
+| Object guides | 3 |
 | Documented object groups | 2 |
-| Distinct primary sources linked | 2 |
-| Lean source modules | 16 |
+| Distinct primary sources linked | 3 |
+| Lean source modules | 17 |
 | Archive intake records | 0 |
 | Selected catalog families | 0 |
 
 These counts measure documentation and source coverage. They do not count accepted theorems or establish that every source module is documented or checked. [Definitions and limits](../../reference/library-pages.md#count-definitions).
 
-At least 382 source declaration commands, including 230 theorem/lemma commands, across 15 parsed Lean source modules; 1 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
+At least 462 source declaration commands, including 281 theorem/lemma commands, across 16 parsed Lean source modules; 1 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
 
 ## Sequences
 
@@ -25,12 +25,13 @@ Linked primary-source scope: 12 source declaration commands, including 6 theorem
 
 ## TransitionSystems
 
-1 object guide · 1 distinct linked primary source file.
+2 object guides · 2 distinct linked primary source files.
 
-Linked primary-source scope: 38 source declaration commands, including 26 theorem/lemma commands, across 1 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+Linked primary-source scope: 118 source declaration commands, including 77 theorem/lemma commands, across 2 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
 - [Guarded transition systems and reachability](TransitionSystems/guarded-reachability.md).
+- [Modular checkpoints and persistent search accounting](TransitionSystems/modular-checkpoints.md).
 
 ## Sources and verification
 
-[Selected catalog](../../reference/results.md) · [Archive source candidates](../../reference/source-intake.md) · [Verification interfaces](../../reference/verification-interfaces.md).
+[Selected catalog](../../reference/results.md) · [Archive source candidates](../../reference/source-intake.md).

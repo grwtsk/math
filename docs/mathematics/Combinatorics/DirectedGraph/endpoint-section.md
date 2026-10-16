@@ -1,5 +1,6 @@
 # Endpoint sections and incomparable ancestors
 
+
 Fix any quiver and root $r$, and let $R$ be its root-reachable vertex
 subtype. Suppose $a,b,c\in R$ satisfy
 $a\rightsquigarrow c$ and $b\rightsquigarrow c$, while neither
@@ -47,8 +48,8 @@ already contains such a diamond.
 
 The [source](../../../../GRWTSK/Combinatorics/DirectedGraph/EndpointSection.lean),
 [positive controls](../../../../GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/EndpointSection.lean),
-[native receipt](../../../../evidence/Combinatorics/DirectedGraph/endpoint-section-checks-2026-10-15.json)
-and [integration record](../../../../evidence/Combinatorics/DirectedGraph/endpoint-section-integration-2026-10-15.json)
+[native receipt](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/endpoint-section-checks-2026-10-15.json)
+and [integration record](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/endpoint-section-integration-2026-10-15.json)
 bind the selected exact closure. Pinned Lean 4.33.0 checks fresh selected
 local objects at trust zero with fatal warnings and the complete
 owned-declaration/transitive-axiom census permitting only `propext`,
@@ -61,6 +62,8 @@ Apache-2.0 terms. Human direction: R.A. Jacob Martone; formalization/checking
 assistance: OpenAI Codex. No arbitrary base-graph prefix embedding, executable
 cache expansion, proof implication, permission authority or Lean/runtime
 correspondence is inferred.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

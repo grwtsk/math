@@ -1,0 +1,11 @@
+{
+  "schema": "moebius-v5-application-scheduling-refusal-v1",
+  "status": "refused-busy-before-source-replay",
+  "error": "BUSY: existing native Lean/Lake jobs: [{\"pid\": 9239, \"argv\": \"/Users/think/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lake env printenv LEAN_PATH\"}]",
+  "original_run": ".noeaaeue/.local/checks/moebius-response-20261016T035801Z-1ebbd1c57590",
+  "receipt": ".noeaaeue/binding-repair/validation-completion/moebius-v5-application-scheduling-refusal/receipt.json",
+  "receipt_sha256": "513a878f531e7a916f2945cf26e0f3fcb89f577cf56d6925af76f746b008a734",
+  "source_compiles": 0,
+  "kernel_checked": false,
+  "scope": "Scheduler-only refusal. Exact receipt remains unchanged; retry uses existing opt-in native-slot wait without changing any binding or acceptance gate."
+}

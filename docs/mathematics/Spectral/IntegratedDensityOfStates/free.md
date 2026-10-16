@@ -1,5 +1,6 @@
 # Free eigenvalue counts and integrated density of states
 
+
 At $V=0$, Fourier transformation gives the multiplier $2\cos k$, hence spectrum $[-2,2]$. Its IDS is
 
 $$
@@ -32,7 +33,9 @@ using the clipped real arccos for exterior energies. For each internal label $0<
 
 ## Source and verification scope
 
-[Source](../../../../GRWTSK/Spectral/FreeIDS.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+[Source](../../../../GRWTSK/Spectral/FreeIDS.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../../.noeaaeue/documentation/reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

@@ -1,0 +1,5 @@
+'PPNCP04.OriginalClosure.completion_prefix_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PPNCP04.OriginalClosure.completion_total_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PPNCP04.OriginalClosure.AS_with_complete_admissible_chains_implies_P04' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

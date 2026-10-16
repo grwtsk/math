@@ -1,5 +1,6 @@
 # Signed Möbius cutoff decomposition
 
+
 Human mathematical direction: R.A. Jacob Martone. Formalization assistance: OpenAI Codex. MIT local contributions; Mathlib retains upstream credit and Apache-2.0 licensing.
 
 For a commutative ring arithmetic function \(f\), an actual inverse relation \(f*g=1\), and natural closed cutoff \(U\), let \(f_{\le U}(n)=f(n)\mathbf1_{n\le U}\) and \(f_{>U}=f-f_{\le U}\). The exact convolution identity is
@@ -12,7 +13,9 @@ The complete truncated output channels have both signs. Their outputs may be squ
 
 ## Sources and evidence
 
-[MoebiusTruncation](../../../../GRWTSK/NumberTheory/ArithmeticFunctions/MoebiusTruncation.lean), [truncated coefficients](../../../../GRWTSK/NumberTheory/ArithmeticFunctions/TruncatedMoebiusCoefficients.lean), [squareful return](../../../../GRWTSK/NumberTheory/ArithmeticFunctions/SquarefulMoebiusReturn.lean), [squarefree weighted return](../../../../GRWTSK/NumberTheory/ArithmeticFunctions/SquarefreeMoebiusSum.lean), and [complex casts](../../../../GRWTSK/NumberTheory/ArithmeticFunctions/ComplexMoebiusCast.lean) have their own public source replay in the [scoped receipt](../../../../evidence/NumberTheory/ArithmeticFunctions/density-arithmetic-checks.json). The identities do not assert a polynomial energy or local defect budget, and do not provide an unconditional RH witness.
+[MoebiusTruncation](../../../../GRWTSK/NumberTheory/ArithmeticFunctions/MoebiusTruncation.lean), [truncated coefficients](../../../../GRWTSK/NumberTheory/ArithmeticFunctions/TruncatedMoebiusCoefficients.lean), [squareful return](../../../../GRWTSK/NumberTheory/ArithmeticFunctions/SquarefulMoebiusReturn.lean), [squarefree weighted return](../../../../GRWTSK/NumberTheory/ArithmeticFunctions/SquarefreeMoebiusSum.lean), and [complex casts](../../../../GRWTSK/NumberTheory/ArithmeticFunctions/ComplexMoebiusCast.lean) have their own public source replay in the [scoped receipt](../../../../.noeaaeue/evidence/NumberTheory/ArithmeticFunctions/density-arithmetic-checks.json). The identities do not assert a polynomial energy or local defect budget, and do not provide an unconditional RH witness.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

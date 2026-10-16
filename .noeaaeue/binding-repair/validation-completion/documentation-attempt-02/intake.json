@@ -1,0 +1,10 @@
+{
+  "schema": "documentation-attempt-02-intake-v1",
+  "unregistered": [
+    "docs/mathematics/Analysis/Fourier/FiniteAdditiveProjector/projector.md",
+    "docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-moments.md"
+  ],
+  "registered_absent": [],
+  "source_hash_drift": [],
+  "new_pending_source": "GRWTSK/Analysis/Fourier/FiniteAdditiveProjector.lean"
+}

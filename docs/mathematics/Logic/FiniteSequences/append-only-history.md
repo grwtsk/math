@@ -1,5 +1,6 @@
 # Exact ordered history extensions
 
+
 For lists `oldRows` and `newRows` with decidable row equality, the executable
 `checkPrefix` accepts exactly when there is a suffix `tail` satisfying
 `newRows = oldRows ++ tail`. Every old row remains at its original position.
@@ -45,7 +46,7 @@ contracts.
 
 The [source](../../../../GRWTSK/Logic/FiniteSequences/AppendOnlyHistory.lean),
 [positive consumers](../../../../GRWTSK/Logic/FiniteSequences/Checks/Positive/AppendOnlyHistory.lean)
-and [selected native receipt](../../../../evidence/Logic/FiniteSequences/append-only-history-checks-2026-10-15.json)
+and [selected native receipt](../../../../.noeaaeue/evidence/Logic/FiniteSequences/append-only-history-checks-2026-10-15.json)
 bind the actual source, complete local dictionary closure, controls and owned
 axiom census. Replay uses pinned Lean 4.33.0, trust zero and fatal warnings,
 allowing only `propext`, `Classical.choice` and `Quot.sound`. Pinned dependency
@@ -58,16 +59,18 @@ reordering and insertion into old history. The Lean theorem concerns exact
 finite lists. A refinement from Python's schema-checked JSON rows and equality
 to Lean rows, and proofs of file persistence, hash commitments and transaction
 authenticity, remain open. The
-[integration record](../../../../evidence/Logic/FiniteSequences/ordered-history-integration-2026-10-15.json)
+[integration record](../../../../.noeaaeue/evidence/Logic/FiniteSequences/ordered-history-integration-2026-10-15.json)
 keeps those proof and operational scopes distinct. Authenticated-history
 literature is recorded in a
-[bounded primary-source review](../../../../evidence/Logic/FiniteSequences/ordered-history-literature-2026-10-15.json);
+[bounded primary-source review](../../../../.noeaaeue/evidence/Logic/FiniteSequences/ordered-history-literature-2026-10-15.json);
 no cryptographic security or mathematical novelty is claimed.
 
 Human mathematical direction: R.A. Jacob Martone. Formalization assistance:
 OpenAI Codex. Local source is MIT; Lean and Mathlib retain upstream credit and
 licensing. The incoming classification provenance module remains a separate
 candidate with its original verification status.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

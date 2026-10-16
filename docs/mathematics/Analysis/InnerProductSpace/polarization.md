@@ -10,7 +10,7 @@ GRWTSK added canonical placement, contract preservation, consumer replay and ind
 
 ## Source and verification scope
 
-[Source](../../../../GRWTSK/Analysis/Polarization.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+[Source](../../../../GRWTSK/Analysis/Polarization.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../../.noeaaeue/documentation/reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

@@ -1,5 +1,6 @@
 # Compaction checkpoints between finite prefix batches
 
+
 Let the initial actual stored prefix state satisfy `WellFormed`, and give two
 finite chronological lists of batches of rooted keyed occurrences. The
 checkpoint producer runs the first segment, applies the existing actual
@@ -44,15 +45,15 @@ internal empty batches and distinct retained roots are checked consumers.
 
 The [source](../../../../GRWTSK/Combinatorics/DirectedGraph/PrefixTableCheckpoint.lean),
 [positive controls](../../../../GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableCheckpoint.lean),
-[native receipt](../../../../evidence/Combinatorics/DirectedGraph/prefix-compaction-checkpoint-checks-2026-10-15.json)
-and [integration record](../../../../evidence/Combinatorics/DirectedGraph/prefix-compaction-checkpoint-integration-2026-10-15.json)
+[native receipt](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-compaction-checkpoint-checks-2026-10-15.json)
+and [integration record](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-compaction-checkpoint-integration-2026-10-15.json)
 bind fresh selected local sources and controls. Pinned Lean 4.33.0 checks trust
 zero, fatal warnings and every owned declaration and transitive axiom,
 allowing only `propext`, `Classical.choice` and `Quot.sound`. Clean pinned
 dependency objects are reused and fingerprinted; their sources and the whole
 umbrella are not rebuilt.
 
-The [durable decision](../../../../cache/decisions/compaction-checkpoint-state-v1.json)
+The [durable decision](../../../../.noeaaeue/cache/decisions/compaction-checkpoint-state-v1.json)
 records this semantic checkpoint and its storage boundaries. No raw array
 or old-slot stability across compaction is claimed. Criteria and evidence
 for appended rows remain explicit obligations. Runtime parser/JSON/zlib/hash,
@@ -60,6 +61,10 @@ filesystem and transaction refinement remain open. Local source is MIT;
 named imported Lean/Mathlib contributors retain their individual credit and
 terms. Human direction: R.A. Jacob Martone; formalization/checking: OpenAI
 Codex. Correlated model/source review is not independent validation.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
+
+The [finite schedule result](prefix-compaction-schedule.md) extends the actual checkpoint construction to chronological batch and compaction actions. It preserves checked histories after erasing compaction actions, while keeping dropped-and-reintroduced payload lookup separate from composed partial retention.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

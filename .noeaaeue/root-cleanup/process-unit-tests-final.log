@@ -1,0 +1,19 @@
+.................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................expansion rejected: [Errno 17] File exists: '/var/folders/sz/8x1hfd6n2qx3160dgdl8gdfr0000gn/T/tmpzxuu4gv3/out'
+...................................................................E..............................................................................................................
+======================================================================
+ERROR: test_archive_verified_without_extraction (test_verify_weil_power_source.ReplayControls.test_archive_verified_without_extraction)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/think/Desktop/math/.noeaaeue/tests/test_verify_weil_power_source.py", line 40, in test_archive_verified_without_extraction
+    m=R.archive_members()
+      ^^^^^^^^^^^^^^^^^^^
+  File "/Users/think/Desktop/math/.noeaaeue/scripts/verify_weil_power_source.py", line 69, in archive_members
+    if repository_path(root,p).read_bytes()!=out[p]:raise ValueError('original active copy changed')
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: original active copy changed
+
+----------------------------------------------------------------------
+Ran 659 tests in 8.746s
+
+FAILED (errors=1)
+{"profile": "TAXONOMY-APPEND-1", "status": "PROPOSAL_WRITTEN", "admission": "NOT_ESTABLISHED"}

@@ -1,5 +1,6 @@
 # Finite coverage and scope
 
+
 `GRWTSK.Logic.FiniteCoverage` carries four established propositions. Local proofs assemble over an explicitly covered domain with the original domain and index types. The tail variant requires a separate proof on the stated tail. Finite coverage never supplies that premise.
 
 The two scope counterexamples retain their exact statements: a property can hold throughout a bounded real interval and fail later on the ray; both endpoints can satisfy a property that fails at the midpoint.
@@ -10,7 +11,9 @@ GRWTSK added canonical placement, contract preservation and checked interface us
 
 ## Source and verification scope
 
-[Source](../../../../GRWTSK/Logic/FiniteCoverage.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+[Source](../../../../GRWTSK/Logic/FiniteCoverage.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../../.noeaaeue/documentation/reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

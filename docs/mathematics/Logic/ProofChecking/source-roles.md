@@ -1,5 +1,6 @@
 # Proof-checking source roles
 
+
 Mathematical subject, source role, logical status, and verification outcome are
 four different facts. The consolidation keeps them independently inspectable.
 
@@ -22,9 +23,11 @@ The public umbrella imports only library modules. Validation modules are run by
 their cataloged entry points, and a missing import, missing file, syntax error,
 or unavailable dependency does not count as a mathematical rejection.
 
-See the [source-layout reference](../../../reference/source-layout.md) and the
-[current consolidation report](../../../reference/lean-consolidation-report.md).
+See the [source-layout reference](../../../../.noeaaeue/documentation/reference/source-layout.md) and the
+[current consolidation report](../../../../.noeaaeue/documentation/reference/lean-consolidation-report.md).
 
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

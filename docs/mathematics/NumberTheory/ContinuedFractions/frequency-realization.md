@@ -1,5 +1,10 @@
 # Irrational frequency realization and native readback
 
+The maintained source links use the current PMD placement. Earlier verification
+receipts retain their recorded source paths, bytes and tool context. Fresh
+proof replay of the relocated context remains pending; see the
+[source relocation scope](../../../../.noeaaeue/documentation/reference/source-layout.md#pmd-source-tree).
+
 - [Real-frequency existence](../../../../GRWTSK/NumberTheory/ContinuedFractions/FrequencyRealization.lean)
   constructs every infinite positive partial-quotient stream's unique irrational
   real frequency in `(0,1)`. Compactness supplies complete quotients; their exact
@@ -11,7 +16,7 @@
 
 ## Source and verification scope
 
-[Source](../../../../GRWTSK/NumberTheory/ContinuedFractions/FrequencyRealization.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+[Source](../../../../GRWTSK/NumberTheory/ContinuedFractions/FrequencyRealization.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../../.noeaaeue/documentation/reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

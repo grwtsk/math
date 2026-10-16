@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/Users/think/Desktop/math/.noeaaeue/scripts/check_documentation.py", line 187, in <module>
+    if __name__=='__main__':main()
+  File "/Users/think/Desktop/math/.noeaaeue/scripts/check_documentation.py", line 183, in main
+    n,s=layout.check(source_census=source_census)
+  File "/Users/think/Desktop/math/.noeaaeue/scripts/check_documentation_layout.py", line 572, in check
+    validate(root,layout,inventory,historical,visible,bound,source_names,source_census)
+  File "/Users/think/Desktop/math/.noeaaeue/scripts/check_documentation_layout.py", line 546, in validate
+    check_links(root,pages,bound)
+  File "/Users/think/Desktop/math/.noeaaeue/scripts/check_documentation_layout.py", line 371, in check_links
+    require(target.exists(),'broken link: '+name+' -> '+link)
+  File "/Users/think/Desktop/math/.noeaaeue/scripts/check_documentation_layout.py", line 21, in require
+    if not condition: raise LayoutError(message)
+check_documentation_layout.LayoutError: broken link: docs/mathematics/Combinatorics/Sequences/partial-sum-ordering.md -> ../../../../.noeaaeue/receipts/modular-partial-sum-ordering/implementation-report.md

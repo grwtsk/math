@@ -1,0 +1,41 @@
+{
+  "schema": "validation-completion-pre-replay-preservation-v1",
+  "observed_utc": "2026-10-16T03:03:15.671610+00:00",
+  "unchanged_counts": {
+    "prior_receipts_and_evidence": 5606,
+    "formal_sources": 854,
+    "pinned_environment_and_legal": 10
+  },
+  "changes": {
+    "prior_receipts_and_evidence": [
+      {
+        "path": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/abc-resume-divisor-sectors-2026-10-15.json",
+        "initial_sha256": "fdad5a913a695b77ba4225f0b6391efaba6076137c7a051284b40e9f003469b6",
+        "observed_sha256": "7385316054953bb3874551c47a41d7d4a816d1adc5419f43fd81b8e98832bd98"
+      },
+      {
+        "path": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/divisor-sectors-status-2026-10-15.json",
+        "initial_sha256": "2127033cbbd95d38375804cb9f586ee64ea36faf99647e83919fa660c577efb3",
+        "observed_sha256": "4548b4edb06f51cd6168f200584b83da2489daccf0a641106becbdebbc03a7fe"
+      }
+    ],
+    "formal_sources": [],
+    "pinned_environment_and_legal": []
+  },
+  "new_formal_paths_from_external_writers": [
+    "GRWTSK/Analysis/Fourier/FiniteAdditiveProjector.lean",
+    "GRWTSK/Analysis/Fourier/ZModExpectedLayers.lean",
+    "GRWTSK/Analysis/Fourier/ZModPartitionConcentration.lean",
+    "GRWTSK/Combinatorics/Sequences/BalancedPartitionTails.lean",
+    "GRWTSK/Combinatorics/Sequences/ConditionalPartitionExposure.lean",
+    "GRWTSK/Combinatorics/Sequences/HypergeometricLowerTail.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/AdditiveCharacterMoments.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorMissingNoWrap.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorScaledCongruenceCancellation.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorToABC.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorUnscaledJointWeight.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorWrongNormalization.lean",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Positive/AdditiveCharacterMoments.lean"
+  ],
+  "constraint": "No GRWTSK/source taxonomy writes by this team. Two external mutable cursor/status updates retained with hashes; historical immutable receipts and earlier validation records unchanged."
+}

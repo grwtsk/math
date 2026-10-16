@@ -1,0 +1,74 @@
+{
+  "results": [
+    {
+      "command": [
+        ".noeaaeue/.local/root-cleanup/python-env/bin/python3",
+        "-B",
+        ".noeaaeue/scripts/check_documentation.py"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 9.17,
+      "log": ".noeaaeue/binding-repair/validation-completion/documentation-attempt-02/check-01.log",
+      "log_sha256": "628bc98e5a38c1ce905cd6486d7d32f603655ebb95cb7ebad47fdcfbc1dff2a9"
+    },
+    {
+      "command": [
+        ".noeaaeue/.local/root-cleanup/python-env/bin/python3",
+        "-O",
+        "-B",
+        ".noeaaeue/scripts/check_documentation.py"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 12.309,
+      "log": ".noeaaeue/binding-repair/validation-completion/documentation-attempt-02/check-02.log",
+      "log_sha256": "628bc98e5a38c1ce905cd6486d7d32f603655ebb95cb7ebad47fdcfbc1dff2a9"
+    },
+    {
+      "command": [
+        ".noeaaeue/.local/root-cleanup/python-env/bin/python3",
+        "-B",
+        ".noeaaeue/scripts/check_documentation_layout.py"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 9.449,
+      "log": ".noeaaeue/binding-repair/validation-completion/documentation-attempt-02/check-03.log",
+      "log_sha256": "7da8904ba5a8ec7e065067db95fb64088101ce1a3a32cfb1195b3470744b9588"
+    },
+    {
+      "command": [
+        ".noeaaeue/.local/root-cleanup/python-env/bin/python3",
+        "-O",
+        "-B",
+        ".noeaaeue/scripts/check_documentation_layout.py"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 10.462,
+      "log": ".noeaaeue/binding-repair/validation-completion/documentation-attempt-02/check-04.log",
+      "log_sha256": "7da8904ba5a8ec7e065067db95fb64088101ce1a3a32cfb1195b3470744b9588"
+    },
+    {
+      "command": [
+        ".noeaaeue/.local/root-cleanup/python-env/bin/python3",
+        "-B",
+        ".noeaaeue/scripts/test_documentation_layout.py"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 0.713,
+      "log": ".noeaaeue/binding-repair/validation-completion/documentation-attempt-02/check-05.log",
+      "log_sha256": "ff2708297e8ab29d00d8149aa16ba02636839f1d3748d5687f2986f3776f5244"
+    },
+    {
+      "command": [
+        ".noeaaeue/.local/root-cleanup/python-env/bin/python3",
+        "-O",
+        "-B",
+        ".noeaaeue/scripts/test_documentation_layout.py"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 0.793,
+      "log": ".noeaaeue/binding-repair/validation-completion/documentation-attempt-02/check-06.log",
+      "log_sha256": "f74e39e501db1e3db57cd39cf5711ab8f26d29e765c310f962e02b517f74ed75"
+    }
+  ],
+  "passed": true
+}

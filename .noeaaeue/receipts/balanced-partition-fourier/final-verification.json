@@ -1,0 +1,103 @@
+{
+  "utc": "2026-10-16T02:37:05.711537+00:00",
+  "source_version": "arXiv:2602.15797v1",
+  "initial_head": "8e35dcd5fb4f42640aaaaf68e682a2254736f4da",
+  "ending_head": "8e35dcd5fb4f42640aaaaf68e682a2254736f4da",
+  "sampling_law_status": "PROVED for every output event; exact uniform marginal and independent conditional choices",
+  "fourier_status": "source equations3.1-3.4, Lemmas3.2 and3.4-3.7, Facts2.3-2.5 and universal finite summation bound proved",
+  "theorem13_status": "OPEN: random-partition concentration in Lemmas3.1/3.3, expected layers and remaining quantitative combination",
+  "new_analytical_assumptions": false,
+  "new_axioms": false,
+  "owned_declarations": 349,
+  "theorems_including_generated": 305,
+  "all_source_and_dependency_hashes_stable": true,
+  "repository_wide_proof_acceptance": false,
+  "checks": [
+    {
+      "command": "python3 -B .noeaaeue/scripts/check_balanced_partition_fourier.py",
+      "exit_code": 0,
+      "log": "selected-owned-audit.log",
+      "sha256": "758c7a4d42e855dc787689f7115db7d26df958051fce8417a82db717d4fee7fa",
+      "scope": "all 10 source replays and exact owning-module audit, including generated declarations"
+    },
+    {
+      "command": "lake build GRWTSK",
+      "exit_code": 0,
+      "log": "full-build-final.log",
+      "sha256": "b0c0277db50842f320ccf3420054c1722d54bb2bdbb5b8ea4d903f9599ed0c4a",
+      "scope": "ordinary full aggregate build, 9141 jobs"
+    },
+    {
+      "command": "python3 -B .noeaaeue/scripts/check_math_layout.py --json",
+      "exit_code": 0,
+      "log": "layout-final.json",
+      "sha256": "cc5c13aab4260e9bc7d398c5e4f4690aac3449bc04c3162044d3b568e15d9d53",
+      "scope": "whole-repository structural check, zero findings"
+    },
+    {
+      "command": "python3 -B .noeaaeue/scripts/check_math_trust.py",
+      "exit_code": 2,
+      "log": "full-trust-final.log",
+      "sha256": "0de6e27cb76ceebd437719e5a1018c9719dd54a77dfef3c70f0538ebe39643ee",
+      "scope": "BUSY: another full trust replay holds the project lock; no claim of a global proof pass"
+    },
+    {
+      "command": "python3 -B .noeaaeue/scripts/check_documentation.py --render",
+      "exit_code": 1,
+      "log": "documentation-render.log",
+      "sha256": "a106914f69b3967e6c8fd2a0071a425392452bd5f98df1f1257504f569909b61",
+      "scope": "projections written; whole-repository validation blocked by concurrent unregistered page"
+    },
+    {
+      "command": "python3 -B .noeaaeue/scripts/check_documentation.py",
+      "exit_code": 1,
+      "log": "documentation-normal.log",
+      "sha256": "a106914f69b3967e6c8fd2a0071a425392452bd5f98df1f1257504f569909b61",
+      "scope": "whole-repository documentation validation"
+    },
+    {
+      "command": "python3 -O -B .noeaaeue/scripts/check_documentation.py",
+      "exit_code": 1,
+      "log": "documentation-optimized.log",
+      "sha256": "a106914f69b3967e6c8fd2a0071a425392452bd5f98df1f1257504f569909b61",
+      "scope": "whole-repository documentation validation"
+    },
+    {
+      "command": "python3 -B .noeaaeue/scripts/test_documentation_layout.py",
+      "exit_code": 0,
+      "log": "documentation-tests-normal.log",
+      "sha256": "401c976c52c79a77fe914706e1e466568e3d37b6f98a7fbee76febe3ecd05ac2",
+      "scope": "109 tests"
+    },
+    {
+      "command": "python3 -O -B .noeaaeue/scripts/test_documentation_layout.py",
+      "exit_code": 0,
+      "log": "documentation-tests-optimized.log",
+      "sha256": "a457a04d5962abeef004c74b64889c5cae601e0a427395a6de46ae326dd82ea3",
+      "scope": "109 tests"
+    },
+    {
+      "command": "lake env lean --trust=0 -DwarningAsError=true Theorem13NotClosed.lean",
+      "exit_code": 1,
+      "log": "theorem13-promotion-negative.log",
+      "sha256": "6745fa3e5cf4df781d21266bc1cac7e4856787ff11668e73d7bbb22d39ddc314",
+      "scope": "EXPECTED rejection of promoting layer bound to numerical Theorem1.3"
+    },
+    {
+      "command": "lake env lean --trust=0 -DwarningAsError=true CyclicOwnedAudit.lean",
+      "exit_code": 1,
+      "log": "cyclic-runtime-audit.log",
+      "sha256": "c4ea7fffc54e8dfa424f91893add9d2ffe4e6d021eb792116e36d3b4eaeab8d7",
+      "scope": "resolved failure: computable recursive source generated forbidden partial helper; retained variant; final selected audit passes"
+    }
+  ],
+  "mathematical_inventory": "mathematical-inventory.json",
+  "source_dependencies": "dependencies.json",
+  "source_identity": "source-identity.json",
+  "changed_paths": "changed-paths.json",
+  "ending_state": "ending-state.json",
+  "documentation_blockers": "documentation-blockers.json",
+  "selected_guide_check": "selected-guides.json",
+  "implementation_report": "implementation-report.md",
+  "report_sha256": "50ac98c9a1d1d0711ad90a76d60fd38ca13961ae3cf4e118d5e79d8eb551faf9"
+}

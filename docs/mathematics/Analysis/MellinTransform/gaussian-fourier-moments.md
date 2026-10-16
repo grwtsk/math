@@ -44,8 +44,8 @@ or a counterexample to the complete Fourier-moment theorem.
 
 The [source](../../../../GRWTSK/Analysis/MellinTransform/GaussianFourierMoments.lean),
 [positive controls](../../../../GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianFourierMoments.lean),
-[joint native receipt](../../../../evidence/Analysis/MellinTransform/gaussian-fourier-moments-checks-2026-10-15.json)
-and [integration record](../../../../evidence/Analysis/MellinTransform/gaussian-fourier-moments-integration-2026-10-15.json)
+[joint native receipt](../../../../.noeaaeue/evidence/Analysis/MellinTransform/gaussian-fourier-moments-checks-2026-10-15.json)
+and [integration record](../../../../.noeaaeue/evidence/Analysis/MellinTransform/gaussian-fourier-moments-integration-2026-10-15.json)
 bind the exact selected local closure, including the generic Fourier
 supplier and both control modules. Pinned Lean 4.33.0 checks trust zero,
 fatal warnings and all owned declarations/transitive axioms, allowing only

@@ -1,5 +1,10 @@
 # Ordered interval products
 
+The maintained source links use the current PMD placement. Earlier verification
+receipts retain their recorded source paths, bytes and tool context. Fresh
+proof replay of the relocated context remains pending; see the
+[source relocation scope](../../../../.noeaaeue/documentation/reference/source-layout.md#pmd-source-tree).
+
 `GRWTSK.Algebra.OrderedProduct` carries established finite-product and group identities. The newest factor acts on the left: the successor product is `A (n + k) * orderedProduct A n k`. Concatenating intervals puts the later interval on the left.
 
 The basic product requires only `Monoid`. Gauge transport and conjugation use `Group`. Same-order inversion requires commuting factors. The sign-inverse theorem also requires the explicit edgewise conjugation law; neither hypothesis can be omitted.
@@ -12,7 +17,7 @@ This is a local candidate. Transactional admission, further review and public re
 
 ## Source and verification scope
 
-[Source](../../../../GRWTSK/Algebra/OrderedProduct.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+[Source](../../../../GRWTSK/Algebra/OrderedProduct.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../../.noeaaeue/documentation/reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

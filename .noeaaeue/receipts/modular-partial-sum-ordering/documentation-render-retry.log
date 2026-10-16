@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/Users/think/Desktop/math/.noeaaeue/scripts/check_documentation.py", line 188, in <module>
+    if __name__=='__main__':main()
+  File "/Users/think/Desktop/math/.noeaaeue/scripts/check_documentation.py", line 171, in main
+    outputs,preimages=render_indexes();outputs['docs/reference/results.md']=expected.encode()
+  File "/Users/think/Desktop/math/.noeaaeue/scripts/check_documentation.py", line 126, in render_indexes
+    unused,terminal=layout.observe_inputs(ROOT,input_names)
+  File "/Users/think/Desktop/math/.noeaaeue/scripts/check_documentation_layout.py", line 286, in observe_inputs
+    raw,observation=read_safe(root,name,with_observation=True)
+  File "/Users/think/Desktop/math/.noeaaeue/scripts/check_documentation_layout.py", line 61, in read_safe
+    require(component_identity(visible_before,strict)==expected
+  File "/Users/think/Desktop/math/.noeaaeue/scripts/check_documentation_layout.py", line 21, in require
+    if not condition: raise LayoutError(message)
+check_documentation_layout.LayoutError: path changed while opened: GRWTSK/LinearAlgebra/SchrodingerTransfer.lean

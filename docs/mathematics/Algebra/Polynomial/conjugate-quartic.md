@@ -45,13 +45,13 @@ the repeated-root list are checked consumer fixtures.
 [Library source](../../../../GRWTSK/Algebra/Polynomial/ConjugateQuartic.lean),
 [consumer contracts](../../../../GRWTSK/Algebra/Polynomial/Checks/Positive/ConjugateQuartic.lean),
 [zero-height rejection control](../../../../GRWTSK/Algebra/Polynomial/ConjugateQuartic/Checks/Negative/ZeroHeight.lean),
-and the [selected replay receipt](../../../../evidence/NumberTheory/Zeta/quartic-trace-checks-2026-10-15.json)
+and the [selected replay receipt](../../../../.noeaaeue/evidence/NumberTheory/Zeta/quartic-trace-checks-2026-10-15.json)
 bind the checked bytes. Lean 4.33.0 with the repository's pinned Mathlib is
 used at trust zero with fatal warnings, fresh selected project objects, and
 the repository's complete owned-declaration/transitive-axiom audit. Pinned
 dependency objects are reused; neither Mathlib source nor the whole repository
 is rebuilt. This is native verification, with no independent review claim.
-The [integration record](../../../../evidence/NumberTheory/Zeta/quartic-trace-integration-2026-10-15.json)
+The [integration record](../../../../.noeaaeue/evidence/NumberTheory/Zeta/quartic-trace-integration-2026-10-15.json)
 separately retains the pre-existing repository-wide layout and documentation failures.
 
 [Nathanson's Hermite–Sylvester note](https://arxiv.org/abs/1911.01745)

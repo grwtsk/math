@@ -10,7 +10,7 @@ supply no polynomial arithmetic cancellation budget.
 
 ## Source and verification scope
 
-[Source](../../../../GRWTSK/Analysis/Convolution/AutocorrelationDerivativeEnergy.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+[Source](../../../../GRWTSK/Analysis/Convolution/AutocorrelationDerivativeEnergy.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../../.noeaaeue/documentation/reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

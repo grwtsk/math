@@ -1,5 +1,6 @@
 # Reindexing finite relation tables and rooted histories
 
+
 Fix old and new finite relation tables over the same vertex and role types,
 and an actual index map $\rho:\operatorname{Fin}(n)\to\operatorname{Fin}(m)$.
 Suppose every mapped row preserves its actual source, target and role.
@@ -62,8 +63,8 @@ is a different map from reindexing parent-dictionary storage slots.
 
 The [source](../../../../GRWTSK/Combinatorics/DirectedGraph/RoleRelationReindex.lean),
 [positive controls](../../../../GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/RoleRelationReindex.lean),
-[native receipt](../../../../evidence/Combinatorics/DirectedGraph/role-relation-reindex-checks-2026-10-15.json)
-and [integration record](../../../../evidence/Combinatorics/DirectedGraph/role-relation-reindex-integration-2026-10-15.json)
+[native receipt](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/role-relation-reindex-checks-2026-10-15.json)
+and [integration record](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/role-relation-reindex-integration-2026-10-15.json)
 bind exact fresh selected local sources and controls. Pinned Lean 4.33.0
 checks trust zero, fatal warnings and the complete owned-declaration and
 transitive-axiom census, allowing only `propext`, `Classical.choice` and
@@ -78,6 +79,8 @@ fixture leaves the operational taxonomy duplicate-edge guard unchanged.
 Correlated review is not independent validation. Local source is MIT;
 imported Lean and Mathlib retain individual credits and Apache-2.0 terms.
 Human direction: R.A. Jacob Martone; formalization/checking: OpenAI Codex.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

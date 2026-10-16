@@ -1,5 +1,6 @@
 # Role-qualified finite relation tables and typed histories
 
+
 Fix a finite table with source and target vertices and a role for each
 index, and fix a selected role. A qualified ID is an actual table index
 whose role equals that selection. The table and selected role parameterize
@@ -52,8 +53,8 @@ are not stable across revisions without that translation.
 
 The [source](../../../../GRWTSK/Combinatorics/DirectedGraph/RoleRelationTable.lean),
 [positive controls](../../../../GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/RoleRelationTable.lean),
-[native receipt](../../../../evidence/Combinatorics/DirectedGraph/role-relation-table-checks-2026-10-15.json)
-and [integration record](../../../../evidence/Combinatorics/DirectedGraph/role-relation-table-integration-2026-10-15.json)
+[native receipt](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/role-relation-table-checks-2026-10-15.json)
+and [integration record](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/role-relation-table-integration-2026-10-15.json)
 bind the exact fresh selected local source closure and controls. Pinned
 Lean 4.33.0 checks trust zero, fatal warnings and the full owned-declaration
 and transitive-axiom census, allowing only `propext`, `Classical.choice` and
@@ -68,6 +69,8 @@ selected role are part of the mathematical context. Correlated source/model
 review is not independent validation. Local source is MIT; imported Lean
 and Mathlib retain individual credits and Apache-2.0 terms. Human direction:
 R.A. Jacob Martone; formalization/checking: OpenAI Codex.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

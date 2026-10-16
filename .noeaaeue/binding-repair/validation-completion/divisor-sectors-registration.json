@@ -1,0 +1,41 @@
+{
+  "schema": "divisor-sector-documentation-registration-observation-v1",
+  "registration": "Already present from concurrent source author; validated rather than overwritten.",
+  "page": "docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/divisor-sectors.md",
+  "record": {
+    "title": "Divisor sectors of additive moments",
+    "subject": "NumberTheory",
+    "object": "Diophantine/PrimitiveAdditiveTriples",
+    "primary_source": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/DivisorSectorReindexing.lean",
+    "source_sha256": "d74f5363926558dc39f0ff7ee0538830336059e21b4f078868e3576fd46968b1",
+    "status": "fresh-selected",
+    "evidence": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/divisor-sectors-checks-2026-10-15.json",
+    "contribution": {
+      "direction": "R.A. Jacob Martone",
+      "formalization": "OpenAI Codex",
+      "scope": "Finite positive-divisor sector bijection, exact floor and scaled joint-weight identities; no arithmetic estimate or abc closure."
+    }
+  },
+  "source_sha256_observed": "d74f5363926558dc39f0ff7ee0538830336059e21b4f078868e3576fd46968b1",
+  "receipt_sha256_observed": "bd3208da017e4b8ad090682c86f02df7a79bac2085d08077083ea9f5262b1331",
+  "receipt_outcome": "passed",
+  "selected_checks": {
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Definitions.lean": "passed",
+    "GRWTSK/NumberTheory/ArithmeticFunctions/CoprimeDivisorFilter.lean": "passed",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Moments.lean": "passed",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/MomentReindexing.lean": "passed",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/DivisorSectorReindexing.lean": "passed",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Radical.lean": "passed",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/ABCStatement.lean": "passed",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Positive/DivisorSectorReindexing.lean": "passed",
+    "SelectedAudit.lean": "passed",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/SectorMissingPositiveDivisor.lean": "passed",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/SectorWrongFloorCutoff.lean": "passed",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/SectorMissingAdditiveCutoff.lean": "passed",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/SectorUnscaledThirdCoordinate.lean": "passed",
+    "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/SectorToABC.lean": "passed"
+  },
+  "recorded_source_hash": "d74f5363926558dc39f0ff7ee0538830336059e21b4f078868e3576fd46968b1",
+  "recorded_source_drift": [],
+  "scope": "Exact finite selected receipt, source, premises and attribution inspected. Registration/structural checking supplies no new proof replay, all-scale arithmetic bound, or abc conclusion."
+}

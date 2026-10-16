@@ -1,5 +1,6 @@
 # Incremental prefix-state updates and relation reindexing
 
+
 Fix actual finite old and new relation tables, and an injective index map
 preserving source, target and role. Map actual rooted occurrences through its
 quiver prefunctor, retaining keys, order and repetitions. For an arbitrary
@@ -44,8 +45,8 @@ intended negative use. Empty rows still retain their mapped root.
 
 The [source](../../../../GRWTSK/Combinatorics/DirectedGraph/PrefixTableUpdateReindex.lean),
 [positive controls](../../../../GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableUpdateReindex.lean),
-[native receipt](../../../../evidence/Combinatorics/DirectedGraph/prefix-update-reindex-checks-2026-10-15.json)
-and [integration record](../../../../evidence/Combinatorics/DirectedGraph/prefix-update-reindex-integration-2026-10-15.json)
+[native receipt](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-update-reindex-checks-2026-10-15.json)
+and [integration record](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-update-reindex-integration-2026-10-15.json)
 bind fresh selected local sources and controls. Pinned Lean 4.33.0 checks trust
 zero, fatal warnings and every owned declaration and transitive axiom,
 allowing only `propext`, `Classical.choice` and `Quot.sound`. Clean pinned
@@ -58,6 +59,8 @@ refinement, source acceptance or permission authority. Local source is MIT;
 imported Lean/Mathlib retain their individual author credits and Apache-2.0
 terms. Human direction: R.A. Jacob Martone; formalization/checking: OpenAI Codex.
 Correlated model/source review is not independent validation.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

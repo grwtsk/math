@@ -1,5 +1,6 @@
 # Sturmian phase partitions and count limits
 
+
 For an irrational frequency $0<\alpha<1$, the literal length $L$ Sturmian coding changes only at the $L+1$ phase points $\{-j\alpha\}$, $0\le j\le L$. Consequently the actual finite Dirichlet eigenvalue count is a finite step function of phase. Frequencies of these phase intervals at the true block step $L\alpha$, combined with the checked boundary and remainder estimate, give a route to the actual normalized count limit without constructing the entire Sturmian hull.
 
 **Status:** the phase partition, frequency and limit arguments below are written mathematics awaiting Lean replay and independent acceptance. They are not certified by the existing spectral receipt. The actual repeated-block estimate and origin-to-phase identity are already locally kernel checked in [SturmianBlockCounts](../../../../GRWTSK/Spectral/SturmianBlockCounts.lean). The complete word, matrix and count adapter script is a local candidate retained during the coordinated source migration; no new library module has been admitted. RH and the independent arithmetic all-rate estimate remain open. The existing audit consumers were relocated during the subject migration. Their earlier receipt remains historical for its original inputs until fresh native replay, even where the spectral library source bytes are unchanged.
@@ -109,7 +110,9 @@ Character geometric sums at the actual step $L\alpha$, continuous approximation,
 
 ## Source and verification scope
 
-[Source](../../../../GRWTSK/Spectral/SturmianBlockCounts.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+[Source](../../../../GRWTSK/Spectral/SturmianBlockCounts.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../../.noeaaeue/documentation/reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

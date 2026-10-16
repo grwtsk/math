@@ -1,5 +1,6 @@
 # Stable updates of stored rooted prefix tables
 
+
 A stored state retains a root, a finite dictionary $D$ of complete typed
 edge traces, a parent table $N$, and ordered keyed real-row references.
 Its structural invariant requires duplicate freedom, prefix closure and
@@ -65,8 +66,8 @@ criterion; a criterion on all appended rows needs separate evidence.
 
 The [source](../../../../GRWTSK/Combinatorics/DirectedGraph/PrefixTableState.lean),
 [positive controls](../../../../GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableState.lean),
-[native receipt](../../../../evidence/Combinatorics/DirectedGraph/prefix-table-state-checks-2026-10-15.json)
-and [integration record](../../../../evidence/Combinatorics/DirectedGraph/prefix-table-state-integration-2026-10-15.json)
+[native receipt](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-table-state-checks-2026-10-15.json)
+and [integration record](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-table-state-integration-2026-10-15.json)
 bind the actual selected local import closure and controls. Fresh sources
 are checked with pinned Lean 4.33.0, trust zero, fatal warnings and a full
 owned-declaration/transitive-axiom census permitting only `propext`,
@@ -81,6 +82,8 @@ independent validation; no novelty, whole-library or RH claim is made.
 Local source is MIT; imported Lean and Mathlib retain their individual
 credits and Apache-2.0 terms. Human direction: R.A. Jacob Martone;
 formalization/checking: OpenAI Codex.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

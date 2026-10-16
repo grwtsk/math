@@ -1,0 +1,650 @@
+{
+  "schema": "validation-completion-documentation-preimages-v1",
+  "archive": ".noeaaeue/binding-repair/originals/validation-completion",
+  "files": [
+    {
+      "path": ".noeaaeue/documentation/reference/documentation-layout.json",
+      "sha256": "d71092945f8aa280d5d9f2b149010eada54f1cf95de734c29296a8e2a1af2d7e"
+    },
+    {
+      "path": "docs/reference/object-source-bindings.json",
+      "sha256": "24ff4bf595edbeff9d989a317878d2169f3dbe06085f9a5989b96e9b95b8e349"
+    },
+    {
+      "path": "docs/reference/library-summary.json",
+      "sha256": "99fdce30882bcfdeaddc57f07ae20b161a12916f43522f5b915cac73ac256ab7"
+    },
+    {
+      "path": "docs/reference/results.md",
+      "sha256": "ca7661062cf4d56f1185a16dc7d7ca055c59a53cc115e2a218325f2e2001283c"
+    },
+    {
+      "path": "docs/index.md",
+      "sha256": "ec3843d319c66afac6afb82f74dbd33768dd9d814ca5081cb4c469e299f272d0"
+    },
+    {
+      "path": "docs/start/least-prime.md",
+      "sha256": "ec5ff51ab20701418d80d4159b6a1c3b5ad42000d7bd51ed58ea5627e2ca240c"
+    },
+    {
+      "path": "docs/mathematics/Order/index.md",
+      "sha256": "fd9f5cb343090a43bedc2e8a97481332eb79ba7601b2945a73c55f77706113c2"
+    },
+    {
+      "path": "docs/mathematics/Order/Embeddings/prefix-obstruction.md",
+      "sha256": "4114ce4432231007659996cede2189edb86a0c7ebaed4641285cd8d0eee946dd"
+    },
+    {
+      "path": "docs/mathematics/Analysis/index.md",
+      "sha256": "505f4f962ae7ca7f400bbe386486a7741e7df30a4e2ed35c2fc386797095cb83"
+    },
+    {
+      "path": "docs/mathematics/Analysis/Series/dyadic-kernel.md",
+      "sha256": "5b83c1340bd35b2be4d47841b0e84fecbbd2d4c509cb1289362e2e2859cb8ae5"
+    },
+    {
+      "path": "docs/mathematics/Analysis/InnerProductSpace/polarization.md",
+      "sha256": "552d81c122332265529759e14471cd90dfd3207f912d18dee68b15bcc62b80b2"
+    },
+    {
+      "path": "docs/mathematics/Analysis/InnerProductSpace/joint-graph-solvability.md",
+      "sha256": "d648d6b6ed3d77a1aa996e4f4da2ca40d46593a7eab6ba542b90515e0c492eb6"
+    },
+    {
+      "path": "docs/mathematics/Analysis/InnerProductSpace/closed-operator-solvability.md",
+      "sha256": "b998763c44ce113c67f1b5bcafe20773ec2b891322c2d8d57d6a3f8e48513bf1"
+    },
+    {
+      "path": "docs/mathematics/Analysis/InnerProductSpace/closed-complex-solvability.md",
+      "sha256": "474ebdb72d1ddf274c8cbe257df333b0763bbf19761410c98550ccd35f84e67a"
+    },
+    {
+      "path": "docs/mathematics/Analysis/InnerProductSpace/causal-response-gram.md",
+      "sha256": "394b52d35d66ad7fe785f0a9e03662f23073378e544ac3ba60142278f4a3f58a"
+    },
+    {
+      "path": "docs/mathematics/Analysis/Complex/CriticalReflection/reflection.md",
+      "sha256": "68a8641eacd30d218580c152b4c5f6b3d171dff0db1a5888dbe623e0154f9f1a"
+    },
+    {
+      "path": "docs/mathematics/Analysis/Asymptotics/polynomial-error.md",
+      "sha256": "eb35b6b7bb404202389af29348b6c8ff5550f1e98f5f33dd6a5df357eaf73b09"
+    },
+    {
+      "path": "docs/mathematics/Analysis/Fourier/partition-character-energy.md",
+      "sha256": "aef397c0a5d6514010f363e880ec66e84bf2ce993e942520dfd1091724406c7c"
+    },
+    {
+      "path": "docs/mathematics/Analysis/Fourier/subset-sum-laws.md",
+      "sha256": "bb1875c1fca806666f8ed2cdbb868042e4edba30ba3c5b312b84f68227f35a32"
+    },
+    {
+      "path": "docs/mathematics/Analysis/Fourier/schwartz-moments.md",
+      "sha256": "d76bd23ac64f094aba2fa9d87abe86034c8da1d2ac7fc184b5287e0a7ce399a5"
+    },
+    {
+      "path": "docs/mathematics/Analysis/Fourier/WindowCertificates/angular.md",
+      "sha256": "7752f88eff9c29f35d862920fd5952f98cac70e9d1efced388192864ae323e11"
+    },
+    {
+      "path": "docs/mathematics/Analysis/Fourier/IntegerSeries/encoding.md",
+      "sha256": "deb1e41c6333aa1b72ac47dcfc875984c8ba679afe10fd0743851e8baf575e89"
+    },
+    {
+      "path": "docs/mathematics/Analysis/Integration/interval-reflection.md",
+      "sha256": "f6d65f003edc24a58e0b41375e6b67d2f77ba83526e627bd30a3bc335de91898"
+    },
+    {
+      "path": "docs/mathematics/Analysis/Integration/exponential-volterra-l2.md",
+      "sha256": "025a6df05180a6e2f7d2a0d462437dc1e68268b617853a2722215a0b1bcb7a71"
+    },
+    {
+      "path": "docs/mathematics/Analysis/LaplaceTransform/exponential-energy.md",
+      "sha256": "82d134180d849340f77443bfb6d186d4234977dac15870de6bbada18dcbf27cc"
+    },
+    {
+      "path": "docs/mathematics/Analysis/PartitionOfUnity/dyadic-annulus.md",
+      "sha256": "ee994e460efbccb76340eec9c71239e07b681a5a508d94d4198901f7c51ca7ba"
+    },
+    {
+      "path": "docs/mathematics/Analysis/TestFunctions/exponential-moments.md",
+      "sha256": "e87b99b76b5981e2511d67b319597a99d9024654d9cafc7a00c68e55d6bd3359"
+    },
+    {
+      "path": "docs/mathematics/Analysis/TestFunctions/separation.md",
+      "sha256": "a12513dd23a53a5bfdc20b42fa1018bd7502ca9801f20dc6343fd50d37fa07a5"
+    },
+    {
+      "path": "docs/mathematics/Analysis/TestFunctions/polynomial-profile.md",
+      "sha256": "0fa5eec6409fcb4d5cf7c103e2977f48a7e0b9eb516bec796c2b4df8e84df985"
+    },
+    {
+      "path": "docs/mathematics/Analysis/Inequalities/finite-square-sum.md",
+      "sha256": "78605157f28f879d31fa90d8252c46343905a632aca9e97411537453bbaed127"
+    },
+    {
+      "path": "docs/mathematics/Analysis/NormedSpace/reconstruction.md",
+      "sha256": "ec6d15083fa79db47a8a336e27a7515ac6d6d353d0fbdf404454e41a8eb1d39e"
+    },
+    {
+      "path": "docs/mathematics/Analysis/FiniteSums/weighted-degree-comparison.md",
+      "sha256": "fe777a6b263bf8d4636286ed3c04849e277c583a6b9c3887d85622aefb3c05dc"
+    },
+    {
+      "path": "docs/mathematics/Analysis/Calculus/compact-cutoff.md",
+      "sha256": "feabb4c6113c58ee21b244ef2d82c940b0badc18e89ded764c41cf7e1f240c45"
+    },
+    {
+      "path": "docs/mathematics/Analysis/Convolution/derivative-energy.md",
+      "sha256": "9a85a922446e15b36e83b367ef44b561690ed0e5c7e1b354709cd6a25ff46737"
+    },
+    {
+      "path": "docs/mathematics/Analysis/Convolution/compact-correlation.md",
+      "sha256": "bb7513704d07586cf2995d236bf108266bda69d4014556207c75c7ea68caa592"
+    },
+    {
+      "path": "docs/mathematics/Analysis/MellinTransform/gaussian-density-moments.md",
+      "sha256": "f21c7261419e8df26f8d4b5e5677938b2b12590f4aaec60180703ab8480cb9ec"
+    },
+    {
+      "path": "docs/mathematics/Analysis/MellinTransform/gaussian-annular-separation.md",
+      "sha256": "2f4caee4aee9c83a020fec1675209b64765fa965b8e0af1e56897203aaf2dec2"
+    },
+    {
+      "path": "docs/mathematics/Analysis/MellinTransform/compact-gaussian-window.md",
+      "sha256": "d72f4f934debb102aa1af85086c085aaa79589b4b5182338be1f6184236cc68d"
+    },
+    {
+      "path": "docs/mathematics/Analysis/MellinTransform/scaled-gaussian-derivatives.md",
+      "sha256": "dcebf0a78479579c5752c5b2472be201651dd8512fb5cfca24e7ca17db30cba3"
+    },
+    {
+      "path": "docs/mathematics/Analysis/MellinTransform/reverse-inversion.md",
+      "sha256": "506a8e1f0808d975e85a0c40bbc9dc2b956973953e6fad689a8ca566c1b615de"
+    },
+    {
+      "path": "docs/mathematics/Analysis/MellinTransform/gaussian-fourier-moments.md",
+      "sha256": "797513d25550281bef5784b4c58ec90057c802726db28c9e8d638845a1673f34"
+    },
+    {
+      "path": "docs/mathematics/Analysis/MellinTransform/gaussian-log-window.md",
+      "sha256": "f6e609ad1dfab7fa2f5594f01d3a270e4fc285b850464fa5da9e1eee880c2aa8"
+    },
+    {
+      "path": "docs/mathematics/Analysis/MellinTransform/logarithmic-gaussian.md",
+      "sha256": "9a4446b8cb54cc4d8164bab24fc1b239488be2bd8148de53ef382b36974ff0e7"
+    },
+    {
+      "path": "docs/mathematics/Analysis/MellinTransform/gaussian-log-flow.md",
+      "sha256": "ddb272052dd72d89a42b25ae2b5adbca1709a4b15d98a3855a62fc91dd032271"
+    },
+    {
+      "path": "docs/mathematics/Analysis/MellinTransform/normalized-gaussian.md",
+      "sha256": "250f4e56db252b9fec802d9b0d318bb7014c08f75229f6f9f5044dacb663430f"
+    },
+    {
+      "path": "docs/mathematics/Analysis/MellinTransform/gaussian-remote-seminorms.md",
+      "sha256": "49cdaa7c4a24e2fa2e8a0b8cf1e8694eae46843e3c984fff10ebd64c9de0c7fa"
+    },
+    {
+      "path": "docs/mathematics/Analysis/MellinTransform/gaussian-window-seminorms.md",
+      "sha256": "1012f81539777b0a7b6ccf850476b6d2463b00ec4e0deeba3ead9765ac077406"
+    },
+    {
+      "path": "docs/mathematics/Analysis/MellinTransform/gaussian-coupled-separation.md",
+      "sha256": "c002b80f385ce98dad25b014f610703f23d0dad5b93f4dde5d840e899df39ae1"
+    },
+    {
+      "path": "docs/mathematics/Analysis/MellinTransform/gaussian-dyadic-summation.md",
+      "sha256": "0014b40a55975951e7084779dd309c364019cfe68e6b10bd459e1c9253cea34f"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/index.md",
+      "sha256": "ddc78b34631ac0c911446988c5c88198dd2230c3241dc41369e7c8172845da4a"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/Zeta/riemann-hypothesis-criteria.md",
+      "sha256": "9c9d511158d565c26c9304417e5e91bab1a9985166b1e2b9b7b10819c0e09d3b"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/Zeta/Riemann/inference-guards.md",
+      "sha256": "8c0044a11bc79246aeeb03dbf9054a103ce2338697b753fc0c6caee04f5cf540"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/Zeta/Riemann/criteria.md",
+      "sha256": "d31962980161bc6eb63ce51abeb6f564257c8cd43b599deae234a779b5528b76"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/Zeta/Riemann/trace-and-height-criteria.md",
+      "sha256": "c6dc9e555b50bf65871bc39a43f915c09013198aade104e4583eea518c9fd92c"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/LSeries/gaussian-dyadic.md",
+      "sha256": "b5b3e7d90eaecd58cd354cc3f898e1a6548d8f16573d9fb8d7bd55e8bfd0e04d"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/LSeries/closed-moebius.md",
+      "sha256": "c4924c29e54dd5da04e77062cc965422bb895e92c575f1fd4cd658567533c524"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/LSeries/gaussian-contour.md",
+      "sha256": "46761019cfa3074a996c2da277d9e79cad8245b168373d5d3c8987cc9027b57d"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/ArithmeticFunctions/signed-cutoffs.md",
+      "sha256": "45fa76b3287886118016d9378be17e5bd6041c586f856069609bd92c4dae7af4"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/ArithmeticFunctions/density-correction.md",
+      "sha256": "80a06371d69a19ca1b037abfede97695445070fe1a1c248f4b7ff2f080c4e05f"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/abc-proof-frontier.md",
+      "sha256": "3f069a6fc04cc289a665955e3dd4f5b460883269cd2ea939c7480860671a44fb"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/divisor-sectors.md",
+      "sha256": "9602f4630864b9d876db752cfa700164c173475746e8073c7801d5ab8479dc2b"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/moments.md",
+      "sha256": "376d385fdb383214987ea7b1159d30261312b394d77d9980dd48453d19fa9079"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/Cyclotomic/third-cyclotomic-ideals.md",
+      "sha256": "940ce4146c4c35344f146773483e4dab5a8bb62d5581760451ed32a20bed72a3"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/Cyclotomic/third-cyclotomic-reduction.md",
+      "sha256": "a41161d0a22c07be330fce2fbdcb6288ad77c34fbd8cca6ee859981c3a98403e"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/Ideal/compact-norm-support.md",
+      "sha256": "22849de8c83f7d918b2b5972e2e3abc38d3d9688ea086ecd7e161c6a6a75a076"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/ArithmeticGeometry/LogThetaComparison/abc-iut-objections.md",
+      "sha256": "ff46b910829a1e16797de29d3bc85b1e9889f380dc80df853c7dda7cea121bc2"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/Moebius/logarithmic-mertens-boundary.md",
+      "sha256": "dcb9209a0b39d5af3a4f04f2408227f6d10a5f0e2ac1cdbb8839d11186b8e85e"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/Moebius/matched-pickup.md",
+      "sha256": "6ecaaf82cd4cffd21faac21513017645a998bc110d77a8a82943efb5f03e9966"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/Moebius/finite-euler-product.md",
+      "sha256": "168525b4b62604193bf9fadcac290379861fee27bdd5594ebd60121b99c785b8"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/Moebius/LocalCancellation/common-reading.md",
+      "sha256": "b7ac6e0057e884388b7f7abf9b9860c9fe8314511298a17f27c34814bc73fd7c"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-product-debt.md",
+      "sha256": "de0cc3eb4b367e3e5e0ba7a62e6b63865fdd67911fc28f420f1b4b2157a27920"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/Moebius/Laplace/cutoff.md",
+      "sha256": "d7e927dd17463fe8522ab6dccd819047082249745b020926bab90216150298b1"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/Moebius/Laplace/finite-window.md",
+      "sha256": "8d96926d41655358226f2ba92a58ec89eba40f3e16265c6df6628f55b30b8c62"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/Moebius/Energy/recording-blocks.md",
+      "sha256": "e8ade13118de9fd94c573ef832acf7398ad0696681a6ebafb48cb67b12724e1c"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/Moebius/Energy/separated-mellin-samples.md",
+      "sha256": "db082259031e53f85775de4348dd524733a0aa9c8ac0911c9300ed48e578e53e"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/Moebius/Energy/determinant.md",
+      "sha256": "19c0863763cfbcdace9135637b049bf8d7326719b423e9c5fed1e65519a17217"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/Moebius/Energy/damped-tails.md",
+      "sha256": "b71c59068a40b3d4cd239db1cc11f3f59acd10371a8de58eea6f8c6bacc11ec4"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/Moebius/Energy/growth.md",
+      "sha256": "ac437206e0ba3a1499f5ac2859267b81c1f6b0fe7b8578f803436bafab535ff7"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/Moebius/Energy/gram.md",
+      "sha256": "0be8f0d573f3ec691574f673d67e72dfabd013f67409d2b94ca673f658bf3409"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/cascade.md",
+      "sha256": "a7c72e8b74ce5899e87833c7eeb2c5e33a408bdd35a3004887e2fa18eb4034e0"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/conditional-growth.md",
+      "sha256": "bd1652045370b5aeefd9f65a6bf51d481ae355ad65521dc815a8661b7051b7d4"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/uniform-supplier-obstruction.md",
+      "sha256": "aab77594f8cbc6296e9b1a566c2f74eb44671d2c043be88dc795c5b33a6fc5a0"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/Moebius/PrimeFilters/negative-correlation.md",
+      "sha256": "6ba08d4224ac219dd689e59929c22b134fb06d4586f909fd16572a0959ed6b05"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/Moebius/Pickup/identification.md",
+      "sha256": "266bb5f6a53c891dec0f526ae3133bb667541cf6ed053bdc1ff3337cfb0c108d"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/Polynomial/derivative-radical-bound.md",
+      "sha256": "25935e770edf22e398062f9b1554c483997febf54d43c9f4c5e224aa8ff696ab"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/Prime/least-prime.md",
+      "sha256": "fa8569e287b7110a6912b8f7c1ce082eb478ac79811673c52ee599fb579333b9"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/ContinuedFractions/scheduled-denominators.md",
+      "sha256": "cbd19daae82ed36eff8fedd708ce91557e12f696c1ed420452bbbfb47547c160"
+    },
+    {
+      "path": "docs/mathematics/NumberTheory/ContinuedFractions/frequency-realization.md",
+      "sha256": "4b604b7bf32735a5650a0c86dc3be53f2269acfada7a114589b301266cb66b26"
+    },
+    {
+      "path": "docs/mathematics/Logic/index.md",
+      "sha256": "67ea490b38a2d957a49bbb9711ba5a178adea00fe21355e06940cf94b8a2ddb5"
+    },
+    {
+      "path": "docs/mathematics/Logic/ProofChecking/source-roles.md",
+      "sha256": "04ddf7c421b4473d7cb31a72f8a1b08477120afce03701cf83ea8916cfa66218"
+    },
+    {
+      "path": "docs/mathematics/Logic/FiniteCoverage/scope.md",
+      "sha256": "f2ecf051dcb5e436f83629c4cbf9d4fc568af48c8833d85942de56b42cd29ca4"
+    },
+    {
+      "path": "docs/mathematics/Logic/FiniteSequences/append-only-history.md",
+      "sha256": "b54626999fa49888e8568b7f8e46f5853ec28db36b810a97658a148419bfdc49"
+    },
+    {
+      "path": "docs/mathematics/Logic/FiniteSequences/indexed-dictionary.md",
+      "sha256": "7f308fdedf7d59deea402927c77f7df8ca7e9518e0ec4ae619496d05f18df9cd"
+    },
+    {
+      "path": "docs/mathematics/Logic/FiniteSequences/prefix-coverage.md",
+      "sha256": "2fdfd3343fa5d74d1bd710811c4bc3fcc5df12215d5b156e49fb73df3caa428f"
+    },
+    {
+      "path": "docs/mathematics/Logic/FiniteSequences/dictionary-revision.md",
+      "sha256": "f11eca83569343ca8aefd3d97c23994e3a45f03ea103d30079150ebff704d9cf"
+    },
+    {
+      "path": "docs/mathematics/Logic/FiniteSequences/incremental-dictionary.md",
+      "sha256": "2edb38f0cd26904b6a3e70aa7035b75899e89df6eb959e025bf840053ea1d37b"
+    },
+    {
+      "path": "docs/mathematics/Logic/FiniteSequences/decision-certificate.md",
+      "sha256": "6740b6d56b419cd7ceab11c75608bda164338ed8240a53f4c329e046df28c558"
+    },
+    {
+      "path": "docs/mathematics/Logic/FiniteSequences/batch-certificate.md",
+      "sha256": "8ba1110417096759bae33cc39e097f5279744825a05c99564070a3ad6623e7c0"
+    },
+    {
+      "path": "docs/mathematics/Logic/FiniteSequences/incremental-composition.md",
+      "sha256": "e52fac61a0dd04e6573c475d851004d8f98906fb4eb20be12b0672912cff0569"
+    },
+    {
+      "path": "docs/mathematics/Spectral/index.md",
+      "sha256": "0e285e864819f4c171cbf7719c66335afee077e1a99fd327ca48c4d62329eb48"
+    },
+    {
+      "path": "docs/mathematics/Spectral/GapTransport/labels-and-coding.md",
+      "sha256": "f701a04f732871e94893e93a66bc6a8a4f14d80e4c78a4cc3798cfe2b70d7d1c"
+    },
+    {
+      "path": "docs/mathematics/Spectral/IntegratedDensityOfStates/free.md",
+      "sha256": "f039890b6742da955ef4a63ea989762d0666de3f7237fad1d9f5f5b0c083bb37"
+    },
+    {
+      "path": "docs/mathematics/Spectral/FiniteVolume/count-comparison.md",
+      "sha256": "6b25856f7505f257fbeb174b801109b489908cde63d1a27d0aa3e4a9aafabae7"
+    },
+    {
+      "path": "docs/mathematics/Spectral/FiniteVolume/phase-count-limits.md",
+      "sha256": "7516a8d0270be9278d3d693bb228f05e2c0428585374ddc8efb26d23b9d118b4"
+    },
+    {
+      "path": "docs/mathematics/Spectral/FiniteVolume/repeated-blocks.md",
+      "sha256": "742b22cb9920c59c00eb343a5d56c7faf46ab79001e8dedc23b787a36d6e7a45"
+    },
+    {
+      "path": "docs/mathematics/Spectral/FiniteVolume/dirichlet-cut.md",
+      "sha256": "46fcb6b8c009eacff62f5b8740720c654f5f5281cd7ffee73bca36e566f10ff0"
+    },
+    {
+      "path": "docs/mathematics/Spectral/FreeDirichletSpectrum/eigenvalues.md",
+      "sha256": "cd731e002529f84b27f184490647760803ce7b5fdf4af47322707b7f49b84f9e"
+    },
+    {
+      "path": "docs/mathematics/GroupTheory/index.md",
+      "sha256": "ab158c91eed5c136b87acbd835ce5aced94504d4b5eef9ff9b660c9a043dc7bc"
+    },
+    {
+      "path": "docs/mathematics/DynamicalSystems/index.md",
+      "sha256": "d81ed56076eec49625e9d018bd3e9f6988b098b7c836998882be9ea4685626c4"
+    },
+    {
+      "path": "docs/mathematics/DynamicalSystems/TransitionSystems/guarded-reachability.md",
+      "sha256": "6308d69e61ef85207d5e2126d46083ea2fcbab5a158672ab4b461f01d992ed59"
+    },
+    {
+      "path": "docs/mathematics/DynamicalSystems/TransitionSystems/modular-checkpoints.md",
+      "sha256": "d29498de5e71b681b2aab612051f0a0bf49a5bc703f357fbc34015038295c942"
+    },
+    {
+      "path": "docs/mathematics/DynamicalSystems/Sequences/approximation-return.md",
+      "sha256": "d245e45fd85771d901b1dc699ab9d138fab51b22222833a3d97ccef590f57f18"
+    },
+    {
+      "path": "docs/mathematics/MeasureTheory/index.md",
+      "sha256": "b0f6dd941e0338cdbe562bf6389581f025679d097863e4b2fc329f1d83e3c7e2"
+    },
+    {
+      "path": "docs/mathematics/Combinatorics/index.md",
+      "sha256": "e2e89eb3b431ccd71df2174cd193d24bdbc174542ad3626a0944ac9a41e1c127"
+    },
+    {
+      "path": "docs/mathematics/Combinatorics/Sequences/balanced-partition-sampling.md",
+      "sha256": "a4cb2a10de8dcd9fadaf96814ea294a1b859a2a2cff725921484a22f39f545b1"
+    },
+    {
+      "path": "docs/mathematics/Combinatorics/Sequences/quotas.md",
+      "sha256": "aebc3bba6003871b818bacf5284538051e5542bb2f865d03e4350fde00fc93d8"
+    },
+    {
+      "path": "docs/mathematics/Combinatorics/Sequences/coverage-and-quotas.md",
+      "sha256": "23b2311e319f5990ffc3f822a76b3e49768b2eefa98aaadd6c58342c45bc9ad3"
+    },
+    {
+      "path": "docs/mathematics/Combinatorics/Sequences/partial-sum-ordering.md",
+      "sha256": "4d515306cfb61b6ccefa3c5c9dc36815343fa1828288d4aa1153d1e8a9b82019"
+    },
+    {
+      "path": "docs/mathematics/Combinatorics/DirectedGraph/prefix-compaction-schedule.md",
+      "sha256": "9bc0fad728f9ff76bc5820116c842f3d393c7c91818433a12b61f742c3121028"
+    },
+    {
+      "path": "docs/mathematics/Combinatorics/DirectedGraph/path-unfolding.md",
+      "sha256": "d1534aed9d0da173008e155464d7c91c600a4e59483c5de487ec845935bbaca9"
+    },
+    {
+      "path": "docs/mathematics/Combinatorics/DirectedGraph/prefix-inventory.md",
+      "sha256": "e4a74955d519491a93f4d1f4d78d44ede1cc56d5686188be5ccdf70a4a8f8d52"
+    },
+    {
+      "path": "docs/mathematics/Combinatorics/DirectedGraph/prefix-compaction-checkpoint.md",
+      "sha256": "c212bea463b6c4e77aeba603730504b42752845c2e7c20ef26d5892cfe70ab43"
+    },
+    {
+      "path": "docs/mathematics/Combinatorics/DirectedGraph/path-occurrences.md",
+      "sha256": "e5953305aaed1aae1d22cdbe3979cf63443d9a9f69c130eaf3a6e31ce738511a"
+    },
+    {
+      "path": "docs/mathematics/Combinatorics/DirectedGraph/prefix-update-reindex.md",
+      "sha256": "d1c733107aee86361fdc43ee6ee7c4a7bce136db37094a3710403a08ccb67a30"
+    },
+    {
+      "path": "docs/mathematics/Combinatorics/DirectedGraph/rooted-trace-revision.md",
+      "sha256": "078dc1ad93e6eb38f8702e0fa4af02d5730fd0a6904fcdbbc6e34f20707f8c3e"
+    },
+    {
+      "path": "docs/mathematics/Combinatorics/DirectedGraph/prefix-table-reindex.md",
+      "sha256": "8168f40c22ee92943dedd487c89f9ae9aae06547b067b6a4d2da483fa918c2d9"
+    },
+    {
+      "path": "docs/mathematics/Combinatorics/DirectedGraph/prefix-table-compaction.md",
+      "sha256": "b44c933512558be7276bdc0fdcf5a78b8b8176341144ca14c6da0e1a67f9d276"
+    },
+    {
+      "path": "docs/mathematics/Combinatorics/DirectedGraph/endpoint-section.md",
+      "sha256": "48d8bb05a7b297c89ddc2c7af9607018cc249e09f56d511ce03a803675b0d100"
+    },
+    {
+      "path": "docs/mathematics/Combinatorics/DirectedGraph/parent-trace-dictionary.md",
+      "sha256": "3e08428ac146dc6cdf93a5e1192894660bcdb204b3e950c114457a6de5b84d4f"
+    },
+    {
+      "path": "docs/mathematics/Combinatorics/DirectedGraph/edge-trace.md",
+      "sha256": "d3ea3ad75c867a93342af88c98126da89b64df1e1b3e26777ff73dadc1b8231d"
+    },
+    {
+      "path": "docs/mathematics/Combinatorics/DirectedGraph/role-relation-table.md",
+      "sha256": "b76bd5bf8b2ee301cb1ec81f99f3a74b4e0f8e350407af44a08726ba209439d5"
+    },
+    {
+      "path": "docs/mathematics/Combinatorics/DirectedGraph/incremental-prefix-table.md",
+      "sha256": "d8f0c02445d989a8cd11b8c7473b572aa5d9d0fd2d1859f4d039417ea8530d6d"
+    },
+    {
+      "path": "docs/mathematics/Combinatorics/DirectedGraph/prefix-finite-batch.md",
+      "sha256": "1df050a16d52023058653c1ce171c370993a09b33932ba794c57d8f792a33728"
+    },
+    {
+      "path": "docs/mathematics/Combinatorics/DirectedGraph/occurrence-prefix.md",
+      "sha256": "8890aa806bd4abc409aac803924b2cf4a9ca83874afab5d850d419acf95a2a62"
+    },
+    {
+      "path": "docs/mathematics/Combinatorics/DirectedGraph/prefix-table-state.md",
+      "sha256": "ecb3cdcafc169b30c988c4aaef721ab290c584d7d5edd4295eb6c20e8a222257"
+    },
+    {
+      "path": "docs/mathematics/Combinatorics/DirectedGraph/role-relation-reindex.md",
+      "sha256": "ebbfb008c616a852bbe2fb31ca6dd926881141edd5e6cf23b3d3998304361665"
+    },
+    {
+      "path": "docs/mathematics/LinearAlgebra/index.md",
+      "sha256": "325c579f84ebe40da81cf74b3f3392f7b2162b9989ed9f5fcaa2e9cbd8e48e0c"
+    },
+    {
+      "path": "docs/mathematics/LinearAlgebra/Schrodinger/transfer.md",
+      "sha256": "ad46af5af0a890d475455836e7037cf1ce9fa4b25789741ee64b4d0fa799883b"
+    },
+    {
+      "path": "docs/mathematics/LinearAlgebra/Schrodinger/almost-mathieu.md",
+      "sha256": "970f1575224fdca97f852f73b0e8c9b88776c9fe1e07d334546adce9f4f655fd"
+    },
+    {
+      "path": "docs/mathematics/LinearAlgebra/Schrodinger/sturmian.md",
+      "sha256": "73865e65942bf0f2c66912760ec1ec8c5f2ef2bb2ed441ad5e6da973bc835e89"
+    },
+    {
+      "path": "docs/mathematics/LinearAlgebra/Schrodinger/sampled-potential.md",
+      "sha256": "7aba1e5b65dbf4754d6b55353b8983ccd875164c7e3eb297b53fefce0a4c77e1"
+    },
+    {
+      "path": "docs/mathematics/LinearAlgebra/OrientedRealLine/transport.md",
+      "sha256": "6713ac7903d5c8d9c2ccc5833dafce6f97d5da33e26333cd53c2274dd3511435"
+    },
+    {
+      "path": "docs/mathematics/LinearAlgebra/Jacobi/transfer.md",
+      "sha256": "9bd8d813f4c3be16167e1fe2d531235f56d8486d9bc5d737caaf7e9fb8071f33"
+    },
+    {
+      "path": "docs/mathematics/LinearAlgebra/Transfer/ordered.md",
+      "sha256": "bac1cea383afdc1d8b15270396c385c74bb4dfeac0a29034cabd945de5aa1339"
+    },
+    {
+      "path": "docs/mathematics/LinearAlgebra/OrderedProduct/determinant.md",
+      "sha256": "f92726a8add5e15f53d6fc97aa3140cca46a73bff59aa933c15d0b0c940637d7"
+    },
+    {
+      "path": "docs/mathematics/LinearAlgebra/CommonGenerator/counterexamples.md",
+      "sha256": "53d5ed150f421ffa16f89350e28eb40cee2f0aabed5df941fa4d2481f8c8bfcf"
+    },
+    {
+      "path": "docs/mathematics/LinearAlgebra/CommonGenerator/rotations.md",
+      "sha256": "ce2c7343c814161127bdbe0f7fa6eb7560952ff47bf7b8cd10f9014fa16f7b89"
+    },
+    {
+      "path": "docs/mathematics/LinearAlgebra/Gauge/state.md",
+      "sha256": "b50932a38cedfbc547fbbf60126886d3acc0dd2cd4407f3e46dcbc0eebb81ea7"
+    },
+    {
+      "path": "docs/mathematics/LinearAlgebra/Cocycle/product.md",
+      "sha256": "cf9f14857cf9b1b45993c452ab2bbcb96fe6b35f7f375d7e22e5a032a458ddc9"
+    },
+    {
+      "path": "docs/mathematics/LinearAlgebra/Matrix/trace-rank.md",
+      "sha256": "8a3c53d451d522a6a86c037e2cbcadd5335f5f7942a2f7927d9fd48be08a3ea8"
+    },
+    {
+      "path": "docs/mathematics/LinearAlgebra/Matrix/HermitianCounterexamples/negative-identity.md",
+      "sha256": "bdf732aee9c288ff7d8eb0759917d140c705bea7cff8636ebb87164304aeb111"
+    },
+    {
+      "path": "docs/mathematics/Data/index.md",
+      "sha256": "2024d61bff16b717d67607535050e9d6539ec0e7ac53387f902f071b56e63152"
+    },
+    {
+      "path": "docs/mathematics/Algebra/index.md",
+      "sha256": "41fc1550de6a5f19936db9e738008b2e8ef5eda51d4b18e21eb7fee15a0e8b50"
+    },
+    {
+      "path": "docs/mathematics/Algebra/OrderedProduct/gauge.md",
+      "sha256": "4130f2ca6b0fe9b7da74bc5117400094d5ae31cb6bbc77078c6c0fc629e9a50f"
+    },
+    {
+      "path": "docs/mathematics/Algebra/OrderedProduct/intervals.md",
+      "sha256": "7b2ba53b7e3dd92539e133c2fa17d5bfaad73be7b97cd6c8d18a3a3a01c4975f"
+    },
+    {
+      "path": "docs/mathematics/Algebra/Polynomial/signed-root-traces.md",
+      "sha256": "da21c436fd160c7eec9b6e0e30c68aea7297916deb2fdd782912dd86b03c3312"
+    },
+    {
+      "path": "docs/mathematics/Algebra/Polynomial/conjugate-quartic.md",
+      "sha256": "c0f317f3c0097568ec54c7e98c154e9c71707a6fc3b87a3a9f9f0d5e85f0e33d"
+    },
+    {
+      "path": "docs/reference/library-pages.md",
+      "sha256": "90d98827ea8022eb1ddeee55ae3848631c6f85aa8b3e8468e06e3fba07f5bacb"
+    },
+    {
+      "path": "docs/reference/mathematical-terminology.md",
+      "sha256": "971701db0248a4be42f3dcc2968766ff6bd272071f79f9decc22ee4a0a12b5da"
+    },
+    {
+      "path": "docs/reference/source-intake.md",
+      "sha256": "8b2d215a1e5baf8f7bad5f18d27cbc7cbecf9529d9fe2fecd49b4ffe48b6d666"
+    },
+    {
+      "path": "docs/reference/literature/unitary-almost-mathieu.md",
+      "sha256": "2ee4ecb6da1d5ce95129581804eb64136d89a234b7ff5bfe3e6ff928cfd761bd"
+    }
+  ]
+}

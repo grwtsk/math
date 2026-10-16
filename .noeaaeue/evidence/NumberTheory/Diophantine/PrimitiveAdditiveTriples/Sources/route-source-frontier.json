@@ -1,0 +1,143 @@
+{
+  "abc_target_closure": false,
+  "routes": [
+    {
+      "formal_coverage": "not assessed by this source ledger",
+      "mathematical_subject": "IUT reconstruction",
+      "next_smallest_obligation": "Reconstruct exact Theorem 3.11 and admissible S for eta comparison (9-1); journal-text identity and global reductions remain open",
+      "refuted_lemmas": [],
+      "remaining_premises": "Reconstruct exact Theorem 3.11 and admissible S for eta comparison (9-1); journal-text identity and global reductions remain open",
+      "route": "A",
+      "source_coverage": "partial selected sources",
+      "sources": [
+        "iut-3-author-manuscript",
+        "iut-4-author-manuscript",
+        "ss-bonn",
+        "lana-2026-report"
+      ],
+      "strongest_checked_theorem": "No Lean theorem accepted by source worker; the parent-owned trust receipt determines formal status"
+    },
+    {
+      "formal_coverage": "not assessed by this source ledger",
+      "mathematical_subject": "Transport repair",
+      "next_smallest_obligation": "Instantiate explicit line/region comparisons and all indeterminacy control; the model alone cannot identify IUT",
+      "refuted_lemmas": [],
+      "remaining_premises": "Instantiate explicit line/region comparisons and all indeterminacy control; the model alone cannot identify IUT",
+      "route": "B",
+      "source_coverage": "partial selected sources",
+      "sources": [
+        "mochizuki-cmt2018-05",
+        "mochizuki-cmt2018-08",
+        "lana-2026-report"
+      ],
+      "strongest_checked_theorem": "No Lean theorem accepted by source worker; the parent-owned trust receipt determines formal status"
+    },
+    {
+      "formal_coverage": "not assessed by this source ledger",
+      "mathematical_subject": "Later Arithmetic Teichmuller claims",
+      "next_smallest_obligation": "Retrieve current I–III decisive inequalities; check the local/global version mismatch independently",
+      "refuted_lemmas": [],
+      "remaining_premises": "Retrieve current I–III decisive inequalities; check the local/global version mismatch independently",
+      "route": "C",
+      "source_coverage": "partial selected sources",
+      "sources": [
+        "joshi-2403.10430v2",
+        "joshi-final-report",
+        "mochizuki-joshi-2024"
+      ],
+      "strongest_checked_theorem": "No Lean theorem accepted by source worker; the parent-owned trust receipt determines formal status"
+    },
+    {
+      "formal_coverage": "not assessed by this source ledger",
+      "mathematical_subject": "Arithmetic derivatives",
+      "next_smallest_obligation": "Formalize the finite Wronskian identity; nondegeneracy and global norm power saving remain open; fixed eta gives only a fixed exponent variant of abc",
+      "refuted_lemmas": [],
+      "remaining_premises": "Formalize the finite Wronskian identity; nondegeneracy and global norm power saving remain open; fixed eta gives only a fixed exponent variant of abc",
+      "route": "D",
+      "source_coverage": "partial selected sources",
+      "sources": [
+        "pasten-2106.16165v3"
+      ],
+      "strongest_checked_theorem": "No Lean theorem accepted by source worker; the parent-owned trust receipt determines formal status"
+    },
+    {
+      "formal_coverage": "not assessed by this source ledger",
+      "mathematical_subject": "Geometry of numbers",
+      "next_smallest_obligation": "Formalize Theorem 2.6 Siegel product bound; the stronger independent-derivative power saving remains open",
+      "refuted_lemmas": [],
+      "remaining_premises": "Formalize Theorem 2.6 Siegel product bound; the stronger independent-derivative power saving remains open",
+      "route": "E",
+      "source_coverage": "partial selected sources",
+      "sources": [
+        "pasten-2106.16165v3"
+      ],
+      "strongest_checked_theorem": "No Lean theorem accepted by source worker; the parent-owned trust receipt determines formal status"
+    },
+    {
+      "formal_coverage": "not assessed by this source ledger",
+      "mathematical_subject": "Congruence reduction",
+      "next_smallest_obligation": "Port Theta_n and Lemma 4 with exact epsilon dependence; prove primitive and congruence conditions",
+      "refuted_lemmas": [],
+      "remaining_premises": "Port Theta_n and Lemma 4 with exact epsilon dependence; prove primitive and congruence conditions",
+      "route": "F",
+      "source_coverage": "partial selected sources",
+      "sources": [
+        "ellenberg-math9909098v1"
+      ],
+      "strongest_checked_theorem": "No Lean theorem accepted by source worker; the parent-owned trust receipt determines formal status"
+    },
+    {
+      "formal_coverage": "not assessed by this source ledger",
+      "mathematical_subject": "Exceptional sets",
+      "next_smallest_obligation": "Port N_lambda and the 3/5 + epsilon counting bound; a positive-exponent count does not imply finiteness",
+      "refuted_lemmas": [],
+      "remaining_premises": "Port N_lambda and the 3/5 + epsilon counting bound; a positive-exponent count does not imply finiteness",
+      "route": "G",
+      "source_coverage": "partial selected sources",
+      "sources": [
+        "exceptional-2410.12234v2"
+      ],
+      "strongest_checked_theorem": "No Lean theorem accepted by source worker; the parent-owned trust receipt determines formal status"
+    },
+    {
+      "formal_coverage": "not assessed by this source ledger",
+      "mathematical_subject": "Function field control",
+      "next_smallest_obligation": "Compile the pinned Polynomial.abc consumer and audit; preserve the derivative-zero alternative and characteristic hypotheses",
+      "refuted_lemmas": [],
+      "remaining_premises": "Compile the pinned Polynomial.abc consumer and audit; preserve the derivative-zero alternative and characteristic hypotheses",
+      "route": "H",
+      "source_coverage": "partial selected sources",
+      "sources": [
+        "mathlib-MasonStothers-pinned"
+      ],
+      "strongest_checked_theorem": "No Lean theorem accepted by source worker; the parent-owned trust receipt determines formal status"
+    },
+    {
+      "formal_coverage": "not assessed by this source ledger",
+      "mathematical_subject": "Elliptic curves/Szpiro",
+      "next_smallest_obligation": "Build exact conductor/discriminant and modified Szpiro interfaces; disputed Corollary 3.12 and Claim 5.0.1 remain undischarged",
+      "refuted_lemmas": [],
+      "remaining_premises": "Build exact conductor/discriminant and modified Szpiro interfaces; disputed Corollary 3.12 and Claim 5.0.1 remain undischarged",
+      "route": "I",
+      "source_coverage": "partial selected sources",
+      "sources": [
+        "iut-4-author-manuscript",
+        "dupuy-hilado-2004.13108v2",
+        "vojta-cime"
+      ],
+      "strongest_checked_theorem": "No Lean theorem accepted by source worker; the parent-owned trust receipt determines formal status"
+    },
+    {
+      "formal_coverage": "not assessed by this source ledger",
+      "mathematical_subject": "Primitive triple moments",
+      "next_smallest_obligation": "Search did not locate a verified radical-height bridge; finite identities and joint triple information cannot by themselves close abc",
+      "refuted_lemmas": [],
+      "remaining_premises": "Search did not locate a verified radical-height bridge; finite identities and joint triple information cannot by themselves close abc",
+      "route": "J",
+      "source_coverage": "partial selected sources",
+      "sources": [],
+      "strongest_checked_theorem": "No Lean theorem accepted by source worker; the parent-owned trust receipt determines formal status"
+    }
+  ],
+  "status": "OPEN_FRONTIER"
+}

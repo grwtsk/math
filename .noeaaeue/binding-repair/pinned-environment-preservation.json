@@ -1,0 +1,62 @@
+{
+  "schema": "binding-repair-pinned-environment-and-legal-preservation-v1",
+  "branch": "main",
+  "pinned_environment_unchanged": true,
+  "observations": [
+    {
+      "path": "LICENSE",
+      "expected_sha256": "a98fc92dab12d02b26bc51f1ac0d608871886b7e36de2170747fb0fcee946968",
+      "observed_sha256": "a98fc92dab12d02b26bc51f1ac0d608871886b7e36de2170747fb0fcee946968",
+      "status": "unchanged"
+    },
+    {
+      "path": "LICENSES/ArchiveCandidates-NOTICE.txt",
+      "expected_sha256": "1a66b71a70e007b59a5d00c6e5b7eb48698eb970f3bbde0805cb522dfedf8065",
+      "observed_sha256": "1a66b71a70e007b59a5d00c6e5b7eb48698eb970f3bbde0805cb522dfedf8065",
+      "status": "unchanged"
+    },
+    {
+      "path": "LICENSES/MIT.txt",
+      "expected_sha256": "a98fc92dab12d02b26bc51f1ac0d608871886b7e36de2170747fb0fcee946968",
+      "observed_sha256": "a98fc92dab12d02b26bc51f1ac0d608871886b7e36de2170747fb0fcee946968",
+      "status": "unchanged"
+    },
+    {
+      "path": "LICENSES/Mathlib-Apache-2.0.txt",
+      "expected_sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "observed_sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "status": "unchanged"
+    },
+    {
+      "path": "LICENSES/OpenAI-Apache-2.0.txt",
+      "expected_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "observed_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "status": "unchanged"
+    },
+    {
+      "path": "NOTICE",
+      "expected_sha256": "d8db411ac4d890e72e8ed0665c7e83772868e9b8fd2bbe3eaf6d81761b162893",
+      "observed_sha256": "7ced5502ca6f79c9953501d212478f93bfcc7cc18cdbbbf4df234f7fbbf604d5",
+      "status": "concurrent-change-preserved",
+      "meaning": "Observed external attribution append for concurrently added formal sources; no binding-repair team write. No historical pin updated."
+    },
+    {
+      "path": "lakefile.toml",
+      "expected_sha256": "a23f6d313f8458192328f09635ffef9078cb684374c2aac2743af541bf59b4e3",
+      "observed_sha256": "a23f6d313f8458192328f09635ffef9078cb684374c2aac2743af541bf59b4e3",
+      "status": "unchanged"
+    },
+    {
+      "path": "lake-manifest.json",
+      "expected_sha256": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
+      "observed_sha256": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
+      "status": "unchanged"
+    },
+    {
+      "path": "lean-toolchain",
+      "expected_sha256": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
+      "observed_sha256": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
+      "status": "unchanged"
+    }
+  ]
+}

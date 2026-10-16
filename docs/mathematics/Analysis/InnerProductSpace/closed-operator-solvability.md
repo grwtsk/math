@@ -58,14 +58,14 @@ Upstream project metadata names OpenAI as formalization author;
 the adapted file retains Apache-2.0 terms and its precise source pin.
 
 The [positive consumers](../../../../GRWTSK/Analysis/InnerProductSpace/Checks/Positive/ClosedOperatorSolvability.lean)
-and [fresh selected receipt](../../../../evidence/Analysis/InnerProductSpace/closed-operator-checks-2026-10-15-r2.json)
+and [fresh selected receipt](../../../../.noeaaeue/evidence/Analysis/InnerProductSpace/closed-operator-checks-2026-10-15-r2.json)
 bind actual source bytes, native commands, controls and the complete owned
 axiom census. Replay uses pinned Lean 4.33.0, trust zero and fatal warnings,
 permitting only `propext`, `Classical.choice` and `Quot.sound`. Pinned dependency
 objects are reused and fingerprinted. This does not claim a cold Mathlib rebuild,
 whole-repository acceptance, independent review or a surrounding manuscript's
 main result. The
-[integration record](../../../../evidence/Analysis/InnerProductSpace/closed-operator-integration-2026-10-15-r2.json)
+[integration record](../../../../.noeaaeue/evidence/Analysis/InnerProductSpace/closed-operator-integration-2026-10-15-r2.json)
 retains exact assumptions, source identity, contribution roles and limits.
 
 Human project direction: R.A. Jacob Martone. Local adaptation and checking

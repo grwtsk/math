@@ -1,0 +1,1362 @@
+{
+  "generated_at": "2026-10-16T01:25:39.359337+00:00",
+  "mathematical_acceptance": false,
+  "schema": "source-occurrence-ledger-v1",
+  "source_occurrences": [
+    {
+      "authors": [
+        "Shinichi Mochizuki"
+      ],
+      "claims_extracted": [],
+      "content_digest": "sha256:83641880b702bb2cf6499243d93f04675738d3a9c6cb3ffe2c6dd9a23a380f5b",
+      "contrary_sources": [],
+      "coverage_status": "partial",
+      "doi_or_arxiv": null,
+      "evidence_coordinates": {
+        "abc_closure": false,
+        "axiom_audited": false,
+        "bytes_frozen": true,
+        "iut_application_checked": false,
+        "kernel_accepted": false,
+        "selected_claim_located": false,
+        "statement_translation_checked": false
+      },
+      "exact_regions_used": [
+        "official page: report/comment links and update notice"
+      ],
+      "formalization_status": "none",
+      "local_path": "snapshots/discussion-2018.html",
+      "notes": "Authority is limited to source hosting and attribution; the page's assessment of misunderstandings is Mochizuki's position.",
+      "publication_status": "web-note",
+      "repository_or_domain": "www.kurims.kyoto-u.ac.jp",
+      "retrieval_attempt_ids": [
+        "discussion-2018"
+      ],
+      "retrieved_at": "2026-10-16T01:14:20.218385+00:00",
+      "revision_or_version": "digest-bound unversioned occurrence",
+      "rights_and_license": "No license grant established by this run; preserve attribution and source rights. Local research snapshot only; no publication authority.",
+      "source_class": "primary",
+      "source_id": "discussion-2018",
+      "title": "March 2018 Discussions on IUTeich",
+      "url": "https://www.kurims.kyoto-u.ac.jp/~motizuki/IUTch-discussions-2018-03.html"
+    },
+    {
+      "authors": [
+        "EMS Press"
+      ],
+      "claims_extracted": [],
+      "content_digest": "sha256:27261f793ef9ca57a54fe78b0400c1a17aee2f7487fa001d9b434c39625f4a0b",
+      "contrary_sources": [],
+      "coverage_status": "partial",
+      "doi_or_arxiv": null,
+      "evidence_coordinates": {
+        "abc_closure": false,
+        "axiom_audited": false,
+        "bytes_frozen": true,
+        "iut_application_checked": false,
+        "kernel_accepted": false,
+        "selected_claim_located": false,
+        "statement_translation_checked": false
+      },
+      "exact_regions_used": [
+        "issue contents and DOI links"
+      ],
+      "formalization_status": "none",
+      "local_path": "snapshots/ems-2021-issue.html",
+      "notes": "Bibliographic catalog only; no proof authority.",
+      "publication_status": "published",
+      "repository_or_domain": "ems.press",
+      "retrieval_attempt_ids": [
+        "ems-2021-issue"
+      ],
+      "retrieved_at": "2026-10-16T01:14:20.218749+00:00",
+      "revision_or_version": "published 2021-03-05; metadata snapshot",
+      "rights_and_license": "No license grant established by this run; preserve attribution and source rights. Local research snapshot only; no publication authority.",
+      "source_class": "commentary",
+      "source_id": "ems-2021-issue",
+      "title": "PRIMS 57 (2021), no. 1/2, Special issue on Inter-universal Teichmüller Theory",
+      "url": "https://ems.press/journals/prims/issues/1507"
+    },
+    {
+      "authors": [
+        "Shinichi Mochizuki"
+      ],
+      "claims_extracted": [],
+      "content_digest": "sha256:4ff587d8efa31b747d9deb11dacb0023411f9d0c86e19dc12d86216ecc5a3dc9",
+      "contrary_sources": [],
+      "coverage_status": "partial",
+      "doi_or_arxiv": "10.4171/PRIMS/57-1-1",
+      "evidence_coordinates": {
+        "abc_closure": false,
+        "axiom_audited": false,
+        "bytes_frozen": true,
+        "iut_application_checked": false,
+        "kernel_accepted": false,
+        "selected_claim_located": false,
+        "statement_translation_checked": false
+      },
+      "exact_regions_used": [
+        "EMS article metadata, abstract, subscription notice"
+      ],
+      "formalization_status": "none",
+      "local_path": "snapshots/iut-1-journal-metadata.html",
+      "notes": "Journal PDF access redirected to subscription article page. Original journal full text NOT frozen; this digest covers HTML metadata only. Author manuscript is a separate occurrence and has not been byte- or statement-identified with the journal edition.",
+      "publication_status": "published",
+      "repository_or_domain": "ems.press",
+      "retrieval_attempt_ids": [
+        "iut-1-journal-metadata"
+      ],
+      "retrieved_at": "2026-10-16T01:14:20.218875+00:00",
+      "revision_or_version": "PRIMS 57 (2021), no. 1/2; metadata only",
+      "rights_and_license": "No license grant established by this run; preserve attribution and source rights. Local research snapshot only; no publication authority.",
+      "source_class": "primary",
+      "source_id": "iut-1-journal-metadata",
+      "title": "Inter-universal Teichmüller Theory 1: Construction of Hodge Theaters",
+      "url": "https://ems.press/journals/prims/articles/201525"
+    },
+    {
+      "authors": [
+        "Shinichi Mochizuki"
+      ],
+      "claims_extracted": [],
+      "content_digest": "sha256:7360e3ed27c235b5497a0743d3ed1646fbb97688547d16b7c784fc7f127f1f03",
+      "contrary_sources": [],
+      "coverage_status": "partial",
+      "doi_or_arxiv": "related journal DOI 10.4171/PRIMS/57-1-1",
+      "evidence_coordinates": {
+        "abc_closure": false,
+        "axiom_audited": false,
+        "bytes_frozen": true,
+        "iut_application_checked": false,
+        "kernel_accepted": false,
+        "selected_claim_located": false,
+        "statement_translation_checked": false
+      },
+      "exact_regions_used": [
+        "Definition 3.1: initial Theta-data; not fully checked"
+      ],
+      "extracted_digest": "sha256:2598f857b869122342cb9661e7acd10092c6c7e8364209e8ec4aebe8b174be62",
+      "extracted_path": "extracted/iut-1-author-manuscript.txt",
+      "formalization_status": "none",
+      "local_path": "snapshots/iut-1-author-manuscript.pdf",
+      "notes": "Separate from journal version. Full source correspondence and proof reconstruction open.",
+      "publication_status": "preprint",
+      "repository_or_domain": "www.kurims.kyoto-u.ac.jp",
+      "retrieval_attempt_ids": [
+        "iut-1-author-manuscript"
+      ],
+      "retrieved_at": "2026-10-16T01:14:22.378301+00:00",
+      "revision_or_version": "unversioned author PDF; digest freezes occurrence, not 2021 edition identity",
+      "rights_and_license": "No license grant established by this run; preserve attribution and source rights. Local research snapshot only; no publication authority.",
+      "source_class": "primary",
+      "source_id": "iut-1-author-manuscript",
+      "title": "Inter-universal Teichmüller Theory 1: Construction of Hodge Theaters (author manuscript occurrence)",
+      "url": "https://www.kurims.kyoto-u.ac.jp/~motizuki/Inter-universal%20Teichmuller%20Theory%20I.pdf"
+    },
+    {
+      "authors": [
+        "Shinichi Mochizuki"
+      ],
+      "claims_extracted": [],
+      "content_digest": "sha256:91f8f42bad315d518ca5d970d17f24b61b3e5367f2c03dd60dedba0992888685",
+      "contrary_sources": [],
+      "coverage_status": "partial",
+      "doi_or_arxiv": "10.4171/PRIMS/57-1-2",
+      "evidence_coordinates": {
+        "abc_closure": false,
+        "axiom_audited": false,
+        "bytes_frozen": true,
+        "iut_application_checked": false,
+        "kernel_accepted": false,
+        "selected_claim_located": false,
+        "statement_translation_checked": false
+      },
+      "exact_regions_used": [
+        "EMS article metadata, abstract, subscription notice"
+      ],
+      "formalization_status": "none",
+      "local_path": "snapshots/iut-2-journal-metadata.html",
+      "notes": "Journal PDF access redirected to subscription article page. Original journal full text NOT frozen; this digest covers HTML metadata only. Author manuscript is a separate occurrence and has not been byte- or statement-identified with the journal edition.",
+      "publication_status": "published",
+      "repository_or_domain": "ems.press",
+      "retrieval_attempt_ids": [
+        "iut-2-journal-metadata"
+      ],
+      "retrieved_at": "2026-10-16T01:14:20.218980+00:00",
+      "revision_or_version": "PRIMS 57 (2021), no. 1/2; metadata only",
+      "rights_and_license": "No license grant established by this run; preserve attribution and source rights. Local research snapshot only; no publication authority.",
+      "source_class": "primary",
+      "source_id": "iut-2-journal-metadata",
+      "title": "Inter-universal Teichmüller Theory 2: Hodge–Arakelov-Theoretic Evaluation",
+      "url": "https://ems.press/journals/prims/articles/201526"
+    },
+    {
+      "authors": [
+        "Shinichi Mochizuki"
+      ],
+      "claims_extracted": [],
+      "content_digest": "sha256:180bfa6aaddc4ae37af37acaad51f61e0a47b33b8255ad3169e28a970ae39b7c",
+      "contrary_sources": [],
+      "coverage_status": "partial",
+      "doi_or_arxiv": "related journal DOI 10.4171/PRIMS/57-1-2",
+      "evidence_coordinates": {
+        "abc_closure": false,
+        "axiom_audited": false,
+        "bytes_frozen": true,
+        "iut_application_checked": false,
+        "kernel_accepted": false,
+        "selected_claim_located": false,
+        "statement_translation_checked": false
+      },
+      "exact_regions_used": [
+        "Corollary 4.10(i): referenced by IUT III and LANA; not fully checked"
+      ],
+      "extracted_digest": "sha256:73cfb7c30c7c0546709f07b8110f7339eb13debd49ffbf80093bc2e6ef6ac804",
+      "extracted_path": "extracted/iut-2-author-manuscript.txt",
+      "formalization_status": "none",
+      "local_path": "snapshots/iut-2-author-manuscript.pdf",
+      "notes": "Separate from journal version. Full source correspondence and proof reconstruction open.",
+      "publication_status": "preprint",
+      "repository_or_domain": "www.kurims.kyoto-u.ac.jp",
+      "retrieval_attempt_ids": [
+        "iut-2-author-manuscript"
+      ],
+      "retrieved_at": "2026-10-16T01:14:22.701033+00:00",
+      "revision_or_version": "unversioned author PDF; digest freezes occurrence, not 2021 edition identity",
+      "rights_and_license": "No license grant established by this run; preserve attribution and source rights. Local research snapshot only; no publication authority.",
+      "source_class": "primary",
+      "source_id": "iut-2-author-manuscript",
+      "title": "Inter-universal Teichmüller Theory 2: Hodge–Arakelov-Theoretic Evaluation (author manuscript occurrence)",
+      "url": "https://www.kurims.kyoto-u.ac.jp/~motizuki/Inter-universal%20Teichmuller%20Theory%20II.pdf"
+    },
+    {
+      "authors": [
+        "Shinichi Mochizuki"
+      ],
+      "claims_extracted": [],
+      "content_digest": "sha256:14d1d6484e15604fb7f789123a748ba449c624ee8dacce6041dc219b92b0315d",
+      "contrary_sources": [],
+      "coverage_status": "partial",
+      "doi_or_arxiv": "10.4171/PRIMS/57-1-3",
+      "evidence_coordinates": {
+        "abc_closure": false,
+        "axiom_audited": false,
+        "bytes_frozen": true,
+        "iut_application_checked": false,
+        "kernel_accepted": false,
+        "selected_claim_located": false,
+        "statement_translation_checked": false
+      },
+      "exact_regions_used": [
+        "EMS article metadata, abstract, subscription notice"
+      ],
+      "formalization_status": "none",
+      "local_path": "snapshots/iut-3-journal-metadata.html",
+      "notes": "Journal PDF access redirected to subscription article page. Original journal full text NOT frozen; this digest covers HTML metadata only. Author manuscript is a separate occurrence and has not been byte- or statement-identified with the journal edition.",
+      "publication_status": "published",
+      "repository_or_domain": "ems.press",
+      "retrieval_attempt_ids": [
+        "iut-3-journal-metadata"
+      ],
+      "retrieved_at": "2026-10-16T01:14:20.219077+00:00",
+      "revision_or_version": "PRIMS 57 (2021), no. 1/2; metadata only",
+      "rights_and_license": "No license grant established by this run; preserve attribution and source rights. Local research snapshot only; no publication authority.",
+      "source_class": "primary",
+      "source_id": "iut-3-journal-metadata",
+      "title": "Inter-universal Teichmüller Theory 3: Canonical Splittings of the Log-Theta-Lattice",
+      "url": "https://ems.press/journals/prims/articles/201527"
+    },
+    {
+      "authors": [
+        "Shinichi Mochizuki"
+      ],
+      "claims_extracted": [
+        "IUT-III-3.12"
+      ],
+      "content_digest": "sha256:9a7ee3c77b1c7717210c0613eb39b6844649d0040dc3d9e1be7d544f8f91a0b9",
+      "contrary_sources": [
+        "ss-bonn",
+        "lana-2026-report"
+      ],
+      "coverage_status": "partial",
+      "doi_or_arxiv": "related journal DOI 10.4171/PRIMS/57-1-3",
+      "evidence_coordinates": {
+        "abc_closure": false,
+        "axiom_audited": false,
+        "bytes_frozen": true,
+        "iut_application_checked": false,
+        "kernel_accepted": false,
+        "selected_claim_located": true,
+        "statement_translation_checked": false
+      },
+      "exact_regions_used": [
+        "author manuscript PDF pp.153–160, Theorem 3.11 (located)",
+        "PDF pp.173–174, Corollary 3.12 statement",
+        "PDF pp.175–186, proof including Step (xi) (located, not reconstructed)"
+      ],
+      "extracted_digest": "sha256:ca816e55c1c902cc3867cee10bbe787a62227a18a0d86b7d89ae98c105f290d0",
+      "extracted_path": "extracted/iut-3-author-manuscript.txt",
+      "formalization_status": "none",
+      "local_path": "snapshots/iut-3-author-manuscript.pdf",
+      "notes": "Separate from journal version. Full source correspondence and proof reconstruction open.",
+      "publication_status": "preprint",
+      "repository_or_domain": "www.kurims.kyoto-u.ac.jp",
+      "retrieval_attempt_ids": [
+        "iut-3-author-manuscript"
+      ],
+      "retrieved_at": "2026-10-16T01:14:22.763997+00:00",
+      "revision_or_version": "unversioned author PDF; digest freezes occurrence, not 2021 edition identity",
+      "rights_and_license": "No license grant established by this run; preserve attribution and source rights. Local research snapshot only; no publication authority.",
+      "source_class": "primary",
+      "source_id": "iut-3-author-manuscript",
+      "title": "Inter-universal Teichmüller Theory 3: Canonical Splittings of the Log-Theta-Lattice (author manuscript occurrence)",
+      "url": "https://www.kurims.kyoto-u.ac.jp/~motizuki/Inter-universal%20Teichmuller%20Theory%20III.pdf"
+    },
+    {
+      "authors": [
+        "Shinichi Mochizuki"
+      ],
+      "claims_extracted": [],
+      "content_digest": "sha256:e887df366fb5ca65a2a0981ed2a75cf215a2e191f461c499e78a863f4a4a768b",
+      "contrary_sources": [],
+      "coverage_status": "partial",
+      "doi_or_arxiv": "10.4171/PRIMS/57-1-4",
+      "evidence_coordinates": {
+        "abc_closure": false,
+        "axiom_audited": false,
+        "bytes_frozen": true,
+        "iut_application_checked": false,
+        "kernel_accepted": false,
+        "selected_claim_located": false,
+        "statement_translation_checked": false
+      },
+      "exact_regions_used": [
+        "EMS article metadata, abstract, subscription notice"
+      ],
+      "formalization_status": "none",
+      "local_path": "snapshots/iut-4-journal-metadata.html",
+      "notes": "Journal PDF access redirected to subscription article page. Original journal full text NOT frozen; this digest covers HTML metadata only. Author manuscript is a separate occurrence and has not been byte- or statement-identified with the journal edition.",
+      "publication_status": "published",
+      "repository_or_domain": "ems.press",
+      "retrieval_attempt_ids": [
+        "iut-4-journal-metadata"
+      ],
+      "retrieved_at": "2026-10-16T01:14:20.219164+00:00",
+      "revision_or_version": "PRIMS 57 (2021), no. 1/2; metadata only",
+      "rights_and_license": "No license grant established by this run; preserve attribution and source rights. Local research snapshot only; no publication authority.",
+      "source_class": "primary",
+      "source_id": "iut-4-journal-metadata",
+      "title": "Inter-universal Teichmüller Theory 4: Log-Volume Computations and Set-Theoretic Foundations",
+      "url": "https://ems.press/journals/prims/articles/201528"
+    },
+    {
+      "authors": [
+        "Shinichi Mochizuki"
+      ],
+      "claims_extracted": [
+        "IUT-IV-1.10"
+      ],
+      "content_digest": "sha256:5bf4b1e0a8c2686562a6859e5009d301335044cfb5efec5d3a9edf764e4af87f",
+      "contrary_sources": [],
+      "coverage_status": "partial",
+      "doi_or_arxiv": "related journal DOI 10.4171/PRIMS/57-1-4",
+      "evidence_coordinates": {
+        "abc_closure": false,
+        "axiom_audited": false,
+        "bytes_frozen": true,
+        "iut_application_checked": false,
+        "kernel_accepted": false,
+        "selected_claim_located": true,
+        "statement_translation_checked": false
+      },
+      "exact_regions_used": [
+        "author manuscript PDF pp.22–24, Theorem 1.10 statement",
+        "PDF p.41, Corollary 2.2 (located)",
+        "Corollary 2.3 (located, not reconstructed)"
+      ],
+      "extracted_digest": "sha256:f5089fd90b1f84508feb2346fa5b5c162c5eeb7159d5a0589215218aad446d7b",
+      "extracted_path": "extracted/iut-4-author-manuscript.txt",
+      "formalization_status": "none",
+      "local_path": "snapshots/iut-4-author-manuscript.pdf",
+      "notes": "Separate from journal version. Full source correspondence and proof reconstruction open.",
+      "publication_status": "preprint",
+      "repository_or_domain": "www.kurims.kyoto-u.ac.jp",
+      "retrieval_attempt_ids": [
+        "iut-4-author-manuscript"
+      ],
+      "retrieved_at": "2026-10-16T01:14:23.596224+00:00",
+      "revision_or_version": "unversioned author PDF; digest freezes occurrence, not 2021 edition identity",
+      "rights_and_license": "No license grant established by this run; preserve attribution and source rights. Local research snapshot only; no publication authority.",
+      "source_class": "primary",
+      "source_id": "iut-4-author-manuscript",
+      "title": "Inter-universal Teichmüller Theory 4: Log-Volume Computations and Set-Theoretic Foundations (author manuscript occurrence)",
+      "url": "https://www.kurims.kyoto-u.ac.jp/~motizuki/Inter-universal%20Teichmuller%20Theory%20IV.pdf"
+    },
+    {
+      "authors": [
+        "Peter Scholze",
+        "Jakob Stix"
+      ],
+      "claims_extracted": [
+        "SS-weighted",
+        "SS-unweighted",
+        "SS-cycle"
+      ],
+      "content_digest": "sha256:4ec276246a2a92d2e211a0dae5afd073b5eae7e2b37e9bbabe3cb82c7e0b34a0",
+      "contrary_sources": [
+        "mochizuki-cmt2018-05",
+        "mochizuki-cmt2018-08",
+        "mochizuki-rpt2018",
+        "lana-2026-report"
+      ],
+      "coverage_status": "partial",
+      "doi_or_arxiv": null,
+      "evidence_coordinates": {
+        "abc_closure": false,
+        "axiom_audited": false,
+        "bytes_frozen": true,
+        "iut_application_checked": false,
+        "kernel_accepted": false,
+        "selected_claim_located": true,
+        "statement_translation_checked": false
+      },
+      "exact_regions_used": [
+        "printed p.1 Conjecture 1",
+        "pp.1–3 §1.1–1.3 reductions",
+        "p.4 equations (1.5),(1.6)",
+        "pp.9–10 §2.2 scale diagram and claimed monodromy"
+      ],
+      "extracted_digest": "sha256:78473d440c09fe2098a8be7952a7f66b4e54c9d63594d27ef6115d6e9f2442b2",
+      "extracted_path": "extracted/ss-bonn.txt",
+      "formalization_status": "none",
+      "local_path": "snapshots/ss-bonn.pdf",
+      "notes": "Bonn occurrence is not assumed identical to either inaccessible RIMS-labeled May/August report. Decisive p.4 visually inspected. Approximations in source are not exact formal premises.",
+      "publication_status": "web-note",
+      "repository_or_domain": "www.math.uni-bonn.de",
+      "retrieval_attempt_ids": [
+        "ss-bonn",
+        "ss-bonn-curl-retry"
+      ],
+      "retrieved_at": "2026-10-16T01:15:30.310435+00:00",
+      "revision_or_version": "PDF internally dated July 16, 2018; Bonn occurrence",
+      "rights_and_license": "No license grant established by this run; preserve attribution and source rights. Local research snapshot only; no publication authority.",
+      "source_class": "primary",
+      "source_id": "ss-bonn",
+      "title": "Why abc is still a conjecture",
+      "url": "https://www.math.uni-bonn.de/people/scholze/WhyABCisStillaConjecture.pdf"
+    },
+    {
+      "authors": [
+        "Peter Scholze",
+        "Jakob Stix"
+      ],
+      "claims_extracted": [],
+      "content_digest": null,
+      "contrary_sources": [],
+      "coverage_status": "unavailable",
+      "doi_or_arxiv": null,
+      "evidence_coordinates": {
+        "abc_closure": false,
+        "axiom_audited": false,
+        "bytes_frozen": false,
+        "iut_application_checked": false,
+        "kernel_accepted": false,
+        "selected_claim_located": false,
+        "statement_translation_checked": false
+      },
+      "exact_regions_used": [],
+      "formalization_status": "none",
+      "local_path": null,
+      "notes": "Official URL returned HTTP 403; no access bypass attempted. Contents not inferred from Bonn occurrence or responses.",
+      "publication_status": "web-note",
+      "repository_or_domain": "www.kurims.kyoto-u.ac.jp",
+      "retrieval_attempt_ids": [
+        "ss-2018-05"
+      ],
+      "retrieved_at": "2026-10-16T01:14:21.530098+00:00",
+      "revision_or_version": "official occurrence labeled 2018-05; bytes unavailable",
+      "rights_and_license": "No license grant established by this run; preserve attribution and source rights. Local research snapshot only; no publication authority.",
+      "source_class": "primary",
+      "source_id": "ss-2018-05",
+      "title": "Scholze–Stix report labeled SS2018-05 on official discussion page",
+      "url": "https://www.kurims.kyoto-u.ac.jp/~motizuki/protectedpdf-2018-05/SS2018-05.pdf"
+    },
+    {
+      "authors": [
+        "Peter Scholze",
+        "Jakob Stix"
+      ],
+      "claims_extracted": [],
+      "content_digest": null,
+      "contrary_sources": [],
+      "coverage_status": "unavailable",
+      "doi_or_arxiv": null,
+      "evidence_coordinates": {
+        "abc_closure": false,
+        "axiom_audited": false,
+        "bytes_frozen": false,
+        "iut_application_checked": false,
+        "kernel_accepted": false,
+        "selected_claim_located": false,
+        "statement_translation_checked": false
+      },
+      "exact_regions_used": [],
+      "formalization_status": "none",
+      "local_path": null,
+      "notes": "Official URL returned HTTP 403; no access bypass attempted. Contents not inferred from Bonn occurrence or responses.",
+      "publication_status": "web-note",
+      "repository_or_domain": "www.kurims.kyoto-u.ac.jp",
+      "retrieval_attempt_ids": [
+        "ss-2018-08"
+      ],
+      "retrieved_at": "2026-10-16T01:14:21.814410+00:00",
+      "revision_or_version": "official occurrence labeled 2018-08; bytes unavailable",
+      "rights_and_license": "No license grant established by this run; preserve attribution and source rights. Local research snapshot only; no publication authority.",
+      "source_class": "primary",
+      "source_id": "ss-2018-08",
+      "title": "Scholze–Stix report labeled SS2018-08 on official discussion page",
+      "url": "https://www.kurims.kyoto-u.ac.jp/~motizuki/protectedpdf-2018-08/SS2018-08.pdf"
+    },
+    {
+      "authors": [
+        "Shinichi Mochizuki"
+      ],
+      "claims_extracted": [
+        "M-full-poly",
+        "M-distinct-structures"
+      ],
+      "content_digest": "sha256:582e3f60e9461c127617844d92440dd60720ee9291da3a693270bcf195221882",
+      "contrary_sources": [
+        "ss-bonn"
+      ],
+      "coverage_status": "partial",
+      "doi_or_arxiv": null,
+      "evidence_coordinates": {
+        "abc_closure": false,
+        "axiom_audited": false,
+        "bytes_frozen": true,
+        "iut_application_checked": false,
+        "kernel_accepted": false,
+        "selected_claim_located": true,
+        "statement_translation_checked": false
+      },
+      "exact_regions_used": [
+        "p.2 (Smm) illustrative scalar analogy",
+        "pp.7–8 §6 full poly-isomorphism and Ind1/Ind2",
+        "§12 (MlLV),(LVEx),(IUAD); exact labels located, selected context inspected"
+      ],
+      "extracted_digest": "sha256:8e96af586b88f8ef9e5070e13aeca29dc82a30b4cc745bfd3e05ad9fa5e8b97a",
+      "extracted_path": "extracted/mochizuki-rpt2018.txt",
+      "formalization_status": "none",
+      "local_path": "snapshots/mochizuki-rpt2018.pdf",
+      "notes": "Analogies in (Smm)/(LVEx) are source examples only, not IUT premises. Cooperation of Yuichiro Hoshi credited by official host page.",
+      "publication_status": "web-note",
+      "repository_or_domain": "www.kurims.kyoto-u.ac.jp",
+      "retrieval_attempt_ids": [
+        "mochizuki-rpt2018"
+      ],
+      "retrieved_at": "2026-10-16T01:14:21.816750+00:00",
+      "revision_or_version": "February 2019 title; official page updated 2019-02-01",
+      "rights_and_license": "No license grant established by this run; preserve attribution and source rights. Local research snapshot only; no publication authority.",
+      "source_class": "primary",
+      "source_id": "mochizuki-rpt2018",
+      "title": "Report on discussions held March 15–20, 2018 concerning IUT",
+      "url": "https://www.kurims.kyoto-u.ac.jp/~motizuki/Rpt2018.pdf"
+    },
+    {
+      "authors": [
+        "Shinichi Mochizuki"
+      ],
+      "claims_extracted": [],
+      "content_digest": "sha256:9243a398b51216103f05d2af74452de5331f8a3bd9a455b81fd2588e398f4f2c",
+      "contrary_sources": [],
+      "coverage_status": "partial",
+      "doi_or_arxiv": null,
+      "evidence_coordinates": {
+        "abc_closure": false,
+        "axiom_audited": false,
+        "bytes_frozen": true,
+        "iut_application_checked": false,
+        "kernel_accepted": false,
+        "selected_claim_located": false,
+        "statement_translation_checked": false
+      },
+      "exact_regions_used": [
+        "2018-11-08 (LVEx) rewrite",
+        "2019-02-01 changes"
+      ],
+      "formalization_status": "none",
+      "local_path": "snapshots/mochizuki-rpt2018-revisions.txt",
+      "notes": "Original source bytes preserved; encoding is not UTF-8. Revision metadata does not establish proof acceptance.",
+      "publication_status": "web-note",
+      "repository_or_domain": "www.kurims.kyoto-u.ac.jp",
+      "retrieval_attempt_ids": [
+        "mochizuki-rpt2018-revisions"
+      ],
+      "retrieved_at": "2026-10-16T01:14:21.898345+00:00",
+      "revision_or_version": "entries through 2019-02-01",
+      "rights_and_license": "No license grant established by this run; preserve attribution and source rights. Local research snapshot only; no publication authority.",
+      "source_class": "primary",
+      "source_id": "mochizuki-rpt2018-revisions",
+      "title": "Revision list for Rpt2018",
+      "url": "https://www.kurims.kyoto-u.ac.jp/~motizuki/%5BRpt2018%5D%20Revisions.txt"
+    },
+    {
+      "authors": [
+        "Shinichi Mochizuki"
+      ],
+      "claims_extracted": [
+        "M-average-j2",
+        "M-no-loop",
+        "M-common-container"
+      ],
+      "content_digest": "sha256:d71c38308322bdb403b11c6f450f8f67797600c5c9ac7c28505c8d1c43c1f53b",
+      "contrary_sources": [
+        "ss-bonn"
+      ],
+      "coverage_status": "partial",
+      "doi_or_arxiv": null,
+      "evidence_coordinates": {
+        "abc_closure": false,
+        "axiom_audited": false,
+        "bytes_frozen": true,
+        "iut_application_checked": false,
+        "kernel_accepted": false,
+        "selected_claim_located": true,
+        "statement_translation_checked": false
+      },
+      "exact_regions_used": [
+        "p.4 C7 full poly-isomorphism",
+        "p.5 C11–C14 real-line normalization and average j²",
+        "p.6 C17(N1–N5) and common-container claim",
+        "p.7 C18"
+      ],
+      "extracted_digest": "sha256:b6b1901a5b574e5a688dd51bfd89ad5e33f9100541f8503e971f3d5504a87d92",
+      "extracted_path": "extracted/mochizuki-cmt2018-05.txt",
+      "formalization_status": "none",
+      "local_path": "snapshots/mochizuki-cmt2018-05.pdf",
+      "notes": "p.5 visually inspected. Each response is an independent source claim; no repair instantiation inferred.",
+      "publication_status": "web-note",
+      "repository_or_domain": "www.kurims.kyoto-u.ac.jp",
+      "retrieval_attempt_ids": [
+        "mochizuki-cmt2018-05"
+      ],
+      "retrieved_at": "2026-10-16T01:14:21.922417+00:00",
+      "revision_or_version": "digest-bound unversioned occurrence",
+      "rights_and_license": "No license grant established by this run; preserve attribution and source rights. Local research snapshot only; no publication authority.",
+      "source_class": "primary",
+      "source_id": "mochizuki-cmt2018-05",
+      "title": "Comments on the May 2018 Scholze–Stix report",
+      "url": "https://www.kurims.kyoto-u.ac.jp/~motizuki/Cmt2018-05.pdf"
+    },
+    {
+      "authors": [
+        "Shinichi Mochizuki"
+      ],
+      "claims_extracted": [
+        "M-single-pilot",
+        "M-nonlinear"
+      ],
+      "content_digest": "sha256:2fbd8deb2ca54c728191970bd5a06b81fe12bb68e656a8c684ad6bda86d83e6d",
+      "contrary_sources": [
+        "ss-bonn"
+      ],
+      "coverage_status": "partial",
+      "doi_or_arxiv": null,
+      "evidence_coordinates": {
+        "abc_closure": false,
+        "axiom_audited": false,
+        "bytes_frozen": true,
+        "iut_application_checked": false,
+        "kernel_accepted": false,
+        "selected_claim_located": true,
+        "statement_translation_checked": false
+      },
+      "exact_regions_used": [
+        "p.3 C10 one pilot with indexed components",
+        "p.3 C12 abstract/concrete and ring-structure claim",
+        "p.4 C14 nonlinear region-volume comparison"
+      ],
+      "extracted_digest": "sha256:13c80aefffe40cd08a49e913f7fbbeb630c5d47c9b19266527d20048616f1ca4",
+      "extracted_path": "extracted/mochizuki-cmt2018-08.txt",
+      "formalization_status": "none",
+      "local_path": "snapshots/mochizuki-cmt2018-08.pdf",
+      "notes": "p.4 visually inspected. Claim is not representable merely by changing a positive scalar on each arrow without a separate region/indeterminacy model.",
+      "publication_status": "web-note",
+      "repository_or_domain": "www.kurims.kyoto-u.ac.jp",
+      "retrieval_attempt_ids": [
+        "mochizuki-cmt2018-08"
+      ],
+      "retrieved_at": "2026-10-16T01:14:22.070936+00:00",
+      "revision_or_version": "digest-bound unversioned occurrence",
+      "rights_and_license": "No license grant established by this run; preserve attribution and source rights. Local research snapshot only; no publication authority.",
+      "source_class": "primary",
+      "source_id": "mochizuki-cmt2018-08",
+      "title": "Comments on the August 2018 Scholze–Stix report",
+      "url": "https://www.kurims.kyoto-u.ac.jp/~motizuki/Cmt2018-08.pdf"
+    },
+    {
+      "authors": [
+        "Shinichi Mochizuki"
+      ],
+      "claims_extracted": [],
+      "content_digest": "sha256:c0e63b629aa174aa065e93d08defe3e5d0837c8778aab527383798baf8ca6e32",
+      "contrary_sources": [],
+      "coverage_status": "partial",
+      "doi_or_arxiv": null,
+      "evidence_coordinates": {
+        "abc_closure": false,
+        "axiom_audited": false,
+        "bytes_frozen": true,
+        "iut_application_checked": false,
+        "kernel_accepted": false,
+        "selected_claim_located": false,
+        "statement_translation_checked": false
+      },
+      "exact_regions_used": [
+        "title, contents, Corollary 3.12 references located at PDF pp.112,154"
+      ],
+      "extracted_digest": "sha256:852989d1b18afb69bcb3897311cc6d7da138b4ba0ef99efd17e5f82e8bc47d66",
+      "extracted_path": "extracted/mochizuki-essential-structure.txt",
+      "formalization_status": "none",
+      "local_path": "snapshots/mochizuki-essential-structure.pdf",
+      "notes": "167-page source retrieved; decisive explanations not fully interpreted. No theorem extracted as verified.",
+      "publication_status": "web-note",
+      "repository_or_domain": "www.kurims.kyoto-u.ac.jp",
+      "retrieval_attempt_ids": [
+        "mochizuki-essential-structure"
+      ],
+      "retrieved_at": "2026-10-16T01:14:23.643098+00:00",
+      "revision_or_version": "title page March 2024",
+      "rights_and_license": "No license grant established by this run; preserve attribution and source rights. Local research snapshot only; no publication authority.",
+      "source_class": "primary",
+      "source_id": "mochizuki-essential-structure",
+      "title": "On the Essential Logical Structure of Inter-universal Teichmüller Theory in Terms of Logical AND/OR Relations",
+      "url": "https://www.kurims.kyoto-u.ac.jp/~motizuki/Essential%20Logical%20Structure%20of%20Inter-universal%20Teichmuller%20Theory.pdf"
+    },
+    {
+      "authors": [
+        "Hector Pasten"
+      ],
+      "claims_extracted": [
+        "Pasten-small-derivatives",
+        "Pasten-fixed-exponent",
+        "Pasten-unconditional-size"
+      ],
+      "content_digest": "sha256:4f4b9ff1d8bef7fcc539971f01257250e1e3c6d12689b54dd07583fd95d3fa7d",
+      "contrary_sources": [],
+      "coverage_status": "partial",
+      "doi_or_arxiv": "arXiv:2106.16165v3",
+      "evidence_coordinates": {
+        "abc_closure": false,
+        "axiom_audited": false,
+        "bytes_frozen": true,
+        "iut_application_checked": false,
+        "kernel_accepted": false,
+        "selected_claim_located": true,
+        "statement_translation_checked": false
+      },
+      "exact_regions_used": [
+        "p.5 Theorems 2.5–2.8",
+        "pp.6–7 Theorem 3.3 and derivative independence",
+        "p.8 Conjecture 3.9 and Example 3.8",
+        "p.9 Lemma 4.1",
+        "pp.10–11 Lemma 4.4 and Theorem 4.5",
+        "p.11 Corollary 4.6"
+      ],
+      "extracted_digest": "sha256:113a2a8a1b92e814c0c76e443744e92b8adb977cbfa6007eda030c90d3dbd55e",
+      "extracted_path": "extracted/pasten-2106.16165v3.txt",
+      "formalization_status": "none",
+      "local_path": "snapshots/pasten-2106.16165v3.pdf",
+      "notes": "ArXiv v3 metadata explicitly reports an omission fixed in Lemma 4.4. Fixed η yields fixed-exponent Oesterlé variant, not full all-ε target. Must retain nonzero Wronskian and excluded prime family.",
+      "publication_status": "preprint",
+      "repository_or_domain": "arxiv.org",
+      "retrieval_attempt_ids": [
+        "pasten-2106.16165v3"
+      ],
+      "retrieved_at": "2026-10-16T01:14:26.467218+00:00",
+      "revision_or_version": "arXiv v3, 2021-12-11",
+      "rights_and_license": "No license grant established by this run; preserve attribution and source rights. Local research snapshot only; no publication authority.",
+      "source_class": "primary",
+      "source_id": "pasten-2106.16165v3",
+      "title": "Arithmetic derivatives through geometry of numbers",
+      "url": "https://arxiv.org/pdf/2106.16165v3"
+    },
+    {
+      "authors": [
+        "Jordan S. Ellenberg"
+      ],
+      "claims_extracted": [
+        "Ellenberg-congruence"
+      ],
+      "content_digest": "sha256:28623224fd73a8ea25256c9a7650ec0b3422d841e136b67be94fbac1018586b5",
+      "contrary_sources": [],
+      "coverage_status": "partial",
+      "doi_or_arxiv": "arXiv:math/9909098v1",
+      "evidence_coordinates": {
+        "abc_closure": false,
+        "axiom_audited": false,
+        "bytes_frozen": true,
+        "iut_application_checked": false,
+        "kernel_accepted": false,
+        "selected_claim_located": true,
+        "statement_translation_checked": false
+      },
+      "exact_regions_used": [
+        "pp.1–2 Conjectures 1–2, Theorem 3, Lemma 4",
+        "pp.3–4 proof of Theorem 3"
+      ],
+      "extracted_digest": "sha256:00e409d902b225200a072006a328e420c590a1458f24ee40aa643f6ffb30bc44",
+      "extracted_path": "extracted/ellenberg-math9909098v1.txt",
+      "formalization_status": "none",
+      "local_path": "snapshots/ellenberg-math9909098v1.pdf",
+      "notes": "Signed ABC-solutions require two negative terms and distinct entries for exposition. Need handle exceptional (−1,−1,2) separately in port; no proof port performed.",
+      "publication_status": "preprint",
+      "repository_or_domain": "arxiv.org",
+      "retrieval_attempt_ids": [
+        "ellenberg-math9909098v1"
+      ],
+      "retrieved_at": "2026-10-16T01:14:26.830070+00:00",
+      "revision_or_version": "arXiv v1, 1999-09-17; internal March 25,1999",
+      "rights_and_license": "No license grant established by this run; preserve attribution and source rights. Local research snapshot only; no publication authority.",
+      "source_class": "primary",
+      "source_id": "ellenberg-math9909098v1",
+      "title": "Congruence ABC implies ABC",
+      "url": "https://arxiv.org/pdf/math/9909098v1"
+    },
+    {
+      "authors": [
+        "Taylor Dupuy",
+        "Anton Hilado"
+      ],
+      "claims_extracted": [
+        "DH-no-proof"
+      ],
+      "content_digest": "sha256:d2196b557d5c5d4afe2520db26df880585416c1218d939962b3a479d7ff341dc",
+      "contrary_sources": [],
+      "coverage_status": "partial",
+      "doi_or_arxiv": "arXiv:2004.13228v1",
+      "evidence_coordinates": {
+        "abc_closure": false,
+        "axiom_audited": false,
+        "bytes_frozen": true,
+        "iut_application_checked": false,
+        "kernel_accepted": false,
+        "selected_claim_located": true,
+        "statement_translation_checked": false
+      },
+      "exact_regions_used": [
+        "abstract: expressly does not prove Corollary 3.12"
+      ],
+      "extracted_digest": "sha256:c18fb0bc2a87d0ee95acb73d698b4d43b64ddeadaf31d12af0700ec7b2f0e648",
+      "extracted_path": "extracted/dupuy-hilado-2004.13228v1.txt",
+      "formalization_status": "none",
+      "local_path": "snapshots/dupuy-hilado-2004.13228v1.pdf",
+      "notes": "Original combined version retained separately. Later v2 split the paper; do not transfer v1 indeterminacy references into v2.",
+      "publication_status": "preprint",
+      "repository_or_domain": "arxiv.org",
+      "retrieval_attempt_ids": [
+        "dupuy-hilado-2004.13228v1"
+      ],
+      "retrieved_at": "2026-10-16T01:14:26.959843+00:00",
+      "revision_or_version": "arXiv v1, 2020-04-28",
+      "rights_and_license": "No license grant established by this run; preserve attribution and source rights. Local research snapshot only; no publication authority.",
+      "source_class": "primary",
+      "source_id": "dupuy-hilado-2004.13228v1",
+      "title": "The Statement of Mochizuki's Corollary 3.12, Initial Theta Data, and the First Two Indeterminacies",
+      "url": "https://arxiv.org/pdf/2004.13228v1"
+    },
+    {
+      "authors": [
+        "Taylor Dupuy",
+        "Anton Hilado"
+      ],
+      "claims_extracted": [],
+      "content_digest": "sha256:e6ba06b458ea633764093618c3312926ab585bb4f092e43416f2eff386bb0ce2",
+      "contrary_sources": [],
+      "coverage_status": "partial",
+      "doi_or_arxiv": "arXiv:2004.13228v2; related DOI 10.1007/s11139-025-01100-y",
+      "evidence_coordinates": {
+        "abc_closure": false,
+        "axiom_audited": false,
+        "bytes_frozen": true,
+        "iut_application_checked": false,
+        "kernel_accepted": false,
+        "selected_claim_located": false,
+        "statement_translation_checked": false
+      },
+      "exact_regions_used": [
+        "arXiv version metadata and abstract; PDF first page"
+      ],
+      "extracted_digest": "sha256:e8c6efe6ffab262d5b60b1f33dcb2e62b8075983260badc0fbdee16d1bc0a1f5",
+      "extracted_path": "extracted/dupuy-hilado-2004.13228v2.txt",
+      "formalization_status": "none",
+      "local_path": "snapshots/dupuy-hilado-2004.13228v2.pdf",
+      "notes": "Current v2 is initial-data computation and an 11a1 example; original First Two Indeterminacies section became separate article. New article not retrieved in this budget.",
+      "publication_status": "preprint",
+      "repository_or_domain": "arxiv.org",
+      "retrieval_attempt_ids": [
+        "dupuy-hilado-2004.13228v2"
+      ],
+      "retrieved_at": "2026-10-16T01:14:27.144280+00:00",
+      "revision_or_version": "arXiv v2, 2025-06-19",
+      "rights_and_license": "No license grant established by this run; preserve attribution and source rights. Local research snapshot only; no publication authority.",
+      "source_class": "primary",
+      "source_id": "dupuy-hilado-2004.13228v2",
+      "title": "The Statement of Mochizuki's Corollary 3.12: Initial Theta Data",
+      "url": "https://arxiv.org/pdf/2004.13228v2"
+    },
+    {
+      "authors": [
+        "Taylor Dupuy",
+        "Anton Hilado"
+      ],
+      "claims_extracted": [
+        "DH-conditional-Szpiro"
+      ],
+      "content_digest": "sha256:6f7fa882fb0cae2c5a0f74a45069d18680012431ba7ea4318a468236e9f78a41",
+      "contrary_sources": [],
+      "coverage_status": "partial",
+      "doi_or_arxiv": "arXiv:2004.13108v2",
+      "evidence_coordinates": {
+        "abc_closure": false,
+        "axiom_audited": false,
+        "bytes_frozen": true,
+        "iut_application_checked": false,
+        "kernel_accepted": false,
+        "selected_claim_located": true,
+        "statement_translation_checked": false
+      },
+      "exact_regions_used": [
+        "pp.3–4 Theorems 1.0.3–1.0.5",
+        "pp.27–31 Theorems 7.12.1,7.13.1,8.2.1"
+      ],
+      "extracted_digest": "sha256:30522e9acc15a7c7b53fa49868e042a240230cdf0e89acc117ec81369d382f07",
+      "extracted_path": "extracted/dupuy-hilado-2004.13108v2.txt",
+      "formalization_status": "none",
+      "local_path": "snapshots/dupuy-hilado-2004.13108v2.pdf",
+      "notes": "Every listed main inequality assumes Corollary 3.12 AND Claim 5.0.1. Neither assumption discharged here.",
+      "publication_status": "preprint",
+      "repository_or_domain": "arxiv.org",
+      "retrieval_attempt_ids": [
+        "dupuy-hilado-2004.13108v2"
+      ],
+      "retrieved_at": "2026-10-16T01:14:27.579158+00:00",
+      "revision_or_version": "arXiv v2, 2020-04-29",
+      "rights_and_license": "No license grant established by this run; preserve attribution and source rights. Local research snapshot only; no publication authority.",
+      "source_class": "primary",
+      "source_id": "dupuy-hilado-2004.13108v2",
+      "title": "Probabilistic Szpiro, Baby Szpiro, and Explicit Szpiro from Mochizuki's Corollary 3.12",
+      "url": "https://arxiv.org/pdf/2004.13108v2"
+    },
+    {
+      "authors": [
+        "Kirti Joshi"
+      ],
+      "claims_extracted": [
+        "Joshi-claimed-abc"
+      ],
+      "content_digest": "sha256:ef8851fe656c705f7e9881778b4dd0c592c9f35a2980be6a335412a15542547a",
+      "contrary_sources": [
+        "mochizuki-joshi-2024",
+        "Scholze-MO-468079"
+      ],
+      "coverage_status": "partial",
+      "doi_or_arxiv": "arXiv:2403.10430v2",
+      "evidence_coordinates": {
+        "abc_closure": false,
+        "axiom_audited": false,
+        "bytes_frozen": true,
+        "iut_application_checked": false,
+        "kernel_accepted": false,
+        "selected_claim_located": true,
+        "statement_translation_checked": false
+      },
+      "exact_regions_used": [
+        "pp.13–18 source/comparison overview",
+        "pp.72–75 Theorem 7.1.1 and claimed Theorem 7.2.1 consequence"
+      ],
+      "extracted_digest": "sha256:c185c1b0207f24d7e763f078574c554ce1adcd03537e5b76c743c55f825b5884",
+      "extracted_path": "extracted/joshi-2403.10430v2.txt",
+      "formalization_status": "none",
+      "local_path": "snapshots/joshi-2403.10430v2.pdf",
+      "notes": "Claimed proof candidate only. Earlier 2024 criticisms and later response claims are version-specific; no correctness decision inferred from silence or publication.",
+      "publication_status": "preprint",
+      "repository_or_domain": "arxiv.org",
+      "retrieval_attempt_ids": [
+        "joshi-2403.10430v2"
+      ],
+      "retrieved_at": "2026-10-16T01:14:27.973312+00:00",
+      "revision_or_version": "arXiv v2, 2025-02-24",
+      "rights_and_license": "No license grant established by this run; preserve attribution and source rights. Local research snapshot only; no publication authority.",
+      "source_class": "primary",
+      "source_id": "joshi-2403.10430v2",
+      "title": "Construction of Arithmetic Teichmuller Spaces IV: Proof of the abc-conjecture",
+      "url": "https://arxiv.org/pdf/2403.10430v2"
+    },
+    {
+      "authors": [
+        "Christian Bernert",
+        "Tim Browning",
+        "Jared Duker Lichtman",
+        "Joni Teräväinen"
+      ],
+      "claims_extracted": [
+        "Exceptional-v2-count"
+      ],
+      "content_digest": "sha256:ee57b904398692ffecd0ccf8ccdcb0641f8e63ba6b971d6c9343bbac60d53470",
+      "contrary_sources": [],
+      "coverage_status": "partial",
+      "doi_or_arxiv": "arXiv:2410.12234v2",
+      "evidence_coordinates": {
+        "abc_closure": false,
+        "axiom_audited": false,
+        "bytes_frozen": true,
+        "iut_application_checked": false,
+        "kernel_accepted": false,
+        "selected_claim_located": true,
+        "statement_translation_checked": false
+      },
+      "exact_regions_used": [
+        "pp.1–2 definition N_lambda(X), Proposition 1.1, Theorems1.2–1.3",
+        "p.12 references (selected)"
+      ],
+      "extracted_digest": "sha256:11a32b47758f02ff3a199a18301e092fde6b3e23bffb69f0496c3ff64d79b211",
+      "extracted_path": "extracted/exceptional-2410.12234v2.txt",
+      "formalization_status": "none",
+      "local_path": "snapshots/exceptional-2410.12234v2.pdf",
+      "notes": "v2 changes authors and strengthens stale v1 search abstract. Theorem 1.3 gives N_lambda(X) <<_{ε,lambda} X^(0.6+ε), lambda in (0,1). This is a counting bound, not finiteness. Appendix Python is source data and was never executed.",
+      "publication_status": "preprint",
+      "repository_or_domain": "arxiv.org",
+      "retrieval_attempt_ids": [
+        "exceptional-2410.12234v2"
+      ],
+      "retrieved_at": "2026-10-16T01:14:28.015027+00:00",
+      "revision_or_version": "arXiv v2, 2026-05-09; PDF internally May12,2026",
+      "rights_and_license": "No license grant established by this run; preserve attribution and source rights. Local research snapshot only; no publication authority.",
+      "source_class": "primary",
+      "source_id": "exceptional-2410.12234v2",
+      "title": "Bounds on the exceptional set in the abc conjecture",
+      "url": "https://arxiv.org/pdf/2410.12234v2"
+    },
+    {
+      "authors": [
+        "Kirti Joshi"
+      ],
+      "claims_extracted": [],
+      "content_digest": "sha256:dce10ed9a78968e405cf0f986a389ca37348849439f468b0f3902c361e01d0c6",
+      "contrary_sources": [],
+      "coverage_status": "partial",
+      "doi_or_arxiv": null,
+      "evidence_coordinates": {
+        "abc_closure": false,
+        "axiom_audited": false,
+        "bytes_frozen": true,
+        "iut_application_checked": false,
+        "kernel_accepted": false,
+        "selected_claim_located": false,
+        "statement_translation_checked": false
+      },
+      "exact_regions_used": [
+        "links to final report and later responses"
+      ],
+      "formalization_status": "none",
+      "local_path": "snapshots/joshi-author-index.html",
+      "notes": "Discovery and version attribution only; not proof evidence.",
+      "publication_status": "web-note",
+      "repository_or_domain": "archive.math.arizona.edu",
+      "retrieval_attempt_ids": [
+        "joshi-author-index"
+      ],
+      "retrieved_at": "2026-10-16T01:14:28.156325+00:00",
+      "revision_or_version": "digest-bound unversioned occurrence",
+      "rights_and_license": "No license grant established by this run; preserve attribution and source rights. Local research snapshot only; no publication authority.",
+      "source_class": "commentary",
+      "source_id": "joshi-author-index",
+      "title": "Kirti Joshi author page",
+      "url": "https://archive.math.arizona.edu/kirti/"
+    },
+    {
+      "authors": [
+        "C. L. Stewart",
+        "Kunrui Yu"
+      ],
+      "claims_extracted": [],
+      "content_digest": "sha256:65a55e714b6798bae65d876ec73b58c5fa3507e5484aca3b2208e89470a1827a",
+      "contrary_sources": [],
+      "coverage_status": "unavailable",
+      "doi_or_arxiv": "10.1215/S0012-7094-01-10815-6",
+      "evidence_coordinates": {
+        "abc_closure": false,
+        "axiom_audited": false,
+        "bytes_frozen": true,
+        "iut_application_checked": false,
+        "kernel_accepted": false,
+        "selected_claim_located": false,
+        "statement_translation_checked": false
+      },
+      "exact_regions_used": [],
+      "formalization_status": "none",
+      "local_path": "snapshots/stewart-yu-2001.pdf",
+      "notes": "Institutional URL returned a non-PDF HTML response (preserved). No exact theorem extracted locally; bibliographic lead only. Source cannot supply a checked inequality in this run.",
+      "publication_status": "published",
+      "repository_or_domain": "uwaterloo.ca",
+      "retrieval_attempt_ids": [
+        "stewart-yu-2001"
+      ],
+      "retrieved_at": "2026-10-16T01:15:49.373631+00:00",
+      "revision_or_version": "Duke Math.J.108(1)(2001),169–181",
+      "rights_and_license": "No license grant established by this run; preserve attribution and source rights. Local research snapshot only; no publication authority.",
+      "source_class": "primary",
+      "source_id": "stewart-yu-2001",
+      "title": "On the abc conjecture, II",
+      "url": "https://uwaterloo.ca/pure-mathematics/sites/default/files/uploads/documents/s0012-7094-01-10815-6.pdf"
+    },
+    {
+      "authors": [
+        "Paul Vojta"
+      ],
+      "claims_extracted": [
+        "Vojta-P1-source",
+        "Vojta-source-discrepancy"
+      ],
+      "content_digest": "sha256:7a81764bb598f59c8205da04e1bd0c548ba1560750bd3da8f7ac42f24e45b1db",
+      "contrary_sources": [],
+      "coverage_status": "partial",
+      "doi_or_arxiv": null,
+      "evidence_coordinates": {
+        "abc_closure": false,
+        "axiom_audited": false,
+        "bytes_frozen": true,
+        "iut_application_checked": false,
+        "kernel_accepted": false,
+        "selected_claim_located": true,
+        "statement_translation_checked": false
+      },
+      "exact_regions_used": [
+        "printed pp.189–191 (PDF77–79), Conjecture 22.5, Conjecture 22.6, height/conductor calculation",
+        "printed p.202 Proposition 25.2 (located)",
+        "references: Vojta2000 and correction2001"
+      ],
+      "extracted_digest": "sha256:db79f647c0bdc13b5157e744f14b71f9fa75afe6e2b1124ce7bf8cc7e9c5f505",
+      "extracted_path": "extracted/vojta-cime.txt",
+      "formalization_status": "none",
+      "local_path": "snapshots/vojta-cime.pdf",
+      "notes": "Visual inspection confirms Conjecture 22.6 at printed p.190 says finitely many triples satisfying displayed ≤, while surrounding exposition uses ≤ as height upper bound. Preserve exact wording; likely source typo/interpretation issue, unresolved here. No silent correction or proof premise.",
+      "publication_status": "published",
+      "repository_or_domain": "math.berkeley.edu",
+      "retrieval_attempt_ids": [
+        "vojta-cime"
+      ],
+      "retrieved_at": "2026-10-16T01:15:49.376233+00:00",
+      "revision_or_version": "author CIME manuscript; published LNM2009(2011),111–230",
+      "rights_and_license": "No license grant established by this run; preserve attribution and source rights. Local research snapshot only; no publication authority.",
+      "source_class": "exposition",
+      "source_id": "vojta-cime",
+      "title": "Diophantine Approximation and Nevanlinna Theory",
+      "url": "https://math.berkeley.edu/~vojta/cime/cime.pdf"
+    },
+    {
+      "authors": [
+        "LANA Project"
+      ],
+      "claims_extracted": [
+        "LANA-eta-compatibility",
+        "LANA-no-final-verdict"
+      ],
+      "content_digest": "sha256:aa53093aa8d69dbce5f8fb4f541069a418650260dee1ef532917aa8db89606c7",
+      "contrary_sources": [
+        "ss-bonn"
+      ],
+      "coverage_status": "partial",
+      "doi_or_arxiv": null,
+      "evidence_coordinates": {
+        "abc_closure": false,
+        "axiom_audited": false,
+        "bytes_frozen": true,
+        "iut_application_checked": false,
+        "kernel_accepted": false,
+        "selected_claim_located": true,
+        "statement_translation_checked": false
+      },
+      "exact_regions_used": [
+        "p.1 abstract",
+        "pp.43–46 §9 eta algorithm, equation(9-1)",
+        "pp.47–49 §10.2–10.5"
+      ],
+      "extracted_digest": "sha256:82a8290cbcf87d179bdb5200e203368f58b31e68139b5b6aff6d358315c2d932",
+      "extracted_path": "extracted/lana-2026-report.txt",
+      "formalization_status": "none",
+      "local_path": "snapshots/lana-2026-report.pdf",
+      "notes": "Located by official ZEN July17,2026 announcement. Source says no proof of (9-1) at this time; agrees SS hexagon noncommutes but says its reconstruction does not factor through that hexagon. Raw URL was mutable branch at fetch; digest pins bytes; later ls-remote pins observed ref, equality to commit bytes has not been independently fetched.",
+      "publication_status": "web-note",
+      "repository_or_domain": "raw.githubusercontent.com",
+      "retrieval_attempt_ids": [
+        "lana-2026-report"
+      ],
+      "retrieved_at": "2026-10-16T01:15:49.376485+00:00",
+      "revision_or_version": "updated July20,2026; GitHub pdf ref observed b8e4636edea64d0b9fdc1d7f6a51e63c1f5d1676",
+      "rights_and_license": "No license grant established by this run; preserve attribution and source rights. Local research snapshot only; no publication authority.",
+      "source_class": "review",
+      "source_id": "lana-2026-report",
+      "title": "Project LANA Interim Report on IUT Theory",
+      "url": "https://raw.githubusercontent.com/katobungen/LANA_report_202607/pdf/LANA_report_202607.pdf"
+    },
+    {
+      "authors": [
+        "Kirti Joshi"
+      ],
+      "claims_extracted": [
+        "Joshi-dissent"
+      ],
+      "content_digest": "sha256:7a6d933d781d098e3392b0ce27dbdf2b0749368cf8c27422092038d70712f48f",
+      "contrary_sources": [
+        "ss-bonn",
+        "mochizuki-joshi-2024"
+      ],
+      "coverage_status": "partial",
+      "doi_or_arxiv": null,
+      "evidence_coordinates": {
+        "abc_closure": false,
+        "axiom_audited": false,
+        "bytes_frozen": true,
+        "iut_application_checked": false,
+        "kernel_accepted": false,
+        "selected_claim_located": true,
+        "statement_translation_checked": false
+      },
+      "exact_regions_used": [
+        "pp.1–7 independent mathematical assertions",
+        "pp.8–10 chronology inspected only for version leads"
+      ],
+      "extracted_digest": "sha256:6b85808c37884aee76baee7724cbb83c82563eda7b295d8844ca40e658a22efd",
+      "extracted_path": "extracted/joshi-final-report.txt",
+      "formalization_status": "none",
+      "local_path": "snapshots/joshi-final-report.pdf",
+      "notes": "Position and source leads only. Chronology and absence-of-objection assertions are not proof evidence.",
+      "publication_status": "web-note",
+      "repository_or_domain": "sites.arizona.edu",
+      "retrieval_attempt_ids": [
+        "joshi-final-report"
+      ],
+      "retrieved_at": "2026-10-16T01:15:49.376694+00:00",
+      "revision_or_version": "author index describes final report May2025; URL path2025/11; digest-bound occurrence",
+      "rights_and_license": "No license grant established by this run; preserve attribution and source rights. Local research snapshot only; no publication authority.",
+      "source_class": "primary",
+      "source_id": "joshi-final-report",
+      "title": "Final Report on the Mochizuki–Scholze–Stix Controversy",
+      "url": "https://sites.arizona.edu/kirti-joshi/files/2025/11/report-on-scholze-stix-mochizuki-controversy.pdf"
+    },
+    {
+      "authors": [
+        "Shinichi Mochizuki"
+      ],
+      "claims_extracted": [
+        "M-Joshi-local-global"
+      ],
+      "content_digest": "sha256:f6636e2c6b48745be95eaab5435416c88445ff963afc27ebe2470fe9c80db9f7",
+      "contrary_sources": [
+        "joshi-2403.10430v2",
+        "joshi-final-report"
+      ],
+      "coverage_status": "partial",
+      "doi_or_arxiv": null,
+      "evidence_coordinates": {
+        "abc_closure": false,
+        "axiom_audited": false,
+        "bytes_frozen": true,
+        "iut_application_checked": false,
+        "kernel_accepted": false,
+        "selected_claim_located": true,
+        "statement_translation_checked": false
+      },
+      "exact_regions_used": [
+        "pp.6–8 §2 local/global and compatibility discussion, (Js1–3),(EssGlIq)"
+      ],
+      "extracted_digest": "sha256:c633c261e052c946287cccb34f17f785c577b1aa43b3f8931e0e839664fa6b42",
+      "extracted_path": "extracted/mochizuki-joshi-2024.txt",
+      "formalization_status": "none",
+      "local_path": "snapshots/mochizuki-joshi-2024.pdf",
+      "notes": "Addresses Jan25,2024 III and Mar10,2024 IV versions, not automatically current2025 versions. Social characterizations and analogies are excluded as mathematical premises.",
+      "publication_status": "web-note",
+      "repository_or_domain": "www.kurims.kyoto-u.ac.jp",
+      "retrieval_attempt_ids": [
+        "mochizuki-joshi-2024"
+      ],
+      "retrieved_at": "2026-10-16T01:15:49.376989+00:00",
+      "revision_or_version": "March2024; author news records revisions March30–31",
+      "rights_and_license": "No license grant established by this run; preserve attribution and source rights. Local research snapshot only; no publication authority.",
+      "source_class": "primary",
+      "source_id": "mochizuki-joshi-2024",
+      "title": "Report on the Recent Series of Preprints by K. Joshi",
+      "url": "https://www.kurims.kyoto-u.ac.jp/~motizuki/Report%20on%20a%20certain%20series%20of%20preprints%20%282024-03%29.pdf"
+    },
+    {
+      "authors": [
+        "Jineon Baek",
+        "Seewoo Lee"
+      ],
+      "claims_extracted": [
+        "Mathlib-polynomial-abc"
+      ],
+      "content_digest": "sha256:4989943d864adead8f60f9d5d5b5f24edd895146ec70f66b1393f9498a79017e",
+      "contrary_sources": [],
+      "coverage_status": "complete-selected-regions",
+      "doi_or_arxiv": null,
+      "exact_regions_used": [
+        "Polynomial.abc, lines54–61; full proof inspected"
+      ],
+      "formalization_status": "unknown",
+      "local_path": "/Users/think/Desktop/math/.lake/packages/mathlib/Mathlib/NumberTheory/FLT/MasonStothers.lean",
+      "notes": "Already in pinned dependency. This source inspection does not replay kernel or transitive axiom audit; parent-owned consumer audit required. Polynomial theorem, not integer abc.",
+      "publication_status": "repository",
+      "repository_or_domain": "leanprover-community/mathlib4",
+      "retrieved_at": "2026-10-16T01:25:39.359337+00:00",
+      "revision_or_version": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "rights_and_license": "Apache-2.0; copyright2024 Jineon Baek and Seewoo Lee",
+      "source_class": "formal-repository",
+      "source_id": "mathlib-MasonStothers-pinned",
+      "title": "Mathlib.NumberTheory.FLT.MasonStothers"
+    },
+    {
+      "authors": [
+        "Peter Scholze"
+      ],
+      "claims_extracted": [
+        "Scholze-Joshi-local-global"
+      ],
+      "content_digest": null,
+      "contrary_sources": [
+        "joshi-2403.10430v2",
+        "joshi-final-report"
+      ],
+      "coverage_status": "partial",
+      "doi_or_arxiv": null,
+      "evidence_coordinates": {
+        "abc_closure": false,
+        "axiom_audited": false,
+        "bytes_frozen": false,
+        "iut_application_checked": false,
+        "kernel_accepted": false,
+        "selected_claim_located": true,
+        "statement_translation_checked": false
+      },
+      "exact_regions_used": [
+        "Peter Scholze comments dated March 31, 2024 at 20:11 and 20:23"
+      ],
+      "formalization_status": "none",
+      "local_path": null,
+      "notes": "Direct authored critique was read through web tool; no local byte snapshot within the 32-download budget. Describes conflict between earlier Proposition 6.10.7 and Theorem 9.11.1 and distinguishes that critique from an internal error in IUT IV. Relevance to 2025 revisions remains open.",
+      "publication_status": "web-note",
+      "repository_or_domain": "mathoverflow.net",
+      "retrieval_time_precision": "web tool read during this run; exact per-call clock timestamp not recorded",
+      "retrieved_at": null,
+      "revision_or_version": "comments dated March 31, 2024 at 20:11 and 20:23",
+      "rights_and_license": "Host terms were not independently checked; no license inferred",
+      "source_class": "primary",
+      "source_id": "Scholze-MO-468079",
+      "title": "Scholze's comments on local/global comparison in Joshi's proof",
+      "url": "https://mathoverflow.net/questions/468079/is-there-a-mistake-in-mochizukis-proof-of-theorem-1-10-in-iutt-iv"
+    }
+  ]
+}

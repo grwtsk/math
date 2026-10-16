@@ -22,8 +22,8 @@ of the functions $W_i$.
 
 The [source](../../../../GRWTSK/Analysis/Calculus/CompactCutoff.lean),
 [joint positive controls](../../../../GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianCoupledSeparation.lean),
-[joint native receipt](../../../../evidence/Analysis/MellinTransform/gaussian-coupled-separation-checks-2026-10-15.json)
-and [integration record](../../../../evidence/Analysis/Calculus/compact-cutoff-integration-2026-10-15.json)
+[joint native receipt](../../../../.noeaaeue/evidence/Analysis/MellinTransform/gaussian-coupled-separation-checks-2026-10-15.json)
+and [integration record](../../../../.noeaaeue/evidence/Analysis/Calculus/compact-cutoff-integration-2026-10-15.json)
 bind the actual reusable construction. This calculus module imports no Gaussian
 module. The [Gaussian separation application](../MellinTransform/gaussian-coupled-separation.md)
 uses this construction and is checked in the same analytic closure; that census

@@ -1,5 +1,6 @@
 # Unfolding all rooted path occurrences
 
+
 Fix a root $r$ in any quiver $V$. An occurrence wraps an existing
 `Quiver.PathStar r`: an endpoint $v$ and an actual finite typed path from $r$
 to $v$. An extension from occurrence $p$ to occurrence $q$ carries an actual
@@ -61,7 +62,7 @@ identity. Its own source and native receipt carry those additional claims.
 
 The [source](../../../../GRWTSK/Combinatorics/DirectedGraph/PathUnfolding.lean),
 [positive consumers](../../../../GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PathUnfolding.lean)
-and [native receipt](../../../../evidence/Combinatorics/DirectedGraph/path-unfolding-checks-2026-10-15.json)
+and [native receipt](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/path-unfolding-checks-2026-10-15.json)
 bind exact bytes and controls. Fresh selected project objects and accepted
 controls use pinned Lean 4.33.0, trust zero, fatal warnings and a complete
 owned-declaration/transitive-axiom census permitting only `propext`,
@@ -69,8 +70,8 @@ owned-declaration/transitive-axiom census permitting only `propext`,
 and rechecked. Pinned dependency objects are reused and fingerprinted rather
 than rebuilt from source.
 
-The [integration evidence](../../../../evidence/Combinatorics/DirectedGraph/path-unfolding-integration-2026-10-15.json)
-and [source review](../../../../evidence/Combinatorics/DirectedGraph/path-unfolding-source-review-2026-10-15.json)
+The [integration evidence](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/path-unfolding-integration-2026-10-15.json)
+and [source review](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/path-unfolding-source-review-2026-10-15.json)
 preserve attribution, source identities and coverage limits. Courcelle's
 [arXiv construction](https://arxiv.org/abs/2212.07205v3) supplies closely matching
 context, with its own countability, connectedness and terminology conventions;
@@ -83,6 +84,8 @@ Apache-2.0 terms remain retained. Human direction: R.A. Jacob Martone.
 Formalization and checking assistance: OpenAI Codex. No mathematical novelty,
 whole-library admission or runtime refinement is claimed. The 16 declared
 method families and 215 declared records still lack supplied method identities.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

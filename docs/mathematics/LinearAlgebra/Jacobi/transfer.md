@@ -1,5 +1,6 @@
 # Jacobi transfer matrices
 
+
 This interface carries established two-coordinate Jacobi transfer mathematics. The raw transfer determinant is the ratio of the previous coefficient to the current coefficient. The weighted coordinates give determinant one when the current coefficient is nonzero. Every theorem keeps its original commutative-ring or field assumptions and every required nonzero premise.
 
 The interface also carries the exact raw/weighted state intertwining, integer sequence shifts, the specialization to Schrödinger transfer, and finite rational witnesses showing limitations of determinant, moment and cyclicity inferences. Those witnesses do not supply spectral identification or an RH proof.
@@ -10,7 +11,9 @@ Direction: R.A. Jacob Martone. Formalization and verification assistance: OpenAI
 
 ## Source and verification scope
 
-[Source](../../../../GRWTSK/LinearAlgebra/JacobiTransfer.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+[Source](../../../../GRWTSK/LinearAlgebra/JacobiTransfer.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../../.noeaaeue/documentation/reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+
+**Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 
