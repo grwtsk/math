@@ -1,0 +1,11 @@
+GRWTSK/Analysis/Fourier/ZModLargerSliceParameters.lean:20:4: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'Real.instDivInvMonoid', which is 'noncomputable'
+GRWTSK/Analysis/Fourier/ZModLargerSliceParameters.lean:23:4: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'Real.instDivInvMonoid', which is 'noncomputable'
+GRWTSK/Analysis/Fourier/ZModLargerSliceParameters.lean:76:4: error: failed to prove positivity/nonnegativity/nonzeroness
+GRWTSK/Analysis/Fourier/ZModLargerSliceParameters.lean:79:4: error: failed to prove positivity/nonnegativity/nonzeroness
+GRWTSK/Analysis/Fourier/ZModLargerSliceParameters.lean:110:33: error: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+GRWTSK/Analysis/Fourier/ZModLargerSliceParameters.lean:188:4: error: failed to prove positivity/nonnegativity/nonzeroness
+GRWTSK/Analysis/Fourier/ZModLargerSliceParameters.lean:303:43: error: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
