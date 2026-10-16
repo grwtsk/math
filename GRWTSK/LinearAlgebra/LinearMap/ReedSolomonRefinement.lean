@@ -76,7 +76,7 @@ structure Observation (Y Syndrome Comparison : Type*) (Coverage : Prop) where
 /-- A refinement covers its aggregate source exactly, with neither omission nor duplication. -/
 def CoverageCertificate {X ι : Type*} [AddCommMonoid X]
     (s : Finset ι) (aggregate : X) (source : ι → X) : Prop :=
-  aggregate = ∑ i in s, source i
+  aggregate = ∑ i ∈ s, source i
 
 variable {𝕜 X Y Y₁ Y₂ Z W ι : Type*}
   [NontriviallyNormedField 𝕜]
@@ -123,7 +123,7 @@ theorem encode_aggregate (s : Finset ι) (parent : Code 𝕜 X Y₁)
     (child : ι → Code 𝕜 X Y) (aggregate : X) (source : ι → X)
     (coverage : CoverageCertificate s aggregate source) :
     parent.encode aggregate =
-      ∑ i in s, transport parent (child i) ((child i).encode (source i)) := by
+      ∑ i ∈ s, transport parent (child i) ((child i).encode (source i)) := by
   unfold CoverageCertificate at coverage
   rw [coverage]
   simp only [map_sum, transport_encode_apply]
@@ -142,8 +142,8 @@ theorem reconstruction_identity (s : Finset ι) (parent : Code 𝕜 X Y₁)
     (coverage : CoverageCertificate s aggregate source) :
     L (parent.decode parentData) - L aggregate =
       (L.comp parent.decode)
-          (parentData - ∑ i in s, transport parent (child i) (childData i)) +
-        ∑ i in s, (L.comp (child i).decode)
+          (parentData - ∑ i ∈ s, transport parent (child i) (childData i)) +
+        ∑ i ∈ s, (L.comp (child i).decode)
           (childData i - (child i).encode (source i)) := by
   unfold CoverageCertificate at coverage
   subst aggregate
@@ -162,38 +162,38 @@ theorem source_error_bound (s : Finset ι) (parent : Code 𝕜 X Y₁)
     (ε : ι → ℝ) (δ : ℝ)
     (coverage : CoverageCertificate s aggregate source)
     (aggregateError :
-      ‖parentData - ∑ i in s, transport parent (child i) (childData i)‖ ≤ δ)
+      ‖parentData - ∑ i ∈ s, transport parent (child i) (childData i)‖ ≤ δ)
     (sourceError : ∀ i ∈ s,
       ‖childData i - (child i).encode (source i)‖ ≤ ε i) :
     ‖L (parent.decode parentData) - L aggregate‖ ≤
       ‖L.comp parent.decode‖ * δ +
-        ∑ i in s, ‖L.comp (child i).decode‖ * ε i := by
+        ∑ i ∈ s, ‖L.comp (child i).decode‖ * ε i := by
   have identity := reconstruction_identity s parent child L aggregate source
     parentData childData coverage
   calc
     ‖L (parent.decode parentData) - L aggregate‖ =
         ‖(L.comp parent.decode)
-            (parentData - ∑ i in s, transport parent (child i) (childData i)) +
-          ∑ i in s, (L.comp (child i).decode)
+            (parentData - ∑ i ∈ s, transport parent (child i) (childData i)) +
+          ∑ i ∈ s, (L.comp (child i).decode)
             (childData i - (child i).encode (source i))‖ := by rw [identity]
     _ ≤ ‖(L.comp parent.decode)
-            (parentData - ∑ i in s, transport parent (child i) (childData i))‖ +
-          ‖∑ i in s, (L.comp (child i).decode)
+            (parentData - ∑ i ∈ s, transport parent (child i) (childData i))‖ +
+          ‖∑ i ∈ s, (L.comp (child i).decode)
             (childData i - (child i).encode (source i))‖ :=
       norm_add_le _ _
     _ ≤ ‖(L.comp parent.decode)
-            (parentData - ∑ i in s, transport parent (child i) (childData i))‖ +
-          ∑ i in s, ‖(L.comp (child i).decode)
+            (parentData - ∑ i ∈ s, transport parent (child i) (childData i))‖ +
+          ∑ i ∈ s, ‖(L.comp (child i).decode)
             (childData i - (child i).encode (source i))‖ :=
       add_le_add_left (norm_sum_le _ _) _
     _ ≤ ‖L.comp parent.decode‖ * δ +
-          ∑ i in s, ‖L.comp (child i).decode‖ * ε i := by
+          ∑ i ∈ s, ‖L.comp (child i).decode‖ * ε i := by
       apply add_le_add
       · calc
           ‖(L.comp parent.decode)
-              (parentData - ∑ i in s, transport parent (child i) (childData i))‖
+              (parentData - ∑ i ∈ s, transport parent (child i) (childData i))‖
               ≤ ‖L.comp parent.decode‖ *
-                  ‖parentData - ∑ i in s, transport parent (child i) (childData i)‖ :=
+                  ‖parentData - ∑ i ∈ s, transport parent (child i) (childData i)‖ :=
             (L.comp parent.decode).le_opNorm _
           _ ≤ ‖L.comp parent.decode‖ * δ :=
             mul_le_mul_of_nonneg_left aggregateError (norm_nonneg _)
