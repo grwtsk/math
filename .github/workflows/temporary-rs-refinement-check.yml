@@ -1,0 +1,22 @@
+name: Temporary Reed-Solomon refinement check
+
+on:
+  push:
+    branches:
+      - codex/source-preserving-rs-refinement-check
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          build-args: "--wfail"
+          test: false
+      - name: Trust-zero source and axiom checks
+        run: |
+          lake env lean --trust=0 GRWTSK/LinearAlgebra/LinearMap/ReedSolomonRefinement.lean
+          lake env lean --trust=0 GRWTSK/NumberTheory/Zeta/Riemann/ScrewKernelRefinement.lean
+          lake env lean --trust=0 GRWTSK.lean
+          lake env lean --trust=0 scripts/AxiomAudit.lean
