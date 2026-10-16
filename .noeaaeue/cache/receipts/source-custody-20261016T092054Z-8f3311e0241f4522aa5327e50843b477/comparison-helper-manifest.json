@@ -1,0 +1,50 @@
+{
+  "schema": "independent-expanded-cache-physical-byte-comparison-binding-v1",
+  "status": "INERT_NOT_EXECUTED",
+  "prepared_at_utc": "2026-10-16T09:20:39.149567+00:00",
+  "repository": "/Users/think/Desktop/math",
+  "helper": "compare_expansion_bytes.py",
+  "helper_sha256": "059e22c979349cde25cb88d63b23499fe26dad88ab4a931207c8e85aecc7f0a3",
+  "schema_inputs": [
+    {
+      "path": ".noeaaeue/scripts/cache_math.py",
+      "sha256": "d73bebfeca4ec709fdc68741cba13a09611ae49a0095b4140dd5d2f3e6bb1c06",
+      "bytes": 36017,
+      "retained": "retained-inputs/.noeaaeue/scripts/cache_math.py"
+    },
+    {
+      "path": ".noeaaeue/scripts/repository_paths.py",
+      "sha256": "4bd02ac496dc2fbd141b19f23ba86291db1618a0ae298a76beab28701ff24d22",
+      "bytes": 2343,
+      "retained": "retained-inputs/.noeaaeue/scripts/repository_paths.py"
+    }
+  ],
+  "prior_revision": "55b3a4ef0c05b81558eb8e4a213b056458b043d8b3e2400e990e8c20e77dfad4",
+  "prior_manifest": {
+    "path": ".noeaaeue/cache/manifests/55b3a4ef0c05b81558eb8e4a213b056458b043d8b3e2400e990e8c20e77dfad4.json",
+    "sha256": "55b3a4ef0c05b81558eb8e4a213b056458b043d8b3e2400e990e8c20e77dfad4",
+    "bytes": 1860144,
+    "retained": "retained-inputs/.noeaaeue/cache/manifests/55b3a4ef0c05b81558eb8e4a213b056458b043d8b3e2400e990e8c20e77dfad4.json",
+    "source_count": 847,
+    "catalog_count": 2,
+    "context_count": 9,
+    "total_expected_files": 858
+  },
+  "required_invocation": "python3 -I -B <absolute helper path> --revision <explicit newly returned R> --destination <absolute external expansion directory>",
+  "writes_permitted_by_helper": [],
+  "global_source_scans": false,
+  "executes_expanded_code": false,
+  "boundaries": [
+    "Selected revision and prior manifest are explicit content-addressed inputs; no current-ref lookup, Git call or cache-parent-chain validation.",
+    "Checks source/catalog/context object bytes and canonical manifest subset/identity coverage; does not repeat lexical imports, role-binding validation or mathematical verification.",
+    "One-to-one mapping is between logical and physical path names; hardlinks between regular files are allowed and their bytes are checked.",
+    "Rejects extra empty directories as well as extra/missing regular files, symlinks, specials and byte differences.",
+    "File reads and before/after filesystem states detect observed drift; this is not a global atomic read, lock protocol or proof against all concurrent/adversarial filesystem changes.",
+    "64 MiB per manifest/object/raw file, 100000 total enumerated entries and depth128 are explicit operational resource bounds.",
+    "Uses copied relocation rules bound to exact repository_paths.py bytes; refuses owner schema/adapter drift rather than silently following changed rules.",
+    "No live-checkout source freshness is claimed; no dependency cache, docs not in selected manifest, executable behavior, Lean proof or runtime refinement is checked."
+  ],
+  "mathematical_acceptance": false,
+  "proof_status": "unknown-unreplayed",
+  "static_review_only": true
+}

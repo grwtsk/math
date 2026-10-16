@@ -1,0 +1,125 @@
+{
+  "draft_status": "UNCOMPILED_UNCHECKED",
+  "files": [
+    {
+      "bytes": 1477,
+      "original": ".noeaaeue/.local/cache-custody-controls-ee8f73bf090740fda43bc0808a9ea7f0/fixture-scope-review.json",
+      "retained": ".noeaaeue/cache/receipts/source-custody-20261016T092054Z-8f3311e0241f4522aa5327e50843b477/isolated-controls/fixture-scope-review.json",
+      "sha256": "356c77640cc92b00de36b704604a301e4a505052ba073c993b5bed83969a49a5"
+    },
+    {
+      "bytes": 2186,
+      "original": ".noeaaeue/.local/cache-custody-controls-ee8f73bf090740fda43bc0808a9ea7f0/normal.receipt.json",
+      "retained": ".noeaaeue/cache/receipts/source-custody-20261016T092054Z-8f3311e0241f4522aa5327e50843b477/isolated-controls/normal.receipt.json",
+      "sha256": "d73a1934c9d3d610f06f87d288852a5b70a577756f69167dc3b787c531d2dc5b"
+    },
+    {
+      "bytes": 3206,
+      "original": ".noeaaeue/.local/cache-custody-controls-ee8f73bf090740fda43bc0808a9ea7f0/normal.stderr.log",
+      "retained": ".noeaaeue/cache/receipts/source-custody-20261016T092054Z-8f3311e0241f4522aa5327e50843b477/isolated-controls/normal.stderr.log",
+      "sha256": "2cc1ec795f2b769eb878f92108cc70f8c189fd6f326e1ced7ca0926850768ef5"
+    },
+    {
+      "bytes": 0,
+      "original": ".noeaaeue/.local/cache-custody-controls-ee8f73bf090740fda43bc0808a9ea7f0/normal.stdout.log",
+      "retained": ".noeaaeue/cache/receipts/source-custody-20261016T092054Z-8f3311e0241f4522aa5327e50843b477/isolated-controls/normal.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 2206,
+      "original": ".noeaaeue/.local/cache-custody-controls-ee8f73bf090740fda43bc0808a9ea7f0/optimized.receipt.json",
+      "retained": ".noeaaeue/cache/receipts/source-custody-20261016T092054Z-8f3311e0241f4522aa5327e50843b477/isolated-controls/optimized.receipt.json",
+      "sha256": "5ab9681ead0c7cfc0a03f8571881ed0e694e9ad0811259d9eddf167011bae4c2"
+    },
+    {
+      "bytes": 3206,
+      "original": ".noeaaeue/.local/cache-custody-controls-ee8f73bf090740fda43bc0808a9ea7f0/optimized.stderr.log",
+      "retained": ".noeaaeue/cache/receipts/source-custody-20261016T092054Z-8f3311e0241f4522aa5327e50843b477/isolated-controls/optimized.stderr.log",
+      "sha256": "877ae62d0b113ed8cfecaa7ea2790e25ec221c4625655f4f890892526e1fbfe0"
+    },
+    {
+      "bytes": 0,
+      "original": ".noeaaeue/.local/cache-custody-controls-ee8f73bf090740fda43bc0808a9ea7f0/optimized.stdout.log",
+      "retained": ".noeaaeue/cache/receipts/source-custody-20261016T092054Z-8f3311e0241f4522aa5327e50843b477/isolated-controls/optimized.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 7670,
+      "original": ".noeaaeue/.local/cache-custody-controls-ee8f73bf090740fda43bc0808a9ea7f0/receipt.json",
+      "retained": ".noeaaeue/cache/receipts/source-custody-20261016T092054Z-8f3311e0241f4522aa5327e50843b477/isolated-controls/receipt.json",
+      "sha256": "cd9e04ee3d25cf123943f58455532715dd191227c5d267edb3fee2094b8ab4e1"
+    },
+    {
+      "bytes": 36017,
+      "original": ".noeaaeue/.local/cache-custody-controls-ee8f73bf090740fda43bc0808a9ea7f0/source-inputs-after/.noeaaeue/scripts/cache_math.py",
+      "retained": ".noeaaeue/cache/receipts/source-custody-20261016T092054Z-8f3311e0241f4522aa5327e50843b477/isolated-controls/source-inputs-after/.noeaaeue/scripts/cache_math.py",
+      "sha256": "d73bebfeca4ec709fdc68741cba13a09611ae49a0095b4140dd5d2f3e6bb1c06"
+    },
+    {
+      "bytes": 85340,
+      "original": ".noeaaeue/.local/cache-custody-controls-ee8f73bf090740fda43bc0808a9ea7f0/source-inputs-after/.noeaaeue/scripts/monitor_math.py",
+      "retained": ".noeaaeue/cache/receipts/source-custody-20261016T092054Z-8f3311e0241f4522aa5327e50843b477/isolated-controls/source-inputs-after/.noeaaeue/scripts/monitor_math.py",
+      "sha256": "a757804707ffe811aa27d295aa82dcdaddf7b3c90f9c3bd6a47d27ec3b0890e3"
+    },
+    {
+      "bytes": 2343,
+      "original": ".noeaaeue/.local/cache-custody-controls-ee8f73bf090740fda43bc0808a9ea7f0/source-inputs-after/.noeaaeue/scripts/repository_paths.py",
+      "retained": ".noeaaeue/cache/receipts/source-custody-20261016T092054Z-8f3311e0241f4522aa5327e50843b477/isolated-controls/source-inputs-after/.noeaaeue/scripts/repository_paths.py",
+      "sha256": "4bd02ac496dc2fbd141b19f23ba86291db1618a0ae298a76beab28701ff24d22"
+    },
+    {
+      "bytes": 21270,
+      "original": ".noeaaeue/.local/cache-custody-controls-ee8f73bf090740fda43bc0808a9ea7f0/source-inputs-after/.noeaaeue/scripts/test_cache_math.py",
+      "retained": ".noeaaeue/cache/receipts/source-custody-20261016T092054Z-8f3311e0241f4522aa5327e50843b477/isolated-controls/source-inputs-after/.noeaaeue/scripts/test_cache_math.py",
+      "sha256": "41c39d3b4dd332596b40f14eb73570a79296aa326944863414d52c4e3082b237"
+    },
+    {
+      "bytes": 36017,
+      "original": ".noeaaeue/.local/cache-custody-controls-ee8f73bf090740fda43bc0808a9ea7f0/source-inputs-before/.noeaaeue/scripts/cache_math.py",
+      "retained": ".noeaaeue/cache/receipts/source-custody-20261016T092054Z-8f3311e0241f4522aa5327e50843b477/isolated-controls/source-inputs-before/.noeaaeue/scripts/cache_math.py",
+      "sha256": "d73bebfeca4ec709fdc68741cba13a09611ae49a0095b4140dd5d2f3e6bb1c06"
+    },
+    {
+      "bytes": 85340,
+      "original": ".noeaaeue/.local/cache-custody-controls-ee8f73bf090740fda43bc0808a9ea7f0/source-inputs-before/.noeaaeue/scripts/monitor_math.py",
+      "retained": ".noeaaeue/cache/receipts/source-custody-20261016T092054Z-8f3311e0241f4522aa5327e50843b477/isolated-controls/source-inputs-before/.noeaaeue/scripts/monitor_math.py",
+      "sha256": "a757804707ffe811aa27d295aa82dcdaddf7b3c90f9c3bd6a47d27ec3b0890e3"
+    },
+    {
+      "bytes": 2343,
+      "original": ".noeaaeue/.local/cache-custody-controls-ee8f73bf090740fda43bc0808a9ea7f0/source-inputs-before/.noeaaeue/scripts/repository_paths.py",
+      "retained": ".noeaaeue/cache/receipts/source-custody-20261016T092054Z-8f3311e0241f4522aa5327e50843b477/isolated-controls/source-inputs-before/.noeaaeue/scripts/repository_paths.py",
+      "sha256": "4bd02ac496dc2fbd141b19f23ba86291db1618a0ae298a76beab28701ff24d22"
+    },
+    {
+      "bytes": 21270,
+      "original": ".noeaaeue/.local/cache-custody-controls-ee8f73bf090740fda43bc0808a9ea7f0/source-inputs-before/.noeaaeue/scripts/test_cache_math.py",
+      "retained": ".noeaaeue/cache/receipts/source-custody-20261016T092054Z-8f3311e0241f4522aa5327e50843b477/isolated-controls/source-inputs-before/.noeaaeue/scripts/test_cache_math.py",
+      "sha256": "41c39d3b4dd332596b40f14eb73570a79296aa326944863414d52c4e3082b237"
+    },
+    {
+      "bytes": 2642,
+      "original": ".noeaaeue/.local/prefix-direct-lookup-draft-20261016T092027Z-c1d53c6b58db/PrefixTableDirectLookup.lean.txt",
+      "retained": ".noeaaeue/cache/research/prefix-direct-lookup-draft-20261016T092027Z-c1d53c6b58db/PrefixTableDirectLookup.lean.txt",
+      "sha256": "05f1fa71579906d9e034f4f9338581503ee39cc8ac6b212d90326cfe1db2c2b4"
+    },
+    {
+      "bytes": 4571,
+      "original": ".noeaaeue/.local/prefix-direct-lookup-draft-20261016T092027Z-c1d53c6b58db/control-frontier-notes.json",
+      "retained": ".noeaaeue/cache/research/prefix-direct-lookup-draft-20261016T092027Z-c1d53c6b58db/control-frontier-notes.json",
+      "sha256": "d234076c6fd2e825709868d9a530d93a0efa1c6f78763459ac66a3b0cab0ce71"
+    },
+    {
+      "bytes": 5894,
+      "original": ".noeaaeue/.local/prefix-direct-lookup-draft-20261016T092027Z-c1d53c6b58db/manifest.json",
+      "retained": ".noeaaeue/cache/research/prefix-direct-lookup-draft-20261016T092027Z-c1d53c6b58db/manifest.json",
+      "sha256": "44b2eefba0a61730d50a2c30cf05d2568959fa741e70aa7c2046780d9c6f4e76"
+    }
+  ],
+  "limits": "This records operational test evidence and uncompiled proof text; no mathematical or runtime-refinement acceptance.",
+  "mathematical_acceptance": false,
+  "native_for_draft": "NOT_RUN",
+  "proof_status": "unknown-unreplayed",
+  "schema": "operational-controls-and-written-frontier-custody-v1",
+  "status": "EXACT_BYTES_RETAINED"
+}
