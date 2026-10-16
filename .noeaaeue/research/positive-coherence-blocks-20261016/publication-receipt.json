@@ -1,0 +1,51 @@
+{
+  "schema": "positive-coherence-blocks-publication-receipt-v1",
+  "date": "2026-10-16",
+  "repository": "grwtsk/math",
+  "branch": "main",
+  "selected_source_revision": "ef370dfa73f77d693fd994d9c7325de0561efdf3",
+  "concurrent_base": "442042b1ab7e0669bb733db89f0695cdb4505c67",
+  "package_commit": "2157e7d83d8c2c1ccbdb1e2f4f873c08d2034140",
+  "package_tree": "781e1d20624633bcb2656e8122e7f842bcb78d78",
+  "evidence_grade": "written mathematics plus exact finite computation",
+  "execution": {
+    "exact_checks": 32124,
+    "unit_tests_normal": 15,
+    "unit_tests_optimized": 15,
+    "producer_outputs_identical": true,
+    "diagnostic_limit": 2000000,
+    "certificate_sha256": "fbc14d9934bb0a8cd9df2dbcac295570be6de37a4134cff29d4fec2154be9c26",
+    "post_publication_native_replay": false
+  },
+  "published_blobs": {
+    "README.txt": "5b94a880cb05a1166c6f73185ab497599532d7a9",
+    "MANIFEST.json": "8cb76df9dfd532800a1c29cca836a49114b45070",
+    "candidate-inventory.json": "ff05b7b9cd61b5966d019f17b9bd147744a43d91",
+    "candidates/MertensCoherenceCriterion.lean.txt": "e95dc7412fe2959b9a2594461d39436b5e42bdf2",
+    "candidates/PositiveCoherenceExcess.lean.txt": "c59325e6685b7d2c041de2fcb03bcc1eae09477e",
+    "candidates/audit.lean.txt": "9fd88fbec9dfadd14fc99c8c0a0b04e632d0d40a",
+    "certificates.json": "11b9636ca90c26a655fcf7fff87cdb7e759dd966",
+    "derivation.md": "ab5dfd46fe3a3a2a80bc258a8f488fd8c11fe545",
+    "negative-controls.json": "aa3c3d3fd8d699c9073e30a75a5e1e64ca23887a",
+    "proof-hypergraph.json": "868b94f5602ae0e77ab5b78959c014ca63110109",
+    "receipt.json": "33323e37d5a982a6e1ada5432836a1d5341ce0ad",
+    "replay-receipt.json": "74332d364200980cc14f67d478408793600e29fa",
+    "resume-cursor.json": "c01d5b4bf1938dbdf3e05b491bd3f6684ce8501f",
+    "source-ledger.json": "f65e50024f28e7bebc0df224d1b99ba1784fbe3b"
+  },
+  "native_stages_not_run": [
+    "Lean elaboration",
+    "intended-type comparison",
+    "owned/transitive axiom audit",
+    "full repository replay",
+    "independent validation"
+  ],
+  "nonclaims": [
+    "No dyadic positive-coherence growth witness",
+    "No eventual positivity theorem",
+    "No new zero-free region",
+    "No proof of RH",
+    "No native Lean acceptance"
+  ],
+  "resume_theorem": "DyadicPositiveCoherenceBlockSubpower"
+}
