@@ -1,0 +1,8 @@
+{
+  "schema": "square-variation-coherence-candidate-inventory-v1",
+  "files": [
+    {"path": "candidates/SquareVariationBounds.lean.txt", "status": "inactive_uncompiled_candidate"},
+    {"path": "candidates/SignedDyadicCoherence.lean.txt", "status": "inactive_uncompiled_candidate"},
+    {"path": "candidates/audit.lean.txt", "status": "inactive_unexecuted_audit"}
+  ]
+}
