@@ -443,3 +443,4 @@ import GRWTSK.Combinatorics.DirectedGraph.PrefixTableReferenceTransport
 import GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicCharacters
 import GRWTSK.Combinatorics.DirectedGraph.PrefixTableDirectLookup
 import GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicJacobi
+import GRWTSK.Analysis.ErrorBounds.GlyphPatchReconstruction
