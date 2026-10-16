@@ -1,0 +1,154 @@
+{
+  "date": "2026-10-15",
+  "diagnostic_profile": {
+    "final_argmax_flux": 2000000,
+    "final_maximum_flux_prefix": "2.9578633618230397",
+    "final_minimum_flux_prefix": "-0.14605028339582241",
+    "limit": 2000000,
+    "proof_status": "diagnostic_only",
+    "rows": [
+      {
+        "N": 10,
+        "argmax_flux": 1,
+        "endpoint_defect": "-0.068931296387819585",
+        "endpoint_energy": "0.076749392745811926",
+        "flux_over_N_tenth": "-0.06533437958311461",
+        "flux_over_log_sq": "-0.014441776408735984",
+        "horizon_correction": "0.15978818803711137",
+        "horizon_signed_flux": "-0.083038795291299441",
+        "maximum_flux_prefix": "0",
+        "mertens_prefix": -1,
+        "minimum_flux_prefix": "-0.083038795291299441"
+      },
+      {
+        "N": 100,
+        "argmax_flux": 1,
+        "endpoint_defect": "-0.47887091672684123",
+        "endpoint_energy": "0.33155815097851427",
+        "flux_over_N_tenth": "-0.046165045880147144",
+        "flux_over_log_sq": "-0.0034385814501430353",
+        "horizon_correction": "0.4047976574108072",
+        "horizon_signed_flux": "-0.073239506432292933",
+        "maximum_flux_prefix": "0",
+        "mertens_prefix": 1,
+        "minimum_flux_prefix": "-0.14605028339582241"
+      },
+      {
+        "N": 1000,
+        "argmax_flux": 1000,
+        "endpoint_defect": "-0.61497607270791155",
+        "endpoint_energy": "1.0700693787289215",
+        "flux_over_N_tenth": "0.20500846517244856",
+        "flux_over_log_sq": "0.0085706872151219519",
+        "horizon_correction": "0.66098282774964956",
+        "horizon_signed_flux": "0.40908655097927193",
+        "maximum_flux_prefix": "0.40908655097927193",
+        "mertens_prefix": 2,
+        "minimum_flux_prefix": "-0.14605028339582241"
+      },
+      {
+        "N": 10000,
+        "argmax_flux": 10000,
+        "endpoint_defect": "-0.66416189793138181",
+        "endpoint_energy": "2.0338540663641105",
+        "flux_over_N_tenth": "0.44416523860907642",
+        "flux_over_log_sq": "0.013151888528792699",
+        "horizon_correction": "0.91815027372942404",
+        "horizon_signed_flux": "1.1157037926346864",
+        "maximum_flux_prefix": "1.1157037926346864",
+        "mertens_prefix": -23,
+        "minimum_flux_prefix": "-0.14605028339582241"
+      },
+      {
+        "N": 100000,
+        "argmax_flux": 100000,
+        "endpoint_defect": "-0.68293816562430376",
+        "endpoint_energy": "3.0766509791721819",
+        "flux_over_N_tenth": "0.60122318109536188",
+        "flux_over_log_sq": "0.014343793058236879",
+        "horizon_correction": "1.1754144435928722",
+        "horizon_signed_flux": "1.9012365355793097",
+        "maximum_flux_prefix": "1.9012365355793097",
+        "mertens_prefix": -48,
+        "minimum_flux_prefix": "-0.14605028339582241"
+      },
+      {
+        "N": 500000,
+        "argmax_flux": 500000,
+        "endpoint_defect": "-0.6765941761095654",
+        "endpoint_energy": "3.8222833767455859",
+        "flux_over_N_tenth": "0.66417043008863064",
+        "flux_over_log_sq": "0.014326904680429233",
+        "horizon_correction": "1.3552409203637648",
+        "horizon_signed_flux": "2.4670424563818214",
+        "maximum_flux_prefix": "2.4670424563818214",
+        "mertens_prefix": -6,
+        "minimum_flux_prefix": "-0.14605028339582241"
+      },
+      {
+        "N": 1000000,
+        "argmax_flux": 1000000,
+        "endpoint_defect": "-0.68934152404923443",
+        "endpoint_energy": "4.1454473721879017",
+        "flux_over_N_tenth": "0.68141421270839531",
+        "flux_over_log_sq": "0.014212722940599762",
+        "horizon_correction": "1.4326882589493575",
+        "horizon_signed_flux": "2.712759113238544",
+        "maximum_flux_prefix": "2.712759113238544",
+        "mertens_prefix": 212,
+        "minimum_flux_prefix": "-0.14605028339582241"
+      },
+      {
+        "N": 2000000,
+        "argmax_flux": 2000000,
+        "endpoint_defect": "-0.67727943597672036",
+        "endpoint_energy": "4.467999018843809",
+        "flux_over_N_tenth": "0.6932263890682282",
+        "flux_over_log_sq": "0.014051529726823751",
+        "horizon_correction": "1.5101356570207691",
+        "horizon_signed_flux": "2.9578633618230397",
+        "maximum_flux_prefix": "2.9578633618230397",
+        "mertens_prefix": -247,
+        "minimum_flux_prefix": "-0.14605028339582241"
+      }
+    ]
+  },
+  "exact": {
+    "actual_mobius_limit": 5000,
+    "check_count": 5821,
+    "status": "passed",
+    "synthetic_lengths": [
+      1,
+      40
+    ],
+    "synthetic_seeds": [
+      1,
+      23
+    ],
+    "volterra_lengths": [
+      2,
+      27
+    ]
+  },
+  "mathematical_status": "EXACT_COMPUTATION_AT_DECLARED_SCOPE",
+  "nonclaims": {
+    "horizon_flux_polylog_witness": false,
+    "horizon_flux_subpower_witness": false,
+    "lean_axiom_audit": false,
+    "lean_compiled": false,
+    "new_zero_free_region": false,
+    "pickup_cross_poly": false,
+    "pickup_cross_subexp": false,
+    "riemann_hypothesis": false
+  },
+  "schema": "horizon-triadic-flux-certificates-v1",
+  "selected_source_commit": "1c3b69d438e2bf5d4bd5542a3f894a19e0075533",
+  "written_results_not_established_by_finite_computation": [
+    "the horizon logarithmic endpoint energy equals the complete signed horizon flux plus its nonnegative diagonal correction",
+    "the correction is bounded by one half of log(N+1)^2 using only the elementary Mertens and endpoint-gap bounds",
+    "one-sided subpower growth of the horizon flux is equivalent to subpower endpoint-energy growth",
+    "subpower endpoint-energy growth is equivalent to the repository pickup-energy subexponential class",
+    "polylogarithmic horizon-flux growth is equivalent to the repository polynomial pickup-energy and pickup-cross classes",
+    "either horizon-flux class feeds an existing checked conditional RH consumer after the analytic bridge is formalized"
+  ]
+}
