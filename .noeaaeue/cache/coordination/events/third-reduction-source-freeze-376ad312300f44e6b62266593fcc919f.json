@@ -1,0 +1,32 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "third-cyclotomic-reduction-formal",
+  "event": "complete-source-freeze-author-native-released",
+  "owner": "cache_adapter",
+  "at": "2026-10-16T01:19:54.958504+00:00",
+  "source_hashes": {
+    "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicReduction.lean": "05a44d8f4c4b254cf27e9df2a3b8f83081d9cb6288808e0be1d2694a81a2f3b6",
+    "GRWTSK/NumberTheory/Cyclotomic/Checks/Positive/ThirdCyclotomicReduction.lean": "68f8f43dcc5c166774ae4abcf6d75e527ac9a79dccb8d574caef7c390ffcf95b",
+    "GRWTSK/NumberTheory/Cyclotomic/Checks/Negative/ThirdCyclotomicMissingGoodPrime.lean": "14527265f71696aa97da8f12239422816bb8ada7f8add5343613dee8426cfb06"
+  },
+  "library_imports": [
+    "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicIdeals",
+    "Mathlib.NumberTheory.NumberField.Cyclotomic.Ideal"
+  ],
+  "positive_extra_local_imports": [],
+  "negative_expected_substring": "lambda ∉ ramifiedIdeal",
+  "development": {
+    "trust": 0,
+    "fatal_warnings": true,
+    "library": "PASS",
+    "positive": "PASS",
+    "negative": "sole intended Application type mismatch",
+    "owned_census": "NOT_RUN author; separate root fresh entire selected closure/current-positive census pending"
+  },
+  "all_children_exited": true,
+  "shared_lock_released": true,
+  "native_jobs_running": 0,
+  "source_whitespace_checked": true,
+  "scratch": ".local/third-cyclotomic-reduction/a12046512cfa4408b712f52d5496c322",
+  "scope": "Actual omega/lambda/good maximal reduction, norm3 ramified prime/maximal/proper ideal and quotient=1 nonprimitive counter, actual good maximal above(2), actual ramified primary-generator normalization obstruction; characters/weights/completed/common support/RH remain OPEN."
+}

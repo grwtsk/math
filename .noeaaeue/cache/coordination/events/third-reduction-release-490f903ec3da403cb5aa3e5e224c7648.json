@@ -1,0 +1,13 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "third-cyclotomic-reduction-formal",
+  "event": "dev-lock-released",
+  "at": "2026-10-16T01:19:07.952308+00:00",
+  "owner": "cache_adapter",
+  "attempt": ".local/third-cyclotomic-reduction/a12046512cfa4408b712f52d5496c322/attempts/Negative-attempt05",
+  "source_sha256": "aff3798caec419fc147df07a9fdc11ca6bc127b2cc5a55f6fab10ab63f9fa925",
+  "competing_jobs": [],
+  "receipt": ".local/third-cyclotomic-reduction/a12046512cfa4408b712f52d5496c322/attempts/Negative-attempt05.json",
+  "exit_code": 1,
+  "native_jobs_running": 0
+}
