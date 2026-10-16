@@ -149,6 +149,7 @@ theorem reconstruction_identity (s : Finset ι) (parent : Code 𝕜 X Y₁)
   subst aggregate
   simp only [ContinuousLinearMap.comp_apply, map_sub, map_sum,
     decode_transport_apply, Code.decode_encode_apply]
+  rw [Finset.sum_sub_distrib]
   abel
 
 /-- Source-preserving refinement with explicit error returned through the actual consumer.
@@ -184,8 +185,8 @@ theorem source_error_bound (s : Finset ι) (parent : Code 𝕜 X Y₁)
     _ ≤ ‖(L.comp parent.decode)
             (parentData - ∑ i ∈ s, transport parent (child i) (childData i))‖ +
           ∑ i ∈ s, ‖(L.comp (child i).decode)
-            (childData i - (child i).encode (source i))‖ :=
-      add_le_add_left (norm_sum_le _ _) _
+            (childData i - (child i).encode (source i))‖ := by
+      exact add_le_add (le_refl _) (norm_sum_le _ _)
     _ ≤ ‖L.comp parent.decode‖ * δ +
           ∑ i ∈ s, ‖L.comp (child i).decode‖ * ε i := by
       apply add_le_add
