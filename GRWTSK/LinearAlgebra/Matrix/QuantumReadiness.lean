@@ -16,9 +16,10 @@ The finite spectral system may be represented in tensor-product coordinates, but
 alone provides neither a block encoding nor a circuit. This file separates those evidence
 levels.
 
-A steering system contains supplied phase matrices, marked and reference projectors, and
-two commuting involutions. The associated reflections and Grover-type product preserve both
-involution labels whenever the projectors do.
+A steering system contains a supplied frequency operator, supplied phase matrices, marked
+and reference projectors, and two commuting involutions. The associated reflections and
+Grover-type product preserve both involution labels whenever the projectors do. Identifying
+the supplied phase with `exp(i t Ω)` is a separate certificate obligation.
 
 `ReadinessProfile.score` is an incidental engineering metric. Its evidence types are
 parameters, so a consumer may replace them by substantive machine-checked certificates.
@@ -34,6 +35,9 @@ noncomputable section
 /-- A finite symmetry-preserving phase and reflection system. -/
 structure SteeringSystem (ι : Type*) [Fintype ι] [DecidableEq ι] where
   actions : MatrixInvolutions ι
+  frequencyOperator : Matrix ι ι ℂ
+  frequency_sigma : Commutes frequencyOperator actions.sigma
+  frequency_tau : Commutes frequencyOperator actions.tau
   phase : ℝ → Matrix ι ι ℂ
   phase_sigma : ∀ t, Commutes (phase t) actions.sigma
   phase_tau : ∀ t, Commutes (phase t) actions.tau
@@ -64,6 +68,10 @@ def grover (system : SteeringSystem ι) : Matrix ι ι ℂ :=
 
 theorem markedReflection_sigma (system : SteeringSystem ι) :
     Commutes system.markedReflection system.actions.sigma := by
+  have hmarked :
+      system.markedProjector * system.actions.sigma =
+        system.actions.sigma * system.markedProjector :=
+    system.marked_sigma
   unfold Commutes markedReflection
   calc
     (1 - 2 • system.markedProjector) * system.actions.sigma =
@@ -72,13 +80,17 @@ theorem markedReflection_sigma (system : SteeringSystem ι) :
       simp [sub_mul]
     _ = system.actions.sigma - 2 •
           (system.actions.sigma * system.markedProjector) := by
-      rw [system.marked_sigma]
+      rw [hmarked]
     _ = system.actions.sigma *
           (1 - 2 • system.markedProjector) := by
       simp [mul_sub]
 
 theorem markedReflection_tau (system : SteeringSystem ι) :
     Commutes system.markedReflection system.actions.tau := by
+  have hmarked :
+      system.markedProjector * system.actions.tau =
+        system.actions.tau * system.markedProjector :=
+    system.marked_tau
   unfold Commutes markedReflection
   calc
     (1 - 2 • system.markedProjector) * system.actions.tau =
@@ -87,13 +99,17 @@ theorem markedReflection_tau (system : SteeringSystem ι) :
       simp [sub_mul]
     _ = system.actions.tau - 2 •
           (system.actions.tau * system.markedProjector) := by
-      rw [system.marked_tau]
+      rw [hmarked]
     _ = system.actions.tau *
           (1 - 2 • system.markedProjector) := by
       simp [mul_sub]
 
 theorem referenceReflection_sigma (system : SteeringSystem ι) :
     Commutes system.referenceReflection system.actions.sigma := by
+  have hreference :
+      system.referenceProjector * system.actions.sigma =
+        system.actions.sigma * system.referenceProjector :=
+    system.reference_sigma
   unfold Commutes referenceReflection
   calc
     (2 • system.referenceProjector - 1) * system.actions.sigma =
@@ -102,13 +118,17 @@ theorem referenceReflection_sigma (system : SteeringSystem ι) :
       simp [sub_mul]
     _ = 2 • (system.actions.sigma * system.referenceProjector) -
           system.actions.sigma := by
-      rw [system.reference_sigma]
+      rw [hreference]
     _ = system.actions.sigma *
           (2 • system.referenceProjector - 1) := by
       simp [mul_sub]
 
 theorem referenceReflection_tau (system : SteeringSystem ι) :
     Commutes system.referenceReflection system.actions.tau := by
+  have hreference :
+      system.referenceProjector * system.actions.tau =
+        system.actions.tau * system.referenceProjector :=
+    system.reference_tau
   unfold Commutes referenceReflection
   calc
     (2 • system.referenceProjector - 1) * system.actions.tau =
@@ -117,7 +137,7 @@ theorem referenceReflection_tau (system : SteeringSystem ι) :
       simp [sub_mul]
     _ = 2 • (system.actions.tau * system.referenceProjector) -
           system.actions.tau := by
-      rw [system.reference_tau]
+      rw [hreference]
     _ = system.actions.tau *
           (2 • system.referenceProjector - 1) := by
       simp [mul_sub]
@@ -125,6 +145,14 @@ theorem referenceReflection_tau (system : SteeringSystem ι) :
 /-- The Grover-type iterate preserves the first involution labels. -/
 theorem grover_sigma (system : SteeringSystem ι) :
     Commutes system.grover system.actions.sigma := by
+  have hmarked :
+      system.markedReflection * system.actions.sigma =
+        system.actions.sigma * system.markedReflection :=
+    system.markedReflection_sigma
+  have hreference :
+      system.referenceReflection * system.actions.sigma =
+        system.actions.sigma * system.referenceReflection :=
+    system.referenceReflection_sigma
   unfold Commutes grover
   calc
     (system.referenceReflection * system.markedReflection) *
@@ -134,13 +162,13 @@ theorem grover_sigma (system : SteeringSystem ι) :
           rw [Matrix.mul_assoc]
     _ = system.referenceReflection *
         (system.actions.sigma * system.markedReflection) := by
-          rw [system.markedReflection_sigma]
+          rw [hmarked]
     _ = (system.referenceReflection * system.actions.sigma) *
         system.markedReflection := by
           rw [← Matrix.mul_assoc]
     _ = (system.actions.sigma * system.referenceReflection) *
         system.markedReflection := by
-          rw [system.referenceReflection_sigma]
+          rw [hreference]
     _ = system.actions.sigma *
         (system.referenceReflection * system.markedReflection) := by
           rw [Matrix.mul_assoc]
@@ -148,6 +176,14 @@ theorem grover_sigma (system : SteeringSystem ι) :
 /-- The Grover-type iterate preserves the second involution labels. -/
 theorem grover_tau (system : SteeringSystem ι) :
     Commutes system.grover system.actions.tau := by
+  have hmarked :
+      system.markedReflection * system.actions.tau =
+        system.actions.tau * system.markedReflection :=
+    system.markedReflection_tau
+  have hreference :
+      system.referenceReflection * system.actions.tau =
+        system.actions.tau * system.referenceReflection :=
+    system.referenceReflection_tau
   unfold Commutes grover
   calc
     (system.referenceReflection * system.markedReflection) *
@@ -157,13 +193,13 @@ theorem grover_tau (system : SteeringSystem ι) :
           rw [Matrix.mul_assoc]
     _ = system.referenceReflection *
         (system.actions.tau * system.markedReflection) := by
-          rw [system.markedReflection_tau]
+          rw [hmarked]
     _ = (system.referenceReflection * system.actions.tau) *
         system.markedReflection := by
           rw [← Matrix.mul_assoc]
     _ = (system.actions.tau * system.referenceReflection) *
         system.markedReflection := by
-          rw [system.referenceReflection_tau]
+          rw [hreference]
     _ = system.actions.tau *
         (system.referenceReflection * system.markedReflection) := by
           rw [Matrix.mul_assoc]
