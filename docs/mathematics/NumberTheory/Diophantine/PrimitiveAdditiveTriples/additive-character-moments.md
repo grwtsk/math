@@ -35,6 +35,8 @@ No uniform radical-height estimate, analytic cancellation bound, infinite transf
 
 [Joint-moment source](../../../../../GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/AdditiveCharacterMoments.lean). It uses the generic Analysis projector and the existing finite moment and divisor-sector identities. The [selected pinned replay](../../../../../.noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-checks-2026-10-15.json) checks the complete local dependency closure, owned declarations, compiled direct consumers and intended type rejections with trust zero and fatal warnings. Dependency objects are reused at the pinned scope; Mathlib sources are not rebuilt. Documentation and whole-repository source-layout gates remain separate checks.
 
+The [current finite frontier](../../../../../.noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/abc-resume-additive-character-2026-10-15.json) records the next product-weight factorization obligation. The [bounded status](../../../../../.noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-status-2026-10-15.json) separates the checked local proof from candidate-only source integration and open arithmetic estimates.
+
 Direction: grwtsk contributors. Formalization and verification assistance: OpenAI Codex. Original additions: MIT. Upstream canonical characters, finite sums and Möbius theory retain their Mathlib authorship and licenses.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->

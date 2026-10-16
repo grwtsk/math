@@ -1,0 +1,21 @@
+{
+  "schema": "primitive-moment-route-v4",
+  "route": "J",
+  "strongest_checked_theorem": "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.typedPrimitiveWeightedMoment_eq_moebius_frequency_sum",
+  "receipt": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-checks-2026-10-15.json",
+  "remaining_premises": [
+    "finite_product_weight_character_factorization",
+    "uniform_radical_weighted_moment_estimate",
+    "moment_uniformity",
+    "moment_to_pointwise_arithmetic_bridge"
+  ],
+  "abc_target_closed": false,
+  "next_smallest_obligation": "finite_product_weight_character_factorization",
+  "previous_route": {
+    "path": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/routes/J-divisor-sectors-2026-10-15.json",
+    "sha256": "55e9d162824b06fa7b59f6266e655671ffb84168dc8a9f8c5a82e5659bcb5dad",
+    "modified": false
+  },
+  "scope": "Exact finite complex no-wrap character identities only; joint weights preserved and no general-ring transfer assumed.",
+  "overall_status": "OPEN_FRONTIER"
+}
