@@ -1,0 +1,8 @@
+{
+  "files": [
+    {"path": "candidates/BoundaryArithmetic.lean.txt", "status": "inactive_uncompiled_candidate"},
+    {"path": "candidates/MertensPowerTransfer.lean.txt", "status": "inactive_uncompiled_candidate"},
+    {"path": "candidates/audit.lean.txt", "status": "inactive_unexecuted_audit"}
+  ],
+  "schema": "three-eighths-mertens-transfer-candidate-inventory-v1"
+}

@@ -1,0 +1,15 @@
+{
+  "next_quantitative_target": {
+    "current_boundary_gap": "624356047/15000000000",
+    "name": "OneThirdVerticalLineUniform",
+    "requires": "Mertens exponent beta < 5/6"
+  },
+  "schema": "three-eighths-mertens-transfer-resume-v1",
+  "smallest_unresolved_theorem": {
+    "boundary": "4374785349/5000000000",
+    "name": "ZeroFreeBoundaryToMertensPowerFamily",
+    "notes": "Formalize Pintz/Perron contour transfer at the pinned local Lean/Mathlib revision, preserving truncation, contour, reciprocal-zeta and cutoff costs.",
+    "type": "ZeroFreeRightOf B -> MertensPowerFamilyAt B"
+  },
+  "status": "OPEN_FRONTIER"
+}
