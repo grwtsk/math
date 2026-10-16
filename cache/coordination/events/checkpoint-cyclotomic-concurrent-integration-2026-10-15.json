@@ -1,0 +1,199 @@
+{
+  "schema": "repository-agent-event-v1",
+  "at": "2026-10-16T01:01:24.626590+00:00",
+  "task": "checkpoint-cyclotomic-round",
+  "event": "concurrent-main-history-integrated-by-exact-byte-and-verification-state",
+  "initial_head": "a85c94740e45dfadcf5087db8c8c2ecd307093dc",
+  "current_parent": "1c3b69d438e2bf5d4bd5542a3f894a19e0075533",
+  "commits": [
+    "1c3b69d438e2bf5d4bd5542a3f894a19e0075533 870bb197102bde9199f84e277f410c039692ff78 Record closed triadic flux publication identities",
+    "870bb197102bde9199f84e277f410c039692ff78 a85c94740e45dfadcf5087db8c8c2ecd307093dc Add terminally compensated triadic flux criterion"
+  ],
+  "origin_main_observed": "1c3b69d438e2bf5d4bd5542a3f894a19e0075533",
+  "incoming_exact_committed_blobs": [
+    {
+      "path": "evidence/number-theory/zeta/closed-triadic-flux-20261015/README.txt",
+      "git_blob_sha1": "b58d0f6ded19c027ae98fd7aef1d255a51974cf3",
+      "sha256": "57ef5fabfc0a99ffa6d621a37e5d6e23aa437f7454449975c961534228e3a03a",
+      "bytes": 474
+    },
+    {
+      "path": "evidence/number-theory/zeta/closed-triadic-flux-20261015/candidate-inventory.json",
+      "git_blob_sha1": "10bbfb2fe86a026085b6d951c05f43f5fccabcb0",
+      "sha256": "ec5650e946782f8f9b220f03d4422d8383d89c4e278b831512bedf045dfa3d54",
+      "bytes": 993
+    },
+    {
+      "path": "evidence/number-theory/zeta/closed-triadic-flux-20261015/candidates/ClosedDampedTriadicFlux.lean.txt",
+      "git_blob_sha1": "2247ec9fd4fef55521eb02f1a6f3668cb9e4533b",
+      "sha256": "177a62837b0e451aa8f0d3622930e05714efb7d4d299f658d18903dc16a805fa",
+      "bytes": 2934
+    },
+    {
+      "path": "evidence/number-theory/zeta/closed-triadic-flux-20261015/candidates/ClosedWeightedAbelFlux.lean.txt",
+      "git_blob_sha1": "2352615587525c586bd25b117f56d2a94df04b38",
+      "sha256": "5b546f007a970cd88c369e4a77b555bf7581c9d84a63bc1b1963dbe9f8861477",
+      "bytes": 2690
+    },
+    {
+      "path": "evidence/number-theory/zeta/closed-triadic-flux-20261015/candidates/audit.lean.txt",
+      "git_blob_sha1": "264f39680cc2c3c4e3e5f494ba0eed14705d3302",
+      "sha256": "87ae2aaedbfe98e73266ba0cc50c0e44a98849509c5ad66276c11d73eead938e",
+      "bytes": 624
+    },
+    {
+      "path": "evidence/number-theory/zeta/closed-triadic-flux-20261015/certificates.json",
+      "git_blob_sha1": "c4f367ef6b120d5402fd3f50e0619b1eea0559bc",
+      "sha256": "555c0b8c3f20a5ee51430cf8d3da186bfb174ad3dabe3b8b028b0ac4efa58e59",
+      "bytes": 7799
+    },
+    {
+      "path": "evidence/number-theory/zeta/closed-triadic-flux-20261015/derivation.md",
+      "git_blob_sha1": "4b4cb294fd973bacc28fee58ed6885f2279cc2a4",
+      "sha256": "ae120a935c05ff5025a1a158425ecfefb6c56fc4a3074507488410c03aeedcda",
+      "bytes": 9365
+    },
+    {
+      "path": "evidence/number-theory/zeta/closed-triadic-flux-20261015/negative-controls.json",
+      "git_blob_sha1": "6fde1914351d53c6dea868a0e11ee9d8d73027bf",
+      "sha256": "12800e972794ae77718d902fcc64c31fcf7c5e09b2d19b5c1efbb0ec859ba613",
+      "bytes": 1102
+    },
+    {
+      "path": "evidence/number-theory/zeta/closed-triadic-flux-20261015/proof-hypergraph.json",
+      "git_blob_sha1": "e60e6d637e3b70f84edd11909f0181b0b9b16c3d",
+      "sha256": "bfe257e24c612c7215c57f3db9875a630bae1020d1f71737ac3cbd0a9bdc4d8d",
+      "bytes": 1297
+    },
+    {
+      "path": "evidence/number-theory/zeta/closed-triadic-flux-20261015/publication-receipt.json",
+      "git_blob_sha1": "5682233c80a162057183fe548c84ab3cfc09cb2c",
+      "sha256": "30cc27d671be007d418ca963e776dd2f43fed5d906e2cb7cc1f56374193f2f2e",
+      "bytes": 1962
+    },
+    {
+      "path": "evidence/number-theory/zeta/closed-triadic-flux-20261015/receipt.json",
+      "git_blob_sha1": "1152b7c32207a23b33eba2f10a041c3d19e07d55",
+      "sha256": "6fe44a79743cf25aeacae482e08678cb4df789240255c247ae84c1d6ac89bd7a",
+      "bytes": 4679
+    },
+    {
+      "path": "evidence/number-theory/zeta/closed-triadic-flux-20261015/resume-cursor.json",
+      "git_blob_sha1": "885ea1b328786db632f3dc86bf04ecca162f46fb",
+      "sha256": "e8831cae2720a33522d969a5e8502fb3f638d0a2ef6f4862a8f3d5d7ff94cfd9",
+      "bytes": 650
+    },
+    {
+      "path": "evidence/number-theory/zeta/closed-triadic-flux-20261015/source-ledger.json",
+      "git_blob_sha1": "01692fee5c7f90892ab99db80f72a4d24fd88185",
+      "sha256": "8e126d0bea7deafee7c6ebfe6af6af43af3694d287accbef3e9bd323e5440859",
+      "bytes": 1625
+    }
+  ],
+  "publication_receipt": {
+    "path": "evidence/number-theory/zeta/closed-triadic-flux-20261015/publication-receipt.json",
+    "sha256": "30cc27d671be007d418ca963e776dd2f43fed5d906e2cb7cc1f56374193f2f2e"
+  },
+  "package_tree_and12_published_blobs_verified": true,
+  "source_reference_bindings": [
+    {
+      "path": "GRWTSK/NumberTheory/Moebius/CriticalEndpointDefectRecurrence.lean",
+      "selected_commit": "f114d16ac390e06923e5895eaa14ac58699391c3",
+      "reference_resolved": true,
+      "native_this_round": "NOT_RUN; outside selected closures",
+      "git_blob_sha1": "b9035e3e51cca47aa3c4d36f1cc4c375ed6169ef",
+      "sha256": "d1e0485832cd849f0b8edbe8a1fc6515ca95a7d03afbef78d0e3c334d4356f1e",
+      "bytes": 4061,
+      "current_exact_bytes": true
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Moebius/VerticalLineCriterion.lean",
+      "selected_commit": "f114d16ac390e06923e5895eaa14ac58699391c3",
+      "reference_resolved": true,
+      "native_this_round": "NOT_RUN; outside selected closures",
+      "git_blob_sha1": "c2ce1e3e1b919d1bccd30bb42177c57d718914b9",
+      "sha256": "5095fef54a9ad808f722a53425478c01edd40ec5cf51f9d54152b190e55b2498",
+      "bytes": 7673,
+      "current_exact_bytes": true
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Moebius/VerticalLineMonotonicity.lean",
+      "selected_commit": "f114d16ac390e06923e5895eaa14ac58699391c3",
+      "reference_resolved": true,
+      "native_this_round": "NOT_RUN; outside selected closures",
+      "git_blob_sha1": "5b9f872bc9263a0c02b53c0d2692317d8da55ed5",
+      "sha256": "f9aeaf8a3a20f6e4f175351ba02b5ab70d53ecca0c8dfa04b866c40df3255ef1",
+      "bytes": 4731,
+      "current_exact_bytes": true
+    }
+  ],
+  "archived_receipt_absent_referenced_paths": [
+    "evidence/number-theory/zeta/closed-triadic-flux-20261015/certificates-normal.json",
+    "evidence/number-theory/zeta/closed-triadic-flux-20261015/certificates-optimized.json",
+    "evidence/number-theory/zeta/closed-triadic-flux-20261015/logs/producer-normal.log",
+    "evidence/number-theory/zeta/closed-triadic-flux-20261015/logs/producer-optimized.log",
+    "evidence/number-theory/zeta/closed-triadic-flux-20261015/logs/tests-normal.log",
+    "evidence/number-theory/zeta/closed-triadic-flux-20261015/logs/tests-optimized.log",
+    "scripts/closed_triadic_flux.py",
+    "tests/test_closed_triadic_flux.py"
+  ],
+  "historical_archive_identity_drift": [
+    {
+      "record": "receipt.json",
+      "path": "evidence/number-theory/zeta/closed-triadic-flux-20261015/candidates/ClosedDampedTriadicFlux.lean.txt",
+      "recorded_bytes": 2934,
+      "actual_bytes": 2934,
+      "recorded_sha256": "c96f37de10091a243679c3f86d9cbf6a8312347a7278c6157221e94e9e2f20b4",
+      "actual_sha256": "177a62837b0e451aa8f0d3622930e05714efb7d4d299f658d18903dc16a805fa",
+      "status": "STALE_BINDING; original receipt and current published variant retained; recorded older raw variant not supplied here"
+    },
+    {
+      "record": "candidate-inventory.json",
+      "path": "evidence/number-theory/zeta/closed-triadic-flux-20261015/candidates/ClosedDampedTriadicFlux.lean.txt",
+      "recorded_bytes": 2934,
+      "actual_bytes": 2934,
+      "recorded_sha256": "c96f37de10091a243679c3f86d9cbf6a8312347a7278c6157221e94e9e2f20b4",
+      "actual_sha256": "177a62837b0e451aa8f0d3622930e05714efb7d4d299f658d18903dc16a805fa",
+      "status": "STALE_BINDING; not rebound"
+    }
+  ],
+  "historical_receipt_acceptance": "BLOCKED_BY_STALE_BINDING_AND_ABSENT_REFERENCES; not repaired or rebound",
+  "first_failed_binding_attempt": {
+    "path": ".local/checkpoint-cyclotomic/root/concurrent-attempt1-failure.json",
+    "sha256": "8b893527008994eb7f9adabcead5973254fa47b5386a7518885b1cf87c0a83e9"
+  },
+  "archived_finite_execution_claims_not_replayed": {
+    "exact_checks": 2200,
+    "producer_outputs_identical": true,
+    "profile_limit": 500000,
+    "unit_tests_normal": 11,
+    "unit_tests_optimized": 11
+  },
+  "archive_native_status": "Three inert .lean.txt candidates; Lean elaboration/intended-types/owned-transitive audit/full repository/independent validation NOT_RUN. Never imported as library source.",
+  "inventory_note": "Published current candidate has substring admitted in its line48 comment. Historical inventory binds a different hash and remains stale; this lexical observation gives no native admission or claim about unavailable prior variant.",
+  "original_open_target": "ReciprocalClosedTriadicFluxUpper: uniform upper bound at all natural horizons for terminally compensated signed primitive-radial triadic flux for every reciprocal line k>=1. OPEN; no new zero-free region/RH acceptance.",
+  "selected_native_inputs_unchanged": [
+    {
+      "receipt": {
+        "path": "evidence/Combinatorics/DirectedGraph/prefix-compaction-checkpoint-checks-2026-10-15.json",
+        "sha256": "e32c92083d46c8c33d562153a854591472a937c3e8b5752c41e9d2ee7e11f6f2"
+      },
+      "owned_count": 879,
+      "all_frozen_source_driver_pin_hashes_still_exact": true,
+      "incoming_path_overlap": []
+    },
+    {
+      "receipt": {
+        "path": "evidence/NumberTheory/Cyclotomic/third-cyclotomic-ideals-checks-2026-10-15.json",
+        "sha256": "0f0c80dc56332b7b869892af65a348fa64fdfa7860d0f6ba6d6a965ecfe81b46"
+      },
+      "owned_count": 46,
+      "all_frozen_source_driver_pin_hashes_still_exact": true,
+      "incoming_path_overlap": []
+    }
+  ],
+  "source_scope_effect": "All13 files are outside GRWTSK source/catalog/context and canonical documentation scopes; current selected receipts/cache snapshot and required inspections remain exact. Head metadata alone is not a proof replay.",
+  "staged_source_custody": "Original94 owned staged working/index objects matched frozen SHA256/size before this immutable integration extension. No staged work discarded/reset.",
+  "foreign_instructions": "Archived specifications/cursors/rejected-restart text remain research material, not newly adopted policy or authority.",
+  "remote_actions": []
+}

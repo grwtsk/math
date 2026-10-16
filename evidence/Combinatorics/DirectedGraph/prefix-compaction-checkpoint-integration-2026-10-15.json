@@ -1,0 +1,141 @@
+{
+  "schema": "selected-mathematical-integration-v1",
+  "at": "2026-10-16T00:50:06.861289+00:00",
+  "source": {
+    "path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableCheckpoint.lean",
+    "sha256": "39347361377ee5f5e8f58091d72652e2458b3eda2c34b74b503d4d1f3b465e03"
+  },
+  "native_receipt": {
+    "path": "evidence/Combinatorics/DirectedGraph/prefix-compaction-checkpoint-checks-2026-10-15.json",
+    "sha256": "e32c92083d46c8c33d562153a854591472a937c3e8b5752c41e9d2ee7e11f6f2"
+  },
+  "source_review": {
+    "path": "evidence/Combinatorics/DirectedGraph/prefix-compaction-checkpoint-source-review-2026-10-15.json",
+    "sha256": "d8d276494e52a1f0d85e5fc36005cea7d029911415329ea53ab5d926b69d408c"
+  },
+  "owned_declarations": 879,
+  "selected_library_owned_count": 14,
+  "owned_modules": [
+    {
+      "declarations": 52,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding"
+    },
+    {
+      "declarations": 18,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.PathOccurrences"
+    },
+    {
+      "declarations": 46,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.EdgeTrace"
+    },
+    {
+      "declarations": 21,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix"
+    },
+    {
+      "declarations": 34,
+      "module": "GRWTSK.Logic.FiniteSequences.IndexedDictionary"
+    },
+    {
+      "declarations": 33,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixInventory"
+    },
+    {
+      "declarations": 78,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.ParentTraceDictionary"
+    },
+    {
+      "declarations": 32,
+      "module": "GRWTSK.Logic.FiniteSequences.DictionaryRevision"
+    },
+    {
+      "declarations": 27,
+      "module": "GRWTSK.Logic.FiniteSequences.DecisionCertificate"
+    },
+    {
+      "declarations": 26,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.RootedTraceRevision"
+    },
+    {
+      "declarations": 20,
+      "module": "GRWTSK.Logic.FiniteSequences.IncrementalDictionary"
+    },
+    {
+      "declarations": 58,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.IncrementalPrefixTable"
+    },
+    {
+      "declarations": 87,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableState"
+    },
+    {
+      "declarations": 36,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCompaction"
+    },
+    {
+      "declarations": 85,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.RoleRelationTable"
+    },
+    {
+      "declarations": 60,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.RoleRelationReindex"
+    },
+    {
+      "declarations": 44,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableReindex"
+    },
+    {
+      "declarations": 19,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableUpdateReindex"
+    },
+    {
+      "declarations": 27,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableBatch"
+    },
+    {
+      "declarations": 14,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCheckpoint"
+    },
+    {
+      "declarations": 62,
+      "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableCheckpoint"
+    }
+  ],
+  "receipt_accounting": "Separate graph closure census.",
+  "operational_replay_guards": {
+    "path": "evidence/Combinatorics/DirectedGraph/checkpoint-cyclotomic-operational-controls-2026-10-15.json",
+    "sha256": "02bbff24cf1acacd589c33fb55a72f5d91d1b026390864d88176627eb38d167c"
+  },
+  "exact_contracts": [
+    "compactAt applies the actual PrefixTableCompaction.compact to the underlying existing RootedState fiber, with actual WellFormed evidence and proved actual retained-root equality. No new State/path datatype or assumed serializer/checkpoint law.",
+    "split_runAt consumes actual pinned List.foldl_append. executeAt actually runs the first chronological segment, compacts its actual result using derived WellFormed, then runs the second segment at the same retained-root fiber. checkpoint exposes the resulting existing State.",
+    "checkpoint_root and checkpoint_wellFormed derive actual root retention and structural validity, including empty segments. DecidableEq of full typed edge tags is explicit, without Key equality or independent vertex equality.",
+    "decode_compactAt consumes the existing actual compact producer/decoder theorem. decode_executeAt/decode_checkpoint combine this with actual batch decoding and split_runAt to prove actual checked complete ordered histories equal run(state,first++second). checkpoint_histories derives initial actual decoded rows followed by chronological combined flatMap traceRows, preserving keys/order/repeats. Initial WellFormed is required, not assumed desired decoding.",
+    "No raw dictionary/node/reference equality or numeric-slot stability is claimed across actual compaction; required exact remap behavior is demonstrated by actual producer controls."
+  ],
+  "accepted_controls": [
+    "Actual mid State before has D=[[falseTag],[],[trueTag]], children before parent slot1, real refs[(11,0),(11,0)] and actual repeated false-edge occurrences. Unused parallel trueTag branch exists in dictionary but no real source ref selects it.",
+    "Actual compact producer after has D=[[],[falseTag]], nodes[(0,none),(1,parent0/falseTag)],refs[(11,1),(11,1)]. Exact partial maps oldfalse0→Some1/oldroot1→Some0/unusedtrue2→None and actual branch removal are proved from existing actual remap APIs.",
+    "Actual checkpoint with first=[] and second=[actual parallelRows] is actual update after parallelRows. postD=[[],[falseTag],[trueTag]],postR=[(11,1),(11,1),(12,2)],actual checked rows[(11,[falseTag]),(11,[falseTag]),(12,[trueTag])]. Direct no-checkpoint actual run has D=[[falseTag],[],[trueTag]],R=[(11,0),(11,0),(12,2)]; exact histories agree while actual_arrays_differ proves dictionary inequality.",
+    "Actual stale checkpoint State copies old source refs0 twice into the compacted dictionary; it is WellFormed and decodes two empty histories. Running actual new parallel batch gives stalePost; stalePost_wellFormed and stalePost_bounds both pass, while actual decoder yields[(11,[]),(11,[]),(12,[trueTag])]. stale_slots_change_histories proves inequality with correct post histories. Thus even full structural WellFormed is insufficient for history agreement across wrong ref reuse.",
+    "Both empty segments preserve actual root/decoder; both segments nonempty with repeated retained histories plus internal empty second batch decode in exact chronology. Empty initial Bool-root States at false/true retain distinct roots through actual checkpoints.",
+    "Sole intended negative supplies actual stalePost_bounds:Valid(rawPacked stalePost) to goal decode stalePost=decode post; actual inequality is already proved in admitted positive controls."
+  ],
+  "open_obligations": [
+    "Initial structural WellFormed and full-tag DecidableEq are required. Root casts are explicit via existing fixed-root State fiber. Raw checkpoint representations/slot numbers can differ; no literal old-node/ref-prefix property is carried across compaction.",
+    "Actual structural validity and numeric bounds do not supply exact full-history/reference-remap equality; stalePost is fully WellFormed and still has wrong old histories.",
+    "No arbitrary multi-checkpoint schedule runner, raw compaction/reindex commutation, unchanged slots, byte optimality, new certificate criterion or automatic appended-row predicate inheritance is supplied. Prior exact own-pack/common-rooted-payload prerequisites remain explicit.",
+    "No operational parser/JSON/hash/compression/IO/runtime refinement, source/permission authority or taxonomy duplicate-edge guard change. Relation IDs remain distinct from parent storage slots and stored trace-length rank."
+  ],
+  "contribution_roles": [
+    "grwtsk contributors: human mathematical direction",
+    "OpenAI Codex: local formalization/adaptation/checking; correlated source/model review",
+    "Lean/Mathlib: named upstream authors, definitions/proofs and licensing retained"
+  ],
+  "limits": [
+    "Fresh immutable complete selected local import closure and actual positive controls; trust0/fatal/full owned+transitive-axiom audit, only propext/Classical.choice/Quot.sound.",
+    "Generated local object families frozen/rechecked; clean pinned dependency objects reused/fingerprinted, not cold rebuilt. Whole umbrella not replayed.",
+    "No independent model validation, novelty, runtime refinement, proof/permission authority, complete physical detector or RH acceptance."
+  ],
+  "license": "MIT; imported Lean/Mathlib authors retain Apache-2.0."
+}

@@ -5996,20 +5996,20 @@
     }
   ],
   "counts_by_operation": {
-    "add": 159,
+    "add": 165,
     "keep": 336,
     "move": 206
   },
   "counts_by_role": {
     "audit-driver": 35,
-    "library": 390,
-    "negative-control": 148,
-    "positive-check": 128
+    "library": 392,
+    "negative-control": 150,
+    "positive-check": 130
   },
   "counts_by_subject": {
     "Algebra": 19,
     "Analysis": 255,
-    "Combinatorics": 56,
+    "Combinatorics": 59,
     "Data": 1,
     "DynamicalSystems": 16,
     "GroupTheory": 4,
@@ -6017,13 +6017,13 @@
     "LinearAlgebra": 53,
     "Logic": 63,
     "MeasureTheory": 5,
-    "NumberTheory": 197,
+    "NumberTheory": 200,
     "Order": 6,
     "Spectral": 25
   },
-  "present_lean_source_count": 764,
+  "present_lean_source_count": 770,
   "schema": "grwtsk-math-source-catalog-v1",
-  "source_count": 701,
+  "source_count": 707,
   "sources": [
     {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
@@ -6200,6 +6200,7 @@
         "GRWTSK.Combinatorics.DirectedGraph.PathUnfolding",
         "GRWTSK.Combinatorics.DirectedGraph.PrefixInventory",
         "GRWTSK.Combinatorics.DirectedGraph.PrefixTableBatch",
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCheckpoint",
         "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCompaction",
         "GRWTSK.Combinatorics.DirectedGraph.PrefixTableReindex",
         "GRWTSK.Combinatorics.DirectedGraph.PrefixTableState",
@@ -6304,6 +6305,7 @@
         "GRWTSK.NumberTheory.Chebyshev.FiniteIntegrationByParts",
         "GRWTSK.NumberTheory.ContinuedFractions.FrequencyRealization",
         "GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators",
+        "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicIdeals",
         "GRWTSK.NumberTheory.ExplicitFormula.CorrelationPairing",
         "GRWTSK.NumberTheory.FirstPrime",
         "GRWTSK.NumberTheory.Ideal.CompactNormSupport",
@@ -6590,7 +6592,7 @@
         "GRWTSK/Logic/ProofChecking/Checks/OwnedDeclarationAudit.lean"
       ],
       "runner": "python3 -B scripts/check_ccc_energy.py",
-      "sha256": "db2fde8e7c3d7e6f682b6c9aa43bba6f088f5f0ea3c3ceee2173de76ea6e5733",
+      "sha256": "47e1e96b4572ddd92ceff25d16c3a68045557ccf0dae90215ed32e0f54e46d61",
       "source_role": "library",
       "source_root": ".",
       "subject": "Library",
@@ -6599,7 +6601,7 @@
         "inventory": "observed-current-bytes",
         "layout": "repository baseline remains failed",
         "lean": "umbrella not replayed after selected import additions",
-        "source_sha256": "db2fde8e7c3d7e6f682b6c9aa43bba6f088f5f0ea3c3ceee2173de76ea6e5733"
+        "source_sha256": "47e1e96b4572ddd92ceff25d16c3a68045557ccf0dae90215ed32e0f54e46d61"
       },
       "working_tree_state": "tracked-modified"
     },
@@ -28759,6 +28761,53 @@
         "Lean and Mathlib: upstream APIs and proofs"
       ],
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/checkpoint-cyclotomic-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "compactAt applies the actual PrefixTableCompaction.compact to the underlying existing RootedState fiber, with actual WellFormed evidence and proved actual retained-root equality. No new State/path datatype or assumed serializer/checkpoint law.",
+        "split_runAt consumes actual pinned List.foldl_append. executeAt actually runs the first chronological segment, compacts its actual result using derived WellFormed, then runs the second segment at the same retained-root fiber. checkpoint exposes the resulting existing State.",
+        "checkpoint_root and checkpoint_wellFormed derive actual root retention and structural validity, including empty segments. DecidableEq of full typed edge tags is explicit, without Key equality or independent vertex equality.",
+        "decode_compactAt consumes the existing actual compact producer/decoder theorem. decode_executeAt/decode_checkpoint combine this with actual batch decoding and split_runAt to prove actual checked complete ordered histories equal run(state,first++second). checkpoint_histories derives initial actual decoded rows followed by chronological combined flatMap traceRows, preserving keys/order/repeats. Initial WellFormed is required, not assumed desired decoding.",
+        "No raw dictionary/node/reference equality or numeric-slot stability is claimed across actual compaction; required exact remap behavior is demonstrated by actual producer controls."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableCheckpoint"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "logical_status": "intended rejected control; no theorem admission",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.PrefixCheckpointStaleSlots",
+      "namespaces": [],
+      "object": "DirectedGraph/Checks/Negative",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixCheckpointStaleSlots.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixCheckpointStaleSlots.lean",
+      "placement_rationale": "Actual compaction checkpoints between chronological prefix-state batch segments belong to Combinatorics/DirectedGraph; generic sequence certificates remain in Logic/FiniteSequences.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B scripts/check_prefix_table_checkpoint.py",
+      "sha256": "341d6c009e42fdf5ad639eb6fee6310a32f4a9c29bb9fc914dc73b47694b2b22",
+      "source_role": "negative-control",
+      "source_root": "GRWTSK",
+      "subject": "Combinatorics",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixCheckpointStaleSlots.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/prefix-compaction-checkpoint-checks-2026-10-15.json",
+        "source_sha256": "341d6c009e42fdf5ad639eb6fee6310a32f4a9c29bb9fc914dc73b47694b2b22"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
       "design_reference": "cache/research/compaction-fourier-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
       "explicit_premises": [
         "Actual arbitrary storedState+WellFormed; derive successful real-row trace decoding/validity and reverse traceRows(recoverRows)=entries via actual edge codec.",
@@ -30484,6 +30533,298 @@
         "lean": "see immutable selected replay receipt",
         "replay_binding": "evidence/Combinatorics/DirectedGraph/prefix-finite-batch-checks-2026-10-15.json",
         "source_sha256": "0ea2df761313eba5d470dad3b89e5644c4958aaadb00f537ef0f2bf6467d7afe"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/checkpoint-cyclotomic-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "compactAt applies the actual PrefixTableCompaction.compact to the underlying existing RootedState fiber, with actual WellFormed evidence and proved actual retained-root equality. No new State/path datatype or assumed serializer/checkpoint law.",
+        "split_runAt consumes actual pinned List.foldl_append. executeAt actually runs the first chronological segment, compacts its actual result using derived WellFormed, then runs the second segment at the same retained-root fiber. checkpoint exposes the resulting existing State.",
+        "checkpoint_root and checkpoint_wellFormed derive actual root retention and structural validity, including empty segments. DecidableEq of full typed edge tags is explicit, without Key equality or independent vertex equality.",
+        "decode_compactAt consumes the existing actual compact producer/decoder theorem. decode_executeAt/decode_checkpoint combine this with actual batch decoding and split_runAt to prove actual checked complete ordered histories equal run(state,first++second). checkpoint_histories derives initial actual decoded rows followed by chronological combined flatMap traceRows, preserving keys/order/repeats. Initial WellFormed is required, not assumed desired decoding.",
+        "No raw dictionary/node/reference equality or numeric-slot stability is claimed across actual compaction; required exact remap behavior is demonstrated by actual producer controls."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCheckpoint"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableCheckpoint",
+      "namespaces": [
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCheckpoint.Checks.Positive"
+      ],
+      "object": "DirectedGraph/Checks/Positive",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableCheckpoint.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableCheckpoint.lean",
+      "placement_rationale": "Actual compaction checkpoints between chronological prefix-state batch segments belong to Combinatorics/DirectedGraph; generic sequence certificates remain in Logic/FiniteSequences.",
+      "public_declarations": [
+        {
+          "kind": "def",
+          "line": 22,
+          "name": "falseTag"
+        },
+        {
+          "kind": "def",
+          "line": 25,
+          "name": "trueTag"
+        },
+        {
+          "kind": "theorem",
+          "line": 28,
+          "name": "tags_distinct"
+        },
+        {
+          "kind": "def",
+          "line": 34,
+          "name": "falseOccurrence"
+        },
+        {
+          "kind": "def",
+          "line": 37,
+          "name": "trueOccurrence"
+        },
+        {
+          "kind": "def",
+          "line": 40,
+          "name": "seedRows"
+        },
+        {
+          "kind": "def",
+          "line": 43,
+          "name": "seed"
+        },
+        {
+          "kind": "def",
+          "line": 46,
+          "name": "before"
+        },
+        {
+          "kind": "def",
+          "line": 49,
+          "name": "retainedRows"
+        },
+        {
+          "kind": "theorem",
+          "line": 52,
+          "name": "seed_inventory"
+        },
+        {
+          "kind": "theorem",
+          "line": 57,
+          "name": "before_dictionary"
+        },
+        {
+          "kind": "theorem",
+          "line": 63,
+          "name": "before_wellFormed"
+        },
+        {
+          "kind": "theorem",
+          "line": 72,
+          "name": "before_nodes"
+        },
+        {
+          "kind": "theorem",
+          "line": 77,
+          "name": "before_actual_decode"
+        },
+        {
+          "kind": "theorem",
+          "line": 83,
+          "name": "before_realEntries"
+        },
+        {
+          "kind": "theorem",
+          "line": 87,
+          "name": "before_realRows"
+        },
+        {
+          "kind": "def",
+          "line": 90,
+          "name": "after"
+        },
+        {
+          "kind": "theorem",
+          "line": 92,
+          "name": "retained_inventory"
+        },
+        {
+          "kind": "theorem",
+          "line": 97,
+          "name": "after_wellFormed"
+        },
+        {
+          "kind": "theorem",
+          "line": 99,
+          "name": "after_dictionary"
+        },
+        {
+          "kind": "theorem",
+          "line": 102,
+          "name": "after_nodes"
+        },
+        {
+          "kind": "theorem",
+          "line": 106,
+          "name": "after_references"
+        },
+        {
+          "kind": "theorem",
+          "line": 113,
+          "name": "after_actual_decode"
+        },
+        {
+          "kind": "theorem",
+          "line": 116,
+          "name": "actual_unused_branch_removed"
+        },
+        {
+          "kind": "theorem",
+          "line": 122,
+          "name": "actual_old_false_slot_remapped"
+        },
+        {
+          "kind": "theorem",
+          "line": 131,
+          "name": "actual_parent_slot_remapped"
+        },
+        {
+          "kind": "theorem",
+          "line": 140,
+          "name": "actual_old_true_slot_removed"
+        },
+        {
+          "kind": "def",
+          "line": 157,
+          "name": "stale"
+        },
+        {
+          "kind": "theorem",
+          "line": 161,
+          "name": "stale_wellFormed"
+        },
+        {
+          "kind": "theorem",
+          "line": 171,
+          "name": "stale_actual_decode"
+        },
+        {
+          "kind": "theorem",
+          "line": 178,
+          "name": "stale_histories_changed"
+        },
+        {
+          "kind": "def",
+          "line": 185,
+          "name": "parallelRows"
+        },
+        {
+          "kind": "def",
+          "line": 188,
+          "name": "post"
+        },
+        {
+          "kind": "def",
+          "line": 190,
+          "name": "direct"
+        },
+        {
+          "kind": "def",
+          "line": 191,
+          "name": "stalePost"
+        },
+        {
+          "kind": "theorem",
+          "line": 192,
+          "name": "post_actual_update"
+        },
+        {
+          "kind": "theorem",
+          "line": 194,
+          "name": "post_wellFormed"
+        },
+        {
+          "kind": "theorem",
+          "line": 196,
+          "name": "post_dictionary"
+        },
+        {
+          "kind": "theorem",
+          "line": 206,
+          "name": "post_references"
+        },
+        {
+          "kind": "theorem",
+          "line": 218,
+          "name": "post_actual_decode"
+        },
+        {
+          "kind": "theorem",
+          "line": 225,
+          "name": "direct_dictionary"
+        },
+        {
+          "kind": "theorem",
+          "line": 235,
+          "name": "direct_references"
+        },
+        {
+          "kind": "theorem",
+          "line": 248,
+          "name": "actual_checkpoint_histories"
+        },
+        {
+          "kind": "theorem",
+          "line": 252,
+          "name": "actual_arrays_differ"
+        },
+        {
+          "kind": "theorem",
+          "line": 259,
+          "name": "stalePost_wellFormed"
+        },
+        {
+          "kind": "theorem",
+          "line": 262,
+          "name": "stalePost_bounds"
+        },
+        {
+          "kind": "theorem",
+          "line": 264,
+          "name": "stalePost_actual_decode"
+        },
+        {
+          "kind": "theorem",
+          "line": 272,
+          "name": "stale_slots_change_histories"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.PrefixCheckpointStaleSlots"
+      ],
+      "runner": "python3 -B scripts/check_prefix_table_checkpoint.py",
+      "sha256": "1c6dab0a085286ff173915e4c818eb3c0e714a962a235767ae0bc7d4dec0c445",
+      "source_role": "positive-check",
+      "source_root": "GRWTSK",
+      "subject": "Combinatorics",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableCheckpoint.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/prefix-compaction-checkpoint-checks-2026-10-15.json",
+        "source_sha256": "1c6dab0a085286ff173915e4c818eb3c0e714a962a235767ae0bc7d4dec0c445"
       },
       "working_tree_state": "untracked-at-selected-replay"
     },
@@ -33680,7 +34021,8 @@
       ],
       "reverse_consumers": [
         "GRWTSK",
-        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableBatch"
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableBatch",
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCheckpoint"
       ],
       "runner": "python3 -B scripts/check_prefix_table_batch.py",
       "sha256": "eaa986de6b17e60b545b1e603ae42f0f1a9678bcecea9379a7198097787ef63f",
@@ -33694,6 +34036,119 @@
         "lean": "see immutable selected replay receipt",
         "replay_binding": "evidence/Combinatorics/DirectedGraph/prefix-finite-batch-checks-2026-10-15.json",
         "source_sha256": "eaa986de6b17e60b545b1e603ae42f0f1a9678bcecea9379a7198097787ef63f"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/checkpoint-cyclotomic-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "compactAt applies the actual PrefixTableCompaction.compact to the underlying existing RootedState fiber, with actual WellFormed evidence and proved actual retained-root equality. No new State/path datatype or assumed serializer/checkpoint law.",
+        "split_runAt consumes actual pinned List.foldl_append. executeAt actually runs the first chronological segment, compacts its actual result using derived WellFormed, then runs the second segment at the same retained-root fiber. checkpoint exposes the resulting existing State.",
+        "checkpoint_root and checkpoint_wellFormed derive actual root retention and structural validity, including empty segments. DecidableEq of full typed edge tags is explicit, without Key equality or independent vertex equality.",
+        "decode_compactAt consumes the existing actual compact producer/decoder theorem. decode_executeAt/decode_checkpoint combine this with actual batch decoding and split_runAt to prove actual checked complete ordered histories equal run(state,first++second). checkpoint_histories derives initial actual decoded rows followed by chronological combined flatMap traceRows, preserving keys/order/repeats. Initial WellFormed is required, not assumed desired decoding.",
+        "No raw dictionary/node/reference equality or numeric-slot stability is claimed across actual compaction; required exact remap behavior is demonstrated by actual producer controls."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableBatch"
+      ],
+      "license": "MIT; upstream imported Apache-2.0 retained",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCheckpoint",
+      "namespaces": [
+        "GRWTSK.Combinatorics.DirectedGraph.PrefixTableCheckpoint"
+      ],
+      "object": "DirectedGraph",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableCheckpoint.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableCheckpoint.lean",
+      "placement_rationale": "Actual compaction checkpoints between chronological prefix-state batch segments belong to Combinatorics/DirectedGraph; generic sequence certificates remain in Logic/FiniteSequences.",
+      "public_declarations": [
+        {
+          "kind": "def",
+          "line": 27,
+          "name": "compactAt"
+        },
+        {
+          "kind": "theorem",
+          "line": 32,
+          "name": "compactAt_wellFormed"
+        },
+        {
+          "kind": "theorem",
+          "line": 36,
+          "name": "decode_compactAt"
+        },
+        {
+          "kind": "theorem",
+          "line": 41,
+          "name": "split_runAt"
+        },
+        {
+          "kind": "def",
+          "line": 47,
+          "name": "executeAt"
+        },
+        {
+          "kind": "def",
+          "line": 54,
+          "name": "checkpoint"
+        },
+        {
+          "kind": "theorem",
+          "line": 58,
+          "name": "checkpoint_root"
+        },
+        {
+          "kind": "theorem",
+          "line": 63,
+          "name": "executeAt_wellFormed"
+        },
+        {
+          "kind": "theorem",
+          "line": 69,
+          "name": "checkpoint_wellFormed"
+        },
+        {
+          "kind": "theorem",
+          "line": 74,
+          "name": "decode_executeAt"
+        },
+        {
+          "kind": "theorem",
+          "line": 87,
+          "name": "decode_checkpoint"
+        },
+        {
+          "kind": "theorem",
+          "line": 93,
+          "name": "checkpoint_histories"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableCheckpoint"
+      ],
+      "runner": "python3 -B scripts/check_prefix_table_checkpoint.py",
+      "sha256": "39347361377ee5f5e8f58091d72652e2458b3eda2c34b74b503d4d1f3b465e03",
+      "source_role": "library",
+      "source_root": "GRWTSK",
+      "subject": "Combinatorics",
+      "target_path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableCheckpoint.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/Combinatorics/DirectedGraph/prefix-compaction-checkpoint-checks-2026-10-15.json",
+        "source_sha256": "39347361377ee5f5e8f58091d72652e2458b3eda2c34b74b503d4d1f3b465e03"
       },
       "working_tree_state": "untracked-at-selected-replay"
     },
@@ -50639,6 +51094,290 @@
       "working_tree_state": "tracked-clean"
     },
     {
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: literal third-cyclotomic field/ring aliases from FiniteFourier; actual imported ideal-norm/cyclotomic/number-field Mathlib authors retain credit"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/checkpoint-cyclotomic-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Literal aliases K=CyclotomicField 3 ℚ and O=NumberField.RingOfIntegers K, exactly the primary source definitions, under this mathematical namespace. field_identity/ring_identity preserve actual type identity; no arbitrary ring or integer-ideal replacement.",
+        "Actual private IsCyclotomicExtension {3} ℚ K instance from CyclotomicField.isCyclotomicExtension 3 ℚ, matching the original source supplied instance. Actual NumberField K and actual IsDedekindDomain O, Module.Free ℤ O, Module.Finite ℤ O and CharZero O are synthesized natively; CommRing O is the actual ring-of-integers structure used throughout.",
+        "Actual Module.finrank ℚ K=2 from the cyclotomic finrank theorem and totient3=2; actual Module.finrank ℤ O=2 from RingOfIntegers.rank.",
+        "For every natural n (including0), actual Ideal.absNorm(Ideal.span{(n:O)})=n². In particular the actual principal ideal generated by2 has absolute norm4.",
+        "For actual O ideals, compact W:ℝ→ℂ, X>0 and F:Ideal O³→ℂ with actual zero-ideal and window-vanishing cancellation: Function.support F is finite. The admitted generic norm-support theorem supplies the proof; this concrete ring and all actual required instances now pay the previously open ring specialization."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.NumberTheory.Cyclotomic.Checks.Positive.ThirdCyclotomicIdeals"
+      ],
+      "license": "Apache-2.0",
+      "logical_status": "intended rejected control; no theorem admission",
+      "module": "GRWTSK.NumberTheory.Cyclotomic.Checks.Negative.ThirdCyclotomicIntegerNorm",
+      "namespaces": [
+        "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicIdeals.Checks"
+      ],
+      "object": "Cyclotomic/Checks/Negative",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Negative/ThirdCyclotomicIntegerNorm.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Negative/ThirdCyclotomicIntegerNorm.lean",
+      "placement_rationale": "Actual ideal norms in the ring of integers of the third cyclotomic field belong to NumberTheory/Cyclotomic.",
+      "public_declarations": [],
+      "reverse_consumers": [],
+      "runner": "python3 -B scripts/check_third_cyclotomic_ideals.py",
+      "sha256": "6b6c3a2a04073e115804436139074514d7abb337ab0752d688e9e2cddf95d177",
+      "source_role": "negative-control",
+      "source_root": "GRWTSK",
+      "subject": "NumberTheory",
+      "target_path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Negative/ThirdCyclotomicIntegerNorm.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/NumberTheory/Cyclotomic/third-cyclotomic-ideals-checks-2026-10-15.json",
+        "source_sha256": "6b6c3a2a04073e115804436139074514d7abb337ab0752d688e9e2cddf95d177"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: literal third-cyclotomic field/ring aliases from FiniteFourier; actual imported ideal-norm/cyclotomic/number-field Mathlib authors retain credit"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/checkpoint-cyclotomic-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Literal aliases K=CyclotomicField 3 ℚ and O=NumberField.RingOfIntegers K, exactly the primary source definitions, under this mathematical namespace. field_identity/ring_identity preserve actual type identity; no arbitrary ring or integer-ideal replacement.",
+        "Actual private IsCyclotomicExtension {3} ℚ K instance from CyclotomicField.isCyclotomicExtension 3 ℚ, matching the original source supplied instance. Actual NumberField K and actual IsDedekindDomain O, Module.Free ℤ O, Module.Finite ℤ O and CharZero O are synthesized natively; CommRing O is the actual ring-of-integers structure used throughout.",
+        "Actual Module.finrank ℚ K=2 from the cyclotomic finrank theorem and totient3=2; actual Module.finrank ℤ O=2 from RingOfIntegers.rank.",
+        "For every natural n (including0), actual Ideal.absNorm(Ideal.span{(n:O)})=n². In particular the actual principal ideal generated by2 has absolute norm4.",
+        "For actual O ideals, compact W:ℝ→ℂ, X>0 and F:Ideal O³→ℂ with actual zero-ideal and window-vanishing cancellation: Function.support F is finite. The admitted generic norm-support theorem supplies the proof; this concrete ring and all actual required instances now pay the previously open ring specialization."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.Analysis.Calculus.CompactCutoff",
+        "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicIdeals"
+      ],
+      "license": "Apache-2.0",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.NumberTheory.Cyclotomic.Checks.Positive.ThirdCyclotomicIdeals",
+      "namespaces": [
+        "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicIdeals.Checks"
+      ],
+      "object": "Cyclotomic/Checks/Positive",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Positive/ThirdCyclotomicIdeals.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Positive/ThirdCyclotomicIdeals.lean",
+      "placement_rationale": "Actual ideal norms in the ring of integers of the third cyclotomic field belong to NumberTheory/Cyclotomic.",
+      "public_declarations": [
+        {
+          "kind": "def",
+          "line": 9,
+          "name": "cyclotomicWindow"
+        },
+        {
+          "kind": "lemma",
+          "line": 11,
+          "name": "cyclotomicWindow_compact"
+        },
+        {
+          "kind": "lemma",
+          "line": 12,
+          "name": "cyclotomicWindow_one"
+        },
+        {
+          "kind": "def",
+          "line": 13,
+          "name": "cyclotomicTriple"
+        },
+        {
+          "kind": "lemma",
+          "line": 18,
+          "name": "cyclotomicTriple_zero"
+        },
+        {
+          "kind": "lemma",
+          "line": 22,
+          "name": "cyclotomicTriple_window"
+        },
+        {
+          "kind": "theorem",
+          "line": 29,
+          "name": "actual_cyclotomic_finite_support"
+        },
+        {
+          "kind": "lemma",
+          "line": 34,
+          "name": "principal_two_ne_zero"
+        },
+        {
+          "kind": "theorem",
+          "line": 40,
+          "name": "actual_principal_two_term"
+        },
+        {
+          "kind": "lemma",
+          "line": 55,
+          "name": "integer_principal_two_absNorm"
+        },
+        {
+          "kind": "theorem",
+          "line": 58,
+          "name": "actual_integer_norm_identification_false"
+        },
+        {
+          "kind": "lemma",
+          "line": 64,
+          "name": "actual_ring_rank_two"
+        },
+        {
+          "kind": "lemma",
+          "line": 66,
+          "name": "actual_zero_principal_norm"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK.NumberTheory.Cyclotomic.Checks.Negative.ThirdCyclotomicIntegerNorm"
+      ],
+      "runner": "python3 -B scripts/check_third_cyclotomic_ideals.py",
+      "sha256": "e9ecd358d2f5dc533784b9b4ad599877ae86ee3b9ea199453c99bab2d51b3fbc",
+      "source_role": "positive-check",
+      "source_root": "GRWTSK",
+      "subject": "NumberTheory",
+      "target_path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Positive/ThirdCyclotomicIdeals.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/NumberTheory/Cyclotomic/third-cyclotomic-ideals-checks-2026-10-15.json",
+        "source_sha256": "e9ecd358d2f5dc533784b9b4ad599877ae86ee3b9ea199453c99bab2d51b3fbc"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
+      "contribution_roles": [
+        "grwtsk contributors: human direction",
+        "OpenAI Codex: local formalization/adaptation/checking",
+        "Lean and Mathlib: upstream APIs and proofs",
+        "OpenAI: literal third-cyclotomic field/ring aliases from FiniteFourier; actual imported ideal-norm/cyclotomic/number-field Mathlib authors retain credit"
+      ],
+      "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
+      "design_reference": "cache/research/checkpoint-cyclotomic-frontier-2026-10-15.json; candidate taxonomy sources remain NOT_RUN and are not imported.",
+      "explicit_premises": [
+        "Literal aliases K=CyclotomicField 3 ℚ and O=NumberField.RingOfIntegers K, exactly the primary source definitions, under this mathematical namespace. field_identity/ring_identity preserve actual type identity; no arbitrary ring or integer-ideal replacement.",
+        "Actual private IsCyclotomicExtension {3} ℚ K instance from CyclotomicField.isCyclotomicExtension 3 ℚ, matching the original source supplied instance. Actual NumberField K and actual IsDedekindDomain O, Module.Free ℤ O, Module.Finite ℤ O and CharZero O are synthesized natively; CommRing O is the actual ring-of-integers structure used throughout.",
+        "Actual Module.finrank ℚ K=2 from the cyclotomic finrank theorem and totient3=2; actual Module.finrank ℤ O=2 from RingOfIntegers.rank.",
+        "For every natural n (including0), actual Ideal.absNorm(Ideal.span{(n:O)})=n². In particular the actual principal ideal generated by2 has absolute norm4.",
+        "For actual O ideals, compact W:ℝ→ℂ, X>0 and F:Ideal O³→ℂ with actual zero-ideal and window-vanishing cancellation: Function.support F is finite. The admitted generic norm-support theorem supplies the proof; this concrete ring and all actual required instances now pay the previously open ring specialization."
+      ],
+      "git_blob": null,
+      "imports": [
+        "GRWTSK.NumberTheory.Ideal.CompactNormSupport",
+        "Mathlib.NumberTheory.NumberField.Cyclotomic.Basic"
+      ],
+      "license": "Apache-2.0",
+      "logical_status": "selected native checked result; exact hypotheses retained",
+      "module": "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicIdeals",
+      "namespaces": [
+        "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicIdeals"
+      ],
+      "object": "Cyclotomic",
+      "open_premises": [],
+      "operation": "add",
+      "original_path": "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicIdeals.lean",
+      "other_consumers": [],
+      "path": "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicIdeals.lean",
+      "placement_rationale": "Actual ideal norms in the ring of integers of the third cyclotomic field belong to NumberTheory/Cyclotomic.",
+      "public_declarations": [
+        {
+          "kind": "abbrev",
+          "line": 26,
+          "name": "K"
+        },
+        {
+          "kind": "abbrev",
+          "line": 29,
+          "name": "O"
+        },
+        {
+          "kind": "lemma",
+          "line": 34,
+          "name": "field_identity"
+        },
+        {
+          "kind": "lemma",
+          "line": 36,
+          "name": "ring_identity"
+        },
+        {
+          "kind": "lemma",
+          "line": 37,
+          "name": "actual_number_field"
+        },
+        {
+          "kind": "lemma",
+          "line": 39,
+          "name": "actual_cyclotomic_extension"
+        },
+        {
+          "kind": "lemma",
+          "line": 40,
+          "name": "actual_ring_instances"
+        },
+        {
+          "kind": "lemma",
+          "line": 42,
+          "name": "field_finrank"
+        },
+        {
+          "kind": "lemma",
+          "line": 47,
+          "name": "integer_finrank"
+        },
+        {
+          "kind": "theorem",
+          "line": 50,
+          "name": "principal_nat_absNorm"
+        },
+        {
+          "kind": "lemma",
+          "line": 54,
+          "name": "principal_two_absNorm"
+        },
+        {
+          "kind": "theorem",
+          "line": 57,
+          "name": "finite_support_norm_triple"
+        }
+      ],
+      "reverse_consumers": [
+        "GRWTSK",
+        "GRWTSK.NumberTheory.Cyclotomic.Checks.Positive.ThirdCyclotomicIdeals"
+      ],
+      "runner": "python3 -B scripts/check_third_cyclotomic_ideals.py",
+      "sha256": "be784982bbbdbfefdb5b1e2906d69e4d18f0ae0408cec7a4805605a6382cda87",
+      "source_role": "library",
+      "source_root": "GRWTSK",
+      "subject": "NumberTheory",
+      "target_path": "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicIdeals.lean",
+      "verification": {
+        "inventory": "observed-current-bytes",
+        "layout": "selected-path review; unrelated baseline remains failed",
+        "lean": "see immutable selected replay receipt",
+        "replay_binding": "evidence/NumberTheory/Cyclotomic/third-cyclotomic-ideals-checks-2026-10-15.json",
+        "source_sha256": "be784982bbbdbfefdb5b1e2906d69e4d18f0ae0408cec7a4805605a6382cda87"
+      },
+      "working_tree_state": "untracked-at-selected-replay"
+    },
+    {
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
       "git_blob": "b7b23a26d1463ab489fc1770a8347d336b069d75",
       "imports": [
@@ -51004,6 +51743,7 @@
       ],
       "reverse_consumers": [
         "GRWTSK",
+        "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicIdeals",
         "GRWTSK.NumberTheory.Ideal.Checks.Positive.CompactNormSupport"
       ],
       "runner": "python3 -B scripts/check_ideal_compact_norm_support.py",

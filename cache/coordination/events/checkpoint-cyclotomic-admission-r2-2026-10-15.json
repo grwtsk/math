@@ -1,0 +1,44 @@
+{
+  "schema": "repository-agent-event-v1",
+  "at": "2026-10-16T01:01:24.688986+00:00",
+  "task": "checkpoint-cyclotomic-round",
+  "event": "concurrent-history-custody-extension-without-proof-rebinding",
+  "previous_admission": {
+    "path": "cache/coordination/events/checkpoint-cyclotomic-admission-2026-10-15.json",
+    "sha256": "dbb3a458cd94fe847462058873252ec90f063fd011a715a1e80ff3a9566979b6"
+  },
+  "incoming_integration": {
+    "path": "cache/coordination/events/checkpoint-cyclotomic-concurrent-integration-2026-10-15.json",
+    "sha256": "d44b490d39d1503f8c13bb48cd789082cd57808c2a3b0347e53ee7b6bab87474"
+  },
+  "current_continuation": {
+    "path": "cache/coordination/continuations/2026-10-15-checkpoint-cyclotomic-r2.json",
+    "sha256": "8b5d72053ce87bd286ba38caf83c81ca77312fb873f40aff52ad685646b6bc70"
+  },
+  "current_frontier": {
+    "path": "cache/research/checkpoint-cyclotomic-frontier-2026-10-15-r2.json",
+    "sha256": "bda849c6e5bf2044e4cc9ec22fb9c56ed70eb130d3dea1ec4d194dc5f884384c"
+  },
+  "selected_native_inputs_unchanged": [
+    {
+      "receipt": {
+        "path": "evidence/Combinatorics/DirectedGraph/prefix-compaction-checkpoint-checks-2026-10-15.json",
+        "sha256": "e32c92083d46c8c33d562153a854591472a937c3e8b5752c41e9d2ee7e11f6f2"
+      },
+      "owned_count": 879,
+      "all_frozen_source_driver_pin_hashes_still_exact": true,
+      "incoming_path_overlap": []
+    },
+    {
+      "receipt": {
+        "path": "evidence/NumberTheory/Cyclotomic/third-cyclotomic-ideals-checks-2026-10-15.json",
+        "sha256": "0f0c80dc56332b7b869892af65a348fa64fdfa7860d0f6ba6d6a965ecfe81b46"
+      },
+      "owned_count": 46,
+      "all_frozen_source_driver_pin_hashes_still_exact": true,
+      "incoming_path_overlap": []
+    }
+  ],
+  "limits": "Original receipts/cursor/frontier retained byte-for-byte; no mathematical replay or acceptance inferred from archive, commit/tree publication, lexical scans or old source references.",
+  "remote_actions": []
+}

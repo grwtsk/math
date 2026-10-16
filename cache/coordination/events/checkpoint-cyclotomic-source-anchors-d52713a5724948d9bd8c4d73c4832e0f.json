@@ -1,0 +1,19 @@
+{
+  "schema": "repository-agent-event-v1",
+  "task": "checkpoint-cyclotomic-source-scout",
+  "owner": "cache_taxonomy",
+  "at": "2026-10-16T00:42:39.573003+00:00",
+  "kind": "exact-raw-anchor-correction",
+  "prior_context": {
+    "path": ".local/checkpoint-cyclotomic-source-scout/535effd5e4f84f579db616007877f5ca/review-context.json",
+    "sha256": "941002987b25a691200c3a6327fd962361d91dc87c1d391bb8dad5517617e008",
+    "bytes": 14116
+  },
+  "current_context": {
+    "path": ".local/checkpoint-cyclotomic-source-scout/535effd5e4f84f579db616007877f5ca/review-context-r2.json",
+    "sha256": "5416acf18ad71320a8ec4f83ff21166a515443c7dc1682087d46acc837a757ca",
+    "bytes": 14581
+  },
+  "correction": "Automated exact raw declaration header check gives primaryPrime205, not provisional body-line206. Prior context/event preserved; source bytes unchanged.",
+  "native_status": "NOT_RUN"
+}

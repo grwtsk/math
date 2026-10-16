@@ -260,6 +260,12 @@ now formalize chronological repeated updates of the actual stored state.
 Semantic decoding consumes the initial invariant; ordered rows and repetitions
 remain distinct, and appended rows still require their own criteria.
 
+The [actual compaction checkpoint](../mathematics/Combinatorics/DirectedGraph/prefix-compaction-checkpoint.md)
+and [durable decision](../../cache/decisions/compaction-checkpoint-state-v1.json)
+retain decoded histories across actual reference remapping between batch
+segments. Numeric bounds and rooted validity alone do not prove that stale
+references retain the old histories. Operational transactions remain separate.
+
 See [cache operations](../how-to/cache.md), the
 [taxonomy](../../cache/taxonomy.json), and the
 [integration evidence](../../evidence/Logic/FiniteSequences/cache-integration-2026-10-15.json).

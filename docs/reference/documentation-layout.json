@@ -3742,10 +3742,28 @@
       "source_sha256": "8792ac4679bebdc78e0f466f4752501684c88c5e3ef58862121ccbabc64f3fb6",
       "status": "fresh-selected",
       "evidence": "evidence/NumberTheory/Ideal/compact-norm-support-checks-2026-10-15.json"
+    },
+    "docs/mathematics/Combinatorics/DirectedGraph/prefix-compaction-checkpoint.md": {
+      "title": "Compaction checkpoints between finite prefix batches",
+      "subject": "Combinatorics",
+      "object": "DirectedGraph",
+      "primary_source": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableCheckpoint.lean",
+      "source_sha256": "39347361377ee5f5e8f58091d72652e2458b3eda2c34b74b503d4d1f3b465e03",
+      "status": "fresh-selected",
+      "evidence": "evidence/Combinatorics/DirectedGraph/prefix-compaction-checkpoint-checks-2026-10-15.json"
+    },
+    "docs/mathematics/NumberTheory/Cyclotomic/third-cyclotomic-ideals.md": {
+      "title": "Ideal norms in the third cyclotomic integer ring",
+      "subject": "NumberTheory",
+      "object": "Cyclotomic",
+      "primary_source": "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicIdeals.lean",
+      "source_sha256": "be784982bbbdbfefdb5b1e2906d69e4d18f0ae0408cec7a4805605a6382cda87",
+      "status": "fresh-selected",
+      "evidence": "evidence/NumberTheory/Cyclotomic/third-cyclotomic-ideals-checks-2026-10-15.json"
     }
   },
   "object_binding_registry": "docs/reference/object-source-bindings.json",
-  "object_binding_registry_sha256": "0c2b34c702aea3c8e2236e7d92c2d56fc354ce2de0f863dbd3c0fa1ec7e91abf",
+  "object_binding_registry_sha256": "68abecfcd51bdcc1c7c0912a2c891f57408810272904e225198838975e91b578",
   "navigation": {
     "schema": "subject-index-navigation-v1",
     "summary": "docs/reference/library-summary.json"
