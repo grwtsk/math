@@ -1,5 +1,0 @@
-'ASBNP04.FiniteProduct.primeState_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
-'ASBNP04.FiniteProduct.source_correlations_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
-'ASBNP04.FiniteProduct.source_block_energy_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
-'ASBNP04.FiniteProduct.restricted_source_memLp_two' depends on axioms: [propext, Classical.choice, Quot.sound]
-'ASBNP04.FiniteProduct.sourceEnergy_eq_l2_norm_sq' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,7 +1,0 @@
-/Users/think/Desktop/math/.noeaaeue/.local/additive-character-moments-replay/20261016T055402Z-1b47ac0b6a/source/GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorToABC.lean:9:2: error: Type mismatch
-  typedPrimitiveWeightedMoment_eq_moebius_frequency_sum 2 5 (fun x x_1 x_2 => 1) (of_decide_eq_true (id (Eq.refl true)))
-has type
-  (typedPrimitiveWeightedMoment 2 fun x x_1 x_2 => 1) =
-    ∑ d ∈ Finset.Icc 1 2, ↑(ArithmeticFunction.moebius d) * frequencyJointMoment (2 / d) d 5 fun x x_1 x_2 => 1
-but is expected to have type
-  ABCConjecture

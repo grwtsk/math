@@ -1,6 +1,0 @@
-/Users/think/Desktop/math/.noeaaeue/.local/additive-character-moments-replay/20261016T055402Z-1b47ac0b6a/source/GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorWrongNormalization.lean:12:2: error: Type mismatch
-  h
-has type
-  ∑ k, ZMod.stdAddChar (k * (1 + 1 - 2)) = 7
-but is expected to have type
-  ∑ k, ZMod.stdAddChar (k * (1 + 1 - 2)) = 1

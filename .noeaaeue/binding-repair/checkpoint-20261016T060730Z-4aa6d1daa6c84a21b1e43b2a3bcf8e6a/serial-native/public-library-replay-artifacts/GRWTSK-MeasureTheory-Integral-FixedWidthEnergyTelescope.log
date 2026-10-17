@@ -1,6 +1,0 @@
-'HSSCP04.LocalEnergyTelescope.energy_step' depends on axioms: [propext, Classical.choice, Quot.sound]
-'HSSCP04.LocalEnergyTelescope.floor_telescope' depends on axioms: [propext, Classical.choice, Quot.sound]
-'HSSCP04.LocalEnergyTelescope.grid_telescope' depends on axioms: [propext, Classical.choice, Quot.sound]
-'HSSCP04.LocalEnergyTelescope.window_bound_implies_energy_polynomial' depends on axioms: [propext,
- Classical.choice,
- Quot.sound]

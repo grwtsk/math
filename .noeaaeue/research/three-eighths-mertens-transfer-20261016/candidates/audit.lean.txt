@@ -1,8 +1,0 @@
-import GRWTSK.NumberTheory.Moebius.QuasiBoundaryArithmetic
-import GRWTSK.NumberTheory.Moebius.QuasiBoundaryMertensTransfer
-
-#print axioms GRWTSK.NumberTheory.Moebius.QuasiBoundaryArithmetic.quasiBoundary_lt_sevenEighths
-#print axioms GRWTSK.NumberTheory.Moebius.QuasiBoundaryArithmetic.midpointExponent_lt_sevenEighths
-#print axioms GRWTSK.NumberTheory.Moebius.QuasiBoundaryArithmetic.quasiBoundary_sub_half_lt_threeEighths
-#print axioms GRWTSK.NumberTheory.Moebius.QuasiBoundaryMertensTransfer.verticalLineMass_uniform_above_boundary
-#print axioms GRWTSK.NumberTheory.Moebius.QuasiBoundaryMertensTransfer.threeEighthsVerticalLineUniform
