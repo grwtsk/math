@@ -1,3 +1,0 @@
-'HSSCP04.Settlement.signedCorrelationBudget_iff_HSS' depends on axioms: [propext, Classical.choice, Quot.sound]
-'HSSCP04.Settlement.unsigned_settlement_budget_refuted' depends on axioms: [propext, Classical.choice, Quot.sound]
-'HSSCP04.Settlement.HSS_requires_mature_matching' depends on axioms: [propext, Classical.choice, Quot.sound]

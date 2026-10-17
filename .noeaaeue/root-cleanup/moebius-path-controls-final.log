@@ -1,9 +1,0 @@
-test_frozen_layout_subprocess_uses_bound_sibling_adapter (test_moebius_process_paths.ProcessPathControls.test_frozen_layout_subprocess_uses_bound_sibling_adapter) ... ok
-test_historical_manifest_keys_remain_exact_and_aliases_cannot_collide (test_moebius_process_paths.ProcessPathControls.test_historical_manifest_keys_remain_exact_and_aliases_cannot_collide) ... ok
-test_logical_read_and_frozen_location_preserve_bytes_and_identity (test_moebius_process_paths.ProcessPathControls.test_logical_read_and_frozen_location_preserve_bytes_and_identity) ... ok
-test_physical_mapping_keeps_parent_symlinks_rejected (test_moebius_process_paths.ProcessPathControls.test_physical_mapping_keeps_parent_symlinks_rejected) ... ok
-
-----------------------------------------------------------------------
-Ran 4 tests in 0.022s
-
-OK

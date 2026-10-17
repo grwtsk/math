@@ -1,8 +1,0 @@
-import GRWTSK.Analysis.Sequences.ClosedWeightedAbelFlux
-import GRWTSK.NumberTheory.Moebius.ClosedDampedTriadicFlux
-
-#print axioms GRWTSK.Analysis.Sequences.ClosedWeightedAbelFlux.endpointEnergy_eq_closedFlux_add_correction
-#print axioms GRWTSK.Analysis.Sequences.ClosedWeightedAbelFlux.closedFlux_le_endpointEnergy
-#print axioms GRWTSK.Analysis.Sequences.ClosedWeightedAbelFlux.endpointEnergy_le_of_closedFlux_le
-#print axioms GRWTSK.NumberTheory.Moebius.ClosedDampedTriadicFlux.criticalReciprocal_of_closedTriadicFlux
-#print axioms GRWTSK.NumberTheory.Moebius.ClosedDampedTriadicFlux.riemannHypothesis_of_closedTriadicFlux

@@ -1,8 +1,0 @@
-'EulerP04RH.RHTerminal.regularized_identity_of_initial_and_holomorphic' depends on axioms: [propext,
- Classical.choice,
- Quot.sound]
-'EulerP04RH.RHTerminal.literal_RH_of_regularized_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
-'EulerP04RH.RHTerminal.literal_RH_of_pickup_Laplace_inputs' depends on axioms: [propext, Classical.choice, Quot.sound]
-'EulerP04RH.RHTerminal.literal_RH_of_P04_and_explicit_analytic_inputs' depends on axioms: [propext,
- Classical.choice,
- Quot.sound]

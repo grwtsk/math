@@ -1,8 +1,0 @@
-{
-  "schema": "final-navigation-page-inventory-drift-v1",
-  "missing_registrations": [
-    "docs/mathematics/NumberTheory/Diophantine/PrimitiveAdditiveTriples/divisor-sectors.md"
-  ],
-  "registered_paths_absent": [],
-  "scope": "Exact current drift observation; no concurrent page removed or registration invented."
-}

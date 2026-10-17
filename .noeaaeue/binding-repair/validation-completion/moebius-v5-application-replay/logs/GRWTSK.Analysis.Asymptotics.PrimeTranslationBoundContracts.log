@@ -1,3 +1,0 @@
-'PPNCP04.fourier_reduction_broad_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
-'PPNCP04.narrow_contract_returns_amortized_step' depends on axioms: [propext, Classical.choice, Quot.sound]
-'PPNCP04.chainConstruction_implies_P04' depends on axioms: [propext, Classical.choice, Quot.sound]

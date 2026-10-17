@@ -1,6 +1,0 @@
-{
-  "r1_controller_sha256": "a96b83205836a01248050ee5d175b16782f759ab6031885bbd6cbaca1c2a28f5",
-  "r1_preserved": true,
-  "r2_controller_sha256": "78294c124f57c628e81b8721dc7c2061b228f7faa44ca56369484a8091217ca2",
-  "scope": "Separate r2 helper/hash and bounded subprocess deadlines; same exact immutable revision/destination hostile controls. Operational only, no proof acceptance."
-}
