@@ -1,7 +1,0 @@
-{
-  "schema": "historical-receipt-preservation-check-v1",
-  "scope": "All pre-existing evidence and root-cleanup records, excluding separately mutable cache references",
-  "checked": 5360,
-  "changed": [],
-  "missing": []
-}

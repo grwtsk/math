@@ -1,2 +1,0 @@
-'HSSCP04.Diagnostics.fixture_echo' depends on axioms: [propext, Classical.choice, Quot.sound]
-'HSSCP04.Diagnostics.missing_composite_bridge_rejected' depends on axioms: [propext, Classical.choice, Quot.sound]

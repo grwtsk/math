@@ -1,3 +1,0 @@
-'HSSCP04.CCCAdapter.cross_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
-'HSSCP04.CCCAdapter.native_P04_eq_literal_P04' depends on axioms: [propext, Classical.choice, Quot.sound]
-'HSSCP04.CCCAdapter.HSS_iff_native_P04' depends on axioms: [propext, Classical.choice, Quot.sound]

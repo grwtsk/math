@@ -1,9 +1,0 @@
-{
-  "schema": "process-workflow-provenance-editorial-correction-v1",
-  "page": ".noeaaeue/documentation/current-validation-workflow.md",
-  "prior_sha256": "d2460854121c6cc52796fff2543e1fb3a293d76ae83cb0626317f5f947363aa1",
-  "current_sha256": "dcfbbecee84d688b05b91bc02eca612cd172aa98e9b50c8dd37c50772d1fd68f",
-  "change": "Replace only the coordination repository name with its role, preserving the mathematical taxonomy ownership boundary and operational instructions.",
-  "reason": "Existing private-provenance checker rejects the repository identifier. No checker exception or check weakening was introduced.",
-  "historical_preimage": ".noeaaeue/binding-repair/originals/validation-completion/documentation-attempt-02/workflow-registration/.noeaaeue/documentation/current-validation-workflow.md"
-}

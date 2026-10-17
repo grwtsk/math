@@ -1,2 +1,0 @@
-'EulerP04RH.NativeWindow.pickup_cutoff_consistent' depends on axioms: [propext, Classical.choice, Quot.sound]
-'EulerP04RH.NativeWindow.fixed_window_implies_literal_P04' depends on axioms: [propext, Classical.choice, Quot.sound]

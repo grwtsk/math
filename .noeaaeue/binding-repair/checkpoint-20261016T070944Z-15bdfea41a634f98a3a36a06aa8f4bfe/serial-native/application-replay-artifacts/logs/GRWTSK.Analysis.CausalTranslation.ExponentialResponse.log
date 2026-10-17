@@ -1,3 +1,0 @@
-'ASBNP04.causalShift_comm' depends on axioms: [propext, Classical.choice, Quot.sound]
-'ASBNP04.atom_eq_scaled_shift' depends on axioms: [propext, Classical.choice, Quot.sound]
-'ASBNP04.signed_quadratic_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]

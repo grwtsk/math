@@ -1,9 +1,0 @@
-true
-true
-some (GRWTSK.PartialSumOrdering.CertificateRejection.labelsNotDistinctNonzero)
-some (GRWTSK.PartialSumOrdering.CertificateRejection.labelsNotDistinctNonzero)
-some (GRWTSK.PartialSumOrdering.CertificateRejection.repeatedPostSum)
-some (GRWTSK.PartialSumOrdering.CertificateRejection.invalidSwap)
-some (GRWTSK.PartialSumOrdering.CertificateRejection.overlappingSupports)
-true
-true

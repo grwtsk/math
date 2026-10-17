@@ -1,2 +1,0 @@
-'EulerP04RH.ASRefutation.universal_AS_refuted' depends on axioms: [propext, Classical.choice, Quot.sound]
-'EulerP04RH.ASRefutation.exists_actual_failed_AS_step' depends on axioms: [propext, Classical.choice, Quot.sound]

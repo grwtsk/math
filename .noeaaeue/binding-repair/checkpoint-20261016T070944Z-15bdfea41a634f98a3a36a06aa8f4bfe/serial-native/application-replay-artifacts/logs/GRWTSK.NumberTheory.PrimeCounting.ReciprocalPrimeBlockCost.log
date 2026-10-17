@@ -1,3 +1,0 @@
-'PPNCP04.controller_square_root_cost_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
-'PPNCP04.controller_cost_log_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
-'PPNCP04.controller_costs_have_log_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
