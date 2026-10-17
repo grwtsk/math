@@ -1,9 +1,0 @@
-import GRWTSK.NumberTheory.Moebius.OneThirdMertensMeanSquare
-import GRWTSK.NumberTheory.Moebius.DyadicMertensMeanSquare
-import GRWTSK.NumberTheory.Moebius.MertensSquareMellin
-
-#print axioms GRWTSK.NumberTheory.Moebius.OneThirdMertensMeanSquare.oneThird_parameter_identities
-#print axioms GRWTSK.NumberTheory.Moebius.OneThirdMertensMeanSquare.verticalLineMass_oneThird_le_of_exactSourceBound
-#print axioms GRWTSK.NumberTheory.Moebius.OneThirdMertensMeanSquare.verticalLineMass_oneThird_of_mertensSquare
-#print axioms GRWTSK.NumberTheory.Moebius.DyadicMertensMeanSquare.dyadicMertensSquareBlock_nonneg
-#print axioms GRWTSK.NumberTheory.Moebius.MertensSquareMellin.eightThirds_boundary

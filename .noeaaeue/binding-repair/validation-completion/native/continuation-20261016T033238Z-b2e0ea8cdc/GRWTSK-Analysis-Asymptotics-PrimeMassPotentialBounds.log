@@ -1,3 +1,0 @@
-'PPNCP04.ASClosure.initial_potential_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
-'PPNCP04.ASClosure.completionFromAS' depends on axioms: [propext, Classical.choice, Quot.sound]
-'PPNCP04.ASClosure.AS_implies_literal_P04' depends on axioms: [propext, Classical.choice, Quot.sound]

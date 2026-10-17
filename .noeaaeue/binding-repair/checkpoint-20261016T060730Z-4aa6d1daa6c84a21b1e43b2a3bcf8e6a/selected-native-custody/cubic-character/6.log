@@ -1,6 +1,0 @@
-/Users/local/Desktop/math/.noeaaeue/.local/third-cyclotomic-characters-replay/replay-9siq5xbj/source/GRWTSK/NumberTheory/Cyclotomic/Checks/Negative/ThirdCyclotomicCharacterZeroCube.lean:17:2: error: Type mismatch
-  cubicChar_pow_three P hgood
-has type
-  cubicChar P hgood ^ 3 = 1
-but is expected to have type
-  (cubicChar P hgood) 0 ^ 3 = 1

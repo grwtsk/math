@@ -1,5 +1,0 @@
-'PPNCP04.atom_right_derivative_at_entry' depends on axioms: [propext, Classical.choice, Quot.sound]
-'PPNCP04.atom_left_derivative_at_entry' depends on axioms: [propext, Classical.choice, Quot.sound]
-'PPNCP04.atom_derivative_jump' depends on axioms: [propext, Classical.choice, Quot.sound]
-'PPNCP04.signed_atom_derivative_jump' depends on axioms: [propext, Classical.choice, Quot.sound]
-'PPNCP04.atom_not_differentiable_at_entry' depends on axioms: [propext, Classical.choice, Quot.sound]
