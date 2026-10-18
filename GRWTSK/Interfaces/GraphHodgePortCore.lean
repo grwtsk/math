@@ -1,0 +1,49 @@
+/-
+Isolated integration target for the graph/Hodge/K-theory/normalization/operator-port slice.
+
+This file is intentionally not imported by `GRWTSK.lean`. It gives local reviewers one direct
+module target while preserving the existing aggregate replay boundary until this slice passes
+isolated kernel checking.
+-/
+import GRWTSK.Algebra.KTheory.GrothendieckPort
+import GRWTSK.Algebra.KTheory.FormalKK
+import GRWTSK.Algebra.KTheory.GradedFormalKK
+import GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.MoserPorts
+import GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.MoserPortFixtures
+import GRWTSK.Logic.TypedPortNormalization
+import GRWTSK.Logic.ExternalPTSBridge
+import GRWTSK.Logic.PortPureTypeSystem
+import GRWTSK.Logic.PortPureTypeSystemMetatheory
+import GRWTSK.LinearAlgebra.FramedFiberPort
+import GRWTSK.LinearAlgebra.HodgePortConsequences
+import GRWTSK.LinearAlgebra.FinitePositiveHodgeHeat
+import GRWTSK.LinearAlgebra.FinitePositiveHodgeHeatBounds
+import GRWTSK.LinearAlgebra.WeightedDiagonalHodge
+import GRWTSK.LinearAlgebra.FiniteSpectralHeat
+import GRWTSK.LinearAlgebra.FiniteSpectralHeatGap
+import GRWTSK.Geometry.Hodge.FiniteGraphCellular
+import GRWTSK.Geometry.Hodge.FiniteMatrixHodge
+import GRWTSK.Geometry.Hodge.MoserMatrixHodge
+import GRWTSK.Geometry.Hodge.RationalCycleCellular
+import GRWTSK.Geometry.Hodge.RationalKTheoryComparison
+import GRWTSK.Geometry.Ports.FramedSeam
+import GRWTSK.Analysis.Operator.BoundedPortDefect
+import GRWTSK.Analysis.Operator.FramedLiftModes
+import GRWTSK.Analysis.Operator.UnboundedPort
+import GRWTSK.Analysis.Operator.UnboundedPortEquivalence
+
+namespace GRWTSK.Interfaces.GraphHodgePortCore
+
+/-- Source version of this isolated integration surface. -/
+def schemaVersion : String := "GraphHodgePortCore/0.2"
+
+/-- The integration surface is source-only until an external receipt binds the exact branch head. -/
+inductive VerificationState
+  | sourceCommitted
+  | kernelChecked
+  deriving DecidableEq, Repr
+
+/-- Checked-in source must not claim kernel evidence that has not been externally produced. -/
+def currentState : VerificationState := .sourceCommitted
+
+end GRWTSK.Interfaces.GraphHodgePortCore
