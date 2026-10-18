@@ -61,8 +61,8 @@ theorem liftRen_id : liftRen id = id := by
 @[simp]
 theorem rename_id (M : Expr S) : rename id M = M := by
   induction M with
-  | var => rfl
-  | sort => rfl
+  | var n => rfl
+  | sort s => rfl
   | app f a hf ha => simp [rename, hf, ha]
   | lam A b hA hb => simp [rename, hA, hb]
   | pi A B hA hB => simp [rename, hA, hB]
@@ -75,8 +75,8 @@ theorem liftSub_var : liftSub (Expr.var : Nat → Expr S) = Expr.var := by
 @[simp]
 theorem subst_var (M : Expr S) : subst Expr.var M = M := by
   induction M with
-  | var => rfl
-  | sort => rfl
+  | var n => rfl
+  | sort s => rfl
   | app f a hf ha => simp [subst, hf, ha]
   | lam A b hA hb => simp [subst, hA, hb]
   | pi A B hA hB => simp [subst, hA, hB]

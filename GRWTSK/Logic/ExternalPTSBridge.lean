@@ -166,7 +166,12 @@ theorem canonicalStep_hasUniqueNormalForm :
     HasUniqueNormalForm (@CanonicalStep Obj Port a b) := by
   intro e
   refine ⟨e.normalForm, ?_, ?_⟩
-  · exact (canonicalStep_weaklyNormalizing e)
+  · by_cases h : e = e.normalForm
+    · exact ⟨by simpa [h] using
+          (Relation.ReflTransGen.refl :
+            Relation.ReflTransGen CanonicalStep e e),
+        normalForm_normal e⟩
+    · exact ⟨Relation.ReflTransGen.single ⟨h, rfl⟩, normalForm_normal e⟩
   · intro n hn
     exact reachable_normal_eq_normalForm e n hn.1 hn.2
 
