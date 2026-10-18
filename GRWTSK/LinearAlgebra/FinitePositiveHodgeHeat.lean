@@ -67,6 +67,14 @@ theorem positiveDiagonalHodge_laplacian0_apply
   change a i * (a i * x i) = a i ^ 2 * x i
   ring
 
+/-- The degree-one Laplacian has the same diagonal formula in this two-term model. -/
+@[simp]
+theorem positiveDiagonalHodge_laplacian1_apply
+    (a x : ι → ℝ) (i : ι) :
+    (positiveDiagonalHodge a).laplacian1 x i = a i ^ 2 * x i := by
+  change a i * (a i * x i) = a i ^ 2 * x i
+  ring
+
 /-- The concrete quadratic Hodge energy. -/
 def energy (a x : ι → ℝ) : ℝ :=
   dot (diagonal a x) (diagonal a x)
@@ -88,6 +96,30 @@ theorem energy_eq_zero_iff (a x : ι → ℝ) (ha : ∀ i, a i ≠ 0) :
   · intro h
     subst x
     simp [diagonal]
+
+/-- In the positive diagonal model, the harmonic kernel is exactly the kernel of `δ`. -/
+theorem harmonic0_iff_delta_eq_zero (a x : ι → ℝ) :
+    (positiveDiagonalHodge a).IsHarmonic0 x ↔ diagonal a x = 0 := by
+  constructor
+  · intro h
+    unfold TwoTermHodgeData.IsHarmonic0 at h
+    funext i
+    have hi := congrFun h i
+    simp only [positiveDiagonalHodge_laplacian0_apply, Pi.zero_apply] at hi
+    have hi' : a i * (a i * x i) = 0 := by
+      simpa [pow_two, mul_assoc] using hi
+    rcases mul_eq_zero.mp hi' with hai | hax
+    · simp [hai]
+    · exact hax
+  · intro h
+    unfold TwoTermHodgeData.IsHarmonic0
+    funext i
+    have hi := congrFun h i
+    simp only [diagonal_apply, Pi.zero_apply] at hi
+    change a i ^ 2 * x i = 0
+    calc
+      a i ^ 2 * x i = a i * (a i * x i) := by ring
+      _ = 0 := by rw [hi, mul_zero]
 
 /-- With nonzero coefficients the degree-zero harmonic kernel is trivial. -/
 theorem harmonic0_iff_eq_zero (a x : ι → ℝ) (ha : ∀ i, a i ≠ 0) :
@@ -193,5 +225,99 @@ theorem heat_contracts
     _ ≤ 1 * (x i) ^ 2 :=
       mul_le_mul_of_nonneg_right he2 (sq_nonneg (x i))
     _ = x i * x i := by ring
+
+/-- Coordinate projector selected by a Boolean mask. -/
+def maskProjector (mask : ι → Bool) :
+    (ι → ℝ) →ₗ[ℝ] (ι → ℝ) :=
+  diagonal fun i => if mask i = true then 1 else 0
+
+/-- Complementary Boolean mask. -/
+def complementMask (mask : ι → Bool) : ι → Bool :=
+  fun i => Bool.not (mask i)
+
+@[simp]
+theorem maskProjector_apply (mask : ι → Bool) (x : ι → ℝ) (i : ι) :
+    maskProjector mask x i = (if mask i = true then 1 else 0) * x i := rfl
+
+/-- Coordinate masks are idempotent projectors. -/
+theorem maskProjector_idempotent (mask : ι → Bool) :
+    (maskProjector mask).comp (maskProjector mask) = maskProjector mask := by
+  ext x i
+  cases h : mask i <;> simp [maskProjector, diagonal, h]
+
+/-- A mask and its complement sum to the identity. -/
+theorem maskProjector_add_complement (mask : ι → Bool) :
+    maskProjector mask + maskProjector (complementMask mask) = LinearMap.id := by
+  ext x i
+  cases h : mask i <;>
+    simp [maskProjector, complementMask, diagonal, h]
+
+/-- Complementary coordinate sectors are orthogonal for the positive pairing. -/
+theorem mask_complement_orthogonal
+    (mask : ι → Bool) (x y : ι → ℝ) :
+    dot (maskProjector mask x) (maskProjector (complementMask mask) y) = 0 := by
+  unfold dot
+  apply Finset.sum_eq_zero
+  intro i _
+  cases h : mask i <;>
+    simp [maskProjector, complementMask, diagonal, h]
+
+/-- A coordinate mask commutes with every diagonal differential. -/
+theorem maskProjector_delta_comm (a : ι → ℝ) (mask : ι → Bool) :
+    (maskProjector mask).comp (diagonal a) =
+      (diagonal a).comp (maskProjector mask) := by
+  ext x i
+  cases h : mask i <;>
+    simp [maskProjector, diagonal, h] <;> ring
+
+/-- A coordinate mask gives a chain-level Hodge projector for the diagonal model. -/
+def coordinateHodgeProjector (a : ι → ℝ) (mask : ι → Bool) :
+    HodgeProjector (positiveDiagonalHodge a) where
+  p0 := maskProjector mask
+  p1 := maskProjector mask
+  p0_idempotent := maskProjector_idempotent mask
+  p1_idempotent := maskProjector_idempotent mask
+  delta_comm := maskProjector_delta_comm a mask
+  deltaStar_comm := maskProjector_delta_comm a mask
+
+/-- The positive quadratic energy splits exactly across complementary coordinate sectors. -/
+theorem energy_mask_split (a x : ι → ℝ) (mask : ι → Bool) :
+    energy a x =
+      energy a (maskProjector mask x) +
+        energy a (maskProjector (complementMask mask) x) := by
+  unfold energy dot
+  rw [← Finset.sum_add_distrib]
+  apply Finset.sum_congr rfl
+  intro i _
+  cases h : mask i <;>
+    simp [maskProjector, complementMask, diagonal, h] <;> ring
+
+/-- Every coordinate mask commutes with the exact diagonal heat flow. -/
+theorem heat_maskProjector_comm
+    (a : ι → ℝ) (t : ℝ) (mask : ι → Bool) :
+    (heat a t).comp (maskProjector mask) =
+      (maskProjector mask).comp (heat a t) := by
+  ext x i
+  cases h : mask i <;>
+    simp [heat, functionalCalculus, maskProjector, diagonal, h] <;> ring
+
+/-- Heat flow splits through the two complementary coordinate sectors. -/
+theorem heat_mask_split
+    (a x : ι → ℝ) (t : ℝ) (mask : ι → Bool) :
+    heat a t x =
+      heat a t (maskProjector mask x) +
+        heat a t (maskProjector (complementMask mask) x) := by
+  funext i
+  cases h : mask i <;>
+    simp [heat, functionalCalculus, maskProjector, complementMask, diagonal, h] <;> ring
+
+/-- Any diagonal fiber port commutes with the selected diagonal heat functional calculus. -/
+theorem diagonal_heat_comm (a u : ι → ℝ) (t : ℝ) :
+    (diagonal u).comp (heat a t) = (heat a t).comp (diagonal u) := by
+  ext x i
+  change
+    u i * (Real.exp (-t * (a i ^ 2)) * x i) =
+      Real.exp (-t * (a i ^ 2)) * (u i * x i)
+  ring
 
 end GRWTSK.LinearAlgebra.FinitePositiveHodgeHeat
