@@ -36,6 +36,19 @@ def SystemStronglyNormalizing {X : Type u}
     (Legal : X → Prop) (step : X → X → Prop) : Prop :=
   ∀ x, Legal x → StronglyNormalizing step x
 
+/-- A one-step relation has at most one reduct from each source. -/
+def Deterministic {X : Type u} (step : X → X → Prop) : Prop :=
+  ∀ ⦃x y z⦄, step x y → step x z → y = z
+
+/-- Every one-step fork can be joined by finite reduction. -/
+def LocallyConfluent {X : Type u} (step : X → X → Prop) : Prop :=
+  ∀ ⦃x y z⦄, step x y → step x z →
+    ∃ w, Relation.ReflTransGen step y w ∧ Relation.ReflTransGen step z w
+
+/-- Every expression has exactly one reachable normal form. -/
+def HasUniqueNormalForm {X : Type u} (step : X → X → Prop) : Prop :=
+  ∀ x, ∃! n, Relation.ReflTransGen step x n ∧ Normal step n
+
 /-- A proof-carrying weak-to-strong normalization theorem.
 
 The source metadata alone has no logical force; `weakToStrong` must be supplied by an admitted
@@ -86,6 +99,16 @@ theorem normalForm_normal (e : Expr Port a b) :
   intro f hf
   exact hf.1 (Expr.normalForm_idempotent e).symm
 
+/-- Normality for the selected canonicalization is exactly equality with the canonical form. -/
+theorem canonicalStep_normal_iff (e : Expr Port a b) :
+    Normal CanonicalStep e ↔ e = e.normalForm := by
+  constructor
+  · intro h
+    by_contra hne
+    exact h e.normalForm ⟨hne, rfl⟩
+  · intro he f hf
+    exact hf.1 he
+
 /-- Every typed port expression weakly normalizes to its canonical path. -/
 theorem canonicalStep_weaklyNormalizing (e : Expr Port a b) :
     WeaklyNormalizing CanonicalStep e := by
@@ -108,6 +131,44 @@ theorem canonicalStep_stronglyNormalizing (e : Expr Port a b) :
   constructor
   intro g hg
   exact (normalForm_normal e g) hg
+
+/-- Canonicalization has at most one one-step result. -/
+theorem canonicalStep_deterministic :
+    Deterministic (@CanonicalStep Obj Port a b) := by
+  intro e f g hef heg
+  exact hef.2.trans heg.2.symm
+
+/-- Every one-step canonicalization fork joins immediately. -/
+theorem canonicalStep_locallyConfluent :
+    LocallyConfluent (@CanonicalStep Obj Port a b) := by
+  intro e f g hef heg
+  have hfg : f = g := canonicalStep_deterministic hef heg
+  subst g
+  exact ⟨f, Relation.ReflTransGen.refl, Relation.ReflTransGen.refl⟩
+
+/-- Any reachable normal target is the canonical right-associated normal form. -/
+theorem reachable_normal_eq_normalForm
+    (e n : Expr Port a b)
+    (hreach : Relation.ReflTransGen CanonicalStep e n)
+    (hn : Normal CanonicalStep n) :
+    n = e.normalForm := by
+  rcases Relation.ReflTransGen.cases_head hreach with hEq | ⟨c, hec, hcn⟩
+  · subst n
+    exact (canonicalStep_normal_iff e).mp hn
+  · have hc : c = e.normalForm := hec.2
+    subst c
+    rcases Relation.ReflTransGen.cases_head hcn with hEq | ⟨d, hstep, _⟩
+    · exact hEq.symm
+    · exact False.elim ((normalForm_normal e) d hstep)
+
+/-- The selected typed port reduction has a unique reachable normal form. -/
+theorem canonicalStep_hasUniqueNormalForm :
+    HasUniqueNormalForm (@CanonicalStep Obj Port a b) := by
+  intro e
+  refine ⟨e.normalForm, ?_, ?_⟩
+  · exact (canonicalStep_weaklyNormalizing e)
+  · intro n hn
+    exact reachable_normal_eq_normalForm e n hn.1 hn.2
 
 /-- The entire endpoint-fixed typed port language is weakly normalizing. -/
 theorem canonicalSystemWeaklyNormalizing :
