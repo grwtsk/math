@@ -168,6 +168,26 @@ theorem modulesSucceeded_exactly_one_pass {source : SourceIdentity}
       [passingOutcome source moduleName] :=
   succeeded moduleName needed
 
+/-- An explicitly nonvacuous target-level admission condition. The original
+`ModulesSucceeded` is deliberately unchanged: it also makes sense for an
+empty or repeated required list. Here the required-module inventory must be
+nonempty and duplicate-free, and every listed module needs its sole exact-source
+PASS. External source enumeration, Git byte authentication, public-root exposure,
+compiler success and axiom acceptance are all separate obligations. -/
+def NonvacuousModulesSucceeded (source : SourceIdentity) (required : List String)
+    (outcomes : List ModuleTerminalOutcome) : Prop :=
+  required ≠ [] ∧ required.Nodup ∧ ModulesSucceeded source required outcomes
+
+/-- The stronger target condition still uses exactly the low-level per-module
+success rule, without asserting that the required list was externally complete. -/
+theorem nonvacuous_exactly_one_pass {source : SourceIdentity}
+    {required : List String} {outcomes : List ModuleTerminalOutcome}
+    (accepted : NonvacuousModulesSucceeded source required outcomes)
+    {moduleName : String} (needed : moduleName ∈ required) :
+    matchingModuleOutcomes source moduleName outcomes =
+      [passingOutcome source moduleName] :=
+  accepted.2.2 moduleName needed
+
 namespace Fixtures
 
 /-- Symbolic fixture tokens, NOT a checked Git checkout or actual receipt. -/
@@ -246,6 +266,37 @@ theorem one_exact_pass_succeeds :
     simpa using needed
   subst moduleName
   simp [matchingModuleOutcomes, passingOutcome, passResult]
+
+/-- Low-level empty-list success is deliberately preserved as vacuous. -/
+theorem empty_required_low_level_is_vacuous :
+    ModulesSucceeded source [] [] := by
+  intro _ needed
+  cases needed
+
+/-- The low-level predicate does not inspect duplicate required entries. -/
+theorem duplicate_required_low_level_still_succeeds :
+    ModulesSucceeded source [leafModule, leafModule] [passResult] := by
+  intro moduleName needed
+  have single : moduleName ∈ [leafModule] := by simpa using needed
+  exact one_exact_pass_succeeds moduleName single
+
+/-- A single named leaf with one matching PASS satisfies the stronger target. -/
+theorem nonvacuous_one_exact_pass_succeeds :
+    NonvacuousModulesSucceeded source [leafModule] [passResult] := by
+  exact ⟨by simp, by simp, one_exact_pass_succeeds⟩
+
+/-- An empty target is rejected even though low-level success is vacuous. -/
+theorem nonvacuous_empty_required_rejected :
+    ¬ NonvacuousModulesSucceeded source [] [] := by
+  intro accepted
+  exact accepted.1 rfl
+
+/-- Repeating a required module is rejected even with its sole exact PASS. -/
+theorem nonvacuous_duplicate_required_rejected :
+    ¬ NonvacuousModulesSucceeded source [leafModule, leafModule] [passResult] := by
+  intro accepted
+  have duplicated : ¬ ([leafModule, leafModule] : List String).Nodup := by simp
+  exact duplicated accepted.2.1
 
 theorem failed_outcome_is_rejected :
     ¬ ModulesSucceeded source [leafModule] [failedResult] := by
