@@ -372,6 +372,170 @@ theorem empty_inventory_vacuous_but_wrapper_rejected (source : SourceIdentity) :
 
 end FragmentFixtures
 
+/-- Combine an ordered finite list of report fragments without discarding any
+occurrence. This is a pure list fold, not an execution or receipt operation. -/
+def combineModuleFragments (fragments : List (List ModuleTerminalOutcome)) :
+    List ModuleTerminalOutcome :=
+  fragments.foldr (fun fragment rest => fragment ++ rest) []
+
+/-- At one exact supplied source/module key, exactly one fragment occurrence
+supplies the sole PASS and every other occurrence supplies no matching record.
+Recursion over occurrences retains multiplicity even when fragment values are
+identical. Different required keys may select different fragment occurrences. -/
+def ExactlyOnePassingFragment (source : SourceIdentity) (moduleName : String) :
+    List (List ModuleTerminalOutcome) → Prop
+  | [] => False
+  | first :: rest =>
+      (matchingModuleOutcomes source moduleName first =
+          [passingOutcome source moduleName] ∧
+        ∀ fragment : List ModuleTerminalOutcome, fragment ∈ rest →
+          matchingModuleOutcomes source moduleName fragment = []) ∨
+      (matchingModuleOutcomes source moduleName first = [] ∧
+        ExactlyOnePassingFragment source moduleName rest)
+
+/-- A finite combined report has no matching occurrence at a key exactly when
+all fragment occurrences have none. Identity tokens remain unauthenticated. -/
+theorem matchingModuleOutcomes_combine_empty_iff (source : SourceIdentity)
+    (moduleName : String) (fragments : List (List ModuleTerminalOutcome)) :
+    matchingModuleOutcomes source moduleName (combineModuleFragments fragments) = [] ↔
+      ∀ fragment : List ModuleTerminalOutcome, fragment ∈ fragments →
+        matchingModuleOutcomes source moduleName fragment = [] := by
+  have appendEmpty : ∀ (xs ys : List ModuleTerminalOutcome),
+      xs ++ ys = [] ↔ xs = [] ∧ ys = [] := by
+    intro xs ys
+    cases xs with
+    | nil => simp
+    | cons first rest => simp
+  induction fragments with
+  | nil => simp [combineModuleFragments, matchingModuleOutcomes]
+  | cons first rest ih =>
+    change matchingModuleOutcomes source moduleName
+        (first ++ combineModuleFragments rest) = [] ↔
+      ∀ fragment : List ModuleTerminalOutcome, fragment ∈ first :: rest →
+        matchingModuleOutcomes source moduleName fragment = []
+    rw [matchingModuleOutcomes_append, appendEmpty, ih]
+    constructor
+    · intro pieces fragment member
+      have choices : fragment = first ∨ fragment ∈ rest := by
+        simpa using member
+      cases choices with
+      | inl same =>
+        subst fragment
+        exact pieces.1
+      | inr inRest => exact pieces.2 fragment inRest
+    · intro allEmpty
+      exact ⟨allEmpty first (by simp),
+        fun fragment member => allEmpty fragment (by simp [member])⟩
+
+/-- A finite combined report has its sole exact-source PASS at one key exactly
+when the recursive occurrence-sensitive fragment condition holds at that key. -/
+theorem matchingModuleOutcomes_combine_singleton_iff (source : SourceIdentity)
+    (moduleName : String) (fragments : List (List ModuleTerminalOutcome)) :
+    matchingModuleOutcomes source moduleName (combineModuleFragments fragments) =
+        [passingOutcome source moduleName] ↔
+      ExactlyOnePassingFragment source moduleName fragments := by
+  have split : ∀ (xs ys : List ModuleTerminalOutcome) (value : ModuleTerminalOutcome),
+      xs ++ ys = [value] ↔
+        (xs = [value] ∧ ys = []) ∨ (xs = [] ∧ ys = [value]) := by
+    intro xs ys value
+    cases xs with
+    | nil => simp
+    | cons first rest =>
+      cases rest with
+      | nil =>
+        cases ys with
+        | nil => simp
+        | cons second tail => simp
+      | cons second tail => simp
+  induction fragments with
+  | nil =>
+    simp [combineModuleFragments, matchingModuleOutcomes, ExactlyOnePassingFragment]
+  | cons first rest ih =>
+    change matchingModuleOutcomes source moduleName
+        (first ++ combineModuleFragments rest) = [passingOutcome source moduleName] ↔
+      (matchingModuleOutcomes source moduleName first =
+          [passingOutcome source moduleName] ∧
+        ∀ fragment : List ModuleTerminalOutcome, fragment ∈ rest →
+          matchingModuleOutcomes source moduleName fragment = []) ∨
+      (matchingModuleOutcomes source moduleName first = [] ∧
+        ExactlyOnePassingFragment source moduleName rest)
+    rw [matchingModuleOutcomes_append, split,
+      matchingModuleOutcomes_combine_empty_iff, ih]
+
+/-- Exact success of a finite combined report is the per-required-key unique
+PASS fragment condition. The selected fragment may vary with the key. Neither
+this equivalence nor a nonempty inventory establishes external completeness,
+authenticated identities, compiler success, or acceptance of any receipt. -/
+theorem modulesSucceeded_combine_iff (source : SourceIdentity)
+    (required : List String) (fragments : List (List ModuleTerminalOutcome)) :
+    ModulesSucceeded source required (combineModuleFragments fragments) ↔
+      ∀ moduleName : String, moduleName ∈ required →
+        ExactlyOnePassingFragment source moduleName fragments := by
+  constructor
+  · intro succeeded moduleName needed
+    exact (matchingModuleOutcomes_combine_singleton_iff source moduleName fragments).mp
+      (succeeded moduleName needed)
+  · intro fragmented moduleName needed
+    exact (matchingModuleOutcomes_combine_singleton_iff source moduleName fragments).mpr
+      (fragmented moduleName needed)
+
+namespace FiniteFragmentFixtures
+
+/-- Three equal PASS-valued fragment occurrences remain three matching records,
+so their combination fails even for a single required key. This is symbolic. -/
+theorem three_fragment_pass_overlap_rejected
+    (source : SourceIdentity) (moduleName : String) :
+    ¬ ModulesSucceeded source [moduleName]
+      (combineModuleFragments [[passingOutcome source moduleName],
+        [passingOutcome source moduleName], [passingOutcome source moduleName]]) := by
+  intro succeeded
+  have impossible := succeeded moduleName (by simp)
+  simp [combineModuleFragments, matchingModuleOutcomes, passingOutcome] at impossible
+
+/-- If one required key is absent from every fragment occurrence, the finite
+combination cannot supply its sole PASS. No completeness of `required` is claimed. -/
+theorem missing_key_across_fragments_rejected
+    (source : SourceIdentity) (required : List String) (moduleName : String)
+    (fragments : List (List ModuleTerminalOutcome))
+    (needed : moduleName ∈ required)
+    (missing : ∀ fragment : List ModuleTerminalOutcome, fragment ∈ fragments →
+      matchingModuleOutcomes source moduleName fragment = []) :
+    ¬ ModulesSucceeded source required (combineModuleFragments fragments) := by
+  intro succeeded
+  have empty := (matchingModuleOutcomes_combine_empty_iff source moduleName fragments).mpr
+    missing
+  have impossible : ([] : List ModuleTerminalOutcome) =
+      [passingOutcome source moduleName] :=
+    empty.symm.trans (succeeded moduleName needed)
+  cases impossible
+
+/-- Inserting an irrelevant middle fragment preserves both low-level success
+and failure on the supplied required inventory. This pure predicate equivalence
+supplies no whole-receipt permission to accept unrelated records. -/
+theorem irrelevant_middle_fragment_preserves_success
+    (source : SourceIdentity) (required : List String)
+    (left middle right : List ModuleTerminalOutcome)
+    (irrelevant : ∀ moduleName : String, moduleName ∈ required →
+      matchingModuleOutcomes source moduleName middle = []) :
+    ModulesSucceeded source required (combineModuleFragments [left, middle, right]) ↔
+      ModulesSucceeded source required (combineModuleFragments [left, right]) := by
+  have reduceKey : ∀ moduleName : String, moduleName ∈ required →
+      matchingModuleOutcomes source moduleName
+          (combineModuleFragments [left, middle, right]) =
+        matchingModuleOutcomes source moduleName (combineModuleFragments [left, right]) := by
+    intro moduleName needed
+    change matchingModuleOutcomes source moduleName
+        (left ++ (middle ++ (right ++ []))) =
+      matchingModuleOutcomes source moduleName (left ++ (right ++ []))
+    simp only [matchingModuleOutcomes_append, irrelevant moduleName needed, List.nil_append]
+  constructor
+  · intro succeeded moduleName needed
+    exact (reduceKey moduleName needed).symm.trans (succeeded moduleName needed)
+  · intro succeeded moduleName needed
+    exact (reduceKey moduleName needed).trans (succeeded moduleName needed)
+
+end FiniteFragmentFixtures
+
 namespace Fixtures
 
 /-- Symbolic fixture tokens, NOT a checked Git checkout or actual receipt. -/
