@@ -20,10 +20,22 @@ theorem heat_gap_contracts
         ∑ i, Real.exp (-2 * t * (a i ^ 2)) * (x i) ^ 2 := by
       apply Finset.sum_congr rfl
       intro i _
-      simp [heat, functionalCalculus, diagonal]
-      rw [← Real.exp_add]
-      congr 1
-      ring
+      change
+        (Real.exp (-t * (a i ^ 2)) * x i) *
+            (Real.exp (-t * (a i ^ 2)) * x i) =
+          Real.exp (-2 * t * (a i ^ 2)) * (x i) ^ 2
+      calc
+        (Real.exp (-t * (a i ^ 2)) * x i) *
+              (Real.exp (-t * (a i ^ 2)) * x i) =
+            (Real.exp (-t * (a i ^ 2)) *
+              Real.exp (-t * (a i ^ 2))) * (x i) ^ 2 := by
+          ring
+        _ = Real.exp
+              ((-t * (a i ^ 2)) + (-t * (a i ^ 2))) * (x i) ^ 2 := by
+          rw [Real.exp_add]
+        _ = Real.exp (-2 * t * (a i ^ 2)) * (x i) ^ 2 := by
+          congr 2
+          ring
     _ ≤ ∑ i, Real.exp (-2 * t * γ) * (x i) ^ 2 := by
       apply Finset.sum_le_sum
       intro i _
