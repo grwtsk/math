@@ -198,7 +198,8 @@ def lineKAdapter :
 /-- The loss-free fixture returns its input cellular class. -/
 theorem lineKAdapter_cellClass (x : ℚ) :
     lineKAdapter.cellClassOfIntegral x = x := by
-  rfl
+  simp [RationalKCycleCellularAdapter.cellClassOfIntegral,
+    lineKAdapter, rationalIdentity, identityChern, lineComparison]
 
 end Examples
 
