@@ -188,6 +188,54 @@ theorem nonvacuous_exactly_one_pass {source : SourceIdentity}
       [passingOutcome source moduleName] :=
   accepted.2.2 moduleName needed
 
+/-- Matching occurrences distribute over concatenated report fragments. This is
+an identity of pure lists; it authenticates neither fragment nor its tokens. -/
+theorem matchingModuleOutcomes_append (source : SourceIdentity) (moduleName : String)
+    (left right : List ModuleTerminalOutcome) :
+    matchingModuleOutcomes source moduleName (left ++ right) =
+      matchingModuleOutcomes source moduleName left ++
+        matchingModuleOutcomes source moduleName right := by
+  simp only [matchingModuleOutcomes, List.filter_append]
+
+/-- Exact success of two joined fragments requires, at each required key, a
+sole PASS in exactly one fragment and no matching occurrence in the other.
+This permits a partitioned inventory; it never treats two full reports as one
+occurrence or asserts that the supplied required inventory is complete. -/
+theorem modulesSucceeded_append_iff (source : SourceIdentity) (required : List String)
+    (left right : List ModuleTerminalOutcome) :
+    ModulesSucceeded source required (left ++ right) ↔
+      ∀ moduleName : String, moduleName ∈ required →
+        (matchingModuleOutcomes source moduleName left =
+            [passingOutcome source moduleName] ∧
+          matchingModuleOutcomes source moduleName right = []) ∨
+        (matchingModuleOutcomes source moduleName left = [] ∧
+          matchingModuleOutcomes source moduleName right =
+            [passingOutcome source moduleName]) := by
+  have split : ∀ (xs ys : List ModuleTerminalOutcome) (value : ModuleTerminalOutcome),
+      xs ++ ys = [value] ↔
+        (xs = [value] ∧ ys = []) ∨ (xs = [] ∧ ys = [value]) := by
+    intro xs ys value
+    cases xs with
+    | nil => simp
+    | cons first rest =>
+      cases rest with
+      | nil =>
+        cases ys with
+        | nil => simp
+        | cons second tail => simp
+      | cons second tail => simp
+  constructor
+  · intro succeeded moduleName needed
+    apply (split (matchingModuleOutcomes source moduleName left)
+      (matchingModuleOutcomes source moduleName right)
+      (passingOutcome source moduleName)).mp
+    simpa only [matchingModuleOutcomes_append] using succeeded moduleName needed
+  · intro fragmented moduleName needed
+    rw [matchingModuleOutcomes_append]
+    exact (split (matchingModuleOutcomes source moduleName left)
+      (matchingModuleOutcomes source moduleName right)
+      (passingOutcome source moduleName)).mpr (fragmented moduleName needed)
+
 namespace Fixtures
 
 /-- Symbolic fixture tokens, NOT a checked Git checkout or actual receipt. -/
