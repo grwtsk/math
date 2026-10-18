@@ -26,16 +26,18 @@ import GRWTSK.Geometry.Hodge.FiniteMatrixHodge
 import GRWTSK.Geometry.Hodge.MoserMatrixHodge
 import GRWTSK.Geometry.Hodge.RationalCycleCellular
 import GRWTSK.Geometry.Hodge.RationalKTheoryComparison
+import GRWTSK.Geometry.Hodge.MoserRationalCellularComparison
 import GRWTSK.Geometry.Ports.FramedSeam
 import GRWTSK.Analysis.Operator.BoundedPortDefect
 import GRWTSK.Analysis.Operator.FramedLiftModes
 import GRWTSK.Analysis.Operator.UnboundedPort
 import GRWTSK.Analysis.Operator.UnboundedPortEquivalence
+import GRWTSK.Analysis.Operator.UnboundedPortAnalytic
 
 namespace GRWTSK.Interfaces.GraphHodgePortCore
 
 /-- Source version of this isolated integration surface. -/
-def schemaVersion : String := "GraphHodgePortCore/0.2"
+def schemaVersion : String := "GraphHodgePortCore/0.3"
 
 /-- The integration surface is source-only until an external receipt binds the exact branch head. -/
 inductive VerificationState
