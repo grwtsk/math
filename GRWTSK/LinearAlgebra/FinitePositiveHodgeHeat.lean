@@ -64,7 +64,7 @@ theorem diagonal_adjoint (a x y : ι → ℝ) :
 theorem positiveDiagonalHodge_laplacian0_apply
     (a x : ι → ℝ) (i : ι) :
     (positiveDiagonalHodge a).laplacian0 x i = a i ^ 2 * x i := by
-  simp [positiveDiagonalHodge, TwoTermHodgeData.laplacian0, LinearMap.comp_apply]
+  change a i * (a i * x i) = a i ^ 2 * x i
   ring
 
 /-- The concrete quadratic Hodge energy. -/

@@ -141,7 +141,9 @@ def theory : BivariantTheory Obj where
   Corr A B := K A → K B
   identity _ := id
   product f g := g ∘ f
-  identity_product f := rfl
+  identity_product f := by
+    funext x
+    rfl
   product_identity f := by
     funext x
     rfl
