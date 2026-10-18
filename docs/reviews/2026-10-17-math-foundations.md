@@ -38,3 +38,19 @@ An external local Python enumerator tested all 4,608 bipartite compatibility gra
 - Adopt source/rights lineage and accepted clean external replay receipts before any issue closure or mathematical claim promotion.
 
 **Review disposition:** `CANDIDATE_REVIEWABLE / IMPLEMENTED_UNREPLAYED`. An external reviewer may reject or revise these candidate sources; this is not a proof of RH, ABC or accepted completion of #88, #89 or #165.
+
+## Additional independent finite algebraic leaf: #113
+
+The same draft branch now includes `GRWTSK/Analysis/Geometry/QuadraticHermiteDifference.lean`, **NOT_RUN**, with a monomial-basis quadratic source, literal first-jet formula, exact identity
+
+```
+  (p(s+h) - p(s-h)) / (2*h) = p'(s),  h != 0,
+```
+
+an orientation-reversal identity, and the explicit error-transport bound
+
+```
+  norm((e_plus-e_minus)/(2*h)) <= (norm(e_plus)+norm(e_minus))/(2*norm(h)).
+```
+
+An independent Python exact-rational enumeration checked 2,500 polynomial/coalescence examples; this is **not a Lean proof**. The residual conditioning diverges as the node separation tends to zero. Neither a genuine four-symbol Hermite decoder, its rank/condition number, nor a transport theorem from the *actual* (piecewise nondifferentiable) global arithmetic screw source is supplied. A native Hermite value/one-sided jet must remain separate from a sampled centered quotient at an arithmetic event. #113 stays open under the F06 hold.
