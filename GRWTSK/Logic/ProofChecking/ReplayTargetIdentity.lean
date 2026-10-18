@@ -120,6 +120,54 @@ theorem root_build_cannot_hide_omission (rootBuilt : Bool)
   intro report
   exact omitted (report.2 moduleName needed)
 
+/-- Terminal module statuses remain explicit. Missing or unavailable execution
+is not represented by a successful Boolean or by an absent field. -/
+inductive ModuleTerminalStatus where
+  | pass
+  | failed
+  | notRun
+  | unavailable
+  deriving DecidableEq, Repr
+
+/-- A terminal module outcome is bound to the entire supplied source identity
+and one exact module name. These tokens remain unauthenticated pure data. -/
+structure ModuleTerminalOutcome where
+  source : SourceIdentity
+  moduleName : String
+  status : ModuleTerminalStatus
+  deriving DecidableEq, Repr
+
+/-- The only successful terminal outcome at one exact source/module identity. -/
+def passingOutcome (source : SourceIdentity) (moduleName : String) :
+    ModuleTerminalOutcome where
+  source := source
+  moduleName := moduleName
+  status := .pass
+
+/-- Retain every occurrence at the exact source/module identity. Filtering a
+list rather than using set membership makes duplicate records observable. -/
+def matchingModuleOutcomes (source : SourceIdentity) (moduleName : String)
+    (outcomes : List ModuleTerminalOutcome) : List ModuleTerminalOutcome :=
+  outcomes.filter fun outcome =>
+    decide (outcome.source = source ∧ outcome.moduleName = moduleName)
+
+/-- Every required module must have exactly one outcome occurrence at the exact
+source identity, and that sole occurrence must be `pass`. Results at other
+identities or for unrequired modules cannot supply this obligation. -/
+def ModulesSucceeded (source : SourceIdentity) (required : List String)
+    (outcomes : List ModuleTerminalOutcome) : Prop :=
+  ∀ moduleName : String, moduleName ∈ required →
+    matchingModuleOutcomes source moduleName outcomes =
+      [passingOutcome source moduleName]
+
+theorem modulesSucceeded_exactly_one_pass {source : SourceIdentity}
+    {required : List String} {outcomes : List ModuleTerminalOutcome}
+    (succeeded : ModulesSucceeded source required outcomes)
+    {moduleName : String} (needed : moduleName ∈ required) :
+    matchingModuleOutcomes source moduleName outcomes =
+      [passingOutcome source moduleName] :=
+  succeeded moduleName needed
+
 namespace Fixtures
 
 /-- Symbolic fixture tokens, NOT a checked Git checkout or actual receipt. -/
@@ -163,6 +211,87 @@ theorem root_only_is_not_leaf_coverage :
     ¬ (true = true ∧ ModulesCovered ["GRWTSK.Leaf"] []) :=
   root_build_cannot_hide_omission true ["GRWTSK.Leaf"] [] "GRWTSK.Leaf"
     (by simp) (by simp)
+
+/-- Terminal outcome fixtures are symbolic records, not execution evidence. -/
+def leafModule : String := "GRWTSK.Leaf"
+
+def passResult : ModuleTerminalOutcome :=
+  passingOutcome source leafModule
+
+def failedResult : ModuleTerminalOutcome where
+  source := source
+  moduleName := leafModule
+  status := .failed
+
+def notRunResult : ModuleTerminalOutcome where
+  source := source
+  moduleName := leafModule
+  status := .notRun
+
+def unavailableResult : ModuleTerminalOutcome where
+  source := source
+  moduleName := leafModule
+  status := .unavailable
+
+def differentSource : SourceIdentity :=
+  { source with revision := "fixture-revision-B" }
+
+def wrongIdentityPass : ModuleTerminalOutcome :=
+  passingOutcome differentSource leafModule
+
+theorem one_exact_pass_succeeds :
+    ModulesSucceeded source [leafModule] [passResult] := by
+  intro moduleName needed
+  have nameEq : moduleName = leafModule := by
+    simpa using needed
+  subst moduleName
+  simp [matchingModuleOutcomes, passingOutcome, passResult]
+
+theorem failed_outcome_is_rejected :
+    ¬ ModulesSucceeded source [leafModule] [failedResult] := by
+  intro succeeded
+  have h := succeeded leafModule (by simp)
+  simp [matchingModuleOutcomes, passingOutcome, failedResult] at h
+
+theorem not_run_outcome_is_rejected :
+    ¬ ModulesSucceeded source [leafModule] [notRunResult] := by
+  intro succeeded
+  have h := succeeded leafModule (by simp)
+  simp [matchingModuleOutcomes, passingOutcome, notRunResult] at h
+
+theorem unavailable_outcome_is_rejected :
+    ¬ ModulesSucceeded source [leafModule] [unavailableResult] := by
+  intro succeeded
+  have h := succeeded leafModule (by simp)
+  simp [matchingModuleOutcomes, passingOutcome, unavailableResult] at h
+
+theorem duplicate_passes_are_rejected :
+    ¬ ModulesSucceeded source [leafModule] [passResult, passResult] := by
+  intro succeeded
+  have h := succeeded leafModule (by simp)
+  simp [matchingModuleOutcomes, passingOutcome, passResult] at h
+
+theorem conflicting_outcomes_are_rejected :
+    ¬ ModulesSucceeded source [leafModule] [passResult, failedResult] := by
+  intro succeeded
+  have h := succeeded leafModule (by simp)
+  simp [matchingModuleOutcomes, passingOutcome, passResult, failedResult] at h
+
+theorem different_source_identity : differentSource ≠ source := by
+  decide
+
+theorem wrong_source_identity_is_rejected :
+    ¬ ModulesSucceeded source [leafModule] [wrongIdentityPass] := by
+  intro succeeded
+  have h := succeeded leafModule (by simp)
+  simp [matchingModuleOutcomes, wrongIdentityPass, passingOutcome,
+    different_source_identity] at h
+
+theorem root_only_terminal_success_is_rejected :
+    ¬ (true = true ∧ ModulesSucceeded source [leafModule] []) := by
+  intro reported
+  have h := reported.2 leafModule (by simp)
+  simp [matchingModuleOutcomes, passingOutcome] at h
 
 end Fixtures
 
