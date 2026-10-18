@@ -34,5 +34,7 @@ Operational scripts, caches, attempt directories, controller state, schedules, a
 
 - [`spectral-descent-v1.toml`](spectral-descent-v1.toml) describes the source-bound target corresponding to the spectral-descent baseline tracked by GitHub issue #100.
 - [`graph-hodge-port-core-v0.6.toml`](graph-hodge-port-core-v0.6.toml) describes the isolated graph-port, finite Hodge/heat, rational K/Hodge comparison, PTS, KK, optional-adapter, and bounded/unbounded operator slice tracked by issues #1, #36, #39, #40, #120, #159, #176, and #177.
+- [`openai-pts-weak-to-strong-v1.toml`](openai-pts-weak-to-strong-v1.toml) specifies an external clean replay and exact local-alignment review for `OAI.PureTypeSystem.weak_implies_strong`, including the Lean 4.34.1 versus local Lean 4.33.0 boundary.
+- [`openai-cm-rational-hodge-v1.toml`](openai-cm-rational-hodge-v1.toml) specifies source, statement, dependency, citation, and local-interface review for the October 2026 CM rational-Hodge manuscript without treating manuscript status as a local formal proof.
 
 The target manifests are intentionally non-self-referential. A Noeaaeue or local-review binding supplies the pinned repository commit, tree, and blob identities when it executes a target.
