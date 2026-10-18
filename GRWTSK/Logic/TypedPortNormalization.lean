@@ -2,7 +2,7 @@ import Mathlib
 
 namespace GRWTSK.Logic.TypedPortNormalization
 
-universe u v w
+universe u v w v₂ v₃
 
 variable {Obj : Type u}
 
@@ -167,6 +167,76 @@ theorem eval_normalForm (S : Semantics Port) {a b : Obj}
     eval S e.normalForm x = eval S e x := by
   rw [normalForm, NormalPath.eval_toExpr]
   exact eval_normalize S e x
+
+end Expr
+
+namespace Expr
+
+variable {Port : Obj → Obj → Type v}
+variable {Port₂ : Obj → Obj → Type v₂}
+variable {Port₃ : Obj → Obj → Type v₃}
+
+/-- Endpoint-preserving substitution of atomic ports by typed port expressions. -/
+def bind (σ : ∀ {a b : Obj}, Port a b → Expr Port₂ a b)
+    {a b : Obj} : Expr Port a b → Expr Port₂ a b
+  | .id a => .id a
+  | .atom p => σ p
+  | .comp p q => .comp (bind σ p) (bind σ q)
+
+/-- The identity atomic substitution. -/
+def atomSubstitution : ∀ {a b : Obj}, Port a b → Expr Port a b :=
+  fun {_ _} p => .atom p
+
+@[simp]
+theorem bind_atomSubstitution {a b : Obj} (e : Expr Port a b) :
+    bind atomSubstitution e = e := by
+  induction e with
+  | id => rfl
+  | atom => rfl
+  | comp p q hp hq => simp [bind, hp, hq]
+
+/-- Typed atomic substitution is associative. -/
+theorem bind_bind
+    (τ : ∀ {a b : Obj}, Port₂ a b → Expr Port₃ a b)
+    (σ : ∀ {a b : Obj}, Port a b → Expr Port₂ a b)
+    {a b : Obj} (e : Expr Port a b) :
+    bind τ (bind σ e) = bind (fun p => bind τ (σ p)) e := by
+  induction e with
+  | id => rfl
+  | atom => rfl
+  | comp p q hp hq => simp [bind, hp, hq]
+
+end Expr
+
+namespace Semantics
+
+variable {Port : Obj → Obj → Type v}
+variable {Port₂ : Obj → Obj → Type v₂}
+
+/-- Pull a semantics back along an endpoint-preserving atomic substitution. -/
+def substitute (S : Semantics Port₂)
+    (σ : ∀ {a b : Obj}, Port a b → Expr Port₂ a b) :
+    Semantics Port where
+  Carrier := S.Carrier
+  map p := Expr.eval S (σ p)
+
+end Semantics
+
+namespace Expr
+
+variable {Port : Obj → Obj → Type v}
+variable {Port₂ : Obj → Obj → Type v₂}
+
+/-- Evaluation commutes with endpoint-preserving atomic substitution. -/
+theorem eval_bind
+    (S : Semantics Port₂)
+    (σ : ∀ {a b : Obj}, Port a b → Expr Port₂ a b)
+    {a b : Obj} (e : Expr Port a b) (x : S.Carrier a) :
+    eval S (bind σ e) x = eval (Semantics.substitute S σ) e x := by
+  induction e generalizing x with
+  | id => rfl
+  | atom => rfl
+  | comp p q hp hq => simp [bind, eval, Semantics.substitute, hp, hq]
 
 end Expr
 
