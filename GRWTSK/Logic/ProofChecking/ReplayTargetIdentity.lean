@@ -536,6 +536,112 @@ theorem irrelevant_middle_fragment_preserves_success
 
 end FiniteFragmentFixtures
 
+/-- The finite fragment fold retains exactly the ordered flattened outcomes.
+This bridge is only about pure lists, not source or receipt authentication. -/
+theorem combineModuleFragments_eq_flatten
+    (fragments : List (List ModuleTerminalOutcome)) :
+    combineModuleFragments fragments = fragments.flatten := by
+  induction fragments with
+  | nil => rfl
+  | cons first rest ih =>
+    change first ++ combineModuleFragments rest = first ++ rest.flatten
+    rw [ih]
+
+/-- Permuting fragment occurrences permutes matching outcome occurrences; it
+never deletes a repeated fragment or silently deduplicates a report. -/
+theorem matchingModuleOutcomes_combine_perm (source : SourceIdentity)
+    (moduleName : String) {left right : List (List ModuleTerminalOutcome)}
+    (permuted : left.Perm right) :
+    (matchingModuleOutcomes source moduleName (combineModuleFragments left)).Perm
+      (matchingModuleOutcomes source moduleName (combineModuleFragments right)) := by
+  simpa only [matchingModuleOutcomes, combineModuleFragments_eq_flatten] using
+    (List.Perm.filter
+      (fun outcome : ModuleTerminalOutcome =>
+        decide (outcome.source = source ∧ outcome.moduleName = moduleName))
+      permuted.flatten)
+
+/-- The unique-PASS fragment condition is insensitive to occurrence order.
+The contributing fragment is key-specific and repeated equal values still count. -/
+theorem exactlyOnePassingFragment_perm (source : SourceIdentity)
+    (moduleName : String) {left right : List (List ModuleTerminalOutcome)}
+    (permuted : left.Perm right) :
+    ExactlyOnePassingFragment source moduleName left ↔
+      ExactlyOnePassingFragment source moduleName right := by
+  have outcomesPerm := matchingModuleOutcomes_combine_perm source moduleName permuted
+  constructor
+  · intro exactOne
+    have sole := (matchingModuleOutcomes_combine_singleton_iff source moduleName left).mpr
+      exactOne
+    exact (matchingModuleOutcomes_combine_singleton_iff source moduleName right).mp
+      ((outcomesPerm.symm.trans (List.Perm.of_eq sole)).eq_singleton)
+  · intro exactOne
+    have sole := (matchingModuleOutcomes_combine_singleton_iff source moduleName right).mpr
+      exactOne
+    exact (matchingModuleOutcomes_combine_singleton_iff source moduleName left).mp
+      ((outcomesPerm.trans (List.Perm.of_eq sole)).eq_singleton)
+
+/-- Arrival order of finitely many fragments does not change per-required-key
+success. Permutation preserves occurrences; mere set membership does not suffice.
+No source completeness, compiler outcome or receipt acceptance is asserted. -/
+theorem modulesSucceeded_combine_perm (source : SourceIdentity)
+    (required : List String) {left right : List (List ModuleTerminalOutcome)}
+    (permuted : left.Perm right) :
+    ModulesSucceeded source required (combineModuleFragments left) ↔
+      ModulesSucceeded source required (combineModuleFragments right) := by
+  rw [modulesSucceeded_combine_iff, modulesSucceeded_combine_iff]
+  constructor
+  · intro fragmented moduleName needed
+    exact (exactlyOnePassingFragment_perm source moduleName permuted).mp
+      (fragmented moduleName needed)
+  · intro fragmented moduleName needed
+    exact (exactlyOnePassingFragment_perm source moduleName permuted).mpr
+      (fragmented moduleName needed)
+
+/-- The existing nonempty, duplicate-free target wrapper is preserved by the
+same fragment permutation; its inventory hypotheses are not weakened. -/
+theorem nonvacuousModulesSucceeded_combine_perm (source : SourceIdentity)
+    (required : List String) {left right : List (List ModuleTerminalOutcome)}
+    (permuted : left.Perm right) :
+    NonvacuousModulesSucceeded source required (combineModuleFragments left) ↔
+      NonvacuousModulesSucceeded source required (combineModuleFragments right) := by
+  constructor
+  · intro accepted
+    exact ⟨accepted.1, accepted.2.1,
+      (modulesSucceeded_combine_perm source required permuted).mp accepted.2.2⟩
+  · intro accepted
+    exact ⟨accepted.1, accepted.2.1,
+      (modulesSucceeded_combine_perm source required permuted).mpr accepted.2.2⟩
+
+namespace FragmentPermutationFixtures
+
+/-- Equal fragment-value membership is weaker than permutation. Repeating the
+sole PASS-valued fragment keeps its set of values but changes success to failure.
+This is a symbolic predicate fixture, not a checked execution report. -/
+theorem fragment_membership_does_not_preserve_success
+    (source : SourceIdentity) (moduleName : String) :
+    (∀ fragment : List ModuleTerminalOutcome,
+      fragment ∈ [[passingOutcome source moduleName]] ↔
+        fragment ∈ [[passingOutcome source moduleName],
+          [passingOutcome source moduleName]]) ∧
+      ModulesSucceeded source [moduleName]
+        (combineModuleFragments [[passingOutcome source moduleName]]) ∧
+      ¬ ModulesSucceeded source [moduleName]
+        (combineModuleFragments [[passingOutcome source moduleName],
+          [passingOutcome source moduleName]]) := by
+  constructor
+  · intro fragment
+    simp
+  · constructor
+    · intro key needed
+      have same : key = moduleName := by simpa using needed
+      subst key
+      simp [combineModuleFragments, matchingModuleOutcomes, passingOutcome]
+    · intro succeeded
+      have impossible := succeeded moduleName (by simp)
+      simp [combineModuleFragments, matchingModuleOutcomes, passingOutcome] at impossible
+
+end FragmentPermutationFixtures
+
 namespace Fixtures
 
 /-- Symbolic fixture tokens, NOT a checked Git checkout or actual receipt. -/
