@@ -8,6 +8,7 @@ isolated kernel checking.
 import GRWTSK.Algebra.KTheory.GrothendieckPort
 import GRWTSK.Algebra.KTheory.FormalKK
 import GRWTSK.Algebra.KTheory.GradedFormalKK
+import GRWTSK.Algebra.KTheory.FiniteFredholmCycle
 import GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.MoserPorts
 import GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.MoserPortFixtures
 import GRWTSK.Logic.TypedPortNormalization
@@ -42,7 +43,7 @@ import GRWTSK.Interfaces.OptionalAdapterGate
 namespace GRWTSK.Interfaces.GraphHodgePortCore
 
 /-- Source version of this isolated integration surface. -/
-def schemaVersion : String := "GraphHodgePortCore/0.6"
+def schemaVersion : String := "GraphHodgePortCore/0.7"
 
 /-- The integration surface is source-only until an external receipt binds the exact branch head. -/
 inductive VerificationState
