@@ -16,6 +16,7 @@ import GRWTSK.Logic.PortPureTypeSystem
 import GRWTSK.Logic.PortPureTypeSystemMetatheory
 import GRWTSK.Logic.PortPureTypeSystemReduction
 import GRWTSK.Logic.PortPureTypeSystemTyping
+import GRWTSK.Logic.PortPureTypeSystemSubjectReduction
 import GRWTSK.LinearAlgebra.FramedFiberPort
 import GRWTSK.LinearAlgebra.HodgePortConsequences
 import GRWTSK.LinearAlgebra.FinitePositiveHodgeHeat
@@ -40,7 +41,7 @@ import GRWTSK.Analysis.Operator.UnboundedPortAnalytic
 namespace GRWTSK.Interfaces.GraphHodgePortCore
 
 /-- Source version of this isolated integration surface. -/
-def schemaVersion : String := "GraphHodgePortCore/0.4"
+def schemaVersion : String := "GraphHodgePortCore/0.5"
 
 /-- The integration surface is source-only until an external receipt binds the exact branch head. -/
 inductive VerificationState
