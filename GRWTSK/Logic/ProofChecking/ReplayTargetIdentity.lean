@@ -236,6 +236,142 @@ theorem modulesSucceeded_append_iff (source : SourceIdentity) (required : List S
       (matchingModuleOutcomes source moduleName right)
       (passingOutcome source moduleName)).mpr (fragmented moduleName needed)
 
+/-- Any matching occurrence in both fragments blocks combined success,
+regardless of either occurrence's status. Two complete reports cannot be
+collapsed into a single occurrence at one required exact source/module key. -/
+theorem matching_records_in_both_fragments_block_success
+    {source : SourceIdentity} {required : List String}
+    {left right : List ModuleTerminalOutcome} {moduleName : String}
+    (needed : moduleName ∈ required)
+    (leftPresent : matchingModuleOutcomes source moduleName left ≠ [])
+    (rightPresent : matchingModuleOutcomes source moduleName right ≠ []) :
+    ¬ ModulesSucceeded source required (left ++ right) := by
+  intro succeeded
+  have fragmented := (modulesSucceeded_append_iff source required left right).mp
+    succeeded moduleName needed
+  cases fragmented with
+  | inl leftPass => exact rightPresent leftPass.2
+  | inr rightPass => exact leftPresent rightPass.1
+
+/-- A fragment with no matching occurrence at any required key changes neither
+success nor failure on that inventory. This does not authenticate its records
+or assert that a whole-receipt policy must ignore out-of-scope records. -/
+theorem irrelevant_append_preserves_success (source : SourceIdentity)
+    (required : List String) (left right : List ModuleTerminalOutcome)
+    (irrelevant : ∀ moduleName : String, moduleName ∈ required →
+      matchingModuleOutcomes source moduleName right = []) :
+    ModulesSucceeded source required (left ++ right) ↔
+      ModulesSucceeded source required left := by
+  constructor
+  · intro succeeded moduleName needed
+    have combined := succeeded moduleName needed
+    simpa only [matchingModuleOutcomes_append, irrelevant moduleName needed,
+      List.append_nil] using combined
+  · intro succeeded moduleName needed
+    simpa only [matchingModuleOutcomes_append, irrelevant moduleName needed,
+      List.append_nil] using succeeded moduleName needed
+
+/-- Fragment order does not change exact per-module success. Multiplicity is
+still observable: matching records in both fragments block combined success. -/
+theorem modulesSucceeded_append_comm (source : SourceIdentity)
+    (required : List String) (left right : List ModuleTerminalOutcome) :
+    ModulesSucceeded source required (left ++ right) ↔
+      ModulesSucceeded source required (right ++ left) := by
+  have reorder : ∀ (xs ys : List ModuleTerminalOutcome),
+      ModulesSucceeded source required (xs ++ ys) →
+        ModulesSucceeded source required (ys ++ xs) := by
+    intro xs ys succeeded
+    apply (modulesSucceeded_append_iff source required ys xs).mpr
+    intro moduleName needed
+    have fragmented := (modulesSucceeded_append_iff source required xs ys).mp
+      succeeded moduleName needed
+    cases fragmented with
+    | inl leftPass => exact Or.inr ⟨leftPass.2, leftPass.1⟩
+    | inr rightPass => exact Or.inl ⟨rightPass.2, rightPass.1⟩
+  exact ⟨reorder left right, reorder right left⟩
+
+namespace FragmentFixtures
+
+/-- Two individually complete one-key PASS fragments fail after concatenation.
+This is a pure predicate fixture, not a compiler or receipt acceptance test. -/
+theorem duplicate_complete_pass_fragments_rejected
+    (source : SourceIdentity) (moduleName : String) :
+    ¬ ModulesSucceeded source [moduleName]
+      ([passingOutcome source moduleName] ++ [passingOutcome source moduleName]) := by
+  apply matching_records_in_both_fragments_block_success (moduleName := moduleName)
+  · simp
+  · simp [matchingModuleOutcomes, passingOutcome]
+  · simp [matchingModuleOutcomes, passingOutcome]
+
+/-- A matching failure alongside a PASS cannot be discarded by selecting only
+an existential successful record. Both matching occurrences are retained. -/
+theorem pass_and_matching_failure_fragments_rejected
+    (source : SourceIdentity) (moduleName : String) :
+    ¬ ModulesSucceeded source [moduleName]
+      ([passingOutcome source moduleName] ++
+        [{ source := source, moduleName := moduleName, status := .failed }]) := by
+  apply matching_records_in_both_fragments_block_success (moduleName := moduleName)
+  · simp
+  · simp [matchingModuleOutcomes, passingOutcome]
+  · simp [matchingModuleOutcomes, passingOutcome]
+
+/-- A PASS at a provably different supplied source cannot supply the required
+exact-source occurrence. Token inequality is a hypothesis, not authentication. -/
+theorem different_source_fragment_alone_rejected
+    (source otherSource : SourceIdentity) (moduleName : String)
+    (differentSource : otherSource ≠ source) :
+    ¬ ModulesSucceeded source [moduleName]
+      ([passingOutcome otherSource moduleName] ++ []) := by
+  intro succeeded
+  have impossible := succeeded moduleName (by simp)
+  simpa [matchingModuleOutcomes, passingOutcome, differentSource] using impossible
+
+/-- Distinct required keys may genuinely be partitioned between fragments,
+with one exact-source PASS for each key across the joined list. -/
+theorem partitioned_two_key_target_succeeds
+    (source : SourceIdentity) (first second : String) (distinct : first ≠ second) :
+    ModulesSucceeded source [first, second]
+      ([passingOutcome source first] ++ [passingOutcome source second]) := by
+  apply (modulesSucceeded_append_iff source [first, second]
+    [passingOutcome source first] [passingOutcome source second]).mpr
+  intro moduleName needed
+  have choices : moduleName = first ∨ moduleName = second := by
+    simpa using needed
+  cases choices with
+  | inl firstKey =>
+    subst moduleName
+    exact Or.inl ⟨by simp [matchingModuleOutcomes, passingOutcome],
+      by simp [matchingModuleOutcomes, passingOutcome, Ne.symm distinct]⟩
+  | inr secondKey =>
+    subst moduleName
+    exact Or.inr ⟨by simp [matchingModuleOutcomes, passingOutcome, distinct],
+      by simp [matchingModuleOutcomes, passingOutcome]⟩
+
+/-- A failure at another key and a PASS at another source change no required-key
+success. This gives no success claim for either out-of-scope identity. -/
+theorem irrelevant_fragment_preserves_left_success
+    (source otherSource : SourceIdentity) (first second : String)
+    (distinct : first ≠ second) (differentSource : otherSource ≠ source) :
+    ModulesSucceeded source [first]
+      ([passingOutcome source first] ++
+        [{ source := source, moduleName := second, status := .failed },
+          passingOutcome otherSource first]) ↔
+      ModulesSucceeded source [first] [passingOutcome source first] := by
+  apply irrelevant_append_preserves_success
+  intro moduleName needed
+  have key : moduleName = first := by simpa using needed
+  subst moduleName
+  simp [matchingModuleOutcomes, passingOutcome, Ne.symm distinct, differentSource]
+
+/-- Empty required inventory remains vacuously successful at the low-level
+relation while the existing nonvacuous wrapper rejects it. -/
+theorem empty_inventory_vacuous_but_wrapper_rejected (source : SourceIdentity) :
+    ModulesSucceeded source [] ([] ++ []) ∧
+      ¬ NonvacuousModulesSucceeded source [] ([] ++ []) := by
+  simp [ModulesSucceeded, NonvacuousModulesSucceeded]
+
+end FragmentFixtures
+
 namespace Fixtures
 
 /-- Symbolic fixture tokens, NOT a checked Git checkout or actual receipt. -/
