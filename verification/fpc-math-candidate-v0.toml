@@ -1,0 +1,30 @@
+# Candidate source-only replay intent, NOT the accepted spectral-descent target.
+# F06 coordinated integration hold: do not run Lean/Lake/native inspector.
+schema = "grwtsk.math.candidate-target/0"
+status = "DRAFT_SOURCE_ONLY_NOT_RUN"
+repository = "grwtsk/math"
+baseline = "990688d77a474827ff6069e596ae42872fbf6673"
+issues = [89, 165]
+modules = [
+  "GRWTSK.Logic.Inference.DependentPortCut",
+  "GRWTSK.Combinatorics.Matching.CyclicDutyDeficiency"
+]
+accepted_evidence = false
+required_replay_controls = [
+  "Clean source-bound Lean elaboration and declaration extraction",
+  "Exact kernel and transitive axiom/sorryAx audit",
+  "No source drift, missing imports, or changed semantic targets",
+  "Heterogeneous context adapter only used with proof of directional implication",
+  "Four checkpoint types remain separate from nine duty types",
+  "Nine simultaneous roles vs four people retains deficiency >= 5",
+  "Source/covering/residual and all unresolved obligations preserved"
+]
+nonclaims = [
+  "No Lean toolchain invocation",
+  "No accepted proof receipt",
+  "No Hall maximum-deficiency theorem",
+  "No general balanced-tag minimum theorem",
+  "No cyclic liveness or safety theorem",
+  "No Riemann Hypothesis or ABC proof",
+  "No human authority or publication admission"
+]
