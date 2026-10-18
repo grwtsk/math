@@ -81,7 +81,9 @@ def identity (A : UnboundedOperator R E) : Port A A where
 /-- The identity port is an exact unbounded intertwiner. -/
 theorem identity_intertwines (A : UnboundedOperator R E) :
     (identity A).Intertwines := by
-  simp [Intertwines, identity, domainMap, LinearMap.comp_apply]
+  unfold Intertwines
+  ext x
+  rfl
 
 /-- Compose domain-aware ports while retaining the exact intermediate domain. -/
 def comp (Q : Port B C) (P : Port A B) : Port A C where
