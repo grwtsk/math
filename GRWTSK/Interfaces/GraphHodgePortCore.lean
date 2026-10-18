@@ -37,11 +37,12 @@ import GRWTSK.Analysis.Operator.FramedLiftModes
 import GRWTSK.Analysis.Operator.UnboundedPort
 import GRWTSK.Analysis.Operator.UnboundedPortEquivalence
 import GRWTSK.Analysis.Operator.UnboundedPortAnalytic
+import GRWTSK.Interfaces.OptionalAdapterGate
 
 namespace GRWTSK.Interfaces.GraphHodgePortCore
 
 /-- Source version of this isolated integration surface. -/
-def schemaVersion : String := "GraphHodgePortCore/0.5"
+def schemaVersion : String := "GraphHodgePortCore/0.6"
 
 /-- The integration surface is source-only until an external receipt binds the exact branch head. -/
 inductive VerificationState
