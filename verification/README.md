@@ -34,6 +34,7 @@ Operational scripts, caches, attempt directories, controller state, schedules, a
 
 - [`spectral-descent-v1.toml`](spectral-descent-v1.toml) describes the source-bound target corresponding to the spectral-descent baseline tracked by GitHub issue #100.
 - [`graph-hodge-port-core-v1.5.toml`](graph-hodge-port-core-v1.5.toml) is the current isolated graph-port, finite Hodge/heat/resolvent, exact rational-Hodge and H⁰ transport, context-indexed PTS admission, formal KK, bounded compact-defect cycles, unbounded domain/commutator/compact-resolvent cycles, optional-adapter plans, and operator-port target tracked by issues #1, #36, #39, #40, #120, #159, #176, and #177. Earlier versions remain historical source snapshots and are not aliases for `v1.5`.
+- [`portfiber-holomorphy-core-v0.1.toml`](portfiber-holomorphy-core-v0.1.toml) describes the isolated dependent port-fiber, continuity, complex holomorphy, topological-ring, simultaneous-local-proof, and RH-open-disposition interface tracked by issue #230 and its RH application path.
 - [`openai-pts-weak-to-strong-v1.toml`](openai-pts-weak-to-strong-v1.toml) specifies an external clean replay and exact local-alignment review for `OAI.PureTypeSystem.weak_implies_strong`, including the Lean 4.34.1 versus local Lean 4.33.0 boundary.
 - [`openai-cm-rational-hodge-v1.toml`](openai-cm-rational-hodge-v1.toml) specifies source, statement, dependency, citation, and local-interface review for the October 2026 CM rational-Hodge manuscript without treating manuscript status as a local formal proof.
 
