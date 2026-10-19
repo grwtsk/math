@@ -36,10 +36,15 @@ import GRWTSK.Interfaces.PortFiberEvaluationTopology
 import GRWTSK.Interfaces.PortFiberOpenCoverDescent
 import GRWTSK.Interfaces.PortFiberIndexedCoverDescent
 
+import GRWTSK.Analysis.Complex.HolomorphicLineCocycle
+import GRWTSK.Analysis.Complex.HolomorphicLineSections
+import GRWTSK.Analysis.Operator.HolomorphicLinePort
+import GRWTSK.Interfaces.PortFiberLineBundle
+
 namespace GRWTSK.Interfaces.PortFiberHolomorphyCore
 
 /-- Source version of this isolated interface. -/
-def schemaVersion : String := "PortFiberHolomorphyCore/0.13"
+def schemaVersion : String := "PortFiberHolomorphyCore/0.14"
 
 /-- Source state remains distinct from kernel-checked state. -/
 inductive VerificationState
