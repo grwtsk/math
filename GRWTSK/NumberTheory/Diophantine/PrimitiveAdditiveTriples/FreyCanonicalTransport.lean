@@ -105,8 +105,7 @@ theorem finiteEquiv_natural (f : R →+* S) (a b r : R) (N : ℕ)
       jetMap f a b r N (finiteEquiv a b r N u) := by
   obtain ⟨c, rfl⟩ := Ideal.Quotient.mk_surjective u
   obtain ⟨p, rfl⟩ := Ideal.Quotient.mk_surjective c
-  rw [powerMap_mk, coordinateBaseChange_mk, finiteEquiv_mk, finiteEquiv_mk]
-  rfl
+  rw [powerMap_mk, coordinateBaseChange_mk, finiteEquiv_mk, finiteEquiv_mk] <;> rfl
 
 /-- A compatible family out of the canonical source completion at ALL exponents. -/
 def stageMap (f : R →+* S) (a b r : R) (n : ℕ) :
@@ -166,8 +165,7 @@ theorem canonicalMap_id (a b r : R) :
   intro u
   apply (adicLimitEquiv a b r).injective
   change toLimit a b r (canonicalMap (RingHom.id R) a b r u) = toLimit a b r u
-  rw [toLimit_natural, FreyCompletionBaseChange.mapLimit_id]
-  rfl
+  rw [toLimit_natural, FreyCompletionBaseChange.mapLimit_id] <;> rfl
 
 /-- Composition retains coefficient maps and the marked source parameters. -/
 theorem canonicalMap_comp (f : R →+* S) (g : S →+* U) (a b r : R) :
