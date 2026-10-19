@@ -61,7 +61,7 @@ example : (Tree.leaf (0 : Fin 4)).check quarterDisks
     (⟨1, -1, -1, 1⟩ : Rectangle) = false := by
   norm_num [Tree.check, Rectangle.WellFormed]
 
--- Wrong leaf selection loses a quadrant, even though the tree still has four leaves.
+-- Wrong leaf selection loses a half, even though both recursive children are present.
 example : (Tree.splitReal 0 (.leaf 0) (.leaf 0)).check quarterDisks unitBox = false := by
   norm_num [Tree.check, quarterDisks, unitBox, Rectangle.WellFormed,
     Rectangle.west, Rectangle.east, Disk.ContainsBox, Disk.realReach, Disk.imagReach]
