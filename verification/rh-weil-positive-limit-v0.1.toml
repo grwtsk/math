@@ -1,0 +1,96 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-weil-positive-limit-v0.1"
+owner_repository = "grwtsk/math"
+issue = 215
+parent_issue = 197
+criterion_issue = 219
+parent_pull_request = 246
+root_module = "GRWTSK"
+build_target = "GRWTSK"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+operational_receipt_is_external = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.WeilPositiveLimit"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann"
+
+[[hostile_controls]]
+id = "reject-non-gram-stage"
+description = "Every positive stage must be an actual complex inner-product Gram form produced by one linear map."
+
+[[hostile_controls]]
+id = "reject-test-dependent-stage-family"
+description = "One stage map is selected for all test vectors at each index; maps fitted after choosing a witness are outside the interface."
+
+[[hostile_controls]]
+id = "reject-source-binding-drift"
+description = "The stage family, test space and target form carry exact source/revision/normalization identities."
+
+[[hostile_controls]]
+id = "reject-target-positivity-by-definition"
+description = "The independent WeilHermitianForm contains no positivity field; positivity is derived from the limit."
+
+[[hostile_controls]]
+id = "reject-finite-test-positivity"
+description = "The direct limit and error profiles quantify over every vector in the exact admitted test space."
+
+[[hostile_controls]]
+id = "reject-tautological-error"
+description = "Every comparison error must be nonnegative, dominate the exact diagonal difference, and tend to zero pointwise."
+
+[[hostile_controls]]
+id = "reject-diagonal-as-polarized"
+description = "Diagonal and polarized convergence are separate records; only polarized convergence is projected to diagonal convergence."
+
+[[hostile_controls]]
+id = "reject-convergence-mode-upgrade"
+description = "The module proves pointwise form convergence only and does not claim weak, strong, operator-norm, trace-norm, determinant, local, or sofic convergence."
+
+[[hostile_controls]]
+id = "reject-negative-limit"
+description = "A negative target diagonal is proved incompatible with convergence of nonnegative Gram diagonals."
+
+[[hostile_controls]]
+id = "reject-approximate-positivity-without-vanishing-error"
+description = "The approximately-positive variant requires the lower error itself to tend to zero."
+
+[[hostile_controls]]
+id = "reject-limit-as-rh"
+description = "Canonical RH is exposed only after an exact WeilPositivityImpliesRH record is supplied."
+
+[[hostile_controls]]
+id = "reject-interface-as-convergence-supplier"
+description = "This module constructs no arithmetic/elliptic stage family and proves no repository comparison error tends to zero."
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+
+[nonclaims]
+claims = [
+  "construction of the arithmetic or elliptic maps A_n",
+  "proof that any complete comparison residual tends to zero",
+  "definition of the final classical zeta Weil form",
+  "import or proof of the classical Weil criterion",
+  "operator-norm, trace-norm, determinant, local or sofic convergence",
+  "a concrete sufficient or equivalent Weil atlas chart",
+  "Riemann hypothesis",
+  "a replay receipt produced by this static manifest"
+]
