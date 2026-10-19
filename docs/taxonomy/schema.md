@@ -1,8 +1,10 @@
-# Local application profile 0.1.0
+# Local application profile 0.1.1
 
 [Taxonomy](index.md) · [Decisions](decisions/index.md) · [Validation](validation.md)
 
 This is a static specification, not a validated schema implementation or a standards-conformance certificate. Vocabulary release, schema version, external editions and repository commits are independent identifiers.
+
+The [direct concept-edge amendment](edge-profile.md) specifies complete facet metadata, endpoint profiles, accepted-endpoint gating and bounded 0.1.0 compatibility. Its source-bound Noe comparison prevents treating the existing decimal-address PMD validator as a ready-made implementation of this concept graph. The amendment is part of this static profile, not independent acceptance or an operational release.
 
 ## Canonical authoring
 
@@ -16,7 +18,7 @@ Allowed record families: `subject_concept`, `object_concept`, `structure_concept
 
 ## Typed graph
 
-`subjectSpecialization` has subject-concept endpoints within the local scheme. It means subject specialization, not membership of mathematical objects. Multiple justified parents are permitted. Only accepted direct edges enter the subject DAG. Its acyclicity is a local rule; SKOS itself does not universally forbid hierarchical cycles. A parent's division criterion describes the selected child grouping; directories do not supply that criterion.
+`subjectSpecialization` has subject-concept endpoints within the local scheme. It means subject specialization, not membership of mathematical objects. Multiple justified parents are permitted. Only accepted direct edges whose source and target records are also accepted enter the declared-accepted subject DAG; production eligibility additionally requires the separate review and release gates in the edge amendment. Its acyclicity is a local rule; SKOS itself does not universally forbid hierarchical cycles. A parent's division criterion describes the selected child grouping; directories do not supply that criterion.
 
 `instanceOf`, `partOf`, `usesMethod`, `appliedIn`, `studiesObject`, `implementedBy` and `dependsOnArtifact` have their own endpoint profiles. In particular an application of a technique is not automatically subject specialization. `facet` links select independently combinable objects, structures, methods, application domains or resource kinds. Facet categories are navigation collections, not interchangeable mathematical disciplines.
 
