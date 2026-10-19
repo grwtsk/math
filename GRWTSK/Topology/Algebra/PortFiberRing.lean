@@ -36,6 +36,12 @@ def comp {A B C : P.Obj} {p : P.Port A B} {q : P.Port B C}
       _ = P.map q (P.map p x) := hq.map_eq _
       _ = P.map (P.comp p q) x := (P.map_comp p q x).symm
 
+/-- Ring-homomorphism certification as a composable port property. -/
+def composableProperty : GRWTSK.Topology.PortFiber.ComposableProperty P where
+  Holds := fun p => RingCertificate P p
+  identity := RingCertificate.identity P
+  comp := fun hp hq => RingCertificate.comp P hp hq
+
 end RingCertificate
 
 variable [∀ A : P.Obj, TopologicalSpace (P.Fiber A)]
@@ -73,6 +79,12 @@ def comp {A B C : P.Obj} {p : P.Port A B} {q : P.Port B C}
     rw [hmap]
     exact hq.continuous.comp hp.continuous
 
+/-- Topological-ring certification as a composable port property. -/
+def composableProperty : GRWTSK.Topology.PortFiber.ComposableProperty P where
+  Holds := fun p => TopologicalRingCertificate P p
+  identity := TopologicalRingCertificate.identity P
+  comp := fun hp hq => TopologicalRingCertificate.comp P hp hq
+
 end TopologicalRingCertificate
 
 namespace Fixtures
@@ -95,6 +107,20 @@ def complexDoubleIdentityCertificate :
         (complexFunctionFiber.identity PUnit.unit)) :=
   TopologicalRingCertificate.comp complexFunctionFiber
     complexIdentityCertificate complexIdentityCertificate
+
+/-- Two identity atoms as a certified topological-ring path. -/
+def complexIdentityPath :
+    GRWTSK.Topology.PortFiber.CertifiedPath complexFunctionFiber
+      (TopologicalRingCertificate.composableProperty complexFunctionFiber)
+      PUnit.unit PUnit.unit :=
+  .cons (complexFunctionFiber.identity PUnit.unit) complexIdentityCertificate
+    (.cons (complexFunctionFiber.identity PUnit.unit) complexIdentityCertificate
+      (.nil PUnit.unit))
+
+/-- The composite of the whole path retains one exact topological-ring certificate. -/
+theorem complexIdentityPath_certified :
+    TopologicalRingCertificate complexFunctionFiber complexIdentityPath.composite :=
+  complexIdentityPath.certified
 
 end Fixtures
 
