@@ -10,11 +10,13 @@ import GRWTSK.Algebra.KTheory.FormalKK
 import GRWTSK.Algebra.KTheory.FormalKKEquivalences
 import GRWTSK.Algebra.KTheory.GradedFormalKK
 import GRWTSK.Algebra.KTheory.FiniteFredholmCycle
+import GRWTSK.Algebra.KTheory.FiniteFredholmBivariant
 import GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.MoserPorts
 import GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.MoserPortFixtures
 import GRWTSK.Logic.TypedPortNormalization
 import GRWTSK.Logic.ExternalPTSBridge
 import GRWTSK.Logic.ExternalPTSSystemTransport
+import GRWTSK.Logic.CanonicalPortWeakToStrong
 import GRWTSK.Logic.PortPureTypeSystem
 import GRWTSK.Logic.PortPureTypeSystemMetatheory
 import GRWTSK.Logic.PortPureTypeSystemReduction
@@ -34,6 +36,7 @@ import GRWTSK.Geometry.Hodge.FiniteMatrixHodge
 import GRWTSK.Geometry.Hodge.MoserMatrixHodge
 import GRWTSK.Geometry.Hodge.MoserColorHodgeSeparation
 import GRWTSK.Geometry.Hodge.RationalCycleCellular
+import GRWTSK.Geometry.Hodge.GlobalRationalHodgeStatement
 import GRWTSK.Geometry.Hodge.FiniteEdgeRealization
 import GRWTSK.Geometry.Hodge.FiniteEdgeScalarExtension
 import GRWTSK.Geometry.Hodge.RationalKTheoryComparison
@@ -52,7 +55,7 @@ import GRWTSK.Interfaces.OptionalAdapterComposition
 namespace GRWTSK.Interfaces.GraphHodgePortCore
 
 /-- Source version of this isolated integration surface. -/
-def schemaVersion : String := "GraphHodgePortCore/1.0"
+def schemaVersion : String := "GraphHodgePortCore/1.1"
 
 /-- The integration surface is source-only until an external receipt binds the exact branch head. -/
 inductive VerificationState
