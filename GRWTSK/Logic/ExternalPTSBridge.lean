@@ -114,9 +114,7 @@ theorem canonicalStep_weaklyNormalizing (e : Expr Port a b) :
     WeaklyNormalizing CanonicalStep e := by
   refine ⟨e.normalForm, ?_, normalForm_normal e⟩
   by_cases h : e = e.normalForm
-  · simpa [h] using
-      (Relation.ReflTransGen.refl :
-        Relation.ReflTransGen CanonicalStep e e)
+  · rw [← h]
   · exact Relation.ReflTransGen.single ⟨h, rfl⟩
 
 /-- Every canonicalization sequence for the typed port language terminates.
@@ -130,7 +128,7 @@ theorem canonicalStep_stronglyNormalizing (e : Expr Port a b) :
   rcases hf with ⟨_, rfl⟩
   constructor
   intro g hg
-  exact (normalForm_normal e g) hg
+  exact False.elim ((normalForm_normal e g) hg)
 
 /-- Canonicalization has at most one one-step result. -/
 theorem canonicalStep_deterministic :
@@ -167,10 +165,7 @@ theorem canonicalStep_hasUniqueNormalForm :
   intro e
   refine ⟨e.normalForm, ?_, ?_⟩
   · by_cases h : e = e.normalForm
-    · exact ⟨by simpa [h] using
-          (Relation.ReflTransGen.refl :
-            Relation.ReflTransGen CanonicalStep e e),
-        normalForm_normal e⟩
+    · exact ⟨by rw [← h], normalForm_normal e⟩
     · exact ⟨Relation.ReflTransGen.single ⟨h, rfl⟩, normalForm_normal e⟩
   · intro n hn
     exact reachable_normal_eq_normalForm e n hn.1 hn.2

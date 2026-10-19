@@ -85,7 +85,7 @@ theorem coordinateComplement_diagonal_comm (mask : ι → Bool) (a : ι → ℝ)
     simp [coordinateComplement, diagonal, LinearMap.comp_apply, h]
 
 /-- The Boolean coordinate split defines a concrete Hodge projector. -/
-def coordinateHodgeProjector (a : ι → ℝ) (mask : ι → Bool) :
+def coordinateSplitHodgeProjector (a : ι → ℝ) (mask : ι → Bool) :
     HodgeProjector (positiveDiagonalHodge a) where
   p0 := coordinateProjector mask
   p1 := coordinateProjector mask

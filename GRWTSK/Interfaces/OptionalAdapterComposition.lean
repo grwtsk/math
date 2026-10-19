@@ -22,12 +22,12 @@ variable {Key : Type u} [DecidableEq Key]
 variable {L M N : Ledger Key}
 
 /-- The set of residual keys selected by a proof-carrying adapter plan. -/
-def Touches : AcceptedPlan L M → Key → Prop
+def Touches {L M : Ledger Key} : AcceptedPlan L M → Key → Prop
   | .nil _, _ => False
   | .cons A rest, key => key = A.change.key ∨ rest.Touches key
 
 /-- Concatenate two accepted plans through their exact intermediate ledger. -/
-def append : AcceptedPlan L M → AcceptedPlan M N → AcceptedPlan L N
+def append {L M N : Ledger Key} : AcceptedPlan L M → AcceptedPlan M N → AcceptedPlan L N
   | .nil _, q => q
   | .cons A rest, q => .cons A (append rest q)
 
@@ -64,9 +64,7 @@ theorem apply_eq_of_not_touches
       have hrest : ¬ rest.Touches key := by
         intro ht
         exact h (Or.inr ht)
-      calc
-        _ = A.apply key := ih hrest
-        _ = L key := A.apply_of_ne hne
+      exact (ih hrest).trans (A.apply_of_ne hne)
 
 /-- Structural absence is preserved at every key untouched by an accepted plan. -/
 theorem preserves_none_of_not_touches

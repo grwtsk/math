@@ -94,7 +94,10 @@ variable {H : RationalHodgeData Cycle HodgeClass}
 variable {A : RationalTwoTermHodgeData D₀ D₁}
 
 /-- A genuine cohomology-level comparison: both algebraic cycles and Hodge classes land in the
-actual degree-zero cocycle space of the selected finite complex. -/
+actual degree-zero cocycle space of the selected finite complex.
+
+The commuting maps may both be zero. This record does not require an equivalence or
+surjectivity onto all degree-zero cohomology classes. -/
 structure CycleHZeroComparison
     (H : RationalHodgeData Cycle HodgeClass)
     (A : RationalTwoTermHodgeData D₀ D₁) where
@@ -167,7 +170,7 @@ def constantCocycleEquiv : ℚ ≃ₗ[ℚ] Cocycle0 edgeHodge where
     rcases x with ⟨⟨a, b⟩, h⟩
     have hab : a = b := by
       change edgeDelta (a, b) = 0 at h
-      simpa [edgeDelta] using h
+      exact sub_eq_zero.mp h
     simp [constantCocycle, hab]
   map_add' s t := by
     apply Subtype.ext
@@ -184,8 +187,9 @@ theorem edge_harmonic_iff_cocycle (x : ℚ × ℚ) :
     unfold TwoTermHodgeData.IsHarmonic0 at h
     change edgeDeltaStar (edgeDelta x) = 0 at h
     have hfst := congrArg Prod.fst h
-    simpa [edgeDeltaStar] using hfst
+    simpa [edgeHodge, edgeDeltaStar] using hfst
   · intro h
+    change edgeDelta x = 0 at h
     unfold TwoTermHodgeData.IsHarmonic0
     change edgeDeltaStar (edgeDelta x) = 0
     rw [h]

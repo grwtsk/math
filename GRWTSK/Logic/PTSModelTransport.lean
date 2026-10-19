@@ -72,7 +72,7 @@ theorem systemWeak_forward
     simpa [Γ, x] using hy
   have hw := hM Γ hΓ x hx
   have hforward := E.toReductionEquiv.weaklyNormalizing_forward hw
-  simpa [x] using hforward
+  simpa [toReductionEquiv, x] using hforward
 
 /-- System-wide strong normalization reflects backward through exact model alignment. -/
 theorem systemStrong_backward
@@ -90,7 +90,7 @@ end ModelEquiv
 /-- A source-bound proof of weak-to-strong normalization for one exact model. -/
 structure SourceBoundWeakToStrong (M : Model.{u, v}) where
   source : TheoremSource
-  theorem : M.SystemWeaklyNormalizing → M.SystemStronglyNormalizing
+  «theorem» : M.SystemWeaklyNormalizing → M.SystemStronglyNormalizing
 
 namespace SourceBoundWeakToStrong
 
@@ -101,28 +101,28 @@ def transport
     (B : SourceBoundWeakToStrong N) (E : ModelEquiv M N) :
     SourceBoundWeakToStrong M where
   source := B.source
-  theorem := by
+  «theorem» := by
     intro hM
-    exact E.systemStrong_backward (B.theorem (E.systemWeak_forward hM))
+    exact E.systemStrong_backward (B.«theorem» (E.systemWeak_forward hM))
 
 end SourceBoundWeakToStrong
 
 /-- Context-indexed model underlying the local annotated PTS implementation. -/
-def portModel {Sort : Type u} (P : Specification Sort) : Model.{u, u} where
-  Expr := Expr Sort
-  Context := List (Expr Sort)
+def portModel {«Sort» : Type u} (P : Specification «Sort») : Model.{u, u} where
+  Expr := Expr «Sort»
+  Context := List (Expr «Sort»)
   valid := ValidContext P
   legal := Legal P
   step := Beta
 
 @[simp]
-theorem portModel_systemWeak_iff {Sort : Type u} (P : Specification Sort) :
+theorem portModel_systemWeak_iff {«Sort» : Type u} (P : Specification «Sort») :
     Model.SystemWeaklyNormalizing (portModel P) ↔
       GRWTSK.Logic.PortPureTypeSystem.SystemWeaklyNormalizing P :=
   Iff.rfl
 
 @[simp]
-theorem portModel_systemStrong_iff {Sort : Type u} (P : Specification Sort) :
+theorem portModel_systemStrong_iff {«Sort» : Type u} (P : Specification «Sort») :
     Model.SystemStronglyNormalizing (portModel P) ↔
       GRWTSK.Logic.PortPureTypeSystem.SystemStronglyNormalizing P :=
   Iff.rfl
@@ -130,13 +130,13 @@ theorem portModel_systemStrong_iff {Sort : Type u} (P : Specification Sort) :
 /-- Complete external admission packet for the local PTS: an external proof and an exact alignment
 of contexts, expressions, legality, and beta reduction. -/
 structure ExternalAdmission
-    {Sort : Type u} (P : Specification Sort) (N : Model.{u', v'}) where
+    {«Sort» : Type u} (P : Specification «Sort») (N : Model.{u', v'}) where
   externalTheorem : SourceBoundWeakToStrong N
   alignment : ModelEquiv (portModel P) N
 
 namespace ExternalAdmission
 
-variable {Sort : Type u} {P : Specification Sort} {N : Model.{u', v'}}
+variable {«Sort» : Type u} {P : Specification «Sort»} {N : Model.{u', v'}}
 
 /-- Transport the external theorem to the exact local context-indexed PTS model. -/
 def localTheorem (A : ExternalAdmission P N) :
@@ -147,9 +147,9 @@ def localTheorem (A : ExternalAdmission P N) :
 def toWeakToStrongAdmission (A : ExternalAdmission P N) :
     GRWTSK.Logic.PortPureTypeSystem.WeakToStrongAdmission P where
   source := A.localTheorem.source
-  theorem := by
+  «theorem» := by
     intro h
-    exact A.localTheorem.theorem h
+    exact A.localTheorem.«theorem» h
 
 /-- Once the exact packet exists, local system-wide weak normalization implies local
 system-wide strong normalization. -/
@@ -157,7 +157,7 @@ theorem strong_of_weak
     (A : ExternalAdmission P N)
     (h : GRWTSK.Logic.PortPureTypeSystem.SystemWeaklyNormalizing P) :
     GRWTSK.Logic.PortPureTypeSystem.SystemStronglyNormalizing P :=
-  A.toWeakToStrongAdmission.theorem h
+  A.toWeakToStrongAdmission.«theorem» h
 
 end ExternalAdmission
 

@@ -18,7 +18,7 @@ structure Index where
 structure Family (I : Type u) where
   cycle : I → ModuleCat.{v} ℚ
   hodgeClass : I → ModuleCat.{w} ℚ
-  cycleClass : ∀ i, cycle i ⟶ hodgeClass i
+  cycleClass : ∀ i, cycle i →ₗ[ℚ] hodgeClass i
   varietyIdentity : I → String
   codimension : I → ℕ
   realization : I → String
@@ -30,12 +30,12 @@ variable {I : Type u}
 /-- The global rational-Hodge statement is simultaneous surjectivity of every exact
 cycle-class map in the indexed family. -/
 def GlobalStatement (F : Family I) : Prop :=
-  ∀ i, Function.Surjective (F.cycleClass i).hom
+  ∀ i, Function.Surjective (F.cycleClass i)
 
 /-- The local rational-Hodge interface selected by one exact index. -/
 def localData (F : Family I) (i : I) :
     RationalHodgeData (F.cycle i) (F.hodgeClass i) where
-  cycleClass := (F.cycleClass i).hom
+  cycleClass := F.cycleClass i
 
 /-- Global surjectivity specializes to the exact local cycle-class map. -/
 theorem local_surjective
@@ -84,7 +84,7 @@ namespace Fixtures
 def identityFamily : Family Unit where
   cycle _ := ModuleCat.of ℚ ℚ
   hodgeClass _ := ModuleCat.of ℚ ℚ
-  cycleClass _ := 𝟙 _
+  cycleClass _ := LinearMap.id
   varietyIdentity _ := "one-case rational fixture"
   codimension _ := 0
   realization _ := "identity Betti fixture"
@@ -92,7 +92,7 @@ def identityFamily : Family Unit where
 /-- The one-case identity family satisfies the global statement. -/
 theorem identityFamily_global : identityFamily.GlobalStatement := by
   intro i h
-  exact ⟨h, by simp [identityFamily]⟩
+  exact ⟨h, rfl⟩
 
 /-- Source-bound global proof object for the identity family. -/
 def identityGlobalTheorem : SourceBoundTheorem identityFamily where
@@ -105,7 +105,7 @@ def identityGlobalTheorem : SourceBoundTheorem identityFamily where
 
 /-- Global specialization recovers the exact local identity theorem. -/
 theorem identity_local_surjective :
-    ((identityGlobalTheorem.localTheorem ()).surjective) :=
+    (identityFamily.localData ()).IsSurjective :=
   (identityGlobalTheorem.localTheorem ()).surjective
 
 end Fixtures

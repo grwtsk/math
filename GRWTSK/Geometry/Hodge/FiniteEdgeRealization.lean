@@ -26,7 +26,7 @@ def edgeDelta : (ℚ × ℚ) →ₗ[ℚ] ℚ where
 def edgeDeltaStar : ℚ →ₗ[ℚ] (ℚ × ℚ) where
   toFun t := (t, -t)
   map_add' s t := by
-    ext <;> simp
+    ext <;> simp [add_comm]
   map_smul' r t := by
     ext <;> simp
 
@@ -91,7 +91,7 @@ def pointEdgeHarmonicRealization :
 
 /-- Complete finite cycle-to-cellular adapter for the two-vertex edge complex. -/
 def pointEdgeAdapter :
-    RationalHodgeCellularAdapter pointCycleClass (ℚ × ℚ) ℚ edgeHodge where
+    RationalHodgeCellularAdapter (CellClass := ℚ) pointCycleClass (ℚ × ℚ) ℚ edgeHodge where
   globalTheorem := pointSourceTheorem
   comparison := pointEdgeComparison
   harmonicRealization := pointEdgeHarmonicRealization

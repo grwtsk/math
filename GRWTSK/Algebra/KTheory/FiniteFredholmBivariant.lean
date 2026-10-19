@@ -55,13 +55,11 @@ def toKKEquivalence (P : UnitaryEquivalence X Y) :
   forward := P
   backward := P.symm
   forward_backward := by
-    ext
-    simp [unitaryTheory, UnitaryEquivalence.trans,
-      UnitaryEquivalence.symm, UnitaryEquivalence.refl, P.star_mul]
+    apply UnitaryEquivalence.ext
+    exact P.star_mul
   backward_forward := by
-    ext
-    simp [unitaryTheory, UnitaryEquivalence.trans,
-      UnitaryEquivalence.symm, UnitaryEquivalence.refl, P.mul_star]
+    apply UnitaryEquivalence.ext
+    exact P.mul_star
 
 /-- Composition of concrete unitary cycle equivalences agrees with formal KK-equivalence
 composition in the finite groupoid. -/
@@ -73,8 +71,7 @@ theorem toKKEquivalence_trans
   apply KKEquivalence.ext
   · rfl
   · apply UnitaryEquivalence.ext
-    simp [UnitaryEquivalence.trans, UnitaryEquivalence.symm,
-      Matrix.conjTranspose_mul]
+    exact Matrix.conjTranspose_mul Q.unitary P.unitary
 
 end UnitaryEquivalence
 

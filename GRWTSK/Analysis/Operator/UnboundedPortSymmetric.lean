@@ -3,6 +3,8 @@ import GRWTSK.Analysis.Operator.UnboundedPortEquivalence
 
 namespace GRWTSK.Analysis.Operator.UnboundedPort
 
+open scoped InnerProductSpace
+
 universe v w
 
 variable {E : Type v} {F : Type w}
@@ -35,7 +37,7 @@ def symm (P : OrthogonalFramedEquivalence A B) :
     OrthogonalFramedEquivalence B A where
   toFramedEquivalence := P.toFramedEquivalence.symm
   inner_map y z := by
-    simpa using
+    simpa [FramedEquivalence.symm] using
       (P.inner_map
         (P.toFramedEquivalence.frame.symm y)
         (P.toFramedEquivalence.frame.symm z)).symm

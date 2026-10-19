@@ -168,7 +168,7 @@ variable {A : RationalTwoTermHodgeData C₀ C₁}
 /-- A global rational-Hodge theorem plus an actual cellular comparison produces an
 algebraic cycle and a harmonic cellular representative of every selected class. -/
 theorem exists_cycle_and_harmonic
-    (G : RationalHodgeCellularAdapter H C₀ C₁ A) (h : HodgeClass) :
+    (G : RationalHodgeCellularAdapter (CellClass := CellClass) H C₀ C₁ A) (h : HodgeClass) :
     ∃ z : Cycle,
       H.cycleClass z = h ∧
       G.comparison.cycleToCell z = G.comparison.hodgeToCell h ∧
@@ -218,7 +218,7 @@ def lineHarmonicRealization :
     simp [TwoTermHodgeData.IsHarmonic0, TwoTermHodgeData.laplacian0, lineZeroHodge]
 
 def lineAdapter :
-    RationalHodgeCellularAdapter lineHodgeData ℚ ℚ lineZeroHodge where
+    RationalHodgeCellularAdapter (CellClass := ℚ) lineHodgeData ℚ ℚ lineZeroHodge where
   globalTheorem := lineSourceTheorem
   comparison := lineComparison
   harmonicRealization := lineHarmonicRealization

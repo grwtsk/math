@@ -64,7 +64,6 @@ theorem heat_gap_contracts
     _ = Real.exp (-2 * t * γ) *
         (∑ i, M.frame x i * M.frame x i) := by
       rw [Finset.mul_sum]
-      congr 1
       apply Finset.sum_congr rfl
       intro i _
       ring

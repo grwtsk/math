@@ -1,4 +1,4 @@
-import Mathlib.Topology.Algebra.Module.Equiv.Prod
+import Mathlib.Topology.Algebra.Module.Equiv
 import GRWTSK.Analysis.Operator.UnboundedPortEquivalence
 
 namespace GRWTSK.Analysis.Operator.UnboundedPort
@@ -70,7 +70,7 @@ theorem dense_domain_iff (P : ContinuousFramedEquivalence A B) :
 
 /-- Product continuous linear equivalence acting on operator graphs. -/
 def pairFrame (P : ContinuousFramedEquivalence A B) :
-    E × E ≃L[𝕜] F × F :=
+    (E × E) ≃L[𝕜] (F × F) :=
   P.frame.prodCongr P.frame
 
 /-- A continuous frame transports the exact graph in both coordinates. -/
@@ -82,7 +82,7 @@ theorem image_graphSet (P : ContinuousFramedEquivalence A B) :
     refine ⟨P.toAlgebraic.domainEquiv x, ?_⟩
     apply Prod.ext
     · rfl
-    · exact (P.toAlgebraic.intertwines_apply x).symm
+    · exact P.toAlgebraic.intertwines_apply x
   · rintro ⟨y, rfl⟩
     let x : A.domain := P.toAlgebraic.domainEquiv.symm y
     have hy : P.toAlgebraic.domainEquiv x = y :=
@@ -90,7 +90,8 @@ theorem image_graphSet (P : ContinuousFramedEquivalence A B) :
     refine ⟨(x.1, A.apply x), ⟨x, rfl⟩, ?_⟩
     apply Prod.ext
     · exact congrArg Subtype.val hy
-    · simpa [hy] using P.toAlgebraic.intertwines_apply x
+    · change P.toAlgebraic.frame (A.apply x) = B.apply y
+      simpa only [hy] using P.toAlgebraic.intertwines_apply x
 
 /-- Closed-graph status is equivalent under a continuous framed operator equivalence. -/
 theorem closed_graph_iff (P : ContinuousFramedEquivalence A B) :

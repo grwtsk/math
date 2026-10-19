@@ -59,7 +59,7 @@ theorem backward_forward_even (E : Equivalence T A B) :
 end Equivalence
 
 /-- Endpoint-typed product path with accumulated formal parity. -/
-inductive ProductPath {Obj : Type u} (T : Theory Obj) :
+inductive ProductPath {Obj : Type u} (T : Theory.{u, v} Obj) :
     Obj → Obj → Type (max u v)
   | nil (A : Obj) : ProductPath T A A
   | cons {A B C : Obj} (α : T.Corr A B) (rest : ProductPath T B C) :
@@ -112,11 +112,11 @@ def theory : Theory Obj where
   identity_degree _ := rfl
   product_degree _ _ := rfl
   identity_product f := by
-    cases f
-    rfl
+    cases f with
+    | mk parity map => cases parity <;> rfl
   product_identity f := by
-    cases f
-    rfl
+    cases f with
+    | mk parity map => cases parity <;> rfl
   product_assoc f g h := by
     cases f with
     | mk pf ff =>
@@ -124,10 +124,7 @@ def theory : Theory Obj where
       | mk pg fg =>
         cases h with
         | mk ph fh =>
-          apply TaggedFunction.mk.injEq.mpr
-          constructor
-          · exact Bool.xor_assoc pf pg ph
-          · rfl
+          cases pf <;> cases pg <;> cases ph <;> rfl
 
 end FunctionFixture
 

@@ -73,14 +73,14 @@ theorem weaklyNormalizing_backward
     (E : ReductionEquiv X Y stepX stepY) {x : X}
     (hx : WeaklyNormalizing stepY (E.mapEquiv x)) :
     WeaklyNormalizing stepX x := by
-  simpa using E.symm.weaklyNormalizing_forward hx
+  simpa [symm] using E.symm.weaklyNormalizing_forward hx
 
 /-- Strong normalization reflects along an exact reduction equivalence. -/
 theorem stronglyNormalizing_backward
     (E : ReductionEquiv X Y stepX stepY) {x : X}
     (hx : StronglyNormalizing stepY (E.mapEquiv x)) :
     StronglyNormalizing stepX x := by
-  simpa using E.symm.stronglyNormalizing_forward hx
+  simpa [symm] using E.symm.stronglyNormalizing_forward hx
 
 end ReductionEquiv
 

@@ -12,7 +12,7 @@ variable {H : Type v}
 variable [NormedAddCommGroup H] [InnerProductSpace ℂ H] [CompleteSpace H]
 
 /-- Failure of an operator to be self-adjoint. -/
-def adjointDefect (F : H →L[ℂ] H) : H →L[ℂ] H := F† - F
+noncomputable def adjointDefect (F : H →L[ℂ] H) : H →L[ℂ] H := F† - F
 
 /-- Failure of an operator to square to the identity. -/
 def squareDefect (F : H →L[ℂ] H) : H →L[ℂ] H :=
@@ -23,7 +23,10 @@ def commutator (π : A →+* (H →L[ℂ] H)) (F : H →L[ℂ] H) (a : A) :
     H →L[ℂ] H :=
   F.comp (π a) - (π a).comp F
 
-/-- Bounded cycle with compact adjoint, square, and represented commutator defects. -/
+/-- Bounded cycle with compact adjoint, square, and represented commutator defects.
+
+The representation is a semiring homomorphism and parity is a tag. A C⋆-algebra,
+star-preserving representation, and grading laws remain further obligations for analytic KK. -/
 structure Cycle (A : Type u) [Semiring A]
     (H : Type v) [NormedAddCommGroup H] [InnerProductSpace ℂ H] [CompleteSpace H] where
   representation : A →+* (H →L[ℂ] H)

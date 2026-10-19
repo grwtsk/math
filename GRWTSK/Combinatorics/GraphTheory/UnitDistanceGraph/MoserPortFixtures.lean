@@ -23,7 +23,8 @@ def diamondGadget : ColorPortGadget (Fin 4) (Fin 2) where
 /-- A three-color boundary state extends across the diamond exactly when its two tip colors agree. -/
 theorem diamond_extends_iff_boundary_equal (state : Fin 2 → Fin 3) :
     diamondGadget.Extends state ↔ state 0 = state 1 := by
-  decide
+  unfold ColorPortGadget.Extends ProperColoring diamondGadget diamondAdj diamondEdges diamondPort
+  decide +revert
 
 /-- Binary relation exposed by the diamond boundary. -/
 def diamondRelation (left right : Fin 3) : Prop :=
@@ -68,6 +69,8 @@ def brokenDiamondGadget : ColorPortGadget (Fin 4) (Fin 2) where
 theorem brokenDiamond_allows_unequal_boundary :
     ∃ state : Fin 2 → Fin 3,
       state 0 ≠ state 1 ∧ brokenDiamondGadget.Extends state := by
+  unfold ColorPortGadget.Extends ProperColoring brokenDiamondGadget brokenDiamondAdj
+    brokenDiamondEdges diamondPort
   decide
 
 end GRWTSK.Combinatorics.GraphTheory.HadwigerNelson.MoserPortFixtures

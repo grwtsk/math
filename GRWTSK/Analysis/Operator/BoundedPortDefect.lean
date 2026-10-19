@@ -25,7 +25,7 @@ def Intertwines
 theorem intertwines_iff_defect_eq_zero
     (U : E →L[𝕜] F) (D_E : E →L[𝕜] E) (D_F : F →L[𝕜] F) :
     Intertwines U D_E D_F ↔ defect U D_E D_F = 0 := by
-  simp [Intertwines, defect]
+  exact sub_eq_zero.symm
 
 /-- Defects obey the exact cocycle identity under continuous-linear composition. -/
 theorem defect_comp
@@ -35,7 +35,6 @@ theorem defect_comp
       V.comp (defect U D_E D_F) + (defect V D_F D_G).comp U := by
   ext x
   simp [defect, ContinuousLinearMap.comp_apply]
-  abel
 
 /-- A direct operator-norm bound for one transport defect. -/
 theorem norm_defect_le

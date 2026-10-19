@@ -71,7 +71,7 @@ def Intertwines (P : Port A B) : Prop :=
 /-- Exact intertwining is equivalent to vanishing of the domain-aware defect. -/
 theorem intertwines_iff_defect_eq_zero (P : Port A B) :
     P.Intertwines ↔ P.defect = 0 := by
-  simp [Intertwines, defect]
+  exact sub_eq_zero.symm
 
 /-- The identity domain-aware port. -/
 def identity (A : UnboundedOperator R E) : Port A A where
@@ -103,7 +103,6 @@ theorem defect_comp_apply
     (comp Q P).defect x =
       Q.map (P.defect x) + Q.defect (P.domainMap x) := by
   simp [defect, comp, domainMap, LinearMap.comp_apply]
-  abel
 
 /-- Equality form of the domain-aware defect composition law. -/
 theorem defect_comp

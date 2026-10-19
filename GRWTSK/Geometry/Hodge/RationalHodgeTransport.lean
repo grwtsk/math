@@ -75,7 +75,11 @@ theorem surjective_iff (E : CycleClassEquiv H H') :
   ⟨E.surjective_forward, E.surjective_backward⟩
 
 /-- Transport one proof-carrying source-bound rational-Hodge theorem without changing its
-source, variety, codimension, or realization metadata. -/
+source, variety, codimension, or realization metadata.
+
+These metadata fields are strings (with a natural-number codimension), not type indices.
+Their geometric interpretation for the target linear model is an external model obligation;
+this construction preserves their recorded values and proves linear-map surjectivity. -/
 def transportTheorem
     (E : CycleClassEquiv H H')
     (G : SourceBoundRationalHodgeTheorem H) :
@@ -100,7 +104,7 @@ def lineEquiv : CycleClassEquiv lineHodgeData lineHodgeData where
 
 /-- Transport along the identity equivalence retains the local surjectivity theorem. -/
 theorem line_transport_surjective :
-    (lineEquiv.transportTheorem lineSourceTheorem).surjective :=
+    lineHodgeData.IsSurjective :=
   (lineEquiv.transportTheorem lineSourceTheorem).surjective
 
 end Fixtures

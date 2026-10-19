@@ -1,5 +1,7 @@
 import GRWTSK.LinearAlgebra.FinitePositiveHodgeHeat
 
+noncomputable section
+
 namespace GRWTSK.LinearAlgebra.FiniteSpectralHeat
 
 open scoped BigOperators
@@ -11,14 +13,14 @@ variable {ι : Type u} [Fintype ι]
 variable {E : Type v} [AddCommGroup E] [Module ℝ E]
 
 /-- Diagonal operator with the selected eigenvalue list. -/
-def spectralOperator (λ : ι → ℝ) :
+def spectralOperator (eigenvalues : ι → ℝ) :
     (ι → ℝ) →ₗ[ℝ] (ι → ℝ) :=
-  diagonal λ
+  diagonal eigenvalues
 
 /-- Exact finite spectral heat multiplier. -/
-def spectralHeat (λ : ι → ℝ) (t : ℝ) :
+def spectralHeat (eigenvalues : ι → ℝ) (t : ℝ) :
     (ι → ℝ) →ₗ[ℝ] (ι → ℝ) :=
-  diagonal fun i => Real.exp (-t * λ i)
+  diagonal fun i => Real.exp (-t * eigenvalues i)
 
 /-- A proof-carrying finite diagonalization of one operator.
 
@@ -74,6 +76,7 @@ theorem heat_add (M : Model ι E) (s t : ℝ) :
   ext x
   apply M.frame.injective
   funext i
+  simp only [LinearMap.comp_apply]
   rw [M.heat_coordinates, M.heat_coordinates, M.heat_coordinates]
   change
     Real.exp (-(s + t) * M.eigenvalue i) * M.frame x i =
@@ -90,6 +93,7 @@ theorem heat_operator_comm (M : Model ι E) (t : ℝ) :
   ext x
   apply M.frame.injective
   funext i
+  simp only [LinearMap.comp_apply]
   rw [M.heat_coordinates, M.operator_coordinates,
     M.operator_coordinates, M.heat_coordinates]
   change
@@ -110,10 +114,10 @@ theorem heat_fixed_of_operator_eq_zero
     have hcoord := congrFun (M.operator_coordinates x) i
     rw [hx] at hcoord
     simpa [spectralOperator, diagonal] using hcoord.symm
-  by_cases hλ : M.eigenvalue i = 0
-  · simp [spectralHeat, diagonal, hλ]
+  by_cases hEigenvalue : M.eigenvalue i = 0
+  · simp [spectralHeat, diagonal, hEigenvalue]
   · have hxi : M.frame x i = 0 :=
-      (mul_eq_zero.mp hi).resolve_left hλ
+      (mul_eq_zero.mp hi).resolve_left hEigenvalue
     simp [spectralHeat, diagonal, hxi]
 
 /-- Nonnegative finite spectral heat contracts the pulled-back positive pairing. -/
@@ -128,9 +132,9 @@ theorem heat_contracts
   have he0 : 0 ≤ e := (Real.exp_pos _).le
   have he1 : e ≤ 1 := by
     apply Real.exp_le_one_iff.mpr
-    exact neg_nonpos.mpr (mul_nonneg ht (M.eigenvalue_nonneg i))
+    exact mul_nonpos_of_nonpos_of_nonneg (neg_nonpos.mpr ht) (M.eigenvalue_nonneg i)
   have he2 : e ^ 2 ≤ 1 := by
-    nlinarith [mul_nonneg (sub_nonneg.mpr he1) (add_nonneg he0 (by norm_num))]
+    nlinarith [mul_nonneg (sub_nonneg.mpr he1) (add_nonneg he0 (show (0 : ℝ) ≤ 1 by norm_num))]
   change (e * M.frame x i) * (e * M.frame x i) ≤
     M.frame x i * M.frame x i
   calc

@@ -24,12 +24,11 @@ def coboundary
   toFun x e := x (G.target e) - x (G.source e)
   map_add' x y := by
     ext e
-    simp
-    ring
+    simp only [Pi.add_apply]
+    abel
   map_smul' r x := by
     ext e
-    simp
-    ring
+    simp [mul_sub]
 
 @[simp]
 theorem coboundary_apply

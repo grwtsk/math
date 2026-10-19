@@ -98,7 +98,7 @@ def analyticKasparovProfile : KKProfile where
 
 /-- A formal product path retains the exact middle objects and cannot be composed with
 a mismatched endpoint. -/
-inductive ProductPath {Obj : Type u} (T : BivariantTheory Obj) :
+inductive ProductPath {Obj : Type u} (T : BivariantTheory.{u, v} Obj) :
     Obj → Obj → Type (max u v)
   | nil (A : Obj) : ProductPath T A A
   | cons {A B C : Obj} (α : T.Corr A B) (rest : ProductPath T B C) :
@@ -160,8 +160,8 @@ def action : BivariantAction (theory K) K where
 /-- An actual equivalence supplies a two-sided formal KK-equivalence in the function fixture. -/
 def equivalence {A B : Obj} (e : K A ≃ K B) :
     KKEquivalence (theory K) A B where
-  forward := e
-  backward := e.symm
+  forward := fun x => e x
+  backward := fun x => e.symm x
   forward_backward := by
     funext x
     exact e.symm_apply_apply x

@@ -68,9 +68,9 @@ end FrameConjugationLift
 
 /-- An inclusion/projection lift with an explicit lost complement. -/
 structure CompressionExtension where
-  include : E →ₗ[R] F
+  «include» : E →ₗ[R] F
   project : F →ₗ[R] E
-  project_include : project.comp include = LinearMap.id
+  project_include : project.comp «include» = LinearMap.id
   profile : LiftProfile
   mode_eq : profile.mode = .compressionExtension
 

@@ -114,7 +114,7 @@ theorem eval_append (S : Semantics Port) {a b c : Obj}
     (p : NormalPath Port a b) (q : NormalPath Port b c)
     (x : S.Carrier a) :
     eval S (append p q) x = eval S q (eval S p x) := by
-  induction p generalizing x with
+  induction p with
   | nil => rfl
   | cons r rs ih => simp [append, eval, ih]
 
@@ -135,7 +135,7 @@ def eval (S : Semantics Port) {a b : Obj} :
 theorem eval_normalize (S : Semantics Port) {a b : Obj}
     (e : Expr Port a b) (x : S.Carrier a) :
     NormalPath.eval S e.normalize x = eval S e x := by
-  induction e generalizing x with
+  induction e with
   | id => rfl
   | atom => rfl
   | comp p q hp hq =>
@@ -151,7 +151,7 @@ variable {Port : Obj → Obj → Type v}
 theorem eval_toExpr (S : Semantics Port) {a b : Obj}
     (p : NormalPath Port a b) (x : S.Carrier a) :
     Expr.eval S p.toExpr x = eval S p x := by
-  induction p generalizing x with
+  induction p with
   | nil => rfl
   | cons q qs ih => simp [toExpr, Expr.eval, eval, ih]
 
@@ -233,7 +233,7 @@ theorem eval_bind
     (σ : ∀ {a b : Obj}, Port a b → Expr Port₂ a b)
     {a b : Obj} (e : Expr Port a b) (x : S.Carrier a) :
     eval S (bind σ e) x = eval (Semantics.substitute S σ) e x := by
-  induction e generalizing x with
+  induction e with
   | id => rfl
   | atom => rfl
   | comp p q hp hq => simp [bind, eval, Semantics.substitute, hp, hq]
