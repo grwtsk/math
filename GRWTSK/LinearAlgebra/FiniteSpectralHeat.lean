@@ -170,7 +170,7 @@ theorem heat_sector_comm
   funext i
   cases h : mask i <;>
     simp [heat, sectorProjector, spectralHeat, maskProjector,
-      diagonal, LinearMap.comp_apply, h] <;> ring
+      diagonal, LinearMap.comp_apply, h]
 
 end Model
 
