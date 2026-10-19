@@ -117,12 +117,14 @@ def portModel {Sort : Type u} (P : Specification Sort) : Model.{u, u} where
 
 @[simp]
 theorem portModel_systemWeak_iff {Sort : Type u} (P : Specification Sort) :
-    (portModel P).SystemWeaklyNormalizing ↔ SystemWeaklyNormalizing P :=
+    Model.SystemWeaklyNormalizing (portModel P) ↔
+      GRWTSK.Logic.PortPureTypeSystem.SystemWeaklyNormalizing P :=
   Iff.rfl
 
 @[simp]
 theorem portModel_systemStrong_iff {Sort : Type u} (P : Specification Sort) :
-    (portModel P).SystemStronglyNormalizing ↔ SystemStronglyNormalizing P :=
+    Model.SystemStronglyNormalizing (portModel P) ↔
+      GRWTSK.Logic.PortPureTypeSystem.SystemStronglyNormalizing P :=
   Iff.rfl
 
 /-- Complete external admission packet for the local PTS: an external proof and an exact alignment
@@ -143,7 +145,7 @@ def localTheorem (A : ExternalAdmission P N) :
 
 /-- Convert a complete external admission packet into the local PTS theorem interface. -/
 def toWeakToStrongAdmission (A : ExternalAdmission P N) :
-    WeakToStrongAdmission P where
+    GRWTSK.Logic.PortPureTypeSystem.WeakToStrongAdmission P where
   source := A.localTheorem.source
   theorem := by
     intro h
@@ -152,8 +154,9 @@ def toWeakToStrongAdmission (A : ExternalAdmission P N) :
 /-- Once the exact packet exists, local system-wide weak normalization implies local
 system-wide strong normalization. -/
 theorem strong_of_weak
-    (A : ExternalAdmission P N) (h : SystemWeaklyNormalizing P) :
-    SystemStronglyNormalizing P :=
+    (A : ExternalAdmission P N)
+    (h : GRWTSK.Logic.PortPureTypeSystem.SystemWeaklyNormalizing P) :
+    GRWTSK.Logic.PortPureTypeSystem.SystemStronglyNormalizing P :=
   A.toWeakToStrongAdmission.theorem h
 
 end ExternalAdmission
