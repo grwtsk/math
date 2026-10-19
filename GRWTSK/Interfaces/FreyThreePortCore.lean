@@ -7,7 +7,7 @@ at every parameter order. No proof of ABC or full section-space atlas is supplie
 This file remains outside GRWTSK.lean pending replay and trust checks. -/
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyThreePortFrame
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyThreePortSaturation
-import GRWTSK.NumberTheory.Diophantine/PrimitiveAdditiveTriples.FreyCurveGeometry
+import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCurveGeometry
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyAffineEvaluation
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyIntegralModel
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyLocalInvariants
