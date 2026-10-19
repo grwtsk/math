@@ -105,7 +105,7 @@ structure AnalyticProfile (A : UnboundedOperator 𝕜 E) : Prop where
   closedGraph : IsClosed (graphSet A)
 
 /-- Continuous framed equivalence transports density and closedness together. -/
-def transportProfile
+theorem transportProfile
     (P : ContinuousFramedEquivalence A B)
     (hA : AnalyticProfile A) : AnalyticProfile B where
   denseDomain := P.dense_domain hA.denseDomain
