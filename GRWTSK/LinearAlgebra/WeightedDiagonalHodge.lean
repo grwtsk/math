@@ -59,8 +59,8 @@ theorem weighted_adjoint
   intro i _
   simp [weightedDiagonalHodge, diagonal]
   field_simp [h₀ i]
-  <;> ring
 
+omit [Fintype ι] in
 /-- Exact weighted degree-zero Laplacian coefficient. -/
 @[simp]
 theorem weighted_laplacian0_apply

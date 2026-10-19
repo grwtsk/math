@@ -196,7 +196,7 @@ theorem edge_harmonic_iff_cocycle (x : ℚ × ℚ) :
     simp [edgeDeltaStar]
 
 /-- Exact harmonic-kernel identification for the finite edge. -/
-def edgeKernelExact : HarmonicKernelExact edgeHodge where
+theorem edgeKernelExact : HarmonicKernelExact edgeHodge where
   harmonic_iff_cocycle := edge_harmonic_iff_cocycle
 
 /-- Exact `H⁰` model of the finite edge. -/
