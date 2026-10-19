@@ -72,7 +72,9 @@ theorem toKKEquivalence_trans
       KKEquivalence.trans P.toKKEquivalence Q.toKKEquivalence := by
   apply KKEquivalence.ext
   · rfl
-  · rfl
+  · apply UnitaryEquivalence.ext
+    simp [UnitaryEquivalence.trans, UnitaryEquivalence.symm,
+      Matrix.conjTranspose_mul]
 
 end UnitaryEquivalence
 
