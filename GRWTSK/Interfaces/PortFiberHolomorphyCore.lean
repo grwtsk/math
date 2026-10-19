@@ -14,6 +14,7 @@ import GRWTSK.Analysis.Complex.HolomorphicRestriction
 import GRWTSK.Analysis.Complex.HolomorphicSectionRing
 import GRWTSK.Analysis.Complex.HolomorphicRestrictionGluing
 import GRWTSK.Topology.Algebra.PortFiberRing
+import GRWTSK.Topology.Algebra.PrimeSpectrumPort
 import GRWTSK.Logic.SimultaneousProofArchitecture
 import GRWTSK.Logic.SimultaneousProofPortfolio
 import GRWTSK.NumberTheory.Zeta.Riemann.PortFiberArchitecture
@@ -25,7 +26,7 @@ import GRWTSK.Interfaces.PortFiberPortfolioLedger
 namespace GRWTSK.Interfaces.PortFiberHolomorphyCore
 
 /-- Source version of this isolated interface. -/
-def schemaVersion : String := "PortFiberHolomorphyCore/0.6"
+def schemaVersion : String := "PortFiberHolomorphyCore/0.7"
 
 /-- Source state remains distinct from kernel-checked state. -/
 inductive VerificationState
