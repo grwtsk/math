@@ -36,11 +36,9 @@ def globalSectionsSystem : GRWTSK.Topology.PortFiber where
 /-- The global-section fiber map is itself an exact bundled ring homomorphism. -/
 def ringCertificate {A B : CommRingCat.{u}}
     (p : globalSectionsSystem.Port A B) :
-    GRWTSK.Topology.Algebra.PortFiber.RingCertificate globalSectionsSystem p where
-  hom := (_root_.AlgebraicGeometry.Spec.map p).appTop.hom
-  map_eq := by
-    intro x
-    rfl
+    GRWTSK.Topology.Algebra.PortFiber.RingCertificate globalSectionsSystem p :=
+  GRWTSK.Topology.Algebra.PortFiber.RingCertificate.ofHom globalSectionsSystem
+    (_root_.AlgebraicGeometry.Spec.map p).appTop.hom (fun _ => rfl)
 
 /-- Ring certification composes along exact affine global-section ports. -/
 def ringProperty :

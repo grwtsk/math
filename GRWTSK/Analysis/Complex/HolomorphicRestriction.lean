@@ -118,11 +118,9 @@ def restrictionRingHom {A B : Domain} (p : Port A B) :
 
 /-- Ring-homomorphism certificate for the exact restriction map. -/
 def ringCertificate {A B : Domain} (p : Port A B) :
-    GRWTSK.Topology.Algebra.PortFiber.RingCertificate system p where
-  hom := restrictionRingHom p
-  map_eq := by
-    intro f
-    rfl
+    GRWTSK.Topology.Algebra.PortFiber.RingCertificate system p :=
+  GRWTSK.Topology.Algebra.PortFiber.RingCertificate.ofHom system
+    (restrictionRingHom p) (fun _ => rfl)
 
 /-- Restriction of function spaces is continuous for the product topologies. -/
 theorem restrict_continuous {A B : Domain} (p : Port A B) :
