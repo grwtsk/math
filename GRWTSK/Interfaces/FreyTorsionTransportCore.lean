@@ -2,7 +2,7 @@
 Formalization assistance: OpenAI.
 
 Narrow isolated root for actual rational two-torsion point translation and its
-source-bound finite jets, completion pullbacks and weighted function bases. Earlier replay
+source-bound finite jets, completion pullbacks and weighted bases and explicit coefficient energies. Earlier replay
 targets and FreyThreePortCore are unchanged. Importing this root is not proof of verification coverage.
 -/
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionTranslation
@@ -12,3 +12,4 @@ import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionUnloc
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionCompletion
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedSections
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedBasis
+import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedEnergy
