@@ -17,19 +17,30 @@ namespace TargetDisposition
 
 variable {Target : Prop}
 
-/-- Extract a target proof only from the proved disposition. -/
-def proof? : TargetDisposition Target → Option Target
-  | .proved h => some h
+/-- Extract a target proof only from the proved disposition. `PLift` makes the proposition a
+valid `Type` argument of `Option`; it does not add a proof. -/
+def proof? : TargetDisposition Target → Option (PLift Target)
+  | .proved h => some ⟨h⟩
   | .refuted _ => none
   | .conditional _ _ _ => none
   | .unresolved _ => none
 
 /-- Extract a target refutation only from the refuted disposition. -/
-def refutation? : TargetDisposition Target → Option (¬ Target)
+def refutation? : TargetDisposition Target → Option (PLift (¬ Target))
   | .proved _ => none
-  | .refuted h => some h
+  | .refuted h => some ⟨h⟩
   | .conditional _ _ _ => none
   | .unresolved _ => none
+
+/-- An unresolved disposition supplies no optional proof. -/
+@[simp]
+theorem unresolved_proof? (name : String) :
+    (unresolved name : TargetDisposition Target).proof? = none := rfl
+
+/-- An unresolved disposition supplies no optional refutation. -/
+@[simp]
+theorem unresolved_refutation? (name : String) :
+    (unresolved name : TargetDisposition Target).refutation? = none := rfl
 
 /-- Resolve a conditional target after supplying its exact named premise. -/
 theorem conditional_apply {Premise : Prop} {name : String}
