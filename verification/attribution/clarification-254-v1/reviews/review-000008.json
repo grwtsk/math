@@ -169,9 +169,9 @@
       "read_status": "READ_DIRECTLY",
       "disposition": "COPIED_TO_CANDIDATES",
       "candidate_paths": [
-        "candidates/attribution-254/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/IndexedObservationFamilies.lean",
-        "candidates/attribution-254/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/RecoverableObservationRepresentations.lean",
-        "candidates/attribution-254/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/MinimalObservationFactorizations.lean"
+        "GRWTSK/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/IndexedObservationFamilies.lean",
+        "GRWTSK/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/RecoverableObservationRepresentations.lean",
+        "GRWTSK/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/MinimalObservationFactorizations.lean"
       ]
     },
     {
@@ -189,9 +189,9 @@
       "read_status": "READ_DIRECTLY",
       "disposition": "COPIED_TO_CANDIDATES",
       "candidate_paths": [
-        "candidates/attribution-254/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/IndexedObservationFamilies.lean",
-        "candidates/attribution-254/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/RecoverableObservationRepresentations.lean",
-        "candidates/attribution-254/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/MinimalObservationFactorizations.lean"
+        "GRWTSK/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/IndexedObservationFamilies.lean",
+        "GRWTSK/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/RecoverableObservationRepresentations.lean",
+        "GRWTSK/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/MinimalObservationFactorizations.lean"
       ]
     },
     {
@@ -201,7 +201,7 @@
       "read_status": "READ_DIRECTLY",
       "disposition": "COPIED_TO_CANDIDATES",
       "candidate_paths": [
-        "candidates/attribution-254/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/IndexedObservationFamilies.lean"
+        "GRWTSK/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/IndexedObservationFamilies.lean"
       ]
     },
     {
@@ -211,7 +211,7 @@
       "read_status": "READ_DIRECTLY",
       "disposition": "COPIED_TO_CANDIDATES",
       "candidate_paths": [
-        "candidates/attribution-254/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/RecoverableObservationRepresentations.lean"
+        "GRWTSK/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/RecoverableObservationRepresentations.lean"
       ]
     },
     {
@@ -221,7 +221,7 @@
       "read_status": "READ_DIRECTLY",
       "disposition": "COPIED_TO_CANDIDATES",
       "candidate_paths": [
-        "candidates/attribution-254/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/MinimalObservationFactorizations.lean"
+        "GRWTSK/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/MinimalObservationFactorizations.lean"
       ]
     },
     {
@@ -239,7 +239,7 @@
       "read_status": "READ_DIRECTLY",
       "disposition": "COPIED_TO_CANDIDATES",
       "candidate_paths": [
-        "candidates/attribution-254/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/MinimalObservationFactorizations.lean"
+        "GRWTSK/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/MinimalObservationFactorizations.lean"
       ]
     },
     {
@@ -293,7 +293,7 @@
     {
       "original": "RepairReview.CertificateFamily",
       "candidate": "GRWTSK.FoundationsLogicAndTypeTheory.TypeTheory.DependentTypeTheory.ObservationFactorization.CertificateFamily",
-      "candidate_path": "candidates/attribution-254/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/IndexedObservationFamilies.lean",
+      "candidate_path": "GRWTSK/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/IndexedObservationFamilies.lean",
       "statement_and_proof_bytes": "EXACT_COPY",
       "semantic_preservation": "UNREPLAYED_NAMESPACE_REBINDING",
       "source_command_span": {
@@ -310,7 +310,7 @@
     {
       "original": "RepairReview.CertificateFamily.Equivalent",
       "candidate": "GRWTSK.FoundationsLogicAndTypeTheory.TypeTheory.DependentTypeTheory.ObservationFactorization.CertificateFamily.Equivalent",
-      "candidate_path": "candidates/attribution-254/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/IndexedObservationFamilies.lean",
+      "candidate_path": "GRWTSK/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/IndexedObservationFamilies.lean",
       "statement_and_proof_bytes": "EXACT_COPY",
       "semantic_preservation": "UNREPLAYED_NAMESPACE_REBINDING",
       "source_command_span": {
@@ -337,7 +337,7 @@
     {
       "original": "RepairReview.SufficientRepresentation",
       "candidate": "GRWTSK.FoundationsLogicAndTypeTheory.TypeTheory.DependentTypeTheory.ObservationFactorization.SufficientRepresentation",
-      "candidate_path": "candidates/attribution-254/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/RecoverableObservationRepresentations.lean",
+      "candidate_path": "GRWTSK/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/RecoverableObservationRepresentations.lean",
       "statement_and_proof_bytes": "EXACT_COPY",
       "semantic_preservation": "UNREPLAYED_NAMESPACE_REBINDING",
       "source_command_span": {
@@ -346,15 +346,15 @@
         "sha256": "5438448dff2480eba804170e9fb1b5ad15f6bc1de0559e6634d8185db6f9fab4"
       },
       "candidate_command_span": {
-        "start": 1327,
-        "end": 1621,
+        "start": 1334,
+        "end": 1628,
         "sha256": "5438448dff2480eba804170e9fb1b5ad15f6bc1de0559e6634d8185db6f9fab4"
       }
     },
     {
       "original": "RepairReview.SufficientRepresentation.FactorsThrough",
       "candidate": "GRWTSK.FoundationsLogicAndTypeTheory.TypeTheory.DependentTypeTheory.ObservationFactorization.SufficientRepresentation.FactorsThrough",
-      "candidate_path": "candidates/attribution-254/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/MinimalObservationFactorizations.lean",
+      "candidate_path": "GRWTSK/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/MinimalObservationFactorizations.lean",
       "statement_and_proof_bytes": "EXACT_COPY",
       "semantic_preservation": "UNREPLAYED_NAMESPACE_REBINDING",
       "source_command_span": {
@@ -363,8 +363,8 @@
         "sha256": "9ce21407e539c09560031a369e2314d2621f08707670d9b15e7dd4374e64a45d"
       },
       "candidate_command_span": {
-        "start": 1467,
-        "end": 1657,
+        "start": 1474,
+        "end": 1664,
         "sha256": "9ce21407e539c09560031a369e2314d2621f08707670d9b15e7dd4374e64a45d"
       },
       "statement_span": {
@@ -381,7 +381,7 @@
     {
       "original": "RepairReview.SufficientRepresentation.IsMinimal",
       "candidate": "GRWTSK.FoundationsLogicAndTypeTheory.TypeTheory.DependentTypeTheory.ObservationFactorization.SufficientRepresentation.IsMinimal",
-      "candidate_path": "candidates/attribution-254/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/MinimalObservationFactorizations.lean",
+      "candidate_path": "GRWTSK/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/MinimalObservationFactorizations.lean",
       "statement_and_proof_bytes": "EXACT_COPY",
       "semantic_preservation": "UNREPLAYED_NAMESPACE_REBINDING",
       "source_command_span": {
@@ -390,8 +390,8 @@
         "sha256": "38ce107baeef6158007355ad7a06be40f2cb3743d723f7d906f5cb2372dabce4"
       },
       "candidate_command_span": {
-        "start": 1658,
-        "end": 1798,
+        "start": 1665,
+        "end": 1805,
         "sha256": "38ce107baeef6158007355ad7a06be40f2cb3743d723f7d906f5cb2372dabce4"
       },
       "statement_span": {
@@ -408,7 +408,7 @@
     {
       "original": "RepairReview.SufficientRepresentation.factor_of_minimal",
       "candidate": "GRWTSK.FoundationsLogicAndTypeTheory.TypeTheory.DependentTypeTheory.ObservationFactorization.SufficientRepresentation.factor_of_minimal",
-      "candidate_path": "candidates/attribution-254/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/MinimalObservationFactorizations.lean",
+      "candidate_path": "GRWTSK/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/MinimalObservationFactorizations.lean",
       "statement_and_proof_bytes": "EXACT_COPY",
       "semantic_preservation": "UNREPLAYED_NAMESPACE_REBINDING",
       "source_command_span": {
@@ -417,8 +417,8 @@
         "sha256": "67266a18397d45719d8ae81db2ab6861a3ced530abf2f250056d7231f826614f"
       },
       "candidate_command_span": {
-        "start": 1799,
-        "end": 1990,
+        "start": 1806,
+        "end": 1997,
         "sha256": "67266a18397d45719d8ae81db2ab6861a3ced530abf2f250056d7231f826614f"
       },
       "statement_span": {
@@ -435,9 +435,9 @@
   ],
   "outputs": [
     {
-      "path": "candidates/attribution-254/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/IndexedObservationFamilies.lean",
+      "path": "GRWTSK/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/IndexedObservationFamilies.lean",
       "mode": "100644",
-      "module": "FoundationsLogicAndTypeTheory.TypeTheory.DependentTypeTheory.IndexedObservationFamilies",
+      "module": "GRWTSK.FoundationsLogicAndTypeTheory.TypeTheory.DependentTypeTheory.IndexedObservationFamilies",
       "namespace": "GRWTSK.FoundationsLogicAndTypeTheory.TypeTheory.DependentTypeTheory.ObservationFactorization",
       "sha256": "e059f16860bfc519eb2129d3317a354f410f1823a1e22fc2a36aa3f0765cef18",
       "byte_count": 1705,
@@ -527,12 +527,12 @@
       "original_imports_retained": true
     },
     {
-      "path": "candidates/attribution-254/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/RecoverableObservationRepresentations.lean",
+      "path": "GRWTSK/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/RecoverableObservationRepresentations.lean",
       "mode": "100644",
-      "module": "FoundationsLogicAndTypeTheory.TypeTheory.DependentTypeTheory.RecoverableObservationRepresentations",
+      "module": "GRWTSK.FoundationsLogicAndTypeTheory.TypeTheory.DependentTypeTheory.RecoverableObservationRepresentations",
       "namespace": "GRWTSK.FoundationsLogicAndTypeTheory.TypeTheory.DependentTypeTheory.ObservationFactorization",
-      "sha256": "609d5896a835ae9bed4c0af05b7f47f421ab824974ab107ea137ac85a51f24c3",
-      "byte_count": 1719,
+      "sha256": "3a263b5cf5b56f9d60cd76fde52392a8dfef08f403ea081cb82f5fe8e2d80b22",
+      "byte_count": 1726,
       "status": "uncompiled-candidate",
       "public_umbrella_member": false,
       "proof_status": "unknown-unreplayed",
@@ -558,18 +558,18 @@
         },
         {
           "kind": "literal",
-          "base64": "aW1wb3J0IEZvdW5kYXRpb25zTG9naWNBbmRUeXBlVGhlb3J5LlR5cGVUaGVvcnkuRGVwZW5kZW50VHlwZVRoZW9yeS5JbmRleGVkT2JzZXJ2YXRpb25GYW1pbGllcwoK",
+          "base64": "aW1wb3J0IEdSV1RTSy5Gb3VuZGF0aW9uc0xvZ2ljQW5kVHlwZVRoZW9yeS5UeXBlVGhlb3J5LkRlcGVuZGVudFR5cGVUaGVvcnkuSW5kZXhlZE9ic2VydmF0aW9uRmFtaWxpZXMKCg==",
           "reason": "explicit candidate dependency",
           "output_start": 1109,
-          "output_end": 1205,
-          "sha256": "c9b5a4e70939c3afad3d5b67acbbb2a5349bbe1b933a462e591d1d9c8957e987"
+          "output_end": 1212,
+          "sha256": "593626da4a4b3b3340e4c4c0862d1f10b51e9d6560b81d45002f19f68fd174cc"
         },
         {
           "kind": "literal",
           "base64": "bmFtZXNwYWNlIEdSV1RTSy5Gb3VuZGF0aW9uc0xvZ2ljQW5kVHlwZVRoZW9yeS5UeXBlVGhlb3J5LkRlcGVuZGVudFR5cGVUaGVvcnkuT2JzZXJ2YXRpb25GYWN0b3JpemF0aW9uCg==",
           "reason": "explicit containing namespace replacement shared by abstract observation objects",
-          "output_start": 1205,
-          "output_end": 1308,
+          "output_start": 1212,
+          "output_end": 1315,
           "sha256": "12c2bec6f1b507a001fbca6ccd8c92ce79dbe3941a9e927eed1307f048e2e2f3"
         },
         {
@@ -578,8 +578,8 @@
           "start": 39,
           "end": 58,
           "reason": "retain all original universe declarations",
-          "output_start": 1308,
-          "output_end": 1327,
+          "output_start": 1315,
+          "output_end": 1334,
           "sha256": "d29c1b2f3b61d2507cb4f46409f00f35e3c0d43bbc85a2aa1edf196131fa4b35"
         },
         {
@@ -588,16 +588,16 @@
           "start": 416,
           "end": 711,
           "reason": "retain full recovery representation with exact recover-compress certificate",
-          "output_start": 1327,
-          "output_end": 1622,
+          "output_start": 1334,
+          "output_end": 1629,
           "sha256": "21b13312a4b8b72668dbd984580aa423e5b53df4b9584a9718fae3f9e5fb3e15"
         },
         {
           "kind": "literal",
           "base64": "ZW5kIEdSV1RTSy5Gb3VuZGF0aW9uc0xvZ2ljQW5kVHlwZVRoZW9yeS5UeXBlVGhlb3J5LkRlcGVuZGVudFR5cGVUaGVvcnkuT2JzZXJ2YXRpb25GYWN0b3JpemF0aW9uCg==",
           "reason": "close replacement namespace",
-          "output_start": 1622,
-          "output_end": 1719,
+          "output_start": 1629,
+          "output_end": 1726,
           "sha256": "ae1090d3b0373b4aaef4a528c60cb393616ac5530497da00d18e3595a6bd89a7"
         }
       ],
@@ -626,12 +626,12 @@
       "original_imports_retained": true
     },
     {
-      "path": "candidates/attribution-254/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/MinimalObservationFactorizations.lean",
+      "path": "GRWTSK/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/MinimalObservationFactorizations.lean",
       "mode": "100644",
-      "module": "FoundationsLogicAndTypeTheory.TypeTheory.DependentTypeTheory.MinimalObservationFactorizations",
+      "module": "GRWTSK.FoundationsLogicAndTypeTheory.TypeTheory.DependentTypeTheory.MinimalObservationFactorizations",
       "namespace": "GRWTSK.FoundationsLogicAndTypeTheory.TypeTheory.DependentTypeTheory.ObservationFactorization",
-      "sha256": "6e6813e193bff8b96a041e9dbd0c2201822de328e5d7b955ae97f4cf9fe62a6a",
-      "byte_count": 2117,
+      "sha256": "2330f89b2bec29871badbdb870389d10216fb3cb4c5fc56e88996d81c9f9105f",
+      "byte_count": 2124,
       "status": "uncompiled-candidate",
       "public_umbrella_member": false,
       "proof_status": "unknown-unreplayed",
@@ -657,18 +657,18 @@
         },
         {
           "kind": "literal",
-          "base64": "aW1wb3J0IEZvdW5kYXRpb25zTG9naWNBbmRUeXBlVGhlb3J5LlR5cGVUaGVvcnkuRGVwZW5kZW50VHlwZVRoZW9yeS5SZWNvdmVyYWJsZU9ic2VydmF0aW9uUmVwcmVzZW50YXRpb25zCgo=",
+          "base64": "aW1wb3J0IEdSV1RTSy5Gb3VuZGF0aW9uc0xvZ2ljQW5kVHlwZVRoZW9yeS5UeXBlVGhlb3J5LkRlcGVuZGVudFR5cGVUaGVvcnkuUmVjb3ZlcmFibGVPYnNlcnZhdGlvblJlcHJlc2VudGF0aW9ucwoK",
           "reason": "explicit candidate dependency",
           "output_start": 1114,
-          "output_end": 1221,
-          "sha256": "6c9618bfc304c7dbdd4d2d7010cefad2b469035afa225acc0ec6fbf179d2d016"
+          "output_end": 1228,
+          "sha256": "ad1ec5b5377d7667c3e23c11fd82e2ebadf5df95fb2386438f2d46f2cf00b364"
         },
         {
           "kind": "literal",
           "base64": "bmFtZXNwYWNlIEdSV1RTSy5Gb3VuZGF0aW9uc0xvZ2ljQW5kVHlwZVRoZW9yeS5UeXBlVGhlb3J5LkRlcGVuZGVudFR5cGVUaGVvcnkuT2JzZXJ2YXRpb25GYWN0b3JpemF0aW9uCg==",
           "reason": "explicit containing namespace replacement shared by abstract observation objects",
-          "output_start": 1221,
-          "output_end": 1324,
+          "output_start": 1228,
+          "output_end": 1331,
           "sha256": "12c2bec6f1b507a001fbca6ccd8c92ce79dbe3941a9e927eed1307f048e2e2f3"
         },
         {
@@ -677,8 +677,8 @@
           "start": 39,
           "end": 58,
           "reason": "retain all original universe declarations",
-          "output_start": 1324,
-          "output_end": 1343,
+          "output_start": 1331,
+          "output_end": 1350,
           "sha256": "d29c1b2f3b61d2507cb4f46409f00f35e3c0d43bbc85a2aa1edf196131fa4b35"
         },
         {
@@ -687,8 +687,8 @@
           "start": 711,
           "end": 1167,
           "reason": "retain object namespace, variables, FactorsThrough and universe-sensitive IsMinimal predicates",
-          "output_start": 1343,
-          "output_end": 1799,
+          "output_start": 1350,
+          "output_end": 1806,
           "sha256": "06984b03191a7a83fcc07505645d17bec58ae351221f513d43612e24cf18a0de"
         },
         {
@@ -697,16 +697,16 @@
           "start": 1217,
           "end": 1438,
           "reason": "retain factor_of_minimal proof and object namespace closure",
-          "output_start": 1799,
-          "output_end": 2020,
+          "output_start": 1806,
+          "output_end": 2027,
           "sha256": "ca0b9a4aecf588446ae5244d1ebeb182e993e0a6db1081943988791d8d96e8cb"
         },
         {
           "kind": "literal",
           "base64": "ZW5kIEdSV1RTSy5Gb3VuZGF0aW9uc0xvZ2ljQW5kVHlwZVRoZW9yeS5UeXBlVGhlb3J5LkRlcGVuZGVudFR5cGVUaGVvcnkuT2JzZXJ2YXRpb25GYWN0b3JpemF0aW9uCg==",
           "reason": "close replacement namespace",
-          "output_start": 2020,
-          "output_end": 2117,
+          "output_start": 2027,
+          "output_end": 2124,
           "sha256": "ae1090d3b0373b4aaef4a528c60cb393616ac5530497da00d18e3595a6bd89a7"
         }
       ],
@@ -746,12 +746,12 @@
     ],
     "cross_component_imports": [
       {
-        "from": "candidates/attribution-254/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/RecoverableObservationRepresentations.lean",
-        "to": "candidates/attribution-254/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/IndexedObservationFamilies.lean"
+        "from": "GRWTSK/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/RecoverableObservationRepresentations.lean",
+        "to": "GRWTSK/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/IndexedObservationFamilies.lean"
       },
       {
-        "from": "candidates/attribution-254/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/MinimalObservationFactorizations.lean",
-        "to": "candidates/attribution-254/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/RecoverableObservationRepresentations.lean"
+        "from": "GRWTSK/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/MinimalObservationFactorizations.lean",
+        "to": "GRWTSK/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/RecoverableObservationRepresentations.lean"
       }
     ],
     "namespace_strategy": "same GRWTSK object namespace across three modules; all declaration basenames unchanged",
@@ -793,7 +793,13 @@
     "disposition": "ARCHIVE_ONLY_DIAGNOSTIC_NO_MATHEMATICAL_DECLARATION"
   },
   "declaration_map_scope": "Explicit source declaration commands, including anonymous instance bytes. Generated constructor/field/recursor/instance names are not independently enumerated or replayed.",
-  "candidate_import_root": "candidates/attribution-254",
+  "placement_correction": {
+    "reason": "Owner requires every reviewed Lean module directly under GRWTSK by mathematical subject",
+    "module_search_root": ".",
+    "source_statement_and_proof_bytes": "unchanged",
+    "compilation_run": false
+  },
+  "candidate_import_root": ".",
   "shared_attribution_record": "MATH-ATTRIBUTION-254",
   "approved_attribution": [
     {

@@ -203,7 +203,7 @@
       "original": "FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroSmoothing.smoothingBump",
       "organized": "FormalResearch.Analysis.Integration.SourceCorpus.SmoothingBump.Variantb397c3041d3a33260073e871f0c5d2e3bc80e7bb2d2e46838eaf2611f7a66e4a.FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroSmoothing.smoothingBump",
       "candidate": "GRWTSK.Analysis.RealAnalysis.Integration.SourceSmoothing.smoothingBump",
-      "candidate_path": "candidates/attribution-254/Analysis/RealAnalysis/Integration/SourceSmoothing/NormalizedBumpKernel.lean",
+      "candidate_path": "GRWTSK/Analysis/RealAnalysis/Integration/SourceSmoothing/NormalizedBumpKernel.lean",
       "kind": "def",
       "original_span": {
         "start": 811,
@@ -237,7 +237,7 @@
       "original": "FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroSmoothing.mollifier",
       "organized": "FormalResearch.Analysis.Integration.SourceCorpus.SmoothingBump.Variantb397c3041d3a33260073e871f0c5d2e3bc80e7bb2d2e46838eaf2611f7a66e4a.FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroSmoothing.mollifier",
       "candidate": "GRWTSK.Analysis.RealAnalysis.Integration.SourceSmoothing.mollifier",
-      "candidate_path": "candidates/attribution-254/Analysis/RealAnalysis/Integration/SourceSmoothing/NormalizedBumpKernel.lean",
+      "candidate_path": "GRWTSK/Analysis/RealAnalysis/Integration/SourceSmoothing/NormalizedBumpKernel.lean",
       "kind": "def",
       "original_span": {
         "start": 1060,
@@ -271,7 +271,7 @@
       "original": "FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroSmoothing.mollifier_nonneg",
       "organized": "FormalResearch.Analysis.Integration.SourceCorpus.SmoothingBump.Variantb397c3041d3a33260073e871f0c5d2e3bc80e7bb2d2e46838eaf2611f7a66e4a.FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroSmoothing.mollifier_nonneg",
       "candidate": "GRWTSK.Analysis.RealAnalysis.Integration.SourceSmoothing.mollifier_nonneg",
-      "candidate_path": "candidates/attribution-254/Analysis/RealAnalysis/Integration/SourceSmoothing/NormalizedBumpKernel.lean",
+      "candidate_path": "GRWTSK/Analysis/RealAnalysis/Integration/SourceSmoothing/NormalizedBumpKernel.lean",
       "kind": "theorem",
       "original_span": {
         "start": 1247,
@@ -305,7 +305,7 @@
       "original": "FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroSmoothing.mollifier_even",
       "organized": "FormalResearch.Analysis.Integration.SourceCorpus.SmoothingBump.Variantb397c3041d3a33260073e871f0c5d2e3bc80e7bb2d2e46838eaf2611f7a66e4a.FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroSmoothing.mollifier_even",
       "candidate": "GRWTSK.Analysis.RealAnalysis.Integration.SourceSmoothing.mollifier_even",
-      "candidate_path": "candidates/attribution-254/Analysis/RealAnalysis/Integration/SourceSmoothing/NormalizedBumpKernel.lean",
+      "candidate_path": "GRWTSK/Analysis/RealAnalysis/Integration/SourceSmoothing/NormalizedBumpKernel.lean",
       "kind": "theorem",
       "original_span": {
         "start": 1431,
@@ -339,7 +339,7 @@
       "original": "FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroSmoothing.mollifier_contDiff",
       "organized": "FormalResearch.Analysis.Integration.SourceCorpus.SmoothingBump.Variantb397c3041d3a33260073e871f0c5d2e3bc80e7bb2d2e46838eaf2611f7a66e4a.FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroSmoothing.mollifier_contDiff",
       "candidate": "GRWTSK.Analysis.RealAnalysis.Integration.SourceSmoothing.mollifier_contDiff",
-      "candidate_path": "candidates/attribution-254/Analysis/RealAnalysis/Integration/SourceSmoothing/NormalizedBumpKernel.lean",
+      "candidate_path": "GRWTSK/Analysis/RealAnalysis/Integration/SourceSmoothing/NormalizedBumpKernel.lean",
       "kind": "theorem",
       "original_span": {
         "start": 1608,
@@ -373,7 +373,7 @@
       "original": "FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroSmoothing.mollifier_integrable",
       "organized": "FormalResearch.Analysis.Integration.SourceCorpus.SmoothingBump.Variantb397c3041d3a33260073e871f0c5d2e3bc80e7bb2d2e46838eaf2611f7a66e4a.FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroSmoothing.mollifier_integrable",
       "candidate": "GRWTSK.Analysis.RealAnalysis.Integration.SourceSmoothing.mollifier_integrable",
-      "candidate_path": "candidates/attribution-254/Analysis/RealAnalysis/Integration/SourceSmoothing/NormalizedBumpKernel.lean",
+      "candidate_path": "GRWTSK/Analysis/RealAnalysis/Integration/SourceSmoothing/NormalizedBumpKernel.lean",
       "kind": "theorem",
       "original_span": {
         "start": 1820,
@@ -407,7 +407,7 @@
       "original": "FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroSmoothing.mollifier_integral",
       "organized": "FormalResearch.Analysis.Integration.SourceCorpus.SmoothingBump.Variantb397c3041d3a33260073e871f0c5d2e3bc80e7bb2d2e46838eaf2611f7a66e4a.FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroSmoothing.mollifier_integral",
       "candidate": "GRWTSK.Analysis.RealAnalysis.Integration.SourceSmoothing.mollifier_integral",
-      "candidate_path": "candidates/attribution-254/Analysis/RealAnalysis/Integration/SourceSmoothing/NormalizedBumpKernel.lean",
+      "candidate_path": "GRWTSK/Analysis/RealAnalysis/Integration/SourceSmoothing/NormalizedBumpKernel.lean",
       "kind": "theorem",
       "original_span": {
         "start": 2028,
@@ -441,7 +441,7 @@
       "original": "FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroSmoothing.mollifier_support",
       "organized": "FormalResearch.Analysis.Integration.SourceCorpus.SmoothingBump.Variantb397c3041d3a33260073e871f0c5d2e3bc80e7bb2d2e46838eaf2611f7a66e4a.FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroSmoothing.mollifier_support",
       "candidate": "GRWTSK.Analysis.RealAnalysis.Integration.SourceSmoothing.mollifier_support",
-      "candidate_path": "candidates/attribution-254/Analysis/RealAnalysis/Integration/SourceSmoothing/NormalizedBumpKernel.lean",
+      "candidate_path": "GRWTSK/Analysis/RealAnalysis/Integration/SourceSmoothing/NormalizedBumpKernel.lean",
       "kind": "theorem",
       "original_span": {
         "start": 2243,
@@ -475,7 +475,7 @@
       "original": "FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroSmoothing.mollifier_tsupport",
       "organized": "FormalResearch.Analysis.Integration.SourceCorpus.SmoothingBump.Variantb397c3041d3a33260073e871f0c5d2e3bc80e7bb2d2e46838eaf2611f7a66e4a.FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroSmoothing.mollifier_tsupport",
       "candidate": "GRWTSK.Analysis.RealAnalysis.Integration.SourceSmoothing.mollifier_tsupport",
-      "candidate_path": "candidates/attribution-254/Analysis/RealAnalysis/Integration/SourceSmoothing/NormalizedBumpKernel.lean",
+      "candidate_path": "GRWTSK/Analysis/RealAnalysis/Integration/SourceSmoothing/NormalizedBumpKernel.lean",
       "kind": "theorem",
       "original_span": {
         "start": 2576,
@@ -509,7 +509,7 @@
       "original": "FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroSmoothing.mollifier_hasCompactSupport",
       "organized": "FormalResearch.Analysis.Integration.SourceCorpus.SmoothingBump.Variantb397c3041d3a33260073e871f0c5d2e3bc80e7bb2d2e46838eaf2611f7a66e4a.FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroSmoothing.mollifier_hasCompactSupport",
       "candidate": "GRWTSK.Analysis.RealAnalysis.Integration.SourceSmoothing.mollifier_hasCompactSupport",
-      "candidate_path": "candidates/attribution-254/Analysis/RealAnalysis/Integration/SourceSmoothing/NormalizedBumpKernel.lean",
+      "candidate_path": "GRWTSK/Analysis/RealAnalysis/Integration/SourceSmoothing/NormalizedBumpKernel.lean",
       "kind": "theorem",
       "original_span": {
         "start": 2910,
@@ -543,7 +543,7 @@
       "original": "FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroSmoothing.smoothedTest",
       "organized": "FormalResearch.Analysis.Integration.SourceCorpus.SmoothingBump.Variantb397c3041d3a33260073e871f0c5d2e3bc80e7bb2d2e46838eaf2611f7a66e4a.FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroSmoothing.smoothedTest",
       "candidate": "GRWTSK.Analysis.RealAnalysis.Integration.SourceSmoothing.smoothedTest",
-      "candidate_path": "candidates/attribution-254/Analysis/RealAnalysis/Integration/SourceSmoothing/ActualTestConvolution.lean",
+      "candidate_path": "GRWTSK/Analysis/RealAnalysis/Integration/SourceSmoothing/ActualTestConvolution.lean",
       "kind": "def",
       "original_span": {
         "start": 3124,
@@ -567,8 +567,8 @@
       },
       "body_kind": "definition",
       "candidate_span": {
-        "start": 2755,
-        "end": 3000
+        "start": 2762,
+        "end": 3007
       },
       "statement_and_body_bytes": "EXACT_COPY",
       "semantic_preservation": "UNKNOWN_UNREPLAYED_NAMESPACE_CONTEXT_REBINDING"
@@ -577,7 +577,7 @@
       "original": "FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroSmoothing.smoothedTest_eq_integral",
       "organized": "FormalResearch.Analysis.Integration.SourceCorpus.SmoothingBump.Variantb397c3041d3a33260073e871f0c5d2e3bc80e7bb2d2e46838eaf2611f7a66e4a.FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroSmoothing.smoothedTest_eq_integral",
       "candidate": "GRWTSK.Analysis.RealAnalysis.Integration.SourceSmoothing.smoothedTest_eq_integral",
-      "candidate_path": "candidates/attribution-254/Analysis/RealAnalysis/Integration/SourceSmoothing/ActualTestConvolution.lean",
+      "candidate_path": "GRWTSK/Analysis/RealAnalysis/Integration/SourceSmoothing/ActualTestConvolution.lean",
       "kind": "theorem",
       "original_span": {
         "start": 3369,
@@ -601,8 +601,8 @@
       },
       "body_kind": "proof",
       "candidate_span": {
-        "start": 3000,
-        "end": 3272
+        "start": 3007,
+        "end": 3279
       },
       "statement_and_body_bytes": "EXACT_COPY",
       "semantic_preservation": "UNKNOWN_UNREPLAYED_NAMESPACE_CONTEXT_REBINDING"
@@ -610,8 +610,8 @@
   ],
   "outputs": [
     {
-      "path": "candidates/attribution-254/Analysis/RealAnalysis/Integration/SourceSmoothing/NormalizedBumpKernel.lean",
-      "logical_module": "Analysis.RealAnalysis.Integration.SourceSmoothing.NormalizedBumpKernel",
+      "path": "GRWTSK/Analysis/RealAnalysis/Integration/SourceSmoothing/NormalizedBumpKernel.lean",
+      "logical_module": "GRWTSK.Analysis.RealAnalysis.Integration.SourceSmoothing.NormalizedBumpKernel",
       "namespace": "GRWTSK.Analysis.RealAnalysis.Integration.SourceSmoothing",
       "role": "candidate",
       "mode": "100644",
@@ -759,17 +759,17 @@
       "mathematical_acceptance": false,
       "added_candidate_import": null,
       "third_credit": "Cache warming and model sculpting: the countless, often unnamed mathematicians, enthusiasts, and curious minds whose work and questions have helped shape these tools, and who now have new ways to pursue mathematical answers to the endlessly deep question: “Why?”",
-      "module": "Analysis.RealAnalysis.Integration.SourceSmoothing.NormalizedBumpKernel",
-      "candidate_import_root": "candidates/attribution-254"
+      "module": "GRWTSK.Analysis.RealAnalysis.Integration.SourceSmoothing.NormalizedBumpKernel",
+      "candidate_import_root": "."
     },
     {
-      "path": "candidates/attribution-254/Analysis/RealAnalysis/Integration/SourceSmoothing/ActualTestConvolution.lean",
-      "logical_module": "Analysis.RealAnalysis.Integration.SourceSmoothing.ActualTestConvolution",
+      "path": "GRWTSK/Analysis/RealAnalysis/Integration/SourceSmoothing/ActualTestConvolution.lean",
+      "logical_module": "GRWTSK.Analysis.RealAnalysis.Integration.SourceSmoothing.ActualTestConvolution",
       "namespace": "GRWTSK.Analysis.RealAnalysis.Integration.SourceSmoothing",
       "role": "source-adapter-candidate",
       "mode": "100644",
-      "sha256": "0b98522fed080d2624bca4fd5f06742a1cecbe43df1e3c193d7a349b85b9c5e6",
-      "byte_count": 3337,
+      "sha256": "9812039388185cfc59befe1346e71076da6c5aeb61f79479b658555a694daa16",
+      "byte_count": 3344,
       "recipe": [
         {
           "kind": "literal",
@@ -793,15 +793,15 @@
           "kind": "literal",
           "reason": "explicit candidate dependency",
           "output_start": 1979,
-          "output_end": 2057,
-          "sha256": "15a3a0f8b99e93ae52f5e073fab85bbcca8469765a07d8da901bb245cf074923",
-          "base64": "aW1wb3J0IEFuYWx5c2lzLlJlYWxBbmFseXNpcy5JbnRlZ3JhdGlvbi5Tb3VyY2VTbW9vdGhpbmcuTm9ybWFsaXplZEJ1bXBLZXJuZWwK"
+          "output_end": 2064,
+          "sha256": "6786b3eec5c6734e14035d90151c90047bf293d6fdfbcd7496af22be32426656",
+          "base64": "aW1wb3J0IEdSV1RTSy5BbmFseXNpcy5SZWFsQW5hbHlzaXMuSW50ZWdyYXRpb24uU291cmNlU21vb3RoaW5nLk5vcm1hbGl6ZWRCdW1wS2VybmVsCg=="
         },
         {
           "kind": "copy",
           "reason": "original introduction and spacing",
-          "output_start": 2057,
-          "output_end": 2506,
+          "output_start": 2064,
+          "output_end": 2513,
           "sha256": "fb703882985bb3e6a1b26d596054a6d099c6226037952dde5e62526992f7ce1d",
           "source": "original",
           "start": 151,
@@ -810,24 +810,24 @@
         {
           "kind": "literal",
           "reason": "new GRWTSK containing namespace",
-          "output_start": 2506,
-          "output_end": 2573,
+          "output_start": 2513,
+          "output_end": 2580,
           "sha256": "b6b8d4dd57b9032b19d5dfe6a8f7ef844b7b96982acdec14b2b1552cca5f4684",
           "base64": "bmFtZXNwYWNlIEdSV1RTSy5BbmFseXNpcy5SZWFsQW5hbHlzaXMuSW50ZWdyYXRpb24uU291cmNlU21vb3RoaW5nCg=="
         },
         {
           "kind": "literal",
           "reason": "restore imported parent namespace after rebinding",
-          "output_start": 2573,
-          "output_end": 2648,
+          "output_start": 2580,
+          "output_end": 2655,
           "sha256": "d8bb247fc6b91503a6096412f59c154e1bc207cfe4dd740c73b720d37bff0133",
           "base64": "b3BlbiBGb3JtYWxSZXNlYXJjaC5TcGVjdHJhbFVuaWZpY2F0aW9uT2ZDb21wdXRhYmlsaXR5QW5kQWxnZWJyYWljU3ltbWV0cnkK"
         },
         {
           "kind": "copy",
           "reason": "original opens, scoped notation and noncomputable section",
-          "output_start": 2648,
-          "output_end": 2755,
+          "output_start": 2655,
+          "output_end": 2762,
           "sha256": "404604fe8a7ceb6b33fa06e125987eada81b483599efb10d2e0751316d88572d",
           "source": "original",
           "start": 704,
@@ -836,8 +836,8 @@
         {
           "kind": "copy",
           "reason": "exact selected declaration component",
-          "output_start": 2755,
-          "output_end": 3272,
+          "output_start": 2762,
+          "output_end": 3279,
           "sha256": "cae36bfe95b90d6112107d41b22c847a43b0b93a1410c36eca1b28454d552c1d",
           "source": "original",
           "start": 3124,
@@ -846,8 +846,8 @@
         {
           "kind": "copy",
           "reason": "original noncomputable section close",
-          "output_start": 3272,
-          "output_end": 3276,
+          "output_start": 3279,
+          "output_end": 3283,
           "sha256": "48332fe667bc51ac4a51ba0efe734441c90def55c60a26d7db275ecbbcf42f15",
           "source": "original",
           "start": 3641,
@@ -856,8 +856,8 @@
         {
           "kind": "literal",
           "reason": "new containing namespace close",
-          "output_start": 3276,
-          "output_end": 3337,
+          "output_start": 3283,
+          "output_end": 3344,
           "sha256": "4297ab47334c464d058a4d3cb44408e2db427228e3b73e833ce9ae9bec46a915",
           "base64": "ZW5kIEdSV1RTSy5BbmFseXNpcy5SZWFsQW5hbHlzaXMuSW50ZWdyYXRpb24uU291cmNlU21vb3RoaW5nCg=="
         }
@@ -928,10 +928,10 @@
       "status": "uncompiled-candidate",
       "proof_status": "unknown-unreplayed",
       "mathematical_acceptance": false,
-      "added_candidate_import": "Analysis.RealAnalysis.Integration.SourceSmoothing.NormalizedBumpKernel",
+      "added_candidate_import": "GRWTSK.Analysis.RealAnalysis.Integration.SourceSmoothing.NormalizedBumpKernel",
       "third_credit": "Cache warming and model sculpting: the countless, often unnamed mathematicians, enthusiasts, and curious minds whose work and questions have helped shape these tools, and who now have new ways to pursue mathematical answers to the endlessly deep question: “Why?”",
-      "module": "Analysis.RealAnalysis.Integration.SourceSmoothing.ActualTestConvolution",
-      "candidate_import_root": "candidates/attribution-254"
+      "module": "GRWTSK.Analysis.RealAnalysis.Integration.SourceSmoothing.ActualTestConvolution",
+      "candidate_import_root": "."
     }
   ],
   "dependency_review": {
@@ -958,7 +958,7 @@
     "dependency_source_whole_file_conceptual_review": "NOT_ASSERTED",
     "ambient_context": "Original imports retained and inherited namespace references explicitly qualified/opened after rebinding",
     "candidate_imports": [
-      "Analysis.RealAnalysis.Integration.SourceSmoothing.NormalizedBumpKernel"
+      "GRWTSK.Analysis.RealAnalysis.Integration.SourceSmoothing.NormalizedBumpKernel"
     ],
     "namespace_resolution": "UNKNOWN_UNREPLAYED"
   },
@@ -983,7 +983,7 @@
     "Review actual consumers and owned axioms before any public umbrella admission."
   ],
   "concept_decision": "TWO_COMPONENTS_GENERIC_KERNEL_AND_SOURCE_ADAPTER",
-  "candidate_import_root": "candidates/attribution-254",
+  "candidate_import_root": ".",
   "static_corrections": [
     {
       "reason": "Leading generated candidate metadata is an ordinary block comment, preserving Lean import-header grammar; original post-import module documentation remains exact. Candidate module names/imports use the actual candidates/attribution-254 search root.",
@@ -991,6 +991,12 @@
       "compilation": "NOT_RUN"
     }
   ],
+  "placement_correction": {
+    "reason": "Owner requires every reviewed Lean module directly under GRWTSK by mathematical subject",
+    "module_search_root": ".",
+    "source_statement_and_proof_bytes": "unchanged",
+    "compilation_run": false
+  },
   "shared_attribution_record": "MATH-ATTRIBUTION-254",
   "approved_attribution": [
     {

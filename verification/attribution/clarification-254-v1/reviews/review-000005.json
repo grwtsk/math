@@ -151,8 +151,8 @@
       "read_status": "READ_DIRECTLY",
       "disposition": "COPIED_TO_CANDIDATES",
       "candidate_paths": [
-        "candidates/attribution-254/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelHermitianSymmetry.lean",
-        "candidates/attribution-254/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelQuadraticForms.lean"
+        "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelHermitianSymmetry.lean",
+        "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelQuadraticForms.lean"
       ]
     },
     {
@@ -162,8 +162,8 @@
       "read_status": "READ_DIRECTLY",
       "disposition": "COPIED_TO_CANDIDATES",
       "candidate_paths": [
-        "candidates/attribution-254/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelHermitianSymmetry.lean",
-        "candidates/attribution-254/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelQuadraticForms.lean"
+        "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelHermitianSymmetry.lean",
+        "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelQuadraticForms.lean"
       ]
     },
     {
@@ -173,8 +173,8 @@
       "read_status": "READ_DIRECTLY",
       "disposition": "COPIED_TO_CANDIDATES",
       "candidate_paths": [
-        "candidates/attribution-254/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelHermitianSymmetry.lean",
-        "candidates/attribution-254/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelQuadraticForms.lean"
+        "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelHermitianSymmetry.lean",
+        "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelQuadraticForms.lean"
       ]
     },
     {
@@ -192,8 +192,8 @@
       "read_status": "READ_DIRECTLY",
       "disposition": "COPIED_TO_CANDIDATES",
       "candidate_paths": [
-        "candidates/attribution-254/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelHermitianSymmetry.lean",
-        "candidates/attribution-254/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelQuadraticForms.lean"
+        "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelHermitianSymmetry.lean",
+        "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelQuadraticForms.lean"
       ]
     },
     {
@@ -203,7 +203,7 @@
       "read_status": "READ_DIRECTLY",
       "disposition": "COPIED_TO_CANDIDATES",
       "candidate_paths": [
-        "candidates/attribution-254/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelHermitianSymmetry.lean"
+        "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelHermitianSymmetry.lean"
       ]
     },
     {
@@ -213,8 +213,8 @@
       "read_status": "READ_DIRECTLY",
       "disposition": "COPIED_TO_CANDIDATES",
       "candidate_paths": [
-        "candidates/attribution-254/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelHermitianSymmetry.lean",
-        "candidates/attribution-254/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelQuadraticForms.lean"
+        "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelHermitianSymmetry.lean",
+        "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelQuadraticForms.lean"
       ]
     },
     {
@@ -224,7 +224,7 @@
       "read_status": "READ_DIRECTLY",
       "disposition": "COPIED_TO_CANDIDATES",
       "candidate_paths": [
-        "candidates/attribution-254/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelHermitianSymmetry.lean"
+        "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelHermitianSymmetry.lean"
       ]
     },
     {
@@ -234,7 +234,7 @@
       "read_status": "READ_DIRECTLY",
       "disposition": "COPIED_TO_CANDIDATES",
       "candidate_paths": [
-        "candidates/attribution-254/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelQuadraticForms.lean"
+        "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelQuadraticForms.lean"
       ]
     },
     {
@@ -244,8 +244,8 @@
       "read_status": "READ_DIRECTLY",
       "disposition": "COPIED_TO_CANDIDATES",
       "candidate_paths": [
-        "candidates/attribution-254/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelHermitianSymmetry.lean",
-        "candidates/attribution-254/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelQuadraticForms.lean"
+        "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelHermitianSymmetry.lean",
+        "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelQuadraticForms.lean"
       ]
     },
     {
@@ -299,7 +299,7 @@
     {
       "original": "DAF.Rhetorical.PositiveKernel",
       "candidate": "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.PositiveKernelTheory.PositiveKernel",
-      "candidate_path": "candidates/attribution-254/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelHermitianSymmetry.lean",
+      "candidate_path": "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelHermitianSymmetry.lean",
       "statement_and_proof_bytes": "EXACT_COPY",
       "semantic_preservation": "UNREPLAYED_NAMESPACE_REBINDING",
       "source_command_span": {
@@ -316,7 +316,7 @@
     {
       "original": "DAF.Rhetorical.PositiveKernel.<anonymous CoeFun instance>",
       "candidate": "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.PositiveKernelTheory.PositiveKernel.<anonymous CoeFun instance>",
-      "candidate_path": "candidates/attribution-254/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelHermitianSymmetry.lean",
+      "candidate_path": "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelHermitianSymmetry.lean",
       "statement_and_proof_bytes": "EXACT_COPY",
       "semantic_preservation": "UNREPLAYED_NAMESPACE_REBINDING",
       "generated_lean_instance_name": "UNKNOWN_UNREPLAYED; anonymous source command is identified by exact bytes and offsets",
@@ -344,7 +344,7 @@
     {
       "original": "DAF.Rhetorical.PositiveKernel.isHermitian",
       "candidate": "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.PositiveKernelTheory.PositiveKernel.isHermitian",
-      "candidate_path": "candidates/attribution-254/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelHermitianSymmetry.lean",
+      "candidate_path": "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelHermitianSymmetry.lean",
       "statement_and_proof_bytes": "EXACT_COPY",
       "semantic_preservation": "UNREPLAYED_NAMESPACE_REBINDING",
       "source_command_span": {
@@ -371,7 +371,7 @@
     {
       "original": "DAF.Rhetorical.PositiveKernel.conj_apply_symm",
       "candidate": "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.PositiveKernelTheory.PositiveKernel.conj_apply_symm",
-      "candidate_path": "candidates/attribution-254/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelHermitianSymmetry.lean",
+      "candidate_path": "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelHermitianSymmetry.lean",
       "statement_and_proof_bytes": "EXACT_COPY",
       "semantic_preservation": "UNREPLAYED_NAMESPACE_REBINDING",
       "source_command_span": {
@@ -398,7 +398,7 @@
     {
       "original": "DAF.Rhetorical.PositiveKernel.conj_matrix_apply_symm",
       "candidate": "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.PositiveKernelTheory.PositiveKernel.conj_matrix_apply_symm",
-      "candidate_path": "candidates/attribution-254/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelHermitianSymmetry.lean",
+      "candidate_path": "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelHermitianSymmetry.lean",
       "statement_and_proof_bytes": "EXACT_COPY",
       "semantic_preservation": "UNREPLAYED_NAMESPACE_REBINDING",
       "source_command_span": {
@@ -425,7 +425,7 @@
     {
       "original": "DAF.Rhetorical.PositiveKernel.quadratic_nonnegative",
       "candidate": "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.PositiveKernelTheory.PositiveKernel.quadratic_nonnegative",
-      "candidate_path": "candidates/attribution-254/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelQuadraticForms.lean",
+      "candidate_path": "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelQuadraticForms.lean",
       "statement_and_proof_bytes": "EXACT_COPY",
       "semantic_preservation": "UNREPLAYED_NAMESPACE_REBINDING",
       "source_command_span": {
@@ -434,8 +434,8 @@
         "sha256": "177e2a5cc5ce2cdb1df50c93845c6460cb7660651d91ee26ab2f9db115d8e1e7"
       },
       "candidate_command_span": {
-        "start": 1844,
-        "end": 2096,
+        "start": 1851,
+        "end": 2103,
         "sha256": "177e2a5cc5ce2cdb1df50c93845c6460cb7660651d91ee26ab2f9db115d8e1e7"
       },
       "statement_span": {
@@ -452,9 +452,9 @@
   ],
   "outputs": [
     {
-      "path": "candidates/attribution-254/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelHermitianSymmetry.lean",
+      "path": "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelHermitianSymmetry.lean",
       "mode": "100644",
-      "module": "Algebra.LinearAlgebra.MatrixTheory.PositiveKernelHermitianSymmetry",
+      "module": "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.PositiveKernelHermitianSymmetry",
       "namespace": "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.PositiveKernelTheory",
       "sha256": "16574624138a85fd26390db5df40c2281daf9928fec58894c35dcca7f327de7b",
       "byte_count": 2759,
@@ -567,12 +567,12 @@
       "original_imports_retained": true
     },
     {
-      "path": "candidates/attribution-254/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelQuadraticForms.lean",
+      "path": "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelQuadraticForms.lean",
       "mode": "100644",
-      "module": "Algebra.LinearAlgebra.MatrixTheory.PositiveKernelQuadraticForms",
+      "module": "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.PositiveKernelQuadraticForms",
       "namespace": "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.PositiveKernelTheory",
-      "sha256": "94745f0772895112dad1669e6ad90fb6bfe57b2d9006cdf81c1be1b4522183d2",
-      "byte_count": 2189,
+      "sha256": "de07a1a59c53ba6917090253f58cccc9daf289b48f98f0dfde16aa061182a8d9",
+      "byte_count": 2196,
       "status": "uncompiled-candidate",
       "public_umbrella_member": false,
       "proof_status": "unknown-unreplayed",
@@ -598,11 +598,11 @@
         },
         {
           "kind": "literal",
-          "base64": "aW1wb3J0IEFsZ2VicmEuTGluZWFyQWxnZWJyYS5NYXRyaXhUaGVvcnkuUG9zaXRpdmVLZXJuZWxIZXJtaXRpYW5TeW1tZXRyeQoK",
+          "base64": "aW1wb3J0IEdSV1RTSy5BbGdlYnJhLkxpbmVhckFsZ2VicmEuTWF0cml4VGhlb3J5LlBvc2l0aXZlS2VybmVsSGVybWl0aWFuU3ltbWV0cnkKCg==",
           "reason": "candidate dependency supplying kernel data and coercion instance",
           "output_start": 1162,
-          "output_end": 1237,
-          "sha256": "ac1eb8f5e39e234ed3b06f1bd7e583889d5a08f045f3c4c1d1d1d3ca4bbebfa3"
+          "output_end": 1244,
+          "sha256": "83ccb54d99386ba295bce08edc00c35dc57456b0d2158c40af2d6650354539a8"
         },
         {
           "kind": "copy",
@@ -610,8 +610,8 @@
           "start": 82,
           "end": 423,
           "reason": "retain complete original whole-file documentation",
-          "output_start": 1237,
-          "output_end": 1578,
+          "output_start": 1244,
+          "output_end": 1585,
           "sha256": "e8e4b860baa4390f76f166840400811547f7a957022e1d889711e3efd45339a3"
         },
         {
@@ -620,16 +620,16 @@
           "start": 423,
           "end": 446,
           "reason": "retain original noncomputable section",
-          "output_start": 1578,
-          "output_end": 1601,
+          "output_start": 1585,
+          "output_end": 1608,
           "sha256": "de2bdf29f369260cf4a3a3e2ce381fffbb8aeaa782f28a42ee531a2e6f1372fc"
         },
         {
           "kind": "literal",
           "base64": "bmFtZXNwYWNlIEdSV1RTSy5BbGdlYnJhLkxpbmVhckFsZ2VicmEuTWF0cml4VGhlb3J5LlBvc2l0aXZlS2VybmVsVGhlb3J5Cgo=",
           "reason": "explicit containing namespace replacement shared with kernel object",
-          "output_start": 1601,
-          "output_end": 1675,
+          "output_start": 1608,
+          "output_end": 1682,
           "sha256": "291bb1a1aae95f7db816d567ae6e8e7dadebf0d84887cdad64d71ba884e7a068"
         },
         {
@@ -638,8 +638,8 @@
           "start": 472,
           "end": 510,
           "reason": "retain scoped complex order and universe",
-          "output_start": 1675,
-          "output_end": 1713,
+          "output_start": 1682,
+          "output_end": 1720,
           "sha256": "bcd01352f38230126da30c56761e434f4e4cc005fec2c0e25aca39ec8ca335ac"
         },
         {
@@ -648,8 +648,8 @@
           "start": 692,
           "end": 745,
           "reason": "retain PositiveKernel namespace and Index variable",
-          "output_start": 1713,
-          "output_end": 1766,
+          "output_start": 1720,
+          "output_end": 1773,
           "sha256": "854a008f33b4fa9f5b6eb26f12b70529972d19e65c8c461a6e5ab5ad7f09f891"
         },
         {
@@ -658,8 +658,8 @@
           "start": 1534,
           "end": 1865,
           "reason": "retain finite-support quadratic-form theorem verbatim",
-          "output_start": 1766,
-          "output_end": 2097,
+          "output_start": 1773,
+          "output_end": 2104,
           "sha256": "071602a648e64267664c8ac365a2ffa95d1426d276e3faf2aeb7529188257d3c"
         },
         {
@@ -668,16 +668,16 @@
           "start": 1865,
           "end": 1885,
           "reason": "retain object namespace closure",
-          "output_start": 2097,
-          "output_end": 2117,
+          "output_start": 2104,
+          "output_end": 2124,
           "sha256": "1394c6976fc7189a690861ced04c00ff256bbf358692259f821584fa22f094eb"
         },
         {
           "kind": "literal",
           "base64": "ZW5kIEdSV1RTSy5BbGdlYnJhLkxpbmVhckFsZ2VicmEuTWF0cml4VGhlb3J5LlBvc2l0aXZlS2VybmVsVGhlb3J5CgplbmQK",
           "reason": "close replacement namespace and explicit noncomputable section",
-          "output_start": 2117,
-          "output_end": 2189,
+          "output_start": 2124,
+          "output_end": 2196,
           "sha256": "928e9c197085886fd921fd4cf3e8958f9bff5c219aaca49c38d4732619d0dd81"
         }
       ],
@@ -714,8 +714,8 @@
     ],
     "cross_component_imports": [
       {
-        "from": "candidates/attribution-254/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelQuadraticForms.lean",
-        "to": "candidates/attribution-254/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelHermitianSymmetry.lean"
+        "from": "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelQuadraticForms.lean",
+        "to": "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelHermitianSymmetry.lean"
       }
     ],
     "namespace_strategy": "same new GRWTSK object namespace across two candidate modules; declaration basenames and attributes retained",
@@ -750,7 +750,13 @@
     "No public library admission without a separate explicit mathematical review."
   ],
   "declaration_map_scope": "Explicit source declaration commands, including anonymous instance bytes. Generated constructor/field/recursor/instance names are not independently enumerated or replayed.",
-  "candidate_import_root": "candidates/attribution-254",
+  "placement_correction": {
+    "reason": "Owner requires every reviewed Lean module directly under GRWTSK by mathematical subject",
+    "module_search_root": ".",
+    "source_statement_and_proof_bytes": "unchanged",
+    "compilation_run": false
+  },
+  "candidate_import_root": ".",
   "shared_attribution_record": "MATH-ATTRIBUTION-254",
   "approved_attribution": [
     {

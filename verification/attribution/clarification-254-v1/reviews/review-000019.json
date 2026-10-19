@@ -215,7 +215,7 @@
         "sha256": "719aa896b0c9188a1bfd3a100775408d8ca52e20b832a3b399dddb25a736adfb"
       },
       "body_kind": "definition",
-      "candidate_path": "candidates/attribution-254/Analysis/FunctionSpaces/LebesgueSpaces/FullLineKernelAverages/Translations.lean",
+      "candidate_path": "GRWTSK/Analysis/FunctionSpaces/LebesgueSpaces/FullLineKernelAverages/Translations.lean",
       "statement_and_proof_bytes": "EXACT_COPY",
       "semantic_preservation": "UNKNOWN_UNREPLAYED_NAMESPACE_AND_CONTEXT",
       "original": "OperatorScoutScratch.FullH",
@@ -249,7 +249,7 @@
         "sha256": "8c4e895e6d989e7e29cc1e2b50daa2073f7f77b46252738d1c8482ccd3465e2c"
       },
       "body_kind": "definition",
-      "candidate_path": "candidates/attribution-254/Analysis/FunctionSpaces/LebesgueSpaces/FullLineKernelAverages/Translations.lean",
+      "candidate_path": "GRWTSK/Analysis/FunctionSpaces/LebesgueSpaces/FullLineKernelAverages/Translations.lean",
       "statement_and_proof_bytes": "EXACT_COPY",
       "semantic_preservation": "UNKNOWN_UNREPLAYED_NAMESPACE_AND_CONTEXT",
       "original": "OperatorScoutScratch.fullShift",
@@ -283,7 +283,7 @@
         "sha256": "b3cdf7ffc2315452d1cd9096a14b7994ef2afd41c643a0e04905f33e68a12683"
       },
       "body_kind": "proof",
-      "candidate_path": "candidates/attribution-254/Analysis/FunctionSpaces/LebesgueSpaces/FullLineKernelAverages/Translations.lean",
+      "candidate_path": "GRWTSK/Analysis/FunctionSpaces/LebesgueSpaces/FullLineKernelAverages/Translations.lean",
       "statement_and_proof_bytes": "EXACT_COPY",
       "semantic_preservation": "UNKNOWN_UNREPLAYED_NAMESPACE_AND_CONTEXT",
       "original": "OperatorScoutScratch.fullShift_ae",
@@ -317,7 +317,7 @@
         "sha256": "acdc7c655bc333de8948110746975cc741642aa2d8c59cca61be83b26d6baeab"
       },
       "body_kind": "proof",
-      "candidate_path": "candidates/attribution-254/Analysis/FunctionSpaces/LebesgueSpaces/FullLineKernelAverages/Translations.lean",
+      "candidate_path": "GRWTSK/Analysis/FunctionSpaces/LebesgueSpaces/FullLineKernelAverages/Translations.lean",
       "statement_and_proof_bytes": "EXACT_COPY",
       "semantic_preservation": "UNKNOWN_UNREPLAYED_NAMESPACE_AND_CONTEXT",
       "original": "OperatorScoutScratch.fullShift_continuous",
@@ -351,7 +351,7 @@
         "sha256": "7ea2740a5051b48af2b4aaa7bbb47c1c096d9e5ca91e98d9caf4dd7812528569"
       },
       "body_kind": "proof",
-      "candidate_path": "candidates/attribution-254/Analysis/FunctionSpaces/LebesgueSpaces/HalfLineExtension/ZeroExtensionMemLp.lean",
+      "candidate_path": "GRWTSK/Analysis/FunctionSpaces/LebesgueSpaces/HalfLineExtension/ZeroExtensionMemLp.lean",
       "statement_and_proof_bytes": "EXACT_COPY",
       "semantic_preservation": "UNKNOWN_UNREPLAYED_NAMESPACE_AND_CONTEXT",
       "original": "OperatorScoutScratch.halfLine_zeroExtension_memLp",
@@ -365,8 +365,8 @@
         "sha256": "019e2e083e5b7293cb3b6623158dbf07e67ed689746d5357349d1400d745dcfe"
       },
       "candidate_command_span": {
-        "start": 2712,
-        "end": 3208,
+        "start": 2719,
+        "end": 3215,
         "sha256": "019e2e083e5b7293cb3b6623158dbf07e67ed689746d5357349d1400d745dcfe"
       },
       "declaration_text_span": {
@@ -385,7 +385,7 @@
         "sha256": "903eeb999255f7f5ffbc91736d079d3116d4240bba113976b8fdb987e778a56c"
       },
       "body_kind": "proof",
-      "candidate_path": "candidates/attribution-254/Analysis/MeasureTheory/IntegrationTheorems/LpKernelAverages/WeightedShiftIntegral.lean",
+      "candidate_path": "GRWTSK/Analysis/MeasureTheory/IntegrationTheorems/LpKernelAverages/WeightedShiftIntegral.lean",
       "statement_and_proof_bytes": "EXACT_COPY",
       "semantic_preservation": "UNKNOWN_UNREPLAYED_NAMESPACE_AND_CONTEXT",
       "original": "OperatorScoutScratch.weighted_shift_integrable",
@@ -399,8 +399,8 @@
         "sha256": "f9f00f484ce473b19e4b91195a6b193000ac115bda63dfd1669efd7b50406f01"
       },
       "candidate_command_span": {
-        "start": 3208,
-        "end": 3392,
+        "start": 3215,
+        "end": 3399,
         "sha256": "f9f00f484ce473b19e4b91195a6b193000ac115bda63dfd1669efd7b50406f01"
       },
       "declaration_text_span": {
@@ -419,7 +419,7 @@
         "sha256": "03568805fe4229ebaa31c553ce0f2bdac6d8e118d26400360dc9318a2b000f33"
       },
       "body_kind": "definition",
-      "candidate_path": "candidates/attribution-254/Analysis/MeasureTheory/IntegrationTheorems/LpKernelAverages/WeightedShiftIntegral.lean",
+      "candidate_path": "GRWTSK/Analysis/MeasureTheory/IntegrationTheorems/LpKernelAverages/WeightedShiftIntegral.lean",
       "statement_and_proof_bytes": "EXACT_COPY",
       "semantic_preservation": "UNKNOWN_UNREPLAYED_NAMESPACE_AND_CONTEXT",
       "original": "OperatorScoutScratch.bochnerVector",
@@ -433,8 +433,8 @@
         "sha256": "9fa6e86484f0884a41d98463097bf0555ac50c81a10776bb8a775d2fa12bf9ce"
       },
       "candidate_command_span": {
-        "start": 3392,
-        "end": 3738,
+        "start": 3399,
+        "end": 3745,
         "sha256": "9fa6e86484f0884a41d98463097bf0555ac50c81a10776bb8a775d2fa12bf9ce"
       },
       "declaration_text_span": {
@@ -453,7 +453,7 @@
         "sha256": "5577ab504079945d86fa01cc70547be7a917e9e6c57711c091243a8d0ffde3bc"
       },
       "body_kind": "proof",
-      "candidate_path": "candidates/attribution-254/Analysis/MeasureTheory/IntegrationTheorems/LpKernelAverages/WeightedShiftIntegral.lean",
+      "candidate_path": "GRWTSK/Analysis/MeasureTheory/IntegrationTheorems/LpKernelAverages/WeightedShiftIntegral.lean",
       "statement_and_proof_bytes": "EXACT_COPY",
       "semantic_preservation": "UNKNOWN_UNREPLAYED_NAMESPACE_AND_CONTEXT",
       "original": "OperatorScoutScratch.bochnerVector_norm_le",
@@ -462,12 +462,12 @@
   ],
   "outputs": [
     {
-      "path": "candidates/attribution-254/Analysis/FunctionSpaces/LebesgueSpaces/FullLineKernelAverages/Translations.lean",
+      "path": "GRWTSK/Analysis/FunctionSpaces/LebesgueSpaces/FullLineKernelAverages/Translations.lean",
       "mode": "100644",
-      "module": "Analysis.FunctionSpaces.LebesgueSpaces.FullLineKernelAverages.Translations",
-      "logical_module": "Analysis.FunctionSpaces.LebesgueSpaces.FullLineKernelAverages.Translations",
+      "module": "GRWTSK.Analysis.FunctionSpaces.LebesgueSpaces.FullLineKernelAverages.Translations",
+      "logical_module": "GRWTSK.Analysis.FunctionSpaces.LebesgueSpaces.FullLineKernelAverages.Translations",
       "namespace": "GRWTSK.Analysis.FunctionSpaces.LebesgueSpaces.FullLineKernelAverages",
-      "candidate_import_root": "candidates/attribution-254",
+      "candidate_import_root": ".",
       "role": "candidate-dependency-binding-unresolved",
       "sha256": "037184433464f7fa32f208d38721d7a4960f58decb1ef5b4e1d74ff572757060",
       "byte_count": 3413,
@@ -563,12 +563,12 @@
       "third_credit": "Cache warming and model sculpting: the countless, often unnamed mathematicians, enthusiasts, and curious minds whose work and questions have helped shape these tools, and who now have new ways to pursue mathematical answers to the endlessly deep question: “Why?”"
     },
     {
-      "path": "candidates/attribution-254/Analysis/FunctionSpaces/LebesgueSpaces/HalfLineExtension/ZeroExtensionMemLp.lean",
+      "path": "GRWTSK/Analysis/FunctionSpaces/LebesgueSpaces/HalfLineExtension/ZeroExtensionMemLp.lean",
       "mode": "100644",
-      "module": "Analysis.FunctionSpaces.LebesgueSpaces.HalfLineExtension.ZeroExtensionMemLp",
-      "logical_module": "Analysis.FunctionSpaces.LebesgueSpaces.HalfLineExtension.ZeroExtensionMemLp",
+      "module": "GRWTSK.Analysis.FunctionSpaces.LebesgueSpaces.HalfLineExtension.ZeroExtensionMemLp",
+      "logical_module": "GRWTSK.Analysis.FunctionSpaces.LebesgueSpaces.HalfLineExtension.ZeroExtensionMemLp",
       "namespace": "GRWTSK.Analysis.FunctionSpaces.LebesgueSpaces.FullLineKernelAverages",
-      "candidate_import_root": "candidates/attribution-254",
+      "candidate_import_root": ".",
       "role": "source-adapter-candidate-dependency-binding-unresolved",
       "sha256": "c7427cfa3ec8a27fd155cf4229ef9538659b13d1dbe5cd2dcfb0b231f38dd5da",
       "byte_count": 2756,
@@ -664,15 +664,15 @@
       "third_credit": "Cache warming and model sculpting: the countless, often unnamed mathematicians, enthusiasts, and curious minds whose work and questions have helped shape these tools, and who now have new ways to pursue mathematical answers to the endlessly deep question: “Why?”"
     },
     {
-      "path": "candidates/attribution-254/Analysis/MeasureTheory/IntegrationTheorems/LpKernelAverages/WeightedShiftIntegral.lean",
+      "path": "GRWTSK/Analysis/MeasureTheory/IntegrationTheorems/LpKernelAverages/WeightedShiftIntegral.lean",
       "mode": "100644",
-      "module": "Analysis.MeasureTheory.IntegrationTheorems.LpKernelAverages.WeightedShiftIntegral",
-      "logical_module": "Analysis.MeasureTheory.IntegrationTheorems.LpKernelAverages.WeightedShiftIntegral",
+      "module": "GRWTSK.Analysis.MeasureTheory.IntegrationTheorems.LpKernelAverages.WeightedShiftIntegral",
+      "logical_module": "GRWTSK.Analysis.MeasureTheory.IntegrationTheorems.LpKernelAverages.WeightedShiftIntegral",
       "namespace": "GRWTSK.Analysis.FunctionSpaces.LebesgueSpaces.FullLineKernelAverages",
-      "candidate_import_root": "candidates/attribution-254",
+      "candidate_import_root": ".",
       "role": "source-adapter-candidate-dependency-binding-unresolved",
-      "sha256": "f3f5fa63f15130bb3e067759e7827e87d38481d87653c14b7486837b5cf5252d",
-      "byte_count": 3815,
+      "sha256": "18190ef5131d7529dd6cbc6121dfe7b81b9a199ce309cac325a98f035a7085cf",
+      "byte_count": 3822,
       "recipe": [
         {
           "kind": "literal",
@@ -695,10 +695,10 @@
         {
           "kind": "literal",
           "reason": "explicit candidate-local dependency on full-line translation data and continuity",
-          "base64": "aW1wb3J0IEFuYWx5c2lzLkZ1bmN0aW9uU3BhY2VzLkxlYmVzZ3VlU3BhY2VzLkZ1bGxMaW5lS2VybmVsQXZlcmFnZXMuVHJhbnNsYXRpb25zCg==",
+          "base64": "aW1wb3J0IEdSV1RTSy5BbmFseXNpcy5GdW5jdGlvblNwYWNlcy5MZWJlc2d1ZVNwYWNlcy5GdWxsTGluZUtlcm5lbEF2ZXJhZ2VzLlRyYW5zbGF0aW9ucwo=",
           "output_start": 2356,
-          "output_end": 2438,
-          "sha256": "bb170887fd936a5fdf4e27f2a67c660c760726dd9d601e13ec76cf1bb3430ebf"
+          "output_end": 2445,
+          "sha256": "d5af4489c4853185d2a9a7ee3c5e50b9aa68f1c5542d25aac6b11de788b49e5b"
         },
         {
           "kind": "copy",
@@ -706,16 +706,16 @@
           "start": 299,
           "end": 330,
           "reason": "original spacing and autoImplicit option",
-          "output_start": 2438,
-          "output_end": 2469,
+          "output_start": 2445,
+          "output_end": 2476,
           "sha256": "46e69384cbba73e242bcf29ba7b5c1745cc0ff79df3b00b983b4ddc555345890"
         },
         {
           "kind": "literal",
           "reason": "same GRWTSK namespace preserves original unqualified FullH/fullShift references",
           "base64": "bmFtZXNwYWNlIEdSV1RTSy5BbmFseXNpcy5GdW5jdGlvblNwYWNlcy5MZWJlc2d1ZVNwYWNlcy5GdWxsTGluZUtlcm5lbEF2ZXJhZ2VzCg==",
-          "output_start": 2469,
-          "output_end": 2548,
+          "output_start": 2476,
+          "output_end": 2555,
           "sha256": "67e7c17cc205a698c4a366b59a06d5001fd99e2d363926b5b000ef05c2616b7f"
         },
         {
@@ -724,8 +724,8 @@
           "start": 361,
           "end": 525,
           "reason": "exact source namespace-open context, no Scratch alias substitution",
-          "output_start": 2548,
-          "output_end": 2712,
+          "output_start": 2555,
+          "output_end": 2719,
           "sha256": "143b3f739aaff1a630ca195676eeb202aa562cc7061b1acffc4efe84de5103cc"
         },
         {
@@ -734,8 +734,8 @@
           "start": 1567,
           "end": 2593,
           "reason": "exact weighted integrability, Bochner definition and norm-bound commands",
-          "output_start": 2712,
-          "output_end": 3738,
+          "output_start": 2719,
+          "output_end": 3745,
           "sha256": "4bb00dad3d324978dab95c5f608f922f790422ec9073774cc3fe5b1717afdc70"
         },
         {
@@ -744,16 +744,16 @@
           "start": 2593,
           "end": 2597,
           "reason": "original noncomputable section close",
-          "output_start": 3738,
-          "output_end": 3742,
+          "output_start": 3745,
+          "output_end": 3749,
           "sha256": "48332fe667bc51ac4a51ba0efe734441c90def55c60a26d7db275ecbbcf42f15"
         },
         {
           "kind": "literal",
           "reason": "new namespace close",
           "base64": "ZW5kIEdSV1RTSy5BbmFseXNpcy5GdW5jdGlvblNwYWNlcy5MZWJlc2d1ZVNwYWNlcy5GdWxsTGluZUtlcm5lbEF2ZXJhZ2VzCg==",
-          "output_start": 3742,
-          "output_end": 3815,
+          "output_start": 3749,
+          "output_end": 3822,
           "sha256": "6fddd5d03647686fa607cc6b2ec1cb9be97d4f1b81301b781ee830c67ae14cd2"
         }
       ],
@@ -818,8 +818,8 @@
     "namespace_resolution": "UNKNOWN_UNREPLAYED",
     "cross_component_imports": [
       {
-        "from": "Analysis.MeasureTheory.IntegrationTheorems.LpKernelAverages.WeightedShiftIntegral",
-        "to": "Analysis.FunctionSpaces.LebesgueSpaces.FullLineKernelAverages.Translations"
+        "from": "GRWTSK.Analysis.MeasureTheory.IntegrationTheorems.LpKernelAverages.WeightedShiftIntegral",
+        "to": "GRWTSK.Analysis.FunctionSpaces.LebesgueSpaces.FullLineKernelAverages.Translations"
       }
     ],
     "same_file_edges": [
@@ -849,7 +849,7 @@
     "Verify explicit module search-root staging and shared candidate namespace.",
     "Only after source movement and compilation authorization, replay dependencies, candidates, owned axioms and actual consumers; no source receipt transfers."
   ],
-  "candidate_import_root": "candidates/attribution-254",
+  "candidate_import_root": ".",
   "representative_original_path": "/Users/think/Desktop/NoeaaeueFormal/scratch/spectral-zero-energy/OperatorScout.lean",
   "concept_decision": "THREE_COMPONENTS_L2_TRANSLATION_HALF_LINE_EXTENSION_AND_WEIGHTED_BOCHNER_VECTOR",
   "conceptual_seam_count": 2,
@@ -865,6 +865,12 @@
     "The source explicit no-half-line-convolution claim is preserved with its attached Bochner definition comment.",
     "Peer correction: WeightedShiftIntegral header identifies its own primary integration-theorems node; Lebesgue spaces remains secondary. No statement, proof, import or namespace context changed."
   ],
+  "placement_correction": {
+    "reason": "Owner requires every reviewed Lean module directly under GRWTSK by mathematical subject",
+    "module_search_root": ".",
+    "source_statement_and_proof_bytes": "unchanged",
+    "compilation_run": false
+  },
   "shared_attribution_record": "MATH-ATTRIBUTION-254",
   "approved_attribution": [
     {

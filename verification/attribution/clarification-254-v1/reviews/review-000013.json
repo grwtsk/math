@@ -161,12 +161,12 @@
   "declaration_map": [],
   "outputs": [
     {
-      "path": "candidates/attribution-254/Analysis/RealAnalysis/Integration/ReciprocalKernel/Checks/Audit/ConsumerProbe.lean",
+      "path": "GRWTSK/Analysis/RealAnalysis/Integration/ReciprocalKernel/Checks/Audit/ConsumerProbe.lean",
       "mode": "100644",
-      "module": "Analysis.RealAnalysis.Integration.ReciprocalKernel.Checks.Audit.ConsumerProbe",
-      "logical_module": "Analysis.RealAnalysis.Integration.ReciprocalKernel.Checks.Audit.ConsumerProbe",
+      "module": "GRWTSK.Analysis.RealAnalysis.Integration.ReciprocalKernel.Checks.Audit.ConsumerProbe",
+      "logical_module": "GRWTSK.Analysis.RealAnalysis.Integration.ReciprocalKernel.Checks.Audit.ConsumerProbe",
       "namespace": "GRWTSK.Analysis.RealAnalysis.Integration.ReciprocalKernel.Checks.Audit.ConsumerProbe",
-      "candidate_import_root": "candidates/attribution-254",
+      "candidate_import_root": ".",
       "role": "audit-control-candidate",
       "sha256": "a560996d1c2069f2dd833efc7b3b576b7acfae663470efff9c3522f52402570e",
       "byte_count": 2640,
@@ -276,7 +276,7 @@
     "Pin/replay the original dependency environment and exact imported kernel source; archival observation is not provider activation.",
     "Execute diagnostic or example commands only after compilation is authorized; retain resulting evidence separately."
   ],
-  "candidate_import_root": "candidates/attribution-254",
+  "candidate_import_root": ".",
   "representative_original_path": "/Users/think/Desktop/NoeaaeueFormal/scratch/reciprocal_audit.lean",
   "concept_decision": "ONE_COHERENT_SOURCE_CONSUMER_AUDIT",
   "conceptual_seam_count": 0,
@@ -310,7 +310,7 @@
         "sha256": "8788944021c0b5e60b42517347d21403d15dffa9f6c542bbaba25f9fad90d547"
       },
       "body_kind": "proof",
-      "candidate_path": "candidates/attribution-254/Analysis/RealAnalysis/Integration/ReciprocalKernel/Checks/Audit/ConsumerProbe.lean",
+      "candidate_path": "GRWTSK/Analysis/RealAnalysis/Integration/ReciprocalKernel/Checks/Audit/ConsumerProbe.lean",
       "statement_and_proof_bytes": "EXACT_COPY",
       "semantic_preservation": "UNKNOWN_UNREPLAYED_NAMESPACE_AND_CONTEXT",
       "source_command_identity": "476814e9f1c81cce40cd7a1952d0f3f04789798c0985bb91cfd439b2d7bcbe9b:byte:374:anonymous-example",
@@ -345,7 +345,7 @@
         "sha256": "93658ced5b11a7884c8e2631c657eed9162e57859e64ef5e04611e528e7c0393"
       },
       "body_kind": "proof",
-      "candidate_path": "candidates/attribution-254/Analysis/RealAnalysis/Integration/ReciprocalKernel/Checks/Audit/ConsumerProbe.lean",
+      "candidate_path": "GRWTSK/Analysis/RealAnalysis/Integration/ReciprocalKernel/Checks/Audit/ConsumerProbe.lean",
       "statement_and_proof_bytes": "EXACT_COPY",
       "semantic_preservation": "UNKNOWN_UNREPLAYED_NAMESPACE_AND_CONTEXT",
       "source_command_identity": "476814e9f1c81cce40cd7a1952d0f3f04789798c0985bb91cfd439b2d7bcbe9b:byte:446:anonymous-example",
@@ -380,7 +380,7 @@
         "sha256": "adb98b0d0cccfda51597106ecdfa38befe3857ccc0dcc2d9959e7950d8b60efc"
       },
       "body_kind": "proof",
-      "candidate_path": "candidates/attribution-254/Analysis/RealAnalysis/Integration/ReciprocalKernel/Checks/Audit/ConsumerProbe.lean",
+      "candidate_path": "GRWTSK/Analysis/RealAnalysis/Integration/ReciprocalKernel/Checks/Audit/ConsumerProbe.lean",
       "statement_and_proof_bytes": "EXACT_COPY",
       "semantic_preservation": "UNKNOWN_UNREPLAYED_NAMESPACE_AND_CONTEXT",
       "source_command_identity": "476814e9f1c81cce40cd7a1952d0f3f04789798c0985bb91cfd439b2d7bcbe9b:byte:551:anonymous-example",
@@ -401,7 +401,7 @@
         "sha256": "896868bd9410c878aac392bbbf2b23e3129da9a34adaadd0fb83554ef14a5498"
       },
       "kind": "#check",
-      "candidate_path": "candidates/attribution-254/Analysis/RealAnalysis/Integration/ReciprocalKernel/Checks/Audit/ConsumerProbe.lean",
+      "candidate_path": "GRWTSK/Analysis/RealAnalysis/Integration/ReciprocalKernel/Checks/Audit/ConsumerProbe.lean",
       "execution": "NOT_RUN",
       "evidence_strength": "SOURCE_COMMAND_ONLY_NO_RESULT"
     },
@@ -417,7 +417,7 @@
         "sha256": "1e2625d83da1f307a860f8c28ebe5dc14bd2a237e2fa0d65d1e5abe3311252fa"
       },
       "kind": "#check",
-      "candidate_path": "candidates/attribution-254/Analysis/RealAnalysis/Integration/ReciprocalKernel/Checks/Audit/ConsumerProbe.lean",
+      "candidate_path": "GRWTSK/Analysis/RealAnalysis/Integration/ReciprocalKernel/Checks/Audit/ConsumerProbe.lean",
       "execution": "NOT_RUN",
       "evidence_strength": "SOURCE_COMMAND_ONLY_NO_RESULT"
     },
@@ -433,7 +433,7 @@
         "sha256": "99591f46c9125dd32bbe0e612801863ccafdb8daaaa5884617276965933472f4"
       },
       "kind": "#check",
-      "candidate_path": "candidates/attribution-254/Analysis/RealAnalysis/Integration/ReciprocalKernel/Checks/Audit/ConsumerProbe.lean",
+      "candidate_path": "GRWTSK/Analysis/RealAnalysis/Integration/ReciprocalKernel/Checks/Audit/ConsumerProbe.lean",
       "execution": "NOT_RUN",
       "evidence_strength": "SOURCE_COMMAND_ONLY_NO_RESULT"
     },
@@ -449,7 +449,7 @@
         "sha256": "e1453d3704ec7adf84fb859ca8e7179777342e7c3b3993594a9f5436e9365983"
       },
       "kind": "#check",
-      "candidate_path": "candidates/attribution-254/Analysis/RealAnalysis/Integration/ReciprocalKernel/Checks/Audit/ConsumerProbe.lean",
+      "candidate_path": "GRWTSK/Analysis/RealAnalysis/Integration/ReciprocalKernel/Checks/Audit/ConsumerProbe.lean",
       "execution": "NOT_RUN",
       "evidence_strength": "SOURCE_COMMAND_ONLY_NO_RESULT"
     },
@@ -465,7 +465,7 @@
         "sha256": "195f4a7e2140a83d16c808c3f5e895d6fb058cf4927114e7e43510ed38c0c299"
       },
       "kind": "#print",
-      "candidate_path": "candidates/attribution-254/Analysis/RealAnalysis/Integration/ReciprocalKernel/Checks/Audit/ConsumerProbe.lean",
+      "candidate_path": "GRWTSK/Analysis/RealAnalysis/Integration/ReciprocalKernel/Checks/Audit/ConsumerProbe.lean",
       "execution": "NOT_RUN",
       "evidence_strength": "SOURCE_COMMAND_ONLY_NO_RESULT"
     },
@@ -481,7 +481,7 @@
         "sha256": "da23784322cdd0a0b041dac3b15e4d094470c69551f491d59ffab01fa45eb3fe"
       },
       "kind": "#print",
-      "candidate_path": "candidates/attribution-254/Analysis/RealAnalysis/Integration/ReciprocalKernel/Checks/Audit/ConsumerProbe.lean",
+      "candidate_path": "GRWTSK/Analysis/RealAnalysis/Integration/ReciprocalKernel/Checks/Audit/ConsumerProbe.lean",
       "execution": "NOT_RUN",
       "evidence_strength": "SOURCE_COMMAND_ONLY_NO_RESULT"
     },
@@ -497,7 +497,7 @@
         "sha256": "a6df6f17664ba28b1512385d48fb4130fe0ae66684afb4f8c7b07e84ddf4a681"
       },
       "kind": "#print",
-      "candidate_path": "candidates/attribution-254/Analysis/RealAnalysis/Integration/ReciprocalKernel/Checks/Audit/ConsumerProbe.lean",
+      "candidate_path": "GRWTSK/Analysis/RealAnalysis/Integration/ReciprocalKernel/Checks/Audit/ConsumerProbe.lean",
       "execution": "NOT_RUN",
       "evidence_strength": "SOURCE_COMMAND_ONLY_NO_RESULT"
     },
@@ -513,7 +513,7 @@
         "sha256": "e0fe18a304b5f00ed0ef54b0fc162795ea1e658db2f75a903fe022d8c8ccbcca"
       },
       "kind": "#print",
-      "candidate_path": "candidates/attribution-254/Analysis/RealAnalysis/Integration/ReciprocalKernel/Checks/Audit/ConsumerProbe.lean",
+      "candidate_path": "GRWTSK/Analysis/RealAnalysis/Integration/ReciprocalKernel/Checks/Audit/ConsumerProbe.lean",
       "execution": "NOT_RUN",
       "evidence_strength": "SOURCE_COMMAND_ONLY_NO_RESULT"
     },
@@ -529,7 +529,7 @@
         "sha256": "9608472c20580c21a4ee529cf1d849206b5bd40d9db57e7369cb66b5332c0209"
       },
       "kind": "#print",
-      "candidate_path": "candidates/attribution-254/Analysis/RealAnalysis/Integration/ReciprocalKernel/Checks/Audit/ConsumerProbe.lean",
+      "candidate_path": "GRWTSK/Analysis/RealAnalysis/Integration/ReciprocalKernel/Checks/Audit/ConsumerProbe.lean",
       "execution": "NOT_RUN",
       "evidence_strength": "SOURCE_COMMAND_ONLY_NO_RESULT"
     }
@@ -540,6 +540,12 @@
     "No source diagnostics were executed.",
     "The integrability example quantifies over arbitrary b : ℝ. Its positive endpoint 1/4 is supplied to kernel_integrable with the original norm_num witness; no b > 0 hypothesis is added."
   ],
+  "placement_correction": {
+    "reason": "Owner requires every reviewed Lean module directly under GRWTSK by mathematical subject",
+    "module_search_root": ".",
+    "source_statement_and_proof_bytes": "unchanged",
+    "compilation_run": false
+  },
   "shared_attribution_record": "MATH-ATTRIBUTION-254",
   "approved_attribution": [
     {

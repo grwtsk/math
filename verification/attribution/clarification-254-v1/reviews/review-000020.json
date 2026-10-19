@@ -157,8 +157,8 @@
       "read_status": "READ_DIRECTLY",
       "disposition": "COPIED_TO_CANDIDATES",
       "candidate_paths": [
-        "candidates/attribution-254/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/Moments/CenteredGaussianPolynomialMoments.lean",
-        "candidates/attribution-254/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/Moments/CenteredGaussianAbsoluteMomentBound.lean"
+        "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/Moments/CenteredGaussianPolynomialMoments.lean",
+        "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/Moments/CenteredGaussianAbsoluteMomentBound.lean"
       ]
     },
     {
@@ -168,8 +168,8 @@
       "read_status": "READ_DIRECTLY",
       "disposition": "COPIED_TO_CANDIDATES",
       "candidate_paths": [
-        "candidates/attribution-254/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/Moments/CenteredGaussianPolynomialMoments.lean",
-        "candidates/attribution-254/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/Moments/CenteredGaussianAbsoluteMomentBound.lean"
+        "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/Moments/CenteredGaussianPolynomialMoments.lean",
+        "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/Moments/CenteredGaussianAbsoluteMomentBound.lean"
       ]
     },
     {
@@ -187,7 +187,7 @@
       "read_status": "READ_DIRECTLY",
       "disposition": "COPIED_TO_CANDIDATES",
       "candidate_paths": [
-        "candidates/attribution-254/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/Moments/CenteredGaussianPolynomialMoments.lean"
+        "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/Moments/CenteredGaussianPolynomialMoments.lean"
       ]
     },
     {
@@ -197,7 +197,7 @@
       "read_status": "READ_DIRECTLY",
       "disposition": "COPIED_TO_CANDIDATES",
       "candidate_paths": [
-        "candidates/attribution-254/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/Moments/CenteredGaussianAbsoluteMomentBound.lean"
+        "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/Moments/CenteredGaussianAbsoluteMomentBound.lean"
       ]
     },
     {
@@ -251,7 +251,7 @@
     {
       "original": "GaussianCenteredMoments.integrable_id",
       "candidate": "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.Expectation.Moments.CenteredGaussian.integrable_id",
-      "candidate_path": "candidates/attribution-254/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/Moments/CenteredGaussianPolynomialMoments.lean",
+      "candidate_path": "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/Moments/CenteredGaussianPolynomialMoments.lean",
       "original_span": {
         "start": 263,
         "end": 499,
@@ -277,7 +277,7 @@
     {
       "original": "GaussianCenteredMoments.integrable_square",
       "candidate": "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.Expectation.Moments.CenteredGaussian.integrable_square",
-      "candidate_path": "candidates/attribution-254/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/Moments/CenteredGaussianPolynomialMoments.lean",
+      "candidate_path": "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/Moments/CenteredGaussianPolynomialMoments.lean",
       "original_span": {
         "start": 499,
         "end": 688,
@@ -303,7 +303,7 @@
     {
       "original": "GaussianCenteredMoments.integral_id_zero",
       "candidate": "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.Expectation.Moments.CenteredGaussian.integral_id_zero",
-      "candidate_path": "candidates/attribution-254/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/Moments/CenteredGaussianPolynomialMoments.lean",
+      "candidate_path": "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/Moments/CenteredGaussianPolynomialMoments.lean",
       "original_span": {
         "start": 688,
         "end": 814,
@@ -329,7 +329,7 @@
     {
       "original": "GaussianCenteredMoments.integral_square",
       "candidate": "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.Expectation.Moments.CenteredGaussian.integral_square",
-      "candidate_path": "candidates/attribution-254/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/Moments/CenteredGaussianPolynomialMoments.lean",
+      "candidate_path": "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/Moments/CenteredGaussianPolynomialMoments.lean",
       "original_span": {
         "start": 814,
         "end": 1055,
@@ -355,15 +355,15 @@
     {
       "original": "GaussianCenteredMoments.integrable_abs",
       "candidate": "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.Expectation.Moments.CenteredGaussian.integrable_abs",
-      "candidate_path": "candidates/attribution-254/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/Moments/CenteredGaussianAbsoluteMomentBound.lean",
+      "candidate_path": "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/Moments/CenteredGaussianAbsoluteMomentBound.lean",
       "original_span": {
         "start": 1055,
         "end": 1186,
         "sha256": "c264271d1054964688cc0d142943a36692769a97917e21db0c197e542104f9d2"
       },
       "candidate_span": {
-        "start": 1679,
-        "end": 1810
+        "start": 1686,
+        "end": 1817
       },
       "statement_span": {
         "start": 1055,
@@ -381,15 +381,15 @@
     {
       "original": "GaussianCenteredMoments.integral_abs_le_sqrt",
       "candidate": "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.Expectation.Moments.CenteredGaussian.integral_abs_le_sqrt",
-      "candidate_path": "candidates/attribution-254/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/Moments/CenteredGaussianAbsoluteMomentBound.lean",
+      "candidate_path": "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/Moments/CenteredGaussianAbsoluteMomentBound.lean",
       "original_span": {
         "start": 1186,
         "end": 1759,
         "sha256": "eaab1b5a8962594c27dd0fdc16c0b890729db17201473d6f93570cde4ab4c3a4"
       },
       "candidate_span": {
-        "start": 1810,
-        "end": 2383
+        "start": 1817,
+        "end": 2390
       },
       "statement_span": {
         "start": 1186,
@@ -407,9 +407,9 @@
   ],
   "outputs": [
     {
-      "path": "candidates/attribution-254/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/Moments/CenteredGaussianPolynomialMoments.lean",
+      "path": "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/Moments/CenteredGaussianPolynomialMoments.lean",
       "mode": "100644",
-      "module": "ProbabilityAndMathematicalStatistics.ProbabilityFoundations.Expectation.Moments.CenteredGaussianPolynomialMoments",
+      "module": "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.Expectation.Moments.CenteredGaussianPolynomialMoments",
       "namespace": "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.Expectation.Moments.CenteredGaussian",
       "sha256": "9031f8f1cbad32f2eaa7d7d7c78a4fa188454405dfcb7bc93d6088400f96e28a",
       "byte_count": 2465,
@@ -523,12 +523,12 @@
       ]
     },
     {
-      "path": "candidates/attribution-254/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/Moments/CenteredGaussianAbsoluteMomentBound.lean",
+      "path": "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/Moments/CenteredGaussianAbsoluteMomentBound.lean",
       "mode": "100644",
-      "module": "ProbabilityAndMathematicalStatistics.ProbabilityFoundations.Expectation.Moments.CenteredGaussianAbsoluteMomentBound",
+      "module": "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.Expectation.Moments.CenteredGaussianAbsoluteMomentBound",
       "namespace": "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.Expectation.Moments.CenteredGaussian",
-      "sha256": "be4f8eb04ffb241afa37be98577fb1b7ff73b09e609ec8a4a4a9fdb77cb8f73a",
-      "byte_count": 2491,
+      "sha256": "da78fbe441adad299bc97e9b42663c467e0f00ffd5cd5597981b3287871352fd",
+      "byte_count": 2498,
       "status": "uncompiled-candidate",
       "public_umbrella_member": false,
       "proof_status": "unknown-unreplayed",
@@ -554,11 +554,11 @@
         },
         {
           "kind": "literal",
-          "base64": "aW1wb3J0IFByb2JhYmlsaXR5QW5kTWF0aGVtYXRpY2FsU3RhdGlzdGljcy5Qcm9iYWJpbGl0eUZvdW5kYXRpb25zLkV4cGVjdGF0aW9uLk1vbWVudHMuQ2VudGVyZWRHYXVzc2lhblBvbHlub21pYWxNb21lbnRzCgo=",
+          "base64": "aW1wb3J0IEdSV1RTSy5Qcm9iYWJpbGl0eUFuZE1hdGhlbWF0aWNhbFN0YXRpc3RpY3MuUHJvYmFiaWxpdHlGb3VuZGF0aW9ucy5FeHBlY3RhdGlvbi5Nb21lbnRzLkNlbnRlcmVkR2F1c3NpYW5Qb2x5bm9taWFsTW9tZW50cwoK",
           "reason": "explicit candidate dependency preserving integrable_id and integral_square references",
           "output_start": 1377,
-          "output_end": 1499,
-          "sha256": "f4ae5ed156f5f2c91d3948cba828a2dfa8557ae22a0ead25a174ce9b5c6fc870"
+          "output_end": 1506,
+          "sha256": "00b319356e6a2fb8138712ea69beaed92cb19930a78380ef9aa05063ccb68af4"
         },
         {
           "kind": "copy",
@@ -566,16 +566,16 @@
           "start": 163,
           "end": 228,
           "reason": "retain original measure/probability opens and scoped notation",
-          "output_start": 1499,
-          "output_end": 1564,
+          "output_start": 1506,
+          "output_end": 1571,
           "sha256": "b2900421ea3bf7f781e58fd215a08eb6f43d19f165feb320846144f32eed2b13"
         },
         {
           "kind": "literal",
           "base64": "bmFtZXNwYWNlIEdSV1RTSy5Qcm9iYWJpbGl0eUFuZE1hdGhlbWF0aWNhbFN0YXRpc3RpY3MuUHJvYmFiaWxpdHlGb3VuZGF0aW9ucy5FeHBlY3RhdGlvbi5Nb21lbnRzLkNlbnRlcmVkR2F1c3NpYW4KCg==",
           "reason": "replace original containing namespace shared with polynomial moment component",
-          "output_start": 1564,
-          "output_end": 1679,
+          "output_start": 1571,
+          "output_end": 1686,
           "sha256": "34be22f5a3162f6371149cae3600aa2ebd46d20be354b3f61e138860c35383c6"
         },
         {
@@ -584,16 +584,16 @@
           "start": 1055,
           "end": 1759,
           "reason": "retain absolute-value integrability and square-root upper bound with complete proofs",
-          "output_start": 1679,
-          "output_end": 2383,
+          "output_start": 1686,
+          "output_end": 2390,
           "sha256": "4cfcf75fdcec2e99455a22fd6350297f97baf0452365d40143638b8115f6f408"
         },
         {
           "kind": "literal",
           "base64": "ZW5kIEdSV1RTSy5Qcm9iYWJpbGl0eUFuZE1hdGhlbWF0aWNhbFN0YXRpc3RpY3MuUHJvYmFiaWxpdHlGb3VuZGF0aW9ucy5FeHBlY3RhdGlvbi5Nb21lbnRzLkNlbnRlcmVkR2F1c3NpYW4K",
           "reason": "close replacement namespace",
-          "output_start": 2383,
-          "output_end": 2491,
+          "output_start": 2390,
+          "output_end": 2498,
           "sha256": "a65ed15f4634acf673bac6f4bc79eb73a036edc57bdfc9c07d39aa1e4e1901f9"
         }
       ],
@@ -659,11 +659,11 @@
     ],
     "cross_component_imports": [
       {
-        "from": "candidates/attribution-254/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/Moments/CenteredGaussianAbsoluteMomentBound.lean",
-        "to": "candidates/attribution-254/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/Moments/CenteredGaussianPolynomialMoments.lean"
+        "from": "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/Moments/CenteredGaussianAbsoluteMomentBound.lean",
+        "to": "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/Moments/CenteredGaussianPolynomialMoments.lean"
       }
     ],
-    "candidate_import_root": "candidates/attribution-254",
+    "candidate_import_root": ".",
     "namespace_strategy": "shared new GRWTSK centered-Gaussian object namespace; original theorem basenames and unqualified references retained",
     "ambient_context": "Original MeasureTheory and ProbabilityTheory opens, ENNReal and NNReal scopes retained exactly in both modules",
     "import_minimization": "NOT_ATTEMPTED; all four original Mathlib imports retained",
@@ -702,7 +702,13 @@
     "absolute_moment_upper_bound_not_equality": true,
     "same_file_dependency_context_preserved_by_explicit_candidate_import": true
   },
-  "candidate_import_root": "candidates/attribution-254",
+  "placement_correction": {
+    "reason": "Owner requires every reviewed Lean module directly under GRWTSK by mathematical subject",
+    "module_search_root": ".",
+    "source_statement_and_proof_bytes": "unchanged",
+    "compilation_run": false
+  },
+  "candidate_import_root": ".",
   "shared_attribution_record": "MATH-ATTRIBUTION-254",
   "approved_attribution": [
     {
