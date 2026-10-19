@@ -35,8 +35,8 @@
   "conceptual_seam_count": 2,
   "components": [
     {
-      "path": "candidates/attribution-254/Algebra/FieldTheory/FieldExtensions/FiniteCumulativeComposita.lean",
-      "module": "Algebra.FieldTheory.FieldExtensions.FiniteCumulativeComposita",
+      "path": "GRWTSK/Algebra/FieldTheory/FieldExtensions/FiniteCumulativeComposita.lean",
+      "module": "GRWTSK.Algebra.FieldTheory.FieldExtensions.FiniteCumulativeComposita",
       "namespace": "GRWTSK.Algebra.FieldTheory.FieldExtensions.FiniteCumulativeComposita",
       "sha256": "4329ce12c209a777b9ff02e26e1cbd1e7fac3cfc25423acc3b4f44ed5000caeb",
       "byte_count": 2860,
@@ -150,8 +150,8 @@
       ]
     },
     {
-      "path": "candidates/attribution-254/Algebra/GroupTheory/ProfiniteGroups/InverseLimits/InverseSystemData/FiniteGroupInverseSystem.lean",
-      "module": "Algebra.GroupTheory.ProfiniteGroups.InverseLimits.InverseSystemData.FiniteGroupInverseSystem",
+      "path": "GRWTSK/Algebra/GroupTheory/ProfiniteGroups/InverseLimits/InverseSystemData/FiniteGroupInverseSystem.lean",
+      "module": "GRWTSK.Algebra.GroupTheory.ProfiniteGroups.InverseLimits.InverseSystemData.FiniteGroupInverseSystem",
       "namespace": "GRWTSK.Algebra.GroupTheory.ProfiniteGroups.InverseLimits.InverseSystemData.FiniteGroupInverseSystem",
       "sha256": "d3df7d50e1fc9263f657364dc9517bac763001a78d21d6a1d00ce7a077078688",
       "byte_count": 3036,
@@ -258,8 +258,8 @@
       ]
     },
     {
-      "path": "candidates/attribution-254/Algebra/GroupTheory/ProfiniteGroups/InverseLimits/InverseSystemData/CompatibilityEquations/FiniteGroupSections.lean",
-      "module": "Algebra.GroupTheory.ProfiniteGroups.InverseLimits.InverseSystemData.CompatibilityEquations.FiniteGroupSections",
+      "path": "GRWTSK/Algebra/GroupTheory/ProfiniteGroups/InverseLimits/InverseSystemData/CompatibilityEquations/FiniteGroupSections.lean",
+      "module": "GRWTSK.Algebra.GroupTheory.ProfiniteGroups.InverseLimits.InverseSystemData.CompatibilityEquations.FiniteGroupSections",
       "namespace": "GRWTSK.Algebra.GroupTheory.ProfiniteGroups.InverseLimits.InverseSystemData.CompatibilityEquations.FiniteGroupSections",
       "sha256": "58d253dc89b1781330eb3af82d9b67aa7546ac86a8ce240eab55c1f49332b1f4",
       "byte_count": 2896,
@@ -422,9 +422,9 @@
   },
   "outputs": [
     {
-      "path": "candidates/attribution-254/Algebra/FieldTheory/FieldExtensions/FiniteCumulativeComposita.lean",
+      "path": "GRWTSK/Algebra/FieldTheory/FieldExtensions/FiniteCumulativeComposita.lean",
       "mode": "100644",
-      "module": "Algebra.FieldTheory.FieldExtensions.FiniteCumulativeComposita",
+      "module": "GRWTSK.Algebra.FieldTheory.FieldExtensions.FiniteCumulativeComposita",
       "namespace": "GRWTSK.Algebra.FieldTheory.FieldExtensions.FiniteCumulativeComposita",
       "sha256": "4329ce12c209a777b9ff02e26e1cbd1e7fac3cfc25423acc3b4f44ed5000caeb",
       "byte_count": 2860,
@@ -499,9 +499,9 @@
       "rationale": "The statements concern finite suprema in the lattice of intermediate fields of the same K-algebra L, their monotonicity and actual algebra inclusions. No Galois, normality or splitting-field hypothesis is added."
     },
     {
-      "path": "candidates/attribution-254/Algebra/GroupTheory/ProfiniteGroups/InverseLimits/InverseSystemData/FiniteGroupInverseSystem.lean",
+      "path": "GRWTSK/Algebra/GroupTheory/ProfiniteGroups/InverseLimits/InverseSystemData/FiniteGroupInverseSystem.lean",
       "mode": "100644",
-      "module": "Algebra.GroupTheory.ProfiniteGroups.InverseLimits.InverseSystemData.FiniteGroupInverseSystem",
+      "module": "GRWTSK.Algebra.GroupTheory.ProfiniteGroups.InverseLimits.InverseSystemData.FiniteGroupInverseSystem",
       "namespace": "GRWTSK.Algebra.GroupTheory.ProfiniteGroups.InverseLimits.InverseSystemData.FiniteGroupInverseSystem",
       "sha256": "d3df7d50e1fc9263f657364dc9517bac763001a78d21d6a1d00ce7a077078688",
       "byte_count": 3036,
@@ -576,12 +576,12 @@
       "rationale": "This component gives finitely indexed finite groups with specified backward homomorphisms and exact identity/composition laws, plus the constant finite-group model. The PMD inverse-system topic is navigational; no topology, infinite limit or decision oracle is constructed."
     },
     {
-      "path": "candidates/attribution-254/Algebra/GroupTheory/ProfiniteGroups/InverseLimits/InverseSystemData/CompatibilityEquations/FiniteGroupSections.lean",
+      "path": "GRWTSK/Algebra/GroupTheory/ProfiniteGroups/InverseLimits/InverseSystemData/CompatibilityEquations/FiniteGroupSections.lean",
       "mode": "100644",
-      "module": "Algebra.GroupTheory.ProfiniteGroups.InverseLimits.InverseSystemData.CompatibilityEquations.FiniteGroupSections",
+      "module": "GRWTSK.Algebra.GroupTheory.ProfiniteGroups.InverseLimits.InverseSystemData.CompatibilityEquations.FiniteGroupSections",
       "namespace": "GRWTSK.Algebra.GroupTheory.ProfiniteGroups.InverseLimits.InverseSystemData.CompatibilityEquations.FiniteGroupSections",
-      "sha256": "58d253dc89b1781330eb3af82d9b67aa7546ac86a8ce240eab55c1f49332b1f4",
-      "byte_count": 2896,
+      "sha256": "5b57decc611b2ed3a069ee6ffeb4b5888c802e24003569628708840f61c6aac2",
+      "byte_count": 2903,
       "status": "uncompiled-candidate",
       "public_umbrella_member": false,
       "proof_status": "unknown-unreplayed",
@@ -607,11 +607,11 @@
         },
         {
           "kind": "literal",
-          "base64": "aW1wb3J0IEFsZ2VicmEuR3JvdXBUaGVvcnkuUHJvZmluaXRlR3JvdXBzLkludmVyc2VMaW1pdHMuSW52ZXJzZVN5c3RlbURhdGEuRmluaXRlR3JvdXBJbnZlcnNlU3lzdGVtCgovLSEKIyBDb21wYXRpYmlsaXR5IGVxdWF0aW9ucyBmb3IgZmluaXRlIGdyb3VwIHNlY3Rpb25zCgpUaGlzIGNvbXBvbmVudCBpc29sYXRlcyB0aGUgZXhwbGljaXQgY29tcGF0aWJpbGl0eSBlcXVhdGlvbnMgYW5kIHRoZSBzZWN0aW9uIGluZHVjZWQgZnJvbSBhbiBhY3R1YWwgbGFzdC1zdGFnZSBlbGVtZW50LiBJdHMgcHJvb2YgdXNlcyB0aGUgc3VwcGxpZWQgcmVzdHJpY3Rpb24tY29tcG9zaXRpb24gbGF3IGFuZCB0aGUgZmluaXRlIGxhc3QtaW5kZXggYm91bmQ7IGl0IGlzIHNlcGFyYXRlIGZyb20gY29uc3RydWN0aW5nIHRoZSBpbnZlcnNlLXN5c3RlbSBkYXRhLgotLwoKbmFtZXNwYWNlIEdSV1RTSy5BbGdlYnJhLkdyb3VwVGhlb3J5LlByb2Zpbml0ZUdyb3Vwcy5JbnZlcnNlTGltaXRzLkludmVyc2VTeXN0ZW1EYXRhLkNvbXBhdGliaWxpdHlFcXVhdGlvbnMuRmluaXRlR3JvdXBTZWN0aW9ucwoKb3BlbiBHUldUU0suQWxnZWJyYS5Hcm91cFRoZW9yeS5Qcm9maW5pdGVHcm91cHMuSW52ZXJzZUxpbWl0cy5JbnZlcnNlU3lzdGVtRGF0YS5GaW5pdGVHcm91cEludmVyc2VTeXN0ZW0KCg==",
+          "base64": "aW1wb3J0IEdSV1RTSy5BbGdlYnJhLkdyb3VwVGhlb3J5LlByb2Zpbml0ZUdyb3Vwcy5JbnZlcnNlTGltaXRzLkludmVyc2VTeXN0ZW1EYXRhLkZpbml0ZUdyb3VwSW52ZXJzZVN5c3RlbQoKLy0hCiMgQ29tcGF0aWJpbGl0eSBlcXVhdGlvbnMgZm9yIGZpbml0ZSBncm91cCBzZWN0aW9ucwoKVGhpcyBjb21wb25lbnQgaXNvbGF0ZXMgdGhlIGV4cGxpY2l0IGNvbXBhdGliaWxpdHkgZXF1YXRpb25zIGFuZCB0aGUgc2VjdGlvbiBpbmR1Y2VkIGZyb20gYW4gYWN0dWFsIGxhc3Qtc3RhZ2UgZWxlbWVudC4gSXRzIHByb29mIHVzZXMgdGhlIHN1cHBsaWVkIHJlc3RyaWN0aW9uLWNvbXBvc2l0aW9uIGxhdyBhbmQgdGhlIGZpbml0ZSBsYXN0LWluZGV4IGJvdW5kOyBpdCBpcyBzZXBhcmF0ZSBmcm9tIGNvbnN0cnVjdGluZyB0aGUgaW52ZXJzZS1zeXN0ZW0gZGF0YS4KLS8KCm5hbWVzcGFjZSBHUldUU0suQWxnZWJyYS5Hcm91cFRoZW9yeS5Qcm9maW5pdGVHcm91cHMuSW52ZXJzZUxpbWl0cy5JbnZlcnNlU3lzdGVtRGF0YS5Db21wYXRpYmlsaXR5RXF1YXRpb25zLkZpbml0ZUdyb3VwU2VjdGlvbnMKCm9wZW4gR1JXVFNLLkFsZ2VicmEuR3JvdXBUaGVvcnkuUHJvZmluaXRlR3JvdXBzLkludmVyc2VMaW1pdHMuSW52ZXJzZVN5c3RlbURhdGEuRmluaXRlR3JvdXBJbnZlcnNlU3lzdGVtCgo=",
           "reason": "candidate header, taxonomy explanation or explicit namespace/dependency context",
           "output_start": 982,
-          "output_end": 1646,
-          "sha256": "30761fe70d62755f8b9386453bd07fc6211548a1fc4358394c7d35fd57ff0756"
+          "output_end": 1653,
+          "sha256": "44baff2c963ad2d5dd7afd0f9a57ed2ec0509e3b3d0f37b979a91525b8a9b74d"
         },
         {
           "kind": "copy",
@@ -619,8 +619,8 @@
           "start": 2976,
           "end": 3529,
           "reason": "preserve exact source bytes",
-          "output_start": 1646,
-          "output_end": 2199,
+          "output_start": 1653,
+          "output_end": 2206,
           "sha256": "72eaa7249576d39c2beedb74e4d600745a50947ee7158ea663ee54e7a2da1a05"
         },
         {
@@ -629,16 +629,16 @@
           "start": 3976,
           "end": 4550,
           "reason": "preserve exact source bytes",
-          "output_start": 2199,
-          "output_end": 2773,
+          "output_start": 2206,
+          "output_end": 2780,
           "sha256": "c9bd03358bf4808b63653be4d95b034649309849e08020e40524caf37bcdd03f"
         },
         {
           "kind": "literal",
           "base64": "CmVuZCBHUldUU0suQWxnZWJyYS5Hcm91cFRoZW9yeS5Qcm9maW5pdGVHcm91cHMuSW52ZXJzZUxpbWl0cy5JbnZlcnNlU3lzdGVtRGF0YS5Db21wYXRpYmlsaXR5RXF1YXRpb25zLkZpbml0ZUdyb3VwU2VjdGlvbnMK",
           "reason": "explicit namespace closure",
-          "output_start": 2773,
-          "output_end": 2896,
+          "output_start": 2780,
+          "output_end": 2903,
           "sha256": "896d561e78b0d46024aa1b169be92e777126f3bcd2b199670bd5eba21565b4ba"
         }
       ],
@@ -663,9 +663,9 @@
       "read_status": "READ_DIRECTLY",
       "disposition": "COPIED_TO_CANDIDATES",
       "candidate_paths": [
-        "candidates/attribution-254/Algebra/FieldTheory/FieldExtensions/FiniteCumulativeComposita.lean",
-        "candidates/attribution-254/Algebra/GroupTheory/ProfiniteGroups/InverseLimits/InverseSystemData/FiniteGroupInverseSystem.lean",
-        "candidates/attribution-254/Algebra/GroupTheory/ProfiniteGroups/InverseLimits/InverseSystemData/CompatibilityEquations/FiniteGroupSections.lean"
+        "GRWTSK/Algebra/FieldTheory/FieldExtensions/FiniteCumulativeComposita.lean",
+        "GRWTSK/Algebra/GroupTheory/ProfiniteGroups/InverseLimits/InverseSystemData/FiniteGroupInverseSystem.lean",
+        "GRWTSK/Algebra/GroupTheory/ProfiniteGroups/InverseLimits/InverseSystemData/CompatibilityEquations/FiniteGroupSections.lean"
       ]
     },
     {
@@ -683,7 +683,7 @@
       "read_status": "READ_DIRECTLY",
       "disposition": "COPIED_TO_CANDIDATES",
       "candidate_paths": [
-        "candidates/attribution-254/Algebra/FieldTheory/FieldExtensions/FiniteCumulativeComposita.lean"
+        "GRWTSK/Algebra/FieldTheory/FieldExtensions/FiniteCumulativeComposita.lean"
       ]
     },
     {
@@ -693,7 +693,7 @@
       "read_status": "READ_DIRECTLY",
       "disposition": "COPIED_TO_CANDIDATES",
       "candidate_paths": [
-        "candidates/attribution-254/Algebra/FieldTheory/FieldExtensions/FiniteCumulativeComposita.lean"
+        "GRWTSK/Algebra/FieldTheory/FieldExtensions/FiniteCumulativeComposita.lean"
       ]
     },
     {
@@ -703,7 +703,7 @@
       "read_status": "READ_DIRECTLY",
       "disposition": "COPIED_TO_CANDIDATES",
       "candidate_paths": [
-        "candidates/attribution-254/Algebra/GroupTheory/ProfiniteGroups/InverseLimits/InverseSystemData/FiniteGroupInverseSystem.lean"
+        "GRWTSK/Algebra/GroupTheory/ProfiniteGroups/InverseLimits/InverseSystemData/FiniteGroupInverseSystem.lean"
       ]
     },
     {
@@ -713,7 +713,7 @@
       "read_status": "READ_DIRECTLY",
       "disposition": "COPIED_TO_CANDIDATES",
       "candidate_paths": [
-        "candidates/attribution-254/Algebra/GroupTheory/ProfiniteGroups/InverseLimits/InverseSystemData/CompatibilityEquations/FiniteGroupSections.lean"
+        "GRWTSK/Algebra/GroupTheory/ProfiniteGroups/InverseLimits/InverseSystemData/CompatibilityEquations/FiniteGroupSections.lean"
       ]
     },
     {
@@ -723,7 +723,7 @@
       "read_status": "READ_DIRECTLY",
       "disposition": "COPIED_TO_CANDIDATES",
       "candidate_paths": [
-        "candidates/attribution-254/Algebra/GroupTheory/ProfiniteGroups/InverseLimits/InverseSystemData/FiniteGroupInverseSystem.lean"
+        "GRWTSK/Algebra/GroupTheory/ProfiniteGroups/InverseLimits/InverseSystemData/FiniteGroupInverseSystem.lean"
       ]
     },
     {
@@ -733,7 +733,7 @@
       "read_status": "READ_DIRECTLY",
       "disposition": "COPIED_TO_CANDIDATES",
       "candidate_paths": [
-        "candidates/attribution-254/Algebra/GroupTheory/ProfiniteGroups/InverseLimits/InverseSystemData/CompatibilityEquations/FiniteGroupSections.lean"
+        "GRWTSK/Algebra/GroupTheory/ProfiniteGroups/InverseLimits/InverseSystemData/CompatibilityEquations/FiniteGroupSections.lean"
       ]
     },
     {
@@ -799,7 +799,7 @@
     {
       "original": "FormalResearch.SUCAS.Towers.cumulativeField",
       "candidate": "GRWTSK.Algebra.FieldTheory.FieldExtensions.FiniteCumulativeComposita.cumulativeField",
-      "candidate_path": "candidates/attribution-254/Algebra/FieldTheory/FieldExtensions/FiniteCumulativeComposita.lean",
+      "candidate_path": "GRWTSK/Algebra/FieldTheory/FieldExtensions/FiniteCumulativeComposita.lean",
       "source_command_span": {
         "start": 627,
         "end": 759,
@@ -826,7 +826,7 @@
     {
       "original": "FormalResearch.SUCAS.Towers.cumulative_field_mono",
       "candidate": "GRWTSK.Algebra.FieldTheory.FieldExtensions.FiniteCumulativeComposita.cumulative_field_mono",
-      "candidate_path": "candidates/attribution-254/Algebra/FieldTheory/FieldExtensions/FiniteCumulativeComposita.lean",
+      "candidate_path": "GRWTSK/Algebra/FieldTheory/FieldExtensions/FiniteCumulativeComposita.lean",
       "source_command_span": {
         "start": 850,
         "end": 1013,
@@ -853,7 +853,7 @@
     {
       "original": "FormalResearch.SUCAS.Towers.component_le_cumulative",
       "candidate": "GRWTSK.Algebra.FieldTheory.FieldExtensions.FiniteCumulativeComposita.component_le_cumulative",
-      "candidate_path": "candidates/attribution-254/Algebra/FieldTheory/FieldExtensions/FiniteCumulativeComposita.lean",
+      "candidate_path": "GRWTSK/Algebra/FieldTheory/FieldExtensions/FiniteCumulativeComposita.lean",
       "source_command_span": {
         "start": 1100,
         "end": 1270,
@@ -880,7 +880,7 @@
     {
       "original": "FormalResearch.SUCAS.Towers.cumulativeInclusion",
       "candidate": "GRWTSK.Algebra.FieldTheory.FieldExtensions.FiniteCumulativeComposita.cumulativeInclusion",
-      "candidate_path": "candidates/attribution-254/Algebra/FieldTheory/FieldExtensions/FiniteCumulativeComposita.lean",
+      "candidate_path": "GRWTSK/Algebra/FieldTheory/FieldExtensions/FiniteCumulativeComposita.lean",
       "source_command_span": {
         "start": 1363,
         "end": 1580,
@@ -907,7 +907,7 @@
     {
       "original": "FormalResearch.SUCAS.Towers.cumulative_inclusion_comp",
       "candidate": "GRWTSK.Algebra.FieldTheory.FieldExtensions.FiniteCumulativeComposita.cumulative_inclusion_comp",
-      "candidate_path": "candidates/attribution-254/Algebra/FieldTheory/FieldExtensions/FiniteCumulativeComposita.lean",
+      "candidate_path": "GRWTSK/Algebra/FieldTheory/FieldExtensions/FiniteCumulativeComposita.lean",
       "source_command_span": {
         "start": 1661,
         "end": 1924,
@@ -934,7 +934,7 @@
     {
       "original": "FormalResearch.SUCAS.Towers.FiniteInverseSystem",
       "candidate": "GRWTSK.Algebra.GroupTheory.ProfiniteGroups.InverseLimits.InverseSystemData.FiniteGroupInverseSystem.FiniteInverseSystem",
-      "candidate_path": "candidates/attribution-254/Algebra/GroupTheory/ProfiniteGroups/InverseLimits/InverseSystemData/FiniteGroupInverseSystem.lean",
+      "candidate_path": "GRWTSK/Algebra/GroupTheory/ProfiniteGroups/InverseLimits/InverseSystemData/FiniteGroupInverseSystem.lean",
       "source_command_span": {
         "start": 2160,
         "end": 2975,
@@ -951,7 +951,7 @@
     {
       "original": "FormalResearch.SUCAS.Towers.constantInverseSystem",
       "candidate": "GRWTSK.Algebra.GroupTheory.ProfiniteGroups.InverseLimits.InverseSystemData.FiniteGroupInverseSystem.constantInverseSystem",
-      "candidate_path": "candidates/attribution-254/Algebra/GroupTheory/ProfiniteGroups/InverseLimits/InverseSystemData/FiniteGroupInverseSystem.lean",
+      "candidate_path": "GRWTSK/Algebra/GroupTheory/ProfiniteGroups/InverseLimits/InverseSystemData/FiniteGroupInverseSystem.lean",
       "source_command_span": {
         "start": 3709,
         "end": 3975,
@@ -978,15 +978,15 @@
     {
       "original": "FormalResearch.SUCAS.Towers.CompatibleSection",
       "candidate": "GRWTSK.Algebra.GroupTheory.ProfiniteGroups.InverseLimits.InverseSystemData.CompatibilityEquations.FiniteGroupSections.CompatibleSection",
-      "candidate_path": "candidates/attribution-254/Algebra/GroupTheory/ProfiniteGroups/InverseLimits/InverseSystemData/CompatibilityEquations/FiniteGroupSections.lean",
+      "candidate_path": "GRWTSK/Algebra/GroupTheory/ProfiniteGroups/InverseLimits/InverseSystemData/CompatibilityEquations/FiniteGroupSections.lean",
       "source_command_span": {
         "start": 3067,
         "end": 3218,
         "sha256": "9c7599857671685d92ae7b0e7a58ad0dfd91e55d437b0fbb12772c40872214bd"
       },
       "candidate_command_span": {
-        "start": 1737,
-        "end": 1888,
+        "start": 1744,
+        "end": 1895,
         "sha256": "9c7599857671685d92ae7b0e7a58ad0dfd91e55d437b0fbb12772c40872214bd"
       },
       "statement_and_proof_bytes": "EXACT_COPY",
@@ -1005,15 +1005,15 @@
     {
       "original": "FormalResearch.SUCAS.Towers.compatible_section_restrict",
       "candidate": "GRWTSK.Algebra.GroupTheory.ProfiniteGroups.InverseLimits.InverseSystemData.CompatibilityEquations.FiniteGroupSections.compatible_section_restrict",
-      "candidate_path": "candidates/attribution-254/Algebra/GroupTheory/ProfiniteGroups/InverseLimits/InverseSystemData/CompatibilityEquations/FiniteGroupSections.lean",
+      "candidate_path": "GRWTSK/Algebra/GroupTheory/ProfiniteGroups/InverseLimits/InverseSystemData/CompatibilityEquations/FiniteGroupSections.lean",
       "source_command_span": {
         "start": 3313,
         "end": 3528,
         "sha256": "7fdc28dfd83a5e3d269c90702bca39c547c48499f19742e9d76d4cfc9f5960ad"
       },
       "candidate_command_span": {
-        "start": 1983,
-        "end": 2198,
+        "start": 1990,
+        "end": 2205,
         "sha256": "7fdc28dfd83a5e3d269c90702bca39c547c48499f19742e9d76d4cfc9f5960ad"
       },
       "statement_and_proof_bytes": "EXACT_COPY",
@@ -1032,15 +1032,15 @@
     {
       "original": "FormalResearch.SUCAS.Towers.sectionFromLast",
       "candidate": "GRWTSK.Algebra.GroupTheory.ProfiniteGroups.InverseLimits.InverseSystemData.CompatibilityEquations.FiniteGroupSections.sectionFromLast",
-      "candidate_path": "candidates/attribution-254/Algebra/GroupTheory/ProfiniteGroups/InverseLimits/InverseSystemData/CompatibilityEquations/FiniteGroupSections.lean",
+      "candidate_path": "GRWTSK/Algebra/GroupTheory/ProfiniteGroups/InverseLimits/InverseSystemData/CompatibilityEquations/FiniteGroupSections.lean",
       "source_command_span": {
         "start": 4058,
         "end": 4226,
         "sha256": "ddc9b76ff07577283a1ae813732208737bd77d771df1332bed9d6f58d3505ccd"
       },
       "candidate_command_span": {
-        "start": 2281,
-        "end": 2449,
+        "start": 2288,
+        "end": 2456,
         "sha256": "ddc9b76ff07577283a1ae813732208737bd77d771df1332bed9d6f58d3505ccd"
       },
       "statement_and_proof_bytes": "EXACT_COPY",
@@ -1059,15 +1059,15 @@
     {
       "original": "FormalResearch.SUCAS.Towers.section_from_last_compatible",
       "candidate": "GRWTSK.Algebra.GroupTheory.ProfiniteGroups.InverseLimits.InverseSystemData.CompatibilityEquations.FiniteGroupSections.section_from_last_compatible",
-      "candidate_path": "candidates/attribution-254/Algebra/GroupTheory/ProfiniteGroups/InverseLimits/InverseSystemData/CompatibilityEquations/FiniteGroupSections.lean",
+      "candidate_path": "GRWTSK/Algebra/GroupTheory/ProfiniteGroups/InverseLimits/InverseSystemData/CompatibilityEquations/FiniteGroupSections.lean",
       "source_command_span": {
         "start": 4315,
         "end": 4550,
         "sha256": "6186d29ee6bd1966a2f5619d81fbfc464d0c3bb4984cddd597e611fdb12c64ae"
       },
       "candidate_command_span": {
-        "start": 2538,
-        "end": 2773,
+        "start": 2545,
+        "end": 2780,
         "sha256": "6186d29ee6bd1966a2f5619d81fbfc464d0c3bb4984cddd597e611fdb12c64ae"
       },
       "statement_and_proof_bytes": "EXACT_COPY",
@@ -1085,7 +1085,13 @@
     }
   ],
   "declaration_map_scope": "Explicit source declaration commands, including anonymous instance bytes. Generated constructor/field/recursor/instance names are not independently enumerated or replayed.",
-  "candidate_import_root": "candidates/attribution-254",
+  "placement_correction": {
+    "reason": "Owner requires every reviewed Lean module directly under GRWTSK by mathematical subject",
+    "module_search_root": ".",
+    "source_statement_and_proof_bytes": "unchanged",
+    "compilation_run": false
+  },
+  "candidate_import_root": ".",
   "shared_attribution_record": "MATH-ATTRIBUTION-254",
   "approved_attribution": [
     {
