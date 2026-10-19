@@ -84,7 +84,8 @@ def system : GRWTSK.Topology.PortFiber where
   map_comp := by
     intro A B C p q f
     apply Subtype.ext
-    rfl
+    funext z
+    exact congrArg (f : Section A) (Subtype.ext rfl)
 
 /-- The port-fiber map is represented by the exact holomorphic-section restriction homomorphism. -/
 def ringCertificate {A B : Domain} (p : Port A B) :
@@ -124,8 +125,10 @@ def canonical {A B : Domain} (p : Port A B) :
 def composableProperty :
     GRWTSK.Topology.PortFiber.ComposableProperty system where
   Holds := fun p => HolomorphicFiberCertificate p
-  identity := canonical
-  comp := fun {p := p} {q := q} _ _ => canonical (Port.comp p q)
+  identity := fun A => canonical (Port.identity A)
+  comp := by
+    intro A B C p q _ _
+    exact canonical (Port.comp p q)
 
 end HolomorphicFiberCertificate
 
