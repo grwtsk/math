@@ -20,8 +20,15 @@ required chart between an admitted source and an RH-equivalent terminal chart. O
 charts require an exact derivability theorem from the required charts rather than a
 prose assertion of independence.
 
+Paths live in `Type`, not `Prop`. Propositional coverage therefore uses `Nonempty`
+without erasing the data-bearing path type. Proofs eliminate these existence witnesses
+only into propositions; no choice or path extraction into data is needed here.
+
 The terminal equivalence still requires the #231 reverse-direction audit. Path
 existence alone proves only the forward transport to an RH-equivalent terminal.
+This is a sufficient-route coverage interface, not a geometric-cover theorem for
+arbitrary bounded local claims. In particular, including an independently proved
+required statement already makes a completed coverage witness sufficient for RH.
 -/
 
 namespace GRWTSK.RiemannHypothesis
@@ -132,6 +139,18 @@ theorem height_mono
     (atlas.chart i).rootHeight ≤ (atlas.chart j).rootHeight :=
   path.toVerticalStep.height_mono
 
+/-- Existence of composable paths composes propositionally, without selecting a path
+as computational data. -/
+theorem nonempty_trans
+    {ι A X H : Type*} [Ring A] [AddCommGroup H] [Module ℂ H]
+    {atlas : CriticalStripAtlas ι A X H} {i j k : ι}
+    (first : Nonempty (VerticalPath atlas i j))
+    (second : Nonempty (VerticalPath atlas j k)) :
+    Nonempty (VerticalPath atlas i k) := by
+  rcases first with ⟨first⟩
+  rcases second with ⟨second⟩
+  exact ⟨first.trans second⟩
+
 end VerticalPath
 
 namespace AtlasGapReport
@@ -161,7 +180,9 @@ end AtlasGapReport
 /-- Complete source-to-terminal coverage for the required chart set.
 
 An omitted chart is accepted only with a theorem deriving its local statement from all
-required chart statements. This is the proof-level meaning of independence used here. -/
+required chart statements. This is the proof-level meaning of independence used here.
+Each required statement is sufficient for RH through its terminal path; merely local
+bounded-height statements need a separate cover-and-gluing interface. -/
 structure CompleteVerticalCoverage
     {ι A X H : Type*} [Ring A] [AddCommGroup H] [Module ℂ H]
     {atlas : CriticalStripAtlas ι A X H}
@@ -178,8 +199,8 @@ structure CompleteVerticalCoverage
     ∀ i, report.required i →
       ∃ sourceIndex terminalIndex,
         source sourceIndex ∧ terminal terminalIndex ∧
-          VerticalPath atlas sourceIndex i ∧
-            VerticalPath atlas i terminalIndex
+          Nonempty (VerticalPath atlas sourceIndex i) ∧
+            Nonempty (VerticalPath atlas i terminalIndex)
   omitted_independent :
     ∀ i, ¬ report.required i →
       (∀ j, report.required j → (atlas.chart j).localStatement) →
@@ -196,11 +217,11 @@ theorem fullPathThrough
     {i : ι} (hi : report.required i) :
     ∃ sourceIndex terminalIndex,
       coverage.source sourceIndex ∧ coverage.terminal terminalIndex ∧
-        VerticalPath atlas sourceIndex terminalIndex := by
+        Nonempty (VerticalPath atlas sourceIndex terminalIndex) := by
   rcases coverage.pathThrough i hi with
     ⟨sourceIndex, terminalIndex, hsource, hterminal, sourcePath, terminalPath⟩
   exact ⟨sourceIndex, terminalIndex, hsource, hterminal,
-    sourcePath.trans terminalPath⟩
+    VerticalPath.nonempty_trans sourcePath terminalPath⟩
 
 /-- Every required chart statement transports forward to RH through its declared
 terminal path. No reverse implication is inferred from the path. -/
@@ -212,7 +233,7 @@ theorem required_statement_implies_rh
     {i : ι} (hi : report.required i) :
     (atlas.chart i).localStatement → _root_.RiemannHypothesis := by
   rcases coverage.pathThrough i hi with
-    ⟨_sourceIndex, terminalIndex, _hsource, hterminal, _sourcePath, terminalPath⟩
+    ⟨_sourceIndex, terminalIndex, _hsource, hterminal, _sourcePath, ⟨terminalPath⟩⟩
   intro hlocal
   have hterminalStatement : (atlas.chart terminalIndex).localStatement :=
     terminalPath.transports hlocal
@@ -220,6 +241,19 @@ theorem required_statement_implies_rh
     coverage.terminal_equivalent terminalIndex hterminal
   exact (atlas.comparison terminalIndex).forward (Or.inl hstatus)
     hterminalStatement
+
+/-- A proved required lemma plus complete sufficient-route coverage already yields RH.
+This diagnostic makes the strength of coverage explicit: it is not supplied merely by
+constructing a root, a geometric cover, or a connected dependency graph. -/
+theorem rh_of_proved_required_statement
+    {ι A X H : Type*} [Ring A] [AddCommGroup H] [Module ℂ H]
+    {atlas : CriticalStripAtlas ι A X H}
+    {report : AtlasGapReport atlas}
+    (coverage : CompleteVerticalCoverage report)
+    {i : ι} (hi : report.required i)
+    (hproved : (atlas.chart i).localStatement) :
+    _root_.RiemannHypothesis :=
+  coverage.required_statement_implies_rh hi hproved
 
 /-- Complete paths plus the independent #231 reverse-direction discharge yield the
 exact global RH equivalence. Path existence alone is intentionally insufficient. -/
