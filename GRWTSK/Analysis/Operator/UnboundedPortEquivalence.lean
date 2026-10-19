@@ -61,7 +61,7 @@ theorem coe_domainEquiv (P : FramedEquivalence A B) (x : A.domain) :
 theorem intertwines_apply (P : FramedEquivalence A B) (x : A.domain) :
     P.frame (A.apply x) = B.apply (P.domainEquiv x) := by
   have h := congrArg (fun L : A.domain →ₗ[R] F => L x) P.intertwines
-  simpa [Port.Intertwines, Port.domainMap,
+  simpa [Port.Intertwines, Port.domainMap, domainEquiv,
     UnboundedOperator.apply, LinearMap.comp_apply] using h
 
 /-- Inverse framed domain equivalence. -/
@@ -98,6 +98,7 @@ def comp
       C.apply
         ⟨Q.frame (P.frame x), Q.frame_maps_domain (P.domainEquiv x)⟩
     rw [P.intertwines_apply, Q.intertwines_apply]
+    rfl
 
 /-- Conjugation formula on the exact transported domain. -/
 theorem conjugation_apply (P : FramedEquivalence A B) (y : B.domain) :
@@ -117,14 +118,14 @@ theorem image_graphSet (P : FramedEquivalence A B) :
     refine ⟨P.domainEquiv x, ?_⟩
     apply Prod.ext
     · rfl
-    · exact (P.intertwines_apply x).symm
+    · exact P.intertwines_apply x
   · rintro ⟨y, rfl⟩
     let x : A.domain := P.domainEquiv.symm y
     have hy : P.domainEquiv x = y := P.domainEquiv.apply_symm_apply y
     refine ⟨(x.1, A.apply x), ⟨x, rfl⟩, ?_⟩
     apply Prod.ext
     · exact congrArg Subtype.val hy
-    · simpa [hy] using P.intertwines_apply x
+    · simpa [graphFrame, hy] using P.intertwines_apply x
 
 end FramedEquivalence
 

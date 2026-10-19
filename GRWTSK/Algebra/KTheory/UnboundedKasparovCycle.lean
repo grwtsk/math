@@ -5,6 +5,7 @@ import GRWTSK.Analysis.Operator.UnboundedPortAnalytic
 namespace GRWTSK.Algebra.KTheory.UnboundedKasparovCycle
 
 open GRWTSK.Analysis.Operator.UnboundedPort
+open scoped InnerProductSpace
 
 universe u v
 
@@ -25,7 +26,7 @@ def shifted (D : UnboundedOperator ℂ H) (z : ℂ) : D.domain →ₗ[ℂ] H :=
 
 @[simp]
 theorem shifted_apply (D : UnboundedOperator ℂ H) (z : ℂ) (x : D.domain) :
-    D.shifted z x = D.apply x - z • (x : H) := rfl
+    UnboundedOperator.shifted D z x = D.apply x - z • (x : H) := rfl
 
 end UnboundedOperator
 
@@ -38,9 +39,9 @@ structure CompactResolventWitness (D : UnboundedOperator ℂ H) (z : ℂ) where
   mapsDomain : ∀ y, inverse y ∈ D.domain
   compact : IsCompactOperator inverse
   rightInverse : ∀ y,
-    D.shifted z ⟨inverse y, mapsDomain y⟩ = y
+    UnboundedOperator.shifted D z ⟨inverse y, mapsDomain y⟩ = y
   leftInverse : ∀ x : D.domain,
-    inverse (D.shifted z x) = (x : H)
+    inverse (UnboundedOperator.shifted D z x) = (x : H)
 
 namespace CompactResolventWitness
 
@@ -63,23 +64,23 @@ theorem coe_domainMap (R : CompactResolventWitness D z) (y : H) :
 /-- Pointwise right inverse equation. -/
 @[simp]
 theorem shifted_domainMap (R : CompactResolventWitness D z) (y : H) :
-    D.shifted z (R.domainMap y) = y :=
+    UnboundedOperator.shifted D z (R.domainMap y) = y :=
   R.rightInverse y
 
 /-- Pointwise left inverse equation in the exact domain. -/
 theorem domainMap_shifted (R : CompactResolventWitness D z) (x : D.domain) :
-    R.domainMap (D.shifted z x) = x := by
+    R.domainMap (UnboundedOperator.shifted D z x) = x := by
   apply Subtype.ext
   exact R.leftInverse x
 
 /-- The selected shift is bijective from the exact domain to the ambient Hilbert space. -/
 theorem shifted_bijective (R : CompactResolventWitness D z) :
-    Function.Bijective (D.shifted z) := by
+    Function.Bijective (UnboundedOperator.shifted D z) := by
   constructor
   · intro x y hxy
     calc
-      x = R.domainMap (D.shifted z x) := (R.domainMap_shifted x).symm
-      _ = R.domainMap (D.shifted z y) := by rw [hxy]
+      x = R.domainMap (UnboundedOperator.shifted D z x) := (R.domainMap_shifted x).symm
+      _ = R.domainMap (UnboundedOperator.shifted D z y) := by rw [hxy]
       _ = y := R.domainMap_shifted y
   · intro y
     exact ⟨R.domainMap y, R.shifted_domainMap y⟩
@@ -87,7 +88,7 @@ theorem shifted_bijective (R : CompactResolventWitness D z) :
 /-- The compact inverse is uniquely determined by the shifted inverse equations. -/
 theorem inverse_apply_unique
     (R : CompactResolventWitness D z) (y : H) (x : D.domain)
-    (hx : D.shifted z x = y) :
+    (hx : UnboundedOperator.shifted D z x = y) :
     (x : H) = R.inverse y := by
   have hdomain : x = R.domainMap y := by
     apply R.shifted_bijective.1
@@ -100,7 +101,9 @@ end CompactResolventWitness
 
 This records the analytic hypotheses needed before constructing a bounded transform or product:
 a dense closed symmetric operator, domain invariance of the representation, bounded represented
-commutators, and one compact resolvent witness. -/
+commutators, and one compact resolvent witness. The representation is a semiring homomorphism
+and parity is a tag; a C⋆-algebra, star-preserving representation, and grading laws remain further
+obligations for analytic KK. -/
 structure Cycle (A : Type u) [Semiring A]
     (H : Type v) [NormedAddCommGroup H] [InnerProductSpace ℂ H] [CompleteSpace H] where
   representation : A →+* (H →L[ℂ] H)
@@ -108,7 +111,7 @@ structure Cycle (A : Type u) [Semiring A]
   parity : Bool
   denseDomain : Dense (operator.domain : Set H)
   closedGraph : IsClosed (graphSet operator)
-  symmetric : operator.IsComplexSymmetric
+  symmetric : UnboundedOperator.IsComplexSymmetric operator
   domainInvariant : ∀ a (x : operator.domain), representation a x ∈ operator.domain
   boundedCommutator : A → (H →L[ℂ] H)
   boundedCommutator_agrees : ∀ a (x : operator.domain),
@@ -129,7 +132,7 @@ theorem commutator_apply (X : Cycle A H) (a : A) (x : X.operator.domain) :
 
 /-- The selected shifted operator is bijective. -/
 theorem resolventShift_bijective (X : Cycle A H) :
-    Function.Bijective (X.operator.shifted X.resolventParameter) :=
+    Function.Bijective (UnboundedOperator.shifted X.operator X.resolventParameter) :=
   X.compactResolvent.shifted_bijective
 
 /-- The selected bounded resolvent is compact. -/

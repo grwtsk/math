@@ -120,7 +120,9 @@ def trans (P : UnitaryEquivalence X Y) (Q : UnitaryEquivalence Y Z) :
   unitary := Q.unitary * P.unitary
   star_mul := by
     rw [Matrix.conjTranspose_mul]
-    simp only [Matrix.mul_assoc]
+    rw [show P.unitaryᴴ * Q.unitaryᴴ * (Q.unitary * P.unitary) =
+      P.unitaryᴴ * (Q.unitaryᴴ * Q.unitary) * P.unitary by
+        simp only [Matrix.mul_assoc]]
     rw [Q.star_mul]
     simp [P.star_mul]
   mul_star := by
