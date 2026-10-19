@@ -1,9 +1,9 @@
 /- Copyright (c) 2026 R.A. Jacob Martone. MIT.
 OpenAI formalization assistance.
 
-Isolated source root for the Frey models, observations, local reduction,
-projective heights, finite jets, nilpotent-ideal deformation equivalence and
-integral coefficient charts. No complete geometric atlas or ABC proof is supplied.
+Isolated source root for Frey models, observations, local reduction, heights,
+finite jets and integral coefficient charts, now including the finite relative
+section-ideal algebra isomorphism. No completion, global atlas or ABC proof.
 This file remains outside GRWTSK.lean pending replay and trust checks. -/
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyThreePortFrame
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyThreePortSaturation
@@ -22,6 +22,8 @@ import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetRecursion
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyHigherJet
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyFormalNeighborhood
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyIntegralJetCharts
+import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetQuotient
+import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreySectionJetEquiv
 
 namespace GRWTSK.Interfaces.FreyThreePortCore
 
