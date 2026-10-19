@@ -28,6 +28,7 @@ import GRWTSK.LinearAlgebra.FinitePositiveHodgeHeatBounds
 import GRWTSK.LinearAlgebra.WeightedDiagonalHodge
 import GRWTSK.LinearAlgebra.FiniteSpectralHeat
 import GRWTSK.LinearAlgebra.FiniteSpectralHeatGap
+import GRWTSK.LinearAlgebra.FiniteSpectralResolvent
 import GRWTSK.Geometry.Hodge.FiniteGraphCellular
 import GRWTSK.Geometry.Hodge.FiniteMatrixHodge
 import GRWTSK.Geometry.Hodge.MoserMatrixHodge
@@ -46,11 +47,12 @@ import GRWTSK.Analysis.Operator.UnboundedPortEquivalence
 import GRWTSK.Analysis.Operator.UnboundedPortAnalytic
 import GRWTSK.Analysis.Operator.UnboundedPortSymmetric
 import GRWTSK.Interfaces.OptionalAdapterGate
+import GRWTSK.Interfaces.OptionalAdapterComposition
 
 namespace GRWTSK.Interfaces.GraphHodgePortCore
 
 /-- Source version of this isolated integration surface. -/
-def schemaVersion : String := "GraphHodgePortCore/0.9"
+def schemaVersion : String := "GraphHodgePortCore/1.0"
 
 /-- The integration surface is source-only until an external receipt binds the exact branch head. -/
 inductive VerificationState
