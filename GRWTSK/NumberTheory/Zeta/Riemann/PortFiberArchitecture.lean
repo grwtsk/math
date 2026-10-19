@@ -83,49 +83,53 @@ end Architecture
 
 namespace Fixtures
 
-/-- Two differently certified stages coexist in one simultaneous architecture. -/
+/-- Two differently certified paths coexist in one simultaneous architecture. -/
 inductive StageIndex
   | holomorphic
   | topologicalRing
   deriving DecidableEq, Repr
 
-/-- Whole-plane translation used by the holomorphic stage. -/
-def translationPort : GRWTSK.Analysis.Complex.PortFiber.Port
-    GRWTSK.Analysis.Complex.PortFiber.Fixtures.whole
-    GRWTSK.Analysis.Complex.PortFiber.Fixtures.whole :=
-  GRWTSK.Analysis.Complex.PortFiber.Fixtures.translation 1
+/-- Translation followed by squaring as a certified holomorphic path. -/
+def holomorphicPath :=
+  GRWTSK.Analysis.Complex.PortFiber.Fixtures.translatedSquarePath 1
 
-/-- Exact holomorphy proof for the translation stage. -/
-def translationCertificate :
-    GRWTSK.Analysis.Complex.PortFiber.HolomorphicCertificate translationPort :=
-  GRWTSK.Analysis.Complex.PortFiber.Fixtures.translationCertificate 1
+/-- Composite port of the complete holomorphic path. -/
+def holomorphicPort := holomorphicPath.composite
 
-/-- The holomorphic certificate itself is the first local theorem. -/
+/-- Exact holomorphy proof for the whole path composite. -/
+def holomorphicCertificate :
+    GRWTSK.Analysis.Complex.PortFiber.HolomorphicCertificate holomorphicPort :=
+  holomorphicPath.certified
+
+/-- The path-level holomorphic certificate is the first local theorem. -/
 def holomorphicStage : BoundStage :=
   BoundStage.ofPort
     GRWTSK.Analysis.Complex.PortFiber.system
-    translationPort
-    (GRWTSK.Analysis.Complex.PortFiber.HolomorphicCertificate translationPort)
-    translationCertificate
-    (GRWTSK.Analysis.Complex.PortFiber.HolomorphicCertificate translationPort)
-    translationCertificate
+    holomorphicPort
+    (GRWTSK.Analysis.Complex.PortFiber.HolomorphicCertificate holomorphicPort)
+    holomorphicCertificate
+    (GRWTSK.Analysis.Complex.PortFiber.HolomorphicCertificate holomorphicPort)
+    holomorphicCertificate
     { repository := "grwtsk/math"
       revision := "issue-230-portfiber-holomorphy"
       path := "GRWTSK/Analysis/Complex/PortFiberHolomorphy.lean"
-      declaration := "Fixtures.translationCertificate" }
-    "portfiber-holomorphic-translation-v1"
+      declaration := "Fixtures.translatedSquarePath_certified" }
+    "portfiber-holomorphic-path-v2"
 
-/-- Identity port on the one complex ring fiber. -/
-def ringPort :=
-  GRWTSK.Topology.Algebra.PortFiber.Fixtures.complexFunctionFiber.identity PUnit.unit
+/-- Two identity atoms as a certified topological-ring path. -/
+def ringPath :=
+  GRWTSK.Topology.Algebra.PortFiber.Fixtures.complexIdentityPath
 
-/-- Exact topological-ring certificate on the same underlying identity map. -/
+/-- Composite port of the whole ring path. -/
+def ringPort := ringPath.composite
+
+/-- Exact topological-ring certificate for the whole path composite. -/
 def ringCertificate :
     GRWTSK.Topology.Algebra.PortFiber.TopologicalRingCertificate
       GRWTSK.Topology.Algebra.PortFiber.Fixtures.complexFunctionFiber ringPort :=
-  GRWTSK.Topology.Algebra.PortFiber.Fixtures.complexIdentityCertificate
+  ringPath.certified
 
-/-- The topological-ring certificate itself is the second local theorem. -/
+/-- The path-level topological-ring certificate is the second local theorem. -/
 def topologicalRingStage : BoundStage :=
   BoundStage.ofPort
     GRWTSK.Topology.Algebra.PortFiber.Fixtures.complexFunctionFiber
@@ -139,8 +143,8 @@ def topologicalRingStage : BoundStage :=
     { repository := "grwtsk/math"
       revision := "issue-230-portfiber-holomorphy"
       path := "GRWTSK/Topology/Algebra/PortFiberRing.lean"
-      declaration := "Fixtures.complexIdentityCertificate" }
-    "portfiber-topological-ring-identity-v1"
+      declaration := "Fixtures.complexIdentityPath_certified" }
+    "portfiber-topological-ring-path-v2"
 
 /-- Stage family mixing holomorphic and topological-ring proofs without coercing either. -/
 def stage : StageIndex → BoundStage
