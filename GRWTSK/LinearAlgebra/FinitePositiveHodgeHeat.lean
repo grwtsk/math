@@ -1,6 +1,8 @@
 import Mathlib
 import GRWTSK.LinearAlgebra.FramedFiberPort
 
+noncomputable section
+
 namespace GRWTSK.LinearAlgebra.FinitePositiveHodgeHeat
 
 open scoped BigOperators
@@ -95,7 +97,7 @@ theorem energy_eq_zero_iff (a x : ι → ℝ) (ha : ∀ i, a i ≠ 0) :
     exact (mul_eq_zero.mp hi).resolve_left (ha i)
   · intro h
     subst x
-    simp [diagonal]
+    exact (diagonal a).map_zero
 
 /-- In the positive diagonal model, the harmonic kernel is exactly the kernel of `δ`. -/
 theorem harmonic0_iff_delta_eq_zero (a x : ι → ℝ) :
@@ -116,7 +118,7 @@ theorem harmonic0_iff_delta_eq_zero (a x : ι → ℝ) :
     funext i
     have hi := congrFun h i
     simp only [diagonal_apply, Pi.zero_apply] at hi
-    change a i ^ 2 * x i = 0
+    rw [positiveDiagonalHodge_laplacian0_apply, Pi.zero_apply]
     calc
       a i ^ 2 * x i = a i * (a i * x i) := by ring
       _ = 0 := by rw [hi, mul_zero]
@@ -148,7 +150,7 @@ theorem functionalCalculus_one (a : ι → ℝ) :
 
 /-- Pointwise multiplication of scalar functions becomes composition of diagonal operators. -/
 theorem functionalCalculus_mul (a : ι → ℝ) (f g : ℝ → ℝ) :
-    functionalCalculus a (fun λ => f λ * g λ) =
+    functionalCalculus a (fun eigenvalue => f eigenvalue * g eigenvalue) =
       (functionalCalculus a f).comp (functionalCalculus a g) := by
   ext x i
   change
@@ -159,7 +161,7 @@ theorem functionalCalculus_mul (a : ι → ℝ) (f g : ℝ → ℝ) :
 /-- The exact finite heat operator `exp (-t Δ)`. -/
 def heat (a : ι → ℝ) (t : ℝ) :
     (ι → ℝ) →ₗ[ℝ] (ι → ℝ) :=
-  functionalCalculus a fun λ => Real.exp (-t * λ)
+  functionalCalculus a fun eigenvalue => Real.exp (-t * eigenvalue)
 
 /-- Heat at time zero is the identity. -/
 theorem heat_zero (a : ι → ℝ) :
@@ -186,8 +188,8 @@ theorem heat_laplacian0_comm (a : ι → ℝ) (t : ℝ) :
       (positiveDiagonalHodge a).laplacian0.comp (heat a t) := by
   ext x i
   change
-    Real.exp (-t * (a i ^ 2)) * (a i ^ 2 * x i) =
-      a i ^ 2 * (Real.exp (-t * (a i ^ 2)) * x i)
+    Real.exp (-t * (a i ^ 2)) * (a i * (a i * x i)) =
+      a i * (a i * (Real.exp (-t * (a i ^ 2)) * x i))
   ring
 
 /-- Harmonic vectors are fixed by the exact finite heat flow. -/
@@ -216,9 +218,9 @@ theorem heat_contracts
   have he0 : 0 ≤ e := (Real.exp_pos _).le
   have he1 : e ≤ 1 := by
     apply Real.exp_le_one_iff.mpr
-    exact neg_nonpos.mpr (mul_nonneg ht (sq_nonneg (a i)))
+    exact mul_nonpos_of_nonpos_of_nonneg (neg_nonpos.mpr ht) (sq_nonneg (a i))
   have he2 : e ^ 2 ≤ 1 := by
-    nlinarith [mul_nonneg (sub_nonneg.mpr he1) (add_nonneg he0 (by norm_num))]
+    nlinarith [mul_nonneg (sub_nonneg.mpr he1) (add_nonneg he0 (show (0 : ℝ) ≤ 1 by norm_num))]
   change (e * x i) * (e * x i) ≤ x i * x i
   calc
     (e * x i) * (e * x i) = e ^ 2 * (x i) ^ 2 := by ring

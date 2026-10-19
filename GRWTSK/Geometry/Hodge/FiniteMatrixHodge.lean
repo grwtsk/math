@@ -24,12 +24,12 @@ def incidenceMatrix (G : OrientedIncidence Vertex Edge) :
 /-- Matrix realization of the cellular coboundary. -/
 def delta (G : OrientedIncidence Vertex Edge) :
     (Vertex → ℝ) →ₗ[ℝ] (Edge → ℝ) :=
-  Matrix.toLin' (incidenceMatrix G)
+  (incidenceMatrix G).mulVecLin
 
 /-- Euclidean adjoint of the cellular coboundary. -/
 def deltaStar (G : OrientedIncidence Vertex Edge) :
     (Edge → ℝ) →ₗ[ℝ] (Vertex → ℝ) :=
-  Matrix.toLin' (incidenceMatrix G)ᵀ
+  (incidenceMatrix G)ᵀ.mulVecLin
 
 /-- Finite graph Hodge datum `δ, δ*`. -/
 def hodgeData (G : OrientedIncidence Vertex Edge) :
@@ -51,9 +51,12 @@ theorem deltaStar_apply
 theorem delta_eq_coboundary
     (G : OrientedIncidence Vertex Edge) :
     delta G = G.coboundary ℝ := by
-  ext x e
+  apply LinearMap.ext
+  intro x
+  funext e
   classical
-  simp [delta, incidenceMatrix, Matrix.toLin'_apply, Matrix.mulVec,
+  simp [delta, incidenceMatrix, Matrix.mulVec,
+    dotProduct,
     OrientedIncidence.coboundary, sub_mul, Finset.sum_sub_distrib, eq_comm]
 
 /-- `Bᵀ` is the actual Euclidean adjoint of `B`. -/
@@ -63,7 +66,7 @@ theorem adjoint_identity
     (delta G x) ⬝ᵥ y = x ⬝ᵥ (deltaStar G y) := by
   calc
     (delta G x) ⬝ᵥ y = y ⬝ᵥ (delta G x) :=
-      Matrix.dotProduct_comm _ _
+      dotProduct_comm _ _
     _ = x ⬝ᵥ (deltaStar G y) := by
       simpa [delta_apply, deltaStar_apply] using
         (Matrix.dotProduct_transpose_mulVec (incidenceMatrix G) x y).symm
@@ -89,7 +92,7 @@ theorem laplacian_nonneg
     (G : OrientedIncidence Vertex Edge) (x : Vertex → ℝ) :
     0 ≤ x ⬝ᵥ (laplacian G x) := by
   rw [laplacian_quadratic]
-  unfold Matrix.dotProduct
+  unfold dotProduct
   exact Finset.sum_nonneg fun i _ => mul_self_nonneg (delta G x i)
 
 /-- The graph Laplacian is self-adjoint. -/
@@ -99,11 +102,11 @@ theorem laplacian_selfAdjoint
     (laplacian G x) ⬝ᵥ y = x ⬝ᵥ (laplacian G y) := by
   calc
     (laplacian G x) ⬝ᵥ y = y ⬝ᵥ (laplacian G x) :=
-      Matrix.dotProduct_comm _ _
+      dotProduct_comm _ _
     _ = (delta G y) ⬝ᵥ (delta G x) :=
       (adjoint_identity G y (delta G x)).symm
     _ = (delta G x) ⬝ᵥ (delta G y) :=
-      Matrix.dotProduct_comm _ _
+      dotProduct_comm _ _
     _ = x ⬝ᵥ (laplacian G y) :=
       adjoint_identity G x (delta G y)
 
@@ -116,10 +119,11 @@ theorem laplacian_eq_zero_iff_delta_eq_zero
     have hquad : (delta G x) ⬝ᵥ (delta G x) = 0 := by
       rw [← laplacian_quadratic]
       rw [hx]
-      exact Matrix.dotProduct_zero x
-    exact Matrix.dotProduct_self_eq_zero.mp hquad
+      exact dotProduct_zero x
+    exact dotProduct_self_eq_zero.mp hquad
   · intro hx
     unfold laplacian
+    rw [LinearMap.comp_apply]
     rw [hx]
     exact (deltaStar G).map_zero
 

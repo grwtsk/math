@@ -1,5 +1,7 @@
 import GRWTSK.LinearAlgebra.FinitePositiveHodgeHeat
 
+noncomputable section
+
 namespace GRWTSK.LinearAlgebra.WeightedDiagonalHodge
 
 open scoped BigOperators
@@ -98,6 +100,6 @@ theorem energy_eq_zero_iff
     exact (mul_eq_zero.mp hi).resolve_left (ha i)
   · intro h
     subst x
-    simp [diagonal]
+    exact (diagonal a).map_zero
 
 end GRWTSK.LinearAlgebra.WeightedDiagonalHodge

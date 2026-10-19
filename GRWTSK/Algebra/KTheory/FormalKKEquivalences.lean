@@ -49,7 +49,8 @@ def trans (E : KKEquivalence T A B) (F : KKEquivalence T B C) :
               rw [T.product_assoc]
       _ = T.product E.forward
             (T.product (T.product F.forward F.backward) E.backward) := by
-              rw [← T.product_assoc]
+              exact congrArg (T.product E.forward)
+                (T.product_assoc F.forward F.backward E.backward).symm
       _ = T.product E.forward
             (T.product (T.identity B) E.backward) := by
               rw [F.forward_backward]
@@ -65,7 +66,8 @@ def trans (E : KKEquivalence T A B) (F : KKEquivalence T B C) :
               rw [T.product_assoc]
       _ = T.product F.backward
             (T.product (T.product E.backward E.forward) F.forward) := by
-              rw [← T.product_assoc]
+              exact congrArg (T.product F.backward)
+                (T.product_assoc E.backward E.forward F.forward).symm
       _ = T.product F.backward
             (T.product (T.identity B) F.forward) := by
               rw [E.backward_forward]

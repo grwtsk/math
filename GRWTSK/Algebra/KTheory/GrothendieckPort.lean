@@ -25,19 +25,27 @@ noncomputable def map (f : M →* N) : GrothendieckKZero M →* GrothendieckKZer
 theorem map_of (f : M →* N) (x : M) :
     map f (Algebra.GrothendieckGroup.of (M := M) x) =
       Algebra.GrothendieckGroup.of (M := N) (f x) := by
-  simp [map]
+  exact DFunLike.congr_fun
+    (Algebra.GrothendieckGroup.lift.symm_apply_apply
+      ((Algebra.GrothendieckGroup.of (M := N)).comp f)) x
 
 /-- Group-completion transport preserves composition. -/
 theorem map_comp (g : N →* P) (f : M →* N) :
     map (g.comp f) = (map g).comp (map f) := by
+  apply Algebra.GrothendieckGroup.lift.symm.injective
   ext x
-  simp [map]
+  change map (g.comp f) (Algebra.GrothendieckGroup.of x) =
+    map g (map f (Algebra.GrothendieckGroup.of x))
+  simp only [map_of, MonoidHom.comp_apply]
 
 /-- Group-completion transport preserves identities. -/
 theorem map_id :
     map (MonoidHom.id M) = MonoidHom.id (GrothendieckKZero M) := by
+  apply Algebra.GrothendieckGroup.lift.symm.injective
   ext x
-  simp [map]
+  change map (MonoidHom.id M) (Algebra.GrothendieckGroup.of x) =
+    Algebra.GrothendieckGroup.of x
+  exact map_of (MonoidHom.id M) x
 
 end GrothendieckKZero
 
