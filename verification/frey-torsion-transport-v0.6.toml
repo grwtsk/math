@@ -1,0 +1,339 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "frey-torsion-transport-v0.6"
+owner_repository = "grwtsk/math"
+issues = [100, 221, 222, 227, 230, 233, 241, 250, 251, 270]
+root_module = "GRWTSK.Interfaces.FreyTorsionTransportCore"
+build_target = "GRWTSK.Interfaces.FreyTorsionTransportCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+base_revision = "1686a17f2b45b5eb2c08823a4867f27c1ed0dc0f"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_runtime_safety_scan = true
+operational_receipt_is_external = true
+root_library_import_unchanged = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unsafe_declarations = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Definitions"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyThreePortFrame"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyThreePortSaturation"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCurveGeometry"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyAffineEvaluation"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyIntegralModel"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyLocalInvariants"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyQuadraticJet"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionTranslation"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionContact"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetRecursion"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyFormalNeighborhood"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetQuotient"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyAdicQuotients"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionOpen"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionOpenJets"
+
+[[modules]]
+name = "GRWTSK.Algebra.RingTheory.Localization.AwayPowerQuotient"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionUnlocalizedJets"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyHigherJet"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyIntegralJetCharts"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreySectionJetEquiv"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyParameterSeries"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetCompletion"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCanonicalCompletion"
+
+[[modules]]
+name = "GRWTSK.Algebra.RingTheory.AdicCompletion.CompatibleEquiv"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionCompletion"
+
+[[modules]]
+name = "GRWTSK.Algebra.RingTheory.WeightedInvolution"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedSections"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyPolynomialCoordinates"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedBasis"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyTorsionTransportCore"
+
+[[hostile_controls]]
+id = "reject-unbound-point-translation"
+description = "The map is P+the EXISTING freyT0 on the EXISTING rational Frey curve; a coordinate analogy is insufficient."
+
+[[hostile_controls]]
+id = "reject-affine-formula-at-pole"
+description = "Keep x nonzero for the rational formula; the total group map sends T0 to infinity and infinity to T0."
+
+[[hostile_controls]]
+id = "reject-translation-as-additive-homomorphism"
+description = "Translation by a nonzero point does not preserve the origin; use Equiv, not AddEquiv."
+
+[[hostile_controls]]
+id = "reject-two-torsion-as-c3-return"
+description = "The translation has period two and no fixed rational point. The three nonzero ports are not invariant since T0 goes to infinity."
+
+[[hostile_controls]]
+id = "reject-wrong-ordinate-sign"
+description = "For y^2=x(x-a)(x+b), translation by T0 is (-ab/x, +ab*y/x^2), reconciled with Mathlib addX/addY."
+
+[[hostile_controls]]
+id = "reject-parameter-label-as-chart-map"
+description = "The Tb-to-Ta function pullback sends T_b to (b/a)T_a, not T_a, except in a separately justified equal-scale case."
+
+[[hostile_controls]]
+id = "reject-pullback-direction-reversal"
+description = "Functions at the target Tb pull back to Ta; the inverse scale is a/b. Keep source/target labels despite the shared quotient-ring type."
+
+[[hostile_controls]]
+id = "reject-field-inverse-in-nilpotent-ring"
+description = "Use the displayed inverse of source X and prove X*inverseX=1 inside Q[T]/T^3. Do not give the quotient a field instance."
+
+[[hostile_controls]]
+id = "reject-linear-as-quadratic-coefficient-scale"
+description = "The coefficient vector transforms by diag(1,b/a,(b/a)^2). A Hasse coefficient is not an ordinary second derivative."
+
+[[hostile_controls]]
+id = "reject-order-two-map-as-all-order-linear"
+description = "The exact full chart y-change has nonzero cubic correction -2b/(a^3*c) at Ta over Q. Do not extend its linear reduction modulo T^3 to the whole completion."
+
+[[hostile_controls]]
+id = "reject-reciprocal-as-isometry-or-integral"
+description = "The scales 3/2 and 2/3 are reciprocal but not Euclidean unit scales or simultaneously integral at every prime. Record frame and lattice costs separately."
+
+[[hostile_controls]]
+id = "reject-point-map-as-global-line-bundle-atlas"
+description = "The canonical completion comparison now comes from compatible nonlinear finite maps; it still supplies no scheme morphism, line-bundle gauge, global cover or section-space theorem."
+
+[[hostile_controls]]
+id = "reject-leaf-replay-as-full-pr-acceptance"
+description = "This thirty-one-local-module target includes its declared canonical/series dependencies, not the entire retained topology, height or PR 251 stack. The inherited Mathlib import remains part of the trust closure."
+
+[[hostile_controls]]
+id = "reject-finite-tests-as-lean-proof"
+description = "Independent rational and finite-coefficient tests are not elaboration, exact-type or transitive trust checks."
+
+[[hostile_controls]]
+id = "reject-nonunit-ab-open-involution"
+description = "The full open pullback retains an explicit coefficient witness a*b*l=1. Mere nonzeroness over a general ring does not suffice."
+
+[[hostile_controls]]
+id = "reject-open-coordinate-as-global-curve"
+description = "Localization at X excludes T0 and infinity. The ring construction is not a whole-projective-model or scheme-level gluing theorem."
+
+[[hostile_controls]]
+id = "reject-localized-jets-as-earlier-presentation"
+description = "Compare D/Ia^n and D/Ib^n with C/J_r^n using a proved unit in EACH quotient, both inverse maps, the same image ideal, and compatible transitions. No bare type identification is allowed."
+
+[[hostile_controls]]
+id = "reject-full-ideal-power-as-support"
+description = "Map the full source/target ideal and every power, retaining mixed monomials and the exponent. This is not an arithmetic radical-support bound."
+
+[[hostile_controls]]
+id = "reject-one-sided-open-quotient-inverse"
+description = "Both quotient directions and their truncation laws must be proved; a quotient lift alone is not an equivalence."
+
+[[hostile_controls]]
+id = "reject-singular-specialization-as-free-translation"
+description = "The generic ring involution may have fixed points after specialization, for example a=b=1 over F2. It does not prove smoothness, good reduction or a free fiber action."
+
+[[hostile_controls]]
+id = "reject-whole-open-map-as-linear-parameter"
+description = "The actual open pullback keeps X^-1 and Y*X^-2; its order-two reduction must not replace the nonlinear higher jet map."
+
+[[hostile_controls]]
+id = "reject-nonunit-anchor-localization-comparison"
+description = "An anchor must be a unit, not merely nonzero. Localizing a nonzero nilpotent X can collapse a nonzero finite quotient."
+
+[[hostile_controls]]
+id = "reject-geometric-inverse-without-residual"
+description = "The finite inverse obeys the exact residual formula before nilpotence is applied. Do not divide by X or discard an uncontrolled tail."
+
+[[hostile_controls]]
+id = "reject-unit-anchor-as-smoothness"
+description = "The comparison does not require a unit curve derivative. Singular finite quotients remain singular and may have more than n coefficient dimensions."
+
+[[hostile_controls]]
+id = "reject-localization-power-index-drift"
+description = "Use the whole mapped ideal power and both canonical exponent zero and jet order N with exponent N+1."
+
+[[hostile_controls]]
+id = "reject-localization-roundtrip-on-samples-only"
+description = "Prove both ring-map inverses through quotient and localization universal properties, not only sampled coordinate vectors."
+
+[[hostile_controls]]
+id = "reject-new-unlocalized-map-as-linear-fit"
+description = "The unlocalized pullback must agree with the pre-existing localized nonlinear torsion pullback and both original truncation directions."
+
+[[hostile_controls]]
+id = "reject-incompatible-finite-equivalences"
+description = "Invertibility at each level is insufficient. Demand the same transition square at EVERY pair of exponents before constructing the lift."
+
+[[hostile_controls]]
+id = "reject-completed-map-from-finite-sample"
+description = "Use the actual AdicCompletion universal lift at all exponents, including zero. A finite prefix or a chosen Taylor fit does not define the map."
+
+[[hostile_controls]]
+id = "reject-completed-inverse-one-direction"
+description = "The two universal lifts must compose to identity as canonical ring maps, checked at all projections, not only on X and Y samples."
+
+[[hostile_controls]]
+id = "reject-completion-smoothness-leak"
+description = "The ab-unit witness suffices for the inter-anchor canonical equivalence. Formal-series frames separately require both inverse-Jacobian witnesses; singular fibers cannot use them without proof."
+
+[[hostile_controls]]
+id = "reject-formal-pullback-as-coefficient-map"
+description = "The inter-anchor series algebra equivalence changes the parameter nonlinearly. It is not PowerSeries.map on coefficients and not the old quadratic diagonal rescaling."
+
+[[hostile_controls]]
+id = "reject-filtration-identity-as-arithmetic-bound"
+description = "Exact congruence reflection for this equivalence is not coefficient-norm or arithmetic-valuation control; residues can still erase source coefficients."
+
+[[hostile_controls]]
+id = "reject-completed-coordinate-formula-drift"
+description = "Retain P(X_b)*X_a=-ab and P(Y_b)*X_a^2=ab*Y_a through the original localized squares at every exponent; no division by a nilpotent is permitted."
+
+[[hostile_controls]]
+id = "reject-weighted-lift-as-ring-hom"
+description = "L_k(1)=X^k; the same-grade map is linear, not generally unital or multiplicative. Only the sum-of-grades product law is supplied."
+
+[[hostile_controls]]
+id = "reject-weighted-square-as-identity"
+description = "Retain L_k^2=(-ab)^k id and inverse (-l)^k L_k with ab*l=1. Do not discard the scalar multiplier."
+
+[[hostile_controls]]
+id = "reject-implicit-rational-square-root"
+description = "Normalization by q has square q^2*(-ab)^k. For positive native a,b the grade-one multiplier cannot be made one by a rational scalar."
+
+[[hostile_controls]]
+id = "reject-monomial-span-as-complete-sections"
+description = "A basis of the selected bounded span over a field does not identify it with H0(E,O(2kO)). Preserve the missing polar-divisor and global section-space theorems."
+
+[[hostile_controls]]
+id = "reject-y-block-degree-overrun"
+description = "The Y block requires j+2<=k and maps to exponent k-j-2. Natural subtraction cannot justify an out-of-range monomial."
+
+[[hostile_controls]]
+id = "reject-degree-inclusion-as-intertwining"
+description = "L_(k+1)(f)=X*L_k(f). Plain inclusion of the same function does not identify the operators at different grades."
+
+[[hostile_controls]]
+id = "reject-saturated-evaluation-cost-transfer"
+description = "The weighted (1,X) coefficient matrix has determinant ab, not the unit Fitting ideal of the earlier rectangular value map. The two maps have separate lattice costs."
+
+[[hostile_controls]]
+id = "reject-weighted-map-certificate-drift"
+description = "The lift must use the actual pre-existing nonlinear open-ring pullback and its fixed scalar map. No alternative fitted reflection or parameter rescaling is substituted."
+
+[[hostile_controls]]
+id = "reject-rank-from-generator-count"
+description = "Prove polynomial-pair uniqueness and linear independence before constructing the basis or computing the finite dimension."
+
+[[hostile_controls]]
+id = "reject-zero-stage-dimension-drift"
+description = "W_0 has dimension one. Dimension 2k and increments of two apply only from k>=1; W_0 to W_1 adds one."
+
+[[hostile_controls]]
+id = "reject-single-projection-as-pair-separation"
+description = "Use both coordinates of the auxiliary quadratic algebra. A scalar evaluation or one chosen branch does not detect both p and q."
+
+[[hostile_controls]]
+id = "reject-auxiliary-algebra-as-geometric-field"
+description = "The auxiliary quadratic algebra over K(X) is a separating carrier, not a supplied function-field or smoothness theorem."
+
+[[hostile_controls]]
+id = "reject-field-basis-as-integral-basis"
+description = "The new basis theorem assumes a field. An integral lattice, denominator ideals and local norm laws require independent realization."
+
+[[hostile_controls]]
+id = "reject-stage-rank-as-observation-injectivity"
+description = "A basis and strict growth of W_k do not show a fixed finite observation map is injective on every stage."
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+requires_root_import_unchanged = true
+requires_hostile_controls = true
+requires_axiom_audit = true
+requires_runtime_safety_scan = true
+
+[nonclaims]
+claims = [
+  "accepted Lean elaboration or kernel verification",
+  "coverage or replay acceptance of all PR 251 source modules",
+  "an origin-preserving group homomorphism or C3 action",
+  "a scheme-morphism or scheme-stalk certificate",
+  "line-bundle frame gauges, global section spaces or a complete geometric atlas",
+  "integral transport at excluded primes or coefficient metric isometry",
+  "conductor exponents or characteristic-two reduction classification",
+  "an arithmetic height upper bound or uniform radical-excess estimate",
+  "abc conjecture or Riemann Hypothesis",
+  "execution authorization, external replay receipt, issue closure or merge authority",
+  "analytic convergence, a positive radius or a completed tensor/base-change comparison",
+  "a topology, line-bundle or metric certificate for the new inter-anchor map without a separate bridge",
+  "the polar divisor of X or identification of the selected spans with complete Riemann--Roch spaces",
+  "a stage-dimension or all-grade determinant theorem from counting generators",
+  "involutivity or metric isometry of an unnormalized weighted lift"
+]
