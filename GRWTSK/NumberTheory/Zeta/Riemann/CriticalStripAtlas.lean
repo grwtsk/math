@@ -10,9 +10,9 @@ set_option autoImplicit false
 /-!
 # A proof-local critical-strip atlas
 
-This file supplies the structural correction requested in issue #225. The primary
-objects are proof charts over one common noncommutative height root, not a linear
-sequence of mathematical subjects. Every chart coordinate agrees with the root
+This file supplies the structural correction requested in issues #225 and #244. The
+primary objects are proof charts over one common noncommutative height root, not a
+linear sequence of mathematical subjects. Every chart coordinate agrees with the root
 coordinate on its carrier, so its height is inherited rather than recreated.
 
 The root is algebraic noncommutative-geometry data: a represented ring, a distinguished
@@ -21,15 +21,17 @@ It is deliberately not called a full spectral triple. Self-adjointness, compact
 resolvent, bounded commutators, domains, and trace conditions remain separate theorem
 obligations whenever a later chart needs them.
 
+Coordinate overlap and logical transport are independent. `CoordinateTransition`
+carries only exact coordinate data. `ChartTransition` is the stronger structure that
+also contains a proposition equivalence. The atlas identity, inverse, and cocycle laws
+use only coordinate transitions; overlapping neutral, sufficient, necessary, and
+terminal charts therefore do not assume their missing logical relations merely to
+coexist.
+
 Each local proposition has a machine-readable relation to Mathlib's canonical
 `RiemannHypothesis`: equivalent, sufficient, necessary, neutral, or inconsistent.
 The global atlas theorem is conditional on every required chart being proved
 equivalent. It does not prove any missing local equivalence.
-
-Overlap transitions carry coordinate transport, inverse and cocycle laws on actual
-common points. The final interfaces keep topology, homotopy, ring homomorphism,
-holomorphy, and compatibility separate. No theorem here derives one of those
-structures from another by terminology alone.
 -/
 
 namespace GRWTSK.RiemannHypothesis
@@ -122,8 +124,9 @@ def Overlaps
 
 end CriticalStripChart
 
-/-- Coordinate and proposition transport on one actual chart overlap. -/
-structure ChartTransition
+/-- Exact coordinate transport on one actual chart overlap. It contains no logical
+implication between the local chart statements. -/
+structure CoordinateTransition
     {A X H : Type*} [Ring A] [AddCommGroup H] [Module ℂ H]
     {root : NoncommutativeHeightRoot A X H}
     (left right : CriticalStripChart root) where
@@ -131,11 +134,35 @@ structure ChartTransition
   coordinate_transport :
     ∀ x, left.carrier x → right.carrier x →
       forward (left.coordinate x) = right.coordinate x
+
+namespace CoordinateTransition
+
+/-- Every exact coordinate transition preserves the common root height at each actual
+overlap point. -/
+theorem height_preserving
+    {A X H : Type*} [Ring A] [AddCommGroup H] [Module ℂ H]
+    {root : NoncommutativeHeightRoot A X H}
+    {left right : CriticalStripChart root}
+    (transition : CoordinateTransition left right)
+    (x : X) (hleft : left.carrier x) (hright : right.carrier x) :
+    root.coordinateHeight (transition.forward (left.coordinate x)) =
+      root.coordinateHeight (right.coordinate x) := by
+  rw [transition.coordinate_transport x hleft hright]
+
+end CoordinateTransition
+
+/-- Stronger overlap data carrying both exact coordinates and a separately proved
+logical equivalence. Atlas membership does not require this stronger structure. -/
+structure ChartTransition
+    {A X H : Type*} [Ring A] [AddCommGroup H] [Module ℂ H]
+    {root : NoncommutativeHeightRoot A X H}
+    (left right : CriticalStripChart root)
+    extends CoordinateTransition left right where
   statement_iff : left.localStatement ↔ right.localStatement
 
 namespace ChartTransition
 
-/-- Every transition preserves the common root height at each actual overlap point. -/
+/-- Logical transitions inherit the exact coordinate height theorem. -/
 theorem height_preserving
     {A X H : Type*} [Ring A] [AddCommGroup H] [Module ℂ H]
     {root : NoncommutativeHeightRoot A X H}
@@ -143,8 +170,8 @@ theorem height_preserving
     (transition : ChartTransition left right)
     (x : X) (hleft : left.carrier x) (hright : right.carrier x) :
     root.coordinateHeight (transition.forward (left.coordinate x)) =
-      root.coordinateHeight (right.coordinate x) := by
-  rw [transition.coordinate_transport x hleft hright]
+      root.coordinateHeight (right.coordinate x) :=
+  transition.toCoordinateTransition.height_preserving x hleft hright
 
 end ChartTransition
 
@@ -239,15 +266,16 @@ end LocalRHProfile
 
 /-- An atlas of proof charts over one common noncommutative height root.
 
-Transitions are defined only after a genuine overlap witness. Identity, inverse, and
-triple-overlap cocycle laws are checked on actual chart coordinates. -/
+Coordinate transitions are defined only after a genuine overlap witness. Identity,
+inverse, and triple-overlap cocycle laws are checked on actual chart coordinates.
+Logical equivalence is intentionally absent from these fields. -/
 structure CriticalStripAtlas
     (ι A X H : Type*) [Ring A] [AddCommGroup H] [Module ℂ H] where
   root : NoncommutativeHeightRoot A X H
   chart : ι → CriticalStripChart root
   cover : ∀ x, ∃ i, (chart i).carrier x
   transition : ∀ i j,
-    (chart i).Overlaps (chart j) → ChartTransition (chart i) (chart j)
+    (chart i).Overlaps (chart j) → CoordinateTransition (chart i) (chart j)
   identity_transition :
     ∀ i x (hi : (chart i).carrier x),
       (transition i i ⟨x, hi, hi⟩).forward ((chart i).coordinate x) =
@@ -314,15 +342,15 @@ theorem globalStatement_iff_rh
   · intro hrh i
     exact (atlas.localStatement_iff_rh hgap i).mpr hrh
 
-/-- Statement transport composes across two actual consecutive overlaps. -/
+/-- Explicit logical-equivalence transitions compose. Mere coordinate overlap does not
+supply either transition. -/
 theorem overlap_statement_trans
     {ι A X H : Type*} [Ring A] [AddCommGroup H] [Module ℂ H]
     (atlas : CriticalStripAtlas ι A X H) {i j k : ι}
-    (hij : (atlas.chart i).Overlaps (atlas.chart j))
-    (hjk : (atlas.chart j).Overlaps (atlas.chart k)) :
+    (first : ChartTransition (atlas.chart i) (atlas.chart j))
+    (second : ChartTransition (atlas.chart j) (atlas.chart k)) :
     (atlas.chart i).localStatement ↔ (atlas.chart k).localStatement :=
-  (atlas.transition i j hij).statement_iff.trans
-    (atlas.transition j k hjk).statement_iff
+  first.statement_iff.trans second.statement_iff
 
 end CriticalStripAtlas
 

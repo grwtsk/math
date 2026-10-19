@@ -14,8 +14,9 @@ carries both the common-root height inequality and the proof implication; issue 
 subject names, and file imports cannot inhabit the path.
 
 Edges also carry exact source/revision/normalization bindings. Coordinate-equivalence
-edges must point to an exact #232 overlap outcome, while logical and height evidence is
-always present through the wrapped `VerticalStep`. Complete coverage places every
+edges must point to exact #232 coordinate evidence, including merely directional
+logical outcomes. Logical and height proofs remain independently present through the
+wrapped `VerticalStep`. Complete coverage places every
 required chart between an admitted source and an RH-equivalent terminal chart. Omitted
 charts require an exact derivability theorem from the required charts rather than a
 prose assertion of independence.
@@ -45,7 +46,8 @@ inductive VerticalEdgeKind where
 
 namespace OverlapAuditOutcome
 
-/-- Whether an overlap audit outcome is admitted as an exact atlas transition. -/
+/-- The legacy logically exact constructor test. Coordinate admission instead uses
+`HasExactCoordinate`, which also accepts merely directional logical outcomes. -/
 def IsExact
     {A X H : Type*} [Ring A] [AddCommGroup H] [Module ℂ H]
     {root : NoncommutativeHeightRoot A X H}
@@ -56,13 +58,13 @@ def IsExact
 
 end OverlapAuditOutcome
 
-/-- The optional coordinate evidence contains an exact admitted overlap. -/
+/-- The optional evidence contains exact coordinates, not necessarily logical equivalence. -/
 def HasExactCoordinateEvidence
     {A X H : Type*} [Ring A] [AddCommGroup H] [Module ℂ H]
     {root : NoncommutativeHeightRoot A X H}
     {left right : CriticalStripChart root}
     (evidence : Option (OverlapAuditOutcome left right)) : Prop :=
-  ∃ outcome, evidence = some outcome ∧ outcome.IsExact
+  ∃ outcome, evidence = some outcome ∧ outcome.HasExactCoordinate
 
 /-- One vertical edge with exact source binding and optional overlap evidence.
 

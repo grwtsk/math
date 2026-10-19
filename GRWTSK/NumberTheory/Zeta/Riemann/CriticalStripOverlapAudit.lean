@@ -8,10 +8,11 @@ set_option autoImplicit false
 /-!
 # Source-faithful overlap admission and defect accounting
 
-This file supplies the source-only overlap boundary requested in issue #232. Candidate
-coordinate transports may carry an equivalence, only one logical direction, or no
-logical transport. Only an explicitly equivalent candidate can be promoted to the
-existing equivalence-only `ChartTransition` used by `CriticalStripAtlas`.
+This file supplies the source-only overlap boundary requested in issues #232 and #244.
+Candidate coordinate transports may carry an equivalence, only one logical direction,
+or no logical transport. Every exact coordinate candidate can be admitted to the atlas
+coordinate cocycle. Only an explicitly equivalent candidate can be promoted to the
+stronger `ChartTransition` carrying a proposition equivalence.
 
 Nonexact coordinate transports are represented by typed real-valued defects on actual
 overlap points. A bounded defect is not identified with zero. Promotion to an exact
@@ -80,8 +81,19 @@ structure DirectionalOverlapTransition
 
 namespace DirectionalOverlapTransition
 
-/-- Promote a candidate to the atlas's exact transition type only when both logical
-directions are present. -/
+/-- Every exact coordinate candidate can enter the atlas coordinate cocycle, regardless
+of its independent logical status. -/
+def toCoordinateTransition
+    {A X H : Type*} [Ring A] [AddCommGroup H] [Module ℂ H]
+    {root : NoncommutativeHeightRoot A X H}
+    {left right : CriticalStripChart root}
+    (transition : DirectionalOverlapTransition left right) :
+    CoordinateTransition left right where
+  forward := transition.coordinateMap
+  coordinate_transport := transition.coordinate_transport
+
+/-- Promote a candidate to the stronger logical transition only when both proposition
+directions are independently present. -/
 def toChartTransition
     {A X H : Type*} [Ring A] [AddCommGroup H] [Module ℂ H]
     {root : NoncommutativeHeightRoot A X H}
@@ -93,7 +105,20 @@ def toChartTransition
   coordinate_transport := transition.coordinate_transport
   statement_iff := transition.statementTransport.iffOfEquivalent hEquivalent
 
-/-- An admitted exact transition preserves the common represented-commutator height. -/
+/-- Exact coordinate admission preserves the common represented-commutator height,
+without assuming any logical implication. -/
+theorem coordinate_height_preserving
+    {A X H : Type*} [Ring A] [AddCommGroup H] [Module ℂ H]
+    {root : NoncommutativeHeightRoot A X H}
+    {left right : CriticalStripChart root}
+    (transition : DirectionalOverlapTransition left right)
+    (x : X) (hleft : left.carrier x) (hright : right.carrier x) :
+    root.coordinateHeight
+        (transition.toCoordinateTransition.forward (left.coordinate x)) =
+      root.coordinateHeight (right.coordinate x) :=
+  transition.toCoordinateTransition.height_preserving x hleft hright
+
+/-- An independently equivalent transition inherits the same height theorem. -/
 theorem admitted_height_preserving
     {A X H : Type*} [Ring A] [AddCommGroup H] [Module ℂ H]
     {root : NoncommutativeHeightRoot A X H}
@@ -155,9 +180,8 @@ structure TransitionDefect
 
 namespace TransitionDefect
 
-/-- A vanishing defect with exact source identity becomes a directional coordinate
-transition. A further logical-equivalence proof is still required before atlas
-admission. -/
+/-- A vanishing defect with exact source identity becomes an exact directional
+coordinate transition. Logical equivalence remains an independent question. -/
 def toDirectionalOverlapTransition
     {A X H : Type*} [Ring A] [AddCommGroup H] [Module ℂ H]
     {root : NoncommutativeHeightRoot A X H}
@@ -201,8 +225,9 @@ theorem composed_bound
 
 end TransitionDefect
 
-/-- Result of auditing one proposed chart overlap. A merely directional transport and
-a bounded defect are not exact atlas transitions. -/
+/-- Result of auditing one proposed chart overlap. Both `exact` and `directional`
+constructors carry exact coordinate data. Only `exact` additionally carries proposition
+equivalence. -/
 inductive OverlapAuditOutcome
     {A X H : Type*} [Ring A] [AddCommGroup H] [Module ℂ H]
     {root : NoncommutativeHeightRoot A X H}
@@ -218,7 +243,31 @@ inductive OverlapAuditOutcome
 
 namespace OverlapAuditOutcome
 
-/-- Extract an exact atlas transition only from the exact audit constructor. -/
+/-- Whether the audit supplies an exact coordinate transition suitable for atlas
+identity, inverse, and cocycle laws. -/
+def HasExactCoordinate
+    {A X H : Type*} [Ring A] [AddCommGroup H] [Module ℂ H]
+    {root : NoncommutativeHeightRoot A X H}
+    {left right : CriticalStripChart root} :
+    OverlapAuditOutcome left right → Prop
+  | .exact _ _ => True
+  | .directional _ _ => True
+  | .defective _ => False
+  | .notRequired _ => False
+
+/-- Extract the coordinate transition from either exact-coordinate audit constructor. -/
+def admittedCoordinateTransition
+    {A X H : Type*} [Ring A] [AddCommGroup H] [Module ℂ H]
+    {root : NoncommutativeHeightRoot A X H}
+    {left right : CriticalStripChart root} :
+    OverlapAuditOutcome left right → Option (CoordinateTransition left right)
+  | .exact transition _ => some transition.toCoordinateTransition
+  | .directional transition _ => some transition.toCoordinateTransition
+  | .defective _ => none
+  | .notRequired _ => none
+
+/-- Extract a proposition-equivalence transition only from the logically exact audit
+constructor. -/
 def admittedTransition
     {A X H : Type*} [Ring A] [AddCommGroup H] [Module ℂ H]
     {root : NoncommutativeHeightRoot A X H}
