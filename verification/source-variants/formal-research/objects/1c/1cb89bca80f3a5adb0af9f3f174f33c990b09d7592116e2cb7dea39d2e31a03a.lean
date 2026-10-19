@@ -1,0 +1,6 @@
+import SourceActualAdaptiveDepthBudget
+set_option pp.all true
+set_option pp.proofs true
+#check RH16ActualAdaptiveDepthBudget.actual_adaptive_depth_ge_four_square
+#print RH16ActualAdaptiveDepthBudget.actual_adaptive_depth_ge_four_square
+#print axioms RH16ActualAdaptiveDepthBudget.actual_adaptive_depth_ge_four_square

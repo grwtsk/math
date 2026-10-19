@@ -1,0 +1,6 @@
+import SourceSharpDiagonalRadius
+set_option linter.hashCommand false
+#check RH16SharpDiagonalRadius.sharpDiagonalCost_ninety_one_lt_thirty
+#print axioms RH16SharpDiagonalRadius.sharpDiagonalCost_ninety_one_lt_thirty
+#check RH16SharpDiagonalRadius.actual_diagonal_error_ninety_one
+#print axioms RH16SharpDiagonalRadius.actual_diagonal_error_ninety_one

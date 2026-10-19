@@ -1,0 +1,15 @@
+import FormalResearch.RiemannHypothesis.SourceProjectionScalarNorm
+
+open FormalResearch.RiemannHypothesis.SourceProjectionScalarNorm
+
+set_option pp.all true in
+#print scalarContinuumAnchor_norm_le_two
+#print axioms scalarContinuumAnchor_norm_le_two
+
+set_option pp.all true in
+#print scalarCompensatedPrimeOperator_norm_lower
+#print axioms scalarCompensatedPrimeOperator_norm_lower
+
+set_option pp.all true in
+#print scalarCompensatedPrimeOperator_norm_not_eventually_bounded
+#print axioms scalarCompensatedPrimeOperator_norm_not_eventually_bounded

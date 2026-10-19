@@ -1,0 +1,13 @@
+import SourceActualCenteredHalfHarmonic
+set_option autoImplicit false
+open FormalResearch.RiemannHypothesis.SourceActualCenteredHalfHarmonic
+#check finiteHalfHarmonic
+#print axioms finiteHalfHarmonic
+#check actualCriticalMoebiusHalf
+#print axioms actualCriticalMoebiusHalf
+#check closedCenteredHalfInventory
+#print axioms closedCenteredHalfInventory
+#check closedCenteredHalfInventory_eq_finite_harmonics
+#print axioms closedCenteredHalfInventory_eq_finite_harmonics
+#check actualCenteredColumnHalfInventory_eq_finite_harmonics
+#print axioms actualCenteredColumnHalfInventory_eq_finite_harmonics

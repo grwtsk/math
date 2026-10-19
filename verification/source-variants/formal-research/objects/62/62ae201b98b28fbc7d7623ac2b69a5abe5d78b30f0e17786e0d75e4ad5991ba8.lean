@@ -1,0 +1,17 @@
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.SeparationBounds
+import Mathlib.Data.Finset.Max
+import Mathlib.Data.Finset.Powerset
+import Mathlib.Algebra.Order.BigOperators.Group.Finset
+#check Finset.sum_union_le
+#check Finset.sum_le_sum_of_subset_of_nonneg
+#check WithTop.ne_top_iff_exists
+#check WithTop.coe_le_coe
+#check WithTop.coe_add
+#check Finset.card_union_le
+#check LinearOrderedAddCommMonoid
+#check IsOrderedAddMonoid
+#check Finset.card_eq_zero
+#check Finset.image_eq_empty
+#check Finset.not_nonempty_iff_eq_empty
+#check Finset.mem_powerset
+#check Finset.sum_const_nat

@@ -1,0 +1,10 @@
+import SourceActualXiSqrtClosedReadout
+namespace FormalResearch.RiemannHypothesis.SourceActualXiSqrtFinalAudit
+open SourceActualXiSqrtPrimitiveReadout SourceActualXiSqrtClosedReadout
+#check actualXiLogPrimitive_log_eq_physical
+#check actual_psi_inverseThreeHalf
+#check actualXiLogPrimitive_log_eq_closed_atoms
+#print axioms actualXiLogPrimitive_log_eq_physical
+#print axioms actual_psi_inverseThreeHalf
+#print axioms actualXiLogPrimitive_log_eq_closed_atoms
+end FormalResearch.RiemannHypothesis.SourceActualXiSqrtFinalAudit

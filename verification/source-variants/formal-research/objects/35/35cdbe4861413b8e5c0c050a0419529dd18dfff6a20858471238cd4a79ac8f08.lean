@@ -1,0 +1,29 @@
+import SourceGammaRetainedContractedConsequences
+
+namespace FormalResearch.RiemannHypothesis.SourceGammaRetainedMomentConsequences
+#check residual_upper_of_closed_moment
+#print axioms residual_upper_of_closed_moment
+#check all_real_lower_of_closed_moment
+#print axioms all_real_lower_of_closed_moment
+#check estimate_of_closed_moment
+#print axioms estimate_of_closed_moment
+#check leading_upper_of_closed_moment
+#print axioms leading_upper_of_closed_moment
+#check leading_tail_of_closed_moment
+#print axioms leading_tail_of_closed_moment
+end FormalResearch.RiemannHypothesis.SourceGammaRetainedMomentConsequences
+
+namespace FormalResearch.RiemannHypothesis.SourceGammaRetainedContractedConsequences
+#check closed_moment_upper_of_contracted_lower
+#print axioms closed_moment_upper_of_contracted_lower
+#check residual_upper_of_contracted_Xi
+#print axioms residual_upper_of_contracted_Xi
+#check all_real_lower_of_contracted_Xi
+#print axioms all_real_lower_of_contracted_Xi
+#check estimate_of_contracted_Xi
+#print axioms estimate_of_contracted_Xi
+#check leading_upper_of_contracted_Xi
+#print axioms leading_upper_of_contracted_Xi
+#check leading_tail_of_contracted_Xi
+#print axioms leading_tail_of_contracted_Xi
+end FormalResearch.RiemannHypothesis.SourceGammaRetainedContractedConsequences

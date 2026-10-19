@@ -1,0 +1,16 @@
+import WholePlainConvolutionFixtures
+
+open FormalResearch.RiemannHypothesis.WholePlainConvolutionFixtures
+
+#check actual_upper_endpoint
+#print axioms actual_upper_endpoint
+#check actual_product_outside_inventory
+#print axioms actual_product_outside_inventory
+#check actual_strict_inventory_accounting
+#print axioms actual_strict_inventory_accounting
+#check omitted_unit_column_is_false
+#print axioms omitted_unit_column_is_false
+#check omitted_diagonal_is_false
+#print axioms omitted_diagonal_is_false
+#check unsupported_product_mask_removal_is_false
+#print axioms unsupported_product_mask_removal_is_false

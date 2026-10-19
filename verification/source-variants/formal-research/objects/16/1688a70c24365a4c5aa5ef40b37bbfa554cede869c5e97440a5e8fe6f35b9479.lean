@@ -1,0 +1,10 @@
+import RootActualCriticalColumnTransfer
+set_option autoImplicit false
+open FormalResearch.RiemannHypothesis.RootActualCriticalColumnTransfer
+#print actualCriticalAdjustedColumnPrimitive
+#print actualCriticalAdjustedLowerColumnTrace
+#print actualCriticalAdjustedInterior
+#print actualCriticalUpperColumnTrace
+#print actualCriticalAdjustedColumnPrimitive_at_lower
+#print actualCriticalAdjustedColumnPrimitive_lower_abs_le
+#print jointMangoldtErrorWork_eq_critical_adjusted_adjoint

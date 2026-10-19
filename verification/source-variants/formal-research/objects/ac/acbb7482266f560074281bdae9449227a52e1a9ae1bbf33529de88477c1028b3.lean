@@ -1,0 +1,5 @@
+import FormalResearch.RiemannHypothesis.SourceComparison.RatioClassBudget
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.RatioClassBudget.source_harmonic_sum_le
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.RatioClassBudget.ratioClass_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.RatioClassBudget.supported_ratio_sum_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.RatioClassBudget.primeSupportedBlock_abs_le

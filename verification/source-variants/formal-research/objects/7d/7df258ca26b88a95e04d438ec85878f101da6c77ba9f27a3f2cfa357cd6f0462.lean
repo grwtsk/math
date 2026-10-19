@@ -1,0 +1,8 @@
+import SourceJointCountertermLowerTail
+import Lean.Util.FoldConsts
+
+set_option pp.fullNames true
+set_option pp.proofs true
+
+#print FormalResearch.RiemannHypothesis.SourceJointCountertermAlignment.divisor_remainders_eq_joint_work_after_mean_cancellation
+#print FormalResearch.RiemannHypothesis.SourceJointCountertermLowerTail.divisor_remainders_eq_lower_tail_joint_work_after_mean_cancellation

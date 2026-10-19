@@ -1,0 +1,18 @@
+import CurvaturePhaseFixtures
+
+open Confluence.Cycle23.CurvaturePhaseFixtures
+
+#print axioms actual_positive_phase
+#print axioms actual_negative_phase
+#print axioms actual_product
+#print axioms actual_origin_is_strict_positive
+#print axioms actual_origin_curvature
+#print axioms actual_upper_product
+#print axioms actual_mass_ratio_lt_one
+#print axioms actual_mass_ratio_ne_one
+#print axioms actual_zero_phase_guards
+#print axioms actual_zero_slopes
+#print axioms scalar_nonstrict_guard_is_insufficient
+#print axioms scalar_zero_max_seam
+#print axioms scalar_totalized_derivative_is_not_branch_derivative
+#print axioms scalar_product_and_ratio_coefficients
