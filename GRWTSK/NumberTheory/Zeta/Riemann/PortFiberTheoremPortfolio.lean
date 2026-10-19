@@ -1,8 +1,10 @@
 import GRWTSK.Logic.SimultaneousProofPortfolio
 import GRWTSK.NumberTheory.Zeta.Riemann.PortFiberLocalToGlobal
 import GRWTSK.Analysis.Complex.HolomorphicSectionRing
+import GRWTSK.Analysis.Complex.HolomorphicEvaluationSpectrum
 import GRWTSK.Topology.Algebra.PrimeSpectrumPort
 import GRWTSK.AlgebraicGeometry.AffineSpecPort
+import GRWTSK.AlgebraicGeometry.AffineStructureSheafPort
 
 namespace GRWTSK.NumberTheory.Zeta.Riemann.PortFiberTheoremPortfolio
 
@@ -28,6 +30,16 @@ preserving and a continuous ring homomorphism. -/
 theorem holomorphicSectionRingClaim_proof : holomorphicSectionRingClaim :=
   GRWTSK.Analysis.Complex.HolomorphicSectionRing.Fixtures.restrictionPath.certified
 
+/-- Evaluation prime ideals commute with the complete holomorphic-section restriction path. -/
+def holomorphicEvaluationSpectrumClaim : Prop :=
+  GRWTSK.Analysis.Complex.HolomorphicEvaluationSpectrum.EvaluationNaturalityCertificate
+    GRWTSK.Analysis.Complex.HolomorphicSectionRing.Fixtures.restrictionPath.composite
+
+/-- Proof of evaluation-spectrum naturality for the complete restriction path. -/
+theorem holomorphicEvaluationSpectrumClaim_proof : holomorphicEvaluationSpectrumClaim :=
+  GRWTSK.Analysis.Complex.HolomorphicEvaluationSpectrum.EvaluationNaturalityCertificate.canonical
+    GRWTSK.Analysis.Complex.HolomorphicSectionRing.Fixtures.restrictionPath.composite
+
 /-- The exact arithmetic ring tower induces a continuous map of prime spectra. -/
 def primeSpectrumTopologyClaim : Prop :=
   GRWTSK.Topology.PortFiber.ContinuousCertificate
@@ -48,12 +60,44 @@ def affineSchemeClaim : Prop :=
 theorem affineSchemeClaim_proof : affineSchemeClaim :=
   GRWTSK.AlgebraicGeometry.AffineSpecPort.Fixtures.arithmeticTower_continuous
 
+/-- The arithmetic ring morphism is recovered, up to the canonical affine global-section
+isomorphisms, from the actual affine scheme path. -/
+def affineGlobalSectionsClaim : Prop :=
+  Nonempty
+    (CategoryTheory.Arrow.mk
+        GRWTSK.AlgebraicGeometry.AffineStructureSheafPort.Fixtures.arithmeticTowerPath.composite ≅
+      CategoryTheory.Arrow.mk
+        ((_root_.AlgebraicGeometry.Spec.map
+          GRWTSK.AlgebraicGeometry.AffineStructureSheafPort.Fixtures.arithmeticTowerPath.composite).appTop))
+
+/-- Proof that the affine global-section path recovers the original arithmetic ring morphism. -/
+theorem affineGlobalSectionsClaim_proof : affineGlobalSectionsClaim :=
+  GRWTSK.AlgebraicGeometry.AffineStructureSheafPort.Fixtures.arithmeticTower_recovers_original
+
+/-- Every stalk map in the rational-to-complex affine `Spec` stage is a local ring homomorphism. -/
+def affineStalkLocalityClaim : Prop :=
+  ∀ x : _root_.AlgebraicGeometry.Spec
+      GRWTSK.AlgebraicGeometry.AffineSpecPort.Fixtures.complex,
+    IsLocalHom
+      (GRWTSK.AlgebraicGeometry.AffineStructureSheafPort.stalkMap
+        GRWTSK.AlgebraicGeometry.AffineStructureSheafPort.Fixtures.rationalToComplex x).hom
+
+/-- Proof of local-ring compatibility at every exact complex affine point. -/
+theorem affineStalkLocalityClaim_proof : affineStalkLocalityClaim := by
+  intro x
+  exact
+    GRWTSK.AlgebraicGeometry.AffineStructureSheafPort.stalkMap_isLocal
+      GRWTSK.AlgebraicGeometry.AffineStructureSheafPort.Fixtures.rationalToComplex x
+
 /-- Local branches in the RH-facing theorem portfolio. -/
 inductive LocalIndex
   | simultaneousRestriction
   | holomorphicSectionRing
+  | holomorphicEvaluationSpectrum
   | primeSpectrumTopology
   | affineScheme
+  | affineGlobalSections
+  | affineStalkLocality
   | ordinaryFunctionGluing
   | holomorphicGlobalizationBoundary
   | arithmeticBridge
@@ -65,8 +109,11 @@ inductive LocalIndex
 def LocalClaim (O : OpenObligations) : LocalIndex → Prop
   | .simultaneousRestriction => restrictionClaim
   | .holomorphicSectionRing => holomorphicSectionRingClaim
+  | .holomorphicEvaluationSpectrum => holomorphicEvaluationSpectrumClaim
   | .primeSpectrumTopology => primeSpectrumTopologyClaim
   | .affineScheme => affineSchemeClaim
+  | .affineGlobalSections => affineGlobalSectionsClaim
+  | .affineStalkLocality => affineStalkLocalityClaim
   | .ordinaryFunctionGluing => gluingClaim
   | .holomorphicGlobalizationBoundary => holomorphicBoundaryClaim
   | .arithmeticBridge => O.arithmeticBridge
@@ -79,8 +126,11 @@ def localPortfolio (O : OpenObligations) :
   disposition
     | .simultaneousRestriction => .proved restrictionClaim_proof
     | .holomorphicSectionRing => .proved holomorphicSectionRingClaim_proof
+    | .holomorphicEvaluationSpectrum => .proved holomorphicEvaluationSpectrumClaim_proof
     | .primeSpectrumTopology => .proved primeSpectrumTopologyClaim_proof
     | .affineScheme => .proved affineSchemeClaim_proof
+    | .affineGlobalSections => .proved affineGlobalSectionsClaim_proof
+    | .affineStalkLocality => .proved affineStalkLocalityClaim_proof
     | .ordinaryFunctionGluing => .proved gluingClaim_proof
     | .holomorphicGlobalizationBoundary => .proved holomorphicBoundaryClaim_proof
     | .arithmeticBridge =>
@@ -108,6 +158,11 @@ theorem holomorphic_section_ring_available (O : OpenObligations) :
     LocalClaim O .holomorphicSectionRing :=
   holomorphicSectionRingClaim_proof
 
+/-- Evaluation-spectrum naturality is available without any application obligation. -/
+theorem holomorphic_evaluation_spectrum_available (O : OpenObligations) :
+    LocalClaim O .holomorphicEvaluationSpectrum :=
+  holomorphicEvaluationSpectrumClaim_proof
+
 /-- The ring-to-prime-spectrum topology theorem is available without any application obligation. -/
 theorem prime_spectrum_topology_available (O : OpenObligations) :
     LocalClaim O .primeSpectrumTopology :=
@@ -117,6 +172,16 @@ theorem prime_spectrum_topology_available (O : OpenObligations) :
 theorem affine_scheme_available (O : OpenObligations) :
     LocalClaim O .affineScheme :=
   affineSchemeClaim_proof
+
+/-- The affine global-section recovery theorem is available without any application obligation. -/
+theorem affine_global_sections_available (O : OpenObligations) :
+    LocalClaim O .affineGlobalSections :=
+  affineGlobalSectionsClaim_proof
+
+/-- The affine local-stalk theorem is available without any application obligation. -/
+theorem affine_stalk_locality_available (O : OpenObligations) :
+    LocalClaim O .affineStalkLocality :=
+  affineStalkLocalityClaim_proof
 
 /-- The ordinary gluing theorem is available without any application obligation. -/
 theorem gluing_available (O : OpenObligations) :
@@ -137,37 +202,70 @@ def withSourceComparisonDisposition (O : OpenObligations)
       LocalIndex (LocalClaim O) RiemannTarget :=
   (architecture O).updateLocal .sourceComparison d
 
+/-- Rejecting the arithmetic bridge cannot alter any other theorem disposition. -/
+theorem other_branch_survives_rejected_arithmetic
+    (O : OpenObligations) (h : ¬ O.arithmeticBridge)
+    (i : LocalIndex) (hi : i ≠ .arithmeticBridge) :
+    (withArithmeticDisposition O (.refuted h)).local.disposition i =
+      (architecture O).local.disposition i := by
+  exact
+    (architecture O).updateLocal_of_ne .arithmeticBridge i (.refuted h) hi
+
 /-- Rejecting the arithmetic bridge cannot erase the proved restriction branch. -/
 theorem restriction_survives_rejected_arithmetic
     (O : OpenObligations) (h : ¬ O.arithmeticBridge) :
     (withArithmeticDisposition O (.refuted h)).local.disposition
         .simultaneousRestriction =
-      (architecture O).local.disposition .simultaneousRestriction := by
-  simp [withArithmeticDisposition]
+      (architecture O).local.disposition .simultaneousRestriction :=
+  other_branch_survives_rejected_arithmetic O h .simultaneousRestriction (by decide)
 
 /-- Rejecting the arithmetic bridge cannot erase the holomorphic-section ring branch. -/
 theorem holomorphic_ring_survives_rejected_arithmetic
     (O : OpenObligations) (h : ¬ O.arithmeticBridge) :
     (withArithmeticDisposition O (.refuted h)).local.disposition
         .holomorphicSectionRing =
-      (architecture O).local.disposition .holomorphicSectionRing := by
-  simp [withArithmeticDisposition]
+      (architecture O).local.disposition .holomorphicSectionRing :=
+  other_branch_survives_rejected_arithmetic O h .holomorphicSectionRing (by decide)
+
+/-- Rejecting the arithmetic bridge cannot erase evaluation-spectrum naturality. -/
+theorem evaluation_spectrum_survives_rejected_arithmetic
+    (O : OpenObligations) (h : ¬ O.arithmeticBridge) :
+    (withArithmeticDisposition O (.refuted h)).local.disposition
+        .holomorphicEvaluationSpectrum =
+      (architecture O).local.disposition .holomorphicEvaluationSpectrum :=
+  other_branch_survives_rejected_arithmetic O h .holomorphicEvaluationSpectrum (by decide)
 
 /-- Rejecting the arithmetic bridge cannot erase the ring-to-topology branch. -/
 theorem prime_spectrum_survives_rejected_arithmetic
     (O : OpenObligations) (h : ¬ O.arithmeticBridge) :
     (withArithmeticDisposition O (.refuted h)).local.disposition
         .primeSpectrumTopology =
-      (architecture O).local.disposition .primeSpectrumTopology := by
-  simp [withArithmeticDisposition]
+      (architecture O).local.disposition .primeSpectrumTopology :=
+  other_branch_survives_rejected_arithmetic O h .primeSpectrumTopology (by decide)
 
 /-- Rejecting the arithmetic bridge cannot erase the actual affine-scheme branch. -/
 theorem affine_scheme_survives_rejected_arithmetic
     (O : OpenObligations) (h : ¬ O.arithmeticBridge) :
     (withArithmeticDisposition O (.refuted h)).local.disposition
         .affineScheme =
-      (architecture O).local.disposition .affineScheme := by
-  simp [withArithmeticDisposition]
+      (architecture O).local.disposition .affineScheme :=
+  other_branch_survives_rejected_arithmetic O h .affineScheme (by decide)
+
+/-- Rejecting the arithmetic bridge cannot erase affine global-section recovery. -/
+theorem affine_global_sections_survives_rejected_arithmetic
+    (O : OpenObligations) (h : ¬ O.arithmeticBridge) :
+    (withArithmeticDisposition O (.refuted h)).local.disposition
+        .affineGlobalSections =
+      (architecture O).local.disposition .affineGlobalSections :=
+  other_branch_survives_rejected_arithmetic O h .affineGlobalSections (by decide)
+
+/-- Rejecting the arithmetic bridge cannot erase affine stalk locality. -/
+theorem affine_stalk_survives_rejected_arithmetic
+    (O : OpenObligations) (h : ¬ O.arithmeticBridge) :
+    (withArithmeticDisposition O (.refuted h)).local.disposition
+        .affineStalkLocality =
+      (architecture O).local.disposition .affineStalkLocality :=
+  other_branch_survives_rejected_arithmetic O h .affineStalkLocality (by decide)
 
 /-- Resolving the source comparison cannot alter the terminal RH disposition. -/
 theorem source_comparison_update_preserves_target
