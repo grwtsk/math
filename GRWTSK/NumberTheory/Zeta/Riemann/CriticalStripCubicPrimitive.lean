@@ -55,8 +55,7 @@ lemma cubic_unit_bound {u : ℝ} (hu : 0 ≤ u) (hu1 : u ≤ 1) :
     rw [abs_div, abs_mul, abs_mul, abs_of_nonneg hu,
       abs_of_nonpos (sub_nonpos.mpr hu1)]
     dsimp only [v]
-    norm_num
-    ring
+    norm_num <;> ring
   rw [habs]
   rw [heq] at hsmall
   nlinarith
@@ -149,7 +148,7 @@ lemma adjusted_kernel_norm_le (t : ℝ) :
   have hb := QuadraticPrimitive.realKernel_bounds t
   have heq : QuadraticPrimitive.kernel t + (1 / 12 : ℂ) =
       ((QuadraticPrimitive.realKernel t + 1 / 12 : ℝ) : ℂ) := by
-    simp only [QuadraticPrimitive.kernel]; push_cast; rfl
+    norm_num [QuadraticPrimitive.kernel]
   rw [heq, Complex.norm_real, Real.norm_eq_abs]
   apply abs_le.mpr
   constructor <;> linarith [hb.1, hb.2]
@@ -248,8 +247,7 @@ lemma kernel_eq_cell {n : ℕ} {t : ℝ} (hn : 1 ≤ n)
   have htn : (1 : ℝ) ≤ t := (by exact_mod_cast hn : (1 : ℝ) ≤ n).trans ht.1.le
   simp only [kernel, realKernel, realFractionalKernel, if_pos htn,
     QuadraticPrimitive.floor_eq_on_open_cell hn ht, cell]
-  push_cast
-  ring
+  push_cast <;> ring
 
 /-- Cellwise integration; the constant correction is part of the derivative. -/
 lemma cell_integral_identity {n : ℕ} {s : ℂ} (hn : 1 ≤ n) (hs : 0 < s.re) :
