@@ -1,0 +1,15 @@
+import SourceCriticalSecondAbel
+
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourceCriticalSecondAbel
+
+#check @criticalPrimeTest_contDiff_two
+#print axioms criticalPrimeTest_contDiff_two
+#check @criticalPrimeTest_deriv_lipschitz
+#print axioms criticalPrimeTest_deriv_lipschitz
+#check @pairedTailTest_deriv_absolutelyContinuous
+#print axioms pairedTailTest_deriv_absolutelyContinuous
+#check @criticalRemovedPairedWork_eq_cumulative_work
+#print axioms criticalRemovedPairedWork_eq_cumulative_work
+#check @criticalRemovedPairedWork_eq_second_abel
+#print axioms criticalRemovedPairedWork_eq_second_abel

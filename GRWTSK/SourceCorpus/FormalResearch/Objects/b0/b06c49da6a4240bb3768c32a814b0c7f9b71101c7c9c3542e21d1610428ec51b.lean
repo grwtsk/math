@@ -1,0 +1,28 @@
+import SourcePrimitiveInnerKernel
+set_option linter.hashCommand false
+namespace RH16PrimitiveInnerKernel
+#check timeFirst
+#print timeFirst
+#print axioms timeFirst
+#check innerPrimitive
+#print innerPrimitive
+#print axioms innerPrimitive
+#check literalXiWeight_time_hasDerivAt
+#print literalXiWeight_time_hasDerivAt
+#print axioms literalXiWeight_time_hasDerivAt
+#check timeFirst_hasDerivAt
+#print timeFirst_hasDerivAt
+#print axioms timeFirst_hasDerivAt
+#check innerPrimitive_hasDerivAt
+#print innerPrimitive_hasDerivAt
+#print axioms innerPrimitive_hasDerivAt
+#check actual_upper_traces
+#print actual_upper_traces
+#print axioms actual_upper_traces
+#check literal_lower_traces
+#print literal_lower_traces
+#print axioms literal_lower_traces
+#check inner_kernel_eq_actual_plain_derivative
+#print inner_kernel_eq_actual_plain_derivative
+#print axioms inner_kernel_eq_actual_plain_derivative
+end RH16PrimitiveInnerKernel

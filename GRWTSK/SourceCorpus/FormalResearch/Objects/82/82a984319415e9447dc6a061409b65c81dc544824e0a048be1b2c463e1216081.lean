@@ -1,0 +1,16 @@
+import LowTimeScalarBudgetFixtures
+
+open FormalResearch.RiemannHypothesis.LowTimeScalarBudgetFixtures
+
+#check diagonal_prefix_empty
+#print axioms diagonal_prefix_empty
+#check empty_prefix_bound_reuses_literal_row
+#print axioms empty_prefix_bound_reuses_literal_row
+#check cutoff_zero_refutes_exponential_reconstruction
+#print axioms cutoff_zero_refutes_exponential_reconstruction
+#check cutoff_factor_cannot_be_erased
+#print axioms cutoff_factor_cannot_be_erased
+#check exact_curvature_margin
+#print axioms exact_curvature_margin
+#check scale_one_margin_keeps_actual_constant
+#print axioms scale_one_margin_keeps_actual_constant

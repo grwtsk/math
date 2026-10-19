@@ -1,0 +1,180 @@
+import GRWTSK.Interfaces.GraphHodgePortCore
+import Lean
+import Lean.Compiler.Old
+
+/- Observation tooling only. Source hashes and profiles are supplied by a driver
+that reads immutable Git objects and compares the materialized bytes before and
+after execution. A matching profile authenticates no compiler provenance. -/
+open Lean Elab Command
+namespace GraphHodgeReplayAudit
+
+partial def nameJson : Name → Json
+  | .anonymous => Json.arr #[toJson "anonymous"]
+  | .str p s => Json.arr #[toJson "str", nameJson p, toJson s]
+  | .num p n => Json.arr #[toJson "num", nameJson p, toJson n]
+
+partial def levelJson : Level → Json
+  | .zero => Json.arr #[toJson "zero"]
+  | .succ u => Json.arr #[toJson "succ", levelJson u]
+  | .max u v => Json.arr #[toJson "max", levelJson u, levelJson v]
+  | .imax u v => Json.arr #[toJson "imax", levelJson u, levelJson v]
+  | .param n => Json.arr #[toJson "param", nameJson n]
+  | .mvar n => Json.arr #[toJson "mvar", nameJson n.name]
+
+def binderJson : BinderInfo → Json
+  | .default => toJson "explicit"
+  | .implicit => toJson "implicit"
+  | .strictImplicit => toJson "strict_implicit"
+  | .instImplicit => toJson "instance_implicit"
+
+def dataJson : DataValue → Json
+  | .ofString v => Json.arr #[toJson "string", toJson v]
+  | .ofBool v => Json.arr #[toJson "bool", toJson v]
+  | .ofName v => Json.arr #[toJson "name", nameJson v]
+  | .ofNat v => Json.arr #[toJson "nat", toJson v]
+  | .ofInt v => Json.arr #[toJson "int", toJson v]
+  | .ofSyntax v => Json.arr #[toJson "syntax_repr_lean_4_33_0", toJson (reprStr v)]
+
+/- Exact tagged constructor grammar, including binder names/info, universe
+levels, metadata, and let dependency flags. Hashing is performed by the driver
+over canonical UTF-8 JSON. No pretty-printer string is used as the type key. -/
+partial def exprJson : Expr → Json
+  | .bvar i => Json.arr #[toJson "bvar", toJson i]
+  | .fvar i => Json.arr #[toJson "fvar", nameJson i.name]
+  | .mvar i => Json.arr #[toJson "mvar", nameJson i.name]
+  | .sort u => Json.arr #[toJson "sort", levelJson u]
+  | .const n us => Json.arr #[toJson "const", nameJson n, toJson (us.map levelJson)]
+  | .app f a => Json.arr #[toJson "app", exprJson f, exprJson a]
+  | .lam n t b bi => Json.arr #[toJson "lam", nameJson n, exprJson t, exprJson b, binderJson bi]
+  | .forallE n t b bi => Json.arr #[toJson "forall", nameJson n, exprJson t, exprJson b, binderJson bi]
+  | .letE n t v b nd => Json.arr #[toJson "let", nameJson n, exprJson t, exprJson v, exprJson b, toJson nd]
+  | .lit (.natVal n) => Json.arr #[toJson "nat", toJson n]
+  | .lit (.strVal s) => Json.arr #[toJson "string", toJson s]
+  | .mdata m e => Json.arr #[toJson "metadata", toJson (m.entries.map fun (k,v) =>
+      Json.arr #[nameJson k, dataJson v]), exprJson e]
+  | .proj n i e => Json.arr #[toJson "projection", nameJson n, toJson i, exprJson e]
+
+def kind : ConstantInfo → String
+  | .axiomInfo _ => "axiom" | .defnInfo _ => "definition" | .thmInfo _ => "theorem"
+  | .opaqueInfo _ => "opaque" | .quotInfo _ => "quotient" | .inductInfo _ => "inductive"
+  | .ctorInfo _ => "constructor" | .recInfo _ => "recursor"
+
+elab "#audit_graph_hodge" config:str : command => do
+  let env ← getEnv
+  let owners := env.header.moduleNames
+  unless env.header.moduleData.size == owners.size do
+    throwError "module ownership table incomplete"
+  let cfg ← match Json.parse config.getString with
+    | .ok value => pure value
+    | .error error => throwError "invalid audit configuration: {error}"
+  let sources ← match cfg.getObjVal? "sources" with
+    | .ok value => pure value
+    | .error error => throwError "missing source hashes: {error}"
+  let profiles ← match cfg.getObjValAs? (Array Json) "runtime_profiles" with
+    | .ok value => pure value
+    | .error error => throwError "missing runtime profiles: {error}"
+  let discovery := (cfg.getObjValAs? Bool "discovery").toOption.getD false
+  let sourceHash := fun owner => (sources.getObjValAs? String owner.toString).toOption.getD ""
+  let ownerOf := fun name => (env.getModuleIdxFor? name).bind fun idx => owners[idx]?
+  let mut violations : Array String := #[]
+  let mut qualified : Array Name := #[]
+  let mut projectNames : Array Name := #[]
+  let mut partialNames : Array Name := #[]
+  for (data, owner) in env.header.moduleData.toList.zip owners.toList do
+    unless (`GRWTSK).isPrefixOf owner do continue
+    unless (sourceHash owner).length == 64 do
+      violations := violations.push s!"missing owner source hash: {owner}"
+    let mut recorded : Array Name := #[]
+    for info in data.constants do
+      unless ownerOf info.name == some owner do continue
+      recorded := recorded.push info.name
+      projectNames := projectNames.push info.name
+      if info.isPartial then partialNames := partialNames.push info.name
+    let indexed := env.const2ModIdx.toArray.filterMap fun (n, idx) =>
+      if owners[idx]? == some owner then some n else none
+    let mut missingInfo : Array Name := #[]
+    let mut unreconciled : Array Name := #[]
+    for name in indexed do
+      unless recorded.contains name do
+        missingInfo := missingInfo.push name
+        unless data.extraConstNames.contains name && (env.find? name).isNone do
+          unreconciled := unreconciled.push name
+    unless unreconciled.isEmpty do
+      violations := violations.push s!"unreconciled imported declaration names in {owner}: {unreconciled}"
+    logInfo m!"GHP_MODULE::{(Json.mkObj [
+      ("module", toJson owner.toString), ("source_sha256", toJson (sourceHash owner)),
+      ("declarations", toJson recorded.size), ("indexed_names", toJson indexed.size),
+      ("native_only_index_names", toJson (missingInfo.toList.map Name.toString |>.mergeSort (· < ·))),
+      ("unreconciled_index_names", toJson (unreconciled.map Name.toString)),
+      ("modern_module", toJson data.isModule)]).compress}"
+  for name in partialNames do
+    let parentName := Compiler.isUnsafeRecName? name
+    let owner := ownerOf name
+    let shape : Bool := match env.find? name, parentName.bind env.find? with
+      | some (.defnInfo helper), some (.defnInfo parent) =>
+        helper.safety == .partial && parent.safety == .safe &&
+        Expr.equal helper.type parent.type && helper.levelParams == parent.levelParams &&
+        ownerOf parent.name == owner
+      | _, _ => false
+    let enrolled := profiles.any fun profile =>
+      (profile.getObjValAs? String "name").toOption == some name.toString &&
+      (profile.getObjValAs? String "parent").toOption == parentName.map Name.toString &&
+      (profile.getObjValAs? String "module").toOption == owner.map Name.toString &&
+      (profile.getObjValAs? String "owner_source_sha256").toOption == owner.map sourceHash
+    if shape && (discovery || enrolled) then qualified := qualified.push name
+    else violations := violations.push s!"unqualified partial runtime declaration: {name}"
+  if !discovery && profiles.size != qualified.size then
+    violations := violations.push "runtime profile membership mismatch"
+  if (cfg.getObjValAs? Bool "fail_fast").toOption.getD false && !violations.isEmpty then
+    logInfo m!"GHP_BOUNDARY_REJECTION::{(toJson violations).compress}"
+    throwError "graph Hodge runtime profile gate rejected: {violations}"
+  let mut count := 0
+  let mut publicCount := 0
+  for name in projectNames do
+    let some info := env.find? name | throwError "census declaration disappeared: {name}"
+    let some owner := ownerOf name | throwError "census owner disappeared: {name}"
+    let knownRuntime := qualified.contains name
+    let axs ← collectAxioms name
+    let axNames := axs.toList.map Name.toString |>.mergeSort (· < ·)
+    if info.isUnsafe then violations := violations.push s!"unsafe declaration: {name}"
+    if kind info == "axiom" then violations := violations.push s!"new project axiom: {name}"
+    for ax in axs do
+      unless #[`propext, `Classical.choice, `Quot.sound].contains ax do
+        violations := violations.push s!"unapproved transitive axiom {ax} in {name}"
+    let typeRefs := partialNames.filter fun helper => info.type.getUsedConstants.contains helper
+    let valueRefs := match info.value? true with
+      | some value => partialNames.filter fun helper => value.getUsedConstants.contains helper
+      | none => #[]
+    if !knownRuntime && (!typeRefs.isEmpty || !valueRefs.isEmpty) then
+      violations := violations.push s!"logical reference to runtime helper in {name}"
+    let extern := isExtern env name
+    let implementedBy := Compiler.getImplementedBy? env name
+    let csimp := Compiler.hasCSimpAttribute env name
+    if extern || implementedBy.isSome || csimp then
+      violations := violations.push s!"unreviewed project native replacement: {name}"
+    let isPublic := !isPrivateName name
+    if isPublic then publicCount := publicCount + 1
+    let typePP ← liftTermElabM do Meta.ppExpr info.type
+    logInfo m!"GHP_DECL::{(Json.mkObj [
+      ("module", toJson owner.toString), ("owner_source_sha256", toJson (sourceHash owner)),
+      ("name", toJson name.toString), ("kind", toJson (kind info)),
+      ("public", toJson isPublic), ("level_params", toJson (info.levelParams.map nameJson)),
+      ("type_expression", exprJson info.type), ("type_pp", toJson typePP.pretty),
+      ("unsafe", toJson info.isUnsafe), ("partial", toJson info.isPartial),
+      ("runtime_profile_qualified", toJson knownRuntime),
+      ("runtime_parent", toJson ((Compiler.isUnsafeRecName? name).map Name.toString)),
+      ("logical_type_runtime_refs", toJson (typeRefs.map Name.toString)),
+      ("logical_value_runtime_refs", toJson (valueRefs.map Name.toString)),
+      ("extern", toJson extern), ("implemented_by", toJson (implementedBy.map Name.toString)),
+      ("csimp_theorem", toJson csimp), ("axioms", toJson axNames)]).compress}"
+    count := count + 1
+  logInfo m!"GHP_SUMMARY::{(Json.mkObj [
+    ("declarations", toJson count), ("public_declarations", toJson publicCount),
+    ("runtime_helpers", toJson qualified.size), ("discovery", toJson discovery),
+    ("violations", toJson violations),
+    ("compiler_provenance_authenticated", toJson false),
+    ("independent_kernel_checker", toJson false)]).compress}"
+  unless violations.isEmpty do throwError "graph Hodge trust audit rejected: {violations}"
+end GraphHodgeReplayAudit
+
+#audit_graph_hodge @@CONFIG@@

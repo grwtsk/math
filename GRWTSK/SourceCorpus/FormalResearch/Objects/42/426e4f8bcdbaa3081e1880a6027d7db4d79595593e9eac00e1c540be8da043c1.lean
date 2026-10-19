@@ -1,0 +1,10 @@
+import ScopeFixtures
+
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourceCriticalDensityScopeFixtures
+
+#print boundary_mass_correction_required
+#print actual_preprime_mass_not_balanced
+#print actual_opposite_signed_source_integrals
+#print actual_bounded_density_increases_signed_integral
+#print actual_negative_axis_density

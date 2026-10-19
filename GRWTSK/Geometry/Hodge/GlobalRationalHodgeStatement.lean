@@ -14,6 +14,9 @@ structure Index where
   realization : String
   deriving DecidableEq, Repr
 
+-- The independent universes of the bundled cycle and Hodge modules occur in the structure's
+-- result sort. Keeping them separate preserves families whose two modules have different sizes.
+set_option linter.checkUnivs false in
 /-- A family of rational cycle-class maps indexed by exact geometric cases. -/
 structure Family (I : Type u) where
   cycle : I → ModuleCat.{v} ℚ

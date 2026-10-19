@@ -1,0 +1,9 @@
+import SourceLeadingCesaroPropagation
+
+open FormalResearch.RiemannHypothesis.SourceLeadingCesaroPropagation
+#check actual_leading_upper_of_residual_upper
+#print axioms actual_leading_upper_of_residual_upper
+#check actual_leading_upper_of_five_cesaro
+#print axioms actual_leading_upper_of_five_cesaro
+#check actual_leading_upper_of_signed_cesaro
+#print axioms actual_leading_upper_of_signed_cesaro

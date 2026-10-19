@@ -67,6 +67,7 @@ theorem apply_of_ne (C : Change Key) (L : Ledger Key)
     C.apply L key = L key := by
   simp [apply, h]
 
+omit [DecidableEq Key] in
 /-- A valid discharge change has exactly zero replacement bound. -/
 theorem discharge_bound_zero
     (key : Key) (bound : ℝ) (hbound : 0 ≤ bound) (L : Ledger Key)
@@ -74,6 +75,7 @@ theorem discharge_bound_zero
     bound = 0 := by
   exact h.1
 
+omit [DecidableEq Key] in
 /-- A valid sharpen change exposes the old bound and the monotonicity proof. -/
 theorem sharpen_exposes_old
     (key : Key) (bound : ℝ) (hbound : 0 ≤ bound) (L : Ledger Key)
@@ -81,6 +83,7 @@ theorem sharpen_exposes_old
     ∃ old, L key = some old ∧ bound ≤ old := by
   exact h
 
+omit [DecidableEq Key] in
 /-- A valid add change can target only a structurally absent residual. -/
 theorem add_requires_absent
     (key : Key) (bound : ℝ) (hbound : 0 ≤ bound) (L : Ledger Key)

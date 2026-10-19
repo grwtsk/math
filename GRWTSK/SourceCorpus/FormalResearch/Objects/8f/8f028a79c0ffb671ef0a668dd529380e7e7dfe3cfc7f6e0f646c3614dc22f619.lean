@@ -1,0 +1,25 @@
+import SourceRemainingVariationConsumer
+
+set_option autoImplicit false
+set_option linter.style.setOption false
+set_option linter.hashCommand false
+set_option pp.all true
+set_option pp.fullNames true
+
+open FormalResearch.RiemannHypothesis.SourceRemainingVariationObstruction
+open FormalResearch.RiemannHypothesis.SourceRemainingVariationConsumer
+
+#check remainingDerivativeMass
+#check criticalPrimeTest_deriv_early_lower
+#check remainingDerivativeMass_exponential_lower
+#check remainingDerivativeMass_linear_lower
+#check remainingDerivativeMass_not_eventually_bounded
+#check remainingAtomWork_abs_le_elementary_budget
+#check elementary_remaining_budget_not_eventually_bounded
+#print axioms remainingDerivativeMass
+#print axioms criticalPrimeTest_deriv_early_lower
+#print axioms remainingDerivativeMass_exponential_lower
+#print axioms remainingDerivativeMass_linear_lower
+#print axioms remainingDerivativeMass_not_eventually_bounded
+#print axioms remainingAtomWork_abs_le_elementary_budget
+#print axioms elementary_remaining_budget_not_eventually_bounded

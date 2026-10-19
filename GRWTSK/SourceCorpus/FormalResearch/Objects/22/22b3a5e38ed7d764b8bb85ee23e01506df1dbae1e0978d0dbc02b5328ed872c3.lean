@@ -1,0 +1,10 @@
+import SourceFullXiCellBudgetObstruction
+
+open FormalResearch.RiemannHypothesis.SourceFullXiCellBudgetObstruction
+
+#check actual_fullXiLogWeight_early_negative
+#check actual_fullXiAbsoluteLogBudget_linear_lower
+#check actual_fullXiAbsoluteLogBudget_not_eventually_bounded
+#print axioms actual_fullXiLogWeight_early_negative
+#print axioms actual_fullXiAbsoluteLogBudget_linear_lower
+#print axioms actual_fullXiAbsoluteLogBudget_not_eventually_bounded

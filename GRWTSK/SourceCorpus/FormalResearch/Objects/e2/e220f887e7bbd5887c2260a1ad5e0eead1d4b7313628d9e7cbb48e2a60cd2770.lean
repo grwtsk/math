@@ -1,0 +1,7 @@
+import ActualEndpoint
+#check CommonMeanEndpoint.endpointPolynomial_expansion
+#print axioms CommonMeanEndpoint.endpointPolynomial_expansion
+#check CommonMeanEndpoint.normalizedInterior_endpoint
+#print axioms CommonMeanEndpoint.normalizedInterior_endpoint
+#check CommonMeanEndpoint.actual_source_endpoint
+#print axioms CommonMeanEndpoint.actual_source_endpoint

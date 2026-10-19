@@ -1,0 +1,93 @@
+import Mathlib.Analysis.Analytic.Order
+import Mathlib.Analysis.Complex.Basic
+
+/-!
+# Analytic multiplicity under normalization and local coordinates
+
+These local theorems preserve the analytic order in `ℕ∞`, including infinite
+order. They are generic support for actual-source product and spectral-divisor
+comparisons. No determinant, Xi identity, spectral model, or simple spectrum is
+constructed here. Zero-set equality alone is explicitly insufficient.
+
+Codex AI authored these adapters and their fixtures, reusing the pinned Mathlib
+analytic-order theory. Source attribution and the remaining actual-source and
+operator obligations are recorded in `docs/research/spectral/divisor-order.md`.
+-/
+
+namespace FormalResearch.MathematicalTooling.AnalyticMultiplicity
+
+open Filter
+open scoped Topology
+
+/-- A nonvanishing analytic normalization preserves the complete local order. -/
+theorem order_mul_nonvanishing {f c : ℂ → ℂ} {z : ℂ}
+    (hf : AnalyticAt ℂ f z) (hc : AnalyticAt ℂ c z) (hc0 : c z ≠ 0) :
+    analyticOrderAt (fun w ↦ c w * f w) z = analyticOrderAt f z := by
+  simpa only [Pi.mul_def, hc.analyticOrderAt_eq_zero.mpr hc0, zero_add] using
+    analyticOrderAt_mul hc hf
+
+/-- A literal local source identity transports multiplicity through its
+nonvanishing normalization. Equality merely of zero sets is not a premise. -/
+theorem order_eq_of_local_normalization {f g c : ℂ → ℂ} {z : ℂ}
+    (hf : AnalyticAt ℂ f z) (hc : AnalyticAt ℂ c z) (hc0 : c z ≠ 0)
+    (hsource : g =ᶠ[𝓝 z] fun w ↦ c w * f w) :
+    analyticOrderAt g z = analyticOrderAt f z := by
+  exact (analyticOrderAt_congr hsource).trans (order_mul_nonvanishing hf hc hc0)
+
+/-- Local source identification through an unramified coordinate and a
+nonvanishing analytic normalization preserves analytic multiplicity. -/
+theorem order_eq_of_local_coordinate {f g c φ : ℂ → ℂ} {z : ℂ}
+    (hf : AnalyticAt ℂ f (φ z)) (hc : AnalyticAt ℂ c z) (hc0 : c z ≠ 0)
+    (hφ : AnalyticAt ℂ φ z) (hφ' : deriv φ z ≠ 0)
+    (hsource : g =ᶠ[𝓝 z] fun w ↦ c w * f (φ w)) :
+    analyticOrderAt g z = analyticOrderAt f (φ z) := by
+  calc
+    analyticOrderAt g z = analyticOrderAt (f ∘ φ) z :=
+      order_eq_of_local_normalization (hf.comp hφ) hc hc0 hsource
+    _ = analyticOrderAt f (φ z) := analyticOrderAt_comp_of_deriv_ne_zero hφ hφ'
+
+/-- A simple zero transports only after the exact local multiplicity bridge
+and its nonvanishing/unramified hypotheses are supplied. -/
+theorem simple_iff_of_local_coordinate {f g c φ : ℂ → ℂ} {z : ℂ}
+    (hf : AnalyticAt ℂ f (φ z)) (hc : AnalyticAt ℂ c z) (hc0 : c z ≠ 0)
+    (hφ : AnalyticAt ℂ φ z) (hφ' : deriv φ z ≠ 0)
+    (hsource : g =ᶠ[𝓝 z] fun w ↦ c w * f (φ w)) :
+    analyticOrderAt g z = 1 ↔ analyticOrderAt f (φ z) = 1 := by
+  rw [order_eq_of_local_coordinate hf hc hc0 hφ hφ' hsource]
+
+/-- Squaring preserves local order away from its ramification point. A grouped
+occurrence enumeration still requires its own no-overcounting theorem. -/
+theorem order_comp_square {f : ℂ → ℂ} {u : ℂ} (hu : u ≠ 0) :
+    analyticOrderAt (fun z ↦ f (z ^ 2)) u = analyticOrderAt f (u ^ 2) := by
+  apply analyticOrderAt_comp_of_deriv_ne_zero (g := fun z : ℂ ↦ z ^ 2) (by fun_prop)
+  rw [show deriv (fun z : ℂ ↦ z ^ 2) u = 2 * u by simp]
+  exact mul_ne_zero (by norm_num) hu
+
+/-- The opposite square-root coordinates carry the same, undoubled order. -/
+theorem order_comp_square_neg {f : ℂ → ℂ} {u : ℂ} (hu : u ≠ 0) :
+    analyticOrderAt (fun z ↦ f (z ^ 2)) (-u) =
+      analyticOrderAt (fun z ↦ f (z ^ 2)) u := by
+  rw [order_comp_square (neg_ne_zero.mpr hu), order_comp_square hu, neg_sq]
+
+/-- At the excluded coordinate `u = 0`, an analytic square substitution doubles
+the complete order. The nonzero-coordinate premise above is essential. -/
+theorem order_comp_square_zero {f : ℂ → ℂ} (hf : AnalyticAt ℂ f 0) :
+    analyticOrderAt (fun z ↦ f (z ^ 2)) 0 = analyticOrderAt f 0 * 2 := by
+  have hf' : AnalyticAt ℂ f ((0 : ℂ) ^ 2) := by simpa using hf
+  have horder : analyticOrderAt (fun z : ℂ ↦ z ^ 2) 0 = 2 := by
+    simpa [Pi.pow_def] using
+      analyticOrderAt_centeredMonomial (z₀ := (0 : ℂ)) (n := 2)
+  simpa [Function.comp_def, horder] using
+    hf'.analyticOrderAt_comp (g := fun z : ℂ ↦ z ^ 2) (analyticAt_id.pow 2)
+
+/-- A simple and a double zero have identical zero support. -/
+theorem same_zero_support_different_order :
+    (∀ z : ℂ, z = 0 ↔ z ^ 2 = 0) ∧
+      analyticOrderAt (fun z : ℂ ↦ z) 0 = 1 ∧
+      analyticOrderAt (fun z : ℂ ↦ z ^ 2) 0 = 2 := by
+  refine ⟨fun z ↦ (pow_eq_zero_iff (by decide)).symm, ?_, ?_⟩
+  · exact analyticOrderAt_id
+  · simpa [Pi.pow_def] using
+      analyticOrderAt_centeredMonomial (z₀ := (0 : ℂ)) (n := 2)
+
+end FormalResearch.MathematicalTooling.AnalyticMultiplicity

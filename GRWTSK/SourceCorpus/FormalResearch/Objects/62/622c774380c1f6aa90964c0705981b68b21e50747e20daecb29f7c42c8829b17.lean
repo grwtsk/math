@@ -1,0 +1,11 @@
+import SourceFiniteHeadMinusWeight
+
+#check RH16FiniteHeadMinusWeight.actual_minus_kernel_error_t_bound
+#print axioms RH16FiniteHeadMinusWeight.actual_minus_kernel_error_t_bound
+
+#check RH16FiniteHeadMinusWeight.minusCorrelationWeight_error_t_bound
+#print axioms RH16FiniteHeadMinusWeight.minusCorrelationWeight_error_t_bound
+
+#check RH16FiniteHeadMinusWeight.actual_minus_kernel_error_fixed_head
+#print axioms RH16FiniteHeadMinusWeight.actual_minus_kernel_error_fixed_head
+

@@ -1,0 +1,83 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-atlas-overlap-audit-v0.1"
+owner_repository = "grwtsk/math"
+issue = 232
+parent_issue = 225
+parent_pull_request = 237
+root_module = "GRWTSK"
+build_target = "GRWTSK"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+operational_receipt_is_external = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripOverlapAudit"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann"
+
+[[hostile_controls]]
+id = "reject-one-way-as-equivalence"
+description = "Forward-only and reverse-only proposition transports cannot be promoted to ChartTransition."
+
+[[hostile_controls]]
+id = "reject-empty-overlap"
+description = "Directional and defective transitions require an actual nonempty overlap witness."
+
+[[hostile_controls]]
+id = "reject-height-only-identity"
+description = "Equal real heights cannot replace exact coordinate transport and source-binding equality."
+
+[[hostile_controls]]
+id = "reject-source-normalization-forgetting"
+description = "Both chart bindings must match their charts and be exactly equal before admission."
+
+[[hostile_controls]]
+id = "reject-bounded-as-zero"
+description = "A bounded scalar defect cannot be promoted to exact coordinate equality without the separate vanishing obligation."
+
+[[hostile_controls]]
+id = "reject-defect-without-readout"
+description = "Every scalar defect must be explicitly related to the source and target algebra coordinates by mismatchReadout."
+
+[[hostile_controls]]
+id = "reject-defect-composition-without-triple-overlap"
+description = "Defect composition requires one actual point in all three carriers and exact middle-binding equality."
+
+[[hostile_controls]]
+id = "reject-pairwise-only-admission"
+description = "This module does not discharge the identity, inverse, or triple-cocycle fields of CriticalStripAtlas."
+
+[[hostile_controls]]
+id = "reject-directional-audit-as-atlas-admission"
+description = "Only the exact audit outcome exposes an admitted ChartTransition."
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+
+[nonclaims]
+claims = [
+  "construction of any concrete source-to-source overlap",
+  "admission of the arithmetic, mirror, jet, positive-limit, or Weil transitions",
+  "identity, inverse, or triple-cocycle completion for the concrete atlas",
+  "vanishing of any declared transition defect",
+  "complete vertical proof-path coverage",
+  "gap-free critical-strip atlas",
+  "Riemann hypothesis",
+  "a replay receipt produced by this static manifest"
+]

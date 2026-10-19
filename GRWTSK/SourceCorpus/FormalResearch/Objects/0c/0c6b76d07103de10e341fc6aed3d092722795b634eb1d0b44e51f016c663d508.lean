@@ -1,0 +1,34 @@
+import FormalResearch.RiemannHypothesis.SourceComparison.ThetaErrorMoments
+import FormalResearch.RiemannHypothesis.SourceComparison.MertensBoundary
+import Mathlib.NumberTheory.LSeries.Dirichlet
+import Mathlib.NumberTheory.LSeries.SumCoeff
+
+set_option pp.universes true
+set_option pp.proofs true
+set_option pp.deepTerms true
+set_option pp.maxSteps 10000000
+
+#check @ArithmeticFunction.LSeriesSummable_moebius_iff
+#print axioms ArithmeticFunction.LSeriesSummable_moebius_iff
+#check @ArithmeticFunction.LSeries_zeta_mul_Lseries_moebius
+#print axioms ArithmeticFunction.LSeries_zeta_mul_Lseries_moebius
+#check @ArithmeticFunction.LSeries_zeta_eq_riemannZeta
+#print axioms ArithmeticFunction.LSeries_zeta_eq_riemannZeta
+#check @riemannZeta_residue_one
+#print axioms riemannZeta_residue_one
+#check @LSeries_eq_mul_integral
+#print axioms LSeries_eq_mul_integral
+#check @ZetaInvBnd
+#print axioms ZetaInvBnd
+#check @ZetaZeroFree
+#print axioms ZetaZeroFree
+#check @ZetaNoZerosInBox
+#print axioms ZetaNoZerosInBox
+#check @MediumPNT
+#print axioms MediumPNT
+#check @FormalResearch.RiemannHypothesis.SourceComparison.MertensTransport.sum_moebius_mul_eq
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.MertensTransport.sum_moebius_mul_eq
+#check @FormalResearch.RiemannHypothesis.SourceComparison.MertensBoundary.mertensSum_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.MertensBoundary.mertensSum_abs_le
+#check @FormalResearch.RiemannHypothesis.SourceComparison.ThetaErrorMoments.thetaLogError_moment_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.ThetaErrorMoments.thetaLogError_moment_integrable

@@ -1,0 +1,8 @@
+import SourceRationalExplicitConsumers
+set_option linter.hashCommand false
+namespace FormalResearch.RiemannHypothesis.SourceRationalExplicitConsumers
+#print all_real_lower_of_rational
+#print axioms all_real_lower_of_rational
+#print leading_of_rational
+#print axioms leading_of_rational
+end FormalResearch.RiemannHypothesis.SourceRationalExplicitConsumers

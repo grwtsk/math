@@ -1,0 +1,12 @@
+import SourceWholePlainConvolution
+
+open FormalResearch.RiemannHypothesis.SourceWholePlainConvolution
+
+#check completeMangoldtPlainRows
+#check completeRows_eq_logKernel_one
+#check logSamplingMainTerm_one
+#check completeRows_sub_alpha1_abs_le
+#check completeRows_abs_le
+#check plainOff_one_eq_rows_sub_residual_add_diagonal
+#check plainOff_one_eq_logRow_sub_residual_add_diagonal
+#check independentMain_one_row_decomposition

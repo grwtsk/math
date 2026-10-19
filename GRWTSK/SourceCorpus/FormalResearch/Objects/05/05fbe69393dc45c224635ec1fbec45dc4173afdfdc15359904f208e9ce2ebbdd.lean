@@ -1,0 +1,28 @@
+import SourceCutoffOneLedgerFixtures
+
+open FormalResearch.RiemannHypothesis.SourceCutoffOneLedgerFixtures
+
+#check centered_long_one_zero
+#print axioms centered_long_one_zero
+#check centered_at_one_nonzero
+#print axioms centered_at_one_nonzero
+#check raw_long_one_negative
+#print axioms raw_long_one_negative
+#check raw_at_one_zero
+#print axioms raw_at_one_zero
+#check one_not_in_prime_inventory
+#print axioms one_not_in_prime_inventory
+#check prime_window_zero_length
+#print axioms prime_window_zero_length
+#check diagonal_is_not_norm_at_edge
+#print axioms diagonal_is_not_norm_at_edge
+#check extra_sample_above_N_zero
+#print axioms extra_sample_above_N_zero
+#check original_independent_one_main
+#print axioms original_independent_one_main
+#check actual_scale_one_empty_flux
+#print axioms actual_scale_one_empty_flux
+#check signed_total_does_not_equal_absolute_budget
+#print axioms signed_total_does_not_equal_absolute_budget
+#check bounded_error_does_not_bound_baseline
+#print axioms bounded_error_does_not_bound_baseline

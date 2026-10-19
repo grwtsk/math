@@ -1,0 +1,4 @@
+import FiniteCertificate
+
+#eval CommonMean20261004.FiniteCertificate.rationalTailBound.num
+#eval CommonMean20261004.FiniteCertificate.rationalTailBound.den

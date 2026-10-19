@@ -1,0 +1,12 @@
+import FormalResearch.RiemannHypothesis.SourceComparison.CorrelationSecondDerivative
+#check MeasureTheory.setIntegral_mono_set
+#check MeasureTheory.setIntegral_mono_on
+#check MeasureTheory.integral_norm_le_integral_norm
+#check intervalIntegral.norm_integral_le_integral_norm
+#check MeasureTheory.norm_setIntegral_le_of_norm_le_const
+#check MeasureTheory.IntegrableOn.intervalIntegrable
+#check intervalIntegrable_iff_integrableOn_Ioc_of_le
+#check MeasureTheory.IntegrableOn.congr_fun
+#check MeasureTheory.setIntegral_nonneg
+#check MeasureTheory.integral_nonneg_of_ae
+#check MeasureTheory.IntegrableOn.mono_set

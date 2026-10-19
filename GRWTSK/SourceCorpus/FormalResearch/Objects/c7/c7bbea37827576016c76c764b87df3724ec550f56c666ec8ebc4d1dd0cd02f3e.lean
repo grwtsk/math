@@ -1,0 +1,68 @@
+import Surface.Flow.Arithmetic
+import Surface.Prismatic
+
+namespace Surface.Prismatic
+
+/-!
+# Prismatic flow adapter
+
+Formalized here: flow nodes backed by real `Surface.Prismatic` structures.
+
+Certificate-gated here: cohomological and comparison content.  This module only
+adapts existing prismatic objects into symbolic flow trees; it does not invent
+prism data.
+-/
+
+namespace Flow
+
+/-- Flow node backed by a real `Surface.Prismatic.Prism`. -/
+def prismNode
+    {p : Nat}
+    (_P : Surface.Prismatic.Prism p) :
+    Surface.Flow.Expression String :=
+  Surface.Flow.Expression.attendMany
+    [.prismaticTag, .sieve]
+    (.variadic .prismaticTag
+      [.symbol "Surface.Prismatic.Prism", .nat p])
+
+/-- Flow node backed by a real `Surface.Prismatic.PrismaticSite`. -/
+def siteNode
+    {p : Nat}
+    {P : Surface.Prismatic.BoundedPrism p}
+    {X : Surface.Prismatic.PadicFormalScheme}
+    (_S : Surface.Prismatic.PrismaticSite P X) :
+    Surface.Flow.Expression String :=
+  Surface.Flow.Expression.attendMany
+    [.prismaticTag, .sieve]
+    (.variadic .sieve
+      [.symbol "Surface.Prismatic.PrismaticSite", .nat p])
+
+/-- Flow node backed by a real `Surface.Prismatic.PrismaticCohomology`. -/
+def cohomologyNode
+    {p : Nat}
+    {P : Surface.Prismatic.BoundedPrism p}
+    {X : Surface.Prismatic.PadicFormalScheme}
+    (_C : Surface.Prismatic.PrismaticCohomology P X) :
+    Surface.Flow.Expression String :=
+  Surface.Flow.Expression.attendMany
+    [.prismaticTag]
+    (.variadic .prismaticTag
+      [.symbol "Surface.Prismatic.PrismaticCohomology", .nat p])
+
+/-- Flow node backed by a real `Surface.Prismatic.NygaardFiltration`. -/
+def nygaardNode
+    {p : Nat}
+    {S : Surface.Prismatic.QuasiRegularSemiperfectoid p}
+    (_N : Surface.Prismatic.NygaardFiltration S) :
+    Surface.Flow.Expression String :=
+  Surface.Flow.Expression.attendMany
+    [.prismaticTag]
+    (.variadic .prismaticTag
+      [.symbol "Surface.Prismatic.NygaardFiltration", .nat p])
+
+/-- Unit example of the adapter, backed by `Surface.Prismatic.unitPrism`. -/
+def unitPrismNode (p : Nat) : Surface.Flow.Expression String :=
+  prismNode (Surface.Prismatic.unitPrism p)
+
+end Flow
+end Surface.Prismatic

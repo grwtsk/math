@@ -1,0 +1,11 @@
+import SourceCompleteXiTailConsumer
+set_option autoImplicit false
+set_option linter.style.longLine false
+#print RH16CompleteXiTail.completeXiTail
+#print RH16CompleteXiTail.tailAtomBudget
+#print RH16CompleteXiTail.complete_complement_lower_of_tail
+#print RH16CompleteXiTail.atom_witness_of_complete_tail
+#print RH16CompleteXiTail.all_real_lower_of_complete_tail
+#print RH16CompleteXiTail.estimate_of_complete_tail
+#print RH16CompleteXiTail.residual_upper_of_complete_tail
+#print RH16CompleteXiTail.actual_leading_upper_of_complete_tail
