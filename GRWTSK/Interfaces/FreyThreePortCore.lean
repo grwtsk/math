@@ -2,8 +2,8 @@
 OpenAI formalization assistance.
 
 Isolated source root for Frey models, observations, local reduction, heights,
-finite jets and integral coefficient charts, now including the finite relative
-section-ideal algebra isomorphism. No completion, global atlas or ABC proof.
+finite jets, integral charts and the inverse-limit formal-series identification.
+No global section-space atlas, arithmetic coefficient completion or ABC proof.
 This file remains outside GRWTSK.lean pending replay and trust checks. -/
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyThreePortFrame
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyThreePortSaturation
@@ -24,6 +24,8 @@ import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyFormalNeighb
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyIntegralJetCharts
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetQuotient
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreySectionJetEquiv
+import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyParameterSeries
+import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetCompletion
 
 namespace GRWTSK.Interfaces.FreyThreePortCore
 
