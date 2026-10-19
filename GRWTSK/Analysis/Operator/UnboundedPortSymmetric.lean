@@ -51,13 +51,27 @@ theorem symmetric_forward
     P.toFramedEquivalence.domainEquiv.apply_symm_apply y
   have hz : P.toFramedEquivalence.domainEquiv w = z :=
     P.toFramedEquivalence.domainEquiv.apply_symm_apply z
-  subst y
-  subst z
-  rw [← P.toFramedEquivalence.intertwines_apply x,
-    ← P.toFramedEquivalence.intertwines_apply w]
-  simp only [FramedEquivalence.coe_domainEquiv]
-  rw [P.inner_map, P.inner_map]
-  exact hA x w
+  calc
+    ⟪B.apply y, (z : F)⟫_ℝ =
+        ⟪B.apply (P.toFramedEquivalence.domainEquiv x),
+          (P.toFramedEquivalence.domainEquiv w : F)⟫_ℝ := by
+            rw [hy, hz]
+    _ = ⟪P.toFramedEquivalence.frame (A.apply x),
+          P.toFramedEquivalence.frame (w : E)⟫_ℝ := by
+            rw [← P.toFramedEquivalence.intertwines_apply x]
+            rfl
+    _ = ⟪A.apply x, (w : E)⟫_ℝ :=
+          P.inner_map (A.apply x) (w : E)
+    _ = ⟪(x : E), A.apply w⟫_ℝ := hA x w
+    _ = ⟪P.toFramedEquivalence.frame (x : E),
+          P.toFramedEquivalence.frame (A.apply w)⟫_ℝ :=
+          (P.inner_map (x : E) (A.apply w)).symm
+    _ = ⟪(P.toFramedEquivalence.domainEquiv x : F),
+          B.apply (P.toFramedEquivalence.domainEquiv w)⟫_ℝ := by
+            rw [← P.toFramedEquivalence.intertwines_apply w]
+            rfl
+    _ = ⟪(y : F), B.apply z⟫_ℝ := by
+          rw [hy, hz]
 
 /-- Symmetry is equivalent on both sides of an exact orthogonal framed equivalence. -/
 theorem symmetric_iff (P : OrthogonalFramedEquivalence A B) :
