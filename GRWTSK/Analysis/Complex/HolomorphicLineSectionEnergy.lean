@@ -146,7 +146,7 @@ theorem energy_dirac (M : MetricWeights C) (hOpen : D.IsOpenCover)
 /-- A scalar holomorphic section is realized in the identity bundle through exact restrictions. -/
 def scalarSection (D : IndexedDomainCover ι) (hOpen : D.IsOpenCover)
     (f : HolomorphicSection D.X) : BundleSection (Cocycle.identity D) hOpen :=
-  (identityFamily D (fun i => restrictionRingHom (D.xTo i) f) (by
+  (identityTwistedFamily (D := D) (fun i => restrictionRingHom (D.xTo i) f) (by
     intro i j
     apply Subtype.ext
     funext z
