@@ -33,6 +33,8 @@ import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCompletionBa
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyAdicQuotients
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCanonicalCompletion
 
+import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCanonicalTransport
+
 namespace GRWTSK.Interfaces.FreyThreePortCore
 
 /-- Legacy trivial marker retained for signature compatibility. It supplies no
