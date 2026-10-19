@@ -61,11 +61,11 @@ def retarget (B : SimultaneousProofBundle LocalClaim Target)
   localProof := B.localProof
   targetDisposition := d
 
-/-- The original and retargeted bundles have definitionally identical local proofs. -/
+/-- Retargeting cannot change the proposition-level local evidence. -/
 theorem retarget_local (B : SimultaneousProofBundle LocalClaim Target)
     (d : TargetDisposition Target') (i : I) :
     (B.retarget d).local i = B.local i :=
-  rfl
+  Subsingleton.elim _ _
 
 end SimultaneousProofBundle
 
