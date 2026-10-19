@@ -12,11 +12,12 @@ This file strengthens the structural bridge requested in issue #235. Topological
 homotopical, algebraic, analytic, root-height, source-binding, and proof-transport data
 remain independent fields. No field is inferred from another by naming or coercion.
 
-The analytic domain is explicitly nonempty and the analytic map is nonconstant on two
-distinct domain points. The homotopy names the exact invariant it preserves. Separate
-commuting equations identify topological and ring coordinates with the holomorphic
-map, while separate height equations identify those realizations with the common
-represented-commutator root.
+The analytic domain is explicitly open and nonempty, and the analytic map is
+nonconstant on two distinct domain points. Openness prevents differentiability within
+a finite/discrete test set from substituting for a holomorphic neighborhood. The
+homotopy names the exact invariant it preserves. Separate commuting equations identify
+topological and ring coordinates with the holomorphic map, while separate height
+equations identify those realizations with the common represented-commutator root.
 
 The final proof implication remains an explicit theorem field rather than being hidden
 inside a compatibility premise. A completed bridge can be admitted as a source-bound
@@ -25,10 +26,12 @@ structured vertical edge, but this file constructs no concrete zeta/Weil instanc
 
 namespace GRWTSK.RiemannHypothesis
 
-/-- Holomorphic chart data with explicit anti-vacuity conditions. The two witnesses
-rule out both an empty domain and a constant-map bridge. -/
+/-- Holomorphic chart data with explicit anti-vacuity conditions. The open domain
+provides actual complex neighborhoods, while the two witnesses rule out both an empty
+domain and a constant-map bridge. -/
 structure NonvacuousHolomorphicChartMap where
   map : HolomorphicChartMap
+  domain_isOpen : IsOpen map.domain
   domain_nonempty : map.domain.Nonempty
   nonconstant_on_domain :
     ∃ z, z ∈ map.domain ∧
