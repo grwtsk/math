@@ -31,16 +31,10 @@ theorem freyWeierstrass_equation_iff (a b x y : ℚ) :
     (y ^ 2 + 0 * x * y + 0 * y =
       x ^ 3 + (b - a) * x ^ 2 + (-a * b) * x + 0) ↔
       y ^ 2 = x * (x - a) * (x + b)
-  constructor
-  · intro h
-    calc
-      y ^ 2 = x ^ 3 + (b - a) * x ^ 2 + (-a * b) * x + 0 := by
-        simpa using h
-      _ = x * (x - a) * (x + b) := by ring
-  · intro h
-    calc
-      y ^ 2 = x * (x - a) * (x + b) := h
-      _ = x ^ 3 + (b - a) * x ^ 2 + (-a * b) * x + 0 := by ring
+  have hfactor : x ^ 3 + (b - a) * x ^ 2 + (-a * b) * x + 0 =
+      x * (x - a) * (x + b) := by ring
+  rw [hfactor]
+  simp only [zero_mul, add_zero]
 
 /-- Raw discriminant of the displayed Frey model. -/
 theorem freyWeierstrass_Δ (a b : ℚ) :
