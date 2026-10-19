@@ -11,14 +11,17 @@ This is the authoritative path assignment for the pilot's persistent IDs. Labels
 | [Analysis](subjects/analysis/index.md) | `urn:uuid:f9dfc34e-20f8-4ee4-8c63-c54e06947ed9` |
 | [Finite reversible Markov chain theory](subjects/probability/markov-chains/finite-reversible/index.md) | `urn:uuid:9d8aa282-1cde-42d4-81d0-e80b543a9910` |
 | [Functional analysis](subjects/analysis/functional-analysis/index.md) | `urn:uuid:b047b4e6-ba8c-4feb-bbb2-4241fca7b116` |
+| [History of mathematics](subjects/history-of-mathematics/index.md) | `urn:uuid:6b4621a7-5372-457e-acf9-393db3e09503` |
+| [History of mathematics education](subjects/history-of-mathematics/mathematics-education/index.md) | `urn:uuid:55fcdccc-6afb-4536-a076-f932dfa53dc2` |
 | [Linear operator theory](subjects/analysis/functional-analysis/linear-operators/index.md) | `urn:uuid:827f5db9-1422-479e-a716-d9993230180c` |
 | [Markov chain theory (discrete time)](subjects/probability/markov-chains/index.md) | `urn:uuid:770ecd4c-5dc6-4ebe-88da-5033eb4ced60` |
+| [Mathematics education](subjects/mathematics-education/index.md) | `urn:uuid:98d1630a-9a7d-4454-a62a-4ec39833aa96` |
 | [Probability theory](subjects/probability/index.md) | `urn:uuid:8abb03fc-4067-4580-9b34-47a7aaee5943` |
-| [Spectrum (bounded linear operator)](facets/objects/operator-spectrum.md) | `urn:uuid:9ef6cd3e-21ce-440d-845f-702f515bda95` |
-| [Spectrum (commutative ring)](facets/objects/ring-spectrum.md) | `urn:uuid:9acb4119-13f8-4474-adc5-4396199faf88` |
 | [Spectral theory of finite reversible Markov chains](subjects/analysis/functional-analysis/linear-operators/spectral-theory/self-adjoint/finite-reversible-chains/index.md) | `urn:uuid:6f8afa7d-458b-4dc9-8bff-230582f3a0c7` |
 | [Spectral theory of linear operators](subjects/analysis/functional-analysis/linear-operators/spectral-theory/index.md) | `urn:uuid:0aff8294-7302-4beb-80ae-72c2de9daf58` |
 | [Spectral theory of self-adjoint operators](subjects/analysis/functional-analysis/linear-operators/spectral-theory/self-adjoint/index.md) | `urn:uuid:7ac44c10-be39-42fa-ac8e-c3b2a3bf1e64` |
+| [Spectrum (bounded linear operator)](facets/objects/operator-spectrum.md) | `urn:uuid:9ef6cd3e-21ce-440d-845f-702f515bda95` |
+| [Spectrum (commutative ring)](facets/objects/ring-spectrum.md) | `urn:uuid:9acb4119-13f8-4474-adc5-4396199faf88` |
 
 ## Other canonical records
 
@@ -30,8 +33,9 @@ This is the authoritative path assignment for the pilot's persistent IDs. Labels
 | [Namespace collision proposal](proposals/collisions/index.md) | `urn:uuid:8239c220-d9bf-4c45-9486-4b1bd50a0890` |
 | [Subject addition proposal](proposals/new-concepts/index.md) | `urn:uuid:dd591907-4562-43ba-bb64-aff410d76b73` |
 | [Source association](associations/index.md) | `urn:uuid:934fbf56-d172-43b2-8fcd-37d0f0bc3e0a` |
+| [History and education addition](proposals/new-concepts/history-education.md) | `urn:uuid:89c7adb8-6d37-40b8-8686-1e692b0960a0` |
 
-The scoped navigation collections `subjects`, `facets` and `objects` resolve to their index pages. They do not create mathematical superclass assertions. The local scheme key is `grwtsk-mathematics`; its vocabulary release is `0.1-pilot`, independent of schema 0.1.0.
+The scoped navigation collections `subjects`, `facets` and `objects` resolve to their index pages. They do not create mathematical superclass assertions. The local scheme key is `grwtsk-mathematics`; its vocabulary release is `0.2-pilot`, an unpublished candidate independent of schema versions 0.1.0 and 0.1.1. The previous `0.1-pilot` registry and mappings remain pinned at math `cce5f855028dfc581917a40a222e8209ac9bd8c3`; no old identifier is reused.
 
 ## Historical path assignments
 
