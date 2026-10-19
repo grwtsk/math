@@ -1,0 +1,80 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-weil-positive-limit-core-v0.1"
+owner_repository = "grwtsk/math"
+issue = 215
+root_module = "GRWTSK"
+build_target = "GRWTSK"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+operational_receipt_is_external = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.FiniteResidualTelescope"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ArithmeticFeature"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.WeilPositiveLimitCore"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalLinePositivityCriterion"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.MirrorPairingCriterion"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann"
+
+[[hostile_controls]]
+id = "reject-source-channel-omission"
+description = "A feature map omitting or rewriting any named source channel cannot satisfy SourceFaithful."
+
+[[hostile_controls]]
+id = "reject-ad-hoc-residuals"
+description = "A claimed telescope must be generated from adjacent stage differences or provide the exact comparison identity."
+
+[[hostile_controls]]
+id = "reject-decay-by-label"
+description = "Residual channels do not vanish merely because they are present in the finite budget; every active channel needs its own decay proof."
+
+[[hostile_controls]]
+id = "reject-positivity-without-comparison"
+description = "Nonnegative approximants imply target positivity only through the declared pointwise vanishing comparison."
+
+[[hostile_controls]]
+id = "reject-mirror-core-as-analytic-weil"
+description = "The local defect and orbitwise mirror-pairing criteria cannot be reported as the classical admissible-test-function Weil criterion."
+
+[[hostile_controls]]
+id = "reject-conditional-rh-promotion"
+description = "The terminal theorem remains conditional on a positive approximation and an exact criterion record; no unconditional RH claim is accepted."
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+
+[nonclaims]
+claims = [
+  "unconditional Riemann hypothesis",
+  "classical analytic Weil test-function criterion formalized from an external source",
+  "analytic realization of all local mirror tests by one admissible Fourier or Mellin test class",
+  "source-faithful arithmetic-to-elliptic interpolation",
+  "vanishing of the zeta arithmetic, geometric, mirror, or tail residuals",
+  "complete zeta-zero divisor",
+  "a replay receipt produced by this static manifest"
+]

@@ -1,0 +1,115 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "landau-prime-counts-v0.1"
+owner_repository = "grwtsk/math"
+issue = 258
+root_module = "GRWTSK.Interfaces.LandauPrimeCounts"
+build_target = "GRWTSK.Interfaces.LandauPrimeCounts"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+operational_receipt_is_external = true
+
+[source_binding]
+base_revision = "df2884144f491fc36f6dcc9aae6149ab03d65e8b"
+base_tree = "02c2af7e41d584cba4c2ddf56cb446e6649f1c8a"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+receipt_revision_policy = "Bind the actual replayed commit, tree and this manifest blob externally; the base revision is not a receipt."
+inventory_policy = "Required declaration names and their exact source blobs are lexical inventory, not elaborated type or transitive axiom evidence."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Combinatorics.Enumerative.BoundedWitnesses"
+path = "GRWTSK/Combinatorics/Enumerative/BoundedWitnesses.lean"
+git_blob = "40b8288910460ae0cd59dec55d3dda3481e6d229"
+sha256 = "e1268a183844ba2021f9f46eb5f4fa7461090a7b019cf7a61ad33a529d9f2ed3"
+required_declarations = ["GRWTSK.Combinatorics.Enumerative.BoundedWitnesses.count", "GRWTSK.Combinatorics.Enumerative.BoundedWitnesses.count_pos_iff", "GRWTSK.Combinatorics.Enumerative.BoundedWitnesses.count_mono_cutoff", "GRWTSK.Combinatorics.Enumerative.BoundedWitnesses.count_mono_predicate", "GRWTSK.Combinatorics.Enumerative.BoundedWitnesses.count_congr_on", "GRWTSK.Combinatorics.Enumerative.BoundedWitnesses.tailCount", "GRWTSK.Combinatorics.Enumerative.BoundedWitnesses.tailCount_pos_iff", "GRWTSK.Combinatorics.Enumerative.BoundedWitnesses.UnboundedWitnesses", "GRWTSK.Combinatorics.Enumerative.BoundedWitnesses.unbounded_iff_positive_tailCounts"]
+
+[[modules]]
+name = "GRWTSK.Interfaces.LandauPrimeCounts"
+path = "GRWTSK/Interfaces/LandauPrimeCounts.lean"
+git_blob = "22bbbda7139c35f1c8d428e927c96ec0fe1a3de6"
+sha256 = "6ab6772b6a62b796ffdc348f0b8c8844e50408f69c728399639ac8021354b427"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.Checks.LandauCountControls"
+path = "GRWTSK/NumberTheory/Primes/Checks/LandauCountControls.lean"
+git_blob = "c728856d299556c770c2c0c623342b0848406e40"
+sha256 = "e7b75142fc3d3c0511dcbaaf105d309aa51398cd0058def45338e173b1b0eb94"
+required_declarations = ["GRWTSK.NumberTheory.Primes.Checks.LandauCountControls.goldbach_ten", "GRWTSK.NumberTheory.Primes.Checks.LandauCountControls.twins_ten", "GRWTSK.NumberTheory.Primes.Checks.LandauCountControls.first_square", "GRWTSK.NumberTheory.Primes.Checks.LandauCountControls.second_square", "GRWTSK.NumberTheory.Primes.Checks.LandauCountControls.quadratics_ten", "GRWTSK.NumberTheory.Primes.Checks.LandauCountControls.strict_upper_endpoint", "GRWTSK.NumberTheory.Primes.Checks.LandauCountControls.empty_interval", "GRWTSK.NumberTheory.Primes.Checks.LandauCountControls.reversed_interval", "GRWTSK.NumberTheory.Primes.Checks.LandauCountControls.prime_power_is_not_prime", "GRWTSK.NumberTheory.Primes.Checks.LandauCountControls.upper_sieve_is_not_lower", "GRWTSK.NumberTheory.Primes.Checks.LandauCountControls.fixed_shift_control", "GRWTSK.NumberTheory.Primes.Checks.LandauCountControls.finite_agreement", "GRWTSK.NumberTheory.Primes.Checks.LandauCountControls.bounded_predicate_not_unbounded", "GRWTSK.NumberTheory.Primes.Checks.LandauCountControls.true_predicate_unbounded"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.ConfigurationCounts"
+path = "GRWTSK/NumberTheory/Primes/ConfigurationCounts.lean"
+git_blob = "540ea9bb1d42d6e185a03e38b4c2e1abc4370ff6"
+sha256 = "c580dd8651bdf094196ed43d61099830d801e4b99e2492850e6c7a609c9692b0"
+required_declarations = ["GRWTSK.NumberTheory.Primes.ConfigurationCounts.goldbachCount", "GRWTSK.NumberTheory.Primes.ConfigurationCounts.goldbachCount_pos_iff", "GRWTSK.NumberTheory.Primes.ConfigurationCounts.twinCount", "GRWTSK.NumberTheory.Primes.ConfigurationCounts.twinCount_pos_iff", "GRWTSK.NumberTheory.Primes.ConfigurationCounts.twinTailCount", "GRWTSK.NumberTheory.Primes.ConfigurationCounts.intervalCount", "GRWTSK.NumberTheory.Primes.ConfigurationCounts.intervalCount_pos_iff", "GRWTSK.NumberTheory.Primes.ConfigurationCounts.squareCount", "GRWTSK.NumberTheory.Primes.ConfigurationCounts.squareCount_pos_iff", "GRWTSK.NumberTheory.Primes.ConfigurationCounts.quadraticCount", "GRWTSK.NumberTheory.Primes.ConfigurationCounts.quadraticCount_pos_iff", "GRWTSK.NumberTheory.Primes.ConfigurationCounts.quadraticTailCount"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.LandauStatements"
+path = "GRWTSK/NumberTheory/Primes/LandauStatements.lean"
+git_blob = "41aa479be730fc09defba57576f9af0f09415306"
+sha256 = "819e3f21dbd3491c49b346794460ef6e95d288629c72b737c42019ec38603039"
+required_declarations = ["GRWTSK.NumberTheory.Primes.LandauStatements.Goldbach", "GRWTSK.NumberTheory.Primes.LandauStatements.TwinPrimes", "GRWTSK.NumberTheory.Primes.LandauStatements.Legendre", "GRWTSK.NumberTheory.Primes.LandauStatements.QuadraticPrimeValues", "GRWTSK.NumberTheory.Primes.LandauStatements.goldbach_iff_positive_counts", "GRWTSK.NumberTheory.Primes.LandauStatements.twinPrimes_iff_positive_tails", "GRWTSK.NumberTheory.Primes.LandauStatements.legendre_iff_positive_counts", "GRWTSK.NumberTheory.Primes.LandauStatements.quadraticPrimeValues_iff_positive_tails", "GRWTSK.NumberTheory.Primes.LandauStatements.LegendreThrough", "GRWTSK.NumberTheory.Primes.LandauStatements.LegendreBeyond", "GRWTSK.NumberTheory.Primes.LandauStatements.legendre_of_prefix_and_tail", "GRWTSK.NumberTheory.Primes.LandauStatements.legendre_through_of_legendre"]
+
+[[hostile_controls]]
+id = "prime-power-not-prime"
+description = "prime_power_is_not_prime: the proper power 9 does not make the prime count on (8,10) positive."
+
+[[hostile_controls]]
+id = "upper-sieve-not-lower"
+description = "upper_sieve_is_not_lower: an odd sieve survivor exists in a prime-free interval."
+
+[[hostile_controls]]
+id = "fixed-shift"
+description = "fixed_shift_control: shift six cannot be substituted for shift two."
+
+[[hostile_controls]]
+id = "finite-not-unbounded"
+description = "finite_agreement plus bounded_predicate_not_unbounded and true_predicate_unbounded: finite count equality does not determine unboundedness."
+
+[[hostile_controls]]
+id = "strict-endpoints"
+description = "strict_upper_endpoint, empty_interval and reversed_interval retain the exact interval domain."
+
+[[hostile_controls]]
+id = "universal-tail-required"
+description = "legendre_of_prefix_and_tail must retain both typed premises; neither an average estimate nor finite checks supplies the tail."
+
+[[hostile_controls]]
+id = "complete-source-and-trust"
+description = "Every listed owner and control declaration, source signature, elaborated type, module blob and transitive dependency must be reconciled; root-only success or absent checks do not pass."
+
+[[hostile_controls]]
+id = "no-target-promotion"
+description = "Goldbach, TwinPrimes, Legendre and QuadraticPrimeValues are proposition definitions, not proved conjectures."
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+
+[nonclaims]
+claims = [
+  "a proof of any Landau conjecture",
+  "an analytic or sieve prime-distribution estimate",
+  "the missing weighted prime/prime-power bridge to PR #256",
+  "a complete explicit formula or omitted-zero tail",
+  "an additive Fourier or Gaussian arithmetic theorem",
+  "a matrix-kernel reconstruction or quantitative operator estimate",
+  "Lean elaboration, transitive axiom audit or external replay acceptance",
+  "execution, deployment or merge authority"
+]
