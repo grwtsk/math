@@ -25,6 +25,7 @@ import GRWTSK.Logic.PortPureTypeSystemSubjectReduction
 import GRWTSK.Logic.PTSModelTransport
 import GRWTSK.LinearAlgebra.FramedFiberPort
 import GRWTSK.LinearAlgebra.HodgePortConsequences
+import GRWTSK.LinearAlgebra.HodgeEquivalence
 import GRWTSK.LinearAlgebra.FinitePositiveHodgeHeat
 import GRWTSK.LinearAlgebra.FinitePositiveHodgeProjectors
 import GRWTSK.LinearAlgebra.FinitePositiveHodgeHeatBounds
@@ -41,6 +42,7 @@ import GRWTSK.Geometry.Hodge.GlobalRationalHodgeStatement
 import GRWTSK.Geometry.Hodge.RationalHodgeTransport
 import GRWTSK.Geometry.Hodge.FiniteEdgeRealization
 import GRWTSK.Geometry.Hodge.DegreeZeroCohomology
+import GRWTSK.Geometry.Hodge.HZeroTransport
 import GRWTSK.Geometry.Hodge.FiniteEdgeScalarExtension
 import GRWTSK.Geometry.Hodge.RationalKTheoryComparison
 import GRWTSK.Geometry.Hodge.MoserRationalCellularComparison
@@ -58,7 +60,7 @@ import GRWTSK.Interfaces.OptionalAdapterComposition
 namespace GRWTSK.Interfaces.GraphHodgePortCore
 
 /-- Source version of this isolated integration surface. -/
-def schemaVersion : String := "GraphHodgePortCore/1.2"
+def schemaVersion : String := "GraphHodgePortCore/1.3"
 
 /-- The integration surface is source-only until an external receipt binds the exact branch head. -/
 inductive VerificationState
