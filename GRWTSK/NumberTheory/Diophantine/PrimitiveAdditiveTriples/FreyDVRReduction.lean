@@ -164,9 +164,10 @@ theorem PrimitiveAdditiveTriple.freyDVR_residue_comparison :
   ext <;> simp [PrimitiveAdditiveTriple.freyModelOver,
     PrimitiveAdditiveTriple.freyResidueModel, WeierstrassCurve.map]
 
+include hcharK
+
 /-- Away from 2abc, the displayed equation has actual good reduction over
 this DVR. The claim is about the explicit R,K and residue-characteristic data. -/
-include hcharK in
 theorem PrimitiveAdditiveTriple.freyFractionModel_good
     (hp2 : p ≠ 2) (hd : ¬ p ∣ t.a * t.b * t.c) :
     WeierstrassCurve.HasGoodReduction R (t.freyFractionModel R K) := by
@@ -185,7 +186,6 @@ theorem PrimitiveAdditiveTriple.freyFractionModel_good
 
 /-- At every odd residue prime dividing abc, the SAME equation has actual
 multiplicative reduction. No conductor API theorem is used or claimed. -/
-include hcharK in
 theorem PrimitiveAdditiveTriple.freyFractionModel_multiplicative
     (hp2 : p ≠ 2) (hd : p ∣ t.a * t.b * t.c) :
     WeierstrassCurve.HasMultiplicativeReduction R (t.freyFractionModel R K) := by
@@ -204,7 +204,6 @@ theorem PrimitiveAdditiveTriple.freyFractionModel_multiplicative
     exact t.freyResidueModel_c4_ne_zero p hp2 hd (f.injective (by simpa using hz))
 
 /-- Minimality is derived at all odd residue primes, not supplied in advance. -/
-include hcharK in
 theorem PrimitiveAdditiveTriple.freyFractionModel_minimal (hp2 : p ≠ 2) :
     WeierstrassCurve.IsMinimal R (t.freyFractionModel R K) := by
   by_cases hd : p ∣ t.a * t.b * t.c
