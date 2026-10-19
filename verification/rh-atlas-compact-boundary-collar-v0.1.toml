@@ -1,0 +1,152 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-atlas-compact-boundary-collar-v0.1"
+owner_repository = "grwtsk/math"
+issue = 225
+parent_pull_request = 253
+root_module = "GRWTSK"
+build_target = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.CompactBoundaryCollar"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+operational_receipt_is_external = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "Mathlib.NumberTheory.LSeries.ZetaZeros"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripAtlas"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripGapReport"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripOverlapAudit"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripVerticalPath"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripStructuredTransport"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ZetaCommutatorRoot"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.BoundedHeightCriterion"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripHeightDescent"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.HeightLocalDescent"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMirrorDescent"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripPatchCertificate"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.MirrorPatchDescent"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann"
+
+[[modules]]
+name = "GRWTSK"
+
+[[modules]]
+name = "Mathlib.Analysis.Calculus.MeanValue"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripAnalyticPatch"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripPolePatch"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.AnalyticPolePatch"
+
+[[modules]]
+name = "Mathlib.Topology.MetricSpace.Thickening"
+
+[[modules]]
+name = "Mathlib.Topology.Order.Compact"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripCompactPatch"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripBoundaryCollar"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.CompactBoundaryCollar"
+
+[[hostile_controls]]
+id = "reject-compactness-as-nonvanishing"
+description = "Compact completeness consumes an independent proof that the source is nonzero at every target point. A function with a target zero has no finite variation cover."
+
+[[hostile_controls]]
+id = "reject-empty-cover-for-nonempty-target"
+description = "The finite subcover is explicitly reindexed through a finite-type equivalence. Every consumed target point has a proved covering index; empty targets are handled without claiming global coverage."
+
+[[hostile_controls]]
+id = "reject-noneffective-as-numerical"
+description = "The radii, minimum norms, selected finite subcover and collar widths are classical existence data, not computable enclosures or evaluated sample values."
+
+[[hostile_controls]]
+id = "reject-pole-source-substitution"
+description = "The boundary proof uses the exact entire poleNormalizedZeta including its removable value 1 at s=1. The raw product zero at 1 is not an analytic zero."
+
+[[hostile_controls]]
+id = "reject-uniform-in-height-collar"
+description = "A collar exists for each bounded signed-height segment. No single positive width or positive norm lower bound is asserted for all heights."
+
+[[hostile_controls]]
+id = "reject-only-open-endpoint-coverage"
+description = "rightClosedBand includes both height endpoints and both horizontal width endpoints. Its width is strictly below the open-thickening radius."
+
+[[hostile_controls]]
+id = "reject-mirror-function-equality"
+description = "Left-side target exclusion uses NontrivialZetaZero.critical_reflection with the exact unchanged imaginary height. No equality of H(z) and H(1-conj(z)) is asserted."
+
+[[hostile_controls]]
+id = "reject-interior-cover-by-boundary-cover"
+description = "The final successor theorem still consumes a source-bound interior patch cover for every near-line reciprocal index. The constructed right boundary cover does not supply these inputs."
+
+[[hostile_controls]]
+id = "reject-whole-base-from-boundary-strip"
+description = "The collar at N=0 is only a band near Re=1 and its target-zero mirror near Re=0. It does not prove WindowRH 0 or nonvanishing at every real point of (0,1)."
+
+[[hostile_controls]]
+id = "reject-wrong-source-or-old-replay"
+description = "All new modules and exact declarations must be replayed at the committed head. Public aggregate imports are unchanged; root-only or previous-source receipts do not cover these modules."
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+
+[nonclaims]
+claims = [
+  "the full real-axis base WindowRH 0",
+  "a uniform-in-height zero-free strip",
+  "effective radii, minimum norms or sample enclosures",
+  "complete interior shell-cover construction",
+  "zero enumeration, multiplicities, a Turing count or tail estimates",
+  "an arithmetic-to-Weil or spectral realization",
+  "unconditional RH",
+  "a Lean elaboration, axiom audit or replay receipt"
+]

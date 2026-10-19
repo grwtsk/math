@@ -14,5 +14,19 @@ import GRWTSK.Spectral.Sheaf.SynchronizedSchurJet
 import GRWTSK.NumberTheory.Zeta.Riemann.CertifiedZeroHeight
 import GRWTSK.LinearAlgebra.Matrix.QuantumReadiness
 import GRWTSK.Analysis.ErrorBounds.SchurJetScrewReconstruction
+import GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripAtlas
+import GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripGapReport
+import GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripOverlapAudit
+import GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripVerticalPath
+import GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripStructuredTransport
+import GRWTSK.NumberTheory.Zeta.Riemann.ZetaCommutatorRoot
+import GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripRootFixture
+import GRWTSK.NumberTheory.Zeta.Riemann.WeilCriterion
+import GRWTSK.NumberTheory.Zeta.Riemann.WeilPositiveLimit
+import GRWTSK.NumberTheory.Zeta.Riemann.ArithmeticFeature
+import GRWTSK.NumberTheory.Zeta.Riemann.WeilPositiveLimitCore
+import GRWTSK.NumberTheory.Zeta.Riemann.CriticalLinePositivityCriterion
+import GRWTSK.NumberTheory.Zeta.Riemann.MirrorPairingCriterion
 
-/-! Exact target, reformulation and zero symmetries; RH remains an open proposition. -/
+/-! Exact target, conditional atlas, source-bound criterion and transport interfaces;
+RH remains an open proposition until every required local and global supplier is proved. -/

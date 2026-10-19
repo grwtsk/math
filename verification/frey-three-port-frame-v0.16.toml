@@ -1,0 +1,544 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "frey-three-port-frame-v0.16"
+owner_repository = "grwtsk/math"
+issues = [100, 110, 127, 128, 129, 177, 203, 220, 221, 222, 227, 230, 233, 241, 248, 249, 250, 251]
+root_module = "GRWTSK.Interfaces.FreyThreePortCore"
+build_target = "GRWTSK.Interfaces.FreyThreePortCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+base_revision = "4aab069dad5b8ef5a07d0850c920a4bfda596aeb"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_runtime_safety_scan = true
+operational_receipt_is_external = true
+root_library_import_unchanged = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unsafe_declarations = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Definitions"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyThreePortFrame"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyThreePortSaturation"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCurveGeometry"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyAffineEvaluation"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyIntegralModel"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyLocalInvariants"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyThreePortBounds"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyDVRReduction"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyProjectiveHeight"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyRationalHeight"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Radical"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.RadicalMultiplicativeInterface"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ABCStatement"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.EquivalentForms"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyABCObservation"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyQuadraticJet"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetRankGrowth"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetRecursion"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyHigherJet"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyFormalNeighborhood"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyIntegralJetCharts"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetQuotient"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreySectionJetEquiv"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyParameterSeries"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetCompletion"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetBaseChange"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCompletionBaseChange"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyAdicQuotients"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCanonicalCompletion"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCanonicalTransport"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyThreePortCore"
+
+[[hostile_controls]]
+id = "reject-two-port-as-saturated-three-port"
+description = "The square two-port map cannot replace saturated three-port recovery."
+
+[[hostile_controls]]
+id = "reject-rectangular-as-surjective"
+description = "The explicit compatibility obstruction prevents arbitrary target interpolation."
+
+[[hostile_controls]]
+id = "reject-left-inverse-without-bezout"
+description = "Integral recovery retains the same source Bezout identity."
+
+[[hostile_controls]]
+id = "reject-maximal-minor-unit-without-primitivity"
+description = "No unit-minor certificate for nonprimitive source data."
+
+[[hostile_controls]]
+id = "reject-exactness-without-compatible-kernel"
+description = "The image is the compatibility kernel, not the full target."
+
+[[hostile_controls]]
+id = "reject-triple-drift"
+description = "Decoded observations must recover the same primitive additive triple."
+
+[[hostile_controls]]
+id = "reject-formal-points-as-elliptic-proof"
+description = "Actual marked points retain equation and nonsingularity proofs."
+
+[[hostile_controls]]
+id = "reject-zero-discriminant-as-elliptic"
+description = "Field ellipticity requires nonzero discriminant."
+
+[[hostile_controls]]
+id = "reject-integral-model-as-integral-elliptic-curve"
+description = "Nonzero discriminant over Z is not unit discriminant."
+
+[[hostile_controls]]
+id = "reject-base-change-model-drift"
+description = "Transport the same complete integral coefficient tuple."
+
+[[hostile_controls]]
+id = "reject-raw-as-minimal-discriminant"
+description = "Use the proved local variable-change scope before interpreting raw data as minimal."
+
+[[hostile_controls]]
+id = "reject-point-on-curve-as-two-torsion"
+description = "Point membership alone does not establish doubling to zero."
+
+[[hostile_controls]]
+id = "reject-affine-coordinate-space-as-global-sections"
+description = "The selected coordinate space is not complete H0 without a section theorem."
+
+[[hostile_controls]]
+id = "reject-geometry-map-drift"
+description = "Actual evaluation remains scalar extension of the same integral map."
+
+[[hostile_controls]]
+id = "reject-integral-left-inverse-as-uniform-isometry"
+description = "An on-image recovery bound is not an ambient isometry or upper bound."
+
+[[hostile_controls]]
+id = "reject-zero-interpolation-cost-as-zero-arithmetic-cost"
+description = "Recovery does not erase model, conductor or observation-height costs."
+
+[[hostile_controls]]
+id = "reject-c4-odd-prime-theorem-at-two"
+description = "The odd-prime reduction theorem cannot be used at two."
+
+[[hostile_controls]]
+id = "reject-c4-unit-without-primitivity"
+description = "Retain primitivity in local c4 nondivisibility."
+
+[[hostile_controls]]
+id = "reject-prime-support-as-multiplicity"
+description = "Retain the structural square in the raw discriminant."
+
+[[hostile_controls]]
+id = "reject-raw-discriminant-excess-as-small-error"
+description = "The entire raw discriminant excess is not an epsilon-small residual."
+
+[[hostile_controls]]
+id = "reject-observation-max-as-c"
+description = "Observation max is max(a,b), not c; the log(2) gap remains."
+
+[[hostile_controls]]
+id = "reject-common-support-as-common-divisor"
+description = "Common-content equality must retain prime powers."
+
+[[hostile_controls]]
+id = "reject-base-bound-as-higher-stage-bound"
+description = "Base coordinate bounds are not arbitrary intrinsic jet-metric bounds."
+
+[[hostile_controls]]
+id = "reject-numerical-sampling-as-Lean-replay"
+description = "Independent arithmetic tests do not verify Lean proof terms."
+
+[[hostile_controls]]
+id = "reject-source-frame-as-abc"
+description = "Source recovery does not supply the observation-height upper bound."
+
+[[hostile_controls]]
+id = "reject-root-import-as-slice-pass"
+description = "The trivial legacy root marker is not complete module coverage."
+
+[[hostile_controls]]
+id = "reject-multiplicative-additive-valuation-confusion"
+description = "Multiplicative valuation assigns units value one."
+
+[[hostile_controls]]
+id = "reject-minimality-as-unproved-field"
+description = "Minimality must be derived over integral variable changes."
+
+[[hostile_controls]]
+id = "reject-conductor-from-reduction-label"
+description = "A reduction predicate alone is not a conductor-exponent theorem."
+
+[[hostile_controls]]
+id = "reject-dropping-local-carrier-hypotheses"
+description = "Retain local rings, fields and residue-characteristic assumptions."
+
+[[hostile_controls]]
+id = "reject-height-surrogate"
+description = "Use the normalized Mathlib height, not a relabeled coefficient norm."
+
+[[hostile_controls]]
+id = "reject-unbound-rational-representative"
+description = "The representative theorem retains exact scaling and content one."
+
+[[hostile_controls]]
+id = "reject-height-direction-reversal"
+description = "A recovery lower bound cannot prove the observation upper bound."
+
+[[hostile_controls]]
+id = "reject-zero-vector-as-projective-point"
+description = "The zero fallback is not a nonzero projective representative."
+
+[[hostile_controls]]
+id = "reject-missing-vertical-chart"
+description = "Retain the rational normalization branch with first coordinate zero."
+
+[[hostile_controls]]
+id = "reject-negative-scale-representative-drift"
+description = "Nonzero negative scalars must preserve the selected representative."
+
+[[hostile_controls]]
+id = "reject-nonprimitive-clear-denominators"
+description = "Clearing denominators alone does not remove common content."
+
+[[hostile_controls]]
+id = "reject-abc-observation-quantifier-drift"
+description = "Keep the same epsilon, radical and forall-exists-forall order."
+
+[[hostile_controls]]
+id = "reject-equivalence-as-target-proof"
+description = "An ABC-equivalent supplier proposition is not its inhabitant."
+
+[[hostile_controls]]
+id = "reject-decoding-constant-erasure"
+description = "Keep C+log(2) in the reverse supplier implication."
+
+[[hostile_controls]]
+id = "reject-x-as-first-order-parameter-at-torsion"
+description = "The x displacement has zero linear y-jet at the marked root."
+
+[[hostile_controls]]
+id = "reject-values-as-detecting-y"
+description = "The added y direction needs a first-jet observation."
+
+[[hostile_controls]]
+id = "reject-fourth-slot-as-fourth-point"
+description = "The fourth observation is neither a fourth point nor the Cech closure."
+
+[[hostile_controls]]
+id = "reject-nilpotent-jet-as-global-curve-parametrization"
+description = "Finite exactness needs the declared nilpotence bound; completion is formal, not analytic."
+
+[[hostile_controls]]
+id = "reject-hasse-coefficient-as-second-derivative"
+description = "A quadratic coefficient is not an ordinary second derivative."
+
+[[hostile_controls]]
+id = "reject-all-port-jacobians-as-units"
+description = "One unit anchor at each prime is not three simultaneous units."
+
+[[hostile_controls]]
+id = "reject-smooth-anchor-as-good-reduction"
+description = "A smooth branch at two does not make the full special fiber smooth."
+
+[[hostile_controls]]
+id = "reject-selected-plane-space-as-intrinsic-sections"
+description = "The selected (1,x,y) space is not complete H0(E,O(3O))."
+
+[[hostile_controls]]
+id = "reject-one-rank-step-as-arbitrary-refinement"
+description = "Parameter precision and formal completion are not global-section rank growth."
+
+[[hostile_controls]]
+id = "reject-jet-substitution-as-local-ring-isomorphism"
+description = "The finite and inverse-limit algebra maps do not yet supply a scheme-stalk or closed-point completion comparison."
+
+[[hostile_controls]]
+id = "reject-recursion-without-inverse-jacobian"
+description = "Every lifting result retains d*j=1, not mere nonzeroness."
+
+[[hostile_controls]]
+id = "reject-insufficient-nilpotent-precision"
+description = "The iteration residual bound must imply actual vanishing at the claimed finite level."
+
+[[hostile_controls]]
+id = "reject-uniqueness-without-root-congruence"
+description = "Retain the SAME root and nilpotent section ideal; exclude other cubic branches."
+
+[[hostile_controls]]
+id = "reject-truncation-direction-or-source-drift"
+description = "Retain the same root and coefficients under decreasing-order truncation."
+
+[[hostile_controls]]
+id = "reject-denominator-support-as-depth-bound"
+description = "The denominator exponent is not sharp or uniform in order."
+
+[[hostile_controls]]
+id = "reject-new-factorial-inverses"
+description = "No hidden inverse of factorials, two or stage numbers."
+
+[[hostile_controls]]
+id = "reject-even-fiber-parity-as-spatial-reflection"
+description = "Fiber parameter parity is not geometric or Galois metric transport."
+
+[[hostile_controls]]
+id = "reject-nilpotent-ring-cancellation"
+description = "Do not cancel the parameter in rings with zero divisors."
+
+[[hostile_controls]]
+id = "reject-principal-only-as-general-nilpotent"
+description = "Test ideal-level lifting on nonprincipal ideals; do not assume I=(e)."
+
+[[hostile_controls]]
+id = "reject-ideal-bound-without-ideal-nilpotence"
+description = "Element nilpotence is not nilpotence of the entire ideal."
+
+[[hostile_controls]]
+id = "reject-unmapped-ideal-naturality"
+description = "Base change retains mapped ideals, coefficients and nilpotence bounds."
+
+[[hostile_controls]]
+id = "reject-deformation-equivalence-as-algebra-equivalence"
+description = "The nonlinear deformation sets remain sets; quotient and limit algebras are separate constructions."
+
+[[hostile_controls]]
+id = "reject-base-cover-as-curve-cover"
+description = "The Jacobian unit-ideal identity covers Spec Z, not the whole curve."
+
+[[hostile_controls]]
+id = "reject-different-anchor-as-same-formal-branch"
+description = "Distinct torsion roots remain distinct on coefficient-chart overlaps."
+
+[[hostile_controls]]
+id = "reject-localization-map-at-nonunit"
+description = "A map out of Z[1/d_i] requires the image of d_i to be a unit; never create Q to F_p."
+
+[[hostile_controls]]
+id = "reject-integer-chart-to-rational-drift"
+description = "Rationalization must equal the existing source-bound approximant."
+
+[[hostile_controls]]
+id = "reject-set-equivalence-as-quotient-lift"
+description = "Construct polynomial and quotient homomorphisms and kill all relations."
+
+[[hostile_controls]]
+id = "reject-omitted-mixed-section-ideal-powers"
+description = "Use the full (X-r,Y)^(N+1), not independent pure powers."
+
+[[hostile_controls]]
+id = "reject-wrong-thickening-index"
+description = "Order N retains N+1 coefficient slots, including N=0."
+
+[[hostile_controls]]
+id = "reject-finite-quotient-map-without-kernel"
+description = "The substitution kernel equals the actual relation ideal."
+
+[[hostile_controls]]
+id = "reject-one-sided-quotient-inverse"
+description = "Prove both inverse compositions on complete quotient rings."
+
+[[hostile_controls]]
+id = "reject-scalar-drift-in-jet-algebra"
+description = "Preserve the actual coefficient algebra S_i, not a rational replacement."
+
+[[hostile_controls]]
+id = "reject-truncation-conjugation-as-independent-map"
+description = "Truncation is defined by ideal inclusion before proving compatibility."
+
+[[hostile_controls]]
+id = "reject-finite-tower-as-completed-equivalence"
+description = "Require the compatible-sequence algebra, two inverse maps and coefficient reconstruction; finite-level isomorphisms alone are insufficient."
+
+[[hostile_controls]]
+id = "reject-incompatible-inverse-limit-sequence"
+description = "Each sequence must satisfy every declared truncation equation; independent finite solutions cannot form a limit element."
+
+[[hostile_controls]]
+id = "reject-coefficient-from-too-short-level"
+description = "Recover coefficient k only from a level N with k<=N and prove independence of larger levels."
+
+[[hostile_controls]]
+id = "reject-polynomial-truncation-as-ring-hom"
+description = "Polynomial truncation is not multiplicative; prove multiplicativity after the actual quotient."
+
+[[hostile_controls]]
+id = "reject-relative-as-arithmetic-coefficient-completion"
+description = "S_i[[T]] retains S_i; do not silently replace it by a p-adic coefficient ring or complete at a closed arithmetic point."
+
+[[hostile_controls]]
+id = "reject-formal-as-analytic-convergence"
+description = "A formal power series and algebraic inverse limit have no asserted complex radius of convergence or heat-flow estimate."
+
+[[hostile_controls]]
+id = "reject-one-finite-projection-as-series-equality"
+description = "A nonzero T^(N+1) tail is invisible at level N; equality requires all orders, not a sampled bound."
+
+[[hostile_controls]]
+id = "reject-filtration-exponent-loss"
+description = "Vanishing at level N means exact T^(N+1)-divisibility, including the N=0 case; this is not a coefficient-norm inequality."
+
+[[hostile_controls]]
+id = "reject-unproved-completion-api-identification"
+description = "The canonical AdicCompletion comparison requires the actual coordinate-ring ideal, both inverse maps and projection identities; scheme-stalk and topological comparisons remain separate."
+
+[[hostile_controls]]
+id = "reject-conjugated-base-change-as-presentation-map"
+description = "Descend coefficient transport from the polynomial presentation before proving the naturality square; do not define it by conjugating the desired completion equivalence."
+
+[[hostile_controls]]
+id = "reject-unmapped-anchor-under-base-change"
+description = "Map a,b,r and the inverse Jacobian together; no replacement root, source relabeling or independently fitted target series."
+
+[[hostile_controls]]
+id = "reject-noninjective-residue-as-faithful"
+description = "Filtration membership is preserved, but exact vanishing order may increase; reflection of equality or filtration requires injective coefficients."
+
+[[hostile_controls]]
+id = "reject-base-change-as-tensor-limit-interchange"
+description = "A coefficientwise map R[[T]] to S[[T]] does not prove S tensor_R R[[T]] is S[[T]], nor a uniform denominator bound."
+
+[[hostile_controls]]
+id = "reject-coefficient-map-as-fixed-base-linear-map"
+description = "Across different coefficient rings retain the scalar law f(c); a ring map is not automatically linear over one unchanged base or isometric."
+
+[[hostile_controls]]
+id = "reject-stage-map-without-completion-naturality"
+description = "Prove finite truncation compatibility, construction on compatible sequences, and agreement with PowerSeries.map at all orders."
+
+[[hostile_controls]]
+id = "reject-canonical-completion-as-limit-alias"
+description = "Use Mathlib AdicCompletion on the actual affine coordinate algebra and image section ideal; do not define it as the pre-existing limit."
+
+[[hostile_controls]]
+id = "reject-adic-zero-as-jet-zero"
+description = "Canonical exponent zero means C/I^0=0; jet order zero means C/I^1. Retain the successor shift and reconstruct every canonical exponent."
+
+[[hostile_controls]]
+id = "reject-double-quotient-without-image-powers"
+description = "Prove J^n=map(m^n) for the same quotient map, then compare both quotient presentations and their transitions."
+
+[[hostile_controls]]
+id = "reject-adic-comparison-one-inverse-only"
+description = "Verify both compositions through all canonical and jet projections, including exponent zero."
+
+[[hostile_controls]]
+id = "reject-smoothness-assumption-leak"
+description = "The canonical-versus-explicit-limit comparison needs no root or inverse. The formal-series comparison still requires f(r)=0 and fprime(r)*j=1."
+
+[[hostile_controls]]
+id = "reject-canonical-algebra-as-topological-or-metric"
+description = "A canonical coefficient-algebra equivalence does not assert a homeomorphism, completed tensor comparison, p-adic coefficient completion or height bound."
+
+[[hostile_controls]]
+id = "reject-exact-order-preservation-under-residue"
+description = "Check 2*T^k+T^(k+1) maps to nonzero T^(k+1); exact order increases although filtration membership is preserved."
+
+[[hostile_controls]]
+id = "reject-canonical-transport-defined-by-conjugation"
+description = "Construct affine and ideal-power quotient maps first, then use the library universal lift; the old-limit naturality square is a theorem."
+
+[[hostile_controls]]
+id = "reject-canonical-transport-without-all-exponents"
+description = "The canonical lift needs every ideal exponent including zero and every transition equation, not only a finite set of smooth examples."
+
+[[hostile_controls]]
+id = "reject-canonical-transport-source-square-drift"
+description = "Reconcile the original affine map, finite double-quotient comparison, both limit-comparison directions, and formal-series transport for the same mapped coefficients and root."
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+requires_root_import_unchanged = true
+requires_hostile_controls = true
+requires_axiom_audit = true
+requires_runtime_safety_scan = true
+
+[nonclaims]
+claims = [
+  "accepted Lean elaboration or kernel verification",
+  "a scheme-stalk or closed-arithmetic-point completion comparison",
+  "a topological algebra homeomorphism or completed tensor-base-change theorem",
+  "completion of coefficients at an arithmetic prime",
+  "analytic convergence or positive radius for a formal series",
+  "a geometric cover of the entire Frey curve",
+  "identification of different torsion branches by base-chart overlap",
+  "complete global line-bundle section spaces or global intrinsic jet bundles",
+  "conductor exponents or characteristic-two reduction classification",
+  "uniform intrinsic or arbitrary-stage metric bounds",
+  "sharp or stage-independent denominator bounds",
+  "uniform observation-height-versus-radical estimate",
+  "an inhabitant of FreyObservationLogBound for every positive epsilon",
+  "Szpiro conjecture",
+  "abc conjecture",
+  "Riemann Hypothesis",
+  "execution authorization, external replay receipt or merge authority"
+]
