@@ -160,7 +160,7 @@
       },
       "read_status": "READ_DIRECTLY",
       "candidate": "GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.Damping.FixedPointEquivalence.DampingLaw",
-      "candidate_path": "candidates/attribution-254/Analysis/NonlinearAnalysis/FixedPointTheory/Damping/FixedPointEquivalence.lean",
+      "candidate_path": "GRWTSK/Analysis/NonlinearAnalysis/FixedPointTheory/Damping/FixedPointEquivalence.lean",
       "candidate_span": {
         "start": 2081,
         "end": 2231
@@ -178,7 +178,7 @@
       },
       "read_status": "READ_DIRECTLY",
       "candidate": "GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.Damping.FixedPointEquivalence.dampedMap",
-      "candidate_path": "candidates/attribution-254/Analysis/NonlinearAnalysis/FixedPointTheory/Damping/FixedPointEquivalence.lean",
+      "candidate_path": "GRWTSK/Analysis/NonlinearAnalysis/FixedPointTheory/Damping/FixedPointEquivalence.lean",
       "candidate_span": {
         "start": 2231,
         "end": 2365
@@ -196,7 +196,7 @@
       },
       "read_status": "READ_DIRECTLY",
       "candidate": "GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.Damping.FixedPointEquivalence.damping_preserves_fixed_points",
-      "candidate_path": "candidates/attribution-254/Analysis/NonlinearAnalysis/FixedPointTheory/Damping/FixedPointEquivalence.lean",
+      "candidate_path": "GRWTSK/Analysis/NonlinearAnalysis/FixedPointTheory/Damping/FixedPointEquivalence.lean",
       "candidate_span": {
         "start": 2365,
         "end": 2920
@@ -291,7 +291,7 @@
   ],
   "outputs": [
     {
-      "path": "candidates/attribution-254/Analysis/NonlinearAnalysis/FixedPointTheory/Damping/FixedPointEquivalence.lean",
+      "path": "GRWTSK/Analysis/NonlinearAnalysis/FixedPointTheory/Damping/FixedPointEquivalence.lean",
       "mode": "100644",
       "namespace": "GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.Damping.FixedPointEquivalence",
       "sha256": "ee9648ef12919629ec88b919b79c5d4c1825720f8da8065a8249efe13ca312d4",
@@ -402,7 +402,7 @@
     "method": "Complete direct reading of raw and organized sources; manually selected source spans and explicit imported-name context; no elaboration or transitive dependency census",
     "components": [
       {
-        "path": "candidates/attribution-254/Analysis/NonlinearAnalysis/FixedPointTheory/Damping/FixedPointEquivalence.lean",
+        "path": "GRWTSK/Analysis/NonlinearAnalysis/FixedPointTheory/Damping/FixedPointEquivalence.lean",
         "original_regions": [
           [
             116,
@@ -414,7 +414,7 @@
     "legacy_imports_retained": [
       "Mathematics.Stability.PeriodicOrbit"
     ],
-    "candidate_import_root": "candidates/attribution-254",
+    "candidate_import_root": ".",
     "candidate_imports": [],
     "namespace_resolution": "UNKNOWN_UNREPLAYED"
   },
@@ -449,7 +449,13 @@
     "Run Lean only after explicit authorization; no elaboration, kernel acceptance, novelty or priority is claimed.",
     "Choose canonical ownership and actual consumer compatibility before public umbrella admission."
   ],
-  "candidate_import_root": "candidates/attribution-254",
+  "placement_correction": {
+    "reason": "Owner requires every reviewed Lean module directly under GRWTSK by mathematical subject",
+    "module_search_root": ".",
+    "source_statement_and_proof_bytes": "unchanged",
+    "compilation_run": false
+  },
+  "candidate_import_root": ".",
   "shared_attribution_record": "MATH-ATTRIBUTION-254",
   "approved_attribution": [
     {

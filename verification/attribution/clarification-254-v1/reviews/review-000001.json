@@ -202,7 +202,7 @@
       "original": "FormalResearch.RiemannHypothesis.ActualPairedProductInfrastructure.deriv_square",
       "organized": "FormalResearch.Analysis.Calculus.SourceCorpus.DerivSquare.Variant1ddde3c9c489ef7b51a209466f629898dc30242cfa4a3f5c5e1ff9cf0b21fe3e.FormalResearch.RiemannHypothesis.ActualPairedProductInfrastructure.deriv_square",
       "candidate": "GRWTSK.Analysis.ComplexAnalysis.PairedProduct.MeromorphicSquareComposition.deriv_square",
-      "candidate_path": "candidates/attribution-254/Analysis/ComplexAnalysis/PairedProduct/MeromorphicSquareComposition.lean",
+      "candidate_path": "GRWTSK/Analysis/ComplexAnalysis/PairedProduct/MeromorphicSquareComposition.lean",
       "original_span": {
         "start": 918,
         "end": 1086,
@@ -234,7 +234,7 @@
       "original": "FormalResearch.RiemannHypothesis.ActualPairedProductInfrastructure.meromorphicOrderAt_comp_square",
       "organized": "FormalResearch.Analysis.Calculus.SourceCorpus.DerivSquare.Variant1ddde3c9c489ef7b51a209466f629898dc30242cfa4a3f5c5e1ff9cf0b21fe3e.FormalResearch.RiemannHypothesis.ActualPairedProductInfrastructure.meromorphicOrderAt_comp_square",
       "candidate": "GRWTSK.Analysis.ComplexAnalysis.PairedProduct.MeromorphicSquareComposition.meromorphicOrderAt_comp_square",
-      "candidate_path": "candidates/attribution-254/Analysis/ComplexAnalysis/PairedProduct/MeromorphicSquareComposition.lean",
+      "candidate_path": "GRWTSK/Analysis/ComplexAnalysis/PairedProduct/MeromorphicSquareComposition.lean",
       "original_span": {
         "start": 1086,
         "end": 1544,
@@ -266,7 +266,7 @@
       "original": "FormalResearch.RiemannHypothesis.ActualPairedProductInfrastructure.tendstoLocallyUniformlyOn_iterate_deriv",
       "organized": "FormalResearch.Analysis.Calculus.SourceCorpus.DerivSquare.Variant1ddde3c9c489ef7b51a209466f629898dc30242cfa4a3f5c5e1ff9cf0b21fe3e.FormalResearch.RiemannHypothesis.ActualPairedProductInfrastructure.tendstoLocallyUniformlyOn_iterate_deriv",
       "candidate": "GRWTSK.Analysis.ComplexAnalysis.PairedProduct.LocallyUniformTaylorCoefficients.tendstoLocallyUniformlyOn_iterate_deriv",
-      "candidate_path": "candidates/attribution-254/Analysis/ComplexAnalysis/PairedProduct/LocallyUniformTaylorCoefficients.lean",
+      "candidate_path": "GRWTSK/Analysis/ComplexAnalysis/PairedProduct/LocallyUniformTaylorCoefficients.lean",
       "original_span": {
         "start": 1544,
         "end": 2354,
@@ -298,7 +298,7 @@
       "original": "FormalResearch.RiemannHypothesis.ActualPairedProductInfrastructure.tendsto_iteratedDeriv_zero_of_locallyUniform",
       "organized": "FormalResearch.Analysis.Calculus.SourceCorpus.DerivSquare.Variant1ddde3c9c489ef7b51a209466f629898dc30242cfa4a3f5c5e1ff9cf0b21fe3e.FormalResearch.RiemannHypothesis.ActualPairedProductInfrastructure.tendsto_iteratedDeriv_zero_of_locallyUniform",
       "candidate": "GRWTSK.Analysis.ComplexAnalysis.PairedProduct.LocallyUniformTaylorCoefficients.tendsto_iteratedDeriv_zero_of_locallyUniform",
-      "candidate_path": "candidates/attribution-254/Analysis/ComplexAnalysis/PairedProduct/LocallyUniformTaylorCoefficients.lean",
+      "candidate_path": "GRWTSK/Analysis/ComplexAnalysis/PairedProduct/LocallyUniformTaylorCoefficients.lean",
       "original_span": {
         "start": 2354,
         "end": 2944,
@@ -330,7 +330,7 @@
       "original": "FormalResearch.RiemannHypothesis.ActualPairedProductInfrastructure.tendsto_taylorCoefficient_zero_of_locallyUniform",
       "organized": "FormalResearch.Analysis.Calculus.SourceCorpus.DerivSquare.Variant1ddde3c9c489ef7b51a209466f629898dc30242cfa4a3f5c5e1ff9cf0b21fe3e.FormalResearch.RiemannHypothesis.ActualPairedProductInfrastructure.tendsto_taylorCoefficient_zero_of_locallyUniform",
       "candidate": "GRWTSK.Analysis.ComplexAnalysis.PairedProduct.LocallyUniformTaylorCoefficients.tendsto_taylorCoefficient_zero_of_locallyUniform",
-      "candidate_path": "candidates/attribution-254/Analysis/ComplexAnalysis/PairedProduct/LocallyUniformTaylorCoefficients.lean",
+      "candidate_path": "GRWTSK/Analysis/ComplexAnalysis/PairedProduct/LocallyUniformTaylorCoefficients.lean",
       "original_span": {
         "start": 2944,
         "end": 3520,
@@ -361,7 +361,7 @@
   ],
   "outputs": [
     {
-      "path": "candidates/attribution-254/Analysis/ComplexAnalysis/PairedProduct/MeromorphicSquareComposition.lean",
+      "path": "GRWTSK/Analysis/ComplexAnalysis/PairedProduct/MeromorphicSquareComposition.lean",
       "mode": "100644",
       "namespace": "GRWTSK.Analysis.ComplexAnalysis.PairedProduct.MeromorphicSquareComposition",
       "sha256": "38abf8a296fc876b1e8e67638bd3515f2bf5f819eaf39f7746c042a18f7b22de",
@@ -469,12 +469,12 @@
         "Mathlib.Analysis.Calculus.IteratedDeriv.Lemmas"
       ],
       "third_credit": "Cache warming and model sculpting: the countless, often unnamed mathematicians, enthusiasts, and curious minds whose work and questions have helped shape these tools, and who now have new ways to pursue mathematical answers to the endlessly deep question: “Why?”",
-      "module": "Analysis.ComplexAnalysis.PairedProduct.MeromorphicSquareComposition",
-      "logical_module": "Analysis.ComplexAnalysis.PairedProduct.MeromorphicSquareComposition",
-      "candidate_import_root": "candidates/attribution-254"
+      "module": "GRWTSK.Analysis.ComplexAnalysis.PairedProduct.MeromorphicSquareComposition",
+      "logical_module": "GRWTSK.Analysis.ComplexAnalysis.PairedProduct.MeromorphicSquareComposition",
+      "candidate_import_root": "."
     },
     {
-      "path": "candidates/attribution-254/Analysis/ComplexAnalysis/PairedProduct/LocallyUniformTaylorCoefficients.lean",
+      "path": "GRWTSK/Analysis/ComplexAnalysis/PairedProduct/LocallyUniformTaylorCoefficients.lean",
       "mode": "100644",
       "namespace": "GRWTSK.Analysis.ComplexAnalysis.PairedProduct.LocallyUniformTaylorCoefficients",
       "sha256": "e4465e75fe24fd51f1a66e0bfbdf9374a02e2832e451269d3a07cb73979d2f80",
@@ -601,9 +601,9 @@
         "Mathlib.Analysis.Calculus.IteratedDeriv.Lemmas"
       ],
       "third_credit": "Cache warming and model sculpting: the countless, often unnamed mathematicians, enthusiasts, and curious minds whose work and questions have helped shape these tools, and who now have new ways to pursue mathematical answers to the endlessly deep question: “Why?”",
-      "module": "Analysis.ComplexAnalysis.PairedProduct.LocallyUniformTaylorCoefficients",
-      "logical_module": "Analysis.ComplexAnalysis.PairedProduct.LocallyUniformTaylorCoefficients",
-      "candidate_import_root": "candidates/attribution-254"
+      "module": "GRWTSK.Analysis.ComplexAnalysis.PairedProduct.LocallyUniformTaylorCoefficients",
+      "logical_module": "GRWTSK.Analysis.ComplexAnalysis.PairedProduct.LocallyUniformTaylorCoefficients",
+      "candidate_import_root": "."
     }
   ],
   "dependency_review": {
@@ -666,7 +666,7 @@
       "third_credit": "Cache warming and model sculpting: the countless, often unnamed mathematicians, enthusiasts, and curious minds whose work and questions have helped shape these tools, and who now have new ways to pursue mathematical answers to the endlessly deep question: “Why?”"
     }
   ],
-  "candidate_import_root": "candidates/attribution-254",
+  "candidate_import_root": ".",
   "static_corrections": [
     {
       "reason": "Leading generated candidate metadata is an ordinary block comment, preserving Lean import-header grammar; original post-import module documentation remains exact. Candidate module names/imports use the actual candidates/attribution-254 search root.",
@@ -674,6 +674,12 @@
       "compilation": "NOT_RUN"
     }
   ],
+  "placement_correction": {
+    "reason": "Owner requires every reviewed Lean module directly under GRWTSK by mathematical subject",
+    "module_search_root": ".",
+    "source_statement_and_proof_bytes": "unchanged",
+    "compilation_run": false
+  },
   "shared_attribution_record": "MATH-ATTRIBUTION-254",
   "approved_attribution": [
     {

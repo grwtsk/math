@@ -57,7 +57,13 @@
     "agent": "root",
     "human_review": "NOT_ASSERTED"
   },
-  "candidate_import_root": "candidates/attribution-254",
+  "placement_correction": {
+    "reason": "Owner requires every reviewed Lean module directly under GRWTSK by mathematical subject",
+    "module_search_root": ".",
+    "source_statement_and_proof_bytes": "unchanged",
+    "compilation_run": false
+  },
+  "candidate_import_root": ".",
   "shared_attribution_record": "MATH-ATTRIBUTION-254",
   "approved_attribution": [
     {

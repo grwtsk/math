@@ -177,15 +177,15 @@
     {
       "original": "Mathematics.SpectralClosure.PositiveWeights",
       "candidate": "GRWTSK.Geometry.MetricGeometry.MetricSpaces.FiniteWeightedHamming.MetricLaws.PositiveWeights",
-      "candidate_path": "candidates/attribution-254/Geometry/MetricGeometry/MetricSpaces/FiniteWeightedHamming/MetricLaws.lean",
+      "candidate_path": "GRWTSK/Geometry/MetricGeometry/MetricSpaces/FiniteWeightedHamming/MetricLaws.lean",
       "original_span": {
         "start": 540,
         "end": 667,
         "sha256": "b9995a7a0e8d3dc563063358809882ee14dd4b719878e5604ff41d69457ed3d5"
       },
       "candidate_span": {
-        "start": 1957,
-        "end": 2084
+        "start": 1964,
+        "end": 2091
       },
       "statement_and_proof_bytes": "EXACT_COPY",
       "semantic_preservation": "UNREPLAYED_NAMESPACE_REBINDING"
@@ -193,15 +193,15 @@
     {
       "original": "Mathematics.SpectralClosure.weightedHamming",
       "candidate": "GRWTSK.Geometry.MetricGeometry.MetricSpaces.FiniteWeightedHamming.MetricLaws.weightedHamming",
-      "candidate_path": "candidates/attribution-254/Geometry/MetricGeometry/MetricSpaces/FiniteWeightedHamming/MetricLaws.lean",
+      "candidate_path": "GRWTSK/Geometry/MetricGeometry/MetricSpaces/FiniteWeightedHamming/MetricLaws.lean",
       "original_span": {
         "start": 667,
         "end": 897,
         "sha256": "de0522eaf6ee8c22905e1120afba8d1339b57fe06caa4ae8eda27ca2d17cace3"
       },
       "candidate_span": {
-        "start": 2084,
-        "end": 2314
+        "start": 2091,
+        "end": 2321
       },
       "statement_and_proof_bytes": "EXACT_COPY",
       "semantic_preservation": "UNREPLAYED_NAMESPACE_REBINDING"
@@ -209,15 +209,15 @@
     {
       "original": "Mathematics.SpectralClosure.weightedHamming_nonnegative",
       "candidate": "GRWTSK.Geometry.MetricGeometry.MetricSpaces.FiniteWeightedHamming.MetricLaws.weightedHamming_nonnegative",
-      "candidate_path": "candidates/attribution-254/Geometry/MetricGeometry/MetricSpaces/FiniteWeightedHamming/MetricLaws.lean",
+      "candidate_path": "GRWTSK/Geometry/MetricGeometry/MetricSpaces/FiniteWeightedHamming/MetricLaws.lean",
       "original_span": {
         "start": 897,
         "end": 1219,
         "sha256": "36470639e4eb1989d692ca408adc70c11a17febd0ccd2c75c996c1d30a9f7877"
       },
       "candidate_span": {
-        "start": 2314,
-        "end": 2636
+        "start": 2321,
+        "end": 2643
       },
       "statement_and_proof_bytes": "EXACT_COPY",
       "semantic_preservation": "UNREPLAYED_NAMESPACE_REBINDING",
@@ -235,15 +235,15 @@
     {
       "original": "Mathematics.SpectralClosure.weightedHamming_self",
       "candidate": "GRWTSK.Geometry.MetricGeometry.MetricSpaces.FiniteWeightedHamming.MetricLaws.weightedHamming_self",
-      "candidate_path": "candidates/attribution-254/Geometry/MetricGeometry/MetricSpaces/FiniteWeightedHamming/MetricLaws.lean",
+      "candidate_path": "GRWTSK/Geometry/MetricGeometry/MetricSpaces/FiniteWeightedHamming/MetricLaws.lean",
       "original_span": {
         "start": 1219,
         "end": 1419,
         "sha256": "84efabe791892030b7a045a9905a9d64b0879b49cdf95e3742401bb2fdc1cb80"
       },
       "candidate_span": {
-        "start": 2636,
-        "end": 2836
+        "start": 2643,
+        "end": 2843
       },
       "statement_and_proof_bytes": "EXACT_COPY",
       "semantic_preservation": "UNREPLAYED_NAMESPACE_REBINDING",
@@ -261,15 +261,15 @@
     {
       "original": "Mathematics.SpectralClosure.weightedHamming_symmetric",
       "candidate": "GRWTSK.Geometry.MetricGeometry.MetricSpaces.FiniteWeightedHamming.MetricLaws.weightedHamming_symmetric",
-      "candidate_path": "candidates/attribution-254/Geometry/MetricGeometry/MetricSpaces/FiniteWeightedHamming/MetricLaws.lean",
+      "candidate_path": "GRWTSK/Geometry/MetricGeometry/MetricSpaces/FiniteWeightedHamming/MetricLaws.lean",
       "original_span": {
         "start": 1419,
         "end": 1912,
         "sha256": "84bae97504fff71f481118aad56dbe701db2175ed007a785a7e19bec7a8a8866"
       },
       "candidate_span": {
-        "start": 2836,
-        "end": 3329
+        "start": 2843,
+        "end": 3336
       },
       "statement_and_proof_bytes": "EXACT_COPY",
       "semantic_preservation": "UNREPLAYED_NAMESPACE_REBINDING",
@@ -287,15 +287,15 @@
     {
       "original": "Mathematics.SpectralClosure.weightedHamming_triangle",
       "candidate": "GRWTSK.Geometry.MetricGeometry.MetricSpaces.FiniteWeightedHamming.MetricLaws.weightedHamming_triangle",
-      "candidate_path": "candidates/attribution-254/Geometry/MetricGeometry/MetricSpaces/FiniteWeightedHamming/MetricLaws.lean",
+      "candidate_path": "GRWTSK/Geometry/MetricGeometry/MetricSpaces/FiniteWeightedHamming/MetricLaws.lean",
       "original_span": {
         "start": 1912,
         "end": 2506,
         "sha256": "94273ead0cb4580b7498237db15259909d81091f40723ed208f36552df5329c8"
       },
       "candidate_span": {
-        "start": 3329,
-        "end": 3923
+        "start": 3336,
+        "end": 3930
       },
       "statement_and_proof_bytes": "EXACT_COPY",
       "semantic_preservation": "UNREPLAYED_NAMESPACE_REBINDING",
@@ -313,15 +313,15 @@
     {
       "original": "Mathematics.SpectralClosure.weightedHamming_separates",
       "candidate": "GRWTSK.Geometry.MetricGeometry.MetricSpaces.FiniteWeightedHamming.MetricLaws.weightedHamming_separates",
-      "candidate_path": "candidates/attribution-254/Geometry/MetricGeometry/MetricSpaces/FiniteWeightedHamming/MetricLaws.lean",
+      "candidate_path": "GRWTSK/Geometry/MetricGeometry/MetricSpaces/FiniteWeightedHamming/MetricLaws.lean",
       "original_span": {
         "start": 2506,
         "end": 3650,
         "sha256": "99b7aca71a959d6f267617091c84830e7106cb2356b5ec24a5100e23e285e244"
       },
       "candidate_span": {
-        "start": 3923,
-        "end": 5067
+        "start": 3930,
+        "end": 5074
       },
       "statement_and_proof_bytes": "EXACT_COPY",
       "semantic_preservation": "UNREPLAYED_NAMESPACE_REBINDING",
@@ -339,7 +339,7 @@
     {
       "original": "Mathematics.SpectralClosure.PseudometricData",
       "candidate": "GRWTSK.Geometry.MetricGeometry.MetricSpaces.ZeroDistanceQuotient.SetoidAndSeparation.PseudometricData",
-      "candidate_path": "candidates/attribution-254/Geometry/MetricGeometry/MetricSpaces/ZeroDistanceQuotient/SetoidAndSeparation.lean",
+      "candidate_path": "GRWTSK/Geometry/MetricGeometry/MetricSpaces/ZeroDistanceQuotient/SetoidAndSeparation.lean",
       "original_span": {
         "start": 3650,
         "end": 4026,
@@ -355,7 +355,7 @@
     {
       "original": "Mathematics.SpectralClosure.ZeroDistance",
       "candidate": "GRWTSK.Geometry.MetricGeometry.MetricSpaces.ZeroDistanceQuotient.SetoidAndSeparation.ZeroDistance",
-      "candidate_path": "candidates/attribution-254/Geometry/MetricGeometry/MetricSpaces/ZeroDistanceQuotient/SetoidAndSeparation.lean",
+      "candidate_path": "GRWTSK/Geometry/MetricGeometry/MetricSpaces/ZeroDistanceQuotient/SetoidAndSeparation.lean",
       "original_span": {
         "start": 4026,
         "end": 4157,
@@ -371,7 +371,7 @@
     {
       "original": "Mathematics.SpectralClosure.zeroDistance_equivalence",
       "candidate": "GRWTSK.Geometry.MetricGeometry.MetricSpaces.ZeroDistanceQuotient.SetoidAndSeparation.zeroDistance_equivalence",
-      "candidate_path": "candidates/attribution-254/Geometry/MetricGeometry/MetricSpaces/ZeroDistanceQuotient/SetoidAndSeparation.lean",
+      "candidate_path": "GRWTSK/Geometry/MetricGeometry/MetricSpaces/ZeroDistanceQuotient/SetoidAndSeparation.lean",
       "original_span": {
         "start": 4157,
         "end": 4641,
@@ -397,7 +397,7 @@
     {
       "original": "Mathematics.SpectralClosure.zeroDistanceSetoid",
       "candidate": "GRWTSK.Geometry.MetricGeometry.MetricSpaces.ZeroDistanceQuotient.SetoidAndSeparation.zeroDistanceSetoid",
-      "candidate_path": "candidates/attribution-254/Geometry/MetricGeometry/MetricSpaces/ZeroDistanceQuotient/SetoidAndSeparation.lean",
+      "candidate_path": "GRWTSK/Geometry/MetricGeometry/MetricSpaces/ZeroDistanceQuotient/SetoidAndSeparation.lean",
       "original_span": {
         "start": 4641,
         "end": 4805,
@@ -413,7 +413,7 @@
     {
       "original": "Mathematics.SpectralClosure.SeparatedQuotient",
       "candidate": "GRWTSK.Geometry.MetricGeometry.MetricSpaces.ZeroDistanceQuotient.SetoidAndSeparation.SeparatedQuotient",
-      "candidate_path": "candidates/attribution-254/Geometry/MetricGeometry/MetricSpaces/ZeroDistanceQuotient/SetoidAndSeparation.lean",
+      "candidate_path": "GRWTSK/Geometry/MetricGeometry/MetricSpaces/ZeroDistanceQuotient/SetoidAndSeparation.lean",
       "original_span": {
         "start": 4805,
         "end": 4922,
@@ -429,7 +429,7 @@
     {
       "original": "Mathematics.SpectralClosure.quotient_identifies_exactly_zero_distance",
       "candidate": "GRWTSK.Geometry.MetricGeometry.MetricSpaces.ZeroDistanceQuotient.SetoidAndSeparation.quotient_identifies_exactly_zero_distance",
-      "candidate_path": "candidates/attribution-254/Geometry/MetricGeometry/MetricSpaces/ZeroDistanceQuotient/SetoidAndSeparation.lean",
+      "candidate_path": "GRWTSK/Geometry/MetricGeometry/MetricSpaces/ZeroDistanceQuotient/SetoidAndSeparation.lean",
       "original_span": {
         "start": 4922,
         "end": 5208,
@@ -455,7 +455,7 @@
     {
       "original": "Mathematics.SpectralClosure.Separated",
       "candidate": "GRWTSK.Geometry.MetricGeometry.MetricSpaces.ZeroDistanceQuotient.SetoidAndSeparation.Separated",
-      "candidate_path": "candidates/attribution-254/Geometry/MetricGeometry/MetricSpaces/ZeroDistanceQuotient/SetoidAndSeparation.lean",
+      "candidate_path": "GRWTSK/Geometry/MetricGeometry/MetricSpaces/ZeroDistanceQuotient/SetoidAndSeparation.lean",
       "original_span": {
         "start": 5208,
         "end": 5348,
@@ -471,11 +471,11 @@
   ],
   "outputs": [
     {
-      "path": "candidates/attribution-254/Geometry/MetricGeometry/MetricSpaces/FiniteWeightedHamming/MetricLaws.lean",
+      "path": "GRWTSK/Geometry/MetricGeometry/MetricSpaces/FiniteWeightedHamming/MetricLaws.lean",
       "mode": "100644",
       "namespace": "GRWTSK.Geometry.MetricGeometry.MetricSpaces.FiniteWeightedHamming.MetricLaws",
-      "sha256": "c0075a16a1e0d63e6ff552b47087ec04ac5daa6463591075ed0144f081f77f47",
-      "byte_count": 5148,
+      "sha256": "93c58a1e3a65766633ba07c68837149220281510bf366b1e3ff2a10851eafd54",
+      "byte_count": 5155,
       "status": "uncompiled-candidate",
       "public_umbrella_member": false,
       "proof_status": "unknown-unreplayed",
@@ -519,10 +519,10 @@
         {
           "kind": "literal",
           "reason": "replace legacy project import by candidate-local exact Bitfield extraction",
-          "base64": "aW1wb3J0IEdlb21ldHJ5Lk1ldHJpY0dlb21ldHJ5Lk1ldHJpY1NwYWNlcy5GaW5pdGVXZWlnaHRlZEhhbW1pbmcuQml0ZmllbGQK",
-          "sha256": "44989f9e7d107568499550e78083d76d51f01609526aa0f56dd799acf4674759",
+          "base64": "aW1wb3J0IEdSV1RTSy5HZW9tZXRyeS5NZXRyaWNHZW9tZXRyeS5NZXRyaWNTcGFjZXMuRmluaXRlV2VpZ2h0ZWRIYW1taW5nLkJpdGZpZWxkCg==",
+          "sha256": "3cd0f00582495ee48a486f937ea26f2dbb901b23578a5127006c82a43d7556c3",
           "output_start": 1254,
-          "output_end": 1329
+          "output_end": 1336
         },
         {
           "kind": "copy",
@@ -531,16 +531,16 @@
           "start": 44,
           "end": 501,
           "sha256": "1ab45e7f5a6d27a93082687c4a206280862bf17fe16f259763a3b3b10162f8a6",
-          "output_start": 1329,
-          "output_end": 1786
+          "output_start": 1336,
+          "output_end": 1793
         },
         {
           "kind": "literal",
           "reason": "rebind subject namespace; explicitly resolve exact imported Bitfield alias",
           "base64": "bmFtZXNwYWNlIEdSV1RTSy5HZW9tZXRyeS5NZXRyaWNHZW9tZXRyeS5NZXRyaWNTcGFjZXMuRmluaXRlV2VpZ2h0ZWRIYW1taW5nLk1ldHJpY0xhd3MKCm9wZW4gR1JXVFNLLkdlb21ldHJ5Lk1ldHJpY0dlb21ldHJ5Lk1ldHJpY1NwYWNlcy5GaW5pdGVXZWlnaHRlZEhhbW1pbmcgKEJpdGZpZWxkKQoK",
           "sha256": "46ee44f81621e3bf99b2259e8a2d137339fe4fa9ff788bad82e268ccb7cb4a11",
-          "output_start": 1786,
-          "output_end": 1957
+          "output_start": 1793,
+          "output_end": 1964
         },
         {
           "kind": "copy",
@@ -549,16 +549,16 @@
           "start": 540,
           "end": 3650,
           "sha256": "1f93f34a5ff37f1b8b87a44149f9e147a152dfd52b6cd8b9ad233edd45e6a94f",
-          "output_start": 1957,
-          "output_end": 5067
+          "output_start": 1964,
+          "output_end": 5074
         },
         {
           "kind": "literal",
           "reason": "close candidate namespace",
           "base64": "ZW5kIEdSV1RTSy5HZW9tZXRyeS5NZXRyaWNHZW9tZXRyeS5NZXRyaWNTcGFjZXMuRmluaXRlV2VpZ2h0ZWRIYW1taW5nLk1ldHJpY0xhd3MK",
           "sha256": "ad47120f70f2290812456ce910670d598ff89cb60101af8348fd3aaff87ccdba",
-          "output_start": 5067,
-          "output_end": 5148
+          "output_start": 5074,
+          "output_end": 5155
         }
       ],
       "inverse": {
@@ -589,7 +589,7 @@
       }
     },
     {
-      "path": "candidates/attribution-254/Geometry/MetricGeometry/MetricSpaces/ZeroDistanceQuotient/SetoidAndSeparation.lean",
+      "path": "GRWTSK/Geometry/MetricGeometry/MetricSpaces/ZeroDistanceQuotient/SetoidAndSeparation.lean",
       "mode": "100644",
       "namespace": "GRWTSK.Geometry.MetricGeometry.MetricSpaces.ZeroDistanceQuotient.SetoidAndSeparation",
       "sha256": "e38a2d77a67b0504cef4c153bea8ae4531d41bc13e27b516525e1bbbd6ddc7a3",
@@ -718,7 +718,7 @@
       }
     },
     {
-      "path": "candidates/attribution-254/Geometry/MetricGeometry/MetricSpaces/FiniteWeightedHamming/Bitfield.lean",
+      "path": "GRWTSK/Geometry/MetricGeometry/MetricSpaces/FiniteWeightedHamming/Bitfield.lean",
       "mode": "100644",
       "namespace": "GRWTSK.Geometry.MetricGeometry.MetricSpaces.FiniteWeightedHamming",
       "sha256": "0340817ab3e3d1eca21340eabe1aa8856512bb3695450b0e22a1dba60eb1298a",
@@ -842,7 +842,7 @@
         "sha256": "40a3e6d2af00ee68e27903f30edc8ab948f1ff6b40666f2d0ff5e17f678e802c"
       },
       "candidate": "GRWTSK.Geometry.MetricGeometry.MetricSpaces.FiniteWeightedHamming.Bitfield",
-      "candidate_path": "candidates/attribution-254/Geometry/MetricGeometry/MetricSpaces/FiniteWeightedHamming/Bitfield.lean",
+      "candidate_path": "GRWTSK/Geometry/MetricGeometry/MetricSpaces/FiniteWeightedHamming/Bitfield.lean",
       "remaining_source_disposition": "EXACT_RAW_ARCHIVE_RETAINED; OTHER_DECLARATIONS_NOT_MATERIALIZED_OR_COMPLETION_CREDITED"
     }
   ],
@@ -903,11 +903,11 @@
         "to": "ZeroDistance"
       }
     ],
-    "candidate_import_root": "candidates/attribution-254",
+    "candidate_import_root": ".",
     "project_imports_replaced": [
       {
         "original": "Mathematics.SpectralClosure.Bitfield",
-        "candidate": "Geometry.MetricGeometry.MetricSpaces.FiniteWeightedHamming.Bitfield",
+        "candidate": "GRWTSK.Geometry.MetricGeometry.MetricSpaces.FiniteWeightedHamming.Bitfield",
         "exact_abbreviation_raw_sha256": "59defd17787cf33798d31d5ccc19e14ea46bdd31a566bc9c8f31843301ad0eef"
       }
     ],
@@ -937,7 +937,13 @@
     "When compilation is explicitly authorized, replay these exact candidates with pinned dependencies before public library admission.",
     "Other Bitfield source declarations remain in the exact archive; this dependency extraction does not complete their conceptual review."
   ],
-  "candidate_import_root": "candidates/attribution-254",
+  "placement_correction": {
+    "reason": "Owner requires every reviewed Lean module directly under GRWTSK by mathematical subject",
+    "module_search_root": ".",
+    "source_statement_and_proof_bytes": "unchanged",
+    "compilation_run": false
+  },
+  "candidate_import_root": ".",
   "shared_attribution_record": "MATH-ATTRIBUTION-254",
   "approved_attribution": [
     {

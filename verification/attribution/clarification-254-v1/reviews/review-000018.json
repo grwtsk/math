@@ -167,7 +167,7 @@
       },
       "read_status": "READ_DIRECTLY",
       "candidate": "GRWTSK.CombinatoricsAndDiscreteMathematics.TwoElementShapley.twoPrimeAttributionFirst",
-      "candidate_path": "candidates/attribution-254/CombinatoricsAndDiscreteMathematics/TwoElementShapley/AveragedIncrements.lean",
+      "candidate_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TwoElementShapley/AveragedIncrements.lean",
       "candidate_span": {
         "start": 2162,
         "end": 2501
@@ -185,7 +185,7 @@
       },
       "read_status": "READ_DIRECTLY",
       "candidate": "GRWTSK.CombinatoricsAndDiscreteMathematics.TwoElementShapley.twoPrimeAttributionSecond",
-      "candidate_path": "candidates/attribution-254/CombinatoricsAndDiscreteMathematics/TwoElementShapley/AveragedIncrements.lean",
+      "candidate_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TwoElementShapley/AveragedIncrements.lean",
       "candidate_span": {
         "start": 2501,
         "end": 2842
@@ -203,10 +203,10 @@
       },
       "read_status": "READ_DIRECTLY",
       "candidate": "GRWTSK.CombinatoricsAndDiscreteMathematics.TwoElementShapley.shapley_attribution_nonnegative",
-      "candidate_path": "candidates/attribution-254/CombinatoricsAndDiscreteMathematics/TwoElementShapley/Nonnegativity.lean",
+      "candidate_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TwoElementShapley/Nonnegativity.lean",
       "candidate_span": {
-        "start": 2276,
-        "end": 4145
+        "start": 2283,
+        "end": 4152
       },
       "statement_and_body_bytes": "EXACT_COPY",
       "semantic_preservation": "UNKNOWN_UNREPLAYED_NAMESPACE_CONTEXT_REBINDING",
@@ -231,10 +231,10 @@
       },
       "read_status": "READ_DIRECTLY",
       "candidate": "GRWTSK.CombinatoricsAndDiscreteMathematics.TwoElementShapley.shapley_attribution_efficiency",
-      "candidate_path": "candidates/attribution-254/CombinatoricsAndDiscreteMathematics/TwoElementShapley/Efficiency.lean",
+      "candidate_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TwoElementShapley/Efficiency.lean",
       "candidate_span": {
-        "start": 2256,
-        "end": 3026
+        "start": 2263,
+        "end": 3033
       },
       "statement_and_body_bytes": "EXACT_COPY",
       "semantic_preservation": "UNKNOWN_UNREPLAYED_NAMESPACE_CONTEXT_REBINDING",
@@ -253,7 +253,7 @@
   "archive_only_declarations": [],
   "outputs": [
     {
-      "path": "candidates/attribution-254/CombinatoricsAndDiscreteMathematics/TwoElementShapley/AveragedIncrements.lean",
+      "path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TwoElementShapley/AveragedIncrements.lean",
       "mode": "100644",
       "namespace": "GRWTSK.CombinatoricsAndDiscreteMathematics.TwoElementShapley",
       "sha256": "a303770f5b67cf410b6417a157e64b9c95576a0136cdf95b42734db51cad162f",
@@ -358,11 +358,11 @@
       "candidate_imports": []
     },
     {
-      "path": "candidates/attribution-254/CombinatoricsAndDiscreteMathematics/TwoElementShapley/Nonnegativity.lean",
+      "path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TwoElementShapley/Nonnegativity.lean",
       "mode": "100644",
       "namespace": "GRWTSK.CombinatoricsAndDiscreteMathematics.TwoElementShapley",
-      "sha256": "056d28c6f6cfd2c1b166ca85bd3dc2eac561a3330eafe426457edceb9c687f1d",
-      "byte_count": 4210,
+      "sha256": "27476aba2626c767cb3f911985b7e8a6bd46f5b2fc0e87e5f590c522cd996842",
+      "byte_count": 4217,
       "status": "uncompiled-candidate",
       "public_umbrella_member": false,
       "proof_status": "unknown-unreplayed",
@@ -415,10 +415,10 @@
         {
           "kind": "literal",
           "reason": "explicit candidate-local component dependencies; candidate source root is candidates/attribution-254",
-          "base64": "aW1wb3J0IENvbWJpbmF0b3JpY3NBbmREaXNjcmV0ZU1hdGhlbWF0aWNzLlR3b0VsZW1lbnRTaGFwbGV5LkF2ZXJhZ2VkSW5jcmVtZW50cwo=",
-          "sha256": "72d9ec0eaf257f569dd2226f9170f185c8996e846a2f3c0ea2984acce33abb2c",
+          "base64": "aW1wb3J0IEdSV1RTSy5Db21iaW5hdG9yaWNzQW5kRGlzY3JldGVNYXRoZW1hdGljcy5Ud29FbGVtZW50U2hhcGxleS5BdmVyYWdlZEluY3JlbWVudHMK",
+          "sha256": "c7c9a9133fead1b66559081286b78a1475b0443c7da746c49770544f12947f96",
           "output_start": 1683,
-          "output_end": 1763
+          "output_end": 1770
         },
         {
           "kind": "copy",
@@ -427,16 +427,16 @@
           "start": 52,
           "end": 459,
           "sha256": "b1e03e49baa16e2f33285b341493a67e3e76c46ec506e698c48a4766ea85d97d",
-          "output_start": 1763,
-          "output_end": 2170
+          "output_start": 1770,
+          "output_end": 2177
         },
         {
           "kind": "literal",
           "reason": "rebind subject namespace and explicitly preserve imported-name context",
           "base64": "bmFtZXNwYWNlIEdSV1RTSy5Db21iaW5hdG9yaWNzQW5kRGlzY3JldGVNYXRoZW1hdGljcy5Ud29FbGVtZW50U2hhcGxleQoKb3BlbiBNYXRoZW1hdGljcy5TZW1pTG9jYWxEZWZlY3QKCg==",
           "sha256": "d280ed01f7a339cb52cd3c2c0a98fc579717704f8267bf968d2d846464b550ee",
-          "output_start": 2170,
-          "output_end": 2276
+          "output_start": 2177,
+          "output_end": 2283
         },
         {
           "kind": "copy",
@@ -445,16 +445,16 @@
           "start": 1178,
           "end": 3047,
           "sha256": "d4f0bf7e08a5151d2207efba3f38d97f2425dbf1672a515c8769e760a0a0e778",
-          "output_start": 2276,
-          "output_end": 4145
+          "output_start": 2283,
+          "output_end": 4152
         },
         {
           "kind": "literal",
           "reason": "close candidate namespace",
           "base64": "ZW5kIEdSV1RTSy5Db21iaW5hdG9yaWNzQW5kRGlzY3JldGVNYXRoZW1hdGljcy5Ud29FbGVtZW50U2hhcGxleQo=",
           "sha256": "ff0ccd0ed8b91c3ea43d35915421f7c20b64532e1cae10be6b45bc6119669931",
-          "output_start": 4145,
-          "output_end": 4210
+          "output_start": 4152,
+          "output_end": 4217
         }
       ],
       "inverse": {
@@ -479,15 +479,15 @@
       },
       "original_imports_retained": true,
       "candidate_imports": [
-        "CombinatoricsAndDiscreteMathematics.TwoElementShapley.AveragedIncrements"
+        "GRWTSK.CombinatoricsAndDiscreteMathematics.TwoElementShapley.AveragedIncrements"
       ]
     },
     {
-      "path": "candidates/attribution-254/CombinatoricsAndDiscreteMathematics/TwoElementShapley/Efficiency.lean",
+      "path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TwoElementShapley/Efficiency.lean",
       "mode": "100644",
       "namespace": "GRWTSK.CombinatoricsAndDiscreteMathematics.TwoElementShapley",
-      "sha256": "1c25c50b12a826e89a551f4efc69fda267b5905dca50d32269b6bc9a9e892e06",
-      "byte_count": 3091,
+      "sha256": "b0c4d3458025990ccb1946f4b40fdbb3a5933b3f82355869b56bed5f84dbd8e0",
+      "byte_count": 3098,
       "status": "uncompiled-candidate",
       "public_umbrella_member": false,
       "proof_status": "unknown-unreplayed",
@@ -540,10 +540,10 @@
         {
           "kind": "literal",
           "reason": "explicit candidate-local component dependencies; candidate source root is candidates/attribution-254",
-          "base64": "aW1wb3J0IENvbWJpbmF0b3JpY3NBbmREaXNjcmV0ZU1hdGhlbWF0aWNzLlR3b0VsZW1lbnRTaGFwbGV5LkF2ZXJhZ2VkSW5jcmVtZW50cwo=",
-          "sha256": "72d9ec0eaf257f569dd2226f9170f185c8996e846a2f3c0ea2984acce33abb2c",
+          "base64": "aW1wb3J0IEdSV1RTSy5Db21iaW5hdG9yaWNzQW5kRGlzY3JldGVNYXRoZW1hdGljcy5Ud29FbGVtZW50U2hhcGxleS5BdmVyYWdlZEluY3JlbWVudHMK",
+          "sha256": "c7c9a9133fead1b66559081286b78a1475b0443c7da746c49770544f12947f96",
           "output_start": 1663,
-          "output_end": 1743
+          "output_end": 1750
         },
         {
           "kind": "copy",
@@ -552,16 +552,16 @@
           "start": 52,
           "end": 459,
           "sha256": "b1e03e49baa16e2f33285b341493a67e3e76c46ec506e698c48a4766ea85d97d",
-          "output_start": 1743,
-          "output_end": 2150
+          "output_start": 1750,
+          "output_end": 2157
         },
         {
           "kind": "literal",
           "reason": "rebind subject namespace and explicitly preserve imported-name context",
           "base64": "bmFtZXNwYWNlIEdSV1RTSy5Db21iaW5hdG9yaWNzQW5kRGlzY3JldGVNYXRoZW1hdGljcy5Ud29FbGVtZW50U2hhcGxleQoKb3BlbiBNYXRoZW1hdGljcy5TZW1pTG9jYWxEZWZlY3QKCg==",
           "sha256": "d280ed01f7a339cb52cd3c2c0a98fc579717704f8267bf968d2d846464b550ee",
-          "output_start": 2150,
-          "output_end": 2256
+          "output_start": 2157,
+          "output_end": 2263
         },
         {
           "kind": "copy",
@@ -570,16 +570,16 @@
           "start": 3047,
           "end": 3817,
           "sha256": "1d66b1cf772debcd00a8278a8dc53cd7d4b0a64feef86793300457922bc2adad",
-          "output_start": 2256,
-          "output_end": 3026
+          "output_start": 2263,
+          "output_end": 3033
         },
         {
           "kind": "literal",
           "reason": "close candidate namespace",
           "base64": "ZW5kIEdSV1RTSy5Db21iaW5hdG9yaWNzQW5kRGlzY3JldGVNYXRoZW1hdGljcy5Ud29FbGVtZW50U2hhcGxleQo=",
           "sha256": "ff0ccd0ed8b91c3ea43d35915421f7c20b64532e1cae10be6b45bc6119669931",
-          "output_start": 3026,
-          "output_end": 3091
+          "output_start": 3033,
+          "output_end": 3098
         }
       ],
       "inverse": {
@@ -604,7 +604,7 @@
       },
       "original_imports_retained": true,
       "candidate_imports": [
-        "CombinatoricsAndDiscreteMathematics.TwoElementShapley.AveragedIncrements"
+        "GRWTSK.CombinatoricsAndDiscreteMathematics.TwoElementShapley.AveragedIncrements"
       ]
     }
   ],
@@ -612,7 +612,7 @@
     "method": "Complete direct reading of raw and organized sources; manually selected source spans and explicit imported-name context; no elaboration or transitive dependency census",
     "components": [
       {
-        "path": "candidates/attribution-254/CombinatoricsAndDiscreteMathematics/TwoElementShapley/AveragedIncrements.lean",
+        "path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TwoElementShapley/AveragedIncrements.lean",
         "original_regions": [
           [
             498,
@@ -621,7 +621,7 @@
         ]
       },
       {
-        "path": "candidates/attribution-254/CombinatoricsAndDiscreteMathematics/TwoElementShapley/Nonnegativity.lean",
+        "path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TwoElementShapley/Nonnegativity.lean",
         "original_regions": [
           [
             1178,
@@ -630,7 +630,7 @@
         ]
       },
       {
-        "path": "candidates/attribution-254/CombinatoricsAndDiscreteMathematics/TwoElementShapley/Efficiency.lean",
+        "path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TwoElementShapley/Efficiency.lean",
         "original_regions": [
           [
             3047,
@@ -642,10 +642,10 @@
     "legacy_imports_retained": [
       "Mathematics.SemiLocalDefect.PositiveCapacity"
     ],
-    "candidate_import_root": "candidates/attribution-254",
+    "candidate_import_root": ".",
     "candidate_imports": [
-      "CombinatoricsAndDiscreteMathematics.TwoElementShapley.AveragedIncrements",
-      "CombinatoricsAndDiscreteMathematics.TwoElementShapley.AveragedIncrements"
+      "GRWTSK.CombinatoricsAndDiscreteMathematics.TwoElementShapley.AveragedIncrements",
+      "GRWTSK.CombinatoricsAndDiscreteMathematics.TwoElementShapley.AveragedIncrements"
     ],
     "namespace_resolution": "UNKNOWN_UNREPLAYED"
   },
@@ -681,7 +681,13 @@
     "Run Lean only after explicit authorization; no elaboration, kernel acceptance, novelty or priority is claimed.",
     "Choose canonical ownership and actual consumer compatibility before public umbrella admission."
   ],
-  "candidate_import_root": "candidates/attribution-254",
+  "placement_correction": {
+    "reason": "Owner requires every reviewed Lean module directly under GRWTSK by mathematical subject",
+    "module_search_root": ".",
+    "source_statement_and_proof_bytes": "unchanged",
+    "compilation_run": false
+  },
+  "candidate_import_root": ".",
   "shared_attribution_record": "MATH-ATTRIBUTION-254",
   "approved_attribution": [
     {

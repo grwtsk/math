@@ -189,7 +189,7 @@
       "original": "FormalResearch.RiemannHypothesis.SourceQuadratureEndpointFixtures.cellInterior",
       "organized": "FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.CellInterior.Variantb1692c02a45eaff5606892ff3359bbf8639f843d9500dbacd47549872964ad14.FormalResearch.RiemannHypothesis.SourceQuadratureEndpointFixtures.cellInterior",
       "candidate": "GRWTSK.Analysis.RealAnalysis.Integration.EndpointQuadrature.Checks.Positive.VanishingEndpointMass.cellInterior",
-      "candidate_path": "candidates/attribution-254/Analysis/RealAnalysis/Integration/EndpointQuadrature/Checks/Positive/VanishingEndpointMass.lean",
+      "candidate_path": "GRWTSK/Analysis/RealAnalysis/Integration/EndpointQuadrature/Checks/Positive/VanishingEndpointMass.lean",
       "kind": "def",
       "original_span": {
         "start": 666,
@@ -223,7 +223,7 @@
       "original": "FormalResearch.RiemannHypothesis.SourceQuadratureEndpointFixtures.cellInterior_endpoints",
       "organized": "FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.CellInterior.Variantb1692c02a45eaff5606892ff3359bbf8639f843d9500dbacd47549872964ad14.FormalResearch.RiemannHypothesis.SourceQuadratureEndpointFixtures.cellInterior_endpoints",
       "candidate": "GRWTSK.Analysis.RealAnalysis.Integration.EndpointQuadrature.Checks.Positive.VanishingEndpointMass.cellInterior_endpoints",
-      "candidate_path": "candidates/attribution-254/Analysis/RealAnalysis/Integration/EndpointQuadrature/Checks/Positive/VanishingEndpointMass.lean",
+      "candidate_path": "GRWTSK/Analysis/RealAnalysis/Integration/EndpointQuadrature/Checks/Positive/VanishingEndpointMass.lean",
       "kind": "theorem",
       "original_span": {
         "start": 808,
@@ -257,7 +257,7 @@
       "original": "FormalResearch.RiemannHypothesis.SourceQuadratureEndpointFixtures.cellInterior_integral",
       "organized": "FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.CellInterior.Variantb1692c02a45eaff5606892ff3359bbf8639f843d9500dbacd47549872964ad14.FormalResearch.RiemannHypothesis.SourceQuadratureEndpointFixtures.cellInterior_integral",
       "candidate": "GRWTSK.Analysis.RealAnalysis.Integration.EndpointQuadrature.Checks.Positive.VanishingEndpointMass.cellInterior_integral",
-      "candidate_path": "candidates/attribution-254/Analysis/RealAnalysis/Integration/EndpointQuadrature/Checks/Positive/VanishingEndpointMass.lean",
+      "candidate_path": "GRWTSK/Analysis/RealAnalysis/Integration/EndpointQuadrature/Checks/Positive/VanishingEndpointMass.lean",
       "kind": "theorem",
       "original_span": {
         "start": 934,
@@ -291,7 +291,7 @@
       "original": "FormalResearch.RiemannHypothesis.SourceQuadratureEndpointFixtures.zero_endpoints_do_not_erase_continuous_tail",
       "organized": "FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.CellInterior.Variantb1692c02a45eaff5606892ff3359bbf8639f843d9500dbacd47549872964ad14.FormalResearch.RiemannHypothesis.SourceQuadratureEndpointFixtures.zero_endpoints_do_not_erase_continuous_tail",
       "candidate": "GRWTSK.Analysis.RealAnalysis.Integration.EndpointQuadrature.Checks.Positive.VanishingEndpointMass.zero_endpoints_do_not_erase_continuous_tail",
-      "candidate_path": "candidates/attribution-254/Analysis/RealAnalysis/Integration/EndpointQuadrature/Checks/Positive/VanishingEndpointMass.lean",
+      "candidate_path": "GRWTSK/Analysis/RealAnalysis/Integration/EndpointQuadrature/Checks/Positive/VanishingEndpointMass.lean",
       "kind": "theorem",
       "original_span": {
         "start": 1630,
@@ -324,8 +324,8 @@
   ],
   "outputs": [
     {
-      "path": "candidates/attribution-254/Analysis/RealAnalysis/Integration/EndpointQuadrature/Checks/Positive/VanishingEndpointMass.lean",
-      "logical_module": "Analysis.RealAnalysis.Integration.EndpointQuadrature.Checks.Positive.VanishingEndpointMass",
+      "path": "GRWTSK/Analysis/RealAnalysis/Integration/EndpointQuadrature/Checks/Positive/VanishingEndpointMass.lean",
+      "logical_module": "GRWTSK.Analysis.RealAnalysis.Integration.EndpointQuadrature.Checks.Positive.VanishingEndpointMass",
       "namespace": "GRWTSK.Analysis.RealAnalysis.Integration.EndpointQuadrature.Checks.Positive.VanishingEndpointMass",
       "role": "positive-fixture-candidate",
       "mode": "100644",
@@ -473,8 +473,8 @@
       "mathematical_acceptance": false,
       "added_candidate_import": null,
       "third_credit": "Cache warming and model sculpting: the countless, often unnamed mathematicians, enthusiasts, and curious minds whose work and questions have helped shape these tools, and who now have new ways to pursue mathematical answers to the endlessly deep question: “Why?”",
-      "module": "Analysis.RealAnalysis.Integration.EndpointQuadrature.Checks.Positive.VanishingEndpointMass",
-      "candidate_import_root": "candidates/attribution-254"
+      "module": "GRWTSK.Analysis.RealAnalysis.Integration.EndpointQuadrature.Checks.Positive.VanishingEndpointMass",
+      "candidate_import_root": "."
     }
   ],
   "dependency_review": {
@@ -524,7 +524,7 @@
     "Review actual consumers and owned axioms before any public umbrella admission."
   ],
   "concept_decision": "NO_FURTHER_CONCEPTUAL_SPLIT_NEEDED",
-  "candidate_import_root": "candidates/attribution-254",
+  "candidate_import_root": ".",
   "static_corrections": [
     {
       "reason": "Leading generated candidate metadata is an ordinary block comment, preserving Lean import-header grammar; original post-import module documentation remains exact. Candidate module names/imports use the actual candidates/attribution-254 search root.",
@@ -532,6 +532,12 @@
       "compilation": "NOT_RUN"
     }
   ],
+  "placement_correction": {
+    "reason": "Owner requires every reviewed Lean module directly under GRWTSK by mathematical subject",
+    "module_search_root": ".",
+    "source_statement_and_proof_bytes": "unchanged",
+    "compilation_run": false
+  },
   "shared_attribution_record": "MATH-ATTRIBUTION-254",
   "approved_attribution": [
     {

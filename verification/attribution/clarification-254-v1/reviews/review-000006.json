@@ -143,7 +143,7 @@
     {
       "original": "Mathematics.SpectralClosure.ConcentrationMechanism",
       "candidate": "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.ProbabilityInequalities.DependenceAwareConcentration.CertificateInterface.ConcentrationMechanism",
-      "candidate_path": "candidates/attribution-254/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilityInequalities/DependenceAwareConcentration/CertificateInterface.lean",
+      "candidate_path": "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilityInequalities/DependenceAwareConcentration/CertificateInterface.lean",
       "original_span": {
         "start": 248,
         "end": 469,
@@ -159,7 +159,7 @@
     {
       "original": "Mathematics.SpectralClosure.ConcentrationMechanismCertificate",
       "candidate": "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.ProbabilityInequalities.DependenceAwareConcentration.CertificateInterface.ConcentrationMechanismCertificate",
-      "candidate_path": "candidates/attribution-254/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilityInequalities/DependenceAwareConcentration/CertificateInterface.lean",
+      "candidate_path": "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilityInequalities/DependenceAwareConcentration/CertificateInterface.lean",
       "original_span": {
         "start": 469,
         "end": 792,
@@ -175,7 +175,7 @@
     {
       "original": "Mathematics.SpectralClosure.ConcentrationSoundnessObligation",
       "candidate": "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.ProbabilityInequalities.DependenceAwareConcentration.CertificateInterface.ConcentrationSoundnessObligation",
-      "candidate_path": "candidates/attribution-254/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilityInequalities/DependenceAwareConcentration/CertificateInterface.lean",
+      "candidate_path": "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilityInequalities/DependenceAwareConcentration/CertificateInterface.lean",
       "original_span": {
         "start": 792,
         "end": 932,
@@ -191,7 +191,7 @@
     {
       "original": "Mathematics.SpectralClosure.AdmittedConcentrationCertificate",
       "candidate": "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.ProbabilityInequalities.DependenceAwareConcentration.CertificateInterface.AdmittedConcentrationCertificate",
-      "candidate_path": "candidates/attribution-254/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilityInequalities/DependenceAwareConcentration/CertificateInterface.lean",
+      "candidate_path": "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilityInequalities/DependenceAwareConcentration/CertificateInterface.lean",
       "original_span": {
         "start": 932,
         "end": 1128,
@@ -207,7 +207,7 @@
     {
       "original": "Mathematics.SpectralClosure.influence_does_not_self_admit_concentration",
       "candidate": "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.ProbabilityInequalities.DependenceAwareConcentration.CertificateInterface.influence_does_not_self_admit_concentration",
-      "candidate_path": "candidates/attribution-254/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilityInequalities/DependenceAwareConcentration/CertificateInterface.lean",
+      "candidate_path": "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilityInequalities/DependenceAwareConcentration/CertificateInterface.lean",
       "original_span": {
         "start": 1128,
         "end": 1350,
@@ -223,7 +223,7 @@
   ],
   "outputs": [
     {
-      "path": "candidates/attribution-254/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilityInequalities/DependenceAwareConcentration/CertificateInterface.lean",
+      "path": "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilityInequalities/DependenceAwareConcentration/CertificateInterface.lean",
       "mode": "100644",
       "namespace": "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.ProbabilityInequalities.DependenceAwareConcentration.CertificateInterface",
       "sha256": "104e552d5406403cabbb8e704e2203ad92e8efcf83cc4aed19d31668a3df73c1",
@@ -390,7 +390,13 @@
     "soundnessStatement_remains_unproved_Prop": true,
     "reflexive_status_theorem_is_not_tail_bound": true
   },
-  "candidate_import_root": "candidates/attribution-254",
+  "placement_correction": {
+    "reason": "Owner requires every reviewed Lean module directly under GRWTSK by mathematical subject",
+    "module_search_root": ".",
+    "source_statement_and_proof_bytes": "unchanged",
+    "compilation_run": false
+  },
+  "candidate_import_root": ".",
   "shared_attribution_record": "MATH-ATTRIBUTION-254",
   "approved_attribution": [
     {

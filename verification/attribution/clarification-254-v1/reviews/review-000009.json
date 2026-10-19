@@ -181,7 +181,7 @@
     {
       "original": "Mathematics.Stability.ContractionCertificate",
       "candidate": "GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.ContractionBoundaries.CertificateObligations.ContractionCertificate",
-      "candidate_path": "candidates/attribution-254/Analysis/NonlinearAnalysis/FixedPointTheory/ContractionBoundaries/CertificateObligations.lean",
+      "candidate_path": "GRWTSK/Analysis/NonlinearAnalysis/FixedPointTheory/ContractionBoundaries/CertificateObligations.lean",
       "original_span": {
         "start": 117,
         "end": 440,
@@ -197,7 +197,7 @@
     {
       "original": "Mathematics.Stability.BanachFixedPointObligation",
       "candidate": "GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.ContractionBoundaries.CertificateObligations.BanachFixedPointObligation",
-      "candidate_path": "candidates/attribution-254/Analysis/NonlinearAnalysis/FixedPointTheory/ContractionBoundaries/CertificateObligations.lean",
+      "candidate_path": "GRWTSK/Analysis/NonlinearAnalysis/FixedPointTheory/ContractionBoundaries/CertificateObligations.lean",
       "original_span": {
         "start": 440,
         "end": 801,
@@ -213,7 +213,7 @@
     {
       "original": "Mathematics.Stability.certified_integral_traversal_obeys_affine_bound",
       "candidate": "GRWTSK.DifferentialEquationsAndDynamicalSystems.DifferenceEquations.DiscreteEvolution.LinearRecurrences.NaturalAffineBounds.Iteration.certified_integral_traversal_obeys_affine_bound",
-      "candidate_path": "candidates/attribution-254/DifferentialEquationsAndDynamicalSystems/DifferenceEquations/DiscreteEvolution/LinearRecurrences/NaturalAffineBounds/Iteration.lean",
+      "candidate_path": "GRWTSK/DifferentialEquationsAndDynamicalSystems/DifferenceEquations/DiscreteEvolution/LinearRecurrences/NaturalAffineBounds/Iteration.lean",
       "original_span": {
         "start": 801,
         "end": 1487,
@@ -239,7 +239,7 @@
     {
       "original": "Mathematics.Stability.exact_zero_gain_converges_after_one_step",
       "candidate": "GRWTSK.DifferentialEquationsAndDynamicalSystems.DifferenceEquations.DiscreteEvolution.LinearRecurrences.NaturalAffineBounds.Iteration.exact_zero_gain_converges_after_one_step",
-      "candidate_path": "candidates/attribution-254/DifferentialEquationsAndDynamicalSystems/DifferenceEquations/DiscreteEvolution/LinearRecurrences/NaturalAffineBounds/Iteration.lean",
+      "candidate_path": "GRWTSK/DifferentialEquationsAndDynamicalSystems/DifferenceEquations/DiscreteEvolution/LinearRecurrences/NaturalAffineBounds/Iteration.lean",
       "original_span": {
         "start": 1487,
         "end": 1714,
@@ -265,7 +265,7 @@
     {
       "original": "Mathematics.Stability.ResidualFloorObligation",
       "candidate": "GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.ContractionBoundaries.CertificateObligations.ResidualFloorObligation",
-      "candidate_path": "candidates/attribution-254/Analysis/NonlinearAnalysis/FixedPointTheory/ContractionBoundaries/CertificateObligations.lean",
+      "candidate_path": "GRWTSK/Analysis/NonlinearAnalysis/FixedPointTheory/ContractionBoundaries/CertificateObligations.lean",
       "original_span": {
         "start": 1714,
         "end": 1879,
@@ -281,7 +281,7 @@
   ],
   "outputs": [
     {
-      "path": "candidates/attribution-254/Analysis/NonlinearAnalysis/FixedPointTheory/ContractionBoundaries/CertificateObligations.lean",
+      "path": "GRWTSK/Analysis/NonlinearAnalysis/FixedPointTheory/ContractionBoundaries/CertificateObligations.lean",
       "mode": "100644",
       "namespace": "GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.ContractionBoundaries.CertificateObligations",
       "sha256": "73963429626815207182b1799ed93947693feb9c74d70a857296da558abf6ace",
@@ -408,7 +408,7 @@
       "original_imports_retained": true
     },
     {
-      "path": "candidates/attribution-254/DifferentialEquationsAndDynamicalSystems/DifferenceEquations/DiscreteEvolution/LinearRecurrences/NaturalAffineBounds/Iteration.lean",
+      "path": "GRWTSK/DifferentialEquationsAndDynamicalSystems/DifferenceEquations/DiscreteEvolution/LinearRecurrences/NaturalAffineBounds/Iteration.lean",
       "mode": "100644",
       "namespace": "GRWTSK.DifferentialEquationsAndDynamicalSystems.DifferenceEquations.DiscreteEvolution.LinearRecurrences.NaturalAffineBounds.Iteration",
       "sha256": "e1029455ca03289e813b1cb0236d2a195e3a83284a75791569f89f0a5eaed2aa",
@@ -577,7 +577,13 @@
     "integral_gain_scope_disclaimer_copied_verbatim": true,
     "residual_floor_statement_remains_unproved_Prop": true
   },
-  "candidate_import_root": "candidates/attribution-254",
+  "placement_correction": {
+    "reason": "Owner requires every reviewed Lean module directly under GRWTSK by mathematical subject",
+    "module_search_root": ".",
+    "source_statement_and_proof_bytes": "unchanged",
+    "compilation_run": false
+  },
+  "candidate_import_root": ".",
   "shared_attribution_record": "MATH-ATTRIBUTION-254",
   "approved_attribution": [
     {
