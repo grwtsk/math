@@ -25,7 +25,9 @@ This construction is not a Connes spectral triple and does not claim that the sp
 of an operator is the nontrivial zeta-zero divisor. Dense domains, self-adjointness,
 compact resolvent, bounded-commutator analysis, summability, trace identities, real
 structure, grading, and first-order conditions remain explicitly unavailable or
-outside the present scope. Existence of the root is logically neutral relative to RH.
+outside the present scope. The root statement is proved independently of RH. Its
+logical profile therefore records the immediate necessary direction `RH → RootStatement`,
+not an unavailable reverse direction. No sufficient direction is supplied.
 -/
 
 namespace GRWTSK.RiemannHypothesis.ZetaCommutatorRoot
@@ -164,13 +166,28 @@ def RootStatement : Prop :=
 theorem rootStatement : RootStatement :=
   ⟨coordinate_injective, heightAt_eq_im⟩
 
-/-- Existence and exactness of this algebraic parameter root currently have no proved
-implication to or from canonical RH. -/
-def localProfile : LocalRHProfile RootStatement :=
-  LocalRHProfile.neutral RootStatement
+/-- Every independently proved statement is, in particular, a necessary consequence
+of RH. This implication discards its RH argument; it is not a special zeta theorem. -/
+theorem rootStatement_of_rh (_hrh : _root_.RiemannHypothesis) : RootStatement :=
+  rootStatement
 
-@[simp] theorem localProfile_status : localProfile.status = .neutral :=
+/-- The strongest direction supplied here is necessary, not neutral: the reverse
+implication is already available through the unconditional root theorem. -/
+def localProfile : LocalRHProfile RootStatement :=
+  LocalRHProfile.ofNecessary rootStatement_of_rh
+
+@[simp] theorem localProfile_status : localProfile.status = .necessary :=
   rfl
+
+/-- A sufficient implication from this already proved root statement is exactly as
+strong as RH itself. Packaging the root cannot construct that missing implication. -/
+theorem rootStatement_implies_rh_iff :
+    (RootStatement → _root_.RiemannHypothesis) ↔ _root_.RiemannHypothesis := by
+  constructor
+  · intro h
+    exact h rootStatement
+  · intro hrh _
+    exact hrh
 
 /-- Root chart on the full spectral-parameter carrier. Its explicit anchor rules out a
 zero-subtype vacuity. -/
