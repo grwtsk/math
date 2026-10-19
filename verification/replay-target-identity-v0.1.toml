@@ -1,0 +1,722 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "replay-target-identity-v0.1"
+owner_repository = "grwtsk/math"
+issues = [136, 137, 138]
+root_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+build_target = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "isolated-mathematical-replay-target"
+source_module_path = "GRWTSK/Logic/ProofChecking/ReplayTargetIdentity.lean"
+source_module_blob = "907bb1f003889b543979dd28aeaf1734382f0c9f"
+source_module_sha256 = "d1a36bd57787da2127678e67b2cc1bdd2dba7e3f4e3d8c45e2d98d5ebcff38d3"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+operational_receipt_is_external = true
+public_root_exposure_required = false
+public_root_exposure_currently_absent = true
+baseline_spectral_target_unchanged = true
+baseline_spectral_target_selects_this_module = false
+extra_module_declarations_do_not_expand_claims = true
+
+[provenance]
+reviewed_candidate_revision = "b4eb8e4a26c69c48fe36435aae888586996625d2"
+reviewed_candidate_tree = "20de2bd282b223f048ca77fc63cb67070ba898c7"
+first_integrated_revision = "b8dff2e3e3b0f28f63aea6cadb4de652ef90b613"
+research_review_handoff = "0512a96e-2eec-4023-87af-c20c4f12f846"
+current_execution_binding_is_external = true
+historical_build_requests_transfer = false
+
+[declaration_inventory]
+required_count = 66
+core_count = 39
+fixture_count = 27
+nonempty = true
+duplicate_free = true
+exact_names_selected = true
+exact_owner_module_selected = true
+exact_elaborated_types_available = false
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+canonical_type_printer_bound = false
+source_type_digest_bound = false
+fail_closed_until_exact_types = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+reject_unavailable_audit = true
+declaration_trust_issue = 137
+current_trust_status = "PENDING_NOT_KERNEL_AUDITED"
+
+[[modules]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+path = "GRWTSK/Logic/ProofChecking/ReplayTargetIdentity.lean"
+source_blob = "907bb1f003889b543979dd28aeaf1734382f0c9f"
+source_sha256 = "d1a36bd57787da2127678e67b2cc1bdd2dba7e3f4e3d8c45e2d98d5ebcff38d3"
+required = true
+public_root_exposure = "ABSENT_NOT_REQUIRED_FOR_THIS_ISOLATED_TARGET"
+baseline_target_membership = "ABSENT"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.supportedSchema"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "definition"
+role = "core"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.SourceIdentity"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "structure"
+role = "core"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.Header"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "structure"
+role = "core"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.HeaderMatches"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "definition"
+role = "core"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.matches_self"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "core"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.matching_headers_have_equal_source"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "core"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.reject_unknown_schema"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "core"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.reject_source_field_drift"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "core"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.reject_revision_drift"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "core"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.reject_target_blob_drift"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "core"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.reject_toolchain_drift"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "core"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.reject_dependency_manifest_drift"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "core"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.ModulesCovered"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "definition"
+role = "core"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.modules_cover_themselves"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "core"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.omitted_module_blocks_coverage"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "core"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.root_build_cannot_hide_omission"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "core"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.ModuleTerminalStatus"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "inductive"
+role = "core"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.ModuleTerminalOutcome"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "structure"
+role = "core"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.passingOutcome"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "definition"
+role = "core"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.matchingModuleOutcomes"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "definition"
+role = "core"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.ModulesSucceeded"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "definition"
+role = "core"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.modulesSucceeded_exactly_one_pass"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "core"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.NonvacuousModulesSucceeded"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "definition"
+role = "core"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.nonvacuous_exactly_one_pass"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "core"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.matchingModuleOutcomes_append"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "core"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.modulesSucceeded_append_iff"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "core"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.matching_records_in_both_fragments_block_success"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "core"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.irrelevant_append_preserves_success"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "core"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.modulesSucceeded_append_comm"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "core"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.combineModuleFragments"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "definition"
+role = "core"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.ExactlyOnePassingFragment"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "definition"
+role = "core"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.matchingModuleOutcomes_combine_empty_iff"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "core"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.matchingModuleOutcomes_combine_singleton_iff"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "core"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.modulesSucceeded_combine_iff"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "core"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.combineModuleFragments_eq_flatten"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "core"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.matchingModuleOutcomes_combine_perm"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "core"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.exactlyOnePassingFragment_perm"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "core"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.modulesSucceeded_combine_perm"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "core"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.nonvacuousModulesSucceeded_combine_perm"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "core"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.FragmentFixtures.duplicate_complete_pass_fragments_rejected"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "fixture"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.FragmentFixtures.pass_and_matching_failure_fragments_rejected"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "fixture"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.FragmentFixtures.different_source_fragment_alone_rejected"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "fixture"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.FragmentFixtures.partitioned_two_key_target_succeeds"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "fixture"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.FragmentFixtures.irrelevant_fragment_preserves_left_success"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "fixture"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.FragmentFixtures.empty_inventory_vacuous_but_wrapper_rejected"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "fixture"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.FiniteFragmentFixtures.three_fragment_pass_overlap_rejected"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "fixture"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.FiniteFragmentFixtures.missing_key_across_fragments_rejected"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "fixture"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.FiniteFragmentFixtures.irrelevant_middle_fragment_preserves_success"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "fixture"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.FragmentPermutationFixtures.fragment_membership_does_not_preserve_success"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "fixture"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.Fixtures.exact_header_is_consistent"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "fixture"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.Fixtures.wrong_revision_is_rejected"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "fixture"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.Fixtures.unknown_version_is_rejected"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "fixture"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.Fixtures.root_only_is_not_leaf_coverage"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "fixture"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.Fixtures.one_exact_pass_succeeds"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "fixture"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.Fixtures.empty_required_low_level_is_vacuous"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "fixture"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.Fixtures.duplicate_required_low_level_still_succeeds"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "fixture"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.Fixtures.nonvacuous_one_exact_pass_succeeds"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "fixture"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.Fixtures.nonvacuous_empty_required_rejected"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "fixture"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.Fixtures.nonvacuous_duplicate_required_rejected"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "fixture"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.Fixtures.failed_outcome_is_rejected"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "fixture"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.Fixtures.not_run_outcome_is_rejected"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "fixture"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.Fixtures.unavailable_outcome_is_rejected"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "fixture"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.Fixtures.duplicate_passes_are_rejected"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "fixture"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.Fixtures.conflicting_outcomes_are_rejected"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "fixture"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.Fixtures.wrong_source_identity_is_rejected"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "fixture"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[declarations]]
+name = "GRWTSK.Logic.ProofChecking.ReplayTarget.Fixtures.root_only_terminal_success_is_rejected"
+owner_module = "GRWTSK.Logic.ProofChecking.ReplayTargetIdentity"
+kind = "theorem"
+role = "fixture"
+type_identity_status = "UNAVAILABLE_NOT_RUN"
+trust_status = "PENDING_ISSUE_137"
+
+[[hostile_controls]]
+id = "reject-unknown-schema"
+description = "An unsupported schema spelling cannot be interpreted as the understood replay-target version."
+
+[[hostile_controls]]
+id = "reject-revision-drift"
+description = "A supplied source revision mismatch cannot satisfy exact header identity."
+
+[[hostile_controls]]
+id = "reject-target-blob-drift"
+description = "A supplied target-blob mismatch cannot satisfy exact header identity."
+
+[[hostile_controls]]
+id = "reject-toolchain-drift"
+description = "A supplied toolchain-blob mismatch cannot satisfy exact header identity."
+
+[[hostile_controls]]
+id = "reject-dependency-manifest-drift"
+description = "A supplied dependency-manifest mismatch cannot satisfy exact header identity."
+
+[[hostile_controls]]
+id = "reject-root-only-coverage"
+description = "A successful root assertion cannot hide an omitted required leaf module."
+
+[[hostile_controls]]
+id = "reject-failed-module-result"
+description = "FAILED cannot supply the sole required PASS."
+
+[[hostile_controls]]
+id = "reject-not-run-module-result"
+description = "NOT_RUN cannot supply the sole required PASS."
+
+[[hostile_controls]]
+id = "reject-unavailable-module-result"
+description = "UNAVAILABLE cannot supply the sole required PASS."
+
+[[hostile_controls]]
+id = "reject-duplicate-pass"
+description = "Two matching PASS occurrences cannot be collapsed into one accepted result."
+
+[[hostile_controls]]
+id = "reject-conflicting-results"
+description = "A PASS plus another matching terminal result cannot be accepted by selecting the PASS."
+
+[[hostile_controls]]
+id = "reject-wrong-source-identity"
+description = "A PASS for another supplied SourceIdentity cannot satisfy the required exact key."
+
+[[hostile_controls]]
+id = "reject-empty-required-inventory"
+description = "The nonvacuous target wrapper rejects an empty required-module inventory."
+
+[[hostile_controls]]
+id = "reject-duplicate-required-inventory"
+description = "The nonvacuous target wrapper rejects repeated required-module names."
+
+[[hostile_controls]]
+id = "preserve-fragment-occurrences"
+description = "Fragment concatenation and permutation retain occurrence multiplicity rather than set membership."
+
+[[hostile_controls]]
+id = "reject-membership-as-permutation"
+description = "Equal fragment-value membership cannot replace an occurrence-preserving permutation."
+
+[[hostile_controls]]
+id = "reject-public-root-promotion"
+description = "This isolated target cannot be reported as public-root exposure while GRWTSK.lean omits the module."
+
+[[hostile_controls]]
+id = "reject-baseline-target-promotion"
+description = "This descriptor cannot be reported as acceptance of spectral-descent-v1, which remains byte-unchanged and omits the module."
+
+[[hostile_controls]]
+id = "reject-manifest-as-execution"
+description = "Manifest presence and symbolic fixtures cannot be reported as compiler, kernel, axiom, or receipt evidence."
+
+[[hostile_controls]]
+id = "reject-historical-request-transfer"
+description = "A BUILD_REQUEST bound to an earlier revision cannot be reused for this descriptor or a later source revision."
+
+[[hostile_controls]]
+id = "reject-missing-exact-types"
+description = "Names-only inventory is incomplete for acceptance until exact elaborated types or a sound canonical type identity are supplied."
+
+[[hostile_controls]]
+id = "reject-unavailable-trust-as-empty"
+description = "Missing declaration trust output cannot be represented as an empty accepted axiom set."
+
+[[hostile_controls]]
+id = "reject-extra-scope-promotion"
+description = "Unselected declarations or unrelated passing results cannot expand the accepted claim surface."
+
+[invalidation]
+source_module_blob_change = true
+declaration_inventory_change = true
+declaration_type_identity_change = true
+toolchain_change = true
+dependency_lock_change = true
+trust_policy_change = true
+public_root_expectation_change = true
+hostile_control_change = true
+schema_change = true
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_exact_owner_module = true
+requires_source_blob_match = true
+requires_duplicate_free_declaration_inventory = true
+requires_nonempty_declaration_inventory = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+requires_hostile_controls = true
+requires_declaration_trust_issue_137 = true
+requires_receipt_acceptance_issue_138 = true
+current_descriptor_disposition = "SOURCE_SCOPE_SELECTED_EXACT_TYPES_AND_TRUST_UNAVAILABLE"
+currently_acceptable = false
+
+[nonclaims]
+claims = [
+  "Lean elaboration or successful module build",
+  "kernel trust or accepted transitive axiom closure",
+  "authenticated Git, toolchain, dependency, or receipt identity from supplied strings alone",
+  "public GRWTSK root exposure",
+  "membership in or acceptance of spectral-descent-v1",
+  "complete repository declaration discovery",
+  "external replay receipt acceptance",
+  "worker qualification or F06 release",
+  "Riemann hypothesis or any analytic conjecture"
+]
