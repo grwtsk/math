@@ -8,6 +8,9 @@ open GRWTSK.Logic.PortPureTypeSystem
 
 universe u v u' v'
 
+-- The expression and context fields have independent universes. Their maximum in the
+-- structure's result sort is intentional; identifying them would restrict model alignment.
+set_option linter.checkUnivs false in
 /-- Context-indexed reduction model used to align independently formalized pure type systems. -/
 structure Model where
   Expr : Type u

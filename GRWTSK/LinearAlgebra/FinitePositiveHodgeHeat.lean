@@ -10,19 +10,19 @@ open GRWTSK.LinearAlgebra.FramedFiberPort
 
 universe u
 
-variable {ι : Type u} [Fintype ι]
+variable {ι : Type u}
 
 /-- The standard finite Euclidean pairing in coordinates. -/
-def dot (x y : ι → ℝ) : ℝ :=
+def dot [Fintype ι] (x y : ι → ℝ) : ℝ :=
   ∑ i, x i * y i
 
 /-- The standard finite coordinate pairing is positive semidefinite on the diagonal. -/
-theorem dot_self_nonneg (x : ι → ℝ) : 0 ≤ dot x x := by
+theorem dot_self_nonneg [Fintype ι] (x : ι → ℝ) : 0 ≤ dot x x := by
   unfold dot
   exact Finset.sum_nonneg fun i _ => mul_self_nonneg (x i)
 
 /-- The standard finite coordinate pairing is positive definite. -/
-theorem dot_self_eq_zero_iff (x : ι → ℝ) : dot x x = 0 ↔ x = 0 := by
+theorem dot_self_eq_zero_iff [Fintype ι] (x : ι → ℝ) : dot x x = 0 ↔ x = 0 := by
   unfold dot
   exact
     (Finset.sum_eq_zero_iff_of_nonneg fun i _ => mul_self_nonneg (x i)).trans <| by
@@ -53,7 +53,7 @@ def positiveDiagonalHodge (a : ι → ℝ) :
 
 /-- The selected codifferential is the adjoint of the differential for the standard
 positive pairing. -/
-theorem diagonal_adjoint (a x y : ι → ℝ) :
+theorem diagonal_adjoint [Fintype ι] (a x y : ι → ℝ) :
     dot (diagonal a x) y = dot x (diagonal a y) := by
   unfold dot
   apply Finset.sum_congr rfl
@@ -78,15 +78,15 @@ theorem positiveDiagonalHodge_laplacian1_apply
   ring
 
 /-- The concrete quadratic Hodge energy. -/
-def energy (a x : ι → ℝ) : ℝ :=
+def energy [Fintype ι] (a x : ι → ℝ) : ℝ :=
   dot (diagonal a x) (diagonal a x)
 
 /-- Concrete finite Hodge energy is nonnegative. -/
-theorem energy_nonneg (a x : ι → ℝ) : 0 ≤ energy a x :=
+theorem energy_nonneg [Fintype ι] (a x : ι → ℝ) : 0 ≤ energy a x :=
   dot_self_nonneg _
 
 /-- If every diagonal coefficient is nonzero, the energy is strictly positive away from zero. -/
-theorem energy_eq_zero_iff (a x : ι → ℝ) (ha : ∀ i, a i ≠ 0) :
+theorem energy_eq_zero_iff [Fintype ι] (a x : ι → ℝ) (ha : ∀ i, a i ≠ 0) :
     energy a x = 0 ↔ x = 0 := by
   rw [energy, dot_self_eq_zero_iff]
   constructor
@@ -208,7 +208,7 @@ theorem heat_fixed_of_harmonic
     simp [heat, functionalCalculus, diagonal, hxi]
 
 /-- For nonnegative time, exact finite heat flow contracts the standard squared norm. -/
-theorem heat_contracts
+theorem heat_contracts [Fintype ι]
     (a x : ι → ℝ) {t : ℝ} (ht : 0 ≤ t) :
     dot (heat a t x) (heat a t x) ≤ dot x x := by
   unfold dot
@@ -255,7 +255,7 @@ theorem maskProjector_add_complement (mask : ι → Bool) :
     simp [maskProjector, complementMask, diagonal, h]
 
 /-- Complementary coordinate sectors are orthogonal for the positive pairing. -/
-theorem mask_complement_orthogonal
+theorem mask_complement_orthogonal [Fintype ι]
     (mask : ι → Bool) (x y : ι → ℝ) :
     dot (maskProjector mask x) (maskProjector (complementMask mask) y) = 0 := by
   unfold dot
@@ -270,7 +270,7 @@ theorem maskProjector_delta_comm (a : ι → ℝ) (mask : ι → Bool) :
       (diagonal a).comp (maskProjector mask) := by
   ext x i
   cases h : mask i <;>
-    simp [maskProjector, diagonal, h] <;> ring
+    simp [maskProjector, diagonal, h]
 
 /-- A coordinate mask gives a chain-level Hodge projector for the diagonal model. -/
 def coordinateHodgeProjector (a : ι → ℝ) (mask : ι → Bool) :
@@ -283,7 +283,7 @@ def coordinateHodgeProjector (a : ι → ℝ) (mask : ι → Bool) :
   deltaStar_comm := maskProjector_delta_comm a mask
 
 /-- The positive quadratic energy splits exactly across complementary coordinate sectors. -/
-theorem energy_mask_split (a x : ι → ℝ) (mask : ι → Bool) :
+theorem energy_mask_split [Fintype ι] (a x : ι → ℝ) (mask : ι → Bool) :
     energy a x =
       energy a (maskProjector mask x) +
         energy a (maskProjector (complementMask mask) x) := by
@@ -292,7 +292,7 @@ theorem energy_mask_split (a x : ι → ℝ) (mask : ι → Bool) :
   apply Finset.sum_congr rfl
   intro i _
   cases h : mask i <;>
-    simp [maskProjector, complementMask, diagonal, h] <;> ring
+    simp [maskProjector, complementMask, diagonal, h]
 
 /-- Every coordinate mask commutes with the exact diagonal heat flow. -/
 theorem heat_maskProjector_comm
@@ -301,7 +301,7 @@ theorem heat_maskProjector_comm
       (maskProjector mask).comp (heat a t) := by
   ext x i
   cases h : mask i <;>
-    simp [heat, functionalCalculus, maskProjector, diagonal, h] <;> ring
+    simp [heat, functionalCalculus, maskProjector, diagonal, h]
 
 /-- Heat flow splits through the two complementary coordinate sectors. -/
 theorem heat_mask_split
@@ -311,7 +311,7 @@ theorem heat_mask_split
         heat a t (maskProjector (complementMask mask) x) := by
   funext i
   cases h : mask i <;>
-    simp [heat, functionalCalculus, maskProjector, complementMask, diagonal, h] <;> ring
+    simp [heat, functionalCalculus, maskProjector, complementMask, diagonal, h]
 
 /-- Any diagonal fiber port commutes with the selected diagonal heat functional calculus. -/
 theorem diagonal_heat_comm (a u : ι → ℝ) (t : ℝ) :

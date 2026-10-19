@@ -6,7 +6,7 @@ open GRWTSK.LinearAlgebra.FramedFiberPort
 
 universe u
 
-variable {ι : Type u} [Fintype ι]
+variable {ι : Type u}
 
 /-- The coordinate projector selected by a Boolean mask. -/
 def coordinateProjector (mask : ι → Bool) :
@@ -105,7 +105,7 @@ theorem coordinateProjector_heat_comm
       LinearMap.comp_apply, h]
 
 /-- The positive diagonal Hodge energy splits exactly across the coordinate sectors. -/
-theorem energy_coordinate_split
+theorem energy_coordinate_split [Fintype ι]
     (a x : ι → ℝ) (mask : ι → Bool) :
     energy a x =
       energy a (coordinateProjector mask x) +
