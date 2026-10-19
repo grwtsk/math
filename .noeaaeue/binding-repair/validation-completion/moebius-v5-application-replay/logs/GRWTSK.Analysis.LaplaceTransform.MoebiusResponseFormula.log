@@ -1,6 +1,0 @@
-'EulerP04RH.FEMI.completedPickup_eq_tsum' depends on axioms: [propext, Classical.choice, Quot.sound]
-'EulerP04RH.FEMI.completedPickup_energy' depends on axioms: [propext, Classical.choice, Quot.sound]
-'EulerP04RH.FEMI.atomKernel_laplace' depends on axioms: [propext, Classical.choice, Quot.sound]
-'EulerP04RH.FEMI.laplaceTerm_norm_summable' depends on axioms: [propext, Classical.choice, Quot.sound]
-'EulerP04RH.FEMI.pickupLaplace_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
-'EulerP04RH.FEMI.pickupLaplace_eq_reciprocal' depends on axioms: [propext, Classical.choice, Quot.sound]

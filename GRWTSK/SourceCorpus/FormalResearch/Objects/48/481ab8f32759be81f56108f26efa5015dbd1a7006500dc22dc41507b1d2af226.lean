@@ -1,0 +1,14 @@
+import SourceRawMeanCancellation
+set_option autoImplicit false
+set_option linter.hashCommand false
+#print RH16RawMeanCancellation.rawIndependentMainAt
+#print RH16RawMeanCancellation.rawCoefficient
+#print RH16RawMeanCancellation.rawPrimeFirstDiagonal
+#print RH16RawMeanCancellation.rawPrimeLinearMain
+#print RH16RawMeanCancellation.rawPrimeCorrectedAt
+#print FormalResearch.RiemannHypothesis.SourceCutoffFlux.mainTermAt
+#print FormalResearch.RiemannHypothesis.SourceCutoffFlux.jointAt
+#check FormalResearch.RiemannHypothesis.SourceCompensatedReadout.readoutAt_actual
+#check FormalResearch.RiemannHypothesis.SourceCompensatedReadout.estimate_of_arithmeticReadout_tail
+#check FormalResearch.RiemannHypothesis.SourceSamplingLedger.actual_residual_decomposition
+#check FormalResearch.RiemannHypothesis.SourceDiagonalMainTerm.retainedPrimeDiagonal_main_term_error

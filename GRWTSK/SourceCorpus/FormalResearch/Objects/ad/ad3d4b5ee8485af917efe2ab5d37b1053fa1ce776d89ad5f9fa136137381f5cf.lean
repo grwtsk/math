@@ -1,0 +1,42 @@
+import SourceActualSharpZeroTail
+#check RH16ActualSharpZeroTail.pole_norm_joint_strip_le
+#print axioms RH16ActualSharpZeroTail.pole_norm_joint_strip_le
+#check RH16ActualSharpZeroTail.actual_bump_complete_endpoint_norm_le
+#print axioms RH16ActualSharpZeroTail.actual_bump_complete_endpoint_norm_le
+#check RH16ActualSharpZeroTail.endpointScale
+#print axioms RH16ActualSharpZeroTail.endpointScale
+#check RH16ActualSharpZeroTail.endpointScale_pos
+#print axioms RH16ActualSharpZeroTail.endpointScale_pos
+#check RH16ActualSharpZeroTail.endpointScale_antitone
+#print axioms RH16ActualSharpZeroTail.endpointScale_antitone
+#check RH16ActualSharpZeroTail.actual_bump_endpoint_scale_norm_le
+#print axioms RH16ActualSharpZeroTail.actual_bump_endpoint_scale_norm_le
+#check RH16ActualSharpZeroTail.exp_pair_le_of_abs_le
+#print axioms RH16ActualSharpZeroTail.exp_pair_le_of_abs_le
+#check RH16ActualSharpZeroTail.endpointScale_three_sixty_four_lt
+#print axioms RH16ActualSharpZeroTail.endpointScale_three_sixty_four_lt
+#check RH16ActualSharpZeroTail.actual_bump_strip_high_norm_le
+#print axioms RH16ActualSharpZeroTail.actual_bump_strip_high_norm_le
+#check RH16ActualSharpZeroTail.exp_neg_large_le
+#print axioms RH16ActualSharpZeroTail.exp_neg_large_le
+#check RH16ActualSharpZeroTail.actualInitialPrimeMellin_sharp_strip_norm_le
+#print axioms RH16ActualSharpZeroTail.actualInitialPrimeMellin_sharp_strip_norm_le
+#check RH16ActualSharpZeroTail.actualZeroHeightTail_sharp_norm_bound
+#print axioms RH16ActualSharpZeroTail.actualZeroHeightTail_sharp_norm_bound
+open FormalResearch.RiemannHypothesis
+open SourceActualPrimeBumpDictionary SourceActualZeroTailCount
+open SourceActualZeroTailBudget SourceActualInitialPrimeContour
+open SourceActualBumpMellinLineBudget
+#check actualInitialPrimeMellin_eq_bumpMellinWeight
+#print axioms actualInitialPrimeMellin_eq_bumpMellinWeight
+#check actualZeroSixTail_count_bound
+#print axioms actualZeroSixTail_count_bound
+#print actualZeroHeightTail
+#print actualZeroSixTail
+#print actualInitialPrimeMellin
+#print bumpMellinWeight
+open Lean Elab Command
+run_cmd do
+  let env ← getEnv
+  for mod in env.allImportedModuleNames do
+    logInfo m!"RH16_IMPORT {mod}"

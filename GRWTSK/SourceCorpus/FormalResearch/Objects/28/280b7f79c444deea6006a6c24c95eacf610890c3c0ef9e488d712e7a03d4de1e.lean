@@ -1,0 +1,15 @@
+import FormalResearch.RiemannHypothesis.SourceComparison.CorrelationSecondMoment
+open MeasureTheory
+#check hasCompactSupport_sum
+#check HasCompactSupport.finset_sum
+#check Finset.hasCompactSupport_sum
+#check MeasureTheory.integral_finset_sum
+#check MeasureTheory.Integrable.finset_sum
+#check Continuous.integrable_of_hasCompactSupport
+#check continuous_finset_sum
+#check HasCompactSupport.mul_left
+#check MeasureTheory.integral_integrableOn_Icc
+#check MeasureTheory.integral_eq_integral_Icc_of_support_subset
+#check MeasureTheory.setIntegral_eq_integral_of_forall_compl_eq_zero
+#check MeasureTheory.integral_indicator
+#check MeasureTheory.IntegrableOn

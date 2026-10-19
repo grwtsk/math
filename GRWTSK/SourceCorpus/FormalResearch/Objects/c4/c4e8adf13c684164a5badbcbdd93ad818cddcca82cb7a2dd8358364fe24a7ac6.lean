@@ -1,0 +1,139 @@
+import FormalResearch.RiemannHypothesis.SourcePrimeMomentScale
+
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourcePrimeMomentScale
+
+#check sourceCorrelation_eq_inner
+#print axioms sourceCorrelation_eq_inner
+
+#check correlationScaleDerivative
+#print axioms correlationScaleDerivative
+
+#check sourceCorrelation_hasDerivAt_scale
+#print axioms sourceCorrelation_hasDerivAt_scale
+
+#check sourceCorrelation_contDiffAt_scale
+#print axioms sourceCorrelation_contDiffAt_scale
+
+#check sourceCorrelation_contDiffOn_scale
+#print axioms sourceCorrelation_contDiffOn_scale
+
+#check closedPrimeWeight_zero_above_cutoff
+#print axioms closedPrimeWeight_zero_above_cutoff
+
+#check correlationScaleDerivative_zero_of_lt
+#print axioms correlationScaleDerivative_zero_of_lt
+
+#check correlationScaleDerivative_zero_above_cutoff
+#print axioms correlationScaleDerivative_zero_above_cutoff
+
+#check closedPrimeMomentFixed
+#print axioms closedPrimeMomentFixed
+
+#check firstPrimeMomentFixed
+#print axioms firstPrimeMomentFixed
+
+#check closedPrimeMoment_eq_fixed
+#print axioms closedPrimeMoment_eq_fixed
+
+#check firstPrimeMoment_eq_fixed
+#print axioms firstPrimeMoment_eq_fixed
+
+#check localUpperCutoff
+#print axioms localUpperCutoff
+
+#check closedPrimeMoment_eventually_eq_fixed
+#print axioms closedPrimeMoment_eventually_eq_fixed
+
+#check firstPrimeMoment_eventually_eq_fixed
+#print axioms firstPrimeMoment_eventually_eq_fixed
+
+#check closedPrimeWeightScaleDerivative
+#print axioms closedPrimeWeightScaleDerivative
+
+#check closedPrimeWeight_hasDerivAt
+#print axioms closedPrimeWeight_hasDerivAt
+
+#check closedPrimeWeight_contDiffAt
+#print axioms closedPrimeWeight_contDiffAt
+
+#check closedPrimeWeightScaleDerivative_zero_above_cutoff
+#print axioms closedPrimeWeightScaleDerivative_zero_above_cutoff
+
+#check closedPrimeMomentScaleDerivative
+#print axioms closedPrimeMomentScaleDerivative
+
+#check firstPrimeMomentScaleDerivative
+#print axioms firstPrimeMomentScaleDerivative
+
+#check closedPrimeMomentScaleDerivative_eq_fixed
+#print axioms closedPrimeMomentScaleDerivative_eq_fixed
+
+#check firstPrimeMomentScaleDerivative_eq_fixed
+#print axioms firstPrimeMomentScaleDerivative_eq_fixed
+
+#check closedPrimeMomentFixed_hasDerivAt
+#print axioms closedPrimeMomentFixed_hasDerivAt
+
+#check firstPrimeMomentFixed_hasDerivAt
+#print axioms firstPrimeMomentFixed_hasDerivAt
+
+#check closedPrimeMomentFixed_contDiffAt
+#print axioms closedPrimeMomentFixed_contDiffAt
+
+#check firstPrimeMomentFixed_contDiffAt
+#print axioms firstPrimeMomentFixed_contDiffAt
+
+#check closedPrimeMoment_hasDerivAt
+#print axioms closedPrimeMoment_hasDerivAt
+
+#check firstPrimeMoment_hasDerivAt
+#print axioms firstPrimeMoment_hasDerivAt
+
+#check closedPrimeMoment_contDiffAt
+#print axioms closedPrimeMoment_contDiffAt
+
+#check firstPrimeMoment_contDiffAt
+#print axioms firstPrimeMoment_contDiffAt
+
+#check closedPrimeMoment_contDiffOn
+#print axioms closedPrimeMoment_contDiffOn
+
+#check firstPrimeMoment_contDiffOn
+#print axioms firstPrimeMoment_contDiffOn
+
+#check mertensResidual_eventually_eq_closedPrimeMoment
+#print axioms mertensResidual_eventually_eq_closedPrimeMoment
+
+#check mertensResidual_hasDerivAt
+#print axioms mertensResidual_hasDerivAt
+
+#check mertensResidual_contDiffAt
+#print axioms mertensResidual_contDiffAt
+
+#check mertensResidual_contDiffOn
+#print axioms mertensResidual_contDiffOn
+
+#check correlationScaleDerivative_zero_of_le
+#print axioms correlationScaleDerivative_zero_of_le
+
+#check closedPrimeWeight_zero_at_birth
+#print axioms closedPrimeWeight_zero_at_birth
+
+#check closedPrimeWeightScaleDerivative_zero_at_birth
+#print axioms closedPrimeWeightScaleDerivative_zero_at_birth
+
+#check closedPrimeMoment_deriv
+#print axioms closedPrimeMoment_deriv
+
+#check firstPrimeMoment_deriv
+#print axioms firstPrimeMoment_deriv
+
+#check closedPrimeMomentScaleDerivative_continuousOn
+#print axioms closedPrimeMomentScaleDerivative_continuousOn
+
+#check firstPrimeMomentScaleDerivative_continuousOn
+#print axioms firstPrimeMomentScaleDerivative_continuousOn
+
+#check mertensResidual_deriv
+#print axioms mertensResidual_deriv

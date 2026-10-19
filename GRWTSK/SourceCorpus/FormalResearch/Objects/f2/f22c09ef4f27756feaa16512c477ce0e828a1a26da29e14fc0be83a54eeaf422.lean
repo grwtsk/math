@@ -1,0 +1,14 @@
+import ActualHighLagMixedSignFixtures
+
+open FormalResearch.RiemannHypothesis.ActualHighLagMixedSignFixtures
+
+#check exact_actual_negative_value
+#print axioms exact_actual_negative_value
+#check actual_mixed_atom_is_not_nonnegative
+#print axioms actual_mixed_atom_is_not_nonnegative
+#check positive_correlation_does_not_make_mixed_atom_positive
+#print axioms positive_correlation_does_not_make_mixed_atom_positive
+#check sign_uses_plus_derivative_pairing
+#print axioms sign_uses_plus_derivative_pairing
+#check universal_atom_positivity_is_not_available
+#print axioms universal_atom_positivity_is_not_available

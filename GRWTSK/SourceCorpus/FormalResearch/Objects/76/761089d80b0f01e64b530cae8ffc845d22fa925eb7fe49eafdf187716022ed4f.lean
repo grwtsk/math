@@ -1,0 +1,9 @@
+import SourceSharpLedgerRadius
+#print RH16SharpLedgerRadius.sharpDiagonalCost_antitone
+#print axioms RH16SharpLedgerRadius.sharpDiagonalCost_antitone
+#print RH16SharpLedgerRadius.sharpSamplingLedgerCost_antitone
+#print axioms RH16SharpLedgerRadius.sharpSamplingLedgerCost_antitone
+#print RH16SharpLedgerRadius.sharpSamplingLedgerCost_lt_1729
+#print axioms RH16SharpLedgerRadius.sharpSamplingLedgerCost_lt_1729
+#print RH16SharpLedgerRadius.all_real_lower_with_fixed_ledger_cap
+#print axioms RH16SharpLedgerRadius.all_real_lower_with_fixed_ledger_cap

@@ -1,8 +1,0 @@
-{
-  "schema": "repository-agent-event-v1",
-  "task": "cache-adapter",
-  "event": "integration-request",
-  "actor": "root",
-  "at": "2026-10-15T17:02:39.503501+00:00",
-  "details": "Include exact build/license context in the compact snapshot as a separate context_files section/object references: lean-toolchain, lakefile.toml, lake-manifest.json, LICENSE, NOTICE and selected LICENSES/*.txt needed by included source. Keep Lean source identity universe/counts separate, preserve context byte hashes and restore context in expansion if supported. Pin dependency revisions without claiming cold external dependency reconstruction or caching all .lake artifacts. No execution or network acquisition during snapshot/expand. This strengthens complete scoped reconstruction without treating context as a theorem source role."
-}

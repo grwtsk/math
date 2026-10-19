@@ -1,0 +1,12 @@
+import FormalResearch.RiemannHypothesis.ThetaKernel
+import Mathlib.Analysis.SpecialFunctions.ImproperIntegrals
+import Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus
+open MeasureTheory Set
+#check integrableOn_Ici_iff_integrableOn_Ioi
+#check Real.pow_div_factorial_le_exp
+#check Continuous.stronglyMeasurableAtFilter
+#check Continuous.aestronglyMeasurable
+#check IntegrableOn.union
+#check ContinuousOn.integrableOn_Icc
+#check HasDerivAt.congr_of_eventuallyEq
+#check hasDerivAt_congr_of_eventuallyEq

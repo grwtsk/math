@@ -1,0 +1,90 @@
+import CordTheory.InterpreterExactness
+import CordTheory.ReificationExactness
+import CordTheory.ReflectiveAgents
+import CordTheory.GlobalReflection
+
+/-!
+# Scoped interpreter-exactness axiom audit
+
+This file is the canonical CI inventory for the level, tower, reification, and
+three-surface theorems revised by the interpreter-exactness change. CI requires
+an exact one-to-one match between these declarations and its theorem-specific
+dependency whitelist.
+-/
+
+#print axioms Cord.quotient_interpreter_well_defined
+#print axioms Cord.canonical_behavioral_factorization
+#print axioms Cord.kernel_to_realized_image_bijective
+#print axioms Cord.level_exact_iff_defects_empty
+#print axioms Cord.level_exact_does_not_determine_designated_semantics
+#print axioms Cord.observational_defect_compose
+#print axioms Cord.observational_defect_zero
+#print axioms Cord.AssociativeFragmentExecution.sound_step_summaries_compose
+#print axioms Cord.level_exact_implies_capacity_parity
+#print axioms Cord.EffectiveExact.representative_readback_projects_to_inverse_class
+#print axioms Cord.finite_prefix_exactness_does_not_imply_all_levels
+#print axioms Cord.identity_interpreter_effectively_exact
+#print axioms Cord.capacity_parity_does_not_imply_level_exact
+#print axioms Cord.authorized_kernel_agreement_iff_injective
+#print axioms Cord.coverage_iff_omission_defect_empty
+#print axioms Cord.totality_iff_undefined_defect_empty
+#print axioms Cord.successor_injective_not_surjective
+#print axioms Cord.halving_surjective_not_injective
+#print axioms Cord.even_domain_bijective_but_partial
+#print axioms Cord.constant_map_neither
+#print axioms Cord.bottom_totalization_does_not_remove_undefinedness
+
+#print axioms Cord.ReflectiveEvaluatorTower.eval_quote
+#print axioms Cord.ReflectiveEvaluatorTower.quote_injective
+#print axioms Cord.ExactReflectiveEvaluatorTower.levelwise_exact
+#print axioms Cord.ExactReflectiveEvaluatorTower.levelwise_effectively_exact
+#print axioms Cord.ExactReflectiveEvaluatorTower.quotation_identity_stable
+#print axioms Cord.ExactReflectiveEvaluatorTower.semantic_lift_identity_stable
+#print axioms Cord.ExactReflectiveEvaluatorTower.interpretation_square_commutes
+#print axioms Cord.ExactReflectiveEvaluatorTower.represented_interpreter_realizes_designated
+#print axioms Cord.ExactReflectiveEvaluatorTower.grade_policy_exact
+#print axioms Cord.ExactReflectiveEvaluatorTower.blocking_residual_frontier_empty
+#print axioms Cord.ExactReflectiveEvaluatorTower.bounded_prefix_coherent
+#print axioms Cord.ExactReflectiveEvaluatorTower.all_levels_coherent
+#print axioms Cord.FiniteMetaSupportCertificate.active_iff_not_default
+
+#print axioms Cord.Quotation.quotation_preserves_form
+#print axioms Cord.DataRefinement.refinement_preserves_operation
+#print axioms Cord.ReificationReference.rho_output_reifies
+#print axioms Cord.ReificationReference.dereference_after_reification
+#print axioms Cord.ReificationReference.reification_after_dereference
+#print axioms Cord.ReificationReference.reference_exact_iff_defects_empty
+#print axioms Cord.ReificationReference.reference_exactness_implies_capacity_parity
+#print axioms Cord.CausallyExactReification.causal_exactness_implies_reference_exactness
+#print axioms Cord.CausallyExactReification.causal_exactness_implies_capacity_parity
+#print axioms Cord.static_reference_exact_does_not_imply_causal_coherence
+#print axioms Cord.RelationshipOccurrenceReification.role_reconstruction
+#print axioms Cord.StatementReification.statement_reification_does_not_imply_assertion
+#print axioms Cord.ExactReflectiveReificationTower.exact_at
+#print axioms Cord.ExactReflectiveReificationTower.all_levels_exact
+#print axioms Cord.ExactReflectiveReificationTower.quotient_reify_bijective
+#print axioms Cord.ExactReflectiveReificationTower.quotient_reification_naturality
+#print axioms Cord.ExactReflectiveReificationTower.level_capacity_parity
+#print axioms Cord.ExactReflectiveReificationTower.all_levels_capacity_parity
+#print axioms Cord.ExactReflectiveReificationTower.all_levels_exact_of_induction
+
+#print axioms Cord.ArtifactStratum.card_all
+#print axioms Cord.DevelopmentSurface.card_all
+#print axioms Cord.DevelopmentSurface.specification_in_equilibrium
+#print axioms Cord.EquilibriumSurfaceRole.specification_is_development
+#print axioms Cord.EquilibriumSurfaceRole.formal_projection_is_not_development
+#print axioms Cord.EquilibriumSurfaceRole.support_is_not_development
+#print axioms Cord.no_direct_ontology_to_source_equilibrium
+#print axioms Cord.ontology_to_source_requires_specification
+#print axioms Cord.CordThreeSurfaceEquilibriumTower.three_surface_exactness
+#print axioms Cord.CordThreeSurfaceEquilibriumTower.three_surface_effective_exactness
+#print axioms Cord.CordThreeSurfaceEquilibriumTower.three_surface_grade_preservation
+#print axioms Cord.CordThreeSurfaceEquilibriumTower.three_surface_naturality
+#print axioms Cord.CordThreeSurfaceEquilibriumTower.three_surface_realization
+#print axioms Cord.CordThreeSurfaceEquilibriumTower.three_surface_raw_regeneration_sections
+#print axioms Cord.CordThreeSurfaceEquilibriumTower.three_surface_no_blocking_residuals
+#print axioms Cord.CordThreeSurfaceEquilibriumTower.all_level_three_surface_obligations
+#print axioms Cord.EquilibriumMonitoringEpisode.confirmed_full_requires_two_identical_full_assessments
+#print axioms Cord.EquilibriumMonitoringEpisode.finite_current_only_process_local
+#print axioms Cord.EquilibriumMonitoringEpisode.monitoring_is_not_an_effect_or_authority
+#print axioms Cord.EquilibriumMonitoringEpisode.repair_handoff_is_candidate_only_ordinary_entry

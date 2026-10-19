@@ -1,0 +1,9 @@
+import scratch.common_mean_stieltjes_20261004.CountErrorEnvelope
+#check CommonMeanStieltjes.loglog_tangent_upper
+#print axioms CommonMeanStieltjes.loglog_tangent_upper
+#check CommonMeanStieltjes.corrected_count_error_tangent_upper
+#print axioms CommonMeanStieltjes.corrected_count_error_tangent_upper
+#check CommonMeanStieltjes.corrected_count_upper_of_external
+#print axioms CommonMeanStieltjes.corrected_count_upper_of_external
+#check CommonMeanStieltjes.corrected_count_endpoint_lower_of_external
+#print axioms CommonMeanStieltjes.corrected_count_endpoint_lower_of_external

@@ -1,0 +1,8 @@
+import ScopeFixtures
+
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourceCriticalRemovedScopeFixtures
+
+#print endpoint_one_required
+#print complete_drift_required
+#print actual_removed_error_negative_difference

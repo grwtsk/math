@@ -1,0 +1,7 @@
+import FormalResearch.RiemannHypothesis.SourceDualTransport
+#check FormalResearch.RiemannHypothesis.SourceDualTransport.angle_loop_inverse
+#print axioms FormalResearch.RiemannHypothesis.SourceDualTransport.angle_loop_inverse
+#check FormalResearch.RiemannHypothesis.SourceDualTransport.actual_site_loop_gauge
+#print axioms FormalResearch.RiemannHypothesis.SourceDualTransport.actual_site_loop_gauge
+#check FormalResearch.RiemannHypothesis.SourceDualTransport.actual_chart_loop_identity
+#print axioms FormalResearch.RiemannHypothesis.SourceDualTransport.actual_chart_loop_identity

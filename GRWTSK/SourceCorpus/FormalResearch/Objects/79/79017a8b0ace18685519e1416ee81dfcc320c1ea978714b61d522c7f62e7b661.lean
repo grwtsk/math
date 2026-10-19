@@ -1,0 +1,17 @@
+import SourceActualXiConditionalLaplace
+set_option autoImplicit false
+open FormalResearch.RiemannHypothesis.SourceActualXiConditionalLaplace
+#print actualXiAbsoluteCumulative
+#print actualXiConditionalLaplaceBudget
+#print actualXiAbsoluteCumulative_at_lower
+#print actualXiAbsoluteCumulative_nonneg
+#print actualXiAbsoluteCumulative_absolutelyContinuous
+#print actualXiAbsoluteCumulative_ae_hasDerivAt
+#print actualXiLaplace_finite_abel
+#print actualXiAbsoluteCumulative_le_future_envelope
+#print actualXiCumulativeLaplace_integrableOn
+#print actualXiCumulativeLaplace_tendsto_zero
+#print actualXiLaplace_integrableOn_of_future_average
+#print actualXiLaplace_integral_norm_eq
+#print actualXiLaplace_integral_norm_le
+#print actualXiLaplace_norm_le

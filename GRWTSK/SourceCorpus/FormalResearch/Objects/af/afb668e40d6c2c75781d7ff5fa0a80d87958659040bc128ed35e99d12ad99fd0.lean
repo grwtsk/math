@@ -1,0 +1,18 @@
+import SourceCurvatureFollowthrough
+set_option linter.hashCommand false
+namespace RH16CurvatureFollowthrough
+#print remaining_lower_of_actual_finite_row_five
+#print axioms remaining_lower_of_actual_finite_row_five
+#print estimate_of_actual_finite_row_five
+#print axioms estimate_of_actual_finite_row_five
+#print signed_pairing_eq_actual_finite_row
+#print axioms signed_pairing_eq_actual_finite_row
+#print cesaro_growth_of_global_first_primitive
+#print axioms cesaro_growth_of_global_first_primitive
+#print remaining_lower_of_global_first_primitive_five
+#print axioms remaining_lower_of_global_first_primitive_five
+#print estimate_of_global_first_primitive_five
+#print axioms estimate_of_global_first_primitive_five
+#print estimate_of_actual_finite_signed_pairing
+#print axioms estimate_of_actual_finite_signed_pairing
+end RH16CurvatureFollowthrough

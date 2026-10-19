@@ -1,8 +1,0 @@
-/Users/local/Desktop/math/.noeaaeue/.local/prefix-direct-lookup-replay/replay-g1wzpkhw/source/GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixDirectLookupMissingReference.lean:21:12: error: Application type mismatch: The argument
-  unused_slot_bound
-has type
-  2 < (↑↑initial).dictionary.length
-but is expected to have type
-  (11, 2) ∈ (↑↑initial).references
-in the application
-  transportSlotAt_eq_directLookup_of_reference (SingleObj.star Bool) initial actions (11, 2) unused_slot_bound

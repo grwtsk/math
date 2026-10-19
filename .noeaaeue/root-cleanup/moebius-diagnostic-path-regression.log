@@ -1,6 +1,0 @@
-test_root_asset_policy_preserves_pins_and_subject_asset_binding (test_moebius_response_checker.CheckerControls.test_root_asset_policy_preserves_pins_and_subject_asset_binding) ... ok
-
-----------------------------------------------------------------------
-Ran 1 test in 0.062s
-
-OK

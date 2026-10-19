@@ -1,0 +1,10 @@
+import SourceActualPositiveCutoffFlux
+
+open FormalResearch.RiemannHypothesis.SourceActualPositiveCutoffFlux
+
+#print beta_at_adjacent_eq_moebius
+#print jointFlux_eq_log_of_adjacent_coefficients_zero
+#print jointAt_succ_eq_log_of_adjacent_coefficients_zero
+#print jointFlux_twelve_eq_log
+#print jointFlux_twelve_pos
+#print jointAt_twelve_increases

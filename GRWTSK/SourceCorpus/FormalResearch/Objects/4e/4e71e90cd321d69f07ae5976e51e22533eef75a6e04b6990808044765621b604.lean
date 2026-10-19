@@ -1,0 +1,40 @@
+import RestrictedLowTimeWorkFixtures
+
+open FormalResearch.RiemannHypothesis.RestrictedLowTimeWorkFixtures
+
+#check high_time_endpoint_both_sectors
+#print axioms high_time_endpoint_both_sectors
+#check high_time_after_endpoint_both_sectors
+#print axioms high_time_after_endpoint_both_sectors
+#check left_strip_excludes_new_edge
+#print axioms left_strip_excludes_new_edge
+#check strip_exact_spatial_carrier
+#print axioms strip_exact_spatial_carrier
+#check nonzero_strip_atom_forces_low_time
+#print axioms nonzero_strip_atom_forces_low_time
+#check literal_density_low_time_on_strip
+#print axioms literal_density_low_time_on_strip
+#check empty_spatial_restriction
+#print axioms empty_spatial_restriction
+#check assigned_log_zero_does_not_recover_endpoint
+#print axioms assigned_log_zero_does_not_recover_endpoint
+#check literal_centered_prefix_budget
+#print axioms literal_centered_prefix_budget
+#check low_time_mass_at_one
+#print axioms low_time_mass_at_one
+#check actual_low_time_cutoff_compensation
+#print axioms actual_low_time_cutoff_compensation
+#check ordinary_sector_individual_region
+#print axioms ordinary_sector_individual_region
+#check derivative_sector_individual_region
+#print axioms derivative_sector_individual_region
+#check mixed_sector_individual_region
+#print axioms mixed_sector_individual_region
+#check actual_spatial_strip_budget
+#print axioms actual_spatial_strip_budget
+#check whole_cancellation_not_selected_bound
+#print axioms whole_cancellation_not_selected_bound
+#check literal_surplus_reconstruction
+#print axioms literal_surplus_reconstruction
+#check actual_eventual_obligation_equivalence
+#print axioms actual_eventual_obligation_equivalence

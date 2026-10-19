@@ -1,0 +1,41 @@
+import SourceActualComplexEndpointAsymptotic
+set_option linter.style.header false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.rawOnError false
+set_option pp.fullNames true
+open FormalResearch.RiemannHypothesis.SourceActualComplexEndpointAsymptotic
+#check actualEndpointExtension
+#print axioms actualEndpointExtension
+#check actualComplexEndpointIntegrand
+#print axioms actualComplexEndpointIntegrand
+#check actualLeadingComplexCoefficient
+#print axioms actualLeadingComplexCoefficient
+#check actualEndpointMajorant_integrable
+#print axioms actualEndpointMajorant_integrable
+#check actualComplexEndpointIntegrand_norm_le
+#print axioms actualComplexEndpointIntegrand_norm_le
+#check actualComplexEndpointIntegrand_aestronglyMeasurable
+#print axioms actualComplexEndpointIntegrand_aestronglyMeasurable
+#check actualComplexEndpointIntegrand_integrable
+#print axioms actualComplexEndpointIntegrand_integrable
+#check actualComplexEndpointIntegrand_tendsto
+#print axioms actualComplexEndpointIntegrand_tendsto
+#check actualLeadingComplexCoefficient_integrable
+#print axioms actualLeadingComplexCoefficient_integrable
+#check actualComplexEndpoint_integral_tendsto
+#print axioms actualComplexEndpoint_integral_tendsto
+#check actualSourceComplexTransform
+#print axioms actualSourceComplexTransform
+#check actualSourceComplexTransform_intervalIntegrable
+#print axioms actualSourceComplexTransform_intervalIntegrable
+#check actualComplexEndpoint_integral_eq_interval
+#print axioms actualComplexEndpoint_integral_eq_interval
+#check actualSourceComplexTransform_normalized_eq_endpoint
+#print axioms actualSourceComplexTransform_normalized_eq_endpoint
+#check actualSourceComplexTransform_normalized_tendsto
+#print axioms actualSourceComplexTransform_normalized_tendsto

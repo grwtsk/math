@@ -1,5 +1,0 @@
-GRWTSK/Analysis/Fourier/Checks/Positive/LargerSliceAntiConcentration.lean:84:75: error: unsolved goals
-⊢ {R ∈ {∅} | ∑ x ∈ R, x = 0}.card = 1
-GRWTSK/Analysis/Fourier/Checks/Positive/LargerSliceAntiConcentration.lean:102:45: error: unsolved goals
-hspace : Finset.powersetCard 2 smallPacket = {smallPacket}
-⊢ {R ∈ {{0, 1}} | ∑ x ∈ R, x = 1}.card = 1

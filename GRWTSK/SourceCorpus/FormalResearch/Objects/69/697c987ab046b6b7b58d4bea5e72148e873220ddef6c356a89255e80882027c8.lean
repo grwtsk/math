@@ -1,0 +1,5 @@
+import SourceTriangularFrameBand
+namespace FormalResearch.RiemannHypothesis.SourceTriangularFrameBand
+#check @attenuated_near_diagonal_lower
+#print axioms attenuated_near_diagonal_lower
+end FormalResearch.RiemannHypothesis.SourceTriangularFrameBand

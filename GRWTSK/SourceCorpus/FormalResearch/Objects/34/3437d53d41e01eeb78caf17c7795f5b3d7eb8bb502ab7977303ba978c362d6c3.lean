@@ -1,0 +1,12 @@
+import FormalResearch
+set_option pp.fullNames true
+#print Zeta23.Cheb.sum_vonMangoldt_le
+#print axioms Zeta23.Cheb.sum_vonMangoldt_le
+#print ArithmeticFunction.coe_moebius_mul_coe_zeta
+#print axioms ArithmeticFunction.coe_moebius_mul_coe_zeta
+#print ArithmeticFunction.vonMangoldt_mul_zeta
+#print axioms ArithmeticFunction.vonMangoldt_mul_zeta
+#print ArithmeticFunction.moebius_mul_log_eq_vonMangoldt
+#print axioms ArithmeticFunction.moebius_mul_log_eq_vonMangoldt
+#print FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateActualSourceKernelBound.sourceMobiusKernel_abs_le
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateActualSourceKernelBound.sourceMobiusKernel_abs_le

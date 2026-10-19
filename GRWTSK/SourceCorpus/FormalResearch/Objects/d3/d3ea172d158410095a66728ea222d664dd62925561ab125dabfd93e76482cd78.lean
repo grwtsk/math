@@ -1,0 +1,12 @@
+import FormalResearch.RiemannHypothesis.KQHArithmeticCompression
+set_option pp.universes true
+set_option pp.proofs false
+set_option pp.all true
+#print FormalResearch.RiemannHypothesis.KQHArithmeticCompression.overlapProfile_ge_middle
+#print axioms FormalResearch.RiemannHypothesis.KQHArithmeticCompression.overlapProfile_ge_middle
+#print FormalResearch.RiemannHypothesis.KQHArithmeticCompression.bumpCompression00_lower
+#print axioms FormalResearch.RiemannHypothesis.KQHArithmeticCompression.bumpCompression00_lower
+#print FormalResearch.RiemannHypothesis.KQHArithmeticCompression.bumpCompression00_unbounded
+#print axioms FormalResearch.RiemannHypothesis.KQHArithmeticCompression.bumpCompression00_unbounded
+#print FormalResearch.RiemannHypothesis.KQHArithmeticCompression.rankPenalty_lower
+#print axioms FormalResearch.RiemannHypothesis.KQHArithmeticCompression.rankPenalty_lower

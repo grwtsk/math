@@ -1,0 +1,40 @@
+import FormalResearch.RiemannHypothesis.SourceHigherPrimePowerCoefficients
+
+set_option linter.hashCommand false
+
+open FormalResearch.RiemannHypothesis.SourceHigherPrimePowerCoefficients
+
+#print HigherPrimePowerIndex
+#print higherAtomExponent
+#print higherAtomNatural
+#print primeRatio
+#print higherAtomWeight
+#print higherAtomShift
+#print higherAtomExponent_ge_three
+#print higherAtomExponent_ne_zero
+#print higherAtomNatural_ge_two
+#print higherAtomNatural_injective
+#print primeRatio_pos
+#print primeRatio_nonneg
+#print primeRatio_le_three_quarters
+#print primeRatio_lt_one
+#print higherAtomWeight_pos
+#print higherAtomWeight_nonneg
+#print higherAtomShift_pos
+#print higherAtomWeight_eq_mangoldtCoefficient
+#print higherAtomShift_eq_log
+#print primeHigherMass
+#print prime_higherAtomWeight_hasSum
+#print prime_higherAtomWeight_summable
+#print primeHigherMass_nonneg
+#print primeHigherMass_le_pseries
+#print primePSeries_summable
+#print primeHigherMass_summable
+#print higherAtomWeight_summable
+#print higherBaseline
+#print higherBaseline_eq_primeMass
+#print higherBaseline_nonneg
+#print higher_two_cube_weight_pos
+#print higherBaseline_pos
+#print higherBaseline_le_pseries
+#print higherBaseline_le_budget

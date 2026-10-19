@@ -1,0 +1,7 @@
+import scratch.common_mean_stieltjes_20261004.KernelSeries
+set_option pp.universes true
+set_option pp.fullNames true
+#print CommonMeanStieltjes.nonnegative_kernel_series_integrable
+#print axioms CommonMeanStieltjes.nonnegative_kernel_series_integrable
+#print CommonMeanStieltjes.nonnegative_kernel_series_integral
+#print axioms CommonMeanStieltjes.nonnegative_kernel_series_integral

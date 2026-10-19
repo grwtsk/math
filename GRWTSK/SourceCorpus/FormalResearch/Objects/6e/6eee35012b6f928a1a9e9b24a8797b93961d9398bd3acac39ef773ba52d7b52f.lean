@@ -1,0 +1,20 @@
+import Mathlib.Analysis.Matrix.Spectrum
+import Mathlib.LinearAlgebra.QuadraticForm.Signature
+import Mathlib.LinearAlgebra.Complex.Module
+
+#check LinearEquiv.piCongrRight
+#check LinearEquiv.piProdEquiv
+#check LinearEquiv.sumPiEquivProdPi
+#check Complex.equivRealProdLm
+#check Equiv.sumSubtypeDistrib
+#check Set.ncard_eq_toFinset_card
+#check Fintype.card_sum
+#check Set.ncard_coe_Finset
+#check Set.ncard_eq_toFinset_card
+#check Nat.card_congr
+#check Nat.card_eq_fintype_card
+#check Set.ncard_eq_toFinset_card
+#check QuadraticForm.sigPos_weightedSumSquares
+#check QuadraticForm.sigNeg_weightedSumSquares
+#check QuadraticForm.finrank_radical_of_equiv_weightedSumSquares
+#check QuadraticMap.isometryEquivComp

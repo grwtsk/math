@@ -1,0 +1,26 @@
+import FormalResearch.RiemannHypothesis.GevreyPolynomial
+
+#print FormalResearch.RiemannHypothesis.GevreyPolynomial.sourceBump_contDiff
+#print axioms FormalResearch.RiemannHypothesis.GevreyPolynomial.sourceBump_contDiff
+
+#print FormalResearch.RiemannHypothesis.GevreyPolynomial.sourceBump_square_integral
+#print axioms FormalResearch.RiemannHypothesis.GevreyPolynomial.sourceBump_square_integral
+
+#print FormalResearch.RiemannHypothesis.GevreyPolynomial.sourceBump_deriv_square_integral
+#print axioms FormalResearch.RiemannHypothesis.GevreyPolynomial.sourceBump_deriv_square_integral
+
+#print FormalResearch.RiemannHypothesis.GevreyPolynomial.sourceBump_second_square_integral
+#print axioms FormalResearch.RiemannHypothesis.GevreyPolynomial.sourceBump_second_square_integral
+
+#print FormalResearch.RiemannHypothesis.GevreyPolynomial.second_scaledBump
+#print axioms FormalResearch.RiemannHypothesis.GevreyPolynomial.second_scaledBump
+
+#print FormalResearch.RiemannHypothesis.GevreyPolynomial.normalization_sourceBump_eq
+#print axioms FormalResearch.RiemannHypothesis.GevreyPolynomial.normalization_sourceBump_eq
+
+#print FormalResearch.RiemannHypothesis.GevreyPolynomial.dilationOperator_sourceBump_eq
+#print axioms FormalResearch.RiemannHypothesis.GevreyPolynomial.dilationOperator_sourceBump_eq
+
+#print FormalResearch.RiemannHypothesis.GevreyPolynomial.normalizedOperator_sourceBump_eq
+#print axioms FormalResearch.RiemannHypothesis.GevreyPolynomial.normalizedOperator_sourceBump_eq
+

@@ -1,0 +1,12 @@
+import Mathlib.Analysis.Fourier.Inversion
+#check integral_ofReal
+#check Complex.integral_ofReal
+#check MeasureTheory.integral_ofReal
+#check Complex.ofRealCLM.integral_comp_comm
+#check MeasureTheory.integrable_comp_mul_left_iff
+#check MeasureTheory.Integrable.comp_mul_left
+#check Real.fourier_zero
+#check Real.fourierInv_zero
+#check Real.fourier_real_eq_integral_exp_smul
+#check MeasureTheory.integral_neg_eq_self
+#check MeasureTheory.integral_conj

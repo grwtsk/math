@@ -1,7 +1,0 @@
-'ASBNP04.FiniteProduct.cascade_eq_signedExpansion' depends on axioms: [propext, Classical.choice, Quot.sound]
-'ASBNP04.FiniteProduct.cascade_order_independent' depends on axioms: [propext, Classical.choice, Quot.sound]
-'ASBNP04.FiniteProduct.moebius_primeProduct' depends on axioms: [propext, Classical.choice, Quot.sound]
-'ASBNP04.FiniteProduct.completed_pickup_identification' depends on axioms: [propext, Classical.choice, Quot.sound]
-'ASBNP04.FiniteProduct.restrict_cascade' depends on axioms: [propext, Classical.choice, Quot.sound]
-'ASBNP04.FiniteProduct.primeState_block_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
-'ASBNP04.FiniteProduct.block_energy_exact' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,8 @@
+import ActualSamplingConstant
+set_option autoImplicit false
+set_option linter.style.longLine false
+#print ContinuousResearch.ActualSamplingConstant.coefficientWeight_zero_unit_integral
+#print ContinuousResearch.ActualSamplingConstant.coefficientWeight_zero_split
+#print ContinuousResearch.ActualSamplingConstant.riemannZeta_half_real_euler
+#print ContinuousResearch.ActualSamplingConstant.real_euler_integral_eq
+#print ContinuousResearch.ActualSamplingConstant.samplingAlpha0_eq_riemannZeta_half_re

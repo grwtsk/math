@@ -1,0 +1,7 @@
+import SourceCriticalCurvaturePhase
+
+open FormalResearch.RiemannHypothesis.SourceCriticalCurvaturePhase
+
+#check pairedTailTest_second_deriv_eq_neg_of_deriv_pos
+#check pairedTailTest_second_deriv_eq_neg_mass_mul_of_deriv_neg
+#check criticalPrimeTest_second_deriv_eq_correlation

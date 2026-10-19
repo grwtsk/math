@@ -1,0 +1,5 @@
+import SourceSharpBalancedFirstPrimeHead
+#print RH16SharpBalancedFirstPrimeHead.sharpBalancedHeadCost
+#print axioms RH16SharpBalancedFirstPrimeHead.sharpBalancedHeadCost
+#print RH16SharpBalancedFirstPrimeHead.balancedFirstPrimeHead_abs_le_sharp
+#print axioms RH16SharpBalancedFirstPrimeHead.balancedFirstPrimeHead_abs_le_sharp

@@ -1,5 +1,0 @@
-'PPNCP04.Plancherel.integralFourier_eq_l2_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
-'PPNCP04.Plancherel.rawFourier_parseval' depends on axioms: [propext, Classical.choice, Quot.sound]
-'PPNCP04.Plancherel.actualFourierReductionObligation' depends on axioms: [propext, Classical.choice, Quot.sound]
-'PPNCP04.Plancherel.actual_broad_narrow_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
-'PPNCP04.Plancherel.actual_narrow_return' depends on axioms: [propext, Classical.choice, Quot.sound]

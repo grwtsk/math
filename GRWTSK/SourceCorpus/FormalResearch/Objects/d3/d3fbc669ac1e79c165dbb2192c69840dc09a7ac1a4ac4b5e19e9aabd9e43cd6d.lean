@@ -1,0 +1,9 @@
+import Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral
+import Mathlib.Analysis.Calculus.ParametricIntegral
+#check Complex.analyticAt_exp
+#check Complex.differentiable_exp
+#check Differentiable.analyticAt
+#check AnalyticAt.cexp
+#check AnalyticAt.comp
+#check Filter.Eventually.filter_mono
+#check tendsto_nhdsWithin_iff

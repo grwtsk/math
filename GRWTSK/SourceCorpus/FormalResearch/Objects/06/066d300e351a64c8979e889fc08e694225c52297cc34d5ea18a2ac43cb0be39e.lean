@@ -1,0 +1,127 @@
+import SourceUpperBoundaryEvent
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourceUpperBoundaryEvent
+#check
+  sourceL2_eq_originalSourceL2
+#print axioms
+  sourceL2_eq_originalSourceL2
+#check
+  sourceKernel_upper_right_of_new_products_zero
+#print axioms
+  sourceKernel_upper_right_of_new_products_zero
+#check
+  sourceKernel_upper_left_of_new_products_zero
+#print axioms
+  sourceKernel_upper_left_of_new_products_zero
+#check
+  sourceKernel_upper_corner_of_new_products_zero
+#print axioms
+  sourceKernel_upper_corner_of_new_products_zero
+#check
+  rectangle_upper_succ_of_new_products_zero
+#print axioms
+  rectangle_upper_succ_of_new_products_zero
+#check
+  diagonal_upper_succ_of_new_products_zero
+#print axioms
+  diagonal_upper_succ_of_new_products_zero
+#check
+  offDiagonal_upper_succ_of_new_products_zero
+#print axioms
+  offDiagonal_upper_succ_of_new_products_zero
+#check
+  mainTermAt_upper_succ_of_new_products_zero
+#print axioms
+  mainTermAt_upper_succ_of_new_products_zero
+#check
+  centeredDiagonalAt_upper_succ_of_new_products_zero
+#print axioms
+  centeredDiagonalAt_upper_succ_of_new_products_zero
+#check
+  jointAt_upper_succ_of_new_products_zero
+#print axioms
+  jointAt_upper_succ_of_new_products_zero
+#check
+  compensationAt_upper_succ_of_new_products_zero
+#print axioms
+  compensationAt_upper_succ_of_new_products_zero
+#check
+  readoutAt_upper_succ_of_new_products_zero
+#print axioms
+  readoutAt_upper_succ_of_new_products_zero
+#check
+  new_products_zero_of_product_cutoff
+#print axioms
+  new_products_zero_of_product_cutoff
+#check
+  readoutAt_upper_succ_of_product_cutoff
+#print axioms
+  readoutAt_upper_succ_of_product_cutoff
+#check
+  actual_upper_pred_new_products_zero
+#print axioms
+  actual_upper_pred_new_products_zero
+#check
+  readoutAt_actual_upper_pred
+#print axioms
+  readoutAt_actual_upper_pred
+#check
+  arithmeticReadout_eq_upper_pred
+#print axioms
+  arithmeticReadout_eq_upper_pred
+#check
+  mangoldtAt_upper_succ_sub
+#print axioms
+  mangoldtAt_upper_succ_sub
+#check
+  boundaryScale
+#print axioms
+  boundaryScale
+#check
+  boundaryScale_one_le
+#print axioms
+  boundaryScale_one_le
+#check
+  boundaryScale_lt_four_thirds
+#print axioms
+  boundaryScale_lt_four_thirds
+#check
+  boundaryScale_vaughanCutoff
+#print axioms
+  boundaryScale_vaughanCutoff
+#check
+  boundaryScale_sourceKernelCutoff
+#print axioms
+  boundaryScale_sourceKernelCutoff
+#check
+  boundaryScale_not_old_support_complete
+#print axioms
+  boundaryScale_not_old_support_complete
+#check
+  boundaryScale_new_products_zero
+#print axioms
+  boundaryScale_new_products_zero
+#check
+  boundaryScale_readout_ten_eleven
+#print axioms
+  boundaryScale_readout_ten_eleven
+#check
+  centeredDiagonalAt_one_eq_zero
+#print axioms
+  centeredDiagonalAt_one_eq_zero
+#check
+  boundaryScale_centered_diagonals_zero
+#print axioms
+  boundaryScale_centered_diagonals_zero
+#check
+  boundaryScale_mangoldt_jump_norm
+#print axioms
+  boundaryScale_mangoldt_jump_norm
+#check
+  boundaryScale_mangoldt_jump_norm_pos
+#print axioms
+  boundaryScale_mangoldt_jump_norm_pos
+#check
+  boundaryScale_raw_state_ne
+#print axioms
+  boundaryScale_raw_state_ne

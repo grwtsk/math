@@ -1,0 +1,10 @@
+import SourceTriangularSignObstruction
+namespace FormalResearch.RiemannHypothesis.SourceTriangularSignObstruction
+open FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+#check @attenuation_preserves_negative
+#print axioms attenuation_preserves_negative
+#check @no_real_squared_kernel
+#print axioms no_real_squared_kernel
+#print CorrelationAssembly.UniformLowerBound
+#print CorrelationAssembly.EstimateObligation
+end FormalResearch.RiemannHypothesis.SourceTriangularSignObstruction

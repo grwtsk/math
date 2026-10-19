@@ -1,0 +1,9 @@
+import SourceJointWorkConsumer
+open FormalResearch.RiemannHypothesis.SourceJointWorkConsumer
+set_option pp.fullNames false
+#print compensatedJointWork
+#print compensatedJointWork_eq_strictColumnInterior
+#print strictColumnInterior_pointwise_upper_transfers_three
+#print residual_upper_of_compensatedJointWork_upper
+#print residual_tail_of_compensatedJointWork_tail
+#print estimate_of_compensatedJointWork_tail

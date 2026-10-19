@@ -1,0 +1,164 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "portfiber-holomorphy-core-v0.6"
+owner_repository = "grwtsk/math"
+issues = [40, 99, 156, 157, 159, 177, 202, 204, 207, 216, 230]
+root_module = "GRWTSK.Interfaces.PortFiberHolomorphyCore"
+build_target = "GRWTSK.Interfaces.PortFiberHolomorphyCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+base_revision = "4aab069dad5b8ef5a07d0850c920a4bfda596aeb"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_runtime_safety_scan = true
+operational_receipt_is_external = true
+root_library_import_unchanged = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unsafe_declarations = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Topology.PortFiber.Basic"
+[[modules]]
+name = "GRWTSK.Topology.PortFiber.Path"
+[[modules]]
+name = "GRWTSK.Topology.PortFiber.MultiCertificate"
+[[modules]]
+name = "GRWTSK.Topology.PortFiber.Certified"
+[[modules]]
+name = "GRWTSK.Topology.PortFiber.Gluing"
+[[modules]]
+name = "GRWTSK.Analysis.Complex.PortFiberHolomorphy"
+[[modules]]
+name = "GRWTSK.Analysis.Complex.HolomorphicRestriction"
+[[modules]]
+name = "GRWTSK.Analysis.Complex.HolomorphicSectionRing"
+[[modules]]
+name = "GRWTSK.Analysis.Complex.HolomorphicRestrictionGluing"
+[[modules]]
+name = "GRWTSK.Topology.Algebra.PortFiberRing"
+[[modules]]
+name = "GRWTSK.Logic.SimultaneousProofArchitecture"
+[[modules]]
+name = "GRWTSK.Logic.SimultaneousProofPortfolio"
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PortFiberArchitecture"
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PortFiberLocalToGlobal"
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PortFiberTheoremPortfolio"
+[[modules]]
+name = "GRWTSK.Interfaces.OptionalAdapterGate"
+[[modules]]
+name = "GRWTSK.Interfaces.OptionalAdapterComposition"
+[[modules]]
+name = "GRWTSK.Interfaces.PortFiberSimultaneousLedger"
+[[modules]]
+name = "GRWTSK.Interfaces.PortFiberPortfolioLedger"
+[[modules]]
+name = "GRWTSK.Interfaces.PortFiberHolomorphyCore"
+
+[[hostile_controls]]
+id = "reject-mismatched-middle-object"
+description = "Typed port and certified-path composition must reject endpoints whose exact middle objects do not agree."
+[[hostile_controls]]
+id = "reject-path-certificate-drop"
+description = "The composite of a certified path must retain every selected composable certificate."
+[[hostile_controls]]
+id = "reject-path-map-drift"
+description = "The fiber map of a composite port must agree with atom-by-atom certified-path evaluation."
+[[hostile_controls]]
+id = "reject-source-name-as-proof"
+description = "Repository, revision, path, and declaration metadata cannot populate a certificate or theorem proof field."
+[[hostile_controls]]
+id = "reject-ring-label-without-ring-hom"
+description = "A ring-certified port must carry an exact bundled ring homomorphism equal to the selected fiber map."
+[[hostile_controls]]
+id = "reject-ring-continuity-drift"
+description = "The continuity proof of a topological-ring port must concern the same exact map identified by its ring certificate."
+[[hostile_controls]]
+id = "reject-continuity-as-holomorphy"
+description = "Continuity alone cannot construct a complex differentiability or holomorphic-extension certificate."
+[[hostile_controls]]
+id = "reject-holomorphy-without-domain-map"
+description = "Holomorphic composition and restriction require the exact source-to-middle domain mapping proof."
+[[hostile_controls]]
+id = "reject-ordinary-section-as-holomorphic-section"
+description = "An arbitrary function section cannot inhabit the holomorphic section subring without an ambient differentiability witness."
+[[hostile_controls]]
+id = "reject-holomorphic-subring-closure-gap"
+description = "Zero, one, addition, negation, and multiplication must each preserve the exact holomorphic-extension predicate."
+[[hostile_controls]]
+id = "reject-holomorphic-ring-restriction-drift"
+description = "The holomorphic-section restriction ring homomorphism, continuous map, and forgetful full-section restriction must be the same exact underlying function."
+[[hostile_controls]]
+id = "reject-local-holomorphy-as-global-gluing"
+description = "Local holomorphic extendability plus ordinary function matching cannot produce a global holomorphic section without a separate gluing theorem."
+[[hostile_controls]]
+id = "reject-function-gluing-as-arithmetic-bridge"
+description = "The ordinary function sheaf theorem cannot construct an arithmetic-to-elliptic map or source comparison."
+[[hostile_controls]]
+id = "reject-open-target-as-proof-or-refutation"
+description = "An unresolved target disposition yields neither the target nor its negation."
+[[hostile_controls]]
+id = "reject-rh-from-local-family"
+description = "The simultaneous proof architecture exposes local theorems but cannot synthesize RH from them."
+[[hostile_controls]]
+id = "reject-target-failure-erasing-local-proofs"
+description = "Every supplied target disposition, including a hypothetical refutation, must preserve every independent local theorem disposition."
+[[hostile_controls]]
+id = "reject-local-branch-collapse"
+description = "Proved, refuted, conditional, and unresolved local branches must remain distinct dispositions in the theorem portfolio."
+[[hostile_controls]]
+id = "reject-refuted-branch-erasing-proved-branches"
+description = "Rejecting one local application bridge cannot erase independently proved topology, ring, holomorphy, or gluing branches."
+[[hostile_controls]]
+id = "reject-open-obligation-as-false-or-proved"
+description = "An unresolved arithmetic, source-comparison, or convergence obligation is neither a proof nor a refutation."
+[[hostile_controls]]
+id = "reject-local-update-changing-target"
+description = "Updating one local theorem disposition must leave the terminal RH disposition unchanged."
+[[hostile_controls]]
+id = "reject-stage-as-residual-update"
+description = "A certified stage cannot alter the residual ledger without an accepted adapter, source-compatibility proof, and valid named change."
+[[hostile_controls]]
+id = "reject-plan-changing-target-or-portfolio"
+description = "An accepted residual plan cannot modify local theorem dispositions or the terminal target disposition."
+[[hostile_controls]]
+id = "reject-untouched-key-drift"
+description = "Residual keys not touched by an accepted plan must remain exactly unchanged."
+[[hostile_controls]]
+id = "reject-root-import-as-slice-pass"
+description = "A build of GRWTSK cannot substitute for checking the isolated port-fiber root and every declared module."
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+requires_root_import_unchanged = true
+requires_hostile_controls = true
+requires_axiom_audit = true
+requires_runtime_safety_scan = true
+
+[nonclaims]
+claims = [
+  "construction of the arithmetic-to-elliptic map B_n",
+  "global elliptic or Poncelet comparison theorem",
+  "global holomorphic gluing from local extendability without an additional theorem",
+  "complete explicit formula",
+  "convergence to the Weil form",
+  "Weil positivity",
+  "proof or refutation of the Riemann Hypothesis",
+  "automatic continuity of arbitrary ring homomorphisms",
+  "holomorphy inferred from continuity",
+  "automatic residual discharge from local port certification",
+  "classification of an unresolved local obligation as mathematically false"
+]

@@ -1,5 +1,0 @@
-import GRWTSK.NumberTheory.Moebius.SquareVariationBounds
-import GRWTSK.NumberTheory.Moebius.SignedDyadicCoherence
-
-#print axioms GRWTSK.NumberTheory.Moebius.SquareVariationBounds.negPart_coherence_le_variation
-#print axioms GRWTSK.NumberTheory.Moebius.SignedDyadicCoherence.dyadicSubpowerUpper_iff_of_uniform_difference
