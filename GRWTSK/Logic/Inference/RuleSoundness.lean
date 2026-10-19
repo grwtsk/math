@@ -246,6 +246,104 @@ theorem CheckedByteInterface.meaning_of_ambient_byte_coverage
       (accepted idx member) (bound idx member)
   exact aligned ▸ scoped
 
+/-- Restrict an already sound checker by a supplied Boolean admission gate.
+The gate is mathematical input; this constructor does not authenticate schema
+tags, checker configuration, provenance, trust reports or external executions. -/
+def CertificateChecker.guarded
+    {Snapshot : Type u} {Certificate : Type v} {Judgment : Type w}
+    {Meaning : Snapshot → Judgment → Prop}
+    (checker : CertificateChecker Snapshot Certificate Judgment Meaning)
+    (gate : Snapshot → Certificate → Bool) :
+    CertificateChecker Snapshot Certificate Judgment Meaning where
+  check := fun snapshot certificate =>
+    if gate snapshot certificate = true then checker.check snapshot certificate else .reject
+  conclusion := checker.conclusion
+  accept_sound := by
+    intro snapshot certificate accepted
+    change (if gate snapshot certificate = true then
+      checker.check snapshot certificate else .reject) = .accept at accepted
+    by_cases admitted : gate snapshot certificate = true
+    · apply checker.accept_sound snapshot certificate
+      simpa only [if_pos admitted] using accepted
+    · have impossible : DecisionResult.reject = .accept := by
+        simpa only [if_neg admitted] using accepted
+      cases impossible
+
+/-- Guarding preserves exactly accepted witnesses that pass the supplied gate.
+In particular, soundness is retained but neither acceptance nor completeness
+is manufactured for a denied witness. -/
+theorem CertificateChecker.guarded_accepts_iff
+    {Snapshot : Type u} {Certificate : Type v} {Judgment : Type w}
+    {Meaning : Snapshot → Judgment → Prop}
+    (checker : CertificateChecker Snapshot Certificate Judgment Meaning)
+    (gate : Snapshot → Certificate → Bool)
+    (snapshot : Snapshot) (certificate : Certificate) (judgment : Judgment) :
+    (checker.guarded gate).Accepts snapshot certificate judgment ↔
+      gate snapshot certificate = true ∧
+        checker.Accepts snapshot certificate judgment := by
+  change ((if gate snapshot certificate = true then
+      checker.check snapshot certificate else .reject) = .accept ∧
+        checker.conclusion certificate = judgment) ↔ _
+  constructor
+  · intro accepted
+    by_cases admitted : gate snapshot certificate = true
+    · exact ⟨admitted, ⟨by simpa only [if_pos admitted] using accepted.1, accepted.2⟩⟩
+    · have impossible : DecisionResult.reject = .accept := by
+        simpa only [if_neg admitted] using accepted.1
+      cases impossible
+  · intro accepted
+    exact ⟨by simpa only [if_pos accepted.1] using accepted.2.1, accepted.2.2⟩
+
+/-- A false admission gate rules out informative acceptance, without proving
+the negation of the certificate's mathematical conclusion. -/
+theorem CertificateChecker.guarded_not_accepts_of_gate_false
+    {Snapshot : Type u} {Certificate : Type v} {Judgment : Type w}
+    {Meaning : Snapshot → Judgment → Prop}
+    (checker : CertificateChecker Snapshot Certificate Judgment Meaning)
+    (gate : Snapshot → Certificate → Bool)
+    (snapshot : Snapshot) (certificate : Certificate) (judgment : Judgment)
+    (denied : gate snapshot certificate = false) :
+    ¬ (checker.guarded gate).Accepts snapshot certificate judgment := by
+  intro accepted
+  have admitted :=
+    ((checker.guarded_accepts_iff gate snapshot certificate judgment).mp accepted).1
+  rw [denied] at admitted
+  cases admitted
+
+namespace CheckerVersionFixtures
+
+/-- A two-version symbolic model; Boolean tags are not deployed schema bytes. -/
+def meaningful (_ : Bool) (judgment : Bool) : Prop := judgment = true
+
+/-- This checker is sound about its own conclusion while ignoring both tags. -/
+def versionBlind : CertificateChecker Bool Bool Bool meaningful where
+  check := fun _ _ => .accept
+  conclusion := fun _ => true
+  accept_sound := by
+    intro snapshot certificate accepted
+    rfl
+
+/-- Semantic soundness alone does not enforce a configured schema-version
+match: the witness tag is false and the configured tag is true. -/
+theorem sound_checker_can_accept_wrong_version :
+    versionBlind.Accepts true false true ∧ (false : Bool) ≠ true := by
+  exact ⟨⟨rfl, rfl⟩, by decide⟩
+
+def exactVersion (configured encoded : Bool) : Bool := decide (encoded = configured)
+
+/-- The supplied exact tag gate rejects the mismatched symbolic witness. -/
+theorem exact_version_gate_rejects_mismatch :
+    ¬ (versionBlind.guarded exactVersion).Accepts true false true :=
+  versionBlind.guarded_not_accepts_of_gate_false exactVersion true false true rfl
+
+/-- A matching tag retains the original sound acceptance in this model. -/
+theorem exact_version_gate_retains_match :
+    (versionBlind.guarded exactVersion).Accepts true true true := by
+  apply (versionBlind.guarded_accepts_iff exactVersion true true true).2
+  exact ⟨rfl, rfl, rfl⟩
+
+end CheckerVersionFixtures
+
 namespace CertificateScopeCounterexamples
 
 /-- A symbolic meaning/checker pair, not a repository checker or byte parser. -/

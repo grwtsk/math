@@ -1,0 +1,77 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-critical-strip-atlas-v0.1"
+owner_repository = "grwtsk/math"
+issue = 225
+root_module = "GRWTSK"
+build_target = "GRWTSK"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+operational_receipt_is_external = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripAtlas"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann"
+
+[[hostile_controls]]
+id = "reject-invented-chart-height"
+description = "Every chart height must factor through the common represented commutator root; an unrelated field-specific height is rejected."
+
+[[hostile_controls]]
+id = "reject-empty-atlas-vacuity"
+description = "An empty chart index or empty local carrier cannot establish the global RH equivalence."
+
+[[hostile_controls]]
+id = "reject-sufficient-as-equivalent"
+description = "A local implication to RH cannot be marked equivalent without a separately proved reverse realization."
+
+[[hostile_controls]]
+id = "reject-missing-overlap-laws"
+description = "Pairwise adapters without identity, inverse and triple-overlap cocycle laws cannot satisfy the atlas interface."
+
+[[hostile_controls]]
+id = "reject-topology-as-holomorphy"
+description = "Continuity, homeomorphism or homotopy alone cannot inhabit the explicit complex differentiability field."
+
+[[hostile_controls]]
+id = "reject-topology-as-ring-homomorphism"
+description = "A topological equivalence cannot substitute for the explicit ring homomorphism field."
+
+[[hostile_controls]]
+id = "reject-abstract-root-as-spectral-triple"
+description = "The algebraic represented-commutator root cannot be reported as a full spectral triple without separate operator-domain, self-adjointness, compact-resolvent and bounded-commutator proofs."
+
+[[hostile_controls]]
+id = "reject-gapfree-by-label"
+description = "The global atlas theorem requires proof-carrying equivalent status at every required chart; metadata labels do not discharge local gaps."
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+
+[nonclaims]
+claims = [
+  "unconditional Riemann hypothesis",
+  "construction of a Connes spectral triple for the Riemann zeta function",
+  "identification of the complete zeta-zero divisor as a spectrum",
+  "local RH equivalence of every existing arithmetic, geometric, spectral or Weil issue",
+  "holomorphy derived from topology alone",
+  "ring homomorphism derived from homotopy alone",
+  "gap-free critical-strip atlas",
+  "a replay receipt produced by this static manifest"
+]

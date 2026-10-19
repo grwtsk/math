@@ -1,0 +1,88 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-atlas-vertical-path-v0.1"
+owner_repository = "grwtsk/math"
+issue = 234
+parent_issue = 225
+parent_pull_request = 238
+root_module = "GRWTSK"
+build_target = "GRWTSK"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+operational_receipt_is_external = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripVerticalPath"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann"
+
+[[hostile_controls]]
+id = "reject-issue-graph-as-proof-path"
+description = "A vertical path must be a dependent composition of actual VerticalStep terms, not issue connectivity or file order."
+
+[[hostile_controls]]
+id = "reject-manual-height-order"
+description = "Every edge inherits its height inequality from the common represented-commutator root through VerticalStep."
+
+[[hostile_controls]]
+id = "reject-source-changing-edge"
+description = "Every edge binds both endpoint charts to exact source/revision/normalization identities and requires binding equality."
+
+[[hostile_controls]]
+id = "reject-coordinate-tag-without-exact-overlap"
+description = "A coordinate-equivalence edge requires an exact #232 overlap audit outcome."
+
+[[hostile_controls]]
+id = "reject-empty-edge-kind"
+description = "Every edge has nonempty semantic tags and must include logical-implication and height-monotone evidence."
+
+[[hostile_controls]]
+id = "reject-unproved-terminal-equivalence"
+description = "Every terminal chart must carry an exact equivalent LocalRHProfile status."
+
+[[hostile_controls]]
+id = "reject-dropped-required-chart"
+description = "Every required chart must occur between a declared source and terminal path."
+
+[[hostile_controls]]
+id = "reject-prose-independence"
+description = "Every omitted chart requires a theorem deriving its local statement from all required chart statements."
+
+[[hostile_controls]]
+id = "reject-cycle-as-reverse-implication"
+description = "Path composition exposes only the forward proof maps carried by its edges and cannot manufacture a missing reverse RH implication."
+
+[[hostile_controls]]
+id = "reject-path-only-rh-equivalence"
+description = "The global equivalence theorem separately requires the #231 directional-gap discharge."
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+
+[nonclaims]
+claims = [
+  "instantiation of any concrete source or terminal chart",
+  "construction of the actual zeta vertical path",
+  "discharge of any chart's reverse RH implication",
+  "proof that any omitted current chart is independent",
+  "construction of the zeta noncommutative-height root",
+  "completion of the topological-to-analytic bridge",
+  "gap-free critical-strip atlas",
+  "Riemann hypothesis",
+  "a replay receipt produced by this static manifest"
+]
