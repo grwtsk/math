@@ -25,16 +25,18 @@
   },
   "source_pins": {
     "original": {
-      "path": "verification/source-variants/formal-research/objects/b7/b765050c419260da34cf2dfca3bc5c460d96ea52c0eded36c76687e211c796be.lean",
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/b7/b765050c419260da34cf2dfca3bc5c460d96ea52c0eded36c76687e211c796be.lean",
       "sha256": "b765050c419260da34cf2dfca3bc5c460d96ea52c0eded36c76687e211c796be",
       "byte_count": 2967,
-      "git_blob": "0c7fdc8e53492e5b5fae939db6f40165539e264d"
+      "git_blob": "0c7fdc8e53492e5b5fae939db6f40165539e264d",
+      "path_at_source_revision": "verification/source-variants/formal-research/objects/b7/b765050c419260da34cf2dfca3bc5c460d96ea52c0eded36c76687e211c796be.lean"
     },
     "organized": {
-      "path": "verification/source-variants/formal-research/objects/dc/dc7dae43ca9e4b90726511b25ff411bc9a23e4d4f48d52acfd15168b082c02d9.lean",
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/dc/dc7dae43ca9e4b90726511b25ff411bc9a23e4d4f48d52acfd15168b082c02d9.lean",
       "sha256": "dc7dae43ca9e4b90726511b25ff411bc9a23e4d4f48d52acfd15168b082c02d9",
       "byte_count": 4543,
-      "git_blob": "ff3569f39373baebdeafc08b6980fed855144e7b"
+      "git_blob": "ff3569f39373baebdeafc08b6980fed855144e7b",
+      "path_at_source_revision": "verification/source-variants/formal-research/objects/dc/dc7dae43ca9e4b90726511b25ff411bc9a23e4d4f48d52acfd15168b082c02d9.lean"
     }
   },
   "taxonomy": {
@@ -228,10 +230,11 @@
       "disposition": "ARCHIVE_ONLY_PROCESS_INTERFACE",
       "reason": "Dependent workflow admission/evidence interface carries rollback and owner-reference state; archive-only under Math AGENTS boundary. Existing mathematical propositions and evidence premises remain byte-exact in the pinned original.",
       "custody": {
-        "path": "verification/source-variants/formal-research/objects/b7/b765050c419260da34cf2dfca3bc5c460d96ea52c0eded36c76687e211c796be.lean",
+        "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/b7/b765050c419260da34cf2dfca3bc5c460d96ea52c0eded36c76687e211c796be.lean",
         "sha256": "b765050c419260da34cf2dfca3bc5c460d96ea52c0eded36c76687e211c796be",
         "byte_count": 2967,
-        "git_blob": "0c7fdc8e53492e5b5fae939db6f40165539e264d"
+        "git_blob": "0c7fdc8e53492e5b5fae939db6f40165539e264d",
+        "path_at_source_revision": "verification/source-variants/formal-research/objects/b7/b765050c419260da34cf2dfca3bc5c460d96ea52c0eded36c76687e211c796be.lean"
       }
     },
     {
@@ -246,10 +249,11 @@
       "disposition": "ARCHIVE_ONLY_PROCESS_INTERFACE",
       "reason": "Dependent workflow admission/evidence interface carries rollback and owner-reference state; archive-only under Math AGENTS boundary. Existing mathematical propositions and evidence premises remain byte-exact in the pinned original.",
       "custody": {
-        "path": "verification/source-variants/formal-research/objects/b7/b765050c419260da34cf2dfca3bc5c460d96ea52c0eded36c76687e211c796be.lean",
+        "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/b7/b765050c419260da34cf2dfca3bc5c460d96ea52c0eded36c76687e211c796be.lean",
         "sha256": "b765050c419260da34cf2dfca3bc5c460d96ea52c0eded36c76687e211c796be",
         "byte_count": 2967,
-        "git_blob": "0c7fdc8e53492e5b5fae939db6f40165539e264d"
+        "git_blob": "0c7fdc8e53492e5b5fae939db6f40165539e264d",
+        "path_at_source_revision": "verification/source-variants/formal-research/objects/b7/b765050c419260da34cf2dfca3bc5c460d96ea52c0eded36c76687e211c796be.lean"
       }
     },
     {
@@ -264,10 +268,11 @@
       "disposition": "ARCHIVE_ONLY_PROCESS_INTERFACE",
       "reason": "Dependent workflow admission/evidence interface carries rollback and owner-reference state; archive-only under Math AGENTS boundary. Existing mathematical propositions and evidence premises remain byte-exact in the pinned original.",
       "custody": {
-        "path": "verification/source-variants/formal-research/objects/b7/b765050c419260da34cf2dfca3bc5c460d96ea52c0eded36c76687e211c796be.lean",
+        "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/b7/b765050c419260da34cf2dfca3bc5c460d96ea52c0eded36c76687e211c796be.lean",
         "sha256": "b765050c419260da34cf2dfca3bc5c460d96ea52c0eded36c76687e211c796be",
         "byte_count": 2967,
-        "git_blob": "0c7fdc8e53492e5b5fae939db6f40165539e264d"
+        "git_blob": "0c7fdc8e53492e5b5fae939db6f40165539e264d",
+        "path_at_source_revision": "verification/source-variants/formal-research/objects/b7/b765050c419260da34cf2dfca3bc5c460d96ea52c0eded36c76687e211c796be.lean"
       }
     },
     {
@@ -282,10 +287,11 @@
       "disposition": "ARCHIVE_ONLY_PROCESS_INTERFACE",
       "reason": "Dependent workflow admission/evidence interface carries rollback and owner-reference state; archive-only under Math AGENTS boundary. Existing mathematical propositions and evidence premises remain byte-exact in the pinned original.",
       "custody": {
-        "path": "verification/source-variants/formal-research/objects/b7/b765050c419260da34cf2dfca3bc5c460d96ea52c0eded36c76687e211c796be.lean",
+        "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/b7/b765050c419260da34cf2dfca3bc5c460d96ea52c0eded36c76687e211c796be.lean",
         "sha256": "b765050c419260da34cf2dfca3bc5c460d96ea52c0eded36c76687e211c796be",
         "byte_count": 2967,
-        "git_blob": "0c7fdc8e53492e5b5fae939db6f40165539e264d"
+        "git_blob": "0c7fdc8e53492e5b5fae939db6f40165539e264d",
+        "path_at_source_revision": "verification/source-variants/formal-research/objects/b7/b765050c419260da34cf2dfca3bc5c460d96ea52c0eded36c76687e211c796be.lean"
       }
     }
   ],

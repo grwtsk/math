@@ -25,16 +25,18 @@
   },
   "source_pins": {
     "organized": {
-      "path": "verification/source-variants/formal-research/objects/83/83a6ce353352c64dc5a06cb03416db270c62631ba458ef530f581dfb6a766d2e.lean",
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/83/83a6ce353352c64dc5a06cb03416db270c62631ba458ef530f581dfb6a766d2e.lean",
       "sha256": "83a6ce353352c64dc5a06cb03416db270c62631ba458ef530f581dfb6a766d2e",
       "byte_count": 3730,
-      "git_blob": "93e934f10495a29c7cf1500f246cf10c425ed98e"
+      "git_blob": "93e934f10495a29c7cf1500f246cf10c425ed98e",
+      "path_at_source_revision": "verification/source-variants/formal-research/objects/83/83a6ce353352c64dc5a06cb03416db270c62631ba458ef530f581dfb6a766d2e.lean"
     },
     "original": {
-      "path": "verification/source-variants/formal-research/objects/b1/b1692c02a45eaff5606892ff3359bbf8639f843d9500dbacd47549872964ad14.lean",
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/b1/b1692c02a45eaff5606892ff3359bbf8639f843d9500dbacd47549872964ad14.lean",
       "sha256": "b1692c02a45eaff5606892ff3359bbf8639f843d9500dbacd47549872964ad14",
       "byte_count": 2089,
-      "git_blob": "5eb8df3f7eee90aca538c4cec724099a69922116"
+      "git_blob": "5eb8df3f7eee90aca538c4cec724099a69922116",
+      "path_at_source_revision": "verification/source-variants/formal-research/objects/b1/b1692c02a45eaff5606892ff3359bbf8639f843d9500dbacd47549872964ad14.lean"
     }
   },
   "taxonomy": {
@@ -496,7 +498,8 @@
       "role": "native_project_module",
       "sha256": "35b64e82d8485debb2c003ee4bcf201e101b4bc4d2c99500686692f2b8ed550f",
       "source": "FormalResearch/RiemannHypothesis/SourceFractionalQuadrature.lean",
-      "target": "verification/source-variants/formal-research/objects/35/35b64e82d8485debb2c003ee4bcf201e101b4bc4d2c99500686692f2b8ed550f.lean"
+      "target": "GRWTSK/SourceCorpus/FormalResearch/Objects/35/35b64e82d8485debb2c003ee4bcf201e101b4bc4d2c99500686692f2b8ed550f.lean",
+      "target_at_source_revision": "verification/source-variants/formal-research/objects/35/35b64e82d8485debb2c003ee4bcf201e101b4bc4d2c99500686692f2b8ed550f.lean"
     },
     "dependency_source_whole_file_conceptual_review": "NOT_ASSERTED",
     "ambient_context": "Original imports retained and inherited namespace references explicitly qualified/opened after rebinding",

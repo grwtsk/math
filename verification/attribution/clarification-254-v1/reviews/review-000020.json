@@ -25,16 +25,18 @@
   },
   "source_pins": {
     "original": {
-      "path": "verification/source-variants/formal-research/objects/68/686d6ad677ac76945936a45409187e51a298dd7320cfff0c58887307f5f8bc76.lean",
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/68/686d6ad677ac76945936a45409187e51a298dd7320cfff0c58887307f5f8bc76.lean",
       "sha256": "686d6ad677ac76945936a45409187e51a298dd7320cfff0c58887307f5f8bc76",
       "byte_count": 1787,
-      "git_blob": "6e17a4ba4323af0860aa6ad1fc6164b22ce52d35"
+      "git_blob": "6e17a4ba4323af0860aa6ad1fc6164b22ce52d35",
+      "path_at_source_revision": "verification/source-variants/formal-research/objects/68/686d6ad677ac76945936a45409187e51a298dd7320cfff0c58887307f5f8bc76.lean"
     },
     "organized": {
-      "path": "verification/source-variants/formal-research/objects/76/766666d83f9e95eb15b116cd3c7ae26648f8047094abde1b3e23133a95902aa6.lean",
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/76/766666d83f9e95eb15b116cd3c7ae26648f8047094abde1b3e23133a95902aa6.lean",
       "sha256": "766666d83f9e95eb15b116cd3c7ae26648f8047094abde1b3e23133a95902aa6",
       "byte_count": 3367,
-      "git_blob": "d008eccc154f4900777f14d82e18f15d3bb5d51d"
+      "git_blob": "d008eccc154f4900777f14d82e18f15d3bb5d51d",
+      "path_at_source_revision": "verification/source-variants/formal-research/objects/76/766666d83f9e95eb15b116cd3c7ae26648f8047094abde1b3e23133a95902aa6.lean"
     }
   },
   "source_origin_record": {
