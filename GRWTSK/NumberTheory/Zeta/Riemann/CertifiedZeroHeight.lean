@@ -83,6 +83,87 @@ theorem floor_eq_digitValue_of_mem
       _ ≤ ⌊decimalScale digits * x⌋ :=
         Int.floor_mono (mul_le_mul_of_nonneg_left hlower hscale)
 
+/-! Source-only #133 candidate. These are facts about real intervals, not analytic
+zero identity, multiplicity, record provenance, or a computed consensus parser. -/
+
+/-- Two nonempty closed real intervals overlap exactly when each lower bound is
+at most the other upper bound. -/
+theorem overlaps_iff_cross_bounds (left right : ClosedInterval) :
+    left.Overlaps right ↔
+      left.lower ≤ right.upper ∧ right.lower ≤ left.upper := by
+  constructor
+  · rintro ⟨x, hxleft, hxright⟩
+    exact ⟨le_trans hxleft.1 hxright.2, le_trans hxright.1 hxleft.2⟩
+  · rintro ⟨hlr, hrl⟩
+    refine ⟨max left.lower right.lower, ?_, ?_⟩
+    · exact ⟨le_max_left _ _, max_le left.valid hrl⟩
+    · exact ⟨le_max_right _ _, max_le hlr right.valid⟩
+
+/-- A binary consensus exists only after overlap has been supplied. Its endpoints
+are exact max-lower/min-upper; incompatible labels are a separate obligation. -/
+noncomputable def interOfOverlaps (left right : ClosedInterval)
+    (overlap : left.Overlaps right) : ClosedInterval where
+  lower := max left.lower right.lower
+  upper := min left.upper right.upper
+  valid := by
+    rcases (overlaps_iff_cross_bounds left right).mp overlap with ⟨hlr, hrl⟩
+    exact max_le (le_min left.valid hlr) (le_min hrl right.valid)
+
+/-- The binary construction preserves every point of the exact intersection. -/
+theorem carrier_interOfOverlaps (left right : ClosedInterval)
+    (overlap : left.Overlaps right) :
+    (interOfOverlaps left right overlap).carrier =
+      left.carrier ∩ right.carrier := by
+  apply Set.ext
+  intro x
+  change (max left.lower right.lower ≤ x ∧ x ≤ min left.upper right.upper) ↔
+    ((left.lower ≤ x ∧ x ≤ left.upper) ∧
+      (right.lower ≤ x ∧ x ≤ right.upper))
+  constructor
+  · rintro ⟨hlower, hupper⟩
+    exact ⟨⟨le_trans (le_max_left _ _) hlower,
+      le_trans hupper (min_le_left _ _)⟩,
+      ⟨le_trans (le_max_right _ _) hlower,
+      le_trans hupper (min_le_right _ _)⟩⟩
+  · rintro ⟨⟨hll, hlu⟩, ⟨hrl, hru⟩⟩
+    exact ⟨max_le hll hrl, le_min hlu hru⟩
+
+/-- In dimension one, three all-pairs-overlapping closed intervals have a common
+point. This does not identify any analytic zero. -/
+theorem common_point_of_three_pairwise_overlaps
+    (left middle right : ClosedInterval)
+    (hlm : left.Overlaps middle)
+    (hlr : left.Overlaps right)
+    (hmr : middle.Overlaps right) :
+    ∃ x, x ∈ left.carrier ∧ x ∈ middle.carrier ∧ x ∈ right.carrier := by
+  rcases (overlaps_iff_cross_bounds left middle).mp hlm with ⟨hlm', hml'⟩
+  rcases (overlaps_iff_cross_bounds left right).mp hlr with ⟨hlr', hrl'⟩
+  rcases (overlaps_iff_cross_bounds middle right).mp hmr with ⟨hmr', hrm'⟩
+  refine ⟨max left.lower (max middle.lower right.lower), ?_, ?_, ?_⟩
+  · exact ⟨le_max_left _ _, max_le left.valid (max_le hml' hrl')⟩
+  · exact ⟨le_trans (le_max_left _ _) (le_max_right _ _),
+      max_le hlm' (max_le middle.valid hrm')⟩
+  · exact ⟨le_trans (le_max_right _ _) (le_max_right _ _),
+      max_le hlr' (max_le hmr' right.valid)⟩
+
+/-- A connected overlap chain is weaker than all-pairs overlap and need not have
+a common point. It must not be used as a same-zero equivalence relation. -/
+theorem overlap_chain_need_not_be_pairwise :
+    ∃ left middle right : ClosedInterval,
+      left.Overlaps middle ∧ middle.Overlaps right ∧ ¬ left.Overlaps right := by
+  let left : ClosedInterval := ⟨0, 1, by norm_num⟩
+  let middle : ClosedInterval := ⟨1, 2, by norm_num⟩
+  let right : ClosedInterval := ⟨2, 3, by norm_num⟩
+  refine ⟨left, middle, right, ?_, ?_, ?_⟩
+  · apply (overlaps_iff_cross_bounds left middle).mpr
+    norm_num [left, middle]
+  · apply (overlaps_iff_cross_bounds middle right).mpr
+    norm_num [middle, right]
+  · intro overlap
+    have hbad : (2 : ℝ) ≤ 1 :=
+      ((overlaps_iff_cross_bounds left right).mp overlap).2
+    norm_num at hbad
+
 end ClosedInterval
 
 /-- An exact finite-producer consensus interval. -/
