@@ -1,1 +1,0 @@
-MoebiusControls/ASBNP04_private.lean:5:0: error: Unapproved axiom _private.MoebiusControls.ASBNP04_private.0.ASBNP04.hostileCustomAxiom in _private.MoebiusControls.ASBNP04_private.0.ASBNP04.hostileCustomAxiom

@@ -1,0 +1,7 @@
+import SourceActualHalfHarmonicZeta
+set_option autoImplicit false
+open FormalResearch.RiemannHypothesis.SourceActualHalfHarmonicZeta
+#print halfHarmonicFractionalTail
+#print finiteHalfHarmonic_eq_sqrt_zeta_tail
+#print halfHarmonicFractionalTail_bounds
+#print finiteHalfHarmonic_sub_sqrt_zeta_abs_le

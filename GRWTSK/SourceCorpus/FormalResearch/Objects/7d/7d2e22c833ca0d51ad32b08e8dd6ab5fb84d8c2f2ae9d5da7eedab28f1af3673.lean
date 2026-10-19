@@ -1,0 +1,12 @@
+import SourceActualMertensPntRate
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourceActualMertensPntRate.actualRelativePsiTimeError_tail_integrable
+#print FormalResearch.RiemannHypothesis.SourceActualMertensPntRate.actualCenteredMangoldtLogError_eq_delta_sub_tail
+#print FormalResearch.RiemannHypothesis.SourceActualMertensPntRate.actualPntHalfRate_integrable
+#print FormalResearch.RiemannHypothesis.SourceActualMertensPntRate.actualRelativePsiTimeError_tail_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualMertensPntRate.actualCenteredMangoldtLogError_isBigO

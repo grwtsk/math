@@ -1,9 +1,0 @@
-{
-  "schema": "concurrent-documentation-link-repair-v1",
-  "page": "docs/mathematics/Combinatorics/Sequences/partial-sum-ordering.md",
-  "preimage_sha256": "79df0282854bf4a487e1d119ff2c3cc319d4a7a98a1978acd0df4fb27e309138",
-  "observed_collision": "Concurrent guide referenced an absent implementation-report.md; no report or historical receipt was invented or rewritten.",
-  "old_text": "Repository-wide layout and documentation failures are recorded separately in the [implementation report](../../../../.noeaaeue/receipts/modular-partial-sum-ordering/implementation-report.md).",
-  "new_text": "Repository-wide structural failures recorded during that run remain in the [layout observations](../../../../.noeaaeue/receipts/modular-partial-sum-ordering/layout-final.json) and [documentation replay log](../../../../.noeaaeue/receipts/modular-partial-sum-ordering/documentation-render-final.log).",
-  "scope": "The current guide now links the actual retained failure records, preserving selected source receipt/status and all mathematical statements."
-}

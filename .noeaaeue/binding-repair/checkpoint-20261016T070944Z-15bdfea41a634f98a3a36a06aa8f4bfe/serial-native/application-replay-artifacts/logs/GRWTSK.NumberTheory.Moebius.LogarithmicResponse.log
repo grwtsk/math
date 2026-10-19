@@ -1,2 +1,0 @@
-'PPNCP04.atom_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
-'PPNCP04.restrict_primeNote_restrict' depends on axioms: [propext, Classical.choice, Quot.sound]

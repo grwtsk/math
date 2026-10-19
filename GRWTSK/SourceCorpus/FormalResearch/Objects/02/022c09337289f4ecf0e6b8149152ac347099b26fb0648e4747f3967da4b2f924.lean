@@ -1,0 +1,5 @@
+import RootActualXiConditionalHolomorphy
+set_option autoImplicit false
+set_option linter.style.longLine false
+#print FormalResearch.RiemannHypothesis.RootActualXiConditionalHolomorphy.actualXiComplexLaplace_hasDerivAt_of_future_average
+#print FormalResearch.RiemannHypothesis.RootActualXiConditionalHolomorphy.actualXiComplexLaplace_analyticOnNhd_of_future_average

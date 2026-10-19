@@ -1,0 +1,17 @@
+import SourcePhysicalEndpointConvolution
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourcePhysicalEndpointConvolution
+#check primitiveCorrelationZero_fourth_deriv_eq_normalizedOverlapProfile
+#print axioms primitiveCorrelationZero_fourth_deriv_eq_normalizedOverlapProfile
+#check sourceCorrelation_eq_normalizedOverlap_filter
+#print axioms sourceCorrelation_eq_normalizedOverlap_filter
+#check endpointQ
+#print axioms endpointQ
+#check endpointPolynomial
+#print axioms endpointPolynomial
+#check sourceCorrelation_endpoint_eq_polynomial
+#print axioms sourceCorrelation_endpoint_eq_polynomial
+#check endpointPolynomial_eq_convolution
+#print axioms endpointPolynomial_eq_convolution
+#check sourceCorrelation_endpoint_eq_convolution
+#print axioms sourceCorrelation_endpoint_eq_convolution

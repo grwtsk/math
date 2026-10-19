@@ -1,0 +1,18 @@
+import SharpTriangleMeanBudget
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+#check RH16SharpTriangleMeanBudget.cumulative
+#print RH16SharpTriangleMeanBudget.cumulative
+#print axioms RH16SharpTriangleMeanBudget.cumulative
+#check RH16SharpTriangleMeanBudget.triangle_integral_eq
+#print RH16SharpTriangleMeanBudget.triangle_integral_eq
+#print axioms RH16SharpTriangleMeanBudget.triangle_integral_eq
+#check RH16SharpTriangleMeanBudget.triangle_integral_le
+#print RH16SharpTriangleMeanBudget.triangle_integral_le
+#print axioms RH16SharpTriangleMeanBudget.triangle_integral_le

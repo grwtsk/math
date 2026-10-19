@@ -1,0 +1,11 @@
+import SourcePrimeMeanMain
+set_option autoImplicit false
+set_option linter.hashCommand false
+#check RH16PrimeMeanMain.actualLargePrimeFirstDiagonal
+#print axioms RH16PrimeMeanMain.actualLargePrimeFirstDiagonal
+#check RH16PrimeMeanMain.actualMeanLinearMain
+#print axioms RH16PrimeMeanMain.actualMeanLinearMain
+#check RH16PrimeMeanMain.actual_first_diagonal_eq_retained
+#print axioms RH16PrimeMeanMain.actual_first_diagonal_eq_retained
+#check RH16PrimeMeanMain.actual_first_diagonal_fixed_main_error
+#print axioms RH16PrimeMeanMain.actual_first_diagonal_fixed_main_error

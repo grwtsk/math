@@ -1,2 +1,0 @@
-'PPNCP04.diagonal_quadratic_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
-'PPNCP04.P04_iff_energy_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]

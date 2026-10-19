@@ -1,0 +1,11 @@
+import SourceProperPowerMertens
+#print RH16ProperPowerMertens.tailProperMass_one_eq
+#print axioms RH16ProperPowerMertens.tailProperMass_one_eq
+#print RH16ProperPowerMertens.weighted_difference_le_three_halves
+#print axioms RH16ProperPowerMertens.weighted_difference_le_three_halves
+#print RH16ProperPowerMertens.weightedPrime_sub_log_bounds
+#print axioms RH16ProperPowerMertens.weightedPrime_sub_log_bounds
+#print RH16ProperPowerMertens.weightedPrime_mertens_real_fixed
+#print axioms RH16ProperPowerMertens.weightedPrime_mertens_real_fixed
+#print RH16ProperPowerMertens.weightedPrime_logcutoff_fixed
+#print axioms RH16ProperPowerMertens.weightedPrime_logcutoff_fixed

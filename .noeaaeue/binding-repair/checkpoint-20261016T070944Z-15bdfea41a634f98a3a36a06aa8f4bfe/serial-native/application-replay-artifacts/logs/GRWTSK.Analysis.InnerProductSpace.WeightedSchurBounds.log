@@ -1,3 +1,0 @@
-'EulerP04RH.WeightedGram.weighted_symmetric_schur' depends on axioms: [propext, Classical.choice, Quot.sound]
-'EulerP04RH.WeightedGram.synthesis_of_weighted_gram_rows' depends on axioms: [propext, Classical.choice, Quot.sound]
-'EulerP04RH.WeightedGram.bessel_of_weighted_gram_rows' depends on axioms: [propext, Classical.choice, Quot.sound]

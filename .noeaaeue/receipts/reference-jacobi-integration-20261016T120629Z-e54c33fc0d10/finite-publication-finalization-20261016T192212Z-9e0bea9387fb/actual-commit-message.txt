@@ -1,5 +1,0 @@
-Formalize prefix lookup and cubic Jacobi normalization
-
-Integrate exact reference transport and actual cubic-character Jacobi congruence with checked counterexamples. Qualify the repaired Lean runtime cache using full public and application audits, two cold selected replays, and zero-rebuild warm reuse.
-
-Retain exact source-bound evidence and a complete reversible source cache. Preserve concurrent Jacobi product edits outside this validated commit and keep unadmitted candidates explicit.
