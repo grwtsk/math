@@ -94,7 +94,8 @@ theorem completion_natural (f : R →+* S) (a b r j : R)
     parameterMap f N (toParameter a b r j hr hj N (u.val N))
   exact toParameter_natural f a b r j hr hj N (u.val N)
 
-/-- Vanishing order is preserved by every coefficient map, including residues. -/
+/-- Vanishing to at least the selected finite order is preserved by every
+coefficient map. Noninjective specialization can strictly increase exact order. -/
 theorem projection_zero_map (f : R →+* S) (a b r : R) (N : ℕ)
     (u : FreyJetCompletion.Limit a b r)
     (hu : FreyJetCompletion.projection a b r N u = 0) :
@@ -136,6 +137,60 @@ theorem residue_erases_nonzero_constant :
     have hc := congrArg (PowerSeries.coeff 0) h
     norm_num at hc
   · norm_num
+
+/-- A nonzero source whose exact T order strictly increases under reduction.
+The leading coefficient 2 is erased, while the next coefficient 1 survives. -/
+def orderIncreaseSource (k : ℕ) : PowerSeries ℤ :=
+  PowerSeries.C 2 * PowerSeries.X ^ k + PowerSeries.X ^ (k + 1)
+
+@[simp] theorem orderIncreaseSource_coeff (k : ℕ) :
+    PowerSeries.coeff k (orderIncreaseSource k) = 2 := by
+  simp [orderIncreaseSource, PowerSeries.coeff_X_pow,
+    show k ≠ k + 1 by omega, show k + 1 ≠ k by omega]
+
+/-- The target is still nonzero: this is not merely an erased-constant example. -/
+theorem orderIncreaseSource_specializes (k : ℕ) :
+    PowerSeries.map (Int.castRingHom (ZMod 2)) (orderIncreaseSource k) =
+      (PowerSeries.X : PowerSeries (ZMod 2)) ^ (k + 1) := by
+  norm_num [orderIncreaseSource]
+
+/-- Exact orders k and k+1 are expressed through divisibility and nondivisibility.
+This rejects exact-order preservation without introducing an infinity convention. -/
+theorem residue_exact_order_increase (k : ℕ) :
+    orderIncreaseSource k ≠ 0 ∧
+      PowerSeries.map (Int.castRingHom (ZMod 2)) (orderIncreaseSource k) ≠ 0 ∧
+      (PowerSeries.X : PowerSeries ℤ) ^ k ∣ orderIncreaseSource k ∧
+      ¬ (PowerSeries.X : PowerSeries ℤ) ^ (k + 1) ∣ orderIncreaseSource k ∧
+      (PowerSeries.X : PowerSeries (ZMod 2)) ^ (k + 1) ∣
+        PowerSeries.map (Int.castRingHom (ZMod 2)) (orderIncreaseSource k) ∧
+      ¬ (PowerSeries.X : PowerSeries (ZMod 2)) ^ (k + 2) ∣
+        PowerSeries.map (Int.castRingHom (ZMod 2)) (orderIncreaseSource k) := by
+  have hs : ¬ (PowerSeries.X : PowerSeries ℤ) ^ (k + 1) ∣ orderIncreaseSource k := by
+    intro hd
+    have hz := PowerSeries.X_pow_dvd_iff.mp hd k (Nat.lt_succ_self k)
+    rw [orderIncreaseSource_coeff] at hz
+    norm_num at hz
+  have ht : ¬ (PowerSeries.X : PowerSeries (ZMod 2)) ^ (k + 2) ∣
+      PowerSeries.map (Int.castRingHom (ZMod 2)) (orderIncreaseSource k) := by
+    rw [orderIncreaseSource_specializes]
+    intro hd
+    have hz := PowerSeries.X_pow_dvd_iff.mp hd (k + 1) (by omega)
+    simpa using hz
+  refine ⟨?_, ?_, ?_, hs, ?_, ht⟩
+  · intro hz
+    apply hs
+    rw [hz]
+    exact dvd_zero _
+  · intro hz
+    apply ht
+    rw [hz]
+    exact dvd_zero _
+  · refine ⟨PowerSeries.C 2 + PowerSeries.X, ?_⟩
+    unfold orderIncreaseSource
+    rw [pow_succ]
+    ring
+  · rw [orderIncreaseSource_specializes]
+    exact dvd_rfl
 
 end GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCompletionBaseChange
 
