@@ -2,7 +2,7 @@
 OpenAI formalization assistance.
 
 Isolated source root for Frey models, observations, local reduction, heights,
-finite jets, integral charts and the inverse-limit formal-series identification.
+finite jets, integral charts, formal series and source-faithful coefficient transport.
 No global section-space atlas, arithmetic coefficient completion or ABC proof.
 This file remains outside GRWTSK.lean pending replay and trust checks. -/
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyThreePortFrame
@@ -10,7 +10,7 @@ import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyThreePortSat
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCurveGeometry
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyAffineEvaluation
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyIntegralModel
-import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyLocalInvariants
+import GRWTSK.NumberTheory.Diophantine/PrimitiveAdditiveTriples.FreyLocalInvariants
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyThreePortBounds
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyDVRReduction
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyProjectiveHeight
@@ -26,6 +26,9 @@ import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetQuotient
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreySectionJetEquiv
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyParameterSeries
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetCompletion
+
+import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetBaseChange
+import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCompletionBaseChange
 
 namespace GRWTSK.Interfaces.FreyThreePortCore
 
