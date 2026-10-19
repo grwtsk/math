@@ -37,6 +37,21 @@ hostile-control identity and requirement, clean checkout, exact declaration type
 module-coverage reconciliation, transitive axiom audit and external receipt boundary.
 The selected source is this integration commit, not the old parent source.
 
+Also retain the copied donor specifications, byte-for-byte and conjunctively:
+
+- `verification/rh-weil-criterion-interface-v0.1.toml`, blob
+  `99ac96caf12fa25bb4b729abb6cf9a0e3fb8aabb`: all 10 hostile controls, module records,
+  scope/trust/acceptance settings and nonclaims.
+- `verification/rh-weil-positive-limit-v0.1.toml`, blob
+  `f39ca01b073651ca5a0dfe14ae0dab28eb854774`: all 12 hostile controls, module records,
+  scope/trust/acceptance settings and nonclaims.
+
+These donor files retain historical parent identifiers and root-only build-target fields.
+They do not override this integration's explicit target or permit root-only acceptance.
+All 22 donor controls apply to the corresponding leaves at the INTEGRATION source.
+The preserved diagonal/polarized control describes the unchanged one-way implementation;
+it is not a mathematical denial of the separately documented polarization converse.
+
 Additionally include all four new modules, explicitly rather than by root-only inference:
 
 - `GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripRootFixture`.
