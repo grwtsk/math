@@ -10,6 +10,17 @@ variable {Obj : Type u}
 variable {T : BivariantTheory Obj}
 variable {A B C : Obj}
 
+/-- Formal bivariant equivalences are determined by their forward and backward classes. -/
+@[ext]
+theorem ext (E F : KKEquivalence T A B)
+    (hforward : E.forward = F.forward)
+    (hbackward : E.backward = F.backward) : E = F := by
+  cases E
+  cases F
+  cases hforward
+  cases hbackward
+  rfl
+
 /-- The identity correspondence is a formal bivariant equivalence. -/
 def refl (T : BivariantTheory Obj) (A : Obj) : KKEquivalence T A A where
   forward := T.identity A
