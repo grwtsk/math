@@ -49,13 +49,16 @@ theorem PrimitiveAdditiveTriple.freyIntegralModel_Δ
 theorem PrimitiveAdditiveTriple.freyIntegralModel_Δ_ne_zero
     (t : PrimitiveAdditiveTriple) : t.freyIntegralModel.Δ ≠ 0 := by
   rw [t.freyIntegralModel_Δ]
-  have ha : (t.a : ℤ) ≠ 0 := by
-    exact_mod_cast (Nat.ne_of_gt t.a_pos)
-  have hb : (t.b : ℤ) ≠ 0 := by
-    exact_mod_cast (Nat.ne_of_gt t.b_pos)
-  have hc : (t.c : ℤ) ≠ 0 := by
-    exact_mod_cast (Nat.ne_of_gt t.c_pos)
-  positivity
+  have ha : (0 : ℤ) < (t.a : ℤ) := by
+    exact_mod_cast t.a_pos
+  have hb : (0 : ℤ) < (t.b : ℤ) := by
+    exact_mod_cast t.b_pos
+  have hc : (0 : ℤ) < (t.c : ℤ) := by
+    exact_mod_cast t.c_pos
+  have hΔ :
+      (0 : ℤ) < 16 * (t.a : ℤ) ^ 2 * (t.b : ℤ) ^ 2 * (t.c : ℤ) ^ 2 := by
+    positivity
+  exact ne_of_gt hΔ
 
 /-- Base-changing the displayed integral model to `ℚ` gives the exact rational
 Frey model already used by the marked-point and affine-evaluation layers. -/
