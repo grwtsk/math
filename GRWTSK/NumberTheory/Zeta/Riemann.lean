@@ -1,5 +1,6 @@
 import GRWTSK.NumberTheory.Zeta.Riemann.Hypothesis
 import GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripAtlas
+import GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripGapReport
 import GRWTSK.NumberTheory.Zeta.Riemann.ZeroDefinitions
 import GRWTSK.NumberTheory.Zeta.Riemann.ZeroExclusions
 import GRWTSK.NumberTheory.Zeta.Riemann.CriticalLineDefect
@@ -16,5 +17,6 @@ import GRWTSK.NumberTheory.Zeta.Riemann.CertifiedZeroHeight
 import GRWTSK.LinearAlgebra.Matrix.QuantumReadiness
 import GRWTSK.Analysis.ErrorBounds.SchurJetScrewReconstruction
 
-/-! Exact target, proof-local atlas, reformulations and zero symmetries;
-RH remains an open proposition until every required local and global supplier is proved. -/
+/-! Exact target, proof-local atlas, machine-readable gap reports, reformulations and
+zero symmetries; RH remains an open proposition until every required local and global
+supplier is proved. -/
