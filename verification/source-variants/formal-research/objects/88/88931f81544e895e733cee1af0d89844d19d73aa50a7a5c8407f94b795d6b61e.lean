@@ -1,0 +1,15 @@
+import Mathlib
+#check Finset.prod_dvd_prod_of_subset
+#check ZMod.castHom_apply
+#check Finset.prod_ne_zero_iff
+#check Nat.totient_one
+#check Finset.prod_eq_mul_prod_diff_singleton
+#check Finset.prod_erase_mul
+#check Finset.mul_prod_erase
+#check Nat.Prime.not_dvd_one
+#check Nat.Prime.not_dvd_of_lt
+#check Fintype.card_subtype
+#check Nat.Prime.pos
+#check Nat.Prime.coprime_iff_not_dvd
+#check Finset.prod_pos
+#check Finset.prod_eq_prod_diff_singleton_mul

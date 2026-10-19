@@ -1,0 +1,22 @@
+import SourceCorrectedPairingToStrictInterior
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option pp.fullNames true
+set_option pp.proofs false
+
+namespace FormalResearch.RiemannHypothesis.SourceCorrectedPairingToStrictInterior
+
+#print strictColumnInterior_upper_of_complete_pairing_calibration
+#print uniform_strictColumnInterior_comparison
+#print strictColumnInterior_tail_of_complete_pairing_tail
+#print axioms strictColumnInterior_upper_of_complete_pairing_calibration
+#print axioms uniform_strictColumnInterior_comparison
+#print axioms strictColumnInterior_tail_of_complete_pairing_tail
+
+set_option pp.proofs true
+#print strictColumnInterior_upper_of_complete_pairing_calibration
+#print uniform_strictColumnInterior_comparison
+#print strictColumnInterior_tail_of_complete_pairing_tail
+
+end FormalResearch.RiemannHypothesis.SourceCorrectedPairingToStrictInterior

@@ -1,0 +1,13 @@
+import SourceActualXiMellinAtOne
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+set_option pp.funBinderTypes false
+set_option pp.letVarTypes false
+set_option pp.tagAppFns false
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourceActualXiMellinAtOne.actualXiComplexMellinTailSeven_at_one_eq_physical
+#print FormalResearch.RiemannHypothesis.SourceActualXiMellinAtOne.actualXiComplexMellinTailSeven_tendsto_one
+#print FormalResearch.RiemannHypothesis.SourceActualXiMellinAtOne.actualXiInverseSquarePhysical_integral_eq_poleValue

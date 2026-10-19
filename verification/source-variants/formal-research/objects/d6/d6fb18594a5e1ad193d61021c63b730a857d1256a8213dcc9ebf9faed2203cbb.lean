@@ -1,0 +1,12 @@
+import Mathlib.Analysis.InnerProductSpace.Positive
+import Mathlib.Tactic
+#check Complex.mul_conj
+#check Complex.conj_mul
+#check Complex.normSq_eq_norm_sq
+#check Complex.normSq_apply
+#check inner_conj_symm
+#check inner_self_eq_norm_sq_to_K
+#check Complex.sq_norm
+#check Complex.normSq_eq_conj_mul_self
+#check ContinuousLinearMap.IsSymmetric
+#check InnerProductSpace.Core.norm_inner_mul_norm

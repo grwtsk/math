@@ -1,0 +1,13 @@
+import SourceJointCountertermAlignment
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option pp.proofs false
+set_option pp.fullNames true
+
+namespace FormalResearch.RiemannHypothesis.SourceJointCountertermAlignment
+
+#print divisor_remainders_eq_joint_work_after_mean_cancellation
+#print axioms divisor_remainders_eq_joint_work_after_mean_cancellation
+
+end FormalResearch.RiemannHypothesis.SourceJointCountertermAlignment

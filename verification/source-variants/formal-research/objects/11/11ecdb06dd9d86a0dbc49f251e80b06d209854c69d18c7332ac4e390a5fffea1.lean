@@ -1,0 +1,19 @@
+import SourceActualFullCriticalPartition
+import Lean
+#check RH16ActualFullCriticalPartition.actualFullCriticalContribution
+#print axioms RH16ActualFullCriticalPartition.actualFullCriticalContribution
+#check RH16ActualFullCriticalPartition.actualFullOffcriticalContribution
+#print axioms RH16ActualFullCriticalPartition.actualFullOffcriticalContribution
+#check RH16ActualFullCriticalPartition.actual_full_eq_critical_add_offcritical
+#print axioms RH16ActualFullCriticalPartition.actual_full_eq_critical_add_offcritical
+#check RH16ActualFullCriticalPartition.actual_full_critical_real_nonneg
+#print axioms RH16ActualFullCriticalPartition.actual_full_critical_real_nonneg
+#check RH16ActualFullCriticalPartition.original_quadratic_ge_offcritical
+#print axioms RH16ActualFullCriticalPartition.original_quadratic_ge_offcritical
+#check RH16ActualFullCriticalPartition.estimate_of_actual_full_offcritical_cap
+#print axioms RH16ActualFullCriticalPartition.estimate_of_actual_full_offcritical_cap
+open Lean Elab Command
+run_cmd do
+  let env ← getEnv
+  for m in env.allImportedModuleNames do
+    logInfo m!"RH16_IMPORT {m}"

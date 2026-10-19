@@ -1,0 +1,7 @@
+import FormalResearch.RiemannHypothesis.SourceComparison.CorrelationSecondDerivative
+import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
+#check Continuous.intervalIntegrable
+#check intervalIntegral.integral_eq_sub_of_hasDerivAt
+#check HasDerivAt.const_mul
+#check abs_add_le
+#check abs_add_le_abs_add_abs

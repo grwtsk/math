@@ -1,0 +1,7 @@
+import ActualBoundaryCorrelation
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check RH16IndependentChallengeNext.actual_correlation_upper_strip_integral
+#print axioms RH16IndependentChallengeNext.actual_correlation_upper_strip_integral
+#check RH16IndependentChallengeNext.actual_correlation_upper_strip_lower
+#print axioms RH16IndependentChallengeNext.actual_correlation_upper_strip_lower
