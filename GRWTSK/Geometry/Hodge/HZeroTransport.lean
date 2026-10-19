@@ -64,7 +64,7 @@ abbrev transportHZeroModel
   P.transportHZeroModel M
 
 /-- Transport the exact equality `ker Δ₀ = ker δ` through an exact Hodge equivalence. -/
-def _root_.GRWTSK.LinearAlgebra.FramedFiberPort.HodgeEquiv.transportHarmonicKernel
+theorem _root_.GRWTSK.LinearAlgebra.FramedFiberPort.HodgeEquiv.transportHarmonicKernel
     (P : HodgeEquiv A B) (K : HarmonicKernelExact A) :
     HarmonicKernelExact B where
   harmonic_iff_cocycle := by

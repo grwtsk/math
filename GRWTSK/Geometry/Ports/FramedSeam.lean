@@ -42,7 +42,7 @@ def identity (frame : Coord ≃ₗ[R] E) : FramedPort R Coord E E where
   coordinateMap := LinearMap.id
   frame_comm := by
     ext x
-    simp [LinearMap.comp_apply]
+    simp
 
 end FramedPort
 
@@ -76,16 +76,16 @@ theorem of_coordinate_apply
   exact h x
 
 /-- Framed seam equality is reflexive. -/
-def refl (P : FramedPort R Coord E F) : SameFramedSeam P P where
+theorem refl (P : FramedPort R Coord E F) : SameFramedSeam P P where
   coordinate_eq := rfl
 
 /-- Framed seam equality is symmetric. -/
-def symm {P Q : FramedPort R Coord E F}
+theorem symm {P Q : FramedPort R Coord E F}
     (S : SameFramedSeam P Q) : SameFramedSeam Q P where
   coordinate_eq := S.coordinate_eq.symm
 
 /-- Framed seam equality is transitive. -/
-def trans {P Q T : FramedPort R Coord E F}
+theorem trans {P Q T : FramedPort R Coord E F}
     (S₁ : SameFramedSeam P Q) (S₂ : SameFramedSeam Q T) :
     SameFramedSeam P T where
   coordinate_eq := S₁.coordinate_eq.trans S₂.coordinate_eq

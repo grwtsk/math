@@ -181,7 +181,7 @@ def identityChern : RationalChernData ℚ ℚ where
   correction := 0
   cycleFromK := LinearMap.id
   cycleFromK_eq := by
-    ext x
+    ext
     simp
   degreeProfile := "degree zero fixture"
   supportProfile := "finite identity support"

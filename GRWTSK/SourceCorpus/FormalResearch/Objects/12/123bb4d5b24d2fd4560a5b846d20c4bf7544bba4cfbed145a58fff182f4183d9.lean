@@ -1,0 +1,7 @@
+import FormalResearch.RiemannHypothesis.SourceBumpAutocorrelation
+open FormalResearch.RiemannHypothesis.SourceBumpAutocorrelation
+#print overlapProfile
+#print overlapP0
+#check overlapProfile
+#check deriv_div_const
+#check deriv_mul

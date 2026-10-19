@@ -1,0 +1,11 @@
+import SourceJointMangoldtBaseline
+
+set_option pp.fullNames true
+set_option pp.universes true
+set_option pp.explicit true
+set_option pp.notation false
+
+#check FormalResearch.RiemannHypothesis.SourceJointMangoldtBaseline.jointMangoldtTestProfile_integrable_and_integral_zero
+#check FormalResearch.RiemannHypothesis.SourceJointMangoldtBaseline.jointMangoldtTestProfile_zero_of_log_cutoff_le
+#check FormalResearch.RiemannHypothesis.SourceJointMangoldtBaseline.jointMangoldtTestProfile_window_eq_neg_lower_tail
+#check FormalResearch.RiemannHypothesis.SourceJointMangoldtBaseline.strictColumnInterior_eq_neg_lower_tail_and_joint_work

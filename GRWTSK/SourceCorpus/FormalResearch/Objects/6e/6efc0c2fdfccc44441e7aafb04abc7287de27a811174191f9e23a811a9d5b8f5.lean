@@ -1,0 +1,10 @@
+import FormalResearch.RiemannHypothesis.SourceCriticalGreenReadout
+
+open FormalResearch.RiemannHypothesis.SourceCriticalGreenReadout
+
+#print dirichletTent_integral_second_deriv_eq_endpoint_interpolation
+#print pairedTailTest_integrated_green_readout
+#print pairedTailTest_deriv_at_zero
+#print pairedTailTest_deriv_at_upper
+#print pairedTailTest_second_deriv_moments
+#print pairedTailTest_second_deriv_not_ae_nonneg

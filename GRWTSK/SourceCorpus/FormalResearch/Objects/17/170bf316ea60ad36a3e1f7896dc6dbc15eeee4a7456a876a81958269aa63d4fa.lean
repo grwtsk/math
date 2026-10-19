@@ -1,0 +1,29 @@
+import FormalResearch.FiniteLatticeArithmetic.GraphCriterion
+import FormalResearch.FiniteLatticeArithmetic.DivisorRepresentation
+import FormalResearch.FiniteLatticeArithmetic.CyclicGraphWitness
+import FormalResearch.FiniteLatticeArithmetic.DivisorSourceBridge
+import FormalResearch.FiniteLatticeArithmetic.DivisorFixtures
+import FormalResearch.FiniteLatticeArithmetic.PerfectImageIntersection
+import FormalResearch.PositiveAtlas.FeshbachEquationIdeal
+import FormalResearch.PositiveAtlas.FeshbachInertia
+import FormalResearch.PositiveAtlas.FiniteHeightMaximalDefect
+import FormalResearch.PositiveAtlas.QuadraticDefect
+import FormalResearch.PositiveAtlas.QuantitativeGapIteration
+import FormalResearch.PositiveAtlas.QuantitativeGapMetric
+import FormalResearch.PositiveAtlas.QuantitativeGapSchur
+import FormalResearch.PositiveAtlas.QuantitativeGapSourceMetric
+import FormalResearch.PositiveAtlas.QuantitativeGapSourceSchur
+import FormalResearch.PositiveAtlas.QuantitativeGapSourceCertificate
+import FormalResearch.RiemannHypothesis.SourceDivisorLatticeArithmetic
+import FormalResearch.RiemannHypothesis.SourceDivisorLatticeGram
+
+/-!
+# Finite lattice arithmetic and quantitative transport
+
+Native draft results under the repository pins. Reviewed historical Vaughan
+adapters are replayed separately and are not silently imported into this root.
+The uniform RH witness and the physical Yang--Mills realization remain open.
+
+Direction, theorem selection and evaluation: grwtsk contributors.
+Construction and source-scoped independent review: OpenAI Codex.
+-/

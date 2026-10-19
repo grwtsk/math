@@ -37,16 +37,19 @@ def hodgeData (G : OrientedIncidence Vertex Edge) :
   delta := delta G
   deltaStar := deltaStar G
 
+omit [Fintype Edge] in
 @[simp]
 theorem delta_apply
     (G : OrientedIncidence Vertex Edge) (x : Vertex → ℝ) :
     delta G x = (incidenceMatrix G) *ᵥ x := rfl
 
+omit [Fintype Vertex] in
 @[simp]
 theorem deltaStar_apply
     (G : OrientedIncidence Vertex Edge) (y : Edge → ℝ) :
     deltaStar G y = (incidenceMatrix G)ᵀ *ᵥ y := rfl
 
+omit [Fintype Edge] in
 /-- The matrix differential agrees with the direct cellular coboundary. -/
 theorem delta_eq_coboundary
     (G : OrientedIncidence Vertex Edge) :

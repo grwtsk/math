@@ -1,0 +1,62 @@
+import scratch.common_mean_20261004.FiveModeSourceTailMajorant
+import scratch.common_mean_20261004.FiveModeCountConstants
+
+/-!
+Conditional finite theorem for the literal repository source. The actual
+transform majorant, original Z, both signs, gamma budget, source identity,
+continuum maximum and final rational arithmetic have proofs. The published
+complete verified-height assertion and corrected counting theorem have no
+accepted Lean instances here. The strict Stieltjes adapter and its counting
+integral budget are also explicitly unproved premises. No research axiom or
+admitted proof is introduced, and no all-scale witness follows.
+
+Originating direction, theorem selection, corrections and evaluation:
+grwtsk contributors. Lean assistance: OpenAI Codex.
+-/
+set_option autoImplicit false
+noncomputable section
+namespace CommonMeanScratch
+open MeasureTheory
+open FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+
+/-- The source-specific transform estimate is proved. The remaining sixth-
+moment input refers to the complete strict positive-ordinate occurrence sum. -/
+theorem actual_finite_bounds_of_verified_height_and_sixth_tail
+    (hverified : CompletePositiveVerifiedHeight 3000175332800)
+    (hs : Summable (positiveSixthPowerWeight 3000000000000))
+    (hcount : actualPositiveSixthPowerTail 3000000000000 ≤
+      positiveSixthPowerCountEnvelope 3000000000000) :
+    (∀ A : ℝ, 1 ≤ A → A ≤ 160 →
+      -(1/500000 : ℝ) ≤ dotProduct (alpha A) ((sourceMatrix A).mulVec (alpha A)) ∧
+      EstimateMertensResidual.mertensResidual A ≤
+        sourceA0/2 + 195/A^2 + (1/1000000 : ℝ)) ∧
+    (∀ A : ℝ, 10 ≤ A → A ≤ 160 →
+      EstimateMertensResidual.mertensResidual A < 0) := by
+  apply actual_finite_bounds_of_complete_height_and_strict_tail hverified
+  exact actual_strict_tail_certificate_of_source_and_count
+    (fun A hA _ => actual_source_absolute_tail_majorant A _ hA (by norm_num)) hs
+    (hcount.trans count_envelope_cutoff_le_rational_cap)
+
+/-- Named external inputs and the remaining analytic count adapter. In
+particular, `hcountBudget` is not asserted as a proved paper identity: it is
+the exact next Lean obligation. `hstieltjes` retains -N(T)/T^6 and integral
+convergence, with closed N(T) and a strict omitted tail even at a zero ordinate. -/
+theorem actual_finite_bounds_of_external_zero_inputs
+    (hverified : CompletePositiveVerifiedHeight 3000175332800)
+    (hBW : CorrectedBellottiWongCount)
+    (hstieltjes : PositiveSixthPowerStieltjes 3000000000000)
+    (hcountBudget : CorrectedBellottiWongCount →
+      -actualPositiveZeroCount 3000000000000/(3000000000000 : ℝ)^6 +
+        6*(∫ t : ℝ in Set.Ioi 3000000000000, actualPositiveZeroCount t/t^7) ≤
+          positiveSixthPowerCountEnvelope 3000000000000) :
+    (∀ A : ℝ, 1 ≤ A → A ≤ 160 →
+      -(1/500000 : ℝ) ≤ dotProduct (alpha A) ((sourceMatrix A).mulVec (alpha A)) ∧
+      EstimateMertensResidual.mertensResidual A ≤
+        sourceA0/2 + 195/A^2 + (1/1000000 : ℝ)) ∧
+    (∀ A : ℝ, 10 ≤ A → A ≤ 160 →
+      EstimateMertensResidual.mertensResidual A < 0) := by
+  apply actual_finite_bounds_of_verified_height_and_sixth_tail hverified hstieltjes.1
+  rw [hstieltjes.2.2]
+  exact hcountBudget hBW
+
+end CommonMeanScratch

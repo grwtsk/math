@@ -1,0 +1,17 @@
+import ActualSupportEdgeMangoldtRow
+set_option linter.style.header false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.rawOnError false
+open FormalResearch.RiemannHypothesis.ActualSupportEdgeMangoldtRow
+set_option pp.fullNames false
+#print actual_correlation_third_edge_abs_le
+#print actual_correlation_second_edge_abs_le
+#print actual_correlation_edge_abs_le
+#print actual_correlation_first_edge_abs_le
+#print actual_finite_mangoldt_half_row_abs_le
+#print actualLowerColumnHalfMangoldtRow_abs_le
