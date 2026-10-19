@@ -1,5 +1,7 @@
 import GRWTSK.LinearAlgebra.FiniteSpectralHeat
 
+noncomputable section
+
 namespace GRWTSK.LinearAlgebra.FiniteSpectralHeat
 
 open GRWTSK.LinearAlgebra.FinitePositiveHodgeHeat
@@ -46,6 +48,7 @@ theorem shiftedOperator_comp_resolvent
   ext x
   apply M.frame.injective
   funext i
+  simp only [LinearMap.comp_apply, LinearMap.id_apply]
   rw [M.shiftedOperator_coordinates, M.resolvent_coordinates]
   change
     (M.eigenvalue i - z) *
@@ -60,6 +63,7 @@ theorem resolvent_comp_shiftedOperator
   ext x
   apply M.frame.injective
   funext i
+  simp only [LinearMap.comp_apply, LinearMap.id_apply]
   rw [M.resolvent_coordinates, M.shiftedOperator_coordinates]
   change
     (M.eigenvalue i - z)⁻¹ *
@@ -74,6 +78,7 @@ theorem resolvent_operator_comm
   ext x
   apply M.frame.injective
   funext i
+  simp only [LinearMap.comp_apply]
   rw [M.resolvent_coordinates, M.operator_coordinates,
     M.operator_coordinates, M.resolvent_coordinates]
   change

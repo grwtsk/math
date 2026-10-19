@@ -28,7 +28,6 @@ theorem operatorDefect_comp
         (operatorDefect V D_F D_G).comp U := by
   ext e
   simp [operatorDefect, LinearMap.comp_apply]
-  abel
 
 /-- Exact operator transport through a port. -/
 def Intertwines (U : E →ₗ[R] F) (D_E : E →ₗ[R] E) (D_F : F →ₗ[R] F) : Prop :=
@@ -38,7 +37,7 @@ def Intertwines (U : E →ₗ[R] F) (D_E : E →ₗ[R] E) (D_F : F →ₗ[R] F) 
 theorem intertwines_iff_defect_eq_zero
     (U : E →ₗ[R] F) (D_E : E →ₗ[R] E) (D_F : F →ₗ[R] F) :
     Intertwines U D_E D_F ↔ operatorDefect U D_E D_F = 0 := by
-  simp [Intertwines, operatorDefect]
+  simp [Intertwines, operatorDefect, sub_eq_zero]
 
 /-- Exact intertwiners compose. -/
 theorem Intertwines.comp

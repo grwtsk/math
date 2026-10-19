@@ -28,7 +28,7 @@ def realEdgeDelta : (ℝ × ℝ) →ₗ[ℝ] ℝ where
 def realEdgeDeltaStar : ℝ →ₗ[ℝ] (ℝ × ℝ) where
   toFun t := (t, -t)
   map_add' s t := by
-    ext <;> simp
+    ext <;> simp [add_comm]
   map_smul' r t := by
     ext <;> simp
 
@@ -52,7 +52,7 @@ def realEdgeEnergy (x : ℝ × ℝ) : ℝ :=
 theorem realEdgeEnergy_nonneg (x : ℝ × ℝ) :
     0 ≤ realEdgeEnergy x := by
   simp [realEdgeEnergy, realEdgePairing, realEdgeDelta]
-  exact sq_nonneg (x.1 - x.2)
+  exact mul_self_nonneg (x.1 - x.2)
 
 /-- The edge energy vanishes exactly on constant vertex values. -/
 theorem realEdgeEnergy_eq_zero_iff (x : ℝ × ℝ) :
@@ -62,9 +62,13 @@ theorem realEdgeEnergy_eq_zero_iff (x : ℝ × ℝ) :
 /-- The degree-zero harmonic vectors are exactly the constant vertex values. -/
 theorem realEdgeHarmonic_iff (x : ℝ × ℝ) :
     realEdgeHodge.IsHarmonic0 x ↔ x.1 = x.2 := by
-  simp [TwoTermHodgeData.IsHarmonic0, TwoTermHodgeData.laplacian0,
-    realEdgeHodge, realEdgeDelta, realEdgeDeltaStar,
-    LinearMap.comp_apply, sub_eq_zero]
+  constructor
+  · intro h
+    change realEdgeDeltaStar (realEdgeDelta x) = 0 at h
+    exact sub_eq_zero.mp (congrArg Prod.fst h)
+  · intro h
+    change realEdgeDeltaStar (realEdgeDelta x) = 0
+    simp [realEdgeDelta, realEdgeDeltaStar, h]
 
 /-- Scalar extension of rational vertex cochains. -/
 def castVertex (x : ℚ × ℚ) : ℝ × ℝ :=
@@ -90,9 +94,8 @@ theorem cast_harmonic
     (x : ℚ × ℚ) (hx : edgeHodge.IsHarmonic0 x) :
     realEdgeHodge.IsHarmonic0 (castVertex x) := by
   have hconst : x.1 = x.2 := by
-    simpa [TwoTermHodgeData.IsHarmonic0, TwoTermHodgeData.laplacian0,
-      edgeHodge, edgeDelta, edgeDeltaStar, LinearMap.comp_apply,
-      sub_eq_zero] using hx
+    change edgeDeltaStar (edgeDelta x) = 0 at hx
+    exact sub_eq_zero.mp (congrArg Prod.fst hx)
   exact (realEdgeHarmonic_iff (castVertex x)).2 (by simpa [castVertex] using hconst)
 
 /-- The finite edge constant representative commutes with scalar extension. -/

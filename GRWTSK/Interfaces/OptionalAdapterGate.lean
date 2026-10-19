@@ -187,8 +187,8 @@ theorem addTransport_result :
     addTransport.apply .transport = some 3 ∧
       addTransport.apply .boundary = none := by
   constructor
-  · simp [AcceptedAdapter.apply, addTransport]
   · simp [AcceptedAdapter.apply, addTransport, Change.apply]
+  · simp [AcceptedAdapter.apply, addTransport, Change.apply, emptyLedger]
 
 /-- Selecting no adapter leaves the empty ledger empty. -/
 theorem noSelection_result :

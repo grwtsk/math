@@ -94,7 +94,7 @@ theorem harmonic0_iff (P : HodgeEquiv A B) (x : A₀) :
   · exact P.toPort.map_harmonic0
   · intro h
     have hs := P.symm.toPort.map_harmonic0 h
-    simpa using hs
+    simpa [symm, toPort] using hs
 
 /-- Degree-one harmonicity is preserved and reflected by an exact Hodge equivalence. -/
 theorem harmonic1_iff (P : HodgeEquiv A B) (x : A₁) :
@@ -103,19 +103,19 @@ theorem harmonic1_iff (P : HodgeEquiv A B) (x : A₁) :
   · exact P.toPort.map_harmonic1
   · intro h
     have hs := P.symm.toPort.map_harmonic1 h
-    simpa using hs
+    simpa [symm, toPort] using hs
 
 /-- Exact Hodge equivalences commute with the degree-zero Laplacian. -/
 theorem laplacian0_apply (P : HodgeEquiv A B) (x : A₀) :
     P.equiv0 (A.laplacian0 x) = B.laplacian0 (P.equiv0 x) := by
   have h := congrArg (fun L : A₀ →ₗ[R] B₀ => L x) P.toPort.laplacian0_comm
-  simpa [LinearMap.comp_apply] using h
+  simpa [toPort, LinearMap.comp_apply] using h
 
 /-- Exact Hodge equivalences commute with the degree-one Laplacian. -/
 theorem laplacian1_apply (P : HodgeEquiv A B) (x : A₁) :
     P.equiv1 (A.laplacian1 x) = B.laplacian1 (P.equiv1 x) := by
   have h := congrArg (fun L : A₁ →ₗ[R] B₁ => L x) P.toPort.laplacian1_comm
-  simpa [LinearMap.comp_apply] using h
+  simpa [toPort, LinearMap.comp_apply] using h
 
 end HodgeEquiv
 

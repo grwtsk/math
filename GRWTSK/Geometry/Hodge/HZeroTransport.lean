@@ -21,7 +21,8 @@ variable {B : TwoTermHodgeData R B₀ B₁}
 namespace HodgeEquiv
 
 /-- Exact Hodge equivalence induces an equivalence of degree-zero cocycle spaces. -/
-def cocycleEquiv (P : HodgeEquiv A B) : Cocycle0 A ≃ₗ[R] Cocycle0 B where
+def _root_.GRWTSK.LinearAlgebra.FramedFiberPort.HodgeEquiv.cocycleEquiv
+    (P : HodgeEquiv A B) : Cocycle0 A ≃ₗ[R] Cocycle0 B where
   toFun x :=
     ⟨P.equiv0 x, by
       have h := P.delta_apply (x : A₀)
@@ -31,7 +32,7 @@ def cocycleEquiv (P : HodgeEquiv A B) : Cocycle0 A ≃ₗ[R] Cocycle0 B where
     ⟨P.equiv0.symm y, by
       have h := P.symm.delta_apply (y : B₀)
       rw [y.property] at h
-      simpa using h.symm⟩
+      simpa [GRWTSK.LinearAlgebra.FramedFiberPort.HodgeEquiv.symm] using h.symm⟩
   left_inv x := by
     apply Subtype.ext
     exact P.equiv0.symm_apply_apply x
@@ -45,15 +46,25 @@ def cocycleEquiv (P : HodgeEquiv A B) : Cocycle0 A ≃ₗ[R] Cocycle0 B where
     apply Subtype.ext
     simp
 
+/-- Compatibility name for the cocycle equivalence in the original transport namespace. -/
+abbrev cocycleEquiv (P : HodgeEquiv A B) : Cocycle0 A ≃ₗ[R] Cocycle0 B :=
+  P.cocycleEquiv
+
 /-- Transport a complete degree-zero cohomology model through an exact Hodge equivalence. -/
-def transportHZeroModel
+def _root_.GRWTSK.LinearAlgebra.FramedFiberPort.HodgeEquiv.transportHZeroModel
     {HZero : Type h} [AddCommGroup HZero] [Module R HZero]
     (P : HodgeEquiv A B) (M : HZeroModel A HZero) :
     HZeroModel B HZero where
   classEquiv := M.classEquiv.trans P.cocycleEquiv
 
+/-- Compatibility name for degree-zero model transport. -/
+abbrev transportHZeroModel
+    {HZero : Type h} [AddCommGroup HZero] [Module R HZero]
+    (P : HodgeEquiv A B) (M : HZeroModel A HZero) : HZeroModel B HZero :=
+  P.transportHZeroModel M
+
 /-- Transport the exact equality `ker Δ₀ = ker δ` through an exact Hodge equivalence. -/
-def transportHarmonicKernel
+def _root_.GRWTSK.LinearAlgebra.FramedFiberPort.HodgeEquiv.transportHarmonicKernel
     (P : HodgeEquiv A B) (K : HarmonicKernelExact A) :
     HarmonicKernelExact B where
   harmonic_iff_cocycle := by
@@ -77,6 +88,11 @@ def transportHarmonicKernel
       have hBy : B.IsHarmonic0 (P.equiv0 x) := (P.harmonic0_iff x).1 hAx
       simpa [x] using hBy
 
+/-- Compatibility name for the exact harmonic-kernel theorem transport. -/
+abbrev transportHarmonicKernel
+    (P : HodgeEquiv A B) (K : HarmonicKernelExact A) : HarmonicKernelExact B :=
+  P.transportHarmonicKernel K
+
 end HodgeEquiv
 
 section RationalTransport
@@ -97,7 +113,7 @@ variable {QB : RationalTwoTermHodgeData QB₀ QB₁}
 namespace CycleHZeroComparison
 
 /-- Transport a cycle/Hodge-to-`H⁰` comparison through an exact rational Hodge equivalence. -/
-def transport
+def _root_.GRWTSK.Geometry.Hodge.DegreeZeroCohomology.CycleHZeroComparison.transport
     (C : CycleHZeroComparison H QA) (P : HodgeEquiv QA QB) :
     CycleHZeroComparison H QB where
   hodgeToCocycle := P.cocycleEquiv.toLinearMap.comp C.hodgeToCocycle
@@ -106,17 +122,29 @@ def transport
     ext z
     simp [LinearMap.comp_apply, CycleHZeroComparison.cycleToCocycle_apply]
 
+/-- Compatibility name for cocycle comparison transport. -/
+abbrev transport
+    (C : CycleHZeroComparison H QA) (P : HodgeEquiv QA QB) :
+    CycleHZeroComparison H QB :=
+  C.transport P
+
 end CycleHZeroComparison
 
 namespace RationalHodgeHZeroAdapter
 
 /-- Transport a complete rational-Hodge/`H⁰` adapter through an exact Hodge equivalence. -/
-def transport
+def _root_.GRWTSK.Geometry.Hodge.DegreeZeroCohomology.RationalHodgeHZeroAdapter.transport
     (G : RationalHodgeHZeroAdapter H QA) (P : HodgeEquiv QA QB) :
     RationalHodgeHZeroAdapter H QB where
   globalTheorem := G.globalTheorem
   comparison := G.comparison.transport P
   harmonicKernel := P.transportHarmonicKernel G.harmonicKernel
+
+/-- Compatibility name for complete rational-Hodge adapter transport. -/
+abbrev transport
+    (G : RationalHodgeHZeroAdapter H QA) (P : HodgeEquiv QA QB) :
+    RationalHodgeHZeroAdapter H QB :=
+  G.transport P
 
 end RationalHodgeHZeroAdapter
 

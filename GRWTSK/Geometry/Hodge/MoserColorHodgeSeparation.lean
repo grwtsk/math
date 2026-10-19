@@ -38,10 +38,10 @@ theorem constantColor_not_proper (c : Fin 4) :
 /-- The harmonic constants and proper colorings are therefore noncoercible interfaces. -/
 theorem harmonic_constant_not_coloring (c : Fin 4) :
     (∃ x : Fin 7 → ℝ,
-      FiniteGraphCellular.Moser.energy x = 0 ∧ x = fun _ => (c : ℕ)) ∧
+      FiniteGraphCellular.Moser.energy x = 0 ∧ x = fun _ => ((c : ℕ) : ℝ)) ∧
       ¬ ProperColoring moserAdj (fun _ : Fin 7 => c) := by
   constructor
-  · refine ⟨fun _ => (c : ℕ), ?_, rfl⟩
+  · refine ⟨fun _ => ((c : ℕ) : ℝ), ?_, rfl⟩
     exact (FiniteGraphCellular.Moser.energy_eq_zero_iff_constant _).2
       ⟨(c : ℕ), rfl⟩
   · exact constantColor_not_proper c
