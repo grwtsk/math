@@ -1,5 +1,5 @@
 ---
-schema_version: 0.1.0
+schema_version: 0.1.1
 id: urn:uuid:6f8afa7d-458b-4dc9-8bff-230582f3a0c7
 record_kind: subject_concept
 scheme: grwtsk-mathematics
@@ -10,13 +10,13 @@ broader:
   - {edge: parent-selfadjoint, target: 'urn:uuid:7ac44c10-be39-42fa-ac8e-c3b2a3bf1e64', type: subjectSpecialization, origin: direct, status: proposed, sources: [L1, L2], rationale: 'The specified spectral subject concerns a self-adjoint transition-operator family.'}
   - {edge: parent-reversible, target: 'urn:uuid:9d8aa282-1cde-42d4-81d0-e80b543a9910', type: subjectSpecialization, origin: direct, status: proposed, sources: [L2], rationale: 'Spectral properties are a specialized subject within the specified finite reversible-chain theory.'}
 navigation_parent: urn:uuid:7ac44c10-be39-42fa-ac8e-c3b2a3bf1e64
-facets: [{axis: objects, target: 'urn:uuid:9ef6cd3e-21ce-440d-845f-702f515bda95'}]
+facets: [{edge: facet-operator-spectrum, axis: objects, target: 'urn:uuid:9ef6cd3e-21ce-440d-845f-702f515bda95', type: facet, origin: direct, status: proposed, sources: [L1, L2], rationale: 'The specified finite transition operator has a bounded-operator spectrum in the complex weighted Hilbert-space realization.'}]
 relations: []
 sources: [{key: L1, locator: 'Self-adjoint spectral setting'}, {key: L2, locator: 'Section 1.6; finite transition-matrix setting'}]
 warrant: {literary: 'Finite reversible chains have an established operator-spectral treatment.', user: 'Find the same topic from analysis or probability.', organizational: 'Positive polyhierarchy example without duplicated definitions or source migrations.'}
 status: {editorial: proposed, mathematical_novelty: not_claimed, proof: not_applicable, attribution: local_editorial_text, operational_permission: not_conferred}
 rights: {local_prose: MIT, source_reuse: reference_only}
-revision_history: [{version: 0.1, date: '2026-10-19', change: 'Initial draft with two explicit proposed parents.'}]
+revision_history: [{version: 0.1, date: '2026-10-19', change: 'Initial draft with two explicit proposed parents.'}, {version: '0.1.1', date: '2026-10-19', change: 'Explicit facet edge identity, provenance and proposed status; concept scope and parentage unchanged.'}]
 proposal_refs: ['urn:uuid:dd591907-4562-43ba-bb64-aff410d76b73']
 decision_refs: [D01, D03, D04]
 ---
