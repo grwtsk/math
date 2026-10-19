@@ -2,7 +2,7 @@
 Formalization assistance: OpenAI.
 
 Narrow isolated root for actual rational two-torsion point translation and its
-source-bound finite jets, completion pullbacks and weighted coefficient metrics and integral lattice images. Earlier replay
+source-bound finite jets, completion pullbacks and weighted coefficient metrics, integral lattices and exact cokernels. Earlier replay
 targets and FreyThreePortCore are unchanged. Importing this root is not proof of verification coverage.
 -/
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionTranslation
@@ -14,3 +14,4 @@ import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedSect
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedBasis
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedEnergy
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedLattice
+import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedCokernel
