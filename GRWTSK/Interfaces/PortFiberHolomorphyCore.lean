@@ -6,17 +6,22 @@ target while preserving the aggregate replay boundary until this slice passes di
 -/
 import GRWTSK.Topology.PortFiber.Basic
 import GRWTSK.Topology.PortFiber.Path
+import GRWTSK.Topology.PortFiber.MultiCertificate
 import GRWTSK.Topology.PortFiber.Certified
+import GRWTSK.Topology.PortFiber.Gluing
 import GRWTSK.Analysis.Complex.PortFiberHolomorphy
+import GRWTSK.Analysis.Complex.HolomorphicRestriction
+import GRWTSK.Analysis.Complex.HolomorphicRestrictionGluing
 import GRWTSK.Topology.Algebra.PortFiberRing
 import GRWTSK.Logic.SimultaneousProofArchitecture
 import GRWTSK.NumberTheory.Zeta.Riemann.PortFiberArchitecture
+import GRWTSK.NumberTheory.Zeta.Riemann.PortFiberLocalToGlobal
 import GRWTSK.Interfaces.PortFiberSimultaneousLedger
 
 namespace GRWTSK.Interfaces.PortFiberHolomorphyCore
 
 /-- Source version of this isolated interface. -/
-def schemaVersion : String := "PortFiberHolomorphyCore/0.3"
+def schemaVersion : String := "PortFiberHolomorphyCore/0.4"
 
 /-- Source state remains distinct from kernel-checked state. -/
 inductive VerificationState
