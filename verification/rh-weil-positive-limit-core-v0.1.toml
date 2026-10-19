@@ -33,6 +33,9 @@ name = "GRWTSK.NumberTheory.Zeta.Riemann.WeilPositiveLimitCore"
 name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalLinePositivityCriterion"
 
 [[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.MirrorPairingCriterion"
+
+[[modules]]
 name = "GRWTSK.NumberTheory.Zeta.Riemann"
 
 [[hostile_controls]]
@@ -52,8 +55,8 @@ id = "reject-positivity-without-comparison"
 description = "Nonnegative approximants imply target positivity only through the declared pointwise vanishing comparison."
 
 [[hostile_controls]]
-id = "reject-defect-criterion-as-weil"
-description = "The canonical negative-defect criterion cannot be reported as the classical zeta Weil test-function criterion."
+id = "reject-mirror-core-as-analytic-weil"
+description = "The local defect and orbitwise mirror-pairing criteria cannot be reported as the classical admissible-test-function Weil criterion."
 
 [[hostile_controls]]
 id = "reject-conditional-rh-promotion"
@@ -68,7 +71,8 @@ requires_named_downstream_blockers = true
 [nonclaims]
 claims = [
   "unconditional Riemann hypothesis",
-  "classical Weil test-function criterion formalized from an external source",
+  "classical analytic Weil test-function criterion formalized from an external source",
+  "analytic realization of all local mirror tests by one admissible Fourier or Mellin test class",
   "source-faithful arithmetic-to-elliptic interpolation",
   "vanishing of the zeta arithmetic, geometric, mirror, or tail residuals",
   "complete zeta-zero divisor",
