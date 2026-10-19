@@ -1,5 +1,6 @@
 import GRWTSK.Logic.SimultaneousProofPortfolio
 import GRWTSK.NumberTheory.Zeta.Riemann.PortFiberLocalToGlobal
+import GRWTSK.Analysis.Complex.HolomorphicSectionRing
 
 namespace GRWTSK.NumberTheory.Zeta.Riemann.PortFiberTheoremPortfolio
 
@@ -15,9 +16,20 @@ structure OpenObligations where
   sourceComparison : Prop
   convergenceToWeil : Prop
 
+/-- The complete restriction path on actual holomorphic section rings carries both selected laws. -/
+def holomorphicSectionRingClaim : Prop :=
+  GRWTSK.Analysis.Complex.HolomorphicSectionRing.simultaneousProperty.Holds
+    GRWTSK.Analysis.Complex.HolomorphicSectionRing.Fixtures.restrictionPath.composite
+
+/-- Proof that the whole holomorphic-section restriction path is simultaneously holomorphic-fiber
+preserving and a continuous ring homomorphism. -/
+theorem holomorphicSectionRingClaim_proof : holomorphicSectionRingClaim :=
+  GRWTSK.Analysis.Complex.HolomorphicSectionRing.Fixtures.restrictionPath.certified
+
 /-- Local branches in the RH-facing theorem portfolio. -/
 inductive LocalIndex
   | simultaneousRestriction
+  | holomorphicSectionRing
   | ordinaryFunctionGluing
   | holomorphicGlobalizationBoundary
   | arithmeticBridge
@@ -28,6 +40,7 @@ inductive LocalIndex
 /-- Exact proposition owned by each local branch. -/
 def LocalClaim (O : OpenObligations) : LocalIndex → Prop
   | .simultaneousRestriction => restrictionClaim
+  | .holomorphicSectionRing => holomorphicSectionRingClaim
   | .ordinaryFunctionGluing => gluingClaim
   | .holomorphicGlobalizationBoundary => holomorphicBoundaryClaim
   | .arithmeticBridge => O.arithmeticBridge
@@ -39,6 +52,7 @@ def localPortfolio (O : OpenObligations) :
     Portfolio LocalIndex (LocalClaim O) where
   disposition
     | .simultaneousRestriction => .proved restrictionClaim_proof
+    | .holomorphicSectionRing => .proved holomorphicSectionRingClaim_proof
     | .ordinaryFunctionGluing => .proved gluingClaim_proof
     | .holomorphicGlobalizationBoundary => .proved holomorphicBoundaryClaim_proof
     | .arithmeticBridge =>
@@ -60,6 +74,11 @@ def architecture (O : OpenObligations) :
 theorem restriction_available (O : OpenObligations) :
     LocalClaim O .simultaneousRestriction :=
   restrictionClaim_proof
+
+/-- The holomorphic-section ring theorem is available without any application obligation. -/
+theorem holomorphic_section_ring_available (O : OpenObligations) :
+    LocalClaim O .holomorphicSectionRing :=
+  holomorphicSectionRingClaim_proof
 
 /-- The ordinary gluing theorem is available without any application obligation. -/
 theorem gluing_available (O : OpenObligations) :
@@ -86,6 +105,14 @@ theorem restriction_survives_rejected_arithmetic
     (withArithmeticDisposition O (.refuted h)).local.disposition
         .simultaneousRestriction =
       (architecture O).local.disposition .simultaneousRestriction := by
+  simp [withArithmeticDisposition]
+
+/-- Rejecting the arithmetic bridge cannot erase the holomorphic-section ring branch. -/
+theorem holomorphic_ring_survives_rejected_arithmetic
+    (O : OpenObligations) (h : ¬ O.arithmeticBridge) :
+    (withArithmeticDisposition O (.refuted h)).local.disposition
+        .holomorphicSectionRing =
+      (architecture O).local.disposition .holomorphicSectionRing := by
   simp [withArithmeticDisposition]
 
 /-- Resolving the source comparison cannot alter the terminal RH disposition. -/
