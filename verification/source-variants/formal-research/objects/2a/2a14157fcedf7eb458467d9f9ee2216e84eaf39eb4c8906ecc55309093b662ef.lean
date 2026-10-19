@@ -1,0 +1,6 @@
+import FormalResearch.RiemannHypothesis.SourceComparison.MobiusRatio
+
+#check FormalResearch.RiemannHypothesis.SourceComparison.MobiusRatio.moebius_ratio_identity
+#check FormalResearch.RiemannHypothesis.SourceComparison.MobiusRatio.weighted_ratio_sum_eq
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.MobiusRatio.moebius_ratio_identity
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.MobiusRatio.weighted_ratio_sum_eq

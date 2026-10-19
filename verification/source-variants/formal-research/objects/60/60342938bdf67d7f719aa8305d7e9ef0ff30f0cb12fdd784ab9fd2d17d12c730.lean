@@ -1,0 +1,11 @@
+import SourceActualFarPeriodicWorkDecay
+set_option autoImplicit false
+open FormalResearch.RiemannHypothesis.SourceActualFarPeriodicWorkDecay
+#print actualFarPeriodicWork
+#print actualFarPeriodicCutoff
+#print actualFarPeriodicWork_intervalIntegrable
+#print actualFarPeriodicWork_abs_le
+#print actualFarPeriodicCutoff_source_guards
+#print actualFarPeriodicWork_at_cutoff_abs_le
+#print actualFarPeriodicWork_at_cutoff_tendsto_zero
+#print actualFarPeriodicWork_eq_log

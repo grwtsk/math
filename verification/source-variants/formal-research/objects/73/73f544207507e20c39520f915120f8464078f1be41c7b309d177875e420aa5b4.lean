@@ -1,0 +1,111 @@
+import Folder.Rebuild.AnalyticNumberTheory.ComplexEulerProductFinite
+import Folder.Rebuild.AnalyticNumberTheory.RealEulerProductConvergence
+
+/-!
+# Folder.Rebuild.AnalyticNumberTheory.ComplexEulerProductConvergence
+
+Complex Euler-product convergence in the ordinary half-plane of absolute
+convergence.
+-/
+
+namespace Folder
+namespace Rebuild
+namespace AnalyticNumberTheory
+
+open scoped BigOperators
+
+theorem tendsto_finset_sums_of_summable_of_eventually_contains_Icc
+    {f : Nat → Complex}
+    (hf : Summable f)
+    (F : Nat → Finset Nat)
+    (hF : ∀ M : Nat, ∃ N₀ : Nat, ∀ N ≥ N₀, Finset.Icc 1 M ⊆ F N)
+    (hzero : f 0 = 0) :
+    Filter.Tendsto
+      (fun N : Nat => ∑ n ∈ F N, f n)
+      Filter.atTop
+      (nhds (∑' n : Nat, f n)) := by
+  let G : Nat → Finset Nat := fun N => insert 0 (F N)
+  have hG : Filter.Tendsto G Filter.atTop Filter.atTop := by
+    exact Filter.tendsto_atTop_atTop.mpr (fun S : Finset Nat => by
+      obtain ⟨N₀, hN₀⟩ := hF (S.sup fun y => y)
+      refine ⟨N₀, ?_⟩
+      intro N hN x hxS
+      by_cases hx0 : x = 0
+      · simp [G, hx0]
+      · have hpos : 1 ≤ x := Nat.succ_le_of_lt (Nat.pos_of_ne_zero hx0)
+        have hxle : x ≤ S.sup (fun y => y) :=
+          Finset.le_sup (f := fun y => y) hxS
+        have hxIcc : x ∈ Finset.Icc 1 (S.sup fun y => y) :=
+          Finset.mem_Icc.mpr ⟨hpos, hxle⟩
+        have hxF : x ∈ F N := hN₀ N hN hxIcc
+        simp [G, hxF])
+  have hhas : HasSum f (∑' n : Nat, f n) := hf.hasSum
+  have ht :
+      Filter.Tendsto
+        (fun N : Nat => ∑ n ∈ G N, f n)
+        Filter.atTop
+        (nhds (∑' n : Nat, f n)) :=
+    hhas.comp hG
+  have heq :
+      (fun N : Nat => ∑ n ∈ G N, f n) =
+        fun N : Nat => ∑ n ∈ F N, f n := by
+    funext N
+    by_cases h0 : 0 ∈ F N
+    · rw [show G N = F N by simp [G, h0]]
+    · rw [show G N = insert 0 (F N) by rfl]
+      rw [Finset.sum_insert h0, hzero, zero_add]
+  rw [← heq]
+  exact ht
+
+theorem tendsto_boundedSmoothNumber_sums_complexWeight
+    {s : Complex}
+    (hs : 1 < s.re) :
+    Filter.Tendsto
+      (fun N : Nat =>
+        ∑ n ∈ boundedSmoothNumbers (primesUpTo N) N, complexWeight s n)
+      Filter.atTop
+      (nhds (zetaComplexHalfPlane s)) := by
+  unfold zetaComplexHalfPlane
+  refine
+    tendsto_finset_sums_of_summable_of_eventually_contains_Icc
+      (zetaComplexHalfPlane_summable hs)
+      (fun N => boundedSmoothNumbers (primesUpTo N) N) ?_ (complexWeight_zero s)
+  intro M
+  refine ⟨M, ?_⟩
+  intro N hNM n hn
+  exact
+    Icc_subset_boundedSmoothNumbers_primesUpTo N
+      (Finset.mem_Icc.mpr
+        ⟨(Finset.mem_Icc.mp hn).1, (Finset.mem_Icc.mp hn).2.trans hNM⟩)
+
+/--
+Checked complex Euler-product convergence for zeta in the half-plane
+`Re(s) > 1`.
+
+The approximants are finite products over primes `p <= N`, with local exponent
+cutoff `N`. They converge to the absolutely convergent complex Dirichlet series
+`zetaComplexHalfPlane s`.
+
+This is not analytic continuation, not a zero-free region, not PNT, not RH,
+and not generalized RH.
+-/
+theorem tendsto_zetaEulerApproxComplex
+    {s : Complex}
+    (hs : 1 < s.re) :
+    Filter.Tendsto
+      (fun N : Nat => zetaEulerApproxComplex s N)
+      Filter.atTop
+      (nhds (zetaComplexHalfPlane s)) := by
+  have ht := tendsto_boundedSmoothNumber_sums_complexWeight (s := s) hs
+  have heq :
+      (fun N : Nat => zetaEulerApproxComplex s N) =
+        fun N : Nat =>
+          ∑ n ∈ boundedSmoothNumbers (primesUpTo N) N, complexWeight s n := by
+    funext N
+    exact zetaEulerApproxComplex_expands_boundedSmoothNumbers s N
+  rw [heq]
+  exact ht
+
+end AnalyticNumberTheory
+end Rebuild
+end Folder

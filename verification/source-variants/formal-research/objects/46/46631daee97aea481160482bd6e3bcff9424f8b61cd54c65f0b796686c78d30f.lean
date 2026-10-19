@@ -1,0 +1,15 @@
+import FormalResearch.PositiveAtlas.FiniteHeightMaximalDefect
+
+set_option linter.hashCommand false
+
+open FormalResearch.PositiveAtlas.MaximalDefect.FiniteHeight
+
+#check exists_maximizer_of_finite_values
+#check exists_unique_greatest_maximizer_of_bounded_rank
+#check exists_greatest_maximizer_fixed_of_bounded_rank
+#check exists_greatest_maximizer_fixed_of_finite_values_bounded_rank
+
+#print axioms exists_maximizer_of_finite_values
+#print axioms exists_unique_greatest_maximizer_of_bounded_rank
+#print axioms exists_greatest_maximizer_fixed_of_bounded_rank
+#print axioms exists_greatest_maximizer_fixed_of_finite_values_bounded_rank

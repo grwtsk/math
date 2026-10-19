@@ -1,0 +1,26 @@
+import SourceActualZeroNormalizedCancellation
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.fullNames false
+
+#print FormalResearch.RiemannHypothesis.SourceActualZeroNormalizedCancellation.actualInitialPrimeMellin_scaled_norm_bound
+
+#print FormalResearch.RiemannHypothesis.SourceActualZeroNormalizedCancellation.actualInitialPrimeMellin_scaled_tendsto_zero
+
+#print FormalResearch.RiemannHypothesis.SourceActualZeroNormalizedCancellation.actualCarrierMellin_scaled_tendsto_zero
+
+#print FormalResearch.RiemannHypothesis.SourceActualZeroNormalizedCancellation.actualZeroHeightHead_scaled_tendsto_zero
+
+#print FormalResearch.RiemannHypothesis.SourceActualZeroNormalizedCancellation.actualFullZeroContribution_scaled_tendsto_zero
+
+#print FormalResearch.RiemannHypothesis.SourceActualZeroNormalizedCancellation.actualSourceQuadraticValue_scaled_tendsto_zero
+
+#print FormalResearch.RiemannHypothesis.SourceActualZeroNormalizedCancellation.actualMertensResidual_scaled_tendsto_zero

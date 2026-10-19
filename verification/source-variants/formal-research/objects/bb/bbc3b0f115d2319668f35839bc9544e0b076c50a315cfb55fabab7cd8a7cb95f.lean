@@ -1,0 +1,40 @@
+import SourceFullXiLeadingPropagation
+import SourceRawPsiPrimitiveAdapter
+
+set_option autoImplicit false
+
+namespace FormalResearch.RiemannHypothesis.SourceRawPsiPrimitiveAdapter
+
+#print axioms signedAtomPrimitive
+#print axioms literalXiWeight
+#print axioms signedAtomPrimitive_hasDerivAt
+#print axioms literalXiWeight_continuousOn
+#print axioms signedAtomPrimitive_at_upper
+#print axioms raw_psi_weight_eq_closed_atoms
+#print axioms plainAtomAntiderivative
+#print axioms plainAtomAntiderivative_hasDerivAt
+#print axioms baselineAtomAntiderivative
+#print axioms baselineAtomAntiderivative_hasDerivAt
+#print axioms fullXiKernel_eq_atoms_and_baseline
+#print axioms shiftedPsiFullPrimitive_eq_actualFiniteSecondReadout
+
+end FormalResearch.RiemannHypothesis.SourceRawPsiPrimitiveAdapter
+
+namespace FormalResearch.RiemannHypothesis.SourceFullXiCesaroConsumer
+
+#print axioms actualCesaroPrimitive_eq_literalXiKernel
+#print axioms actualCesaroPrimitive_eq_full_signed_reconstruction
+#print axioms remaining_lower_of_literal_full_Xi_kernel_budget
+#print axioms estimate_of_literal_full_Xi_kernel_budget
+#print axioms signed_pairing_eq_literalXiKernel
+#print axioms estimate_of_literal_full_Xi_signed_pairing
+
+end FormalResearch.RiemannHypothesis.SourceFullXiCesaroConsumer
+
+namespace FormalResearch.RiemannHypothesis.SourceFullXiLeadingPropagation
+
+#print axioms actual_leading_upper_of_literal_full_Xi
+#print axioms actual_leading_upper_of_literal_full_Xi_signed_pairing
+
+end FormalResearch.RiemannHypothesis.SourceFullXiLeadingPropagation
+
