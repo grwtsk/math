@@ -41,10 +41,15 @@ import GRWTSK.Analysis.Complex.HolomorphicLineSections
 import GRWTSK.Analysis.Operator.HolomorphicLinePort
 import GRWTSK.Interfaces.PortFiberLineBundle
 
+import GRWTSK.Analysis.Complex.HolomorphicLineGauge
+import GRWTSK.Analysis.Complex.HolomorphicLineGaugeTopology
+import GRWTSK.Analysis.Operator.HolomorphicLineGaugePort
+import GRWTSK.Interfaces.PortFiberGaugeTransport
+
 namespace GRWTSK.Interfaces.PortFiberHolomorphyCore
 
 /-- Source version of this isolated interface. -/
-def schemaVersion : String := "PortFiberHolomorphyCore/0.14"
+def schemaVersion : String := "PortFiberHolomorphyCore/0.15"
 
 /-- Source state remains distinct from kernel-checked state. -/
 inductive VerificationState
