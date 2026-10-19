@@ -75,7 +75,8 @@ theorem holomorphic_of_tendsto (X : Domain) (hX : IsOpen X.carrier)
     ExtendsHolomorphically X (g : Section X) := by
   have hd : ∀ᶠ a in l,
       DifferentiableOn ℂ (ambientRepresentative X (F a : Section X)) X.carrier :=
-    hF.mono (fun a ha => ambientRepresentative_differentiableOn X (F a : Section X) ha)
+    hF.mono (fun a ha => ambientRepresentative_differentiableOn X
+      (⟨(F a : Section X), ha⟩ : HolomorphicSection X))
   refine ⟨ambientRepresentative X (g : Section X),
     (ambient_uniformLimit X h).tendstoLocallyUniformlyOn.differentiableOn hd hX, ?_⟩
   intro z
@@ -90,7 +91,8 @@ theorem ambient_deriv_tendsto (X : Domain) (hX : IsOpen X.carrier)
       (deriv (ambientRepresentative X (g : Section X))) l X.carrier := by
   have hd : ∀ᶠ a in l,
       DifferentiableOn ℂ (ambientRepresentative X (F a : Section X)) X.carrier :=
-    hF.mono (fun a ha => ambientRepresentative_differentiableOn X (F a : Section X) ha)
+    hF.mono (fun a ha => ambientRepresentative_differentiableOn X
+      (⟨(F a : Section X), ha⟩ : HolomorphicSection X))
   exact (ambient_uniformLimit X h).tendstoLocallyUniformlyOn.deriv hd hX
 
 /-- The closed set is the function-embedding image, not the section-operator image. -/
@@ -119,7 +121,7 @@ theorem existsUnique_symbol_limit (X : Domain) (hX : IsOpen X.carrier)
   let f := ofBoundedFunction X g hg
   have he : boundedFunctionHom X f = g := boundedFunction_ofBoundedFunction X g hg
   have ht : Tendsto F l (𝓝 f) := by
-    apply (functionLinearIsometry X).isometry.tendsto_nhds_iff.mp
+    apply (functionLinearIsometry X).isometry.tendsto_nhds_iff.mpr
     simpa only [Function.comp_def, functionLinearIsometry_apply, he] using h
   refine ⟨f, ⟨he, ht⟩, ?_⟩
   intro k hk
