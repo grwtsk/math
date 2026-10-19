@@ -1,0 +1,103 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "quadratic-interval-core-v0.2"
+owner_repository = "grwtsk/math"
+issue = 189
+root_module = "GRWTSK.Interfaces.QuadraticIntervalPrimePowerCore"
+build_target = "GRWTSK.Interfaces.QuadraticIntervalPrimePowerCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+operational_receipt_is_external = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.CorrelationPairing"
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.FiniteSquareBudget"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.QuadraticIntervals"
+
+[[modules]]
+name = "GRWTSK.Interfaces.QuadraticIntervalCore"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.PowerOccupancy"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.HigherPrimePowers"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.HigherPrimePowerSource"
+
+[[modules]]
+name = "GRWTSK.Interfaces.QuadraticIntervalPrimePowerCore"
+
+[[hostile_controls]]
+id = "left-endpoint-must-remain-open"
+description = "closed_left_endpoint_control shows that closing the left endpoint destroys fixed-exponent uniqueness. The right-hand prime square remains included."
+
+[[hostile_controls]]
+id = "exponent-must-be-at-least-two"
+description = "exponent_one_control exhibits two distinct prime bases in one square interval. The occupancy bound is not a bound on the number of primes."
+
+[[hostile_controls]]
+id = "different-exponents-remain-distinct"
+description = "different_exponents_control and exponent_three_present_control prevent one occupied exponent from replacing the complete exponent inventory."
+
+[[hostile_controls]]
+id = "empty-fiber-is-permitted"
+description = "empty_fiber_control distinguishes at-most-one occupancy from existence or exactly-one occupancy."
+
+[[hostile_controls]]
+id = "prime-filter-and-pair-injectivity"
+description = "composite_base_duplicate_control exhibits 4^3=8^2. Pair-to-value injectivity must use prime-factor uniqueness, not occupancy alone."
+
+[[hostile_controls]]
+id = "complete-cutoff-required"
+description = "Only a proved cutoff at least exponentCutoff may use massUpTo_eq_complete. A shorter cutoff is not silently padded or accepted as complete."
+
+[[hostile_controls]]
+id = "actual-source-and-prime-count-binding"
+description = "source_eq_mathlib_psi removes only the zero-weight index one. squareIncrement_decomposition must retain the existing source count and independently defined Mathlib theta; a fitted correction identity is not accepted."
+
+[[hostile_controls]]
+id = "correction-and-zero-margin-controls-retained"
+description = "The v0.1 correction_omission_control, zero_margin_control and shift_one_control remain required. The new finite correction bound does not discharge the arithmetic cancellation premise."
+
+[[hostile_controls]]
+id = "all-declarations-and-transitive-trust"
+description = "Reconcile every public declaration in every listed module and its import closure. Check exact elaborated types and transitive axioms. Root-only compilation, missing audit output, or a receipt from a different revision is insufficient."
+
+[[hostile_controls]]
+id = "no-target-or-tail-promotion"
+description = "A finite exact arithmetic decomposition and logarithmic higher-power bound do not provide an explicit formula, omitted-zero tail, mean-square cancellation estimate, Legendre theorem, or RH theorem."
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+
+[nonclaims]
+claims = [
+  "asymptotic mean-square cancellation or its little-o transfer",
+  "formalization of the entire coupled interval kernel",
+  "complete prime-power/zero explicit formula",
+  "omitted-zero tail or zero multiplicity certificate",
+  "prime existence in every square interval",
+  "Legendre conjecture",
+  "Riemann hypothesis",
+  "external replay acceptance or execution authority"
+]
