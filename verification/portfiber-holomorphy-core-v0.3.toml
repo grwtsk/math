@@ -1,0 +1,117 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "portfiber-holomorphy-core-v0.3"
+owner_repository = "grwtsk/math"
+issues = [99, 156, 157, 159, 177, 202, 204, 207, 216, 230]
+root_module = "GRWTSK.Interfaces.PortFiberHolomorphyCore"
+build_target = "GRWTSK.Interfaces.PortFiberHolomorphyCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+base_revision = "4aab069dad5b8ef5a07d0850c920a4bfda596aeb"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_runtime_safety_scan = true
+operational_receipt_is_external = true
+root_library_import_unchanged = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unsafe_declarations = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Topology.PortFiber.Basic"
+[[modules]]
+name = "GRWTSK.Topology.PortFiber.Path"
+[[modules]]
+name = "GRWTSK.Topology.PortFiber.Certified"
+[[modules]]
+name = "GRWTSK.Analysis.Complex.PortFiberHolomorphy"
+[[modules]]
+name = "GRWTSK.Topology.Algebra.PortFiberRing"
+[[modules]]
+name = "GRWTSK.Logic.SimultaneousProofArchitecture"
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PortFiberArchitecture"
+[[modules]]
+name = "GRWTSK.Interfaces.OptionalAdapterGate"
+[[modules]]
+name = "GRWTSK.Interfaces.OptionalAdapterComposition"
+[[modules]]
+name = "GRWTSK.Interfaces.PortFiberSimultaneousLedger"
+[[modules]]
+name = "GRWTSK.Interfaces.PortFiberHolomorphyCore"
+
+[[hostile_controls]]
+id = "reject-mismatched-middle-object"
+description = "Typed port and certified-path composition must reject endpoints whose exact middle objects do not agree."
+[[hostile_controls]]
+id = "reject-path-certificate-drop"
+description = "The composite of a certified path must retain the selected composable certificate."
+[[hostile_controls]]
+id = "reject-path-map-drift"
+description = "The fiber map of a composite port must agree with atom-by-atom certified-path evaluation."
+[[hostile_controls]]
+id = "reject-source-name-as-proof"
+description = "Repository, revision, path, and declaration metadata cannot populate a certificate or theorem proof field."
+[[hostile_controls]]
+id = "reject-ring-label-without-ring-hom"
+description = "A ring-certified port must carry an exact bundled ring homomorphism equal to the selected fiber map."
+[[hostile_controls]]
+id = "reject-ring-continuity-drift"
+description = "The continuity proof of a topological-ring port must concern the same exact map identified by its ring certificate."
+[[hostile_controls]]
+id = "reject-continuity-as-holomorphy"
+description = "Continuity alone cannot construct a complex differentiability certificate."
+[[hostile_controls]]
+id = "reject-holomorphy-without-domain-map"
+description = "Holomorphic composition requires the exact source-to-middle domain mapping proof."
+[[hostile_controls]]
+id = "reject-open-target-as-proof-or-refutation"
+description = "An unresolved target disposition yields neither the target nor its negation."
+[[hostile_controls]]
+id = "reject-rh-from-local-family"
+description = "The simultaneous proof bundle exposes every local theorem but cannot synthesize RH from those proofs."
+[[hostile_controls]]
+id = "reject-target-failure-erasing-local-proofs"
+description = "Refuted or unresolved target disposition must preserve every independently proved local theorem."
+[[hostile_controls]]
+id = "reject-stage-as-residual-update"
+description = "A certified stage cannot alter the residual ledger without an accepted adapter, source-compatibility proof, and valid named change."
+[[hostile_controls]]
+id = "reject-plan-changing-target"
+description = "An accepted residual plan cannot modify local proofs or the terminal target disposition."
+[[hostile_controls]]
+id = "reject-untouched-key-drift"
+description = "Residual keys not touched by an accepted plan must remain exactly unchanged."
+[[hostile_controls]]
+id = "reject-root-import-as-slice-pass"
+description = "A build of GRWTSK cannot substitute for checking the isolated port-fiber root and every declared module."
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+requires_root_import_unchanged = true
+requires_hostile_controls = true
+requires_axiom_audit = true
+requires_runtime_safety_scan = true
+
+[nonclaims]
+claims = [
+  "construction of the arithmetic-to-elliptic map B_n",
+  "global elliptic or Poncelet comparison theorem",
+  "complete explicit formula",
+  "convergence to the Weil form",
+  "Weil positivity",
+  "proof or refutation of the Riemann Hypothesis",
+  "automatic continuity of arbitrary ring homomorphisms",
+  "holomorphy inferred from continuity",
+  "automatic residual discharge from local port certification"
+]
