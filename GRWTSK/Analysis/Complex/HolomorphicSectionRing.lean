@@ -89,11 +89,9 @@ def system : GRWTSK.Topology.PortFiber where
 
 /-- The port-fiber map is represented by the exact holomorphic-section restriction homomorphism. -/
 def ringCertificate {A B : Domain} (p : Port A B) :
-    GRWTSK.Topology.Algebra.PortFiber.RingCertificate system p where
-  hom := restrictionRingHom p
-  map_eq := by
-    intro f
-    rfl
+    GRWTSK.Topology.Algebra.PortFiber.RingCertificate system p :=
+  GRWTSK.Topology.Algebra.PortFiber.RingCertificate.ofHom system
+    (restrictionRingHom p) (fun _ => rfl)
 
 /-- Restriction is continuous for the inherited subspace topologies on holomorphic section rings. -/
 theorem restrict_continuous {A B : Domain} (p : Port A B) :
