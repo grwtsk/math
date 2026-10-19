@@ -7,12 +7,14 @@ isolated kernel checking.
 -/
 import GRWTSK.Algebra.KTheory.GrothendieckPort
 import GRWTSK.Algebra.KTheory.FormalKK
+import GRWTSK.Algebra.KTheory.FormalKKEquivalences
 import GRWTSK.Algebra.KTheory.GradedFormalKK
 import GRWTSK.Algebra.KTheory.FiniteFredholmCycle
 import GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.MoserPorts
 import GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.MoserPortFixtures
 import GRWTSK.Logic.TypedPortNormalization
 import GRWTSK.Logic.ExternalPTSBridge
+import GRWTSK.Logic.ExternalPTSSystemTransport
 import GRWTSK.Logic.PortPureTypeSystem
 import GRWTSK.Logic.PortPureTypeSystemMetatheory
 import GRWTSK.Logic.PortPureTypeSystemReduction
@@ -21,6 +23,7 @@ import GRWTSK.Logic.PortPureTypeSystemSubjectReduction
 import GRWTSK.LinearAlgebra.FramedFiberPort
 import GRWTSK.LinearAlgebra.HodgePortConsequences
 import GRWTSK.LinearAlgebra.FinitePositiveHodgeHeat
+import GRWTSK.LinearAlgebra.FinitePositiveHodgeProjectors
 import GRWTSK.LinearAlgebra.FinitePositiveHodgeHeatBounds
 import GRWTSK.LinearAlgebra.WeightedDiagonalHodge
 import GRWTSK.LinearAlgebra.FiniteSpectralHeat
@@ -30,12 +33,15 @@ import GRWTSK.Geometry.Hodge.FiniteMatrixHodge
 import GRWTSK.Geometry.Hodge.MoserMatrixHodge
 import GRWTSK.Geometry.Hodge.MoserColorHodgeSeparation
 import GRWTSK.Geometry.Hodge.RationalCycleCellular
+import GRWTSK.Geometry.Hodge.FiniteEdgeRealization
+import GRWTSK.Geometry.Hodge.FiniteEdgeScalarExtension
 import GRWTSK.Geometry.Hodge.RationalKTheoryComparison
 import GRWTSK.Geometry.Hodge.MoserRationalCellularComparison
 import GRWTSK.Geometry.Ports.FramedSeam
 import GRWTSK.Analysis.Operator.BoundedPortDefect
 import GRWTSK.Analysis.Operator.FramedLiftModes
 import GRWTSK.Analysis.Operator.UnboundedPort
+import GRWTSK.Analysis.Operator.UnboundedGraph
 import GRWTSK.Analysis.Operator.UnboundedPortEquivalence
 import GRWTSK.Analysis.Operator.UnboundedPortAnalytic
 import GRWTSK.Interfaces.OptionalAdapterGate
@@ -43,7 +49,7 @@ import GRWTSK.Interfaces.OptionalAdapterGate
 namespace GRWTSK.Interfaces.GraphHodgePortCore
 
 /-- Source version of this isolated integration surface. -/
-def schemaVersion : String := "GraphHodgePortCore/0.7"
+def schemaVersion : String := "GraphHodgePortCore/0.8"
 
 /-- The integration surface is source-only until an external receipt binds the exact branch head. -/
 inductive VerificationState
