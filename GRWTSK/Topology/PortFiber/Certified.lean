@@ -1,4 +1,4 @@
-import GRWTSK.Topology.PortFiber.Basic
+import GRWTSK.Topology.PortFiber.Path
 
 namespace GRWTSK.Topology.PortFiber
 
@@ -32,6 +32,12 @@ def comp {A B C : P.Obj} {p : P.Port A B} {q : P.Port B C}
       exact P.map_comp p q x
     rw [hmap]
     exact hq.continuous.comp hp.continuous
+
+/-- Continuity as a composable port property, usable by arbitrary certified paths. -/
+def composableProperty : ComposableProperty P where
+  Holds := fun p => ContinuousCertificate P p
+  identity := ContinuousCertificate.identity P
+  comp := fun hp hq => ContinuousCertificate.comp P hp hq
 
 end ContinuousCertificate
 

@@ -1,4 +1,4 @@
-import GRWTSK.Topology.PortFiber.Basic
+import GRWTSK.Topology.PortFiber.Path
 
 namespace GRWTSK.Analysis.Complex.PortFiber
 
@@ -64,6 +64,13 @@ def comp {A B C : Domain} {p : Port A B} {q : Port B C}
   differentiableOn :=
     hq.differentiableOn.comp hp.differentiableOn p.mapsTo
 
+/-- Holomorphy as a composable property for arbitrary typed domain paths. -/
+def composableProperty :
+    GRWTSK.Topology.PortFiber.ComposableProperty system where
+  Holds := fun p => HolomorphicCertificate p
+  identity := HolomorphicCertificate.identity
+  comp := fun hp hq => HolomorphicCertificate.comp hp hq
+
 end HolomorphicCertificate
 
 namespace Fixtures
@@ -97,6 +104,18 @@ def translatedSquare (c : ℂ) : Port whole whole :=
 def translatedSquareCertificate (c : ℂ) :
     HolomorphicCertificate (translatedSquare c) :=
   HolomorphicCertificate.comp (translationCertificate c) squareCertificate
+
+/-- Translation followed by squaring as an atomically certified path. -/
+def translatedSquarePath (c : ℂ) :
+    GRWTSK.Topology.PortFiber.CertifiedPath system
+      HolomorphicCertificate.composableProperty whole whole :=
+  .cons (translation c) (translationCertificate c)
+    (.cons square squareCertificate (.nil whole))
+
+/-- The whole certified path has a holomorphic composite. -/
+theorem translatedSquarePath_certified (c : ℂ) :
+    HolomorphicCertificate (translatedSquarePath c).composite :=
+  (translatedSquarePath c).certified
 
 end Fixtures
 
