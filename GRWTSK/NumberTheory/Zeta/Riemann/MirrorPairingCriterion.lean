@@ -1,8 +1,8 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI Codex.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
+import GRWTSK.NumberTheory.Zeta.Riemann.CriticalLinePositivityCriterion
 import GRWTSK.NumberTheory.Zeta.Riemann.ZeroSymmetry
-import GRWTSK.NumberTheory.Zeta.Riemann.WeilPositiveLimitCore
 import Mathlib.Tactic
 
 set_option autoImplicit false
@@ -87,7 +87,7 @@ theorem all_criticalLineMirror_fixed_iff_rh :
         (hfixed ⟨s, ⟨hz, htrivial, hpole⟩⟩)
   · intro hrh z
     exact (criticalLineMirror_eq_self_iff z).mpr
-      (hrh z.1 z.2.1 z.2.1 z.2.2)
+      (hrh z.1 z.2.1 z.2.2.1 z.2.2.2)
 
 /-- Exact algebraic mirror-pairing positivity criterion for canonical RH. -/
 theorem criticalLineMirrorPairingPositivity_iff_rh :
