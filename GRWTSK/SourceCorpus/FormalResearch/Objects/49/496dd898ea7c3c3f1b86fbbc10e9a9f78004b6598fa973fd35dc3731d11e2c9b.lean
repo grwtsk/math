@@ -1,0 +1,8 @@
+import SourceActualXiHalfFiniteReadout
+set_option pp.maxSteps 1000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.SourceActualXiHalfFiniteReadout.actualMangoldtHalfWindowSeven
+#print FormalResearch.RiemannHypothesis.SourceActualXiHalfFiniteReadout.actualXi_half_window_eq_finite
+#print FormalResearch.RiemannHypothesis.SourceActualXiHalfFiniteReadout.actualAnchoredXiTailPrimitive_eq_finite

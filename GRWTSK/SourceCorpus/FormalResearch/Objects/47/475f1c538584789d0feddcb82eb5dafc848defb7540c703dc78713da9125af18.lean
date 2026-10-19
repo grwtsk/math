@@ -1,0 +1,30 @@
+import scratch.common_mean_20261004.FiveModeGammaAdmission
+set_option pp.proofs false
+#print CommonMeanScratch.modeInterior
+#print axioms CommonMeanScratch.modeInterior
+#print CommonMeanScratch.modeInterior_contDiff
+#print axioms CommonMeanScratch.modeInterior_contDiff
+#print CommonMeanScratch.mode_integrable
+#print axioms CommonMeanScratch.mode_integrable
+#print CommonMeanScratch.mode_fourier_continuous
+#print axioms CommonMeanScratch.mode_fourier_continuous
+#print CommonMeanScratch.modeFourier_eq_interval
+#print axioms CommonMeanScratch.modeFourier_eq_interval
+#print CommonMeanScratch.mode_fourier_integration_by_parts
+#print axioms CommonMeanScratch.mode_fourier_integration_by_parts
+#print CommonMeanScratch.modeFrequencyBudget
+#print axioms CommonMeanScratch.modeFrequencyBudget
+#print CommonMeanScratch.mode_fourier_frequency_bound
+#print axioms CommonMeanScratch.mode_fourier_frequency_bound
+#print CommonMeanScratch.mode_fourier_square_integrable
+#print axioms CommonMeanScratch.mode_fourier_square_integrable
+#print CommonMeanScratch.mode_logarithmic_fourier_integrable
+#print axioms CommonMeanScratch.mode_logarithmic_fourier_integrable
+#print CommonMeanScratch.gammaEnergyMajorant
+#print axioms CommonMeanScratch.gammaEnergyMajorant
+#print CommonMeanScratch.gammaEnergyMajorant_nonneg
+#print axioms CommonMeanScratch.gammaEnergyMajorant_nonneg
+#print CommonMeanScratch.gamma_energy_majorant_integrable
+#print axioms CommonMeanScratch.gamma_energy_majorant_integrable
+#print CommonMeanScratch.gamma_entry_integrability
+#print axioms CommonMeanScratch.gamma_entry_integrability

@@ -1,0 +1,8 @@
+import ActualSupportEdgeBetaInteraction
+set_option autoImplicit false
+open FormalResearch.RiemannHypothesis.ActualSupportEdgeBetaInteraction
+#print actualTerminalCenteredHalfDefect
+#print actualFiniteBetaMangoldtInteraction
+#print actualTerminalCenteredHalfDefect_abs_le
+#print actual_support_half_le_two_sqrt_terminal
+#print actualFiniteBetaMangoldtInteraction_abs_le

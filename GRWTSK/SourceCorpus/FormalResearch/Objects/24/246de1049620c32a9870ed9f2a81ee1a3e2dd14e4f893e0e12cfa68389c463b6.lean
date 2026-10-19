@@ -1,0 +1,12 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: Foundations.Unclassified
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"FormalResearch.Foundations.Unclassified.SourceCorpus.Main.Variant909d5a61ed9cea715f38ddb2039914a73c4140d88148d65d4773d9fa0d1e7dca","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"909d5a61ed9cea715f38ddb2039914a73c4140d88148d65d4773d9fa0d1e7dca","provenance":{"attribution":"Organization assisted by OpenAI Codex under R.A. Jacob Martone direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.Main.Variant909d5a61ed9cea715f38ddb2039914a73c4140d88148d65d4773d9fa0d1e7dca","mathematical_subject":"Foundations.Unclassified","original_sha256":"909d5a61ed9cea715f38ddb2039914a73c4140d88148d65d4773d9fa0d1e7dca","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/think/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - Robert\u2019s MacBook Pro/~/2025/August/-/spectral-proof-of-RH/lean/SpectralProof/Main.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["interpolated_literals","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+module 
+namespace FormalResearch.Foundations.Unclassified.SourceCorpus.Main.Variant909d5a61ed9cea715f38ddb2039914a73c4140d88148d65d4773d9fa0d1e7dca
+
+SpectralProof.Main
+
+def main : IO Unit := do
+  IO.println "✅ Hello from spectralProof!"

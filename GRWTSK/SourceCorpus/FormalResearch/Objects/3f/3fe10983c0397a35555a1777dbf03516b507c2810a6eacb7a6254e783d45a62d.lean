@@ -1,0 +1,35 @@
+import Folder.AdelicInfinityTopos.Place
+
+/-!
+# Folder.Theorem.AdelicInfinityTopos.Place
+
+Radiation role: theorem-wrapper
+BinaryMatrix spine: This module re-exports adelic place separation facts.
+Ontology: proof.adelic.place
+Pivot role: dual
+Zero typology: mixed
+Contract boundary: theorem-wrapper
+Composite stack role: adelic-infinity-topos
+-/
+
+namespace Folder
+namespace Theorem
+namespace AdelicInfinityTopos
+namespace Place
+
+theorem archimedean_ne_finite
+    (p : Nat) :
+    Folder.AdelicInfinityTopos.Place.archimedean ≠
+      Folder.AdelicInfinityTopos.Place.finite p :=
+  Folder.AdelicInfinityTopos.archimedean_ne_finite p
+
+theorem bad_tmf_prime_is_finite
+    {v : Folder.AdelicInfinityTopos.Place}
+    (h : Folder.AdelicInfinityTopos.IsBadTMFPrime v) :
+    ∃ p, v = Folder.AdelicInfinityTopos.Place.finite p :=
+  Folder.AdelicInfinityTopos.bad_tmf_prime_is_finite h
+
+end Place
+end AdelicInfinityTopos
+end Theorem
+end Folder

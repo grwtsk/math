@@ -1,0 +1,45 @@
+import SourceMainTermScaleDerivative
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourceMainTermScaleDerivative
+#check correlationScaleDerivative
+#print axioms correlationScaleDerivative
+#check sourceCorrelation_hasDerivAt_scale
+#print axioms sourceCorrelation_hasDerivAt_scale
+#check sourceCorrelation_contDiffAt_scale
+#print axioms sourceCorrelation_contDiffAt_scale
+#check diagonalCoefficientDerivative
+#print axioms diagonalCoefficientDerivative
+#check diagonalMainCoefficient_hasDerivAt
+#print axioms diagonalMainCoefficient_hasDerivAt
+#check diagonalMainCoefficient_contDiffAt
+#print axioms diagonalMainCoefficient_contDiffAt
+#check normalizationMainDerivative
+#print axioms normalizationMainDerivative
+#check normalizedMain_hasDerivAt
+#print axioms normalizedMain_hasDerivAt
+#check normalizedMain_contDiffAt
+#print axioms normalizedMain_contDiffAt
+#check plainWeightScaleDerivative
+#print axioms plainWeightScaleDerivative
+#check sourcePlainWeight_hasDerivAt
+#print axioms sourcePlainWeight_hasDerivAt
+#check sourcePlainWeight_contDiffAt
+#print axioms sourcePlainWeight_contDiffAt
+#check sourceKernelScaleDerivative
+#print axioms sourceKernelScaleDerivative
+#check sourceKernel_hasDerivAt
+#print axioms sourceKernel_hasDerivAt
+#check sourceKernel_contDiffAt
+#print axioms sourceKernel_contDiffAt
+#check plainOffDerivativeAt
+#print axioms plainOffDerivativeAt
+#check plainOffAt_hasDerivAt
+#print axioms plainOffAt_hasDerivAt
+#check plainOffAt_contDiffAt
+#print axioms plainOffAt_contDiffAt
+#check shortMangoldtDerivativeAt
+#print axioms shortMangoldtDerivativeAt
+#check shortMangoldtAt_hasDerivAt
+#print axioms shortMangoldtAt_hasDerivAt
+#check shortMangoldtAt_contDiffAt
+#print axioms shortMangoldtAt_contDiffAt

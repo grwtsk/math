@@ -11,7 +11,7 @@ universe u v
 
 variable {A : Type u} [Semiring A]
 variable {H : Type v}
-variable [NormedAddCommGroup H] [InnerProductSpace ℂ H] [CompleteSpace H]
+variable [NormedAddCommGroup H] [InnerProductSpace ℂ H]
 
 namespace UnboundedOperator
 
@@ -120,6 +120,8 @@ structure Cycle (A : Type u) [Semiring A]
       boundedCommutator a x
   resolventParameter : ℂ
   compactResolvent : CompactResolventWitness operator resolventParameter
+
+variable [CompleteSpace H]
 
 namespace Cycle
 

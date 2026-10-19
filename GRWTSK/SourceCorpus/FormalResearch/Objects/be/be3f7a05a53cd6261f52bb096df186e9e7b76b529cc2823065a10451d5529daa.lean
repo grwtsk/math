@@ -1,0 +1,23 @@
+import ActualSupportEdgeLowerTrace
+set_option linter.style.header false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.rawOnError false
+open FormalResearch.RiemannHypothesis.ActualSupportEdgeLowerTrace
+set_option pp.fullNames true
+#check actualLowerTimeFactor
+#print axioms actualLowerTimeFactor
+#check actualLowerTimeFactor_eq_negative_error_integral
+#print axioms actualLowerTimeFactor_eq_negative_error_integral
+#check actualLowerTimeFactor_abs_le
+#print axioms actualLowerTimeFactor_abs_le
+#check actualCriticalAdjustedLowerColumnTrace_abs_le
+#print axioms actualCriticalAdjustedLowerColumnTrace_abs_le
+#check actualCriticalAdjustedLowerColumnTrace_abs_le_square
+#print axioms actualCriticalAdjustedLowerColumnTrace_abs_le_square
+#check actualCriticalAdjustedLowerColumnTrace_tendsto_zero
+#print axioms actualCriticalAdjustedLowerColumnTrace_tendsto_zero

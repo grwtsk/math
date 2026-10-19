@@ -1,0 +1,9 @@
+import SourceActualUpperPeriodMeanTrace
+set_option pp.maxSteps 1000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.SourceActualUpperPeriodMeanTrace.actualUpperPeriodMeanTrace
+#print FormalResearch.RiemannHypothesis.SourceActualUpperPeriodMeanTrace.actualUpperPeriodMeanTimeFactor_eq_support
+#print FormalResearch.RiemannHypothesis.SourceActualUpperPeriodMeanTrace.actualUpperPeriodMeanTrace_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualUpperPeriodMeanTrace.actualUpperPeriodMeanTrace_tendsto_zero

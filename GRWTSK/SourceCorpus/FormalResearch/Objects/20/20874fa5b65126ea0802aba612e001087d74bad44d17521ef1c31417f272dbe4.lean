@@ -1,0 +1,12 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: Foundations.Unclassified
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"FormalResearch.Foundations.Unclassified.SourceCorpus.Main.Variantb6b6792ea05011e4f44670d4b79ba6792661d67c46884d3dbb48e3e3394047ab","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"b6b6792ea05011e4f44670d4b79ba6792661d67c46884d3dbb48e3e3394047ab","provenance":{"attribution":"Organization assisted by OpenAI Codex under R.A. Jacob Martone direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.Main.Variantb6b6792ea05011e4f44670d4b79ba6792661d67c46884d3dbb48e3e3394047ab","mathematical_subject":"Foundations.Unclassified","original_sha256":"b6b6792ea05011e4f44670d4b79ba6792661d67c46884d3dbb48e3e3394047ab","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/think/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - Robert\u2019s MacBook Pro/~/2025/October/30/ooi/bourbaki/Main.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["interpolated_literals","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import Features
+
+
+namespace FormalResearch.Foundations.Unclassified.SourceCorpus.Main.Variantb6b6792ea05011e4f44670d4b79ba6792661d67c46884d3dbb48e3e3394047ab
+
+def main : IO Unit :=
+  IO.println s!"Hello, {hello}!"

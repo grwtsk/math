@@ -1,0 +1,12 @@
+import FormalResearch.RiemannHypothesis.SourcePairedSquareQuadrature
+
+set_option linter.hashCommand false
+
+open FormalResearch.RiemannHypothesis.SourcePairedSquareQuadrature
+
+#print pairedSquareReadout
+#print squarePrefix_pairedTail_work
+#print squareTail_pairedTail_work
+#print squareTailPairedWork_eq_neg_integral_pairedTail_deriv
+#print squareTailPairedWork_eq_neg_readout
+#print squareRemovedPairedWork_eq_first_square_quadrature

@@ -1,0 +1,246 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "legendre-square-budget-v0.1"
+owner_repository = "grwtsk/math"
+issue = 261
+root_module = "GRWTSK.Interfaces.LegendreSquareBudget"
+build_target = "GRWTSK.Interfaces.LegendreSquareBudget"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+base_revision = "fd4e098e1635718de8e4da25c8b18430e0509d32"
+base_tree = "7689547d51b5460f6d7e01abd59f99e210fc5328"
+stacked_on_pr = 265
+count_source_revision = "22779757b74805f887509d353b65322ac9c03b1a"
+arithmetic_source_revision = "7a73b34707889205a8b9af7bdd01e12383bc1679"
+arithmetic_source_pr = 256
+arithmetic_import_scope = "Five unchanged v0.1/v0.2 arithmetic owners only; no v0.3 complex kernel or old roots are imported."
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+receipt_revision_policy = "Bind the actual replayed commit, tree and manifest blob externally. Neither upstream head is a receipt for this union."
+inventory_policy = "Source blobs and names are not elaborated types or transitive trust evidence. All dependencies must be reconciled even when not separately listed."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Combinatorics.Enumerative.BoundedWitnesses"
+path = "GRWTSK/Combinatorics/Enumerative/BoundedWitnesses.lean"
+source_git_blob = "40b8288910460ae0cd59dec55d3dda3481e6d229"
+origin_revision = "fd4e098e1635718de8e4da25c8b18430e0509d32"
+status = "INHERITED_SOURCE_REPLAY_REQUIRED"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.ConfigurationCounts"
+path = "GRWTSK/NumberTheory/Primes/ConfigurationCounts.lean"
+source_git_blob = "540ea9bb1d42d6e185a03e38b4c2e1abc4370ff6"
+origin_revision = "fd4e098e1635718de8e4da25c8b18430e0509d32"
+status = "INHERITED_SOURCE_REPLAY_REQUIRED"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.LandauStatements"
+path = "GRWTSK/NumberTheory/Primes/LandauStatements.lean"
+source_git_blob = "41aa479be730fc09defba57576f9af0f09415306"
+origin_revision = "fd4e098e1635718de8e4da25c8b18430e0509d32"
+status = "INHERITED_SOURCE_REPLAY_REQUIRED"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.Checks.LandauCountControls"
+path = "GRWTSK/NumberTheory/Primes/Checks/LandauCountControls.lean"
+source_git_blob = "c728856d299556c770c2c0c623342b0848406e40"
+origin_revision = "fd4e098e1635718de8e4da25c8b18430e0509d32"
+status = "INHERITED_SOURCE_REPLAY_REQUIRED"
+
+[[modules]]
+name = "GRWTSK.Interfaces.LandauPrimeCounts"
+path = "GRWTSK/Interfaces/LandauPrimeCounts.lean"
+source_git_blob = "22bbbda7139c35f1c8d428e927c96ec0fe1a3de6"
+origin_revision = "fd4e098e1635718de8e4da25c8b18430e0509d32"
+status = "INHERITED_SOURCE_REPLAY_REQUIRED"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.PrimeIntervalWitness"
+path = "GRWTSK/NumberTheory/Chebyshev/PrimeIntervalWitness.lean"
+source_git_blob = "6f3bd25bd5c23f869d7cb2661e53be96d60d4746"
+origin_revision = "fd4e098e1635718de8e4da25c8b18430e0509d32"
+status = "INHERITED_SOURCE_REPLAY_REQUIRED"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.ProperPrimePowerCorrection"
+path = "GRWTSK/NumberTheory/Chebyshev/ProperPrimePowerCorrection.lean"
+source_git_blob = "1fa940a64afe1195974e1126b1a15cc6d335b64e"
+origin_revision = "fd4e098e1635718de8e4da25c8b18430e0509d32"
+status = "INHERITED_SOURCE_REPLAY_REQUIRED"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.Checks.PrimePowerMarginControls"
+path = "GRWTSK/NumberTheory/Chebyshev/Checks/PrimePowerMarginControls.lean"
+source_git_blob = "98b36c02a526c53c614d085c747a673564af689e"
+origin_revision = "fd4e098e1635718de8e4da25c8b18430e0509d32"
+status = "INHERITED_SOURCE_REPLAY_REQUIRED"
+
+[[modules]]
+name = "GRWTSK.Interfaces.LegendrePrimePowerBridge"
+path = "GRWTSK/Interfaces/LegendrePrimePowerBridge.lean"
+source_git_blob = "f10c3abb6e670c4192d943e8d9c31ac643022d4a"
+origin_revision = "fd4e098e1635718de8e4da25c8b18430e0509d32"
+status = "INHERITED_SOURCE_REPLAY_REQUIRED"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.CorrelationPairing"
+path = "GRWTSK/NumberTheory/Chebyshev/CorrelationPairing.lean"
+source_git_blob = "85923009b211961763765b523234e9746555ca7f"
+origin_revision = "fd4e098e1635718de8e4da25c8b18430e0509d32"
+status = "INHERITED_SOURCE_REPLAY_REQUIRED"
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.FiniteSquareBudget"
+path = "GRWTSK/Analysis/ErrorBounds/FiniteSquareBudget.lean"
+source_git_blob = "fbfd45fb3e82f019adc243338a9c3c4222e5a704"
+origin_revision = "7a73b34707889205a8b9af7bdd01e12383bc1679"
+status = "EXACT_SOURCE_SNAPSHOT_REPLAY_REQUIRED"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.QuadraticIntervals"
+path = "GRWTSK/NumberTheory/Chebyshev/QuadraticIntervals.lean"
+source_git_blob = "594ff41e29323206962ef22863c82e3890382282"
+origin_revision = "7a73b34707889205a8b9af7bdd01e12383bc1679"
+status = "EXACT_SOURCE_SNAPSHOT_REPLAY_REQUIRED"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.PowerOccupancy"
+path = "GRWTSK/NumberTheory/Chebyshev/PowerOccupancy.lean"
+source_git_blob = "f09a0f725e69025a6e6f789c287da2d43497e0b8"
+origin_revision = "7a73b34707889205a8b9af7bdd01e12383bc1679"
+status = "EXACT_SOURCE_SNAPSHOT_REPLAY_REQUIRED"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.HigherPrimePowers"
+path = "GRWTSK/NumberTheory/Chebyshev/HigherPrimePowers.lean"
+source_git_blob = "51c9ca36d3c2e0392dae041547d497714dc3bdb8"
+origin_revision = "7a73b34707889205a8b9af7bdd01e12383bc1679"
+status = "EXACT_SOURCE_SNAPSHOT_REPLAY_REQUIRED"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.HigherPrimePowerSource"
+path = "GRWTSK/NumberTheory/Chebyshev/HigherPrimePowerSource.lean"
+source_git_blob = "d0eb381f2a0f4bb06cac0225e44162f2c4961827"
+origin_revision = "7a73b34707889205a8b9af7bdd01e12383bc1679"
+status = "EXACT_SOURCE_SNAPSHOT_REPLAY_REQUIRED"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.SquarePrimeBudget"
+path = "GRWTSK/NumberTheory/Chebyshev/SquarePrimeBudget.lean"
+source_git_blob = "964d8e763aad27c9e4d6378508427c6320300d2b"
+status = "NEW_SOURCE_NOT_RUN"
+
+[[modules]]
+name = "GRWTSK.Interfaces.LegendreSquareBudget"
+path = "GRWTSK/Interfaces/LegendreSquareBudget.lean"
+source_git_blob = "7db055641b92397af5aa4344f116e665e0a298fc"
+status = "NEW_SOURCE_NOT_RUN"
+
+[declarations]
+requires_all_public_in_listed_modules = true
+requires_full_transitive_import_closure = true
+required_new_source_names = [
+  "GRWTSK.NumberTheory.Chebyshev.SquarePrimeBudget.squareIncrement_eq_source_difference",
+  "GRWTSK.NumberTheory.Chebyshev.SquarePrimeBudget.proper_mass_eq_higher_mass",
+  "GRWTSK.NumberTheory.Chebyshev.SquarePrimeBudget.proper_mass_eq_covering_sum",
+  "GRWTSK.NumberTheory.Chebyshev.SquarePrimeBudget.correctionBudget",
+  "GRWTSK.NumberTheory.Chebyshev.SquarePrimeBudget.higher_mass_le_correctionBudget",
+  "GRWTSK.NumberTheory.Chebyshev.SquarePrimeBudget.proper_mass_le_correctionBudget",
+  "GRWTSK.NumberTheory.Chebyshev.SquarePrimeBudget.correctionBudget_nonneg",
+  "GRWTSK.NumberTheory.Chebyshev.SquarePrimeBudget.correctionBudget_le_log_envelope",
+  "GRWTSK.NumberTheory.Chebyshev.SquarePrimeBudget.squarePrimeIncrement_pos_iff_squareCount",
+  "GRWTSK.NumberTheory.Chebyshev.SquarePrimeBudget.squarePrimeIncrement_nonneg",
+  "GRWTSK.NumberTheory.Chebyshev.SquarePrimeBudget.prime_increment_zero_of_count_zero",
+  "GRWTSK.NumberTheory.Chebyshev.SquarePrimeBudget.squareCount_pos_of_budget_margin",
+  "GRWTSK.NumberTheory.Chebyshev.SquarePrimeBudget.exists_prime_of_budget_margin",
+  "GRWTSK.NumberTheory.Chebyshev.SquarePrimeBudget.squareCount_pos_of_two_error_budget",
+  "GRWTSK.NumberTheory.Chebyshev.SquarePrimeBudget.legendre_of_prefix_and_budget_margins",
+  "GRWTSK.NumberTheory.Chebyshev.SquarePrimeBudget.prime_free_card_mul_sq_le",
+  "GRWTSK.NumberTheory.Chebyshev.SquarePrimeBudget.all_squareCounts_pos_of_small_budget",
+  "GRWTSK.NumberTheory.Chebyshev.SquarePrimeBudget.upper_square_charge_preserved",
+  "GRWTSK.NumberTheory.Chebyshev.SquarePrimeBudget.threshold_equality_allows_zero_output",
+]
+
+[[hostile_controls]]
+id = "same-source-correction-equality"
+description = "proper_mass_eq_higher_mass must use the same source and theta differences after only exact cast normalization; similar names or sampled equality do not identify corrections."
+
+[[hostile_controls]]
+id = "complete-cutoff"
+description = "proper_mass_eq_covering_sum retains exponentCutoff n <= K. A shorter arbitrary prefix is not complete."
+
+[[hostile_controls]]
+id = "upper-square-and-prime-base-weights"
+description = "upper_square_charge_preserved and inherited PrimePowerMarginControls retain the right-square contribution and log of the prime base."
+
+[[hostile_controls]]
+id = "actual-prime-count"
+description = "Reuse the actual squareCount and the nonprime-square endpoint theorem, not a sieve candidate or Mangoldt support predicate."
+
+[[hostile_controls]]
+id = "strict-pointwise-margin"
+description = "Inherit non_strict_margin_control and positive_source_without_prime. Approximation and strictly positive corrected margin remain required."
+
+[[hostile_controls]]
+id = "same-intermediate-two-errors"
+description = "squareCount_pos_of_two_error_budget keeps the exact same intermediate in both bounds and charges both errors; neither is synthesized."
+
+[[hostile_controls]]
+id = "one-exception-threshold"
+description = "threshold_equality_allows_zero_output prevents weakening the strict finite-budget threshold to non-strict equality."
+
+[[hostile_controls]]
+id = "complete-finite-set"
+description = "prime_free_card_mul_sq_le uses the actual zero-count subset of the complete selected finite S; all_squareCounts_pos_of_small_budget concludes only on that S."
+
+[[hostile_controls]]
+id = "universal-tail-and-positive-stages"
+description = "legendre_of_prefix_and_budget_margins retains complete LegendreThrough N and approximation/margin for every n>N. Positive-stage hypotheses cannot be dropped."
+
+[[hostile_controls]]
+id = "unchanged-source-snapshots"
+description = "All five selected #256 owner blobs must match exactly; the inherited #264/#265 sources and controls remain unaccepted until exact replay."
+
+[[hostile_controls]]
+id = "no-kernel-or-tail-promotion"
+description = "The unselected coupled complex kernel is not accepted by this target. No explicit formula, zero identity, divisor tail, numerical rounding theorem or arithmetic cancellation is inferred."
+
+[[hostile_controls]]
+id = "all-types-and-transitive-trust"
+description = "Reconcile every listed module and all public elaborated types plus the full transitive closure. Root-only success, a missing axiom report or an old-head receipt is not acceptance."
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+requires_inherited_source_replay = true
+
+[nonclaims]
+claims = [
+  "Lean elaboration or transitive trust acceptance",
+  "optimality or novelty of the harmonic correction budget",
+  "a certified numerical approximation or omitted-zero tail",
+  "an arithmetic mean-square cancellation estimate",
+  "strict margins for every sufficiently large square interval",
+  "an unconditional Legendre or Riemann hypothesis theorem",
+  "acceptance of unselected PR #256 kernel modules",
+  "execution, merge, publication or deployment authority"
+]
