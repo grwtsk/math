@@ -5,6 +5,7 @@ import GRWTSK.Analysis.Complex.HolomorphicEvaluationSpectrum
 import GRWTSK.Topology.Algebra.PrimeSpectrumPort
 import GRWTSK.AlgebraicGeometry.AffineSpecPort
 import GRWTSK.AlgebraicGeometry.AffineStructureSheafPort
+import GRWTSK.AlgebraicGeometry.AnalyticAffineBridge
 
 namespace GRWTSK.NumberTheory.Zeta.Riemann.PortFiberTheoremPortfolio
 
@@ -39,6 +40,24 @@ def holomorphicEvaluationSpectrumClaim : Prop :=
 theorem holomorphicEvaluationSpectrumClaim_proof : holomorphicEvaluationSpectrumClaim :=
   GRWTSK.Analysis.Complex.HolomorphicEvaluationSpectrum.EvaluationNaturalityCertificate.canonical
     GRWTSK.Analysis.Complex.HolomorphicSectionRing.Fixtures.restrictionPath.composite
+
+/-- Every supplied coordinate-ring map into whole-plane holomorphic sections remains pointwise
+compatible with the complete restriction to the real axis. -/
+def analyticAffineBridgeClaim : Prop :=
+  ∀ (R : CommRingCat)
+    (C : GRWTSK.AlgebraicGeometry.AnalyticAffineBridge.Bridge R
+      GRWTSK.Analysis.Complex.HolomorphicRestriction.Fixtures.whole)
+    (z : GRWTSK.Analysis.Complex.HolomorphicRestriction.Fixtures.realAxis.carrier),
+    (C.restrict
+      GRWTSK.Analysis.Complex.HolomorphicSectionRing.Fixtures.restrictionPath.composite).pointMap z =
+      C.pointMap
+        ⟨z.1,
+          GRWTSK.Analysis.Complex.HolomorphicSectionRing.Fixtures.restrictionPath.composite.subset
+            z.2⟩
+
+/-- Proof of the generic analytic-affine restriction law. -/
+theorem analyticAffineBridgeClaim_proof : analyticAffineBridgeClaim :=
+  GRWTSK.AlgebraicGeometry.AnalyticAffineBridge.Fixtures.restrictionPath_pointMap
 
 /-- The exact arithmetic ring tower induces a continuous map of prime spectra. -/
 def primeSpectrumTopologyClaim : Prop :=
@@ -94,6 +113,7 @@ inductive LocalIndex
   | simultaneousRestriction
   | holomorphicSectionRing
   | holomorphicEvaluationSpectrum
+  | analyticAffineBridge
   | primeSpectrumTopology
   | affineScheme
   | affineGlobalSections
@@ -110,6 +130,7 @@ def LocalClaim (O : OpenObligations) : LocalIndex → Prop
   | .simultaneousRestriction => restrictionClaim
   | .holomorphicSectionRing => holomorphicSectionRingClaim
   | .holomorphicEvaluationSpectrum => holomorphicEvaluationSpectrumClaim
+  | .analyticAffineBridge => analyticAffineBridgeClaim
   | .primeSpectrumTopology => primeSpectrumTopologyClaim
   | .affineScheme => affineSchemeClaim
   | .affineGlobalSections => affineGlobalSectionsClaim
@@ -127,6 +148,7 @@ def localPortfolio (O : OpenObligations) :
     | .simultaneousRestriction => .proved restrictionClaim_proof
     | .holomorphicSectionRing => .proved holomorphicSectionRingClaim_proof
     | .holomorphicEvaluationSpectrum => .proved holomorphicEvaluationSpectrumClaim_proof
+    | .analyticAffineBridge => .proved analyticAffineBridgeClaim_proof
     | .primeSpectrumTopology => .proved primeSpectrumTopologyClaim_proof
     | .affineScheme => .proved affineSchemeClaim_proof
     | .affineGlobalSections => .proved affineGlobalSectionsClaim_proof
@@ -162,6 +184,11 @@ theorem holomorphic_section_ring_available (O : OpenObligations) :
 theorem holomorphic_evaluation_spectrum_available (O : OpenObligations) :
     LocalClaim O .holomorphicEvaluationSpectrum :=
   holomorphicEvaluationSpectrumClaim_proof
+
+/-- The generic analytic-affine bridge law is available without an arithmetic bridge. -/
+theorem analytic_affine_bridge_available (O : OpenObligations) :
+    LocalClaim O .analyticAffineBridge :=
+  analyticAffineBridgeClaim_proof
 
 /-- The ring-to-prime-spectrum topology theorem is available without any application obligation. -/
 theorem prime_spectrum_topology_available (O : OpenObligations) :
@@ -234,6 +261,14 @@ theorem evaluation_spectrum_survives_rejected_arithmetic
         .holomorphicEvaluationSpectrum =
       (architecture O).local.disposition .holomorphicEvaluationSpectrum :=
   other_branch_survives_rejected_arithmetic O h .holomorphicEvaluationSpectrum (by decide)
+
+/-- Rejecting the arithmetic bridge cannot erase the generic analytic-affine bridge law. -/
+theorem analytic_affine_bridge_survives_rejected_arithmetic
+    (O : OpenObligations) (h : ¬ O.arithmeticBridge) :
+    (withArithmeticDisposition O (.refuted h)).local.disposition
+        .analyticAffineBridge =
+      (architecture O).local.disposition .analyticAffineBridge :=
+  other_branch_survives_rejected_arithmetic O h .analyticAffineBridge (by decide)
 
 /-- Rejecting the arithmetic bridge cannot erase the ring-to-topology branch. -/
 theorem prime_spectrum_survives_rejected_arithmetic
