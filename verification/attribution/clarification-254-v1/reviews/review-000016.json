@@ -175,7 +175,7 @@
         "sha256": "4054e29c12a59864d6fa7acaa6c859aa5df0c089e0e9af95733badbd4bce70cd"
       },
       "body_kind": "proof",
-      "candidate_path": "candidates/attribution-254/Analysis/RealAnalysis/RealFunctions/AlgebraicEdgeSign/Checks/Positive/SignConsequences.lean",
+      "candidate_path": "GRWTSK/Analysis/RealAnalysis/RealFunctions/AlgebraicEdgeSign/Checks/Positive/SignConsequences.lean",
       "statement_and_proof_bytes": "EXACT_COPY",
       "semantic_preservation": "UNKNOWN_UNREPLAYED_NAMESPACE_AND_CONTEXT",
       "original": "FormalResearch.RiemannHypothesis.HighLagPolynomialSignFixtures.fixed_edge_is_negative",
@@ -209,7 +209,7 @@
         "sha256": "ea2650eb36b2671dcbcad10d980c23f2752713b3634bdba4c06024380e01fe0a"
       },
       "body_kind": "proof",
-      "candidate_path": "candidates/attribution-254/Analysis/RealAnalysis/RealFunctions/AlgebraicEdgeSign/Checks/Positive/SignConsequences.lean",
+      "candidate_path": "GRWTSK/Analysis/RealAnalysis/RealFunctions/AlgebraicEdgeSign/Checks/Positive/SignConsequences.lean",
       "statement_and_proof_bytes": "EXACT_COPY",
       "semantic_preservation": "UNKNOWN_UNREPLAYED_NAMESPACE_AND_CONTEXT",
       "original": "FormalResearch.RiemannHypothesis.HighLagPolynomialSignFixtures.fixed_edge_is_not_nonnegative",
@@ -243,7 +243,7 @@
         "sha256": "f6ccb6ef25013417c01f6a9147b99c930977ec24f6f18fd5885ae28c66552a93"
       },
       "body_kind": "proof",
-      "candidate_path": "candidates/attribution-254/Analysis/RealAnalysis/RealFunctions/AlgebraicEdgeSign/Checks/Positive/SignConsequences.lean",
+      "candidate_path": "GRWTSK/Analysis/RealAnalysis/RealFunctions/AlgebraicEdgeSign/Checks/Positive/SignConsequences.lean",
       "statement_and_proof_bytes": "EXACT_COPY",
       "semantic_preservation": "UNKNOWN_UNREPLAYED_NAMESPACE_AND_CONTEXT",
       "original": "FormalResearch.RiemannHypothesis.HighLagPolynomialSignFixtures.every_larger_edge_is_negative",
@@ -277,7 +277,7 @@
         "sha256": "874e2291cb771a8a34c589b4ed54b29374d1bdeeadeacf4d0496deaf41e3fe3a"
       },
       "body_kind": "proof",
-      "candidate_path": "candidates/attribution-254/Analysis/RealAnalysis/RealFunctions/AlgebraicEdgeSign/Checks/Positive/SignConsequences.lean",
+      "candidate_path": "GRWTSK/Analysis/RealAnalysis/RealFunctions/AlgebraicEdgeSign/Checks/Positive/SignConsequences.lean",
       "statement_and_proof_bytes": "EXACT_COPY",
       "semantic_preservation": "UNKNOWN_UNREPLAYED_NAMESPACE_AND_CONTEXT",
       "original": "FormalResearch.RiemannHypothesis.HighLagPolynomialSignFixtures.positive_normalization_does_not_repair_sign",
@@ -311,7 +311,7 @@
         "sha256": "8de55cfc3742314fb67aaa43bff165d5983decd45b9ada58d9d8bdeaf6263df9"
       },
       "body_kind": "proof",
-      "candidate_path": "candidates/attribution-254/Analysis/RealAnalysis/RealFunctions/AlgebraicEdgeSign/Checks/Positive/SignConsequences.lean",
+      "candidate_path": "GRWTSK/Analysis/RealAnalysis/RealFunctions/AlgebraicEdgeSign/Checks/Positive/SignConsequences.lean",
       "statement_and_proof_bytes": "EXACT_COPY",
       "semantic_preservation": "UNKNOWN_UNREPLAYED_NAMESPACE_AND_CONTEXT",
       "original": "FormalResearch.RiemannHypothesis.HighLagPolynomialSignFixtures.eventual_nonnegative_route_is_refuted",
@@ -320,12 +320,12 @@
   ],
   "outputs": [
     {
-      "path": "candidates/attribution-254/Analysis/RealAnalysis/RealFunctions/AlgebraicEdgeSign/Checks/Positive/SignConsequences.lean",
+      "path": "GRWTSK/Analysis/RealAnalysis/RealFunctions/AlgebraicEdgeSign/Checks/Positive/SignConsequences.lean",
       "mode": "100644",
-      "module": "Analysis.RealAnalysis.RealFunctions.AlgebraicEdgeSign.Checks.Positive.SignConsequences",
-      "logical_module": "Analysis.RealAnalysis.RealFunctions.AlgebraicEdgeSign.Checks.Positive.SignConsequences",
+      "module": "GRWTSK.Analysis.RealAnalysis.RealFunctions.AlgebraicEdgeSign.Checks.Positive.SignConsequences",
+      "logical_module": "GRWTSK.Analysis.RealAnalysis.RealFunctions.AlgebraicEdgeSign.Checks.Positive.SignConsequences",
       "namespace": "GRWTSK.Analysis.RealAnalysis.RealFunctions.AlgebraicEdgeSign.Checks.Positive.SignConsequences",
-      "candidate_import_root": "candidates/attribution-254",
+      "candidate_import_root": ".",
       "role": "positive-fixture-candidate",
       "sha256": "9c73dc6be8d954b0018d5d3ae85d85bb5653c8722814d5c2ae0bebb3ecd0b86c",
       "byte_count": 3169,
@@ -457,7 +457,7 @@
     "Keep algebraic coefficient signs separate from any future source-integral/actual-state transport.",
     "Replay only after compilation is authorized; no proof receipt or axiom acceptance is inherited."
   ],
-  "candidate_import_root": "candidates/attribution-254",
+  "candidate_import_root": ".",
   "representative_original_path": "/Users/local/Desktop/NoeaaeueFormal/scratch/confluence/cycle27/regent-high-work-certificate-investigation-v1/HighLagPolynomialSignFixtures.lean",
   "concept_decision": "ONE_COHERENT_ALGEBRAIC_SIGN_FIXTURE",
   "conceptual_seam_count": 0,
@@ -470,6 +470,12 @@
     "The denominator 10*(123:ℝ), negated eventual-nonnegativity statement and original proof invocations remain byte-exact.",
     "Dependency ancestry and original research-direction/proof-text notices stay in the pinned dependency preimage; no upstream origin or novelty is inferred."
   ],
+  "placement_correction": {
+    "reason": "Owner requires every reviewed Lean module directly under GRWTSK by mathematical subject",
+    "module_search_root": ".",
+    "source_statement_and_proof_bytes": "unchanged",
+    "compilation_run": false
+  },
   "shared_attribution_record": "MATH-ATTRIBUTION-254",
   "approved_attribution": [
     {

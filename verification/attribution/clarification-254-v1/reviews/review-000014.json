@@ -156,8 +156,8 @@
       "read_status": "READ_DIRECTLY",
       "disposition": "COPIED_TO_CANDIDATES",
       "candidate_paths": [
-        "candidates/attribution-254/CombinatoricsAndDiscreteMathematics/EnumerativeCombinatorics/CountingPrinciples/FiniteSiteConfigurations.lean",
-        "candidates/attribution-254/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/DependentFunctions/OpenBoundaryBondIndices.lean"
+        "GRWTSK/CombinatoricsAndDiscreteMathematics/EnumerativeCombinatorics/CountingPrinciples/FiniteSiteConfigurations.lean",
+        "GRWTSK/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/DependentFunctions/OpenBoundaryBondIndices.lean"
       ]
     },
     {
@@ -175,7 +175,7 @@
       "read_status": "READ_DIRECTLY",
       "disposition": "COPIED_TO_CANDIDATES",
       "candidate_paths": [
-        "candidates/attribution-254/CombinatoricsAndDiscreteMathematics/EnumerativeCombinatorics/CountingPrinciples/FiniteSiteConfigurations.lean"
+        "GRWTSK/CombinatoricsAndDiscreteMathematics/EnumerativeCombinatorics/CountingPrinciples/FiniteSiteConfigurations.lean"
       ]
     },
     {
@@ -185,7 +185,7 @@
       "read_status": "READ_DIRECTLY",
       "disposition": "COPIED_TO_CANDIDATES",
       "candidate_paths": [
-        "candidates/attribution-254/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/DependentFunctions/OpenBoundaryBondIndices.lean"
+        "GRWTSK/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/DependentFunctions/OpenBoundaryBondIndices.lean"
       ]
     },
     {
@@ -239,7 +239,7 @@
     {
       "original": "Mathematics.TensorNetwork.PhysicalConfiguration",
       "candidate": "GRWTSK.CombinatoricsAndDiscreteMathematics.EnumerativeCombinatorics.CountingPrinciples.FiniteSiteConfigurations.PhysicalConfiguration",
-      "candidate_path": "candidates/attribution-254/CombinatoricsAndDiscreteMathematics/EnumerativeCombinatorics/CountingPrinciples/FiniteSiteConfigurations.lean",
+      "candidate_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/EnumerativeCombinatorics/CountingPrinciples/FiniteSiteConfigurations.lean",
       "original_span": {
         "start": 403,
         "end": 466,
@@ -255,7 +255,7 @@
     {
       "original": "Mathematics.TensorNetwork.physicalConfiguration_card",
       "candidate": "GRWTSK.CombinatoricsAndDiscreteMathematics.EnumerativeCombinatorics.CountingPrinciples.FiniteSiteConfigurations.physicalConfiguration_card",
-      "candidate_path": "candidates/attribution-254/CombinatoricsAndDiscreteMathematics/EnumerativeCombinatorics/CountingPrinciples/FiniteSiteConfigurations.lean",
+      "candidate_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/EnumerativeCombinatorics/CountingPrinciples/FiniteSiteConfigurations.lean",
       "original_span": {
         "start": 524,
         "end": 664,
@@ -271,7 +271,7 @@
     {
       "original": "Mathematics.TensorNetwork.qubitConfiguration_card",
       "candidate": "GRWTSK.CombinatoricsAndDiscreteMathematics.EnumerativeCombinatorics.CountingPrinciples.FiniteSiteConfigurations.qubitConfiguration_card",
-      "candidate_path": "candidates/attribution-254/CombinatoricsAndDiscreteMathematics/EnumerativeCombinatorics/CountingPrinciples/FiniteSiteConfigurations.lean",
+      "candidate_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/EnumerativeCombinatorics/CountingPrinciples/FiniteSiteConfigurations.lean",
       "original_span": {
         "start": 745,
         "end": 880,
@@ -287,7 +287,7 @@
     {
       "original": "Mathematics.TensorNetwork.BondProfile",
       "candidate": "GRWTSK.FoundationsLogicAndTypeTheory.TypeTheory.DependentTypeTheory.DependentFunctions.OpenBoundaryBondIndices.BondProfile",
-      "candidate_path": "candidates/attribution-254/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/DependentFunctions/OpenBoundaryBondIndices.lean",
+      "candidate_path": "GRWTSK/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/DependentFunctions/OpenBoundaryBondIndices.lean",
       "original_span": {
         "start": 958,
         "end": 1222,
@@ -303,7 +303,7 @@
     {
       "original": "Mathematics.TensorNetwork.BondProfile.UniformlyBounded",
       "candidate": "GRWTSK.FoundationsLogicAndTypeTheory.TypeTheory.DependentTypeTheory.DependentFunctions.OpenBoundaryBondIndices.BondProfile.UniformlyBounded",
-      "candidate_path": "candidates/attribution-254/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/DependentFunctions/OpenBoundaryBondIndices.lean",
+      "candidate_path": "GRWTSK/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/DependentFunctions/OpenBoundaryBondIndices.lean",
       "original_span": {
         "start": 1279,
         "end": 1440,
@@ -319,7 +319,7 @@
     {
       "original": "Mathematics.TensorNetwork.VirtualConfiguration",
       "candidate": "GRWTSK.FoundationsLogicAndTypeTheory.TypeTheory.DependentTypeTheory.DependentFunctions.OpenBoundaryBondIndices.VirtualConfiguration",
-      "candidate_path": "candidates/attribution-254/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/DependentFunctions/OpenBoundaryBondIndices.lean",
+      "candidate_path": "GRWTSK/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/DependentFunctions/OpenBoundaryBondIndices.lean",
       "original_span": {
         "start": 1498,
         "end": 1625,
@@ -335,9 +335,9 @@
   ],
   "outputs": [
     {
-      "path": "candidates/attribution-254/CombinatoricsAndDiscreteMathematics/EnumerativeCombinatorics/CountingPrinciples/FiniteSiteConfigurations.lean",
+      "path": "GRWTSK/CombinatoricsAndDiscreteMathematics/EnumerativeCombinatorics/CountingPrinciples/FiniteSiteConfigurations.lean",
       "mode": "100644",
-      "module": "CombinatoricsAndDiscreteMathematics.EnumerativeCombinatorics.CountingPrinciples.FiniteSiteConfigurations",
+      "module": "GRWTSK.CombinatoricsAndDiscreteMathematics.EnumerativeCombinatorics.CountingPrinciples.FiniteSiteConfigurations",
       "namespace": "GRWTSK.CombinatoricsAndDiscreteMathematics.EnumerativeCombinatorics.CountingPrinciples.FiniteSiteConfigurations",
       "sha256": "0910cc879319af533a665ad90e8d8ab1c7e23f05b23dbc59537db0f5723a5432",
       "byte_count": 2219,
@@ -438,9 +438,9 @@
       ]
     },
     {
-      "path": "candidates/attribution-254/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/DependentFunctions/OpenBoundaryBondIndices.lean",
+      "path": "GRWTSK/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/DependentFunctions/OpenBoundaryBondIndices.lean",
       "mode": "100644",
-      "module": "FoundationsLogicAndTypeTheory.TypeTheory.DependentTypeTheory.DependentFunctions.OpenBoundaryBondIndices",
+      "module": "GRWTSK.FoundationsLogicAndTypeTheory.TypeTheory.DependentTypeTheory.DependentFunctions.OpenBoundaryBondIndices",
       "namespace": "GRWTSK.FoundationsLogicAndTypeTheory.TypeTheory.DependentTypeTheory.DependentFunctions.OpenBoundaryBondIndices",
       "sha256": "a5c889bd53c7457fea758fad1715cb7adbd3f354d6711e781c265f31dd871ed5",
       "byte_count": 2408,
@@ -550,7 +550,7 @@
       "UniformlyBounded and VirtualConfiguration use BondProfile"
     ],
     "cross_component_edges_observed": [],
-    "candidate_import_root": "candidates/attribution-254",
+    "candidate_import_root": ".",
     "import_minimization": "NOT_ATTEMPTED; original Mathlib import retained in both modules",
     "namespace_resolution": "UNKNOWN_UNREPLAYED"
   },
@@ -587,7 +587,13 @@
     "uniform_bound_only_a_predicate": true,
     "dependent_virtual_index_type_retained": true
   },
-  "candidate_import_root": "candidates/attribution-254",
+  "placement_correction": {
+    "reason": "Owner requires every reviewed Lean module directly under GRWTSK by mathematical subject",
+    "module_search_root": ".",
+    "source_statement_and_proof_bytes": "unchanged",
+    "compilation_run": false
+  },
+  "candidate_import_root": ".",
   "shared_attribution_record": "MATH-ATTRIBUTION-254",
   "approved_attribution": [
     {
