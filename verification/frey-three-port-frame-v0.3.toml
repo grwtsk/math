@@ -1,0 +1,124 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "frey-three-port-frame-v0.3"
+owner_repository = "grwtsk/math"
+issues = [100, 110, 127, 128, 129, 177, 220, 221, 222, 227, 230, 233, 241, 248, 249, 250, 251]
+root_module = "GRWTSK.Interfaces.FreyThreePortCore"
+build_target = "GRWTSK.Interfaces.FreyThreePortCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+base_revision = "4aab069dad5b8ef5a07d0850c920a4bfda596aeb"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_runtime_safety_scan = true
+operational_receipt_is_external = true
+root_library_import_unchanged = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unsafe_declarations = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Definitions"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyThreePortFrame"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyThreePortSaturation"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCurveGeometry"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyThreePortCore"
+
+[[hostile_controls]]
+id = "reject-two-port-as-saturated-three-port"
+description = "The square two-port difference carries the factor a+b; it cannot be reported as the denominator-free three-port recovery theorem."
+
+[[hostile_controls]]
+id = "reject-rectangular-as-surjective"
+description = "The exact obstruction quotient is split-surjective and the three-port evaluation is explicitly nonsurjective onto all of Z^3."
+
+[[hostile_controls]]
+id = "reject-left-inverse-without-bezout"
+description = "Recovery, exactness, obstruction splitting and the unit maximal-minor ideal require the exact integer Bezout identity."
+
+[[hostile_controls]]
+id = "reject-maximal-minor-unit-without-primitivity"
+description = "The typed unit-ideal theorem may use only the primitive triple's proved coprimality; a nonprimitive pair must not receive this certificate."
+
+[[hostile_controls]]
+id = "reject-exactness-without-compatible-kernel"
+description = "The image equals the kernel of the explicit compatibility obstruction; arbitrary three-port data are not in the image."
+
+[[hostile_controls]]
+id = "reject-triple-drift"
+description = "Postprocessing the canonical x-section values must recover the same typed primitive additive triple."
+
+[[hostile_controls]]
+id = "reject-formal-points-as-elliptic-proof"
+description = "Formal coordinate ports alone cannot inhabit the affine-point API; each point requires an equation and nonsingularity proof on the same Frey model."
+
+[[hostile_controls]]
+id = "reject-zero-discriminant-as-elliptic"
+description = "The IsElliptic instance must be constructed from the proved nonzero rational discriminant, not from the curve name or factorization alone."
+
+[[hostile_controls]]
+id = "reject-raw-as-minimal-discriminant"
+description = "The proved identity Delta_raw=16*a^2*b^2*c^2 is for the displayed rational Weierstrass model and is not a minimal-discriminant or conductor theorem."
+
+[[hostile_controls]]
+id = "reject-point-on-curve-as-two-torsion"
+description = "Equation membership and nonzeroness do not imply order two; the affine group-law theorem P+P=0 must be checked for each marked point."
+
+[[hostile_controls]]
+id = "reject-two-torsion-as-section-basis"
+description = "The three rational two-torsion points do not by themselves prove H0(E,O(2O))=span(1,x) or identify the finite coordinate map with section evaluation."
+
+[[hostile_controls]]
+id = "reject-integral-left-inverse-as-uniform-isometry"
+description = "Integral recovery does not imply a triple-independent archimedean operator norm or metric isometry."
+
+[[hostile_controls]]
+id = "reject-zero-interpolation-cost-as-zero-arithmetic-cost"
+description = "The finite saturation theorem does not erase model, discriminant, conductor, higher-stage, bad-place or excess-valuation costs."
+
+[[hostile_controls]]
+id = "reject-source-frame-as-abc"
+description = "A source-preserving split exact frame, rational Frey curve, and visible two-torsion are not an abc height-versus-radical inequality."
+
+[[hostile_controls]]
+id = "reject-root-import-as-slice-pass"
+description = "A build of GRWTSK cannot substitute for checking the isolated root and every declared module."
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+requires_root_import_unchanged = true
+requires_hostile_controls = true
+requires_axiom_audit = true
+requires_runtime_safety_scan = true
+
+[nonclaims]
+claims = [
+  "proof that H0(E,O(2O)) has basis (1,x)",
+  "identification of the formal value map with line-bundle section evaluation",
+  "minimal integral Weierstrass model",
+  "minimal discriminant or conductor formula",
+  "uniform archimedean frame bound",
+  "uniform height-versus-radical estimate",
+  "Szpiro conjecture",
+  "abc conjecture",
+  "Riemann Hypothesis",
+  "execution or replay receipt"
+]
