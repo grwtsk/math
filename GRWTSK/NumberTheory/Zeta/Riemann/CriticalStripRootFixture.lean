@@ -6,25 +6,26 @@ import GRWTSK.NumberTheory.Zeta.Riemann.ZetaCommutatorRoot
 set_option autoImplicit false
 
 /-!
-# Concrete root-only atlas hostile fixture
+# Concrete critical-strip atlas hostile fixtures
 
-This file instantiates the generic critical-strip interfaces on the concrete zeta
-spectral-parameter commutator root. The resulting one-chart atlas has a nonempty
-carrier, exact source binding, an exact self-overlap, identity/inverse/cocycle laws,
-and a source-bound reflexive vertical edge.
+The first fixture instantiates the generic interfaces on the concrete zeta
+spectral-parameter root. It has a nonempty carrier, exact source binding, an exact
+self-overlap, coordinate identity/inverse/cocycle laws, and a source-bound reflexive
+vertical edge. Its local RH profile is nevertheless neutral, so these structural facts
+do not establish `GapFree` or complete vertical coverage.
 
-Its local RH profile is nevertheless neutral. The fixture proves that these structural
-facts do not establish `GapFree`, do not discharge either RH direction, and cannot
-supply a terminal-equivalent chart for complete vertical coverage. This is the concrete
-hostile control against promoting a common root, exact coordinate self-overlap, or path
-existence into an RH theorem.
+The second fixture adds the canonical RH target chart on the same full carrier and the
+same root coordinate. The two charts have an exact coordinate transition and coexist in
+one `CriticalStripAtlas`, while the declared overlap audit remains logically unrelated.
+This is the concrete #244 hostile control: equal coordinates do not supply
+`RootStatement ↔ RiemannHypothesis`.
 -/
 
 namespace GRWTSK.RiemannHypothesis.ZetaCommutatorRootFixture
 
 open ZetaCommutatorRoot
 
-/-- The single chart index of the hostile fixture. -/
+/-- The single chart index of the root-only hostile fixture. -/
 inductive ChartIndex where
   | root
   deriving DecidableEq, Repr
@@ -53,8 +54,8 @@ def selfOutcome : OverlapAuditOutcome chart chart :=
 
 /-- One-chart atlas over the full complex spectral-parameter carrier. -/
 def atlas : CriticalStripAtlas ChartIndex Operator SpectralPoint ModuleCarrier where
-  root := root
-  chart := fun _ => chart
+  root := ZetaCommutatorRoot.root
+  chart := fun _ => ZetaCommutatorRoot.chart
   cover := by
     intro _
     exact ⟨.root, trivial⟩
@@ -62,7 +63,7 @@ def atlas : CriticalStripAtlas ChartIndex Operator SpectralPoint ModuleCarrier w
     intro i j _overlap
     cases i
     cases j
-    exact selfTransition.toChartTransition selfTransition_isEquivalent
+    exact selfTransition.toCoordinateTransition
   identity_transition := by
     intro i _ _
     cases i
@@ -245,6 +246,129 @@ theorem no_completeVerticalCoverage :
   rcases coverage.terminal_nonempty with ⟨i, hi⟩
   have hstatus := coverage.terminal_equivalent i hi
   cases i
+  change LocalRHStatus.neutral = .equivalent at hstatus
+  cases hstatus
+
+/-! ## Neutral root and canonical target on one coordinate atlas -/
+
+/-- Canonical target chart using exactly the same carrier, root coordinate, source,
+revision, and normalization as the neutral root chart. -/
+def targetChart : CriticalStripChart ZetaCommutatorRoot.root where
+  carrier := fun _ => True
+  anchor := 0
+  anchor_mem := trivial
+  coordinate := ZetaCommutatorRoot.root.coordinate
+  coordinate_eq_root := by
+    intro _ _
+    rfl
+  localStatement := _root_.RiemannHypothesis
+  sourceId := sourceId
+  revision := sourceRevision
+  normalizationId := normalizationId
+  source_eq_root := rfl
+  revision_eq_root := rfl
+
+@[simp] theorem binding_matches_targetChart : binding.Matches targetChart := by
+  exact ⟨rfl, rfl, rfl⟩
+
+/-- Canonical target is exactly equivalent to itself. -/
+def targetProfile : LocalRHProfile _root_.RiemannHypothesis :=
+  LocalRHProfile.ofEquivalence Iff.rfl
+
+@[simp] theorem targetProfile_status : targetProfile.status = .equivalent :=
+  rfl
+
+/-- Coordinate overlap from the neutral root chart to the canonical target. Its logical
+transport is deliberately `unrelated`: no missing theorem is inserted by metadata. -/
+def rootToTargetTransition : DirectionalOverlapTransition chart targetChart where
+  overlap := ⟨0, trivial, trivial⟩
+  coordinateMap := id
+  coordinate_transport := by
+    intro _ _ _
+    rfl
+  statementTransport := .unrelated
+  leftBinding := binding
+  rightBinding := binding
+  left_binding_matches := binding_matches_chart
+  right_binding_matches := binding_matches_targetChart
+  binding_eq := rfl
+
+@[simp] theorem rootToTarget_notEquivalent :
+    ¬ rootToTargetTransition.statementTransport.IsEquivalent := by
+  simp [rootToTargetTransition, StatementTransport.IsEquivalent]
+
+/-- Exact coordinate, missing logical equivalence. -/
+def rootToTargetOutcome : OverlapAuditOutcome chart targetChart :=
+  .directional rootToTargetTransition rootToTarget_notEquivalent
+
+@[simp] theorem rootToTarget_coordinate_admitted :
+    rootToTargetOutcome.admittedCoordinateTransition =
+      some rootToTargetTransition.toCoordinateTransition :=
+  rfl
+
+@[simp] theorem rootToTarget_logical_not_admitted :
+    rootToTargetOutcome.admittedTransition = none :=
+  rfl
+
+/-- The two overlapping charts of the coordinate/logical separation fixture. -/
+inductive BoundaryChartIndex where
+  | root
+  | target
+  deriving DecidableEq, Repr
+
+/-- Chart family containing both the neutral root and canonical RH target. -/
+def boundaryChart : BoundaryChartIndex → CriticalStripChart ZetaCommutatorRoot.root
+  | .root => chart
+  | .target => targetChart
+
+/-- Exact identity coordinate map between every pair of boundary charts. -/
+def boundaryCoordinateTransition (i j : BoundaryChartIndex) :
+    CoordinateTransition (boundaryChart i) (boundaryChart j) where
+  forward := id
+  coordinate_transport := by
+    intro _ _ _
+    cases i <;> cases j <;> rfl
+
+/-- Corrected atlas: the neutral root and RH-equivalent target coexist on the same
+coordinate carrier without assuming a proposition equivalence between them. -/
+def boundaryAtlas :
+    CriticalStripAtlas BoundaryChartIndex Operator SpectralPoint ModuleCarrier where
+  root := ZetaCommutatorRoot.root
+  chart := boundaryChart
+  cover := by
+    intro _
+    exact ⟨.root, trivial⟩
+  transition := by
+    intro i j _
+    exact boundaryCoordinateTransition i j
+  identity_transition := by
+    intro i _ _
+    cases i <;> rfl
+  inverse_transition := by
+    intro i j _ _ _
+    cases i <;> cases j <;> rfl
+  cocycle_transition := by
+    intro i j k _ _ _ _
+    cases i <;> cases j <;> cases k <;> rfl
+  comparison := by
+    intro i
+    cases i with
+    | root => exact localProfile
+    | target => exact targetProfile
+
+@[simp] theorem boundaryAtlas_root_status :
+    (boundaryAtlas.comparison .root).status = .neutral :=
+  rfl
+
+@[simp] theorem boundaryAtlas_target_status :
+    (boundaryAtlas.comparison .target).status = .equivalent :=
+  rfl
+
+/-- Coordinate coexistence with an RH-equivalent target still does not discharge the
+neutral root chart's two logical gaps. -/
+theorem boundaryAtlas_not_gapFree : ¬ boundaryAtlas.GapFree := by
+  intro hgap
+  have hstatus := hgap BoundaryChartIndex.root
   change LocalRHStatus.neutral = .equivalent at hstatus
   cases hstatus
 
