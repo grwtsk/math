@@ -26,8 +26,16 @@ Adopt the Markdown/YAML profile in [schema](../schema.md). One concept has one p
 
 ## D04 Pilot admission and scale-up
 
-All eleven concept records and three crosswalks are proposed. No independent reviewer or production graph is claimed. The pilot exercises architecture but leaves full disciplinary coverage intact. Before population batches, resolve any profile defect, source-rights blocker or ownership conflict discovered by review. Before production release, execute the positive/hostile controls in Noe, reconcile the complete declared baseline, and publish independent semantic and cataloging dispositions.
+The original eleven concept records and three crosswalks were proposed; the 0.2 candidate adds three proposed subjects and one proposal without admitting any record. No independent reviewer or production graph is claimed. The pilot exercises architecture but leaves full disciplinary coverage intact. Before population batches, resolve any profile defect, source-rights blocker or ownership conflict discovered by review. Before production release, execute the positive/hostile controls in Noe, reconcile the complete declared baseline, and publish independent semantic and cataloging dispositions.
 
 ## D05 Compatibility and source credit
 
 The three named namespace pairs remain scope-review candidates. Preserve existing exact source versions, upstream notices, hypotheses and unresolved #254 credit markers. Classifying a guide or a source occurrence does not migrate its Lean module. Splits and merges require durable predecessor/replacement decisions; new paths cannot silently redefine historical identities.
+
+## D06 Reference-only population and rights boundary
+
+Draft editorial disposition, 2026-10-19: continue original local subject authoring with citations while the bulk external-data gate remains closed. [The MSC reference profile](../standards/msc2020/index.md) distinguishes public reference access from acquisition, adaptation and distribution of scheme data. Do not infer rights clearance from a private cache, an external runtime, a successful parser or this repository's MIT label. The user's intended downstream use has not been determined or certified as noncommercial.
+
+Original history/education descriptions in [the bounded addition](../proposals/new-concepts/history-education.md) are not an imported classification dataset. This resolves placement for that addition only; it does not waive D02, authorize a standards submission or accept a mapping. The local vocabulary candidate advances to `0.2-pilot`; earlier source editions remain historical and no accepted release is published. Existing mapping IDs retain their meanings, target editions and proposed states; their local-source edition update is explicit and requires renewed review.
+
+Alternatives for future dataset use must document the actual license basis or separate permission, notices, restrictions and distribution boundary before implementation. Do not choose a permissive replacement license for source-owned material. Full native identifiers and relationships remain obligations even while inaccessible. The original audit and test specifications remain historical source; execution receipts and repeatable results belong in Noe or external runtime outputs.
