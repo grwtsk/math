@@ -1,0 +1,14 @@
+import SourceActualRieszFutureAreaEstimate
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames true
+#check FormalResearch.RiemannHypothesis.SourceActualRieszFutureAreaEstimate.actualResidual_future_quadratic_area_tail
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszFutureAreaEstimate.actualResidual_future_quadratic_area_tail
+#check FormalResearch.RiemannHypothesis.SourceActualRieszFutureAreaEstimate.estimate_of_actual_future_quadratic_area
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszFutureAreaEstimate.estimate_of_actual_future_quadratic_area

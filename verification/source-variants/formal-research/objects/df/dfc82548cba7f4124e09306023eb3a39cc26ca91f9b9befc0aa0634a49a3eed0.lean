@@ -1,0 +1,33 @@
+import FormalResearch.RiemannHypothesis.SourcePairedTailQuadrature
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourcePairedTailQuadrature
+#check PairedPrimeQuadratureTailLowerBound
+#print axioms PairedPrimeQuadratureTailLowerBound
+#check negativeSurvival_ge_one_left
+#print axioms negativeSurvival_ge_one_left
+#check pairedTailTest_ge_one_left
+#print axioms pairedTailTest_ge_one_left
+#check negativeSurvival_signed_work
+#print axioms negativeSurvival_signed_work
+#check negativeSurvival_prime_sum_sub_mean
+#print axioms negativeSurvival_prime_sum_sub_mean
+#check negativeSurvival_prime_error_uniformly_bounded
+#print axioms negativeSurvival_prime_error_uniformly_bounded
+#check pairedTailTest_prime_sum_eq
+#print axioms pairedTailTest_prime_sum_eq
+#check pairedErrorContrast_eq_prime_quadrature
+#print axioms pairedErrorContrast_eq_prime_quadrature
+#check pairedTailTest_signed_work
+#print axioms pairedTailTest_signed_work
+#check pairedTailTest_drift_pos
+#print axioms pairedTailTest_drift_pos
+#check pairedTailTest_drift_le_upper
+#print axioms pairedTailTest_drift_le_upper
+#check pairedQuadrature_tail_iff_pairedContrast_tail
+#print axioms pairedQuadrature_tail_iff_pairedContrast_tail
+#check mertens_residual_tail_iff_pairedQuadrature_tail
+#print axioms mertens_residual_tail_iff_pairedQuadrature_tail
+#check mertensResidual_eq_paired_quadrature_remainder
+#print axioms mertensResidual_eq_paired_quadrature_remainder
+#check pairedContrast_abs_le_variation_budget
+#print axioms pairedContrast_abs_le_variation_budget

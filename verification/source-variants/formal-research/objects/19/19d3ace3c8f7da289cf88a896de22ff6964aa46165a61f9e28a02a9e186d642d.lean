@@ -1,0 +1,16 @@
+import SourceActualPsiPntTimeDecay
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+set_option pp.funBinderTypes false
+set_option pp.letVarTypes false
+set_option pp.tagAppFns false
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourceActualPsiPntTimeDecay.actualRelativePsiTimeError
+#print FormalResearch.RiemannHypothesis.SourceActualPsiPntTimeDecay.actualRelativePsiTimeError_eq_one_convolution
+#print FormalResearch.RiemannHypothesis.SourceActualPsiPntTimeDecay.actualRelativePsiTimeError_intervalIntegrable
+#print FormalResearch.RiemannHypothesis.SourceActualPsiPntTimeDecay.actualRelativePsiTimeError_isBigO
+#print FormalResearch.RiemannHypothesis.SourceActualPsiPntTimeDecay.actualRelativePsiTimeError_tendsto_zero
+#print FormalResearch.RiemannHypothesis.SourceActualPsiPntTimeDecay.actualRelativePsiTimeError_integrableOn

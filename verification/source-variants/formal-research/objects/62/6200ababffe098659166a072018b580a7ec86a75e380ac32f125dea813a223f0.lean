@@ -1,0 +1,11 @@
+import ActualBumpHorizontalStripBudget
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.ActualBumpHorizontalStripBudget.actual_bump_norm_le_abs_re
+#print FormalResearch.RiemannHypothesis.ActualBumpHorizontalStripBudget.actual_bump_on_strip_norm_le
+#print FormalResearch.RiemannHypothesis.ActualBumpHorizontalStripBudget.actual_bumpMellinWeight_on_strip_norm_le
+#print FormalResearch.RiemannHypothesis.ActualBumpHorizontalStripBudget.actual_bilateral_on_strip_norm_le

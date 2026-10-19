@@ -1,0 +1,10 @@
+import SourceSignedPrefixObstruction
+open FormalResearch.RiemannHypothesis.SourceSignedPrefixObstruction
+#print actual_prefix_values
+#print actual_six_in_long_inventory
+#print actual_positive_off_diagonal_coefficient
+#print axioms actual_prefix_values
+#print axioms actual_six_in_long_inventory
+#print axioms actual_positive_off_diagonal_coefficient
+#print axioms centering_does_not_force_nonpositive_prefix
+#print axioms centering_does_not_force_nonnegative_prefix

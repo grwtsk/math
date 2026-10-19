@@ -1,0 +1,21 @@
+import SourceRemainingVariationObstruction
+
+set_option linter.hashCommand false
+set_option pp.all true
+set_option pp.universes true
+set_option pp.proofs true
+set_option pp.maxDepth 1000000
+set_option pp.maxSteps 100000000
+
+open FormalResearch.RiemannHypothesis.SourceRemainingVariationObstruction
+
+#print remainingDerivativeMass
+#print criticalPrimeTest_deriv_early_lower
+#print remainingDerivativeMass_exponential_lower
+#print remainingDerivativeMass_linear_lower
+#print remainingDerivativeMass_not_eventually_bounded
+#print axioms remainingDerivativeMass
+#print axioms criticalPrimeTest_deriv_early_lower
+#print axioms remainingDerivativeMass_exponential_lower
+#print axioms remainingDerivativeMass_linear_lower
+#print axioms remainingDerivativeMass_not_eventually_bounded

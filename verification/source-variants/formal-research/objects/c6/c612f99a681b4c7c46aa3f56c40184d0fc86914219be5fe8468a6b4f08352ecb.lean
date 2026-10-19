@@ -1,0 +1,6 @@
+import SourceCubicSamplingRemainder
+set_option autoImplicit false
+set_option linter.style.longLine false
+#print FormalResearch.RiemannHypothesis.SourceCubicSamplingRemainder.cubicLogModelDerivative
+#print FormalResearch.RiemannHypothesis.SourceCubicSamplingRemainder.cubic_log_derivative_difference
+#print FormalResearch.RiemannHypothesis.SourceCubicSamplingRemainder.cubic_log_derivative_difference_abs_le

@@ -1,0 +1,8 @@
+import SourceStrictColumnInterior
+
+open FormalResearch.RiemannHypothesis.SourceStrictColumnInterior
+
+#print axioms strictColumnInterior
+#print axioms covariance_sub_main_eq_strictColumnInterior_add_endpoint
+#print axioms strictColumnInterior_pointwise_upper_transfers
+#print axioms jointMainTermTail_iff_strictColumnInteriorTail

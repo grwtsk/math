@@ -1,0 +1,32 @@
+import EndpointScopeFixtures
+
+open FormalResearch.RiemannHypothesis.MangoldtQuotientEndpointFixtures
+
+#check natural_double_quotient_control
+#print axioms natural_double_quotient_control
+#check separately_cast_real_quotient_differs
+#print axioms separately_cast_real_quotient_differs
+#check missing_square_threshold_retains_extra_row
+#print axioms missing_square_threshold_retains_extra_row
+#check square_threshold_equality_control
+#print axioms square_threshold_equality_control
+#check actual_real_upper_touching_zero
+#print axioms actual_real_upper_touching_zero
+#check actual_centered_prefix_positive_control
+#print axioms actual_centered_prefix_positive_control
+#check actual_centered_prefix_negative_control
+#print axioms actual_centered_prefix_negative_control
+#check raw_beta_is_not_centered_prefix
+#print axioms raw_beta_is_not_centered_prefix
+#check inclusive_endpoint_is_not_silently_deleted
+#print axioms inclusive_endpoint_is_not_silently_deleted
+#check zero_endpoint_does_not_bound_synthetic_interior
+#print axioms zero_endpoint_does_not_bound_synthetic_interior
+#check actual_endpoint_twelve_only
+#print axioms actual_endpoint_twelve_only
+#check actual_endpoint_first_row_only
+#print axioms actual_endpoint_first_row_only
+#check full_compensation_still_present
+#print axioms full_compensation_still_present
+#check first_coefficient_zero_endpoint_zero
+#print axioms first_coefficient_zero_endpoint_zero

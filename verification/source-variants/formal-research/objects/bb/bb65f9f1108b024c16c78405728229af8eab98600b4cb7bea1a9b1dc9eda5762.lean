@@ -1,0 +1,23 @@
+import scratch.common_mean_20261004.FiniteCertificate
+
+set_option autoImplicit false
+
+#check CommonMean20261004.FiniteCertificate.rationalTailBound
+#check CommonMean20261004.FiniteCertificate.rationalTailBound_lt
+#check CommonMean20261004.FiniteCertificate.rationalTailBound_nonneg
+#check CommonMean20261004.FiniteCertificate.tailBound_lt
+#check CommonMean20261004.FiniteCertificate.tailBound_nonneg
+#check CommonMean20261004.FiniteCertificate.spectral_lower_of_head_tail
+#check CommonMean20261004.FiniteCertificate.residual_upper_of_spectral_lower
+#check CommonMean20261004.FiniteCertificate.residual_negative_of_upper
+#print CommonMean20261004.FiniteCertificate.FinitePremises
+#check CommonMean20261004.FiniteCertificate.finite_bounds
+
+#print axioms CommonMean20261004.FiniteCertificate.rationalTailBound_lt
+#print axioms CommonMean20261004.FiniteCertificate.rationalTailBound_nonneg
+#print axioms CommonMean20261004.FiniteCertificate.tailBound_lt
+#print axioms CommonMean20261004.FiniteCertificate.tailBound_nonneg
+#print axioms CommonMean20261004.FiniteCertificate.spectral_lower_of_head_tail
+#print axioms CommonMean20261004.FiniteCertificate.residual_upper_of_spectral_lower
+#print axioms CommonMean20261004.FiniteCertificate.residual_negative_of_upper
+#print axioms CommonMean20261004.FiniteCertificate.finite_bounds

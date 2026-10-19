@@ -1,0 +1,18 @@
+import SourceActualZeroTailCount
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+
+#check FormalResearch.RiemannHypothesis.SourceActualZeroTailCount.actualZeroSixTail
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroTailCount.actualZeroSixTail
+#print FormalResearch.RiemannHypothesis.SourceActualZeroTailCount.actualZeroSixTail
+#check FormalResearch.RiemannHypothesis.SourceActualZeroTailCount.actualZeroSixTail_count_bound
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroTailCount.actualZeroSixTail_count_bound
+#print FormalResearch.RiemannHypothesis.SourceActualZeroTailCount.actualZeroSixTail_count_bound

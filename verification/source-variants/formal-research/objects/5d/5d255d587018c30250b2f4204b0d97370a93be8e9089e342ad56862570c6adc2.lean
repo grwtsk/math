@@ -1,0 +1,24 @@
+import ActualSqrtSieveBounds
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.maxSteps 1000000
+
+#check RH16IndependentChallengeNext.reciprocalSqrt_sum_upper
+#print axioms RH16IndependentChallengeNext.reciprocalSqrt_sum_upper
+#check RH16IndependentChallengeNext.reciprocalSqrt_sum_upper_total
+#print axioms RH16IndependentChallengeNext.reciprocalSqrt_sum_upper_total
+#check RH16IndependentChallengeNext.reciprocalSqrt_sum_lower
+#print axioms RH16IndependentChallengeNext.reciprocalSqrt_sum_lower
+#check RH16IndependentChallengeNext.reciprocalSquare_sum_upper
+#print axioms RH16IndependentChallengeNext.reciprocalSquare_sum_upper
+#check RH16IndependentChallengeNext.reciprocal_small_square_divisor_bonus
+#print axioms RH16IndependentChallengeNext.reciprocal_small_square_divisor_bonus
+set_option pp.proofs true
+#print RH16IndependentChallengeNext.reciprocalSqrt_sum_upper
+#print RH16IndependentChallengeNext.reciprocalSqrt_sum_upper_total
+#print RH16IndependentChallengeNext.reciprocalSqrt_sum_lower
+#print RH16IndependentChallengeNext.reciprocalSquare_sum_upper
+#print RH16IndependentChallengeNext.reciprocal_small_square_divisor_bonus

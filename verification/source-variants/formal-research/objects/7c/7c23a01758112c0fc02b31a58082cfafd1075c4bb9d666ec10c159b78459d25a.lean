@@ -1,0 +1,11 @@
+import LargePrimeDisclosureSubcase
+
+#check RH16LargePrimeDisclosureSubcase.primeDivisors_zero
+#print axioms RH16LargePrimeDisclosureSubcase.primeDivisors_zero
+
+#check RH16LargePrimeDisclosureSubcase.freshBetaRow_eq_zero_of_U_lt_p
+#print axioms RH16LargePrimeDisclosureSubcase.freshBetaRow_eq_zero_of_U_lt_p
+
+#check RH16LargePrimeDisclosureSubcase.disclosedReadout_large_prime_one_block
+#print axioms RH16LargePrimeDisclosureSubcase.disclosedReadout_large_prime_one_block
+

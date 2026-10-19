@@ -1,0 +1,35 @@
+import SourceFullXiSignedPrimitiveCost
+
+set_option autoImplicit false
+set_option pp.all true
+
+namespace FormalResearch.RiemannHypothesis.SourceFullXiCellBudgetObstruction
+
+#check fullXiLogWeight
+#print axioms fullXiLogWeight
+#check fullXiAbsoluteLogBudget
+#print axioms fullXiAbsoluteLogBudget
+#check actual_fullXiLogWeight_early_negative
+#print axioms actual_fullXiLogWeight_early_negative
+#check actual_fullXiLogWeight_continuous
+#print axioms actual_fullXiLogWeight_continuous
+#check actual_fullXiAbsoluteLogBudget_linear_lower
+#print axioms actual_fullXiAbsoluteLogBudget_linear_lower
+#check actual_fullXiAbsoluteLogBudget_not_eventually_bounded
+#print axioms actual_fullXiAbsoluteLogBudget_not_eventually_bounded
+
+end FormalResearch.RiemannHypothesis.SourceFullXiCellBudgetObstruction
+
+namespace FormalResearch.RiemannHypothesis.SourceFullXiSignedPrimitiveCost
+
+#check actual_fullXiLogWeight_deriv
+#print axioms actual_fullXiLogWeight_deriv
+#check actual_fullXiLogWeight_deriv_abs_le
+#print axioms actual_fullXiLogWeight_deriv_abs_le
+#check actual_fullXiLogWeight_deriv_continuous
+#print axioms actual_fullXiLogWeight_deriv_continuous
+#check actual_fullXi_signed_primitive_derivative_cost
+#print axioms actual_fullXi_signed_primitive_derivative_cost
+
+end FormalResearch.RiemannHypothesis.SourceFullXiSignedPrimitiveCost
+

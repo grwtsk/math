@@ -1,0 +1,30 @@
+import SourceActualMixedWorkFubini
+
+open FormalResearch.RiemannHypothesis.SourceActualMixedWorkFubini
+
+#print axioms errorExp
+#print axioms cellKernel
+#print axioms errorExp_intervalIntegrable
+#print axioms source_tsupport_subset
+#print axioms deriv_source_tsupport_subset
+#print axioms cellKernel_integrable
+#print axioms profileX
+#print axioms profileYCell
+#print axioms profileX_integrand_intervalIntegrable
+#print axioms profile_cell_product_integrable
+#print axioms jointMangoldtErrorWork_eq_actual_bilinear_profiles
+#print axioms actualTimeProfile
+#print axioms actualReflectedProfile
+#print axioms actualMixedWorkDensity
+#print axioms actualWorkWindow
+#print axioms discreteOverlapWindow
+#print axioms actualWorkLeftStrip
+#print axioms actualMixedWorkDensity_integrable
+#print axioms jointMangoldtErrorWork_eq_actual_density
+#print axioms actualMixedWorkDensity_zero_outside_window
+#print axioms jointMangoldtErrorWork_eq_actual_window_integral
+#print axioms discreteOverlapWindow_subset_actualWorkWindow
+#print axioms actualWorkLeftStrip_eq_Ico_inter
+#print axioms jointMangoldtErrorWork_eq_overlap_add_leftStrip
+#print axioms strictColumnInterior_eq_baseline_sub_localized_work
+#print axioms covariance_sub_main_eq_localized_work_with_endpoint

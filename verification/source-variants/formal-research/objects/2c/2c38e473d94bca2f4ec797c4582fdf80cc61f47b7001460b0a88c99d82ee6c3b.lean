@@ -1,0 +1,22 @@
+import SourceSignedPrefixObstruction
+open FormalResearch.RiemannHypothesis.SourceSignedPrefixObstruction
+#check centeredPrefix
+#print axioms centeredPrefix
+#check actual_cutoff
+#print axioms actual_cutoff
+#check actual_alpha
+#print axioms actual_alpha
+#check centered_beta_short_examples
+#print axioms centered_beta_short_examples
+#check actual_prefix_values
+#print axioms actual_prefix_values
+#check actual_six_in_long_inventory
+#print axioms actual_six_in_long_inventory
+#check actual_four_in_long_inventory
+#print axioms actual_four_in_long_inventory
+#check actual_positive_off_diagonal_coefficient
+#print axioms actual_positive_off_diagonal_coefficient
+#check centering_does_not_force_nonpositive_prefix
+#print axioms centering_does_not_force_nonpositive_prefix
+#check centering_does_not_force_nonnegative_prefix
+#print axioms centering_does_not_force_nonnegative_prefix

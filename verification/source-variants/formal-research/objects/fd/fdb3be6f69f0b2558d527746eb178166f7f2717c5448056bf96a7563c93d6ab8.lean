@@ -1,0 +1,32 @@
+import SourceActualCriticalHalfPntConsumer
+open FormalResearch.RiemannHypothesis
+open RH16ActualCriticalHalfPntConsumer
+#check actualDampedXiFinitePrimitive_eq_half_convolution_pnt_tail
+#print axioms actualDampedXiFinitePrimitive_eq_half_convolution_pnt_tail
+#check actualDampedXiFinitePrimitive_half_pnt_majorant
+#print axioms actualDampedXiFinitePrimitive_half_pnt_majorant
+open SourceActualXiErrorConvolution
+#check actualDampedXiFinitePrimitive_eq_error_convolutions
+#print axioms actualDampedXiFinitePrimitive_eq_error_convolutions
+open RH16ActualPntTailConvolution
+#check actualMangoldtErrorConvolution_one_eq_neg_tail
+#print axioms actualMangoldtErrorConvolution_one_eq_neg_tail
+#check SourceActualMertensPntRate.actualRelativePsiTimeError_tail_abs_le
+#print axioms SourceActualMertensPntRate.actualRelativePsiTimeError_tail_abs_le
+#check SourceActualPsiPntTimeDecay.actualRelativePsiTimeError_isBigO
+#print axioms SourceActualPsiPntTimeDecay.actualRelativePsiTimeError_isBigO
+#print actualXiErrorConvolutionSevenValue
+#print actualXiErrorConvolutionHalfHead
+#print actualXiErrorConvolutionOneHead
+#print actualCenteredMangoldtLogError
+#print actualMangoldtErrorConvolution
+#print SourceActualXiDampedFiniteBound.actualDampedXiFinitePrimitive
+#print SourceActualPsiPntTimeDecay.actualRelativePsiTimeError
+#print SourceMangoldtAbel.mangoldtLogPrefix
+#print WeightedPrimeMertens.weightedMangoldt
+#print Chebyshev.psi
+open Lean Elab Command
+run_cmd do
+  let env ← getEnv
+  for mod in env.allImportedModuleNames do
+    logInfo m!"RH16_IMPORT {mod}"

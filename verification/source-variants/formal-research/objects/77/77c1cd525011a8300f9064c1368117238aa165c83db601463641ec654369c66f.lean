@@ -1,0 +1,22 @@
+import SourceColumnEnvelopeMass
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option pp.proofs false
+set_option pp.fullNames true
+
+namespace FormalResearch.RiemannHypothesis.SourceColumnEnvelopeMass
+
+#print columnEnvelopeMass
+#print columnEnvelopeMass_le
+#print axioms columnEnvelopeMass_le
+end FormalResearch.RiemannHypothesis.SourceColumnEnvelopeMass
+
+namespace FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+namespace CorrelationAssembly
+
+#print EstimateObligation
+#print UniformLowerBound
+
+end CorrelationAssembly
+end FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry

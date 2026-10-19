@@ -1,0 +1,11 @@
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateSourceCorrelationPolynomial
+import Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral
+#check Finset.sum_Icc_succ_bot
+#check Finset.sum_Icc_succ_bot_eq_sub
+#check Nat.cast_factorial
+#check Real.Gamma_nat_eq_factorial
+#check integrableOn_rpow_mul_exp_neg_mul_rpow
+#check Real.integral_rpow_mul_exp_neg_mul_Ioi
+#check Finset.mul_sum
+#check ArithmeticFunction.vonMangoldt_one
+#check Finset.sum_sub_distrib

@@ -1,0 +1,23 @@
+import FormalResearch.RiemannHypothesis.SourceComparison.SamplingError
+import Mathlib.MeasureTheory.Integral.ExpDecay
+open MeasureTheory Set Real Filter Finset
+#check Finset.sum_Icc_eq_sum_range
+#check Finset.sum_Ico_eq_sum_range
+#check Finset.sum_Icc_succ_top
+#check Finset.sum_Icc_succ_bot
+#check Finset.sum_Ico_add
+#check Finset.sum_Ico_eq_sum_range
+#check IntegrableOn.union
+#check integrableOn_union
+#check integrableOn_univ
+#check IntegrableOn.congr_fun
+#check IntegrableOn.mono_set
+#check integrableOn_const
+#check integrableOn_congr_fun
+#check MeasureTheory.integrableOn_Ioi_iff_integrableOn_Ici
+#check Real.exp_neg_integrableOn_Ioi
+#check exp_neg_integrableOn_Ioi
+#check ContinuousOn.integrableOn_Icc
+#check IntegrableOn.congr
+#check memLp_two_iff_integrable_sq
+#check MemLp

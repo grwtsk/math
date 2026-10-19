@@ -1,0 +1,6 @@
+import SourceActualXiHalfFiniteReadout
+set_option autoImplicit false
+open FormalResearch.RiemannHypothesis.SourceActualXiHalfFiniteReadout
+#print actualMangoldtHalfWindowSeven
+#print actualXi_half_window_eq_finite
+#print actualAnchoredXiTailPrimitive_eq_finite

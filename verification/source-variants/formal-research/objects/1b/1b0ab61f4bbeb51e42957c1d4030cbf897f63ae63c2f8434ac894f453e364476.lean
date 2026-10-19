@@ -1,0 +1,12 @@
+import Mathematics.SemiLocalDefect.ResidueDeflection.Trace.PacketModel
+import Mathematics.SemiLocalDefect.ResidueDeflection.Trace.OperatorPullback
+import Mathematics.SemiLocalDefect.ResidueDeflection.Trace.PolarTraceSystem
+import Mathematics.SemiLocalDefect.ResidueDeflection.Trace.CompensationDefect
+import Mathematics.SemiLocalDefect.ResidueDeflection.Trace.CompensationBound
+import Mathematics.SemiLocalDefect.ResidueDeflection.Trace.ExactCompensation
+import Mathematics.SemiLocalDefect.ResidueDeflection.Trace.PathCompensation
+import Mathematics.SemiLocalDefect.ResidueDeflection.Trace.PathGain
+
+/-!
+# Fixed-Hilbert residue-deflection trace layer
+-/

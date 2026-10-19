@@ -1,0 +1,36 @@
+import FormalResearch.RiemannHypothesis.ThetaTailRatioTwo
+open FormalResearch.RiemannHypothesis.ThetaPositiveLift
+
+#check deriv_thetaPhi_poly_integrableOn
+#print deriv_thetaPhi_poly_integrableOn
+#print axioms deriv_thetaPhi_poly_integrableOn
+#check thetaPhi_deriv_mul_sub_integrableOn
+#print thetaPhi_deriv_mul_sub_integrableOn
+#print axioms thetaPhi_deriv_mul_sub_integrableOn
+#check thetaPhi_mul_sub_tendsto_atTop
+#print thetaPhi_mul_sub_tendsto_atTop
+#print axioms thetaPhi_mul_sub_tendsto_atTop
+#check thetaPhi_logSlope_cross_nonnegative
+#print thetaPhi_logSlope_cross_nonnegative
+#print axioms thetaPhi_logSlope_cross_nonnegative
+#check thetaPhi_deriv_mul_sub_integral
+#print thetaPhi_deriv_mul_sub_integral
+#print axioms thetaPhi_deriv_mul_sub_integral
+#check thetaTail_two_logSlope_identity
+#print thetaTail_two_logSlope_identity
+#print axioms thetaTail_two_logSlope_identity
+#check thetaTail_two_logSlope_nonnegative
+#print thetaTail_two_logSlope_nonnegative
+#print axioms thetaTail_two_logSlope_nonnegative
+#check hasDerivAt_thetaTail_two_div_thetaPhi
+#print hasDerivAt_thetaTail_two_div_thetaPhi
+#print axioms hasDerivAt_thetaTail_two_div_thetaPhi
+#check thetaTail_two_div_thetaPhi_deriv_nonpos
+#print thetaTail_two_div_thetaPhi_deriv_nonpos
+#print axioms thetaTail_two_div_thetaPhi_deriv_nonpos
+#check thetaTail_two_div_thetaPhi_antitone
+#print thetaTail_two_div_thetaPhi_antitone
+#print axioms thetaTail_two_div_thetaPhi_antitone
+#check thetaTailSignRegular_two_zero_one
+#print thetaTailSignRegular_two_zero_one
+#print axioms thetaTailSignRegular_two_zero_one

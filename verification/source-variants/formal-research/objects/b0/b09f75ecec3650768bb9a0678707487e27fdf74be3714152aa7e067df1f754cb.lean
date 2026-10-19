@@ -1,0 +1,20 @@
+import SourceActualReducedZeroHeight
+set_option linter.style.header false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.rawOnError false
+set_option pp.fullNames false
+open FormalResearch.RiemannHypothesis.SourceActualReducedZeroHeight
+#print actualReducedZeroHeight
+#print actualReducedZeroEnvelope
+#print actualReducedZeroHeight_ge_four
+#print actualReducedZeroTail_norm_bound
+#print actualReducedZeroTail_tendsto_zero
+#print actualSourceQuadraticValue_sub_reducedHead
+#print actualResidual_reducedHead_signed_error_bound
+#print actualResidual_reducedHead_signed_error_tendsto
+#print actualResidual_reducedOffAxisHead_upper

@@ -1,0 +1,28 @@
+import SourceActualCenteredPrimePhaseSupport
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.fullNames true
+
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredPrimePhaseSupport.actualClosedPrimeLogMass
+
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredPrimePhaseSupport.actualClosedPrimeLogMass_nonneg
+
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredPrimePhaseSupport.actualClosedPrimeLogPotential_norm_le_mass
+
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredPrimePhaseSupport.actualClosedPrimePhase_disk
+
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredPrimePhaseSupport.actualCenteredPrimePhase_density_le
+
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredPrimePhaseSupport.actualCenteredPrimePhaseBulk_le_support
+
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredPrimePhaseSupport.actualEulerMellinSlope_re_integral_eq_boundary
+
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredPrimePhaseSupport.actualCenteredPrimePhaseBulk_le_support_endpoints

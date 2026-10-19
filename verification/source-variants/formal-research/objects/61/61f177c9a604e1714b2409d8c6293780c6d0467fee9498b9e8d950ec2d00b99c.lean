@@ -1,0 +1,18 @@
+import SourceActualZeroTailBudget
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualInitialPrimeMellin_strip_norm_le
+#print FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualZeroTailWeightConstant
+#print FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualZeroHeightTail
+#print FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualZeroHeightHead_finite
+#print FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualZeroHeightHead
+#print FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualZeroHeightTail_summable
+#print FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualFullZeroContribution_eq_head_add_tail
+#print FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualZeroHeightTail_norm_bound

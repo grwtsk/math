@@ -1,0 +1,22 @@
+import SourceActualPsiNegativeBlock
+
+set_option autoImplicit false
+set_option linter.style.setOption false
+set_option linter.hashCommand false
+set_option pp.all true
+set_option pp.fullNames true
+
+open RH16ActualPsiNegativeBlock
+
+#check shiftedActualChebyshev
+#check actual_prime_power_four_contribution
+#check actual_psi_on_negative_block
+#check shiftedActualChebyshev_negative_on_block
+#check actual_psi_at_closed_seven
+#check shiftedActualChebyshev_not_nonnegative_everywhere
+#print axioms shiftedActualChebyshev
+#print axioms actual_prime_power_four_contribution
+#print axioms actual_psi_on_negative_block
+#print axioms shiftedActualChebyshev_negative_on_block
+#print axioms actual_psi_at_closed_seven
+#print axioms shiftedActualChebyshev_not_nonnegative_everywhere

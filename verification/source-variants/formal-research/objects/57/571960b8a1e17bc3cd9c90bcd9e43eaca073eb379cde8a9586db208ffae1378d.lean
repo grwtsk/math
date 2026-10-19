@@ -1,0 +1,25 @@
+import FormalResearch.HadwigerNelson
+
+set_option pp.explicit true
+set_option pp.universes false
+
+#print FormalResearch.HadwigerNelson.PlaneColorable
+#print FormalResearch.HadwigerNelson.ExactPlaneChromaticNumber
+#print FormalResearch.HadwigerNelson.FinitePointColorable
+
+#check @FormalResearch.HadwigerNelson.moserFourColor_proper
+#print axioms FormalResearch.HadwigerNelson.moserFourColor_proper
+#check @FormalResearch.HadwigerNelson.sqrt_three_mul_sqrt_eleven
+#print axioms FormalResearch.HadwigerNelson.sqrt_three_mul_sqrt_eleven
+#check @FormalResearch.HadwigerNelson.moserPoint_coordinates
+#print axioms FormalResearch.HadwigerNelson.moserPoint_coordinates
+#check @FormalResearch.HadwigerNelson.moserPoint_injective
+#print axioms FormalResearch.HadwigerNelson.moserPoint_injective
+#check @FormalResearch.HadwigerNelson.moser_unit_iff_edge
+#print axioms FormalResearch.HadwigerNelson.moser_unit_iff_edge
+#check @FormalResearch.HadwigerNelson.moserFourColor_unit_proper
+#print axioms FormalResearch.HadwigerNelson.moserFourColor_unit_proper
+#check @FormalResearch.HadwigerNelson.moser_unit_graph_exact_four
+#print axioms FormalResearch.HadwigerNelson.moser_unit_graph_exact_four
+#check @FormalResearch.HadwigerNelson.plane_not_three_colorable
+#print axioms FormalResearch.HadwigerNelson.plane_not_three_colorable

@@ -1,0 +1,12 @@
+import FormalResearch.PositiveAtlas.Grassmannian.PivotCech
+
+#check FormalResearch.PositiveAtlas.Grassmannian.isOpen_intrinsicPivotDomain
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.isOpen_intrinsicPivotDomain
+#check FormalResearch.PositiveAtlas.Grassmannian.normalizedOverlapHomeomorph
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.normalizedOverlapHomeomorph
+#check FormalResearch.PositiveAtlas.Grassmannian.continuous_cechReindex
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.continuous_cechReindex
+#check FormalResearch.PositiveAtlas.Grassmannian.cechReindex_comp
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.cechReindex_comp
+#check FormalResearch.PositiveAtlas.Grassmannian.intrinsicPivotCech_augmentation_surjective
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.intrinsicPivotCech_augmentation_surjective

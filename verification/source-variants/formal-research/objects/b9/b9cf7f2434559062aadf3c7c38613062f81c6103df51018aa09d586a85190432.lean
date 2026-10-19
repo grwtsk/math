@@ -1,0 +1,13 @@
+import SourceFiveCancelledFactorialBudget
+import ActualSharpEarlyBaseline
+import SourceActualPsiPntTimeDecay
+set_option linter.hashCommand false
+#check Filter.Tendsto.const_mul_atTop
+#check tendsto_pow_atTop
+#check Real.tendsto_log_atTop
+#check Real.pow_div_factorial_le_exp
+#check Chebyshev.psi
+#check ArithmeticFunction.vonMangoldt_nonneg
+#check FormalResearch.RiemannHypothesis.SourceFiveCancelledFactorialBudget.actualCorrelation_sub_one_abs_le_five
+#check Finset.sum_Ico_eq_add_neg
+#check Finset.sum_Icc_add_Ioc_eq_sum_Icc
