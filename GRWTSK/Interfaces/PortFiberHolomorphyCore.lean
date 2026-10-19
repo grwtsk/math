@@ -11,11 +11,12 @@ import GRWTSK.Analysis.Complex.PortFiberHolomorphy
 import GRWTSK.Topology.Algebra.PortFiberRing
 import GRWTSK.Logic.SimultaneousProofArchitecture
 import GRWTSK.NumberTheory.Zeta.Riemann.PortFiberArchitecture
+import GRWTSK.Interfaces.PortFiberSimultaneousLedger
 
 namespace GRWTSK.Interfaces.PortFiberHolomorphyCore
 
 /-- Source version of this isolated interface. -/
-def schemaVersion : String := "PortFiberHolomorphyCore/0.2"
+def schemaVersion : String := "PortFiberHolomorphyCore/0.3"
 
 /-- Source state remains distinct from kernel-checked state. -/
 inductive VerificationState
