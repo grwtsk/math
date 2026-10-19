@@ -2,6 +2,7 @@ import GRWTSK.Logic.SimultaneousProofPortfolio
 import GRWTSK.NumberTheory.Zeta.Riemann.PortFiberLocalToGlobal
 import GRWTSK.Analysis.Complex.HolomorphicSectionRing
 import GRWTSK.Topology.Algebra.PrimeSpectrumPort
+import GRWTSK.AlgebraicGeometry.AffineSpecPort
 
 namespace GRWTSK.NumberTheory.Zeta.Riemann.PortFiberTheoremPortfolio
 
@@ -37,11 +38,22 @@ def primeSpectrumTopologyClaim : Prop :=
 theorem primeSpectrumTopologyClaim_proof : primeSpectrumTopologyClaim :=
   GRWTSK.Topology.Algebra.PrimeSpectrumPort.Fixtures.arithmeticTower_continuous
 
+/-- The same arithmetic ring tower carries an actual affine-scheme morphism at every stage. -/
+def affineSchemeClaim : Prop :=
+  GRWTSK.Topology.PortFiber.ContinuousCertificate
+    GRWTSK.AlgebraicGeometry.AffineSpecPort.system
+    GRWTSK.AlgebraicGeometry.AffineSpecPort.Fixtures.arithmeticTowerPath.composite
+
+/-- Proof of continuity for the underlying map of the actual affine-scheme path. -/
+theorem affineSchemeClaim_proof : affineSchemeClaim :=
+  GRWTSK.AlgebraicGeometry.AffineSpecPort.Fixtures.arithmeticTower_continuous
+
 /-- Local branches in the RH-facing theorem portfolio. -/
 inductive LocalIndex
   | simultaneousRestriction
   | holomorphicSectionRing
   | primeSpectrumTopology
+  | affineScheme
   | ordinaryFunctionGluing
   | holomorphicGlobalizationBoundary
   | arithmeticBridge
@@ -54,6 +66,7 @@ def LocalClaim (O : OpenObligations) : LocalIndex → Prop
   | .simultaneousRestriction => restrictionClaim
   | .holomorphicSectionRing => holomorphicSectionRingClaim
   | .primeSpectrumTopology => primeSpectrumTopologyClaim
+  | .affineScheme => affineSchemeClaim
   | .ordinaryFunctionGluing => gluingClaim
   | .holomorphicGlobalizationBoundary => holomorphicBoundaryClaim
   | .arithmeticBridge => O.arithmeticBridge
@@ -67,6 +80,7 @@ def localPortfolio (O : OpenObligations) :
     | .simultaneousRestriction => .proved restrictionClaim_proof
     | .holomorphicSectionRing => .proved holomorphicSectionRingClaim_proof
     | .primeSpectrumTopology => .proved primeSpectrumTopologyClaim_proof
+    | .affineScheme => .proved affineSchemeClaim_proof
     | .ordinaryFunctionGluing => .proved gluingClaim_proof
     | .holomorphicGlobalizationBoundary => .proved holomorphicBoundaryClaim_proof
     | .arithmeticBridge =>
@@ -98,6 +112,11 @@ theorem holomorphic_section_ring_available (O : OpenObligations) :
 theorem prime_spectrum_topology_available (O : OpenObligations) :
     LocalClaim O .primeSpectrumTopology :=
   primeSpectrumTopologyClaim_proof
+
+/-- The actual affine-scheme-map theorem is available without any application obligation. -/
+theorem affine_scheme_available (O : OpenObligations) :
+    LocalClaim O .affineScheme :=
+  affineSchemeClaim_proof
 
 /-- The ordinary gluing theorem is available without any application obligation. -/
 theorem gluing_available (O : OpenObligations) :
@@ -140,6 +159,14 @@ theorem prime_spectrum_survives_rejected_arithmetic
     (withArithmeticDisposition O (.refuted h)).local.disposition
         .primeSpectrumTopology =
       (architecture O).local.disposition .primeSpectrumTopology := by
+  simp [withArithmeticDisposition]
+
+/-- Rejecting the arithmetic bridge cannot erase the actual affine-scheme branch. -/
+theorem affine_scheme_survives_rejected_arithmetic
+    (O : OpenObligations) (h : ¬ O.arithmeticBridge) :
+    (withArithmeticDisposition O (.refuted h)).local.disposition
+        .affineScheme =
+      (architecture O).local.disposition .affineScheme := by
   simp [withArithmeticDisposition]
 
 /-- Resolving the source comparison cannot alter the terminal RH disposition. -/
