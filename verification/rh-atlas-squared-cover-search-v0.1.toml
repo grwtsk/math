@@ -1,0 +1,379 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-atlas-squared-cover-search-v0.1"
+owner_repository = "grwtsk/math"
+issue = 225
+parent_pull_request = 253
+root_module = "GRWTSK"
+build_target = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.SquaredCoverSearch"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+operational_receipt_is_external = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "Mathlib.NumberTheory.LSeries.ZetaZeros"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripAtlas"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripGapReport"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripOverlapAudit"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripVerticalPath"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripStructuredTransport"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ZetaCommutatorRoot"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.BoundedHeightCriterion"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripHeightDescent"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.HeightLocalDescent"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMirrorDescent"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripPatchCertificate"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.MirrorPatchDescent"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann"
+
+[[modules]]
+name = "GRWTSK"
+
+[[modules]]
+name = "Mathlib.Analysis.Calculus.MeanValue"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripAnalyticPatch"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripPolePatch"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.AnalyticPolePatch"
+
+[[modules]]
+name = "Mathlib.Topology.MetricSpace.Thickening"
+
+[[modules]]
+name = "Mathlib.Topology.Order.Compact"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripCompactPatch"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripBoundaryCollar"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.CompactBoundaryCollar"
+
+[[modules]]
+name = "Mathlib.Analysis.MellinTransform"
+
+[[modules]]
+name = "Mathlib.NumberTheory.LSeries.SumCoeff"
+
+[[modules]]
+name = "Mathlib.NumberTheory.LSeries.Dirichlet"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripRealAxisMellin"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripRealAxisBase"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.RealAxisMellin"
+
+[[modules]]
+name = "Mathlib.MeasureTheory.Integral.Bochner.Set"
+
+[[modules]]
+name = "Mathlib.Analysis.SpecialFunctions.Pow.Real"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMellinBounds"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripEffectiveSeed"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.EffectiveMellin"
+
+[[modules]]
+name = "Mathlib.NumberTheory.AbelSummation"
+
+[[modules]]
+name = "Mathlib.Analysis.SpecialFunctions.Integrals.Basic"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripFinitePower"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripFinitePowerPatch"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.FinitePowerPatch"
+
+[[modules]]
+name = "Mathlib.Analysis.SpecialFunctions.Complex.LogBounds"
+
+[[modules]]
+name = "Mathlib.Analysis.Complex.Exponential"
+
+[[modules]]
+name = "Mathlib.Analysis.SpecialFunctions.Log.Basic"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripLogEnclosure"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripPowerTaylor"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.PowerTaylor"
+
+[[modules]]
+name = "Mathlib.Analysis.Normed.Module.Convex"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripFourTermWitness"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.FourTermWitness"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripRationalCover"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripFourTermRectangle"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.RationalCover"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripSquaredCover"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripSquaredRectangle"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.SquaredCoverSearch"
+
+[[hostile_controls]]
+id = "positive_real_part_required"
+requirement = "Reject tail or Mellin derivative claims at sigma<=0, and reject a decay estimate without the chosen positive real-part margin."
+
+[[hostile_controls]]
+id = "cutoff_and_endpoint"
+requirement = "Require T>=1, integrability, and disjoint Ioc(1,T)/Ioi(T) decomposition; a cutoff endpoint is neither lost nor double-counted."
+
+[[hostile_controls]]
+id = "exact_arithmetic_source"
+requirement = "Require the independently proved normalized-zeta Mellin identity; do not define zeta as an arbitrary approximant limit."
+
+[[hostile_controls]]
+id = "log_derivative_sign"
+requirement = "Retain the chain-rule minus sign in Mprime(s)=-Mellin(log*k)(-s), and the actual logarithmic integrability proof."
+
+[[hostile_controls]]
+id = "height_is_not_norm"
+requirement = "The uniform H truncation majorant needs both Re(s)>=sigma and |s|<=B. A height bound alone is not a complex norm bound without the coordinate theorem."
+
+[[hostile_controls]]
+id = "quadrature_not_exact_integral"
+requirement = "A numerical quadrature value consumes its own certified error; floating agreement is not such a proof."
+
+[[hostile_controls]]
+id = "real_sign_scope"
+requirement = "Use positivity/realness of M only at real sigma; use a proved vertical variation estimate at nonreal s."
+
+[[hostile_controls]]
+id = "seed_height_scope"
+requirement = "The rational height 1/16 does not give WindowRH(1), any full later shell, or the first actual zero height."
+
+[[hostile_controls]]
+id = "mirror_zero_predicate"
+requirement = "Reflect target zero identities with height transport; do not assert H(s)=H(1-conj(s)) or drop multiplicities from another consumer."
+
+[[hostile_controls]]
+id = "vanishing_error_not_nonvanishing"
+requirement = "A truncation error tending to zero does not supply a strict positive source margin. Reject certification at an actual zero."
+
+[[hostile_controls]]
+id = "mellin_tail_not_divisor_tail"
+requirement = "The integration-domain tail is not a complete zero-divisor tail, prime explicit-formula tail, or Weil comparison error."
+
+[[hostile_controls]]
+id = "no_replay_promotion"
+requirement = "A source commit or static rational/numerical check is not Lean elaboration, exact-type reconciliation, axiom audit, or RH admission."
+
+[[hostile_controls]]
+id = "finite_positive_bases"
+requirement = "N>=1 and exact Icc(1,N) source coverage are required. Do not consume a totalized power at zero."
+
+[[hostile_controls]]
+id = "finite_abel_scope"
+requirement = "Prove the finite Abel identity, derivative integrability and power integral. Handle s=1 separately from division by 1-s."
+
+[[hostile_controls]]
+id = "endpoint_power"
+requirement = "Retain N^(1-s). Dropping this term already contradicts the normalized source value at s=1."
+
+[[hostile_controls]]
+id = "termwise_enclosure_proofs"
+requirement = "Every used power and endpoint must carry a proof of its enclosure. A JSON rational table or floating comparison is not an inhabitant."
+
+[[hostile_controls]]
+id = "interval_analytic_trust"
+requirement = "The external rational log/exp experiment is not a Lean-verified evaluator. Require analytic remainder proofs and verified outward arithmetic before admitting numerical witnesses."
+
+[[hostile_controls]]
+id = "isolated_disk_not_shell"
+requirement = "A strict local sample margin at one or finitely many disks is not the all-height/all-margin interior cover family."
+
+[[hostile_controls]]
+id = "log_ratio_domain"
+requirement = "Require a real 0<=q<1 and positive 1+q,1-q. Do not apply the real quotient identity across a complex logarithm branch."
+
+[[hostile_controls]]
+id = "dyadic_exact_source"
+requirement = "Require the equality x=2^j*u and 1<=u<=2; log centers and errors compose with the same exponent j."
+
+[[hostile_controls]]
+id = "log_series_index"
+requirement = "logTaylor(n+1) includes degrees 0 through n; use q^(n+1) and the matching n+1 denominator. No extra terms may be silently retained."
+
+[[hostile_controls]]
+id = "exp_ratio_guard"
+requirement = "The n-term exponential remainder 2*R^n/n! consumes R/(n+1)<=1/2 and norm(argument)<=R; no extrapolation past the guard."
+
+[[hostile_controls]]
+id = "exponent_perturbation"
+requirement = "Require norm(w)*logRadius<=1 before using norm(exp(delta)-1)<=2*norm(delta); retain the exact-base exponential norm factor."
+
+[[hostile_controls]]
+id = "positive_base_branch"
+requirement = "The real-log cpow identity consumes x>0. No zero, negative-real or arbitrary-complex base can reuse it by coercion."
+
+[[hostile_controls]]
+id = "rounding_arithmetic"
+requirement = "Both logarithm-center and exponential-sample rounding carry proved absolute/norm bounds. External dyadic JSON is not kernel evidence."
+
+[[hostile_controls]]
+id = "endpoint_reuse_error"
+requirement = "Reuse N^(1-s)=N*N^(-s) only with its proved positive-base identity, and multiply the final power error by N."
+
+[[hostile_controls]]
+id = "fixed_sample_not_shell"
+requirement = "The concrete inverse-sqrt-two fixture and external sample tables do not produce any complete all-height/all-margin zero-exclusion family."
+
+[[hostile_controls]]
+id = "four_term_concrete_support"
+requirement = "Check exactly k=1,2,3,4 at one center. Reject substitution of any exponent, log center, rounded value or missing term. Every bound must be supplied by the generated Lean proof term."
+
+[[hostile_controls]]
+id = "closed_disk_endpoints"
+requirement = "The claimed disk is CLOSED, center 3/4+i/8 and radius 1/512. Verify derivative control throughout it and include its boundary."
+
+[[hostile_controls]]
+id = "concrete_margin_arithmetic"
+requirement = "Reconcile sample (26993/32768,3151/32768), source cap 53/128, derivative 45, sample lower 3/4, and final lower 127/512. A JSON or Python success cannot replace arithmetic proof terms."
+
+[[hostile_controls]]
+id = "proof_scripts_not_kernel_results"
+requirement = "The concrete witness eliminates analytic supplier premises only at its declared disk. It is not accepted until the exact source and all required modules elaborate and pass the complete axiom audit. No prior-source/root-only receipt suffices."
+
+[[hostile_controls]]
+id = "ordered_nonempty_rectangle"
+requirement = "Reject inverted coordinate bounds. Accepted root rectangles are nonempty; zero-width leaves may represent genuine nonempty segments, not empty targets."
+
+[[hostile_controls]]
+id = "exact_split_coverage"
+requirement = "Require both recursive children at their exact derived endpoints. Every split is strictly interior; shared seams and exterior boundaries are included in the target and soundness proof."
+
+[[hostile_controls]]
+id = "finite_disk_index"
+requirement = "Every leaf is indexed by Fin count. No absent leaf, out-of-range label, duplicate source substitution, or parser success can replace an actual source-bound patch."
+
+[[hostile_controls]]
+id = "rational_L1_sufficient_only"
+requirement = "The exact rational L1 rectangle-to-disk guard is only sufficient. Rejection does not prove a zero or disprove a possible more efficient Euclidean covering."
+
+[[hostile_controls]]
+id = "geometry_not_analysis"
+requirement = "Tree.check evaluates rational geometry only. An analytic conclusion additionally requires SampleVariationPatch F on every used disk for the SAME function F. A true source zero blocks an accepted analytic covering."
+
+[[hostile_controls]]
+id = "four_term_rectangle_scope"
+requirement = "Reconcile the unchanged sample and source error, sharper sample lower 13/16, radius 1/128, derivative 45, final bound 3/64, and rectangle [191/256,193/256] x [31/256,33/256]. Four tree leaves reuse ONE arithmetic sample, not four independent evaluations."
+
+[[hostile_controls]]
+id = "source_only_tree_acceptance"
+requirement = "norm_num scripts and rational Python enumeration are not elaboration or replay receipts. No new full shell, all-height family, zero multiplicity, analytic continuation cocycle, or Weil comparison is supplied."
+
+[[hostile_controls]]
+id = "squared_radius_sign"
+requirement = "SquaredContainsBox separately requires a nonnegative radius. Reject negative radius even when its square is positive and the rectangle is a singleton."
+
+[[hostile_controls]]
+id = "squared_leaf_exact_scope"
+requirement = "The leaf equivalence consumes ordered rectangle bounds and compares ALL points against ONE disk. It does not assert that covering corners by different disks covers the interior."
+
+[[hostile_controls]]
+id = "L1_backwards_compatibility"
+requirement = "Prove the L1-to-squared implication both for leaves and complete trees. Do not alter the old checker or reinterpret its prior receipts."
+
+[[hostile_controls]]
+id = "bounded_search_unknown"
+requirement = "The pure depth limit bounds proposal recursion. A none result means UNKNOWN, not a source zero, noncoverage, or a disproof of a deeper successful search. Check the depth-one/depth-two covered constant-source fixture."
+
+[[hostile_controls]]
+id = "proposal_rechecked"
+requirement = "Every search result is rechecked into CheckedTree indexed by the exact disk family and root rectangle. No parsed tree, external Boolean, out-of-range index, or proposal alone constructs an accepted proof."
+
+[[hostile_controls]]
+id = "same_function_analytic_lift"
+requirement = "CheckedTree.toFiniteVariationCover still requires actual SampleVariationPatch F values on the exact disks for the SAME F. Neither squared geometry nor successful search supplies those analytic inputs."
+
+[[hostile_controls]]
+id = "search_no_completeness_claim"
+requirement = "No all-cover, all-height, or uniform-depth search completeness is claimed. Degenerate segments/singletons and absent/inverted input require exact tests; a finite failure has no negative analytic meaning."
+
+[[hostile_controls]]
+id = "squared_rectangle_source"
+requirement = "Reconcile the unchanged four-term sample, H derivative 45, source error 53/128, analytic disk radius 1/128, and lower 3/64 with the larger CLOSED rectangle [763/1024,773/1024] x [123/1024,133/1024]. No new zeta sample is computed."
+
+[[hostile_controls]]
+id = "proof_reduction_not_external_evaluation"
+requirement = "Concrete search facts use ordinary decide or norm_num proof scripts, never native_decide or Python as an axiom. Source scripts still require exact Lean elaboration and a transitive axiom audit."
+
+[[hostile_controls]]
+id = "no_global_seed_promotion"
+requirement = "The area improvement belongs to one closed rectangle. Preserve WindowRH and all-height/all-near-line-margin obligations; the uncovered ambient point is not asserted to be a zeta zero."
