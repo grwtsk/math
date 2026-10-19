@@ -7,6 +7,9 @@ import GRWTSK.NumberTheory.Zeta.Riemann.DefectCriterion
 import GRWTSK.NumberTheory.Zeta.Riemann.ScrewKernelRefinement
 import GRWTSK.NumberTheory.Zeta.Riemann.ScrewQuarticPathControl
 import GRWTSK.NumberTheory.Zeta.Riemann.LinearMomentComponents
+import GRWTSK.NumberTheory.Zeta.Riemann.ArithmeticFeature
+import GRWTSK.NumberTheory.Zeta.Riemann.WeilPositiveLimitCore
+import GRWTSK.NumberTheory.Zeta.Riemann.CriticalLinePositivityCriterion
 import GRWTSK.Spectral.Sheaf.SymmetryResolvedQuadraticDescent
 import GRWTSK.Analysis.ErrorBounds.ScrewSpectralReconstruction
 import GRWTSK.LinearAlgebra.Matrix.SchurFeshbachJet
@@ -15,4 +18,5 @@ import GRWTSK.NumberTheory.Zeta.Riemann.CertifiedZeroHeight
 import GRWTSK.LinearAlgebra.Matrix.QuantumReadiness
 import GRWTSK.Analysis.ErrorBounds.SchurJetScrewReconstruction
 
-/-! Exact target, reformulation and zero symmetries; RH remains an open proposition. -/
+/-! Exact target, reformulations, source/residual interfaces and zero symmetries;
+RH remains an open proposition until an unconditional analytic supplier is proved. -/
