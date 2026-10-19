@@ -1,10 +1,10 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 OpenAI formalization assistance.
 
-Isolated source root for the displayed integral/rational Frey models, actual
-affine-port evaluation, saturation, local DVR reduction and base-coordinate
-projective heights. This file is intentionally not imported by `GRWTSK.lean`
-before direct replay and trust checks. -/
+Isolated source root for the Frey models, saturated evaluation, local DVR
+reduction, rational projective-height recovery and the exact observation
+reformulation of the canonical ABC target. No proof of that target is supplied.
+This file remains outside GRWTSK.lean pending replay and trust checks. -/
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyThreePortFrame
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyThreePortSaturation
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCurveGeometry
@@ -14,6 +14,8 @@ import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyLocalInvaria
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyThreePortBounds
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyDVRReduction
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyProjectiveHeight
+import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyRationalHeight
+import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyABCObservation
 
 namespace GRWTSK.Interfaces.FreyThreePortCore
 
