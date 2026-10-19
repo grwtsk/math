@@ -33,12 +33,12 @@ namespace Portfolio
 
 variable {I : Type u} {Claim : I → Prop}
 
-/-- Extract a local proof only when the selected disposition is proved. -/
-def proof? (P : Portfolio I Claim) (i : I) : Option (Claim i) :=
+/-- Extract a lifted local proof only when the selected disposition is proved. -/
+def proof? (P : Portfolio I Claim) (i : I) : Option (PLift (Claim i)) :=
   (P.disposition i).proof?
 
-/-- Extract a local refutation only when the selected disposition is refuted. -/
-def refutation? (P : Portfolio I Claim) (i : I) : Option (¬ Claim i) :=
+/-- Extract a lifted local refutation only when the selected disposition is refuted. -/
+def refutation? (P : Portfolio I Claim) (i : I) : Option (PLift (¬ Claim i)) :=
   (P.disposition i).refutation?
 
 /-- Transport a complete portfolio through pointwise exact logical equivalences. -/
@@ -58,7 +58,7 @@ def combine {J : Type v} {Other : J → Prop}
     | .inl i => P.disposition i
     | .inr j => Q.disposition j
 
-/-- Replace exactly one local disposition. Every other branch is definitionally preserved. -/
+/-- Replace exactly one local disposition. Every other branch is preserved by its inequality. -/
 def update [DecidableEq I]
     (P : Portfolio I Claim) (i : I)
     (d : ClaimDisposition (Claim i)) : Portfolio I Claim where

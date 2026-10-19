@@ -9,34 +9,64 @@ universe u v w
 variable (P : GRWTSK.Topology.PortFiber.{u, v, w})
 variable [∀ A : P.Obj, Semiring (P.Fiber A)]
 
-/-- The exact fiber map of a port is represented by one bundled ring homomorphism. -/
-structure RingCertificate {A B : P.Obj} (p : P.Port A B) where
-  hom : P.Fiber A →+* P.Fiber B
-  map_eq : ∀ x, hom x = P.map p x
+/-- Propositional ring laws for the exact selected fiber map.
+
+The bundled homomorphism is reconstructed from this fixed map and these proofs. Keeping the
+certificate in `Prop` makes it a valid `ComposableProperty` without extracting data from a proof. -/
+structure RingCertificate {A B : P.Obj} (p : P.Port A B) : Prop where
+  map_zero : P.map p 0 = 0
+  map_one : P.map p 1 = 1
+  map_add : ∀ x y, P.map p (x + y) = P.map p x + P.map p y
+  map_mul : ∀ x y, P.map p (x * y) = P.map p x * P.map p y
 
 namespace RingCertificate
 
+/-- The canonical bundled homomorphism uses the already selected port function. -/
+def hom {A B : P.Obj} {p : P.Port A B} (h : RingCertificate P p) :
+    P.Fiber A →+* P.Fiber B where
+  toFun := P.map p
+  map_zero' := h.map_zero
+  map_one' := h.map_one
+  map_add' := h.map_add
+  map_mul' := h.map_mul
+
+/-- Compatibility accessor: the bundled homomorphism has exactly the port's map. -/
+@[simp]
+theorem map_eq {A B : P.Obj} {p : P.Port A B} (h : RingCertificate P p)
+    (x : P.Fiber A) : h.hom x = P.map p x :=
+  rfl
+
+/-- Import a bundled homomorphism only with pointwise equality to the selected port map. -/
+def ofHom {A B : P.Obj} {p : P.Port A B}
+    (f : P.Fiber A →+* P.Fiber B) (hf : ∀ x, f x = P.map p x) :
+    RingCertificate P p where
+  map_zero := by simpa only [hf] using f.map_zero
+  map_one := by simpa only [hf] using f.map_one
+  map_add := by
+    intro x y
+    simpa only [hf] using f.map_add x y
+  map_mul := by
+    intro x y
+    simpa only [hf] using f.map_mul x y
+
+/-- Reconstruction retains the exact supplied ring homomorphism. -/
+theorem hom_ofHom {A B : P.Obj} {p : P.Port A B}
+    (f : P.Fiber A →+* P.Fiber B) (hf : ∀ x, f x = P.map p x) :
+    (ofHom P f hf).hom = f := by
+  ext x
+  exact (hf x).symm
+
 /-- Identity ports carry the identity ring homomorphism. -/
-def identity (A : P.Obj) : RingCertificate P (P.identity A) where
-  hom := RingHom.id (P.Fiber A)
-  map_eq := by
-    intro x
-    simpa using (P.map_identity A x).symm
+def identity (A : P.Obj) : RingCertificate P (P.identity A) :=
+  ofHom P (RingHom.id (P.Fiber A)) (fun x => (P.map_identity A x).symm)
 
 /-- Exact ring certificates compose through the exact middle fiber. -/
 def comp {A B C : P.Obj} {p : P.Port A B} {q : P.Port B C}
     (hp : RingCertificate P p) (hq : RingCertificate P q) :
-    RingCertificate P (P.comp p q) where
-  hom := hq.hom.comp hp.hom
-  map_eq := by
-    intro x
-    calc
-      (hq.hom.comp hp.hom) x = hq.hom (hp.hom x) := rfl
-      _ = hq.hom (P.map p x) := congrArg (fun y => hq.hom y) (hp.map_eq x)
-      _ = P.map q (P.map p x) := hq.map_eq _
-      _ = P.map (P.comp p q) x := (P.map_comp p q x).symm
+    RingCertificate P (P.comp p q) :=
+  ofHom P (hq.hom.comp hp.hom) (fun x => (P.map_comp p q x).symm)
 
-/-- Ring-homomorphism certification as a composable port property. -/
+/-- Ring-homomorphism certification as a composable port proposition. -/
 def composableProperty : GRWTSK.Topology.PortFiber.ComposableProperty P where
   Holds := fun p => RingCertificate P p
   identity := RingCertificate.identity P
@@ -46,11 +76,11 @@ end RingCertificate
 
 variable [∀ A : P.Obj, TopologicalSpace (P.Fiber A)]
 
-/-- One exact port map is simultaneously a ring homomorphism and continuous.
+/-- One exact port map satisfies the ring laws and is continuous.
 
-The continuity field is about `P.map p`, while `ring.map_eq` proves this is the same function as
-its bundled ring homomorphism. -/
-structure TopologicalRingCertificate {A B : P.Obj} (p : P.Port A B) where
+Both fields are propositions. `ring.hom` reconstructs the bundled homomorphism with exactly
+`P.map p` as its function; its continuity cannot concern a different function. -/
+structure TopologicalRingCertificate {A B : P.Obj} (p : P.Port A B) : Prop where
   ring : RingCertificate P p
   continuous : Continuous (P.map p)
 
@@ -79,7 +109,7 @@ def comp {A B C : P.Obj} {p : P.Port A B} {q : P.Port B C}
     rw [hmap]
     exact hq.continuous.comp hp.continuous
 
-/-- Topological-ring certification as a composable port property. -/
+/-- Topological-ring certification as a composable port proposition. -/
 def composableProperty : GRWTSK.Topology.PortFiber.ComposableProperty P where
   Holds := fun p => TopologicalRingCertificate P p
   identity := TopologicalRingCertificate.identity P
