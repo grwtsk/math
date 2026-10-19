@@ -1,0 +1,91 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-atlas-coordinate-logical-separation-v0.1"
+owner_repository = "grwtsk/math"
+issue = 244
+parent_issue = 225
+parent_pull_request = 243
+root_module = "GRWTSK"
+build_target = "GRWTSK"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+operational_receipt_is_external = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripAtlas"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripOverlapAudit"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripVerticalPath"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripRootFixture"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann"
+
+[[hostile_controls]]
+id = "reject-coordinate-as-proposition-equivalence"
+description = "CoordinateTransition contains no proposition implication or equivalence field."
+
+[[hostile_controls]]
+id = "reject-logical-equivalence-for-atlas-membership"
+description = "CriticalStripAtlas.transition must return CoordinateTransition, allowing neutral and equivalent charts to overlap."
+
+[[hostile_controls]]
+id = "reject-weakened-coordinate-laws"
+description = "Identity, inverse and triple-cocycle laws remain mandatory after logical separation."
+
+[[hostile_controls]]
+id = "reject-directional-coordinate-exclusion"
+description = "Both logically equivalent and merely directional exact-coordinate outcomes can supply atlas coordinate evidence."
+
+[[hostile_controls]]
+id = "reject-directional-as-chart-equivalence"
+description = "Only an explicitly equivalent StatementTransport can produce ChartTransition or admittedTransition."
+
+[[hostile_controls]]
+id = "reject-coordinate-edge-as-logical-edge"
+description = "A coordinate audit outcome does not construct VerticalStep.transport."
+
+[[hostile_controls]]
+id = "reject-neutral-root-target-collapse"
+description = "The root and canonical target share coordinates but retain neutral and equivalent statuses respectively."
+
+[[hostile_controls]]
+id = "reject-coordinate-overlap-as-gapfree"
+description = "The two-chart boundary atlas must prove not GapFree while the root chart remains neutral."
+
+[[hostile_controls]]
+id = "reject-hidden-root-rh-equivalence"
+description = "The root-to-target overlap audit is directional with unrelated statement transport and no admitted ChartTransition."
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+
+[nonclaims]
+claims = [
+  "a proof of RootStatement ↔ RiemannHypothesis",
+  "a vertical proof edge from the neutral root to the canonical target",
+  "discharge of any chart's forward or reverse RH gap",
+  "complete vertical coverage",
+  "gap-free critical-strip atlas",
+  "Riemann hypothesis",
+  "a replay receipt produced by this static manifest"
+]

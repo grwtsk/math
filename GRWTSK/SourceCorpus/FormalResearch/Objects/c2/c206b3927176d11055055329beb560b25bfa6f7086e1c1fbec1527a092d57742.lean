@@ -1,0 +1,16 @@
+import SourceCriticalGreenTent
+
+set_option autoImplicit false
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.universes true
+set_option pp.explicit true
+set_option pp.fullNames true
+set_option pp.privateNames true
+
+#print FormalResearch.RiemannHypothesis.SourceCriticalGreenTent.criticalDirichletTent
+#print FormalResearch.RiemannHypothesis.SourceCriticalGreenTent.positivePart_sub_affine_eq_neg_tent
+#print FormalResearch.RiemannHypothesis.SourceCriticalGreenTent.criticalDirichletTent_nonneg
+#print FormalResearch.RiemannHypothesis.SourceCriticalGreenTent.criticalDirichletTent_endpoints
+#print FormalResearch.RiemannHypothesis.SourceCriticalGreenTent.primeLogSum_hinge_common_inventory
+#print FormalResearch.RiemannHypothesis.SourceCriticalGreenTent.criticalDiscrepancyBridge_eq_green_tents

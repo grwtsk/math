@@ -1,0 +1,13 @@
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateVaughanTranslationGate
+#check Finset.sum_fiberwise
+#check Finset.sum_fiberwise_of_maps_to
+#check Finset.card_Icc
+#check Nat.card_Icc
+#check Nat.lt_floor_add_one
+#check Nat.floor_le
+#check Nat.le_floor_iff
+#check Real.log_nonneg
+#check Finset.sum_product
+#check intervalIntegral.integral_comp_sub_left
+#check intervalIntegral.norm_integral_le_of_norm_le_const
+#check intervalIntegral.integral_mono_on

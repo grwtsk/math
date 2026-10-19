@@ -1,0 +1,160 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "legendre-prime-power-bridge-v0.1"
+owner_repository = "grwtsk/math"
+issue = 261
+root_module = "GRWTSK.Interfaces.LegendrePrimePowerBridge"
+build_target = "GRWTSK.Interfaces.LegendrePrimePowerBridge"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+base_revision = "22779757b74805f887509d353b65322ac9c03b1a"
+base_tree = "0d90a8780dbf8d6884edcb543593ce294d5b63f2"
+stacked_on_pr = 264
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+mathlib_chebyshev_blob = "6ffaf1bc3538b5a86fae7f4c62cc1287f9d48f2a"
+mathlib_von_mangoldt_blob = "4cc8c9d13c1e3b7ae4568f9399e0a68f8e3d5176"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+receipt_revision_policy = "Bind the actual replayed commit, tree and this manifest blob externally; this source manifest is not a receipt."
+inventory_policy = "Names and blobs are static source inventory, not elaborated types or transitive trust evidence."
+complementary_pr_256_head = "6d3c759b44c3d358635030fd4ab7441f0cdd8410"
+complementary_pr_256_is_imported = false
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Interfaces.LegendrePrimePowerBridge"
+source_blob = "f10c3abb6e670c4192d943e8d9c31ac643022d4a"
+required_declarations = [
+]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.Checks.PrimePowerMarginControls"
+source_blob = "98b36c02a526c53c614d085c747a673564af689e"
+required_declarations = [
+  "GRWTSK.NumberTheory.Chebyshev.Checks.PrimePowerMarginControls.correction_eight_nine",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.PrimePowerMarginControls.theta_eight_nine",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.PrimePowerMarginControls.positive_source_without_prime",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.PrimePowerMarginControls.non_strict_margin_control",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.PrimePowerMarginControls.first_square_upper_correction",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.PrimePowerMarginControls.upper_endpoint_omission_changes_correction",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.PrimePowerMarginControls.first_square_positive_weight",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.PrimePowerMarginControls.prime_upper_endpoint_control",
+]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.PrimeIntervalWitness"
+source_blob = "6f3bd25bd5c23f869d7cb2661e53be96d60d4746"
+required_declarations = [
+  "GRWTSK.NumberTheory.Chebyshev.PrimeIntervalWitness.prime_log_sum_pos_iff",
+  "GRWTSK.NumberTheory.Chebyshev.PrimeIntervalWitness.theta_sub_nat_eq_prime_sum",
+  "GRWTSK.NumberTheory.Chebyshev.PrimeIntervalWitness.theta_sub_pos_iff_intervalCount",
+  "GRWTSK.NumberTheory.Chebyshev.PrimeIntervalWitness.square_not_prime",
+  "GRWTSK.NumberTheory.Chebyshev.PrimeIntervalWitness.theta_square_sub_pos_iff",
+]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.ProperPrimePowerCorrection"
+source_blob = "1fa940a64afe1195974e1126b1a15cc6d335b64e"
+required_declarations = [
+  "GRWTSK.NumberTheory.Chebyshev.ProperPrimePowerCorrection.source_eq_mathlib_psi",
+  "GRWTSK.NumberTheory.Chebyshev.ProperPrimePowerCorrection.properPrimePowerMass",
+  "GRWTSK.NumberTheory.Chebyshev.ProperPrimePowerCorrection.properPrimePowerMass_nonneg",
+  "GRWTSK.NumberTheory.Chebyshev.ProperPrimePowerCorrection.properPrimePowerMass_eq_supported_sum",
+  "GRWTSK.NumberTheory.Chebyshev.ProperPrimePowerCorrection.properPrimePowerMass_pos_iff",
+  "GRWTSK.NumberTheory.Chebyshev.ProperPrimePowerCorrection.properPrimePowerMass_eq_cumulative_sub",
+  "GRWTSK.NumberTheory.Chebyshev.ProperPrimePowerCorrection.source_sub_eq_theta_sub_add_proper",
+  "GRWTSK.NumberTheory.Chebyshev.ProperPrimePowerCorrection.properPrimePowerMass_le_cumulative",
+  "GRWTSK.NumberTheory.Chebyshev.ProperPrimePowerCorrection.properPrimePowerMass_le_coarse_bound",
+  "GRWTSK.NumberTheory.Chebyshev.ProperPrimePowerCorrection.upper_endpoint_le_properPrimePowerMass",
+  "GRWTSK.NumberTheory.Chebyshev.ProperPrimePowerCorrection.prime_square_endpoint_lower_bound",
+  "GRWTSK.NumberTheory.Chebyshev.ProperPrimePowerCorrection.intervalCount_pos_of_source_margin",
+  "GRWTSK.NumberTheory.Chebyshev.ProperPrimePowerCorrection.squareCount_pos_of_source_margin",
+  "GRWTSK.NumberTheory.Chebyshev.ProperPrimePowerCorrection.legendre_of_prefix_and_source_margins",
+]
+
+[[inherited_sources]]
+name = "GRWTSK.Combinatorics.Enumerative.BoundedWitnesses"
+source_blob = "40b8288910460ae0cd59dec55d3dda3481e6d229"
+status = "SOURCE_PRESENT_REPLAY_REQUIRED"
+
+[[inherited_sources]]
+name = "GRWTSK.NumberTheory.Primes.ConfigurationCounts"
+source_blob = "540ea9bb1d42d6e185a03e38b4c2e1abc4370ff6"
+status = "SOURCE_PRESENT_REPLAY_REQUIRED"
+
+[[inherited_sources]]
+name = "GRWTSK.NumberTheory.Primes.LandauStatements"
+source_blob = "41aa479be730fc09defba57576f9af0f09415306"
+status = "SOURCE_PRESENT_REPLAY_REQUIRED"
+
+[[inherited_sources]]
+name = "GRWTSK.NumberTheory.Chebyshev.CorrelationPairing"
+source_blob = "85923009b211961763765b523234e9746555ca7f"
+status = "SOURCE_PRESENT_REPLAY_REQUIRED"
+
+[[hostile_controls]]
+id = "actual-source-not-surrogate"
+description = "source_eq_mathlib_psi must identify the unchanged SourcePairing.chebyshevPrimePower and Mathlib.psi at all real cutoffs."
+
+[[hostile_controls]]
+id = "prime-power-is-not-prime"
+description = "positive_source_without_prime retains the positive log-three source increment in (8,9] with zero prime count."
+
+[[hostile_controls]]
+id = "full-correction-support"
+description = "properPrimePowerMass_eq_supported_sum must preserve each integer once with its original von Mangoldt weight, not log of the power or an arbitrary discrepancy field."
+
+[[hostile_controls]]
+id = "upper-square-endpoint"
+description = "first_square_upper_correction and upper_endpoint_omission_changes_correction retain the log-two contribution at four."
+
+[[hostile_controls]]
+id = "strict-positive-margin"
+description = "non_strict_margin_control blocks upgrading a zero corrected margin to a prime witness."
+
+[[hostile_controls]]
+id = "open-endpoint-guard"
+description = "prime_upper_endpoint_control blocks dropping the nonprime upper-endpoint hypothesis."
+
+[[hostile_controls]]
+id = "no-average-to-universal"
+description = "legendre_of_prefix_and_source_margins must retain complete prefix coverage and the every-input approximation, correction and strict margin hypotheses."
+
+[[hostile_controls]]
+id = "coarse-is-not-sharp"
+description = "properPrimePowerMass_le_coarse_bound is a global-scale inherited estimate, not the written polylogarithmic square-interval estimate or a vanishing relative error."
+
+[[hostile_controls]]
+id = "inherited-replay-and-source-drift"
+description = "A root-only pass, omitted dependency, changed theorem type, stale base or absent axiom report cannot satisfy this target; #264 remains unaccepted until its exact replay passes."
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+requires_inherited_source_replay = true
+
+[nonclaims]
+claims = [
+  "new prime-distribution estimate",
+  "formalized polylogarithmic square-interval proper-power bound",
+  "explicit-formula approximation or omitted-zero tail",
+  "uniform strict margins for all square intervals",
+  "any Landau conjecture or RH",
+  "external replay acceptance, execution or merge authority"
+]

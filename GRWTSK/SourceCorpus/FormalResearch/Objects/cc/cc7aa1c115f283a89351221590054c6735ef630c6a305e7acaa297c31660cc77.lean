@@ -1,0 +1,13 @@
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.SourceLaplaceConvergence
+import Mathlib.Analysis.Complex.AbsMax
+open Metric
+#check closure_ball
+#check frontier_ball
+#check frontier_closedBall
+#check isCompact_sphere
+#check Metric.frontier_ball_subset_sphere
+#check Metric.closure_ball_subset_closedBall
+#check Metric.mem_ball_self
+#check Summable.of_nonneg_of_le
+#check DifferentiableOn.analyticOnNhd
+#check HasSumLocallyUniformlyOn

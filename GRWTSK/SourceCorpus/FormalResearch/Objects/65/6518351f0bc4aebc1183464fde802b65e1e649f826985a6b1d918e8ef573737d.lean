@@ -1,0 +1,107 @@
+import Lean
+import Lean.Util.CollectAxioms
+import Surface.Refactor.Authority
+
+open Lean
+
+namespace SurfacePrototypeReceipt
+
+open Surface.Core
+
+def jsonEscapeChar : Char → String
+  | '"' => "\\\""
+  | '\\' => "\\\\"
+  | '\n' => "\\n"
+  | '\r' => "\\r"
+  | '\t' => "\\t"
+  | c => String.singleton c
+
+def jsonString (value : String) : String :=
+  "\"" ++ value.foldl (fun acc c => acc ++ jsonEscapeChar c) "" ++ "\""
+
+def jsonNames (values : List Name) : String :=
+  "[" ++ String.intercalate "," (values.map fun n => jsonString n.toString) ++ "]"
+
+def positionJson (position : Position) : String :=
+  "{\"line\":" ++ toString position.line ++
+    ",\"column\":" ++ toString position.column ++ "}"
+
+def declarationRangesJson : Option DeclarationRanges → String
+  | none => "null"
+  | some ranges =>
+      "{\"start\":" ++ positionJson ranges.range.pos ++
+        ",\"end\":" ++ positionJson ranges.range.endPos ++
+        ",\"selectionStart\":" ++ positionJson ranges.selectionRange.pos ++
+        ",\"selectionEnd\":" ++ positionJson ranges.selectionRange.endPos ++ "}"
+
+def nameFromDottedString (value : String) : Name :=
+  value.splitOn "." |>.foldl (fun acc part => Name.str acc part) Name.anonymous
+
+def declarationModule (env : Environment) (declarationName : Name) : Name :=
+  match env.getModuleIdxFor? declarationName with
+  | none => env.mainModule
+  | some idx => env.header.moduleNames[idx.toNat]!
+
+def environmentFingerprint (env : Environment) : Digest :=
+  let modules := env.header.moduleNames.toList.map Name.toString
+  digestString <| String.intercalate "\n" modules
+
+def receiptJson
+    (env : Environment)
+    (declarationName : Name)
+    (normalizedType : String)
+    (axioms : List Name)
+    (ranges : Option DeclarationRanges) : String :=
+  let typeHash := digestString normalizedType
+  let moduleName := declarationModule env declarationName
+  let body :=
+    "{\"schema\":" ++ jsonString kernelReceiptSchema ++
+    ",\"declaration_name\":" ++ jsonString declarationName.toString ++
+    ",\"normalized_type\":" ++ jsonString normalizedType ++
+    ",\"declaration_range\":" ++ declarationRangesJson ranges ++
+    ",\"type_hash\":" ++ jsonString (toString typeHash) ++
+    ",\"statement_hash\":" ++ jsonString (toString typeHash) ++
+    ",\"module\":" ++ jsonString moduleName.toString ++
+    ",\"axiom_closure\":" ++ jsonNames axioms ++
+    ",\"environment_fingerprint\":" ++
+      jsonString (toString (environmentFingerprint env)) ++
+    ",\"hash_algorithm\":\"surface-string-digest-noncryptographic.v1\""
+  let payload := body ++ "}"
+  let receiptHash := digestString payload
+  body ++ ",\"receipt_hash\":" ++ jsonString (toString receiptHash) ++ "}"
+
+def emitReceipt (declaration : String) : IO UInt32 := do
+  initSearchPath (← findSysroot) [".lake/build/lib/lean"]
+  let env ← importModules #[{ module := `Surface.Refactor.Authority }] {}
+  let declarationName := nameFromDottedString declaration
+  match env.find? declarationName with
+  | none =>
+      IO.eprintln <| "prototype_receipt: declaration not found: " ++ declaration
+      pure 2
+  | some info =>
+      unless info.isTheorem do
+        IO.eprintln <| "prototype_receipt: declaration is not a theorem: " ++ declaration
+        return 3
+      let action : CoreM (String × Array Name × Option DeclarationRanges) := do
+        let normalizedType ← (do
+          return toString (← Meta.ppExpr info.type)).run'
+        let axioms ← Lean.collectAxioms declarationName
+        let ranges ← Lean.findDeclarationRanges? declarationName
+        pure (normalizedType, axioms, ranges)
+      let (normalizedType, axioms, ranges) ← action.toIO'
+        { fileName := "<prototype_receipt>", fileMap := default }
+        { env := env }
+      IO.println <| receiptJson env declarationName normalizedType axioms.toList ranges
+      pure 0
+
+def main (args : List String) : IO UInt32 :=
+  match args with
+  | [declaration] => emitReceipt declaration
+  | _ => do
+      IO.eprintln "usage: PrototypeReceiptMain <fully.qualified.theorem>"
+      pure 64
+
+end SurfacePrototypeReceipt
+
+def main (args : List String) : IO UInt32 :=
+  SurfacePrototypeReceipt.main args
