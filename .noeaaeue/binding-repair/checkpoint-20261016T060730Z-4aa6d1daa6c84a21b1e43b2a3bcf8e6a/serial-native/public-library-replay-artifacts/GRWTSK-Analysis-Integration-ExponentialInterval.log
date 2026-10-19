@@ -1,6 +1,0 @@
-'GRWTSK.Analysis.Integration.ExponentialInterval.integral_exp_neg_mul' depends on axioms: [propext,
- Classical.choice,
- Quot.sound]
-'GRWTSK.Analysis.Integration.ExponentialInterval.integral_exp_mul' depends on axioms: [propext,
- Classical.choice,
- Quot.sound]

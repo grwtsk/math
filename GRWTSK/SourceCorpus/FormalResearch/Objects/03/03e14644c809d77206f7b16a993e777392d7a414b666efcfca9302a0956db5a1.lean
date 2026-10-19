@@ -1,0 +1,15 @@
+import SourceActualBumpTransform
+set_option linter.style.header false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.rawOnError false
+set_option pp.fullNames false
+open FormalResearch.RiemannHypothesis.SourceActualBumpTransform
+#print actualBumpInteriorTransform_eq
+#print actualSecondInteriorTransform_eq
+#print actualSourceComplexTransform_eq_bump
+#print actualBilateralCorrelationTransform_eq_bump

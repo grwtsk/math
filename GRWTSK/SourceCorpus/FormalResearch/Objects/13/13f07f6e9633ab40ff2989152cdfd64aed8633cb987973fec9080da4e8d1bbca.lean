@@ -1,0 +1,6 @@
+import SourceMixedCurvatureGram
+
+open FormalResearch.RiemannHypothesis.SourceMixedCurvatureGram
+
+#print actual_mixed_curvature_finite_gram_eq_neg_squares
+#print actual_mixed_curvature_finite_gram_nonpos

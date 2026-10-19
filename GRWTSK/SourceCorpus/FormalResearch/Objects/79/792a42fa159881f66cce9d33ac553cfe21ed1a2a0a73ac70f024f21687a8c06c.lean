@@ -1,0 +1,13 @@
+import SourceProperPowerInventory
+#print RH16ProperPowerInventory.tailProperMass
+#print axioms RH16ProperPowerInventory.tailProperMass
+#print RH16ProperPowerInventory.properExponentInventory
+#print axioms RH16ProperPowerInventory.properExponentInventory
+#print RH16ProperPowerInventory.tailProperMass_nonneg
+#print axioms RH16ProperPowerInventory.tailProperMass_nonneg
+#print RH16ProperPowerInventory.tailProperMass_eq_exponent_sum
+#print axioms RH16ProperPowerInventory.tailProperMass_eq_exponent_sum
+#print RH16ProperPowerInventory.finite_geometric_proper_le
+#print axioms RH16ProperPowerInventory.finite_geometric_proper_le
+#print RH16ProperPowerInventory.tailProperMass_le_budget
+#print axioms RH16ProperPowerInventory.tailProperMass_le_budget

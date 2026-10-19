@@ -1,0 +1,6 @@
+import SourceJointActualCountTail
+set_option linter.hashCommand false
+#check RH16JointActualCountTail.actual_joint_max
+#print axioms RH16JointActualCountTail.actual_joint_max
+#check RH16JointActualCountTail.actual_joint_local_six_sharp_adaptive_witness
+#print axioms RH16JointActualCountTail.actual_joint_local_six_sharp_adaptive_witness

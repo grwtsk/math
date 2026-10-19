@@ -1,6 +1,0 @@
-/Users/local/Desktop/math/.noeaaeue/.local/third-cyclotomic-jacobi-replay/replay-6depwkiz/source/GRWTSK/NumberTheory/Cyclotomic/Checks/Negative/ThirdCyclotomicJacobiWrongSign.lean:19:2: error: Type mismatch
-  lambda_sq_dvd_cubicJacobi_add_one P hgood
-has type
-  lambda ^ 2 ∣ jacobiSum (cubicChar P hgood) (cubicChar P hgood) + 1
-but is expected to have type
-  lambda ^ 2 ∣ jacobiSum (cubicChar P hgood) (cubicChar P hgood) - 1

@@ -1,0 +1,104 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "spectral-descent-v1"
+owner_repository = "grwtsk/math"
+issue = 100
+root_module = "GRWTSK"
+build_target = "GRWTSK"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+operational_receipt_is_external = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.LinearAlgebra.LinearMap.ReedSolomonRefinement"
+
+[[modules]]
+name = "GRWTSK.Combinatorics.GraphTheory.RelationSandwich"
+
+[[modules]]
+name = "GRWTSK.Combinatorics.GraphTheory.CertifiedPathOptimization"
+
+[[modules]]
+name = "GRWTSK.Data.TypedMoments"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.ArithmeticFunctions.RationalMomentAlgebra"
+
+[[modules]]
+name = "GRWTSK.LinearAlgebra.LinearMap.FrequencyScrew"
+
+[[modules]]
+name = "GRWTSK.Analysis.Geometry.QuadraticBezierContact"
+
+[[modules]]
+name = "GRWTSK.LinearAlgebra.LinearMap.CommutingInvolutionSectors"
+
+[[modules]]
+name = "GRWTSK.Spectral.Sheaf.RationalMomentFredholmBridge"
+
+[[modules]]
+name = "GRWTSK.Spectral.Sheaf.SymmetryResolvedQuadraticDescent"
+
+[[modules]]
+name = "GRWTSK.LinearAlgebra.Matrix.SchurFeshbachJet"
+
+[[modules]]
+name = "GRWTSK.Spectral.Sheaf.SynchronizedSchurJet"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CertifiedZeroHeight"
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.ScrewSpectralReconstruction"
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.SchurJetScrewReconstruction"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.LinearMomentComponents"
+
+[[hostile_controls]]
+id = "reject-cross-revision-cache"
+description = "A cached build or receipt from another repository revision cannot satisfy this target."
+
+[[hostile_controls]]
+id = "reject-root-only-coverage"
+description = "Building the root alone cannot hide an omitted or failed declared module."
+
+[[hostile_controls]]
+id = "check-exact-types"
+description = "An unchanged declaration name cannot substitute for checking its exact type."
+
+[[hostile_controls]]
+id = "separate-elaboration-from-axioms"
+description = "Successful elaboration cannot be reported as an axiom audit."
+
+[[hostile_controls]]
+id = "no-scope-promotion"
+description = "A pass for one target cannot promote an unrelated target."
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+
+[nonclaims]
+claims = [
+  "Riemann hypothesis",
+  "complete zeta-zero divisor",
+  "validity of external zero data",
+  "analytic premises not proved by the inspected declarations",
+  "quantum algorithm or speedup"
+]

@@ -1,4 +1,0 @@
-'EulerP04RH.ConcreteFubini.triple_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
-'EulerP04RH.ConcreteFubini.density_double_return' depends on axioms: [propext, Classical.choice, Quot.sound]
-'EulerP04RH.ConcreteFubini.density_section_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
-'EulerP04RH.ConcreteFubini.density_outer_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]

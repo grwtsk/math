@@ -1,0 +1,181 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "quadratic-interval-core-v0.3"
+owner_repository = "grwtsk/math"
+issue = 194
+root_module = "GRWTSK.Interfaces.QuadraticIntervalKernelCore"
+build_target = "GRWTSK.Interfaces.QuadraticIntervalKernelCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+operational_receipt_is_external = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.CorrelationPairing"
+source_git_blob = "85923009b211961763765b523234e9746555ca7f"
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.FiniteSquareBudget"
+source_git_blob = "fbfd45fb3e82f019adc243338a9c3c4222e5a704"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.QuadraticIntervals"
+source_git_blob = "594ff41e29323206962ef22863c82e3890382282"
+
+[[modules]]
+name = "GRWTSK.Interfaces.QuadraticIntervalCore"
+source_git_blob = "e2a883e8d97ecd6f438c7ee1d6fbea2d190e569c"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.PowerOccupancy"
+source_git_blob = "f09a0f725e69025a6e6f789c287da2d43497e0b8"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.HigherPrimePowers"
+source_git_blob = "51c9ca36d3c2e0392dae041547d497714dc3bdb8"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.HigherPrimePowerSource"
+source_git_blob = "d0eb381f2a0f4bb06cac0225e44162f2c4961827"
+
+[[modules]]
+name = "GRWTSK.Interfaces.QuadraticIntervalPrimePowerCore"
+source_git_blob = "70d033bedc009ffda256125dc6ab368489c6e681"
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.IntervalMellinKernel"
+source_git_blob = "c4245533774c0e06b9278cd9e8963cf81474ceab"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.QuadraticIntervalKernel"
+source_git_blob = "4551d9366ba7eec2b7dcaa069842d0013ad2cda4"
+
+[[modules]]
+name = "GRWTSK.Interfaces.QuadraticIntervalKernelCore"
+source_git_blob = "84ae3edb4142ce7d9b4dc41bd53b6c749b5965dd"
+
+[declarations]
+requires_all_public_in_listed_modules = true
+requires_full_transitive_import_closure = true
+new_source_names = [
+  "GRWTSK.Analysis.Complex.IntervalMellinKernel.logPower",
+  "GRWTSK.Analysis.Complex.IntervalMellinKernel.density",
+  "GRWTSK.Analysis.Complex.IntervalMellinKernel.kernel",
+  "GRWTSK.Analysis.Complex.IntervalMellinKernel.logMoment",
+  "GRWTSK.Analysis.Complex.IntervalMellinKernel.densityBound",
+  "GRWTSK.Analysis.Complex.IntervalMellinKernel.sensitivity",
+  "GRWTSK.Analysis.Complex.IntervalMellinKernel.densityBound_pos",
+  "GRWTSK.Analysis.Complex.IntervalMellinKernel.sensitivity_nonneg",
+  "GRWTSK.Analysis.Complex.IntervalMellinKernel.exp_real_log",
+  "GRWTSK.Analysis.Complex.IntervalMellinKernel.density_eq_logPower_div",
+  "GRWTSK.Analysis.Complex.IntervalMellinKernel.density_continuousOn",
+  "GRWTSK.Analysis.Complex.IntervalMellinKernel.weighted_density_continuousOn",
+  "GRWTSK.Analysis.Complex.IntervalMellinKernel.density_intervalIntegrable",
+  "GRWTSK.Analysis.Complex.IntervalMellinKernel.weighted_density_intervalIntegrable",
+  "GRWTSK.Analysis.Complex.IntervalMellinKernel.norm_density_le",
+  "GRWTSK.Analysis.Complex.IntervalMellinKernel.norm_weighted_density_le",
+  "GRWTSK.Analysis.Complex.IntervalMellinKernel.hasDerivAt_density",
+  "GRWTSK.Analysis.Complex.IntervalMellinKernel.hasDerivAt_kernel",
+  "GRWTSK.Analysis.Complex.IntervalMellinKernel.differentiable_kernel",
+  "GRWTSK.Analysis.Complex.IntervalMellinKernel.deriv_kernel",
+  "GRWTSK.Analysis.Complex.IntervalMellinKernel.norm_kernel_le",
+  "GRWTSK.Analysis.Complex.IntervalMellinKernel.norm_logMoment_le",
+  "GRWTSK.Analysis.Complex.IntervalMellinKernel.convex_re_le",
+  "GRWTSK.Analysis.Complex.IntervalMellinKernel.norm_kernel_sub_le",
+  "GRWTSK.Analysis.Complex.IntervalMellinKernel.hasDerivAt_logPower",
+  "GRWTSK.Analysis.Complex.IntervalMellinKernel.parameter_mul_kernel",
+  "GRWTSK.Analysis.Complex.IntervalMellinKernel.kernel_eq_quotient",
+  "GRWTSK.Analysis.Complex.IntervalMellinKernel.norm_logPower_le",
+  "GRWTSK.Analysis.Complex.IntervalMellinKernel.norm_kernel_le_quotient_bound",
+  "GRWTSK.Analysis.Complex.IntervalMellinKernel.norm_kernel_le_min",
+  "GRWTSK.Analysis.Complex.IntervalMellinKernel.kernel_zero",
+  "GRWTSK.Analysis.Complex.IntervalMellinKernel.kernel_zero_ne_zero",
+  "GRWTSK.Analysis.Complex.IntervalMellinKernel.kernel_same",
+  "GRWTSK.Analysis.Complex.IntervalMellinKernel.kernel_one",
+  "GRWTSK.Analysis.Complex.IntervalMellinKernel.densityBound_of_le_one",
+  "GRWTSK.Analysis.Complex.IntervalMellinKernel.finite_enclosure_error",
+  "GRWTSK.Analysis.Complex.IntervalMellinKernel.finite_enclosure_error_with_tail",
+  "GRWTSK.NumberTheory.Chebyshev.QuadraticIntervalKernel.squareKernel",
+  "GRWTSK.NumberTheory.Chebyshev.QuadraticIntervalKernel.squareEndpoint_strict_order",
+  "GRWTSK.NumberTheory.Chebyshev.QuadraticIntervalKernel.differentiable_squareKernel",
+  "GRWTSK.NumberTheory.Chebyshev.QuadraticIntervalKernel.squareKernel_eq_quotient",
+  "GRWTSK.NumberTheory.Chebyshev.QuadraticIntervalKernel.squareKernel_zero",
+  "GRWTSK.NumberTheory.Chebyshev.QuadraticIntervalKernel.squareKernel_zero_ne_zero",
+  "GRWTSK.NumberTheory.Chebyshev.QuadraticIntervalKernel.squareKernel_one",
+  "GRWTSK.NumberTheory.Chebyshev.QuadraticIntervalKernel.norm_squareKernel_sub_le",
+  "GRWTSK.NumberTheory.Chebyshev.QuadraticIntervalKernel.square_finite_enclosure_error",
+]
+
+[[hostile_controls]]
+id = "preserve-v02-hostile-controls"
+description = "All v0.2 endpoint, exponent, cutoff, prime-filter, correction and source controls remain required; no prior file is changed."
+
+[[hostile_controls]]
+id = "reject-zero-quotient"
+description = "kernel_zero and kernel_zero_ne_zero retain the nonzero removable value when a<b. kernel_eq_quotient requires z!=0."
+
+[[hostile_controls]]
+id = "positive-domain-and-integrability"
+description = "The density and log-weighted density must be proved integrable on the positive compact domain. Totalized divergent integrals are not a substitute."
+
+[[hostile_controls]]
+id = "actual-parametric-derivative"
+description = "hasDerivAt_kernel constructs local domination, measurability, and integrability for the true density. A supplied derivative certificate must not replace these proofs."
+
+[[hostile_controls]]
+id = "horizontal-growth-not-projection"
+description = "Both exact parameters and centers obey explicit horizontal bounds. No projection to Re=1/2 is performed."
+
+[[hostile_controls]]
+id = "interval-and-height-bounds-distinct"
+description = "The pole-free bound must coexist with the separate nonzero-parameter inverse-norm bound. Neither is an infinite-divisor tail."
+
+[[hostile_controls]]
+id = "retain-multiplicity-and-finite-scope"
+description = "finite_enclosure_error is a finite-family estimate with exact natural weights; it does not certify zero identity, multiplicity, cutoff, or completeness."
+
+[[hostile_controls]]
+id = "separate-omitted-tail"
+description = "finite_enclosure_error_with_tail requires a separate bound for the same full target and exact finite family. Missing tail data cannot become tail=0."
+
+[[hostile_controls]]
+id = "degenerate-and-unit-parameter"
+description = "kernel_same, kernel_one and squareKernel_one fix zero-width and exact main-term behavior."
+
+[[hostile_controls]]
+id = "same-square-endpoint-source"
+description = "The square application must reuse QuadraticIntervals.squareEndpoint and its exact width, without a new prime or prime-power source."
+
+[[hostile_controls]]
+id = "all-modules-types-and-trust"
+description = "Reconcile every listed module, all public elaborated types and full transitive axioms. A root-only run or missing audit record is not acceptance."
+
+[[hostile_controls]]
+id = "no-numerical-or-target-promotion"
+description = "Floating sanity checks are not interval certificates or Lean replay. No zero-divisor tail, cancellation estimate, Legendre or RH follows from this source increment."
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+
+[nonclaims]
+claims = [
+  "independent Lean elaboration or kernel acceptance",
+  "certified numerical evaluation or rounding",
+  "zero-source identity, multiplicity or complete divisor",
+  "omitted-zero tail or explicit formula",
+  "moving-interval cancellation estimate",
+  "Legendre conjecture or Riemann hypothesis"
+]

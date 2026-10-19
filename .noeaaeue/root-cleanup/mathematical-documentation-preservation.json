@@ -1,9 +1,0 @@
-{
-  "schema": "mathematical-documentation-cleanup-preservation-v1",
-  "method": "Compare archived initial mathematical documentation after resolving Markdown destinations to their preserved logical paths and normalizing moved process path literals.",
-  "non_relocation_changes": [
-    "docs/mathematics/NumberTheory/Prime/least-prime.md"
-  ],
-  "expected_change": "Least-prime walkthrough description now describes its mathematical proof/reuse tutorial.",
-  "source_acceptance": "No mathematical source or theorem acceptance claim"
-}

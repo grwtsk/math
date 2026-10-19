@@ -1,8 +1,0 @@
-import GRWTSK.Analysis.Sequences.HorizonWeightedAbelFlux
-import GRWTSK.NumberTheory.Moebius.HorizonTriadicFluxCriterion
-
-#print axioms GRWTSK.Analysis.Sequences.HorizonWeightedAbelFlux.endpointEnergy_add_terminal_eq_initial_add_flux_add_correction
-#print axioms GRWTSK.Analysis.Sequences.HorizonWeightedAbelFlux.endpointEnergy_eq_flux_add_correction
-#print axioms GRWTSK.Analysis.Sequences.HorizonWeightedAbelFlux.signedFlux_le_endpointEnergy
-#print axioms GRWTSK.NumberTheory.Moebius.HorizonTriadicFluxCriterion.riemannHypothesis_of_horizonTriadicFluxSubpower
-#print axioms GRWTSK.NumberTheory.Moebius.HorizonTriadicFluxCriterion.riemannHypothesis_of_horizonTriadicFluxPolylog

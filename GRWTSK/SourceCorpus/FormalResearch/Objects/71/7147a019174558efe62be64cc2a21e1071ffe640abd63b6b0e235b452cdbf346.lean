@@ -1,0 +1,17 @@
+import SourceActualComplexEndpointCoefficient
+set_option linter.style.header false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.rawOnError false
+set_option pp.fullNames true
+open FormalResearch.RiemannHypothesis.SourceActualComplexEndpointCoefficient
+#print actualLeadingComplexAntiderivative
+#print complexMonomial_exponential_tendsto_zero
+#print actualLeadingComplexAntiderivative_hasDerivAt
+#print actualLeadingComplexAntiderivative_tendsto_zero
+#print actualLeadingComplexCoefficient_eq
+#print actualSourceComplexTransform_normalized_tendsto_closed

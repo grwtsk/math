@@ -1,0 +1,129 @@
+import SourceRegularScaleProfiles
+
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourceRegularScaleProfiles
+
+#check RegularScale
+#print axioms RegularScale
+#check regularScale_of_noninteger
+#print axioms regularScale_of_noninteger
+#check cutoffs_eventually_eq
+#print axioms cutoffs_eventually_eq
+#check inventory_coefficients_eventually_eq
+#print axioms inventory_coefficients_eventually_eq
+#check mangoldtState
+#print axioms mangoldtState
+#check centeredForwardState
+#print axioms centeredForwardState
+#check reflectedState
+#print axioms reflectedState
+#check mangoldtState_eq_mangoldtAt
+#print axioms mangoldtState_eq_mangoldtAt
+#check centeredForwardState_eq_centeredForwardAt
+#print axioms centeredForwardState_eq_centeredForwardAt
+#check reflectedState_eq_reflectedMobiusAt
+#print axioms reflectedState_eq_reflectedMobiusAt
+#check mangoldtState_actual
+#print axioms mangoldtState_actual
+#check centeredForwardState_actual
+#print axioms centeredForwardState_actual
+#check reflectedState_actual
+#print axioms reflectedState_actual
+#check mangoldtDerivative
+#print axioms mangoldtDerivative
+#check centeredForwardDerivative
+#print axioms centeredForwardDerivative
+#check reflectedDerivative
+#print axioms reflectedDerivative
+#check mangoldtState_hasDerivAt
+#print axioms mangoldtState_hasDerivAt
+#check centeredForwardState_hasDerivAt
+#print axioms centeredForwardState_hasDerivAt
+#check reflectedState_hasDerivAt
+#print axioms reflectedState_hasDerivAt
+#check mangoldtState_contDiffAt
+#print axioms mangoldtState_contDiffAt
+#check centeredForwardState_contDiffAt
+#print axioms centeredForwardState_contDiffAt
+#check reflectedState_contDiffAt
+#print axioms reflectedState_contDiffAt
+#check mangoldtState_deriv
+#print axioms mangoldtState_deriv
+#check centeredForwardState_deriv
+#print axioms centeredForwardState_deriv
+#check reflectedState_deriv
+#print axioms reflectedState_deriv
+#check sourceInteraction
+#print axioms sourceInteraction
+#check interactionDerivative
+#print axioms interactionDerivative
+#check sourceInteraction_hasDerivAt
+#print axioms sourceInteraction_hasDerivAt
+#check sourceInteraction_deriv
+#print axioms sourceInteraction_deriv
+#check sourceInteraction_contDiffAt
+#print axioms sourceInteraction_contDiffAt
+#check sourceInteraction_actual
+#print axioms sourceInteraction_actual
+#check not_regularScale_one
+#print axioms not_regularScale_one
+#check reflectedAtomInteraction
+#print axioms reflectedAtomInteraction
+#check reflectedAtomDerivative
+#print axioms reflectedAtomDerivative
+#check reflectedAtomInteraction_source
+#print axioms reflectedAtomInteraction_source
+#check reflectedAtomInteraction_hasDerivAt
+#print axioms reflectedAtomInteraction_hasDerivAt
+#check centeredDiagonalState
+#print axioms centeredDiagonalState
+#check centeredDiagonalDerivative
+#print axioms centeredDiagonalDerivative
+#check centeredDiagonalState_eq_centeredDiagonalAt
+#print axioms centeredDiagonalState_eq_centeredDiagonalAt
+#check centeredDiagonalState_actual
+#print axioms centeredDiagonalState_actual
+#check centeredDiagonalState_hasDerivAt
+#print axioms centeredDiagonalState_hasDerivAt
+#check centeredDeletedDiagonal_hasDerivAt
+#print axioms centeredDeletedDiagonal_hasDerivAt
+#check centeredDeletedDiagonal_deriv
+#print axioms centeredDeletedDiagonal_deriv
+#check covarianceHalfState
+#print axioms covarianceHalfState
+#check covarianceHalfDerivative
+#print axioms covarianceHalfDerivative
+#check covarianceHalfState_hasDerivAt
+#print axioms covarianceHalfState_hasDerivAt
+#check covarianceHalfState_actual
+#print axioms covarianceHalfState_actual
+#check covarianceOperator_half_hasDerivAt
+#print axioms covarianceOperator_half_hasDerivAt
+#check compensatedState
+#print axioms compensatedState
+#check compensatedState_actual
+#print axioms compensatedState_actual
+#check compensatedState_hasDerivAt_of_mainTerm
+#print axioms compensatedState_hasDerivAt_of_mainTerm
+#check not_regularScale_of_square_nat
+#print axioms not_regularScale_of_square_nat
+#check not_regularScale_of_upper_nat
+#print axioms not_regularScale_of_upper_nat
+#check regularScale_iff_no_cutoff_event
+#print axioms regularScale_iff_no_cutoff_event
+#check reflectedAtomInteraction_contDiffAt
+#print axioms reflectedAtomInteraction_contDiffAt
+#check centeredDiagonalState_contDiffAt
+#print axioms centeredDiagonalState_contDiffAt
+#check centeredDeletedDiagonal_contDiffAt
+#print axioms centeredDeletedDiagonal_contDiffAt
+#check covarianceHalfState_contDiffAt
+#print axioms covarianceHalfState_contDiffAt
+#check covarianceOperator_half_contDiffAt
+#print axioms covarianceOperator_half_contDiffAt
+#check compensatedState_eq_signed_readout
+#print axioms compensatedState_eq_signed_readout
+#check compensatedState_contDiffAt_of_mainTerm
+#print axioms compensatedState_contDiffAt_of_mainTerm

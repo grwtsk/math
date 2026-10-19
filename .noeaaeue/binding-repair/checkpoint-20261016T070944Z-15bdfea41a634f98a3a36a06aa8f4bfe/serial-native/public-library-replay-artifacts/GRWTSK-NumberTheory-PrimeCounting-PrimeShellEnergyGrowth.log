@@ -1,5 +1,0 @@
-'HSSCP04.ShellObstruction.heavy_bin_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
-'HSSCP04.ShellObstruction.actual_horizon_shell_energy_growth' depends on axioms: [propext, Classical.choice, Quot.sound]
-'HSSCP04.ShellObstruction.horizon_shell_energy_not_polynomial' depends on axioms: [propext,
- Classical.choice,
- Quot.sound]

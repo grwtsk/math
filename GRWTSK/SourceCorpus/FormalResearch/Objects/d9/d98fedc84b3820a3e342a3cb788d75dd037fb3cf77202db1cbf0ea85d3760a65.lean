@@ -1,0 +1,17 @@
+import FormalResearch.PositiveAtlas.FutureObservableProvenance
+
+set_option pp.all true
+set_option pp.proofs true
+
+#print FormalResearch.PositiveAtlas.FutureObservableProvenance.matrixWord
+#print axioms FormalResearch.PositiveAtlas.FutureObservableProvenance.matrixWord
+#print FormalResearch.PositiveAtlas.FutureObservableProvenance.matrixWord_cons
+#print axioms FormalResearch.PositiveAtlas.FutureObservableProvenance.matrixWord_cons
+#print FormalResearch.PositiveAtlas.FutureObservableProvenance.matrixWord_fold
+#print axioms FormalResearch.PositiveAtlas.FutureObservableProvenance.matrixWord_fold
+#print FormalResearch.PositiveAtlas.FutureObservableProvenance.matrixWord_execute
+#print axioms FormalResearch.PositiveAtlas.FutureObservableProvenance.matrixWord_execute
+#print FormalResearch.PositiveAtlas.FutureObservableProvenance.provenance_extension
+#print axioms FormalResearch.PositiveAtlas.FutureObservableProvenance.provenance_extension
+#print FormalResearch.PositiveAtlas.FutureObservableProvenance.quadratic_matrixWord
+#print axioms FormalResearch.PositiveAtlas.FutureObservableProvenance.quadratic_matrixWord
