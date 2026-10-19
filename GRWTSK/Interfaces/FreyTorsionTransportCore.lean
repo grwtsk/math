@@ -2,8 +2,9 @@
 Formalization assistance: OpenAI.
 
 Narrow isolated root for actual rational two-torsion point translation and its
-source-bound order-two chart pullback. The earlier FreyThreePortCore and replay
-targets are unchanged. Importing this root is not proof of verification coverage.
+source-bound quadratic and localized all-order jet pullbacks. Earlier replay
+targets and FreyThreePortCore are unchanged. Importing this root is not proof of verification coverage.
 -/
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionTranslation
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionContact
+import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionOpenJets
