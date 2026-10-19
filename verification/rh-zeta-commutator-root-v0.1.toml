@@ -49,8 +49,12 @@ id = "reject-zero-subtype-vacuity"
 description = "The root chart carrier is the full complex spectral parameter with an explicit anchor; nontrivial zeros remain a predicate."
 
 [[hostile_controls]]
-id = "reject-root-as-rh-implication"
-description = "The root statement has an explicitly neutral LocalRHProfile."
+id = "reject-root-as-sufficient-rh-implication"
+description = "The root statement is proved independently of RH; localProfile_status is necessary via rootStatement_of_rh. The missing sufficient implication is equivalent to RH by rootStatement_implies_rh_iff, not supplied by the root construction."
+
+[[hostile_controls]]
+id = "reject-stale-neutral-root-status"
+description = "A source-bound check must require localProfile.status = necessary. The previous neutral-only expectation is invalidated at this source revision."
 
 [[hostile_controls]]
 id = "reject-root-as-spectral-triple"
@@ -80,7 +84,7 @@ claims = [
   "self-adjointness or compact resolvent of the distinguished projection in a selected analytic framework",
   "identification of an operator spectrum with all nontrivial zeta zeros",
   "equality of certified interval, scattering, elliptic, jet or Weil heights with the root height",
-  "local sufficiency, necessity or equivalence of the root statement to RH",
+  "local sufficiency or equivalence of the root statement to RH",
   "source-faithful concrete chart overlaps",
   "complete vertical proof-path coverage",
   "gap-free critical-strip atlas",
