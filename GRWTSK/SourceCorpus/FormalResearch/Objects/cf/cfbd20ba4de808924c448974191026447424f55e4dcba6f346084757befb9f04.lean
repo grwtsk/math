@@ -1,0 +1,14 @@
+import FormalResearch.RiemannHypothesis.SourcePrimeSquareMainTerm
+
+set_option autoImplicit false
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourcePrimeSquareMainTerm
+
+#print primeSquareMoment
+#print prime_square_source_coefficient
+#print prime_square_mem_source_inventory_iff
+#print primeSquareMoment_eq_primeLogSum
+#print primeSquareMoment_eq_primeLogWindow
+#print primeSquareMoment_exact_signed_error
+#print primeSquareMoment_main_term_error_of_mertens
+#print primeSquareMoment_uniform_main_term_error

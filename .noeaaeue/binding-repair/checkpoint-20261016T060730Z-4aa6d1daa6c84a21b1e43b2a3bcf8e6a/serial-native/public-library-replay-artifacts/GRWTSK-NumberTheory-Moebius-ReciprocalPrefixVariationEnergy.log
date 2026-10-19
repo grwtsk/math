@@ -1,9 +1,0 @@
-'GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationEnergy.reciprocalVariationBlock_le_cauchyBlock' depends on axioms: [propext,
- Classical.choice,
- Quot.sound]
-'GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationEnergy.reciprocalVariationBlockUniform_of_cauchyBlockUniform' depends on axioms: [propext,
- Classical.choice,
- Quot.sound]
-'GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationEnergy.criticalBoundary_of_reciprocalCauchyBlockUniform' depends on axioms: [propext,
- Classical.choice,
- Quot.sound]

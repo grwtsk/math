@@ -1,8 +1,0 @@
-'PPNCP04.Ledger.pickupIdentification' depends on axioms: [propext, Classical.choice, Quot.sound]
-'PPNCP04.Ledger.orderedEnergyIdentity' depends on axioms: [propext, Classical.choice, Quot.sound]
-'PPNCP04.Ledger.broadMultiplier' depends on axioms: [propext, Classical.choice, Quot.sound]
-'PPNCP04.Ledger.closure' depends on axioms: [propext, Classical.choice, Quot.sound]
-'PPNCP04.Ledger.logarithmicPrimeMass' depends on axioms: [propext, Classical.choice, Quot.sound]
-'PPNCP04.Ledger.originalASClosure' depends on axioms: [propext, Classical.choice, Quot.sound]
-'PPNCP04.Ledger.rawIntegralReturnBridge' depends on axioms: [propext, Classical.choice, Quot.sound]
-'PPNCP04.Ledger.terminalP04' depends on axioms: [propext, Classical.choice, Quot.sound]

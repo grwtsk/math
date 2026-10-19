@@ -1,0 +1,38 @@
+import SourcePairedPrimeWork
+
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourcePairedPrimeWork
+
+#print positiveSlope
+#print negativeSlope
+#print positiveMass
+#print negativeMass
+#print positiveSlopeWork
+#print negativeSlopeWork
+#print centeredPositiveWork
+#print centeredNegativeWork
+#print positiveSlope_nonneg
+#print negativeSlope_nonneg
+#print slope_difference
+#print slope_sum
+#print positiveSlope_continuous
+#print negativeSlope_continuous
+#print positiveSlope_intervalIntegrable
+#print negativeSlope_intervalIntegrable
+#print actualPrimeError_intervalIntegrable
+#print positiveSlopeWork_intervalIntegrable
+#print negativeSlopeWork_intervalIntegrable
+#print positiveMass_nonneg
+#print negativeMass_nonneg
+#print mass_difference
+#print negativeMass_eq_positive_add_one
+#print variation_eq_mass_sum
+#print variation_eq_twice_positive_add_one
+#print criticalSignedWork_eq_paired
+#print criticalSignedWork_minus_main_eq_paired
+#print firstPrimeMoment_eq_paired
+#print firstPrimeStorageSurplus_eq_paired
+#print centeredPositiveWork_eq
+#print centeredNegativeWork_eq
+#print criticalSignedWork_eq_centered_paired
+#print criticalSignedWork_minus_main_eq_centered_paired

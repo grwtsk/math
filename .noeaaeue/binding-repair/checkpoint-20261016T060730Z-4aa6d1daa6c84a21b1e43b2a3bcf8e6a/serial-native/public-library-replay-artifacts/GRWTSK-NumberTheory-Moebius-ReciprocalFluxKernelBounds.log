@@ -1,6 +1,0 @@
-'GRWTSK.NumberTheory.Moebius.ReciprocalFluxKernelBounds.sqrt_increment_sq_le_reciprocal' depends on axioms: [propext,
- Classical.choice,
- Quot.sound]
-'GRWTSK.NumberTheory.Moebius.ReciprocalFluxKernelBounds.reciprocalFluxWeightSquareMass_le_log' depends on axioms: [propext,
- Classical.choice,
- Quot.sound]

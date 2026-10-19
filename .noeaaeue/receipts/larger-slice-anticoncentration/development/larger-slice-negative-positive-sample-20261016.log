@@ -1,9 +1,0 @@
-GRWTSK/Analysis/Fourier/Checks/Negative/LargerSliceMissingPositiveSample.lean:18:2: error: Type mismatch
-  source_bound
-has type
-  1 ≤ m →
-    ↑(GRWTSK.ZModSubsetSum.subsetSumProbability S m z) ≤
-      1 / ↑p + GRWTSK.ZModLargerSliceParameters.largerSliceConstant ε * √(Real.log ↑S.card) / (↑S.card * √↑m)
-but is expected to have type
-  ↑(GRWTSK.ZModSubsetSum.subsetSumProbability S m z) ≤
-    1 / ↑p + GRWTSK.ZModLargerSliceParameters.largerSliceConstant ε * √(Real.log ↑S.card) / (↑S.card * √↑m)

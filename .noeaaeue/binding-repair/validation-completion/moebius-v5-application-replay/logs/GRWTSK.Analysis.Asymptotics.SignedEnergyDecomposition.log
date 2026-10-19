@@ -1,3 +1,0 @@
-'EulerP04RH.assembly_implies_literal_P04' depends on axioms: [propext, Classical.choice, Quot.sound]
-'EulerP04RH.right_tail_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
-'EulerP04RH.assembled_route_implies_literal_RH' depends on axioms: [propext, Classical.choice, Quot.sound]

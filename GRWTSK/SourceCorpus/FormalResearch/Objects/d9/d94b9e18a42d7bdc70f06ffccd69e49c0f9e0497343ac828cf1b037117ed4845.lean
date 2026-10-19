@@ -1,0 +1,54 @@
+import FormalResearch.RiemannHypothesis.XiFiniteOrder
+set_option pp.universes true
+set_option pp.proofs false
+
+#check @FormalResearch.RiemannHypothesis.XiFiniteOrder.FiniteHeightRH
+#print FormalResearch.RiemannHypothesis.XiFiniteOrder.FiniteHeightRH
+#print axioms FormalResearch.RiemannHypothesis.XiFiniteOrder.FiniteHeightRH
+
+#check @FormalResearch.RiemannHypothesis.XiFiniteOrder.ActualPairedProduct
+#print FormalResearch.RiemannHypothesis.XiFiniteOrder.ActualPairedProduct
+#print axioms FormalResearch.RiemannHypothesis.XiFiniteOrder.ActualPairedProduct
+
+#check @FormalResearch.RiemannHypothesis.XiFiniteOrder.RootFactor
+#print FormalResearch.RiemannHypothesis.XiFiniteOrder.RootFactor
+#print axioms FormalResearch.RiemannHypothesis.XiFiniteOrder.RootFactor
+
+#check @FormalResearch.RiemannHypothesis.XiFiniteOrder.RootFactor.toFactor
+#print FormalResearch.RiemannHypothesis.XiFiniteOrder.RootFactor.toFactor
+#print axioms FormalResearch.RiemannHypothesis.XiFiniteOrder.RootFactor.toFactor
+
+#check @FormalResearch.RiemannHypothesis.XiFiniteOrder.published_order_bound
+#print FormalResearch.RiemannHypothesis.XiFiniteOrder.published_order_bound
+#print axioms FormalResearch.RiemannHypothesis.XiFiniteOrder.published_order_bound
+
+#check @FormalResearch.RiemannHypothesis.XiFiniteOrder.PublishedHeightInput
+#print FormalResearch.RiemannHypothesis.XiFiniteOrder.PublishedHeightInput
+#print axioms FormalResearch.RiemannHypothesis.XiFiniteOrder.PublishedHeightInput
+
+#check @FormalResearch.RiemannHypothesis.XiFiniteOrder.xi_pfOrder_of_height
+#print FormalResearch.RiemannHypothesis.XiFiniteOrder.xi_pfOrder_of_height
+#print axioms FormalResearch.RiemannHypothesis.XiFiniteOrder.xi_pfOrder_of_height
+
+#check @FormalResearch.RiemannHypothesis.XiFiniteOrder.xi_published_order
+#print FormalResearch.RiemannHypothesis.XiFiniteOrder.xi_published_order
+#print axioms FormalResearch.RiemannHypothesis.XiFiniteOrder.xi_published_order
+
+#check @FormalResearch.RiemannHypothesis.XiFiniteOrder.actual_block_nonnegative
+#print FormalResearch.RiemannHypothesis.XiFiniteOrder.actual_block_nonnegative
+#print axioms FormalResearch.RiemannHypothesis.XiFiniteOrder.actual_block_nonnegative
+
+#check @FormalResearch.RiemannHypothesis.XiFiniteOrder.actual_frame_nonnegative
+#print FormalResearch.RiemannHypothesis.XiFiniteOrder.actual_frame_nonnegative
+#print axioms FormalResearch.RiemannHypothesis.XiFiniteOrder.actual_frame_nonnegative
+
+#check @FormalResearch.RiemannHypothesis.XiFiniteOrder.actual_plane_nonnegative
+#print FormalResearch.RiemannHypothesis.XiFiniteOrder.actual_plane_nonnegative
+#print axioms FormalResearch.RiemannHypothesis.XiFiniteOrder.actual_plane_nonnegative
+
+#check @FormalResearch.RiemannHypothesis.XiFiniteOrder.actual_coordinate_nonnegative
+#print FormalResearch.RiemannHypothesis.XiFiniteOrder.actual_coordinate_nonnegative
+#print axioms FormalResearch.RiemannHypothesis.XiFiniteOrder.actual_coordinate_nonnegative
+
+#print FormalResearch.RiemannHypothesis.NontrivialZetaZero
+#print FormalResearch.RiemannHypothesis.XiToeplitz.coefficient

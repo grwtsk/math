@@ -1,0 +1,11 @@
+import scratch.common_mean_stieltjes_20261004.OrdinateSummability
+set_option pp.universes true
+set_option pp.fullNames true
+#print CommonMeanStieltjes.ordinate_weight_comparison
+#print axioms CommonMeanStieltjes.ordinate_weight_comparison
+#print CommonMeanStieltjes.actual_positive_max_sixth_summable
+#print axioms CommonMeanStieltjes.actual_positive_max_sixth_summable
+#print CommonMeanStieltjes.actual_positive_sixth_summable
+#print axioms CommonMeanStieltjes.actual_positive_sixth_summable
+#print FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroShellCount.zero_summability
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroShellCount.zero_summability

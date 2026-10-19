@@ -1,1 +1,0 @@
-MoebiusControls/PPNC_private.lean:5:0: error: Unapproved axiom _private.MoebiusControls.PPNC_private.0.PPNC.hostileCustomAxiom in _private.MoebiusControls.PPNC_private.0.PPNC.hostileCustomAxiom

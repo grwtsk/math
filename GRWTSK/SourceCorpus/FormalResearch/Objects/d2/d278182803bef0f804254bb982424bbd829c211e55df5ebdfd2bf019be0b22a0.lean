@@ -1,0 +1,11 @@
+import SourceActualHalfNearMeanInterior
+set_option autoImplicit false
+open FormalResearch.RiemannHypothesis.SourceActualHalfNearMeanInterior
+#print actualHalfNearPeriodicWork
+#print actualHalfNearMeanInterior
+#print actualHalfNearMeanRetainedRemainder
+#print actualHalfNearPeriodicWork_intervalIntegrable
+#print actualAdjustedInterior_eq_half_near_mean_sub_far
+#print actualRetainedRemainder_sub_half_near_mean_eq
+#print actualCompensatedWork_sub_half_near_mean_abs_le
+#print actualResidual_half_near_mean_pointwise_comparison

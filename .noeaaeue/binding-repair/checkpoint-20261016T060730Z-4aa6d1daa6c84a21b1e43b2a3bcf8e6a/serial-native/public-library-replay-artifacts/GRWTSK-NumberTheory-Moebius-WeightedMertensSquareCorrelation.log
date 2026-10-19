@@ -1,9 +1,0 @@
-'GRWTSK.NumberTheory.Moebius.WeightedMertensSquareCorrelation.mertensSquareIncrement_eq_sub' depends on axioms: [propext,
- Classical.choice,
- Quot.sound]
-'GRWTSK.NumberTheory.Moebius.WeightedMertensSquareCorrelation.weightedMertensSquarePartial_eq_incrementTail' depends on axioms: [propext,
- Classical.choice,
- Quot.sound]
-'GRWTSK.NumberTheory.Moebius.WeightedMertensSquareCorrelation.weightedMertensSquarePartial_eq_correlation_add_diagonal' depends on axioms: [propext,
- Classical.choice,
- Quot.sound]

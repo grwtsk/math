@@ -1,3 +1,0 @@
-'EulerP04RH.ConcreteSettlement.signed_settlement_iff_literal_P04' depends on axioms: [propext,
- Classical.choice,
- Quot.sound]
