@@ -1,9 +1,9 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 OpenAI formalization assistance.
 
-Isolated source root for the Frey models, saturated evaluation, local DVR
-reduction, rational projective-height recovery and the exact observation
-reformulation of the canonical ABC target. No proof of that target is supplied.
+Isolated source root for the Frey models, saturated evaluation, DVR reduction,
+projective heights, exact ABC reformulation, nilpotent quadratic jets and one
+value-plus-first-jet rank increment. No proof of ABC is supplied.
 This file remains outside GRWTSK.lean pending replay and trust checks. -/
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyThreePortFrame
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyThreePortSaturation
@@ -16,6 +16,8 @@ import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyDVRReduction
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyProjectiveHeight
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyRationalHeight
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyABCObservation
+import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyQuadraticJet
+import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetRankGrowth
 
 namespace GRWTSK.Interfaces.FreyThreePortCore
 
