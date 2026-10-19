@@ -8,17 +8,17 @@ set_option autoImplicit false
 /-!
 # Source-bound vertical proof paths
 
-This file supplies the source-only vertical-coverage interface requested in issue #234.
-A path is a dependent list of actual `VerticalStep` terms. Consequently every edge
-carries both the common-root height inequality and the proof implication; issue order,
-subject names, and file imports cannot inhabit the path.
+This file supplies the source-only vertical-coverage interface requested in issues #234
+and #244. A path is a dependent list of actual `VerticalStep` terms. Consequently every
+edge carries both the common-root height inequality and the proof implication; issue
+order, subject names, and file imports cannot inhabit the path.
 
 Edges also carry exact source/revision/normalization bindings. Coordinate-equivalence
-edges must point to an exact #232 overlap outcome, while logical and height evidence is
-always present through the wrapped `VerticalStep`. Complete coverage places every
-required chart between an admitted source and an RH-equivalent terminal chart. Omitted
-charts require an exact derivability theorem from the required charts rather than a
-prose assertion of independence.
+edges must point to an exact #232 coordinate outcome; this no longer requires a local
+proposition equivalence. Logical and height evidence remain present through the wrapped
+`VerticalStep`. Complete coverage places every required chart between an admitted
+source and an RH-equivalent terminal chart. Omitted charts require an exact derivability
+theorem from the required charts rather than a prose assertion of independence.
 
 The terminal equivalence still requires the #231 reverse-direction audit. Path
 existence alone proves only the forward transport to an RH-equivalent terminal.
@@ -36,26 +36,14 @@ inductive VerticalEdgeKind where
   | terminalEquivalence
   deriving DecidableEq, Repr
 
-namespace OverlapAuditOutcome
-
-/-- Whether an overlap audit outcome is admitted as an exact atlas transition. -/
-def IsExact
-    {A X H : Type*} [Ring A] [AddCommGroup H] [Module ℂ H]
-    {root : NoncommutativeHeightRoot A X H}
-    {left right : CriticalStripChart root} :
-    OverlapAuditOutcome left right → Prop
-  | .exact _ _ => True
-  | _ => False
-
-end OverlapAuditOutcome
-
-/-- The optional coordinate evidence contains an exact admitted overlap. -/
+/-- The optional coordinate evidence contains an exact admitted coordinate overlap.
+Both logically equivalent and merely directional outcomes can satisfy this predicate. -/
 def HasExactCoordinateEvidence
     {A X H : Type*} [Ring A] [AddCommGroup H] [Module ℂ H]
     {root : NoncommutativeHeightRoot A X H}
     {left right : CriticalStripChart root}
     (evidence : Option (OverlapAuditOutcome left right)) : Prop :=
-  ∃ outcome, evidence = some outcome ∧ outcome.IsExact
+  ∃ outcome, evidence = some outcome ∧ outcome.HasExactCoordinate
 
 /-- One vertical edge with exact source binding and optional overlap evidence.
 
