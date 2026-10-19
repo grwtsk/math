@@ -25,16 +25,18 @@
   },
   "source_pins": {
     "organized": {
-      "path": "verification/source-variants/formal-research/objects/21/21bddb0dacde74dbdaef5dce6aa35f19f3cff878ac4943d33985b537de310e92.lean",
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/21/21bddb0dacde74dbdaef5dce6aa35f19f3cff878ac4943d33985b537de310e92.lean",
       "sha256": "21bddb0dacde74dbdaef5dce6aa35f19f3cff878ac4943d33985b537de310e92",
       "byte_count": 2924,
-      "git_blob": "ec7c90884ad556a26919709b2c650b3f358bbe91"
+      "git_blob": "ec7c90884ad556a26919709b2c650b3f358bbe91",
+      "path_at_source_revision": "verification/source-variants/formal-research/objects/21/21bddb0dacde74dbdaef5dce6aa35f19f3cff878ac4943d33985b537de310e92.lean"
     },
     "original": {
-      "path": "verification/source-variants/formal-research/objects/a3/a3d03067170a947f7c233f4cba1a6b4e20b3f53698e8a8652c8cab8a09917b38.lean",
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/a3/a3d03067170a947f7c233f4cba1a6b4e20b3f53698e8a8652c8cab8a09917b38.lean",
       "sha256": "a3d03067170a947f7c233f4cba1a6b4e20b3f53698e8a8652c8cab8a09917b38",
       "byte_count": 1219,
-      "git_blob": "f825f54854e78e19511092a0094a5f69e22196a0"
+      "git_blob": "f825f54854e78e19511092a0094a5f69e22196a0",
+      "path_at_source_revision": "verification/source-variants/formal-research/objects/a3/a3d03067170a947f7c233f4cba1a6b4e20b3f53698e8a8652c8cab8a09917b38.lean"
     }
   },
   "taxonomy": {
@@ -425,10 +427,11 @@
       "SourceHighLagPolynomialSign"
     ],
     "observed_dependency_preimage": {
-      "path": "verification/source-variants/formal-research/objects/aa/aade3178f623adb7f78d20b5a87eeb98f1f26f76afe888c72f2038f11a96c82f.lean",
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/aa/aade3178f623adb7f78d20b5a87eeb98f1f26f76afe888c72f2038f11a96c82f.lean",
       "sha256": "aade3178f623adb7f78d20b5a87eeb98f1f26f76afe888c72f2038f11a96c82f",
       "namespace": "FormalResearch.RiemannHypothesis.SourceHighLagPolynomialSign",
-      "read_scope": "Complete95-line raw preimage read; exact original compiler selection remains unreplayed"
+      "read_scope": "Complete95-line raw preimage read; exact original compiler selection remains unreplayed",
+      "path_at_source_revision": "verification/source-variants/formal-research/objects/aa/aade3178f623adb7f78d20b5a87eeb98f1f26f76afe888c72f2038f11a96c82f.lean"
     },
     "ambient_context": "Only relative open SourceHighLagPolynomialSign is explicitly qualified to its directly read source namespace after GRWTSK rebinding.",
     "same_file_edges": [

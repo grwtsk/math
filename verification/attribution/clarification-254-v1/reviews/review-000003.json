@@ -25,16 +25,18 @@
   },
   "source_pins": {
     "original": {
-      "path": "verification/source-variants/formal-research/objects/c9/c9f49594a570ab56c08a96af58cc5041741c9d0e1abc8b3d690040c4b3a0e9fc.lean",
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/c9/c9f49594a570ab56c08a96af58cc5041741c9d0e1abc8b3d690040c4b3a0e9fc.lean",
       "sha256": "c9f49594a570ab56c08a96af58cc5041741c9d0e1abc8b3d690040c4b3a0e9fc",
       "byte_count": 5380,
-      "git_blob": "346936d4cc8b82ff10777c43859cd99dc6426362"
+      "git_blob": "346936d4cc8b82ff10777c43859cd99dc6426362",
+      "path_at_source_revision": "verification/source-variants/formal-research/objects/c9/c9f49594a570ab56c08a96af58cc5041741c9d0e1abc8b3d690040c4b3a0e9fc.lean"
     },
     "organized": {
-      "path": "verification/source-variants/formal-research/objects/39/39c6f8aafd09803bd849e33b65d9d17d693fc2313ad29ca9d3b11b4267cdcadb.lean",
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/39/39c6f8aafd09803bd849e33b65d9d17d693fc2313ad29ca9d3b11b4267cdcadb.lean",
       "sha256": "39c6f8aafd09803bd849e33b65d9d17d693fc2313ad29ca9d3b11b4267cdcadb",
       "byte_count": 7021,
-      "git_blob": "1f9046612a1e97ea4dd34ee8741ef5cfbbd63071"
+      "git_blob": "1f9046612a1e97ea4dd34ee8741ef5cfbbd63071",
+      "path_at_source_revision": "verification/source-variants/formal-research/objects/39/39c6f8aafd09803bd849e33b65d9d17d693fc2313ad29ca9d3b11b4267cdcadb.lean"
     }
   },
   "taxonomy": {
@@ -828,10 +830,11 @@
       "source": "FormalResearch/Foundations/NumbersAndBasicStructures/SourceCorpus/ProofDisposition/Variant59defd17787cf33798d31d5ccc19e14ea46bdd31a566bc9c8f31843301ad0eef.lean",
       "original_path_hint": "/Users/local/Documents/N/formal/lean/Mathematics/SpectralClosure/Bitfield.lean",
       "original": {
-        "path": "verification/source-variants/formal-research/objects/59/59defd17787cf33798d31d5ccc19e14ea46bdd31a566bc9c8f31843301ad0eef.lean",
+        "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/59/59defd17787cf33798d31d5ccc19e14ea46bdd31a566bc9c8f31843301ad0eef.lean",
         "sha256": "59defd17787cf33798d31d5ccc19e14ea46bdd31a566bc9c8f31843301ad0eef",
         "byte_count": 2786,
-        "git_blob": "6188ed5b51a44e2d728898fd13e9d17f69005063"
+        "git_blob": "6188ed5b51a44e2d728898fd13e9d17f69005063",
+        "path_at_source_revision": "verification/source-variants/formal-research/objects/59/59defd17787cf33798d31d5ccc19e14ea46bdd31a566bc9c8f31843301ad0eef.lean"
       },
       "all_source_bytes_read": true,
       "full_raw_source_byte_count": 2786,

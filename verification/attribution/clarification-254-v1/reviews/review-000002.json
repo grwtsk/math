@@ -7,9 +7,10 @@
   "source_original": {
     "repository": "grwtsk/math",
     "revision": "99f310907528f620d85095b675ec1b6f9d7a7046",
-    "path": "verification/source-variants/formal-research/objects/41/41ed3707c6049dbafe3de860b640f35c76dd5d92d1dffad4120cd5c490b36995.lean",
+    "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/41/41ed3707c6049dbafe3de860b640f35c76dd5d92d1dffad4120cd5c490b36995.lean",
     "git_blob": "f16394e9e7fe8bcffa3cd37374c97fb2350d3f69",
-    "byte_count": 4583
+    "byte_count": 4583,
+    "path_at_source_revision": "verification/source-variants/formal-research/objects/41/41ed3707c6049dbafe3de860b640f35c76dd5d92d1dffad4120cd5c490b36995.lean"
   },
   "source_organized_sha256": "6a1634cdbaf1149a3501911988c0ef1ca56409553851422d74fbc2c33fdaefff",
   "source_organized_bytes": 6353,
@@ -408,16 +409,18 @@
   "status": "SOURCE_READ_SEAMS_REVIEWED_STATIC_ONLY",
   "source_pins": {
     "original": {
-      "path": "verification/source-variants/formal-research/objects/41/41ed3707c6049dbafe3de860b640f35c76dd5d92d1dffad4120cd5c490b36995.lean",
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/41/41ed3707c6049dbafe3de860b640f35c76dd5d92d1dffad4120cd5c490b36995.lean",
       "sha256": "41ed3707c6049dbafe3de860b640f35c76dd5d92d1dffad4120cd5c490b36995",
       "byte_count": 4583,
-      "git_blob": "f16394e9e7fe8bcffa3cd37374c97fb2350d3f69"
+      "git_blob": "f16394e9e7fe8bcffa3cd37374c97fb2350d3f69",
+      "path_at_source_revision": "verification/source-variants/formal-research/objects/41/41ed3707c6049dbafe3de860b640f35c76dd5d92d1dffad4120cd5c490b36995.lean"
     },
     "organized": {
-      "path": "verification/source-variants/formal-research/objects/6a/6a1634cdbaf1149a3501911988c0ef1ca56409553851422d74fbc2c33fdaefff.lean",
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/6a/6a1634cdbaf1149a3501911988c0ef1ca56409553851422d74fbc2c33fdaefff.lean",
       "sha256": "6a1634cdbaf1149a3501911988c0ef1ca56409553851422d74fbc2c33fdaefff",
       "byte_count": 6353,
-      "git_blob": "c4df2fc2a49266214337a17a5afd529b2a3cd0ee"
+      "git_blob": "c4df2fc2a49266214337a17a5afd529b2a3cd0ee",
+      "path_at_source_revision": "verification/source-variants/formal-research/objects/6a/6a1634cdbaf1149a3501911988c0ef1ca56409553851422d74fbc2c33fdaefff.lean"
     }
   },
   "outputs": [

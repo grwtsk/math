@@ -25,16 +25,18 @@
   },
   "source_pins": {
     "organized": {
-      "path": "verification/source-variants/formal-research/objects/97/9748d469bf3af377371b88f41fb6bb0720a622bacd8fcb5fd22b4cfb4253f04d.lean",
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/97/9748d469bf3af377371b88f41fb6bb0720a622bacd8fcb5fd22b4cfb4253f04d.lean",
       "sha256": "9748d469bf3af377371b88f41fb6bb0720a622bacd8fcb5fd22b4cfb4253f04d",
       "byte_count": 5299,
-      "git_blob": "539d5b9f9bc032a48ed2ba253d4026ff11c29c94"
+      "git_blob": "539d5b9f9bc032a48ed2ba253d4026ff11c29c94",
+      "path_at_source_revision": "verification/source-variants/formal-research/objects/97/9748d469bf3af377371b88f41fb6bb0720a622bacd8fcb5fd22b4cfb4253f04d.lean"
     },
     "original": {
-      "path": "verification/source-variants/formal-research/objects/b3/b397c3041d3a33260073e871f0c5d2e3bc80e7bb2d2e46838eaf2611f7a66e4a.lean",
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/b3/b397c3041d3a33260073e871f0c5d2e3bc80e7bb2d2e46838eaf2611f7a66e4a.lean",
       "sha256": "b397c3041d3a33260073e871f0c5d2e3bc80e7bb2d2e46838eaf2611f7a66e4a",
       "byte_count": 3737,
-      "git_blob": "54e8034b1d8941e7fac9f468a8bd85722cbaa477"
+      "git_blob": "54e8034b1d8941e7fac9f468a8bd85722cbaa477",
+      "path_at_source_revision": "verification/source-variants/formal-research/objects/b3/b397c3041d3a33260073e871f0c5d2e3bc80e7bb2d2e46838eaf2611f7a66e4a.lean"
     }
   },
   "taxonomy": {
@@ -953,7 +955,8 @@
       "role": "native_project_module",
       "sha256": "86fc70009f49ff3a343acf080f7d4e2d857455209a5acb727d329befcfbf8dc2",
       "source": "FormalResearch/SpectralUnificationOfComputabilityAndAlgebraicSymmetry/ZeroSideTargets.lean",
-      "target": "verification/source-variants/formal-research/objects/86/86fc70009f49ff3a343acf080f7d4e2d857455209a5acb727d329befcfbf8dc2.lean"
+      "target": "GRWTSK/SourceCorpus/FormalResearch/Objects/86/86fc70009f49ff3a343acf080f7d4e2d857455209a5acb727d329befcfbf8dc2.lean",
+      "target_at_source_revision": "verification/source-variants/formal-research/objects/86/86fc70009f49ff3a343acf080f7d4e2d857455209a5acb727d329befcfbf8dc2.lean"
     },
     "dependency_source_whole_file_conceptual_review": "NOT_ASSERTED",
     "ambient_context": "Original imports retained and inherited namespace references explicitly qualified/opened after rebinding",

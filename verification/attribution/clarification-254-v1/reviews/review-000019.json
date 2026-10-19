@@ -25,16 +25,18 @@
   },
   "source_pins": {
     "organized": {
-      "path": "verification/source-variants/formal-research/objects/50/5023d9cbf1f63eff50f5ccca5411557b5209203afafd9ddec4c04c9cb08b95fb.lean",
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/50/5023d9cbf1f63eff50f5ccca5411557b5209203afafd9ddec4c04c9cb08b95fb.lean",
       "sha256": "5023d9cbf1f63eff50f5ccca5411557b5209203afafd9ddec4c04c9cb08b95fb",
       "byte_count": 4200,
-      "git_blob": "b1c0650c5157bf4cde139e02013b7cf98353ca9a"
+      "git_blob": "b1c0650c5157bf4cde139e02013b7cf98353ca9a",
+      "path_at_source_revision": "verification/source-variants/formal-research/objects/50/5023d9cbf1f63eff50f5ccca5411557b5209203afafd9ddec4c04c9cb08b95fb.lean"
     },
     "original": {
-      "path": "verification/source-variants/formal-research/objects/02/028e72b747baa382360a45e242d376ed089803e396dfd91fc3f6dae07206f0b5.lean",
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/02/028e72b747baa382360a45e242d376ed089803e396dfd91fc3f6dae07206f0b5.lean",
       "sha256": "028e72b747baa382360a45e242d376ed089803e396dfd91fc3f6dae07206f0b5",
       "byte_count": 2622,
-      "git_blob": "ccde91a09a96cf0ad4383b5eb39f605c461a7eee"
+      "git_blob": "ccde91a09a96cf0ad4383b5eb39f605c461a7eee",
+      "path_at_source_revision": "verification/source-variants/formal-research/objects/02/028e72b747baa382360a45e242d376ed089803e396dfd91fc3f6dae07206f0b5.lean"
     }
   },
   "taxonomy": {
@@ -800,18 +802,20 @@
     "observed_same_basename_preimages": [
       {
         "sha256": "a268726280168750ef8e7f0023724f1b5ec0d94702631312a1cf06a4cb86357d",
-        "path": "verification/source-variants/formal-research/objects/a2/a268726280168750ef8e7f0023724f1b5ec0d94702631312a1cf06a4cb86357d.lean",
+        "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/a2/a268726280168750ef8e7f0023724f1b5ec0d94702631312a1cf06a4cb86357d.lean",
         "observed_namespace": "HalfLineExponentialScratch",
-        "read_scope": "namespace, halfLineMeasure and H regions only; no whole-file conceptual review"
+        "read_scope": "namespace, halfLineMeasure and H regions only; no whole-file conceptual review",
+        "path_at_source_revision": "verification/source-variants/formal-research/objects/a2/a268726280168750ef8e7f0023724f1b5ec0d94702631312a1cf06a4cb86357d.lean"
       },
       {
         "sha256": "f84bc0ff2e44c9ae69a36a8559b4dc1fde0f046d3b71df47371e515238a39f16",
-        "path": "verification/source-variants/formal-research/objects/f8/f84bc0ff2e44c9ae69a36a8559b4dc1fde0f046d3b71df47371e515238a39f16.lean",
+        "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/f8/f84bc0ff2e44c9ae69a36a8559b4dc1fde0f046d3b71df47371e515238a39f16.lean",
         "observed_namespaces": [
           "FixedSourceKernelScratch",
           "FixedKernelAdmissionScratch"
         ],
-        "read_scope": "namespace, fixedKernel and fixedKernel_integrable regions only; no whole-file conceptual review"
+        "read_scope": "namespace, fixedKernel and fixedKernel_integrable regions only; no whole-file conceptual review",
+        "path_at_source_revision": "verification/source-variants/formal-research/objects/f8/f84bc0ff2e44c9ae69a36a8559b4dc1fde0f046d3b71df47371e515238a39f16.lean"
       }
     ],
     "dependency_variant_binding": "UNRESOLVED; same basename is not namespace or environment identity",

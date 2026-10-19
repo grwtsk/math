@@ -25,16 +25,18 @@
   },
   "source_pins": {
     "organized": {
-      "path": "verification/source-variants/formal-research/objects/c0/c03415f28a3416dcd9556c3e7144a5e0be6c21f64b12ba18537836f677bfd472.lean",
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/c0/c03415f28a3416dcd9556c3e7144a5e0be6c21f64b12ba18537836f677bfd472.lean",
       "sha256": "c03415f28a3416dcd9556c3e7144a5e0be6c21f64b12ba18537836f677bfd472",
       "byte_count": 2180,
-      "git_blob": "8880bb68d7bdbaf44a92ce2afc465db27f18994b"
+      "git_blob": "8880bb68d7bdbaf44a92ce2afc465db27f18994b",
+      "path_at_source_revision": "verification/source-variants/formal-research/objects/c0/c03415f28a3416dcd9556c3e7144a5e0be6c21f64b12ba18537836f677bfd472.lean"
     },
     "original": {
-      "path": "verification/source-variants/formal-research/objects/47/476814e9f1c81cce40cd7a1952d0f3f04789798c0985bb91cfd439b2d7bcbe9b.lean",
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/47/476814e9f1c81cce40cd7a1952d0f3f04789798c0985bb91cfd439b2d7bcbe9b.lean",
       "sha256": "476814e9f1c81cce40cd7a1952d0f3f04789798c0985bb91cfd439b2d7bcbe9b",
       "byte_count": 612,
-      "git_blob": "7a295c8604ae55d442e42f1724a828ffa1fc9ae5"
+      "git_blob": "7a295c8604ae55d442e42f1724a828ffa1fc9ae5",
+      "path_at_source_revision": "verification/source-variants/formal-research/objects/47/476814e9f1c81cce40cd7a1952d0f3f04789798c0985bb91cfd439b2d7bcbe9b.lean"
     }
   },
   "taxonomy": {
@@ -248,10 +250,11 @@
       "FormalResearch.Analysis.ReciprocalKernel"
     ],
     "observed_project_dependency": {
-      "path": "verification/source-variants/formal-research/objects/a4/a4d602c822efdaca02731b694d0beb6edf2b62b3c13f09d8012776c29b789bc2.lean",
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/a4/a4d602c822efdaca02731b694d0beb6edf2b62b3c13f09d8012776c29b789bc2.lean",
       "sha256": "a4d602c822efdaca02731b694d0beb6edf2b62b3c13f09d8012776c29b789bc2",
       "namespace": "FormalResearch.Analysis.ReciprocalKernel",
-      "binding": "PINNED_ARCHIVE_SOURCE_OBSERVED; ORIGINAL_COMPILER_SELECTION_UNREPLAYED"
+      "binding": "PINNED_ARCHIVE_SOURCE_OBSERVED; ORIGINAL_COMPILER_SELECTION_UNREPLAYED",
+      "path_at_source_revision": "verification/source-variants/formal-research/objects/a4/a4d602c822efdaca02731b694d0beb6edf2b62b3c13f09d8012776c29b789bc2.lean"
     },
     "ambient_context": "Original fully qualified open is copied unchanged after the new namespace. No implicit child namespace guess is introduced.",
     "namespace_resolution": "UNKNOWN_UNREPLAYED",
