@@ -6,6 +6,7 @@ import GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripVerticalPath
 import GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripStructuredTransport
 import GRWTSK.NumberTheory.Zeta.Riemann.ZeroDefinitions
 import GRWTSK.NumberTheory.Zeta.Riemann.ZetaCommutatorRoot
+import GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripRootFixture
 import GRWTSK.NumberTheory.Zeta.Riemann.ZeroExclusions
 import GRWTSK.NumberTheory.Zeta.Riemann.CriticalLineDefect
 import GRWTSK.NumberTheory.Zeta.Riemann.ZeroSymmetry
@@ -21,7 +22,7 @@ import GRWTSK.NumberTheory.Zeta.Riemann.CertifiedZeroHeight
 import GRWTSK.LinearAlgebra.Matrix.QuantumReadiness
 import GRWTSK.Analysis.ErrorBounds.SchurJetScrewReconstruction
 
-/-! Exact target, concrete algebraic zeta commutator root, proof-local atlas,
-machine-readable gap, overlap, vertical-path and structured-transport audits,
-reformulations and zero symmetries; RH remains an open proposition until every
-required local and global supplier is proved. -/
+/-! Exact target, concrete algebraic zeta commutator root and root-only hostile fixture,
+proof-local atlas, machine-readable gap, overlap, vertical-path and
+structured-transport audits, reformulations and zero symmetries; RH remains an open
+proposition until every required local and global supplier is proved. -/
