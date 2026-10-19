@@ -96,15 +96,20 @@ theorem arithmeticTower_continuous :
 /-- The composite port is the exact ring homomorphism `ℤ → ℂ`. -/
 theorem arithmeticTower_composite :
     arithmeticTowerPath.composite =
-      (algebraMap ℚ ℂ).comp (algebraMap ℤ ℚ) :=
+      (algebraMap ℚ ℂ).comp (algebraMap ℤ ℚ) := by
+  ext x
   rfl
 
 /-- The topological map follows the reverse order of the algebraic maps. -/
 theorem arithmeticTower_map (x : PrimeSpectrum ℂ) :
     system.map arithmeticTowerPath.composite x =
       PrimeSpectrum.comap (algebraMap ℤ ℚ)
-        (PrimeSpectrum.comap (algebraMap ℚ ℂ) x) :=
-  rfl
+        (PrimeSpectrum.comap (algebraMap ℚ ℂ) x) := by
+  calc
+    system.map arithmeticTowerPath.composite x = arithmeticTowerPath.eval x :=
+      arithmeticTowerPath.map_composite x
+    _ = PrimeSpectrum.comap (algebraMap ℤ ℚ)
+        (PrimeSpectrum.comap (algebraMap ℚ ℂ) x) := rfl
 
 end Fixtures
 
