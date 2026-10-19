@@ -1,0 +1,149 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "frey-three-port-frame-v0.6"
+owner_repository = "grwtsk/math"
+issues = [100, 110, 127, 128, 129, 177, 220, 221, 222, 227, 230, 233, 241, 248, 249, 250, 251]
+root_module = "GRWTSK.Interfaces.FreyThreePortCore"
+build_target = "GRWTSK.Interfaces.FreyThreePortCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+base_revision = "4aab069dad5b8ef5a07d0850c920a4bfda596aeb"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_runtime_safety_scan = true
+operational_receipt_is_external = true
+root_library_import_unchanged = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unsafe_declarations = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Definitions"
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyThreePortFrame"
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyThreePortSaturation"
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCurveGeometry"
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyAffineEvaluation"
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyIntegralModel"
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyLocalInvariants"
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyThreePortBounds"
+[[modules]]
+name = "GRWTSK.Interfaces.FreyThreePortCore"
+
+[[hostile_controls]]
+id = "reject-two-port-as-saturated-three-port"
+description = "The square two-port difference carries the factor a+b; it cannot be reported as the denominator-free integral three-port recovery theorem."
+[[hostile_controls]]
+id = "reject-rectangular-as-surjective"
+description = "The exact obstruction quotient is split-surjective and the three-port evaluation is explicitly nonsurjective onto all of Z^3."
+[[hostile_controls]]
+id = "reject-left-inverse-without-bezout"
+description = "Integral recovery, exactness, obstruction splitting and the unit maximal-minor ideal require the exact integer Bezout identity."
+[[hostile_controls]]
+id = "reject-maximal-minor-unit-without-primitivity"
+description = "A nonprimitive pair must not receive the typed unit-ideal certificate."
+[[hostile_controls]]
+id = "reject-exactness-without-compatible-kernel"
+description = "The image equals the kernel of the explicit compatibility obstruction, not the full ambient target."
+[[hostile_controls]]
+id = "reject-triple-drift"
+description = "The x-section observations must recover the same typed primitive additive triple."
+[[hostile_controls]]
+id = "reject-formal-points-as-elliptic-proof"
+description = "Each actual affine point requires equation and nonsingularity proofs on the exact Frey model."
+[[hostile_controls]]
+id = "reject-zero-discriminant-as-elliptic"
+description = "Ellipticity over a field requires a proved nonzero discriminant."
+[[hostile_controls]]
+id = "reject-integral-model-as-integral-elliptic-curve"
+description = "Nonzero raw discriminant in Z does not imply that it is a unit."
+[[hostile_controls]]
+id = "reject-base-change-model-drift"
+description = "The rational and residue models must be maps of the same displayed integral coefficient tuple."
+[[hostile_controls]]
+id = "reject-raw-as-minimal-discriminant"
+description = "Raw residue invariants do not themselves provide DVR minimality, minimal discriminants or conductor exponents."
+[[hostile_controls]]
+id = "reject-point-on-curve-as-two-torsion"
+description = "Check P+P=0 independently of point membership and nonzeroness."
+[[hostile_controls]]
+id = "reject-affine-coordinate-space-as-global-sections"
+description = "The affine-linear coordinates are not yet identified with the complete space H0(E,O(2O))."
+[[hostile_controls]]
+id = "reject-geometry-map-drift"
+description = "Actual affine evaluation must equal the scalar extension of the same integral map."
+[[hostile_controls]]
+id = "reject-integral-left-inverse-as-uniform-isometry"
+description = "The new lower max-norm bound is on the compatible image. It does not bound every chosen integral left inverse on the whole ambient target, or give a uniform upper bound."
+[[hostile_controls]]
+id = "reject-zero-interpolation-cost-as-zero-arithmetic-cost"
+description = "Base-frame bounds do not erase model, conductor, intrinsic metric, higher-stage or source-observation height costs."
+[[hostile_controls]]
+id = "reject-c4-odd-prime-theorem-at-two"
+description = "The c4 nondivisibility theorem requires p prime and p != 2. The displayed model has zero discriminant and c4 modulo two."
+[[hostile_controls]]
+id = "reject-c4-unit-without-primitivity"
+description = "For a=3,b=6,p=3 both parameters and c4 vanish modulo p; a nonprimitive pair cannot use the residue Bezout theorem."
+[[hostile_controls]]
+id = "reject-prime-support-as-multiplicity"
+description = "m dividing abc implies m^2 divides Delta_raw. The support equivalence does not discard that depth."
+[[hostile_controls]]
+id = "reject-raw-discriminant-excess-as-small-error"
+description = "Delta_raw=16*(abc)^2 has a structural square contribution. Do not require its entire excess to be at most epsilon*logRad(abc)+C for every epsilon>0."
+[[hostile_controls]]
+id = "reject-observation-max-as-c"
+description = "The x observations (0,a,-b) have max norm max(a,b). The (2,3,5) fixture gives three, not five; decoding loses at most a factor two."
+[[hostile_controls]]
+id = "reject-common-support-as-common-divisor"
+description = "Replay the all-integer-divisor equivalence, including prime powers; matching radicals alone is weaker."
+[[hostile_controls]]
+id = "reject-base-bound-as-higher-stage-bound"
+description = "The constant-one lower bound concerns the selected (1,x) coordinate frame only, not arbitrary line-bundle metrics or recursively refined jet spaces."
+[[hostile_controls]]
+id = "reject-numerical-sampling-as-Lean-replay"
+description = "Independent exact-rational arithmetic tests do not certify elaboration, declaration types, transitive axioms or hostile-control coverage."
+[[hostile_controls]]
+id = "reject-source-frame-as-abc"
+description = "A faithful source frame and its norm/divisibility bounds do not bound its observation height by prime support."
+[[hostile_controls]]
+id = "reject-root-import-as-slice-pass"
+description = "A GRWTSK build or the legacy trivial sourceOnlyBoundary marker cannot replace complete isolated-module and exact-type coverage."
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+requires_root_import_unchanged = true
+requires_hostile_controls = true
+requires_axiom_audit = true
+requires_runtime_safety_scan = true
+
+[nonclaims]
+claims = [
+  "proof that H0(E,O(2O)) has basis (1,x)",
+  "identification of affine-linear coordinates with the complete line-bundle section space",
+  "minimality of the displayed integral model at a DVR",
+  "minimal discriminant or conductor exponent formula",
+  "completed number-field adelic height API",
+  "uniform intrinsic or higher-stage frame bound",
+  "uniform upper frame bound",
+  "uniform height-versus-radical estimate",
+  "Szpiro conjecture",
+  "abc conjecture",
+  "Riemann Hypothesis",
+  "execution or replay receipt"
+]
