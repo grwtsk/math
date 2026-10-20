@@ -2,7 +2,7 @@
 schema_version: 0.1.0
 id: urn:uuid:3abad45e-df88-4369-8cef-aa9bf9ca1473
 record_kind: crosswalk
-source_scheme: {id: grwtsk-mathematics, edition: 0.5-pilot}
+source_scheme: {id: grwtsk-mathematics, edition: 0.6-pilot}
 source_identifiers: ['urn:uuid:6f8afa7d-458b-4dc9-8bff-230582f3a0c7']
 target_scheme: {id: arXiv, edition: 'unversioned category page retrieved 2026-10-19', source_key: S10, snapshot_checksum: unavailable}
 target_identifiers: [math.PR]
@@ -12,7 +12,7 @@ origin: direct
 status: {editorial: proposed, review: unassessed, mathematical_novelty: not_claimed, proof: not_applicable, attribution: source_reference_preserved, operational_permission: not_conferred}
 sources: [{key: S10, locator: 'math.PR category heading and scope'}]
 rights: {local_prose: MIT, source_reuse: reference_only, dataset_reuse: unassessed}
-revision_history: [{"version": 0.1, "date": "2026-10-19", "change": "Initial broader-category candidate."}, {"version": "0.2-pilot", "date": "2026-10-19", "change": "Explicit local source-edition update only; source concept scope, target edition and mapping relation unchanged; independent review remains pending."}, {"version": "0.3-pilot", "date": "2026-10-19", "change": "Local source vocabulary edition only; mapping identity, external targets, relation and proposed state preserved."}, {"version": "0.4-pilot", "date": "2026-10-19", "change": "Update local source vocabulary edition only; retain external target, relation, proposed status and earlier versions."}, {"version": "0.5-pilot", "date": "2026-10-19", "change": "Advance only the local source edition after statistics addition; retain external semantics and proposed status; no review transport."}]
+revision_history: [{"version": 0.1, "date": "2026-10-19", "change": "Initial broader-category candidate."}, {"version": "0.2-pilot", "date": "2026-10-19", "change": "Explicit local source-edition update only; source concept scope, target edition and mapping relation unchanged; independent review remains pending."}, {"version": "0.3-pilot", "date": "2026-10-19", "change": "Local source vocabulary edition only; mapping identity, external targets, relation and proposed state preserved."}, {"version": "0.4-pilot", "date": "2026-10-19", "change": "Update local source vocabulary edition only; retain external target, relation, proposed status and earlier versions."}, {"version": "0.5-pilot", "date": "2026-10-19", "change": "Advance only the local source edition after statistics addition; retain external semantics and proposed status; no review transport."}, {version: "0.6-pilot", date: "2026-10-20", change: "Local source edition only; external target and relation semantics retained; review not carried forward."}]
 proposal_refs: []
 decision_refs: [D02, D03, D04]
 ---
@@ -37,3 +37,5 @@ Candidate 0.3 retains the preceding mapping at math `47b87581675315cd4cecfec5602
 Candidate 0.4 rebinds the local source edition from 0.3-pilot. The preceding exact payload remains at math `ae9b637989a78a4360ef95e1fc4ead44ee3f6f8a`. This requires new review; no external target, direction, relation or compound expression changes, and no prior approval is inferred.
 
 Candidate 0.5 retains the preceding payload at math `814971e0bc4fd54802423eec4beb6a0b890a8cb4`. Only its local source edition and this history change; the source-only merge `f3d3f755ac0bb40732f9580a3cb30fecdcd26bcd` did not admit the mapping.
+
+Candidate 0.6 versions the local source scheme only. The previous mapping payload is retained at math `262daeee89add65f0d7997f338f9ca45bcac718e`; external meanings and proposed states are unchanged, and independent review is not transported.

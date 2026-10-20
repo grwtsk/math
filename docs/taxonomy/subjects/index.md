@@ -13,3 +13,5 @@ Candidate 0.3 adds [Mathematical logic](mathematical-logic/index.md), [Algebra](
 Candidate 0.4 opens [geometry](geometry/index.md) and [topology](topology/index.md). The topology route reaches a finite prime-field computational-homology subject from both its simplicial-homology and computational-topology parents. This is not complete coverage of either field.
 
 Candidate 0.5 opens [statistics](statistics/index.md). Its inferential and regression routes share one restricted least-squares subject; probability, data summaries, decision authority and statistical hypotheses retain separate meanings. These are selected branches, not complete statistical coverage.
+
+Candidate 0.6 opens [numerical analysis](numerical-analysis/index.md) and [mathematical optimization](optimization/index.md). Krylov-solver and strictly convex quadratic routes share the restricted conjugate-gradient subject. Conditioning, stability, exact arithmetic and software qualification remain distinct; neither field is complete.
