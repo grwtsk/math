@@ -23,7 +23,7 @@ theorem tenHeight_joint_bound {s : ℂ}
     (hx : (1 / 2 : ℝ) ≤ s.re) (hx1 : s.re ≤ 1) (hy : |s.im| ≤ (10 : ℝ)) :
     jointNumerator s ≤ (139 / 100 : ℝ) * jointDenominator s := by
   have hy2 : s.im ^ 2 ≤ (100 : ℝ) := by
-    have h := mul_le_mul hy hy (abs_nonneg s.im) (by norm_num : (0 : ℝ) ≤ 9)
+    have h := mul_le_mul hy hy (abs_nonneg s.im) (by norm_num : (0 : ℝ) ≤ 10)
     nlinarith [sq_abs s.im]
   have hc := TenHeightCertificate.squared_ratio_bound hx hx1 (sq_nonneg s.im) hy2
   rw [← jointNumerator_sq, ← jointDenominator_sq] at hc
