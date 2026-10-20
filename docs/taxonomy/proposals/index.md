@@ -21,3 +21,5 @@ The [statistics addition](new-concepts/statistics.md) proposes eleven statistica
 [Number-theory subject addition](new-concepts/number-theory.md): twelve original records, explicit arithmetic hypotheses and one shared computational/algebraic subject; proposed, not independently reviewed.
 
 [Equation, dynamics and mechanics addition](new-concepts/equations-dynamics-mechanics.md): twelve original records, eleven proposed edges and two canonical shared model classes; no source-namespace collision is resolved.
+
+[Information and coding addition](new-concepts/information-coding.md) proposes ten established subjects and a shared finite-field linear-code record, retaining independent-review and rights gates.
