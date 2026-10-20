@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 R.A. Jacob Martone. MIT.
 Human mathematical direction and authorship: R.A. Jacob Martone.
 Formalization and source development with AI assistance. -/
-import Init
+import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.ConstructiveList
 
 /-!
 # Revision-scoped timed evidence
@@ -31,6 +31,8 @@ are separate from the declarations and static acceptance specification.
 set_option autoImplicit false
 
 namespace GRWTSK.Logic.Observation.RevisionEvidence
+
+open GRWTSK.Logic.FiniteSequences
 
 universe u v
 
@@ -99,6 +101,8 @@ def issue (state : State Kind Payload) : State Kind Payload :=
 
 /-- Record first confirmation only. Validity of the ordinal is a `Step` guard. -/
 def confirm (state : State Kind Payload) (revision : Nat) : State Kind Payload :=
+  letI : Decidable (revision ∈ state.confirmed) :=
+    ConstructiveList.decidableMem revision state.confirmed
   { state with confirmed :=
       if revision ∈ state.confirmed then state.confirmed else state.confirmed ++ [revision] }
 
@@ -141,7 +145,13 @@ theorem mem_query_iff [DecidableEq Kind] (state : State Kind Payload)
     (revision : Nat) (kind : Kind) (row : Record Kind Payload) :
     row ∈ query state revision kind ↔
       row ∈ state.history ∧ row.revision = revision ∧ row.kind = kind := by
-  simp [query]
+  constructor
+  · intro member
+    have selected := ConstructiveList.mem_filter_iff.mp member
+    exact ⟨selected.1, of_decide_eq_true selected.2⟩
+  · intro matching
+    exact ConstructiveList.mem_filter_iff.mpr
+      ⟨matching.1, decide_eq_true matching.2⟩
 
 /-- Appending a record contributes to exactly its own revision-and-kind query. -/
 theorem query_record [DecidableEq Kind] (state : State Kind Payload)
@@ -150,9 +160,30 @@ theorem query_record [DecidableEq Kind] (state : State Kind Payload)
       query state queriedRevision queriedKind ++
         if revision = queriedRevision ∧ kind = queriedKind
         then [⟨revision, kind, state.clock, payload⟩] else [] := by
-  by_cases sameRevision : revision = queriedRevision <;>
-    by_cases sameKind : kind = queriedKind <;>
-    simp [query, record, sameRevision, sameKind]
+  let row : Record Kind Payload := ⟨revision, kind, state.clock, payload⟩
+  let select : Record Kind Payload → Bool :=
+    fun candidate => decide
+      (candidate.revision = queriedRevision ∧ candidate.kind = queriedKind)
+  change (state.history ++ [row]).filter select =
+    state.history.filter select ++
+      if revision = queriedRevision ∧ kind = queriedKind then [row] else []
+  calc
+    _ = state.history.filter select ++ [row].filter select :=
+      ConstructiveList.filter_append
+    _ = state.history.filter select ++
+        (if revision = queriedRevision ∧ kind = queriedKind then [row] else []) := by
+      apply congrArg (fun suffix => state.history.filter select ++ suffix)
+      by_cases matching : revision = queriedRevision ∧ kind = queriedKind
+      · rw [if_pos matching]
+        change (match decide (revision = queriedRevision ∧ kind = queriedKind) with
+          | true => [row]
+          | false => []) = [row]
+        rw [decide_eq_true matching]
+      · rw [if_neg matching]
+        change (match decide (revision = queriedRevision ∧ kind = queriedKind) with
+          | true => [row]
+          | false => []) = []
+        rw [decide_eq_false matching]
 
 theorem query_record_other [DecidableEq Kind] (state : State Kind Payload)
     (revision queriedRevision : Nat) (kind queriedKind : Kind) (payload : Payload)
@@ -165,12 +196,24 @@ theorem query_record_other [DecidableEq Kind] (state : State Kind Payload)
     cases different with
     | inl differentRevision => exact differentRevision same.1
     | inr differentKind => exact differentKind same.2
-  simp [mismatch]
+  rw [if_neg mismatch]
+  exact ConstructiveList.append_nil _
 
 theorem earliestTick_none_iff [DecidableEq Kind] (state : State Kind Payload)
     (revision : Nat) (kind : Kind) :
     earliestTick state revision kind = none ↔ query state revision kind = [] := by
-  simp [earliestTick]
+  constructor
+  · intro first
+    have noTicks := ConstructiveList.min?_eq_none_iff.mp first
+    cases selected : query state revision kind with
+    | nil => rfl
+    | cons row rows =>
+        rw [selected] at noTicks
+        cases noTicks
+  · intro absent
+    unfold earliestTick
+    rw [absent]
+    rfl
 
 /-- The returned minimum is itself an observed matching time and bounds every
 matching time from below. No completeness of external observations is assumed. -/
@@ -182,17 +225,16 @@ theorem earliestTick_some_iff [DecidableEq Kind] (state : State Kind Payload)
   unfold earliestTick
   constructor
   · intro first
-    have minimum := List.min?_eq_some_iff.mp first
-    refine ⟨List.mem_map.mp minimum.1, ?_⟩
+    have minimum := ConstructiveList.min?_eq_some_iff.mp first
+    refine ⟨ConstructiveList.mem_map_iff.mp minimum.1, ?_⟩
     intro row member
-    exact minimum.2 row.tick (List.mem_map.mpr ⟨row, member, rfl⟩)
+    exact minimum.2 row.tick (ConstructiveList.mem_map_iff.mpr ⟨row, member, rfl⟩)
   · intro minimum
-    apply List.min?_eq_some_iff.mpr
-    refine ⟨List.mem_map.mpr minimum.1, ?_⟩
+    apply ConstructiveList.min?_eq_some_iff.mpr
+    refine ⟨ConstructiveList.mem_map_iff.mpr minimum.1, ?_⟩
     intro observed member
-    obtain ⟨row, rowMember, rowTick⟩ := List.mem_map.mp member
-    rw [← rowTick]
-    exact minimum.2 row rowMember
+    obtain ⟨row, rowMember, rowTick⟩ := ConstructiveList.mem_map_iff.mp member
+    exact rowTick ▸ minimum.2 row rowMember
 
 theorem timing_unavailable_iff [DecidableEq Kind] (state : State Kind Payload)
     (revision : Nat) (kind : Kind) (target : Nat) :
@@ -203,49 +245,103 @@ theorem timing_unavailable_iff [DecidableEq Kind] (state : State Kind Payload)
     cases first : earliestTick state revision kind with
     | none => exact (earliestTick_none_iff state revision kind).mp first
     | some tick =>
-        simp only [timing, first] at result
-        split at result <;> cases result
+        unfold timing at result
+        rw [first] at result
+        change (if tick ≤ target then Timing.byTarget else Timing.afterTarget) =
+          Timing.unavailable at result
+        by_cases within : tick ≤ target
+        · rw [if_pos within] at result
+          cases result
+        · rw [if_neg within] at result
+          cases result
   · intro absent
-    simp [timing, (earliestTick_none_iff state revision kind).mpr absent]
+    unfold timing
+    rw [(earliestTick_none_iff state revision kind).mpr absent]
 
 theorem timing_byTarget_iff [DecidableEq Kind] (state : State Kind Payload)
     (revision : Nat) (kind : Kind) (target : Nat) :
     timing state revision kind target = .byTarget ↔
       ∃ tick, earliestTick state revision kind = some tick ∧ tick ≤ target := by
-  cases first : earliestTick state revision kind with
-  | none => simp [timing, first]
-  | some tick =>
-      by_cases within : tick ≤ target <;> simp [timing, first, within]
+  constructor
+  · intro result
+    cases first : earliestTick state revision kind with
+    | none =>
+        unfold timing at result
+        rw [first] at result
+        cases result
+    | some tick =>
+        by_cases within : tick ≤ target
+        · exact ⟨tick, rfl, within⟩
+        · unfold timing at result
+          rw [first] at result
+          change (if tick ≤ target then Timing.byTarget else Timing.afterTarget) =
+            Timing.byTarget at result
+          rw [if_neg within] at result
+          cases result
+  · intro observed
+    obtain ⟨tick, first, within⟩ := observed
+    unfold timing
+    rw [first]
+    exact if_pos within
 
 theorem timing_afterTarget_iff [DecidableEq Kind] (state : State Kind Payload)
     (revision : Nat) (kind : Kind) (target : Nat) :
     timing state revision kind target = .afterTarget ↔
       ∃ tick, earliestTick state revision kind = some tick ∧ target < tick := by
-  cases first : earliestTick state revision kind with
-  | none => simp [timing, first]
-  | some tick =>
-      by_cases within : tick ≤ target
-      · have notAfter : ¬ target < tick := Nat.not_lt_of_ge within
-        simp [timing, first, within, notAfter]
-      · have after : target < tick := Nat.lt_of_not_ge within
-        simp [timing, first, within, after]
+  constructor
+  · intro result
+    cases first : earliestTick state revision kind with
+    | none =>
+        unfold timing at result
+        rw [first] at result
+        cases result
+    | some tick =>
+        by_cases within : tick ≤ target
+        · unfold timing at result
+          rw [first] at result
+          change (if tick ≤ target then Timing.byTarget else Timing.afterTarget) =
+            Timing.afterTarget at result
+          rw [if_pos within] at result
+          cases result
+        · exact ⟨tick, rfl, Nat.lt_of_not_ge within⟩
+  · intro observed
+    obtain ⟨tick, first, after⟩ := observed
+    unfold timing
+    rw [first]
+    exact if_neg (Nat.not_le_of_gt after)
 
 theorem mem_confirmed_iff (state : State Kind Payload) (revision other : Nat) :
     other ∈ (confirm state revision).confirmed ↔
       other ∈ state.confirmed ∨ other = revision := by
+  letI : Decidable (revision ∈ state.confirmed) :=
+    ConstructiveList.decidableMem revision state.confirmed
+  change other ∈ (if revision ∈ state.confirmed
+    then state.confirmed else state.confirmed ++ [revision]) ↔
+    other ∈ state.confirmed ∨ other = revision
   by_cases already : revision ∈ state.confirmed
-  · simp only [confirm, already, if_true]
+  · rw [if_pos already]
     constructor
     · exact Or.inl
     · intro member
       cases member with
       | inl old => exact old
       | inr same => exact same.symm ▸ already
-  · simp [confirm, already]
+  · rw [if_neg already]
+    constructor
+    · intro member
+      cases ConstructiveList.mem_append_iff.mp member with
+      | inl old => exact Or.inl old
+      | inr appended => exact Or.inr (ConstructiveList.mem_singleton_iff.mp appended)
+    · intro member
+      apply ConstructiveList.mem_append_iff.mpr
+      cases member with
+      | inl old => exact Or.inl old
+      | inr same => exact Or.inr (ConstructiveList.mem_singleton_iff.mpr same)
 
 theorem confirm_idempotent (state : State Kind Payload) (revision : Nat)
     (already : revision ∈ state.confirmed) : confirm state revision = state := by
-  simp [confirm, already]
+  unfold confirm
+  rw [if_pos already]
 
 theorem issue_keeps_current (state : State Kind Payload) :
     current (issue state) = current state := rfl
@@ -254,7 +350,7 @@ theorem issue_keeps_current (state : State Kind Payload) :
 theorem current_confirm_of_upper (state : State Kind Payload) (revision : Nat)
     (upper : ∀ old, old ∈ state.confirmed → old ≤ revision) :
     current (confirm state revision) = some revision := by
-  apply List.max?_eq_some_iff.mpr
+  apply ConstructiveList.max?_eq_some_iff.mpr
   refine ⟨(mem_confirmed_iff state revision revision).mpr (Or.inr rfl), ?_⟩
   intro old member
   cases (mem_confirmed_iff state revision old).mp member with
@@ -266,8 +362,8 @@ theorem old_confirmation_keeps_current (state : State Kind Payload)
     (revision latest : Nat) (selected : current state = some latest)
     (older : revision ≤ latest) :
     current (confirm state revision) = some latest := by
-  have maximum := List.max?_eq_some_iff.mp selected
-  apply List.max?_eq_some_iff.mpr
+  have maximum := ConstructiveList.max?_eq_some_iff.mp selected
+  apply ConstructiveList.max?_eq_some_iff.mpr
   refine ⟨(mem_confirmed_iff state revision latest).mpr (Or.inl maximum.1), ?_⟩
   intro candidate member
   cases (mem_confirmed_iff state revision candidate).mp member with
@@ -298,17 +394,17 @@ theorem step_preserves_wellFormed {source target : State Kind Payload}
   | record revision kind payload confirmed =>
       refine ⟨valid.confirmedIssued, ?_, ?_⟩
       · intro row member
-        cases List.mem_append.mp member with
+        cases ConstructiveList.mem_append_iff.mp member with
         | inl old => exact valid.recordConfirmed row old
         | inr appended =>
-            have same := List.mem_singleton.mp appended
+            have same := ConstructiveList.mem_singleton_iff.mp appended
             cases same
             exact confirmed
       · intro row member
-        cases List.mem_append.mp member with
+        cases ConstructiveList.mem_append_iff.mp member with
         | inl old => exact valid.recordNotFuture row old
         | inr appended =>
-            have same := List.mem_singleton.mp appended
+            have same := ConstructiveList.mem_singleton_iff.mp appended
             cases same
             exact Nat.le_refl source.clock
   | advance elapsed =>
@@ -330,39 +426,43 @@ theorem step_history_prefix {source target : State Kind Payload}
     {event : Event Kind Payload} (step : Step source event target) :
     source.history <+: target.history := by
   cases step with
-  | issue => exact List.prefix_refl source.history
-  | confirm revision _issued => exact List.prefix_refl source.history
+  | issue => exact ConstructiveList.prefix_refl source.history
+  | confirm revision _issued => exact ConstructiveList.prefix_refl source.history
   | record revision kind payload _confirmed =>
-      exact List.prefix_append source.history [⟨revision, kind, source.clock, payload⟩]
-  | advance elapsed => exact List.prefix_refl source.history
+      exact ConstructiveList.prefix_append source.history [⟨revision, kind, source.clock, payload⟩]
+  | advance elapsed => exact ConstructiveList.prefix_refl source.history
 
 theorem trace_history_prefix {source target : State Kind Payload}
     {events : List (Event Kind Payload)} (trace : Trace source events target) :
     source.history <+: target.history := by
   induction trace with
-  | nil state => exact List.prefix_refl state.history
+  | nil state => exact ConstructiveList.prefix_refl state.history
   | cons first _rest inductionHypothesis =>
-      exact (step_history_prefix first).trans inductionHypothesis
+      exact ConstructiveList.prefix_trans (step_history_prefix first) inductionHypothesis
 
-/-- Every old revision, kind, timestamp, and payload remains at its exact position. -/
+/-- Every old revision, kind, timestamp, and payload remains at its exact position.
+The conclusion exhibits a valid target position and compares the actual bounded
+list getters at the same numeric index. -/
 theorem trace_history_position {source target : State Kind Payload}
     {events : List (Event Kind Payload)} (trace : Trace source events target)
     (index : Nat) (oldPosition : index < source.history.length) :
-    target.history[index]? = some source.history[index] :=
-  List.prefix_iff_getElem?.mp (trace_history_prefix trace) index oldPosition
+    ∃ newPosition : index < target.history.length,
+      getElem target.history index newPosition = getElem source.history index oldPosition :=
+  ⟨Nat.lt_of_lt_of_le oldPosition
+      (ConstructiveList.prefix_length_le (trace_history_prefix trace)),
+    ConstructiveList.prefix_getElem_of_lt (trace_history_prefix trace) index oldPosition⟩
 
 /-- A revision beyond the issued range has no record, because every record is
 linked to a confirmed, already issued revision. This is not an absence premise. -/
 theorem unissued_query_empty [DecidableEq Kind] (state : State Kind Payload)
     (valid : WellFormed state) (revision : Nat) (kind : Kind)
     (unissued : state.issued ≤ revision) : query state revision kind = [] := by
-  apply List.eq_nil_iff_forall_not_mem.mpr
+  apply ConstructiveList.eq_nil_iff_forall_not_mem.mpr
   intro row member
   have matching := (mem_query_iff state revision kind row).mp member
   have issued := valid.confirmedIssued row.revision
     (valid.recordConfirmed row matching.1)
-  rw [matching.2.1] at issued
-  exact (Nat.not_le_of_gt issued) unissued
+  exact (Nat.not_le_of_gt (matching.2.1 ▸ issued)) unissued
 
 /-- The two actual updates for issuance followed by confirmation of its fresh ordinal. -/
 def correct (state : State Kind Payload) : State Kind Payload :=
@@ -415,46 +515,49 @@ def observed : State Bool Nat :=
 
 theorem observed_wellFormed : WellFormed observed := by
   apply step_preserves_wellFormed
-    (Step.record (advance (confirm (issue empty) 0) 10) 0 true 7 (by decide))
+    (Step.record (advance (confirm (issue empty) 0) 10) 0 true 7 (List.Mem.head []))
   apply step_preserves_wellFormed (Step.advance (confirm (issue empty) 0) 10)
-  apply step_preserves_wellFormed (Step.confirm (issue empty) 0 (by decide))
+  apply step_preserves_wellFormed (Step.confirm (issue empty) 0 (Nat.lt_succ_self 0))
   exact step_preserves_wellFormed (Step.issue empty) empty_wellFormed
 
 theorem fresh_revision_control :
     current (correct observed) = some 1 ∧
       query (correct observed) 1 true = [] ∧
       query (correct observed) 0 true = [⟨0, true, 10, 7⟩] := by
-  decide
+  exact ⟨rfl, rfl, rfl⟩
 
 theorem unconfirmed_revision_keeps_current :
     current (issue observed) = some 0 ∧ query (issue observed) 0 true = [⟨0, true, 10, 7⟩] := by
-  decide
+  exact ⟨rfl, rfl⟩
 
 theorem old_confirmation_control :
     let newerFirst : State Bool Nat := confirm (issue (issue empty)) 1
     0 ∉ newerFirst.confirmed ∧
       (confirm newerFirst 0).confirmed = [1, 0] ∧
       current (confirm newerFirst 0) = some 1 := by
-  decide
+  refine ⟨?_, rfl, rfl⟩
+  intro member
+  cases member with
+  | tail _ member => cases member
 
 /-- One evidence kind does not supply another, even at the same revision. -/
 theorem distinct_kind_control :
     timing observed 0 true 10 = .byTarget ∧ timing observed 0 false 10 = .unavailable := by
-  decide
+  exact ⟨rfl, rfl⟩
 
 /-- Passing a target changes elapsed status but cannot turn absence into an event. -/
 theorem elapsed_without_evidence_control :
     targetElapsed (correct observed) 20 = false ∧
       targetElapsed (advance (correct observed) 11) 20 = true ∧
       timing (advance (correct observed) 11) 1 true 20 = .unavailable := by
-  decide
+  exact ⟨rfl, rfl, rfl⟩
 
 /-- Equality meets the target; later clock movement does not redate the observation. -/
 theorem inclusive_timing_control :
     timing observed 0 true 10 = .byTarget ∧
       timing observed 0 true 9 = .afterTarget ∧
       timing (advance observed 100) 0 true 10 = .byTarget := by
-  decide
+  exact ⟨rfl, rfl, rfl⟩
 
 /-- Omitting the structural invariant admits a forged pre-existing future record.
 The same correction operation then does inherit that record, so the invariant
@@ -465,9 +568,9 @@ theorem malformed_state_counterexample :
   dsimp only
   constructor
   · intro valid
-    have impossible := valid.recordConfirmed ⟨0, true, 0, 9⟩ (by decide)
+    have impossible := valid.recordConfirmed ⟨0, true, 0, 9⟩ (List.Mem.head [])
     cases impossible
-  · decide
+  · rfl
 
 end Fixtures
 
