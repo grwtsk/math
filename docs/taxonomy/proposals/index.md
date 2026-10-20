@@ -17,3 +17,5 @@ The [geometry and topology addition](new-concepts/geometry-topology.md) records 
 The [statistics addition](new-concepts/statistics.md) proposes eleven statistical subjects and retains the fixed-design least-squares placement and inferential boundaries.
 
 [Numerical analysis and optimization addition](new-concepts/numerical-optimization.md) proposes nine records and the shared conjugate-gradient subject; all scopes and parentage await independent review.
+
+[Number-theory subject addition](new-concepts/number-theory.md): twelve original records, explicit arithmetic hypotheses and one shared computational/algebraic subject; proposed, not independently reviewed.

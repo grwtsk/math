@@ -9,11 +9,16 @@ This is the authoritative path assignment for the pilot's persistent IDs. Labels
 | Label / canonical page | Persistent identifier |
 | --- | --- |
 | [Algebra](subjects/algebra/index.md) | `urn:uuid:e134e0c5-ee35-4f6b-8652-f5b27d7bbc9a` |
+| [Algebraic number field theory](subjects/number-theory/algebraic/number-fields/index.md) | `urn:uuid:7c60a6eb-7a03-4f69-b9db-9e13da340dbd` |
+| [Algebraic number theory](subjects/number-theory/algebraic/index.md) | `urn:uuid:93696268-3f9f-4855-9288-1e9286ad4177` |
 | [Algebraic topology](subjects/topology/algebraic-topology/index.md) | `urn:uuid:488ac86e-75aa-43d0-a98d-17f305f6cad9` |
 | [Analysis](subjects/analysis/index.md) | `urn:uuid:f9dfc34e-20f8-4ee4-8c63-c54e06947ed9` |
+| [Analytic number theory](subjects/number-theory/analytic/index.md) | `urn:uuid:52d784f7-6582-45a8-9dd3-717f0789c4bc` |
 | [Chromatic polynomial theory (finite simple graphs)](subjects/combinatorics/graph-theory/coloring/finite-vertex-coloring/chromatic-polynomials/index.md) | `urn:uuid:1f0d03cb-9777-4213-ac8c-b5d04a6d46ee` |
 | [Combinatorics](subjects/combinatorics/index.md) | `urn:uuid:e107e8a9-0356-4c51-8080-494471f9eb4b` |
 | [Computability theory](subjects/mathematical-logic/computability-theory/index.md) | `urn:uuid:f4629e80-b447-44d4-8543-92bd40b36cd7` |
+| [Computational algebraic number theory](subjects/number-theory/computational/algebraic-number-theory/index.md) | `urn:uuid:df193821-ba5e-444b-9613-610c85927e6b` |
+| [Computational number theory](subjects/number-theory/computational/index.md) | `urn:uuid:37973241-e8ba-4a2f-a597-529739204d6f` |
 | [Computational simplicial homology (finite complexes over prime fields)](subjects/topology/algebraic-topology/homology-theory/simplicial-homology/finite-prime-field-computation/index.md) | `urn:uuid:4af35b29-a93b-4113-b480-84b9d963846d` |
 | [Computational topology](subjects/topology/computational-topology/index.md) | `urn:uuid:73ef9d25-86ae-4bde-88a8-da55dc2a2fa5` |
 | [Confidence interval theory (frequentist)](subjects/statistics/mathematical-statistics/inference/estimation/confidence-intervals/index.md) | `urn:uuid:aa74905b-40b1-48a4-beaf-c67c506943c3` |
@@ -21,6 +26,8 @@ This is the authoritative path assignment for the pilot's persistent IDs. Labels
 | [Convex optimization](subjects/optimization/convex/index.md) | `urn:uuid:5b6b329f-d4f2-4806-ac40-8ad34d655843` |
 | [Differential geometry](subjects/geometry/differential-geometry/index.md) | `urn:uuid:19f1dd58-8c23-4cc2-9326-7ccee050a295` |
 | [Discrete mathematics](subjects/discrete-mathematics/index.md) | `urn:uuid:bea4592d-e519-4511-b6ad-3e51d43f04fb` |
+| [Distribution of prime numbers](subjects/number-theory/analytic/multiplicative/prime-distribution/index.md) | `urn:uuid:92c61d52-cfa1-4f69-9bf2-9c99145fc7d5` |
+| [Elementary number theory](subjects/number-theory/elementary/index.md) | `urn:uuid:f0916dc0-8e7b-4a8f-9aa7-a0cdd6651fa0` |
 | [Enumerative combinatorics](subjects/combinatorics/enumerative-combinatorics/index.md) | `urn:uuid:fb73471d-d70b-4551-8879-248eb57489d6` |
 | [Euclidean geometry](subjects/geometry/euclidean/index.md) | `urn:uuid:d2503a54-b471-49a9-b55c-86974719ea0e` |
 | [Finite group theory](subjects/algebra/group-theory/finite-groups/index.md) | `urn:uuid:3ca72e39-b958-46c1-a770-78880aaaf6b7` |
@@ -35,6 +42,7 @@ This is the authoritative path assignment for the pilot's persistent IDs. Labels
 | [History of mathematics education](subjects/history-of-mathematics/mathematics-education/index.md) | `urn:uuid:55fcdccc-6afb-4536-a076-f932dfa53dc2` |
 | [Homology theory (topology)](subjects/topology/algebraic-topology/homology-theory/index.md) | `urn:uuid:0273582d-e292-4d10-bc99-30189c735a38` |
 | [Homotopy theory (topological spaces)](subjects/topology/algebraic-topology/homotopy-theory/index.md) | `urn:uuid:3347007f-4ae3-4c1d-9b3a-f17102a0895f` |
+| [Integer congruence theory](subjects/number-theory/elementary/congruences/index.md) | `urn:uuid:a6401fad-de38-4043-b635-0aeb5fcf85c9` |
 | [Iterative solution theory for linear systems](subjects/numerical-analysis/linear-algebra/linear-systems/iterative/index.md) | `urn:uuid:a0c26630-bd74-42a2-939b-ff8d1fd0d29b` |
 | [Krylov-subspace theory for linear-system solvers](subjects/numerical-analysis/linear-algebra/linear-systems/iterative/krylov/index.md) | `urn:uuid:46269753-be23-4ec7-adc4-e2a5c01d29d3` |
 | [Least-squares estimation theory (fixed-design full-rank linear models)](subjects/statistics/mathematical-statistics/inference/estimation/point-estimation/linear-least-squares/index.md) | `urn:uuid:df2c6c73-bc6f-417b-ae79-2a7330455fb5` |
@@ -46,10 +54,14 @@ This is the authoritative path assignment for the pilot's persistent IDs. Labels
 | [Mathematical statistics](subjects/statistics/mathematical-statistics/index.md) | `urn:uuid:7d6d748a-f382-4862-bcd6-1eab3c4808c0` |
 | [Mathematics education](subjects/mathematics-education/index.md) | `urn:uuid:98d1630a-9a7d-4454-a62a-4ec39833aa96` |
 | [Model theory](subjects/mathematical-logic/model-theory/index.md) | `urn:uuid:590416d5-1953-47c1-9310-3e40f1416604` |
+| [Multiplicative number theory](subjects/number-theory/analytic/multiplicative/index.md) | `urn:uuid:0e1e4320-7491-4401-88e7-399f20a4f34a` |
+| [Number theory](subjects/number-theory/index.md) | `urn:uuid:2a6074be-7f1b-4757-854a-b61113cf910c` |
 | [Numerical analysis](subjects/numerical-analysis/index.md) | `urn:uuid:5a00d561-cb33-491e-95b5-123f6be35e6c` |
 | [Numerical linear algebra](subjects/numerical-analysis/linear-algebra/index.md) | `urn:uuid:09a7cc2c-9c83-403b-8878-ec023725dedb` |
 | [Numerical solution of linear systems](subjects/numerical-analysis/linear-algebra/linear-systems/index.md) | `urn:uuid:1e436f29-6a2e-4fdd-90f7-60b6c85624d1` |
 | [Point estimation theory](subjects/statistics/mathematical-statistics/inference/estimation/point-estimation/index.md) | `urn:uuid:d26248fa-96a1-45b7-8a99-4e77a5600f05` |
+| [Primality testing theory](subjects/number-theory/computational/primality-testing/index.md) | `urn:uuid:6f2cb4af-cae3-4956-91f9-d385910b72bf` |
+| [Prime distribution in arithmetic progressions](subjects/number-theory/analytic/multiplicative/prime-distribution/arithmetic-progressions/index.md) | `urn:uuid:f323e33c-8afa-4c25-8a58-fe8d10957b96` |
 | [Probability theory](subjects/probability/index.md) | `urn:uuid:8abb03fc-4067-4580-9b34-47a7aaee5943` |
 | [Proof theory](subjects/mathematical-logic/proof-theory/index.md) | `urn:uuid:839cf019-1089-4cf7-b2bb-e2ecd01c94cf` |
 | [Proper vertex-coloring theory (finite simple graphs)](subjects/combinatorics/graph-theory/coloring/finite-vertex-coloring/index.md) | `urn:uuid:eee0910c-24a7-431f-86f9-4bec6ef9a60f` |
@@ -85,14 +97,17 @@ This is the authoritative path assignment for the pilot's persistent IDs. Labels
 | [Geometry and topology additions](proposals/new-concepts/geometry-topology.md) | `urn:uuid:d53e7304-a343-4241-be9f-9de4b2ad913c` |
 | [Statistics addition](proposals/new-concepts/statistics.md) | `urn:uuid:140a988b-a5ac-4bd4-b922-317f55325fc8` |
 | [Numerical and optimization additions](proposals/new-concepts/numerical-optimization.md) | `urn:uuid:839a77ac-06ca-49a0-a167-d1c03a077368` |
+| [Number-theory addition](proposals/new-concepts/number-theory.md) | `urn:uuid:b3592120-494d-41c9-a967-9dd0c8e653f0` |
 
-The scoped navigation collections `subjects`, `facets` and `objects` resolve to their index pages. They do not create mathematical superclass assertions. The local scheme key is `grwtsk-mathematics`; its vocabulary release is `0.6-pilot`, an unpublished candidate independent of schema versions 0.1.0 and 0.1.1. The previous `0.1-pilot` registry and mappings remain pinned at math `cce5f855028dfc581917a40a222e8209ac9bd8c3`; no old identifier is reused. Candidate `0.2-pilot` remains pinned at math `47b87581675315cd4cecfec5602df0c7db9b0c61`.
+The scoped navigation collections `subjects`, `facets` and `objects` resolve to their index pages. They do not create mathematical superclass assertions. The local scheme key is `grwtsk-mathematics`; its vocabulary release is `0.7-pilot`, an unpublished candidate independent of schema versions 0.1.0 and 0.1.1. The previous `0.1-pilot` registry and mappings remain pinned at math `cce5f855028dfc581917a40a222e8209ac9bd8c3`; no old identifier is reused. Candidate `0.2-pilot` remains pinned at math `47b87581675315cd4cecfec5602df0c7db9b0c61`.
 
 Candidate `0.3-pilot` remains pinned at math `ae9b637989a78a4360ef95e1fc4ead44ee3f6f8a`.
 
 Candidate `0.4-pilot` remains pinned at math `814971e0bc4fd54802423eec4beb6a0b890a8cb4` and was source-integrated at `f3d3f755ac0bb40732f9580a3cb30fecdcd26bcd` without changing proposed statuses.
 
 Candidate `0.5-pilot` remains pinned at math `262daeee89add65f0d7997f338f9ca45bcac718e`.
+
+Candidate `0.6-pilot` remains pinned at math `db30ea5a07fc4d04ef490437e64c108e3a2c4802`.
 
 ## Historical path assignments
 
