@@ -1,5 +1,5 @@
 # Authored mathematical verification specification; not an execution receipt.
-# New finite-classification source is SOURCE_ONLY / NOT_ELABORATED.
+# Source-bound validation and acceptance evidence is retained externally.
 # This specification grants no execution permission and releases no retained hold.
 schema = "grwtsk-math-replay-target-v1"
 id = "finite-observation-support-v0.1"
@@ -9,7 +9,7 @@ formalization_assistance = "AI-assisted source development"
 lean_toolchain_file = "lean-toolchain"
 lean_toolchain = "leanprover/lean4:v4.33.0"
 lake_manifest_file = "lake-manifest.json"
-candidate_status = "SOURCE_ONLY / NOT_ELABORATED"
+candidate_status = "STATIC_SPECIFICATION / VALIDATION_EXTERNAL"
 
 [scope]
 kind = "isolated-mathematical-replay-target"
@@ -44,7 +44,7 @@ expected_type_binding = "Before acceptance, the external binding must select exa
 type_representation = "The external inspection must identify its canonical type representation and printer configuration; source spellings and declaration names alone do not establish type identity."
 
 [build]
-mode = "future separately authorized direct Lean elaboration of every listed source file"
+mode = "separately authorized direct Lean elaboration of every listed source file"
 required_compiler_options = ["-DwarningAsError=true"]
 require_exact_direct_imports_per_module = true
 require_compiler_toolchain_match = true
@@ -101,7 +101,7 @@ generated_constructors_recursors_and_projections_are_not_separate_inventory_entr
 generated_dependencies_remain_in_transitive_trust_inspection = true
 
 [trust]
-# Required future acceptance policy, not an observed audit result.
+# Required acceptance policy, not an observed audit result.
 allowed_axioms = []
 reject_sorry_ax = true
 reject_native_decide = true
@@ -757,7 +757,7 @@ requirements = [
   "If an external finite-table consumer is evaluated, bind its profile, source and shared vector bytes separately; vector agreement is bounded conformance only.",
 ]
 nonclaims = [
-  "No new elaboration, kernel replay or trust audit is reported by this source-only target.",
+  "This static target reports no observed elaboration, kernel replay or trust audit; source-bound evidence is retained externally.",
   "No source or row identity authenticates itself.",
   "The inventory alone does not prove coverage of an external trace model.",
   "The model_mismatch result is not a parser failure, missing input or unavailable execution result.",
