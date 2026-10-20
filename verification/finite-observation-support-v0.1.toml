@@ -34,14 +34,22 @@ required_external_identities = [
   "repository commit",
   "repository tree",
   "this target manifest blob",
+  "authored exact-type expectation blob and exact byte digest",
   "each selected module source blob",
   "lean-toolchain blob",
   "lake-manifest.json blob",
   "Lean compiler and Init distribution identity",
   "shared vector artifact blob and exact byte digest",
 ]
-expected_type_binding = "Before acceptance, the external binding must select exact elaborated types, universe parameters, declaration kinds and owner modules from the bound sources; inspection must compare against that binding."
-type_representation = "The external inspection must identify its canonical type representation and printer configuration; source spellings and declaration names alone do not establish type identity."
+expected_type_binding = "Before actual-type comparison, bind the authored expectation file and its exact bytes. Separately elaborate its complete type terms, then compare the selected declarations' full types, ordered universe parameters, kernel kinds and owner modules against those expectations. Do not derive expectations from observed declaration types."
+type_representation = "lean4.33-expr-alpha-json/1: ignore bound-variable spelling and metadata nodes; map declared universe parameters to ordered indices; retain all other Expr, Level and Name constructors. No reduction, definitional-equality substitution, or reported-string-only comparison."
+
+[exact_type_expectations]
+path = "verification/finite-observation-type-expectations-v0.1.toml"
+schema = "grwtsk-exact-declaration-expectations-v1"
+id = "finite-observation-type-expectations-v0.1"
+canonical_expression_grammar = "lean4.33-expr-alpha-json/1"
+required_count = 78
 
 [build]
 mode = "separately authorized direct Lean elaboration of every listed source file"
@@ -747,10 +755,11 @@ description = "Empty listed compatibility cannot establish support or refutation
 
 [acceptance]
 requirements = [
-  "Bind this target and both source modules to one exact commit, tree and blob inventory.",
+  "Bind this target, both source modules and the authored exact-type expectations to one exact commit, tree and blob inventory.",
   "Obtain separate scoped authorization before any native validation; the manifest itself is not authorization.",
   "Elaborate both selected files with the pinned compiler and required options.",
-  "Resolve every selected declaration at its exact owning module and compare its full type against the external source binding.",
+  "Bind the authored expectation bytes before actual-type comparison; independently elaborate all 78 complete expected type terms without obtaining them from observed declaration types.",
+  "Resolve every selected declaration at its exact owning module; compare its full type expression, ordered universes and kernel kind against the bound authored expectation. Establish source forms from bound syntax and structure metadata, not kernel kind alone.",
   "Audit transitive trust for every selected theorem; an unavailable result is not an empty axiom set.",
   "Validate all finite controls as their stated mathematical propositions, not merely as named passing records.",
   "Preserve the distinction between exact listed semantics and coverage-dependent ambient conclusions.",
@@ -758,6 +767,8 @@ requirements = [
 ]
 nonclaims = [
   "This static target reports no observed elaboration, kernel replay or trust audit; source-bound evidence is retained externally.",
+  "Exact declaration types do not fix defining bodies; reviewed mathematical meanings, source identities and transitive trust remain required.",
+  "Authored expectations do not assert independent professional review, human approval, execution authority or external acceptance.",
   "No source or row identity authenticates itself.",
   "The inventory alone does not prove coverage of an external trace model.",
   "The model_mismatch result is not a parser failure, missing input or unavailable execution result.",
