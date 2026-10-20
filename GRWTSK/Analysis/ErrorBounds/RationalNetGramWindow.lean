@@ -222,7 +222,6 @@ theorem no_fixed_negative_of_net_window
   · exact initialEstimate
   · intro j hj
     simpa only [sub_eq_add_neg] using add_le_add (netEstimate j hj) (correctionEstimate j hj)
-  · exact correctionEstimate
   · exact tailEstimate
   · exact negative
   · exact margin
