@@ -124,7 +124,11 @@ theorem endpoint_quotient_error (x h : ℝ) (hh : 0 < h) (ha : 1 < x - h)
         (logPower (x + h) (c + 1) - B) - 2 * (logPower x (c + 1) - X) +
           (logPower (x - h) (c + 1) - A) := by ring
     rw [he]
-    have htri := (norm_add_le _ _).trans (add_le_add_right (norm_sub_le _ _) _)
+    have htri := (norm_add_le
+      ((logPower (x + h) (c + 1) - B) - 2 * (logPower x (c + 1) - X))
+      (logPower (x - h) (c + 1) - A)).trans
+        (add_le_add_right (norm_sub_le (logPower (x + h) (c + 1) - B)
+          (2 * (logPower x (c + 1) - X))) _)
     rw [norm_mul] at htri
     norm_num only [Complex.norm_ofNat] at htri
     linarith
