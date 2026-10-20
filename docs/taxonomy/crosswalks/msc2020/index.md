@@ -2,7 +2,7 @@
 schema_version: 0.1.0
 id: urn:uuid:4ebb4869-baba-42d6-8801-85f7981233ff
 record_kind: compound_crosswalk
-source_scheme: {id: grwtsk-mathematics, edition: 0.3-pilot}
+source_scheme: {id: grwtsk-mathematics, edition: 0.4-pilot}
 source_identifiers: ['urn:uuid:6f8afa7d-458b-4dc9-8bff-230582f3a0c7']
 target_scheme: {id: MSC, edition: '2020', source_key: S1}
 target_expression: {operator: coIndex, identifiers: ['47A10', '60J10']}
@@ -12,7 +12,7 @@ origin: direct
 status: {editorial: proposed, review: unassessed, mathematical_novelty: not_claimed, proof: not_applicable, attribution: source_reference_preserved, operational_permission: not_conferred}
 sources: [{key: S1, locator: 'Official PDF pages 125 and 162, one-based'}, {key: L1, locator: 'Operator spectral context'}, {key: L2, locator: 'Finite-chain and reversibility context'}]
 rights: {local_prose: MIT, source_reuse: reference_only, bulk_import: blocked_pending_disposition}
-revision_history: [{"version": 0.1, "date": "2026-10-19", "change": "Initial compound candidate; no exact-match assertion."}, {"version": "0.2-pilot", "date": "2026-10-19", "change": "Explicit local source-edition update only; source concept scope, target edition and mapping relation unchanged; independent review remains pending."}, {"version": "0.3-pilot", "date": "2026-10-19", "change": "Local source vocabulary edition only; mapping identity, external targets, relation and proposed state preserved."}]
+revision_history: [{"version": 0.1, "date": "2026-10-19", "change": "Initial compound candidate; no exact-match assertion."}, {"version": "0.2-pilot", "date": "2026-10-19", "change": "Explicit local source-edition update only; source concept scope, target edition and mapping relation unchanged; independent review remains pending."}, {"version": "0.3-pilot", "date": "2026-10-19", "change": "Local source vocabulary edition only; mapping identity, external targets, relation and proposed state preserved."}, {"version": "0.4-pilot", "date": "2026-10-19", "change": "Update local source vocabulary edition only; retain external target, relation, proposed status and earlier versions."}]
 proposal_refs: ['urn:uuid:dd591907-4562-43ba-bb64-aff410d76b73']
 decision_refs: [D02, D03, D04]
 ---
@@ -37,3 +37,5 @@ Initial status is proposed/unassessed. Acceptance requires code/edition validati
 Historical edition note: the local source edition advanced to `0.2-pilot` at the preceding revision. The prior `0.1-pilot` payload remains at math `cce5f855028dfc581917a40a222e8209ac9bd8c3`; this update neither validates the external target nor transports a review approval.
 
 Candidate 0.3 retains the preceding mapping at math `47b87581675315cd4cecfec5602df0c7db9b0c61`; the source-vocabulary change is reviewable history, not a renewed semantic or rights approval.
+
+Candidate 0.4 rebinds the local source edition from 0.3-pilot. The preceding exact payload remains at math `ae9b637989a78a4360ef95e1fc4ead44ee3f6f8a`. This requires new review; no external target, direction, relation or compound expression changes, and no prior approval is inferred.
