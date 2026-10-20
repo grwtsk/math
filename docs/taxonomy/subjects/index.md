@@ -19,3 +19,5 @@ Candidate 0.6 opens [numerical analysis](numerical-analysis/index.md) and [mathe
 Candidate 0.7 opens [number theory](number-theory/index.md). Its elementary, analytic, algebraic and computational branches retain different questions and overlapping scope. The algebraic and computational routes share one computational-algebraic-number-theory page.
 
 Candidate 0.8 opens [differential equations](differential-equations/index.md), [dynamical systems](dynamical-systems/index.md) and [mechanics](mechanics/index.md). Two shared model-class records connect the equation, smooth-evolution and Hamiltonian routes without identifying the broader disciplines.
+
+Candidate 0.9 opens [information theory](information-theory/index.md) and [error-correcting coding theory](error-correcting-codes/index.md). Compression and channel tasks remain distinct; the block and algebraic routes share one finite-field linear-code page.
