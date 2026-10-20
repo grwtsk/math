@@ -1,0 +1,473 @@
+{
+  "schema": "grwtsk.finite-observation-vectors/1",
+  "profile_id": "noe.finite-observation-support/1",
+  "scope": "supplied-finite-model",
+  "author": "grwtsk contributors; formulation with AI assistance",
+  "input_encoding": {
+    "format": "JSON",
+    "utf8": true,
+    "sort_keys": true,
+    "ensure_ascii": true,
+    "separators": [
+      ",",
+      ":"
+    ],
+    "trailing_newline": false
+  },
+  "query_construction": {
+    "schema": "grwtsk.finite-observation-query/1",
+    "model_sha256": "SHA-256 of the serialized model bytes",
+    "claim_id": "exact model.claim_id",
+    "view": "case.view"
+  },
+  "interpretation": "Static authored examples. Expected outcomes are relative to the listed model. Fixture agreement is not a general refinement proof, an observed Lean execution, or evidence of real-world coverage.",
+  "cases": [
+    {
+      "id": "supported-single",
+      "model": {
+        "schema": "grwtsk.finite-observation-model/1",
+        "model_id": "supported-single",
+        "revision": "synthetic-1",
+        "claim_id": "abstract-claim",
+        "traces": [
+          {
+            "trace_id": "yes",
+            "admissible": true,
+            "view": "seen",
+            "claim": true
+          }
+        ]
+      },
+      "view": "seen",
+      "expected": {
+        "status": "supported",
+        "witness_ids": {
+          "claim_true": [
+            "yes"
+          ],
+          "claim_false": []
+        }
+      },
+      "note": "Nonempty uniformly positive fiber."
+    },
+    {
+      "id": "refuted-single",
+      "model": {
+        "schema": "grwtsk.finite-observation-model/1",
+        "model_id": "refuted-single",
+        "revision": "synthetic-1",
+        "claim_id": "abstract-claim",
+        "traces": [
+          {
+            "trace_id": "no",
+            "admissible": true,
+            "view": "seen",
+            "claim": false
+          }
+        ]
+      },
+      "view": "seen",
+      "expected": {
+        "status": "refuted",
+        "witness_ids": {
+          "claim_true": [],
+          "claim_false": [
+            "no"
+          ]
+        }
+      },
+      "note": "Nonempty uniformly negative fiber."
+    },
+    {
+      "id": "ambiguous-shared-view",
+      "model": {
+        "schema": "grwtsk.finite-observation-model/1",
+        "model_id": "ambiguous-shared-view",
+        "revision": "synthetic-1",
+        "claim_id": "abstract-claim",
+        "traces": [
+          {
+            "trace_id": "yes",
+            "admissible": true,
+            "view": "seen",
+            "claim": true
+          },
+          {
+            "trace_id": "no",
+            "admissible": true,
+            "view": "seen",
+            "claim": false
+          }
+        ]
+      },
+      "view": "seen",
+      "expected": {
+        "status": "ambiguous",
+        "witness_ids": {
+          "claim_true": [
+            "yes"
+          ],
+          "claim_false": [
+            "no"
+          ]
+        }
+      },
+      "note": "Both outcomes are compatible with the same observation."
+    },
+    {
+      "id": "unmatched-view",
+      "model": {
+        "schema": "grwtsk.finite-observation-model/1",
+        "model_id": "unmatched-view",
+        "revision": "synthetic-1",
+        "claim_id": "abstract-claim",
+        "traces": [
+          {
+            "trace_id": "else",
+            "admissible": true,
+            "view": "else",
+            "claim": true
+          }
+        ]
+      },
+      "view": "seen",
+      "expected": {
+        "status": "model_mismatch",
+        "witness_ids": {
+          "claim_true": [],
+          "claim_false": []
+        }
+      },
+      "note": "A nonempty model may have an empty queried fiber."
+    },
+    {
+      "id": "empty-inventory",
+      "model": {
+        "schema": "grwtsk.finite-observation-model/1",
+        "model_id": "empty-inventory",
+        "revision": "synthetic-1",
+        "claim_id": "abstract-claim",
+        "traces": []
+      },
+      "view": "seen",
+      "expected": {
+        "status": "model_mismatch",
+        "witness_ids": {
+          "claim_true": [],
+          "claim_false": []
+        }
+      },
+      "note": "An empty listed fiber supports neither side."
+    },
+    {
+      "id": "inadmissible-contrary",
+      "model": {
+        "schema": "grwtsk.finite-observation-model/1",
+        "model_id": "inadmissible-contrary",
+        "revision": "synthetic-1",
+        "claim_id": "abstract-claim",
+        "traces": [
+          {
+            "trace_id": "yes",
+            "admissible": true,
+            "view": "seen",
+            "claim": true
+          },
+          {
+            "trace_id": "excluded-no",
+            "admissible": false,
+            "view": "seen",
+            "claim": false
+          }
+        ]
+      },
+      "view": "seen",
+      "expected": {
+        "status": "supported",
+        "witness_ids": {
+          "claim_true": [
+            "yes"
+          ],
+          "claim_false": []
+        }
+      },
+      "note": "Admissibility is supplied by the model, not established by classification."
+    },
+    {
+      "id": "other-view-contrary",
+      "model": {
+        "schema": "grwtsk.finite-observation-model/1",
+        "model_id": "other-view-contrary",
+        "revision": "synthetic-1",
+        "claim_id": "abstract-claim",
+        "traces": [
+          {
+            "trace_id": "yes",
+            "admissible": true,
+            "view": "seen",
+            "claim": true
+          },
+          {
+            "trace_id": "else-no",
+            "admissible": true,
+            "view": "else",
+            "claim": false
+          }
+        ]
+      },
+      "view": "seen",
+      "expected": {
+        "status": "supported",
+        "witness_ids": {
+          "claim_true": [
+            "yes"
+          ],
+          "claim_false": []
+        }
+      },
+      "note": "A different exact view does not enter the queried fiber."
+    },
+    {
+      "id": "repeated-semantics-distinct-ids",
+      "model": {
+        "schema": "grwtsk.finite-observation-model/1",
+        "model_id": "repeated-semantics-distinct-ids",
+        "revision": "synthetic-1",
+        "claim_id": "abstract-claim",
+        "traces": [
+          {
+            "trace_id": "yes-1",
+            "admissible": true,
+            "view": "seen",
+            "claim": true
+          },
+          {
+            "trace_id": "yes-2",
+            "admissible": true,
+            "view": "seen",
+            "claim": true
+          }
+        ]
+      },
+      "view": "seen",
+      "expected": {
+        "status": "supported",
+        "witness_ids": {
+          "claim_true": [
+            "yes-1",
+            "yes-2"
+          ],
+          "claim_false": []
+        }
+      },
+      "note": "Repeated row semantics with distinct IDs preserve the classification."
+    },
+    {
+      "id": "unicode-composed",
+      "model": {
+        "schema": "grwtsk.finite-observation-model/1",
+        "model_id": "unicode-composed",
+        "revision": "synthetic-1",
+        "claim_id": "abstract-claim",
+        "traces": [
+          {
+            "trace_id": "composed",
+            "admissible": true,
+            "view": "é",
+            "claim": true
+          },
+          {
+            "trace_id": "decomposed",
+            "admissible": true,
+            "view": "é",
+            "claim": false
+          }
+        ]
+      },
+      "view": "é",
+      "expected": {
+        "status": "supported",
+        "witness_ids": {
+          "claim_true": [
+            "composed"
+          ],
+          "claim_false": []
+        }
+      },
+      "note": "Tokens are compared exactly; no Unicode normalization is performed."
+    },
+    {
+      "id": "unicode-decomposed",
+      "model": {
+        "schema": "grwtsk.finite-observation-model/1",
+        "model_id": "unicode-decomposed",
+        "revision": "synthetic-1",
+        "claim_id": "abstract-claim",
+        "traces": [
+          {
+            "trace_id": "composed",
+            "admissible": true,
+            "view": "é",
+            "claim": true
+          },
+          {
+            "trace_id": "decomposed",
+            "admissible": true,
+            "view": "é",
+            "claim": false
+          }
+        ]
+      },
+      "view": "é",
+      "expected": {
+        "status": "refuted",
+        "witness_ids": {
+          "claim_true": [],
+          "claim_false": [
+            "decomposed"
+          ]
+        }
+      },
+      "note": "The decomposed token selects the other exact fiber."
+    },
+    {
+      "id": "omitted-counterexample",
+      "model": {
+        "schema": "grwtsk.finite-observation-model/1",
+        "model_id": "omitted-counterexample",
+        "revision": "synthetic-1",
+        "claim_id": "abstract-claim",
+        "traces": [
+          {
+            "trace_id": "yes",
+            "admissible": true,
+            "view": "seen",
+            "claim": true
+          }
+        ]
+      },
+      "view": "seen",
+      "expected": {
+        "status": "supported",
+        "witness_ids": {
+          "claim_true": [
+            "yes"
+          ],
+          "claim_false": []
+        }
+      },
+      "note": "Listed support alone says nothing about a missing ambient contrary trace."
+    },
+    {
+      "id": "counterexample-included",
+      "model": {
+        "schema": "grwtsk.finite-observation-model/1",
+        "model_id": "counterexample-included",
+        "revision": "synthetic-1",
+        "claim_id": "abstract-claim",
+        "traces": [
+          {
+            "trace_id": "yes",
+            "admissible": true,
+            "view": "seen",
+            "claim": true
+          },
+          {
+            "trace_id": "previously-omitted-no",
+            "admissible": true,
+            "view": "seen",
+            "claim": false
+          }
+        ]
+      },
+      "view": "seen",
+      "expected": {
+        "status": "ambiguous",
+        "witness_ids": {
+          "claim_true": [
+            "yes"
+          ],
+          "claim_false": [
+            "previously-omitted-no"
+          ]
+        }
+      },
+      "note": "Adding the omitted compatible counterexample changes the result."
+    },
+    {
+      "id": "reordered-witnesses",
+      "model": {
+        "schema": "grwtsk.finite-observation-model/1",
+        "model_id": "reordered-witnesses",
+        "revision": "synthetic-1",
+        "claim_id": "abstract-claim",
+        "traces": [
+          {
+            "trace_id": "z",
+            "admissible": true,
+            "view": "seen",
+            "claim": true
+          },
+          {
+            "trace_id": "no",
+            "admissible": true,
+            "view": "seen",
+            "claim": false
+          },
+          {
+            "trace_id": "a",
+            "admissible": true,
+            "view": "seen",
+            "claim": true
+          }
+        ]
+      },
+      "view": "seen",
+      "expected": {
+        "status": "ambiguous",
+        "witness_ids": {
+          "claim_true": [
+            "z",
+            "a"
+          ],
+          "claim_false": [
+            "no"
+          ]
+        }
+      },
+      "note": "Status is order-invariant; returned witness order follows the supplied list."
+    },
+    {
+      "id": "all-inadmissible",
+      "model": {
+        "schema": "grwtsk.finite-observation-model/1",
+        "model_id": "all-inadmissible",
+        "revision": "synthetic-1",
+        "claim_id": "abstract-claim",
+        "traces": [
+          {
+            "trace_id": "excluded-yes",
+            "admissible": false,
+            "view": "seen",
+            "claim": true
+          },
+          {
+            "trace_id": "excluded-no",
+            "admissible": false,
+            "view": "seen",
+            "claim": false
+          }
+        ]
+      },
+      "view": "seen",
+      "expected": {
+        "status": "model_mismatch",
+        "witness_ids": {
+          "claim_true": [],
+          "claim_false": []
+        }
+      },
+      "note": "A populated list can still have no admissible compatible trace."
+    }
+  ]
+}

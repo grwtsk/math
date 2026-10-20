@@ -14,7 +14,7 @@ For institutional reviewers, the decisive question is: *Which judgment has actua
 
 The treatment is independent of a database, cloud provider, model vendor, event bus, identity service, or universal registry. Mathematical objects below specify meanings and obligations. An eventual implementation must exhibit the required capabilities and correspondence.
 
-The running motivation includes patient and clinician agency, confidentiality, worker safety, accessible communication, records, and financial integrity. Those domains supply independently interpreted constraints. This text does not decide the applicability of a law, establish a medical standard, give UCSF or a vendor new authority, or turn a hierarchy of human needs into a score for a person's rights.
+The running motivation includes patient and clinician agency, confidentiality, worker safety, accessible communication, records, and financial integrity. Those domains supply independently interpreted constraints. This text does not decide the applicability of a law, establish a medical standard, give an institution or a vendor new authority, or turn a hierarchy of human needs into a score for a person's rights.
 
 ### What is formalized here
 
@@ -29,6 +29,10 @@ Three isolated Lean modules provide new proofs:
 They import only `Init`. Existing repository sources supply complementary interfaces for grounded inference, exact certificate interpretation, revision, dependency correction, composition, and finite budgets. Existing-source references in this exposition identify the inspected base **31c28b0e3729cc3c1e708c7d70144b3598a1b25c**; they do not assert a fresh replay of those modules.
 
 Statements labeled **written lemma** are mathematical arguments in this exposition, not additional Lean declarations. The [static verification target](../../../../verification/ethics-mechanistic-reasoning-v0.1.toml) defines the new formal acceptance scope. Execution records and application evidence remain external to this repository.
+
+### Finite observation specialization
+
+The [finite observation companion](finite-observation-classification.md) gives an executable four-outcome specification and makes the coverage premise explicit. Its new Lean source is **source-only / not elaborated**. The separate [static target](../../../../verification/finite-observation-support-v0.1.toml) and authored fixtures do not extend the historical verification result for the three modules above.
 
 ## 2. Capsules form a typed, versioned graph
 
