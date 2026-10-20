@@ -58,7 +58,7 @@ disposition = "NEW_SOURCE_DRAFT"
 [[modules]]
 name = "GRWTSK.Analysis.Complex.TentKernelEnclosure"
 path = "GRWTSK/Analysis/Complex/TentKernelEnclosure.lean"
-source_blob = "fa7d5899b5a4b2a2aba531bb25b1a90721eee574"
+source_blob = "a11c25d44bf3d4c8c38112a146f295e7df62caec"
 disposition = "NEW_SOURCE_DRAFT"
 
 [[modules]]
