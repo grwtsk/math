@@ -1,8 +1,8 @@
-# Mathematical taxonomy — candidate 0.4
+# Mathematical taxonomy — candidate 0.5
 
 **DRAFT / INCOMPLETE / NOT INDEPENDENTLY REVIEWED.** This locally maintained vocabulary is not an official standard or an endorsement by AMS, zbMATH, the Library of Congress, ISO, NISO or W3C. Its proposed organization does not confer mathematical proof or operational permission.
 
-This candidate extends math `ae9b637989a78a4360ef95e1fc4ead44ee3f6f8a`, originally inspected against `eb3124bd05f0f74aaa709ca36a855539f722fb92`. It contains 39 subject concepts, two object concepts, three candidate crosswalks, five editorial proposals and one source association. These are authored records, not a completed classification of mathematics. No candidate relationship is asserted in a production graph.
+This candidate extends integrated main `f3d3f755ac0bb40732f9580a3cb30fecdcd26bcd`, originally inspected against `eb3124bd05f0f74aaa709ca36a855539f722fb92`. It contains 50 subject concepts, two object concepts, three candidate crosswalks, six editorial proposals and one source association. These are authored records, not a completed classification of mathematics. No candidate relationship is asserted in a production graph.
 
 Start with [subjects](subjects/index.md), the [alphabetical and identifier registry](registry.md), [facets](facets/index.md), or [external-code entry points](crosswalks/index.md). Inspect [scope](scope.md), [the source audit](audit.md), [the application profile](schema.md), [standards and rights](standards/index.md), [design decisions](decisions/index.md), [coverage](coverage/index.md), [proposals](proposals/index.md), [source associations](associations/index.md), and [validation requirements](validation.md).
 
@@ -17,3 +17,5 @@ The [history and education branch addition](proposals/new-concepts/history-educa
 Candidate 0.3 added fifteen original descriptions in [logic, algebra and discrete subjects](proposals/new-concepts/logic-algebra-discrete.md), bringing that historical candidate to 29 proposed concepts. Prior concepts are byte-preserved. The [coverage statement](coverage/index.md) retains the complete external-baseline and independent-review gaps.
 
 Candidate 0.4 adds twelve original [geometry and topology subjects](proposals/new-concepts/geometry-topology.md), reaching 41 proposed concepts. Computational simplicial homology has a second route through computational topology. All earlier concept pages and historical mappings remain available at their exact revisions.
+
+Candidate 0.5 adds eleven [statistics subjects](proposals/new-concepts/statistics.md), reaching 52 proposed concepts. Its restricted least-squares subject has point-estimation and linear-regression parents, one canonical home and explicit model assumptions. The earlier source-only merge does not supply independent acceptance.
