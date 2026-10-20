@@ -1,8 +1,8 @@
-# Mathematical taxonomy — candidate 0.9
+# Mathematical taxonomy — candidate 0.10
 
 **DRAFT / INCOMPLETE / NOT INDEPENDENTLY REVIEWED.** This locally maintained vocabulary is not an official standard or an endorsement by AMS, zbMATH, the Library of Congress, ISO, NISO or W3C. Its proposed organization does not confer mathematical proof or operational permission.
 
-This candidate extends `5763524a941479f4fa8b0229749082cbc7582635`, retaining integrated baseline `f3d3f755ac0bb40732f9580a3cb30fecdcd26bcd` and source-library inspection `eb3124bd05f0f74aaa709ca36a855539f722fb92`. It contains 93 subject concepts, two object concepts, three candidate crosswalks, ten editorial proposals and one source association. These are authored records, not a completed classification of mathematics. No candidate relationship is asserted in a production graph.
+This candidate extends `900c2ed33885ad46cc55eabc176fab8cd2b2c0cb`, retaining integrated baseline `f3d3f755ac0bb40732f9580a3cb30fecdcd26bcd` and source-library inspection `eb3124bd05f0f74aaa709ca36a855539f722fb92`. It contains 103 subject concepts, two object concepts, three candidate crosswalks, eleven editorial proposals and one source association. These are authored records, not a completed classification of mathematics. No candidate relationship is asserted in a production graph.
 
 Start with [subjects](subjects/index.md), the [alphabetical and identifier registry](registry.md), [facets](facets/index.md), or [external-code entry points](crosswalks/index.md). Inspect [scope](scope.md), [the source audit](audit.md), [the application profile](schema.md), [standards and rights](standards/index.md), [design decisions](decisions/index.md), [coverage](coverage/index.md), [proposals](proposals/index.md), [source associations](associations/index.md), and [validation requirements](validation.md).
 
@@ -27,3 +27,5 @@ Candidate 0.7 adds twelve [number-theory subjects](subjects/number-theory/index.
 Candidate 0.8 adds twelve [equation, dynamics and mechanics subjects](proposals/new-concepts/equations-dynamics-mechanics.md), reaching 85 proposed concepts. Autonomous linear systems and restricted Hamiltonian oscillators each have two parents and one canonical page; modeling and existence assumptions are retained.
 
 Candidate 0.9 adds ten [information and coding subjects](proposals/new-concepts/information-coding.md), reaching 95 proposed concepts. One finite-field linear-code record has block-code and algebraic parents; compression, unique decoding, noise correction and authentication remain distinct.
+
+Candidate 0.10 adds ten [algebraic-structure subjects](proposals/new-concepts/algebra-structures.md), reaching 105 proposed concepts. Ring conventions, scalar fields and module sides remain explicit; vector spaces and modules over commutative rings each have two parents and one canonical page. Algebra gains navigation only; its definition and scope are unchanged.

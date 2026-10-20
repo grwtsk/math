@@ -23,3 +23,5 @@ The [statistics addition](new-concepts/statistics.md) proposes eleven statistica
 [Equation, dynamics and mechanics addition](new-concepts/equations-dynamics-mechanics.md): twelve original records, eleven proposed edges and two canonical shared model classes; no source-namespace collision is resolved.
 
 [Information and coding addition](new-concepts/information-coding.md) proposes ten established subjects and a shared finite-field linear-code record, retaining independent-review and rights gates.
+
+[Algebraic structures](new-concepts/algebra-structures.md) proposes ten established subjects and two shared structural scopes, retaining convention and placement alternatives.

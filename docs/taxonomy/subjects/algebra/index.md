@@ -14,7 +14,7 @@ sources: [{"key": "L7", "locator": "Author-hosted HTML, title page 2026-08-04; g
 warrant: {"literary": "Established subject terminology supported by the cited primary author/publisher sources; scope and placement need independent review.", "user": "Find the subject independently of local implementations and storage names.", "organizational": "Keep discipline, object, method, source occurrence and proof status distinct."}
 status: {"editorial": "proposed", "mathematical_novelty": "not_claimed", "proof": "not_applicable", "attribution": "local_editorial_text", "operational_permission": "not_conferred"}
 rights: {"local_prose": "MIT", "source_reuse": "reference_only"}
-revision_history: [{"version": "0.3-pilot", "date": "2026-10-19", "change": "Original local subject record; proposed placement; no external dataset import."}]
+revision_history: [{"version": "0.3-pilot", "date": "2026-10-19", "change": "Original local subject record; proposed placement; no external dataset import."}, {"version": "0.10-pilot", "date": "2026-10-20", "change": "Expanded browsing only; original definition, scope, identity, labels and status preserved."}]
 proposal_refs: ["urn:uuid:4411692c-0d6e-47b0-a68b-67fffcca577d"]
 decision_refs: ["D01", "D03", "D04", "D07"]
 ---
@@ -32,7 +32,7 @@ Groups, rings, fields and modules are representative settings, not an exhaustive
 
 ## Browse
 
-Selected division criterion: Principal algebraic structure. Browse [Group theory](group-theory/index.md).
+Selected division criterion: Principal algebraic structure. Browse [Group theory](group-theory/index.md), [Linear algebra](linear-algebra/index.md), [Ring theory](rings/index.md), [Module theory](modules/index.md) and [Field theory](fields/index.md). These subjects overlap; this is not a disjoint partition. The [algebra-structures proposal](../../proposals/new-concepts/algebra-structures.md) records the new proposed placements.
 
 ## Example and boundary
 
