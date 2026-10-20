@@ -14,7 +14,7 @@ sources: [{key: L2, locator: 'Finite-chain introduction and countable-state disc
 warrant: {literary: 'Established Markov-chain terminology with explicit convention.', user: 'Avoid ambiguity between discrete and continuous time.', organizational: 'Do not infer an exact MSC match from a bare label.'}
 status: {editorial: proposed, mathematical_novelty: not_claimed, proof: not_applicable, attribution: local_editorial_text, operational_permission: not_conferred}
 rights: {local_prose: MIT, source_reuse: reference_only}
-revision_history: [{version: 0.1, date: '2026-10-19', change: 'Initial time- and state-qualified scope.'}]
+revision_history: [{version: 0.1, date: '2026-10-19', change: 'Initial time- and state-qualified scope.'}, {version: '0.12-pilot', date: '2026-10-20', change: 'Add lattice-random-walk browsing; existing definition, scope, parent and navigation home retained.'}]
 proposal_refs: []
 decision_refs: [D01, D03, D04]
 ---
@@ -30,7 +30,7 @@ Theory of time-homogeneous discrete-time stochastic processes on finite or count
 
 This explicit local scope excludes continuous-time chains and general-state-space processes. Other conventions for the unqualified term must be investigated before aliases are accepted. A classification reference cannot remove these distinctions.
 
-Selected child division criterion: additional state-space and transition-law restrictions. Browse [finite reversible Markov chains](finite-reversible/index.md). The proposed semantic parent is [probability theory](../index.md).
+Selected child division criterion: additional state-space and transition-law restrictions. Browse [finite reversible Markov chains](finite-reversible/index.md) and [iid lattice random walks](lattice-random-walks/index.md). The proposed semantic parent is [probability theory](../index.md).
 
 ## Sources
 

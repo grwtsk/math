@@ -14,7 +14,7 @@ sources: [{key: L2, locator: 'Representative stochastic-process literature, not 
 warrant: {literary: 'Established mathematical probability usage.', user: 'An independent entry point not restricted to current source contents.', organizational: 'Separate probability subject identity from a combined probability/statistics folder.'}
 status: {editorial: proposed, mathematical_novelty: not_claimed, proof: not_applicable, attribution: local_editorial_text, operational_permission: not_conferred}
 rights: {local_prose: MIT, source_reuse: reference_only}
-revision_history: [{version: 0.1, date: '2026-10-19', change: 'Initial draft; broad-field literature review incomplete.'}]
+revision_history: [{version: 0.1, date: '2026-10-19', change: 'Initial draft; broad-field literature review incomplete.'}, {version: '0.12-pilot', date: '2026-10-20', change: 'Add separate limit-task and process-family browsing; clarify incomplete coverage without changing the definition.'}]
 proposal_refs: []
 decision_refs: [D01, D03, D04]
 ---
@@ -28,9 +28,9 @@ The mathematical study of probabilistic models, random quantities and their dist
 
 ## Scope
 
-Stochastic processes are included. Statistical inference is not simply a synonym for this subject, even when a bibliographic range or source directory combines them. The Markov branch below is a pilot, not complete probability coverage.
+Stochastic processes are included. Statistical inference is not simply a synonym for this subject, even when a bibliographic range or source directory combines them. The limit and process branches below remain a pilot, not complete probability coverage.
 
-Selected child division criterion: class of probabilistic model. Browse [discrete-time Markov chains](markov-chains/index.md). Broader parentage above this navigation home remains unassessed. The [LCC outline-range candidate](../../crosswalks/lcc/index.md) illustrates a broader bibliographic category without merging probability and statistics.
+Browse by mathematical task: [probability limit theory](limit-theory/index.md). Browse by class of probabilistic model: [stochastic process theory](stochastic-processes/index.md) and the retained [discrete-time Markov chains](markov-chains/index.md). These are separate browsing groups, not a disjoint partition or an inference that limit theorems are model classes. Broader parentage above this navigation home remains unassessed. The [LCC outline-range candidate](../../crosswalks/lcc/index.md) illustrates a broader bibliographic category without merging probability and statistics.
 
 ## Sources
 
