@@ -25,3 +25,5 @@ Candidate 0.9 opens [information theory](information-theory/index.md) and [error
 Candidate 0.10 expands [algebra](algebra/index.md) with [linear algebra](algebra/linear-algebra/index.md), [rings](algebra/rings/index.md), [modules](algebra/modules/index.md) and [fields](algebra/fields/index.md). Two shared structural subjects have canonical homes rather than duplicated definitions.
 
 Candidate 0.11 extends [Analysis](analysis/index.md) with real/complex, measure/integration, Banach/Hilbert and harmonic branches. [The proposal](../proposals/new-concepts/analysis-measure-fourier.md) retains quotient and convergence distinctions.
+
+Candidate 0.12 expands [probability](probability/index.md) with separate [limit tasks](probability/limit-theory/index.md) and [stochastic-process families](probability/stochastic-processes/index.md). The earlier Markov branch remains at its original home; no reparenting is implied by a browsing link.
