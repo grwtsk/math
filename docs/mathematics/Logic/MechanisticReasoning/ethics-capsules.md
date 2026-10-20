@@ -32,7 +32,7 @@ Statements labeled **written lemma** are mathematical arguments in this expositi
 
 ### Finite observation specialization
 
-The [finite observation companion](finite-observation-classification.md) gives an executable four-outcome specification and makes the coverage premise explicit. Its new Lean source is **source-only / not elaborated**. The separate [static target](../../../../verification/finite-observation-support-v0.1.toml) and authored fixtures do not extend the historical verification result for the three modules above.
+The [finite observation companion](finite-observation-classification.md) gives an executable four-outcome specification and makes the coverage premise explicit. Its source-bound verification evidence is tracked separately in [PR #313](https://github.com/grwtsk/math/pull/313). The [static target](../../../../verification/finite-observation-support-v0.1.toml) and authored fixtures are specifications; they do not extend the historical verification result for the three modules above.
 
 ## 2. Capsules form a typed, versioned graph
 
