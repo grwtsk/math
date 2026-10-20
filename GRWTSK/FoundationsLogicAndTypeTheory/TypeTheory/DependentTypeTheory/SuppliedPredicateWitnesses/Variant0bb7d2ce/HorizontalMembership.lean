@@ -2,7 +2,7 @@
 Exact membership in the predicate stored by a supplied horizontal-section witness
 ATTRIBUTION_CLARIFICATION_NEEDED
 Issue: https://github.com/grwtsk/math/issues/254
-Provisional mathematical ideas/direction: R.A. Jacob Martone.
+Provisional mathematical ideas and direction: R.A. Jacob Martone.
 Provisional composite search, probabilistic symbolic recombination and linearized diffusive computation: OpenAI/Codex.
 Cache warming and model sculpting: the countless, often unnamed mathematicians, enthusiasts, and curious minds whose work and questions have helped shape these tools, and who now have new ways to pursue mathematical answers to the endlessly deep question: “Why?”
 Source original SHA-256: 0bb7d2ce9264b69b4d4f15160a75833ec380028f887dbaeef339dd2d8976f10d
