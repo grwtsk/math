@@ -16,6 +16,7 @@ This is the authoritative path assignment for the pilot's persistent IDs. Labels
 | [Computability theory](subjects/mathematical-logic/computability-theory/index.md) | `urn:uuid:f4629e80-b447-44d4-8543-92bd40b36cd7` |
 | [Computational simplicial homology (finite complexes over prime fields)](subjects/topology/algebraic-topology/homology-theory/simplicial-homology/finite-prime-field-computation/index.md) | `urn:uuid:4af35b29-a93b-4113-b480-84b9d963846d` |
 | [Computational topology](subjects/topology/computational-topology/index.md) | `urn:uuid:73ef9d25-86ae-4bde-88a8-da55dc2a2fa5` |
+| [Confidence interval theory (frequentist)](subjects/statistics/mathematical-statistics/inference/estimation/confidence-intervals/index.md) | `urn:uuid:aa74905b-40b1-48a4-beaf-c67c506943c3` |
 | [Differential geometry](subjects/geometry/differential-geometry/index.md) | `urn:uuid:19f1dd58-8c23-4cc2-9326-7ccee050a295` |
 | [Discrete mathematics](subjects/discrete-mathematics/index.md) | `urn:uuid:bea4592d-e519-4511-b6ad-3e51d43f04fb` |
 | [Enumerative combinatorics](subjects/combinatorics/enumerative-combinatorics/index.md) | `urn:uuid:fb73471d-d70b-4551-8879-248eb57489d6` |
@@ -32,14 +33,19 @@ This is the authoritative path assignment for the pilot's persistent IDs. Labels
 | [History of mathematics education](subjects/history-of-mathematics/mathematics-education/index.md) | `urn:uuid:55fcdccc-6afb-4536-a076-f932dfa53dc2` |
 | [Homology theory (topology)](subjects/topology/algebraic-topology/homology-theory/index.md) | `urn:uuid:0273582d-e292-4d10-bc99-30189c735a38` |
 | [Homotopy theory (topological spaces)](subjects/topology/algebraic-topology/homotopy-theory/index.md) | `urn:uuid:3347007f-4ae3-4c1d-9b3a-f17102a0895f` |
+| [Least-squares estimation theory (fixed-design full-rank linear models)](subjects/statistics/mathematical-statistics/inference/estimation/point-estimation/linear-least-squares/index.md) | `urn:uuid:df2c6c73-bc6f-417b-ae79-2a7330455fb5` |
 | [Linear operator theory](subjects/analysis/functional-analysis/linear-operators/index.md) | `urn:uuid:827f5db9-1422-479e-a716-d9993230180c` |
+| [Linear regression theory](subjects/statistics/mathematical-statistics/regression/linear-models/index.md) | `urn:uuid:806e39ed-f9b9-434e-83cd-6cd1152568fa` |
 | [Markov chain theory (discrete time)](subjects/probability/markov-chains/index.md) | `urn:uuid:770ecd4c-5dc6-4ebe-88da-5033eb4ced60` |
 | [Mathematical logic](subjects/mathematical-logic/index.md) | `urn:uuid:72d4d327-ab11-4ac8-a09c-0db545aed427` |
+| [Mathematical statistics](subjects/statistics/mathematical-statistics/index.md) | `urn:uuid:7d6d748a-f382-4862-bcd6-1eab3c4808c0` |
 | [Mathematics education](subjects/mathematics-education/index.md) | `urn:uuid:98d1630a-9a7d-4454-a62a-4ec39833aa96` |
 | [Model theory](subjects/mathematical-logic/model-theory/index.md) | `urn:uuid:590416d5-1953-47c1-9310-3e40f1416604` |
+| [Point estimation theory](subjects/statistics/mathematical-statistics/inference/estimation/point-estimation/index.md) | `urn:uuid:d26248fa-96a1-45b7-8a99-4e77a5600f05` |
 | [Probability theory](subjects/probability/index.md) | `urn:uuid:8abb03fc-4067-4580-9b34-47a7aaee5943` |
 | [Proof theory](subjects/mathematical-logic/proof-theory/index.md) | `urn:uuid:839cf019-1089-4cf7-b2bb-e2ecd01c94cf` |
 | [Proper vertex-coloring theory (finite simple graphs)](subjects/combinatorics/graph-theory/coloring/finite-vertex-coloring/index.md) | `urn:uuid:eee0910c-24a7-431f-86f9-4bec6ef9a60f` |
+| [Regression theory](subjects/statistics/mathematical-statistics/regression/index.md) | `urn:uuid:6f508e89-44f2-4875-8635-8de1a6a1500e` |
 | [Riemannian geometry](subjects/geometry/differential-geometry/riemannian-geometry/index.md) | `urn:uuid:695e5594-f345-461f-a03c-9bf79bafc5f4` |
 | [Set theory](subjects/mathematical-logic/set-theory/index.md) | `urn:uuid:0f87856e-9241-4767-b09e-ea6c47c4f428` |
 | [Simplicial homology theory](subjects/topology/algebraic-topology/homology-theory/simplicial-homology/index.md) | `urn:uuid:09ee87c8-34bb-4519-96ed-dbf8ea260c88` |
@@ -48,6 +54,11 @@ This is the authoritative path assignment for the pilot's persistent IDs. Labels
 | [Spectral theory of self-adjoint operators](subjects/analysis/functional-analysis/linear-operators/spectral-theory/self-adjoint/index.md) | `urn:uuid:7ac44c10-be39-42fa-ac8e-c3b2a3bf1e64` |
 | [Spectrum (bounded linear operator)](facets/objects/operator-spectrum.md) | `urn:uuid:9ef6cd3e-21ce-440d-845f-702f515bda95` |
 | [Spectrum (commutative ring)](facets/objects/ring-spectrum.md) | `urn:uuid:9acb4119-13f8-4474-adc5-4396199faf88` |
+| [Statistical decision theory](subjects/statistics/mathematical-statistics/decision-theory/index.md) | `urn:uuid:93e97cd9-3048-4e33-893a-6ed41356af91` |
+| [Statistical estimation theory](subjects/statistics/mathematical-statistics/inference/estimation/index.md) | `urn:uuid:e6181efd-a05a-4131-b98e-e21751c60c34` |
+| [Statistical hypothesis testing theory](subjects/statistics/mathematical-statistics/inference/hypothesis-testing/index.md) | `urn:uuid:8388fbd0-9a19-4b54-99e7-9ebbe463a808` |
+| [Statistical inference theory](subjects/statistics/mathematical-statistics/inference/index.md) | `urn:uuid:ed407ce1-0ca3-4929-9433-7a0967b3f3dc` |
+| [Statistics](subjects/statistics/index.md) | `urn:uuid:12048078-5b03-49fb-8166-03585462a8dd` |
 | [Topology](subjects/topology/index.md) | `urn:uuid:03a6b10c-71cd-4062-8bef-bccc82c5b1de` |
 
 ## Other canonical records
@@ -63,10 +74,13 @@ This is the authoritative path assignment for the pilot's persistent IDs. Labels
 | [History and education addition](proposals/new-concepts/history-education.md) | `urn:uuid:89c7adb8-6d37-40b8-8686-1e692b0960a0` |
 | [Logic, algebra and discrete additions](proposals/new-concepts/logic-algebra-discrete.md) | `urn:uuid:4411692c-0d6e-47b0-a68b-67fffcca577d` |
 | [Geometry and topology additions](proposals/new-concepts/geometry-topology.md) | `urn:uuid:d53e7304-a343-4241-be9f-9de4b2ad913c` |
+| [Statistics addition](proposals/new-concepts/statistics.md) | `urn:uuid:140a988b-a5ac-4bd4-b922-317f55325fc8` |
 
-The scoped navigation collections `subjects`, `facets` and `objects` resolve to their index pages. They do not create mathematical superclass assertions. The local scheme key is `grwtsk-mathematics`; its vocabulary release is `0.4-pilot`, an unpublished candidate independent of schema versions 0.1.0 and 0.1.1. The previous `0.1-pilot` registry and mappings remain pinned at math `cce5f855028dfc581917a40a222e8209ac9bd8c3`; no old identifier is reused. Candidate `0.2-pilot` remains pinned at math `47b87581675315cd4cecfec5602df0c7db9b0c61`.
+The scoped navigation collections `subjects`, `facets` and `objects` resolve to their index pages. They do not create mathematical superclass assertions. The local scheme key is `grwtsk-mathematics`; its vocabulary release is `0.5-pilot`, an unpublished candidate independent of schema versions 0.1.0 and 0.1.1. The previous `0.1-pilot` registry and mappings remain pinned at math `cce5f855028dfc581917a40a222e8209ac9bd8c3`; no old identifier is reused. Candidate `0.2-pilot` remains pinned at math `47b87581675315cd4cecfec5602df0c7db9b0c61`.
 
 Candidate `0.3-pilot` remains pinned at math `ae9b637989a78a4360ef95e1fc4ead44ee3f6f8a`.
+
+Candidate `0.4-pilot` remains pinned at math `814971e0bc4fd54802423eec4beb6a0b890a8cb4` and was source-integrated at `f3d3f755ac0bb40732f9580a3cb30fecdcd26bcd` without changing proposed statuses.
 
 ## Historical path assignments
 
