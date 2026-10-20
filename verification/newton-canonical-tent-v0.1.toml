@@ -1,0 +1,173 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "newton-canonical-tent-v0.1"
+owner_repository = "grwtsk/math"
+issue = 194
+root_module = "GRWTSK.Interfaces.NewtonCanonicalTentCore"
+build_target = "GRWTSK.Interfaces.NewtonCanonicalTentCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+parent_revision = "13ea6b73a10aa27c97ed5935e9b0cca83cf3dc7c"
+parent_tree = "4e8da0a27a24007a241e49b296551c768db8d505"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+inherited_target_path = "verification/canonical-tent-evaluation-v0.1.toml"
+inherited_target_blob = "b7ec6a8d068a8216d6f88d2f6bd8d30bbe006ecd"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+receipt_policy = "No execution receipt or authority. Bind any future replay to its actual commit, tree and target externally."
+inventory_policy = "Retain all predecessor declaration, exact-type, coverage and hostile-control obligations. Empty repeated arrays waive nothing. Reconcile generated Data constructors/projections, deriving and decision instances, typed finite-table quantification, every public type and the full transitive import/axiom closure. The selected catalog is not a complete closure."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.NewtonDisk"
+path = "GRWTSK/Analysis/Complex/NewtonDisk.lean"
+source_git_blob = "836008d6c366d74e68ce134f308e5057d1112355"
+required_declarations = ["GRWTSK.Analysis.Complex.NewtonDisk.step", "GRWTSK.Analysis.Complex.NewtonDisk.step_deriv", "GRWTSK.Analysis.Complex.NewtonDisk.step_lipschitz", "GRWTSK.Analysis.Complex.NewtonDisk.derivative_ne_zero", "GRWTSK.Analysis.Complex.NewtonDisk.preconditioner_ne_zero", "GRWTSK.Analysis.Complex.NewtonDisk.step_mapsTo", "GRWTSK.Analysis.Complex.NewtonDisk.exists_unique_zero", "GRWTSK.Analysis.Complex.NewtonDisk.zero_distance_le", "GRWTSK.Analysis.Complex.NewtonDisk.derivative_variation"]
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalNewtonDisk"
+path = "GRWTSK/Analysis/ErrorBounds/RationalNewtonDisk.lean"
+source_git_blob = "1488249b74e01fa7b3f454963decb034eb2f5268"
+required_declarations = ["GRWTSK.Analysis.ErrorBounds.RationalNewtonDisk.Data", "GRWTSK.Analysis.ErrorBounds.RationalNewtonDisk.magnitude", "GRWTSK.Analysis.ErrorBounds.RationalNewtonDisk.residual", "GRWTSK.Analysis.ErrorBounds.RationalNewtonDisk.contraction", "GRWTSK.Analysis.ErrorBounds.RationalNewtonDisk.Valid", "GRWTSK.Analysis.ErrorBounds.RationalNewtonDisk.instDecidableValid", "GRWTSK.Analysis.ErrorBounds.RationalNewtonDisk.check", "GRWTSK.Analysis.ErrorBounds.RationalNewtonDisk.Estimates", "GRWTSK.Analysis.ErrorBounds.RationalNewtonDisk.check_iff_valid", "GRWTSK.Analysis.ErrorBounds.RationalNewtonDisk.magnitude_nonneg", "GRWTSK.Analysis.ErrorBounds.RationalNewtonDisk.norm_le_magnitude", "GRWTSK.Analysis.ErrorBounds.RationalNewtonDisk.checked_contraction_nonneg", "GRWTSK.Analysis.ErrorBounds.RationalNewtonDisk.residual_bound", "GRWTSK.Analysis.ErrorBounds.RationalNewtonDisk.contraction_bound", "GRWTSK.Analysis.ErrorBounds.RationalNewtonDisk.check_sound", "GRWTSK.Analysis.ErrorBounds.RationalNewtonDisk.closed_margin_control", "GRWTSK.Analysis.ErrorBounds.RationalNewtonDisk.unit_defect_rejected"]
+
+[[modules]]
+name = "GRWTSK.Interfaces.NewtonCanonicalTentCore"
+path = "GRWTSK/Interfaces/NewtonCanonicalTentCore.lean"
+source_git_blob = "d54a06651b12aa043c38d3ff961a9a182c3d2458"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.NewtonTentEvaluation"
+path = "GRWTSK/NumberTheory/Chebyshev/NewtonTentEvaluation.lean"
+source_git_blob = "fc39ea4d8744013a36c985fc947544e643f571e1"
+required_declarations = ["GRWTSK.NumberTheory.Chebyshev.NewtonTentEvaluation.checkWithin", "GRWTSK.NumberTheory.Chebyshev.NewtonTentEvaluation.checkWithin_sound"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.LocalNewtonControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/LocalNewtonControls.lean"
+source_git_blob = "34b9215611ebc346235093651b37fd6a9558ab74"
+required_declarations = ["GRWTSK.RiemannHypothesis.Checks.LocalNewtonControls.quadraticData", "GRWTSK.RiemannHypothesis.Checks.LocalNewtonControls.quadratic_margins", "GRWTSK.RiemannHypothesis.Checks.LocalNewtonControls.multiple_root_defect_rejected", "GRWTSK.RiemannHypothesis.Checks.LocalNewtonControls.missing_selfmap_rejected", "GRWTSK.RiemannHypothesis.Checks.LocalNewtonControls.zero_preconditioner_rejected", "GRWTSK.RiemannHypothesis.Checks.LocalNewtonControls.imaginary_defect_rejected", "GRWTSK.RiemannHypothesis.Checks.LocalNewtonControls.negative_errors_rejected", "GRWTSK.RiemannHypothesis.Checks.LocalNewtonControls.geometry_controls", "GRWTSK.RiemannHypothesis.Checks.LocalNewtonControls.unproved_curvature_is_not_checked", "GRWTSK.RiemannHypothesis.Checks.LocalNewtonControls.no_zero_derivative_defect", "GRWTSK.RiemannHypothesis.Checks.LocalNewtonControls.affine_analytic_example"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.LocalNewtonWitness"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/LocalNewtonWitness.lean"
+source_git_blob = "8cd7b0c89ac7c7a7265c28d69186f7d9f8a0592e"
+required_declarations = ["GRWTSK.RiemannHypothesis.LocalNewtonWitness.checkAt", "GRWTSK.RiemannHypothesis.LocalNewtonWitness.checkAt_iff", "GRWTSK.RiemannHypothesis.LocalNewtonWitness.disk_in_strip", "GRWTSK.RiemannHypothesis.LocalNewtonWitness.disk_analytic", "GRWTSK.RiemannHypothesis.LocalNewtonWitness.exists_unique_point", "GRWTSK.RiemannHypothesis.LocalNewtonWitness.checkFamily", "GRWTSK.RiemannHypothesis.LocalNewtonWitness.FamilyEstimates", "GRWTSK.RiemannHypothesis.LocalNewtonWitness.localWitnesses_of_checks"]
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalComplexEnclosure"
+path = "GRWTSK/Analysis/ErrorBounds/RationalComplexEnclosure.lean"
+source_git_blob = "252bea3e8aa47d839c467181d7ecebacf939533d"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.EnclosedZeroInventory"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/EnclosedZeroInventory.lean"
+source_git_blob = "bb5e38bf04f840ad1d17bfee2a148a7a05055bdd"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.CanonicalTentEvaluation"
+path = "GRWTSK/NumberTheory/Chebyshev/CanonicalTentEvaluation.lean"
+source_git_blob = "203d11e60f70ad992c00150df470de60b3bd6a54"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Interfaces.CanonicalTentEvaluationCore"
+path = "GRWTSK/Interfaces/CanonicalTentEvaluationCore.lean"
+source_git_blob = "20049a8ce22641db0acf135a8ef04b2514a9cbef"
+required_declarations = []
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Topology/MetricSpace/Contracting.lean"
+source_git_blob = "c4bd6fe2e61b904dfa1144ab1b7162550c99d1c3"
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Analysis/Calculus/MeanValue.lean"
+source_git_blob = "0cb69990a3dea0765ecded27124f1df538867f7a"
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Analysis/Analytic/Order.lean"
+source_git_blob = "43cc6d88cb0ecba9560d4c29a410b271d9432628"
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Analysis/Calculus/FDeriv/Analytic.lean"
+source_git_blob = "d73e96d56424df78a4dc3c4dcb66dba0f562b90a"
+
+[[hostile_controls]]
+id = "analytic_data_not_boolean"
+obligation = "Reject any interpretation that finite margin acceptance verifies actual zeta value, derivative, or disk-wide second derivative estimates."
+
+[[hostile_controls]]
+id = "strict_contraction"
+obligation = "Require kappa<1, not kappa<=1; repeated-root derivative zero cannot meet the true defect bound."
+
+[[hostile_controls]]
+id = "selfmap"
+obligation = "Retain eta+kappa*R<=R separately from strict contraction."
+
+[[hostile_controls]]
+id = "whole_closed_disk"
+obligation = "Mean-value and derivative estimates apply throughout the exact complete closed disk, not just sampled nodes or the center."
+
+[[hostile_controls]]
+id = "boundary_root"
+obligation = "Self-map equality permits a boundary zero; do not reuse as a zero-free contour certificate."
+
+[[hostile_controls]]
+id = "complex_defects"
+obligation = "Both real and imaginary components enter multiplication and magnitude."
+
+[[hostile_controls]]
+id = "positive_radii"
+obligation = "Reject zero/negative R and negative value, derivative and second-derivative allowances."
+
+[[hostile_controls]]
+id = "zero_preconditioner"
+obligation = "A zero preconditioner is excluded by strict derivative defect, not silently inverted."
+
+[[hostile_controls]]
+id = "strip_not_line"
+obligation = "Derived source domain is the open strip, not the critical line; strip-touching disks fail this sufficient supplier."
+
+[[hostile_controls]]
+id = "same_input"
+obligation = "Analytic estimates must refer to the literal center/radius/preconditioner data and actual riemannZeta, not Mellin density or source labels."
+
+[[hostile_controls]]
+id = "unit_multiplicity"
+obligation = "Local family mode requires weight one. Leave the old higher-order/cluster obligations unchanged."
+
+[[hostile_controls]]
+id = "finite_table"
+obligation = "Typed finite data covers every index; byte/parser/table refinement remains independent."
+
+[[hostile_controls]]
+id = "count_independent"
+obligation = "Preserve the same complete both-sign closed-height upper count and all prior geometry/evaluation error obligations."
+
+[[hostile_controls]]
+id = "no_acceptance_promotion"
+obligation = "All Lean proof scripts and literal decide/norm_num controls remain NOT_RUN until pinned elaboration and independent trust acceptance."
