@@ -492,10 +492,10 @@ description = "A fabricated unconfirmed future record violates WellFormed and su
 requirements = [
   "Bind this target, the source, exposition, compiler context, and any complete authored type expectations to their exact selected identities.",
   "Obtain scoped authorization for the intended validation path; this target supplies none.",
-  "Elaborate the isolated module with the pinned compiler and required options, preserving actual failure and warning output.",
-  "Resolve all 52 explicitly selected heads at the sole listed owner module and reconcile source forms and generated dependencies.",
+  "Elaborate both selected modules in dependency order with the pinned compiler and required options, preserving actual failure and warning output.",
+  "Resolve all 76 explicitly selected heads at their two listed owner modules and reconcile source forms and generated dependencies.",
   "Before claiming complete exact-type acceptance, independently bind and compare all complete expected types and ordered universe parameters; do not substitute name presence or observed types for authored expectations.",
-  "Audit transitive trust for all 33 theorem heads, including dependencies of imported Init list facts; unavailable output is not an empty axiom set.",
+  "Audit transitive trust for all 76 selected heads, including all 56 theorems and dependencies of imported Init list facts; unavailable output is not an empty axiom set.",
   "Validate all eight controls as their actual theorem propositions; a named passing record is insufficient.",
   "Review that the fresh-query result is derived from issuance/confirmation invariants and concrete updates, not inserted into the guards.",
   "Review that old-history position preservation and no-rollback selection cover arbitrary modeled finite traces and out-of-order confirmations as stated.",
