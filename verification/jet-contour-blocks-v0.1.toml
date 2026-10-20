@@ -1,0 +1,214 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "jet-contour-blocks-v0.1"
+owner_repository = "grwtsk/math"
+issue = 135
+root_module = "GRWTSK.Interfaces.JetContourBlocksCore"
+build_target = "GRWTSK.Interfaces.JetContourBlocksCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+parent_revision = "04b940fb41e6552f82e4d789c1f74d791053e189"
+parent_tree = "a5444720f03b42c6506c8c61fe8d9f39f6e29ce5"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+inherited_target_path = "verification/jet-rectangle-count-v0.1.toml"
+inherited_target_blob = "163b06baf04beefbd16a8196df3aa01e2d4c382a"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+count_status = "The same 2379-cell candidate passes an independent model. All 38 large local Lean equalities remain unproved."
+receipt_policy = "No execution permission, worker schedule or acceptance receipt. Bind external acceptance to the exact published head and all inherited targets."
+inventory_policy = "This selected catalog is NOT complete closure. Retain all predecessor declarations, exact types, generated members, instances, controls, large reductions and full import/axiom/native-dependency obligations."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Algebra.BigOperators.CheckedContiguousBlocks"
+path = "GRWTSK/Algebra/BigOperators/CheckedContiguousBlocks.lean"
+source_git_blob = "bcb64230852237611b3cf1f20e526e636fd28648"
+required_declarations = ["GRWTSK.Algebra.BigOperators.CheckedContiguousBlocks.allRange", "GRWTSK.Algebra.BigOperators.CheckedContiguousBlocks.sumRange", "GRWTSK.Algebra.BigOperators.CheckedContiguousBlocks.allRange_iff", "GRWTSK.Algebra.BigOperators.CheckedContiguousBlocks.sumRange_eq_finset", "GRWTSK.Algebra.BigOperators.CheckedContiguousBlocks.allRange_add", "GRWTSK.Algebra.BigOperators.CheckedContiguousBlocks.sumRange_add", "GRWTSK.Algebra.BigOperators.CheckedContiguousBlocks.allRange_congr", "GRWTSK.Algebra.BigOperators.CheckedContiguousBlocks.sumRange_congr", "GRWTSK.Algebra.BigOperators.CheckedContiguousBlocks.chunk", "GRWTSK.Algebra.BigOperators.CheckedContiguousBlocks.chunk_eq_some_iff", "GRWTSK.Algebra.BigOperators.CheckedContiguousBlocks.Partition", "GRWTSK.Algebra.BigOperators.CheckedContiguousBlocks.partitionDecidable", "GRWTSK.Algebra.BigOperators.CheckedContiguousBlocks.partition", "GRWTSK.Algebra.BigOperators.CheckedContiguousBlocks.partition_iff", "GRWTSK.Algebra.BigOperators.CheckedContiguousBlocks.verify", "GRWTSK.Algebra.BigOperators.CheckedContiguousBlocks.Pieces", "GRWTSK.Algebra.BigOperators.CheckedContiguousBlocks.verify_iff_pieces", "GRWTSK.Algebra.BigOperators.CheckedContiguousBlocks.verify_sound", "GRWTSK.Algebra.BigOperators.CheckedContiguousBlocks.totals", "GRWTSK.Algebra.BigOperators.CheckedContiguousBlocks.totals_sum", "GRWTSK.Algebra.BigOperators.CheckedContiguousBlocks.verify_totals", "GRWTSK.Algebra.BigOperators.CheckedContiguousBlocks.exists_pieces_iff"]
+
+[[modules]]
+name = "GRWTSK.Interfaces.JetContourBlocksCore"
+path = "GRWTSK/Interfaces/JetContourBlocksCore.lean"
+source_git_blob = "66e5744817e7e064e3eba0b3c63b2d79b6a3780a"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenBlockDecomposition"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/HeightFifteenBlockDecomposition.lean"
+source_git_blob = "072d13cdf1f4e44eecdb5e8e4e5a610f9b2391c2"
+required_declarations = ["GRWTSK.RiemannHypothesis.Checks.HeightFifteenBlockDecomposition.widths", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenBlockDecomposition.expected", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenBlockDecomposition.partition_checked", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenBlockDecomposition.widths_sum", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenBlockDecomposition.expected_shape", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenBlockDecomposition.directImage", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenBlockDecomposition.plan_at", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenBlockDecomposition.image_at", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenBlockDecomposition.image_last", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenBlockDecomposition.image_at_eq_direct", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenBlockDecomposition.vertex_eq_direct", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenBlockDecomposition.directTest", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenBlockDecomposition.directTerm", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenBlockDecomposition.test_refines", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenBlockDecomposition.term_refines", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenBlockDecomposition.header", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenBlockDecomposition.allRange_refines", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenBlockDecomposition.sumRange_refines", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenBlockDecomposition.success_iff_ranges", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenBlockDecomposition.success_iff_exists_blocks", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenBlockDecomposition.BlockObligations", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenBlockDecomposition.verifyExpected", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenBlockDecomposition.success_of_blocks", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenBlockDecomposition.success_of_verified", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenBlockDecomposition.count_one_of_blocks", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenBlockDecomposition.complete_pair_of_blocks"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.JetBlockControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/JetBlockControls.lean"
+source_git_blob = "218e2365e1afa10511d89f73c4a2496a6452619c"
+required_declarations = ["GRWTSK.RiemannHypothesis.Checks.JetBlockControls.good", "GRWTSK.RiemannHypothesis.Checks.JetBlockControls.badLast", "GRWTSK.RiemannHypothesis.Checks.JetBlockControls.signed", "GRWTSK.RiemannHypothesis.Checks.JetBlockControls.proper_partition", "GRWTSK.RiemannHypothesis.Checks.JetBlockControls.no_empty_cover", "GRWTSK.RiemannHypothesis.Checks.JetBlockControls.no_zero_block", "GRWTSK.RiemannHypothesis.Checks.JetBlockControls.no_zero_cap", "GRWTSK.RiemannHypothesis.Checks.JetBlockControls.no_oversized_block", "GRWTSK.RiemannHypothesis.Checks.JetBlockControls.no_missing_suffix", "GRWTSK.RiemannHypothesis.Checks.JetBlockControls.no_extra_suffix", "GRWTSK.RiemannHypothesis.Checks.JetBlockControls.signed_blocks", "GRWTSK.RiemannHypothesis.Checks.JetBlockControls.forged_cancellation", "GRWTSK.RiemannHypothesis.Checks.JetBlockControls.swapped_claims", "GRWTSK.RiemannHypothesis.Checks.JetBlockControls.missing_claim", "GRWTSK.RiemannHypothesis.Checks.JetBlockControls.extra_claim", "GRWTSK.RiemannHypothesis.Checks.JetBlockControls.last_cell_required", "GRWTSK.RiemannHypothesis.Checks.JetBlockControls.changed_partition_needs_new_claims", "GRWTSK.RiemannHypothesis.Checks.JetBlockControls.failure_not_zero", "GRWTSK.RiemannHypothesis.Checks.JetBlockControls.absolute_cursor", "GRWTSK.RiemannHypothesis.Checks.JetBlockControls.target_decomposition_shape"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.JetContourBlocks"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/JetContourBlocks.lean"
+source_git_blob = "b897c126745d8c547b4f8c6d5bcd5443314fa14d"
+required_declarations = ["GRWTSK.RiemannHypothesis.JetContourBlocks.Header", "GRWTSK.RiemannHypothesis.JetContourBlocks.headerDecidable", "GRWTSK.RiemannHypothesis.JetContourBlocks.cellTest", "GRWTSK.RiemannHypothesis.JetContourBlocks.term", "GRWTSK.RiemannHypothesis.JetContourBlocks.sum_eq_prefix", "GRWTSK.RiemannHypothesis.JetContourBlocks.old_evaluate_iff", "GRWTSK.RiemannHypothesis.JetContourBlocks.evaluate", "GRWTSK.RiemannHypothesis.JetContourBlocks.evaluate_iff", "GRWTSK.RiemannHypothesis.JetContourBlocks.evaluate_refines", "GRWTSK.RiemannHypothesis.JetContourBlocks.exists_claims_iff", "GRWTSK.RiemannHypothesis.JetContourBlocks.evaluateRectangle", "GRWTSK.RiemannHypothesis.JetContourBlocks.rectangle_refines", "GRWTSK.RiemannHypothesis.JetContourBlocks.count_eq_of_evaluateRectangle"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.JetPoleContour"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/JetPoleContour.lean"
+source_git_blob = "4defaf20be53aba7c33a52c60e56bc2d27734645"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.JetRectangleCount"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/JetRectangleCount.lean"
+source_git_blob = "34fe8ce0c207662bede8bb32289aff924bc95257"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Interfaces.JetRectangleCountCore"
+path = "GRWTSK/Interfaces/JetRectangleCountCore.lean"
+source_git_blob = "e9be5edcc92c28e76e9bc5e883458525f7e8d251"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenJetCandidate"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/HeightFifteenJetCandidate.lean"
+source_git_blob = "e136351169c1e027d2b4846156355194758529de"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.RationalPolygonIndex"
+path = "GRWTSK/Analysis/Complex/RationalPolygonIndex.lean"
+source_git_blob = "aa629f8335b89cd9b4c79194f791fb3b64b68f55"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.RationalRectangleMesh"
+path = "GRWTSK/Analysis/Complex/RationalRectangleMesh.lean"
+source_git_blob = "a2256c39adb654bb8274d8750e5326cd19cc213d"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RationalJetPolePatch"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/RationalJetPolePatch.lean"
+source_git_blob = "048cbe4826f316d2c424aa4f449890974483d7b9"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RationalPoleJet"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/RationalPoleJet.lean"
+source_git_blob = "d713fab9e2c45d76d0f4c2ba603f82efae27b530"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RationalPoleValue"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/RationalPoleValue.lean"
+source_git_blob = "52f1bb4b39a75d21e0d41d1ed662901a07187a12"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ConstructedRectangleCount"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ConstructedRectangleCount.lean"
+source_git_blob = "2c314c1ae8f25931cd7c7d8593089509c235ede3"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalRectangleIndex"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalRectangleIndex.lean"
+source_git_blob = "53eb5c3537f5a3e0031b14b300885550f97bb6b5"
+required_declarations = []
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Algebra/BigOperators/Group/Finset/Basic.lean"
+source_git_blob = "b7faa997208659115d93cbefa5faca923d861a09"
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Data/List/GetD.lean"
+source_git_blob = "296b75d1659c7e3ee325495e6196cec1ec62c987"
+
+[[controls]]
+id = "B01_exact_parent"
+requirement = "Preserve the published 2379-cell candidate, not the older local-only 1429-cell alternative."
+
+[[controls]]
+id = "B02_full_partition"
+requirement = "Positive widths, positive cap, exact total and nonempty list; no missing suffix, zeros, overlap or arbitrary offsets."
+
+[[controls]]
+id = "B03_local_equality"
+requirement = "Recompute each chunk predicate and signed total. No acceptance flag or cancellation-only comparison."
+
+[[controls]]
+id = "B04_global_seams"
+requirement = "Both global image endpoints at every cell, including every artificial block boundary and cyclic closure."
+
+[[controls]]
+id = "B05_no_artificial_closure"
+requirement = "Do not close individual chunks or identify their signed contributions with loop winding."
+
+[[controls]]
+id = "B06_header"
+requirement = "Retain positive n, every list length and both domain/image global closures."
+
+[[controls]]
+id = "B07_exact_old_result"
+requirement = "Verify old_evaluate_iff, evaluate_refines and existence completeness for any admitted partition."
+
+[[controls]]
+id = "B08_direct_indexed_refinement"
+requirement = "Check original planAt, pointAt and vertex identities within bounds, especially the final closing image."
+
+[[controls]]
+id = "B09_same_literal_Success"
+requirement = "success_iff_exists_blocks must target the ORIGINAL result=some 1; no replacement success definition."
+
+[[controls]]
+id = "B10_no_large_equality_claim"
+requirement = "BlockObligations and verifyExpected are definitions, not proofs of any of the 38 large equalities."
+
+[[controls]]
+id = "B11_expected_vector"
+requirement = "Recompute the length38 signed vector and every actual local contribution, not only its sum one."
+
+[[controls]]
+id = "B12_last11"
+requirement = "Final interval is [2368,2379); all eleven cells and their successors are mandatory."
+
+[[controls]]
+id = "B13_full_jet_errors"
+requirement = "Retain actual-source remainder, derivative error, curvature, nonlinear squaring, rounding and identical image-radius semantics."
+
+[[controls]]
+id = "B14_signs"
+requirement = "Negative block integers remain legal. Final canonical count is not obtained by truncation or absolute value."
+
+[[controls]]
+id = "B15_no_resource_claim"
+requirement = "Cap64 bounds local cell predicates, not source evaluations, kernel cost, memory or time."
+
+[[controls]]
+id = "B16_trust"
+requirement = "Elaborate all exact public types, generated members, imports, axioms, native dependencies and predecessor controls."
+
+[[controls]]
+id = "B17_diagnostics_not_proof"
+requirement = "Independent Python reconstruction and assertion counts are not Lean computation, generic proofs or accepted zero counts."
+
+[[controls]]
+id = "B18_scope"
+requirement = "No source weakening, root import, merge, issue disposition, worker action or hold release; higher-height and prime-margin suppliers stay separate."
