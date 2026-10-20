@@ -19,3 +19,5 @@ The [statistics addition](new-concepts/statistics.md) proposes eleven statistica
 [Numerical analysis and optimization addition](new-concepts/numerical-optimization.md) proposes nine records and the shared conjugate-gradient subject; all scopes and parentage await independent review.
 
 [Number-theory subject addition](new-concepts/number-theory.md): twelve original records, explicit arithmetic hypotheses and one shared computational/algebraic subject; proposed, not independently reviewed.
+
+[Equation, dynamics and mechanics addition](new-concepts/equations-dynamics-mechanics.md): twelve original records, eleven proposed edges and two canonical shared model classes; no source-namespace collision is resolved.
