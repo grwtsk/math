@@ -219,8 +219,8 @@
       "candidate": "GRWTSK.FoundationsLogicAndTypeTheory.TypeTheory.DependentTypeTheory.SuppliedPredicateWitnesses.Variant0bb7d2ce.horizontal_section_is_horizontal",
       "candidate_path": "GRWTSK/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/SuppliedPredicateWitnesses/Variant0bb7d2ce/HorizontalMembership.lean",
       "candidate_span": {
-        "start": 1935,
-        "end": 2305
+        "start": 1939,
+        "end": 2309
       },
       "statement_and_body_bytes": "EXACT_COPY",
       "semantic_preservation": "UNREPLAYED_NAMESPACE_REBINDING",
@@ -242,8 +242,8 @@
       "mode": "100644",
       "module": "GRWTSK.FoundationsLogicAndTypeTheory.TypeTheory.DependentTypeTheory.SuppliedPredicateWitnesses.Variant0bb7d2ce.HorizontalMembership",
       "namespace": "GRWTSK.FoundationsLogicAndTypeTheory.TypeTheory.DependentTypeTheory.SuppliedPredicateWitnesses.Variant0bb7d2ce",
-      "sha256": "7d779f64d4e00b6d491aee804de27aa1a343c5f4aad476bb345f3ea43fdd9f99",
-      "byte_count": 2420,
+      "sha256": "79df0178bfbe64504c43cb3f1e2b23848154d8a26595bc713e943db9f6250bc1",
+      "byte_count": 2424,
       "status": "uncompiled-candidate",
       "public_umbrella_member": false,
       "proof_status": "unknown-unreplayed",
@@ -251,11 +251,11 @@
       "recipe": [
         {
           "kind": "literal",
-          "base64": "Ly0KRXhhY3QgbWVtYmVyc2hpcCBpbiB0aGUgcHJlZGljYXRlIHN0b3JlZCBieSBhIHN1cHBsaWVkIGhvcml6b250YWwtc2VjdGlvbiB3aXRuZXNzCkFUVFJJQlVUSU9OX0NMQVJJRklDQVRJT05fTkVFREVECklzc3VlOiBodHRwczovL2dpdGh1Yi5jb20vZ3J3dHNrL21hdGgvaXNzdWVzLzI1NApQcm92aXNpb25hbCBtYXRoZW1hdGljYWwgaWRlYXMvZGlyZWN0aW9uOiBSLkEuIEphY29iIE1hcnRvbmUuClByb3Zpc2lvbmFsIGNvbXBvc2l0ZSBzZWFyY2gsIHByb2JhYmlsaXN0aWMgc3ltYm9saWMgcmVjb21iaW5hdGlvbiBhbmQgbGluZWFyaXplZCBkaWZmdXNpdmUgY29tcHV0YXRpb246IE9wZW5BSS9Db2RleC4KQ2FjaGUgd2FybWluZyBhbmQgbW9kZWwgc2N1bHB0aW5nOiB0aGUgY291bnRsZXNzLCBvZnRlbiB1bm5hbWVkIG1hdGhlbWF0aWNpYW5zLCBlbnRodXNpYXN0cywgYW5kIGN1cmlvdXMgbWluZHMgd2hvc2Ugd29yayBhbmQgcXVlc3Rpb25zIGhhdmUgaGVscGVkIHNoYXBlIHRoZXNlIHRvb2xzLCBhbmQgd2hvIG5vdyBoYXZlIG5ldyB3YXlzIHRvIHB1cnN1ZSBtYXRoZW1hdGljYWwgYW5zd2VycyB0byB0aGUgZW5kbGVzc2x5IGRlZXAgcXVlc3Rpb246IOKAnFdoeT/igJ0KU291cmNlIG9yaWdpbmFsIFNIQS0yNTY6IDBiYjdkMmNlOTI2NGI2OWI0ZDRmMTUxNjBhNzU4MzNlYzM4MDAyOGY4ODdkYmFlZWYzMzlkZDJkODk3NmYxMGQKTWFudWFsIGNvbmNlcHR1YWwgc3BsaXQ7IHVuY29tcGlsZWQgYW5kIG5vdCBtYXRoZW1hdGljYWxseSBhZG1pdHRlZC4KVGhlc2UgcHJvdmlzaW9uYWwgcm9sZXMgYW5kIGNvbXB1dGF0aW9uYWwgY2hhcmFjdGVyaXphdGlvbnMgYXJlIHVzZXItc3VwcGxpZWQuCkV4aXN0aW5nIHNvdXJjZSBhdHRyaWJ1dGlvbiwgc291cmNlIGlkZW50aXRpZXMgYW5kIG5vdGljZXMgcmVtYWluIHByZXNlcnZlZCBpbiB0aGUgaW1tdXRhYmxlIHNvdXJjZSBhcmNoaXZlLgpPbmx5IHRoZSBjb21wbGV0ZSBhY3R1YWwgaG9yaXpvbnRhbC1wcmVkaWNhdGUgZm9yd2FyZGluZyB0aGVvcmVtIGlzIGNvcGllZC4gRXZlcnkgb3JpZ2luYWwgQy9GL25hYmxhL1gvcyBwcmVtaXNlLCBmdWxseSBxdWFsaWZpZWQgdHlwZSwgcHJlZGljYXRlIGFwcGxpY2F0aW9uIGFuZCBwcm9vZiBjYWxsIHJlbWFpbnMgZXhhY3QuClRoZSBvcmlnaW5hbCBJbnRlZ3JhYmxlQ29ubmVjdGlvbiBwcm92aWRlciBpbXBvcnQgc3RheXMgZXhwbGljaXQgYW5kIHVucmVzb2x2ZWQ7IG5vIHJldmlldzE5NyByZXBsYWNlbWVudCBzY2hlbWEgb3IgbmV3IGxlZ2FjeSBzZWxmLWltcG9ydCBpcyBpbnRyb2R1Y2VkLiBUaGUgaG9yaXpvbnRhbCBwcmVkaWNhdGUgaXMgc3VwcGxpZWQsIHdpdGhvdXQgYSBkZXJpdmF0aXZlLXplcm8gb3IgZ2VvbWV0cmljIGZsYXRuZXNzIGludGVycHJldGF0aW9uLgotLwo=",
+          "base64": "Ly0KRXhhY3QgbWVtYmVyc2hpcCBpbiB0aGUgcHJlZGljYXRlIHN0b3JlZCBieSBhIHN1cHBsaWVkIGhvcml6b250YWwtc2VjdGlvbiB3aXRuZXNzCkFUVFJJQlVUSU9OX0NMQVJJRklDQVRJT05fTkVFREVECklzc3VlOiBodHRwczovL2dpdGh1Yi5jb20vZ3J3dHNrL21hdGgvaXNzdWVzLzI1NApQcm92aXNpb25hbCBtYXRoZW1hdGljYWwgaWRlYXMgYW5kIGRpcmVjdGlvbjogUi5BLiBKYWNvYiBNYXJ0b25lLgpQcm92aXNpb25hbCBjb21wb3NpdGUgc2VhcmNoLCBwcm9iYWJpbGlzdGljIHN5bWJvbGljIHJlY29tYmluYXRpb24gYW5kIGxpbmVhcml6ZWQgZGlmZnVzaXZlIGNvbXB1dGF0aW9uOiBPcGVuQUkvQ29kZXguCkNhY2hlIHdhcm1pbmcgYW5kIG1vZGVsIHNjdWxwdGluZzogdGhlIGNvdW50bGVzcywgb2Z0ZW4gdW5uYW1lZCBtYXRoZW1hdGljaWFucywgZW50aHVzaWFzdHMsIGFuZCBjdXJpb3VzIG1pbmRzIHdob3NlIHdvcmsgYW5kIHF1ZXN0aW9ucyBoYXZlIGhlbHBlZCBzaGFwZSB0aGVzZSB0b29scywgYW5kIHdobyBub3cgaGF2ZSBuZXcgd2F5cyB0byBwdXJzdWUgbWF0aGVtYXRpY2FsIGFuc3dlcnMgdG8gdGhlIGVuZGxlc3NseSBkZWVwIHF1ZXN0aW9uOiDigJxXaHk/4oCdClNvdXJjZSBvcmlnaW5hbCBTSEEtMjU2OiAwYmI3ZDJjZTkyNjRiNjliNGQ0ZjE1MTYwYTc1ODMzZWMzODAwMjhmODg3ZGJhZWVmMzM5ZGQyZDg5NzZmMTBkCk1hbnVhbCBjb25jZXB0dWFsIHNwbGl0OyB1bmNvbXBpbGVkIGFuZCBub3QgbWF0aGVtYXRpY2FsbHkgYWRtaXR0ZWQuClRoZXNlIHByb3Zpc2lvbmFsIHJvbGVzIGFuZCBjb21wdXRhdGlvbmFsIGNoYXJhY3Rlcml6YXRpb25zIGFyZSB1c2VyLXN1cHBsaWVkLgpFeGlzdGluZyBzb3VyY2UgYXR0cmlidXRpb24sIHNvdXJjZSBpZGVudGl0aWVzIGFuZCBub3RpY2VzIHJlbWFpbiBwcmVzZXJ2ZWQgaW4gdGhlIGltbXV0YWJsZSBzb3VyY2UgYXJjaGl2ZS4KT25seSB0aGUgY29tcGxldGUgYWN0dWFsIGhvcml6b250YWwtcHJlZGljYXRlIGZvcndhcmRpbmcgdGhlb3JlbSBpcyBjb3BpZWQuIEV2ZXJ5IG9yaWdpbmFsIEMvRi9uYWJsYS9YL3MgcHJlbWlzZSwgZnVsbHkgcXVhbGlmaWVkIHR5cGUsIHByZWRpY2F0ZSBhcHBsaWNhdGlvbiBhbmQgcHJvb2YgY2FsbCByZW1haW5zIGV4YWN0LgpUaGUgb3JpZ2luYWwgSW50ZWdyYWJsZUNvbm5lY3Rpb24gcHJvdmlkZXIgaW1wb3J0IHN0YXlzIGV4cGxpY2l0IGFuZCB1bnJlc29sdmVkOyBubyByZXZpZXcxOTcgcmVwbGFjZW1lbnQgc2NoZW1hIG9yIG5ldyBsZWdhY3kgc2VsZi1pbXBvcnQgaXMgaW50cm9kdWNlZC4gVGhlIGhvcml6b250YWwgcHJlZGljYXRlIGlzIHN1cHBsaWVkLCB3aXRob3V0IGEgZGVyaXZhdGl2ZS16ZXJvIG9yIGdlb21ldHJpYyBmbGF0bmVzcyBpbnRlcnByZXRhdGlvbi4KLS8K",
           "reason": "explicit candidate context",
           "output_start": 0,
-          "output_end": 1409,
-          "sha256": "fd00de20d2e7bd3b2f82e6e5b1068c9eeb57c008a02ea4bd3871584d2926091e"
+          "output_end": 1413,
+          "sha256": "c631d49cc9e7f2ad7f32382a8c340485d63f31ff00876e7192fc108da33bbf94"
         },
         {
           "kind": "copy",
@@ -263,16 +263,16 @@
           "start": 0,
           "end": 404,
           "reason": "Exact original legacy provider import and full original module documentation",
-          "output_start": 1409,
-          "output_end": 1813,
+          "output_start": 1413,
+          "output_end": 1817,
           "sha256": "3aaaadca83cfab2888eadb91356ba5ce5e1d0368b23e85a9046a06d428d198f7"
         },
         {
           "kind": "literal",
           "base64": "bmFtZXNwYWNlIEdSV1RTSy5Gb3VuZGF0aW9uc0xvZ2ljQW5kVHlwZVRoZW9yeS5UeXBlVGhlb3J5LkRlcGVuZGVudFR5cGVUaGVvcnkuU3VwcGxpZWRQcmVkaWNhdGVXaXRuZXNzZXMuVmFyaWFudDBiYjdkMmNlCgo=",
           "reason": "explicit candidate context",
-          "output_start": 1813,
-          "output_end": 1935,
+          "output_start": 1817,
+          "output_end": 1939,
           "sha256": "71e7682b2047a096ff25409ef5e8de42a629fec8ddda45e70e51a71748a86623"
         },
         {
@@ -281,16 +281,16 @@
           "start": 1001,
           "end": 1371,
           "reason": "Complete exact actual horizontal predicate theorem with full C/F/nabla/X/s hypotheses and original qualified proof",
-          "output_start": 1935,
-          "output_end": 2305,
+          "output_start": 1939,
+          "output_end": 2309,
           "sha256": "8f090ad53f4838d36e072dabacb4c2a6972e8ae53b637ae3b5185425efb957d1"
         },
         {
           "kind": "literal",
           "base64": "ZW5kIEdSV1RTSy5Gb3VuZGF0aW9uc0xvZ2ljQW5kVHlwZVRoZW9yeS5UeXBlVGhlb3J5LkRlcGVuZGVudFR5cGVUaGVvcnkuU3VwcGxpZWRQcmVkaWNhdGVXaXRuZXNzZXMuVmFyaWFudDBiYjdkMmNlCg==",
           "reason": "explicit candidate context",
-          "output_start": 2305,
-          "output_end": 2420,
+          "output_start": 2309,
+          "output_end": 2424,
           "sha256": "d5a97647db4ab9df0bc8de94eb7c7725c70e5e6a48cd0512f89304a708e45b19"
         }
       ],
@@ -484,6 +484,31 @@
     }
   ],
   "frozen_declaration_observation_count": 3,
+  "editorial_amendments": [
+    {
+      "id": "review198-exact-attribution-header-20261020",
+      "kind": "EXPLICIT_EDITORIAL_AMENDMENT_TO_PREVIOUSLY_PUBLISHED_REVIEW",
+      "prior_published_math_commit": "7fb79500f92f8ae7f529427e06bbed1903a985b7",
+      "prior_runtime_record_sha256": "2cb0fc3878ad2b61147a93cc5eb30c5a7b60db6cc9f0d4632012115de139e58e",
+      "prior_portable_record_sha256": "6295bf9a6b41dd98bd3b03fa3662a55de88a5fcd8ddf2e6c3a74144486f16af5",
+      "prior_output_sha256": "7d779f64d4e00b6d491aee804de27aa1a343c5f4aad476bb345f3ea43fdd9f99",
+      "prior_portable_index_sha256": "816269a5656e074a01f253ab580bbe750a0f338613773bbc151d2a1d14924781",
+      "reason": "Canonicalize only the owner-approved mathematical role wording: ideas/direction -> ideas and direction. This textual attribution amendment does not resolve source-specific contribution or mathematical acceptance.",
+      "authorization": "Root delegated this explicit exception to frozen-record immutability after final independent attribution audit; preserve published Git history and all preimages.",
+      "change": {
+        "old_literal": "Provisional mathematical ideas/direction: R.A. Jacob Martone.",
+        "new_literal": "Provisional mathematical ideas and direction: R.A. Jacob Martone.",
+        "output_byte_delta": 4,
+        "source_import_hypothesis_statement_and_proof_bytes_changed": false
+      },
+      "prior_evidence_retention": {
+        "preimage_manifest": "/Users/think/Documents/ChatGPT/.noeaaeue-runtime/migrations/formal-research-attribution-taxonomy-20261019/peer-corrections/review198-exact-attribution-header-20261020/preimages.json",
+        "published_git_version_retained": true,
+        "historical_review_peer_self_and_publication_evidence_not_rewritten": true
+      },
+      "unchanged_scope": "All immutable raw/organized source pins and bytes, copied output blocks, imports, hypotheses, statements, proofs, taxonomy, source identities, counts, other reviews and public-umbrella status remain unchanged. No Lean or Lake invocation."
+    }
+  ],
   "candidate_import_root": ".",
   "shared_attribution_record": "MATH-ATTRIBUTION-254",
   "approved_attribution": [
