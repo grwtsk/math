@@ -11,3 +11,5 @@ No genuine mathematical novelty claim is introduced by this pilot. The [V09 synt
 The [history and education addition](new-concepts/history-education.md) proposes three established subjects while keeping their classification distinct from document format and mathematical novelty.
 
 The [logic, algebra and discrete batch](new-concepts/logic-algebra-discrete.md) adds fifteen established-subject records and preserves all earlier collision and attribution questions.
+
+The [geometry and topology addition](new-concepts/geometry-topology.md) records twelve further subjects and the restricted computational-homology polyhierarchy, with coefficient and implementation boundaries.

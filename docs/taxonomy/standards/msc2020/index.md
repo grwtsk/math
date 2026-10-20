@@ -33,3 +33,9 @@ Retain the exact original source bytes, format, locator, retrieval time, checksu
 ## Candidate 0.3 access follow-up
 
 On 2026-10-19 the official landing page was re-read and still links the PDF, CSV and TeX baseline. The web reader again rejected CSV/TeX as application/octet-stream. A bounded original-byte retrieval in the working environment failed with name-resolution errors, and the download adapter also failed. No native input file, checksum or complete identifier set resulted. D06 and the unresolved reuse/distribution gate are unchanged. The locally authored L6-L10 subject batch is not a substitute baseline.
+
+## Alternative representation assessed for candidate 0.4
+
+The primary [TIB serialization README](https://github.com/TIBHannover/MSC2020_SKOS/blob/33972ddb6a72c3660a6e499ee5f881b57fa92d41/README.md) calls its Turtle content a suggested serialization. [Arndt and coauthors](https://arxiv.org/abs/2107.13877) describe conversion from the editors' version of record and added change/translation material. Register S12 separately from the published MSC2020 source S1. No later official MSC edition, matching original bytes, complete transformation validation or dataset license clearance follows from this research artifact.
+
+Direct official CSV acquisition was re-attempted and failed; the web reader rejected CSV/TeX response types. Complete native code sets and original checksums remain unavailable. The alternative is a future comparison input, not an imported dataset or a basis for declaring the blocker resolved. This assessment does not change D02/D06 rights restrictions or the full declared mathematical baseline. No standards-body submission is authorized.

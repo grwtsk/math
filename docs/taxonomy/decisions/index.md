@@ -47,3 +47,9 @@ Candidate 0.3 adds fifteen proposed subject records and a retained placement pro
 Use L6-L10 only as the specified reference warrants. Preserve the observed title-page/landing-page date discrepancy for Judson and the edition-specific license distinction for Levin. No cited source is relabeled MIT. The full MSC original-byte acquisition, rights and identifier-reconciliation obligations remain unchanged. The bibliography supports a local draft, not external endorsement or independent conceptual acceptance. The namespace collision proposal and #254 attribution questions are not resolved by these additions.
 
 Separate 0.3 Noe bindings must retain the prior inputs. A source-edition change in an existing mapping requires a retained history comparison even when its target and relation do not change. No operational grant or production admission is stored here.
+
+## D08 Geometry/topology population and alternative-source distinction
+
+Candidate 0.4 adds twelve proposed subjects and eleven specialization edges, keeping all preceding concept definitions unchanged. The dual-parent computational simplicial-homology subject fixes finite abstract complexes, exact prime-field coefficients, orientations and unreduced output. Floating-point rank heuristics, integral torsion, persistence, sampled-space reconstruction and software correctness are not equivalent to that contract. This is a local organization proposal, not a theorem or an operational grant.
+
+TIB's MSC2020 SKOS conversion, inspected at `33972ddb6a72c3660a6e499ee5f881b57fa92d41`, is a separately versioned research serialization. Register it as an alternative input candidate S12; do not silently replace S1's published MSC2020 baseline, import an inferred hierarchy as official direct edges, or treat its existence as rights clearance. Full native-code reconciliation remains blocked. Existing external mappings change only local source edition and history; no review is transported automatically.
