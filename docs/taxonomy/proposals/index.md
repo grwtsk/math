@@ -25,3 +25,5 @@ The [statistics addition](new-concepts/statistics.md) proposes eleven statistica
 [Information and coding addition](new-concepts/information-coding.md) proposes ten established subjects and a shared finite-field linear-code record, retaining independent-review and rights gates.
 
 [Algebraic structures](new-concepts/algebra-structures.md) proposes ten established subjects and two shared structural scopes, retaining convention and placement alternatives.
+
+[Analysis, measure and Fourier addition](new-concepts/analysis-measure-fourier.md) proposes ten established subjects, two shared function-space scopes and explicit convergence assumptions.

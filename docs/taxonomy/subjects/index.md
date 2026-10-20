@@ -23,3 +23,5 @@ Candidate 0.8 opens [differential equations](differential-equations/index.md), [
 Candidate 0.9 opens [information theory](information-theory/index.md) and [error-correcting coding theory](error-correcting-codes/index.md). Compression and channel tasks remain distinct; the block and algebraic routes share one finite-field linear-code page.
 
 Candidate 0.10 expands [algebra](algebra/index.md) with [linear algebra](algebra/linear-algebra/index.md), [rings](algebra/rings/index.md), [modules](algebra/modules/index.md) and [fields](algebra/fields/index.md). Two shared structural subjects have canonical homes rather than duplicated definitions.
+
+Candidate 0.11 extends [Analysis](analysis/index.md) with real/complex, measure/integration, Banach/Hilbert and harmonic branches. [The proposal](../proposals/new-concepts/analysis-measure-fourier.md) retains quotient and convergence distinctions.
