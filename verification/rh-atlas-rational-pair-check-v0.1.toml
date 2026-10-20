@@ -1,0 +1,112 @@
+# Static mathematical specification, not execution authority or a receipt.
+# Prepared against aeae467d91e88cdbfc4f9c44ca725c97cb4b9de0.
+# SOURCE SCRIPTS / NOT_ELABORATED / NOT_KERNEL_AUDITED.
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-atlas-rational-pair-check-v0.1"
+owner_repository = "grwtsk/math"
+issue = 225
+parent_pull_request = 272
+root_module = "GRWTSK"
+build_target = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.RationalMirrorPair"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+# Focused suppliers, NOT an audited transitive import inventory.
+modules = [
+  { name = "Mathlib.Data.Rat.Cast.Order" },
+  { name = "GRWTSK.Analysis.Complex.SymmetricPair" },
+  { name = "GRWTSK.Analysis.Complex.SymmetricPairApproximation" },
+  { name = "GRWTSK.Analysis.Complex.SymmetricPairRational" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripSexticPrimitive" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripSexticC1Approximation" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMirrorPairChannels" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMirrorPairApproximation" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripHeightFiberSuccessor" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripRationalPairCheck" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.RationalMirrorPair" },
+]
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+operational_receipt_is_external = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[hostile_controls]]
+id = "rational_only"
+requirement = "The Boolean check uses exact rational arithmetic, not real/complex decisions or numerical zeta."
+
+[[hostile_controls]]
+id = "same_source"
+requirement = "A passing bit alone gives no analytic conclusion; source, evaluation and weight validity are separate proofs."
+
+[[hostile_controls]]
+id = "same_cutoff"
+requirement = "Both source and finite-evaluation channels use the stored positive integer cutoff."
+
+[[hostile_controls]]
+id = "zero_cutoff"
+requirement = "Cutoff zero must reject."
+
+[[hostile_controls]]
+id = "four_radii"
+requirement = "All four source/evaluation radii are independently nonnegative."
+
+[[hostile_controls]]
+id = "cross_errors"
+requirement = "Add source and evaluation radii before squaring; retain cross terms."
+
+[[hostile_controls]]
+id = "strict_gap"
+requirement = "Equality of lower energy and upper budget must reject."
+
+[[hostile_controls]]
+id = "weight_direction"
+requirement = "Upper squared displacement weights errors, lower squared displacement weights model energy."
+
+[[hostile_controls]]
+id = "weight_validity"
+requirement = "Data do not establish the actual displacement interval; its proof cannot be dropped."
+
+[[hostile_controls]]
+id = "positive_lower_weight"
+requirement = "This conservative checker requires positive local lower squared displacement, with no global minimum."
+
+[[hostile_controls]]
+id = "zero_pair"
+requirement = "Every valid actual simultaneous zero pair rejects every strict comparison."
+
+[[hostile_controls]]
+id = "wrong_source"
+requirement = "A forged positive center can pass the numeric check but cannot prove the binding for a zero source."
+
+[[hostile_controls]]
+id = "outward_rounding"
+requirement = "Widening nonnegative radii cannot manufacture acceptance."
+
+[[hostile_controls]]
+id = "tail_not_zero"
+requirement = "The cutoff-one fixture retains the actual nonzero Mellin error; finite evaluation errors alone are zero."
+
+[[hostile_controls]]
+id = "actual_fixture"
+requirement = "Reconstruct finite reference values at 1/4 and 3/4 and all rational channel constants exactly."
+
+[[hostile_controls]]
+id = "derivative_boundary"
+requirement = "No derivative bound is inferred from value data; C1 bounds remain independently sourced."
+
+[[hostile_controls]]
+id = "continuum_coverage"
+requirement = "CertifiedRegion validity quantifies over every eligible complex point, not sampled rational points."
+
+[[hostile_controls]]
+id = "next_shell"
+requirement = "WindowRH18 requires the new region cover and prior WindowRH17; no new height follows from these samples."
