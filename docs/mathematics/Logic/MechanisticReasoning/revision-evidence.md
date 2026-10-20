@@ -130,7 +130,17 @@ Targets are explicit query parameters. Comparing results at one fixed target doe
 
 Every transition either retains `history` literally or appends one exact record. `step_history_prefix` proves the existing list-prefix relation for one step; `trace_history_prefix` composes it through any finite trace. `trace_history_position` strengthens the user-facing interpretation: each original record remains at its original numeric position with the same revision, kind, tick, and payload.
 
-This reuses Lean's prefix relation. The repository's [AppendOnlyHistory](../../../../GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/FiniteSequences/AppendOnlyHistory.lean) proves executable prefix-check reflection and dictionary reconstruction properties for a different mathematical subject. No second generic prefix relation or dictionary dependency is introduced here. The present result derives the prefix property from this specific evidence transition system.
+More precisely, if `oldPosition : index < source.history.length`, the theorem constructs
+
+```lean
+∃ newPosition : index < target.history.length,
+  getElem target.history index newPosition =
+    getElem source.history index oldPosition
+```
+
+The target bound is a conclusion derived from the prefix proof, not an additional transition assumption. Both getters select the same numeric index, and the equality concerns the complete record. This bounded-getter statement is an explicit interface change from the earlier optional-getter equality. A comparison of complete historical types must report that change; an unchanged informal description is not an unchanged formal signature.
+
+This reuses Lean's prefix relation. The [constructive finite-list module](../../../../GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/FiniteSequences/ConstructiveList.lean) supplies direct proofs for that relation and bounded indexing. The repository's [AppendOnlyHistory](../../../../GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/FiniteSequences/AppendOnlyHistory.lean) proves executable prefix-check reflection and dictionary reconstruction properties for a different mathematical subject. No second generic prefix relation or dictionary dependency is introduced here. The present result derives the prefix property from this specific evidence transition system.
 
 Exact list preservation is a mathematical statement about the modeled values. It establishes no durable storage, crash recovery, transport integrity, or successful retrieval by a person.
 
@@ -152,10 +162,18 @@ This compact source does not formalize hidden-context projection, access control
 
 The static target enumerates this module separately from earlier observation targets. Its positive and hostile controls are theorem propositions, including a counterexample to dropping the structural invariant. Any later elaboration, exact-type comparison, axiom audit, or external refinement evidence must identify its selected sources and report its own achieved scope. The exposition and target themselves are not such evidence.
 
-## 8. The strict trust gate remains open
+## 8. Constructive dependencies and the unchanged strict trust policy
 
-The new target retains `allowed_axioms = []`. Importing only `Init` does not establish that requirement: standard library proof dependencies can bring `propext`, `Classical.choice`, and `Quot.sound` into a theorem's transitive closure. Those are standard Lean axioms, but the present target does not permit them automatically.
+The target retains `allowed_axioms = []`. An import closure over `Init` does not establish that requirement: standard library dependencies can bring `propext`, `Classical.choice`, and `Quot.sound` into a declaration's transitive closure. Those are standard Lean axioms, but the present target does not permit them automatically. Dependencies in the declaration's type matter as well as dependencies in its proof or defining body.
 
-This increment does not establish empty-axiom acceptance. Meeting the present gate requires eliminating any such dependencies, including those inherited through list reflection and order facts. A different trust allowance would require a separately reviewed policy change with its rationale and scope; successful elaboration is not a reason to silently change the policy. Earlier observation targets retain their own unchanged trust requirements.
+`ConstructiveList` provides 24 explicit declarations: a membership decision procedure and 23 theorems about existing list operations. The proofs use structural induction, constructor elimination, equality transport, and natural-number order. The minimum and maximum reflection results concern the actual `List.min?` and `List.max?` folds on natural numbers. The prefix and indexing results concern the actual ordered list-prefix relation and bounded getter; no alternative list representation is assumed.
+
+The revision module uses those proofs in its query, timing, invariant, correction, and history arguments. `confirm` supplies a constructive `Decidable (revision ∈ state.confirmed)` whose dependent result contains either a membership witness or a refutation. This is the same membership proposition used to choose between preserving the confirmation list and appending the new ordinal. All other update definitions and their independently stated transition guards retain their mathematical meaning.
+
+The position theorem uses bounded indexing to keep the existence of each selected position explicit in its type. The earlier default optional-getter interface has an upstream dependency that a replacement proof alone cannot remove under this strict policy. The resulting signature change therefore requires explicit review. An exact historical-type comparator must retain its mismatch rather than rewrite an expectation to make the comparison succeed.
+
+The target selects both owner modules and every explicit head: 76 declarations, including 56 theorems and the original nine fixtures. Generated constructors, recursors, projections, and derived instances are not separate inventory entries; their dependencies remain relevant when reached through selected declarations. External validation must preserve this distinction and inspect explicit transitive axiom lists for all selected heads.
+
+This source package reports no execution outcome. Source-bound elaboration, observed axiom lists, and comparison of complete historical types remain external evidence. Historical agreement is also different from independently authored complete expected types: a stable interface can preserve a mistaken specification, and changed defining bodies are not fixed by equal types. Complete acceptance additionally requires the target's independent type expectations, source and compiler qualification, generated/native dependency obligations, and any claimed external-program correspondence. Earlier observation targets retain their unchanged sources and trust requirements.
 
 Complete authored full-type expectations and their comparison remain a separate open gate. The manifest selects exact declaration heads and their source kinds, but those selections do not substitute for complete types, ordered universes, defining-body review, or external implementation correspondence.

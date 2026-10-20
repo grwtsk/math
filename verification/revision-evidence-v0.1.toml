@@ -14,7 +14,7 @@ candidate_status = "STATIC_SPECIFICATION / VALIDATION_EXTERNAL"
 
 [scope]
 kind = "isolated-mathematical-replay-target"
-selection = "One Init-only revision-scoped timed evidence module"
+selection = "Revision-scoped timed evidence and constructive finite-list facts over Init"
 requires_clean_checkout = true
 requires_exact_declaration_types = true
 requires_module_coverage_reconciliation = true
@@ -48,7 +48,7 @@ elaboration_alone_is_complete_acceptance = false
 [build]
 mode = "separately authorized direct elaboration of the selected source"
 required_compiler_options = ["-DwarningAsError=true"]
-expected_direct_imports = ["Init"]
+expected_direct_imports = ["Init", "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.ConstructiveList"]
 require_exact_direct_imports = true
 require_compiler_toolchain_match = true
 require_zero_errors_and_warnings = true
@@ -77,11 +77,11 @@ hidden_context_noninterference_is_in_scope = false
 parser_storage_and_external_program_refinement_are_proved = false
 
 [declaration_inventory]
-required_count = 52
-theorem_count = 33
-core_count = 43
+required_count = 76
+theorem_count = 56
+core_count = 67
 fixture_count = 9
-module_count = 1
+module_count = 2
 nonempty = true
 duplicate_free = true
 exact_names_selected = true
@@ -97,7 +97,7 @@ allowed_axioms = []
 standard_lean_axioms_are_automatically_allowed = false
 policy_change_requires_separate_review = true
 empty_axiom_closure_is_established_by_this_source_package = false
-open_obligation = "Eliminate disallowed transitive dependencies, including dependencies inherited through Init list reflection and order facts, or propose a separately reviewed trust-policy change; do not silently relax this empty allowance to match elaboration output."
+open_obligation = "Source-bound external inspection must establish an explicit empty transitive axiom list for every selected head. The constructive source and changed bounded-position interface supply no execution evidence or independent full-type acceptance; this empty allowance is not relaxed."
 reject_sorry_ax = true
 reject_native_decide = true
 reject_native_proof_dependencies = true
@@ -109,15 +109,22 @@ require_kernel_checked_proof_terms = true
 proof_search_success_alone_is_insufficient = true
 
 [axiom_audit]
-selection = "All 33 explicit theorem heads, including all eight fixture theorems"
-required_count = 33
+selection = "All 56 explicit theorem heads, including all eight fixture theorems; external selected-head observation must also inspect every selected definition and inductive head"
+required_count = 56
 same_exact_source_binding_as_elaboration = true
 imported_List_lemma_dependencies_are_included = true
 
 [[modules]]
+name = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.ConstructiveList"
+path = "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/FiniteSequences/ConstructiveList.lean"
+expected_direct_imports = ["Init"]
+required_declaration_count = 24
+required_theorem_count = 23
+
+[[modules]]
 name = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.RevisionEvidence"
 path = "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Observation/RevisionEvidence.lean"
-expected_direct_imports = ["Init"]
+expected_direct_imports = ["GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.ConstructiveList"]
 required_declaration_count = 52
 required_theorem_count = 33
 
@@ -506,3 +513,147 @@ nonclaims = [
   "Hidden-context noninterference and visible-output authorization are outside this compact target.",
   "The source implements no process runner, external evidence record, action authorization, or application workflow.",
 ]
+
+[[declarations]]
+name = "GRWTSK.Logic.FiniteSequences.ConstructiveList.decidableMem"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.ConstructiveList"
+kind = "definition"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.FiniteSequences.ConstructiveList.mem_cons_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.ConstructiveList"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.FiniteSequences.ConstructiveList.mem_singleton_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.ConstructiveList"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.FiniteSequences.ConstructiveList.mem_append_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.ConstructiveList"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.FiniteSequences.ConstructiveList.eq_nil_iff_forall_not_mem"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.ConstructiveList"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.FiniteSequences.ConstructiveList.mem_map_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.ConstructiveList"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.FiniteSequences.ConstructiveList.map_eq_nil_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.ConstructiveList"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.FiniteSequences.ConstructiveList.mem_filter_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.ConstructiveList"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.FiniteSequences.ConstructiveList.filter_append"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.ConstructiveList"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.FiniteSequences.ConstructiveList.append_nil"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.ConstructiveList"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.FiniteSequences.ConstructiveList.append_assoc"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.ConstructiveList"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.FiniteSequences.ConstructiveList.prefix_refl"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.ConstructiveList"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.FiniteSequences.ConstructiveList.prefix_append"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.ConstructiveList"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.FiniteSequences.ConstructiveList.prefix_trans"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.ConstructiveList"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.FiniteSequences.ConstructiveList.length_le_append"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.ConstructiveList"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.FiniteSequences.ConstructiveList.prefix_length_le"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.ConstructiveList"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.FiniteSequences.ConstructiveList.append_getElem_of_lt"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.ConstructiveList"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.FiniteSequences.ConstructiveList.prefix_getElem_of_lt"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.ConstructiveList"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.FiniteSequences.ConstructiveList.foldl_min_spec"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.ConstructiveList"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.FiniteSequences.ConstructiveList.foldl_max_spec"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.ConstructiveList"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.FiniteSequences.ConstructiveList.min?_eq_none_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.ConstructiveList"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.FiniteSequences.ConstructiveList.max?_eq_none_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.ConstructiveList"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.FiniteSequences.ConstructiveList.min?_eq_some_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.ConstructiveList"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.FiniteSequences.ConstructiveList.max?_eq_some_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.ConstructiveList"
+kind = "theorem"
+role = "core"
