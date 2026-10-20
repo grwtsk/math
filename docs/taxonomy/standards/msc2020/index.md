@@ -29,3 +29,7 @@ Bulk source acquisition for reuse, imported scheme registration and derivative d
 ## Required evidence before the gate can change
 
 Retain the exact original source bytes, format, locator, retrieval time, checksum and license evidence through the proper Noe owner; document the intended use and its rights basis. Reconcile every identifier at every native level between the selected published formats, preserving indexing provisions and exact differences. Then bind external registration, local subject coverage and mapping reviews separately. Until those facts exist, missing source bytes are not an empty successful dataset and aggregate counts cannot discharge the gate.
+
+## Candidate 0.3 access follow-up
+
+On 2026-10-19 the official landing page was re-read and still links the PDF, CSV and TeX baseline. The web reader again rejected CSV/TeX as application/octet-stream. A bounded original-byte retrieval in the working environment failed with name-resolution errors, and the download adapter also failed. No native input file, checksum or complete identifier set resulted. D06 and the unresolved reuse/distribution gate are unchanged. The locally authored L6-L10 subject batch is not a substitute baseline.
