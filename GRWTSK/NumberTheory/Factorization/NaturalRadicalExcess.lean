@@ -8,7 +8,7 @@ This is the rational-integer profile, not a number-field ideal comparison.
 Source proof scripts only; NOT_RUN / NOT_KERNEL_AUDITED.
 -/
 import Mathlib.Analysis.SpecialFunctions.Log.Basic
-import Mathlib.Tactic.Omega
+import Lean.Elab.Tactic.Omega
 import Mathlib.Tactic.Ring
 import Mathlib.Tactic.Linarith
 import Mathlib.Tactic.NormNum

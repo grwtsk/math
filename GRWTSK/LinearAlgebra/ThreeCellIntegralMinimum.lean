@@ -9,7 +9,7 @@ No intrinsic geometric lattice or Lean acceptance is asserted.
 import GRWTSK.Algebra.Homology.ThreeCellIntegralGauge
 import GRWTSK.Analysis.LinearAlgebra.ThreeCellGaugeMetric
 import Mathlib.Data.ZMod.Basic
-import Mathlib.Tactic.Omega
+import Lean.Elab.Tactic.Omega
 
 set_option autoImplicit false
 noncomputable section
