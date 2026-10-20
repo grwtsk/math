@@ -49,3 +49,7 @@ Linked primary-source scope: 19 source declaration commands, including 6 theorem
 ## Sources and verification
 
 [Selected catalog](../../reference/results.md) · [Archive source candidates](../../reference/source-intake.md).
+
+## Mechanistic reasoning exposition
+
+[From ethical obligations to mechanistic reasoning](MechanisticReasoning/ethics-capsules.md) connects the A–M–I–F–E–D–O–X taxonomy to precise judgments and proof obligations. Three isolated mathematical companions address rooted authorization, support from partial observations, and effect-preserving simulation. This authored exposition is additional to the inventory snapshot above; the inventory counts have not been regenerated.
