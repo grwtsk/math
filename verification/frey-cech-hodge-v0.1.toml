@@ -1,0 +1,268 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "frey-cech-hodge-v0.1"
+owner_repository = "grwtsk/math"
+issues = [100, 206, 221, 222, 227, 230, 233, 250, 270]
+root_module = "GRWTSK.Interfaces.FreyCechHodgeCore"
+build_target = "GRWTSK.Interfaces.FreyCechHodgeCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+base_revision = "48f645566ef32a7dca6080c4f2ce99cbe13bd224"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_runtime_safety_scan = true
+operational_receipt_is_external = true
+root_library_import_unchanged = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unsafe_declarations = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Definitions"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyThreePortFrame"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyThreePortSaturation"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCurveGeometry"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyAffineEvaluation"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyIntegralModel"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyLocalInvariants"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyQuadraticJet"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionTranslation"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionContact"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetRecursion"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyFormalNeighborhood"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetQuotient"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyAdicQuotients"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionOpen"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionOpenJets"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionUnlocalizedJets"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyHigherJet"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyIntegralJetCharts"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreySectionJetEquiv"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyParameterSeries"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetCompletion"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCanonicalCompletion"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionCompletion"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedSections"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyPolynomialCoordinates"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedBasis"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedEnergy"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedLattice"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedCokernel"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedBaseChange"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyArchimedeanRealization"
+
+[[modules]]
+name = "GRWTSK.Algebra.RingTheory.Localization.AwayPowerQuotient"
+
+[[modules]]
+name = "GRWTSK.Algebra.RingTheory.AdicCompletion.CompatibleEquiv"
+
+[[modules]]
+name = "GRWTSK.Algebra.RingTheory.WeightedInvolution"
+
+[[modules]]
+name = "GRWTSK.LinearAlgebra.WeightedPermutationEnergy"
+
+[[modules]]
+name = "GRWTSK.LinearAlgebra.WeightedPermutationIntegral"
+
+[[modules]]
+name = "GRWTSK.LinearAlgebra.WeightedPermutationCokernel"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyTorsionTransportCore"
+
+[[modules]]
+name = "GRWTSK.Analysis.LinearAlgebra.ThreePhaseCoefficientHeat"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCoefficientHeat"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyCoefficientHeatCore"
+
+[[modules]]
+name = "GRWTSK.Algebra.Homology.ThreeCellCech"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCechHeat"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyCechHeatCore"
+
+[[modules]]
+name = "GRWTSK.Analysis.LinearAlgebra.ThreeCellHodgeGauge"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCechHodgeComparison"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyCechHodgeCore"
+
+[[hostile_controls]]
+id = "reject-finite-hodge-as-geometric-dolbeault"
+description = "The adjoints and Laplacians use the old finite ordered triangle with standard real unit weights, not an elliptic Dolbeault operator or a geometric cover."
+
+[[hostile_controls]]
+id = "reject-transpose-with-wrong-metric"
+description = "Bind transpose identities to the declared scalar Euclidean pairing. Different edge, vertex or bundle metrics require new adjoints and constants."
+
+[[hostile_controls]]
+id = "reject-tree-flow-as-all-edge-heat"
+description = "Standard finite degree-one heat damps all three edges. The old tree-fixed flow preserves edges 01 and 12; never identify the two full-data maps."
+
+[[hostile_controls]]
+id = "reject-gauge-sign-or-direction"
+description = "Use treeRelax(d,v)=gaugeShift((1-d)*centered(tree(edges)),hodgeRelax(d,v)). The gauge shifts vertices AND edges through delta0 with the declared sign."
+
+[[hostile_controls]]
+id = "reject-corrected-mean-as-reduced-invariant"
+description = "The reduced invariant is the ORIGINAL vertex mean together with delta0(z)-a. The tree-corrected mean is a different gauge-dependent quantity."
+
+[[hostile_controls]]
+id = "reject-unrestricted-gauge-injectivity"
+description = "Mismatch alone is invariant under all coboundaries; preserving the mean requires zero-mean gauge. Reduced equality characterizes gauge equivalence, not equality of full cells."
+
+[[hostile_controls]]
+id = "reject-unconstructed-quotient-carrier"
+description = "The source supplies a surjective invariant map and an exact fiber characterization. It does not construct an additional quotient Hilbert space or scheme quotient."
+
+[[hostile_controls]]
+id = "reject-gauge-as-fixed-linear-conjugacy"
+description = "The comparison gauge depends on initial edges and attenuation. The scalar standard and tree generators have different kernels; no fixed invertible similarity is supplied."
+
+[[hostile_controls]]
+id = "reject-corrected-defect-as-six-field-norm"
+description = "The prior corrected-frame defect is not the standard norm of all six cochain coordinates. Tree-fixed half attenuation can increase the latter from 1 to 17/12."
+
+[[hostile_controls]]
+id = "reject-gauge-as-isometry-or-integral"
+description = "Mean subtraction introduces thirds and arbitrary real attenuation introduces further scalars. Exact additive gauge equivalence gives neither metric isometry nor integer-lattice preservation."
+
+[[hostile_controls]]
+id = "reject-attenuation-as-finite-heat-time"
+description = "The algebraic formulas allow arbitrary attenuation d, including zero and negative controls. Actual finite heat uses exp(-3t)>0; d=0 is a limit."
+
+[[hostile_controls]]
+id = "reject-backward-time-contraction"
+description = "Contraction of the standard six-coordinate energy is asserted only for t>=0 or scalar 0<=d<=1. Negative heat time may amplify."
+
+[[hostile_controls]]
+id = "reject-standard-projection-as-full-matching-kernel"
+description = "The standard zero-attenuation fixed space has diagonal vertices and ZERO edges; tree-fixed relaxation fixes matched cells with nonzero exact edges."
+
+[[hostile_controls]]
+id = "reject-finite-time-matching-creation"
+description = "Finite heat has nonzero attenuation, so exact matching is preserved and reflected. A displayed cycle or tolerance cannot create it."
+
+[[hostile_controls]]
+id = "reject-unbound-frey-comparison"
+description = "Specialize to the OLD real W_k and OLD FreyCechHeat.evolve. Derive basis-coordinate ODEs and sixEnergy from those same functions; no independently fitted coefficient model."
+
+[[hostile_controls]]
+id = "reject-phasewise-port-drift"
+description = "The same OLD weighted stageEquiv acts on all six fields and on the comparison gauge. Unequal phase maps or a different matrix cannot inherit this naturality."
+
+[[hostile_controls]]
+id = "reject-finite-gap-as-uniform-intrinsic-gap"
+description = "Repeating the finite triangle over larger W_k retains a selected finite gap only. No geometric spectral, global-section, height, denominator or conductor bound follows."
+
+[[hostile_controls]]
+id = "reject-static-checks-as-lean-acceptance"
+description = "Independent finite exact arithmetic, lexical checks and a static manifest do not elaborate Lean, audit transitive axioms, run hostile Lean fixtures or authorize execution."
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+requires_root_import_unchanged = true
+requires_hostile_controls = true
+requires_axiom_audit = true
+requires_runtime_safety_scan = true
+
+[nonclaims]
+claims = [
+  "Lean elaboration, kernel acceptance, transitive trust acceptance or external replay",
+  "replacement or execution of historical roots, targets or hostile controls",
+  "an intrinsic elliptic Hodge/Dolbeault operator, metric or geometric Cech cover",
+  "equality, fixed invertible conjugacy or shared full-cochain norm contraction of the two flows",
+  "a constructed quotient Hilbert space from the invariant-map fiber characterization",
+  "integral, rational or adelic gauge transport at arbitrary real attenuation",
+  "complete H0, polar divisors, intrinsic integral-model lattices or a global atlas",
+  "a complex-wave comparison theorem beyond the declared real-stage specialization",
+  "a uniform intrinsic spectral gap inferred from the finite triangle or stage rank",
+  "removal of the old weighted-map source/grade metric, index or denominator factors",
+  "canonical inter-anchor coefficient-base-change naturality, conductor or characteristic-two analysis",
+  "uniform arithmetic height, radical excess, abc or RH results",
+  "execution, workflow, worker, merge, issue closure or target-promotion authority"
+]
