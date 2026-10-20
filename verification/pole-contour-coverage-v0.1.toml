@@ -1,0 +1,221 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "pole-contour-coverage-v0.1"
+owner_repository = "grwtsk/math"
+issue = 135
+root_module = "GRWTSK.Interfaces.PoleContourCoverageCore"
+build_target = "GRWTSK.Interfaces.PoleContourCoverageCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+parent_revision = "ef49c49cbf5cd810c91c22df8c4066b9e68e1be2"
+parent_tree = "4f42e42bb10ec9c6e594fbcc01a46b1f763b74a2"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+inherited_target_path = "verification/pole-normalized-contour-v0.1.toml"
+inherited_target_blob = "a389c1526ae083eddbed2fdb5d72c495deb0b817"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+count_status = "No winding number, analytic regional upper count, or complete numerical zero inventory supplied."
+receipt_policy = "No execution authority or receipt. Bind future acceptance externally to actual commit/tree/target."
+inventory_policy = "Retain EVERY predecessor declaration/control/exact type and the full transitive import/axiom/native-dependency closure. Selected modules are not the complete closure. Empty repeated catalogs waive nothing. Reconcile generated structures/projections/instances, all source enclosure hypotheses and the unsupplied regional count premise."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.PolygonTube"
+path = "GRWTSK/Analysis/Complex/PolygonTube.lean"
+source_git_blob = "20c7555e8b5498276a8287d73faf4f540e6cdc1b"
+required_declarations = ["GRWTSK.Analysis.Complex.PolygonTube.blend", "GRWTSK.Analysis.Complex.PolygonTube.blend_zero", "GRWTSK.Analysis.Complex.PolygonTube.blend_one", "GRWTSK.Analysis.Complex.PolygonTube.blend_self", "GRWTSK.Analysis.Complex.PolygonTube.blend_mem_closedBall", "GRWTSK.Analysis.Complex.PolygonTube.norm_blend_sub_le", "GRWTSK.Analysis.Complex.PolygonTube.carrier", "GRWTSK.Analysis.Complex.PolygonTube.edge_mem_carrier", "GRWTSK.Analysis.Complex.PolygonTube.first_mem_carrier", "GRWTSK.Analysis.Complex.PolygonTube.empty_carrier", "GRWTSK.Analysis.Complex.PolygonTube.deformation", "GRWTSK.Analysis.Complex.PolygonTube.deformation_source", "GRWTSK.Analysis.Complex.PolygonTube.deformation_polygon", "GRWTSK.Analysis.Complex.PolygonTube.deformation_start", "GRWTSK.Analysis.Complex.PolygonTube.deformation_finish", "GRWTSK.Analysis.Complex.PolygonTube.deformation_continuous", "GRWTSK.Analysis.Complex.PolygonTube.deformation_bound", "GRWTSK.Analysis.Complex.PolygonTube.deformation_nonzero", "GRWTSK.Analysis.Complex.PolygonTube.adjacent_seam", "GRWTSK.Analysis.Complex.PolygonTube.closing_seam"]
+
+[[modules]]
+name = "GRWTSK.Interfaces.PoleContourCoverageCore"
+path = "GRWTSK/Interfaces/PoleContourCoverageCore.lean"
+source_git_blob = "cfd36fba7b85f9655f29b0935c17413f4f8b80ed"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PoleContourCoverage"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/PoleContourCoverage.lean"
+source_git_blob = "f494215689cc346a9eb815c2e3d1bd00d35a95ef"
+required_declarations = ["GRWTSK.RiemannHypothesis.Checks.PoleContourCoverage.square", "GRWTSK.RiemannHypothesis.Checks.PoleContourCoverage.poleEdge", "GRWTSK.RiemannHypothesis.Checks.PoleContourCoverage.squareData", "GRWTSK.RiemannHypothesis.Checks.PoleContourCoverage.constantImage", "GRWTSK.RiemannHypothesis.Checks.PoleContourCoverage.square_checked", "GRWTSK.RiemannHypothesis.Checks.PoleContourCoverage.image_checked", "GRWTSK.RiemannHypothesis.Checks.PoleContourCoverage.square_enclosures", "GRWTSK.RiemannHypothesis.Checks.PoleContourCoverage.whole_square_nonzero", "GRWTSK.RiemannHypothesis.Checks.PoleContourCoverage.whole_square_no_target", "GRWTSK.RiemannHypothesis.Checks.PoleContourCoverage.whole_square_deformation", "GRWTSK.RiemannHypothesis.Checks.PoleContourCoverage.computed_image_radius", "GRWTSK.RiemannHypothesis.Checks.PoleContourCoverage.malformed_lengths_rejected", "GRWTSK.RiemannHypothesis.Checks.PoleContourCoverage.last_edge_cannot_be_skipped", "GRWTSK.RiemannHypothesis.Checks.PoleContourCoverage.changed_external_vertex_rejected", "GRWTSK.RiemannHypothesis.Checks.PoleContourCoverage.domain_and_image_closure_required", "GRWTSK.RiemannHypothesis.Checks.PoleContourCoverage.imaginary_image_escape_rejected", "GRWTSK.RiemannHypothesis.Checks.PoleContourCoverage.equality_margin_rejected", "GRWTSK.RiemannHypothesis.Checks.PoleContourCoverage.fictitiousData", "GRWTSK.RiemannHypothesis.Checks.PoleContourCoverage.fictitious_data_pass", "GRWTSK.RiemannHypothesis.Checks.PoleContourCoverage.fictitious_data_have_no_enclosures", "GRWTSK.RiemannHypothesis.Checks.PoleContourCoverage.degenerate_and_reversed_chains_allowed", "GRWTSK.RiemannHypothesis.Checks.PoleContourCoverage.endpoints_do_not_cover_edge", "GRWTSK.RiemannHypothesis.Checks.PoleContourCoverage.mismatched_image_seam", "GRWTSK.RiemannHypothesis.Checks.PoleContourCoverage.unitSquare", "GRWTSK.RiemannHypothesis.Checks.PoleContourCoverage.unit_square_boundary_nonzero", "GRWTSK.RiemannHypothesis.Checks.PoleContourCoverage.boundary_nonzero_does_not_exclude_interior", "GRWTSK.RiemannHypothesis.Checks.PoleContourCoverage.counting_rectangle_geometry", "GRWTSK.RiemannHypothesis.Checks.PoleContourCoverage.reflected_cutoff_control", "GRWTSK.RiemannHypothesis.Checks.PoleContourCoverage.pole_on_counting_bottom"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.MirrorCountingRectangle"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/MirrorCountingRectangle.lean"
+source_git_blob = "ae65868eb8dc8a9ba219d3a338afd75b7d774fc1"
+required_declarations = ["GRWTSK.RiemannHypothesis.MirrorCountingRectangle.interior", "GRWTSK.RiemannHypothesis.MirrorCountingRectangle.vertices", "GRWTSK.RiemannHypothesis.MirrorCountingRectangle.vertices_closed", "GRWTSK.RiemannHypothesis.MirrorCountingRectangle.head", "GRWTSK.RiemannHypothesis.MirrorCountingRectangle.count", "GRWTSK.RiemannHypothesis.MirrorCountingRectangle.mem_head_iff", "GRWTSK.RiemannHypothesis.MirrorCountingRectangle.card_le_count", "GRWTSK.RiemannHypothesis.MirrorCountingRectangle.rightRepresentative", "GRWTSK.RiemannHypothesis.MirrorCountingRectangle.representative_im", "GRWTSK.RiemannHypothesis.MirrorCountingRectangle.representative_re", "GRWTSK.RiemannHypothesis.MirrorCountingRectangle.representative_in_head", "GRWTSK.RiemannHypothesis.MirrorCountingRectangle.eq_of_representative_eq", "GRWTSK.RiemannHypothesis.MirrorCountingRectangle.unique_of_count_le_one", "GRWTSK.RiemannHypothesis.MirrorCountingRectangle.complete_pair_of_regional_upper", "GRWTSK.RiemannHypothesis.MirrorCountingRectangle.bounded_line_of_regional_upper", "GRWTSK.RiemannHypothesis.MirrorCountingRectangle.positive_real_nonzero", "GRWTSK.RiemannHypothesis.MirrorCountingRectangle.right_halfplane_nonzero"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RationalPoleContour"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/RationalPoleContour.lean"
+source_git_blob = "e0cb441f7ee87487c7eb76c2b59fbd7f9436e1b1"
+required_declarations = ["GRWTSK.RiemannHypothesis.RationalPoleContour.EdgeData", "GRWTSK.RiemannHypothesis.RationalPoleContour.pointAt", "GRWTSK.RiemannHypothesis.RationalPoleContour.edgeAt", "GRWTSK.RiemannHypothesis.RationalPoleContour.EdgeValid", "GRWTSK.RiemannHypothesis.RationalPoleContour.edgeValidDecidable", "GRWTSK.RiemannHypothesis.RationalPoleContour.Valid", "GRWTSK.RiemannHypothesis.RationalPoleContour.validDecidable", "GRWTSK.RiemannHypothesis.RationalPoleContour.check", "GRWTSK.RiemannHypothesis.RationalPoleContour.check_iff_valid", "GRWTSK.RiemannHypothesis.RationalPoleContour.Enclosures", "GRWTSK.RiemannHypothesis.RationalPoleContour.carrier", "GRWTSK.RiemannHypothesis.RationalPoleContour.checked_lengths", "GRWTSK.RiemannHypothesis.RationalPoleContour.checked_edge", "GRWTSK.RiemannHypothesis.RationalPoleContour.edge_covered", "GRWTSK.RiemannHypothesis.RationalPoleContour.finiteCover", "GRWTSK.RiemannHypothesis.RationalPoleContour.check_sound", "GRWTSK.RiemannHypothesis.RationalPoleContour.no_target_on_carrier", "GRWTSK.RiemannHypothesis.RationalPoleContour.assembledEdge", "GRWTSK.RiemannHypothesis.RationalPoleContour.assembledEdge_enclosure", "GRWTSK.RiemannHypothesis.RationalPoleContour.enclosures_of_assemblies"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RationalPoleContourTube"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/RationalPoleContourTube.lean"
+source_git_blob = "b5768453c2ffd0308610a0557c4b22f41d38f41f"
+required_declarations = ["GRWTSK.RiemannHypothesis.RationalPoleContourTube.imageRadius", "GRWTSK.RiemannHypothesis.RationalPoleContourTube.Valid", "GRWTSK.RiemannHypothesis.RationalPoleContourTube.validDecidable", "GRWTSK.RiemannHypothesis.RationalPoleContourTube.check", "GRWTSK.RiemannHypothesis.RationalPoleContourTube.check_iff_valid", "GRWTSK.RiemannHypothesis.RationalPoleContourTube.disk_variation", "GRWTSK.RiemannHypothesis.RationalPoleContourTube.source_image_bound", "GRWTSK.RiemannHypothesis.RationalPoleContourTube.image_disk_avoids_zero", "GRWTSK.RiemannHypothesis.RationalPoleContourTube.edge_deformation_nonzero", "GRWTSK.RiemannHypothesis.RationalPoleContourTube.edge_deformation_continuous", "GRWTSK.RiemannHypothesis.RationalPoleContourTube.adjacent_seam", "GRWTSK.RiemannHypothesis.RationalPoleContourTube.closing_seam", "GRWTSK.RiemannHypothesis.RationalPoleContourTube.polygon_nonzero"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RationalPolePatch"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/RationalPolePatch.lean"
+source_git_blob = "e1bc2347e739bc1cb2a78647478d1d478887d2d9"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PoleNormalizedContourBounds"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/PoleNormalizedContourBounds.lean"
+source_git_blob = "4744ddf4d7a4d52ac6e2a6802c61660eff3b3e96"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RationalPoleNormalizedJet"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/RationalPoleNormalizedJet.lean"
+source_git_blob = "fa90642a45d78579a1202202b055fc3bc456f16d"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripPatchCertificate"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CriticalStripPatchCertificate.lean"
+source_git_blob = "e95d14c96df89e507b48bc8023b0b5bf99f2ecc9"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalZeroDivisor"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalZeroDivisor.lean"
+source_git_blob = "892f796ab9074813b89f58b2321f2683c80bef7b"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.LocalZeroSymmetry"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/LocalZeroSymmetry.lean"
+source_git_blob = "773be0d68a545daf05f76439cbdbd1a3edb59366"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripRealAxisMellin"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CriticalStripRealAxisMellin.lean"
+source_git_blob = "d8f41771c84851553afc76bd7442e58ec992be70"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.EndpointCountNormalization"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/EndpointCountNormalization.lean"
+source_git_blob = "429f0879d23c4cc6cd79b50df7294e7a30db2f6b"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.EndpointCriticalLine"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/EndpointCriticalLine.lean"
+source_git_blob = "8205ae32c8fd38c78783d5417e11acde63518628"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Interfaces.PoleNormalizedContourCore"
+path = "GRWTSK/Interfaces/PoleNormalizedContourCore.lean"
+source_git_blob = "0f5fb1219c8f8daf83b5946eed285382fc9d0975"
+required_declarations = []
+
+[[upstream]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Analysis/Normed/Module/Convex.lean"
+source_git_blob = "678d99dcc35dda339d90d63d2c124330454ef844"
+required_declarations = ["convex_closedBall"]
+
+[[controls]]
+id = "positive-square"
+required_behavior = "Literal four-edge source cover and deformation use actual F(1)=1, not an enclosure premise."
+
+[[controls]]
+id = "all-edges"
+required_behavior = "Missing, extra and last-edge defects reject; no final-edge omission."
+
+[[controls]]
+id = "external-geometry"
+required_behavior = "Changed external vertices must be checked again; record values are not the domain identity."
+
+[[controls]]
+id = "domain-closure"
+required_behavior = "Last domain point equals the first exactly; no tolerance closure."
+
+[[controls]]
+id = "image-closure"
+required_behavior = "Image vertex chain closes independently and shares one endpoint at every seam."
+
+[[controls]]
+id = "one-common-disk"
+required_behavior = "Two endpoints in different disks do not establish one full edge in either disk."
+
+[[controls]]
+id = "radius-signs"
+required_behavior = "Negative radii and zero/negative Cauchy gaps reject before denominators can be evidence."
+
+[[controls]]
+id = "strict-margin"
+required_behavior = "Equality is rejected; finite guard failure is not evidence of a zero."
+
+[[controls]]
+id = "imaginary-components"
+required_behavior = "Squared-ball tests retain imaginary endpoint and image deviations."
+
+[[controls]]
+id = "source-semantics"
+required_behavior = "False value two at one can pass arithmetic; Enclosures is independently false."
+
+[[controls]]
+id = "degeneracy"
+required_behavior = "Accepted repeated vertices and reversed chains confer neither Jordan simplicity nor orientation."
+
+[[controls]]
+id = "parameter-domain"
+required_behavior = "All-point deformation and segment conclusions retain 0<=t,lambda<=1."
+
+[[controls]]
+id = "point-samples"
+required_behavior = "Synthetic s-1 has nonzero endpoints but zero at the midpoint."
+
+[[controls]]
+id = "interior-count"
+required_behavior = "Synthetic identity is nonzero on an entire boundary but zero inside it."
+
+[[controls]]
+id = "positive-half-plane"
+required_behavior = "Outer source disks remain inside Re>0; no implicit analytic continuation of error bounds."
+
+[[controls]]
+id = "buffered-top"
+required_behavior = "The closed target height T is strictly inside the open regional top T+1/4."
+
+[[controls]]
+id = "mirror-not-injective"
+required_behavior = "Actual reflection represents a left-side zero; the representative map is not asserted injective."
+
+[[controls]]
+id = "line-recovery"
+required_behavior = "Recovery from a regional representative uses the sourced fixed-line point, not arbitrary uniqueness."
+
+[[controls]]
+id = "upper-count-input"
+required_behavior = "count(15)<=1 remains unconstructed and cannot be replaced by a lower count or a finite guard."
+
+[[controls]]
+id = "free-not-based"
+required_behavior = "Edge deformations may move base values; global loop/winding/argument-principle coercions are not supplied."
+
+[[controls]]
+id = "pole-on-bottom"
+required_behavior = "The proposed counting rectangle contains one on its bottom edge; F(1)=1 is used, not raw totalization."
