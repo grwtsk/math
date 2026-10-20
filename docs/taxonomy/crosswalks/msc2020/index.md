@@ -2,7 +2,7 @@
 schema_version: 0.1.0
 id: urn:uuid:4ebb4869-baba-42d6-8801-85f7981233ff
 record_kind: compound_crosswalk
-source_scheme: {id: grwtsk-mathematics, edition: 0.6-pilot}
+source_scheme: {id: grwtsk-mathematics, edition: 0.7-pilot}
 source_identifiers: ['urn:uuid:6f8afa7d-458b-4dc9-8bff-230582f3a0c7']
 target_scheme: {id: MSC, edition: '2020', source_key: S1}
 target_expression: {operator: coIndex, identifiers: ['47A10', '60J10']}
@@ -12,7 +12,7 @@ origin: direct
 status: {editorial: proposed, review: unassessed, mathematical_novelty: not_claimed, proof: not_applicable, attribution: source_reference_preserved, operational_permission: not_conferred}
 sources: [{key: S1, locator: 'Official PDF pages 125 and 162, one-based'}, {key: L1, locator: 'Operator spectral context'}, {key: L2, locator: 'Finite-chain and reversibility context'}]
 rights: {local_prose: MIT, source_reuse: reference_only, bulk_import: blocked_pending_disposition}
-revision_history: [{"version": 0.1, "date": "2026-10-19", "change": "Initial compound candidate; no exact-match assertion."}, {"version": "0.2-pilot", "date": "2026-10-19", "change": "Explicit local source-edition update only; source concept scope, target edition and mapping relation unchanged; independent review remains pending."}, {"version": "0.3-pilot", "date": "2026-10-19", "change": "Local source vocabulary edition only; mapping identity, external targets, relation and proposed state preserved."}, {"version": "0.4-pilot", "date": "2026-10-19", "change": "Update local source vocabulary edition only; retain external target, relation, proposed status and earlier versions."}, {"version": "0.5-pilot", "date": "2026-10-19", "change": "Advance only the local source edition after statistics addition; retain external semantics and proposed status; no review transport."}, {version: "0.6-pilot", date: "2026-10-20", change: "Local source edition only; external target and relation semantics retained; review not carried forward."}]
+revision_history: [{"version": 0.1, "date": "2026-10-19", "change": "Initial compound candidate; no exact-match assertion."}, {"version": "0.2-pilot", "date": "2026-10-19", "change": "Explicit local source-edition update only; source concept scope, target edition and mapping relation unchanged; independent review remains pending."}, {"version": "0.3-pilot", "date": "2026-10-19", "change": "Local source vocabulary edition only; mapping identity, external targets, relation and proposed state preserved."}, {"version": "0.4-pilot", "date": "2026-10-19", "change": "Update local source vocabulary edition only; retain external target, relation, proposed status and earlier versions."}, {"version": "0.5-pilot", "date": "2026-10-19", "change": "Advance only the local source edition after statistics addition; retain external semantics and proposed status; no review transport."}, {version: "0.6-pilot", date: "2026-10-20", change: "Local source edition only; external target and relation semantics retained; review not carried forward."}, {version: "0.7-pilot", date: "2026-10-20", change: "Local source edition only; external targets and semantics retained; independent review not transported."}]
 proposal_refs: ['urn:uuid:dd591907-4562-43ba-bb64-aff410d76b73']
 decision_refs: [D02, D03, D04]
 ---
@@ -43,3 +43,5 @@ Candidate 0.4 rebinds the local source edition from 0.3-pilot. The preceding exa
 Candidate 0.5 retains the preceding payload at math `814971e0bc4fd54802423eec4beb6a0b890a8cb4`. Only its local source edition and this history change; the source-only merge `f3d3f755ac0bb40732f9580a3cb30fecdcd26bcd` did not admit the mapping.
 
 Candidate 0.6 versions the local source scheme only. The previous mapping payload is retained at math `262daeee89add65f0d7997f338f9ca45bcac718e`; external meanings and proposed states are unchanged, and independent review is not transported.
+
+Candidate 0.7 retains the preceding payload at math `db30ea5a07fc4d04ef490437e64c108e3a2c4802`. Only the local vocabulary edition and history change; external targets and candidate status remain unchanged.

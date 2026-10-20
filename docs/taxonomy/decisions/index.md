@@ -65,3 +65,9 @@ Keep source edition, schema, operational validation and proof status separate. A
 Decision status: local authoring decision; not independent semantic acceptance. Recorded 2026-10-20 against math `262daeee89add65f0d7997f338f9ca45bcac718e` and Noe `ba81eef56f4b9c2fb29b9ff2ef838f5f4989e4c7`.
 
 Retain two subject roots and one canonical restricted conjugate-gradient page with Krylov and strictly convex quadratic parents, all proposed. The [addition proposal](../proposals/new-concepts/numerical-optimization.md) records alternatives and review criteria. Advance the unpublished local vocabulary to 0.6-pilot without changing schema versions, prior concept payloads, source-specific notices or external mapping semantics. Preserve older edition bindings and do not transport acceptance. Condition, stability, residual/error, exact arithmetic and implementation evidence remain distinct. This arrangement neither resolves an MSC import right nor grants execution authority or production admission.
+
+## D11 — Number-theory candidate scope
+
+Status: proposed editorial arrangement. [The number-theory proposal](../proposals/new-concepts/number-theory.md) adds twelve established subjects while preserving earlier canonical definitions. One computational algebraic number theory record has two proposed parents and a single home. The multiplicative branch's analytic placement remains reviewable; elementary does not mean easy, and computational does not grant execution permission.
+
+Source versions and the separate AKS errata record remain explicit. No code match, namespace resemblance, probable-prime result, finite example or missing external code establishes novelty, authorship, theorem acceptance or complete coverage. Native MSC registration, rights and independent review remain unresolved. Vocabulary 0.7-pilot is separate from schema versions and repository revisions.
