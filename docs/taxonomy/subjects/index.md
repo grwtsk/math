@@ -17,3 +17,5 @@ Candidate 0.5 opens [statistics](statistics/index.md). Its inferential and regre
 Candidate 0.6 opens [numerical analysis](numerical-analysis/index.md) and [mathematical optimization](optimization/index.md). Krylov-solver and strictly convex quadratic routes share the restricted conjugate-gradient subject. Conditioning, stability, exact arithmetic and software qualification remain distinct; neither field is complete.
 
 Candidate 0.7 opens [number theory](number-theory/index.md). Its elementary, analytic, algebraic and computational branches retain different questions and overlapping scope. The algebraic and computational routes share one computational-algebraic-number-theory page.
+
+Candidate 0.8 opens [differential equations](differential-equations/index.md), [dynamical systems](dynamical-systems/index.md) and [mechanics](mechanics/index.md). Two shared model-class records connect the equation, smooth-evolution and Hamiltonian routes without identifying the broader disciplines.
