@@ -15,3 +15,5 @@ Candidate 0.4 opens [geometry](geometry/index.md) and [topology](topology/index.
 Candidate 0.5 opens [statistics](statistics/index.md). Its inferential and regression routes share one restricted least-squares subject; probability, data summaries, decision authority and statistical hypotheses retain separate meanings. These are selected branches, not complete statistical coverage.
 
 Candidate 0.6 opens [numerical analysis](numerical-analysis/index.md) and [mathematical optimization](optimization/index.md). Krylov-solver and strictly convex quadratic routes share the restricted conjugate-gradient subject. Conditioning, stability, exact arithmetic and software qualification remain distinct; neither field is complete.
+
+Candidate 0.7 opens [number theory](number-theory/index.md). Its elementary, analytic, algebraic and computational branches retain different questions and overlapping scope. The algebraic and computational routes share one computational-algebraic-number-theory page.
