@@ -27,3 +27,5 @@ The [statistics addition](new-concepts/statistics.md) proposes eleven statistica
 [Algebraic structures](new-concepts/algebra-structures.md) proposes ten established subjects and two shared structural scopes, retaining convention and placement alternatives.
 
 [Analysis, measure and Fourier addition](new-concepts/analysis-measure-fourier.md) proposes ten established subjects, two shared function-space scopes and explicit convergence assumptions.
+
+Candidate 0.12: [probability limits and stochastic processes](new-concepts/probability-processes.md), including explicit convergence modes, two Brownian parents and retained older Markov scope.

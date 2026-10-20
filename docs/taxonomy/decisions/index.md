@@ -91,3 +91,7 @@ Extend the candidate with [ten established algebra subjects](../proposals/new-co
 ## D15 — Analytic structures and convergence modes (proposed)
 
 [The addition proposal](../proposals/new-concepts/analysis-measure-fourier.md) records ten analytic subjects and two multiple-parent function-space records. Restrict the Lp Banach-range record to 1 <= p <= infinity; distinguish representatives from almost-everywhere classes, essential from pointwise supremum, and norm from pointwise convergence. Keep separability, inner-product convention and Fourier normalization explicit. Analysis and Functional analysis gain navigation without redefining their subjects. This is proposed editorial organization, not independent mathematical/cataloging review, proof, rights approval or operational authority. The complete external baseline remains unresolved.
+
+## D16 — Probability limits and process families remain distinct (0.12 candidate)
+
+The [probability addition proposal](../proposals/new-concepts/probability-processes.md) introduces ten proposed subjects and eleven proposed specializations. Separate limiting tasks from model classes. Preserve the old discrete-time Markov scope/home and one canonical Brownian record with Gaussian and continuous-time Markov parents. Convergence in law is not pathwise exclusion; marginal normality is not joint Gaussianity; conditional identities require filtrations. This is an author organizational decision, not independent acceptance, a new theorem or a foundation/rights ruling.
